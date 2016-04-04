@@ -281,18 +281,6 @@
   "1f63f39cb0505ed884835458822e635632761407": [
     "InTuneDocs\\DeployUse\\help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md"
   ],
-  "1a56564c19739a50458f01231d1ed0950ef66ce8": [
-    "InTuneDocs\\DeployUse\\help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md"
-  ],
-  "d679f6210e30c3ff58b34eb291a559506bda6670": [
-    "InTuneDocs\\DeployUse\\help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md"
-  ],
-  "7a90145cafbb5e803ace1380787d138ad273dea3": [
-    "InTuneDocs\\DeployUse\\help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md"
-  ],
-  "02ff22c532f1947f57fe33ccc352469dee519669": [
-    "InTuneDocs\\DeployUse\\help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md"
-  ],
   "4a57aa9a71174369403cfcdea72ae5f610f1dbd3": [
     "InTuneDocs\\DeployUse\\install-the-windows-pc-client-with-microsoft-intune.md"
   ],
@@ -304,24 +292,6 @@
   ],
   "d5f8d03e2360ffc23f47fff7b3ee51c105406d31": [
     "InTuneDocs\\DeployUse\\install-the-windows-pc-client-with-microsoft-intune.md"
-  ],
-  "0cd7136fbac907317910549a6f6fd78afc89a902": [
-    "InTuneDocs\\DeployUse\\keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md"
-  ],
-  "7603c1c1c477273078c833a5efd188f50ba0a1ba": [
-    "InTuneDocs\\DeployUse\\keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md"
-  ],
-  "6fb05b74a3177ce21f6127eb2722fcaf9c0cfa17": [
-    "InTuneDocs\\DeployUse\\keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md"
-  ],
-  "cd4f2971f1755905fc858f4f04b98e399af9d428": [
-    "InTuneDocs\\DeployUse\\keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md"
-  ],
-  "b155bdf4817ca1901de8726d73322b1b64ef34f1": [
-    "InTuneDocs\\DeployUse\\keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md"
-  ],
-  "750cbd7ed2701c022bda4c5e715a8ce9ea72f55b": [
-    "InTuneDocs\\DeployUse\\keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md"
   ],
   "cd5f0911b0f73f7c71d22a1a5c2e9538e7eba46b": [
     "InTuneDocs\\DeployUse\\learn-how-to-deploy-a-solution-for-protecting-company-email-and-documents.md"
@@ -4571,5 +4541,17 @@
   ],
   "7a163efdec5a79af7b1185ebe12dbb4dd4fc5091": [
     "template.md"
+  ],
+  "e61a5c45252c366e25428932f132f0938caa4470": [
+    "InTuneDocs\\DeployUse\\pc-endpoint-protection.md"
+  ],
+  "a9997504efb7e8253140de9f275429627fa6b0b5": [
+    "InTuneDocs\\DeployUse\\pc-firewall-policies.md"
+  ],
+  "d4debbe6f46625c198ab5075479e666c649bdac7": [
+    "InTuneDocs\\DeployUse\\pc-software-updates.md"
+  ],
+  "1ecd877239787a40c0f627b1b93e4cf264cc6beb": [
+    "InTuneDocs\\DeployUse\\policies-to-protect-windows-pcs.md"
   ]
 }
