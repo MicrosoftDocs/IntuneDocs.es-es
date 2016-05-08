@@ -7,11 +7,11 @@
 [ Handoff Failed Files ](#handoff-failed-list)| 3
 [ Handoff Success Files ](#handoff-success-list)| 907
 [ Archive Failed Files ](#archive-failed-list)| 0
-[ Archive Success Files ](#archive-success-list)| 960
+[ Archive Success Files ](#archive-success-list)| 959
 [ Handback Failed Files ](#handback-failed-list)| 0
 [ Out Of Sync Handback Files ](#outofsync-handback-success-list)| 0
 [ In Sync Handback Files ](#insync-handback-success-list)| 0
-[ Ignored Files ](#ignored-list)| 384
+[ Ignored Files ](#ignored-list)| 385
 
 ## <a name='handoff-failed-list'></a> Handoff Failed File List
  Source File | Status | Details 
@@ -941,7 +941,6 @@
  [InTuneDocs\accessibility-products-and-services-from-microsoft.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/accessibility-products-and-services-from-microsoft.md) | ArchivedSuccess | [Details](#966677b7d9488d37d44f42ff8ef8bbac7a5d39147)
  [InTuneDocs\activate-your-product-key.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/activate-your-product-key.md) | ArchivedSuccess | [Details](#d575d77a5f951311dc0d94abc96767952111b1468)
  [InTuneDocs\DeployUse\add-apps.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/add-apps.md) | ArchivedSuccess | [Details](#6d7eeca227229ccd3234b0577054c28a2b89c01a11)
- [InTuneDocs\DeployUse\add-apps-for-mobile-devices-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/add-apps-for-mobile-devices-in-microsoft-intune.md) | ArchivedSuccess | [Details](#b999aaa523deb3656933a7ce4b250e01374606489)
  [InTuneDocs\DeployUse\add-apps-for-windows-pcs-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/add-apps-for-windows-pcs-in-microsoft-intune.md) | ArchivedSuccess | [Details](#231b0279cf47721164f2014e1bb5da2c3e09beab10)
  [InTuneDocs\DeployUse\android-compliance-policy-settings-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/android-compliance-policy-settings-in-microsoft-intune.md) | ArchivedSuccess | [Details](#07e3665f32c890b6f3cd3c0c55434cb5ac41ebed12)
  [InTuneDocs\DeployUse\android-mam-policy-settings.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/android-mam-policy-settings.md) | ArchivedSuccess | [Details](#633a3c5e0184464d33bc1ecc53e4f06fb4c455c413)
@@ -1911,6 +1910,7 @@
  [.localization-config](https://github.com/Microsoft/IntuneDocs-pr/blob/9b2edf6ae593296d4745d6084aa5044caaea5807/.localization-config) | Ignored | [Details](#a87de388b97bdff606108077adc5fb3e69e8d5652)
  [.openpublishing.build.ps1](https://github.com/Microsoft/IntuneDocs-pr/blob/9b2edf6ae593296d4745d6084aa5044caaea5807/.openpublishing.build.ps1) | Ignored | [Details](#9103b6933f2481864ecb6a66b76ba730e7f133b43)
  [.openpublishing.publish.config.json](https://github.com/Microsoft/IntuneDocs-pr/blob/9b2edf6ae593296d4745d6084aa5044caaea5807/.openpublishing.publish.config.json) | Ignored | [Details](#71e159308d42603d269afa8a1e751d8549d099ff4)
+ [InTuneDocs\DeployUse\add-apps-for-mobile-devices-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9b2edf6ae593296d4745d6084aa5044caaea5807/InTuneDocs/DeployUse/add-apps-for-mobile-devices-in-microsoft-intune.md) | Ignored | [Details](#71a6f2661f127049e1dfe06196fe7f797b42b0d09)
  [InTuneDocs\DeployUse\docfx.json](https://github.com/Microsoft/IntuneDocs-pr/blob/9b2edf6ae593296d4745d6084aa5044caaea5807/InTuneDocs/DeployUse/docfx.json) | Ignored | [Details](#c2e8ae64ba3b1c0acdc910fe4ae8bfbde7db7a1c32)
  [InTuneDocs\DeployUse\media\Andorid_OneDriveOneDriveSuccess.png](https://github.com/Microsoft/IntuneDocs-pr/blob/9b2edf6ae593296d4745d6084aa5044caaea5807/InTuneDocs/DeployUse/media/Andorid_OneDriveOneDriveSuccess.png) | Ignored | [Details](#2ead93b77428c154dcc20a15da196bc9a4f6476172)
  [InTuneDocs\DeployUse\media\Android_OneDriveSignIn.png](https://github.com/Microsoft/IntuneDocs-pr/blob/9b2edf6ae593296d4745d6084aa5044caaea5807/InTuneDocs/DeployUse/media/Android_OneDriveSignIn.png) | Ignored | [Details](#0463790ba618ddddd26d79e8c50c8e48b44436e079)
@@ -2412,14 +2412,14 @@
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
 
-##### <a name='b999aaa523deb3656933a7ce4b250e01374606489'></a> Source: [InTuneDocs\DeployUse\add-apps-for-mobile-devices-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/DeployUse/add-apps-for-mobile-devices-in-microsoft-intune.md)
-* Status: ArchivedSuccess
+##### <a name='71a6f2661f127049e1dfe06196fe7f797b42b0d09'></a> Source: [InTuneDocs\DeployUse\add-apps-for-mobile-devices-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/9b2edf6ae593296d4745d6084aa5044caaea5807/InTuneDocs/DeployUse/add-apps-for-mobile-devices-in-microsoft-intune.md)
+* Status: Ignored
 * Target File: 
-* Handoff File: [add-apps-for-mobile-devices-in-microsoft-intune.00bc5e3beed243564d53068143ada60929dcd577.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/54b3b29542d67d8246386a500ba6e063ef96c78b/ol-handoff/Microsoft/IntuneDocs-pr.es-es/master/add-apps-for-mobile-devices-in-microsoft-intune.00bc5e3beed243564d53068143ada60929dcd577.es-es.xlf)
-* Handoff Datetime: 2016-05-01 17:13:14
-* Handoff Reason: Include
-* Archive File: [add-apps-for-mobile-devices-in-microsoft-intune.00bc5e3beed243564d53068143ada60929dcd577.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/1602857c07cc4a7dfff91352d719854ed1260513/ol-handoff/Microsoft/IntuneDocs-pr.es-es/master/archive/add-apps-for-mobile-devices-in-microsoft-intune.00bc5e3beed243564d53068143ada60929dcd577.es-es.xlf)
-* Archive Datetime: 2016-05-07 10:44:45
+* Handoff File: 
+* Handoff Datetime: 0001-01-01 00:00:00
+* Handoff Reason: Ignored
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
 * [Back to Top](#report-top)
