@@ -6,14 +6,14 @@
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\whats-coming-in-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/47aacc4d2b7437955c2faa320f06ff1a4f8a9566/InTuneDocs/DeployUse/whats-coming-in-intune.md) | HandedOffSuccess | [Details](#13280e5048788571df82b25c2852dc12f4cce8e7247)
+ [InTuneDocs\EndUser\what-happens-if-you-reset-your-device-using-the-company-portal-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/a0ef0a536a797ba40a140adeaea9e3a5b253bfc9/InTuneDocs/EndUser/what-happens-if-you-reset-your-device-using-the-company-portal-android.md) | HandedOffSuccess | [Details](#da5c9d634c84ef8489307b3086835559db04306f443)
 
 ## Item Details
-##### <a name='13280e5048788571df82b25c2852dc12f4cce8e7247'></a> Source: [InTuneDocs\DeployUse\whats-coming-in-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/47aacc4d2b7437955c2faa320f06ff1a4f8a9566/InTuneDocs/DeployUse/whats-coming-in-intune.md)
+##### <a name='da5c9d634c84ef8489307b3086835559db04306f443'></a> Source: [InTuneDocs\EndUser\what-happens-if-you-reset-your-device-using-the-company-portal-android.md](https://github.com/Microsoft/IntuneDocs-pr/blob/a0ef0a536a797ba40a140adeaea9e3a5b253bfc9/InTuneDocs/EndUser/what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
 * Status: HandedOffSuccess
 * Target File: 
-* Handoff File: [whats-coming-in-intune.c079f8f5234a0d7a8e61907e1283976112f63eb6.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/626deaccd33d0b184a17466df148e4263e7ede70/ol-handoff/Microsoft/IntuneDocs-pr.es-es/master/whats-coming-in-intune.c079f8f5234a0d7a8e61907e1283976112f63eb6.es-es.xlf)
-* Handoff Datetime: 2016-05-13 18:12:16
+* Handoff File: [what-happens-if-you-reset-your-device-using-the-company-portal-android.1150b12ce44af4525dbca713f795d510a8f10b8a.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/aa13dac3ddbcc88f488c84cc6aa76503bbb6f09e/ol-handoff/Microsoft/IntuneDocs-pr.es-es/master/what-happens-if-you-reset-your-device-using-the-company-portal-android.1150b12ce44af4525dbca713f795d510a8f10b8a.es-es.xlf)
+* Handoff Datetime: 2016-05-13 21:56:03
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
