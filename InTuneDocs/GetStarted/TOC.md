@@ -1,35 +1,45 @@
-# [Understand and Explore](/intune/understand-explore/introduction-to-microsoft-intune)
+# [Descripción y exploración](/intune/understand-explore/introduction-to-microsoft-intune)
 
-# [Get Started](what-to-know-before-you-start-microsoft-intune.md)
-## [What to know before you start](what-to-know-before-you-start-microsoft-intune.md)
-### [Supported web browsers](supported-web-browsers.md)
-### [Network infrastructure requirements](network-infrastructure-requirements-for-microsoft-intune.md)
-### [Administrative accounts, websites, and permissions](administrative-accounts-websites-perms.md)
-### [Company Portal](microsoft-intune-company-portal.md)
-### [Integration with Microsoft cloud services and products](integration-with-cloud-services.md)
-### [Network bandwidth usage](network-bandwidth-use.md)
-### [Domain names](domain-names-for-microsoft-intune.md)
+# [Introducción](what-to-know-before-you-start-microsoft-intune.md)
+## [Información necesaria antes de empezar](what-to-know-before-you-start-microsoft-intune.md)
+### [Exploradores web compatibles](supported-web-browsers.md)
+### [Requisitos de la infraestructura de red](network-infrastructure-requirements-for-microsoft-intune.md)
+### [Cuentas administrativas, sitios web y permisos](administrative-accounts-websites-perms.md)
+### [Portal de empresa](microsoft-intune-company-portal.md)
+### [Integración con productos y servicios en la nube de Microsoft](integration-with-cloud-services.md)
+### [Uso de ancho de banda de red](network-bandwidth-use.md)
+### [Nombres de dominio](domain-names-for-microsoft-intune.md)
 
-## [Start with a paid subscription](start-with-a-paid-subscription-to-microsoft-intune.md)
-### [Sign in to Intune](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
-### [Configure a custom domain name](start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
-### [Synchronize AD and add users](start-with-a-paid-subscription-to-microsoft-intune-step-3.md)
-### [Manage Intune licenses](start-with-a-paid-subscription-to-microsoft-intune-step-4.md)
-### [Organize users and devices](start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
-### [Create policies and publish an app](start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
-### [Customize the Company Portal](start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
-### [Enroll mobile devices & install an app](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
-### [Post configuration tasks](post-configuration-tasks.md)
+## [Guía de inicio rápido de Intune](start-with-a-paid-subscription-to-microsoft-intune.md)
+### [Iniciar sesión en Intune](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
+### [Configuración de un nombre de dominio personalizado](start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
+### [Sincronizar AD y agregar usuarios](start-with-a-paid-subscription-to-microsoft-intune-step-3.md)
+### [Administración de licencias de Intune](start-with-a-paid-subscription-to-microsoft-intune-step-4.md)
+### [Organizar usuarios y dispositivos](start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
+### [Creación de directivas y publicación de una aplicación](start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
+### [Personalizar el portal de empresa](start-with-a-paid-subscription-to-microsoft-intune-step-7.md)
+### [Inscribir dispositivos móviles e instalar una aplicación](start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
+### [Tareas posteriores a la configuración](post-configuration-tasks.md)
 
+<!--
+## [Choose how to manage devices](choose-how-to-manage-devices.md)
+### [Mobile device management capabilities](mobile-device-management-capabilities-in-microsoft-intune.md)
+### [Windows PC management capabilities](windows-pc-management-capabilities-in-microsoft-intune.md)
+-->
 
-## [Rollout phases for Intune deployments](rollout-phases-for-microsoft-intune-deployment.md)
-### [Project scope](project-scope.md)
-### [Proof of concept](proof-of-concept.md)
-### [Pilot](pilot.md)
-### [Enterprise rollout](enterprise-rollout.md)
-### [Operations and maintenance](operations-and-maintenance.md)
+## [Fases de implementación de las implementaciones de Intune](rollout-phases-for-microsoft-intune-deployment.md)
+### [Ámbito del proyecto](project-scope.md)
+### [Prueba de concepto](proof-of-concept.md)
+### [Piloto](pilot.md)
+### [Implementación empresarial](enterprise-rollout.md)
+### [Operaciones y mantenimiento](operations-and-maintenance.md)
 
 
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
-# [Deploy and Use](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
-# [Troubleshoot](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
+# [Implementación y uso](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
+# [Solución de problemas](/intune/troubleshoot/how-to-get-support-for-microsoft-intune)
+
+
+<!--HONumber=May16_HO1-->
+
+

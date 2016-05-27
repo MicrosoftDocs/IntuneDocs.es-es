@@ -107,7 +107,7 @@ Si el valor que busca no aparece en este tema, puede crearlo mediante una direct
 |**Permitir almacenamiento extraíble**|Permite usar un almacenamiento extraíble (como una tarjeta SD) en el dispositivo.|No|Sí|
 |**Permitir Wi-Fi**|Permite usar las capacidades de Wi-Fi del dispositivo.|No|Sí|
 |**Permitir Wi-Fi Tethering**|Permite usar tethering Wi-Fi en el dispositivo.|No|Sí|
-|**Permitir geolocalización**|Permite que el dispositivo use información de ubicación.|No|Sí|
+|**Permitir geolocalización**|Permite usar información de ubicación en el dispositivo.|No|Sí|
 |**Permitir NFC**|Permite operaciones que usan la transmisión de datos en proximidad (si es posible en el dispositivo).|No|Sí|
 |**Permitir Bluetooth**|Permite usar Bluetooth en el dispositivo.|No|Sí|
 |**Permitir desconectar**|Permite al usuario desconectar el dispositivo.<br /><br />Si se deshabilita esta opción, la opción **Número de errores de inicio de sesión repetidos que se permiten antes de que se eliminen los datos del dispositivo** de los dispositivos Samsung KNOX no funciona.|No|Sí|

@@ -44,9 +44,9 @@ Puede usar configuraciones personalizadas para crear perfiles de VPN en Intune. 
 
 2.  En el cuadro de diálogo **Administrar la implementación** :
 
-    -   **Para implementar la directiva**: seleccione uno o más grupos en los que quiera implementar la directiva y haga clic en **Agregar** &gt; **Aceptar**..
+    -   **Para implementar la directiva:** seleccione uno o más grupos en los que quiera implementar la directiva y haga clic en **Agregar** &gt; **Aceptar**..
 
-    -   **Para cerrar el cuadro de diálogo sin implementarla**: haga clic en **Cancelar**..
+    -   **Para cerrar el cuadro de diálogo sin implementarla:** haga clic en **Cancelar**..
 
 Cuando se selecciona una directiva implementada, puede ver más información acerca de la implementación en la parte inferior de la lista de directivas.
 

@@ -36,7 +36,7 @@ En el Portal de Azure se pueden crear directivas de MAM aplicables a los siguien
 
 Si actualmente usa la **consola de administración de Intune** para administrar sus dispositivos, puede crear una directiva de MAM que admita aplicaciones para los dispositivos inscritos en Intune mediante la [consola de administración de Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)..
 >[!IMPORTANT]
-> Es posible que no vea todas las configuraciones de directivas de MAM en la consola de administración de Intune. El Portal de Azure es la nueva consola de administración para crear directivas de MAM.
+> Es posible que no vea todas las configuraciones de directiva de MAM en la consola de administración de Intune. El Portal de Azure es la nueva consola de administración para crear directivas de MAM.
 
 ## Iniciar sesión en el Portal de Azure y personalizar la página de inicio
 

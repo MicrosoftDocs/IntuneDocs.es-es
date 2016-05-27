@@ -28,9 +28,9 @@ ms.suite: ems
 #  Configuración de directiva de administración de aplicaciones móviles iOS
 La configuración de directiva que se describe a continuación puede [configurarse](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) para una directiva MAM en la hoja **Configuración** del portal de Azure.
 
-Las dos categorías de configuración de directiva que hay son Reubicación de datos y Acceso:
+Existen dos categorías de configuración de directivas: Reubicación de datos y Acceso.
 
-##  Configuración de reubicación de datos
+##  Configuración de la reubicación de datos
 El término **Aplicaciones administradas por directivas** se usa para referirse a las aplicaciones que están configuradas con directivas MAM.
 
 - **Impedir copias de seguridad de iTunes e iCloud:**
@@ -62,8 +62,8 @@ El término **Aplicaciones administradas por directivas** se usa para referirse 
 - **Restringir cortar, copiar y pegar con otras aplicaciones:**
 Especifique cuándo se deben restringir las operaciones de cortar, copiar y pegar. Elija de entre las siguientes opciones:
   -   **Bloqueado:** no permite las operaciones de cortar, copiar y pegar entre aplicaciones administradas por directivas.
-  -   **Aplicaciones administradas por directivas:** las operaciones de cortar, copiar y pegar solo se permiten entre aplicaciones administradas por directivas.
-  -   **Aplicaciones administradas por directivas con pegar:** permite cortar o copiar datos entre aplicaciones administradas por directivas. Permite que los datos cortados o copiados desde cualquier aplicación se peguen en esta aplicación.
+  -   **Aplicaciones administradas por directivas**: solo permite las operaciones de cortar, copiar y pegar entre aplicaciones administradas por directivas.
+  -   **Aplicaciones administradas por directivas con pegar**: permite el corte o la copia de datos entre aplicaciones administradas por directivas. Permite que los datos cortados o copiados desde cualquier aplicación se peguen en esta aplicación.
   - **Cualquier aplicación**: no se aplican restricciones a las operaciones de cortar, copiar y pegar entre cualesquiera aplicaciones.
 
   **Valor predeterminado = Aplicaciones administradas por directivas con pegar**
@@ -88,7 +88,7 @@ Especifique cuándo se deben restringir las operaciones de cortar, copiar y pega
   **Valor predeterminado = La opción de cifrado no está seleccionada**
 - **ContactSyncDisabled:** elija **Sí** para evitar que la información de contacto se sincronice con la aplicación nativa de libreta de direcciones nativa del dispositivo. Si elige **No**, la aplicación guardará la información de contacto en la aplicación nativa de libreta de direcciones del dispositivo.
 
-  Al realizar una eliminación selectiva para quitar datos de la empresa, se quitan los contactos sincronizados directamente desde la aplicación a la libreta de direcciones nativa. No se pueden borrar los contactos de la libreta de direcciones nativa sincronizados con otro origen externo. Actualmente esto es válido únicamente para **Microsoft Outlook**.
+  Al realizar una eliminación selectiva para quitar datos de la empresa, se quitan los contactos sincronizados directamente desde la aplicación a la libreta de direcciones nativa. No se pueden borrar los contactos de la libreta de direcciones nativa sincronizados con otro origen externo. Actualmente esto se aplica únicamente a **Microsoft Outlook**.
 
   **Valor predeterminado = Sí**
 ##  Configuración de directiva de acceso de iOS

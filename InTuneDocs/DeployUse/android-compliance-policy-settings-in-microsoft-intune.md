@@ -52,13 +52,13 @@ Si quiere información sobre otras plataformas, seleccione uno de los siguientes
 
 - **Minutos de inactividad antes de que se requiera la contraseña:** especifica el tiempo de inactividad que transcurre antes de que el usuario deba volver a escribir su contraseña.
 
-- **Expiración de la contraseña (días):** seleccione el número de días que deben transcurrir para que la contraseña expire
+- **Caducidad de la contraseña (días):** seleccione el número de días que faltan para que la contraseña expire
   y se deba crear otra.
 
 - **Recordar historial de contraseñas:** use esta opción junto con **Impedir la reutilización de contraseñas anteriores** para evitar que el usuario
   cree contraseñas usadas anteriormente.
 
-- **Impedir la reutilización de contraseñas anteriores:** si se ha seleccionado **Recordar historial de contraseñas**, especifique el
+- **Impedir la reutilización de contraseñas anteriores:** si **Recordar historial de contraseñas** se ha seleccionado, especifique el
   número de contraseñas usadas previamente que no se pueden volver a usar.
 
 - **Requerir una contraseña cuando el dispositivo vuelva de un estado de inactividad:**
@@ -77,8 +77,8 @@ Si quiere información sobre otras plataformas, seleccione uno de los siguientes
   los dispositivos descodificados se considerarán como no compatibles.
 
 ## Configuración de propiedades de dispositivo
-- **Minimum OS required** (Versión mínima de sistema operativo): cuando un dispositivo no cumple el requisito de versión mínima
-  del sistema operativo, se notifica como no conforme.
+- **Versión mínima del sistema operativo:** cuando un dispositivo no cumple el requisito de versión mínima
+  del sistema operativo, se notifica como no compatible.
   Además, se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario final puede optar por actualizar el dispositivo, tras lo cual podrá tener acceso a los recursos de la empresa.
 
 - **Maximum OS version allowed** (Versión máxima de sistema operativo permitida): cuando un dispositivo usa una

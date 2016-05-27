@@ -100,11 +100,11 @@ La nueva directiva se muestra en el nodo **Directivas de configuración** del á
 
 ## Implementar la directiva
 
-1.  En el área de trabajo **Directiva**, seleccione la directiva que quiera implementar y después haga clic en **Administrar implementación**..
+1.  En el área de trabajo **Directiva**, seleccione la directiva que quiera implementar y, luego, haga clic en **Administrar implementación**..
 
 2.  En el cuadro de diálogo **Administrar la implementación** :
 
-    -   **Para implementar la directiva**: seleccione uno o más grupos en los que quiera implementar la directiva y haga clic en **Agregar** &gt; **Aceptar**..
+    -   **Para implementar la directiva:** seleccione uno o más grupos en los que quiera implementar la directiva y haga clic en **Agregar** &gt; **Aceptar**..
 
     -   **Para cerrar el cuadro de diálogo sin implementarla:** haga clic en **Cancelar**..
 

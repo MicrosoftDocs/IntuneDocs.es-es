@@ -37,12 +37,12 @@ Si desea obtener información sobre otras plataformas, seleccione uno de los sig
 
 ## Configuración de seguridad del sistema
 ### Contraseña
-- **Requerir una contraseña para desbloquear dispositivos móviles:** establezca esta opción en **Sí** para exigir que los usuarios escriban una contraseña antes de
+- **Requerir una contraseña para desbloquear dispositivos móviles:**    establezca esta opción en **Sí** para exigir que los usuarios escriban una contraseña antes de
   tener acceso a sus dispositivos. Los dispositivos iOS que usan contraseñas están cifrados.
 
 - **Permitir contraseñas sencillas:**    establezca esta opción
    en **Sí** para permitir a los usuarios crear contraseñas sencillas
-   como "**1234**" o "**1111**".
+   como ‘**1234**’ o ‘**1111**’.
 
 -  **Longitud mínima de la contraseña:**
   especifique el número mínimo de dígitos o caracteres que
@@ -64,12 +64,12 @@ conjuntos de caracteres que debe contener la contraseña. Los conjuntos de cuatr
 - **Minutos de inactividad antes de que sea necesaria la contraseña:** especifique el tiempo de inactividad que transcurre antes de que el usuario deba volver a escribir su contraseña.
 
 - **Caducidad de contraseña (días):** seleccione el número de días que faltan para que la contraseña caduque
-y se deba crear otra.
+y se deba crear una nueva.
 
-- **Recordar historial de contraseñas:** use esta opción junto con **Impedir la reutilización de contraseñas anteriores** para evitar que el usuario
-cree contraseñas usadas anteriormente.
+- **Recordar el historial de contraseñas:** use esta opción junto con **Impedir la reutilización de contraseñas anteriores** para evitar que el usuario
+cree contraseñas que se han usado anteriormente.
 
-- **Impedir la reutilización de contraseñas anteriores:** si se ha seleccionado **Recordar historial de contraseñas**, especifique el
+- **Impedir la reutilización de contraseñas anteriores:** si **Recordar el historial de contraseñas** está seleccionado, especifique el
 número de contraseñas usadas previamente que no se pueden volver a usar.
 
 - **Requerir una contraseña cuando el dispositivo vuelva de un estado de inactividad:**

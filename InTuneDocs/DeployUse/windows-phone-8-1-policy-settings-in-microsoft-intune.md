@@ -108,7 +108,7 @@ Use la **directiva de configuración general de Windows Phone** de Microsoft Int
 |**Permitir copiar y pegar**|Permite la función de copiar y pegar en los dispositivos.|No|Sí|
 
 ### Configuración de aplicaciones conformes y no conformes
-En la lista de **aplicaciones compatibles&amp; y no compatibles**, especifique las aplicaciones que son compatibles y no compatibles con la siguiente información:
+En la lista de **aplicaciones compatibles &amp; no compatibles**, especifique las aplicaciones que son compatibles y no compatibles con la siguiente información:
 
 > [!NOTE]
 > Una única directiva solo puede contener una lista de aplicaciones conformes o una lista de aplicaciones no conformes. No se pueden especificar ambas en la misma directiva.

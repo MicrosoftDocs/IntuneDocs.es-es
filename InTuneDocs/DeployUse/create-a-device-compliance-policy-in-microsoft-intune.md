@@ -72,7 +72,7 @@ En la siguiente tabla se muestran las opciones de configuración de directiva de
 
 Seleccione una de las siguientes opciones para obtener más información sobre la configuración de cumplimiento normativo que se admite en cada plataforma:
 > [!div class="op_single_selector"]
-- [Configuración de directivas de cumplimiento para dispositivos iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
+- [Configuración de directivas de cumplimiento normativo para dispositivos iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Configuración de directivas de cumplimiento normativo para dispositivos Android](android-compliance-policy-settings-in-microsoft-intune.md)
 - [Configuración de directivas de cumplimiento normativo para dispositivos Windows y Windows Phone ](windows-compliance-policy-settings-in-microsoft-intune.md)
 

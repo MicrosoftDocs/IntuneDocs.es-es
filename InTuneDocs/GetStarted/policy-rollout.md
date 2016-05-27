@@ -37,7 +37,7 @@ Las fases de implementación de directivas son:
 
 -   Prueba de concepto
 
--   Fase piloto
+-   Piloto
 
 -   Implementación empresarial
 

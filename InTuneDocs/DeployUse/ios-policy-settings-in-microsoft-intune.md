@@ -55,7 +55,7 @@ Si el valor que busca no aparece en este tema, puede crearlo mediante una direct
 |**Minutos de inactividad antes de que se apague la pantalla**<sup>1</sup>|Especifique el número de minutos antes de que la pantalla del dispositivo se apague.|Sí|
 |**Caducidad de contraseña (días)**|Especifica el número de días antes de que se deba cambiar la contraseña del dispositivo.|Sí|
 |**Recordar el historial de contraseñas**|Especifica si el usuario puede utilizar las contraseñas que ha usado anteriormente.|Sí|
-|**Recordar historial de la contraseña** : **Impedir la reutilización de contraseñas anteriores**|Especifica el número de contraseñas usadas anteriormente que recuerda el dispositivo.|Sí|
+|**Recordar historial de la contraseña** : **Impedir la reutilización de contraseñas anteriores**|Especifica el número de contraseñas usadas previamente que el dispositivo recuerda.|Sí|
 |**Minutos de inactividad antes de que sea necesaria la contraseña**<sup>1</sup>|Especifica cuánto tiempo puede permanecer inactivo el dispositivo antes de que el usuario deba volver a escribir su contraseña.|Sí|
 |**Permitir desbloqueo mediante huellas digitales**|Permite desbloquear el dispositivo mediante las huellas digitales.|iOS 7.1 y versiones posteriores|
 <sup>1</sup> En los dispositivos iOS, cuando configura las opciones **Minutos de inactividad antes de que se apague la pantalla** y **Minutos de inactividad antes de que sea necesaria la contraseña**, estas se aplican en secuencia. Por ejemplo, si establece el valor para ambas opciones en **5** minutos, la pantalla se apagará automáticamente transcurridos 5 minutos y el dispositivo se bloqueará pasados 5 minutos más. Sin embargo, si el usuario apaga la pantalla manualmente, la segunda opción se aplica inmediatamente. En el mismo ejemplo, una vez que el usuario apague la pantalla, el dispositivo se bloqueará 5 minutos más tarde.
@@ -135,7 +135,7 @@ Si el valor que busca no aparece en este tema, puede crearlo mediante una direct
 
 
 ### Configuración de aplicaciones conformes y no conformes
-En la lista de **aplicaciones compatibles&amp; y no compatibles**, especifique las aplicaciones que son compatibles y no compatibles con la siguiente información:
+En la lista de **aplicaciones compatibles y no compatibles&amp;, especifique una lista de las aplicaciones compatibles y no compatibles con la siguiente información:
 
 > [!NOTE]
 > Una única directiva solo puede contener una lista de aplicaciones conformes o una lista de aplicaciones no conformes. No se pueden especificar ambas en la misma directiva.
@@ -185,7 +185,7 @@ Utilice el **Informe de aplicaciones no conformes** para ver la conformidad de l
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), haga clic en **Informes** &gt; **Informe de aplicaciones no compatibles**..
 
-2.  Seleccione los grupos de dispositivos que quiere comprobar, si quiere buscar las aplicaciones compatibles, las no compatibles o ambas y, después, haga clic en **Ver informe**..
+2.  Seleccione los grupos de dispositivos que quiere comprobar, si quiere comprobar las aplicaciones compatibles, las no compatibles o ambas y, después, haga clic en **Ver informe**..
 
 #### Cómo especificar las direcciones URL de tiendas de aplicaciones
 Para especificar una dirección URL de aplicación en la lista de aplicaciones conformes y no conformes o en la opción **Seleccione una aplicación administrada que se podrá ejecutar cuando el dispositivo esté en modo de pantalla completa** (solo iOS), use el siguiente formato:
