@@ -63,11 +63,12 @@ La información de esta sección le ayudará a solucionar los problemas que pued
 - [Send enrollment errors to your IT administrator (Enviar errores de inscripción al administrador de TI)](send-enrollment-errors-to-your-it-administrator-android.md)</br>
 - [El dispositivo no tiene la versión necesaria mínima del sistema operativo](device-doesnt-have-the-required-minimum-operating-system-version-android.md)</br>
 - [El dispositivo no es compatible con la versión máxima de sistema operativo](device-doesnt-comply-with-maximum-operating-system-version-android.md)</br>
-- [El dispositivo se ha modificado y no se puede conectar](your-device-is-rooted-and-you-cant-connect-android.md)
-- [El dispositivo no tiene un certificado necesario](your-device-is-missing-a-required-certificate-android.md)
+- [El dispositivo se ha modificado y no se puede conectar](your-device-is-rooted-and-you-cant-connect-android.md)</br>
+- [El dispositivo no tiene un certificado necesario](your-device-is-missing-a-required-certificate-android.md)</br>
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=May16_HO3-->
 
 
