@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configuración de directivas de iOS en Microsoft Intune | Microsoft Intune
+title: Configuración de directivas de iOS | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -38,7 +38,7 @@ Use la **directiva de configuración general de iOS** de Microsoft Intune para c
 -   **Aplicaciones compatibles y no compatibles**: especifique una lista de las aplicaciones compatibles y no compatibles de su empresa. En los dispositivos iOS y Android, el **informe de aplicaciones no conformes** puede utilizarse para comparar la conformidad de las aplicaciones especificadas en la lista con las aplicaciones que los usuarios han instalado (pero en realidad no pueden impedir la instalación de la aplicación).
 
 > [!TIP]
-> Puede configurar los términos y condiciones de los usuarios para asegurarse de que saben que las aplicaciones de su dispositivo, incluidas las aplicaciones personales, se evaluarán y que las aplicaciones no conformes se bloquearán o se notificarán como no conformes. Los usuarios deben aceptar estos términos y condiciones para poder inscribir su dispositivo y utilizar el portal de empresa para obtener aplicaciones. Para obtener más información sobre el uso de los términos y condiciones, consulte [Configuración de la directiva de términos y condiciones en Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md)..
+> Puede configurar los términos y condiciones de los usuarios para asegurarse de que saben que las aplicaciones de su dispositivo, incluidas las aplicaciones personales, se evaluarán y que las aplicaciones no conformes se bloquearán o se notificarán como no conformes. Los usuarios deben aceptar estos términos y condiciones para poder inscribir su dispositivo y utilizar el portal de empresa para obtener aplicaciones. Para obtener más información sobre el uso de los términos y condiciones, consulte [Configuración de la directiva de términos y condiciones en Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md).
 
 Si el valor que busca no aparece en este tema, puede crearlo mediante una directiva personalizada de iOS que le permita importar la configuración creada con [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12). Para obtener más información, consulte **Configuración de directivas personalizadas**.
 
@@ -55,7 +55,7 @@ Si el valor que busca no aparece en este tema, puede crearlo mediante una direct
 |**Minutos de inactividad antes de que se apague la pantalla**<sup>1</sup>|Especifique el número de minutos antes de que la pantalla del dispositivo se apague.|Sí|
 |**Caducidad de contraseña (días)**|Especifica el número de días antes de que se deba cambiar la contraseña del dispositivo.|Sí|
 |**Recordar el historial de contraseñas**|Especifica si el usuario puede utilizar las contraseñas que ha usado anteriormente.|Sí|
-|**Recordar historial de la contraseña** : **Impedir la reutilización de contraseñas anteriores**|Especifica el número de contraseñas usadas previamente que el dispositivo recuerda.|Sí|
+|**Recordar historial de la contraseña** : **Impedir la reutilización de contraseñas anteriores**|Especifica el número de contraseñas usadas anteriormente que recuerda el dispositivo.|Sí|
 |**Minutos de inactividad antes de que sea necesaria la contraseña**<sup>1</sup>|Especifica cuánto tiempo puede permanecer inactivo el dispositivo antes de que el usuario deba volver a escribir su contraseña.|Sí|
 |**Permitir desbloqueo mediante huellas digitales**|Permite desbloquear el dispositivo mediante las huellas digitales.|iOS 7.1 y versiones posteriores|
 <sup>1</sup> En los dispositivos iOS, cuando configura las opciones **Minutos de inactividad antes de que se apague la pantalla** y **Minutos de inactividad antes de que sea necesaria la contraseña**, estas se aplican en secuencia. Por ejemplo, si establece el valor para ambas opciones en **5** minutos, la pantalla se apagará automáticamente transcurridos 5 minutos y el dispositivo se bloqueará pasados 5 minutos más. Sin embargo, si el usuario apaga la pantalla manualmente, la segunda opción se aplica inmediatamente. En el mismo ejemplo, una vez que el usuario apague la pantalla, el dispositivo se bloqueará 5 minutos más tarde.
@@ -135,7 +135,7 @@ Si el valor que busca no aparece en este tema, puede crearlo mediante una direct
 
 
 ### Configuración de aplicaciones conformes y no conformes
-En la lista de **aplicaciones compatibles y no compatibles&amp;, especifique una lista de las aplicaciones compatibles y no compatibles con la siguiente información:
+En la lista de **aplicaciones compatibles&amp; y no compatibles**, especifique las aplicaciones que son compatibles y no compatibles con la siguiente información:
 
 > [!NOTE]
 > Una única directiva solo puede contener una lista de aplicaciones conformes o una lista de aplicaciones no conformes. No se pueden especificar ambas en la misma directiva.
@@ -160,7 +160,7 @@ En la lista de **aplicaciones compatibles y no compatibles&amp;, especifique una
 |**Permite el conmutador de timbre**|Habilita o deshabilita el conmutador de timbre (silencio) en el dispositivo.|
 |**Permitir el botón de reactivación de suspensión de pantalla**|Habilita o deshabilita el botón de reactivación de la suspensión de pantalla en el dispositivo.|
 |**Permitir el bloqueo automático**|Habilita o deshabilita el bloqueo automático del dispositivo.|
-|**Habilitar audio mono**|Habilita o deshabilita la configuración de accesibilidad **Audio mono**..|
+|**Habilitar audio mono**|Habilita o deshabilita la configuración de accesibilidad **Audio mono**.|
 |**Habilitar VoiceOver**|Habilita o deshabilita la opción de accesibilidad **VoiceOver** , que lee en voz alta el texto de la pantalla del dispositivo.|
 |**Habilitar los ajustes de VoiceOver**|Habilita o deshabilita los ajustes de VoiceOver, que permiten ajustar la función VoiceOver (por ejemplo, la rapidez con la que se lee el texto en pantalla en voz alta).|
 |**Habilitar zoom**|Habilita o deshabilita la configuración de accesibilidad de **Zoom** , que permite usar un toque para hacer zoom en la pantalla del dispositivo.|
@@ -170,8 +170,7 @@ En la lista de **aplicaciones compatibles y no compatibles&amp;, especifique una
 |**Habilitar la interacción táctil de asistencia**|Habilita o deshabilita la configuración de accesibilidad **Interacción táctil de asistencia** que ayuda a los usuarios a realizar gestos en pantalla que podrían resultarles difíciles.|
 |**Habilitar los ajustes de la interacción táctil de asistencia**|Habilita o deshabilita los ajustes de la interacción táctil de asistencia que le permiten ajustar la función de interacción táctil de asistencia.|
 |**Habilitar la selección de voz**|Habilita o deshabilita la configuración de accesibilidad **Reproducir selección** que lee en voz alta el texto que seleccione.|
-> [!NOTE]
-> Las siguientes notas se aplican a la configuración del modo de quiosco para dispositivos iOS:
+> [!NOTE] Las siguientes notas se aplican a la configuración del modo de quiosco para dispositivos iOS:
 > 
 > -   Antes de configurar un dispositivo iOS para el modo de quiosco, debe usar la [herramienta Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) o el administrador de inscripción de dispositivos para ajustar el dispositivo en el modo de supervisión. Para obtener más información acerca de la herramienta Apple Configurator, consulte la documentación de Apple.
 > -   Si la aplicación de iOS que especifique se instala después de implementar la directiva de configuración, el dispositivo no pasará al modo de quiosco hasta que se reinicie.
@@ -183,9 +182,9 @@ Utilice el **Informe de aplicaciones no conformes** para ver la conformidad de l
 
 ##### Para ejecutar el informe de aplicaciones no conformes
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), haga clic en **Informes** &gt; **Informe de aplicaciones no compatibles**..
+1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), haga clic en **Informes** &gt; **Informe de aplicaciones no conformes**.
 
-2.  Seleccione los grupos de dispositivos que quiere comprobar, si quiere comprobar las aplicaciones compatibles, las no compatibles o ambas y, después, haga clic en **Ver informe**..
+2.  Seleccione los grupos de dispositivos que quiere comprobar, si quiere comprobar las aplicaciones conformes, las aplicaciones no conformes o ambas y, a continuación, haga clic en **Ver informe**.
 
 #### Cómo especificar las direcciones URL de tiendas de aplicaciones
 Para especificar una dirección URL de aplicación en la lista de aplicaciones conformes y no conformes o en la opción **Seleccione una aplicación administrada que se podrá ejecutar cuando el dispositivo esté en modo de pantalla completa** (solo iOS), use el siguiente formato:
@@ -194,10 +193,9 @@ Con la ayuda de un motor de búsqueda, busque la aplicación que desea usar en i
 
 Copie la dirección URL de la página y úsela como dirección URL para configurar la lista de aplicaciones conformes y no conformes o la aplicación que desea ejecutar en modo de quiosco.
 
-**Ejemplo:** Busque **Microsoft Word para iPad**. La dirección URL que use será **https://itunes.apple.com/es/app/microsoft-word-for-ipad/id586447913?mt=8**..
+**Ejemplo:** Busque **Microsoft Word para iPad**. La dirección URL que use será **https://itunes.apple.com/es/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
-> [!NOTE]
-> También puede utilizar el software de iTunes para encontrar la aplicación y, a continuación, utilizar el comando **Copiar vínculo** para obtener la dirección URL de la aplicación.
+> [!NOTE] También puede usar el software de iTunes para encontrar la aplicación y, después, usar el comando **Copiar vínculo** para obtener la dirección URL de la aplicación.
 
 
 ## Configuración de directivas personalizadas
@@ -232,6 +230,6 @@ Antes de empezar, debe tener instalado Apple Configurator y haber creado un arch
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

@@ -15,7 +15,7 @@ ms.assetid: 28914db1-3e62-45f5-9632-b0d2a808a44d
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -34,7 +34,7 @@ Para anular la inscripción del dispositivo de Intune, siga estos pasos o vea es
 
 1.  En la aplicación del Portal de empresa, en **Mis dispositivos**, seleccione el dispositivo correspondiente.
 
-2.  Pulse **Quitar** &gt; **Quitar**..
+2.  Pulse **Quitar** &gt; **Quitar**.
 
 Cuando se anula la inscripción de un dispositivo de Intune, ocurre lo siguiente:
 
@@ -57,6 +57,6 @@ Cuando se anula la inscripción de un dispositivo de Intune, ocurre lo siguiente
 ### Consulte también
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

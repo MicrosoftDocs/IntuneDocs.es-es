@@ -27,15 +27,14 @@ ms.suite: ems
 
 # Portal de empresa de Microsoft Intune.
 
-Antes de configurar [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], repase este tema y los requisitos que aparecen en [What to know before you start Microsoft Intune (Información necesaria antes de iniciar Microsoft Intune)](what-to-know-before-you-start-microsoft-intune.md)..
+Antes de configurar [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], repase este tema y los requisitos que aparecen en [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md) (Información necesaria antes de iniciar Microsoft Intune).
 
 El Portal de empresa de Microsoft Intune es una herramienta que proporciona a los usuarios acceso a aplicaciones y datos de la empresa. El Portal de empresa está disponible en dos formas:
 
--   **Aplicación Portal de empresa**: una aplicación que está disponible en dispositivos administrados con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Obtenga más información sobre de las aplicaciones de Portal de empresa para [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
-y [Windows](/Intune/EndUser/using-your-windows-device-with-intune)..
+-   **Aplicación Portal de empresa**: una aplicación que está disponible en dispositivos administrados con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Obtenga más información sobre las aplicaciones de Portal de empresa para [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) y [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
 
 
-- **Sitio web del Portal de empresa**: un sitio web que ofrece acceso desde [un explorador compatible](supported-web-browsers.md). La dirección URL es [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com). Obtenga más información sobre este sitio web en [Usar el sitio web del Portal de empresa de Intune](/Intune/EndUser/using-the-intune-company-portal-website)..
+- **Sitio web del Portal de empresa**: un sitio web que ofrece acceso desde [un explorador compatible](supported-web-browsers.md). La dirección URL es [https://portal.office.com/Admin/Default.aspx](https://portal.office.com/Admin/Default.aspx). Obtenga más información sobre este sitio web en [Using the Intune Company Portal website](/Intune/EndUser/using-the-intune-company-portal-website) (Usar el sitio web del Portal de empresa de Intune).
 
 Estas son algunas de las tareas que los usuarios pueden hacer en el Portal de empresa:
 
@@ -59,6 +58,6 @@ Antes de que un usuario pueda obtener acceso al Portal de empresa, se le debe co
 [What to know before you start Microsoft Intune (Información necesaria antes de iniciar Microsoft Intune)](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

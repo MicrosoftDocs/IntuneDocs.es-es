@@ -15,7 +15,7 @@ ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -39,7 +39,7 @@ Cuando accede a datos de la empresa en una aplicación administrada, verá un me
 ### ¿Cómo se pueden obtener aplicaciones administradas?
 Las aplicaciones administradas se obtienen de dos maneras distintas:
 
--   Cuando el dispositivo está inscrito en Microsoft Intune, puede instalar la aplicación desde la aplicación Portal de empresa o un sitio web del Portal de empresa, o bien el administrador de TI puede instalarla en el dispositivo. Para obtener más información sobre la inscripción, consulte [Enroll your iOS device in Intune (Inscribir el dispositivo iOS en Intune)](enroll-your-device-in-intune-ios.md) o [Enroll your Mac OS X device in Intune (Inscribir el dispositivo Mac OS X en Intune)](enroll-your-device-in-intune-mac-os-x.md)..
+-   Cuando el dispositivo está inscrito en Microsoft Intune, puede instalar la aplicación desde la aplicación Portal de empresa o un sitio web del Portal de empresa, o bien el administrador de TI puede instalarla en el dispositivo. Para obtener más información sobre la inscripción, consulte [Enroll your iOS device in Intune (Inscribir el dispositivo iOS en Intune)](enroll-your-device-in-intune-ios.md) o [Enroll your Mac OS X device in Intune (Inscribir el dispositivo Mac OS X en Intune)](enroll-your-device-in-intune-mac-os-x.md).
 
 -   Instale una aplicación de App Store y después inicie sesión con su cuenta de usuario corporativo que se administra mediante Intune.
 
@@ -81,6 +81,6 @@ Para obtener más información sobre las aplicaciones administradas en el dispos
 ### Consulte también
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

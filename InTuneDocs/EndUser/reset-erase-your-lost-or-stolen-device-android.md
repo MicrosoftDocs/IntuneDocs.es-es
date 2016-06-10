@@ -28,12 +28,11 @@ ms.suite: ems
 
 # Restablecer (borrar) el dispositivo perdido o robado
 
-Si pierde o le roban el teléfono, puede restablecer los valores predeterminados de fábrica desde la aplicación Portal de empresa o el sitio web. Para obtener instrucciones sobre el uso de la aplicación Portal de empresa, siga estos pasos o vea este [vídeo](http://aka.ms/ly1x17). También puede [restablecer el dispositivo mediante el sitio web del Portal de empresa](reset-your-device-cpwebsite.md).
+Si pierde o le roban el teléfono Android, puede restablecer los valores predeterminados de fábrica desde la aplicación o el sitio web del portal de empresa. Para obtener instrucciones sobre el uso de la aplicación Portal de empresa, siga estos pasos o vea este [vídeo](http://aka.ms/ly1x17). También puede [restablecer el dispositivo mediante el sitio web del portal de empresa](reset-your-device-cpwebsite.md).
 
-Para obtener información sobre lo que ocurre cuando se restablece un dispositivo, consulte [What happens if you reset your device using the Company Portal](what-happens-if-you-reset-your-device-using-the-company-portal-android.md) (¿Qué ocurre al restablecer un dispositivo mediante el Portal de empresa?)..
+Para obtener información sobre lo que ocurre cuando se restablece un dispositivo, consulte [What happens if you reset your device using the Company Portal (¿Qué ocurre al restablecer un dispositivo mediante el portal de empresa?)](what-happens-if-you-reset-your-device-using-the-company-portal-android.md).
 
-> [!WARNING] 
-> Al hacerlo, quitará de él su información personal y de trabajo.
+> [!WARNING] Al hacerlo, quitará de él la información personal y de trabajo.
 
 1.  En el explorador, abra el [sitio web del Portal de empresa](http://portal.manage.microsoft.com) e inicie sesión con su cuenta profesional.
 
@@ -48,6 +47,6 @@ Si no puede restablecer el dispositivo perdido o robado, pida al administrador d
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

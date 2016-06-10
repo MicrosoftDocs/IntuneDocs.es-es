@@ -28,16 +28,15 @@ ms.suite: ems
 
 # Restablecer el código de acceso de un dispositivo desde el sitio web del portal de empresa
 
-Si pierde el PIN o la contraseña de un dispositivo inscrito en Intune, puede usar el [sitio web del portal de empresa](http://portal.manage.microsoft.com) para restablecerlos. El sitio web del portal de empresa es una página web que puede usar para administrar equipos y dispositivos que haya inscrito en Intune y para realizar la mayoría de las mismas tareas que se pueden realizar con la aplicación de portal de empresa.
+Si pierde el PIN o la contraseña de un dispositivo inscrito en Intune, puede usar el [sitio web del portal de empresa](http://portal.manage.microsoft.com) para restablecerlos. El sitio web del Portal de empresa es una página web que puede usar para administrar equipos y dispositivos que haya inscrito en Intune y para realizar la mayoría de las tareas que se pueden realizar con la aplicación Portal de empresa.
 
-> [!NOTE] 
-> Es posible que no vea el botón de restablecimiento de contraseña en el sitio web del portal de empresa, según cómo haya configurado Intune el administrador de TI. El restablecimiento del código de acceso no se admite en dispositivos Windows 8.1 y Windows RT.
+> [!NOTE] Según la configuración de Intune que haya realizado el administrador de TI, es posible que no vea el botón Restablecer código de acceso en el sitio web del portal de empresa. El restablecimiento del código de acceso no se admite en dispositivos Windows 8.1 y Windows RT.
 
 Para restablecer el código de acceso:
 
 1.  Abra el [sitio web del portal de empresa](http://portal.manage.microsoft.com) y pulse el dispositivo cuyo código de acceso quiere restablecer.
 
-2.  Pulse **Restablecer el código de acceso**..
+2.  Pulse **Restablecer código de acceso**.
 
     ![tap-passcode-to-reset](./media/iwp-1-tap-reset-passcode.png)
 
@@ -45,7 +44,7 @@ Para restablecer el código de acceso:
 
     ![sign-out-sign-back-in](./media/iwp-2-sign-out.png)
 
-4.  Pulse **Restablecer el código de acceso**..
+4.  Pulse **Restablecer código de acceso**.
 
     ![tap-reset-passcode](./media/iwp-3-tap-reset-passcode-after-signin.png)
 
@@ -66,6 +65,6 @@ Para restablecer el código de acceso:
 ### Consulte también
 [Usar el sitio web del Portal de empresa de Intune](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

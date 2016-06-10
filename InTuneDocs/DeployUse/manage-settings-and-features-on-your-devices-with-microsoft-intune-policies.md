@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune | Microsoft Intune
+title: Administrar la configuración y las características de los dispositivos con directivas | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -35,33 +35,32 @@ Las directivas de Intune se dividen en las siguientes categorías. La directiva 
 
 - **Directivas de configuración:** normalmente se utilizan para administrar las características y la configuración de seguridad en los dispositivos. Use la información de este tema para ver cómo crear e implementar estas directivas y para explorar las opciones disponibles.
 - **Directivas de cumplimiento de dispositivos:** definen las reglas y los valores de configuración que un dispositivo debe cumplir para que se considere conforme a las directivas de acceso condicional. Las directivas de cumplimiento también se pueden usar para supervisar y corregir problemas de compatibilidad con dispositivos independientemente del acceso condicional.
-Para más información, consulte [Device compliance policies in Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md) (Directivas de cumplimiento de dispositivos de Microsoft Intune)..
+Para obtener más información, consulte [Device compliance policies in Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md) (Directivas de cumplimiento de dispositivos de Microsoft Intune).
 - **Directivas de acceso condicional:** estas directivas le ayudan a proteger el correo electrónico y otros servicios en función de las condiciones que especifique.
-Para más información, consulte [Restrict access to email and O365 services with Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (Restringir el acceso al correo electrónico y los servicios de O365 con Microsoft Intune)..
-- **Directivas de inscripción de dispositivos corporativos:** Para obtener información sobre las directivas de inscripción de dispositivos corporativos, consulte [Configurar la administración de iOS con Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md)..
+Para obtener más información, consulte [Restrict access to email and O365 services with Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (Restringir el acceso al correo electrónico y los servicios de O365 con Microsoft Intune).
+- **Directivas de inscripción de dispositivos corporativos:** para obtener información sobre las directivas de inscripción de dispositivos corporativos, consulte [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md) (Configurar la administración de iOS y Mac con Microsoft Intune).
 - **Directivas de acceso a recursos:** este grupo de directivas funcionan juntas para ayudar a los usuarios a obtener acceso a los archivos y recursos que necesitan para hacer su trabajo correctamente, estén donde estén.
-Para más información, consulte [Habilitar el acceso a los recursos de empresa con Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md)..
+Para obtener más información, vea [Enable access to company resources with Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md) (Habilitar el acceso a los recursos de la empresa con Microsoft Intune).
 
 
-Para obtener una lista completa de las directivas de Intune, consulte [Referencia de directivas de Microsoft Intune](microsoft-intune-policy-reference.md)..
+Para obtener una lista completa de las directivas de Intune, consulte [Microsoft Intune policy reference](microsoft-intune-policy-reference.md) (Referencia de directivas de Microsoft Intune).
 
 
 
 
 ## Crear una directiva de configuración
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), haga clic en **Directiva** &gt; **Directivas de configuración** &gt; **Agregar**..
+1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), haga clic en **Directiva** &gt; **Directivas de configuración** &gt; **Agregar**.
 
 2.  Seleccione la directiva que quiera, elija usar la configuración recomendada para la directiva (si está disponible; puede cambiar esta configuración en otro momento), o crear una directiva personalizada con su propia configuración.
 
-    > [!TIP]
-    > Para obtener ayuda a la hora de elegir la directiva correcta, consulte [Referencia de directivas de Microsoft Intune](microsoft-intune-policy-reference.md)..
+    > [!TIP] Para obtener ayuda a la hora de elegir la directiva correcta, consulte [Microsoft Intune policy reference](microsoft-intune-policy-reference.md) (Referencia de directivas de Microsoft Intune).
 
-3.  Cuando esté listo, haga clic en **Crear directiva**..
+3.  Cuando esté listo, haga clic en **Crear directiva**.
 
 4.  En la pantalla **Crear directiva** , configure un nombre y una descripción opcional para la directiva.
 
-5.  Configure los valores necesarios de la directiva y después haga clic en **Guardar directiva**..
+5.  Configure la directiva necesaria y, a continuación, haga clic en **Guardar directiva**.
 
     Si necesita ayuda con la configuración de alguna directiva, elija el tipo de directiva en la lista siguiente:
 
@@ -90,13 +89,13 @@ Ahora que ha creado una directiva, probablemente querrá implementarla en uno o 
 
 ## Implementar una directiva de configuración
 
-1.  En el área de trabajo **Directiva**, seleccione la directiva que quiera implementar y, luego, haga clic en **Administrar implementación**..
+1.  En el área de trabajo **Directiva** , seleccione la directiva que quiera implementar y, a continuación, haga clic en **Administrar implementación**.
 
 2.  En el cuadro de diálogo **Administrar la implementación** :
 
-    -   **Para implementar la directiva**: seleccione uno o más grupos en los que quiera implementar la directiva y haga clic en **Agregar** &gt; **Aceptar**..
+    -   **Para implementar la directiva**: seleccione uno o más grupos en los que quiera implementar la directiva y haga clic en **Agregar** &gt; **Aceptar**.
 
-    -   **Para cerrar el cuadro de diálogo sin implementarla**: haga clic en **Cancelar**..
+    -   **Para cerrar el cuadro de diálogo sin implementarla**: haga clic en **Cancelar**.
 
 Cuando se selecciona una directiva implementada, puede ver más información acerca de la implementación en la parte inferior de la lista de directivas.
 
@@ -108,7 +107,7 @@ Cuando se selecciona una directiva implementada, puede ver más información ace
 
 - **Editar**: abre las propiedades de la directiva seleccionada para que pueda realizar cambios.
 - **Eliminar**: elimina la directiva seleccionada.<br>Al eliminar una directiva, se quita de todos los grupos en los que se ha implementado.
-- **Administrar implementación**: seleccione el grupo en el que desea implementar la directiva y haga clic en **Agregar**..
+- **Administrar implementación**: seleccione el grupo en el que quiere implementar la directiva y haga clic en **Agregar**.
 
 ## Tareas para las directivas de Intune
 
@@ -116,11 +115,11 @@ Cuando se selecciona una directiva implementada, puede ver más información ace
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), haga clic en **Grupos**y seleccione un grupo de dispositivos.
 
-2.  Seleccione los dispositivos en los que desea actualizar las directivas y haga clic en **Tareas remotas** &gt; **Actualizar directivas**..
+2.  Seleccione los dispositivos en los que quiere actualizar las directivas y haga clic en **Tareas remotas** &gt; **Actualizar directivas**.
 
 3.  Haga clic en **Tareas remotas** en la esquina inferior derecha de la ventana de la consola de administración de Intune para comprobar el estado de la tarea.
 
-## Información de referencia para las directivas de Intune
+## Preguntas más frecuentes sobre las directivas de Intune
 
 ### ¿Cuánto tiempo tardan los dispositivos móviles en obtener directivas o aplicaciones una vez implementados?
 Cuando se implementa una directiva o aplicación, Intune empieza inmediatamente a intentar notificar al dispositivo que debe conectar con el servicio Intune. Este proceso suele tardar menos de 5 minutos.
@@ -132,7 +131,8 @@ En ese caso, el dispositivo obtendrá la directiva en la próxima conexión prog
 - iOS: cada 6 horas
 - Android: cada 8 horas
 - Windows Phone: cada 8 horas
-- Equipos con Windows inscritos como dispositivos: cada 24 horas
+- Dispositivos Windows RT inscritos: cada 24 horas
+- Equipos con Windows 8.1 y Windows 10 inscritos como dispositivos: cada 8 horas
 
 Si el dispositivo se acaba de inscribir, la frecuencia de conexión será más frecuente, como se indica a continuación:
 
@@ -214,15 +214,15 @@ Al eliminar una directiva o quitar un dispositivo de un grupo al que se le aplic
 
 #### Equipos Windows que ejecutan el software cliente de Intune
 
-- **Configuración de Endpoint Protection**: se restablecen los valores recomendados de la configuración. La única excepción es la opción de configuración **Unirse a Microsoft Active Protection Service** , para la que el valor predeterminado es **No**. Para más información, consulte [Ayudar a proteger los equipos de Windows con Endpoint Protection para Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)..
-- **Configuración de actualizaciones de software**: se restablece la configuración al estado predeterminado para el sistema operativo. Para más información, consulte [Mantener los equipos Windows al día con las actualizaciones de software de Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)..
+- **Configuración de Endpoint Protection**: se restablecen los valores recomendados de la configuración. La única excepción es la opción de configuración **Unirse a Microsoft Active Protection Service** , para la que el valor predeterminado es **No**. Para obtener más información, consulte [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) (Ayudar a proteger los equipos de Windows con Endpoint Protection para Microsoft Intune).
+- **Configuración de actualizaciones de software**: se restablece la configuración al estado predeterminado para el sistema operativo. Para obtener más información, consulte [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) (Mantener los equipos de Windows al día con las actualizaciones de software de Microsoft Intune).
 - **Configuración de Microsoft Intune Center**: cualquier información de contacto de soporte configurada por la directiva se elimina de los equipos.
-- **Configuración del Firewall de Windows**: se restablece la configuración predeterminada para el sistema operativo del equipo. Para más información, consulte [Ayudar a proteger los equipos de Windows con Endpoint Protection para Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md)..
+- **Configuración del Firewall de Windows**: se restablece la configuración predeterminada para el sistema operativo del equipo. Para obtener más información, consulte [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) (Ayudar a proteger los equipos de Windows con Endpoint Protection para Microsoft Intune).
 
 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

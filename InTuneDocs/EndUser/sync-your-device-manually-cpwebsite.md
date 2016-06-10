@@ -28,13 +28,13 @@ ms.suite: ems
 
 # Sincronizar el dispositivo manualmente
 
-Si la instalación de la aplicación tarda demasiado, puede intentar sincronizar el dispositivo manualmente para acelerar la instalación. Siga las instrucciones que coincidan con el tipo de dispositivo que tenga:
+Si la instalación de la aplicación tarda demasiado, puede intentar sincronizar el dispositivo manualmente para acelerar la instalación. Use las instrucciones siguientes que coincidan con el tipo de dispositivo o la versión de Windows que tenga. Las únicas versiones compatibles son las de la lista.
 
 * [Windows 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
 * [Windows 10 Escritorio](sync-your-device-manually-windows.md#windows-10-desktop)
 * [Windows Phone 8,1](sync-your-device-manually-windows.md#windows-phone-8-1)
 * [iOS](sync-your-device-manually-ios.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

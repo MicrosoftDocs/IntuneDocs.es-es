@@ -15,7 +15,7 @@ ms.assetid: 98034875-cd3a-4367-a8d7-c5d4a438d496
 
 # optional metadata
 
-ROBOTS: noindex,nofollow
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -28,16 +28,16 @@ ms.suite: ems
 # Cómo establecer el período antes de que se bloquee el dispositivo Android
 Para volver a conectar con su trabajo, deberá establecer el tiempo de espera de la contraseña en el dispositivo siguiendo estas instrucciones:
 
-1.  En **Configuración** en el dispositivo, haga clic en **Seguridad** &gt; **Bloqueo automático** (aparece como **Bloquear teléfono tras** en algunos dispositivos).
+1.  En el dispositivo, en **Configuración**, haga clic en **Seguridad** &gt; **Bloqueo automático** (aparece como **Bloquear teléfono tras** en algunos dispositivos).
 
-    Si **Bloqueo automático** (**Bloquear teléfono tras** en algunos dispositivos) no aparece, asegúrese de que ha establecido una contraseña válida en **Configuración** &gt; **Bloqueo de pantalla** &gt; **Contraseña**..
+    Si **Bloqueo automático** (**Bloquear teléfono tras** en algunos dispositivos) no aparece, asegúrese de que ha establecido una contraseña válida en **Configuración** &gt; **Bloqueo de pantalla** &gt; **Contraseña**.
 
 2.  Especifique el valor de tiempo de espera de la contraseña.
 
-3.  Asegúrese de que el dispositivo esté inscrito en Intune. Para ello, siga las instrucciones que se indican en [Inscribir su dispositivo para usarlo en el trabajo](http://go.microsoft.com/fwlink/?LinkId=519071)..
+3.  Asegúrese de que el dispositivo esté inscrito en Intune. Para ello, siga las instrucciones que se indican en [Enroll your device to use it at work](http://go.microsoft.com/fwlink/?LinkId=519071) (Inscribir el dispositivo para usarlo en el trabajo).
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

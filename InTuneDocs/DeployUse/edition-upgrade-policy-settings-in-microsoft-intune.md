@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configuración de directivas de actualización de edición de Windows en Microsoft Intune | Microsoft Intune
+title: Configuración de la directiva de actualización de edición de Windows | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -44,11 +44,11 @@ Antes de empezar a actualizar dispositivos a la versión más reciente, necesita
 |**Descripción**|Si lo desea, escriba una descripción de la directiva que sirva para identificarla en la consola de Intune.
 |**Edición a la que actualizar**|En la lista desplegable, seleccione la versión de Windows 10 Escritorio, Windows 10 Holographic o Windows 10 Mobile a la que quiera actualizar los dispositivos de destino.
 |**Clave de producto**|Especifique la clave de producto que obtuvo de Microsoft, que se puede usar para actualizar todos los dispositivos de Windows 10 Escritorio de destino.<br>Después de crear una directiva que contenga una clave de producto, no se puede editar la clave de producto más adelante. Esto se debe a que la clave se oculta por motivos de seguridad. Para cambiar la clave de producto, debe volver a escribir toda la clave.
-|**Archivo de licencia**|Haga clic en **Examinar** para seleccionar el archivo de licencia que obtuvo de Microsoft, que contiene la información de licencia de la edición Windows Holographic a la que quiere actualizar los dispositivos de destino.
+|**Archivo de licencia**|Haga clic en **Examinar** para seleccionar el archivo de licencia que obtuvo de Microsoft y que contiene la información de licencia de la edición Windows Holographic o Windows 10 Mobile a la que quiere actualizar los dispositivos de destino.
 
 ### Consulte también
 [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

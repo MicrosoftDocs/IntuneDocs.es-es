@@ -374,9 +374,9 @@ Si esta información no soluciona el problema, vea [How to get support for Micro
 |-2016346011|0x87D10065|el comando SyncML se está realizando, pero todavía no ha finalizado.|
 
 ### Pasos siguientes
-Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico de Microsoft Intune)..
+Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el servicio de soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune (Cómo obtener soporte técnico de Microsoft Intune)](how-to-get-support-for-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

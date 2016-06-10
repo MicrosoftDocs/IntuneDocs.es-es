@@ -28,7 +28,7 @@ ms.suite: ems
 
 # ¿Qué ocurre si anula la inscripción del dispositivo de Intune?
 
-Cuando desinstala la aplicación Portal de empresa de su dispositivo, también se anula la suscripción del dispositivo de Intune. Para obtener información adicional sobre qué ocurre, use el vínculo que coincide con el tipo de dispositivo que está usando.
+Cuando desinstala la aplicación Portal de empresa de su dispositivo, también se anula la suscripción del dispositivo de Intune. Para obtener información adicional sobre lo que ocurre, use el vínculo de la sección anterior "En este artículo" que coincida con el tipo de dispositivo que esté usando.
 
 - [Windows 10 Mobile, 8.1, Windows 8, Windows 7, Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
 - [Windows 10, Windows 8.1 o Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
@@ -43,8 +43,7 @@ Cuando desinstala la aplicación Portal de empresa de su dispositivo, también s
 
 -   El software Intune Endpoint Protection se quitará del equipo. Si el equipo tiene instalado otro software antivirus y está deshabilitado, dicho software podrá habilitarse de nuevo cuando se haya quitado Intune Endpoint Protection. Debe comprobar el equipo después de quitarlo del Portal de empresa.
 
-    > [!IMPORTANT]
-    > Si no se vuelve a habilitar el software antivirus o no hay otro software antivirus instalado, el equipo puede ser vulnerable a virus y malware.
+    > [!IMPORTANT] Si no se vuelve a habilitar el software antivirus o no hay instalado otro software antivirus, el equipo puede ser vulnerable a virus y malware.
 
 -   Todos los valores de configuración que se modificaron cuando se agregó el dispositivo (por ejemplo, deshabilitar la cámara) dejarán de aplicarse.
 
@@ -97,6 +96,6 @@ Si se quita un dispositivo Windows RT, ocurre lo siguiente:
 ### Consulte también
 [Usar un dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

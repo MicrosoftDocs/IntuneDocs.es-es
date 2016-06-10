@@ -15,7 +15,7 @@ ms.assetid: a2467c02-aac5-41c8-b788-cbda830941ef
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
 ms.reviewer: jeffgilb
@@ -98,11 +98,11 @@ Cuando el dispositivo esté inscrito, el Administrador de TI podrá:
 
 -   Habilitar o deshabilitar en el dispositivo la sincronización automática de archivos en modo de movilidad. Si se permite la sincronización automática de archivos, podrían aplicarse cargos por movilidad.
 
-Para obtener los pasos sobre cómo inscribir su dispositivo, consulte [Enroll your iOS device in Intune (Inscribir el dispositivo iOS en Intune)](enroll-your-device-in-intune-ios.md) o [Enroll your Mac OS X device in Intune (Inscribir el dispositivo Mac OS X en Intune)](enroll-your-device-in-intune-mac-os-x.md)..
+Para conocer los pasos sobre cómo inscribir el dispositivo, consulte [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md) (Inscribir el dispositivo iOS en Intune) o [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md) (Inscribir el dispositivo Mac OS X en Intune).
 
 ### Consulte también
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

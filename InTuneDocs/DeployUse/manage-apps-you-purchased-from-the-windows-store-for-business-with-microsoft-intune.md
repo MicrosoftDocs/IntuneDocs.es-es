@@ -39,25 +39,27 @@ Revise la información siguiente antes de iniciar la sincronización y la implem
 * Una vez que haya asociado una cuenta de la Tienda Windows para empresas con Intune, no podrá cambiar a otra cuenta en el futuro.
 * Las aplicaciones adquiridas en la tienda no se pueden agregar ni eliminar manualmente en Intune. Solo se pueden sincronizar con la Tienda Windows para empresas.
 * Intune solo sincroniza las aplicaciones con licencia en línea que ha comprado en la Tienda Windows para empresas.
+* Los dispositivos deben estar unidos al dominio de Active Directory o al área de trabajo para usar esta función.
+* Los dispositivos inscritos deben usar la versión 1511 de Windows 10.
 
 ## Asociar su cuenta de la Tienda Windows para empresas con Intune
 Antes de habilitar la sincronización en la consola de Intune, debe configurar la cuenta de la tienda para usar Intune como herramienta de administración:
 1. Asegúrese de que inicia sesión en la Tienda para empresas con la misma cuenta de inquilino que usa para iniciar sesión en Intune.
-2. En la Tienda para empresas, seleccione **Configuración** > **Herramientas de administración**..
+2. En la Tienda para empresas, seleccione **Configuración** > **Herramientas de administración**.
 3. En la página de herramientas de administración, seleccione **Add a management tool** (Agregar una herramienta de administración) y elija Microsoft Intune.
 
 Ya puede continuar y configurar la sincronización en la consola de Intune.
 
 ## Configurar la sincronización
 
-1. En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), haga clic en **Administrador**..
-2. En el área de trabajo **Administración**, expanda **Administración de dispositivos móviles** y haga clic en **Tienda para empresas**..
+1. En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), haga clic en **Administración**.
+2. En el área de trabajo **Administración**, expanda **Administración de dispositivos móviles** y haga clic en **Tienda para empresas**.
 3. En la página **Tienda Windows para empresas**, haga lo siguiente:
 * Si aún no lo ha hecho, haga clic en el vínculo para registrarse en la Tienda Windows para empresas.
 * Cuando se haya registrado, haga clic en **Configurar sincronización**.
-4. En el cuadro de diálogo **Configurar la sincronización de aplicaciones de la Tienda Windows para empresas**, seleccione **Habilitar la sincronización de la Tienda Windows para empresas**..
+4. En el cuadro de diálogo **Configurar la sincronización de aplicaciones de la Tienda Windows para empresas**, seleccione **Habilitar la sincronización de la Tienda Windows para empresas**.
 5. En la lista desplegable **Idioma**, elija el idioma en el que las aplicaciones de la Tienda Windows para empresas se mostrarán en la consola de Intune. Independientemente del idioma en el que se muestren, se instalarán en el idioma del usuario final si esa versión está disponible.
-6. Haga clic en **Aceptar**..
+6. Haga clic en **Aceptar**.
 
 ## Sincronizar aplicaciones
 
@@ -67,7 +69,7 @@ Las aplicaciones de este nodo se muestran con el número total de licencias que 
 
 ## Implementación de aplicaciones
 
-Las aplicaciones de la tienda se implementan igual que cualquier otra aplicación de Intune. Para más información, consulte [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) (Implementar aplicaciones en Microsoft Intune)..
+Las aplicaciones de la tienda se implementan igual que cualquier otra aplicación de Intune. Para obtener más información, consulte [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) (Implementar aplicaciones en Microsoft Intune).
 Al implementar una aplicación de la Tienda Windows para empresas, cada usuario que instala la aplicación utiliza una licencia. Si utiliza todas las licencias disponibles para una aplicación implementada, no podrá implementar más copias y deberá realizar una de las siguientes acciones:
 * Desinstalar la aplicación de algunos dispositivos
 * Reducir el ámbito de la implementación actual y restringirla a los usuarios para los que haya suficientes licencias
@@ -80,6 +82,6 @@ Al implementar una aplicación de la Tienda Windows para empresas, cada usuario 
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

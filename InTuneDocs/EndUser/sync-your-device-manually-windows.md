@@ -27,7 +27,7 @@ ms.suite: ems
 
 
 # Sincronizar el dispositivo manualmente
-Si la instalación de la aplicación tarda demasiado, siga estas instrucciones para sincronizar manualmente el dispositivo Windows, ya que esto puede ayudarle a acelerar la instalación. Siga las instrucciones que coincidan con el tipo de dispositivo que tenga:
+Si la instalación de la aplicación tarda demasiado, siga estas instrucciones para sincronizar manualmente el dispositivo Windows, ya que esto puede ayudarle a acelerar la instalación. Las únicas versiones compatibles son las que aparecen en la lista. Use el vínculo de la sección anterior "En este artículo" que coincida con el tipo de dispositivo que tenga:
 
 * [Windows 10 Mobile](#windows-10-mobile)
 * [Windows 10 Escritorio](#windows-10-desktop)
@@ -37,11 +37,11 @@ Si la instalación de la aplicación tarda demasiado, siga estas instrucciones p
 ## Windows 10 Mobile
 Para sincronizar manualmente el dispositivo de Windows 10 Mobile de modo que se acelere la instalación de una aplicación lenta:
 
-1. Vaya a **Todas las aplicaciones** > **Configuración** > **Cuentas**..
+1. Vaya a **Todas las aplicaciones** > **Configuración** > **Cuentas**.
 
     ![win10m-sync-1-settings-accounts](./media/win10m-sync-1-settings-accounts.png)
     
-2. Pulse **Acceso al trabajo**..
+2. Pulse **Acceso al trabajo**.
 
     ![win10m-sync-2-work-access](./media/win10m-sync-2-work-access.png)
     
@@ -58,15 +58,15 @@ Para sincronizar manualmente el dispositivo de Windows 10 Mobile de modo que se 
 ## Windows 10 Escritorio
 Para sincronizar manualmente el dispositivo de Windows 10 Escritorio de modo que se acelere la instalación de una aplicación lenta:
 
-1. Seleccione el botón **Iniciar**, tal como se muestra abajo, y seleccione **Configuración**..
+1. Seleccione el botón **Iniciar**, tal como se muestra abajo y, luego, **Configuración**.
 
     ![win10pc-sync-1-start-button](./media/win10pc-sync-1-start-button.png)
     
-2. En la página **Configuración**, seleccione **Cuentas**..
+2. En la página **Configuración**, seleccione **Cuentas**.
  
     ![win10pc-sync-2-settings-accounts](./media/win10pc-sync-2-settings-accounts.png)
     
-3. En la página **Cuentas**, seleccione **Acceso al trabajo**..
+3. En la página **Cuentas**, seleccione **Acceso al trabajo**.
     
     ![win10pc-sync-3-work-access](./media/win10pc-sync-3-work-access.png)
     
@@ -83,7 +83,7 @@ Para sincronizar manualmente el dispositivo de Windows 10 Escritorio de modo que
 ## Windows Phone 8,1
 Para sincronizar manualmente el dispositivo de Windows Phone 8.1 de modo que se acelere la instalación de una aplicación lenta:
 
-1. Vaya a **Todas las aplicaciones** > **Configuración** > **Área de trabajo**..
+1. Vaya a **Todas las aplicaciones** > **Configuración** > **Área de trabajo**.
 
     ![wp81-1-sync-settings-workplace](./media/wp81-1-sync-settings-workplace.png)
     
@@ -102,6 +102,6 @@ Para sincronizar manualmente el dispositivo de Windows Phone 8.1 de modo que se 
 [Usar un dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

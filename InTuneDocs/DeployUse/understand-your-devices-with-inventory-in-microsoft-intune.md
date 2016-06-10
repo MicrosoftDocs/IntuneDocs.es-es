@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Comprender el funcionamiento de sus dispositivos mediante el inventario en Microsoft Intune | Microsoft Intune
+title: Comprender el funcionamiento de sus dispositivos mediante el inventario| Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -66,8 +66,7 @@ Para ver el inventario que recopilan los dispositivos móviles, ejecute la opci�
 |**Cifrado habilitado**|Todos los dispositivos|
 
 ## ¿Qué información se recopila de los equipos de Windows?
-> [!IMPORTANT]
-> Esta sección solo se aplica a equipos de Windows que ejecutan el software de cliente de equipos de Windows Intune.
+> [!IMPORTANT] Esta sección solo se aplica a equipos de Windows que ejecutan el software de cliente de equipos de Windows Intune.
 
 Para ver el inventario que recopilan los equipos de Windows, ejecute la opción [Informes de inventario de equipos](understand-microsoft-intune-operations-by-using-reports.md). Intune recopila el siguiente inventario de los equipos de Windows:
 
@@ -113,11 +112,12 @@ Para ver el inventario que recopilan los equipos de Windows, ejecute la opción 
 
 -   **Última actualización**
 
-### Véase también
-[Supervisión e informes con Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
+<!-- this section below belongs in the planning journey
+### See Also
+[Monitoring and reports with Microsoft Intune](monitoring-and-reports-with-microsoft-intune.md)
+-->
 
 
-
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 

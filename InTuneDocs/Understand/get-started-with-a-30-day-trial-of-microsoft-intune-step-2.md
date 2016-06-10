@@ -37,7 +37,7 @@ Puede ver la información del Administrador de inquilinos mediante la consola de
 ## Agregar cuentas de usuario individuales
 Use los pasos siguientes para crear cuentas de usuario adicionales en el inquilino de evaluación. Recuerde que cada cuenta de usuario que agregue se contabiliza como una de las 100 licencias que obtiene como parte de la evaluación gratuita de Intune.
 
-1.  En el [Centro de administración de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), elija **Agregar usuarios** &gt; **Nuevo**&gt; **Usuario** para iniciar el asistente de **Nuevos usuarios**.
+1.  En el [Centro de administración de Office 365](http://go.microsoft.com/fwlink/?LinkID=787455), elija **Agregar usuarios** &gt; **Nuevo**&gt; **Usuario** para iniciar el asistente para **Nuevos usuarios**.
 
 2.  En la página **Detalles** , rellene los campos obligatorios.
 
@@ -51,14 +51,14 @@ Use los pasos siguientes para crear cuentas de usuario adicionales en el inquili
 
 7.  Cuando el nuevo usuario aparezca en el Centro de administración de Office 365, compruebe que el nuevo usuario se creó correctamente:
 
-    1.  En la [consola de administración de Intune](https://manage.microsoft.com/), elija **Administrador** &gt; **Portal de empresa** y, después, desplácese a la parte inferior de la pantalla. Copie la dirección URL que se muestra en **Portal de empresa de Intune**..
+    1.  En la [consola de administración de Intune](https://manage.microsoft.com/), elija **Administrador** &gt; **Portal de empresa** y, después, desplácese a la parte inferior de la pantalla. Copie la dirección URL que se muestra en **Portal de empresa de Intune**.
 
     2.  Abra una nueva ventana del explorador en “modo de privacidad” (en Internet Explorer, elija **Herramientas** &gt; **Exploración de InPrivate**) o abra una nueva ventana del explorador en un dispositivo diferente y, después, vaya a la dirección URL que copió en el paso anterior. Cuando los usuarios inicien sesión por primera vez, deberán proporcionar una nueva contraseña para la cuenta.
 
 ## Agregar usuarios en masa
-Para agregar usuarios en masa a Intune, use el asistente de **Agregar usuarios en masa** para cargar un archivo de valores separados por comas (CSV) que contenga los datos de usuario. En el asistente encontrará los vínculos que le permitirán descargar una plantilla en blanco y el archivo CSV de ejemplo. La primera fila del archivo CSV debe contener, en el orden correcto, cada una de las etiquetas de columna de datos de usuario. En el archivo CSV se debe incluir el **nombre de usuario** (como **juan@contoso.com**) y un **nombre para mostrar** (como **Juan Casanova**) para cada usuario.).
+Para agregar usuarios en masa a Intune, use el asistente de **Agregar usuarios en masa** para cargar un archivo de valores separados por comas (CSV) que contenga los datos de usuario. En el asistente encontrará los vínculos que le permitirán descargar una plantilla en blanco y el archivo CSV de ejemplo. La primera fila del archivo CSV debe contener, en el orden correcto, cada una de las etiquetas de columna de datos de usuario. En el archivo CSV debe incluir el **nombre de usuario** (p. ej., **antonio@contoso.com**) y un **nombre para mostrar** (p. ej., **Antonio Bermejo**) para cada usuario.
 
-1.  En el [Centro de administración de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), elija **Usuarios** &gt; **Nuevo**..
+1.  En el [Centro de administración de Office 365](http://go.microsoft.com/fwlink/?LinkID=787455), elija **Usuarios** &gt; **Nuevo**.
 
 2.  Elija **Agregar en masa** para iniciar el asistente de Agregar usuarios en masa.
 
@@ -84,6 +84,6 @@ Enhorabuena. Acaba de completar el paso 2 del tutorial de *evaluación de Micros
 >[&larr; **Registrarse en una evaluación**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)     [**Crear grupos** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)  
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO3-->
 
 

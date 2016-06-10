@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -40,7 +40,7 @@ Aquí se indican algunos problemas relacionados con la inscripción de dispositi
 Si esta información no soluciona el problema, vea [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico para Microsoft Intune) para conocer otras formas de obtener ayuda.
 
 ## Se alcanzó el límite de dispositivos
-**Problema:** un usuario recibió un error en su dispositivo durante la inscripción (por ejemplo, el error **Portal de empresa no disponible temporalmente** en un dispositivo iOS) y el registro DMPdownloader.log que se encuentra en Configuration Manager contiene el error **DeviceCapReached**..
+**Problema:** un usuario recibió un error en su dispositivo de iOS durante la inscripción (como por ejemplo, **El Portal de empresa no está disponible temporalmente**) y el registro DMPdownloader.log que se encuentra en Configuration Manager contiene el error **DeviceCapReached**.
 
 **Solución:** de forma predeterminada, los usuarios no pueden inscribir más de 5 dispositivos.
 
@@ -50,17 +50,17 @@ Si esta información no soluciona el problema, vea [How to get support for Micro
 
 2.  Compruebe en el Portal de administración de Intune, en Administrador\Dispositivo móvil\Reglas de inscripción, que el límite de inscripción de dispositivos está establecido en 5
 
-Los usuarios de dispositivos móviles pueden eliminar dispositivos en la siguiente URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/)..
+Los usuarios de dispositivos móviles pueden eliminar dispositivos en la siguiente URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/).
 
 Los administradores pueden eliminar dispositivos en el portal de Azure Active Directory.
 
 ### Eliminar dispositivos en el portal de Azure Active Directory
 
-1.  Vaya a [http://aka.ms/accessaad](http://aka.ms/accessaad) o haga clic en **Administrador** &gt; **Azure AD** en [https://portal.office.com](https://portal.office.com)..
+1.  Vaya a [http://aka.ms/accessaad](http://aka.ms/accessaad) o seleccione **Administración** &gt; **Azure AD** en [https://portal.office.com](https://portal.office.com).
 
 2.  Inicie sesión con su identificador de organización mediante el vínculo que encontrará en el lado izquierdo de la página.
 
-3.  Cree una suscripción de Azure si no tiene una. Si tiene una cuenta de pago, no necesitará una tarjeta de crédito o realizar ningún pago (haga clic en el vínculo de suscripción **Registre su suscripción gratuita de Azure Active Directory** ).
+3.  Cree una suscripción de Azure si no tiene una. Si tiene una cuenta de pago, no necesitará una tarjeta de crédito ni realizar ningún pago (seleccione el vínculo de suscripción **Registre su suscripción gratuita de Azure Active Directory**).
 
 4.  Seleccione **Active Directory** y, a continuación, seleccione su empresa.
 
@@ -68,13 +68,13 @@ Los administradores pueden eliminar dispositivos en el portal de Azure Active Di
 
 6.  Seleccione el usuario cuyos dispositivos desea eliminar.
 
-7.  Haga clic en **Dispositivos**..
+7.  Seleccione **Dispositivos**.
 
 8.  Quite los dispositivos que crea oportunos, como por ejemplo aquellos que ya no estén en uso o que tienen definiciones inexactas.
 
 > [!NOTE]
 
-> Puede evitar llegar el límite de inscripciones de dispositivos mediante el uso de administradores de inscripción de dispositivos, tal como se describe en [Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) (Inscribir dispositivos propiedad de la empresa con el Administrador de inscripción de dispositivos de Microsoft Intune)..
+> Puede evitar llegar al límite de inscripciones de dispositivos mediante el uso de administradores de inscripción de dispositivos, tal como se describe en [Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune (Inscribir dispositivos propiedad de la empresa con el administrador de inscripción de dispositivos de Microsoft Intune)](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
 >
 > Si agrega una cuenta de usuario al grupo de administradores de inscripción de dispositivos, esta no podrá realizar la inscripción al aplicarse la directiva de acceso condicional cuando ese usuario en cuestión inicie sesión.
 
@@ -111,10 +111,9 @@ Los administradores pueden eliminar dispositivos en el portal de Azure Active Di
 
 ### Solucionar el error “Entidad de MDM no definida”
 
-1.  Compruebe que la entidad de MDM se ha establecido correctamente para la versión del servicio Intune que usa; esto es, para Intune, MDM de Office 365 y System Center Configuration Manager con Intune. Para Intune, se establece la entidad de MDM en **Administrador** &gt; **Administración de dispositivos móviles**. Para Configuration Manager con Intune, deberá establecerla al configurar el conector de Intune. En O365 deberá acceder a una configuración denominada **Dispositivos móviles**..
+1.  Compruebe que la entidad de MDM se ha establecido correctamente para la versión del servicio Intune que usa; esto es, para Intune, MDM de Office 365 y System Center Configuration Manager con Intune. Para Intune, la entidad de MDM se establece en **Administración** &gt; **Administración de dispositivos móviles**. Para Configuration Manager con Intune, deberá establecerla al configurar Intune Connector. En O365 es una opción denominada **Dispositivos móviles**.
 
-    > [!NOTE]
-    > Una vez establecida la entidad de MDM, solo podrá cambiarla si se pone en contacto con el soporte técnico, tal como se describe en [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico para Microsoft Intune)..
+    > [!NOTE] Una vez establecida la entidad de MDM, solo podrá cambiarla si se pone en contacto con el servicio de soporte técnico, tal como se describe en [How to get support for Microsoft Intune (Cómo obtener soporte técnico de Microsoft Intune)](how-to-get-support-for-microsoft-intune.md).
 
 2.  Compruebe que las credenciales del usuario se han sincronizado correctamente con Azure Active Directory; para ello, asegúrese de que sus UPN coinciden con la información de Active Directory en el Portal de cuentas.
     Si el UPN no coincide con la información de Active Directory:
@@ -135,15 +134,13 @@ Los administradores pueden eliminar dispositivos en el portal de Azure Active Di
 
     3.  Abra la carpeta de bases de datos y busque y abra la carpeta **CM_DBName**, donde DBName es el nombre de la base de datos de cliente.
 
-    4.  En la parte superior, haga clic en Nueva consulta y ejecute las siguientes consultas:
+    4.  En la parte superior, seleccione **Nueva consulta** y ejecute las siguientes consultas:
 
-        -   Para ver todos los usuarios:
-            `select * from [CM_ DBName].[dbo].[User_DISC]`
+        -   Para ver todos los usuarios: `select * from [CM_ DBName].[dbo].[User_DISC]`
 
-        -   Para ver usuarios específicos, use la siguiente consulta, donde %testuser1% representa el elemento username@domain.com referente al usuario que desea buscar:
-            `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
+        -   Para ver usuarios específicos, use la siguiente consulta, donde %testuser1% representa el elemento username@domain.com referente al usuario que desea buscar: `select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
 
-        Una vez escrita la consulta, haga clic en **!Execute**..
+        Una vez escrita la consulta, seleccione **!Execute**.
         Cuando obtenga los resultados, busque el identificador clouduser.  Si no encuentra ningún identificador, esto quiere decir que el usuario no tiene licencia para usar Intune.
 
 ## Los dispositivos móviles desaparecen cuando se usa System Center Configuration Manager con Intune
@@ -153,9 +150,9 @@ Los administradores pueden eliminar dispositivos en el portal de Azure Active Di
 
 ### Compruebe cómo se quitó el dispositivo
 
-1.  En la consola de administración de Configuration Manager, seleccione **Supervisión** &gt; **Estado del sistema** &gt; **Consultas de mensaje de estado**..
+1.  En la consola de administración de Configuration Manager, seleccione **Supervisión** &gt; **Estado del sistema** &gt; **Consultas de mensaje de estado**.
 
-2.  Haga clic con el botón derecho en **Recursos de miembro de la recopilación eliminados manualmente** y seleccione **Mostrar mensajes**..
+2.  Haga clic con el botón derecho en **Recursos de miembro de la recopilación eliminados manualmente** y seleccione **Mostrar mensajes**.
 
 3.  Seleccione la fecha y hora apropiadas o las últimas 12 horas.
 
@@ -175,7 +172,7 @@ Los administradores pueden eliminar dispositivos en el portal de Azure Active Di
 **Solución:** lleve a cabo los pasos siguientes:
 
 1. Deshabilite iOS en el conector de Windows Intune. 
-    1. Haga clic con el botón derecho en la suscripción de Intune y seleccione "Propiedades".
+    1. Haga clic con el botón derecho en la suscripción de Intune y seleccione **Propiedades**.
     1. En la pestaña "iOS", desactive la opción "Habilitar inscripción de iOS".
 
 
@@ -197,7 +194,7 @@ Los administradores pueden eliminar dispositivos en el portal de Azure Active Di
 
 
 ## El equipo ya está inscrito. Error hr 0x8007064c
-**Problema:** la inscripción produce un error con el mensaje **The machine is already enrolled** (El equipo ya está inscrito). El registro de inscripción muestra el error **hr 0x8007064c**..
+**Problema:** la inscripción produce un error con el mensaje **The machine is already enrolled** (El equipo ya está inscrito). El registro de inscripción muestra el error **hr 0x8007064c**.
   
 Esto puede deberse a que el equipo se inscribió anteriormente o a que tiene la imagen clonada de un equipo ya inscrito. El certificado de cuenta de la cuenta anterior sigue estando presente en el equipo.
 
@@ -205,14 +202,14 @@ Esto puede deberse a que el equipo se inscribió anteriormente o a que tiene la 
 
 **Solución:** 
 
-1. En el menú **Inicio**, **Ejecutar** -> **MMC**.. 
-1. **Archivo** -> **Add/ Remove Snap-ins** (Agregar o quitar complementos)..
-1. Haga doble clic en **Certificados**, elija **Cuenta de equipo**, **Siguiente** y seleccione **Equipo local**..
-1. Haga doble clic en **Certificados (equipo local)** y elija **Personal/ Certificates** (Personal / Certificados).. 
+1. En el menú **Inicio**, **Ejecutar** -> **MMC**. 
+1. **Archivo** -> **Agregar o quitar complemento**.
+1. Haga doble clic en **Certificados**, seleccione **Cuenta de equipo**, **Siguiente** y, luego, **Equipo local**.
+1. Haga doble clic en **Certificados (equipo local)** y seleccione **Certificados personales**. 
 1. Busque el certificado de Intune emitido por Sc_Online_Issuing y elimínelo si está presente.
 1. Elimine esta clave del Registro si existe: ** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** y todas las subclaves.
 1. Intente volver a realizar la inscripción. 
-1. Si todavía no puede inscribir el equipo, busque y elimine esta clave, si existe: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**.. 
+1. Si todavía no puede inscribir el equipo, busque y elimine esta clave, si existe: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
 1. Intente volver a realizar la inscripción. 
 
     > [!IMPORTANT]
@@ -248,20 +245,20 @@ Esto puede deberse a que el equipo se inscribió anteriormente o a que tiene la 
 |0x80043007, 0x80CF3007|No se encontró el archivo de certificado en la misma carpeta que el programa de instalación.|Extraiga todos los archivos antes de iniciar la instalación. No cambie el nombre ni la ubicación de los archivos extraídos: todos los archivos deben existir en la misma carpeta o de lo contrario, la instalación será errónea.|
 |0x8024D015, 0x00240005, 0x80070BC2, 0x80070BC9, 0x80CFD015|No se puede instalar el software porque el equipo cliente está pendiente de reiniciarse.|Reinicie el equipo y, a continuación, intente instalar de nuevo el software cliente.|
 |0x80070032|No se encontró uno o más requisitos previos para instalar el software cliente en el equipo cliente.|Asegúrese de que las actualizaciones necesarias están instaladas en el equipo cliente y, a continuación, intente instalar de nuevo el software cliente.|
-|0x80043008, 0x80CF3008|No se pudo iniciar el servicio de actualización de Microsoft Online Management.|Póngase en contacto con el soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico de Microsoft Intune)..|
+|0x80043008, 0x80CF3008|No se pudo iniciar el servicio de actualización de Microsoft Online Management.|Póngase en contacto con el servicio de soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune (Cómo obtener soporte técnico de Microsoft Intune)](how-to-get-support-for-microsoft-intune.md).|
 |0x80043009, 0x80CF3009|El equipo cliente ya está inscrito en el servicio.|Debe retirar el equipo cliente para poder volver a inscribirlo en el servicio.|
 |0x8004300B, 0x80CF300B|No se puede ejecutar el paquete de instalación del software cliente porque no se admite la versión de Windows que se está ejecutando en el cliente.|Intune no es compatible con la versión de Windows que se está ejecutando en el equipo cliente.|
-|0xAB2|Windows Installer no pudo tener acceso al tiempo de ejecución de VBScript para una acción personalizada.|Este error está causado por una acción personalizada basada en Bibliotecas de vínculos dinámicos (DLL). Cuando solucione problemas de DLL, quizás deba usar las herramientas que se describen en [Microsoft Support KB198038: Useful Tools for Package and Deployment Issues](https://support.microsoft.com/en-us/kb/198038) (Soporte técnico de Microsoft KB198038: Herramientas útiles para problemas de implementación y de paquete)..|
+|0xAB2|Windows Installer no pudo tener acceso al tiempo de ejecución de VBScript para una acción personalizada.|Este error está causado por una acción personalizada basada en Bibliotecas de vínculos dinámicos (DLL). Cuando solucione problemas de DLL, quizás deba usar las herramientas que se describen en [INFO: Herramientas útiles para el paquete y los problemas de implementación ](https://support.microsoft.com/en-us/kb/198038).|
 |0x80cf0440|Se terminó la conexión al extremo de servicio.|La cuenta de prueba o de pago está suspendida. Cree una nueva cuenta de prueba o de pago y vuelva a realizar la inscripción.|
 
 
 ## Errores de inscripción de iOS
-Se proporciona una lista de otros errores de inscripción de iOS en la documentación de usuario del dispositivo, en [You see errors while trying to enroll your device in Intune](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune) (Ve errores al intentar inscribir su dispositivo en Intune)..
+Se proporciona una lista de otros errores de inscripción de iOS en la documentación de usuario del dispositivo, en [You see errors while trying to enroll your device in Intune (Ve errores al intentar inscribir su dispositivo en Intune)](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune).
 
 ### Pasos siguientes
-Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico de Microsoft Intune)..
+Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el servicio de soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune (Cómo obtener soporte técnico de Microsoft Intune)](how-to-get-support-for-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -53,31 +53,29 @@ En la captura de pantalla que tiene a continuación se pueden ver dos ejemplos c
 
 ![Directiva de dispositivos de Intune](../media/Intune-Device-Policy-v.2.jpg)
 
-> [!NOTE]
-> Recuerde que cuando dos directivas con distintos niveles de restricción se aplican al mismo dispositivo o usuario, la directiva más restrictiva se aplica en la práctica.
+> [!NOTE] Recuerde que cuando dos directivas con distintos niveles de restricción se aplican al mismo dispositivo o usuario, la directiva más restrictiva se aplica en la práctica.
 
 ## Actualización de directivas e intervalos de actualización
 Tenga en cuenta que las directivas se actualizan a intervalos regulares. En general, las directivas se deben registrar en los dispositivos durante los 15 minutos posteriores a la realización de un cambio. Aquí encontrará más detalles acerca de los intervalos regulares de actualización de directivas:
 
 -   **Dispositivos Windows inscritos en MDM**: se desencadena con una tarea programada a las 3:00 a. m. hora local del dispositivo y se lleva a cabo cada día.
 
--   **Windows Phone**: la directiva se actualiza cada 8 horas. Se puede forzar mediante una actualización en el Portal de empresa en **Configuración**..
+-   **Windows Phone**: la directiva se actualiza cada 8 horas. Se puede forzar mediante una actualización en el Portal de empresa en **Configuración**.
 
--   **iOS**: la directiva se actualiza una vez al día con un intervalo de tiempo aleatorio. Para forzarla también se puede abrir el Portal de empresa, seleccionar el dispositivo y hacer clic en **Sincronizar**..
+-   **iOS**: la directiva se actualiza una vez al día con un intervalo de tiempo aleatorio. Para forzarla también se puede abrir el Portal de empresa, seleccionar el dispositivo y luego **Sincronizar**.
 
--   **Android**: la directiva se actualiza una vez al día con un intervalo de tiempo aleatorio. Para forzarla también se puede abrir el Portal de empresa, seleccionar el dispositivo y hacer clic en **Sincronizar**..
+-   **Android**: la directiva se actualiza una vez al día con un intervalo de tiempo aleatorio. Para forzarla también se puede abrir el Portal de empresa, seleccionar el dispositivo y luego **Sincronizar**.
 
 ## Errores relacionados con las directivas de Microsoft Intune en policyplatform.log
 Para los dispositivos de Windows que no sean de MDM, los errores de directivas del archivo policyplatform.log pueden ser el resultado de opciones de configuración no predeterminadas en el Control de cuentas de usuario (UAC) de Windows en el dispositivo. Algunas opciones de configuración de UAC no predeterminadas pueden afectar a las instalaciones de cliente de Microsoft Intune y a la ejecución de directivas.
 
 ### Para resolver problemas de UAC
 
-1.  Retire el equipo, como se describe en [Retire devices from Microsoft Intune management](/intune/deploy-use/retire-devices-from-microsoft-intune-management) (Retirar dispositivos de la administración de Microsoft Intune)..
+1.  Retire el equipo, como se describe en [Retire devices from Microsoft Intune management (Retirar dispositivos de la administración de Microsoft Intune)](/intune/deploy-use/retire-devices-from-microsoft-intune-management).
 
 2.  Espere 20 minutos a que se quite el software de cliente.
 
-    > [!NOTE]
-    > No intente quitar el cliente desde Programas y características.
+    > [!NOTE] No intente quitar el cliente desde Programas y características.
 
 3.  En el menú Inicio, escriba **UAC** para abrir Configuración del Control de cuentas de usuario.
 
@@ -102,8 +100,8 @@ Para resolver este problema, establezca la hora del sistema local lo más cercan
 Una vez establecidas las directivas de seguridad a través de MSM o EAS, los dispositivos Windows Phone y Windows RT no permiten que se reduzca el nivel de seguridad de las mismas. Por ejemplo, si establece una **contraseña con un número mínimo de 8 caracteres** no podrá reducirla a 4. Esto es debido a que ya se ha aplicado la directiva más restrictiva en el dispositivo.
 
 Dependiendo de la plataforma del dispositivo, si desea cambiar la directiva a un valor de menos seguro debe restablecer las directivas de seguridad.
-Por ejemplo, en el escritorio de Windows RT, deslice el dedo desde la derecha para abrir la barra de **Accesos** y haga clic en **Configuración** &gt; **Panel de Control**.  Seleccione el applet **Cuentas de usuario** .
-En el menú de navegación izquierdo, hay un vínculo denominado **Restablecer las directivas de seguridad** en la parte inferior. Haga clic en él y, a continuación, haga clic en el botón **Restablecer directivas** .
+Por ejemplo, en el escritorio de Windows RT, deslice el dedo desde la derecha para abrir la barra de **Botones de acceso** y seleccione **Configuración** &gt; **Panel de Control**.  Seleccione el applet **Cuentas de usuario** .
+En el menú de navegación izquierdo, hay un vínculo denominado **Restablecer las directivas de seguridad** en la parte inferior. Selecciónelo y luego elija el botón **Restablecer directivas**.
 En otros dispositivos MDM como Android, Windows Phone 8.1 y posteriores e iOS, es posible que tenga que eliminar la inscripción y volver a hacerla para que pueda aplicar una directiva menos restrictiva.
 
 ## Los dispositivos Android no aplican los cambios en las directivas de seguridad sin que el usuario final haya dado su consentimiento
@@ -115,9 +113,9 @@ La MDM de Android no permite que el servicio fuerce cambios en las directivas in
 **Solución:** en el [Centro de administración de Office 365](https://portal.office.com/), quite los caracteres especiales del nombre de la empresa y guarde la información de la empresa.
 
 ### Pasos siguientes
-Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico de Microsoft Intune)..
+Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el servicio de soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune (Cómo obtener soporte técnico de Microsoft Intune)](how-to-get-support-for-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 

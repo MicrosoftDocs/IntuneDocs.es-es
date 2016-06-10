@@ -6,7 +6,7 @@ description:
 keywords:
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/26/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -37,13 +37,13 @@ Si esta información no soluciona el problema, vea [How to get support for Micro
 
 1.  Compruebe si su cuenta existe en el [portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) o si está deshabilitada.
 
-2.  Asegúrese de que se ha aprovisionado en esta cuenta en el [portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854)..
+2.  Asegúrese de que se ha aprovisionado en esta cuenta en el [portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854).
 
-3.  En el [portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), asegúrese de que usa el nombre de usuario y la contraseña correctos para iniciar sesión en Intune y de que tiene este formato: **joe@dominio.com**..
+3.  En el [portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), asegúrese de que usa el nombre de usuario y la contraseña correctos para iniciar sesión en Intune y de que están tienen el siguiente formato: **joe@dominio.com**.
 
 ### Si falta la información de contacto de TI en el portal de empresa
 
-1.  En la consola de administración de Intune, haga clic en **Administración** &gt; **Portal de empresa**..
+1.  En la consola de administración de Intune, seleccione **Administración** &gt; **Portal de empresa**.
 
 2.  Establezca los detalles de **TI de contacto** .
 
@@ -63,7 +63,7 @@ Si esta información no soluciona el problema, vea [How to get support for Micro
 
 4.  Si la barra de progreso de descarga de la aplicación de iOS se completa, pero se produce un error al instalarla, es posible que haya algún problema en los archivos de la aplicación que proporcionó.
 
-### Si hacer clic en una aplicación de iOS le lleva a una ubicación anterior en iTunes App Store
+### Si un vínculo de una aplicación de iOS le lleva a una ubicación anterior en iTunes App Store
 
 1.  La sesión actual en iTunes App Store se está abriendo en la página de la aplicación anterior.
 
@@ -87,13 +87,13 @@ Si esta información no soluciona el problema, vea [How to get support for Micro
 
 ### Error: El publicador no existe
 Usa **Agregar otro contrato de software** para agregar un contrato de licencia de terceros e intenta agregar el publicador desde la página **Otro contrato de licencia de software**. La página le proporcionará una lista con los editores existentes en orden alfabético.
-Cuando especifica el publicador que falta, recibe el error **El publicador no existe**.. 
+Cuando especifica el publicador que falta, recibe el error **El publicador no existe**. 
 
 Esto es así por diseño. Intune proporciona el seguimiento de licencias solo para los títulos de software más populares. Intune pide que al menos 4 cuentas independientes notifiquen el software antes de ofrecerlo como una opción en la carga de trabajo de licencias.
 
 ### Si las aplicaciones administradas no envían informes de estado de la instalación
 
-El estado de la instalación no se recopilaba para las instalaciones de aplicaciones administradas antes de la actualización de servicio de Microsoft Intune en noviembre de 2014. Para los dispositivos en que se instalaron aplicaciones administradas antes de esta actualización de servicio, actualice cada implementación de aplicación asociada con la acción de implementación adecuada (por ejemplo, **Instalación disponible**). Cada dispositivo actualizará la aplicación durante la comprobación automática de aplicaciones disponibles. Para más información, vea [Update apps using Microsoft Intune](/intune/deploy-use/update-apps-using-microsoft-intune) (Actualizar aplicaciones con Microsoft Intune)..
+El estado de la instalación no se recopilaba para las instalaciones de aplicaciones administradas antes de la actualización de servicio de Microsoft Intune en noviembre de 2014. Para los dispositivos en que se instalaron aplicaciones administradas antes de esta actualización de servicio, actualice cada implementación de aplicación asociada con la acción de implementación adecuada (por ejemplo, **Instalación disponible**). Cada dispositivo actualizará la aplicación durante la comprobación automática de aplicaciones disponibles. Para obtener más información, consulte [Update apps using Microsoft Intune (Actualizar aplicaciones con Microsoft Intune)](/intune/deploy-use/update-apps-using-microsoft-intune).
 
 ## <a name="BKMK_SoftDistErrorCodes"></a>Códigos de error de implementación de aplicaciones
 En la tabla siguiente se indican los errores comunes que se pueden producir durante la implementación de aplicaciones de Intune, las causas más probables y las soluciones posibles.
@@ -106,9 +106,9 @@ En la tabla siguiente se indican los errores comunes que se pueden producir dura
 |0x80073CFB|El paquete suministrado ya está instalado y se ha bloqueado la reinstalación del paquete|Podría recibir este error si está instalando un paquete que no es idéntico al paquete que ya está instalado. Confirme que la firma digital también forma parte del paquete. Cuando un paquete se vuelve a generar o a firmar, dicho paquete ya no es idéntico bit a bit al paquete instalado previamente. Dos opciones para corregir este error son:<br /><br />-   Incrementar el número de versión de la aplicación y luego recompilar y volver a firmar el paquete.<br />-   Quitar el paquete antiguo para todos los usuarios del sistema antes de instalar el nuevo paquete.|
 
 ### Pasos siguientes
-Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico de Microsoft Intune)..
+Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico de Microsoft Intune).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO4-->
 
 
