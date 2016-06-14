@@ -59,7 +59,7 @@ Proporcionar un archivo firmado SSP.xap es actualmente la única manera de facil
 
 2.  Abra la [consola de administración de Intune](https://admin.manage.microsoft.com) (https://admin.manage.microsoft.com) y vaya a **Administración** &gt; **Administración de dispositivos móviles** &gt; **Windows Phone** y haga clic en **Cargar aplicación firmada**.
 
-3.  Cargue el Portal de empresa recién firmado. You’ll need the newly signed SSP.xap and the new .PFX file you received from Symantec or the Application enrollment token that wen created with this new .PFX file.
+3.  Cargue el Portal de empresa recién firmado. Necesitará el archivo SSP.xap recién firmado y el nuevo archivo .PFX que recibió de Symantec o el token de inscripción de la aplicación que se creó con este nuevo archivo .PFX.
 
 4.  Una vez finalizada la carga, quite la versión antigua de Portal de empresa del área de trabajo **Software**  .
 
