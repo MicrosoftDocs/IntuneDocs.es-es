@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configuración de directivas de Mac OS X en Microsoft Intune | Microsoft Intune
+title: Configuración de directivas de Mac OS X | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -43,12 +43,12 @@ Si el valor que busca no aparece en esta lista, puede crearlo mediante una direc
 |----------------|---------------|
 |**Requerir contraseña para desbloquear dispositivos**|Especifica si el usuario debe utilizar una contraseña para acceder a su equipo Mac. **Importante:** A diferencia de los dispositivos iOS, en los dispositivos Mac OS X no se envía una notificación al usuario inmediatamente para que actualice su contraseña para cumplir con esta configuración.|
 |**Tipo de contraseña obligatoria**|Especifica si la contraseña usada solo puede ser numérica o si debe ser **alfanumérica** (contener letras y números). **Importante:** Esta configuración solo es compatible con Mac OS X versión 10.10.3 y posteriores.|
-|**Número de caracteres complejos requeridos en la contraseña**|Especifica el número de caracteres complejos que requiere la contraseña (de **0** a **4**).).<br /><br />Un carácter complejo es un símbolo, como **?**.'|
-|**Longitud mínima de la contraseña**|Especifica la longitud mínima de la contraseña (entre **4** y **14** caracteres).|
-|**Permitir contraseñas sencillas**|Permite el uso de contraseñas sencillas, como '**0000**' o '**1234**'.'.|
+|**Número de caracteres complejos requeridos en la contraseña**|Especifica el número de caracteres complejos que requiere la contraseña (**0** - **4**).<br /><br />Un carácter complejo es un símbolo, como “**?**”.|
+|**Longitud mínima de contraseña**|Especifica la longitud mínima de la contraseña (entre **4** y **14** caracteres).|
+|**Permitir contraseñas sencillas**|Permite el uso de contraseñas sencillas, como "**0000**" o "**1234**".|
 |**Minutos de inactividad antes de que se pida la contraseña**|Especifica el tiempo que el equipo debe estar inactivo antes de que se solicite una contraseña para desbloquearlo.|
 |**Caducidad de contraseña (días)**|Especifica cuántos días deben transcurrir para que el usuario deba cambiar la contraseña (de **1** a **255** días).|
-|**Recordar el historial de contraseñas**|Esta configuración se utiliza para evitar que el usuario emplee una contraseña usada previamente. Al establecerla, también puede indicar la opción **Impedir la reutilización de contraseñas anteriores** para especificar el número de contraseñas usadas previamente que no se pueden volver a usar (de **1** a **24**).).|
+|**Recordar el historial de contraseñas**|Esta configuración se utiliza para evitar que el usuario emplee una contraseña usada previamente. Al establecerla, también puede indicar la opción **Impedir la reutilización de contraseñas anteriores** para especificar el número de contraseñas usadas previamente que no se pueden volver a usar (**1** - **24**).|
 |**Minutos de inactividad antes de que se active el protector de pantalla**|Especifica el tiempo durante el que el equipo debe estar inactivo antes de que se active el protector de pantalla.|
 
 ### Configuración de aplicaciones conformes y no conformes
@@ -61,14 +61,13 @@ En la **Lista de aplicaciones compatibles y no compatibles para Mac OS X**, habi
 
 |Nombre de la configuración|Detalles|
 |----------------|---------------|
-|**Notificar la no compatibilidad cuando los usuarios instalan las aplicaciones de la lista**|Enumera las aplicaciones Mac OS X que los usuarios no pueden instalar. Si los usuarios instalan cualquiera de estas aplicaciones, se notificará en **Informes de aplicaciones no compatibles**..|
-|**Informar sobre la incompatibilidad cuando los usuarios instalen aplicaciones no enumeradas**|Enumera las aplicaciones Mac OS X que los usuarios pueden instalar. Si los usuarios instalan otras aplicaciones, se notificará en **Informes de aplicaciones no compatibles**..|
-|**Agregar**|Agrega una aplicación a la lista seleccionada. Especifique un nombre de su elección (opcionalmente, el editor de la aplicación) y el identificador de paquete de la aplicación. **Sugerencia:** Para buscar el identificador de paquete de una aplicación, siga los pasos que se indican a continuación en un equipo Mac que tenga la aplicación instalada.<ol><li>Abra la carpeta en la que está instalada la aplicación (por ejemplo, **/Applications**).)</li><li>Seleccione el paquete *&lt;nombre de la aplicación&gt;***.app** y seleccione **Mostrar contenido del paquete**.</li><li>Abra el archivo **Info.plist** </li><li>Compruebe el valor asociado a la clave **CFBundleIdentifier**</li></ol>El formato del identificador de paquete es **com.contoso.appname**|
+|**Notificar la no compatibilidad cuando los usuarios instalan las aplicaciones de la lista**|Enumera las aplicaciones Mac OS X que los usuarios no pueden instalar. Si los usuarios instalan cualquiera de estas aplicaciones, se notificará en **Informes de aplicaciones no compatibles**.|
+|**Informar sobre la incompatibilidad cuando los usuarios instalen aplicaciones no enumeradas**|Enumera las aplicaciones Mac OS X que los usuarios pueden instalar. Si los usuarios instalan otras aplicaciones, se notificará en **Informes de aplicaciones no compatibles**.|
+|**Agregar**|Agrega una aplicación a la lista seleccionada. Especifique un nombre de su elección (opcionalmente, el editor de la aplicación) y el identificador de paquete de la aplicación. **Sugerencia:** Para buscar el identificador de paquete de una aplicación, siga los pasos que se indican a continuación en un equipo Mac que tenga la aplicación instalada.<ol><li>Abra la carpeta en la que está instalada la aplicación (por ejemplo, **/Applications**).</li><li>Seleccione el paquete *&lt;nombre de la aplicación&gt;***.app** y seleccione **Mostrar contenido del paquete**.</li><li>Abra el archivo **Info.plist** </li><li>Compruebe el valor asociado a la clave **CFBundleIdentifier**</li></ol>El formato del identificador de paquete es **com.contoso.appname**|
 |**Importar aplicaciones**|Importa la lista de las aplicaciones que ha especificado en un archivo de valores separados por comas. Use el formato, el nombre de la aplicación, el editor y el identificador de paquete de la aplicación en el archivo.|
 |**Editar**|Permite editar el nombre, el editor y el identificador de paquete de la aplicación seleccionada.|
 |**Eliminar**|Elimina la aplicación seleccionada de la lista.|
-> [!TIP]
-> Para obtener más información sobre los informes de Intune, consulte [Comprender las operaciones de Microsoft Intune mediante informes](understand-microsoft-intune-operations-by-using-reports.md)..
+> [!TIP] Para obtener más información sobre los informes de Intune, consulte [Comprender las operaciones de Microsoft Intune mediante informes](understand-microsoft-intune-operations-by-using-reports.md).
 
 > [!IMPORTANT]
 > Cuando un dispositivo Mac OS X está en modo de suspensión, no es posible entregar ni inventariar las directivas y los perfiles. Como resultado, la consola de Intune podría mostrar temporalmente el estado **Configuraciones de directivas con errores** hasta el momento en que el dispositivo salga del modo de suspensión.
@@ -78,9 +77,9 @@ Use los **Informes de aplicaciones no conformes** para ver la conformidad de las
 
 #### Para ejecutar el informe
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), haga clic en **Informes** &gt; **Informe de aplicaciones no compatibles**..
+1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), haga clic en **Informes** &gt; **Informes de aplicaciones no compatibles**.
 
-2.  Seleccione los grupos de dispositivos que quiere comprobar, si quiere comprobar las aplicaciones compatibles, las no compatibles o ambas y, después, haga clic en **Ver informe**..
+2.  Seleccione los grupos de dispositivos que quiere comprobar, si quiere comprobar las aplicaciones conformes, las aplicaciones no conformes o ambas y, a continuación, haga clic en **Ver informe**.
 
 ## Configuración de directivas personalizadas de Mac OS X en Microsoft Intune
 Use la **directiva de configuración personalizada de Mac OS X** de Microsoft Intune para implementar la configuración que creó mediante la [herramienta Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) en dispositivos Mac OS X. Esta herramienta permite crear muchas configuraciones para controlar el funcionamiento de estos dispositivos y exportarlas a un perfil de configuración. A continuación, puede importar este perfil de configuración en una directiva personalizada de Mac OS X de Intune e implementar la configuración en los usuarios y dispositivos de su organización.
@@ -116,7 +115,7 @@ Puede crear el archivo de perfil de configuración usado por la directiva person
 
 -   Exportar el archivo (con la extensión **.mobileconfig**) desde la herramienta Apple Configurator.
 
--   Crear el archivo mediante el esquema apropiado de la [Apple Configuration Profile Key Reference](https://developer.apple.com/library/ios/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html) (referencia principal de los perfiles de configuración de Apple)..
+-   Crear el archivo mediante el esquema apropiado de la [referencia principal de los perfiles de configuración de Apple](https://developer.apple.com/library/ios/featuredarticles/iPhoneConfigurationProfileRef/Introduction/Introduction.html).
 
 
 > [!IMPORTANT]
@@ -127,6 +126,6 @@ Puede crear el archivo de perfil de configuración usado por la directiva person
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=May16_HO2-->
 
 
