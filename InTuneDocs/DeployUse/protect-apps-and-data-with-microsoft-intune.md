@@ -18,7 +18,7 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -56,6 +56,6 @@ También puede [habilitar sus aplicaciones personalizadas de línea de negocio](
 Además de restringir el movimiento de datos, si un dispositivo se pierde o es robado, o bien si el usuario ya no trabaja con la empresa, puede [borrar de forma selectiva datos empresariales](wipe-managed-company-app-data-with-microsoft-intune.md) y dejar solo los datos personales.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
