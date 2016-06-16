@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/03/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -42,7 +42,7 @@ Puede usar el sitio web del Portal de empresa para:
 
 -   [Sincronizar el dispositivo manualmente para acelerar las instalaciones de aplicaciones lentas](sync-your-device-manually-cpwebsite.md)
 
--   Buscar la información de contacto del administrador de TI, si este último la configuró
+-   Encontrar la información de contacto del administrador de TI, si este la ha configurado. Si tiene problemas para encontrarla, vea si aparece en el [sitio web de portal de empresa](http://portal.manage.microsoft.com).
 
 -   Ver detalles sobre el dispositivo, incluyendo si es compatible con las directivas de la empresa o centro educativo
 
@@ -52,9 +52,9 @@ La mayoría de tareas que puede realizar mediante la **aplicación Portal de emp
 
 - [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 - [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
-- [Uso de un dispositivo Android con Intune](using-your-windows-device-with-intune.md)
+- [Usar un dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

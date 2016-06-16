@@ -18,7 +18,7 @@ ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # ¿Qué ocurre si anula la inscripción del dispositivo de Intune?
 
-Cuando desinstala la aplicación Portal de empresa de su dispositivo, también se anula la suscripción del dispositivo de Intune. Para obtener información adicional sobre lo que ocurre, use el vínculo de la sección anterior "En este artículo" que coincida con el tipo de dispositivo que esté usando.
+Cuando desinstala la aplicación Portal de empresa de su dispositivo, también se anula la suscripción del dispositivo de Intune. Para más información sobre lo que ocurre, seleccione el vínculo de la sección anterior "En este artículo" correspondiente al tipo de dispositivo que use.
 
 - [Windows 10 Mobile, 8.1, Windows 8, Windows 7, Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
 - [Windows 10, Windows 8.1 o Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
@@ -92,10 +92,11 @@ Si se quita un dispositivo Windows RT, ocurre lo siguiente:
 
 -   Dejará de aplicarse cualquier configuración que se haya modificado en el dispositivo cuando se agregó, por ejemplo, deshabilitar la cámara o exigir una determinada longitud de la contraseña.
 
+Si tiene alguna pregunta y no encuentra la información de contacto del administrador de TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 ### Consulte también
 [Usar un dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO1-->
 
 

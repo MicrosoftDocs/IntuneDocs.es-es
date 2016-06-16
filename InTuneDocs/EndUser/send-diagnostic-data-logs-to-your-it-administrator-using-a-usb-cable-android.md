@@ -18,7 +18,7 @@ ms.assetid: c46775c2-9d2a-4a88-89f0-4104a462b898
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,13 +34,15 @@ Si está usando un equipo en lugar de un dispositivo móvil y quiere enviar los 
 
 2.  Use un cable USB para conectar el dispositivo Android a un equipo.
 
-3.  En el equipo, busque un directorio que contenga el nombre del teléfono. En dicho directorio busque &lt;Dispositivo Android&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\.
+3.  En el equipo, busque un directorio que contenga el nombre del teléfono. En dicho directorio busque &lt;Dispositivo Android&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files.\.
 
 4.  Adjunte todos los archivos en un correo electrónico y envíeselos a su administrador de TI.
+
+Si no encuentra la información de contacto del administrador de la TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 ### Consulte también
 [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

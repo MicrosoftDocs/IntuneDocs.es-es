@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/05/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 9081b1d8-50e8-4bc2-ba37-766421364213
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -41,7 +41,7 @@ Para resolver este problema y obtener el certificado necesario:
 
 4.  En el cuadro de diálogo **Nombre del certificado**, acepte el nombre de certificado predeterminado.
 
-5. Asegúrese de que **Uso de credencial** está configurado como **Usada para VPN y aplicaciones** y pulse **Aceptar**.
+5. Asegúrese de que **Uso de credencial** está configurado como **Usada para VPN y aplicaciones** y pulse en **Aceptar**.
 
     ![andr-cert-install-add-cert-name](./media/andr-cert_install-2-add_cert_name.png)
 
@@ -49,6 +49,8 @@ Para resolver este problema y obtener el certificado necesario:
 
 7. Vuelva a abrir la aplicación del portal de empresa. Ahora debería poder iniciar sesión en la aplicación Portal de empresa. Si necesita ayuda, póngase en contacto con el Administrador de TI.
 
-<!--HONumber=May16_HO1-->
+Si necesita ayuda y no encuentra la información de contacto del administrador de TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+
+<!--HONumber=Jun16_HO1-->
 
 

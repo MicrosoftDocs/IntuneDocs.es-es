@@ -15,10 +15,10 @@ ms.assetid: c6a97c74-c35c-4977-b925-6efe01e31d3c
 
 # optional metadata
 
-ROBOTS: noindex
+ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -44,11 +44,13 @@ Cuando anula la inscripción del dispositivo iOS de Intune:
 
 -   Los perfiles de correo electrónico de empresa se quitan del dispositivo.
 
-Para obtener instrucciones sobre cómo anular la inscripción, consulte [Anulación de la inscripción del dispositivo en Intune](unenroll-your-device-from-intune-ios.md)..
+Para obtener instrucciones sobre cómo anular la inscripción, vea [Anulación de la inscripción del dispositivo en Intune](unenroll-your-device-from-intune-ios.md).
+
+Si tiene alguna pregunta y no encuentra la información de contacto del administrador de TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 ### Consulte también
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

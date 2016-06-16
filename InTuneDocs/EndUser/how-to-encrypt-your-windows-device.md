@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/30/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 7d9645a9-6058-4112-aa31-8cdbccdc5463
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,28 +26,19 @@ ms.suite: ems
 ---
 
 # Cifrado del dispositivo Windows
-Para volver a conectar con su trabajo, deberá cifrar el dispositivo siguiendo estas instrucciones:
 
-## Opción 1: agregar una cuenta de Microsoft
+A fin de proteger los datos de la empresa o del centro educativo, puede que el administrador de TI le exija cifrar su dispositivo Windows. Si tiene un dispositivo Windows Phone y lo ha inscrito, se cifrará automáticamente en caso de que se requiera cifrado.
 
-1.  Busque e inicie la aplicación **Configuración de PC** .
+Si tiene un dispositivo de escritorio, siga estas instrucciones para cifrarlo. 
 
-2.  Haga clic en **Cuentas** &gt; **Su cuenta** y, después, haga clic en **Conectar a una cuenta Microsoft**..
+1.  Busque e inicie la aplicación **Administrar BitLocker**.
 
-3.  Siga las instrucciones que aparecen.
+2.  Haga clic en **Activar BitLocker** y siga las instrucciones que se indican para cifrar cada una de las unidades.
 
-4.  Asegúrese de que el dispositivo esté inscrito en Intune. Para ello, siga las instrucciones que se indican en [Inscribir su dispositivo para usarlo en el trabajo](http://go.microsoft.com/fwlink/?LinkId=519071)..
-
-## Opción 2: habilitar BitLocker
-
-1.  Busque e inicie la aplicación **Administrar BitLocker** .
-
-2.  Haga clic en **Activar BitLocker**y siga las instrucciones indicadas para cifrar cada una de las unidades.
-
-3.  Asegúrese de que el dispositivo esté inscrito en Intune. Para ello, siga las instrucciones que se indican en [Inscribir su dispositivo para usarlo en el trabajo](http://go.microsoft.com/fwlink/?LinkId=519071)..
+Si necesita ayuda y no encuentra la información de contacto del administrador de TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

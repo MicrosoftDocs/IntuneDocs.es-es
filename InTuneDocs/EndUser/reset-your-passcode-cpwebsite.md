@@ -18,7 +18,7 @@ ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mamoriss
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -36,7 +36,7 @@ Para restablecer el código de acceso:
 
 1.  Abra el [sitio web del portal de empresa](http://portal.manage.microsoft.com) y pulse el dispositivo cuyo código de acceso quiere restablecer.
 
-2.  Pulse **Restablecer código de acceso**.
+2.  Pulse en **Restablecer código de acceso**.
 
     ![tap-passcode-to-reset](./media/iwp-1-tap-reset-passcode.png)
 
@@ -44,7 +44,7 @@ Para restablecer el código de acceso:
 
     ![sign-out-sign-back-in](./media/iwp-2-sign-out.png)
 
-4.  Pulse **Restablecer código de acceso**.
+4.  Pulse en **Restablecer código de acceso**.
 
     ![tap-reset-passcode](./media/iwp-3-tap-reset-passcode-after-signin.png)
 
@@ -62,9 +62,11 @@ Para restablecer el código de acceso:
 
     Para ver una notificación que confirme que la contraseña se restableció correctamente, haga clic en la marca de notificación en la parte superior derecha del sitio del portal de empresa.
 
+Si necesita ayuda y no encuentra la información de contacto del administrador de TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+
 ### Consulte también
 [Usar el sitio web del Portal de empresa de Intune](using-the-intune-company-portal-website.md)
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO1-->
 
 

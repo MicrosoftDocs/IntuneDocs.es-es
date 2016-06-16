@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/30/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: de881f1b-7622-4ec2-8bf8-025f71ca9887
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisbal
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,9 +34,11 @@ Habilitar el arranque seguro es una tarea avanzada. Si usa un dispositivo móvil
 
 Si usa un PC, puede ponerse en contacto con el administrador de TI o consultar la sección “Para volver a habilitar el arranque seguro” de la página [Deshabilitar el arranque seguro](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) para intentar habilitarlo por sí mismo.
 
+¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+
 ### Consulte también
 [Usar un dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

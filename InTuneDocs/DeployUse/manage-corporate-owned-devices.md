@@ -45,7 +45,7 @@ Los números de identidad de equipo móvil internacional (IMEI) son una propieda
 
 ## Información general de los métodos de inscripción de dispositivos corporativos
 
-En la tabla siguiente se muestran los métodos de inscripción de dispositivos corporativos y sus ventajas.
+En la siguiente tabla se muestran los métodos de inscripción de dispositivos corporativos y sus ventajas.
 
 **Métodos de inscripción de iOS**
 
@@ -67,10 +67,10 @@ En la tabla siguiente se muestran los métodos de inscripción de dispositivos c
 **Métodos de inscripción de dispositivos corporativos**
 
 ### BYOD
-“Bring Your Own Device”. Los usuarios instalan la aplicación Portal de empresa e inscriben su dispositivo. Cuando se inscribe un dispositivo con el Portal de empresa, se unirá al lugar de trabajo. La inscripción de dispositivos de iOS con el Portal de empresa requiere un identificador de Apple. BYOD no requiere configuración adicional para dispositivos corporativos. Vea los pasos para [configurar la administración de dispositivos](get-ready-to-enroll-devices-in-microsoft-intune#set-up-device-management.md).
+“Bring Your Own Device”. Los usuarios instalan la aplicación de portal de empresa e inscriben su dispositivo. Cuando se inscribe un dispositivo con el portal de empresa, se unirá al lugar de trabajo. La inscripción de dispositivos de iOS con el portal de empresa requiere un identificador de Apple. BYOD no requiere configuración adicional para dispositivos corporativos. Vea los pasos para [configurar la administración de dispositivos](get-ready-to-enroll-devices-in-microsoft-intune#set-up-device-management.md). ([Volver a la tabla](#overview-of corporate-owned-device-enrollment-methods))
 
 ### DEM
-Administrador de inscripción de dispositivos. El administrador crea cuentas de DEM. Después, los administradores pueden instalar el Portal de empresa e inscribir muchos dispositivos sin usuario. Obtenga más información sobre [DEM](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md). ([Volver a la tabla](#overview-of corporate-owned-device-enrollment-methods))
+Administrador de inscripción de dispositivos. El administrador crea cuentas de DEM. Después, los administradores pueden instalar el portal de empresa e inscribir muchos dispositivos sin usuario. Obtenga más información sobre [DEM](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md). ([Volver a la tabla](#overview-of corporate-owned-device-enrollment-methods))
 
 ### DEP
 Programa de inscripción de dispositivos de Apple. El administrador crea e implementa directivas "de forma inalámbrica" para dispositivos iOS adquiridos y administrados con DEP. El dispositivo se inscribe cuando el usuario ejecuta el Asistente para la configuración de iOS. Este método admite el modo **iOS supervisado**, que a su vez permite lo siguiente:
@@ -103,9 +103,9 @@ Especifica si el registro del dispositivo requiere el restablecimiento de fábri
 Especifica si el método de inscripción permite la "afinidad de usuario", que conecta un dispositivo con un usuario específico. Los dispositivos "Opt." se pueden inscribir con o sin afinidad de usuario. La afinidad de usuario es necesaria para admitir lo siguiente:
   - Aplicaciones de administración de aplicaciones móviles (MAM)
   - Acceso condicional al correo electrónico y los datos de la empresa
-  - Aplicación Portal de empresa
+  - Aplicación de portal de empresa
 
-([Volver a la tabla](#overview-of corporate-owned-device-enrollment-methods)) ([Volver a la tabla](#overview-of corporate-owned-device-enrollment-methods))
+([Volver a la tabla](#overview-of corporate-owned-device-enrollment-methods))
 
 ### Bloqueo
 Especifica si el dispositivo puede bloquearse para impedir que el usuario quite la directiva de Intune, con lo que quitaría el dispositivo de la administración. En el caso de los dispositivos iOS, el bloqueo del dispositivo requiere que se encuentre en modo Supervisado.

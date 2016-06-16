@@ -18,7 +18,7 @@ ms.assetid: 98034875-cd3a-4367-a8d7-c5d4a438d496
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -36,8 +36,8 @@ Para volver a conectar con su trabajo, deberá establecer el tiempo de espera de
 
 3.  Asegúrese de que el dispositivo esté inscrito en Intune. Para ello, siga las instrucciones que se indican en [Enroll your device to use it at work](http://go.microsoft.com/fwlink/?LinkId=519071) (Inscribir el dispositivo para usarlo en el trabajo).
 
+Si necesita ayuda y no encuentra la información de contacto del administrador de TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
-
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

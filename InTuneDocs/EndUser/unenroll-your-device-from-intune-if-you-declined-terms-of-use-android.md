@@ -18,7 +18,7 @@ ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061e
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisbal
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -36,7 +36,7 @@ Para poder desinstalar la aplicación Portal de empresa, debe ir a la opción **
 
 Para anular la inscripción del dispositivo de Intune y desinstalar la aplicación Portal de empresa:
 
-1.  Vaya a **Configuración** &gt; **Seguridad &amp;Bloqueo de pantalla** &gt; **Administradores de dispositivos**.
+1.  Vaya a **Configuración** &gt; **Seguridad &amp; Bloqueo de pantalla** &gt; **Administradores de dispositivos**.
 
     Al completar este se anula la inscripción del dispositivo de forma inmediata.
 
@@ -44,10 +44,11 @@ Para anular la inscripción del dispositivo de Intune y desinstalar la aplicaci�
 
     Ahora puede desinstalar la aplicación Portal de empresa.
 
+Si necesita ayuda y no encuentra la información de contacto del administrador de TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 ### Consulte también
 [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

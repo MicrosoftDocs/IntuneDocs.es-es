@@ -18,7 +18,7 @@ ms.assetid: 85c868e7-8d63-480c-9770-4e99614a5c94
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,7 +34,7 @@ Para activar el registro detallado:
 
 1.  Abra la aplicación del portal de empresa.
 
-2.  Pulse en **Menú** &gt;  **Configuración**.
+2.  Pulse en **Menú** &gt; **Configuración**.
 
     > [!NOTE] 
     > **Menú** puede ser un botón de software o hardware, según el dispositivo Android que tenga.
@@ -46,7 +46,7 @@ Para activar el registro detallado:
 
     Este mensaje puede inducir a error, ya que **Microsoft nunca accede a las fotografías, a los elementos multimedia ni a los archivos del dispositivo**. Google controla el texto del mensaje, por lo que Microsoft no puede cambiarlo.  Al permitir el acceso, lo único que está haciendo es dejar que el dispositivo escriba registros de datos en la tarjeta SD del dispositivo, lo que permite mover esos registros mediante un cable USB.
 
-    Si se deniega el acceso, el mensaje aparecerá de nuevo la próxima vez que pulse **Enviar datos**, pero puede desactivar los mensajes futuros si pulsa en la casilla **No volver a preguntar**.  Si más adelante decide permitir el acceso, vaya a **Configuración** &gt; **Aplicaciones** &gt; **Portal de empresa** &gt; **Permisos** &gt; **Almacenamiento** y active el permiso.
+    Si se deniega el acceso, el mensaje aparecerá de nuevo la próxima vez que pulse **Enviar datos**, pero puede desactivar los mensajes futuros si pulsa en la casilla **No volver a preguntar**.  Si más adelante decide permitir el acceso, vaya a **Configuración** &gt; **Aplicaciones** &gt; **Portal de empresa** &gt; **Permisos** &gt; **Almacenamiento**y active el permiso.
 
 4.  Siga las indicaciones para elegir la aplicación de correo electrónico a través de la cual enviará los registros a su administrador de TI. La aplicación creará un correo electrónico con dirección previa con todos los registros adjuntos.
 
@@ -54,6 +54,6 @@ Para activar el registro detallado:
 ### Consulte también
 [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

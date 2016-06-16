@@ -18,7 +18,7 @@ ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cb
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,16 +30,16 @@ Ya tiene una cuenta de correo electrónico de empresa. Para continuar para conec
 
 1.  En **configuración** en el dispositivo, quite la conexión previamente configurado para su correo electrónico de la compañía.
 
-    Por ejemplo, en un dispositivo iOS, pulse en **Configuración** &gt; **Correo, Contactos, Calendario**. Seleccione su cuenta de correo electrónico profesional y, después, haga clic en **Eliminar**..
+    Por ejemplo, en un dispositivo iOS, pulse en **configuración** &gt; **correo, contactos, calendario**. Seleccione su cuenta de correo electrónico del trabajo y, a continuación, haga clic en **Eliminar**.
 
-2.  Abra la aplicación de portal de empresa en el dispositivo y pulse en **Comprobar el cumplimiento normativo**..
+2.  Abra la aplicación de portal de empresa en el dispositivo y puntee en **comprobar el cumplimiento de normas**.
 
 3.  Espere un momento para la nueva configuración de correo electrónico que se aplicará automáticamente a su dispositivo.
 
-Si la nueva configuración de correo electrónico no aparece después de un tiempo, póngase en contacto con su administrador de TI.
+Si la nueva configuración de correo electrónico no aparece después de un tiempo, póngase en contacto con su administrador de TI. Si no encuentra la información de contacto del administrador de la TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

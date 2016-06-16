@@ -18,7 +18,7 @@ ms.assetid: d7c871b8-e5d8-4912-b87f-7e6bc59897be
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,9 +26,9 @@ ms.suite: ems
 ---
 
 
-# Enviar errores de inscripción al administrador de TI
+# Send enrollment errors to your IT administrator (Enviar errores de inscripción al administrador de TI)
 
-Si recibe un error al intentar inscribir el dispositivo Android en Intune, puede intentarlo de nuevo pulsando **Reintentar**. También puede enviar la información del error al administrador de TI en un correo electrónico pulsando **Enviar información**.. 
+Si recibe un error al intentar inscribir el dispositivo Android en Intune, puede intentarlo de nuevo pulsando en **Reintentar**. También puede enviar la información del error al administrador de TI en un correo electrónico pulsando en **Enviar información**. 
 
 Una vez hecho esto, se crea automáticamente un correo electrónico dirigido al administrador de TI, que contiene los registros necesarios para que el administrador pueda solucionar los problemas que tenga el dispositivo.
 
@@ -40,6 +40,6 @@ Hay diferentes maneras de enviar los registros de datos del dispositivo al admin
 ### Consulte también
 [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Instalar una nueva versión de la aplicación del portal de empresa | Microsoft Intune
+title: Instalar una nueva versión de la aplicación de portal de empresa | Microsoft Intune
 description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/30/2016
 ms.topic: article
 ms.prod:
 ms.service:
@@ -19,20 +19,20 @@ ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: priyar
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
 
-# Instalar una nueva versión de la aplicación del Portal de empresa
+# Instalar una nueva versión de la aplicación de portal de empresa
 
 Si su versión del portal de empresa ya no es compatible, o si hay disponible una versión más actualizada, use los procedimientos siguientes para actualizar el dispositivo.
 
 ## Para actualizar el dispositivo Android
 
-Play Store le avisará cuando haya disponible una nueva versión del Portal de empresa. No verá un símbolo del sistema en la propia aplicación del Portal de empresa. Siga las instrucciones en la alerta para actualizar el dispositivo.
+Play Store le avisará cuando haya disponible una nueva versión del portal de empresa. No verá un símbolo del sistema en la propia aplicación del portal de empresa. Siga las instrucciones en la alerta para actualizar el dispositivo.
 
 ## Para actualizar el dispositivo iOS
 
@@ -46,7 +46,10 @@ La AppStore de Apple le avisará cuando haya disponible una nueva versión del p
 
     > [!NOTE] Si no puede tener acceso a la Tienda Windows, póngase en contacto con el administrador de TI.
 
-Para obtener información sobre otras tareas que puede realizar con el dispositivo, use el vínculo que coincida con el tipo de dispositivo que tenga:
+
+Si necesita ayuda y no encuentra la información de contacto del administrador de TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+
+Para obtener información sobre otras tareas que puede realizar con el dispositivo, use el vínculo correspondiente al tipo de dispositivo que tenga:
 
 - [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)</br>
 - [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)</br>
@@ -54,6 +57,6 @@ Para obtener información sobre otras tareas que puede realizar con el dispositi
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

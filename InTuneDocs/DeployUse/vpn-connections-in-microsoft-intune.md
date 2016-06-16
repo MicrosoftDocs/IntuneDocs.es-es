@@ -18,7 +18,7 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: karanda
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -48,20 +48,24 @@ Intune permite crear perfiles de VPN que usan los siguientes tipos de conexión:
 
 
 
-Tipo de conexión |iOS y Mac OS X  |Android  |Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8,1  |Windows 10 para escritorios y Windows 10 Mobile |
----------|---------|---------|---------|---------|---------
-Cisco AnyConnect |Sí |Sí   |No    |     No    |No  |No    | Sí, (OMA-URI, solo móvil)|     
-Pulse Secure |Sí  |Sí |Sí   |No  |Sí  |Sí| Sí|        
-F5 Edge Client |Sí |Sí |Sí |No  |Sí  |   Sí |  Sí|   
-Dell SonicWALL Mobile Connect |Sí |Sí |Sí |No  |Sí |Sí |Sí|         
-CheckPoint Mobile VPN |Sí |Sí |Sí |Sí |Sí|Sí|Sí|
+Tipo de conexión |iOS y Mac OS X  |Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8,1|Windows 10 para escritorios y Windows 10 Mobile |
+----------------|------------------|-------|-----------|----------|--------------|-----------------|----------------------|
+Cisco AnyConnect|Sí |Sí   |No    |     No    |No  |No    | Sí, (OMA-URI, solo móvil)|     
+Pulse Secure|Sí  |Sí |Sí   |No  |Sí  |Sí| Sí|        
+F5 Edge Client|Sí |Sí |Sí |No  |Sí  |   Sí |  Sí|   
+Dell SonicWALL Mobile Connect|Sí |Sí |Sí |No  |Sí |Sí |Sí|         
+CheckPoint Mobile VPN|Sí |Sí |Sí |Sí |Sí|Sí|Sí|
+Microsoft SSL (SSTP)|No |No |No |No |No|No|VPNv1 OMA-URI*|
+Microsoft Automatic|No |No |No |No |No|Sí (OMA-URI)|Sí|
+IKEv2|Perfil personalizado de iOS|No |No |No |No|Sí (OMA-URI)|Sí|
+PPTP|Perfil personalizado de iOS|No |No |No |No|No|Sí|
+L2TP|Perfil personalizado de iOS|No |No |No |No|Sí (OMA-URI)|Sí|
 
-
-
+\* Sin configuración adicional que, de otro modo, está disponible en Windows 10.
 
 > [!IMPORTANT] Para poder usar perfiles de VPN que se implementen en un dispositivo, debe instalar la aplicación VPN aplicable para el perfil. Puede usar la información del tema [Deploy apps in Microsoft Intune (Implementar aplicaciones en Microsoft Intune)](deploy-apps-in-microsoft-intune.md) para ayudarle a implementar la aplicación aplicable con Intune.  
 
- Obtenga información sobre cómo crear perfiles de VPN personalizados con la configuración de URI en [Custom configurations for VPN profiles (Personalizar configuraciones para perfiles de VPN)](custom-configurations-for-vpn-profiles.md)..     
+ Obtenga información sobre cómo crear perfiles de VPN personalizados con la configuración de URI en [Custom configurations for VPN profiles](custom-configurations-for-vpn-profiles.md) (Personalizar configuraciones para perfiles de VPN).     
 
 ## Cómo se protegen los perfiles de VPN
 
@@ -73,7 +77,7 @@ Al crear el perfil de VPN, elija un perfil de certificado SCEP o .PFX que haya c
 
 Esto se conoce como certificado de identidad y se utiliza para autenticar con un perfil de certificado de confianza (o un certificado raíz) que ha creado para establecer que el dispositivo del usuario tiene permiso para conectarse. El certificado de confianza se implementa en el equipo que autentica la conexión VPN, por lo general, el servidor de VPN.
 
-Para obtener más información sobre cómo crear y usar perfiles de certificado en Intune, consulte [Secure resource access with certificate profiles (Proteger el acceso a recursos con perfiles de certificado)](secure-resource-access-with-certificate-profiles.md)..
+Para más información sobre cómo crear y usar perfiles de certificado en Intune, vea [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md) (Proteger el acceso a recursos con perfiles de certificado).
 
 ### Nombre de usuario y contraseña
 
@@ -81,7 +85,7 @@ El usuario se autentica en el servidor de VPN proporcionando su nombre de usuari
 
 ## Crear un perfil de VPN
 
-1. En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), haga clic en **Directiva > Agregar directiva**..
+1. En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), seleccione **Directiva > Agregar directiva**.
 2. Seleccione una plantilla para la nueva directiva expandiendo el tipo de dispositivo correspondiente y, a continuación, elija el perfil de VPN para dicho dispositivo:
     * **Perfil de VPN (Android 4 y versiones posteriores)**
     * **Perfil de VPN (iOS 7.1 y versiones posteriores)**
@@ -102,15 +106,15 @@ Nombre de la configuración  |Más información
 **Tipo de conexión**     |  Seleccione uno de los siguientes tipos de conexión para usar en el perfil de VPN: **Cisco AnyConnect** (no disponible para Windows 8.1 ni Windows Phone 8.1), **Pulse Secure**, **F5 Edge Client**, **Dell SonicWALL Mobile Connect** o **CheckPoint Mobile VPN**
 **Descripción del servidor VPN**     | Especifique una descripción para el servidor VPN al que se conectarán los dispositivos. **Ejemplo:** servidor VPN de Contoso. Cuando el tipo de conexión es **F5 Edge Client**, use el campo **Lista de servidores** para especificar una lista de descripciones de servidor y direcciones IP.
 **Dirección IP o FQDN del servidor**    |Proporcione la dirección IP o el nombre de dominio completo del servidor VPN al que se conectarán los dispositivos. **Ejemplos:** 192.168.1.1, vpn.contoso.com.  Cuando el tipo de conexión es **F5 Edge Client**, use el campo **Lista de servidores** para especificar una lista de descripciones de servidor y direcciones IP.         |         
-**Lista de servidores**     |Haga clic en **Agregar** para agregar un nuevo servidor VPN que se usará para la conexión VPN. También puede especificar qué servidor será el servidor predeterminado para la conexión. Esta opción solo se muestra cuando el tipo de conexión es **F5 Edge Client**..         
+**Lista de servidores**     |Seleccione **Agregar** para agregar un nuevo servidor VPN que se usará para la conexión VPN. También puede especificar qué servidor será el servidor predeterminado para la conexión. Esta opción solo se muestra cuando el tipo de conexión es **F5 Edge Client**.         
 **Enviar todo el tráfico de red a través de la conexión VPN**     |Si selecciona esta opción, todo el tráfico de red se envía a través de la conexión VPN. Si no selecciona esta opción, el cliente negociará dinámicamente las rutas de túnel dividido al conectarse al servidor VPN de terceros. Solo las conexiones con la red de la empresa se envían a través de un túnel VPN. El túnel de VPN no se utiliza al conectarse a recursos de Internet.
 **Método de autenticación**| Seleccione el método de autenticación usado por la conexión VPN: **Certificados** o **Nombre de usuario y contraseña**. (Nombre de usuario y contraseña no está disponible cuando el tipo de conexión es Cisco AnyConnect). La opción **Método de autenticación** no está disponible para Windows 8.1
 **Recordar las credenciales de usuario en cada inicio de sesión**|Seleccione esta opción para asegurarse de que se recuerdan las credenciales de usuario para que el usuario no tenga que escribirlas cada vez que se establezca una conexión.
-**Seleccionar un certificado de cliente para la autenticación de cliente (certificado de identidad)**|Seleccione el certificado SCEP de cliente que creó previamente y que se utilizará para autenticar la conexión VPN. Para obtener más información sobre cómo usar perfiles de certificado en Intune, consulte [Secure resource access with certificate profiles (Proteger el acceso a recursos con perfiles de certificado)](secure-resource-access-with-certificate-profiles.md). Esta opción solo se muestra cuando el método de autenticación es **Certificados**..
-**Rol**| Especifique el nombre del rol de usuario que tiene acceso a esta conexión. Un rol de usuario define la configuración personal y las opciones, y habilita o deshabilita ciertas características de acceso. Esta opción solo se muestra cuando el tipo de conexión es **Pulse Secure**..
-**Dominio Kerberos**|Especifique el nombre de dominio de autenticación que quiere usar. Un dominio de autenticación es una agrupación de recursos de autenticación usada por el tipo de conexión Pulse Secure. Esta opción solo se muestra cuando el tipo de conexión es **Pulse Secure**..
-**Dominio o grupo de inicio de sesión**|Especifique el nombre del grupo o dominio de inicio de sesión al que quiere conectarse. Esta opción solo se muestra cuando el tipo de conexión es **Dell SonicWALL Mobile Connect**..
-**Huella digital**|Especifique una cadena, por ejemplo "Código de huella digital de Contoso" que se utilizará para comprobar que se puede confiar en el servidor VPN. Una huella digital se puede: enviar al cliente para que sepa que puede confiar en cualquier servidor que presente esa misma huella digital al conectarse. Si el dispositivo todavía no tiene la huella digital, pedirá al usuario que confíe en el servidor VPN al que se está conectando mientras muestra la huella digital (el usuario comprueba la huella digital manualmente y hace clic en **Confiar** para conectarse). Esta opción solo se muestra cuando el tipo de conexión es **CheckPoint Mobile VPN**..
+**Seleccionar un certificado de cliente para la autenticación de cliente (certificado de identidad)**|Seleccione el certificado SCEP de cliente que creó previamente y que se utilizará para autenticar la conexión VPN. Para obtener más información sobre cómo usar perfiles de certificado en Intune, consulte [Secure resource access with certificate profiles (Proteger el acceso a recursos con perfiles de certificado)](secure-resource-access-with-certificate-profiles.md). Esta opción solo se muestra cuando el método de autenticación es **Certificados**.
+**Rol**| Especifique el nombre del rol de usuario que tiene acceso a esta conexión. Un rol de usuario define la configuración personal y las opciones, y habilita o deshabilita ciertas características de acceso. Esta opción solo se muestra cuando el tipo de conexión es **Pulse Secure**.
+**Dominio Kerberos**|Especifique el nombre de dominio de autenticación que quiere usar. Un dominio de autenticación es una agrupación de recursos de autenticación usada por el tipo de conexión Pulse Secure. Esta opción solo se muestra cuando el tipo de conexión es **Pulse Secure**.
+**Dominio o grupo de inicio de sesión**|Especifique el nombre del grupo o dominio de inicio de sesión al que quiere conectarse. Esta opción solo se muestra cuando el tipo de conexión es **Dell SonicWALL Mobile Connect**.
+**Huella digital**|Especifique una cadena, por ejemplo "Código de huella digital de Contoso" que se utilizará para comprobar que se puede confiar en el servidor VPN. Una huella digital se puede: enviar al cliente para que sepa que puede confiar en cualquier servidor que presente esa misma huella digital al conectarse. Si el dispositivo todavía no tiene la huella digital, pedirá al usuario que confíe en el servidor VPN al que se está conectando mientras muestra la huella digital (el usuario comprueba la huella digital manualmente y selecciona **Confiar** para conectarse). Esta opción solo se muestra cuando el tipo de conexión es **CheckPoint Mobile VPN**.
 **Por cada aplicación VPN**|Seleccione esta opción si quiere asociar esta conexión VPN con una aplicación iOS de Mac OS X para que la conexión se abra cuando se ejecute la aplicación. Puede asociar el perfil de VPN con una aplicación al implementar el software. Para obtener más información, consulte [Deploy apps in Microsoft Intune (Implementar aplicaciones en Microsoft Intune)](deploy-apps-in-microsoft-intune.md).
 **Detectar automáticamente la configuración de proxy** (solo iOS, Mac OS X, Windows 8.1 y Windows Phone 8.1)|Si el servidor VPN requiere un servidor proxy para la conexión, especifique si quiere que los dispositivos detecten automáticamente la configuración de la conexión. Para más información, vea la documentación de Windows Server.
 **Usar script de configuración automática** (solo iOS, Mac OS X, Windows 8.1 y Windows Phone 8.1)|Si el servidor VPN requiere un servidor proxy para la conexión, especifique si desea usar un script de configuración automática para definir la configuración y, después, especifique una dirección URL al archivo que contiene la configuración. Para más información, vea la documentación de Windows Server.
@@ -131,6 +135,8 @@ Nombre de la configuración  |Más información
 **Aplicaciones asociadas**     | Puede proporcionar una lista de las aplicaciones que usarán automáticamente la conexión VPN. El tipo de aplicación determinará el identificador de la aplicación. Para las aplicaciones universales, proporcione el nombre de familia de paquete y, para las aplicaciones de escritorio, proporcione la ruta del archivo de la aplicación.          
 
 
+> [!IMPORTANT] Se recomienda proteger todas las listas de aplicaciones que se compilen para su uso en la configuración de VPN por aplicación. Si un usuario no autorizado modifica la lista y, luego, se importa a la lista de aplicaciones de VPN por aplicación, se estará corriendo el riesgo de autorizar el acceso a VPN a aplicaciones que no deberían tenerlo. Una forma de proteger las listas de aplicaciones consiste en usar una lista de control de acceso (ACL).
+
 A continuación se incluye un ejemplo de cuándo se puede utilizar la configuración de límites de la compañía. Si desea habilitar VPN solo para escritorio remoto, podría crear una regla de tráfico de red que permita el tráfico para el número de protocolo 27 en puerto externo 3996. Ningún otro tráfico usará la VPN.
 
 Definir las rutas en los límites de la empresa es útil cuando el tipo de conexión VPN no permite definir cómo se controla el tráfico de túnel dividido. En ese caso, use **Rutas** para enumerar las rutas que usarán la conexión VPN.
@@ -141,21 +147,24 @@ La nueva directiva se muestra en el nodo **Directivas de configuración** del á
 
 ## Implementar la directiva
 
-1.  En el área de trabajo **Directiva**, seleccione la directiva que quiera implementar y después haga clic en **Administrar implementación**..
+1.  En el área de trabajo **Directiva**, seleccione la directiva que quiera implementar y, después, haga clic en **Administrar la implementación**.
 
 2.  En el cuadro de diálogo **Administrar la implementación** :
 
-    -   **Para implementar la directiva**: seleccione uno o más grupos en los que quiera implementar la directiva y haga clic en **Agregar** &gt; **Aceptar**..
+    -   **Para implementar la directiva:** seleccione uno o más grupos en los que quiera implementar la directiva y seleccione **Agregar** &gt; **Aceptar**.
 
-    -   **Para cerrar el cuadro de diálogo sin implementarla:** haga clic en **Cancelar**..
+    -   **Para cerrar el cuadro de diálogo sin implementarla:** seleccione **Cancelar**.
 
 
 Tras una implementación correcta, los usuarios verán el nombre de la conexión VPN especificado en la lista de conexiones VPN en su dispositivo.
 
 En el área de trabajo **Directiva** de la página **General** , un resumen de estado y las alertas identifican los problemas de la directiva que requieren su atención. Además, aparece un resumen de estado en el área de trabajo Panel.
 
+### Consulte también
+[Configuraciones personalizadas para perfiles de VPN](Custom-configurations-for-VPN-profiles.md)
+[VPN por aplicación para Android Pulse Secure](per-app-vpn-for-android-pulse-secure.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

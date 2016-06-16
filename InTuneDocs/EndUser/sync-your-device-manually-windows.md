@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/18/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -27,7 +27,7 @@ ms.suite: ems
 
 
 # Sincronizar el dispositivo manualmente
-Si la instalación de la aplicación tarda demasiado, siga estas instrucciones para sincronizar manualmente el dispositivo Windows, ya que esto puede ayudarle a acelerar la instalación. Las únicas versiones compatibles son las que aparecen en la lista. Use el vínculo de la sección anterior "En este artículo" que coincida con el tipo de dispositivo que tenga:
+Si la instalación de la aplicación tarda demasiado, siga estas instrucciones para sincronizar manualmente el dispositivo Windows, ya que esto puede ayudarle a acelerar la instalación. Las únicas versiones compatibles son las que aparecen en la lista. Use el vínculo de la sección anterior "En este artículo" correspondiente al tipo de dispositivo que tenga:
 
 * [Windows 10 Mobile](#windows-10-mobile)
 * [Windows 10 Escritorio](#windows-10-desktop)
@@ -41,7 +41,7 @@ Para sincronizar manualmente el dispositivo de Windows 10 Mobile de modo que se 
 
     ![win10m-sync-1-settings-accounts](./media/win10m-sync-1-settings-accounts.png)
     
-2. Pulse **Acceso al trabajo**.
+2. Pulse en **Acceso al trabajo**.
 
     ![win10m-sync-2-work-access](./media/win10m-sync-2-work-access.png)
     
@@ -102,6 +102,6 @@ Para sincronizar manualmente el dispositivo de Windows Phone 8.1 de modo que se 
 [Usar un dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO1-->
 
 

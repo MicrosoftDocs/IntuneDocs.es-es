@@ -18,7 +18,7 @@ ms.assetid: 0f7dc155-cb8e-477b-ba02-2623194a9575
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: pbala
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -33,10 +33,10 @@ Como administrador de TI, deseará supervisar el estado de los dispositivos de s
 
 -   **[Alertas](get-notified-by-microsoft-intune-alerts.md)**: ayudan a supervisar el estado de los dispositivos administrados por Intune (incluido el estado y las advertencias de Endpoint Protection, que le avisarán sobre la existencia de malware, así como advertencias relacionadas con la escasez de conectividad de red o de espacio en disco).
 
--   Aquellos dispositivos y equipos que están administrados por Intune devuelven información detallada sobre sus propiedades y el software instalado.  Intune le proporciona herramientas e informes que le permitirán examinar y presentar estos datos. Para más información, consulte [Comprender el funcionamiento de sus dispositivos mediante el inventario en Microsoft Intune](understand-your-devices-with-inventory-in-microsoft-intune.md)..
+-   Aquellos dispositivos y equipos que están administrados por Intune devuelven información detallada sobre sus propiedades y el software instalado.  Intune le proporciona herramientas e informes que le permitirán examinar y presentar estos datos. Para más información, vea [Comprender el funcionamiento de sus dispositivos mediante el inventario en Microsoft Intune](understand-your-devices-with-inventory-in-microsoft-intune.md).
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

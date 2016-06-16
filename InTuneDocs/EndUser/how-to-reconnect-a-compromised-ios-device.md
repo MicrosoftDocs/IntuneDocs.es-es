@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 09e97df0-d032-48ff-ab8a-8c2c4ec29897
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,12 +26,12 @@ ms.suite: ems
 ---
 
 # Cómo volver a conectar un dispositivo iOS en riesgo
-El administrador de TI ha detectado que está utilizando un dispositivo desbloqueado. Esta configuración puede poner en riesgo la seguridad y podría ser una amenaza para los recursos de empresa.
+El administrador de TI ha detectado que está utilizando un dispositivo desbloqueado. Por "descodificado" se entiende que se han quitado las restricciones de software impuestas por iOS, que pueden poner en riesgo la seguridad y podrían suponer una amenaza para los recursos de su empresa. Cuando esto sucede, el dispositivo ya no puede obtener acceso a los recursos de la empresa.
 
-Póngase en contacto con su administrador de TI para que le ayude a volver a conectar su dispositivo.
+Póngase en contacto con el administrador de TI para que le ayude a volver a conectar su dispositivo. Si no encuentra la información de contacto del administrador de la TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

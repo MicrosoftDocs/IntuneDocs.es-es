@@ -18,7 +18,7 @@ ms.assetid: b29ac1bb-ef57-4ef1-9ea5-191ee8694e58
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,13 +34,15 @@ El Administrador de TI puede pedir que establezca un PIN o una contraseña en el
 
 2.  Elija y confirme la nueva contraseña.
 
-3.  Asegúrese de que el dispositivo esté inscrito con Microsoft Intune siguiendo las instrucciones indicadas en [Enroll your device in Microsoft Intune](enroll-your-device-in-Intune-android.md) (Inscribir el dispositivo en Microsoft Intune)..
+3.  Asegúrese de que el dispositivo esté inscrito en Microsoft Intune siguiendo las instrucciones del tema [Inscribir el dispositivo en Microsoft Intune](enroll-your-device-in-Intune-android.md).
 
 4.  Pulse en **OBTENER** &gt; **INSTALAR**.
+
+Si necesita ayuda y no encuentra la información de contacto del administrador de TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 ### Consulte también
 [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

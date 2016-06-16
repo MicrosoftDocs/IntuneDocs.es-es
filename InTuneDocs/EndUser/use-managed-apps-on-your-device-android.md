@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/11/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: maxles
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -39,7 +39,7 @@ Cuando accede a datos de la empresa en una aplicación administrada, verá un me
 ## ¿Cómo se pueden obtener aplicaciones administradas?
 Las aplicaciones administradas se obtienen de dos maneras distintas:
 
--   Cuando el dispositivo está inscrito en Microsoft Intune, puede instalar la aplicación desde la aplicación Portal de empresa o un sitio web del Portal de empresa, o bien el administrador de TI puede instalarla en el dispositivo. Para obtener más información sobre la inscripción, consulte [Inscripción del dispositivo en Intune](enroll-your-device-in-Intune-android.md)..
+-   Cuando el dispositivo está inscrito en Microsoft Intune, puede instalar la aplicación desde la aplicación Portal de empresa o un sitio web del Portal de empresa, o bien el administrador de TI puede instalarla en el dispositivo. Para más información sobre la inscripción, vea [Inscripción del dispositivo en Intune](enroll-your-device-in-Intune-android.md).
 
 -   Instale una aplicación de Play Store y después inicie sesión con su cuenta de usuario corporativo que se administra mediante Intune.
 
@@ -76,12 +76,12 @@ Estas son algunas de las aplicaciones comunes que puede administrar el departame
 
 -   Microsoft Word, Excel, PowerPoint
 
-Para obtener más información sobre las aplicaciones administradas en el dispositivo, póngase en contacto con el administrador de TI.
+Para obtener más información sobre las aplicaciones administradas en el dispositivo, póngase en contacto con el administrador de TI. Si no encuentra la información de contacto del administrador de la TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 
 ### Consulte también
 [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

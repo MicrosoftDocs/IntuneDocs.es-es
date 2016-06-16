@@ -18,7 +18,7 @@ ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,9 +28,9 @@ ms.suite: ems
 
 # Anulación de la inscripción del dispositivo en Intune
 
-Si inscribió un dispositivo Windows en Intune, pero ya no quiere usarlo para el trabajo o la escuela y no necesita tener acceso al correo electrónico, a las aplicaciones o a otros recursos del trabajo o la escuela, debe anular la inscripción del dispositivo. Una vez que se anule la inscripción de su dispositivo de Intune, ya no podrá acceder a estos recursos. Para obtener más información sobre lo que ocurre cuando se anula la inscripción de un dispositivo, consulte [What happens if you unenroll your device from Intune? (¿Qué ocurre cuando se anula la inscripción de un dispositivo de Intune?)](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
+Si inscribió un dispositivo Windows en Intune, pero ya no quiere usarlo para el trabajo o la escuela y no necesita tener acceso al correo electrónico, a las aplicaciones o a otros recursos del trabajo o la escuela, debe anular la inscripción del dispositivo. Una vez que se anule la inscripción de su dispositivo de Intune, ya no podrá acceder a estos recursos. Para más información sobre lo que ocurre cuando se anula la inscripción de un dispositivo, vea [¿Qué ocurre cuando se anula la inscripción de un dispositivo de Intune?](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
 
-Para anular la inscripción de un dispositivo, use el vínculo de la sección anterior "En este artículo" que coincida con el tipo de dispositivo que esté usando:
+Para anular la inscripción de un dispositivo, use el vínculo de la sección anterior "En este artículo" correspondiente al tipo de dispositivo que use:
 
 -   [Anular la inscripción de un dispositivo Windows 10](#unenroll-your-windows-10-device)
 -   [Anular la inscripción de un equipo con Windows 8.1](#unenroll-your-windows-8-1-computer)
@@ -44,7 +44,7 @@ Para anular la inscripción de un dispositivo, use el vínculo de la sección an
 
 3.  En **Mis dispositivos**, seleccione el dispositivo cuya inscripción desee anular.
 
-4.  Pulse **Quitar** &gt; **Quitar**.
+4.  Pulse en **Quitar** &gt; **Quitar**.
 
 ## Anular la inscripción de un equipo con Windows 8.1
 
@@ -58,7 +58,7 @@ Para anular la inscripción de un dispositivo, use el vínculo de la sección an
 
 ## Anular la inscripción de un dispositivo Windows Phone 8.1
 
-1.  Pulse **Configuración** &gt; **Área de trabajo**.
+1.  Pulse en **Configuración** &gt; **Área de trabajo**.
 
 2.  Pulse la cuenta de trabajo cuya inscripción quiere anular.
 
@@ -66,9 +66,11 @@ Para anular la inscripción de un dispositivo, use el vínculo de la sección an
 
 4.  En el cuadro de diálogo **Eliminar cuenta**, pulse en **Eliminar**.
 
+Si necesita ayuda y no encuentra la información de contacto del administrador de TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+
 ### Consulte también
 [Usar un dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO1-->
 
 

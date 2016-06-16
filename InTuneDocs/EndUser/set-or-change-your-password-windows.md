@@ -18,7 +18,7 @@ ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: priyar
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -48,9 +48,11 @@ Si tiene problemas para establecer una contraseña que cumpla todos los requisit
 4. Escriba la nueva contraseña en el campo **Nueva contraseña** y luego vuelva a escribirla en el campo **Confirmar contraseña**.
 4. Pulse **Listo**.
 
+Si necesita ayuda y no encuentra la información de contacto del administrador de TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+
 ### Consulte también
 [Usar un dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -18,7 +18,7 @@ ms.assetid: dea37b91-33fa-4d4a-ac44-560b450c02a6
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,10 +26,12 @@ ms.suite: ems
 ---
 
 # Aplicación de portal de empresa no admitida
-Esta versión del portal de empresa ya no puede utilizarse. Instale la aplicación **Portal de empresa** desde la Tienda Windows para continuar.
+Esta versión del portal de empresa ya no se puede usar. Instale la aplicación **Portal de empresa** más reciente desde la Tienda Windows para continuar.
 
 
+¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO2-->
 
 

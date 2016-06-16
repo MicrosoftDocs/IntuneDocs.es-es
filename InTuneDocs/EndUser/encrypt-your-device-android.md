@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/07/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,26 +28,31 @@ ms.suite: ems
 
 # Cifrado del dispositivo
 
-Si su empresa u organización necesita que se cifre el dispositivo Android para poder tener acceso a los archivos, al correo electrónico o a los datos de la empresa, haga lo siguiente:
+Haga lo siguiente si su empresa u organización necesita que se cifre el dispositivo Android para poder tener acceso a los archivos, al correo electrónico o a los datos de la empresa. Si el administrador de TI así lo requiere, puede que tenga que establecer un PIN o una contraseña antes del cifrado.
 
-1.  Asegúrese de que el dispositivo está conectado al cargador.
+Si alguna vez anula la inscripción del dispositivo, este permanecerá cifrado. 
 
-2.  Pulse **Buscar**. En el cuadro de búsqueda, escriba **portal de empresa**.
+1.  Asegúrese de que se ha establecido un PIN o una contraseña de bloqueo de pantalla para el dispositivo. 
 
-3.  Asegúrese de que se ha establecido un PIN o una contraseña de bloqueo de pantalla para el dispositivo.
+2.  En **Configuración**, haga clic en **Seguridad** &gt; **Cifrar teléfono**.
+    (En algunos teléfonos, tendrá que hacer clic en **Almacenamiento** &gt; **Cifrado de almacenamiento** o **Almacenamiento** &gt; **Pantalla de bloqueo y seguridad** &gt; **Otras opciones de seguridad** para encontrar la opción "Cifrar").
 
-4.  En Configuración, haga clic en **Seguridad** &gt; **Cifrar teléfono**.
-    (En algunos teléfonos, tendrá que hacer clic en **Almacenamiento** &gt; **Cifrado de almacenamiento**).
+3.  Siga las instrucciones de la pantalla. Durante el cifrado, el dispositivo podría reiniciarse varias veces.
 
-5.  Siga las instrucciones de la pantalla. Durante el cifrado, el dispositivo podría reiniciarse varias veces.
+### Qué hacer si tiene problemas
+**Problema:** con el dispositivo ya cifrado, ve que ocurre una de las siguientes cosas: -  El botón de cifrado está deshabilitado.
+-  Ve un mensaje que dice que aún es necesario realizar el cifrado.
+-  Obtiene errores al intentar usar la aplicación de portal de empresa.
 
-6.  Asegúrese de que el dispositivo esté inscrito en Microsoft Intune siguiendo las instrucciones del tema [Inscribir el dispositivo en Microsoft Intune](enroll-your-device-in-Intune-android.md)..
+**Qué hacer:** asegúrese de que ha establecido un PIN o una contraseña en el dispositivo.
+
+¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 ### Consulte también
 [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

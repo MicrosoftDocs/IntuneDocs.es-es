@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Funciones de administración de equipos Windows | Microsoft Intune
+title: Funciones de administración de PC Windows | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -18,7 +18,7 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -34,7 +34,7 @@ En la mayoría de los escenarios, los dispositivos se inscribirán con Microsoft
 
 -   **Protección antimalware**: Intune incluye Endpoint Protection, que ayuda a proteger los equipos del malware.
 
--   **Asistencia remota**: Intune permite a los usuarios ponerse en contacto con el personal de soporte técnico de TI, que puede proporcionar asistencia mediante una característica de Escritorio remoto que se incluye con Intune (requiere el software TeamViewer).
+-   **Asistencia remota:** Intune permite a los usuarios ponerse en contacto con el personal de soporte técnico de TI, que puede proporcionar asistencia mediante una característica de escritorio remoto que se incluye con Intune <!--- (requires TeamViewer software)--->.
 
 -   **Administración de licencias de software**: realice el seguimiento del número de licencias de software disponibles y del número de licencias disponibles que se usan.
 -   **Implementación de aplicaciones**: implemente software en los equipos que administra. Algunas características de administración de aplicaciones no están disponibles cuando los equipos se administran con el software cliente.
@@ -46,13 +46,13 @@ Intune puede administrar equipos que ejecutan las siguientes versiones de Window
 
 -   **Windows Vista**: versiones Business, Enterprise y Ultimate.
 
--   **Windows 7**: versiones Pro, Enterprise y Ultimate (sin Service Pack o con SP1).
+-   **Windows 7:** versiones Pro, Enterprise y Ultimate (sin Service Pack o con SP1).
 
--   **Windows 8**: versiones Pro y Enterprise.
+-   **Windows 8:** versiones Pro y Enterprise.
 
--   **Windows 8.1**: versiones Pro y Enterprise.
+-   **Windows 8.1:** versiones Pro y Enterprise.
 
-- **Windows 10**: versiones Home, Pro, Education y Enterprise.
+- **Windows 10:** versiones Home, Pro, Education y Enterprise.
 
 
 ## Requisitos mínimos de hardware
@@ -77,6 +77,6 @@ A continuación se indican los requisitos de software para instalar el cliente d
 [Capacidades de administración de dispositivos móviles en Microsoft Intune](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

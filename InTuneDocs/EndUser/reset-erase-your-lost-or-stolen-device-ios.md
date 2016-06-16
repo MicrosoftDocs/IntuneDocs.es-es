@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/09/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 70788dca-765f-47a7-9994-a286f8a88588
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -44,11 +44,12 @@ Para restablecer el dispositivo mediante el sitio web del Portal de empresa, sig
 1.  En el [sitio web del Portal de empresa](http://portal.manage.microsoft.com), seleccione el dispositivo que quiera borrar.
 
 2.  Pulse **Restablecer** &gt; **Restablecer**.
-> [!NOTE] Si no puede restablecer el dispositivo perdido o robado, pida al administrador de TI que lo haga.
+> [!NOTE]
+> Si no puede restablecer el dispositivo perdido o robado, pida al administrador de TI que lo haga. Si no encuentra la información de contacto del administrador de la TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 ### Consulte también
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

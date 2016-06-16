@@ -18,7 +18,7 @@ ms.assetid: d22f5aea-7be4-419b-b51b-a522ca037b69
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: arnab
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -60,9 +60,11 @@ Al agregar un dispositivo Android, da permiso al administrador de TI para accede
 
     -   Enviar actualizaciones de inventario de aplicaciones de empresa (estas actualizaciones no contienen información personal).
 
+Si tiene alguna pregunta y no encuentra la información de contacto del administrador de TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+
 ### Consulte también
 [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 

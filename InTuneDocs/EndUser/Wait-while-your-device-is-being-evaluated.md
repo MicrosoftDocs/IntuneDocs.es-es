@@ -18,7 +18,7 @@ ms.assetid: 01247881-452c-4da8-93ca-66b5e65c5317
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre 
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,8 +28,10 @@ ms.suite: ems
 # Espere mientras se evalúa el dispositivo
 Aún se está evaluando si el dispositivo cumple las normas. Espere unos minutos a que se complete la comprobación del cumplimiento.
 
+Si necesita ayuda y no encuentra la información de contacto del administrador de TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO1-->
 
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Buscar un nombre de familia de paquete (PFN) para la VPN por aplicación | Microsoft Intune|
+title: Buscar un nombre de familia de paquete (PFN) para la VPN por aplicación | Microsoft Intune
 description:
 keywords:
 author: nbigman
@@ -18,7 +18,7 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: tycast
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -38,11 +38,11 @@ La sintaxis de Get-AppxPackage es la siguiente:
 ` Parameter Set: __AllParameterSets`
 ` Get-AppxPackage [[-Name] <String> ] [[-Publisher] <String> ] [-AllUsers] [-User <String> ] [ <CommonParameters>]`
 
-> Nota: Podría tener que ejecutar PowerShell como administrador para poder recuperar el PFN.
+> Nota: podría tener que ejecutar PowerShell como administrador para poder recuperar el PFN.
 
 Por ejemplo, para obtener información sobre todas las aplicaciones universales instaladas en el equipo, use `Get-AppxPackage`.
 
-Para obtener información sobre una aplicación cuyo nombre conoce en su totalidad o en parte, use `Get-AppxPackage *<app_name>`. Observe el uso del carácter comodín, que resulta especialmente útil si no está seguro del nombre completo de la aplicación. Por ejemplo, para obtener la información de OneNote, use `Get-AppxPackage *OneNote`.
+Para más información sobre una aplicación cuyo nombre conoce en su totalidad o en parte, use `Get-AppxPackage *<app_name>`. Observe el uso del carácter comodín, que resulta especialmente útil si no está seguro del nombre completo de la aplicación. Por ejemplo, para obtener la información de OneNote, use `Get-AppxPackage *OneNote`.
 
 
 Esta es la información recuperada sobre OneNote:
@@ -91,6 +91,6 @@ En Edge, la información que le interesa se muestra directamente; en Internet Ex
 
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO1-->
 
 

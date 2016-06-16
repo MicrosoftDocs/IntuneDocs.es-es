@@ -18,7 +18,7 @@ ms.assetid: db99c3eb-4813-4c8b-8e32-958e983b7f0f
 ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: esmich
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -42,9 +42,11 @@ Si usa el Portal de empresa para restablecer un iPhone o un iPad, es posible que
 
 -   Se eliminará su cuenta de correo electrónico de empresa y también se eliminará el correo electrónico que no haya guardado.
 
+Si tiene alguna pregunta y no encuentra la información de contacto del administrador de TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+
 ### Consulte también
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO1-->
 
 

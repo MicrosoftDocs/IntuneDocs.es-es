@@ -6,7 +6,7 @@ description:
 keywords:
 author: Staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/06/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -27,7 +27,7 @@ ms.suite: ems
 
 # Exploradores web compatibles de Microsoft Intune
 
-Antes de configurar Intune, lea este tema y los demás requisitos que aparecen en [What to know before you start (Información necesaria antes de empezar)](what-to-know-before-you-start-microsoft-intune.md).
+Antes de configurar Intune, lea este tema y los demás requisitos que aparecen en [What to know before you start](what-to-know-before-you-start-microsoft-intune.md) (Información necesaria antes de empezar).
 
 |Característica de Intune |Exploradores admitidos|
 |---------|---------|
@@ -42,6 +42,6 @@ Antes de configurar Intune, lea este tema y los demás requisitos que aparecen e
 
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

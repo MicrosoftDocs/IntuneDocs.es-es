@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Preguntas más frecuentes sobre Intune
-En este artículo se proporcionan respuestas a algunas de las preguntas más frecuentes sobre Intune. Si no ve una respuesta a su pregunta aquí, [háganoslo saber](https://microsoftintune.uservoice.com/)..
+En este artículo se proporcionan respuestas a algunas de las preguntas más frecuentes sobre Intune. Si no ve una respuesta a su pregunta aquí, [háganoslo saber](https://microsoftintune.uservoice.com/).
 
 ## Problemas generales
 
@@ -40,7 +40,7 @@ En este artículo se proporcionan respuestas a algunas de las preguntas más fre
 
 -   **¿Hay alguna funcionalidad de asistencia remota en Intune para dispositivos móviles?**
 
-    No, no hay ninguna. Las aplicaciones de terceros como [Bomgar](http://www.bomgar.com/) y [TeamViewer](https://www.teamviewer.com/) podrían resultar útiles.
+    No, no hay ninguna. Las aplicaciones de terceros como [Bomgar](http://www.bomgar.com/) y <!---and [TeamViewer](https://www.teamviewer.com/)---> podrían resultar útiles.
 
 ## Cuentas
 
@@ -62,15 +62,15 @@ En este artículo se proporcionan respuestas a algunas de las preguntas más fre
 
 -   **¿Dónde pueden obtener información mis usuarios para inscribir sus dispositivos?**
 
-    Puede usar o personalizar información desde las [End-user Intune enrollment instructions for IT administrators (Instrucciones de inscripción de Intune del usuario final para los administradores de TI)](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a)..
+    Puede usar o personalizar información desde las [End-user Intune enrollment instructions for IT administrators](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) (Instrucciones de inscripción de Intune del usuario final para los administradores de TI).
 
 -   **¿Cómo puedo solucionar problemas con la inscripción de dispositivos?**
 
-    Encontrará métodos para solucionar problemas comunes de inscripción en [Troubleshoot device enrollment in Intune (Solución de problemas de inscripción de dispositivos en Intune)](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune)..
+    Encontrará métodos para solucionar problemas comunes de inscripción en [Troubleshoot device enrollment in Intune](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune) (Solución de problemas de inscripción de dispositivos en Intune).
 
 -   **¿Cómo puedo recopilar registros de inscripción si un usuario tiene un problema de inscripción?**
 
-    Siga [estas instrucciones](http://www.microsoft.com/en-us/download/46391)..
+    Siga [estas instrucciones](http://www.microsoft.com/en-us/download/46391).
 
 ## Administración de dispositivos móviles
 
@@ -78,15 +78,15 @@ En este artículo se proporcionan respuestas a algunas de las preguntas más fre
 
     -   **¿Puede detectar Intune si un dispositivo está liberado mediante jailbreak?**
 
-        Sí, en algunos sistemas operativos. Para más detalles sobre cómo administrar dispositivos con Jailbreak, vea [Create a device compliance policy (Crear una directiva de cumplimiento de dispositivos)](/intune/deploy-use/create-a-device-compliance-policy-in-microsoft-intune.md)..
+        Sí, en algunos sistemas operativos. Para más detalles sobre cómo administrar dispositivos con Jailbreak, vea [Create a device compliance policy](/intune/deploy-use/create-a-device-compliance-policy-in-microsoft-intune.md) (Crear una directiva de cumplimiento de dispositivos).
 
     -   **¿Puedo borrar selectivamente datos corporativos de un dispositivo?**
 
-        Sí. Para más información, vea [Help protect your data with remote wipe, remote lock, or passcode reset (Ayude a proteger sus datos mediante la eliminación remota, el bloqueo remoto o el restablecimiento de código de acceso)](/intune/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune.md)..
+        Sí. Para más información, vea [Ayude a proteger sus datos mediante la eliminación remota, el bloqueo remoto o el restablecimiento de código de acceso](/intune/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune.md).
 
     -   **¿Hay alguna manera de bloquear determinados sitios web en el explorador del dispositivo móvil a través de Intune?**
 
-        No en el explorador nativo de ninguna plataforma. Sin embargo, puede permitir o bloquear las direcciones URL cuando implemente el explorador web administrado por Intune en dispositivos iOS y Android. Para más información, vea [Manage Internet access using managed browser policies (Administrar el acceso a Internet mediante directivas de explorador administrado)](/intune/Deploy-Use/Manage-Internet-access-using-managed-browser-policies-with-Microsoft-Intune.md)..
+        No en el explorador nativo de ninguna plataforma. Sin embargo, puede permitir o bloquear las direcciones URL cuando implemente el explorador web administrado por Intune en dispositivos iOS y Android. Para más información, vea [Administrar el acceso a Internet mediante directivas de explorador administrado](/intune/Deploy-Use/Manage-Internet-access-using-managed-browser-policies-with-Microsoft-Intune.md).
 
     -   **¿Podemos impedir que un usuario desinstale una aplicación?**
 
@@ -104,10 +104,7 @@ En este artículo se proporcionan respuestas a algunas de las preguntas más fre
 
         Puede cambiar la autoridad de MDM en algunos casos. Para ello, póngase en contacto con el soporte técnico, como se describe en [How to get support for Microsoft Intune (Cómo obtener soporte técnico para Microsoft Intune)](/intune/Troubleshoot/How-to-get-support-for-Microsoft-Intune.md). En la siguiente tabla se describen los cambios que son posibles. Los cambios en la autoridad de MDM requieren volver a inscribir los dispositivos.
 
-        ||**A:** Intune!**A:** O365|**A:** Configuration Manager con Intune|
-        |**Desde:** Intune| |Yes&#42;|Yes|
-        |**Desde:** O365||Yes&#42;||Yes|
-        |**Desde:** Configuration Manager con Intune|Yes|Yes| |
+        ||**Para:** Intune!**Para:** O365|**Para:** Configuration Manager con Intune| |**De:** Intune| |Sí&#42;|Sí| |**De:** O365||Sí& #42;||Sí| |**De:** Configuration Manager con Intune|Sí|Sí|
         
         &#42;Las autoridades de MDM de Intune y O365 pueden coexistir, por lo que no tendrá que volver a inscribir dispositivos móviles.
 
@@ -143,8 +140,7 @@ En este artículo se proporcionan respuestas a algunas de las preguntas más fre
     **¿Cómo se crea el AET para usuarios de Intune?**
   Cuando los administradores cargan el archivo .pfx para su certificado de Symantec, Intune crea automáticamente el AET y lo implementa en dispositivos Windows Phone inscritos. No es necesario que los administradores de Intune usen la herramienta AET Generator en el Windows Phone SDK.
 
-      > [!IMPORTANT]
-        > Intune no admite la creación manual del AET ni su implementación fuera de banda.
+      > [!IMPORTANT] Intune no admite la creación manual del AET ni su implementación fuera de banda.
 
     **¿Qué cambios que se han producido para reducir la necesidad de un certificado de Symantec?**
        En la versión de noviembre de 2014, Intune realizó cambios para permitir situaciones en las que las empresas no tengan un certificado de Symantec.
@@ -277,11 +273,11 @@ En este artículo se proporcionan respuestas a algunas de las preguntas más fre
 
 -   **¿Cómo puedo agregar una aplicación recomendada?**
 
-    En Intune, se denominan “aplicaciones destacadas” y se documentan en [Deploy apps in Microsoft Intune (Implementar aplicaciones en Microsoft Intune)](/Intune/Deploy-Use/deploy-apps-in-microsoft-intune.md)..
+    En Intune, se denominan "aplicaciones destacadas" y se documentan en [Deploy apps in Microsoft Intune](/Intune/Deploy-Use/deploy-apps-in-microsoft-intune.md) (Implementar aplicaciones en Microsoft Intune).
 
 -   **¿Puedo obtener almacenamiento en nube adicional para las aplicaciones que quiero implementar?**
 
-    Sí. Puede leer sobre esto en [Deploy apps (Implementar aplicaciones)](/Intune/Deploy-Use/deploy-apps.md), en la sección *Requisitos de almacenamiento en nube*..
+    Sí. Puede leer sobre esto en [Deploy apps](/Intune/Deploy-Use/deploy-apps.md) (Implementar aplicaciones), en la sección *Requisitos de almacenamiento en nube*.
 
 ## Seguridad
 
@@ -291,7 +287,7 @@ En este artículo se proporcionan respuestas a algunas de las preguntas más fre
 
 -   **Si cifro una tableta de Windows 8 mediante BitLocker, ¿puedo aplicar el borrado completo del dispositivo si un usuario no puede iniciar sesión correctamente varias veces consecutivas?**
 
-    No hay ninguna opción de borrado completo en dispositivos Windows 8.1/RT en ningún servicio de administración de dispositivos móviles, incluido Intune. Intune permite el borrado selectivo de esos dispositivos. Para más información sobre el borrado selectivo en Intune, vea [Protect apps and data with Microsoft Intune (Proteger las aplicaciones y los datos con Microsoft Intune)](/intune/Deploy-Use/protect-apps-and-data-with-microsoft-intune.md)..
+    No hay ninguna opción de borrado completo en dispositivos Windows 8.1/RT en ningún servicio de administración de dispositivos móviles, incluido Intune. Intune permite el borrado selectivo de esos dispositivos. Para más información sobre el borrado selectivo en Intune, vea [Protect apps and data with Microsoft Intune](/intune/Deploy-Use/protect-apps-and-data-with-microsoft-intune.md) (Proteger aplicaciones y datos con Microsoft Intune).
 
 ## Portal de empresa
 
@@ -307,7 +303,7 @@ En este artículo se proporcionan respuestas a algunas de las preguntas más fre
 
 -   **¿Puedo realizar un borrado selectivo de los dispositivos?**
 
-    Si usa System Center 2012 R2 Configuration Manager o una versión posterior con Intune, puede realizar un borrado selectivo de los datos de la empresa. Para más información, vea [Protect apps and data with Microsoft Intune (Proteger aplicaciones y datos con Microsoft Intune)](/intune/Deploy-Use/protect-apps-and-data-with-microsoft-intune.md)..
+    Si usa System Center 2012 R2 Configuration Manager o una versión posterior con Intune, puede realizar un borrado selectivo de los datos de la empresa. Para más información, vea [Protect apps and data with Microsoft Intune](/intune/Deploy-Use/protect-apps-and-data-with-microsoft-intune.md) (Proteger aplicaciones y datos con Microsoft Intune).
 
 -   **Si estoy usando Configuration Manager con Intune, ¿puedo seguir usando el Portal de administración de Intune?**
 
@@ -315,6 +311,6 @@ En este artículo se proporcionan respuestas a algunas de las preguntas más fre
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

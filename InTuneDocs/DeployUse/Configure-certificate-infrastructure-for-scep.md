@@ -1,5 +1,5 @@
 ---
-title: Configurar la infraestructura de certificados para SCEP| Microsoft Intune|
+title: Configurar la infraestructura de certificados para SCEP | Microsoft Intune
 description:
 keywords:
 author: nbigman
@@ -17,7 +17,7 @@ ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: 
+ms.reviewer: kmyrup
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -32,17 +32,17 @@ En este tema se explica qué infraestructura es necesaria para crear e implement
 -  **Entidad de certificación (CA):** también llamada CA emisora, es necesario disponer de una entidad de certificación (CA) empresarial que se ejecute en una edición Enterprise de Windows Server 2008 R2 o posterior. No se admiten CA independientes. Para obtener instrucciones sobre cómo configurar una entidad de certificación, consulte [Instalar la entidad de certificación](http://technet.microsoft.com/library/jj125375.aspx).
     Si la CA ejecuta Windows Server 2008 R2, se debe [instalar la revisión de KB2483564](http://support.microsoft.com/kb/2483564/).
 I
--  **Servidor SCEP**: en un servidor con Windows Server 2012 R2 o posterior, debe configurar el Servicio de inscripción de dispositivos de red (SCEP). En Intune no se puede usar el Servicio de inscripción de dispositivos de red cuando se ejecuta en un servidor que también ejecuta la CA empresarial. Consulte [Orientación para el Servicio de inscripción de dispositivos de red](http://technet.microsoft.com/library/hh831498.aspx) para obtener instrucciones sobre cómo configurar Windows Server 2012 R2 para hospedar el Servicio de inscripción de dispositivos de red. El servidor SCEP debe estar unido a dominio al dominio que hospeda la entidad de certificación y no estar en el mismo servidor que ella. Puede encontrar más información sobre cómo implementar el servidor SCEP en un bosque independiente, una red aislada o un dominio interno en [Uso de un módulo de directivas con el servicio de inscripción de dispositivos de red](https://technet.microsoft.com/en-us/library/dn473016.aspx).
+-  **Servidor SCEP:** en un servidor con Windows Server 2012 R2 o posterior, hay que configurar el Servicio de inscripción de dispositivos de red (SCEP). En Intune no se puede usar el Servicio de inscripción de dispositivos de red cuando se ejecuta en un servidor que también ejecuta la CA empresarial. Vea [Orientación para el Servicio de inscripción de dispositivos de red](http://technet.microsoft.com/library/hh831498.aspx) para obtener instrucciones sobre cómo configurar Windows Server 2012 R2 para hospedar el Servicio de inscripción de dispositivos de red. El servidor SCEP debe estar unido a dominio al dominio que hospeda la entidad de certificación y no estar en el mismo servidor que ella. Puede encontrar más información sobre cómo implementar el servidor SCEP en un bosque independiente, una red aislada o un dominio interno en [Uso de un módulo de directivas con el servicio de inscripción de dispositivos de red](https://technet.microsoft.com/en-us/library/dn473016.aspx).
 
 -  **Microsoft Intune Certificate Connector:** la consola de administración de Intune se puede usar para descargar el instalador de **Certificate Connector** (**ndesconnectorssetup.exe**). Después, puede ejecutar **ndesconnectorssetup.exe** en el equipo donde desee instalar el conector de certificado.
--  **Servidor Proxy de aplicación web (opcional)**: puede usar un servidor con Windows Server 2012 R2 o posterior como servidor Proxy de aplicación web (WAP). Esta configuración:
+-  **Servidor Proxy de aplicación web** (opcional): puede usar un servidor con Windows Server 2012 R2 o posterior como servidor Proxy de aplicación web (WAP). Esta configuración:
     -  Permite a los dispositivos recibir certificados mediante una conexión a Internet.
     -  Es una recomendación de seguridad cuando los dispositivos se conectan a través de Internet para recibir y renovar certificados.
 
  > [!NOTE]           
 > -    El servidor que hospeda WAP [debe instalar una actualización](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) que habilite la compatibilidad con las direcciones URL largas que usa el Servicio de inscripción de dispositivos de red. Esta actualización está incluida en el [paquete acumulativo de actualizaciones de diciembre de 2014](http://support.microsoft.com/kb/3013769)o está disponible por separado, en [KB3011135](http://support.microsoft.com/kb/3011135).
 >-  Además, el servidor que hospeda WAP debe tener un certificado SSL que encaje con el nombre que se publica para los clientes externos, así como confiar en el certificado SSL que se usa en el servidor NDES. Estos certificados habilitan al servidor WAP para terminar la conexión SSL entre clientes y crear una nueva conexión SSL hacia el servidor NDES.
-Para obtener más información sobre los certificados de WAP, vea la sección sobre cómo **planear certificados** de [Planeamiento de publicación de aplicaciones mediante el Proxy de aplicación web](https://technet.microsoft.com/library/dn383650.aspx). Para obtener información general sobre los servidores WAP, consulte [Trabajar con el Proxy de aplicación Web](http://technet.microsoft.com/library/dn584113.aspx).|
+Para obtener más información sobre los certificados de WAP, vea la sección sobre cómo **planear certificados** de [Planeamiento de publicación de aplicaciones mediante el Proxy de aplicación web](https://technet.microsoft.com/library/dn383650.aspx). Para obtener información general sobre los servidores WAP, vea [Trabajar con el Proxy de aplicación Web](http://technet.microsoft.com/library/dn584113.aspx).|
 
 ### Requisitos de red
 
@@ -69,15 +69,15 @@ Desde la red perimetral a la red de confianza, permita todos los puertos y proto
 ## <a name="BKMK_ConfigureInfrastructure"></a>Configurar la infraestructura
 Para poder configurar perfiles de certificado debe completar las tareas siguientes, que requieren conocimientos de Windows Server 2012 R2 y Servicios de certificados de Active Directory (ADCS):
 
-**Tarea 1**: crear una cuenta de servicio SCEP
+**Tarea 1:** crear una cuenta de servicio SCEP
 
-**Tarea 2**: configurar plantillas de certificado en la entidad de certificación
+**Tarea 2:** configurar plantillas de certificado en la entidad de certificación
 
-**Tarea 3**: configurar los requisitos previos en el servidor SCEP
+**Tarea 3:** configurar los requisitos previos en el servidor SCEP
 
-**Tarea 4**: configurar SCEP para su uso con Intune
+**Tarea 4:** configurar SCEP para su uso con Intune
 
-**Tarea 5**: habilitar, instalar y configurar Intune Certificate Connector
+**Tarea 5:** habilitar, instalar y configurar Intune Certificate Connector
 
 ### Tarea 1: crear una cuenta de servicio SCEP
 
@@ -256,7 +256,7 @@ En esta tarea tendrá que:
 
     1.  Después de obtener el certificado de autenticación de servidor, abra el **Administrador de IIS**, seleccione el **Sitio web predeterminado** en el panel **Conexiones** y haga clic en **Enlaces** en el panel **Acciones** .
 
-    2.  Haga clic en **Agregar**, establezca **Tipo** en **https**y compruebe que el puerto sea el **443**. (Solo se admite el puerto 443 para Intune independiente.
+    2.  Haga clic en **Agregar**, establezca **Tipo** en **https**y compruebe que el puerto sea el **443**. (Solo se admite el puerto 443 para Intune independiente).
 
     3.  En el caso de **Certificado SSL**, especifique el certificado de autenticación de servidor.
 
@@ -343,9 +343,9 @@ Para validar que el servicio se ejecuta, abra un explorador y escriba la siguien
 **http:// &lt;FQDN_del_servidor_NDES&gt;/certsrv/mscep/mscep.dll**
 
 ## Pasos siguientes
-Ya está listo para configurar perfiles de certificado, como se describe en [Configure certificate profiles (Configurar perfiles de certificado)](Configure-Intune-certificate-profiles.md).
+Ya está listo para configurar perfiles de certificado, como se describe en [Configure certificate profiles](Configure-Intune-certificate-profiles.md) (Configurar perfiles de certificado).
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

@@ -18,7 +18,7 @@ ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [ALIAS]
+#ms.reviewer: esmich
 #ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -35,20 +35,22 @@ Si tiene problemas para establecer un código de acceso que cumpla todos los req
 
 ## Para establecer el código de acceso:
 
-1. Pulse **Settings** > **Touch ID & Passcode**.
-2. En el menú **Touch ID & Passcode**, pulse **Turn Passcode On**.
-3. Escriba un nuevo código de acceso que cumpla los requisitos del administrador de TI y luego vuelva a escribirlo para confirmarlo.
+1. Pulse en **Settings** > **Touch ID & Passcode**.
+2. En el menú **Touch ID & Passcode**, pulse en **Turn Passcode On**.
+3. Escriba un nuevo código de acceso que cumpla los requisitos del administrador de TI y, luego, vuelva a escribirlo para confirmarlo.
 
 ## Para cambiar el código de acceso:
 
-1. Pulse **Settings** > **Touch ID & Passcode**.
+1. Pulse en **Settings** > **Touch ID & Passcode**.
 2. Escriba el código de acceso. Se abre el menú Touch ID & Passcode.
-2. Pulse **Change Passcode** y escriba la contraseña anterior.
-3. Escriba un nuevo código de acceso que cumpla los requisitos del administrador de TI y luego vuelva a escribirlo para confirmarlo.
+2. Pulse en **Change Passcode** y escriba la contraseña anterior.
+3. Escriba un nuevo código de acceso que cumpla los requisitos del administrador de TI y, luego, vuelva a escribirlo para confirmarlo.
+
+Si necesita ayuda y no encuentra la información de contacto del administrador de TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 ### Consulte también
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO1-->
 
 

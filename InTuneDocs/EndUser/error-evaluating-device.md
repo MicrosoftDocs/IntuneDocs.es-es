@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/03/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 81f8a990-d172-47f4-91b4-cb49652accf6
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -29,12 +29,12 @@ ms.suite: ems
 # Error al evaluar el dispositivo
 Se encontró el dispositivo que no es compatible con uno o más de las directivas de su empresa y un error al evaluar el dispositivo para esta condición.
 
-Para solucionar este problema, espere unos minutos y, después, pulse en **Comprobar el cumplimiento normativo**..
+Para solucionar este problema, espere unos minutos y, a continuación, puntee en **comprobar el cumplimiento de normas**.
 
-Si el problema persiste, póngase en contacto con el Administrador de TI.
+Si el problema persiste, póngase en contacto con el Administrador de TI. Si no encuentra la información de contacto del administrador de la TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO1-->
 
 
