@@ -1,11 +1,39 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 0
+ Total Files | 2
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [InTuneDocs\DeployUse\protect-apps-and-data-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e/InTuneDocs/DeployUse/protect-apps-and-data-with-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#9445b4b171eb2102d73cf0e866e85b535274eee2221)
+ [InTuneDocs\DeployUse\restrict-access-to-exchange-onpremises-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e/InTuneDocs/DeployUse/restrict-access-to-exchange-onpremises-with-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#6bc85a0291fa62069ba6a0f63fdd9306db3c4195230)
 
 ## Item Details
+##### <a name='9445b4b171eb2102d73cf0e866e85b535274eee2221'></a> Source: [InTuneDocs\DeployUse\protect-apps-and-data-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e/InTuneDocs/DeployUse/protect-apps-and-data-with-microsoft-intune.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\DeployUse\protect-apps-and-data-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.es-es/blob/45f5e5033295617a6900413482ccba109e0206fc/InTuneDocs/DeployUse/protect-apps-and-data-with-microsoft-intune.md)
+* Handoff File: [protect-apps-and-data-with-microsoft-intune.6ccf429089e2e992c79d2e15ad0cedc79d68fd70.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/fc69f1c077ebab9634a608276d451d24f4ed99cb/ol-handoff/Microsoft/IntuneDocs-pr.es-es/master/protect-apps-and-data-with-microsoft-intune.6ccf429089e2e992c79d2e15ad0cedc79d68fd70.es-es.xlf)
+* Handoff Datetime: 2016-06-09 16:42:11
+* Handoff Reason: Include
+* Archive File: [protect-apps-and-data-with-microsoft-intune.6ccf429089e2e992c79d2e15ad0cedc79d68fd70.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/66e8b8ed518d76fbf36b60c13beb112499b4fa6a/ol-handoff/Microsoft/IntuneDocs-pr.es-es/master/archive/protect-apps-and-data-with-microsoft-intune.6ccf429089e2e992c79d2e15ad0cedc79d68fd70.es-es.xlf)
+* Archive Datetime: 2016-06-16 01:37:05
+* Handback File: [protect-apps-and-data-with-microsoft-intune.6ccf429089e2e992c79d2e15ad0cedc79d68fd70.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/69548d879322d7b0c7cd455502b45bae306f0fce/ol-handback/Microsoft/IntuneDocs-pr.es-es/master/protect-apps-and-data-with-microsoft-intune.6ccf429089e2e992c79d2e15ad0cedc79d68fd70.es-es.xlf)
+* Handback Datetime: 2016-06-16 02:52:03
+* [Back to Top](#report-top)
+
+##### <a name='6bc85a0291fa62069ba6a0f63fdd9306db3c4195230'></a> Source: [InTuneDocs\DeployUse\restrict-access-to-exchange-onpremises-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e/InTuneDocs/DeployUse/restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+* Status: InSyncHandedBackSuccess
+* Target File: [InTuneDocs\DeployUse\restrict-access-to-exchange-onpremises-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.es-es/blob/45f5e5033295617a6900413482ccba109e0206fc/InTuneDocs/DeployUse/restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+* Handoff File: [restrict-access-to-exchange-onpremises-with-microsoft-intune.7099573a7f54421b76cc21103d7869efa6122f94.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/fc69f1c077ebab9634a608276d451d24f4ed99cb/ol-handoff/Microsoft/IntuneDocs-pr.es-es/master/restrict-access-to-exchange-onpremises-with-microsoft-intune.7099573a7f54421b76cc21103d7869efa6122f94.es-es.xlf)
+* Handoff Datetime: 2016-06-09 16:42:11
+* Handoff Reason: Include
+* Archive File: [restrict-access-to-exchange-onpremises-with-microsoft-intune.7099573a7f54421b76cc21103d7869efa6122f94.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/66e8b8ed518d76fbf36b60c13beb112499b4fa6a/ol-handoff/Microsoft/IntuneDocs-pr.es-es/master/archive/restrict-access-to-exchange-onpremises-with-microsoft-intune.7099573a7f54421b76cc21103d7869efa6122f94.es-es.xlf)
+* Archive Datetime: 2016-06-16 01:37:05
+* Handback File: [restrict-access-to-exchange-onpremises-with-microsoft-intune.7099573a7f54421b76cc21103d7869efa6122f94.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/69548d879322d7b0c7cd455502b45bae306f0fce/ol-handback/Microsoft/IntuneDocs-pr.es-es/master/restrict-access-to-exchange-onpremises-with-microsoft-intune.7099573a7f54421b76cc21103d7869efa6122f94.es-es.xlf)
+* Handback Datetime: 2016-06-16 02:52:03
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
