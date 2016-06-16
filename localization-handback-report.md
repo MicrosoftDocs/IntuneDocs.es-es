@@ -1,39 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 2
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/2023d7bc1d35b423a216ece195cdca9a6a542446/InTuneDocs/DeployUse/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md) | InSyncHandedBackSuccess | [Details](#f6b3a573cd8c2ed4aa97d09aa284e4d7f2c8ba6019)
- [InTuneDocs\EndUser\company-portal-frequently-asked-questions.md](https://github.com/Microsoft/IntuneDocs-pr/blob/f83a539e9bec5207d7c1c682942b4bb6797d616c/InTuneDocs/EndUser/company-portal-frequently-asked-questions.md) | InSyncHandedBackSuccess | [Details](#56edeafa9221b3574ceaba269891dfb92df44408275)
 
 ## Item Details
-##### <a name='f6b3a573cd8c2ed4aa97d09aa284e4d7f2c8ba6019'></a> Source: [InTuneDocs\DeployUse\configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/2023d7bc1d35b423a216ece195cdca9a6a542446/InTuneDocs/DeployUse/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\DeployUse\configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.es-es/blob/451dbe2ee1ff8148650f6cc11a25759d3f29b071/InTuneDocs/DeployUse/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md)
-* Handoff File: [configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.7edc8305bb4c8fe1d8a774930953e715c1539721.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/7108ed4a965d2f51526ffd927a243b4ae28ddb58/ol-handoff/Microsoft/IntuneDocs-pr.es-es/master/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.7edc8305bb4c8fe1d8a774930953e715c1539721.es-es.xlf)
-* Handoff Datetime: 2016-06-07 16:41:24
-* Handoff Reason: Include
-* Archive File: [configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.7edc8305bb4c8fe1d8a774930953e715c1539721.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/cb216e026de3eff8b6961778c0fab631897dd765/ol-handoff/Microsoft/IntuneDocs-pr.es-es/master/archive/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.7edc8305bb4c8fe1d8a774930953e715c1539721.es-es.xlf)
-* Archive Datetime: 2016-06-09 02:05:57
-* Handback File: [configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.7edc8305bb4c8fe1d8a774930953e715c1539721.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/d9f6afc3b37ab380d93434d2ae228a7d755c1be1/ol-handback/Microsoft/IntuneDocs-pr.es-es/master/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.7edc8305bb4c8fe1d8a774930953e715c1539721.es-es.xlf)
-* Handback Datetime: 2016-06-16 14:13:23
-* [Back to Top](#report-top)
-
-##### <a name='56edeafa9221b3574ceaba269891dfb92df44408275'></a> Source: [InTuneDocs\EndUser\company-portal-frequently-asked-questions.md](https://github.com/Microsoft/IntuneDocs-pr/blob/f83a539e9bec5207d7c1c682942b4bb6797d616c/InTuneDocs/EndUser/company-portal-frequently-asked-questions.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\EndUser\company-portal-frequently-asked-questions.md](https://github.com/Microsoft/IntuneDocs-pr.es-es/blob/451dbe2ee1ff8148650f6cc11a25759d3f29b071/InTuneDocs/EndUser/company-portal-frequently-asked-questions.md)
-* Handoff File: [company-portal-frequently-asked-questions.a0cccd1144edcb53b5151aa39ba6b918d5c64ed2.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/71924cbc3822a45363872f8fc11e416a6ee6557f/ol-handoff/Microsoft/IntuneDocs-pr.es-es/master/company-portal-frequently-asked-questions.a0cccd1144edcb53b5151aa39ba6b918d5c64ed2.es-es.xlf)
-* Handoff Datetime: 2016-06-09 00:40:12
-* Handoff Reason: Include
-* Archive File: [company-portal-frequently-asked-questions.a0cccd1144edcb53b5151aa39ba6b918d5c64ed2.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/cb216e026de3eff8b6961778c0fab631897dd765/ol-handoff/Microsoft/IntuneDocs-pr.es-es/master/archive/company-portal-frequently-asked-questions.a0cccd1144edcb53b5151aa39ba6b918d5c64ed2.es-es.xlf)
-* Archive Datetime: 2016-06-09 02:05:57
-* Handback File: [company-portal-frequently-asked-questions.a0cccd1144edcb53b5151aa39ba6b918d5c64ed2.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/d9f6afc3b37ab380d93434d2ae228a7d755c1be1/ol-handback/Microsoft/IntuneDocs-pr.es-es/master/company-portal-frequently-asked-questions.a0cccd1144edcb53b5151aa39ba6b918d5c64ed2.es-es.xlf)
-* Handback Datetime: 2016-06-16 14:13:23
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
