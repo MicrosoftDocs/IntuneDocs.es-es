@@ -48,9 +48,11 @@ El Portal de empresa es una aplicación que se instala en el dispositivo Android
 
 Para inscribir el dispositivo en Intune y obtener acceso a los datos y recursos de la compañía o centro educativo, vea [Enroll your device in Intune](enroll-your-device-in-Intune-android.md) (Inscripción del dispositivo en Intune).
 
+¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+
 ### Consulte también
 [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

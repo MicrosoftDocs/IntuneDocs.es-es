@@ -83,7 +83,6 @@ Obtenga más información sobre [DEP](ios-device-enrollment-program-in-microsoft
 
 ### USB-SA
 Inscripción con el Asistente para la configuración, conectados por USB. El administrador crea una directiva de Intune y la exporta a Apple Configurator. Los dispositivos conectados por USB se preparan con directiva de Intune. El administrador debe inscribir manualmente cada dispositivo. Los usuarios reciben sus dispositivos y ejecutan el Asistente para la configuración, con lo que inscriben el dispositivo. Este método admite el modo **iOS supervisado**, que a su vez permite lo siguiente:
-  - Inscripción bloqueada
   - Acceso condicional
   - Detección de jailbreak
   - Administración de aplicaciones móviles
@@ -112,6 +111,6 @@ Especifica si el dispositivo puede bloquearse para impedir que el usuario quite 
 ([Volver a la tabla](#overview-of corporate-owned-device-enrollment-methods)) ([Volver a la tabla](#overview-of corporate-owned-device-enrollment-methods))
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO3-->
 
 

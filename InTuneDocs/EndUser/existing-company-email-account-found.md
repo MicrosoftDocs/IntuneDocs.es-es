@@ -36,10 +36,10 @@ Ya tiene una cuenta de correo electrónico de empresa. Para continuar para conec
 
 3.  Espere un momento para la nueva configuración de correo electrónico que se aplicará automáticamente a su dispositivo.
 
-Si la nueva configuración de correo electrónico no aparece después de un tiempo, póngase en contacto con su administrador de TI. Si no encuentra la información de contacto del administrador de la TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+Si la nueva configuración de correo electrónico no aparece después de un tiempo, póngase en contacto con su administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

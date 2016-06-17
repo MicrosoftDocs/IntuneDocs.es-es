@@ -46,11 +46,11 @@ Si tiene problemas para establecer un código de acceso que cumpla todos los req
 2. Pulse en **Change Passcode** y escriba la contraseña anterior.
 3. Escriba un nuevo código de acceso que cumpla los requisitos del administrador de TI y, luego, vuelva a escribirlo para confirmarlo.
 
-Si necesita ayuda y no encuentra la información de contacto del administrador de TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 ### Consulte también
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

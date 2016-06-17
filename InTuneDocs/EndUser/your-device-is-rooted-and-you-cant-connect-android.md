@@ -30,11 +30,11 @@ ms.suite: ems
 
 Cuando el dispositivo Android se ha modificado, significa que el dispositivo se ha cambiado para habilitar determinadas funciones que podrían poner en peligro la seguridad y los recursos de empresa. Cuando el dispositivo se ha modificado, no es posible acceder a los recursos de la compañía y debe ponerse en contacto con el administrador de TI para que le ayude a volver a conectarse a los recursos de la empresa.
 
-Si necesita ayuda y no encuentra la información de contacto del administrador de TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 ### Consulte también
 [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

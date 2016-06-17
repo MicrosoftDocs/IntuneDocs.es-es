@@ -36,11 +36,11 @@ Si el administrador de TI ha configurado una aplicación de VPN para que pueda c
 
 3.  Pulse en **Pulse para instalar el perfil de VPN corporativo** y siga las indicaciones para aceptar y activar la aplicación.
 
-Si necesita ayuda y no encuentra la información de contacto del administrador de TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 ### Consulte también
 [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

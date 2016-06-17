@@ -35,10 +35,10 @@ Si tiene un dispositivo de escritorio, siga estas instrucciones para cifrarlo.
 
 2.  Haga clic en **Activar BitLocker** y siga las instrucciones que se indican para cifrar cada una de las unidades.
 
-Si necesita ayuda y no encuentra la información de contacto del administrador de TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

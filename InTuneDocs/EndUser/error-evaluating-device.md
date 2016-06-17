@@ -31,10 +31,10 @@ Se encontró el dispositivo que no es compatible con uno o más de las directiva
 
 Para solucionar este problema, espere unos minutos y, a continuación, puntee en **comprobar el cumplimiento de normas**.
 
-Si el problema persiste, póngase en contacto con el Administrador de TI. Si no encuentra la información de contacto del administrador de la TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+Si el problema persiste, póngase en contacto con el Administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

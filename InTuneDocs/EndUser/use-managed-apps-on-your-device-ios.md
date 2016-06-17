@@ -64,23 +64,12 @@ Estos son algunos ejemplos de opciones que puede administrar el administrador de
 
 -   Requisitos de cifrado de datos
 
-Estas son algunas de las aplicaciones comunes que puede administrar el departamento de TI:
 
--   Explorador web administrado
-
--   Visor de imágenes administrado
-
--   Visor PDF administrado
-
--   Reproductor de AV administrado
-
--   Microsoft Word, Excel, PowerPoint
-
-Para obtener más información sobre las aplicaciones administradas en el dispositivo, póngase en contacto con el administrador de TI. Si no encuentra la información de contacto del administrador de la TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+Para obtener más información sobre las aplicaciones administradas en el dispositivo, póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 ### Consulte también
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

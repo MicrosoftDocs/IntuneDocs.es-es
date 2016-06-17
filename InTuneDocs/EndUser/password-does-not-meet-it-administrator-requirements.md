@@ -44,8 +44,8 @@ Para obtener información sobre el establecimiento del PIN o la contraseña o so
 - [Establecer o cambiar el código de acceso del dispositivo iOS](set-or-change-your-passcode-ios.md)
 - [Establecer o cambiar la contraseña del dispositivo Windows](set-or-change-your-password-windows.md)
 
-Si no sabe cómo hacer que la contraseña cumpla los requisitos, póngase en contacto con el administrador de TI. Si no encuentra la información de contacto del administrador de la TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+Si no sabe cómo hacer que la contraseña cumpla los requisitos, póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

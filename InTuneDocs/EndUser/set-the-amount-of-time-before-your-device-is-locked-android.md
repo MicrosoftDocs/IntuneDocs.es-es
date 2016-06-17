@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 05/10/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -34,14 +34,12 @@ Para proteger los datos del dispositivo Android, el Administrador de TI puede es
 
 2.  Especifique el valor de tiempo de espera de la contraseña.
 
-3.  Asegúrese de que el dispositivo esté inscrito en Intune siguiendo las instrucciones que se indican en [Enroll your device in Intune](enroll-your-device-in-Intune-android.md) (Inscripción del dispositivo en Intune).
-
-Si necesita ayuda y no encuentra la información de contacto del administrador de TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 ### Consulte también
 [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -45,11 +45,11 @@ Para restablecer el dispositivo mediante el sitio web del Portal de empresa, sig
 
 2.  Pulse **Restablecer** &gt; **Restablecer**.
 > [!NOTE]
-> Si no puede restablecer el dispositivo perdido o robado, pida al administrador de TI que lo haga. Si no encuentra la información de contacto del administrador de la TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+> Si no puede restablecer el dispositivo perdido o robado, pida al administrador de TI que lo haga. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 ### Consulte también
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

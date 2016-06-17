@@ -36,8 +36,8 @@ Para volver a conectar con su trabajo, deberá establecer el tiempo de espera de
 
 3.  Asegúrese de que el dispositivo esté inscrito en Intune. Para ello, siga las instrucciones que se indican en [Enroll your device to use it at work](http://go.microsoft.com/fwlink/?LinkId=519071) (Inscribir el dispositivo para usarlo en el trabajo).
 
-Si necesita ayuda y no encuentra la información de contacto del administrador de TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
