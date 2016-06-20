@@ -784,6 +784,9 @@
   "adc83b19e793491b1c6ea0fd8b46cd9f32e592fc": [
     "InTuneDocs\\TOC.md"
   ],
+  "a6cb77b441c7c44f33c0353232409f8d7b2daa6a": [
+    "InTuneDocs\\Troubleshoot\\how-to-get-support-for-microsoft-intune.md"
+  ],
   "cd18e85bd76b92acf76d6f2210244503c6189e33": [
     "InTuneDocs\\Troubleshoot\\how-to-get-support-for-microsoft-intune.md"
   ],
@@ -834,9 +837,6 @@
   ],
   "86552240b86f4a86f918e3ebef3b55ecddb1829c": [
     "InTuneDocs\\Understand\\common-ways-to-use-intune.md"
-  ],
-  "2b146d33d60b7cab2b05fc43a6318fc2c477d621": [
-    "InTuneDocs\\Understand\\frequently-asked-questions-for-microsoft-intune.md"
   ],
   "da9db0b3961cbbd53fc2b7aa7704fa31c8c78718": [
     "InTuneDocs\\Understand\\introduction-to-microsoft-intune.md"
