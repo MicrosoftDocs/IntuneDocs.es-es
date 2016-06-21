@@ -31,7 +31,7 @@ Use la configuración de directiva indicada en este tema para configurar las opc
 
 ## Configuración general de directivas
 
-Use la **directiva de configuración general** de Microsoft Intune para Windows 10 para configurar las opciones generales de los dispositivos Windows 10 Escritorio y Windows 10 Mobile inscritos:
+Use la **directiva de configuración general** de Microsoft Intune para Windows 10 para configurar las opciones generales de los dispositivos Windows 10 Escritorio y Windows 10 Mobile inscritos. Esta directiva no se puede usar para administrar equipos con Windows 10 con el software cliente de Intune.
 
 
 ### Contraseña
@@ -332,6 +332,6 @@ Todos los dispositivos deben estar inscritos con Intune si quiere usar la direct
 
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
