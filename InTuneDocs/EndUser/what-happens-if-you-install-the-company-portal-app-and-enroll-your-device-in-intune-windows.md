@@ -125,12 +125,12 @@ Cuando agrega un equipo:
 
 -   El administrador de TI puede aplicar directivas en el equipo. Por ejemplo, se le podría exigir establecer una contraseña o un PIN en el equipo, lo que podría impedir el acceso al equipo o eliminar todos los datos del disco duro del equipo tras varios intentos incorrectos de introducir la contraseña.
 
-Si tiene alguna pregunta y no encuentra la información de contacto del administrador de TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 ### Consulte también
 [Usar un dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

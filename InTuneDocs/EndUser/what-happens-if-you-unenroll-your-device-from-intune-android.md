@@ -44,11 +44,11 @@ Si el dispositivo está configurado solo para recibir correo electrónico de emp
 
 Para obtener instrucciones sobre cómo anular la inscripción, vea [Anular la inscripción del dispositivo de Intune mediante la aplicación Portal de empresa](unenroll-your-device-from-intune-android.md).
 
-Si tiene alguna pregunta y no encuentra la información de contacto del administrador de TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 ### Consulte también
 [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
