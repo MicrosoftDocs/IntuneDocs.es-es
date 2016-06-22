@@ -53,7 +53,7 @@ Los pasos siguientes le ayudarán a establecer una directiva de configuración d
 
 4.  En la lista de directivas, expanda la plataforma para la que quiere crear una directiva y seleccione **Configuración general** > **Crear e implementar una directiva con la configuración recomendada** > **Crear directiva**.
 
-5.  Cuando se le pida que **Seleccione los grupos para los que quiera implementar esta directiva**, seleccione **Usuarios de Intune** (el grupo creado durante el paso anterior) en la lista de grupos disponibles y luego **Agregar** > **Aceptar**.
+5.  Cuando se le pida que **Seleccione los grupos para los que desea implementar esta directiva**, elija un grupo de la lista de grupos disponibles y, luego, **Agregar** > **Aceptar**.
 
 La directiva aparece en la lista de directivas de configuración y se implementa en el grupo **Usuarios de Intune**. Haga doble clic en la directiva para ver su configuración.
 
@@ -114,6 +114,6 @@ Enhorabuena. Acaba de completar el paso 6 de la *Guía de inicio rápido de Intu
 >[&larr; **Organizar usuarios y dispositivos**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)      [**Personalizar el portal de empresa** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-7.md)  
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO3-->
 
 

@@ -4,7 +4,7 @@
 title: Planear los grupos de usuarios y dispositivos | Microsoft Intune
 description:
 keywords:
-author: SanchuSa
+author: nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
@@ -40,7 +40,7 @@ Los grupos de Intune ofrecen una gran flexibilidad para administrar los disposit
 
 La vista predeterminada del nodo Grupos de la consola de administración de Intune es:
 
-![Captura de pantalla de la vista predeterminada del nodo Grupos de la consola de Intune](/intune/media/Group-planning/Intune_Planning_Groups_Default_small.png)
+![Captura de pantalla de la vista predeterminada del nodo Grupos de la consola de Intune](/intune/media/Intune_Planning_Groups_Default_small.png)
 
 Las directivas se implementan en grupos, por lo que la jerarquía de grupo es una de las consideraciones de diseño clave. También es importante saber que el grupo primario de un grupo no se puede cambiar una vez creado el grupo, por lo que el diseño de los grupos es sumamente importante desde el momento que se empieza a usar el servicio Intune. Aquí se describen algunas de las prácticas recomendadas para diseñar una jerarquía de grupo según sus necesidades organizativas.
 
@@ -92,7 +92,7 @@ Las directivas se implementan en grupos, por lo que la jerarquía de grupo es un
 
     * El grupo **Usuarios de portátil** es miembro del grupo de seguridad **Usuarios aprobados** .
 
-    * Se crea un grupo en Intune que usa una consulta de pertenencia dinámica que incluye a los miembros del grupo **Usuarios aprobados**. El resultado es que su grupo de usuarios de Intune incluye a **Nuria**..
+    * Se crea un grupo en Intune que usa una consulta de pertenencia dinámica que incluye a los miembros del grupo **Usuarios aprobados**. El resultado es que su grupo de usuarios de Intune incluye a **Nuria**.
 
 > [!TIP]
 > Al crear los grupos, tenga en cuenta cómo se aplicará la directiva. Por ejemplo, puede tener directivas específicas para sistemas operativos de dispositivos y directivas específicas para diferentes roles de la organización o para las unidades organizativas que ha definido en Active Directory. Algunos usuarios consideran útil disponer de grupos de dispositivos específicos de iOS, Android y Windows, así como de grupos de usuarios para cada rol organizativo.
@@ -131,22 +131,22 @@ Si la organización permite a los empleados usar sus propios dispositivos en el 
 
 En el caso de BYOD o una combinación de ambos, asegúrese de planear directivas que no infrinjan los reglamentos de privacidad locales. Cree un grupo primario para todos los usuarios que traerán sus propios dispositivos. Este grupo se podrá usar para aplicar las directivas aplicables a todos los usuarios de esta categoría.
 
-![Captura de pantalla de creación de un grupo primario de BYOD](/intune/media/Group-planning/Intune_Planning_Groups_BYOD_small.png)
+![Captura de pantalla de creación de un grupo primario de BYOD](/intune/media/Intune_Planning_Groups_BYOD_small.png)
 
 De forma similar, puede crear un grupo para los usuarios de dispositivos corporativos de la organización:
 
-![Captura de pantalla de grupos de usuarios del mismo nivel para BYOD y dispositivos corporativos](/intune/media/Group-planning/Intune_Planning_Groups_BYOD_Hierachy_View_small.png)
+![Captura de pantalla de grupos de usuarios del mismo nivel para BYOD y dispositivos corporativos](/intune/media/Intune_Planning_Groups_BYOD_Hierachy_View_small.png)
 
 <!---START HERE--->
 
 ### Grupos de regiones geográficas
 Si la organización necesita directivas para regiones específicas, puede crear grupos basados en la región geográfica. Se pueden basar en grupos regionales que ya pueda haber creado en Active Directory (AD) y sincronizarlos con Azure AD. También puede crearlos directamente en Azure AD.
 
-Estas capturas de pantalla muestran cómo crear grupos de Intune basados en grupos sincronizados desde AD local. En este ejemplo se supone que tiene un grupo de seguridad de AD denominado **US Users Group**.
+Estas capturas de pantalla muestran cómo crear grupos de Intune basados en grupos sincronizados desde AD local. En este ejemplo se supone que tiene un grupo de seguridad de AD denominado **Grupo de usuarios de EE. UU.**.
 
 1. En primer lugar, proporcione la información general.
 
-    ![Captura de pantalla del área Editar grupo](/intune/media/PlanDesign/Group-planning/Intune_Planning_Groups_AD_General_small.png)
+![Captura de pantalla del área Editar grupo](/intune/media/Intune_Planning_Groups_AD_General_small.png)
 
 En Criterios de pertenencia, seleccione **US Users Group**, sincronizado desde AD, como el grupo de seguridad para usar en Reglas de pertenencia.
 
@@ -158,8 +158,7 @@ Revise el contenido y seleccione **Finalizar** para terminar de crear el grupo.
 
 En nuestro ejemplo, también hemos creado un grupo de Oriente medio y Asia, MEA.
 
-> [!NOTE]
-> Si la pertenencia al grupo no se rellena según la pertenencia a grupos de seguridad, compruebe que licencias de Intune estén asignadas a esos miembros.
+> [!NOTE] Si la pertenencia al grupo no se rellena según la pertenencia a grupos de seguridad, compruebe que tiene licencias de Intune asignadas a esos miembros.
 
 ### Grupos de hardware específico
 Si la organización necesita directivas aplicables a tipos de hardware concretos, puede crear grupos basados en este requisito. Se pueden basar en grupos específicos que ya haya creado en AD local y sincronizarlos con Azure AD. También puede crearlos directamente en Azure AD. En este ejemplo, usamos el **Grupo de usuarios de EE. UU.** como grupo primario del grupo **Usuarios de equipos portátiles**.
@@ -168,15 +167,14 @@ Si la organización necesita directivas aplicables a tipos de hardware concretos
 
 En este punto, la jerarquía de grupos debe aparecer como se muestra a continuación. Como puede ver, ahora hay miembros en el grupo **Usuarios de equipos portátiles** de Intune. Las directivas que se apliquen a este grupo se aplicarán ahora a los usuarios de equipos portátiles BYOD de la región de EE. UU.
 
-![Presentación del grupo de usuarios de equipos portátiles](/intune/media/Group-planning/Intune_Planning_Groups_Laptop_Hierarchy_small.png)
+![Presentación del grupo de usuarios de equipos portátiles](/intune/media/Intune_Planning_Groups_Laptop_Hierarchy_small.png)
 
 ### Grupos de sistemas operativos específicos
 Si la organización necesita directivas aplicables a sistemas operativos concretos, como Android, iOS o Windows, puede crear grupos basados en este requisito. Como en los ejemplos anteriores, se pueden basar en grupos específicos de SO que ya haya creado en AD local y sincronizarlos con Azure AD. También puede crearlos directamente en Azure AD.
 
-Con el mismo método de los ejemplos anteriores, se pueden crear grupos basados en usuarios <!--devices?--> que usen plataformas de sistema operativo específicas.
+Con el mismo método de los ejemplos anteriores, se pueden crear grupos basados en usuarios <!--devices?--> mediante plataformas específicas de sistema operativo.
 
-> [!NOTE]
-> Si tiene usuarios que usan varios sistemas operativos y plataformas móviles y no tiene una forma automatizada para clasificar a los usuarios como usuarios de Android, iOS o Windows, considere la posibilidad de aplicar directivas en el nivel de dispositivo, lo que le proporcionará una mayor flexibilidad a la hora de aplicar directivas específicas del sistema operativo.
+> [!NOTE] Si tiene usuarios que usan varios sistemas operativos y plataformas móviles y no tiene una forma automatizada para clasificar a los usuarios como usuarios de Android, iOS o Windows, considere la posibilidad de aplicar directivas en el nivel de dispositivo, lo que le proporcionará una mayor flexibilidad a la hora de aplicar directivas específicas del sistema operativo.
 >
 > No puede aprovisionar grupos de manera dinámica basándose en el sistema operativo del dispositivo. Hágalo mediante los grupos de seguridad de AD o AAD.
 
@@ -208,8 +206,7 @@ Siga creando grupos de dispositivos, hasta que tenga una jerarquía de grupos de
 ## Convenciones de nomenclatura y jerarquías de grupo
 Para facilitar la administración de directivas, se recomienda asignar un nombre a cada directiva según el ámbito de aplicación, la plataforma y el propósito. Este estándar de nomenclatura debe seguir la estructura del grupo que haya creado en la preparación para aplicar las directivas.
 
-Por ejemplo, para una directiva de Android que se aplica a todos los dispositivos corporativos, a Android y a móviles en el nivel regional de Estados Unidos, la directiva puede denominarse
-**CO_US_Mob_Android_General**.
+Por ejemplo, para una directiva de Android que se aplica a todos los dispositivos corporativos, a Android y a móviles en el nivel regional de Estados Unidos, la directiva puede denominarse **CO_US_Mob_Android_General**.
 
 ![Crear directiva para Android](/intune/media/Intune_planning_policy_android_small.png)
 
@@ -221,6 +218,6 @@ Este método de asignación de nombres a las directivas permite identificar ráp
 [Crear grupos](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO3-->
 
 
