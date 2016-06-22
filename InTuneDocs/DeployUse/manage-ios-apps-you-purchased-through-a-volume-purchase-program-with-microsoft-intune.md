@@ -18,7 +18,7 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -46,28 +46,29 @@ Antes de empezar, es necesario obtener un token de PCV de Apple y cargarlo en la
 * De forma predeterminada, Intune se sincroniza con el servicio PCV de Apple dos veces al día. Sin embargo, se puede iniciar una sincronización manual en cualquier momento.
 * Después de importar el token de PCV en Intune, no importe el mismo token en ninguna otra solución de administración de dispositivos. Si lo hace, podría perder la asignación de licencias y los registros de usuario.
 * Antes de comenzar a usar el PCV de iOS con Intune, quite todas las cuentas de usuario de PCV existentes creadas con otros proveedores de MDM. Intune no sincronizará esas cuentas de usuario en Intune como medida de seguridad. Intune solo sincronizará los datos del servicio PCV de Apple que se creó mediante Intune. 
+* No puede implementar aplicaciones de PCV de iOS en dispositivos que se han inscrito con el protocolo de inscripción de dispositivos (DEP).
 
 ## Para obtener y cargar un token de PCV de Apple
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), haga clic en **Administración** &gt; **iOS y Mac OS X** &gt; **Programa de compras por volumen**.
+1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), elija **Administración** &gt; **iOS y Mac OS X** &gt; **Programa de compras por volumen**.
 
-2.  Haga clic en el vínculo **Cuenta de PCV de Apple** y, si no lo hizo todavía, regístrese en el Programa de Compras por Volumen para empresas. Una vez que se registre, descargue el token de PCV de Apple para la cuenta.
+2.  Elija el vínculo **Cuenta de PCV de Apple** y, si no lo ha hecho todavía, regístrese en el Programa de Compras por Volumen para empresas. Una vez que se registre, descargue el token de PCV de Apple para la cuenta.
 
-3.  En la página **Administrar el Programa de Compras por Volumen (PCV) de Apple** de la consola de Intune, haga clic en **Cargar el token de PCV**.
+3.  En la página **Administrar el Programa de Compras por Volumen (PCV) de Apple** de la consola de Intune, elija **Cargar el token de PCV**.
 
-4.  En el cuadro de diálogo **Cargar el token de PCV**, escriba o pegue el nombre del token de PCV y su identificador de Apple y, después, haga clic en **Cargar**.
+4.  En el cuadro de diálogo **Cargar el token de PCV**, escriba o pegue el nombre del token de PCV y su id. de Apple y, después, elija **Cargar**.
 
-5.  En el cuadro de diálogo de advertencia, active la casilla para indicar que comprende que no puede cambiar a otra cuenta de PCV más adelante y haga clic en **Sí**.
+5.  En el cuadro de diálogo de advertencia, active la casilla para indicar que comprende que no puede cambiar a otra cuenta de PCV más adelante y elija **Sí**.
 
 En la página **Programa de Compras por Volumen**, ahora puede ver información sobre el token de PCV de Apple, que incluye la fecha de la última actualización, la fecha de expiración y la fecha de la última sincronización con Intune.
 
-Puede sincronizar los datos que tiene Apple con Intune en cualquier momento haciendo clic en **Sincronizar ahora**.
+Puede sincronizar los datos que tiene Apple con Intune en cualquier momento al elegir **Sincronizar ahora**.
 
 ## Para implementar una aplicación comprada por volumen
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), haga clic en **Aplicaciones** &gt; **Software administrado** &gt; **Aplicaciones compradas por volumen**. En esta lista se muestran todas las aplicaciones que se han sincronizado desde el servicio PCV de Apple.
+1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), elija **Aplicaciones** &gt; **Software administrado** &gt; **Aplicaciones compradas por volumen**. En esta lista se muestran todas las aplicaciones que se han sincronizado desde el servicio PCV de Apple.
 
-2.  Cierre la aplicación que quiera implementar, haga clic en **Administrar implementación** y siga las instrucciones del tema [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) (Implementar aplicaciones en Microsoft Intune) para completar la carga, la creación y la implementación de la aplicación.
+2.  Cierre la aplicación que quiera implementar, elija **Administrar implementación** y siga las instrucciones del tema [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) (Implementar aplicaciones en Microsoft Intune) para completar la carga, la creación y la implementación de la aplicación.
 
 Al implementar la aplicación como una instalación **Requerida**, se usa una licencia por cada usuario que instala dicha aplicación.
 
@@ -84,11 +85,11 @@ Puede supervisar qué aplicaciones de PCV están implementadas y el número de l
 
 > [!TIP] También puede usar la aplicación **Filtros** para examinar el estado de la instalación de cada aplicación.
 
-### Véase también
+### Consulte también
 [Deploy apps in Microsoft Intune (Implementar aplicaciones en Microsoft Intune)](deploy-apps-in-microsoft-intune.md)
 
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

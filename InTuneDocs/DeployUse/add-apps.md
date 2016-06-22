@@ -18,7 +18,7 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -29,11 +29,11 @@ ms.suite: ems
 Antes de empezar a implementar aplicaciones con Microsoft Intune, dedique algo de tiempo a familiarizarse con los conceptos presentados en este tema. Así, le será más fácil saber qué aplicaciones se pueden implementar en la plataforma, así como conocer los requisitos previos que deben reunirse para poder hacerlo.
 
 ## Tipos de aplicación que se pueden implementar con Intune
-Se pueden implementar aplicaciones en todos los tipos de dispositivo compatibles con Intune. Los procesos y dispositivos compatibles variarán dependiendo del tipo de aplicación que quiera implementar. Use la siguiente tabla para saber qué puede y qué no puede implementarse:
+Se pueden implementar aplicaciones en todos los tipos de dispositivo compatibles con Intune. Los procesos y dispositivos compatibles variarán dependiendo del tipo de aplicación que quiera implementar. Use la siguiente información para saber qué puede y qué no puede implementarse:
 
 
 ### **Windows Installer (&#42;.exe, &#42;.msi)**
-- Este tipo de aplicación debe admitir la instalación silenciosa sin intervención del usuario. La documentación de la aplicación debe incluir las opciones de línea de comandos pertinentes para instalarla de forma silenciosa (por ejemplo, **/q**).).
+- Este tipo de aplicación debe admitir la instalación silenciosa sin intervención del usuario. La documentación de la aplicación debe incluir las opciones de línea de comandos pertinentes para instalarla de forma silenciosa (por ejemplo, **/q**). Puede encontrar una lista de opciones de línea de comandos habituales [aquí](https://support.microsoft.com/en-us/kb/227091).
 - Los archivos y las carpetas adicionales que requiera el programa de instalación de la aplicación deben estar disponibles en la ubicación que se especifique para los archivos de instalación de la aplicación.
 - En la mayoría de los casos, los archivos de Windows Installer (.msi) y de revisión de Windows Installer (.msp) no requieren que Intune instale argumentos de línea de comandos. Consulte la documentación de la aplicación. Si es necesario especificar argumentos de línea de comandos, deben escribirse como pares nombre=valor (como, por ejemplo, TRANSFORMS=custom_transform.mst).
 
@@ -49,17 +49,17 @@ Este tipo de aplicación se carga en el espacio de almacenamiento en nube.
 
 Este tipo de aplicación se carga en el espacio de almacenamiento en nube.
 
-Actualmente, los usuarios finales no pueden instalar aplicaciones corporativas desde la aplicación Portal de empresa de Intune para iOS. Esto es debido a restricciones en las aplicaciones que se publican en el almacén de aplicación de iOS (consulte [instrucciones de revisión de aplicación de tienda](https://developer.apple.com/app-store/review/guidelines/)). Para tener acceso a aplicaciones corporativas (incluidas las aplicaciones administradas del App Store y los paquetes de aplicaciones de línea de negocio), los usuarios pueden iniciar la aplicación Portal de empresa en su dispositivo y pulsar el icono Aplicaciones de la compañía. El explorador se abrirá y los redirigirá al portal web de Intune.
+Actualmente, los usuarios finales no pueden instalar aplicaciones corporativas directamente desde la aplicación Portal de empresa de Intune para iOS. Esto es debido a restricciones en las aplicaciones que se publican en el almacén de aplicación de iOS (consulte [instrucciones de revisión de aplicación de tienda](https://developer.apple.com/app-store/review/guidelines/)). Para tener acceso a aplicaciones corporativas (incluidas las aplicaciones administradas del App Store y los paquetes de aplicaciones de línea de negocio), los usuarios pueden iniciar la aplicación Portal de empresa en su dispositivo y pulsar el icono Aplicaciones de la compañía. El explorador se abrirá y los redirigirá al portal web de Intune.
 
 ### **Paquete de aplicación de Windows Phone (&#42;.xap, .appx, .appxbundle)**
-- Para implementar aplicaciones, necesitará un certificado de firma de código móvil de empresa. Pata obtener detalles, vea [Configurar la administración de Windows Phone con Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md)..
+- Para implementar aplicaciones, necesitará un certificado de firma de código móvil de empresa. Pata obtener detalles, vea [Configurar la administración de Windows Phone con Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md).
 
 Este tipo de aplicación se carga en el espacio de almacenamiento en nube.
 
 A continuación encontrará información sobre cómo instalar aplicaciones de línea de negocio de la Plataforma universal de Windows (UWP) con Intune.
 
 ### **Paquete de aplicación de Windows (.appx, .appxbundle)**
-- Para implementar aplicaciones, necesitará un certificado de firma de código móvil de empresa. Pata obtener detalles, vea [Configurar la administración de dispositivos Windows con Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md)..
+- Para implementar aplicaciones, necesitará un certificado de firma de código móvil de empresa. Pata obtener detalles, vea [Configurar la administración de dispositivos Windows con Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md).
 
 Este tipo de aplicación se carga en el espacio de almacenamiento en nube.
 ### **Windows Installer a través de MDM (&#42;.msi)**
@@ -81,11 +81,10 @@ Se usa cuando se tiene:
 Las aplicaciones basadas en vínculos externos no se almacenan en el espacio de almacenamiento en nube de Intune.
 ### **Aplicación iOS administrada desde la tienda de aplicaciones**
 Permite administrar e implementar aplicaciones iOS gratuitas desde la tienda de aplicaciones. También permite asociar [directivas de administración de aplicaciones móviles](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) a [aplicaciones compatibles](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) y revisar su estado en la consola del administrador.<br /><br />Las aplicaciones iOS administradas no se almacenan en el espacio de almacenamiento en nube de Intune.
-> [!TIP]
-> Las opciones para dispositivos móviles no estarán disponibles hasta que [establezca la entidad de administración de dispositivos móviles](get-ready-to-enroll-devices-in-microsoft-intune.md) en Intune.
+> [!TIP] Las opciones para dispositivos móviles no estarán disponibles hasta que [establezca la entidad de administración de dispositivos móviles](get-ready-to-enroll-devices-in-microsoft-intune.md) en Intune.
 
 ## Compatibilidad de las aplicaciones de la Plataforma universal de Windows (UWP)
-Los dispositivos de Windows 10 no necesitan una clave de instalación de prueba para instalar las aplicaciones de línea de negocio. Pero la clave del Registro **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** debe tener un valor de **1** para habilitar la instalación de prueba.
+Los equipos con Windows 10 no necesitan una clave de instalación de prueba para instalar las aplicaciones de línea de negocio. Pero la clave del Registro **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** debe tener un valor de **1** para habilitar la instalación de prueba.
 
 Si esta clave del Registro no está configurada, Intune establecerá automáticamente este valor en **1** la primera vez que implemente una aplicación en el dispositivo. Si estableció este valor en **0**, Intune no podrá cambiarlo automáticamente y se producirá un error en la implementación de las aplicaciones de línea de negocio.
 
@@ -95,8 +94,8 @@ En los dispositivos Windows 10 Mobile, puede usar un certificado de firma de có
 
 ## Pasos siguientes 
 
-El siguiente paso será agregar aplicaciones en la consola de Intune para, luego, poder implementarlas. Puede agregar aplicaciones para [dispositivos inscritos](add-apps-for-mobile-devices-in-microsoft-intune.md) o para [PC Windows que se administren con el software cliente de Intune](add-apps-for-windows-pcs-in-microsoft-intune.md)..
+El siguiente paso será agregar aplicaciones en la consola de Intune para, luego, poder implementarlas. Puede agregar aplicaciones para [dispositivos inscritos](add-apps-for-mobile-devices-in-microsoft-intune.md) o para [PC Windows que se administren con el software cliente de Intune](add-apps-for-windows-pcs-in-microsoft-intune.md).
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

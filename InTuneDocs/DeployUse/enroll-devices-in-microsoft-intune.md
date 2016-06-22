@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Inscribir dispositivos en Microsoft Intune | Microsoft Intune
+title: Inscribir dispositivos | Microsoft Intune
 description:
 keywords:
 author: NathBarn
@@ -18,7 +18,7 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -27,6 +27,12 @@ ms.suite: ems
 
 # Inscribir dispositivos para administrarlos en Intune
 La administración de dispositivos móviles (MDM) de Microsoft Intune hace uso de la inscripción para incluir dispositivos en la administración y permitir el acceso a los recursos. La forma en que los dispositivos se inscriben depende del tipo de dispositivo, de la propiedad de los mismos y del nivel de administración necesario. En los escenarios "Bring Your Own Device" (BYOD) y de dispositivos propiedad de la empresa se necesita un proceso de inscripción. Las organizaciones con Exchange ActiveSync (ya sea local u hospedado en la nube) permiten una administración más fluida, sin requisitos de inscripción. Los PC Windows también se pueden administrar con el software cliente de Intune.
+
+###  Plataformas de dispositivos compatibles
+
+Intune puede administrar las siguientes plataformas de dispositivo:
+
+[!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
 ## Permitir la inscripción de dispositivos  
  Con la inscripción, los usuarios pueden tener acceso a los recursos empresariales en sus dispositivos personales y el administrador puede asegurarse de que dichos dispositivos cumplen las directivas que protegen esos recursos. Se trata de la mejor manera de dar cabida a escenarios de tipo "Bring Your Own Device" con Intune. El administrador debe habilitar la inscripción en la consola de Intune, lo que podría conllevar la creación de una relación de confianza con el dispositivo y la asignación de licencias a los usuarios. Tras ello, el dispositivo se inscribe, cosa que los usuarios realizan normalmente especificando sus credenciales profesionales o educativas. Después, el dispositivo recibe la directiva de Intune y obtiene acceso a los recursos.
@@ -58,6 +64,6 @@ Los equipos administrados con el software cliente de Intune no se pueden borrar 
 [Administrar equipos Windows con Intune](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

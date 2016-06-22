@@ -1,25 +1,25 @@
 ---
 # required metadata
 
-title: [Proteger aplicaciones y datos de línea de negocio en dispositivos no inscritos | Microsoft Intune]
+title: Proteger aplicaciones y datos de línea de negocio en dispositivos no inscritos | Microsoft Intune
 description:
 keywords:
-author: [karthikaraman]
-manager: [jeffgilb]
+author: karthikaraman
+manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod:
 ms.service:
 ms.technology:
-ms.assetid: [00219467-a62e-43b6-954b-3084f54c45ba]
+ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 
 # optional metadata
 
 #ROBOTS:
 #audience:
 #ms.devlang:
-#ms.reviewer: [joglocke]
-#ms.suite: ems
+ms.reviewer: joglocke
+ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
@@ -52,6 +52,11 @@ Para asociar la aplicación de línea de negocio a las directivas MAM, debe agre
 
 ## Paso 3: aplicar directivas MAM
 Una vez que los metadatos de la aplicación se han cargado en el servicio, la aplicación se mostrará en la lista de aplicaciones.  Ya puede [crear una nueva directiva o una directiva existente](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) y aplicarla a la aplicación de línea de negocio que agregó en el paso 2.
+
+>[!IMPORTANT]
+>Debe dirigir la directiva de MAM a los usuarios que van a usar la aplicación ajustada.  Los usuarios que no tengan esta directiva implementada no podrán usar la aplicación.
+
+
   ![Captura de pantalla de la hoja Aplicaciones de destino con la nueva aplicación de línea de negocio](../media/mam-azure-portal-lob-on-targeted-app-list.png)
 ## Paso 4: distribuir la aplicación
 Puede implementar aplicaciones para los usuarios finales de las maneras siguientes:
@@ -75,6 +80,6 @@ Puede quitar una aplicación de línea de negocio de la lista de aplicaciones.  
   Esto quitará las aplicaciones de la lista de aplicaciones de línea de negocio y de la lista Aplicaciones de destino de la directiva MAM.
 
 
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO2-->
 
 

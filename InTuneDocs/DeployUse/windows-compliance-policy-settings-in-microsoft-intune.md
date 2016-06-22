@@ -18,7 +18,7 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -39,46 +39,34 @@ La configuración que se indica en esta sección se admite en Windows Phone 8.1 
 
 ## Configuración de seguridad del sistema
 ### Contraseña
-- **Requerir una contraseña para desbloquear dispositivos móviles:** establezca esta opción en **Sí** para exigir que los usuarios escriban una contraseña antes de
-  tener acceso a sus dispositivos.
+- **Requerir una contraseña para desbloquear dispositivos móviles:** establezca esta opción en **Sí** para exigir que los usuarios escriban una contraseña antes de poder tener acceso a sus dispositivos.
 
-- **Permitir contraseñas sencillas:** establezca esta opción
-   en **Sí** para permitir a los usuarios crear contraseñas sencillas
-   como "**1234**" o "**1111**".
+- **Permitir contraseñas sencillas:** establezca esta opción en **Sí** para permitir a los usuarios crear contraseñas sencillas como "**1234**" o "**1111**".
 
--  **Longitud mínima de la contraseña:**
-  especifique el número mínimo de dígitos o caracteres que
-  debe contener la contraseña del usuario.
-- **Tipo de contraseña requerida:** especifique si los usuarios deben crear
-una contraseña **Alfanumérica** o **Numérica**.
+-  **Longitud mínima de la contraseña:** especifique el número mínimo de dígitos o caracteres que debe contener la contraseña del usuario.
+- **Tipo de contraseña obligatoria:** Especifique si los usuarios deben crear una contraseña **Alfanumérica** o **Numérica**.
 
   En los dispositivos a los que se obtiene acceso con una cuenta de Microsoft y que ejecutan Windows, la directiva de cumplimiento no podrá evaluarse correctamente si la longitud mínima de la contraseña es superior a 8 caracteres o si el número mínimo de conjuntos de caracteres es superior a 2.
 
-- **Número mínimo de conjuntos de caracteres:** si establece **Tipo de contraseña requerida** en
-**Alfanumérica**, esta opción especifica el número mínimo de
-conjuntos de caracteres que debe contener la contraseña. Los conjuntos de cuatro caracteres son los siguientes:
+- **Número mínimo de conjuntos de caracteres:** si la opción **Tipo de contraseña requerida** está establecida en **Alfanumérica**, esta configuración especifica el número mínimo de caracteres que debe contener la contraseña. Los conjuntos de cuatro caracteres son los siguientes:
   -   Letras minúsculas
   -   Letras mayúsculas
   -   Símbolos
   -   Números
 
   Si se establece un número superior para este valor de configuración, los usuarios deberán crear contraseñas más complejas. En los dispositivos a los que se obtiene acceso con una cuenta de Microsoft y que ejecutan Windows, la directiva de cumplimiento no podrá evaluarse correctamente si la longitud mínima de la contraseña es superior a 8 caracteres o si el número mínimo de conjuntos de caracteres es superior a 2.
-- **Minutos de inactividad antes de que sea necesaria la contraseña**: especifica el tiempo de inactividad que transcurre antes de que el usuario deba volver a escribir su contraseña.
+- **Minutos de inactividad antes de que se requiera la contraseña:** especifica el tiempo de inactividad que transcurre antes de que el usuario deba volver a escribir su contraseña.
 
-- **Expiración de la contraseña (días):** seleccione el número de días que deben transcurrir para que la contraseña expire
-  y se deba crear otra.
+- **Caducidad de contraseña (días):** seleccione el número de días que faltan para que la contraseña caduque y durante los cuales deben crear una nueva.
 
-- **Recordar historial de contraseñas:** use esta opción junto con **Impedir la reutilización de contraseñas anteriores** para evitar que el usuario
-  cree contraseñas usadas anteriormente.
+- **Recordar historial de contraseñas:** use esta opción junto con **Impedir la reutilización de contraseñas anteriores** para impedir que el usuario cree contraseñas que se han usado anteriormente.
 
-- **Impedir la reutilización de contraseñas anteriores:** si se ha seleccionado **Recordar historial de contraseñas**, especifique el
-  número de contraseñas usadas previamente que no se pueden volver a usar.
+- **Impedir la reutilización de contraseñas anteriores:** si la opción **Recordar historial de contraseñas** está seleccionada, especifique el número de contraseñas usadas previamente que no se pueden volver a usar.
 - **Requerir una contraseña cuando el dispositivo vuelva de un estado de inactividad:** este valor debe usarse junto con el de la opción **Minutos de inactividad antes de que sea necesaria la contraseña**. Se pedirá a los usuarios que escriban una contraseña para acceder a un dispositivo que haya estado inactivo durante el tiempo especificado en la opción **Minutos de inactividad antes de que sea necesaria la contraseña**.
 
   **Esta configuración solo se aplica a dispositivos Windows 10 Mobile.**
 ### Cifrado
-- **Requerir cifrado en el dispositivo móvil:** establezca esta opción en **Sí** para requerir que los dispositivos
-  estén cifrados para poder conectarse a los recursos.
+- **Requerir cifrado en el dispositivo móvil:** establezca esta opción en **Sí** para requerir que el dispositivo esté cifrado para poder conectarse a los recursos.
 
 ## Configuración de estado del dispositivo
 - **Requerir que se informe del mantenimiento correcto de los dispositivos:** puede establecer una regla para requerir que se informe del mantenimiento correcto de los dispositivos con **Windows 10 Mobile** en las directivas de cumplimiento nuevas o existentes.  Si se habilita esta opción de configuración, se evaluarán los puntos de datos siguientes de los dispositivos con Windows 10 a través del servicio de atestación de estado (HAS):
@@ -86,14 +74,12 @@ conjuntos de caracteres que debe contener la contraseña. Los conjuntos de cuatr
   -  **Code integrity is enabled** (La integridad de código está habilitada): la integridad de código es una característica que valida la integridad de un archivo del sistema o controlador cada vez que se carga en la memoria. Integridad de código detecta si se está cargando un archivo del sistema o controlador sin firmar en el kernel, o si software malintencionado que se ejecuta mediante una cuenta de usuario con privilegios de administrador ha modificado un archivo del sistema.
   - **Secure Boot is enabled** (El arranque seguro está habilitado): si el arranque seguro está habilitado, el sistema debe arrancar en un estado de confianza de fábrica. Además, si el arranque seguro está habilitado, los componentes principales que se usan para arrancar el equipo deben tener las firmas de cifrado correctas que son de confianza para la organización que fabricó el dispositivo. El firmware UEFI lo comprueba antes de permitir iniciar el equipo. Si los archivos se han manipulado e interrumpido su firma, el sistema no arrancará.
 
-  Para obtener información sobre cómo funciona el servicio HAS, consulte [HealthAttestation CSP](https://msdn.microsoft.com/library/dn934876.aspx) (CSP de HealthAttestation)..
+  Para obtener información sobre cómo funciona el servicio HAS, consulte [HealthAttestation CSP](https://msdn.microsoft.com/library/dn934876.aspx).
 ##  Configuración de propiedades de dispositivo
-- **Minimum OS required** (Versión mínima de sistema operativo): cuando un dispositivo no cumple el requisito de versión mínima
-    del sistema operativo, se notifica como no conforme.
+- **SO mínimo requerido:** cuando un dispositivo no cumpla el requisito de versión de SO mínima, se notificará como no compatible.
     Además, se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario final puede optar por actualizar el dispositivo, tras lo cual podrá tener acceso a los recursos de la empresa.
 
-- **Maximum OS version allowed** (Versión máxima de sistema operativo permitida): cuando un dispositivo usa una
-    versión de SO posterior a la especificada en la regla, se bloquea el acceso a los recursos de la empresa y se solicita al usuario que se ponga en contacto con el administrador de TI. Mientras no se cambie la regla para permitir la versión de SO, este dispositivo no podrá usarse para acceder a los recursos de la empresa.
+- **Versión de SO máxima permitida:** cuando un dispositivo usa una versión de SO posterior a la especificada en la regla, se bloquea el acceso a los recursos de la empresa y se solicita al usuario que se ponga en contacto con el administrador de TI. Mientras no se cambie la regla para permitir la versión de SO, este dispositivo no podrá usarse para acceder a los recursos de la empresa.
 
 
 ## Configuración de directivas de cumplimiento para equipos Windows
@@ -140,7 +126,7 @@ Puede establecer una regla para requerir que se informe del mantenimiento correc
   - **Secure Boot is enabled** (El arranque seguro está habilitado): si el arranque seguro está habilitado, el sistema debe arrancar en un estado de confianza de fábrica. Además, si el arranque seguro está habilitado, los componentes principales que se usan para arrancar el equipo deben tener las firmas de cifrado correctas que son de confianza para la organización que fabricó el dispositivo. El firmware UEFI lo comprueba antes de permitir iniciar el equipo. Si los archivos se han manipulado e interrumpido su firma, el sistema no arrancará.
   - **Early-launch antimalware is enabled** (El antimalware de inicio temprano está habilitado): el antimalware de inicio temprano (ELAM) proporciona protección para los equipos de la red cuando se inician y antes de que se inicialicen los controladores de terceros.
 
-  Para obtener información sobre cómo funciona el servicio HAS, consulte [HealthAttestation CSP](https://msdn.microsoft.com/library/dn934876.aspx) (CSP de HealthAttestation)..
+  Para obtener información sobre cómo funciona el servicio HAS, consulte [HealthAttestation CSP](https://msdn.microsoft.com/library/dn934876.aspx).
 
 ## Configuración de propiedades de dispositivo
 - **Minimum OS required:** (Versión mínima de sistema operativo): se admite en Windows 8.1 y Windows 10.
@@ -159,6 +145,6 @@ Para buscar la versión de sistema operativo que se usará para las opciones **M
 > ![CA_Win10OSVersion](./media/ca_win10-os-version.png)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

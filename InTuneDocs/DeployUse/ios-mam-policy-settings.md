@@ -18,7 +18,7 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: andcerat
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,13 +28,12 @@ ms.suite: ems
 #  Configuración de directiva de administración de aplicaciones móviles iOS
 La configuración de directiva que se describe a continuación puede [configurarse](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) para una directiva MAM en la hoja **Configuración** del portal de Azure.
 
-Existen dos categorías de configuración de directivas: Reubicación de datos y Acceso.
+Las dos categorías de configuración de directiva que hay son Reubicación de datos y Acceso:
 
-##  Configuración de la reubicación de datos
-El término **Aplicaciones administradas por directivas** se usa para referirse a las aplicaciones que están configuradas con directivas MAM.
+##  Configuración de reubicación de datos
+El término **aplicaciones administradas por directivas** hace referencia a las aplicaciones que están configuradas con directivas de MAM.
 
-- **Impedir copias de seguridad de iTunes e iCloud:**
-  Elija **Sí** para deshabilitar, o **No** para permitir realizar copias de seguridad de los datos corporativos de aplicaciones administradas por directivas.
+- **Impedir copias de seguridad de iTunes y iCloud:** elija **Sí** para no permitir copias o **No** para permitir que se hagan copias de seguridad de los datos corporativos de las aplicaciones administradas por directivas.
 
   **Valor predeterminado = Sí**
 
@@ -54,16 +53,14 @@ El término **Aplicaciones administradas por directivas** se usa para referirse 
 
   **Valor predeterminado = Todas las aplicaciones**
 
-- **Impedir Guardar como:**
-  Elija **Sí** para deshabilitar el uso de la opción Guardar como en cualquier aplicación que use esta directiva. Elija **No** si desea permitir el uso de Guardar como.
+- **Impedir Guardar como:** elija **Sí** para impedir el uso de la opción Guardar como en cualquier aplicación que use esta directiva. Elija **No** si quiere permitir el uso de Guardar como.
 
   **Valor predeterminado = Sí**
 
-- **Restringir cortar, copiar y pegar con otras aplicaciones:**
-Especifique cuándo se deben restringir las operaciones de cortar, copiar y pegar. Elija de entre las siguientes opciones:
+- **Restringir cortar, copiar y pegar con otras aplicaciones:** especifique en qué casos las operaciones de cortar, copiar y pegar deben estar restringidas. Elija de entre las siguientes opciones:
   -   **Bloqueado:** no permite las operaciones de cortar, copiar y pegar entre aplicaciones administradas por directivas.
-  -   **Aplicaciones administradas por directivas**: solo permite las operaciones de cortar, copiar y pegar entre aplicaciones administradas por directivas.
-  -   **Aplicaciones administradas por directivas con pegar**: permite el corte o la copia de datos entre aplicaciones administradas por directivas. Permite que los datos cortados o copiados desde cualquier aplicación se peguen en esta aplicación.
+  -   **Aplicaciones administradas por directivas:** las operaciones de cortar, copiar y pegar solo se permiten entre aplicaciones administradas por directivas.
+  -   **Aplicaciones administradas por directivas con pegar:** permite cortar o copiar datos entre aplicaciones administradas por directivas. Permite que los datos cortados o copiados desde cualquier aplicación se peguen en esta aplicación.
   - **Cualquier aplicación**: no se aplican restricciones a las operaciones de cortar, copiar y pegar entre cualesquiera aplicaciones.
 
   **Valor predeterminado = Aplicaciones administradas por directivas con pegar**
@@ -72,11 +69,11 @@ Especifique cuándo se deben restringir las operaciones de cortar, copiar y pega
 
   En el caso de los dispositivos que no están inscritos en Intune, los vínculos web en aplicaciones administradas por directivas solo se pueden abrir en la aplicación Managed Browser mediante la directiva de administración de aplicaciones móviles.
 
-  Si usa Intune para administrar sus dispositivos, consulte [Administrar el acceso a Internet mediante directivas de explorador administrado con Microsoft Intune](manage-internet-access-using-managed-browser-policies.md)..
+  Si usa Intune para administrar los dispositivos, vea [Administrar el acceso a Internet mediante directivas de explorador administrado con Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).
 
     **Valor predeterminado = Sí**
 
-- **Cifrar datos de aplicación:** en el caso de aplicaciones que están asociadas a una directiva de administración de aplicaciones móviles de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], los datos se cifran en reposo con el cifrado de nivel de dispositivo proporcionado por el sistema operativo. Cuando se requiere un PIN, los datos se cifran según la configuración de la directiva de administración de aplicaciones móviles. Como se indica en la documentación de Apple, [los módulos usados por iOS 7 están certificados mediante FIPS 140-2](http://support.apple.com/en-us/HT202739)..
+- **Cifrar datos de aplicación:** en el caso de aplicaciones que están asociadas a una directiva de administración de aplicaciones móviles de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], los datos se cifran en reposo con el cifrado de nivel de dispositivo proporcionado por el sistema operativo. Cuando se requiere un PIN, los datos se cifran según la configuración de la directiva de administración de aplicaciones móviles. Como se indica en la documentación de Apple, [los módulos usados por iOS 7 están certificados mediante FIPS 140-2](http://support.apple.com/en-us/HT202739).
 
   En la configuración de directiva, puede especificar valores de cifrado de PIN.  Estos valores determinan cuándo se cifran los datos. Las opciones son:
   - **Cuando el dispositivo esté bloqueado:** todos los datos de la aplicación asociados a esta directiva se cifran mientras el dispositivo está bloqueado.
@@ -88,21 +85,23 @@ Especifique cuándo se deben restringir las operaciones de cortar, copiar y pega
   **Valor predeterminado = La opción de cifrado no está seleccionada**
 - **ContactSyncDisabled:** elija **Sí** para evitar que la información de contacto se sincronice con la aplicación nativa de libreta de direcciones nativa del dispositivo. Si elige **No**, la aplicación guardará la información de contacto en la aplicación nativa de libreta de direcciones del dispositivo.
 
-  Al realizar una eliminación selectiva para quitar datos de la empresa, se quitan los contactos sincronizados directamente desde la aplicación a la libreta de direcciones nativa. No se pueden borrar los contactos de la libreta de direcciones nativa sincronizados con otro origen externo. Actualmente esto se aplica únicamente a **Microsoft Outlook**.
+  Al realizar una eliminación selectiva para quitar datos de la empresa, se quitan los contactos sincronizados directamente desde la aplicación a la libreta de direcciones nativa. No se pueden borrar los contactos de la libreta de direcciones nativa sincronizados con otro origen externo. Actualmente esto es válido únicamente para **Microsoft Outlook**.
 
   **Valor predeterminado = Sí**
 ##  Configuración de directiva de acceso de iOS
-El término **Aplicaciones administradas por directivas** se usa para referirse a las aplicaciones que están configuradas con directivas MAM.
-- **Requerir PIN sencillo para el acceso:** elija **Sí** si quiere exigir un PIN para poder usar aplicaciones administradas por directivas. Se pedirá al usuario que lo configure la primera vez que ejecuta la aplicación en un contexto laboral.
+El término **aplicaciones administradas por directivas** hace referencia a las aplicaciones que están configuradas con directivas de MAM.
+- **Requerir PIN para el acceso:** elija **Sí** si quiere exigir un PIN para poder usar aplicaciones administradas por directivas. Se pedirá al usuario que lo configure la primera vez que ejecuta la aplicación en un contexto laboral.
 
   **Valor predeterminado = Sí**
-- **Número de intentos antes del restablecimiento del PIN:** especifique el número de intentos de entrada de PIN que pueden realizarse antes de que el usuario deba restablecer el PIN.
-
+    -  **Permitir el PIN simple:** especifique si quiere permitir que los usuarios usen secuencias de PIN simples como 1234 o 1111. **Valor predeterminado = Sí**.
+    - **Longitud de PIN:**especifique el número mínimo de dígitos en un PIN. **Valor predeterminado = 4**
+    - **Número de intentos antes del restablecimiento del PIN:** especifique el número de intentos de entrada de PIN que pueden realizarse antes de que el usuario deba restablecer el PIN.
   **No hay ningún valor predeterminado para esta configuración**.
-- **Require fingerprint instead of PIN (iOS 8.0+):** (Requerir huella digital en lugar de PIN [iOS 8.0+]) elija **Sí** para solicitar la identificación mediante huella digital en lugar de un número PIN para el acceso a la aplicación.
+
+  - **Require fingerprint instead of PIN (iOS 8.0+):** (Requerir huella digital en lugar de PIN [iOS 8.0+]) elija **Sí** para solicitar la identificación mediante huella digital en lugar de un número PIN para el acceso a la aplicación.
 En los dispositivos iOS, puede permitir que los usuarios se identifiquen mediante huellas digitales en dispositivos iOS en lugar de mediante un número PIN. Cuando el usuario final intenta obtener acceso a esta aplicación con su cuenta profesional, se le solicitará que indique su identidad mediante huellas digitales en lugar de escribir un número PIN.
 
-  **Valor predeterminado = Sí**
+    **Valor predeterminado = Sí**
 - **Requerir credenciales corporativas para el acceso:** elija **Sí** para solicitar credenciales corporativas en lugar de un PIN para el acceso a la aplicación. **Si se establece en Sí, se reemplazarán los requisitos de introducción de un PIN o un Touch ID.** Se le solicitará al usuario que proporcione sus credenciales corporativas.
 
   **Valor predeterminado = No**
@@ -113,11 +112,11 @@ En los dispositivos iOS, puede permitir que los usuarios se identifiquen mediant
   -   **Período de gracia sin conexión:** si el dispositivo está desconectado, especifique tiempo (en minutos) que debe transcurrir antes de que se vuelvan a comprobar los requisitos de acceso de la aplicación.
 
   **Valor predeterminado = Tiempo de espera de 30 minutos y 720 minutos de período de gracia sin conexión**
-  - **Intervalo sin conexión (días) antes de que se borren los datos de la aplicación:** puede borrar los datos de la compañía si un dispositivo ha estado desconectado durante un período determinado.  Especifique el número de días que un dispositivo puede estar sin conexión antes de que se eliminen los datos de la compañía del dispositivo. **Si introduce un valor de 0 se desactivará esta opción.**.
+  - **Intervalo sin conexión (días) antes de que se borren los datos de la aplicación:** puede borrar los datos de la compañía si un dispositivo ha estado desconectado durante un período determinado.  Especifique el número de días que un dispositivo puede estar sin conexión antes de que se eliminen los datos de la compañía del dispositivo. **Si introduce un valor de 0 se desactivará esta opción**.
 
   **Valor predeterminado = 90 días**
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -18,7 +18,7 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -30,22 +30,25 @@ Las directivas de administración de aplicaciones móviles de Microsoft Intune p
 
 Compatibilidad con las directivas de administración de aplicaciones móviles:
 
--   Dispositivos que ejecutan Android 4 y versiones posteriores.
+-   Dispositivos que ejecutan Android 4 y versiones posteriores.
 
--   Dispositivos que ejecutan iOS 7 y versiones posteriores.
+-   Dispositivos que ejecutan iOS 7 y versiones posteriores.
 
-> [!TIP]
-> Las directivas de administración de aplicaciones móviles admiten dispositivos que están inscritos con Intune.
-> 
-> Si busca información sobre cómo crear directivas de administración de aplicaciones para dispositivos no administrados por Intune, vea [Protect app data using mobile app management policies with Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) (Proteger datos de aplicación mediante directivas de administración de aplicaciones móviles con Microsoft Intune)..
+> [!TIP] Las directivas de administración de aplicaciones móviles admiten dispositivos que están inscritos con Intune.
+>
+> Si busca información sobre cómo crear directivas de administración de aplicaciones para dispositivos no administrados por Intune, vea [Protect app data using mobile app management policies with Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) (Proteger datos de aplicación mediante directivas de administración de aplicaciones móviles con Microsoft Intune).
 
 A diferencia de otras directivas de Intune, las directivas de administración de aplicaciones móviles no se implementan directamente. En su lugar, se asocia la directiva con la aplicación que desea restringir. Cuando la aplicación se implementa e instala en dispositivos, se aplicará la configuración especificada.
 
-Para restringir una aplicación, esta debe incorporar el Kit de desarrollo de software (SDK) para aplicaciones de Microsoft. Existen dos métodos de obtención de este tipo de aplicación:
+Para restringir una aplicación, esta debe incorporar el SDK para aplicaciones de Microsoft Intune. Existen tres métodos de obtención de este tipo de aplicación:
 
--   **Usar una aplicación administrada por directiva**: tiene integrado el SDK de la aplicación. Para agregar este tipo de aplicación, especifique un vínculo a la aplicación desde una tienda de aplicaciones como, por ejemplo, iTunes Store o Google Play. No es necesario ningún procesamiento adicional para este tipo de aplicación. Consulte la lista del tema [Aplicaciones de Microsoft que puede usar con las directivas de administración de aplicaciones móviles de Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)..
+-   **Usar una aplicación administrada por directiva**: tiene integrado el SDK de la aplicación. Para agregar este tipo de aplicación, especifique un vínculo a la aplicación desde una tienda de aplicaciones como, por ejemplo, iTunes Store o Google Play. No es necesario ningún procesamiento adicional para este tipo de aplicación. Consulte la lista del tema [Aplicaciones de Microsoft que puede usar con las directivas de administración de aplicaciones móviles de Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
 
--   **Usar una aplicación "ajustada"**: las aplicaciones se vuelven a empaquetar a fin de incluir el SDK de la aplicación con la **herramienta de ajuste de aplicaciones de Microsoft Intune**. Esta herramienta se usa normalmente para procesar aplicaciones de empresa que se hayan creado internamente. No se puede usar para procesar aplicaciones que se hayan descargado desde la tienda de aplicaciones. Vea [Preparar aplicaciones iOS para la administración de aplicaciones móviles con la herramienta de ajuste de aplicaciones de Microsoft Intune](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) y [Preparar aplicaciones de Android para la administración de aplicaciones móviles con la herramienta de ajuste de aplicaciones de Microsoft Intune](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md)..
+-   **Usar una aplicación "ajustada"**: las aplicaciones se vuelven a empaquetar a fin de incluir el SDK de la aplicación con la **herramienta de ajuste de aplicaciones de Microsoft Intune**. Esta herramienta se usa normalmente para procesar aplicaciones de empresa que se hayan creado internamente. No se puede usar para procesar aplicaciones que se hayan descargado desde la tienda de aplicaciones. Vea [Preparar aplicaciones iOS para la administración de aplicaciones móviles con la herramienta de ajuste de aplicaciones de Microsoft Intune](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) y [Preparar aplicaciones de Android para la administración de aplicaciones móviles con la herramienta de ajuste de aplicaciones de Microsoft Intune](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
+
+- **Escribir su propia aplicación que incorpora el SDK para aplicaciones de Intune**: el SDK para aplicaciones de Intune le permite incorporar características de administración de aplicaciones en una aplicación mientras la está escribiendo. Para obtener más información, vea [Información general del SDK para aplicaciones de Intune](/develop/intune-app-sdk)
+
+Para obtener ayuda para elegir entre la herramienta de ajuste de aplicaciones y el SDK para aplicaciones de Intune, vea [Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles con Microsoft Intune](/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
 
 Algunas aplicaciones administradas, como la aplicación Outlook para iOS y Android admiten **identidades múltiples**. Esto significa que Intune solo aplica la configuración de administración a las cuentas corporativas o los datos de la aplicación.
 
@@ -57,12 +60,11 @@ Por ejemplo, mediante la aplicación de Outlook:
 
 -   La cuenta de trabajo empleada debe ser la misma cuenta que se usó para inscribir el dispositivo con Intune.
 
-> [!TIP]
-> Si usa Intune con Configuration Manager, vea [Cómo controlar aplicaciones mediante directivas de administración de aplicaciones móviles en Configuration Manager](https://technet.microsoft.com/library/mt131414.aspx)..
+> [!TIP] Si usa Intune con Configuration Manager, vea [Cómo controlar aplicaciones mediante directivas de administración de aplicaciones móviles en Configuration Manager](https://technet.microsoft.com/library/mt131414.aspx).
 
 ## Crear e implementar una aplicación con una directiva de administración de aplicaciones móviles
 
--   **Paso 1:** obtenga el vínculo a una aplicación administrada por directivas o cree una aplicación ajustada.
+-   **Paso 1:** obtenga el vínculo a una aplicación administrada por directiva, cree una aplicación ajustada o use el SDK para aplicaciones de Intune para escribir una aplicación habilitada para MAM.
 
 -   **Paso 2:** publique la aplicación en su espacio de almacenamiento en la nube.
 
@@ -72,26 +74,23 @@ Por ejemplo, mediante la aplicación de Outlook:
 
 -   **Paso 5:** supervise la implementación de la aplicación.
 
-## **Paso 1:** obtenga el vínculo a una aplicación administrada por directivas o cree una aplicación ajustada.
+## **Paso 1:** obtenga el vínculo a una aplicación administrada por directiva, cree una aplicación ajustada o use el SDK para aplicaciones de Intune para escribir una aplicación habilitada para MAM.
 
--   **Para obtener un vínculo a una aplicación administrada por directiva**: desde la tienda de aplicaciones, busque y anote la dirección URL de la aplicación administrada por directiva que quiere implementar.
+-   **Para obtener un vínculo a una aplicación administrada por directiva en una tienda de aplicaciones**: desde la tienda de aplicaciones, busque y anote la dirección URL de la aplicación administrada por directiva que quiere implementar.
 
     Por ejemplo, la dirección URL de Microsoft Word para la aplicación de iPad es **https://itunes.apple.com/es/app/microsoft-word-for-ipad/id586447913?mt=8**
 
--   **Para crear una aplicación ajustada:** use la información de los temas [Preparar aplicaciones iOS para la administración de aplicaciones móviles con la herramienta de ajuste de aplicaciones de Microsoft Intune](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) y [Preparar aplicaciones de Android para la administración de aplicaciones móviles con la herramienta de ajuste de aplicaciones de Microsoft Intune](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) para crear una aplicación ajustada.
-
-    La herramienta crea una aplicación procesada que se usará al publicar la aplicación en su espacio de almacenamiento en nube.
 
 ## **Paso 2:** publique la aplicación en su espacio de almacenamiento en la nube
 Cuando se publica una aplicación administrada, los procedimientos difieren en función de si se publica una aplicación administrada por directiva o una aplicación que se procesó mediante la Microsoft Intune App Wrapping Tool para iOS.
 
 #### Para publicar una aplicación administrada por directiva
 
-1.  Cuando esté listo para cargar la aplicación en el espacio de almacenamiento en la nube, siga las instrucciones del tema [Add apps for mobile devices in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md) (Agregar aplicaciones para dispositivos móviles en Microsoft Intune)..
+1.  Cuando esté listo para cargar la aplicación en el espacio de almacenamiento de la nube, siga las instrucciones del tema [Add apps for mobile devices in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md) (Agregar aplicaciones para dispositivos móviles en Microsoft Intune).
 
-2.  En el caso de las aplicaciones iOS, seleccione **Aplicación iOS administrada de la App Store** en **Seleccione cómo debe ponerse a disposición de los dispositivos este software**..
+2.  En el caso de aplicaciones iOS, seleccione **Aplicación iOS administrada de la tienda de aplicaciones**en **Seleccione cómo debe ponerse a disposición de los dispositivos este software**.
 
-    En el caso de las aplicaciones Android, seleccione **Vínculo externo**..
+    En el caso de aplicaciones Android, seleccione **Vínculo externo**.
 
 3.  En **Especificar la dirección URL**, escriba la dirección URL a la aplicación administrada por directiva que anotó anteriormente.
 
@@ -101,11 +100,11 @@ Una vez que haya comprobado que la aplicación se carga correctamente, continúe
 
 #### Para publicar una aplicación procesada con la herramienta de ajuste de aplicaciones de Microsoft Intune
 
-1.  Cuando esté listo para cargar la aplicación en el espacio de almacenamiento en la nube, siga las instrucciones del tema [Add apps for mobile devices in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md) (Agregar aplicaciones para dispositivos móviles en Microsoft Intune)..
+1.  Cuando esté listo para cargar la aplicación en el espacio de almacenamiento de la nube, siga las instrucciones del tema [Add apps for mobile devices in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md) (Agregar aplicaciones para dispositivos móviles en Microsoft Intune).
 
-2.  Seleccione **Instalador de software** en **Seleccione cómo debe ponerse a disposición de los dispositivos este software**..
+2.  Seleccione **Software Installer**en **Seleccione cómo debe ponerse a disposición de los dispositivos este software**.
 
-3.  Seleccione **Paquete de aplicación de iOS (archivo &#42;.ipa)** en **Seleccionar el tipo de archivo instalador de software**..
+3.  Seleccione **Paquete de aplicación de iOS (archivo &#42;.ipa)** en **Tipo de archivo instalador de software**.
 
 Una vez finalizada la carga, verá **Sí** en **Directivas de administración de aplicaciones** en la página **Propiedades del software** de la aplicación cargada.
 
@@ -113,7 +112,7 @@ Una vez que haya comprobado que la aplicación se carga correctamente, continúe
 
 ## **Paso 3:** cree una directiva de administración de aplicaciones móviles
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), haga clic en **Directiva** &gt; **Información general** &gt; **Agregar directiva**..
+1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), elija **Directiva** &gt; **Información general** &gt; **Agregar directiva**.
 
 2.  Configure e implemente uno de las siguientes directivas de **Software** en función del tipo de dispositivo para el que desea configurar aplicaciones:
 
@@ -121,7 +120,7 @@ Una vez que haya comprobado que la aplicación se carga correctamente, continúe
 
     -   **Directiva de administración de aplicaciones móviles (iOS 7 y posterior)**
 
-    Puede usar la configuración recomendada o personalizar la configuración. Para obtener más detalles, vea [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)..
+    Puede usar la configuración recomendada o personalizar la configuración. Para obtener más detalles, vea [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 3.  Configure las siguientes opciones según sea necesario. Las opciones pueden diferir en función del tipo de dispositivo para el que va a configurar la directiva.
 
@@ -141,21 +140,20 @@ Una vez que haya comprobado que la aplicación se carga correctamente, continúe
     |**Requerir cumplimiento de dispositivos con la directiva corporativa en acceso**|Solo permite que se use la aplicación cuando el dispositivo no está liberado ni modificado.|
     |**Volver a comprobar los requisitos de acceso después de (minutos)**|En el campo **Tiempo de espera** , especifique el período de tiempo que debe transcurrir antes de que se vuelvan a comprobar los requisitos de acceso de la aplicación una vez iniciada la aplicación.|
     |**Período de gracia sin conexión**|Si el dispositivo está desconectado, especifique el período de tiempo que debe transcurrir antes de que se vuelvan a comprobar los requisitos de acceso de la aplicación.|
-    |**Cifrar datos de aplicación**|Especifica que se cifren todos los datos asociados a esta aplicación, incluidos los datos almacenados externamente como, por ejemplo, tarjetas SD.<br /><br />**Cifrado para iOS**<br /><br />En el caso de aplicaciones que están asociadas a una directiva de administración de aplicaciones móviles de Intune, los datos se cifran en reposo con el cifrado de nivel de dispositivo proporcionado por el sistema operativo. Esta opción se habilita a través de la directiva de PIN del dispositivo que debe establecer el administrador de TI. Cuando se requiere un PIN, los datos se cifrarán según la configuración de la directiva de administración de aplicaciones móviles. Como se indica en la documentación de Apple, [los módulos usados por iOS 7 están certificados mediante FIPS 140-2](http://support.apple.com/en-us/HT202739)..<br /><br />**Cifrado para Android**<br /><br />En el caso de aplicaciones que están asociadas a una directiva de administración de aplicaciones móviles de Intune, Microsoft proporciona el cifrado. Los datos se cifran de forma sincrónica durante las operaciones de E/S de archivos según la configuración de la directiva de administración de aplicaciones móviles. Las aplicaciones administradas en Android usan el cifrado AES-128 en modo CBC mediante las bibliotecas de criptografía de la plataforma. El método de cifrado no está certificado mediante FIPS 140-2. Siempre se cifrará el contenido del almacenamiento del dispositivo.|
+    |**Cifrar datos de aplicación**|Especifica que se cifren todos los datos asociados a esta aplicación, incluidos los datos almacenados externamente como, por ejemplo, tarjetas SD.<br /><br />**Cifrado para iOS**<br /><br />En el caso de aplicaciones que están asociadas a una directiva de administración de aplicaciones móviles de Intune, los datos se cifran en reposo con el cifrado de nivel de dispositivo proporcionado por el sistema operativo. Esta opción se habilita a través de la directiva de PIN del dispositivo que debe establecer el administrador de TI. Cuando se requiere un PIN, los datos se cifrarán según la configuración de la directiva de administración de aplicaciones móviles. Como se indica en la documentación de Apple, [los módulos usados por iOS 7 están certificados mediante FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Cifrado para Android**<br /><br />En el caso de aplicaciones que están asociadas a una directiva de administración de aplicaciones móviles de Intune, Microsoft proporciona el cifrado. Los datos se cifran de forma sincrónica durante las operaciones de E/S de archivo.  Siempre se cifrará el contenido del almacenamiento del dispositivo. El método de cifrado no está certificado mediante FIPS 140-2.|
     |**Bloquear captura de pantalla** (solo en dispositivos Android)|Especifica que las funciones de captura de pantalla del dispositivo se bloquean cuando se usa esta aplicación.|
 
-4.  Cuando termine, haga clic en **Guardar directiva**..
+4.  Cuando termine, seleccione **Guardar directiva**.
 
 La nueva directiva se muestra en el nodo **Directivas de configuración** del área de trabajo **Directiva** .
 
 ## **Paso 4:** asocie la aplicación a una directiva de administración de aplicaciones móviles e implemente la aplicación.
 Implemente la aplicación, asegurándose de seleccionar la directiva de administración de aplicaciones móviles de la página **Administración de aplicaciones móviles** para asociar la directiva a la aplicación.
 
-Para obtener más detalles, vea [Implementar aplicaciones en dispositivos móviles en Microsoft Intune](deploy-apps.md)..
+Para obtener más detalles, vea [Implementar aplicaciones en Microsoft Intune](deploy-apps.md).
 
-> [!IMPORTANT]
-> En el caso de dispositivos que ejecutan sistemas operativos anteriores a iOS 7.1, las directivas asociadas no se quitarán al desinstalar la aplicación.
-> 
+> [!IMPORTANT] En el caso de dispositivos que ejecutan sistemas operativos anteriores a iOS 7.1, las directivas asociadas no se quitarán al desinstalar la aplicación.
+>
 > Si se anula la inscripción del dispositivo en Intune, no se eliminan las directivas de las aplicaciones; las aplicaciones que tenían directivas aplicadas conservarán la configuración de las directivas, aunque la aplicación se desinstale y reinstale.
 
 ### Qué hacer cuando ya se ha implementado una aplicación en dispositivos
@@ -165,23 +163,22 @@ En este caso, debe pedir al usuario que desinstale manualmente la versión no ad
 
 En cambio, en el caso de los dispositivos que ejecutan iOS 9 y versiones posteriores, Intune pedirá automáticamente al usuario permiso para ocuparse de la administración de la aplicación existente. Si acepta, Intune administrará la aplicación y también se aplicarán las directivas de administración de aplicaciones móviles asociadas a la aplicación.
 
-> [!TIP]
-> Si el dispositivo está en modo de supervisión, Intune se ocupará de la administración de la aplicación existente sin pedir permiso a los usuarios.
+> [!TIP] Si el dispositivo está en modo de supervisión, Intune se ocupará de la administración de la aplicación existente sin pedir permiso a los usuarios.
 
 ## **Paso 5:** supervise la implementación de la aplicación.
 Cuando haya creado e implementado una aplicación asociada a una directiva de administración de aplicaciones móviles, use los procedimientos siguientes para supervisar la aplicación y resuelva los conflictos de directivas.
 
 #### Para ver el estado de la implementación
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), haga clic en **Grupos** &gt; **Información general**..
+1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), elija **Grupos** &gt; **Información general**.
 
 2.  Realice uno de los siguientes pasos:
 
-    -   Haga clic en **Todos los usuarios** y luego haga doble clic en el usuario cuyos dispositivos desea examinar. En la página **Propiedades del usuario**, haga clic en **Dispositivos** y luego haga doble clic en el dispositivo que desea examinar.
+    -   Elija **Todos los usuarios** y luego haga doble clic en el usuario cuyos dispositivos quiera examinar. En la página **Propiedades del usuario**, elija **Dispositivos** y luego haga doble clic en el dispositivo que quiera examinar.
 
-    -   Haga clic en **Todos los dispositivos** &gt; **Todos los dispositivos móviles**. En la página **Propiedades del grupo de dispositivos**, haga clic en **Dispositivos** y luego haga doble clic en el dispositivo que desea examinar.
+    -   Elija **Todos los dispositivos** &gt; **Todos los dispositivos móviles**. En la página **Propiedades del grupo de dispositivos**, elija **Dispositivos** y luego haga doble clic en el dispositivo que quiera examinar.
 
-3.  En la página **Propiedades del dispositivo móvil** , haga clic en **Directiva** para ver una lista de las directivas de administración de aplicaciones móviles que se hayan implementado en el dispositivo.
+3.  En la página **Propiedades del dispositivo móvil** , elija **Directiva** para ver una lista de las directivas de administración de aplicaciones móviles que se hayan implementado en el dispositivo.
 
 4.  Seleccione la directiva de administración de aplicaciones móviles cuyo estado desea ver. Puede ver los detalles de la directiva en el panel inferior y expandir el nodo para mostrar su configuración.
 
@@ -201,9 +198,6 @@ En casos en los que el dispositivo o el usuario recibe dos directivas en conflic
 -   Si todavía no se implementó ninguna directiva para el dispositivo y se implementan dos configuraciones en conflicto, se usa la configuración predeterminada integrada en el dispositivo.
 
 
-
-
-
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

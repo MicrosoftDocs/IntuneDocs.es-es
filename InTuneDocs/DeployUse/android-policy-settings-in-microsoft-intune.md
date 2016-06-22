@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Opciones de configuración de directiva de configuración de Android en Microsoft Intune | Microsoft Intune
+title: Configuración de directivas de configuración de Android y Samsung KNOX | Microsoft Intune
 description:
 keywords:
 author: robstackmsft
@@ -18,14 +18,14 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
 
 ---
 
-# Opciones de configuración de directiva de configuración de Android en Microsoft Intune
+# Configuración de directivas de Android y Samsung KNOX en Microsoft Intune
 
 ## Directiva de configuración general
 
@@ -38,7 +38,7 @@ Use la **directiva de configuración general de Android** de Microsoft Intune pa
 -   **Aplicaciones compatibles y no compatibles**: especifique una lista de las aplicaciones compatibles y no compatibles de su empresa. En los dispositivos iOS y Android, el **informe de aplicaciones no conformes** puede utilizarse para comparar la conformidad de las aplicaciones especificadas en la lista con las aplicaciones que los usuarios han instalado (pero en realidad no pueden impedir la instalación de la aplicación).
 
 > [!TIP]
-> Puede configurar los términos y condiciones de los usuarios para asegurarse de que saben que las aplicaciones de su dispositivo, incluidas las aplicaciones personales, se evaluarán y que las aplicaciones no conformes se bloquearán o se notificarán como no conformes. Los usuarios deben aceptar estos términos y condiciones para poder inscribir su dispositivo y utilizar el portal de empresa para obtener aplicaciones. Para obtener más información sobre cómo usar los términos y condiciones, vea [Configuración de la directiva de términos y condiciones en Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md)..
+> Puede configurar los términos y condiciones de los usuarios para asegurarse de que saben que las aplicaciones de su dispositivo, incluidas las aplicaciones personales, se evaluarán y que las aplicaciones no conformes se bloquearán o se notificarán como no conformes. Los usuarios deben aceptar estos términos y condiciones para poder inscribir su dispositivo y utilizar el portal de empresa para obtener aplicaciones. Para obtener más información sobre cómo usar los términos y condiciones, vea [Configuración de la directiva de términos y condiciones en Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md).
 
 Si el valor que busca no aparece en este tema, puede crearlo mediante una directiva personalizada de Android que le permita usar la configuración de OMA-URI para controlar el dispositivo. Para obtener más información, vea **Opciones de configuración de directiva personalizadas** más adelante en este tema.
 
@@ -107,7 +107,7 @@ Si el valor que busca no aparece en este tema, puede crearlo mediante una direct
 |**Permitir almacenamiento extraíble**|Permite usar un almacenamiento extraíble (como una tarjeta SD) en el dispositivo.|No|Sí|
 |**Permitir Wi-Fi**|Permite usar las capacidades de Wi-Fi del dispositivo.|No|Sí|
 |**Permitir Wi-Fi Tethering**|Permite usar tethering Wi-Fi en el dispositivo.|No|Sí|
-|**Permitir geolocalización**|Permite usar información de ubicación en el dispositivo.|No|Sí|
+|**Permitir geolocalización**|Permite que el dispositivo use información de ubicación.|No|Sí|
 |**Permitir NFC**|Permite operaciones que usan la transmisión de datos en proximidad (si es posible en el dispositivo).|No|Sí|
 |**Permitir Bluetooth**|Permite usar Bluetooth en el dispositivo.|No|Sí|
 |**Permitir desconectar**|Permite al usuario desconectar el dispositivo.<br /><br />Si se deshabilita esta opción, la opción **Número de errores de inicio de sesión repetidos que se permiten antes de que se eliminen los datos del dispositivo** de los dispositivos Samsung KNOX no funciona.|No|Sí|
@@ -138,8 +138,8 @@ En la lista de **aplicaciones compatibles&amp; y no compatibles**, especifique l
 
 |Nombre de la configuración|Detalles|
 |----------------|--------------------|
-|**Notificar la no compatibilidad cuando los usuarios instalan las aplicaciones de la lista**|Enumera las aplicaciones que no se administran mediante Intune y que los usuarios no pueden instalar ni ejecutar.|
-|**No informar de incompatibilidad cuando los usuarios instalan las aplicaciones enumeradas.**|Enumera las aplicaciones que los usuarios pueden instalar. Para mantener la conformidad, los usuarios no deben instalar aplicaciones que no se muestren en la lista. Las aplicaciones que se administran mediante Intune están permitidas automáticamente.|
+|**Notificar la no compatibilidad cuando los usuarios instalan las aplicaciones de la lista**|Enumera las aplicaciones que no se administran mediante Intune y que no quiere que instalen ni ejecuten los usuarios. Si los usuarios instalan una de estas aplicaciones, aparecerá en el informe de aplicaciones no compatibles.|
+|**No informar de incompatibilidad cuando los usuarios instalan las aplicaciones enumeradas.**|Enumera las aplicaciones que quiere permitir en la empresa. Para mantener la conformidad, los usuarios no deben instalar ninguna aplicación que no se muestre en la lista. Las aplicaciones que se administran mediante Intune están permitidas automáticamente.|
 |**Agregar**|Agrega una aplicación a la lista seleccionada. Especifique un nombre de su elección, opcionalmente el editor de la aplicación y la dirección URL de la aplicación en la tienda de aplicaciones.<br /><br />Consulte Cómo especificar las direcciones URL de tiendas de aplicaciones más adelante en este tema para obtener más ayuda.|
 |**Importar aplicaciones**|Importa la lista de las aplicaciones que ha especificado en un archivo de valores separados por comas. Utilice el formato, nombre de la aplicación, editor, dirección URL de la aplicación en el archivo.|
 |**Editar**|Permite editar el nombre, el editor y la dirección URL de la aplicación seleccionada.|
@@ -150,7 +150,7 @@ Especifique la siguiente configuración para los **dispositivos Samsung KNOX**:
 
 |Nombre de la configuración|Detalles|
 |----------------|--------------------|
-|**Seleccione una aplicación administrada que se permitirá ejecutar cuando el dispositivo esté en modo de quiosco**|Haga clic en **Examinar**, seleccione la aplicación administrada, o una aplicación de una tienda, que se permitirá ejecutar cuando el dispositivo esté en modo de pantalla completa. No se podrá ejecutar ninguna otra aplicación en el dispositivo.<br /><br />Consulte Cómo especificar las direcciones URL de tiendas de aplicaciones más adelante en este tema para obtener más ayuda.|
+|**Seleccione una aplicación administrada que se permitirá ejecutar cuando el dispositivo esté en modo de quiosco**|Elija **Examinar**, después seleccione la aplicación administrada que se permitirá ejecutar cuando el dispositivo está en pantalla completa (actualmente no se admiten aplicaciones especificadas como un vínculo a la tienda). No se podrá ejecutar ninguna otra aplicación en el dispositivo.|
 |**Permitir los botones de volumen**|Habilita o deshabilita el uso de los botones de volumen en el dispositivo.|
 |**Permitir el botón de reactivación de suspensión de pantalla**|Habilita o deshabilita el botón de reactivación de la suspensión de pantalla en el dispositivo.|
 
@@ -161,26 +161,25 @@ Utilice el **Informe de aplicaciones no conformes** para ver la conformidad de l
 
 ###### Para ejecutar el informe de aplicaciones no conformes
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), haga clic en **Informes** &gt; **Informe de aplicaciones no compatibles**..
+1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), elija **Informes** &gt; **Informe de aplicaciones no conformes**.
 
-2.  Seleccione los grupos de dispositivos que quiere comprobar, si quiere buscar las aplicaciones compatibles, las no compatibles o ambas y, después, haga clic en **Ver informe**..
+2.  Seleccione los grupos de dispositivos que quiere comprobar, si quiere comprobar las aplicaciones conformes, las aplicaciones no conformes o ambas y, después, elija **Ver informe**.
 
 #### Cómo especificar las direcciones URL de tiendas de aplicaciones
-Para especificar una dirección URL de aplicación en la lista de aplicaciones conformes y no conformes o en la opción **Seleccione una aplicación administrada que se podrá ejecutar cuando el dispositivo esté en modo de pantalla completa** (solo iOS), use el siguiente formato:
+Para especificar una dirección URL de la aplicación en la lista de aplicaciones compatibles y no compatibles, utilice el siguiente formato:
 
 En la [sección Aplicaciones de Google Play](https://play.google.com/store/apps), busque la aplicación que quiere usar.
 
 Abra la página de instalación de la aplicación y copie la dirección URL en el Portapapeles. Ya puede utilizarla como dirección URL en una la lista de aplicaciones conformes o no conformes.
 
-**Ejemplo:** busque Microsoft Office Mobile en Google Play. Usará la dirección URL **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**..
+**Ejemplo:** busque Microsoft Office Mobile en Google Play. Usará la dirección URL **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
 
-## Opciones de configuración de directiva personalizadas
+## Configuración de directivas personalizadas
 Use la **directiva de configuración personalizada de Android** de Microsoft Intune para implementar las opciones de configuración de OMA-URI (identificador uniforme de recursos de Open Mobile Alliance), que sirve para controlar características en dispositivos Android. Se trata de una configuración estándar que muchos fabricantes de dispositivos móviles usan para controlar las características del dispositivo.
 
-Esta capacidad está pensada para que se puedan implementar las opciones de configuración de Android que no se pueden definir con directivas de Intune. Para obtener más información sobre las opciones que se pueden configurar con estas directivas, vea [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)..
+Esta capacidad está pensada para que se puedan implementar las opciones de configuración de Android que no se pueden definir con directivas de Intune.
 
-> [!NOTE]
-> Actualmente, las directivas personalizadas de Android solo admiten la configuración de Wi-Fi para dispositivos Android que incluyen una clave precompartida. Para obtener más información, vea Configurar un perfil de Wi-Fi personalizado con una clave precompartida más adelante en este tema.
+> [!NOTE] Actualmente, las directivas personalizadas de Android solo admiten la configuración de Wi-Fi para dispositivos Android que incluyen una clave precompartida.
 
 ### Configuración general
 
@@ -195,7 +194,7 @@ Esta capacidad está pensada para que se puedan implementar las opciones de conf
     |--------|--------------------|
     |**Nombre de la configuración**|Escriba un nombre único para el valor OMA-URI que le ayude a identificarlo en la lista de valores de configuración.|
     |**Descripción del valor**|Proporcione una descripción que ofrezca una visión general del valor y otra información relevante que le ayude a encontrarlo.|
-    |**Tipo de datos**|Seleccione el tipo de fecha en que especificará este valor OMA-URI. Elija entre las opciones **Cadena, Cadena (XML), Fecha y hora, Entero, Punto flotante** o **Booleano**..|
+    |**Tipo de datos**|Seleccione el tipo de fecha en que especificará este valor OMA-URI. Elija entre las siguientes opciones **Cadena, Cadena (XML), Fecha y hora, Entero, Punto flotante** o **Booleano**.|
     |**OMA-URI (distingue mayúsculas de minúsculas)**|Especifique el OMA-URI para el que desee suministrar un valor.|
     |**Valor**|Especifique el valor asociado con el OMA-URI especificado anteriormente.|
 
@@ -212,7 +211,7 @@ Aunque Intune admite perfiles de Wi-Fi para dispositivos Android, actualmente es
 |----------------|--------------------|
 |**Nombre de la configuración**|Especifique un nombre de su elección para el valor.|
 |**Descripción del valor**|Especifique una descripción para el valor.|
-|**Tipo de datos**|Seleccione **Cadena (XML)**..|
+|**Tipo de datos**|Seleccione **Cadena (XML)**.|
 |**OMA-URI**|Escriba lo siguiente: ./Vendor/MSFT/WiFi/Profile/*&lt;su perfil de Wi-Fi&gt;*/Settings|
 
 3.  Para **Valor**, copie y pegue el siguiente código XML:
@@ -258,6 +257,6 @@ Aunque Intune admite perfiles de Wi-Fi para dispositivos Android, actualmente es
 
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

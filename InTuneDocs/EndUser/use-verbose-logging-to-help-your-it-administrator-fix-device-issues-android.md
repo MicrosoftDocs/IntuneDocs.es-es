@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -32,9 +32,11 @@ Cuando el dispositivo Android esté inscrito en Intune, puede usar la opción **
 
 Para activar o desactivar el **registro detallado**, inicie sesión en la aplicación Portal de empresa con sus credenciales profesionales o educativas, pulse **Configuración** y pulse el botón de encendido/apagado que se encuentra junto a la opción de **registro detallado**.
 
+¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+
 ### Consulte también
 [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 
