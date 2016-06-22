@@ -7841,9 +7841,9 @@
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\GetStarted\mobile-device-management-capabilities-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.es-es/blob/82eb64432c5df5b799673567948fd61c1c4c2074/InTuneDocs/GetStarted/mobile-device-management-capabilities-in-microsoft-intune.md)
-* Current Handback File: [mobile-device-management-capabilities-in-microsoft-intune.a25495f5edd7d0f4c06d5073e0c4e94c5f4b99cc.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/15bb819d8425415d6e3c34b4d5623ac5b0fa128a/ol-handback/Microsoft/IntuneDocs-pr.es-es/master/mobile-device-management-capabilities-in-microsoft-intune.a25495f5edd7d0f4c06d5073e0c4e94c5f4b99cc.es-es.xlf)
-* Current Handback Datetime: 2016-06-10 13:03:16
+* Current Target File: [InTuneDocs\GetStarted\mobile-device-management-capabilities-in-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.es-es/blob/fa4275356f649c082c11b98f2ed4c49a5b8ec329/InTuneDocs/GetStarted/mobile-device-management-capabilities-in-microsoft-intune.md)
+* Current Handback File: [mobile-device-management-capabilities-in-microsoft-intune.a25495f5edd7d0f4c06d5073e0c4e94c5f4b99cc.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/255d38c35f9c64343a6db0b50b0acdcebb6395c7/ol-handback/Microsoft/IntuneDocs-pr.es-es/master/mobile-device-management-capabilities-in-microsoft-intune.a25495f5edd7d0f4c06d5073e0c4e94c5f4b99cc.es-es.xlf)
+* Current Handback Datetime: 2016-06-22 20:23:09
 * [Back to Top](#report-top)
 
 ##### <a name='e104dc52a8a9bdda4b2edb2939d8c7c36e8ecc12519'></a> Source: [InTuneDocs\GetStarted\network-bandwidth-use.md](https://github.com/Microsoft/IntuneDocs-pr/blob/779127bfd39145010f0d9b6609286aaf4dedfdc8/InTuneDocs/GetStarted/network-bandwidth-use.md)
