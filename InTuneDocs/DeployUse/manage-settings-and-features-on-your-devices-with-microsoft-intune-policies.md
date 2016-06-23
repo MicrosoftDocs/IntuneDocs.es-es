@@ -200,9 +200,9 @@ Al eliminar una directiva o quitar un dispositivo de un grupo al que se le aplic
 
 ### ¿Dónde puedo encontrar ayuda para solucionar problemas en las directivas?
 
-Vea [Directivas de solución de problemas en Microsoft Intune](/troubleshoot/troubleshoot-policies-in-microsoft-intune.md).
+Vea [Directivas de solución de problemas en Microsoft Intune](../Troubleshoot/troubleshoot-policies-in-microsoft-intune).
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 

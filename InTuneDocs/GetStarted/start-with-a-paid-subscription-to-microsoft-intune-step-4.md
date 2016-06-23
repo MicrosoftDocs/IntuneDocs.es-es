@@ -28,6 +28,8 @@ ms.suite: ems
 # Administración de licencias de Intune
 Antes de que los usuarios puedan iniciar sesión para usar el servicio de Intune o inscriban sus dispositivos en la administración, primero deben tener una licencia asignada a su suscripción de Intune desde el [portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854). Una vez que haya asignado una licencia, los nombres de los usuarios aparecerán en la consola de administración de Intune. Los usuarios pueden inscribir hasta cinco dispositivos.
 
+Las organizaciones que usan Enterprise Mobility Suite (EMS) de Microsoft pueden tener usuarios que solo necesiten Azure Active Directory Premium o los servicios de Intune en el paquete de EMS. Puede asignar un servicio o un subconjunto de servicios mediante los [cmdlets de PowerShell de Azure Active Directory](https://msdn.microsoft.com/library/jj151815.aspx). Para obtener más información, vea [licencias de Intune administrar con PowerShell](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md).
+
 ## Cómo se asignan las licencias de Intune
 Cuando las cuentas de usuario se sincronizan desde Active Directory local o se agregan manualmente a su suscripción de servicios en la nube a través del [portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), no se les asigna automáticamente una licencia de Intune. En vez de ello, un administrador de inquilinos de Intune deberá editar posteriormente la cuenta de usuario para asignar una licencia al usuario desde el portal de Office 365.
 
@@ -42,7 +44,7 @@ El [portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) se us
 
 1.  Inicie sesión en el [portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) con las credenciales del administrador de inquilinos y, después, seleccione **Contactos** > **Todos los usuarios**.
 
-2.  Seleccione la cuenta de usuario a la que quiere asignar una licencia de usuario de Intune y seleccione **Microsoft Intune** en las propiedades de la cuenta de usuario.
+2.  Seleccione la cuenta de usuario a la que desea asignar una licencia de Intune y, a continuación, seleccione **Microsoft Intune** (independiente) o **Enterprise Mobility Suite**.
 
 3.  Ahora, la cuenta de usuario tiene los permisos necesarios para usar el servicio e inscribir dispositivos en la administración.
 
@@ -93,6 +95,6 @@ Enhorabuena. Acaba de completar el paso 4 de la *Guía de inicio rápido de Intu
 >[&larr; **Sincronizar los usuarios con Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Organizar usuarios y dispositivos** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 
