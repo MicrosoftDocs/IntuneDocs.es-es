@@ -1,27 +1,43 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 1
+ Total Files | 2
 
 ## File List
  Source File | Status | Details 
  ----------- | ------ | ------- 
- [InTuneDocs\DeployUse\create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/3f79de38ce7fc9a5434033ee45ddf43f22517356/InTuneDocs/DeployUse/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) | OutofSyncHandedBackSuccess | [Details](#f1b9216c673039f8600e07508b255e12cc30bf3f29)
+ [InTuneDocs\DeployUse\whats-new-in-microsoft-intune.experimental.md](https://github.com/Microsoft/IntuneDocs-pr/blob/8ec8c952a4d1762dddb15f274367088fea8b9687/InTuneDocs/DeployUse/whats-new-in-microsoft-intune.experimental.md) | OutofSyncHandedBackSuccess | [Details](#ad43197047734eee6d18481a9c6694b6f0b381cf260)
+ [InTuneDocs\EndUser\you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/5cdae8e292cffd9e4c74a6eda9cec23fcba25179/InTuneDocs/EndUser/you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md) | OutofSyncHandedBackSuccess | [Details](#f976240484b79d08f273ac79a79fb911aae06c7a474)
 
 ## Item Details
-##### <a name='f1b9216c673039f8600e07508b255e12cc30bf3f29'></a> Source: [InTuneDocs\DeployUse\create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr/blob/3f79de38ce7fc9a5434033ee45ddf43f22517356/InTuneDocs/DeployUse/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+##### <a name='ad43197047734eee6d18481a9c6694b6f0b381cf260'></a> Source: [InTuneDocs\DeployUse\whats-new-in-microsoft-intune.experimental.md](https://github.com/Microsoft/IntuneDocs-pr/blob/8ec8c952a4d1762dddb15f274367088fea8b9687/InTuneDocs/DeployUse/whats-new-in-microsoft-intune.experimental.md)
 * Status: OutofSyncHandedBackSuccess
 * Target File: 
-* Handoff File: [create-and-deploy-mobile-app-management-policies-with-microsoft-intune.1c3f40f45ddd82bb184d6dd9988ff7087c19b9e3.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/af1703fa7d8f22bb0d6d241f41b5b09d39afc8b2/ol-handoff/Microsoft/IntuneDocs-pr.es-es/master/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.1c3f40f45ddd82bb184d6dd9988ff7087c19b9e3.es-es.xlf)
-* Handoff Datetime: 2016-06-24 14:42:29
+* Handoff File: [whats-new-in-microsoft-intune.experimental.d77a43a101232c802a18c845571c82f5818321f3.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/6df75f79ddf0aae18f1c8f3722790a5b2be6ff75/ol-handoff/Microsoft/IntuneDocs-pr.es-es/master/whats-new-in-microsoft-intune.experimental.d77a43a101232c802a18c845571c82f5818321f3.es-es.xlf)
+* Handoff Datetime: 2016-06-24 18:46:49
 * Handoff Reason: Include
 * Archive File: 
 * Archive Datetime: 0001-01-01 00:00:00
 * Handback File: 
 * Handback Datetime: 0001-01-01 00:00:00
-* Current Target File: [InTuneDocs\DeployUse\create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md](https://github.com/Microsoft/IntuneDocs-pr.es-es/blob/1f6c1e7ac718e054cc4fab583517f330b4032a13/InTuneDocs/DeployUse/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-* Current Handback File: [create-and-deploy-mobile-app-management-policies-with-microsoft-intune.1c3f40f45ddd82bb184d6dd9988ff7087c19b9e3.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/6ba66a8cf9944b14271f1db20ddea082874d36ce/ol-handback/Microsoft/IntuneDocs-pr.es-es/master/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.1c3f40f45ddd82bb184d6dd9988ff7087c19b9e3.es-es.xlf)
-* Current Handback Datetime: 2016-06-22 14:13:01
+* Current Target File: [InTuneDocs\DeployUse\whats-new-in-microsoft-intune.experimental.md](https://github.com/Microsoft/IntuneDocs-pr.es-es/blob/b52ede5b5d018eb93da387b521c59790e5dc6552/InTuneDocs/DeployUse/whats-new-in-microsoft-intune.experimental.md)
+* Current Handback File: [whats-new-in-microsoft-intune.experimental.d77a43a101232c802a18c845571c82f5818321f3.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/d8e7ad4b9cf04b9fbf2e7d6d49e553d14776b48a/ol-handback/Microsoft/IntuneDocs-pr.es-es/master/whats-new-in-microsoft-intune.experimental.d77a43a101232c802a18c845571c82f5818321f3.es-es.xlf)
+* Current Handback Datetime: 2016-06-16 15:16:05
+* [Back to Top](#report-top)
+
+##### <a name='f976240484b79d08f273ac79a79fb911aae06c7a474'></a> Source: [InTuneDocs\EndUser\you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md](https://github.com/Microsoft/IntuneDocs-pr/blob/5cdae8e292cffd9e4c74a6eda9cec23fcba25179/InTuneDocs/EndUser/you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md)
+* Status: OutofSyncHandedBackSuccess
+* Target File: 
+* Handoff File: [you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.6eac219c556cfc7ae7341602a5988dc71415dcee.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/6df75f79ddf0aae18f1c8f3722790a5b2be6ff75/ol-handoff/Microsoft/IntuneDocs-pr.es-es/master/you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.6eac219c556cfc7ae7341602a5988dc71415dcee.es-es.xlf)
+* Handoff Datetime: 2016-06-24 18:46:49
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [InTuneDocs\EndUser\you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md](https://github.com/Microsoft/IntuneDocs-pr.es-es/blob/294777f48f8ecc5cbd1212f4117b956821251a39/InTuneDocs/EndUser/you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md)
+* Current Handback File: [you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.6eac219c556cfc7ae7341602a5988dc71415dcee.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/7e8c43ed6d1adc3e348c479fda8cef322d2eab20/ol-handback/Microsoft/IntuneDocs-pr.es-es/master/you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.6eac219c556cfc7ae7341602a5988dc71415dcee.es-es.xlf)
+* Current Handback Datetime: 2016-06-21 15:37:15
 * [Back to Top](#report-top)
 
 
