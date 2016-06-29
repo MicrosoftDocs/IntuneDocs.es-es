@@ -18,7 +18,7 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -26,7 +26,7 @@ ms.suite: ems
 ---
 
 # Supervisión de directivas de administración de aplicaciones móviles con Microsoft Intune
-Después de configurar una directiva MAM y aplicarla a los usuarios, puede supervisar el estado de cumplimiento en el portal de Azure. El portal de Azure incluye información sobre los usuarios afectados por la directiva, el estado de cumplimiento y cualquier problema que puedan estar experimentando los usuarios finales.
+Después de configurar una directiva de MAM y aplicarla a los usuarios, puede supervisar el estado de cumplimiento en el [portal de Azure](https://portal.azure.com). El portal de Azure incluye información sobre los usuarios afectados por la directiva, el estado de cumplimiento y cualquier problema que puedan estar experimentando los usuarios finales.
 ## Vista Resumen
 La hoja **Administración de aplicaciones móviles de Intune** muestra un resumen del estado de cumplimiento, tal como se describe a continuación:
 
@@ -39,7 +39,7 @@ La hoja **Administración de aplicaciones móviles de Intune** muestra un resume
 
 -   **NINGUNA DIRECTIVA:** número de usuarios que usan las aplicaciones asociadas a la directiva, pero a los que no se les aplica la directiva.  Puede agregar estos usuarios a la directiva.
 
-- **Usuarios marcados:** número de usuarios que experimentan problemas. Actualmente, solo los usuarios con dispositivos descodificados aparecen como **Usuarios marcados**..
+- **Usuarios marcados:** número de usuarios que experimentan problemas. Actualmente, solo los usuarios con dispositivos descodificados aparecen como **Usuarios marcados**.
 
 
 ## Vista detallada
@@ -77,6 +77,6 @@ La vista detallada muestra el mensaje de error, la aplicación usada cuando se p
 [Experiencia del usuario final en aplicaciones habilitadas para MAM](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

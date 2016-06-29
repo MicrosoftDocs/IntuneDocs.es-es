@@ -18,7 +18,7 @@ ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: andcerat
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -48,12 +48,11 @@ Las directivas de administración de aplicaciones móviles (MAM) solo se aplican
 
     ![Captura de pantalla en la que OneDrive pide un PIN](../media/AppManagement/iOS_AppPINPrompt.png)
 
-5.  En cuanto establezca el PIN y confirme, podrá tener acceso a los archivos de **OneDrive para la Empresa**..
+5.  En cuanto establezca el PIN y confirme que es capaz de obtener acceso a los archivos de su **OneDrive para la Empresa**.
 
     ![Captura de pantalla que muestra la ubicación de archivo abierta con la lista de los archivos existentes](../media/AppManagement/iOS_OneDriveSuccess.png)
 
-    > [!NOTE]
-    > Al cambiar una directiva implementada, los cambios se aplicarán la próxima vez que abra la aplicación.
+    > [!NOTE] Al cambiar una directiva implementada, los cambios se aplicarán la próxima vez que abra la aplicación.
 
 ##  Acceso a OneDrive en un dispositivo Android
 
@@ -106,13 +105,13 @@ En este escenario se usa Microsoft Word como ejemplo.
 
     ![Captura de pantalla de una frase escrita en un documento de Word](../media/AppManagement/iOS_WordCreateCompanyDoc.PNG)
 
-5.  Abra el documento que se guardó en su ubicación de trabajo.  Copie el texto, abra su cuenta personal de**Facebook** y pruebe a pegar el texto copiado.  Verá que no puede pegar el contenido en la nueva publicación de Facebook. La opción Pegar no está atenuada, pero no ocurre nada al presionar **Pegar**..
+5.  Abra el documento que se guardó en su ubicación de trabajo.  Copie el texto, abra su cuenta personal de**Facebook** y pruebe a pegar el texto copiado.  Verá que no puede pegar el contenido en la nueva publicación de Facebook. La opción Pegar no está atenuada, pero no ocurre nada al presionar **Pegar**.
 
     ![Captura de pantalla con las opciones para cortar, copiar y pegar](../media/AppManagement/iOS_WordCopyCompany.png)
 
     ![Captura de pantalla que muestra que no se ha pegado nada en la publicación de Facebook](../media/AppManagement/iOS_FacebookPasteCompany.png)
 
-6.  Ahora, repita los pasos 2 y 3 para crear otro documento, escriba la frase que quiera y, en lugar de guardarlo en su ubicación de trabajo, guárdelo en su ubicación personal, como **OneDrive: Personal**..
+6.  Ahora, repita los pasos 2 y 3 para crear otro documento, escriba la frase que quiera y, en lugar de guardarlo en su ubicación de trabajo, guárdelo en su ubicación personal, como **OneDrive: Personal**.
 
     ![Captura de pantalla con las opciones para cortar, copiar y pegar y la frase seleccionada para copiarse](../media/AppManagement/iOS_WordCopyPersonal.png)
 
@@ -134,27 +133,35 @@ En **aplicaciones de OneDrive y Outlook**, solo se puede usar una cuenta profesi
 
 Consulte el siguiente escenario de ejemplo para ahondar aún más en cómo se tratan varias cuentas de usuario.
 
-El usuario A trabaja para dos empresas: la **empresa X** y la **empresa Y**. El usuario A tiene una cuenta profesional en cada empresa y en ambas se usa Intune para implementar directivas de MAM. La **empresa X** implementa directivas de MAM **antes que la ** **empresa Y**. La cuenta asociada a la **empresa X** obtendrá la directiva de MAM, pero no la cuenta asociada a la empresa Y. Si quiere que la cuenta de usuario asociada a la empresa Y se administre por medio de las directivas de MAM, deberá quitar la cuenta de usuario asociada a la empresa X.
+El usuario A trabaja para dos empresas: la **empresa X** y la **empresa Y**. El usuario A tiene una cuenta profesional en cada empresa y en ambas se usa Intune para implementar directivas de MAM. La **empresa X** implementa directivas de MAM **antes** que la **empresa Y**. La cuenta asociada a la **empresa X** obtendrá la directiva de MAM, pero no la cuenta asociada a la empresa Y. Si quiere que la cuenta de usuario asociada a la empresa Y se administre por medio de las directivas de MAM, deberá quitar la cuenta de usuario asociada a la empresa X.
 ### Agregar una segunda cuenta
 #### iOS
-Si usa un dispositivo iOS, puede que aparezca un mensaje de bloqueo si intenta agregar una segunda cuenta profesional en el mismo dispositivo.  También verá una opción para quitar la cuenta existente y agregar una nueva. Para ello, haga clic en **Sí**..
+Si usa un dispositivo iOS, puede que aparezca un mensaje de bloqueo si intenta agregar una segunda cuenta profesional en el mismo dispositivo.  También verá una opción para quitar la cuenta existente y agregar una nueva. Puede hacerlo haciendo clic en **Sí**.
 
 ![Captura de pantalla del cuadro de diálogo con el mensaje de bloqueo y las opciones Sí y No](../media/AppManagement/iOS_SwitchUser.PNG)
 ####  Android
-Si usa un dispositivo Android, puede que aparezca un mensaje de bloqueo con instrucciones para quitar la cuenta existente y agregar una nueva.  Para quitar la cuenta existente en un dispositivo Android, vaya a **Configuración&gt;General&gt;Administrador de aplicaciones&gt;Portal de empresa y seleccione "Borrar datos"**..
+Si usa un dispositivo Android, puede que aparezca un mensaje de bloqueo con instrucciones para quitar la cuenta existente y agregar una nueva.  Para quitar la cuenta existente de un dispositivo Android, vaya a **Configuración &gt;General &gt; Administrador de aplicaciones &gt;Portal de empresa y seleccione "Borrar datos"**.
 
 ![Captura de pantalla del mensajes de error e instrucciones para quitar la cuenta](../media/AppManagement/Android_SwitchUser.png)
 
 ##  Ver archivos multimedia con la aplicación Rights Management sharing
-Para ver archivos de imagen, AV y PDF de la empresa en dispositivos Android, use la [aplicación Microsoft Rights Management sharing (RMS)](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer)..
+Para ver archivos de imagen, AV y PDF de la empresa en dispositivos Android, use la [aplicación Microsoft Rights Management sharing (RMS)](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer).
 
 Descargue esta aplicación de Google Play Store.  Cuando la aplicación esté instalada en el dispositivo, iníciela y autentíquese con sus credenciales de la compañía. Ahora debería ver los archivos protegidos y desprotegidos desde otras aplicaciones administradas mediante directiva.
+
+**Dispositivos Android que no están inscritos en Intune**
+
+Para poder usar la aplicación RMS sharing para ver archivos de otras aplicaciones que se administran mediante Intune, inicie la aplicación RMS y autentíquese con su cuenta profesional.  Cuando inicie sesión, verá el siguiente mensaje **solo si no tiene una licencia de RMS**:
+
+**Autenticación correcta: ahora puede ver archivos corporativos, pero su organización no está configurada para permitirle proteger archivos. Para obtener más información, póngase en contacto con su administrador de TI.**
+
+Esto no impide que use la aplicación RMS sharing para ver los archivos de la empresa. Aún puede abrir y ver los archivos de la empresa desde otras aplicaciones administradas por Intune y las directivas de MAM se seguirán aplicando.  En este mensaje se explica que no podrá agregar las capacidades de protección adicional que proporciona la aplicación RMS sharing.  Debe tener una licencia de RMS para agregar protección a los archivos. Para obtener más información sobre las capacidades de protección de archivos de RMS, vea [Protección de un archivo en un dispositivo](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-in-place) y [Proteger un archivo que se comparte por correo electrónico](https://docs.microsoft.com/en-us/rights-management/rms-client/sharing-app-protect-by-email).
 
 
 ### Consulte también
 [Crear e implementar directivas de administración de aplicaciones móviles con Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

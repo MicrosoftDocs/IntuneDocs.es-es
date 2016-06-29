@@ -79,17 +79,16 @@ Estos son los pasos necesarios para comenzar con la fase de **implementación em
 
 -   Identifique los grupos que puedan necesitar entrenamiento y comunicaciones dirigidas.
 
--   Personalice las comunicaciones por correo y actualice el sitio de la intranet.
-    Identifique el propietario actual para las comunicaciones/actualización de recursos.
+-   Personalice las comunicaciones de correo electrónico, actualice el sitio de intranet e identifique el propietario en curso para la actualización de recursos o comunicaciones.
 
 -   Describa los métodos de entrenamiento que va a usar.
 
 -   Redacte una lista de comprobación inicial y una guía de inscripción para los usuarios.
     Use estas guías de usuario como punto de partida:
-    -  [Inscribir un dispositivo Windows en Intune](/intune/enduser/enroll-your-device-in-intune-windows]
-    -  [Inscribir un dispositivo Android en Intune](/intune/enduser/enroll-your-device-in-intune-android]
-    -  [Inscribir un dispositivo iOS en Intune](/intune/enduser/enroll-your-device-in-intune-ios]
-    -  [Inscribir un dispositivo Mac OS X en Intune](/intune/enduser/enroll-your-device-in-intune-mac-os-x]
+    -  [Inscriba el dispositivo Windows en Intune](/intune/enduser/enroll-your-device-in-intune-windows)
+    -  [Inscriba el dispositivo Android en Intune](/intune/enduser/enroll-your-device-in-intune-android)
+    -  [Inscriba el dispositivo iOS en Intune](/intune/enduser/enroll-your-device-in-intune-ios)
+    -  [Inscribir el dispositivo Mac OS X en Intune](/intune/enduser/enroll-your-device-in-intune-mac-os-x)
 
 -   Defina un proceso para actualizar el material de entrenamiento según sea necesario.
 
@@ -114,6 +113,6 @@ Estos son algunos de los desafíos que puede encontrarse en la fase de **impleme
 [Operaciones y mantenimiento](operations-and-maintenance.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO3-->
 
 

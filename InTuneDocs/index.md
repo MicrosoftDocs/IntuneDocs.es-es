@@ -2,231 +2,249 @@
 asset_id: 3414479e-e548-4753-bcf7-6322b43221fd
 layout: HubPage
 
-title: Microsoft Intune Documentation
-description: Technical documentation for Microsoft Intune - Mobile Device and Application Management
+title: "Documentación de Microsoft Intune"
+description: "Documentación técnica de Microsoft Intune: Administración de dispositivos y aplicaciones móviles"
 keywords: intune documentation, MDM documentation, Mobile Device Management Documentation, Mobile Device and Application Management Documentation
 author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: hubpage
-ms.prod: 
+ms.prod:
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology:
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 
 ---
-# Microsoft Intune Documentation
+# Documentación de Microsoft Intune
 <article id="main">
     <section id="hero-content">
-      <h1>Microsoft Intune Documentation</h1>
-      <h2>Learn how to deploy and manage Microsoft Intune, a mobile device and application management service.</h2>
-      <h3>Manage Intune with Configuration Manager? <a href="https://technet.microsoft.com/en-us/library/mt627883.aspx" target="_blank">View Configuration Manager Documentation &rarr;</a></h3>
+      <h1>Documentación de Microsoft Intune</h1>
+      <h2>Obtenga información sobre cómo implementar y administrar Microsoft Intune, un servicio de administración de dispositivos móviles y aplicaciones.</h2>
+      <h3>¿Quiere administrar Intune con Configuration Manager? <a href="http://go.microsoft.com/fwlink/?LinkId=816854" target="_blank">Ver la documentación de Configuration Manager &rarr;</a></h3>
     </section>
     <section id="featured" class="container">
-      <h2 class="section-heading"><span class="icon icon-warning"></span> Featured Content</h2>
+      <h2 class="section-heading"><span class="icon icon-warning"></span> Contenido destacado</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="/intune/understand-explore/introduction-to-microsoft-intune">Introduction to Microsoft Intune</a></li>
-          <li><a href="/intune/understand-explore/common-ways-to-use-intune">Common scenarios that rely on Intune</a></li>
-          <li><a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">Start with a paid subscription</a></li>
+          <li><a href="/intune/understand-explore/introduction-to-microsoft-intune">Introducción a Microsoft Intune</a></li>
+          <li><a href="/intune/understand-explore/common-ways-to-use-intune">Escenarios habituales que se basan en Intune</a></li>
+          <li><a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">Guía de inicio rápido de Intune</a></li>
         </ul>
         <ul class="column column-half">
-          <li><a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">Overview of device and app lifecycles</a></li>
-          <li><a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">Protect app data</a></li>
-          <li><a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">What to tell your end users about Intune</a></li>
+          <li><a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">Información general sobre los ciclos de vida del dispositivo y la aplicación</a></li>
+          <li><a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">Proteger datos de la aplicación</a></li>
+          <li><a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">Qué decirles a los usuarios finales sobre Intune</a></li>
         </ul>
       </div>
     </section>
-
     <div id="journeys">
       <section class="container">
         <!-- <h2 class="section-heading"><span class="icon icon-inheritance"></span> Stages</h2> -->
         <ul class="journeys-list">
-
           <li class="journey-step">
-
             <header class="journey-step-header row">
               <a href="/intune/understand-explore/introduction-to-microsoft-intune">
                 <div class="title column-third">
                   <span class="step-number">1</span>
-                  <p>Understand &amp; Explore</p>
+                  <p>Conceptos básicos &amp; exploración</p>
                 </div>
-                <p class="description column-two-thirds">Learn the basic concepts and capabilities of Microsoft Intune.
+                <p class="description column-two-thirds">Obtenga información sobre los conceptos básicos y funcionalidades de Microsoft Intune.
                 </p>
               </a>
             </header>
-
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
                   <a href="/intune/understand-explore/introduction-to-microsoft-intune">
-                    <h3>Introduction to Intune</h3>
-                    <p>Learn about how Intune provides device, app, and data management capabilities for mobile devices (iOS devices, Android devices, Windows phones) and Windows PCs.</p>
+                    <h3>Introducción a Intune</h3>
+                    <p>Obtenga información sobre cómo proporciona Intune capacidades de administración de dispositivos, aplicaciones y datos para dispositivos móviles (dispositivos iOS, dispositivos Android, Windows Phone) y PC Windows.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune">
-                    <h3>Intune evaluation guide</h3>
-                    <p>Use the trial guide to walk through the steps to get your trial set up with up to 100 users and devices.</p>
+                    <h3>Guía de evaluación de Intune</h3>
+                    <p>Use la guía de evaluación para seguir los pasos para configurar la versión de evaluación con un máximo de 100 usuarios y dispositivos.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="/intune/understand-explore/common-ways-to-use-intune">
-                    <h3>Common scenarios</h3>
-                    <p>Consider how Intune is commonly used to solve real-world business problems.</p>
+                    <h3>Escenarios frecuentes</h3>
+                    <p>Tenga en cuenta cómo se usa normalmente Intune para resolver problemas empresariales reales.</p>
                   </a>
                 </li>
               </ul>
             </section>
           </li>
-
           <li class="journey-step">
-
             <header class="journey-step-header row">
               <a href="/intune/get-started/what-to-know-before-you-start-microsoft-intune">
                 <div class="title column-third">
                   <span class="step-number">2</span>
-                  <p>Get Started</p>
+                  <p>Introducción</p>
                 </div>
-                <p class="description column-two-thirds">Get your environment set up.
+                <p class="description column-two-thirds">Configure su entorno.
                 </p>
               </a>
             </header>
-
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
                   <a href="/intune/get-started/what-to-know-before-you-start-microsoft-intune">
-                    <h3>What to know before you start</h3>
-                    <p>Quickly familiarize yourself with the baseline requirements for any Intune deployment.</p>
+                    <h3>Información necesaria antes de empezar</h3>
+                    <p>Familiarícese rápidamente con los requisitos básicos para cualquier implementación de Intune.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune">
-                    <h3>Get started with a paid subscription</h3>
-                    <p>Building on the 30-day trial guide, this topic walks you through Azure Active Directory synchronization, domain and DNS considerations, and other Intune customizations.</p>
+                    <h3>Guía de inicio rápido de Intune</h3>
+                    <p>Basándose en la guía de evaluación de 30 días, en este tema se le guiará a través de las consideraciones de sincronización, dominio y DNS de Azure Active Directory y otras personalizaciones de Intune.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="/intune/get-started/rollout-phases-for-microsoft-intune-deployment">
-                    <h3>Rollout phases</h3>
-                    <p>Define your Intune goals, architecture, pilot, and production rollout plans.</p>
+                    <h3>Fases de implementación</h3>
+                    <p>Defina los planes de implementación de producción, piloto, arquitectura y objetivos de Intune.</p>
                   </a>
                 </li>
               </ul>
             </section>
           </li>
-
           <li class="journey-step">
             <header class="journey-step-header row">
               <a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">
                 <div class="title column-third">
                   <span class="step-number">3</span>
-                  <p>Deploy &amp; Use</p>
+                  <p>Implementación &amp; uso</p>
                 </div>
-                <p class="description column-two-thirds">Manage devices, apps, and data with Intune.
+                <p class="description column-two-thirds">Administre dispositivos, aplicaciones y datos con Intune.
                 </p>
               </a>
             </header>
-
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
                   <a href="/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune">
-                    <h3>Overview of device and app lifecycles</h3>
-                    <p>Learn about the typical phases involved with managing devices and apps using Intune.</p>
+                    <h3>Información general sobre los ciclos de vida del dispositivo y la aplicación</h3>
+                    <p>Obtenga información sobre las fases típicas implicadas en la administración de dispositivos y aplicaciones con Intune.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="/intune/deploy-use/enroll-devices-in-microsoft-intune">
-                    <h3>Enroll devices</h3>
-                    <p>Learn the various ways to enroll mobile devices and Windows PCs into management with Intune.</p>
+                    <h3>Inscribir dispositivos</h3>
+                    <p>Obtenga información sobre las diversas formas de inscripción de dispositivos móviles y PC Windows en la administración con Intune.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune">
-                    <h3>What to tell your end users</h3>
-                    <p>Understand the steps your end users need to perform to use their devices with Intune and share this information with end users to help them complete tasks on their own.</p>
+                    <h3>Qué decirles a los usuarios finales</h3>
+                    <p>Comprenda los pasos que tienen que llevar a cabo los usuarios finales para usar los dispositivos con Intune y comparta esta información con ellos para ayudarles a completar las tareas por sí mismos.</p>
                   </a>
                 </li>
               </ul>
-
-	      <ul class="row">
+          <ul class="row">
                 <li class="column-third">
                   <a href="/intune/deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune">
-                    <h3>Device compliance policies</h3>
-                    <p>Create and use compliance policies that protect your apps and data.</p>
+                    <h3>Directivas de cumplimiento de dispositivos</h3>
+                    <p>Cree y use directivas de cumplimiento que protejan sus datos y aplicaciones.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune">
-                    <h3>Restrict access to email and O365 services</h3>
-                    <p>Use Intune's conditional access capability to restrict access to company email and Office 365 services.</p>
+                    <h3>Restrict access to email and O365 services (Restringir el acceso al correo electrónico y los servicios de O365)</h3>
+                    <p>Use la capacidad de acceso condicional de Intune para restringir el acceso al correo electrónico de la empresa y a los servicios de Office 365.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies">
-                    <h3>Manage settings and features on your devices</h3>
-                    <p>Use Intune policies to control settings and features on your devices and computers.</p>
+                    <h3>Administrar la configuración y las características de los dispositivos</h3>
+                    <p>Use directivas de Intune para controlar la configuración y las características de los dispositivos y equipos.</p>
                   </a>
                 </li>
               </ul>
-
                 <ul class="row">
                 <li class="column-third">
                   <a href="/intune/deploy-use/deploy-apps-in-microsoft-intune">
-                    <h3>Deploy apps to devices and PCs</h3>
-                    <p>Deploy an app to selected devices and users.</p>
+                    <h3>Implementar aplicaciones en dispositivos y equipos</h3>
+                    <p>Implemente una aplicación para usuarios y dispositivos seleccionados.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">
-                    <h3>Protect app data</h3>
-                    <p>Use Intune’s Mobile App Management (MAM) policies to help protect app data.</p>
+                    <h3>Proteger datos de la aplicación</h3>
+                    <p>Use directivas de administración de aplicaciones móviles (MAM) de Intune para ayudar a proteger los datos de la aplicación.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="/intune/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune">
-                    <h3>Remote lock and passcode reset</h3>
-                    <p>Protect remote or lost devices by using remote lock and passcode capabilities.</p>
+                    <h3>Restablecimiento del bloqueo remoto y el código de acceso</h3>
+                    <p>Proteja dispositivos perdidos o remotos mediante el bloqueo remoto y las capacidades del código de acceso.</p>
                   </a>
                 </li>
               </ul>
-
-	    </section>
+        </section>
           </li>
-
-
-
           <li class="journey-step">
+            <header class="journey-step-header row">
+              <a href="/intune/develop/intune-app-sdk">
+                <div class="title column-third">
+                  <span class="step-number">4</span>
+                  <p>Desarrollo y personalización de aplicaciones</p>
+                </div>
+                <p class="description column-two-thirds">Habilite la administración de aplicaciones móviles para iOS y Android.</p>
+              </a>
+            </header>
+            <section class="journey-step-elements content">
+              <ul class="row">
+                <li class="column-third">
+                  <a href="/intune/develop/intune-app-sdk-get-started">
+                    <h3>Introducción al SDK para aplicaciones de Microsoft Intune</h3>
+                    <p>En esta guía se describen los pasos principales necesarios para habilitar la administración de aplicaciones móviles en su aplicación con Microsoft Intune.</p>
+                  </a>
+                </li>
+                <li class="column-third">
+                  <a href="/intune/develop/intune-app-sdk-ios">
+                    <h3>Guía para desarrolladores sobre el SDK para aplicaciones de Intune para iOS</h3>
+                    <p>El SDK para aplicaciones de Intune para iOS incluye una biblioteca estática, archivos de recursos, encabezados de API, un plist de configuración de depuración y una herramienta de configuración.</p>
+                  </a>
+                </li>
+                <li class="column-third">
+                  <a href="/intune/develop/intune-app-sdk-android">
+                    <h3>Guía para desarrolladores sobre el SDK para aplicaciones de Intune para Android</h3>
+                    <p>El SDK para aplicaciones de Intune para Android es una biblioteca de Android estándar que no tiene dependencias externas.</p>
+                  </a>
+                </li>
+              </ul>
+            </section>
+            </li>
+      <li class="journey-step">
             <header class="journey-step-header row">
               <a href="/intune/troubleshoot/how-to-get-support-for-microsoft-intune">
                 <div class="title column-third">
-                  <span class="step-number">4</span>
-                  <p>Troubleshoot</p>
+                  <span class="step-number">5</span>
+                  <p>Solución de problemas</p>
                 </div>
-                <p class="description column-two-thirds">Resources to help you troubleshoot Intune.</p>
+                <p class="description column-two-thirds">Recursos para ayudarle a solucionar problemas de Intune.</p>
               </a>
             </header>
             <section class="journey-step-elements content">
               <ul class="row">
                 <li class="column-third">
                   <a href="/intune/troubleshoot/how-to-get-support-for-microsoft-intune">
-                    <h3>How to get support for Intune</h3>
-                    <p>Get familiar with different ways Microsoft provides global technical, pre-sales, and billing support.</p>
+                    <h3>Cómo obtener asistencia para Intune</h3>
+                    <p>Familiarícese con las diferentes formas en que Microsoft proporciona soporte técnico global, de preventa y de facturación.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="/intune/troubleshoot/troubleshoot-device-enrollment-in-intune">
-                    <h3>Troubleshoot device enrollment</h3>
-                    <p>Solve problems encountered when enrolling devices.</p>
+                    <h3>Solucionar problemas de inscripción de dispositivos</h3>
+                    <p>Solucione problemas detectados al inscribir dispositivos.</p>
                   </a>
                 </li>
                 <li class="column-third">
                   <a href="/intune/troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune">
-                    <h3>Troubleshoot app deployment problems in Intune</h3>
-                    <p>Solve common app deployment problems.</p>
+                    <h3>Solucionar problemas de implementación de aplicaciones en Intune</h3>
+                    <p>Solucione problemas habituales de implementación de aplicaciones.</p>
                   </a>
                 </li>
               </ul>
@@ -235,29 +253,33 @@ ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
         </ul>
       </section>
     </div>
-
     <div class="section-border">
       <section class="resources container">
-      <h2 class="section-heading"><span class="icon icon-note"></span>Additional resources for Intune</h2>
+      <h2 class="section-heading"><span class="icon icon-note"></span>Recursos adicionales para Intune</h2>
       <div class="resource-list row">
           <ul class="column-half">
-          <li><a href="https://microsoftintune.uservoice.com/" target="_blank">Give feedback on Intune functionality</a></li>
-          <li><a href="https://microsoftintune.uservoice.com/forums/297408-issues/category/113871-documentation" target="_blank">Give feedback on Intune documentation</a></li>
-          <li><a href="https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=User&f%5B0%5D.Value=ECM%20Docs%20Team%20-%20MSFT" target="_blank">Intune documentation downloads</a></li>
+          <li><a href="https://microsoftintune.uservoice.com/" target="_blank">Enviar comentarios sobre la funcionalidad de Intune</a></li>
+          <li><a href="https://microsoftintune.uservoice.com/forums/297408-issues/category/113871-documentation" target="_blank">Envíenos sus comentarios sobre la documentación de Intune</a></li>
+          <li><a href="https://gallery.technet.microsoft.com/site/search?f%5B0%5D.Type=User&f%5B0%5D.Value=ECM%20Docs%20Team%20-%20MSFT" target="_blank">Descargas de documentación de Intune</a></li>
           </ul>
           <ul class="column-half">
-          <li><a href="/enterprise-mobility/solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems" target="_blank">Fast Track Center for Enterprise Mobility Suite</a></li>
-          <li><a href="https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc" target="_blank">Microsoft Intune TechNet forum</a></li>
-          <li><a href="https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/default.aspx" target="_blank">Intune product page</a></li>
+          <li><a href="/enterprise-mobility/solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems" target="_blank">Centro Fast Track para Enterprise Mobility Suite</a></li>
+          <li><a href="https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc" target="_blank">Foro de TechNet sobre Microsoft Intune</a></li>
+          <li><a href="https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/default.aspx" target="_blank">Página del producto de Intune</a></li>
           </ul>
       </div>
       </section>
     </div>
     <aside class="alert alert-social">
-      <p>Keep up-to-date on Intune</p>
+      <p>Manténgase al día de Intune</p>
       <ol class="action-list">
-        <li><a href="https://blogs.technet.com/b/microsoftintune/" target="_blank" class="button-bordered button-translucent">Intune team blog</a></li>
-        <li><a href="https://twitter.com/msintune/" target="_blank" class="button-bordered button-translucent">@MSIntune on Twitter</a></li>
+        <li><a href="https://blogs.technet.com/b/microsoftintune/" target="_blank" class="button-bordered button-translucent">Blog del equipo de Intune</a></li>
+        <li><a href="https://twitter.com/msintune/" target="_blank" class="button-bordered button-translucent">@MSIntune en Twitter</a></li>
       </ol>
     </aside>
 </article>
+
+
+<!--HONumber=Jun16_HO4-->
+
+

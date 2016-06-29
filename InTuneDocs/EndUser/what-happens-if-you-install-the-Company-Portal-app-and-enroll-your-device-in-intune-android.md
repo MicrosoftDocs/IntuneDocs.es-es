@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -38,7 +38,7 @@ Al instalar la aplicación Portal de empresa e inscribir su dispositivo Android 
 
 -   Restablecer su teléfono a la configuración de fábrica si lo pierde o se lo roban
 
-Al agregar un dispositivo Android, da permiso al administrador de TI para acceder al dispositivo. El administrador puede hacer cosas como:
+Al inscribir un dispositivo Android, da permiso al administrador de TI para obtener acceso al dispositivo. El administrador puede hacer cosas como:
 
 -   Restablecer la configuración predeterminada de fábrica del dispositivo. Esto es útil en caso de pérdida o robo del dispositivo.
 
@@ -60,11 +60,11 @@ Al agregar un dispositivo Android, da permiso al administrador de TI para accede
 
     -   Enviar actualizaciones de inventario de aplicaciones de empresa (estas actualizaciones no contienen información personal).
 
-Si tiene alguna pregunta y no encuentra la información de contacto del administrador de TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 ### Consulte también
 [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

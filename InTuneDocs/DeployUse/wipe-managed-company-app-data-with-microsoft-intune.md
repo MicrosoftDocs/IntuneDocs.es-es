@@ -18,7 +18,7 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -40,7 +40,7 @@ Para quitar de forma selectiva los datos de la aplicación de empresa, cree una 
 
     ![Captura de pantalla de la hoja Administración de aplicaciones móviles de Intune con el icono Resumen](../media/AppManagement/AzurePortal_MAM_WipeRequests.png)
 
-2.  Elija **Nueva solicitud de borrado**..
+2.  Elija **Nueva solicitud de borrado**.
 
     ![Captura de pantalla de la hoja Nueva solicitud de borrado](../media/AppManagement/AzurePortal_MAM_NewWipeRequest.png)
 
@@ -58,7 +58,7 @@ En la hoja **Administración de aplicaciones móviles de Intune** , encontrará 
 
 1.  En la hoja **Administración de aplicaciones móviles de Intune**, seleccione el icono **Solicitudes de borrado** para abrir la hoja **Solicitud de borrado**.
 
-2.  En la hoja **Solicitud de borrado** , puede ver la lista de solicitudes agrupadas según usuarios.  Debido a que el sistema crea una solicitud de borrado para cada aplicación protegida que se ejecuta en el dispositivo, puede que vea varias solicitudes para un mismo usuario.  Este estado indica si una solicitud de borrado está **pendiente**, ha provocado un **error** o es **correcta**..
+2.  En la hoja **Solicitud de borrado** , puede ver la lista de solicitudes agrupadas según usuarios.  Debido a que el sistema crea una solicitud de borrado para cada aplicación protegida que se ejecuta en el dispositivo, puede que vea varias solicitudes para un mismo usuario.  Este estado indica si una solicitud de borrado está **pendiente**, ha provocado un **error**o si es **correcta**.
 
 ### Consulte también
 [Proteger datos de aplicación mediante directivas de administración de aplicaciones móviles ](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
@@ -66,6 +66,6 @@ En la hoja **Administración de aplicaciones móviles de Intune** , encontrará 
 [Mediante el Portal de Azure](azure-portal-for-microsoft-intune-mam-policies.md)
 
 
-<!---HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

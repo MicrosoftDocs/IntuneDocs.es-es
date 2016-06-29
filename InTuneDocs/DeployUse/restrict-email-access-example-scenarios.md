@@ -18,7 +18,7 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -35,7 +35,7 @@ ms.suite: ems
 
 Para ello, configure una directiva de acceso condicional para Exchange Online con las siguientes opciones:
 
--   Seleccione **Habilitar la directiva de acceso condicional**..
+-   Seleccione **Habilitar la directiva de acceso condicional**.
 
 - Seleccione las plataformas a las que quiere permitir el acceso desde aplicaciones con autenticación moderna.
 - Para las aplicaciones de Exchange ActiveSync, seleccione **Bloquear los dispositivos no compatibles de las plataformas que admite Microsoft Intune** y **Bloquear todos los otros dispositivos de las plataformas que no admite Microsoft Intune**.
@@ -70,7 +70,7 @@ El siguiente flujo se utiliza para decidir los dispositivos que pueden tener acc
 ## Ningún dispositivo Android puede acceder a Exchange local.
 ### Requisitos del escenario
 - Debe bloquearse el acceso a Exchange de todos los dispositivos Android.
-- Los demás dispositivos compatibles pueden tener acceso a Exchange, siempre que estén administrados por Intune. [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+- Los demás dispositivos compatibles pueden tener acceso a Exchange, siempre que estén administrados por [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
 Para ello, configure una directiva de acceso condicional para Exchange local con las siguientes opciones:
 
@@ -86,6 +86,6 @@ El siguiente flujo se utiliza para decidir los dispositivos que pueden tener acc
 ![Flujo de acceso de dispositivos](./media/ConditionalAccess8-4.png)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -1,12 +1,12 @@
 ---
 # required metadata
 
-title: Configurar la administración de Windows Phone 8.0 con Microsoft Intune | Microsoft Intune
+title: Configurar la administración de Windows Phone 8.0 | Microsoft Intune
 description:
 keywords:
 author: NathBarn
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/09/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 61e9b6c3-8795-49b0-8ab2-a9a05ee3ea1f
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: priyar
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -28,6 +28,8 @@ ms.suite: ems
 # Configurar la administración de dispositivos para Windows Phone 8.0
 
 Windows Phone 8.0 exige un certificado de Symantec para instalar la aplicación de portal de empresa de Intune y para permitir la administración de dispositivos. También es necesario un certificado para firmar aplicaciones de línea de negocio. El siguiente tema solo se aplica a Windows Phone 8.0. Para administrar Windows Phone 8.1 o posterior, incluido Windows 10 Mobile, consulte [Set up Windows Phone enrollment (Configurar la inscripción de Windows Phone)](set-up-windows-phone-management-with-microsoft-intune.md).
+
+> [!IMPORTANT] A partir de septiembre de 2016, la aplicación del Portal de empresa para Windows 8.0 y Windows Phone 8.0 ya no estará disponible para descargar.
 
 -   **Windows Phone 8**: se exige certificado
 -   **Windows Phone 8.1 y Windows 10 Mobile** piden un certificado solo si:
@@ -184,6 +186,6 @@ Puede implementar la aplicación de portal de empresa en dispositivos Windows Ph
     > -   Si es necesario instalar aplicaciones con instalación de prueba y se deben inscribir dispositivos Windows Phone 8.0, que deben recibir el ssp.xap, cree una nueva implementación de software del ssp.xap e impleméntela con la acción **desinstalar** . Los dispositivos Windows Phone 8.0 no admiten la instalación o desinstalación forzada de aplicaciones, por lo que ignorarán la implementación. Los dispositivos Windows Phone 8.1 admiten la acción desinstalar y quitarán el ssp.xap.
 
 
-<!--HONumber=May16_HO4-->
+<!--HONumber=Jun16_HO2-->
 
 

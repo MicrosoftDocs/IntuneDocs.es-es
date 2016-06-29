@@ -28,7 +28,7 @@ ms.suite: ems
 
 # El equipo ya está inscrito
 
-Si recibe un error que afirma que el equipo ya está inscrito, significa que el equipo ya se ha agregado al portal de empresa, pero aún no está vinculado a su cuenta de usuario. Siga este procedimiento para vincular el equipo a su cuenta de usuario y completar el proceso.
+Si recibe un error que afirma que el equipo ya está inscrito, significa que el equipo ya se ha agregado al portal de empresa, pero aún no está vinculado a su cuenta de usuario. Siga este procedimiento para vincular el equipo a su cuenta de usuario y completar el proceso.  
 
 Para vincular el equipo:
 
@@ -38,8 +38,10 @@ Para vincular el equipo:
 
 3.  Siga las instrucciones para vincular el equipo a su cuenta de usuario.
 
-Si necesita ayuda y no encuentra la información de contacto del administrador de TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+Si prefiere anular la inscripción del dispositivo, siga las instrucciones del tipo de dispositivo que tiene: [Android](unenroll-your-device-from-intune-android.md), [iOS](unenroll-your-device-from-intune-ios.md) o [Windows](unenroll-your-device-from-intune-windows.md).
 
-<!--HONumber=Jun16_HO1-->
+¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+
+<!--HONumber=Jun16_HO2-->
 
 

@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -28,7 +28,7 @@ ms.suite: ems
 
 # Enviar registros de datos de diagnóstico al administrador de TI mediante correo electrónico
 
-Si se produce un error en el dispositivo Android mientras está trabajando con las aplicaciones de su centro educativo o empresa o mientras se encuentra en la aplicación Portal de empresa, puede enviar registros de datos de diagnóstico a su administrador de TI para que pueda determinar cuál fue el error y corregirlo. Para incluir todos los detalles en los registros y que así su administrador de TI pueda averiguar cuál fue el problema, active el registro detallado.
+Si se produce un error en el dispositivo Android mientras está trabajando con las aplicaciones de su centro educativo o empresa o mientras se encuentra en la aplicación Portal de empresa, puede enviar registros de datos de diagnóstico a su administrador de TI para que pueda determinar cuál fue el error y corregirlo. Para incluir todos los detalles en los registros y que así su administrador de TI pueda averiguar cuál fue el problema, active el registro detallado. Puede leer más información sobre el [registro detallado](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
 
 Para activar el registro detallado:
 
@@ -54,6 +54,6 @@ Para activar el registro detallado:
 ### Consulte también
 [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

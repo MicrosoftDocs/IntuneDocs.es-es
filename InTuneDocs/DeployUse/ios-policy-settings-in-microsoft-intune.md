@@ -18,7 +18,7 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -99,7 +99,7 @@ Si el valor que busca no aparece en este tema, puede crearlo mediante una direct
 |**Permitir almacén de aplicaciones**|Permite que el dispositivo tenga acceso a la tienda de aplicaciones.|Sí|
 |**Requerir una contraseña para tener acceso al almacén de aplicaciones**|Sí|
 |**Permitir compras dentro de la aplicación**|Permite realizar compras en la tienda desde una aplicación en ejecución.|Sí|
-|**Permitir documentos administrados en otras aplicaciones no administradas**|Permite la visualización de documentos corporativos en cualquier aplicación.|iOS 7.1 y versiones posteriores|
+|**Permitir documentos administrados en otras aplicaciones no administradas**|Permite la visualización de documentos corporativos en cualquier aplicación.<br>**Ejemplo:** quiere evitar que los usuarios guarden archivos de la aplicación de OneDrive en Dropbox. Configure este ajuste en no. Después de que el dispositivo reciba la directiva (por ejemplo, después de un reinicio), ya no le permitirá guardar.|iOS 7.1 y versiones posteriores|
 |**Permitir documentos no administrados en otras aplicaciones administradas**|Permite la visualización de cualquier documento en aplicaciones administradas corporativas.|iOS 7.1 y versiones posteriores|
 |**Permitir videoconferencias**|Permite el uso de aplicaciones de videoconferencia como Facetime en el dispositivo.|Sí|
 |**Permitir contenido para adultos en el almacén multimedia**|Permite que el dispositivo tenga acceso a contenido clasificado para adultos en la tienda.|Sí|
@@ -153,7 +153,7 @@ En la lista de **aplicaciones compatibles&amp; y no compatibles**, especifique l
 
 |Nombre de la configuración|Detalles|
 |----------------|--------------------|
-|**Seleccione una aplicación administrada que se permitirá ejecutar cuando el dispositivo esté en modo de quiosco**|Haga clic en **Examinar**y, a continuación, especifique la aplicación administrada, o una aplicación de una tienda que se podrá ejecutar cuando el dispositivo esté en modo de quiosco. Ninguna otra aplicación se podrá ejecutar en el dispositivo. Para obtener más información, vea **Cómo especificar las direcciones URL de tiendas de aplicaciones** más adelante en este tema.|
+|**Seleccione una aplicación administrada que se permitirá ejecutar cuando el dispositivo esté en modo de quiosco**|Elija **Examinar**y luego especifique la aplicación administrada, o una aplicación de una tienda que se podrá ejecutar cuando el dispositivo esté en pantalla completa. Ninguna otra aplicación se podrá ejecutar en el dispositivo. Para obtener más información, vea **Cómo especificar las direcciones URL de tiendas de aplicaciones** más adelante en este tema.|
 |**Permitir la interacción táctil**|Habilita o deshabilita la pantalla táctil en el dispositivo.|
 |**Permitir la rotación de pantalla**|Habilita o deshabilita el cambio de orientación de la pantalla cuando el dispositivo gira.|
 |**Permitir los botones de volumen**|Habilita o deshabilita el uso de los botones de volumen en el dispositivo.|
@@ -182,9 +182,9 @@ Utilice el **Informe de aplicaciones no conformes** para ver la conformidad de l
 
 ##### Para ejecutar el informe de aplicaciones no conformes
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), haga clic en **Informes** &gt; **Informe de aplicaciones no conformes**.
+1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), elija **Informes** &gt; **Informe de aplicaciones no conformes**.
 
-2.  Seleccione los grupos de dispositivos que quiere comprobar, si quiere comprobar las aplicaciones conformes, las aplicaciones no conformes o ambas y, a continuación, haga clic en **Ver informe**.
+2.  Seleccione los grupos de dispositivos que quiere comprobar, si quiere comprobar las aplicaciones conformes, las aplicaciones no conformes o ambas y, después, elija **Ver informe**.
 
 #### Cómo especificar las direcciones URL de tiendas de aplicaciones
 Para especificar una dirección URL de aplicación en la lista de aplicaciones conformes y no conformes o en la opción **Seleccione una aplicación administrada que se podrá ejecutar cuando el dispositivo esté en modo de pantalla completa** (solo iOS), use el siguiente formato:
@@ -222,7 +222,7 @@ Antes de empezar, debe tener instalado Apple Configurator y haber creado un arch
 |Nombre de la configuración|Detalles|
     |----------------|--------------------|
 |**Nombre del perfil de configuración personalizada (que se muestra a los usuarios)**|Proporcione el nombre de la directiva que se mostrará en el dispositivo y en los informes de directivas de Intune.|
-|**Archivo del perfil de configuración**|Haga clic en **Importar**y luego examine el perfil de configuración que ha creado con Apple Configurator. **Nota:** Asegúrese de que la configuración que exporta de la herramienta Apple Configurator sea compatible con la versión de iOS en los dispositivos en los que implementa la directiva personalizada de iOS. Para obtener información sobre la resolución de las opciones de configuración incompatibles, busque la **referencia de perfiles de configuración** y la **referencia del protocolo de administración de dispositivos móviles** en el sitio web para [desarrolladores de Apple](https://developer.apple.com/).|
+|**Archivo del perfil de configuración**|Elija **Importar** y luego examine el perfil de configuración que ha creado con Apple Configurator. **Nota:** Asegúrese de que la configuración que exporta de la herramienta Apple Configurator sea compatible con la versión de iOS en los dispositivos en los que implementa la directiva personalizada de iOS. Para obtener información sobre la resolución de las opciones de configuración incompatibles, busque la **referencia de perfiles de configuración** y la **referencia del protocolo de administración de dispositivos móviles** en el sitio web para [desarrolladores de Apple](https://developer.apple.com/).|
     |**Detalles del perfil de configuración**|Muestra el código XML del perfil de configuración que ha importado.|
 
 ### Consulte también
@@ -230,6 +230,6 @@ Antes de empezar, debe tener instalado Apple Configurator y haber creado un arch
 
 
 
-<!--HONumber=May16_HO2-->
+<!--HONumber=Jun16_HO2-->
 
 

@@ -18,7 +18,7 @@ ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: andcerat
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -61,10 +61,11 @@ El término **aplicaciones administradas por directivas** hace referencia a las 
 
   En el caso de los dispositivos que no estén inscritos en Intune, los vínculos web en aplicaciones administradas por directivas solo se abrirán en la aplicación Managed Browser mediante la directiva de administración de aplicaciones móviles.
 
-  Si usa Intune para administrar los dispositivos, consulte [Administrar el acceso a Internet mediante directivas de explorador administrado con Microsoft Intune](manage-internet-access-using-managed-browser-policies.md)..
+  Si usa Intune para administrar los dispositivos, vea [Administrar el acceso a Internet mediante directivas de explorador administrado con Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).
 
     **Valor predeterminado = Sí**
 - **Cifrar datos de aplicación:** elija **Sí** para permitir el cifrado. Si esta opción se habilita, Microsoft proporciona el cifrado en el caso de las aplicaciones asociadas a una directiva de administración de aplicaciones móviles de Intune. Los datos se cifran de forma sincrónica durante las operaciones de E/S de archivo. El contenido del almacenamiento del dispositivo estará siempre cifrado.
+  >[!NOTE] El método de cifrado no está certificado mediante FIPS 140-2
 
   **Valor predeterminado = Sí**
 
@@ -75,12 +76,13 @@ El término **aplicaciones administradas por directivas** hace referencia a las 
 ##  Configuración de directiva de acceso de Android
 El término **aplicaciones administradas por directiva** hace referencia a las aplicaciones que están configuradas con directivas de MAM.
 
-- **Requerir PIN sencillo para el acceso:** elija **Sí** si quiere exigir un PIN para poder usar aplicaciones administradas por directivas. Se pedirá al usuario que lo configure la primera vez que ejecuta la aplicación en un contexto laboral.
+- **Requerir PIN para el acceso:** elija **Sí** si quiere exigir un PIN para poder usar aplicaciones administradas por directivas. Se pedirá al usuario que lo configure la primera vez que ejecuta la aplicación en un contexto laboral.
 
  **Valor predeterminado = Sí**
-- **Número de intentos antes del restablecimiento del PIN:** especifique el número de intentos de entrada de PIN que pueden realizarse antes de que el usuario deba restablecer el PIN.
 
- **No hay ningún valor predeterminado para esta configuración.**
+ -  **Permitir el PIN simple:** especifique si quiere permitir que los usuarios usen secuencias de PIN simples como 1234 o 1111. **Valor predeterminado = Sí**.
+ - **Longitud de PIN:**especifique el número mínimo de dígitos en un PIN. **Valor predeterminado = 4**
+ - **Número de intentos antes del restablecimiento del PIN:** especifique el número de intentos de entrada de PIN que pueden realizarse antes de que el usuario deba restablecer el PIN. **No hay ningún valor predeterminado para esta configuración.**
 - **Requerir credenciales corporativas para el acceso:** elija **Sí** para solicitar credenciales corporativas en lugar de un PIN para tener acceso a la aplicación.  Si se establece en **Sí**, se reemplazarán los requisitos de introducción de un PIN o un Touch ID.  Se le solicitará al usuario que proporcione sus credenciales corporativas.
 
   **Valor predeterminado = No**
@@ -98,6 +100,6 @@ El término **aplicaciones administradas por directiva** hace referencia a las a
 - **Bloquear captura de pantalla y asistente de Android (Android 6 Marshmallow o posterior):** elija **Sí** para bloquear las capacidades de captura de pantalla y de **asistente de Android** del dispositivo cuando se use esta aplicación.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

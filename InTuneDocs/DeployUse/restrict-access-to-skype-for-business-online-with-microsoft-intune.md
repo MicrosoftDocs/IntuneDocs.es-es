@@ -18,7 +18,7 @@ ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: chrisgre
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -38,7 +38,7 @@ Cuando un usuario determinado intenta usar Skype Empresarial Online en su dispos
 
 **Antes** de configurar una directiva de acceso condicional para Skype Empresarial Online, debe:
 - Tener una **suscripción de Skype Empresarial Online** y asignar una licencia de Skype Empresarial Online a los usuarios.
-- Tener una suscripción a **Enterprise Mobility Suite** o **Azure Active Directory Premium**..
+- Tener una suscripción a **Enterprise Mobility Suite** o **Azure Active Directory Premium**.
 -   **Habilitar la autenticación moderna** para Skype Empresarial Online. Iniciar sesión en Microsoft Connect y rellenar [este formulario](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715) para inscribirse en el programa de autenticación moderna.
 -  Todos los usuarios finales deben usar **Skype Empresarial Online**. Si tiene una implementación con Skype Empresarial Online y Skype Empresarial local, la directiva de acceso condicional no se aplicará a los usuarios finales.
 
@@ -46,7 +46,7 @@ Cuando un usuario determinado intenta usar Skype Empresarial Online en su dispos
 
 -   Debe ser un dispositivo **Android** o **iOS**.
 
--   Debe estar **inscrito** con Intune. [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+-   Debe estar **inscrito** con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
 -   Debe **cumplir** todas las directivas de cumplimiento de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] implementadas.
 
@@ -73,26 +73,24 @@ Puede especificar dos tipos de grupos para la directiva de Skype Empresarial:
 Si un usuario pertenece a ambos grupos, estará exento de la directiva.
 
 ### Paso 2: Configurar e implementar una directiva de cumplimiento
-[Cree](create-a-device-compliance-policy-in-microsoft-intune.md) e [implemente](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) una directiva de cumplimiento para todos los dispositivos que se verán afectados por la directiva. Dichos dispositivos serán los que usan los usuarios de los **Grupos de destino**..
+[Cree](create-a-device-compliance-policy-in-microsoft-intune.md) e [implemente](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) una directiva de cumplimiento para todos los dispositivos que se verán afectados por la directiva. Dichos dispositivos serán los que usan los usuarios de los **Grupos de destino**.
 
-> [!NOTE]
-> Mientras se implementan las directivas de cumplimiento en los grupos de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], las directivas de acceso condicional se aplican a los grupos de seguridad de Azure Active Directory.
+> [!NOTE] Mientras se implementan las directivas de cumplimiento en los grupos de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], las directivas de acceso condicional se aplican a los grupos de seguridad de Azure Active Directory.
 
 
-> [!IMPORTANT]
-> Si no ha implementado una directiva de cumplimiento, los dispositivos se considerarán no conformes.
+> [!IMPORTANT] Si no ha implementado una directiva de cumplimiento, los dispositivos se considerarán no conformes.
 
-Cuando esté listo, continúe con el **paso 3**..
+Cuando esté listo, continúe con el **paso 3**.
 
 ### Paso 3: Configurar la directiva de Skype Empresarial Online
 Después, configure la directiva para requerir que solo los dispositivos administrados y conformes puedan tener acceso a Skype Empresarial Online. Esta directiva se almacenará en Azure Active Directory.
 
 ####
-1.  En la [Consola de administración de Microsoft Intune](https://manage.microsoft.com), haga clic en **Directiva** > **Acceso condicional** > **Directiva de Skype Empresarial Online**..
+1.  En la [Consola de administración de Microsoft Intune](https://manage.microsoft.com), haga clic en **Directiva** > **Acceso condicional** > **Directiva de Skype Empresarial Online**.
 
 ![Captura de pantalla de la página de la directiva de acceso condicional de Skype Empresarial Online](./media/conditional_access_SFBPolicy.png)
 
-2.  Seleccione **Habilitar la directiva de acceso condicional**..
+2.  Seleccione **Habilitar la directiva de acceso condicional**.
 
 3.  En **Acceso a la aplicación**, puede elegir aplicar la directiva de acceso condicional a:
 
@@ -104,7 +102,7 @@ Después, configure la directiva para requerir que solo los dispositivos adminis
 
 5.  En **Grupos exentos**, opcionalmente, haga clic en **Modificar** para seleccionar los grupos de seguridad de Azure Active Directory que se van a excluir de la directiva.
 
-6.  Cuando haya terminado, haga clic en **Guardar**..
+6.  Cuando haya terminado, haga clic en **Guardar**.
 
 Acaba de configurar el acceso condicional para Skype Empresarial Online. No es necesario implementar la directiva de acceso condicional, ya que surte efecto inmediatamente.
 
@@ -121,6 +119,6 @@ Seleccione cualquier grupo de dispositivos móviles y, a continuación, en la pe
 * **Dispositivos registrados en AAD y conformes**: estos dispositivos pueden tener acceso a Skype Empresarial Online.
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

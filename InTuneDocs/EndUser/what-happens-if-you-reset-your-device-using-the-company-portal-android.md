@@ -36,11 +36,11 @@ Si tiene un dispositivo Samsung Knox, puede llevar a cabo un "borrado selectivo"
 - El correo electrónico, VPN y Wi-Fi
 - La capacidad del administrador de TI de aplicar ciertas opciones de configuración
 
-Si tiene alguna pregunta y no encuentra la información de contacto del administrador de TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 ### Consulte también
 [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

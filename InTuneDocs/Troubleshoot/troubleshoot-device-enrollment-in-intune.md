@@ -144,29 +144,6 @@ Los administradores pueden eliminar dispositivos en el portal de Azure Active Di
 
 **Solución:** los clientes de Microsoft Office 365 que usan el inicio de sesión único (SSO) a través de AD FS 2.0 y que tienen varios dominios de nivel superior para los sufijos UPN de los usuarios de su organización (por ejemplo, @contoso.com o @fabrikam.com) deben implementar una instancia independiente del servicio de federación de AD FS 2.0 para cada sufijo.  Ahora hay una [acumulación para AD FS 2.0](http://support.microsoft.com/kb/2607496) que funciona con el conmutador **SupportMultipleDomain** para permitir que el servidor de AD FS admita este escenario sin necesidad de servidores de AD FS 2.0 adicionales. Vea [este blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) para más información.
 
-### El equipo ya está inscrito. Error hr 0x8007064c
-**Problema:** la inscripción produce un error con el mensaje **The machine is already enrolled** (El equipo ya está inscrito). El registro de inscripción muestra el error **hr 0x8007064c**.
-  
-Esto puede deberse a que el equipo se inscribió anteriormente o a que tiene la imagen clonada de un equipo ya inscrito. El certificado de cuenta de la cuenta anterior sigue estando presente en el equipo.
-
-
-
-**Solución:** 
-
-1. En el menú **Inicio**, **Ejecutar** -> **MMC**. 
-1. **Archivo** -> **Agregar o quitar complemento**.
-1. Haga doble clic en **Certificados**, seleccione **Cuenta de equipo**, **Siguiente** y, luego, **Equipo local**.
-1. Haga doble clic en **Certificados (equipo local)** y seleccione **Certificados personales**. 
-1. Busque el certificado de Intune emitido por Sc_Online_Issuing y elimínelo si está presente.
-1. Elimine esta clave del Registro si existe: ** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** y todas las subclaves.
-1. Intente volver a realizar la inscripción. 
-1. Si todavía no puede inscribir el equipo, busque y elimine esta clave, si existe: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
-1. Intente volver a realizar la inscripción. 
-
-    > [!IMPORTANT]
-    > Esta sección, método o tarea contiene pasos que indican cómo modificar el Registro. Pero pueden producirse problemas graves si modifica incorrectamente el Registro. Por lo tanto, asegúrese de que sigue estos pasos cuidadosamente. Como protección adicional, haga una copia de seguridad del Registro antes de modificarlo. Y así, si se produce algún problema, puede restaurarlo.
-    > Para más información sobre cómo realizar copias de seguridad del Registro y cómo restaurarlo, lea [Cómo hacer copia de seguridad y restaurar el registro de Windows](https://support.microsoft.com/en-us/kb/322756).
-
 
 ## Problemas de Android
 ### Error de instalación de perfil
@@ -248,6 +225,31 @@ Esto puede deberse a que el equipo se inscribió anteriormente o a que tiene la 
 
 ### Otros errores de inscripción de iOS
 Encontrará una lista de errores de inscripción de iOS en la documentación de usuario del dispositivo, en [You see errors while trying to enroll your device in Intune](/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune) (Ve errores al intentar inscribir su dispositivo en Intune).
+
+## Problemas del equipo
+
+### El equipo ya está inscrito. Error hr 0x8007064c
+**Problema:** la inscripción produce un error con el mensaje **The machine is already enrolled** (El equipo ya está inscrito). El registro de inscripción muestra el error **hr 0x8007064c**.
+  
+Esto puede deberse a que el equipo se inscribió anteriormente o a que tiene la imagen clonada de un equipo ya inscrito. El certificado de cuenta de la cuenta anterior sigue estando presente en el equipo.
+
+
+
+**Solución:** 
+
+1. En el menú **Inicio**, **Ejecutar** -> **MMC**. 
+1. **Archivo** -> **Agregar o quitar complemento**.
+1. Haga doble clic en **Certificados**, seleccione **Cuenta de equipo**, **Siguiente** y, luego, **Equipo local**.
+1. Haga doble clic en **Certificados (equipo local)** y seleccione **Certificados personales**. 
+1. Busque el certificado de Intune emitido por Sc_Online_Issuing y elimínelo si está presente.
+1. Elimine esta clave del Registro si existe: ** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** y todas las subclaves.
+1. Intente volver a realizar la inscripción. 
+1. Si todavía no puede inscribir el equipo, busque y elimine esta clave, si existe: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**. 
+1. Intente volver a realizar la inscripción. 
+
+    > [!IMPORTANT]
+    > Esta sección, método o tarea contiene pasos que indican cómo modificar el Registro. Pero pueden producirse problemas graves si modifica incorrectamente el Registro. Por lo tanto, asegúrese de que sigue estos pasos cuidadosamente. Como protección adicional, haga una copia de seguridad del Registro antes de modificarlo. Y así, si se produce algún problema, puede restaurarlo.
+    > Para más información sobre cómo realizar copias de seguridad del Registro y cómo restaurarlo, lea [Cómo hacer copia de seguridad y restaurar el registro de Windows](https://support.microsoft.com/en-us/kb/322756).
 
 ## Códigos de error de inscripción generales
 

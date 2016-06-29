@@ -35,31 +35,52 @@ La inscripción de dispositivos móviles es un proceso en el que los smartphones
 
 Las respuestas a las siguientes preguntas le servirán para saber cuál es el mejor método de inscripción de los dispositivos bajo su administración.
 
-## ¿Los empleados traen sus propios dispositivos o se los proporciona la organización?
+## **¿Los empleados traen sus propios dispositivos o se los proporciona la organización?**
 
-  **Dispositivos propiedad de los usuarios** (Bring your own device o "BYOD"): los usuarios pueden instalar la aplicación de portal de empresa de Intune en sus dispositivos y, luego, inscribirlos para obtener acceso a recursos de la empresa, como el correo electrónico, aplicaciones de empresa, datos de la compañía y soporte técnico.  
-  > [!div class="button"]   [Inscripción BYOD >](..deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)
+  **Los dispositivos propiedad de los usuarios**, también conocidos por la inscripción "Bring your own device" (BYOD), permiten a los usuarios inscribir sus dispositivos para tener acceso a recursos de la empresa como el correo electrónico, aplicaciones de la empresa, datos de la empresa y soporte técnico. **Los dispositivos propiedad de la empresa** (COD) los proporciona la organización a sus empleados para resolver una necesidad empresarial.
+  > [!div class="button"]   [Inscripción BYOD >](#byod-device-enrollment)   [Inscripción COD >](cod-device-enrollment)
 
-  **Dispositivos propiedad de la empresa:** los dispositivos propiedad de la empresa (COD) se pueden inscribir de diversas formas, según cuáles sean las necesidades de la organización y los tipos de dispositivos administrados. Siguiente pregunta...
+### Inscripción de dispositivos BYOD
 
-## ¿Los dispositivos propiedad de la empresa son compartidos o se destinan a determinados usuarios?
+La inscripción BYOD requiere que los usuarios instalen la aplicación del Portal de empresa de Intune en sus dispositivos. Después pueden iniciar la aplicación e inscribirse al proporcionar sus credenciales profesionales o educativas. El Intune proporcionado encuentra una licencia para esas credenciales, el dispositivo se agrega a la consola de administración de Intune y recibe la directiva de Intune, lo que le concede acceso a recursos de la empresa.
 
-**Dispositivos propiedad de la empresa compartidos:** estos dispositivos no tienen un único usuario y no suelen estar configurados para obtener acceso al correo electrónico. Ejemplos de esto son los dispositivos de pantalla completa o los dispositivos orientados a tareas que los usuarios eligen de un grupo cuando lo necesitan y, luego, lo devuelven. Los métodos de inscripción recomendados dependerán de la plataforma de los dispositivos.
+**Seleccionar el tipo de dispositivo:**
+
+> [!div class="op_single_selector"]
+- [Configurar la administración de Android con Microsoft Intune](..deploy-use/set-up-android-management-with-microsoft-intune.md)
+- [Set up iOS and Mac management with Microsoft Intune](..deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
+- [Configurar la administración de Windows Phone con Microsoft Intune](..deploy-use/set-up-windows-phone-management-with-microsoft-intune.md)
+- [Configurar la administración de dispositivos Windows con Microsoft Intune](..deploy-use/set-up-windows-device-management-with-microsoft-intune.md)
+
+
+### Inscripción de dispositivos COD
+
+Los dispositivos propiedad de la empresa se pueden inscribir para admitir un usuario dedicado o compartido.  **Los dispositivos compartidos** no tienen un único usuario y no suelen estar configurados para obtener acceso al correo electrónico. Ejemplos de esto son los dispositivos de pantalla completa o los dispositivos orientados a tareas que los usuarios eligen de un grupo cuando lo necesitan y, luego, lo devuelven. Los métodos de inscripción recomendados dependerán de la plataforma de los dispositivos. **Los dispositivos dedicados** están destinados a usuarios individuales, deben someterse a un seguimiento como activos de la empresa y, al mismo tiempo, dejar que los usuarios puedan tener acceso a los datos y al correo como si se tratara de dispositivos personalizados. Los métodos de inscripción recomendados dependerán de la plataforma de los dispositivos.
+
+## **¿Los dispositivos propiedad de la empresa son compartidos o se destinan a usuarios dedicados?**
+
+> [!div class="button"] [Compartidos >](#Shared-company-owned-devices)   [Dedicados >](..deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)
+
+
+### Dispositivos compartidos propiedad de la empresa
+
+Estos dispositivos no tienen un único usuario y no suelen estar configurados para obtener acceso al correo electrónico. Ejemplos de esto son los dispositivos de pantalla completa o los dispositivos orientados a tareas que los usuarios eligen de un grupo cuando lo necesitan y, luego, lo devuelven. Los métodos de inscripción recomendados dependerán de la plataforma de los dispositivos.
 
   - **Dispositivos Windows y Android:**: un *administrador de inscripción de dispositivos* es una cuenta de Intune que se usa para inscribir varios dispositivos compartidos con la aplicación de portal de empresa.
-  > [!div class="button"]   [Administrador de inscripción de dispositivos >](../deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
+  > [!div class="button"]   [Windows >](../deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [Android >](../deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [iOS >](#shared-ios-device-enrollment)
 
-  - **Dispositivos iOS:** los dispositivos iOS compartidos se pueden administrar de tres maneras.  **¿Cómo se inscriben los dispositivos iOS compartidos?**
+### Inscripción de dispositivos iOS compartidos
 
-    - **Programa de inscripción de dispositivos (DEP) de Apple:** los dispositivos iOS adquiridos o administrados con DEP se pueden inscribir con un perfil de inscripción. Cuando esos dispositivos se encienden por primera vez, descargan el perfil de DEP y se inscriben con ese perfil de DEP.
-    > [!div class="button"]     [Inscripción de DEP >](../deploy-use/ios-device-enrollment-program-in-microsoft-intune)
+El método preferido para inscribir dispositivos iOS compartidos propiedad de la empresa depende de cómo adquiera y administre estos dispositivos:
 
-    - **Apple Configurator en un equipo Mac:** Apple Configurator es una aplicación de Apple que se ejecuta en equipos Mac. Los dispositivos iOS se pueden conectar al Mac con un cable USB para instalar un perfil de inscripción en ellos. Si puede restablecer la configuración de fábrica de los dispositivos para inscribirlos, use la inscripción con el Asistente de configuración. Si prefiere no restablecer la configuración de fábrica de los dispositivos, use la inscripción directa.
+  - **Programa de inscripción de dispositivos (DEP) de Apple:** los dispositivos iOS adquiridos o administrados con DEP se pueden inscribir con un perfil de inscripción. Cuando esos dispositivos se encienden por primera vez, descargan el perfil de DEP y se inscriben con ese perfil de DEP.
+  - **Apple Configurator en un equipo Mac (Mac):** Apple Configurator es una aplicación de Apple que se ejecuta en equipos Mac. Los dispositivos iOS se pueden conectar al Mac con un cable USB para instalar un perfil de inscripción en ellos. Si puede restablecer la configuración de fábrica de los dispositivos para inscribirlos, use la inscripción con el Asistente de configuración. Si prefiere no restablecer la configuración de fábrica de los dispositivos, use la inscripción directa.
+  - **Ninguno de los anteriores:** si no puede o no quiere usar los métodos de inscripción de DEP o con Apple Configurator de Apple, use el Administrador de inscripción de dispositivos de Intune.
 
-    > [!div class="button"]     [Inscripción con el Asistente de configuración >](../deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) o [Inscripción directa >](../deploy-use/ios-direct-enrollment-in-microsoft-intune)
+  **Elija:**
+    > [!div class="button"]      [Inscripción de DEP >](../deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Mac >](../deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) [Inscripción directa >](../deploy-use/ios-direct-enrollment-in-microsoft-intune)  
 
-    - **Ninguno de los anteriores:** si no puede o no quiere usar los métodos de inscripción de DEP o con Apple Configurator de Apple, use el Administrador de inscripción de dispositivos de Intune.
-    > [!div class="button"]     [Inscripción con DEM >](../deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
+  > [!div class="button"]     [Inscripción con DEM >](../deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
 
 **Usuarios individuales:** los dispositivos propiedad de la empresa destinados a usuarios individuales deben someterse a un seguimiento como activos de la empresa y, al mismo tiempo, dejar que los usuarios puedan tener acceso a los datos y al correo como si se tratara de dispositivos personales. Los métodos de inscripción recomendados dependerán de la plataforma de los dispositivos.
 
@@ -80,6 +101,6 @@ Las respuestas a las siguientes preguntas le servirán para saber cuál es el me
     - **Ninguno de los anteriores:** si no puede o no quiere usar los métodos de inscripción de DEP o con Apple Configurator de Apple, importe los números de identidad de equipo móvil internacional (IMEI) de los dispositivos propiedad de la empresa para poder etiquetarlos como dispositivos propiedad de la empresa en Intune. De este modo, los usuarios podrán inscribir sus dispositivos como dispositivos personales instalando el portal de empresa para tener acceso a recursos de la empresa como el correo electrónico, las aplicaciones y los datos. > [!div class="button"][Etiquetar dispositivos con números IMEI](../deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
 
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

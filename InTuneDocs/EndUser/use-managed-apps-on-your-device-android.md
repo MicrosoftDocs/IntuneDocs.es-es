@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 05/11/2016
+ms.date: 05/31/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -66,22 +66,22 @@ Estos son algunos ejemplos de opciones que puede administrar el administrador de
 
 Estas son algunas de las aplicaciones comunes que puede administrar el departamento de TI:
 
--   Explorador web administrado
+-   Intune Managed Browser
 
--   Visor de imágenes administrado
+-   Visor de imágenes de Intune
 
--   Visor PDF administrado
+-   Visor de PDF de Intune
 
--   Reproductor de AV administrado
+-   Reproductor de AV de Intune
 
 -   Microsoft Word, Excel, PowerPoint
 
-Para obtener más información sobre las aplicaciones administradas en el dispositivo, póngase en contacto con el administrador de TI. Si no encuentra la información de contacto del administrador de la TI, vea si aparece en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+Para obtener más información sobre las aplicaciones administradas en el dispositivo, póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 
 ### Consulte también
 [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

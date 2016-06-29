@@ -31,8 +31,8 @@ Antes de configurar Intune, lea este tema y los demás requisitos que aparecen e
 
 |Característica de Intune |Exploradores admitidos|
 |---------|---------|
-|Consola de administración de Intune     |  Internet Explorer 10 o posterior<br /><br />Google Chrome (las versiones anteriores a la 42)<br /><br />Mozilla Firefox <br /><br />**Nota:** Edge no es compatible actualmente con la consola de administración.                      
-|Portal de administración de Office 365     |Todos los exploradores  |
+|Consola de administración de Intune     |  Internet Explorer 10 o posterior<br /><br />Google Chrome (las versiones anteriores a la 42)<br /><br />Mozilla Firefox <br /><br />**Nota:** La consola de administración no admite Microsoft Edge ni los exploradores móviles.                      
+|Portal de administración de Office 365     |Todos los exploradores, incluidos los exploradores móviles y los exploradores administrados  |
 |Sitio web del Portal de empresa     |**En dispositivos móviles:** use el explorador web predeterminado para cada plataforma compatible   <br /><br />**En equipos de Windows:** Internet Explorer 10 o posterior, o Microsoft Edge<br /><br />**En Mac OS X 10.9 o posterior:** Apple Safari    |
 
 
@@ -42,6 +42,6 @@ Antes de configurar Intune, lea este tema y los demás requisitos que aparecen e
 
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO3-->
 
 

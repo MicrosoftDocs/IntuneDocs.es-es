@@ -18,7 +18,7 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -41,8 +41,7 @@ Las directivas de MAM admiten aplicaciones que se ejecutan en:
 
 -   **Dispositivos que se administran e inscriben en una solución de administración de dispositivos móviles de terceros**.   Los dispositivos de esta categoría son normalmente dispositivos corporativos.
 
-  > [!NOTE]
-  > Las directivas de administración de la aplicaciones móviles no deben usarse con soluciones de contenedor seguro ni de administración de aplicaciones móviles de terceros.
+  > [!NOTE] Las directivas de administración de aplicaciones móviles no deben usarse con soluciones de contenedor seguro ni de administración de aplicaciones móviles de terceros.
 
 -   **Dispositivos no administrados**.  Los dispositivos de esta categoría normalmente son dispositivos de empleados no administrados ni inscritos en Intune ni en ninguna otra solución MDM.
 
@@ -64,6 +63,7 @@ Hay otras ventajas derivadas del uso de MDM con directivas de MAM, y las empresa
 
 -   Android 4 o posterior
 
+Los dispositivos Windows no son compatibles actualmente.
 ##  Cómo protegen las directivas de MAM los datos de las aplicaciones
 
 ####  Aplicaciones sin directivas de MAM:
@@ -77,8 +77,7 @@ Cuando se usan aplicaciones sin restricciones, se pueden entremezclar los datos 
 ![Imagen que muestra cómo se protegen los datos de la empresa cuando se aplican directivas de MAM ](../media/Apps_with_mobile_app_policies.png)
 
 Puede usar directivas de MAM para evitar que los datos de la empresa se guarden en el almacenamiento local del dispositivo y para restringir el movimiento de datos a otras aplicaciones que no estén protegidas por directivas de MAM. La configuración de las directivas de MAM incluye:
-- Directivas de reubicación de datos como
- **Impedir "Guardar como"**, **Restringir cortar, copiar y pegar**.
+- Directivas de reubicación de datos como **Impedir "Guardar como"**, **Restringir cortar, copiar y pegar**.
 - Opciones de directivas de acceso como **Requerir PIN sencillo para el acceso**, **Bloquear las aplicaciones administradas para que no se ejecuten en dispositivos con jailbreak o rooting**.
 
 ### Protección de datos con directivas de MAM en dispositivos administrados por una solución MDM:
@@ -138,6 +137,6 @@ Todas las aplicaciones móviles de Office admiten varias identidades.
 [Crear e implementar directivas de administración de aplicaciones móviles con Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

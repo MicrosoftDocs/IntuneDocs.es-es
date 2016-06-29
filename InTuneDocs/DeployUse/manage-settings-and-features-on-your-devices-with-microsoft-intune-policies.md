@@ -6,7 +6,7 @@ description:
 keywords:
 author: robstackmsft
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -18,7 +18,7 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
 #ms.tgt_pltfrm:
 #ms.custom:
@@ -50,17 +50,17 @@ Para obtener una lista completa de las directivas de Intune, consulte [Microsoft
 
 ## Crear una directiva de configuración
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), haga clic en **Directiva** &gt; **Directivas de configuración** &gt; **Agregar**.
+1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), elija **Directiva** &gt; **Directivas de configuración** &gt; **Agregar**.
 
 2.  Seleccione la directiva que quiera, elija usar la configuración recomendada para la directiva (si está disponible; puede cambiar esta configuración en otro momento), o crear una directiva personalizada con su propia configuración.
 
     > [!TIP] Para obtener ayuda a la hora de elegir la directiva correcta, consulte [Microsoft Intune policy reference](microsoft-intune-policy-reference.md) (Referencia de directivas de Microsoft Intune).
 
-3.  Cuando esté listo, haga clic en **Crear directiva**.
+3.  Cuando esté listo, elija **Crear directiva**.
 
 4.  En la pantalla **Crear directiva** , configure un nombre y una descripción opcional para la directiva.
 
-5.  Configure la directiva necesaria y, a continuación, haga clic en **Guardar directiva**.
+5.  Configure la directiva necesaria y después elija **Guardar directiva**.
 
     Si necesita ayuda con la configuración de alguna directiva, elija el tipo de directiva en la lista siguiente:
 
@@ -76,7 +76,7 @@ Para obtener una lista completa de las directivas de Intune, consulte [Microsoft
     - [Configuración de la directiva de términos y condiciones](terms-and-condition-policy-settings-in-microsoft-intune.md)
     - [Configuración general para dispositivos móviles (heredado)](mobile-device-security-policy-settings-in-microsoft-intune.md)
 
-4.  En el cuadro de diálogo de confirmación, haga clic en **Sí** para implementar la directiva ahora o haga clic en **No** para crear la directiva sin implementarla.
+4.  En el cuadro de diálogo de confirmación, elija **Sí** para implementar la directiva ahora o elija **No** para crear la directiva sin implementarla.
 
 Puede ver y editar la nueva directiva examinando las secciones de cada tipo de directiva en el área de trabajo **Directiva** .
 
@@ -89,35 +89,26 @@ Ahora que ha creado una directiva, probablemente querrá implementarla en uno o 
 
 ## Implementar una directiva de configuración
 
-1.  En el área de trabajo **Directiva** , seleccione la directiva que quiera implementar y, a continuación, haga clic en **Administrar implementación**.
+1.  En el área de trabajo **Directiva**, seleccione la directiva que quiera implementar y, después, haga clic en **Administrar la implementación**.
 
 2.  En el cuadro de diálogo **Administrar la implementación** :
 
-    -   **Para implementar la directiva**: seleccione uno o más grupos en los que quiera implementar la directiva y haga clic en **Agregar** &gt; **Aceptar**.
+    -   **Para implementar la directiva:** seleccione uno o más grupos en los que quiera implementar la directiva y seleccione **Agregar** &gt; **Aceptar**.
 
-    -   **Para cerrar el cuadro de diálogo sin implementarla**: haga clic en **Cancelar**.
+    -   **Para cerrar el cuadro de diálogo sin implementarla:** seleccione **Cancelar**.
 
 Cuando se selecciona una directiva implementada, puede ver más información acerca de la implementación en la parte inferior de la lista de directivas.
 
 ## Administrar directivas
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), haga clic en **Directiva**y, a continuación, busque y seleccione la directiva que desee administrar.
+1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), elija **Directiva**y, después, busque y seleccione la directiva que quiera administrar.
 
 2.  Seleccione una de las siguientes acciones:
 
 - **Editar**: abre las propiedades de la directiva seleccionada para que pueda realizar cambios.
 - **Eliminar**: elimina la directiva seleccionada.<br>Al eliminar una directiva, se quita de todos los grupos en los que se ha implementado.
-- **Administrar implementación**: seleccione el grupo en el que quiere implementar la directiva y haga clic en **Agregar**.
+- **Administrar implementación**: seleccione el grupo en el que quiere implementar la directiva y elija **Agregar**.
 
-## Tareas para las directivas de Intune
-
-### Para actualizar las directivas en un dispositivo y asegurarse de que están actualizadas (solo se aplica a los equipos con Windows que ejecutan el software cliente de Intune)
-
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), haga clic en **Grupos**y seleccione un grupo de dispositivos.
-
-2.  Seleccione los dispositivos en los que quiere actualizar las directivas y haga clic en **Tareas remotas** &gt; **Actualizar directivas**.
-
-3.  Haga clic en **Tareas remotas** en la esquina inferior derecha de la ventana de la consola de administración de Intune para comprobar el estado de la tarea.
 
 ## Preguntas más frecuentes sobre las directivas de Intune
 
@@ -187,25 +178,7 @@ Al eliminar una directiva o quitar un dispositivo de un grupo al que se le aplic
         - Tipo de contraseña obligatoria
         - Expiración de contraseña (días)
         - Recordar el historial de contraseñas
-        - Número de errores de inicio de sesión repetidos que se permiten antes de que se borre el dispositivo
-        - Minutos de inactividad antes de que se pida la contraseña
-        - Tipo de contraseña requerida: número mínimo de conjuntos de caracteres
-        - Permitir cámara
-        - Requerir cifrado en dispositivo móvil
-        - Permitir almacenamiento extraíble
-        - Permitir explorador web
-        - Permitir almacén de aplicaciones
-        - Permitir captura de pantalla
-        - Permitir geolocalización
-        - Permitir cuenta de Microsoft
-        - Permitir copiar y pegar
-        - Permitir Wi-Fi Tethering
-        - Permitir la conexión automática a zonas Wi-Fi gratuitas
-        - Permitir informar de zonas Wi-Fi
-        - Permitir el restablecimiento de la configuración de fábrica
-        - Permitir Bluetooth
-        - Permitir NFC
-        - Permitir Wi-Fi
+        - Número de errores de inicio de sesión repetidos que se permiten antes de que se borren los datos del dispositivo - Minutos de inactividad antes de que se pida la contraseña - Tipo de contraseña obligatoria - Número mínimo de conjuntos de caracteres - Permitir cámara - Requerir cifrado en dispositivo móvil - Permitir almacenamiento extraíble - Permitir explorador web - Permitir almacén de aplicaciones - Permitir captura de pantalla - Permitir geolocalización - Permitir cuenta de Microsoft - Permitir copiar y pegar - Permitir Wi-Fi Tethering - Permitir la conexión automática a zonas Wi-Fi gratuitas - Permitir informar de zonas Wi-Fi - Permitir el restablecimiento de la configuración de fábrica - Permitir Bluetooth - Permitir NFC - Permitir Wi-Fi
     
     - **iOS**: se quitan todas las configuraciones, excepto:
         - Permitir itinerancia de voz
@@ -220,9 +193,16 @@ Al eliminar una directiva o quitar un dispositivo de un grupo al que se le aplic
 - **Configuración del Firewall de Windows**: se restablece la configuración predeterminada para el sistema operativo del equipo. Para obtener más información, consulte [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) (Ayudar a proteger los equipos de Windows con Endpoint Protection para Microsoft Intune).
 
 
+### Cómo puedo actualizar las directivas en un dispositivo para asegurarme de que están actualizadas (solo se aplica a los equipos con Windows que ejecutan el software cliente de Intune)
+
+1.  En un grupo de dispositivos, seleccione los dispositivos en los que quiere actualizar las directivas y luego elija **Tareas remotas** &gt; **Actualizar directivas**.
+2.  Elija **Tareas remotas** en la esquina inferior derecha de la ventana de la consola de administración de Intune para comprobar el estado de la tarea.
+
+### ¿Dónde puedo encontrar ayuda para solucionar problemas en las directivas?
+
+Vea [Directivas de solución de problemas en Microsoft Intune](../Troubleshoot/troubleshoot-policies-in-microsoft-intune).
 
 
-
-<!--HONumber=May16_HO3-->
+<!--HONumber=Jun16_HO3-->
 
 

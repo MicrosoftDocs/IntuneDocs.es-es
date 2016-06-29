@@ -1,15 +1,29 @@
 ---
-title: Implementar aplicaciones en Microsoft Intune | Microsoft Intune
-ms.custom: na
-ms.reviewer: na
-ms.service: microsoft-intune
-ms.suite: na
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
+# required metadata
+
+title: Implementar aplicaciones | Microsoft Intune
+description:
+keywords:
 author: robstackmsft
+manager: jeffgilb
+ms.date: 04/28/2016
+ms.topic: article
+ms.prod:
+ms.service: microsoft-intune
+ms.technology:
+ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
+
+# optional metadata
+
+#ROBOTS:
+#audience:
+#ms.devlang:
+ms.reviewer: mghadial
+ms.suite: ems
+#ms.tgt_pltfrm:
+#ms.custom:
 ---
-# Implementar aplicaciones en Microsoft Intune
+# Deploy apps in Microsoft Intune (Implementar aplicaciones en Microsoft Intune)
 
 Use la información de este tema como ayuda para implementar aplicaciones de Microsoft Intune.
 
@@ -19,9 +33,9 @@ En este procedimiento, implementará la aplicación en los dispositivos o para l
 
 ### Para implementar una aplicación
 
-1. En la [consola de administrador de Microsoft Intune](https://manage.microsoft.com), haga clic en **Aplicaciones** &gt; **Aplicaciones** para ver una lista de las aplicaciones que administra.
+1. En la [consola de administrador de Microsoft Intune](https://manage.microsoft.com), haga clic en **Aplicaciones** &gt; **Aplicaciones** para ver la lista de aplicaciones que administra.
 
-2.  Seleccione la aplicación que quiere implementar y haga clic en **Administrar implementación**..
+2.  Seleccione la aplicación que quiere implementar y haga clic en **Administrar la implementación**.
 
 3.  En primer lugar, en el cuadro de diálogo *&lt;nombre de la aplicación&gt;*, en la página **Seleccionar grupos**, seleccione los grupos de usuarios o dispositivos en los que quiere implementar la aplicación.
 
@@ -39,7 +53,7 @@ En este procedimiento, implementará la aplicación en los dispositivos o para l
     [Vea qué aplicaciones de Microsoft son compatibles con las directivas de administración de aplicaciones móviles.](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)
 
 6. Si la aplicación que va a implementar es compatible con perfiles de VPN de Intune, se mostrará la página **Perfil de VPN**. En esta página, puede elegir asociar aplicaciones iOS con un perfil de VPN que haya implementado. La conexión VPN se abrirá automáticamente cuando se inicie la aplicación. Para disponer de un perfil de VPN, debe tener habilitada la configuración de perfil **VPN por aplicación**.
- Para obtener más información sobre cómo configurar perfiles de VPN, incluida la compatibilidad para asociar perfiles con aplicaciones, vea [Ayudar a los usuarios a conectarse a su trabajo con perfiles de VPN con Microsoft Intune](vpn-connections-in-microsoft-intune.md)..
+ Para obtener más información sobre cómo configurar perfiles de VPN, incluida la compatibilidad para asociar perfiles con aplicaciones, vea [Ayudar a los usuarios a conectarse a su trabajo con perfiles de VPN con Microsoft Intune](vpn-connections-in-microsoft-intune.md).
 
 ## Ejemplo
 
@@ -52,9 +66,9 @@ Si implementó la aplicación como **Requerida** en un dispositivo iOS, el usuar
 
 ## Pasos siguientes
 
-Después de implementar una aplicación, probablemente le interese supervisar su progreso. Para obtener más información, vea [Monitor apps in Microsoft Intune](monitor-apps-in-microsoft-intune.md) (Supervisar aplicaciones en Microsoft Intune)..
+Después de implementar una aplicación, probablemente le interese supervisar su progreso. Para obtener más información, vea [Monitor apps in Microsoft Intune](monitor-apps-in-microsoft-intune.md) (Supervisar aplicaciones en Microsoft Intune).
 
 
-<!--HONumber=May16_HO1-->
+<!--HONumber=Jun16_HO2-->
 
 

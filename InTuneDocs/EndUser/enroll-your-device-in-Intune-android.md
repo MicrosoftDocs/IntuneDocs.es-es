@@ -6,7 +6,7 @@ description:
 keywords:
 author: staciebarker
 manager: jeffgilb
-ms.date: 05/24/2016
+ms.date: 06/14/2016
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -30,7 +30,7 @@ ms.suite: ems
 
 Si su empresa o centro educativo usa Microsoft Intune, puede inscribir un dispositivo Android para obtener acceso al correo electrónico, a los archivos y a otros recursos de la empresa. Cuando los dispositivos se inscriben, el departamento de TI puede administrar esos recursos profesionales o educativos y mantenerlos protegidos, al tiempo que los usuarios pueden usar el dispositivo que elijan libremente para realizar su trabajo. Para más información sobre la inscripción, vea [What happens when I install the Company Portal app and enroll my device?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md) (¿Qué ocurre cuando se instala la aplicación de portal de empresa y se inscribe el dispositivo?).
 
-Estas instrucciones de inscripción son adecuadas para dispositivos Android de Samsung Knox y dispositivos Android "nativos" (distintos a Samsung Knox). Para saber si tiene un dispositivo Samsung Knox, vaya a **Configuración** &gt; **Acerca del teléfono**. Si no ve la palabra "Knox" en la lista, significa que el suyo es un dispositivo Android nativo.
+Estas instrucciones de inscripción son adecuadas para dispositivos Android de Samsung Knox y dispositivos Android "nativos" (distintos a Samsung Knox). Para saber si tiene un dispositivo Samsung Knox, vaya a **Configuración** &gt; **Acerca del dispositivo**. Si no ve "Versión KNOX" en la lista, significa que el suyo es un dispositivo Android nativo.
 
 Antes o después de la inscripción, se le pedirá que elija una categoría que describa de la mejor forma posible cómo usar el dispositivo. El administrador de TI usa esta categoría para ayudar a determinar a qué aplicaciones tiene acceso.
 
@@ -57,7 +57,7 @@ Si recibe un error al intentar inscribir el dispositivo en Intune, puede [enviar
 
     ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
 
-    Si ve este mensaje, pulse en **PERMITIR**. Pulsar en PERMITIR no entraña riesgos, puesto que **Microsoft nunca realiza ni controla sus llamadas de teléfono**. Google es responsable del texto del mensaje, que Microsoft no puede modificar. Al permitir el acceso, lo único que está haciendo es dejar que el dispositivo escriba registros de datos en su tarjeta SD, lo que, a cambio, permite mover esos registros usando un cable USB. Puede que tenga que usar esta función para enviar registros al administrador de TI si surgen problemas al usar la aplicación de portal de empresa. Sepa cómo [enviar errores al administrador de TI](send-enrollment-errors-to-your-it-administrator-android.md).
+    Si ve este mensaje, pulse en **PERMITIR**. Pulsar en PERMITIR no entraña riesgos, puesto que **Microsoft nunca realiza ni controla sus llamadas de teléfono**. Google es responsable del texto del mensaje, que Microsoft no puede modificar. Al permitir el acceso, lo único que está haciendo es dejar que el dispositivo escriba registros de datos en su tarjeta SD, lo que, a cambio, permite mover esos registros usando un cable USB.
 
     Si se deniega el acceso, el mensaje aparecerá de nuevo la próxima vez que inicie sesión en el Portal de empresa, pero puede desactivar los mensajes futuros si pulsa en la casilla **No volver a preguntar**.  Si más adelante decide permitir el acceso, vaya a **Configuración** &gt; **Aplicaciones** &gt; **Portal de empresa** &gt; **Permisos** &gt; **Teléfono**y active el permiso.
 
@@ -65,7 +65,7 @@ Si recibe un error al intentar inscribir el dispositivo en Intune, puede [enviar
 
     ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
 
-    Si ve este mensaje, pulse en **PERMITIR**. Pulsar en PERMITIR no entraña riesgos, puesto que **Microsoft nunca tiene acceso a sus contactos**. Google es responsable del texto del mensaje, que Microsoft no puede modificar. Al permitir el acceso, lo único que ocurre es que la aplicación de portal de empresa puede tener acceso a los registros de datos para ayudar a solucionar problemas con el dispositivo.
+    Si ve este mensaje, pulse en **PERMITIR**. Pulsar en PERMITIR no entraña riesgos, puesto que **Microsoft nunca tiene acceso a sus contactos**. Google es responsable del texto del mensaje, que Microsoft no puede modificar. Cuando permite el acceso, solo permite que la aplicación del Portal de empresa cree, use y administre su cuenta profesional.
 
     Si se deniega el acceso, el mensaje aparecerá de nuevo la próxima vez que pulse **Enviar datos**, pero puede desactivar los mensajes futuros si pulsa en la casilla **No volver a preguntar**. Si más adelante decide permitir el acceso, vaya a **Configuración** &gt; **Aplicaciones** &gt; **Portal de empresa** &gt; **Permisos** &gt; **Almacenamiento**y active el permiso.
 
@@ -97,7 +97,7 @@ Si recibe un error al intentar inscribir el dispositivo en Intune, puede [enviar
 
     ![Escriba el PIN o la contraseña](./media/and-enroll-6-PIN-native.png)
 
-13.  Siga las instrucciones correspondientes al tipo de dispositivo que use (Android nativo o Samsung Knox). Para saber si tiene un dispositivo Samsung Knox, vaya a **Configuración** &gt; **Acerca del teléfono**. Si no ve la palabra "Knox" en la lista, significa que el suyo es un dispositivo Android nativo.
+13.  Siga las instrucciones correspondientes al tipo de dispositivo que use (Android nativo o Samsung Knox). Para saber si tiene un dispositivo Samsung Knox, vaya a **Configuración** &gt; **Acerca del dispositivo**. Si no ve "Versión KNOX" en la lista, significa que el suyo es un dispositivo Android nativo.
 
     -   Dispositivo nativo (distinto de Samsung Knox): en la pantalla **Nombre del certificado**, pulse en **Aceptar** para aceptar el certificado predeterminado.
 
@@ -119,7 +119,7 @@ Si recibe un error al intentar inscribir el dispositivo en Intune, puede [enviar
 
     ![Pantalla Configuración de acceso a la empresa completada](./media/and-enroll-10-comp-access-setup-complete.png)
 
-Antes de intentar instalar aplicaciones de empresa, vaya a **Configuración** &gt; **Seguridad** y active **Orígenes desconocidos**. Si no activa esta opción antes de intentar instalar aplicaciones, verá el mensaje "Instalación bloqueada." Por motivos de seguridad, el teléfono está configurado para bloquear las instalaciones de aplicaciones procedentes de orígenes desconocidos.". Puede pulsar **Configuración** en el cuadro de diálogo del error para ir a la opción **Orígenes desconocidos**.
+Antes de intentar instalar aplicaciones de empresa, vaya a **Configuración** &gt; **Seguridad** y active **Orígenes desconocidos**. Si no activa esta opción antes de intentar instalar aplicaciones, verá el mensaje "Instalación bloqueada." Por motivos de seguridad, el dispositivo está configurado para bloquear las instalaciones de aplicaciones procedentes de orígenes desconocidos". Puede pulsar **Configuración** en el cuadro de diálogo del error para ir a la opción **Orígenes desconocidos**.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
