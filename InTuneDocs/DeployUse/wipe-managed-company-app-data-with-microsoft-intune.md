@@ -66,6 +66,6 @@ En la hoja **Administración de aplicaciones móviles de Intune** , encontrará 
 [Mediante el Portal de Azure](azure-portal-for-microsoft-intune-mam-policies.md)
 
 
-<!--HONumber=May16_HO1-->
+<!---HONumber=May16_HO1-->
 
 
