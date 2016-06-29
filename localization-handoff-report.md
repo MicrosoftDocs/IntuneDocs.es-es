@@ -1,11 +1,29 @@
 # <a name='report-top'></a> Localization Handoff Report
 
 ## Summary
- Total Files | 0
+ Total Files | 1
 
 ## File List
+ Source File | Status | Details 
+ ----------- | ------ | ------- 
+ [InTuneDocs\Understand\microsoft-intune-service-description.md](https://github.com/Microsoft/IntuneDocs-pr/blob/4794a22b3bdd1f28e6951b81e8379dc208fffc89/InTuneDocs/Understand/microsoft-intune-service-description.md) | OutofSyncHandedBackSuccess | [Details](#6cab0bacd9157323e342662609de8c9f20550d781251)
 
 ## Item Details
+##### <a name='6cab0bacd9157323e342662609de8c9f20550d781251'></a> Source: [InTuneDocs\Understand\microsoft-intune-service-description.md](https://github.com/Microsoft/IntuneDocs-pr/blob/4794a22b3bdd1f28e6951b81e8379dc208fffc89/InTuneDocs/Understand/microsoft-intune-service-description.md)
+* Status: OutofSyncHandedBackSuccess
+* Target File: 
+* Handoff File: [microsoft-intune-service-description.3bc765c5cdef218de681700b62ddae25f1de13e5.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/7c5d6bd60ecff0a1abd8fa98156fe5a8350a039a/ol-handoff/Microsoft/IntuneDocs-pr.es-es/master/microsoft-intune-service-description.3bc765c5cdef218de681700b62ddae25f1de13e5.es-es.xlf)
+* Handoff Datetime: 2016-06-29 17:52:18
+* Handoff Reason: Include
+* Archive File: 
+* Archive Datetime: 0001-01-01 00:00:00
+* Handback File: 
+* Handback Datetime: 0001-01-01 00:00:00
+* Current Target File: [InTuneDocs\Understand\microsoft-intune-service-description.md](https://github.com/Microsoft/IntuneDocs-pr.es-es/blob/82eb64432c5df5b799673567948fd61c1c4c2074/InTuneDocs/Understand/microsoft-intune-service-description.md)
+* Current Handback File: [microsoft-intune-service-description.3bc765c5cdef218de681700b62ddae25f1de13e5.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/15bb819d8425415d6e3c34b4d5623ac5b0fa128a/ol-handback/Microsoft/IntuneDocs-pr.es-es/master/microsoft-intune-service-description.3bc765c5cdef218de681700b62ddae25f1de13e5.es-es.xlf)
+* Current Handback Datetime: 2016-06-10 13:03:16
+* [Back to Top](#report-top)
+
 
 ## Error Details
 
