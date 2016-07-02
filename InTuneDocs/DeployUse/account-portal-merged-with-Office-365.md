@@ -1,27 +1,19 @@
 ---
-# required metadata
-
-title: El portal de cuentas se combinó con el portal de administración de Office 365 | Microsoft Intune
-description:
-keywords:
+title: "El portal de cuentas se combinó con el portal de administración de Office 365 | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 80f7d796-ad0e-4a50-a6e2-cdc52e7eb57e
+translationtype: Human Translation
+ms.sourcegitcommit: 928b79530ac278f78356f8d1ef9f267077634b5b
+ms.openlocfilehash: 505e446125c938a9a978eb2908cfa0873ed66fcc
 
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: [ALIAS]
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 
 ---
 
@@ -38,6 +30,7 @@ Asegúrese de actualizar los marcadores.
 Obtenga más información sobre la migración en el [blog de Microsoft Intune](https://blogs.technet.microsoft.com/microsoftintune/2015/09/01/intune-and-ems-subscriptions-now-available-in-the-office-365-portal/) o vaya directamente al nuevo [portal de administración de Office 365](https://portal.office.com/Admin/Default.aspx) en https://portal.office.com/Admin/Default.aspx con sus credenciales actuales.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
