@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Creación de directivas y publicación de una aplicación | Microsoft Intune
-description:
-keywords:
+title: "Creación de directivas y publicación de una aplicación | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2847c9af38ae0ddddc8d76d548ae7abddc63e4c1
+ms.openlocfilehash: b3b65a1fd1e426bf566f39382321a29e913f102c
+
 
 ---
 
@@ -63,7 +57,8 @@ La directiva aparece en la lista de directivas de configuración y se implementa
 
     ![admin-console-apps-workspace](./media/apps.png)
 
-    > [!NOTE] Al iniciar el **Editor de software de Microsoft Intune** por primera vez, se producirá una breve demora mientras se instala la aplicación.
+    > [!NOTE]
+    > Al iniciar el **editor de software de Intune** por primera vez, se producirá una breve demora mientras se instala la aplicación.
 
 2.  Revise la advertencia de seguridad y seleccione **Ejecutar**.
 
@@ -114,6 +109,7 @@ Enhorabuena. Acaba de completar el paso 6 de la *Guía de inicio rápido de Intu
 >[&larr; **Organizar usuarios y dispositivos**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)      [**Personalizar el portal de empresa** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-7.md)  
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

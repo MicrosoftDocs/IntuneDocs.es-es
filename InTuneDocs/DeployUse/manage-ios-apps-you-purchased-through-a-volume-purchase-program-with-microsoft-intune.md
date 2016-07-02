@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Administrar aplicaciones de iOS compradas a través de un programa de compras por volumen | Microsoft Intune
-description:
-keywords:
+title: "Administrar aplicaciones de iOS compradas a través de un programa de compras por volumen | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ccb494f64426e6c2f21a59d8f52b84afe534d721
+ms.openlocfilehash: 65ceaa5a8f6604463463820545a9d108839c00c1
+
 
 ---
 
@@ -76,20 +70,23 @@ Para reclamar una licencia, se debe cambiar la acción de implementación a **De
 
 Si un usuario con un dispositivo elegible intenta primero instalar una aplicación de PCV, se le pedirá que se una al Programa de Compras por Volumen de Apple. Debe hacerlo para poder continuar con la instalación de la aplicación.
 
-> [!TIP] Observe la columna **Estado de los términos y condiciones de PCV** para ver el estado de aceptación para cada usuario para el que se implementó la aplicación.
+> [!TIP]
+> Observe la columna **Estado de los términos y condiciones de PCV** para ver el estado de aceptación para cada usuario para el que se implementó la aplicación.
 
 Si no hay más licencias disponibles, no se podrá realizar la implementación.
 
 ## Para supervisar aplicaciones de PCV de Apple
 Puede supervisar qué aplicaciones de PCV están implementadas y el número de licencias que se usan desde el área de trabajo **Aplicaciones**, en el nodo **Software administrado** &gt; **Aplicaciones compradas por volumen**.
 
-> [!TIP] También puede usar la aplicación **Filtros** para examinar el estado de la instalación de cada aplicación.
+> [!TIP]
+> También puede usar la aplicación **Filtros** para examinar el estado de la instalación de cada aplicación.
 
 ### Consulte también
 [Deploy apps in Microsoft Intune (Implementar aplicaciones en Microsoft Intune)](deploy-apps-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
