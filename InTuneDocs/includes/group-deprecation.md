@@ -6,6 +6,6 @@
 >Se puede definir una nueva asignación de grupos de dispositivos dinámicos en Azure Active Directory según el nombre del perfil de inscripción corporativa. Este proceso garantiza que los dispositivos previamente asignados a un grupo de dispositivos se inscriban automáticamente en el grupo con la directiva y las aplicaciones implementadas. Pronto se publicarán más detalles.
 
 
-<!--HONumber=Jun16_HO2-->
+<!--HONumber=Jun16_HO4-->
 
 

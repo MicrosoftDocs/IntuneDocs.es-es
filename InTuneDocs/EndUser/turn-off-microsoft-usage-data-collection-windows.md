@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Desactivar la recopilación de datos de uso de Microsoft | Microsoft Intune
-description:
-keywords:
+title: "Desactivar la recopilación de datos de uso de Microsoft | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 51f1594d-0283-41d2-b4c3-a7a4ad70b369
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: 2c0f538ab85de4b76feb52bde71b9f325eacf17f
+
 
 ---
 
@@ -37,6 +31,7 @@ Puede desactivar la recopilación de datos en el dispositivo Windows configurand
 ### Consulte también
 [Usar un dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
