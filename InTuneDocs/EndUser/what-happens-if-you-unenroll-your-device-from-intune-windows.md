@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: ¿Qué ocurre si anula la inscripción del dispositivo de Intune? | Microsoft Intune
-description:
-keywords:
+title: "¿Qué ocurre si anula la inscripción del dispositivo de Intune? | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: priyar
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1244d931d1bd3db012fbcfe0bd055d1fd4f2d88a
+ms.openlocfilehash: f0108b884439aac9661c9f36f85b47d80209d155
+
 
 ---
 
@@ -43,7 +37,8 @@ Para más información sobre lo que ocurre, seleccione el vínculo de la secció
 
 -   El software Intune Endpoint Protection se quitará del equipo. Si el equipo tiene instalado otro software antivirus y está deshabilitado, dicho software podrá habilitarse de nuevo cuando se haya quitado Intune Endpoint Protection. Debe comprobar el equipo después de quitarlo del Portal de empresa.
 
-    > [!IMPORTANT] Si no se vuelve a habilitar el software antivirus o no hay instalado otro software antivirus, el equipo puede ser vulnerable a virus y malware.
+    > [!IMPORTANT]
+    > Si no se vuelve a habilitar el software antivirus o no hay otro software antivirus instalado, el equipo puede ser vulnerable a virus y malware.
 
 -   Todos los valores de configuración que se modificaron cuando se agregó el dispositivo (por ejemplo, deshabilitar la cámara) dejarán de aplicarse.
 
@@ -97,6 +92,7 @@ Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para 
 ### Consulte también
 [Usar un dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

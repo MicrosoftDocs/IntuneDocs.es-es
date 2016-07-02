@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: El dispositivo no tiene habilitado BitLocker | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 05/30/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e0c5993b-3fa5-411e-bae0-93fb66c49bea
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
+ms.openlocfilehash: dcc3872c4237023c80324ee3dca927e5095b87be
+
 
 ---
 
@@ -33,6 +27,7 @@ La organización requiere que se habilite BitLocker, que es software que cifra l
 ### Consulte también
 [Usar un dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
