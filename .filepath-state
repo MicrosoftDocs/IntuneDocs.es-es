@@ -721,9 +721,6 @@
   "d0456ebe7602cfda05694ea1354e07bd59789ab3": [
     "InTuneDocs\\EndUser\\media\\andr-3-warning-about-remove.png"
   ],
-  "6845f199402ab000359e2412abe6cdad232518cf": [
-    "InTuneDocs\\EndUser\\media\\andr-3-warning-about-remove.png"
-  ],
   "8b7dac0bef8505567a9d0485fe6e952a3f6aa305": [
     "InTuneDocs\\DeployUse\\mobile-device-security-policy-settings-in-microsoft-intune.md"
   ],
@@ -2177,13 +2174,7 @@
   "d331fa9c9cd16ec05782efb1e47ac44692cb0d9f": [
     "InTuneDocs\\DeployUse\\media\\app-lifecycle.png"
   ],
-  "7b378232f6a41ddac861ccf2973ab6ab17180b86": [
-    "InTuneDocs\\DeployUse\\media\\app-lifecycle.png"
-  ],
   "b0c8f6406b62e93d7452847c928898ea15dcd928": [
-    "InTuneDocs\\DeployUse\\media\\device-lifecycle.png"
-  ],
-  "2dbdf59f110ba01706fc5bea4a35dad3523c1587": [
     "InTuneDocs\\DeployUse\\media\\device-lifecycle.png"
   ],
   "5b3551ac48c41f27c2f2e59467a03eb527bffb46": [
