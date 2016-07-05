@@ -12,7 +12,6 @@ ms.technology:
 ms.assetid: 2780101b-f703-4b78-9d33-f68490b9382d
 ms.reviewer: esmich
 ms.suite: ems
-translationtype: Human Translation
 ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
 ms.openlocfilehash: 3cb6b8236afc227df9df34848cb81bcbe82a612e
 
