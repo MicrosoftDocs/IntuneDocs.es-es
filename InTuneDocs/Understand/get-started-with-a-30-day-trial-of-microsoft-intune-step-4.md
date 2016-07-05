@@ -1,33 +1,26 @@
 ---
-# required metadata
-
-title: Create policies and publish an app to evaluation users (Crear directivas y publicar una aplicación para los usuarios de evaluación) | Microsoft Intune
-description:
-keywords:
+title: "Crear directivas y publicar una aplicación para los usuarios de evaluación | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 9755499575118feecf33780ee29a70525f95508e
+ms.openlocfilehash: 658806c07ea78a327819376c1b47af53ac51f0f9
+
 
 ---
 
 
-# Create policies and publish an app to evaluation users (Crear directivas y publicar una aplicación para los usuarios de evaluación)
-Las directivas de Intune proporcionan una configuración con la que es más fácil: controlar la configuración de seguridad en dispositivos móviles, mantener la configuración de Firewall de Windows y Endpoint Protection de los equipos e implementar aplicaciones. Si está planeando usar Intune para los dispositivos que configura para su uso de producción después de la evaluación, es fundamental que siga las instrucciones de [Manage settings and features on your devices with Microsoft Intune policies (Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune)](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) y [Help secure Windows PCs with Endpoint Protection for Microsoft Intune (Ayuda para proteger los equipos de Windows con Endpoint Protection para Microsoft Intune)](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)..
+# Crear directivas y publicar una aplicación para los usuarios de evaluación
+Las directivas de Intune proporcionan una configuración con la que es más fácil: controlar la configuración de seguridad en dispositivos móviles, mantener la configuración de Firewall de Windows y Endpoint Protection de los equipos e implementar aplicaciones. Si está planeando usar Intune para los dispositivos que configura para su uso de producción después de la evaluación, es fundamental que siga las instrucciones de [Manage settings and features on your devices with Microsoft Intune policies (Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune)](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) y [Help secure Windows PCs with Endpoint Protection for Microsoft Intune (Ayuda para proteger los equipos de Windows con Endpoint Protection para Microsoft Intune)](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
 
 Puede realizar dos tipos de instalaciones de aplicación mediante Intune. El primer tipo es una **instalación requerida**, que implementa automáticamente la aplicación en los equipos administrados. El segundo es una **instalación disponible**, que implementa la aplicación o un vínculo a la aplicación de Portal de empresa de Intune, de forma que los usuarios pueden elegir si quieren instalarlo en sus equipos o en sus dispositivos móviles.
 
@@ -37,15 +30,15 @@ Por medio de estos pasos, se establece una directiva de configuración de dispos
 
 ## Creación e implementación de una directiva de configuración de dispositivo móvil
 
-1.  Abra la [consola de administración de Intune](https://manage.microsoft.com/)..
+1.  Abra la [consola de administración de Intune](https://manage.microsoft.com/).
 
 2.  En el panel de la izquierda, elija el icono **Directiva**.
 
-3.  En la lista **Tareas** de la página **Información general de directivas**, elija **Agregar directiva**..
+3.  En la lista **Tareas** de la página **Información general de directivas**, elija **Agregar directiva**.
 
-4.  En la lista de directivas, expanda la plataforma para la que quiere crear una directiva, seleccione **Configuración general**, elija **Crear e implementar una directiva con la configuración recomendada** y, después, haga clic en **Crear directiva**..
+4.  En la lista de directivas, expanda la plataforma para la que quiere crear una directiva, seleccione **Configuración general**, elija **Crear e implementar una directiva con la configuración recomendada** y, después, haga clic en **Crear directiva**.
 
-5.  Cuando se le pida que **Seleccione los grupos para los que quiere implementar esta directiva**, seleccione **Mis usuarios de prueba** de la lista y elija **Agregar** &gt; **Aceptar**..
+5.  Cuando se le pida que **Seleccione los grupos para los que quiere implementar esta directiva**, seleccione **Mis usuarios de prueba** de la lista y elija **Agregar** &gt; **Aceptar**.
 
 La directiva aparecerá en la lista de directivas de configuración y se implementará al grupo **Mis usuarios de pruebas** . Haga doble clic en la directiva para ver su configuración.
 
@@ -56,11 +49,11 @@ La directiva aparecerá en la lista de directivas de configuración y se impleme
     > [!NOTE]
     > Al iniciar el **editor de software de Intune** por primera vez, se producirá una breve demora mientras se instala la aplicación.
 
-2.  Revise la advertencia de seguridad y elija **Ejecutar**..
+2.  Revise la advertencia de seguridad y elija **Ejecutar**.
 
-3.  En la página **Antes de comenzar**, elija **Siguiente**..
+3.  En la página **Antes de comenzar**, elija **Siguiente**.
 
-4.  En la página **Instalación de software**, en **Seleccione cómo debe ponerse a disposición de los dispositivos este software**, seleccione **Vínculo externo**..
+4.  En la página **Instalación de software**, en **Seleccione cómo debe ponerse a disposición de los dispositivos este software**, seleccione **Vínculo externo**.
 
 5.  Escriba el vínculo externo del software en **Especificar la dirección URL** y elija **Siguiente**. Asegúrese de comenzar la dirección URL con **https://**. Para la aplicación de Skype, use el vínculo siguiente que coincida con la plataforma de dispositivo móvil que emplea:
 
@@ -86,13 +79,13 @@ La directiva aparecerá en la lista de directivas de configuración y se impleme
 
 7.  En la página **Resumen**, compruebe la información del software y elija **Cargar**. Elija **Cerrar** para salir del asistente.
 
-8.  En la [consola de administración de Intune](https://manage.microsoft.com/), elija **Aplicaciones** &gt; **Aplicaciones** &gt; **Skype** &gt; **Administrar la implementación**..
+8.  En la [consola de administración de Intune](https://manage.microsoft.com/), elija **Aplicaciones** &gt; **Aplicaciones** &gt; **Skype** &gt; **Administrar la implementación**.
 
-9. En la página **Seleccionar grupos**, seleccione **Mis usuarios de prueba** para implementar el software en ese grupo de usuarios y, después, elija **Agregar** &gt; **Siguiente**..
+9. En la página **Seleccionar grupos**, seleccione **Mis usuarios de prueba** para implementar el software en ese grupo de usuarios y, después, elija **Agregar** &gt; **Siguiente**.
 
 10. En la página **Acción de implementación** , seleccione **Instalación disponible** en la columna **Aprobación** para su grupo.
 
-11. Elija **Finalizar**..
+11. Elija **Finalizar**.
 
 La aplicación de Skype ahora se puede instalar en dispositivos móviles desde el Portal de empresa, pero primero debe instalar el software de Intune en equipos y dispositivos móviles.
 
@@ -101,9 +94,10 @@ Enhorabuena. Acaba de completar el paso 4 del tutorial de *evaluación de Micros
 
 >[!div class="step-by-step"]
 
->[&larr; **Crear grupos de**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)     [**Inscribir dispositivos** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)  
+>[!div class="step-by-step"]  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
