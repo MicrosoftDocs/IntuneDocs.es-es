@@ -1,26 +1,11 @@
 # <a name='report-top'></a> Localization Handback Report
 
 ## Summary
- Total Files | 1
+ Total Files | 0
 
 ## File List
- Source File | Status | Details 
- ----------- | ------ | ------- 
- [InTuneDocs\includes\CPEnrollmentTermsAndConditions_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/CPEnrollmentTermsAndConditions_md.md) | InSyncHandedBackSuccess | [Details](#3912b65a31e52de663cbbf07329e7c92b88f604a598)
 
 ## Item Details
-##### <a name='3912b65a31e52de663cbbf07329e7c92b88f604a598'></a> Source: [InTuneDocs\includes\CPEnrollmentTermsAndConditions_md.md](https://github.com/Microsoft/IntuneDocs-pr/blob/56ab8c21f7da490c3bf0d541c7026e2ed84926dd/InTuneDocs/includes/CPEnrollmentTermsAndConditions_md.md)
-* Status: InSyncHandedBackSuccess
-* Target File: [InTuneDocs\includes\CPEnrollmentTermsAndConditions_md.md](https://github.com/Microsoft/IntuneDocs-pr.es-es/blob/43ec4661542cf5a2fc0c8ad20deea07a992350cb/InTuneDocs/includes/CPEnrollmentTermsAndConditions_md.md)
-* Handoff File: [CPEnrollmentTermsAndConditions_md.0affcf5f07117612255945872df4fe133c62475f.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/da7f01f0b1481f925cded59a3431d51de4023d6f/ol-handoff/Microsoft/IntuneDocs-pr.es-es/master/CPEnrollmentTermsAndConditions_md.0affcf5f07117612255945872df4fe133c62475f.es-es.xlf)
-* Handoff Datetime: 2016-06-27 10:41:47
-* Handoff Reason: Include
-* Archive File: [CPEnrollmentTermsAndConditions_md.0affcf5f07117612255945872df4fe133c62475f.es-es.xlf](https://github.com/Microsoft/EM.handoff/blob/e68e976a2eb3e4a1c1ce0efe365d7bbb20acb437/ol-handoff/Microsoft/IntuneDocs-pr.es-es/master/archive/CPEnrollmentTermsAndConditions_md.0affcf5f07117612255945872df4fe133c62475f.es-es.xlf)
-* Archive Datetime: 2016-07-02 01:02:24
-* Handback File: [CPEnrollmentTermsAndConditions_md.0affcf5f07117612255945872df4fe133c62475f.es-es.xlf](https://github.com/Microsoft/EM.handback/blob/e04f3d9930073f093911b964acda62fde751ea84/ol-handback/Microsoft/IntuneDocs-pr.es-es/master/CPEnrollmentTermsAndConditions_md.0affcf5f07117612255945872df4fe133c62475f.es-es.xlf)
-* Handback Datetime: 2016-07-11 21:19:33
-* [Back to Top](#report-top)
-
 
 ## Error Details
 
