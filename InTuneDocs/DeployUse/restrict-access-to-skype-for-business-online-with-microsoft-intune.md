@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Restringir el acceso a Skype Empresarial Online | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 5cbf748ffee8fbb53f7e64a5499f06d5bd89c415
+ms.openlocfilehash: c26f3b732eb42903c72e8655542ee1ed586f5c67
+
 
 ---
 
@@ -39,7 +32,7 @@ Cuando un usuario determinado intenta usar Skype Empresarial Online en su dispos
 **Antes** de configurar una directiva de acceso condicional para Skype Empresarial Online, debe:
 - Tener una **suscripción de Skype Empresarial Online** y asignar una licencia de Skype Empresarial Online a los usuarios.
 - Tener una suscripción a **Enterprise Mobility Suite** o **Azure Active Directory Premium**.
--   **Habilitar la autenticación moderna** para Skype Empresarial Online. Iniciar sesión en Microsoft Connect y rellenar [este formulario](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715) para inscribirse en el programa de autenticación moderna.
+-   [Habilitar la autenticación moderna](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) para Skype Empresarial Online. 
 -  Todos los usuarios finales deben usar **Skype Empresarial Online**. Si tiene una implementación con Skype Empresarial Online y Skype Empresarial local, la directiva de acceso condicional no se aplicará a los usuarios finales.
 
     El dispositivo que necesita tener acceso a Skype Empresarial Online:
@@ -119,6 +112,7 @@ Seleccione cualquier grupo de dispositivos móviles y, a continuación, en la pe
 * **Dispositivos registrados en AAD y conformes**: estos dispositivos pueden tener acceso a Skype Empresarial Online.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 

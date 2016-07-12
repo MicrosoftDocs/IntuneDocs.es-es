@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Personalizar el portal de empresa | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed26d65b98a0ae1bbc4fbac682fb53fddd50b4e5
+ms.openlocfilehash: 45f574a975c94338c4543c0cdbc3aef549030601
+
 
 ---
 
@@ -32,7 +26,7 @@ El [!INCLUDE[wit_iwportal_1](../includes/wit_iwportal_1_md.md)] es el lugar dond
 > [!TIP]
 > Al personalizar el portal de empresa, los valores de configuración se aplicarán tanto al sitio web como a las aplicaciones del portal de empresa.
 
-Con la personalización del portal de empresa, es más fácil ofrecer una experiencia conocida y útil a los usuarios finales. Para proceder a la personalización, inicie sesión en la [consola de administración de Microsoft Intune](https://manage.microsoft.com) como administrador de inquilinos o de servicios, elija **Administración** &gt; **Portal de empresa** y configurar el portal de empresa.
+Con la personalización del portal de empresa, es más fácil ofrecer una experiencia conocida y útil a los usuarios finales. Para proceder a la personalización, inicie sesión en la [consola de administrador de Microsoft Intune](https://manage.microsoft.com) como administrador de inquilinos o de servicios, elija **Administración** &gt; **Portal de empresa** y configure el Portal de empresa.
 
 ![admin-console-admin-workspace-comp-portal-settings](./media/companyportal.png)
 
@@ -44,7 +38,7 @@ El nombre de la empresa se muestra como título del portal de empresa. La inform
     |Nombre de la empresa|40|Es el nombre que se muestra como título del portal de empresa.|
     |Nombre del contacto del departamento de TI|40|Es el nombre que se muestra en la página **Contacto de TI**.|
     |Número de teléfono del departamento de TI|20|Es el número de contacto que se muestra en la página **Contacto de TI**.|
-    |Dirección de correo electrónico del departamento de TI|40|Es la dirección de contacto que se muestra en la página **Contacto de TI**. Debe especificar una dirección de correo electrónico válida en el formato **alias@nombrededominio.com**..|
+    |Dirección de correo electrónico del departamento de TI|40|Es la dirección de contacto que se muestra en la página **Contacto de TI**. Debe especificar una dirección de correo electrónico válida en el formato **alias@nombrededominio.com**.|
     |Información adicional|120|Se muestra en la página **Contacto de TI**.|
     |Dirección URL de la declaración de privacidad de la empresa|79|Puede especificar su propia declaración de privacidad de la empresa, que aparece cuando los usuarios hacen clic en los vínculos de privacidad del portal de empresa. Debe escribir una dirección URL válida con el formato https://www.contoso.com.|
 
@@ -69,12 +63,13 @@ Puede personalizar su portal de empresa con su logotipo de empresa, nombre de em
 Después de guardar los cambios puede usar los vínculos que aparecen en la parte inferior de la página del **Portal de empresa** de la consola de administración para ver el sitio web del portal de empresa. Estos vínculos no se pueden cambiar. Cuando un usuario inicia sesión, estos vínculos muestran las suscripciones en el portal de empresa.
 
 ### Pasos siguientes
-Enhorabuena. Acaba de completar el paso 7 de la *Guía de inicio rápido de Intune*..
+Enhorabuena. Acaba de completar el paso 7 de la *Guía de inicio rápido de Intune*.
 >[!div class="step-by-step"]
 
->[&larr; **Crear directivas y aplicaciones**](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)       [**Inscribir dispositivos** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)  
+>[&larr; **Crear directivas y aplicaciones**](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md) [**Inscribir dispositivos** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)  
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Guía de inicio rápido de Intune | Microsoft Intune
-description:
-keywords:
+title: "Guía de inicio rápido de Intune | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ed26d65b98a0ae1bbc4fbac682fb53fddd50b4e5
+ms.openlocfilehash: ca0ca74357b59d9cc6fbf4ec7eb237dff972c411
+
 
 ---
 
@@ -41,7 +35,7 @@ Los pasos descritos en esta guía de inicio rápido comparten muchos de los paso
 -   Personalización de las características de Intune para su uso en producción
 
 >[!TIP]
->Si adquiere al menos 150 licencias de Microsoft Intune en un plan elegible, puede usar el "beneficio del Centro FastTrack", un servicio donde los especialistas en Microsoft trabajan con usted para preparar su entorno para Intune. Vea [Descripción del beneficio de servicio de Microsoft Intune](https://technet.microsoft.com/library/mt228265.aspx)..
+>Si adquiere al menos 150 licencias de Microsoft Intune en un plan elegible, puede usar el "beneficio del Centro FastTrack", un servicio donde los especialistas en Microsoft trabajan con usted para preparar su entorno para Intune. Consulte [Descripción del servicio Microsoft Intune](https://technet.microsoft.com/library/mt228265.aspx).
 
 
 ## Antes de comenzar
@@ -55,7 +49,7 @@ Use esta guía cuando empiece con una suscripción de pago y esté listo para im
 ¿Listo para comenzar? Para empezar a usar la suscripción de pago de Intune, necesitará los siguientes elementos:
 
 ### Un dispositivo con un explorador web habilitado para Silverlight
-Lo necesitará para tener acceso a la consola de administración de Intune, donde podrá administrar dispositivos, aplicaciones y directivas. También necesitará un explorador web para tener acceso al portal de empresa basado en web cuando no pueda tener acceso a la aplicación de portal de empresa desde un dispositivo móvil. Para facilitar las cosas, puede usar la opción de "modo de privacidad" en el mismo explorador que usa para la administración de Intune. Por ejemplo, en Internet Explorer, puede hacer clic en **Herramientas** &gt; **Exploración de InPrivate**.).
+Lo necesitará para tener acceso a la consola de administración de Intune, donde podrá administrar dispositivos, aplicaciones y directivas. También necesitará un explorador web para tener acceso al portal de empresa basado en web cuando no pueda tener acceso a la aplicación de portal de empresa desde un dispositivo móvil. Para facilitar las cosas, puede usar la opción de "modo de privacidad" en el mismo explorador que usa para la administración de Intune. Por ejemplo, en Internet Explorer, puede hacer clic en **Herramientas** &gt; **Exploración de InPrivate**.
 
 >[!TIP]
 >Debido a este requisito, no se admite el explorador de Microsoft Edge para tener acceso a la consola de administración de Intune.
@@ -67,11 +61,11 @@ Si va a administrar dispositivos iOS o Windows Phone con Intune, necesitará cer
 - No es necesario ningún certificado para los usuarios de **Windows Phone 8.1** que instalen la aplicación de portal de empresa desde la Tienda. Pero se pide un [certificado de firma de código de Symantec](https://products.websecurity.symantec.com/orders/enrollment/microsoftCert.do) para **Windows Phone 8.0** o para usar Intune para implementar la aplicación de portal de empresa en dispositivos Windows Phone 8.1.
 
 >[!NOTE]
->En esta guía de inicio rápido se da por supuesto que los usuarios obtendrán la aplicación del portal de empresa de la Tienda desde un dispositivo Windows Phone 8.1 o posterior. Para obtener información sobre el soporte técnico de Windows Phone 8.0, vea [Set up Windows Phone 8.0 management with Microsoft Intune](/Intune/deploy-use/set-up-windows-phone-8.0-management-with-microsoft-intune) (Configurar la administración de Windows Phone 8.0 con Microsoft Intune)..
+>En esta guía de inicio rápido se da por supuesto que los usuarios obtendrán la aplicación del portal de empresa de la Tienda desde un dispositivo Windows Phone 8.1 o posterior. Para más información sobre el soporte técnico de Windows Phone 8.0, consulte [Configurar la administración de dispositivos para Windows Phone 8.0](/Intune/deploy-use/set-up-windows-phone-8.0-management-with-microsoft-intune).
 
-- No hay ningún requisito de certificado para **equipos de Windows** o **dispositivos de Windows RT** cuando se realiza la inscripción de equipos con Windows como dispositivos o cuando se [instala el cliente de equipos de Windows para Microsoft Intune](/intune/deploy-use/install-the-windows-pc-client-with-microsoft-intune)..
+- No hay ningún requisito de certificado para **equipos de Windows** o **dispositivos de Windows RT** cuando se realiza la inscripción de equipos con Windows como dispositivos o cuando se [instala el cliente de equipos de Windows para Microsoft Intune](/intune/deploy-use/install-the-windows-pc-client-with-microsoft-intune).
 
-- En el caso de dispositivos **iOS** o **Mac OS X**, deberá pedir un certificado del servicio de notificaciones push de Apple, tal como se describe en el paso 3 de [Set up iOS and Mac management with Microsoft Intune](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) (Configurar la administración de iOS y Mac con Microsoft Intune)..
+- En el caso de dispositivos **iOS** o **Mac OS X**, deberá pedir un certificado del servicio de notificaciones push de Apple, tal como se describe en el paso 3 de [Configurar la administración de dispositivos iOS y Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).
 
 ### Pasos siguientes
 Es el momento de empezar a usar la Guía de inicio rápido de Intune.
@@ -80,6 +74,7 @@ Es el momento de empezar a usar la Guía de inicio rápido de Intune.
 [**Iniciar sesión en Intune** &rarr;](start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
