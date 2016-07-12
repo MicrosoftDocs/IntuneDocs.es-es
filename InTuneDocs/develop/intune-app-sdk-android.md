@@ -1,38 +1,32 @@
 ---
-# required metadata
-
-title: Guía para desarrolladores acerca del SDK de aplicaciones de Microsoft Intune para Android | Microsoft Intune
-description:
-keywords:
+title: "Guía para desarrolladores acerca del SDK de aplicaciones de Microsoft Intune para Android | Microsoft Intune"
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2915cca314b489bbcb590d01b03a0b38134fa619
+ms.openlocfilehash: d2e4b6903d86b79edd9c758b2ce51733831e785a
+
 
 ---
 
 # Guía para desarrolladores de Android acerca del SDK para aplicaciones de Microsoft Intune
 
-> [!NOTE] Puede que quiera leer primero la [Información general del SDK para aplicaciones de Intune](intune-app-sdk.md), que cubre las características actuales del SDK y describe cómo preparar la integración en cada plataforma compatible. 
+> [!NOTE]
+> Puede que quiera leer primero la [Información general del SDK para aplicaciones de Intune](intune-app-sdk.md), que cubre las características actuales del SDK y describe cómo preparar la integración en cada plataforma compatible. 
 
 # Qué hay en el SDK 
 
-El SDK para aplicaciones de Intune para Android es una biblioteca de Android estándar que no tiene dependencias externas. 
-El SDK se compone de:  
+El SDK para aplicaciones de Intune para Android es una biblioteca de Android estándar que no tiene dependencias externas. El SDK se compone de:  
 
 * **`Microsoft.Intune MAM.SDK.jar`**: interfaces necesarias para habilitar MAM en una aplicación, así como la interoperabilidad con la aplicación Portal de empresa de Microsoft Intune. Las aplicaciones deben especificarla como una referencia a la biblioteca Android.
 
@@ -370,6 +364,7 @@ El SDK de Intune mantiene el contrato proporcionado por la API de Android, aunqu
 * Evite usar cualquier API de manera ambigua. Por ejemplo, no use `Activity.startActivityForResult/onActivityResult` sin comprobar antes si requestCode creará un comportamiento extraño.
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

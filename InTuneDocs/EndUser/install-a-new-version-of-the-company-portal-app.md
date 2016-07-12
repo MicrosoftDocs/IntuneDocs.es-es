@@ -10,6 +10,7 @@ ms.prod:
 ms.service: 
 ms.technology: 
 ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
+translationtype: Human Translation
 ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
 ms.openlocfilehash: 29d409f272800e0c5ccaf71494b5e98d1edaae4e
 
@@ -35,7 +36,7 @@ La AppStore de Apple le avisará cuando haya disponible una nueva versión del p
 2.  Siga las instrucciones de instalación.
 
     > [!NOTE]
-    > [!NOTE] Si no puede tener acceso a la Tienda Windows, póngase en contacto con el administrador de TI.
+    > Si no puede tener acceso a la Tienda Windows, póngase en contacto con el administrador de TI.
 
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
