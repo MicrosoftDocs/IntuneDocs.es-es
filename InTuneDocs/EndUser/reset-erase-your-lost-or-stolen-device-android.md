@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Restablecer (borrar) un dispositivo perdido o robado | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 05/31/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8bb47a5c-f66d-491b-b909-e6a8844f773a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
+ms.openlocfilehash: 63799f8242db4618ea7b71af9608e30b98a8a27a
+
 
 ---
 
@@ -32,7 +26,8 @@ Si pierde o le roban el teléfono Android, puede restablecer los valores predete
 
 Para obtener información sobre lo que ocurre cuando se restablece un dispositivo, consulte [What happens if you reset your device using the Company Portal (¿Qué ocurre al restablecer un dispositivo mediante el portal de empresa?)](what-happens-if-you-reset-your-device-using-the-company-portal-android.md).
 
-> [!WARNING] Al restablecer los valores predeterminados de fábrica del dispositivo, quita su información personal y profesional o educativa de este.
+> [!WARNING] 
+> Al restablecer los valores predeterminados de fábrica del dispositivo, quita su información personal y profesional o educativa de este.
 
 1.  En el explorador, abra el [sitio web del Portal de empresa](http://portal.manage.microsoft.com) e inicie sesión con su cuenta profesional o educativa.
 
@@ -47,6 +42,7 @@ Si no puede restablecer el dispositivo perdido o robado, pida al administrador d
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

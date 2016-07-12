@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Wi-Fi con una clave precompartida | Microsoft Intune
 description: 
-keywords:
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: 
+ms.reviewer: karanda
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 066baae17da1fd399f4f7d10784719e3dc46f235
+ms.openlocfilehash: 632adf3dccf40dd2b361d170f501a851bf0fda38
+
 
 
 ---
@@ -188,13 +182,13 @@ También puede crear un archivo XML desde una conexión Wi-Fi existente:
 
 ## Implementar la directiva
 
-1.  En el área de trabajo **Directiva**, seleccione la directiva que quiera implementar y, luego, haga clic en **Administrar implementación**..
+1.  En el área de trabajo **Directiva** , seleccione la directiva que quiera implementar y, a continuación, haga clic en **Administrar implementación**.
 
 2.  En el cuadro de diálogo **Administrar la implementación** :
 
-    -   **Para implementar la directiva**: seleccione uno o más grupos en los que quiera implementar la directiva y haga clic en **Agregar**  &gt;  **Aceptar**..
+    -   **Para implementar la directiva**: seleccione uno o más grupos en los que quiera implementar la directiva y haga clic en **Agregar** &gt; **Aceptar**.
 
-    -   **Para cerrar el cuadro de diálogo sin implementarla**: haga clic en **Cancelar**..
+    -   **Para cerrar el cuadro de diálogo sin implementarla**: haga clic en **Cancelar**.
 
 Cuando se selecciona una directiva implementada, puede ver más información acerca de la implementación en la parte inferior de la lista de directivas.
 
@@ -202,6 +196,7 @@ Cuando se selecciona una directiva implementada, puede ver más información ace
 [Wi-Fi connections in Microsoft Intune (Conexiones Wi-Fi en Microsoft Intune)](wi-fi-connections-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

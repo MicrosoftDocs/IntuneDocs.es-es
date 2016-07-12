@@ -1,34 +1,28 @@
 ---
-# required metadata
-
 title: Directivas de Firewall para equipos Windows | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 9f338efe3ef40da3db40c12d1a18c4122e65dc5d
+
 
 ---
 
 # Ayudar a proteger los equipos de Windows mediante directivas del Firewall de Windows en Microsoft Intune
 Microsoft Intune puede ayudarle a proteger los equipos Windows administrados de varias maneras. Una de ellas es el uso de directivas que le permiten configurar el Firewall de Windows en los equipos.
 
-Si aún no ha instalado el cliente de equipos Windows de Intune en sus PC, consulte [Instalar el cliente de equipos Windows con Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md)..
+Si aún no ha instalado el cliente de equipos Windows de Intune en sus equipos PC, vea [Instalar el cliente de equipos Windows con Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 Use la información de las siguientes secciones como ayuda para configurar, implementar y supervisar las directivas del Firewall de Windows en equipos Windows.
 
@@ -36,7 +30,7 @@ Use la información de las siguientes secciones como ayuda para configurar, impl
 La directiva de Firewall de Windows le permite crear e implementar la configuración que controla el Firewall de Windows en los equipos administrados. No se puede administrar excepciones personalizadas para Firewall de Windows y esta configuración no afecta a ningún firewall que no sea de Microsoft.
 
 > [!NOTE]
-> Si la directiva de Microsoft Intune y la directiva de grupo están configuradas para administrar la misma opción en el equipo, la opción de la directiva de grupo anula la opción de la directiva de Microsoft Intune. Para obtener información sobre cómo evitar conflictos entre las directivas de Intune y la directiva de grupo, consulte [Resolver conflictos de directivas de Microsoft Intune y GPO](resolve-gpo-and-microsoft-intune-policy-conflicts.md)..
+> Si la directiva de Microsoft Intune y la directiva de grupo están configuradas para administrar la misma opción en el equipo, la opción de la directiva de grupo anula la opción de la directiva de Microsoft Intune. Para obtener información sobre cómo evitar conflictos entre las directivas de Intune y la directiva de grupo, vea [Resolver conflictos de directivas de Microsoft Intune y GPO](resolve-gpo-and-microsoft-intune-policy-conflicts.md).
 >
 > Si quiere implementar la configuración de Firewall de Windows en equipos que ejecutan Windows Vista, primero debe instalar la [revisión KB971800](http://support2.microsoft.com/kb/971800) en estos equipos.
 
@@ -48,9 +42,9 @@ La directiva de Firewall de Windows le permite crear e implementar la configurac
 
 ## Para configurar una directiva de Firewall de Windows
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), seleccione **Directiva** &gt; **Agregar directiva**..
+1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), seleccione **Directiva** &gt; **Agregar directiva**.
 
-2.  Configurar e implementar una directiva de **Configuración de Firewall de Windows** . Puede usar la configuración recomendada o personalizar la configuración. Si necesita más información sobre cómo crear e implementar directivas, consulte [Tareas comunes de administración de PC Windows con el cliente de equipo de Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)..
+2.  Configurar e implementar una directiva de **Configuración de Firewall de Windows** . Puede usar la configuración recomendada o personalizar la configuración. Si necesita más información sobre cómo crear e implementar directivas, vea [Tareas comunes de administración de PC Windows con el cliente de equipo de Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
     En la sección siguiente se muestran los valores que puede configurar en la directiva y también los valores predeterminados que se utilizarán si no se personaliza la directiva.
 
@@ -73,7 +67,7 @@ Con esta configuración de directiva, el Firewall de Windows bloquea el tráfico
 
 ### Notificar al usuario cuando Firewall de Windows bloquee un nuevo programa
 
-Esta configuración de directiva define si el Firewall de Windows envía una notificación al usuario del equipo al bloquear el tráfico de red entrante cuando el equipo administrado está conectado a un dominio (por ejemplo, en el área de trabajo), a una red privada (de confianza; por ejemplo, una red doméstica) o a una red pública que no sea de confianza (por ejemplo, en una cafetería). El valor predeterminado para cada uno de estos valores es **Sí**..
+Esta configuración de directiva define si el Firewall de Windows envía una notificación al usuario del equipo al bloquear el tráfico de red entrante cuando el equipo administrado está conectado a un dominio (por ejemplo, en el área de trabajo), a una red privada (de confianza; por ejemplo, una red doméstica) o a una red pública que no sea de confianza (por ejemplo, en una cafetería). El valor predeterminado para cada uno de estos valores es **Sí**.
 
 
 ### Excepciones predefinidas
@@ -124,6 +118,7 @@ Después de configurar los valores básicos indicados anteriormente, puede confi
 [Directivas para proteger equipos de Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

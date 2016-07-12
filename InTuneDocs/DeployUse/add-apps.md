@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Agregar aplicaciones | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f85e91b985d9d30c71dff9e0d910293354fc40b7
+ms.openlocfilehash: 119a795697feb0cdbc2b93293cd66df7e77147cf
+
 
 ---
 
@@ -83,6 +76,32 @@ Las aplicaciones basadas en vínculos externos no se almacenan en el espacio de 
 Permite administrar e implementar aplicaciones iOS gratuitas desde la tienda de aplicaciones. También permite asociar [directivas de administración de aplicaciones móviles](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) a [aplicaciones compatibles](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) y revisar su estado en la consola del administrador.<br /><br />Las aplicaciones iOS administradas no se almacenan en el espacio de almacenamiento en nube de Intune.
 > [!TIP] Las opciones para dispositivos móviles no estarán disponibles hasta que [establezca la entidad de administración de dispositivos móviles](get-ready-to-enroll-devices-in-microsoft-intune.md) en Intune.
 
+## El editor de software de Intune
+El **editor de software de Microsoft Intune** se inicia al agregar o modificar aplicaciones en la consola de administrador de Microsoft Intune. En este editor se selecciona y configura un tipo de instalador de software que permitirá cargar aplicaciones (programas si son equipos o aplicaciones si son dispositivos móviles) para almacenarlas en el almacenamiento en nube de Intune, o bien vincularlas a una tienda en línea o una aplicación web.
+
+### Requisitos
+Antes de empezar a usar el editor de software de Microsoft Intune, es necesario instalar la versión completa de [Microsoft .NET Framework 4.0](https://www.microsoft.com/download/details.aspx?id=17851). Tras instalarlo, puede que tenga que reiniciar el equipo para que el editor de software se abra correctamente.
+
+## Espacio de almacenamiento en nube
+Todas las aplicaciones que cree mediante el tipo de instalación del instalador de software (por ejemplo, una aplicación de línea de negocio) se deben empaquetar y cargar en el almacenamiento en la nube de Microsoft Intune. Una suscripción de prueba de Intune incluye 2 gigabytes (GB) de almacenamiento en nube destinados a almacenar actualizaciones y aplicaciones administradas. Una suscripción de pago incluye 20 GB y la posibilidad de adquirir más almacenamiento.
+
+En el nodo **Uso del almacenamiento** del área de trabajo **Administración** puede ver la cantidad de espacio que está usando y adquirir más almacenamiento.
+
+Las siguientes reglas rigen la compra de más almacenamiento en nube para Intune:
+
+-   Debe tener una suscripción de pago activa para poder adquirir almacenamiento adicional.
+
+-   Solo los administradores de facturación o los administradores globales de su servicio de Microsoft Online pueden adquirir almacenamiento adicional a través del portal de administración de Office 365. Para administrar, agregar o eliminar estos administradores, debe ser administrador global e iniciar sesión en el portal de administración de Office 365.
+
+-   Si es un cliente de licencias por volumen que ha adquirido Intune o el complemento de Microsoft Intune a través de un Contrato Enterprise, póngase en contacto con su gestor de cuentas de Microsoft o su partner de Microsoft para obtener información relativa a los precios y para adquirir más almacenamiento.
+
+#### Requisitos de espacio de almacenamiento en nube
+
+-   Asegúrese de que todos los archivos de instalación de la aplicación se encuentran en la misma carpeta.
+
+-   El tamaño máximo de archivo de cualquier archivo que se cargue es de 2 GB.
+
+
 ## Compatibilidad de las aplicaciones de la Plataforma universal de Windows (UWP)
 Los equipos con Windows 10 no necesitan una clave de instalación de prueba para instalar las aplicaciones de línea de negocio. Pero la clave del Registro **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Appx\AllowAllTrustedApps** debe tener un valor de **1** para habilitar la instalación de prueba.
 
@@ -96,6 +115,8 @@ En los dispositivos Windows 10 Mobile, puede usar un certificado de firma de có
 
 El siguiente paso será agregar aplicaciones en la consola de Intune para, luego, poder implementarlas. Puede agregar aplicaciones para [dispositivos inscritos](add-apps-for-mobile-devices-in-microsoft-intune.md) o para [PC Windows que se administren con el software cliente de Intune](add-apps-for-windows-pcs-in-microsoft-intune.md).
 
-<!--HONumber=Jun16_HO2-->
+
+
+<!--HONumber=Jun16_HO3-->
 
 

@@ -1,34 +1,28 @@
 ---
-# required metadata
-
-title: Implementación de directivas | Microsoft Intune
-description:
-keywords:
+title: "Implementación de directivas | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 390d5adf-86d2-4e23-ba93-1e61e6b1028b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
+ms.openlocfilehash: 8935fbc42d7b406a5bcdbfc4353209b4447ae413
+
 
 ---
 
 # Implementación de directivas
 En este tema se proporcionan recomendaciones concretas para una implementación de directivas por fases en Microsoft Intune. Este método se aplica a las primeras directivas aplicadas a una nueva implementación de Intune o a las directivas agregadas a una implementación existente.
 
-Para obtener información general sobre las fases de implementación, consulte [Rollout phases for Microsoft Intune deployment](rollout-phases-for-microsoft-intune-deployment.md) (Fases de la implementación de Microsoft Intune)..
+Para obtener información general sobre las fases de implementación, vea [Fases de implementación para Microsoft Intune](rollout-phases-for-microsoft-intune-deployment.md).
 
 ### Fases de implementación de directivas
 Las fases de implementación de directivas son:
@@ -37,7 +31,7 @@ Las fases de implementación de directivas son:
 
 -   Prueba de concepto
 
--   Piloto
+-   Fase piloto
 
 -   Implementación empresarial
 
@@ -61,7 +55,7 @@ Defina el ámbito de la implementación de directivas de Intune:
 ## Prueba de concepto
 En la fase de prueba de concepto, pruebe la implementación de directivas en un entorno de laboratorio en dispositivos y usuarios que haya configurado estrictamente con fines de prueba.
 
--   Involucre al departamento de soporte técnico en esta fase para conocer qué problemas pueden surgir durante la fase piloto y la implementación de producción. Hay información sobre solución de problemas disponible en [Troubleshoot policies in Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune) (Directivas de solución de problemas en Microsoft Intune)..
+-   Involucre al departamento de soporte técnico en esta fase para conocer qué problemas pueden surgir durante la fase piloto y la implementación de producción. Hay información sobre solución de problemas disponible en [Directivas de solución de problemas en Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune).
 
 -   En este punto del proceso, debe desarrollar planes de comunicación para los usuarios de la fase piloto y la de producción. Como mínimo, el plan debe incluir los comportamientos de dispositivo que cambiarán y en qué momento lo harán, el propósito empresarial del cambio y qué hacer si los usuarios o el personal de TI detectan problemas (tanto información de autoayuda como la forma de ponerse en contacto con el departamento de soporte técnico).
 
@@ -102,6 +96,7 @@ Durante el piloto, se implementará la directiva en un grupo reducido de disposi
 [Directivas de solución de problemas en Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

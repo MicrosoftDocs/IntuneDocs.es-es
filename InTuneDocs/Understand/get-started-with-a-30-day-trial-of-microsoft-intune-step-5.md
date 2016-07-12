@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.reviewer: jeffgilb
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: 9755499575118feecf33780ee29a70525f95508e
 ms.openlocfilehash: f26b64015f483eb5b6a6efbaa6fe6730dde7dac9
 
@@ -25,7 +26,7 @@ Para configurar la administración de dispositivos móviles con Intune, primero 
 
 1.  **Convertir Intune en su entidad de administración de dispositivos móviles**
 
-    En la [consola de administración de Intune](https://manage.microsoft.com/), elija **Administrador** &gt; **Administración de dispositivos móviles**. Elija **Tareas** > **Establecer entidad de MDM** y, después, elija **Sí** en el cuadro de diálogo **Entidad de MDM**.
+    En la [consola de administración de Intune](https://manage.microsoft.com/), elija **Administración** &gt; **Administración de dispositivos móviles**. Elija **Tareas** > **Establecer entidad de MDM** y, después, elija **Sí** en el cuadro de diálogo **Entidad de MDM**.
 
 2.  **Habilitación de MDM para su plataforma de dispositivo**
 
@@ -55,16 +56,16 @@ Si se le pide una **dirección de servidor**, escriba “manage.microsoft.com”
 
 
 ## Instalar la aplicación implementada anteriormente
-Abra el Portal de empresa en el dispositivo móvil, elija **Aplicaciones** y, luego, instale **Microsoft Skype**.
+Abra el portal de empresa en el dispositivo móvil, elija **Aplicaciones** y, luego, instale **Microsoft Skype**.
 
-Para más información sobre la administración de dispositivos móviles mediante Intune, vea [Get ready to enroll devices in Microsoft Intune (Preparar la inscripción de dispositivos en Microsoft Intune)](/Intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune).
+Para obtener más información sobre la administración de dispositivos móviles mediante Intune, vea [Preparar la inscripción de dispositivos en Microsoft Intune](/Intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune).
 
 ### Pasos siguientes
 Enhorabuena. Acaba de completar el paso 5 del tutorial de *evaluación de Microsoft Intune*.
 
 >[!div class="step-by-step"]
 
->[!div class="step-by-step"]  
+>[&larr; **Crear directivas**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)     [**Opciones y extras** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)  
 
 
 

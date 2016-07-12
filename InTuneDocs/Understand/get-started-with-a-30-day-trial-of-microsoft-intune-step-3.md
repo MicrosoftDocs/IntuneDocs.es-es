@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: 7162cad3-5c14-43f3-a760-833ffd7786b1
 ms.reviewer: jeffgilb
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: 9755499575118feecf33780ee29a70525f95508e
 ms.openlocfilehash: f438b2b5e53d9bc119341effae1533d26cc9a47b
 
@@ -26,7 +27,7 @@ Use los grupos de dispositivos para implementar software y actualizaciones y par
 
 1.  En la [consola de administración de Intune](https://manage.microsoft.com/), elija **Grupos** &gt; **Información general** &gt; **Crear grupo**.
 
-2.  En el **Nombre de grupo**, escriba “Mis dispositivos de prueba” y, en la lista de grupos principales, seleccione **Todos los dispositivos** y, después, elija **Siguiente**.
+2.  En el **Nombre de grupo**, escriba "Mis dispositivos de prueba" y, en la lista de grupos principales, seleccione **Todos los dispositivos** y, después, elija **Siguiente**.
 
 3.  En la página **Definir criterios de pertenencia** , seleccione **Todos los dispositivos** para indicar que el grupo incluye tanto dispositivos móviles como equipos.
 
@@ -41,9 +42,9 @@ Use grupos de usuarios para implementar las directivas de software y dispositivo
 
 1.  En la [consola de administración de Intune](https://manage.microsoft.com/), elija **Grupos** &gt; **Información general** &gt; **Crear grupo**.
 
-2.  En el **Nombre de grupo**, escriba “Mis usuarios de prueba” y, en la lista de grupos principales, seleccione **Todos los usuarios** y, después, haga clic en **Siguiente**.
+2.  En el **Nombre de grupo**, escriba "Mis usuarios de prueba" y, en la lista de grupos principales, seleccione **Todos los usuarios** y, después, haga clic en **Siguiente**.
 
-3.  En la página **Definir criterios de pertenencia**, establezca **Iniciar pertenencia a grupos con** en **Todos los usuarios del grupo primario**.
+3.  En la página **Definir criterios de pertenencia** , establezca **Iniciar pertenencia a grupos con** en **Todos los usuarios del grupo primario**.
 
 4.  Al lado de **Excluir los miembros de estos grupos de seguridad**, elija **Examinar** y, después, seleccione **Administrador de la empresa**. Esta exclusión le permite administrar el grupo Mis usuarios de prueba sin que afecte a la cuenta del Administrador de la compañía (también conocido como Administrador de inquilinos).
 
@@ -53,14 +54,14 @@ Use grupos de usuarios para implementar las directivas de software y dispositivo
 
 Puede encontrar el grupo recién creado en la lista **Grupos** del área de trabajo **Grupos** en **Todos los usuarios**. Aquí también puede editar o eliminar el grupo.
 
-Para más información sobre el uso de los grupos, vea [Use groups to manage users and devices with Microsoft Intune (Usar grupos para administrar usuarios y dispositivos en Microsoft Intune)](/Intune/Deploy-Use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+Para obtener más información sobre el uso de los grupos, vea [Usar grupos para administrar usuarios y dispositivos en Microsoft Intune](/Intune/Deploy-Use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
 ### Pasos siguientes
 Enhorabuena. Acaba de completar el paso 3 del tutorial de *evaluación de Microsoft Intune*.
 
 >[!div class="step-by-step"]
 
->[!div class="step-by-step"]  
+>[&larr; **Agregar usuarios**](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md)     [**Crear directivas** &larr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)  
 
 
 

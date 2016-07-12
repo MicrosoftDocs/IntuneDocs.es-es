@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Configurar el acceso al correo electrónico corporativo mediante perfiles de correo electrónico | Microsoft Intune
-description:
-keywords:
+title: "Configurar el acceso al correo electrónico corporativo mediante perfiles de correo electrónico | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/05/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: karanda
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 8a3df01e9c02af7c43cdadc6d202bc6d74a000da
+ms.openlocfilehash: d0fa235b7b25fe71a4e3b4b0bf68cd2db31b1f18
+
 
 ---
 
@@ -89,9 +83,10 @@ La contraseña no está incluida en el perfil de correo electrónico, por lo que
     |**Programación de sincronización** (Samsung KNOX, Windows Phone 8 y versiones posteriores, Windows 10)|Seleccione la programación por la que los dispositivos sincronizarán los datos de Exchange Server. También puede seleccionar **Cuando llegan los mensajes** (los datos se sincronizan tan pronto como llegan) o **Manual** (el usuario del dispositivo debe iniciar la sincronización).|
     |**Usar SSL**|Use la comunicación de Capa de sockets seguros (SSL) al enviar correos electrónicos, recibir correos electrónicos y comunicarse con Exchange Server.<br /><br />En dispositivos que ejecutan Samsung KNOX 4.0 o posterior, es necesario exportar el certificado SSL de Exchange Server e implementarlo como perfil de certificado de confianza de Android en Intune. En Intune no se puede tener acceso a este certificado si se ha instalado en el servidor de Exchange Server por otros medios.|
     |**Tipo de contenido para sincronizar**|Seleccione los tipos de contenido que quiere sincronizar con los dispositivos.| 
-    |**Permitir el envío de correo electrónico desde aplicaciones de terceros** (solo iOS)|Permita que otras aplicaciones de terceros puedan abrir el correo en la aplicación de correo electrónico nativa (por ejemplo, para adjuntar archivos a los mensajes).|
+    |**Permitir el envío de correo electrónico desde aplicaciones de terceros** (solo iOS)|Permitir que un usuario seleccione este perfil como la cuenta predeterminada para enviar correo electrónico y permitir que aplicaciones de terceros abran el correo electrónico en la aplicación de correo electrónico nativa, por ejemplo, para adjuntar archivos a un correo electrónico.|
 
-    > [!IMPORTANT] Si ha implementado un perfil de correo electrónico y, luego, quiere cambiar los valores de **Host** o **Dirección de correo electrónico**, tendrá que eliminar el perfil de correo existente y crear otro con los valores necesarios.
+    > [!IMPORTANT]
+    > Si ha implementado un perfil de correo electrónico y, luego, quiere cambiar los valores de **Host** o **Dirección de correo electrónico**, deberá eliminar el perfil de correo electrónico existente y crear otro con los valores necesarios.
 
 4.  Cuando haya terminado haga clic en **Guardar directiva**.
 
@@ -109,11 +104,13 @@ La nueva directiva se muestra en el nodo **Directivas de configuración** del á
 
 En el área de trabajo **Directiva** de la página **General** , un resumen de estado y las alertas identifican los problemas de la directiva que requieren su atención. Además, aparece un resumen de estado en el área de trabajo Panel.
 
-> [!NOTE] Si quiere quitar un perfil de correo electrónico de un dispositivo, edite la implementación y quite los grupos de los que sea miembro el dispositivo.
+> [!NOTE]
+> Si desea quitar un perfil de correo electrónico de un dispositivo, edite la implementación y quite los grupos de los que sea miembro el dispositivo.
 
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

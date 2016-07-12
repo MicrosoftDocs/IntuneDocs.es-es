@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Get ready to configure mobile app management policies (Preparación para configurar directivas de administración de aplicaciones móviles) | Microsoft Intune
-description:
-keywords:
+title: "Get ready to configure mobile app management policies (Preparación para configurar directivas de administración de aplicaciones móviles) | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 6a989482e9c3c35c1f377e0b32bf04beb89e60a3
+ms.openlocfilehash: da4020eb71432f9bccb52909272d027da64ee47c
+
 
 ---
 
@@ -36,6 +29,8 @@ El portal de Azure es la nueva consola de administración para crear directivas 
 Si no está familiarizado con el uso del portal de Azure, lea el tema [Portal de Azure para directivas de MAM de Microsoft Intune](azure-portal-for-microsoft-intune-mam-policies.md) para obtener una introducción rápida.
 
 Si actualmente usa la **consola de administración de Intune** para administrar sus dispositivos, puede crear directivas de MAM que admitan aplicaciones para los dispositivos inscritos en Intune mediante la **consola de administración de Intune**, pero se recomienda usar el portal de Azure incluso para dispositivos inscritos en Intune. Para obtener instrucciones sobre cómo crear una directiva de MAM mediante la consola de administración de Intune, vea [aquí](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+
+Las directivas de MAM que se han creado en la consola de administración de Intune no pueden importarse en el Portal de Azure.  Las directivas de MAM deben volver a crearse en el Portal de Azure.
 
 >[!IMPORTANT]
 > Es posible que no vea todas las configuraciones de directivas de MAM en la consola de administración de Intune. Si crea directivas de MAM en la consola de administración de Intune y en el portal de Azure, la directiva del portal de Azure se aplica a las aplicaciones y se implementa para los usuarios.
@@ -62,7 +57,7 @@ Para ver la lista completa de las aplicaciones de Microsoft compatibles, vaya a 
 -   Una suscripción de **Office 365 (O365)** que se necesita para lo siguiente:
   - Para aplicar las directivas de MAM a las aplicaciones que admiten varias identidades.
   - Para crear cuentas profesionales de SharePoint Online y Exchange Online. Exchange local y SharePoint local no se admiten.
--    **Habilitar la autenticación moderna** para **Skype Empresarial Online**. Iniciar sesión en Microsoft Connect y rellenar [este formulario](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715) para inscribirse en el programa de autenticación moderna.
+-    [Habilitar la autenticación moderna](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx.md) para **Skype Empresarial Online**.
 
 
 - **Azure Active Directory (Azure AD)** para crear usuarios. Azure AD autentica el usuario cuando el usuario final inicia la aplicación y escribe sus credenciales de trabajo.
@@ -124,6 +119,7 @@ Los **administradores globales** tienen acceso al [portal de Azure](https://port
 [Crear e implementar directivas de administración de aplicaciones móviles con Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

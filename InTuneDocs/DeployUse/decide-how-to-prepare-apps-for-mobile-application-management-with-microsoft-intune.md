@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles mediante Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles mediante Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: 986d864a3169fa3b094241a3522e3f25b7bfe349
+
 
 ---
 
@@ -29,7 +22,7 @@ ms.suite: ems
 Puede habilitar las aplicaciones para que usen directivas de administración de aplicaciones móviles mediante la herramienta de ajuste de aplicaciones de Intune o el SDK para aplicaciones de Intune. Use esta información para conocer sobre estos dos métodos y cuándo usarlos.
 
 ## Herramienta de ajuste de aplicaciones de Intune
-La herramienta de ajuste de aplicaciones se usa principalmente para aplicaciones internas línea de negocio (LOB). Esta herramienta es una aplicación de línea de comandos que crea un contenedor en torno a la aplicación, que permite administrarla mediante una directiva de administración de aplicaciones móviles de Intune. No se necesita el código fuente para usar la herramienta, pero se necesitan credenciales de firma.  Para obtener más información sobre las credenciales de firma, consulte el [blog de Intune](http://blogs.technet.com/b/microsoftintune/archive/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios.aspx). Para obtener documentación sobre la herramienta de ajuste de aplicaciones, consulte [Android App Wrapping Tool (Herramienta de ajuste de aplicaciones para Android)](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) e [iOS App Wrapping Tool (Herramienta de ajuste de aplicaciones para iOS)](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
+La herramienta de ajuste de aplicaciones se usa principalmente para aplicaciones internas línea de negocio (LOB). Esta herramienta es una aplicación de línea de comandos que crea un contenedor en torno a la aplicación, que permite administrarla mediante una directiva de administración de aplicaciones móviles de Intune. No se necesita el código fuente para usar la herramienta, pero se necesitan credenciales de firma.  Para obtener más información sobre las credenciales de firma, vea el [blog de Intune](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Para obtener documentación sobre la herramienta de ajuste de aplicaciones, consulte [Android App Wrapping Tool (Herramienta de ajuste de aplicaciones para Android)](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) e [iOS App Wrapping Tool (Herramienta de ajuste de aplicaciones para iOS)](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
 La herramienta de ajuste de aplicaciones no admite las aplicaciones de App Store o Play Store ni las características que requieren la integración del tiempo de desarrollo (vea la siguiente tabla de comparación de características).
 
@@ -43,7 +36,8 @@ Para obtener más información sobre el SDK, consulte la [Introducción](/intune
 ## Comparación de características
 En la siguiente tabla se enumeran los valores que puede usarse para el SDK para aplicaciones y la herramienta de ajuste de aplicaciones.
 
-> [!NOTE] La herramienta de ajuste de aplicaciones se puede usar con Intune solo o con Intune con Configuration Manager.
+> [!NOTE]
+> La herramienta de ajuste de aplicaciones solo se puede usar con Intune independiente o con Intune con Configuration Manager.
 
 |Característica|SDK para aplicaciones|Herramienta de ajuste de aplicaciones|
 |-----------|---------------------|-----------|
@@ -73,6 +67,7 @@ En la siguiente tabla se enumeran los valores que puede usarse para el SDK para 
 [Use the SDK to enable apps for mobile application management (Usar el SDK para habilitar aplicaciones para la administración de aplicaciones móviles)](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
