@@ -46,6 +46,7 @@ Las directivas de administración de aplicaciones móviles (MAM) solo se aplican
 
     ![Captura de pantalla que muestra la ubicación de archivo abierta con la lista de los archivos existentes](../media/AppManagement/iOS_OneDriveSuccess.png)
 
+    > [!NOTE]
     > [!NOTE] Al cambiar una directiva implementada, los cambios se aplicarán la próxima vez que abra la aplicación.
 
 ##  Acceso a OneDrive en un dispositivo Android
@@ -169,6 +170,6 @@ Esto no impide que use la aplicación RMS sharing para ver los archivos de la em
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 
