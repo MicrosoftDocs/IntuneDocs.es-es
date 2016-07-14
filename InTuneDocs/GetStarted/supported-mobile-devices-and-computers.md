@@ -33,6 +33,6 @@ Estos equipos y dispositivos se pueden administrar aun cuando no estén unidos a
 [What to know before you start Microsoft Intune (Información necesaria antes de iniciar Microsoft Intune)](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO2-->
 
 

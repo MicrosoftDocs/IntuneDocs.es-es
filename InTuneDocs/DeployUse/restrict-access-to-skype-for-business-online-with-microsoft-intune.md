@@ -68,9 +68,11 @@ Si un usuario pertenece a ambos grupos, estará exento de la directiva.
 ### Paso 2: Configurar e implementar una directiva de cumplimiento
 [Cree](create-a-device-compliance-policy-in-microsoft-intune.md) e [implemente](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) una directiva de cumplimiento para todos los dispositivos que se verán afectados por la directiva. Dichos dispositivos serán los que usan los usuarios de los **Grupos de destino**.
 
+> [!NOTE]
 > [!NOTE] Mientras se implementan las directivas de cumplimiento en los grupos de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], las directivas de acceso condicional se aplican a los grupos de seguridad de Azure Active Directory.
 
 
+> [!IMPORTANT]
 > [!IMPORTANT] Si no ha implementado una directiva de cumplimiento, los dispositivos se considerarán no conformes.
 
 Cuando esté listo, continúe con el **paso 3**.
@@ -113,6 +115,6 @@ Seleccione cualquier grupo de dispositivos móviles y, a continuación, en la pe
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 

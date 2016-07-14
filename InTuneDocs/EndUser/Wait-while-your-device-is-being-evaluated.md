@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: 01247881-452c-4da8-93ca-66b5e65c5317
 ms.reviewer: chrisgre
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
 ms.openlocfilehash: 90891c2d0e5e8ae75e888dc4c26a056493bf594c
 
