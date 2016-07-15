@@ -91,6 +91,6 @@ La eliminación de un administrador de inscripción de dispositivos no afecta a 
 -   La relación de la cuenta del administrador de inscripción de dispositivos eliminado se mantiene pero no se pueden inscribir dispositivos adicionales
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 
