@@ -28,6 +28,7 @@ Al implementar aplicaciones, puede elegir una de las siguientes acciones de impl
 
 -   **Instalación requerida:** la aplicación se instala en el dispositivo sin intervención por parte del usuario final.
 
+    > [!TIP]
     > [!TIP] En los dispositivos iOS que no estén en modo supervisado y en todos los dispositivos Android, el usuario debe aceptar la oferta de la aplicación antes de instalarla.
     > 
     >  Si un usuario final desinstala una aplicación que ha implementado como una instalación necesaria, Intune volverá a instalar automáticamente la aplicación tras el siguiente ciclo de inventario, que normalmente se produce cada 7 días.
@@ -52,6 +53,7 @@ Al implementar aplicaciones, puede elegir una de las siguientes acciones de impl
 |Vínculo externo (se implementa para un grupo de dispositivos)|No|No|No|No|
 |Aplicación iOS administrada desde la tienda de aplicaciones (se implementa para un grupo de usuarios)|Sí|Sí|Sí|Sí|
 |Aplicación iOS administrada desde la tienda de aplicaciones (se implementa para un grupo de dispositivos)|Sí|No|Sí|Sí|
+> [!TIP]
 > [!TIP] Si, al implementar aplicaciones, selecciona grupos tanto de usuarios como de dispositivos, la aplicación solo se puede implementar como una **instalación disponible**.
 
 ## Conflictos de implementación
@@ -70,6 +72,6 @@ Obtenga información sobre cómo [implementar aplicaciones en Microsoft Intune](
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO2-->
 
 
