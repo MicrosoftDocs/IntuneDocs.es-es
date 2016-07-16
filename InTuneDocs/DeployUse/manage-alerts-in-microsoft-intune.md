@@ -1,27 +1,22 @@
 ---
-# required metadata
-
 title: Administrar alertas | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 74dc4ce4-21da-4f40-a07f-3eea34561eee
-
-# optional metadata
-
 ROBOTS: noindex,nofollow
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: bfea7213f67b55807045bfd8b29fdb083b841a56
+
 
 ---
 
@@ -61,7 +56,7 @@ Las alertas del tablón de anuncios proporcionan importantes avisos de servicios
 
 #### Para ver y administrar las alertas del tablón de anuncios
 
-1.  En la consola de administración de Intune, haga clic en **Información general del sistema**..
+1.  En la consola de administración de Intune, haga clic en **Información general del sistema**.
 
 2.  Si hay anuncios de servicio importantes, se muestran en el área **Tablón de anuncios**.
 
@@ -72,7 +67,7 @@ En el área de trabajo **Información general del sistema**, vea los resúmenes 
 
 #### Para ver el estado de la suscripción
 
-1.  En la consola de administración de Intune, haga clic en **Información general del sistema**..
+1.  En la consola de administración de Intune, haga clic en **Información general del sistema**.
 
 2.  En el área **Estado del sistema**, puede examinar el estado de los diversos componentes de Microsoft Intune. Muchos de los elementos contienen vínculos que permiten examinar en profundidad para obtener más información. Por ejemplo, en **Endpoint Protection**, si selecciona el número de instancias aparecerá el área de trabajo **Endpoint Protection** con una lista del malware detectado. Si selecciona el número de dispositivos aparecerá el área de trabajo **Grupos** con una lista de los dispositivos en los que se ha detectado el malware.
 
@@ -91,27 +86,28 @@ Las alertas que se marcan como cerradas se eliminan permanentemente después de 
 
 1.  En la consola de administración de Intune, realice una de las siguientes acciones:
 
-    1.  **Para cerrar una alerta de la lista de alertas**: haga clic en **Alertas &gt; Todas las alertas**. Seleccione una alerta y, a continuación, haga clic en **Cerrar alerta**..
+    1.  **Para cerrar una alerta de la lista de alertas**: haga clic en **Alertas &gt; Todas las alertas**. Seleccione una alerta y, después, haga clic en **Cerrar alerta**.
 
-    2.  **Para cerrar una alerta para un dispositivo específico**: haga clic en **Grupos &gt; Todos los dispositivos**. Seleccione un dispositivo y haga clic en **Ver propiedades**. Después, en la pestaña **Alertas**, seleccione una alerta y haga clic en **Cerrar alerta**..
+    2.  **Para cerrar una alerta para un dispositivo específico**: haga clic en **Grupos &gt; Todos los dispositivos**. Seleccione un dispositivo y haga clic en **Ver propiedades**. Después, en la pestaña **Alertas**, seleccione una alerta y haga clic en **Cerrar alerta**.
 
     3.  **Para cerrar una alerta del tablón de anuncios**: haga clic en **Información general del sistema**. Haga clic en la **X** de color gris junto a la alerta del tablón de anuncios.
 
 #### Para ver y volver a activar alertas cerradas
 
-1.  En la consola de administración de Intune, haga clic en **Alertas &gt; Todas las alertas**..
+1.  En la consola de administración de Intune, haga clic en **Alertas &gt; Todas las alertas**.
 
-2.  En la lista **Filtros**, haga clic en **Cerrada**..
+2.  En la lista **Filtros**, haga clic en **Cerrada**.
 
     Los nombres y la información adicional sobre las alertas aparecen en el panel de la lista de administración. Los detalles sobre la alerta seleccionada aparecen en el panel de vista previa.
 
-3.  Para volver a activar la alerta seleccionada, haga clic en **Reactivar alerta**..
+3.  Para volver a activar la alerta seleccionada, haga clic en **Reactivar alerta**.
 
 ### Consulte también
-[Recibir notificaciones mediante alertas de Microsoft Intune](get-notified-by-microsoft-intune-alerts.md)
+[Recibir notificaciones mediante alertas de Microsoft Intune](get-notified-by-alerts.md)
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

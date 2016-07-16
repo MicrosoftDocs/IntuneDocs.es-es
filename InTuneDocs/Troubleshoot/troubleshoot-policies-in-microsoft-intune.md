@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Directivas de solución de problemas | Microsoft Intune
-description:
-keywords:
+title: "Directivas de solución de problemas | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: ac3417781df0a5b092a70620aa7343849b1e8c82
+ms.openlocfilehash: 3ac6b06b7eb85503786b4d8b0b9bd2a30d2a15e6
+
 
 ---
 
@@ -58,7 +51,7 @@ En la captura de pantalla que tiene a continuación se pueden ver dos ejemplos c
 ## Actualización de directivas e intervalos de actualización
 Tenga en cuenta que las directivas se actualizan a intervalos regulares. En general, las directivas se deben registrar en los dispositivos durante los 15 minutos posteriores a la realización de un cambio. Aquí encontrará más detalles acerca de los intervalos regulares de actualización de directivas:
 
--   **Dispositivos Windows inscritos en MDM**: se desencadena con una tarea programada a las 3:00 a. m. hora local del dispositivo y se lleva a cabo cada día.
+-   **Dispositivo de Windows inscrito para MDM**: la directiva se actualiza cada 8 horas para dispositivos Windows 8.1 y Windows 10 y cada 24 horas para dispositivos Windows RT.
 
 -   **Windows Phone**: la directiva se actualiza cada 8 horas. Se puede forzar mediante una actualización en el Portal de empresa en **Configuración**.
 
@@ -113,9 +106,10 @@ La MDM de Android no permite que el servicio fuerce cambios en las directivas in
 **Solución:** en el [Centro de administración de Office 365](https://portal.office.com/), quite los caracteres especiales del nombre de la empresa y guarde la información de la empresa.
 
 ### Pasos siguientes
-Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el servicio de soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune (Cómo obtener soporte técnico de Microsoft Intune)](how-to-get-support-for-microsoft-intune.md).
+Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el servicio de soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico de Microsoft Intune).
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jun16_HO3-->
 
 

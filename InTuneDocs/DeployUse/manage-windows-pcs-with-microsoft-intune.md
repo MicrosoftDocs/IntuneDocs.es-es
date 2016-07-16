@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Administrar equipos Windows con Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: nathbarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0335b80afa8e330263baad054f0e902f019f75bb
+ms.openlocfilehash: 92f4ddde3336fd4cf07c701596f5ebe4c0aeb49f
+
 
 ---
 
@@ -35,8 +29,7 @@ Intune administra equipos Windows mediante directivas, del mismo modo que los ob
 
 ## Requisitos para la administración de equipos con Intune
 
-**Hardware**:
-los siguientes son requisitos mínimos de hardware para instalar el cliente de Intune:
+**Hardware**: los siguientes son los requisitos mínimos de hardware para instalar el cliente de Intune:
 
 |Requisito|Más información|
 |---------------|--------------------|
@@ -44,13 +37,12 @@ los siguientes son requisitos mínimos de hardware para instalar el cliente de I
 |Procesador y memoria|Consulte los requisitos de RAM y procesador para el sistema operativo del equipo.|
 |Espacio en disco|200 MB de espacio disponible en el disco antes de que se instale el software cliente.|
 
-**Software**:
-los siguientes son los requisitos de software para instalar el cliente:
+**Software**: los siguientes son los requisitos de software para instalar el cliente:
 
 |Requisito|Más información|
 |---------------|--------------------|
 |Permisos administrativos|La cuenta que instala el software de cliente debe tener permisos de administrador local en ese equipo.|
-|Windows Installer 3.1|El equipo debe tener, como mínimo, Windows Installer 3.1.<br /><br />Para ver la versión de Windows Installer de un equipo:<br /><br />-   En el equipo, haga clic con el botón derecho en **%windir%\System32\msiexec.exe** y, después, haga clic en **Propiedades**..<br /><br />Puede descargar la última versión de Windows Installer desde [Windows Installer Redistributables (Paquetes redistribuibles de Windows Installer)](http://go.microsoft.com/fwlink/?LinkID=234258) en el sitio web de Microsoft Developer Network.|
+|Windows Installer 3.1|El equipo debe tener, como mínimo, Windows Installer 3.1.<br /><br />Para ver la versión de Windows Installer de un equipo:<br /><br />-   En el equipo, haga clic con el botón derecho en **%windir%\System32\msiexec.exe** y, luego, haga clic en **Propiedades**.<br /><br />Puede descargar la última versión de Windows Installer desde [Windows Installer Redistributables (Paquetes redistribuibles de Windows Installer)](http://go.microsoft.com/fwlink/?LinkID=234258) en el sitio web de Microsoft Developer Network.|
 |Quitar software cliente incompatible|Antes de instalar el software cliente de Intune, debe desinstalar cualquier software cliente de Configuration Manager o Systems Management Server que esté instalado en ese equipo.|
 
 ## Instalar el cliente de equipo de Intune
@@ -60,11 +52,11 @@ El primer paso en la administración de equipos Windows con Intune consiste en i
 
     Para descargar el software de cliente de Intune, abra la consola de administración de Intune y, en el área de descarga de software de cliente, descargue el paquete de software cliente. Después de instalar el software cliente, Intune instala automáticamente software adicional según sea necesario para administrar el equipo.
 
--   Puede usar los mismos archivos que descargó para instalar manualmente el cliente de Intune para [implementar el cliente en equipos unidos a un dominio mediante GPO de Active Directory](install-the-windows-pc-client-with-microsoft-intune.md#to-automatically-deploy-the-client-software-by-using-group-policy)..
+-   Puede usar los mismos archivos que ha descargado para instalar manualmente el cliente de Intune para [implementar el cliente en equipos unidos a un dominio mediante GPO de Active Directory](install-the-windows-pc-client-with-microsoft-intune.md#to-automatically-deploy-the-client-software-by-using-group-policy).
 
 -   [Los usuarios finales pueden inscribir por sí mismos cada uno de sus equipos](install-the-windows-pc-client-with-microsoft-intune.md#how-users-can-self-enroll-their-computers) a través del Portal de empresa de Microsoft Intune. Cada equipo inscrito, a continuación, se vincula automáticamente a la cuenta de usuario que se utilizó para instalar el software cliente de Intune.
 
--   Por último, también puede implementar el software cliente de Intune en equipos como parte de una [implementación de sistema operativo](install-the-windows-pc-client-with-microsoft-intune.md#install-the-microsoft-intune-client-software-as-part-of-an-image)..
+-   Por último, también puede implementar el software cliente de Intune en equipos como parte de una [implementación de sistema operativo](install-the-windows-pc-client-with-microsoft-intune.md#install-the-microsoft-intune-client-software-as-part-of-an-image).
 
 ## Administración de equipos con el cliente de equipos de Intune
 Después de instalar el cliente de Intune, el software cliente habilita varias funciones de administración de equipo, por ejemplo: [administración de aplicaciones](deploy-apps-in-microsoft-intune.md), Endpoint Protection, inventario de hardware y software, control remoto (a través de solicitudes de asistencia remota), actualizaciones de software e informes de configuración de cumplimiento.
@@ -89,9 +81,10 @@ Además de las acciones de agente de cliente de Intune realizadas localmente en 
 
 -   Responder a solicitudes de asistencia remota
 
-El agente cliente de Intune, normalmente, se ejecuta silenciosamente en segundo plano sin necesidad de mucha interacción con el usuario o de solucionar problemas. Sin embargo, si necesita ayuda para resolver problemas de administración de equipos, hay varios [recursos disponibles para ayudarle a solucionarlos](/intune/troubleshoot/troubleshoot-client-setup-in-microsoft-intune)..
+El agente cliente de Intune, normalmente, se ejecuta silenciosamente en segundo plano sin necesidad de mucha interacción con el usuario o de solucionar problemas. Sin embargo, si necesita ayuda para resolver problemas de administración de equipos, hay varios [recursos disponibles para ayudarle a solucionarlos](/intune/troubleshoot/troubleshoot-client-setup-in-microsoft-intune).
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

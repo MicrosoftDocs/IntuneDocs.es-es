@@ -1,37 +1,33 @@
 ---
-# required metadata
-
-title: Configuración de directivas de iOS | Microsoft Intune
-description:
-keywords:
+title: "Configuración de directivas de iOS | Microsoft Intune"
+description: "Cree directivas que controlen la configuración y las características en los dispositivos iOS que administra con Intune."
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f9a492a16605130743b943f6aa49d1d633eb97d4
+ms.openlocfilehash: 3292df922eeb53108f2b34d4113b0b6c5a114564
+
 
 ---
 
 # Configuración de directivas de iOS en Microsoft Intune
 
+Intune proporciona una variedad de opciones generales integradas que puede configurar en los dispositivos iOS. Además, puede usar la herramienta Apple Configurator para crear una configuración personalizada que no esté disponible en Intune.
+
 ## Configuración general de directivas
 
 Use la **directiva de configuración general de iOS** de Microsoft Intune para configurar las siguientes opciones:
 
--   **Configuración de seguridad de dispositivos móviles** : elija entre una lista de configuraciones predefinidas que permiten controlar una variedad de características y la funcionalidad en el dispositivo.
+-   **Configuración de seguridad y de dispositivos generales**: elija entre una lista de configuraciones predefinidas que permiten controlar una variedad de características y funcionalidades en el dispositivo.
 
 -   **Pantalla completa**: bloquee un dispositivo para permitir que solo funcionen determinadas características. Por ejemplo, puede permitir que un dispositivo ejecute solo una aplicación administrada que especifique, o puede deshabilitar los botones de volumen de un dispositivo. Esta configuración podría utilizarse para un modelo de demostración de un dispositivo o para un dispositivo que está dedicado a realizar solo una función, como un dispositivo de punto de venta.
 
@@ -47,8 +43,8 @@ Si el valor que busca no aparece en este tema, puede crearlo mediante una direct
 |Nombre de la configuración|Detalles|iOS|
 |----------------|-------|
 |**Requerir una contraseña para desbloquear dispositivos móviles**|Especifica si los usuarios tienen que escribir una contraseña para obtener acceso al dispositivo.|Sí|
-|**Tipo de contraseña obligatoria**|Especifica el tipo de contraseña obligatoria (solo numérica o alfanumérica).|Sí|
-|**Tipo de contraseña requerida: número mínimo de conjuntos de caracteres**|Hay cuatro conjuntos de caracteres: letras minúsculas, letras mayúsculas, símbolos y números. Esta configuración especifica cuántos conjuntos de caracteres diferentes deben incluirse en la contraseña. Sin embargo, para dispositivos iOS, especifica el número de caracteres de símbolos que deben incluirse en la contraseña.|Sí|
+|**Tipo de contraseña obligatoria**|Especifica el tipo de contraseña que será necesario, como solo numérica o alfanumérica.|Sí|
+|**Tipo de contraseña requerida: número mínimo de conjuntos de caracteres**|Especifica el número de caracteres de símbolos (como **#** o **@**) que deben incluirse en la contraseña.|Sí|
 |**Longitud mínima de la contraseña**|Especifica el número mínimo de caracteres de la contraseña.|Sí|
 |**Permitir contraseñas sencillas**|Permitir contraseñas sencillas como ‘0000’ y ‘1234’.|Sí|
 |**Número de errores de inicio de sesión repetidos que se permiten antes de que se borre el dispositivo**|Borra el dispositivo si hay un error en este número de intentos de inicio de sesión.|Sí|
@@ -77,7 +73,7 @@ Si el valor que busca no aparece en este tema, puede crearlo mediante una direct
 |Nombre de la configuración|Detalles|iOS|
 |----------------|-------|
 |**Permitir copias de seguridad en iCloud**|Permite al usuario hacer copias de seguridad del dispositivo en iCloud.|Sí|
-|**Permitir sincronización de documentos en iCloud**|Permite la sincronización de clave-valor y documentos en el espacio de almacenamiento de iCloud. Sí|
+|**Permitir sincronización de documentos en iCloud**|Permite la sincronización de clave-valor y documentos en el espacio de almacenamiento de iCloud.|Sí|
 |**Permitir sincronización de Photo Stream en iCloud**|Permite que las fotos del dispositivo se sincronicen con iCloud.|Sí|
 |**Requerir copia de seguridad cifrada**|Requiere que las copias de seguridad del dispositivo se cifren.|Sí|
 
@@ -97,7 +93,7 @@ Si el valor que busca no aparece en este tema, puede crearlo mediante una direct
 |Nombre de la configuración|Detalles|iOS|
 |----------------|-------|
 |**Permitir almacén de aplicaciones**|Permite que el dispositivo tenga acceso a la tienda de aplicaciones.|Sí|
-|**Requerir una contraseña para tener acceso al almacén de aplicaciones**|Sí|
+|**Requerir una contraseña para tener acceso al almacén de aplicaciones**|Es necesario que el usuario escriba una contraseña antes de que pueda visitar la tienda de aplicaciones.|Sí|
 |**Permitir compras dentro de la aplicación**|Permite realizar compras en la tienda desde una aplicación en ejecución.|Sí|
 |**Permitir documentos administrados en otras aplicaciones no administradas**|Permite la visualización de documentos corporativos en cualquier aplicación.<br>**Ejemplo:** quiere evitar que los usuarios guarden archivos de la aplicación de OneDrive en Dropbox. Configure este ajuste en no. Después de que el dispositivo reciba la directiva (por ejemplo, después de un reinicio), ya no le permitirá guardar.|iOS 7.1 y versiones posteriores|
 |**Permitir documentos no administrados en otras aplicaciones administradas**|Permite la visualización de cualquier documento en aplicaciones administradas corporativas.|iOS 7.1 y versiones posteriores|
@@ -170,7 +166,8 @@ En la lista de **aplicaciones compatibles&amp; y no compatibles**, especifique l
 |**Habilitar la interacción táctil de asistencia**|Habilita o deshabilita la configuración de accesibilidad **Interacción táctil de asistencia** que ayuda a los usuarios a realizar gestos en pantalla que podrían resultarles difíciles.|
 |**Habilitar los ajustes de la interacción táctil de asistencia**|Habilita o deshabilita los ajustes de la interacción táctil de asistencia que le permiten ajustar la función de interacción táctil de asistencia.|
 |**Habilitar la selección de voz**|Habilita o deshabilita la configuración de accesibilidad **Reproducir selección** que lee en voz alta el texto que seleccione.|
-> [!NOTE] Las siguientes notas se aplican a la configuración del modo de quiosco para dispositivos iOS:
+> [!NOTE]
+> Las siguientes notas se aplican a la configuración del modo de quiosco para dispositivos iOS:
 > 
 > -   Antes de configurar un dispositivo iOS para el modo de quiosco, debe usar la [herramienta Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) o el administrador de inscripción de dispositivos para ajustar el dispositivo en el modo de supervisión. Para obtener más información acerca de la herramienta Apple Configurator, consulte la documentación de Apple.
 > -   Si la aplicación de iOS que especifique se instala después de implementar la directiva de configuración, el dispositivo no pasará al modo de quiosco hasta que se reinicie.
@@ -195,7 +192,8 @@ Copie la dirección URL de la página y úsela como dirección URL para configur
 
 **Ejemplo:** Busque **Microsoft Word para iPad**. La dirección URL que use será **https://itunes.apple.com/es/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
-> [!NOTE] También puede usar el software de iTunes para encontrar la aplicación y, después, usar el comando **Copiar vínculo** para obtener la dirección URL de la aplicación.
+> [!NOTE]
+> También puede utilizar el software de iTunes para encontrar la aplicación y, a continuación, utilizar el comando **Copiar vínculo** para obtener la dirección URL de la aplicación.
 
 
 ## Configuración de directivas personalizadas
@@ -230,6 +228,7 @@ Antes de empezar, debe tener instalado Apple Configurator y haber creado un arch
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

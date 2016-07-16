@@ -1,43 +1,47 @@
 ---
-# required metadata
-
-title: Solución de problemas con la inscripción de dispositivos | Microsoft Intune
-description:
-keywords:
+title: "Solución de problemas con la inscripción de dispositivos | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d12a31eb0727f7ca0c460049ac6fffb314daf70e
+ms.openlocfilehash: 62668c607bc3064cf8148fd7929b3c1268b721d7
+
 
 ---
 
 # Solución de problemas con la inscripción de dispositivos en Intune
 
-Aquí se indican algunos problemas relacionados con la inscripción de dispositivos y cómo puede solucionarlos.
-
-> [!NOTE]
-> Los usuarios de dispositivos administrados pueden recopilar registros de inscripción y diagnóstico para que usted pueda revisarlos. Aquí se proporcionan instrucciones de usuario para recopilar registros:
->- [Send Android diagnostic data logs to your IT administrator using a USB cable (Enviar registros de datos de diagnóstico de Android al administrador de TI mediante un cable USB)](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
->- [Send Android diagnostic data logs to your IT administrator using email (Enviar registros de datos de diagnóstico de Android al administrador de TI mediante correo electrónico)](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
->- [Send Android enrollment errors to your IT administrator (Enviar errores de inscripción de Android al administrador de TI)](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
->- [Send iOS enrollment errors to your IT administrator (Enviar errores de inscripción de iOS al administrador de TI)](/intune/enduser/send-errors-to-your-it-admin-ios)
+En este tema se proporcionan sugerencias para solucionar problemas de inscripción de dispositivos. Si esta información no soluciona el problema, vea [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico para Microsoft Intune) para conocer otras formas de obtener ayuda.
 
 
-Si esta información no soluciona el problema, vea [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico para Microsoft Intune) para conocer otras formas de obtener ayuda.
+## Pasos iniciales de solución de problemas
+
+Antes de empezar a solucionar problemas, compruebe que ha configurado Intune correctamente para habilitar la inscripción. Puede leer sobre estos requisitos de configuración en:
+
+-   [Preparar la inscripción de dispositivos en Microsoft Intune](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)
+-   [Configurar la administración de dispositivos iOS y Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+-   [Configurar la administración de Windows Phone y Windows 10 Mobile con Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+-   [Configurar la administración de dispositivos Windows](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+
+
+Los usuarios de dispositivos administrados pueden recopilar registros de inscripción y diagnóstico para que usted pueda revisarlos. Aquí se proporcionan instrucciones de usuario para recopilar registros:
+
+- [Send Android diagnostic data logs to your IT administrator using a USB cable (Enviar registros de datos de diagnóstico de Android al administrador de TI mediante un cable USB)](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
+- [Send Android diagnostic data logs to your IT administrator using email (Enviar registros de datos de diagnóstico de Android al administrador de TI mediante correo electrónico)](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
+- [Send Android enrollment errors to your IT administrator (Enviar errores de inscripción de Android al administrador de TI)](/intune/enduser/send-enrollment-errors-to-your-it-administrator-android)
+- [Send iOS enrollment errors to your IT administrator (Enviar errores de inscripción de iOS al administrador de TI)](/intune/enduser/send-errors-to-your-it-admin-ios)
+
+
 
 ## Problemas generales de inscripción
 Los siguientes problemas pueden producirse en cualquiera de las plataformas de dispositivo.
@@ -103,7 +107,8 @@ Los administradores pueden eliminar dispositivos en el portal de Azure Active Di
 
 1.  Compruebe que la entidad de MDM se ha establecido correctamente para la versión del servicio Intune que usa; esto es, para Intune, MDM de Office 365 y System Center Configuration Manager con Intune. Para Intune, la entidad de MDM se establece en **Administración** &gt; **Administración de dispositivos móviles**. Para Configuration Manager con Intune, deberá establecerla al configurar Intune Connector. En O365 es una opción denominada **Dispositivos móviles**.
 
-    > [!NOTE] Una vez establecida la entidad de MDM, solo podrá cambiarla si se pone en contacto con el servicio de soporte técnico, tal como se describe en [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico de Microsoft Intune).
+    > [!NOTE]
+    > Una vez establecida la entidad de MDM, solo podrá cambiarla si se pone en contacto con el servicio de soporte técnico, como se explica en [Cómo obtener asistencia para Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 2.  Compruebe que las credenciales del usuario se han sincronizado correctamente con Azure Active Directory; para ello, asegúrese de que sus UPN coinciden con la información de Active Directory en el Portal de cuentas.
     Si el UPN no coincide con la información de Active Directory:
@@ -255,8 +260,7 @@ Esto puede deberse a que el equipo se inscribió anteriormente o a que tiene la 
 
 |Código de error|Posible problema|Solución recomendada|
 |--------------|--------------------|----------------------------------------|
-|0x80CF0437 |El reloj del equipo cliente no está configurado en la hora correcta.|Asegúrese de que el reloj y la zona horaria del equipo cliente se hayan configurado en la hora y la zona horaria correctas.
-|
+|0x80CF0437 |El reloj del equipo cliente no está configurado en la hora correcta.|Asegúrese de que el reloj y la zona horaria del equipo cliente se hayan configurado en la hora y la zona horaria correctas.|
 |0x80240438, 0x80CF0438, 0x80CF402C|No se puede conectar con el servicio de Intune. Compruebe la configuración del proxy del cliente.|Compruebe que la configuración del proxy del equipo cliente sea compatible con Intune y que el equipo cliente tenga acceso a Internet.|
 |0x80240438, 0x80CF0438|La configuración del proxy en Internet Explorer y el sistema local no se ha establecido.|No se puede conectar con el servicio de Intune. Compruebe la configuración del proxy del cliente y confirme que la configuración del proxy en el equipo cliente sea compatible con Intune y que el equipo cliente tiene acceso a Internet.|
 |0x80043001, 0x80CF3001, 0x80043004, 0x80CF3004|El paquete de inscripción no está actualizado.|Descargue e instale el paquete de software cliente actual del área de trabajo Administración.|
@@ -280,6 +284,7 @@ Esto puede deberse a que el equipo se inscribió anteriormente o a que tiene la 
 Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el servicio de soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico de Microsoft Intune).
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO1-->
 
 

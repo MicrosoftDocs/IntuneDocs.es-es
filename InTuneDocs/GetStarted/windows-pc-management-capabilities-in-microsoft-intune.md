@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Funciones de administración de PC Windows | Microsoft Intune
-description:
-keywords:
+title: "Funciones de administración de PC Windows | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 665e4a1aa7ee22db91b47660a179384f7c3e4393
+ms.openlocfilehash: 9e7a2f5cb2afdeca737c0c8b1b91418352ad5539
+
 
 ---
 
@@ -40,7 +34,9 @@ En la mayoría de los escenarios, los dispositivos se inscribirán con Microsoft
 -   **Implementación de aplicaciones**: implemente software en los equipos que administra. Algunas características de administración de aplicaciones no están disponibles cuando los equipos se administran con el software cliente.
 
 
-## Requisitos del sistema operativo
+Intune admite la instalación del software cliente de equipos en hasta 7.000 dispositivos de Windows.
+
+## Requisitos de sistema operativo
 Intune puede administrar equipos que ejecutan las siguientes versiones de Windows (x86 y x64):
 
 
@@ -77,6 +73,7 @@ A continuación se indican los requisitos de software para instalar el cliente d
 [Capacidades de administración de dispositivos móviles en Microsoft Intune](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

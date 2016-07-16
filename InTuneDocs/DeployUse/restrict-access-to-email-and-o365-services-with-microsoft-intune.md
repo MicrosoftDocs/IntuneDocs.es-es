@@ -1,31 +1,24 @@
 ---
-# required metadata
-
-title: Restringir el acceso al correo electrónico y a los servicios de O365 | Microsoft Intune
-description:
-keywords:
+title: "Restringir el acceso al correo electrónico y a los servicios de O365 | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/16/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: f770bdc312879d1c833e8861494ecd2204ea603a
+ms.openlocfilehash: ebce26b0e09bb5282475cb1a39c8070a5d5b44aa
+
 
 ---
 
-# Restringir el acceso al correo electrónico y a los servicios de O365 con Microsoft Intune
+# Restringir el acceso al correo electrónico, a O365 y a otros servicios con Microsoft Intune
 Puede restringir el acceso al correo electrónico de la empresa y a los servicios de O365 con el acceso condicional de Intune. Con las funciones de acceso condicional de Intune, se asegura de que el acceso al correo electrónico de la empresa y a los servicios de O365 está restringido a los dispositivos compatibles con las reglas establecidas.
 ## ¿Cómo funciona el acceso condicional?
 La configuración de la directiva de cumplimiento se usa para evaluar el cumplimiento del dispositivo. La directiva de acceso condicional usa la evaluación para restringir o permitir el acceso a un servicio específico. Cuando se usa una directiva de acceso condicional en combinación con una directiva de cumplimiento, solo podrán tener acceso al servicio los dispositivos conformes.
@@ -37,7 +30,7 @@ Cuando los dispositivos no cumplen las condiciones establecidas en las directiva
 
 Flujo típico de acceso condicional:
 
-![Diagrama que muestra los puntos de decisión usados para determinar si un dispositivo puede tener acceso a un servicio o si se bloquea](./media/ConditionalAccess4.png)
+![Diagrama que muestra los puntos de decisión usados para determinar si un dispositivo puede tener acceso a un servicio o si se bloquea](../media/ConditionalAccess4.png)
 
 ## ¿Cómo se configura el acceso condicional?
 Use el acceso condicional para administrar el acceso a Microsoft **Exchange local**, **Exchange Online**, **Exchange Online dedicado**, **SharePoint Online** y **Skype Empresarial Online**.
@@ -67,8 +60,10 @@ A diferencia de otras directivas de Intune, no se implementan directivas de acce
   - [Crear una directiva de acceso condicional para Exchange Online dedicado heredado](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
   - [Crear una directiva de acceso condicional para SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
   - [Crear una directiva de acceso condicional para Skype Empresarial Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+  - [Crear una directiva de acceso condicional para Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 

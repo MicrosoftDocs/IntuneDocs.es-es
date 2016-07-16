@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Ayudar a que los usuarios finales comprendan los mensajes de la aplicación Portal de empresa | Microsoft Intune
-description:
-keywords:
+title: "Ayudar a que los usuarios finales comprendan los mensajes de la aplicación Portal de empresa | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 79617dd41e51402a73759da792f581028095a2f5
+ms.openlocfilehash: 40f2ead80326a451dfd59a4969191009dc35deef
+
 
 ---
 
@@ -45,7 +39,7 @@ El mensaje solicita permiso a los usuarios para que el número de teléfono y el
 > [!NOTE]
 > **La aplicación Portal de empresa nunca hace ni administra llamadas telefónicas.** Google controla el texto del mensaje y no se puede cambiar.
 
-Para ver la página **Hardware**, vaya a **Grupos** > **Todos los dispositivos móviles** > **Dispositivos**. Seleccione el dispositivo del usuario y vaya a **Ver propiedades** > **Hardware**..
+Para ver la página **Hardware**, vaya a **Grupos** > **Todos los dispositivos móviles** > **Dispositivos**. Seleccione el dispositivo del usuario y vaya a **Ver propiedades** > **Hardware**.
 
 ### Qué sucede si los usuarios permiten o deniegan el acceso
 Si los usuarios permiten el acceso, el número de teléfono y el IMEI del dispositivo aparecerán en la página de hardware de la consola de administración.
@@ -55,7 +49,7 @@ Si los usuarios deniegan el acceso, podrán seguir usando la aplicación Portal 
 Si los usuarios permiten el acceso, pero luego lo deniegan, el mensaje aparece la próxima vez que los usuarios inicien sesión en la aplicación Portal de empresa después de la inscripción.</br></br>Si los usuarios más adelante deciden permitir el acceso, pueden ir a **Configuración** > **Aplicaciones** > **Portal de empresa** > **Permisos** > **Teléfono** y activar el permiso.
 
 ### Dónde pueden obtener más información los usuarios
-[Iniciar sesión en la aplicación Portal de empresa](/Intune/EndUser/sign-in-to-the-company-portal-app-android)
+Paso 5 en [Inscriba el dispositivo Android en Intune](/Intune/EndUser/enroll-your-device-in-intune-android)
 
 ## ¿Permitir que Portal de empresa tenga acceso a fotos, elementos multimedia y archivos del dispositivo?
 
@@ -80,9 +74,10 @@ La segunda vez que los usuarios inician sesión en la aplicación Portal de empr
 
 
 ### Consulte también
-[Qué decirles a los usuarios finales sobre el uso de Intune](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune.md)
+[Qué decirles a los usuarios finales sobre el uso de Intune](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO1-->
 
 

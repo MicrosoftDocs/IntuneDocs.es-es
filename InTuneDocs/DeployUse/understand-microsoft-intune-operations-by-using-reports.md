@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Comprender las operaciones mediante informes | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/21/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: pbala
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 617f1cd42de49f0c8675bd450591a390af674e73
+ms.openlocfilehash: b8af36cef1bcb9077d0ab611a14fb88c0f458ece
+
 
 ---
 
@@ -41,10 +34,11 @@ Los informes de Intune proporcionan información sobre el software, el hardware 
 |**Informes de inventario de dispositivos móviles**|Muestra información sobre los dispositivos móviles en la organización. Puede filtrar la información mostrada en función de los grupos, si el dispositivo está desbloqueado o es un dispositivo raíz, y según sistema operativo.|
 |**Informes de adquisición de licencias**|Muestra los títulos de software para todo el software con licencia de los grupos de licencias seleccionados, basándose en sus contratos de licencia. Si la información de la licencia de software no se ha actualizado en más de 24 horas, se actualizará cuando se genere un informe de licencias. Un informe de licencia no es un cálculo exacto de los títulos de software que se utilizan ni constituye una prueba del cumplimiento de los contratos. El informe es una herramienta que facilita la toma de decisiones sobre las licencias de su organización. Intune podría no detectar algunos productos que pueden tener una licencia por volumen de Microsoft. Los filtros disponibles son:<br /><br />**Todos los contratos** muestra todos los productos de software con licencia administrados por Intune.<br /><br />**Contratos de licencias por volumen** muestra solo productos de software VLSC.<br /><br />**Otros contratos de licencias de software** muestra productos de software que se administran fuera de VLSC.|
 |**Informes de instalación de licencias**|Compara el software instado en los equipos de la organización con la cobertura actual del acuerdo de licencia según el Centro de servicios de licencias por volumen (VLSC). Los filtros incluyen:<br /><br />**Todos los contratos** muestra todos los productos de software con licencia administrados por Intune.<br /><br />**Contratos de licencias por volumen** muestra solo productos de software VLSC.<br /><br />**Otros contratos de licencias de software** muestra productos de software que se administran fuera de VLSC.|
-|**Informes de términos y condiciones**|Muestra si los usuarios han aceptado los términos y condiciones implementados y qué versión han aceptado. Puede especificar hasta 10 usuarios cuya aceptación de los términos y condiciones que se implementaron en ellos se muestran o mostrar el estado de aceptación para un término determinado implementado.|
+|**Informes de términos y condiciones**|Muestra si los usuarios aceptaron los términos y condiciones implementados y qué versión aceptaron. Puede especificar hasta 10 usuarios cuya aceptación de los términos y condiciones que se implementaron en ellos se muestran o mostrar el estado de aceptación para un término determinado implementado.|
 |**Informes de aplicaciones no compatibles**|Muestra información acerca de los usuarios que tienen aplicaciones instaladas que se encuentran en las listas de las aplicaciones compatibles y no compatibles. Utilice este informe para buscar usuarios y dispositivos que no cumplan las directivas de aplicación de la empresa.|
 |**Informes de cumplimiento de certificados**|Muestra los certificados que se han emitido a los usuarios y dispositivos mediante SCEP o PKCS #12 (.PFX). Utilice este informe para buscar certificados que se hayan emitido, hayan expirado o se hayan revocado.|
 |**Informes del historial de dispositivos**|Muestra un registro histórico de las acciones de retirada, borrado y eliminación. Use este informe para ver quién inició dichas acciones en los dispositivos en algún momento anterior.|
+|**Informes de atestación de estado**|Muestra el estado de los dispositivos móviles.|
 |**Informe de hardware de Mac OS X**|Muestra los detalles de hardware para todos los dispositivos Mac OS X inscritos de los grupos que seleccione. Para más información sobre el inventario de hardware recopilado de estos dispositivos, vea [Comprender el funcionamiento de sus dispositivos mediante el inventario en Microsoft Intune](understand-your-devices-with-inventory-in-microsoft-intune.md).|
 |**Informe del software de Mac OS X**|Muestra el software instalado en todos los dispositivos Mac OS X de los grupos seleccionados. El informe muestra el nombre del software (como un identificador de paquete), la versión corta o el nombre corto (o descriptivo), la versión y el número de dispositivos con el software instalado.|
 
@@ -74,6 +68,7 @@ Además, los informes admiten las siguientes acciones:
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO3-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: ¿Qué ocurre si instala la aplicación Portal de empresa e inscribe el dispositivo en Intune? | Microsoft Intune
-description:
-keywords:
+title: "¿Qué ocurre si instala la aplicación Portal de empresa e inscribe el dispositivo en Intune? | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 05/31/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: d22f5aea-7be4-419b-b51b-a522ca037b69
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: arnab
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
+ms.openlocfilehash: e2f5849a63dceabb42b910b50f0257bc823a251a
+
 
 ---
 
@@ -65,6 +59,7 @@ Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para 
 ### Consulte también
 [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Instalar al cliente de equipos Windows con Microsoft Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 1bdcfa71aab0918fba1f59bd0782fc63eef6994e
+ms.openlocfilehash: 723bef398338946e085e9d04d57a85b433ebc1c8
+
 
 ---
 
@@ -46,7 +40,7 @@ A continuación, use uno o varios de los métodos siguientes para instalar el cl
 
 -   [Instalar el software cliente de Microsoft Intune como parte de una imagen](#install-the-microsoft-intune-client-software-as-part-of-an-image)
 
-Si ya no tiene que administrar un equipo con Intune, puede retirar el equipo, lo que también implica quitar el software cliente del equipo. Para obtener más información, consulte [Tareas comunes de administración de PC Windows con el cliente de equipo de Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)..
+Si ya no tiene que administrar un equipo con Intune, puede retirar el equipo, lo que también implica quitar el software cliente del equipo. Para obtener más información, vea [Tareas comunes de administración de PC Windows con el cliente de equipo de Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
 ### Para descargar el software cliente
 
@@ -102,13 +96,13 @@ Los usuarios finales pueden inscribir por sí mismos cada uno de sus equipos a t
 
 1.  Inicie sesión en el portal de empresa desde el equipo que desea inscribir.
 
-2.  Haga clic en **Agregar dispositivo**..
+2.  Haga clic en **Agregar dispositivo**.
 
-3.  Haga clic en **Descargar software** y, después, en **Ejecutar**..
+3.  Haga clic en **Descargar software** y, a continuación, en **Ejecutar**.
 
 4.  Haga clic en **Siguiente** para iniciar el Asistente para la instalación de Microsoft Intune.
 
-5.  Cuando haya finalizado el asistente para la instalación, haga clic en **Finalizar**..
+5.  Cuando haya finalizado el asistente para la instalación, haga clic en **Finalizar**.
 
 ### Instalar el software cliente de Microsoft Intune como parte de una imagen
 El software cliente de Intune se pueden implementar en equipos como parte de una imagen de sistema operativo. Para ello, puede usar como base el siguiente procedimiento de ejemplo:
@@ -145,7 +139,7 @@ Use uno de los procedimientos siguientes como ayuda para supervisar y validar un
 
 ### Para comprobar la instalación del software cliente mediante la consola de administrador de Microsoft Intune
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), haga clic en **Grupos** &gt; **Todos los dispositivos** &gt; **Todos los equipos**..
+1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), haga clic en **Grupos** &gt; **Todos los dispositivos** &gt; **Todos los equipos**.
 
 2.  Desplácese hacia abajo en la lista de equipos y busque los equipos administrados que se estén comunicando con Intune o busque un equipo administrado específico escribiendo el nombre o una parte del nombre del equipo en el cuadro **Buscar dispositivos**.
 
@@ -153,9 +147,9 @@ Use uno de los procedimientos siguientes como ayuda para supervisar y validar un
 
 ### Para crear un informe de inventario de equipo que muestre todos los equipos inscritos
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), haga clic en **Informes** &gt; **Informes de inventario de equipos**..
+1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), haga clic en **Informes** &gt; **Informes de inventario de equipos**.
 
-2.  En la página **Crear nuevo informe**, deje los valores predeterminados en todos los campos (a menos que desee aplicar filtros) y haga clic en **Ver informe**..
+2.  En la página **Crear nuevo informe** , deje los valores predeterminados en todos los campos (a menos que desee aplicar filtros) y haga clic en **Ver informe**.
 
 3.  Se abre la página de **Informe de inventario de equipos** en una nueva ventana que muestra todos los equipos que están inscritos correctamente en Intune.
 
@@ -167,6 +161,7 @@ Use uno de los procedimientos siguientes como ayuda para supervisar y validar un
 [Administrar equipos Windows con Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

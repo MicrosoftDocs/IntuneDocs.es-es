@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Restringir el acceso a SharePoint Online | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 06/16/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: f8fcb01629c68e9c04b0e0319b937178859877ec
+
 
 ---
 
@@ -30,7 +24,7 @@ Use el acceso condicional de [!INCLUDE[wit_firstref](../includes/wit_firstref_md
 El acceso condicional tiene dos componentes:
 - La directiva de cumplimiento del dispositivo, con la que debe cumplir el dispositivo para que se considere conforme.
 - La directiva de acceso condicional, donde se especifican las condiciones que debe cumplir el dispositivo para tener acceso al servicio.
-Para más información sobre cómo funciona el acceso condicional, vea el tema [Restrict access to email and O365 services](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (Restringir el acceso al correo electrónico y servicios de O365).
+Para más información sobre cómo funciona el acceso condicional, consulte el tema [Restringir el acceso al correo electrónico y a los servicios de O365 con Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 Cuando un usuario intenta conectarse a un archivo con una aplicación compatible como OneDrive en su dispositivo, se produce la siguiente evaluación:
 
@@ -66,6 +60,13 @@ Si no se cumple una condición, se presentará al usuario uno de los mensajes si
 - Android 4.0 y versiones posteriores, Samsung Knox Standard 4.0 o versiones posteriores
 - Windows Phone 8.1 y versiones posteriores
 
+Puede restringir el acceso a SharePoint Online al acceder desde un explorador desde dispositivos **iOS** y **Android**.  Solo se permitirá el acceso desde exploradores compatibles de dispositivos que también lo sean:
+* Safari (iOS)
+* Chrome (Android)
+* Managed Browser (iOS y Android)
+
+**Los exploradores no compatibles serán bloqueados**.
+
 ## Compatibilidad para equipos
 - Windows 8.1 y versiones posteriores (cuando están inscritos en Intune)
 - Windows 7.0 o Windows 8.1 (si están unidos a un dominio)
@@ -97,11 +98,13 @@ Si un usuario pertenece a ambos grupos, estará exento de la directiva.
 ### Paso 2: Configurar e implementar una directiva de cumplimiento
 Si todavía no lo ha hecho, cree e implemente una directiva de cumplimiento para todos los usuarios a los que se aplicará la directiva de SharePoint Online.
 
-> [!NOTE] Mientras se implementan las directivas de cumplimiento en los grupos de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], las directivas de acceso condicional se aplican a los grupos de seguridad de Azure Active Directory.
+> [!NOTE]
+> Mientras se implementan las directivas de cumplimiento en los grupos de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], las directivas de acceso condicional se aplican a los grupos de seguridad de Azure Active Directory.
 
 Para saber más sobre cómo configurar la directiva de cumplimiento, vea [Create a compliance policy](create-a-device-compliance-policy-in-microsoft-intune.md) (Creación de una directiva de cumplimiento).
 
-> [!IMPORTANT] Si no ha implementado una directiva de cumplimiento, los dispositivos se considerarán no conformes.
+> [!IMPORTANT]
+> Si no ha implementado una directiva de cumplimiento, los dispositivos se considerarán no conformes.
 
 Cuando esté listo, continúe con el **paso 3**.
 
@@ -110,8 +113,8 @@ A continuación, configure la directiva para requerir que solo los dispositivos 
 
 #### <a name="bkmk_spopolicy"></a>
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), haga clic en **Directiva** > **Acceso condicional** > **Directiva de SharePoint Online**.
-![Captura de pantalla de la página de la directiva de SharePoint Online](../media/IntuneSASharePointOnlineCAPolicy.png)
+1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), seleccione **Directiva** > **Acceso condicional** > **Directiva de SharePoint Online**.
+![Captura de pantalla de la página de la directiva de SharePoint Online](../media/mdm-ca-spo-policy-configuration.png)
 
 2.  Seleccione **Habilitar directiva de acceso condicional para SharePoint Online**.
 
@@ -120,6 +123,10 @@ A continuación, configure la directiva para requerir que solo los dispositivos 
     -   **Todas las plataformas**
 
         Esto requerirá que cualquier dispositivo usado para acceder a **SharePoint Online** se inscriba en Intune y cumpla las directivas.  Cualquier aplicación cliente que use la **autenticación moderna** estará sujeta a la directiva de acceso condicional. Si la plataforma no es compatible actualmente con Intune, el acceso a **SharePoint Online** se bloqueará.
+
+        La selección de la opción **Todas las plataformas** significa que Azure Active Directory aplicará esta directiva a todas las solicitudes de autenticación, independientemente de la plataforma notificada por la aplicación cliente.  Todas las plataformas tendrán que inscribirse y ser compatibles, excepto:
+        *   Los dispositivos Windows tendrán que estar inscritos y ser compatibles, estar unidos a dominio con Active Directory local, o ambos
+        * Plataformas no compatibles como Mac.  Por el contrario, las aplicaciones que usan autenticación moderna y proceden de estas plataformas seguirán bloqueándose.
         >[!TIP]
         >Podría no ver esta opción si todavía no usa el acceso condicional para equipos.  Use en su lugar las **Plataformas específicas**. El acceso condicional para equipos no está disponible actualmente para todos los clientes de Intune.   Encontrará más información sobre problemas conocidos y cómo obtener acceso a esta característica en el [sitio de Microsoft Connect](http://go.microsoft.com/fwlink/?LinkId=761472).
 
@@ -135,11 +142,28 @@ A continuación, configure la directiva para requerir que solo los dispositivos 
 
      -   **Los dispositivos deben ser conformes.** Elija esta opción para requerir que los equipos estén inscritos en [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] y sean conformes. Si el equipo no está inscrito, se muestra un mensaje con instrucciones sobre cómo inscribirse.
 
-4.  En **Grupos de destino**, haga clic en **Modificar** para seleccionar los grupos de seguridad de Azure Active Directory a los que se aplicará la directiva. Puede elegir dirigir esto a todos los usuarios o solo a un selecto grupo de usuarios.
+4.   En **Acceso al explorador** en SharePoint Online y OneDrive para la Empresa, puede permitir el acceso a Exchange Online solo a través de los exploradores admitidos: Safari (iOS) y Chrome (Android). Se bloqueará el acceso desde otros exploradores.  Las mismas restricciones de plataforma que seleccionó para el acceso a la aplicación OneDrive también se aplican aquí.
 
-5.  En **Grupos exentos**, opcionalmente, haga clic en **Modificar** para seleccionar los grupos de seguridad de Azure Active Directory que se van a excluir de la directiva.
+  En los dispositivos **Android**, los usuarios deben habilitar el acceso al explorador.  Para ello, el usuario final debe habilitar la opción "Habilitar acceso al explorador" en el dispositivo inscrito de este modo:
+  1.    Inicie la **aplicación del portal de empresa**.
+  2.    Vaya a la página **Configuración** desde los tres puntos (...) o el botón del menú de hardware.
+  3.    Pulse el botón **Habilitar acceso al explorador**.
+  4.  En el explorador Chrome, cierre la sesión de Office 365 y reinicie Chrome.
 
-6.  Cuando haya terminado, haga clic en **Guardar**.
+  En las plataformas **iOS y Android**, para identificar el dispositivo que se usa para acceder al servicio, Azure Active Directory emitirá un certificado de seguridad de la capa de transporte (TLS) para el dispositivo.  El dispositivo muestra el certificado en una petición para que el usuario final lo seleccione, como se muestra en las capturas de pantalla siguientes. El usuario final debe seleccionar este certificado para poder seguir usando el explorador.
+
+  **iOS**
+
+  ![captura de pantalla de la petición de certificado en un iPad](../media/mdm-browser-ca-ios-cert-prompt.png)
+
+  **Android**
+
+  ![captura de pantalla de la petición de certificado en un dispositivo Android](../media/mdm-browser-ca-android-cert-prompt.png)
+5.  En **Grupos de destino**, seleccione **Modificar** para seleccionar los grupos de seguridad de Azure Active Directory a los que se aplicará la directiva. Puede elegir dirigir esto a todos los usuarios o solo a un selecto grupo de usuarios.
+
+6.  En **Grupos exentos**, opcionalmente, seleccione **Modificar** para seleccionar los grupos de seguridad de Azure Active Directory exentos de esta directiva.
+
+6.  Cuando termine, elija **Guardar**.
 
 No es necesario implementar la directiva de acceso condicional, ya que surte efecto inmediatamente.
 
@@ -158,6 +182,7 @@ Seleccione cualquier grupo de dispositivos móviles y, a continuación, en la pe
 [Restringir el acceso al correo electrónico y a los servicios de O365 con Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,33 +1,26 @@
 ---
-# required metadata
-
 title: Ventajas del SDK para aplicaciones de Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b7f62c5ee18d8f69fa174f09a1c46b6925c7517c
+ms.openlocfilehash: 3abf566831348de11f718370d6267e3ff4355bfb
+
 
 ---
 
 # Información general del SDK para aplicaciones de Intune
-El SDK para aplicaciones de Intune está disponible para las plataformas iOS y Android y, gracias a él, podrá habilitar las características de administración de aplicaciones móviles con Microsoft Intune. Además, nos esforzamos por reducir la cantidad de cambios de código necesarios para el desarrollador. Encontrará que puede habilitar la mayoría de las características del SDK sin necesidad de cambiar el comportamiento de la aplicación. Para obtener una experiencia de administrador de TI y de usuario final mejorada, puede usar nuestras API para personalizar el comportamiento de la aplicación para aquellas características que requieren la participación de la aplicación. 
-Una vez que haya habilitado la aplicación, los administradores de TI podrán implementar directivas en aplicaciones administradas por Intune y aprovechar estas características para proteger los datos de su empresa.
+El SDK para aplicaciones de Intune está disponible para las plataformas iOS y Android y, gracias a él, podrá habilitar las características de administración de aplicaciones móviles con Microsoft Intune. Además, nos esforzamos por reducir la cantidad de cambios de código necesarios para el desarrollador. Encontrará que puede habilitar la mayoría de las características del SDK sin necesidad de cambiar el comportamiento de la aplicación. Para obtener una experiencia de administrador de TI y de usuario final mejorada, puede usar nuestras API para personalizar el comportamiento de la aplicación para aquellas características que requieren la participación de la aplicación. Una vez que haya habilitado la aplicación, los administradores de TI podrán implementar directivas en aplicaciones administradas por Intune y aprovechar estas características para proteger los datos de su empresa.
 
 ## Funciones habituales
 
@@ -77,6 +70,7 @@ La administración de aplicaciones sin la inscripción de dispositivos permite a
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

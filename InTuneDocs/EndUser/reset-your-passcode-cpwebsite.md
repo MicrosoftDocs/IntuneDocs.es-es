@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Restablecer el código de acceso de un dispositivo desde el sitio web del portal de empresa | Microsoft Intune
-description:
-keywords:
+title: "Restablecer el código de acceso de un dispositivo desde el sitio web del portal de empresa | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mamoriss
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: 31023a2d51d4dd4cb854c1fa077f5a9910232bb4
+
 
 ---
 
@@ -30,7 +24,8 @@ ms.suite: ems
 
 Si pierde el PIN o la contraseña de un dispositivo inscrito en Intune, puede usar el [sitio web del portal de empresa](http://portal.manage.microsoft.com) para restablecerlos. El sitio web del Portal de empresa es una página web que puede usar para administrar equipos y dispositivos que haya inscrito en Intune y para realizar la mayoría de las tareas que se pueden realizar con la aplicación Portal de empresa.
 
-> [!NOTE] Según la configuración de Intune que haya realizado el administrador de TI, es posible que no vea el botón Restablecer código de acceso en el sitio web del portal de empresa. El restablecimiento del código de acceso no se admite en dispositivos Windows 8.1 y Windows RT.
+> [!NOTE] 
+> Según la configuración de Intune que haya realizado el administrador de TI, es posible que no vea el botón Restablecer código de acceso en el sitio web del portal de empresa. El restablecimiento del código de acceso no se admite en dispositivos Windows 8.1 y Windows RT.
 
 Para restablecer el código de acceso:
 
@@ -67,6 +62,7 @@ Para restablecer el código de acceso:
 ### Consulte también
 [Usar el sitio web del Portal de empresa de Intune](using-the-intune-company-portal-website.md)
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

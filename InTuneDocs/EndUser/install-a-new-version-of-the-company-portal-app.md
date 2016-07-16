@@ -1,28 +1,19 @@
 ---
-# required metadata
-
-title: Instalar una nueva versión de la aplicación de portal de empresa | Microsoft Intune
-description:
-keywords:
+title: "Instalar una nueva versión de la aplicación de portal de empresa | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 05/30/2016
 ms.topic: article
-ms.prod:
-ms.service:
-ms.technology:
+ms.prod: 
+ms.service: 
+ms.technology: 
 ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
+translationtype: Human Translation
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: 29d409f272800e0c5ccaf71494b5e98d1edaae4e
 
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: priyar
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 
 ---
 
@@ -44,7 +35,8 @@ La AppStore de Apple le avisará cuando haya disponible una nueva versión del p
 
 2.  Siga las instrucciones de instalación.
 
-    > [!NOTE] Si no puede tener acceso a la Tienda Windows, póngase en contacto con el administrador de TI.
+    > [!NOTE]
+    > Si no puede tener acceso a la Tienda Windows, póngase en contacto con el administrador de TI.
 
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
@@ -57,6 +49,7 @@ Para obtener información sobre otras tareas que puede realizar con el dispositi
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

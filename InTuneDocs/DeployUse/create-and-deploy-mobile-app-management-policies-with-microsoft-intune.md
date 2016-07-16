@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Crear e implementar directivas de MAM | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 3f79de38ce7fc9a5434033ee45ddf43f22517356
+ms.openlocfilehash: f1b9216c673039f8600e07508b255e12cc30bf3f
+
 
 ---
 
@@ -34,6 +27,8 @@ En este tema se describe el proceso de creación de una directiva de MAM en el *
 - Dispositivos que no están administrados por ninguna solución de MDM (BYOD).
 
 Si actualmente usa la **consola de administración de Intune** para administrar sus dispositivos, puede crear una directiva de MAM que admita aplicaciones para los dispositivos inscritos en Intune mediante la [consola de administración de Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+Las directivas de MAM que se han creado en la consola de administración de Intune no pueden importarse en el Portal de Azure.  Las directivas de MAM deben volver a crearse en el Portal de Azure.
+
 >[!IMPORTANT]
 > Es posible que no vea todas las configuraciones de directivas de MAM en la consola de administración de Intune. El Portal de Azure es la nueva consola de administración para crear directivas de MAM. Si crea directivas de MAM en la consola de administración de Intune y en el portal de Azure, la directiva del portal de Azure se aplica a las aplicaciones y se implementa para los usuarios.
 
@@ -49,7 +44,8 @@ Antes de crear una directiva de MAM, repase la información sobre [requisitos pr
 
     ![Captura de pantalla de la hoja Administración de aplicaciones móviles de Intune](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
 
-    > [!TIP] Si esta es la primera vez que usa el Portal de Azure, lea antes [Azure portal for Microsoft Intune MAM policies](azure-portal-for-microsoft-intune-mam-policies.md) (Portal de Azure para directivas de MAM de Microsoft Intune) para familiarizarse con el Portal.
+    > [!TIP]
+    > Si esta es la primera vez que usa el Portal de Azure, lea antes [Azure portal for Microsoft Intune MAM policies](azure-portal-for-microsoft-intune-mam-policies.md) (Portal de Azure para directivas de MAM de Microsoft Intune) para familiarizarse con el Portal.
 
 2.  En la hoja **Configuración**, seleccione **Directiva de aplicaciones**.  De este modo se abrirá la hoja **Directiva de aplicación** , en la que podrá crear nuevas directivas y editar las directivas existentes.
 
@@ -65,7 +61,8 @@ Antes de crear una directiva de MAM, repase la información sobre [requisitos pr
 
 5.  Seleccione **Aplicaciones** para abrir la hoja **Aplicaciones**, donde se muestra una lista de las aplicaciones disponibles. Puede seleccionar una o más aplicaciones de la lista que desea asociar a la directiva que está creando. Una vez seleccionadas las aplicaciones, elija el botón **Seleccionar** situado en la parte inferior de la hoja **Aplicaciones** para guardar la selección.
 
-    > [!IMPORTANT] Debe seleccionar al menos una aplicación para crear una directiva.
+    > [!IMPORTANT]
+    > Debe seleccionar al menos una aplicación para crear una directiva.
 
 6.  En la hoja **Agregar directiva**, elija **Configurar los valores obligatorios** para abrir la hoja de configuración de directivas.
 
@@ -108,7 +105,8 @@ Cuando termine de crear una directiva como se describe en el procedimiento anter
 
 Solo se verán afectados por la directiva los usuarios que tengan asignadas licencias [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].  Los usuarios pertenecientes al grupo de seguridad seleccionado que no tengan asignada una licencia [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] no se verán afectados.
 
-Si usa Intune con Administrador de configuración para administrar los dispositivos iOS y Android, la directiva solo se aplica a los usuarios directamente en el grupo seleccionado.  No se verán afectados los miembros de los grupos secundarios anidados en el grupo seleccionado.
+>[!IMPORTANT]
+> Si usa Intune con Administrador de configuración para administrar los dispositivos iOS y Android, la directiva solo se aplica a los usuarios directamente en el grupo seleccionado.  No se verán afectados los miembros de los grupos secundarios anidados en el grupo seleccionado.
 
 Los usuarios finales pueden descargar las aplicaciones del App Store o de Google Play. Para ver un tutorial detallado de cómo MAM protege los datos empresariales en el dispositivo, consulte el tema [Experiencia del usuario final en aplicaciones habilitadas para MAM](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md).
 
@@ -167,6 +165,7 @@ Para ver una lista completa de las configuraciones de directiva para iOS y Andro
 [Experiencia del usuario final en aplicaciones habilitadas para MAM](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

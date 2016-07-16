@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Elegir cómo administrar dispositivos | Microsoft Intune
-description:
-keywords:
+title: "Elegir cómo administrar dispositivos | Microsoft Intune"
+description: 
+keywords: 
 author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: c9b34408e4af34dafc700d016304a6d29c2e8585
+
 
 ---
 
@@ -75,16 +69,17 @@ Sopese la posibilidad de usar el cliente de equipo de Intune cuando quiera hacer
 ## Administración de Exchange ActiveSync
 Los dispositivos también se pueden administrar con Exchange ActiveSync. Para ello, es necesario instalar On-Premises Connector o usar Service to Service Connector integrado para conectarse a su servidor Exchange Server.
 
-Para obtener más información sobre los requisitos de hardware y software para instalar On-Premises Connector, consulte [Requirements for the On-Premises Connector (Requisitos de On-Premises Connector)](../deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connector).
+Para obtener más información sobre los requisitos de hardware y software para instalar On-Premises Connector, vea [Requisitos para On-Premises Connector](/intune/deploy-use/intune-on-premises-exchange-connector#requirements-for-the-on-premises-connect).
 
-Para obtener más información sobre cómo usar On-Premises Connector o Service to Service Connector con Exchange, consulte [Mobile device management with Exchange ActiveSync and Microsoft Intune (Administración de dispositivos móviles con Exchange ActiveSync y Microsoft Intune)](../deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
+Para obtener más información sobre cómo usar On-Premises Connector o Service to Service Connector con Exchange, vea [Administración de dispositivos móviles con Exchange ActiveSync y Microsoft Intune](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
 
 
 
 ## Pasos siguientes
-Ahora ya conoce algunas de las capacidades que se pueden usar al inscribir dispositivos con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. A continuación, deberá [inscribir los dispositivos](../deploy-use/enroll-devices-in-microsoft-intune). Tras inscribirlos, podrá beneficiarse de todas las capacidades que hemos visto en este tema. <!--lindavr: There's a logical flaw in our "get to know/get started" content. You can take the path in this topic or you can take the path in the What to know before your get started topic. And they don't cover the same ground. -->
+Ahora ya conoce algunas de las capacidades que se pueden usar al inscribir dispositivos con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. A continuación, deberá [inscribir los dispositivos](/intune/deploy-use/enroll-devices-in-microsoft-intune). Tras inscribirlos, podrá beneficiarse de todas las capacidades que hemos visto en este tema. <!--lindavr: There's a logical flaw in our "get to know/get started" content. You can take the path in this topic or you can take the path in the What to know before your get started topic. And they don't cover the same ground. -->
 
 
-<!--HONumber=May16_HO4-->
+
+<!--HONumber=Jun16_HO4-->
 
 

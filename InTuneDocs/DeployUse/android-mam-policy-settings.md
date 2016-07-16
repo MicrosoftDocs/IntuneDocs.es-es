@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Opciones de configuración de directiva de MAM de Android | Microsoft Intune
-description:
-keywords:
+title: "Opciones de configuración de directiva de MAM de Android | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: 3f43dc871dc0b0a81a6d0b05376a1254957fc35b
+
 
 ---
 
@@ -65,11 +59,12 @@ El término **aplicaciones administradas por directivas** hace referencia a las 
 
     **Valor predeterminado = Sí**
 - **Cifrar datos de aplicación:** elija **Sí** para permitir el cifrado. Si esta opción se habilita, Microsoft proporciona el cifrado en el caso de las aplicaciones asociadas a una directiva de administración de aplicaciones móviles de Intune. Los datos se cifran de forma sincrónica durante las operaciones de E/S de archivo. El contenido del almacenamiento del dispositivo estará siempre cifrado.
-  >[!NOTE] El método de cifrado no está certificado mediante FIPS 140-2
+  >[!NOTE]
+  >El método de cifrado no está certificado mediante FIPS 140-2.
 
   **Valor predeterminado = Sí**
 
-- **ContactSyncDisabled:** elija **Sí** para evitar que la información de contacto se sincronice con la aplicación nativa de libreta de direcciones nativa del dispositivo. Si elige **No**, la aplicación guardará la información de contacto en la aplicación nativa de libreta de direcciones del dispositivo.<br/>Al realizar una eliminación selectiva para quitar datos de la empresa, se quitan los contactos sincronizados directamente desde la aplicación a la libreta de direcciones nativa. No se pueden borrar los contactos de la libreta de direcciones nativa sincronizados con otro origen externo. Actualmente esto es válido únicamente para **Microsoft Outlook**.
+- **Deshabilitar la sincronización de contactos:** elija **Sí** para evitar que la información de contacto se sincronice con la aplicación nativa de libreta de direcciones del dispositivo. Si elige **No**, la aplicación guardará la información de contacto en la aplicación nativa de libreta de direcciones del dispositivo.<br/>Al realizar una eliminación selectiva para quitar datos de la empresa, se quitan los contactos sincronizados directamente desde la aplicación a la libreta de direcciones nativa. No se pueden borrar los contactos de la libreta de direcciones nativa sincronizados con otro origen externo. Actualmente esto es válido únicamente para **Microsoft Outlook**.
 
   **Valor predeterminado = Sí**
 
@@ -100,6 +95,7 @@ El término **aplicaciones administradas por directiva** hace referencia a las a
 - **Bloquear captura de pantalla y asistente de Android (Android 6 Marshmallow o posterior):** elija **Sí** para bloquear las capacidades de captura de pantalla y de **asistente de Android** del dispositivo cuando se use esta aplicación.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Ámbito del proyecto | Microsoft Intune
-description:
-keywords:
+title: "Ámbito del proyecto | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 71488dad-2f78-478c-a505-5cb9410eec07
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9218b1f58032c07eddf84f04a667e2c56b5463ed
+ms.openlocfilehash: cf9b8bf9a07e4d5a29637fe52a0bfb6e0191478e
+
 
 ---
 
@@ -64,7 +58,15 @@ Lea esta sección para obtener orientación sobre las actividades de enfoque de 
 
 La mayoría de los esfuerzos durante la fase de ámbito giran en torno a la planificación y la preparación. Al definir el ámbito del proyecto, tenga en cuenta los problemas tecnológicos y organizativos, así como la forma en que los usuarios trabajan en este momento y el cambio de comportamiento necesario. Comience pensando en el objetivo final general y luego cree objetivos más pequeños en las fases posteriores para mantener el rumbo.
 
-### Departamento de soporte técnico
+
+ > [!NOTE]
+ > 
+ > Estas plantillas pueden resultar útiles al trabajar en el ámbito del proyecto:
+ > > - [Plantilla de decisión entre Intune o Intune con Configuration Manager](https://gallery.technet.microsoft.com/Intune-or-Intune-with-900e8a78)
+ > - [Plantilla de planeamiento para aplicaciones móviles](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59)
+>- [Plantilla de planeamiento general de administración de dispositivos](https://gallery.technet.microsoft.com/General-device-management-334c3792)
+
+### Servicio de asistencia
 Para que los trabajadores del conocimiento se beneficien de una experiencia productiva de Intune, el departamento de soporte técnico debe estar bien preparado. Al definir el ámbito del proyecto, tenga en cuenta el papel del departamento de soporte técnico en cada fase y los recursos que necesitará ejecutar; asegúrese también de que el departamento de soporte técnico esté preparado para ayudar a los usuarios finales.
 
 ### Difusión
@@ -110,6 +112,7 @@ A continuación le indicamos algunos de los desafíos que puede encontrarse en l
 [Prueba de concepto](proof-of-concept.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

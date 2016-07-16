@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Configuración de directivas de Windows 10 | Microsoft Intune
-description:
-keywords:
+title: "Configuración de directivas de Windows 10 | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 1cccafa5f740bad50779ae36c899fd23ee7dc5f3
+ms.openlocfilehash: 70347776f72a3534a4c384957aef01a909767b99
+
 
 ---
 
@@ -168,6 +161,7 @@ Todos los valores son solo válidos para Windows 10 Escritorio.
 |**Intervalo de actualización de firma**|Especifica el intervalo en el que Defender buscará nuevos archivos de firma.|
 |**Permitir la protección en la nube**|Permite o bloquea la recepción por parte de Microsoft Active Protection Service de información sobre la actividad de malware de los dispositivos que administra. Esta información se usa para mejorar el servicio en el futuro.|
 |**Pedir a los usuarios el envío de muestras**|Controla si los archivos que podrían requerir un análisis posterior por parte de Microsoft para determinar si son malintencionados se envían automáticamente a Microsoft.|
+|**Detección de aplicaciones potencialmente no deseadas**|Esta configuración se puede usar para proteger los equipos de escritorio de Windows inscritos frente a la ejecución de software que Windows Defender ha clasificado como potencialmente no deseado. Puede protegerse contra la ejecución de estas aplicaciones o puede usar el modo auditoría para informar cuando se instale una aplicación potencialmente no deseada.|
 |**Archivos y carpetas que se van a excluir al ejecutar un análisis o al usar la protección en tiempo real**|Agrega uno o varios archivos y carpetas como **C:\Path** o **%ProgramFiles%\Path\filename.exe** a la lista de exclusiones. Estos archivos y carpetas no se incluirán en los análisis en tiempo real ni programados.|
 |**Extensiones de archivo que se deben excluir al ejecutar un análisis o al utilizar protección en tiempo real**|Agrega una o varias extensiones de archivo como **jpg** o **txt** a la lista de exclusiones. Los archivos con estas extensiones no se incluirán en los análisis en tiempo real ni programados.|
 |**Procesos que se deben excluir al ejecutar un análisis o al utilizar protección en tiempo real**|Agrega uno o varios procesos del tipo **.exe**, **.com** o **.scr** a la lista de exclusiones. Estos procesos no se incluirán en los análisis en tiempo real ni programados.| 
@@ -332,6 +326,7 @@ Todos los dispositivos deben estar inscritos con Intune si quiere usar la direct
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO3-->
 
 

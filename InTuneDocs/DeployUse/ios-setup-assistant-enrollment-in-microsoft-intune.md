@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Inscripción mediante Asistente de configuración para dispositivos iOS con Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Inscripción mediante Asistente de configuración para dispositivos iOS con Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: dagerrit
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f3637e79e7b6f93820e775932653c41879f369fe
+ms.openlocfilehash: b9cb10ccb26d4f61d63fb2dc6c18be48cc0a3182
+
 
 ---
 
@@ -67,6 +61,9 @@ Con el Configurador de Apple, puede restablecer los valores de fábrica de los d
             -   **No hay afinidad de usuario**: el dispositivo no tiene usuarios. Utilice esta afiliación para dispositivos que realizan tareas sin tener acceso a datos de usuario local. Las aplicaciones que requieren una afiliación de usuario están deshabilitadas o no funcionarán.
 
         -   **Asignación previa de grupo de dispositivos**: todos los dispositivos que implementan este perfil pertenecerán inicialmente a este grupo. Puede reasignar los dispositivos después de la inscripción.
+
+        >[!Important]
+        >Las asignaciones de grupo se moverán de Intune a Azure Active Directory. [Obtener más información](http://go.microsoft.com/fwlink/?LinkID=787064)
 
           -  **Programa de inscripción de dispositivos**: el programa de inscripción de dispositivos de Apple (DEP) no se puede utilizar con la inscripción del Asistente de configuración. Asegúrese de que el botón de alternancia está establecido en **desactivado**.
 
@@ -155,6 +152,7 @@ Con el Configurador de Apple, puede restablecer los valores de fábrica de los d
 [Preparar la inscripción de dispositivos](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jul16_HO1-->
 
 

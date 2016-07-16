@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Agregar aplicaciones para PC Windows | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: owenyen
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 024ba0e2c63a42c121bd27302e8926bddac5566b
+ms.openlocfilehash: 7da75576bf5296da6fbf35fb3c35c5d0d45c511d
+
 
 ---
 
@@ -38,7 +32,8 @@ En el siguiente procedimiento usará el editor de software de Intune para config
 
 1.  En la [consola de administrador de Microsoft Intune](https://manage.microsoft.com), elija **Aplicaciones** &gt; **Agregar aplicaciones** para iniciar el Editor de software de Intune.
 
-    > [!TIP] Deberá escribir su nombre de usuario y contraseña de Intune para que se inicie el editor.
+    > [!TIP]
+    > Deberá escribir su nombre de usuario y contraseña de Intune para que se inicie el editor.
 
 
 
@@ -94,6 +89,7 @@ La aplicación se muestra en el nodo **Aplicaciones** del área de trabajo **Apl
 
 Tras crear una aplicación, el siguiente paso es implementarla. Para obtener más información, vea [Deploy apps in Microsoft Intune](deploy-apps.md) (Implementar aplicaciones en Microsoft Intune).
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

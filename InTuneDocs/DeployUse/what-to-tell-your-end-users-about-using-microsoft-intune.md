@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Qué decirles a los usuarios finales sobre el uso de Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Qué decirles a los usuarios finales sobre el uso de Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 83f029c97cf34b6c96c6b2ef16cc65ab839c1d55
+ms.openlocfilehash: 893e896fc52e6e883fcd151db2c47030113502a2
+
 
 ---
 
@@ -66,6 +60,7 @@ Para entender cómo obtienen sus aplicaciones los usuarios finales, elija entre 
 A fin de que los usuarios solucionen los problemas que puedan tener cuando estén usando el portal de empresa, puede revisar una [lista de los mensajes que los usuarios pueden ver en el portal de empresa](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages).
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

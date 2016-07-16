@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Proteger datos de aplicación mediante directivas de administración de aplicaciones móviles | Microsoft Intune
-description:
-keywords:
+title: "Proteger datos de aplicación mediante directivas de administración de aplicaciones móviles | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: 161351164d9e99abb867aa34721ef4f992fb14fa
+
 
 ---
 
@@ -33,15 +27,16 @@ Los empleados usan dispositivos móviles para tareas personales y de trabajo.  M
 Puede usar directivas de administración de aplicaciones móviles (MAM) de Intune para ayudar a proteger los datos de la empresa. Dado que las directivas de MAM de Intune se pueden usar independientemente de cualquier solución de administración de dispositivos móviles (MDM), puede usarla para proteger los datos de la empresa con o sin inscripción de los dispositivos en una solución de administración de dispositivos. Mediante la implementación de **directivas de nivel de aplicación**, puede restringir el acceso a los recursos de la empresa y mantener los datos dentro del ámbito del departamento de TI.
 
 Las directivas de MAM admiten aplicaciones que se ejecutan en:
+> [!IMPORTANT]
+> Puede crear directivas de administración de aplicaciones móviles para aplicaciones móviles de Office que se conectan a servicios de Office 365. Las directivas de MAM no son compatibles con las aplicaciones que se conectan a los servicios de Exchange o SharePoint locales.
 
--   **Dispositivos administrados e inscritos** en [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Los dispositivos de esta categoría son normalmente dispositivos corporativos.
 
-  > [!IMPORTANT]
-  > Si usa Intune para administrar los dispositivos iOS y Android, puede crear directivas de administración de aplicaciones móviles para aplicaciones móviles de Office que se conectan a servicios de Office 365. Las directivas de MAM no son compatibles con las aplicaciones que se conectan a los servicios de Exchange o SharePoint locales.
+- **Dispositivos administrados e inscritos en Microsoft Intune**. Los dispositivos de esta categoría son normalmente dispositivos corporativos.
 
 -   **Dispositivos que se administran e inscriben en una solución de administración de dispositivos móviles de terceros**.   Los dispositivos de esta categoría son normalmente dispositivos corporativos.
 
-  > [!NOTE] Las directivas de administración de aplicaciones móviles no deben usarse con soluciones de contenedor seguro ni de administración de aplicaciones móviles de terceros.
+  > [!NOTE]
+  > Las directivas de administración de la aplicaciones móviles no deben usarse con soluciones de contenedor seguro ni de administración de aplicaciones móviles de terceros.
 
 -   **Dispositivos no administrados**.  Los dispositivos de esta categoría normalmente son dispositivos de empleados no administrados ni inscritos en Intune ni en ninguna otra solución MDM.
 
@@ -137,6 +132,7 @@ Todas las aplicaciones móviles de Office admiten varias identidades.
 [Crear e implementar directivas de administración de aplicaciones móviles con Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

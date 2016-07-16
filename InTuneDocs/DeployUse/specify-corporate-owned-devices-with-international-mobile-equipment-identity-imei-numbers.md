@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Especificar dispositivos propiedad de la empresa con números de identidad de equipo móvil internacional (IMEI) | Microsoft Intune
-description:
-keywords:
+title: "Especificar dispositivos propiedad de la empresa con números de identidad de equipo móvil internacional (IMEI) | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 398d93d4e2317d00a2f9d5f89966aaec3b942504
+ms.openlocfilehash: af4b87eb8082ee5ff11cd2d42b788ad17b334bcb
+
 
 ---
 
@@ -39,8 +32,8 @@ Microsoft Intune permite que los administradores importen números de identidad 
         Este archivo .csv, cuando se ve en un editor de texto, aparece como:
 
         ```
-        AA-BBBBBB-CCCCCC-D,PO 1234
-        AA-BBBBBB-CCCCCC-E,PO 1234
+        AABBBBBBCCCCCCD,PO 1234
+        AABBBBBBCCCCCCE,PO 1234
         ```
 
     -   **Agregar manualmente los detalles del dispositivo**: especifique el número de serie y los detalles de cinco dispositivos como máximo.
@@ -54,6 +47,7 @@ Microsoft Intune permite que los administradores importen números de identidad 
 Cuando se inscribe el dispositivo con ese número IMEI, normalmente cuando un usuario instala la aplicación Portal de empresa y completa el proceso de inscripción, el dispositivo se etiqueta como Propiedad corporativa y aparece como inscrito en el grupo **Dispositivos IMEI**.
 
 
-<!--HONumber=May16_HO5-->
+
+<!--HONumber=Jun16_HO3-->
 
 

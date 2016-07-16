@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Capacidades de administración de dispositivos móviles | Microsoft Intune
-description:
-keywords:
+title: "Capacidades de administración de dispositivos móviles | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: 0f460165f251acf95f4af36afa39409d3eb21162
+
 
 ---
 # Funcionalidades de administración de dispositivos móviles en Microsoft Intune
@@ -66,13 +60,14 @@ La administración, el inventario, la implementación de aplicaciones, el aprovi
 
 |Capacidad|Detalles|Más información|
 |--------------|-----------|--------------------|
-|Inventario e informes|Obtenga información acerca de los dispositivos que usted administra y el software que estos utilizan.|[Comprender el funcionamiento de sus dispositivos mediante el inventario en Microsoft Intune](./deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
+|Inventario e informes|Obtenga información acerca de los dispositivos que usted administra y el software que estos utilizan.|[Comprender el funcionamiento de sus dispositivos mediante el inventario en Microsoft Intune](/intune/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune)|
 
 
 ### Consulte también
-[Funciones de administración de equipos Windows en Microsoft Intune](./windows-pc-management-capabilities-in-microsoft-intune.md)
+[Funciones de administración de equipos Windows en Microsoft Intune](windows-pc-management-capabilities-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 
