@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
 ms.reviewer: chrisgre
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: e736d688032dd2ddee5be9edf2a33d5e7ba5257b
 ms.openlocfilehash: 591023ea08b669ca69e8cac45e37b5fb2689ddcd
 
@@ -79,6 +80,6 @@ Además, se mostrará un vínculo con información sobre cómo actualizar el sis
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

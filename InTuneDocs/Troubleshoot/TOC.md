@@ -16,6 +16,6 @@
 ## [Solucionar problemas de perfiles de correo electrónico](Troubleshoot-email-profiles-in-microsoft-intune.md)
 ## [Solucionar problemas de acceso condicional](troubleshoot-conditional-access.md)
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

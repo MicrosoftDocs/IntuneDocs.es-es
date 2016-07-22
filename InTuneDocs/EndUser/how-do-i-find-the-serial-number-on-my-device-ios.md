@@ -3,19 +3,19 @@ title: "¿Cómo se puede encontrar el número de serie de un dispositivo? | Micr
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 05/06/2016
+manager: arob98
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e6c4fedc-47b6-44b1-8c59-2fb81417f978
-ROBOTS: 
+ROBOTS: noindex,nofollow
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: afd6c6c12c76f5bf8f561f062df65a625cc19a3d
+ms.sourcegitcommit: c017a666bf208e02c1db8f1137281435217fc5e6
+ms.openlocfilehash: e79074a01c2ddb7a0a0d3a52e722226b1f7fbdef
 
 
 ---
@@ -31,6 +31,6 @@ En dispositivos que ejecutan iOS 7.1 y versiones posteriores, pulse en el icono 
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

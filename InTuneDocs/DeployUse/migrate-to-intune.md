@@ -12,6 +12,7 @@ ms.technology:
 ms.assetid: 88936b8a-7453-4410-b6db-29f636ba3e72
 ms.reviewer: jeffgilb
 ms.suite: ems
+translationtype: Human Translation
 ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
 ms.openlocfilehash: 20394c243b9355cd3f4e30f170dfd00d10e1153f
 
@@ -72,6 +73,6 @@ Para obtener una copia descargable de toda esta guía, visite la [Galería de Te
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

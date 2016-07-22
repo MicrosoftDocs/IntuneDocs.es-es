@@ -66,6 +66,6 @@ Proporcionar un archivo firmado SSP.xap es actualmente la única manera de facil
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

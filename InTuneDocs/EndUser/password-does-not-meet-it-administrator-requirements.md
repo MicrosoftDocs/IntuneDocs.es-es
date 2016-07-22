@@ -3,16 +3,17 @@ title: "La contraseña no cumple los requisitos del administrador de TI | Micros
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 05/26/2016
+manager: arob98
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: 
 ms.technology: 
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
+ROBOTS: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: cf6a7a005aaf703f2dfc20b89236056dff84e137
+ms.sourcegitcommit: f1fd60348f5e18344a2ce63311cef7a551f355d3
+ms.openlocfilehash: ac4515df3acae5e73a9682c189ef22a38cd84789
 
 
 ---
@@ -38,6 +39,6 @@ Para obtener información sobre el establecimiento del PIN o la contraseña o so
 Si no sabe cómo hacer que la contraseña cumpla los requisitos, póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

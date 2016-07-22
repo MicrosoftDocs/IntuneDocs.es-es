@@ -3,15 +3,17 @@ title: "El dispositivo no tiene la revisión de seguridad mínima | Microsoft In
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
-ms.sourcegitcommit: b76c04545b9b26a0e2470b95a3f5ac0a81b07817
-ms.openlocfilehash: a4788340b36c7d04ff1a62844aea7dba06079a2b
+ROBOTS: noindex,nofollow
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 4710a94b8772c064881137a273dd6d0d0ca7d37a
 
 
 ---
@@ -41,6 +43,6 @@ La ubicación del nivel actual de revisión de seguridad puede variar según el 
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

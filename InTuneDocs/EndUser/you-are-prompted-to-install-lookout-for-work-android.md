@@ -3,16 +3,17 @@ title: Se le pide que instale Lookout for Work | Microsoft Intune
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
+ROBOTS: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
-ms.openlocfilehash: 1d47c043092eef7fcad56926bfdd44e259460053
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 987076918d8604086e7178a6342e0f4345eec8f3
 
 
 ---
@@ -34,6 +35,6 @@ Lookout for Work es una aplicación que ayuda a proteger el dispositivo mediante
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

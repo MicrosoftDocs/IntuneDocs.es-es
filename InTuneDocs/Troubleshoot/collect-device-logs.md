@@ -46,6 +46,6 @@ En el portal de empresa para Windows, los registros se encuentran en *%localappd
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

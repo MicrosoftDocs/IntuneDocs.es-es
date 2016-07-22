@@ -3,17 +3,19 @@ title: "Para instalar la aplicación Outlook hay que actualizar el dispositivo |
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 06/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ccb7451e-5ffc-4604-b28e-8322cc64c58c
+ROBOTS: noindex,nofollow
 ms.reviewer: vadona
 ms.suite: ems
-ms.sourcegitcommit: b76c04545b9b26a0e2470b95a3f5ac0a81b07817
-ms.openlocfilehash: 635c6c007c031f7465b527a7b952d684b8d64522
+translationtype: Human Translation
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 1ce280d39f3b2faa0c4aa69dbb582c338bcf1a5b
 
 
 ---
@@ -33,6 +35,6 @@ Pulse **Configuración** &gt; **General** &gt; **Actualización de software**.
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO3-->
 
 

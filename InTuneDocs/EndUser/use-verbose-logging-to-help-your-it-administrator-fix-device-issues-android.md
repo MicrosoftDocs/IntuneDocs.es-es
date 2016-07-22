@@ -3,18 +3,19 @@ title: Usar Registro detallado para ayudar al administrador de TI a solucionar l
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: arob98
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 2a9183a6-b40d-4132-a1ce-61ce0f1c23aa
+ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
-ms.openlocfilehash: 9089943b8e86b298e0182483a5f98cf4d74efd63
+ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
+ms.openlocfilehash: 13311e562427ef66572fd53c6f0409f9fbc1b25b
 
 
 ---
@@ -32,6 +33,6 @@ Para activar o desactivar el **registro detallado**, inicie sesión en la aplica
 [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
