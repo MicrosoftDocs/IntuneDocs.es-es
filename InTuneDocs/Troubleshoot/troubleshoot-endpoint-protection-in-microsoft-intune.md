@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Solucionar problemas de Endpoint Protection | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e31df2d2-bb1b-491b-9a71-04e0b18829c1
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c22ddd554928b394e14742b8ba7d583d390d1c44
+ms.openlocfilehash: 0f4d8c49eb87ef94a1ddfdebd7dcd40c41b9a5a0
+
 
 ---
 
@@ -51,9 +45,10 @@ En esta sección se describen las posibles causas y soluciones de los siguientes
 |**Otra aplicación de protección de extremos en ejecución**|Se está ejecutando otra aplicación de protección de extremos y el equipo está en buenas condiciones.|De manera predeterminada, si hay otra aplicación de protección de extremos instalada e Intune detecta esa aplicación, Endpoint Protection se deshabilita a sí mismo automáticamente. Si Intune no detecta la otra aplicación de extremos, Endpoint Protection permanecerá habilitado. Para obtener más información, consulte [Help secure Windows PCs with Endpoint Protection for Microsoft Intune (Ayudar a proteger los equipos de Windows con Endpoint Protection para Microsoft Intune)](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).|
 
 ### Pasos siguientes
-Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el servicio de soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune (Cómo obtener soporte técnico de Microsoft Intune)](how-to-get-support-for-microsoft-intune.md).
+Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el servicio de soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico de Microsoft Intune).
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

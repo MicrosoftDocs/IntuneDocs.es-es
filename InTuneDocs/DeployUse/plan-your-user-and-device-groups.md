@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Planear los grupos de usuarios y dispositivos | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f11bb256-1094-4f7e-b826-1314c57f3356
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 82ab2dbfada6c0745195da149d5f0dc1948ceb92
+ms.openlocfilehash: e89d8384532b994d810649fc07c698237e2f3cec
+
 
 ---
 
@@ -158,7 +152,8 @@ Revise el contenido y seleccione **Finalizar** para terminar de crear el grupo.
 
 En nuestro ejemplo, también hemos creado un grupo de Oriente medio y Asia, MEA.
 
-> [!NOTE] Si la pertenencia al grupo no se rellena según la pertenencia a grupos de seguridad, compruebe que tiene licencias de Intune asignadas a esos miembros.
+> [!NOTE]
+> Si la pertenencia al grupo no se rellena según la pertenencia a grupos de seguridad, compruebe que licencias de Intune estén asignadas a esos miembros.
 
 ### Grupos de hardware específico
 Si la organización necesita directivas aplicables a tipos de hardware concretos, puede crear grupos basados en este requisito. Se pueden basar en grupos específicos que ya haya creado en AD local y sincronizarlos con Azure AD. También puede crearlos directamente en Azure AD. En este ejemplo, usamos el **Grupo de usuarios de EE. UU.** como grupo primario del grupo **Usuarios de equipos portátiles**.
@@ -174,7 +169,8 @@ Si la organización necesita directivas aplicables a sistemas operativos concret
 
 Con el mismo método de los ejemplos anteriores, se pueden crear grupos basados en usuarios <!--devices?--> mediante plataformas específicas de sistema operativo.
 
-> [!NOTE] Si tiene usuarios que usan varios sistemas operativos y plataformas móviles y no tiene una forma automatizada para clasificar a los usuarios como usuarios de Android, iOS o Windows, considere la posibilidad de aplicar directivas en el nivel de dispositivo, lo que le proporcionará una mayor flexibilidad a la hora de aplicar directivas específicas del sistema operativo.
+> [!NOTE]
+> Si tiene usuarios que usan varios sistemas operativos y plataformas móviles y no tiene una forma automatizada para clasificar a los usuarios como usuarios de Android, iOS o Windows, considere la posibilidad de aplicar directivas en el nivel de dispositivo, lo que le proporcionará una mayor flexibilidad a la hora de aplicar directivas específicas del sistema operativo.
 >
 > No puede aprovisionar grupos de manera dinámica basándose en el sistema operativo del dispositivo. Hágalo mediante los grupos de seguridad de AD o AAD.
 
@@ -218,6 +214,7 @@ Este método de asignación de nombres a las directivas permite identificar ráp
 [Crear grupos](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

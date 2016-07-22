@@ -1,34 +1,28 @@
 ---
-# required metadata
-
 title: Endpoint Protection para equipos Windows | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: NathBarn
-manager: jeffgilb
+manager: muhosabe
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 9b96e6c49ec9122961588156d77bf94cdbccd787
+ms.openlocfilehash: b1b1cc90672903ac0336151373272b5e20e56165
+
 
 ---
 
 # Ayudar a proteger los equipos de Windows con Endpoint Protection para Microsoft Intune
 Microsoft Intune puede ayudarle a proteger los equipos administrados de varias maneras. Una de ellas es Endpoint Protection, que proporciona protección en tiempo real contra amenazas de malware, mantiene las definiciones de malware actualizadas y examina automáticamente los equipos. Endpoint Protection también proporciona herramientas que ayudan a administrar y supervisar los ataques de malware.
 
-Si aún no ha instalado el cliente Intune en sus equipos, consulte [Instalar el cliente de equipos Windows con Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md)..
+Si aún no ha instalado el cliente Intune en sus equipos, vea [Instalar el cliente de equipos Windows con Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 Use la información de las secciones siguientes como ayuda para configurar, implementar y supervisar Endpoint Protection.
 
@@ -48,7 +42,7 @@ Para cambiar de su aplicación de protección de extremos actual a Microsoft Int
 
 3.  Quite el software de protección de extremos de un tercero de la manera siguiente:
 
-    -   Utilice la distribución de software de Intune para implementar una herramienta de eliminación de software proporcionada por el fabricante de la otra aplicación de protección de extremos. Para más información, consulte [Deploy apps in Microsoft Intune](deploy-apps.md) (Implementar aplicaciones en Microsoft Intune)..
+    -   Utilice la distribución de software de Intune para implementar una herramienta de eliminación de software proporcionada por el fabricante de la otra aplicación de protección de extremos. Para obtener más información, vea [Implementar aplicaciones con Microsoft Intune](deploy-apps.md).
 
     -   Quitar manualmente la aplicación de protección de extremos de otro fabricante.
 
@@ -58,7 +52,7 @@ Para cambiar de su aplicación de protección de extremos actual a Microsoft Int
 ## Configuración de Microsoft Intune Endpoint Protection
 Siga estos pasos como guía para la configuración de Endpoint Protection para Microsoft Intune.
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), haga clic en **Directiva** > **Agregar directiva**..
+1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), haga clic en **Directiva** > **Agregar directiva**.
 
 2.  Expanda **Administración de equipos** y seleccione **Configuración de agente de Microsoft Intune**. Seleccione **Crear e implementar una directiva personalizada** para especificar la directiva de configuración de Endpoint Protection y, después, haga clic en el botón **Crear directiva**. Puede usar la configuración recomendada o personalizar la configuración. Si necesita más información sobre cómo crear e implementar directivas, consulte el tema [Tareas comunes de administración de PC Windows con el cliente de equipo de Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
@@ -70,7 +64,7 @@ Puede ver la directiva Endpoint Protection implementada en la página **Todas la
 
 |Configuración de directiva|Detalles|
 |------------------|--------------------|
-|**Instalar Endpoint Protection**|Debe establecerse en **Sí** para instalar Endpoint Protection en equipos administrados. Si durante la instalación se detecta una aplicación de protección de extremos que no sea de Microsoft, Endpoint Protection no se instalará a menos que **Instalar Endpoint Protection incluso si hay una aplicación de protección de extremos de otro fabricante instalada** esté establecido en **Sí**.. **Nota:** Intune Endpoint Protection está instalado de forma predeterminada en equipos administrados. Si no desea que Endpoint Protection se instale en los equipos administrados, debe establecer explícitamente esta directiva en **No**. Si Endpoint Protection se instaló previamente y la directiva se actualiza a **No**, el cliente de Endpoint Protection se desinstalará.<br />Valor recomendado: **Sí**|
+|**Instalar Endpoint Protection**|Debe establecerse en **Sí** para instalar Endpoint Protection en equipos administrados. Si durante la instalación se detecta una aplicación de protección de extremos de terceros, Endpoint Protection no se instalará, a menos que **Instalar Endpoint Protection incluso si hay una aplicación de protección de extremos de otro fabricante instalada** esté establecido en **Sí**. **Nota**: Intune Endpoint Protection se instala de manera predeterminada en equipos administrados. Si no desea que Endpoint Protection se instale en los equipos administrados, debe establecer explícitamente esta directiva en **No**. Si Endpoint Protection se instaló previamente y la directiva se actualiza a **No**, el cliente de Endpoint Protection se desinstalará.<br />Valor recomendado: **Sí**|
 |**Instalar Endpoint Protection incluso si hay una aplicación de protección de extremos de otro fabricante instalada**|Debe establecerse en **Sí** para instalar Microsoft Intune Endpoint Protection incluso si se detecta una aplicación de protección de extremos de otro fabricante.<br /><br />Valor recomendado: **Sí**|
 |**Habilitar Endpoint Protection**|Debe establecerse en **Sí** para habilitar Microsoft Intune Endpoint Protection en los equipos que tienen el cliente de Endpoint Protection.<br /><br />Si se establece en **No** y Microsoft Intune Endpoint Protection está instalado, la interfaz de usuario cliente de Endpoint Protection no se mostrará a los usuarios y se desactivarán todas las características de protección.<br /><br />Valor recomendado: **Sí**|
 |**Deshabilitar UI cliente**|Debe establecerse en **Sí** para ocultar la interfaz de usuario cliente de Microsoft Intune Endpoint Protection a los usuarios (para que surta efecto hay que reiniciar el equipo cliente).<br /><br />Valor recomendado: **No**|
@@ -128,7 +122,7 @@ La opción ** 	Archivos y carpetas que se excluirán al ejecutar un examen o al 
 
 ### Configuración de procesos excluidos
 
-La opción **Procesos que se excluirán al ejecutar un examen o al usar protección en tiempo real** le permite excluir procesos específicos de la protección en tiempo real o al ejecutar un examen. Solo se pueden excluir los archivos con las siguientes extensiones: **.exe**, **.com** o **.scr**..
+La opción **Procesos que se excluirán al ejecutar un examen o al usar protección en tiempo real** le permite excluir procesos específicos de la protección en tiempo real o al ejecutar un examen. Solo se pueden excluir los archivos con las siguientes extensiones: **.exe**, **.com** o **.scr**.
 
 ### Configuración de tipos de archivo excluidos
 
@@ -139,16 +133,16 @@ Microsoft Active Protection Service es una comunidad en línea que ayuda a decid
   - **Básica**: envía a Microsoft información básica sobre el malware detectado. Esta información incluye de dónde procede el software, las acciones que el usuario aplica o que Endpoint Protection aplica automáticamente y si las acciones obtuvieron resultados satisfactorios.
   - **Avanzada**: envía más información a Microsoft acerca de malware, spyware y software potencialmente no deseado. Esta información incluye la ubicación del software, los nombres de archivo, cómo funciona el software y cómo ha afectado al equipo.
 
-También puede **Recibir definiciones dinámicas en función de los informes de Microsoft Active Protection Service**..
+También puede **Recibir definiciones dinámicas en función de los informes de Microsoft Active Protection Service**.
 
 ## Tareas de administración para Endpoint Protection
 Las siguientes tareas ayudan a realizar diversas tareas de administración en equipos administrados que ejecutan Endpoint Protection:
  - Actualizar definiciones de malware
-  - Consola de Intune: desde el área de trabajo **Grupos**, seleccione los equipos que desea actualizar. Haga clic en **Tareas remotas** &gt; **Actualizar definiciones de malware**..
-  - Equipo administrado: inicie el software cliente de Endpoint Protection desde el área de notificación de Windows. Haga clic en la pestaña **Actualizar** y, después, haga clic en **Actualizar**..
+  - Consola de Intune: desde el área de trabajo **Grupos**, seleccione los equipos que desea actualizar. Haga clic en **Tareas remotas** &gt; **Actualizar definiciones de malware**.
+  - Equipo administrado: inicie el software cliente de Endpoint Protection desde el área de notificación de Windows. Haga clic en la ficha **Actualizar** y, a continuación, haga clic en **Actualizar**.
  - Ejecutar un examen de malware:
-  - Consola de Intune: desde el área de trabajo **Grupos**, seleccione los equipos que desea examinar. Haga clic en **Ejecutar un examen completo de malware** o en **Ejecutar un examen rápido de malware**..
-  - Equipo administrado: inicie el software cliente de Endpoint Protection desde el área de notificación de Windows. Seleccione **Rápido**, **Completo** o **Personalizado** y, después, haga clic en **Examinar ahora**..
+  - Consola de Intune: desde el área de trabajo **Grupos**, seleccione los equipos que desea examinar. Haga clic en **Ejecutar un examen completo de malware** o en **Ejecutar un examen rápido de malware**.
+  - Equipo administrado: inicie el software cliente de Endpoint Protection desde el área de notificación de Windows. Seleccione **Rápido**, **Completo**o **Personalizado**y, a continuación, haga clic en **Examinar ahora**.
 
 Para ver el estado de una tarea remota, haga clic en el vínculo **Tareas remotas** situado en la esquina inferior derecha de la consola de Intune. El cuadro de diálogo **Estado de la tarea remota** enumera las tareas remotas actuales, el estado de las tareas, el nombre del dispositivo y los errores notificados, y proporciona un vínculo a información de solución de problemas, si corresponde.
 
@@ -171,19 +165,30 @@ Puede supervisar el estado de infección con malware en sus equipos a través de
 ### Cómo ver las rutas de acceso de detección recientes de malware en equipos
 Intune puede mostrar las 10 instancias de malware detectadas más recientemente en un dispositivo. La opción **Rutas de acceso de detección recientes** está deshabilitada de forma predeterminada. Para habilitar esta vista:
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), vaya a **Grupos** > **Todos los dispositivos** . **Malware**.
+1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), vaya a **Grupos** > **Todos los dispositivos**. **Malware**.
 
 2.  Haga clic con el botón derecho en un encabezado de columna. Aparece una lista de las columnas disponibles.
 
 3.  Marque la casilla **Rutas de acceso de detección recientes** en la lista. La columna **Rutas de acceso de detección recientes** aparece y muestra hasta las 10 instancias de malware más recientes que se han supervisado en el dispositivo.
 
+## Ejecutar un examen de malware o actualizar las definiciones de malware en un equipo
+Intune puede ejecutar un examen rápido o completo de malware mediante Endpoint Protection o Windows Defender en un equipo PC administrado remoto que está instalado con el cliente de Intune.
+
+1. En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/) vaya a **Grupos** > **Información general** > **Todos los dispositivos** > **Todos los equipos** y seleccione el equipo de destino.
+
+2. Haga clic en la lista desplegable **Tareas remotas** y, después, seleccione la tarea. La tarea que se va a ejecutar en el equipo remoto.
+
+
+
+
 ## ¿Necesita más ayuda?
-Para obtener más ayuda y soporte técnico, consulte [Solucionar problemas de Endpoint Protection en Microsoft Intune](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune)..
+Para obtener más ayuda y soporte técnico, vea [Solucionar problemas de Endpoint Protection en Microsoft Intune](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune).
 
 ### Véase también
 [Directivas para proteger equipos de Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO5-->
 
 

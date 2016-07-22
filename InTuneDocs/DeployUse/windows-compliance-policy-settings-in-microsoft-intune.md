@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Configuración de directivas de cumplimiento para dispositivos Windows | Microsoft Intune
-description:
-keywords:
+title: "Configuración de directivas de cumplimiento para dispositivos Windows | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
+ms.openlocfilehash: a836057cf6c226c8330b0b916c18cd609f791344
+
 
 ---
 
@@ -29,9 +23,9 @@ ms.suite: ems
 
 La configuración de directiva que se describe en este tema se aplica a los dispositivos que ejecuten el sistema operativo Windows. La versión específica de Windows que se admite se indica en las secciones siguientes.
 
-Si quiere obtener información sobre otras plataformas, seleccione uno de los siguientes temas:
+Si quiere información sobre otras plataformas, seleccione uno de los siguientes temas:
 > [!div class="op_single_selector"]
-- [Configuración de directivas de cumplimiento para dispositivos iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
+- [Configuración de directivas de cumplimiento normativo para dispositivos iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
 - [Configuración de directivas de cumplimiento para dispositivos Android](android-compliance-policy-settings-in-microsoft-intune.md)
 
 ## Configuración de directivas de cumplimiento para dispositivos Windows Phone
@@ -145,6 +139,7 @@ Para buscar la versión de sistema operativo que se usará para las opciones **M
 > ![CA_Win10OSVersion](./media/ca_win10-os-version.png)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Solucionar los problemas de configuración del cliente | Microsoft Intune
-description:
-keywords:
+title: "Solucionar los problemas de configuración del cliente | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 05/26/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: c8409d58e3e7a1038e4d030d88a9ffe7d29bc1b6
+ms.openlocfilehash: 78fa086f2e7e6c836aa74acb303d9a6564ed0993
+
 
 ---
 
@@ -32,7 +26,7 @@ Use la información siguiente como ayuda para solucionar problemas comunes de co
 
 -   Si no se muestra ninguna alerta de implementación del software cliente para el equipo en la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), compruebe la conectividad a Internet y la configuración proxy del equipo y asegúrese de que el equipo se puede comunicar con la dirección URL del servicio [https://manage.microsoft.com](https://manage.microsoft.com/). Posteriormente vuelva a intentar la instalación del software cliente.
 
--   Mediante la configuración de una regla de notificación en el área de trabajo **Administración** , puede enviar un correo electrónico a los destinatarios seleccionados cuando se produzca una alerta de error de implementación del software cliente. Para obtener más información, consulte [Get notified by Microsoft Intune alerts (Recibir notificaciones mediante alertas de Microsoft Intune)](/intune/deploy-use/get-notified-by-microsoft-intune-alerts).
+-   Mediante la configuración de una regla de notificación en el área de trabajo **Administración** , puede enviar un correo electrónico a los destinatarios seleccionados cuando se produzca una alerta de error de implementación del software cliente. Para más información, consulte [Recibir notificaciones mediante alertas de Microsoft Intune](/intune/deploy-use/get-notified-by-alerts).
 
 -   Intune muestra la alerta crítica **Error de implementación del software cliente** si se produce un error en la implementación del software cliente. Esto se mostrará en las páginas **Información general del sistema** y **Alertas** de la [consola de administración de Microsoft Intune](https://manage.microsoft.com/). Aquí se indica cómo buscar alertas:
 
@@ -56,23 +50,23 @@ Use la información siguiente como ayuda para solucionar problemas comunes de co
 
 ## El paquete de inscripción del equipo no se descarga
 **Problema:** al intentar inscribir un equipo sucede lo siguiente:
--  El paquete de inscripción no se puede descargar. 
+-  El paquete de inscripción no se puede descargar.
 -  Aparece el cuadro de diálogo de descarga pero se agota el tiempo de espera.
 
 **Solución:** en el explorador que usa para la descarga asegúrese de que, durante el proceso de descarga, se permiten las descargas y pueden guardarse archivos cifrados en el disco local.
 
 ## La instalación de cliente se bloquea con el código de error 0x80040154
 **Problema:**
- 
+
 -  La instalación de cliente durante la inscripción se bloquea.
 
--  No se puede inscribir el dispositivo. 
+-  No se puede inscribir el dispositivo.
 
 -  Error 0x80040154 en WindowsUpdate.log.
 
 Esto puede deberse a la ausencia de actualizaciones de software imprescindibles en el equipo.
 
-**Solución:** asegúrese de que la directiva de actualización de software permite la instalación de actualizaciones imprescindibles, como se describe en [Keep Windows PCs up to date with software updates in Microsoft Intune (Mantener los equipos de Windows al día con actualizaciones de software en Microsoft Intune)](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune) 
+**Solución:** asegúrese de que la directiva de actualización de software permite la instalación de actualizaciones imprescindibles, como se describe en [Keep Windows PCs up to date with software updates in Microsoft Intune (Mantener los equipos de Windows al día con actualizaciones de software en Microsoft Intune)](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)
 
 
 ## Errores relacionados con las directivas de Microsoft Intune en policyplatform.log
@@ -84,7 +78,8 @@ Para los dispositivos de Windows que no sean de MDM, los errores de directivas d
 
 2.  Espere 20 minutos a que se quite el software de cliente.
 
-    > [!NOTE] No intente quitar el cliente desde Programas y características.
+    > [!NOTE]
+    > No intente quitar el cliente desde Programas y características.
 
 3.  En el menú Inicio, escriba **UAC** para abrir Configuración del Control de cuentas de usuario.
 
@@ -127,9 +122,10 @@ En la siguiente tabla se describen los códigos de error que se muestran en **Al
 Si los problemas de instalación continúan, póngase en contacto con el soporte técnico como se indica en [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico para Microsoft Intune). Tenga a mano el registro de inscripción del equipo cliente (que se encuentra en %*programfiles*%\Microsoft\OnlineManagement\Logs\Enrollment.log y %*userprofile*%\AppData\Local\Microsoft\OnlineManagement\Logs\Enrollement.log) y el registro de Windows Update (%*windir*%\windowsupdate.log) para mostrarlos a los ingenieros de soporte técnico.
 
 ### Pasos siguientes
-Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el servicio de soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune (Cómo obtener soporte técnico de Microsoft Intune)](how-to-get-support-for-microsoft-intune.md).
+Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el servicio de soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico de Microsoft Intune).
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jul16_HO1-->
 
 

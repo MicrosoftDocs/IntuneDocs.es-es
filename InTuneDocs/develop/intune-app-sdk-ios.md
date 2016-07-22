@@ -1,33 +1,28 @@
 ---
-# required metadata
-
-title: Guía para desarrolladores acerca del SDK de aplicaciones de Microsoft Intune para iOS | Microsoft Intune
-description:
-keywords:
+title: "Guía para desarrolladores acerca del SDK de aplicaciones de Microsoft Intune para iOS | Microsoft Intune"
+description: 
+keywords: 
 author: Msmbaldwin
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: b7f62c5ee18d8f69fa174f09a1c46b6925c7517c
+ms.openlocfilehash: 820ec2da0554f0af383895482241be7d1c0cf305
+
 
 ---
 
 # Guía para desarrolladores acerca del SDK de aplicaciones de Microsoft Intune para iOS
 
-> [!NOTE] Puede que quiera leer la [guía de introducción al SDK para aplicaciones de Intune](intune-app-sdk-get-started.md), en la que se explica cómo preparar la integración en cada plataforma compatible.* 
+> [!NOTE]
+> Puede que quiera leer la [Guía de introducción al SDK de la aplicación Intune](intune-app-sdk-get-started.md), en la que se explica cómo preparar la integración en cada plataforma compatible.* 
 
 El SDK de la aplicación Microsoft Intune para iOS permite incorporar la administración de aplicaciones móviles (MAM) de Intune en su aplicación iOS. Una aplicación habilitada para MAM está integrada con el SDK para aplicaciones de Intune y permite a los administradores de TI implementar directivas en su aplicación móvil cuando la aplicación se administra de manera activa.
 
@@ -232,7 +227,8 @@ Antes de probar la aplicación habilitada para MAM con Microsoft Intune, puede u
 
 * Inicie la aplicación (ya sea dentro o fuera de Xcode). Compruebe que el PIN funciona según lo previsto.
 
-> [!NOTE] Ahora puede usar "Configuración -> SuNombreDeAplicación -> Habilitar directivas de prueba" para habilitar y activar o desactivar la configuración.
+> [!NOTE]
+> Ahora puede usar "Configuración -> SuNombreDeAplicación -> Habilitar directivas de prueba" para habilitar y activar o desactivar la configuración.
 
 # Prácticas recomendadas de iOS
 
@@ -244,6 +240,7 @@ Si Xcode tiene problemas para encontrar `libIntuneMAM.a`, puede corregir el prob
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

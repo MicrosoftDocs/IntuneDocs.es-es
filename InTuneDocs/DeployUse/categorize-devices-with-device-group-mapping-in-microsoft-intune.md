@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Clasificar dispositivos con la asignación de grupos de dispositivos en Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Clasificar los dispositivos con la asignación de grupos de dispositivos | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 8b8c06a3-6b6c-4cf1-8646-b24fa9b1a39e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: sumitp
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: bb30b8e61a768b15e2f09993f4dceae8f4e1bd8a
+ms.openlocfilehash: 55f811153bf37048a4fcdfc6da301a5f181700c3
+
 
 ---
 
@@ -45,19 +38,20 @@ Estos son algunos ejemplos de categorías:
 Pero puede configurar las categorías que quiera.
 
 ## Cómo configurar una asignación de grupos de dispositivos
-1. Cree un grupo de dispositivos de Intune para cada categoría que quiera usar. Para obtener más información sobre cómo crear grupos, vea [Usar grupos para administrar usuarios y dispositivos en Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)..
-2. En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), haga clic en **Administración**..
-3. En el área de trabajo **Administración**, expanda **Administración de dispositivos móviles**y haga clic en **Asignación de grupos de dispositivos**..
+1. Cree un grupo de dispositivos de Intune para cada categoría que quiera usar. Para obtener más información sobre cómo crear grupos, vea [Usar grupos para administrar usuarios y dispositivos en Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
+2. En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), seleccione **Administración**.
+3. En el área de trabajo **Administración**, expanda **Administración de dispositivos móviles** y elija **Asignación de grupos de dispositivos**.
 4. En la página **Asignación de grupos de dispositivos**, habilite la asignación de grupos de dispositivos.
-5. Haga clic en **Agregar** para crear una regla de asignación.
-6. En el cuadro de diálogo **Agregar regla de asignación de grupos de dispositivos**, escriba el nombre de la categoría que quiere crear y, luego, en la lista desplegable, elija la colección de dispositivos que quiera asignar a esta categoría. Haga clic en **Agregar** cuando haya acabado.
-7. Cuando termine de agregar categorías y grupos, haga clic en **Guardar**..
+5. Elija **Agregar** para crear una regla de asignación.
+6. En el cuadro de diálogo **Agregar regla de asignación de grupos de dispositivos**, escriba el nombre de la categoría que quiere crear y, luego, en la lista desplegable, elija la colección de dispositivos que quiera asignar a esta categoría. Elija **Agregar** cuando haya acabado.
+7. Cuando termine de agregar categorías y grupos, elija **Guardar**.
 
 Ahora, cuando los usuarios inscriban sus dispositivos, verán una lista de las categorías configuradas. Tras elegir una categoría y finalizar la inscripción, sus dispositivos se agregarán al grupo de dispositivos correspondiente a la categoría que eligieron.
 
 ### Consulte también
 [Utilizar grupos para administrar usuarios y dispositivos en Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO3-->
 
 

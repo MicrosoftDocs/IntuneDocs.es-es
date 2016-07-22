@@ -1,33 +1,27 @@
 ---
-# required metadata
-
 title: Uso de ancho de banda de red de Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: e104dc52a8a9bdda4b2edb2939d8c7c36e8ecc12
+
 
 ---
 
 # Uso de ancho de banda de red de Intune
 
-Antes de configurar [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], repase este tema y los requisitos que aparecen en [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md) (Información necesaria antes de iniciar Microsoft Intune)..
+Antes de configurar [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)], repase este tema y los requisitos que aparecen en [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md) (Información necesaria antes de iniciar Microsoft Intune).
 
 Utilice la información de las siguientes secciones para planear el tráfico de red para los clientes de [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)].
 
@@ -83,15 +77,16 @@ Para obtener más información sobre BITS y equipos Windows, consulte [Servicio 
 
 -   [!INCLUDE[winblue_client_2](../includes/winblue_client_2_md.md)]
 
-Para usar BranchCache, el equipo cliente debe tener BranchCache habilitado y configurarse para el **modo Caché distribuida**..
+Para utilizar BranchCache, el equipo cliente debe tener BranchCache habilitado y, a continuación, configurarse para el **modo de caché distribuida**.
 
 De forma predeterminada, BranchCache y el modo de caché distribuida se habilitan en un equipo cuando se instala el cliente de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Sin embargo, si el cliente ya tiene una directiva de grupo que deshabilita BranchCache, [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] no invalida esa directiva y BranchCache permanecerá deshabilitado en ese equipo.
 
-Si utiliza BranchCache, debe comunicarse con los demás administradores de su organización que administren la directiva de grupo y la directiva de Firewall de [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] para asegurarse de que no implementan la directiva que deshabilita las excepciones de Firewall o BranchCache. Para obtener información sobre BranchCache, consulte [Información general sobre BranchCache](http://technet.microsoft.com/library/hh831696.aspx)..
+Si utiliza BranchCache, debe comunicarse con los demás administradores de su organización que administren la directiva de grupo y la directiva de Firewall de [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] para asegurarse de que no implementan la directiva que deshabilita las excepciones de Firewall o BranchCache. Para obtener información sobre BranchCache, vea [Información general sobre BranchCache](http://technet.microsoft.com/library/hh831696.aspx).
 
 ### Consulte también
 [What to know before you start Microsoft Intune (Información necesaria antes de iniciar Microsoft Intune)](what-to-know-before-you-start-microsoft-intune.md)
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

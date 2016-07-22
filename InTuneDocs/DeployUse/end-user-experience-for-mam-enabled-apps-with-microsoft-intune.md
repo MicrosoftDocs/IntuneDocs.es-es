@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Experiencia del usuario final en aplicaciones habilitadas para MAM | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 3f797e3ef4a7e2d1b27ce6b1ed6e5322343c6cff
+ms.openlocfilehash: 9b557c272c9d740792560a392d52efff6a7deed1
+
 
 ---
 
@@ -41,6 +34,7 @@ Las directivas de administración de aplicaciones móviles (MAM) solo se aplican
     ![Captura de pantalla de la página de inicio de sesión de O365](../media/AppManagement/iOS_O365SignInPage.png)
 
 3.  Una vez que Azure AD haya autenticado correctamente sus credenciales, se aplicarán las directivas MAM y se le solicitará reiniciar la aplicación **OneDrive** .
+  >[NOTA] El cuadro de diálogo de reinicio necesario se muestra solo en dispositivos que no están inscritos en Intune.
 
     ![Captura de pantalla del cuadro de diálogo Es necesario reiniciar](../media/AppManagement/iOS_AppRestartforMAM.png)
 
@@ -52,6 +46,7 @@ Las directivas de administración de aplicaciones móviles (MAM) solo se aplican
 
     ![Captura de pantalla que muestra la ubicación de archivo abierta con la lista de los archivos existentes](../media/AppManagement/iOS_OneDriveSuccess.png)
 
+    > [!NOTE]
     > [!NOTE] Al cambiar una directiva implementada, los cambios se aplicarán la próxima vez que abra la aplicación.
 
 ##  Acceso a OneDrive en un dispositivo Android
@@ -79,7 +74,7 @@ Las directivas de administración de aplicaciones móviles (MAM) solo se aplican
 
     ![Captura de pantalla de la aplicación de portal de empresa](../media/AppManagement/Android_CompanyPortalInstall.png)
 
-5.  Una vez haya completado la instalación, haga clic en **Aceptar** para aceptar los términos.
+5.  Una vez haya completado la instalación, elija **Aceptar** para aceptar los términos.
 
 6.  A continuación, la aplicación **OneDrive** se iniciará automáticamente.
 
@@ -136,7 +131,7 @@ Consulte el siguiente escenario de ejemplo para ahondar aún más en cómo se tr
 El usuario A trabaja para dos empresas: la **empresa X** y la **empresa Y**. El usuario A tiene una cuenta profesional en cada empresa y en ambas se usa Intune para implementar directivas de MAM. La **empresa X** implementa directivas de MAM **antes** que la **empresa Y**. La cuenta asociada a la **empresa X** obtendrá la directiva de MAM, pero no la cuenta asociada a la empresa Y. Si quiere que la cuenta de usuario asociada a la empresa Y se administre por medio de las directivas de MAM, deberá quitar la cuenta de usuario asociada a la empresa X.
 ### Agregar una segunda cuenta
 #### iOS
-Si usa un dispositivo iOS, puede que aparezca un mensaje de bloqueo si intenta agregar una segunda cuenta profesional en el mismo dispositivo.  También verá una opción para quitar la cuenta existente y agregar una nueva. Puede hacerlo haciendo clic en **Sí**.
+Si usa un dispositivo iOS, puede que aparezca un mensaje de bloqueo si intenta agregar una segunda cuenta profesional en el mismo dispositivo.  También verá una opción para quitar la cuenta existente y agregar una nueva. Puede hacerlo eligiendo **Sí**.
 
 ![Captura de pantalla del cuadro de diálogo con el mensaje de bloqueo y las opciones Sí y No](../media/AppManagement/iOS_SwitchUser.PNG)
 ####  Android
@@ -149,6 +144,18 @@ Para ver archivos de imagen, AV y PDF de la empresa en dispositivos Android, use
 
 Descargue esta aplicación de Google Play Store.  Cuando la aplicación esté instalada en el dispositivo, iníciela y autentíquese con sus credenciales de la compañía. Ahora debería ver los archivos protegidos y desprotegidos desde otras aplicaciones administradas mediante directiva.
 
+Se admiten los siguientes tipos de archivos:
+
+* **Audio:** AAC LC, HE-AACv1 (AAC+), HE-AACv2 (AAC+ mejorado), AAC ELD (AAC retraso bajo mejorado ), AMR-NB, AMR-WB, FLAC, MP3, MIDI, Vorbis, PCM/WAVE.
+* **Vídeo:** H.263, H.264 AVC, MPEG-4 SP, VP8.
+* **Imagen:** jpg, pjpg, png, ppng, bmp, pbmp, gif, pgif, jpeg, pjpeg.
+* PDF, PPDF
+
+------------
+|**Pfile**|**text**|
+|----|----|
+|Pfile es un formato "contenedor" genérico para archivos protegidos que encapsula el contenido cifrado y las licencias de RMS y puede usarse para proteger cualquier tipo de archivo.|Los archivos de texto, incluidos XML, CSV, etc. pueden abrirse para verse en la aplicación incluso cuando están protegidos. Tipos de archivo: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
+---------------
 **Dispositivos Android que no están inscritos en Intune**
 
 Para poder usar la aplicación RMS sharing para ver archivos de otras aplicaciones que se administran mediante Intune, inicie la aplicación RMS y autentíquese con su cuenta profesional.  Cuando inicie sesión, verá el siguiente mensaje **solo si no tiene una licencia de RMS**:
@@ -162,6 +169,7 @@ Esto no impide que use la aplicación RMS sharing para ver los archivos de la em
 [Crear e implementar directivas de administración de aplicaciones móviles con Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO2-->
 
 

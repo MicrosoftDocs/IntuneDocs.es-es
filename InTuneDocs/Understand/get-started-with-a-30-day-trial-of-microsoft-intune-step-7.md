@@ -1,31 +1,24 @@
 ---
-# required metadata
-
-title: Next steps after your Intune evaluation is completed (Pasos siguientes una vez completada la evaluación de Intune) | Microsoft Intune
-description:
-keywords:
+title: "Pasos siguientes una vez completada la evaluación de Intune | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: cad9ae15-26e5-418d-8ce5-c2dafc2071f0
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 178f265fd4f9f94b9125d499c7ede20f01d22b8f
+ms.openlocfilehash: cbed361a3ea90e0de6818b221544ad5699a7f9fc
+
 
 ---
 
-# Next steps after your Intune evaluation is completed (Pasos siguientes una vez completada la evaluación de Intune)
+# Pasos siguientes una vez completada la evaluación de Intune
 Si adquiere al menos 150 licencias de Microsoft Intune en un plan elegible, puede usar el "beneficio del Centro FastTrack", un servicio donde los especialistas en Microsoft trabajan con usted para preparar su entorno para Intune. Vea [Descripción del beneficio de servicio de Microsoft Intune](https://technet.microsoft.com/library/mt228265.aspx)..
 
 Puede convertir la evaluación gratuita de Intune en una suscripción de pago de las maneras siguientes:
@@ -37,6 +30,7 @@ Puede convertir la evaluación gratuita de Intune en una suscripción de pago de
 -   **Contrato Enterprise** (&gt;250 usuarios): el mejor programa de licencias para organizaciones con más de 250 usuarios. Este contrato le ofrece la flexibilidad de elegir entre software local y servicios en línea para adaptarse mejor a las necesidades de sus usuarios y optimizar su gasto en tecnología. Póngase en contacto con el administrador de cuentas de Microsoft o con su distribuidor local para obtener más información, o vea el [Enterprise Volume Licensing site (Sitio de licencias por volumen de Enterprise)](http://www.microsoft.com/licensing/licensing-options/enterprise.aspx)..
 
 -   **Programa de suscripción en línea** (&lt;250 usuarios): el programa de [Online Services volume licensing (licencias por volumen de Online Services)](http://www.microsoft.com/licensing/online-services/default.aspx) está diseñado específicamente para organizaciones con menos de 250 usuarios. Use este programa para suscribirse, administrar e implementar sus servicios de Intune.
+
 
 
 <!--HONumber=May16_HO1-->

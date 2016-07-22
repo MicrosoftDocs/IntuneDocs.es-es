@@ -1,27 +1,21 @@
 ---
-# required metadata
-
 title: Portal de empresa de Microsoft Intune | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 65769fade08dea34b3e788628e578d58f90389f3
+ms.openlocfilehash: 815e36569e17bde750b49c7d7b10744a9b614635
+
 
 ---
 
@@ -58,6 +52,7 @@ Antes de que un usuario pueda obtener acceso al Portal de empresa, se le debe co
 [What to know before you start Microsoft Intune (Información necesaria antes de iniciar Microsoft Intune)](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

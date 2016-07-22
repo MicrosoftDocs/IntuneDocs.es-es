@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Administrar la configuración y las características de los dispositivos con directivas | Microsoft Intune
-description:
-keywords:
+title: "Administrar la configuración y las características de los dispositivos con directivas | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 06/14/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: ab570d551189ec71b54081229b93d7b4ce8d58d5
+
 
 ---
 
@@ -54,7 +48,8 @@ Para obtener una lista completa de las directivas de Intune, consulte [Microsoft
 
 2.  Seleccione la directiva que quiera, elija usar la configuración recomendada para la directiva (si está disponible; puede cambiar esta configuración en otro momento), o crear una directiva personalizada con su propia configuración.
 
-    > [!TIP] Para obtener ayuda a la hora de elegir la directiva correcta, consulte [Microsoft Intune policy reference](microsoft-intune-policy-reference.md) (Referencia de directivas de Microsoft Intune).
+    > [!TIP]
+    > Para obtener ayuda a la hora de elegir la directiva correcta, vea [Referencia de directivas de Microsoft Intune](microsoft-intune-policy-reference.md).
 
 3.  Cuando esté listo, elija **Crear directiva**.
 
@@ -119,7 +114,7 @@ Si un dispositivo no se conecta para recibir la directiva una vez enviada la pri
 
 En ese caso, el dispositivo obtendrá la directiva en la próxima conexión programada con el servicio Intune, como se indica a continuación:
 
-- iOS: cada 6 horas
+- iOS y Mac OS X: cada 6 horas
 - Android: cada 8 horas
 - Windows Phone: cada 8 horas
 - Dispositivos Windows RT inscritos: cada 24 horas
@@ -127,10 +122,10 @@ En ese caso, el dispositivo obtendrá la directiva en la próxima conexión prog
 
 Si el dispositivo se acaba de inscribir, la frecuencia de conexión será más frecuente, como se indica a continuación:
 
-- iOS: cada 15 minutos durante 6 horas y, después, cada 6 horas
+- iOS y Mac OS X: cada 15 minutos durante 6 horas y, después, cada 6 horas
 - Android: cada 3 minutos durante 15 minutos y, después, cada 15 minutos durante 2 horas y, después cada 8 horas
 - Windows Phone: cada 5 minutos durante 15 minutos y, después, cada 15 minutos durante 2 horas y, después cada 8 horas
-- Equipos con Windows inscritos como dispositivos: cada 3 minutos durante 30 minutos y, después, cada 24 horas
+- Equipos con Windows inscritos como dispositivos: cada 3 minutos durante 30 minutos y, después, cada 8 horas
 
 Los usuarios también pueden iniciar la aplicación del Portal de empresa y sincronizar el dispositivo para buscar la directiva inmediatamente en cualquier momento.
 
@@ -149,7 +144,7 @@ Es importante saber que, cuando se aplican dos o más directivas al mismo usuari
 
 -   La configuración de directivas de cumplimiento más restrictiva se aplica si se evalúa con la misma configuración en otra directiva de cumplimiento
 
--   La configuración de directivas de configuración más restrictiva se aplica si se evalúa con la misma configuración en otra directiva de configuración
+-   Si una opción de la directiva de configuración entra en conflicto con una opción de una directiva de configuración diferente, este conflicto se mostrará en la consola de Intune. Debe resolver manualmente dichos conflictos.
 
 ### ¿Qué sucede cuando las directivas de administración de aplicaciones móviles (MAM) entran en conflicto entre sí? ¿Cuál se aplicará a la aplicación?
 Los valores en conflicto son la configuración más restrictiva disponible en una directiva de administración de aplicaciones móviles, excepto para los campos de entrada de números (como intentos de PIN antes del restablecimiento).  Los campos de entrada de números se definirán con los mismos valores que si crea una directiva MAM en la consola con la opción de configuración recomendada.
@@ -178,7 +173,25 @@ Al eliminar una directiva o quitar un dispositivo de un grupo al que se le aplic
         - Tipo de contraseña obligatoria
         - Expiración de contraseña (días)
         - Recordar el historial de contraseñas
-        - Número de errores de inicio de sesión repetidos que se permiten antes de que se borren los datos del dispositivo - Minutos de inactividad antes de que se pida la contraseña - Tipo de contraseña obligatoria - Número mínimo de conjuntos de caracteres - Permitir cámara - Requerir cifrado en dispositivo móvil - Permitir almacenamiento extraíble - Permitir explorador web - Permitir almacén de aplicaciones - Permitir captura de pantalla - Permitir geolocalización - Permitir cuenta de Microsoft - Permitir copiar y pegar - Permitir Wi-Fi Tethering - Permitir la conexión automática a zonas Wi-Fi gratuitas - Permitir informar de zonas Wi-Fi - Permitir el restablecimiento de la configuración de fábrica - Permitir Bluetooth - Permitir NFC - Permitir Wi-Fi
+        - Número de errores de inicio de sesión repetidos que se permiten antes de que se borre el dispositivo
+        - Minutos de inactividad antes de que se pida la contraseña
+        - Tipo de contraseña requerida: número mínimo de conjuntos de caracteres
+        - Permitir cámara
+        - Requerir cifrado en dispositivo móvil
+        - Permitir almacenamiento extraíble
+        - Permitir explorador web
+        - Permitir almacén de aplicaciones
+        - Permitir captura de pantalla
+        - Permitir geolocalización
+        - Permitir cuenta de Microsoft
+        - Permitir copiar y pegar
+        - Permitir Wi-Fi Tethering
+        - Permitir la conexión automática a zonas Wi-Fi gratuitas
+        - Permitir informar de zonas Wi-Fi
+        - Permitir el restablecimiento de la configuración de fábrica
+        - Permitir Bluetooth
+        - Permitir NFC
+        - Permitir Wi-Fi
     
     - **iOS**: se quitan todas las configuraciones, excepto:
         - Permitir itinerancia de voz
@@ -200,9 +213,10 @@ Al eliminar una directiva o quitar un dispositivo de un grupo al que se le aplic
 
 ### ¿Dónde puedo encontrar ayuda para solucionar problemas en las directivas?
 
-Vea [Directivas de solución de problemas en Microsoft Intune](../Troubleshoot/troubleshoot-policies-in-microsoft-intune).
+Vea [Directivas de solución de problemas en Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune).
 
 
-<!--HONumber=Jun16_HO3-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Configuración de directivas de Mac OS X | Microsoft Intune
-description:
-keywords:
+title: "Configuración de directivas de Mac OS X | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 98b2f19b-bee8-42d7-a215-a716d56a25a3
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: bbbb666fdc34a82d247d760d156d48c5ac72374c
+
 
 ---
 
@@ -67,7 +60,8 @@ En la **Lista de aplicaciones compatibles y no compatibles para Mac OS X**, habi
 |**Importar aplicaciones**|Importa la lista de las aplicaciones que ha especificado en un archivo de valores separados por comas. Use el formato, el nombre de la aplicación, el editor y el identificador de paquete de la aplicación en el archivo.|
 |**Editar**|Permite editar el nombre, el editor y el identificador de paquete de la aplicación seleccionada.|
 |**Eliminar**|Elimina la aplicación seleccionada de la lista.|
-> [!TIP] Para obtener más información sobre los informes de Intune, consulte [Comprender las operaciones de Microsoft Intune mediante informes](understand-microsoft-intune-operations-by-using-reports.md).
+> [!TIP]
+> Para obtener más información sobre los informes de Intune, vea [Comprender las operaciones de Microsoft Intune mediante informes](understand-microsoft-intune-operations-by-using-reports.md).
 
 > [!IMPORTANT]
 > Cuando un dispositivo Mac OS X está en modo de suspensión, no es posible entregar ni inventariar las directivas y los perfiles. Como resultado, la consola de Intune podría mostrar temporalmente el estado **Configuraciones de directivas con errores** hasta el momento en que el dispositivo salga del modo de suspensión.
@@ -105,7 +99,7 @@ Antes de empezar, debe tener instalado Apple Configurator y haber creado un arch
 |Nombre de la configuración|Detalles|
     |----------------|--------------------|
     |**Nombre del perfil de configuración personalizada (que se muestra a los usuarios)**|Proporcione el nombre de la directiva que se mostrará en el dispositivo y en los informes de directivas de Intune.|
-    |**Archivo del perfil de configuración**|Haga clic en **Importar**y luego examine el perfil de configuración que ha creado con Apple Configurator. **Sugerencia:** Consulte [Cómo crear un archivo de perfil de configuración](#BKMK_Prof) en este tema de ayuda para crear el perfil de configuración.|
+    |**Archivo del perfil de configuración**|Haga clic en **Importar**y luego examine el perfil de configuración que ha creado con Apple Configurator. **Sugerencia:** Vea **Cómo crear un archivo de perfil de configuración** en este tema de ayuda para crear el perfil de configuración.|
     |**Detalles del perfil de configuración**|Muestra el código XML del perfil de configuración que ha importado.|
 
 
@@ -126,6 +120,7 @@ Puede crear el archivo de perfil de configuración usado por la directiva person
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

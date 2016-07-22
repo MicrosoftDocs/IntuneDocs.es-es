@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Información necesaria antes de iniciar Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Información necesaria antes de iniciar Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 06/08/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 09caaa76d08f99b0d455d291fbd4002289f2f11c
+ms.openlocfilehash: fe2ebc32005d04e92b93fd817981aa2a632c2288
+
 
 ---
 
@@ -36,7 +30,7 @@ Antes de empezar a configurar Microsoft Intune, revise cada uno de los siguiente
 - [Portal de empresa de Microsoft Intune.](microsoft-intune-company-portal.md)
 - [Integración de Intune con productos y servicios en la nube de Microsoft](integration-with-cloud-services.md)
 - [Uso de ancho de banda de red de Intune](network-bandwidth-use.md)
-- [Nombres de dominio de Microsoft Intune](domain-names-for-microsoft-intune.md)
+- [Administrar dominios personalizados con Microsoft Intune](domain-names-for-microsoft-intune.md)
 
 
 Antes de usar Intune, probablemente convenga también repasar las [capacidades de administración de dispositivos móviles de Intune](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune). Si ha empezado con una suscripción de prueba, puede convertirla más adelante en una suscripción completa. Vea [Cómo comprar Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/Purchasing.aspx).
@@ -47,6 +41,7 @@ Antes de usar Intune, probablemente convenga también repasar las [capacidades d
 
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO5-->
 
 

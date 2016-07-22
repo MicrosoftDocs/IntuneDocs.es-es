@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Supervisar la implementación de aplicaciones | Microsoft Intune
-description:
-keywords:
+title: "Supervisar la implementación de aplicaciones | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 5daad56d-71c8-455b-8a55-f8b33e279a8a
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: c92b7de51de0ac0115dd53e421d4852bed8d729a
+
 
 ---
 
@@ -32,7 +26,7 @@ ms.suite: ems
 En la consola de administración de Intune puede ver las aplicaciones que administra y el estado de las implementaciones.
 
 ### Para ver las aplicaciones que administra y su estado
-En el área de trabajo **Aplicaciones**, haga clic en el nodo **Aplicaciones** y otra vez en **Aplicaciones**..
+En el área de trabajo **Aplicaciones**, haga clic en el nodo **Aplicaciones** y otra vez en **Aplicaciones**.
 
 Se mostrará la lista de las aplicaciones que administra. Puede hacer clic en cualquier aplicación para ver el estado de la instalación en el panel inferior de las ventanas de la consola. Haga clic en este estado para ver más detalles. Por ejemplo, si se muestra el estado **1 usuario tiene este software disponible**, puede hacer clic en el mensaje para ver el nombre del usuario.
 
@@ -44,7 +38,7 @@ Se mostrará la lista de las aplicaciones que administra. Puede hacer clic en cu
 Además, el área de trabajo **Panel** muestra información general sobre el estado de las aplicaciones. Si hace clic en cualquier parte de la información general, accederá a la lista de aplicaciones.
 
 ## Para ver información más detallada sobre una aplicación
-En la lista de aplicaciones, seleccione cualquier aplicación y haga clic en **Ver propiedades**..
+En la lista de aplicaciones, seleccione cualquier aplicación y haga clic en **Ver propiedades**.
 
 En la página **Propiedades del software** de la aplicación, haga clic en una de estas pestañas: **General**, para ver información general sobre la aplicación y su estado de instalación; **Dispositivos**, para ver los dispositivos que instalaron correctamente una implementación dirigida de la aplicación; **Usuarios**, para ver los usuarios en cuyos dispositivos se instaló correctamente una implementación dirigida de la aplicación.
 
@@ -54,6 +48,7 @@ Al igual que antes, puede usar la lista desplegable **Filtros** para configurar 
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

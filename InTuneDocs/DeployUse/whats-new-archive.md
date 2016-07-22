@@ -1,47 +1,40 @@
 ---
-# required metadata
-
 title: Novedades de archivo | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Lindavr
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: get-started-article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
-
-# optional metadata
-
 ROBOTS: noindex,nofollow
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: 051d06afb0f29f2a97c1f06dc1102138e5f2be8f
+
 
 ---
 
 
 ## Septiembre de 2015
 ### Actualizaciones de administración de dispositivos y aplicaciones móviles
-**Todas las características de administración de iOS de Intune ahora admiten iOS 9**
-Para conocer los detalles sobre las funcionalidades de administración de iOS 9, consulte [esta publicación de blog](http://blogs.technet.com/b/microsoftintune/archive/2015/09/09/day-zero-support-for-ios-9-with-intune.aspx)..
+**Todas las características de administración de iOS de Intune ahora son compatibles con iOS 9** Para obtener detalles sobre las capacidades de administración de iOS 9, consulte [esta entrada de blog](http://blogs.technet.com/b/microsoftintune/archive/2015/09/09/day-zero-support-for-ios-9-with-intune.aspx).
 
-**Nueva directiva de configuración de aplicaciones móviles para iOS**
-Use la nueva directiva de configuración de aplicaciones móviles para proporcionar automáticamente la configuración que una aplicación de iOS podría necesitar al ejecutarse. Por ejemplo, podría proporcionar un puerto de red o un nombre de usuario. Para conocer los detalles, consulte [Configurar aplicaciones con directivas de configuración de aplicaciones móviles en Microsoft Intune](https://technet.microsoft.com/library/mt481447.aspx)..
+**Nueva directiva de configuración de aplicaciones móviles para iOS** Use la nueva directiva de configuración de aplicaciones móviles para proporcionar automáticamente aquellas opciones que una aplicación de iOS podría necesitar al ejecutarse. Por ejemplo, podría proporcionar un puerto de red o un nombre de usuario. Para conocer los detalles, consulte [Configurar aplicaciones con directivas de configuración de aplicaciones móviles en Microsoft Intune](https://technet.microsoft.com/library/mt481447.aspx).
 
-**Administración de aplicaciones más sencilla para los usuarios de iOS 9**
- En esta versión, puede hacer que las aplicaciones ya implementadas se administren mediante Intune en el caso de los usuarios de iOS 9. En cuanto a las versiones anteriores de iOS, cuando implemente una aplicación y en el dispositivo ya esté instalada una versión no administrada de la aplicación, tendrá que solicitar al usuario que desinstale manualmente la aplicación para que Intune pueda instalar la aplicación administrada.
+**Administración de aplicaciones más fácil para los usuarios de iOS 9**
+ En esta versión, puede hacer que aplicaciones ya implementadas se administren mediante Intune en el caso de los usuarios de iOS 9. En cuanto a las versiones anteriores de iOS, cuando implemente una aplicación y en el dispositivo ya esté instalada una versión no administrada de la aplicación, tendrá que solicitar al usuario que desinstale manualmente la aplicación para que Intune pueda instalar la aplicación administrada.
 
  Sin embargo, a partir de esta versión de Intune, es posible solicitar a los usuarios de dispositivos iOS 9 que permitan que Intune se ocupe de la administración de la aplicación y aplique las directivas de administración pertinentes de la aplicación móvil.
 
  **Administración de Windows 10** Use la nueva [directiva de configuración general de Windows 10](https://technet.microsoft.com/library/mt404697.aspx) para configurar la contraseña, el dispositivo, el explorador y otras opciones de los dispositivos inscritos que ejecutan Windows 10 y Windows 10 Mobile.
 
- **Crear e implementar aplicaciones en dispositivos de Windows 10 inscritos** El nuevo tipo de instalador de software, Windows Installer mediante MDM (&#42;.msi), le permite crear e implementar aplicaciones de Windows Installer en dispositivos inscritos que ejecutan Windows 10. Para conocer los detalles, consulte [Get started with app deployment in Microsoft Intune (Introducción a la implementación de aplicaciones en Microsoft Intune)](https://technet.microsoft.com/library/dn646955.aspx)..
+ **Crear e implementar aplicaciones en dispositivos de Windows 10 inscritos** El nuevo tipo de instalador de software, Windows Installer mediante MDM (&#42;.msi), le permite crear e implementar aplicaciones de Windows Installer en dispositivos inscritos que ejecutan Windows 10. Para conocer los detalles, consulte [Introducción a la implementación de aplicaciones en Microsoft Intune](https://technet.microsoft.com/library/dn646955.aspx).
 
 ### Cambios y actualizaciones para las aplicaciones del Portal de empresa de Microsoft
 Los siguientes cambios se realizaron en las aplicaciones de portal de empresa en esta versión:
@@ -68,10 +61,10 @@ Los siguientes cambios se realizaron en las aplicaciones de portal de empresa en
 ## Agosto de 2015
 ### Actualizaciones de administración de dispositivos y aplicaciones móviles
 * Los**términos y condiciones** para la inscripción en Intune y el acceso a la compañía [se administran ahora mediante directivas](https://technet.microsoft.com/library/mt405893.aspx). Puede destinar conjuntos de términos y condiciones diferentes a grupos de usuarios que deben cumplir requisitos específicos. Por ejemplo, puede implementar términos y condiciones en distintos idiomas en grupos de usuarios delimitados geográficamente. También puede [editar los términos y condiciones](https://technet.microsoft.com/library/mt405893.aspx#BKMK_TCVers) y especificar si desea incrementar los números de la versión, requiriendo así que los usuarios acepten los nuevos términos y condiciones para poder usar el portal de empresa.
-* **Se cambió el nombre a una serie de directivas de Intune** para que sean más coherentes en todo el producto y más fáciles de buscar. Para ver una lista de todas las directivas de Intune disponibles, consulte [Use policies to manage computers and mobile devices with Microsoft Intune (Usar directivas para administrar equipos y dispositivos móviles con Microsoft Intune)](https://technet.microsoft.com/library/dn743712.aspx)..
+* **Se cambió el nombre a una serie de directivas de Intune** para que sean más coherentes en todo el producto y más fáciles de buscar. Para ver una lista de todas las directivas de Intune disponibles, consulte [Uso de directivas para administrar equipos y dispositivos móviles con Microsoft Intune](https://technet.microsoft.com/library/dn743712.aspx).
 * Los **perfiles de certificado PKCS #12 (.PFX)** están disponibles para Android 4.0 y versiones posteriores, así como para Windows 10 (escritorio y móvil) y versiones posteriores. No es necesario un servidor NDES para usar .PFX. Aprenda cómo usar perfiles de certificados .PFX en [Habilitar el acceso a los recursos de empresa mediante perfiles de certificados con Microsoft Intune](http://technet.microsoft.com/library/dn818904.aspx).
 * **La configuración de los límites corporativos para dispositivos móviles y de escritorio de Windows 10** habilita la configuración de VPN granular, como se describe en [Ayudar a los usuarios a conectarse a su trabajo con perfiles de VPN con Microsoft Intune](https://technet.microsoft.com/library/dn818905.aspx).
-* **La aplicación OneDrive para Android ahora admite varias identidades**. Esta y otras actualizaciones a las directivas de administración de aplicaciones móviles se describen en la [lista de aplicaciones de Microsoft que puede administrar](https://technet.microsoft.com/library/dn708489.aspx)..
+* **La aplicación OneDrive para Android ahora admite varias identidades**. Esta y otras actualizaciones a las directivas de administración de aplicaciones móviles se describen en la [lista de aplicaciones de Microsoft que puede administrar](https://technet.microsoft.com/library/dn708489.aspx).
 * **Bypass del bloqueo de activación de iOS**. Si los dispositivos iOS corporativos están protegidos con el bloqueo de activación, para poder borrarlos o volver a activarlos, debe escribir el identificador y la contraseña de Apple del usuario. Esto puede suponer un desafío cuando los usuarios dejan la empresa y devuelven un dispositivo corporativo sin desactivar el bloqueo de activación. Para obtener ayuda para resolver este problema, puede usar el [bypass del bloqueo de activación de Intune](https://technet.microsoft.com/library/mt414176.aspx).
 
 ### Acceso condicional para equipos
@@ -115,6 +108,7 @@ The following changes have been made to the company portal apps in this release.
 Microsoft automatically collects anonymous data about the performance and use of the company portal to improve Microsoft products and services. End users can turn off data collection by using the Usage Data setting on their device, but administrators have no control over the data collection and cannot change the end user’s selection for this setting.--->
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

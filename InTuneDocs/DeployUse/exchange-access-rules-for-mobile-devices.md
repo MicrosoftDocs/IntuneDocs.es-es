@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Reglas de acceso a Exchange para dispositivos móviles administrados por Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Reglas de acceso a Exchange para dispositivos móviles administrados por Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: NathBarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 208b9f45-02d9-413a-b86a-8bad9b5008fa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: ef0b9901e340aec8b2b516f0180133e37833bf37
+
 
 ---
 
@@ -45,19 +39,20 @@ El siguiente procedimiento describe cómo crear una regla personalizada.
 
 ## Crear una regla de acceso predeterminada
 
-1.  En la [consola de administración de Microsoft Intune](http://manage.microsoft.com) &gt; **Directiva** &gt; **Acceso a Exchange para dispositivos móviles**.
+1.  En la [consola de administración de Microsoft Intune](http://manage.microsoft.com)&gt;**Directiva**&gt;**Acceso a Exchange para dispositivos móviles**.
 
-2.  En la lista **Regla predeterminada** , seleccione la regla de acceso que desea aplicar a todos los dispositivos móviles no cubiertos por una regla o exención personal. Elija **Guardar**..
+2.  En la lista **Regla predeterminada** , seleccione la regla de acceso que desea aplicar a todos los dispositivos móviles no cubiertos por una regla o exención personal. Elija **Guardar**.
 
 El siguiente procedimiento describe cómo crear una regla personalizada.
 
 ## Crear una regla de acceso personalizada
 
-1. En la [consola de administración de Microsoft Intune](http://manage.microsoft.com) &gt; **Directiva** &gt; **Acceso a Exchange para dispositivos móviles**.
+1. En la [consola de administración de Microsoft Intune](http://manage.microsoft.com)&gt;**Directiva**&gt;**Acceso a Exchange para dispositivos móviles**.
 
-2.  En la lista **Reglas personalizadas**, elija **Agregar regla** y cree una regla personalizada. Elija **Guardar**..
+2.  En la lista **Reglas personalizadas**, elija **Agregar regla** y cree una regla personalizada. Elija **Guardar**.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

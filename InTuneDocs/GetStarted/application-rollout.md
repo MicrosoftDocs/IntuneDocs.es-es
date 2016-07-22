@@ -1,32 +1,26 @@
 ---
-# required metadata
-
-title: Implementación de aplicaciones | Microsoft Intune
-description:
-keywords:
+title: "Implementación de aplicaciones | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0fc32ed3-bcf4-472a-80e7-eb20986f78fa
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
+ms.openlocfilehash: 4a237942b4bc1e411cf55bc34c7b86d2249c526e
+
 
 ---
 
 # Implementación de aplicaciones
-En este tema se proporcionan recomendaciones concretas para implementar aplicaciones por fases en Microsoft Intune. Para obtener información general sobre las fases de implementación, vea [Rollout phases for Microsoft Intune deployment](rollout-phases-for-microsoft-intune-deployment.md) (Fases de implementación de Microsoft Intune)..
+En este tema se proporcionan recomendaciones concretas para implementar aplicaciones por fases en Microsoft Intune. Para obtener información general sobre las fases de implementación, vea [Fases de implementación para Microsoft Intune](rollout-phases-for-microsoft-intune-deployment.md).
 
 ### Fases de implementación de una aplicación
 Las fases de implementación de una aplicación son las siguientes:
@@ -48,20 +42,23 @@ Tenga en cuenta lo siguiente:
 
 -   La idoneidad de la aplicación para los usuarios y sus dispositivos (todos los sistemas operativos que se van a poder usar).
 
--   Compruebe que el instalador de la aplicación seleccionado sea compatible con la distribución de aplicaciones de Intune, según se describe en [Agregar aplicaciones con Microsoft Intune](/intune/deploy-use/add-apps)..
+-   Compruebe que el instalador de la aplicación seleccionado sea compatible con la distribución de aplicaciones de Intune, según se describe en [Agregar aplicaciones con Microsoft Intune](/intune/deploy-use/add-apps).
 
 -   Procure tener instalados los requisitos previos de distribución de aplicaciones. <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md--->).
 
 -   Determine que el tipo de aplicación es compatible con Intune.
 
--   Compruebe que tiene suficiente espacio de almacenamiento en nube disponible para cargar la aplicación. En [Agregar aplicaciones con Microsoft Intune](/intune/deploy-use/add-apps) encontrará instrucciones para adquirir más almacenamiento..
+-   Compruebe que tiene suficiente espacio de almacenamiento en nube disponible para cargar la aplicación. En [Agregar aplicaciones con Microsoft Intune](/intune/deploy-use/add-apps) encontrará instrucciones para adquirir más almacenamiento.
+
+> [!NOTE]           
+> Puede descargar esta [plantilla de planeación para aplicaciones móviles](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59) para ayudar en el proceso de implementación.
 
 ## Prueba de concepto
 En la fase de prueba de concepto, pruebe la implementación de la aplicación en un entorno de laboratorio en dispositivos y usuarios que haya configurado estrictamente con fines de prueba.
 
--   Involucre al departamento de soporte técnico en esta fase para saber qué problemas pueden surgir durante la fase piloto y la implementación de producción. Hay información sobre solución de problemas disponible en [Troubleshoot app deployment problems in Microsoft Intune](/intune/troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune) (Solucionar problemas de implementación de aplicaciones en Microsoft Intune)..
+-   Involucre al departamento de soporte técnico en esta fase para conocer qué problemas pueden surgir durante la fase piloto y la implementación de producción. Hay información sobre solución de problemas disponible en [Solucionar problemas de implementación de aplicaciones en Microsoft Intune](/intune/troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune).
 
--   En este punto del proceso, se aconseja desarrollar planes de comunicación dirigidos a los usuarios de la fase piloto y la de producción. Como mínimo, este plan debe contemplar qué aplicación se va a implementar, cómo y cuándo podrán obtenerla los usuarios, el propósito empresarial de la implementación y, también, qué hacer si los usuarios o el personal de TI detectan problemas (tanto información de autoayuda como la forma de ponerse en contacto con el departamento de soporte técnico).
+-   En este punto del proceso, debe desarrollar planes de comunicación para los usuarios de la fase piloto y la de producción. Como mínimo, este plan debe contemplar qué aplicación se va a implementar, cómo y cuándo podrán obtenerla los usuarios, el propósito empresarial de la implementación y, también, qué hacer si los usuarios o el personal de TI detectan problemas (tanto información de autoayuda como la forma de ponerse en contacto con el departamento de soporte técnico).
 
 ## Fase piloto
 Durante la fase piloto, la aplicación se implementará en un grupo reducido de dispositivos y usuarios de prueba. Tenga en cuenta lo siguiente:
@@ -97,6 +94,7 @@ Durante la fase piloto, la aplicación se implementará en un grupo reducido de 
 [Solucionar problemas de implementación de aplicaciones en Microsoft Intune](/intune/troubleshoot/troubleshoot-app-deployment-problems-in-microsoft-intune)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

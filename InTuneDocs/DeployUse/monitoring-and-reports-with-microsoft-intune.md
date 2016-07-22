@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Supervisión e informes | Microsoft Intune
-description:
-keywords:
+title: "Supervisión e informes | Microsoft Intune"
+description: 
+keywords: 
 author: Nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 0f7dc155-cb8e-477b-ba02-2623194a9575
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: pbala
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: ffbcc48e909887647a2c1b7f7c40bde5682cddea
+
 
 ---
 
@@ -31,12 +25,13 @@ Como administrador de TI, deseará supervisar el estado de los dispositivos de s
 -   **[Informes](understand-microsoft-intune-operations-by-using-reports.md)**: ayudan a supervisar el estado de los dispositivos administrados por Intune (incluido el estado de instalación del software, el software instalado y el cumplimiento de certificados). 
      Asimismo, estos informes le permiten examinar el inventario de hardware y software recopilado por los equipos y los dispositivos.
 
--   **[Alertas](get-notified-by-microsoft-intune-alerts.md)**: ayudan a supervisar el estado de los dispositivos administrados por Intune (incluido el estado y las advertencias de Endpoint Protection, que le avisarán sobre la existencia de malware, así como advertencias relacionadas con la escasez de conectividad de red o de espacio en disco).
+-   **[Alertas](get-notified-by-alerts.md)**: ayudan a supervisar el estado de los dispositivos administrados por Intune (incluido el estado y las advertencias de Endpoint Protection, que le avisarán sobre la existencia de malware, así como advertencias relacionadas con la escasez de conectividad de red o de espacio en disco).
 
 -   Aquellos dispositivos y equipos que están administrados por Intune devuelven información detallada sobre sus propiedades y el software instalado.  Intune le proporciona herramientas e informes que le permitirán examinar y presentar estos datos. Para más información, vea [Comprender el funcionamiento de sus dispositivos mediante el inventario en Microsoft Intune](understand-your-devices-with-inventory-in-microsoft-intune.md).
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

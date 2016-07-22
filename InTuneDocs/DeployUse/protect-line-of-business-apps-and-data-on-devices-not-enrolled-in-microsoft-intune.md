@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Proteger aplicaciones y datos de línea de negocio en dispositivos no inscritos | Microsoft Intune
-description:
-keywords:
+title: "Proteger aplicaciones y datos de línea de negocio en dispositivos no inscritos | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
-ms.service:
-ms.technology:
+ms.prod: 
+ms.service: 
+ms.technology: 
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
+ms.openlocfilehash: 5e8b2a3f830016bbcd1965898dcf7b5d9a0597b5
+
 
 ---
 
@@ -64,7 +57,7 @@ Puede implementar aplicaciones para los usuarios finales de las maneras siguient
 * En el caso de los dispositivos no administrados por ninguna solución MDM, necesitará una solución personalizada. Los usuarios finales deben descargar e instalar la aplicación en sus dispositivos.
 
 ## Modificación de los metadatos
-Si necesita cambiar detalles de la aplicación como su nombre o el identificador de la agrupación de trabajos, tiene que [quitar la aplicación](#remove-apps) y [agregarla](#add-the-app) con los nuevos metadatos.
+Si necesita cambiar detalles de la aplicación como su nombre o el identificador de la agrupación de trabajos, tiene que [quitar la aplicación](#remove-apps) y [agregarla](#step-2-add-the-app) con los nuevos metadatos.
 
 ##  Quitar aplicaciones
 Puede quitar una aplicación de línea de negocio de la lista de aplicaciones.  Con esto se quitará la aplicación de la lista y también la asociación con las directivas MAM, pero no se quitará ni desinstalará la aplicación del dispositivo del usuario final.  
@@ -80,6 +73,7 @@ Puede quitar una aplicación de línea de negocio de la lista de aplicaciones.  
   Esto quitará las aplicaciones de la lista de aplicaciones de línea de negocio y de la lista Aplicaciones de destino de la directiva MAM.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jul16_HO2-->
 
 

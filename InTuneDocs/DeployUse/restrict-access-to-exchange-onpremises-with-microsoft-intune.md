@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Restringir el acceso de correo electrónico a Exchange local y Exchange Online dedicado heredado | Microsoft Intune
-description:
-keywords:
+title: "Restringir el acceso de correo electrónico a Exchange local y Exchange Online dedicado heredado | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
+ms.openlocfilehash: 6bc85a0291fa62069ba6a0f63fdd9306db3c4195
+
 
 ---
 
@@ -57,7 +51,7 @@ Cuando se configuran directivas de acceso condicional y se aplican a un usuario,
 
 -  Debe estar **registrado en Azure Active Directory**. Además, el identificador de Exchange ActiveSync del cliente debe registrarse con Azure Active Directory.
 
-  AAD DRS se activará automáticamente para los clientes de Intune y Office 365. Los clientes que ya hayan implementado el servicio de registro de dispositivos de ADFS no podrán ver los dispositivos registrados en la instancia local de Active Directory. **Esto no se aplica a equipos de Windows ni a dispositivos Windows Phone.**
+  AAD DRS se activará automáticamente para los clientes de Intune y Office 365. Los clientes que ya hayan implementado el servicio de registro de dispositivos de ADFS no podrán ver los dispositivos registrados en la instancia local de Active Directory. **Esto no se aplica a equipos de Windows ni a dispositivos Windows Phone.**
 
 -   Debe **cumplir** todas las directivas de cumplimiento de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] implementadas en el dispositivo.
 
@@ -75,7 +69,8 @@ En el diagrama siguiente se muestra el flujo que usan las directivas de acceso c
 -   Aplicación de correo electrónico nativo de iOS.
 
 -   Aplicación de correo electrónico nativo de Android 4 o posterior
-> [!NOTE] La aplicación Microsoft Outlook para iOS y Android no es compatible.
+> [!NOTE]
+> La aplicación Microsoft Outlook para iOS y Android no es compatible.
 
 ## Compatibilidad para equipos
 
@@ -104,7 +99,8 @@ La aplicación **Correo** en Windows 8 y posterior (cuando se inscribe con [!INC
 >Si se pretende bloquear todos los dispositivos antes de conceder acceso al correo electrónico, elija las opciones de bloqueo de acceso o la regla de cuarentena. La regla predeterminada se aplicará a todos los tipos de dispositivo, por lo que los tipos de dispositivo que configure como excepciones de la plataforma y que no sean compatibles con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] también se verán afectados.
 
   - **Notificación de usuario:** además del correo electrónico de notificación enviado desde Exchange, Intune envía un correo electrónico que incluye los pasos necesarios para desbloquear el dispositivo. Puede editar el mensaje predeterminado para personalizarlo según sus necesidades. Como el correo de notificación de Intune con las instrucciones de corrección se envía al buzón de Exchange del usuario, si el dispositivo del usuario se bloquea antes de recibir el mensaje de correo, puede usar un dispositivo desbloqueado u otro método para acceder a Exchange y ver el mensaje. Esta situación se da concretamente cuando la **regla predeterminada** está establecida para bloquear o para poner en cuarentena los dispositivos.  En este caso, el usuario final tendrá que ir a su tienda de aplicaciones, descargar la aplicación de portal de empresa de Microsoft e inscribir su dispositivo. Esto es aplicable a dispositivos iOS, Windows y Samsung KONX.  En el caso de los dispositivos que no ejecutan Samsung KNOX, tendrá que enviar el correo electrónico de cuarentena a una cuenta de correo electrónico alternativa. Después, el usuario final debe copiar ese correo de cuarentena en su dispositivo bloqueado para completar el proceso de inscripción y de cumplimiento de directivas.
-  > [!NOTE] Para que Exchange pueda enviar el correo electrónico de notificación, debe especificar la cuenta que se usará para enviarlo.
+  > [!NOTE]
+  > Para que Exchange pueda enviar el correo electrónico de notificación, debe especificar la cuenta que se usará para enviarlo.
   >
   > Para obtener detalles, consulte [Configure Exchange on-premises connector for on-premises or hosted Exchange (Configurar Exchange Connector local para Exchange local u hospedado)](intune-on-premises-exchange-connector.md).
 
@@ -126,6 +122,7 @@ La aplicación **Correo** en Windows 8 y posterior (cuando se inscribe con [!INC
 [Restringir el acceso a Skype Empresarial Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

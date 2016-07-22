@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Buscar un nombre de familia de paquete (PFN) para la VPN por aplicación | Microsoft Intune
-description:
-keywords:
+title: "Buscar un nombre de familia de paquete (PFN) para la VPN por aplicación | Microsoft Intune"
+description: 
+keywords: 
 author: nbigman
-manager: [ALIAS]
+manager:
+- ALIAS
 ms.date: 05/10/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
+translationtype: Human Translation
+ms.sourcegitcommit: e32cbcd54220cf36d6770ee16897d27e1d2d71db
+ms.openlocfilehash: 21bc0bcaf64cf67eea2ca30b933c314c4c3e6dae
 
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-#ms.reviewer: tycast
-#ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
 
 ---
 
@@ -91,6 +84,7 @@ En Edge, la información que le interesa se muestra directamente; en Internet Ex
 
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

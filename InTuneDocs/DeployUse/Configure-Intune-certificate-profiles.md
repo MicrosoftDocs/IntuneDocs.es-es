@@ -1,36 +1,28 @@
 ---
-# required metadata
-
 title: Configurar perfiles de certificado | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: kmyrup
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: ee6b3607688cb02be7316b83e10424dfbea9746b
+ms.openlocfilehash: 8343abe8861468bbba27272aa1f3569390cb826b
+
 
 ---
 
 # Configurar perfiles de certificado de Intune
-Después de configurar la infraestructura y los certificados según se describe en [Configurar la infraestructura de certificados](configure-certificate-infrastructure.md), puede pasar a configurar los perfiles de certificado:
+Después de configurar la infraestructura y los certificados según se describe en [Configurar la infraestructura de certificados para SCEP](configure-certificate-infrastructure-for-scep.md) o [Configurar la infraestructura de certificados para PFX](configure-certificate-infrastructure-for-pfx.md), puede pasar a configurar los perfiles de certificado:
 
-**Tarea 1:** exportar el certificado de CA raíz de confianza
-**Tarea 2:** crear perfiles de certificado de CA de confianza
-**Tarea 3:** una de las siguientes:
+**Tarea 1**: exportar el certificado de CA raíz de confianza **Tarea 2**: crear perfiles de certificado de CA de confianza **Tarea 3**: ya sea:
 
 Crear perfiles de certificado SCEP
 
@@ -46,7 +38,7 @@ Debe crear un **perfil de certificado de confianza** para poder crear un perfil 
 
 ##### Para crear un perfil de certificado de confianza
 
-1.  Abra [la consola de administración de Intune](https://manage.microsoft.com) y haga clic en **Directiva** &gt; **Agregar directiva**..
+1.  Abra la [consola de administración de Intune](https://manage.microsoft.com) y haga clic en **Directiva** &gt; **Agregar directiva**.
 
 2.  Configure uno de los siguientes tipos de directivas:
 
@@ -60,12 +52,12 @@ Debe crear un **perfil de certificado de confianza** para poder crear un perfil 
 
     **Windows &gt; Perfil de certificado de confianza (Windows Phone 8.1 y versiones posteriores)**
 
-    Más información: [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)..
+    Más información: [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 3.  Suministre la información que se le pide para configurar las opciones del perfil de certificado de confianza para Android, iOS, Mac OS X, Windows 8.1 o Windows Phone 8.1. En la opción **Archivo de certificado**, importe el certificado de CA raíz de confianza (**.cer**) que exportó desde la CA emisora. La opción **Almacén de destino** es válida únicamente para dispositivos que ejecutan Windows 8.1 y versiones posteriores y solo si el dispositivo tiene más de un almacén de certificados.
 
 
-4.  Cuando termine, haga clic en **Guardar directiva**..
+4.  Cuando haya terminado haga clic en **Guardar directiva**.
 
 La nueva directiva se muestra en el área de trabajo **Directiva** y ahora puede implementarse.
 
@@ -74,7 +66,7 @@ Después de haber creado un perfil de certificado de CA de confianza, cree perfi
 
 ##### Para crear un perfil de certificado SCEP
 
-1.  Abra la [consola de administración de Intune](https://manage.microsoft.com) y haga clic en **Directiva** &gt; **Agregar directiva**..
+1.  Abra la [consola de administración de Microsoft Intune](https://manage.microsoft.com), haga clic en **Directiva** &gt; **Agregar directiva**.
 
 2.  Configure uno de los siguientes tipos de directivas:
 
@@ -88,17 +80,17 @@ Después de haber creado un perfil de certificado de CA de confianza, cree perfi
 
     **Windows &gt; Perfil de certificado SCEP (Windows Phone 8.1 y versiones posteriores)**
 
-    Más información: [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)..
+    Más información: [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 3.  Siga las instrucciones de la página de configuración de perfil para configurar las opciones de perfil de certificado SCEP.
 
-4.  Cuando termine, haga clic en **Guardar directiva**..
+4.  Cuando haya terminado haga clic en **Guardar directiva**.
 
 La nueva directiva se muestra en el área de trabajo **Directiva** y ahora puede implementarse.
 
 ##### Para crear un perfil de certificado .PFX
 
-1.  Abra la [consola de administración de Intune](https://manage.microsoft.com) y haga clic en **Directiva** &gt; **Agregar directiva**..
+1.  Abra la [consola de administración de Microsoft Intune](https://manage.microsoft.com), haga clic en **Directiva** &gt; **Agregar directiva**.
 
 2.  Configure uno de los siguientes tipos de directivas:
 
@@ -112,11 +104,11 @@ La nueva directiva se muestra en el área de trabajo **Directiva** y ahora puede
 
     -    **iOS > Perfil de certificado PKCS #12 (.PFX) (iOS 7.1 y posterior)**    
 
-    Más información: [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)..
+    Más información: [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 3.  Proporcione la información solicitada en el formulario de directiva.
 
-4.  Cuando termine, haga clic en **Guardar directiva**..
+4.  Cuando haya terminado haga clic en **Guardar directiva**.
 
 La nueva directiva se muestra en el área de trabajo **Directiva** y ahora puede implementarse.
 
@@ -134,13 +126,13 @@ Los perfiles de certificado solo se instalan en dispositivos aplicables en funci
 
 Los perfiles de certificado se implementan igual que cualquier otra directiva para Intune:
 
-1.  En el área de trabajo **Directiva**, seleccione la directiva que quiera implementar y, luego, haga clic en **Administrar implementación**..
+1.  En el área de trabajo **Directiva** , seleccione la directiva que quiera implementar y, a continuación, haga clic en **Administrar implementación**.
 
 2.  En el cuadro de diálogo **Administrar la implementación** :
 
-    -   **Para implementar la directiva:** seleccione uno o más grupos en los que quiera implementar la directiva y haga clic en **Agregar** &gt; **Aceptar**..
+    -   **Para implementar la directiva**: seleccione uno o más grupos en los que quiera implementar la directiva y haga clic en **Agregar** &gt; **Aceptar**.
 
-    -   **Para cerrar el cuadro de diálogo sin implementarla:** haga clic en **Cancelar**..
+    -   **Para cerrar el cuadro de diálogo sin implementarla**: haga clic en **Cancelar**.
 
 Cuando se selecciona una directiva implementada, puede ver más información acerca de la implementación en la parte inferior de la lista de directivas.
 ###  Pasos siguientes
@@ -152,6 +144,7 @@ Ya puede usar certificados para proteger los perfiles de VPN, Wi-Fi y correo ele
 -  [VPN connections in Microsoft Intune (Conexiones VPN en Microsoft Intune)](vpn-connections-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

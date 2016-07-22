@@ -1,27 +1,20 @@
 ---
-# required metadata
-
 title: Restablecer un dispositivo desde el sitio web del Portal de empresa | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: d3182a85-328b-45b4-bf7a-9f6249984641
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: mamoriss
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
+ms.openlocfilehash: dcde651a95a7f1affaf5489c2664d96a7f5e9e8f
+
 
 ---
 
@@ -48,6 +41,7 @@ Se ha restablecido el dispositivo.
 [Usar el sitio web del Portal de empresa de Intune](using-the-intune-company-portal-website.md)
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

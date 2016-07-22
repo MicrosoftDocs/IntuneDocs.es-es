@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Configurar e implementar directivas de administración de aplicaciones móviles en la consola de Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Configurar e implementar directivas de administración de aplicaciones móviles en la consola de Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
+ms.openlocfilehash: a140a2f634397440b35786e7afb3165dccc7d93e
+
 
 ---
 
@@ -32,9 +26,10 @@ Compatibilidad con las directivas de administración de aplicaciones móviles:
 
 -   Dispositivos que ejecutan Android 4 y versiones posteriores.
 
--   Dispositivos que ejecutan iOS 7 y versiones posteriores.
+-   Dispositivos que ejecutan iOS 7 y versiones posteriores.
 
-> [!TIP] Las directivas de administración de aplicaciones móviles admiten dispositivos que están inscritos con Intune.
+> [!TIP]
+> Las directivas de administración de aplicaciones móviles admiten dispositivos que están inscritos con Intune.
 >
 > Si busca información sobre cómo crear directivas de administración de aplicaciones para dispositivos no administrados por Intune, vea [Protect app data using mobile app management policies with Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) (Proteger datos de aplicación mediante directivas de administración de aplicaciones móviles con Microsoft Intune).
 
@@ -46,9 +41,9 @@ Para restringir una aplicación, esta debe incorporar el SDK para aplicaciones d
 
 -   **Usar una aplicación "ajustada"**: las aplicaciones se vuelven a empaquetar a fin de incluir el SDK de la aplicación con la **herramienta de ajuste de aplicaciones de Microsoft Intune**. Esta herramienta se usa normalmente para procesar aplicaciones de empresa que se hayan creado internamente. No se puede usar para procesar aplicaciones que se hayan descargado desde la tienda de aplicaciones. Vea [Preparar aplicaciones iOS para la administración de aplicaciones móviles con la herramienta de ajuste de aplicaciones de Microsoft Intune](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) y [Preparar aplicaciones de Android para la administración de aplicaciones móviles con la herramienta de ajuste de aplicaciones de Microsoft Intune](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
-- **Escribir su propia aplicación que incorpora el SDK para aplicaciones de Intune**: el SDK para aplicaciones de Intune le permite incorporar características de administración de aplicaciones en una aplicación mientras la está escribiendo. Para obtener más información, vea [Información general del SDK para aplicaciones de Intune](/develop/intune-app-sdk)
+- **Escribir su propia aplicación que incorpora el SDK para aplicaciones de Intune**: el SDK para aplicaciones de Intune le permite incorporar características de administración de aplicaciones en una aplicación mientras la está escribiendo. Para obtener más información, vea [Información general del SDK para aplicaciones de Intune](/intune/develop/intune-app-sdk).
 
-Para obtener ayuda para elegir entre la herramienta de ajuste de aplicaciones y el SDK para aplicaciones de Intune, vea [Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles con Microsoft Intune](/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
+Para obtener ayuda para elegir entre la herramienta de ajuste de aplicaciones y el SDK para aplicaciones de Intune, vea [Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles con Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
 
 Algunas aplicaciones administradas, como la aplicación Outlook para iOS y Android admiten **identidades múltiples**. Esto significa que Intune solo aplica la configuración de administración a las cuentas corporativas o los datos de la aplicación.
 
@@ -60,7 +55,8 @@ Por ejemplo, mediante la aplicación de Outlook:
 
 -   La cuenta de trabajo empleada debe ser la misma cuenta que se usó para inscribir el dispositivo con Intune.
 
-> [!TIP] Si usa Intune con Configuration Manager, vea [Cómo controlar aplicaciones mediante directivas de administración de aplicaciones móviles en Configuration Manager](https://technet.microsoft.com/library/mt131414.aspx).
+> [!TIP]
+> Si usa Intune con Configuration Manager, vea [Cómo controlar aplicaciones mediante directivas de administración de aplicaciones móviles en Configuration Manager](https://technet.microsoft.com/library/mt131414.aspx).
 
 ## Crear e implementar una aplicación con una directiva de administración de aplicaciones móviles
 
@@ -152,7 +148,8 @@ Implemente la aplicación, asegurándose de seleccionar la directiva de administ
 
 Para obtener más detalles, vea [Implementar aplicaciones en Microsoft Intune](deploy-apps.md).
 
-> [!IMPORTANT] En el caso de dispositivos que ejecutan sistemas operativos anteriores a iOS 7.1, las directivas asociadas no se quitarán al desinstalar la aplicación.
+> [!IMPORTANT]
+> En el caso de dispositivos que ejecutan sistemas operativos anteriores a iOS 7.1, las directivas asociadas no se quitarán al desinstalar la aplicación.
 >
 > Si se anula la inscripción del dispositivo en Intune, no se eliminan las directivas de las aplicaciones; las aplicaciones que tenían directivas aplicadas conservarán la configuración de las directivas, aunque la aplicación se desinstale y reinstale.
 
@@ -163,7 +160,8 @@ En este caso, debe pedir al usuario que desinstale manualmente la versión no ad
 
 En cambio, en el caso de los dispositivos que ejecutan iOS 9 y versiones posteriores, Intune pedirá automáticamente al usuario permiso para ocuparse de la administración de la aplicación existente. Si acepta, Intune administrará la aplicación y también se aplicarán las directivas de administración de aplicaciones móviles asociadas a la aplicación.
 
-> [!TIP] Si el dispositivo está en modo de supervisión, Intune se ocupará de la administración de la aplicación existente sin pedir permiso a los usuarios.
+> [!TIP]
+> Si el dispositivo está en modo de supervisión, Intune se ocupará de la administración de la aplicación existente sin pedir permiso a los usuarios.
 
 ## **Paso 5:** supervise la implementación de la aplicación.
 Cuando haya creado e implementado una aplicación asociada a una directiva de administración de aplicaciones móviles, use los procedimientos siguientes para supervisar la aplicación y resuelva los conflictos de directivas.
@@ -198,6 +196,7 @@ En casos en los que el dispositivo o el usuario recibe dos directivas en conflic
 -   Si todavía no se implementó ninguna directiva para el dispositivo y se implementan dos configuraciones en conflicto, se usa la configuración predeterminada integrada en el dispositivo.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

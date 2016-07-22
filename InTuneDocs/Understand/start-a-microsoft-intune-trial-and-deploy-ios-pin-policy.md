@@ -1,32 +1,26 @@
 ---
-# required metadata
-
 title: Iniciar una prueba de Microsoft Intune e implementar la directiva de PIN de iOS | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: Staciebarker
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 06cb9a73-0f17-44b3-b334-86c98020316e
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 7f3985b10ac9612c8c1efc4756eb25cdcf29b023
+ms.openlocfilehash: 6787d0c35621b2bc94bfe376dfd1669e9dfe46db
+
 
 ---
 
 # Iniciar una prueba de Microsoft Intune e implementar la directiva de PIN de iOS
-Estas instrucciones paso a paso le ayudarán a configurar una prueba de Intune y una directiva de PIN para los dispositivos iOS. Para obtener una lista de otras tareas de evaluación de Intune comunes que puede probar, vea [Common Microsoft Intune evaluation tasks](common-microsoft-intune-evaluation-tasks.md) (Tareas de evaluación comunes de Microsoft Intune)..
+Estas instrucciones paso a paso le ayudarán a configurar una prueba de Intune y una directiva de PIN para los dispositivos iOS. Para obtener una lista de otras tareas de evaluación comunes de Intune que puede probar, consulte [Tareas comunes de evaluación de Intune](common-microsoft-intune-evaluation-tasks.md).
 
 
 
@@ -42,11 +36,11 @@ Estas instrucciones paso a paso le ayudarán a configurar una prueba de Intune y
 > [!NOTE]
 > Si ya tiene una suscripción a Intune, omita esta sección y vaya a la siguiente.
 
-1.  Con un equipo Windows, haga clic con el botón derecho en **Internet Explorer** (IE) y seleccione **Exploración de InPrivate**..
+1.  Con un equipo Windows, haga clic con el botón derecho en **Internet Explorer** (IE) y seleccione **Exploración de InPrivate**.
 
     ![Iniciar la exploración de InPrivate](../media/30-day-trial-walkthrus/30day-start-trial-1-InPrivate.png)
 
-2.  Vaya al [portal de suscripción a Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1), proporcione la información pedida y haga clic en **Siguiente**..
+2.  Vaya al [portal de suscripción a Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1), proporcione la información solicitada y haga clic en **Siguiente**.
 
     ![Registrarse para obtener una cuenta](../media/30-day-trial-walkthrus/30day-start-trial-2-abt-you.png)
 
@@ -58,7 +52,7 @@ Estas instrucciones paso a paso le ayudarán a configurar una prueba de Intune y
 
     ![Validar la información](../media/30-day-trial-walkthrus/30day-start-trial-4-textme.png)
 
-5.  Guarde la información que se muestra en la pantalla y, después, haga clic en **You're ready to go...** (Ya está listo)..
+5.  Guarde la información que se muestra en la pantalla y, después, haga clic en **Ya estás listo**.
 
     ![Listo](../media/30-day-trial-walkthrus/30day-start-trial-5-ReadyToGo.png)
 
@@ -80,11 +74,11 @@ Estas instrucciones paso a paso le ayudarán a configurar una prueba de Intune y
 
     3.  Desactive la casilla **Hacer que este usuario cambie su contraseña la próxima vez que inicie sesión**.
 
-    4.  Haga clic en **Crear**..
+    4.  Haga clic en **Crear**.
 
     ![Creación de cuentas de usuario](../media/30-day-trial-walkthrus/30day-crt-user-8-add-user-info.png)
 
-4.  En la página de confirmación de creación del usuario, haga clic en **Cerrar**..
+4.  En la página de confirmación de creación del usuario, haga clic en **Cerrar**.
 
     ![Página de confirmación de creación del usuario](../media/30-day-trial-walkthrus/30day-crt-user-9-close-confirm.png)
 
@@ -106,11 +100,11 @@ Estas instrucciones paso a paso le ayudarán a configurar una prueba de Intune y
 
 2.  Habilite los dispositivos iOS para la inscripción. Este proceso configura un certificado de confianza entre el Servicio de notificaciones push de Apple (APNs) y su suscripción a Intune.
 
-    1.  Haga clic en **Habilitar la plataforma iOS y Mac OS X**..
+    1.  Haga clic en **Habilitar la plataforma iOS y Mac OS X**.
 
         ![Habilitar inscripción de iOS y Mac OS X](../media/30-day-trial-walkthrus/30day-cfg-pol-13-enbl-ios-plat.png)
 
-    2.  Haga clic en **Descargar la solicitud de certificado de APNs**..
+    2.  Haga clic en **Descargar la solicitud de certificado de APNs**.
 
         ![Descargar el certificado de APNs](../media/30-day-trial-walkthrus/30day-cfg-pol-14-dwnld-cert-reqst.png)
 
@@ -126,19 +120,19 @@ Estas instrucciones paso a paso le ayudarán a configurar una prueba de Intune y
 
         ![Iniciar sesión en el portal de certificados push de Apple](../media/30-day-trial-walkthrus/30day-cfg-pol-17-id-passw-signin.png)
 
-    6.  Haga clic en **Crear un certificado**..
+    6.  Haga clic en **Crear un certificado**.
 
         ![Crear un certificado de APNs](../media/30-day-trial-walkthrus/30day-cfg-pol-18-create-cert.png)
 
-    7.  Lea las condiciones de uso de Apple, active la casilla y haga clic en **Aceptar**..
+    7.  Lea las condiciones de uso de Apple, seleccione la casilla y haga clic en **Aceptar**.
 
         ![Aceptar los términos](../media/30-day-trial-walkthrus/30day-cfg-pol-19-TOU.png)
 
-    8.  Haga clic en **Examinar**..
+    8.  Haga clic en **Examinar**.
 
         ![Vaya al lugar en el que guardó el certificado](../media/30-day-trial-walkthrus/30day-cfg-pol-20-browse.png)
 
-    9. Seleccione el archivo CSR que guardó anteriormente y haga clic en **Abrir**..
+    9. Seleccione el archivo CSR que guardó anteriormente y haga clic en **Abrir**.
 
         ![Abrir el certificado](../media/30-day-trial-walkthrus/30day-cfg-pol-21-CSRfile-open.png)
 
@@ -146,43 +140,43 @@ Estas instrucciones paso a paso le ayudarán a configurar una prueba de Intune y
 
         ![Cargar el certificado](../media/30-day-trial-walkthrus/30day-cfg-pol-22-upld-reqst.png)
 
-    11. Cuando se le pida que descargue un archivo JSON, haga clic en **Guardar como**..
+    11. Cuando se le pida que descargue un archivo JSON, haga clic en **Guardar como**.
 
         ![Guarde el archivo JSON](../media/30-day-trial-walkthrus/30day-cfg-pol-23-json-saveas.png)
 
-    12. Especifique una ubicación para el archivo JSON y haga clic en **Guardar**..
+    12. Especifique una ubicación para el archivo JSON y haga clic en **Guardar**.
 
         ![Especificar dónde se quiere guardar el archivo JSON](../media/30-day-trial-walkthrus/30day-cfg-pol-24-json-save-loc.png)
 
-        Si la página no se redirige automáticamente después de unos segundos, haga clic en **Cancelar**..
+        Si la página no se redirige automáticamente después de unos segundos, haga clic en **Cancelar**.
 
         ![Cancelar si una página no se redirige](../media/30-day-trial-walkthrus/30day-cfg-pol-25-json-pg-cancel.png)
 
-    13. Para recuperar el archivo de certificado recién creado, haga clic en **Descargar**..
+    13. Para recuperar el archivo de certificado recién creado, haga clic en **Descargar**.
 
         ![Descargar el certificado](../media/30-day-trial-walkthrus/30day-cfg-pol-26-dwnld-retrv-cert.png)
 
-    14. Cuando se le pida que descargue un archivo PEM, haga clic en **Guardar como**..
+    14. Cuando se le pida que descargue un archivo PEM, haga clic en **Guardar como**.
 
         ![Descargar el archivo PEM](../media/30-day-trial-walkthrus/30day-cfg-pol-27-pem-saveas.png)
 
-    15. Especifique una ubicación para el archivo PEM y haga clic en **Guardar**..
+    15. Especifique una ubicación para el archivo PEM y haga clic en **Guardar**.
 
         ![Guardar el archivo PEM](../media/30-day-trial-walkthrus/30day-cfg-pol-28-pem-save-loc.png)
 
-    16. Vuelva a la pestaña Consola de administración de Intune y haga clic en **Cargar el certificado de APNs**..
+    16. Vuelva a la pestaña Consola de administración de Intune y haga clic en **Cargar el certificado de APNs**.
 
         ![Cargar el certificado de APNs](../media/30-day-trial-walkthrus/30day-cfg-pol-29-upld-cert.png)
 
-    17. Escriba su identificador de Apple y haga clic en **Examinar**..
+    17. Escriba su identificador de Apple y haga clic en **Examinar**.
 
         ![Escribir el identificador de Apple](../media/30-day-trial-walkthrus/30day-cfg-pol-30-app-id-browse.png)
 
-    18. Seleccione el archivo PEM que acaba de guardar y haga clic en **Abrir**..
+    18. Seleccione el archivo PEM que acaba de guardar y haga clic en **Abrir**.
 
         ![Abrir el archivo PEM](../media/30-day-trial-walkthrus/30day-cfg-pol-31-sel-pem-open.png)
 
-    19. Haga clic en **Cargar**..
+    19. Haga clic en **Cargar**.
 
         ![Cargar el archivo PEM](../media/30-day-trial-walkthrus/30day-cfg-pol-32-pem-upload.png)
 
@@ -192,37 +186,37 @@ Estas instrucciones paso a paso le ayudarán a configurar una prueba de Intune y
 
 3.  Cree un grupo de usuarios de prueba al que aplicar la directiva:
 
-    1.  En el panel de la izquierda, haga clic en **Grupos**..
+    1.  En el panel de la izquierda, haga clic en **Grupos**.
 
         ![Abrir grupos](../media/30-day-trial-walkthrus/30day-cfg-pol-34-clk-groups.png)
 
-    2.  En el extremo derecho, haga clic en **Crear grupo**..
+    2.  En el extremo derecho, haga clic en **Crear grupo**.
 
         ![Crear un grupo](../media/30-day-trial-walkthrus/30day-cfg-pol-35-crt-group.png)
 
-    3.  Proporcione un nombre de grupo, seleccione **Todos los usuarios** como el grupo primario y haga clic en **Siguiente**..
+    3.  Proporcione un nombre de grupo, seleccione **Todos los usuarios** como el grupo primario y haga clic en **Siguiente**.
 
         ![Seleccionar todos los usuarios como grupo primario](../media/30-day-trial-walkthrus/30day-cfg-pol-36-name-group.png)
 
-    4.  En el campo **Iniciar pertenencia a grupos con**, seleccione **Todos los usuarios del grupo primario** y haga clic en **Finalizar**..
+    4.  En el campo **Iniciar pertenencia a grupos con**, seleccione **Todos los usuarios del grupo primario** y haga clic en **Finalizar**.
 
         ![Iniciar pertenencia a grupos con el grupo primario](../media/30-day-trial-walkthrus/30day-cfg-pol-37-all-users-group.png)
 
 4.  Cree una directiva de PIN de iOS y aplíquela al grupo de usuarios de prueba:
 
-    1.  En el panel de la izquierda, haga clic en **Directiva**..
+    1.  En el panel de la izquierda, haga clic en **Directiva**.
 
         ![Abrir el área de trabajo Directiva](../media/30-day-trial-walkthrus/30day-cfg-pol-38-clk-policy.png)
 
-    2.  En el extremo derecho, haga clic en **Agregar directiva**..
+    2.  En el extremo derecho, haga clic en **Agregar directiva**.
 
         ![Agregar una directiva](../media/30-day-trial-walkthrus/30day-cfg-pol-39-add-policy.png)
 
-    3.  Expanda el nodo iOS, seleccione la fila **Configuración general** y haga clic en **Crear directiva**..
+    3.  Expanda el nodo iOS, seleccione la fila **Configuración general** y haga clic en **Crear directiva**.
 
         ![Crear una directiva de configuración general de iOS](../media/30-day-trial-walkthrus/30day-cfg-pol-40-gen_cfg_pol.png)
 
-    4.  Escriba un nombre para la directiva, active la opción **Requerir una contraseña para desbloquear dispositivos móviles** y establezca **Longitud mínima de contraseña** en **4**..
+    4.  Escriba un nombre para la directiva, active la opción **Requerir una contraseña para desbloquear dispositivos móviles** y establezca **Longitud mínima de contraseña** en **4**.
 
         ![Configurar las opciones de contraseña](../media/30-day-trial-walkthrus/30day-cfg-pol-41-name-policy.png)
 
@@ -230,7 +224,7 @@ Estas instrucciones paso a paso le ayudarán a configurar una prueba de Intune y
 
         ![Implementar Directiva](../media/30-day-trial-walkthrus/30day-cfg-pol-42-yes-deploy-pol.png)
 
-    6.  Haga clic en el grupo de usuarios creado anteriormente, en **Agregar** y en **Aceptar**..
+    6.  Haga clic en el grupo de usuarios creado anteriormente, haga clic en **Agregar** y, después, en **Aceptar**.
 
         ![Seleccionar el grupo para la directiva](../media/30-day-trial-walkthrus/30day-cfg-pol-43-add-pol-to-grp.png)
 
@@ -244,7 +238,7 @@ Estas instrucciones paso a paso le ayudarán a configurar una prueba de Intune y
 
     ![Instalar el portal de empresa](../media/30-day-trial-walkthrus/30day-cfg-pol-45-cportal-installed.png)
 
-2.  Escriba el nombre de su cuenta de usuario de prueba y la contraseña y pulse **Iniciar sesión**..
+2.  Escriba el nombre de su cuenta de usuario de prueba y la contraseña y pulse **Iniciar sesión**.
 
     ![Proporcionar las credenciales](../media/30-day-trial-walkthrus/30day-cfg-pol-46-cportal-signin.png)
 
@@ -252,19 +246,19 @@ Estas instrucciones paso a paso le ayudarán a configurar una prueba de Intune y
 
     ![Iniciar la inscripción](../media/30-day-trial-walkthrus/30day-cfg-pol-47-tap-enroll.jpg)
 
-4.  En la pantalla **Instalar el perfil**, pulse **Instalar**..
+4.  En la pantalla **Instalar el perfil**, haga clic en **Instalar**.
 
     ![Instalar un perfil](../media/30-day-trial-walkthrus/30day-cfg-pol-48-profile-install-1.jpg)
 
-5.  En el cuadro de diálogo **Instalar el perfil**, pulse **Instalar**..
+5.  En el cuadro de diálogo **Instalar el perfil**, haga clic en **Instalar**.
 
     ![Continuar con la instalación del perfil](../media/30-day-trial-walkthrus/30day-cfg-pol-49-profile-install-2.jpg)
 
-6.  En la pantalla **Advertencia**, pulse **Instalar**..
+6.  En la pantalla **Advertencia**, pulse **Instalar**.
 
     ![Aceptar el mensaje de advertencia](../media/30-day-trial-walkthrus/30day-cfg-pol-50-warning-install-3.png)
 
-7.  En el cuadro de diálogo **Administración remota**, pulse **Confianza**..
+7.  En el cuadro de diálogo **Administración remota**, pulse **Confianza**.
 
     ![Confiar en la administración remota](../media/30-day-trial-walkthrus/30day-cfg-pol-51-remt-mgmt-trust.jpg)
 
@@ -276,11 +270,11 @@ Estas instrucciones paso a paso le ayudarán a configurar una prueba de Intune y
 
     ![Pulse Aceptar para cerrar la aplicación de portal de empresa.](../media/30-day-trial-walkthrus/30day-cfg-pol-53-devc-enrolled-ok.png)
 
-10. Cuando se le pida configurar un código de acceso, pulse **Continuar**..
+10. Cuando se le solicite configurar una código de acceso, pulse **Continuar**.
 
     ![Aceptar el símbolo del sistema para configurar el código de acceso](../media/30-day-trial-walkthrus/30day-cfg-pol-54-passcode-req-cont.png)
 
-11. Escriba el código de acceso, pulse **Continuar**, vuelva a escribir el código de acceso y pulse **Guardar**..
+11. Escriba el código de acceso, pulse **Continuar**, vuelva a escribir el código de acceso y pulse **Guardar**.
 
     ![Proporcionar un código de acceso](../media/30-day-trial-walkthrus/30day-cfg-pol-55-passcode-enter.jpg)
 
@@ -290,6 +284,7 @@ Estas instrucciones paso a paso le ayudarán a configurar una prueba de Intune y
 [Guía de evaluación de Intune](get-started-with-a-30-day-trial-of-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

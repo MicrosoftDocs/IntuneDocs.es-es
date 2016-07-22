@@ -1,27 +1,20 @@
 ---
-# required metadata
-
-title: Configuración de directivas de cumplimiento para dispositivos iOS | Microsoft Intune
-description:
-keywords:
+title: "Configuración de directivas de cumplimiento para dispositivos iOS | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: chrisgre
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: e736d688032dd2ddee5be9edf2a33d5e7ba5257b
+ms.openlocfilehash: 591023ea08b669ca69e8cac45e37b5fb2689ddcd
+
 
 ---
 
@@ -30,9 +23,9 @@ ms.suite: ems
 
 La configuración de directiva que se describe en este tema se aplica a los dispositivos que ejecuten iOS 6 y versiones posteriores.
 
-Si desea obtener información sobre otras plataformas, seleccione uno de los siguientes temas:
+Si quiere información sobre otras plataformas, seleccione uno de los siguientes temas:
 > [!div class="op_single_selector"]
-- [Configuración de directivas de cumplimiento para dispositivos Android](android-compliance-policy-settings-in-microsoft-intune.md)
+- [Configuración de directivas de cumplimiento normativo para dispositivos Android](android-compliance-policy-settings-in-microsoft-intune.md)
 - [Configuración de directivas de cumplimiento para dispositivos Windows](windows-compliance-policy-settings-in-microsoft-intune.md)
 
 ## Configuración de seguridad del sistema
@@ -85,6 +78,7 @@ Además, se mostrará un vínculo con información sobre cómo actualizar el sis
 - **Versión de SO máxima permitida:** cuando un dispositivo usa una versión de SO posterior a la especificada en la regla, se bloquea el acceso a los recursos de la empresa y se solicita al usuario que se ponga en contacto con el administrador de TI. Mientras no se cambie la regla para permitir la versión de SO, este dispositivo no podrá usarse para acceder a los recursos de la empresa.
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Administración de dispositivos móviles con Exchange ActiveSync y Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Administración de dispositivos móviles con Exchange ActiveSync y Microsoft Intune | Microsoft Intune"
+description: 
+keywords: 
 author: nathbarn
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
+ms.openlocfilehash: d24395786daa7aec103ec754895868a75983e099
+
 
 ---
 
@@ -41,7 +35,7 @@ Exchange Connector le permite administrar la implementación de Exchange desde l
 -   [Configurar Intune Service to Service Connector para Hosted Exchange](intune-service-to-service-exchange-connector.md)
 
 ## Aplicar la directiva para dispositivos móviles administrados por Exchange
-La configuración de directiva se puede aplicar mediante la consola de Intune; consulte [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md). Para obtener una lista de las configuraciones de directivas y las características de Exchange ActiveSync admitidas por dispositivos móviles específicos, consulte [Exchange ActiveSync Client Comparison Table](http://go.microsoft.com/fwlink/?LinkId=247270) (Tabla de comparación de clientes de Exchange ActiveSync)..
+La configuración de directiva se puede aplicar mediante la consola de Intune; consulte [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md). Para obtener una lista de las configuraciones de directivas y las características de Exchange ActiveSync admitidas por dispositivos móviles específicos, vea [Exchange ActiveSync Client Comparison Table (Tabla de comparación de clientes de Exchange ActiveSync)](http://go.microsoft.com/fwlink/?LinkId=247270).
 
 > [!NOTE]
 > Al conectar Intune a un entorno de Microsoft Exchange, la directiva de EAS de todos los usuarios administrados con Intune se restablecerá a la directiva predeterminada actual en el servidor de Microsoft Exchange, a menos que haya una directiva más específica definida en Intune.
@@ -50,6 +44,7 @@ La configuración de directiva se puede aplicar mediante la consola de Intune; c
 Por último, puede [borrar los datos de la empresa de los dispositivos móviles administrados por EAS](wipe-for-exchange-managed-mobile-devices.md) cuando ya no se usen o en caso de robo o pérdida del dispositivo.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Configuración de directiva MAM de iOS | Microsoft Intune
-description:
-keywords:
+title: "Configuración de directiva MAM de iOS | Microsoft Intune"
+description: 
+keywords: 
 author: karthikaraman
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: andcerat
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
+ms.openlocfilehash: b3df4b35dbe2710157b88a4e7fdba9734f8b998b
+
 
 ---
 
@@ -83,7 +77,7 @@ El término **aplicaciones administradas por directivas** hace referencia a las 
   Si habilita esta configuración, el usuario final deberá configurar y usar un PIN para obtener acceso a su dispositivo.  Si no se configura ningún PIN, las aplicaciones no se iniciarán y se le solicitará al usuario que establezca un PIN con un mensaje: “La compañía ha requerido que primero debe habilitar un PIN de dispositivo para tener acceso a esta aplicación”.
 
   **Valor predeterminado = La opción de cifrado no está seleccionada**
-- **ContactSyncDisabled:** elija **Sí** para evitar que la información de contacto se sincronice con la aplicación nativa de libreta de direcciones nativa del dispositivo. Si elige **No**, la aplicación guardará la información de contacto en la aplicación nativa de libreta de direcciones del dispositivo.
+- **Deshabilitar la sincronización de contactos:** elija **Sí** para evitar que la información de contacto se sincronice con la aplicación nativa de libreta de direcciones del dispositivo. Si elige **No**, la aplicación guardará la información de contacto en la aplicación nativa de libreta de direcciones del dispositivo.
 
   Al realizar una eliminación selectiva para quitar datos de la empresa, se quitan los contactos sincronizados directamente desde la aplicación a la libreta de direcciones nativa. No se pueden borrar los contactos de la libreta de direcciones nativa sincronizados con otro origen externo. Actualmente esto es válido únicamente para **Microsoft Outlook**.
 
@@ -117,6 +111,7 @@ En los dispositivos iOS, puede permitir que los usuarios se identifiquen mediant
   **Valor predeterminado = 90 días**
 
 
-<!--HONumber=Jun16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Configurar aplicaciones de iOS con directivas de configuración de aplicaciones móviles | Microsoft Intune
-description:
-keywords:
+title: "Configurar aplicaciones de iOS con directivas de configuración de aplicaciones móviles | Microsoft Intune"
+description: 
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
+ms.openlocfilehash: a1b2fb7f2938939725465a18efb594dda91d16bd
+
 
 ---
 
@@ -42,7 +36,8 @@ Las directivas de configuración de aplicaciones móviles pueden ayudarle a elim
 
 No implemente estas directivas directamente en usuarios y dispositivos. Asocie la directiva con una aplicación y, a continuación, implemente la aplicación. La configuración de directiva se usará cada vez que la aplicación la compruebe (normalmente, la primera vez que se ejecuta).
 
-> [!TIP] Actualmente, este tipo de directiva solo está disponible en dispositivos con iOS 7.1 y posterior y admite los siguientes tipos de instalación de aplicaciones:
+> [!TIP]
+> Actualmente, este tipo de directiva solo está disponible en dispositivos que ejecutan iOS 7.1 y posterior y admite los siguientes tipos de instalación de aplicaciones:
 > 
 > -   **Aplicación iOS administrada desde la tienda de aplicaciones**
 > -   **Paquete de aplicación de iOS**
@@ -62,7 +57,8 @@ No implemente estas directivas directamente en usuarios y dispositivos. Asocie l
 
 4.  En la sección **Directiva de configuración de aplicaciones móviles** de la página, escriba o pegue una lista de propiedades XML que contenga los parámetros de configuración de la aplicación que quiera en el cuadro.
 
-    > [!TIP] Para obtener más información sobre las listas de propiedades XML, consulte [Understanding XML Property Lists (Descripción de las listas de propiedades XML)](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) en la biblioteca para desarrolladores de iOS.
+    > [!TIP]
+    > Para obtener más información acerca de las listas de propiedades XML, vea [Understanding XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) (Descripción de las listas de propiedades XML) en la biblioteca de desarrolladores de iOS.
     > 
     > El formato de la lista de propiedades XML variará según la aplicación que configure. Para obtener más información sobre el formato exacto que debe usar, póngase en contacto con el proveedor de la aplicación.
     > 
@@ -104,7 +100,8 @@ A continuación, proceda a implementar y supervisar la implementación de aplica
 
 Cuando se ejecuta la aplicación implementada en un dispositivo, se ejecutará con los valores configurados en la directiva de configuración de la aplicación móvil.
 
-> [!TIP] Si una o varias directivas de configuración de aplicaciones móviles entran en conflicto, no se aplica ninguna de ellas y el conflicto se notifica en el **Panel** de la consola de administración de Intune.
+> [!TIP]
+> Si una o varias directivas de configuración de aplicaciones móviles entran en conflicto, no se aplica ninguna de ellas y el conflicto se notifica en el **Panel** de la consola de administración de Intune.
 
 ## Ejemplo de formato de archivo XML de configuración de aplicaciones móviles
 
@@ -139,6 +136,7 @@ Cuando cree un archivo de configuración de aplicaciones móviles, puede especif
 
 
 
-<!--HONumber=May16_HO2-->
+
+<!--HONumber=Jun16_HO4-->
 
 

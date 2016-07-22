@@ -1,26 +1,21 @@
 ---
 title: Configurar la infraestructura de certificados para SCEP | Microsoft Intune
-description:
-keywords:
+description: 
+keywords: 
 author: nbigman
 manager: jeffgilb
 ms.date: 05/16/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
-
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: kmyrup
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 0ca06fa26127935e08f35006730dd367fb8f6669
+ms.openlocfilehash: 942bdc4e1629a9d7e16d0994f27dab4424670a4f
+
 ---
 # Configurar la infraestructura de certificados para SCEP
 En este tema se explica qué infraestructura es necesaria para crear e implementar perfiles de certificado.
@@ -42,7 +37,7 @@ I
  > [!NOTE]           
 > -    El servidor que hospeda WAP [debe instalar una actualización](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) que habilite la compatibilidad con las direcciones URL largas que usa el Servicio de inscripción de dispositivos de red. Esta actualización está incluida en el [paquete acumulativo de actualizaciones de diciembre de 2014](http://support.microsoft.com/kb/3013769)o está disponible por separado, en [KB3011135](http://support.microsoft.com/kb/3011135).
 >-  Además, el servidor que hospeda WAP debe tener un certificado SSL que encaje con el nombre que se publica para los clientes externos, así como confiar en el certificado SSL que se usa en el servidor NDES. Estos certificados habilitan al servidor WAP para terminar la conexión SSL entre clientes y crear una nueva conexión SSL hacia el servidor NDES.
-Para obtener más información sobre los certificados de WAP, vea la sección sobre cómo **planear certificados** de [Planeamiento de publicación de aplicaciones mediante el Proxy de aplicación web](https://technet.microsoft.com/library/dn383650.aspx). Para obtener información general sobre los servidores WAP, vea [Trabajar con el Proxy de aplicación Web](http://technet.microsoft.com/library/dn584113.aspx).|
+    Para obtener más información sobre los certificados de WAP, vea la sección sobre cómo **planear certificados** de [Planeamiento de publicación de aplicaciones mediante el Proxy de aplicación web](https://technet.microsoft.com/library/dn383650.aspx). Para obtener información general sobre los servidores WAP, vea [Trabajar con el Proxy de aplicación Web](http://technet.microsoft.com/library/dn584113.aspx).|
 
 ### Requisitos de red
 
@@ -107,15 +102,18 @@ En esta tarea tendrá que:
 
     -   En la pestaña **Extensiones** , asegúrese de que **Descripción de las directivas de aplicación** incluya **Autenticación del cliente**.
 
-        > [!IMPORTANT] En el caso de plantillas de certificado de iOS y Mac OS X, en la pestaña **Extensiones**, edite **Uso de la clave** y asegúrese de que **Firma como prueba de origen** no esté seleccionado.
+        > [!IMPORTANT]
+        > En el caso de plantillas de certificado de iOS y Mac OS X, en la pestaña **Extensiones**, edite **Uso de claves** y asegúrese de que la opción **Firma como prueba de origen** no esté seleccionada.
 
     -   En la pestaña **Seguridad**, agregue la cuenta de servicio NDES y otórguele permisos de **inscripción**en la plantilla. Los administradores de Intune que vayan a crear perfiles SCEP necesitan derechos de **lectura** para poder ir a la plantilla al crear perfiles SCEP.
     
-    > [!NOTE] Para revocar certificados, la cuenta de servicio SCEP necesita derechos para *emitir y administrar certificados* para cada plantilla de certificado usada por un perfil de certificado.
+    > [!NOTE]
+    > Para revocar certificados de la cuenta de servicio NDES, necesitará derechos para *emitir y administrar certificados* referentes a cada plantilla de certificado que use un perfil de certificado.
 
 3.  Revise la configuración de **Período de validez** en la pestaña **General** de la plantilla. Intune usa de forma predeterminada el valor configurado en la plantilla. Pero tiene la opción de configurar la CA para permitir que el solicitante especifique otro valor, lo que se puede establecer desde la consola de administrador de Intune. Si desea usar siempre el valor de la plantilla, omita el resto de este paso.
 
-    > [!IMPORTANT] Las plataformas iOS y Mac OS X siempre usan el valor establecido en la plantilla independientemente de otras configuraciones que realice.
+    > [!IMPORTANT]
+    > Las plataformas iOS y Mac OS X siempre usan el valor establecido en la plantilla, con independencia de otras configuraciones que realice.
 
 Estas son capturas de pantalla de una configuración de plantilla de ejemplo.
 
@@ -260,7 +258,8 @@ En esta tarea tendrá que:
 
     3.  En el caso de **Certificado SSL**, especifique el certificado de autenticación de servidor.
 
-        > [!NOTE] Si el servidor SCEP usa tanto un nombre externo como uno interno para una única dirección de red, el certificado de autenticación del servidor debe tener un **Nombre del sujeto** con un nombre de servidor público externo y un **Nombre alternativo del sujeto** que incluya el nombre del servidor interno.
+        > [!NOTE]
+        > Si el servidor NDES usa tanto un nombre externo como interno para una única dirección de red, el certificado de autenticación de servidor debe tener un **Nombre del firmante** con un nombre de servidor público externo y un **Nombre alternativo del firmante** que incluya el nombre del servidor interno.
 
 2.  En el servidor NDES, solicite e instale un certificado de **autenticación del cliente** de la CA interna o de una entidad de certificación pública. Este puede ser el mismo certificado que el certificado de autenticación de servidor si dicho certificado tiene ambas capacidades.
 
@@ -322,7 +321,8 @@ Descargar, instalar y configurar Certificate Connector en el servidor SCEP.
 
 4.  Cuando se complete el asistente, pero antes de cerrarlo, haga clic en **Iniciar la UI del conector de certificado**.
 
-    > [!TIP] Si cierra al asistente antes de iniciar la IU de Certificate Connector, puede volver a abrirlo si ejecuta el comando siguiente:
+    > [!TIP]
+    > Si cierra al asistente antes de iniciar la IU del conector de certificado, puede volver a abrirlo ejecutando el comando siguiente:
     >
     > **&lt;install_Path&gt;\NDESConnectorUI\NDESConnectorUI.exe**
 
@@ -346,6 +346,7 @@ Para validar que el servicio se ejecuta, abra un explorador y escriba la siguien
 Ya está listo para configurar perfiles de certificado, como se describe en [Configure certificate profiles](Configure-Intune-certificate-profiles.md) (Configurar perfiles de certificado).
 
 
-<!--HONumber=Jun16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 

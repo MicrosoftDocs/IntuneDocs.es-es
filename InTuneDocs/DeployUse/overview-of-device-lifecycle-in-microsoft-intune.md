@@ -1,35 +1,28 @@
 ---
-# required metadata
-
-title: Información general sobre el ciclo de vida del dispositivo | Microsoft Intune
-description:
-keywords:
+title: "Información general sobre el ciclo de vida de MDM | Microsoft Intune"
+description: "Obtenga información sobre cómo Intune le ayuda a administrar dispositivos a través de su ciclo de vida desde la inscripción pasando por la configuración hasta su posible retirada."
+keywords: 
 author: robstackmsft
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
 ms.reviewer: jeffgilb
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+ms.sourcegitcommit: 5140c4943be630ea8e48f80f7e6b590d223beac1
+ms.openlocfilehash: 751025aa71ef41564100ea57ac0d1fe60619e214
+
 
 ---
 
 # Información general sobre el ciclo de vida de administración de dispositivos móviles (MDM)
 
-El ciclo de vida del dispositivo de Intune comienza con la inscripción inicial de un dispositivo, se extiende a través de otras fases y termina cuando ya no es necesario.
+Todos los dispositivos que administra tienen lo que llamamos un *ciclo de vida*. Intune puede ayudarle a administrar su ciclo de vida desde la inscripción hasta la retirada del dispositivo cuando ya no sea necesario:
 
-![Ciclo de vida del dispositivo](./media/devicelifecycle_nobg.png "the Intune device lifecycle")
+![Ciclo de vida del dispositivo](./media/device-lifecycle.png "the Intune device lifecycle")
 
 ## Inscribir
 Las estrategias de administración de dispositivos móviles (MDM) de hoy en día se aplican a una serie de teléfonos, tabletas y equipos (iOS, Android, Windows y Mac OS X). Si tiene que administrar el dispositivo, que suele ser el caso de los dispositivos corporativos, el primer paso es [configurar la inscripción del dispositivo](enroll-devices-in-microsoft-intune.md). También puede administrar equipos Windows si los inscribe en Intune (MDM) o [instala el software cliente de Intune](manage-windows-pcs-with-microsoft-intune.md).
@@ -51,6 +44,7 @@ En el actual sector de las TI, la protección de los dispositivos frente al acce
 Cuando un dispositivo se pierde o es robado, cuando es necesario reemplazarlo o cuando el usuario cambia de cargo en la empresa, suele ser necesario [retirar o borrar](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md) el dispositivo. Hay varias maneras de hacerlo, como restablecer el dispositivo, quitarlo de la administración o borrar los datos corporativos que contiene.
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jun16_HO4-->
 
 
