@@ -1,26 +1,27 @@
 ---
-title: Usar aplicaciones administradas en el dispositivo | Microsoft Intune
+title: Usar aplicaciones administradas en el dispositivo Android | Microsoft Intune
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
+ROBOTS: noindex,nofollow
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
-ms.openlocfilehash: 5a25d845113ef6a3cb402923ef451fab63138979
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 9e6ef6d4daf8507ed00cb5fa4a1d88f44a05068c
 
 
 ---
 
 
-# Usar aplicaciones administradas en el dispositivo
+# Usar aplicaciones administradas en el dispositivo Android
 
 Las aplicaciones administradas son aplicaciones que el administrador de TI puede configurar para ayudar a proteger los datos de la empresa a los que se puede acceder en esa aplicación. Cuando accede a los datos de la empresa en una aplicación administrada en su dispositivo Android, puede observar que la aplicación funciona de forma un poco diferente de lo que espera. Por ejemplo, es posible que no pueda copiar y pegar los datos protegidos de la compañía o no pueda guardar dichos datos en determinadas ubicaciones.
 
@@ -77,6 +78,7 @@ Para obtener más información sobre las aplicaciones administradas en el dispos
 [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

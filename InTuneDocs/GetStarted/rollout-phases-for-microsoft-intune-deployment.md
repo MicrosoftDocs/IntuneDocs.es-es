@@ -3,8 +3,8 @@ title: "Fases de la implementación de Microsoft Intune | Microsoft Intune"
 description: "Las fases típicas de una implementación técnica son Ámbito del proyecto, Prueba de concepto, Piloto, Implementación empresarial y Estado de ejecución."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 9fe7eec1-2a6f-404e-8614-977527a7a15b
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: c20f96481916d5e9468eade65d8aa0c1133646ef
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: fda1e32c2b1be260c1d2c1b26f2415105d3fc10a
 
 
 ---
@@ -26,11 +26,11 @@ Las fases típicas de una implementación técnica son Ámbito del proyecto, Pru
 -   [Ámbito del proyecto](project-scope.md): marque los objetivos, la programación y las métricas de éxito, defina los factores clave de preparación organizativa, forme el equipo del proyecto y comience con los preparativos iniciales de todas las fases implicadas en la implementación correcta de Microsoft Intune en la organización.
      > [!NOTE]           
        Estas plantillas pueden resultar útiles al trabajar en el ámbito del proyecto:
-        
+
     >- [Plantilla de decisión entre Intune o Intune con Configuration Manager](https://gallery.technet.microsoft.com/Intune-or-Intune-with-900e8a78)
     >- [Plantilla de planeamiento para aplicaciones móviles](https://gallery.technet.microsoft.com/Mobile-app-planning-18689d59)
     >- [Plantilla de planeamiento general de administración de dispositivos](https://gallery.technet.microsoft.com/General-device-management-334c3792)
-    
+
 
 -   [Prueba de concepto](proof-of-concept.md): pruebe la implementación técnica y la arquitectura de red y determine si la implementación satisface los requisitos de la empresa. Esta fase incluye una topología simple diseñada para validar escenarios técnicos concretos.  
 
@@ -62,6 +62,6 @@ These topics will help you plan for the rollout of new policies and apps:
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

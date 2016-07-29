@@ -1,9 +1,9 @@
 ---
-title: "Otras opciones y extras para las suscripciones de evaluación de Intune | Microsoft Intune"
-description: 
+title: Otras opciones y extras para las evaluaciones de Intune | Microsoft Intune
+description: "Describe alertas, notificaciones e informes, además de capacidades generales de Intune que necesita conocer al registrarse para obtener una evaluación gratuita de 30 días de Intune."
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
-ms.openlocfilehash: 0574891a021d43f54ef78ded20d6cf19c18eb25b
+ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
+ms.openlocfilehash: 34ac9e63541d93a6c4bf323de3b9e14b1d5609e5
 
 
 ---
@@ -58,6 +58,6 @@ Enhorabuena. Acaba de completar el tutorial de *evaluación de Microsoft Intune*
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

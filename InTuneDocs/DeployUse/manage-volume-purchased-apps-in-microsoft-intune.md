@@ -1,20 +1,20 @@
 ---
 title: Administrar aplicaciones compradas por volumen | Microsoft Intune
-description: 
+description: "Obtenga información acerca de cómo usar Intune para administrar aplicaciones que adquirió en volumen de una tienda de aplicaciones."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 674c8f4c-00be-4c69-85b7-cf7bdaa71c94
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: 0b8da55b81040fd20e8234303ac4da384de954d8
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 6da7393834b7cb14085e090a014e030d2df3ff2f
 
 
 ---
@@ -38,6 +38,6 @@ Para conocer cómo se administran las aplicaciones con licencia de cada tienda, 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

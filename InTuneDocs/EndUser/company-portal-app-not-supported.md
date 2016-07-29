@@ -3,7 +3,7 @@ title: "Aplicación de portal de empresa no admitida | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 7/20/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f1fd60348f5e18344a2ce63311cef7a551f355d3
-ms.openlocfilehash: 0921cb19c0adde058711dc78f34ed93da7ec0dd9
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 350dc15f67f4f76d18768ff9fc7f648b290d6402
 
 
 ---
@@ -28,6 +28,6 @@ Esta versión del portal de empresa ya no se puede usar. Instale la aplicación 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

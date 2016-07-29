@@ -1,10 +1,10 @@
 ---
 title: "Implementación empresarial | Microsoft Intune"
-description: 
+description: "Recomendaciones para la fase de implementación de una implementación de Intune."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d894708e-7071-44f5-aa3b-af5aef02fb98
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
-ms.openlocfilehash: 588d37ac5524c80da9082ee5b1af0e897e925ef9
+ms.sourcegitcommit: 0fff944e180bda99d70caafebe4ae69b6bd05b1b
+ms.openlocfilehash: aae62850d35aab6908cae2841988822911989a40
 
 
 ---
@@ -73,7 +73,9 @@ Estos son los pasos necesarios para comenzar con la fase de **implementación em
 
 -   Identifique los grupos que puedan necesitar entrenamiento y comunicaciones dirigidas.
 
--   Personalice las comunicaciones de correo electrónico, actualice el sitio de intranet e identifique el propietario en curso para la actualización de recursos o comunicaciones.
+-   Personalice las comunicaciones por correo y actualice el sitio de la intranet.
+
+-   Identifique el propietario actual para las comunicaciones/actualización de recursos.
 
 -   Describa los métodos de entrenamiento que va a usar.
 
@@ -108,6 +110,6 @@ Estos son algunos de los desafíos que puede encontrarse en la fase de **impleme
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

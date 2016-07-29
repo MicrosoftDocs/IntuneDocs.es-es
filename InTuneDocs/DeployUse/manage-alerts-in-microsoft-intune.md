@@ -1,21 +1,21 @@
 ---
 title: Administrar alertas | Microsoft Intune
-description: 
+description: "Use el área de trabajo Alertas para evaluar el estado general de los dispositivos de la organización."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 74dc4ce4-21da-4f40-a07f-3eea34561eee
-ROBOTS: noindex,nofollow
-ms.reviewer: jeffgilb
+ROBOTS: NOINDEX,NOFOLLOW
+ms.reviewer: pbala
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
-ms.openlocfilehash: bfea7213f67b55807045bfd8b29fdb083b841a56
+ms.sourcegitcommit: 9a124663a80bb477d0312faa0fb43e4457ba8246
+ms.openlocfilehash: 54dd8c6bae6c02e7dde3582b439d106261bc490b
 
 
 ---
@@ -33,12 +33,12 @@ Utilice el área de trabajo **Alertas** en la consola de administración de Intu
 
         > [!NOTE]
         > En algunos casos, es posible que un tipo de alerta aparezca más de una vez en la lista **Resumen de tipos de alerta**.
-        > 
+        >
         > Por ejemplo, pueden aparecer en la lista las siguientes instancias del tipo de alerta Espacio libre en disco lógico:
-        > 
+        >
         > -   3 Espacio libre en disco lógico
         > -   2 Espacio libre en disco lógico
-        > 
+        >
         > Este comportamiento se produce cuando se genera el mismo tipo de alerta para dispositivos que ejecutan sistemas operativos distintos. En el ejemplo, la primera instancia del tipo de alerta Espacio libre en disco lógico, 3 Espacio libre en disco lógico, puede haber sido generada por equipos que ejecutan Windows® 7. La segunda instancia del tipo de alerta Espacio libre en disco lógico puede haber sido generada por equipos que ejecutan Windows Vista®.
 
     -   **Para mostrar todas las alertas activas**, haga clic en **Alertas &gt; Todas las alertas**. En la página **Alertas** se muestra una lista de todas las alertas activas con las columnas siguientes:
@@ -107,7 +107,6 @@ Las alertas que se marcan como cerradas se eliminan permanentemente después de 
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

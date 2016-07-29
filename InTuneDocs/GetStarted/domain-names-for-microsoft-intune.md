@@ -1,6 +1,6 @@
 ---
 title: Nombres de dominio de Microsoft Intune | Microsoft Intune
-description: 
+description: agregar nombre de dominio para Intune
 keywords: 
 author: andredm7
 manager: swadhwa
@@ -13,17 +13,15 @@ ms.assetid: c3c136f0-330d-432a-a91f-16f7dd097e55
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3d99669f90fe7ebec7854b7a800b09b0685c314e
-ms.openlocfilehash: aaede1500f28c6eb8c2a21924d7c3b7f633eca26
+ms.sourcegitcommit: 3eb096fea4569be24cf1ea42088705f0d5da38a4
+ms.openlocfilehash: 176da99a198b0a8167ac5d7992a751f2c965f0ac
 
 
 ---
 
 
 
-# Administrar dominios personalizados con Microsoft Intune
-
-Los pasos para agregar y comprobar un dominio personalizado pueden [realizarse en Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-add-domain/) de forma alternativa.
+# Nombres de dominios personalizados con Microsoft Intune
 
 Cuando su organización se registra en un servicio en la nube de Microsoft como Intune, se le asigna un nombre de dominio inicial hospedado en Azure Active Directory que es similar al siguiente: **sudominio.onmicrosoft.com**. En este ejemplo, **sudominio** es el nombre de dominio que eligió al suscribirse y **onmicrosoft.com** es el sufijo asignado a las cuentas que agregue a su suscripción.
 
@@ -32,20 +30,19 @@ No puede cambiar el nombre o quitar ese nombre de dominio inicial. Sin embargo, 
 ## Para agregar y comprobar el dominio personalizado 
 
 1. Vaya al [Portal de administración de Office 365](https://portal.office.com/Admin/Default.aspx) e inicie sesión en la cuenta del administrador.
-    > [!IMPORTANT]
-    > Vea el anuncio     [El Portal de cuentas de Intune se ha fusionado con el Portal de administración de Office 365](https://docs.microsoft.com/en-us/intune/deploy-use/account-portal-merged-with-Office-365) para obtener más detalles sobre dónde administrar los dominios, los grupos y los usuarios de Microsoft Intune.
+
 2. En el panel de navegación, elija **Configuración** &gt; **Dominios**.
+
 3. Elija **Agregar dominio** y escriba el nombre de su dominio personalizado.
+
 4. El cuadro de diálogo **Comprobar dominio** se abre proporcionándole los valores para crear el registro TXT en su proveedor de host DNS.
-    > [!TIP]
-    > El Portal de administración de Office 365 le redirige a la página de inicio de sesión de GoDaddy al usar un dominio de GoDaddy. El registro TXT se crea automáticamente después de escribir sus credenciales y de que acepte el acuerdo del permiso de cambio de dominio.
-    > 
-    > También puede [crear el registro TXT manualmente al usar un dominio de GoDaddy](https://support.office.com/en-us/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a?ui=en-US&rs=en-US&ad=US), basándose en los valores que se han proporcionado en este paso.
+    - **Usuarios de GoDaddy**: el Portal de administración de Office 365 le redirige a la página de inicio de sesión de GoDaddy. El registro TXT se crea automáticamente después de escribir sus credenciales y de aceptar el acuerdo del permiso de cambio de dominio. También puede [crear el registro TXT](https://support.office.com/en-us/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a?ui=en-US&rs=en-US&ad=US).
+    - **Usuarios de Register.com**: siga las [instrucciones paso a paso](https://support.office.com/en-us/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e?ui=en-US&rs=en-US&ad=US#BKMK_verify) para crear el registro TXT.
 
-    > [!NOTE]
-    > Siga las [instrucciones paso a paso](https://support.office.com/en-us/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e?ui=en-US&rs=en-US&ad=US#BKMK_verify) para crear el registro TXT al usar un dominio de Register.com, basándose en los valores que se han proporcionado en este paso.
+    > [!TIP] 
+    > Asegúrese de crear un alias DNS (CNAME) para la [inscripción de dispositivos de Windows](/Intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune) mientras se realizan cambios en su proveedor de host DNS.
 
-5. Asegúrese de crear un alias DNS (CNAME) para la [inscripción de dispositivos de Windows](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune) mientras se realizan cambios en su proveedor de host DNS.
+Los pasos para agregar y comprobar un dominio personalizado pueden [realizarse en Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-add-domain/) de forma alternativa.
 
 En un escenario en la nube híbrido, después de agregar el nombre de dominio personalizado y de que se haya comprobado que pertenece a su organización, puede seguir administrando cuentas de usuario en su Active Directory local, puede sincronizarlo con Azure AD.
 
@@ -60,10 +57,10 @@ En un escenario en la nube híbrido, después de agregar el nombre de dominio pe
 
 [Sobre su dominio inicial onmicrosoft.com en Office 365](https://support.office.com/en-us/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A?ui=en-US&rs=en-US&ad=US)
 
-[What to know before you start using Microsoft Intune (Información necesaria antes de empezar a usar Microsoft Intune)](what-to-know-before-you-start-microsoft-intune.md)
+[What to know before you start Microsoft Intune (Información necesaria antes de iniciar Microsoft Intune)](what-to-know-before-you-start-microsoft-intune.md)
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,9 +1,9 @@
 ---
 title: Configurar la infraestructura de certificados para PFX | Microsoft Intune
-description: 
+description: Cree e implemente perfiles de certificado .PFX.
 keywords: 
 author: nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/16/2016
 ms.topic: article
 ms.prod: 
@@ -13,14 +13,14 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6edb37708d26033358af30c47e955b20caedb6fd
-ms.openlocfilehash: 51def9dc80043bbf5a71578fb44cae9259fd48b1
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 2f45c54d18156469488c77600626ea359374a588
 
 
 
 ---
 # Configurar la infraestructura de certificados
-En este tema se describe qué se necesita para crear e implementar perfiles de certificado.
+En este tema se describe qué se necesita para crear e implementar perfiles de certificado .PFX.
 
 Para realizar cualquier autenticación basada en certificados en la organización, se necesita una entidad de certificación empresarial.
 
@@ -158,6 +158,6 @@ Ya está listo para configurar perfiles de certificado, como se describe en [Con
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

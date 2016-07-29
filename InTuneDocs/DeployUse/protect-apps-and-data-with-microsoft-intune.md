@@ -1,10 +1,10 @@
 ---
 title: Proteger aplicaciones y datos | Microsoft Intune
 description: 
-keywords: 
+keywords: "En este tema se describen las diversas características y funcionalidades de Intune que están disponibles para ayudarle a proteger sus datos y aplicaciones de empresa."
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 9445b4b171eb2102d73cf0e866e85b535274eee2
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: f60541c2e9284ea795c5e9811ef2663113af57cb
 
 
 ---
@@ -39,7 +39,9 @@ La protección del acceso a los recursos de la empresa es solo el primer paso pa
 - Proteger el acceso a la aplicación mediante PIN, código de acceso o credenciales corporativas.
 - Hacer que todos los vínculos web se abran en Intune Managed Browser.
 
-Estos conjuntos de reglas se conocen como [directivas de administración de aplicaciones móviles (MAM)](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).  Las directivas de MAM se pueden aplicar a aplicaciones que se ejecutan en dispositivos que pueden estar administrados o no por el usuario.  Puede proteger los datos empresariales mediante directivas de MAM en los dispositivos inscritos en Intune, en los dispositivos inscritos y administrados en una solución MDM de terceros o en otros dispositivos que pueden estar administrados o no por el usuario, como los dispositivos personales de los empleados.
+Estos conjuntos de reglas se conocen como [directivas de administración de aplicaciones móviles (MAM)](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).  Las directivas de MAM se pueden aplicar a aplicaciones que se ejecutan en dispositivos que pueden estar administrados o no por el usuario.  
+
+Puede proteger los datos empresariales mediante directivas de MAM en los dispositivos **inscritos en Intune**, en los dispositivos **inscritos y administrados en una solución MDM de terceros** o en otros dispositivos que **no estén inscritos en ninguna solución MDM**, como los dispositivos personales de los empleados.
 
 Para asociar una aplicación a una directiva de MAM, la aplicación debe incorporar el Kit de desarrollo de software (SDK) de aplicaciones de Microsoft Intune o usar la herramienta de ajuste de aplicaciones.
 
@@ -51,6 +53,6 @@ Además de restringir el movimiento de datos, si un dispositivo se pierde o es r
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

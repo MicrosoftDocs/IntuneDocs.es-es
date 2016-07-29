@@ -1,19 +1,20 @@
 ---
 title: Actualizaciones de software para equipos Windows | Microsoft Intune
-description: 
+description: "Intune ayuda a mantener actualizados los equipos administrados garantizando la rápida instalación de las revisiones y actualizaciones de software más recientes."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
-ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
-ms.openlocfilehash: d650eea62be0c00c414b51ed5c49310c5175acd7
+translationtype: Human Translation
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 5112dca8c30a872b26c73a948a8f14ac63957567
 
 
 ---
@@ -253,6 +254,6 @@ Al seleccionar una actualización de la lista estarán disponibles otros comando
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO4-->
 
 

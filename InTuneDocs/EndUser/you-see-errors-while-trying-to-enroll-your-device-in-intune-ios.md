@@ -3,7 +3,7 @@ title: Observa errores al intentar inscribir un dispositivo iOS en Intune | Micr
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/15/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c017a666bf208e02c1db8f1137281435217fc5e6
-ms.openlocfilehash: 05be16beab9896e56ed69c1a9485c9925f6f2f80
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: acb8d018b23753ad0a414d0222468caad3284325
 
 
 ---
@@ -40,6 +40,6 @@ En la siguiente tabla se muestran los errores que puede encontrar durante la ins
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

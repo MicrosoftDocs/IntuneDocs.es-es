@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Preparar aplicaciones iOS para la administración con la Herramienta de ajuste de aplicaciones | Microsoft Intune
-description:
-keywords:
-author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+title: Ajuste de aplicaciones iOS con la herramienta de ajuste de aplicaciones | Microsoft Intune
+description: "Utilice la información de este tema para obtener información sobre cómo ajustar las aplicaciones iOS sin modificar el código de la propia aplicación. Prepare las aplicaciones de modo que pueda aplicar las directivas de administración de aplicaciones móviles."
+keywords: 
+author: karthikaraman
+manager: angrobe
+ms.date: 07/28/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: matgates
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 19a5b8f8260bace2bbe3626da3df281306f53024
+ms.openlocfilehash: ebd68513da55b8bb1715d2c82636abf791cae1ff
+
 
 ---
 
@@ -30,7 +24,7 @@ Use la **Herramienta de ajuste de aplicaciones de Microsoft Intune para iOS** pa
 
 La herramienta es una aplicación de línea de comandos de Mac OS que crea un "contenedor" alrededor de una aplicación. Una vez que se procesa la aplicación, puede cambiar su funcionalidad con [directivas de administración de aplicaciones móviles](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) que configure.
 
-Para descargar la herramienta, consulte [Microsoft Intune App Wrapping Tool for iOS](http://www.microsoft.com/en-us/download/details.aspx?id=45218)(Herramienta de ajuste de aplicaciones de Microsoft Intune para iOS)..
+Para descargar la herramienta, consulte [Microsoft Intune App Wrapping Tool for iOS - Español](http://www.microsoft.com/en-us/download/details.aspx?id=45218).
 
 ## Paso 1: cumplir los requisitos previos para usar la herramienta de ajuste de aplicaciones
 
@@ -59,7 +53,7 @@ Para descargar la herramienta, consulte [Microsoft Intune App Wrapping Tool for 
 
 1.  En el equipo Mac, abra una ventana de Terminal y navegue hasta la carpeta donde guardó los archivos. Dado que el archivo ejecutable reside dentro del paquete, deberá ejecutar el comando siguiente:
 ```
-    ./IntuneMAMPackager.app/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -a <client ID of input app> -r <reply URI of input app> -v true
+    ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -a <client ID of input app> -r <reply URI of input app> -v true
 ```
     > [!NOTE]
     > Some parameters are optional as shown in the table below.
@@ -126,7 +120,7 @@ Las aplicaciones que se ajustaron mediante la herramienta de ajuste de aplicacio
 
 1.  Reproduzca el problema ejecutando la aplicación.
 
-2.  Recopile la salida de consola siguiendo las instrucciones de [Debugging Deployed iOS Apps](https://developer.apple.com/library/ios/qa/qa1747/_index.html) (Depuración de aplicaciones iOS implementadas) de Apple..
+2.  Recopile la salida de consola siguiendo las instrucciones de [Depuración de aplicaciones iOS implementadas](https://developer.apple.com/library/ios/qa/qa1747/_index.html)de Apple.
 
 3.  Filtre los registros guardados para la salida de restricciones de la aplicación especificando el siguiente script en la consola:
 
@@ -149,7 +143,7 @@ Para las aplicaciones que usen ADAL, deben cumplirse las siguientes condiciones:
 
 -   La aplicación debe incorporar una versión de ADAL posterior o igual a la versión 1.0.2
 
--   Los desarrolladores deben conceder acceso a sus aplicaciones al recurso Administración de aplicaciones móviles de Intune, como se describe en [Pasos que debe seguir en cuanto a las aplicaciones que usan ADAL](#steps-to-follow-for-apps-that-use-adal)..
+-   Los desarrolladores deben conceder acceso a sus aplicaciones al recurso Administración de aplicaciones móviles de Intune, como se describe en [Pasos que debe seguir en cuanto a las aplicaciones que usan ADAL](#steps-to-follow-for-apps-that-use-adal).
 
 ### Información general acerca de los identificadores que debe obtener
 Las aplicaciones que usen ADAL deben registrarse a través del portal de administración de Azure para obtener dos identificadores únicos para la aplicación:
@@ -170,9 +164,9 @@ Las aplicaciones que usen ADAL deben registrarse a través del portal de adminis
 
     2.  Haga clic en **registro existente de la aplicación LOB** en Azure Active Directory.
 
-    3.  En la sección de configuración, seleccione **Configurar acceso a API web en otras aplicaciones**..
+    3.  En la sección de configuración, elija **Configurar acceso a las API web en otras aplicaciones**.
 
-    4.  En la sección **Permiso en otras aplicaciones**, en la primera lista desplegable, seleccione **Administración de aplicaciones móviles de Intune**.
+    4.  En la sección **Permission to other applications** (Permiso en otras aplicaciones), en la primera lista desplegable, seleccione **Administración de aplicaciones móviles de Intune**.
 
         Ahora puede usar el identificador de cliente de la aplicación en la herramienta de ajuste de aplicaciones. Puede encontrar el identificador de cliente de la aplicación en el Portal de administración de Azure Active Directory, como se describe en la sección [Información general acerca de los identificadores que debe obtener](#overview-of-identifiers-you-need-to-get).
 
@@ -199,7 +193,7 @@ Las aplicaciones que usen ADAL deben registrarse a través del portal de adminis
 -   Las peticiones de inicio de sesión dobles se impiden si proporciona el identificador de cliente y el URI de redireccionamiento de la aplicación cliente. Este identificador de cliente debe registrarse para obtener acceso al identificador del recurso de MAM de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] MAM en el panel de AAD. Si no lo hace, provocará un error de inicio de sesión cuando se ejecute la aplicación.
 
 ## Configurar los derechos de la aplicación
-Antes de ajustar la aplicación, puede concederle **derechos** para que tenga permisos y funcionalidades adicionales que normalmente no podría usar.  Un **archivo de derechos** se usa durante la firma de código para especificar permisos especiales dentro de la aplicación (por ejemplo, acceso a una cadena de claves compartida). Los servicios de aplicaciones específicos, denominados **uncionalidades**, se habilitan en Xcode durante el desarrollo de las aplicaciones. Una vez habilitadas, las capacidades se reflejan en el archivo de derechos. Para obtener más información sobre los derechos y las funcionalidades, consulte [Adding Capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) (Agregar funcionalidades) en la biblioteca para desarrolladores de iOS. Para obtener una lista completa de las funcionalidades admitidas, consulte [Supported capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html) (Funcionalidades admitidas)..
+Antes de ajustar la aplicación, puede concederle **derechos** para que tenga permisos y funcionalidades adicionales que normalmente no podría usar.  Un **archivo de derechos** se usa durante la firma de código para especificar permisos especiales dentro de la aplicación (por ejemplo, acceso a una cadena de claves compartida). Los servicios de aplicaciones específicos, denominados **uncionalidades**, se habilitan en Xcode durante el desarrollo de las aplicaciones. Una vez habilitadas, las capacidades se reflejan en el archivo de derechos. Para obtener más información sobre los derechos y las funcionalidades, consulte [Adding Capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) (Agregar funcionalidades) en la biblioteca para desarrolladores de iOS. Para obtener una lista completa de las capacidades admitidas, consulte [Capacidades admitidas](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html).
 
 ### Capacidades admitidas por la herramienta de ajuste de aplicaciones para iOS
 
@@ -211,7 +205,7 @@ Antes de ajustar la aplicación, puede concederle **derechos** para que tenga pe
 |Compras desde la aplicación|La opción de Compras desde la aplicación inserta una opción para acceder a la tienda directamente desde su aplicación, lo que le permitirá conectarse a la misma y procesar los pagos del usuario de forma segura. Puede usar la opción Compras desde la aplicación para pagar por mejorar las funcionalidades o para conseguir contenidos adicionales que pueda usar la aplicación.||
 |Uso compartido de cadenas de claves|Si habilita el uso compartido de las cadenas de claves, la aplicación podrá compartir contraseñas en la cadena de claves con otras aplicaciones desarrolladas por el equipo.|Cuando use de forma compartida las cadenas de claves, use la notación DNS inversa:<br /><br />*com.companyName.KeychainGroup*|
 |VPN personal|Habilite la VPN personal para permitir a su aplicación crear y controlar un sistema personalizado de la configuración de VPN mediante el marco de la extensión de la red.||
-|Notificaciones de inserción|El servicio de notificaciones push de Apple (APN) permite que una aplicación que no se está ejecutando en primer plano notifique al usuario que tiene información para el mismo.|Para que funcionen las notificaciones push, debe usar un perfil de aprovisionamiento específico de la aplicación.<br /><br />Siga los pasos de la [documentación para desarrolladores de Apple](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html)..|
+|Notificaciones de inserción|El servicio de notificaciones push de Apple (APN) permite que una aplicación que no se está ejecutando en primer plano notifique al usuario que tiene información para el mismo.|Para que funcionen las notificaciones push, debe usar un perfil de aprovisionamiento específico de la aplicación.<br /><br />Siga los pasos de la [documentación para desarrolladores de Apple](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html).|
 |Configuración de accesorios inalámbricos|Si habilita la configuración de accesorios inalámbricos, se agrega al proyecto el marco de accesorios externos y permite a la aplicación configurar accesorios MFi Wi-Fi.||
 
 ### Pasos para habilitar derechos
@@ -230,7 +224,7 @@ Antes de ajustar la aplicación, puede concederle **derechos** para que tenga pe
 
     1.  Inicie sesión en el Centro de usuarios registrados para desarrolladores de Apple.
 
-    2.  Cree un perfil de aprovisionamiento para la aplicación. Para obtener instrucciones, consulte [How to Obtain the Prerequisites for the Intune App Wrapping Tool for iOS](http://blogs.technet.com/b/microsoftintune/archive/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios.aspx) (Cómo obtener los requisitos previos para la Herramienta de ajuste de aplicaciones de Intune para iOS)..
+    2.  Cree un perfil de aprovisionamiento para la aplicación. Para obtener instrucciones, consulte [How to Obtain the Prerequisites for the Intune App Wrapping Tool for iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/) (Cómo obtener los requisitos previos para la Herramienta de ajuste de aplicaciones de Intune para iOS).
 
     3.  En el perfil de aprovisionamiento, habilite los mismos derechos que tiene en su aplicación. Debe proporcionar los mismos identificadores que especificó durante el desarrollo de la aplicación.
 
@@ -271,7 +265,7 @@ Para revisar los derechos existentes de una aplicación firmada y de un perfil d
 Este comando quita cualquier funcionalidad habilitada en la aplicación que no esté en el archivo de derechos. Si quita funcionalidades que la aplicación esté usando, puede interrumpirla. Un caso en el que podría quitar las funcionalidades que faltan es una aplicación producida por el proveedor que tenga todas las funcionalidades de forma predeterminada.
 
 ```
-./IntuneMAMPackager.app/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -e
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -e
 ```
 
 ## Seguridad y privacidad de la herramienta de ajuste de aplicaciones
@@ -297,6 +291,7 @@ Use los procedimientos recomendados de seguridad y privacidad siguientes al usar
 - [Use the SDK to enable apps for mobile application management (Usar el SDK para habilitar aplicaciones para la administración de aplicaciones móviles)](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO4-->
 
 

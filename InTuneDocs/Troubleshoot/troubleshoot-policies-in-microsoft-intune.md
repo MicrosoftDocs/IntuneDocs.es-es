@@ -1,9 +1,9 @@
 ---
 title: "Directivas de solución de problemas | Microsoft Intune"
-description: 
+description: "Solucionar problemas de configuración de directivas."
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/26/2016
 ms.topic: article
 ms.prod: 
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: ac3417781df0a5b092a70620aa7343849b1e8c82
-ms.openlocfilehash: 3ac6b06b7eb85503786b4d8b0b9bd2a30d2a15e6
+translationtype: Human Translation
+ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
+ms.openlocfilehash: 06468bd7d6cdcf84da269c8132b37240ef1f2197
 
 
 ---
@@ -46,7 +47,8 @@ En la captura de pantalla que tiene a continuación se pueden ver dos ejemplos c
 
 ![Directiva de dispositivos de Intune](../media/Intune-Device-Policy-v.2.jpg)
 
-> [!NOTE] Recuerde que cuando dos directivas con distintos niveles de restricción se aplican al mismo dispositivo o usuario, la directiva más restrictiva se aplica en la práctica.
+> [!NOTE]
+> Recuerde que cuando dos directivas con distintos niveles de restricción se aplican al mismo dispositivo o usuario, la directiva más restrictiva se aplica en la práctica.
 
 ## Actualización de directivas e intervalos de actualización
 Tenga en cuenta que las directivas se actualizan a intervalos regulares. En general, las directivas se deben registrar en los dispositivos durante los 15 minutos posteriores a la realización de un cambio. Aquí encontrará más detalles acerca de los intervalos regulares de actualización de directivas:
@@ -68,7 +70,8 @@ Para los dispositivos de Windows que no sean de MDM, los errores de directivas d
 
 2.  Espere 20 minutos a que se quite el software de cliente.
 
-    > [!NOTE] No intente quitar el cliente desde Programas y características.
+    > [!NOTE]
+    > No intente quitar el cliente desde Programas y características.
 
 3.  En el menú Inicio, escriba **UAC** para abrir Configuración del Control de cuentas de usuario.
 
@@ -110,6 +113,6 @@ Si esta información para solucionar problemas no le ha ayudado, póngase en con
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

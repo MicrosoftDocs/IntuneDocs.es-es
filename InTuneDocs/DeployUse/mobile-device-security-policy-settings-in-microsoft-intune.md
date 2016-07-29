@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Configuración de directivas de seguridad de dispositivos móviles en Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Configuración de directivas de seguridad de dispositivos móviles | Microsoft Intune"
+description: "Use Intune para configurar una amplia variedad de opciones que puede implementar en los dispositivos administrados de su organización."
+keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/12/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 648cc02b47682a58195ee927560763818b6d32ac
+
 
 ---
 
@@ -72,7 +66,7 @@ Si se implementa una directiva de longitud de contraseña para dispositivos que 
 
 |Nombre de la configuración|Windows 8.1 y Windows RT 8.1|Windows RT|Windows Phone 8 y Windows Phone 8.1|iOS|Android y Samsung KNOX|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Requerir cifrado en dispositivo móvil**<sup>1</sup><br /><br />Para dispositivos de Windows Phone 8, debe establecerse en **Sí**..<br /><br />Para habilitar el cifrado en dispositivos iOS, habilite la opción **Requerir una contraseña para desbloquear dispositivos móviles**..|Sí|No|Sí|No|Sí|
+|**Requerir cifrado en un dispositivo móvil**<sup>1</sup><br /><br />Para dispositivos de Windows Phone 8, debe establecerse en **Sí**.<br /><br />Para habilitar el cifrado en dispositivos iOS, habilite la opción **Requerir una contraseña para desbloquear dispositivos móviles**.|Sí|No|Sí|No|Sí|
 |**Requerir cifrado en tarjetas de almacenamiento**<br /><br />Se aplica también a dispositivos administrados por Exchange ActiveSync.|n/a|n/a|n/d (las aplicaciones y los datos asociados se cifran automáticamente)|n/a|Sí|
 Información adicional para los dispositivos que ejecutan Windows 8.1
 
@@ -217,6 +211,7 @@ Información adicional para los dispositivos que ejecutan Windows 8.1
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO4-->
 
 

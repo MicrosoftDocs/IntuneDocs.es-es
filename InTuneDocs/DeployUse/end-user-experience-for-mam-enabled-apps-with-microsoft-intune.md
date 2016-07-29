@@ -1,10 +1,10 @@
 ---
 title: Experiencia del usuario final en aplicaciones habilitadas para MAM | Microsoft Intune
-description: 
+description: "En este tema se describe qué esperar cuando la aplicación está administrada por directivas de administración de aplicaciones móviles."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
-ms.sourcegitcommit: 3f797e3ef4a7e2d1b27ce6b1ed6e5322343c6cff
-ms.openlocfilehash: 9b557c272c9d740792560a392d52efff6a7deed1
+translationtype: Human Translation
+ms.sourcegitcommit: a1a8d80ad2b0ee66101ad9e67532e806ebc4b690
+ms.openlocfilehash: 3361c9069a3258621b9349a0cf332a38c206d041
 
 
 ---
@@ -47,7 +48,7 @@ Las directivas de administración de aplicaciones móviles (MAM) solo se aplican
     ![Captura de pantalla que muestra la ubicación de archivo abierta con la lista de los archivos existentes](../media/AppManagement/iOS_OneDriveSuccess.png)
 
     > [!NOTE]
-    > [!NOTE] Al cambiar una directiva implementada, los cambios se aplicarán la próxima vez que abra la aplicación.
+    > Al cambiar una directiva implementada, los cambios se aplicarán la próxima vez que abra la aplicación.
 
 ##  Acceso a OneDrive en un dispositivo Android
 
@@ -170,6 +171,6 @@ Esto no impide que use la aplicación RMS sharing para ver los archivos de la em
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO4-->
 
 

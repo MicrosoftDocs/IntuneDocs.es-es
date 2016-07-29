@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Ayudar a proteger dispositivos iOS con el bypass del bloqueo de activación para Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Administrar el bloqueo de activación de iOS en dispositivos | Microsoft Intune"
+description: "Microsoft Intune puede ayudarle a administrar el bloqueo de activación de iOS, una característica de la aplicación Buscar mi iPhone para dispositivos iOS 7.1 o versiones posteriores."
+keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/19/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: bb49e926-15c4-4f01-b6eb-cee6f7ee1984
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: joglocke
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 3980d1a498ccab3eb5683e03e0cce252959b89dc
+
 
 ---
 
@@ -49,7 +43,7 @@ Para ayudar a resolver estos problemas, Apple incorporó el bypass del bloqueo d
 > El modo supervisado de los dispositivos iOS permite usar la herramienta Apple Configurator para bloquear un dispositivo a fin de limitar la funcionalidad para fines empresariales específicos. Generalmente, el modo supervisado es solo para los dispositivos de la empresa.
 
 ## Cómo ayuda Intune a administrar el bloqueo de activación
-Intune puede solicitar el estado de bloqueo de activación de dispositivos supervisados y no supervisados que ejecutan iOS 7.1 y versiones posteriores. Para los dispositivos supervisados, Intune puede recuperar el código de bypass del bloqueo de activación y emitirlo directamente al dispositivo. Si el dispositivo se borró, puede obtener acceso directamente usando el código mencionado como nombre de usuario y dejando la contraseña en blanco.
+Intune puede solicitar el estado de bloqueo de activación de dispositivos supervisados y no supervisados que ejecutan iOS 7.1 y versiones posteriores. Solamente para los dispositivos supervisados, Intune puede recuperar el código de bypass del bloqueo de activación y emitirlo directamente al dispositivo. Si el dispositivo se borró, puede obtener acceso directamente usando el código mencionado como nombre de usuario y dejando la contraseña en blanco.
 
 **Las ventajas empresariales de esto son**:
 
@@ -59,11 +53,11 @@ Intune puede solicitar el estado de bloqueo de activación de dispositivos super
 
 ## Usar el bypass del bloqueo de activación desde la consola de administración de Intune
 > [!IMPORTANT]
-> Después de omitir el bloqueo de activación en un dispositivo, se aplica automáticamente un nuevo bloqueo de activación si se abre la aplicación Buscar mi iPhone. Por este motivo, **para realizar este procedimiento, debe tener el dispositivo físicamente**..
+> Después de omitir el bloqueo de activación en un dispositivo, se aplica automáticamente un nuevo bloqueo de activación si se abre la aplicación Buscar mi iPhone. Por este motivo, **para realizar este procedimiento, debe tener el dispositivo físicamente**.
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), seleccione **Grupos** &gt; **Todos los dispositivos** &gt; **Todos los dispositivos corporativos**..
+1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), seleccione **Grupos** &gt; **Todos los dispositivos** &gt; **Todos los dispositivos corporativos**.
 
-2.  Seleccione el dispositivo para el que desea omitir el bloqueo de activación. Seleccione **Bypass del bloqueo de activación**..
+2.  Seleccione el dispositivo para el que desea omitir el bloqueo de activación. Seleccione **Bypass del bloqueo de activación**.
 
 3.  Lea el mensaje de advertencia. Seleccione **Sí** para continuar.
 
@@ -88,11 +82,16 @@ Para ver los dispositivos que usan el bloqueo de activación, existen dos métod
 
     Si selecciona un dispositivo del nodo **Todos los dispositivos corporativos** y el bloqueo de activación está habilitado para el dispositivo, también podrá ver el código de derivación. Este código se puede usar para emitir un bypass del bloqueo de activación manualmente.
 
+    > [!IMPORTANT]
+    >Intune hace un inventario de dispositivos para el bloqueo de activación cada 7 días. Por este motivo, puede que los dispositivos no se muestren inmediatamente con el estado Bloqueo de activación en la consola de Intune.
+
+
 ### Consulte también
 [Retirar dispositivos](retire-devices-from-microsoft-intune-management.md)
-[Help protect your devices with remote lock and passcode reset (Protección de los dispositivos mediante bloqueo remoto y restablecimiento de código de acceso)](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
+[Ayudar a proteger los dispositivos con el restablecimiento de código de acceso y el bloqueo remoto](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO4-->
 
 

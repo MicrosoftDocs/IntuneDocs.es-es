@@ -1,9 +1,9 @@
 ---
 title: "Registrarse para obtener una evaluación de 30 días de Microsoft Intune | Microsoft Intune"
-description: 
+description: "Cómo registrarse para obtener una evaluación gratuita de 30 días de Intune y qué debe tener en cuenta antes de registrarse"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: dad88d43-0054-4be6-9e5d-ada5a957dd6c
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fe1587bead9e4cd350f5ffcf925fe04afd824ea0
-ms.openlocfilehash: f97b619d2b82556685cf0e247700d1fd8c8d4369
+ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
+ms.openlocfilehash: 5c36bac82389453d83504564cf26beb1027feefe
 
 
 ---
@@ -61,6 +61,6 @@ Enhorabuena. Acaba de completar el paso 1 del tutorial de *evaluación de Micros
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: Crear e implementar directivas de MAM | Microsoft Intune
-description: 
+description: "Siga las instrucciones paso a paso de este tema para crear e implementar directivas de administración de aplicaciones móviles."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,24 +12,27 @@ ms.technology:
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
-ms.sourcegitcommit: 3f79de38ce7fc9a5434033ee45ddf43f22517356
-ms.openlocfilehash: f1b9216c673039f8600e07508b255e12cc30bf3f
+translationtype: Human Translation
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 9e1c8f3c125633f1224005b7f80d3578fd4b729d
 
 
 ---
 
 # Crear e implementar directivas de administración de aplicaciones móviles con Microsoft Intune
-Las directivas de administración de aplicaciones móviles (MAM) se pueden usar en aplicaciones que se ejecutan en dispositivos administrados o no por Intune. Para ver una descripción más detallada de cómo funcionan las directivas de MAM y los posibles escenarios con directivas de MAM de Intune, lea el tema [Protect app data using mobile app managment policies ](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md) (Proteger los datos de aplicaciones mediante directivas de administración de aplicaciones móviles).
+Las directivas de administración de aplicaciones móviles (MAM) se pueden usar en aplicaciones que se ejecutan en dispositivos administrados o no por Intune. Para ver una descripción más detallada de cómo funcionan las directivas de MAM y los posibles escenarios con directivas de MAM de Intune, lea el tema [Proteger datos de aplicación mediante directivas de administración de aplicaciones móviles con Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
 En este tema se describe el proceso de creación de una directiva de MAM en el **Portal de Azure**. El portal de Azure es la nueva consola de administración para crear directivas de MAM y le recomendamos que use este portal para crear directivas de MAM. El portal de Azure admite los siguientes escenarios de MAM:
 - Dispositivos inscritos en Intune
 - Dispositivos administrados por una solución de MDM de terceros
 - Dispositivos que no están administrados por ninguna solución de MDM (BYOD).
 
-Si actualmente usa la **consola de administración de Intune** para administrar sus dispositivos, puede crear una directiva de MAM que admita aplicaciones para los dispositivos inscritos en Intune mediante la [consola de administración de Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+>[!IMPORTANT]
+
+> Si actualmente usa la **consola de administración de Intune** para administrar sus dispositivos, puede crear una directiva de MAM que admita aplicaciones para los dispositivos inscritos en Intune mediante la [consola de administración de Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 Las directivas de MAM que se han creado en la consola de administración de Intune no pueden importarse en el Portal de Azure.  Las directivas de MAM deben volver a crearse en el Portal de Azure.
 
->[!IMPORTANT]
+
 > Es posible que no vea todas las configuraciones de directivas de MAM en la consola de administración de Intune. El Portal de Azure es la nueva consola de administración para crear directivas de MAM. Si crea directivas de MAM en la consola de administración de Intune y en el portal de Azure, la directiva del portal de Azure se aplica a las aplicaciones y se implementa para los usuarios.
 
 Para ver una lista de las configuraciones de directiva compatibles en plataformas iOS y Android, seleccione uno de los siguientes:
@@ -47,24 +50,20 @@ Antes de crear una directiva de MAM, repase la información sobre [requisitos pr
     > [!TIP]
     > Si esta es la primera vez que usa el Portal de Azure, lea antes [Azure portal for Microsoft Intune MAM policies](azure-portal-for-microsoft-intune-mam-policies.md) (Portal de Azure para directivas de MAM de Microsoft Intune) para familiarizarse con el Portal.
 
-2.  En la hoja **Configuración**, seleccione **Directiva de aplicaciones**.  De este modo se abrirá la hoja **Directiva de aplicación** , en la que podrá crear nuevas directivas y editar las directivas existentes.
-
-    ![Captura de pantalla de la hoja Directiva de aplicaciones con una lista de las directivas existentes](../media/AppManagement/AzurePortal_MAM_AppPolicy.png)
-
-3.  Elija **Agregar una directiva**.
+2.  En la hoja **Configuración**, seleccione **Directiva de aplicaciones**.  De este modo se abrirá la hoja **Directiva de aplicación**, donde podrá crear nuevas directivas y editar las existentes. Elija **Agregar una directiva**.
 
     ![Captura de pantalla de la hoja Agregar directiva con la opción de menú Agregar directiva resaltada ](../media/AppManagement/AzurePortal_MAM_AddPolicy.png)
 
-4.  Escriba un nombre para la directiva, agregue una descripción breve y seleccione el tipo de plataforma para crear una directiva para iOS o Android.  Puede crear más de una directiva para cada plataforma.
+3.  Escriba un nombre para la directiva, agregue una descripción breve y seleccione el tipo de plataforma para crear una directiva para iOS o Android.  Puede crear más de una directiva para cada plataforma.
 
     ![Captura de pantalla de la hoja Agregar directiva](../media/AppManagement/AzurePortal_MAM_AddPolicy_only.png)
 
-5.  Seleccione **Aplicaciones** para abrir la hoja **Aplicaciones**, donde se muestra una lista de las aplicaciones disponibles. Puede seleccionar una o más aplicaciones de la lista que desea asociar a la directiva que está creando. Una vez seleccionadas las aplicaciones, elija el botón **Seleccionar** situado en la parte inferior de la hoja **Aplicaciones** para guardar la selección.
+4.  Seleccione **Aplicaciones** para abrir la hoja **Aplicaciones**, donde se muestra una lista de las aplicaciones disponibles. Puede seleccionar una o más aplicaciones de la lista que desea asociar a la directiva que está creando. Una vez seleccionadas las aplicaciones, elija el botón **Seleccionar** situado en la parte inferior de la hoja **Aplicaciones** para guardar la selección.
 
     > [!IMPORTANT]
     > Debe seleccionar al menos una aplicación para crear una directiva.
 
-6.  En la hoja **Agregar directiva**, elija **Configurar los valores obligatorios** para abrir la hoja de configuración de directivas.
+5.  En la hoja **Agregar directiva**, elija **Configurar los valores obligatorios** para abrir la hoja de configuración de directivas.
 
     Existen dos categorías de configuración de directivas: **Reubicación de datos** y **Acceso**.  Las directivas de reubicación de datos son aplicables a la introducción y la extracción de datos de las aplicaciones, mientras que las directivas de acceso determinan el modo en el que el usuario final tiene acceso a las aplicaciones en un contexto de trabajo.
     Para comenzar, la configuración de directiva tiene valores predeterminados.  No es necesario realizar ningún cambio si los valores predeterminados satisfacen sus necesidades.
@@ -74,11 +73,11 @@ Antes de crear una directiva de MAM, repase la información sobre [requisitos pr
 
     ![Captura de pantalla de la hoja de configuración junto con la hoja Agregar directiva](../media/AppManagement/AzurePortal_MAM_PolicySettings.png)
 
-7.  Seleccione **Aceptar** para guardar esta configuración.  Ahora habrá regresado a la hoja **Agregar una directiva** . Seleccione **Crear** para crear la directiva y guardar la configuración.
+6.  Seleccione **Aceptar** para guardar esta configuración.  Ahora habrá regresado a la hoja **Agregar una directiva** . Seleccione **Crear** para crear la directiva y guardar la configuración.
 
     ![Captura de pantalla de la hoja Agregar directiva donde se muestra que se han configurado las aplicaciones y la configuración](../media/AppManagement/AzurePortal_MAM_CreatePolicy.png)
 
-    ![Captura de pantalla de la hoja Directiva de aplicaciones con la notificación de adición de directiva ](../media/AppManagement/AzurePortal_MAM_AddingPolicyNotification.png)
+
 
 Cuando termine de crear una directiva como se describe en el procedimiento anterior, no se implementará en ningún usuario.  Siga los pasos descritos a continuación para implementar la directiva.
 
@@ -155,8 +154,8 @@ Para ver el efecto de los cambios inmediatamente, el usuario final tendrá que s
 Para ver una lista completa de las configuraciones de directiva para iOS y Android, seleccione uno de los siguientes:
 
 > [!div class="op_single_selector"]
-  - [Directivas de iOS](ios-mam-policy-settings.md)
-  - [Directivas de Android](android-mam-policy-settings.md)
+- [Directivas de iOS](ios-mam-policy-settings.md)
+- [Directivas de Android](android-mam-policy-settings.md)
 
 ## Pasos siguientes
 [Supervisar el estado del cumplimiento y del usuario](monitor-mobile-app-management-policies-with-microsoft-intune.md)
@@ -166,6 +165,6 @@ Para ver una lista completa de las configuraciones de directiva para iOS y Andro
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

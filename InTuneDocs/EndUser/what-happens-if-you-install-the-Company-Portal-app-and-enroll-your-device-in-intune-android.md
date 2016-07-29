@@ -1,26 +1,27 @@
 ---
-title: "¿Qué ocurre si instala la aplicación Portal de empresa e inscribe el dispositivo en Intune? | Microsoft Intune"
+title: "¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo Android en Intune? | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d22f5aea-7be4-419b-b51b-a522ca037b69
+ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
-ms.openlocfilehash: e2f5849a63dceabb42b910b50f0257bc823a251a
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 6562ca63abb509bebe5fc8aa4764da8ed3a8e0f4
 
 
 ---
 
 
-# ¿Qué ocurre si instala la aplicación Portal de empresa e inscribe el dispositivo en Intune?
+# ¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo Android en Intune?
 
 Al instalar la aplicación Portal de empresa e inscribir su dispositivo Android en Intune, puede usar la aplicación Portal de empresa para:
 
@@ -54,12 +55,14 @@ Al inscribir un dispositivo Android, da permiso al administrador de TI para obte
 
     -   Enviar actualizaciones de inventario de aplicaciones de empresa (estas actualizaciones no contienen información personal).
 
-Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+¿Necesita ayuda? Póngase en contacto con el administrador de TI (consulte el [sitio web del Portal de la empresa](http://portal.manage.microsoft.com) para obtener información de contacto) o escriba al equipo de Microsoft Android en wintunedroidfbk@microsoft.com.
+
 
 ### Consulte también
 [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

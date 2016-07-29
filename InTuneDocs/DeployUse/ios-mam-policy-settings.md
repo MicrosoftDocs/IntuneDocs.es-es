@@ -1,10 +1,10 @@
 ---
 title: "Configuración de directiva MAM de iOS | Microsoft Intune"
-description: 
+description: "En este tema se describe la configuración de directiva de administración de aplicaciones móviles para dispositivos iOS."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
-ms.openlocfilehash: b3df4b35dbe2710157b88a4e7fdba9734f8b998b
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 5f13b6b9df7218734e8b015e5ddb3f6ab2698cac
 
 
 ---
@@ -37,6 +37,8 @@ El término **aplicaciones administradas por directivas** hace referencia a las 
   - **Ninguna:**: no permite la transferencia de datos a ninguna aplicación, incluidas otras aplicaciones administradas por directivas.
 
   Además, si establece esta opción en **Aplicaciones administradas por directivas** o **Ninguno**, la característica de iOS 9 que permite que la búsqueda de Spotlight busque datos dentro de las aplicaciones se bloqueará.
+
+  **Esta configuración no controla el uso de la característica Open In en dispositivos móviles. Para administrar Open In, consulte [aquí](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)**.
 
   **Valor predeterminado = Aplicaciones administradas por directivas**
 
@@ -112,6 +114,6 @@ En los dispositivos iOS, puede permitir que los usuarios se identifiquen mediant
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

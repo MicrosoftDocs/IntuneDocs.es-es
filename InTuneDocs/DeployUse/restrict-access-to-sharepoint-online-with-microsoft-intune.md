@@ -1,10 +1,10 @@
 ---
 title: Restringir el acceso a SharePoint Online | Microsoft Intune
-description: 
+description: Proteja y controle el acceso a los datos de la empresa en SharePoint Online con el acceso condicional.
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 06/16/2016
+manager: arob98
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a445f06d6c2328f7689468ca4d68a969af1e825
-ms.openlocfilehash: f8fcb01629c68e9c04b0e0319b937178859877ec
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 54f5e95fc8992ee3a68fd7063bff7cdb90c308bb
 
 
 ---
@@ -25,6 +25,8 @@ El acceso condicional tiene dos componentes:
 - La directiva de cumplimiento del dispositivo, con la que debe cumplir el dispositivo para que se considere conforme.
 - La directiva de acceso condicional, donde se especifican las condiciones que debe cumplir el dispositivo para tener acceso al servicio.
 Para más información sobre cómo funciona el acceso condicional, consulte el tema [Restringir el acceso al correo electrónico y a los servicios de O365 con Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+
+Las directivas de cumplimiento y acceso condicional se implementan en el usuario. Cualquier dispositivo que utilice el usuario para tener acceso a los servicios se somete a comprobaciones para verificar que cumple con las directivas.
 
 Cuando un usuario intenta conectarse a un archivo con una aplicación compatible como OneDrive en su dispositivo, se produce la siguiente evaluación:
 
@@ -55,6 +57,10 @@ Si no se cumple una condición, se presentará al usuario uno de los mensajes si
 
 -   Si el dispositivo no es conforme, se muestra un mensaje que dirige al usuario al sitio web del portal de empresa de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], donde encontrará información sobre el problema y sobre cómo resolverlo.
 
+**El acceso condicional se aplica en todos los sitios de SharePoint y el uso compartido externo está bloqueado.**
+
+>[!NOTE]
+>Si habilita el acceso condicional para SharePoint Online, se recomienda que deshabilite el dominio en la lista como se describe en el tema [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx).  
 ## Compatibilidad con dispositivos móviles
 - iOS 7.1 y versiones posteriores
 - Android 4.0 y versiones posteriores, Samsung Knox Standard 4.0 o versiones posteriores
@@ -145,8 +151,8 @@ A continuación, configure la directiva para requerir que solo los dispositivos 
 4.   En **Acceso al explorador** en SharePoint Online y OneDrive para la Empresa, puede permitir el acceso a Exchange Online solo a través de los exploradores admitidos: Safari (iOS) y Chrome (Android). Se bloqueará el acceso desde otros exploradores.  Las mismas restricciones de plataforma que seleccionó para el acceso a la aplicación OneDrive también se aplican aquí.
 
   En los dispositivos **Android**, los usuarios deben habilitar el acceso al explorador.  Para ello, el usuario final debe habilitar la opción "Habilitar acceso al explorador" en el dispositivo inscrito de este modo:
-  1.    Inicie la **aplicación del portal de empresa**.
-  2.    Vaya a la página **Configuración** desde los tres puntos (...) o el botón del menú de hardware.
+  1.    Inicie la **aplicación de portal de empresa**.
+  2.    Vaya a la página **Configuración** desde los tres puntos (...) o desde el botón del menú de hardware.
   3.    Pulse el botón **Habilitar acceso al explorador**.
   4.  En el explorador Chrome, cierre la sesión de Office 365 y reinicie Chrome.
 
@@ -183,6 +189,6 @@ Seleccione cualquier grupo de dispositivos móviles y, a continuación, en la pe
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

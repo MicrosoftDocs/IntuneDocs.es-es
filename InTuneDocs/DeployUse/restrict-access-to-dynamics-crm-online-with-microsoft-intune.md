@@ -1,10 +1,10 @@
 ---
 title: "Restringir el acceso al correo electrónico a Dynamics CRM Online | Microsoft Intune"
-description: 
+description: "Proteja y controle el acceso a Dynamics CRM en línea con el acceso condicional."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 06/16/2016
+manager: arob98
+ms.date: 07/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.sourcegitcommit: 89e522a99687fc9b6e82db9f721858d17afdce6a
-ms.openlocfilehash: 8f90f99d621d7edebcb7a4c67e0774da59098df7
+translationtype: Human Translation
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 402ef2a65b45d8adcf36ddae5c935c52a516c8d5
 
 
 ---
@@ -54,9 +55,11 @@ Si un usuario pertenece a ambos grupos, estará exento de la directiva.
 ### Paso 2: Configurar e implementar una directiva de cumplimiento
 [Cree](create-a-device-compliance-policy-in-microsoft-intune.md) e [implemente](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) una directiva de cumplimiento para todos los dispositivos que se verán afectados por la directiva. Dichos dispositivos serán los que usen los usuarios de los Grupos de destino.
 
-> [!NOTE] Mientras se implementan las directivas de cumplimiento en los grupos de Microsoft Intune, las directivas de acceso condicional se aplican a los grupos de seguridad de Azure Active Directory.
+> [!NOTE]
+> Mientras que las directivas de cumplimiento se implementan en los grupos de Microsoft Intune, las directivas de acceso condicional se aplican a los grupos de seguridad de Azure Active Directory.
 
-> [!IMPORTANT] Si no ha implementado una directiva de cumplimiento, los dispositivos se considerarán no conformes.
+> [!IMPORTANT]
+> Si no ha implementado una directiva de cumplimiento, los dispositivos se considerarán no conformes.
 
 Cuando esté listo, continúe en el paso 3.
 ### Paso 3: Configurar la directiva de Dynamics CRM
@@ -94,6 +97,6 @@ Seleccione cualquier grupo de dispositivos móviles y, a continuación, en la pe
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

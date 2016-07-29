@@ -1,9 +1,9 @@
 ---
 title: "Creación de directivas y publicación de una aplicación | Microsoft Intune"
-description: 
+description: "Se explica cómo crear directivas y publicar una aplicación de ejemplo para la suscripción de Intune."
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2847c9af38ae0ddddc8d76d548ae7abddc63e4c1
-ms.openlocfilehash: b3b65a1fd1e426bf566f39382321a29e913f102c
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: 539df37b239f61ab31e5994db00b46a9d5b6310c
 
 
 ---
@@ -23,11 +23,6 @@ ms.openlocfilehash: b3b65a1fd1e426bf566f39382321a29e913f102c
 Las directivas de Intune proporcionan una configuración con la que es más fácil: controlar la configuración de seguridad en dispositivos móviles, mantener la configuración de Firewall de Windows y Endpoint Protection de los equipos e implementar aplicaciones. Puede obtener más información en [Manage settings and features on your devices with Microsoft Intune policies (Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune)](/Intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) y [Help secure Windows PCs with Endpoint Protection for Microsoft Intune (Ayudar a proteger los equipos de Windows con Endpoint Protection para Microsoft Intune)](/Intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
 
 Puede realizar dos tipos de instalaciones de aplicación mediante Intune. El primer tipo es una **instalación requerida**, que implementa automáticamente la aplicación en los equipos administrados. El segundo es una **instalación disponible**, que implementa la aplicación o un vínculo a la aplicación de Portal de empresa de Intune, de forma que los usuarios pueden elegir si quieren instalarlo en sus equipos o en sus dispositivos móviles.
-
-<!-- this section really isn't necessary and confuses a lot of people because most mobile device apps aren't licensed this way (and our licensing/reporting features aren't super helpful). I think it's best to avoid this during a quick start guide.
-
-Before using Intune to deploy apps, make sure that you have the appropriate licenses to publish, distribute, and use the app. The Licenses workspace lets you add and manage license agreement information for apps or software purchased through Microsoft Volume Licensing agreements, and for Microsoft or non-Microsoft software that was purchased by other means. You can then create license reports that display managed license usage information throughout your company to stay informed of license usage activity.
--->
 
 Los pasos siguientes le ayudarán a establecer una directiva de configuración de dispositivos móviles y una directiva de firewall para equipos Windows. También le ayudarán a configurar Skype como instalación disponible para dispositivos móviles después de haberse inscrito.
 
@@ -46,6 +41,10 @@ Los pasos siguientes le ayudarán a establecer una directiva de configuración d
 3.  En la lista **Tareas** de la página **Información general de directivas**, seleccione **Agregar directiva**.
 
 4.  En la lista de directivas, expanda la plataforma para la que quiere crear una directiva y seleccione **Configuración general** > **Crear e implementar una directiva con la configuración recomendada** > **Crear directiva**.
+
+> [!NOTE]
+> No hay ninguna configuración recomendada para las directivas de configuración de dispositivos porque hay muchas opciones donde elegir. Debe crear una directiva de configuración de dispositivos personalizada.
+
 
 5.  Cuando se le pida que **Seleccione los grupos para los que desea implementar esta directiva**, elija un grupo de la lista de grupos disponibles y, luego, **Agregar** > **Aceptar**.
 
@@ -110,6 +109,6 @@ Enhorabuena. Acaba de completar el paso 6 de la *Guía de inicio rápido de Intu
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

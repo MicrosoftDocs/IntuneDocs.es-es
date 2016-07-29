@@ -1,10 +1,10 @@
 ---
 title: Comprender el funcionamiento de sus dispositivos mediante el inventario| Microsoft Intune
-description: 
+description: "Usar Intune para ver información sobre el hardware de los dispositivos que administra."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 42e21b802fb605c98f688485c3b77703b3950e94
-ms.openlocfilehash: 55b99e326e4f22aee62b207eb2e976a8d52e70c3
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 7d11642f13dfbe554661ecc4149c3aaf3e7448c2
 
 
 ---
@@ -114,6 +114,6 @@ Para ver el inventario que recopilan los equipos de Windows, ejecute la opción 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

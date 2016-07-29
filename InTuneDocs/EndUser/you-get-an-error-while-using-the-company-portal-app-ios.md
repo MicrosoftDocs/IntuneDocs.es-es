@@ -3,8 +3,8 @@ title: "Obtiene un error mientras usa la aplicación de portal de empresa | Micr
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 05/04/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 7096ab5262b5d7f72f68c5a4ec785bd552c94f26
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 1e50e4fed60806f2021c426951b5a52155551043
 
 
 ---
@@ -36,6 +36,7 @@ Si se produce un error mientras usa la aplicación Portal de empresa en el dispo
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

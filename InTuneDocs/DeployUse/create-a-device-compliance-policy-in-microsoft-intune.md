@@ -1,10 +1,10 @@
 ---
-title: Crear una directiva de cumplimiento normativo de dispositivos en Microsoft Intune | Microsoft Intune
-description: 
+title: "Creación de una directiva de cumplimiento normativo de dispositivos | Microsoft Intune"
+description: "Cree una directiva de cumplimiento normativo para ayudar a proteger los dispositivos móviles y equipos utilizados para acceder a los datos de su compañía."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: f4f036fc1b6fe2394e05907e2d14289c9fba3426
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: da2059c476d91ac6729543f67fa11db85502f60d
 
 
 ---
@@ -32,12 +32,20 @@ En la página **Crear directiva**, habilite las opciones que considere necesaria
   -   Opciones de seguridad del sistema, como la contraseña y el cifrado.
   -   Opciones de estado del dispositivo, como, por ejemplo, si el dispositivo está descodificado o no, o si el servicio de atestación de estado del dispositivo Windows indica que es correcto.
   -   Opciones de propiedades del dispositivo, como la versión de sistema operativo mínima necesaria o la versión de sistema operativo máxima permitida.
-![Captura de pantalla de la pestaña General de la página Crear directiva ](./media/intune-sa-3b-create-policy.png)
+![Pestaña General de la página Crear directiva ](./media/intune-sa-3b-create-policy.png)
+
 
 ##  Paso 3: Guardar la directiva
 Cuando termine, seleccione **Guardar directiva**.
 
 Se le ofrecerá la posibilidad de implementar la directiva directamente después de guardarla, o bien puede optar por implementarla más adelante. La nueva directiva se muestra en el nodo **Directivas de cumplimiento** del área de trabajo **Directiva**.
+
+##  Paso 4: Establecer el período de validez del estado de cumplimiento normativo
+Para especificar el tiempo que dispone el dispositivo para protegerse antes de que se considere sin cumplimiento normativo, vaya a configuración de la directiva de cumplimiento normativo y actualice el tiempo.  El valor predeterminado está establecido en 30 días.
+
+![opción de configuración de directiva de cumplimiento normativo en la barra de menús de la directiva](../media/mdm-compliance-policy-settings.png)
+
+![cuadro de diálogo de la directiva de cumplimiento normativo](../media/mdm-ca-compliance-status-validity-period.png)
 
 ## Opciones de configuración de directiva compatibles
 En la siguiente tabla se muestran las opciones de configuración de directiva de cumplimiento normativo y las plataformas en las que se admiten.
@@ -79,6 +87,6 @@ Seleccione una de las siguientes opciones para obtener más información sobre l
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,7 +3,7 @@ title: "Información general sobre el ciclo de vida de MDM | Microsoft Intune"
 description: "Obtenga información sobre cómo Intune le ayuda a administrar dispositivos a través de su ciclo de vida desde la inscripción pasando por la configuración hasta su posible retirada."
 keywords: 
 author: robstackmsft
-manager: arob98
+manager: angrobe
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a409d36c1c5fcfd3d81ce0cbdf1f69af4747157a
-ms.openlocfilehash: e9bfb4e3d6f66dee58a70a0a00f6d18469d2cf1d
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 11260ad0e7dc45b7dec42fe12456ed18a484ab89
 
 
 ---
@@ -46,6 +46,6 @@ Cuando un dispositivo se pierde o es robado, cuando es necesario reemplazarlo o 
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

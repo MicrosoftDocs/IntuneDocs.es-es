@@ -1,9 +1,9 @@
 ---
-title: "Anular la inscripción del dispositivo de Intune | Microsoft Intune"
-description: 
+title: "Anular la inscripción de un dispositivo Android de Intune | Microsoft Intune"
+description: "Describe cómo anular la inscripción de un dispositivo Android de Intune."
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -12,18 +12,21 @@ ms.technology:
 ms.assetid: f40aab26-7613-48cc-a74e-de83df9465a4
 ms.reviewer: arnab
 ms.suite: ems
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: db9755013320f11bd58fa94275274ad6ba2b5e9a
+translationtype: Human Translation
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 1586e72eef5afdc0baefde8e5a3c105af22edb62
 
 
 ---
 
 
-# Anulación de la inscripción del dispositivo en Intune
+# Anular la inscripción del dispositivo Android de Intune
 
 Cuando anule la inscripción de su dispositivo Android de Intune, el dispositivo ya no podrá tener acceso a recursos de empresa.  Para más información sobre lo que ocurre cuando se anula la inscripción, vea [¿Qué ocurre cuando se anula la inscripción de un dispositivo de Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md).
 
-Para anular la inscripción del dispositivo de Intune y desinstalar la aplicación Portal de empresa, siga estos pasos o vea este [vídeo](http://aka.ms/gyq2du):
+Para anular la inscripción del dispositivo de Intune y desinstalar la aplicación de Portal de empresa, siga estos pasos o vea este vídeo:
+
+<iframe width="675" height="379" src="https://www.youtube.com/embed/K-Vi7lNfaMk" frameborder="0" allowfullscreen></iframe>
 
 1.  Inicie sesión en la aplicación Portal de empresa.
 
@@ -39,12 +42,14 @@ Para anular la inscripción del dispositivo de Intune y desinstalar la aplicaci�
 
     ![android-company-portal-unenroll-warning](./media/andr-3-warning-about-remove.png)
 
-¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI (consulte el [sitio web del Portal de empresa](http://portal.manage.microsoft.com) para obtener información de contacto) o escriba al equipo de Microsoft Android en wintunedroidfbk@microsoft.com.
+
 
 ### Consulte también
 [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

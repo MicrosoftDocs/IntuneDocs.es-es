@@ -3,7 +3,7 @@ title: "Enviar registros de datos de diagnóstico al administrador de TI mediant
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 30d325a9f5b920176ed5f4c9ce003564dcc6d3b5
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 00e23b0094ee03c2a54bf6d12295e9f38781373f
 
 
 ---
@@ -31,13 +31,13 @@ Para activar el registro detallado:
 
 2.  Pulse en **Menú** &gt; **Configuración**.
 
-    > [!NOTE] 
+    > [!NOTE]
     > **Menú** puede ser un botón de software o hardware, según el dispositivo Android que tenga.
 
 3.  En la opción **Datos de diagnóstico**, pulse **Enviar datos**.
 
     > [!NOTE]
-    > **Solo si usa dispositivos con Android 6.0 o una versión posterior:** cuando pulse en **Enviar datos**, verá el mensaje **¿Permitir que Portal de empresa tenga acceso a fotos, elementos multimedia y archivos del dispositivo?**. 
+    > **Solo si usa dispositivos con Android 6.0 o una versión posterior:** cuando pulse en **Enviar datos**, verá el mensaje **¿Permitir que Portal de empresa tenga acceso a fotos, elementos multimedia y archivos del dispositivo?**.
 
     Este mensaje puede inducir a error, ya que **Microsoft nunca accede a las fotografías, a los elementos multimedia ni a los archivos del dispositivo**. Google controla el texto del mensaje, por lo que Microsoft no puede cambiarlo.  Al permitir el acceso, lo único que está haciendo es dejar que el dispositivo escriba registros de datos en la tarjeta SD del dispositivo, lo que permite mover esos registros mediante un cable USB.
 
@@ -50,6 +50,7 @@ Para activar el registro detallado:
 [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

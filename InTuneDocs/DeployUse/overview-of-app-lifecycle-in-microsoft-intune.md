@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Información general sobre el ciclo de vida de la aplicación | Microsoft Intune
-description:
-keywords:
+title: "Información general sobre el ciclo de vida de la aplicación | Microsoft Intune"
+description: "Obtenga información acerca del ciclo de vida de aplicaciones que administra Intune, desde su incorporación hasta la retirada final."
+keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/13/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: mghadial
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: ede28a99224b3d0bd94a4300b4b8b85815ae9591
+
 
 ---
 
@@ -29,11 +23,11 @@ ms.suite: ems
 
 El ciclo de vida de la aplicación de Intune comienza cuando se agrega una aplicación, se extiende a través de otras fases y termina cuando se quita.
 
-![Ciclo de vida de la aplicación](./media/applifecycle_nobg.png "the Intune app lifecycle")
+![Ciclo de vida de la aplicación](./media/app-lifecycle.png "the Intune app lifecycle")
 
 ## Agregar
 
-El primer paso en la implementación de la aplicación es agregar a Intune las aplicaciones que quiere administrar e implementar. Aunque hay muchos tipos diferentes de aplicaciones con las que puede trabajar, los procedimientos básicos son los mismos. Intune le permite agregar aplicaciones para [dispositivos inscritos](add-apps-for-mobile-devices-in-microsoft-intune.md) y para [equipos Windows que administre con el software cliente de Intune](add-apps-for-windows-pcs-in-microsoft-intune.md).
+El primer paso en la implementación de la aplicación es agregar a Intune las aplicaciones que quiere administrar e implementar. Aunque hay muchos tipos diferentes de aplicaciones con las que puede trabajar, los procedimientos básicos son los mismos. Intune le permite agregar aplicaciones para [dispositivos inscritos](add-apps-for-mobile-devices-in-microsoft-intune.md) y para [PC con Windows que administra con el software cliente de Intune](add-apps-for-windows-pcs-in-microsoft-intune.md).
 
 ## Implementar
 
@@ -56,6 +50,7 @@ Intune ofrece muchas maneras de ayudar a proteger los datos de las aplicaciones.
 Por último, es probable que las aplicaciones que haya implementado queden obsoletas y tengan que quitarse. Intune facilita la [retirada de aplicaciones del servicio](retire-apps-using-microsoft-intune.md).
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO4-->
 
 

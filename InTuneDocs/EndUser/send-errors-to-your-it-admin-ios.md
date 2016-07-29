@@ -3,8 +3,8 @@ title: Enviar errores al administrador de TI | Microsoft Intune
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
-ms.date: 05/03/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 49f741a77e0d31686a14f7446e719b4630ab7895
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 1392a8a02dd740c6e1f67540e183c595ae66de3f
 
 
 ---
@@ -35,6 +35,7 @@ Si se producen errores en el dispositivo iOS mientras usa la aplicación de port
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

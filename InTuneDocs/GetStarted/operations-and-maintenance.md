@@ -1,10 +1,10 @@
 ---
 title: Operaciones y mantenimiento | Microsoft Intune
-description: 
+description: "Recomendaciones para las operaciones y la fase de mantenimiento de una implementación de Intune."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: f46fb18e-228c-4a2d-92e7-20734e9bdae3
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
-ms.openlocfilehash: a26de5f97800d8cac0c52c87014c75402460fee4
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: 65a5f226114345b83ae45df0fc28ade230387166
 
 
 ---
@@ -80,6 +80,6 @@ Estos son algunos de los desafíos que puede encontrarse en la fase de **operaci
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

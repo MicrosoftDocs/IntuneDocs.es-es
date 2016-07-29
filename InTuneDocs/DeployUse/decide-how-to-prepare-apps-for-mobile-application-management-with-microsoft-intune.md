@@ -1,10 +1,10 @@
 ---
-title: "Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles mediante Microsoft Intune | Microsoft Intune"
-description: 
+title: "Preparación de aplicaciones para la administración de aplicaciones móviles | Microsoft Intune"
+description: "La información de este tema le ayuda a decidir cuándo se debe utilizar la herramienta de ajuste de aplicaciones y el SDK de aplicaciones para habilitar la línea personalizada de aplicaciones empresariales con el fin de utilizar las directivas de administración de aplicaciones móviles."
 keywords: 
-author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+author: karthikaraman
+manager: arob98
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
-ms.openlocfilehash: 986d864a3169fa3b094241a3522e3f25b7bfe349
+translationtype: Human Translation
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: a7aa32704a8eb33d20a3149941b3e6f2a91478a0
 
 
 ---
@@ -68,6 +69,6 @@ En la siguiente tabla se enumeran los valores que puede usarse para el SDK para 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

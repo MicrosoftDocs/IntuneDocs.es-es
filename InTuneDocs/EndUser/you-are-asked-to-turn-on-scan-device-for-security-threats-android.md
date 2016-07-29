@@ -3,7 +3,7 @@ title: Se le pide activar Buscar amenazas de seguridad en el dispositivo | Micro
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/16/2016
 ms.topic: article
 ms.prod: 
@@ -12,15 +12,15 @@ ms.technology:
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 ROBOTS: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 7825a1db1349c822f1c4a5d86ec9912adb62205d
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: b4dc7cb0c025730b8a8eeb8a8f03416f011e3f04
 
 
 ---
 
 # Se le pide activar Buscar amenazas de seguridad en el dispositivo
 
- Si ve el mensaje "Buscar amenazas de seguridad en el dispositivo", debe ir a **Configuración** > **Google** > **Seguridad** y activar **Buscar amenazas de seguridad en el dispositivo**. 
+ Si ve el mensaje "Buscar amenazas de seguridad en el dispositivo", debe ir a **Configuración** > **Google** > **Seguridad** y activar **Buscar amenazas de seguridad en el dispositivo**.
 
 El administrador de TI exige activar esta opción para proteger los datos corporativos en el dispositivo Android. Si **Buscar amenazas de seguridad en el dispositivo** está desactivado, el dispositivo es menos seguro, porque no se están buscando amenazas de seguridad en él.
 
@@ -31,6 +31,6 @@ El administrador de TI exige activar esta opción para proteger los datos corpor
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,9 +1,9 @@
 ---
 title: Inscribir el dispositivo Mac OS X en Intune | Microsoft Intune
-description: 
+description: "Describe cómo inscribir un dispositivo Mac OS X en Intune."
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f83a539e9bec5207d7c1c682942b4bb6797d616c
-ms.openlocfilehash: b85d2ac62ca313f0740c68ff6d85918ff7bcd55a
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 9e3c351591f496fbc7be3fefdc320af9caaae726
 
 
 ---
@@ -34,19 +34,19 @@ Para inscribir el dispositivo Mac OS X:
 
 2.  Pulse en **Este dispositivo no está inscrito o el Portal de empresa no lo identifica**.
 
-    ![device-not-enrolled](./media/1-macosx-enroll-tap-enroll.png) 
+    ![device-not-enrolled](./media/1-macosx-enroll-tap-enroll.png)
 
 3.  Puntee en **Instalar** para iniciar la inscripción del dispositivo.
 
-    ![tap-install-to-enroll](./media/2-macosx-enroll--install-button.png) 
+    ![tap-install-to-enroll](./media/2-macosx-enroll--install-button.png)
 
 4.  En el diálogo **Instalar el perfil de administración**, pulse **Instalar**. Si se abre un cuadro de diálogo que le pide que escriba sus credenciales, escriba el nombre de usuario y la contraseña y, luego, pulse en **Continuar** &gt; **Instalar**.
 
-    ![install-management-profile](./media/3-macosx-enroll-tap-install.png) 
+    ![install-management-profile](./media/3-macosx-enroll-tap-install.png)
 
     Cuando termine la inscripción, verá una página de perfil de administración en la que se muestra que se ha verificado el perfil.
 
-    ![management-profile-verified](./media/4-macosx-enroll-done.png) 
+    ![management-profile-verified](./media/4-macosx-enroll-done.png)
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
@@ -54,6 +54,7 @@ Para inscribir el dispositivo Mac OS X:
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

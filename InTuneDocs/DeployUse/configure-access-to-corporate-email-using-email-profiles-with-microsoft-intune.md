@@ -1,10 +1,10 @@
 ---
-title: "Configurar el acceso al correo electrónico corporativo mediante perfiles de correo electrónico | Microsoft Intune"
-description: 
+title: "Acceso al correo electrónico corporativo mediante perfiles de correo electrónico | Microsoft Intune"
+description: "Las opciones de configuración de perfil de correo electrónico se pueden usar para configurar el acceso al correo de determinados clientes de correo en dispositivos móviles."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 05/05/2016
+manager: angrobe
+ms.date: 07/021/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8a3df01e9c02af7c43cdadc6d202bc6d74a000da
-ms.openlocfilehash: d0fa235b7b25fe71a4e3b4b0bf68cd2db31b1f18
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 878172811c7899237b5ebf5db9a443f10fea42dd
 
 
 ---
@@ -24,7 +24,7 @@ Muchas plataformas móviles incluyen un cliente de correo electrónico *nativo* 
 
 Si necesita una mayor prevención de pérdida de datos, elija [Acceso condicional](restrict-access-to-email-and-o365-services-with-microsoft-intune.md), que controla el acceso al buzón del usuario de cualquier cliente de correo, incluidos los clientes de correo nativos.
 
-Las opciones de configuración de perfil de correo electrónico se pueden usar para configurar el acceso al correo de determinados clientes de correo en dispositivos móviles.   La mayoría de las plataformas móviles incluye un cliente de correo electrónico *nativo* que se suministra como parte del sistema operativo.  En las plataformas compatibles, Microsoft Intune puede configurar los clientes de correo electrónico nativos de forma que los usuarios puedan tener acceso al correo electrónico corporativo en los dispositivos personales sin necesidad de configurar nada.  
+Las opciones de configuración de perfil de correo electrónico se pueden usar para configurar el acceso al correo de determinados clientes de correo en dispositivos móviles. La mayoría de las plataformas móviles incluye un cliente de correo electrónico *nativo* que se suministra como parte del sistema operativo.  En las plataformas compatibles, Microsoft Intune puede configurar los clientes de correo electrónico nativos de forma que los usuarios puedan tener acceso al correo electrónico corporativo en los dispositivos personales sin necesidad de configurar nada.  
 
 Los usuarios o los administradores de TI también pueden optar por instalar otros clientes de correo electrónico, como Microsoft Outlook para Android o iOS.  Puede que estos clientes no admitan perfiles de correo electrónico y no sean configurables mediante perfiles de correo electrónico de Microsoft Intune.  
 
@@ -82,7 +82,7 @@ La contraseña no está incluida en el perfil de correo electrónico, por lo que
     |**Número de días de correo electrónico para sincronizar**|Número de días de correo electrónico que quiere sincronizar (o bien seleccione **Sin límite** para sincronizar todo el correo electrónico disponible).|
     |**Programación de sincronización** (Samsung KNOX, Windows Phone 8 y versiones posteriores, Windows 10)|Seleccione la programación por la que los dispositivos sincronizarán los datos de Exchange Server. También puede seleccionar **Cuando llegan los mensajes** (los datos se sincronizan tan pronto como llegan) o **Manual** (el usuario del dispositivo debe iniciar la sincronización).|
     |**Usar SSL**|Use la comunicación de Capa de sockets seguros (SSL) al enviar correos electrónicos, recibir correos electrónicos y comunicarse con Exchange Server.<br /><br />En dispositivos que ejecutan Samsung KNOX 4.0 o posterior, es necesario exportar el certificado SSL de Exchange Server e implementarlo como perfil de certificado de confianza de Android en Intune. En Intune no se puede tener acceso a este certificado si se ha instalado en el servidor de Exchange Server por otros medios.|
-    |**Tipo de contenido para sincronizar**|Seleccione los tipos de contenido que quiere sincronizar con los dispositivos.| 
+    |**Tipo de contenido para sincronizar**|Seleccione los tipos de contenido que quiere sincronizar con los dispositivos.|
     |**Permitir el envío de correo electrónico desde aplicaciones de terceros** (solo iOS)|Permitir que un usuario seleccione este perfil como la cuenta predeterminada para enviar correo electrónico y permitir que aplicaciones de terceros abran el correo electrónico en la aplicación de correo electrónico nativa, por ejemplo, para adjuntar archivos a un correo electrónico.|
 
     > [!IMPORTANT]
@@ -109,8 +109,6 @@ En el área de trabajo **Directiva** de la página **General** , un resumen de e
 
 
 
-
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: "Implementación de aplicaciones | Microsoft Intune"
-description: 
+description: Recomendaciones para implementar aplicaciones por fases en Microsoft Intune.
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0fc32ed3-bcf4-472a-80e7-eb20986f78fa
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d82d0ae4820d2e2141848235b8741abccaec3bc6
-ms.openlocfilehash: 4a237942b4bc1e411cf55bc34c7b86d2249c526e
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: 83306c0847eaf98d499e649308669a33306aa97e
 
 
 ---
@@ -44,7 +44,7 @@ Tenga en cuenta lo siguiente:
 
 -   Compruebe que el instalador de la aplicación seleccionado sea compatible con la distribución de aplicaciones de Intune, según se describe en [Agregar aplicaciones con Microsoft Intune](/intune/deploy-use/add-apps).
 
--   Procure tener instalados los requisitos previos de distribución de aplicaciones. <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md--->).
+-   Procure tener instalados los requisitos previos de distribución de aplicaciones. <!---, as described in [Plan for app deployment in Microsoft Intune](plan-for-app-deployment-in-microsoft-intune.md).--->
 
 -   Determine que el tipo de aplicación es compatible con Intune.
 
@@ -95,6 +95,6 @@ Durante la fase piloto, la aplicación se implementará en un grupo reducido de 
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,9 +1,9 @@
 ---
-title: "Configurar el acceso a correo electrónico de dispositivos iOS mediante Microsoft Intune | Microsoft Intune"
-description: 
+title: "Configuración del acceso a correo electrónico de dispositivos iOS | Microsoft Intune"
+description: "configuración del acceso a correo electrónico de dispositivos iOS mediante Intune"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 3853673d-290a-400f-8e45-d55e39d42acd
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7f3985b10ac9612c8c1efc4756eb25cdcf29b023
-ms.openlocfilehash: 5b746cee0806fb44b1fd847efb9791d525673133
+ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
+ms.openlocfilehash: f132266939b70e87ce7fb36e42ef8b8c0777d55d
 
 
 ---
@@ -40,7 +40,7 @@ El uso de un perfil de correo electrónico hace que el acceso al correo electró
 En este tutorial vamos a usar el servidor de Exchange hospedado que viene con una suscripción de prueba.
 1. En la consola de Intune, haga clic en **Directiva** y luego en **Agregar directiva**.
 ![<add-policy>](./media/Email-Walkthrough/Email-Walkthrough-1.png)
-2. En el cuadro de diálogo **Crear una nueva directiva**, expanda **iOS**, seleccione **Perfil de correo electrónico** y haga clic en **Crear directiva**.
+2. En el cuadro de diálogo **Crear una nueva directiva**, expanda **iOS**, seleccione **Perfil de correo electrónico** y haga clic en **Crear directiva**.  
 ![<ios-email-profile-policy>](./media/Email-Walkthrough/Email-Walkthrough-2.png)
 3. En la página Crear directiva, escriba un nombre para la directiva, como **iOS email profile - user-password** (Perfil de correo electrónico de iOS - Contraseña de usuario) y una descripción. Podría tener varios perfiles de correo electrónico para diferentes tipos de dispositivos y diferentes métodos de autenticación, por lo que puede usar el nombre para mostrar para qué es el perfil.
 4. Escriba el nombre de host de Exchange. Dado que se usa el servidor de Exchange hospedado en Azure, como nombre de host simplemente escriba **outlook.office365.com**
@@ -51,21 +51,23 @@ En este tutorial vamos a usar el servidor de Exchange hospedado que viene con un
 8. Haga clic en **Guardar directiva**.
 9. Aparece un cuadro de diálogo que le pregunta si quiere implementar ahora la directiva. Haga clic en **Sí**.
 ![<deploy-policy-now-dialog>](./media/Email-Walkthrough/Email-Walkthrough-4.png)
-10. En la ventana que aparece después, seleccione el grupo de usuarios en el que quiere implementar el perfil de correo electrónico, haga clic en **Agregar** y luego en **Aceptar**.
-![<finish-add-policy>](./media/Email-Walkthrough/Email-Walkthrough-5.png) Después de hacer clic en **Aceptar**, la directiva empezará a aplicarse a los dispositivos inscritos al cabo de un minuto o dos.
+10. En la ventana que aparece después, seleccione el grupo de usuarios en el que quiere implementar el perfil de correo electrónico, haga clic en **Agregar** y luego en **Aceptar**.  
+![<finish-add-policy>](./media/Email-Walkthrough/Email-Walkthrough-5.png)  
+Tras hacer clic en **Aceptar**, la directiva empezará a aplicarse en los dispositivos inscritos al cabo de un minuto o dos.
 
 ## Pasos para comprobar que el perfil se ha aplicado correctamente
 
 Para comprobar que se ha aplicado el perfil, necesitará tener acceso a uno de los dispositivos en los que se implementó el perfil de correo electrónico.
 1. En el dispositivo iOS, abra la aplicación de correo.
-La aplicación le pedirá el nombre de usuario y la contraseña del correo electrónico.
+La aplicación le pedirá el nombre de usuario y la contraseña del correo electrónico.  
 ![<verify-policy-add-password>](./media/Email-Walkthrough/Email-Walkthrough-6.png)
 2. Escriba el nombre de usuario y la contraseña de la cuenta de correo de Exchange del usuario y pulse **Aceptar**.
  La aplicación de correo se abre en la cuenta de Exchange y el correo electrónico empieza a sincronizarse en el dispositivo.
 ![<exchange-account-opens>](./media/Email-Walkthrough/Email-Walkthrough-7.png)
 3. Compruebe la configuración de la cuenta en la aplicación de correo para asegurarse de que el nombre de cuenta es el mismo que el que especificó en el perfil de correo electrónico (por ejemplo, **Contoso Email** [Correo electrónico de Contoso]) y que la configuración de sincronización está establecida correctamente.
-![<check-account-settings>](./media/Email-Walkthrough/Email-Walkthrough-8.png)
-![<check-email-account-name>](./media/Email-Walkthrough/Email-Walkthrough-9.png) Si parece que el perfil de correo no se ha aplicado automáticamente al dispositivo, puede aplicar manualmente la directiva mediante la aplicación del portal de empresa en el dispositivo.
+![<comprobar-configuración-cuenta>](./media/Email-Walkthrough/Email-Walkthrough-8.png)
+![<comprobar-nombre-cuenta-correo-electrónico>](./media/Email-Walkthrough/Email-Walkthrough-9.png)  
+  Si comprueba que el perfil de correo electrónico no se ha aplicado automáticamente al dispositivo, puede aplicar manualmente la directiva mediante la aplicación de portal de empresa en el dispositivo.
 1. Abra la aplicación del portal de empresa.
 2. Pulse **Mis dispositivos**.
 3. Pulse el nombre del dispositivo.
@@ -78,6 +80,6 @@ La aplicación le pedirá el nombre de usuario y la contraseña del correo elect
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

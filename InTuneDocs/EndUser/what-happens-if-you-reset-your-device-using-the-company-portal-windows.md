@@ -1,26 +1,27 @@
 ---
-title: "¿Qué ocurre si restablece el dispositivo con el Portal de empresa? | Microsoft Intune"
+title: "¿Qué ocurre si restablece el dispositivo Windows mediante el Portal de empresa? | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
+ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 39e810466d3a98789f0f1338f68d2be80d757d39
-ms.openlocfilehash: 9ff73d6e2066b0fb3d2e8ca9d7732d4685e258fd
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 33809dbb8ee297a7f88a9615d8cec128ceadc96e
 
 
 ---
 
 
-# ¿Qué ocurre si restablece el dispositivo con el Portal de empresa?
+# ¿Qué ocurre si restablece el dispositivo Windows mediante el Portal de empresa?
 
 Cuando usa la aplicación del Portal de empresa o el [sitio web del Portal de empresa](reset-your-device-cpwebsite.md) para restablecer el dispositivo Windows, restablece el dispositivo a la configuración de fábrica y elimina todas las aplicaciones, configuración y datos, incluidos los datos personales. Lo que sucede en cada dispositivo depende del tipo de dispositivo y de cómo se usa, tal como se describe en la tabla siguiente. Para obtener instrucciones sobre cómo restablecer el dispositivo perdido o robado, vea [Restablecer (borrar) el dispositivo perdido o robado](reset-erase-your-lost-or-stolen-device-windows.md).
 
@@ -36,6 +37,7 @@ Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para 
 [Usar un dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

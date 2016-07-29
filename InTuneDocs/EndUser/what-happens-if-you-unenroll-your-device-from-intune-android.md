@@ -1,30 +1,31 @@
 ---
-title: "¿Qué ocurre si anula la inscripción del dispositivo de Intune? | Microsoft Intune"
+title: "¿Qué ocurre si anula la inscripción del dispositivo Android de Intune? | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0321062d-1363-4ac3-81d4-5405f3b79481
+ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: f0465d4302bda3df82c994043df52c27761a8345
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 3bb5d0dd3fbb48a2645922b550b2ffff295bec59
 
 
 ---
 
 
-# ¿Qué ocurre si anula la inscripción del dispositivo de Intune?
+# ¿Qué ocurre si anula la inscripción del dispositivo Android de Intune?
 
 Cuando anula la inscripción del dispositivo Android de Intune:
 
--   Anula la inscripción del dispositivo desde Intune, lo que significa que el administrador de TI dejará de administrarlo. 
+-   Anula la inscripción del dispositivo desde Intune, lo que significa que el administrador de TI dejará de administrarlo.
 
 -   Perderá el acceso a los recursos y los datos de la empresa.
 
@@ -34,16 +35,18 @@ Cuando anula la inscripción del dispositivo Android de Intune:
 
 -   Dejará de aplicarse cualquier configuración que se haya modificado en el dispositivo cuando se agregó, por ejemplo, deshabilitar la cámara o exigir una determinada longitud de la contraseña.
 
-Si el dispositivo está configurado solo para recibir correo electrónico de empresa y anula la inscripción del dispositivo, el dispositivo ya no aparecerá en el Portal de empresa. 
+Si el dispositivo está configurado solo para recibir correo electrónico de empresa y anula la inscripción del dispositivo, el dispositivo ya no aparecerá en el Portal de empresa.
 
 Para obtener instrucciones sobre cómo anular la inscripción, vea [Anular la inscripción del dispositivo de Intune mediante la aplicación Portal de empresa](unenroll-your-device-from-intune-android.md).
 
-Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+¿Necesita ayuda? Póngase en contacto con el administrador de TI (consulte el [sitio web del Portal de la empresa](http://portal.manage.microsoft.com) para obtener información de contacto) o escriba al equipo de Microsoft Android en wintunedroidfbk@microsoft.com.
+
 
 ### Consulte también
 [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: Conexiones Wi-Fi | Microsoft Intune
-description: 
+description: "Use los perfiles de VPN para implementar la configuración de VPN para los usuarios y dispositivos de su organización."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 910ccd7c91593114ddf57c842c0bf9c9ffa54fdc
-ms.openlocfilehash: 1282ec1214a2c499166299a0a13b0bd3bfc7f3b2
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 271d2be675ab808365cd6869c69d386058f76ae8
 
 
 ---
@@ -125,8 +125,8 @@ Use la **Directiva de importación de Wi-Fi de Windows** para importar un conju
 
 2.  Configure una directiva del tipo **Windows** &gt; **Importación de Wi-Fi (Windows 8.1 y posterior)**.
 
-    Esta directiva puede aplicarse a dispositivos de escritorio y móviles con Windows 8.1 y Windows 10. 
-    
+    Esta directiva puede aplicarse a dispositivos de escritorio y móviles con Windows 8.1 y Windows 10.
+
     Solo puede crear e implementar una directiva *personalizada* de importación de Wi-Fi de Windows. La configuración recomendada no está disponible.
 
 3.  Especifique los siguientes valores generales para la Directiva de importación de Wi-Fi de Windows:
@@ -166,6 +166,6 @@ Aprenda a crear un perfil de Wi-Fi con una clave precompartida en [Crear un perf
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,10 +1,10 @@
 ---
-title: "Administrar aplicaciones de iOS compradas a través de un programa de compras por volumen | Microsoft Intune"
-description: 
+title: Administrar aplicaciones iOS compradas por volumen | Microsoft Intune
+description: "Use Intune para administrar las aplicaciones que compra por volumen a Apple importando la información de licencia desde la tienda de aplicaciones, realizando el seguimiento de la cantidad de licencias usadas y evitando instalar más copias de la aplicación de las que posee."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,16 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ccb494f64426e6c2f21a59d8f52b84afe534d721
-ms.openlocfilehash: 65ceaa5a8f6604463463820545a9d108839c00c1
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 8f7e77f00e6082c5b272a7ec2be835bc1ef97a28
 
 
 ---
 
 # Administrar aplicaciones de iOS compradas a través de un programa de compras por volumen con Microsoft Intune
-Algunas tiendas de aplicaciones permiten comprar varias licencias de una aplicación que se quiere ejecutar en la compañía. Esto ayuda a reducir la carga administrativa relacionada con el seguimiento de varias copias compradas de las aplicaciones.
+La tienda de aplicaciones iOS permite comprar varias licencias de una aplicación que quiera ejecutar en la empresa. Esto ayuda a reducir la carga administrativa relacionada con el seguimiento de varias copias compradas de las aplicaciones.
 
-Microsoft Intune ayuda a administrar las aplicaciones que se compran a través de este tipo de programa. Para ello, importa la información de licencia desde la tienda de aplicaciones, realiza el seguimiento de la cantidad de licencias usadas y le impide instalar más copias de la aplicación de las que posee.
+Microsoft Intune ayuda a administrar las aplicaciones que se compran a través de este programa. Para ello, importa la información de licencia desde la tienda de aplicaciones, realiza el seguimiento de la cantidad de licencias usadas y le impide instalar más copias de la aplicación de las que posee.
 
 > [!Important]
 > Actualmente, Intune asigna licencias de aplicación PCV iOS a los usuarios, no a los dispositivos. Por este motivo, los usuarios finales deben escribir su contraseña de ID de Apple para instalar la aplicación.
@@ -87,6 +87,6 @@ Puede supervisar qué aplicaciones de PCV están implementadas y el número de l
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,10 +1,10 @@
 ---
-title: Implementar y supervisar una directiva de cumplimiento normativo en Microsoft Intune | Microsoft Intune
-description: 
+title: "Implementación y supervisión de una directiva de cumplimiento normativo | Microsoft Intune"
+description: Siga las instrucciones paso a paso de este tema para implementar y supervisar una directiva de cumplimiento normativo del dispositivo.
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ded7bd6c971a9448ad6e6492ebc5e42dfcb5d76e
-ms.openlocfilehash: 52da5cf6d14a5fc3ff3db6bdb07823d3bf373466
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 4345f46b67e1a2d77580fa87e4143bd96588f4e3
 
 
 ---
@@ -31,7 +31,8 @@ Implemente la directiva de cumplimiento normativo que haya [creado](create-a-dev
 
 Use el resumen de estado y las alertas del área de trabajo **Directiva** de la página **Introducción** para identificar los problemas de la directiva que requieren su atención. Además, aparece un resumen de estado en el área de trabajo **Panel** .
 
-> [!IMPORTANT]Si no ha implementado una directiva de cumplimiento y habilitado la directiva de acceso condicional a Exchange, se permitirá el acceso a todos los dispositivos destinatarios.
+> [!IMPORTANT]
+> Si no ha implementado una directiva de cumplimiento y habilitado la directiva de acceso condicional a Exchange, se permitirá el acceso a todos los dispositivos destinatarios.
 
 ## Cómo se resuelven los conflictos de directivas de Intune
 Pueden producirse conflictos entre directivas de Intune si se aplican varias de ellas a un dispositivo. Si hay configuraciones de directivas en conflicto, Intune resuelve los conflictos con las siguientes reglas:
@@ -71,6 +72,6 @@ Ahora puede usar la directiva de cumplimiento con las directivas de acceso condi
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

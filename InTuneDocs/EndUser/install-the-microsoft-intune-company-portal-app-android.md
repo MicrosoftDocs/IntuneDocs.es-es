@@ -3,7 +3,7 @@ title: "Instalar la aplicación del Portal de empresa de Microsoft Intune | Micr
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f1fd60348f5e18344a2ce63311cef7a551f355d3
-ms.openlocfilehash: 3dcf6d299957319977bb9b65d079d197a1c03fd2
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: b64fc4a2d0efa4c1d31a64d767b03f0c7a6fe0c8
 
 
 ---
@@ -49,6 +49,7 @@ Para inscribir el dispositivo en Intune y obtener acceso a los datos y recursos 
 [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

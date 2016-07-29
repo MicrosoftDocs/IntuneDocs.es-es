@@ -3,37 +3,46 @@ title: "Cómo establecer el período antes de que se bloquee el dispositivo Andr
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 98034875-cd3a-4367-a8d7-c5d4a438d496
-ROBOTS: 
+ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 00fca8673ff1b52535fb6c06a02b38b7879f204f
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 990ab5f8f8bf2747506abab47569d592f7ca56fd
 
 
 ---
 
 # Cómo establecer el período antes de que se bloquee el dispositivo Android
-Para volver a conectar con su trabajo, deberá establecer el tiempo de espera de la contraseña en el dispositivo siguiendo estas instrucciones:
+Para volver a conectar con su trabajo, deberá establecer el tiempo de espera de la contraseña en el dispositivo siguiendo los pasos para el tipo de dispositivo que tiene.
 
-1.  En el dispositivo, en **Configuración**, haga clic en **Seguridad** &gt; **Bloqueo automático** (aparece como **Bloquear teléfono tras** en algunos dispositivos).
+## Dispositivo nativo (distinto a Samsung KNOX)
+
+1.  En el dispositivo, en **Configuración**, toque **Seguridad** &gt; **Automatically Lock ** (Bloqueo automático) (aparece como **Lock phone after ** [Bloquear teléfono tras] en algunos dispositivos).
 
     Si **Bloqueo automático** (**Bloquear teléfono tras** en algunos dispositivos) no aparece, asegúrese de que ha establecido una contraseña válida en **Configuración** &gt; **Bloqueo de pantalla** &gt; **Contraseña**.
 
-2.  Especifique el valor de tiempo de espera de la contraseña.
+2.  Seleccione el valor de tiempo de espera de la contraseña.
 
-3.  Asegúrese de que el dispositivo esté inscrito en Intune. Para ello, siga las instrucciones que se indican en [Enroll your device to use it at work](http://go.microsoft.com/fwlink/?LinkId=519071) (Inscribir el dispositivo para usarlo en el trabajo).
+## Dispositivo Samsung KNOX
+
+1.  En el dispositivo, en **Configuración**, toque **Pantalla de bloqueo y seguridad** &gt; **bloqueo automático**.
+
+    Si no aparece **Automatically Lock ** (Bloqueo automático) (**Lock phone after** [Bloquear teléfono tras] en algunos dispositivos), asegúrese de que ha establecido una contraseña válida en **Configuración** &gt; **Bloqueo de pantalla** &gt; **Contraseña**.
+
+2.  Seleccione un valor de tiempo de espera de la contraseña.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

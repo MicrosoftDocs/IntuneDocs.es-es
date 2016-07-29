@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Preparar aplicaciones Android para la administración con la Herramienta de ajuste de aplicaciones | Microsoft Intune | Microsoft Intune
-description:
-keywords:
-author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+title: Ajuste de aplicaciones Android con la herramienta de ajuste de aplicaciones | Microsoft Intune
+description: "Utilice la información de este tema para obtener información sobre cómo ajustar las aplicaciones Android sin modificar el código de la propia aplicación. Prepare las aplicaciones de modo que pueda aplicar las directivas de administración de aplicaciones móviles."
+keywords: 
+author: karthikaraman
+manager: arob98
+ms.date: 07/06/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: matgates
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 15d0877f799c89e2a8af65c416c0e914f898641f
+
 
 ---
 
@@ -32,7 +26,7 @@ La herramienta es una aplicación de línea de comandos de Windows que se ejecut
 
 Si la aplicación usa la Biblioteca de autenticación de Azure Active Directory (ADAL), debe completar los pasos de [Cómo ajustar aplicaciones que usan la Biblioteca de Azure Active Directory](#how-to-wrap-apps-that-use-the-azure-active-directory-library) antes de ajustar la aplicación. Si no está seguro de si su aplicación usa esta biblioteca, póngase en contacto con el desarrollador de la aplicación.
 
-Antes de ejecutar la herramienta, lea [Security considerations for running the app wrapping tool](#security-considerations-for-running-the-app-wrapping-tool) (Consideraciones de seguridad para ejecutar la herramienta de ajuste de aplicaciones). Para descargar la herramienta, consulte [Microsoft Intune App Wrapping Tool for Android](https://www.microsoft.com/download/details.aspx?id=47267) (Herramienta de ajuste de aplicaciones de Microsoft Intune para Android)..
+Antes de ejecutar la herramienta, lea [Security considerations for running the app wrapping tool](#security-considerations-for-running-the-app-wrapping-tool) (Consideraciones de seguridad para ejecutar la herramienta de ajuste de aplicaciones). Para descargar la herramienta, consulte [Microsoft Intune App Wrapping Tool for Android - Español](https://www.microsoft.com/download/details.aspx?id=47267).
 
 ## Paso 1: cumplir los requisitos previos para usar la herramienta de ajuste de aplicaciones
 
@@ -48,7 +42,7 @@ Antes de ejecutar la herramienta, lea [Security considerations for running the a
 
 -   La aplicación debe haber sido desarrollada por o para su compañía. No se puede usar esta herramienta para procesar aplicaciones descargadas de Google Play Store.
 
--   Para ejecutar la herramienta de ajuste de aplicaciones, debe instalar la versión más reciente de [Java Runtime Environment](http://java.com/download/) y, luego, asegurarse de que se ha establecido la variable de ruta de acceso de Java en **C:\ProgramData\Oracle\Java\javapath** en las variables de entorno de Windows. Para obtener más ayuda, consulte la [documentación de Java](http://java.com/download/help/).
+-   Para ejecutar la herramienta de ajuste de aplicaciones, debe instalar la versión más reciente de [Java Runtime Environment](http://java.com/download/) y, luego, asegurarse de que se ha establecido la variable de ruta de acceso de Java en **C:\ProgramData\Oracle\Java\javapath** en las variables de entorno de Windows. Para obtener más información, consulte la [documentación de Java](http://java.com/download/help/).
 
     > [!NOTE]
     > En algunos casos, la versión de 32 bits de Java puede producir problemas de memoria. En su lugar, se recomienda instalar la versión de 64 bits.
@@ -63,7 +57,7 @@ Tome nota de la carpeta donde instala la herramienta. La ubicación predetermina
 
 ## Paso 3: ejecutar la herramienta de ajuste de aplicaciones
 
-1.  En el equipo de Windows donde instaló la herramienta de ajuste de aplicaciones, abra una ventana de PowerShell.
+1.  En el equipo de Windows donde instaló la herramienta de ajuste de aplicaciones, abra una ventana de PowerShell en modo de administrador.
 
 2.  Desde la carpeta donde instaló la herramienta, importe el módulo de PowerShell de la aplicación de ajuste de aplicaciones:
 
@@ -71,14 +65,14 @@ Tome nota de la carpeta donde instala la herramienta. La ubicación predetermina
     Import-Module .\IntuneAppWrappingTool.psm1
     ```
 
-3.  Ejecute la herramienta mediante el comando **invoke-AppWrappingTool** con los siguientes parámetros. Los parámetros que están marcados como "opcionales" son para las aplicaciones que usan la Biblioteca de Azure Active Directory (ADAL). Para obtener más información, consulte [Cómo ajustar aplicaciones que usan la Biblioteca de Azure Active Directory](#how-to-wrap-apps-that-use-the-azure-active-directory-library)..
+3.  Ejecute la herramienta mediante el comando **invoke-AppWrappingTool** con los siguientes parámetros. Los parámetros que están marcados como "opcionales" son para las aplicaciones que usan la Biblioteca de Azure Active Directory (ADAL). Para obtener más información, consulte [Cómo ajustar aplicaciones que usan la Biblioteca de Azure Active Directory](#how-to-wrap-apps-that-use-the-azure-active-directory-library).
 
 |Parámetro|Más información|Ejemplos|
 |-------------|--------------------|---------|
 |**-InputPath**&lt;String&gt;|Ruta de acceso de la aplicación de Android (.apk) de origen.| |
 |**-OutputPath**&lt;String&gt;|Ruta de acceso a la aplicación de Android de "salida". Si se trata de la misma ruta de acceso al directorio que InputPath, se producirá un error en el empaquetado.| |
 |**-KeyStorePath**&lt;String&gt;|Ruta de acceso al archivo de almacén de claves que contiene el par de claves pública y privada para firmar.| |
-|**-KeyStorePassword**&lt;SecureString&gt;|Contraseña usada para descifrar el almacén de claves.| |
+|**-KeyStorePassword**&lt;SecureString&gt;|Contraseña usada para descifrar el almacén de claves. Android requiere que todos los paquetes de la aplicación (.apk) estén firmados. Utilice la herramienta de claves de Java para generar el valor KeyStorePassword tal como se muestra en el ejemplo. Obtenga más información sobre [keystore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html).|keytool.exe -genkey -v -keystore keystorefile -alias ks -keyalg RSA -keysize 2048 -validity 50000 |
 |**-KeyAlias**&lt;String&gt;|Nombre de la clave que se usará para firmar.| |
 |**-KeyPassword**&lt;SecureString&gt;|Contraseña usada para descifrar la clave privada que se usará para firmar.| |
 |**-SigAlg**&lt;SecureString&gt;|Nombre del algoritmo de firma que se usará para firmar. El algoritmo debe ser compatible con la clave privada.|Ejemplos: SHA256withRSA, SHA1withRSA, MD5withRSA|
@@ -89,24 +83,24 @@ Tome nota de la carpeta donde instala la herramienta. La ubicación predetermina
 
 
 **&lt;CommonParameters&gt;**
-    (opcional, admite parámetros comunes de PowerShell como verbose, debug, etc.)
+: (opcional, admite parámetros comunes de PowerShell como verbose, debug, etc.)
 
-- Para obtener una lista de parámetros comunes, consulte el [Centro de scripts de Microsoft](https://technet.microsoft.com/library/hh847884.aspx)..
+- Para obtener una lista de los parámetros comunes, consulte el [Centro de scripts de Microsoft](https://technet.microsoft.com/library/hh847884.aspx).
 
 - Para ver la ayuda de la herramienta, escriba el comando:
 
     ```
     Help Invoke-AppWrappingTool
     ```
-- Para obtener más información sobre la integración de Azure Active Directory (AAD), consulte [Cómo ajustar aplicaciones que usan la Biblioteca de Azure Active Directory](#how-to-wrap-apps-that-use-the-azure-active-directory-library)..
+- Para obtener más información sobre la integración de Azure Active Directory (AAD), consulte [Cómo ajustar aplicaciones que usan la Biblioteca de Azure Active Directory](#how-to-wrap-apps-that-use-the-azure-active-directory-library).
 
 **Ejemplo:**
 
 
     Import-Module "C:\Program Files (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool\IntuneAppWrappingTool.psm1"
-    Invoke-AppWrappingTool –InputPath <input-app.apk> -OutputPath <output-app.apk> -KeyStorePath <path-to-signing.keystore> -KeyAlias <signing-key-name> -ClientID <xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx> -AuthorityURI <http://AzureActiveDirectory.Authority.URL> -SkipBroker<$True|$False> -NonBrokerRedirectURI <urn:xxx:xx:xxxx:xx:xxx>
+    invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app.wrapped\HelloWorld_wrapped2.apk -KeyStorePath "C:\Program Files (x86)\Java\jre1.8.0_91\bin\keystorefile" -keyAlias ks -SigAlg SHA1withRSA -Verbose
 
-Luego se le pedirá que especifique **KeyStorePassword** y **KeyPassword**..
+A continuación, se le pedirá que especifique **KeyStorePassword** y **KeyPassword**.
 
 La aplicación ajustada se genera y guarda, junto con un archivo de registro en la ruta de acceso de salida especificada.
 
@@ -115,9 +109,9 @@ Para evitar posibles suplantaciones de identidad, la divulgación de informació
 
 -   Asegúrese de que la aplicación de línea de negocio de entrada, la aplicación de salida y Java KeyStore estén en el mismo equipo donde se ejecuta la herramienta de ajuste de aplicaciones.
 
--   Importe la aplicación de salida a la consola de Intune en el mismo equipo donde se ejecuta la herramienta.
+-   Importe la aplicación de salida a la consola de Intune en el mismo equipo donde se ejecuta la herramienta. Consulte [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html) para obtener más información acerca de keytool de Java.
 
--   Si la aplicación de salida y la herramienta se encuentran en una ruta de acceso de convención de nomenclatura universal (UNC) y no está ejecutando la herramienta y los archivos de entrada en el mismo equipo, configure el entorno para que sea seguro mediante [protocolo de seguridad de Internet (IPsec)](http://en.wikipedia.org/wiki/IPsec) o [firma de bloque de mensajes del servidor (SMB)](https://support.microsoft.com/en-us/kb/887429).
+-   Si la aplicación de salida y la herramienta se encuentran en una ruta de acceso de convención de nomenclatura universal (UNC), y no ejecuta la herramienta y los archivos de entrada en el mismo equipo, configure el entorno para que sea seguro mediante el [protocolo de seguridad de Internet  (IPsec)](http://en.wikipedia.org/wiki/IPsec) o [la firma del bloque de mensajes del servidor (SMB)](https://support.microsoft.com/en-us/kb/887429).
 
 -   Asegúrese de que la aplicación procede de un origen de confianza, especialmente si utiliza Azure Active Directory (AAD), que podría permitir a la aplicación acceder al token de AAD durante el tiempo de ejecución.
 
@@ -149,9 +143,9 @@ Para poder usar los valores de registro de AAD de una aplicación en la herramie
 
 1.  Inicie sesión en una cuenta de AAD existente en el Portal de administración de Azure.
 
-2.  Seleccione un **registro existente de la aplicación LOB**..
+2.  Seleccione un **registro existente de la aplicación LOB**.
 
-3.  En la sección **Configurar** , seleccione **Configurar acceso a API web en otras aplicaciones**.
+3.  En la sección **Configurar** , elija **Configurar acceso a API web en otras aplicaciones**.
 
 4.  En la primera lista desplegable de la sección **Permission to other applications** (Permiso en otras aplicaciones), seleccione **Administración de aplicaciones móviles de Intune**.
 
@@ -169,12 +163,7 @@ A partir de los valores del identificador que obtuvo en el proceso de registro, 
 |Identificador de recurso|ResourceID|
 Tenga presentes los siguientes puntos al ajustar la aplicación:
 
--   La herramienta de ajuste de aplicaciones no buscará archivos binarios ADAL (si existen) en la aplicación. Si la aplicación se vincula a una versión no actualizada de los archivos binarios y si se habilitaron directivas de autenticación, pueden producirse errores en tiempo de ejecución durante el inicio de sesión.
-
--   Para comprobar que la autenticación se realizó correctamente,
-  [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] obtiene el token de AAD que está asociado con el identificador de recurso MAM. Sin embargo, el token no se usa en ninguna llamada que a su vez pueda comprobar la validez del token. [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] solo lee el nombre principal de usuario (UPN) del usuario con sesión iniciada para determinar el acceso a la aplicación. El token de AAD no se usa para las demás llamadas de servicio.
-
--   Los tokens de autenticación se comparten entre aplicaciones del mismo editor, dado que se almacenan en llaveros compartidos. Para aislar una aplicación concreta, use un certificado de firma distinto, un almacén de claves de perfiles de aprovisionamiento y el alias de la clave de esa aplicación.
+-   Para comprobar que la autenticación se realizó correctamente, [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] captura el token de AAD que está asociado con el identificador de recurso MAM. Sin embargo, el token no se usa en ninguna llamada que a su vez pueda comprobar la validez del token. [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] solo lee el nombre principal de usuario (UPN) del usuario con sesión iniciada para determinar el acceso a la aplicación. El token de AAD no se usa para las demás llamadas de servicio.
 
 -   Las peticiones de inicio de sesión dobles pueden evitarse si proporciona el identificador de cliente y el URI de entidad de la aplicación cliente. Deberá registrar el identificador de cliente para habilitar su acceso al identificador del recurso MAM de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] publicado en panel de AAD. Si no registra el identificador de cliente, los usuarios obtendrán un error de inicio de sesión cuando se ejecute la aplicación.
 
@@ -185,6 +174,7 @@ Tenga presentes los siguientes puntos al ajustar la aplicación:
 - [Use the SDK to enable apps for mobile application management (Usar el SDK para habilitar aplicaciones para la administración de aplicaciones móviles)](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO4-->
 
 

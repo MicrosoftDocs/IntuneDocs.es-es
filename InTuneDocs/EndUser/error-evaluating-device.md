@@ -3,7 +3,7 @@ title: Error evaluating device (Error al evaluar el dispositivo) | Microsoft Int
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/03/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: e50487717bd939843cb46e2d67721d98ab69ae0d
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 814289d8f8e9547d03aa78a3f699b485bf54941b
 
 
 ---
@@ -30,7 +30,6 @@ Si el problema persiste, póngase en contacto con el Administrador de TI. Para a
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

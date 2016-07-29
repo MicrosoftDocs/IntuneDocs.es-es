@@ -3,7 +3,7 @@ title: "El dispositivo no tiene la versión necesaria mínima del sistema operat
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/30/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: f0743622c8b4bd811d89ed28d5299b458d59e950
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: e0b66e5ca858511da3d415bba19b5fa3622dc97e
 
 
 ---
@@ -38,6 +38,7 @@ Para comprobar la versión de Windows 10 y Windows 8.1, presione la tecla **Wind
 [Usar un dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

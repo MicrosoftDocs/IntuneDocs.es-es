@@ -1,9 +1,9 @@
 ---
-title: "Integración de Intune con productos y servicios en la nube de Microsoft | Microsoft Intune"
-description: 
+title: "Integración de Intune con servicios en la nube de Microsoft | Microsoft Intune"
+description: "Integración de Intune con productos y servicios en la nube de Microsoft y con otros productos de Microsoft"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 49675811-08a3-408f-810b-89552ff404bd
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: e58b295bf89e200c7c986902c9b4408d23e67c64
+ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
+ms.openlocfilehash: 6523c731e8351b121cba46f6c5d2ef46db656c2c
 
 
 ---
@@ -42,6 +42,7 @@ Para más información, consulte [Administrar dispositivos móviles con Configur
 [What to know before you start Microsoft Intune (Información necesaria antes de iniciar Microsoft Intune)](what-to-know-before-you-start-microsoft-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

@@ -3,7 +3,7 @@ title: "Solucionar problemas de implementación de aplicaciones | Microsoft Intu
 description: "Este tema le ayudará a solucionar problemas de implementación de aplicaciones con Microsoft Intune."
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/26/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c1e215320168c659d5f838355f6350111d6979b0
-ms.openlocfilehash: 2aef2df385cd17a0f261789c735282f4985cb442
+ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
+ms.openlocfilehash: 46cb56da1623e0de9103ce3fa60465d5d367c974
 
 
 ---
@@ -81,7 +81,7 @@ Si esta información no soluciona el problema, vea [How to get support for Micro
 
 ### Error: El publicador no existe
 Usa **Agregar otro contrato de software** para agregar un contrato de licencia de terceros e intenta agregar el publicador desde la página **Otro contrato de licencia de software**. La página le proporcionará una lista con los editores existentes en orden alfabético.
-Cuando especifica el publicador que falta, recibe el error **El publicador no existe**. 
+Cuando especifica el publicador que falta, recibe el error **El publicador no existe**.
 
 Esto es así por diseño. Intune proporciona el seguimiento de licencias solo para los títulos de software más populares. Intune pide que al menos 4 cuentas independientes notifiquen el software antes de ofrecerlo como una opción en la carga de trabajo de licencias.
 
@@ -105,6 +105,6 @@ Si esta información para solucionar problemas no le ha ayudado, póngase en con
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

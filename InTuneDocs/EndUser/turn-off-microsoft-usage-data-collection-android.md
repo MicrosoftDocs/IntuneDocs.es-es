@@ -1,20 +1,21 @@
 ---
-title: "Desactivar la recopilación de datos de uso de Microsoft | Microsoft Intune"
+title: "Desactivar la recopilación de datos de uso de Microsoft para Android | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: df53feab-4f5e-46ae-b1e8-9adb048711e5
+ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 0a503fb4ffac0366b46c74a61943678b159e5712
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: d9b2da889f4a2c26079c7eeda72a6b14efc59de6
 
 
 ---
@@ -29,6 +30,7 @@ Para mejorar sus productos y servicios, Microsoft recopila automáticamente dato
 [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

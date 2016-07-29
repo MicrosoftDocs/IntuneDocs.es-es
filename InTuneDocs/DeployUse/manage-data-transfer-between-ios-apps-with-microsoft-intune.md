@@ -1,10 +1,10 @@
 ---
 title: Administrar la transferencia de datos entre aplicaciones iOS | Microsoft Intune
-description: 
+description: "Consulte este tema para entender cómo puede usar la característica Open In de iOS y las directivas de administración de aplicaciones móviles para administrar las transferencias de datos entre aplicaciones."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.sourcegitcommit: 002ebec14a089754849024916590b787431c7efe
-ms.openlocfilehash: fce0081fc1ecb92acf539a2d69f0493fb30ee418
+translationtype: Human Translation
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: b95b721ba2d26f3d8f621a7ca5a4968bc86c1daf
 
 
 ---
@@ -74,6 +75,6 @@ Esta configuración es necesaria para los dispositivos que están administrados 
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO4-->
 
 

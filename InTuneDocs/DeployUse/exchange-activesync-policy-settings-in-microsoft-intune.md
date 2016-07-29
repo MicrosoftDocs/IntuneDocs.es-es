@@ -1,27 +1,21 @@
 ---
-# required metadata
-
-title: Exchange ActiveSync policy settings in Microsoft Intune (Configuración de directivas de Exchange ActiveSync en Microsoft Intune) | Microsoft Intune
-description:
-keywords:
+title: "Configuración de directivas de Exchange ActiveSync | Microsoft Intune"
+description: "Use la directiva de Exchange ActiveSync de Intune para configurar las opciones que le permitirán controlar características y funciones en los dispositivos administrados por Exchange ActiveSync."
+keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/19/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: e9cbb826-b155-4df6-abf3-60c6f05b2783
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 0779fca11a692ce6843ef2ebf1c6a459273fc7cc
+
 
 ---
 
@@ -47,7 +41,7 @@ Use la directiva de **Exchange ActiveSync** de Microsoft Intune para configurar 
 
 |Nombre de la configuración|Detalles|
 |----------------|
-|**Requerir cifrado en un dispositivo móvil**<sup>1</sup>|Requiere que se cifren los datos en el dispositivo cuando se admita esta característica.<br>Para dispositivos de Windows Phone 8, debe establecerse en **Sí**..<br /><br />Para habilitar el cifrado en dispositivos iOS, habilite la opción **Requerir una contraseña para desbloquear dispositivos móviles**..|
+|**Requerir cifrado en un dispositivo móvil**<sup>1</sup>|Requiere que se cifren los datos en el dispositivo cuando se admita esta característica.<br>Para dispositivos de Windows Phone 8, debe establecerse en **Sí**.<br /><br />Para habilitar el cifrado en dispositivos iOS, habilite la opción **Requerir una contraseña para desbloquear dispositivos móviles**.|
 |**Requerir cifrado en tarjetas de almacenamiento**|Requiere que se cifren los datos almacenados en un almacenamiento externo, como una tarjeta SD (en dispositivos compatibles).
 <sup>1</sup> Información adicional para los dispositivos que ejecutan Windows 8.1
 
@@ -86,6 +80,7 @@ Use la directiva de **Exchange ActiveSync** de Microsoft Intune para configurar 
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO4-->
 
 

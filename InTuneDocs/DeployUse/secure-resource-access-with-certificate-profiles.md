@@ -1,10 +1,10 @@
 ---
-title: Habilitar el acceso a los recursos de empresa mediante perfiles de certificado|Microsoft Intune
-description: 
+title: Perfiles de certificado para el acceso a los recursos | Microsoft Intune
+description: "Proteja VPN, Wi-Fi y el acceso al correo electrónico con un certificado instalado en cada dispositivo de usuario."
 keywords: 
 author: Nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 79617dd41e51402a73759da792f581028095a2f5
-ms.openlocfilehash: 1d2e6676714daba76a9b54553b4ad1af23a0f880
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 98c32f924b60734d9a592ebdd7e00429dc32af26
 
 
 ---
@@ -47,7 +47,7 @@ Debe crear un perfil independiente para cada plataforma. Al crear el perfil, deb
 > -    Si no dispone de una entidad de certificación empresarial, tiene que crear una.
 >- Si decide, en función de sus plataformas de dispositivo, usar el Protocolo de inscripción de certificados simple (SCEP), también debe configurar un servidor del Servicio de inscripción de dispositivos de red (NDES).
 >-  Si planea usar SCEP o perfiles PFX, tendrá que descargar y configurar el conector de certificado de Microsoft Intune.
-> La configuración de todos estos elementos se describe en el tema [Configure certificate infrastructure](configure-certificate-infrastructure.md) (Configurar la infraestructura de certificados).
+> Se describe la configuración de todos ellos en [Configurar la infraestructura de certificados para SCEP](configure-certificate-infrastructure-for-scep.md) y [Configurar la infraestructura de certificados](configure-certificate-infrastructure-for-pfx.md).
 
 ### Pasos siguientes
 - [Configurar la infraestructura de certificados para SCEP](configure-certificate-infrastructure-for-scep.md)
@@ -56,6 +56,6 @@ Debe crear un perfil independiente para cada plataforma. Al crear el perfil, deb
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO4-->
 
 

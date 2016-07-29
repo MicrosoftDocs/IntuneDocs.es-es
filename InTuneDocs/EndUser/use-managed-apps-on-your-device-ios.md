@@ -1,26 +1,27 @@
 ---
-title: Usar aplicaciones administradas en el dispositivo | Microsoft Intune
+title: Usar aplicaciones administradas en el dispositivo iOS | Microsoft Intune
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3232c5c1-cb9f-45ca-806f-7e74eeb3533e
-ROBOTS: 
+ROBOTS: noindex,nofollow
 ms.reviewer: maxles
 ms.suite: ems
-ms.sourcegitcommit: 39e810466d3a98789f0f1338f68d2be80d757d39
-ms.openlocfilehash: 8feb4b293a021efd1f4cd26c43be76355d947143
+translationtype: Human Translation
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: b8e8bc72012a19b309a7db6c8c562ff2cbec0933
 
 
 ---
 
 
-# Usar aplicaciones administradas en el dispositivo
+# Usar aplicaciones administradas en el dispositivo iOS
 
 Las aplicaciones administradas son aplicaciones que el administrador de TI puede configurar para ayudar a proteger los datos de la empresa a los que se puede acceder en esa aplicación. Cuando acceda a los datos de la empresa en una aplicación administrada en su dispositivo iOS, puede observar que la aplicación funciona de forma un poco diferente de lo que espera. Por ejemplo, es posible que no pueda copiar y pegar los datos protegidos de la compañía o no pueda guardar dichos datos en determinadas ubicaciones.
 
@@ -65,6 +66,7 @@ Para obtener más información sobre las aplicaciones administradas en el dispos
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

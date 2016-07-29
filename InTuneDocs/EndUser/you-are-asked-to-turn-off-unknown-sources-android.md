@@ -3,22 +3,24 @@ title: "Se le pide que desactive Orígenes desconocidos | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 06/16/2016
+manager: angrobe
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c7a10998-9aa6-4bc0-8405-27a30c61bca7
-ms.sourcegitcommit: b76c04545b9b26a0e2470b95a3f5ac0a81b07817
-ms.openlocfilehash: 7ea8494dacb3f9ccf3077c654801979bab9b096b
+ROBOTS: noindex,nofollow
+translationtype: Human Translation
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 61910d5571e143b12af7b44895d80575cb9e4a70
 
 
 ---
 
 # Se le pide que desactive Orígenes desconocidos
 
-Si ve el mensaje "Debe deshabilitarse la instalación desde orígenes desconocidos", debe ir a **Configuración** > **Seguridad** y desactivar **Orígenes desconocidos**. 
+Si ve el mensaje “Debe deshabilitarse la instalación desde orígenes desconocidos”, debe ir a **Configuración** > **Seguridad** (en algunos dispositivos, esto puede ser **Pantalla de bloqueo y seguridad**) y desactivar **Orígenes desconocidos**.
 
 El administrador de TI exige desactivar esta opción para proteger los datos corporativos en el dispositivo Android. Si **Orígenes desconocidos** está activado, permite instalar aplicaciones de orígenes desconocidos, lo que podría plantear un riesgo de seguridad.
 
@@ -31,6 +33,6 @@ Una vez que **Orígenes desconocidos** se desactiva, pueden pasar unos minutos a
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

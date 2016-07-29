@@ -3,7 +3,7 @@ title: "¿Qué puede ver el administrador de TI cuando inscribe el dispositivo e
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 05/26/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: be6932d34d33439c628dc4a3ec8ec27fec428da2
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: c98a9c335c80cb8484009d4dced723758872b7db
 
 
 ---
@@ -64,6 +64,7 @@ Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para 
 [Usar un dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

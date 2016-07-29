@@ -3,7 +3,7 @@ title: "Para instalar la aplicación Outlook hay que actualizar el dispositivo |
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 06/16/2016
 ms.topic: article
 ms.prod: 
@@ -14,15 +14,15 @@ ROBOTS: noindex,nofollow
 ms.reviewer: vadona
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 1ce280d39f3b2faa0c4aa69dbb582c338bcf1a5b
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 9df5e5b61fc19a255421c7a573f9d04af7004c58
 
 
 ---
 
 # Para instalar la aplicación Outlook hay que actualizar el dispositivo
 
-Si intenta descargar la aplicación de correo electrónico Outlook y ve un mensaje que indica que la versión del sistema operativo del dispositivo Android o iOS es inferior a la versión mínima requerida, debe actualizar el dispositivo para continuar. 
+Si intenta descargar la aplicación de correo electrónico Outlook y ve un mensaje que indica que la versión del sistema operativo del dispositivo Android o iOS es inferior a la versión mínima requerida, debe actualizar el dispositivo para continuar.
 
 Para actualizar, use las instrucciones siguientes que coincidan con el tipo de dispositivo que esté usando:
 
@@ -34,7 +34,6 @@ Pulse **Configuración** &gt; **General** &gt; **Actualización de software**.
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

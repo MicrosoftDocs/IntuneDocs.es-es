@@ -3,7 +3,7 @@ title: "Espere mientras se evalúa el dispositivo | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb9888d803a53c2f17d88cdb3f010cf14c9b18d
-ms.openlocfilehash: 08e0104ef1a7979cef332848b791026ecc55ef6a
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: a425f8520795308a8be787070f4f892033961f0c
 
 
 ---
@@ -27,7 +27,6 @@ Aún se está evaluando si el dispositivo cumple las normas. Espere unos minutos
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

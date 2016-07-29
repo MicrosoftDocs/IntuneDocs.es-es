@@ -1,10 +1,10 @@
 ---
 title: Actualizar aplicaciones | Microsoft Intune
-description: 
+description: "Use la información de este tema para entender cómo actualizar aplicaciones cuando se requiere una versión nueva."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: beee6933-876a-4be0-b395-4c24cfbd519b
 ms.reviewer: mghadial
 ms.suite: ems
-ms.sourcegitcommit: 0581d1476fba5bedcdd4446df20f8f92b151f41b
-ms.openlocfilehash: 9e5b8f4a467e8e58cc2f8fa495b5f008eee7e35b
+translationtype: Human Translation
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 5e163cf4e8190d0bc967415f1d907465e4e13f36
 
 
 ---
@@ -23,6 +24,16 @@ Microsoft Intune puede ayudarle a administrar actualizaciones de aplicaciones. U
 
 ## Actualizar aplicaciones
 Cuando se lanza una nueva versión de una aplicación que haya implementado, Intune permite actualizar e implementar la versión más reciente de la aplicación. Una implementación solo se puede reemplazar por una versión más reciente de la misma aplicación (con el mismo identificador). No se pueden usar las actualizaciones de aplicaciones para actualizar una implementación con un paquete de la aplicación diferente.
+
+### Identificadores de aplicación
+El identificador de la aplicación es una propiedad que identifica de forma única una aplicación. No puede instalar varias copias de una aplicación con el mismo identificador. Por ejemplo:
+
+- **iOS** - Identificador de agrupación (por ejemplo: com.microsoft.excel)
+- **Android** - Identificador de paquete (por ejemplo: com.microsoft.excel)
+- **Windows Phone** - (instalador xap); use el id. del producto (GUID)
+- **Windows** - (appx/appxbundle); use el nombre completo del paquete
+
+
 
 > [!IMPORTANT]
 > Si implementa una aplicación con la acción de implementación **Instalación requerida** y posteriormente cambia la acción de implementación a **Instalación disponible**, las actualizaciones de la aplicación no se instalan automáticamente en los dispositivos que instalaron la aplicación antes de que se realizara el cambio de implementación. Para corregir este problema, puede hacer lo siguiente:
@@ -49,6 +60,6 @@ En el caso de las aplicaciones implementadas como un vínculo a un almacén, el 
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

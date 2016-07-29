@@ -1,27 +1,27 @@
 ---
-title: "¿Qué ocurre si instala la aplicación Portal de empresa e inscribe el dispositivo en Intune? | Microsoft Intune"
+title: "¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo iOS o Mac OS X en Intune? | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 7/7/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2467c02-aac5-41c8-b788-cbda830941ef
-ROBOTS: 
+ROBOTS: noindex,nofollow
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: a83edd3ed51bddafd6f057ed9ae2bb0958c88fe4
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 4ccd20b4024a3f824b873ab79eaa41d746d8e04b
 
 
 ---
 
 
-# ¿Qué ocurre si instala la aplicación Portal de empresa e inscribe el dispositivo en Intune?
+# ¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo iOS o Mac OS X en Intune?
 
 Al instalar la aplicación Portal de empresa e inscribir su dispositivo iOS o Mac OS X en Intune, puede usar la aplicación Portal de empresa para:
 
@@ -29,9 +29,9 @@ Al instalar la aplicación Portal de empresa e inscribir su dispositivo iOS o Ma
 
 -   Obtener aplicaciones de empresa desde el portal de la empresa
 
--   Configurar automáticamente su cuenta de correo electrónico de la empresa
+-   Restablecer remotamente el teléfono a la configuración de fábrica si lo pierde o se lo roban
 
--   Restablecer su teléfono a la configuración de fábrica si lo pierde o se lo roban
+-   Configurar automáticamente su cuenta de correo electrónico de la empresa
 
 Cuando inscribe su dispositivo en Intune, el administrador de TI tiene permiso para administrar el dispositivo, a fin de ayudarle a proteger la información de la empresa que tiene en el mismo.
 
@@ -64,8 +64,6 @@ Cuando inscribe su dispositivo en Intune, el administrador de TI tiene permiso p
 -   Propietario
 
 -   Nombre del dispositivo
-
--   Fabricante
 
 Cuando el dispositivo esté inscrito, el Administrador de TI podrá:
 
@@ -101,6 +99,7 @@ Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para 
 [Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

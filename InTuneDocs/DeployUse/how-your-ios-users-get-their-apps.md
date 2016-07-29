@@ -1,9 +1,9 @@
 ---
 title: "Cómo obtienen sus aplicaciones los usuarios de iOS | Microsoft Intune"
-description: 
+description: "Métodos para hacer que las aplicaciones iOS estén disponibles para los usuarios finales"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: f36bc73d3397fef5bebe6896d91bcffcd5507cfc
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: 5468914de3444a709068b4d3d143d3b2828616eb
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: f36bc73d3397fef5bebe6896d91bcffcd5507cfc
 
 # Cómo obtienen sus aplicaciones los usuarios de iOS
 
-Lea esta información para comprender cómo y dónde obtienen los usuarios finales las aplicaciones que se distribuyen a través de Microsoft Intune. 
+Lea esta información para comprender cómo y dónde obtienen los usuarios finales las aplicaciones que se distribuyen a través de Microsoft Intune.
 
 **Aplicaciones obligatorias**: son las aplicaciones que exige el administrador y que se instalan en el dispositivo con intervención mínima del usuario, según la plataforma.
 
@@ -37,6 +37,7 @@ Lea esta información para comprender cómo y dónde obtienen los usuarios final
 [Cómo obtienen sus aplicaciones los usuarios de Windows](how-your-windows-users-get-their-apps.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

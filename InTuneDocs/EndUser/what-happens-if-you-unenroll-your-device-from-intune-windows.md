@@ -1,26 +1,27 @@
 ---
-title: "¿Qué ocurre si anula la inscripción del dispositivo de Intune? | Microsoft Intune"
+title: "¿Qué ocurre si anula la inscripción del dispositivo Windows de Intune? | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 47e03edb-0c57-4e25-8e89-4a1069267b8c
+ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1244d931d1bd3db012fbcfe0bd055d1fd4f2d88a
-ms.openlocfilehash: f0108b884439aac9661c9f36f85b47d80209d155
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 33bc0e494d1297421d253a9246175a18924c1c52
 
 
 ---
 
 
-# ¿Qué ocurre si anula la inscripción del dispositivo de Intune?
+# ¿Qué ocurre si anula la inscripción del dispositivo Windows de Intune?
 
 Para más información sobre lo que ocurre, seleccione el vínculo de la sección anterior "En este artículo" correspondiente al tipo de dispositivo que use.
 
@@ -93,6 +94,7 @@ Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para 
 [Usar un dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

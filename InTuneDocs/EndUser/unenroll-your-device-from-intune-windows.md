@@ -1,9 +1,9 @@
 ---
-title: "Anular la inscripción del dispositivo de Intune | Microsoft Intune"
-description: 
+title: "Anular la inscripción del dispositivo Windows des Intune | Microsoft Intune"
+description: "Describe cómo anular la inscripción de un dispositivo Windows de Intune."
 keywords: 
 author: Staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,14 +13,14 @@ ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: c323aed2b4fbac831ae4919c8145b7253eb97ace
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 424890c84de5b42c9a490489b78d7b2408b47cef
 
 
 ---
 
 
-# Anulación de la inscripción del dispositivo en Intune
+# Anular la inscripción del dispositivo Windows de Intune
 
 Si inscribió un dispositivo Windows en Intune, pero ya no quiere usarlo para el trabajo o la escuela y no necesita tener acceso al correo electrónico, a las aplicaciones o a otros recursos del trabajo o la escuela, debe anular la inscripción del dispositivo. Una vez que se anule la inscripción de su dispositivo de Intune, ya no podrá acceder a estos recursos. Para más información sobre lo que ocurre cuando se anula la inscripción de un dispositivo, vea [¿Qué ocurre cuando se anula la inscripción de un dispositivo de Intune?](what-happens-if-you-unenroll-your-device-from-intune-windows.md).
 
@@ -66,6 +66,7 @@ Para anular la inscripción de un dispositivo, use el vínculo de la sección an
 [Usar un dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

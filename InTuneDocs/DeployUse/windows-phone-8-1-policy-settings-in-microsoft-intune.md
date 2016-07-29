@@ -1,39 +1,41 @@
 ---
-# required metadata
-
-title: Configuración de directivas de Windows 8.1 en Microsoft Intune | Microsoft Intune
-description:
-keywords:
+title: "Configuración de directivas de Windows Phone 8.1 | Microsoft Intune"
+description: "Intune proporciona una variedad de opciones generales integradas que puede configurar en los dispositivos Windows Phone 8.1. Además, puede especificar valores OMA-URI para crear una configuración personalizada que no esté disponible en Intune."
+keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/19/2016
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.service: microsoft-intune
-ms.technology:
+ms.technology: 
 ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
-
-# optional metadata
-
-#ROBOTS:
-#audience:
-#ms.devlang:
-ms.reviewer: jeffgilb
+ms.reviewer: heenamac
 ms.suite: ems
-#ms.tgt_pltfrm:
-#ms.custom:
+translationtype: Human Translation
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 04fca72cd426ee4718e100cb2633ca2c967b4c05
+
 
 ---
 
 # Configuración de directivas de Windows 8.1 en Microsoft Intune
 
+Intune proporciona una variedad de opciones generales integradas que puede configurar en los dispositivos Windows Phone 8.1. Además, puede especificar valores OMA-URI para crear una configuración personalizada que no esté disponible en Intune.
+
 ## Opciones generales de configuración
 
-Use la **directiva de configuración general de Windows Phone** de Microsoft Intune para configurar las opciones siguientes para dispositivos con Windows Phone 8.1:
+Use la **directiva de configuración general de Windows Phone (Windows Phone 8.1 y posterior)** de Microsoft Intune para configurar las opciones siguientes para dispositivos Windows Phone 8.1:
 
 -   **Configuración de seguridad de dispositivos móviles** : elija entre una lista de configuraciones predefinidas que permiten controlar una variedad de características y la funcionalidad en el dispositivo.
 
 -   **Aplicaciones compatibles y no compatibles**: especifique una lista de las aplicaciones compatibles y no compatibles de su empresa. Los dispositivos de Windows Phone pueden bloquear o permitir la instalación de estas aplicaciones.
+
+### Configuración de aplicabilidad
+
+|Nombre de la configuración|Detalles|
+|----------------|----------------------------------|
+|**Aplicar todas las configuraciones a Windows 10**|Permite aplicar la configuración de esta directiva a dispositivos Windows 10 Mobile además de a dispositivos Windows Phone 8.1.|
 
 ### Configuración de contraseña
 
@@ -54,7 +56,7 @@ Use la **directiva de configuración general de Windows Phone** de Microsoft Int
 
 |Nombre de la configuración|Detalles|Windows Phone 8|Windows Phone 8,1|
 |----------------|-----------------------------------------|
-|**Requerir cifrado en dispositivo móvil**|Requiere que se cifren los datos en los dispositivos móviles compatibles.<br>Para dispositivos de Windows Phone 8, debe establecerse en **Sí**..|Sí|Sí|
+|**Requerir cifrado en dispositivo móvil**|Requiere que se cifren los datos en los dispositivos móviles compatibles.<br>Para dispositivos de Windows Phone 8, debe establecerse en **Sí**.|Sí|Sí|
 
 ### Configuración del sistema
 
@@ -108,7 +110,7 @@ Use la **directiva de configuración general de Windows Phone** de Microsoft Int
 |**Permitir copiar y pegar**|Permite la función de copiar y pegar en los dispositivos.|No|Sí|
 
 ### Configuración de aplicaciones conformes y no conformes
-En la lista de **aplicaciones compatibles &amp; no compatibles**, especifique las aplicaciones que son compatibles y no compatibles con la siguiente información:
+En la lista de **aplicaciones compatibles&amp; y no compatibles**, especifique las aplicaciones que son compatibles y no compatibles con la siguiente información:
 
 > [!NOTE]
 > Una única directiva solo puede contener una lista de aplicaciones conformes o una lista de aplicaciones no conformes. No se pueden especificar ambas en la misma directiva.
@@ -134,14 +136,14 @@ Desde la página de [aplicaciones y juegos para Windows Phone](http://www.window
 
 Abra la página de la aplicación y copie la dirección URL en el Portapapeles. Ya puede utilizarla como dirección URL en una la lista de aplicaciones conformes o no conformes.
 
-**Ejemplo:** Busque la aplicación Skype en la Tienda. La dirección URL que use será **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
+**Ejemplo:** Busque la aplicación Skype en la Tienda. La dirección URL que use será **http://www.windowsphone.com/es-es/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
 
-## Opciones de configuración de directiva personalizadas 
+## Configuración de directivas personalizadas 
 Use la **Directiva de configuración personalizada de Windows Phone** de Microsoft Intune para implementar la configuración de OMA-URI (identificador uniforme de recursos de Open Mobile Alliance), que puede usarse para controlar las características de los **dispositivos de Windows Phone 8.1**. Se trata de una configuración estándar que muchos fabricantes de dispositivos móviles usan para controlar las características del dispositivo.
 
-Esta funcionalidad está destinada a permitirle implementar la configuración de Windows Phone que no se puede configurar con una directiva de configuración general de Intune. Para obtener información sobre las opciones que puede configurar con estas directivas, consulte [Manage settings and features on your devices with Microsoft Intune policies](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) (Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune)..
+Esta funcionalidad está destinada a permitirle implementar la configuración de Windows Phone que no se puede configurar con una directiva de configuración general de Intune. Para obtener más información sobre las opciones que se pueden configurar con estas directivas, vea [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-Para obtener ayuda sobre cómo crear la configuración de OMA-URI para dispositivos Windows Phone, consulte [Windows Phone 8.1 MDM protocol documentation](http://technet.microsoft.com/library/dn499787.aspx) (Documentación del protocolo MDM de Windows Phone 8.1)..
+Para obtener ayuda acerca de cómo crear la configuración de OMA-URI para dispositivos Windows Phone, consulte [Windows Phone 8.1 MDM protocol documentation](http://technet.microsoft.com/library/dn499787.aspx).
 
 ### Configuración general
 
@@ -169,6 +171,7 @@ En el cuadro de diálogo **Agregar o editar configuración OMA-URI**, especifiqu
 
 
 
-<!--HONumber=May16_HO1-->
+
+<!--HONumber=Jul16_HO4-->
 
 

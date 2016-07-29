@@ -1,10 +1,10 @@
 ---
 title: "Configuración de directivas de Windows 10 | Microsoft Intune"
-description: 
+description: "Use la configuración de directiva indicada en este tema para configurar las opciones integradas y personalizadas de los dispositivos Windows 10 Escritorio y Windows 10 Mobile inscritos."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,19 +12,24 @@ ms.technology:
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
-ms.sourcegitcommit: 1cccafa5f740bad50779ae36c899fd23ee7dc5f3
-ms.openlocfilehash: 70347776f72a3534a4c384957aef01a909767b99
+translationtype: Human Translation
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: bb08ea54b24e0395972ce29ae05ff2b7b6ee4220
 
 
 ---
 
 # Configuración de directivas de Windows 10 en Microsoft Intune
 
-Use la configuración de directiva indicada en este tema para configurar las opciones de los dispositivos inscritos de la versión de escritorio de Windows 10 y Windows 10 Mobile.
+Use la configuración de directiva indicada en este tema para configurar las opciones integradas y personalizadas de los dispositivos Windows 10 Escritorio y Windows 10 Mobile inscritos.
+
+> [!IMPORTANT]
+> Puede administrar equipos Windows 10 de dos maneras; inscribiéndolos o instalando el software de cliente de PC de Intune. Cada método ofrece funcionalidades diferentes (consulte [Elegir cómo administrar dispositivos](/intune/get-started/choose-how-to-manage-devices) para más información.
+> Cuando administra sus PC Windows 10 con el software de cliente de PC de Intune, no puede utilizar las directivas y la configuración que se detallan en este tema. Para aplicar esta configuración, los dispositivos Windows 10 deben estar inscritos con Intune.
 
 ## Configuración general de directivas
 
-Use la **directiva de configuración general** de Microsoft Intune para Windows 10 para configurar las opciones generales de los dispositivos Windows 10 Escritorio y Windows 10 Mobile inscritos. Esta directiva no se puede usar para administrar equipos con Windows 10 con el software cliente de Intune.
+Use la **directiva de configuración general** de Microsoft Intune para Windows 10 para configurar las opciones generales de los dispositivos Windows 10 Escritorio y Windows 10 Mobile inscritos. 
 
 
 ### Contraseña
@@ -161,7 +166,7 @@ Todos los valores son solo válidos para Windows 10 Escritorio.
 |**Intervalo de actualización de firma**|Especifica el intervalo en el que Defender buscará nuevos archivos de firma.|
 |**Permitir la protección en la nube**|Permite o bloquea la recepción por parte de Microsoft Active Protection Service de información sobre la actividad de malware de los dispositivos que administra. Esta información se usa para mejorar el servicio en el futuro.|
 |**Pedir a los usuarios el envío de muestras**|Controla si los archivos que podrían requerir un análisis posterior por parte de Microsoft para determinar si son malintencionados se envían automáticamente a Microsoft.|
-|**Detección de aplicaciones potencialmente no deseadas**|Esta configuración se puede usar para proteger los equipos de escritorio de Windows inscritos frente a la ejecución de software que Windows Defender ha clasificado como potencialmente no deseado. Puede protegerse contra la ejecución de estas aplicaciones o puede usar el modo auditoría para informar cuando se instale una aplicación potencialmente no deseada.|
+|**Detección de aplicaciones potencialmente no deseadas**|Esta configuración se puede usar para proteger los dispositivos de escritorio de Windows inscritos frente a la ejecución de software que Windows Defender ha clasificado como potencialmente no deseado. Puede protegerse contra la ejecución de estas aplicaciones o puede usar el modo auditoría para informar cuando se instale una aplicación potencialmente no deseada.|
 |**Archivos y carpetas que se van a excluir al ejecutar un análisis o al usar la protección en tiempo real**|Agrega uno o varios archivos y carpetas como **C:\Path** o **%ProgramFiles%\Path\filename.exe** a la lista de exclusiones. Estos archivos y carpetas no se incluirán en los análisis en tiempo real ni programados.|
 |**Extensiones de archivo que se deben excluir al ejecutar un análisis o al utilizar protección en tiempo real**|Agrega una o varias extensiones de archivo como **jpg** o **txt** a la lista de exclusiones. Los archivos con estas extensiones no se incluirán en los análisis en tiempo real ni programados.|
 |**Procesos que se deben excluir al ejecutar un análisis o al utilizar protección en tiempo real**|Agrega uno o varios procesos del tipo **.exe**, **.com** o **.scr** a la lista de exclusiones. Estos procesos no se incluirán en los análisis en tiempo real ni programados.| 
@@ -327,6 +332,6 @@ Todos los dispositivos deben estar inscritos con Intune si quiere usar la direct
 
 
 
-<!--HONumber=Jun16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

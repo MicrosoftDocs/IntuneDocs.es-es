@@ -3,7 +3,7 @@ title: Recopilar registros de dispositivo| Microsoft Intune
 description: 
 keywords: 
 author: Nbigman
-manager: jeffgilb
+manager: angrobe
 ms.date: 06/01/2016
 ms.topic: article
 ms.prod: 
@@ -13,15 +13,15 @@ ms.assetid: d97fb610-9d88-40e5-bb06-447eec533630
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ac5c66f57194a84580aa495a58e5281683aa1cca
-ms.openlocfilehash: 4fc08fcea6cea897b9ddc3d0c00f2d83069f639d
+ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
+ms.openlocfilehash: 46579569c33b50f4b19a62d83c1db5e0e304621b
 
 
 ---
 
 # Registros de dispositivo
 
-Su trabajo de solución de problemas es posible que exija la recopilación de registros de dispositivos de usuario. Las instrucciones para recopilar esos registros se detallan aquí. Normalmente necesitará acceso al dispositivo o tendrá que solicitar al usuario que recopile los registros y se los envíe. 
+Su trabajo de solución de problemas es posible que exija la recopilación de registros de dispositivos de usuario. Las instrucciones para recopilar esos registros se detallan aquí. Normalmente necesitará acceso al dispositivo o tendrá que solicitar al usuario que recopile los registros y se los envíe.
 
 ### Ubicación del registro de Android
 Los registros de Android se encuentran en *<Android Device>\Phone\Android\data\com.microsoft.windowsintune.companyportal\files*. El usuario también puede enviar archivos de registro por correo electrónico, como se explica en [Send Android diagnostic data logs to your IT administrator using email (Enviar registros de datos de diagnóstico de Android al administrador de TI por correo electrónico)](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android).
@@ -46,6 +46,6 @@ En el portal de empresa para Windows, los registros se encuentran en *%localappd
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

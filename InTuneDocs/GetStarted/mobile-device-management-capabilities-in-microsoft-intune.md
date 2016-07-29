@@ -1,10 +1,10 @@
 ---
 title: "Capacidades de administración de dispositivos móviles | Microsoft Intune"
-description: 
+description: "Lea este tema para averiguar cómo puede ayudar Intune a administrar los dispositivos móviles que inscriba en el servicio."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f33a86c51320c75ce74d20e0cac2b9581990ecec
-ms.openlocfilehash: 0f460165f251acf95f4af36afa39409d3eb21162
+ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
+ms.openlocfilehash: 720112c7c20883200557510da2a42ee402eff50a
 
 
 ---
@@ -42,7 +42,8 @@ La administración, el inventario, la implementación de aplicaciones, el aprovi
 |Administración e implementación de aplicaciones|Proporciona diversas herramientas que le ayudarán a administrar aplicaciones móviles durante todo su ciclo de vida, incluida la implementación de aplicaciones desde archivos de instalación y tiendas de aplicaciones, la supervisión detallada del estado de las aplicaciones y la eliminación de aplicaciones.|[Deploy apps in Microsoft Intune (Implementar aplicaciones en Microsoft Intune)](/intune/deploy-use/deploy-apps)|
 |Aplicaciones conformes y no conformes|Le permite especificar listas de aplicaciones conformes (que los usuarios pueden instalar) y aplicaciones no conformes (que los usuarios no deben instalar).|[Configuración de directivas de iOS en Microsoft Intune](/intune/deploy-use/ios-policy-settings-in-microsoft-intune)|
 |Administración de aplicaciones móviles|Use la administración de aplicaciones móviles para configurar restricciones para las aplicaciones, tanto en los dispositivos administrados con Intune como en los no administrados por Intune. Esto contribuye a aumentar la seguridad de los datos de su empresa mediante la restricción de operaciones como la funcionalidad de copiar y pegar, la realización de copias de seguridad externas de los datos y la transferencia de datos entre las aplicaciones.|[Configure and deploy mobile application management policies in the Microsoft Intune console (Configurar e implementar directivas de administración de aplicaciones móviles en la consola de Microsoft Intune)](/intune/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console)<br><br>[Crear e implementar directivas de administración de aplicaciones móviles con Microsoft Intune](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune)<br /><br />[Preparar aplicaciones iOS para la administración de aplicaciones móviles con la herramienta de ajuste de aplicaciones de Microsoft Intune](/intune/deploy-use/prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)<br /><br />[Preparar aplicaciones de Android para la administración de aplicaciones móviles con Microsoft Intune App Wrapping Tool](/intune/deploy-use/prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)|
-|Configuración de aplicaciones móviles|Use las directivas de configuración de aplicaciones móviles para proporcionar la configuración de aplicaciones iOS que puede ser necesaria cuando el usuario ejecuta la aplicación. Por ejemplo, una aplicación puede necesitar que el usuario especifique un número de puerto de la información de inicio de sesión. Esto puede ayudar a simplificar la configuración de la aplicación y reducir el número de llamadas al soporte técnico.|[Configurar aplicaciones de iOS con directivas de configuración de aplicaciones móviles en Microsoft Intune](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
+|Configuración de aplicaciones móviles iOS|Use las directivas de configuración de aplicaciones móviles para proporcionar la configuración de aplicaciones iOS que puede ser necesaria cuando el usuario ejecuta la aplicación. Por ejemplo, una aplicación puede necesitar que el usuario especifique un número de puerto de la información de inicio de sesión. Esto puede ayudar a simplificar la configuración de la aplicación y reducir el número de llamadas al soporte técnico.|[Configurar aplicaciones de iOS con directivas de configuración de aplicaciones móviles en Microsoft Intune](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
+|Perfiles de aprovisionamiento de aplicaciones móviles iOS|Intune proporciona las herramientas para implementar proactivamente perfiles de aprovisionamiento en aplicaciones iOS que están a punto de expirar.|[Use iOS mobile provisioning profile policies to prevent your apps from expiring (Uso de directivas de perfil de aprovisionamiento móvil iOS para evitar que las aplicaciones expiren)](/intune/deploy-use/ios-mobile-app-provisioning-profiles)|
 |Explorador administrado|Tras implementar el explorador administrado para los usuarios, puede configurar una directiva de explorador administrado para controlar los sitios web que pueden visitar. Además, también puede aplicar directivas de administración de aplicaciones móviles al explorador administrado.|[Administrar el acceso a Internet mediante directivas de explorador administrado con Microsoft Intune](/intune/deploy-use/manage-internet-access-using-managed-browser-policies)|
 |Microsoft Passport|Con Intune, es posible la integración con Microsoft Passport for Work, que es un método de inicio de sesión alternativo para Windows 10 que usa Active Directory, o una cuenta de Azure Active Directory, para reemplazar una contraseña, una tarjeta inteligente o una tarjeta inteligente virtual.|[Controlar la configuración de Microsoft Passport en dispositivos mediante Microsoft Intune](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
 
@@ -68,6 +69,6 @@ La administración, el inventario, la implementación de aplicaciones, el aprovi
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

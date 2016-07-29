@@ -1,26 +1,27 @@
 ---
-title: "¿Qué ocurre si restablece el dispositivo con el Portal de empresa? | Microsoft Intune"
+title: "¿Qué ocurre si restablece un dispositivo Android mediante el Portal de empresa? | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
+manager: angrobe
 ms.date: 05/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5d4e31a2-7bda-4d62-a0ba-c31e77ecea03
+ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 565ada54c6267d38764f3e1049b5569da1f796cd
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 19618f98a951648b47f07ebda1d7a2ed682dcc27
 
 
 ---
 
 
-# ¿Qué ocurre si restablece el dispositivo con el Portal de empresa?
+# ¿Qué ocurre si restablece un dispositivo Android mediante el Portal de empresa?
 
 Al usar el portal de empresa para restablecer el dispositivo Android, se eliminarán todas las aplicaciones, opciones de configuración y datos personales del dispositivo, que además volverá a su configuración predeterminada de fábrica.
 
@@ -36,6 +37,7 @@ Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para 
 [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

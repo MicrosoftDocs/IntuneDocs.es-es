@@ -3,7 +3,7 @@ title: Inscribir el dispositivo Windows Phone 8 en Intune | Microsoft Intune
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
+manager: angrobe
 ms.date: 04/28/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 4ac887f3-52e1-41f0-97fe-21985e0573ab
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: abb6bfbbe1979007c1b66fb407b404bdd7641eea
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: ba6e26cd26e210ccb30bf0431ffa3d1682dba0ca
 
 
 ---
@@ -43,7 +43,6 @@ El Portal de empresa aparecerá en la lista de aplicaciones después de instalar
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

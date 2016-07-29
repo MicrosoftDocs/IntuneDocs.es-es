@@ -1,10 +1,10 @@
 ---
 title: Restringir el acceso a Skype Empresarial Online | Microsoft Intune
-description: 
+description: Proteja y controle el acceso a Skype Empresarial Online con el acceso condicional.
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.sourcegitcommit: 5cbf748ffee8fbb53f7e64a5499f06d5bd89c415
-ms.openlocfilehash: c26f3b732eb42903c72e8655542ee1ed586f5c67
+translationtype: Human Translation
+ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
+ms.openlocfilehash: 6e32de28117f31ccd73418b4f0167e9e5971944a
 
 
 ---
@@ -32,7 +33,7 @@ Cuando un usuario determinado intenta usar Skype Empresarial Online en su dispos
 **Antes** de configurar una directiva de acceso condicional para Skype Empresarial Online, debe:
 - Tener una **suscripción de Skype Empresarial Online** y asignar una licencia de Skype Empresarial Online a los usuarios.
 - Tener una suscripción a **Enterprise Mobility Suite** o **Azure Active Directory Premium**.
--   [Habilitar la autenticación moderna](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) para Skype Empresarial Online. 
+-   [Habilitar la autenticación moderna](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) para Skype Empresarial Online.
 -  Todos los usuarios finales deben usar **Skype Empresarial Online**. Si tiene una implementación con Skype Empresarial Online y Skype Empresarial local, la directiva de acceso condicional no se aplicará a los usuarios finales.
 
     El dispositivo que necesita tener acceso a Skype Empresarial Online:
@@ -69,11 +70,11 @@ Si un usuario pertenece a ambos grupos, estará exento de la directiva.
 [Cree](create-a-device-compliance-policy-in-microsoft-intune.md) e [implemente](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md) una directiva de cumplimiento para todos los dispositivos que se verán afectados por la directiva. Dichos dispositivos serán los que usan los usuarios de los **Grupos de destino**.
 
 > [!NOTE]
-> [!NOTE] Mientras se implementan las directivas de cumplimiento en los grupos de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], las directivas de acceso condicional se aplican a los grupos de seguridad de Azure Active Directory.
+> Mientras se implementan las directivas de cumplimiento en los grupos de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], las directivas de acceso condicional se aplican a los grupos de seguridad de Azure Active Directory.
 
 
 > [!IMPORTANT]
-> [!IMPORTANT] Si no ha implementado una directiva de cumplimiento, los dispositivos se considerarán no conformes.
+> Si no ha implementado una directiva de cumplimiento, los dispositivos se considerarán no conformes.
 
 Cuando esté listo, continúe con el **paso 3**.
 
@@ -115,6 +116,6 @@ Seleccione cualquier grupo de dispositivos móviles y, a continuación, en la pe
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO4-->
 
 

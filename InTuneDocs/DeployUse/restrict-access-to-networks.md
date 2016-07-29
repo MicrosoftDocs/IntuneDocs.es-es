@@ -3,7 +3,7 @@ title: Restringir el acceso a redes con Cisco ISE | Microsoft Intune
 description: Use Cisco ISE con Intune de forma que los dispositivos se inscriban y cumplan la directiva de Intune antes de que tengan acceso al WiFi y a la VPN controlada por Cisco ISE.
 keywords: 
 author: nbigman
-manager: Arob98
+manager: angrobe
 ms.date: 06/24/2016
 ms.topic: article
 ms.prod: 
@@ -13,42 +13,42 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72288296d966b9b9fae4fd721b4460528213f626
-ms.openlocfilehash: 9e90971a9997e65e98a8c55b24fb70a42da93702
+ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
+ms.openlocfilehash: c516cffe416559d1d239010605227eda76c32c1b
 
 
 ---
 
 # Usar Cisco ISE con Microsoft Intune
-La integración de Intune con Cisco ISE le permite crear directivas de red en su entorno de ISE mediante el estado de cumplimiento y la inscripción de dispositivos de Intune. Estas directivas pueden trabajar para garantizar que el acceso a la red de su empresa está restringida a los dispositivos administrados por Intune y a los que cumplen con sus directivas. 
+La integración de Intune con Cisco ISE le permite crear directivas de red en su entorno de ISE mediante el estado de cumplimiento y la inscripción de dispositivos de Intune. Estas directivas pueden trabajar para garantizar que el acceso a la red de su empresa está restringida a los dispositivos administrados por Intune y a los que cumplen con sus directivas.
 
 ## Configuración
 
-Para habilitar esta integración, no necesita realizar ninguna configuración en su inquilino de Intune. Necesitará proporcionar permisos a su servidor de Cisco ISE para tener acceso a su inquilino de Intune y, una vez que esto se realice, tiene lugar el resto de la configuración en su servidor de Cisco ISE. En este artículo se proporcionan instrucciones sobre cómo proporcionar permisos a su servidor de ISE para tener acceso a su inquilino de Intune. 
+Para habilitar esta integración, no necesita realizar ninguna configuración en su inquilino de Intune. Necesitará proporcionar permisos a su servidor de Cisco ISE para tener acceso a su inquilino de Intune y, una vez que esto se realice, tiene lugar el resto de la configuración en su servidor de Cisco ISE. En este artículo se proporcionan instrucciones sobre cómo proporcionar permisos a su servidor de ISE para tener acceso a su inquilino de Intune.
 
 ### Paso 1: Administrar los certificados
-1. En la consola de Azure Active Directory (AAD), exporte el certificado. 
+1. En la consola de Azure Active Directory (AAD), exporte el certificado.
 
     #### Internet Explorer 11
-        
+
     a. Ejecute Internet Explorer como administrador e inicie sesión en la consola de AAD.
-  
+
     b. Elija el icono de bloqueo en la barra de direcciones y elija **Ver certificado**.
-    
+
     c. En la pestaña **Detalles** de las propiedades del certificado, elija **Copiar a archivo**.
 
-    d. En la página **Asistente para exportación de certificados**, elija **Siguiente**. 
+    d. En la página **Asistente para exportación de certificados**, elija **Siguiente**.
 
     e. En la página **Formato de archivo de exportación**, deje el valor predeterminado, **DER binario codificado X.509 (.CER)** y elija **Siguiente**.  
 
     f. En la página **Archivo que se va a exportar**, elija **Examinar** para seleccionar una ubicación en la que guardar el archivo y proporcione un nombre de archivo. Aunque parezca que está eligiendo un archivo que se va a exportar, realmente está poniendo nombre al archivo en el que se guardará el certificado exportado. Elija **Siguiente** &gt; **Finalizar**.
 
     #### Safari
-    
+
     a. Inicie sesión en la consola de AAD.
 
     b. Elija el icono de bloqueo &gt; **Más información**.
-    
+
     c. Elija **Ver certificado** &gt; **Detalles**.
 
     d. Elija el certificado y, después, elija **Exportar**.  
@@ -57,7 +57,7 @@ Para habilitar esta integración, no necesita realizar ninguna configuración en
     > [!IMPORTANT]
     > Compruebe la fecha de expiración del certificado, ya que tendrá que exportar e importar un certificado nuevo cuando este expire.
 
-    
+
 
 2. Desde la consola de ISE, importe el certificado de Intune (el archivo que ha exportado) en el almacén de **Certificados de confianza**.
 3. En la consola de ISE, vaya a **Administración** > **Certificados** > **Certificados de sistema**.
@@ -76,7 +76,7 @@ Para habilitar esta integración, no necesita realizar ninguna configuración en
 6. Proporcione permisos a la aplicación para la API de Microsoft Graph y Microsoft Intune.
     1. Para Microsoft Graph, elija lo siguiente:
         - **Permisos de la aplicación**: leer datos de directorio
-        - **Permisos delegados**: 
+        - **Permisos delegados**:
             - tener acceso a los datos de usuario en cualquier momento
           - Iniciar la sesión de usuarios
    2. Para la API de Microsoft Intune, en **Permisos de la aplicación**, elija **Obtener cumplimiento y estado del dispositivo de Intune**.
@@ -90,8 +90,8 @@ Para habilitar esta integración, no necesita realizar ninguna configuración en
 |Actualizar el código con el identificador de cliente|Identificador de cliente|
 
 
-### Paso 3: Configurar las opciones de ISE 
-2. En la consola de administración de ISE, proporcione estos valores de configuración: 
+### Paso 3: Configurar las opciones de ISE
+2. En la consola de administración de ISE, proporcione estos valores de configuración:
   - **Tipo de servidor**: Mobile Device Manager
   - **Tipo de autenticación**: OAuth: credenciales de cliente
   - **Detección automática**: Sí
@@ -112,12 +112,12 @@ En esta tabla se enumera la información compartida entre su inquilino de Intune
 |serialNumber|El número de serie del dispositivo. Se aplica solo a dispositivos iOS.|
 |IMEI|El IMEI (15 dígitos decimales: 14 dígitos más un dígito de control) o IMEISV (16 dígitos) incluye información sobre el origen, el modelo y el número de serie del dispositivo. La estructura del IMEI/SV se especifica en 3GPP TS 23.003. Se aplica solo a dispositivos con tarjetas SIM).|
 |udid|El único identificador de dispositivo; una secuencia de 40 letras y números que es específica de los dispositivos iOS.|
-|MEID|Identificador de equipo móvil; un identificador único global que identifica una pieza física de un equipo de estación móvil de CDMA. El formato de número se define mediante el informe 3GPP2 S. R0048 pero en términos prácticos, puede verse como un IMEI pero con dígitos hexadecimales. Un MEID tiene una longitud de 56 bits (14 dígitos hexadecimales). Consiste en tres campos, incluidos un código regional de 8 bits (RR), un código de fabricante de 24 bits y un número de serie asignado por el fabricante de 24 bits.| 
+|MEID|Identificador de equipo móvil; un identificador único global que identifica una pieza física de un equipo de estación móvil de CDMA. El formato de número se define mediante el informe 3GPP2 S. R0048 pero en términos prácticos, puede verse como un IMEI pero con dígitos hexadecimales. Un MEID tiene una longitud de 56 bits (14 dígitos hexadecimales). Consiste en tres campos, incluidos un código regional de 8 bits (RR), un código de fabricante de 24 bits y un número de serie asignado por el fabricante de 24 bits.|
 |osVersion| Versión de sistema operativo del dispositivo.
 |modelo|Modelo del dispositivo.
 |fabricante|Fabricante del dispositivo.
 |azureDeviceId| El identificador del dispositivo después de que haya unido el lugar de trabajo a Azure Active Directory. Será un GUID vacío para los dispositivos que no están unidos.|
-|lastContactTimeUtc|La fecha y la hora en que el dispositivo se ha comprobado por última vez con el servicio de administración de Intune. 
+|lastContactTimeUtc|La fecha y la hora en que el dispositivo se ha comprobado por última vez con el servicio de administración de Intune.
 
 
 ## Experiencia del usuario
@@ -131,7 +131,7 @@ Cuando el usuario decide inscribirlo, se le redirige al proceso de inscripción 
 - [Inscriba el dispositivo Android en Intune](/intune/enduser/enroll-your-device-in-Intune-android)</br>
 - [Inscriba el dispositivo iOS en Intune](/intune/enduser/enroll-your-device-in-intune-ios)</br>
 - [Inscribir el dispositivo Mac OS X en Intune](/intune/enduser/enroll-your-device-in-intune-mac-os-x)</br>
-- [Inscriba el dispositivo Windows en Intune](/intune/enduser/enroll-your-device-in-intune-windows)</br> 
+- [Inscriba el dispositivo Windows en Intune](/intune/enduser/enroll-your-device-in-intune-windows)</br>
 
 Existe también un [conjunto descargable de instrucciones de inscripción](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) que puede usar para crear instrucciones personalizadas para su experiencia de usuario.
 
@@ -142,7 +142,6 @@ Existe también un [conjunto descargable de instrucciones de inscripción](https
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
