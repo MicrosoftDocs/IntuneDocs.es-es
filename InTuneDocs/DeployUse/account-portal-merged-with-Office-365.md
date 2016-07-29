@@ -1,36 +1,13 @@
 ---
-title: "El portal de cuentas se combinó con el portal de administración de Office 365 | Microsoft Intune"
-description: 
-keywords: 
-author: NathBarn
-manager: jeffgilb
-ms.date: 05/26/2016
-ms.topic: article
-ms.prod: 
-ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 80f7d796-ad0e-4a50-a6e2-cdc52e7eb57e
+redirect_url: http://aka.ms/SubManagement
 translationtype: Human Translation
-ms.sourcegitcommit: 928b79530ac278f78356f8d1ef9f267077634b5b
-ms.openlocfilehash: 505e446125c938a9a978eb2908cfa0873ed66fcc
-
+ms.sourcegitcommit: 0526d337cf63add82caf5c67a7f01a93e7b1d70b
+ms.openlocfilehash: 6f486f1e899e7dc16911f722c0fc728dfc7a915c
 
 ---
 
-# El portal de cuentas de Intune se ha combinado con el portal de administración de Office 365
-
-El año pasado se comenzó a migrar la funcionalidad del portal de cuentas de Intune al portal de administración de Office 365. La migración ya ha finalizado y el portal de cuentas de Intune se ha retirado.
-
-Ahora se administran usuarios y grupos en las pestañas **Usuarios** y **Grupos**, respectivamente, mientras que la compra y administración de suscripciones están disponibles al iniciar sesión en **Facturación** en el [portal de administración de Office 365](https://portal.office.com/Admin/Default.aspx). Para iniciar sesión en el portal de Office 365, use sus credenciales de Intune existentes.
-
-Según cómo adquiriera el producto, accederá a las descargas de software en el portal de licencias por volumen o en [Microsoft Online Services - Portal del cliente](http://go.microsoft.com/fwlink/?LinkId=259567).
-
-Asegúrese de actualizar los marcadores.
-
-Obtenga más información sobre la migración en el [blog de Microsoft Intune](https://blogs.technet.microsoft.com/microsoftintune/2015/09/01/intune-and-ems-subscriptions-now-available-in-the-office-365-portal/) o vaya directamente al nuevo [portal de administración de Office 365](https://portal.office.com/Admin/Default.aspx) en https://portal.office.com/Admin/Default.aspx con sus credenciales actuales.
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 
