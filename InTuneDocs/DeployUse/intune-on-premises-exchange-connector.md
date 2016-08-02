@@ -1,19 +1,20 @@
 ---
-title: Instalar Microsoft Intune Exchange Connector para Exchange local | Microsoft Intune
-description: 
+title: Exchange Connector para EAS local | Microsoft Intune
+description: "Use la herramienta Connector para habilitar la comunicación entre la consola de administración de Intune y Exchange Server local para Exchange ActiveSync MDM."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
-ms.reviewer: jeffgilb
+ms.reviewer: muhosabe
 ms.suite: ems
-ms.sourcegitcommit: 8c1f4f209c5ec704290882b8f6f71e0b1b01d21c
-ms.openlocfilehash: 45f815ea379007b75316552d34f5bd8669b2ccef
+translationtype: Human Translation
+ms.sourcegitcommit: 1e0d05a4f229e2a8e72d1d60021b159f12dfa0d1
+ms.openlocfilehash: 233aae987467a574c34aa06168a3c6d59eab663c
 
 
 ---
@@ -36,7 +37,6 @@ En la siguiente tabla se indican los requisitos del equipo en el que se instala 
 |Software adicional|El equipo que hospede el conector debe tener una instalación completa de Microsoft .NET Framework 4 y Windows PowerShell 2.0.|
 |Red|El equipo en el que se instala el conector debe estar en un dominio que tenga una relación de confianza con el dominio que hospeda Exchange Server.<br /><br />El equipo requiere configuraciones que le permitan obtener acceso al servicio de Intune a través de firewalls y servidores proxy mediante los puertos 80 y 443. Entre los dominios usados por Intune están manage.microsoft.com, &#42;manage.microsoft.com y &#42;.manage.microsoft.com.|
 |Hosted Exchange configurado y en ejecución|Consulte [Exchange Server 2016](https://technet.microsoft.com/library/mt170645.aspx) para obtener más información. |
-|Establecer la entidad de administración de dispositivos móviles en Intune|[Establecer la entidad de dispositivos móviles en Intune](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority)|
 
 ### Requisitos del cmdlet de Exchange
 
@@ -58,16 +58,14 @@ Debe crear una cuenta de usuario de Active Directory que sea utilizada por Intun
 
 ## Descargar el paquete de instalación de software de On-Premises Exchange Connector
 
-1. En un sistema operativo compatible con On-Premises Exchange Connector, abra la [consola de administración de Microsoft Intune](http://manage.microsoft.com) (http://manage.microsoft.com) con una cuenta de administrador en el inquilino de Exchange que tenga una licencia para usar Exchange Server.
+1. En un sistema operativo Windows Server compatible con On-Premises Exchange Connector, abra la [consola de administración de Microsoft Intune](http://manage.microsoft.com) (http://manage.microsoft.com) con una cuenta de administrador en el inquilino de Exchange que tenga una licencia para usar Exchange Server.
 ![Abrir Configurar conexión de Exchange](../media/ExchangeConnector.gif)
 
-2.  En el panel de accesos directos del área de trabajo, haga clic en **ADMIN**.
+2.  En el panel de accesos directos del área de trabajo, elija **Administración**, vaya a **Administración de dispositivos móviles** > **Microsoft Exchange** y luego elija **Configurar conexión de Exchange**.
 
-3.  En el panel de navegación, en **Administración de dispositivos móviles**, expanda **Microsoft Exchange** y elija **Configurar conexión de Exchange**.
+3.  En la página **Configurar conexión de Exchange**, haga clic en **Descargar On-Premises Connector**.
 
-4.  En la página **Configurar conexión de Exchange**, haga clic en **Descargar On-Premises Connector**.
-
-5.  On-Premises Exchange Connector se encuentra en una carpeta comprimida (.zip) que se puede abrir o guardar. En el cuadro de diálogo **Descarga de archivos**, haga clic en **Guardar** para almacenar la carpeta comprimida en una ubicación segura.
+4.  On-Premises Exchange Connector se encuentra en una carpeta comprimida (.zip) que se puede abrir o guardar. En el cuadro de diálogo **Descarga de archivos**, haga clic en **Guardar** para almacenar la carpeta comprimida en una ubicación segura.
 
 > [!IMPORTANT]
 > No cambie el nombre ni mueva los archivos de la carpeta On-Premises Exchange Connector. Si lo hace, se interrumpirá la instalación.
@@ -133,6 +131,6 @@ También puede comprobar la fecha y la hora del último intento de sincronizaci�
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 
