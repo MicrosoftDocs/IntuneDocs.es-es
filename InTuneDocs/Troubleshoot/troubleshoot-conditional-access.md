@@ -2,7 +2,7 @@
 title: Solucionar problemas de acceso condicional|Microsoft Intune
 description: "Qué hacer cuando los usuarios no pueden obtener acceso a los recursos a través del acceso condicional de Intune."
 keywords: 
-author: nbigman
+author: karaman
 manager: angrobe
 ms.date: 07/24/2016
 ms.topic: article
@@ -13,8 +13,8 @@ ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
-ms.openlocfilehash: f5feb4d660693344cf7df38402f14c60007284b4
+ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
+ms.openlocfilehash: a04037453382420540dbec721179ccb623df0829
 
 
 ---
@@ -158,6 +158,6 @@ Si esta información para solucionar problemas no le ha ayudado, póngase en con
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

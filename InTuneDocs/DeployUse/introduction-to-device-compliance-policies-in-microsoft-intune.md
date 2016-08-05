@@ -3,7 +3,7 @@ title: Directivas de cumplimiento de dispositivos | Microsoft Intune
 description: "En este tema se explican los conceptos necesarios para entender qué son las directivas de cumplimiento de dispositivos y cómo funcionan."
 keywords: 
 author: karthikaraman
-manager: arob98
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
-ms.openlocfilehash: dfa123266222004b6c6e4f7b21446b96be444d0b
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: b17a47a2924ef36df69db2aa852f0b225471ecd1
 
 
 ---
@@ -62,6 +62,6 @@ En la siguiente tabla se enumeran los tipos de dispositivos compatibles con las 
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

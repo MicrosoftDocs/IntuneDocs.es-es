@@ -5,7 +5,7 @@ description: "Cree directivas que controlen la configuración y las característ
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6e3e81f37e677a016ac49240cc70602a568afcd5
-ms.openlocfilehash: 9385ca0e5aa9dd8fc2daf79c57b47951bcd5c0cb
+ms.sourcegitcommit: 8465ab2ead21b825141c1aa6e77c02a9b7061a66
+ms.openlocfilehash: 5e7ba0d4546c13106e32359c9578a6f0a49d6de7
 
 
 ---
@@ -197,65 +197,16 @@ Esta capacidad está pensada para que se puedan implementar las opciones de conf
     |**OMA-URI (distingue mayúsculas de minúsculas)**|Especifique el OMA-URI para el que desee suministrar un valor.|
     |**Valor**|Especifique el valor asociado con el OMA-URI especificado anteriormente.|
 
-### Ejemplo: configurar un perfil de Wi-Fi personalizado con una clave precompartida
-Aunque Intune admite perfiles de Wi-Fi para dispositivos Android, actualmente esta característica no admite la inclusión de una clave precompartida en la configuración. En este ejemplo, aprenderá a crear una directiva personalizada de Android que cree un perfil de Wi-Fi con una clave precompartida en el dispositivo Android.
+### Ejemplos
 
-#### Para crear un perfil de Wi-Fi con una clave precompartida
-
-1.  Asegúrese de que los usuarios usen la versión más reciente de la aplicación [Portal de empresa de Intune](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) para Android.
-
-2.  Cree una directiva personalizada de Android y agregue los siguientes valores:
-
-|Nombre de la configuración|Detalles|
-|----------------|--------------------|
-|**Nombre de la configuración**|Especifique un nombre de su elección para el valor.|
-|**Descripción del valor**|Especifique una descripción para el valor.|
-|**Tipo de datos**|Seleccione **Cadena (XML)**.|
-|**OMA-URI**|Escriba lo siguiente: ./Vendor/MSFT/WiFi/Profile/*&lt;su perfil de Wi-Fi&gt;*/Settings|
-
-3.  Para **Valor**, copie y pegue el siguiente código XML:
-
-    ```
-    <!--
-    WEP Wifi Profile
-                    <Name of wifi profile> = Name of profile
-                    <SSID of wifi profile> = Plain text version of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
-                    <WEP password> = Password to connect to the network
-    -->
-    <WLANProfile
-    xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
-      <name><Name of wifi profile></name>
-      <SSIDConfig>
-        <SSID>
-          <name><SSID of wifi profile></name>
-        </SSID>
-      </SSIDConfig>
-      <connectionType>ESS</connectionType>
-      <MSM>
-        <security>
-          <authEncryption>
-            <authentication>open</authentication>
-            <encryption>WEP</encryption>
-            <useOneX>false</useOneX>
-          </authEncryption>
-          <sharedKey>
-            <keyType>networkKey</keyType>
-            <protected>false</protected>
-            <keyMaterial><WEP password></keyMaterial>
-          </sharedKey>
-          <keyIndex>0</keyIndex>
-        </security>
-      </MSM>
-    </WLANProfile>
-    ```
-
-4.  Cuando haya terminado, guarde la directiva e impleméntela en los dispositivos Android necesarios. El nuevo perfil de Wi-Fi aparecerá en la lista de conexiones del dispositivo.
+- [Crear un perfil de Wi-Fi con una clave precompartida](pre-shared-key-wi-fi-profile.md)
+- [Usar una directiva personalizada para crear un perfil de VPN por aplicación para dispositivos Android](per-app-vpn-for-android-pulse-secure.md)
 
 ### Consulte también
 [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

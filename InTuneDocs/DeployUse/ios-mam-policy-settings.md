@@ -3,7 +3,7 @@ title: "Configuración de directiva MAM de iOS | Microsoft Intune"
 description: "En este tema se describe la configuración de directiva de administración de aplicaciones móviles para dispositivos iOS."
 keywords: 
 author: karthikaraman
-manager: arob98
+manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
-ms.openlocfilehash: 5f13b6b9df7218734e8b015e5ddb3f6ab2698cac
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: ba258bfb3140ffc79aa38ef2f46497346cdc6bfa
 
 
 ---
@@ -114,6 +114,6 @@ En los dispositivos iOS, puede permitir que los usuarios se identifiquen mediant
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

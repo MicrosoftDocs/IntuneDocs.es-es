@@ -3,7 +3,7 @@ title: "Protección de los datos de la aplicación mediante directivas MAM | Mic
 description: "En este tema se explica cómo pueden ayudar las directivas de administración de aplicaciones móviles a proteger los datos de su empresa, evitar la pérdida de datos y separar la información personal y profesional."
 keywords: 
 author: karthikaraman
-manager: arob98
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2038ed6219a94dc4285891d71ce00fd51310f3e3
-ms.openlocfilehash: b4cc44885683be0f6ef414b630571f3216248876
+ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
+ms.openlocfilehash: 6163f2b2a1c562e5315785b8b4c486fe2347f89d
 
 
 ---
@@ -133,6 +133,6 @@ Todas las aplicaciones móviles de Office admiten varias identidades.
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

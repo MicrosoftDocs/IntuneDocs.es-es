@@ -3,7 +3,7 @@ title: "Inscripción con el administrador de inscripción de dispositivos | Micr
 description: "La cuenta de administrador de inscripción de dispositivos (DEM) puede administrar un gran número de dispositivos móviles corporativos y compartidos con una única cuenta de usuario."
 keywords: 
 author: NathBarn
-manager: arob98
+manager: angrobe
 ms.date: 07/12/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f6f98d582ce9a686ca02682a9066d8b2162d6ab
-ms.openlocfilehash: d126bbfc40cada71458b03c23e571490b4af4d44
+ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
+ms.openlocfilehash: 450a5764005643a2f890780530d1f2880a4e517b
 
 
 ---
@@ -93,6 +93,6 @@ La eliminación de un administrador de inscripción de dispositivos no afecta a 
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

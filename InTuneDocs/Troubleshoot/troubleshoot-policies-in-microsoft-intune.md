@@ -2,19 +2,19 @@
 title: "Directivas de solución de problemas | Microsoft Intune"
 description: "Solucionar problemas de configuración de directivas."
 keywords: 
-author: Nbigman
+author: robstack
 manager: angrobe
-ms.date: 05/26/2016
+ms.date: 08/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
-ms.reviewer: jeffgilb
+ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
-ms.openlocfilehash: 06468bd7d6cdcf84da269c8132b37240ef1f2197
+ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
+ms.openlocfilehash: 98f15f304d5d372d05abfdd296ddff1ef98dd3eb
 
 
 ---
@@ -77,10 +77,6 @@ Para los dispositivos de Windows que no sean de MDM, los errores de directivas d
 
 4.  Mueva el control deslizante de la notificación a la opción de configuración predeterminada.
 
-## Error 0x87D1FDE8 del dispositivo KNOX
-**Problema**: después de crear e implementar un perfil de correo electrónico Exchange Active Sync de Samsung KNOX para varios dispositivos Android, estos informan del error **0x87D1FDE8** o del **error de corrección** en las propiedades del dispositivo &gt; pestaña de directivas.
-
-Revise la configuración de su perfil EAS de Samsung KNOX y la directiva de origen. Ya no se admite la opción de sincronización de notas de Samsung y no debe estar seleccionada en el perfil. Asegúrese de que los dispositivos han tenido tiempo suficiente para procesar la directiva (hasta 24 horas).
 
 ## Alerta: error al guardar las reglas de acceso en Exchange
 **Problema**: recibe la alerta **Error al guardar las reglas de acceso en Exchange**  en la consola de administración.
@@ -113,6 +109,6 @@ Si esta información para solucionar problemas no le ha ayudado, póngase en con
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

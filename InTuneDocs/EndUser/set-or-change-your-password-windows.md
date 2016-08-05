@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 ROBOTS: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 791d9e4d5817acfa8b11b1f5ed570df5e38718d7
+ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
+ms.openlocfilehash: 0bfb636b68aa691234b51264d261888322dba11c
 
 
 ---
@@ -26,19 +26,19 @@ El administrador de TI puede establecer más de un requisito para las contraseñ
 
 Si tiene problemas para establecer una contraseña que cumpla todos los requisitos, póngase en contacto con el administrador de TI para obtener ayuda.
 
-## Para establecer la contraseña en Windows Phone 8 o 8.1:
-
-1. En la **pantalla de inicio**, pulse **Configuración** y luego seleccione **Pantalla de bloqueo**.
-2. Desplácese hacia abajo hasta **Contraseña** y deslice la barra **Contraseña** hasta **Activar**.
-3. Escriba la nueva contraseña en el campo **Nueva contraseña** y luego vuelva a escribirla en el campo **Confirmar contraseña**.
-4. Pulse **Listo**.
-
 ## Para cambiar la contraseña en Windows Phone 8 o 8.1:
 
 1. En la **pantalla de inicio**, pulse **Configuración** y luego seleccione **Pantalla de bloqueo**.
 2. Desplácese hacia abajo hasta **Contraseña** y pulse **Cambiar contraseña**.
 3. Escriba la contraseña actual en el campo **Contraseña actual**.
 4. Escriba la nueva contraseña en el campo **Nueva contraseña** y luego vuelva a escribirla en el campo **Confirmar contraseña**.
+4. Pulse **Listo**.
+
+## Para establecer la contraseña en Windows Phone 8 o 8.1:
+
+1. En la **pantalla de inicio**, pulse **Configuración** y luego seleccione **Pantalla de bloqueo**.
+2. Desplácese hacia abajo hasta **Contraseña** y deslice la barra **Contraseña** hasta **Activar**.
+3. Escriba la nueva contraseña en el campo **Nueva contraseña** y luego vuelva a escribirla en el campo **Confirmar contraseña**.
 4. Pulse **Listo**.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
@@ -48,6 +48,6 @@ Si tiene problemas para establecer una contraseña que cumpla todos los requisit
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 
