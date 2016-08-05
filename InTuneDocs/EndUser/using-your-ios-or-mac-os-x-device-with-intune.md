@@ -1,10 +1,10 @@
 ---
 title: Using your iOS or Mac OS X device with Intune (Usar un dispositivo iOS o Mac OS X con Intune) | Microsoft Intune
-description: 
+description: "Lista de vínculos a tareas que puede realizar en el dispositivo móvil iOS o Mac OS X cuando este está inscrito en Intune"
 keywords: 
 author: Staciebarker
-manager: jeffgilb
-ms.date: 06/03/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,15 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 24573d04c319e359b810b6fdf607b44db19306e9
-ms.openlocfilehash: bf298bace896a666d1f2992f2921ebf5a15f05f7
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: c91355b77850acbb76cd028bffb231e2ba1a5174
 
 
 ---
 
 # Using your iOS or Mac OS X device with Intune
 
-Use estos pasos para las tareas que necesite realizar en su dispositivo iOS o Mac OS X cuando su empresa use Microsoft Intune.
+Esta página contiene vínculos a todas las tareas que los usuarios finales pueden realizar en sus dispositivos administrados por Intune. Los administradores de TI pueden hacer referencia a esta información para ver los pasos que siguen los usuarios para realizar diversas tareas, que se agrupan en categorías: información relacionada con la inscripción, tareas de administración y problemas de cumplimiento.
 
 ## Instalación de aplicaciones del Portal de empresa e inscripción a Intune
 
@@ -50,7 +50,7 @@ La información de esta sección le ayudará con las acciones que puede realizar
 
 La información de esta sección le ayudará a solucionar los problemas que pueda encontrar cuando el dispositivo iOS está inscrito en Intune.
 
-- [Cómo volver a conectar un dispositivo iOS en riesgo](how-to-reconnect-a-compromised-ios-device)
+- [Cómo volver a conectar un dispositivo iOS en riesgo](how-to-reconnect-a-compromised-ios-device.md)
 - [Enviar errores al administrador de TI](send-errors-to-your-it-admin-ios.md)
 - [Obtiene un error mientras usa la aplicación Portal de empresa](you-get-an-error-while-using-the-company-portal-app-ios.md)
 - [Si observa errores al intentar inscribir un dispositivo en Intune](you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md)
@@ -61,8 +61,6 @@ La información de esta sección le ayudará a solucionar los problemas que pued
 
 
 
-
-
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO4-->
 
 

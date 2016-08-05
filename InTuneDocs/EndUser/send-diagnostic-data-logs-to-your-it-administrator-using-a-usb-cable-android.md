@@ -3,28 +3,31 @@ title: "Enviar registros de datos de diagnóstico al administrador de TI mediant
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c46775c2-9d2a-4a88-89f0-4104a462b898
+ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e52ebdd62ca68f1d9226def654961075400184a8
-ms.openlocfilehash: 7ad4f4b726f093a14663fc5c4dbadf5603965075
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 6cd0c267dc93d08369ecfb10939af8140b3c57e9
 
 
 ---
 
 
-# Enviar registros de datos de diagnóstico al administrador de TI mediante un cable USB
+# Send diagnostic data logs to your IT administrator using a USB cable (Enviar registros de datos de diagnóstico al administrador de TI mediante un cable USB)
 
-Si está usando un equipo en lugar de un dispositivo móvil y quiere enviar los registros de datos de su dispositivo móvil para que el administrador de TI pueda determinar y corregir el problema, siga estos pasos:
+Si desea enviar los registros de datos a su administrador de TI para obtener ayuda con un problema, puede enviar los registros mediante un equipo y un cable USB en lugar de hacerlo desde su dispositivo móvil. Le mostramos cómo:
 
-1.  Antes de comenzar, asegúrese de que tiene la dirección de correo electrónico de su administrador de TI. Normalmente, se muestra en el sitio web del Portal de empresa o en la aplicación de Portal de empresa.
+1.  En la pantalla de error, puntee **Enviar información**. Cuando aparezca un mensaje preguntando qué método desea utilizar para enviar los registros, elija la opción que guardará los archivos en el dispositivo.
+
+2.  Antes de comenzar, asegúrese de que tiene la dirección de correo electrónico de su administrador de TI, que normalmente se incluye en el [sitio web del portal de empresa](http://portal.manage.microsoft.com) o en la aplicación del portal de empresa.
 
 2.  Use un cable USB para conectar el dispositivo Android a un equipo.
 
@@ -38,6 +41,7 @@ Si está usando un equipo en lugar de un dispositivo móvil y quiere enviar los 
 [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

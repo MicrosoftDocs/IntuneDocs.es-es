@@ -1,20 +1,20 @@
 ---
-title: "Configurar la administración de Windows 10 Mobile y Windows Phone con Microsoft Intune | Microsoft Intune"
-description: 
+title: "Configurar la administración de Windows 10 Mobile y Windows Phone | Microsoft Intune"
+description: "Habilite la administración de dispositivos móviles (MDM) para dispositivos Windows 10 Mobile o Windows Phone con Microsoft Intune."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
-ms.reviewer: jeffgilb
+ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c5d1b53f09ce2f475cd934e36ddb19d019737431
-ms.openlocfilehash: e67a5be851b68d87a4cdda871824cf0ecb14579e
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: cc928e4facf592ca0f7398b374242a7a07ae193e
 
 
 ---
@@ -29,7 +29,7 @@ En la mayoría de los escenarios, los usuarios pueden instalar la aplicación de
 
 2.  **Establecer un alias DNS para la dirección del servidor de inscripción** (opcional)
 
-    La creación de un alias DNS (tipo de registro CNAME) facilita a los usuarios la inscripción de sus dispositivos. Si no crea un alias DNS, el usuario tendrá que hacer lo siguiente:
+    La creación de un alias DNS (tipo de registro CNAME) facilita a los usuarios la inscripción de sus dispositivos. Aunque la entrada DNS de CNAME es opcional para la inscripción de dispositivos Windows, se recomienda crear uno o más registros cuando sea necesario para facilitar el proceso de inscripción de dispositivos Windows. Si no se encuentra ningún registro CNAME, se solicita al usuario que escriba el nombre del servidor MDM manualmente.
 
   1.  Debe crear registros de recursos DNS **CNAME** para el dominio de su empresa. Por ejemplo, si el sitio web de la empresa es contoso.com, debe crear un CNAME en DNS que redirija EnterpriseEnrollment.contoso.com a manage.microsoft.com. Si hay más de un dominio comprobado, debe crear un registro CNAME para cada dominio. Los registros de recursos CNAME deben contener la siguiente información:
 
@@ -56,6 +56,6 @@ No es necesario ningún trabajo adicional a menos que vaya a implementar el port
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

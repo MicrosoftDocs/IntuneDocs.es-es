@@ -3,8 +3,8 @@ title: Bloquear un dispositivo de forma remota desde el sitio web del Portal de 
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 48681950f23aaf4ce13418699fd80a5914f13e89
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 17f4b2a88fdd5976be842b22881f08e6e29e5343
 
 
 ---
@@ -43,15 +43,19 @@ Para usar Bloqueo remoto para bloquear el dispositivo:
 
 2.  Pulse **Bloqueo remoto**.
 
+    ![remote-lock-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+
+3.  Lea el mensaje de advertencia que indica que va a bloquear el dispositivo y, a continuación, puntee **Bloqueo remoto** para que el sitio web del portal de empresa intente bloquear el dispositivo.
+
     Después de puntear en **Bloqueo remoto**, aparece el estado "Bloqueo remoto pendiente".  Cuando el bloqueo remoto se realiza correctamente, el estado cambia a "El bloqueo remoto se realizó correctamente".
 
     El estado Bloqueo remoto se muestra en tres lugares:
 
-    * El área de notificaciones del sitio web. 
+    * El área de notificaciones del sitio web.
     * La página de detalles del dispositivo.
     * El icono que muestra el nombre del dispositivo en la sección Mis dispositivos de la página.
 
-    Si ve una notificación "Error de bloqueo remoto", espere unos minutos y vuelva a intentar bloquear el dispositivo. Después de puntear para intentarlo de nuevo, el estado vuelve a cambiar a "Bloqueo remoto pendiente". 
+    Si ve una notificación "Error de bloqueo remoto", espere unos minutos y vuelva a intentar bloquear el dispositivo. Después de puntear para intentarlo de nuevo, el estado vuelve a cambiar a "Bloqueo remoto pendiente".
 
     Si un reintento no funciona, póngase en contacto con el administrador de TI para obtener ayuda. Si encuentra el dispositivo y quiere desbloquearlo después de usar Bloqueo remoto, simplemente escriba el código de acceso.
 
@@ -61,6 +65,7 @@ Para usar Bloqueo remoto para bloquear el dispositivo:
 [Usar el sitio web del Portal de empresa de Intune](using-the-intune-company-portal-website.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

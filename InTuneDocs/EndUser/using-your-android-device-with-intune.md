@@ -1,10 +1,10 @@
 ---
 title: Uso de un dispositivo Android con Intune | Microsoft Intune
-description: 
+description: "Lista de vínculos a tareas que puede realizar en el dispositivo móvil Android cuando este está inscrito en Intune"
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 06/14/2016
+manager: angrobe
+ms.date: 07/26/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 24573d04c319e359b810b6fdf607b44db19306e9
-ms.openlocfilehash: 4622897f5e32514ad80b5000732cf6835224160a
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 3dfe3f8a0a8538d14acddb9a7c9541bae928b6e6
 
 
 ---
@@ -22,7 +22,7 @@ ms.openlocfilehash: 4622897f5e32514ad80b5000732cf6835224160a
 
 # Uso de un dispositivo Android con Intune
 
-Use estos pasos para las tareas que necesite realizar en su dispositivo Android cuando su empresa use Microsoft Intune.
+Esta página contiene vínculos a todas las tareas que los usuarios finales pueden realizar en sus dispositivos administrados por Intune. Los administradores de TI pueden hacer referencia a esta información para ver los pasos que siguen los usuarios para realizar diversas tareas, que se agrupan en categorías: información relacionada con la inscripción, tareas de administración y problemas de cumplimiento.
 
 ## Instalación de aplicaciones del Portal de empresa e inscripción a Intune
 
@@ -67,9 +67,6 @@ La información de esta sección le ayudará a solucionar los problemas que pued
 
 
 
-
-
-
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,18 +1,19 @@
 ---
-title: "Su suscripción de pago a Microsoft Intune o Enterprise Mobility podría incluir una licencia para usar algún software descargable | Microsoft Intune"
-description: 
+title: Software descargable | Microsoft Intune
+description: "Revise el software que está disponible para su descarga que podría estar disponible con su suscripción de Intune o EMS."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 06/08/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: 
 ms.technology: 
 ms.assetid: 9d031fa7-9c07-48c5-b915-6525aea54870
+ms.reviewer: amyro
 translationtype: Human Translation
-ms.sourcegitcommit: 4b4371fd7c505db75e18505160de88456fceece2
-ms.openlocfilehash: de8d822c9df7aa0235a998a64b412afd6fc48bd5
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: eb85109bdb406dc452936b8b9c366615672fe8b4
 
 
 ---
@@ -40,6 +41,6 @@ Si se ha registrado para una evaluación, puede obtener las versiones de evaluac
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

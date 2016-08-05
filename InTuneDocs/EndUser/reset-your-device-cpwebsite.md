@@ -3,8 +3,8 @@ title: Restablecer un dispositivo desde el sitio web del Portal de empresa | Mic
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 87dc788f09808c100b0b64c1fa0779630b70aae5
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 8f65861373339a50cfc7dd6756baf3e091409044
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 87dc788f09808c100b0b64c1fa0779630b70aae5
 
 Si pierde o le roban un dispositivo, es posible que quiera restablecerlo a los valores predeterminados de fábrica para evitar el acceso no autorizado a los datos. Puede restablecer el dispositivo de forma remota mediante el [sitio web del Portal de empresa](http://portal.manage.microsoft.com). El sitio web del Portal de empresa es una página web que puede usar para administrar equipos y dispositivos que haya inscrito en Intune y para realizar la mayoría de las tareas que se pueden realizar con la aplicación Portal de empresa.
 
-Si restablece el dispositivo, dejará de aparecer en el Portal de empresa y se restablecerá a los valores predeterminados de fábrica. 
+Si restablece el dispositivo, dejará de aparecer en el Portal de empresa y se restablecerá a los valores predeterminados de fábrica.
 
 Para restablecer el dispositivo:
 
@@ -33,7 +33,9 @@ Para restablecer el dispositivo:
 
 2.  Pulse en **Restablecer**.
 
-    ![restablecer-dispositivo](./media//iwp-1-tap-reset-passcode.png)
+    ![reset-device-option-on-company-portal-website](./media//iwp-screen-with-all-options.png)
+
+3. Lea el mensaje de advertencia que indica que está a punto de restablecer el dispositivo a la configuración predeterminada de fábrica y, a continuación, puntee en **Restablecer** para restablecer el dispositivo.
 
 Se ha restablecido el dispositivo.
 
@@ -44,6 +46,6 @@ Se ha restablecido el dispositivo.
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

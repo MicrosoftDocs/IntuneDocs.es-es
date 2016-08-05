@@ -1,10 +1,10 @@
 ---
 title: Configurar la infraestructura de certificados para SCEP | Microsoft Intune
-description: 
+description: Infraestructura para crear e implementar perfiles de certificado SCEP.
 keywords: 
 author: nbigman
-manager: jeffgilb
-ms.date: 05/16/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ca06fa26127935e08f35006730dd367fb8f6669
-ms.openlocfilehash: 942bdc4e1629a9d7e16d0994f27dab4424670a4f
+ms.sourcegitcommit: 5b9d201200d2b18553778ba2234831854658c6c2
+ms.openlocfilehash: 1f8e692e1938822342fda399df3832d2749de7c3
 
 ---
 # Configurar la infraestructura de certificados para SCEP
@@ -44,6 +44,8 @@ I
 Desde Internet a la red perimetral, permita el puerto 443 desde todos los host o direcciones IP de Internet al servidor SCEP.
 
 Desde la red perimetral a la red de confianza, permita todos los puertos y protocolos necesarios para el acceso a dominios en el servidor SCEP unido a dominio. El servidor SCEP necesita acceso a los servidores de certificados, los servidores DNS, los servidores de Configuration Manager y los controladores de dominio.
+
+Se recomienda publicar el servidor NDES a través de un proxy, como el [proxy de aplicación de Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/), [el proxy de acceso web](https://technet.microsoft.com/en-us/library/dn584107.aspx) o un proxy de terceros.
 
 
 ### <a name="BKMK_CertsAndTemplates"></a>Certificados y plantillas
@@ -347,6 +349,6 @@ Ya está listo para configurar perfiles de certificado, como se describe en [Con
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

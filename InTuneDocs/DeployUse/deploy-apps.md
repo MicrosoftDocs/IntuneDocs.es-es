@@ -1,10 +1,10 @@
 ---
 title: Implementar aplicaciones | Microsoft Intune
-description: 
+description: En este tema se explican los conceptos que es preciso conocer para empezar a implementar aplicaciones con Intune.
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 ms.reviewer: mghadial
 ms.suite: ems
-ms.sourcegitcommit: e6b995118e66fd146a68b49ce4decdcbd1fe3572
-ms.openlocfilehash: a68cb85602bd585539147c7d7d38c0d906f2b1f7
+translationtype: Human Translation
+ms.sourcegitcommit: c4a760b6362356a6bafa8b6acc69299647a5e0f3
+ms.openlocfilehash: 377597aabc03c020060e2851c6fc25e0c780ea51
 
 
 ---
@@ -26,18 +27,18 @@ En este tema se explican algunos de los conceptos que es preciso conocer para em
 ## Acciones de implementación de aplicaciones
 Al implementar aplicaciones, puede elegir una de las siguientes acciones de implementación:
 
--   **Instalación requerida:** la aplicación se instala en el dispositivo sin intervención por parte del usuario final.
+-   **Instalación requerida:** la aplicación se instala en el dispositivo sin intervención por parte del usuario.
 
     > [!TIP]
-    > [!TIP] En los dispositivos iOS que no estén en modo supervisado y en todos los dispositivos Android, el usuario debe aceptar la oferta de la aplicación antes de instalarla.
-    > 
-    >  Si un usuario final desinstala una aplicación que ha implementado como una instalación necesaria, Intune volverá a instalar automáticamente la aplicación tras el siguiente ciclo de inventario, que normalmente se produce cada 7 días.
+    > En los dispositivos iOS que no estén en modo supervisado y en todos los dispositivos Android, el usuario debe aceptar la oferta de la aplicación antes de instalarla.
+    >
+    >  Si un usuario desinstala una aplicación que ha implementado como una instalación necesaria, Intune volverá a instalar automáticamente la aplicación tras el siguiente ciclo de inventario, que normalmente se produce cada siete días.
 
--   **Instalación disponible:** la aplicación aparece en el portal de empresa y los usuarios finales pueden solicitar instalarla.
+-   **Instalación disponible:** la aplicación aparece en el portal de empresa y los usuarios pueden solicitar instalarla.
 
 -   **Desinstalar** : la aplicación se desinstala del dispositivo.
 
--   **No aplicable** : la aplicación no aparece en el portal de empresa y no está instalada en los dispositivos.
+-   **No aplicable**: La aplicación no aparece en el portal de empresa y no está instalada en los dispositivos.
 
 #### Saber qué acciones de implementación están disponibles para cada tipo de instalador
 
@@ -54,7 +55,7 @@ Al implementar aplicaciones, puede elegir una de las siguientes acciones de impl
 |Aplicación iOS administrada desde la tienda de aplicaciones (se implementa para un grupo de usuarios)|Sí|Sí|Sí|Sí|
 |Aplicación iOS administrada desde la tienda de aplicaciones (se implementa para un grupo de dispositivos)|Sí|No|Sí|Sí|
 > [!TIP]
-> [!TIP] Si, al implementar aplicaciones, selecciona grupos tanto de usuarios como de dispositivos, la aplicación solo se puede implementar como una **instalación disponible**.
+> Si, al implementar aplicaciones, selecciona grupos tanto de usuarios como de dispositivos, la aplicación solo se puede implementar como una **instalación disponible**.
 
 ## Conflictos de implementación
 Cuando un dispositivo recibe dos implementaciones, con la misma acción de implementación, se aplican las siguientes reglas:
@@ -63,7 +64,7 @@ Cuando un dispositivo recibe dos implementaciones, con la misma acción de imple
 
 -   Una acción de instalación tiene prioridad sobre una de desinstalación.
 
--   Si un dispositivo recibe una instalación necesaria y disponible, las acciones se combinan (la aplicación es necesaria y disponible; en otras palabras, el usuario final puede instalarla desde el portal de empresa antes de que comience la instalación necesaria).
+-   Si un dispositivo recibe una instalación requerida y una instalación disponible, ambas acciones se combinan. En otras palabras, el usuario puede instalar la aplicación disponible desde el portal de empresa antes de que comience la instalación requerida.
 
 
 ## Pasos siguientes
@@ -72,6 +73,6 @@ Obtenga información sobre cómo [implementar aplicaciones en Microsoft Intune](
 
 
 
-<!--HONumber=Jul16_HO2-->
+<!--HONumber=Jul16_HO4-->
 
 

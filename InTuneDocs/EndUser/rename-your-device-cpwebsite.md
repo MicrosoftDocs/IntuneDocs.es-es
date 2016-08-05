@@ -3,8 +3,8 @@ title: Cambiar el nombre de un dispositivo desde el sitio web del Portal de empr
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: 76c1e1be72fe14e293dbb6783814df79128b54f2
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: dc9d01cb24fbdd594c7f84b72d244d81a08d4384
 
 
 ---
@@ -31,7 +31,7 @@ Para cambiar el nombre del dispositivo:
 
 2.  Puntee en **Cambiar nombre**.
 
-    ![cambiar nombre-dispositivo](./media/iwp-1-tap-reset-passcode.png)
+    ![rename-device-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
 
 3.  En el cuadro donde aparece el nombre actual del dispositivo, escriba el nuevo nombre y puntee en el botón **Cambiar nombre**. El dispositivo aparece ahora con el nuevo nombre.
 
@@ -41,6 +41,7 @@ Para cambiar el nombre del dispositivo:
 [Usar el sitio web del Portal de empresa de Intune](using-the-intune-company-portal-website.md)
 
 
-<!--HONumber=Jul16_HO3-->
+
+<!--HONumber=Jul16_HO4-->
 
 

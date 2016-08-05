@@ -1,10 +1,11 @@
 ---
-title: "Configuración de directivas de configuración de Android y Samsung KNOX | Microsoft Intune"
-description: 
+
+title: "Configuración de directivas de Android y Samsung KNOX | Microsoft Intune"
+description: "Cree directivas que controlen la configuración y las características en los dispositivos Android que administra con Intune."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,43 +14,45 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 62beaec31a0cdc3c28fd3eed820a6771e42ef3e7
-ms.openlocfilehash: f4c0eccb0cd30daaba97e8f34eea69e3d0e8e0ad
+ms.sourcegitcommit: 6e3e81f37e677a016ac49240cc70602a568afcd5
+ms.openlocfilehash: 9385ca0e5aa9dd8fc2daf79c57b47951bcd5c0cb
 
 
 ---
 
 # Configuración de directivas de Android y Samsung KNOX en Microsoft Intune
 
+Intune proporciona una variedad de opciones generales integradas que puede configurar en los dispositivos Android. Además, puede especificar valores Open Mobile Alliance Uniform Resource Identifier (OMA-URI, identificador uniforme de recursos de Open Mobile Alliance) para crear una configuración personalizada que no esté disponible en Intune.
+
 ## Directiva de configuración general
 
-Use la **directiva de configuración general de Android** de Microsoft Intune para establecer las siguientes opciones:
+Use la **directiva de configuración general de Android** de Intune para configurar las opciones de:
 
--   **Configuración de seguridad de dispositivos móviles** : elija entre una lista de configuraciones predefinidas que permiten controlar una variedad de características y la funcionalidad en el dispositivo.
+-   **Configuración de seguridad de dispositivos móviles**: Elija entre una lista de configuraciones predefinidas que permiten controlar una variedad de características y la funcionalidad en el dispositivo.
 
 -   **Pantalla completa** (solo para dispositivos Samsung KNOX): permite bloquear un dispositivo para que solo funcionen determinadas características. Por ejemplo, puede permitir que un dispositivo ejecute solo una aplicación administrada que especifique, o puede deshabilitar los botones de volumen de un dispositivo. Esta configuración podría utilizarse para un modelo de demostración de un dispositivo o para un dispositivo que está dedicado a realizar solo una función, como un dispositivo de punto de venta.
 
--   **Aplicaciones compatibles y no compatibles**: especifique una lista de las aplicaciones compatibles y no compatibles de su empresa. En los dispositivos iOS y Android, el **informe de aplicaciones no conformes** puede utilizarse para comparar la conformidad de las aplicaciones especificadas en la lista con las aplicaciones que los usuarios han instalado (pero en realidad no pueden impedir la instalación de la aplicación).
+-   **Aplicaciones compatibles y no compatibles**: Especifique una lista de las aplicaciones compatibles y no compatibles de su empresa. En los dispositivos iOS y Android, el **informe de aplicaciones no conformes** puede utilizarse para comparar la conformidad de las aplicaciones especificadas en la lista con las aplicaciones que los usuarios han instalado. En realidad no pueden impedir la instalación de la aplicación.
 
 > [!TIP]
-> Puede configurar los términos y condiciones de los usuarios para asegurarse de que saben que las aplicaciones de su dispositivo, incluidas las aplicaciones personales, se evaluarán y que las aplicaciones no conformes se bloquearán o se notificarán como no conformes. Los usuarios deben aceptar estos términos y condiciones para poder inscribir su dispositivo y utilizar el portal de empresa para obtener aplicaciones. Para obtener más información sobre cómo usar los términos y condiciones, vea [Configuración de la directiva de términos y condiciones en Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md).
+> Puede configurar los términos y condiciones de los usuarios para asegurarse de que saben que todas las aplicaciones de su dispositivo, incluidas las aplicaciones personales, se evaluarán y que las aplicaciones no conformes se bloquearán o se notificarán como no conformes. Los usuarios deben aceptar estos términos y condiciones para poder inscribir su dispositivo y utilizar el portal de empresa para obtener aplicaciones. Para obtener más información sobre cómo usar los términos y condiciones, vea [Configuración de la directiva de términos y condiciones en Microsoft Intune](terms-and-condition-policy-settings-in-microsoft-intune.md).
 
-Si el valor que busca no aparece en este tema, puede crearlo mediante una directiva personalizada de Android que le permita usar la configuración de OMA-URI para controlar el dispositivo. Para obtener más información, vea **Opciones de configuración de directiva personalizadas** más adelante en este tema.
+Si el valor que busca no aparece en este tema, puede crearlo mediante una directiva personalizada de Android que le permita usar la configuración de OMA-URI (identificador uniforme de recursos de Open Mobile Alliance) para controlar el dispositivo. Para obtener más información, vaya a [Configuración de directivas personalizadas](#custom-policy-settings).
 
 ### Configuración de contraseña
 
 |Nombre de la configuración|Detalles|Android 4.0+|Samsung KNOX|
 |----------------|-|----------------|----------------|
-|**Requerir una contraseña para desbloquear dispositivos móviles**|Se requiere una contraseña en dispositivos compatibles.|Sí|Sí|
-|**Longitud mínima de la contraseña**|La longitud mínima de la contraseña.|Sí|Sí|
-|**Número de errores de inicio de sesión repetidos que se permiten antes de que se borre el dispositivo**|Borra el dispositivo si hay un error en este número de intentos de inicio de sesión.|Sí|Sí|
-|**Minutos de inactividad antes de que se apague la pantalla**|Especifique el número de minutos antes de que el dispositivo se bloquee automáticamente.|Sí|Sí|
-|**Caducidad de contraseña (días)**|El número de días antes de que se deba cambiar una contraseña.|Sí|Sí|
-|**Recordar el historial de contraseñas**|Se recuerdan las contraseñas usadas anteriormente.|Sí|Sí|
-|**Recordar historial de la contraseña** : **Impedir la reutilización de contraseñas anteriores**|Impide que se vuelvan a usar contraseñas ya utilizadas.|Sí|Sí|
-|**Calidad de contraseña**|Seleccione el nivel requerido de complejidad de la contraseña y también si se pueden usar dispositivos biométricos.|Sí|Sí|
+|**Requerir una contraseña para desbloquear dispositivos móviles**|Especifica si se requiere una contraseña en dispositivos compatibles.|Sí|Sí|
+|**Longitud mínima de la contraseña**|Especifica la longitud mínima de la contraseña.|Sí|Sí|
+|**Número de errores de inicio de sesión repetidos que se permiten antes de que se borre el dispositivo**|Especifica el número de errores de inicio de sesión que se permite antes de que se borre el dispositivo.|Sí|Sí|
+|**Minutos de inactividad antes de que se apague la pantalla**|Especifica el número de minutos de inactividad antes de que el dispositivo se bloquee automáticamente.|Sí|Sí|
+|**Caducidad de contraseña (días)**|Especifica el número de días antes de que se deba cambiar una contraseña.|Sí|Sí|
+|**Recordar el historial de contraseñas**|Especifica el número de contraseñas usadas previamente que recordar.|Sí|Sí|
+|**Recordar historial de contraseñas** - **Impedir la reutilización de contraseñas anteriores**|Impide la reutilización de contraseñas anteriores.|Sí|Sí|
+|**Calidad de contraseña**|Especifica el nivel requerido de complejidad de la contraseña y si se pueden usar dispositivos biométricos.|Sí|Sí|
 |**Permitir desbloqueo mediante huellas digitales**|Permite usar una huella digital para desbloquear el dispositivo.|No|Sí|
-|**Permitir Smart Lock y otros agentes de confianza**<br>(Android 5 y versiones posteriores)|Vamos a controlar la característica Smart Lock en dispositivos Android compatibles. Esta funcionalidad del teléfono, conocida también en ocasiones como agentes de confianza, le permite deshabilitar u omitir la contraseña de la pantalla de bloqueo del dispositivo si el dispositivo está en una ubicación de confianza, como cuando se conecta a un dispositivo Bluetooth específico o cuando está cerca de una etiqueta NFC. Puede usar esta opción para impedir que los usuarios finales configuren Smart Lock.|Sí|No|
+|**Permitir Smart Lock y otros agentes de confianza**<br>(Android 5 y versiones posteriores)|Vamos a controlar la característica Smart Lock en dispositivos Android compatibles. Esta funcionalidad del teléfono, conocida también en ocasiones como agentes de confianza, le permite deshabilitar u omitir la contraseña de la pantalla de bloqueo del dispositivo si el dispositivo está en una ubicación de confianza (por ejemplo, cuando se conecta a un dispositivo Bluetooth específico o cuando está cerca de una etiqueta NFC). Puede usar esta opción para impedir que los usuarios configuren Smart Lock.|Sí|No|
 
 ### Configuración de cifrado
 
@@ -82,7 +85,7 @@ Si el valor que busca no aparece en este tema, puede crearlo mediante una direct
 
 |Nombre de la configuración|Detalles|Android 4.0+|Samsung KNOX|
 |----------------|----------------|----------------|
-|**Permitir explorador web**|Especifica si se puede usar el explorador web del dispositivo.|No|Sí|
+|**Permitir explorador web**|Especifica si se puede usar el explorador web predeterminado del dispositivo.|No|Sí|
 |**Permitir el autorrelleno**|Permite usar la función Autorrellenar del explorador web.|No|Sí|
 |**Permitir bloqueador de elementos emergentes**|Permite usar el bloqueador de elementos emergentes en el explorador web.|No|Sí|
 |**Permitir cookies**|Permite que el explorador web del dispositivo use cookies.|No|Sí|
@@ -122,7 +125,7 @@ Si el valor que busca no aparece en este tema, puede crearlo mediante una direct
 |**Permitir asistente de voz**|Permite usar software de asistente de voz en el dispositivo.|No|Sí|
 |**Permitir la marcación por voz**|Habilita o deshabilita la característica de marcación por voz en el dispositivo.|No|Sí|
 |**Permitir copiar y pegar**|Permite copiar y pegar funciones en el dispositivo.|No|Sí|
-|**Permitir el uso compartido del Portapapeles entre aplicaciones**|Use el Portapapeles para copiar y pegar entre aplicaciones.|No|Sí|
+|**Permitir el uso compartido del Portapapeles entre aplicaciones**|Permite usar el Portapapeles para copiar y pegar entre aplicaciones.|No|Sí|
 |**Permitir YouTube**|Permite usar YouTube en el dispositivo.|No|Sí|
 
 ### Configuración de aplicaciones conformes y no conformes
@@ -134,8 +137,8 @@ En la lista de **aplicaciones compatibles&amp; y no compatibles**, especifique l
 |Nombre de la configuración|Detalles|
 |----------------|--------------------|
 |**Notificar la no compatibilidad cuando los usuarios instalan las aplicaciones de la lista**|Enumera las aplicaciones que no se administran mediante Intune y que no quiere que instalen ni ejecuten los usuarios. Si los usuarios instalan una de estas aplicaciones, aparecerá en el informe de aplicaciones no compatibles.|
-|**No informar de incompatibilidad cuando los usuarios instalan las aplicaciones enumeradas.**|Enumera las aplicaciones que quiere permitir en la empresa. Para mantener la conformidad, los usuarios no deben instalar ninguna aplicación que no se muestre en la lista. Las aplicaciones que se administran mediante Intune están permitidas automáticamente.|
-|**Agregar**|Agrega una aplicación a la lista seleccionada. Especifique un nombre de su elección, opcionalmente el editor de la aplicación y la dirección URL de la aplicación en la tienda de aplicaciones.<br /><br />Consulte Cómo especificar las direcciones URL de tiendas de aplicaciones más adelante en este tema para obtener más ayuda.|
+|**No informar de incompatibilidad cuando los usuarios instalan las aplicaciones enumeradas.**|Enumera las aplicaciones que quiere permitir. Para mantener la conformidad, los usuarios no deben instalar ninguna aplicación que no se muestre en la lista. Las aplicaciones que se administran mediante Intune están permitidas automáticamente.|
+|**Agregar**|Agrega una aplicación a la lista seleccionada. Especifique un nombre de la aplicación, el publicador de la aplicación (opcional) y la dirección URL de la aplicación en la tienda de aplicaciones.<br /><br />Para obtener más información, vea [Especificar direcciones URL en tiendas de aplicaciones](#specify-urls-to-app-stores) después en este tema.|
 |**Importar aplicaciones**|Importa la lista de las aplicaciones que ha especificado en un archivo de valores separados por comas. Utilice el formato, nombre de la aplicación, editor, dirección URL de la aplicación en el archivo.|
 |**Editar**|Permite editar el nombre, el editor y la dirección URL de la aplicación seleccionada.|
 |**Eliminar**|Elimina la aplicación seleccionada de la lista.|
@@ -145,7 +148,7 @@ Especifique la siguiente configuración para los **dispositivos Samsung KNOX**:
 
 |Nombre de la configuración|Detalles|
 |----------------|--------------------|
-|**Seleccione una aplicación administrada que se permitirá ejecutar cuando el dispositivo esté en modo de quiosco**|Elija **Examinar**, después seleccione la aplicación administrada que se permitirá ejecutar cuando el dispositivo está en pantalla completa (actualmente no se admiten aplicaciones especificadas como un vínculo a la tienda). No se podrá ejecutar ninguna otra aplicación en el dispositivo.|
+|**Seleccione una aplicación administrada que se puede ejecutar cuando el dispositivo esté en modo de quiosco**|Elija **Examinar** y después seleccione la aplicación administrada que se pueda ejecutar cuando el dispositivo está en pantalla completa (actualmente no se admiten aplicaciones especificadas como un vínculo a la tienda). No se podrá ejecutar ninguna otra aplicación en el dispositivo.|
 |**Permitir los botones de volumen**|Habilita o deshabilita el uso de los botones de volumen en el dispositivo.|
 |**Permitir el botón de reactivación de suspensión de pantalla**|Habilita o deshabilita el botón de reactivación de la suspensión de pantalla en el dispositivo.|
 
@@ -158,19 +161,19 @@ Utilice el **Informe de aplicaciones no conformes** para ver la conformidad de l
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), elija **Informes** &gt; **Informe de aplicaciones no conformes**.
 
-2.  Seleccione los grupos de dispositivos que quiere comprobar, si quiere comprobar las aplicaciones conformes, las aplicaciones no conformes o ambas y, después, elija **Ver informe**.
+2.  Seleccione los grupos de dispositivos que desee comprobar. A continuación, elija si desea buscar aplicaciones conformes, aplicaciones no conformes o ambas. Por último, elija **Ver informe**.
 
-#### Cómo especificar las direcciones URL de tiendas de aplicaciones
-Para especificar una dirección URL de la aplicación en la lista de aplicaciones compatibles y no compatibles, utilice el siguiente formato:
+#### Especificar las direcciones URL de tiendas de aplicaciones
+Para especificar una dirección URL de la aplicación en la lista de aplicaciones compatibles y no compatibles, realice los siguientes pasos:
 
 En la [sección Aplicaciones de Google Play](https://play.google.com/store/apps), busque la aplicación que quiere usar.
 
-Abra la página de instalación de la aplicación y copie la dirección URL en el Portapapeles. Ya puede utilizarla como dirección URL en una la lista de aplicaciones conformes o no conformes.
+Abra la página de instalación de la aplicación y, a continuación, copie la dirección URL en el Portapapeles. Ya puede utilizarla como dirección URL en una la lista de aplicaciones conformes o no conformes.
 
-**Ejemplo:** busque Microsoft Office Mobile en Google Play. Usará la dirección URL **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
+Ejemplo: Busque Microsoft Office Mobile en Google Play. Usará la dirección URL **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
 
 ## Configuración de directivas personalizadas
-Use la **directiva de configuración personalizada de Android** de Microsoft Intune para implementar las opciones de configuración de OMA-URI (identificador uniforme de recursos de Open Mobile Alliance), que sirve para controlar características en dispositivos Android. Se trata de una configuración estándar que muchos fabricantes de dispositivos móviles usan para controlar las características del dispositivo.
+Use la **directiva de configuración personalizada de Android** de Microsoft Intune para implementar las opciones de configuración de OMA-URI, que sirve para controlar características en dispositivos Android. Se trata de una configuración estándar que muchos fabricantes de dispositivos móviles usan para controlar las características del dispositivo.
 
 Esta capacidad está pensada para que se puedan implementar las opciones de configuración de Android que no se pueden definir con directivas de Intune.
 
@@ -215,11 +218,11 @@ Aunque Intune admite perfiles de Wi-Fi para dispositivos Android, actualmente es
     ```
     <!--
     WEP Wifi Profile
-                    <Name of wifi profile> = Name of profile 
-                    <SSID of wifi profile> = Plain text of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
+                    <Name of wifi profile> = Name of profile
+                    <SSID of wifi profile> = Plain text version of SSID. Does not need to be escaped, could be <name>Your Company's Network</name>
                     <WEP password> = Password to connect to the network
     -->
-    <WLANProfile 
+    <WLANProfile
     xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
       <name><Name of wifi profile></name>
       <SSIDConfig>
@@ -253,7 +256,6 @@ Aunque Intune admite perfiles de Wi-Fi para dispositivos Android, actualmente es
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

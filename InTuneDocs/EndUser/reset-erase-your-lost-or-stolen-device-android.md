@@ -1,39 +1,54 @@
 ---
-title: Restablecer (borrar) un dispositivo perdido o robado | Microsoft Intune
+title: Restablecimiento (borrado) de un dispositivo Android perdido o robado | Microsoft Intune
 description: 
 keywords: 
 author: staciebarker
-manager: jeffgilb
-ms.date: 05/31/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8bb47a5c-f66d-491b-b909-e6a8844f773a
+ROBOTS: noindex,nofollow
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0bb435b87c937ea118a0794c8332b9a8f268d36e
-ms.openlocfilehash: 63799f8242db4618ea7b71af9608e30b98a8a27a
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: d9f31b48fb1b44a0bdf07a6eee3fe5b19f7bf610
 
 
 ---
 
 
-# Restablecer (borrar) el dispositivo perdido o robado
+# Restablecimiento (borrado) de un dispositivo Android perdido o robado
 
-Si pierde o le roban el teléfono Android, puede restablecer los valores predeterminados de fábrica desde la aplicación o el sitio web del portal de empresa. Para obtener instrucciones sobre el uso de la aplicación Portal de empresa, siga estos pasos o vea este [vídeo](http://aka.ms/ly1x17). También puede [restablecer el dispositivo mediante el sitio web del portal de empresa](reset-your-device-cpwebsite.md).
+Si se pierde o roban un teléfono con una inscripción a Intune, puede restablecer la configuración predeterminada de fábrica a través de la aplicación del Portal de empresa desde otro dispositivo o mediante el [sitio web del Portal de empresa](http://portal.manage.microsoft.com).
 
 Para obtener información sobre lo que ocurre cuando se restablece un dispositivo, consulte [What happens if you reset your device using the Company Portal (¿Qué ocurre al restablecer un dispositivo mediante el portal de empresa?)](what-happens-if-you-reset-your-device-using-the-company-portal-android.md).
 
-> [!WARNING] 
+> [!WARNING]
 > Al restablecer los valores predeterminados de fábrica del dispositivo, quita su información personal y profesional o educativa de este.
 
-1.  En el explorador, abra el [sitio web del Portal de empresa](http://portal.manage.microsoft.com) e inicie sesión con su cuenta profesional o educativa.
+## Para restablecer el dispositivo desde la aplicación Portal de empresa
+
+1.  Desde otro dispositivo inscrito, abra la aplicación del portal de empresa e inicie sesión con su cuenta profesional o educativa.
 
 2.  Pulse **Mis dispositivos** y seleccione el nombre del dispositivo perdido o robado.
 
 3.  Haga clic en **Restablecer** &gt; **Restablecer**.
+
+## Para restablecer el dispositivo mediante el sitio web del Portal de empresa
+
+Puede seguir estos pasos o ver este vídeo:
+
+<iframe width="675" height="379" src="https://www.youtube.com/embed/6e73o7f8gxE" frameborder="0" allowfullscreen></iframe>
+
+1.  En el explorador, abra el [sitio web del Portal de empresa](http://portal.manage.microsoft.com) e inicie sesión con su cuenta profesional.
+
+2.  En **Mis dispositivos**, haga clic en el dispositivo perdido o robado.
+
+3.  Pulse en **Restablecer** &gt; **Restablecer**.
 
 Si no puede restablecer el dispositivo perdido o robado, pida al administrador de TI que lo haga. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
@@ -42,7 +57,6 @@ Si no puede restablecer el dispositivo perdido o robado, pida al administrador d
 
 
 
-
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

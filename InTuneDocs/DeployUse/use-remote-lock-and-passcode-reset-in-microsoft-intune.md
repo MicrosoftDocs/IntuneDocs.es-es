@@ -1,18 +1,19 @@
 ---
 title: "Usar el restablecimiento de código de acceso y el bloqueo remoto | Microsoft Intune"
-description: 
+description: "Intune proporciona funcionalidades de restablecimiento de código de acceso y de bloqueo remoto."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
+ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: 6d9b79a09eef2546d78a19e061ba5cc3f24f645c
-ms.openlocfilehash: 34379881b8299a2e3f9886b14b6d83e9dfe83373
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: c2b4b6308569e1e67a1c3da18c12d19bdeecf08e
 
 ---
 # Ayudar a proteger los dispositivos con el restablecimiento de código de acceso y el bloqueo remoto
@@ -25,7 +26,7 @@ Si un usuario pierde su dispositivo, es posible bloquear el dispositivo de forma
 |------------|---------------|
 |iOS|Compatible.|
 |Android|Compatible.|
-|Windows 10 Mobile|Compatible.|
+|Windows 10 y Windows 10 Mobile|Compatible.|
 |Windows Phone 8 y Windows Phone 8.1|Compatible.|
 |Windows RT 8.1 y Windows RT|Compatible si el usuario actual del dispositivo es el mismo usuario que inscribió el dispositivo.|
 |Windows 8.1|Compatible si el usuario actual del dispositivo es el mismo usuario que inscribió el dispositivo.|
@@ -72,6 +73,6 @@ Si un usuario olvida su contraseña, puede ayudarle quitando la contraseña de u
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,10 +1,10 @@
 ---
 title: "Personalizar vistas de consola para roles de administración | Microsoft Intune"
-description: 
+description: "Use este tema para ayudarle a filtrar la vista de la consola de administración de Intune para que los administradores solo puedan ver los elementos que necesiten de acuerdo con su rol."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,16 @@ ms.assetid: e0783eaa-67dc-410e-9e80-4d3aa72f36d8
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 779127bfd39145010f0d9b6609286aaf4dedfdc8
-ms.openlocfilehash: 52a77e50b3dde24ba270766d4472bdd6176cc415
+ms.sourcegitcommit: 217655d3c33ac88672f0739302f182cf6a6ae335
+ms.openlocfilehash: dc9bb2992d3e3ed8134cfa2146295e16edf4e459
 
 
 ---
 
 # Personalizar vistas de consola de Intune según los roles de administración
-La vista de la consola de administración de Microsoft Intune se puede filtrar de forma que los administradores solo puedan ver los elementos que necesiten de acuerdo con su rol. Así, por ejemplo, puede permitir que solo los operadores de la consola de administración actualicen definiciones de malware o restablezcan la contraseña en los dispositivos. Para ello, se usan **designaciones** preestablecidas que se asignan a usuarios específicos. Cuando estos usuarios acceden a la consola de administración, solo ven los elementos específicos de su designación.
+La vista de la consola de administración de Microsoft Intune se puede filtrar de forma que los administradores solo puedan ver los elementos que necesiten de acuerdo con su rol. Así, por ejemplo, puede permitir que solo los operadores de la consola de administración actualicen definiciones de malware o restablezcan la contraseña en los dispositivos. Para ello, se usan **designaciones** preestablecidas que se asignan a usuarios específicos. Cuando estos usuarios obtienen acceso a la consola de administración, solo ven los elementos específicos de su designación.
 
-## Cómo crear una vista personalizada
+## Para crear una vista personalizada
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), elija **Administración**&gt;**Administradores de servicios**.
 
@@ -60,14 +60,14 @@ La vista de la consola de administración de Microsoft Intune se puede filtrar d
 
         -   Actualizar el inventario
 
-        -   Bloquear de forma remota un dispositivo
+        -   Bloquear un dispositivo de forma remota
 
-        -   Restablecimiento de la contraseña
+        -   Restablecer un código de acceso
 
 Cuando el administrador configurado abra la consola de administración de Intune, se le dará el nivel de acceso que se haya especificado.
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

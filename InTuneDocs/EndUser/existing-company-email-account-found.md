@@ -3,8 +3,8 @@ title: "Existing company email account found (Cuenta de correo electrónico de e
 description: 
 keywords: 
 author: Staciebarker
-manager: arob98
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376e6c1ae229187ab8ec73390f091f1d534365dd
-ms.openlocfilehash: cca55c987b42894547977d94bd549342b4ca4bd8
+ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
+ms.openlocfilehash: 05a0f33fa62d3f614437a54441dcb796c51c0f91
 
 
 ---
@@ -35,7 +35,6 @@ Si la nueva configuración de correo electrónico no aparece después de un tiem
 
 
 
-
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

@@ -1,10 +1,10 @@
 ---
-title: "Especificar dispositivos propiedad de la empresa con números de identidad de equipo móvil internacional (IMEI) | Microsoft Intune"
-description: 
+title: "Especificar números IMEI | Microsoft Intune"
+description: "Microsoft Intune permite a los administradores importar números IMEI para plataformas de dispositivos móviles para ayudar a identificar los dispositivos móviles corporativos"
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: 1712bd39-562b-4409-9cec-155d5f4d8a39
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 590b8bc5a307e238ba41d32f98f6878daebf1185
-ms.openlocfilehash: 7df281a3e35ac563f7b82e4b13407b413f8a7e4a
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: 4e2092182dbda4523c19afeabc34aa0166962c40
 
 
 ---
 
 # Especificar dispositivos corporativos con números de identidad de equipo móvil internacional (IMEI)
-Microsoft Intune permite que los administradores importen números de identidad de equipo móvil internacional (IMEI) para plataformas de dispositivos móviles con números IMEI para ayudar a identificar los dispositivos móviles corporativos. Una vez inscritos en Intune, los dispositivos con números IMEI importados se pueden ver en **Grupos** > **Información general** > **Todos los dispositivos** > **Dispositivos corporativos inscritos previamente** > **Mediante IMEI (todas las plataformas)**.
+Microsoft Intune permite que los administradores importen números de identidad de equipo móvil internacional (IMEI) para plataformas de dispositivos móviles con números IMEI para ayudar a identificar los dispositivos móviles corporativos. Una vez inscritos en Intune, los dispositivos con números IMEI importados se pueden ver en **Grupos** > **Información general** > **Todos los dispositivos**. Las listas **Grupo de dispositivos** muestran los dispositivos con los números IMEI importados como **Corporativo** en la columna **Propiedad**.
 
 1. En la [consola de administración de Microsoft Intune](http://manage.microsoft.com), seleccione **Grupos** &gt; **Todos los dispositivos** &gt; **Todos los dispositivos corporativos inscritos previamente** &gt; **Mediante IMEI (todas las plataformas)** y luego **Agregar dispositivos...**. Puede agregar dispositivos de dos maneras:
 
@@ -49,6 +49,6 @@ Cuando se inscribe el dispositivo con ese número IMEI, normalmente cuando un us
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 

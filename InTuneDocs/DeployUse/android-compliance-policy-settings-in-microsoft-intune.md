@@ -1,10 +1,10 @@
 ---
 title: "Opciones de configuración de directivas de cumplimiento para dispositivos Android | Microsoft Intune"
-description: 
+description: "En este tema se describe la configuración de directivas de cumplimiento normativo para dispositivos Android."
 keywords: 
 author: karthikaraman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/13/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,9 @@ ms.technology:
 ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
-ms.sourcegitcommit: e736d688032dd2ddee5be9edf2a33d5e7ba5257b
-ms.openlocfilehash: dd3369cf59ea972f1ecc4953881ddbbede9a99c8
+translationtype: Human Translation
+ms.sourcegitcommit: 465a5f305ac191fdf761997df565423f4349ff91
+ms.openlocfilehash: ed358c07594507d3a9144e9c686b54dcbd30aede
 
 
 ---
@@ -55,9 +56,17 @@ Si quiere información sobre otras plataformas, seleccione uno de los siguientes
 ### Cifrado
 - **Requerir cifrado en el dispositivo móvil:** establezca esta opción en **Sí** para requerir que los dispositivos estén cifrados para poder conectarse a los recursos. Los dispositivos se cifran al configurar la opción de **Requerir una contraseña para desbloquear dispositivos móviles**.
 
-## Configuración de estado del dispositivo
+## Configuración de estado y la seguridad de dispositivos
 
 - **El dispositivo no debe estar descodificado o descifrado:** si habilita esta opción, los dispositivos descodificados se considerarán como no compatibles.
+- **Requerir que los dispositivos impidan la instalación de aplicaciones desde orígenes desconocidos (Android 4.0 o posterior)** Para bloquear los dispositivos que tienen  **Seguridad > Orígenes desconocidos**  habilitado en el dispositivo, habilite esta configuración y establézcala en **Sí**.  
+>[!IMPORTANT]
+>Las aplicaciones de instalación de prueba requieren que se habilite **Orígenes desconocidos**.  Solo debe aplicar esta directiva de cumplimiento si no tiene aplicaciones Android de instalación de prueba en dispositivos.
+
+- **Requerir que se deshabilite la depuración USB (Android 4.2 o posterior)**: Esta opción especifica si está habilitada la opción para detectar la opción de depuración USB en el dispositivo.
+- **Requerir que los dispositivos habiliten el dispositivo de análisis de amenazas de seguridad (Android 4.4 4.2)**: Esta opción especifica que la característica **Comprobar aplicaciones** está habilitada en el dispositivo.
+- **Nivel de revisión de seguridad mínimos de Android (Android 6.0 o posterior)**: Utilice esta opción para especificar el nivel de revisión mínima de Android.  No serán compatibles los dispositivos que no están al menos en este nivel de revisión. La fecha debe estar especificada en el formato: aaaa-MM-DD.
+
 
 ## Configuración de propiedades de dispositivo
 - **SO mínimo requerido:** cuando un dispositivo no cumpla el requisito de versión de SO mínima, se notificará como no compatible.
@@ -67,6 +76,6 @@ Si quiere información sobre otras plataformas, seleccione uno de los siguientes
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO4-->
 
 

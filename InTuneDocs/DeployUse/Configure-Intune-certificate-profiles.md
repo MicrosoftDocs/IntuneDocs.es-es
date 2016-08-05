@@ -1,10 +1,10 @@
 ---
 title: Configurar perfiles de certificado | Microsoft Intune
-description: 
+description: Aprenda a crear un perfil de certificado de Intune.
 keywords: 
 author: nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ee6b3607688cb02be7316b83e10424dfbea9746b
-ms.openlocfilehash: 8343abe8861468bbba27272aa1f3569390cb826b
+ms.sourcegitcommit: 6a7f2eeb0114f525890d1dcb61344d60a19943d1
+ms.openlocfilehash: 14419092edc77b2229cf980a74e81048941a2c28
 
 
 ---
@@ -54,7 +54,18 @@ Debe crear un **perfil de certificado de confianza** para poder crear un perfil 
 
     Más información: [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  Suministre la información que se le pide para configurar las opciones del perfil de certificado de confianza para Android, iOS, Mac OS X, Windows 8.1 o Windows Phone 8.1. En la opción **Archivo de certificado**, importe el certificado de CA raíz de confianza (**.cer**) que exportó desde la CA emisora. La opción **Almacén de destino** es válida únicamente para dispositivos que ejecutan Windows 8.1 y versiones posteriores y solo si el dispositivo tiene más de un almacén de certificados.
+3.  Suministre la información que se le pide para configurar las opciones del perfil de certificado de confianza para Android, iOS, Mac OS X, Windows 8.1 o Windows Phone 8.1. 
+
+    - En la opción **Archivo de certificado**, importe el certificado de CA raíz de confianza (**.cer**) que exportó desde la CA emisora. La opción **Almacén de destino** es válida únicamente para dispositivos que ejecutan Windows 8.1 y versiones posteriores y solo si el dispositivo tiene más de un almacén de certificados.
+
+    
+    - En **Formato de nombre de sujeto**, seleccione **Personalizado** para proporcionar un formato de nombre de sujeto personalizado.  
+
+        Las dos variables que se admiten actualmente para el formato personalizado son **nombre común (CN)** y **correo electrónico (E)**. Mediante una combinación de estas variables y cadenas estáticas, puede crear un formato de nombre de sujeto personalizado, como se muestra en este ejemplo:  
+
+        `CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US`  
+
+        En el ejemplo, el administrador crea un formato de nombre de sujeto que, además de las variables de CN y E, usa cadenas de unidad organizativa, organización, ubicación, estado y país. Se proporciona una lista de cadenas admitidas en el tema [Función CertStrToName](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx).  
 
 
 4.  Cuando haya terminado haga clic en **Guardar directiva**.
@@ -83,6 +94,15 @@ Después de haber creado un perfil de certificado de CA de confianza, cree perfi
     Más información: [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 3.  Siga las instrucciones de la página de configuración de perfil para configurar las opciones de perfil de certificado SCEP.
+    > [!NOTE]
+    > 
+    > En **Formato de nombre de sujeto**, seleccione **Personalizado** para proporcionar un formato de nombre de sujeto personalizado.
+    > 
+    >  Las dos variables que se admiten actualmente para el formato personalizado son el nombre común (CN) y el correo electrónico (E). Mediante una combinación de estas variables y cadenas estáticas, puede crear un formato de nombre de sujeto personalizado, como se muestra en este ejemplo:
+    
+    >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
+    
+    >    En el ejemplo, el administrador crea un formato de nombre de sujeto que, además de las variables de *CN* y *E* usa cadenas de unidad organizativa, organización, ubicación, estado y país. Se proporciona una lista de cadenas admitidas en el tema [Función CertStrToName](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx).
 
 4.  Cuando haya terminado haga clic en **Guardar directiva**.
 
@@ -145,6 +165,6 @@ Ya puede usar certificados para proteger los perfiles de VPN, Wi-Fi y correo ele
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

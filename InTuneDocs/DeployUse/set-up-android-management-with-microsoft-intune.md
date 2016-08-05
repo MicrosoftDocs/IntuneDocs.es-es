@@ -1,10 +1,10 @@
 ---
-title: "Configurar la administración de Android con Microsoft Intune | Microsoft Intune"
-description: 
+title: "Configurar la administración de Android | Microsoft Intune"
+description: "Habilite la administración de dispositivos móviles (MDM) para dispositivos Android y KNOX con Microsoft Intune."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f1dc713099c982d6e32c87b814dd3f55b1656eda
-ms.openlocfilehash: 5f65887345c1a650c6d80863e42f447035c789f7
+ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
+ms.openlocfilehash: 147765f6e8225e8e1d9d8e64473e8b6988256b03
 
 
 ---
@@ -46,6 +46,6 @@ Los dispositivos Android permiten a los usuarios inscribirse mediante la aplicac
 
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Jul16_HO4-->
 
 

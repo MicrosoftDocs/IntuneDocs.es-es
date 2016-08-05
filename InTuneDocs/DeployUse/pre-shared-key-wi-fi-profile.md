@@ -1,10 +1,10 @@
 ---
 title: Wi-Fi con una clave precompartida | Microsoft Intune
-description: 
+description: "Use la configuración personalizada de Intune para crear un perfil de Wi-Fi con una clave precompartida."
 keywords: 
 author: nbigman
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 066baae17da1fd399f4f7d10784719e3dc46f235
-ms.openlocfilehash: 632adf3dccf40dd2b361d170f501a851bf0fda38
+ms.sourcegitcommit: 8fe47a5843414fbe4add7f77df63c0d6466273cd
+ms.openlocfilehash: f15fce6890d6e5850d12115a97bf7331ce515508
 
 
 
@@ -40,12 +40,15 @@ Nota:
 
    c.   **Tipo de datos**: establézcalo como "String(XML)".
 
-   d.   **OMA-URI**: ./Vendor/MSFT/Wi-Fi /Profile/<SSID>/Settings
+   d.   **OMA-URI**: 
+        
+- **Para Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+- **Para Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
 Nota: Asegúrese de incluir el carácter de punto al principio.
 
 SSID es el SSID para el que va a crear la directiva. Por ejemplo,
-`./Vendor/MSFT/Wi-Fi/Profile/Hotspot-1/Settings`
+`./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
 
   e.    Campo de valor: donde se pega el código XML. A continuación se muestra un ejemplo. Cada valor debe adaptarse a la configuración de red. En la sección de comentarios del código puede consultar información útil.
 
@@ -197,6 +200,6 @@ Cuando se selecciona una directiva implementada, puede ver más información ace
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO4-->
 
 

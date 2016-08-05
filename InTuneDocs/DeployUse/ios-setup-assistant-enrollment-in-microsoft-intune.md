@@ -1,10 +1,10 @@
 ---
-title: "Inscripción mediante Asistente de configuración para dispositivos iOS con Microsoft Intune | Microsoft Intune"
-description: 
+title: "Inscribir dispositivos iOS con el Asistente de configuración | Microsoft Intune"
+description: "Inscriba dispositivos iOS de empresa con la herramienta Apple Configurator para restablecer de fábrica el dispositivo y prepararlo para ejecutar el Asistente de configuración."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f3637e79e7b6f93820e775932653c41879f369fe
-ms.openlocfilehash: b9cb10ccb26d4f61d63fb2dc6c18be48cc0a3182
+ms.sourcegitcommit: ecfeb73efed4a47256275120c52de232c556adfe
+ms.openlocfilehash: 01d87b95d2599f75161c9a95ff4cf94375eedb60
 
 
 ---
@@ -27,6 +27,7 @@ Intune permite inscribir dispositivos iOS de empresa con la herramienta [Apple C
 Con el Configurador de Apple, puede restablecer los valores de fábrica de los dispositivos iOS y prepararlos para la configuración por parte del usuario nuevo del dispositivo.  Este método requiere que se conecte el dispositivo iOS a un equipo Mac a través de una conexión USB para configurar la inscripción corporativa. Además, el método supone que se está usando Apple Configurator 2.0. En la mayoría de los casos será necesario que la directiva aplicada al dispositivo iOS incluya *afinidad de usuario* para habilitar la aplicación Portal de empresa de Intune.
 
 **Requisitos previos**
+* [Inscripción de iOS habilitada](set-up-ios-and-mac-management-with-microsoft-intune.md) mediante la instalación de un certificado de APNs
 * Acceso físico a dispositivos iOS: deben ser dispositivos sin configurar (restablecidos a estado de fábrica) sin protección por contraseña
 * Números de serie del dispositivo: [Cómo obtener un número de serie de iOS](https://support.apple.com/en-us/HT204308)
 * Cables de conexión USB
@@ -37,10 +38,7 @@ Con el Configurador de Apple, puede restablecer los valores de fábrica de los d
 
 2.  **Crear un perfil para dispositivos** Un perfil de inscripción de dispositivo define la configuración que se aplica a un grupo de dispositivos. Si aún no lo tiene, cree un perfil de inscripción de dispositivo para los dispositivos iOS inscritos mediante Apple Configurator.
 
-    ###### Para crear un perfil
-
-    1.  En la [consola de administración de Microsoft Intune](http://manage.microsoft.com), vaya a **Directiva** &gt; **Dispositivos corporativos** y, después, elija **Agregar...**.
-
+    1.  En la [consola de administración de Microsoft Intune](http://manage.microsoft.com), vaya a **Directiva** &gt; **Inscripción de dispositivos corporativos** y, después, elija **Agregar...**.
     ![Crear perfil de inscripción de dispositivo](../media/pol-sa-corp-enroll.png)
 
     2.  Especifique los detalles de los perfiles de dispositivo:
@@ -51,19 +49,13 @@ Con el Configurador de Apple, puede restablecer los valores de fábrica de los d
 
         -   **Detalles de inscripción**: especifica cómo se inscriben los dispositivos.
 
-            -   **Pedir afinidad de usuario**: el dispositivo iOS se puede afiliar con un usuario durante la instalación inicial y, después, se le puede permitir el acceso a los datos y al correo electrónico de la compañía como dicho usuario. Para la mayoría de los escenarios del Asistente de configuración, use **Solicitar afinidad de usuario**.
-            Este modo admite varios escenarios:
+            -   **Solicitar afinidad de usuario**: El dispositivo se debe afiliar a un usuario durante la configuración inicial y luego se le puede permitir el acceso a los datos y al correo electrónico de la empresa como dicho usuario. La **afinidad de usuario** debe configurarse para dispositivos administrados por DEP que pertenezcan a usuarios y necesitan usar el Portal de empresa (es decir, instalar aplicaciones).
 
-                -   **Dispositivo personal de empresa**: elección de un dispositivo propio, o lo que se conoce como "Choose Your Own Device" (CYOD). Similar a dispositivos personales o de propiedad privada, pero el administrador tiene ciertos privilegios, incluidos permisos para borrar, restablecer, administrar y anular la inscripción del dispositivo. El usuario del dispositivo puede instalar aplicaciones y tiene la mayoría de los demás permisos para usar el dispositivo que no estén bloqueados por la directiva de administración.
-
-                -   **Cuenta de administrador de inscripción de dispositivos** : el dispositivo se inscribe con una cuenta de administrador de Intune especial. Se puede administrar como una cuenta privada, pero solo un usuario que conozca las credenciales del administrador de inscripción puede instalar aplicaciones, borrar, restablecer, administrar y anular la inscripción del dispositivo. Para obtener información sobre cómo inscribir un dispositivo que compartan varios usuarios mediante una cuenta común, vea [Inscribir dispositivos propiedad de la empresa con el Administrador de inscripción de dispositivos de Microsoft Intune](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
-
-            -   **No hay afinidad de usuario**: el dispositivo no tiene usuarios. Utilice esta afiliación para dispositivos que realizan tareas sin tener acceso a datos de usuario local. Las aplicaciones que requieren una afiliación de usuario están deshabilitadas o no funcionarán.
+            -   **Sin afinidad de usuario**: El dispositivo no está afiliado a ningún usuario. Utilice esta afiliación para dispositivos que realizan tareas sin tener acceso a datos de usuario local. Las aplicaciones que requieren la afiliación de un usuario no funcionarán, incluida la aplicación Portal de empresa cuando se usa para instalar aplicaciones de línea de negocio.
 
         -   **Asignación previa de grupo de dispositivos**: todos los dispositivos que implementan este perfil pertenecerán inicialmente a este grupo. Puede reasignar los dispositivos después de la inscripción.
 
-        >[!Important]
-        >Las asignaciones de grupo se moverán de Intune a Azure Active Directory. [Obtener más información](http://go.microsoft.com/fwlink/?LinkID=787064)
+            [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
 
           -  **Programa de inscripción de dispositivos**: el programa de inscripción de dispositivos de Apple (DEP) no se puede utilizar con la inscripción del Asistente de configuración. Asegúrese de que el botón de alternancia está establecido en **desactivado**.
 
@@ -123,26 +115,24 @@ Con el Configurador de Apple, puede restablecer los valores de fábrica de los d
 
     3. Escriba el **Nombre** y la **dirección URL de inscripción** para el servidor MDM del paso 6 anterior. En la dirección URL de inscripción, escriba la dirección URL de perfil de inscripción exportada desde Intune. Seleccione **Siguiente**.  
 
-       Si recibe una advertencia sobre los requisitos de perfil de confianza para Apple TV, puede cancelar sin riesgo alguno la opción **Trust Profile** (Perfil de confianza) al elegir la “X” de color gris. También de forma segura, puede omitir cualquier advertencia de certificado Anchor. Para continuar, elija **Siguiente** hasta que se complete el asistente.
+       Si recibe una advertencia que indica "Dirección URL del servidor sin comprobar", puede omitir la advertencia de forma segura. Para continuar, elija **Siguiente** hasta que se complete el asistente.
 
-    4.  En el panel **Servidores**, elija “Editar” al lado del perfil del nuevo servidor. Asegúrese de que la dirección URL de inscripción coincide exactamente con la dirección URL exportada desde Intune. Vuelva a escribir la dirección URL original si es diferente y **guarde** el perfil de inscripción exportado desde Intune.
-
-    5.  Conecte los dispositivos móviles iOS al equipo Apple con un adaptador USB.
+    4.  Conecte los dispositivos móviles iOS al equipo Apple con un adaptador USB.
 
         > [!WARNING]
         > Los dispositivos se restablecerán en la configuración de fábrica durante el proceso de inscripción. Como práctica recomendada, restablezca el dispositivo y enciéndalo. Como práctica recomendada, los dispositivos deberían estar en la pantalla **Hola** cuando inicia el Asistente de configuración.
 
-    6.  Elija **Preparar**. En el panel **Prepare iOS Device** (Preparar el dispositivo iOS), seleccione **Manual** y luego elija **Siguiente**.
+    5.  Elija **Preparar**. En el panel **Prepare iOS Device** (Preparar el dispositivo iOS), seleccione **Manual** y luego elija **Siguiente**.
 
-    7. En el panel **Enroll in MDM Server** (Inscribir en servidor MDM), seleccione el nuevo servidor y elija **Siguiente**.
+    6. En el panel **Enroll in MDM Server** (Inscribir en servidor MDM), seleccione el nuevo servidor y elija **Siguiente**.
 
-    8. En el panel **Supervise Devices** (Supervisar dispositivos), seleccione el nivel de supervisión y luego elija **Siguiente**.
+    7. En el panel **Supervise Devices** (Supervisar dispositivos), seleccione el nivel de supervisión y luego elija **Siguiente**.
 
-    9. En el panel **Create an Organization** (Crear una organización), seleccione la **Organización** o cree una nueva y luego elija **Siguiente**.
+    8. En el panel **Create an Organization** (Crear una organización), seleccione la **Organización** o cree una nueva y luego elija **Siguiente**.
 
-    10. En el panel **Configurar el Asistente de configuración de iOS**, elija los pasos que se presentan al usuario y, después, elija **Preparar**. Si se le solicita, autentíquese para actualizar la configuración de confianza.  
+    9. En el panel **Configurar el Asistente de configuración de iOS**, elija los pasos que se presentan al usuario y, después, elija **Preparar**. Si se le solicita, autentíquese para actualizar la configuración de confianza.  
 
-    11. Cuando el dispositivo iOS termina la preparación, puede desconectar el cable USB.  
+    10. Cuando el dispositivo iOS termina la preparación, puede desconectar el cable USB.  
 
 8.  **Distribuir los dispositivos** Los dispositivos ya están listos para la inscripción corporativa. Apague los dispositivos y distribúyalos a los usuarios. Cuando se encienda el dispositivo, se iniciará el Asistente de configuración.
 
@@ -153,6 +143,6 @@ Con el Configurador de Apple, puede restablecer los valores de fábrica de los d
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Jul16_HO4-->
 
 

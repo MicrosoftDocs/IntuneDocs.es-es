@@ -1,10 +1,10 @@
 ---
 title: "Configuración de la directiva de actualización de edición de Windows | Microsoft Intune"
-description: 
+description: "Aprenda a actualizar automáticamente dispositivos de Windows 10 a la versión más reciente con Intune."
 keywords: 
 author: robstackmsft
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: angrobe
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 8589866a-3f13-489b-a5cd-cee017d16d54
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8e911193075d2a621ef94f2917b2126501ea2100
-ms.openlocfilehash: e468ff102b45bf0c23fd76d8d15c44978861ae8a
+ms.sourcegitcommit: 2a08ace43fb61f57a9d29b119c59698bc50e7af8
+ms.openlocfilehash: 49bc54f36b281d85c9667c51fb6ddbe0d454b4d1
 
 
 ---
@@ -37,13 +37,14 @@ Antes de empezar a actualizar dispositivos a la versión más reciente, necesita
 |**Nombre**|Escriba un nombre para la directiva de actualización de edición.|
 |**Descripción**|Si lo desea, escriba una descripción de la directiva que sirva para identificarla en la consola de Intune.
 |**Edición a la que actualizar**|En la lista desplegable, seleccione la versión de Windows 10 Escritorio, Windows 10 Holographic o Windows 10 Mobile a la que quiera actualizar los dispositivos de destino.
-|**Clave de producto**|Especifique la clave de producto que obtuvo de Microsoft, que se puede usar para actualizar todos los dispositivos de Windows 10 Escritorio de destino.<br>Después de crear una directiva que contenga una clave de producto, no se puede editar la clave de producto más adelante. Esto se debe a que la clave se oculta por motivos de seguridad. Para cambiar la clave de producto, debe volver a escribir toda la clave.
-|**Archivo de licencia**|Haga clic en **Examinar** para seleccionar el archivo de licencia que obtuvo de Microsoft y que contiene la información de licencia de la edición Windows Holographic o Windows 10 Mobile a la que quiere actualizar los dispositivos de destino.
+|**Clave de producto**|Especifique la clave de producto que obtuvo de Microsoft, que se puede usar para actualizar todos los dispositivos de Windows 10 Escritorio de destino.<br>Después de crear una directiva que contenga una clave de producto, no se puede editar la clave de producto más adelante. Esto se debe a que la clave se oculta por motivos de seguridad. Para cambiar la clave de producto, debe escribir toda la clave de nuevo.
+|**Archivo de licencia**|Elija **Examinar** para seleccionar el archivo de licencia que obtuvo de Microsoft y que contiene la información de licencia de la edición Windows Holographic o Windows 10 Mobile a la que quiere actualizar los dispositivos de destino.
 
 ### Consulte también
 [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
-<!--HONumber=Jun16_HO4-->
+
+<!--HONumber=Jul16_HO4-->
 
 

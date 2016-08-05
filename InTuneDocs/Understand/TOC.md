@@ -12,8 +12,11 @@
 ### [Iniciar una prueba e implementar la directiva de PIN de iOS](start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md)
 ### [Configurar el acceso a correo electrónico de dispositivos iOS](set-up-email-access-for-ios-devices-using-microsoft-intune.md)
 ## [Escenarios frecuentes](common-ways-to-use-intune.md)
-
-<!--- ## [Intune FAQ](frequently-asked-questions-for-microsoft-intune.md)--->
+## [Guías de inicio rápido](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+### [Evitar pérdidas de datos de empresa desde aplicaciones móviles de Office 365](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
+### [Publicar aplicaciones móviles para los usuarios](publish-mobile-apps-to-users.md)
+### [Proteger los equipos de Windows contra amenazas de malware](protect-pcs-against-malware-threats.md)
+### [Simplificar la configuración de correo electrónico en dispositivos móviles](simplify-email-configuration-on-mobile-devices.md)
 
 # [Introducción](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
@@ -22,6 +25,6 @@
 # [Solución de problemas](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Jul16_HO4-->
 
 
