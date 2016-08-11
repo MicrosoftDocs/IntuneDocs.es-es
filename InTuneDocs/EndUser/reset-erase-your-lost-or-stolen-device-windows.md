@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: noindex,nofollow
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 15db6064b9136be5a68bf5e414b0bcb6036fbc1e
+ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
+ms.openlocfilehash: 083dd1a11e291ff0d92b1bfa3ec61033f26f3d4b
 
 
 ---
@@ -34,7 +34,7 @@ Si se pierde o le roban un teléfono con una inscripción a Intune, puede restab
 
 2.  En **Mis dispositivos**, haga clic en el dispositivo perdido o robado.
 
-3.  Pulse en **Restablecer** &gt; **Restablecer**.
+3.  Puntee primero el icono **Restablecer** y, después, la opción **Restablecer**.
 
 Si no puede restablecer el dispositivo perdido o robado, póngase en contacto con TI para restablecerlo por usted. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
@@ -43,6 +43,6 @@ Si no puede restablecer el dispositivo perdido o robado, póngase en contacto co
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

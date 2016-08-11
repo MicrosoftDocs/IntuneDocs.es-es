@@ -13,13 +13,15 @@ ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: 8a41c4c4f0ab4b4864fe366a2852046693b6baee
+ms.sourcegitcommit: 06d6c8ce97ba6a259055e94f0eba87f7c5a96531
+ms.openlocfilehash: e61e764f4761ab83500ff6f0febe253d427729d9
 
 
 ---
 
 # Configurar la administración de dispositivos iOS y Mac
+[Aquí](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md) puede encontrar ayuda para configurar su dispositivo iOS o Mac.
+
 Aplique la administración de dispositivos móviles de Intune de iPad, iPhone y dispositivos Mac OS X y conceda acceso al correo electrónico y las aplicaciones de la empresa. El certificado del Servicio de notificaciones push de Apple (APNs) es necesario para que Intune pueda administrar dispositivos iOS y Mac. Una vez que el certificado se agrega a Intune, los usuarios pueden instalar la aplicación Portal de empresa para inscribir sus dispositivos o el administrador puede configurar la [administración de dispositivos iOS de la empresa](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
 1.  **Configurar Intune**<br>
@@ -39,7 +41,9 @@ Aplique la administración de dispositivos móviles de Intune de iPad, iPhone y 
     En la [consola de administración de Microsoft Intune](http://manage.microsoft.com), vaya a **Administración** &gt; **Administración de dispositivos móviles** &gt; **iOS y Mac OS X** &gt; **Cargar un certificado de APNs** y haga clic en **Cargar el certificado de APNs**. **Busque** el archivo de certificado (.pem), haga clic en **Abrir** y, a continuación, escriba su **ID de Apple**. Con el certificado APNs, Intune puede inscribir y administrar dispositivos iOS insertando la directiva en los dispositivos móviles inscritos.
 
 5.  **Indique a los usuarios cómo obtener acceso a los recursos de empresa con el Portal de empresa**<br>
-    Los usuarios necesitan saber cómo inscribir sus dispositivos y qué esperar una vez que se incorporan a la administración. [Qué decirles a los usuarios finales sobre el uso de Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+    Los usuarios necesitan saber cómo inscribir sus dispositivos y qué esperar una vez que se incorporan a la administración.
+    - [Qué decirles a los usuarios finales sobre el uso de Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+    - [Guía de usuario final para dispositivos iOS y Mac](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md)
 
 Si la empresa u organización adquiere dispositivos iOS para los usuarios, estos dispositivos también se pueden inscribir en la administración como [dispositivos iOS propiedad de la empresa](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
@@ -48,6 +52,6 @@ Si la empresa u organización adquiere dispositivos iOS para los usuarios, estos
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

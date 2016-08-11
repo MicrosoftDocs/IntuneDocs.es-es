@@ -13,14 +13,14 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: 2dc3f1dca06cdd5f8547ea51ace2c0f1f291a6e0
+ms.sourcegitcommit: e9788bbb368337fab4002cd0f0bcb28c0e23e8d1
+ms.openlocfilehash: 09b52621e53f0d758ded7c3951909fb88cf67e36
 
 
 ---
 
 # Administración de licencias de Intune
-Antes de que los usuarios puedan iniciar sesión para usar el servicio de Intune o inscriban sus dispositivos en la administración, primero deben tener una licencia asignada a su suscripción de Intune desde el [portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854). Una vez que haya asignado una licencia, los nombres de los usuarios aparecerán en la consola de administración de Intune. Los usuarios pueden inscribir hasta cinco dispositivos.
+Antes de que los usuarios puedan iniciar sesión para usar el servicio de Intune o inscriban sus dispositivos en la administración, primero deben tener una licencia asignada a su suscripción de Intune desde el [portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854). Una vez que haya asignado una licencia, los nombres de los usuarios aparecerán en la consola de administración de Intune. Posteriormente, los usuarios pueden inscribir hasta quince dispositivos.
 
 Las organizaciones que usan Enterprise Mobility Suite (EMS) de Microsoft pueden tener usuarios que solo necesiten Azure Active Directory Premium o los servicios de Intune en el paquete de EMS. Puede asignar un servicio o un subconjunto de servicios mediante los [cmdlets de PowerShell de Azure Active Directory](https://msdn.microsoft.com/library/jj151815.aspx). Para obtener más información, vea [licencias de Intune administrar con PowerShell](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md).
 
@@ -90,6 +90,6 @@ Enhorabuena. Acaba de completar el paso 4 de la *Guía de inicio rápido de Intu
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

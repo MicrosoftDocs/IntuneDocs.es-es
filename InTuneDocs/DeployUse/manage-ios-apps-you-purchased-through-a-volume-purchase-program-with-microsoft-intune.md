@@ -4,7 +4,7 @@ description: "Use Intune para administrar las aplicaciones que compra por volume
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 07/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 8f7e77f00e6082c5b272a7ec2be835bc1ef97a28
+ms.sourcegitcommit: c64fb33893027d0000cae4cc3d9c3ed28cc38901
+ms.openlocfilehash: 5db23913601973630a4d013aae86cf26af337c4b
 
 
 ---
@@ -64,6 +64,9 @@ Puede sincronizar los datos que tiene Apple con Intune en cualquier momento al e
 
 2.  Cierre la aplicación que quiera implementar, elija **Administrar implementación** y siga las instrucciones del tema [Deploy apps in Microsoft Intune](deploy-apps-in-microsoft-intune.md) (Implementar aplicaciones en Microsoft Intune) para completar la carga, la creación y la implementación de la aplicación.
 
+> [!TIP]
+> Debe elegir una acción de implementación de **Requerida**. Las instalaciones disponibles no se admiten actualmente.
+
 Al implementar la aplicación como una instalación **Requerida**, se usa una licencia por cada usuario que instala dicha aplicación.
 
 Para reclamar una licencia, se debe cambiar la acción de implementación a **Desinstalar**. La licencia se recupera cuando se desinstala la aplicación.
@@ -87,6 +90,6 @@ Puede supervisar qué aplicaciones de PCV están implementadas y el número de l
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Jul16_HO5-->
 
 

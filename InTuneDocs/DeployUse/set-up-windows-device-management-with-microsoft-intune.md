@@ -13,13 +13,15 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: 79377078bf5b4c6dad0a3dc4a07a2e84aa2563f8
+ms.sourcegitcommit: 06d6c8ce97ba6a259055e94f0eba87f7c5a96531
+ms.openlocfilehash: fae2aa496ec38d9ddc2cb6800bed10ccb32fd154
 
 
 ---
 
 # Configurar la administración de dispositivos Windows
+[Aquí](../enduser/using-your-windows-device-with-intune.md) puede encontrar ayuda para configurar el dispositivo Windows.
+
 Con Intune, puede habilitar la inscripción BYOD (Bring Your Own Device) de dispositivos de equipos Windows para proporcionar acceso al correo electrónico y a las aplicaciones de la empresa. Usado con Azure Active Directory, proporciona una forma rápida y sin intervención del usuario para mostrar los nuevos dispositivos Windows 10 en la administración y tener acceso a los recursos de la empresa sin necesidad de restablecer la imagen inicial del equipo. Una vez inscritos, los usuarios pueden iniciar sesión y se pueden aplicar a sus dispositivos directivas, aplicaciones y opciones de configuración mediante la consola de administración de Intune. También podría interesarle [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md) (Configurar la administración de Windows Phone con Microsoft Intune) o [Manage computers with Intune client software](manage-windows-pcs-with-microsoft-intune.md) (Administrar equipos con software cliente de Intune) mediante el cliente de Intune.
 
 Al crear un CNAME de DNS, los usuarios pueden conectarse e inscribirse en Intune sin especificar un nombre de servidor.
@@ -43,13 +45,18 @@ Al crear un CNAME de DNS, los usuarios pueden conectarse e inscribirse en Intune
 
   2.  En la [consola de administración de Intune](http://manage.microsoft.com), haga clic en **Administración** &gt; **Administración de dispositivos móviles** &gt; **Windows**.
   ![Cuadro de diálogo de administración de dispositivos Windows](../media/enroll-intune-winenr.png)
+
   3.  Escriba la dirección URL del dominio verificado del sitio web de empresa en el cuadro **Especificar un nombre de dominio verificado** y luego haga clic en **Probar detección automática**.
+
+  4.  Los usuarios necesitan saber cómo inscribir sus dispositivos y qué esperar una vez que se incorporan a la administración.
+      - [Qué decirles a los usuarios finales sobre el uso de Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+      - [Guía de usuario final para dispositivos Windows](../enduser/using-your-windows-device-with-intune.md)
 
 ### Consulte también
 [Preparar la inscripción de dispositivos en Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

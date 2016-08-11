@@ -13,14 +13,16 @@ ms.assetid: f5615051-2dd1-453b-9872-d3fdcefb2cb8
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: cc928e4facf592ca0f7398b374242a7a07ae193e
+ms.sourcegitcommit: 06d6c8ce97ba6a259055e94f0eba87f7c5a96531
+ms.openlocfilehash: 344f1cf4367deb12288f9c361e043d345f9846bb
 
 
 ---
 
 
 # Configurar la administración de Windows Phone y Windows 10 Mobile con Microsoft Intune
+[Aquí](../enduser/using-your-windows-device-with-intune.md) puede encontrar ayuda para configurar el dispositivo Windows.
+
 Para poder administrar dispositivos Windows 10 Mobile o Windows Phone con Microsoft Intune, los dispositivos deben poder comunicarse con Intune. Para simplificar este proceso, puede crear un registro DNS para que los usuarios no tengan que escribir la dirección del servidor. Los pasos siguientes describen cómo simplificar la inscripción de los usuarios.  
 
 En la mayoría de los escenarios, los usuarios pueden instalar la aplicación de portal de empresa desde la Tienda Windows. Si administra dispositivos Windows Phone 8.0 o necesita implementar el portal de empresa en dispositivos Windows Phone, también debe descargar y firmar la aplicación de portal de empresa. Consulte [Set up Windows Phone 8.0 management (Configurar la administración de Windows Phone 8.0)](set-up-windows-phone-8.0-management-with-microsoft-intune.md).
@@ -50,12 +52,16 @@ En la mayoría de los escenarios, los usuarios pueden instalar la aplicación de
 
     3.  Escriba la dirección URL del dominio verificado del sitio web de empresa en el cuadro **Especificar un nombre de dominio verificado** y luego haga clic en **Probar detección automática**.
 
+    4.  Los usuarios necesitan saber cómo inscribir sus dispositivos y qué esperar una vez que se incorporan a la administración.
+        - [Qué decirles a los usuarios finales sobre el uso de Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
+        - [Guía de usuario final para dispositivos Windows](../enduser/using-your-windows-device-with-intune.md)
+
 
 
 No es necesario ningún trabajo adicional a menos que vaya a implementar el portal de empresa en dispositivos.  Puede omitir sin ningún problema los pasos 2 y 3 de la consola de administración.
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

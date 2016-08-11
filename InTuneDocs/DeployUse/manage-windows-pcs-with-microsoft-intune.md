@@ -13,8 +13,8 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: b01354b62507b9843b53cc4b2c8c1e82a6c422e5
+ms.sourcegitcommit: aa1d6105a5be9c329c75681857a9d6e553088b65
+ms.openlocfilehash: be45b2ffb99eb75e71c0d591fc84089b83735905
 
 
 ---
@@ -27,7 +27,7 @@ Intune administra equipos Windows mediante directivas, del mismo modo que los ob
 Aunque el cliente de Intune admite [directivas que ayudan a proteger los PC](policies-to-protect-windows-pcs-in-microsoft-intune.md) mediante la administración de actualizaciones de software, Firewall de Windows y Endpoint Protection, los PC administrados con el cliente de Intune no pueden ser objeto de otras directivas de Intune.
 
 > [!NOTE]
-> Los dispositivos que ejecutan Windows 8.1 se pueden administrar mediante el cliente de Intune o se pueden inscribir como dispositivos móviles. La siguiente información se aplica a equipos que ejecutan el cliente de Intune. No se admite instalar el cliente de PC de Intune e inscribir al mismo tiempo el dispositivo Windows para la administración de dispositivos móviles.
+> Los dispositivos que ejecutan Windows 8.1 o posterior se pueden administrar mediante el cliente de Intune o se pueden inscribir como dispositivos móviles. La siguiente información se aplica a equipos que ejecutan el cliente de Intune. No se admite instalar el cliente de PC de Intune e inscribir al mismo tiempo el dispositivo Windows para la administración de dispositivos móviles.
 
 ## Requisitos para la administración de clientes de PC de Intune
 
@@ -86,6 +86,6 @@ El agente cliente de Intune, normalmente, se ejecuta silenciosamente en segundo 
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -4,7 +4,7 @@ description: "Implemente la aplicación del explorador administrado para restrin
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 08/03/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,21 +13,22 @@ ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 44f6ee1354f1fdfc7f8db7d5b844dc12c01e686c
+ms.sourcegitcommit: 2fcd53d335aa18701ba0b8c3c75569febbee2cd5
+ms.openlocfilehash: d07a5dde05055c54f5b89c8aa5f49203d0a22b97
 
 
 ---
 
 # Administrar el acceso a Internet mediante directivas de explorador administrado con Microsoft Intune
-El explorador administrado es una aplicación de exploración web que se puede implementar en su organización mediante Microsoft Intune. Una directiva de explorador administrado configura una lista de permitidos o una lista de bloqueados que restringe los sitios web que pueden visitar los usuarios del explorador administrado.
+El explorador administrado es una aplicación de exploración web que puede implementar en su organización mediante Microsoft Intune. Una directiva de explorador administrado configura una lista de permitidos o una lista de bloqueados que restringe los sitios web que pueden visitar los usuarios del explorador administrado.
 
-Dado que esta aplicación es una aplicación administrada, también puede aplicar las directivas de administración de aplicaciones móviles a la aplicación, tales como controlar el uso de cortar, copiar y pegar, impedir las capturas de pantalla y garantizar que los vínculos a contenido donde los usuarios pueden hacer clic solo se abran en aplicaciones administradas. Para obtener más información, vea [Configure and deploy mobile application management policies in the Microsoft Intune console (Configurar e implementar directivas de administración de aplicaciones móviles en la consola de Microsoft Intune)](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+Debido a que se trata de una aplicación administrada, también puede aplicarle directivas de administración de aplicaciones móviles. Estas directivas pueden controlar el uso de las funciones de cortar, copiar y pegar, impedir la obtención de capturas de pantalla y garantizar que los vínculos al contenido que los usuarios seleccionan se abran solo en otras aplicaciones administradas. Para obtener más información, vea [Configure and deploy mobile application management policies in the Microsoft Intune console (Configurar e implementar directivas de administración de aplicaciones móviles en la consola de Microsoft Intune)](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 
 > [!IMPORTANT]
->Si los usuarios instalan el explorador administrado desde la tienda de aplicaciones y no se administra mediante Intune, se aplica el siguiente comportamiento: iOS: la aplicación del explorador administrado puede usarse como un explorador web básico, pero algunas características no estarán disponibles y no podrá tener acceso a los datos de otras aplicaciones administradas por Intune.
-Android: no se puede usar la aplicación de explorador administrado.
-Si los usuarios instalan el explorador administrado ellos mismos en un dispositivo iOS con una versión inferior a iOS 9, no se administrará con las directivas que cree. Para asegurarse de que el explorador se administra mediante Intune, estos deben desinstalar la aplicación para que se la pueda implementar como una aplicación administrada. En iOS 9 y versiones posteriores, si el usuario instala el explorador administrado se le pedirá que permita que sea administrado por la directiva.
+>Si los usuarios instalan el explorador administrado desde la tienda de aplicaciones e Intune no lo administra, se aplica el comportamiento siguiente:<br /><br />
+iOS: la aplicación de explorador administrado puede usarse como un explorador web básico, pero algunas características no estarán disponibles y no podrá acceder a los datos de otras aplicaciones administradas por Intune.<br />
+Android: no se puede usar la aplicación de explorador administrado.<br /><br />
+Si los usuarios instalan el explorador administrado ellos mismos en un dispositivo iOS con una versión anterior a iOS 9, ninguna directiva que usted cree administrará el explorador. Para asegurarse de que Intune administra el explorador, los usuarios deben desinstalar la aplicación antes de que usted pueda implementársela como una aplicación administrada. En iOS 9 y versiones posteriores, si los usuarios instalan el explorador administrado ellos mismos, se les pedirá que permitan que la directiva lo administre.
 
 Puede crear directivas de explorador administrado para los siguientes tipos de dispositivo:
 
@@ -35,11 +36,11 @@ Puede crear directivas de explorador administrado para los siguientes tipos de d
 
 -   Dispositivos que ejecutan iOS 7.1 y versiones posteriores
 
-Intune Managed Browser admite la apertura de contenido web de [socios de aplicaciones de Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
+Intune Managed Browser admite la apertura de contenido web de [Microsoft Intune application partners](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) (Partners de aplicaciones de Microsoft Intune).
 
 ## Crear una directiva de explorador administrado
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), haga clic en **Directiva** &gt; **Agregar directiva**.
+1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), seleccione **Directiva** &gt; **Agregar directiva**.
 
 2.  Configure uno de los siguientes tipos de directivas de **software** :
 
@@ -49,17 +50,19 @@ Intune Managed Browser admite la apertura de contenido web de [socios de aplicac
 
     Para más información sobre cómo crear e implementar directivas, consulte el tema [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  La tabla siguiente le facilitará la configuración de directivas de explorador administrado:
+3.  Para configurar las opciones de directiva de explorador administrado, use lo siguiente:
 
-|Nombre de la configuración|Detalles|
-    |----------------|--------------------|
-    |**Nombre**|Escriba un nombre único para la directiva de explorador administrado que le ayude a identificarla en la consola de Intune.|
-    |**Descripción**|Proporcione una descripción que le ofrezca una visión general de la directiva y otra información relevante que le ayude a encontrarla.|
-    |**Habilitar una lista de permitidos o bloqueados para restringir las direcciones URL que el explorador administrado puede abrir**|Seleccione una de las siguientes opciones:<br /><br />**Permitir al explorador administrado abrir únicamente las direcciones URL de la lista siguiente**: especifique una lista de las direcciones URL que el explorador administrado podrá abrir.<br /><br />**Bloquear el explorador administrado para que no pueda abrir las direcciones URL de la lista siguiente**: especifique una lista de las direcciones URL que el explorador administrado no podrá abrir. **Nota:** No puede incluir direcciones URL permitidas y bloqueadas en la misma directiva de explorador administrado.<br />Para obtener más información acerca de los formatos de dirección URL que puede especificar, vea **Formato de dirección URL para las direcciones URL permitidas y bloqueadas** en este tema.|
+    - **Nombre**. Escriba un nombre único para la directiva de explorador administrado que le ayude a identificarla en la consola de Intune.
+    - **Descripción**. Proporcione una descripción que le ofrezca una visión general de la directiva y otra información relevante que le ayude a encontrarla.
+    - **Habilitar una lista de permitidos o bloqueados para restringir las direcciones URL que el explorador administrado puede abrir**. Seleccione una de las siguientes opciones:
+        - **Permitir al explorador administrado abrir únicamente las direcciones URL siguientes**. Especifique una lista de direcciones URL que el explorador administrado puede abrir.
+        - **Bloquear el explorador administrado para que no pueda abrir las direcciones URL siguientes**. Especifique una lista de direcciones URL para las cuales el explorador administrado está bloqueado para que no pueda abrirlas.
+**Nota:** No puede incluir direcciones URL permitidas y bloqueadas en la misma directiva de explorador administrado.
+Para obtener más información acerca de los formatos de dirección URL que puede especificar, vea **Formato de dirección URL para las direcciones URL permitidas y bloqueadas** en este tema.
 
-4.  Cuando haya terminado haga clic en **Guardar directiva**.
+4.  Cuando termine, seleccione **Guardar directiva**.
 
-La nueva directiva se muestra en el nodo **Directivas de configuración** del área de trabajo **Directiva** .
+La nueva directiva aparece en el nodo **Directivas de configuración** del área de trabajo **Directiva** .
 
 ## Crear una implementación para la aplicación de explorador administrado
 Después de crear la directiva de explorador administrado, puede crear una implementación de software para la aplicación de explorador administrado y asociarla a la directiva de explorador administrado que ha creado.
@@ -77,21 +80,21 @@ Para obtener más información sobre cómo implementar aplicaciones, vea [Deploy
 
 -   El explorador administrado no usa la configuración que realizan los usuarios para el explorador integrado en sus dispositivos. Esto se debe a que el explorador administrado no tiene acceso a esta configuración.
 
--   Si configura las opciones **Requerir PIN sencillo para el acceso** o **Requerir credenciales corporativas para el acceso** en una directiva de administración de aplicaciones móviles asociada con el explorador administrado, cuando un usuario haga clic en el vínculo de ayuda en la página autenticación, podrá examinar los sitios de Internet independientemente de si se agregaron a una lista de bloqueados en la directiva de explorador administrado.
+-   Si configura las opciones **Requerir PIN sencillo para el acceso** o **Requerir credenciales corporativas para el acceso** en una directiva de administración de aplicaciones móviles asociada al explorador administrado, cuando un usuario seleccione el vínculo de ayuda en la página de autenticación, dicho usuario podrá examinar los sitios de Internet independientemente de si se han agregado a una lista de bloqueados en la directiva de explorador administrado.
 
--   El explorador administrado solo puede bloquear el acceso a sitios cuando se accede a estos directamente. No puede bloquear el acceso cuando se usan servicios intermedios (por ejemplo, un servicio de traducción) para acceder al sitio.
+-   El explorador administrado puede bloquear el acceso a sitios solo cuando se accede a estos directamente. No puede bloquear el acceso cuando se usan servicios intermedios (por ejemplo, un servicio de traducción) para acceder al sitio.
 
--   Para permitir la autenticación y garantizar el acceso a la documentación de Intune, **&#42;.microsoft.com** está exento de la configuración de permitidos o bloqueados: siempre se permite.
+-   Para permitir la autenticación y garantizar el acceso a la documentación de Intune, **&#42;.microsoft.com** está exento de la configuración de permitidos o bloqueados. Siempre está permitida.
 
 ### Desactivar los datos de uso
-Microsoft recopila automáticamente datos anónimos sobre el rendimiento y el uso del explorador administrado para mejorar sus productos y servicios, pero los usuarios pueden desactivar la recopilación de datos con la opción **Datos de uso** del dispositivo. No tiene ningún control sobre la recopilación de estos datos.
+Microsoft recopila automáticamente datos anónimos sobre el rendimiento y el uso del explorador administrado para mejorar sus productos y servicios. Los usuarios pueden usar en sus dispositivos la configuración de **Datos de uso** para desactivar la recopilación de datos. No tiene ningún control sobre la recopilación de estos datos.
 
 ## Información de referencia
 
 ### Formato de dirección URL para las direcciones URL permitidas y bloqueadas
-Utilice la siguiente información para conocer los formatos permitidos y los caracteres comodín que puede usar al especificar direcciones URL en las listas de permitidos y bloqueados.
+Use la siguiente información para conocer los formatos permitidos y los caracteres comodín que puede usar al especificar direcciones URL en las listas de permitidos y bloqueados:
 
--   Puede usar el carácter comodín "**&#42;**" según las reglas de la siguiente lista de patrones permitidos.
+-   Puede usar el carácter comodín (**&#42;**) según las reglas de la siguiente lista de patrones permitidos.
 
 -   Asegúrese de anteponer **http** o **https** a todas las direcciones URL al introducirlas en la lista.
 
@@ -101,9 +104,9 @@ Utilice la siguiente información para conocer los formatos permitidos y los car
 
     -   Puerto 443 para https
 
-    No se admite el uso de caracteres comodín para el número de puerto como, por ejemplo, **http&colon;//www&period;contoso&period;com:*;** y **http&colon;//www&period;contoso&period;com: /*;**
+    No se admite el uso de caracteres comodín para el número de puerto. Por ejemplo, **http&colon;//www&period;contoso&period;com:*;** y **http&colon;//www&period;contoso&period;com: /*;** no se admiten.
 
--   Utilice la siguiente tabla para obtener información acerca de los patrones permitidos que puede usar al especificar direcciones URL:
+-   Use la siguiente tabla para obtener información sobre los patrones permitidos que puede usar al especificar direcciones URL:
 
 |Dirección URL|Detalles|Coincide|No coincide|
     |-------|---------------|-----------|------------------|
@@ -151,6 +154,6 @@ Si se implementan varias directivas de explorador administrado en un dispositivo
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

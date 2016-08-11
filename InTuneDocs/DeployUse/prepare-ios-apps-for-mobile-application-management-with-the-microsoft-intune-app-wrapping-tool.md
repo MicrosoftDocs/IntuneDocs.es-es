@@ -13,8 +13,8 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: matgates
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 19a5b8f8260bace2bbe3626da3df281306f53024
-ms.openlocfilehash: ebd68513da55b8bb1715d2c82636abf791cae1ff
+ms.sourcegitcommit: bebf57269ae41f04a47240063cde4a4dd0bf334f
+ms.openlocfilehash: 3d9def8f906746cf6e3d014d251b94406d839067
 
 
 ---
@@ -27,12 +27,13 @@ La herramienta es una aplicación de línea de comandos de Mac OS que crea un "c
 Para descargar la herramienta, consulte [Microsoft Intune App Wrapping Tool for iOS - Español](http://www.microsoft.com/en-us/download/details.aspx?id=45218).
 
 ## Paso 1: cumplir los requisitos previos para usar la herramienta de ajuste de aplicaciones
+Lea [esta entrada de blog](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) para obtener más información sobre los requisitos previos y cómo establecerlos.
 
 |Requisito|Más información|
 |---------------|--------------------------------|
 |Sistema operativo y conjunto de herramientas admitidos|Debe ejecutar la herramienta de ajuste de aplicaciones en un equipo Mac que ejecute OS X 10.8.5 o posterior que tenga instalada la versión 5 o posterior del conjunto de herramientas XCode.|
 |Certificado de firma y perfil de aprovisionamiento|Debe poseer un perfil de aprovisionamiento y un certificado de firma de Apple. Consulte la [documentación para desarrolladores de Apple](https://developer.apple.com/).|
-|Procesamiento de una aplicación con la herramienta de ajuste de aplicaciones|Las aplicaciones deben estar desarrolladas y firmadas por la compañía o por un fabricante de software independientes (ISV). No se puede usar esta herramienta para procesar aplicaciones de la tienda de Apple. Las aplicaciones deben estar escritas para iOS 7.0 o posterior. Las aplicaciones, además, deben estar en formato ejecutable independiente de la posición (PIE). Para obtener más información acerca del formato PIE, consulte la documentación para desarrolladores de Apple. Por último, la aplicación debe tener el formato de extensión **.app** o **.ipa**.|
+|Procesamiento de una aplicación con la herramienta de ajuste de aplicaciones|Las aplicaciones deben estar desarrolladas y firmadas por la compañía o por un fabricante de software independientes (ISV). No se puede usar esta herramienta para procesar aplicaciones de la tienda de Apple. Las aplicaciones deben estar escritas para iOS 7.1 o posterior. Las aplicaciones, además, deben estar en formato ejecutable independiente de la posición (PIE). Para obtener más información acerca del formato PIE, consulte la documentación para desarrolladores de Apple. Por último, la aplicación debe tener el formato de extensión **.app** o **.ipa**.|
 |Aplicaciones que la herramienta de ajuste no puede procesar|Aplicaciones cifradas, aplicaciones sin firmar y aplicaciones con atributos de archivo extendidos.|
 |Aplicaciones que usan la biblioteca de Azure Active Directory (ADAL)|Si la aplicación usa ADAL, debe incorporar una versión de la biblioteca que sea mayor o igual que la versión 1.0.2, y el desarrollador debe concederle acceso al recurso Administración de aplicaciones móviles de Intune.<br /><br />Consulte [Información para aplicaciones que usan la Biblioteca de Azure Active Directory](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md#information-for-apps-that-use-the-azure-active-directory-library) en este artículo para obtener detalles sobre cómo usar ADAL.|
 |Derechos de configuración de la aplicación|Debe establecer los derechos antes de ajustar la aplicación. Estos derechos conceden permisos de aplicación adicionales y capacidades que van más allá de aquellas que se conceden en general. Consulte [Configurar los derechos de la aplicación](#setting-app-entitlements) para obtener instrucciones.|
@@ -292,6 +293,6 @@ Use los procedimientos recomendados de seguridad y privacidad siguientes al usar
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 
