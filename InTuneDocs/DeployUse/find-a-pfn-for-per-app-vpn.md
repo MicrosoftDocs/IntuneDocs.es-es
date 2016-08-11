@@ -13,13 +13,13 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 ms.reviewer: tycast
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a124663a80bb477d0312faa0fb43e4457ba8246
-ms.openlocfilehash: 0bbb8aef7929ac09ef5f6a5a466d66b5df03e921
+ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
+ms.openlocfilehash: 026bb4c8bf90bbe1af93513df46f0ec21f82509b
 
 
 ---
 
-# Buscar un nombre de familia de productos (PFN) para la configuración de la VPN por aplicación
+# Buscar un nombre de familia de paquete (PFN) para la configuración de la VPN por aplicación
 
 Hay dos formas de buscar un PFN para poder configurar una VPN por aplicación.
 
@@ -85,6 +85,6 @@ En Edge, la información que le interesa se muestra directamente; en Internet Ex
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

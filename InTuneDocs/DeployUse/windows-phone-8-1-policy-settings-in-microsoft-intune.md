@@ -4,7 +4,7 @@ description: "Intune proporciona una variedad de opciones generales integradas q
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 07/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 04fca72cd426ee4718e100cb2633ca2c967b4c05
+ms.sourcegitcommit: 1648a070cc2d318df4d434955f6068cd4b42690c
+ms.openlocfilehash: 87021459424c84feed3b676364cf890f43ff32d9
 
 
 ---
@@ -109,11 +109,11 @@ Use la **directiva de configuración general de Windows Phone (Windows Phone 8.1
 |----------------|-----------------------------------------|
 |**Permitir copiar y pegar**|Permite la función de copiar y pegar en los dispositivos.|No|Sí|
 
-### Configuración de aplicaciones conformes y no conformes
-En la lista de **aplicaciones compatibles&amp; y no compatibles**, especifique las aplicaciones que son compatibles y no compatibles con la siguiente información:
+### Configuración de aplicaciones permitidas y bloqueadas
+En la lista **Aplicaciones permitidas y bloqueadas**, especifique una lista de aplicaciones que quiera permitir o bloquear mediante la siguiente información:
 
 > [!NOTE]
-> Una única directiva solo puede contener una lista de aplicaciones conformes o una lista de aplicaciones no conformes. No se pueden especificar ambas en la misma directiva.
+> Una sola directiva únicamente puede contener una lista de aplicaciones permitidas o una lista de aplicaciones bloqueadas. No se pueden especificar ambas en la misma directiva.
 
 |Nombre de la configuración|Detalles|
 |----------------|--------------------|
@@ -127,14 +127,14 @@ En la lista de **aplicaciones compatibles&amp; y no compatibles**, especifique l
 > Si especifica una lista de aplicaciones permitidas para dispositivos de Windows Phone 8.1, debe agregar la aplicación Portal de empresa a esta lista o se bloqueará.
 
 
-### Información de referencia para las aplicaciones conformes y no conformes
+### Información de referencia para aplicaciones permitidas y bloqueadas
 
 #### Cómo especificar las direcciones URL de tiendas de aplicaciones
-Para especificar una dirección URL de la aplicación en la lista de aplicaciones compatibles y no compatibles, utilice el siguiente formato:
+Para especificar la dirección URL de una aplicación en la lista de aplicaciones permitidas y bloqueadas, use el siguiente formato:
 
 Desde la página de [aplicaciones y juegos para Windows Phone](http://www.windowsphone.com/en-us/store/overview) , busque la aplicación que desea usar.
 
-Abra la página de la aplicación y copie la dirección URL en el Portapapeles. Ya puede utilizarla como dirección URL en una la lista de aplicaciones conformes o no conformes.
+Abra la página de la aplicación y copie la dirección URL en el Portapapeles. Ya puede usarla como dirección URL en una la lista de aplicaciones permitidas o bloqueadas.
 
 **Ejemplo:** Busque la aplicación Skype en la Tienda. La dirección URL que use será **http://www.windowsphone.com/es-es/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
 
@@ -172,6 +172,6 @@ En el cuadro de diálogo **Agregar o editar configuración OMA-URI**, especifiqu
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

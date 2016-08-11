@@ -1,10 +1,10 @@
 ---
 title: "Inscripción directa para dispositivos iOS | Microsoft Intune"
-description: 
+description: "Use la herramienta Apple Configurator para inscribir directamente los dispositivos iOS corporativos con una directiva predefinida conectándolos mediante USB a un equipo Mac."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,18 +13,16 @@ ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1b942c7e09e59de59e3e406b84a21a712c0e973a
-ms.openlocfilehash: 8fea0f7f87972bc643bbb20348095e05f701287e
+ms.sourcegitcommit: aabe68a3621a02b8f3142ab3f593190cc23053dd
+ms.openlocfilehash: 17836bc826bc89e3f041f7b369be09c1cce9ea4f
 
 
 ---
 
 # Inscribir directamente dispositivos iOS mediante Apple Configurator
-Intune permite inscribir dispositivos iOS de empresa con la herramienta [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) desde un equipo Mac. Este proceso no restablece los valores de fábrica del dispositivo e inscribe el dispositivo con una directiva predefinida. Este método está destinado a dispositivos cuyo valor de afiliación de usuario está establecido en **Sin afinidad de usuario** y requiere una conexión USB entre el dispositivo iOS y un equipo Mac para configurar la inscripción corporativa. No se admite la aplicación de portal de empresa para dispositivos inscritos de forma directa. Esta guía supone que se usa Apple Configurator 2.0 en un equipo Mac.
+Intune permite inscribir dispositivos iOS de empresa con la herramienta [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) desde un equipo Mac. Este proceso no restablece los valores de fábrica del dispositivo e inscribe el dispositivo con una directiva predefinida. Este método está destinado a dispositivos cuyo valor de afiliación de usuario está establecido en **Sin afinidad de usuario** y requiere una conexión USB entre el dispositivo iOS y un equipo Mac para configurar la inscripción corporativa. Al inscribir dispositivos iOS directamente, puede inscribir un dispositivo sin adquirir su número de serie. También puede nombrar el dispositivo con fines de identificación antes de que Intune capture el nombre del dispositivo durante la inscripción. No se admite la aplicación de portal de empresa para dispositivos inscritos de forma directa. Esta guía supone que se usa Apple Configurator 2.0 en un equipo Mac.
 
 1.  **Crear un perfil para dispositivos** Un perfil de inscripción de dispositivo define la configuración que se aplica a los dispositivos. Si aún no lo tiene, cree un perfil de inscripción de dispositivo para los dispositivos iOS inscritos mediante Apple Configurator.
-
-    #### Para crear un perfil
 
     1.  En la [consola de administración de Microsoft Intune](http://manage.microsoft.com), vaya a **Directiva** &gt; **Inscripción de dispositivos corporativos** y, después, elija **Agregar...**.
 
@@ -40,8 +38,8 @@ Intune permite inscribir dispositivos iOS de empresa con la herramienta [Apple C
 
         -   **Asignación previa de grupo de dispositivos**: todos los dispositivos que implementan este perfil pertenecerán inicialmente a este grupo. Puede reasignar los dispositivos después de la inscripción.
 
-        >[!Important]
-        >Las asignaciones de grupo se moverán de Intune a Azure Active Directory. [Más información](http://go.microsoft.com/fwlink/?LinkID=787064)
+            [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
+
     3.  Elija **Guardar perfil** para agregar el perfil.
 
 5.  **Exportar un perfil como .mobileconfig para implementar en dispositivos iOS** Seleccione el perfil de dispositivo que ha creado. Elija **Exportar...** en la barra de tareas. Elija **Descargar perfil** y guarde el archivo .mobileconfig descargado.
@@ -61,8 +59,6 @@ Intune permite inscribir dispositivos iOS de empresa con la herramienta [Apple C
 
 8.  **Instalar el perfil** Todo está listo para instalar el perfil en el dispositivo iOS. El dispositivo debe haber completado el Asistente de configuración y estar listo para usarse.  Si la inscripción implica implementaciones de aplicaciones, el dispositivo debe tener un identificador de Apple configurado, porque las implementaciones de aplicaciones requerirán que disponga de un identificador de Apple con la sesión iniciada en App Store.
 
-    ###### Completar la aceptación del perfil en dispositivos iOS no supervisados
-
     1.  Desbloquee el dispositivo iOS.
 
     2.  En el diálogo **Instalar el perfil** de **Perfil de administración**, pulse **Instalar**.
@@ -81,11 +77,7 @@ Intune permite inscribir dispositivos iOS de empresa con la herramienta [Apple C
 10. **Distribuir los dispositivos** Ahora el dispositivo iOS está inscrito con Intune y administrado.
 
 
-### Consulte también
-[Preparar la inscripción de dispositivos](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
-
-
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO1-->
 
 

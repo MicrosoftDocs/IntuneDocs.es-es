@@ -4,7 +4,7 @@ description: "Use la configuración de directiva indicada en este tema para conf
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 07/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: bb08ea54b24e0395972ce29ae05ff2b7b6ee4220
+ms.sourcegitcommit: 7ef205aece89667ea84b9b73e42e71fc540fa257
+ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
 
 
 ---
@@ -45,7 +45,6 @@ Use la **directiva de configuración general** de Microsoft Intune para Windows 
 |**Caducidad de contraseña (días)**|Especifica el período de tiempo tras el que debe cambiarse la contraseña del dispositivo.|
 |**Recordar el historial de contraseñas**|Especifica si quiere impedir que el usuario final cree contraseñas usadas anteriormente.|
 |**Recordar historial de contraseñas** - **Impedir la reutilización de contraseñas anteriores**|Especifica el número de contraseñas usadas previamente que el dispositivo recuerda.|
-|**Permitir contraseña de imagen y PIN**|Le permite usar gestos simples en una imagen o un PIN sencillo para iniciar sesión.<br>(Windows 10 Escritorio solo)|
 |**Requerir una contraseña cuando el dispositivo vuelva de un estado de inactividad**|Si está habilitado, el usuario debe escribir una contraseña para desbloquear el dispositivo en estado de inactividad.<br>(Windows 10 Mobile solo)|
 
 ### Cifrado
@@ -71,14 +70,6 @@ Use la **directiva de configuración general** de Microsoft Intune para Windows 
 |**Permitir cuenta de Microsoft**|Permite al usuario asociar una cuenta de Microsoft con el dispositivo.|
 |**Permitir añadir cuentas que no son de Microsoft de forma manual**|Permite al usuario agregar al dispositivo cuentas de correo electrónico que no estén asociadas a una cuenta de Microsoft.|
 |**Permitir la sincronización de la configuración de las cuentas de Microsoft**|Permite que la configuración de dispositivo y aplicación asociada a una cuenta de Microsoft se sincronice entre los dispositivos.|
-
-### Configuración de correo electrónico
-
-|Nombre de la configuración|Detalles|
-|----------------|----------------------|---------------------|
-|**Hacer que la cuenta Microsoft sea opcional en la aplicación Windows Mail**|Configure esta opción para quitar el requisito de una cuenta de Microsoft en Correo de Windows.<br>Windows 10 Escritorio solo|
-
-
 
 ### Microsoft Edge
 
@@ -127,7 +118,6 @@ Use la **directiva de configuración general** de Microsoft Intune para Windows 
 |**Permitir Bluetooth**|Habilita el uso de funcionalidades de Bluetooth en el dispositivo.|
 |**Permitir modo visible de Bluetooth **|Permite que otros dispositivos habilitados para Bluetooth detecten este dispositivo.|
 |**Permitir anuncios de Bluetooth**|Permite que los dispositivos reciban anuncios a través de Bluetooth.|
-|**Permitir modo conectable de Bluetooth **|**Importante:** esta configuración ya no es compatible con Windows 10 y se eliminará en el futuro.|
 |**Permitir restablecer teléfono**|Controla si el usuario puede restablecer su dispositivo a la configuración de fábrica.|
 |**Permitir conexión USB**|Controla si los dispositivos pueden tener acceso a dispositivos de almacenamiento externo a través de una conexión USB.|
 |**Permitir modo antirrobo**|Permite habilitar el modo antirrobo de Windows.|
@@ -177,6 +167,7 @@ Todos los valores son solo válidos para Windows 10 Escritorio.
 |Nombre de la configuración|Detalles|
 |----------------|---------------|
 |**Permitir actualizaciones automáticas**|Habilite esta configuración para permitir las actualizaciones automáticas. Luego, configure una de las opciones siguientes para controlar el comportamiento de las actualizaciones:<br /><br />**Notificar descarga**<br /><br />**Instalar automáticamente en tiempo de mantenimiento**<br /><br />**Instalar y reiniciar automáticamente en tiempo de mantenimiento**<br /><br />**Instalar y reiniciar automáticamente a la hora programada** **Nota:** cuando esta opción está seleccionada, también puede configurar los valores siguientes: **Eliminar la notificación para el usuario final** y **Definir el día de instalación para las actualizaciones programadas**.<br>(Windows 10 Escritorio solo)|
+|**Permitir características de evaluación**|Permite a Microsoft implementar características y configuraciones de la versión preliminar en dispositivos Windows 10. Puede seleccionar permitir que se instale únicamente la configuración o todas las configuraciones y características de la versión preliminar.|
 
 ## Configuración de directivas personalizadas
 Use la **directiva de configuración personalizada** de Microsoft Intune para Windows 10 y Windows 10 Mobile para implementar la configuración de OMA-URI (identificador uniforme de recursos de Open Mobile Alliance) que puede usarse para controlar características en dispositivos con Windows 10 y Windows 10 Mobile. Se trata de una configuración estándar que muchos fabricantes de dispositivos móviles usan para controlar las características del dispositivo.
@@ -332,6 +323,6 @@ Todos los dispositivos deben estar inscritos con Intune si quiere usar la direct
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -3,7 +3,7 @@ title: "Preparar la inscripción de dispositivos | Microsoft Intune"
 description: "Configure los requisitos previos de administración de dispositivos móviles (MDM) y prepárese para inscribir distintos sistemas operativos."
 keywords: 
 author: NathBarn
-manager: arob98
+manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
 ms.prod: 
@@ -13,14 +13,14 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f6f98d582ce9a686ca02682a9066d8b2162d6ab
-ms.openlocfilehash: 24b8434993d7661e12172ac0e5fe58d1e6621558
+ms.sourcegitcommit: 9b7b8f6e5182e228458f5ea75e804a638f1e2a2b
+ms.openlocfilehash: 7e3e29113dd03ea25f102d7f71c63e5c3faefad8
 
 
 ---
 
 # Preparar la inscripción de dispositivos en Microsoft Intune
-Para permitir que los empleados inscriban dispositivos móviles (incluidos [Android](set-up-android-management-with-microsoft-intune.md), [iOS y Mac](set-up-ios-and-mac-management-with-microsoft-intune.md), [Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md) y [equipos con Windows](set-up-windows-device-management-with-microsoft-intune.md)) con Intune, debe habilitar la inscripción de dispositivos. Para permitir la inscripción, debe establecer una entidad de administración de dispositivos móviles (MDM), configurar el Portal de empresa de Intune, asignar licencias y habilitar la asignación para la plataforma de dispositivos.
+Para permitir que los empleados inscriban dispositivos móviles (incluidos [Android](set-up-android-management-with-microsoft-intune.md), [iOS y Mac](set-up-ios-and-mac-management-with-microsoft-intune.md), [Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md) y [equipos Windows](set-up-windows-device-management-with-microsoft-intune.md)) en Intune, o administren dispositivos de la empresa, debe habilitar la inscripción de dispositivos. Para permitir la inscripción, debe establecer una entidad de administración de dispositivos móviles (MDM), configurar el Portal de empresa de Intune, asignar licencias y habilitar la asignación para la plataforma de dispositivos.
 
 ## Establecer la entidad de administración de dispositivos móviles
 La entidad de MDM define el servicio de administración que tiene permiso para administrar un conjunto de dispositivos. Las opciones para la entidad de MDM incluyen Intune y Configuration Manager con Intune. Si establece Configuration Manager como la entidad de administración, ningún otro servicio podrá usarse para la administración de dispositivos móviles.
@@ -109,6 +109,6 @@ También puede llevar a cabo lo siguiente:
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

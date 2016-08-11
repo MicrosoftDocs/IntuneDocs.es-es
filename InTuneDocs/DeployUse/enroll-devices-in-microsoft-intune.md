@@ -3,7 +3,7 @@ title: Inscribir dispositivos | Microsoft Intune
 description: "La administración de dispositivos móviles (MDM) hace uso de la inscripción para incluir dispositivos en la administración y permitir el acceso a los recursos."
 keywords: 
 author: NathBarn
-manager: arob98
+manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
 ms.prod: 
@@ -13,8 +13,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6256b1ed5edb72bf9f623555a4c6e3fddb864b32
-ms.openlocfilehash: 71f0637a1cb6fdafb590ca274fcc0f80707ed6ce
+ms.sourcegitcommit: d8e524b267622f91ed0c2ed854f931299f316312
+ms.openlocfilehash: 15f4af1f870d619f4fd51e88d1aef91b0b45e66d
 
 
 ---
@@ -89,7 +89,7 @@ Especifica si el método de inscripción permite la "afinidad de usuario", que c
   - Acceso condicional al correo electrónico y los datos de la empresa
   - Aplicación de portal de empresa
 
-[Afinidad de usuario](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#user-affinity-for-ios-corporate-owned-devices-using-the-company-portal) ([Volver a la tabla](#overview-of-device-enrollment-methods))
+[Afinidad de usuario](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#using-company-portal-on-dep-or-apple-configurator-enrolled-devices) ([Volver a la tabla](#overview-of-device-enrollment-methods))
 
 ### Bloqueo
 Especifica si el dispositivo puede bloquearse para impedir que el usuario quite la directiva de Intune, con lo que quitaría el dispositivo de la administración. En el caso de los dispositivos iOS, el bloqueo del dispositivo requiere que se encuentre en modo Supervisado.
@@ -124,6 +124,6 @@ Los equipos administrados con el software cliente de Intune no se pueden borrar 
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 777b87328e12b4d6b3de1b338fe802d92c1138a1
+ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
+ms.openlocfilehash: 9c89a70f8d9625504f6c710fe29f308dfd34530a
 
 
 ---
@@ -34,9 +34,11 @@ Si alguna vez anula la inscripción del dispositivo, este permanecerá cifrado.
 3.  Siga las instrucciones de la pantalla. Durante el cifrado, el dispositivo podría reiniciarse varias veces.
 
 ### Qué hacer si tiene problemas
-**Problema:** con el dispositivo ya cifrado, ve que ocurre una de las siguientes cosas: -  El botón de cifrado está deshabilitado.
--  Ve un mensaje que dice que aún es necesario realizar el cifrado.
--  Obtiene errores al intentar usar la aplicación de portal de empresa.
+**Problema:** Con el dispositivo ya cifrado, ocurre una de las siguientes cosas:
+
+- El botón de cifrado está deshabilitado.
+- Ve un mensaje en el que se indica que aún es necesario realizar el cifrado.
+- Obtiene errores al intentar usar la aplicación Portal de empresa.
 
 **Qué hacer:** asegúrese de que ha establecido un PIN o una contraseña en el dispositivo.
 
@@ -47,6 +49,6 @@ Si alguna vez anula la inscripción del dispositivo, este permanecerá cifrado.
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

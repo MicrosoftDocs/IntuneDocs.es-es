@@ -4,7 +4,7 @@ description: "Obtenga información acerca de las funcionalidades de Intune cuand
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/04/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: b2e5b04df846db1a0076da7db63a5906fbd25558
+ms.sourcegitcommit: 49a236359692a5bbccf9ee0bb263094434049a91
+ms.openlocfilehash: f5ade985900e2387b19b4ed2786f22d8a216d8d8
 
 
 ---
@@ -28,7 +28,7 @@ En la mayoría de los escenarios, los dispositivos se inscribirán con Microsoft
 
 -   **Protección antimalware**: Intune incluye Endpoint Protection, que ayuda a proteger los equipos del malware.
 
--   **Asistencia remota:** Intune permite a los usuarios ponerse en contacto con el personal de soporte técnico de TI, que puede proporcionar asistencia mediante una característica de escritorio remoto que se incluye con Intune <!--- (requires TeamViewer software)--->.
+-   **Asistencia remota**: Intune permite a los usuarios ponerse en contacto con el personal de soporte técnico de TI, que puede proporcionar asistencia mediante una característica de Escritorio remoto que se incluye con Intune (requiere el software TeamViewer).
 
 -   **Administración de licencias de software**: realice el seguimiento del número de licencias de software disponibles y del número de licencias disponibles que se usan.
 -   **Implementación de aplicaciones**: implemente software en los equipos que administra. Algunas características de administración de aplicaciones no están disponibles cuando los equipos se administran con el software cliente.
@@ -48,7 +48,7 @@ Intune puede administrar equipos que ejecutan las siguientes versiones de Window
 
 -   **Windows 8.1:** versiones Pro y Enterprise.
 
-- **Windows 10:** versiones Home, Pro, Education y Enterprise.
+- **Windows 10:** versiones Pro, Education y Enterprise.
 
 
 ## Requisitos mínimos de hardware
@@ -74,6 +74,6 @@ A continuación se indican los requisitos de software para instalar el cliente d
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 
