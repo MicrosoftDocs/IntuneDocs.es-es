@@ -13,8 +13,8 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 5468914de3444a709068b4d3d143d3b2828616eb
+ms.sourcegitcommit: 6dbb6012389d8058c2d9b1c46b4ae8c2418a6130
+ms.openlocfilehash: 30ebdfa1729df81a3b4a4a90b71aadacf373bb2d
 
 
 ---
@@ -26,7 +26,7 @@ Lea esta información para comprender cómo y dónde obtienen los usuarios final
 
 **Aplicaciones obligatorias**: son las aplicaciones que exige el administrador y que se instalan en el dispositivo con intervención mínima del usuario, según la plataforma.
 
-**Aplicaciones obligatorias**: son las aplicaciones que se proporcionan en la lista de aplicaciones del Portal de empresa y que un usuario puede instalar si lo desea.
+**Aplicaciones disponibles**: son las aplicaciones que se proporcionan en la lista de aplicaciones de portal de empresa y que un usuario puede instalar si quiere.
 
 **Aplicaciones administradas**: son aplicaciones que se pueden administrar mediante directivas y que están “encapsuladas” con Intune o se han creado con el kit de desarrollo de software (SDK) de administración de aplicaciones móviles (MAM) de Intune. Estas aplicaciones pueden administrarse mediante Intune y las directivas de aplicación pueden aplicarse a estas.
 
@@ -38,6 +38,6 @@ Lea esta información para comprender cómo y dónde obtienen los usuarios final
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 
