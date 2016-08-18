@@ -13,8 +13,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 8f342183590c1099661a0121c1d99c2aa3aa0ba4
+ms.sourcegitcommit: 46479cfe3d2648eefbaefd0a831af2412b509fce
+ms.openlocfilehash: e920f133aeaf0b0a938e07b4923869318a902d57
 
 
 ---
@@ -91,17 +91,11 @@ Si recibe un error al intentar inscribir el dispositivo en Intune, puede [enviar
 
     ![Escriba el PIN o la contraseña](./media/and-enroll-6-PIN-native.png)
 
-13.  Siga las instrucciones correspondientes al tipo de dispositivo que use (Android nativo o Samsung Knox). Para saber si tiene un dispositivo Samsung Knox, vaya a **Configuración** &gt; **Acerca del dispositivo**. Si no ve "Versión KNOX" en la lista, significa que el suyo es un dispositivo Android nativo.
-
-    -   Dispositivo nativo (distinto de Samsung Knox): en la pantalla **Nombre del certificado**, pulse en **Aceptar** para aceptar el certificado predeterminado.
-
-    ![Pantalla Name the certificate (Dar nombre al certificado)](./media/and-enroll-7-cert-native.png)
-
-    -   Dispositivo Samsung Knox: acepte la política de privacidad de Samsung Knox y pulse en **CONFIRMAR**.
+13.  Si usa un dispositivo Samsung Knox, pulse **Confirmar** y verá un mensaje que indica que el dispositivo se está inscribiendo. Si usa un dispositivo Android nativo, solo verá la pantalla siguiente, que muestra que el dispositivo se está inscribiendo.
 
     ![Directiva de privacidad de Samsung KNOX](./media/and-enroll-7-knox-privacy-policy.png)
 
-    Aparecerá el siguiente mensaje en la pantalla mientras Intune inscribe el dispositivo.
+    En esta pantalla se muestra que el dispositivo se está inscribiendo.
 
     ![Pantalla Inscribiendo el dispositivo...](./media/and-enroll-8-device-enrolling.png)
 
@@ -123,6 +117,6 @@ Antes de intentar instalar aplicaciones de empresa, vaya a **Configuración** &g
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

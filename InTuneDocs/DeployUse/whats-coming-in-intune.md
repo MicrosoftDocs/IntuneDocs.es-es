@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1f941fad998c6c0e07437c8f476df55325a4741b
-ms.openlocfilehash: dd7bd41188cee812aafc8c439f703fa4abd42858
+ms.sourcegitcommit: f02d8791bbca65a4bfda69e61e9e22c8124c436b
+ms.openlocfilehash: 09fb5dac0276b4da49795539f40dbde15cd69bf5
 
 
 ---
@@ -30,7 +30,7 @@ Los siguientes cambios están en fase de desarrollo de Intune. Todas estas carac
 
 ## Administración de aplicaciones
 ### Aplicaciones para iOS 9.3 ocultas y visibles
-En dispositivos con iOS 9.3 o posterior, podrá usar la lista de aplicaciones ocultas y visibles de la directiva de configuración general de iOS para:
+En dispositivos supervisados con iOS 9.3 o posterior, podrá usar la lista de aplicaciones ocultas y visibles de la directiva de configuración general de iOS para:
 - Especificar una lista de las aplicaciones ocultas para los usuarios. Los usuarios no pueden ver ni iniciar estas aplicaciones.
 - Especificar una lista de las aplicaciones que los usuarios pueden ver e iniciar. No se puede ver ni iniciar ninguna otra aplicación.
 
@@ -50,7 +50,7 @@ Esta configuración solo se puede usar en dispositivos que ejecutan Samsung KNOX
 ### Nuevas aplicaciones compatibles con las directivas de administración de aplicaciones móviles (MAM).
 La aplicación Yammer para [iOS](https://itunes.apple.com/app/yammer/id289559439?mt=8) y [Android](https://play.google.com/store/apps/details?id=com.yammer.v1) es compatible con las [directivas de administración de aplicaciones móviles (MAM) de Intune](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), independientemente de si el dispositivo está inscrito o no.
 
-Para ver una lista completa de aplicaciones compatibles con MAM, consulte el sitio de [Microsoft Intune application partners](https://www.microsoft.com/cloud-platform/microsoft-intune-partners) (Partners de aplicaciones de Microsoft Intune).
+Para ver una lista completa de aplicaciones compatibles con MAM, consulte el sitio de los [asociados de aplicaciones de Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners).
 <!--- TFS 1252335 & 1252336--->
 
 ## Administración de dispositivos
@@ -114,7 +114,7 @@ Con el lanzamiento de la nueva aplicación RMS sharing, quitaremos las siguiente
 - Visor de PDF de Intune
 - Visor de imágenes de Intune para Android de Google Play
 
-En lugar de usar las aplicaciones de visor de Intune, se recomienda usar la nueva aplicación Rights Management (RMS sharing) para Android, que permite implementar una aplicación en lugar de tres aplicaciones independientes para ver archivos corporativos de forma segura en dispositivos Android. Obtenga más información sobre la aplicación RMS sharing (con un vínculo a documentación).
+En lugar de usar las aplicaciones de visor de Intune, se recomienda usar la nueva aplicación Rights Management (RMS sharing) para Android, que permite implementar una aplicación en lugar de tres aplicaciones independientes para ver archivos corporativos de forma segura en dispositivos Android. Obtenga más información sobre la [aplicación RMS sharing](https://docs.microsoft.com/en-us/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune#viewing-media-files-with-the-rights-management-sharing-app).
 <!--- goes in 1608 What's New--->
 
 
@@ -123,6 +123,6 @@ Consulte [Novedades de Microsoft Intune](whats-new-in-microsoft-intune.md) para 
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

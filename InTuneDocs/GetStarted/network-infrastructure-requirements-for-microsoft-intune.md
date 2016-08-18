@@ -13,8 +13,8 @@ ms.assetid: 074de65b-84a5-4a01-a824-18ffd838eab0
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c671610b9c56d8b92d126d9902cce9c8c689ed63
-ms.openlocfilehash: 5f92ecf7d2590150c5341d81a1a976c71518e2fd
+ms.sourcegitcommit: 7bea7ba4ef59c6b1400414b59456e19dc1c152fb
+ms.openlocfilehash: 75e1c1bfbdbb14f50e7908b405619f777a674ac0
 
 
 ---
@@ -148,6 +148,7 @@ En la tabla siguiente se enumeran los puertos y los servicios a los que accede e
 |Servicios de Microsoft Update|\*.update.microsoft.com<br>download.microsoft.com<br>update.microsoft.com<br>\*.download.windowsupdate.com<br>download.windowsupdate.com<br>\*.windowsupdate.com<br>windowsupdate.microsoft.com<br>ntservicepack.microsoft.com|80 y 443|
 |Solicitudes de búsqueda de DNS|manage.microsoft.com.nsatc.net|80|
 |Comunicación de dispositivos de Samsung KNOX a través del firewall|Si desea habilitar dispositivos Samsung KNOX para que contacten con servidores KNOX a través del firewall, siga las instrucciones de Preguntas frecuentes de Samsung KNOX.||
+|Comunicación de acceso condicional|443|204.79.197.200|
 |Documentación, ayuda y soporte técnico:</br></br>*.livemeeting.com<br>\*.microsoftonline.com<br>\*.social.technet.microsoft.com<br>blogs.technet.com<br>go.microsoft.com<br>onlinehelp.Microsoft.com<br>www.microsoft.com|80|||
 
 
@@ -169,6 +170,6 @@ También puede usar un servidor proxy que almacene en caché el contenido para [
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

@@ -2,9 +2,9 @@
 title: "Pasos siguientes una vez completada la evaluación de Intune | Microsoft Intune"
 description: "Qué necesita saber sobre las suscripciones y licencias después de configurar la evaluación gratuita de 30 días de Intune"
 keywords: 
-author: Staciebarker
+author: lindavr
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/09/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: cad9ae15-26e5-418d-8ce5-c2dafc2071f0
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
-ms.openlocfilehash: 3edd1821f910f9c2ea9e8324a3ac08e373ec7b0a
+ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
+ms.openlocfilehash: 1c99894eeb63ea047887f3e3b9bdec68ff095d94
 
 
 ---
@@ -30,10 +30,10 @@ Puede convertir la evaluación gratuita de Intune en una suscripción de pago de
 
 -   **Contrato Enterprise** (&gt;más de 250 usuarios): el mejor programa de licencias para organizaciones con más de 250 usuarios. Este contrato le ofrece la flexibilidad de elegir entre software local y servicios en línea para adaptarse mejor a las necesidades de sus usuarios y optimizar su gasto en tecnología. Póngase en contacto con el administrador de cuentas de Microsoft o con su distribuidor local para obtener más información, o consulte el [sitio de licencias por volumen para empresa](http://www.microsoft.com/licensing/licensing-options/enterprise.aspx).
 
--   **Programa de suscripción en línea** (&lt;250 usuarios): [el programa de licencias por volumen de Online Services](http://www.microsoft.com/licensing/online-services/default.aspx) está diseñado específicamente para organizaciones con menos de 250 usuarios. Use este programa para suscribirse, administrar e implementar sus servicios de Intune.
+-   **Programa de suscripción en línea** (&lt;250 usuarios): el [programa de licencias por volumen de Online Services](http://www.microsoft.com/licensing/online-services/default.aspx) está diseñado específicamente para organizaciones con menos de 250 usuarios. Use este programa para suscribirse, administrar e implementar sus servicios de Intune.
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

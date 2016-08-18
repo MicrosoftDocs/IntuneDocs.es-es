@@ -13,8 +13,8 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 76d0d9c620000864a4a554600985ba351c18d359
-ms.openlocfilehash: 067838593f7a222b5949cbfaf20744104030aee6
+ms.sourcegitcommit: 7c244554eb4b6ae5a248b53a7b4b6171807f4bfa
+ms.openlocfilehash: e353391375ce7b54f0be479607349e5618de1c37
 
 
 ---
@@ -42,7 +42,7 @@ Siempre se deben inscribir los sistemas operativos de dispositivos móviles, com
 |**Descripción**|Dispositivo personal inscrito mediante Microsoft Intune|Dispositivo propiedad de la organización para un solo usuario|Dispositivo propiedad de la organización que se administra con una cuenta de administrador y se comparte entre varios usuarios.|Dispositivo sin usuario propiedad de la organización utilizado por muchos usuarios.|
 |**Usuario del dispositivo**|Propietario|Usuario asignado|Ninguna cuenta específica del usuario|Ningún usuario específico|
 |**¿Quién lo inscribe?**|Propietario|Administrador|Administrador de dispositivos|Cualquiera|
-|**¿Quién anula la inscripción?**|Propietario o administrador|Administrador|Administrador|Administrador|
+|**¿Quién anula la inscripción?**|Propietario o administrador|Plataforma |Administrador o usuario|Administrador o usuario|
 |**¿Quién puede restablecerlo?**|Propietario o administrador|Administrador|Administrador|Administrador|
 
 <div class="alert alert-tip">
@@ -80,6 +80,6 @@ Ahora ya conoce algunas de las capacidades que se pueden usar al inscribir dispo
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

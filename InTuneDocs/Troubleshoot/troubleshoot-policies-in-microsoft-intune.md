@@ -2,7 +2,7 @@
 title: "Directivas de solución de problemas | Microsoft Intune"
 description: "Solucionar problemas de configuración de directivas."
 keywords: 
-author: robstack
+author: robstackmsft
 manager: angrobe
 ms.date: 08/01/2016
 ms.topic: article
@@ -13,18 +13,15 @@ ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 98f15f304d5d372d05abfdd296ddff1ef98dd3eb
+ms.sourcegitcommit: 436d0c40ef317e1d258654d2164e7a1f8c35c5e1
+ms.openlocfilehash: 6bfa9bab46248be802679e70de18ff117171a1fb
 
 
 ---
 
 # Directivas de solución de problemas en Microsoft Intune
 
-Aquí verá enumerados algunos problemas que pueden surgir durante la configuración de directiva de Microsoft Intune y las recomendaciones para solucionar esos problemas.
-
-Si esta información no soluciona el problema, vea [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico para Microsoft Intune) para conocer otras formas de obtener ayuda.
-
+Si tiene problemas al implementar y administrar las directivas con Intune, empiece aquí. En este tema se incluyen algunos problemas comunes que pueden surgir y sus soluciones.
 
 ## ¿Está la directiva aplicada al dispositivo?
 **Problema:** no está claro si es una directiva concreta la que se aplica a un dispositivo o si el dispositivo se comporta de forma contraria a la directiva.
@@ -109,6 +106,6 @@ Si esta información para solucionar problemas no le ha ayudado, póngase en con
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

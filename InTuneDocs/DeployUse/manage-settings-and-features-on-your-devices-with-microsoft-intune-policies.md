@@ -13,8 +13,8 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 70b980c045d8d37aa4ea5bee5858c0c728d54114
+ms.sourcegitcommit: a083684da6abe9617f8b27604450c2a3b996b7cf
+ms.openlocfilehash: eeacb3f0898f2a1375a4119e01c939dd11d43940
 
 
 ---
@@ -28,7 +28,7 @@ Las directivas de Intune se dividen en las siguientes categorías. La categoría
 
 
 - **Directivas de configuración:** normalmente se usan para administrar las características y la configuración de seguridad en los dispositivos. Use la información de este tema para ver cómo crear e implementar estas directivas y para explorar las opciones disponibles.
-- **Directivas de cumplimiento de dispositivos:** definen las reglas y los valores de configuración que un dispositivo debe cumplir para que se considere conforme a las directivas de acceso condicional. Las directivas de cumplimiento también se pueden usar para supervisar y corregir problemas de compatibilidad con dispositivos independientemente del acceso condicional.
+- **Directivas de cumplimiento de dispositivos:** definen las reglas y los valores de configuración que un dispositivo debe cumplir para que se considere conforme a las directivas de acceso condicional. Las directivas de cumplimiento también se pueden usar para supervisar y corregir problemas de compatibilidad con dispositivos independientes del acceso condicional.
 Para obtener más información, consulte [Device compliance policies in Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md) (Directivas de cumplimiento de dispositivos de Microsoft Intune).
 - **Directivas de acceso condicional:** estas directivas le ayudan a proteger el correo electrónico y otros servicios en función de las condiciones que especifique.
 Para obtener más información, consulte [Restrict access to email and O365 services with Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (Restringir el acceso al correo electrónico y los servicios de O365 con Microsoft Intune).
@@ -100,7 +100,7 @@ Cuando se selecciona una directiva implementada, puede ver más información ace
 
 2.  Seleccione una de las siguientes acciones:
 
-- **Edit** (Editar): abra las propiedades de la directiva seleccionada para poder hacer cambios.
+- **Editar**: abra las propiedades de la directiva seleccionada para poder hacer cambios.
 - **Delete** (Eliminar): elimine la directiva seleccionada.<br>Al eliminar una directiva, se quita de todos los grupos en los que se ha implementado.
 - **Administrar implementación**: seleccione el grupo en el que quiera implementar la directiva y elija **Add** (Agregar).
 
@@ -108,7 +108,7 @@ Cuando se selecciona una directiva implementada, puede ver más información ace
 ## Preguntas más frecuentes sobre las directivas de Intune
 
 ### ¿Cuánto tiempo tardan los dispositivos móviles en obtener directivas o aplicaciones una vez implementados?
-Cuando se implementa una directiva o aplicación, Intune empieza inmediatamente a intentar notificar al dispositivo que debe conectar con el servicio Intune. Este proceso suele tardar menos de 5 minutos.
+Cuando se implementa una directiva o aplicación, Intune empieza inmediatamente a intentar notificar al dispositivo que debe conectar con el servicio Intune. Este proceso suele tardar menos de cinco minutos.
 
 Si un dispositivo no se conecta para recibir la directiva una vez enviada la primera notificación, Intune hace tres intentos más.  Si el dispositivo está desconectado (por ejemplo, está desactivado o no está conectado a una red), puede que no reciba las notificaciones. En ese caso, el dispositivo obtendrá la directiva en la próxima conexión programada con el servicio Intune, como se indica a continuación:
 
@@ -128,7 +128,7 @@ Si el dispositivo se acaba de inscribir, la frecuencia de conexión será más f
 Los usuarios también pueden abrir la aplicación del Portal de empresa y sincronizar el dispositivo para buscar la directiva inmediatamente en cualquier momento.
 
 ### ¿Qué acciones provocan que Intune envíe inmediatamente una notificación a un dispositivo?
-Los dispositivos conectan con Intune cuando reciben una notificación que se lo indica o durante la conexión programada periódicamente.  Cuando el destino es un dispositivo o usuario concreto con una acción como un borrado, bloqueo, restablecimiento de contraseña, implementación de aplicaciones, implementación de perfiles (Wi-Fi, VPN, correo electrónico, etc.) o implementación de directivas, Intune comenzará inmediatamente a intentar notificar al dispositivo que debe conectarse al servicio Intune para recibir estas actualizaciones.
+Los dispositivos conectan con Intune cuando reciben una notificación que se lo indica o durante la conexión programada periódicamente.  Cuando el destino es un dispositivo o usuario concreto con una acción como un borrado, bloqueo, restablecimiento de código de acceso, implementación de aplicaciones, implementación de perfiles (Wi-Fi, VPN, correo electrónico, etc.) o implementación de directivas, Intune comenzará inmediatamente a intentar notificar al dispositivo que debe conectarse al servicio Intune para recibir estas actualizaciones.
 
 Otros cambios, como la revisión de la información de contacto del Portal de empresa, no provocan una notificación inmediata a los dispositivos.
 
@@ -152,7 +152,7 @@ Se producen conflictos cuando dos configuraciones de directiva son iguales.  Por
 Si una directiva se implementa en la aplicación y se aplica y, a continuación, se implementa una segunda, la primera tendrá precedencia y se aplicará, mientras que la segunda presentará un conflicto. Si se aplican al mismo tiempo, lo que significa que no hay ninguna directiva anterior, ambas estarán en conflicto. Cualquier configuración en conflicto se establecerá en los valores más restrictivos.
 
 ### ¿Qué sucede cuando hay un conflicto de directivas personalizadas de iOS?
-Intune no evalúa la carga de archivos de configuración de Apple ni directivas personalizadas de OMA-URI. Sencillamente, se usa como mecanismo de entrega.
+Intune no evalúa la carga de archivos de configuración de Apple ni directivas personalizadas de identificador uniforme de recursos de Open Mobile Alliance (OMA-URI). Sencillamente, se usa como mecanismo de entrega.
 
 Al implementar una directiva personalizada, asegúrese de que los valores configurados no entran en conflicto con las directivas de cumplimiento, configuración o de otro tipo. En el caso de una directiva personalizada con conflictos de parámetros, el orden en que se aplican los conflictos es aleatorio.
 
@@ -215,6 +215,6 @@ Vea [Directivas de solución de problemas en Microsoft Intune](/intune/troublesh
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO1-->
 
 

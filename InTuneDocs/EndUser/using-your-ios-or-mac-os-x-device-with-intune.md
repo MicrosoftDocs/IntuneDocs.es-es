@@ -4,7 +4,7 @@ description: "Lista de vínculos a tareas que puede realizar en el dispositivo m
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 08/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,22 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: c91355b77850acbb76cd028bffb231e2ba1a5174
+ms.sourcegitcommit: 5c11b33ef2986ef3a88823c34900663a7f8195ac
+ms.openlocfilehash: d40620c3b4384e178af9c84bae85bcb09b4ffeee
 
 
 ---
 
 # Using your iOS or Mac OS X device with Intune
 
-Esta página contiene vínculos a todas las tareas que los usuarios finales pueden realizar en sus dispositivos administrados por Intune. Los administradores de TI pueden hacer referencia a esta información para ver los pasos que siguen los usuarios para realizar diversas tareas, que se agrupan en categorías: información relacionada con la inscripción, tareas de administración y problemas de cumplimiento.
+Este artículo contiene vínculos a todas las tareas que los usuarios finales pueden realizar en sus dispositivos administrados por Intune. Los administradores de TI pueden consultar esta información para ver los pasos que siguen los usuarios para realizar diversas tareas, que se agrupan en categorías: 
+- Instalación de aplicaciones del Portal de empresa e inscripción a Intune 
+- Tareas de administración posteriores a la inscripción
+- Problemas de cumplimiento
 
 ## Instalación de aplicaciones del Portal de empresa e inscripción a Intune
 
-La información de esta sección le ayudará con la instalación del Portal de empresa de Intune y con la inscripción de dispositivos iOS.
+La información de esta sección le ayuda con la instalación del Portal de empresa de Intune y con la inscripción de dispositivos iOS.
 
 - [Instale e inicie sesión en la aplicación Portal de empresa de Intune](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 - [Inscriba el dispositivo iOS en Intune](enroll-your-device-in-intune-ios.md)
@@ -35,7 +38,7 @@ La información de esta sección le ayudará con la instalación del Portal de e
 
 ## Cosas que puede hacer cuando el dispositivo está inscrito en Intune
 
-La información de esta sección le ayudará con las acciones que puede realizar después de que el dispositivo iOS esté inscrito en Intune.
+La información de esta sección le ayuda con las acciones que puede realizar después de que el dispositivo iOS esté inscrito en Intune.
 
 - [Usar aplicaciones administradas en el dispositivo](use-managed-apps-on-your-device-ios.md)
 - [Establecer o cambiar el código de acceso](set-or-change-your-passcode-ios.md)
@@ -48,12 +51,12 @@ La información de esta sección le ayudará con las acciones que puede realizar
 
 ## Solucionar problemas con el dispositivo
 
-La información de esta sección le ayudará a solucionar los problemas que pueda encontrar cuando el dispositivo iOS está inscrito en Intune.
+La información de esta sección le ayuda a solucionar los problemas que pueda encontrar cuando el dispositivo iOS está inscrito en Intune.
 
 - [Cómo volver a conectar un dispositivo iOS en riesgo](how-to-reconnect-a-compromised-ios-device.md)
 - [Enviar errores al administrador de TI](send-errors-to-your-it-admin-ios.md)
 - [Obtiene un error mientras usa la aplicación Portal de empresa](you-get-an-error-while-using-the-company-portal-app-ios.md)
-- [Si observa errores al intentar inscribir un dispositivo en Intune](you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md)
+- [Observa errores al intentar inscribir un dispositivo en Intune](you-see-errors-while-trying-to-enroll-your-device-in-intune-ios.md)
 - [Se le pedirá que identifique el dispositivo cuando esté intentando la inscripción](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
 - [¿Cómo se puede encontrar el número de serie de un dispositivo?](how-do-i-find-the-serial-number-on-my-device-ios.md)
 - [El dispositivo no tiene la versión necesaria mínima del sistema operativo](device-doesnt-have-the-required-minimum-operating-system-version-ios.md)
@@ -61,6 +64,6 @@ La información de esta sección le ayudará a solucionar los problemas que pued
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

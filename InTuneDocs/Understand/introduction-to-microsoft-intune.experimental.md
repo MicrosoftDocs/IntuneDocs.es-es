@@ -1,5 +1,4 @@
 ---
-experimental: true
 experiment_id: kgremban_images_080416
 title: "Introducción a Microsoft Intune | Microsoft Intune"
 description: "Obtenga información acerca de cómo Intune es el componente de administración de dispositivos móviles de la solución Enterprise Mobility + Security."
@@ -15,8 +14,8 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f88c9f6b856f91db8c9218ab41a87bc95f45a578
-ms.openlocfilehash: efc6fed1d9e0766dd0deb24e8f5f422d1f60f568
+ms.sourcegitcommit: dbb8a8fdcc39aa91f4d2c0a671447e44daf8570d
+ms.openlocfilehash: 1b5549e4e0ad7652ed39659d7ebe7b95049dcbe6
 
 
 ---
@@ -25,8 +24,6 @@ ms.openlocfilehash: efc6fed1d9e0766dd0deb24e8f5f422d1f60f568
 Microsoft Intune es el "brazo administrativo" de Microsoft Enterprise Mobility + Security (EMS, anteriormente llamado Enterprise Mobility Suite). La movilidad empresarial consiste en que sus empleados puedan ser productivos en todos sus dispositivos sin poner en peligro la información de su organización.  
 
 EMS es un conjunto integrado de aplicaciones diseñadas para favorecer la movilidad empresarial, así como la productividad, la identidad, el control de acceso, la administración y la protección de datos. Ofrece una manera eficaz de implementar y usar una solución de movilidad en su organización.  
-
-![Imagen de la visión de movilidad empresarial](..\media\em-vision.png)
 
 Intune le ayuda a administrar dispositivos y aplicaciones móviles. Se integra perfectamente con Azure Active Directory (Azure AD) para la identidad y el control de acceso y con Azure Rights Management (Azure RMS) para la protección de datos.  
 
@@ -38,6 +35,8 @@ Estos son algunos de los problemas empresariales comunes que Intune ayuda a reso
 * Suministro por parte de la empresa de «dispositivos compartidos» de uso limitado a los trabajadores.
 * Implementación por parte de la empresa de una estrategia segura de «bring your own device» (BYOD) o de dispositivos personales.
 * Admisión del acceso de empleados a Office 365 desde dispositivos y aplicaciones no controlados por la empresa (por ejemplo, en una feria comercial).
+
+![Imagen de la visión de movilidad empresarial](..\media\em-vision.png)
 
 Intune ofrece las siguientes herramientas principales:
 * **Administración de dispositivos móviles (MDM)**: capacidad de inscribir dispositivos en Intune para poder aprovisionar, configurar y supervisar esos dispositivos, además de llevar a cabo acciones en ellos, como su borrado.

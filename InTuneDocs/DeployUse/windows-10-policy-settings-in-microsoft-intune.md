@@ -13,8 +13,8 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7ef205aece89667ea84b9b73e42e71fc540fa257
-ms.openlocfilehash: cbfd2da544814dc93a818a1ca5bd0496a268634b
+ms.sourcegitcommit: 0178bba517b0fc9e02ba67e6f3aba7a8a0ee445f
+ms.openlocfilehash: 9daab32361cfdf8567d03a8ea6e6438e34b61aad
 
 
 ---
@@ -32,7 +32,7 @@ Use la configuración de directiva indicada en este tema para configurar las opc
 Use la **directiva de configuración general** de Microsoft Intune para Windows 10 para configurar las opciones generales de los dispositivos Windows 10 Escritorio y Windows 10 Mobile inscritos. 
 
 
-### Contraseña
+## - Contraseña
 
 |Nombre de la configuración|Detalles|
 |----------------|----------------------|
@@ -47,13 +47,13 @@ Use la **directiva de configuración general** de Microsoft Intune para Windows 
 |**Recordar historial de contraseñas** - **Impedir la reutilización de contraseñas anteriores**|Especifica el número de contraseñas usadas previamente que el dispositivo recuerda.|
 |**Requerir una contraseña cuando el dispositivo vuelva de un estado de inactividad**|Si está habilitado, el usuario debe escribir una contraseña para desbloquear el dispositivo en estado de inactividad.<br>(Windows 10 Mobile solo)|
 
-### Cifrado
+## - Cifrado
 
 |Nombre de la configuración|Detalles|
 |----------------|----------------------|
 |**Requerir cifrado en dispositivo móvil**|Habilita el cifrado en dispositivos de destino.<br>(Windows 10 Mobile solo)|
 
-### System (Sistema)
+## - Sistema
 
 |Nombre de la configuración|Detalles|
 |----------------|----------------------|
@@ -63,7 +63,7 @@ Use la **directiva de configuración general** de Microsoft Intune para Windows 
 |**Permitir que datos de diagnóstico y uso se envíen a Microsoft**|Determina la cantidad de datos de diagnóstico y uso que se envían a Microsoft desde los dispositivos.<br><br>**No**: no se envían datos a Microsoft.<br>**Básico**: el dispositivo solo envía información limitada a Microsoft.<br>**Mejorado**: envía datos de diagnóstico mejorados a Microsoft.<br>**Completo (recomendado)**: envía los mismos datos que **Mejorado**, además de datos adicionales sobre el estado del dispositivo.|
 
 
-### Cuenta y sincronización
+## - Cuenta y sincronización
 
 |Nombre de la configuración|Detalles|
 |----------------|----------------------|---------------------|
@@ -71,7 +71,7 @@ Use la **directiva de configuración general** de Microsoft Intune para Windows 
 |**Permitir añadir cuentas que no son de Microsoft de forma manual**|Permite al usuario agregar al dispositivo cuentas de correo electrónico que no estén asociadas a una cuenta de Microsoft.|
 |**Permitir la sincronización de la configuración de las cuentas de Microsoft**|Permite que la configuración de dispositivo y aplicación asociada a una cuenta de Microsoft se sincronice entre los dispositivos.|
 
-### Microsoft Edge
+## - Microsoft Edge
 
 |Nombre de la configuración|Detalles|
 |----------------|----------------------|
@@ -87,7 +87,7 @@ Use la **directiva de configuración general** de Microsoft Intune para Windows 
 |**Permitir administrador de contraseñas**|Habilita o deshabilita la característica Administrador de contraseñas de Edge.|
 |**Ubicación de la lista de sitios de Modo de empresa**|Especifica dónde se encuentra la lista de sitios web que se abrirá en modo de empresa. Los usuarios no pueden editar esta lista.<br>(Windows 10 Escritorio solo)|
 
-### Aplicaciones
+## - Aplicaciones
 
 |Nombre de la configuración|Detalles|
 |----------------|----------------------|---------------------|
@@ -95,7 +95,7 @@ Use la **directiva de configuración general** de Microsoft Intune para Windows 
 
 
 
-### Móvil
+## - Móvil
 
 |Nombre de la configuración|Detalles|
 |----------------|----------------------|---------------------|
@@ -103,7 +103,7 @@ Use la **directiva de configuración general** de Microsoft Intune para Windows 
 |**Permitir VPN sobre móvil**|Controla si el dispositivo puede tener acceso a las conexiones VPN cuando se conecta a una red móvil.|
 |**Permitir itinerancia de VPN sobre móvil**|Controla si el dispositivo puede tener acceso a las conexiones VPN cuando hay itinerancia a una red móvil.|
 
-### Hardware
+## - Hardware
 
 |Nombre de la configuración|Detalles|
 |----------------|----------------------|
@@ -122,7 +122,7 @@ Use la **directiva de configuración general** de Microsoft Intune para Windows 
 |**Permitir conexión USB**|Controla si los dispositivos pueden tener acceso a dispositivos de almacenamiento externo a través de una conexión USB.|
 |**Permitir modo antirrobo**|Permite habilitar el modo antirrobo de Windows.|
 
-### Funciones
+## - Funciones
 
 |Nombre de la configuración|Detalles|
 |----------------|----------------------|---------------------|
@@ -131,7 +131,7 @@ Use la **directiva de configuración general** de Microsoft Intune para Windows 
 |**Permitir a Cortana**|Habilita o deshabilita el asistente de voz de Cortana.|
 |**Permitir notificaciones del centro de actividades**|Habilita o deshabilita notificaciones del centro de actividades en la pantalla de bloqueo del dispositivo.<br>(Windows 10 Mobile solo)|
 
-### Defender
+## - Windows Defender
 
 Todos los valores son solo válidos para Windows 10 Escritorio.
 
@@ -162,7 +162,7 @@ Todos los valores son solo válidos para Windows 10 Escritorio.
 |**Procesos que se deben excluir al ejecutar un análisis o al utilizar protección en tiempo real**|Agrega uno o varios procesos del tipo **.exe**, **.com** o **.scr** a la lista de exclusiones. Estos procesos no se incluirán en los análisis en tiempo real ni programados.| 
 
 
-### Configuración de actualizaciones
+## - Actualizaciones
 
 |Nombre de la configuración|Detalles|
 |----------------|---------------|
@@ -176,14 +176,14 @@ Esta funcionalidad está destinada a permitirle implementar la configuración de
 
 
 
-### Configuración general de directiva personalizada
+## - General
 
 |Nombre de la configuración|Detalles|
     |----------------|--------------------|
     |**Nombre**|Escriba un nombre único para la directiva que le ayude a identificarla en la consola de Intune.|
     |**Descripción**|Proporcione una descripción general de la directiva y otra información relevante que le ayude a encontrarla.|
 
-### Configuración de OMA-URI de directiva personalizada
+## - Configuración de OMA-URI
 
 |Nombre de la configuración|Detalles|
     |--------|--------------------|
@@ -194,12 +194,12 @@ Esta funcionalidad está destinada a permitirle implementar la configuración de
     |**Valor**|Especifique el valor asociado con el OMA-URI especificado anteriormente.|
 
 
-## Configuración de URI personalizada para dispositivos de Windows 10
+## - Configuración de URI de Windows 10
 En este tema se enumeran los valores que puede configurar para dispositivos Windows 10 y Windows 10 Mobile en una **directiva personalizada de Windows 10** de Microsoft Intune.
 
 Todos los dispositivos deben estar inscritos con Intune si quiere usar la directiva de URI de Windows personalizada.
 
-### Configuración URI de directiva
+## - Directiva
 
 |Nombre de la directiva|Detalles|
 |---------------|------------|-----------|
@@ -272,7 +272,7 @@ Todos los dispositivos deben estar inscritos con Intune si quiere usar la direct
 |**Update/DeferUpgradePeriod**<br>(Escritorio y Mobile)|**Descripción:** directiva para aplazar actualizaciones de funciones durante un máximo de 8 meses<br /><br />**Ruta de acceso completa del URI:** ./Vendor/MSFT/Policy/Config/Update/DeferUpgradePeriod<br /><br />**Tipo de datos:** entero<br /><br />**Valores permitidos:**<br>**0**: aplicar actualizaciones inmediatamente (valor predeterminado)<br>**1**-**8**: número de meses durante los que aplazar actualizaciones de características.<br /><br />Para obtener más información, vea:<br>[Introducción al mantenimiento de Windows 10](https://technet.microsoft.com/library/mt598226.aspx)<br>[Plan de implementación de Windows 10](https://technet.microsoft.com/library/mt574241.aspx)|
 |**Update/PauseDeferrals**<br>(Escritorio y Mobile)|**Descripción:** permite que una máquina CBB deje de recibir actualizaciones durante 5 semanas. Debería usarse en caso de que haya un problema con una actualización.<br /><br />**Ruta de acceso completa del URI:** ./Vendor/MSFT/Policy/Config/Update/PauseDeferrals<br /><br />**Tipo de datos:** entero<br /><br />**Valores permitidos:**<br>**0**: aplicar actualizaciones inmediatamente (valor predeterminado)<br>**1**: pausar las actualizaciones (expira transcurridas 5 semanas)|
 
-### Configuración URI de Windows Defender
+## - Windows Defender
 
 |Nombre de la directiva|Detalles|
 |---------------|-----------|
@@ -302,7 +302,7 @@ Todos los dispositivos deben estar inscritos con Intune si quiere usar la direct
 |**ExcludedPaths**<br>(solo Escritorio)|**Ruta de acceso completa de URI:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedPaths<br /><br />**Tipo de datos:** cadena<br /><br />**Valores permitidos:**<br /><br />*&lt;lista de rutas de acceso separadas por punto y coma&gt;*<br /><br />Ejemplo: **c:\test;c:\test1.exe**<br /><br />**Valor predeterminado:** no se excluye ninguna ruta de acceso|
 |**ExcludedProcesses**<br>(solo Escritorio)|**Ruta de acceso completa de URI:** ./Vendor/MSFT/Policy/Config/Defender/ExcludedProcesses<br /><br />**Tipo de datos:** cadena<br /><br />**Valores permitidos:**<br>*&lt;lista de rutas de acceso separadas por punto y coma&gt;*<br>Ejemplo: **c:\test.exe;c:\test1.exe**<br>**Valor predeterminado:** no se excluye ningún proceso|
 
-### Configuración URI de explorador Edge
+## - Explorador Edge
 
 |Nombre de la directiva|Detalles|
 |---------------|------------|-----------|
@@ -323,6 +323,6 @@ Todos los dispositivos deben estar inscritos con Intune si quiere usar la direct
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

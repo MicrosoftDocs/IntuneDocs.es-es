@@ -13,23 +13,23 @@ ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 70e5920679149791c4856a1db905e564dc1278bd
+ms.sourcegitcommit: e64c4e077a3d2b75a8c246f097fcf7472d7edac6
+ms.openlocfilehash: 286f159e57820a8c8723004c167ae7296626894c
 
 
 ---
 
 # Resolver conflictos de directivas de Microsoft Intune y objetos de directiva de grupo (GPO)
-Intune usa directivas que le ayudan a administrar la configuración de los PC Windows que administra. Por ejemplo, podría usar una directiva para controlar la configuración del Firewall de Windows en los equipos. Muchas de las opciones de Intune son similares a las opciones que se pueden configurar con la directiva de grupo de Windows. Sin embargo, es posible que, en ocasiones, los dos métodos entren en conflicto.
+Intune usa directivas que le ayudan a administrar la configuración en equipos Windows. Por ejemplo, puede usar una directiva para controlar la configuración de Firewall de Windows en los equipos. Muchas de las opciones de Intune son similares a las opciones que se pueden configurar con la directiva de grupo de Windows. Pero es posible que, en ocasiones, los dos métodos entren en conflicto.
 
 Cuando se producen conflictos, la directiva de grupo de nivel de dominio tiene prioridad sobre la directiva de Intune, a menos que el equipo no pueda iniciar sesión en el dominio. En este caso, la directiva de Intune se aplica al equipo cliente.
 
 ## Qué hacer si se utiliza la directiva de grupo
-Compruebe que las directivas que aplica no se administran mediante la directiva de grupo. Para evitar conflictos, podría emplear uno o más de los siguientes métodos:
+Asegúrese de que las directivas que aplica no se administran mediante la directiva de grupo. Para evitar conflictos, puede usar uno o más de los siguientes métodos:
 
 -   Mueva los equipos a una unidad organizativa (UO) de Active Directory que no tenga aplicada la configuración de la directiva de grupo antes de instalar el cliente de Intune. También es posible bloquear la herencia de directivas de grupo en las UO que contienen equipos inscritos en Intune a los que no quiere aplicar la configuración de la directiva de grupo.
 
--   Use un filtro de grupo de seguridad para restringir los GPO únicamente a los equipos que no se administran mediante Intune. 
+-   Use un filtro de grupo de seguridad para restringir los GPO únicamente a los equipos que no se administran mediante Intune.
 
 -   Deshabilite o quite los objetos de directiva de grupo que entran en conflicto con las directivas de Intune.
 
@@ -102,13 +102,13 @@ WMI filters selectively apply GPOs to computers that satisfy the conditions of a
 For more information about how to apply WMI filters in Group Policy, see the blog post [Security Filtering, WMI Filtering, and Item-level Targeting in Group Policy Preferences](http://go.microsoft.com/fwlink/?LinkId=177883). --->
 
 
-La directiva de grupo le permite aplicar los GPO únicamente a los grupos de seguridad especificados en el área **Filtrado de seguridad** de la Consola de administración de directivas de grupo para un GPO seleccionado. De forma predeterminada, los GPO se aplican a **Usuarios autenticados**.
+Puede aplicar los GPO únicamente a los grupos de seguridad especificados en el área **Filtrado de seguridad** de la Consola de administración de directivas de grupo para un GPO seleccionado. De forma predeterminada, los GPO se aplican a *usuarios autenticados*.
 
--   En el complemento **Usuarios y equipos de Active Directory**, cree un nuevo grupo de seguridad que contenga los equipos y las cuentas de usuario que no quiere administrar mediante Intune. Por ejemplo, el nombre del grupo podría ser **No en Microsoft Intune**.
+-   En el complemento **Usuarios y equipos de Active Directory**, cree un grupo de seguridad que contenga los equipos y las cuentas de usuario que no quiere administrar mediante Intune. Por ejemplo, el nombre del grupo podría ser *No en Microsoft Intune*.
 
 -   En la Consola de administración de directivas de grupo, en la pestaña **Delegación** del GPO seleccionado, haga clic con el botón derecho en el nuevo grupo de seguridad para delegar los permisos **Lectura** y **Aplicar directiva de grupo** apropiados en los usuarios y equipos del grupo de seguridad. (Los permisos**Aplicar directiva de grupo** están disponibles en el cuadro de diálogo **Avanzadas** ).
 
--   A continuación, aplique el nuevo filtro de grupo de seguridad a un GPO seleccionado y quite el filtro predeterminado **Usuarios autenticados** .
+-   Después, aplique el nuevo filtro de grupo de seguridad a un GPO seleccionado y quite el filtro predeterminado **Usuarios autenticados**.
 
 El nuevo grupo de seguridad debe mantenerse inscrito en los cambios del servicio de Intune.
 
@@ -117,6 +117,6 @@ El nuevo grupo de seguridad debe mantenerse inscrito en los cambios del servicio
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

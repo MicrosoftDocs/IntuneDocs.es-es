@@ -2,7 +2,7 @@
 title: "Solucionar problemas de implementación de aplicaciones | Microsoft Intune"
 description: "Este tema le ayudará a solucionar problemas de implementación de aplicaciones con Microsoft Intune."
 keywords: 
-author: robstack
+author: robstackmsft
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
@@ -13,29 +13,24 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 44af28c18980e549924139badd8f3ca439dc29b3
+ms.sourcegitcommit: bbee6d3fec02a4d96b31a44a31218f684e0267c8
+ms.openlocfilehash: ed961a945d0b7872553f2be2917ba273709b6d35
 
 
 ---
 
 # Solucionar problemas de implementación de aplicaciones en Microsoft Intune
-Este tema le ayudará a solucionar problemas de implementación de aplicaciones con Microsoft Intune.
+Si tiene problemas al implementar y administrar aplicaciones con Intune, empiece aquí. En este tema se incluyen algunos problemas comunes que pueden surgir y sus soluciones.
 
-Si esta información no soluciona el problema, vea [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico para Microsoft Intune) para conocer otras formas de obtener ayuda.
+## Problemas habituales de implementación de aplicaciones
 
+### Los usuarios no pueden iniciar sesión en el Portal de empresa de Intune
 
-## Problemas típicos de implementación de aplicaciones
+1.  Asegúrese de que la cuenta de usuario existe y está habilitada en el [Portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854).
 
-### Si no puede iniciar sesión en el portal de empresa de Microsoft Intune
+3.  En el [Portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), asegúrese de que el usuario especifica el nombre de usuario correcto para iniciar sesión en Intune y de que tiene el siguiente formato: **joe@dominio.com**. Si detecta que el usuario está especificando una contraseña incorrecta, pídale que la restablezca.
 
-1.  Compruebe si su cuenta existe en el [portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) o si está deshabilitada.
-
-2.  Asegúrese de que se ha aprovisionado en esta cuenta en el [portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854).
-
-3.  En el [portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), asegúrese de que usa el nombre de usuario y la contraseña correctos para iniciar sesión en Intune y de que están tienen el siguiente formato: **joe@dominio.com**.
-
-### Si falta la información de contacto de TI en el portal de empresa
+### Falta la información de contacto de TI en el Portal de empresa
 
 1.  En la consola de administración de Intune, seleccione **Administración** &gt; **Portal de empresa**.
 
@@ -105,6 +100,6 @@ Si esta información para solucionar problemas no le ha ayudado, póngase en con
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 
