@@ -13,18 +13,18 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 49a236359692a5bbccf9ee0bb263094434049a91
-ms.openlocfilehash: f5ade985900e2387b19b4ed2786f22d8a216d8d8
+ms.sourcegitcommit: a6caef9e0f4d6235ecf1a89c1765d6c8e6ce1a7b
+ms.openlocfilehash: e5e3833a38434d4fe55cae554fc49f567b606ad8
 
 
 ---
 
 # Funciones de administración de equipos Windows (con el cliente de equipo de Microsoft Intune)
-En la mayoría de los escenarios, los dispositivos se inscribirán con Microsoft Intune, lo que proporciona un mayor número de funciones que el cliente de equipo de Intune. Sin embargo, también puede administrar los equipos mediante el cliente de equipo de Intune, que proporciona las siguientes características:
+En la mayoría de los escenarios, los dispositivos se inscribirán con Microsoft Intune, lo que proporciona un mayor número de funciones que el cliente de equipo de Intune. En cambio, también puede administrar los equipos mediante el cliente de equipo de Intune, que proporciona las siguientes características:
 
--   **Administrar actualizaciones de software**: puede mantener actualizados los equipos y administrar cuándo se aplican las actualizaciones.
+-   **Administración de actualización de software**: puede mantener actualizados los equipos y decidir cuándo se aplican las actualizaciones.
 
--   **Directiva del firewall de Windows**: ayuda a garantizar que ningún equipo que se use en la empresa tenga un firewall de Windows inactivo o mal configurado.
+-   **Directiva del Firewall de Windows**: ayuda a garantizar que ningún equipo que se use en la compañía tenga un Firewall de Windows inactivo o mal configurado.
 
 -   **Protección antimalware**: Intune incluye Endpoint Protection, que ayuda a proteger los equipos del malware.
 
@@ -37,18 +37,18 @@ En la mayoría de los escenarios, los dispositivos se inscribirán con Microsoft
 Intune admite la instalación del software cliente de equipos en hasta 7.000 dispositivos de Windows.
 
 ## Requisitos de sistema operativo
-Intune puede administrar equipos que ejecutan las siguientes versiones de Windows (x86 y x64):
+Intune puede administrar equipos que ejecutan las siguientes versiones de Windows (32 y 64 bits):
 
 
--   **Windows Vista**: versiones Business, Enterprise y Ultimate.
+-   **Windows Vista**: versiones Business, Enterprise y Ultimate
 
--   **Windows 7:** versiones Pro, Enterprise y Ultimate (sin Service Pack o con SP1).
+-   **Windows 7**: versiones Pro, Enterprise y Ultimate (sin Service Pack o con SP1)
 
--   **Windows 8:** versiones Pro y Enterprise.
+-   **Windows 8**: versiones Pro y Enterprise
 
--   **Windows 8.1:** versiones Pro y Enterprise.
+-   **Windows 8.1**: versiones Pro y Enterprise
 
-- **Windows 10:** versiones Pro, Education y Enterprise.
+- **Windows 10**: versiones Pro, Education y Enterprise
 
 
 ## Requisitos mínimos de hardware
@@ -65,8 +65,8 @@ A continuación se indican los requisitos de software para instalar el cliente d
 
 |Requisito|Detalles|
 |---------------|--------------------|
-|Permisos administrativos|La cuenta que instala el software de cliente debe tener permisos de administrador local en ese equipo.|
-|Windows Installer 3.1|El equipo debe tener instalado como mínimo Windows Installer 3.1.|
+|Permisos administrativos|La cuenta que instala el software cliente debe tener permisos de administrador local en ese equipo.|
+|Windows Installer 3.1|El equipo debe tener, como mínimo, Windows Installer 3.1.|
 |Quitar software cliente incompatible|Antes de instalar el software cliente de equipo de Intune, debe desinstalar el siguiente software cliente del equipo:<br /><br />- Cualquier versión de Configuration Manager<br />- Cualquier versión de Microsoft Systems Management Server (SMS)|
 
 ### Consulte también
@@ -74,6 +74,6 @@ A continuación se indican los requisitos de software para instalar el cliente d
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

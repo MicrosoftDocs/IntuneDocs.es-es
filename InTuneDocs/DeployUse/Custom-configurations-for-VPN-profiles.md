@@ -13,8 +13,8 @@ ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a124663a80bb477d0312faa0fb43e4457ba8246
-ms.openlocfilehash: ae5ac5c697195f8b45f500cfa9d0de24953f8cb0
+ms.sourcegitcommit: 374a56612b5c2a4dfd65d920307d5a4deb709b9b
+ms.openlocfilehash: e96daf7f10db82adf0f4f92412128fabbe652d51
 
 
 ---
@@ -24,28 +24,28 @@ ms.openlocfilehash: ae5ac5c697195f8b45f500cfa9d0de24953f8cb0
 ## Crear una configuración personalizada
 Puede usar configuraciones personalizadas para crear perfiles de VPN en Intune. Para crear una configuración personalizada:
 
-   1. En la consola de administración de Intune, seleccione **Directiva** -> **Agregar directiva** -> *<Expand platform>* -> **Configuración personalizada** -> **Crear directiva**.
+   1. En la consola de administración de Intune, seleccione **Directiva** > **Agregar directiva** > *<Expand platform>* > **Configuración personalizada** > **Crear directiva**.
    2. Indique un nombre para la directiva.
-   3. En cada opción de URI, haga clic en **Agregar** y suministre la información que se le pida. Este podría ser un ejemplo:
+   3. En cada opción de configuración del URI, elija **Agregar** y proporcione la información que se le solicite. Este podría ser un ejemplo:
 
    ![Cuadro de diálogo de configuración personalizada de perfil de VPN](./media/Intune_Add_VPN_URI.png)
 
-   4.  Tras especificar todos los valores de URI, haga clic en **Guardar directiva** y, después, implemente la directiva.
+   4.  Una vez que haya escrito todas las opciones de configuración del URI, elija **Guardar directiva** y, después, impleméntela.
 
 ## Implementar una directiva de configuración
 
-1.  En el área de trabajo **Directiva** , seleccione la directiva que quiera implementar y, a continuación, haga clic en **Administrar implementación**.
+1.  En el área de trabajo **Directiva**, elija la directiva que quiera implementar y, después, haga clic en **Administrar implementación**.
 
 2.  En el cuadro de diálogo **Administrar la implementación** :
 
-    -   **Para implementar la directiva**: seleccione uno o más grupos en los que quiera implementar la directiva y haga clic en **Agregar** &gt; **Aceptar**.
+    -   **Para implementar la directiva**: seleccione uno o más grupos en los que quiera implementarla y, luego, haga clic en **Agregar** &gt; **Aceptar**.
 
-    -   **Para cerrar el cuadro de diálogo sin implementarla**: haga clic en **Cancelar**.
+    -   **Para cerrar el cuadro de diálogo sin implementarla:** seleccione **Cancelar**.
 
-Cuando se selecciona una directiva implementada, puede ver más información acerca de la implementación en la parte inferior de la lista de directivas.
+Cuando elige una directiva implementada, puede ver más información sobre la implementación en la parte inferior de la lista de directivas.
 
 ##Ejemplo de valores de URI de una configuración personalizada de perfil de VPN
-Estas son entradas de ejemplo de valores de URI para crear una configuración personalizada para una VPN en una empresa ficticia denominada Contoso. Para obtener más información, como el tipo de datos de cada entrada, vea [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx) (CSP de VPNv2).
+Estas son entradas de ejemplo de valores de URI para crear una configuración personalizada para una VPN en una empresa ficticia denominada Contoso. Para obtener más información, como el tipo de datos de cada entrada, vea [VPNv2 CSP (CSP de VPNv2)](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx).
 
 VPN de Contoso nativa (IKEv2): ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
 
@@ -83,7 +83,7 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 
 **./Vendor/MSFT/VPNv2/ContosoVPN/TrafficFilterList/1/App/Id** Microsoft.MicrosoftEdge_8wekyb3d8bbwe
 
-Los clientes que tengan preguntas sobre cómo usar estos valores o que necesiten más información sobre qué hacen deben consultar la documentación de CSP correspondiente: https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx
+Los clientes que tengan preguntas sobre cómo usar estas opciones de configuración o que necesiten más información sobre lo que hacen, deben consultar la documentación del proveedor de servicios de configuración (CSP) correspondiente: https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx.
 
 ## Valores de URI para una VPN por aplicación de Android en PulseSecure
 ### URI PERSONALIZADO PARA LISTA DE PAQUETES
@@ -112,6 +112,6 @@ Ejemplos:
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 3dfe3f8a0a8538d14acddb9a7c9541bae928b6e6
+ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
+ms.openlocfilehash: ba7ac081f2b8b2228b0052a1d288957bfc11267f
 
 
 ---
@@ -22,7 +22,11 @@ ms.openlocfilehash: 3dfe3f8a0a8538d14acddb9a7c9541bae928b6e6
 
 # Uso de un dispositivo Android con Intune
 
-Esta página contiene vínculos a todas las tareas que los usuarios finales pueden realizar en sus dispositivos administrados por Intune. Los administradores de TI pueden hacer referencia a esta información para ver los pasos que siguen los usuarios para realizar diversas tareas, que se agrupan en categorías: información relacionada con la inscripción, tareas de administración y problemas de cumplimiento.
+Este artículo contiene vínculos a todas las tareas que los usuarios finales pueden realizar en sus dispositivos administrados por Intune. Los administradores de TI pueden consultar esta información para ver los pasos que siguen los usuarios para realizar diversas tareas, que se agrupan en categorías: 
+
+- Instalación de aplicaciones del Portal de empresa e inscripción a Intune 
+- Tareas de administración posteriores a la inscripción
+- Problemas de cumplimiento
 
 ## Instalación de aplicaciones del Portal de empresa e inscripción a Intune
 
@@ -67,6 +71,6 @@ La información de esta sección le ayudará a solucionar los problemas que pued
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO2-->
 
 

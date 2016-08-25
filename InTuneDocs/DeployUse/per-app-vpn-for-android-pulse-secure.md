@@ -13,56 +13,53 @@ ms.assetid: ac65e906-3922-429f-8d9c-d313d3126645
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87aea89a323fb05087322fb117d0be2e579a06ff
-ms.openlocfilehash: 6eda2828a801700e885d1bed667f9260f325e175
+ms.sourcegitcommit: a2464a9d2276319f75a3da7db70c2613152bed9b
+ms.openlocfilehash: 177ed5f693b8f1ce16d96e1b3e729630d661475f
 
 
 ---
 
 # Usar una directiva personalizada para crear un perfil de VPN por aplicación para dispositivos Android
 
-Puede crear un perfil de VPN por aplicación para dispositivos Android administrados por Intune. Primero creará un perfil de VPN que use el tipo de conexión Pulse Secure y, después, una directiva de configuración personalizada que asocie dicho perfil a aplicaciones específicas. Después de implementar las directivas en los grupos de dispositivos o usuarios de Android, cuando abra una de las aplicaciones especificadas en dichos dispositivos, abrirá una conexión VPN para esa aplicación.
+Puede crear un perfil de VPN por aplicación para dispositivos Android administrados por Intune. Primero, cree un perfil de VPN que use el tipo de conexión Pulse Secure. Después, cree una directiva de configuración personalizada que asocie el perfil de VPN con las aplicaciones específicas. Después de implementar la directiva en sus grupos de usuarios o dispositivo Android, cuando un usuario abra una de las aplicaciones especificadas en uno de esos dispositivos, una conexión VPN se abre para esa aplicación.
 
 > [!NOTE]
-> 
+>
 > Para este perfil solo se admite el tipo de conexión Pulse Secure.
 
 
-### Paso 1: crear un perfil de VPN
+### Paso 1: Crear un perfil de VPN
 
-1. En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), haga clic en **Directiva** > **Agregar directiva**.
-2. Seleccione una plantilla para la nueva directiva. Para ello, expanda **Android** y elija **Perfil de VPN (Android 4 y versiones posteriores)**.
-
+1. En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), seleccione **Directiva** > **Agregar directiva**.
+2. Para seleccionar una plantilla para la nueva directiva, expanda **Android** y, después, elija **Perfil de VPN (Android 4 y versiones posteriores)**.
 3. En la plantilla, para **Tipo de conexión**, elija **Pulse Secure**.
-4. Complete y guarde el perfil de VPN. Para obtener más información sobre los perfiles de VPN, vea [Conexiones VPN](vpn-connections-in-microsoft-intune.md).
+4. Complete y guarde el perfil de VPN. Para obtener más información sobre los perfiles de VPN, vea [Conexiones VPN](../deploy-use/vpn-connections-in-microsoft-intune.md).
 
 > [!NOTE]
-> 
-> Tome nota del nombre del perfil de VPN para usarlo en el paso siguiente.   Por ejemplo, **MyAppVpnProfile**.
+>
+> Tome nota del nombre del perfil de VPN para usarlo en el paso siguiente. Por ejemplo, MyAppVpnProfile.
 
-### Paso 2: crear una directiva de configuración personalizada
+### Paso 2: Crear una directiva de configuración personalizada
 
-   1. En la consola de administración de Intune, seleccione **Directiva** -> **Agregar directiva** -> **Android** -> **Configuración personalizada** -> **Crear directiva**.
-   2. Indique un nombre para la directiva.
-   3. En **Configuración de OMA-URI**, haga clic en **Agregar**.
+   1. En la consola de administración de Intune, elija **Directiva** > **Agregar directiva** > **Android** > **Configuración personalizada** > **Crear directiva**.
+   2. Especifique un nombre para la directiva.
+   3. En **Configuración de OMA-URI**, elija **Agregar**.
    4. Proporcione un nombre de configuración.
    5. Para **Tipo de datos**, especifique **Cadena**.
-   6. Para **OMA-URI**, especifique esta cadena: **./Vendor/MSFT/VPN/Profile/*Nombre*/PackageList**, donde *Nombre* es el nombre del perfil de VPN que anotó en el paso 1. En nuestro ejemplo, la cadena sería **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
-   7.   En **Valor**, proporcione una lista de los paquetes que se deben asociar con el perfil separados por punto y coma.  Por ejemplo, si quiere que Excel y el explorador Google Chrome usen la conexión VPN, escriba: **com.microsoft.office.excel;com.android.chrome**.
+   6. Para **OMA-URI**, especifique esta cadena: **./Vendor/MSFT/VPN/Profile/*Name*/PackageList**, donde *Name* es el nombre del perfil de VPN que ha anotado en el paso 1. En nuestro ejemplo, la cadena sería **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
+   7.   En **Valor**, cree una lista de los paquetes que se van a asociar con el perfil separados por punto y coma. Por ejemplo, si quiere que Excel y el explorador Google Chrome usen la conexión VPN, escriba: **com.microsoft.office.excel;com.android.chrome**.
 
 
-   ![Directiva personalizada de ejemplo de VPN por aplicación de Android](..\media\android_per_app_vpn_oma_uri.png)
+    ![Directiva personalizada de ejemplo de VPN por aplicación de Android](..\media\android_per_app_vpn_oma_uri.png)
+
 #### Establecer la lista de aplicaciones como lista negra o lista blanca (opcional)
-Puede especificar que la lista de aplicaciones *no* tiene permiso para usar la conexión VPN mediante el valor **BLACKLIST**.  Todas las demás aplicaciones se conectarán a través de VPN.
-
-También puede especificar que *solo* las aplicaciones especificadas pueden usar la conexión VPN mediante el valor **WHITELIST**.
-
-
-1.  En Configuración de OMA-URI, haga clic en **Agregar**.
-2.  Proporcione un nombre de configuración.
-3.  Para **Tipo de datos**, especifique **Cadena**.
-4.  Para **OMA-URI**, especifique esta cadena: **./Vendor/MSFT/VPN/Profile/*Nombre*/Mode**, donde *Nombre* es el nombre del perfil de VPN que anotó en el paso 1. En nuestro ejemplo, la cadena sería **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**.
-5.  En **Valor**, escriba **BLACKLIST** o **WHITELIST**.
+  Puede especificar una lista de aplicaciones que *no pueden* usar la conexión VPN mediante el valor **BLACKLIST**. Todas las demás aplicaciones se conectarán a través de la VPN.
+De manera alternativa, puede usar el valor **WHITELIST** para especificar una lista de aplicaciones que *pueden* usar la conexión VPN. Las aplicaciones que no están en la lista no se conectarán a través de la VPN.
+  1.    En **Configuración de OMA-URI**, elija **Agregar**.
+  2.    Proporcione un nombre de configuración.
+  3.    Para **Tipo de datos**, especifique **Cadena**.
+  4.    Para **OMA-URI**, use esta cadena: **./Vendor/MSFT/VPN/Profile/*Name*/Mode**, donde *Name* es el nombre del perfil de VPN que ha anotado en el paso 1. En nuestro ejemplo, la cadena sería **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**.
+  5.    En **Valor**, escriba **BLACKLIST** o **WHITELIST**.
 
 
 
@@ -70,18 +67,15 @@ También puede especificar que *solo* las aplicaciones especificadas pueden usar
 
 Debe implementar *ambas* directivas en los *mismos* grupos de Intune.
 
-   1.  En el área de trabajo **Directiva** , seleccione la directiva que quiera implementar y, a continuación, haga clic en **Administrar implementación**.
-
+1.  En el área de trabajo **Directiva**, seleccione la directiva que quiera implementar y, después, haga clic en **Administrar implementación**.
 2.  En el cuadro de diálogo **Administrar la implementación** :
+    -   **Para implementar la directiva**, seleccione uno o más grupos en los que quiera implementar la directiva y elija **Agregar** > **Aceptar**.
+    -   **Para cerrar el cuadro de diálogo sin implementar la directiva**, elija **Cancelar**.
 
-    -   **Para implementar la directiva**: seleccione uno o más grupos en los que quiera implementar la directiva y haga clic en **Agregar** &gt; **Aceptar**.
-
-    -   **Para cerrar el cuadro de diálogo sin implementarla**: haga clic en **Cancelar**.
-
-En el área de trabajo **Directiva** de la página **General** , un resumen de estado y las alertas identifican los problemas de la directiva que requieren su atención. Además, aparece un resumen de estado en el área de trabajo Panel.
+En el área de trabajo **Directiva** de la página **General** , un resumen de estado y las alertas identifican los problemas de la directiva que requieren su atención. Además, aparece un resumen de estado en el área de trabajo **Panel**.
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 

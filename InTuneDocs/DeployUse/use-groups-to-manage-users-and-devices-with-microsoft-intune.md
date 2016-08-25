@@ -13,13 +13,68 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 53a7bda5dd5adcac512c413c7069723ae638f279
+ms.sourcegitcommit: 5ab9592c253238fd832f8b48372e5474fcfc5331
+ms.openlocfilehash: 96b0cd997544b2013efaca818d614c9802baaa46
 
 
 ---
+## Aviso sobre las próximas mejoras en la experiencia de administración de grupos
+
+Teniendo en cuenta los comentarios de tener una experiencia de agrupación y destino en Enterprise Mobility + Security, estamos convirtiendo los grupos de Intune en grupos de seguridad basados en Azure Active Directory. Esto unificará la administración de grupos en Intune y Azure Active Directory (Azure AD). La nueva experiencia le evitará tener que duplicar grupos entre servicios y le proporcionará extensibilidad mediante PowerShell y Graph. 
+
+### ¿Cómo me afecta esto ahora?
+Este cambio no le afectará ahora, pero le podemos especificar las novedades:
+
+-   En septiembre, las nuevas cuentas que se hayan aprovisionado después del lanzamiento del servicio mensual usarán los grupos de seguridad de Azure AD en lugar de los grupos de usuarios de Intune.   
+-   En octubre, las nuevas cuentas que se hayan aprovisionado después del lanzamiento del servicio mensual administrarán los grupos basados en dispositivos y usuarios en el Portal de Azure AD. No afecta a los clientes existentes.
+-   En noviembre, el equipo del producto de Intune iniciará la migración de los clientes existentes a la nueva experiencia de administración de grupos basada en Azure AD. Todos los grupos de dispositivos y usuarios de Intune se migrarán a los grupos de seguridad de Azure AD. La migración se realizará en lotes a partir de noviembre. No iniciaremos las migraciones hasta que podamos minimizar cualquier impacto en su trabajo diario y esperamos que no se produzca ningún impacto en el usuario final. También le avisaremos antes de la migración de su cuenta.
+
+
+### ¿Cómo y cuándo migraré a la nueva experiencia de grupos?
+Los clientes actuales se migrarán en un período de tiempo. Estamos terminando la programación de esa migración y actualizaremos este tema en unas semanas para proporcionar más detalles. Obtendrá un aviso antes de la migración. Si tiene alguna duda con respecto a la migración, póngase en contacto con nuestro equipo de migración en [intunegrps@microsoft.com](intunegrps@microsoft.com).
+
+### ¿Qué pasa con mis grupos de dispositivos y usuarios existentes?
+ Los grupos de dispositivos y usuarios que ha creado se migrarán a los grupos de seguridad de Azure AD. Los grupos predeterminados de Intune, como el grupo Todos los usuarios, solo se migrarán si los está usando en implementaciones en el momento de la migración. La migración puede ser más compleja para algunos grupos y le notificaremos si se necesitan pasos adicionales para realizarla.
+
+### ¿Qué características nuevas tendré disponibles?
+Aquí se muestra la presentación de la nueva funcionalidad:
+
+-    Grupos de seguridad de Azure AD se admitirá en Intune para todos los tipos de implementaciones.
+-    Grupos de seguridad de Azure AD admitirá la agrupación de dispositivos con los usuarios.
+-    Grupos de seguridad de Azure AD admitirá los grupos dinámicos con los atributos de dispositivos de Intune. Por ejemplo, podrá agrupar de manera dinámica dispositivos basándose en la plataforma, como iOS. De esta manera, cuando un nuevo dispositivo iOS se inscriba en su organización, automáticamente se agregará al grupo dinámico de dispositivos iOS.
+-    Experiencias de administración compartidas para la administración de grupos en Azure AD e Intune.
+- El *rol de administrador de servicios de Intune* se agregará a Azure AD para permitir que los administradores de servicios de Intune realicen tareas de administración de grupos en Azure AD.
+
+
+
+
+### ¿Qué funcionalidad de Intune no estará disponible?
+Aunque la experiencia de grupo mejorará, algunas funcionalidades de Intune no estarán disponibles después de la migración.
+
+#### Funcionalidad de administración de grupos
+
+-   No podrá excluir miembros ni grupos cuando cree un grupo nuevo. En cambio, los grupos dinámicos de Azure AD le permitirán usar atributos para crear reglas avanzadas para excluir miembros basándose en criterios.
+-   No serán compatibles con los grupos **Usuarios sin agrupar** y **Dispositivos sin agrupar**. Esos grupos no se migrarán.
+
+
+#### Funcionalidad dependiente del grupo
+
+-   El rol de administrador de servicios no tendrá permisos de **Administrar grupos**.
+-   No podrá agrupar dispositivos de Exchange ActiveSync.  Su grupo **Todos los dispositivos administrados de EAS** se convertirá de un grupo a una vista de informe.
+-  Dinamizar con grupos en informes no estará disponible.
+-  Grupo personalizado de destino de reglas de notificación no estará disponible.
+
+### ¿Qué debería hacer para prepararme para este cambio?
+ Tenemos algunas recomendaciones que le facilitarán la transición:
+
+- Elimine cualquier grupo innecesario o no deseado de Intune antes de la migración.
+- Evalúe el uso de la exclusión de grupos y considere la posibilidad de volver a diseñar los grupos de forma que no necesite usar la exclusión.
+-  Si tiene administradores que no tienen permisos para crear grupos en Azure AD, solicite a su administrador de Azure AD agregarlos al rol **Administrador de servicios de Intune** de Azure AD.
+
 
 # Crear grupos para administrar usuarios y dispositivos en Microsoft Intune
+
+En esta sección se describe cómo crear grupos de Intune en la consola de administración de Intune.
 
 Para crear y administrar grupos use el área de trabajo **Grupos** de la consola de administración de Microsoft Intune. La página **Información general de grupos** contiene resúmenes de estado que le ayudan a identificar y clasificar por orden de prioridad los asuntos que requieren su atención en relación con:
 
@@ -153,6 +208,6 @@ Cada directiva tiene un **Valor previsto** y un **Estado**. El valor previsto es
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

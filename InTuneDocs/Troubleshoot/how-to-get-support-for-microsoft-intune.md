@@ -13,8 +13,8 @@ ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9915b275101e287498217c4f35e1c0e56d2425c2
-ms.openlocfilehash: d22fc07989feb7d74a7e576b7a69ae026fd60c48
+ms.sourcegitcommit: f400f8b2ffd85b6328eceb74b97de1e67203ee6b
+ms.openlocfilehash: 3342ee86179348dbff880cb5884bf2975d26b50d
 
 
 ---
@@ -25,6 +25,11 @@ ms.openlocfilehash: d22fc07989feb7d74a7e576b7a69ae026fd60c48
 En este tema se explica cómo abrir una solicitud de servicio o llamar al teléfono de soporte en varios idiomas.
 
 Para buscar autoayuda para Intune, consulte [Solución de problemas de Microsoft Intune](general-troubleshooting-tips-for-microsoft-intune.md) o cualquiera de los temas de solución de problemas específicos enumerados en la sección **Consulte también** de este tema.
+
+>[!NOTE]
+>
+>Los clientes Premier pueden abrir una incidencia de soporte técnico de Intune en la [página de soporte técnico Premier](https://support.microsoft.com/en-us/premier/contacts).
+
 ## Crear una solicitud de servicio en línea
 
 1.  Inicie sesión en el [Centro de administradores de Office 365](https://portal.office.com/admin/default.aspx#Overview_SupportPage_AltUSupportPage) con las credenciales de Intune.
@@ -140,6 +145,6 @@ Nuestra función es:
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 

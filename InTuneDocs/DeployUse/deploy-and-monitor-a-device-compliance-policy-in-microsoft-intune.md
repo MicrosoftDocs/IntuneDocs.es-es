@@ -13,21 +13,21 @@ ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 7e038f489399cce2c73eabbef265c7be4be5c895
+ms.sourcegitcommit: 711e650086d7528f26d9ba7b447ecb0185faff23
+ms.openlocfilehash: 8658df1fb9932fb2cab984a13557aad684569df5
 
 
 ---
 
 # Implementar y supervisar una directiva de cumplimiento normativo en Microsoft Intune
 ## Implementar una directiva de cumplimiento
-Implemente la directiva de cumplimiento normativo que haya [creado](create-a-device-compliance-policy-in-microsoft-intune.md) en uno o más grupos de usuarios o dispositivos de la organización.
+Implemente la directiva de cumplimiento normativo que haya [creado](create-a-device-compliance-policy-in-microsoft-intune.md) en uno o más grupos de usuarios de la organización. Cuando se implementa una directiva de cumplimiento para un usuario, se comprueba el cumplimiento de todos los dispositivos del usuario.
 
 1.  En el área de trabajo **Directiva**, seleccione la directiva que quiera implementar y, después, haga clic en **Administrar la implementación**.
 ![Captura de pantalla de la página de directiva de cumplimiento normativo, donde se muestra la opción de menú Administrar implementación en la parte superior](./media/intune-sa-3c-deploy-compliance-policy2.png)
 
 2.  En el cuadro de diálogo **Administrar implementación**, seleccione uno o varios grupos en los que quiera implementar la directiva y, después, haga clic en **Agregar > Aceptar**.
-![Captura de pantalla del cuadro de diálogo Administrar implementación](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png) Puede implementar una directiva de cumplimiento para usuarios o dispositivos. Use los grupos de Active Directory creados y sincronizados en Intune, o bien cree los grupos manualmente en la consola de Intune. Para obtener más información sobre cómo implementar directivas, vea [Implementar una directiva de configuración](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+![Captura de pantalla del cuadro de diálogo Administrar implementación](./media/intune-sa-3d-deploy-compliance-policy3-Manage.png) Puede implementar una directiva de cumplimiento para los usuarios. Use los grupos de Active Directory creados y sincronizados en Intune, o bien cree los grupos manualmente en la consola de Intune. Para obtener más información sobre cómo implementar directivas, vea [Implementar una directiva de configuración](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 Use el resumen de estado y las alertas del área de trabajo **Directiva** de la página **Introducción** para identificar los problemas de la directiva que requieren su atención. Además, aparece un resumen de estado en el área de trabajo **Panel** .
 
@@ -72,6 +72,6 @@ Ahora puede usar la directiva de cumplimiento con las directivas de acceso condi
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

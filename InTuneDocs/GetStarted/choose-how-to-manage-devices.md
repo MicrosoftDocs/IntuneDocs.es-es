@@ -10,32 +10,30 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
-ms.reviewer: jeffgilb
+ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7c244554eb4b6ae5a248b53a7b4b6171807f4bfa
-ms.openlocfilehash: e353391375ce7b54f0be479607349e5618de1c37
+ms.sourcegitcommit: c329bd08aaf72ae2acaa03dcb12c911d84b46b4e
+ms.openlocfilehash: cfd9df3814d0d306a254a5566155a91ce5d0ca16
 
 
 ---
 
 # Elegir cómo administrar dispositivos
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] permite administrar una variedad de dispositivos si se *inscriben* en el servicio. Así, los usuarios pueden usar un *portal de la empresa* para realizar diversas operaciones, como inscribir sus dispositivos, examinar e instalar aplicaciones, garantizar que los dispositivos cumplen con las directivas de la empresa y ponerse en contacto con el equipo de TI.
+Intune le permite administrar una variedad de dispositivos si se *inscriben* en el servicio. Así, los usuarios pueden usar un *portal de la empresa* para realizar diversas operaciones, como inscribir sus dispositivos, examinar e instalar aplicaciones, garantizar que los dispositivos cumplen con las directivas de la empresa y ponerse en contacto con el equipo de TI.
 
 ## Formas de administrar dispositivos móviles
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] puede administrar las siguientes plataformas de dispositivo:
+Intune puede administrar las siguientes plataformas de dispositivo:
 
 [!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
-<div class="alert alert-tip">
-  <h5><span class="icon-tip"></span> Sugerencia</h5>
-  <p>Si ya tiene inscritos dispositivos en los que se ejecuta una versión de iOS anterior a la versión compatible indicada arriba, seguirán estando inscritos. De todas formas, consulte la documentación correspondiente a cada [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] para asegurarse de que la versión de iOS es compatible con la característica.</p>
-</div>
+> [!NOTE]
+> Si ya tiene inscritos dispositivos que ejecutan una versión de iOS anterior a la versión compatible, los dispositivos seguirán estando inscritos. Consulte la documentación para confirmar si la característica es compatible con esa versión de iOS.
 
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] puede administrar los dispositivos de los usuarios, popularmente conocidos como "Bring Your Own Device" (BYOD). También puede administrar dispositivos de empresa, incluidos los escenarios donde la empresa proporciona una lista de dispositivos que los usuarios pueden elegir, conocidos como "Choose Your Own Device" (CYOD).
+Intune puede administrar los dispositivos de los usuarios, popularmente conocidos como "Bring Your Own Device" (BYOD). También puede administrar dispositivos de empresa, incluidos los escenarios donde la empresa proporciona una lista de dispositivos que los usuarios pueden elegir, conocidos como "Choose Your Own Device" (CYOD).
 
 ### Inscripción de dispositivos en la administración
-Siempre se deben inscribir los sistemas operativos de dispositivos móviles, como iOS, Android y Windows Phone. Pero el modo en que lo haga dependerá de las necesidades de su organización:
+Siempre se deben inscribir los sistemas operativos de dispositivos móviles, como iOS, Android y Windows Phone. El modo en que inscriba los dispositivos dependerá de las necesidades de su organización:
 
 |Tipo de inscripción|BYOD|CYOD|Dispositivo compartido con cuenta de administrador|Dispositivo compartido sin una cuenta de usuario|
 |-------------------|--------|--------|--------------------------------------|----------------------------------------|
@@ -45,26 +43,21 @@ Siempre se deben inscribir los sistemas operativos de dispositivos móviles, com
 |**¿Quién anula la inscripción?**|Propietario o administrador|Plataforma |Administrador o usuario|Administrador o usuario|
 |**¿Quién puede restablecerlo?**|Propietario o administrador|Administrador|Administrador|Administrador|
 
-<div class="alert alert-tip">
-  <h5><span class="icon-tip"></span> Sugerencia</h5>
-  <p>Consulte [Capacidades de administración de dispositivos móviles](mobile-device-management-capabilities-in-microsoft-intune.md) para ver una lista completa de las capacidades que se obtienen al inscribir dispositivos.</p>
-</div>
+Para obtener más información, vea [Elegir cómo inscribir dispositivos móviles](/intune/get-started/choose-how-to-enroll-devices1).
 
-
+> [!NOTE]
+> Consulte [Capacidades de administración de dispositivos móviles](mobile-device-management-capabilities-in-microsoft-intune.md) para ver una lista completa de las capacidades que se obtienen al inscribir dispositivos.
 
 ## Formas de administrar PC Windows
-[!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] puede administrar PC Windows con Windows Vista en adelante por medio del cliente de equipos de Intune. Pero, en el caso de los PC Windows, puede elegir entre inscribirlos o instalar el software cliente de equipo de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] que reporta algunas funciones que no se obtienen con la inscripción de dispositivos. En la mayoría de los escenarios,se inscribirá el dispositivo Windows con Intune, lo que proporciona un mayor número de funciones que el cliente de equipo.
+Intune puede administrar equipos PC con Windows Vista y versiones posteriores con el cliente de equipos de Intune. Pero, en el caso de los equipos PC con Windows, puede elegir entre inscribirlos o instalar el software cliente de equipo de Intune, que ofrece algunas funcionalidades que no están disponibles al inscribir los dispositivos. En la mayoría de los escenarios,se inscribirá el dispositivo Windows con Intune, lo que proporciona un mayor número de funciones que el cliente de equipo.
 
 Sopese la posibilidad de usar el cliente de equipo de Intune cuando quiera hacer lo siguiente:
-<ul>
-<li>Usar alguna de las funciones habilitadas por el cliente de equipo de Microsoft Intune para administrar los PC Windows.</li>
-<li>Administrar un PC Windows que ejecuta un sistema operativo que no admite inscripciones.</li>
-</ul>
 
-<div class="alert alert-tip">
-  <h5><span class="icon-tip"></span> Sugerencia</h5>
-  <p>Consulte [Windows PC management capabilities](windows-pc-management-capabilities-in-microsoft-intune.md) (Capacidades de administración de PC Windows) para ver una lista completa de las capacidades que se obtienen al instalar el cliente de equipo de Intune en PC Windows compatibles.</p>
-</div>
+- Usar alguna de las funcionalidades habilitadas por el cliente de equipo de Microsoft Intune para administrar los equipos PC con Windows
+- Administrar un equipo PC con Windows que ejecuta un sistema operativo que no admite inscripciones
+
+> [!NOTE]
+> Consulte [Windows PC management capabilities](windows-pc-management-capabilities-in-microsoft-intune.md) (Capacidades de administración de PC Windows) para ver una lista completa de las capacidades que se obtienen al instalar el cliente de equipo de Intune en PC Windows compatibles.
 
 ## Administración de Exchange ActiveSync
 Los dispositivos también se pueden administrar con Exchange ActiveSync. Para ello, es necesario instalar On-Premises Connector o usar Service to Service Connector integrado para conectarse a su servidor Exchange Server.
@@ -80,6 +73,6 @@ Ahora ya conoce algunas de las capacidades que se pueden usar al inscribir dispo
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO3-->
 
 

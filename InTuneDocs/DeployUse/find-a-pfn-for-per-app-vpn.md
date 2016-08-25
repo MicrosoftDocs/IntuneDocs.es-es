@@ -13,8 +13,8 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 ms.reviewer: tycast
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 026bb4c8bf90bbe1af93513df46f0ec21f82509b
+ms.sourcegitcommit: 3cc73e43f09709b71c78a81c73b044d92d4ef401
+ms.openlocfilehash: 77977ea32ea37a54e9d67638bb0e4c3bb6841fb3
 
 
 ---
@@ -32,11 +32,12 @@ La sintaxis de Get-AppxPackage es la siguiente:
 ` Parameter Set: __AllParameterSets`
 ` Get-AppxPackage [[-Name] <String> ] [[-Publisher] <String> ] [-AllUsers] [-User <String> ] [ <CommonParameters>]`
 
-> Nota: podría tener que ejecutar PowerShell como administrador para poder recuperar el PFN.
+> [!NOTE]
+Podría tener que ejecutar PowerShell como administrador para recuperar el PFN.
 
-Por ejemplo, para obtener información sobre todas las aplicaciones universales instaladas en el equipo, use `Get-AppxPackage`.
+Por ejemplo, para obtener información sobre todas las aplicaciones universales que se han instalado en el equipo, use `Get-AppxPackage`.
 
-Para más información sobre una aplicación cuyo nombre conoce en su totalidad o en parte, use `Get-AppxPackage *<app_name>`. Observe el uso del carácter comodín, que resulta especialmente útil si no está seguro del nombre completo de la aplicación. Por ejemplo, para obtener la información de OneNote, use `Get-AppxPackage *OneNote`.
+Para obtener más información sobre una aplicación cuyo nombre conoce en su totalidad o en parte, use `Get-AppxPackage *<app_name>`. Observe el uso del carácter comodín, que resulta especialmente útil si no está seguro del nombre completo de la aplicación. Por ejemplo, para obtener la información de OneNote, use `Get-AppxPackage *OneNote`.
 
 
 Esta es la información recuperada sobre OneNote:
@@ -69,11 +70,10 @@ Esta es la información recuperada sobre OneNote:
 
 1.  Vaya a https://www.microsoft.com/es-es/store/apps.
 2.  En la barra de búsqueda, escriba el nombre de la aplicación. En nuestro ejemplo, busque OneNote.
-3.  Haga clic en el vínculo de la aplicación. Observe que la dirección URL a la que tiene acceso incluye una serie de letras al final. En nuestro ejemplo, la dirección URL tiene el siguiente aspecto:
-`https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl`
-4.  En una pestaña diferente, pegue la siguiente dirección URL, `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`, reemplazando `<app id>` por el identificador de la aplicación que obtuvo en https://www.microsoft.com/es-es/store/apps, es decir, esa serie de letras al final de la dirección URL del paso 3. En nuestro ejemplo de OneNote, pegará lo siguiente: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.
+3.  Elija el vínculo de la aplicación. Observe que la dirección URL incluye una serie de letras al final. En nuestro ejemplo, la dirección URL tiene el siguiente aspecto: `https://www.microsoft.com/en-us/store/apps/onenote/9wzdncrfhvjl`.
+4.  En una pestaña diferente, pegue la siguiente dirección URL, `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/<app id>/applockerdata`. Reemplace `<app id>` por el identificador de la aplicación que ha obtenido de https://www.microsoft.com/es-es/store/apps, es decir, esa serie de letras al final de la dirección URL del paso 3. En nuestro ejemplo de OneNote, pegará lo siguiente: `https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata`.
 
-En Edge, la información que le interesa se muestra directamente; en Internet Explorer, haga clic en **Abrir** para ver la información. El valor PFN se indica en la primera línea. En nuestro ejemplo, este es el aspecto de los resultados:
+Microsoft Edge muestra la información que quiere; en Internet Explorer, elija **Abrir** para ver la información. El valor PFN se indica en la primera línea. Aquí se muestran los resultados de nuestro ejemplo:
 
 
 `{`
@@ -85,6 +85,6 @@ En Edge, la información que le interesa se muestra directamente; en Internet Ex
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 

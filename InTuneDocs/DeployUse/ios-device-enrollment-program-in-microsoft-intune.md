@@ -1,10 +1,10 @@
 ---
-title: "Administración de DEP de Apple para dispositivos iOS con Microsoft Intune | Microsoft Intune"
-description: 
+title: "Administración de DEP de Apple para dispositivos iOS | Microsoft Intune"
+description: "Implemente un perfil de inscripción que inscriba dispositivos iOS adquiridos a través del programa de inscripción de dispositivos (DEP) iOS &quot;de forma inalámbrica&quot; para administrar dispositivos Apple."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1b942c7e09e59de59e3e406b84a21a712c0e973a
-ms.openlocfilehash: cd763f9fa0b08cc7b822eccbd043a5b9cd355d0f
+ms.sourcegitcommit: 08d4352ef88a266d05047d386247815f3765f552
+ms.openlocfilehash: affcca7ea406ea8a9d60f29add4385998b0ae29d
 
 
 ---
 
 # Inscribir dispositivos iOS de la empresa mediante el Programa de inscripción de dispositivos
-Microsoft Intune puede implementar un perfil de inscripción “de forma inalámbrica” para los dispositivos iOS adquiridos a través del programa de inscripción de dispositivos de Apple (DEP). El paquete de inscripción puede incluir opciones de asistente de instalación para el dispositivo. Los usuarios no pueden anular la inscripción de dispositivos inscritos a través de DEP.
+Microsoft Intune puede implementar un perfil de inscripción que inscriba dispositivos iOS adquiridos a través del programa de inscripción de dispositivos (DEP) de Apple "de forma inalámbrica". El paquete de inscripción puede incluir opciones de asistente de instalación para el dispositivo. Los usuarios no pueden anular la inscripción de dispositivos inscritos a través de DEP.
 
 ## Administración de DEP de Apple para dispositivos iOS con Microsoft Intune
 Para administrar dispositivos iOS de empresa con el programa de inscripción de dispositivos (DEP) de Apple, la organización debe unirse a DEP de Apple y adquirir dispositivos a través de ese programa. Puede consultar los detalles de este proceso en:  [https://deploy.apple.com](https://deploy.apple.com). Las ventajas del programa incluyen dispositivos configurados con manos libres sin necesidad de conectar cada dispositivo mediante USB a un equipo.
@@ -55,9 +55,7 @@ Para poder inscribir dispositivos iOS de empresa con DEP, necesita un token de D
 
     También puede **asignar dispositivos al siguiente grupo**. Haga clic en **Seleccionar...** para elegir un grupo.
 
-    >[!Important]
-    >Las asignaciones de grupo se moverán de Intune a Azure Active Directory. [Obtener más información](#changes-to-intune-group-assignments)
-
+    [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
 
     Después, habilite **Configurar los ajustes del Programa de inscripción de dispositivos para esta directiva** para que admita DEP.
 
@@ -101,13 +99,13 @@ Para poder inscribir dispositivos iOS de empresa con DEP, necesita un token de D
 
 ## Cambios en las asignaciones de grupo de Intune
 
-A partir de septiembre, la administración de grupos de dispositivos se moverá a Azure Active Directory. Después de la transición a los grupos de Azure Active Directory, la asignación de grupo no aparecerá en las opciones del **perfil de inscripción corporativa**. Como este cambio se implantará en una serie de meses, puede que no vea el cambio directamente. Pronto se publicarán más detalles.
+A partir de octubre, la administración de grupos de dispositivos se moverá a Azure Active Directory. Después de la transición a los grupos de Azure Active Directory, la asignación de grupo no aparecerá en las opciones del **perfil de inscripción corporativa**. Como este cambio se implantará en una serie de meses, puede que no vea el cambio directamente. Después de moverse al nuevo portal, se pueden definir nuevas asignaciones de grupos de dispositivos dinámicos según el nombre del perfil de inscripción corporativa. Este proceso garantiza que los dispositivos previamente asignados a un grupo de dispositivos se inscriban automáticamente en el grupo con la directiva y las aplicaciones implementadas. [Más información acerca de los grupos de Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### Consulte también
 [Preparar la inscripción de dispositivos](get-ready-to-enroll-devices-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO1-->
+<!--HONumber=Aug16_HO2-->
 
 

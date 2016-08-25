@@ -13,33 +13,33 @@ ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: ae9b3be57e4008d25f5222025c057fc4211f1119
+ms.sourcegitcommit: 167db9027e69dd6419d5deec758a8a0a0b119a97
+ms.openlocfilehash: 8605a665a0033fdc9b05ba452f5bf966e76699ca
 
 
 ---
 
 # Habilitar el acceso a los recursos de empresa con Microsoft Intune
-Los perfiles de correo electrónico, Wi-Fi y VPN de Microsoft Intune funcionan de manera conjunta para ayudar a los usuarios a obtener acceso a los archivos y recursos que necesitan para hacer su trabajo correctamente, estén donde estén. Los perfiles de certificado sirven para proteger ese acceso.
+Los perfiles de correo electrónico, Wi-Fi y VPN de Microsoft Intune funcionan de manera conjunta para ayudar a los usuarios a obtener acceso a los archivos y recursos que necesitan para trabajar, estén donde estén. Los perfiles de certificado sirven para proteger ese acceso.
 
 ## [Perfiles de Wi-Fi](wi-fi-connections-in-microsoft-intune.md) y plataformas compatibles
 
-Implementar la configuración de red inalámbrica para los usuarios. Mediante la implementación de esta configuración, se minimiza la intervención del usuario final necesaria para conectarse a la red corporativa.
+Implementar la configuración de red inalámbrica para los usuarios. Estas opciones de configuración facilitan a los usuarios la conexión a la red corporativa.
 #### Plataformas compatibles
 
 |Windows 8.1 y posterior|Windows Phone 8.1 y versiones posteriores|iOS|Android|Samsung KNOX|
 |---------------------|---------------------------|---|-------|------------|
-|Sí (se puede importar un perfil de Wi-Fi de Windows)|Sí (OMA-URI se puede configurar) |Sí|Sí|Sí|
+|Sí (puede importar un perfil de Wi-Fi de Windows).|Sí (puede configurar OMA-URI). |Sí|Sí|Sí|
 
 ## [Perfiles de VPN](vpn-connections-in-microsoft-intune.md) y plataformas compatibles
-Implementar la configuración de red privada virtual (VPN) a los usuarios. Mediante la implementación de esta configuración, se minimiza la intervención del usuario final necesaria para conectarse a los recursos de la red corporativa.
+Implementar la configuración de red privada virtual (VPN) a los usuarios. Estas opciones de configuración facilitan a los usuarios la conexión a los recursos de la red corporativa.
 
 |Windows 8.1 y posterior|Windows Phone 8.1 y versiones posteriores|iOS|Android|Samsung KNOX|
 |---------------------|---------------------------|---|-------|------------|
 |Sí|Sí|Sí|Sí|Sí|
 
 ## [Perfiles de correo electrónico](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md) y plataformas compatibles
-Cree, implemente y supervise la configuración de correo electrónico nativo en los dispositivos de su organización.
+Cree, implemente y supervise la configuración de cliente de correo electrónico nativo en los dispositivos de su organización.
 
 |Windows 8.1 y posterior|Windows Phone 8.1 y versiones posteriores|iOS|Android|Samsung KNOX|
 |---------------------|---------------------------|---|-------|------------|
@@ -56,6 +56,6 @@ Contribuya a proteger el acceso a los recursos de empresa tales como las redes i
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO3-->
 
 
