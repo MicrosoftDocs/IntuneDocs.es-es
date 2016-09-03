@@ -13,8 +13,8 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bc5ff023b5d29ded999c7e49c5e7c2aee8a23bba
-ms.openlocfilehash: e71cc1e8e2cb0f46507ff63d962f3d477acfb72e
+ms.sourcegitcommit: 65d2c9c1f5d81dae33422bd4bf7c0e2e21bb96e4
+ms.openlocfilehash: 13b8bd8c3269be60d66c4e79551f662205afcea0
 
 
 ---
@@ -233,6 +233,77 @@ Puede configurar las siguientes opciones en dispositivos que ejecuten iOS 7.1 y 
 |**Permitir al usuario que instale certificados y perfiles de configuración**|Permite al usuario que instale certificados y perfiles de configuración.|
 |**Permitir el uso de la aplicación de mensajes en el dispositivo**|Permite el uso de la aplicación de mensajes en el dispositivo.|
 
+### Mostrar u ocultar aplicaciones
+
+Use la **Lista de aplicaciones ocultas y visibles** para controlar las siguientes opciones en los dispositivos supervisados que ejecutan iOS 9.3 o versiones posteriores:
+
+- Especificar una lista de las aplicaciones ocultas para los usuarios. Los usuarios no pueden ver ni iniciar estas aplicaciones.
+- Especificar una lista de las aplicaciones que los usuarios pueden ver e iniciar. No se puede ver ni iniciar ninguna otra aplicación.
+
+
+#### Cómo crear una lista de aplicaciones ocultas y visibles
+
+Especifique las siguientes opciones:
+
+|Nombre de la configuración|Detalles|
+|-|-|
+|**Lista de aplicaciones ocultas y visibles**|Habilite esta opción si quiere crear una lista de aplicaciones ocultas o visibles.|
+|**Ocultar las aplicaciones de la lista a los usuarios**|Seleccione esta opción si quiere crear una lista de aplicaciones que permanecerán ocultas para los usuarios.|
+|**Mostrar solo las aplicaciones de la lista a los usuarios**|Seleccione esta opción si quiere crear una lista de aplicaciones que se muestre a los usuarios.<br>Cuando cree este tipo de lista, todas las demás aplicaciones están ocultas; excepto para las aplicaciones **Configuración** y **Teléfono** (para iPhone) de iOS.<br>Además, debe agregar el Portal de empresa, y cualquier aplicación que haya implementado, y administrarlo con Intune para la lista.|
+|**Agregar**|Agrega una aplicación a la lista seleccionada.<br>Para la lista oculta, debe especificar el **Nombre**, **Publicador** y **Dirección URL de aplicación o id. de lote de aplicaciones** de cada aplicación que quiera ocultar.<br>Para la lista que se muestra, puede **Seleccionar una aplicación administrada** que le proporciona una lista de las aplicaciones que administra con Intune para seleccionarlas, o bien Seleccionar aplicación de tienda, donde debe especificar el **Nombre**, **Publicador** y **Dirección URL de aplicación o id. de lote de aplicaciones** de cada aplicación que quiere mostrar.|
+|**Importar aplicaciones**|Importa la lista de las aplicaciones que ha especificado en un archivo de valores separados por comas. Utilice el formato, nombre de la aplicación, editor, dirección URL de la aplicación en el archivo.|
+|**Editar**|Permite editar el nombre, el editor y la dirección URL de la aplicación seleccionada.|
+|**Eliminar**|Elimina la aplicación seleccionada de la lista.|
+
+#### Información de aplicaciones para las aplicaciones integradas de iOS
+
+Use la información de esta lista para identificar el nombre, el publicador y el identificador de lote de aplicaciones de las aplicaciones integradas de iOS que quiere mostrar u ocultar. Si quiere mostrar u ocultar todas las aplicaciones de la lista, puede copiar los datos siguientes en un archivo de texto con la extensión **.csv** y, después, usar la opción **Importar aplicaciones** para importar todas las aplicaciones a la vez.
+
+```
+App Store,Apple,com.apple.AppStore
+Calculator,Apple,com.apple.calculator
+Calendar,Apple,com.apple.mobilecal
+Camera,Apple,com.apple.camera
+Clock,Apple,com.apple.mobiletimer
+Compass,Apple,com.apple.compass
+Contacts,Apple,com.apple.MobileAddressBook
+FaceTime,Apple,com.apple.facetime
+Find Friends,Apple,com.apple.mobileme.fmf1
+Find iPhone,Apple,com.apple.mobileme.fmip1
+Game Center,Apple,com.apple.gamecenter
+GarageBand,Apple,com.apple.mobilegarageband
+Health,Apple,com.apple.Health
+iBooks,Apple,com.apple.iBooks
+iTunes Store,Apple,com.apple.MobileStore
+iTunes U,Apple,com.apple.itunesu
+Keynote,Apple,com.apple.Keynote
+Mail,Apple,com.apple.mobilemail
+Maps,Apple,com.apple.Maps
+Messages,Apple,com.apple.MobileSMS
+Music,Apple,com.apple.Music
+News,Apple,com.apple.news
+Notes,Apple,com.apple.mobilenotes
+Numbers,Apple,com.apple.Numbers
+Pages,Apple,com.apple.Pages
+Photo Booth,Apple,com.apple.Photo-Booth
+Photos,Apple,com.apple.mobileslideshow
+Podcasts,Apple,com.apple.podcasts
+Reminders,Apple,com.apple.reminders
+Safari,Apple,com.apple.mobilesafari
+Settings,Apple,com.apple.Preferences
+Stocks,Apple,com.apple.stocks
+Tips,Apple,com.apple.tips
+Videos,Apple,com.apple.videos
+VoiceMemos,Apple,com.apple.VoiceMemos
+Wallet,Apple,com.apple.Passbook
+Watch,Apple,com.apple.Bridge
+Weather,Apple,com.apple.weather
+
+
+```
+
+
+
 
 ## Configuración de directivas personalizadas
 
@@ -266,6 +337,6 @@ Antes de empezar, debe tener instalado Apple Configurator y haber creado un arch
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO3-->
 
 
