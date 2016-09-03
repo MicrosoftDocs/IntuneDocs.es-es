@@ -2,7 +2,7 @@
 title: Personalizar el portal de empresa | Microsoft Intune
 description: "Se explica cómo personalizar el Portal de empresa para su suscripción de Intune."
 keywords: 
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
@@ -13,8 +13,8 @@ ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: b7288cff2e589faac32b9d2a80655079d9490590
+ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
+ms.openlocfilehash: f43888e2ae923afec6c4ffbd4472fd8f36968472
 
 
 ---
@@ -33,7 +33,7 @@ Con la personalización del portal de empresa, es más fácil ofrecer una experi
 ## Información de contacto y declaración de privacidad de la empresa
 El nombre de la empresa se muestra como título del portal de empresa. La información y los datos de contacto se muestran a los usuarios en la pantalla Contacto de TI del portal de empresa. La declaración de privacidad se muestra cuando el usuario hace clic en el vínculo de privacidad.
 
-|Nombre del campo|Longitud máxima|Más información|
+|Nombre de campo|Longitud máxima|Más información|
     |----------|------------------------|----------------|
     |Nombre de la empresa|40|Es el nombre que se muestra como título del portal de empresa.|
     |Nombre del contacto del departamento de TI|40|Es el nombre que se muestra en la página **Contacto de TI**.|
@@ -70,6 +70,6 @@ Enhorabuena. Acaba de completar el paso 7 de la *Guía de inicio rápido de Intu
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

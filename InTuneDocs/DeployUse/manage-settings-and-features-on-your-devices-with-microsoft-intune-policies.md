@@ -4,7 +4,7 @@ description: "Use Intune para crear e implementar directivas que controlen la co
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a083684da6abe9617f8b27604450c2a3b996b7cf
-ms.openlocfilehash: eeacb3f0898f2a1375a4119e01c939dd11d43940
+ms.sourcegitcommit: fa665c758460b8bbd95b237da6a22eda741b8b95
+ms.openlocfilehash: 0dc10ea029d078840a584424f7900f340189b960
 
 
 ---
@@ -132,9 +132,6 @@ Los dispositivos conectan con Intune cuando reciben una notificación que se lo 
 
 Otros cambios, como la revisión de la información de contacto del Portal de empresa, no provocan una notificación inmediata a los dispositivos.
 
-> [!TIP]
-> Cuando se implementa una directiva que contiene la configuración en un dispositivo Android, se indica al usuario que tome medidas para cumplir con la directiva. Hasta que los usuarios no realicen esta acción o no se reinicie el dispositivo, la nueva configuración de directiva no surtirá efecto.
-
 ### Si varias directivas se implementan en el mismo usuario o dispositivo, ¿cómo puedo saber qué configuración se aplicará?
 Cuando se aplican dos o más directivas al mismo usuario o dispositivo, la evaluación de la configuración aplicada se hace a nivel de parámetro individual:
 
@@ -215,6 +212,6 @@ Vea [Directivas de solución de problemas en Microsoft Intune](/intune/troublesh
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 
