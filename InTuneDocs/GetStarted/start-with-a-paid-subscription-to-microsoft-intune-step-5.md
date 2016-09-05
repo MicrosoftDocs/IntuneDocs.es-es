@@ -2,7 +2,7 @@
 title: "Creación de grupos para organizar usuarios y dispositivos | Microsoft Intune"
 description: "Se explica cómo crear usuarios y grupos para la suscripción de Intune."
 keywords: 
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
@@ -13,8 +13,8 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: afdff3d04fa0b6aeba44a3296147ebf207319c49
+ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
+ms.openlocfilehash: 07a2de6922f6b3f3a2b56dfc6bbe4e5f09c7d976
 
 
 ---
@@ -60,7 +60,7 @@ Use grupos de usuarios para implementar las directivas de software y dispositivo
 
 5.  En la página **Definir pertenencia directa**, elija **Siguiente**. Aquí no tiene que hacer nada, ya que desea que el grupo Usuarios de Intune incluya a todos los usuarios salvo el administrador de la empresa.
 
-6.  En la página **Resumen**, revise las acciones que se van a realizar y luego seleccione **Finalizar**.
+6.  En la página **Resumen**, revise las acciones que se van a realizar y, después, elija **Finalizar**.
 
 Encontrará el grupo recién creado en la lista **Grupos** del área de trabajo **Grupos** en **Todos los usuarios**. Aquí también puede editar o eliminar el grupo.
 
@@ -75,6 +75,6 @@ Enhorabuena. Acaba de completar el paso 5 de la *Guía de inicio rápido de Intu
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 
