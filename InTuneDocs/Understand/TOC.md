@@ -8,9 +8,6 @@
 ### [Inscribir dispositivos móviles e instalar una aplicación](get-started-with-a-30-day-trial-of-microsoft-intune-step-5.md)
 ### [Otras opciones y extras](get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [Pasos siguientes](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
-## [Tareas comunes de evaluación de Intune](common-microsoft-intune-evaluation-tasks.md)
-### [Iniciar una prueba e implementar la directiva de PIN de iOS](start-a-microsoft-intune-trial-and-deploy-ios-pin-policy.md)
-### [Configurar el acceso a correo electrónico de dispositivos iOS](set-up-email-access-for-ios-devices-using-microsoft-intune.md)
 ## [Escenarios frecuentes](common-ways-to-use-intune.md)
 ## [Guías de inicio rápido](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
 ### [Evitar pérdidas de datos de empresa desde aplicaciones móviles de Office 365](prevent-company-data-leaks-from-Office-365-mobile-apps.md)
@@ -25,6 +22,6 @@
 # [Solución de problemas](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

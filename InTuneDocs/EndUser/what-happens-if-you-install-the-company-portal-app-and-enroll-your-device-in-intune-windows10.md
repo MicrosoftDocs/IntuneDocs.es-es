@@ -1,5 +1,5 @@
 ---
-title: "¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo Windows 10 en Intune? | Microsoft Intune"
+title: "¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo Windows 10 en Intune? | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
@@ -10,12 +10,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0dc35efe-4fd4-4d4a-8569-d649ea704fea
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 19d36da336d5adbc5ef4a511be27d0d6c99119f1
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: c25598de9fb97df287f372484fe052fd36dadf88
 
 
 ---
@@ -58,6 +58,6 @@ Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para 
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

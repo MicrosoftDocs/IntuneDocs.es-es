@@ -2,7 +2,7 @@
 title: "Suscribirse o iniciar sesión en Intune | Microsoft Intune"
 description: "Registro para obtener una suscripción de Intune o inicio de sesión si ya tiene una suscripción"
 keywords: 
-author: Staciebarker
+author: barlanmsft
 manager: angrobe
 ms.date: 04/28/2016
 ms.topic: get-started-article
@@ -13,8 +13,8 @@ ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: a5a1b14db9b029d4fcd1fbd76806d0c527275b2b
+ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
+ms.openlocfilehash: d3f261c7d721301084ffbaf17b1f9173940ac506
 
 
 ---
@@ -51,6 +51,6 @@ Enhorabuena. Acaba de completar el paso 1 de la *Guía de inicio rápido de Intu
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

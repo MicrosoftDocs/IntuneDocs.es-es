@@ -1,5 +1,5 @@
 ---
-title: "¿Qué ocurre si restablece el dispositivo Windows mediante el Portal de empresa? | Microsoft Intune"
+title: "¿Qué ocurre si restablece el dispositivo Windows mediante el Portal de empresa? | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
@@ -10,12 +10,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 33809dbb8ee297a7f88a9615d8cec128ceadc96e
+ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
+ms.openlocfilehash: 63e35b89d443600409eb1b9375d06b9d52b72b27
 
 
 ---
@@ -27,8 +27,8 @@ Cuando usa la aplicación del Portal de empresa o el [sitio web del Portal de em
 
 |Administración y configuración de dispositivos|Tipo de dispositivo|
 |---------------------------------------|---------------|
-|El administrador de TI administra el dispositivo móvil|**Windows 10, Windows Phone 8.1 y Windows Phone 8**</br>El dispositivo ya no aparecerá en el Portal de empresa y este portal intentará restablecer la configuración predeterminada del fabricante en el dispositivo. Se eliminarán los datos personales, las aplicaciones y la configuración. <br /><br />**Windows 10 Mobile**: la única forma de anular la inscripción del dispositivo es restablecerlo.<br /><br />**Windows RT**<br />No se puede restablecer un dispositivo Windows RT a menos que se utilice para correo electrónico únicamente.|
-|El dispositivo solo puede acceder al correo electrónico de la empresa|**Windows Phone 8.1 y Windows Phone 8**<br />El dispositivo ya no aparecerá en el Portal de empresa, se eliminará la cuenta de correo laboral y se eliminarán los mensajes de correo que no se hayan guardado.<br /><br />**Windows RT**<br />El dispositivo ya no aparecerá en el Portal de empresa, se eliminará la cuenta de correo laboral y se eliminarán los mensajes de correo que no se hayan guardado.<br /><br />**Equipos con Windows Vista o Windows 7**<br />No se puede restablecer un equipo que ejecute Windows 7 o versiones anteriores, y que se utilice para correo electrónico únicamente.<br /><br />**Equipos con Windows 8.1 y Windows 8**<br />El dispositivo ya no aparecerá en el Portal de empresa, se eliminará la cuenta de correo laboral y se eliminarán los mensajes de correo que no se hayan guardado.|
+|El administrador de TI administra el dispositivo móvil|**Windows 10, Windows Phone 8.1 y Windows Phone 8**</br>El dispositivo ya no aparecerá en el Portal de empresa y este portal intentará restablecer la configuración predeterminada del fabricante en el dispositivo. Se eliminarán los datos personales, las aplicaciones y la configuración. <br /><br />**Windows 10 Mobile**: la única forma de anular la inscripción del dispositivo es restablecerlo.<br /><br />**Windows RT**<br />No se puede restablecer un dispositivo Windows RT a menos que se utilice para correo electrónico únicamente.|
+|El dispositivo solo puede acceder al correo electrónico de la empresa|**Windows Phone 8.1 y Windows Phone 8**<br />El dispositivo ya no aparecerá en el Portal de empresa, se eliminará la cuenta de correo laboral y se eliminarán los mensajes de correo que no se hayan guardado.<br /><br />**Windows RT**<br />El dispositivo ya no aparecerá en el Portal de empresa, se eliminará la cuenta de correo laboral y se eliminarán los mensajes de correo que no se hayan guardado.<br /><br />**Equipos con Windows Vista o Windows 7**<br />No se puede restablecer un equipo que ejecute Windows 7 o versiones anteriores, y que se utilice para correo electrónico únicamente.<br /><br />**Equipos con Windows 8.1 y Windows 8**<br />El dispositivo ya no aparecerá en el Portal de empresa, se eliminará la cuenta de correo laboral y se eliminarán los mensajes de correo que no se hayan guardado.|
 |PCs y portátiles|**Equipos con Windows 8.1 y Windows 8**<br />No se puede restablecer un equipo con Windows 8 o Windows 8.1 a menos que se utilice para correo electrónico únicamente.<br /><br />**Equipos con Windows Vista o Windows 7**<br />No se puede restablecer un equipo con Windows 7 o anterior.|
 
 Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
@@ -38,6 +38,6 @@ Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para 
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 
