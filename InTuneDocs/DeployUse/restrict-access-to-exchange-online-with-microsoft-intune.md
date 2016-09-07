@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 5e94a6575627d295efa592522a1fa28bfcd358a6
+ms.sourcegitcommit: e285cadd63e711ddf5d37b878d298b47bacf3333
+ms.openlocfilehash: 38273970b6bb6f576786e6a7a2aeaaa65ee07d37
 
 
 ---
@@ -29,7 +29,7 @@ Para obtener más información sobre cómo funciona el acceso condicional, lea e
 >[!IMPORTANT]
 >El acceso condicional para equipos y para dispositivos Windows 10 Mobile con aplicaciones que usan la autenticación moderna no está actualmente disponible para todos los clientes de Intune. Si ya usa estas características, no es necesario que realice ninguna acción. Puede seguir usándolas.
 
->Si no ha creado directivas de acceso condicional para equipos o para Windows 10 Mobile para las aplicaciones que usan la autenticación moderna y le gustaría hacerlo, debe enviar una solicitud.  Encontrará más información sobre problemas conocidos y cómo obtener acceso a esta característica en el [sitio de Microsoft Connect](http://go.microsoft.com/fwlink/?LinkId=761472).
+>Si no ha creado directivas de acceso condicional para PC o Windows 10 Mobile para las aplicaciones que usan autenticación moderna y le gustaría hacerlo, suscríbase para obtener la vista previa pública de Azure Active Directory que incluye el dispositivo en función del acceso condicional de dispositivos administrados de Intune o un dominio unido a un PC Windows. Lea [esta entrada de blog](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/) para obtener más información.  
 
 **Antes** de configurar el acceso condicional, debe:
 
@@ -196,7 +196,7 @@ Solo se evalúan los grupos a los que se aplica la directiva de acceso condicion
         * Plataformas no compatibles como Mac OS.  Por el contrario, las aplicaciones que usan autenticación moderna y proceden de estas plataformas seguirán bloqueándose.
 
         >[!TIP]
-           Podría no ver esta opción si todavía no usa el acceso condicional para equipos.  Use en su lugar las **Plataformas específicas**. El acceso condicional para equipos no está disponible actualmente para todos los clientes de Intune.   Encontrará más información sobre problemas conocidos y cómo obtener acceso a esta característica en el [sitio de Microsoft Connect](http://go.microsoft.com/fwlink/?LinkId=761472).
+           Podría no ver esta opción si todavía no usa el acceso condicional para equipos.  Use en su lugar las **Plataformas específicas**. El acceso condicional para equipos no está disponible actualmente para todos los clientes de Intune.   Puede encontrar más información sobre cómo obtener acceso a esta función [en esta entrada de blog ](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/).
 
     -   **Plataformas específicas**
 
@@ -260,6 +260,6 @@ En el panel de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], elija el 
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

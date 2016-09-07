@@ -4,7 +4,7 @@ description: "Aprenda a actualizar automáticamente dispositivos de Windows 10 a
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 8589866a-3f13-489b-a5cd-cee017d16d54
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a08ace43fb61f57a9d29b119c59698bc50e7af8
-ms.openlocfilehash: 49bc54f36b281d85c9667c51fb6ddbe0d454b4d1
+ms.sourcegitcommit: 4bed62ebe07d5470414183626b34e68dd91f2d01
+ms.openlocfilehash: 17933e41a646f305f9fb765e790c0de36a5036ba
 
 
 ---
@@ -26,9 +26,9 @@ La **directiva de actualización de edición** de Microsoft Intune permite actua
 
 ## Antes de empezar
 Antes de empezar a actualizar dispositivos a la versión más reciente, necesitará uno de los elementos siguientes:
-* Una clave de producto válida para instalar la nueva versión de Windows en todos los dispositivos de destino de la directiva (para ediciones de Windows 10 Escritorio).
-* Un archivo de licencia de Microsoft que contenga la información de licencia para instalar la nueva versión de Windows en todos los dispositivos de destino de la directiva (para las ediciones de Windows 10 Mobile y Windows 10 Holographic).
-* Los dispositivos de Windows 10 que planee actualizar deben estar inscritos en Microsoft Intune.
+* Una clave de producto válida para instalar la nueva versión de Windows en todos los dispositivos de destino de la directiva (para ediciones de Windows 10 Escritorio). Puede utilizar las claves de las claves de activación múltiple (MAK) o el servidor de administración de claves (KMS).
+**o** un archivo de licencia de Microsoft que contenga la información de licencia para instalar la nueva versión de Windows en todos los dispositivos de destino de la directiva (para las ediciones de Windows 10 Mobile y Windows 10 Holographic).
+* Los dispositivos de Windows 10 que planee actualizar deben estar inscritos en Microsoft Intune. No puede usar la directiva de actualización de edición con equipos que ejecutan el software cliente de PC de Intune.
 
 ## Configuración de la directiva de actualización de edición
 
@@ -45,6 +45,6 @@ Antes de empezar a actualizar dispositivos a la versión más reciente, necesita
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

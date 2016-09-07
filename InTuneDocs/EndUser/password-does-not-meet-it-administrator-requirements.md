@@ -10,17 +10,17 @@ ms.prod:
 ms.service: 
 ms.technology: 
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
-ROBOTS: noindex,nofollow
+ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 927bf3c21f94ca311a7324d22f05f047dba94982
+ms.sourcegitcommit: 96e8db7415e48a77f3e789aecddebe407e9a4b00
+ms.openlocfilehash: 37c5809e86d466717268f6fdec0c22f6bad2ac61
 
 
 ---
 
 # La contraseña no cumple los requisitos del administrador de TI
 
-La contraseña que usa para tener acceso a los recursos de empresa o educativos no cumple uno o varios requisitos que el administrador de TI ha configurado para el dispositivo. En función de las directivas que crease el administrador de TI, puede encontrarse con uno o varios de estos problemas:
+La contraseña que usa para tener acceso a los recursos de empresa o educativos no cumple uno o varios requisitos que el administrador de TI ha configurado para el dispositivo. En función de las directivas que crease el administrador de TI, puede encontrarse con uno o varios de los siguientes problemas:
 
 - La contraseña no contiene caracteres complejos.
 - La contraseña es demasiado simple y no es lo bastante segura.
@@ -40,6 +40,6 @@ Si no sabe cómo hacer que la contraseña cumpla los requisitos, póngase en con
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 
