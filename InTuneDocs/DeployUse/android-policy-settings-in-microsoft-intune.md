@@ -5,7 +5,7 @@ description: "Cree directivas que controlen la configuración y las característ
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/03/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65d2c9c1f5d81dae33422bd4bf7c0e2e21bb96e4
-ms.openlocfilehash: 31c91609b913034ad3aaae0950145d4db5f59a0a
+ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
+ms.openlocfilehash: 870d735644f08e3eca8c72bca2b156947d798cb5
 
 
 ---
@@ -57,14 +57,14 @@ Si el valor que busca no aparece en este tema, puede crearlo mediante una direct
 ### Configuración de cifrado
 
 |Nombre de la configuración|Detalles|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|---|-------------|----------------|
 |**Requerir cifrado en dispositivo móvil**|Requiere el cifrado de los archivos en el dispositivo móvil.|Sí|Sí|
 |**Requerir cifrado en tarjetas de almacenamiento**|Especifica si se debe cifrar la tarjeta de almacenamiento del dispositivo.|No|Sí|
 
 ### Configuración del sistema
 
 |Nombre de la configuración|Detalles|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|---|-------------|----------------|
 |**Permitir captura de pantalla**|Permite al usuario capturar el contenido en pantalla como una imagen.|No|Sí|
 |**Permitir el envío de datos de diagnóstico**|Permite enviar información de diagnóstico a Google desde el dispositivo.|No|Sí|
 |**Permitir el restablecimiento de la configuración de fábrica**|Permite que el usuario realice un restablecimiento de la configuración de fábrica en el dispositivo.|No|Sí|
@@ -72,19 +72,19 @@ Si el valor que busca no aparece en este tema, puede crearlo mediante una direct
 ### Configuración de nube: documentos y datos
 
 |Nombre de la configuración|Detalles|Android 4.0+|Samsung KNOX|
-|----------------|----------------------------|----------------|
+|----------------|----|------------------------|----------------|
 |**Permitir copia de seguridad de Google**|Permite el uso de la copia de seguridad de Google.|No|Sí|
 
 ### Configuración de nube: cuentas y sincronización
 
 |Nombre de la configuración|Detalles|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|-----|-----------|----------------|
 |**Permitir la sincronización automática de la cuenta de Google**|Permite que la configuración de la cuenta de Google se sincronice automáticamente.|No|Sí|
 
 ### Configuración de la aplicación: explorador
 
 |Nombre de la configuración|Detalles|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|-----|-----------|----------------|
 |**Permitir explorador web**|Especifica si se puede usar el explorador web predeterminado del dispositivo.|No|Sí|
 |**Permitir el autorrelleno**|Permite usar la función Autorrellenar del explorador web.|No|Sí|
 |**Permitir bloqueador de elementos emergentes**|Permite usar el bloqueador de elementos emergentes en el explorador web.|No|Sí|
@@ -94,13 +94,13 @@ Si el valor que busca no aparece en este tema, puede crearlo mediante una direct
 ### Configuración de la aplicación: aplicaciones
 
 |Nombre de la configuración|Detalles|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|----|------------|----------------|
 |**Permitir Google Play Store**|Permite al usuario tener acceso a Google Play Store en el dispositivo.|No|Sí|
 
 ### Configuración de funcionalidades del dispositivo: hardware
 
 |Nombre de la configuración|Detalles|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|-----|-----------|----------------|
 |**Permitir cámara**|Permite el uso de la cámara del dispositivo.|Sí|Sí|
 |**Permitir almacenamiento extraíble**|Permite usar un almacenamiento extraíble (como una tarjeta SD) en el dispositivo.|No|Sí|
 |**Permitir Wi-Fi**|Permite usar las capacidades de Wi-Fi del dispositivo.|No|Sí|
@@ -113,7 +113,7 @@ Si el valor que busca no aparece en este tema, puede crearlo mediante una direct
 ### Configuración de funcionalidades del dispositivo: datos móviles
 
 |Nombre de la configuración|Detalles|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|---|-------------|----------------|
 |**Permitir itinerancia de voz**|Permite la itinerancia de voz cuando el dispositivo está en una red de telefonía móvil.|No|Sí|
 |**Permitir itinerancia de datos**|Permite la itinerancia de datos cuando el dispositivo está en una red de telefonía móvil.|No|Sí|
 |**Permitir mensajería SMS y MMS**|Permite usar mensajes SMS y MMS en el dispositivo.|No|Sí|
@@ -121,7 +121,7 @@ Si el valor que busca no aparece en este tema, puede crearlo mediante una direct
 ### Configuración de funcionalidades del dispositivo: características
 
 |Nombre de la configuración|Detalles|Android 4.0+|Samsung KNOX|
-|----------------|----------------|----------------|
+|----------------|----|------------|----------------|
 |**Permitir asistente de voz**|Permite usar software de asistente de voz en el dispositivo.|No|Sí|
 |**Permitir la marcación por voz**|Habilita o deshabilita la característica de marcación por voz en el dispositivo.|No|Sí|
 |**Permitir copiar y pegar**|Permite copiar y pegar funciones en el dispositivo.|No|Sí|
@@ -208,6 +208,6 @@ Esta capacidad está pensada para que se puedan implementar las opciones de conf
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO2-->
 
 

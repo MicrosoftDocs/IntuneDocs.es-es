@@ -4,7 +4,7 @@ description: "Métodos para hacer que las aplicaciones iOS estén disponibles pa
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6dbb6012389d8058c2d9b1c46b4ae8c2418a6130
-ms.openlocfilehash: 30ebdfa1729df81a3b4a4a90b71aadacf373bb2d
+ms.sourcegitcommit: 9f1946c02c6267a22844106e8f72555ec5e9cabb
+ms.openlocfilehash: 212dcd31697180dae61569dda13b56704a079bf4
 
 
 ---
@@ -32,12 +32,23 @@ Lea esta información para comprender cómo y dónde obtienen los usuarios final
 
 **Aplicaciones no administradas**: son aplicaciones que se pueden administrar mediante directivas y que no están encapsuladas con Intune o no incorporan el SDK de MAM de Intune. Las directivas de aplicación no pueden aplicarse a estas aplicaciones.
 
+Las restricciones de Apple prohíben que se muestren la línea de negocio y las aplicaciones de la tienda de aplicaciones administrada en la aplicación de portal de empresa de la tienda, lo que significa que los usuarios tienen que visitar vistas diferentes para encontrar todas sus aplicaciones. Las aplicaciones para cada icono que se muestran en la página Aplicaciones del portal de empresa están disponibles de la siguiente manera:
+
+- El icono **Aplicaciones de empresa** apunta a una lista de todas las aplicaciones en la pestaña **TODOS** del [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+
+- El icono **Otras aplicaciones** apunta actualmente a una vista, dentro de la aplicación de portal de empresa, que enumera todas las aplicaciones que Apple permite mostrar a la aplicación de portal de empresa. Esto incluye todas las aplicaciones excepto las aplicaciones de la tienda de aplicaciones administradas y de la línea de negocio.
+
+- El icono **Categorías** apunta actualmente a una vista, dentro del portal de empresa, que enumera las categorías de aplicaciones.
+
+    ![ios-how-to-sync-device-with-intune](./media/ios-sync-comp-portal-apps.png)
+
+
 ###Consulte también
 [Cómo obtienen sus aplicaciones los usuarios de Android](how-your-android-users-get-their-apps.md)</br>
 [Cómo obtienen sus aplicaciones los usuarios de Windows](how-your-windows-users-get-their-apps.md)
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c329bd08aaf72ae2acaa03dcb12c911d84b46b4e
-ms.openlocfilehash: 9d624da7931c56476b476b7a9fd5711f398052c4
+ms.sourcegitcommit: a7a0f834df939432910e32e6e635a70f021b37a9
+ms.openlocfilehash: 63405b43609eda515656ad397c5c7ff4253a8167
 
 
 ---
@@ -76,7 +76,7 @@ En la siguiente tabla se muestran los métodos de inscripción de dispositivos c
 |**[BYOD](#BYOD)** | No|    Sí |   No |
 |**[DEM](#DEM)**|   No |No |No  |
 
-**Métodos de inscripción de dispositivos corporativos**
+**Métodos de inscripción de dispositivos**
 
 ### BYOD
 “Bring Your Own Device”. Los usuarios instalan la aplicación de portal de empresa e inscriben su dispositivo. Cuando se inscribe un dispositivo con el portal de empresa, se unirá al lugar de trabajo. La inscripción de dispositivos de iOS con el portal de empresa requiere un identificador de Apple. BYOD no requiere configuración adicional para dispositivos corporativos. Vea los pasos para [configurar la administración de dispositivos](get-ready-to-enroll-devices-in-microsoft-intune.md#set-up-device-management). ([Volver a la tabla](#overview-of-device-enrollment-methods))
@@ -151,6 +151,6 @@ Los equipos administrados con el software cliente de Intune no se pueden borrar 
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

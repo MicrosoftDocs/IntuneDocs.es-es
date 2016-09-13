@@ -1,10 +1,10 @@
 ---
-title: "Funciones de administración de PC Windows | Microsoft Intune"
-description: "Obtenga información acerca de las funcionalidades de Intune cuando se administran PC Windows con el software de cliente de Intune."
+title: Capacidades de cliente de software de PC de Intune | Microsoft Intune
+description: "Obtenga información acerca de las funcionalidades de Intune cuando se administran PC Windows con el cliente de software de Intune."
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/04/2016
+ms.date: 08/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a6caef9e0f4d6235ecf1a89c1765d6c8e6ce1a7b
-ms.openlocfilehash: e5e3833a38434d4fe55cae554fc49f567b606ad8
+ms.sourcegitcommit: 12d75bc67fd61a2e807eed2543f21b756a65a900
+ms.openlocfilehash: 3066ef98c0a1df6fc0ae455860635e7c12f82c4f
 
 
 ---
 
-# Funciones de administración de equipos Windows (con el cliente de equipo de Microsoft Intune)
-En la mayoría de los escenarios, los dispositivos se inscribirán con Microsoft Intune, lo que proporciona un mayor número de funciones que el cliente de equipo de Intune. En cambio, también puede administrar los equipos mediante el cliente de equipo de Intune, que proporciona las siguientes características:
+# Capacidades de administración de PC de Windows cuando se utiliza el cliente de software de Intune)
+En la mayoría de los escenarios, los dispositivos se inscribirán con Microsoft Intune, lo que proporciona un mayor número de capacidades. En cambio, también puede administrar los PC mediante el cliente de software de Intune, que proporciona las siguientes características:
 
 -   **Administración de actualización de software**: puede mantener actualizados los equipos y decidir cuándo se aplican las actualizaciones.
 
@@ -31,10 +31,10 @@ En la mayoría de los escenarios, los dispositivos se inscribirán con Microsoft
 -   **Asistencia remota**: Intune permite a los usuarios ponerse en contacto con el personal de soporte técnico de TI, que puede proporcionar asistencia mediante una característica de Escritorio remoto que se incluye con Intune (requiere el software TeamViewer).
 
 -   **Administración de licencias de software**: realice el seguimiento del número de licencias de software disponibles y del número de licencias disponibles que se usan.
--   **Implementación de aplicaciones**: implemente software en los equipos que administra. Algunas características de administración de aplicaciones no están disponibles cuando los equipos se administran con el software cliente.
+-   **Implementación de aplicaciones**: implemente software en los equipos que administra. Algunas características de administración de aplicaciones no están disponibles cuando los PC se administran con el cliente de software.
 
 
-Intune admite la instalación del software cliente de equipos en hasta 7.000 dispositivos de Windows.
+Intune admite la instalación del cliente de software en hasta 7000 dispositivos de Windows.
 
 ## Requisitos de sistema operativo
 Intune puede administrar equipos que ejecutan las siguientes versiones de Windows (32 y 64 bits):
@@ -52,7 +52,7 @@ Intune puede administrar equipos que ejecutan las siguientes versiones de Window
 
 
 ## Requisitos mínimos de hardware
-A continuación se indican los requisitos mínimos de hardware para instalar el cliente de equipo de Intune:
+A continuación se indican los requisitos mínimos de hardware para instalar el cliente de software de Intune:
 
 |Requisito|Detalles|
 |---------------|--------------------|
@@ -61,7 +61,7 @@ A continuación se indican los requisitos mínimos de hardware para instalar el 
 |Espacio en disco|200 MB de espacio disponible en el disco antes de que se instale el software cliente.|
 
 ## Requisitos adicionales
-A continuación se indican los requisitos de software para instalar el cliente de equipo de Intune:
+A continuación se indican los requisitos de software para instalar el cliente de software de Intune:
 
 |Requisito|Detalles|
 |---------------|--------------------|
@@ -70,10 +70,10 @@ A continuación se indican los requisitos de software para instalar el cliente d
 |Quitar software cliente incompatible|Antes de instalar el software cliente de equipo de Intune, debe desinstalar el siguiente software cliente del equipo:<br /><br />- Cualquier versión de Configuration Manager<br />- Cualquier versión de Microsoft Systems Management Server (SMS)|
 
 ### Consulte también
-[Capacidades de administración de dispositivos móviles en Microsoft Intune](./mobile-device-management-capabilities-in-microsoft-intune.md)
+[Funcionalidades de administración de dispositivos inscritos en Microsoft Intune](./mobile-device-management-capabilities-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

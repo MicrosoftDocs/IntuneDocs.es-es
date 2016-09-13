@@ -13,15 +13,22 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7bea7ba4ef59c6b1400414b59456e19dc1c152fb
-ms.openlocfilehash: ad5e9453f8132d383f8c23886e48505769c7f44b
+ms.sourcegitcommit: cf471320f122eea7804ff6cd6cad208f8cd5a692
+ms.openlocfilehash: 29d13dcbc367c18d64f9522fa9a3b962226feebb
 
 
 ---
 
 # Retirar dispositivos de la administración de Intune
 
-Llega un momento en que es necesario eliminar un dispositivo administrado de la administración de Intune, tanto si se trata de un dispositivo personal como propiedad de la empresa. La retirada de un dispositivo es relativamente sencilla. Puede realizar un borrado selectivo o un borrado completo en los dispositivos administrados como dispositivos móviles. También puede retirar los equipos administrados con software cliente de Intune.
+Llega un momento en que es necesario eliminar un dispositivo administrado de la administración de Intune, tanto si se trata de un dispositivo personal como propiedad de la empresa. Es posible que un dispositivo tenga que retirarse por una serie de motivos:
+
+-   El usuario deja una organización de manera planeada (partida "administrada")
+-   El usuario la deja repentinamente (se le despide, se va, etc.).
+-   Pérdida del dispositivo
+-   Reasignación de un dispositivo (trasladar a otro usuario, volver a utilizar para un propósito diferente, etc.).
+
+Puede realizar un borrado selectivo o completo en los dispositivos administrados como dispositivos móviles o bloquearlo y restablecer la contraseña. Si limpia el dispositivo, libera la suscripción del usuario para agregar un dispositivo diferente. También puede retirar los PC administrados con software cliente de Intune.
 
 ## Borrar datos y aplicaciones de dispositivos
 Tanto el borrado selectivo como el borrado completo quitan el dispositivo de la administración de Intune. Para ello, quitan su directiva y el portal de empresa, lo que significa que el dispositivo ya no tiene las credenciales necesarias para iniciar sesión en los recursos de la empresa, como Microsoft SharePoint, el correo electrónico u Office 365.
@@ -62,6 +69,6 @@ A veces, es el propio dispositivo el que llega al final del ciclo de vida. En ta
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO4-->
 
 

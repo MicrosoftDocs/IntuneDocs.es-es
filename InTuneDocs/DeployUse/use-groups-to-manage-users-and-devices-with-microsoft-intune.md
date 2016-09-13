@@ -13,11 +13,15 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5ab9592c253238fd832f8b48372e5474fcfc5331
-ms.openlocfilehash: 96b0cd997544b2013efaca818d614c9802baaa46
+ms.sourcegitcommit: e7c680c43b8c9120755ec3c652cf7ec1cbcc3472
+ms.openlocfilehash: b13e2ff2f4822d71ef8cff9d835e32b99cb3e4ab
 
 
 ---
+# Usar grupos para administrar usuarios y dispositivos en Microsoft Intune
+
+Este tema describe cómo crear grupos en Intune. También proporciona información acerca de cómo va a cambiar la administración de grupos durante los próximos meses. Para obtener información sobre el enfoque *actual* de la administración de grupo, consulte [Crear grupos para administrar usuarios y dispositivos con Microsoft Intune](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) en este tema.
+
 ## Aviso sobre las próximas mejoras en la experiencia de administración de grupos
 
 Teniendo en cuenta los comentarios de tener una experiencia de agrupación y destino en Enterprise Mobility + Security, estamos convirtiendo los grupos de Intune en grupos de seguridad basados en Azure Active Directory. Esto unificará la administración de grupos en Intune y Azure Active Directory (Azure AD). La nueva experiencia le evitará tener que duplicar grupos entre servicios y le proporcionará extensibilidad mediante PowerShell y Graph. 
@@ -72,7 +76,7 @@ Aunque la experiencia de grupo mejorará, algunas funcionalidades de Intune no e
 -  Si tiene administradores que no tienen permisos para crear grupos en Azure AD, solicite a su administrador de Azure AD agregarlos al rol **Administrador de servicios de Intune** de Azure AD.
 
 
-# Crear grupos para administrar usuarios y dispositivos en Microsoft Intune
+## Crear grupos para administrar usuarios y dispositivos en Microsoft Intune
 
 En esta sección se describe cómo crear grupos de Intune en la consola de administración de Intune.
 
@@ -208,6 +212,6 @@ Cada directiva tiene un **Valor previsto** y un **Estado**. El valor previsto es
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO4-->
 
 

@@ -69,7 +69,7 @@ Si lo que quiere es inscribir un dispositivo Mac OS X, vea [Enroll your Mac OS X
 
     ![ios-enroll-tap-done](./media/ios-enroll-6-done.png)
 
-    Aparece el mensaje "Inscribiendo el dispositivo..." en pantalla.
+    Aparece el mensaje "Inscribiendo el dispositivo" en pantalla.
 
 11.  Cuando se muestre un mensaje en el que se le pregunte si quiere abrir la página en el portal de empresa, pulse en **Abrir**.
 
