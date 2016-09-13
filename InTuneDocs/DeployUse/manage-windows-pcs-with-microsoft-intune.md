@@ -1,5 +1,5 @@
 ---
-title: Administrar equipos Windows con cliente de Intune | Microsoft Intune
+title: Administrar PC con software cliente | Microsoft Intune
 description: Administre equipos Windows instalando el software cliente de Intune.
 keywords: 
 author: nathbarn
@@ -13,18 +13,18 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: aa1d6105a5be9c329c75681857a9d6e553088b65
-ms.openlocfilehash: be45b2ffb99eb75e71c0d591fc84089b83735905
+ms.sourcegitcommit: cf471320f122eea7804ff6cd6cad208f8cd5a692
+ms.openlocfilehash: f264dc3740ce9b117fcc01c39792904a2dc6e7ab
 
 
 ---
 
 # Administración de PC con Windows con el software de cliente de PC de Intune
-En lugar de [inscribir los PC con Windows como dispositivos móviles](set-up-windows-device-management-with-microsoft-intune.md), puede administrar sus PC con Windows mediante la instalación del software de cliente de Intune.
+En lugar de [inscribir los PC con Windows como dispositivos móviles](set-up-windows-device-management-with-microsoft-intune.md), puede inscribir y administrar sus PC con Windows mediante la instalación del software de cliente de Intune.
 
 Intune administra equipos Windows mediante directivas, del mismo modo que los objetos de directiva de grupo (GPO) de los Servicios de dominio de Active Directory (AD DS) de Windows Server. Si va a administrar equipos unidos a un dominio de Active Directory con Intune, debe [asegurarse de que las directivas de Intune no entren en conflicto con ningún GPO](resolve-gpo-and-microsoft-intune-policy-conflicts.md) configurado para la organización.
 
-Aunque el cliente de Intune admite [directivas que ayudan a proteger los PC](policies-to-protect-windows-pcs-in-microsoft-intune.md) mediante la administración de actualizaciones de software, Firewall de Windows y Endpoint Protection, los PC administrados con el cliente de Intune no pueden ser objeto de otras directivas de Intune.
+Aunque el cliente de software de Intune admite [capacidades de administración que ayudan a proteger los PC](policies-to-protect-windows-pcs-in-microsoft-intune.md) mediante la administración de actualizaciones de software, Firewall de Windows y Endpoint Protection, los PC administrados con el cliente de Intune no pueden ser objeto de otras directivas de Intune, incluida la configuración de directiva de **Windows** específica de la administración de dispositivos móviles.
 
 > [!NOTE]
 > Los dispositivos que ejecutan Windows 8.1 o posterior se pueden administrar mediante el cliente de Intune o se pueden inscribir como dispositivos móviles. La siguiente información se aplica a equipos que ejecutan el cliente de Intune. No se admite instalar el cliente de PC de Intune e inscribir al mismo tiempo el dispositivo Windows para la administración de dispositivos móviles.
@@ -51,16 +51,18 @@ Aunque el cliente de Intune admite [directivas que ayudan a proteger los PC](pol
 ## Instalar el cliente de equipo de Intune
 El software cliente de Intune puede instalarse de una de las maneras siguientes:
 
--   [Implemente manualmente el software cliente de Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md#to-manually-deploy-the-client-software). En este tipo de implementación, un administrador descarga el software de cliente de Intune y lo instala manualmente en cada equipo.
+-  [Implemente manualmente el software cliente de Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md#to-manually-deploy-the-client-software). En este tipo de implementación, un administrador descarga el software de cliente de Intune y lo instala manualmente en cada equipo.
 
   Para descargar el software cliente de Intune, abra la [consola de administración de Intune](https://manage.microsoft.com) y elija **Administración** > **Descargar software cliente** y haga clic en **Descargar software cliente**.
 
--   Puede usar los mismos archivos que ha descargado para instalar manualmente el cliente de Intune para [implementar el cliente en equipos unidos a un dominio mediante GPO de Active Directory](install-the-windows-pc-client-with-microsoft-intune.md#to-automatically-deploy-the-client-software-by-using-group-policy).
+-  Use los mismos archivos que ha descargado para instalar manualmente el software cliente de Intune para [implementar el cliente en equipos unidos a un dominio mediante GPO de Active Directory](install-the-windows-pc-client-with-microsoft-intune.md#to-automatically-deploy-the-client-software-by-using-group-policy).
 
--   Por último, también puede implementar el software cliente de Intune en equipos como parte de una [implementación de sistema operativo](install-the-windows-pc-client-with-microsoft-intune.md#install-the-microsoft-intune-client-software-as-part-of-an-image).
+-  Implemente el software cliente de Intune en equipos como [parte de una implementación de sistema operativo](install-the-windows-pc-client-with-microsoft-intune.md#install-the-microsoft-intune-client-software-as-part-of-an-image).
+
+-  Envíe instrucciones a los usuarios con la dirección URL para el portal de empresa de Intune [https://portal.manage.microsoft.com](http://go.microsoft.com/fwlink/?LinkId=825632). Cuando abran el portal de empresa, se pide a los usuarios que inscriban su PC descargando y ejecutando el software cliente de Intune.
 
 ## Administración de equipos con el cliente de equipos de Intune
-Después de instalar el cliente de Intune, el software cliente habilita varias funciones de administración de equipo, por ejemplo: [administración de aplicaciones](deploy-apps-in-microsoft-intune.md), Endpoint Protection, inventario de hardware y software, control remoto (a través de solicitudes de asistencia remota), actualizaciones de software e informes de configuración de cumplimiento.
+Después de instalar el software cliente de Intune, el software cliente habilita varias funciones de administración de equipo, por ejemplo: [administración de aplicaciones](deploy-apps-in-microsoft-intune.md), Endpoint Protection, inventario de hardware y software, control remoto (a través de solicitudes de asistencia remota), actualizaciones de software e informes de configuración de cumplimiento.
 
 Varias tareas de administración de equipos habilitadas por el cliente de equipos se administran mediante directivas de Intune, como:
 
@@ -69,6 +71,8 @@ Varias tareas de administración de equipos habilitadas por el cliente de equipo
 -   Configurar [parámetros de actualización de software](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) para que los equipos administrados busquen y descarguen actualizaciones de software necesarias.
 
 -   Contribuir a proteger equipos administrados de posibles amenazas y software malintencionado a través de la administración de [Endpoint Protection y la supervisión en tiempo real](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+
+![Plantilla de directivas para equipos con Windows](../media/pc_policy_template.png)
 
 Además de las acciones de agente de cliente de Intune realizadas localmente en equipos individuales, también puede utilizar la consola de administración de Intune para realizar otras [tareas comunes de administración de equipos](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md) en equipos Windows con el cliente instalado como:
 
@@ -86,6 +90,6 @@ El agente cliente de Intune, normalmente, se ejecuta silenciosamente en segundo 
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO4-->
 
 

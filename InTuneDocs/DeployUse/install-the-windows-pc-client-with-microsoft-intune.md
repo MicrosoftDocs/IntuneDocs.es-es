@@ -1,20 +1,20 @@
 ---
-title: Instalar al cliente de equipos Windows con Microsoft Intune | Microsoft Intune
-description: 
+title: Instalar el software cliente de PC | Microsoft Intune
+description: "Siga esta guía para administrar sus equipos Windows con el software cliente de Microsoft Intune."
 keywords: 
 author: NathBarn
-manager: jeffgilb
-ms.date: 04/28/2016
+manager: arob98
+ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
-ms.reviewer: jeffgilb
+ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1bdcfa71aab0918fba1f59bd0782fc63eef6994e
-ms.openlocfilehash: 723bef398338946e085e9d04d57a85b433ebc1c8
+ms.sourcegitcommit: 2c162e2a885887d0aa69da2a4cec55c7737bccd1
+ms.openlocfilehash: 7e16d0057b91eece7a5aa92a0ba495eaf159caae
 
 
 ---
@@ -35,8 +35,6 @@ A continuación, use uno o varios de los métodos siguientes para instalar el cl
 -   [Para implementar manualmente el software cliente](#to-manually-deploy-the-client-software)
 
 -   [Para implementar automáticamente el software cliente mediante la directiva de grupo](#to-automatically-deploy-the-client-software-by-using-group-policy)
-
--   [Qué deben hacer los usuarios para inscribir automáticamente sus equipos](#how-users-can-self-enroll-their-computers)
 
 -   [Instalar el software cliente de Microsoft Intune como parte de una imagen](#install-the-microsoft-intune-client-software-as-part-of-an-image)
 
@@ -81,28 +79,6 @@ Si ya no tiene que administrar un equipo con Intune, puede retirar el equipo, lo
 3.  Use la directiva de grupo para implementar el software en los equipos de la red.
 
     Para obtener más información acerca de cómo utilizar la directiva de grupo para implementar software automáticamente, consulte la documentación de Windows Server.
-
-### Qué deben hacer los usuarios para inscribir automáticamente sus equipos
-Los usuarios finales pueden inscribir por sí mismos cada uno de sus equipos a través del Portal de empresa de Intune. Cada equipo inscrito está vinculado a la cuenta de usuario que se utilizó para instalar el software cliente.
-
-> [!NOTE]
-> -   Para poder instalar el software cliente, el usuario debe ser administrador del equipo.
-> -   La inscripción automática requiere que esté instalado Internet Explorer en el equipo cliente.
-> -   Cada vez que un usuario inscribe automáticamente un equipo, usa una licencia de Intune.
-> -   Debe usar una cuenta profesional o educativa para inscribir automáticamente un equipo. No se puede inscribir automáticamente un equipo con una cuenta Microsoft.
-> -   Si el software cliente ya está instalado en un equipo, el usuario final verá un error.
-
-### Para inscribir automáticamente un equipo (información para usuarios finales)
-
-1.  Inicie sesión en el portal de empresa desde el equipo que desea inscribir.
-
-2.  Haga clic en **Agregar dispositivo**.
-
-3.  Haga clic en **Descargar software** y, a continuación, en **Ejecutar**.
-
-4.  Haga clic en **Siguiente** para iniciar el Asistente para la instalación de Microsoft Intune.
-
-5.  Cuando haya finalizado el asistente para la instalación, haga clic en **Finalizar**.
 
 ### Instalar el software cliente de Microsoft Intune como parte de una imagen
 El software cliente de Intune se pueden implementar en equipos como parte de una imagen de sistema operativo. Para ello, puede usar como base el siguiente procedimiento de ejemplo:
@@ -159,9 +135,10 @@ Use uno de los procedimientos siguientes como ayuda para supervisar y validar un
 
 ### Véase también
 [Administrar equipos Windows con Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
+[Solucionar los problemas de configuración del cliente en Microsoft Intune](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune)
 
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Aug16_HO4-->
 
 

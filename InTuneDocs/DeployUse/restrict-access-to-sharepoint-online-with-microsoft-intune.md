@@ -13,8 +13,8 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: d233ea540d7db00d9df5b5ed1f5db2cff6cd7b9e
+ms.sourcegitcommit: e285cadd63e711ddf5d37b878d298b47bacf3333
+ms.openlocfilehash: ab765d181cb2eb9e3e6a9c79c597241c4fd5985f
 
 
 ---
@@ -35,7 +35,7 @@ Cuando un usuario intenta conectarse a un archivo con una aplicación compatible
 >[!IMPORTANT]
 >El acceso condicional para equipos y para dispositivos Windows 10 Mobile con aplicaciones que usan la autenticación moderna no está actualmente disponible para todos los clientes de Intune. Si ya usa estas características, no es necesario que realice ninguna acción. Puede seguir usándolas.
 
->Si no ha creado directivas de acceso condicional para equipos o para Windows 10 Mobile para las aplicaciones que usan la autenticación moderna y le gustaría hacerlo, debe enviar una solicitud.  Encontrará más información sobre problemas conocidos y cómo obtener acceso a esta característica en el [sitio de Connect](http://go.microsoft.com/fwlink/?LinkId=761472).
+>Si no ha creado directivas de acceso condicional para PC o Windows 10 Mobile para las aplicaciones que usan autenticación moderna y le gustaría hacerlo, suscríbase para obtener la vista previa pública de Azure Active Directory que incluye el dispositivo en función del acceso condicional de dispositivos administrados de Intune o un dominio unido a un PC Windows. Lea [esta entrada de blog](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/) para obtener más información.
 
 **Antes** de configurar una directiva de acceso condicional para SharePoint Online, debe:
 - Tener una **suscripción de SharePoint Online** y los usuarios deben tener licencia para SharePoint Online.
@@ -134,7 +134,7 @@ A continuación, configure la directiva para requerir que solo los dispositivos 
         *   Los dispositivos Windows tendrán que estar inscritos y ser compatibles, estar unidos a dominio con Active Directory local, o ambos
         * Plataformas no compatibles como Mac.  Por el contrario, las aplicaciones que usan autenticación moderna y proceden de estas plataformas seguirán bloqueándose.
         >[!TIP]
-        >Podría no ver esta opción si todavía no usa el acceso condicional para equipos.  Use en su lugar las **Plataformas específicas**. El acceso condicional para equipos no está disponible actualmente para todos los clientes de Intune.   Encontrará más información sobre problemas conocidos y cómo obtener acceso a esta característica en el [sitio de Microsoft Connect](http://go.microsoft.com/fwlink/?LinkId=761472).
+        >Podría no ver esta opción si todavía no usa el acceso condicional para equipos.  Use en su lugar las **Plataformas específicas**. El acceso condicional para equipos no está disponible actualmente para todos los clientes de Intune.   Puede encontrar más información sobre cómo obtener acceso a esta función [en esta entrada de blog ](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/10/azuread-conditional-access-policies-for-ios-android-and-windows-are-in-preview/).
 
     -   **Plataformas específicas**
 
@@ -189,6 +189,6 @@ Seleccione cualquier grupo de dispositivos móviles y, a continuación, en la pe
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Aug16_HO3-->
 
 

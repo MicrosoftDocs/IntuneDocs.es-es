@@ -59,7 +59,7 @@ En la siguiente tabla se enumeran los valores que puede usarse para el SDK para 
 |Bloquear captura de pantalla (solo Android)|X|X|
 |Eliminación completa|X|X|
 |Eliminación selectiva <br></br>**Nota**: Para iOS, cuando se quita el perfil de administración, también se quita la aplicación.|X||
-|Impedir "Guardar como..." |X||
+|Impedir "Guardar como" |X||
 |Compatibilidad con aplicaciones de identidades múltiples|X||
 
 ### Consulte también
