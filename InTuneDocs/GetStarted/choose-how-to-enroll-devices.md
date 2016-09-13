@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: cac62b64-3f8b-47ae-aa66-970c7ba15466
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: c671610b9c56d8b92d126d9902cce9c8c689ed63
-ms.openlocfilehash: aac4eee56ec7326b2ce466d19b580aa5f1388aea
+ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
+ms.openlocfilehash: 0e516e3762dc5712a1b2d0f83016b51b15b7070f
 
 
 ---
@@ -28,7 +28,9 @@ Las respuestas a las siguientes preguntas le servirán para saber cuál es el me
   - **Dispositivos de empresa**: inscripción COD
 
 > [!div class="button"]
-[Inscripción BYOD >](#what-byod-devices-can-your-users-enroll)   [Inscripción COD >](#are-your-company-owned-devices-shared-or-do-they-have-dedicated-users)
+[Inscripción BYOD >](#what-byod-devices-can-your-users-enroll)   
+> [!div class="button"]
+[Inscripción COD >](#are-your-company-owned-devices-shared-or-do-they-have-dedicated-users)
 
 ## **¿Qué dispositivos BYOD pueden inscribir sus usuarios?**
 
@@ -72,6 +74,6 @@ Las respuestas a las siguientes preguntas le servirán para saber cuál es el me
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 
