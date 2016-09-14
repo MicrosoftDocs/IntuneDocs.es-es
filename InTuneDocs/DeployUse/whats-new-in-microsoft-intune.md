@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d70a46d9c13aad1bc0a940836d83a99b93bb95e
-ms.openlocfilehash: a753ecfa08adcd27049c70889c50e10618ecddba
+ms.sourcegitcommit: 500cc93b595e04cea987bda699abf94ae010443a
+ms.openlocfilehash: 1f6a4b3988dbebce23a59b4ba14c79cd28cf6882
 
 
 ---
@@ -24,6 +24,11 @@ Conozca las novedades de esta versión de Microsoft Intune. También podrá obte
 
 Todas estas características finalmente se admitirán para las implementaciones de clientes híbridos (Configuration Manager con Intune). Para más información sobre las nuevas características híbridas, vea nuestra [página sobre novedades de las implementaciones híbridas](https://technet.microsoft.com/en-US/library/mt718155(TechNet.10).aspx).
 <!---@Barry, the above blurb stays in each version, but make sure Tyler signs off each time. Also, remember to set the ms.date in the metadata to the sprint release. --->
+
+>[!IMPORTANT] 
+>Entrada de blog: cómo asegurarse de que los dispositivos móviles están actualizados con Microsoft Intune<br>
+>A la luz de los recientes ataques del malware "Trident" en dispositivos iOS, hemos publicado una nueva entrada de blog, [Cómo asegurarse de que los dispositivos móviles están actualizados con Microsoft Intune](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/26/ensuring-mobile-devices-are-up-to-date-using-microsoft-intune/), para que conozca los distintos métodos con los que Intune puede mantener protegidos y actualizados sus dispositivos.
+
 
 ## Agosto de 2016
 ## Administración de aplicaciones
@@ -122,8 +127,8 @@ En septiembre, todos los usuarios de la aplicación Portal de empresa de Microso
 En agosto, Intune publicará una aplicación Microsoft Intune Managed Browser actualizada para iOS que solo admitirá los dispositivos que ejecuten iOS 8.0 o posterior. Aunque que los dispositivos con iOS 7.1 todavía podrán usar la aplicación Managed Browser existente, anime a sus usuarios a actualizar a iOS 8.0 o posterior para tener acceso y aprovechar las nuevas características de Managed Browser.  
 <!---TFS 1313253--->
 
-- **Las aplicaciones de Portal de empresa para Windows 8 y Windows Phone 8 se dejarán de usar a partir de septiembre de 2016** <br/>
-A partir de septiembre de 2016, Microsoft Intune dejará de proporcionar soporte para las aplicaciones de Portal de empresa de Microsoft Intune para las plataformas Windows Phone 8 y Windows 8. Actualice los dispositivos a Windows 8.1 y Windows Phone 8.1 y use las aplicaciones de portal de empresa de Windows 8.1 y Windows Phone 8.1 correspondientes para poder seguir con la distribución de aplicaciones en estos dispositivos.
+- **Las aplicaciones de Portal de la compañía para Windows 8 y Windows Phone 8 se dejarán de usar** <br/>
+A partir de octubre de 2016, Microsoft Intune dejará de ofrecer soporte para las aplicaciones de Portal de empresa de Windows 8 y Windows Phone 8. Microsoft Intune también dejará de ofrecer soporte para la plataforma Windows Phone 8. Como consecuencia, no podrá inscribir ni actualizar ningún dispositivo Windows Phone 8. Puede seguir administrando los dispositivos Windows Phone 8 y Windows 8 que ya estén inscritos. Actualice los dispositivos Windows Phone 8 y Windows 8 a Windows 8.1 y Windows Phone 8.1 y use las aplicaciones de portal de empresa de Windows 8.1 y Windows Phone 8.1 correspondientes para poder seguir con la distribución de aplicaciones en estos dispositivos sin interrupciones.
 <!---TFS 1255391--->
 
 <!--- - **Custom Group Targeting of Notification Rules Removal.**<br/>
@@ -153,6 +158,6 @@ Si quiere ver los lanzamientos de Intune durante los últimos seis meses, los en
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 005992d7d763b67db4d65aa30f19a209f82e3811
+ms.sourcegitcommit: 4386e9c545c3427060478e0fb3482074a8c1d5a0
+ms.openlocfilehash: ba1869e63d9c9e83199ecfde312129c548dd5f07
 
 
 ---
@@ -29,7 +29,7 @@ Si restablece el dispositivo, dejará de aparecer en el Portal de empresa y se r
 
 Para restablecer el dispositivo:
 
-1.  Abra el [sitio web del Portal de empresa](http://portal.manage.microsoft.com) y puntee en el dispositivo cuyo nombre quiere cambiar.
+1.  Abra el [sitio web del portal de empresa](http://portal.manage.microsoft.com) y pulse el dispositivo que quiera restablecer.
 
 2.  Pulse en **Restablecer**.
 
@@ -41,11 +41,10 @@ Se ha restablecido el dispositivo.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
-### Consulte también
-[Usar el sitio web del Portal de empresa de Intune](using-the-intune-company-portal-website.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Sep16_HO1-->
 
 

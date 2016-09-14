@@ -13,8 +13,8 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bbee6d3fec02a4d96b31a44a31218f684e0267c8
-ms.openlocfilehash: ed961a945d0b7872553f2be2917ba273709b6d35
+ms.sourcegitcommit: aa96cf3a1909e3ea2187a3beb0aede3228894504
+ms.openlocfilehash: 9f4b91bd523c82665bcac54902b2e8cc9c72ef75
 
 
 ---
@@ -23,12 +23,6 @@ ms.openlocfilehash: ed961a945d0b7872553f2be2917ba273709b6d35
 Si tiene problemas al implementar y administrar aplicaciones con Intune, empiece aquí. En este tema se incluyen algunos problemas comunes que pueden surgir y sus soluciones.
 
 ## Problemas habituales de implementación de aplicaciones
-
-### Los usuarios no pueden iniciar sesión en el Portal de empresa de Intune
-
-1.  Asegúrese de que la cuenta de usuario existe y está habilitada en el [Portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854).
-
-3.  En el [Portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), asegúrese de que el usuario especifica el nombre de usuario correcto para iniciar sesión en Intune y de que tiene el siguiente formato: **joe@dominio.com**. Si detecta que el usuario está especificando una contraseña incorrecta, pídale que la restablezca.
 
 ### Falta la información de contacto de TI en el Portal de empresa
 
@@ -52,15 +46,6 @@ Si tiene problemas al implementar y administrar aplicaciones con Intune, empiece
 
 4.  Si la barra de progreso de descarga de la aplicación de iOS se completa, pero se produce un error al instalarla, es posible que haya algún problema en los archivos de la aplicación que proporcionó.
 
-### Si un vínculo de una aplicación de iOS le lleva a una ubicación anterior en iTunes App Store
-
-1.  La sesión actual en iTunes App Store se está abriendo en la página de la aplicación anterior.
-
-2.  Cierre iTunes App Store en el dispositivo y vuelva a probar el vínculo.
-
-### Si recibe un error al iniciar una aplicación de iOS
-
-1.  La fecha de expiración de la aplicación podría no ser válida.
 
 ### Si la aplicación se queda bloqueada con el estado "en curso" durante la carga
 
@@ -73,12 +58,6 @@ Si tiene problemas al implementar y administrar aplicaciones con Intune, empiece
 1.  Asegúrese de que el servidor de seguridad de la organización permite el acceso a los sitios web de certificación y aprovisionamiento de Apple.
 
 2.  Para obtener más información, consulte la documentación para desarrolladores de Apple.
-
-### Error: El publicador no existe
-Usa **Agregar otro contrato de software** para agregar un contrato de licencia de terceros e intenta agregar el publicador desde la página **Otro contrato de licencia de software**. La página le proporcionará una lista con los editores existentes en orden alfabético.
-Cuando especifica el publicador que falta, recibe el error **El publicador no existe**.
-
-Esto es así por diseño. Intune proporciona el seguimiento de licencias solo para los títulos de software más populares. Intune pide que al menos 4 cuentas independientes notifiquen el software antes de ofrecerlo como una opción en la carga de trabajo de licencias.
 
 ### Si las aplicaciones administradas no envían informes de estado de la instalación
 
@@ -93,13 +72,13 @@ En la tabla siguiente se indican los errores comunes que se pueden producir dura
 |0x80073CF0|No se pudo abrir el paquete.|Posibles causas:<br /><br />-   El paquete no está firmado.<br />-   El nombre del publicador no coincide con el sujeto que firma el certificado.<br /><br />Compruebe el registro de eventos AppxPackagingOM para obtener más información.|
 |0x80073CF3|Error de actualización, dependencia o validación de conflicto en el paquete.|Posibles causas:<br /><br />-   El paquete entrante tiene conflicto con un paquete instalado.<br />-   No se encuentra una dependencia del paquete especificado.<br />-   El paquete no es compatible con la arquitectura correcta del procesador.<br /><br />Compruebe el registro de eventos AppXDeployment-Server para obtener más información.|
 |0x80073CFB|El paquete suministrado ya está instalado y se ha bloqueado la reinstalación del paquete|Podría recibir este error si está instalando un paquete que no es idéntico al paquete que ya está instalado. Confirme que la firma digital también forma parte del paquete. Cuando un paquete se vuelve a generar o a firmar, dicho paquete ya no es idéntico bit a bit al paquete instalado previamente. Dos opciones para corregir este error son:<br /><br />-   Incrementar el número de versión de la aplicación y luego recompilar y volver a firmar el paquete.<br />-   Quitar el paquete antiguo para todos los usuarios del sistema antes de instalar el nuevo paquete.|
-|0x87D1041C|La instalación de la aplicación se realizó correctamente, pero esta no se detecta.|- El usuario instaló la aplicación desde el portal de empresa y luego la desinstaló directamente desde el dispositivo. Vuelva a instalar la aplicación desde el portal de empresa.<br /><br />- Es posible que haya una discrepancia entre el número de versión de una aplicación de línea de negocio reconocida por Intune y la versión instalada en el dispositivo. Asegúrese de que Intune tenga la versión correcta y vuelva a instalar la aplicación.|
+|0x87D1041C|La instalación de la aplicación se realizó correctamente, pero esta no se detecta.|-La aplicación se implementó correctamente mediante Intune y luego se desinstaló (posiblemente por parte del usuario final). Indique al usuario que vuelva a instalar la aplicación desde el portal de empresa. Las aplicaciones necesarias se volverán a instalar automáticamente cuando se vuelva a comprobar el dispositivo.|
 
 ### Pasos siguientes
 Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico de Microsoft Intune).
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

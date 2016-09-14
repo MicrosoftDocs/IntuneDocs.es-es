@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 07/28/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: c676c15ad526ff31b98484704190b96006bf4f36
+ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
+ms.openlocfilehash: 275e51d2f32aec340a31b67773dbccc77d48a573
 
 
 ---
@@ -23,7 +23,9 @@ ms.openlocfilehash: c676c15ad526ff31b98484704190b96006bf4f36
 
 # Sincronización manual del dispositivo con el sitio web del Portal de empresa
 
-Si la instalación de la aplicación tarda demasiado, puede intentar sincronizar el dispositivo manualmente para acelerar la instalación. Use las instrucciones siguientes correspondientes al tipo de dispositivo o la versión de Windows que tenga. La sincronización del dispositivo para acelerar las instalaciones de aplicaciones funciona únicamente en las versiones que figuran aquí.
+Si la instalación de la aplicación o la ejecución de otra tarea tarda demasiado, puede intentar sincronizar el dispositivo manualmente para acelerar la instalación o la ejecución de la tarea. Use las instrucciones siguientes que coincidan con el dispositivo que esté usando. 
+
+La característica de sincronización solo funciona en las versiones que aparecen a continuación.
 
 * [Windows 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
 * [Windows 10 Escritorio](sync-your-device-manually-windows.md#windows-10-desktop)
@@ -32,6 +34,6 @@ Si la instalación de la aplicación tarda demasiado, puede intentar sincronizar
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 

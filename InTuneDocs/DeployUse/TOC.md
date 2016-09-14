@@ -9,8 +9,9 @@
 ## [Inscribir dispositivos](enroll-devices-in-microsoft-intune.md)
 ### [Preparar la inscripción de dispositivos en Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
 #### [Administración de iOS y Mac](set-up-ios-and-mac-management-with-microsoft-intune.md)
-#### [Windows 10 Mobile y Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
+#### [Administración de Android](set-up-android-management-with-microsoft-intune.md)
 #### [Administración de dispositivos Windows ](set-up-windows-device-management-with-microsoft-intune.md)
+#### [Windows 10 Mobile y Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 ### [Administrar dispositivos propiedad de la empresa](manage-corporate-owned-devices.md)
 #### [Inscribir dispositivos iOS de empresa](enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
 ##### [Inscripción con el asistente para la configuración de iOS](ios-setup-assistant-enrollment-in-microsoft-intune.md)
@@ -24,6 +25,7 @@
 #### [Reglas de acceso de Exchange](exchange-access-rules-for-mobile-devices.md)
 ### [Administrar equipos](manage-windows-pcs-with-microsoft-intune.md)
 #### [Instalar el cliente de equipo](install-the-windows-pc-client-with-microsoft-intune.md)
+#### [Tareas comunes de administración de equipos](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 #### [Resolver conflictos de directivas de equipo](resolve-gpo-and-microsoft-intune-policy-conflicts.md)
 
 ## [Configurar dispositivos](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
@@ -49,7 +51,7 @@
 ### [Usar grupos para administrar usuarios y dispositivos](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
 ### [Asignar dispositivos a grupos](categorize-devices-with-device-group-mapping-in-microsoft-intune.md)
 ### [Comprender el funcionamiento de sus dispositivos mediante el inventario](understand-your-devices-with-inventory-in-microsoft-intune.md)
-### [Tareas comunes de administración de equipos](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
+
 
 ## [Proteger dispositivos](protect-your-devices-with-microsoft-intune.md)
 ### [Restablecimiento del bloqueo remoto y el código de acceso](use-remote-lock-and-passcode-reset-in-microsoft-intune.md)
@@ -76,6 +78,7 @@
 ## [Configurar aplicaciones](update-apps-using-microsoft-intune.md)
 ### [Actualizar aplicaciones ](update-apps-using-microsoft-intune.md)
 ### [Directivas de configuración de aplicaciones iOS](configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune.md)
+### [Perfiles de aprovisionamiento de aplicaciones móviles iOS](ios-mobile-app-provisioning-profiles.md)
 ### [Administrar el acceso a Internet](manage-internet-access-using-managed-browser-policies.md)
 
 
@@ -105,6 +108,7 @@
 #### [Crear e implementar directivas MAM](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Directivas MAM para Android](android-mam-policy-settings.md)
 #### [Directivas MAM para iOS](ios-mam-policy-settings.md)
+#### [Validar las directivas MAM](validate-mobile-application-management.md)
 #### [Supervisar el cumplimiento de directivas](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Administrar la transferencia de datos entre aplicaciones iOS](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 #### [Experiencia del usuario final](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
@@ -133,6 +137,6 @@
 # [Solución de problemas](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Jun16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 

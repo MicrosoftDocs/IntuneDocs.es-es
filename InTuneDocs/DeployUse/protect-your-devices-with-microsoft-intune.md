@@ -4,7 +4,7 @@ description: "Obtenga información acerca de algunas de las maneras en que Intun
 keywords: 
 author: Robstackmsft
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 09/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,35 +13,55 @@ ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c999a852b68762002ac94269e27ecbf46c8f9999
-ms.openlocfilehash: 3318590eaedc6f0e96fb463dc016d5786eeb38fb
+ms.sourcegitcommit: 3e761ed60fe3df81061023aa31e0545aeeadd316
+ms.openlocfilehash: be5051c46e1ef04ea140c9d440720f570edcbd1e
 
 
 ---
 
 # Proteger dispositivos con Microsoft Intune
-Una vez que los dispositivos estén administrados por Intune, querrá asegurarse de que están protegidos frente al acceso no autorizado y otras amenazas. Estas son algunas de las funcionalidades de Intune que ayudan a lograr estos objetivos.
 
-> [!TIP]
-> Este tema no contiene todas las formas en que Intune puede ayudar a proteger los dispositivos. Por ejemplo, puede usar directivas de Intune para configurar muchas opciones de seguridad para los dispositivos, como la configuración de contraseñas y cifrado, así como características de hardware, como Bluetooth y la cámara del dispositivo. Consulte [Manage settings and features on your devices with Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) (Administrar la configuración y las características de los dispositivos con Microsoft Intune) para obtener más información sobre estas opciones.
+Microsoft Intune le ofrece un conjunto de capacidades para que pueda proteger los dispositivos que administra y los datos almacenados en dichos dispositivos. Lea este tema para aprender los conceptos básicos de estas capacidades y descubrir cómo obtener más información.
 
-## Restablecer códigos de acceso cuando los usuarios quedan bloqueados fuera de sus dispositivos
-El primer paso para proteger los datos corporativos en dispositivos móviles consiste en solicitar una contraseña para usar el dispositivo. En ocasiones tendrá que [restablecer una contraseña](use-remote-lock-and-passcode-reset-in-microsoft-intune.md) o ayudar a un empleado a hacerlo, ya sea eliminando la contraseña o estableciendo un código de acceso temporal de forma remota. También puede [bloquear un dispositivo de forma remota](use-remote-lock-and-passcode-reset-in-microsoft-intune.md) si se pierde o es robado.
+## Métodos generales para proteger todos los dispositivos
 
-## Agregar una capa adicional de protección en dispositivos Windows
-[Multi-Factor Authentication (MFA)](protect-windows-devices-with-multi-factor-authentication.md) es una forma más segura de autenticar a los usuarios de dispositivos Windows y Windows Phone en la red. Con MFA, los usuarios deben confirmar su identidad, más allá del nombre de usuario y la contraseña, a través de una llamada de teléfono o un mensaje de texto.
+### Configuración de los dispositivos
+Gracias a las [directivas de configuración](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) de Intune puede proteger y configurar dispositivos controlando una gran variedad de opciones y características. Por ejemplo:
+- Puede restringir el uso de las características de hardware en el dispositivo, como la cámara o el Bluetooth.
+- Puede configurar aplicaciones conformes y no conformes. Se le avisará si se instala una aplicación no conforme (de hecho, algunas plataformas pueden bloquear la instalación).
 
-## Controlar la configuración de Microsoft Passport en dispositivos Windows
-Intune permite la integración con [Microsoft Passport for Work](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md), que es un método alternativo de inicio de sesión para Windows 10 y versiones posteriores. Microsoft Passport for Work usa Active Directory o una cuenta de Azure Active Directory para reemplazar una contraseña, una tarjeta inteligente o una tarjeta inteligente virtual.
+### Restablecer códigos de acceso cuando los usuarios quedan bloqueados fuera de sus dispositivos
+Dado que el primer paso para proteger los datos empresariales en dispositivos móviles es exigir un código de acceso para usar el dispositivo, a veces será necesario [restablecer un código de acceso](use-remote-lock-and-passcode-reset-in-microsoft-intune.md) o ayudar a un empleado a hacerlo, ya sea quitando el código de acceso o estableciendo uno temporal de forma remota. También puede [bloquear un dispositivo de forma remota](use-remote-lock-and-passcode-reset-in-microsoft-intune.md) si se pierde o es robado.
 
-## Realizar el bypass del bloqueo de activación en dispositivos iOS
-El bloqueo de activación es una característica que sirve para proteger los dispositivos de los usuarios, para lo cual se requiere que especifiquen su identificador de Apple y la contraseña antes de poder borrar o volver a activar el dispositivo. Pero esto puede provocar problemas, por ejemplo, si el usuario deja la empresa sin quitar el bloqueo. El [bypass del bloqueo de activación de iOS](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md) sirve para quitar el bloqueo de los dispositivos iOS supervisados, de forma que pueda reasignarlos o borrarlos.
+### Retirar dispositivos y quitar datos
+Cuando un dispositivo se debe [quitar de la administración de Intune](retire-devices-from-microsoft-intune-management) (por ejemplo, porque un usuario se ha ido o se ha perdido o robado el dispositivo), es probable que quiera quitar los datos de dicho dispositivo. Intune proporciona una serie de métodos para garantizar que los datos de su empresa siguen estando protegidos.
+
+### Requerir que los dispositivos sean conformes
+Intune cuenta con [directivas de conformidad de dispositivos](introduction-to-device-compliance-policies-in-microsoft-intune), que le permiten evaluar (y, en algunos casos, corregir) aquellos dispositivos que no se ajustan a las reglas especificadas. Por ejemplo, puede notificar la existencia de dispositivos iOS con Jailbreak, si los dispositivos están cifrados o si el servicio de atestación de mantenimiento ha notificado que el estado de los dispositivos con Windows 10 es correcto.
+
+### Proteger las aplicaciones y los datos que usan
+Intune le ofrece una serie de características que le ayudan a proteger las aplicaciones y sus datos. Por ejemplo, las directivas de administración de aplicaciones móviles (MAM) pueden impedir que se haga una copia de seguridad de los datos desde una aplicación protegida, restringir la acción de copiar y pegar a otras aplicaciones, pedir un PIN para obtener acceso a una aplicación, etc. Para obtener más información sobre cómo proteger las aplicaciones, consulte [Proteger aplicaciones y datos con Microsoft Intune](protect-apps-and-data-with-microsoft-intune)
+
+## Otras capacidades para dispositivos Windows
+
+### Agregar una capa adicional de protección en dispositivos Windows
+[Multi-Factor Authentication (MFA)](protect-windows-devices-with-multi-factor-authentication.md) es una forma más segura de autenticar a los usuarios de dispositivos Windows y Windows Phone en la red.  Con MFA, los usuarios deben confirmar su identidad, más allá del nombre de usuario y la contraseña, mediante una llamada de teléfono o un mensaje de texto.
+
+### Controlar la configuración de Windows Hello para empresas en los dispositivos Windows
+Intune permite la integración con [Windows Hello para empresas](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md) (anteriormente denominado Microsoft Passport), que es un método alternativo de inicio de sesión para Windows 10 y versiones posteriores que usa Active Directory o una cuenta de Azure Active Directory para reemplazar una contraseña, una tarjeta inteligente o una tarjeta inteligente virtual.
+
+## Otras capacidades para dispositivos iOS
+
+### Realizar el bypass del bloqueo de activación en dispositivos iOS
+El bloqueo de activación es una característica que sirve para proteger los dispositivos de los usuarios, para lo cual deben especificar su identificador de Apple y la contraseña antes de poder borrar o volver a activar el dispositivo. Pero esto puede provocar problemas, por ejemplo, si el usuario deja la empresa sin quitar el bloqueo. El [bypass del bloqueo de activación de iOS](help-protect-ios-devices-with-activation-lock-bypass-for-microsoft-intune.md) sirve para quitar el bloqueo de los dispositivos iOS supervisados, de forma que pueda reasignarlos o borrarlos.
+
+
 
 ## Proteger equipos Windows administrados con el cliente de Intune
 Intune sigue siendo compatible con las directivas de seguridad para equipos Windows que no se inscriben, sino que se administran con el software cliente de equipo de Intune. Para averiguar cómo pueden ayudar estas directivas a proteger los equipos Windows, consulte [Use policies to help protect Windows PCs that run the Intune client software](policies-to-protect-windows-pcs-in-microsoft-intune.md) (Usar directivas para ayudar a proteger equipos Windows que ejecutan el software cliente de Intune).
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Sep16_HO1-->
 
 
