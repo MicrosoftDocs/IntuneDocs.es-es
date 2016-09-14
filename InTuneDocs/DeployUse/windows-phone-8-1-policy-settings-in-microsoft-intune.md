@@ -13,8 +13,8 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4279ecd098ddaa6d6eb239ee71f9c3f7d450ab3f
-ms.openlocfilehash: f2ccc52ceae6bbb63ea76ff4391922099c69f4dd
+ms.sourcegitcommit: c6b3f193606f13427a68c561d688b75d38221950
+ms.openlocfilehash: 315e492b301387c2030440e7188dfdb35a99ddd9
 
 
 ---
@@ -40,7 +40,7 @@ Use la **directiva de configuración general de Windows Phone (Windows Phone 8.1
 ### Configuración de contraseña
 
 |Nombre de la configuración|Detalles|Windows Phone 8|Windows Phone 8,1|
-|----------------|-----------------------------------------|
+|----------------|------|-----|------------------------------|
 |**Requerir una contraseña para desbloquear dispositivos móviles**|Especifica si los usuarios deben escribir una contraseña para obtener acceso a los dispositivos.|Sí|Sí|
 |**Tipo de contraseña obligatoria**|Especifica el tipo de contraseña que será necesario, como solo numérica o alfanumérica.|Sí|Sí|
 |**Tipo de contraseña requerida: número mínimo de conjuntos de caracteres**|Especifica cuántos juegos de caracteres diferentes deben incluirse en la contraseña. Hay cuatro juegos de caracteres: letras minúsculas, letras mayúsculas, símbolos y números. En cambio, para dispositivos iOS, especifica el número de símbolos que deben incluirse en la contraseña.|Sí|Sí|
@@ -55,44 +55,44 @@ Use la **directiva de configuración general de Windows Phone (Windows Phone 8.1
 ### Configuración de cifrado
 
 |Nombre de la configuración|Detalles|Windows Phone 8|Windows Phone 8,1|
-|----------------|-----------------------------------------|
+|----------------|------|------|-----------------------------|
 |**Requerir cifrado en dispositivo móvil**|Requiere que se cifren los datos en los dispositivos móviles compatibles.<br>Para dispositivos de Windows Phone 8, debe establecerse en **Sí**.|Sí|Sí|
 
 ### Configuración del sistema
 
 |Nombre de la configuración|Detalles|Windows Phone 8|Windows Phone 8,1|
-|----------------|-----------------------------------------|
+|----------------|-----|------|------------------------------|
 |**Permitir captura de pantalla**|Permite al usuario capturar el contenido de la pantalla como un archivo de imagen.|No|Sí|
 |**Permitir el envío de datos de diagnóstico**|Permite que el dispositivo envíe información de diagnóstico a Microsoft.|No|Sí|
 
 ### Configuración de nube: cuentas y sincronización
 
 |Nombre de la configuración|Detalles|Windows Phone 8|Windows Phone 8,1|
-|----------------|-----------------------------------------|
+|----------------|------|-----|------------------------------|
 |**Permitir cuenta de Microsoft**|Permite vincular una cuenta Microsoft al dispositivo.|No|Sí|
 
 ### Configuración de correo electrónico
 
 |Nombre de la configuración|Detalles|Windows Phone 8|Windows Phone 8,1|
-|----------------|-----------------------------------------|
+|----------------|-----|-----|-------------------------------|
 |**Permitir cuentas de correo electrónico personalizadas**|Permite que el dispositivo se conecte a cuentas de correo electrónico que no son de Microsoft.|No|Sí|
 
 ### Configuración de la aplicación: explorador
 
 |Nombre de la configuración|Detalles|Windows Phone 8|Windows Phone 8,1|
-|----------------|-----------------------------------------|
+|----------------|-----|-----|-------------------------------|
 |**Permitir explorador web**|Permite o bloquea el explorador web integrado en los dispositivos.|No|Sí|
 
 ### Configuración de la aplicación: aplicaciones
 
 |Nombre de la configuración|Detalles|Windows Phone 8|Windows Phone 8,1|
-|----------------|-----------------------------------------|
+|----------------|-----|------|------------------------------|
 |**Permitir almacén de aplicaciones**|Permite a los usuarios conectarse a la tienda de aplicaciones desde el dispositivo.|No|Sí|
 
 ### Configuración de funcionalidades del dispositivo: hardware
 
 |Nombre de la configuración|Detalles|Windows Phone 8|Windows Phone 8,1|
-|----------------|-----------------------------------------|
+|----------------|-----|----|--------------------------------|
 |**Permitir cámara**|Permite o bloquea la cámara del dispositivo.|No|Sí|
 |**Permitir almacenamiento extraíble**|Permite que el dispositivo use un almacenamiento extraíble, como las tarjetas SD.|Sí|Sí|
 |**Permitir Wi-Fi**|Habilita o deshabilita la funcionalidad de Wi-Fi del dispositivo.|No|Sí|
@@ -106,7 +106,7 @@ Use la **directiva de configuración general de Windows Phone (Windows Phone 8.1
 ### Configuración de funcionalidades del dispositivo: características
 
 |Nombre de la configuración|Detalles|Windows Phone 8|Windows Phone 8,1|
-|----------------|-----------------------------------------|
+|----------------|----|------|-------------------------------|
 |**Permitir copiar y pegar**|Permite la funcionalidad de copiar y pegar en los dispositivos.|No|Sí|
 
 ### Configuración de aplicaciones permitidas y bloqueadas
@@ -171,6 +171,6 @@ En el cuadro de diálogo **Agregar o editar configuración OMA-URI**, especifiqu
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO2-->
 
 
