@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b0653af30aa6e75888dd72c5b3a4afa0b2b1d596
-ms.openlocfilehash: a3cc5ea639c31e3fec08e86f27f118e193b8f4b3
+ms.sourcegitcommit: 52b9e786fe22b04081441db88a3629062fc85668
+ms.openlocfilehash: 0949172a7b8517b12fb46e8fd1f8a3cd70d93099
 
 
 ---
@@ -78,25 +78,6 @@ Además de los cambios en la administración de grupos, **la siguiente funcional
 - Dinamizar con grupos en informes
 <!--- TFS 1295329--->
 
-## Portal de empresa
-
-### Vínculo de comentarios del Portal de empresa a Microsoft
-El sitio web de Portal de empresa permite a los usuarios finales puntear un nuevo vínculo "Comentarios", situado en la parte inferior de la página, para enviar comentarios a Microsoft sobre su experiencia en el sitio. Los comentarios recopilados y anónimos ayudan a Microsoft a mejorar la experiencia de los usuarios en el sitio web de Portal de empresa.
-<!--- TFS 1313657--->
-
-### Mejoras en cómo los usuarios finales de iOS obtienen sus aplicaciones
-Los siguientes cambios se realizarán en septiembre en los iconos de aplicaciones en la aplicación de portal de empresa para iOS para que apunte a los usuarios a distintas vistas en una única ubicación, el sitio web de portal de empresa, para todas sus aplicaciones. Actualmente, las restricciones de Apple prohíben que se muestren la línea de negocio y las aplicaciones de la tienda de aplicaciones administrada en la aplicación de portal de empresa de la tienda y requieren a los usuarios visitar vistas diferentes para encontrar todas sus aplicaciones.
-
-- El icono de **aplicaciones de empresa** actualmente apunta a una lista de todas las aplicaciones en la pestaña TODO del sitio web del portal de empresa y seguirá funcionando del mismo modo. El nombre de icono cambiará a **Todas las aplicaciones**.
-- El icono **Otras aplicaciones** apunta actualmente a una vista, dentro de la aplicación de portal de empresa, que enumera todas las aplicaciones que Apple permite mostrar a la aplicación de portal de empresa. El nombre de icono cambiará a **Aplicaciones destacadas**, y si pulsa en el icono, se le dirigirá a la pestaña DESTACADOS del sitio web del portal de empresa.
--  El icono **Categorías** apunta actualmente a una vista, dentro del portal de empresa, que enumera las categorías de aplicaciones. No se cambiará el nombre del icono, pero ahora apuntará a la pestaña CATEGORÍAS del sitio web del portal de empresa.
-Puede encontrar las capturas de pantalla actualizadas [aquí](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186).
-<!---TFS 1317133--->
-
-### Preguntar para instalar la aplicación del explorador administrado de iOS si el profesional de TI establece ese requisito para una aplicación
-En la versión de septiembre de la aplicación del portal de empresa de iOS, si ha configurado un clip de web para abrirlo solo en el explorador administrado y este no está instalado en un dispositivo, la aplicación del portal de empresa en el dispositivo le pedirá al usuario que instale el explorador administrado para poder instalar el clip web. 
-<!---TFS 1228570--->
-
 ## Degradación del servicio
 ### Las aplicaciones de Portal de empresa para Windows 8 y Windows Phone 8 se dejarán de usar a partir de septiembre de 2016
 A partir de octubre de 2016, Microsoft Intune dejará de ofrecer soporte para las aplicaciones de Portal de empresa de Windows 8 y Windows Phone 8. Microsoft Intune también dejará de ofrecer soporte para la plataforma Windows Phone 8. Como consecuencia, no podrá inscribir ni actualizar ningún dispositivo Windows Phone 8. Puede seguir administrando los dispositivos Windows Phone 8 y Windows 8 que ya estén inscritos. Actualice los dispositivos Windows Phone 8 y Windows 8 a Windows 8.1 y Windows Phone 8.1 y use las aplicaciones de portal de empresa de Windows 8.1 y Windows Phone 8.1 correspondientes para poder seguir con la distribución de aplicaciones en estos dispositivos sin interrupciones.
@@ -132,6 +113,6 @@ Consulte [Novedades de Microsoft Intune](whats-new-in-microsoft-intune.md) para 
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO3-->
 
 
