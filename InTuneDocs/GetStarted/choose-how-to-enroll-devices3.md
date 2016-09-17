@@ -13,8 +13,8 @@ ms.assetid: 24b8ecbf-7336-4543-8094-32688bda0b8f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: a5f80058e004f119acc9a918123c897b72b71314
-ms.openlocfilehash: 43bbb8590738182a26efcbeead1e59eff9e5f20d
+ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
+ms.openlocfilehash: fc2f95b0e780b42dbeab977c340f3b2b7c9881e5
 
 
 ---
@@ -25,7 +25,9 @@ Las respuestas a la siguiente serie de preguntas le servirán para saber cuál e
 ## **¿Los dispositivos propiedad de la empresa son compartidos o se destinan a usuarios dedicados?**
 
 > [!div class="button"]
-[Compartido >](choose-how-to-enroll-devices4.md)<br>[Dedicado >](choose-how-to-enroll-devices6.md)
+[Compartido >](choose-how-to-enroll-devices4.md)
+> [!div class="button"]
+[Dedicado >](choose-how-to-enroll-devices6.md)
 
 - **Dispositivos propiedad de la empresa compartidos:** estos dispositivos no tienen un único usuario y no suelen estar configurados para obtener acceso al correo electrónico. Ejemplos de esto son los dispositivos de pantalla completa o los dispositivos orientados a tareas que los usuarios eligen de un grupo cuando lo necesitan y, luego, lo devuelven. Los métodos de inscripción recomendados dependerán de la plataforma de los dispositivos.
 
@@ -36,6 +38,6 @@ Las respuestas a la siguiente serie de preguntas le servirán para saber cuál e
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 
