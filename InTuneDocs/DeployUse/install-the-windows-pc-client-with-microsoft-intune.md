@@ -13,38 +13,27 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2c162e2a885887d0aa69da2a4cec55c7737bccd1
-ms.openlocfilehash: 7e16d0057b91eece7a5aa92a0ba495eaf159caae
+ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
+ms.openlocfilehash: 8ceeca6735267ab66ab14e72570ace3dc8a9b524
 
 
 ---
 
-# Instalar al cliente de equipos Windows con Microsoft Intune
-Siga esta guía para administrar sus equipos Windows con el software cliente de Microsoft Intune.
+# Instalar el cliente de software de Intune en equipos con Windows
+Los equipos con Windows se pueden inscribir instalando el software cliente de Intune. El software cliente de Intune se puede instalar de las maneras siguientes:
 
-## Antes de empezar
-Antes de empezar a instalar el software cliente de Intune, lea el tema [Resolver conflictos de directivas de Microsoft Intune y GPO](resolve-gpo-and-microsoft-intune-policy-conflicts.md) para comprender los preparativos que debe realizar para instalar el cliente correctamente. Después vuelva a estas instrucciones.
+- Instalado manualmente
+- Instalado con una directiva de grupo
+- Incluido en una imagen de disco
+- Instalado por parte de los usuarios
 
-## Instalar el cliente
-Siga estos pasos para instalar el cliente:
+## Descargar el software cliente de Intune
 
--   [Para descargar el software cliente](#to-download-the-client-software)
-
-A continuación, use uno o varios de los métodos siguientes para instalar el cliente:
-
--   [Para implementar manualmente el software cliente](#to-manually-deploy-the-client-software)
-
--   [Para implementar automáticamente el software cliente mediante la directiva de grupo](#to-automatically-deploy-the-client-software-by-using-group-policy)
-
--   [Instalar el software cliente de Microsoft Intune como parte de una imagen](#install-the-microsoft-intune-client-software-as-part-of-an-image)
-
-Si ya no tiene que administrar un equipo con Intune, puede retirar el equipo, lo que también implica quitar el software cliente del equipo. Para obtener más información, vea [Tareas comunes de administración de PC Windows con el cliente de equipo de Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
-
-### Para descargar el software cliente
+Para todos los métodos, excepto en el que los usuarios mismos instalan el software cliente de Intune, debe descargar el software para poder implementarlo.
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), haga clic en **Administración** &gt; **Descarga de software cliente**.
 
-  ![Descargar el cliente de equipo de Intune](./media/pc-SA-client-download.png)
+  ![Descargar el cliente de equipo de Intune](../media/pc-sa-client-download.png)
 
 2.  En la página **Descargar software cliente**, haga clic en **Descargar software cliente** y guarde el paquete **Microsoft_Intune_Setup.zip** que contiene el software en una ubicación segura de la red.
 
@@ -56,14 +45,14 @@ Si ya no tiene que administrar un equipo con Intune, puede retirar el equipo, lo
     > [!IMPORTANT]
     > No cambie de nombre ni quite el archivo **ACCOUNTCERT** extraído; de lo contrario, la instalación del software cliente no funcionará.
 
-### Para implementar manualmente el software cliente
+## Implementación manual
 
 1.  En un equipo, vaya a la carpeta donde están ubicados los archivos de instalación del software cliente y ejecute **Microsoft_Intune_Setup.exe** para instalar el software cliente.
 
     > [!NOTE]
     > El estado de la instalación se muestra al colocar el puntero sobre el icono de la barra de tareas en el equipo cliente.
 
-### Para implementar automáticamente el software cliente mediante la directiva de grupo
+## Implementación con una directiva de grupo
 
 1.  En la carpeta que contiene los archivos **Microsoft_Intune_Setup.exe** y **MicrosoftIntune.accountcert**, ejecute el siguiente comando para extraer los programas de instalación basados en Windows Installer para equipos de 32 bits y 64 bits:
 
@@ -80,7 +69,7 @@ Si ya no tiene que administrar un equipo con Intune, puede retirar el equipo, lo
 
     Para obtener más información acerca de cómo utilizar la directiva de grupo para implementar software automáticamente, consulte la documentación de Windows Server.
 
-### Instalar el software cliente de Microsoft Intune como parte de una imagen
+## Instalación como parte de una imagen
 El software cliente de Intune se pueden implementar en equipos como parte de una imagen de sistema operativo. Para ello, puede usar como base el siguiente procedimiento de ejemplo:
 
 1.  Copie los archivos de instalación del cliente, **Microsoft_Intune_Setup.exe** y **MicrosoftIntune.accountcert**, en la carpeta **%Systemdrive%\Temp\Microsoft_Intune_Setup** del equipo de referencia.
@@ -109,6 +98,12 @@ Cuando se reinicie el equipo de destino al finalizar la instalación de Windows,
 Cuando se ejecuta la tarea de inscripción automática a la siguiente hora programada, se comprueba la existencia del valor **WindowsIntuneEnrollPending** en el Registro y se intenta inscribir el equipo de destino en Intune. Si por algún motivo se produjera un error en la inscripción, se reintentará la inscripción la próxima vez que se ejecute la tarea. Los reintentos continuarán durante un mes.
 
 La tarea de inscripción automática de Intune, el valor **WindowsIntuneEnrollPending** del Registro y el certificado de cuenta se eliminarán del equipo de destino cuando se haya inscrito correctamente o al cabo de un mes.
+
+## Indicar al usuario que efectúe una inscripción automática
+
+Los usuarios pueden instalar el software cliente de Intune a través de [http://portal.manage.microsoft.com](http://portal..manage.microsoft.com). Si el portal web puede detectar que el dispositivo es un equipo con Windows, le pedirá que lo inscriba descargando el software cliente de Intune. Una vez descargado, los usuarios pueden instalar el software para incorporar sus equipos a la administración.
+
+![Portal de Intune, que solicita la descarga del cliente de software de Intune](../media/software-client-download.png)
 
 ## Supervisión y validación de una implementación correcta del cliente
 Use uno de los procedimientos siguientes como ayuda para supervisar y validar una implementación correcta del cliente.
@@ -139,6 +134,6 @@ Use uno de los procedimientos siguientes como ayuda para supervisar y validar un
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

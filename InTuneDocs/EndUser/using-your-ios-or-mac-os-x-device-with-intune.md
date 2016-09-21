@@ -14,16 +14,16 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 11760810110ddb34e1a5371ce45206212eab0790
-ms.openlocfilehash: 83564abcfcbb6597656e19031e5af1c7d7a3252d
+ms.sourcegitcommit: 20101b6c65bcab413441e16b3ac6a08a982e6a28
+ms.openlocfilehash: 3794a610996f5001e52f4d19d4cdafd849de3455
 
 
 ---
 
 # Using your iOS or Mac OS X device with Intune
 
-Este artículo contiene vínculos a todas las tareas que los usuarios finales pueden realizar en sus dispositivos administrados por Intune. Los administradores de TI pueden consultar esta información para ver los pasos que siguen los usuarios para realizar diversas tareas, que se agrupan en categorías: 
-- Instalación de aplicaciones del Portal de empresa e inscripción a Intune 
+Este artículo contiene vínculos a todas las tareas que los usuarios finales pueden llevar a cabo en sus dispositivos administrados con Intune. Los administradores de TI pueden consultar esta información para ver los pasos que deben seguir los usuarios para llevar a cabo distintas tareas, que se agrupan en las siguientes categorías:
+- Instalación de aplicaciones del Portal de empresa e inscripción a Intune
 - Tareas de administración posteriores a la inscripción
 - Problemas de cumplimiento
 
@@ -38,7 +38,7 @@ La información de esta sección le ayuda con la instalación del Portal de empr
 
 ## Cosas que puede hacer cuando el dispositivo está inscrito en Intune
 
-La información de esta sección le ayuda con las acciones que puede realizar después de que el dispositivo iOS esté inscrito en Intune.
+La información de esta sección le ayuda con las acciones que puede llevar a cabo después de inscribir el dispositivo iOS en Intune.
 
 - [Usar aplicaciones administradas en el dispositivo](use-managed-apps-on-your-device-ios.md)
 - [Establecer o cambiar el código de acceso](set-or-change-your-passcode-ios.md)
@@ -64,6 +64,6 @@ La información de esta sección le ayuda a solucionar los problemas que pueda e
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

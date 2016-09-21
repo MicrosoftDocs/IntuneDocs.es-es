@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 05/30/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 44b9d572956250da916fb72afdddc8a90860025a
+ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
+ms.openlocfilehash: 198547ba527e72535cb3f0ce00e542ec922a27f1
 
 
 ---
@@ -25,11 +25,10 @@ ms.openlocfilehash: 44b9d572956250da916fb72afdddc8a90860025a
 
 La organización requiere que se habilite BitLocker, que es software que cifra la unidad y ayuda a proteger los datos. Para obtener instrucciones sobre cómo habilitar BitLocker en dispositivos Windows 10, consulte [How to turn on BitLocker on Windows 10 devices](https://gallery.technet.microsoft.com/How-to-turn-on-BitLocker-34294d3d) (Cómo activar BitLocker en dispositivos Windows 10). En cuanto al resto de dispositivos, póngase en contacto con el administrador de TI para obtener ayuda. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
-### Consulte también
-[Usar un dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Sep16_HO2-->
 
 

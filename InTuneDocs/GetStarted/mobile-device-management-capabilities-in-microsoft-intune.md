@@ -4,17 +4,17 @@ description: "Lea este tema para averiguar cómo puede ayudar Intune a administr
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/23/2016
+ms.date: 09/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f23b3ee7-78da-4e53-9fc2-78e58401bcf9
-ms.reviewer: jeffgilb
+ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a09c5e3349945cfdcb4ae9d3aa51aa3f7024330a
-ms.openlocfilehash: eab582d30408d1a57643e30ba4965bd08f6ce847
+ms.sourcegitcommit: ff6bfdc079e00f8a39cc532d1f6f9049aa6a32c8
+ms.openlocfilehash: 10dfecd41e68440a4c27aa7358dbbc88b6106001
 
 
 ---
@@ -46,7 +46,8 @@ La administración, el inventario, la implementación de aplicaciones, el aprovi
 |Configuración de aplicaciones móviles iOS|Usa las directivas de configuración de aplicaciones móviles para proporcionar la configuración de aplicaciones iOS que puede ser necesaria cuando el usuario ejecuta la aplicación. Por ejemplo, una aplicación puede necesitar que el usuario especifique un número de puerto o la información de inicio de sesión. Esto puede ayudar a simplificar la configuración de la aplicación y reducir el número de llamadas al soporte técnico.|[Configurar aplicaciones de iOS con directivas de configuración de aplicaciones móviles en Microsoft Intune](/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)|
 |Perfiles de aprovisionamiento de aplicaciones móviles iOS|Le ayuda a implementar el aprovisionamiento de perfiles en aplicaciones iOS que están a punto de expirar. |[Uso de directivas de perfil de aprovisionamiento móvil iOS para evitar que las aplicaciones expiren](/intune/deploy-use/ios-mobile-app-provisioning-profiles)|
 |Explorador administrado|Configura las directivas de explorador administrado para controlar los sitios web que los usuarios del dispositivo pueden visitar. Además, también puede aplicar directivas de administración de aplicaciones móviles al explorador administrado.|[Administrar el acceso a Internet mediante directivas de explorador administrado con Microsoft Intune](/intune/deploy-use/manage-internet-access-using-managed-browser-policies)|
-|Microsoft Passport|Le permite la integración con Microsoft Passport for Work, que es un método de inicio de sesión alternativo para Windows 10 que usa Active Directory local o Azure Active Directory para reemplazar contraseñas, tarjetas inteligentes o tarjetas inteligentes virtuales.|[Controlar la configuración de Microsoft Passport en dispositivos mediante Microsoft Intune](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
+|Windows Hello para empresas|Le permite la integración con Windows Hello para empresas, que es un método de inicio de sesión alternativo para Windows 10 que usa Active Directory local o Azure Active Directory para reemplazar contraseñas, tarjetas inteligentes o tarjetas inteligentes virtuales.|[Controlar la configuración de Windows Hello para empresas en dispositivos que tienen Microsoft Intune](/intune/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)|
+|Aplicaciones de programas de compras por volumen|Le ayuda a administrar las aplicaciones compradas mediante un programa de compras por volumen. Para ello, importa la información de licencia desde la App Store, efectúa el seguimiento de la cantidad de licencias usadas y le impide instalar más copias de la aplicación de las que posee.|[Administrar aplicaciones compradas por volumen con Microsoft Intune](/intune/deploy-use/manage-volume-purchased-apps-in-microsoft-intune)|
 
 ## Acceso a los recursos de la empresa
 
@@ -70,6 +71,6 @@ La administración, el inventario, la implementación de aplicaciones, el aprovi
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO1-->
 
 

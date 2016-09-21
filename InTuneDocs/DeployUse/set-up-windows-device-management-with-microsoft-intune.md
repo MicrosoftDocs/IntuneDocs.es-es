@@ -4,7 +4,7 @@ description: "Habilite la administración de dispositivos móviles (MDM) para PC
 keywords: 
 author: NathBarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,42 +13,49 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 06d6c8ce97ba6a259055e94f0eba87f7c5a96531
-ms.openlocfilehash: fae2aa496ec38d9ddc2cb6800bed10ccb32fd154
+ms.sourcegitcommit: ebb1648ab13d31a2ba1ab17615814be8dda8a08c
+ms.openlocfilehash: 9b063c1e6b1ff5dcab16fce958ede49303284b18
 
 
 ---
 
 # Configurar la administración de dispositivos Windows
-[Aquí](../enduser/using-your-windows-device-with-intune.md) puede encontrar ayuda para configurar el dispositivo Windows.
 
-Con Intune, puede habilitar la inscripción BYOD (Bring Your Own Device) de dispositivos de equipos Windows para proporcionar acceso al correo electrónico y a las aplicaciones de la empresa. Usado con Azure Active Directory, proporciona una forma rápida y sin intervención del usuario para mostrar los nuevos dispositivos Windows 10 en la administración y tener acceso a los recursos de la empresa sin necesidad de restablecer la imagen inicial del equipo. Una vez inscritos, los usuarios pueden iniciar sesión y se pueden aplicar a sus dispositivos directivas, aplicaciones y opciones de configuración mediante la consola de administración de Intune. También podría interesarle [Set up Windows Phone management with Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md) (Configurar la administración de Windows Phone con Microsoft Intune) o [Manage computers with Intune client software](manage-windows-pcs-with-microsoft-intune.md) (Administrar equipos con software cliente de Intune) mediante el cliente de Intune.
+Como administrador de Intune, puede habilitar la inscripción y administración de los equipos Windows de dos maneras:
 
-Al crear un CNAME de DNS, los usuarios pueden conectarse e inscribirse en Intune sin especificar un nombre de servidor.
+- **[Inscripción automática con Azure AD](#azure-active-directory-enrollment)**: los usuarios de Windows 10 y Windows 10 Mobile inscriben sus dispositivos agregando al dispositivo una cuenta profesional o educativa
+- **[Inscripción de Portal de empresa](#company-portal-app-enrollment)**: los dispositivos que ejecutan Windows 8.1 y versiones posteriores se inscriben descargando e instalando la aplicación de Portal de empresa y escribiendo en la aplicación las credenciales de su cuenta profesional o educativa.
 
-### Configurar la administración de dispositivos Windows
+[!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-  1.  Debe crear un registro de recursos DNS **CNAME** para el dominio de su empresa. Por ejemplo, si el sitio web de la empresa es contoso.com, debe crear un CNAME en DNS que redirija EnterpriseEnrollment.contoso.com a EnterpriseEnrollment-s.manage.microsoft.com. Aunque la entrada DNS de CNAME es opcional para la inscripción de dispositivos Windows, se recomienda crear uno o más registros cuando sea necesario para facilitar el proceso de inscripción de dispositivos Windows. Si no se encuentra ningún registro CNAME, se solicita al usuario que escriba el nombre del servidor MDM manualmente.
+## Configurar la inscripción de la aplicación de Portal de empresa
+Puede permitir que los usuarios inscriban sus dispositivos instalándolos e inscribiéndolos con la aplicación de Portal de empresa. Al crear un CNAME de DNS, los usuarios pueden conectarse e inscribirse en Intune sin especificar un nombre de servidor.
 
-  Si hay más de un dominio comprobado, debe crear un registro CNAME para cada dominio. Los registros de recursos CNAME deben contener la siguiente información:
+1. **Configurar Intune**<br>
+Si aún no lo ha hecho, prepárese para la administración de dispositivos móviles. Para ello, [defina la entidad de administración de dispositivos móviles](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) como **Microsoft Intune** y configure MDM.
+
+2. **Crear CNAME** (opcional)<br>Cree registros de recursos DNS **CNAME** para el dominio de su empresa para simplificar la inscripción. Aunque la creación de entradas DNS CNAME es opcional, el hecho de crear registros CNAME facilita la inscripción para los usuarios. Si no se encuentra ningún registro CNAME de inscripción, los usuarios deberán escribir manualmente el nombre del servidor MDM, `https://manage.microsoft.com`.  Los registros de recursos CNAME deben contener la siguiente información:
 
   |TYPE|Nombre de host|Apunta a|TTL|
   |--------|-------------|-------------|-------|
   |CNAME|EnterpriseEnrollment.company_domain.com|EnterpriseEnrollment-s.manage.microsoft.com |1 hora|
   |CNAME|EnterpriseRegistration.company_domain.com|EnterpriseRegistration.windows.net|1 hora|
 
-  Los cambios en los registros DNS pueden tardar hasta 72 horas en propagarse. No se puede comprobar el cambio DNS en Intune hasta que el registro DNS se propague.
+  `EnterpriseEnrollment-s.manage.microsoft.com` – Admite un redireccionamiento al servicio Intune con reconocimiento de dominio del nombre de dominio del correo electrónico.
 
-  **EnterpriseEnrollment-s.manage.microsoft.com**: admite un redireccionamiento al servicio Intune con reconocimiento de dominio del nombre de dominio del correo electrónico.
+  `EnterpriseRegistration.windows.net` – Admite dispositivos Windows 8.1 y Windows 10 Mobile que se registrarán en Azure Active Directory con su cuenta profesional o educativa.
 
-  **EnterpriseRegistration.windows.net**: admite dispositivos Windows 8.1 y Windows 10 Mobile que se registrarán con Azure Active Directory con su cuenta profesional o educativa.
+  Si su organización usa varios dominios para las credenciales de usuario, cree registros CNAME para cada dominio.
 
-  2.  En la [consola de administración de Intune](http://manage.microsoft.com), haga clic en **Administración** &gt; **Administración de dispositivos móviles** &gt; **Windows**.
+  Por ejemplo, si el sitio web de la empresa es contoso.com, debe crear un CNAME en DNS que redirija EnterpriseEnrollment.contoso.com a EnterpriseEnrollment-s.manage.microsoft.com. Los cambios en los registros DNS pueden tardar hasta 72 horas en propagarse. No se puede comprobar el cambio DNS en Intune hasta que el registro DNS se propague.
+
+3.  **Comprobar el CNAME**<br>En la [consola de administración de Intune](http://manage.microsoft.com), haga clic en **Administración** &gt; **Administración de dispositivos móviles** &gt; **Windows**. Escriba la dirección URL del dominio verificado del sitio web de empresa en el cuadro **Especificar un nombre de dominio verificado** y luego haga clic en **Probar detección automática**.
+
   ![Cuadro de diálogo de administración de dispositivos Windows](../media/enroll-intune-winenr.png)
 
-  3.  Escriba la dirección URL del dominio verificado del sitio web de empresa en el cuadro **Especificar un nombre de dominio verificado** y luego haga clic en **Probar detección automática**.
+4.  **Pasos opcionales**<br>El paso **Agregar claves de instalación de prueba** no es necesario para Windows 10. El paso **Cargar certificado de firma de código** solo es necesario si va a distribuir aplicaciones de línea de negocio (LOB) a dispositivos que no están disponibles en la Tienda Windows. [Obtener más información](set-up-windows-phone-8.0-management-with-microsoft-intune.md)
 
-  4.  Los usuarios necesitan saber cómo inscribir sus dispositivos y qué esperar una vez que se incorporan a la administración.
+6.  **Informar a los usuarios**<br>Deberá preguntar a los usuarios cómo quieren inscribir sus dispositivos y qué esperan cuando se hayan incorporado a la administración:
       - [Qué decirles a los usuarios finales sobre el uso de Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
       - [Guía de usuario final para dispositivos Windows](../enduser/using-your-windows-device-with-intune.md)
 
@@ -57,6 +64,6 @@ Al crear un CNAME de DNS, los usuarios pueden conectarse e inscribirse en Intune
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Aug16_HO5-->
 
 

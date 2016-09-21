@@ -13,26 +13,14 @@ ms.assetid: dbe5cad1-3e0d-41a9-966b-738156089700
 ms.reviewer: lacranda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 95b3401b66256ef44623b74e6e0b549ec1e7fc2c
-ms.openlocfilehash: 27af2b714ff51f8710f67e7445225366d2722fb7
+ms.sourcegitcommit: 3d737c44e3586a4339a324dcb6701f7c86a29d01
+ms.openlocfilehash: 3bf0e6f8bc010c23712f9908cff7d515c2c62671
 
 
 ---
 
 # Configurar la administración de dispositivos Android
-[Aquí](../enduser/using-your-android-device-with-intune.md) puede encontrar ayuda para configurar el dispositivo Android.
-
-Con Microsoft Intune, puede habilitar BYOD (Bring Your Own Device) para dispositivos Android sin ningún trabajo adicional para la plataforma.
-
-Seleccione entre las siguientes opciones de plataformas de dispositivo para más información:
-
-> [!div class="op_single_selector"]
-- [Configurar la administración de Android con Microsoft Intune](set-up-android-management-with-microsoft-intune.md)
-- [Set up iOS and Mac management with Microsoft Intune](set-up-ios-and-mac-management-with-microsoft-intune.md)
-- [Configurar la administración de Windows Phone con Microsoft Intune](set-up-windows-phone-management-with-microsoft-intune.md)
-- [Configurar la administración de dispositivos Windows con Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md)
-
-Los dispositivos Android permiten a los usuarios inscribirse mediante la aplicación Portal de empresa disponible en Google Play. Para que los usuarios puedan inscribir sus dispositivos en Intune, realice los pasos siguientes.
+Como administrador de Intune, puede administrar dispositivos Android desde el Portal de empresa. Después, los usuarios pueden inscribir sus dispositivos mediante la aplicación Portal de empresa, disponible en Google Play.
 
 1.  **Configurar Intune**<br>
     Si aún no lo ha hecho, prepárese para la administración de dispositivos móviles. Para ello, [defina la entidad de administración de dispositivos móviles](get-ready-to-enroll-devices-in-microsoft-intune.md#set-mobile-device-management-authority) como **Microsoft Intune** y configure MDM.
@@ -52,6 +40,6 @@ Los dispositivos Android permiten a los usuarios inscribirse mediante la aplicac
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Aug16_HO5-->
 
 
