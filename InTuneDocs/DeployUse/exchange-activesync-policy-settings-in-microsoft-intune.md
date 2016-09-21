@@ -4,7 +4,7 @@ description: "Use la directiva de Exchange ActiveSync de Intune para configurar 
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: e9cbb826-b155-4df6-abf3-60c6f05b2783
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 72e6bcd3fd480c1ed8558fefd3958b4bbf3184c2
-ms.openlocfilehash: 39a844db56edf18f25996c1aaf52223ac80f8071
+ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
+ms.openlocfilehash: 9a481e1ce7815a0411651fc724e3fc2f5d374eac
 
 
 ---
@@ -26,7 +26,7 @@ Use la directiva de **Exchange ActiveSync** de Microsoft Intune para configurar 
 ## Configuración de contraseña
 
 |Nombre de la configuración|Detalles
-|----------------|
+|----------------|---|
 |**Requerir una contraseña para desbloquear dispositivos móviles**|Especifica si se deben bloquear los dispositivos con una contraseña.<br>(No aplicable a los dispositivos que ejecutan Windows RT).|
 |**Tipo de contraseña obligatoria**|Especifica el tipo de contraseña que será necesaria, como solo numérica o alfanumérica.|
 |**Longitud mínima de la contraseña**|Especifica el número mínimo de caracteres necesarios en la contraseña del dispositivo.|
@@ -40,7 +40,7 @@ Use la directiva de **Exchange ActiveSync** de Microsoft Intune para configurar 
 ## Configuración de cifrado
 
 |Nombre de la configuración|Detalles|
-|----------------|
+|----------------|---|
 |**Requerir cifrado en dispositivo móvil**<sup>1</sup>|Cuando se admite esta característica, requiere que los datos de un dispositivo se cifren.<br><br>Para dispositivos de Windows Phone 8, debe establecerse en **Sí**.<br /><br />Para habilitar el cifrado en dispositivos iOS, habilite la configuración **Requerir una contraseña para desbloquear dispositivos móviles**.|
 |**Requerir cifrado en tarjetas de almacenamiento**|Requiere que se cifren los datos almacenados en un almacenamiento externo, como una tarjeta SD (en dispositivos compatibles).
 <sup>1</sup> Información adicional para los dispositivos que ejecutan Windows 8.1
@@ -56,7 +56,7 @@ Use la directiva de **Exchange ActiveSync** de Microsoft Intune para configurar 
 ## Configuración de correo electrónico
 
 |Nombre de la configuración|Detalles
-|----------------|
+|----------------|---|
 |**Permitir a los usuarios descargar datos adjuntos de correo electrónico**|Especifica si se pueden descargar datos adjuntos de correo electrónico en el dispositivo.|
 |**Periodo de sincronización del correo electrónico**|Especifica el número de días que se sincroniza el correo electrónico recibido en el dispositivo.
 |**Permitir que los dispositivos móviles que no son totalmente compatibles con la configuración de Exchange ActiveSync se sincronicen con Exchange**|Especifica si se permite el acceso a Exchange en los dispositivos que no son compatibles con una o más configuraciones de Exchange ActiveSync.
@@ -64,13 +64,13 @@ Use la directiva de **Exchange ActiveSync** de Microsoft Intune para configurar 
 ## Configuración del explorador
 
 |Nombre de la configuración|Detalles
-|----------------|-
+|----------------|---|
 |**Permitir explorador web**|Especifica si se puede usar el explorador web en el dispositivo.<br>(No disponible para Windows RT ni Windows Phone).
 
 ## Configuración de hardware
 
 |Nombre de la configuración|Detalles
-|----------------|
+|----------------|---|
 |**Permitir cámara**|Especifica si se puede usar la cámara del dispositivo.<br>(No disponible para Windows RT ni Windows Phone).
 
 
@@ -80,6 +80,6 @@ Use la directiva de **Exchange ActiveSync** de Microsoft Intune para configurar 
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

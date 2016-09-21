@@ -1,11 +1,7 @@
-> [!NOTE]
-> A partir de agosto, la administración de grupos de dispositivos se moverá a Azure Active Directory. **Después de la transición a los grupos de Azure Active Directory, la asignación de grupo no aparecerá en las opciones del perfil de inscripción corporativa.** Dado que se realizarán cambios durante varios meses, puede que aún no vea el cambio en la consola.
-
-> El **perfil de inscripción corporativa** es necesario para inscribir dispositivos iOS a través del programa de inscripción de dispositivos de Apple o la herramienta Apple Configurator.
-
->Se puede definir una nueva asignación de grupos de dispositivos dinámicos en Azure Active Directory según el nombre del perfil de inscripción corporativa. Este proceso garantiza que los dispositivos previamente asignados a un grupo de dispositivos se inscriban automáticamente en el grupo con la directiva y las aplicaciones implementadas. Pronto se publicarán más detalles.
+>[!Important]
+>Las asignaciones de grupo se moverán de Intune a Azure Active Directory. En las cuentas de Intune con esta actualización no se verá la opción **Asignar dispositivos al siguiente grupo**. [Obtener más información](../deploy-use/ios-device-enrollment-program-in-microsoft-intune#changes-to-intune-group-assignments)
 
 
-<!--HONumber=Jun16_HO4-->
+<!--HONumber=Jul16_HO3-->
 
 

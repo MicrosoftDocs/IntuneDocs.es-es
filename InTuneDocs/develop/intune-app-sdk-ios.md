@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Msmbaldwin
 manager: jeffgilb
-ms.date: 04/28/2016
+ms.date: 09/08/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b7f62c5ee18d8f69fa174f09a1c46b6925c7517c
-ms.openlocfilehash: 820ec2da0554f0af383895482241be7d1c0cf305
+ms.sourcegitcommit: 952cfa4f23f8ba080ce53f6785baceb8a0a367c6
+ms.openlocfilehash: 0d69d0b230771a87c1103682b17336dc47d26622
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: 820ec2da0554f0af383895482241be7d1c0cf305
 
 El SDK de la aplicación Microsoft Intune para iOS permite incorporar la administración de aplicaciones móviles (MAM) de Intune en su aplicación iOS. Una aplicación habilitada para MAM está integrada con el SDK para aplicaciones de Intune y permite a los administradores de TI implementar directivas en su aplicación móvil cuando la aplicación se administra de manera activa.
 
-# Qué hay en el SDK
+## Qué hay en el SDK
 
 El SDK de la aplicación Intune para iOS incluye una biblioteca estática, archivos de recursos, encabezados de API, un plist de configuración de depuración y una herramienta de configuración. Las aplicaciones móviles pueden incluir simplemente los archivos de recursos y vincularse estáticamente para la mayor parte de la aplicación de las directivas. Las características avanzadas de MAM de Intune se aplican a través de las API.
 En esta guía se tratará el uso de lo siguiente al integrar el SDK para aplicaciones de Intune para iOS:
@@ -37,13 +37,13 @@ En esta guía se tratará el uso de lo siguiente al integrar el SDK para aplicac
 
 * **Encabezados**: expone las API del SDK para aplicaciones de Intune. Si usa una API, deberá incluir el archivo de encabezado que contiene la API. 
 
-# Cómo funciona el SDK para aplicaciones de Intune
+## Cómo funciona el SDK para aplicaciones de Intune
 
 El objetivo del SDK para aplicaciones de Intune para iOS es agregar capacidades de administración a las aplicaciones de iOS con mínimos cambios en el código. La reducción de la cantidad de los cambios del código disminuye el tiempo de comercialización, a la vez que aumenta la coherencia y la estabilidad de la aplicación móvil. 
 
 La aplicación debe vincularse a la biblioteca estática e incluir el lote de recursos. El archivo MAMDebugSettings.plist es opcional y puede incluirse en el paquete para simular las directivas MAM que se aplican a la aplicación sin necesidad de implementar la aplicación mediante Microsoft Intune. Además, en las compilaciones de depuración, se pueden aplicar las directivas del archivo MAMDebugSettings.plist transfiriendo el archivo MAMDebugSettings.plist al directorio de documentos de la aplicación mediante el uso compartido de archivos de iTunes.
 
-# Creación de una aplicación con el SDK para aplicaciones de Intune 
+## Creación de una aplicación con el SDK para aplicaciones de Intune 
 
 Complete los pasos siguientes para habilitar el SDK para aplicaciones de Intune:
 
@@ -133,7 +133,7 @@ Complete los pasos siguientes para habilitar el SDK para aplicaciones de Intune:
 
 Si su aplicación móvil usa ADAL para su propia autenticación, revise la sección "Establecimiento de la configuración de la biblioteca de autenticación de Azure Directory" que encontrará aquí.
 
-## Telemetría 
+### Telemetría 
 
 El SDK para aplicaciones de Intune registra los datos de telemetría en eventos de uso de manera predeterminada que se envían a Microsoft Intune.
 
@@ -155,15 +155,15 @@ Los siguientes pasos son necesarios si la propia aplicación usa ADAL para la au
 
 2. En `Info.plist`del proyecto, en el diccionario `IntuneMAMSettings` con el nombre de clave `ADALRedirectUri`, especifique el URI de redirección que se usará para llamadas de ADAL. También debe especificar `ADALRedirectScheme` según el formato del URI de redirección de la aplicación.
 
-## Compilación de sus extensiones (opcional) 
+### Compilación de sus extensiones (opcional) 
 
 Al compilar extensiones, siga las mismas instrucciones para compilar su aplicación móvil, tal como se describe en la sección "Creación de una aplicación con el SDK para aplicaciones de Intune" que se encuentra aquí. Además, actualice el archivo info.plist de cada extensión para agregar una clave ContainingAppBundleId en el diccionario IntuneMAMSettings con el valor del id. del lote de la aplicación contenedora.
 
-## Compilación de los marcos (opcional)
+### Compilación de los marcos (opcional)
 
 Con los últimos cambios al SDK para aplicaciones de Intune, no es necesario compilar su aplicación móvil con cualquier marca de enlazador específica si la aplicación móvil contiene marcos de aplicaciones incrustados. 
 
-## Archivos de imagen al inicio (opcional)
+### Archivos de imagen al inicio (opcional)
 
 Cuando una aplicación habilitada para MAM se administra activamente con Microsoft Intune, el SDK para aplicaciones de Intune mostrará una pantalla de inicio al iniciar la aplicación para indicar al usuario que la aplicación está administrada. Opcionalmente, puede agregar archivos de imagen para que aparezcan en la página de inicio "Administradas por su empresa". Use las siguientes indicaciones para las imágenes:
 
@@ -179,7 +179,7 @@ Cuando una aplicación habilitada para MAM se administra activamente con Microso
 
 **Nota**: esta pantalla se desencadena en el inicio, pero el usuario la puede descartar de manera permanente.
 
-# Establecer la configuración del SDK para aplicaciones de Intune
+## Establecer la configuración del SDK para aplicaciones de Intune
 
 El diccionario `IntuneMAMSettings` que se encuentra en el archivo `info.plist` de la aplicación se usa para configurar el SDK para aplicaciones de Intune. La siguiente es una lista de todas las configuraciones admitidas. 
 
@@ -197,7 +197,7 @@ SplashIconFile <br>SplashIconFile~ipad  | String  | Especifica el archivo del ic
 SplashDuration | Número | Cantidad mínima de tiempo en segundos en que se mostrará la pantalla de presentación de Intune al iniciar la aplicación. El valor predeterminado es 1,5. | Opcional.
 ADALLogOverrideDisabled | Boolean  | Especifica si el SDK enrutará todos los registros de ADAL (incluidas las llamadas de ADAL desde la aplicación de haberlas) a su propio archivo de registro. El valor predeterminado es NO. Establezca en Sí si desea que la aplicación establezca su propia devolución de llamada de registros ADAL. | Opcional.
 
-# Encabezados para el SDK para aplicaciones de Intune 
+## Encabezados para el SDK para aplicaciones de Intune 
 
 Los encabezados siguientes incluyen las llamadas a funciones API necesarias para habilitar la funcionalidad del SDK para aplicaciones de Intune. 
 
@@ -209,7 +209,7 @@ Los encabezados siguientes incluyen las llamadas a funciones API necesarias para
     IntuneMAMPolicyDelegate.h
     IntuneMAMLogger.h
 
-# Depuración del SDK para aplicaciones de Intune en Xcode
+## Depuración del SDK para aplicaciones de Intune en Xcode
 
 Antes de probar la aplicación habilitada para MAM con Microsoft Intune, puede usar `Settings.bundle` mientras se encuentre en Xcode. Esto le permitirá establecer directivas de prueba sin necesidad de una conexión a Intune. Para habilitarlo:
 
@@ -230,7 +230,7 @@ Antes de probar la aplicación habilitada para MAM con Microsoft Intune, puede u
 > [!NOTE]
 > Ahora puede usar "Configuración -> SuNombreDeAplicación -> Habilitar directivas de prueba" para habilitar y activar o desactivar la configuración.
 
-# Prácticas recomendadas de iOS
+## Prácticas recomendadas de iOS
 
 A continuación, se explican algunas prácticas recomendadas al desarrollar para iOS:
 
@@ -241,6 +241,6 @@ Si Xcode tiene problemas para encontrar `libIntuneMAM.a`, puede corregir el prob
 
 
 
-<!--HONumber=Jul16_HO3-->
+<!--HONumber=Sep16_HO2-->
 
 

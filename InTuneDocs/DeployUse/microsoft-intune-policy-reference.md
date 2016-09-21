@@ -4,7 +4,7 @@ description: "Use la información de este tema para ayudarle a decidir qué dire
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +13,13 @@ ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5a8d2702037b7b96b454078e991dea429143e733
-ms.openlocfilehash: aa081dd17c0067082e314ac45d2a52792f66b8d6
+ms.sourcegitcommit: 06a9c78300d7ff384299957102114c69c43a1ad5
+ms.openlocfilehash: 06616ba43069cc6e81692a4c638f2bf8b072fdc1
 
 
 ---
 
-# Referencia de directivas de Microsoft Intune
+# Referencia de directivas de configuración de Microsoft Intune
 
 Use la información de este tema para ayudarle a decidir qué directiva de configuración de Microsoft Intune debe usar para administrar los dispositivos.
 
@@ -74,7 +74,7 @@ Se aplica únicamente a dispositivos Windows Phone y Windows inscritos.
 |---------------|------------------------|
 |**Configuración personalizada (Windows 10 para escritorios y Windows 10 Mobile y versiones posteriores)**|Implementar la configuración de URI-OMA que puede usarse para controlar las características del dispositivo. Es útil cuando la configuración que necesita no está disponible en una directiva de configuración.<br />    Para obtener más información, vea [Configuración de directivas de Windows 10 en Microsoft Intune](windows-10-policy-settings-in-microsoft-intune.md).|
 |**Configuración personalizada (Windows Phone 8.1 y versiones posteriores)**|Implementar la configuración de URI-OMA que puede usarse para controlar las características del dispositivo. Es útil cuando la configuración que necesita no está disponible en una directiva de configuración.<br /><br />Para obtener más información, vea [Configuración de directivas de Windows 8.1 en Microsoft Intune](windows-phone-8-1-policy-settings-in-microsoft-intune.md).|
-|**Directiva de actualización de edición (Windows 10 de escritorio y versiones posteriores)**<br><br>**Directiva de actualización de edición (Windows 10 Holographic y versiones posteriores)**|Configurar e implementar directivas que contengan información de clave de producto o de licencia usada para actualizar los dispositivos de Windows 10 a una versión más reciente.<br><br>Para obtener más información, vea [Configuración de directivas de actualización de edición de Windows en Microsoft Intune](edition-upgrade-policy-settings-in-microsoft-intune.md).|  
+|**Directiva de actualización de edición (Windows 10 de escritorio y versiones posteriores)**<br><br>**Directiva de actualización de edición (Windows 10 Holographic y versiones posteriores)**<br><br>**Directiva de actualización de edición (Windows 10 Mobile y versiones posteriores)**|Configurar e implementar directivas que contengan información de clave de producto o de licencia usada para actualizar los dispositivos de Windows 10 a una versión más reciente.<br><br>Para obtener más información, vea [Configuración de directivas de actualización de edición de Windows en Microsoft Intune](edition-upgrade-policy-settings-in-microsoft-intune.md).|  
 |**Perfil de correo electrónico (Windows Phone 8 y versiones posteriores)**<br /><br />**Perfil de correo electrónico (Windows 10 para escritorios y Windows 10 Mobile y versiones posteriores)**|Crear, implementar y supervisar la configuración de correo electrónico de Exchange ActiveSync en dispositivos administrados. Esto permite a los usuarios obtener acceso al correo electrónico corporativo en sus dispositivos personales sin tener que realizar ninguna configuración.<br /><br />Para obtener más información, vea [Configurar el acceso al correo electrónico corporativo mediante perfiles de correo electrónico con Microsoft Intune](configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune.md).|
 |**Configuración general (Windows 10 para escritorios y Windows 10 Mobile y versiones posteriores)**|Configure las funciones y la seguridad en dispositivos móviles para los equipos Windows 10 de escritorio y Windows 10 Mobile inscritos.<br /><br />Para obtener más información, vea [Configuración de directivas de Windows 10 en Microsoft Intune](windows-10-policy-settings-in-microsoft-intune.md).|
 |**Configuración general (Windows 10 Team y versiones posteriores)**|Configurar la seguridad de los dispositivos y las opciones funcionales para dispositivos Windows 10 Team inscritos (por ejemplo, un dispositivo Surface Hub).<br /><br />Para obtener más información, vea [Configuración de directivas de configuración del Equipo de Windows en Microsoft Intune](windows-team-configuration-policy-settings-in-microsoft-intune.md).|
@@ -104,25 +104,7 @@ Se aplica únicamente a dispositivos Windows Phone y Windows inscritos.
 > [!IMPORTANT]
 Microsoft Intune ofrece ahora **directivas de configuración** independientes para cada plataforma de dispositivo. Estas directivas contienen la configuración más actualizada que se puede usar. Aún puede usar la directiva de seguridad de dispositivos móviles y las implementaciones existentes seguirán funcionando, pero debe planear la migración a las nuevas directivas de configuración tan pronto como sea posible.<br />Para obtener más información, vea [Configuración de directivas de seguridad de dispositivos móviles en Microsoft Intune](mobile-device-security-policy-settings-in-microsoft-intune.md).
 
-## Directivas de acceso condicional y cumplimiento
-
-### Acceso condicional
-
-|Nombre de la directiva|Usar en los siguientes casos|
-|---------------|------------------------|
-|**Directiva de Exchange Online**<br /><br />**Directiva local de Exchange**|Administrar el acceso al correo electrónico de Microsoft Exchange desde dispositivos no administrados con Intune o no compatibles con alguna de las directivas de cumplimiento que ha creado.<br /><br />Para obtener más información, vea [Restringir el acceso de correo electrónico a Exchange Online y nuevo Exchange Online dedicado](restrict-access-to-exchange-online-with-microsoft-intune.md).|
-|**Directiva de SharePoint Online**|Administrar el acceso a SharePoint Online desde dispositivos no administrados con Intune o no compatibles con alguna de las directivas de cumplimiento que ha creado.<br /><br />Para obtener más información, vea [Restringir el acceso a SharePoint Online con Microsoft Intune](restrict-access-to-sharepoint-online-with-microsoft-intune.md).|
-|**Skype Empresarial**|Administrar el acceso a Skype Empresarial desde dispositivos no administrados con Intune o no compatibles con alguna de las directivas de cumplimiento que ha creado.<br /><br />Para obtener más información, vea [Restringir el acceso a Skype Empresarial Online con Microsoft Intune](restrict-access-to-skype-for-business-online-with-microsoft-intune.md).|
-> [!NOTE]
-> No implemente directivas de acceso condicional para usuarios y dispositivos. En su lugar, configure la directiva necesaria que se aplicará a todos los grupos de destino de la directiva.
-
-### Directivas de cumplimiento
-
-|Nombre de la directiva|Usar en los siguientes casos|
-|---------------|------------------------|
-|**Directivas de cumplimiento**|Definir el nivel de cumplimiento de los dispositivos y, después, informar sobre los dispositivos no conformes. Estas directivas se usan con acceso condicional para ayudar a evaluar los dispositivos cuyo acceso a determinados servicios se debe bloquear.<br /><br />Para obtener más información, consulte [Device compliance policies in Microsoft Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md) (Directivas de cumplimiento de dispositivos de Microsoft Intune).|
-
-## Administración de PC Windows
+## Directivas para equipos con Windows administrados con el cliente de software de Intune
 
 |Nombre de la directiva|Usar en los siguientes casos|
 |---------------|------------------------|
@@ -136,6 +118,6 @@ Microsoft Intune ofrece ahora **directivas de configuración** independientes pa
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Aug16_HO5-->
 
 

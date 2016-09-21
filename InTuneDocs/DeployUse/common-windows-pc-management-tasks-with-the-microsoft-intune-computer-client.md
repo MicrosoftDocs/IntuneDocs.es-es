@@ -1,6 +1,6 @@
 ---
 title: "Tareas comunes de administración de PC Windows | Microsoft Intune"
-description: Revise las tareas de este tema para aprender a administrar los equipos que ejecutan el software del equipo cliente de Intune.
+description: Revise las tareas de este tema para aprender a administrar los equipos Windows que ejecutan el cliente de software de Intune.
 keywords: 
 author: NathBarn
 manager: angrobe
@@ -13,22 +13,24 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dcfa3af374a7e64e931508e1a8022bf8a50c71a7
-ms.openlocfilehash: 93d5718fcd9949945180434b0f89eea96e92bbc6
+ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
+ms.openlocfilehash: 9ef18ee054928fcfb12a36fe8ac3ad3c2909f6c1
 
 
 ---
 
-# Tareas comunes de administración de PC Windows con el cliente de equipo de Microsoft Intune
-Revise las tareas de este tema para aprender a administrar los equipos que ejecutan el software del equipo cliente de Intune. Si aún no tiene instalado el cliente en los equipos, vea [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md) (Instalar el cliente de PC Windows con Microsoft Intune).
+# Tareas comunes de administración de equipos Windows con el cliente de software de Intune
+Revise las tareas de este tema para aprender a administrar los equipos que ejecutan el cliente de software de Intune. Si aún no tiene instalado el cliente en los equipos, consulte [Instalar el cliente de equipos Windows con Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 
 ## Usar directivas para simplificar la administración de equipos
-### Administrar el Firewall de Windows
-Las directivas simplifican la administración de la configuración del Firewall de Windows en los equipos administrados. Para más información, vea [Ayudar a proteger los equipos de Windows mediante directivas del Firewall de Windows en Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md).
+
+Los equipos Windows que ejecutan el cliente de software de Intune se pueden administrar mediante las directivas **Administración de equipos** de Intune.
+
+![Plantilla de directivas para equipos con Windows](../media/pc_policy_template.png)
 
 ### Administrar Microsoft Intune Center
-Con Microsoft Intune Center se puede hacer lo siguiente:
+Los usuarios ven el cliente de software de Intune como **Microsoft Intune Center**. Con Microsoft Intune Center se puede hacer lo siguiente:
 
 -   Obtener aplicaciones desde el portal de empresa.
 
@@ -49,11 +51,14 @@ Microsoft Intune Center se instala en todos los equipos administrados. En una di
 |**Dirección URL del sitio web**|La dirección URL del sitio web de soporte.<br /><br />Longitud máxima: 150 caracteres|
 |**Notas**|Una nota que se muestra a los usuarios.<br /><br />Longitud máxima: 120 caracteres|
 
-### Administrar la configuración de actualizaciones de software
-Use directivas para establecer la configuración que los equipos administrados utilizan para buscar y descargar actualizaciones de software de Microsoft y de otros fabricantes. Para más información, vea [Mantener los equipos Windows al día con las actualizaciones de software en Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
+## Configuración de las actualizaciones de software
+Use directivas para establecer la configuración que los equipos administrados utilizan para buscar y descargar actualizaciones de software de Microsoft y de otros fabricantes. Estas actualizaciones no incluyen actualizaciones del sistema operativo (es decir, actualizaciones de Windows 7 a Windows 10 o actualizaciones de una versión de Windows 10 a una versión posterior). Para más información, vea [Mantener los equipos Windows al día con las actualizaciones de software en Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
 
-### Administrar la configuración de Endpoint Protection
+### Configuración de Endpoint Protection
 Use directivas para establecer la configuración de Endpoint Protection que luego implementará en los equipos administrados. Esto incluye, entre otras cosas, la programación de exámenes y las acciones que hay que realizar cuando se detecta malware. Para más información, vea [Ayudar a proteger los equipos de Windows con Endpoint Protection para Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+
+## Configuración de Windows Firewall
+Las directivas simplifican la administración de la configuración del Firewall de Windows en los equipos administrados. Para más información, vea [Ayudar a proteger los equipos de Windows mediante directivas del Firewall de Windows en Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md).
 
 ## Ver el Inventario de hardware y software
 Intune recopila información detallada sobre el hardware y el software de los equipos administrados. Use la información de los siguientes procedimientos para aprender a crear:
@@ -113,17 +118,17 @@ Intune recopila información detallada sobre el hardware y el software de los eq
 
 2.  Seleccione los dispositivos que quiera retirar y, después, elija **Retirar/Eliminar datos**.
 
-Para volver a inscribir un equipo en Intune, reinstale el software cliente en el equipo según se indica en el tema [Install the Windows PC client with Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md) (Instalar el cliente de PC Windows con Microsoft Intune).
+Para volver a inscribir un equipo en Intune, vuelva a instalar el cliente de software en el equipo según lo que se indica en [Instalar el cliente de equipos Windows con Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 Si un equipo no se puede conectar a Intune, verá un mensaje en el área de trabajo **Panel**.
 
 Cuando retira un equipo:
 
--   Se quita del inventario y la administración de Intune y la licencia asociada al equipo queda disponible para poder reutilizarla. La opción de retirar o borrar un equipo quita el cliente del software de Intune, pero no elimina las aplicaciones o los datos del equipo.
+-   Se quita del inventario y la administración de Intune y la licencia asociada al equipo queda disponible para poder reutilizarla. La opción de retirar o borrar un equipo quita el cliente del software de Intune, pero no elimina las aplicaciones o los datos del equipo. Esta retirada no efectúa un borrado completo en el equipo.
 
 -   Su estado deja de aparecer en la consola de Intune.
 
--   Intune quita el software cliente del equipo. Si el equipo no está conectado al servicio de Intune, se quitará el software cliente la próxima vez que se conecte.
+-   Intune quita el cliente de software del equipo. Si el equipo no está conectado al servicio de Intune, el cliente de software se quitará la próxima vez que se conecte.
 
 -   Microsoft Intune Endpoint Protection se quita del equipo. Si el equipo tiene instalada otra aplicación de extremos que está deshabilitada, esa aplicación se puede volver a habilitar después de quitar Microsoft Intune Endpoint Protection y, así, garantizar la protección del equipo.
 
@@ -160,9 +165,9 @@ Antes de implementar software en un usuario, debe vincular el usuario a un equip
 > [!TIP]
 > Si desea restringir la capacidad de los usuarios finales para vincularse a equipos, habilite la opción **Restringir la capacidad de los usuarios de vincularse a equipos** en la directiva de **Configuración de agente de Microsoft Intune**.
 
-## Solicitar y ofrecer asistencia remota a los equipos de Windows que usan el software cliente de Intune
+## Solicitar y proporcionar asistencia remota para equipos con Windows
 
-Microsoft Intune puede usar el software [TeamViewer](https://www.teamviewer.com) para que usted pueda ofrecer asistencia remota a los usuarios de equipos que ejecutan el software cliente de Intune. Cuando un usuario solicita ayuda a Microsoft Intune Center, usted recibe una alerta, puede aceptar la solicitud y, luego, proporcionar asistencia.
+Microsoft Intune puede usar el software [TeamViewer](https://www.teamviewer.com), comprado por separado, para que usted pueda ofrecer asistencia remota a los usuarios de los equipos que ejecutan el cliente de software de Intune. Cuando un usuario solicita ayuda a Microsoft Intune Center, usted recibe una alerta, puede aceptar la solicitud y, luego, proporcionar asistencia.
 Esta funcionalidad reemplaza la funcionalidad de asistencia remota de Windows existente en Intune.
 
 
@@ -211,6 +216,6 @@ En el menú **Acciones** de la ventana **TeamViewer**, elija **Finalizar sesión
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO1-->
 
 

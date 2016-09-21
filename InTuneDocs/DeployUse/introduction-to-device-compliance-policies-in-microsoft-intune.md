@@ -13,8 +13,8 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: b17a47a2924ef36df69db2aa852f0b225471ecd1
+ms.sourcegitcommit: 44443db664753b202cc3fa07f8b76894320dc55d
+ms.openlocfilehash: f3bb686dda7bdf1e9557be2b5f5e0da2fb4d27e4
 
 
 ---
@@ -35,7 +35,7 @@ En la siguiente tabla se enumeran los tipos de dispositivos compatibles con las 
 --------------
 
 |Configuración de directiva| Windows 8.1 y posterior| Windows Phone 8.1 y versiones posteriores| iOS 6.0 y versiones posteriores|Android 4.0 y versiones posteriores<br/>Samsung KNOX Standard 4.0 y posterior|
-|-----|----|----|----|
+|-----|----|----|----|----|
 |**Configuración de PIN o contraseña** |Corregido|Corregido|Corregido|En cuarentena|
 |**Cifrado del dispositivo**|No aplicable|Corregido|Corregido (estableciendo PIN)|En cuarentena|
 |**Dispositivo liberado o modificado**|No aplicable|No aplicable|En cuarentena (no es una configuración)|En cuarentena (no es una configuración)|
@@ -62,6 +62,6 @@ En la siguiente tabla se enumeran los tipos de dispositivos compatibles con las 
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO1-->
 
 

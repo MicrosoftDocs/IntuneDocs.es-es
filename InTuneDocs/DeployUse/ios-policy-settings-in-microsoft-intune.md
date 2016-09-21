@@ -4,7 +4,7 @@ description: "Cree directivas que controlen la configuración y las característ
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 08/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65d2c9c1f5d81dae33422bd4bf7c0e2e21bb96e4
-ms.openlocfilehash: 13b8bd8c3269be60d66c4e79551f662205afcea0
+ms.sourcegitcommit: cac39b60226939334032d954eb49d1417493b28d
+ms.openlocfilehash: 00e3a1b65c8475384bb05e64a4ef9f5d9de348ff
 
 
 ---
@@ -81,6 +81,8 @@ Todas las configuraciones se aplican a iOS 7.1 y posterior.
 |**Requerir copia de seguridad cifrada**|Requiere que las copias de seguridad del dispositivo se cifren.|
 |**Permitir que las aplicaciones administradas sincronicen datos en iCloud**|Permitir que las aplicaciones que se administran con Intune sincronicen los datos con la cuenta de iCloud del usuario.|
 |**Permitir la entrega para continuar las actividades en otro dispositivo**|Permitir al usuario continuar el trabajo iniciado en un dispositivo iOS en otro dispositivo iOS o MAC OS X.|
+|**Permitir el uso compartido de fotografías de iCloud**|Permitir el uso de la característica Photo Stream compartida de iOS.|
+|**Permitir la biblioteca de fotografías de iCloud**|Permitir al usuario almacenar fotografías en iCloud. Si se deshabilita, se quitarán todas las fotos que ya estén almacenadas en iCloud.|
 
 ### Configuración de la aplicación para el explorador
 Todas las configuraciones se aplican a iOS 7.1 y posterior.
@@ -99,14 +101,14 @@ Todas las configuraciones se aplican a iOS 7.1 y posterior.
 
 |Nombre de la configuración|Detalles|
 |----------------|-------|
-|**Permitir almacén de aplicaciones**|Permitir que el dispositivo tenga acceso a la tienda de aplicaciones.|
+|**Permitir la instalación de aplicaciones**|Permitir que el dispositivo tenga acceso a la tienda de aplicaciones y que instale aplicaciones.|
 |**Requerir una contraseña para tener acceso al almacén de aplicaciones**|Requerir al usuario que escriba una contraseña antes de que pueda visitar la tienda de aplicaciones.|
 |**Permitir compras dentro de la aplicación**|Permite realizar compras en la tienda desde una aplicación en ejecución.|
 |**Permitir documentos administrados en otras aplicaciones no administradas**|Esta opción permite la visualización de documentos corporativos en cualquier aplicación.<br>**Ejemplo:** Quiere evitar que los usuarios guarden archivos de la aplicación OneDrive en Dropbox. Configure este ajuste en no. Después de que el dispositivo reciba la directiva (por ejemplo, después de un reinicio), ya no le permitirá guardar.|
 |**Permitir documentos no administrados en otras aplicaciones administradas**|Permite la visualización de cualquier documento en aplicaciones administradas corporativas.|
 |**Permitir videoconferencias**|Permitir el uso de aplicaciones de videoconferencia como FaceTime en el dispositivo.|
-|**Permitir contenido para adultos en el almacén multimedia**|Permite que el dispositivo tenga acceso a contenido clasificado para adultos en la tienda.|
-|**Permite al usuario descargar contenido desde la tienda de iBooks marcada como 'Erótico'**|Permitir al usuario descargar libros con la categoría "Erotismo".|
+|**Permitir que el usuario confíe en nuevos autores de aplicaciones empresariales**|Permite que el usuario confíe en aplicaciones que no se han descargado en la tienda de aplicaciones.|
+
 
 ### Configuración de la aplicación para juegos
 Todas las configuraciones se aplican a iOS 7.1 y posterior.
@@ -116,12 +118,23 @@ Todas las configuraciones se aplican a iOS 7.1 y posterior.
 |**Permitir agregar amigos al centro de juegos**|Permite al usuario agregar a amigos del centro de juegos.|
 |**Permitir juegos multijugador**|Permite al usuario jugar a juegos multijugador en el dispositivo.|
 
+### Configuración de aplicación para el contenido multimedia
+Todas las configuraciones se aplican a iOS 7.1 y posterior.
+
+|Nombre de la configuración|Detalles|
+|----------------|-------|
+|**Región de clasificaciones**|Seleccione una región y, luego, la clasificación máxima que los usuarios pueden descargar para **Películas**, **Programas de TV** y **Aplicaciones**.|
+|**Permitir contenido para adultos en el almacén multimedia**|Permite que el dispositivo tenga acceso a contenido clasificado para adultos en la tienda.|
+|**Permite al usuario descargar contenido desde la tienda de iBooks marcada como 'Erótico'**|Permitir al usuario descargar libros con la categoría "Erotismo".|
+
+
 ### Configuración de funcionalidades del dispositivo para hardware
 Todas las configuraciones se aplican a iOS 7.1 y posterior.
 
 |Nombre de la configuración|Detalles|
 |----------------|-------|
 |**Permitir cámara**|Especificar si se puede usar la cámara del dispositivo.|
+|**Forzar a los dispositivos Apple Watch enlazados a usar la detección de muñeca**|Si se habilita, el dispositivo Apple Watch no mostrará notificaciones si no se lleva puesto.|
 |**Requerir una contraseña de emparejamiento para las solicitudes salientes de AirPlay**|Requerir una contraseña de emparejamiento cuando el usuario usa AirPlay para transmitir contenido a otros dispositivos de Apple.|
 
 ### Configuración de funcionalidades del dispositivo para red de telefonía móvil
@@ -141,6 +154,7 @@ Todas las configuraciones se aplican a iOS 7.1 y posterior.
 |**Permitir Siri**|Permite el uso del asistente de voz Siri en el dispositivo.|
 |**Permitir Siri con el dispositivo bloqueado**|Permite el uso del asistente de voz Siri en el dispositivo aunque esté bloqueado.|
 |**Permitir la marcación por voz**|Permite el uso de la característica de marcación por voz en el dispositivo.|
+|**No permitir Airdrop con aplicaciones administradas**|Las aplicaciones administradas ya no pueden enviar datos a través de Airdrop.|
 
 
 ### Configuración de aplicaciones conformes y no conformes
@@ -214,24 +228,55 @@ Todas las configuraciones se aplican a iOS 7.1 y posterior.
 |----------------|--------------------|
 |**Permitir bloqueo de activación cuando el dispositivo está en modo supervisado**|Permitir bloqueo de activación en dispositivos iOS supervisados.|
 
-### Supervisión
+### Configuración del modo supervisado
 Puede configurar las siguientes opciones en dispositivos que ejecuten iOS 7.1 y posterior que estén en modo supervisado.
+
+### Configuración del modo supervisado para las restricciones de dispositivos
 
 |Nombre de la configuración|Detalles|
 |----------------|--------------------|
 |**Permitir la modificación de la cuenta**|Permite al usuario cambiar la configuración de la cuenta, como las configuraciones de correo electrónico.|
-|**Permitir AirDrop**|Permitir el uso de la característica AirDrop para intercambiar el contenido con dispositivos cercanos.|
 |**Permitir cambios en la configuración de uso de datos móviles de la aplicación**|Permite al usuario controlar qué aplicaciones pueden utilizar datos móviles.|
-|**Permitir Siri para consultar el contenido generado por el usuario de Internet**|Permitir que Siri tenga acceso a sitios web para responder a preguntas.|
-|**Permitir el acceso a la tienda de iBooks**|Permite al usuario examinar y comprar libros desde la tienda de iBooks.|
-|**Permitir cambios en la configuración de la aplicación para buscar a sus amigos**|Permite al usuario cambiar la configuración de la aplicación para buscar a sus amigos.|
 |**Permitir el uso de la opción de borrado de todo el contenido y configuración en el dispositivo**|Permitir al usuario usar la opción de borrar todo el contenido y la configuración del dispositivo.|
 |**Permitir al usuario habilitar las restricciones en la configuración del dispositivo**|Permitir al usuario configurar restricciones de dispositivos (controles parentales) en el dispositivo.|
-|**Permitir la búsqueda de Spotlight para devolver resultados de Internet**|Permitir que la búsqueda de Spotlight se conecte a Internet para proporcionar más resultados.|
-|**Permitir el uso de la aplicación Centro de juegos**|Permite el uso de la aplicación Centro de juegos.|
-|**Permitir el emparejamiento de host para controlar los dispositivos que puede emparejar un dispositivo iOS**|Permitir que el emparejamiento de host permita al administrador controlar con qué dispositivos se puede emparejar un dispositivo iOS 7.|
+|**Permitir el emparejamiento de host para controlar los dispositivos que puede emparejar un dispositivo iOS**|Permitir que el emparejamiento de host permita al administrador controlar con qué dispositivos se puede emparejar un dispositivo iOS.|
 |**Permitir al usuario que instale certificados y perfiles de configuración**|Permite al usuario que instale certificados y perfiles de configuración.|
+|**Permitir modificar el nombre del dispositivo**|Permitir que el usuario cambie el nombre del dispositivo.|
+|**Permitir cambiar código de acceso**|Permitir que se agregue, se cambie o se quite la contraseña del dispositivo.|
+|**Permitir enlace con Apple Watch**|Permitir que el dispositivo se empareje con un dispositivo Apple Watch.|
+|**Permitir modificar la configuración de notificaciones**|Permitir que el usuario cambie la configuración de las notificaciones del dispositivo.|
+|**Permitir modificar fondo de pantalla**|Permitir que el usuario cambie el fondo de pantalla del dispositivo.|
+
+### Configuración del modo supervisado para las restricciones de características
+
+|Nombre de la configuración|Detalles|
+|----------------|--------------------|
+|**Permitir AirDrop**|Permitir el uso de la característica AirDrop para intercambiar el contenido con dispositivos cercanos.|
+|**Permitir Siri para consultar el contenido generado por el usuario de Internet**|Permitir que Siri tenga acceso a sitios web para responder a preguntas.|
+|**Usar filtro de obscenidad de Siri**|Evita que Siri dicte o hable con un lenguaje malsonante.|
+|**Permitir la búsqueda de Spotlight para devolver resultados de Internet**|Permitir que la búsqueda de Spotlight se conecte a Internet para proporcionar más resultados.|
+|**Permitir búsqueda de definiciones de palabras**|Permitir la característica de iOS que le permite resaltar una palabra y buscar su definición.|
+|**Permitir teclados predictivos**|Permitir el uso de teclados predictivos que sugieren posibles palabras que el usuario podría buscar.|
+|**Permitir corrección automática**|Permite que el dispositivo corrija automáticamente palabras mal escritas.|
+|**Permitir revisión ortográfica de teclado**|Permite el uso del corrector ortográfico del dispositivo.|
+|**Permitir métodos abreviados de teclado**|Permite el uso de métodos abreviados de teclado.|
+
+### Configuración del modo supervisado para las restricciones de aplicaciones
+
+|Nombre de la configuración|Detalles|
+|----------------|--------------------|
+|**Permitir modificar la configuración de confianza de aplicaciones empresariales**||
+|**Permitir la instalación de aplicaciones solo con Apple Configurator y iTunes**||
+|**Permitir descargas de aplicaciones automáticas**||
+|**Permitir cambios en la configuración de la aplicación para buscar a sus amigos**|Permite al usuario cambiar la configuración de la aplicación para buscar a sus amigos.|
+|**Permitir el acceso a la tienda de iBooks**|Permite al usuario examinar y comprar libros desde la tienda de iBooks.|
 |**Permitir el uso de la aplicación de mensajes en el dispositivo**|Permite el uso de la aplicación de mensajes en el dispositivo.|
+|**Permitir el uso de Podcasts**|Permitir el uso de la aplicación Podcasts.|
+|**Permitir el uso del servicio Music**|Permitir el uso de la aplicación Apple Music.|
+|**Permitir el servicio Radio de iTunes**|Permitir el uso de la aplicación Radio de iTunes.|
+|**Permitir Apple News**|Permitir el uso de la aplicación Apple News.|
+|**Permitir Game Center**|Permite el uso de la aplicación Centro de juegos.|
+
 
 ### Mostrar u ocultar aplicaciones
 
@@ -337,6 +382,6 @@ Antes de empezar, debe tener instalado Apple Configurator y haber creado un arch
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Aug16_HO5-->
 
 
