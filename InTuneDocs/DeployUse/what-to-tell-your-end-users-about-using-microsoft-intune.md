@@ -4,7 +4,7 @@ description: "Vínculos a información para compartir con los usuarios finales"
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 09/20/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f1946c02c6267a22844106e8f72555ec5e9cabb
-ms.openlocfilehash: d29649c204f50aec1d1604b55bebc6018a3c7ef2
+ms.sourcegitcommit: e07685a26329b7374d9fe50d64bf9e4699c03180
+ms.openlocfilehash: 51b281a6799fa89ed49082acea34024a6214e835
 
 
 ---
@@ -57,14 +57,12 @@ Para entender cómo obtienen sus aplicaciones los usuarios finales, elija entre 
 - [Cómo obtienen sus aplicaciones los usuarios de iOS](how-your-ios-users-get-their-apps.md)
 - [Cómo obtienen sus aplicaciones los usuarios de Windows](how-your-windows-users-get-their-apps.md)
 
-## Ayudar a que los usuarios finales comprendan los mensajes de la aplicación Portal de empresa
 
-A fin de que los usuarios solucionen los problemas que puedan tener cuando estén usando el portal de empresa, puede revisar una [lista de los mensajes que los usuarios pueden ver en el portal de empresa](/Intune/Plan-Design/help-end-users-understand-company-portal-app-messages).
 
 Si hay otra información que le gustaría que se trata en este artículo, agregue su sugerencia al cuadro de comentarios en la parte inferior de este tema. Gracias.
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

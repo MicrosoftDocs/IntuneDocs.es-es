@@ -4,7 +4,7 @@ description: "Describe cómo inscribir un dispositivo Windows 8.1 en Intune."
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 06/27/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
-ms.openlocfilehash: a03c3a3b6a284dc8f24eef2f111f526eedcc962f
+ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
+ms.openlocfilehash: d1c65c826a978fc5d263cfc0ed4eeee0854d0c3b
 
 
 ---
@@ -84,12 +84,9 @@ Si su administrador de TI configuró el Portal de empresa para que se instale du
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
-### Consulte también
-[Inscriba el dispositivo Windows en Intune](enroll-your-device-in-intune-windows.md)</br>
-[Usar un dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

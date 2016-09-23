@@ -4,7 +4,7 @@ description: "Describe el sitio web del Portal de empresa y proporciona vínculo
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 06/03/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: bfce55b6d23554d1c3df2b62d6bf5fdd4607974b
+ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
+ms.openlocfilehash: f44f4785f768e6fea8532199b28d3621248e2dd4
 
 
 ---
@@ -50,6 +50,6 @@ La mayoría de tareas que puede realizar mediante la **aplicación Portal de emp
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 
