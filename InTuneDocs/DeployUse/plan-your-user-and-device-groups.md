@@ -54,7 +54,7 @@ Las directivas se implementan en grupos, por lo que la jerarquía de grupo es un
 
     * **Pertenencia directa**. son reglas estáticas que agregan o excluyen miembros explícitamente. La lista de pertenencia es estática.
 
--   Servicios de dominio de Active Directory (AD DS) no se necesita cuando crea grupos de usuarios o grupos de dispositivos que incluyen usuarios o equipos. Pero, para los grupos de dispositivos que incluyen dispositivos móviles, el entorno debe configurarse para admitirlos.
+-   Active Directory Domain Services (AD DS) no es necesario cuando crea grupos de usuarios o grupos de dispositivos que incluyen usuarios o equipos. Pero, para los grupos de dispositivos que incluyen dispositivos móviles, el entorno debe configurarse para admitirlos.
 
     Además, los dispositivos deben detectarse y agregarse a Intune.
 
@@ -89,7 +89,7 @@ Las directivas se implementan en grupos, por lo que la jerarquía de grupo es un
     * Se crea un grupo en Intune que usa una consulta de pertenencia dinámica que incluye a los miembros del grupo **Usuarios aprobados**. El resultado es que su grupo de usuarios de Intune incluye a **Nuria**.
 
 > [!TIP]
-> Al crear los grupos, tenga en cuenta cómo aplicará la directiva. Por ejemplo, puede tener directivas específicas para sistemas operativos de dispositivos o directivas específicas para diferentes roles o unidades organizativas que ya ha definido en el servicio de Active Directory. Algunos administradores encuentran útil la creación de grupos de dispositivos específicos a iOS, Android y Windows. Esto se suma a la creación de grupos de usuarios para cada rol organizativo.
+> Al crear los grupos, tenga en cuenta cómo aplicará la directiva. Por ejemplo, puede tener directivas específicas para sistemas operativos de dispositivos o directivas específicas para diferentes roles o unidades organizativas que ya ha definido en el servicio de Active Directory. A algunos administradores les parece útil la creación de grupos de dispositivos específicos de iOS, Android y Windows. Esto se suma a la creación de grupos de usuarios para cada rol organizativo.
 
 <!--- should we just link to a policies topic at this point and remove this? Ask Rob
  You'll probably want to create a default policy that applies to all groups and devices, to establish the basic compliance requirements of your organization. Then, you create more specific policies for the broadest categories of users and devices, for example, email policies for each of the device operating systems.

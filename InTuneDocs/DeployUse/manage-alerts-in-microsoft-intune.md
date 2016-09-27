@@ -67,7 +67,7 @@ Las alertas del tablón de anuncios proporcionan importantes anuncios de servici
 3.  Si quiere exportar una alerta del tablón de anuncios a un archivo de valores separados por comas (CSV) o HTML, en la consola de administración de Intune, elija **Alertas** > **Todas las alertas** >    **Notificaciones**. Seleccione una notificación, elija el icono **Exportar lista** y, después, siga las instrucciones que se muestran.
 
 ## Revisar el estado del sistema de Intune
-En el área de trabajo **Información general del sistema**, puede ver los resúmenes **Estado del sistema** de las categorías Endpoint Protection, Actualizaciones, Estado del agente, Directiva y Software que le ayudan a identificar y priorizar los problemas que requieren atención inmediata. Los mensajes de error que se generan cuando se interrumpe el sistema se vinculan al resumen **Estado del servicio**. El resumen **Estado del servicio** muestra detalles sobre el problema en cada ubicación y la última actualización del resumen de estado.
+En el área de trabajo **Información general del sistema**, puede ver los resúmenes **Estado del sistema** de las categorías Endpoint Protection, Actualizaciones, Estado del agente, Directiva y Software, que le ayudan a identificar y priorizar los problemas que requieren atención inmediata. Los mensajes de error que se generan cuando se interrumpe el sistema se vinculan al resumen **Estado del servicio**. El resumen **Estado del servicio** muestra detalles sobre el problema en cada ubicación y la última actualización del resumen de estado.
 
 #### Para ver el estado de la suscripción
 
@@ -75,7 +75,7 @@ En el área de trabajo **Información general del sistema**, puede ver los resú
 
 2.  Examine el área **Estado del sistema** para ver el estado de los diversos componentes de Microsoft Intune.
 
-  Muchos de los elementos están vinculados por lo que puede ver más información. Por ejemplo, en **Endpoint Protection**, si elige el número de instancias, puede ver el área de trabajo **Endpoint Protection** con una lista del malware que se ha detectado. Si elige el número de dispositivos, puede ver el área de trabajo **Grupos**, con una lista de los dispositivos en los que se ha encontrado malware.
+  Muchos de los elementos están vinculados para que pueda ver más información. Por ejemplo, en **Endpoint Protection**, si elige el número de instancias, puede ver el área de trabajo **Endpoint Protection** con una lista del malware que se ha detectado. Si elige el número de dispositivos, puede ver el área de trabajo **Grupos**, con una lista de los dispositivos en los que se ha encontrado malware.
 
 ## Cerrar o reactivar alertas
 Las alertas de Intune permanecen activas hasta que se produce uno de los siguientes eventos:
