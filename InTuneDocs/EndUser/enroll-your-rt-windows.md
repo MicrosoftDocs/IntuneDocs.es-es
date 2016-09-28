@@ -4,7 +4,7 @@ description: "Describe cómo inscribir un dispositivo Windows RT en Intune."
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 06/27/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: ca6519e8-d0da-4314-b0bc-1753784d7969
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 80ebf1a56106ad4e66d2d791ab98edae1ab11505
-ms.openlocfilehash: ddbe0bd7b9a69a92d5bf4681bf8c897d7712acee
+ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
+ms.openlocfilehash: 6c9ee56cb000c4834935fcf73408195cc9b062a5
 
 
 ---
@@ -47,12 +47,10 @@ También se recomienda instalar la aplicación Portal de empresa, que le permiti
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
-### Consulte también
-[Inscriba el dispositivo Windows en Intune](enroll-your-device-in-intune-windows.md)</br>
-[Usar un dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO1-->
+
+<!--HONumber=Sep16_HO3-->
 
 
