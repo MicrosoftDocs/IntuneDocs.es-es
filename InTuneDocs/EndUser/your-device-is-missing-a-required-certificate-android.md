@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 7/7/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: e10de556babc49d4e2f1ebf6ba9c766291d58efd
+ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
+ms.openlocfilehash: 9a763e13818ec5c1708d121125cadd37e25e3193
 
 
 ---
@@ -96,11 +96,10 @@ Para resolver este problema y obtener el certificado necesario, hay dos pasos pr
 
 Si aparece el mismo mensaje que indica que "falta el certificado" como el que se muestra anteriormente y ya seguido los pasos anteriores, probablemente significa que todavía hay otro certificado que el administrador de TI necesitará para ayudarle a instalar. Póngase en contacto con el administrador de TI y asigne a esa persona este [vínculo](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#android-certificate-issues), que contiene los pasos para resolver el problema.
 
-### Consulte también
-[Usar un dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Sep16_HO3-->
 
 

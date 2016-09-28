@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 06/02/2016
+ms.date: 09/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: ea594a179b0b79be103643e5ffa3d21cfd04ac73
+ms.sourcegitcommit: 967ef85a356cdbc81c80f55eff758cd1a25b8af7
+ms.openlocfilehash: c99b95a4127573dbe397b891daa881f6be015a8a
 
 
 ---
@@ -27,10 +27,10 @@ Para saber lo que ocurre cuando restablece su dispositivo, seleccione el víncul
 
 - [Android](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
 - [iOS](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
-- [Windows](/what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
+- [Windows](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

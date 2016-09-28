@@ -4,7 +4,7 @@ description: "Intune es un servicio basado en la nube que le ayuda a administrar
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,15 @@ ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 60ee39a7eeeb9068a7350ec87f60e7148ccb7826
-ms.openlocfilehash: c13366ea7f42272e6fc3d606cb8dbe0ed1c45fe4
+ms.sourcegitcommit: a7cced90c482498b5f5af424165f8dcf77b79b75
+ms.openlocfilehash: e3694f80d6148abbce004bb0c7143bf394b313d9
 
 
 ---
 
 # Descripción del servicio Microsoft Intune
 
-Microsoft Intune es un servicio basado en la nube que le ayuda a administrar equipos con Windows, iOS, Android y dispositivos móviles de Windows. Asimismo, Intune le ayudará a proteger los datos y las aplicaciones de su empresa. Puede usar Intune por sí solo o puede integrarlo con System Center 2012 R2 Configuration Manager para ampliar sus capacidades de administración.
+Microsoft Intune es un servicio basado en la nube que le ayuda a administrar equipos con Windows, iOS, Android y dispositivos móviles de Windows. Asimismo, Intune le ayudará a proteger los datos y las aplicaciones de su empresa. Puede usar Intune por sí solo o puede integrarlo con System Center Configuration Manager para ampliar sus capacidades de administración. 
 
 Microsoft le ofrece los beneficios propios de la incorporación a Intune para aquellos servicios válidos que se encuentren en planes aptos. El beneficio de incorporación le permite trabajar de forma remota con los especialistas de Microsoft para preparar el entorno de Intune para su uso. Para obtener más información, consulte [Proceso del beneficio de incorporación de Microsoft Intune](http://go.microsoft.com/fwlink/?LinkId=619281).
 
@@ -32,18 +32,18 @@ Puede comenzar a usar Intune con una versión de evaluación gratuita de 30 día
 
 Para obtener una lista de las opciones que puede configurar en los dispositivos móviles, consulte:
 
--   [Capacidades de administración de dispositivos móviles en Microsoft Intune](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)
+-   [Funcionalidades de administración de dispositivos inscritos en Microsoft Intune](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune) 
 
--   [Configuración general para dispositivos móviles en Configuration Manager](https://technet.microsoft.com/library/dn376523.aspx)
+-   [Administración híbrida de dispositivos móviles (MDM) con System Center Configuration Manager y Microsoft Intune](https://technet.microsoft.com/library/mt627883.aspx) 
 
-Para obtener información sobre System Center 2012 R2 Configuration Manager, consulte [Biblioteca de documentación de System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx).
+Para obtener información sobre System Center Configuration Manager, consulte la [Documentación de System Center Configuration Manager](https://technet.microsoft.com/library/mt346023.aspx).
 
 ## Información acerca de cómo le afectan las actualizaciones del servicio de Intune
 Dado que Intune es un servicio en línea, Microsoft puede actualizarlo de forma periódica.
 
 Use la información de este tema para comprender mejor con qué frecuencia se realizan estas actualizaciones de servicio y cómo son las notificaciones que le enviamos cuando una actualización puede afectar a su uso del servicio.
 
-Para conocer más detalles sobre los cambios en el servicio de Intune, consulte [Novedades de Microsoft Intune](/intune/deploy-use/Whats-new-in-microsoft-intune.md). En el [Blog de Microsoft Intune](http://blogs.technet.com/b/microsoftintune/) también se describen los cambios que se realizan en el servicio y se proporcionan sugerencias útiles para permitirle sacar el máximo provecho a Intune.
+Para conocer más detalles sobre los cambios en el servicio de Intune, consulte [Novedades de Microsoft Intune](/intune/deploy-use/whats-new-in-microsoft-intune). En el [Blog de Microsoft Intune](http://blogs.technet.com/b/microsoftintune/) también se describen los cambios que se realizan en el servicio y se proporcionan sugerencias útiles para permitirle sacar el máximo provecho a Intune. 
 
 También se le comunicarán actualizaciones importantes del servicio en el Centro de mensajes del [portal de administración de Office 365](https://portal.office.com/Admin/Default.aspx). Si instala la [aplicación móvil complementaria de Office 365 Admin](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a), podrá recibir notificaciones en su dispositivo móvil.
 
@@ -65,7 +65,7 @@ Puede configurar Intune de diversas maneras para administrar y proteger los disp
 
 -   **Configuración de Intune independiente.** Utilice la consola de administración basada en Web de Intune para administrar los dispositivos de su organización. Intune se puede usar sin una infraestructura de TI local, aunque si se usa Intune con los servicios de dominio de Active Directory, pueden emplearse las cuentas de usuario de dominio que se administran con los servicios de dominio mediante Intune.
 
--   **Intune con System Center Configuration Manager.** Use la consola de administración de Configuration Manager para administrar los equipos y dispositivos móviles de su empresa. Esta configuración puede ayudarle a administrar todos los dispositivos de la organización a través de una única consola, la consola de administración de Configuration Manager. Configuration Manager admite grandes cantidades de dispositivos móviles, servidores y equipos. Para obtener más información, consulte [Administrar dispositivos móviles con Configuration Manager y Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=271118) en la [Biblioteca de documentación de System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx).  Para obtener más ayuda para decidir qué enfoque es adecuado para usted, vea [Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager (Elegir entre Microsoft Intune independiente y la administración de dispositivos móviles híbrida con Configuration Manager)](https://technet.microsoft.com/en-us/library/mt706478.aspx).
+-   **Intune con System Center Configuration Manager.** Use la consola de administración de Configuration Manager para administrar los equipos y dispositivos móviles de su empresa. Esta configuración puede ayudarle a administrar todos los dispositivos de la organización a través de una única consola, la consola de administración de Configuration Manager. Configuration Manager admite grandes cantidades de dispositivos móviles, servidores y equipos. Para obtener más información, consulte [Administración híbrida de dispositivos móviles (MDM) con System Center Configuration Manager y Microsoft Intune](https://technet.microsoft.com/library/mt627883.aspx).  Para obtener más ayuda para decidir qué enfoque es adecuado para usted, vea [Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager (Elegir entre Microsoft Intune independiente y la administración de dispositivos móviles híbrida con Configuration Manager)](https://technet.microsoft.com/en-us/library/mt706478.aspx). 
 
 
 ## Obtenga más información acerca de Intune
@@ -73,7 +73,7 @@ Use estos recursos para obtener más información acerca de Intune:
 
 -   En el [Centro de confianza de Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/intune-trust-center/) se proporciona información sobre las prácticas de seguridad, privacidad y cumplimiento de Intune y se describen algunas certificaciones de Intune.
 
--   [Capacidades de administración de dispositivos móviles en Microsoft Intune](/intune/understand-explore/mobile-device-management-capabilities-in-microsoft-intune)
+-   [Funcionalidades de administración de dispositivos inscritos en Microsoft Intune](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune) 
 
 ### Consulte también
 [Microsoft Intune](https://docs.microsoft.com/intune/)
@@ -83,6 +83,6 @@ Use estos recursos para obtener más información acerca de Intune:
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

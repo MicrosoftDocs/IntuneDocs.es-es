@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 05/31/2016
+ms.date: 09/21/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 7e90141f08cf029a005aad1ae0501fc1962eb958
+ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
+ms.openlocfilehash: 87b0e188824368116dce5ea154821084b8db16ce
 
 
 ---
@@ -25,32 +25,20 @@ ms.openlocfilehash: 7e90141f08cf029a005aad1ae0501fc1962eb958
 
 Si se produce un error en el dispositivo Android mientras está trabajando con las aplicaciones de su centro educativo o empresa o mientras se encuentra en la aplicación Portal de empresa, puede enviar registros de datos de diagnóstico a su administrador de TI para que pueda determinar cuál fue el error y corregirlo. Para incluir todos los detalles en los registros y que así su administrador de TI pueda averiguar cuál fue el problema, active el registro detallado. Puede leer más información sobre el [registro detallado](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
 
-Para activar el registro detallado:
+Para enviar registros al administrador de TI mediante correo electrónico:
 
 1.  Abra la aplicación del portal de empresa.
 
-2.  Pulse en **Menú** &gt; **Configuración**.
+2.  Toque **Menú** &gt;  **Ayuda y comentarios**.
 
     > [!NOTE]
     > **Menú** puede ser un botón de software o hardware, según el dispositivo Android que tenga.
 
-3.  En la opción **Datos de diagnóstico**, pulse **Enviar datos**.
+3.  En **Ayuda**, toque **Obtener ayuda**.
 
-    > [!NOTE]
-    > **Solo si usa dispositivos con Android 6.0 o una versión posterior:** cuando pulse en **Enviar datos**, verá el mensaje **¿Permitir que Portal de empresa tenga acceso a fotos, elementos multimedia y archivos del dispositivo?**.
-
-    Este mensaje puede inducir a error, ya que **Microsoft nunca accede a las fotografías, a los elementos multimedia ni a los archivos del dispositivo**. Google controla el texto del mensaje, por lo que Microsoft no puede cambiarlo.  Al permitir el acceso, lo único que está haciendo es dejar que el dispositivo escriba registros de datos en la tarjeta SD del dispositivo, lo que permite mover esos registros mediante un cable USB.
-
-    Si se deniega el acceso, el mensaje aparecerá de nuevo la próxima vez que pulse **Enviar datos**, pero puede desactivar los mensajes futuros si pulsa en la casilla **No volver a preguntar**.  Si más adelante decide permitir el acceso, vaya a **Configuración** &gt; **Aplicaciones** &gt; **Portal de empresa** &gt; **Permisos** &gt; **Almacenamiento**y active el permiso.
-
-4.  Siga las indicaciones para elegir la aplicación de correo electrónico a través de la cual enviará los registros a su administrador de TI. La aplicación creará un correo electrónico con dirección previa con todos los registros adjuntos.
+Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 
-### Consulte también
-[Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
-
-
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

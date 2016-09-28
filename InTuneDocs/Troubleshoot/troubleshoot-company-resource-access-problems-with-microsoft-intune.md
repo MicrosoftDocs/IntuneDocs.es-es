@@ -4,7 +4,7 @@ description: "Códigos de error y estado en este tema para ayudarle a solucionar
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 40622ced-6029-4abf-873e-b51d2b51934c
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
-ms.openlocfilehash: 144fa2e18670805ef46cf2d3db86ec254cdfdf77
+ms.sourcegitcommit: 03f7433bc46d6a24498104bed7e5f1f366aca890
+ms.openlocfilehash: 114d4107dc73b3ad905de3fe02ffb81fa2e0e954
 
 
 ---
@@ -33,7 +33,7 @@ Si esta información no soluciona el problema, vea [How to get support for Micro
 |30 (APP_CI_ENFORCEMENT_IN_PROGRESS_WAITING_CONTENT)|Recuperando contenido|Causa probable: el estado de trabajo 30 indica un error de descarga de aplicación de un usuario.<br /><br />Las causas probables pueden ser:<br /><br />El dispositivo había perdido la conectividad de Internet mientras la descarga estaba en curso.<br /><br />Puede haber expirado el certificado emitido para el dispositivo en el momento de la inscripción.<br /><br />Mitigación:<br /><br />Inicie la aplicación Aplicaciones de empresa desde el Panel de Control del dispositivo para confirmar que el certificado del dispositivo no ha expirado; en caso afirmativo, deberá volver a inscribirlo.<br /><br />Compruebe que el dispositivo está conectado a Internet y pruebe a solicitar la aplicación de nuevo.|
 |40 (APP_CI_ENFORCEMENT_IN_PROGRESS_CONTENT_DOWNLOADED)|Descarga de contenido completa||
 |50 (APP_CI_ENFORCEMENT_IN_PROGRESS_INSTALLING)|Instalación en curso||
-|60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|InstalaciónSe produjo un error|Error en la instalación de la aplicación después de la descarga.<br /><br />El certificado de firma de código con el que se firmó la aplicación no está presente en el dispositivo.<br /><br />Una dependencia de marco de trabajo de la que depende la aplicación no se encuentra instalada en el dispositivo.<br /><br />Asegúrese de que el certificado de firma de código con el que se firmó la aplicación está presente en el dispositivo y confirme con el administrador que este certificado está destinado a todos los dispositivos de Windows RT inscritos de la empresa.<br /><br />Si el error de instalación se debe a la falta de una dependencia de marco de trabajo, el administrador tendrá que volver a publicar la aplicación y empaquetar el marco de trabajo junto con el paquete de aplicación.<br /><br />El paquete de aplicación descargado no es un paquete válido, puede estar dañado o no ser compatible con la versión del sistema operativo del dispositivo.|
+|60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|Error de instalación|Error en la instalación de la aplicación después de la descarga.<br /><br />El certificado de firma de código con el que se firmó la aplicación no está presente en el dispositivo.<br /><br />Una dependencia de marco de trabajo de la que depende la aplicación no se encuentra instalada en el dispositivo.<br /><br />Asegúrese de que el certificado de firma de código con el que se firmó la aplicación está presente en el dispositivo y confirme con el administrador que este certificado está destinado a todos los dispositivos de Windows RT inscritos de la empresa.<br /><br />Si el error de instalación se debe a la falta de una dependencia de marco de trabajo, el administrador tendrá que volver a publicar la aplicación y empaquetar el marco de trabajo junto con el paquete de aplicación.<br /><br />El paquete de aplicación descargado no es un paquete válido, puede estar dañado o no ser compatible con la versión del sistema operativo del dispositivo.|
 |70 (APP_CI_ENFORCEMENT_SUCCEEDED)|Instalación correcta||
 |80 (APP_CI_ENFORCEMENT_IN_PROGRESS)|Desinstalación en curso||
 |90 (APP_CI_ENFORCEMENT_ERROR)|Se produjo un error de desinstalación||
@@ -127,7 +127,7 @@ Si esta información no soluciona el problema, vea [How to get support for Micro
 |-2016314112|0x87D17D00|22000: Uso de clave no válido|
 |-2016315105|0x87D1791F|21007: No se puede verificar la cuenta|
 |-2016315106|0x87D1791E|21006: No se puede descifrar el certificado|
-|-2016315107|0x87D1791D|21005: La cuenta no es única|
+|-2016315107|0x87D1791D|21005: la cuenta no es única (el perfil de correo electrónico ya existe en el dispositivo)|
 |-2016315108|0x87D1791C|21004: No se puede crear la cuenta|
 |-2016315109|0x87D1791B|21003: Sin nombre de host|
 |-2016315110|0x87D1791A|21002: No se puede cumplir con la directiva de cifrado del servidor|
@@ -372,6 +372,6 @@ Si esta información para solucionar problemas no le ha ayudado, póngase en con
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 
