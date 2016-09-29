@@ -4,7 +4,7 @@ description: "Implemente la aplicación del explorador administrado para restrin
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/03/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2fcd53d335aa18701ba0b8c3c75569febbee2cd5
-ms.openlocfilehash: d07a5dde05055c54f5b89c8aa5f49203d0a22b97
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: d4d05508e44fe0864ce6dabf0864f6ed67109a7c
 
 
 ---
@@ -34,7 +34,7 @@ Puede crear directivas de explorador administrado para los siguientes tipos de d
 
 -   Dispositivos que ejecutan Android 4 y versiones posteriores
 
--   Dispositivos que ejecutan iOS 7.1 y versiones posteriores
+-   Dispositivos que ejecutan iOS 8.0 y versiones posteriores
 
 Intune Managed Browser admite la apertura de contenido web de [Microsoft Intune application partners](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) (Partners de aplicaciones de Microsoft Intune).
 
@@ -44,9 +44,9 @@ Intune Managed Browser admite la apertura de contenido web de [Microsoft Intune 
 
 2.  Configure uno de los siguientes tipos de directivas de **software** :
 
-    -   **Directiva de explorador administrado (Android 4 y posterior)**
+    -   **Explorador administrado (Android 4 y posterior)**
 
-    -   **Directiva de explorador administrado (iOS 7.1 y versiones posteriores)**
+    -   **Managed Browser (iOS 8.0 y posterior)**
 
     Para más información sobre cómo crear e implementar directivas, consulte el tema [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
@@ -154,6 +154,6 @@ Si se implementan varias directivas de explorador administrado en un dispositivo
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 

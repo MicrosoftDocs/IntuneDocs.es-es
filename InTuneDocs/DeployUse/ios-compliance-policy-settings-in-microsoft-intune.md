@@ -4,7 +4,7 @@ description:
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 7/28/2016
+ms.date: 07/28/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed6aafb0ba8e8bb2b7a9985bb98a149a1af68574
-ms.openlocfilehash: 606146fdc9e3e141293e561a09d8e62d8870403a
+ms.sourcegitcommit: 4f98937d7adfc0c1584625303da3350785af8169
+ms.openlocfilehash: a2f98bbd34cf8b0c86531ae6ff40b1044c15d8bd
 
 
 ---
@@ -22,11 +22,11 @@ ms.openlocfilehash: 606146fdc9e3e141293e561a09d8e62d8870403a
 
 # Configuración de directivas de cumplimiento para dispositivos iOS en Microsoft Intune
 
-La configuración de directiva que se describe en este tema se aplica a los dispositivos que ejecuten iOS 6 y versiones posteriores.
+La configuración de directivas que se describe en este tema se aplica a los dispositivos con iOS 8.0 y versiones posteriores.
 
 Si quiere información sobre otras plataformas, seleccione uno de los siguientes temas:
 > [!div class="op_single_selector"]
-- [Configuración de directivas de cumplimiento normativo para dispositivos Android](android-compliance-policy-settings-in-microsoft-intune.md)
+- [Configuración de directivas de cumplimiento para dispositivos Android](android-compliance-policy-settings-in-microsoft-intune.md)
 - [Configuración de directivas de cumplimiento para dispositivos Windows](windows-compliance-policy-settings-in-microsoft-intune.md)
 
 ## Configuración de seguridad del sistema
@@ -80,6 +80,6 @@ Además, se mostrará un vínculo con información sobre cómo actualizar el sis
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

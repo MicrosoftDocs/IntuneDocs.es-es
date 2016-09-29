@@ -13,8 +13,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a1d0b330b42ea920af9512552a9f3d9c875e99da
-ms.openlocfilehash: 9e2b16a2ea16417864b82f4b025053d9c87fcb14
+ms.sourcegitcommit: 4f98937d7adfc0c1584625303da3350785af8169
+ms.openlocfilehash: 2bbb17881a1e40cd6552fe4303d55bd0cb4ffcf6
 
 
 ---
@@ -67,7 +67,7 @@ En el diagrama siguiente se muestra el flujo que usan las directivas de acceso c
 Puede restringir el acceso al correo electrónico de Exchange Online desde **Outlook** y otras **aplicaciones que usan la autenticación moderna**:
 
 - Android 4.0 y versiones posterior, Samsung Knox Standard 4.0 y versiones posteriores
-- iOS 7.1 y versiones posteriores
+- iOS 8.0 y versiones posteriores
 - Windows Phone 8.1 y versiones posteriores
 
 La **autenticación moderna** proporciona el inicio de sesión basado en la biblioteca de autenticación de Active Directory (ADAL) a los clientes de Microsoft Office.
@@ -93,7 +93,7 @@ Puede restringir el acceso al correo electrónico de Exchange desde el **cliente
 
 - Android 4.0 y versiones posterior, Samsung Knox Standard 4.0 y versiones posteriores
 
-- iOS 7.1 y versiones posteriores
+- iOS 8.0 y versiones posteriores
 
 - Windows Phone 8.1 y versiones posteriores
 
@@ -262,6 +262,6 @@ En el panel de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], elija el 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

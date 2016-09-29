@@ -13,8 +13,8 @@ ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bf8da72092a2380e73cfbed2a693831706b40d23
-ms.openlocfilehash: c005a1b38289580b1543e0e62cbb4cd00cb22c47
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: daecea644300ee1e47db9b028b72d71b3211f46d
 
 
 
@@ -55,12 +55,18 @@ Asegúrese de incluir el carácter de punto al principio.
 4. Elija **Aceptar**, guarde y, luego, implemente la directiva.
 
     > [!NOTE]
-Esta directiva solo se puede implementar en grupos de usuarios.
+    > Esta directiva solo se puede implementar en grupos de usuarios.
 
 La siguiente vez que se registre cada dispositivo, se aplicará la directiva y se creará un perfil de Wi-Fi en el dispositivo. El dispositivo podrá conectarse a la red automáticamente.
 ## Perfil de Wi-Fi de Windows o Android
 
 Este es un ejemplo del código XML de un perfil de Wi-Fi de Android o Windows:
+
+> [!IMPORTANT]
+> 
+> `<protected>false</protected>`: se establece en **false**, ya que **true** podría causar que el dispositivo esperara una contraseña cifrada y luego intentara descifrarla, lo que podría dar lugar a un error de conexión.
+> 
+>  `<hex>53534944</hex>` se debe establecer en el valor hexadecimal de `<name><SSID of wifi profile></name>`.
 
     <!--
     <Name of wifi profile> = Name of profile
@@ -70,6 +76,7 @@ Este es un ejemplo del código XML de un perfil de Wi-Fi de Android o Windows:
     <Type of encryption> = Type of encryption used by the network
     <protected>false</protected> do not change this value, as true could cause device to expect an encrypted password and then try to decrypt it, which may result in a failed connection.
     <password> = Password to connect to the network
+    <hex>53534944</hex> should be set to the hexadecimal value of <name><SSID of wifi profile></name>
     -->
     <WLANProfile
     xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
@@ -207,6 +214,6 @@ Al seleccionar una directiva implementada, puede ver más información sobre la 
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO3-->
 
 
