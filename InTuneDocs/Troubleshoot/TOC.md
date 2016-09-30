@@ -1,5 +1,6 @@
 # [Descripción y exploración](/intune/understand-explore/introduction-to-microsoft-intune)
 # [Introducción](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [Novedades](/intune/whats-new/whats-new-in-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [Implementación y uso](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Desarrollo y personalización de aplicaciones](/intune/develop/intune-app-sdk)
@@ -22,6 +23,6 @@
 ## [Solucionar problemas de integración de Lookout](troubleshooting-lookout-integration.md)
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Sep16_HO5-->
 
 

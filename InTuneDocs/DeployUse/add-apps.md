@@ -4,7 +4,7 @@ description: Antes de empezar a implementar aplicaciones con Intune, dedique alg
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 8bc18a2f77a2ebcc4a3a2fc4d0902e745991dfae
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: c4b1e5d3bb8b949096f7d15ddbbf0d1540485d0d
 
 
 ---
@@ -46,7 +46,7 @@ Las aplicaciones basadas en vínculos externos no se almacenan en el espacio de 
 Puede usar aplicaciones iOS administradas para administrar e implementar aplicaciones iOS gratuitas desde la tienda de aplicaciones. También puede usar aplicaciones iOS administradas para asociar [directivas de administración de aplicaciones móviles](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) a [aplicaciones compatibles](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) y revisar su estado en la consola del administrador.<br /><br />Las aplicaciones iOS administradas no se almacenan en el espacio de almacenamiento en nube de Intune.
 
 > [!TIP]
-> Las opciones para dispositivos móviles no estarán disponibles hasta que [establezca la entidad de MDM ](get-ready-to-enroll-devices-in-microsoft-intune.md) en Intune.
+> Las opciones para dispositivos móviles no estarán disponibles hasta que [establezca la entidad de MDM ](prerequisites-for-enrollment.md) en Intune.
 
 ## Editor de software de Intune
 El editor de software de Microsoft Intune se inicia al agregar o modificar aplicaciones en la consola de administrador de Intune. En el editor, seleccione y configure un tipo de instalador de software que podrá:
@@ -82,6 +82,6 @@ Tendrá que agregar aplicaciones en la consola de Intune para, luego, poder impl
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 
