@@ -20,17 +20,17 @@ ms.openlocfilehash: 9a3e28cad00f99035b18182a33c24bcb714cca19
 ---
 
 # Administrar licencias de Intune con PowerShell
-Para que los usuarios puedan iniciar sesión para usar el servicio de Intune o inscribir sus dispositivos en la administración, primero debe asignar a cada usuario una licencia a la suscripción de Intune, tal como se describe en [Administración de licencias de Intune](start-with-a-paid-subscription-to-microsoft-intune-step-4.md). Pero las organizaciones que usan Microsoft Enterprise Mobility + Security podrían tener usuarios que solo requieran servicios de Azure Active Directory Premium o Intune en el paquete de EMS. Puede asignar un servicio o un subconjunto de servicios mediante [cmdlets de PowerShell de Azure Active Directory](https://msdn.microsoft.com/library/jj151815.aspx).
+Antes de que los usuarios puedan iniciar sesión para usar el servicio de Intune o inscriban sus dispositivos en la administración, primero debe asignar a cada usuario una licencia a su suscripción de Intune, como se describe en [Manage Intune licenses (Administrar licencias de Intune)](start-with-a-paid-subscription-to-microsoft-intune-step-4.md). Pero las organizaciones que usan Microsoft Enterprise Mobility + Security pueden tener usuarios que solo necesiten Azure Active Directory Premium o los servicios de Intune en el paquete de EMS. Puede asignar un servicio o un subconjunto de servicios mediante los [cmdlets de PowerShell de Azure Active Directory](https://msdn.microsoft.com/library/jj151815.aspx).
 
-Para asignar licencias de usuario para servicios de EMS de forma selectiva, abra PowerShell como administrador en un equipo con el [Módulo de Active Directory para Windows PowerShell](https://msdn.microsoft.com/library/jj151815.aspx#bkmk_installmodule) instalado. Puede instalar PowerShell en un equipo local o en un servidor de ADFS.
+Para asignar licencias de usuario de forma selectiva a los servicios de EMS, abra PowerShell como administrador en un equipo que tenga instalado el [módulo de Azure Active Directory para Windows PowerShell](https://msdn.microsoft.com/library/jj151815.aspx#bkmk_installmodule). Puede instalar PowerShell en un equipo local o en un servidor de ADFS.
 
-Debe crear una nueva definición de SKU de licencia que se aplique solo a los planes de servicio deseados. Para ello, deshabilite los planes que no desee aplicar. Por ejemplo, podría crear una definición de SKU de licencia que no asigne una licencia de Intune. Para ver una lista de los servicios disponibles, escriba:
+Debe crear una nueva definición de SKU de licencia que solo se aplique a los planes de servicio deseados. Para ello, deshabilite los planes que no quiera aplicar. Por ejemplo, podría crear una definición de SKU de licencia que no asigne una licencia de Intune. Para ver una lista con los servicios disponibles, escriba:
 
     (Get-MsolAccountSku | Where {$_.SkuPartNumber -eq "EMS"}).ServiceStatus
 
-Puede ejecutar el siguiente comando para excluir el plan de servicio de Intune. Puede utilizar el mismo método para expandir un grupo de seguridad completo o puede usar filtros más específicos.
+Puede ejecutar el comando siguiente para excluir el plan de servicio Intune. Puede usar el mismo método para realizar una expansión a todo un grupo de seguridad o puede usar filtros más pormenorizados.
 
-**Ejemplo 1** Crear un nuevo usuario en la línea de comandos y asignar una licencia de EMS sin habilitar la parte de Intune de la licencia:
+**Ejemplo 1** Cree un nuevo usuario en la línea de comandos y asigne una licencia de EMS sin habilitar la parte de Intune de la licencia:
 
     Connect-MsolService
 
@@ -40,11 +40,11 @@ Puede ejecutar el siguiente comando para excluir el plan de servicio de Intune. 
     Set-MsolUserLicense -UserPrincipalName user@<TenantName>.onmicrosoft.com -AddLicenses <TenantName>:EMS -LicenseOptions $CustomEMS
 
 
-Comprobar con:
+Realice la comprobación con lo siguiente:
 
     (Get-MsolUser -UserPrincipalName "user@<TenantName>.onmicrosoft.com").Licenses.ServiceStatus
 
-**Ejemplo 2** Deshabilitar la parte de Intune de la licencia de EMS para un usuario que ya está asignado a una licencia:
+**Ejemplo 2** Deshabilite la parte de Intune de la licencia de EMS de un usuario que ya tenga asignada una licencia:
 
     Connect-MsolService
 
@@ -53,17 +53,17 @@ Comprobar con:
     $CustomEMS = New-MsolLicenseOptions -AccountSkuId "<TenantName>:EMS" -DisabledPlans INTUNE_A
     Set-MsolUserLicense -UserPrincipalName user@<TenantName>.onmicrosoft.com -AddLicenses <TenantName>:EMS -LicenseOptions $CustomEMS
 
-Comprobar con:
+Realice la comprobación con lo siguiente:
 
     (Get-MsolUser -UserPrincipalName "user@<TenantName>.onmicrosoft.com" .Licenses.ServiceStatus
 
 ![PoSH-AddLic-Verify](./media/posh-addlic-verify.png)
 
 ### Pasos siguientes
-¡Enhorabuena! Acaba de completar el paso 4 de la *Guía de inicio rápido de Intune*.
+Enhorabuena. Acaba de completar el paso 4 de la *Guía de inicio rápido de Intune*.
 >[!div class="step-by-step"]
 
->[&larr; **Sincronizar usuarios con Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Organizar usuarios y dispositivos** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
+>[&larr; **Sincronizar los usuarios con Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)     [**Organizar usuarios y dispositivos** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
 
 
 
