@@ -2,9 +2,9 @@
 title: Novedades | Microsoft Intune
 description: Conozca las novedades de las versiones anteriores y de este mes de Microsoft Intune
 keywords: 
-author: Lindavr
+author: barlanmsft
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 09/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: fab51ee0-638d-4dd4-8d8f-1f263bc11e5c
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 03a5dd14b854fedf7e2cb5b949580960a0eab9de
-ms.openlocfilehash: 1d09e5a0adb3ecfa8f2d64f668ea7ff16bdf31fa
+ms.sourcegitcommit: 5b3256852431efb83fb2cc9fa067dd3f4a68a050
+ms.openlocfilehash: cef0a26204a22c95d2b639500246e435fcf7f9f7
 
 
 ---
@@ -72,6 +72,11 @@ A los usuarios finales de los dispositivos no compatibles se les solicitará que
 Se ha agregado un nuevo icono Notificaciones al portal de empresa para Android en la página principal. Al pulsar este icono, tendrá acceso a la página Notificaciones, que mostrará al usuario final todos los elementos que requieren atención en la aplicación de portal de empresa, como el no cumplimiento de dispositivos, la actualización de inscripciones y la activación de inscripciones. La aplicación de portal de empresa para iOS ya tiene esta experiencia de notificaciones. Tener la nueva página Notificaciones significa que el usuario no verá la página Configuración de acceso a la empresa cada vez que inicie o reanude el portal de empresa, siempre que el dispositivo ya esté inscrito. Si crea sus propias instrucciones de usuario final, puede que quiera actualizar su documentación para reflejar este cambio. Puede encontrar capturas de pantalla actualizadas [aquí](https://aka.ms/androidcpupdate).  
 <!---TFS 1095560--->
 
+**Proporcionar comentarios en el portal de empresa para Android**</br>
+Se ha agregado un elemento nuevo al menú del portal de empresa para Android. Al pulsar **Ayuda y comentarios**, se muestran tres acciones:
+* Use **Obtener ayuda** para informar al departamento de TI sobre un problema relacionado con el portal de empresa. El departamento de TI creará un correo electrónico mediante su cliente de correo electrónico y asociará a él los registros del portal de empresa. **Obtener ayuda** reemplaza la característica **Enviar datos** en la página **Configuración**.
+* Use **Enviar comentarios** para proporcionar comentarios al equipo del portal de empresa.
+* Use **Calificar nuestra aplicación** para dejar una valoración o una opinión sobre la aplicación del portal de empresa en Google Play.
 
 ### iOS
 **Cambios en la compatibilidad de la aplicación de Portal de empresa de iOS**<br/>
@@ -88,7 +93,7 @@ Puede encontrar las capturas de pantalla actualizadas [aquí](https://gallery.te
 <!---TFS 1317133--->
 
 **Preguntar para instalar la aplicación del explorador administrado de iOS si el profesional de TI establece ese requisito para una aplicación**<br/>
-Si ha configurado un clip de web para abrirlo solo en el explorador administrado y este no está instalado en un dispositivo, la aplicación de portal de empresa en el dispositivo le solicitará al usuario que instale el explorador administrado para poder instalar el clip web. 
+Si ha configurado un clip de web para abrirlo solo en el explorador administrado y este no está instalado en un dispositivo, la aplicación de portal de empresa en el dispositivo le solicitará al usuario que instale el explorador administrado para poder instalar el clip web.
 <!---TFS 1228570--->
 
 ### Windows
@@ -141,6 +146,6 @@ Si quiere ver los lanzamientos de Intune durante los últimos seis meses, los en
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Sep16_HO4-->
 
 
