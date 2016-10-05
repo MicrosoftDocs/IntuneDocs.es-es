@@ -13,8 +13,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d8a4fd4673560d6e2ffb4264ba8d8e56b0e5cb8d
-ms.openlocfilehash: 59b8cc2ad33521fd4575e46d78129c168da757b3
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: ef4041b7d9f47d9e1e1463e62274f93597fc6503
 
 
 ---
@@ -31,7 +31,7 @@ Los usuarios o los administradores de TI también pueden optar por instalar otro
 Puede usar perfiles de correo electrónico para configurar el cliente de correo nativo en los siguientes tipos de dispositivo:
 -   Windows Phone 8 y versiones posteriores
 -   Windows 10 (para el escritorio), Windows 10 Mobile y versiones posteriores
--   iOS 7.1 y versiones posteriores
+-   iOS 8.0 y versiones posteriores
 -   Samsung KNOX Standard (4.0 y posterior)
 
 Además de configurar una cuenta de correo electrónico en el dispositivo, también puede configurar la cantidad de correo electrónico que se sincronizará y, en función del tipo de dispositivo, los tipos de contenido que se sincronizarán.
@@ -71,7 +71,7 @@ La contraseña no está incluida en el perfil de correo electrónico, por lo que
 
     -   **Perfil de correo electrónico para Samsung KNOX estándar (4.0 y versiones posteriores)**
 
-    -   **Perfil de correo electrónico (iOS 7.1 y versiones posteriores)**
+    -   **Perfil de correo electrónico (iOS 8.0 y versiones posteriores)**
 
     -   **Perfil de correo electrónico (Windows Phone 8 y versiones posteriores)**
 
@@ -122,6 +122,6 @@ En el área de trabajo **Directiva** de la página **General** , un resumen de e
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Sep16_HO3-->
 
 

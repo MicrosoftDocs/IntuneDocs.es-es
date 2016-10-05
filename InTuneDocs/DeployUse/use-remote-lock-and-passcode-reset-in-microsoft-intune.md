@@ -1,6 +1,6 @@
 ---
-title: "Usar el restablecimiento de código de acceso y el bloqueo remoto | Microsoft Intune"
-description: "Intune proporciona funcionalidades de restablecimiento de código de acceso y de bloqueo remoto."
+title: "Usar bloqueo remoto y restablecimiento de código de acceso | Microsoft Intune"
+description: "Intune proporciona funciones de bloqueo remoto y restablecimiento de código de acceso."
 keywords: 
 author: NathBarn
 manager: angrobe
@@ -12,15 +12,15 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: e9cbf5858cc4e860b540f421b6d463b8e7a429cf
-ms.openlocfilehash: c2b4b6308569e1e67a1c3da18c12d19bdeecf08e
+ms.sourcegitcommit: 899f50cfec9e7c20d2981c077f93e0fccf37dc2b
+ms.openlocfilehash: 0b52bd8360f11e226674aefe80a578c451c2679d
 
 ---
-# Ayudar a proteger los dispositivos con el restablecimiento de código de acceso y el bloqueo remoto
-Microsoft Intune proporciona funcionalidades de restablecimiento de código de acceso y de bloqueo remoto.
+# Protección de los dispositivos mediante el bloqueo remoto y el restablecimiento de código de acceso
+Microsoft Intune proporciona funciones de bloqueo remoto y restablecimiento de código de acceso.
 
 ## Bloquear un dispositivo de forma remota
-Si un usuario pierde su dispositivo, es posible bloquear el dispositivo de forma remota. La tabla siguiente muestra el modo en que se puede utilizar el bloqueo remoto en distintas plataformas móviles.
+Si un usuario pierde su dispositivo, es posible bloquear el dispositivo de forma remota. La tabla siguiente muestra el modo en que se puede utilizar el bloqueo remoto en distintas plataformas móviles. No se admite el bloqueo remoto
 
 |Plataforma|Bloqueo remoto|
 |------------|---------------|
@@ -31,17 +31,18 @@ Si un usuario pierde su dispositivo, es posible bloquear el dispositivo de forma
 |Windows RT 8.1 y Windows RT|Compatible si el usuario actual del dispositivo es el mismo usuario que inscribió el dispositivo.|
 |Windows 8.1|Compatible si el usuario actual del dispositivo es el mismo usuario que inscribió el dispositivo.|
 
+No se admite el bloqueo remoto para equipos Windows inscritos con el cliente de software de Intune.
 
-### Cómo bloquear un dispositivo móvil de forma remota a través de la consola de Intune
+### Para bloquear un dispositivo móvil de forma remota a través de la consola de Intune
 
-1.  En la [consola de administrador de Intune](https://manage.microsoft.com/), seleccione **Grupos** &gt; **Todos los dispositivos** &gt; **Todos los dispositivos móviles**.
+1.  En la [consola de administrador de Intune](https://manage.microsoft.com/), elija **Grupos** &gt; **Todos los dispositivos** &gt; **Todos los dispositivos móviles**.
 
-2.  Seleccione **Todos los dispositivos administrados directamente** para ver los dispositivos inscritos en Intune o **Todos los dispositivos administrados por Exchange ActiveSync**.
+2.  Elija **Todos los dispositivos administrados directamente** para ver los dispositivos inscritos en Intune o en **Todos los dispositivos administrados por Exchange ActiveSync**.
 
     > [!TIP]
-    > También puede desplazarse a un dispositivo mediante un usuario. Elija **Todos los usuarios**. En la página Propiedades del usuario, elija **Dispositivos** y después elija el nombre del dispositivo móvil que quiere borrar.
+    > También puede desplazarse a un dispositivo mediante un usuario. Elija **Todos los usuarios**. En la página de propiedades del usuario, elija **Dispositivos** y luego elija el nombre del dispositivo móvil que quiera borrar.
 
-3.  En la lista, elija el dispositivo o los dispositivos que quiere bloquear. En la barra de tareas, seleccione **Tareas remotas** y luego **Bloqueo remoto**.
+3.  En la lista, elija los dispositivos que quiera bloquear. En la barra de tareas, elija **Tareas remotas** y seleccione **Bloqueo remoto**.
 
 ## Restablecer el código de acceso en un dispositivo
 Si un usuario olvida su contraseña, puede ayudarle quitando la contraseña de un dispositivo o forzar el uso de una nueva contraseña temporal en un dispositivo. La tabla siguiente muestra el modo en que se puede restablecer la contraseña en distintas plataformas móviles.
@@ -55,24 +56,26 @@ Si un usuario olvida su contraseña, puede ayudarle quitando la contraseña de u
 |Windows RT 8.1 y Windows RT|No compatible.|
 |Windows 8.1|No compatible.|
 
-### Cómo restablecer un código de acceso
+No se admite el restablecimiento de código de acceso para equipos Windows inscritos con el cliente de software de Intune.
 
-1.  En la [consola de administrador de Intune](https://manage.microsoft.com/), seleccione **Grupos** &gt; **Todos los dispositivos** &gt; **Todos los dispositivos móviles**.
+### Para restablecer un código de acceso
 
-2.  Seleccione **Todos los dispositivos administrados directamente** para ver los dispositivos inscritos en Intune o **Todos los dispositivos administrados por Exchange ActiveSync**.
+1.  En la [consola de administrador de Intune](https://manage.microsoft.com/), elija **Grupos** &gt; **Todos los dispositivos** &gt; **Todos los dispositivos móviles**.
+
+2.  Elija **Todos los dispositivos administrados directamente** para ver los dispositivos inscritos en Intune o en **Todos los dispositivos administrados por Exchange ActiveSync**.
 
     > [!TIP]
-    > También puede desplazarse a un dispositivo mediante un usuario. Haga clic en **Todos los usuarios**. En la página Propiedades del usuario, haga clic en **Dispositivos** y luego haga clic en el nombre del dispositivo móvil que quiere borrar.
+    > También puede desplazarse a un dispositivo mediante un usuario. Haga clic en **Todos los usuarios**. En la página de propiedades del usuario, haga clic en **Dispositivos** y luego haga clic en el nombre del dispositivo móvil que quiera borrar.
 
-3.  En la lista, elija el dispositivo o los dispositivos que quiere bloquear. En la barra de tareas, seleccione **Tareas remotas** y luego **Restablecimiento de código de acceso**.
+3.  En la lista, elija los dispositivos que quiera bloquear. En la barra de tareas, elija **Tareas remotas** y seleccione **Restablecimiento de código de acceso**.
 
 
 ### Consulte también
 [Retirar dispositivos](retire-devices-from-microsoft-intune-management.md)
-[Windows Selective Wipe for Device Data Management (Borrado selectivo de Windows para la administración de datos del dispositivo)](http://technet.microsoft.com/library/dn486874.aspx)
+[Borrado selectivo de Windows para la administración de datos del dispositivo](http://technet.microsoft.com/library/dn486874.aspx)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

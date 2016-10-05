@@ -4,7 +4,7 @@ description: "Use las directivas de configuración de aplicaciones móviles de I
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f8808c064589128f7daae810ffbcb3595270685d
-ms.openlocfilehash: 953bb702fde1d51303aceff6f84fa62999c5ab57
+ms.sourcegitcommit: 360865bcd97230e264ee3439407e8dd3017d0055
+ms.openlocfilehash: 1f239270c26a70b161e52c24e94ca5c2cae9ca3a
 
 
 ---
@@ -37,7 +37,7 @@ Las directivas de configuración de aplicaciones móviles pueden ayudarle a elim
 No implemente estas directivas directamente en usuarios y dispositivos. Asocie la directiva con una aplicación y, a continuación, implemente la aplicación. La configuración de directiva se usará cada vez que la aplicación la compruebe (normalmente, la primera vez que se ejecuta).
 
 > [!TIP]
-> Este tipo de directiva está disponible solo para dispositivos que ejecutan iOS 7.1 y posterior. Admite los siguientes tipos de instalación de la aplicación:
+> Este tipo de directiva está disponible solo para dispositivos con iOS 8.0 y versiones posteriores. Admite los siguientes tipos de instalación de la aplicación:
 >
 > -   **Aplicación iOS administrada desde la tienda de aplicaciones**
 > -   **Paquete de aplicación de iOS**
@@ -139,6 +139,6 @@ Cuando cree un archivo de configuración de aplicaciones móviles, puede especif
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

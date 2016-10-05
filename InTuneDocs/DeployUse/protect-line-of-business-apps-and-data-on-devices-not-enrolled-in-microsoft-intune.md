@@ -13,8 +13,8 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 3e09af2cd329d556a9a0a1b2fb4750856e336ab1
+ms.sourcegitcommit: 45c6622624230e3486d2498b1b023f2efcdc2970
+ms.openlocfilehash: eb04f0e7b9627ad1869ef677f1b32380db868490
 
 
 ---
@@ -27,7 +27,7 @@ En este tema se explican los pasos necesarios para aplicar directivas MAM a las 
 ##  Paso 1: preparar la aplicación
 Antes de aplicar directivas MAM a una aplicación, tiene que ajustarla con la herramienta de ajuste de aplicaciones de Microsoft Intune.  Las instrucciones para instalar y usar la herramienta de ajuste de aplicaciones están incluidas en la descarga.  
 >[!IMPORTANT]  
->Esta versión de la herramienta de ajuste de aplicaciones, que es compatible con dispositivos no inscritos en Intune, estará disponible en vista previa privada en las próximas semanas. Si quiere participar, envíe un correo electrónico a msintuneappsdk@microsoft.com para obtener más información.
+>Esta versión de la herramienta de ajuste de aplicaciones, que es compatible con dispositivos no inscritos en Intune, está disponible en vista previa pública. Si quiere participar en la vista previa pública, puede descargar la herramienta en [esta página de Github](https://github.com/msintuneappsdk/intune-app-wrapper-ios-preview) para iOS y en [este sitio de Github](https://github.com/msintuneappsdk/intune-app-wrapper-android-preview) para Android.
 
 ## Paso 2: agregar la aplicación
 
@@ -75,6 +75,6 @@ Puede quitar una aplicación de línea de negocio de la lista de aplicaciones.  
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

@@ -13,8 +13,8 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 310a1160d105a80623742ce4e2dc046c670bc167
-ms.openlocfilehash: d597cd13bd2254a9303769e2f5d5519c739f0aaf
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: beba0471f31a19dad78ddf71c07e323b18af18e8
 
 
 ---
@@ -40,7 +40,7 @@ Puede implementar perfiles de Wi-Fi en las siguientes plataformas:
 
 -   Android 4.0 y versiones posteriores
 
--   iOS 7.1 y versiones posteriores
+-   iOS 8.0 y versiones posteriores
 
 -   Mac OS X 10.9 y versiones posteriores
 
@@ -52,7 +52,7 @@ En el caso de los dispositivos que ejecutan Windows 8.1 o Windows 10 para escrit
 
     -   Perfil de Wi-Fi (Android 4 y versiones posteriores)
 
-    -   Perfil de Wi-Fi (iOS 7.1 y versiones posteriores)
+    -   Perfil de Wi-Fi (iOS 8.0 y versiones posteriores)
 
     -   Perfil de Wi-Fi (Mac OS X 10.9 y versiones posteriores)
 
@@ -173,6 +173,6 @@ Aprenda a crear un perfil de Wi-Fi con una clave precompartida en [Crear un perf
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO3-->
 
 

@@ -1,5 +1,6 @@
 # [Descripción y exploración](/intune/understand-explore/introduction-to-microsoft-intune)
 # [Introducción](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [Novedades](/intune/whats-new/whats-new-in-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [Implementación y uso](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
 # [Desarrollo y personalización de aplicaciones](/intune/develop/intune-app-sdk)
@@ -17,6 +18,11 @@
 ## [Solucionar problemas de acceso condicional](troubleshoot-conditional-access.md)
 ## [Solucionar problemas de Exchange Connector](troubleshoot-exchange-connector.md)
 
-<!--HONumber=Aug16_HO1-->
+## [Solucionar problemas de la administración de aplicaciones móviles](troubleshoot-mam.md)
+
+## [Solucionar problemas de integración de Lookout](troubleshooting-lookout-integration.md)
+
+
+<!--HONumber=Sep16_HO5-->
 
 

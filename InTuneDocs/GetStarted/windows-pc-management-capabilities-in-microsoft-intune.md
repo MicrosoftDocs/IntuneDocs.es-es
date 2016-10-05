@@ -4,7 +4,7 @@ description: "Obtenga información acerca de las funcionalidades de Intune cuand
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/25/2016
+ms.date: 09/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,25 +13,25 @@ ms.assetid: 77fa5c66-a87c-47df-964c-800eea509b33
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 12d75bc67fd61a2e807eed2543f21b756a65a900
-ms.openlocfilehash: 3066ef98c0a1df6fc0ae455860635e7c12f82c4f
+ms.sourcegitcommit: 453323aa38eed0a01aa8d583376162734439a69c
+ms.openlocfilehash: 0d4ec8077e2521b23808fcb537c4b2389fee714a
 
 
 ---
 
-# Capacidades de administración de PC de Windows cuando se utiliza el cliente de software de Intune)
+# Funciones de administración de equipos Windows cuando se usa el cliente de software de Intune
 En la mayoría de los escenarios, los dispositivos se inscribirán con Microsoft Intune, lo que proporciona un mayor número de capacidades. En cambio, también puede administrar los PC mediante el cliente de software de Intune, que proporciona las siguientes características:
 
--   **Administración de actualización de software**: puede mantener actualizados los equipos y decidir cuándo se aplican las actualizaciones.
+-   **[Administración de actualizaciones de software](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)**: puede mantener actualizados los equipos y decidir cuándo se aplican las actualizaciones.
 
--   **Directiva del Firewall de Windows**: ayuda a garantizar que ningún equipo que se use en la compañía tenga un Firewall de Windows inactivo o mal configurado.
+-   **[Directiva de Firewall de Windows](/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune)**: ayuda a asegurarse de que ningún equipo que se use en la empresa tenga un Firewall de Windows inactivo o mal configurado.
 
--   **Protección antimalware**: Intune incluye Endpoint Protection, que ayuda a proteger los equipos del malware.
+-   **[Protección antimalware](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)**: Intune incluye Endpoint Protection, que ayuda a proteger los equipos contra el malware.
 
--   **Asistencia remota**: Intune permite a los usuarios ponerse en contacto con el personal de soporte técnico de TI, que puede proporcionar asistencia mediante una característica de Escritorio remoto que se incluye con Intune (requiere el software TeamViewer).
+-   **[Asistencia remota](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#request-and-provide-remote-assistance-to-windows-pcs-that-use-the-intune-client-software )**: Intune permite a los usuarios ponerse en contacto con el personal de soporte técnico de TI, que puede proporcionar asistencia mediante una característica de Escritorio remoto incluida en Intune (requiere el software TeamViewer).
 
--   **Administración de licencias de software**: realice el seguimiento del número de licencias de software disponibles y del número de licencias disponibles que se usan.
--   **Implementación de aplicaciones**: implemente software en los equipos que administra. Algunas características de administración de aplicaciones no están disponibles cuando los PC se administran con el cliente de software.
+-   **[Administración de licencias de software](/intune/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune)**: realice el seguimiento del número de licencias de software disponibles y cuántas de estas se usan.
+-   **[Implementación de aplicaciones](/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)**: implemente software en los equipos que administra. Algunas características de administración de aplicaciones no están disponibles cuando los PC se administran con el cliente de software.
 
 
 Intune admite la instalación del cliente de software en hasta 7000 dispositivos de Windows.
@@ -74,6 +74,6 @@ A continuación se indican los requisitos de software para instalar el cliente d
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

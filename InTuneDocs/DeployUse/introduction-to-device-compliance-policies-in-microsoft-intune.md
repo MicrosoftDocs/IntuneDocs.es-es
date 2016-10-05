@@ -13,8 +13,8 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 44443db664753b202cc3fa07f8b76894320dc55d
-ms.openlocfilehash: f3bb686dda7bdf1e9557be2b5f5e0da2fb4d27e4
+ms.sourcegitcommit: 0be23ec10b8e380d57fc8263c68f08c0287c1b93
+ms.openlocfilehash: 7a9d68de99c624ccfe4d7d741c1c8ac5c0044314
 
 
 ---
@@ -32,9 +32,9 @@ Usted se encarga de implementar las directivas de cumplimiento para los usuarios
 
 En la siguiente tabla se enumeran los tipos de dispositivos compatibles con las directivas de cumplimiento y se indica cómo se administran los valores de configuración no compatibles cuando se usa la directiva con una directiva de acceso condicional.
 
---------------
+-----------------------------
 
-|Configuración de directiva| Windows 8.1 y posterior| Windows Phone 8.1 y versiones posteriores| iOS 6.0 y versiones posteriores|Android 4.0 y versiones posteriores<br/>Samsung KNOX Standard 4.0 y posterior|
+|Configuración de directiva| Windows 8.1 y posterior| Windows Phone 8.1 y versiones posteriores| iOS 8.0 y versiones posteriores|Android 4.0 y versiones posteriores<br/>Samsung KNOX Standard 4.0 y posterior|
 |-----|----|----|----|----|
 |**Configuración de PIN o contraseña** |Corregido|Corregido|Corregido|En cuarentena|
 |**Cifrado del dispositivo**|No aplicable|Corregido|Corregido (estableciendo PIN)|En cuarentena|
@@ -43,7 +43,9 @@ En la siguiente tabla se enumeran los tipos de dispositivos compatibles con las 
 |**Versión de SO mínima**|En cuarentena|En cuarentena|En cuarentena|En cuarentena|
 |**Versión de SO máxima**|En cuarentena| En cuarentena| En cuarentena| En cuarentena|
 |**Atestación de estado de Windows**|Windows 10 y Windows 10 Mobile están en cuarentena.<br /><br />La opción de configuración no es aplicable a Windows 8.1.|No aplicable|No aplicable|No aplicable|
---------------
+
+------------------------------
+
 **Corregido** = el sistema operativo del dispositivo exige el cumplimiento (por ejemplo, el usuario debe establecer un PIN).  La configuración nunca será no compatible.
 
 **En cuarentena** = el sistema operativo del dispositivo no exige el cumplimiento (por ejemplo, los dispositivos Android no obligan al usuario a cifrar el dispositivo). Si los dispositivos no son compatibles, se emprenden las acciones siguientes:
@@ -62,6 +64,6 @@ En la siguiente tabla se enumeran los tipos de dispositivos compatibles con las 
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Sep16_HO2-->
 
 
