@@ -13,8 +13,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7b16c19c95384655e170c199597dd6bd31afb90d
-ms.openlocfilehash: 226376601fdd381839ca389fd012e4bc462abfd5
+ms.sourcegitcommit: c880bd9dfb998355a18e78af898a96d4cee393f7
+ms.openlocfilehash: d8d64fcdd783401fd41415702d5ff4ae18215cca
 
 
 ---
@@ -28,7 +28,7 @@ En este tema se proporcionan sugerencias para solucionar problemas de inscripci�
 
 Antes de empezar a solucionar problemas, compruebe que ha configurado Intune correctamente para habilitar la inscripci처n. Puede leer sobre estos requisitos de configuraci처n en:
 
--   [Preparar la inscripci처n de dispositivos en Microsoft Intune](/intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune)
+-   [Preparar la inscripci처n de dispositivos en Microsoft Intune](/intune/deploy-use/gprerequisites-for-enrollment.md)
 -   [Configurar la administraci처n de dispositivos iOS y Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -   [Configurar la administraci처n de Windows Phone y Windows 10 Mobile con Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -   [Configurar la administraci처n de dispositivos Windows](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
@@ -306,6 +306,6 @@ Si esta informaci처n para solucionar problemas no le ha ayudado, p처ngase en con
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Sep16_HO4-->
 
 

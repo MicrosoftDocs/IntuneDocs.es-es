@@ -4,7 +4,7 @@ description: "Cree directivas que controlen la configuración y las característ
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/30/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cac39b60226939334032d954eb49d1417493b28d
-ms.openlocfilehash: 00e3a1b65c8475384bb05e64a4ef9f5d9de348ff
+ms.sourcegitcommit: cd5930995a6da130fedcb6d89851460e6f0614eb
+ms.openlocfilehash: 24540a74ce98adbf3f908cbea401328f027867ca
 
 
 ---
@@ -39,7 +39,7 @@ Use la **directiva de configuración general de iOS** de Microsoft Intune para c
 Si el valor que busca no aparece en este tema, puede crearlo mediante una directiva personalizada de iOS que le permita importar la configuración creada con la [herramienta Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12). Para obtener más información, consulte "Configuración de directivas personalizadas" más adelante en este tema.
 
 ### Configuración de seguridad
-Todas las configuraciones se aplican a iOS 7.1 y posterior.
+Todas las configuraciones se aplican a iOS 8.0 y posterior.
 
 |Nombre de la configuración|Detalles|
 |----------------|-------|
@@ -58,7 +58,7 @@ Todas las configuraciones se aplican a iOS 7.1 y posterior.
 <sup>1</sup> En los dispositivos iOS, cuando configura las opciones **Minutos de inactividad antes de que se apague la pantalla** y **Minutos de inactividad antes de que sea necesaria la contraseña**, estas se aplican en secuencia. Por ejemplo, si establece el valor para ambas opciones en **5** minutos, la pantalla se apagará automáticamente transcurridos 5 minutos y el dispositivo se bloqueará pasados 5 minutos más. Sin embargo, si el usuario apaga la pantalla manualmente, la segunda opción se aplica inmediatamente. En el mismo ejemplo, una vez que el usuario apague la pantalla, el dispositivo se bloqueará 5 minutos más tarde.
 
 ### Configuración del sistema
-Todas las configuraciones se aplican a iOS 7.1 y posterior.
+Todas las configuraciones se aplican a iOS 8.0 y posterior.
 
 |Nombre de la configuración|Detalles|
 |----------------|-------|
@@ -71,7 +71,7 @@ Todas las configuraciones se aplican a iOS 7.1 y posterior.
 |**Permitir libreta con dispositivo bloqueado**|Permite al usuario tener acceso a la aplicación Libreta mientras el dispositivo está bloqueado.|
 
 ### Configuración de nube para documentos y datos
-Todas las configuraciones se aplican a iOS 7.1 y posterior.
+Todas las configuraciones se aplican a iOS 8.0 y posterior.
 
 |Nombre de la configuración|Detalles|
 |----------------|-------|
@@ -85,7 +85,7 @@ Todas las configuraciones se aplican a iOS 7.1 y posterior.
 |**Permitir la biblioteca de fotografías de iCloud**|Permitir al usuario almacenar fotografías en iCloud. Si se deshabilita, se quitarán todas las fotos que ya estén almacenadas en iCloud.|
 
 ### Configuración de la aplicación para el explorador
-Todas las configuraciones se aplican a iOS 7.1 y posterior.
+Todas las configuraciones se aplican a iOS 8.0 y posterior.
 
 |Nombre de la configuración|Detalles|
 |----------------|-------|
@@ -97,7 +97,7 @@ Todas las configuraciones se aplican a iOS 7.1 y posterior.
 |**Permitir advertencias de fraude**|Permitir mostrar advertencias de fraude en el explorador.|
 
 ### Configuración de la aplicación para aplicaciones
-Todas las configuraciones se aplican a iOS 7.1 y posterior.
+Todas las configuraciones se aplican a iOS 8.0 y posterior.
 
 |Nombre de la configuración|Detalles|
 |----------------|-------|
@@ -111,7 +111,7 @@ Todas las configuraciones se aplican a iOS 7.1 y posterior.
 
 
 ### Configuración de la aplicación para juegos
-Todas las configuraciones se aplican a iOS 7.1 y posterior.
+Todas las configuraciones se aplican a iOS 8.0 y posterior.
 
 |Nombre de la configuración|Detalles|
 |----------------|-------|
@@ -119,7 +119,7 @@ Todas las configuraciones se aplican a iOS 7.1 y posterior.
 |**Permitir juegos multijugador**|Permite al usuario jugar a juegos multijugador en el dispositivo.|
 
 ### Configuración de aplicación para el contenido multimedia
-Todas las configuraciones se aplican a iOS 7.1 y posterior.
+Todas las configuraciones se aplican a iOS 8.0 y posterior.
 
 |Nombre de la configuración|Detalles|
 |----------------|-------|
@@ -129,7 +129,7 @@ Todas las configuraciones se aplican a iOS 7.1 y posterior.
 
 
 ### Configuración de funcionalidades del dispositivo para hardware
-Todas las configuraciones se aplican a iOS 7.1 y posterior.
+Todas las configuraciones se aplican a iOS 8.0 y posterior.
 
 |Nombre de la configuración|Detalles|
 |----------------|-------|
@@ -138,7 +138,7 @@ Todas las configuraciones se aplican a iOS 7.1 y posterior.
 |**Requerir una contraseña de emparejamiento para las solicitudes salientes de AirPlay**|Requerir una contraseña de emparejamiento cuando el usuario usa AirPlay para transmitir contenido a otros dispositivos de Apple.|
 
 ### Configuración de funcionalidades del dispositivo para red de telefonía móvil
-Todas las configuraciones se aplican a iOS 7.1 y posterior.
+Todas las configuraciones se aplican a iOS 8.0 y posterior.
 
 |Nombre de la configuración|Detalles|
 |----------------|-------|
@@ -147,7 +147,7 @@ Todas las configuraciones se aplican a iOS 7.1 y posterior.
 |**Permitir captura de fondo global durante la itinerancia**|Permite al dispositivo capturar datos (por ejemplo, correo electrónico) mientras está en itinerancia en una red de telefonía móvil.|
 
 ### Configuración de funcionalidades del dispositivo para características
-Todas las configuraciones se aplican a iOS 7.1 y posterior.
+Todas las configuraciones se aplican a iOS 8.0 y posterior.
 
 |Nombre de la configuración|Detalles|
 |----------------|-------|
@@ -196,7 +196,7 @@ En la lista de **Aplicaciones conformes y no conformes**, especifique las aplica
 > [!NOTE]
 > Las siguientes notas se aplican a la configuración del modo de quiosco para dispositivos iOS:
 >
-> -   Antes de configurar un dispositivo iOS para pantalla completa, debe usar la [herramienta Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) o el administrador de inscripción de dispositivos para ajustar el dispositivo en modo supervisado. Para obtener más información sobre la herramienta Apple Configurator, consulte la documentación de Apple.
+> -   Antes de configurar un dispositivo iOS para pantalla completa, debe usar la [herramienta Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) o el [Programa de Inscripción de Dispositivos de Apple](ios-device-enrollment-program-in-microsoft-intune) para pasar el dispositivo al modo supervisado. Para obtener más información sobre la herramienta Apple Configurator, consulte la documentación de Apple.
 > -   Si la aplicación de iOS que especifique se instala después de implementar la directiva de configuración, el dispositivo no pasará a pantalla completa hasta que se reinicie.
 
 ### Información de referencia para las aplicaciones conformes y no conformes
@@ -222,14 +222,14 @@ Para especificar una dirección URL de aplicación en la lista de aplicaciones c
 > También puede utilizar el software de iTunes para encontrar la aplicación y, a continuación, utilizar el comando **Copiar vínculo** para obtener la dirección URL de la aplicación.
 
 ### Configuración de la inscripción
-Todas las configuraciones se aplican a iOS 7.1 y posterior.
+Todas las configuraciones se aplican a iOS 8.0 y posterior.
 
 |Nombre de la configuración|Detalles|
 |----------------|--------------------|
 |**Permitir bloqueo de activación cuando el dispositivo está en modo supervisado**|Permitir bloqueo de activación en dispositivos iOS supervisados.|
 
 ### Configuración del modo supervisado
-Puede configurar las siguientes opciones en dispositivos que ejecuten iOS 7.1 y posterior que estén en modo supervisado.
+Puede configurar las siguientes opciones en dispositivos con iOS 8.0 y posterior que estén en modo supervisado.
 
 ### Configuración del modo supervisado para las restricciones de dispositivos
 
@@ -265,9 +265,9 @@ Puede configurar las siguientes opciones en dispositivos que ejecuten iOS 7.1 y 
 
 |Nombre de la configuración|Detalles|
 |----------------|--------------------|
-|**Permitir modificar la configuración de confianza de aplicaciones empresariales**||
-|**Permitir la instalación de aplicaciones solo con Apple Configurator y iTunes**||
-|**Permitir descargas de aplicaciones automáticas**||
+|**Permitir modificar la configuración de confianza de aplicaciones empresariales**|Permite a los usuarios cambiar la configuración de confianza de las aplicaciones empresariales.|
+|**Permitir la instalación de aplicaciones solo con Apple Configurator y iTunes**|Habilita o deshabilita la Tienda de aplicaciones desde la pantalla de inicio del dispositivo. Los usuarios pueden seguir usando iTunes o la herramienta Apple Configurator para instalar y actualizar aplicaciones.|
+|**Permitir descargas de aplicaciones automáticas**|Permite descargar automáticamente aplicaciones adquiridas en otros dispositivos en este. Esta opción no afecta a las actualizaciones de las aplicaciones.|
 |**Permitir cambios en la configuración de la aplicación para buscar a sus amigos**|Permite al usuario cambiar la configuración de la aplicación para buscar a sus amigos.|
 |**Permitir el acceso a la tienda de iBooks**|Permite al usuario examinar y comprar libros desde la tienda de iBooks.|
 |**Permitir el uso de la aplicación de mensajes en el dispositivo**|Permite el uso de la aplicación de mensajes en el dispositivo.|
@@ -382,6 +382,6 @@ Antes de empezar, debe tener instalado Apple Configurator y haber creado un arch
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Sep16_HO2-->
 
 

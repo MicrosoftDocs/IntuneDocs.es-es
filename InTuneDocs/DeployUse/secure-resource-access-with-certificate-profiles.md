@@ -13,8 +13,8 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c4ff2d245586d4803aab62ffb51ac21bdb8e3669
-ms.openlocfilehash: 361e4d81b3d5dd807312a1c88cd9b5abaa5dc567
+ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
+ms.openlocfilehash: b5b0270468cbb1e5bbd2a3b4970329a467927cee
 
 
 ---
@@ -25,7 +25,7 @@ Si proporciona a los usuarios acceso a los recursos corporativos a través de VP
 1. Asegúrese de disponer de la infraestructura de certificados correcta, como se explica en [Configurar la infraestructura de certificados para SCEP](configure-certificate-infrastructure-for-scep.md) y en [Configurar la infraestructura de certificados](configure-certificate-infrastructure-for-pfx.md).
 
 2. Instale un certificado raíz o certificado de entidad de certificación (CA) intermedia en cada dispositivo para que el dispositivo reconozca la legitimidad de la entidad de certificación. Para ello, cree e implemente un **perfil de certificado de confianza**. Al implementar este perfil, los dispositivos que se administran con Intune solicitarán y recibirán el certificado raíz. Debe crear un perfil independiente para cada plataforma. El **perfil de certificado de confianza** está disponible para estas plataformas:
- -  iOS 7.1 y versiones posteriores
+ -  iOS 8.0 y versiones posteriores
  -  Mac OS X 10.9 y versiones posteriores
  -  Android 4.0 y versiones posteriores
  -  Windows 8.1 y posterior
@@ -33,7 +33,7 @@ Si proporciona a los usuarios acceso a los recursos corporativos a través de VP
 
 3. Cree perfiles de certificados de manera que los dispositivos soliciten un certificado que se use para la autenticación del acceso al correo electrónico, Wi-Fi y VPN, tal como se describe en [Configure Intune certificate profiles](configure-intune-certificate-profiles.md) (Configurar perfiles de certificado de Intune). Puede crear e implementar un **perfil de certificado PKCS #12 (.PFX)** *o* un **perfil de certificado SCEP** para dispositivos en estas plataformas:
 
-  -  iOS 7.1 y versiones posteriores
+  -  iOS 8.0 y versiones posteriores
   -  Android 4.0 y versiones posteriores
   -  Windows 10 para escritorios y Windows 10 Mobile y versiones posteriores
 
@@ -56,6 +56,6 @@ Debe crear un perfil independiente para cada plataforma. Al crear el perfil, deb
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

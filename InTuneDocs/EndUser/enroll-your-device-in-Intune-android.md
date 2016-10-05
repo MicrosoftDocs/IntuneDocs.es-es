@@ -4,7 +4,7 @@ description: "Describe cómo inscribir un dispositivo Android en Intune."
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 07/26/2016
+ms.date: 09/09/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 46479cfe3d2648eefbaefd0a831af2412b509fce
-ms.openlocfilehash: e920f133aeaf0b0a938e07b4923869318a902d57
+ms.sourcegitcommit: 47f9654af126d0e83890f797c321100f40ae497b
+ms.openlocfilehash: 3d06e55607172d52538c7f4ec7aed843b64e3f53
 
 
 ---
@@ -71,7 +71,7 @@ Si recibe un error al intentar inscribir el dispositivo en Intune, puede [enviar
 
     ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
 
-    Si ve este mensaje, pulse en **PERMITIR**. Pulsar en PERMITIR no entraña riesgos, puesto que **Microsoft nunca realiza ni controla sus llamadas de teléfono**. Google es responsable del texto del mensaje, que Microsoft no puede modificar. Al permitir el acceso, lo único que está haciendo es dejar que el dispositivo escriba registros de datos en su tarjeta SD, lo que, a cambio, permite mover esos registros usando un cable USB.
+    Si ve este mensaje, pulse en **PERMITIR**. Pulsar en PERMITIR no entraña riesgos, puesto que **Microsoft nunca realiza ni controla sus llamadas de teléfono**. Google es responsable del texto del mensaje, que Microsoft no puede modificar. Al permitir el acceso, lo que está haciendo es permitir que el dispositivo envíe su número IMEI a Intune. El IMEI es un número similar a un número de serie que identifica de forma exclusiva a un dispositivo móvil.
 
     Si se deniega el acceso, el mensaje aparecerá de nuevo la próxima vez que inicie sesión en el Portal de empresa, pero puede desactivar los mensajes futuros si pulsa en la casilla **No volver a preguntar**.  Si más adelante decide permitir el acceso, vaya a **Configuración** &gt; **Aplicaciones** &gt; **Portal de empresa** &gt; **Permisos** &gt; **Teléfono**y active el permiso.
 
@@ -81,7 +81,7 @@ Si recibe un error al intentar inscribir el dispositivo en Intune, puede [enviar
 
     Si ve este mensaje, pulse en **PERMITIR**. Pulsar en PERMITIR no entraña riesgos, puesto que **Microsoft nunca tiene acceso a sus contactos**. Google es responsable del texto del mensaje, que Microsoft no puede modificar. Cuando permite el acceso, solo permite que la aplicación del Portal de empresa cree, use y administre su cuenta profesional.
 
-    Si se deniega el acceso, el mensaje aparecerá de nuevo la próxima vez que pulse **Enviar datos**, pero puede desactivar los mensajes futuros si pulsa en la casilla **No volver a preguntar**. Si más adelante decide permitir el acceso, vaya a **Configuración** &gt; **Aplicaciones** &gt; **Portal de empresa** &gt; **Permisos** &gt; **Almacenamiento**y active el permiso.
+    Si se deniega el acceso, el mensaje aparecerá de nuevo la próxima vez que inicie sesión en el Portal de empresa, pero puede desactivar los mensajes futuros si pulsa en la casilla **No volver a preguntar**.  Si más adelante decide permitir el acceso, vaya a **Configuración** &gt; **Aplicaciones** &gt; **Portal de empresa** &gt; **Permisos** &gt; **Teléfono**y active el permiso.
 
 11.  En la pantalla **Activar administrador del dispositivo**, pulse **Activar**.
 
@@ -109,14 +109,13 @@ Si recibe un error al intentar inscribir el dispositivo en Intune, puede [enviar
 
 Antes de intentar instalar aplicaciones de empresa, vaya a **Configuración** &gt; **Seguridad** y active **Orígenes desconocidos**. Si no activa esta opción antes de intentar instalar aplicaciones, verá el mensaje "Instalación bloqueada." Por motivos de seguridad, el dispositivo está configurado para bloquear las instalaciones de aplicaciones procedentes de orígenes desconocidos". Puede pulsar **Configuración** en el cuadro de diálogo del error para ir a la opción **Orígenes desconocidos**.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI (consulte el [sitio web del Portal de empresa](http://portal.manage.microsoft.com) para obtener información de contacto) o escriba al equipo de Microsoft Android en wintunedroidfbk@microsoft.com.
-
-
-### Consulte también
-[Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
+¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI (consulte el [sitio web del Portal de la empresa](http://portal.manage.microsoft.com) para obtener información de contacto) o escriba al equipo de Microsoft Android en wintunedroidfbk@microsoft.com.
 
 
 
-<!--HONumber=Aug16_HO2-->
+
+
+
+<!--HONumber=Sep16_HO2-->
 
 

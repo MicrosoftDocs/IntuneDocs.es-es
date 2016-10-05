@@ -13,8 +13,8 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f1946c02c6267a22844106e8f72555ec5e9cabb
-ms.openlocfilehash: 212dcd31697180dae61569dda13b56704a079bf4
+ms.sourcegitcommit: 52b9e786fe22b04081441db88a3629062fc85668
+ms.openlocfilehash: a215d547507dcc460e83009cc6a04baf3fd8f4a4
 
 
 ---
@@ -32,15 +32,15 @@ Lea esta información para comprender cómo y dónde obtienen los usuarios final
 
 **Aplicaciones no administradas**: son aplicaciones que se pueden administrar mediante directivas y que no están encapsuladas con Intune o no incorporan el SDK de MAM de Intune. Las directivas de aplicación no pueden aplicarse a estas aplicaciones.
 
-Las restricciones de Apple prohíben que se muestren la línea de negocio y las aplicaciones de la tienda de aplicaciones administrada en la aplicación de portal de empresa de la tienda, lo que significa que los usuarios tienen que visitar vistas diferentes para encontrar todas sus aplicaciones. Las aplicaciones para cada icono que se muestran en la página Aplicaciones del portal de empresa están disponibles de la siguiente manera:
+Las restricciones de Apple prohíben que las aplicaciones de la tienda de aplicaciones de línea de negocio y administradas aparezcan en la aplicación Portal de empresa. Para solucionar este problema, los iconos de aplicaciones de la aplicación Portal de empresa para iOS apuntan a los usuarios a distintas vistas de una única ubicación (el sitio web de Portal de empresa) para todas sus aplicaciones, del siguiente modo:
 
-- El icono **Aplicaciones de empresa** apunta a una lista de todas las aplicaciones en la pestaña **TODOS** del [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+- El icono **Aplicaciones de la empresa** anteriormente apuntaba a una lista de todas las aplicaciones de la pestaña TODAS del [sitio web de Portal de empresa](http://portal.manage.microsoft.com) y seguirá funcionando del mismo modo. El nombre del icono ha cambiado a **Todas las aplicaciones**.
 
-- El icono **Otras aplicaciones** apunta actualmente a una vista, dentro de la aplicación de portal de empresa, que enumera todas las aplicaciones que Apple permite mostrar a la aplicación de portal de empresa. Esto incluye todas las aplicaciones excepto las aplicaciones de la tienda de aplicaciones administradas y de la línea de negocio.
+- El icono **Otras aplicaciones** antes apuntaba a una vista, dentro de la aplicación Portal de empresa, que enumera todas las aplicaciones que Apple permite mostrar a la aplicación Portal de empresa. El nombre del icono ha cambiado a **Aplicaciones destacadas** y, si pulsa en él, se le dirigirá a la pestaña DESTACADAS del sitio web de Portal de empresa.
 
-- El icono **Categorías** apunta actualmente a una vista, dentro del portal de empresa, que enumera las categorías de aplicaciones.
+-  El icono **Categorías** anteriormente apuntaba a una vista, dentro de la aplicación Portal de empresa, que enumera las categorías de aplicaciones. El nombre del icono no ha cambiado, pero ahora apunta a la pestaña CATEGORÍAS del sitio web de Portal de empresa.
+Puede encontrar las capturas de pantalla actualizadas [aquí](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186).
 
-    ![ios-how-to-sync-device-with-intune](./media/ios-sync-comp-portal-apps.png)
 
 
 ###Consulte también
@@ -49,6 +49,6 @@ Las restricciones de Apple prohíben que se muestren la línea de negocio y las 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO3-->
 
 

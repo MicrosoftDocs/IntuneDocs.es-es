@@ -2,7 +2,7 @@
 title: Novedades de archivo | Microsoft Intune
 description: 
 keywords: 
-author: Lindavr
+author: barlanmsft
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
@@ -13,8 +13,8 @@ ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 300df17fd5844589a1e81552d2d590aee5615897
-ms.openlocfilehash: 458ee268d0c6a8fa6cbe6cc23ad07f0e45eff3e5
+ms.sourcegitcommit: ecf43b38e9593375981770583220d4ce2dfd709f
+ms.openlocfilehash: 8b0f393da727b433a926e780d6de42cf7b4c6034
 
 
 ---
@@ -267,6 +267,6 @@ Microsoft automatically collects anonymous data about the performance and use of
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 
