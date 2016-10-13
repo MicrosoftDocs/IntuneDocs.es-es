@@ -4,7 +4,7 @@ description: "Aprenda a actualizar automáticamente dispositivos de Windows 10 a
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 08/22/2016
+ms.date: 09/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 8589866a-3f13-489b-a5cd-cee017d16d54
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4bed62ebe07d5470414183626b34e68dd91f2d01
-ms.openlocfilehash: 17933e41a646f305f9fb765e790c0de36a5036ba
+ms.sourcegitcommit: f2aa531744dbd0774958e0450819e45e60a91086
+ms.openlocfilehash: 93a632f0f0b8d31149fa1d5fbe15b31d715d20a8
 
 
 ---
@@ -23,6 +23,13 @@ ms.openlocfilehash: 17933e41a646f305f9fb765e790c0de36a5036ba
 La **directiva de actualización de edición** de Microsoft Intune permite actualizar automáticamente los dispositivos que ejecutan una de las siguientes versiones de Windows 10 a una edición más reciente:
 * Windows 10 Escritorio
 * Windows 10 Holographic
+* Windows 10 Mobile
+
+Las siguientes rutas de acceso de actualización son compatibles:
+- De Windows 10 Pro a Windows 10 Enterprise
+- De Windows 10 Home a Windows 10 Education
+- De Windows 10 Mobile a Windows 10 Mobile Enterprise
+- De Windows 10 Holographic Pro a Windows 10 Holographic Enterprise
 
 ## Antes de empezar
 Antes de empezar a actualizar dispositivos a la versión más reciente, necesitará uno de los elementos siguientes:
@@ -45,6 +52,6 @@ Antes de empezar a actualizar dispositivos a la versión más reciente, necesita
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO5-->
 
 
