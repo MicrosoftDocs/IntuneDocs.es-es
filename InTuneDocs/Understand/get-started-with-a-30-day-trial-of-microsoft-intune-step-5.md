@@ -13,8 +13,8 @@ ms.assetid: 47806f69-303d-41d9-9b0e-9b9445ea24ac
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 51fba2b01d8978bc062c50c4388714609be0fdf0
-ms.openlocfilehash: 66dc46eb9dc1010b8c176ccfdea68b9a6e4b0618
+ms.sourcegitcommit: 581e880fa4308ec627f5b2c1242fb5b30b713743
+ms.openlocfilehash: 7bd5f5d8f4931133a8ef1e697b2fec4cccd07b83
 
 
 ---
@@ -49,16 +49,10 @@ Instale la aplicación **Portal de empresa de Intune** de Microsoft Corporation,
 ### Windows Phone 8,1
 Los usuarios deben instalar la aplicación **Portal de empresa** de Microsoft Corporation disponible en la Tienda de Windows Phone e iniciar sesión con las credenciales de usuario de Intune agregadas anteriormente.  Consulte **Dispositivos inscritos** para agregar el dispositivo.
 
- ### Windows Phone 8.0
- Los usuarios deben hacer clic en **configuración del sistema** &gt; **aplicaciones de empresa** e iniciar sesión con las credenciales de usuario de Intune agregadas anteriormente. La aplicación Portal de empresa se implementa en el teléfono.
-
-Si se le pide una **dirección de servidor**, escriba “manage.microsoft.com”.
-
-
 ## Instalar la aplicación implementada anteriormente
 Abra el portal de empresa en el dispositivo móvil, elija **Aplicaciones** y, luego, instale **Microsoft Skype**.
 
-Para obtener más información sobre la administración de dispositivos móviles mediante Intune, vea [Preparar la inscripción de dispositivos en Microsoft Intune](/Intune/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune).
+Para obtener más información sobre la administración de dispositivos móviles mediante Intune, consulte [Preparar la inscripción de dispositivos en Microsoft Intune](/Intune/deploy-use/prerequisites-for-enrollment).
 
 ### Pasos siguientes
 Enhorabuena. Acaba de completar el paso 5 del tutorial de *evaluación de Microsoft Intune*.
@@ -69,6 +63,6 @@ Enhorabuena. Acaba de completar el paso 5 del tutorial de *evaluación de Micros
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 
