@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 05/31/2016
+ms.date: 09/16/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: df5cf2d5a78ccf58ba5920ad1856675538794874
+ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
+ms.openlocfilehash: 1d810d903ecf719e40cfb31b62e5e7882f549270
 
 
 ---
@@ -39,13 +39,13 @@ Al inscribir un dispositivo Android, da permiso al administrador de TI para obte
 
 -   Quitar todos los datos relacionados con la empresa. Los datos personales y la configuración no se quitan.
 
--   Forzarle a establecer una contraseña o un PIN para el dispositivo, lo que podría bloquear el dispositivo o restablecer la configuración predeterminada del dispositivo (operación que podría incluir la eliminación de datos) tras varios intentos incorrectos de introducir la contraseña.
+-   Establecer requisitos en el dispositivo, como la necesidad de disponer de una contraseña de dispositivo o de un PIN para proteger los datos de la empresa. Su administrador de TI también puede limitar cuántas veces puede introducir una contraseña incorrecta y podría bloquearle el acceso al dispositivo si se equivoca demasiadas veces.
 
 -   Debe aceptar los términos y condiciones.
 
--   Habilitar o deshabilitar la cámara en el dispositivo.
+-   Deshabilitar la cámara (solo en dispositivos Samsung Knox, no en dispositivos Nexus) para evitar que realice fotos de material de trabajo confidencial que no debe compartirse.
 
--   Forzar el cifrado de todos los datos, incluidos los datos empresa y los personales, en el dispositivo. Esto ayuda a proteger los datos en caso de pérdida o robo del dispositivo.
+-   Exigir el cifrado de todos los datos del dispositivo para ayudar a proteger los datos si dicho dispositivo se pierde o se roba.
 
 -   Una vez agregado el dispositivo al Portal de empresa, este hará lo siguiente cada 8 horas aproximadamente:
 
@@ -55,14 +55,11 @@ Al inscribir un dispositivo Android, da permiso al administrador de TI para obte
 
     -   Enviar actualizaciones de inventario de aplicaciones de empresa (estas actualizaciones no contienen información personal).
 
-¿Necesita ayuda? Póngase en contacto con el administrador de TI (consulte el [sitio web del Portal de la empresa](http://portal.manage.microsoft.com) para obtener información de contacto) o escriba al equipo de Microsoft Android en wintunedroidfbk@microsoft.com.
-
-
-### Consulte también
-[Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
+¿Necesita ayuda? Póngase en contacto con el administrador de TI (consulte el [sitio web del Portal de empresa](http://portal.manage.microsoft.com) para obtener información de contacto) o escriba al equipo de Microsoft Android en wintunedroidfbk@microsoft.com.
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Sep16_HO4-->
 
 
