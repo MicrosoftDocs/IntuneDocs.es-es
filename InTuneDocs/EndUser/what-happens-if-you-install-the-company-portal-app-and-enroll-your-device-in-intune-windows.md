@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 7/8/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 840d985fd2c4771831f722cdff214026a383f606
+ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
+ms.openlocfilehash: ac4fdc73122fb5dc82771f174d9bd783c186bf9d
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: 840d985fd2c4771831f722cdff214026a383f606
 
 # ¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo Windows en Intune?
 
-Al instalar la aplicación de Portal de empresa y después usarla para inscribir un dispositivo Windows o Windows Phone, lo que hace es permitir que el administrador de TI administre el dispositivo para mantener los datos profesionales o académicos seguros, tal como se describe a continuación para los dispositivos anteriores a Windows 10. Para más información sobre los dispositivos Windows 10, vea [esta página](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
+Al instalar la aplicación de Portal de empresa y después usarla para inscribir un dispositivo Windows o Windows Phone, lo que hace es permitir que el administrador de TI administre el dispositivo para mantener los datos profesionales o académicos seguros, tal como se describe a continuación para los dispositivos anteriores a Windows 10. Consulte [esta página](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md) para dispositivos Windows 10.
 
 ## ¿Qué ocurre con todos los dispositivos Windows después de la inscripción?
 Cuando inscribe un dispositivo Windows o Windows Phone en Intune, puede:
@@ -40,19 +40,17 @@ Al inscribir el dispositivo, da permiso al administrador de TI para hacer cosas 
 
 -   Restablecer la configuración predeterminada de fábrica del dispositivo. Esto es útil en caso de pérdida o robo del dispositivo.
 
--   Quitar todos los datos relacionados con la empresa y las aplicaciones empresariales que se instalaron. Los datos personales y la configuración no se quitan.
+-   Quitar solo los archivos relacionados con la empresa y las aplicaciones empresariales. **Los datos personales y la configuración no se quitan.**
 
--   El administrador de TI puede realizar un inventario de todo el software instalado en el equipo, incluido el software que usted haya instalado.
+-   El administrador de TI puede ver el software instalado en el equipo, incluido el software que usted haya instalado.
 
--   Exigirle el establecimiento de una contraseña o un PIN para el dispositivo, lo que podría bloquear el dispositivo o restablecer la configuración predeterminada del mismo (operación que podría incluir la eliminación de datos) tras varios intentos incorrectos de introducir la contraseña.
+-   Establecer requisitos en el dispositivo, como la necesidad de disponer de una contraseña de dispositivo o de un PIN para proteger los datos de la empresa. Su administrador de TI también puede limitar cuántas veces puede introducir una contraseña incorrecta y podría bloquearle el acceso al dispositivo si se equivoca demasiadas veces.
 
--   Exigir el cifrado de todos los datos del dispositivo, lo que ayuda a proteger los datos si dicho dispositivo se pierde o se roba.
+-   Exigir el cifrado de los datos en el dispositivo para ayudar a proteger los datos de la empresa, en caso de pérdida o robo de su dispositivo. 
 
 -   Debe aceptar los términos y condiciones.
 
--   El administrador de TI puede aplicar directivas en el equipo. Por ejemplo, se le podría exigir establecer una contraseña o un PIN en el equipo, lo que podría impedir el acceso al equipo o eliminar todos los datos del disco duro del equipo tras varios intentos incorrectos de introducir la contraseña.
-
--   Deshabilitar la tarjeta SD.
+-   Impedirle realizar fotos de datos relacionados con la empresa.
 
 ## ¿Qué ocurre con todos los equipos de Windows después de la inscripción?
 
@@ -60,16 +58,9 @@ Al inscribir el dispositivo, da permiso al administrador de TI para hacer cosas 
 
 -  Intune Endpoint Protection puede instalarse en su equipo. Se trata de software que permite detectar virus y malware.
 
--  El administrador de TI puede realizar un inventario de todo el software instalado en el equipo, incluido el software que usted haya instalado.
-
--  Deberá aceptar los términos y condiciones.
-
--  El administrador de TI puede recopilar o eliminar datos de la unidad de disco duro del equipo. El administrador de TI también puede eliminar todo el disco duro.
+-  El administrador de TI puede recopilar o eliminar datos de la unidad de disco duro del equipo.
 
 -  El administrador de TI puede instalar aplicaciones y actualizaciones en el equipo.
-
--  El administrador de TI puede aplicar directivas en el equipo. Por ejemplo, se le podría exigir establecer una contraseña o un PIN en el equipo, lo que podría impedir el acceso al equipo o eliminar todos los datos del disco duro del equipo tras varios intentos incorrectos de introducir la contraseña.
-
 
 ## ¿Qué ocurre cada ocho horas después de la inscripción de dispositivo?
 Cada ocho horas aproximadamente, los dispositivos inscritos harán lo siguiente:
@@ -80,15 +71,11 @@ Cada ocho horas aproximadamente, los dispositivos inscritos harán lo siguiente:
 
 -   Enviar actualizaciones de inventario de aplicaciones de empresa.
 
-Para obtener los pasos para la inscripción, consulte [Inscriba el dispositivo Windows en Intune](enroll-your-device-in-intune-windows.md). Para más información sobre lo que el administrador de TI puede ver en el dispositivo, vea [¿Qué puede ver mi administrador de TI cuando inscriba el dispositivo en Intune?](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
-
 Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
-### Consulte también
-[Usar un dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 

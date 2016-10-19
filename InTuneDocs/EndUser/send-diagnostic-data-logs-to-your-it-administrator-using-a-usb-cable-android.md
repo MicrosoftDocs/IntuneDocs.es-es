@@ -31,7 +31,7 @@ Si desea enviar los registros de datos a su administrador de TI para obtener ayu
 
 2.  Use un cable USB para conectar el dispositivo Android a un equipo.
 
-3.  En el equipo, busque un directorio que contenga el nombre del teléfono. En dicho directorio busque &lt;Dispositivo Android&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files.\.
+3.  En el equipo, busque un directorio que contenga el nombre del teléfono. En dicho directorio busque &lt;Dispositivo Android&gt;\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\.
 
 4.  Adjunte todos los archivos en un correo electrónico y envíeselos a su administrador de TI.
 

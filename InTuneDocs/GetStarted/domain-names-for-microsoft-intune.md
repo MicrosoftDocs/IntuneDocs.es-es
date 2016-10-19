@@ -4,7 +4,7 @@ description: agregar nombre de dominio para Intune
 keywords: 
 author: andredm7
 manager: swadhwa
-ms.date: 06/20/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: c3c136f0-330d-432a-a91f-16f7dd097e55
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3eb096fea4569be24cf1ea42088705f0d5da38a4
-ms.openlocfilehash: 176da99a198b0a8167ac5d7992a751f2c965f0ac
+ms.sourcegitcommit: 38159f6dbcae2eeb4dca47141e60eed12cd7f6ee
+ms.openlocfilehash: abcf37e7ec3150b5a2fe4cda910631f83d4c510a
 
 
 ---
@@ -53,7 +53,7 @@ En un escenario en la nube híbrido, después de agregar el nombre de dominio pe
 3. Ejecute la [sincronización de Azure AD Connect](https://azure.microsoft.com/en-us/documentation/articles/active-directory-aadconnect/) para integrar sus usuarios locales con Azure AD.
 4. Una vez que la información de cuenta de usuario se haya sincronizado correctamente, puede asignar las licencias de Microsoft Intune mediante el [Portal de administración de Office 365](https://portal.office.com/Admin/Default.aspx).
 
-### Vea también
+### Consulte también
 
 [Sobre su dominio inicial onmicrosoft.com en Office 365](https://support.office.com/en-us/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A?ui=en-US&rs=en-US&ad=US)
 
@@ -61,6 +61,6 @@ En un escenario en la nube híbrido, después de agregar el nombre de dominio pe
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

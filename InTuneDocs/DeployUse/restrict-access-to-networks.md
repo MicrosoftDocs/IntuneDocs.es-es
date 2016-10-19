@@ -4,7 +4,7 @@ description: Use Cisco ISE con Intune de forma que los dispositivos se inscriban
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ecaf92b327538e3da4df268e4c67c73af262b731
-ms.openlocfilehash: fa73c5e2b4e6737377acd206807399b31df37364
+ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
+ms.openlocfilehash: 44dc8ce90537580ef30ba4b8c9f3ee2dd5e20c24
 
 
 ---
@@ -102,13 +102,7 @@ Asegúrese de que todo el texto está en una única línea.
 1.     Obtenga el valor del certificado codificado en base64 y la huella digital de un archivo de certificado público .cer X509. En este ejemplo se usa PowerShell:
    
       
-    `$cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2`
-     `$cer.Import(“mycer.cer”)`
-      `$bin = $cer.GetRawCertData()`
-      `$base64Value = [System.Convert]::ToBase64String($bin)`
-      `$bin = $cer.GetCertHash()`
-      `$base64Thumbprint = [System.Convert]::ToBase64String($bin)`
-      `$keyid = [System.Guid]::NewGuid().ToString()`
+      $cer = New-Object System.Security.Cryptography.X509Certificates.X509Certificate2    $cer.Import(“mycer.cer”)    $bin = $cer.GetRawCertData()    $base64Value = [System.Convert]::ToBase64String($bin)    $bin = $cer.GetCertHash()    $base64Thumbprint = [System.Convert]::ToBase64String($bin)    $keyid = [System.Guid]::NewGuid().ToString()
  
     Almacene los valores de $base64Thumbprint, $base64Value y $keyid que se van a usar en el paso siguiente.
 2.       Cargue el certificado mediante el archivo de manifiesto. Iniciar sesión en el [Portal de administración de Azure](https://manage.windowsazure.com)
@@ -117,27 +111,20 @@ Asegúrese de que todo el texto está en una única línea.
 5.      Reemplace la propiedad vacía “KeyCredentials”: [] por el siguiente JSON.  El tipo complejo KeyCredentials se documenta en [Entidad y referencia de tipo complejo](https://msdn.microsoft.com/library/azure/ad/graph/api/entity-and-complex-type-reference#KeyCredentialType).
 
  
-    `“keyCredentials“: [`
-    `{`
-     `“customKeyIdentifier“: “$base64Thumbprint_from_above”,`
-     `“keyId“: “$keyid_from_above“,`
-     `“type”: “AsymmetricX509Cert”,`
-     `“usage”: “Verify”,`
-     `“value”:  “$base64Value_from_above”`
-     `}2. `
-     `], `
+    “keyCredentials“: [ { “customKeyIdentifier“: “$base64Thumbprint_from_above”, “keyId“: “$keyid_from_above“, “type”: “AsymmetricX509Cert”, “usage”: “Verify”, “value”:  “$base64Value_from_above” }2. 
+     ], 
  
 Por ejemplo:
  
-    `“keyCredentials“: [`
-    `{`
-    `“customKeyIdentifier“: “ieF43L8nkyw/PEHjWvj+PkWebXk=”,`
-    `“keyId“: “2d6d849e-3e9e-46cd-b5ed-0f9e30d078cc”,`
-    `“type”: “AsymmetricX509Cert”,`
-    `“usage”: “Verify”,`
-    `“value”: “MIICWjCCAgSgAwIBA***omitted for brevity***qoD4dmgJqZmXDfFyQ”`
-    `}`
-    `],`
+    “keyCredentials“: [
+    {
+    “customKeyIdentifier“: “ieF43L8nkyw/PEHjWvj+PkWebXk=”,
+    “keyId“: “2d6d849e-3e9e-46cd-b5ed-0f9e30d078cc”,
+    “type”: “AsymmetricX509Cert”,
+    “usage”: “Verify”,
+    “value”: “MIICWjCCAgSgAwIBA***omitted for brevity***qoD4dmgJqZmXDfFyQ”
+    }
+    ],
  
 6.      Guarde el cambio en el archivo de manifiesto de la aplicación.
 7.      Cargue el archivo de manifiesto de la aplicación modificado a través del portal de administración de Azure.
@@ -200,6 +187,6 @@ Existe también un [conjunto descargable de instrucciones de inscripción](https
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO1-->
 
 

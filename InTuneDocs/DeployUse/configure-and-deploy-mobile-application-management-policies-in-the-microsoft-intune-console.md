@@ -4,7 +4,7 @@ description: "Las directivas de administración de aplicaciones móviles de Micr
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 09/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b1d92786bd9f4d4893dd19c3116dcd5a047744ea
-ms.openlocfilehash: af9d8dd7830efe28aa5c994a2b5ec2bdcd4cc3cb
+ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
+ms.openlocfilehash: a4ab7287b2328fccbea5203bbfe5d87cbfc912b8
 
 
 ---
@@ -26,7 +26,7 @@ Compatibilidad con las directivas de administración de aplicaciones móviles:
 
 -   Dispositivos que ejecutan Android 4 y versiones posteriores.
 
--   Dispositivos que ejecutan iOS 7 y versiones posteriores.
+-   Dispositivos que ejecutan iOS 8.0 y versiones posteriores.
 
 > [!TIP]
 > Las directivas de administración de aplicaciones móviles admiten dispositivos que están inscritos con Intune.
@@ -112,7 +112,7 @@ Una vez que haya comprobado que la aplicación se carga correctamente, continúe
 
     -   **Directiva de administración de aplicaciones móviles (Android 4 y posterior)**
 
-    -   **Directiva de administración de aplicaciones móviles (iOS 7 y posterior)**
+    -   **Directiva de administración de aplicaciones móviles (iOS 8.0 y versiones posteriores)**
 
     Puede usar la configuración recomendada o personalizar la configuración. Para obtener más detalles, vea [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
@@ -134,7 +134,7 @@ Una vez que haya comprobado que la aplicación se carga correctamente, continúe
     |**Requerir cumplimiento de dispositivos con la directiva corporativa en acceso**|Esta configuración solo permite que se use la aplicación cuando el dispositivo no está liberado ni modificado.|
     |**Volver a comprobar los requisitos de acceso después de (minutos)**|En el campo **Tiempo de espera** , especifique el período de tiempo que debe transcurrir antes de que se vuelvan a comprobar los requisitos de acceso de la aplicación una vez abierta la aplicación.|
     |**Período de gracia sin conexión**|Si el dispositivo está desconectado, especifique el período de tiempo que debe transcurrir antes de que se vuelvan a comprobar los requisitos de acceso de la aplicación.|
-    |**Cifrar datos de aplicación**|Esta configuración especifica que se cifren todos los datos asociados a esta aplicación. Esto incluye datos almacenados externamente, como tarjetas SD.<br /><br />**Cifrado para iOS**<br /><br />En el caso de aplicaciones que están asociadas a una directiva de administración de aplicaciones móviles de Intune, los datos se cifran en reposo con el cifrado de nivel de dispositivo que proporciona el sistema operativo. Esta opción se habilita a través de la directiva de PIN del dispositivo que establece el administrador de TI. Cuando se requiere un PIN, los datos se cifrarán según la configuración de la directiva de administración de aplicaciones móviles. Como se indica en la documentación de Apple, [los módulos que usa iOS 7 están certificados mediante FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Cifrado para Android**<br /><br />En el caso de aplicaciones que están asociadas a una directiva de administración de aplicaciones móviles de Intune, Microsoft proporciona el cifrado. Los datos se cifran de forma sincrónica durante las operaciones de E/S de archivo.  Siempre se cifrará el contenido del almacenamiento del dispositivo. El método de cifrado no está certificado mediante FIPS 140-2.|
+    |**Cifrar datos de aplicación**|Esta configuración especifica que se cifren todos los datos asociados a esta aplicación. Esto incluye datos almacenados externamente, como tarjetas SD.<br /><br />**Cifrado para iOS**<br /><br />En el caso de aplicaciones que están asociadas a una directiva de administración de aplicaciones móviles de Intune, los datos se cifran en reposo con el cifrado de nivel de dispositivo que proporciona el sistema operativo. Esta opción se habilita a través de la directiva de PIN del dispositivo que establece el administrador de TI. Cuando se requiere un PIN, los datos se cifrarán según la configuración de la directiva de administración de aplicaciones móviles. Como se indica en la documentación de Apple, [los módulos que usa iOS están certificados mediante FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Cifrado para Android**<br /><br />En el caso de aplicaciones que están asociadas a una directiva de administración de aplicaciones móviles de Intune, Microsoft proporciona el cifrado. Los datos se cifran de forma sincrónica durante las operaciones de E/S de archivo.  Siempre se cifrará el contenido del almacenamiento del dispositivo. El método de cifrado no está certificado mediante FIPS 140-2.|
     |**Bloquear captura de pantalla** (solo en dispositivos Android)|Esta configuración especifica que las funciones de captura de pantalla del dispositivo se bloquean cuando alguien usa esta aplicación.|
     
 4. Cuando termine, seleccione **Guardar directiva**.
@@ -147,8 +147,6 @@ Asegúrese de seleccionar la directiva de administración de aplicaciones móvil
 Para obtener más detalles, vea [Implementar aplicaciones en Microsoft Intune](deploy-apps.md).
 
 > [!IMPORTANT]
-> En el caso de dispositivos que ejecutan sistemas operativos anteriores a iOS 7.1, las directivas asociadas no se quitarán al desinstalar la aplicación.
->
 > Si se anula la inscripción del dispositivo en Intune, las directivas no se quitan de las aplicaciones. Las aplicaciones que tenían directivas aplicadas conservarán la configuración de las directivas si la aplicación se desinstala y se vuelve a instalar.
 
 ### Qué hacer cuando ya se ha implementado una aplicación en dispositivos
@@ -195,6 +193,6 @@ En casos en los que el dispositivo o el usuario recibe dos directivas en conflic
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Sep16_HO2-->
 
 

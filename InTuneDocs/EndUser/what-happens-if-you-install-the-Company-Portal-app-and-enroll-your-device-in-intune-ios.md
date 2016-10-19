@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 7/7/2016
+ms.date: 09/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 3f9f985e2e40d67bedf8eb37125274ea029e602a
+ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
+ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
 
 
 ---
@@ -75,7 +75,7 @@ Cuando el dispositivo esté inscrito, el Administrador de TI podrá:
 
 -   Debe aceptar los términos y condiciones.
 
--   Habilitar o deshabilitar la cámara en el dispositivo.
+-   Habilitar o deshabilitar la cámara en su dispositivo para evitar que realice fotos de datos confidenciales de la empresa.
 
 -   Habilitar o deshabilitar la exploración web en el dispositivo.
 
@@ -91,15 +91,10 @@ Cuando el dispositivo esté inscrito, el Administrador de TI podrá:
 
 -   Habilitar o deshabilitar en el dispositivo la sincronización automática de archivos en modo de movilidad. Si se permite la sincronización automática de archivos, podrían aplicarse cargos por movilidad.
 
-Para conocer los pasos sobre cómo inscribir el dispositivo, vea [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md) (Inscribir el dispositivo iOS en Intune) o [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md) (Inscribir el dispositivo Mac OS X en Intune).
-
 Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
-### Consulte también
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Sep16_HO4-->
 
 
