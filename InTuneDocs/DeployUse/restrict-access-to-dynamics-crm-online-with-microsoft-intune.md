@@ -13,8 +13,8 @@ ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 875da922b311b06fa8a1eb8ba7207108684825d5
+ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
+ms.openlocfilehash: 233b7cad41fbd35e0fef615737fc41f8a49db35e
 
 
 ---
@@ -25,6 +25,8 @@ Puede controlar el acceso a Microsoft Dynamics CRM Online desde los dispositivos
 * [La directiva de acceso condicional](restrict-access-to-email-and-o365-services-with-microsoft-intune.md), donde se especifican las condiciones que debe cumplir el dispositivo para tener acceso al servicio.
 
 Para obtener más información sobre cómo funciona el acceso condicional, lea el artículo [Restrict access to email, 0365, and other services (Restringir el acceso al correo electrónico, a O365 y a otros servicios)](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+
+[!IMPORTANT] Para implementar el acceso condicional debe tener suscripciones a Intune y Azure Active Directory Premium, y los usuarios deben tener la licencia de ambos productos. La **suscripción a Enterprise Mobility + Security (EMS)** incluye suscripciones a Intune y Azure Active Directory Premium. Para obtener más información, consulte la [página de precios de Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing). Si no tiene la suscripción de EMS, puede obtener una para Azure Active Directory Premium. Consulte la [página de precios de Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/). 
 
 Cuando un usuario determinado intenta usar la aplicación Dynamics CRM en su dispositivo, se produce la siguiente evaluación:
 
@@ -97,6 +99,6 @@ Seleccione cualquier grupo de dispositivos móviles y, a continuación, en la pe
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO1-->
 
 

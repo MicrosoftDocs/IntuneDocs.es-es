@@ -4,7 +4,7 @@ description: "Use Intune para administrar las aplicaciones que compra por volume
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/01/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 164f9656246a46bf39e263fc3c5f16828674e1fd
-ms.openlocfilehash: a5c37c470f937c682d9138a636d1211f641da784
+ms.sourcegitcommit: 611cfb0176a922234c29642c305dd03699922c5f
+ms.openlocfilehash: 5981a2e147c89776d304226250170ec4114e35d8
 
 
 ---
@@ -26,6 +26,7 @@ Microsoft Intune ayuda a administrar las aplicaciones que se compran a través d
 
 > [!Important]
 > Actualmente, Intune asigna licencias de aplicación del Programa de Compras por Volumen (PCV) de iOS para empresas a los usuarios, no a los dispositivos. Por este motivo, los usuarios deben escribir la contraseña de su ID de Apple para instalar la aplicación.
+> El Programa de Compras por Volumen de Apple para el sector educativo no es compatible con esta versión.
 
 ## Administrar aplicaciones compradas por volumen para dispositivos iOS
 Puede comprar varias licencias para aplicaciones de iOS a través del [Programa de Compras por Volumen de Apple para empresas](http://www.apple.com/business/vpp/). Esto implica configurar una cuenta de PCV de Apple en el sitio web de Apple y cargar el token de PCV de Apple en Intune.  De este modo, puede sincronizar la información de compras por volumen con Intune y hacer el seguimiento del uso de aplicaciones compradas por volumen.
@@ -89,6 +90,6 @@ Puede supervisar qué aplicaciones de PCV están implementadas y el número de l
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO1-->
 
 

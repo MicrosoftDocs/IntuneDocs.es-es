@@ -4,7 +4,7 @@ description: "Intune proporciona una variedad de opciones generales integradas q
 keywords: 
 author: robstackmsft
 manager: angrobe
-ms.date: 07/30/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c6b3f193606f13427a68c561d688b75d38221950
-ms.openlocfilehash: 315e492b301387c2030440e7188dfdb35a99ddd9
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: 3c9c75e5e9e19574a5b4525688103dc95e3d6b9b
 
 
 ---
@@ -39,75 +39,75 @@ Use la **directiva de configuración general de Windows Phone (Windows Phone 8.1
 
 ### Configuración de contraseña
 
-|Nombre de la configuración|Detalles|Windows Phone 8|Windows Phone 8,1|
-|----------------|------|-----|------------------------------|
-|**Requerir una contraseña para desbloquear dispositivos móviles**|Especifica si los usuarios deben escribir una contraseña para obtener acceso a los dispositivos.|Sí|Sí|
-|**Tipo de contraseña obligatoria**|Especifica el tipo de contraseña que será necesario, como solo numérica o alfanumérica.|Sí|Sí|
-|**Tipo de contraseña requerida: número mínimo de conjuntos de caracteres**|Especifica cuántos juegos de caracteres diferentes deben incluirse en la contraseña. Hay cuatro juegos de caracteres: letras minúsculas, letras mayúsculas, símbolos y números. En cambio, para dispositivos iOS, especifica el número de símbolos que deben incluirse en la contraseña.|Sí|Sí|
-|**Longitud mínima de contraseña**|Especifica el número mínimo de caracteres que son necesarios en la contraseña.|Sí|Sí|
-|**Permitir contraseñas sencillas**|Especifica que pueden usarse contraseñas sencillas como "0000" y "1234".|Sí|Sí|
-|**Número de errores de inicio de sesión repetidos que se permiten antes de que se borre el dispositivo**|Especifica el número de veces que se puede escribir una contraseña incorrecta antes de que se borre el dispositivo.|Sí|Sí|
-|**Minutos de inactividad antes de que se apague la pantalla.**|Especifica la cantidad de tiempo que un dispositivo debe permanecer inactivo antes de que se bloquee automáticamente la pantalla.|Sí|Sí|
+|Nombre de la configuración|Detalles|
+|----------------|------|
+|**Requerir una contraseña para desbloquear dispositivos móviles**|Especifica si los usuarios deben escribir una contraseña para obtener acceso a los dispositivos.|
+|**Tipo de contraseña obligatoria**|Especifica el tipo de contraseña que será necesario, como solo numérica o alfanumérica.|
+|**Tipo de contraseña requerida: número mínimo de conjuntos de caracteres**|Especifica cuántos juegos de caracteres diferentes deben incluirse en la contraseña. Hay cuatro juegos de caracteres: letras minúsculas, letras mayúsculas, símbolos y números. En cambio, para dispositivos iOS, especifica el número de símbolos que deben incluirse en la contraseña.|
+|**Longitud mínima de la contraseña**|Especifica el número mínimo de caracteres que son necesarios en la contraseña.|
+|**Permitir contraseñas sencillas**|Especifica que pueden usarse contraseñas sencillas como "0000" y "1234".|
+|**Número de errores de inicio de sesión repetidos que se permiten antes de que se borre el dispositivo**|Especifica el número de veces que se puede escribir una contraseña incorrecta antes de que se borre el dispositivo.|
+|**Minutos de inactividad antes de que se apague la pantalla.**|Especifica la cantidad de tiempo que un dispositivo debe permanecer inactivo antes de que se bloquee automáticamente la pantalla.|
 |**Caducidad de contraseña (días)**|Especifica el número de días antes de que se deba cambiar la contraseña del dispositivo.|Sí|Sí|
-|**Recordar el historial de contraseñas**|Especifica si se recuerdan las contraseñas usadas anteriormente para impedir que el usuario vuelva a usarlas.|Sí|Sí|
-|**Recordar historial de la contraseña** : **Impedir la reutilización de contraseñas anteriores**|Especifica cuántas contraseñas usadas anteriormente se recuerdan.|Sí|Sí|
+|**Recordar el historial de contraseñas**|Especifica si se recuerdan las contraseñas usadas anteriormente para impedir que el usuario vuelva a usarlas.|
+|**Recordar historial de la contraseña** : **Impedir la reutilización de contraseñas anteriores**|Especifica cuántas contraseñas usadas anteriormente se recuerdan.|
 
 ### Configuración de cifrado
 
-|Nombre de la configuración|Detalles|Windows Phone 8|Windows Phone 8,1|
-|----------------|------|------|-----------------------------|
-|**Requerir cifrado en dispositivo móvil**|Requiere que se cifren los datos en los dispositivos móviles compatibles.<br>Para dispositivos de Windows Phone 8, debe establecerse en **Sí**.|Sí|Sí|
+|Nombre de la configuración|Detalles|
+|----------------|------|
+|**Requerir cifrado en dispositivo móvil**|Requiere que se cifren los datos en los dispositivos móviles compatibles.|
 
 ### Configuración del sistema
 
-|Nombre de la configuración|Detalles|Windows Phone 8|Windows Phone 8,1|
-|----------------|-----|------|------------------------------|
-|**Permitir captura de pantalla**|Permite al usuario capturar el contenido de la pantalla como un archivo de imagen.|No|Sí|
-|**Permitir el envío de datos de diagnóstico**|Permite que el dispositivo envíe información de diagnóstico a Microsoft.|No|Sí|
+|Nombre de la configuración|Detalles|
+|----------------|-----|
+|**Permitir captura de pantalla**|Permite al usuario capturar el contenido de la pantalla como un archivo de imagen.|
+|**Permitir el envío de datos de diagnóstico**|Permite que el dispositivo envíe información de diagnóstico a Microsoft.|
 
 ### Configuración de nube: cuentas y sincronización
 
-|Nombre de la configuración|Detalles|Windows Phone 8|Windows Phone 8,1|
-|----------------|------|-----|------------------------------|
-|**Permitir cuenta de Microsoft**|Permite vincular una cuenta Microsoft al dispositivo.|No|Sí|
+|Nombre de la configuración|Detalles|
+|----------------|------|
+|**Permitir cuenta de Microsoft**|Permite vincular una cuenta Microsoft al dispositivo.|
 
 ### Configuración de correo electrónico
 
-|Nombre de la configuración|Detalles|Windows Phone 8|Windows Phone 8,1|
-|----------------|-----|-----|-------------------------------|
-|**Permitir cuentas de correo electrónico personalizadas**|Permite que el dispositivo se conecte a cuentas de correo electrónico que no son de Microsoft.|No|Sí|
+|Nombre de la configuración|Detalles|
+|----------------|-----|
+|**Permitir cuentas de correo electrónico personalizadas**|Permite que el dispositivo se conecte a cuentas de correo electrónico que no son de Microsoft.|
 
 ### Configuración de la aplicación: explorador
 
-|Nombre de la configuración|Detalles|Windows Phone 8|Windows Phone 8,1|
-|----------------|-----|-----|-------------------------------|
-|**Permitir explorador web**|Permite o bloquea el explorador web integrado en los dispositivos.|No|Sí|
+|Nombre de la configuración|Detalles|
+|----------------|-----|
+|**Permitir explorador web**|Permite o bloquea el explorador web integrado en los dispositivos.|
 
 ### Configuración de la aplicación: aplicaciones
 
-|Nombre de la configuración|Detalles|Windows Phone 8|Windows Phone 8,1|
-|----------------|-----|------|------------------------------|
-|**Permitir almacén de aplicaciones**|Permite a los usuarios conectarse a la tienda de aplicaciones desde el dispositivo.|No|Sí|
+|Nombre de la configuración|Detalles|
+|----------------|-----|
+|**Permitir almacén de aplicaciones**|Permite a los usuarios conectarse a la tienda de aplicaciones desde el dispositivo.|
 
 ### Configuración de funcionalidades del dispositivo: hardware
 
-|Nombre de la configuración|Detalles|Windows Phone 8|Windows Phone 8,1|
-|----------------|-----|----|--------------------------------|
-|**Permitir cámara**|Permite o bloquea la cámara del dispositivo.|No|Sí|
-|**Permitir almacenamiento extraíble**|Permite que el dispositivo use un almacenamiento extraíble, como las tarjetas SD.|Sí|Sí|
-|**Permitir Wi-Fi**|Habilita o deshabilita la funcionalidad de Wi-Fi del dispositivo.|No|Sí|
-|**Permitir Wi-Fi Tethering**|Permite el uso de Tethering Wi-Fi en el dispositivo.|No|Sí
-|**Permitir la conexión automática a zonas Wi-Fi gratuitas**|Permite que el dispositivo se conecte automáticamente a zonas Wi-Fi gratuitas y acepte automáticamente las condiciones de uso.|No|Sí|
-|**Permitir informar de zonas Wi-Fi**|Envía información sobre las conexiones Wi-Fi para ayudar al usuario a detectar conexiones cercanas.|No|Sí|
-|**Permitir geolocalización**|Permite que el dispositivo use información de ubicación.|No|Sí|
-|**Permitir NFC**|Permite las operaciones que usan la transmisión de datos en proximidad.|No|Sí|
-|**Permitir Bluetooth**|Habilita o deshabilita la funcionalidad de Bluetooth del dispositivo.|No|Sí|
+|Nombre de la configuración|Detalles|
+|----------------|-----|
+|**Permitir cámara**|Permite o bloquea la cámara del dispositivo.|
+|**Permitir almacenamiento extraíble**|Permite que el dispositivo use un almacenamiento extraíble, como las tarjetas SD.|
+|**Permitir Wi-Fi**|Habilita o deshabilita la funcionalidad de Wi-Fi del dispositivo.|
+|**Permitir Wi-Fi Tethering**|Permite el uso de Tethering Wi-Fi en el dispositivo.|
+|**Permitir la conexión automática a zonas Wi-Fi gratuitas**|Permite que el dispositivo se conecte automáticamente a zonas Wi-Fi gratuitas y acepte automáticamente las condiciones de uso.|
+|**Permitir informar de zonas Wi-Fi**|Envía información sobre las conexiones Wi-Fi para ayudar al usuario a detectar conexiones cercanas.|
+|**Permitir geolocalización**|Permite que el dispositivo use información de ubicación.|
+|**Permitir NFC**|Permite las operaciones que usan la transmisión de datos en proximidad.|
+|**Permitir Bluetooth**|Habilita o deshabilita la funcionalidad de Bluetooth del dispositivo.|
 
 ### Configuración de funcionalidades del dispositivo: características
 
-|Nombre de la configuración|Detalles|Windows Phone 8|Windows Phone 8,1|
-|----------------|----|------|-------------------------------|
-|**Permitir copiar y pegar**|Permite la funcionalidad de copiar y pegar en los dispositivos.|No|Sí|
+|Nombre de la configuración|Detalles|
+|----------------|----|
+|**Permitir copiar y pegar**|Permite la funcionalidad de copiar y pegar en los dispositivos.|
 
 ### Configuración de aplicaciones permitidas y bloqueadas
 En la lista **Aplicaciones permitidas y bloqueadas**, especifique una lista de aplicaciones que quiera permitir o bloquear mediante la siguiente información:
@@ -171,6 +171,6 @@ En el cuadro de diálogo **Agregar o editar configuración OMA-URI**, especifiqu
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

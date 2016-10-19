@@ -4,7 +4,7 @@ description: "Cree y administre grupos mediante el área de trabajo Grupos."
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 09/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: eb9b01ce-9b9b-4c2a-bf99-3879c0bdaba5
 ms.reviewer: lpatha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8c474810f8d3c7db4784c38c45c85c83b647860b
-ms.openlocfilehash: fa0c235d3ab5f9dde04f8345e7e28fdd00603e58
+ms.sourcegitcommit: 625d0851446c9cf54e704a62c9afe79cac263665
+ms.openlocfilehash: 27ab4a2e2f3e0273f452ef9d34cf458c9f2544b6
 
 
 ---
@@ -24,7 +24,9 @@ Este tema describe cómo crear grupos en Intune. También proporciona informaci�
 
 >[!IMPORTANT]
 >
->Si abre el área de trabajo Grupos en el portal de Intune y ve un vínculo al portal de Azure Active Directory (Azure AD), ya está usando el *nuevo* enfoque de grupos de seguridad de Azure AD para la administración de grupos en Intune, que se describe en [Aviso de próximas mejoras en la experiencia de administración para grupos](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups). Haga clic en el vínculo al portal de Azure AD para crear y administrar los grupos. Para más información sobre cómo trabajar con grupos de seguridad de Azure AD, vea [Administración del acceso a los recursos con grupos de Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/).
+>Si abre el área de trabajo Grupos en el portal de Intune y ve un vínculo al portal de Azure Active Directory (Azure AD), ya está usando el *nuevo* enfoque de grupos de seguridad de Azure AD para la administración de grupos en Intune, que se describe en [Aviso de próximas mejoras en la experiencia de administración para grupos](#notice-of-upcoming-improvements-to-the-admin-experience-for-groups). Haga clic en el vínculo al portal de Azure AD para crear y administrar los grupos.
+>
+>![Captura de pantalla del vínculo a la administración de grupos de Azure](../media/groups-link-azure.png) 
 >
 >Si no ve el vínculo al portal de Azure AD, todavía está usando el enfoque *actual* para la administración de grupos, que se describe en [Crear grupos para administrar usuarios y dispositivos en Microsoft Intune](#Create-groups-to-manage-users-and-devices-with-Microsoft-Intune) en este tema.
 
@@ -42,7 +44,7 @@ Este cambio no le afecta por ahora. Pero estas son las próximas novedades:
 
 
 ### ¿Cómo y cuándo migraré a la nueva experiencia de grupos?
-Los clientes actuales de Intune se migrarán a lo largo de un período de tiempo. Se está terminando la programación de esa migración y se actualizará este tema en unas semanas para proporcionar más detalles. Se le avisará antes de la migración. Si tiene alguna duda con respecto a la migración, póngase en contacto con nuestro equipo de migración en <intunegrps@microsoft.com>.
+Los clientes actuales de Intune se migrarán a lo largo de un período de tiempo. Se está terminando la programación de esa migración y se actualizará este tema en unas semanas para proporcionar más detalles. Se le avisará antes de la migración. Si tiene alguna duda con respecto a la migración, póngase en contacto con nuestro equipo de migración en [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com). Consulte [Migrating groups to Azure Active Directory](migrating-groups-to-azure-active-directory.md) (Migrar grupos a Azure Active Directory) para obtener más información sobre cómo se migrarán los grupos.
 
 ### ¿Qué pasa con mis grupos de dispositivos y usuarios existentes?
  Los grupos de usuarios y de dispositivos que haya creado en Intune se migrarán a grupos de seguridad de Azure AD. Los grupos predeterminados de Intune, como el grupo Todos los usuarios, solo se migrarán si los está usando en implementaciones en el momento de la migración. La migración puede ser más compleja para algunos grupos. Le avisaremos si tiene que realizar algún paso adicional para la migración de su organización.
@@ -202,6 +204,6 @@ Cada directiva tiene un **Valor previsto** y un **Estado**. El valor previsto es
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO1-->
 
 
