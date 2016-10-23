@@ -4,7 +4,7 @@ description: "Proteja y controle el acceso al correo electrónico de empresa en 
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 9a6455ded35bf77fbd5da1d4f345759836f38c7f
+ms.sourcegitcommit: b6e647c66d6de7d455d290dfa3358499a3f13453
+ms.openlocfilehash: e5c9d2a19f588ddd067a1e194568186f66afb85b
 
 
 ---
@@ -64,17 +64,19 @@ En el diagrama siguiente se muestra el flujo que usan las directivas de acceso c
 -   Si el dispositivo no es conforme, se muestra un mensaje que dirige al usuario a la aplicación de portal de empresa o al sitio web del portal de empresa de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], donde puede encontrar información sobre el problema y sobre cómo resolverlo.
 
 ## Compatibilidad con dispositivos móviles
--   Windows Phone 8 y versiones posteriores
+-   Windows Phone 8.1 y versiones posteriores
 
 -   Aplicación de correo electrónico nativo de iOS.
 
--   Aplicación de correo electrónico nativo de Android 4 o posterior
+-   Clientes de correo EAS como Gmail en Android 4 o versiones posteriores
+- **Dispositivos Android for Work de clientes de correo EAS:** solo se admiten las aplicaciones **Gmail** y **Nine Work** en el **perfil de trabajo** en los dispositivos Android for Work. Para que el acceso condicional funcione con Android for Work, debe implementar un perfil de correo electrónico para la aplicación Gmail o Nine Work y también implementar esas aplicaciones como una instalación requerida. 
+
 > [!NOTE]
 > La aplicación Microsoft Outlook para iOS y Android no es compatible.
 
 ## Compatibilidad para equipos
 
-La aplicación **Correo** en Windows 8 y posterior (cuando se inscribe con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)])
+La aplicación **Correo** en Windows 8.1 y posterior (cuando se inscribe con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)])
 
 ##  Configurar una directiva de acceso condicional
 
@@ -123,6 +125,6 @@ La aplicación **Correo** en Windows 8 y posterior (cuando se inscribe con [!INC
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

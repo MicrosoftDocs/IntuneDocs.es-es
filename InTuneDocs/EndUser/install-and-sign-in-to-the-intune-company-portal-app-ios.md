@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: b23073a0bad085c8994f5e9b7c1b46e2985cd05c
+ms.sourcegitcommit: 1d133011004fa9c684f81c7adc085dc43a4a2ee4
+ms.openlocfilehash: 29bc67a9ce4120cbb9f157c8d0eefb78dce020ca
 
 
 ---
@@ -29,9 +29,9 @@ El Portal de empresa es una aplicación que se instala en el dispositivo iOS y q
 
 2.  Descargue la aplicación **Portal de empresa de Microsoft Intune**.
 
-    ![descarga-ios-empresa-portal-aplicación](./media/ios-cpinstall-1-cpinstore.png)
+    ![Descarga de la aplicación Portal de empresa de Intune](./media/ios-cpinstall-1-cpinstore.png)
 
-3.  Abra la aplicación Portal de empresa, escriba el correo electrónico y la contraseña profesionales o educativas y luego pulse **Iniciar sesión**.
+3.  Abra la aplicación Portal de empresa, escriba la dirección y la contraseña del correo electrónico profesional o educativa y luego pulse **Iniciar sesión**.
 
     Si va a iniciar sesión en la aplicación Portal de empresa por primera vez y su empresa o centro educativo usan Intune, se le solicitará que inscriba su dispositivo en Intune. Para llevar a cabo la inscripción, siga los pasos descritos en [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md) (Inscribir el dispositivo iOS en Intune) o [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md) (Inscribir el dispositivo Mac OS X en Intune).
 
@@ -39,7 +39,6 @@ El Portal de empresa es una aplicación que se instala en el dispositivo iOS y q
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -15,14 +15,14 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f88c9f6b856f91db8c9218ab41a87bc95f45a578
-ms.openlocfilehash: efc6fed1d9e0766dd0deb24e8f5f422d1f60f568
+ms.sourcegitcommit: 3318201cd77ec16f72e65275eda0e65c0dd9e05c
+ms.openlocfilehash: 256a1e7873a6603226843d2936e44c09424b8050
 
 
 ---
 
 # Introducción a Intune
-Microsoft Intune es el "brazo administrativo" de Microsoft Enterprise Mobility + Security (EMS, anteriormente llamado Enterprise Mobility Suite). La movilidad empresarial consiste en que sus empleados puedan ser productivos en todos sus dispositivos sin poner en peligro la información de su organización.  
+Microsoft Intune es el brazo administrativo de Microsoft Enterprise Mobility + Security (EMS, anteriormente llamado Enterprise Mobility Suite). La movilidad empresarial consiste en que sus empleados puedan ser productivos en todos sus dispositivos sin poner en peligro la información de su organización.  
 
 EMS es un conjunto integrado de aplicaciones diseñadas para favorecer la movilidad empresarial, así como la productividad, la identidad, el control de acceso, la administración y la protección de datos. Ofrece una manera eficaz de implementar y usar una solución de movilidad en su organización.  
 
@@ -55,6 +55,6 @@ En esta documentación explicaremos cómo usar las herramientas de Intune para p
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO2-->
 
 

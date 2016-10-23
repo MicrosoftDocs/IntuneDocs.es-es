@@ -1,5 +1,5 @@
 ---
-title: "Sincronización manual del dispositivo con el sitio web del Portal de empresa | Microsoft Intune"
+title: "Sincronización manual del dispositivo con el sitio web de Portal de empresa | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
@@ -14,18 +14,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 38301b4e6964550008b08e99bf7016f1cc2561c3
-ms.openlocfilehash: 275e51d2f32aec340a31b67773dbccc77d48a573
+ms.sourcegitcommit: 6d53602bf4d767341924c4c4af8edae0d376a149
+ms.openlocfilehash: c49aa7e21f002110155e883894d211266ddbcb6c
 
 
 ---
 
 
-# Sincronización manual del dispositivo con el sitio web del Portal de empresa
+# Sincronización manual del dispositivo con el sitio web de Portal de empresa
 
-Si la instalación de la aplicación o la ejecución de otra tarea tarda demasiado, puede intentar sincronizar el dispositivo manualmente para acelerar la instalación o la ejecución de la tarea. Use las instrucciones siguientes que coincidan con el dispositivo que esté usando. 
+Si la instalación de la aplicación o la ejecución de otra tarea tarda demasiado, puede intentar sincronizar el dispositivo manualmente. La sincronización manual puede ayudar a acelerar la instalación o tarea.
 
-La característica de sincronización solo funciona en las versiones que aparecen a continuación.
+La característica de sincronización solo funciona en las versiones siguientes. Use las instrucciones que coincidan con el dispositivo que esté usando.
 
 * [Windows 10 Mobile](sync-your-device-manually-windows.md#windows-10-mobile)
 * [Windows 10 Escritorio](sync-your-device-manually-windows.md#windows-10-desktop)
@@ -34,6 +34,6 @@ La característica de sincronización solo funciona en las versiones que aparece
 
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

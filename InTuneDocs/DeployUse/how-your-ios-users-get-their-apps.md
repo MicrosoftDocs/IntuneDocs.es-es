@@ -13,8 +13,8 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 52b9e786fe22b04081441db88a3629062fc85668
-ms.openlocfilehash: a215d547507dcc460e83009cc6a04baf3fd8f4a4
+ms.sourcegitcommit: 37841027c7ae040163440a19f9e163fb4eb87233
+ms.openlocfilehash: ad780fb3403f6caaee1218d785a5cad326c18df5
 
 
 ---
@@ -32,23 +32,24 @@ Lea esta información para comprender cómo y dónde obtienen los usuarios final
 
 **Aplicaciones no administradas**: son aplicaciones que se pueden administrar mediante directivas y que no están encapsuladas con Intune o no incorporan el SDK de MAM de Intune. Las directivas de aplicación no pueden aplicarse a estas aplicaciones.
 
-Las restricciones de Apple prohíben que las aplicaciones de la tienda de aplicaciones de línea de negocio y administradas aparezcan en la aplicación Portal de empresa. Para solucionar este problema, los iconos de aplicaciones de la aplicación Portal de empresa para iOS apuntan a los usuarios a distintas vistas de una única ubicación (el sitio web de Portal de empresa) para todas sus aplicaciones, del siguiente modo:
+Las restricciones de Apple prohíben que las aplicaciones de la tienda de aplicaciones de línea de negocio y administradas aparezcan en la aplicación Portal de empresa. Para solucionar este problema, los iconos de la aplicación Portal de empresa para iOS apuntan a los usuarios a distintas vistas de una única ubicación (el sitio web de Portal de empresa) para todas sus aplicaciones.
 
-- El icono **Aplicaciones de la empresa** anteriormente apuntaba a una lista de todas las aplicaciones de la pestaña TODAS del [sitio web de Portal de empresa](http://portal.manage.microsoft.com) y seguirá funcionando del mismo modo. El nombre del icono ha cambiado a **Todas las aplicaciones**.
+- **Aplicaciones de la empresa** anteriormente apuntaba a una lista de todas las aplicaciones de la pestaña TODAS del [sitio web de Portal de empresa](http://portal.manage.microsoft.com), y seguirá funcionando del mismo modo. El nombre del icono ha cambiado a **Todas las aplicaciones**.
 
-- El icono **Otras aplicaciones** antes apuntaba a una vista, dentro de la aplicación Portal de empresa, que enumera todas las aplicaciones que Apple permite mostrar a la aplicación Portal de empresa. El nombre del icono ha cambiado a **Aplicaciones destacadas** y, si pulsa en él, se le dirigirá a la pestaña DESTACADAS del sitio web de Portal de empresa.
+- **Otras aplicaciones** antes apuntaba a una vista, dentro de la aplicación de portal de empresa, que enumera todas las aplicaciones que Apple permite mostrar a la aplicación de portal de empresa. El nombre del icono ha cambiado a **Aplicaciones destacadas** y, si pulsa en él, se le dirigirá a la pestaña Destacadas del sitio web de portal de empresa.
 
--  El icono **Categorías** anteriormente apuntaba a una vista, dentro de la aplicación Portal de empresa, que enumera las categorías de aplicaciones. El nombre del icono no ha cambiado, pero ahora apunta a la pestaña CATEGORÍAS del sitio web de Portal de empresa.
-Puede encontrar las capturas de pantalla actualizadas [aquí](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186).
+-  **Categorías** anteriormente apuntaba a una vista, dentro de la aplicación de portal de empresa, que enumera las categorías de aplicaciones. El nombre del icono no ha cambiado, pero ahora apunta a la pestaña Categorías del sitio web de portal de empresa.
+Puede encontrar capturas de pantalla actualizadas en [Mejoras en cómo los usuarios finales de iOS obtienen sus aplicaciones](https://gallery.technet.microsoft.com/Improvements-in-how-iOS-d1104186).
 
 
 
-###Consulte también
-[Cómo obtienen sus aplicaciones los usuarios de Android](how-your-android-users-get-their-apps.md)</br>
+### Consulte también
+[Cómo obtienen sus aplicaciones los usuarios de Android](how-your-android-users-get-their-apps.md)
+
 [Cómo obtienen sus aplicaciones los usuarios de Windows](how-your-windows-users-get-their-apps.md)
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

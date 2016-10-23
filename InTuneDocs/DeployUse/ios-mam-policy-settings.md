@@ -4,7 +4,7 @@ description: "En este tema se describe la configuración de directiva de adminis
 keywords: 
 author: karthikaraman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 09/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: ba258bfb3140ffc79aa38ef2f46497346cdc6bfa
+ms.sourcegitcommit: 3f6e500ef942e0f0e89ffd9ddb4889384f296e16
+ms.openlocfilehash: 36d21aee42c8a4812b1ed9623be2da3e65442bff
 
 
 ---
@@ -84,6 +84,11 @@ El término **aplicaciones administradas por directivas** hace referencia a las 
   Al realizar una eliminación selectiva para quitar datos de la empresa, se quitan los contactos sincronizados directamente desde la aplicación a la libreta de direcciones nativa. No se pueden borrar los contactos de la libreta de direcciones nativa sincronizados con otro origen externo. Actualmente esto es válido únicamente para **Microsoft Outlook**.
 
   **Valor predeterminado = Sí**
+  
+- **Deshabilitar la impresión:** elija **Sí** para impedir los datos de la compañía de impresión desde aplicaciones que están asociadas a la directiva MAM.
+
+    **Valor predeterminado = Sí**
+
 ##  Configuración de directiva de acceso de iOS
 El término **aplicaciones administradas por directivas** hace referencia a las aplicaciones que están configuradas con directivas de MAM.
 - **Requerir PIN para el acceso:** elija **Sí** si quiere exigir un PIN para poder usar aplicaciones administradas por directivas. Se pedirá al usuario que lo configure la primera vez que ejecuta la aplicación en un contexto laboral.
@@ -114,6 +119,6 @@ En los dispositivos iOS, puede permitir que los usuarios se identifiquen mediant
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

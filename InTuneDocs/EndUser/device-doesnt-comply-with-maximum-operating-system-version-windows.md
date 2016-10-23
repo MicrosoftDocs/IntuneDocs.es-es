@@ -1,5 +1,5 @@
 ---
-title: "El dispositivo Windows no es compatible con la versión máxima de sistema operativo | Microsoft Intune"
+title: "El dispositivo Windows no es compatible con las opciones de configuración de la versión más reciente del sistema operativo | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
@@ -14,20 +14,19 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
-ms.openlocfilehash: 0a83e44f95ad1619cd0eff94d70c3dcc81852acb
+ms.sourcegitcommit: 964f39fa7a3971f37777e93f7cddd75367e6c026
+ms.openlocfilehash: edd9aa9b7c2dabbc90bb3777f855478c703c7882
 
 
 ---
 
 
-# El dispositivo Windows no es compatible con la versión máxima de sistema operativo
+# El dispositivo Windows no es compatible con las opciones de configuración de la versión más reciente del sistema operativo
 
-El administrador de TI ha establecido una versión máxima de sistema operativo que se puede tener en el dispositivo Windows, pero su dispositivo no satisface este requisito. Para averiguar cuál es el sistema operativo máximo permitido en el dispositivo, póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
-
-
+El administrador de TI ha establecido la versión más reciente del sistema operativo que se puede tener en el dispositivo Windows, pero su dispositivo no satisface este requisito. Para averiguar cuál es el sistema operativo más reciente permitido en el dispositivo, póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 
-<!--HONumber=Sep16_HO2-->
+
+<!--HONumber=Oct16_HO2-->
 
 

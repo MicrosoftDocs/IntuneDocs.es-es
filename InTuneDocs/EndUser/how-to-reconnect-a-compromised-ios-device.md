@@ -14,17 +14,19 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: c47a7097d86ded8e6f38f0270352a7c432110464
+ms.sourcegitcommit: 8eb98946c39b98d3c338b32a7d955818020ef478
+ms.openlocfilehash: 166c0708645d191abaaa73aa3143ca558d64ffd0
 
 
 ---
 
 # Cómo volver a conectar un dispositivo iOS en riesgo
-El administrador de TI ha detectado que está utilizando un dispositivo desbloqueado. Por "descodificado" se entiende que se han quitado las restricciones de software impuestas por iOS, que pueden poner en riesgo la seguridad y podrían suponer una amenaza para los recursos de su empresa. Cuando esto sucede, el dispositivo ya no puede tener acceso a recursos de la empresa y debe ponerse en contacto con el administrador de TI para obtener ayuda. Para averiguar la información de contacto del administrador de TI, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+El administrador de TI ha detectado que está utilizando un dispositivo "desbloqueado". "Desbloqueado" significa que se han quitado las restricciones de software, impuestas por iOS. Esta eliminación de las restricciones puede comprometer la seguridad y podría ser una amenaza para los recursos de empresa. 
+
+Cuando esto sucede, el dispositivo ya no puede tener acceso a recursos de la empresa y debe ponerse en contacto con el administrador de TI para obtener ayuda. Para averiguar la información de contacto del administrador de TI, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

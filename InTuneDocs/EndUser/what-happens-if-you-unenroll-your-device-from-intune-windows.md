@@ -4,7 +4,7 @@ description:
 keywords: 
 author: Staciebarker
 manager: angrobe
-ms.date: 05/28/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: ac421a7745082568b69a6229125021373aefedb4
+ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
+ms.openlocfilehash: ebd1300c490f3d69110a5f1920fd25d1dc5cb850
 
 
 ---
@@ -23,11 +23,7 @@ ms.openlocfilehash: ac421a7745082568b69a6229125021373aefedb4
 
 # ¿Qué ocurre si anula la inscripción del dispositivo Windows de Intune?
 
-Para más información sobre lo que ocurre, seleccione el vínculo de la sección anterior "En este artículo" correspondiente al tipo de dispositivo que use.
-
-- [Windows 10 Mobile, 8.1, Windows 8, Windows 7, Vista](#windows-10-mobile--8-1,-windows-8,-windows-7,-vista)
-- [Windows 10, Windows 8.1 o Windows Phone 8](#windows-10--windows-8-1-or-windows-phone-8)
-- [Windows RT con Windows 8.1 o Windows RT](#windows-rt-running-windows-8-1-or-windows-rt)
+Use los vínculos de la derecha de esta página, debajo de "En este artículo", para obtener información sobre el tipo de dispositivo que está utilizando.
 
 
 ## Windows 10, Windows 8.1, Windows 8, Windows 7, Vista
@@ -55,7 +51,7 @@ Además, para Windows 8.1:
 
 -   Es posible que deje de tener acceso en su dispositivo a algunos recursos de la empresa, como recursos compartidos de archivos o sitios web internos.
 
-## Windows 10 Mobile, Windows Phone 8.1 o Windows Phone 8
+## Windows 10 Mobile y Windows Phone 8.1
 
 -   La aplicación Portal de empresa se desinstala del dispositivo, es decir, el dispositivo ya no aparecerá en el Portal de empresa y no se podrán instalar aplicaciones desde la aplicación Portal de empresa o desde el sitio web de Portal de empresa.
 
@@ -66,7 +62,7 @@ Además, para Windows 8.1:
     > [!IMPORTANT]
     > La única excepción son las directivas de cifrado, que se seguirán aplicando. Si la directiva de la compañía requería el cifrado de Windows Phone, la única manera de descifrar el teléfono es restablecerlo a través del menú **Configuración** de Windows Phone.
 
-## Windows RT con Windows 8.1 o Windows RT
+## Windows RT con Windows 8.1
 
 -   La aplicación Portal de empresa se desinstala del dispositivo, es decir, el dispositivo ya no aparecerá en el Portal de empresa y no se podrán instalar aplicaciones desde el Portal de empresa.
 
@@ -90,11 +86,9 @@ Si se quita un dispositivo Windows RT, ocurre lo siguiente:
 
 Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
-### Consulte también
-[Usar un dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

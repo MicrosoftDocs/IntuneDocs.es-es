@@ -4,7 +4,7 @@ description: Aprenda a crear un perfil de certificado de Intune.
 keywords: 
 author: nbigman
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: c51c5ae199ca2950dc0371b400727af534a70f09
+ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
+ms.openlocfilehash: 3f657e6a49fb83faddf9c139985369f27656b4bd
 
 
 ---
@@ -38,13 +38,22 @@ Debe crear un perfil de certificado de confianza para poder crear un perfil de c
 
 ### Para crear un perfil de certificado de confianza
 
-1.  En la [consola de administración de Intune](https://manage.microsoft.com), seleccione **Directiva** &gt; **Agregar directiva**.
-2.  Agregue uno de estos tipos de directivas:
-    - **Android &gt; Perfil de certificado de confianza (Android 4 y versiones posteriores)**
-    - **iOS &gt; Perfil de certificado de confianza (iOS 8.0 y versiones posteriores)**
-    - **Mac OS X &gt; Perfil de certificado de confianza (Mac OS X 10.9 y versiones posteriores)**
-    - **Windows &gt; Perfil de certificado de confianza (Windows 8.1 y versiones posteriores)**
-    - **Windows &gt; Perfil de certificado de confianza (Windows Phone 8.1 y versiones posteriores)**
+1.  En la [consola de administración de Intune](https://manage.microsoft.com), seleccione **Directiva** &gt; **Agregar directiva** y elija una plataforma de dispositivo. Puede crear un perfil de certificado de confianza para estos dispositivos:
+
+-  Android 4 y versiones posteriores
+
+-  Android for Work
+
+-  iOS 7.1 y versiones posteriores
+
+-  Mac OS X 10.9 y versiones posteriores
+
+-  Windows 8.1 y posterior
+
+-  Windows Phone 8.1 y versiones posteriores
+
+
+2.  Agregue una directiva **Perfil de certificado de confianza**.
 
     Más información: [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
@@ -60,14 +69,22 @@ Después de haber creado un perfil de certificado de CA de confianza, cree perfi
 
 ### Para crear un perfil de certificado SCEP
 
-1.  En la [consola de administración de Intune](https://manage.microsoft.com), seleccione **Directiva** &gt; **Agregar directiva**.
-2.  Agregue uno de estos tipos de directivas:
-    - **Android &gt; Perfil de certificado SCEP (Android 4 y versiones posteriores)**
-    - **iOS &gt; Perfil de certificado SCEP (iOS 8.0 y versiones posteriores)**
-    - **Mac OS X &gt; Perfil de certificado SCEP (Mac OS X 10.9 y versiones posteriores)**
-    - **Windows &gt; Perfil de certificado SCEP (Windows 8.1 y versiones posteriores)**
-    - **Windows &gt; Perfil de certificado SCEP (Windows Phone 8.1 y versiones posteriores)**
+1.  En la [consola de administración de Intune](https://manage.microsoft.com), seleccione **Directiva** &gt; **Agregar directiva** y elija una plataforma de dispositivo.  Puede crear un perfil de certificado SCEP para estos dispositivos:
 
+-  Android 4 y versiones posteriores
+
+-  Android for Work
+
+-  iOS 7.1 y versiones posteriores
+
+-  Mac OS X 10.9 y versiones posteriores
+
+-  Windows 8.1 y posterior
+
+-  Windows Phone 8.1 y versiones posteriores
+
+2.  Agregue una directiva **Perfil de certificado SCEP**.
+    
     Más información: [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
 3.  Siga las instrucciones de la página de configuración de perfil para configurar las opciones de perfil de certificado SCEP.
@@ -87,13 +104,16 @@ La nueva directiva aparece en el área de trabajo **Directiva**. Ya puede implem
 
 ### Para crear un perfil de certificado .PFX
 
-1.  En la [consola de administración de Intune](https://manage.microsoft.com), seleccione **Directiva** &gt; **Agregar directiva**.
-2.  Agregue uno de estos tipos de directivas:
-  - **Android &gt; Perfil de certificado .PFX (Android 4 y versiones posteriores)**
-  - **Windows &gt; Perfil de certificado PKCS #12 (.PFX) (Windows 10 y versiones posteriores)**
-  - **Windows &gt; Perfil de certificado PKCS #12 (.PFX) (Windows Phone 10 y versiones posteriores)**
-  - **iOS > Perfil de certificado PKCS #12 (.PFX) (iOS 8.0 y versiones posteriores)**    
-    Más información: [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+1.  En la [consola de administración de Intune](https://manage.microsoft.com), seleccione **Directiva** &gt; **Agregar directiva** y elija una plataforma de dispositivo. Se permiten los certificados .PFX para:
+  - Android 4 y versiones posteriores
+  - Android for Work
+  - Windows 10 y versiones posteriores
+  - Windows Phone 10 y versiones posteriores
+  - iOS 8.0 y versiones posteriores    
+
+    
+2.  Agregue una directiva **Perfil de certificado .PFX**. 
+      Más información: [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 3.  Escriba la información solicitada en el formulario de directiva.
 4.  Seleccione **Guardar directiva**.
 
@@ -130,6 +150,6 @@ Aprenda a usar los certificados para proteger los perfiles de VPN, el Wi-Fi y el
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

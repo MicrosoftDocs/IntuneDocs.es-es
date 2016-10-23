@@ -4,7 +4,7 @@ description: Use perfiles de Wi-Fi para que los usuarios se conecten a las redes
 keywords: 
 author: Nbigman
 manager: angrobe
-ms.date: 09/01/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0ced62efd04803943cbbfd8cecef907409a03c0b
-ms.openlocfilehash: beba0471f31a19dad78ddf71c07e323b18af18e8
+ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
+ms.openlocfilehash: 7b49b7d9b6054f7d153359c1ee1b6cf5875fba32
 
 
 ---
@@ -29,7 +29,7 @@ Por ejemplo, instala una nueva red Wi-Fi denominada **Contoso Wi-Fi** y quiere c
 
 1.   Cree un perfil de Wi-Fi que contenga la configuración necesaria para conectarse a la red inalámbrica **Contoso Wi-Fi**.
 
-2. Implemente el perfil en el grupo de usuarios con dispositivos iOS.
+2.   Implemente el perfil en el grupo de usuarios con dispositivos iOS.
 
 3.   Los usuarios encuentran la nueva red **Contoso Wi-Fi** en la lista de redes inalámbricas y pueden conectarse fácilmente a ella.
 
@@ -39,6 +39,8 @@ Por ejemplo, instala una nueva red Wi-Fi denominada **Contoso Wi-Fi** y quiere c
 Puede implementar perfiles de Wi-Fi en las siguientes plataformas:
 
 -   Android 4.0 y versiones posteriores
+
+-   Android for Work   
 
 -   iOS 8.0 y versiones posteriores
 
@@ -52,10 +54,13 @@ En el caso de los dispositivos que ejecutan Windows 8.1 o Windows 10 para escrit
 
     -   Perfil de Wi-Fi (Android 4 y versiones posteriores)
 
+    -   Perfil de Wi-Fi (Android for Work)
+
     -   Perfil de Wi-Fi (iOS 8.0 y versiones posteriores)
 
     -   Perfil de Wi-Fi (Mac OS X 10.9 y versiones posteriores)
-
+    
+    
     No hay ninguna configuración recomendada para este tipo de directiva. Debe crear una directiva personalizada.
 
 3.  Proporcione un nombre y una descripción para el perfil.
@@ -173,6 +178,6 @@ Aprenda a crear un perfil de Wi-Fi con una clave precompartida en [Crear un perf
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

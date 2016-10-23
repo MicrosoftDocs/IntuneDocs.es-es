@@ -14,14 +14,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: ce231116ad405d274546cee81dbdd0b0909b2d01
+ms.sourcegitcommit: 8eb98946c39b98d3c338b32a7d955818020ef478
+ms.openlocfilehash: f33287c51fb769505cd1fb4fcfe2bbc1e4da0ea2
 
 
 ---
 
 # Cuenta de correo electrónico de empresa existente encontrado
-Ya tiene una cuenta de correo electrónico de empresa. Para continuar para conectarse a su correo electrónico de la compañía, deberá realizar los pasos siguientes para habilitar el Administrador de TI correctamente a configurar y administrar su cuenta:
+Ya tiene una cuenta de correo electrónico de empresa. Para continuar para conectarse a su correo electrónico de la compañía, realice los pasos siguientes para habilitar el Administrador de TI correctamente a configurar y administrar su cuenta:
 
 1.  En **configuración** en el dispositivo, quite la conexión previamente configurado para su correo electrónico de la compañía.
 
@@ -35,6 +35,6 @@ Si la nueva configuración de correo electrónico no aparece después de un tiem
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

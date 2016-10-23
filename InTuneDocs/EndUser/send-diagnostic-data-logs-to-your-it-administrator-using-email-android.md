@@ -1,6 +1,6 @@
 ---
 title: "Enviar registros de datos de diagnóstico al administrador de TI mediante correo electrónico | Microsoft Intune"
-description: 
+description: "Envío de registros de datos mediante correo electrónico en un dispositivo Android"
 keywords: 
 author: staciebarker
 manager: angrobe
@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: 87b0e188824368116dce5ea154821084b8db16ce
+ms.sourcegitcommit: 6be7193a5f04768a59b5c73fb9c2f51241156ada
+ms.openlocfilehash: 9dd0f089d220538a5526979a84dc165151b86f4f
 
 
 ---
@@ -23,7 +23,7 @@ ms.openlocfilehash: 87b0e188824368116dce5ea154821084b8db16ce
 
 # Enviar registros de datos de diagnóstico al administrador de TI mediante correo electrónico
 
-Si se produce un error en el dispositivo Android mientras está trabajando con las aplicaciones de su centro educativo o empresa o mientras se encuentra en la aplicación Portal de empresa, puede enviar registros de datos de diagnóstico a su administrador de TI para que pueda determinar cuál fue el error y corregirlo. Para incluir todos los detalles en los registros y que así su administrador de TI pueda averiguar cuál fue el problema, active el registro detallado. Puede leer más información sobre el [registro detallado](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
+Si se produce un error en el dispositivo Android mientras está trabajando con las aplicaciones de su centro educativo o empresa o mientras se encuentra en la aplicación Portal de empresa, puede enviar registros de datos de diagnóstico a su administrador de TI para que pueda diagnosticar cuál fue el error y corregirlo. Para incluir todos los detalles en los registros y que así su administrador de TI pueda averiguar cuál fue el problema, active el registro detallado. Para más información sobre el registro detallado, consulte [Usar Registro detallado para ayudar al administrador de TI a solucionar los problemas del dispositivo Android](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
 
 Para enviar registros al administrador de TI mediante correo electrónico:
 
@@ -39,6 +39,7 @@ Para enviar registros al administrador de TI mediante correo electrónico:
 Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 
-<!--HONumber=Sep16_HO4-->
+
+<!--HONumber=Oct16_HO2-->
 
 
