@@ -3,6 +3,7 @@ title: "Solucionar problemas de implementación de aplicaciones | Microsoft Intu
 description: "Este tema le ayudará a solucionar problemas de implementación de aplicaciones con Microsoft Intune."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/27/2016
 ms.topic: article

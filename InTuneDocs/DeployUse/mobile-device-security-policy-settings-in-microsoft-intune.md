@@ -3,6 +3,7 @@ title: "Configuración de directivas de seguridad de dispositivos móviles | Mic
 description: "Use Intune para configurar una amplia variedad de opciones que puede implementar en los dispositivos administrados de su organización."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

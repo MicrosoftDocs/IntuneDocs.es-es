@@ -3,6 +3,7 @@ title: "Cómo establecer el período antes de que se bloquee el dispositivo Andr
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

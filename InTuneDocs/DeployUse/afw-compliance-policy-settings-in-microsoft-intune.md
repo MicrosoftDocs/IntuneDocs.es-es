@@ -3,6 +3,7 @@ title: "Opciones de configuración de directivas de cumplimiento para dispositiv
 description: "En este tema se describe la configuración de directivas de cumplimiento para dispositivos Android que son compatibles con Android for Work."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article

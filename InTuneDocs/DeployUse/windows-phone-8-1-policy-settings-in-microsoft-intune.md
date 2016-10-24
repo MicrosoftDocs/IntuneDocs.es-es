@@ -3,6 +3,7 @@ title: "Configuración de directivas de Windows Phone 8.1 | Microsoft Intune"
 description: "Intune proporciona una variedad de opciones generales integradas que puede configurar en los dispositivos Windows Phone 8.1. Además, puede especificar valores OMA-URI para crear una configuración personalizada que no esté disponible en Intune."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

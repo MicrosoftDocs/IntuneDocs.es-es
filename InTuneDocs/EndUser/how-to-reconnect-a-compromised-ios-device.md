@@ -3,6 +3,7 @@ title: "Cómo volver a conectar un dispositivo iOS en riesgo | Microsoft Intune"
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

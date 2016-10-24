@@ -3,6 +3,7 @@ title: "Enviar registros de datos de diagnóstico al administrador de TI mediant
 description: "Envío de registros de datos mediante correo electrónico en un dispositivo Android"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/21/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Enviar errores de inscripción al administrador de TI | Microsoft Intune
 description: "Enviar errores de inscripción al administrador"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article

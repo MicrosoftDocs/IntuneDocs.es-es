@@ -3,6 +3,7 @@ title: "Establecer o cambiar el código de acceso | Microsoft Intune"
 description: "Establecer o cambiar el código de acceso"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

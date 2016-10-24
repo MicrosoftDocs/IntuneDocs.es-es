@@ -3,6 +3,7 @@ title: "Cómo obtienen sus aplicaciones los usuarios de Windows | Microsoft Intu
 description: "Métodos para hacer que las aplicaciones de Windows estén disponibles para los usuarios"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/24/2016
 ms.topic: article

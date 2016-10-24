@@ -3,6 +3,7 @@ title: Usar un dispositivo Windows con Intune | Microsoft Intune
 description: "Lista de vínculos a tareas que puede realizar en el dispositivo Windows cuando este está inscrito en Intune"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

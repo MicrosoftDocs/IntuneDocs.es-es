@@ -3,6 +3,7 @@ title: Uso del registro detallado para ayudar al administrador de TI a soluciona
 description: Ayuda al administrador de TI a solucionar los problemas del dispositivo mediante el registro detallado
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

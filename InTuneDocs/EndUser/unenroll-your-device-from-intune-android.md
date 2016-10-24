@@ -3,6 +3,7 @@ title: "Anular la inscripción de un dispositivo Android de Intune | Microsoft I
 description: "Describe cómo anular la inscripción de un dispositivo Android de Intune."
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

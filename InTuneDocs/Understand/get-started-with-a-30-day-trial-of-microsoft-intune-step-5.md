@@ -3,6 +3,7 @@ title: "Inscribir dispositivos móviles de evaluación | Microsoft Intune"
 description: "Cómo inscribir dispositivos móviles e instalar una aplicación al registrarse para obtener una evaluación gratuita de 30 días de Intune"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article

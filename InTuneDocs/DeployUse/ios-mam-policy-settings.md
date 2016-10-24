@@ -3,6 +3,7 @@ title: "Configuración de directiva MAM de iOS | Microsoft Intune"
 description: "En este tema se describe la configuración de directiva de administración de aplicaciones móviles para dispositivos iOS."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/30/2016
 ms.topic: article

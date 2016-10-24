@@ -3,6 +3,7 @@ title: "Administrar la configuración de dispositivos con directivas | Microsoft
 description: "Use Intune para crear e implementar directivas que controlen la configuración y las características en los dispositivos inscritos que administre."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

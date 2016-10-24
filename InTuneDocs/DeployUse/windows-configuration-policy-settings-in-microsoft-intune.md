@@ -3,6 +3,7 @@ title: "Configuración de directivas de Windows | Microsoft Intune"
 description: "Use la directiva de configuración general de Windows de Intune (Windows 8.1 y posterior) para configurar las opciones de los dispositivos Windows 8.1 y Windows 8 inscritos."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

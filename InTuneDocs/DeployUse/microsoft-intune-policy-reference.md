@@ -3,6 +3,7 @@ title: "Referencia de directivas de configuración | Microsoft Intune"
 description: "Use la información de este tema para ayudarle a decidir qué directiva de Microsoft Intune debe usar para administrar los dispositivos."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article

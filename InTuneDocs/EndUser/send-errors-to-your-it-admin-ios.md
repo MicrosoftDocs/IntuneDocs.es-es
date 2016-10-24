@@ -3,6 +3,7 @@ title: Enviar errores al administrador de TI | Microsoft Intune
 description: Enviar errores al administrador
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

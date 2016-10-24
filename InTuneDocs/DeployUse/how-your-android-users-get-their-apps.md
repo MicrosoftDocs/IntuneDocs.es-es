@@ -3,6 +3,7 @@ title: "Cómo obtienen sus aplicaciones los usuarios de Android | Microsoft Intu
 description: "Métodos para hacer que las aplicaciones de Android estén disponibles para los usuarios finales"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 7/7/2016
 ms.topic: article

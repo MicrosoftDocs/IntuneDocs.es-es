@@ -3,6 +3,7 @@ title: "Simplificar la configuración de correo electrónico en dispositivos mó
 description: 
 keywords: 
 author: jeffgilb
+ms.author: jeffgilb
 manager: angrobe
 ms.date: 10/14/2016
 ms.topic: article

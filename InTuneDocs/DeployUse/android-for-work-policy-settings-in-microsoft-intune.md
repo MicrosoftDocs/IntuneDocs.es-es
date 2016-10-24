@@ -4,6 +4,7 @@ title: Opciones de directivas de Android for Work | Microsoft Intune
 description: "Cree directivas que controlen la configuración y las características en los dispositivos Android for Work que administra con Intune."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

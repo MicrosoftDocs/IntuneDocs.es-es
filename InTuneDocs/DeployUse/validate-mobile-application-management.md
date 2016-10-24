@@ -4,6 +4,7 @@ title:
 description: "En este tema se describe cómo puede probar y verificar si su directiva de MAM está configurada correctamente y funciona según lo esperado."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angerobe
 ms.date: 08/16/2016
 ms.topic: article

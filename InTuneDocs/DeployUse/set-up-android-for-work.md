@@ -3,6 +3,7 @@ title: "Configuración de la administración de Android for Work | Microsoft Int
 description: "Habilite la administración de dispositivos móviles (MDM) para dispositivos Android for Work con Microsoft Intune."
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: Usar grupos para administrar usuarios y dispositivos | Microsoft Intune
 description: "Cree y administre grupos mediante el área de trabajo Grupos."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 10/10/2016
 ms.topic: article

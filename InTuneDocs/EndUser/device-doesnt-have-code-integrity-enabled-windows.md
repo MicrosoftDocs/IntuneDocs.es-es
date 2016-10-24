@@ -3,6 +3,7 @@ title: "El dispositivo no tiene habilitada la integridad de código | Microsoft 
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article

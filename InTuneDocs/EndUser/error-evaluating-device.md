@@ -3,6 +3,7 @@ title: Error evaluating device (Error al evaluar el dispositivo) | Microsoft Int
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

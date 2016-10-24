@@ -3,6 +3,7 @@ title: Recursos sobre la experiencia del usuario final con Microsoft Intune | Mi
 description: "Vínculos a información para compartir con los usuarios finales"
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: get-started-article

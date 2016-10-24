@@ -3,6 +3,7 @@ title: "Implementación de aplicaciones para dispositivos Android for Work | Mic
 description: "Utilice este tema para sincronizar y después implementar aplicaciones para dispositivos Android for Work desde Google Play for Work Store."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

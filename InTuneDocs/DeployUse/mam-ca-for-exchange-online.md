@@ -3,6 +3,7 @@ title: "Configuración del acceso de aplicaciones a Exchange Online | Microsoft 
 description: "En este tema se describe cómo puede configurar una directiva de acceso condicional para las aplicaciones con MAM."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/15/2016
 ms.topic: article

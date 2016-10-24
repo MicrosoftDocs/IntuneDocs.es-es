@@ -3,6 +3,7 @@ title: "El dispositivo iOS no es compatible con la versión máxima de sistema o
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article

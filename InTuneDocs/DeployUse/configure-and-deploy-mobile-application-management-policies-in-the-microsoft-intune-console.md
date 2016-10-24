@@ -3,6 +3,7 @@ title: "Configuración de directivas de MAM en la consola Intune | Microsoft Int
 description: "Las directivas de administración de aplicaciones móviles de Microsoft Intune permiten modificar la función de las aplicaciones que se implementan para que, de este modo, estén en consonancia con las directivas de seguridad y cumplimiento de la compañía."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article

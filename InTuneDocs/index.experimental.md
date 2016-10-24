@@ -6,6 +6,7 @@ title: "Documentación de Intune - documentación de MDM | Documentos de Microso
 description: "Documentación técnica de Microsoft Intune: Administración de dispositivos y aplicaciones móviles"
 keywords: "documentación de Intune, documentación de MDM, Documentación de administración de dispositivos móviles, Documentación de administración de dispositivos y aplicaciones móviles"
 author: jeffgilb
+ms.author: jeffgilb
 manager: jeffgilb
 ms.date: 04/28/2016
 ms.topic: hubpage

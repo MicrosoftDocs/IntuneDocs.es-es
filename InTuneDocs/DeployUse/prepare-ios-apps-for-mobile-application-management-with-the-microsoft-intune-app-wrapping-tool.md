@@ -3,6 +3,7 @@ title: Ajuste de aplicaciones iOS con la herramienta de ajuste de aplicaciones |
 description: "Utilice la información de este tema para obtener información sobre cómo ajustar las aplicaciones iOS sin modificar el código de la propia aplicación. Prepare las aplicaciones de modo que pueda aplicar las directivas de administración de aplicaciones móviles."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: Inscribir un dispositivo Android en Intune | Microsoft Intune
 description: "Describe cómo inscribir un dispositivo Android en Intune."
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/09/2016
 ms.topic: article

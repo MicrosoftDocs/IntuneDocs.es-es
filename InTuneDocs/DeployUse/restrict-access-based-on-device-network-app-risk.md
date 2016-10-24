@@ -3,6 +3,7 @@ title: "Restringir el acceso mediante la protección contra amenazas de disposit
 description: "Restrinja el acceso a recursos de la empresa en función del riesgo del dispositivo, la red y la aplicación."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article

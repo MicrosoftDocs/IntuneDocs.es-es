@@ -3,6 +3,7 @@ title: "Bloqueo de aplicaciones sin autenticación moderna | Microsoft Intune"
 description: 
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/15/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: Restringir el acceso a Skype Empresarial Online | Microsoft Intune
 description: Proteja y controle el acceso a Skype Empresarial Online con el acceso condicional.
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article

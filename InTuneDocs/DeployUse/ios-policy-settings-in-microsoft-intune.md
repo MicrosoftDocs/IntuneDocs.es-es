@@ -3,6 +3,7 @@ title: "Configuración de directivas de iOS | Microsoft Intune"
 description: "Cree directivas que controlen la configuración y las características en los dispositivos iOS que administra con Intune."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article

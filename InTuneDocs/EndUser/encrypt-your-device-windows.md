@@ -3,6 +3,7 @@ title: Cifrado del dispositivo Windows | Microsoft Intune
 description: "Describe cómo cifrar un dispositivo Windows"
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "¿Qué puede ver el administrador de TI cuando inscribe el dispositivo e
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

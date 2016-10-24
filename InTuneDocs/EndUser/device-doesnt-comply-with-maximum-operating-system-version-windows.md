@@ -3,6 +3,7 @@ title: "El dispositivo Windows no es compatible con las opciones de configuraci√
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/08/2016
 ms.topic: article

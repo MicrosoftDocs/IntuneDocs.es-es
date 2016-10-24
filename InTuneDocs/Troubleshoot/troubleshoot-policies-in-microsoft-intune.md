@@ -3,6 +3,7 @@ title: "Directivas de solución de problemas | Microsoft Intune"
 description: "Solucionar problemas de configuración de directivas."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article

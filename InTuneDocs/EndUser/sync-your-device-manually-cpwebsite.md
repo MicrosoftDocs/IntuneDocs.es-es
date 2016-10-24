@@ -3,6 +3,7 @@ title: "Sincronización manual del dispositivo con el sitio web de Portal de emp
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article

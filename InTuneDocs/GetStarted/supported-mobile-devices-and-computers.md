@@ -3,6 +3,7 @@ title: "Equipos y dispositivos móviles compatibles | Microsoft Intune"
 description: "Dispositivos móviles y equipos que admite Intune"
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: get-started-article

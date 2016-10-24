@@ -3,6 +3,7 @@ title: "Guía de evaluación de Intune | Microsoft Intune"
 description: "Introducción y requisitos previos sobre cómo configurar una evaluación gratuita de 30 días de Intune"
 keywords: 
 author: lindavr
+ms.author: lindavr
 manager: angrobe
 ms.date: 08/09/2016
 ms.topic: get-started-article
