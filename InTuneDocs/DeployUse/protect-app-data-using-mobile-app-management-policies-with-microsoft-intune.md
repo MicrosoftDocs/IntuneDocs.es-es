@@ -13,13 +13,13 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 6163f2b2a1c562e5315785b8b4c486fe2347f89d
+ms.sourcegitcommit: 389daf0ed39fa2cd4b2e5d6e52cbd6809a568c9e
+ms.openlocfilehash: e751619f6d65e10099d1f8ff5a2342185181af69
 
 
 ---
 
-# Proteger datos de aplicación mediante directivas de administración de aplicaciones móviles con Microsoft Intune
+# Proteger datos mediante las directivas de administración de aplicaciones móviles con Microsoft Intune
 
 ## Cómo puede proteger los datos de la aplicación
 Los empleados usan dispositivos móviles para tareas personales y de trabajo.  Mientras se asegura de que los empleados pueden ser productivos, también puede evitar la pérdida de datos, ya sea intencional o involuntaria.  Además, quiere tener la capacidad de proteger los datos de la empresa a los que se accede mediante dispositivos (incluso aquellos datos que usted no administre).
@@ -122,8 +122,6 @@ Las aplicaciones que admiten varias identidades ofrecen la posibilidad de usar d
 
 Por ejemplo, cuando el usuario final inicia la aplicación OneDrive con su cuenta profesional, no puede mover los archivos a una ubicación de almacenamiento personal. Sin embargo, cuando usa OneDrive con su cuenta personal, puede copiar y mover los datos de su OneDrive personal sin restricciones.  
 
-Para obtener una explicación detallada de la experiencia de uso de aplicaciones asociadas con las directivas de MAM y cómo las aplicaciones con compatibilidad con varias identidades permiten aplicar directivas de MAM solo en el contexto laboral, consulte [Using apps with multi-identity support](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md#using-apps-with-multi-identity-support) (Uso de aplicaciones con compatibilidad con varias identidades).
-
 Todas las aplicaciones móviles de Office admiten varias identidades.
 
 ##  Pasos siguientes
@@ -133,6 +131,6 @@ Todas las aplicaciones móviles de Office admiten varias identidades.
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

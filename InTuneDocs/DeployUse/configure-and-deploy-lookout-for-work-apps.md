@@ -12,8 +12,8 @@ ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 99005e15268a60cd801ef1c717088dff2f82927b
-ms.openlocfilehash: 8dce0689d5c4a0672b227eedf3ae738217eb17cf
+ms.sourcegitcommit: 4a69be67c3ef9f028c77c738de5f1fcbd59a8d33
+ms.openlocfilehash: 2c626cb0a36c38c7b5deeca0ff1e902018540634
 
 
 ---
@@ -40,7 +40,7 @@ Seleccione la opción **Instalación requerida** para exigir que la aplicación 
 
 ## iOS (versión para empresa de la aplicación Lookout)
 
-* **Paso 1:** Asegúrese de que la **administración de iOS** está configurada en el dispositivo. Para saber cómo configurar el dispositivo para la administración de iOS, consulte [Configurar la administración de dispositivos iOS y Mac](Set up iOS and Mac device management.md).
+* **Paso 1:** Asegúrese de que la **administración de iOS** está configurada en el dispositivo. Para saber cómo configurar el dispositivo para la administración de iOS, consulte [Configurar la administración de dispositivos iOS y Mac](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
 * **Paso 2:** **Vuelva a firmar** la aplicación de iOS Lookout for Work. Lookout distribuye su aplicación Lookout for Work de iOS fuera de la tienda App Store de iOS. **Antes de distribuir la aplicación**, deberá volver a firmar la aplicación con su certificado de desarrollador empresarial de iOS. Para saber cómo volver a firmar las aplicaciones Lookout for Work de iOS, consulte [el proceso de volver a firmar de la aplicación Lookout for Work de iOS](https://personal.support.lookout.com/hc/en-us/articles/114094038714) en el sitio de Lookout.
 
@@ -49,7 +49,7 @@ Seleccione la opción **Instalación requerida** para exigir que la aplicación 
   1.  Inicie sesión en el [portal de administración de Azure Active Directory](https://manage.windowsazure.com) y vaya a la página de aplicación.
   2.  Agregue la **aplicación Lookout for Work de iOS** como una **aplicación de cliente nativ**.
   ![captura de pantalla del cuadro de diálogo Agregar aplicaciones que muestra la opción de aplicación de cliente nativo](../media/mtp/aad-add-app.png)
-  
+
   3. Reemplace **com.lookout.enterprise.yourcompanyname** por el ID de agrupación del cliente que ha seleccionado cuando se registró el IPA.
   4.  Agregue un URI de redirección adicional: **&lt;companyportal://code/>** seguido de una versión codificada por URL del URI de redirección original.
   5.  Agregue los **permisos delegados** a la aplicación.
