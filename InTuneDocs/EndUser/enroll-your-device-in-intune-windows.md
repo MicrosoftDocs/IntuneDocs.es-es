@@ -5,7 +5,7 @@ keywords:
 author: Staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -26,8 +26,6 @@ ms.openlocfilehash: 4dae33a2991573cca778852ab81d3087fac97d80
 Si su empresa o centro educativo usa Microsoft Intune, puede inscribir un dispositivo Windows para obtener acceso al correo electrónico, a los archivos y a otros recursos de la empresa. Cuando se inscriben los dispositivos, la organización puede tener protegidos los datos corporativos. Para más información sobre la inscripción, vea [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) (¿Qué ocurre cuando se instala la aplicación de portal de empresa y se inscribe el dispositivo en Intune?) y [What your IT administrator can and can't see on your device](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) (¿Qué puede ver y no ver el administrador de TI en el dispositivo?).
 
 Para inscribirse, use el vínculo que corresponda al dispositivo que está usando:
-
-
 
 -  [Windows 10 Mobile y Windows 10 Escritorio](enroll-your-w10-phone-or-w10-pc-windows.md)
 -  [Windows 8.1 o Windows RT 8.1](enroll-your-w81-or-rt81-windows.md)
