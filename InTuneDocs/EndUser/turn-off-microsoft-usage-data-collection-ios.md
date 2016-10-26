@@ -2,8 +2,8 @@
 title: "Desactivar la recopilación de datos de uso de Microsoft para iOS | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
