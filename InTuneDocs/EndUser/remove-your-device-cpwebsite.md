@@ -1,8 +1,9 @@
 ---
 title: Quitar un dispositivo del Portal de empresa | Microsoft Intune
-description: 
+description: Quitar un dispositivo del portal de empresa
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 1e555beced073c6c2f2fcfe271992f3255a6c8ed
+ms.sourcegitcommit: 5a0f3e42568634a4c5369919ad4feaf1be4b941e
+ms.openlocfilehash: 4c0186214893e9a056e331e7ec081dbdbee3a71e
 
 
 ---
@@ -23,28 +24,26 @@ ms.openlocfilehash: 1e555beced073c6c2f2fcfe271992f3255a6c8ed
 
 # Quitar un dispositivo del Portal de empresa
 
-Si decide que ya no quiere que Intune y el administrador de TI administren un dispositivo, puede quitarlo del Portal de empresa mediante el [sitio web del Portal de empresa](http://portal.manage.microsoft.com). El sitio web del Portal de empresa es una página web que puede usar para administrar equipos y dispositivos que haya inscrito en Intune y para realizar la mayoría de las tareas que se pueden realizar con la aplicación Portal de empresa.
+Si decide que ya no quiere que Intune y el administrador de TI administren un dispositivo, puede quitarlo del Portal de empresa mediante el [sitio web del portal de empresa](http://portal.manage.microsoft.com). El sitio web del portal de empresa es una página web que puede usar para administrar equipos y dispositivos que haya inscrito en Intune. En el sitio de portal de empresa, puede realizar la mayoría de las tareas disponibles en la aplicación de portal de empresa.
 
 Si quita un dispositivo, ya no aparecerá en el Portal de empresa y es posible que también pierda el acceso a los datos, las aplicaciones y el correo electrónico de la empresa o la escuela.
 
 Para quitar el dispositivo:
 
-1.  Abra el [sitio web del Portal de empresa](http://portal.manage.microsoft.com) y puntee en el dispositivo cuyo nombre quiere cambiar.
+1.  Abra el [sitio web del portal de empresa](http://portal.manage.microsoft.com) y pulse el nombre del dispositivo que quiera quitar.
 
 2.  Pulse en **Quitar**.
 
-    ![remove-device-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
+    ![Quitar la opción de dispositivo en el sitio web de Portal de empresa](./media/iwp-screen-with-all-options.png)
 
-3. Lea el mensaje de advertencia, que indica qué sucederá si quita un dispositivo y, a continuación, puntee **Quitar** para quitar el dispositivo del portal de empresa.
+3. Lea el mensaje de advertencia y después pulse **Quitar** para quitar el dispositivo del portal de empresa.
 
 Se quita el dispositivo.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para encontrar la información de contacto del administrador, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

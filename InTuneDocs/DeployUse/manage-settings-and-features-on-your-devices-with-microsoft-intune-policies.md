@@ -3,8 +3,9 @@ title: "Administrar la configuración de dispositivos con directivas | Microsoft
 description: "Use Intune para crear e implementar directivas que controlen la configuración y las características en los dispositivos inscritos que administre."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fa665c758460b8bbd95b237da6a22eda741b8b95
-ms.openlocfilehash: 0dc10ea029d078840a584424f7900f340189b960
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: 058843a1cdd0ca4c32c7cc4d7a901e7547da633e
 
 
 ---
@@ -61,6 +62,7 @@ Para obtener una lista completa de las directivas de Intune, consulte [Microsoft
 
     - [Configuración para dispositivos iOS](ios-policy-settings-in-microsoft-intune.md)
     - [Configuración de dispositivos Android](android-policy-settings-in-microsoft-intune.md)
+    - [Configuración para dispositivos Android for Work](android-for-work-policy-settings-in-microsoft-intune.md)
     - [Configuración de dispositivos Windows 8 y Windows 8.1](windows-configuration-policy-settings-in-microsoft-intune.md)
     - [Configuración de dispositivos Windows Phone 8.1](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
     - [Configuración de escritorios y dispositivos móviles Windows 10](windows-10-policy-settings-in-microsoft-intune.md)
@@ -115,7 +117,6 @@ Si un dispositivo no se conecta para recibir la directiva una vez enviada la pri
 - iOS y Mac OS X: cada 6 horas.
 - Android: cada 8 horas.
 - Windows Phone: cada 8 horas.
-- Dispositivos Windows RT inscritos: cada 24 horas.
 - Equipos con Windows 8.1 y Windows 10 inscritos como dispositivos: cada 8 horas.
 
 Si el dispositivo se acaba de inscribir, la frecuencia de conexión será más frecuente, como se indica a continuación:
@@ -212,6 +213,6 @@ Vea [Directivas de solución de problemas en Microsoft Intune](/intune/troublesh
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

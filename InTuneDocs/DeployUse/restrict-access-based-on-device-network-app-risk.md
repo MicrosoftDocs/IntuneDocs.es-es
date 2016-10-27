@@ -1,8 +1,9 @@
 ---
-title: "Restringir el acceso mediante la protección contra amenazas móviles | Microsoft Intune"
+title: "Restringir el acceso mediante la protección contra amenazas de dispositivo | Microsoft Intune"
 description: "Restrinja el acceso a recursos de la empresa en función del riesgo del dispositivo, la red y la aplicación."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
@@ -13,30 +14,31 @@ ms.assetid: 725d9e40-e70c-461a-9413-72ff1b89a938
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c3cf5e6b32ad24d4972fd147331dda7d2d43e8c6
-ms.openlocfilehash: d4eadb73aac14a375f41c434a4303a885bfbae64
+ms.sourcegitcommit: 92422c2937c608d1aa6c9d11517fa08e4a8c7798
+ms.openlocfilehash: a3c7e7cfef6223103fe0588f900f164635b042aa
 
 
 ---
 
 # Restringir el acceso a recursos de la empresa en función del riesgo del dispositivo, la red y la aplicación
-Puede controlar el acceso desde dispositivos móviles a recursos corporativos en función de la evaluación de riesgos efectuada por Lookout, una solución de protección contra amenazas móviles (MTP) integrada en Microsoft Intune. El riesgo se basa en la telemetría que recopila el servicio Lookout MTP de los dispositivos sobre vulnerabilidades del sistema operativo (SO), aplicaciones malintencionadas instaladas y perfiles de red. Según la evaluación de riesgos, se pueden configurar directivas de acceso condicional de Intune y permitir o bloquear los dispositivos definidos como no conformes debido a las amenazas detectadas en ellos.  De momento esto solo se admite en dispositivos **Android** con versiones **4.1 y posteriores** e inscritos en Microsoft Intune.  
+Puede controlar el acceso desde dispositivos móviles a recursos corporativos en función de la evaluación de riesgos efectuada por Lookout, una solución de protección contra amenazas de dispositivo integrada en Microsoft Intune. El riesgo se basa en la telemetría que recopila el servicio Lookout de los dispositivos sobre vulnerabilidades del sistema operativo (SO), aplicaciones malintencionadas instaladas y perfiles de red malintencionados. Según la evaluación de riesgos notificada por Lookout mediante las directivas de cumplimiento de Intune, se pueden configurar directivas de acceso condicional de Intune y permitir o bloquear los dispositivos definidos como no conformes debido a las amenazas detectadas en ellos.  De momento esto se admite en dispositivos **Android** con versiones **4.1 y posteriores** y dispositivos que ejecutan **iOS 8 y posteriores**. Estos dispositivos se deben inscribir en Microsoft Intune.  Para obtener información sobre las plataformas y los lenguajes que admite Lookout, consulte este [artículo](https://personal.support.lookout.com/hc/en-us/articles/114094140253).
 ## ¿Qué problema soluciona esto?
 Las empresas y organizaciones necesitan proteger datos confidenciales frente a amenazas emergentes que incluyen amenazas físicas, basadas en aplicaciones y basadas en redes, así como frente a vulnerabilidades del sistema operativo.
 
 Históricamente, las empresas y organizaciones han tenido un papel activo a la hora de proteger los equipos frente a ataques malintencionados. La movilidad es un área emergente que a menudo no se protege. Aunque las plataformas móviles cuentan con protección integrada del sistema operativo mediante técnicas como el aislamiento de aplicaciones y las tiendas de aplicaciones de consumidor seguras, estas plataformas siguen siendo vulnerables a ataques sofisticados. Como los empleados cada vez usan más los dispositivos móviles para trabajar y necesitan acceder a información que puede ser confidencial y valiosa, estos dispositivos tienen que protegerse frente a una serie de ataques sofisticados.
 
-Intune ofrece la posibilidad de controlar el acceso a los recursos y los datos de la empresa según la evaluación de riesgos que proporcionan las soluciones MTP como Lookout.
+Intune ofrece la posibilidad de controlar el acceso a los recursos y los datos de la empresa según la evaluación de riesgos que proporcionan las soluciones de protección contra amenazas de dispositivo como Lookout.
 
-## ¿Cómo contribuyen la protección contra amenazas móviles de Lookout e Intune a proteger los recursos de empresa?
-La aplicación móvil de Lookout (Lookout for Work), que se ejecuta en dispositivos móviles, captura la telemetría del sistema de archivos, la pila de red y los dispositivos y las aplicaciones (si está disponible) y la envía al servicio de nube de protección contra amenazas móviles (MTP) de Lookout para calcular un riesgo de dispositivo agregado de amenazas móviles. También puede cambiar la clasificación de nivel de riesgo de las amenazas en la consola MTP para satisfacer sus requisitos.  
-La directiva de cumplimiento normativo de Intune ahora incluye una nueva regla de protección contra amenazas móviles de Lookout que se basa en la evaluación de riesgos de Lookout MTP. Cuando esta regla está habilitada, Microsoft Intune evalúa la conformidad del dispositivo con la directiva habilitada.
+## ¿Cómo contribuyen la protección contra amenazas de dispositivo de Lookout e Intune a proteger los recursos de empresa?
+La aplicación móvil de Lookout (Lookout for Work), que se ejecuta en dispositivos móviles, captura la telemetría del sistema de archivos, la pila de red y los dispositivos y las aplicaciones (si está disponible) y la envía al servicio en la nube de protección contra amenazas de dispositivo de Lookout para calcular un riesgo de dispositivo agregado de amenazas móviles. También puede cambiar la clasificación de nivel de riesgo de las amenazas en la consola de Lookout para satisfacer sus requisitos.  
+
+La directiva de cumplimiento de Intune ahora incluye una nueva regla de protección contra amenazas móviles de Lookout que se basa en la evaluación de los riesgos de las amenazas de dispositivo de Lookout. Cuando esta regla está habilitada, Microsoft Intune evalúa la conformidad del dispositivo con la directiva habilitada.
 
 Si se determina que el dispositivo no es conforme con la directiva de cumplimiento normativo, se puede bloquear el acceso a recursos como Exchange Online y SharePoint Online mediante directivas de acceso condicional. Cuando se bloquea el acceso, se proporciona a los usuarios finales un tutorial para ayudarles a resolver el problema y obtener acceso a los recursos de la empresa. Este tutorial se inicia a través de la aplicación Lookout for Work.
 
 ## Escenarios de ejemplo
 Estos son algunos escenarios frecuentes:
-### Amenaza de aplicaciones malintencionadas:
+### Control del acceso basado en la amenaza de aplicaciones malintencionadas:
 Cuando se detectan aplicaciones malintencionadas como malware en el dispositivo, puede evitar que estos dispositivos:
 * Se conecten al correo electrónico corporativo antes de solucionar la amenaza.
 * Sincronicen archivos corporativos mediante la aplicación OneDrive para el trabajo.
@@ -48,7 +50,7 @@ Cuando se detectan aplicaciones malintencionadas como malware en el dispositivo,
 **Dispositivo desbloqueado que puede acceder a recursos de la empresa cuando se soluciona la amenaza:**
 
 ![diagrama en el que se muestra la directiva de acceso condicional concediendo acceso cuando se determina que, tras la solución, el dispositivo es conforme](../media/mtp/malicious-apps-unblocked.png)
-### Amenaza para la red:
+### Control del acceso basado en amenazas a la red:
 Detecte amenazas para la red como ataques de tipo Man-in-the-middle y restrinja el acceso a las redes Wi-Fi según el riesgo del dispositivo.
 
 **Acceso bloqueado a la red a través de Wi-Fi:**
@@ -57,7 +59,7 @@ Detecte amenazas para la red como ataques de tipo Man-in-the-middle y restrinja 
 **Acceso concedido tras la solución:**
 
 ![diagrama en el que se muestra el acceso condicional permitiendo el acceso tras la corrección de la amenaza](../media/mtp/network-wifi-unblocked.png)
-### Amenaza para la red (evita el acceso a SharePoint Online):
+### Control del acceso a SharePoint Online basado en amenazas a la red:
 
 Detecte amenazas para la red como ataques de tipo Man-in-the-middle y evite la sincronización de archivos corporativos según el riesgo del dispositivo.
 
@@ -80,6 +82,6 @@ Estos son los principales pasos para implementar esta solución:
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

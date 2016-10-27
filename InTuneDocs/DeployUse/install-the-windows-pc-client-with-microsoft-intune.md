@@ -3,6 +3,7 @@ title: Instalar el software cliente de PC | Microsoft Intune
 description: "Siga esta guía para administrar sus equipos Windows con el software cliente de Microsoft Intune."
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: arob98
 ms.date: 07/19/2016
 ms.topic: article

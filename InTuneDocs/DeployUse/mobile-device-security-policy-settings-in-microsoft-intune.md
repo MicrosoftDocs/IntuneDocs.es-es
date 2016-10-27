@@ -3,8 +3,9 @@ title: "Configuración de directivas de seguridad de dispositivos móviles | Mic
 description: "Use Intune para configurar una amplia variedad de opciones que puede implementar en los dispositivos administrados de su organización."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/12/2016
+ms.date: 10/11/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 388426657c5fa96289f5e14a85e8c299e4b50037
-ms.openlocfilehash: ac19128499f078b4fe7d16713f18c78b248d38db
+ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
+ms.openlocfilehash: 279b2fbcbdc7bace99d99eca5bc766972dcea3b8
 
 
 
@@ -40,6 +41,7 @@ Puede crear e implementar directivas de seguridad de dispositivos móviles para 
 
 > [!NOTE]
 > Algunas opciones no son aplicables a algunos dispositivos. Vea las tablas siguientes para obtener una lista completa de las opciones que puede configurar.
+> Desde octubre de 2016, Microsoft Intune dejará de ofrecer soporte a las aplicaciones del portal de empresa de Windows 8. Microsoft Intune también dejará de ofrecer soporte para la plataforma Windows Phone 8 y WinRT. Como consecuencia, no podrá inscribir ni actualizar ningún dispositivo Windows Phone 8 o WinRT. Puede seguir administrando los dispositivos Windows Phone 8, WinRT y Windows 8 que ya estén inscritos. Actualice los dispositivos Windows Phone 8 y Windows 8 a Windows 8.1 y Windows Phone 8.1 y use las aplicaciones de portal de empresa de Windows 8.1 y Windows Phone 8.1 correspondientes para poder seguir con la distribución de aplicaciones en estos dispositivos sin interrupciones.
 
 ## Configuración de seguridad
 
@@ -212,6 +214,6 @@ Cuando implementa una directiva de longitud de contraseña para dispositivos que
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

@@ -3,6 +3,7 @@ title: Multi-factor Authentication con Azure AD | Microsoft Intune
 description: "Cómo requerir Multi-factor Authentication en Azure AD para la inscripción de dispositivos."
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angerobe
 ms.date: 09/22/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Restringir el acceso al correo electrónico y a los servicios de O365 | 
 description: "En este tema se describe cómo se puede utilizar el condicional para permitir que únicamente los dispositivos que cumplan los requisitos puedan tener acceso al correo electrónico y los datos de la empresa en SharePoint Online y otros servicios."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article

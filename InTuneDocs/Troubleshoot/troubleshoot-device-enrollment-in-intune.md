@@ -3,6 +3,7 @@ title: "Solución de problemas con la inscripción de dispositivos | Microsoft I
 description: "Sugerencias para solucionar problemas de inscripción de dispositivos."
 keywords: 
 author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article

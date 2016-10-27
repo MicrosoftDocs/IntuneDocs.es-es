@@ -3,8 +3,9 @@ title: Aplicaciones permitidas y bloqueadas para KNOX | Microsoft Intune
 description: Perfil personalizado para crear una lista de aplicaciones permitidas y bloqueadas para KNOX
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 08/09/2016
+ms.date: 10/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65d2c9c1f5d81dae33422bd4bf7c0e2e21bb96e4
-ms.openlocfilehash: 937e291f193f61329598395baa63c24d7fefa25f
+ms.sourcegitcommit: c7679d624ba22b2a062ef2534a642e38a5f57fde
+ms.openlocfilehash: 273627573f58e1bde4fd19c548ce87639f25ca4b
 
 
 
@@ -23,7 +24,7 @@ ms.openlocfilehash: 937e291f193f61329598395baa63c24d7fefa25f
 
 Use los procedimientos de este tema para crear una directiva personalizada de Microsoft Intune que cree una de las siguientes opciones:
 
-- Una lista de aplicaciones bloqueadas que no se pueden ejecutar en el dispositivo. No se podrá ejecutar ninguna otra aplicación. Las aplicaciones de esta lista se bloquean y no se pueden ejecutar, aunque ya estuvieran instaladas en el momento en que se ha aplicado la directiva.
+- Una lista de aplicaciones bloqueadas que no se pueden ejecutar en el dispositivo. Las aplicaciones de esta lista se bloquean y no se pueden ejecutar, aunque ya estuvieran instaladas en el momento en que se ha aplicado la directiva.
 - Una lista de aplicaciones que los usuarios del dispositivo pueden instalar desde la tienda Google Play. Solo las aplicaciones que enumere se pueden instalar. Desde la tienda no se puede instalar ninguna otra aplicación.
 
 Esta configuración solo se puede usar en dispositivos que ejecutan Samsung KNOX.
@@ -51,7 +52,8 @@ Esta configuración solo se puede usar en dispositivos que ejecutan Samsung KNOX
 
 4. Haga clic en **Aceptar** y, después, en **Guardar directiva**. 
 
->[SUGERENCIA] Puede encontrar el identificador del paquete de una aplicación dirigiéndose a la aplicación en Google Play Store. El identificador del paquete se incluye en la dirección URL de la página de la aplicación. Por ejemplo, el identificador del paquete de la aplicación Microsoft Word es **com.microsoft.office.word**.
+>[!TIP]
+> Puede encontrar el identificador del paquete de una aplicación dirigiéndose a la aplicación en Google Play Store. El identificador del paquete se incluye en la dirección URL de la página de la aplicación. Por ejemplo, el identificador del paquete de la aplicación Microsoft Word es **com.microsoft.office.word**.
 
 La próxima vez que se registre cada dispositivo de destino, se aplicará la configuración de la aplicación.
 
@@ -70,6 +72,6 @@ Cuando se selecciona una directiva implementada, puede ver más información ace
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

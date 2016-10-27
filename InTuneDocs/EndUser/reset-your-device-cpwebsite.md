@@ -3,6 +3,7 @@ title: Restablecer un dispositivo desde el sitio web del Portal de empresa | Mic
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

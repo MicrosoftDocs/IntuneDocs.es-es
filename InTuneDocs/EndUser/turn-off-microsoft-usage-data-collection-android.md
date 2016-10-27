@@ -3,6 +3,7 @@ title: "Desactivar la recopilación de datos de uso de Microsoft para Android | 
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 63c14e31f9a97d263c59aa6e08883e7f1f205444
+ms.sourcegitcommit: 1e00d2d1e8e46b512eb70c2c594712b9505541ec
+ms.openlocfilehash: 01fce3200a5aa481dde6cd560cbad426592ef381
 
 
 ---
@@ -28,8 +29,6 @@ Para mejorar sus productos y servicios, Microsoft recopila automáticamente dato
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

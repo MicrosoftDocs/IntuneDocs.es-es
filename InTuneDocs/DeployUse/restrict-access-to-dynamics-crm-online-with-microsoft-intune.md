@@ -3,6 +3,7 @@ title: "Restringir el acceso al correo electrónico a Dynamics CRM Online | Micr
 description: "Proteja y controle el acceso a Dynamics CRM en línea con el acceso condicional."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article

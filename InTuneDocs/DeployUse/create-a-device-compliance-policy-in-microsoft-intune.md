@@ -3,6 +3,7 @@ title: "Creación de una directiva de cumplimiento normativo de dispositivos | M
 description: "Cree una directiva de cumplimiento normativo para ayudar a proteger los dispositivos móviles y equipos utilizados para acceder a los datos de su compañía."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article

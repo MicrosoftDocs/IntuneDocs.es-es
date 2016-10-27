@@ -3,6 +3,7 @@ title: "Uso de directivas de configuración de aplicaciones móviles iOS | Micro
 description: "Use las directivas de configuración de aplicaciones móviles de Intune para proporcionar los valores de configuración que podrían ser necesarios cuando los usuarios ejecutan una aplicación iOS."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article

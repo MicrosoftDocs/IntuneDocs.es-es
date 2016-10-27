@@ -2,9 +2,10 @@
 title: Error evaluating device (Error al evaluar el dispositivo) | Microsoft Intune
 description: 
 keywords: 
-author: staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
-ms.date: 06/03/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,22 +15,20 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 7f07968b599fa28995c28c1857e0f9cc0dedae48
+ms.sourcegitcommit: 703878a70227716213f5a25b1b5dfa99fce42ee5
+ms.openlocfilehash: 43688a00d61785ddabdfef3c45bd30a533a85fe7
 
 
 ---
 
 
 # Error al evaluar el dispositivo
-Se encontró el dispositivo que no es compatible con uno o más de las directivas de su empresa y un error al evaluar el dispositivo para esta condición.
+Se encontró que el dispositivo no es compatible con una o varias de las directivas de su empresa, pero no se puede mostrar el error ahora ya que el sistema tuvo un problema al intentar evaluar su dispositivo.  
 
-Para solucionar este problema, espere unos minutos y, a continuación, puntee en **comprobar el cumplimiento de normas**.
-
-Si el problema persiste, póngase en contacto con el Administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+Para solucionar este problema, espere unos minutos y, a continuación, puntee en **comprobar el cumplimiento de normas**. Si el problema persiste, póngase en contacto con el Administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

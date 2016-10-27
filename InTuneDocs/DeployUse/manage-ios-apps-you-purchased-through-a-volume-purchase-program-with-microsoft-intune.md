@@ -3,6 +3,7 @@ title: Administrar aplicaciones iOS compradas por volumen | Microsoft Intune
 description: "Use Intune para administrar las aplicaciones que compra por volumen a Apple importando la información de licencia desde la App Store, realizando el seguimiento de la cantidad de licencias usadas y evitando instalar más copias de la aplicación de las que posee."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/01/2016
 ms.topic: article
