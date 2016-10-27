@@ -2,9 +2,10 @@
 title: "¿Qué puede ver el administrador de TI cuando inscribe el dispositivo en Intune? | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: 2631541ea974769308aea30d2b37a3a79c22db99
+ms.sourcegitcommit: f69d2b222e9409a79dae07fd77f29c46876f11cb
+ms.openlocfilehash: 38a8a92581a990c321c6c57bfaa5a506733eb1b4
 
 
 ---
@@ -57,12 +58,10 @@ Cuando inscribe su dispositivo Windows en Intune, el administrador de TI tiene p
 
 -   Fabricante
 
-Puede [obtener más información](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows).
+Para más información, consulte [¿Qué ocurrirá cuando instale la aplicación Portal de empresa e inscriba el dispositivo Windows en Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows).
 
 
 
-
-
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

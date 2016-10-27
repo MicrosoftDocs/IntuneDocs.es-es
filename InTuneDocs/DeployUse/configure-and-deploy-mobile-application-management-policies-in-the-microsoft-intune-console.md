@@ -3,6 +3,7 @@ title: "Configuración de directivas de MAM en la consola Intune | Microsoft Int
 description: "Las directivas de administración de aplicaciones móviles de Microsoft Intune permiten modificar la función de las aplicaciones que se implementan para que, de este modo, estén en consonancia con las directivas de seguridad y cumplimiento de la compañía."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/06/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d9e08429fb6c834476fd0029d559059c5132afca
-ms.openlocfilehash: a4ab7287b2328fccbea5203bbfe5d87cbfc912b8
+ms.sourcegitcommit: 9a442d9472159757333a9ebe081d86eac9907cdc
+ms.openlocfilehash: d7978e558c68ad3209f1503619a9113dba126028
 
 
 ---
@@ -37,7 +38,7 @@ A diferencia de otras directivas de Intune, las directivas de administración de
 
 Para restringir una aplicación, esta debe incorporar el SDK para aplicaciones de Microsoft Intune. Existen tres métodos de obtención de este tipo de aplicación:
 
--   **Usar una aplicación administrada por directiva**. Una aplicación administrada por directiva tiene integrado el SDK de la aplicación. Para agregar este tipo de aplicación, especifique un vínculo a la aplicación desde una tienda de aplicaciones como, por ejemplo, iTunes Store o Google Play. No es necesario ningún procesamiento adicional para este tipo de aplicación. Para obtener más información, vea la [lista de aplicaciones que puede usar con las directivas de administración de aplicaciones móviles de Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx).
+-   **Usar una aplicación administrada por directiva**. Una aplicación administrada por directiva tiene integrado el SDK de la aplicación. Para agregar este tipo de aplicación, especifique un vínculo a la aplicación desde una tienda de aplicaciones como, por ejemplo, iTunes Store o Google Play. No es necesario ningún procesamiento adicional para este tipo de aplicación. Para obtener más información, vea la [lista de aplicaciones que puede usar con las directivas de administración de aplicaciones móviles de Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps).
 
 -   **Usar una aplicación ajustada**. Una aplicación ajustada es una aplicación que se vuelve a empaquetar para incluir el SDK de la aplicación con la herramienta de ajuste de aplicaciones de Microsoft Intune. Esta herramienta se usa normalmente para procesar aplicaciones de empresa que se hayan creado internamente. No se puede usar para procesar aplicaciones que se hayan descargado desde la tienda de aplicaciones. Para obtener más información, vea [Preparar aplicaciones iOS para la administración de aplicaciones móviles con la herramienta de ajuste de aplicaciones de Microsoft Intune](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) y [Preparar aplicaciones de Android para la administración de aplicaciones móviles con la herramienta de ajuste de aplicaciones de Microsoft Intune](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
 
@@ -136,7 +137,7 @@ Una vez que haya comprobado que la aplicación se carga correctamente, continúe
     |**Período de gracia sin conexión**|Si el dispositivo está desconectado, especifique el período de tiempo que debe transcurrir antes de que se vuelvan a comprobar los requisitos de acceso de la aplicación.|
     |**Cifrar datos de aplicación**|Esta configuración especifica que se cifren todos los datos asociados a esta aplicación. Esto incluye datos almacenados externamente, como tarjetas SD.<br /><br />**Cifrado para iOS**<br /><br />En el caso de aplicaciones que están asociadas a una directiva de administración de aplicaciones móviles de Intune, los datos se cifran en reposo con el cifrado de nivel de dispositivo que proporciona el sistema operativo. Esta opción se habilita a través de la directiva de PIN del dispositivo que establece el administrador de TI. Cuando se requiere un PIN, los datos se cifrarán según la configuración de la directiva de administración de aplicaciones móviles. Como se indica en la documentación de Apple, [los módulos que usa iOS están certificados mediante FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Cifrado para Android**<br /><br />En el caso de aplicaciones que están asociadas a una directiva de administración de aplicaciones móviles de Intune, Microsoft proporciona el cifrado. Los datos se cifran de forma sincrónica durante las operaciones de E/S de archivo.  Siempre se cifrará el contenido del almacenamiento del dispositivo. El método de cifrado no está certificado mediante FIPS 140-2.|
     |**Bloquear captura de pantalla** (solo en dispositivos Android)|Esta configuración especifica que las funciones de captura de pantalla del dispositivo se bloquean cuando alguien usa esta aplicación.|
-    
+
 4. Cuando termine, seleccione **Guardar directiva**.
 
 La nueva directiva aparece en el nodo **Directivas de configuración** del área de trabajo **Directiva** .
@@ -193,6 +194,6 @@ En casos en los que el dispositivo o el usuario recibe dos directivas en conflic
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

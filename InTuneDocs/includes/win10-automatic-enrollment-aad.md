@@ -21,7 +21,7 @@ Con la inscripción automática, los usuarios pueden inscribir en Intune equipos
 
 5. Especifique las direcciones URL de Intune:
 
-  - **Dirección URL de inscripción de MDM**: use `https://enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc` para la dirección URL de inscripción de MDM.
+  - **Dirección URL de inscripción de MDM**: use el valor predeterminado.
   - **Dirección URL de las condiciones de uso de MDM**: use el valor predeterminado. Esta dirección URL muestra las condiciones de uso de los usuarios al efectuar la inscripción de los dispositivos.
   - **Dirección URL de cumplimiento de MDM**: use el valor predeterminado. Si un dispositivo no sigue el cumplimiento, aparecerá el mensaje **Acceso denegado** con esta dirección URL. La dirección URL señala a una página que indica al usuario el motivo por el que el dispositivo no cumple la directiva y cómo puede corregir esta situación.
 
@@ -34,6 +34,6 @@ Con la inscripción automática, los usuarios pueden inscribir en Intune equipos
 7. Elija **Guardar**.
 
 
-<!--HONumber=Aug16_HO5-->
+<!--HONumber=Oct16_HO2-->
 
 

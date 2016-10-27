@@ -4,7 +4,7 @@ description:
 keywords: 
 author: staciebarker
 manager: angrobe
-ms.date: 5/25/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +12,8 @@ ms.technology:
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 74446336b98fb0c88617ac397bdafc022d39f6f6
+ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
+ms.openlocfilehash: 1b9401a01a8621ebc03102757b0c839702e48f06
 
 
 ---
@@ -26,7 +26,7 @@ El administrador de TI puede establecer más de un requisito para las contraseñ
 
 Si tiene problemas para establecer una contraseña que cumpla todos los requisitos, póngase en contacto con el administrador de TI para obtener ayuda.
 
-## Para cambiar la contraseña en Windows Phone 8 o 8.1:
+## Para cambiar la contraseña en Windows Phone 8.1:
 
 1. En la **pantalla de inicio**, pulse **Configuración** y luego seleccione **Pantalla de bloqueo**.
 2. Desplácese hacia abajo hasta **Contraseña** y pulse **Cambiar contraseña**.
@@ -34,7 +34,7 @@ Si tiene problemas para establecer una contraseña que cumpla todos los requisit
 4. Escriba la nueva contraseña en el campo **Nueva contraseña** y luego vuelva a escribirla en el campo **Confirmar contraseña**.
 4. Pulse **Listo**.
 
-## Para establecer la contraseña en Windows Phone 8 o 8.1:
+## Para establecer la contraseña en Windows Phone 8.1:
 
 1. En la **pantalla de inicio**, pulse **Configuración** y luego seleccione **Pantalla de bloqueo**.
 2. Desplácese hacia abajo hasta **Contraseña** y deslice la barra **Contraseña** hasta **Activar**.
@@ -43,11 +43,10 @@ Si tiene problemas para establecer una contraseña que cumpla todos los requisit
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
-### Consulte también
-[Usar un dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Aug16_HO4-->
+
+<!--HONumber=Oct16_HO2-->
 
 

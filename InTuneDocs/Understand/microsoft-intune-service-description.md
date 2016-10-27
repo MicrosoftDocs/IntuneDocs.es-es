@@ -3,6 +3,7 @@ title: "Descripción del servicio | Microsoft Intune"
 description: "Intune es un servicio basado en la nube que le ayuda a administrar equipos con Windows, iOS y Android y dispositivos móviles de Windows."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article

@@ -2,7 +2,8 @@
 title: Inscribir el dispositivo Windows Phone 8.1 en Intune | Microsoft Intune
 description: "Describe cómo inscribir un dispositivo Windows 8.1 en Intune."
 keywords: 
-author: Staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: d1c65c826a978fc5d263cfc0ed4eeee0854d0c3b
+ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
+ms.openlocfilehash: 843011aca535d8416b931f43bb622bc5c01ed546
 
 
 ---
@@ -22,7 +23,7 @@ ms.openlocfilehash: d1c65c826a978fc5d263cfc0ed4eeee0854d0c3b
 
 # Inscribir el dispositivo Windows Phone 8.1 en Intune
 
-Si su empresa o centro educativo usa Microsoft Intune, puede inscribir los dispositivos para obtener acceso al correo electrónico, a los archivos y a otros recursos de la empresa. Cuando los dispositivos están inscritos, la organización puede tener protegidos los datos corporativos. Para más información sobre la inscripción, vea [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) (¿Qué ocurre cuando se instala la aplicación de portal de empresa y se inscribe el dispositivo en Intune?) y [What your IT administrator can and can't see on your device](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) (¿Qué puede ver y no ver el administrador de TI en el dispositivo?).
+Si su empresa o centro educativo usa Microsoft Intune, puede inscribir los dispositivos para obtener acceso al correo electrónico, a los archivos y a otros recursos de la empresa. Cuando se inscriben los dispositivos, la organización puede tener protegidos los datos corporativos. Para más información sobre la inscripción, vea [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) (¿Qué ocurre cuando se instala la aplicación de portal de empresa y se inscribe el dispositivo en Intune?) y [What your IT administrator can and can't see on your device](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) (¿Qué puede ver y no ver el administrador de TI en el dispositivo?).
 
 
 Para inscribir el dispositivo Phone 8.1 en Intune, siga las instrucciones que se ajusten a su empresa:
@@ -36,7 +37,7 @@ Instale la aplicación del Portal de empresa en su dispositivo:
 
 1.  Pulse en **Inicio** &gt; **Tienda**.
 
-2.  Pulse en **Buscar** y escriba **portal de empresa**.
+2.  Pulse **Buscar** y escriba **portal de empresa**.
 
 3.  En la lista de resultados, pulse en **Portal de empresa**.
 
@@ -66,7 +67,7 @@ Inscriba su dispositivo:
 
     ![Pantalla Configuración de área de trabajo](./media/WP81-enroll-3-workplace-add-acct.png)
 
-7.  Escriba información adicional cuando se le solicite y luego pulse en **Iniciar sesión** para completar la inscripción. Ahora debería aparecer su cuenta de área de trabajo en la página **Configuración** &gt; **Área de trabajo**.
+7.  Escriba más información cuando se le solicite y luego pulse en **Iniciar sesión** para finalizar la inscripción. Ahora debería aparecer su cuenta de área de trabajo en la página **Configuración** &gt; **Área de trabajo**.
 
     ![Pantalla de cuenta agregada](./media/WP81-enroll-4-account-added.png)
 
@@ -76,7 +77,7 @@ Inscriba su dispositivo:
 
 2.  Pulse en **Agregar cuenta** y luego inicie sesión con su cuenta laboral.
 
-3.  Escriba información adicional cuando se le solicite y luego pulse en **Iniciar sesión** para completar la inscripción.
+3.  Escriba más información cuando se le solicite y luego pulse en **Iniciar sesión** para finalizar la inscripción.
 
 4.  Si se le pide que instale la aplicación de empresa o un concentrador, asegúrese de que esté activada la casilla correspondiente y pulse en **Listo**.
 
@@ -86,7 +87,6 @@ Si su administrador de TI configuró el Portal de empresa para que se instale du
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

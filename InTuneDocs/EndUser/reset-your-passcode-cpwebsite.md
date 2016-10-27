@@ -14,8 +14,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 57e3175af6364e7dacbf8941f10292fc9dc58b15
+ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
+ms.openlocfilehash: 381364e42430842032ced3b5c8c9cc8de19e8186
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: 57e3175af6364e7dacbf8941f10292fc9dc58b15
 Si pierde el PIN o la contraseña de un dispositivo inscrito en Intune, puede usar el [sitio web del portal de empresa](http://portal.manage.microsoft.com) para restablecerlos. El sitio web del Portal de empresa es una página web que puede usar para administrar equipos y dispositivos que haya inscrito en Intune y para realizar la mayoría de las tareas que se pueden realizar con la aplicación Portal de empresa.
 
 > [!NOTE]
-> Según la configuración de Intune que haya realizado el administrador de TI, es posible que no vea el botón Restablecer código de acceso en el sitio web del portal de empresa. El restablecimiento del código de acceso no se admite en dispositivos Windows 8.1 y Windows RT.
+> Según la configuración de Intune que haya realizado el administrador de TI, es posible que no vea el botón Restablecer código de acceso en el sitio web del portal de empresa. El restablecimiento del código de acceso no se admite en dispositivos Windows 8.1.
 
 Para restablecer el código de acceso:
 
@@ -64,6 +64,6 @@ Para restablecer el código de acceso:
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO2-->
 
 

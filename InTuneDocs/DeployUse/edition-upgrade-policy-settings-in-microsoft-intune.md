@@ -3,6 +3,7 @@ title: "Configuración de la directiva de actualización de edición de Windows 
 description: "Aprenda a actualizar automáticamente dispositivos de Windows 10 a la versión más reciente con Intune."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/30/2016
 ms.topic: article

@@ -3,6 +3,7 @@ title: "Restricción del acceso de correo electrónico a Exchange Online | Micro
 description: "Proteja y controle el acceso al correo electrónico de empresa en Exchange Online con el acceso condicional."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
-ms.openlocfilehash: e840783f3c50155a6f4f8801047ed474074218f6
+ms.sourcegitcommit: af4c84d0e317f5903d22cdfead9ce0ab4fbddc8f
+ms.openlocfilehash: 602be42b75c091cb43359f30256d51eabe597008
 
 
 ---
@@ -64,7 +65,7 @@ En el diagrama siguiente se muestra el flujo que usan las directivas de acceso c
 ## Compatibilidad con dispositivos móviles
 Puede restringir el acceso al correo electrónico de Exchange Online desde **Outlook** y otras **aplicaciones que usan la autenticación moderna**:
 
-- Android 4.0 y versiones posterior, Samsung Knox Standard 4.0 y versiones posteriores
+- Android 4.0 y versiones posteriores, Samsung Knox Standard 4.0 y versiones posteriores, y Android for Work
 - iOS 8.0 y versiones posteriores
 - Windows Phone 8.1 y versiones posteriores
 
@@ -225,6 +226,9 @@ Solo se evalúan los grupos a los que se aplica la directiva de acceso condicion
 
 5.  En **Aplicaciones de Exchange ActiveSync**, puede elegir bloquear el acceso a Exchange Online de dispositivos no conformes. También puede seleccionar si quiere permitir o bloquear el acceso al correo cuando el dispositivo no ejecuta una plataforma compatible. Las plataformas compatibles incluyen Android, iOS, Windows y Windows Phone.
 
+ Dispositivos **Android for Work** de aplicaciones de Exchange Active Sync:
+ -  Solo se admiten las aplicaciones **Gmail** y **Nine Work** en el **perfil de trabajo** en los dispositivos Android for Work. Para que el acceso condicional funcione en dispositivos Android for Work, debe implementar un perfil de correo electrónico para la aplicación Gmail o Nine Work y también implementarla como una instalación **requerida**. 
+
 6.  En **Grupos de destino**, seleccione los grupos de seguridad de Active Directory a los que se aplicará la directiva. Puede elegir como destino todos los usuarios o puede seleccionar una lista de grupos de usuarios.
 ![Captura de pantalla de la página de la directiva de acceso condicional de Exchange Online que muestra las opciones de grupo de destino y exento](../media/IntuneSA5eTargetedExemptedGroups.PNG)
     > [!NOTE]
@@ -263,6 +267,6 @@ En el panel de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], elija el 
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 
