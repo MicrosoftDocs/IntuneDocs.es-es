@@ -2,8 +2,8 @@
 title: "Enviar registros de datos de diagnóstico al administrador de TI mediante un cable USB | Microsoft Intune"
 description: "Envío de registros de datos mediante un cable USB"
 keywords: 
-author: barlan
-ms.author: barlan
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
@@ -22,7 +22,7 @@ ms.openlocfilehash: e26a97d52cc753f83eb49e3f733668eb83ef4932
 ---
 
 
-# Enviar registros de datos de diagnóstico al administrador de TI mediante un cable USB
+# <a name="send-diagnostic-data-logs-to-your-it-admin-using-a-usb-cable"></a>Enviar registros de datos de diagnóstico al administrador de TI mediante un cable USB
 
 Si desea enviar los registros de datos a su administrador de TI, puede enviar los registros mediante un equipo y un cable USB en lugar de hacerlo desde su dispositivo móvil.
 

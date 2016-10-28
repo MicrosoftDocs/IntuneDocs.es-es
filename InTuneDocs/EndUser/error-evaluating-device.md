@@ -2,8 +2,8 @@
 title: Error evaluating device (Error al evaluar el dispositivo) | Microsoft Intune
 description: 
 keywords: 
-author: barlan
-ms.author: barlan
+author: barlanmsft
+ms.author: barlanmsft
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
@@ -22,7 +22,7 @@ ms.openlocfilehash: 43688a00d61785ddabdfef3c45bd30a533a85fe7
 ---
 
 
-# Error al evaluar el dispositivo
+# <a name="error-evaluating-device"></a>Error al evaluar el dispositivo
 Se encontró que el dispositivo no es compatible con una o varias de las directivas de su empresa, pero no se puede mostrar el error ahora ya que el sistema tuvo un problema al intentar evaluar su dispositivo.  
 
 Para solucionar este problema, espere unos minutos y, a continuación, puntee en **comprobar el cumplimiento de normas**. Si el problema persiste, póngase en contacto con el Administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
