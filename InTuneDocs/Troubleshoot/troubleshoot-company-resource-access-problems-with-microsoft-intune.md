@@ -2,8 +2,8 @@
 title: Solucionar problemas de acceso a los recursos de la empresa | Microsoft Intune
 description: "Códigos de error y estado en este tema para ayudarle a solucionar problemas de acceso a los recursos."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 09/22/2016
 ms.topic: article
@@ -44,7 +44,7 @@ Si esta información no soluciona el problema, vea [How to get support for Micro
 |130 (APP_CI_ENFORCEMENT_ERROR)|Error de instalación de licencias MSADP||
 |Ningún estado (APP_CI_ENFORCEMENT_UNKNOWN)|n/a|Se desconoce el estado actualmente.|
 
-## <a name="company-resource-access-(common-errors)"></a>Acceso a recursos de la compañía (errores comunes)
+## <a name="company-resource-access-common-errors"></a>Acceso a recursos de la compañía (errores comunes)
 
 |Código de estado|Código de error hexadecimal|Mensaje de error|
 |---------------|--------------------------|-----------------|

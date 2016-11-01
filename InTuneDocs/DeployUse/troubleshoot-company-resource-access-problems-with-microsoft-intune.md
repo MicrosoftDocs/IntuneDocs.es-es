@@ -2,8 +2,8 @@
 title: Solucionar problemas de acceso a los recursos de la empresa | Microsoft Intune
 description: "Códigos de error y estado en este tema para ayudarle a solucionar problemas de acceso a los recursos."
 keywords: 
-author: Nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/06/2016
 ms.topic: article
@@ -20,12 +20,12 @@ ms.openlocfilehash: 98b93ca894cfc616b023a313e19c5553b2284769
 
 ---
 
-# Solucionar problemas de acceso a los recursos de la empresa con Microsoft Intune
+# <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Solucionar problemas de acceso a los recursos de la empresa con Microsoft Intune
 Use los códigos de error y de estado de este tema para que le resulte más fácil solucionar problemas cuando una acción de Microsoft Intune devuelva un código de error.
 
 Si esta información no soluciona el problema, vea [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico para Microsoft Intune) para conocer otras formas de obtener ayuda.
 
-## Códigos de estado de dispositivos de Windows administrados mediante MDM
+## <a name="status-codes-for-mdm-managed-windows-devices"></a>Códigos de estado de dispositivos de Windows administrados mediante MDM
 
 |Código de estado|Mensaje de error|Qué hacer|
 |---------------|-----------------|--------------|
@@ -44,7 +44,7 @@ Si esta información no soluciona el problema, vea [How to get support for Micro
 |130 (APP_CI_ENFORCEMENT_ERROR)|Error de instalación de licencias MSADP||
 |Ningún estado (APP_CI_ENFORCEMENT_UNKNOWN)|n/a|Se desconoce el estado actualmente.|
 
-## Acceso a recursos de la compañía (errores comunes)
+## <a name="company-resource-access-common-errors"></a>Acceso a recursos de la compañía (errores comunes)
 
 |Código de estado|Código de error hexadecimal|Mensaje de error|
 |---------------|--------------------------|-----------------|
@@ -73,7 +73,7 @@ Si esta información no soluciona el problema, vea [How to get support for Micro
 |-2016341111|0x87D11389|El dispositivo iOS ha devuelto un estado Inactivo inesperado|
 |-2016341112|0x87D11388|El dispositivo iOS está ocupado actualmente|
 
-## Errores devueltos por dispositivos iOS
+## <a name="errors-returned-by-ios-devices"></a>Errores devueltos por dispositivos iOS
 
 |Código de estado|Código de error hexadecimal|Mensaje de error|
 |---------------|--------------------------|-----------------|
@@ -283,7 +283,7 @@ Si esta información no soluciona el problema, vea [How to get support for Micro
 |-2016335111|0x87D12AF9|1001: Versión de perfil no admitido|
 |-2016335112|0x87D12AF8|1000: Perfil con formato incorrecto|
 
-## Códigos de respuesta OMA
+## <a name="oma-response-codes"></a>Códigos de respuesta OMA
 
 |Código de estado|Código de error hexadecimal|Mensaje de error|
 |---------------|--------------------------|-----------------|
@@ -368,7 +368,7 @@ Si esta información no soluciona el problema, vea [How to get support for Micro
 |-2016345912|0x87D100C8|el comando SyncML se realizó correctamente.|
 |-2016346011|0x87D10065|el comando SyncML se está realizando, pero todavía no ha finalizado.|
 
-### Pasos siguientes
+### <a name="next-steps"></a>Pasos siguientes
 Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el servicio de soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico de Microsoft Intune).
 
 
