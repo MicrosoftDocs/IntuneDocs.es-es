@@ -2,7 +2,8 @@
 title: "Existing company email account found (Cuenta de correo electrónico de empresa existente encontrada) | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,20 +15,21 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8eb98946c39b98d3c338b32a7d955818020ef478
-ms.openlocfilehash: f33287c51fb769505cd1fb4fcfe2bbc1e4da0ea2
+ms.sourcegitcommit: eebc35277aedabb2575b753afbaf9ea05b1555e8
+ms.openlocfilehash: 6b7123dc4ec0b7a73e6e3151ca9c66a65354f9de
 
 
 ---
 
-# Cuenta de correo electrónico de empresa existente encontrado
-Ya tiene una cuenta de correo electrónico de empresa. Para continuar para conectarse a su correo electrónico de la compañía, realice los pasos siguientes para habilitar el Administrador de TI correctamente a configurar y administrar su cuenta:
+# <a name="existing-company-email-account-found"></a>Cuenta de correo electrónico de empresa existente encontrado
+
+Ya tiene una cuenta de correo electrónico de empresa. Para continuar y conectarse a su cuenta de correo electrónico de la empresa, realice los pasos siguientes para permitir que su administrador de TI la configure y administre correctamente:
 
 1.  En **configuración** en el dispositivo, quite la conexión previamente configurado para su correo electrónico de la compañía.
 
     Por ejemplo, en un dispositivo iOS, pulse en **configuración** &gt; **correo, contactos, calendario**. Seleccione su cuenta de correo electrónico del trabajo y, a continuación, haga clic en **Eliminar**.
 
-2.  Abra la aplicación de portal de empresa en el dispositivo y puntee en **comprobar el cumplimiento de normas**.
+2.  Abra la aplicación de portal de empresa en el dispositivo y, después, pulse **Comprobar el cumplimiento normativo**.
 
 3.  Espere un momento para la nueva configuración de correo electrónico que se aplicará automáticamente a su dispositivo.
 
@@ -35,6 +37,6 @@ Si la nueva configuración de correo electrónico no aparece después de un tiem
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

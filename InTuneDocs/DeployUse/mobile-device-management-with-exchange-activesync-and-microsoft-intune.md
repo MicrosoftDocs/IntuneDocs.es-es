@@ -3,6 +3,7 @@ title: "Administración de dispositivos de Exchange ActiveSync | Microsoft Intun
 description: "Administrar dispositivos móviles con la administración de Exchange ActiveSync (EAS) mediante Exchange Connector"
 keywords: 
 author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/29/2016
 ms.topic: article
@@ -13,14 +14,14 @@ ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: de3296e81c88b3ac04e3ba3f3d3ca222a59df7bd
-ms.openlocfilehash: 96d8911dafe7897458297867ddfef97206fdfc9c
+ms.sourcegitcommit: d5d5345dc6ef022e385a33ccc19b19cc022af2d5
+ms.openlocfilehash: c67ad198c1693f84c9e00d15da00a131f7d0af87
 
 
 ---
 
 # Administración de dispositivos móviles de Exchange ActiveSync con Microsoft Intune
-Para que Microsoft Intune administre directamente los dispositivos móviles, los dispositivos se deben [inscribir en Intune](get-ready-to-enroll-devices-in-microsoft-intune.md). Como alternativa, los administradores pueden habilitar una solución de administración más limitada que use la administración de Exchange ActiveSync (EAS) con Exchange Connector. Los dispositivos se pueden administrar con servidores Exchange locales y Exchange Online mediante Office 365. Intune solo admite una conexión de Exchange Connector de cualquier tipo por suscripción.
+Para que Microsoft Intune administre directamente los dispositivos móviles, los dispositivos se deben [inscribir en Intune](prerequisites-for-enrollment.md). Como alternativa, los administradores pueden habilitar una solución de administración más limitada que use la administración de Exchange ActiveSync (EAS) con Exchange Connector. Los dispositivos se pueden administrar con servidores Exchange locales o con Exchange Online mediante Office 365. Intune solo admite una conexión de Exchange Connector de cualquier tipo por suscripción.
 
 ## Reglas de acceso a Exchange para dispositivos móviles ##
 
@@ -46,6 +47,6 @@ Por último, puede [borrar los datos de la empresa de los dispositivos móviles 
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO3-->
 
 

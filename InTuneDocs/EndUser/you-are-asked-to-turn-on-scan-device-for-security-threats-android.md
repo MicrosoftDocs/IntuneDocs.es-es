@@ -2,9 +2,10 @@
 title: Se le pide activar Buscar amenazas de seguridad en el dispositivo | Microsoft Intune
 description: 
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 06/16/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,13 +13,13 @@ ms.technology:
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: e0a1da8c2215da92554397edbc4342d6d1f58af5
+ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
+ms.openlocfilehash: ad02abb58a5cf2ec1a131e3abda474da46b81f02
 
 
 ---
 
-# Se le pide activar Buscar amenazas de seguridad en el dispositivo
+# <a name="you-are-asked-to-turn-on-scan-device-for-security-threats"></a>Se le pide activar Buscar amenazas de seguridad en el dispositivo
 
  Si ve el mensaje "Buscar amenazas de seguridad en el dispositivo", debe ir a **Configuración** > **Google** > **Seguridad** y activar **Buscar amenazas de seguridad en el dispositivo**.
 
@@ -26,11 +27,8 @@ El administrador de TI exige activar esta opción para proteger los datos corpor
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
-### Consulte también
-[Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

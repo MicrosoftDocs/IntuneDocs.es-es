@@ -3,6 +3,7 @@ title: Crear e implementar directivas de MAM | Microsoft Intune
 description: "Siga las instrucciones paso a paso de este tema para crear e implementar directivas de administración de aplicaciones móviles."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 74d9c9843fd6119095c9670a76afd26443bcc796
-ms.openlocfilehash: dab86ce2210c1f0cec81e402d730a6b996db64fc
+ms.sourcegitcommit: 389daf0ed39fa2cd4b2e5d6e52cbd6809a568c9e
+ms.openlocfilehash: e5befdd4925f88d41c454d9c1c36eaf02fdb598d
 
 
 ---
@@ -111,8 +112,9 @@ Solo se verán afectados por la directiva los usuarios que tengan asignadas lice
 >[!IMPORTANT]
 > Si usa Intune con Administrador de configuración para administrar los dispositivos iOS y Android, la directiva solo se aplica a los usuarios directamente en el grupo seleccionado.  No se verán afectados los miembros de los grupos secundarios anidados en el grupo seleccionado.
 
-Los usuarios finales pueden descargar las aplicaciones del App Store o de Google Play. Para ver un tutorial detallado de cómo MAM protege los datos empresariales en el dispositivo, consulte el tema [Experiencia del usuario final en aplicaciones habilitadas para MAM](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md).
-
+Los usuarios finales pueden descargar las aplicaciones del App Store o de Google Play. Para obtener más información, vea:
+* [What to expect when your Android app is managed by MAM policies (Qué esperar cuando la aplicación Android está administrada por directivas de MAM)](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [What to expect when your iOS app is managed by MAM policies (Qué esperar cuando la aplicación iOS está administrada por directivas de MAM)](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 ##  Cambiar las directivas existentes
 Puede editar una directiva existente y aplicarla a los usuarios objetivo. Con todo, al cambiar las directivas existentes, los usuarios que ya han iniciado sesión en las aplicaciones no verán los cambios durante un período de 8 horas.
 
@@ -165,10 +167,11 @@ Para ver una lista completa de las configuraciones de directiva para iOS y Andro
 [Supervisar el estado del cumplimiento y del usuario](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### Consulte también
-[Experiencia del usuario final en aplicaciones habilitadas para MAM](end-user-experience-for-mam-enabled-apps-with-microsoft-intune.md)
+* [What to expect when your Android app is managed by MAM policies (Qué esperar cuando la aplicación Android está administrada por directivas de MAM)](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
+* [What to expect when your iOS app is managed by MAM policies (Qué esperar cuando la aplicación iOS está administrada por directivas de MAM)](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 

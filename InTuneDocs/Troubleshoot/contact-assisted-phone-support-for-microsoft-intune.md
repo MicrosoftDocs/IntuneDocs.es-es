@@ -1,8 +1,9 @@
 ---
 title: "Asistencia telefónica | Microsoft Intune"
-description: 
+description: "Números de teléfono del soporte técnico de Intune"
 keywords: 
-author: Nbigman
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
@@ -13,15 +14,15 @@ ms.assetid: 01c096eb-088b-4d2b-a1fa-dce6cdb12294
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb0aeac2f94dfde50d9398b09c6b21c7ae40624
-ms.openlocfilehash: 573108e176dbac7b9bbaa0f601f6fff6e73563fb
+ms.sourcegitcommit: 3a081109cd499d3bdda75cb6c8a4dab9d9d28fab
+ms.openlocfilehash: 67eec76113deca2e3dabe74bff9cabfeb41fcbce
 
 
 ---
 
-# Asistencia telefónica para Microsoft Intune
+# <a name="contact-assisted-phone-support-for-microsoft-intune"></a>Asistencia telefónica para Microsoft Intune
 
-## Números de teléfono y horario comercial
+## <a name="phone-numbers-and-business-hours"></a>Números de teléfono y horario comercial
 
 |País/región|Horas de soporte técnico|Horario laboral|Idiomas admitidos|Números de teléfono gratuitos|Números de teléfono locales|
 |------------------|---------------------------|------------------|-----------------------|---------------------------|-----------------------|
@@ -117,6 +118,6 @@ ms.openlocfilehash: 573108e176dbac7b9bbaa0f601f6fff6e73563fb
 
 
 
-<!--HONumber=Aug16_HO1-->
+<!--HONumber=Oct16_HO3-->
 
 

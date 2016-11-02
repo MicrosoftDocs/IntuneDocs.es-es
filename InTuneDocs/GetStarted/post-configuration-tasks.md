@@ -1,10 +1,11 @@
 ---
 title: "Tareas posteriores a la configuración | Microsoft Intune"
-description: 
+description: "Complete las tareas de configuración opcionales para mejorar la funcionalidad de administración de dispositivos móviles."
 keywords: 
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 34a412cd-8240-4e06-a60e-df270a711e7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6d1c7c670341692d4ea0c823e4a9a96746b83067
-ms.openlocfilehash: 95934b6900719671ea0d7fc5ebbd4162d9538c33
+ms.sourcegitcommit: 0e125a283a017685c2442c34194da29466c8e67a
+ms.openlocfilehash: 81dfaeb25de75f178d8993b47aadb5d4880970c7
 
 
 ---
@@ -30,6 +31,6 @@ Después de completar los pasos de configuración inicial para una suscripción 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 

@@ -3,8 +3,9 @@ title: "Se le pedirá que identifique el dispositivo cuando esté intentando la 
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 05/06/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: b7274056dc47b59381088d8d7ac33758f2cc6334
+ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
+ms.openlocfilehash: 852c02fabee7ec3551e34f92c5f9e44402d31ecb
 
 
 ---
@@ -23,7 +24,7 @@ ms.openlocfilehash: b7274056dc47b59381088d8d7ac33758f2cc6334
 
 # Se le pedirá que identifique el dispositivo cuando esté intentando la inscripción
 
-Si intenta inscribir el dispositivo iOS o Mac OS X en Intune y ve una pantalla que le pide que identifique el dispositivo, significa que al menos uno de los dispositivos ya se ha inscrito y asignado a su cuenta con un método distinto de la aplicación Portal de empresa. Para que la aplicación Portal de empresa funcione correctamente, debe identificar si el dispositivo que está utilizando ya se ha inscrito en Intune.
+Si intenta inscribir el dispositivo iOS o Mac OS X en Intune y ve una pantalla que le pide que identifique el dispositivo, al menos uno de los dispositivos ya se ha inscrito y asignado a su cuenta con un método distinto de la aplicación de portal de empresa. Para que la aplicación de portal de empresa funcione correctamente, debe identificar si el dispositivo que está usando ya se ha inscrito en Intune.
 
 1. Si ve el dispositivo en la lista, púlselo. Si no lo ve, pulse **nuevo dispositivo**.
 2. Pulse **continuar**.
@@ -31,11 +32,8 @@ Si intenta inscribir el dispositivo iOS o Mac OS X en Intune y ve una pantalla q
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
-### Consulte también
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

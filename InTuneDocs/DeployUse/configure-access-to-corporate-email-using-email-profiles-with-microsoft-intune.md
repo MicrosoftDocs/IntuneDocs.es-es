@@ -3,8 +3,9 @@ title: "Acceso al correo electrónico corporativo mediante perfiles de correo el
 description: "Las opciones de configuración de perfil de correo electrónico se pueden usar para configurar el acceso al correo de determinados clientes de correo en dispositivos móviles."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 10/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: befe1b3446770509c83a360c854993d4aaada09d
-ms.openlocfilehash: 1bd5d64dfff1cf1fc42247c5f89861e216da77d5
+ms.sourcegitcommit: 9f8767f191df76e8f166767c51fff357b251bbd4
+ms.openlocfilehash: f736c408f5a4ece65eeef35fb8d1be9a9b29c1b1
 
 
 ---
@@ -29,14 +30,14 @@ Si necesita tomar medidas adicionales para la prevención de pérdida de datos, 
 Los usuarios o los administradores de TI también pueden optar por instalar otros clientes de correo electrónico (por ejemplo, Microsoft Outlook para Android o iOS). Puede que estos clientes de correo electrónico no admitan perfiles de correo y no puedan configurarse mediante perfiles de correo electrónico de Intune.  
 
 Puede usar perfiles de correo electrónico para configurar el cliente de correo nativo en los siguientes tipos de dispositivo:
--   Windows Phone 8 y versiones posteriores
+-   Windows Phone 8.1 y versiones posteriores
 -   Windows 10 (para el escritorio), Windows 10 Mobile y versiones posteriores
 -   iOS 8.0 y versiones posteriores
 -   Samsung KNOX Standard (4.0 y posterior)
 -   Android for Work
 
 >[!NOTE]
->Intune proporciona dos perfiles de correo electrónico de Android for Work, uno para cada una de las aplicaciones de correo electrónico de Gmail y de Nine Work. Estas aplicaciones están disponibles en Google Play Store y admiten conexiones a Exchange. Para habilitar la conectividad de correo electrónico, implemente una de estas aplicaciones de correo electrónico en los dispositivos de los usuarios y, después, cree e implemente el perfil adecuado. 
+>Intune proporciona dos perfiles de correo electrónico de Android for Work, uno para cada una de las aplicaciones de correo electrónico de Gmail y de Nine Work. Estas aplicaciones están disponibles en Google Play Store y admiten conexiones a Exchange. Para habilitar la conectividad de correo electrónico, implemente una de estas aplicaciones de correo electrónico en los dispositivos de los usuarios y, después, cree e implemente el perfil adecuado.
 
 Además de configurar una cuenta de correo electrónico en el dispositivo, también puede configurar la cantidad de correo electrónico que se sincronizará y, en función del tipo de dispositivo, los tipos de contenido que se sincronizarán.
 
@@ -52,11 +53,11 @@ Además de configurar una cuenta de correo electrónico en el dispositivo, tambi
 
 >Como Samsung KNOX no usa el nombre de host para identificar el perfil, recomendamos que no cree varios perfiles de correo electrónico para usarlos en la misma dirección de correo electrónico en diferentes hosts, ya que estos se sobrescriben entre sí.
 
->**Android for Work**: El perfil de Intune solo se aplica al perfil de trabajo del dispositivo y no afecta a los perfiles de correo electrónico en el perfil de usuario del dispositivo.
+>**Android for Work**: el perfil de Intune solo se aplica a aplicaciones de correo electrónico específicas en el perfil de trabajo del dispositivo y no afecta a la configuración de correo electrónico del perfil de usuario del dispositivo.
 
 
 ## Proteger los perfiles de correo electrónico
-Los perfiles de correo electrónico se pueden proteger con uno de estos dos métodos: mediante un certificado o una contraseña.
+Los perfiles de correo electrónico se pueden proteger mediante un certificado o una contraseña.
 
 ### Certificados
 Cuando se crea el perfil de correo electrónico, puede elegir un perfil de certificado creado previamente en Intune. Esto se conoce como certificado de identidad y sirve para autenticarse con un perfil de certificado de confianza (o un certificado raíz) para establecer que el dispositivo del usuario tenga permiso para conectarse. El certificado de confianza se implementa en el equipo que autentica la conexión de correo electrónico (que suele ser el servidor de correo nativo).
@@ -78,10 +79,10 @@ La contraseña no está incluida en el perfil de correo electrónico, por lo que
 
     -   **Perfil de correo electrónico (iOS 8.0 y versiones posteriores)**
 
-    -   **Perfil de correo electrónico (Windows Phone 8 y versiones posteriores)**
+    -   **Perfil de correo electrónico (Windows Phone 8.1 y versiones posteriores)**
 
     -   **Perfil de correo electrónico (Windows 10 para escritorios y Windows 10 Mobile y versiones posteriores)**
-    
+
     -   **Perfil de correo electrónico (Android for Work - Gmail)**
 
     -   **Perfil de correo electrónico (Android for Work - Nine Work)**
@@ -107,8 +108,10 @@ La contraseña no está incluida en el perfil de correo electrónico, por lo que
     |**Usar SSL**|Usa la comunicación de Capa de sockets seguros (SSL) al enviar correos electrónicos, recibir correos electrónicos y comunicarse con el servidor Exchange. En dispositivos que ejecutan Samsung KNOX 4.0 o versiones posteriores, es necesario exportar el certificado SSL de Exchange Server e implementarlo como un perfil de certificado de confianza de Android en Intune. En Intune no se puede tener acceso a este certificado si se ha instalado en el servidor Exchange por otros medios.|
     |**Tipo de contenido que se va a sincronizar** (todas las plataformas excepto Gmail de Android for Work)|Seleccione los tipos de contenido que quiere sincronizar con los dispositivos.|
     |**Permitir el envío de correo electrónico desde aplicaciones de terceros** (solo iOS)|Permitir que el usuario seleccione este perfil como la cuenta predeterminada para enviar correo electrónico y permitir que aplicaciones de terceros abran el correo electrónico en la aplicación de correo electrónico nativa, por ejemplo, para adjuntar archivos a un correo electrónico.|
-    > [!IMPORTANT]
-    > If you have deployed an email profile and then wish to change the values for **host** or **Email address**, you must delete the existing email profile and create a new one with the required values.
+
+> [!IMPORTANT]
+>
+> Si ha implementado un perfil de correo electrónico y, luego, quiere cambiar los valores de **Host** o **Dirección de correo electrónico**, deberá eliminar el perfil de correo electrónico existente y crear otro con los valores necesarios.
 
 4.  Cuando haya terminado haga clic en **Guardar directiva**.
 
@@ -127,10 +130,11 @@ La nueva directiva se muestra en el nodo **Directivas de configuración** del á
 En el área de trabajo **Directiva** de la página **General** , un resumen de estado y las alertas identifican los problemas de la directiva que requieren su atención. Además, aparece un resumen de estado en el área de trabajo Panel.
 
 > [!NOTE]
-> Si desea quitar un perfil de correo electrónico de un dispositivo, edite la implementación y quite los grupos de los que sea miembro el dispositivo.
+> - En el caso de Android for Work, asegúrese de que también implementa las aplicaciones Gmail o Nine Work, además del perfil de correo electrónico adecuado.
+> - Si desea quitar un perfil de correo electrónico de un dispositivo, edite la implementación y quite los grupos de los que sea miembro el dispositivo.
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 
