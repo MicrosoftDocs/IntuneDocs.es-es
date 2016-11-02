@@ -3,8 +3,9 @@ title: Configurar perfiles de certificado | Microsoft Intune
 description: Aprenda a crear un perfil de certificado de Intune.
 keywords: 
 author: nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 27ba29f57bba1f3807c4b593ecac8c0af0851962
-ms.openlocfilehash: 3f657e6a49fb83faddf9c139985369f27656b4bd
+ms.sourcegitcommit: 7b4acce1b1861ca2c2d1432b0258ad1e95e46d2a
+ms.openlocfilehash: d4fd80ad7819911b6bf47ccd51e62bebdec24f04
 
 
 ---
@@ -63,6 +64,11 @@ Debe crear un perfil de certificado de confianza para poder crear un perfil de c
 4.  Seleccione **Guardar directiva**.
 
 La nueva directiva aparece en el área de trabajo **Directiva**. Ya puede implementarla.
+
+> [!NOTE]
+>
+> Los dispositivos Android y Android for Work mostrarán un aviso notificándole que un tercero ha instalado un certificado de confianza.
+    
 
 ## **Tarea 3**: crear perfiles de certificado SCEP o .PFX
 Después de haber creado un perfil de certificado de CA de confianza, cree perfiles de certificado SCEP o .PFX para cada plataforma que quiera usar. Al crear un perfil de certificado SCEP, debe especificar un perfil de certificado de confianza para esa misma plataforma. Esto vincula los dos perfiles de certificado, aunque todavía debe implementar cada perfil por separado.

@@ -3,8 +3,9 @@ title: "Sincronización manual del dispositivo Windows | Microsoft Intune"
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8450facfe63d947df6e6a152805ad882ae220c3e
-ms.openlocfilehash: d7c2fb804e01df6689044d6ca2e72ff00ee95fbc
+ms.sourcegitcommit: 2d7630d71505fadc22ab135ff0c8988b314793ad
+ms.openlocfilehash: e0f18e4e1077f7843b4f8d8ea6d9e485f715bc3c
 
 
 ---
@@ -53,7 +54,7 @@ Para sincronizar manualmente el dispositivo de Windows 10 Mobile de modo que se 
     Aparece el mensaje "We’re synching your account" (Estamos sincronizando su cuenta) en la parte superior de la pantalla. El botón **Sincronizar** aparecerá atenuado hasta que el dispositivo finalice la sincronización.
 
 ## Windows 10 Escritorio
-Para sincronizar manualmente el dispositivo de Windows 10 Escritorio de modo que se acelere la instalación de una aplicación lenta:
+Hay más de una versión de Windows 10, así que hay dos conjuntos de pasos. Para averiguar qué pasos debe seguir, vea las capturas de pantalla y siga los pasos que se parezcan a lo que ve en el dispositivo. 
 
 1. Elija el botón **Iniciar** y, después, elija **Configuración**.
 
@@ -63,15 +64,46 @@ Para sincronizar manualmente el dispositivo de Windows 10 Escritorio de modo que
 
     ![Elección de cuentas en la página de configuración](./media/win10pc-sync-2-settings-accounts.png)
 
-3. En la página **Cuentas**, seleccione **Acceso al trabajo**.
+3. Examine las dos pantallas siguientes y elija la que se parezca más a lo que ve en el dispositivo. Siga los pasos que tienen que ver con la pantalla que verá en el dispositivo.
+
+    Si aparece esta pantalla, que muestra "Obtener acceso a trabajo o escuela", siga las instrucciones de [Pasos a seguir si ve acceso profesional o educativo](#steps-to-follow-if-you-see-access-work-or-school).
+
+    ![Sincronizar los pasos que debe seguir si ve acceso profesional o educativo](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+
+    Si aparece esta pantalla, que muestra "Acceso al trabajo", siga los pasos de [Pasos que debe seguir si ve acceso profesional](#steps-to-follow-if-you-see-your-account).
+
+    ![Elección del acceso al trabajo como tipo de cuenta](./media/win10pc-sync-3-work-access.png) 
+
+### Pasos a seguir si ve acceso profesional o educativo
+
+1. En la página **Cuentas**, elija **Obtener acceso a trabajo o escuela**.
+
+    ![Elegir acceso profesional o educativo](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+
+2. Elija la cuenta profesional o educativa. Según como haya configurado el administrador de TI las cosas, podría ver dos cuentas con un aspecto similar al ejemplo siguiente. Una tiene un maletín al lado y la otra tiene el logotipo de Microsoft. 
+
+    - Si ve la cuenta con el maletín, selecciónela y busque un botón **Información** debajo de ella. 
+    - Si solo ve la cuenta con el logotipo de Microsoft, selecciónela y busque un botón **Información** debajo de ella.
+
+    ![Elija el nombre de la cuenta junto al maletín o el logotipo de Microsoft](./media/win10pc-rs1-sync-info-button.png)
+
+3. Elija el botón **Información**. Se abre un cuadro de diálogo parecido al siguiente ejemplo.
+
+    ![Elija el nombre de la cuenta junto al maletín o el logotipo de Microsoft](./media/win10pc-rs1-sync-button.png)
+
+4. Elija el botón **Sincronizar**. El dispositivo se sincronizará con Intune.
+
+### Pasos que debe seguir si ve acceso profesional
+    
+1. En la página **Cuentas**, seleccione **Acceso al trabajo**.
 
     ![Elección del acceso al trabajo como tipo de cuenta](./media/win10pc-sync-3-work-access.png)
 
-4. En la sección **Enroll in to device management** (Inscribirse en la administración de dispositivos), elija el nombre de su compañía.
+2. En la sección **Enroll in to device management** (Inscribirse en la administración de dispositivos), elija el nombre de su compañía.
 
     ![Elección del nombre de la empresa para la administración de dispositivos](./media/win10pc-sync-4-tap-com-name.png)
 
-5. Elija el botón **Sincronizar**.
+3. Elija el botón **Sincronizar**.
 
     ![Elección del botón Sincronizar](./media/win10pc-sync-5-tap-sync.png)
 
@@ -98,6 +130,6 @@ Para sincronizar manualmente el dispositivo de Windows Phone 8.1 de modo que se 
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

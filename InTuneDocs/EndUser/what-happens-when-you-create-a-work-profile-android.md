@@ -2,7 +2,8 @@
 title: "¿Qué ocurre cuando se crea un perfil de trabajo? | Microsoft Intune"
 description: "Describe cómo cifrar un dispositivo Android"
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
@@ -13,20 +14,20 @@ ms.assetid: b217da11-2cd7-49ab-a91f-2f6d7784c6b6
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 08f31db90f324ef5f93076c4e13bfa5328a15adc
-ms.openlocfilehash: ad24422cd2708eb4fa59bb96d9f39b7a6444219b
+ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
+ms.openlocfilehash: 77d420bd1a635f8cd64b32c584c2be62f52f1706
 
 
 ---
 
 
-# ¿Qué ocurre cuando se crea un perfil de trabajo?
+# <a name="what-happens-when-you-create-a-work-profile"></a>¿Qué ocurre cuando se crea un perfil de trabajo?
 
-Un perfil de trabajo es algo que se configura en el dispositivo para que pueda acceder al correo electrónico profesional o educativo, a las aplicaciones y a los archivos.
+Un perfil de trabajo es algo que se configura en el dispositivo para mantener el correo electrónico, las aplicaciones y los datos profesionales o educativos separados de los datos personales.
 
 Cuando se crea un perfil de trabajo:
 
-- El Administrador de TI puede administrar las aplicaciones relacionadas con el trabajo, opciones y configuraciones en el dispositivo, no en aplicaciones personales o datos.
+- El administrador de TI puede administrar únicamente el correo electrónico, las aplicaciones, las opciones de configuración y los datos relacionados con el trabajo en el dispositivo, no las aplicaciones ni los datos personales.
 
 - Puede obtener aplicaciones de trabajo en Play Store for Work. Para obtener aplicaciones personales, acceda a Google Play Store para conseguirlas. El Administrador de TI no puede ver ni administrar las aplicaciones personales.
 

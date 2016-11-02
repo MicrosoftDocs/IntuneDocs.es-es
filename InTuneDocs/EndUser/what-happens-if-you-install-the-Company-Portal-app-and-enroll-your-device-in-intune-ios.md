@@ -2,9 +2,10 @@
 title: "¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo iOS o Mac OS X en Intune? | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
+ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
+ms.openlocfilehash: fd5ad37706bc4d7f780c5059bda5305335b4ff68
 
 
 ---
@@ -25,15 +26,15 @@ ms.openlocfilehash: e6e08b1947f93fde6c9e7bff966042647386e7d0
 
 Al instalar la aplicación Portal de empresa e inscribir su dispositivo iOS o Mac OS X en Intune, puede usar la aplicación Portal de empresa para:
 
--   Acceder a la red, el correo electrónico y los archivos de trabajo de la empresa
+-   Acceder a la red, el correo electrónico y los archivos de trabajo de la empresa.
 
--   Obtener aplicaciones de empresa desde el portal de la empresa
+-   Obtener aplicaciones de empresa desde el Portal de empresa.
 
--   Restablecer remotamente el teléfono a la configuración de fábrica si lo pierde o se lo roban
+-   Restablecer remotamente el teléfono a la configuración de fábrica si lo pierde o se lo roban.
 
--   Configurar automáticamente su cuenta de correo electrónico de la empresa
+-   Configurar automáticamente la cuenta de correo electrónico profesional.
 
-Cuando inscribe su dispositivo en Intune, el administrador de TI tiene permiso para administrar el dispositivo, a fin de ayudarle a proteger la información de la empresa que tiene en el mismo.
+Cuando inscribe el dispositivo en Intune, está concediendo permiso al administrador de TI para administrarlo con el fin de ayudarle a proteger la información de la empresa que tiene en el mismo.
 
 **Lo que el personal de TI no puede ver**
 
@@ -85,9 +86,9 @@ Cuando el dispositivo esté inscrito, el Administrador de TI podrá:
 
 -   Habilitar o deshabilitar la transmisión de fotos a iCloud.
 
--   Habilitar o deshabilitar la movilidad de datos en el dispositivo. Si se permite la movilidad de datos, podrían aplicarse cargos por movilidad.
+-   Habilitar o deshabilitar la movilidad de datos en el dispositivo. Si se permite la itinerancia de datos, podrían aplicarse cargos por movilidad.
 
--   Habilitar o deshabilitar la movilidad de voz en el dispositivo. Si se permite la movilidad de voz, podrían aplicarse cargos por movilidad.
+-   Habilitar o deshabilitar la movilidad de voz en el dispositivo. Si se permite la itinerancia de voz, podrían aplicarse cargos por movilidad.
 
 -   Habilitar o deshabilitar en el dispositivo la sincronización automática de archivos en modo de movilidad. Si se permite la sincronización automática de archivos, podrían aplicarse cargos por movilidad.
 
@@ -95,6 +96,6 @@ Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para 
 
 
 
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

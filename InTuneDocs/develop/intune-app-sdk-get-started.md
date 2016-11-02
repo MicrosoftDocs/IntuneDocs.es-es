@@ -13,8 +13,8 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 952cfa4f23f8ba080ce53f6785baceb8a0a367c6
-ms.openlocfilehash: 9adcf9ce1c2c6e40b3fcbb6c733585bb73a5cc01
+ms.sourcegitcommit: ed1008c786285821c608a8404805c6615c60507f
+ms.openlocfilehash: c80868fdee79df62aae0aa64e378be5dcc9664ae
 
 
 ---
@@ -27,58 +27,91 @@ En esta guía se describen los pasos principales necesarios para habilitar la ad
 
 # Introducción
 
-## Registrarse en Microsoft Connect
+## Registrar la aplicación de la tienda con Microsoft
 
-Actualmente, se puede obtener acceso al SDK para aplicaciones de Intune a través de Microsoft Connect y se necesita inicio de sesión. Para ello, registre una [cuenta de Microsoft](https://connect.microsoft.com/ConfigurationManagervnext/InvitationUse.aspx?ProgramID=8967&InvitationID=8967-YJYJ-8G6X) con el correo de la empresa.
+**Si la aplicación es interna de la empresa y no estará disponible en una tienda de aplicaciones pública**:
 
-El registro estará en estado pendiente hasta que el equipo de Intune revise la solicitud. El tiempo de respuesta habitual es de entre 2 y 3 días laborables. Cuando se haya aprobado, recibirá una notificación de correo electrónico con los vínculos para descargar el SDK para aplicaciones de Intune para las plataformas y todas las guías relacionadas. También puede tener acceso a estas guías en el sitio de MSDN.
+**No es necesario** que registre la aplicación. En el caso de las aplicaciones de línea de negocio internas, el administrador de TI implementará la aplicación internamente. Intune detectará que la aplicación se ha compilado con el SDK y permitirá que el administrador de TI le aplique la configuración de las directivas de MAM. Puede ir a la sección titulada [Habilitar su aplicación móvil iOS o Android para MAM con el SDK](#enable-your-ios-or-android-mobile-app-for-mam-with-the-sdk).
 
-## Registrar la aplicación de la tienda con Microsoft Intune
+**Si la aplicación se publicará en una tienda de aplicaciones pública, como App Store de Apple o Google Play**: 
 
-**Si la aplicación habilitada es interna de su empresa y no estará disponible en la tienda de aplicaciones de Apple o Google**: no es necesario registrar la aplicación. Para esas aplicaciones internas, el administrador de TI las cargará directamente en la consola de Microsoft Intune para la implementación, Intune detectará que la aplicación se ha compilado con el SDK y presentará al administrador de TI la opción de aplicarle la directiva MAM. Puede ir a la sección titulada [Habilitar su aplicación móvil iOS o Android para MAM con el SDK](#enable-your-ios-or-android-mobile-app-for-mam-with-the-sdk).
+Primero **debe** registrar la aplicación con Microsoft Intune y aceptar las condiciones de registro. Después de realizar el registro, los administradores de TI pueden aplicar la configuración de las directivas de MAM de Intune a la aplicación habilitada, que se mostrará como un asociado de las aplicaciones de Intune. Mientras no se complete el registro y no se confirme por parte del equipo de Microsoft Intune, los administradores de Intune no tendrán la opción de aplicar la directiva de MAM al vínculo profundo de la aplicación. Microsoft también agregará la aplicación a su [página de asociados de Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps), donde se mostrará el icono de la aplicación para indicar que es compatible con la directiva de MAM de Microsoft Intune.
 
-**Si es un ISV que desarrolla una aplicación que estará disponible para los clientes a través de las tiendas de aplicaciones de Apple o Google**: en primer lugar, debe registrar la aplicación con Microsoft Intune y aceptar los términos del registro. Puede ofrecer el vínculo profundo de la aplicación en este momento. Después, un administrador de TI puede aplicar directivas MAM de Intune a la aplicación. Hasta que no se complete el registro y no se confirme por el equipo de Microsoft Intune, el vínculo profundo de la aplicación no tendrá la opción de aplicar la directiva MAM en la consola de administración. Microsoft también mantiene un sitio web de socios de Microsoft Intune en el que se registrará la aplicación para que los clientes sepan que cumple la directiva MAM de Microsoft Intune.
+Para comenzar el proceso de registro, rellene el **[Cuestionario de partner de la aplicación de Microsoft Intune](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR6oOVGFZ3pxJmwSN1N_eXwJUQUc5Mkw2UVU0VzI5WkhQOEYyMENWNDBWRS4u)**. 
 
-Para comenzar el proceso de registro, **revise y firme** el [acuerdo de socio de Microsoft Intune](https://connect.microsoft.com/ConfigurationManagervnext/Survey/Survey.aspx?SurveyID=17806). En este contrato se describen los términos que su empresa debe aceptar para convertirse en socio de las aplicaciones de Microsoft Intune. Tiene que iniciar sesión para poder ver este documento. Puede encontrar el acuerdo en el sitio de Microsoft Connect del SDK para aplicaciones de Intune, en la pestaña Encuestas o aquí. También le pediremos que ofrezca el nombre de la aplicación, el nombre de la empresa y el vínculo profundo a la aplicación en la tienda de Google o iTunes.
+Microsoft usará las direcciones de correo electrónico que se muestran en las respuestas del cuestionario para dirigirse al proceso de registro y continuarlo. Además, usamos la dirección de correo electrónico del registro para ponernos en contacto con usted si surge cualquier problema.
 
-![Microsoft Connect](../media/microsoft-connect.png)
+> [!NOTE]
+> Toda la información recopilada en el formulario anterior y a través de la correspondencia por correo electrónico con el equipo de Microsoft Intune cumplirá la [declaración de privacidad de Microsoft](https://www.microsoft.com/en-us/privacystatement/default.aspx).
 
-Usaremos su dirección de correo electrónico de registro para confirmar y completar la recepción del proceso de registro. Además, usamos la dirección de correo electrónico del registro para ponernos en contacto con usted si surge cualquier problema.
+**Qué esperar durante el proceso de registro**: 
 
-**Qué esperar del proceso de registro**: una vez que ha enviado el formulario, Microsoft se pondrá en contacto con usted a través de la dirección de correo electrónico de registro, bien para confirmar la recepción correcta, bien para pedir información adicional para completar el registro. También nos pondremos en contacto con usted si la aplicación se registra correctamente con Microsoft Intune y si la aplicación aparece en el sitio del socio de Microsoft Intune. Una vez confirmada la recepción de la información, el vínculo profundo de la aplicación se incluirá en la siguiente actualización mensual del servicio de Intune. Por ejemplo, si la información de registro se ha completado en julio, el vínculo profundo de la aplicación se admitirá hacia mediados de agosto. Si el vínculo profundo de la aplicación de tienda cambia en el futuro, tendrá que volver a registrar la aplicación. Avísenos si actualiza la aplicación con una nueva versión del SDK de la aplicación de Intune.
+1. Una vez que ha enviado el cuestionario, Microsoft se pondrá en contacto con usted a través de la dirección de correo electrónico de registro, bien para confirmar la recepción correcta, bien para pedir información adicional para completar el registro. 
+2. Después de que recibamos la información necesaria, le enviaremos el Acuerdo de partner de la aplicación de Microsoft Intune para que lo firme. En este contrato se describen los términos que su empresa debe aceptar para convertirse en socio de las aplicaciones de Microsoft Intune. 
+3. También le notificaremos si la aplicación se registra correctamente con el servicio de Microsoft Intune y si la aplicación aparece en el sitio de [partners de Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps). 
+4. Por último, el vínculo profundo se agregará a la actualización del próximo mes del servicio de Intune. Por ejemplo, si la información de registro se ha completado en julio, el vínculo profundo de la aplicación se admitirá hacia mediados de agosto. 
 
-**Nota**: toda la información recopilada en el formulario anterior y a través del correo electrónico cruzado con el equipo de Intune cumplirá la [declaración de privacidad de Microsoft](https://www.microsoft.com/en-us/privacystatement/default.aspx).
+Si el vínculo profundo de la aplicación de tienda cambia en el futuro, tendrá que volver a registrar la aplicación. Además, avísenos si actualiza la aplicación con una nueva versión del SDK de la aplicación de Intune.
+
+
+
+## Descargar los archivos del SDK
+
+Los SDK de aplicaciones de Intune para iOS y Android nativos están hospedados en una cuenta de GitHub de Microsoft. Los repositorios públicos siguientes contienen los archivos del SDK para iOS y Android, respectivamente:
+
+* [SDK de aplicaciones de Intune para iOS](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
+* [SDK de aplicaciones de Intune para Android](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
+
+**Si su aplicación es una aplicación Xamarin o Cordova, use las herramientas de desarrollador siguientes**:
+
+* [Componente Xamarin del SDK para aplicaciones de Intune](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
+* [Complemento Cordova del SDK para aplicaciones de Intune](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)
+
+Se recomienda que se suscriba a una cuenta de GitHub que pueda usar para bifurcar nuestros repositorios y extraer de ellos. GitHub permite que los desarrolladores se comuniquen con nuestro equipo de productos, notifiquen problemas y reciban respuestas rápidas, vean las notas de la versión y envíen comentarios a Microsoft. Para formular preguntas sobre la cuenta y los repositorios de GitHub, póngase en contacto con msintuneappsdk@microsoft.com.
+
+
+
+
 
 ## Habilitar su aplicación móvil iOS o Android para MAM con el SDK
 
-Para habilitar la aplicación móvil iOS, necesitará lo siguiente:
+Para integrar el SDK de aplicaciones de Intune en la aplicación de iOS nativo, necesitará lo siguiente: 
 
-1. **[Guía para desarrolladores sobre el SDK para aplicaciones de Intune para iOS](intune-app-sdk-ios.md)**: este documento lo guiará paso a paso para habilitar la aplicación móvil iOS con el SDK para aplicaciones de Intune. Encontrará este documento en la carpeta de documentación que ha descargado como parte del paquete del SDK para aplicaciones de Intune.
-2. **SDK para aplicaciones de Intune para iOS**: como parte del paquete SDK para aplicaciones de Intune descargado desde Microsoft Intune, encontrará una carpeta llamada "SDK para aplicaciones de Intune para iOS". Esta carpeta tiene todo el contenido del SDK para aplicaciones de Intune para iOS.
+* **[Guía para desarrolladores sobre el SDK para aplicaciones de Intune para iOS](intune-app-sdk-ios.md)**: este documento lo guiará paso a paso para habilitar la aplicación móvil iOS con el SDK para aplicaciones de Intune. 
 
-Para habilitar la aplicación móvil Android para el SDK para aplicaciones de Intune, necesitará lo siguiente:
 
-1. **[Guía para desarrolladores sobre el SDK para aplicaciones de Intune para Android](intune-app-sdk-android.md)**: este documento lo guiará paso a paso para habilitar la aplicación móvil Android con el SDK para aplicaciones de Intune. Encontrará este documento en la carpeta de documentación que ha descargado como parte del paquete del SDK para aplicaciones de Intune.
-2. **SDK para aplicaciones de Intune para Android**: como parte del paquete del SDK para aplicaciones de Intune descargado de Microsoft Intune, encontrará una carpeta llamada "SDK para aplicaciones de Intune para Android". Esta carpeta tiene todo el contenido del SDK para aplicaciones de Intune para Android.
+Para integrar el SDK de aplicaciones de Intune en la aplicación de Android nativo, necesitará lo siguiente:
 
-## Desactivar la telemetría para la aplicación
+* **[Guía para desarrolladores sobre el SDK para aplicaciones de Intune para Android](intune-app-sdk-android.md)**: este documento lo guiará paso a paso para habilitar la aplicación móvil Android con el SDK para aplicaciones de Intune. 
 
-**SDK para aplicaciones de Intune para iOS**: de forma predeterminada, el SDK registra los datos de telemetría del SDK en eventos de uso. Estos datos se envían a Microsoft Intune.
+La documentación del componente Xamarin del SDK para aplicaciones de Intune y el complemento Cordova del SDK para aplicaciones de Intune puede encontrarse dentro de los respectivos repositorios de GitHub. 
 
-Si decide no enviar datos de telemetría del SDK a Microsoft Intune desde su aplicación, **debe deshabilitar** la transmisión de telemetría del SDK estableciendo la propiedad `MAMTelemetryDisabled` en "Sí" en `IntuneMAMSettings`.
 
-**SDK para aplicaciones de Intune para Android**: los datos de telemetría del SDK no se registran a través del SDK.
+## Configurar la telemetría para la aplicación
+
+Microsoft Intune recopila datos sobre las estadísticas de uso de la aplicación.
+
+* **SDK para aplicaciones de Intune para iOS**: de forma predeterminada, el SDK registra los datos de telemetría del SDK en eventos de uso. Estos datos se envían a Microsoft Intune.
+
+    * Si decide no enviar datos de telemetría del SDK a Microsoft Intune desde su aplicación, debe deshabilitar la transmisión de telemetría estableciendo la propiedad `MAMTelemetryDisabled` en "Sí" en el diccionario IntuneMAMSettings.
+
+* **SDK de aplicaciones de Intune para Android**: los datos de telemetría no se registran a través del SDK.
 
 ## Probar la aplicación habilitada para MAM con Microsoft Intune
 
-Una vez haya completado los pasos necesarios para habilitar (integrar el SDK para aplicaciones de Intune) el SDK para aplicaciones de Intune para iOS o Android, debe asegurarse de que todas las directivas de administración de la aplicación están habilitadas y funcionando para el usuario final y el administrador de TI. Para probar la aplicación habilitada, necesitará lo siguiente:
+Una vez que haya completado los pasos necesarios para integrar la aplicación iOS o Android con el SDK de aplicaciones de Intune, debe asegurarse de que todas las directivas de administración de aplicaciones están habilitadas y que funcionan para el usuario final y el administrador de TI. Para probar la aplicación integrada, necesitará lo siguiente:
 
-1. **Probar la aplicación habilitada para MAM con Microsoft Intune**: este documento lo guiará paso a paso en el proceso de prueba de sus aplicaciones Android o iOS habilitadas para administración de aplicaciones móviles (MAM) con Microsoft Intune. Encontrará este documento en la carpeta de documentación que ha descargado como parte del paquete del SDK para aplicaciones de Intune.
-2. **Cuenta de Microsoft Intune**: para probar sus aplicaciones habilitadas para MAM con Microsoft Intune, necesita una cuenta de Microsoft Intune. Si es un ISV que quiere habilitar las aplicaciones de la tienda Android o iOS para MAM, recibirá un código de promoción una vez completado el registro con Microsoft Intune, como se describe en el paso de registro. El código de promoción le permite registrarse para obtener una versión de prueba de un año de uso extendido de Microsoft Intune. Si está desarrollando una línea de aplicaciones empresariales que no se enviarán a la tienda, se espera que tenga acceso a Microsoft Intune a través de la empresa. También puede registrarse en [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) para obtener la versión de prueba gratuita de un mes.
+<!--TODO-->
+
+* **Probar la aplicación habilitada para MAM con Microsoft Intune**: este documento lo guiará paso a paso a lo largo del proceso para probar las aplicaciones Android o iOS habilitadas para MAM con Microsoft Intune. Encontrará este documento en los repositorios de GitHub de los SDK.
+
+* **Cuenta de Microsoft Intune**: para probar sus aplicaciones habilitadas para MAM con Microsoft Intune, necesita una cuenta de Microsoft Intune. 
+    * Si es un ISV que quiere habilitar las aplicaciones de la tienda Android o iOS para MAM de Intune, recibirá un código de promoción una vez completado el registro con Microsoft Intune, como se describe en el paso de registro. El código de promoción le permite registrarse para obtener una versión de prueba de un año de uso extendido de Microsoft Intune. 
+    * Si está desarrollando una línea de aplicaciones empresariales que no se enviarán a la tienda, se espera que tenga acceso a Microsoft Intune a través de la empresa. También puede registrarse en [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) para obtener la versión de prueba gratuita de un mes.
 
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

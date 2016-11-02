@@ -3,8 +3,9 @@ title: Se le pide que instale Lookout for Work en su dispositivo Android | Micro
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -12,8 +13,8 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 5c522c12325925c45f47bc7b521e3d8aa87454f4
-ms.openlocfilehash: d4ffed6fa0a2380ebfc5c4cf9999233635a3469f
+ms.sourcegitcommit: 2edbb8a70458290e69626d85f734d38243a2002a
+ms.openlocfilehash: f152da14c347cd41edbaf7cc8f4d16abc57bedbb
 
 
 ---
@@ -21,6 +22,8 @@ ms.openlocfilehash: d4ffed6fa0a2380ebfc5c4cf9999233635a3469f
 # Se le pide que instale Lookout for Work
 
 Antes de que tenga acceso a su trabajo, su administrador de TI necesita que instale la aplicación Lookout for Work, que le ayuda a proteger su dispositivo mediante la búsqueda de posibles amenazas de seguridad.
+
+Si tiene problemas con la instalación, pruebe los pasos de solución de problemas al final de este tema.
 
 
 **Haga lo siguiente:**
@@ -35,13 +38,13 @@ Antes de que tenga acceso a su trabajo, su administrador de TI necesita que inst
 
     ![pulse Aceptar para permitir que Lookout for Work tenga acceso a su dispositivo](./media/lookout-accept-store-permissions-android.png)
 
-3. Abra Lookout for Work y pulse **Activar**.
+3. Abra Lookout for Work y, después, pulse **ACTIVAR**.
 
     ![abra Lookout for Work y pulse Activar](./media/lookout-activate-button-android.png)
 
-4. Pulse **Iniciar sesión con una cuenta profesional** y escriba la cuenta que usa para tener acceso a los archivos y correos electrónicos profesionales o educativos.
+4. Pulse **Iniciar sesión en Azure Active Directory** y, después, escriba la cuenta que usa para tener acceso a los archivos y correos electrónicos profesionales o educativos.
 
-    ![inicie sesión con su cuenta profesional o educativa](./media/lookout-sign-in-android.png)
+    ![inicie sesión con su cuenta profesional o educativa](./media/lookout-sign-in-azure-android.png)
 
 5. Seleccione la cuenta que usa para tener acceso a los archivos y correos electrónicos profesionales o educativos y, después, pulse **AGREGAR CUENTA**.
 
@@ -51,13 +54,13 @@ Antes de que tenga acceso a su trabajo, su administrador de TI necesita que inst
 
     ![pulse Aceptar para concederle permiso a Lookout for Work para que lea su perfil](./media/lookout-needs-permission-to-view-profile-android.png)
 
-    Aparece una pantalla que muestra que Lookout for Work se está conectando a Lookout Security Cloud.
+    Una pantalla muestra que Lookout for Work se está conectando a Lookout Security Cloud.
 
 7. Revise los artículos sobre cómo Lookout protege su dispositivo y, después, pulse **Aceptar**.
 
     ![revise cómo Lookout for Work protege su dispositivo](./media/lookout-how-it-protects-your-device-android.png)
 
-    Cuando vea la siguiente pantalla, esto significa que ahora Lookout está configurado y conectado.
+    Cuando vea la siguiente pantalla, Lookout estará configurado y conectado.
 
     ![ahora está conectado a Lookout for Work](./media/lookout-you-are-now-connected-android.png)
 
@@ -71,13 +74,14 @@ Antes de que tenga acceso a su trabajo, su administrador de TI necesita que inst
 
     Si Lookout for Work encuentra una amenaza de seguridad en su dispositivo, verá instrucciones sobre cómo solucionar el problema.
 
+**Si la instalación no funciona**
+
+A veces, las instalaciones pueden producir errores debido a problemas técnicos fuera de su control. Si esto ocurre, pruebe a instalar Lookout for Work manualmente desde Play Store: [https://play.google.com/store/apps/details?id=com.lookout.enterprise](https://play.google.com/store/apps/details?id=com.lookout.enterprise) 
+
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 
 
-
-
-
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

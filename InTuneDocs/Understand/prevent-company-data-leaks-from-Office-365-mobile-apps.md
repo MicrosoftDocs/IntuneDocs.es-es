@@ -3,6 +3,7 @@ title: "Evitar pérdidas de datos de empresa desde aplicaciones móviles de Offi
 description: 
 keywords: 
 author: jeffgilb
+ms.author: jeffgilb
 manager: angrobe
 ms.date: 07/22/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 19be3de7-539c-49f5-8c46-5363b987fef9
 ms.reviewer: pchacon
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7eccef06d8ac2ac8b27b8695b9a0263794b615df
-ms.openlocfilehash: 0e72db79ca305f4d20fe3fd2f5c9954a04b0482d
+ms.sourcegitcommit: cbb34c02e782248a5895a83fba6808f7fef0db9b
+ms.openlocfilehash: b28beb0219e1669e6cd7eacf03f3875b76cd6e27
 
 
 ---
@@ -30,7 +31,7 @@ Si la respuesta es sí, Microsoft Intune le permite establecer directivas MAM pa
 ## ¿Cómo lo hago?
 1.  Obtener un conocimiento básico de [cómo funciona la administración de aplicaciones móviles (MAM)](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune).
 2.  Descubra [qué tiene que hacer para crear directivas MAM](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) en el Portal de Azure.
-3.  [Crear e implementar directivas MAM](/intune/deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune) con Intune.
+3.  [Crear e implementar directivas de MAM](/intune/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) con Intune.
 
 ### Información adicional:
 - [Experiencia del usuario final](/intune/deploy-use/end-user-experience-for-mam-enabled-apps-with-microsoft-intune) en aplicaciones habilitadas para MAM.
@@ -44,6 +45,6 @@ Si la respuesta es sí, Microsoft Intune le permite establecer directivas MAM pa
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO3-->
 
 
