@@ -3,6 +3,7 @@ title: "¿Qué ocurre si anula la inscripción del dispositivo Android de Intune
 description: 
 keywords: 
 author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: fb6f92dccb823d34b977cd42c004a17acf8fa090
+ms.sourcegitcommit: 2bc39ae41779e02882a5edf3698cb0e6976caec2
+ms.openlocfilehash: 5508b359329465e6f53fa3f5b4a93918932dfd8b
 
 
 ---
@@ -25,15 +26,15 @@ ms.openlocfilehash: fb6f92dccb823d34b977cd42c004a17acf8fa090
 
 Cuando anula la inscripción del dispositivo Android de Intune:
 
--   Anula la inscripción del dispositivo desde Intune, lo que significa que el administrador de TI dejará de administrarlo.
+-   El administrador de TI ya no administra el dispositivo.
 
--   Perderá el acceso a los recursos y los datos de la empresa.
+-   Se pierde el acceso a los recursos y los datos de la empresa.
 
--   El dispositivo deja de aparecer en el portal de empresa.
+-   El dispositivo deja de aparecer en el Portal de empresa.
 
 -   No se podrán instalar aplicaciones desde el Portal de empresa.
 
--   Dejará de aplicarse cualquier configuración que se haya modificado en el dispositivo cuando se agregó, por ejemplo, deshabilitar la cámara o exigir una determinada longitud de la contraseña.
+-   Dejará de aplicarse cualquier configuración que se modificara en el dispositivo al agregarlo, por ejemplo, deshabilitar la cámara o exigir una determinada longitud de la contraseña.
 
 Si el dispositivo está configurado solo para recibir correo electrónico de empresa y anula la inscripción del dispositivo, el dispositivo ya no aparecerá en el Portal de empresa.
 
@@ -43,7 +44,6 @@ Para obtener instrucciones sobre cómo anular la inscripción, vea [Anular la in
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Oct16_HO3-->
 
 

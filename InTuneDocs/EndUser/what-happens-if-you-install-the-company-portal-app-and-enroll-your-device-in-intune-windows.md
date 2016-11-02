@@ -3,6 +3,7 @@ title: "¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe 
 description: 
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -14,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4881d765a6a79d380ab6d3facdb55d9f0c81bf97
-ms.openlocfilehash: ac4fdc73122fb5dc82771f174d9bd783c186bf9d
+ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
+ms.openlocfilehash: 678ef01b215442e3d767a38388a579c6ee329975
 
 
 ---
@@ -23,30 +24,30 @@ ms.openlocfilehash: ac4fdc73122fb5dc82771f174d9bd783c186bf9d
 
 # ¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo Windows en Intune?
 
-Al instalar la aplicación de Portal de empresa y después usarla para inscribir un dispositivo Windows o Windows Phone, lo que hace es permitir que el administrador de TI administre el dispositivo para mantener los datos profesionales o académicos seguros, tal como se describe a continuación para los dispositivos anteriores a Windows 10. Consulte [esta página](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md) para dispositivos Windows 10.
+Al instalar la aplicación Portal de empresa y después usarla para inscribir un dispositivo Windows o Windows Phone, lo que hace es permitir que el administrador de TI administre el dispositivo para ayudar a mantener los datos profesionales o académicos seguros. En este tema se explica lo que ocurre con los dispositivos anteriores a Windows 10. Para dispositivos Windows 10, vea el [tema relacionado](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
 
 ## ¿Qué ocurre con todos los dispositivos Windows después de la inscripción?
 Cuando inscribe un dispositivo Windows o Windows Phone en Intune, puede:
 
--   Acceder a la red, el correo electrónico y los archivos de trabajo de la empresa
+-   Acceder a la red, el correo electrónico y los archivos de trabajo de la empresa.
 
--   Obtener aplicaciones de la compañía desde el sitio web de Portal de empresa (para Windows 7 y Vista, puede obtener aplicaciones de la compañía solo desde el sitio web de Portal de empresa)
+-   Obtener aplicaciones de empresa desde el sitio web del Portal de empresa. (Para Windows 7 y Windows Vista, solo puede obtener aplicaciones de empresa desde el sitio web del Portal de empresa).
 
--   Configurar automáticamente su cuenta de correo electrónico profesional o educativa
+-   Configurar automáticamente la cuenta de correo electrónico profesional o educativa.
 
--   Restablecer su teléfono a la configuración de fábrica si lo pierde o se lo roban
+-   Restablecer el teléfono a la configuración de fábrica si lo pierde o se lo roban.
 
 Al inscribir el dispositivo, da permiso al administrador de TI para hacer cosas como estas:
 
 -   Restablecer la configuración predeterminada de fábrica del dispositivo. Esto es útil en caso de pérdida o robo del dispositivo.
 
--   Quitar solo los archivos relacionados con la empresa y las aplicaciones empresariales. **Los datos personales y la configuración no se quitan.**
+-   Quitar solo los archivos relacionados con la empresa y las aplicaciones empresariales. *Los datos personales y la configuración no se quitan.*
 
--   El administrador de TI puede ver el software instalado en el equipo, incluido el software que usted haya instalado.
+-   El administrador de TI puede ver el software instalado en el dispositivo, incluido el que usted haya instalado.
 
--   Establecer requisitos en el dispositivo, como la necesidad de disponer de una contraseña de dispositivo o de un PIN para proteger los datos de la empresa. Su administrador de TI también puede limitar cuántas veces puede introducir una contraseña incorrecta y podría bloquearle el acceso al dispositivo si se equivoca demasiadas veces.
+-   Establecer requisitos en el dispositivo, como la necesidad de disponer de una contraseña o de un PIN para ayudar a proteger los datos de la empresa. El administrador de TI también puede limitar cuántas veces puede especificar una contraseña incorrecta y podría bloquearle el acceso al dispositivo si se equivoca demasiadas veces.
 
--   Exigir el cifrado de los datos en el dispositivo para ayudar a proteger los datos de la empresa, en caso de pérdida o robo de su dispositivo. 
+-   Exigir el cifrado de los datos en el dispositivo para ayudar a proteger los datos de la empresa, en caso de pérdida o robo de su dispositivo.
 
 -   Debe aceptar los términos y condiciones.
 
@@ -54,9 +55,9 @@ Al inscribir el dispositivo, da permiso al administrador de TI para hacer cosas 
 
 ## ¿Qué ocurre con todos los equipos de Windows después de la inscripción?
 
--  El software se instalará en su equipo para permitir que el administrador de TI administre el equipo, y para permitirle que obtenga los recursos de la empresa como aplicaciones o información de soporte técnico. El administrador de TI puede actualizar automáticamente este software.
+-  El software se instalará en el equipo para permitir que el administrador de TI lo administre y para permitirle a usted acceder a recursos de la empresa como aplicaciones e información de soporte técnico. El administrador de TI puede actualizar automáticamente este software.
 
--  Intune Endpoint Protection puede instalarse en su equipo. Se trata de software que permite detectar virus y malware.
+-  Intune Endpoint Protection puede instalarse en el equipo. Se trata de un software que permite detectar virus y malware.
 
 -  El administrador de TI puede recopilar o eliminar datos de la unidad de disco duro del equipo.
 
@@ -75,7 +76,6 @@ Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para 
 
 
 
-
-<!--HONumber=Sep16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

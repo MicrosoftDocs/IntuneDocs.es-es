@@ -2,9 +2,10 @@
 title: Cifrado del dispositivo | Microsoft Intune
 description: "Describe cómo cifrar un dispositivo Android"
 keywords: 
-author: staciebarker
+author: barlan
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 690c94c970a97057a65f3f3d5aafa86c235c6df0
-ms.openlocfilehash: 57ede1360c2f85df24dc0245a715d420165b348a
+ms.sourcegitcommit: ff5e76e5d768b9feccb42c91c72aa71b3f724002
+ms.openlocfilehash: 4d12314ffc6126cd740012c301c39b7fb72a5bb4
 
 
 ---
@@ -24,12 +25,12 @@ ms.openlocfilehash: 57ede1360c2f85df24dc0245a715d420165b348a
 
 Haga lo siguiente si su empresa u organización solicita que se cifre el dispositivo Android para poder tener acceso a los archivos, al correo electrónico o a los datos de la empresa. Si el administrador de TI así lo requiere, puede que tenga que establecer un PIN o una contraseña antes del cifrado.
 
-Si alguna vez anula la inscripción del dispositivo, este permanecerá cifrado.
+Si anula la inscripción del dispositivo, este permanecerá cifrado.
 
 1.  Asegúrese de que se ha establecido un PIN o una contraseña de bloqueo de pantalla para el dispositivo.
 
-2.  En **Configuración**, haga clic en **Seguridad** &gt; **Cifrar teléfono**.
-    (En algunos teléfonos, tendrá que hacer clic en **Almacenamiento** &gt; **Cifrado de almacenamiento** o **Almacenamiento** &gt; **Pantalla de bloqueo y seguridad** &gt; **Otras opciones de seguridad** para encontrar la opción "Cifrar").
+2.  En **Configuración**, elija **Seguridad** &gt; **Cifrar teléfono**.
+    (En algunos teléfonos, tendrá que elegir **Almacenamiento** &gt; **Cifrado de almacenamiento** o **Almacenamiento** &gt; **Pantalla de bloqueo y seguridad** &gt; **Otras opciones de seguridad** para encontrar la opción "Cifrar").
 
 3.  Siga las instrucciones de la pantalla. Durante el cifrado, el dispositivo podría reiniciarse varias veces.
 
@@ -40,30 +41,26 @@ Si alguna vez anula la inscripción del dispositivo, este permanecerá cifrado.
 - Ve un mensaje en el que se indica que aún es necesario realizar el cifrado.
 - Obtiene errores al intentar usar la aplicación Portal de empresa.
 
-**Pruebe lo siguiente**: 
+**Opciones que puede probar**
 
-1. Asegúrese de que el dispositivo está cargado y conectado.
+- Asegúrese de que el dispositivo está cargado y conectado.
+- Asegúrese de que ha establecido un PIN o una contraseña en el dispositivo.
+- Si ya ha configurado un PIN o una contraseña en el dispositivo, intente los pasos siguientes que podría requerir el administrador de TI para hacer que el dispositivo sea más seguro. Los nombres de menú que verá pueden diferir ligeramente de los incluidos en los pasos, en función del tipo de dispositivo Android que tenga.
 
-2. Asegúrese de que ha establecido un PIN o una contraseña en el dispositivo.
+    1. Vaya a **Ajustes** > **Seguridad** > **Bloqueo de pantalla**. Confirme su PIN o contraseña actual.
 
-3. Si ya ha configurado un PIN o una contraseña en el dispositivo, intente los pasos siguientes, que podría requerir el administrador de TI para hacer que el dispositivo sea más seguro. Los nombres de menú que verá pueden diferir ligeramente de los incluidos en los pasos, en función del tipo de dispositivo Android que tenga.
+    2. En la pantalla **Elige un bloqueo**, elija el tipo de bloqueo de pantalla que quiere usar.
 
-    a. Vaya a **Ajustes** > **Seguridad** > **Bloqueo de pantalla**. Confirme su PIN o contraseña actual.
+    3. En la pantalla **Inicio seguro**, pulse **Solicitar PIN para iniciar el dispositivo** y **Continuar**.
 
-    b. En la pantalla **Elige un bloqueo**, elija el tipo de bloqueo de pantalla que quiere usar.
+    4. Elija un PIN (puede escribir el mismo que haya especificado anteriormente) y pulse **Confirma el número PIN**.
 
-    c. En la pantalla **Inicio seguro**, pulse **Solicitar PIN para iniciar el dispositivo** y **Continuar**.
+    5. Abra la aplicación de Portal de empresa, seleccione el dispositivo y pulse **Comprobar cumplimiento**.
 
-    d. Elija un PIN (puede escribir el mismo que haya especificado anteriormente) y pulse **Confirma el número PIN**.
-
-    e. Abra la aplicación de Portal de empresa, seleccione el dispositivo y pulse **Comprobar cumplimiento**.
-
-¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI (consulte el [sitio web del Portal de la empresa](http://portal.manage.microsoft.com) para obtener información de contacto) o escriba al equipo de Microsoft Android en wintunedroidfbk@microsoft.com.
+¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI (consulte el [sitio web del Portal de empresa](http://portal.manage.microsoft.com) para obtener información de contacto) o escriba al equipo de Microsoft Android en wintunedroidfbk@microsoft.com.
 
 
 
-
-
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Oct16_HO3-->
 
 

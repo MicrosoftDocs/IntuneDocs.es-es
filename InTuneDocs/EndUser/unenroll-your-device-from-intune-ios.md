@@ -3,8 +3,9 @@ title: "Anular la inscripción del dispositivo iOS de Intune | Microsoft Intune"
 description: "Describe cómo anular la inscripción de un dispositivo iOS de Intune."
 keywords: 
 author: Staciebarker
+ms.author: stabar
 manager: angrobe
-ms.date: 04/28/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +15,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 618e2abda642c3b9b2e813824dfd4235c9309faa
-ms.openlocfilehash: 940cf1a54ef91be14f7290bc303ee386d48a3147
+ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
+ms.openlocfilehash: acd83d6cac946c7cc3c08bc179bf88dcc7475a69
 
 
 ---
@@ -23,20 +24,20 @@ ms.openlocfilehash: 940cf1a54ef91be14f7290bc303ee386d48a3147
 
 # Anular la inscripción del dispositivo iOS de Intune
 
-Cuando anule la inscripción del dispositivo iOS de Intune, el dispositivo ya no podrá tener acceso a recursos de empresa e Intune ya no lo administrará.
+Una vez anulada la inscripción del dispositivo iOS de Intune, este ya no podrá acceder a los recursos de la empresa ni será administrado por Intune.
 
 Para anular la inscripción del dispositivo de Intune, siga estos pasos o vea este vídeo:
 
 <iframe width="675" height="379" src="https://www.youtube.com/embed/6UFtBrBWUUI" frameborder="0" allowfullscreen></iframe>
 
 
-1.  En la aplicación del Portal de empresa, en **Mis dispositivos**, seleccione el dispositivo correspondiente.
+1.  En la aplicación Portal de empresa, en **Mis dispositivos**, seleccione el dispositivo cuya inscripción quiere anular.
 
 2.  Pulse en **Quitar** &gt; **Quitar**.
 
 Cuando se anula la inscripción de un dispositivo de Intune, ocurre lo siguiente:
 
--   El dispositivo deja de aparecer en el Portal de empresa.
+-   El dispositivo deja de aparecer en el portal de empresa.
 
 -   No se podrán instalar aplicaciones desde el Portal de empresa.
 
@@ -54,11 +55,8 @@ Cuando se anula la inscripción de un dispositivo de Intune, ocurre lo siguiente
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
-### Consulte también
-[Using your iOS or Mac OS X device with Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 
 
-
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO2-->
 
 

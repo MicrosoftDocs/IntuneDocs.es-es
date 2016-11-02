@@ -1,10 +1,11 @@
 ---
 title: "Restauración de dispositivos iOS administrados en Intune desde una copia de seguridad | Microsoft Intune"
 description: "Proporcione instrucciones a los usuarios finales acerca de cómo volver a inscribir sus dispositivos después de restaurar desde una copia de seguridad."
-keywords: 
+keywords: "restauración, administrados, iOS"
 author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 10/13/2016
+ms.date: 10/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: a19e5612-8805-4bd7-a86a-b734bde293ae
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 612b0954a81de1ee8d4a1e96c7440239437dec14
-ms.openlocfilehash: 5fc4423f8fd0c5829be5fe6c96949e126991e430
+ms.sourcegitcommit: e6bb539c87c4a13a490ba98c016d814bea5c7bbc
+ms.openlocfilehash: 6395e50b3e4c06e7363acc136b5ed9eb2ef75abd
 
 
 ---
@@ -37,8 +38,18 @@ Si se restaura la copia de seguridad en un dispositivo distinto, el estado de la
 > [!TIP]
 > Una comunicación de ejemplo para los usuarios podría ser la siguiente: para inscribirse en el nuevo dispositivo, asegúrese de que la versión de la aplicación Portal de empresa es la 2.1.22 o posterior. Para comprobar la versión, abra la aplicación Portal de empresa, pulse en el botón de menú en la esquina superior derecha y, después, pulse Acerca de. Si utiliza una versión anterior, salga de la aplicación Portal de empresa y abra la tienda App Store. Pulse el botón Actualizaciones, en la esquina inferior derecha, y después pulse el botón Actualizar junto al elemento de Portal de empresa en la lista. Una vez completada la actualización, inicie la aplicación Portal de empresa e [inscriba el dispositivo iOS en Intune](/Intune/EndUser/enroll-your-device-in-intune-ios).
 
+## Solución de problemas conocidos mediante restauraciones
+
+Es posible que los usuarios experimenten alguna dificultad si restauraron el dispositivo e iniciaron la aplicación Portal de empresa con la versión 2.1.21 o anterior de Portal de empresa aún instalada. Estos problemas pueden resolverse con los pasos adecuados para la situación del usuario.
+
+### Para usuarios que solo van a usar su nuevo dispositivo
+Inicie la aplicación Portal de empresa, seleccione el icono del dispositivo actual y pulse en el botón __Quitar__ para anular la inscripción. Después de quitar, siga los pasos de inscripción estándar para [inscribir un dispositivo iOS en Intune](/Intune/EndUser/enroll-your-device-in-intune-ios).
+
+### Para usuarios que van a usar el dispositivo antiguo y el nuevo
+Pulse en __Configuración__ > __Safari__ > __Borrar historial y datos de sitios web__ para borrar las cookies de Safari. Después de borrar, desinstale y vuelva a instalar la aplicación Portal de empresa y siga los pasos de inscripción estándar para [inscribir un dispositivo iOS en Intune](/Intune/EndUser/enroll-your-device-in-intune-ios).
 
 
-<!--HONumber=Oct16_HO2-->
+
+<!--HONumber=Oct16_HO3-->
 
 
