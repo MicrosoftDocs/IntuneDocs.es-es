@@ -2,9 +2,10 @@
 title: "Cómo obtener asistencia | Microsoft Intune"
 description: "El soporte técnico está disponible tanto en línea como por teléfono para las suscripciones de pago y de prueba."
 keywords: 
-author: Nbigman
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 10/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,28 +14,34 @@ ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f400f8b2ffd85b6328eceb74b97de1e67203ee6b
-ms.openlocfilehash: 3342ee86179348dbff880cb5884bf2975d26b50d
+ms.sourcegitcommit: d332e46b27bea274a38355dfb01806160b1041ee
+ms.openlocfilehash: 44069a34c1c9c2fb05f2b250188fe45a7d419911
 
 
 ---
 
-# Cómo obtener asistencia para Microsoft Intune
- El soporte técnico de Microsoft proporciona servicios globales de soporte técnico, preventa, facturación y suscripción para Microsoft Intune. El soporte técnico está disponible tanto en línea como por teléfono para las suscripciones de pago y de prueba. El soporte técnico en línea está disponible en inglés y japonés. La asistencia general (no técnica) está disponible en otros idiomas.
+# <a name="how-to-get-admin-support-for-microsoft-intune"></a>Cómo obtener asistencia de administración para Microsoft Intune
 
-En este tema se explica cómo abrir una solicitud de servicio o llamar al teléfono de soporte en varios idiomas.
+Microsoft proporciona servicios globales de soporte técnico, preventa, facturación y suscripción para Microsoft Intune. El soporte técnico está disponible tanto en línea como por teléfono para las suscripciones de pago y de prueba. El soporte técnico en línea está disponible en inglés y japonés. La asistencia telefónica y la asistencia de facturación en línea están disponibles en idiomas adicionales.
 
-Para buscar autoayuda para Intune, consulte [Solución de problemas de Microsoft Intune](general-troubleshooting-tips-for-microsoft-intune.md) o cualquiera de los temas de solución de problemas específicos enumerados en la sección **Consulte también** de este tema.
+La asistencia con Intune, y con Intune cuando se utiliza con Configuration Manager, es gratuita. Los clientes del soporte técnico Premier incurrirán en un cargo por cuestiones de procedimiento, como es el caso de configurar una función de Intune.
 
->[!NOTE]
->
->Los clientes Premier pueden abrir una incidencia de soporte técnico de Intune en la [página de soporte técnico Premier](https://support.microsoft.com/en-us/premier/contacts).
+## <a name="create-an-online-service-request"></a>Crear una solicitud de servicio en línea
 
-## Crear una solicitud de servicio en línea
+1.  Inicie sesión en el [Centro de administradores de Office 365](https://portal.office.com) con las credenciales de Intune. 
+    >[!NOTE]
+    >
+    >Los clientes del soporte técnico Premier pueden abrir una incidencia de soporte técnico de Intune en la [página de soporte técnico Premier](https://support.microsoft.com/en-us/premier/contacts).
 
-1.  Inicie sesión en el [Centro de administradores de Office 365](https://portal.office.com/admin/default.aspx#Overview_SupportPage_AltUSupportPage) con las credenciales de Intune.
+2.  Seleccione el icono de administración.
+3.  A la izquierda, en **Soporte técnico**, elija **Soporte técnico** para abrir la incidencia. Probablemente verá lo siguiente:
 
-2.  En **Crear una solicitud de servicio**, seleccione la categoría de problema para la que quiera abrir una incidencia:
+    ![Abra un nueva incidencia de soporte técnico de Intune](../media/suport-open-ticket.png)
+
+    >[!NOTE]
+    >
+    >  Los clientes que tienen o han tenido una cuenta de Office 365 con 100 licencias o menos, verán esto, de modo que conviene consultar [Método alternativo para abrir una incidencia de soporte técnico](#alternate-method-to-open-a-support-ticket).
+    > ![Soporte técnico alternativo de Intune](../media/alternate-support-ui.png)
 
     -   Para problemas de facturación, licencias y cuentas, seleccione **Billing and product info** (Información de facturación y productos).
 
@@ -43,31 +50,60 @@ Para buscar autoayuda para Intune, consulte [Solución de problemas de Microsoft
     > [!NOTE]
     > Puede que tenga que elegir **más**, en la parte inferior de la lista, para ver todas las categorías.
 
-3.  En la página para **identificar el problema**, seleccione los valores de **Característica** y **Síntoma** que correspondan a su problema. Se le pedirá que proporcione los datos de **Resumen de la incidencia** y **Detalles del problema**.
+3.  Siga las instrucciones para abrir la solicitud. 
 
-4.  En la página para **revisar sugerencias**, encontrará vínculos a contenidos que pueden ayudarlo a resolver el problema por su cuenta.  Si no puede resolverlo, puede elegir **Yes, continue** (Sí, continuar) en la parte inferior de la página para enviar la solicitud de servicio.
+### <a name="alternate-method-to-open-a-support-ticket"></a>Método alternativo para abrir una incidencia de soporte técnico
 
-5.  En la página para **agregar detalles**, proporcione la información solicitada. Puede adjuntar capturas de pantalla u otros documentos eligiendo la opción **Adjuntar archivo**.
+Si su página de soporte técnico tiene el siguiente aspecto, siga este procedimiento:
 
-6.  En la página para **confirmar y enviar**, proporcione la información de contacto, revise su solicitud y elija **Submit request** (Enviar solicitud). Una vez enviada la solicitud, verá una lista con sus solicitudes de servicio.
+![Soporte técnico alternativo de Intune](../media/alternate-support-ui.png)
 
-## Soporte por teléfono
+
+1. Elija **Necesito ayuda**.
+2. En el cuadro de texto, proporcione una descripción del problema y elija **Obtener ayuda**.
+
+    ![Incidencia de soporte técnico alternativo de Intune](../media/support-need-help.png)
+
+3. Revise los recursos en línea sugeridos de autoayuda o elija **Permita que le llamemos** para recibir una llamada de soporte técnico de Microsoft.
+
+## <a name="support-by-phone"></a>Soporte por teléfono
 Consulte [Asistencia telefónica para Microsoft Intune](contact-assisted-phone-support-for-microsoft-intune.md) para obtener una lista de números de teléfono de soporte técnico por país y región, horario de soporte técnico e idiomas admitidos para cada región.
 
-## Realizar un seguimiento de las solicitudes de servicio
-Para realizar un seguimiento de las solicitudes, vaya al [Centro de administración de Office 365](https://portal.office.com/admin/default.aspx). En la parte inferior de la lista **Crear una solicitud de servicio**, elija **See all support tickets** (Ver todas las incidencias de soporte técnico). De forma predeterminada, verá todas las solicitudes de servicio que tengan como estado “abierta”. Para cambiar qué solicitudes de servicio desea ver, como por ejemplo, ver las solicitudes que ya estén cerradas, elija el icono del filtro en la parte superior de la barra de navegación y seleccione la vista que prefiera.
+## <a name="track-your-service-requests"></a>Realizar un seguimiento de las solicitudes de servicio
+1.  Inicie sesión en el [Centro de administradores de Office 365](https://portal.office.com) con las credenciales de Intune. 
+2.  Seleccione el icono de administración.
+3.  A la izquierda, en **Soporte técnico**, elija **Solicitudes de servicio** para revisar sus incidencias. 
+
+Nuestras respuestas iniciales a las solicitudes de servicio dependen de la gravedad del problema. En el caso de los problemas más graves, nuestra primera respuesta para los clientes profesionales tendrá lugar en el plazo de dos horas. Para los clientes de soporte técnico Premier, la respuesta variará según el contrato de soporte. Se pueden dar dos casos:
+
+- Uno o más servicios no son accesibles o no se pueden utilizar. 
+- Los plazos de producción, operaciones o implementación se ven gravemente afectados, o habrá graves repercusiones en la producción o rentabilidad. 
+- Varios usuarios o servicios se ven afectados.
+
+En el caso de los problemas moderadamente graves, nuestra primera respuesta para los clientes profesionales tendrá lugar en el plazo de cuatro horas. Para los clientes de soporte técnico Premier, la respuesta variará según el contrato de soporte.  Se pueden dar dos casos:
+
+- El servicio se puede utilizar, pero su funcionamiento es deficiente. 
+- La situación tiene repercusiones moderadas para el negocio y se puede solucionar en horario laboral. 
+- Afecta parcialmente a un solo usuario, cliente o servicio.
+
+En otros problemas, nuestra primera respuesta para los clientes profesionales tendrá lugar en el plazo de ocho horas. Para los clientes de soporte técnico Premier, la respuesta variará según el contrato de soporte.  Se pueden dar dos casos:
+
+- La situación tiene un impacto mínimo en la empresa. 
+- El problema es importante pero no tiene repercusiones importantes para el cliente en cuanto al servicio actual o la productividad. 
+- Un solo usuario ve su actividad parcialmente interrumpida, pero existe una solución aceptable.
 
 > [!NOTE]
 > **Si usa Microsoft System Center Configuration Manager** o **Microsoft System Center Endpoint Protection:** para obtener soporte técnico con Configuration Manager o Endpoint Protection, póngase en contacto con su partner o visite el [Centro de soluciones de Microsoft System Center Configuration Manager y System Center Endpoint Protection](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx), donde encontrará abundante material de autoayuda y tendrá la posibilidad de abrir una solicitud de soporte en línea o por teléfono.
 >
 > El soporte técnico de System Center Configuration Manager o System Center Endpoint Protection requiere realizar un pago o se descuenta bien de la licencia existente, bien de los contratos de soporte técnico Premier.
 
-## Opciones de soporte adicionales
+## <a name="self-help"></a>Autoayuda
 
-### Partners
-Puede seleccionar un partner de Microsoft y delegar funciones administrativas, incluida la creación de incidencias de solicitud de servicio.
+Es posible que pueda resolver el problema sin tener que abrir una incidencia de soporte técnico.
 
-### Licencias por volumen
+Para buscar autoayuda para Intune, consulte [Solución de problemas de Microsoft Intune](general-troubleshooting-tips-for-microsoft-intune.md) o cualquiera de los temas de solución de problemas específicos. También puede buscar una solución o publicar su pregunta en el [foro de Intune](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod). 
+
+## <a name="support-for-volume-licensing-customers"></a>Asistencia para clientes de licencias por volumen
 Si ya ha adquirido licencias de Microsoft a través de un programa de licencias por volumen, haga lo siguiente para obtener soporte técnico:
 
 -   Para obtener soporte relacionado con licencias y localización de claves, consulte [Centro de servicios de licencias por volumen](http://go.microsoft.com/fwlink/p/?LinkID=282016).
@@ -76,75 +112,8 @@ Si ya ha adquirido licencias de Microsoft a través de un programa de licencias 
 
 -   Para obtener información general sobre licencias por volumen, consulte [Licencias por volumen](http://go.microsoft.com/fwlink/p/?LinkID=282015).
 
-## Respuesta a casos de soporte técnico
-Priorizamos los casos de soporte técnico que recibimos, para asegurarnos de que nos hacemos cargo primero de los más urgentes. Para priorizar estos casos de soporte técnico, proporcionamos a cada caso que recibimos un nivel de severidad de acuerdo a la siguiente tabla. Asimismo, también puede ver los tiempos de respuesta para cada nivel de gravedad.
-
-**Tiempos de respuesta inicial:**
-
-|Nivel de gravedad|Descripción de operaciones y soporte|Microsoft Intune/Enterprise Mobility Suite<br /><br />Premier|Microsoft Intune/Enterprise Mobility Suite<br /><br />Professional|
-|------------------|--------------------------------------|------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-|Gravedad A (crítica)|Uno o más servicios no son accesibles o no se pueden utilizar. Los plazos de producción, operaciones o implementación se ven gravemente afectados, o habrá graves repercusiones en la producción o rentabilidad. Varios usuarios o servicios se ven afectados.|1 hora|2 horas|
-|Gravedad B (alta)|El servicio se puede utilizar, pero su funcionamiento es deficiente. La situación tiene repercusiones moderadas para el negocio y se puede solucionar en horario laboral. Afecta parcialmente a un solo usuario, cliente o servicio.|2 horas|4 horas|
-|Gravedad C (media)|La situación tiene un impacto mínimo en la empresa. El problema es importante pero no tiene repercusiones importantes para el cliente en cuanto al servicio actual o la productividad. Un solo usuario ve su actividad parcialmente interrumpida, pero existe una solución aceptable.|4 horas|8 horas|
-
-## Colaboración entre soportes técnicos
-Para garantizar que recibe un buen servicio de soporte técnico, Microsoft y el departamento de TI de su empresa deberán colaborar entre ellos.  Los esfuerzos de su empresa para resolver problemas combinados con una comunicación eficaz entre los administradores y Microsoft, pueden ayudarle a solucionar sus problemas rápidamente.
-
-### Cómo pueden ayudar los administradores
-Las personas que tengan roles de administrador de Intune (incluidos los administradores de inquilinos y los administradores de servicios) están autorizadas a obtener acceso a la consola de administración de Intune y a comunicarse directamente con Microsoft con referencia a las solicitudes de servicio de Intune. Estos administradores también pueden ser partners de Microsoft que haya especificado como administradores delegados.
-
-El administrador:
-
--   Se encarga de la administración de servicios y el mantenimiento de cuentas
-
--   Envía solicitudes de servicio a Microsoft
-
--   Proporciona la configuración de cuentas de usuario y la configuración para permitir el acceso de los usuarios a los servicios
-
--   Administra los problemas de conectividad de los clientes y la instalación de software
-
--   Administra los problemas de disponibilidad de servicio dentro de la empresa
-
--   Usa los recursos de autoservicio del soporte técnico de Microsoft para resolver problemas relacionados con el soporte
-
-Si el problema persiste a pesar de todos sus esfuerzos por solucionarlo, tiene a su disposición el servicio de soporte técnico de Microsoft.
-
-### Cómo puede ayudarle el servicio de soporte técnico de Microsoft
-Nuestra función es:
-
--   Solucionar, administrar y resolver los problemas de los clientes y las escalaciones
-
--   Recopilar y validar la información de las solicitudes de servicio específicas
-
--   Proporcionar la coordinación de problemas y la administración de resoluciones
-
--   Mantener la comunicación con los administradores para garantizar que los problemas se atienden de forma continuada
-
--   Proporcionar asistencia relativa a las consultas sobre licencias, suscripciones y facturación
-
--   Proporcionar asistencia a las consultas sobre compras y pruebas
-
--   Recopilar continuamente comentarios de los clientes sobre cómo mejorar el servicio a través de encuestas
-
-### Consulte también
-[General troubleshooting tips for Microsoft Intune (Sugerencias de solución de problemas generales para Microsoft Intune)](general-troubleshooting-tips-for-microsoft-intune.md)
-
-[Troubleshoot Endpoint Protection in Microsoft Intune](troubleshoot-endpoint-protection-in-microsoft-intune.md)
-
-[Solucionar problemas de acceso a los recursos de la empresa con Microsoft Intune](troubleshoot-company-resource-access-problems-with-microsoft-intune.md)
-
-[Solucionar problemas de implementación de aplicaciones en Microsoft Intune](troubleshoot-app-deployment-problems-in-microsoft-intune.md)
-
-[Solución de problemas con la inscripción de dispositivos en Intune](troubleshoot-device-enrollment-in-intune.md)
-
-[Directivas de solución de problemas en Microsoft Intune](troubleshoot-policies-in-microsoft-intune.md)
-
-[Solucionar los problemas de configuración del cliente en Microsoft Intune](troubleshoot-client-setup-in-microsoft-intune.md)
-
-[Solucionar problemas de actualizaciones de software en Microsoft Intune](troubleshoot-software-updates-in-microsoft-intune.md)
 
 
-
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -14,13 +14,13 @@ ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 581e880fa4308ec627f5b2c1242fb5b30b713743
-ms.openlocfilehash: 3973ac11d4734b17f905e88259863d7ddb59c1f4
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 559917b5b3c12534a5aa5d5eb5247d36e4ac1728
 
 
 ---
 
-# Guía de evaluación de Intune
+# <a name="intune-evaluation-guide"></a>Guía de evaluación de Intune
 Configurar una evaluación gratuita de 30 días de Intune para administrar los equipos y dispositivos móviles es rápido y sencillo. Con solo unos pocos pasos sencillos en la evaluación, puede agregar hasta 100 usuarios y dispositivos, configurar grupos y directivas de cumplimiento e inscribir y administrar equipos y dispositivos móviles.
 
 En este tema, obtendrá información sobre los conceptos básicos para poner la evaluación de Intune en funcionamiento, así como información general del servicio para que pueda evaluar las características y funciones de Intune.
@@ -29,7 +29,7 @@ Vea el siguiente vídeo de demostración de cinco minutos para descubrir lo fác
 
 <iframe width="675" height="480" src="https://www.youtube.com/embed/ltcZvm4VOFU" frameborder="0" allowfullscreen></iframe>
 
-## Antes de comenzar
+## <a name="before-you-begin"></a>Antes de comenzar
 Antes de empezar a trabajar con Intune, necesitará lo siguiente:
 
 -   Un dispositivo con un explorador web habilitado para Silverlight que pueda usar para tener acceso a los sitios web en los que creará cuentas de usuario de Intune (el **Centro de administración de Office 365**) y en los que administrará dispositivos, grupos y directivas (la **consola de administración de Intune**).
@@ -46,7 +46,7 @@ Antes de empezar a trabajar con Intune, necesitará lo siguiente:
     |Dispositivos Windows 10, Windows RT 8.1 o Windows 8.1|No hay requisitos de certificado para inscribir dispositivos Windows RT y Windows.|[Instalar el cliente de equipos Windows con Microsoft Intune](/Intune/Deploy-Use/install-the-windows-pc-client-with-microsoft-intune).|
     |iOS 7.1 o posterior|Obtenga un certificado del servicio de notificaciones push de Apple.|Solicite un certificado de servicio de notificaciones push de Apple, tal como se describe aquí: [Configurar la administración de dispositivos iOS y Mac con Microsoft Intune](/Intune/Deploy-Use/set-up-ios-and-mac-management-with-microsoft-intune).|
 
-## Pasos para completar una evaluación de 30 días de Intune
+## <a name="steps-to-complete-a-30day-evaluation-of-intune"></a>Pasos para completar una evaluación de 30 días de Intune
 - [Paso 1: Iniciar sesión o registrarse para obtener una evaluación de 30 días](get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md). Antes de registrar o iniciar sesión en Intune, debería considerar si iniciar sesión con una cuenta existente o crear una cuenta temporal para usarla solo durante la evaluación de 30 días de Microsoft Intune.
 - [Paso 2: Agregar usuarios](get-started-with-a-30-day-trial-of-microsoft-intune-step-2.md). Ahora que ha configurado su cuenta, podrá agregar cuentas de usuario individuales en Intune o agregar usuarios en masa (vea las instrucciones en esta sección). Antes de empezar, es importante que comprenda cómo Intune administra las cuentas de administrador.
 - [Paso 3: Crear grupos para organizar los usuarios y los dispositivos](get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md). Los grupos de Intune ofrecen una gran flexibilidad para administrar dispositivos y usuarios. Puede configurar los grupos para que se adapten a las necesidades de su organización (por ejemplo, por ubicación geográfica, departamento o características de hardware) y usarlos para realizar diversas tareas administrativas a escala, desde la configuración de directivas para un conjunto de usuarios hasta la implementación de aplicaciones en un conjunto de dispositivos.
@@ -56,17 +56,17 @@ Antes de empezar a trabajar con Intune, necesitará lo siguiente:
 - [Paso 7: Pasos siguientes](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md). Prepárese para trasladarse a una suscripción de pago de Intune y aprovechar el “Beneficio del centro FastTrack” para Intune.
 
 
-### Pasos siguientes
+### <a name="next-steps"></a>Pasos siguientes
 Es el momento de empezar a trabajar con su suscripción de evaluación de 30 días.
 
 >[!div class="step-by-step"]
 [**Registrarse en Intune** &rarr;](.\get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)
 
-### Consulte también
+### <a name="see-also"></a>Consulte también
 [Guía de inicio rápido de Intune](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune)
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
