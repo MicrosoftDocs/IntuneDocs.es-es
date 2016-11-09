@@ -2,9 +2,10 @@
 title: Administrar alertas | Microsoft Intune
 description: "Use el área de trabajo Alertas en Intune para evaluar el estado general de los dispositivos de la organización."
 keywords: 
-author: Nbigman
+author: karthikaraman
+ms.author: karaman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +15,20 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pbala
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ed8b7e42bd7c6f3839cc93cc3efcdd3241e88e2a
-ms.openlocfilehash: f254c1a486305e54305392b9688c563b8be93237
+ms.sourcegitcommit: ab9ad1fb42176f2fc2babaa6fa3c91cea40b4ca5
+ms.openlocfilehash: 3bbeafbe78148d038b7673ee8c1abfd5bc6c5f87
 
 
 ---
 
-# Administrar alertas en Microsoft Intune
+# <a name="manage-alerts-in-microsoft-intune"></a>Administrar alertas en Microsoft Intune
 Utilice el área de trabajo **Alertas** en la consola de administración de Intune para evaluar el estado general de los dispositivos administrados de la organización y para identificar problemas.
 
-## Ver alertas activas
+## <a name="view-active-alerts"></a>Ver alertas activas
 
 Vea la información general y los datos de resumen sobre las alertas activas.
 
-#### Para ver las alertas activas
+#### <a name="to-view-active-alerts"></a>Para ver las alertas activas
 
 En la consola de administración de Intune, siga una de estas series de pasos:
 
@@ -55,10 +56,10 @@ En la consola de administración de Intune, siga una de estas series de pasos:
 
     -   **Gravedad**. Esta columna indica la gravedad de la alerta.
 
-## Ver alertas del tablón de anuncios
+## <a name="view-notice-board-alerts"></a>Ver alertas del tablón de anuncios
 Las alertas del tablón de anuncios proporcionan importantes anuncios de servicio. Pueden proporcionar información sobre la próxima actualización de un servicio o programación de mantenimiento o el estado de una interrupción.
 
-#### Para ver y administrar las alertas del tablón de anuncios
+#### <a name="to-view-and-manage-notice-board-alerts"></a>Para ver y administrar las alertas del tablón de anuncios
 
 1.  En la consola de administración de Intune, elija **Información general del sistema**.
 
@@ -66,10 +67,10 @@ Las alertas del tablón de anuncios proporcionan importantes anuncios de servici
 
 3.  Si quiere exportar una alerta del tablón de anuncios a un archivo de valores separados por comas (CSV) o HTML, en la consola de administración de Intune, elija **Alertas** > **Todas las alertas** >    **Notificaciones**. Seleccione una notificación, elija el icono **Exportar lista** y, después, siga las instrucciones que se muestran.
 
-## Revisar el estado del sistema de Intune
+## <a name="review-intune-system-status"></a>Revisar el estado del sistema de Intune
 En el área de trabajo **Información general del sistema**, puede ver los resúmenes **Estado del sistema** de las categorías Endpoint Protection, Actualizaciones, Estado del agente, Directiva y Software, que le ayudan a identificar y priorizar los problemas que requieren atención inmediata. Los mensajes de error que se generan cuando se interrumpe el sistema se vinculan al resumen **Estado del servicio**. El resumen **Estado del servicio** muestra detalles sobre el problema en cada ubicación y la última actualización del resumen de estado.
 
-#### Para ver el estado de la suscripción
+#### <a name="to-view-the-status-of-your-subscription"></a>Para ver el estado de la suscripción
 
 1.  En la consola de administración de Intune, elija **Información general del sistema**.
 
@@ -77,7 +78,7 @@ En el área de trabajo **Información general del sistema**, puede ver los resú
 
   Muchos de los elementos están vinculados para que pueda ver más información. Por ejemplo, en **Endpoint Protection**, si elige el número de instancias, puede ver el área de trabajo **Endpoint Protection** con una lista del malware que se ha detectado. Si elige el número de dispositivos, puede ver el área de trabajo **Grupos**, con una lista de los dispositivos en los que se ha encontrado malware.
 
-## Cerrar o reactivar alertas
+## <a name="close-and-reactivate-alerts"></a>Cerrar o reactivar alertas
 Las alertas de Intune permanecen activas hasta que se produce uno de los siguientes eventos:
 
 -   Se resuelve el problema que ha provocado que se genere la alerta.
@@ -88,7 +89,7 @@ Las alertas de Intune permanecen activas hasta que se produce uno de los siguien
 
 Las alertas que se marcan como cerradas se eliminan permanentemente después de 90 días.
 
-#### Para cerrar manualmente una alerta
+#### <a name="to-manually-close-an-alert"></a>Para cerrar manualmente una alerta
 
 En la consola de administración de Intune, siga una de estas series de pasos:
 
@@ -98,7 +99,7 @@ En la consola de administración de Intune, siga una de estas series de pasos:
 
 - **Para cerrar una alerta del tablón de anuncios**, elija **Información general del sistema**. Elija la **X** junto a la alerta del tablón de anuncios.
 
-#### Para ver y volver a activar alertas cerradas
+#### <a name="to-view-and-reactivate-closed-alerts"></a>Para ver y volver a activar alertas cerradas
 
 1.  En la consola de administración de Intune, elija **Alertas** > **Todas las alertas**.
 
@@ -108,11 +109,11 @@ En la consola de administración de Intune, siga una de estas series de pasos:
 
 3.  Para volver a activar la alerta seleccionada, elija **Reactivar alerta**.
 
-### Consulte también
+### <a name="see-also"></a>Consulte también
 [Recibir notificaciones mediante alertas de Microsoft Intune](../deploy-use/get-notified-by-alerts.md)
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

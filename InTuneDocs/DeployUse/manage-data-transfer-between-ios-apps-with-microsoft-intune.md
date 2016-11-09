@@ -3,6 +3,7 @@ title: Administrar la transferencia de datos entre aplicaciones iOS | Microsoft 
 description: "Consulte este tema para entender cómo puede usar la característica Open In de iOS y las directivas de administración de aplicaciones móviles para administrar las transferencias de datos entre aplicaciones."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
@@ -13,14 +14,14 @@ ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 488ecb801eac2b591db87683bbe9f371879483c4
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 080d861e8fd2d0140ffe5d9987032213ae0e4d4c
 
 
 ---
 
-# Administrar la transferencia de datos entre aplicaciones iOS con Microsoft Intune
-## Administrar aplicaciones iOS
+# <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>Administrar la transferencia de datos entre aplicaciones iOS con Microsoft Intune
+## <a name="manage-ios-apps"></a>Administrar aplicaciones iOS
 Como parte de la protección de los datos de la empresa es necesario asegurarse de que las transferencias de archivos se limiten a las aplicaciones que usted administra.  Puede administrar aplicaciones iOS de la siguiente manera:
 
 -   Evitar la pérdida de datos de empresa mediante una directiva MAM para las aplicaciones, a las que llamaremos aplicaciones **administradas por directivas**.
@@ -28,7 +29,7 @@ Como parte de la protección de los datos de la empresa es necesario asegurarse 
 -   También puede implementar y administrar aplicaciones a través del **canal de administración de dispositivos móviles (MDM)**.  Esto requiere la inscripción de los dispositivos en la solución de MDM. Se puede tratar de aplicaciones **administradas por directivas** u otras aplicaciones administradas.
 
 La característica de **administración Open In** (o administración de "Abrir en") para dispositivos iOS puede limitar las transferencias de archivos para que solo se realicen entre las aplicaciones que se implementan en los dispositivos mediante el **canal de MDM**. Las restricciones de administración de Open In se establecen en los valores de configuración y se implementan con la solución MDM.  Cuando el usuario instala la aplicación implementada, se aplican las restricciones que usted defina.
-##  Uso de MAM con aplicaciones iOS
+##  <a name="using-mam-with-ios-apps"></a>Uso de MAM con aplicaciones iOS
 Las directivas de administración de aplicaciones móviles (MAM) se pueden usar con la característica de **administración Open In** de iOS para proteger los datos de la empresa en los siguientes escenarios:
 
 -   **Dispositivos propiedad de los empleados no administrados por una solución MDM:** puede establecer la configuración de directiva MAM en **Allow app to transfer data to only managed apps** (Permitir a la aplicación transferir datos solo a aplicaciones administradas). Si el usuario final abre un archivo protegido en una aplicación no administrada por directivas, el archivo es ilegible.
@@ -41,7 +42,7 @@ Para asegurarse de que las aplicaciones que se implementan mediante la solución
 > [!IMPORTANT]
 > El valor de UPN de usuario solo se necesita para aplicaciones implementadas en dispositivos administrados por MDM de terceros.  Para dispositivos administrados por Intune, esta opción no es necesaria.
 
-## Configurar el valor de UPN de usuario
+## <a name="configure-user-upn-setting"></a>Configurar el valor de UPN de usuario
 Esta configuración es necesaria para los dispositivos que están administrados por una solución MDM de terceros. El procedimiento que se describe a continuación es un flujo general para la implementación del valor de UPN y la experiencia del usuario final resultante:
 
 
@@ -49,11 +50,11 @@ Esta configuración es necesaria para los dispositivos que están administrados 
 
 2.  Implemente las aplicaciones y el perfil de correo electrónico que quiere administrar **a través de la solución MDM de terceros** con la configuración descrita en los pasos 3 y 4.
 
-3.  Implemente la aplicación con las siguientes opciones de configuración: key=IntuneMAMUPN, Value=<username@company.com> [example: ‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
+3.  Implemente la aplicación con las siguientes opciones de configuración: key=IntuneMAMUPN, <username@company.com> [ejemplo: "IntuneMAMUPN", "jondoe@microsoft.com"]‘jondoe@microsoft.com’]
 
 4.  Implemente la directiva de administración de Open In en los dispositivos inscritos.
 
-### Ejemplo y experiencia de usuario
+### <a name="example-end-user-experience"></a>Ejemplo y experiencia de usuario
 
 1.  El usuario final instala la aplicación Microsoft Word en el dispositivo.
 
@@ -70,11 +71,11 @@ Esta configuración es necesaria para los dispositivos que están administrados 
 
 6.  De este modo, la transferencia de datos se realiza correctamente y el documento se etiqueta como identidad corporativa en la aplicación. Además, los datos se tratan en un contexto de trabajo en el que la configuración de directivas se aplica en consecuencia.
 
-### Consulte también
+### <a name="see-also"></a>Consulte también
 [Proteger datos mediante las directivas de administración de aplicaciones móviles con Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Nov16_HO1-->
 
 
