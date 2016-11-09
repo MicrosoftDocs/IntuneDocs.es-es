@@ -14,8 +14,8 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eba2421fb929d21eb36c273eb6cb43a06ac03cb4
-ms.openlocfilehash: ed92874cce2877d31d83a619ec8ffb63a57cd5c3
+ms.sourcegitcommit: 738b6bedcefbfd8bf0fa7bde5b86c79293af527e
+ms.openlocfilehash: 7d239a80ed68d39b2a7179a45178ba6ae11c5423
 
 
 ---
@@ -106,7 +106,7 @@ La tarea de inscripción automática de Intune, el valor **WindowsIntuneEnrollPe
 
 ## <a name="instruct-users-to-selfenroll"></a>Indicar a los usuarios que efectúen una inscripción automática
 
-Los usuarios pueden instalar el software cliente de Intune desde el [sitio web del portal de empresa](http://portal..manage.microsoft.com). Si el portal web puede detectar que el dispositivo es un equipo con Windows, se solicitará a los usuarios que lo inscriban descargando el software cliente de Intune. Una vez descargado el software, los usuarios pueden instalarlo para incorporar sus equipos a la administración.
+Los usuarios pueden instalar el software cliente de Intune desde el [sitio web del portal de empresa](http://portal.manage.microsoft.com). Si el portal web puede detectar que el dispositivo es un equipo con Windows, se solicitará a los usuarios que lo inscriban descargando el software cliente de Intune. Una vez descargado el software, los usuarios pueden instalarlo para incorporar sus equipos a la administración.
 
 ![El portal de Intune solicita descargar el cliente de software de Intune](../media/software-client-download.png)
 
