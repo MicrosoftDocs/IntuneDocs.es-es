@@ -34,6 +34,6 @@ Si intenta inscribir el dispositivo iOS o Mac OS X en Intune y ve una pantalla q
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

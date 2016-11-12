@@ -57,6 +57,6 @@ Cuando se anula la inscripción de un dispositivo de Intune, ocurre lo siguiente
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

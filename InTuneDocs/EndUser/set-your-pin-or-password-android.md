@@ -36,6 +36,6 @@ Para establecer un PIN o una contraseña, use los siguientes pasos.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 
