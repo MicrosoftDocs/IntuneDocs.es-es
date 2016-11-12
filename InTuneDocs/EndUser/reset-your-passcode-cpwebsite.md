@@ -2,8 +2,8 @@
 title: "Restablecer el código de acceso de un dispositivo desde el sitio web del portal de empresa | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2aea845bc00c153f070e04abb67582a5d5a726ca
-ms.openlocfilehash: 47b36616f7a8ee23d4d47b41a1db2c41c185c6f5
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: b3a3b7c2a983776f79ffa8562e130bb11e714e29
 
 
 ---
 
 
-# Restablecer el código de acceso de un dispositivo desde el sitio web del portal de empresa
+# <a name="reset-your-device-passcode-from-the-company-portal-website"></a>Restablecer el código de acceso de un dispositivo desde el sitio web del portal de empresa
 
 Si pierde el PIN o la contraseña de un dispositivo inscrito en Intune, puede usar el [sitio web del portal de empresa](http://portal.manage.microsoft.com) para restablecerlos. Puede usar el sitio web del Portal de empresa para administrar equipos y dispositivos que haya inscrito en Intune y para realizar la mayoría de las tareas que se pueden hacer con la aplicación Portal de empresa.
 
@@ -63,6 +63,6 @@ Para restablecer el código de acceso:
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

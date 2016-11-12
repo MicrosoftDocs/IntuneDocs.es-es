@@ -3,6 +3,7 @@ title: "Elegir cómo inscribir dispositivos móviles | Microsoft Intune"
 description: "Decidir cómo inscribir dispositivos móviles en Intune respondiendo a unas preguntas sencillas"
 keywords: 
 author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
@@ -12,8 +13,8 @@ ms.technology:
 ms.assetid: 178df739-d3b9-43cb-8440-c5c110b1276b
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 90a26e1008a8e0800b07940c11a8adcd00cbb241
-ms.openlocfilehash: becbaa195dc3fde6bc0a0edb0916c75a4d07c017
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: f4e6c17624f509b83ca594750c0db8931bc54b35
 
 
 ---
@@ -83,6 +84,6 @@ Puede inscribir dispositivos corporativos con usuarios dedicados de las maneras 
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

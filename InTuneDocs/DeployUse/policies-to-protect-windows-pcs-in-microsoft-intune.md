@@ -3,6 +3,7 @@ title: Directivas para proteger equipos Windows| Microsoft Intune
 description: "Use estas directivas para ayudar a garantizar la seguridad de los PC de Windows cuando estén administrados por el software cliente de Intune."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 07/13/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: d081f466-45dd-41d1-ab25-6d974c72a52a
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 321a19c38a4b69f5d16f10f054dd517b696b44eb
-ms.openlocfilehash: e649db8209f6c3c99af3353188fb8ebf463d922f
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 1404508de2aacf5e12a8bf97e39ad059105c16f6
 
 
 ---
@@ -43,6 +44,6 @@ Como administrador de TI, una de sus principales prioridades es [proteger los eq
 
 
 
-<!--HONumber=Aug16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

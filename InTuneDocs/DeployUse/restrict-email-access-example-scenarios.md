@@ -3,6 +3,7 @@ title: "Escenarios de ejemplo para restringir el acceso al correo electrónico |
 description: "Algunos escenarios de ejemplo y cómo se pueden implementar con el acceso condicional."
 keywords: 
 author: karthikaraman
+ms.author: karaman
 manager: angrobe
 ms.date: 07/18/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: be1ebcdf2514e45d383dd49890e0e21acf6ede44
-ms.openlocfilehash: 6b4751a67414a0b8a16886070b323a0296eeb829
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 6c1a1c90b442eac039f93103264059ea415b43ff
 
 
 ---
@@ -81,6 +82,6 @@ El siguiente flujo se utiliza para decidir los dispositivos que pueden tener acc
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

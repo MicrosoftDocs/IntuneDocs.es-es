@@ -2,10 +2,10 @@
 title: Restablecimiento (borrado) de un dispositivo iOS perdido o robado | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,21 +15,21 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 705c70b034378113a29003891f465a0e88186c69
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 586eb09811bf52cecf93dd51d1de76b2287b80ea
 
 
 ---
 
 
-# Restablecimiento (borrado) de un dispositivo iOS perdido o robado
+# <a name="reset-erase-your-lost-or-stolen-ios-device"></a>Restablecimiento (borrado) de un dispositivo iOS perdido o robado
 
 Si se pierde o roban un teléfono con una inscripción a Intune, puede restablecer la configuración predeterminada de fábrica a través de la aplicación del Portal de empresa desde otro dispositivo o mediante el [sitio web del Portal de empresa](http://portal.manage.microsoft.com).
 
 > [!WARNING]
 > Al hacerlo, quitará del dispositivo su información personal y de trabajo. Para obtener más información sobre lo que ocurre cuando se restablece un dispositivo, consulte [What happens if you reset your device using the Company Portal? (¿Qué ocurre al restablecer un dispositivo mediante el portal de empresa?)](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md).
 
-## Para restablecer el dispositivo mediante la aplicación Portal de empresa
+## <a name="to-reset-your-device-using-the-company-portal-app"></a>Para restablecer el dispositivo mediante la aplicación Portal de empresa
 
 1.  Desde otro dispositivo inscrito, abra la aplicación del portal de empresa e inicie sesión con su cuenta profesional o educativa.
 
@@ -37,7 +37,7 @@ Si se pierde o roban un teléfono con una inscripción a Intune, puede restablec
 
 3.  Pulse en **Restablecer** &gt; **Restablecer**.
 
-## Para restablecer el dispositivo mediante el sitio web del Portal de empresa
+## <a name="to-reset-your-device-using-the-company-portal-website"></a>Para restablecer el dispositivo mediante el sitio web del Portal de empresa
 
 Puede seguir estos pasos o ver este vídeo:
 
@@ -51,8 +51,6 @@ Si no puede restablecer el dispositivo perdido o robado, pida al administrador d
 
 
 
-
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

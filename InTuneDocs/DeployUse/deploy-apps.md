@@ -3,8 +3,9 @@ title: Implementar aplicaciones | Microsoft Intune
 description: En este tema se explican los conceptos que es preciso conocer para empezar a implementar aplicaciones con Intune.
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c4a760b6362356a6bafa8b6acc69299647a5e0f3
-ms.openlocfilehash: 377597aabc03c020060e2851c6fc25e0c780ea51
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: eedf7db0a974f9a0aa0a21b27b64ed8b4a91b378
 
 
 ---
@@ -73,6 +74,6 @@ Obtenga información sobre cómo [implementar aplicaciones en Microsoft Intune](
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

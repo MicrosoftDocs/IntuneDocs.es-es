@@ -2,10 +2,10 @@
 title: Usar aplicaciones administradas en el dispositivo iOS | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
-ms.openlocfilehash: 509a0fda9355cc77a2f7690771dbe086c0cc59fc
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: c051fe1128f2156943eac7eb4d4fa5983ed90771
 
 
 ---
 
 
-# Usar aplicaciones administradas en el dispositivo iOS
+# <a name="use-managed-apps-on-your-ios-device"></a>Usar aplicaciones administradas en el dispositivo iOS
 
 Las aplicaciones administradas son aplicaciones que el administrador de TI puede configurar para ayudar a proteger los datos de la empresa a los que se puede acceder en esa aplicación. Al acceder a los datos de la empresa en una aplicación administrada en el dispositivo iOS, es posible que observe que funciona de una forma un poco diferente a la esperada. Por ejemplo, es posible que no pueda copiar y pegar los datos protegidos de la compañía o no pueda guardar dichos datos en determinadas ubicaciones.
 
@@ -32,14 +32,14 @@ Cuando accede a datos de la empresa en una aplicación administrada, verá un me
 
 ![managed-apps-message-ios](./media/managed-apps-message.png)
 
-### ¿Cómo se pueden obtener aplicaciones administradas?
+### <a name="how-do-i-get-managed-apps"></a>¿Cómo se pueden obtener aplicaciones administradas?
 Las aplicaciones administradas se obtienen de dos maneras distintas:
 
 -   Cuando el dispositivo está inscrito en Microsoft Intune, puede instalar la aplicación desde la aplicación Portal de empresa o un sitio web del Portal de empresa, o bien el administrador de TI puede instalarla en el dispositivo. Para más información sobre la inscripción, vea [Enroll your iOS device in Intune](enroll-your-device-in-intune-ios.md) (Inscribir el dispositivo iOS en Intune) o [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md) (Inscribir el dispositivo Mac OS X en Intune).
 
 -   Instale una aplicación desde App Store y después inicie sesión con la cuenta de usuario corporativo que administra Intune.
 
-### ¿Qué puede administrar el administrador de TI en una aplicación?
+### <a name="what-can-my-it-admin-manage-in-an-app"></a>¿Qué puede administrar el administrador de TI en una aplicación?
 Estos son algunos ejemplos de opciones que el administrador de TI puede administrar en una aplicación y que pueden afectar a las interacciones con los datos de la empresa en el dispositivo:
 
 -   Acceso a sitios Web específicos
@@ -65,6 +65,6 @@ Para obtener más información sobre las aplicaciones administradas en el dispos
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

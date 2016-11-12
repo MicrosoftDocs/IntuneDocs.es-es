@@ -2,9 +2,10 @@
 title: "Solución de problemas con la inscripción de dispositivos de Windows 10 | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 8/18/2016
+ms.date: 10/12/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +15,13 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: ff70fb247133234f1a90113326c5641b4f73b9df
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: ecd84b62d34e22a72da87995ff0d62dad5e5a9ed
 
 
 ---
 
-# Solución de problemas con la inscripción de dispositivos de Windows 10
+# <a name="troubleshoot-your-windows-10-device-enrollment"></a>Solución de problemas con la inscripción de dispositivos de Windows 10
 Si ha seguido los pasos descritos en [Inscribir un dispositivo de escritorio de Windows 10 Mobile o Windows 10 en Intune](enroll-your-w10-phone-or-w10-pc-windows.md), pero todavía no se puede obtener acceso a su correo electrónico profesional o educativo, pruebe estos pasos para solucionar problemas.
 
 1.  Examine las dos pantallas siguientes y encuentre la que sea similar a lo que ve en el dispositivo. Siga los pasos que tienen que ver con la pantalla que verá en el dispositivo.
@@ -33,7 +34,7 @@ Si ha seguido los pasos descritos en [Inscribir un dispositivo de escritorio de 
 
     ![settings-accounts-your-account](./media/W10-enroll-2-accounts-your-account.png)
 
-## Pasos de solución de problemas a seguir si ve acceso profesional o educativo
+## <a name="troubleshooting-steps-to-follow-if-you-see-access-work-or-school"></a>Pasos de solución de problemas a seguir si ve acceso profesional o educativo
 
 1.  Si después de seguir los pasos anteriores, no consigue tener acceso a los archivos y al correo electrónico profesional o educativo, vuelva a **Acceso profesional o educativo**.
 
@@ -45,7 +46,7 @@ Si ha seguido los pasos descritos en [Inscribir un dispositivo de escritorio de 
 
     - Si no ve la información de conexión que se muestra arriba, o la ve, pero carece de algunas de las opciones, seleccione **Conectar**, y, a continuación, inicie sesión con sus credenciales profesionales o educativas. Ahora debe estar conectado.
 
-## Pasos de solución de problemas a seguir si ve su cuenta
+## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>Pasos de solución de problemas a seguir si ve su cuenta
 
 Si después de seguir los pasos anteriores, no consigue tener acceso al correo, a los archivos y a otros datos laborales o educativos, vuelva a **Cuentas** y pulse **Acceso profesional**.
 
@@ -57,6 +58,6 @@ Si después de seguir los pasos anteriores, no consigue tener acceso al correo, 
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 

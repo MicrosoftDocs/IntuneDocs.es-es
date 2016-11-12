@@ -3,8 +3,9 @@ title: Agregar aplicaciones para dispositivos inscritos | Microsoft Intune
 description: "Antes de que pueda implementar una aplicación, debe agregarla a Intune. Después, esta se encuentra disponible en la consola de Intune donde puede implementarla y administrarla."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6716a3d1fb53dc3de0189f637d5664d0a2023d05
-ms.openlocfilehash: 72d2974b5aa9ca334b59d8a1d28a175b190ba533
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 239a4b932eed61fc0b2b870892730330565eac93
 
 
 ---
@@ -99,6 +100,6 @@ Tras crear una aplicación, el siguiente paso es implementarla. Para obtener má
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

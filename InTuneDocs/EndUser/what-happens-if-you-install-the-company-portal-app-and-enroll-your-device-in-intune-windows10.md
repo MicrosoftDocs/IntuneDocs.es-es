@@ -2,10 +2,10 @@
 title: "¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo Windows 10 en Intune? | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
-ms.openlocfilehash: 0462635a4c995866f8ad504ea724e795424b4405
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 94868431ce100a252ddfc7df5f9c2e287f0eedaf
 
 
 ---
 
 
-# ¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo Windows 10 en Intune?
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo Windows 10 en Intune?
 
 Cuando instale la aplicación Portal de empresa y use la aplicación para inscribir su dispositivo Windows 10 Enterprise o Professional en Intune, podrá usar la aplicación Portal de empresa para:
 
@@ -56,6 +56,6 @@ Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para 
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

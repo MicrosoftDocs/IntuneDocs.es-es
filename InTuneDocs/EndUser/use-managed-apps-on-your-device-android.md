@@ -2,10 +2,10 @@
 title: Usar aplicaciones administradas en el dispositivo Android | Microsoft Intune
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/28/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0d32aa982cf9d45da36f71be5554f31375521e35
-ms.openlocfilehash: 9f98871b6054e0277cb2c041776fc05e8a6aefe3
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: b9764ec0b728ebce48c14fed9e3bb052a43b85fb
 
 
 ---
 
 
-# Usar aplicaciones administradas en el dispositivo Android
+# <a name="use-managed-apps-on-your-android-device"></a>Usar aplicaciones administradas en el dispositivo Android
 
 Las aplicaciones administradas son aplicaciones que el administrador de TI puede configurar para ayudar a proteger los datos de la empresa a los que se puede acceder en esa aplicación. Al acceder a los datos de la empresa en una aplicación administrada en el dispositivo Android, es posible que observe que la aplicación funciona de forma un poco diferente a la esperada. Por ejemplo, es posible que no pueda copiar y pegar los datos protegidos de la compañía o no pueda guardar dichos datos en determinadas ubicaciones.
 
@@ -32,14 +32,14 @@ Cuando accede a datos de la empresa en una aplicación administrada, verá un me
 
 ![open-managed-apps-message](./media/managed-apps-message.png)
 
-## ¿Cómo se pueden obtener aplicaciones administradas?
+## <a name="how-do-i-get-managed-apps"></a>¿Cómo se pueden obtener aplicaciones administradas?
 Las aplicaciones administradas se obtienen de dos maneras distintas:
 
 -   Cuando el dispositivo está inscrito en Microsoft Intune, puede instalar la aplicación desde la aplicación Portal de empresa o un sitio web del Portal de empresa, o bien el administrador de TI puede instalarla en el dispositivo. Para más información sobre la inscripción, vea [Inscripción del dispositivo en Intune](enroll-your-device-in-Intune-android.md).
 
 -   Instale una aplicación desde Play Store y después inicie sesión con su cuenta de usuario corporativo administrada por Intune.
 
-## ¿Qué puede administrar el administrador de TI en una aplicación?
+## <a name="what-can-my-it-admin-manage-in-an-app"></a>¿Qué puede administrar el administrador de TI en una aplicación?
 Estos son algunos ejemplos de opciones que el administrador de TI puede administrar en una aplicación y que pueden afectar a las interacciones con los datos de la empresa en el dispositivo:
 
 -   Acceso a sitios Web específicos
@@ -76,6 +76,6 @@ Para obtener más información sobre las aplicaciones administradas en el dispos
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

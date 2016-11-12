@@ -2,10 +2,10 @@
 title: "Cómo establecer el período antes de que se bloquee el dispositivo Android | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 6fd49127321b665c4c23eafc0dabab6787307881
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 7407be9c7ae96652270692eeb70e35743dff2602
 
 
 ---
 
-# Cómo establecer el período antes de que se bloquee el dispositivo Android
+# <a name="how-to-set-the-period-before-your-android-device-is-locked"></a>Cómo establecer el período antes de que se bloquee el dispositivo Android
 Para volver a conectar con su trabajo, deberá establecer el tiempo de espera de la contraseña en el dispositivo siguiendo los pasos para el tipo de dispositivo que tiene.
 
-## Dispositivo nativo (distinto a Samsung KNOX)
+## <a name="native-nonsamsung-knox-device"></a>Dispositivo nativo (distinto a Samsung KNOX)
 
 1.  En el dispositivo, en **Configuración**, toque **Seguridad** &gt; **Automatically Lock ** (Bloqueo automático) (aparece como **Lock phone after ** [Bloquear teléfono tras] en algunos dispositivos).
 
@@ -32,7 +32,7 @@ Para volver a conectar con su trabajo, deberá establecer el tiempo de espera de
 
 2.  Seleccione el valor de tiempo de espera de la contraseña.
 
-## Dispositivo Samsung KNOX
+## <a name="samsung-knox-device"></a>Dispositivo Samsung KNOX
 
 1.  En el dispositivo, en **Configuración**, toque **Pantalla de bloqueo y seguridad** &gt; **bloqueo automático**.
 
@@ -44,6 +44,6 @@ Para volver a conectar con su trabajo, deberá establecer el tiempo de espera de
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

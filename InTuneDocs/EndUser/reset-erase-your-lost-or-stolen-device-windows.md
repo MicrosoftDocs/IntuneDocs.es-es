@@ -2,8 +2,8 @@
 title: Restablecimiento (borrado) de un dispositivo Windows perdido o robado | Microsoft Intune
 description: Restablecer un dispositivo Windows perdido o robado
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f2283b5896541e58d7ae515cab9d4faa1e9df735
-ms.openlocfilehash: 4a206e30c1334681f82b8077da6191ef3e28e4b1
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 2af464dd1eb4fa97c6500131f51d48b6636b0cf2
 
 
 ---
 
 
-# Restablecer (borrar) el dispositivo perdido o robado
+# <a name="reset-erase-your-lost-or-stolen-device"></a>Restablecer (borrar) el dispositivo perdido o robado
 
 Si se pierde o le roban un dispositivo con una inscripción a Intune, puede restablecer la configuración predeterminada de fábrica a través del sitio web del [Portal de empresa](http://portal.manage.microsoft.com).
 
@@ -41,6 +41,6 @@ Si no puede restablecer el dispositivo perdido o robado, póngase en contacto co
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -3,6 +3,7 @@ title: "Configuración de directivas de Exchange ActiveSync | Microsoft Intune"
 description: "Use la directiva de Exchange ActiveSync de Intune para configurar las opciones que le permitirán controlar características y funciones en los dispositivos administrados por Exchange ActiveSync."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: e9cbb826-b155-4df6-abf3-60c6f05b2783
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 073e3df63a5de9cf92c739c1ced858e21a9ac351
-ms.openlocfilehash: 9a481e1ce7815a0411651fc724e3fc2f5d374eac
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 770871d8cc7a32fb54ef01fb9ac84b1fdee2ec90
 
 
 ---
@@ -80,6 +81,6 @@ Use la directiva de **Exchange ActiveSync** de Microsoft Intune para configurar 
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Oct16_HO4-->
 
 

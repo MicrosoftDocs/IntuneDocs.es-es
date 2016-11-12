@@ -2,9 +2,10 @@
 title: Cifrado del dispositivo Windows | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 6/15/2016
+ms.date: 10/18/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +15,13 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d3a2daebdb781ce99aa103e7717ffa1b0297cb3a
-ms.openlocfilehash: 7418330fe3eac4936843eff38cf713cdcb6f64f4
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 66edf19ad9cea6f49504b70946b4e0c02dcfc99f
 
 
 ---
 
-# Cifrado del dispositivo Windows
+# <a name="how-to-encrypt-your-windows-device"></a>Cifrado del dispositivo Windows
 
 A fin de proteger los datos de la empresa o del centro educativo, puede que el administrador de TI le exija cifrar su dispositivo Windows. Si tiene un dispositivo Windows Phone y lo ha inscrito, se cifrará automáticamente en caso de que se requiera cifrado.
 
@@ -34,6 +35,6 @@ Si tiene un dispositivo de escritorio, siga estas instrucciones para cifrarlo.
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Nov16_HO1-->
 
 
