@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -20,10 +20,10 @@ ms.openlocfilehash: 6c1a1c90b442eac039f93103264059ea415b43ff
 
 ---
 
-# Restringir el acceso al correo electrónico con Microsoft Intune: escenarios de ejemplo
+# <a name="restrict-access-to-email-with-microsoft-intune-example-scenarios"></a>Restringir el acceso al correo electrónico con Microsoft Intune: escenarios de ejemplo
 
-## Impida que los usuarios usen dispositivos no conformes para tener acceso a Exchange Online.
-### Requisitos del escenario
+## <a name="block-users-from-using-noncompliant-devices-to-access-exchange-online"></a>Impida que los usuarios usen dispositivos no conformes para tener acceso a Exchange Online.
+### <a name="scenario-requirements"></a>Requisitos del escenario
 - Todos los usuarios del grupo de seguridad **Contabilidad** de Active Directory deben tener bloqueado el acceso a Exchange Online si su dispositivo no cumple con una directiva de cumplimiento implementada.
 - Si existe algún usuario en este grupo cuyos dispositivos no son compatibles con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], se deberá bloquear su acceso a Exchange Online en ese dispositivo.
 - Los usuarios que se encuentren en el grupo de seguridad **Finanzas** de Active Directory deben estar exentos de la aplicación de la directiva, aunque también estén incluidos en el grupo de seguridad **Contabilidad**.
@@ -43,8 +43,8 @@ El siguiente flujo se usa para decidir los dispositivos que pueden tener acceso 
 
 ![Flujo de acceso de dispositivos](./media/ConditionalAccess8-5.png)
 
-## Todos los dispositivos iOS que tienen acceso a Exchange local deben administrarse mediante Intune
-### Requisitos del escenario
+## <a name="all-ios-devices-that-access-exchange-onpremises-must-be-managed-by-intune"></a>Todos los dispositivos iOS que tienen acceso a Exchange local deben administrarse mediante Intune
+### <a name="scenario-requirements"></a>Requisitos del escenario
 - Solo debe permitirse el acceso a Exchange local a los dispositivos que ejecutan iOS.
 - Los dispositivos deben inscribirse en Intune y cumplir las reglas de directivas de cumplimiento para que se puedan usar para tener acceso a Exchange.
 
@@ -62,8 +62,8 @@ El siguiente flujo se utiliza para decidir los dispositivos que pueden tener acc
 
 ![Flujo de acceso de dispositivos](./media/ConditionalAccess8-3.png)
 
-## Ningún dispositivo Android puede acceder a Exchange local.
-### Requisitos del escenario
+## <a name="no-android-devices-can-access-exchange-onpremises"></a>Ningún dispositivo Android puede acceder a Exchange local.
+### <a name="scenario-requirements"></a>Requisitos del escenario
 - Debe bloquearse el acceso a Exchange de todos los dispositivos Android.
 - Los demás dispositivos compatibles pueden tener acceso a Exchange, siempre que estén administrados por [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
