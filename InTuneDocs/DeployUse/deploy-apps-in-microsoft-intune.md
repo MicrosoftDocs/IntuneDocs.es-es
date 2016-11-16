@@ -3,8 +3,9 @@ title: "Implementación de aplicaciones | Microsoft Intune"
 description: "Use la información de este tema como ayuda para implementar aplicaciones con Microsoft Intune."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 08/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0c6f795031ec23ffe6f332b3510eea43d5fbdbcd
-ms.openlocfilehash: 4c9f5b111fbd95f9e1c928cfaaa0c7ebf61dad2a
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 6ae7bd35157da261d0627f70933fe2a808f9e677
 
 ---
 # Deploy apps in Microsoft Intune (Implementar aplicaciones en Microsoft Intune)
@@ -57,7 +58,7 @@ La aplicación se muestra en los dispositivos de los usuarios en Portal de empre
 Por ejemplo, en esta captura de pantalla, la aplicación Bing para iOS se ha implementado mediante el tipo de instalación **Vínculo externo** con un icono personalizado. Se ha seleccionado la opción **Mostrar esta aplicación como destacada y resaltarla en Portal de empresa**.  
 ![Aplicación disponible para iOS](./media/available-install-on-iOS.png)
 
-Si implementó la aplicación como **Requerida** en un dispositivo iOS, el usuario recibirá una notificación en la que se le informará de que la aplicación está preparada para la instalación. Por ejemplo, en esta captura de pantalla, la aplicación Carpetas de trabajo para iOS se ha implementado mediante el tipo de instalación **Aplicación iOS administrada de la App Store**.
+Si implementó la aplicación como **Requerida** en un dispositivo iOS, el usuario recibirá una notificación en la que se le informará de que la aplicación está preparada para la instalación. Por ejemplo, en esta captura de pantalla, la aplicación Carpetas de trabajo para iOS se ha implementado mediante el tipo de instalación **Aplicación iOS administrada de la App Store**.  
 ![Aplicación requerida para Android](./media/iOS-Required-install.PNG)
 
 ## Pasos siguientes
@@ -66,6 +67,6 @@ Después de implementar una aplicación, probablemente le interese supervisar su
 
 
 
-<!--HONumber=Jul16_HO5-->
+<!--HONumber=Oct16_HO4-->
 
 

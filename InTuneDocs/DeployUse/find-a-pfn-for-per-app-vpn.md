@@ -2,9 +2,10 @@
 title: "Buscar un nombre de familia de paquete (PFN) para la VPN por aplicación | Microsoft Intune"
 description: "Busque un PFN para poder configurar una VPN por aplicación."
 keywords: 
-author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.date: 07/20/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,17 +14,17 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 ms.reviewer: tycast
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3cc73e43f09709b71c78a81c73b044d92d4ef401
-ms.openlocfilehash: 77977ea32ea37a54e9d67638bb0e4c3bb6841fb3
+ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
+ms.openlocfilehash: 6d3e43c1380114634c44bd364076df404bce95e3
 
 
 ---
 
-# Buscar un nombre de familia de paquete (PFN) para la configuración de la VPN por aplicación
+# <a name="find-a-package-family-name-pfn-for-perapp-vpn-configuration"></a>Buscar un nombre de familia de paquete (PFN) para la configuración de la VPN por aplicación
 
 Hay dos formas de buscar un PFN para poder configurar una VPN por aplicación.
 
-## Buscar un PFN para una aplicación instalada en un equipo Windows 10
+## <a name="find-a-pfn-for-an-app-thats-installed-on-a-windows-10-computer"></a>Buscar un PFN para una aplicación instalada en un equipo Windows 10
 
 Si la aplicación con la que trabaja ya está instalada en un equipo Windows 10, puede usar el cmdlet [Get-AppxPackage](https://technet.microsoft.com/library/hh856044.aspx) de PowerShell para obtener el PFN.
 
@@ -66,7 +67,7 @@ Esta es la información recuperada sobre OneNote:
 
 
 
-## Buscar un PFN si la aplicación no está instalada en un equipo
+## <a name="find-a-pfn-if-the-app-is-not-installed-on-a-computer"></a>Buscar un PFN si la aplicación no está instalada en un equipo
 
 1.  Vaya a https://www.microsoft.com/es-es/store/apps.
 2.  En la barra de búsqueda, escriba el nombre de la aplicación. En nuestro ejemplo, busque OneNote.
@@ -85,6 +86,6 @@ Microsoft Edge muestra la información que quiere; en Internet Explorer, elija *
 
 
 
-<!--HONumber=Aug16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

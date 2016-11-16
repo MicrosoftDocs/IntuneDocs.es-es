@@ -3,8 +3,9 @@ title: Prueba de concepto | Microsoft Intune
 description: "Recomendaciones para la fase de prueba de concepto de una implementación de Intune."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: f3c97380-23ca-40da-acbc-78108507cad7
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: bffd46199873f01e2c03fe8b30cdfb3c425a07ee
+ms.sourcegitcommit: 8921043334630bbd2955c0423ca9cd1b76c27758
+ms.openlocfilehash: 5b19835e7f726e23d402bbab408796cad9028bd0
 
 
 ---
@@ -41,7 +42,7 @@ Lea esta sección para obtener orientación sobre las actividades de enfoque de 
 ### Planeamiento
 Debe conocer los escenarios que es necesario validar y lo que necesita para completar esta validación antes de implementar la infraestructura de prueba de concepto.
 
-### Departamento de soporte técnico
+### Servicio de asistencia
 El departamento de soporte técnico no necesita preparación para esta fase del proyecto, ya que no habrá usuarios ni dispositivos de producción implicados. Sin embargo, constituye una oportunidad para que obtenga información sobre la implementación y el funcionamiento de Intune.
 
 ### Difusión
@@ -74,10 +75,10 @@ Estos son algunos de los desafíos que puede encontrarse en la fase de **prueba 
     **Mitigación:** trabajar con los equipos de patrocinio ejecutivo, red y usuarios para entender los requisitos de una solución de administración de clientes.
 
 ### Pasos siguientes
-[Piloto](pilot.md)
+[Fase piloto](pilot.md)
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

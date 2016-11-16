@@ -2,10 +2,10 @@
 title: "El dispositivo iOS no tiene la versión necesaria mínima del sistema operativo | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a9343f7aa1ab4761bcbf36f829fe0e9be293515
-ms.openlocfilehash: da1c2da0970d38b410ba67a03f1c302c2b352f27
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: bfd12893c2ffbff07119c66a89909bdacc216108
 
 
 ---
 
 
-# El dispositivo iOS no tiene la versión necesaria mínima del sistema operativo
+# <a name="ios-device-doesnt-have-the-required-minimum-operating-system-version"></a>El dispositivo iOS no tiene la versión necesaria mínima del sistema operativo
 
 El dispositivo iOS no cumple con la versión mínima necesaria del sistema operativo requerida por el departamento de TI. Antes de actualizar el dispositivo, compruebe la versión actual del sistema operativo; para ello, elija **Configuración** &gt; **Acerca de**. Para actualizar el dispositivo a la versión más reciente, elija **Configuración** &gt; **General** &gt; **Actualización de software**.
 
@@ -30,6 +30,6 @@ El dispositivo iOS no cumple con la versión mínima necesaria del sistema opera
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

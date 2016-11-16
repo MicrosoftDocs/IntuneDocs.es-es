@@ -14,13 +14,13 @@ ms.assetid: 5c46e188-87eb-4ce2-b184-24809e8bf783
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dd7a51b5ba176c8c7b593d2d7a3e5cfabd72a1e6
-ms.openlocfilehash: 77ce4cca5f85f1847e599a6151411bfc12afbc8b
+ms.sourcegitcommit: 30fae0cc2e9b3b08f9195c2622b0daec639e0d62
+ms.openlocfilehash: 3b8a263a45690c9bb213128b592e1ef9788cacd8
 
 
 ---
 
-# Proteger aplicaciones y datos con Microsoft Intune
+# <a name="protect-apps-and-data-with-microsoft-intune"></a>Proteger aplicaciones y datos con Microsoft Intune
 
 
 Intune protege los datos empresariales mediante varias capas de tecnología.  En la capa de identidad, el acceso condicional protege el acceso a los servicios, puesto que solo permite el acceso desde dispositivos administrados que cumplan los requisitos.  En la capa de aplicaciones cliente, la administración de aplicaciones móviles (MAM) protege frente a la pérdida de datos; para ello, evita que estos se muevan a aplicaciones no protegidas o a ubicaciones de almacenamiento y los borra cuando se pierde o se roba un dispositivo.  Estas dos capas de protección deben usarse conjuntamente con el fin de proteger los datos y mantener la productividad de los recursos móviles.
@@ -46,7 +46,7 @@ Puede proteger los datos empresariales mediante directivas de MAM en los disposi
 
 Para asociar una aplicación a una directiva de MAM, la aplicación debe incorporar el Kit de desarrollo de software (SDK) de aplicaciones de Microsoft Intune o usar la herramienta de ajuste de aplicaciones.
 
-Algunas aplicaciones, como las de Microsoft Office, tienen integrado el SDK de aplicaciones. Puede encontrar la lista completa de las aplicaciones compatibles en la [Galería de aplicaciones móviles de Microsoft Intune](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) de la página de socios de aplicaciones de Microsoft Intune. Seleccione la aplicación para ver los escenarios y las plataformas admitidos y si la aplicación admite o no varias identidades.
+Algunas aplicaciones, como las de Microsoft Office, tienen integrado el SDK de aplicaciones. Puede encontrar la lista completa de las aplicaciones compatibles en la [Galería de aplicaciones móviles de Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) de la página de socios de aplicaciones de Microsoft Intune. Seleccione la aplicación para ver los escenarios y las plataformas admitidos y si la aplicación admite o no varias identidades.
 
 También puede [habilitar sus aplicaciones personalizadas de línea de negocio](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) para usarlas con directivas de MAM.
 
@@ -54,6 +54,6 @@ Además de restringir el movimiento de datos, si un dispositivo se pierde o es r
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

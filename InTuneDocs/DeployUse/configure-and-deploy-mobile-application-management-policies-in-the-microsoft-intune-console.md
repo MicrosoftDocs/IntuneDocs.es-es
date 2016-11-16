@@ -14,13 +14,13 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a442d9472159757333a9ebe081d86eac9907cdc
-ms.openlocfilehash: d7978e558c68ad3209f1503619a9113dba126028
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 90b5a9f78a93cde7466937d0ce9dac3d83f3ff64
 
 
 ---
 
-# Configure and deploy mobile application management policies in the Microsoft Intune console
+# <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Configure and deploy mobile application management policies in the Microsoft Intune console
 Las directivas de administración de aplicaciones móviles (MAM) de Microsoft Intune permiten modificar la función de las aplicaciones que se implementan para que, de este modo, estén en consonancia con las directivas de seguridad y cumplimiento de la compañía. Por ejemplo, puede limitar las operaciones de cortar, copiar y pegar dentro de una aplicación administrada, o configurar una aplicación para abrir todos los vínculos web dentro de un explorador administrado.
 
 Compatibilidad con las directivas de administración de aplicaciones móviles:
@@ -59,7 +59,7 @@ Por ejemplo, mediante la aplicación de Outlook:
 > [!TIP]
 > Si usa Intune con Configuration Manager, vea [Cómo controlar aplicaciones mediante directivas de administración de aplicaciones móviles en Configuration Manager](https://technet.microsoft.com/library/mt131414.aspx).
 
-## Crear e implementar una aplicación con una directiva de administración de aplicaciones móviles
+## <a name="create-and-deploy-an-app-with-a-mobile-application-management-policy"></a>Crear e implementar una aplicación con una directiva de administración de aplicaciones móviles
 
 -   **Paso 1:** obtenga el vínculo a una aplicación administrada por directiva, cree una aplicación ajustada o use el SDK para aplicaciones de Intune para escribir una aplicación habilitada para MAM.
 
@@ -71,15 +71,15 @@ Por ejemplo, mediante la aplicación de Outlook:
 
 -   **Paso 5:** supervise la implementación de la aplicación.
 
-## Paso 1: Obtenga el vínculo a una aplicación administrada por directiva, cree una aplicación ajustada o use el SDK para aplicaciones de Intune para escribir una aplicación habilitada para MAM
+## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mamenabled-app"></a>Paso 1: Obtenga el vínculo a una aplicación administrada por directiva, cree una aplicación ajustada o use el SDK para aplicaciones de Intune para escribir una aplicación habilitada para MAM
 
 Desde la tienda de aplicaciones, busque y anote la dirección URL de la aplicación administrada por directiva que quiere implementar. Por ejemplo, la dirección URL de Microsoft Word para la aplicación de iPad es **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
 
-## Paso 2: Publique la aplicación en su espacio de almacenamiento en la nube
+## <a name="step-2-publish-the-app-to-your-cloud-storage-space"></a>Paso 2: Publique la aplicación en su espacio de almacenamiento en la nube
 Cuando se publica una aplicación administrada, los procedimientos difieren en función de si se publica una aplicación administrada por directiva o una aplicación que se procesó mediante la Microsoft Intune App Wrapping Tool para iOS.
 
-#### Para publicar una aplicación administrada por directiva
+#### <a name="to-publish-a-policy-managed-app"></a>Para publicar una aplicación administrada por directiva
 
 1.  Cuando esté listo para cargar la aplicación en el espacio de almacenamiento de la nube, siga las instrucciones del tema [Add apps for mobile devices in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md) (Agregar aplicaciones para dispositivos móviles en Microsoft Intune).
 
@@ -93,7 +93,7 @@ Una vez finalizada la carga, verá **Sí** en **Directivas de administración de
 
 Una vez que haya comprobado que la aplicación se carga correctamente, continúe con el paso 3.
 
-#### Para publicar una aplicación procesada con la herramienta de ajuste de aplicaciones de Microsoft Intune
+#### <a name="to-publish-an-app-that-was-processed-through-the-microsoft-intune-app-wrapping-tool"></a>Para publicar una aplicación procesada con la herramienta de ajuste de aplicaciones de Microsoft Intune
 
 1.  Cuando esté listo para cargar la aplicación en el espacio de almacenamiento de la nube, siga las instrucciones del tema [Add apps for mobile devices in Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md) (Agregar aplicaciones para dispositivos móviles en Microsoft Intune).
 
@@ -105,7 +105,7 @@ Una vez finalizada la carga, verá **Sí** en **Directivas de administración de
 
 Una vez que haya comprobado que la aplicación se carga correctamente, continúe con el paso 3.
 
-## Paso 3: cree una directiva de administración de aplicaciones móviles
+## <a name="step-3-create-a-mobile-application-management-policy"></a>Paso 3: cree una directiva de administración de aplicaciones móviles
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), elija **Directiva** &gt; **Información general** &gt; **Agregar directiva**.
 
@@ -127,7 +127,7 @@ Una vez que haya comprobado que la aplicación se carga correctamente, continúe
     |**Impedir copias de seguridad de Android** o **Impedir copias de seguridad de iTunes e iCloud**|Esta configuración deshabilita la copia de seguridad de cualquier información procedente de la aplicación.|
     |**Permitir que la aplicación transfiera datos a otras aplicaciones**|Esta configuración especifica las aplicaciones a las que esta aplicación puede enviar datos. Puede elegir no permitir la transferencia de datos a ninguna aplicación, permitir solo la transferencia a otras aplicaciones administradas o permitir la transferencia a cualquier aplicación. <br /><br />Por ejemplo, cuando no se permite la transferencia de datos, restringir la transferencia de datos a servicios, como mensajería SMS, asignar imágenes a los contactos y exponer en Facebook o Twitter.<br /><br />Para dispositivos iOS, para evitar la transferencia de documentos entre aplicaciones administradas y no administradas, debe también configurar e implementar una directiva de seguridad de dispositivos móviles que deshabilite la configuración **Permitir documentos administrados en otras aplicaciones no administradas**. Si elige permitir solo la transferencia a otras aplicaciones administradas, se usarán los visores Image Viewer y PDF Viewer de Intune (si se implementaron) para abrir el contenido de los tipos respectivos.<br /><br />Además, si establece esta opción en **Aplicaciones administradas por directivas** o **Ninguno**, la característica de iOS 9 que permite que la búsqueda de Spotlight busque datos dentro de las aplicaciones se bloqueará.<br><br>Esta configuración no controla el uso de la característica Open In en dispositivos móviles. Para administrar Abrir en, vea [Administrar la transferencia de datos entre aplicaciones iOS con Microsoft Intune](manage-data-transfer-between-ios-apps-with-microsoft-intune.md).|
     |**Permitir que la aplicación reciba datos de otras aplicaciones**|Esta configuración especifica las aplicaciones de las que esta aplicación puede recibir datos. Puede elegir no permitir la transferencia de datos desde ninguna aplicación, permitir solo la transferencia desde otras aplicaciones administradas o permitir la transferencia desde cualquier aplicación.<br /><br />Cuando un usuario obtiene acceso a datos desde una aplicación que no está administrada por una directiva de administración de aplicaciones móviles, los datos se tratan como datos de la empresa y se protegen mediante la directiva. Esto se aplica a aplicaciones iOS compatibles con identidad múltiple (donde Intune solo aplica la configuración de administración a las cuentas corporativas o a los datos de la aplicación). O bien, esto se aplica a un dispositivo inscrito con una directiva de administración de aplicaciones móviles aplicada.|
-    |**Impedir "Guardar como"**|Esta configuración deshabilita el uso de la opción **Guardar como** para guardar los datos en ubicaciones de almacenamiento personales en la nube (por ejemplo, el OneDrive o Dropbox) en cualquier aplicación que use esta directiva.|
+    |**Impedir "Guardar como..."**|Esta configuración deshabilita el uso de la opción **Guardar como** para guardar los datos en ubicaciones de almacenamiento personales en la nube (por ejemplo, el OneDrive o Dropbox) en cualquier aplicación que use esta directiva.|
     |**Restringir cortar, copiar y pegar con otras aplicaciones**|Esta configuración especifica cómo pueden usarse las operaciones de cortar, copiar y pegar con la aplicación. Elija de entre las siguientes opciones:<br /><br />**Bloqueado**. No permite las operaciones de cortar, copiar y pegar entre esta aplicación y otras aplicaciones.<br /><br />**Aplicaciones administradas por directivas**. Permite las operaciones de cortar, copiar y pegar solo entre esta aplicación y otras aplicaciones administradas.<br /><br />**Aplicaciones administradas por directivas con pegar**. Permite que los datos cortados o copiados desde esta aplicación se peguen solo en otras aplicaciones administradas. Permitir que los datos cortados o copiados desde cualquier aplicación se peguen en esta aplicación.<br /><br />**Cualquier aplicación**. No pone restricciones en cuanto a las operaciones de cortar, copiar y pegar en la aplicación o desde ella.<br /><br />Para copiar y pegar datos entre las aplicaciones administradas, ambas aplicaciones deben tener las opciones **Aplicaciones administradas por directivas** o **Aplicaciones administradas por directivas con pegar** configuradas.|
     |**Requerir PIN simple en acceso**|Esta configuración requiere que el usuario escriba un PIN que especifica al usar esta aplicación. Se pedirá al usuario que lo configure la primera vez que ejecuta la aplicación.|
     |**Número de intentos antes de restablecimiento del PIN**|Especifique el número de intentos de entrada de PIN que pueden realizarse antes de que el usuario deba restablecer el PIN.|
@@ -142,7 +142,7 @@ Una vez que haya comprobado que la aplicación se carga correctamente, continúe
 
 La nueva directiva aparece en el nodo **Directivas de configuración** del área de trabajo **Directiva** .
 
-## Paso 4: Asocie la aplicación a una directiva de administración de aplicaciones móviles e implemente la aplicación
+## <a name="step-4-associate-the-app-with-a-mobile-application-management-policy-and-then-deploy-the-app"></a>Paso 4: Asocie la aplicación a una directiva de administración de aplicaciones móviles e implemente la aplicación
 Asegúrese de seleccionar la directiva de administración de aplicaciones móviles de la página **Administración de aplicaciones móviles** del cuadro de diálogo **Administrar implementación** para asociar la directiva a la aplicación.
 
 Para obtener más detalles, vea [Implementar aplicaciones en Microsoft Intune](deploy-apps.md).
@@ -150,7 +150,7 @@ Para obtener más detalles, vea [Implementar aplicaciones en Microsoft Intune](d
 > [!IMPORTANT]
 > Si se anula la inscripción del dispositivo en Intune, las directivas no se quitan de las aplicaciones. Las aplicaciones que tenían directivas aplicadas conservarán la configuración de las directivas si la aplicación se desinstala y se vuelve a instalar.
 
-### Qué hacer cuando ya se ha implementado una aplicación en dispositivos
+### <a name="what-to-do-when-an-app-is-already-deployed-on-devices"></a>Qué hacer cuando ya se ha implementado una aplicación en dispositivos
 Puede haber situaciones en que implemente una aplicación y uno de los usuarios o dispositivos de destino ya tenga una versión no administrada de la aplicación instalada. Por ejemplo, si el usuario ha instalado Microsoft Word desde la tienda de aplicaciones.
 
 En este caso, debe pedir al usuario que desinstale manualmente la versión no administrada para que se pueda instalar la versión administrada que se ha configurado.
@@ -160,10 +160,10 @@ En cambio, en el caso de los dispositivos que ejecutan iOS 9 y versiones posteri
 > [!TIP]
 > Si el dispositivo está en modo de supervisión, Intune se ocupará de la administración de la aplicación existente sin pedir permiso a los usuarios.
 
-## Paso 5: supervise la implementación de la aplicación
+## <a name="step-5-monitor-the-app-deployment"></a>Paso 5: supervise la implementación de la aplicación
 Cuando haya creado e implementado una aplicación asociada a una directiva de administración de aplicaciones móviles, use el procedimiento siguiente para supervisar la aplicación y resuelva los conflictos de directivas.
 
-#### Para ver el estado de la implementación
+#### <a name="to-view-the-status-of-the-deployment"></a>Para ver el estado de la implementación
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), elija **Grupos** &gt; **Información general**.
 
@@ -181,7 +181,7 @@ Cuando haya creado e implementado una aplicación asociada a una directiva de ad
 
 6.  Cuando haya identificado un conflicto, puede modificar las configuraciones de directivas en conflicto para que usen la misma configuración o implementar una sola directiva para la aplicación y el usuario.
 
-### Cómo se resuelven los conflictos de directivas
+### <a name="how-policy-conflicts-are-resolved"></a>Cómo se resuelven los conflictos de directivas
 Cuando hay un conflicto de directivas de administración de aplicaciones móviles en la primera implementación para el usuario o el dispositivo, el valor específico de la configuración en conflicto se quitará de la directiva implementada en la aplicación. La aplicación usará un valor de conflicto integrado.
 
 Cuando hay un conflicto de directivas de administración de aplicaciones móviles en implementaciones posteriores para la aplicación o el usuario, el valor específico de la configuración en conflicto no se actualizará en la directiva de administración de aplicaciones móviles implementada para la aplicación. La aplicación usará el valor existente para dicha configuración.
@@ -194,6 +194,6 @@ En casos en los que el dispositivo o el usuario recibe dos directivas en conflic
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

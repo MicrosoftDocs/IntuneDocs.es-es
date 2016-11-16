@@ -2,7 +2,8 @@
 title: "Inscripción con el administrador de inscripción de dispositivos | Microsoft Intune"
 description: "La cuenta de administrador de inscripción de dispositivos (DEM) puede administrar un gran número de dispositivos móviles corporativos y compartidos con una única cuenta de usuario."
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/12/2016
 ms.topic: article
@@ -13,14 +14,14 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
-ms.openlocfilehash: 4ed3222f45cb438dea807b1df268f47fff660d5f
+ms.sourcegitcommit: 289e6019aa1a17deb91b38ed32f0432af0902a9d
+ms.openlocfilehash: 51e5f248c5e8759d5992918a99e1f114e2614142
 
 
 ---
 
 
-# Inscripción de dispositivos propiedad de la empresa con el Administrador de inscripción de dispositivos de Microsoft Intune
+# <a name="enroll-corporateowned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>Inscripción de dispositivos propiedad de la empresa con el Administrador de inscripción de dispositivos de Microsoft Intune
 Las organizaciones pueden usar Intune para administrar un gran número de dispositivos móviles con una sola cuenta de usuario. La cuenta del *administrador de inscripción de dispositivos (DEM)* es una cuenta especial de Intune con permisos para inscribir hasta 1000 dispositivos. Recomendamos que utilice dispositivos inscritos mediante esta cuenta como dispositivos compartidos en lugar de dispositivos personales ("BYOD"). Por ejemplo, los usuarios no podrán usar aplicaciones de correo electrónico "nativas".
 
 Por ejemplo, asignar una cuenta de usuario de administrador de inscripción de dispositivos a un supervisor o administrador de tienda para permitirle hacer lo siguiente:
@@ -50,10 +51,10 @@ Los dispositivos inscritos con una cuenta de administrador de inscripción de di
 > Para implementar aplicaciones de empresa en dispositivos administrados por el administrador de inscripción de dispositivos, implemente la aplicación de Portal de empresa como una **Instalación requerida** en la cuenta de usuario del administrador de inscripción de dispositivos.
 > Para mejorar el rendimiento, al ver la aplicación de portal de empresa en un dispositivo de DEM solo se muestra el dispositivo local. La administración remota de otros dispositivos de DEM solo puede realizarse desde la consola de administración de Intune.
 
-## Crear cuentas de administrador de inscripción de dispositivos
+## <a name="create-device-enrollment-manager-accounts"></a>Crear cuentas de administrador de inscripción de dispositivos
 Las cuentas de administrador de inscripción de dispositivos son cuentas de usuario con permisos para inscribir un gran número de dispositivos propiedad de la empresa. Solo los usuarios de la consola Intune pueden ser administradores de inscripción de dispositivos.
 
-#### Agregar un administrador de inscripción de dispositivos a Intune
+#### <a name="add-a-device-enrollment-manager-to-intune"></a>Agregar un administrador de inscripción de dispositivos a Intune
 
 1.  Vaya al [Portal de cuentas Microsoft Intune](http://go.microsoft.com/fwlink/?LinkId=698854) e inicie sesión con su cuenta de administrador.
 
@@ -71,7 +72,7 @@ Las cuentas de administrador de inscripción de dispositivos son cuentas de usua
 
 8.  El administrador de inscripción de dispositivos ahora puede inscribir dispositivos móviles mediante el mismo procedimiento que un usuario final usa para un escenario de BYOD en el portal de empresa.
 
-## Eliminar un administrador de inscripción de dispositivos de Intune
+## <a name="delete-a-device-enrollment-manager-from-intune"></a>Eliminar un administrador de inscripción de dispositivos de Intune
 
 1.  Inicie sesión en el [portal de administración de Microsoft Intune](http://manage.microsoft.com) con sus credenciales como administrador.
 
@@ -95,6 +96,6 @@ La eliminación de un administrador de inscripción de dispositivos no afecta a 
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

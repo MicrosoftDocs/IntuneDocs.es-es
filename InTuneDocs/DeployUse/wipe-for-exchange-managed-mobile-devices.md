@@ -2,8 +2,8 @@
 title: "Borrado de datos de dispositivos móviles administrados por Exchange | Microsoft Intune"
 description: "Microsoft Intune permite borrar datos o restablecer dispositivos móviles administrados mediante Exchange ActiveSync (EAS) con Intune Exchange Connector"
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: staciebarker
 manager: angrobe
 ms.date: 07/25/2016
 ms.topic: article
@@ -21,7 +21,7 @@ ms.openlocfilehash: 94d304a872f5890f2cf83a06aa222353cd7f61f6
 ---
 
 
-# Wipe for Exchange-managed mobile devices
+# <a name="wipe-for-exchangemanaged-mobile-devices"></a>Wipe for Exchange-managed mobile devices
 Microsoft Intune permite borrar datos o restablecer dispositivos móviles administrados mediante Exchange ActiveSync (EAS) con Intune Exchange Connector. En la tabla siguiente se describen las funcionalidades de borrado de datos mediante Exchange ActiveSync:
 
 |Tipo de borrado de datos|Windows 8.1 y Windows RT 8.1|Windows RT|Windows Phone 8|iOS|Android|

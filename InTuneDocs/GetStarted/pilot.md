@@ -3,8 +3,9 @@ title: Piloto | Microsoft Intune
 description: "Recomendaciones para la fase piloto de una implementación de Intune."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.assetid: 14e55841-37f1-472c-9678-a1ba847cb331
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a192c71b1b82f59b34ea614d09d895174f8112b
-ms.openlocfilehash: a607737b808f3c53ec8f83e507369d9d58309c9d
+ms.sourcegitcommit: 8921043334630bbd2955c0423ca9cd1b76c27758
+ms.openlocfilehash: 813b03f5d172749076723f60d4cfe0b6c50a261c
 
 
 ---
 
-# Piloto
+# Fase piloto
 La fase de piloto es una oportunidad para probar la implementación técnica, el plan de comunicación y los planes de aprendizaje y soporte técnico en un entorno de producción pequeño.
 
 ## ¿Por qué es importante?
@@ -53,7 +54,7 @@ La clave de un piloto correcto es una buena planificación que incluya conocer c
 
 -   Informe de preparación de implementación
 
-### Departamento de soporte técnico
+### Servicio de asistencia
 Un plan de soporte técnico que incluya asistencia proactiva puede mejorar considerablemente la confianza de los usuarios, lo que se traduce en usuarios satisfechos y una mayor adopción. El departamento de soporte técnico debe conocer los cambios derivados de la implementación de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] y los posibles problemas que pueden surgir, de modo que se puedan encontrar soluciones rápidas para los problemas individuales. El departamento de soporte técnico, además, puede informar al equipo de diseño si el enfoque de diseño crea problemas a los usuarios.
 
 ### Difusión
@@ -108,6 +109,6 @@ Estos son algunos de los desafíos que puede encontrarse en la fase de **piloto*
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

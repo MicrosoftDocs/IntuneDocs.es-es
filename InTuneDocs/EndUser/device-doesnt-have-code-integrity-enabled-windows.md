@@ -2,10 +2,10 @@
 title: "El dispositivo no tiene habilitada la integridad de código | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 85cdfd1aac6fdf738754539c746aee8e5d045ae9
-ms.openlocfilehash: 60e29209718ca206ae96ccc2df330650e2f93c1d
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: a42bd680167b41fc7a77227e2d1f7c2e6860fc9d
 
 
 ---
 
 
-# El dispositivo no tiene habilitada la integridad de código
+# <a name="device-doesnt-have-code-integrity-enabled"></a>El dispositivo no tiene habilitada la integridad de código
 
 Su organización requiere que habilite la integridad de código de Windows. Esta característica comprueba los controladores y los archivos de sistema en el dispositivo para comprobar que sean seguros.
 
@@ -36,6 +36,6 @@ Si usa un PC, póngase en contacto con el administrador de TI. O bien, consulte 
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

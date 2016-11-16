@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 11/3/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -20,7 +20,10 @@ ms.openlocfilehash: a986e859e38e0936f53c57a75872dc86de3ee181
 
 ---
 
-# Configuración de aplicaciones Android for Work con directivas de configuración de aplicaciones móviles en Microsoft Intune
+# <a name="configure-android-for-work-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>Configuración de aplicaciones Android for Work con directivas de configuración de aplicaciones móviles en Microsoft Intune
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+
 Use las directivas de configuración de aplicaciones móviles de Microsoft Intune para proporcionar los valores de configuración que podrían ser necesarios cuando los usuarios ejecutan una aplicación. Por ejemplo, una aplicación puede requerir a los usuarios que especifiquen:
 
 -   Un número de puerto personalizado.
@@ -37,7 +40,7 @@ Para utilizar las directivas de configuración de la aplicación, el desarrollad
 
 Puede implementar la directiva de configuración de aplicación en los mismos usuarios en los que se ha implementado la aplicación que desea configurar. Cada vez que se ejecute la aplicación, se usará la configuración de la directiva.
 
-## Configurar directivas de configuración de aplicaciones móviles
+## <a name="configure-a-mobile-app-configuration-policy"></a>Configurar directivas de configuración de aplicaciones móviles
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), elija **Directiva** &gt; **Información general** &gt; **Agregar directiva**.
 
@@ -61,7 +64,7 @@ Puede implementar la directiva de configuración de aplicación en los mismos us
 La nueva directiva se muestra en el nodo **Directivas de configuración** .
 
 
-## Implementación de la directiva de configuración de la aplicación
+## <a name="deploy-the-app-configuration-policy"></a>Implementación de la directiva de configuración de la aplicación
 Después de haber creado una directiva de configuración de aplicaciones móviles, debe implementarla en los mismos usuarios en los que se implementará la aplicación a la que se aplica la configuración.
 
 Para más información sobre cómo implementar las directivas, consulte [Implementar una directiva de configuración](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#deploy-a-configuration-policy).
@@ -72,10 +75,6 @@ Cuando se ejecuta la aplicación implementada en un dispositivo, se ejecutará c
 
 > [!TIP]
 > Solo puede implementar una directiva de configuración de aplicación para cada aplicación en un usuario.
-
-
-
-
 
 
 

@@ -2,10 +2,10 @@
 title: "El dispositivo no tiene la versión necesaria mínima del sistema operativo | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9a9343f7aa1ab4761bcbf36f829fe0e9be293515
-ms.openlocfilehash: a14f347ae65118852ba914085548cd17c8ec31aa
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 376866a4d2a96594413d8edd92f2a20cc37339cb
 
 
 ---
 
 
-# El dispositivo no tiene la versión necesaria mínima del sistema operativo
+# <a name="device-doesnt-have-the-required-minimum-operating-system-version"></a>El dispositivo no tiene la versión necesaria mínima del sistema operativo
 
 El dispositivo Windows no cumple con la versión mínima necesaria del sistema operativo requerida por el departamento de TI. Antes de actualizar el dispositivo móvil, compruebe la versión actual del sistema operativo; para ello, elija **Configuración** &gt; **Acerca de**. A continuación, para actualizar el dispositivo, elija **Configuración** &gt; **Actualizar el teléfono** &gt; **Buscar actualizaciones**.
 
@@ -37,6 +37,6 @@ Para comprobar la versión de Windows 10 y Windows 8.1, seleccione la tecla del 
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

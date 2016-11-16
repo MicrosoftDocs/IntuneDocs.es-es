@@ -2,9 +2,10 @@
 title: "El dispositivo Android no tiene la versión necesaria mínima del sistema operativo | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/08/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7549b5af84e5a1712c2e1649b1afe03718d53dcc
-ms.openlocfilehash: 195f9cf3276becf17b0ffc68d3237e5460d87d3e
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: be48af4a0bfdc13706f6e24da6e2e2fe334a334d
 
 
 ---
 
 
-# El dispositivo Android no tiene la versión necesaria mínima del sistema operativo
+# <a name="android-device-doesnt-have-the-required-minimum-operating-system-version"></a>El dispositivo Android no tiene la versión necesaria mínima del sistema operativo
 
 El dispositivo Android no cumple con la versión mínima necesaria del sistema operativo requerida por el departamento de TI. Antes de actualizar el dispositivo, compruebe la versión del sistema operativo actual. Para ello, pulse en **Configuración**&gt;**Acerca del teléfono** y, después, compruebe si hay una actualización para el dispositivo. Para ello, pulse en **Configuración** y, luego, busque la opción de actualización.
 
@@ -30,6 +31,6 @@ El dispositivo Android no cumple con la versión mínima necesaria del sistema o
 
 
 
-<!--HONumber=Sep16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
