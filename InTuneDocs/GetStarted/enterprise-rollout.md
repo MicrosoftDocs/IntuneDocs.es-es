@@ -3,8 +3,9 @@ title: "Implementación empresarial | Microsoft Intune"
 description: "Recomendaciones para la fase de implementación de una implementación de Intune."
 keywords: 
 author: Nbigman
+ms.author: nbigman
 manager: angrobe
-ms.date: 07/21/2016
+ms.date: 10/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +14,8 @@ ms.assetid: d894708e-7071-44f5-aa3b-af5aef02fb98
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0fff944e180bda99d70caafebe4ae69b6bd05b1b
-ms.openlocfilehash: aae62850d35aab6908cae2841988822911989a40
+ms.sourcegitcommit: 8921043334630bbd2955c0423ca9cd1b76c27758
+ms.openlocfilehash: c7594bbb7edb236193618bea027ac426e5b9169d
 
 
 ---
@@ -110,6 +111,6 @@ Estos son algunos de los desafíos que puede encontrarse en la fase de **impleme
 
 
 
-<!--HONumber=Jul16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

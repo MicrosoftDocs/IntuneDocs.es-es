@@ -2,10 +2,10 @@
 title: "Establecimiento del PIN o la contraseña | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7f08be661936b092cfa100b2454a3f2a3dd24746
-ms.openlocfilehash: c2480f168d5ee06a8419c68d1b90bac62c2879b1
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 9d70549b2a2c30bb7d3e056550ad75848433d885
 
 
 ---
 
-# Establecimiento del PIN o la contraseña
+# <a name="set-your-pin-or-password"></a>Establecimiento del PIN o la contraseña
 
 El administrador de TI puede pedir que establezca un PIN o una contraseña en el dispositivo Android cuando use Intune para tener acceso a datos profesionales o educativos. También es posible que aparezcan mensajes que le exijan alargar el PIN o la contraseña o hacerlos más complejos para que sean más seguros.  
 
@@ -36,6 +36,6 @@ Para establecer un PIN o una contraseña, use los siguientes pasos.
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

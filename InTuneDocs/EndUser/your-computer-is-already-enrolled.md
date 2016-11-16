@@ -2,8 +2,8 @@
 title: "El equipo ya está inscrito | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
-ms.openlocfilehash: cf382c1c6633f8483059bc52146a66f26438e817
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: f1ef3603c074e0f746fc7126f85a6ab55095042e
 
 
 ---
 
 
-# El equipo ya está inscrito
+# <a name="your-computer-is-already-enrolled"></a>El equipo ya está inscrito
 
 Si recibe un error que afirma que el equipo ya está inscrito, significa que el equipo ya se ha agregado al portal de empresa, pero aún no está vinculado a su cuenta de usuario. Siga este procedimiento para vincular el equipo a su cuenta de usuario y finalizar el proceso.  
 
@@ -40,6 +40,6 @@ Si prefiere anular la inscripción del dispositivo, siga las instrucciones corre
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO2-->
 
 

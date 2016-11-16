@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/11/2016
+ms.date: 11/02/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +14,16 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
-ms.openlocfilehash: 058843a1cdd0ca4c32c7cc4d7a901e7547da633e
+ms.sourcegitcommit: 0238350139837a06a48d0bff7c53e4c39e07168c
+ms.openlocfilehash: b2cba92c4cf75412b562267aef9d6a138f25952b
 
 
 ---
 
-# Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune
+# <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune
 Las *directivas* de Microsoft Intune son grupos de configuraciones que controlan características en equipos y dispositivos móviles. Las directivas se crean con plantillas que contienen configuraciones recomendadas o personalizadas, y se implementan en grupos de dispositivos o usuarios.
 
-## Tipos de directivas
+## <a name="types-of-policies"></a>Tipos de directivas
 
 Las directivas de Intune se dividen en las siguientes categorías. La categoría que se usa afecta a la manera de crear e implementar la directiva.
 
@@ -37,13 +37,11 @@ Para obtener más información, consulte [Restrict access to email and O365 serv
 - **Directivas de acceso a recursos:** estas directivas funcionan juntas para ayudar a los usuarios a obtener acceso a los archivos y recursos que necesitan para hacer su trabajo correctamente, estén donde estén.
 Para obtener más información, vea [Enable access to company resources with Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md) (Habilitar el acceso a los recursos de la empresa con Microsoft Intune).
 
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Para obtener una lista completa de las directivas de Intune, consulte [Microsoft Intune policy reference](microsoft-intune-policy-reference.md) (Referencia de directivas de Microsoft Intune).
 
-
-
-
-## Crear una directiva de configuración
+## <a name="create-a-configuration-policy"></a>Crear una directiva de configuración
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), elija **Directiva** &gt; **Directivas de configuración** &gt; **Agregar**.
 
@@ -60,12 +58,12 @@ Para obtener una lista completa de las directivas de Intune, consulte [Microsoft
 
     Si necesita ayuda con la configuración de alguna directiva, elija el tipo de directiva en la lista siguiente:
 
-    - [Configuración para dispositivos iOS](ios-policy-settings-in-microsoft-intune.md)
+    - [Configuración de dispositivos iOS](ios-policy-settings-in-microsoft-intune.md)
     - [Configuración de dispositivos Android](android-policy-settings-in-microsoft-intune.md)
-    - [Configuración para dispositivos Android for Work](android-for-work-policy-settings-in-microsoft-intune.md)
+    - [Configuración de dispositivos Android for Work](android-for-work-policy-settings-in-microsoft-intune.md)
     - [Configuración de dispositivos Windows 8 y Windows 8.1](windows-configuration-policy-settings-in-microsoft-intune.md)
     - [Configuración de dispositivos Windows Phone 8.1](windows-phone-8-1-policy-settings-in-microsoft-intune.md)
-    - [Configuración de escritorios y dispositivos móviles Windows 10](windows-10-policy-settings-in-microsoft-intune.md)
+    - [Configuración de dispositivos Windows 10 Desktop y Mobile](windows-10-policy-settings-in-microsoft-intune.md)
     - [Configuración de dispositivos Windows Team](windows-team-configuration-policy-settings-in-microsoft-intune.md)
     - [Configuración de la actualización de la edición de Windows](edition-upgrade-policy-settings-in-microsoft-intune.md)
     - [Configuración de dispositivos Mac OS X](mac-os-x-policy-settings-in-microsoft-intune.md)
@@ -84,7 +82,7 @@ Después de crear una directiva, probablemente querrá implementarla en uno o va
 > [!TIP]
 > No implemente todos los tipos de directiva. Por ejemplo, no se implementa la directiva de administración de aplicaciones (MAM) móviles. Este tipo de directiva se asocia con una aplicación, que, a continuación, se implementa.
 
-## Implementar una directiva de configuración
+## <a name="deploy-a-configuration-policy"></a>Implementar una directiva de configuración
 
 1.  En el área de trabajo **Directiva**, seleccione la directiva que quiera implementar y, después, haga clic en **Administrar implementación**.
 
@@ -96,7 +94,7 @@ Después de crear una directiva, probablemente querrá implementarla en uno o va
 
 Cuando se selecciona una directiva implementada, puede ver más información acerca de la implementación en la parte inferior de la lista de directivas.
 
-## Administrar directivas
+## <a name="manage-policies"></a>Administrar directivas
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), elija **Directiva**y, después, busque y seleccione la directiva que quiera administrar.
 
@@ -107,9 +105,9 @@ Cuando se selecciona una directiva implementada, puede ver más información ace
 - **Administrar implementación**: seleccione el grupo en el que quiera implementar la directiva y elija **Add** (Agregar).
 
 
-## Preguntas más frecuentes sobre las directivas de Intune
+## <a name="frequently-asked-questions-about-intune-policies"></a>Preguntas más frecuentes sobre las directivas de Intune
 
-### ¿Cuánto tiempo tardan los dispositivos móviles en obtener directivas o aplicaciones una vez implementados?
+### <a name="how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-deployed"></a>¿Cuánto tiempo tardan los dispositivos móviles en obtener directivas o aplicaciones una vez implementados?
 Cuando se implementa una directiva o aplicación, Intune empieza inmediatamente a intentar notificar al dispositivo que debe conectar con el servicio Intune. Este proceso suele tardar menos de cinco minutos.
 
 Si un dispositivo no se conecta para recibir la directiva una vez enviada la primera notificación, Intune hace tres intentos más.  Si el dispositivo está desconectado (por ejemplo, está desactivado o no está conectado a una red), puede que no reciba las notificaciones. En ese caso, el dispositivo obtendrá la directiva en la próxima conexión programada con el servicio Intune, como se indica a continuación:
@@ -128,12 +126,12 @@ Si el dispositivo se acaba de inscribir, la frecuencia de conexión será más f
 
 Los usuarios también pueden abrir la aplicación del Portal de empresa y sincronizar el dispositivo para buscar la directiva inmediatamente en cualquier momento.
 
-### ¿Qué acciones provocan que Intune envíe inmediatamente una notificación a un dispositivo?
+### <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>¿Qué acciones provocan que Intune envíe inmediatamente una notificación a un dispositivo?
 Los dispositivos conectan con Intune cuando reciben una notificación que se lo indica o durante la conexión programada periódicamente.  Cuando el destino es un dispositivo o usuario concreto con una acción como un borrado, bloqueo, restablecimiento de código de acceso, implementación de aplicaciones, implementación de perfiles (Wi-Fi, VPN, correo electrónico, etc.) o implementación de directivas, Intune comenzará inmediatamente a intentar notificar al dispositivo que debe conectarse al servicio Intune para recibir estas actualizaciones.
 
 Otros cambios, como la revisión de la información de contacto del Portal de empresa, no provocan una notificación inmediata a los dispositivos.
 
-### Si varias directivas se implementan en el mismo usuario o dispositivo, ¿cómo puedo saber qué configuración se aplicará?
+### <a name="if-multiple-policies-are-deployed-to-the-same-user-or-device-how-do-i-know-which-settings-will-get-applied"></a>Si varias directivas se implementan en el mismo usuario o dispositivo, ¿cómo puedo saber qué configuración se aplicará?
 Cuando se aplican dos o más directivas al mismo usuario o dispositivo, la evaluación de la configuración aplicada se hace a nivel de parámetro individual:
 
 -   La configuración de directivas de cumplimiento siempre tiene prioridad respecto a la configuración de directivas de configuración.
@@ -142,22 +140,22 @@ Cuando se aplican dos o más directivas al mismo usuario o dispositivo, la evalu
 
 -   Si una opción de la directiva de configuración entra en conflicto con una opción de una directiva de configuración diferente, este conflicto se mostrará en la consola de Intune. Debe resolver manualmente dichos conflictos.
 
-### ¿Qué sucede cuando las directivas de administración de aplicaciones móviles entran en conflicto entre sí? ¿Cuál se aplicará a la aplicación?
+### <a name="what-happens-when-mobile-application-management-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>¿Qué sucede cuando las directivas de administración de aplicaciones móviles entran en conflicto entre sí? ¿Cuál se aplicará a la aplicación?
 Los valores en conflicto son la configuración más restrictiva disponible en una directiva de MAM, excepto para los campos de entrada de números (como intentos de PIN antes del restablecimiento).  Los campos de entrada de números se definirán con los mismos valores que si crease una directiva de MAM en la consola con la opción de configuración recomendada.
 
 Se producen conflictos cuando dos configuraciones de directiva son iguales.  Por ejemplo, si configura dos directivas MAM que son idénticas, salvo por la configuración de copiar y pegar.  En este escenario, la configuración de copiar y pegar se definirá con el valor más restrictivo, pero el resto de parámetros se aplicará según la configuración.
 
 Si una directiva se implementa en la aplicación y se aplica y, a continuación, se implementa una segunda, la primera tendrá precedencia y se aplicará, mientras que la segunda presentará un conflicto. Si se aplican al mismo tiempo, lo que significa que no hay ninguna directiva anterior, ambas estarán en conflicto. Cualquier configuración en conflicto se establecerá en los valores más restrictivos.
 
-### ¿Qué sucede cuando hay un conflicto de directivas personalizadas de iOS?
+### <a name="what-happens-when-ios-custom-policies-conflict"></a>¿Qué sucede cuando hay un conflicto de directivas personalizadas de iOS?
 Intune no evalúa la carga de archivos de configuración de Apple ni directivas personalizadas de identificador uniforme de recursos de Open Mobile Alliance (OMA-URI). Sencillamente, se usa como mecanismo de entrega.
 
 Al implementar una directiva personalizada, asegúrese de que los valores configurados no entran en conflicto con las directivas de cumplimiento, configuración o de otro tipo. En el caso de una directiva personalizada con conflictos de parámetros, el orden en que se aplican los conflictos es aleatorio.
 
-### ¿Qué ocurre cuando se elimina una directiva o deja de ser aplicable?
+### <a name="what-happens-when-a-policy-is-deleted-or-no-longer-applicable"></a>¿Qué ocurre cuando se elimina una directiva o deja de ser aplicable?
 Al eliminar una directiva o quitar un dispositivo de un grupo al que se le aplica una directiva, se quitará la directiva y la configuración del dispositivo según las siguientes listas.
 
-#### Dispositivos inscritos
+#### <a name="enrolled-devices"></a>Dispositivos inscritos
 
 - Perfiles de correo electrónico, certificado, VPN y Wi-Fi: estos perfiles se quitan de todos los dispositivos inscritos admitidos.
 - Todos los demás tipos de directivas:
@@ -194,7 +192,7 @@ Al eliminar una directiva o quitar un dispositivo de un grupo al que se le aplic
         - Permitir itinerancia de datos
         - Permitir la sincronización automática en itinerancia
 
-#### Equipos Windows que ejecutan el software cliente de Intune
+#### <a name="windows-pcs-running-the-intune-client-software"></a>Equipos Windows que ejecutan el software cliente de Intune
 
 - **Configuración de Endpoint Protection**: se restablecen los valores recomendados de la configuración. La única excepción es la opción de configuración **Unirse a Microsoft Active Protection Service**, cuyo valor predeterminado es **No**. Para obtener más información, consulte [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) (Ayudar a proteger los equipos de Windows con Endpoint Protection para Microsoft Intune).
 - **Configuración de actualizaciones de software**: se restablece la configuración al estado predeterminado para el sistema operativo. Para obtener más información, consulte [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) (Mantener los equipos de Windows al día con las actualizaciones de software de Microsoft Intune).
@@ -202,17 +200,17 @@ Al eliminar una directiva o quitar un dispositivo de un grupo al que se le aplic
 - **Configuración del Firewall de Windows**: se restablece la configuración predeterminada para el sistema operativo del equipo. Para obtener más información, consulte [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) (Ayudar a proteger los equipos de Windows con Endpoint Protection para Microsoft Intune).
 
 
-### ¿Cómo puedo actualizar las directivas en un dispositivo para asegurarme de que están actualizadas (solo se aplica a los equipos con Windows que ejecutan el software cliente de Intune)?
+### <a name="how-can-i-refresh-the-policies-on-a-device-to-ensure-that-they-are-current-applies-to-windows-pcs-running-the-intune-client-software-only"></a>¿Cómo puedo actualizar las directivas en un dispositivo para asegurarme de que están actualizadas (solo se aplica a los equipos con Windows que ejecutan el software cliente de Intune)?
 
 1.  En un grupo de dispositivos, seleccione los dispositivos en los que quiere actualizar las directivas y luego elija **Tareas remotas** &gt; **Actualizar directivas**.
 2.  Elija **Tareas remotas** en la esquina inferior derecha de la ventana de la consola de administración de Intune para comprobar el estado de la tarea.
 
-### ¿Dónde puedo encontrar ayuda para solucionar problemas en las directivas?
+### <a name="where-can-i-find-help-troubleshooting-policies"></a>¿Dónde puedo encontrar ayuda para solucionar problemas en las directivas?
 
 Vea [Directivas de solución de problemas en Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -3,6 +3,7 @@ title: "Características de accesibilidad | Microsoft Intune"
 description: "Obtenga información sobre las características de Intune que la hacen más accesible para personas con discapacidades."
 keywords: 
 author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 08/24/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: 6d7ed613-be97-4973-9532-8cb5bd434a1b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 55bdbaf5e521caa05d44bc45d4ec226dc05bf64b
-ms.openlocfilehash: 819fdb5bf4fd06a2b3b5010057cdd003e46f4758
+ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
+ms.openlocfilehash: 1c4f44619f025b5a35a089c0970188b989b710e6
 
 
 ---
@@ -48,6 +49,6 @@ Además de las características de accesibilidad y herramientas de Microsoft Win
 
 
 
-<!--HONumber=Aug16_HO4-->
+<!--HONumber=Oct16_HO4-->
 
 

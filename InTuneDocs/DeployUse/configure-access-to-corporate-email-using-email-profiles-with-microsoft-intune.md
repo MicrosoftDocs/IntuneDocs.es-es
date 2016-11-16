@@ -2,8 +2,8 @@
 title: "Acceso al correo electrónico corporativo mediante perfiles de correo electrónico | Microsoft Intune"
 description: "Las opciones de configuración de perfil de correo electrónico se pueden usar para configurar el acceso al correo de determinados clientes de correo en dispositivos móviles."
 keywords: 
-author: Nbigman
-ms.author: nbigman
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 ms.date: 10/19/2016
 ms.topic: article
@@ -14,13 +14,16 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f8767f191df76e8f166767c51fff357b251bbd4
-ms.openlocfilehash: f736c408f5a4ece65eeef35fb8d1be9a9b29c1b1
+ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
+ms.openlocfilehash: dcd8f956d1706f4bdcb2dca79e9f1ff5d5bb57b0
 
 
 ---
 
-# Configurar el acceso al correo electrónico corporativo mediante perfiles de correo electrónico con Microsoft Intune
+# <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Configurar el acceso al correo electrónico corporativo mediante perfiles de correo electrónico con Microsoft Intune
+
+[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
+
 Muchas plataformas móviles incluyen un cliente de correo electrónico nativo que se suministra como parte del sistema operativo. Algunos de estos clientes se pueden configurar con perfiles de correo electrónico, como se describe en este tema.
 
 Las opciones de configuración del perfil de correo electrónico se pueden usar para configurar las opciones del acceso al correo de determinados clientes de correo electrónico en dispositivos móviles. En las plataformas compatibles, Microsoft Intune puede configurar los clientes de correo electrónico nativos para permitir que los usuarios puedan tener acceso al correo electrónico corporativo en sus dispositivos personales sin necesidad de configurar nada más.
@@ -56,20 +59,20 @@ Además de configurar una cuenta de correo electrónico en el dispositivo, tambi
 >**Android for Work**: el perfil de Intune solo se aplica a aplicaciones de correo electrónico específicas en el perfil de trabajo del dispositivo y no afecta a la configuración de correo electrónico del perfil de usuario del dispositivo.
 
 
-## Proteger los perfiles de correo electrónico
+## <a name="secure-email-profiles"></a>Proteger los perfiles de correo electrónico
 Los perfiles de correo electrónico se pueden proteger mediante un certificado o una contraseña.
 
-### Certificados
+### <a name="certificates"></a>Certificados
 Cuando se crea el perfil de correo electrónico, puede elegir un perfil de certificado creado previamente en Intune. Esto se conoce como certificado de identidad y sirve para autenticarse con un perfil de certificado de confianza (o un certificado raíz) para establecer que el dispositivo del usuario tenga permiso para conectarse. El certificado de confianza se implementa en el equipo que autentica la conexión de correo electrónico (que suele ser el servidor de correo nativo).
 
 Para más información sobre cómo crear y usar perfiles de certificado en Intune, vea [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md) (Proteger el acceso a recursos con perfiles de certificado).
 
-### Nombre de usuario y contraseña
+### <a name="user-name-and-password"></a>Nombre de usuario y contraseña
 El usuario se autentica en el servidor de correo nativo al proporcionar su nombre de usuario y contraseña.
 
 La contraseña no está incluida en el perfil de correo electrónico, por lo que el usuario necesita proporcionarla al conectarse al correo electrónico.
 
-### Crear un perfil de correo electrónico
+### <a name="create-an-email-profile"></a>Crear un perfil de correo electrónico
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), seleccione **Directiva** &gt; **Agregar directiva**.
 
@@ -81,7 +84,7 @@ La contraseña no está incluida en el perfil de correo electrónico, por lo que
 
     -   **Perfil de correo electrónico (Windows Phone 8.1 y versiones posteriores)**
 
-    -   **Perfil de correo electrónico (Windows 10 para escritorios y Windows 10 Mobile y versiones posteriores)**
+    -   **Perfil de correo electrónico (Windows 10 Escritorio y Windows 10 Mobile y versiones posteriores)**
 
     -   **Perfil de correo electrónico (Android for Work - Gmail)**
 
@@ -117,7 +120,7 @@ La contraseña no está incluida en el perfil de correo electrónico, por lo que
 
 La nueva directiva se muestra en el nodo **Directivas de configuración** del área de trabajo **Directiva** .
 
-## Implementar la directiva
+## <a name="deploy-the-policy"></a>Implementar la directiva
 
 1.  En el área de trabajo **Directiva**, seleccione la directiva que quiera implementar y, después, elija **Administrar la implementación**.
 
@@ -135,6 +138,6 @@ En el área de trabajo **Directiva** de la página **General** , un resumen de e
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

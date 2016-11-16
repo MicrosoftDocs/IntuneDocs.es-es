@@ -2,10 +2,10 @@
 title: "¿Cómo se puede encontrar el número de serie de un dispositivo? | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 3831b4897596c7b49caaee76cb7063bab4399216
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: b045a49eb7994e686717f69e118265a4331ec4f7
 
 
 ---
 
 
-# ¿Cómo se puede encontrar el número de serie de un dispositivo?
+# <a name="how-do-i-find-the-serial-number-on-my-device"></a>¿Cómo se puede encontrar el número de serie de un dispositivo?
 
 En dispositivos que ejecutan iOS 8.0 y versiones posteriores, pulse el icono **Configuración**, **General** > **Acerca de** y, luego, desplácese hacia abajo hasta que encuentre **Número de serie**.
 
@@ -32,6 +32,6 @@ En dispositivos que ejecutan iOS 8.0 y versiones posteriores, pulse el icono **C
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

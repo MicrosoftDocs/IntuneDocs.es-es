@@ -2,10 +2,10 @@
 title: "Instalar e iniciar sesión en la aplicación Portal de empresa de Intune | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1d133011004fa9c684f81c7adc085dc43a4a2ee4
-ms.openlocfilehash: 29bc67a9ce4120cbb9f157c8d0eefb78dce020ca
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 5633cc9b9a97211bd5ff6a2d876bdb36ee8888c9
 
 
 ---
 
 
-# Instale e inicie sesión en la aplicación Portal de empresa de Intune
+# <a name="install-and-sign-in-to-the-intune-company-portal-app"></a>Instale e inicie sesión en la aplicación Portal de empresa de Intune
 
 El Portal de empresa es una aplicación que se instala en el dispositivo iOS y que le proporciona acceso a las aplicaciones, al correo electrónico y a la red de su empresa o centro educativo.  Antes de que pueda obtener acceso, debe instalar la aplicación Portal de empresa y, a continuación, usar la aplicación para inscribir el dispositivo en Microsoft Intune. Para más información, vea [¿Qué ocurrirá cuando instale la aplicación Portal de empresa e inscriba el dispositivo en Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
@@ -40,6 +40,6 @@ El Portal de empresa es una aplicación que se instala en el dispositivo iOS y q
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

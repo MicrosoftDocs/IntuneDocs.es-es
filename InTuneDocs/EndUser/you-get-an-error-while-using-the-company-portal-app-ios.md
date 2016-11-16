@@ -2,8 +2,8 @@
 title: "Obtiene un error mientras usa la aplicación de portal de empresa | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
-ms.openlocfilehash: d1bcda779c051e4455def755a92f47b5ec7475ea
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: fde8d231c9638f5923826942cadf1f9bad731f55
 
 
 ---
 
 
-# Obtiene un error mientras usa la aplicación Portal de empresa
+# <a name="you-get-an-error-while-using-the-company-portal-app"></a>Obtiene un error mientras usa la aplicación Portal de empresa
 
 Si se produce un error mientras usa la aplicación Portal de empresa en el dispositivo iOS, puede enviar información sobre el error y que así le sea más fácil a su administrador de TI solucionar el problema. Puede enviar información de errores de maneras diferentes:
 
@@ -32,8 +32,10 @@ Si se produce un error mientras usa la aplicación Portal de empresa en el dispo
 
 -   Mientras se encuentra en la aplicación de portal de empresa, agite el dispositivo y, después, pulse **Correo electrónico** cuando aparezca la alerta de diagnóstico. Si la alerta no aparece cuando agite el dispositivo, abra **Configuración** &gt; **Portal de empresa** y asegúrese de que la opción **Gesto de sacudida** está activada.
 
+¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 
-<!--HONumber=Oct16_HO2-->
+
+<!--HONumber=Nov16_HO2-->
 
 

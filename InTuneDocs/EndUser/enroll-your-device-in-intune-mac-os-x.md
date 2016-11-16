@@ -2,8 +2,8 @@
 title: Inscribir el dispositivo Mac OS X en Intune | Microsoft Intune
 description: "Describe cómo inscribir un dispositivo Mac OS X en Intune."
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 08/29/2016
 ms.topic: article
@@ -15,14 +15,14 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
-ms.openlocfilehash: 4a682db8e949fa087fdffe945a758554c1bfb164
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: ab8292843c540842a93e97377db21109a7e9fa33
 
 
 ---
 
 
-# Inscribir el dispositivo Mac OS X en Intune
+# <a name="enroll-your-mac-os-x-device-in-intune"></a>Inscribir el dispositivo Mac OS X en Intune
 
 Cuando inscribe su dispositivo Mac OS X en Intune, puede obtener acceso a la red de la compañía y ver el correo electrónico y los archivos del trabajo. También puede obtener las aplicaciones de empresa. Para más información sobre lo que ocurre cuando un dispositivo se inscribe, vea [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) (¿Qué ocurre cuando se instala la aplicación de portal de empresa y se inscribe el dispositivo en Intune?).
 
@@ -53,6 +53,6 @@ Para inscribir el dispositivo Mac OS X:
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
