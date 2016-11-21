@@ -1,8 +1,9 @@
 ---
 title: "Inscribir dispositivos iOS con el Asistente de configuración | Microsoft Intune"
-description: "Inscriba dispositivos iOS de empresa con la herramienta Apple Configurator para restablecer de fábrica el dispositivo y prepararlo para ejecutar el Asistente de configuración."
+description: "Inscriba dispositivos iOS corporativos con la herramienta Apple Configurator para restablecer la configuración de fábrica del dispositivo y prepararlo para ejecutar el Asistente de configuración."
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 07/20/2016
 ms.topic: article
@@ -13,55 +14,57 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e2daff5dae435df55c866adbf602f554500d50e0
-ms.openlocfilehash: 45aa4511945ab4763dc0dc35baefe47887e561bb
+ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
+ms.openlocfilehash: ea6a4732e747dccf9c42732c06bd1b8cdf20e91f
 
 
 ---
 
-# Inscribir dispositivos iOS con Apple Configurator y el Asistente de configuración
-Intune permite inscribir dispositivos iOS de empresa con la herramienta [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) desde un equipo Mac. Este proceso restablece la configuración de fábrica del dispositivo y lo prepara para que el nuevo usuario del dispositivo ejecute el Asistente de configuración con las directivas de la compañía preinstaladas.
+# <a name="enroll-ios-devices-with-apple-configurator-by-using-setup-assistant"></a>Inscripción de dispositivos iOS con Apple Configurator mediante el Asistente de configuración
+Intune permite la inscripción de dispositivos iOS corporativos con la herramienta [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) desde un equipo Mac. Este proceso restablece el dispositivo a la configuración de fábrica y lo prepara para ejecutar el Asistente de configuración, que instala las directivas de la empresa para el nuevo usuario del dispositivo.
 
-
-## Inscripción mediante Asistente de configuración para dispositivos iOS con Microsoft Intune
-Con el Configurador de Apple, puede restablecer los valores de fábrica de los dispositivos iOS y prepararlos para la configuración por parte del usuario nuevo del dispositivo.  Este método requiere que se conecte el dispositivo iOS a un equipo Mac a través de una conexión USB para configurar la inscripción corporativa. Además, el método supone que se está usando Apple Configurator 2.0. En la mayoría de los casos será necesario que la directiva aplicada al dispositivo iOS incluya **afinidad de usuario** para habilitar la aplicación Portal de empresa de Intune.
+## <a name="setup-assistant-enrollment-for-ios-devices-with-microsoft-intune"></a>Inscripción mediante Asistente de configuración para dispositivos iOS con Microsoft Intune
+Apple Configurator puede restablecer un dispositivo iOS a la configuración de fábrica y prepararlo para que lo configure el nuevo usuario del dispositivo. Este método requiere conectar el dispositivo iOS a un equipo Mac a través de una conexión USB para configurar la inscripción corporativa. Además, se supone que está usando Apple Configurator 2.0. En la mayoría de los casos será necesario que la directiva aplicada al dispositivo iOS incluya **afinidad de usuario** para habilitar la aplicación Portal de empresa de Intune.
 
 **Requisitos previos**
 * [Inscripción de iOS habilitada](set-up-ios-and-mac-management-with-microsoft-intune.md) mediante la instalación de un certificado de APNs
-* Acceso físico a dispositivos iOS: deben ser dispositivos sin configurar (restablecidos a estado de fábrica) sin protección por contraseña
-* Números de serie del dispositivo: [Cómo obtener un número de serie de iOS](https://support.apple.com/en-us/HT204308)
+* Acceso físico a dispositivos iOS; los dispositivos se deben restablecer a la configuración de fábrica sin protección con contraseña
+* Números de serie del dispositivo. Consulte [cómo encontrar el número de serie de un producto de Apple](https://support.apple.com/en-us/HT204308)
 * Cables de conexión USB
 * Equipo Mac con [Apple Configurator 2.0](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12)
 
 
-1.  **Crear un grupo de dispositivos móviles** (opcional) Si su empresa requiere grupos de dispositivos móviles para ayudar a administrar los dispositivos, cree los grupos. [Use grupos para administrar usuarios y dispositivos con Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
+1.  **Crear grupos de dispositivos móviles** (opcional)
+    Si su empresa requiere grupos de dispositivos móviles para ayudar a administrar los dispositivos, cree los grupos. Para aprender más, consulte [Usar grupos para administrar usuarios y dispositivos en Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md).
 
-2.  **Crear un perfil para dispositivos** Un perfil de inscripción de dispositivo define la configuración que se aplica a un grupo de dispositivos. Si aún no lo tiene, cree un perfil de inscripción de dispositivo para los dispositivos iOS inscritos mediante Apple Configurator.
+2.  **Crear un perfil para dispositivos**
+    Un perfil de inscripción de dispositivo define la configuración que se aplica a un grupo de dispositivos. Los siguientes pasos muestran cómo crear un perfil de inscripción de dispositivos para dispositivos iOS inscritos mediante Apple Configurator.
 
-    1.  En la [consola de administración de Microsoft Intune](http://manage.microsoft.com), vaya a **Directiva** &gt; **Inscripción de dispositivos corporativos** y, después, elija **Agregar...**.
-    ![Crear perfil de inscripción de dispositivo](../media/pol-sa-corp-enroll.png)
+    1.  En la [consola de administración de Microsoft Intune](http://manage.microsoft.com), vaya a **Directiva** &gt; **Inscripción de dispositivos corporativos** y, después, elija **Agregar**.
+    ![Creación de un perfil de inscripción de dispositivos](../media/pol-sa-corp-enroll.png)
 
     2.  Especifique los detalles de los perfiles de dispositivo:
 
-        -   **Nombre** : nombre del perfil de inscripción de dispositivo. (No es visible para los usuarios)
+        -   **Nombre**: el nombre del perfil de inscripción de dispositivos (no es visible para los usuarios).
 
-        -   **Descripción**: descripción del perfil de inscripción de dispositivo. (No es visible para los usuarios)
+        -   **Descripción**: una descripción del perfil de inscripción de dispositivos (no es visible para los usuarios).
 
         -   **Detalles de inscripción**: especifica cómo se inscriben los dispositivos.
 
-            -   **Solicitar afinidad de usuario**: El dispositivo se debe afiliar a un usuario durante la configuración inicial y luego se le puede permitir el acceso a los datos y al correo electrónico de la empresa como dicho usuario. La **afinidad de usuario** debe configurarse para dispositivos administrados por DEP que pertenezcan a usuarios y necesitan usar el Portal de empresa (es decir, instalar aplicaciones).
+            -   **Solicitar afinidad de usuario**: el dispositivo se debe afiliar a un usuario durante la configuración inicial y luego se le puede permitir el acceso a los datos y al correo electrónico de la empresa. La **afinidad de usuario** debe configurarse para dispositivos administrados por DEP que pertenezcan a usuarios y necesiten usar el portal de empresa para hacer uso de servicios, como instalar aplicaciones.
 
-            -   **Sin afinidad de usuario**: El dispositivo no está afiliado a ningún usuario. Utilice esta afiliación para dispositivos que realizan tareas sin tener acceso a datos de usuario local. Las aplicaciones que requieren la afiliación de un usuario no funcionarán, incluida la aplicación Portal de empresa cuando se usa para instalar aplicaciones de línea de negocio.
+            -   **Sin afinidad de usuario**: el dispositivo no está afiliado a ningún usuario. Utilice esta afiliación para dispositivos que realizan tareas sin tener acceso a datos de usuario local. Las aplicaciones que requieren la afiliación de un usuario no funcionarán, incluida la aplicación Portal de empresa cuando se usa para instalar aplicaciones de línea de negocio.
 
         -   **Asignación previa de grupo de dispositivos**: todos los dispositivos que implementan este perfil pertenecerán inicialmente a este grupo. Puede reasignar los dispositivos después de la inscripción.
 
             [!INCLUDE[groups deprecated](../includes/group-deprecation.md)]
 
-          -  **Programa de inscripción de dispositivos**: el programa de inscripción de dispositivos de Apple (DEP) no se puede utilizar con la inscripción del Asistente de configuración. Asegúrese de que el botón de alternancia está establecido en **desactivado**.
+        -  **Programa de inscripción de dispositivos**: el programa de inscripción de dispositivos de Apple (DEP) no se puede usar con la inscripción del Asistente de configuración. Asegúrese de que el botón de alternancia está establecido en **desactivado**.
 
     3.  Elija **Guardar perfil** para agregar el perfil.
 
-3.  **Agregar dispositivos iOS para inscribirse con el Asistente para la instalación** En la [consola de administración de Microsoft Intune](http://manage.microsoft.com), vaya a **Grupos** &gt; **Todos los dispositivos** &gt; **Todos los dispositivos corporativos** &gt; **Todos los dispositivos** y después elija **Agregar dispositivos...**. Puede agregar dispositivos de dos maneras:
+3.  **Agregar dispositivos iOS para inscribirse con el Asistente de configuración**.
+    En la [consola de administración de Microsoft Intune](http://manage.microsoft.com), vaya a **Grupos** &gt; **Todos los dispositivos** &gt; **Todos los dispositivos corporativos** &gt; **Todos los dispositivos** y luego elija **Agregar dispositivos**. Puede agregar dispositivos de dos maneras:
 
     ![Agregar cuadro de diálogo de dispositivos](../media/pol-SA-enroll-iOS-SetupAssistant.png)
 
@@ -69,8 +72,8 @@ Con el Configurador de Apple, puede restablecer los valores de fábrica de los d
 
         |||
         |-|-|
-        |&lt;Serie 1&gt;|&lt;Detalles del dispositivo n.º 1&gt;|
-        |&lt;Serie 2&gt;|&lt;Detalles del dispositivo n.º 2&gt;|
+        |&lt;Serie 1&gt;|&lt;Detalles del dispositivo n.º 1&gt;|
+        |&lt;Serie 2&gt;|&lt;Detalles del dispositivo n.º 2&gt;|
         Este archivo .csv, cuando se ve en un editor de texto, aparece como:
 
         ```
@@ -78,23 +81,26 @@ Con el Configurador de Apple, puede restablecer los valores de fábrica de los d
         111111111,PO 1234
         ```
 
-    -   **Agregar manualmente los detalles del dispositivo**: especifique el número de serie y los detalles de hasta cinco dispositivos
+    -   **Agregar manualmente los detalles del dispositivo**&mdash;: especifique el número de serie y los detalles de hasta 15 dispositivos.
 
     > [!NOTE]
-    > Si posteriormente necesita quitar dispositivos corporativos de la administración de Intune, es posible que tenga que quitar el número de serie del dispositivo de Intune del grupo de dispositivos **Mediante número de serie de iOS** en **Dispositivos corporativos inscritos previamente** para deshabilitar la inscripción de dispositivos.  Si Intune realiza un procedimiento de recuperación ante desastres en el momento en que se quitan los números de serie o en torno a este momento, se deberá comprobar que solo los números de serie de los dispositivos activos están presentes en ese grupo.
+    > Si posteriormente necesita quitar dispositivos corporativos de la administración de Intune, es posible que tenga que quitar el número de serie del dispositivo de Intune del grupo de dispositivos **Mediante número de serie de iOS** en **Dispositivos corporativos inscritos previamente** para deshabilitar la inscripción de dispositivos. Si Intune realiza un procedimiento de recuperación ante desastres en el momento en que se quitan los números de serie o en torno a este momento, se deberá comprobar que solo los números de serie de los dispositivos activos están presentes en ese grupo.
 
     Seleccione **Siguiente**.
 
-4.  **Seleccionar dispositivos para inscribir** Confirme los dispositivos que se van a inscribir. No se pueden importar los números de serie ya inscritos o inscritos por otros medios. Elija **Siguiente** para continuar.
+4.  **Seleccionar dispositivos para inscribir**.
+    Confirme los dispositivos que se van a inscribir. No se pueden importar los números de serie ya inscritos o inscritos por otros medios. Elija **Siguiente** para continuar.
 
-5.  **Asignar perfil** Especifique el perfil que se va a asignar a los dispositivos agregados desde la lista de perfiles disponibles, consulte los **detalles del perfil de inscripción** y luego elija **Finalizar**. Los dispositivos agregados manualmente se pueden asignar a cualquier perfil de inscripción.
+5.  **Asignar un perfil**.
+    Especifique el perfil que se va a asignar a los dispositivos agregados desde la lista de perfiles disponibles, consulte los **detalles del perfil de inscripción**y, después, haga clic en **Finalizar**. Los dispositivos agregados manualmente se pueden asignar a cualquier perfil de inscripción.
 
-6.  **Exportar un perfil para implementarlo en dispositivos iOS** En la [consola de administración de Microsoft Intune](http://manage.microsoft.com), vaya a **Directiva** &gt; **Inscripción de dispositivos corporativos** y, después, seleccione el perfil de dispositivo que quiera implementar en los dispositivos móviles. Elija **Exportar...** en la barra de tareas. Copie y guarde el valor de **Dirección URL del perfil**. Se cargará en Apple Configurator más tarde para definir el perfil de Intune utilizado por los dispositivos iOS.
-    Para admitir Apple Configurator 2, se debe editar URL de perfil 2.0. Reemplazar
+6.  **Exportar un perfil para implementarlo en dispositivos iOS**.
+    En la [consola de administración de Microsoft Intune](http://manage.microsoft.com), vaya a **Directiva** &gt; **Inscripción de dispositivos corporativos** y luego seleccione el perfil de dispositivo para implementar en dispositivos móviles. Elija **Exportar** en la barra de tareas. Copie y guarde el valor de **Dirección URL del perfil**. Se cargará en Apple Configurator más tarde para definir el perfil de Intune utilizado por los dispositivos iOS.
+    Para admitir Apple Configurator 2, se debe editar URL de perfil 2.0. Para ello, reemplace este código:
     ```
     https://manage.microsoft.com/EnrollmentServer/Discovery.svc/iOS/ESProxy?id=
     ```
-    con
+    por este código:
 
     ```
     https://appleconfigurator2.manage.microsoft.com/MDMServiceConfig?id=
@@ -104,45 +110,47 @@ Con el Configurador de Apple, puede restablecer los valores de fábrica de los d
 
 
 
-7.  **Preparar el dispositivo con Apple Configurator** Los dispositivos iOS están conectados al equipo Mac e inscritos para la administración de dispositivos móviles.
+7.  **Preparar el dispositivo con Apple Configurator**.
+    Los dispositivos iOS están conectados al equipo Mac e inscritos para la administración de dispositivos móviles.
 
     1.  En un equipo Mac, abra **Apple Configurator 2**. En la barra de menús, elija **Apple Configurator 2** y, después, elija **Preferencias**.
 
          > [!WARNING]
-         > Los dispositivos se restablecerán en la configuración de fábrica durante el proceso de inscripción. Como práctica recomendada, restablezca el dispositivo y enciéndalo. Como práctica recomendada, los dispositivos deberían estar en la pantalla **Hola** cuando conecte el dispositivo.
+         > Los dispositivos se restablecerán en la configuración de fábrica durante el proceso de inscripción. Como procedimiento recomendado, restablezca el dispositivo y enciéndalo. Los dispositivos deberían estar en la pantalla **Hola** cuando conecte el dispositivo.
 
-    2. En el panel de preferencias, seleccione **Servidores** y elija el símbolo “+” debajo del panel izquierdo para iniciar el asistente del servidor MDM. Seleccione **Siguiente**.
+    2. En el panel de preferencias, seleccione **Servidores** y elija el símbolo más (+) para iniciar el asistente del servidor MDM. Seleccione **Siguiente**.
 
-    3. Escriba el **Nombre** y la **dirección URL de inscripción** para el servidor MDM del paso 6 anterior. En la dirección URL de inscripción, escriba la dirección URL de perfil de inscripción exportada desde Intune. Seleccione **Siguiente**.  
+    3. Escriba el **nombre** y la **dirección URL de inscripción** para el servidor MDM del paso 6 en el Asistente de configuración para la inscripción de dispositivos de iOS con Microsoft Intune. Para la dirección URL de inscripción, escriba la dirección URL del perfil de inscripción exportada desde Intune. Seleccione **Siguiente**.  
 
-       Si recibe una advertencia que indica "Dirección URL del servidor sin comprobar", puede omitir la advertencia de forma segura. Para continuar, elija **Siguiente** hasta que se complete el asistente.
+       Puede omitir de forma segura una advertencia que indica "no se comprueba la dirección URL del servidor". Para continuar, elija **Siguiente** hasta que finalice el asistente.
 
-    4.  Conecte los dispositivos móviles iOS al equipo Apple con un adaptador USB.
+    4.  Conecte los dispositivos móviles iOS al equipo Mac con un adaptador USB.
 
         > [!WARNING]
-        > Los dispositivos se restablecerán en la configuración de fábrica durante el proceso de inscripción. Como práctica recomendada, restablezca el dispositivo y enciéndalo. Como práctica recomendada, los dispositivos deberían estar en la pantalla **Hola** cuando inicia el Asistente de configuración.
+        > Los dispositivos se restablecerán en la configuración de fábrica durante el proceso de inscripción. Como procedimiento recomendado, restablezca el dispositivo y enciéndalo. Los dispositivos deberían estar en la pantalla **Hola** cuando inicia el Asistente de configuración.
 
-    5.  Elija **Preparar**. En el panel **Prepare iOS Device** (Preparar el dispositivo iOS), seleccione **Manual** y luego elija **Siguiente**.
+    5.  Elija **Preparar**. En el panel de preparación del dispositivo iOS, seleccione **Manual**y luego elija **Siguiente**.
 
-    6. En el panel **Enroll in MDM Server** (Inscribir en servidor MDM), seleccione el nuevo servidor y elija **Siguiente**.
+    6. En el panel Enroll in MDM Server (Inscribir en servidor MDM), seleccione el nuevo servidor y elija **Siguiente**.
 
-    7. En el panel **Supervise Devices** (Supervisar dispositivos), seleccione el nivel de supervisión y luego elija **Siguiente**.
+    7. En el panel Supervise Devices (Supervisar dispositivos), seleccione el nivel de supervisión y luego elija **Siguiente**.
 
-    8. En el panel **Create an Organization** (Crear una organización), seleccione la **Organización** o cree una nueva y luego elija **Siguiente**.
+    8. En el panel Create an Organization (Crear una organización), seleccione la **organización** o cree una nueva y luego elija **Siguiente**.
 
-    9. En el panel **Configurar el Asistente de configuración de iOS**, elija los pasos que se presentan al usuario y, después, elija **Preparar**. Si se le solicita, autentíquese para actualizar la configuración de confianza.  
+    9. En el panel Configure iOS Setup Assistant (Configurar el Asistente de configuración de iOS), elija los pasos que se presentan al usuario y, después, elija **Preparar**. Si se le solicita, autentíquese para actualizar la configuración de confianza.  
 
-    10. Cuando el dispositivo iOS termina la preparación, puede desconectar el cable USB.  
+    10. Cuando el dispositivo iOS termine la preparación, desconecte el cable USB.  
 
-8.  **Distribuir los dispositivos** Los dispositivos ya están listos para la inscripción corporativa. Apague los dispositivos y distribúyalos a los usuarios. Cuando se encienda el dispositivo, se iniciará el Asistente de configuración.
-
-
-
-### Consulte también
-[Preparar la inscripción de dispositivos](get-ready-to-enroll-devices-in-microsoft-intune.md)
+8.  **Distribuir los dispositivos**.
+    Los dispositivos ya están listos para la inscripción corporativa. Apague los dispositivos y distribúyalos a los usuarios. Cuando los usuarios enciendan sus dispositivos, se iniciará el Asistente de configuración.
 
 
 
-<!--HONumber=Sep16_HO2-->
+### <a name="see-also"></a>Consulte también
+[Requisitos previos para la inscripción de dispositivos](prerequisites-for-enrollment.md)
+
+
+
+<!--HONumber=Nov16_HO2-->
 
 
