@@ -14,17 +14,17 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
-ms.openlocfilehash: 7577cbab528d88635e8551bf8de1ffd49becaa84
+ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
+ms.openlocfilehash: 2c8dc4917c3ef85955f017c4619c0d7496d03dbf
 
 
 ---
 
-# <a name="enroll-corporateowned-devices-by-using-intune"></a>Inscripción de dispositivos corporativos mediante Intune
+# <a name="enroll-corporate-owned-devices-by-using-intune"></a>Inscripción de dispositivos corporativos mediante Intune
 
 Puede inscribir dispositivos corporativos o propiedad de la organización para administrarlos con Intune de muchas maneras, en función del tipo de dispositivo, cómo se haya adquirido y las necesidades de la organización. También puede instalar la aplicación de Portal de empresa para inscribir y administrar dispositivos corporativos, como en un escenario "traiga su propio dispositivo" (BYOD).
 
-## <a name="enroll-corporateowned-ios-devices"></a>Inscribir dispositivos iOS de empresa
+## <a name="enroll-corporate-owned-ios-devices"></a>Inscribir dispositivos iOS de empresa
 
 Los métodos de inscripción de dispositivos corporativos son una buena opción para escenarios "elija su propio dispositivo" (CYOD). En un entorno CYOD, la organización paga por un dispositivo que el usuario selecciona, y es ella la que administra el dispositivo.
 
@@ -40,7 +40,7 @@ Puede usar una cuenta DEM para inscribir solo dispositivos que no use un usuario
 
 Más información sobre cómo [inscribir dispositivos corporativos mediante una cuenta DEM](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
 
-## <a name="enroll-corporateowned-windows-10-enterprise-devices"></a>Inscripción de dispositivos Windows 10 Enterprise corporativos
+## <a name="enroll-corporate-owned-windows-10-enterprise-devices"></a>Inscripción de dispositivos Windows 10 Enterprise corporativos
 
 Si usa Azure Active Directory Premium o Microsoft Enterprise Mobility Suite en su organización, puede [inscribir dispositivos Windows 10 Enterprise](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview). Cuando un usuario agrega una cuenta profesional o educativa a un dispositivo, el dispositivo se marca automáticamente como "corporativo".
 
@@ -50,17 +50,19 @@ Muchos fabricantes de dispositivos móviles usan un número único conocido como
 
 Más información sobre cómo [etiquetar dispositivos corporativos mediante números IMEI](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md).
 
-## <a name="identify-a-device-as-corporateowned"></a>Identificación de un dispositivo como corporativo
+## <a name="identify-a-device-as-corporate-owned"></a>Identificación de un dispositivo como corporativo
 
-En una lista de dispositivos, el valor de **Propiedad** es **Corporativo**. Un dispositivo corporativo tiene una de estas características:
+Intune reconoce un dispositivo como "corporativo" cuando cumple alguna de las condiciones siguientes:
 
- - El dispositivo se [inscribió mediante una cuenta DEM](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
- - El dispositivo se inscribió mediante [DEP de Apple](ios-device-enrollment-program-in-microsoft-intune.md) o [Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md).
- - El fabricante del dispositivo [declaró con anterioridad el dispositivo mediante números IMEI](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md).
- - El dispositivo está registrado en [Azure Active Directory o Enterprise Mobility Suite como un dispositivo Windows 10 Enterprise](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview).
+ - El dispositivo se [inscribió mediante una cuenta DEM](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md) (todas las plataformas).
+ - El dispositivo se inscribió mediante [DEP de Apple](ios-device-enrollment-program-in-microsoft-intune.md) o [Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md) (solo iOS).
+ - El fabricante del dispositivo [declaró con anterioridad el dispositivo mediante números IMEI](specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers.md) (todas las plataformas con números IMEI).
+ - El dispositivo está registrado en [Azure Active Directory o Enterprise Mobility Suite como un dispositivo Windows 10 Enterprise](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview) (solo Windows 10).
+
+Cuando un dispositivo se etiqueta como corporativo, verá **Corporativo** en la columna **Propiedad** para ese registro del dispositivo en la consola de administrador. 
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 
