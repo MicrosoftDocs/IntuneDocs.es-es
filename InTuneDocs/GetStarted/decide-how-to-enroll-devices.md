@@ -5,21 +5,21 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 178df739-d3b9-43cb-8440-c5c110b1276b
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: f4e6c17624f509b83ca594750c0db8931bc54b35
+ms.sourcegitcommit: 149f3a3310907d131affeaad4bd372aa60be9206
+ms.openlocfilehash: b5cc645ea50e6c4bb521e04371037c3978c9426a
 
 
 ---
 
-# Elegir cómo inscribir dispositivos móviles
+# <a name="choose-how-to-enroll-mobile-devices"></a>Elegir cómo inscribir dispositivos móviles
 
 La inscripción de dispositivos móviles es un proceso en el que los smartphones, las tabletas y los equipos se incorporan a la administración de Microsoft Intune. Como administrador, su tarea consiste en averiguar cuál es la mejor forma de inscribir dispositivos a partir de los siguientes aspectos:
 
@@ -29,7 +29,7 @@ La inscripción de dispositivos móviles es un proceso en el que los smartphones
 
 Las respuestas a las siguientes preguntas le servirán para saber cuál es el mejor método de inscripción de los dispositivos bajo su administración.
 
-## **¿Los empleados traen sus propios dispositivos o se los proporciona la organización?**
+## <a name="do-employees-bring-their-own-devices-or-are-devices-provided-by-your-organization"></a>**¿Los empleados traen sus propios dispositivos o se los proporciona la organización?**
 
   - **Dispositivos propiedad de los usuarios** (Bring your own device o "BYOD"): los usuarios pueden instalar la aplicación de portal de empresa de Intune en sus dispositivos y, luego, inscribirlos para obtener acceso a recursos de la empresa, como el correo electrónico, aplicaciones de empresa, datos de la compañía y soporte técnico.  
 
@@ -38,12 +38,12 @@ Las respuestas a las siguientes preguntas le servirán para saber cuál es el me
 > [!div class="button"]
 [Inscripción BYOD >](#what-byod-devices-can-your-users-enroll)   [Inscripción COD >](#are-your-company-owned-devices-shared-or-do-they-have-dedicated-users)
 
-## **¿Qué dispositivos BYOD pueden inscribir sus usuarios?**
+## <a name="what-byod-devices-can-your-users-enroll"></a>**¿Qué dispositivos BYOD pueden inscribir sus usuarios?**
 
 > [!div class="button"]
 [Android](/intune/deploy-use/set-up-android-management-with-microsoft-intune) [iOS y Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) [Windows 10 Mobile y Window Phone](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune) [equipos PC Windows](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 
-## **¿Los dispositivos propiedad de la empresa son compartidos o se destinan a usuarios dedicados?**
+## <a name="are-your-company-owned-devices-shared-or-do-they-have-dedicated-users"></a>**¿Los dispositivos propiedad de la empresa son compartidos o se destinan a usuarios dedicados?**
 
 - **Dispositivos propiedad de la empresa compartidos:** estos dispositivos no tienen un único usuario y no suelen estar configurados para obtener acceso al correo electrónico. Ejemplos de esto son los dispositivos de pantalla completa o los dispositivos orientados a tareas que los usuarios eligen de un grupo cuando lo necesitan y, luego, lo devuelven. Los métodos de inscripción recomendados dependerán de la plataforma de los dispositivos.
 
@@ -53,12 +53,12 @@ Las respuestas a las siguientes preguntas le servirán para saber cuál es el me
 [Compartido >](#what-operating-system-are-your-shared-devices-running)   [Dedicado >](#how-will-you-manage-dedicated-ios-devices)
 
 
-## **¿En qué sistema operativo se ejecutan los dispositivos compartidos?**
+## <a name="what-operating-system-are-your-shared-devices-running"></a>**¿En qué sistema operativo se ejecutan los dispositivos compartidos?**
 
-  > [!div class="button"]
-  [Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [iOS >](#how-will-you-manage-shared-ios-devices)
+> [!div class="button"]
+[Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [iOS >](#how-will-you-manage-shared-ios-devices)
 
-## **¿Cómo se administran los dispositivos iOS compartidos?**
+## <a name="how-will-you-manage-shared-ios-devices"></a>**¿Cómo se administran los dispositivos iOS compartidos?**
 
 - **Programa de inscripción de dispositivos (DEP) de Apple:** los dispositivos iOS adquiridos o administrados con DEP se pueden inscribir con un perfil de inscripción. Cuando esos dispositivos se encienden por primera vez, descargan el perfil de DEP y se inscriben con ese perfil de DEP.
 
@@ -69,7 +69,7 @@ Las respuestas a las siguientes preguntas le servirán para saber cuál es el me
   > [!div class="button"]
   [Inscripción iOS DEP >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Inscripción iOS Direct>](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)  [Inscripción DEM >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune).
 
-## **¿Cómo se administran los dispositivos iOS dedicados?**
+## <a name="how-will-you-manage-dedicated-ios-devices"></a>**¿Cómo se administran los dispositivos iOS dedicados?**
 
 Puede inscribir dispositivos corporativos con usuarios dedicados de las maneras siguientes:
 
@@ -84,6 +84,6 @@ Puede inscribir dispositivos corporativos con usuarios dedicados de las maneras 
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 
