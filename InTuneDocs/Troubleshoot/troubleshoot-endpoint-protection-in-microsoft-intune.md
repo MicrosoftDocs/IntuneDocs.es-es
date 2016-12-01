@@ -2,8 +2,8 @@
 title: Solucionar problemas de Endpoint Protection | Microsoft Intune
 description: Resolver problemas al usar Microsoft Intune Endpoint Protection.
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/02/2016
 ms.topic: article
@@ -14,20 +14,20 @@ ms.assetid: e31df2d2-bb1b-491b-9a71-04e0b18829c1
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 95c9b857665bdb97ea035fd4cee18ca4508c4cbb
+ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
+ms.openlocfilehash: bdcbe263529844cab04b1e5b715fe6eafd3feb86
 
 
 ---
 
-# Troubleshoot Endpoint Protection in Microsoft Intune
+# <a name="troubleshoot-endpoint-protection-in-microsoft-intune"></a>Troubleshoot Endpoint Protection in Microsoft Intune
 
 Use la información de esta sección como ayuda para resolver los problemas que se producen al usar Microsoft Intune Endpoint Protection.
 
 Si esta información no soluciona el problema, vea [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico para Microsoft Intune) para conocer otras formas de obtener ayuda.
 
 
-### Mensajes de error de Endpoint Protection
+### <a name="endpoint-protection-error-messages"></a>Mensajes de error de Endpoint Protection
 En esta sección se describen las posibles causas y soluciones de los siguientes errores y advertencias que aparecen en el panel **Estado de Endpoint Protection** de la [consola de administración de Intune](https://manage.microsoft.com).
 
 |Elemento de estado|Posibles causas|Posibles soluciones|
@@ -45,11 +45,11 @@ En esta sección se describen las posibles causas y soluciones de los siguientes
 |**Examen rápido vencido**|No se ha completado un examen rápido en los últimos 14 días. Esto puede deberse a un reinicio durante un examen rápido.|Si un examen rápido vence, puede ejecutar un examen rápido único o programar exámenes rápidos periódicos desde la [consola de administración de Intune](https://manage.microsoft.com) mediante la información del tema [Common Windows PC management tasks with the Microsoft Intune computer client (Tareas comunes de administración de equipos Windows con el cliente de equipo de Microsoft Intune)](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client).|
 |**Otra aplicación de protección de extremos en ejecución**|Se está ejecutando otra aplicación de protección de extremos y el equipo está en buenas condiciones.|De manera predeterminada, si hay otra aplicación de protección de extremos instalada e Intune detecta esa aplicación, Endpoint Protection se deshabilita a sí mismo automáticamente. Si Intune no detecta la otra aplicación de extremos, Endpoint Protection permanecerá habilitado. Para obtener más información, consulte [Help secure Windows PCs with Endpoint Protection for Microsoft Intune (Ayudar a proteger los equipos de Windows con Endpoint Protection para Microsoft Intune)](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).|
 
-### Pasos siguientes
+### <a name="next-steps"></a>Pasos siguientes
 Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el servicio de soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico de Microsoft Intune).
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

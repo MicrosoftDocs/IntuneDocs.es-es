@@ -1,66 +1,13 @@
 ---
-title: Portal de empresa de Microsoft Intune | Microsoft Intune
-description: configurar Portal de empresa de Intune
-keywords: 
-author: barlanmsft
-ms.author: barlan
-manager: angrobe
-ms.date: 10/14/2016
-ms.topic: article
-ms.prod: 
-ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 4dc3d084-0394-4ee7-b7fa-a72523928627
-ms.reviewer: jve
-ms.suite: ems
+redirect_url: https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-7
 translationtype: Human Translation
-ms.sourcegitcommit: 584cfc22cd885149054c1e5e42cc539a478db637
-ms.openlocfilehash: 0a9d7bdce29532f63c724d406cd13cd619c9034e
-
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: 50c514fa4c91077bd70bd5ce9c6f88dcc96348ab
 
 ---
 
-# Portal de empresa de Microsoft Intune.
-
-Antes de configurar Intune, repase este tema y los requisitos que aparecen en [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md) (Información necesaria antes de iniciar Microsoft Intune).
-
-El Portal de empresa de Microsoft Intune es una herramienta que proporciona a los usuarios acceso a aplicaciones y datos de la empresa. El Portal de empresa está disponible en dos formas:
-
--   **Aplicación Portal de empresa**: una aplicación que está disponible en dispositivos administrados con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Obtenga más información sobre las aplicaciones de Portal de empresa para [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) y [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
 
 
-- **Sitio web de Portal de empresa**: un sitio web, al que se obtiene acceso desde un [explorador compatible](supported-web-browsers.md), que permite a los usuarios finales realizar la mayoría de las mismas tareas que pueden realizar desde su aplicación de portal de empresa específica de la plataforma. La dirección URL es [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com). Obtenga más información sobre este sitio web en [Usar el sitio web del Portal de empresa de Intune](/Intune/EndUser/using-the-intune-company-portal-website).
-
-Estas son algunas de las tareas que los usuarios pueden hacer en el Portal de empresa:
-
--   Inscribir dispositivos
-
--   Ver el estado de sus dispositivos
-
--   Restablecer su dispositivo
-
--   Restablecer su contraseña
-
--   Bloquear de forma remota su dispositivo
-
--   Descargar el software implementado por la organización
-
--   Ponerse en contacto con el departamento de TI para obtener ayuda
-
-Antes de que un usuario pueda obtener acceso al Portal de empresa, se le debe conceder una licencia a su cuenta para el uso de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] y tener un estado de inicio de sesión de **Permitido**. Obtenga más información sobre cómo [agregar usuarios](start-with-a-paid-subscription-to-microsoft-intune-step-3.md) y [asignar licencias a su suscripción](start-with-a-paid-subscription-to-microsoft-intune-step-4.md). También puede [personalizar el sitio web del Portal de empresa](start-with-a-paid-subscription-to-microsoft-intune-step-7.md) con, por ejemplo, el logotipo de su compañía o las condiciones de uso. Para tener acceso al sitio web del Portal de empresa, los usuarios visitan el sitio web e inician sesión con una cuenta profesional o educativa.
-
-> [!NOTE]
-> La aplicación de portal de empresa todavía no está disponible en determinados países.
-
-> __iOS__: la aplicación de portal de empresa para iOS se ha publicado en [todos los territorios disponibles](https://go.microsoft.com/fwlink/?linkid=831284) de la Apple iOS App Store.
-
-> __Android__: la aplicación de portal de empresa para Android en Antigua y Barbuda, Aruba, Benín, Burkina Faso, Camboya, China, Cuba, Gabón, Guinea-Bissau, Haití, Irán, Laos, Malí, Mozambique, Birmania, Países Bajos, Antillas, Níger, Papúa Nueva Guinea, Sudán, Togo. Para estos países, una solución alternativa es [transferir localmente la versión de Android de la aplicación de portal de empresa](https://www.microsoft.com/en-us/download/details.aspx?id=49140).  
-
-### Consulte también
-[What to know before you start Microsoft Intune (Información necesaria antes de iniciar Microsoft Intune)](what-to-know-before-you-start-microsoft-intune.md)
-
-
-
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

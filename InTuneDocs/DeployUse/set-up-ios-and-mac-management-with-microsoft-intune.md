@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 07/20/2016
+ms.date: 11/17/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
-ms.openlocfilehash: 930419b20b675aa48c2b8bf1c49a1b576bbab414
+ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
+ms.openlocfilehash: 1d7aa8f028d57d4749706b8632aec342483cac5e
 
 
 ---
@@ -34,7 +34,10 @@ Intune permite la administración de dispositivos móviles (MDM) de iPad, iPhone
 3.  **Obtener un certificado de servicio de notificaciones de inserción de Apple**<br>
     Vaya al [Portal de certificados push de Apple](http://go.microsoft.com/fwlink/?LinkId=269844) e inicie sesión con el Id. de Apple de empresa para crear el certificado de APNs mediante el archivo .csr. Después de elegir **Cargar** en el portal de certificados push de Apple, recibirá un archivo .json que no se puede usar para APNs. Complete la descarga, vuelva al portal de certificados push de Apple para **Certificados para servidores de terceros** y elija **Descargar**.
 
-    Descargue el certificado de APNs (.pem) y guarde el archivo localmente. Este Id. de Apple debe usarse en el futuro para renovar el certificado de APNs.
+    Descargue el certificado de APNs (.pem) y guarde el archivo localmente. 
+
+    > [!NOTE]
+    > Cada año, necesita renovar (no reemplazar) este certificado de APN. Utilice ese mismo identificador de Apple para iniciar sesión en el portal de certificados push de Apple para renovar el certificado, después, utilizar las mismas instrucciones de este tema para descargar el certificado y, finalmente, cargarlo en Intune.
 
 4.  **Agregar el certificado de APN a Intune**<br>
     En la [consola de administración de Microsoft Intune](http://manage.microsoft.com), vaya a **Administración** &gt; **Administración de dispositivos móviles** &gt; **iOS y Mac OS X** &gt; **Cargar un certificado de APNs** y luego elija **Cargar el certificado de APNs**. Vaya al archivo de certificado (.pem), elija **Abrir** y luego escriba su **Id. de Apple**. Con el certificado APNs, Intune puede inscribir y administrar dispositivos iOS insertando la directiva en los dispositivos móviles inscritos.
@@ -54,6 +57,6 @@ Si la empresa u organización adquiere dispositivos iOS para los usuarios, estos
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 

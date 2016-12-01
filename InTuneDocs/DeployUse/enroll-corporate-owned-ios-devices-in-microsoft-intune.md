@@ -2,7 +2,8 @@
 title: "Inscripción de dispositivos iOS de empresa | Microsoft Intune"
 description: "Inscripción de dispositivos iOS de empresa mediante el Programa de inscripción de dispositivos (DEP) de Apple o Apple Configurator"
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 09/07/2016
 ms.topic: article
@@ -13,20 +14,20 @@ ms.assetid: 2d3ca4ab-f20c-4d56-9413-f8ef19cf0722
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bee93334e7b868ef6c827fba9efc3318c8419527
-ms.openlocfilehash: b295ee11d566fbfbe84513c045f3a76dfd51cda4
+ms.sourcegitcommit: 00ca6ea06aa63646d6ede6337f8e70d1ab956c5f
+ms.openlocfilehash: cfc97f4ed931a5c7dc5b38eafd0a2d081bc30975
 
 
 ---
 
-# Inscribir dispositivos iOS de empresa en Microsoft Intune
+# <a name="enroll-corporate-owned-ios-devices-in-microsoft-intune"></a>Inscribir dispositivos iOS de empresa en Microsoft Intune
 Microsoft Intune permite inscribir dispositivos iOS de propiedad corporativa con el Programa de inscripción de dispositivos (DEP) de Apple o la herramienta [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) que se ejecuta en un equipo Mac.
 
 **Requisito previo:** se requiere un [certificado de Apple Push Notification Service](set-up-ios-and-mac-management-with-microsoft-intune.md).
 
 Puede inscribir dispositivos iOS de empresa de tres maneras: mediante Apple Configurator, DEP o el Portal de empresa.
 
-## Usar Apple Configurator
+## <a name="use-apple-configurator"></a>Usar Apple Configurator
 
 Puede inscribir dispositivos iOS mediante la exportación de un perfil de inscripción corporativa y, después, mediante la conexión de esos dispositivos móviles a un equipo Mac que ejecuta Apple Configurator. Apple Configurator admite dos formas de inscripción:
 
@@ -34,10 +35,10 @@ Puede inscribir dispositivos iOS mediante la exportación de un perfil de inscri
 
 - **Inscripción directa**: crea un archivo compatible con Apple Configurator para su uso durante la preparación del dispositivo. No se restablece la configuración de fábrica del dispositivo inscrito, pero no tiene ninguna afiliación de usuario. En este método, el administrador debe conectar el dispositivo iOS mediante USB a un equipo Mac que ejecute [Apple Configurator](http://go.microsoft.com/fwlink/?LinkId=518017) para inscribir el dispositivo. Para obtener más información, consulte [Inscribir directamente dispositivos iOS mediante Apple Configurator](ios-direct-enrollment-in-microsoft-intune.md).
 
-## Usar el Programa de inscripción de dispositivos (DEP)
+## <a name="use-the-device-enrollment-program-dep"></a>Usar el Programa de inscripción de dispositivos (DEP)
 DEP implementa un perfil de inscripción "de forma inalámbrica" en los dispositivos que se adquieren a través de DEP. Cuando un usuario ejecuta el Asistente de configuración en el dispositivo, el dispositivo se inscribe en Intune.  Los usuarios no pueden anular la inscripción de dispositivos inscritos a través de DEP. Para obtener más información, consulte [Inscribir dispositivos iOS de la empresa mediante el Programa de inscripción de dispositivos](ios-device-enrollment-program-in-microsoft-intune.md).
 
-## Usar el portal de empresa en dispositivos inscritos mediante DEP o Apple Configurator
+## <a name="use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices"></a>Usar el portal de empresa en dispositivos inscritos mediante DEP o Apple Configurator
 
 Los dispositivos configurados con afinidad de usuario pueden instalar y ejecutar la aplicación del portal de empresa para descargar aplicaciones y administrar dispositivos. Después de recibir sus dispositivos, los usuarios deben realizar una serie de pasos adicionales para completar el Asistente de configuración e instalar la aplicación del portal de empresa.
 
@@ -67,7 +68,7 @@ La afinidad de usuario es necesaria para admitir lo siguiente:
 
 8. La inscripción ya se ha completado. El usuario puede usar ahora este dispositivo con el conjunto completo de funcionalidades.
 
-### Acerca de los dispositivos administrados de propiedad corporativa sin afinidad de usuario
+### <a name="about-corporate-owned-managed-devices-with-no-user-affinity"></a>Acerca de los dispositivos administrados de propiedad corporativa sin afinidad de usuario
 
 Los dispositivos configurados sin afinidad de usuario no admiten el portal de empresa y no se debe instalar en ellos la aplicación. El Portal de empresa está diseñado para usuarios que tienen credenciales corporativas y que necesitan acceso a recursos corporativos personalizados (por ejemplo, correo electrónico). Los dispositivos inscritos sin afinidad de usuario no están diseñados para tener un inicio de sesión de usuario dedicado. Los quioscos multimedia, los puntos de venta (PDV) y los dispositivos de utilidad compartida son casos de uso típicos de dispositivos inscritos sin afinidad de usuario.
 
@@ -75,11 +76,11 @@ En caso de que la afinidad de usuario sea un requisito, asegúrese de que el per
 
 
 
-### Consulte también
-[Preparar la inscripción de dispositivos en Microsoft Intune](get-ready-to-enroll-devices-in-microsoft-intune.md)
+### <a name="see-also"></a>Consulte también
+[Requisitos previos para la inscripción de dispositivos en Microsoft Intune](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO3-->
 
 

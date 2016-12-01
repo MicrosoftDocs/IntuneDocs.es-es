@@ -5,26 +5,26 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d2989e39-9b76-411b-b6fb-7209adb3bfb6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: e87fb7eaadcb578303a83d3d81ba650e65f6853c
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: 09c2940a99577769df1482314c488acf5823b51f
 
 
 ---
 
-# Elegir cómo inscribir dispositivos móviles
+# <a name="choose-how-to-enroll-mobile-devices"></a>Elegir cómo inscribir dispositivos móviles
 
 Las respuestas a la siguiente serie de preguntas le servirán para saber cuál es el mejor método de inscripción de los dispositivos bajo su administración.
 
-## **¿Los empleados traen sus propios dispositivos (BYOD) o se los proporciona la organización (COD)?**
+## <a name="do-employees-bring-their-own-devices-byod-or-are-devices-provided-by-your-organization-cod"></a>**¿Los empleados traen sus propios dispositivos (BYOD) o se los proporciona la organización (COD)?**
 
 > [!div class="button"]
 [BYOD >](choose-how-to-enroll-devices2.md)
@@ -37,6 +37,6 @@ Las respuestas a la siguiente serie de preguntas le servirán para saber cuál e
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 
