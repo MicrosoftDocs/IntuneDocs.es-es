@@ -13,8 +13,8 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: b76e9e16ef1fa6870783326630ae74d07ae59cbb
-ms.openlocfilehash: f69855f27ddc8ab6903c317383ef715f98590caf
+ms.sourcegitcommit: aae739b5ea8640449f180535a6d8f1550c7ae228
+ms.openlocfilehash: 8dc7f1c7eb32828854b4e2309c915f4fd0cba9a2
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Ayudar a proteger los dispositivos con el restablecimiento de código de acceso y el bloqueo remoto
@@ -25,6 +25,7 @@ Si un usuario pierde su dispositivo, es posible bloquearlo de forma remota. La t
 
 |Plataforma|Bloqueo remoto|
 |------------|---------------|
+|macOS|No compatible|
 |iOS|Compatible.|
 |Android|Compatible.|
 |Windows 10 y Windows 10 Mobile|Compatible.|
@@ -50,12 +51,14 @@ Si un usuario olvida su código de acceso, puede quitar la contraseña de un dis
 
 |Plataforma|Restablecimiento de la contraseña|
 |------------|------------------|
+|macOS|No compatible|
 |iOS|Permite borrar la contraseña de un dispositivo. No admite la creación de una nueva contraseña temporal.|
 |Android|Compatible con versiones anteriores a Android 7.0. Crea un código de acceso temporal.|
 |Windows 10 Mobile|Compatible.|
 |Windows Phone 8 y Windows Phone 8.1|Compatible.|
-|Windows RT 8.1 y Windows RT|No compatible.|
+|Windows RT 8.1|No compatible.|
 |Windows 8.1|No compatible.|
+|Windows 10 Escritorio|No compatible.|
 
 No se admite el restablecimiento de código de acceso para equipos Windows inscritos con el cliente de software de Intune.
 
@@ -76,6 +79,6 @@ No se admite el restablecimiento de código de acceso para equipos Windows inscr
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 
