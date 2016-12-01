@@ -1,4 +1,4 @@
-# [Descripción y exploración](introduction-to-microsoft-intune.md)
+# Descripción y exploración
 ## [Introducción a Intune](introduction-to-microsoft-intune.md)
 ## [Guía de evaluación de Intune](get-started-with-a-30-day-trial-of-microsoft-intune.md)
 ### [Iniciar sesión o registrarse para obtener una evaluación de 30 días](get-started-with-a-30-day-trial-of-microsoft-intune-step-1.md)
@@ -11,7 +11,7 @@
 ## [Escenarios frecuentes](common-ways-to-use-intune.md)
 ## [Glosario](intune-glossary.md)
 
-# [Introducción](/intune/get-started/what-to-know-before-you-start-microsoft-intune)
+# [Introducción](/intune/get-started/get-started)
 # [Novedades](/intune/whats-new/whats-new-in-microsoft-intune)
 <!-- # [Plan and Design](/intune/plan-design/ways-to-do-enterprise-mobility) -->
 # [Implementación y uso](/intune/deploy-use/overview-of-device-and-app-lifecycles-in-microsoft-intune)
@@ -19,6 +19,6 @@
 # [Solución de problemas](/intune/troubleshoot/general-troubleshooting-tips-for-microsoft-intune)
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO4-->
 
 

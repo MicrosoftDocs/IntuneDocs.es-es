@@ -14,8 +14,8 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9d44a6494bed0758b9768045bd204ea0eb481636
-ms.openlocfilehash: 5900894ded0518f731ac76c3eac0332e5a3f6c4b
+ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
+ms.openlocfilehash: df7f2683d8ae8860b7eaa0d1c37c7443830291a0
 
 
 ---
@@ -64,6 +64,25 @@ La opción **Borrar todos los datos** restaura la configuración predeterminada 
 
 Si el dispositivo está encendido y conectado, un comando de borrado tarda menos de 15 minutos en propagarse por cualquier tipo de dispositivo.
 
+#### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Eliminar dispositivos en el portal de Azure Active Directory
+
+1.  Vaya a [http://aka.ms/accessaad](http://aka.ms/accessaad) o seleccione **Administración** &gt; **Azure AD** en [https://portal.office.com](https://portal.office.com).
+
+2.  Inicie sesión con su identificador de organización mediante el vínculo que encontrará en el lado izquierdo de la página.
+
+3.  Cree una suscripción de Azure si no tiene una. Si tiene una cuenta de pago, no necesitará una tarjeta de crédito ni realizar ningún pago (seleccione el vínculo de suscripción **Registre su suscripción gratuita de Azure Active Directory**).
+
+4.  Seleccione **Active Directory** y, a continuación, seleccione su empresa.
+
+5.  Seleccione la pestaña **Usuarios** .
+
+6.  Seleccione el usuario cuyos dispositivos desea eliminar.
+
+7.  Seleccione **Dispositivos**.
+
+8.  Quite los dispositivos que crea oportunos, como por ejemplo aquellos que ya no estén en uso o que tienen definiciones inexactas.
+
+
 ## <a name="selective-wipe"></a>La eliminación de datos selectiva
 
 El **borrado selectivo** quita los datos de la empresa incluidos los datos de administración de aplicaciones móviles (MAM) si procede, las configuraciones y los perfiles de correo electrónico de un dispositivo. El borrado selectivo deja los datos personales del usuario en el dispositivo. El dispositivo se quita de Intune. En las tablas siguientes se describen los datos que se eliminan y el efecto en los datos que permanecen en el dispositivo después de una eliminación selectiva. (Las tablas están organizadas por plataforma).
@@ -95,7 +114,7 @@ El **borrado selectivo** quita los datos de la empresa incluidos los datos de ad
 |Configuración de perfil de Wi-Fi y VPN|Quitado.|Quitado.|
 |Configuración de perfil de certificado|Certificados revocados, pero no eliminados.|Certificados eliminados y revocados.|
 |Agente de administración|Se revocarán los privilegios del administrador de dispositivos.|Se revocarán los privilegios del administrador de dispositivos.|
-|Correo electrónico|Se quita el correo electrónico recibido en la aplicación de Microsoft Outlook para Android.|Los perfiles de correo electrónico que se aprovisionan mediante Intune se quitan y el correo electrónico almacenado en caché en el dispositivo se elimina. Si Microsoft Exchange se hospeda de forma local, no se quitan los perfiles de correo electrónico y el correo electrónico almacenado en caché.|
+|Correo electrónico|Se quita el correo electrónico recibido en la aplicación de Microsoft Outlook para Android.|Los perfiles de correo electrónico que se aprovisionan mediante Intune se quitan y el correo electrónico almacenado en caché en el dispositivo se elimina.|
 |Outlook|Se quita el correo electrónico recibido en la aplicación de Microsoft Outlook para iOS.</br>Excepción: Si Exchange está hospedado de forma local, no se quita el correo electrónico .|Se quita el correo electrónico recibido en la aplicación de Microsoft Outlook para iOS.</br>Excepción: Si Exchange está hospedado de forma local, no se quita el correo electrónico .|
 |Separación de Azure Active Directory (AAD)|Registro de AAD eliminado.|Registro de AAD eliminado.|
 |Contactos | Se quitan los contactos sincronizados directamente desde la aplicación en la libreta de direcciones nativa.  No se pueden borrar los contactos sincronizados desde la libreta de direcciones nativa en otro origen externo. <br /> <br />Actualmente, se admite solo la aplicación Outlook.|Se quitan los contactos sincronizados directamente desde la aplicación en la libreta de direcciones nativa.  No se pueden borrar los contactos sincronizados desde la libreta de direcciones nativa en otro origen externo. <br /> <br />Actualmente, se admite solo la aplicación Outlook.
@@ -111,7 +130,7 @@ El **borrado selectivo** quita los datos de la empresa incluidos los datos de ad
 |Correo electrónico|Quita el correo electrónico habilitado para EFS que incluye la aplicación de correo electrónico y datos adjuntos de Windows.|No compatible.|Los perfiles de correo electrónico que se aprovisionan mediante Intune se quitan y el correo electrónico almacenado en caché en el dispositivo se elimina.|Quita el correo electrónico habilitado para EFS que incluye la aplicación de correo electrónico y datos adjuntos de Windows. Se quitan las cuentas de correo aprovisionadas por Intune.</br>**Excepción**: Si Exchange está hospedado de forma local, no se quitan las cuentas de correo electrónico.|
 |Separación de Azure Active Directory (AAD)|No.|No.|Registro de AAD eliminado.|No aplicable. Windows 10 no admite la eliminación selectiva en los dispositivos unidos a Azure Active Directory.|
 
-## <a name="wipe-encryption-file-system-efsenabled-content"></a>Borrar el contenido habilitado para el sistema de archivos de cifrado (EFS)
+## <a name="wipe-encryption-file-system-efs-enabled-content"></a>Borrar el contenido habilitado para el sistema de archivos de cifrado (EFS)
 El borrado selectivo de contenido cifrado de EFS es compatible con Windows 8.1 y Windows RT 8.1. Los puntos siguientes se aplican a una eliminación selectiva de contenido habilitado para EFS:
 
 -   Solo se borran de forma selectiva las aplicaciones y los datos protegidos por EFS que usen el mismo dominio de Internet que la cuenta de Intune. Para obtener más información, consulte [Borrado selectivo de Windows para la administración de datos del dispositivo](http://technet.microsoft.com/library/dn486874.aspx).
@@ -146,6 +165,6 @@ Este informe también muestra quién realizó la acción.
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

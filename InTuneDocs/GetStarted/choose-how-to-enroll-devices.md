@@ -5,25 +5,25 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 11/22/2016
 ms.topic: article
 ms.prod: 
-ms.service: 
+ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: cac62b64-3f8b-47ae-aa66-970c7ba15466
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 2c14071f5fb1a3604b897d6b2f81797d40bedc6d
-ms.openlocfilehash: 1fd8495811e2cbcf4761707f2d1b705e49a240c6
+ms.sourcegitcommit: a563105aafb447c6e009cca09645e630709ff72d
+ms.openlocfilehash: 143f77bde09648a233ff09e9740668191a50cb1e
 
 
 ---
 
-# Elegir cómo inscribir dispositivos móviles
+# <a name="choose-how-to-enroll-mobile-devices"></a>Elegir cómo inscribir dispositivos móviles
 
 Las respuestas a las siguientes preguntas le servirán para saber cuál es el mejor método de inscripción de los dispositivos que administra.
 
-## **¿Los empleados traen sus propios dispositivos o se los proporciona la organización?**
+## <a name="do-employees-bring-their-own-devices-or-are-devices-provided-by-your-organization"></a>**¿Los empleados traen sus propios dispositivos o se los proporciona la organización?**
 
   - **Dispositivos de usuarios**: inscripción "Bring your own device" (BYOD)
   - **Dispositivos de empresa**: inscripción COD
@@ -33,26 +33,26 @@ Las respuestas a las siguientes preguntas le servirán para saber cuál es el me
 > [!div class="button"]
 [Inscripción COD >](#are-your-company-owned-devices-shared-or-do-they-have-dedicated-users)
 
-## **¿Qué dispositivos BYOD pueden inscribir sus usuarios?**
+## <a name="what-byod-devices-can-your-users-enroll"></a>**¿Qué dispositivos BYOD pueden inscribir sus usuarios?**
 
 > [!div class="button"]
 [Android](/intune/deploy-use/set-up-android-management-with-microsoft-intune) [iOS y Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) [Windows 10 Mobile y Window Phone](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune) [equipos PC Windows](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 
-## **¿Los dispositivos propiedad de la empresa son compartidos o se destinan a usuarios dedicados?**
+## <a name="are-your-company-owned-devices-shared-or-do-they-have-dedicated-users"></a>**¿Los dispositivos propiedad de la empresa son compartidos o se destinan a usuarios dedicados?**
 
 > [!div class="button"]
 [Compartido >](#what-operating-system-are-your-shared-devices-running)   [Dedicado >](#how-will-you-manage-dedicated-ios-devices)
 
 
-## **¿En qué sistema operativo se ejecutan los dispositivos compartidos?**
+## <a name="what-operating-system-are-your-shared-devices-running"></a>**¿En qué sistema operativo se ejecutan los dispositivos compartidos?**
 
-  > [!div class="button"]
-  [Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [iOS >](#how-will-you-manage-shared-ios-devices)
+> [!div class="button"]
+[Windows >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [Android >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) [iOS >](#how-will-you-manage-shared-ios-devices)
 
-## **¿Cómo se administran los dispositivos iOS compartidos?**
+## <a name="how-will-you-manage-shared-ios-devices"></a>**¿Cómo se administran los dispositivos iOS compartidos?**
 
-  > [!div class="button"]
-  [Inscripción iOS DEP >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Inscripción iOS Direct>](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)  [Inscripción DEM >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
+> [!div class="button"]
+[Inscripción iOS DEP >](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Inscripción iOS Direct>](/intune/deploy-use/ios-direct-enrollment-in-microsoft-intune)  [Inscripción DEM >](/intune/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
   - **Programa de inscripción de dispositivos (DEP) de Apple**: los dispositivos iOS adquiridos o administrados con DEP se pueden asociar con un perfil de inscripción. Cuando los usuarios encienden sus dispositivos por primera vez, el dispositivo descarga el perfil de DEP y se inscribe con ese perfil.
 
@@ -60,10 +60,10 @@ Las respuestas a las siguientes preguntas le servirán para saber cuál es el me
 
   - **Administrador de inscripción de dispositivos (Intune)**: el administrador de inscripción de dispositivos (DEM) de Intune permite a un administrador inscribir varios dispositivos móviles con una sola cuenta de usuario. Estos dispositivos no pueden tener usuarios dedicados (afinidad de usuario) y, para inscribirlos, la instalación y el inicio de sesión deben realizarse en la aplicación de portal de empresa.
 
-## **¿Cómo se administran los dispositivos iOS dedicados?**
+## <a name="how-will-you-manage-dedicated-ios-devices"></a>**¿Cómo se administran los dispositivos iOS dedicados?**
 
-  > [!div class="button"]
-   [DEP de iOS](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Asistente de configuración de iOS](/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) [Etiquetar con IMEI](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
+> [!div class="button"]
+[DEP de iOS](/intune/deploy-use/ios-device-enrollment-program-in-microsoft-intune) [Asistente de configuración de iOS](/intune/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune) [Etiquetar con IMEI](/intune/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
 
   Puede inscribir dispositivos corporativos con usuarios dedicados de las maneras siguientes:
 
@@ -75,6 +75,6 @@ Las respuestas a las siguientes preguntas le servirán para saber cuál es el me
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 

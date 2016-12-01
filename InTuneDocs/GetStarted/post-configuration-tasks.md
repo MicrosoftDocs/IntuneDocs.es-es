@@ -2,10 +2,10 @@
 title: "Tareas posteriores a la configuración | Microsoft Intune"
 description: "Complete las tareas de configuración opcionales para mejorar la funcionalidad de administración de dispositivos móviles."
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 1/22/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 34a412cd-8240-4e06-a60e-df270a711e7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0e125a283a017685c2442c34194da29466c8e67a
-ms.openlocfilehash: 81dfaeb25de75f178d8993b47aadb5d4880970c7
+ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
+ms.openlocfilehash: 7a4f1af9843cba6fa7b7325d0a678dd445cc1000
 
 
 ---
 
-# Tareas posteriores a la configuración
+# <a name="post-configuration-tasks"></a>Tareas posteriores a la configuración
 Después de completar los pasos de configuración inicial para una suscripción de pago de Intune, considere la posibilidad de habilitar las funciones adicionales de administración de dispositivos móviles.
 
 -   **Conectar Exchange a Intune** en el caso de los usuarios con dispositivos móviles que no se hayan inscrito en Intune, puede habilitar la administración de Exchange ActiveSync mediante un conector para Exchange local y para Exchange Online en Microsoft Office 365. Exchange Connector le conecta con la implementación de Exchange y le permite administrar los dispositivos móviles a través de la consola de administración de Intune. Para obtener más información sobre Exchange Connector, vea [Administración de dispositivos móviles con Exchange ActiveSync y Microsoft Intune](/intune/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
@@ -31,6 +31,6 @@ Después de completar los pasos de configuración inicial para una suscripción 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 
