@@ -2,8 +2,8 @@
 title: Endpoint Protection para equipos Windows | Microsoft Intune
 description: "Proteja los equipos administrados con Endpoint Protection, que ofrece protección en tiempo real contra las amenazas de malware."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: staciebarker
+ms.author: stabar
 manager: arob98
 ms.date: 07/25/2016
 ms.topic: article
@@ -14,20 +14,20 @@ ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 00409205a78d6f8fca353bf70d4f8d3f91e1e8d2
+ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
+ms.openlocfilehash: f960ac0671e3003a8b16f5e270c54a4e353516b6
 
 
 ---
 
-# Ayudar a proteger los equipos de Windows con Endpoint Protection para Microsoft Intune
+# <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Ayudar a proteger los equipos de Windows con Endpoint Protection para Microsoft Intune
 Microsoft Intune puede ayudarle a proteger los equipos administrados con Endpoint Protection, que proporciona protección en tiempo real contra amenazas de malware, mantiene las definiciones de malware actualizadas y examina automáticamente los equipos. Endpoint Protection también proporciona herramientas que ayudan a administrar y supervisar los ataques de malware.
 
 Si aún no ha instalado el cliente Intune en sus equipos, vea [Instalar el cliente de equipos Windows con Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 Use la información de las secciones siguientes como ayuda para configurar, implementar y supervisar Endpoint Protection.
 
-## Elegir cuándo usar Endpoint Protection
+## <a name="choose-when-to-use-endpoint-protection"></a>Elegir cuándo usar Endpoint Protection
 Una de las principales prioridades de un administrador de TI es proteger los equipos administrados contra virus y malware. Antes de implementar Intune en los equipos Windows de su organización, debe decidir la manera de proteger los equipos seleccionando una de las siguientes opciones y configurando las opciones de la directiva asociada:
 
 |Quiere:|Configuración de directivas de Endpoint Protection|Más información|
@@ -50,7 +50,7 @@ Para cambiar de su aplicación de protección de extremos actual a Microsoft Int
 > [!NOTE]
 > Intune no desinstala automáticamente aplicaciones de protección de extremos de otro fabricante.
 
-## Configurar Microsoft Intune Endpoint Protection
+## <a name="configure-microsoft-intune-endpoint-protection"></a>Configurar Microsoft Intune Endpoint Protection
 Siga estos pasos como guía para la configuración de Endpoint Protection para Microsoft Intune.
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), seleccione **Directiva** > **Agregar directiva**.
@@ -63,7 +63,7 @@ Puede usar la configuración recomendada o personalizar la configuración. Si ne
 
 Puede ver la directiva Endpoint Protection implementada en la página **Todas las directivas** del área de trabajo **Directiva**.
 
-## Especificar la configuración del servicio Endpoint Protection
+## <a name="specify-endpoint-protection-service-settings"></a>Especificar la configuración del servicio Endpoint Protection
 
 |Configuración de directiva|Detalles|
 |------------------|--------------------|
@@ -78,12 +78,12 @@ Si ha establecido los valores de directivas de **Instalar Endpoint Protection** 
 
   Microsoft Security Essentials le avisa con la protección en tiempo real si hay amenazas potenciales, como virus y spyware, que intentan instalarse o ejecutarse en el equipo. Si sucede, verá un mensaje en el área de notificación, en el lado derecho de la barra de tareas.
 
-### Especificar la configuración de protección en tiempo real
+### <a name="specify-real-time-protection-settings"></a>Especificar la configuración de protección en tiempo real
 
 |Configuración de directiva|Detalles|
 |------------------|--------------------|
 |**Habilitar protección en tiempo real**|Habilita la supervisión y el examen de todos los archivos y aplicaciones a los que se accede. También bloquea las aplicaciones y los archivos malintencionados antes de que puedan ejecutarse en los equipos.<br /><br />Valor recomendado: **Sí**|
-|**Analizar todas las descargas**|Habilita el examen de todos los archivos y datos adjuntos que se descargan de Internet a los equipos.<br /><br />Valor recomendado: **Sí**|
+|**Examinar todas las descargas**|Habilita el examen de todos los archivos y datos adjuntos que se descargan de Internet a los equipos.<br /><br />Valor recomendado: **Sí**|
 |**Supervisar la actividad de archivos y programas en los equipos**|Habilita la supervisión de los archivos entrantes y los archivos salientes, así como la actividad de los programas en los equipos. Con esta opción de configuración, Endpoint Protection puede supervisar cuándo empieza la ejecución de archivos y programas, y le envía alertas sobre las acciones que realizan o las acciones que se realizan con ellos.<br /><br />Valor recomendado: **Sí**|
 |**Archivos supervisados**|Permite decidir si se supervisan solo los archivos entrantes, los salientes o todos.<br /><br />Valor recomendado: **Supervisar todos los archivos**|
 |**Habilitar supervisión del comportamiento**|Permite a Microsoft Intune Endpoint Protection buscar determinados patrones de actividad sospechosa en equipos cliente.<br /><br />Valor recomendado: **Sí**|
@@ -91,56 +91,56 @@ Si ha establecido los valores de directivas de **Instalar Endpoint Protection** 
 
   ![Configuración en tiempo real para Endpoint Protection](./media/pol-sa-pc-policy-realtime.png)
 
-### Especificar la configuración de programación de examen
+### <a name="specify-scan-schedule-settings"></a>Especificar la configuración de programación de examen
 
 |Configuración de directiva|Más información|
 |------------------|--------------------|
 |**Programar un examen rápido diario**|Programa un examen rápido diario de los archivos de uso frecuente y los archivos importantes del sistema en los equipos. Este examen rápido tiene un efecto mínimo sobre el rendimiento.<br /><br />Valor recomendado: **Sí**|
-|**Ejecutar un análisis rápido si no se han ejecutado dos análisis rápidos consecutivos**|Configura Endpoint Protection para que ejecute automáticamente un examen rápido en los equipos en caso de que no se hayan realizado dos exámenes rápidos consecutivos.<br /><br />Valor recomendado: **Sí**|
+|**Ejecutar un examen rápido si no se han ejecutado dos exámenes rápidos consecutivos**|Configura Endpoint Protection para que ejecute automáticamente un examen rápido en los equipos en caso de que no se hayan realizado dos exámenes rápidos consecutivos.<br /><br />Valor recomendado: **Sí**|
 |**Programar un examen completo**|Configura un examen completo de todos los archivos y recursos de los discos duros locales de los equipos. Este examen puede tardar y puede afectar al rendimiento de los equipos (el tiempo depende del número de archivos y recursos examinados).<br /><br />Valor recomendado: **No**|
-|**Ejecutar un análisis completo si no se han ejecutado dos análisis completos consecutivos**|Configura Endpoint Protection para que ejecute automáticamente un examen completo en los equipos en caso de que no se hayan realizado dos exámenes consecutivos.<br /><br />Valor recomendado: No configurado|
+|**Ejecutar un examen completo si no se han ejecutado dos exámenes completos consecutivos**|Configura Endpoint Protection para que ejecute automáticamente un examen completo en los equipos en caso de que no se hayan realizado dos exámenes consecutivos.<br /><br />Valor recomendado: No configurado|
 
-### Especificar la configuración de opciones de examen
+### <a name="specify-scan-options-settings"></a>Especificar la configuración de opciones de examen
 
 |Configuración de directiva|Detalles|
 |------------------|--------------------|
-|**Ejecutar un análisis completo tras la instalación de Endpoint Protection**|Se establece en **Sí** para que Endpoint Protection ejecute automáticamente un examen completo del sistema después de instalarse en los equipos. Este examen se ejecuta únicamente cuando los equipos están inactivos para minimizar así el efecto en la productividad de los usuarios.<br /><br />Valor recomendado: **Sí**|
+|**Ejecutar un examen completo tras la instalación de Endpoint Protection**|Se establece en **Sí** para que Endpoint Protection ejecute automáticamente un examen completo del sistema después de instalarse en los equipos. Este examen se ejecuta únicamente cuando los equipos están inactivos para minimizar así el efecto en la productividad de los usuarios.<br /><br />Valor recomendado: **Sí**|
 |**Ejecutar un examen completo automáticamente cuando es necesario hacer un seguimiento después de quitar malware**|Debe establecerse en **Sí** para permitir a Endpoint Protection ejecutar automáticamente un examen completo del sistema en los equipos tras eliminar malware, para comprobar que no haya otros archivos afectados.<br /><br />Valor recomendado: **Sí**|
-|**Iniciar un examen programado sólo cuando el equipo está inactivo**|Debe establecerse en **Sí** para impedir que se inicien exámenes programados cuando los equipos se están usando a fin de no mermar la productividad de los usuarios.<br /><br />Valor recomendado: **Sí**|
+|**Iniciar un examen programado solo cuando el equipo está inactivo**|Debe establecerse en **Sí** para impedir que se inicien exámenes programados cuando los equipos se están usando a fin de no mermar la productividad de los usuarios.<br /><br />Valor recomendado: **Sí**|
 |**Buscar las últimas definiciones de malware antes de iniciar un examen**|Debe establecerse en **Sí** para permitir que Endpoint Protection compruebe automáticamente las definiciones de malware más recientes antes de empezar a examinar los equipos.<br /><br />Valor recomendado: **Sí**|
 |**Examinar archivos de almacenamiento**|Debe establecerse en **Sí** para configurar Endpoint Protection de forma que examine los archivos de almacenamiento (como los archivos .zip o .cab) de los equipos en busca de malware.<br /><br />Valor recomendado: **No**|
 |**Analizar mensajes de correo electrónico**|Debe establecerse en **Sí** para configurar Endpoint Protection de forma que examine los mensajes entrantes cuando llegan a los equipos.<br /><br />Valor recomendado: **Sí**|
 |**Examinar archivos abiertos desde carpetas compartidas de red**|Debe establecerse en **Sí** para configurar Endpoint Protection de forma que examine los archivos abiertos desde carpetas compartidas en la red. Normalmente se trata de archivos a los que se accede mediante una ruta de acceso UNC (convención de nomenclatura universal). Si se habilita esta función, los usuarios que tienen acceso de solo lectura pueden tener problemas, ya que no pueden eliminar el malware.<br /><br />Valor recomendado: **No**|
 |**Examinar unidades de red asignadas**|Debe establecerse en **Sí** para que Endpoint Protection analice los archivos ubicados en unidades de red asignadas. Si se habilita esta función, los usuarios que tienen acceso de solo lectura pueden tener problemas, ya que no pueden eliminar el malware.<br /><br />Valor recomendado: **No**|
-|**Analizar unidades extraíbles**|Debe establecerse en **Sí** para configurar Endpoint Protection de forma que examine las unidades extraíbles (como las unidades flash USB) en busca de malware al realizar un examen completo en los equipos.<br /><br />Valor recomendado: **Sí**|
-|**Limitar el uso de la CPU durante un análisis a**|Establece el porcentaje máximo de uso de la CPU que se puede usar durante los exámenes programados en los equipos. Puede establecer este valor entre el 1 y el 100 por ciento.<br /><br />Valor recomendado: **50%**|
+|**Examinar unidades extraíbles**|Debe establecerse en **Sí** para configurar Endpoint Protection de forma que examine las unidades extraíbles (como las unidades flash USB) en busca de malware al realizar un examen completo en los equipos.<br /><br />Valor recomendado: **Sí**|
+|**Limitar el uso de CPU durante un examen**|Establece el porcentaje máximo de uso de la CPU que se puede usar durante los exámenes programados en los equipos. Puede establecer este valor entre el 1 y el 100 por ciento.<br /><br />Valor recomendado: **50%**|
 
-### Seleccionar la configuración de acciones predeterminadas
+### <a name="choose-default-actions-settings"></a>Seleccionar la configuración de acciones predeterminadas
 
 La opción **Elegir cómo actúa Endpoint Protection sobre malware de los siguientes niveles de alerta** especifica la acción predeterminada que efectuará Endpoint Protection si se detecta malware de diversos niveles de alerta. Para cada nivel de la alerta puede quitar el malware, ponerlo en cuarentena o realizar la acción recomendada por Microsoft.
 
 Valor recomendado: **Acción recomendada**, que permite a Endpoint Protection recomendar la acción.   
 
-### Decidir si se selecciona la configuración de archivos y carpetas excluidos
+### <a name="decide-whether-to-choose-the-excluded-files-and-folders-settings"></a>Decidir si se selecciona la configuración de archivos y carpetas excluidos
 
 La opción **Archivos y carpetas que se excluirán al ejecutar un examen o al usar la protección en tiempo real** excluye archivos o carpetas específicos cuando se ejecuta un examen o cuando se usa la protección en tiempo real en los equipos.
 
-### Decidir si se selecciona la configuración de procesos excluidos
+### <a name="decide-whether-to-choose-the-excluded-processes-settings"></a>Decidir si se selecciona la configuración de procesos excluidos
 
 La opción **Procesos que se excluirán al ejecutar un examen o al usar protección en tiempo real** permite excluir procesos específicos cuando se ejecuta un examen o cuando se usa la protección en tiempo real en los equipos. Solo se pueden excluir los archivos con las siguientes extensiones: **.exe**, **.com** o **.scr**.
 
-### Decidir si se selecciona la configuración de tipos de archivo excluidos
+### <a name="decide-whether-to-choose-the-excluded-file-types-settings"></a>Decidir si se selecciona la configuración de tipos de archivo excluidos
 
 La opción **Extensiones de archivos que se excluirán al ejecutar un examen o al usar protección en tiempo real** permite excluir extensiones de archivo específicas cuando se ejecuta un examen o cuando se usa la protección en tiempo real en los equipos.
 
-### Especificar la configuración de Microsoft Active Protection Service
+### <a name="specify-microsoft-active-protection-service-settings"></a>Especificar la configuración de Microsoft Active Protection Service
 Microsoft Active Protection Service es una comunidad en línea que ayuda a decidir cómo responder a amenazas potenciales. La comunidad también ayuda a detener la propagación de nuevas infecciones de malware. Para **Unirse a Microsoft Active Protection Service**, seleccione **Sí** y, después, especifique el **Nivel de pertenencia**:
   - **Básica**: envía a Microsoft información básica sobre el malware detectado. Esta información incluye de dónde procede el software, las acciones que el usuario aplica o que Endpoint Protection aplica automáticamente y si las acciones obtuvieron resultados satisfactorios.
   - **Avanzada**: envía más información a Microsoft acerca de malware, spyware y software potencialmente no deseado. Esto incluye información sobre la ubicación del software, los nombres de archivo, cómo funciona el software y cómo ha afectado al equipo.
 
 También puede **Recibir definiciones dinámicas en función de los informes de Microsoft Active Protection Service**.
 
-## Seleccionar tareas de administración para Endpoint Protection
+## <a name="choose-management-tasks-for-endpoint-protection"></a>Seleccionar tareas de administración para Endpoint Protection
 Las siguientes tareas ayudan a realizar diversas tareas de administración en equipos administrados que ejecutan Endpoint Protection:
  - Actualizar definiciones de malware
   - Consola de Intune: en el área de trabajo **Grupos**, seleccione los equipos que quiere actualizar. Seleccione **Tareas remotas** &gt; **Actualizar definiciones de malware**.
@@ -151,7 +151,7 @@ Las siguientes tareas ayudan a realizar diversas tareas de administración en eq
 
 Para ver el estado de una tarea remota, seleccione el vínculo **Tareas remotas** situado en la esquina inferior derecha de la consola de Intune. El cuadro de diálogo **Estado de la tarea remota** muestra las tareas remotas actuales, el estado de la tarea, el nombre del dispositivo y los errores notificados. También proporciona un vínculo a la información de solución de problemas, si procediera.
 
-## Supervisar Endpoint Protection
+## <a name="monitor-endpoint-protection"></a>Supervisar Endpoint Protection
 Puede supervisar el estado de infección con malware en sus equipos a través del área de trabajo **Protección** de la [consola de administración de Microsoft Intune](https://manage.microsoft.com/). Esta área de trabajo contiene dos páginas:
  - **Información general de Endpoint Protection**: muestra problemas importantes como vínculos que se pueden seleccionar para obtener más información. Algunos problemas que podrían aparecer son:
   - **Instancias de malware que requieren seguimiento**: haga clic en el vínculo para ver una lista de problemas de malware y las acciones de seguimiento correspondientes que hay que realizar para solucionar el problema. Puede profundizar en la lista para ver qué equipos están afectados.
@@ -167,7 +167,7 @@ Puede supervisar el estado de infección con malware en sus equipos a través de
 
   ![Supervisar Endpoint Protection](./media/pol-sa-ep-monitor.png)
 
-### Cómo ver las rutas de acceso de detección recientes de malware en equipos
+### <a name="how-to-view-recent-detection-paths-for-malware-on-computers"></a>Cómo ver las rutas de acceso de detección recientes de malware en equipos
 Intune puede mostrar las rutas de acceso de hasta 10 de las instancias de malware detectadas más recientemente en un dispositivo. La opción **Rutas de acceso de detección recientes** está deshabilitada de forma predeterminada. Para habilitar esta vista:
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), seleccione **Grupos** > **Todos los dispositivos** > **Malware**.
@@ -176,7 +176,7 @@ Intune puede mostrar las rutas de acceso de hasta 10 de las instancias de malwar
 
 3.  Active la casilla **Rutas de acceso de detección recientes** de la lista. La columna **Rutas de acceso de detección recientes** aparece y muestra hasta 10 de las instancias de malware supervisadas más recientemente en el dispositivo.
 
-## Ejecutar un examen de malware o actualizar las definiciones de malware en un equipo
+## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>Ejecutar un examen de malware o actualizar las definiciones de malware en un equipo
 Intune puede ejecutar un examen rápido o completo de malware mediante Endpoint Protection o Windows Defender en un equipo administrado de forma remota que tenga instalado el cliente de Intune.
 
 1. En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), vaya a **Grupos** > **Información general** > **Todos los dispositivos** > **Todos los equipos** y seleccione el equipo de destino.
@@ -186,14 +186,14 @@ Intune puede ejecutar un examen rápido o completo de malware mediante Endpoint 
 
 
 
-## ¿Necesita más ayuda?
+## <a name="need-more-help"></a>¿Necesita más ayuda?
 Para obtener más ayuda y soporte técnico, vea [Solucionar problemas de Endpoint Protection en Microsoft Intune](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune).
 
-### Véase también
+### <a name="see-also"></a>Consulte también
 [Directivas para proteger equipos de Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 
