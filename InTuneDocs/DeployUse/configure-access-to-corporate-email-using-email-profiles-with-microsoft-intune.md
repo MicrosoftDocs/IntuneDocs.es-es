@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/19/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 56988f0a69e6ff281439e6e77d1814ec130c8b49
-ms.openlocfilehash: dcd8f956d1706f4bdcb2dca79e9f1ff5d5bb57b0
+ms.sourcegitcommit: f0c5920f7cc46e40bf4d1795a68ba1d67840fcfa
+ms.openlocfilehash: 6ac7034ba0713c7b6bdd28c7b53b99c247d3aeb3
 
 
 ---
@@ -35,7 +35,7 @@ Los usuarios o los administradores de TI también pueden optar por instalar otro
 Puede usar perfiles de correo electrónico para configurar el cliente de correo nativo en los siguientes tipos de dispositivo:
 -   Windows Phone 8.1 y versiones posteriores
 -   Windows 10 (para el escritorio), Windows 10 Mobile y versiones posteriores
--   iOS 8.0 y versiones posteriores
+-   iOS 8.0 y versiones posteriores
 -   Samsung KNOX Standard (4.0 y posterior)
 -   Android for Work
 
@@ -100,7 +100,7 @@ La contraseña no está incluida en el perfil de correo electrónico, por lo que
     |**Descripción**|Una descripción que le ayudará a identificar este perfil.|
     |**Host**|El nombre de host del servidor de la compañía que hospeda el servicio de correo electrónico nativo.|
     |**Nombre de cuenta**|Nombre para mostrar de la cuenta de correo electrónico tal y como aparecerá para los usuarios en sus dispositivos.|
-    |**Nombre de usuario**|Modo en el que se obtendrá el nombre de usuario de la cuenta de correo electrónico. Seleccione **Nombre de usuario** si es un servidor Exchange local o seleccione **Nombre principal de usuario** si es Office 365.|
+    |**Nombre de usuario**|Es el atributo de Active Directory (AD) o Azure AD que se usará para generar el nombre de usuario de este perfil de correo electrónico. Seleccione la dirección SMTP principal, como *user1@contoso.com*, o el nombre principal de usuario, como *usuario1* o *user1@contoso.com*.|
     |**Dirección de correo electrónico**|Modo en que se genera la dirección de correo electrónico para el usuario en cada dispositivo. Seleccione **Dirección SMTP primaria** para usar la dirección SMTP primaria para iniciar sesión en Exchange o **Nombre principal de usuario** para usar el nombre principal completo como dirección de correo electrónico.|
     |**Método de autenticación** (Android for Work, Samsung KNOX e iOS)|Seleccione **Nombre de usuario y contraseña** o **Certificados** como método de autenticación que usa el perfil de correo electrónico.|
     |**Seleccionar un certificado de cliente para la autenticación de cliente (certificado de identidad)** (Android for Work, Samsung KNOX e iOS)|Seleccione el certificado SCEP de cliente que creó previamente y que se utilizará para autenticar la conexión de Exchange. Para más información sobre cómo usar perfiles de certificado en Intune, vea [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md) (Proteger el acceso a recursos con perfiles de certificado). Esta opción solo se muestra cuando el método de autenticación es **Certificados**.|
@@ -138,6 +138,6 @@ En el área de trabajo **Directiva** de la página **General** , un resumen de e
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

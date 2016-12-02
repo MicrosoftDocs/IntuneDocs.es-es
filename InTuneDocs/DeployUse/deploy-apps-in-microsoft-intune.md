@@ -14,19 +14,19 @@ ms.assetid: 3b42019e-73da-4538-a496-212f11d5bf9b
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 6ae7bd35157da261d0627f70933fe2a808f9e677
+ms.sourcegitcommit: d73df65a36b348f0941b1e7889d083406bc082f9
+ms.openlocfilehash: b13d1a6a1a0f995b1169fabd09a2f0a4cf9b630d
 
 ---
-# Deploy apps in Microsoft Intune (Implementar aplicaciones en Microsoft Intune)
+# <a name="deploy-apps-in-microsoft-intune"></a>Deploy apps in Microsoft Intune (Implementar aplicaciones en Microsoft Intune)
 
 Use la información de este tema como ayuda para implementar aplicaciones con Microsoft Intune.
 
 
-## Implementar una aplicación
+## <a name="deploy-an-app"></a>Implementar una aplicación
 En este procedimiento, se implementa una aplicación en los grupos de dispositivos o usuarios seleccionados.
 
-### Para implementar una aplicación
+### <a name="to-deploy-an-app"></a>Para implementar una aplicación
 
 1. En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), haga clic en **Aplicaciones** &gt; **Aplicaciones** para ver la lista de aplicaciones que administra.
 
@@ -50,7 +50,12 @@ En este procedimiento, se implementa una aplicación en los grupos de dispositiv
 6. Si la aplicación que va a implementar es compatible con perfiles de VPN de Intune, se mostrará la página **Perfil de VPN**. En esta página, puede elegir asociar aplicaciones iOS a un perfil de VPN que haya implementado. La conexión VPN se abre automáticamente al iniciar la aplicación. Para disponer de un perfil de VPN, debe tener habilitada la configuración de perfil **VPN por aplicación**.
  Para obtener información sobre cómo configurar perfiles de VPN, incluida información sobre cómo asociar los perfiles con las aplicaciones, consulte [Conexiones VPN en Microsoft Intune](vpn-connections-in-microsoft-intune.md).
 
-## Ejemplo
+<!---
+>[!TIP]
+>If an end user previously installed an iOS app and you now deploy it with a deployment action of **Available**, Intune will automatically begin to manage that app with no further action required by you, or the end-user.
+--->
+
+## <a name="example"></a>Ejemplo
 
 En este ejemplo ha implementado la aplicación como **Disponible** en un dispositivo iOS.
 La aplicación se muestra en los dispositivos de los usuarios en Portal de empresa, y los usuarios pueden instalarla desde allí.
@@ -59,14 +64,14 @@ Por ejemplo, en esta captura de pantalla, la aplicación Bing para iOS se ha imp
 ![Aplicación disponible para iOS](./media/available-install-on-iOS.png)
 
 Si implementó la aplicación como **Requerida** en un dispositivo iOS, el usuario recibirá una notificación en la que se le informará de que la aplicación está preparada para la instalación. Por ejemplo, en esta captura de pantalla, la aplicación Carpetas de trabajo para iOS se ha implementado mediante el tipo de instalación **Aplicación iOS administrada de la App Store**.  
-![Aplicación requerida para Android](./media/iOS-Required-install.PNG)
+![Aplicación requerida para iOS](./media/iOS-Required-install.PNG)
 
-## Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 Después de implementar una aplicación, probablemente le interese supervisar su progreso. Para obtener más información, vea [Monitor apps in Microsoft Intune](monitor-apps-in-microsoft-intune.md) (Supervisar aplicaciones en Microsoft Intune).
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

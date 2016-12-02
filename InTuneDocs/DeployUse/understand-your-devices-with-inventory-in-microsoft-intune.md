@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,17 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 3d01ec8c2b848b4fa1e507ec9e7a31125badf30e
+ms.sourcegitcommit: dbf3ac5c7ab326fd82acb979ea7a4933ac68ff1c
+ms.openlocfilehash: 1bfb47cccc6438bae54a57271e585bdc9f9f6611
 
 
 ---
 
-# Comprender el funcionamiento de sus dispositivos mediante el inventario en Microsoft Intune
+# <a name="understand-your-devices-with-inventory-in-microsoft-intune"></a>Comprender el funcionamiento de sus dispositivos mediante el inventario en Microsoft Intune
 Microsoft Intune permite ver el inventario de los dispositivos inscritos y los equipos de Windows que ejecutan el software de cliente de Intune.
 Intune suele recopilar el inventario de los dispositivos administrados cada 7 días. Por este motivo, puede que haya un retraso antes de que los informes muestren los resultados de los cambios recientes en los dispositivos (por ejemplo, un cambio en el nombre del dispositivo o en el espacio de almacenamiento libre).
 
-## ¿Qué información se recopila de los dispositivos inscritos?
+## <a name="whats-collected-from-enrolled-devices"></a>¿Qué información se recopila de los dispositivos inscritos?
 Para ver el inventario que recopilan los dispositivos móviles, ejecute la opción [Informes de inventario de dispositivos móviles](understand-microsoft-intune-operations-by-using-reports.md). Intune recopila el siguiente inventario de los dispositivos móviles:
 
 |Propiedad|Recopilado por|
@@ -35,7 +35,7 @@ Para ver el inventario que recopilan los dispositivos móviles, ejecute la opci�
 |**Modelo**|Todos los dispositivos|
 |**Canal de administración**|Todos los dispositivos|
 |**Registrado en AAD**|Todos los dispositivos excepto Mac OS X|
-|**Conforme**|Todos los dispositivos|
+|**Compatible**|Todos los dispositivos|
 |**EAS activado**|Todos los dispositivos excepto Mac OS X|
 |**Id. de activación de EAS**|Todos los dispositivos excepto Mac OS X|
 |**Hora de activación de EAS**|Todos los dispositivos excepto Mac OS X|
@@ -44,9 +44,9 @@ Para ver el inventario que recopilan los dispositivos móviles, ejecute la opci�
 |**Id. de Exchange ActiveSync**|Todos los dispositivos|
 |**Liberado o modificado**|Solo dispositivos iOS y Android|
 |**Id. de dispositivo único**|Todos los dispositivos excepto Exchange ActiveSync|
-|**Número de serie**|Dispositivos iOS, Mac OS X, Android, Windows 8.1 y Windows 10|
-|**Espacio de almacenamiento total**|Dispositivos iOS, Mac OS X, Windows 8.1 y Windows 10|
-|**Espacio de almacenamiento libre**|Dispositivos iOS, Mac OS X, Windows 8.1 y Windows 10|
+|**Número de serie**|Dispositivos iOS, Mac OS X, Android, Windows 8.1 y Windows 10 Escritorio|
+|**Espacio de almacenamiento total**|Dispositivos iOS, Mac OS X, Windows 8.1, Windows 10 Escritorio y Windows 10 Mobile|
+|**Espacio de almacenamiento libre**|Dispositivos iOS, Mac OS X, Windows 8.1 y Windows 10 Escritorio|
 |**Número de teléfono**<br>Los teléfonos que se clasifican como corporativos se identifican con el número de teléfono completo (por ejemplo, al ejecutar un informe de inventario de dispositivos móviles). Los números de teléfono BYOD se enmascaran con &#42; y solo se muestran los últimos cuatro dígitos.|Dispositivos iOS, Android y Windows Phone|
 |**IMEI**|Dispositivos Exchange ActiveSync, iOS, Android y Windows Phone|
 |**MEID**<br>Identificador de equipo móvil|Solo dispositivos iOS|
@@ -61,7 +61,7 @@ Para ver el inventario que recopilan los dispositivos móviles, ejecute la opci�
 |**Bloqueo de activación habilitado**|Solo dispositivos iOS|
 |**Cifrado habilitado**|Todos los dispositivos|
 
-## ¿Qué información se recopila de los equipos PC con Windows?
+## <a name="whats-collected-from-windows-pcs"></a>¿Qué información se recopila de los equipos PC con Windows?
 > [!IMPORTANT]
 > Esta sección solo se aplica a equipos de Windows que ejecutan el software de cliente de equipos de Windows Intune.
 
@@ -116,6 +116,6 @@ Para ver el inventario que recopilan los equipos PC con Windows, ejecute la opci
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/29/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,15 @@ ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 99b01f5ca5bb389fc8a9d87e956796823fee6c0d
-ms.openlocfilehash: 6e11d71265f01ae31ab3124a46aaa544ad2f453a
+ms.sourcegitcommit: 027e7e56e6f7d3a604336e0465f688af514c69e6
+ms.openlocfilehash: 68fc47ba9f63f2ba05abae1f0e5ae5c6b3dca463
 
 
 ---
 
-# Restringir el acceso al correo electrónico, a O365 y a otros servicios con Microsoft Intune
+# <a name="restrict-access-to-email-o365-and-other-services-with-microsoft-intune"></a>Restringir el acceso al correo electrónico, a O365 y a otros servicios con Microsoft Intune
 Puede restringir el acceso al correo electrónico de la empresa y a los servicios de O365 con el acceso condicional de Intune. Con las funciones de acceso condicional de Intune, se asegura de que el acceso al correo electrónico de la empresa y a los servicios de O365 está restringido a los dispositivos compatibles con las reglas establecidas.
-## ¿Cómo funciona el acceso condicional?
+## <a name="how-does-conditional-access-work"></a>¿Cómo funciona el acceso condicional?
 La configuración de la directiva de cumplimiento se usa para evaluar el cumplimiento del dispositivo. La directiva de acceso condicional usa la evaluación para restringir o permitir el acceso a un servicio específico. Cuando se usa una directiva de acceso condicional en combinación con una directiva de cumplimiento, solo podrán tener acceso al servicio los dispositivos conformes. La directiva de cumplimiento y de acceso condicional se implementan en el usuario. Cualquier dispositivo que utilice el usuario para tener acceso a los servicios se somete a comprobaciones para verificar que cumple con las directivas.
 
 Tenga en cuenta que el usuario que usa el dispositivo debe tener implementada una directiva de cumplimiento para que se pueda evaluar el cumplimiento del dispositivo.
@@ -34,7 +34,7 @@ Flujo típico de acceso condicional:
 
 ![Diagrama que muestra los puntos de decisión usados para determinar si un dispositivo puede tener acceso a un servicio o si se bloquea](../media/ConditionalAccess4.png)
 
-## ¿Cómo se configura el acceso condicional?
+## <a name="how-to-configure-conditional-access"></a>¿Cómo se configura el acceso condicional?
 Use el acceso condicional para administrar el acceso a Microsoft **Exchange local**, **Exchange Online**, **Exchange Online dedicado**, **SharePoint Online** y **Skype Empresarial Online**.
 
 Para configurar el acceso condicional, configure una directiva de cumplimiento del dispositivo y una directiva de acceso condicional.
@@ -49,8 +49,8 @@ Puede establecer una directiva de acceso condicional para restringir el acceso e
 A diferencia de otras directivas de Intune, no se implementan directivas de acceso condicional. En su lugar, después de configurar la directiva y seleccionar los usuarios que deben tenerla, la directiva se aplica a todos los usuarios de destino. Cuando un usuario es destinatario de una directiva, cada dispositivo que use debe ser conforme con el fin de obtener acceso a los recursos.
 
 
-## Pasos siguientes
-1. [Obtener información sobre la directiva de cumplimiento del dispositivo y su funcionamiento ](introduction-to-device-compliance-policies-in-microsoft-intune.md)
+## <a name="next-steps"></a>Pasos siguientes
+1. [Obtener información sobre la directiva de cumplimiento del dispositivo y su funcionamiento](introduction-to-device-compliance-policies-in-microsoft-intune.md)
 
 2. [Crear una directiva de cumplimiento](create-a-device-compliance-policy-in-microsoft-intune.md)
 
@@ -66,6 +66,6 @@ A diferencia de otras directivas de Intune, no se implementan directivas de acce
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -2,7 +2,8 @@
 title: "Tareas comunes de administración de PC Windows | Microsoft Intune"
 description: Revise las tareas de este tema para aprender a administrar los equipos Windows que ejecutan el cliente de software de Intune.
 keywords: 
-author: NathBarn
+author: staciebarker
+ms.author: stabar
 manager: angrobe
 ms.date: 08/04/2016
 ms.topic: article
@@ -13,23 +14,23 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 16be49504b24269f9463905ab5767acbda136a0a
-ms.openlocfilehash: 9ef18ee054928fcfb12a36fe8ac3ad3c2909f6c1
+ms.sourcegitcommit: cf6b4c0fbc8a739f205173f39093ce5550cb8321
+ms.openlocfilehash: 075ed3f7d8b5f8283b7936c1c89d20081a9264a6
 
 
 ---
 
-# Tareas comunes de administración de equipos Windows con el cliente de software de Intune
+# <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>Tareas comunes de administración de equipos Windows con el cliente de software de Intune
 Revise las tareas de este tema para aprender a administrar los equipos que ejecutan el cliente de software de Intune. Si aún no tiene instalado el cliente en los equipos, consulte [Instalar el cliente de equipos Windows con Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 
-## Usar directivas para simplificar la administración de equipos
+## <a name="use-policies-to-simplify-pc-management"></a>Usar directivas para simplificar la administración de equipos
 
 Los equipos Windows que ejecutan el cliente de software de Intune se pueden administrar mediante las directivas **Administración de equipos** de Intune.
 
 ![Plantilla de directivas para equipos con Windows](../media/pc_policy_template.png)
 
-### Administrar Microsoft Intune Center
+### <a name="manage-the-microsoft-intune-center"></a>Administrar Microsoft Intune Center
 Los usuarios ven el cliente de software de Intune como **Microsoft Intune Center**. Con Microsoft Intune Center se puede hacer lo siguiente:
 
 -   Obtener aplicaciones desde el portal de empresa.
@@ -44,23 +45,22 @@ Microsoft Intune Center se instala en todos los equipos administrados. En una di
 
 |Configuración de directiva|Detalles|
 |------------------|--------------------|
-|**Nombre**|El nombre del administrador del equipo.<br /><br />Longitud máxima: 40 caracteres|
-|**Número de teléfono**|El número de teléfono del administrador del equipo.<br /><br />Longitud máxima: 20 caracteres|
-|**Dirección de correo electrónico**|La dirección de correo electrónico del administrador del equipo.<br /><br />Longitud máxima: 40 caracteres|
-|**Nombre del sitio web**|El nombre del sitio web de soporte para los usuarios.<br /><br />Longitud máxima: 40 caracteres|
-|**Dirección URL del sitio web**|La dirección URL del sitio web de soporte.<br /><br />Longitud máxima: 150 caracteres|
-|**Notas**|Una nota que se muestra a los usuarios.<br /><br />Longitud máxima: 120 caracteres|
+|**Nombre**|El nombre del administrador del equipo.<br />Longitud máxima: 40 caracteres|
+|**Número de teléfono**|El número de teléfono del administrador del equipo.<br />Longitud máxima: 20 caracteres|
+|**Dirección de correo electrónico**|La dirección de correo electrónico del administrador del equipo.<br />Longitud máxima: 40 caracteres|
+|**Nombre del sitio web**|El nombre del sitio web de soporte para los usuarios.<br />>Longitud máxima: 40 caracteres|
+|**Dirección URL del sitio web**|La dirección URL del sitio web de soporte.<br />Longitud máxima: 150 caracteres|
+|**Notas**|Una nota que se muestra a los usuarios.<br />Longitud máxima: 120 caracteres|
 
-## Configuración de las actualizaciones de software
-Use directivas para establecer la configuración que los equipos administrados utilizan para buscar y descargar actualizaciones de software de Microsoft y de otros fabricantes. Estas actualizaciones no incluyen actualizaciones del sistema operativo (es decir, actualizaciones de Windows 7 a Windows 10 o actualizaciones de una versión de Windows 10 a una versión posterior). Para más información, vea [Mantener los equipos Windows al día con las actualizaciones de software en Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
+Consulte los siguientes recursos para obtener información sobre las directivas y las opciones que puede configurar para equipos Windows:
 
-### Configuración de Endpoint Protection
-Use directivas para establecer la configuración de Endpoint Protection que luego implementará en los equipos administrados. Esto incluye, entre otras cosas, la programación de exámenes y las acciones que hay que realizar cuando se detecta malware. Para más información, vea [Ayudar a proteger los equipos de Windows con Endpoint Protection para Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md).
+- [Mantener los equipos Windows al día con las actualizaciones de software de Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md): estas directivas hacen que los equipos administrados busquen y descarguen actualizaciones de software de Microsoft y de terceros. No se incluyen las actualizaciones de sistema operativo (por ejemplo, actualizaciones de Windows 7 a Windows 10 o actualizaciones de una versión de Windows 10 a una versión posterior).
 
-## Configuración de Windows Firewall
-Las directivas simplifican la administración de la configuración del Firewall de Windows en los equipos administrados. Para más información, vea [Ayudar a proteger los equipos de Windows mediante directivas del Firewall de Windows en Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md).
+- [Ayudar a proteger los equipos de Windows con Endpoint Protection para Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md): en estas opciones de configuración se incluye la programación de exámenes y las acciones que se deben realizar cuando se detecta software malintencionado.
 
-## Ver el Inventario de hardware y software
+- [Ayudar a proteger los equipos de Windows mediante directivas del Firewall de Windows en Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md): estas directivas simplifican la administración de la configuración de Firewall de Windows en los equipos administrados.
+
+## <a name="view-hardware-and-software-inventory"></a>Ver el Inventario de hardware y software
 Intune recopila información detallada sobre el hardware y el software de los equipos administrados. Use la información de los siguientes procedimientos para aprender a crear:
 
 -   Un informe que muestra información acerca de las capacidades de hardware de los equipos.
@@ -69,7 +69,7 @@ Intune recopila información detallada sobre el hardware y el software de los eq
 
 -   Cómo actualizar un inventario de equipos para asegurarse de que los datos del informe estén al día.
 
-### Para mostrar información acerca de los equipos
+### <a name="to-display-information-about-your-computers"></a>Para mostrar información acerca de los equipos
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), seleccione **Informes** &gt; **Informes de inventario de equipos**.
 
@@ -79,7 +79,7 @@ Intune recopila información detallada sobre el hardware y el software de los eq
 
     Para ordenar el informe por cualquiera de las columnas, seleccione el encabezado de columna correspondiente, como **Nombre**, **Tipo de chasis** o **Fabricante**.
 
-### Para mostrar el software instalado en sus equipos
+### <a name="to-display-software-installed-on-your-computers"></a>Para mostrar el software instalado en sus equipos
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), seleccione **Informes** &gt; **Informes de software detectado**.
 
@@ -89,7 +89,7 @@ Intune recopila información detallada sobre el hardware y el software de los eq
 
     Para ordenar el informe por cualquiera de las columnas, seleccione el encabezado de columna correspondiente, como **Nombre**, **Editor** o **Categoría**. Puede seleccionar la flecha situada junto al elemento de lista para expandir las actualizaciones de la lista a fin de mostrar más detalles (como los equipos en los que están instaladas).
 
-### Para actualizar el inventario de equipos a fin de asegurarse de que está al día
+### <a name="to-refresh-computer-inventory-to-ensure-it-is-current"></a>Para actualizar el inventario de equipos a fin de asegurarse de que está al día
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), seleccione **Grupos** &gt; **Todos los dispositivos ** (u otro grupo que contenga el equipo para el que quiera actualizar el inventario).
 
@@ -102,7 +102,7 @@ Intune recopila información detallada sobre el hardware y el software de los eq
     Se abre el cuadro de diálogo **Estado de la tarea** , que muestra las tareas remotas actuales, el estado de la tarea, el nombre del dispositivo y los errores notificados, y proporciona un vínculo a información de solución de problemas, si es necesario.
 
 
-## Reiniciar un PC Windows de forma remota
+## <a name="remotely-restart-a-windows-pc"></a>Reiniciar un PC Windows de forma remota
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), seleccione **Grupos** &gt; **Todos los dispositivos** (u otro grupo que contenga el equipo que quiera reiniciar).
 
@@ -112,7 +112,7 @@ Intune recopila información detallada sobre el hardware y el software de los eq
 
 4.  En el cuadro de diálogo **Estado de la tarea** , revise las tareas remotas actuales, el estado de la tarea, el nombre del dispositivo y los errores notificados.
 
-## Retirar un equipo
+## <a name="retire-a-computer"></a>Retirar un equipo
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), seleccione **Grupos** &gt; **Todos los dispositivos** (u otro grupo que contenga el equipo que quiera retirar).
 
@@ -143,10 +143,10 @@ Cuando retira un equipo:
 
     Si el cliente no se puede desinstalar, lea [Solucionar problemas de Endpoint Protection en Microsoft Intune](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) para obtener más ayuda.
 
-## Administrar la vinculación de dispositivos de usuario
+## <a name="manage-user-device-linking"></a>Administrar la vinculación de dispositivos de usuario
 Antes de implementar software en un usuario, debe vincular el usuario a un equipo. Puede vincular un usuario a varios equipos, pero cada equipo puede vincularse sólo a un usuario. Los usuarios se vinculan automáticamente a los equipos que tengan inscritos en Intune a través del portal de la empresa.
 
-### Para vincular un usuario a un equipo
+### <a name="to-link-a-user-to-a-computer"></a>Para vincular un usuario a un equipo
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), seleccione **Grupos** &gt; **Todos los dispositivos** (u otro grupo que contenga el equipo que quiera vincular a un usuario).
 
@@ -165,13 +165,13 @@ Antes de implementar software en un usuario, debe vincular el usuario a un equip
 > [!TIP]
 > Si desea restringir la capacidad de los usuarios finales para vincularse a equipos, habilite la opción **Restringir la capacidad de los usuarios de vincularse a equipos** en la directiva de **Configuración de agente de Microsoft Intune**.
 
-## Solicitar y proporcionar asistencia remota para equipos con Windows
+## <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Solicitar y proporcionar asistencia remota para equipos con Windows
 
 Microsoft Intune puede usar el software [TeamViewer](https://www.teamviewer.com), comprado por separado, para que usted pueda ofrecer asistencia remota a los usuarios de los equipos que ejecutan el cliente de software de Intune. Cuando un usuario solicita ayuda a Microsoft Intune Center, usted recibe una alerta, puede aceptar la solicitud y, luego, proporcionar asistencia.
 Esta funcionalidad reemplaza la funcionalidad de asistencia remota de Windows existente en Intune.
 
 
-### Antes de empezar
+### <a name="before-you-start"></a>Antes de empezar
 
 Antes de empezar a establecer las solicitudes de asistencia remota y responderlas, debe asegurarse de haber cumplido los requisitos previos siguientes:
 
@@ -179,7 +179,7 @@ Antes de empezar a establecer las solicitudes de asistencia remota y responderla
 - Debe administrar los equipos Windows mediante [el cliente de equipos Windows](manage-windows-pcs-with-microsoft-intune.md)
 - Se pueden administrar todos los sistemas operativos de equipos Windows que Intune admite.
 
-### Configurar el conector de TeamViewer
+### <a name="configure-the-teamviewer-connector"></a>Configurar el conector de TeamViewer
 
 1. En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), seleccione **Administración**.
 2. En el área de trabajo **Administración**, elija **TeamViewer**.
@@ -190,7 +190,7 @@ Antes de empezar a establecer las solicitudes de asistencia remota y responderla
 7. En la consola de Intune, compruebe que el elemento **Conector de TeamViewer** aparece como **Habilitado**.
 
 
-### Abrir una solicitud de asistencia remota (usuario final)
+### <a name="open-a-remote-assistance-request-end-user"></a>Abrir una solicitud de asistencia remota (usuario final)
 
 1. En un equipo Windows de cliente, abra **Microsoft Intune Center**.
 2. En **Asistencia remota**, elija **Solicitar asistencia remota**.
@@ -198,7 +198,7 @@ Antes de empezar a establecer las solicitudes de asistencia remota y responderla
 4. El usuario ve un mensaje en el que se le pregunta si usted puede controlar el equipo de dicho usuario. Él debe aceptar este mensaje para continuar.
 5. Durante la sesión de asistencia remota, el usuario ve una ventana que muestra que usted está conectado. Si el usuario cierra esta ventana, la sesión remota finaliza.
 
-### Responder a una solicitud de asistencia remota
+### <a name="respond-to-a-remote-assistance-request"></a>Responder a una solicitud de asistencia remota
 
 1. Cuando un usuario envía una solicitud de asistencia remota, usted puede verlo en el área de trabajo **Alertas**, en **Supervisión** > **Asistencia remota**. Por ejemplo:
 > ![Captura de pantalla de una solicitud de asistencia remota](./media/team-viewer.png)
@@ -210,12 +210,12 @@ Antes de empezar a establecer las solicitudes de asistencia remota y responderla
 
 Durante una sesión de asistencia remota, puede usar todos los comandos de TeamViewer disponibles para controlar el equipo remoto. Para obtener ayuda con estos comandos, descargue el [Manual de control remoto](http://www.teamviewer.com/en/support/documents/) desde el sitio web de TeamViewer.
 
-### Cerrar la sesión de asistencia remota
+### <a name="close-the-remote-assistance-session"></a>Cerrar la sesión de asistencia remota
 
 En el menú **Acciones** de la ventana **TeamViewer**, elija **Finalizar sesión**.
 
 
 
-<!--HONumber=Sep16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

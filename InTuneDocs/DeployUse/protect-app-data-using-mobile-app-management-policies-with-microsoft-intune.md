@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/18/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,15 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 389daf0ed39fa2cd4b2e5d6e52cbd6809a568c9e
-ms.openlocfilehash: e751619f6d65e10099d1f8ff5a2342185181af69
+ms.sourcegitcommit: 027e7e56e6f7d3a604336e0465f688af514c69e6
+ms.openlocfilehash: fc484be99d0956e707f96c0c285b2750754f746c
 
 
 ---
 
-# Proteger datos mediante las directivas de administración de aplicaciones móviles con Microsoft Intune
+# <a name="protect-app-data-using-mobile-app-management-policies-with-microsoft-intune"></a>Proteger datos mediante las directivas de administración de aplicaciones móviles con Microsoft Intune
 
-## Cómo puede proteger los datos de la aplicación
+## <a name="how-you-can-protect-app-data"></a>Cómo puede proteger los datos de la aplicación
 Los empleados usan dispositivos móviles para tareas personales y de trabajo.  Mientras se asegura de que los empleados pueden ser productivos, también puede evitar la pérdida de datos, ya sea intencional o involuntaria.  Además, quiere tener la capacidad de proteger los datos de la empresa a los que se accede mediante dispositivos (incluso aquellos datos que usted no administre).
 
 Puede usar directivas de administración de aplicaciones móviles (MAM) de Intune para ayudar a proteger los datos de la empresa. Dado que las directivas de MAM de Intune se pueden usar **independientemente de cualquier solución de administración de dispositivos móviles (MDM)**, puede usarlas para proteger los datos de la empresa con o sin inscripción de los dispositivos en una solución de administración de dispositivos. Mediante la implementación de **directivas de nivel de aplicación**, puede restringir el acceso a los recursos de la empresa y mantener los datos dentro del ámbito del departamento de TI.
@@ -54,21 +54,21 @@ Hay otras ventajas derivadas del uso de MDM con directivas de MAM, y las empresa
 - **Las directivas MAM garantizan que las protecciones de la capa de aplicaciones estén establecidas**. Por ejemplo, puede solicitar un PIN para abrir una aplicación en un contexto de trabajo, o si se pueden compartidos datos entre aplicaciones, o evitar el almacenamiento de datos de aplicaciones de la compañía en una ubicación de almacenamiento personal.
 
 
-### Actualmente las directivas de MAM se admiten en:
+### <a name="mam-polices-are-currently-supported-on"></a>Actualmente las directivas de MAM se admiten en:
 -   iOS 8.1 o posterior
 
 -   Android 4 o posterior
 
 Los dispositivos Windows no son compatibles actualmente.
-##  Cómo protegen las directivas de MAM los datos de las aplicaciones
+##  <a name="how-mam-policies-protect-app-data"></a>Cómo protegen las directivas de MAM los datos de las aplicaciones
 
-####  Aplicaciones sin directivas de MAM:
+####  <a name="apps-without-mam-policies"></a>Aplicaciones sin directivas de MAM:
 
 ![Imagen que muestra que los datos se pueden mover libremente entre aplicaciones cuando no hay ninguna directiva de MAM aplicada](../media/Apps_without_MAM_policies.png)
 
 Cuando se usan aplicaciones sin restricciones, se pueden entremezclar los datos empresariales y personales.  Los datos de la compañía podrían acabar en ubicaciones como el almacenamiento personal o transferidas a aplicaciones fuera de su ámbito, lo cual provocaría una pérdida de datos. Las flechas del diagrama muestran el movimiento sin restricciones de los datos entre aplicaciones (personales y corporativas) y hacia ubicaciones de almacenamiento.
 
-### Protección de datos con directivas de MAM:
+### <a name="data-protection-with-mam-policies"></a>Protección de datos con directivas de MAM:
 
 ![Imagen que muestra cómo se protegen los datos de la empresa cuando se aplican directivas de MAM ](../media/Apps_with_mobile_app_policies.png)
 
@@ -76,7 +76,7 @@ Puede usar directivas de MAM para evitar que los datos de la empresa se guarden 
 - Directivas de reubicación de datos como **Impedir "Guardar como"**, **Restringir cortar, copiar y pegar**.
 - Opciones de directivas de acceso como **Requerir PIN sencillo para el acceso**, **Bloquear las aplicaciones administradas para que no se ejecuten en dispositivos con jailbreak o rooting**.
 
-### Protección de datos con directivas de MAM en dispositivos administrados por una solución MDM:
+### <a name="data-protection-with-mam-policies-on-devices-managed-by-a-mdm-solution"></a>Protección de datos con directivas de MAM en dispositivos administrados por una solución MDM:
 
 ![Imagen que muestra cómo funcionan las directivas de MAM en los dispositivos BYOD](../media/MAM_BYOD_November.png)
 
@@ -101,7 +101,7 @@ La solución MDM:
 -   Borrar datos de compañía de las aplicaciones sin borrar esas aplicaciones del dispositivo
 
 
-### Protección de datos con directivas de MAM para dispositivos sin inscripción
+### <a name="data-protection-with-mam-policies-for-devices-without-enrollment"></a>Protección de datos con directivas de MAM para dispositivos sin inscripción
 
 ![Imagen que muestra cómo funcionan las directivas de MAM en los dispositivos administrados](../media/MAM_ManagedDevices_November.png)
 
@@ -117,7 +117,7 @@ Sin embargo, existen algunas limitaciones que se deben tener en cuenta, como:
 -   No se puede proporcionar configuraciones de Wi-Fi y VPN de compañía en estos dispositivos.
 
 
-## Varias identidades
+## <a name="multi-identity"></a>Varias identidades
 
 Las aplicaciones que admiten varias identidades ofrecen la posibilidad de usar diferentes cuentas (profesional y personal) para acceder a las mismas aplicaciones mientras se apliquen directivas de MAM siempre que se usen en el contexto laboral.  
 
@@ -125,13 +125,13 @@ Por ejemplo, cuando el usuario final inicia la aplicación OneDrive con su cuent
 
 Todas las aplicaciones móviles de Office admiten varias identidades.
 
-##  Pasos siguientes
-[Get ready to configure mobile app management policies (Preparación para configurar directivas de administración de aplicaciones móviles)](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+##  <a name="next-steps"></a>Pasos siguientes
+[Preparación para configurar directivas de administración de aplicaciones móviles](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 [Crear e implementar directivas de administración de aplicaciones móviles con Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 

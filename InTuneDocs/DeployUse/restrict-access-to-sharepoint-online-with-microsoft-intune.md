@@ -5,7 +5,7 @@ keywords:
 author: karthikaraman
 ms.author: karaman
 manager: angrobe
-ms.date: 07/13/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: db1d43dd647122e7ba8ebd4e6df48e3c970a3392
-ms.openlocfilehash: 76ac4c92d090ef0057bd7c9687b169cd12b901a1
+ms.sourcegitcommit: 027e7e56e6f7d3a604336e0465f688af514c69e6
+ms.openlocfilehash: 5e8fa073cfd98d77ad7fd269fa14bce117e3e9e5
 
 
 ---
 
-# Restringir el acceso a SharePoint Online con Microsoft Intune
+# <a name="restrict-access-to-sharepoint-online-with-microsoft-intune"></a>Restringir el acceso a SharePoint Online con Microsoft Intune
 Use el acceso condicional de [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] para controlar el acceso a los archivos que se encuentran en SharePoint Online.
 El acceso condicional tiene dos componentes:
 - La directiva de cumplimiento del dispositivo, con la que debe cumplir el dispositivo para que se considere conforme.
@@ -55,24 +55,24 @@ Si no se cumple una condición, se presentará al usuario uno de los mensajes si
 
 -   Si el dispositivo no es conforme, se muestra un mensaje que dirige al usuario al sitio web del portal de empresa de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], donde encontrará información sobre el problema y sobre cómo resolverlo.
 
-**El acceso condicional se aplica en todos los sitios de SharePoint y el uso compartido externo está bloqueado.**
+**El acceso condicional no se aplica al uso compartido externo**. Para obtener información sobre cómo impedir el uso compartido externo en el inquilino o una recopilación de sitios, consulte [Administrar el uso compartido externo en su entorno de SharePoint Online](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US).
 
 >[!NOTE]
 >Si habilita el acceso condicional para SharePoint Online, se recomienda que deshabilite el dominio en la lista como se describe en el tema [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx).  
 
-## Compatibilidad con dispositivos móviles
-- iOS 8.0 y versiones posteriores
+## <a name="support-for-mobile-devices"></a>Compatibilidad con dispositivos móviles
+- iOS 8.0 y versiones posteriores
 - Android 4.0 y versiones posteriores, Samsung Knox Standard 4.0 o versiones posteriores
 - Windows Phone 8.1 y versiones posteriores
 
 Puede restringir el acceso a SharePoint Online al acceder desde un explorador desde dispositivos **iOS** y **Android**.  Solo se permitirá el acceso desde exploradores compatibles de dispositivos que también lo sean:
 * Safari (iOS)
 * Chrome (Android)
-* Managed Browser (iOS y Android)
+* Managed Browser (iOS y Android 5.0 y posterior)
 
 **Los exploradores no compatibles serán bloqueados**.
 
-## Compatibilidad para equipos
+## <a name="support-for-pcs"></a>Compatibilidad para equipos
 - Windows 8.1 y versiones posteriores (cuando están inscritos en Intune)
 - Windows 7.0, Windows 8.1 o Windows 10 (si están unidos a un dominio)
 > [!NOTE]
@@ -92,9 +92,9 @@ AAD DRS se activará automáticamente para los clientes de Intune y Office 365. 
     La autenticación moderna aporta inicio de sesión basado en la biblioteca de autenticación de Active Directory (ADAL) para los clientes de Windows en Office 2013 y habilita una mejor seguridad como la **autenticación multifactor** y la **autenticación basada en certificados**.
 
 
-## Configurar el acceso condicional de SharePoint Online
+## <a name="configure-conditional-access-for-sharepoint-online"></a>Configurar el acceso condicional de SharePoint Online
 
-### Paso 1: Configurar grupos de seguridad de Active Directory
+### <a name="step-1-configure-active-directory-security-groups"></a>Paso 1: Configurar grupos de seguridad de Active Directory
 Antes de empezar, configure los grupos de seguridad de Azure Active Directory para la directiva de acceso condicional. Estos grupos se pueden configurar en el **Centro de administración de Office 365**o el **portal de cuentas de Intune**. Estos grupos se usarán para aplicar la directiva a los usuarios o para excluirlos de ella. Cuando un usuario es destinatario de una directiva, cada dispositivo que use debe ser conforme con el fin de obtener acceso a los recursos.
 
 Se pueden especificar dos tipos de grupo en una directiva de SharePoint Online:
@@ -105,7 +105,7 @@ Se pueden especificar dos tipos de grupo en una directiva de SharePoint Online:
 
 Si un usuario pertenece a ambos grupos, estará exento de la directiva.
 
-### Paso 2: Configurar e implementar una directiva de cumplimiento
+### <a name="step-2-configure-and-deploy-a-compliance-policy"></a>Paso 2: Configurar e implementar una directiva de cumplimiento
 Si todavía no lo ha hecho, cree e implemente una directiva de cumplimiento para todos los usuarios a los que se aplicará la directiva de SharePoint Online.
 
 > [!NOTE]
@@ -118,7 +118,7 @@ Para saber más sobre cómo configurar la directiva de cumplimiento, vea [Create
 
 Cuando esté listo, continúe con el **paso 3**.
 
-### Paso 3: Configurar la directiva de SharePoint Online
+### <a name="step-3-configure-the-sharepoint-online-policy"></a>Paso 3: Configurar la directiva de SharePoint Online
 A continuación, configure la directiva para requerir que solo los dispositivos administrados y conformes puedan tener acceso a SharePoint Online. Esta directiva se almacenará en Azure Active Directory.
 
 #### <a name="bkmk_spopolicy"></a>
@@ -162,11 +162,11 @@ A continuación, configure la directiva para requerir que solo los dispositivos 
   3.    Pulse el botón **Habilitar acceso al explorador**.
   4.  En el explorador Chrome, cierre la sesión de Office 365 y reinicie Chrome.
 
-  En las plataformas **iOS y Android**, para identificar el dispositivo que se usa para acceder al servicio, Azure Active Directory emitirá un certificado de seguridad de la capa de transporte (TLS) para el dispositivo.  El dispositivo muestra el certificado en una petición para que el usuario final lo seleccione, como se muestra en las capturas de pantalla siguientes. El usuario final debe seleccionar este certificado para poder seguir usando el explorador.
+  En las plataformas **iOS y Android**, para identificar el dispositivo que se usa para acceder al servicio, Azure Active Directory emitirá un certificado de seguridad de la capa de transporte (TLS) para el dispositivo.  El dispositivo muestra el certificado en una petición para que el usuario final lo seleccione, como se muestra en las capturas de pantalla siguientes. El usuario final tiene que seleccionar este certificado para poder continuar usando el explorador.
 
   **iOS**
 
-  ![captura de pantalla de la petición de certificado en un iPad](../media/mdm-browser-ca-ios-cert-prompt.png)
+  ![captura de pantalla de la solicitud de certificado en un ipad](../media/mdm-browser-ca-ios-cert-prompt.png)
 
   **Android**
 
@@ -179,7 +179,7 @@ A continuación, configure la directiva para requerir que solo los dispositivos 
 
 No es necesario implementar la directiva de acceso condicional, ya que surte efecto inmediatamente.
 
-### Paso 4: Supervisar el cumplimiento y las directivas de acceso condicional
+### <a name="step-4-monitor-the-compliance-and-conditional-access-policies"></a>Paso 4: Supervisar el cumplimiento y las directivas de acceso condicional
 En el área de trabajo **Grupos**, puede ver el estado de los dispositivos.
 
 Seleccione cualquier grupo de dispositivos móviles y, a continuación, en la pestaña **Dispositivos** , seleccione uno de los siguientes **Filtros**:
@@ -190,11 +190,11 @@ Seleccione cualquier grupo de dispositivos móviles y, a continuación, en la pe
 
 -   **Dispositivos registrados en AAD y conformes** : estos dispositivos pueden tener acceso a SharePoint Online.
 
-### Consulte también
+### <a name="see-also"></a>Consulte también
 [Restringir el acceso al correo electrónico y a los servicios de O365 con Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO2-->
 
 

@@ -14,8 +14,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
-ms.openlocfilehash: 0b60e7a7a921762e682185af273bb94f24441a0c
+ms.sourcegitcommit: 3f28cce75626df1115283dc98547adcb97ee1cb4
+ms.openlocfilehash: d880123a9b4d4afd74e9941ce0590f5dae554667
 
 
 ---
@@ -27,14 +27,15 @@ Si usa [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-
 
 ## <a name="overview-of-device-enrollment-methods"></a>Información general de los métodos de inscripción de dispositivos
 
-En la siguiente tabla se muestran los métodos de inscripción de Intune con sus funciones admitidas. Estas funciones incluyen:
-- **Barrido**: restablecimiento de fábrica del dispositivo, quitando todos los datos. Para obtener más información, vea [Retirar dispositivos de la administración de Intune](retire-devices-from-microsoft-intune-management.md).
+En la tabla siguiente se muestran los métodos de inscripción de Intune, así como las funciones admitidas y los requisitos de cada método. A continuación se describen las funciones y los requisitos.
+
+- **Borrar**: indica si el dispositivo debe borrarse antes de que los usuarios lo inscriban. El término "borrado" significa el restablecimiento de fábrica del dispositivo, lo que elimina todos los datos. Para obtener más información, vea [Retirar dispositivos de la administración de Intune](retire-devices-from-microsoft-intune-management.md).
 - **Afinidad**: los dispositivos se asocian a los usuarios. Es necesaria para la administración de aplicaciones móviles (MAM) y el acceso condicional a los datos de la empresa. Para obtener más información, vea [Inscribir dispositivos iOS de empresa en Microsoft Intune](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#using-company-portal-on-dep-or-apple-configurator-enrolled-devices).
 - **Bloqueo**: evita que los usuarios quiten el dispositivo de la administración. Los dispositivos iOS necesitan el modo supervisado para el bloqueo. Para obtener más información, vea [Bloquear el acceso a un dispositivo](retire-devices-from-microsoft-intune-management.md#block-access-a-device).
 
 **Métodos de inscripción de iOS**
 
-| **Método** |  **Eliminación de datos** |  **Afinidad**    |   **Bloqueo** | **Detalles** |
+| **Método** |  **¿Se requiere borrado?** |    **Afinidad**    |   **Bloqueo** | **Detalles** |
 |:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | No|    Sí |   No | [Más información](prerequisites-for-enrollment.md#set-up-device-management).|
 |**[DEM](#dem)**|   No |No |No  | [Más información](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).|
@@ -44,14 +45,14 @@ En la siguiente tabla se muestran los métodos de inscripción de Intune con sus
 
 **Métodos de inscripción de Windows**
 
-| **Método** |  **Eliminación de datos** |  **Afinidad**    |   **Bloqueo** | **Detalles**|
+| **Método** |  **¿Se requiere borrado?** |    **Afinidad**    |   **Bloqueo** | **Detalles**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | Sí|   Sí |   No | [Más información](prerequisites-for-enrollment.md#set-up-device-management).|
 |**[DEM](#dem)**|   No |No |No  |[Más información](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).|
 
 **Métodos de inscripción de Android**
 
-| **Método** |  **Eliminación de datos** |  **Afinidad**    |   **Bloqueo** | **Detalles**|
+| **Método** |  **¿Se requiere borrado?** |    **Afinidad**    |   **Bloqueo** | **Detalles**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#byod)** | No|    Sí |   No | [Más información](prerequisites-for-enrollment.md#set-up-device-management).|
 |**[DEM](#dem)**|   No |No |No  |[Más información](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).|
@@ -61,7 +62,7 @@ Para ver una serie de preguntas que pueden ayudarle a decidir el método adecuad
 ## <a name="byod"></a>BYOD
 Los usuarios "Bring your own device" instalan la aplicación Portal de empresa e inscriben su dispositivo. Esto permite a los usuarios conectarse a la red de la empresa y unirse al dominio o a Azure Active Directory. Para la mayoría de las plataformas, tiene que habilitar la inscripción BYOD en muchos escenarios COD. Para obtener más información, vea [Requisitos previos para la administración de dispositivos móviles en Intune](prerequisites-for-enrollment.md). ([Volver a la tabla](#overview-of-device-enrollment-methods))
 
-## <a name="corporateowned-devices"></a>Dispositivos de propiedad corporativa
+## <a name="corporate-owned-devices"></a>Dispositivos de propiedad corporativa
 Los dispositivos corporativos (COD) se pueden administrar con la consola de Intune. Los dispositivos iOS se pueden inscribir directamente a través de las herramientas proporcionadas por Apple. Un administrador puede inscribir cualquier tipo de dispositivo mediante el administrador de inscripción de dispositivos. Los dispositivos con un número IMEI también se pueden identificar y etiquetar como de propiedad corporativa para, así, posibilitar escenarios de dispositivos propiedad de la empresa.
 
 Para obtener más información, vea [Inscribir dispositivos corporativos con Microsoft Intune](manage-corporate-owned-devices.md).
@@ -78,7 +79,7 @@ La administración del Programa de inscripción de dispositivos (DEP) de Apple p
 
 Obtenga más información sobre [DEP](ios-device-enrollment-program-in-microsoft-intune.md). ([Volver a la tabla](#overview-of-device-enrollment-methods))
 
-### <a name="usbsa"></a>USB-SA
+### <a name="usb-sa"></a>USB-SA
 Los dispositivos propiedad de la empresa conectados por USB se preparan con la directiva de Intune. Para la inscripción del Asistente de configuración, el administrador crea esta directiva de Intune y la exporta a Apple Configurator. El administrador debe inscribir manualmente cada dispositivo. Los usuarios reciben sus dispositivos y ejecutan el Asistente para la configuración, con lo que inscriben el dispositivo. Este método admite el modo **iOS supervisado**, que a su vez permite lo siguiente:
   - Acceso condicional
   - Detección de jailbreak
@@ -86,7 +87,7 @@ Los dispositivos propiedad de la empresa conectados por USB se preparan con la d
 
 Obtenga más información sobre la [inscripción con el Asistente para la configuración con Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md). ([Volver a la tabla](#overview-of-device-enrollment-methods))
 
-### <a name="usbdirect"></a>USB-Direct
+### <a name="usb-direct"></a>USB-Direct
 Para la inscripción directa, el administrador crea una directiva de Intune y la exporta a Apple Configurator. Los dispositivos corporativos conectados por USB se inscriben directamente, sin necesidad de un restablecimiento de fábrica. El administrador debe inscribir manualmente cada dispositivo. Los dispositivos se administran como dispositivos sin usuario. No se bloquean ni se supervisan y no son compatibles con el acceso condicional, la detección de jailbreak ni la administración de aplicaciones móviles. Obtenga más información sobre la [inscripción directa con Apple Configurator](ios-direct-enrollment-in-microsoft-intune.md). ([Volver a la tabla](#overview-of-device-enrollment-methods))
 
 ## <a name="mobile-device-management-with-exchange-activesync-and-intune"></a>Administración de dispositivos móviles con Exchange ActiveSync e Intune
@@ -119,6 +120,6 @@ Intune puede administrar las siguientes plataformas de dispositivo:
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO3-->
 
 
