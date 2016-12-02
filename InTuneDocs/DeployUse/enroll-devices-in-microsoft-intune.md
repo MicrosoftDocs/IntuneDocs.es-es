@@ -14,8 +14,8 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3f28cce75626df1115283dc98547adcb97ee1cb4
-ms.openlocfilehash: d880123a9b4d4afd74e9941ce0590f5dae554667
+ms.sourcegitcommit: 686321a1c19acb9a3a7e262822b11304d07adb40
+ms.openlocfilehash: 77789c04d13e12d7d0ecc5fb8959bc3396bd625f
 
 
 ---
@@ -30,7 +30,7 @@ Si usa [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-
 En la tabla siguiente se muestran los métodos de inscripción de Intune, así como las funciones admitidas y los requisitos de cada método. A continuación se describen las funciones y los requisitos.
 
 - **Borrar**: indica si el dispositivo debe borrarse antes de que los usuarios lo inscriban. El término "borrado" significa el restablecimiento de fábrica del dispositivo, lo que elimina todos los datos. Para obtener más información, vea [Retirar dispositivos de la administración de Intune](retire-devices-from-microsoft-intune-management.md).
-- **Afinidad**: los dispositivos se asocian a los usuarios. Es necesaria para la administración de aplicaciones móviles (MAM) y el acceso condicional a los datos de la empresa. Para obtener más información, vea [Inscribir dispositivos iOS de empresa en Microsoft Intune](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#using-company-portal-on-dep-or-apple-configurator-enrolled-devices).
+- **Afinidad**: los dispositivos se asocian a los usuarios. Es necesaria para la administración de aplicaciones móviles (MAM) y el acceso condicional a los datos de la empresa. Para obtener más información, vea [Inscribir dispositivos iOS de empresa en Microsoft Intune](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices).
 - **Bloqueo**: evita que los usuarios quiten el dispositivo de la administración. Los dispositivos iOS necesitan el modo supervisado para el bloqueo. Para obtener más información, vea [Bloquear el acceso a un dispositivo](retire-devices-from-microsoft-intune-management.md#block-access-a-device).
 
 **Métodos de inscripción de iOS**
@@ -120,6 +120,6 @@ Intune puede administrar las siguientes plataformas de dispositivo:
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO5-->
 
 

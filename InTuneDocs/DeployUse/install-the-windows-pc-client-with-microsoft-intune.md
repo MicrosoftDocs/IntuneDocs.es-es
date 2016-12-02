@@ -3,8 +3,7 @@
 title: Instalar el software cliente de PC | Microsoft Intune
 description: "Siga esta guía para administrar sus equipos Windows con el software cliente de Microsoft Intune."
 keywords: 
-author: NathBarn
-manager: arob98
+author: staciebarker
 ms.date: 07/19/2016
 ms.topic: article
 ms.prod: 
@@ -14,8 +13,8 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 738b6bedcefbfd8bf0fa7bde5b86c79293af527e
-ms.openlocfilehash: 7d239a80ed68d39b2a7179a45178ba6ae11c5423
+ms.sourcegitcommit: 103e7065d1e2c3281f8f04808ee2546d3c7e2b53
+ms.openlocfilehash: 32af8a615453b8c72e704f40dcdf0de6fbf10907
 
 
 ---
@@ -104,7 +103,7 @@ Cuando se ejecuta la tarea de inscripción automática a la siguiente hora progr
 
 La tarea de inscripción automática de Intune, el valor **WindowsIntuneEnrollPending** del Registro y el certificado de cuenta se eliminarán del equipo de destino cuando se haya inscrito correctamente o al cabo de un mes, lo que suceda primero.
 
-## <a name="instruct-users-to-selfenroll"></a>Indicar a los usuarios que efectúen una inscripción automática
+## <a name="instruct-users-to-self-enroll"></a>Indicar a los usuarios que efectúen una inscripción automática
 
 Los usuarios pueden instalar el software cliente de Intune desde el [sitio web del portal de empresa](http://portal.manage.microsoft.com). Si el portal web puede detectar que el dispositivo es un equipo con Windows, se solicitará a los usuarios que lo inscriban descargando el software cliente de Intune. Una vez descargado el software, los usuarios pueden instalarlo para incorporar sus equipos a la administración.
 
@@ -139,6 +138,6 @@ Use uno de los procedimientos siguientes como ayuda para supervisar y validar un
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Nov16_HO5-->
 
 
