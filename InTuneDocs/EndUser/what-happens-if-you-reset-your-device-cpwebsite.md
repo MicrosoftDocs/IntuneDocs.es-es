@@ -2,7 +2,7 @@
 title: "¿Qué ocurre al restablecer el dispositivo? | Microsoft Intune"
 description: 
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 10/25/2016
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0edd154f30235f1915ecabb8c4fdc067e1f553da
-ms.openlocfilehash: 4d5aa47205ec95270ed216eeff3e7839eef00321
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: d068790b167aff2bd70bf633994fac0ce1938fac
 
 
 ---
 
 
-# ¿Qué ocurre al restablecer el dispositivo?
+# <a name="what-happens-if-you-reset-your-device"></a>¿Qué ocurre al restablecer el dispositivo?
 
 Para saber lo que ocurre al restablecer el dispositivo, elija el vínculo siguiente que corresponda al tipo de dispositivo que use:
 
@@ -32,6 +32,6 @@ Para saber lo que ocurre al restablecer el dispositivo, elija el vínculo siguie
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

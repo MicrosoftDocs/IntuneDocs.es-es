@@ -2,8 +2,8 @@
 title: Restablecer un dispositivo desde el sitio web del Portal de empresa | Microsoft Intune
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
 ms.topic: article
@@ -15,16 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 05f54088f3b18d90368e1b408b7012d28021abfc
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: c5791e70c35446fb11971321b6b7a4178ebdfdb5
 
 
 ---
 
 
-# Restablecer un dispositivo desde el sitio web del Portal de empresa
+# <a name="reset-your-device-from-the-company-portal-website"></a>Restablecer un dispositivo desde el sitio web del Portal de empresa
 
-Si pierde o le roban un dispositivo, es posible que quiera restablecerlo a los valores predeterminados de fábrica para evitar el acceso no autorizado a los datos. Puede restablecer el dispositivo de forma remota mediante el [sitio web del Portal de empresa](http://portal.manage.microsoft.com). El sitio web del Portal de empresa es una página web que puede usar para administrar equipos y dispositivos que haya inscrito en Intune y para realizar la mayoría de las tareas que se pueden realizar con la aplicación Portal de empresa.
+Si pierde o le roban un dispositivo, es posible que quiera restablecerlo a los valores predeterminados de fábrica para evitar el acceso no autorizado a los datos. Puede restablecer el dispositivo de forma remota mediante el [sitio web del Portal de empresa](http://portal.manage.microsoft.com). El sitio web del portal de empresa es una página web que puede usar para administrar equipos y dispositivos que haya inscrito en Intune. Puede utilizar este sitio web para realizar la mayoría de las mismas tareas que se pueden realizar con la aplicación de Portal de empresa.
 
 Si restablece el dispositivo, dejará de aparecer en el Portal de empresa y se restablecerá a los valores predeterminados de fábrica.
 
@@ -46,6 +46,6 @@ Se ha restablecido el dispositivo.
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
