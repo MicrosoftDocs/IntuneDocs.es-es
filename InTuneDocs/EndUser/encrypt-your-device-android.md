@@ -2,10 +2,10 @@
 title: Cifrado del dispositivo | Microsoft Intune
 description: "Describe cómo cifrar un dispositivo Android"
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 11/7/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ff5e76e5d768b9feccb42c91c72aa71b3f724002
-ms.openlocfilehash: 4d12314ffc6126cd740012c301c39b7fb72a5bb4
+ms.sourcegitcommit: 81c0c29e1b874a7f5c7faa1c1216dbaa99ec4543
+ms.openlocfilehash: b8214506ae4609cb5316c66b854fbd572fbac94f
 
 
 ---
 
 
-# Cifrado del dispositivo
+# <a name="encrypt-your-device"></a>Cifrado del dispositivo
 
 Haga lo siguiente si su empresa u organización solicita que se cifre el dispositivo Android para poder tener acceso a los archivos, al correo electrónico o a los datos de la empresa. Si el administrador de TI así lo requiere, puede que tenga que establecer un PIN o una contraseña antes del cifrado.
 
@@ -34,7 +34,7 @@ Si anula la inscripción del dispositivo, este permanecerá cifrado.
 
 3.  Siga las instrucciones de la pantalla. Durante el cifrado, el dispositivo podría reiniciarse varias veces.
 
-### Qué hacer si tiene problemas
+### <a name="what-to-do-if-you-have-issues"></a>Qué hacer si tiene problemas
 **Problema:** con el dispositivo ya cifrado, ocurre una de las siguientes cosas:
 
 - El botón de cifrado está deshabilitado.
@@ -57,10 +57,10 @@ Si anula la inscripción del dispositivo, este permanecerá cifrado.
 
     5. Abra la aplicación de Portal de empresa, seleccione el dispositivo y pulse **Comprobar cumplimiento**.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI (consulte el [sitio web del Portal de empresa](http://portal.manage.microsoft.com) para obtener información de contacto) o escriba al equipo de Microsoft Android en wintunedroidfbk@microsoft.com.
+¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI (visite el [sitio web del Portal de empresa](http://portal.manage.microsoft.com) para obtener la información de contacto), o escriba al [equipo de Microsoft Android](mailto:wintunedroidfbk@microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO2-->
 
 
