@@ -2,10 +2,10 @@
 title: "¿Qué ocurre si restablece el dispositivo iOS mediante el Portal de empresa? | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 71e1e0b31f917d62f4591501709261d87fcd9f30
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 1ec1c17d7ae18c227427fdd708b9fe76a0f552be
 
 
 ---
 
 
-# ¿Qué ocurre si restablece el dispositivo iOS mediante el Portal de empresa?
+# <a name="what-happens-if-you-reset-your-ios-device-using-the-company-portal"></a>¿Qué ocurre si restablece el dispositivo iOS mediante el Portal de empresa?
 
 Si usa el Portal de empresa para restablecer un iPhone o un iPad, es posible que se eliminen algunas aplicaciones y configuraciones del dispositivo, incluidos algunos de sus datos personales. Lo que sucede en cada dispositivo depende de cómo se use, tal y como se describe en las listas siguientes.
 
@@ -44,6 +44,6 @@ Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para 
 
 
 
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 
