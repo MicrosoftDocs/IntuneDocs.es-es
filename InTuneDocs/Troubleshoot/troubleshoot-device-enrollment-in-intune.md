@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 11/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d51f34dea3463bec83ea39cdfb79c7bedf9e3926
-ms.openlocfilehash: bdc462023f36d60c19dea9d67c7fb4be6d2a3043
+ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
+ms.openlocfilehash: f279e79432f70214245854db42641535eaf65824
 
 
 ---
@@ -29,7 +29,7 @@ En este tema se proporcionan sugerencias para solucionar problemas de inscripci�
 
 Antes de empezar a solucionar problemas, compruebe que ha configurado Intune correctamente para habilitar la inscripción. Puede leer sobre estos requisitos de configuración en:
 
--   [Preparar la inscripción de dispositivos en Microsoft Intune](/intune/deploy-use/gprerequisites-for-enrollment.md)
+-   [Preparar la inscripción de dispositivos en Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment.md)
 -   [Configurar la administración de dispositivos iOS y Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -   [Configurar la administración de Windows Phone y Windows 10 Mobile con Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 -   [Configurar la administración de dispositivos Windows](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
@@ -50,13 +50,13 @@ Los siguientes problemas pueden producirse en cualquiera de las plataformas de d
 ### <a name="device-cap-reached"></a>Se alcanzó el límite de dispositivos
 **Problema:** un usuario recibió un error en su dispositivo de iOS durante la inscripción (como por ejemplo, **El Portal de empresa no está disponible temporalmente**) y el registro DMPdownloader.log que se encuentra en Configuration Manager contiene el error **DeviceCapReached**.
 
-**Solución:** de forma predeterminada, los usuarios no pueden inscribir más de 5 dispositivos.
+**Solución:**
 
 #### <a name="check-number-of-devices-enrolled-and-allowed"></a>Compruebe el número de dispositivos inscritos y permitidos
 
-1.  Asegúrese de que el usuario no tiene más de 5 dispositivos asignados en el Portal de administración de Intune
+1.  En el Portal de administración de Intune, valide que el usuario no tenga más de 15 dispositivos asignados, que es el número máximo permitido.
 
-2.  Compruebe en el Portal de administración de Intune, en Administrador\Dispositivo móvil\Reglas de inscripción, que el límite de inscripción de dispositivos está establecido en 5
+2.  En la consola de administración de Intune, en Administrador\Administración de dispositivos móviles\Reglas de inscripción, compruebe que el límite de inscripción de dispositivos esté establecido en 15.
 
 Los usuarios de dispositivos móviles pueden eliminar dispositivos en la siguiente URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/).
 
@@ -89,7 +89,7 @@ Los administradores pueden eliminar dispositivos en el portal de Azure Active Di
 ### <a name="company-portal-temporarily-unavailable"></a>El Portal de empresa no está disponible temporalmente
 **Problema:** un usuario recibió en su dispositivo el error **El Portal de empresa no está disponible temporalmente**.
 
-#### <a name="troubleshooting-company-portal-temporarily-unavailable-error"></a>Solucionar el error “El Portal de empresa no está disponible temporalmente”
+**Solución:**
 
 1.  Quite la aplicación Portal de empresa de Intune del dispositivo.
 
@@ -104,7 +104,7 @@ Los administradores pueden eliminar dispositivos en el portal de Azure Active Di
 ### <a name="mdm-authority-not-defined"></a>Entidad de MDM no definida
 **Problema:** un usuario recibió el error **Entidad de MDM no definida**.
 
-#### <a name="troubleshooting-mdm-authority-not-defined-error"></a>Solucionar el error “Entidad de MDM no definida”
+**Solución:**
 
 1.  Compruebe que la entidad de MDM se ha establecido correctamente para la versión del servicio Intune que usa; esto es, para Intune, MDM de Office 365 y System Center Configuration Manager con Intune. Para Intune, la entidad de MDM se establece en **Administración** &gt; **Administración de dispositivos móviles**. Para Configuration Manager con Intune, deberá establecerla al configurar Intune Connector. En O365 es una opción denominada **Dispositivos móviles**.
 
@@ -152,16 +152,65 @@ Los administradores pueden eliminar dispositivos en el portal de Azure Active Di
 
 
 ## <a name="android-issues"></a>Problemas de Android
+### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>Los dispositivos no se pueden registrar con el servicio Intune y se muestran con un estado "Incorrecto" en la consola de administración de Intune.
+**Problema:** algunos dispositivos Samsung que ejecutan las versiones de Android 4.4.x y 5.x podrían dejar de registrarse con el servicio de Intune. Si los servicios no se registran:
+
+- No pueden recibir directivas, aplicaciones y comandos remotos del servicio de Intune.
+- Muestran un estado de administración de **Incorrecto** en la consola del administrador.
+- Los usuarios que están protegidos por directivas de acceso condicional pueden perder el acceso a los recursos corporativos.
+
+Samsung ha confirmado que el software Smart Manager de Samsung, que se distribuye en determinados dispositivos de Samsung, puede desactivar el Portal de empresa de Intune y sus componentes. Cuando el Portal de empresa está en estado desactivado, no se puede ejecutar en segundo plano y, por tanto, no puede establecer comunicación con el servicio de Intune.
+
+**Solución 1:**
+
+Indique a los usuarios que inicien la aplicación del Portal de empresa manualmente. Una vez que la aplicación se reinicia, el dispositivo se registra con el servicio de Intune.
+
+> [!IMPORTANT]
+> La solución de abrir la aplicación del Portal de empresa manualmente es temporal, ya que Smart Manager de Samsung puede volver a desactivarla.
+
+**Solución 2:**
+
+Indique a los usuarios que intenten actualizar a Android 6.0. El problema de desactivación no se produce en dispositivos Android 6.0. Para comprobar si hay una actualización disponible, los usuarios pueden ir a **Settings** (Configuración)  > **About device** >  (Acerca del dispositivo) **Download updates manually** (Descargar actualizaciones manualmente) y seguir las indicaciones que aparecen en el dispositivo.
+
+**Solución 3:**
+
+Si no funciona la solución 2, pida a los usuarios que sigan estos pasos para que Smart Manager excluya la aplicación del Portal de empresa:
+
+1. Inicie la aplicación Smart Manager en el dispositivo.
+
+  ![Selección del icono de Smart Manager en el dispositivo](./media/smart-manager-app-icon.png)
+
+2. Elija el icono **Battery** (Batería).
+
+  ![Selección del icono de batería](./media/smart-manager-battery-tile.png)
+
+3. En **App power saving** (Ahorro de energía de aplicaciones) o **App optimization** (Optimización de aplicaciones), seleccione **Detail** (Detalle).
+
+  ![Selección de Detalles en la opción de ahorro de energía u optimización de aplicaciones](./media/smart-manager-app-power-saving-detail.png)
+
+4. Elija **Company Portal** (Portal de empresa) en la lista de aplicaciones.
+
+  ![Selección del Portal de empresa en la lista de aplicaciones](./media/smart-manager-company-portal.png)
+
+5. Elija **Turned off** (Desactivado).
+
+  ![Selección de Desactivado en el cuadro de diálogo de optimización de aplicaciones](./media/smart-manager-app-optimization-turned-off.png)
+
+6. En **App power saving** (Ahorro de energía de aplicaciones) o **App optimization** (Optimización de aplicaciones), confirme que el Portal de empresa está desactivado.
+
+  ![Comprobación de que el Portal de empresa está desactivado](./media/smart-manager-verify-comp-portal-turned-off.png)
+
+
 ### <a name="profile-installation-failed"></a>Error de instalación de perfil
 **Problema:** un usuario recibió un **error en la instalación del perfil** en un dispositivo Android.
 
-### <a name="troubleshooting-steps-for-failed-profile-installation"></a>Pasos para solucionar problemas con la instalación del perfil
+**Solución:**
 
 1.  Confirme que el usuario tiene asignada una licencia adecuada para la versión del servicio Intune que usa.
 
 2.  Confirme que el dispositivo no esté inscrito en otro proveedor MDM o que no tenga ya instalado un perfil de administración.
 
-4.  Confirme que Chrome para Android es el explorador predeterminado y que las cookies están habilitadas.
+3.  Confirme que Chrome para Android es el explorador predeterminado y que las cookies están habilitadas.
 
 ### <a name="android-certificate-issues"></a>Problemas de certificados Android
 
@@ -255,7 +304,7 @@ Encontrará una lista de errores de inscripción de iOS en la documentación de 
 
 ## <a name="pc-issues"></a>Problemas del equipo
 
-### <a name="the-machine-is-already-enrolled-error-hr-0x8007064c"></a>El equipo ya está inscrito. Error hr 0x8007064c
+### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>El equipo ya está inscrito. Error hr 0x8007064c
 **Problema:** la inscripción produce un error con el mensaje **The machine is already enrolled** (El equipo ya está inscrito). El registro de inscripción muestra el error **hr 0x8007064c**.
 
 Esto puede deberse a que el equipo se inscribió anteriormente o a que tiene la imagen clonada de un equipo ya inscrito. El certificado de cuenta de la cuenta anterior sigue estando presente en el equipo.
@@ -307,6 +356,6 @@ Si esta información para solucionar problemas no le ha ayudado, póngase en con
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO4-->
 
 

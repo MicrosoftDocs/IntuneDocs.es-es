@@ -2,10 +2,10 @@
 title: "¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo Windows en Intune? | Microsoft Intune"
 description: 
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fd54ec104a26ebae845dfe3942dac2e8d9dae4a9
-ms.openlocfilehash: 678ef01b215442e3d767a38388a579c6ee329975
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 2d56c2f23fd70ab0ca593d1ad5d60889e5855a7a
 
 
 ---
 
 
-# ¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo Windows en Intune?
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo Windows en Intune?
 
 Al instalar la aplicación Portal de empresa y después usarla para inscribir un dispositivo Windows o Windows Phone, lo que hace es permitir que el administrador de TI administre el dispositivo para ayudar a mantener los datos profesionales o académicos seguros. En este tema se explica lo que ocurre con los dispositivos anteriores a Windows 10. Para dispositivos Windows 10, vea el [tema relacionado](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
 
-## ¿Qué ocurre con todos los dispositivos Windows después de la inscripción?
+## <a name="what-happens-to-all-windows-devices-after-enrollment"></a>¿Qué ocurre con todos los dispositivos Windows después de la inscripción?
 Cuando inscribe un dispositivo Windows o Windows Phone en Intune, puede:
 
 -   Acceder a la red, el correo electrónico y los archivos de trabajo de la empresa.
@@ -53,7 +53,7 @@ Al inscribir el dispositivo, da permiso al administrador de TI para hacer cosas 
 
 -   Impedirle realizar fotos de datos relacionados con la empresa.
 
-## ¿Qué ocurre con todos los equipos de Windows después de la inscripción?
+## <a name="what-happens-to-all-windows-pcs-after-enrollment"></a>¿Qué ocurre con todos los equipos de Windows después de la inscripción?
 
 -  El software se instalará en el equipo para permitir que el administrador de TI lo administre y para permitirle a usted acceder a recursos de la empresa como aplicaciones e información de soporte técnico. El administrador de TI puede actualizar automáticamente este software.
 
@@ -63,7 +63,7 @@ Al inscribir el dispositivo, da permiso al administrador de TI para hacer cosas 
 
 -  El administrador de TI puede instalar aplicaciones y actualizaciones en el equipo.
 
-## ¿Qué ocurre cada ocho horas después de la inscripción de dispositivo?
+## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>¿Qué ocurre cada ocho horas después de la inscripción de dispositivo?
 Cada ocho horas aproximadamente, los dispositivos inscritos harán lo siguiente:
 
 -   Descargar las actualizaciones de directivas o aplicaciones proporcionadas por el administrador de TI.
@@ -76,6 +76,6 @@ Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para 
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

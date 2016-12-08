@@ -2,10 +2,10 @@
 title: Inscribir un dispositivo iOS en Intune | Microsoft Intune
 description: "Describe cómo inscribir un dispositivo iOS en Intune."
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,20 +15,20 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
-ms.openlocfilehash: 577d14f29880d16046bbb703773d6362c2458c1b
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: 7d11e716750c4920234de5419e262d6c2c6e2d44
 
 
 ---
 
 
-# Inscriba el dispositivo iOS en Intune
+# <a name="enroll-your-ios-device-in-intune"></a>Inscriba el dispositivo iOS en Intune
 
 Si su empresa o centro educativo usa Microsoft Intune, puede inscribir un dispositivo iOS para obtener acceso al correo electrónico, a los archivos y a otros recursos de la empresa. Cuando los dispositivos se inscriben, el departamento de TI puede administrar esos recursos profesionales o educativos y mantenerlos protegidos, al tiempo que los usuarios pueden usar el dispositivo que elijan libremente para realizar su trabajo. Para más información sobre la inscripción, vea [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) (¿Qué ocurre cuando se instala la aplicación de portal de empresa y se inscribe el dispositivo en Intune?).
 
 Si lo que quiere es inscribir un dispositivo Mac OS X, vea [Enroll your Mac OS X device in Intune](enroll-your-device-in-intune-mac-os-x.md) (Inscribir el dispositivo Mac OS X en Intune).
 
-**Antes de empezar:**
+**Antes de empezar**
 
 - Asegúrese de que termina la inscripción después de iniciar los pasos. Si se inicia pero no se finaliza, la inscripción no puede funcionar vuelve a intentarlo en otro momento.
 - Asegúrese de que funciona la red Wi-Fi. De lo contrario, se producirá un error en la inscripción.
@@ -96,6 +96,6 @@ El dispositivo ya está inscrito en Intune. Se le dirigirá de nuevo a la aplica
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

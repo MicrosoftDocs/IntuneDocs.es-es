@@ -2,7 +2,7 @@
 title: Inscribir el dispositivo Windows Phone 8.1 en Intune | Microsoft Intune
 description: "Describe cómo inscribir un dispositivo Windows 8.1 en Intune."
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 09/19/2016
@@ -14,14 +14,14 @@ ms.assetid: 4a120c3d-d520-4d48-ae4c-3338ca4e7bde
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
-ms.openlocfilehash: 843011aca535d8416b931f43bb622bc5c01ed546
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: b4569ec01a0b8c6a8ec06cb9036d7753e34b38d2
 
 
 ---
 
 
-# Inscribir el dispositivo Windows Phone 8.1 en Intune
+# <a name="enroll-your-windows-phone-81-device-in-intune"></a>Inscribir el dispositivo Windows Phone 8.1 en Intune
 
 Si su empresa o centro educativo usa Microsoft Intune, puede inscribir los dispositivos para obtener acceso al correo electrónico, a los archivos y a otros recursos de la empresa. Cuando se inscriben los dispositivos, la organización puede tener protegidos los datos corporativos. Para más información sobre la inscripción, vea [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) (¿Qué ocurre cuando se instala la aplicación de portal de empresa y se inscribe el dispositivo en Intune?) y [What your IT administrator can and can't see on your device](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) (¿Qué puede ver y no ver el administrador de TI en el dispositivo?).
 
@@ -32,7 +32,7 @@ Para inscribir el dispositivo Phone 8.1 en Intune, siga las instrucciones que se
 
 -   [Si no está autorizado para tener acceso a la Tienda Windows desde su Windows Phone o no tiene una cuenta Microsoft](#if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account)
 
-## Si su empresa le permite usar el Portal de empresa desde la Tienda Windows
+## <a name="if-your-company-lets-you-use-the-company-portal-from-the-windows-store"></a>Si su empresa le permite usar el Portal de empresa desde la Tienda Windows
 Instale la aplicación del Portal de empresa en su dispositivo:
 
 1.  Pulse en **Inicio** &gt; **Tienda**.
@@ -71,7 +71,7 @@ Inscriba su dispositivo:
 
     ![Pantalla de cuenta agregada](./media/WP81-enroll-4-account-added.png)
 
-## Si no está autorizado para tener acceso a la Tienda Windows desde su Windows Phone o no tiene una cuenta Microsoft
+## <a name="if-you-are-not-allowed-to-access-the-windows-store-from-your-windows-phone-or-if-you-do-not-have-a-microsoft-account"></a>Si no está autorizado para tener acceso a la Tienda Windows desde su Windows Phone o no tiene una cuenta Microsoft
 
 1.  Pulse en **Configuración** &gt; **Área de trabajo**.
 
@@ -87,6 +87,6 @@ Si su administrador de TI configuró el Portal de empresa para que se instale du
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

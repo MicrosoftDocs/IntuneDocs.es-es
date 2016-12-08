@@ -2,10 +2,10 @@
 title: Using your iOS or Mac OS X device with Intune (Usar un dispositivo iOS o Mac OS X con Intune) | Microsoft Intune
 description: "Lista de vínculos a tareas que puede realizar en el dispositivo móvil iOS o Mac OS X cuando este está inscrito en Intune"
 keywords: 
-author: Staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/24/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,31 +15,31 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2a3ad9562d271ee67b49db28b0fc62caec9f3050
-ms.openlocfilehash: e894ad75fd6e86d5d93393886b37e2af87b5eefc
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: bc031fe080cd17b3436388f59ecc83df53a16a32
 
 
 ---
 
-# Using your iOS or Mac OS X device with Intune
+# <a name="using-your-ios-or-mac-os-x-device-with-intune"></a>Using your iOS or Mac OS X device with Intune
 
 Este artículo contiene vínculos a todas las tareas que los usuarios finales pueden llevar a cabo en sus dispositivos administrados con Intune. Los administradores de TI pueden consultar esta información para ver los pasos que deben seguir los usuarios para llevar a cabo distintas tareas, que se agrupan en las siguientes categorías:
 - Instalación de aplicaciones del Portal de empresa e inscripción a Intune
 - Tareas de administración posteriores a la inscripción
 - Problemas de cumplimiento
 
-## Instalación de aplicaciones del Portal de empresa e inscripción a Intune
+## <a name="company-portal-app-installation-and-intune-enrollment"></a>Instalación de aplicaciones del Portal de empresa e inscripción a Intune
 
 La información de esta sección le ayuda con la instalación del Portal de empresa de Intune y con la inscripción de dispositivos iOS.
 
 - [Instale e inicie sesión en la aplicación Portal de empresa de Intune](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
-- [Inscriba el dispositivo iOS en Intune](enroll-your-device-in-intune-ios.md)
+- [Inscribir el dispositivo iOS en Intune](enroll-your-device-in-intune-ios.md)
 - [Inscribir el dispositivo Mac OS X en Intune](enroll-your-device-in-intune-mac-os-x.md)
 - [¿Qué ocurre si instala la aplicación Portal de empresa e inscribe el dispositivo en Intune?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)
 
-## Cosas que puede hacer cuando el dispositivo está inscrito en Intune
+## <a name="things-users-can-do-when-their-device-is-enrolled-in-intune"></a>Lo que pueden hacer los usuarios cuando su dispositivo está inscrito en Intune
 
-La información de esta sección le ayuda con las acciones que puede llevar a cabo después de inscribir el dispositivo iOS en Intune.
+La información de esta sección ayuda a los usuarios con las acciones que pueden llevar a cabo después de inscribir el dispositivo iOS en Intune.
 
 - [Usar aplicaciones administradas en el dispositivo](use-managed-apps-on-your-device-ios.md)
 - [Establecer o cambiar el código de acceso](set-or-change-your-passcode-ios.md)
@@ -50,9 +50,9 @@ La información de esta sección le ayuda con las acciones que puede llevar a ca
 - [¿Qué ocurre si restablece el dispositivo con el Portal de empresa?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
 - [Sincronizar el dispositivo manualmente](sync-your-device-manually-ios.md)
 
-## Solucionar problemas con el dispositivo
+## <a name="steps-to-fix-device-and-compliance-issues"></a>Pasos para solucionar problemas de dispositivos y cumplimiento
 
-La información de esta sección le ayuda a solucionar los problemas que pueda encontrar cuando el dispositivo iOS está inscrito en Intune.
+La información de esta sección ayuda a los usuarios a solucionar problemas que podrían encontrarse al inscribir su dispositivo iOS en Intune.
 
 - [Cómo volver a conectar un dispositivo iOS en riesgo](how-to-reconnect-a-compromised-ios-device.md)
 - [Enviar errores al administrador de TI](send-errors-to-your-it-admin-ios.md)
@@ -67,6 +67,6 @@ La información de esta sección le ayuda a solucionar los problemas que pueda e
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 
