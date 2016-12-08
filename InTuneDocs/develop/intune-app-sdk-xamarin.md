@@ -14,31 +14,40 @@ ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
 ms.reviewer: karthikaraman
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ca4623db80d711f3543b6d688fb1bb1ef228c62c
-ms.openlocfilehash: e2d43fff8772046fe7426b267e39d53b278d4e5c
+ms.sourcegitcommit: af7df3fcf50c3508d495522341bb287c638f40a3
+ms.openlocfilehash: 2ea1763881a7d10ae8bc21c98754d2767b2fc954
 
 
 ---
 
 # <a name="microsoft-intune-app-sdk-xamarin-component"></a>Componente Xamarin del SDK para aplicaciones de Microsoft Intune
 
+> [!NOTE]
+> Puede que quiera leer primero el artículo [Introducción a Intune App SDK](intune-app-sdk-get-started.md), en el que se explica cómo preparar la integración en cada plataforma compatible.
+
+
+
 ## <a name="overview"></a>Información general
-El [componente Xamarin del SDK para aplicaciones de Intune](https://components.xamarin.com/view/microsoft.intune.mam) habilita las [características de administración de aplicaciones móviles de Intune](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) en las aplicaciones para iOS y Android creadas con Xamarin. El componente permite a los desarrolladores integrar fácilmente características de restricción de aplicaciones y protección de datos en su aplicación basada en Xamarin.
+El [componente Xamarin del SDK para aplicaciones de Intune](https://components.xamarin.com/view/microsoft.intune.mam) habilita las [características de administración de aplicaciones móviles de Intune](/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) en las aplicaciones para iOS y Android creadas con Xamarin. El componente permite a los desarrolladores integrar fácilmente funciones de protección de la aplicación de Intune en su aplicación basada en Xamarin.
 
-Descubrirá que puede habilitar características del SDK sin necesidad de cambiar el comportamiento de la aplicación. Una vez que haya integrado el componente en la aplicación móvil iOS o Android, los administradores de TI podrán implementar directivas a través de Microsoft Intune compatibles con diversas características que permiten la protección de datos.
+Descubrirá que puede habilitar características del SDK sin necesidad de cambiar el comportamiento de la aplicación. Una vez que haya integrado el componente en la aplicación móvil iOS o Android, los administradores de TI podrán implementar directivas a través de Microsoft Intune Mobile Application Management (MAM) compatibles con diversas funciones de protección de datos.
 
-## <a name="supported-scenarios"></a>Escenarios admitidos
+## <a name="whats-supported"></a>¿Qué se admite?
 
-### <a name="platforms"></a>Plataformas
+### <a name="developer-machines"></a>Equipos de desarrollador
+* Windows
+
+
+### <a name="mobile-app-platforms"></a>Plataformas de aplicaciones móviles
 * Android
 * iOS
 
 
-### <a name="emm-scenarios"></a>Escenarios de EMM
+### <a name="intune-mobile-application-management-scenarios"></a>Escenarios de administración de aplicaciones móviles de Intune
 
-* MAM de Intune en dispositivos inscritos con MDM de Intune
-* MAM de Intune en dispositivos inscritos con EMM de terceros
-* MAM de Intune en dispositivos no administrados y no inscritos
+* Dispositivos inscritos con MDM de Intune
+* Dispositivos inscritos con EMM de terceros
+* Dispositivos no administrados (es decir, no inscritos con cualquier MDM)
 
 Ahora, las aplicaciones Xamarin compiladas con el componente de Xamarin del SDK para aplicaciones de Intune pueden recibir directivas de administración de aplicaciones móviles (MAM) de Intune en dispositivos inscritos con la administración de dispositivos móviles (MDM) de Intune y en dispositivos no inscritos.
 
@@ -116,6 +125,6 @@ Ha completado los pasos básicos para integrar el componente en la aplicación. 
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Nov16_HO4-->
 
 
