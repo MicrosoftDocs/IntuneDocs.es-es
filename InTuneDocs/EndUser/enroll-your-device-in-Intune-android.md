@@ -2,7 +2,7 @@
 title: Inscribir un dispositivo Android en Intune | Microsoft Intune
 description: "Describe cómo inscribir un dispositivo Android en Intune."
 keywords: 
-author: barlan
+author: barlanmsft
 ms.author: barlan
 manager: angrobe
 ms.date: 09/09/2016
@@ -14,18 +14,18 @@ ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7eefcefa5e1cd0f789c77bf020c256e449099273
-ms.openlocfilehash: 5d7507d9c09867b5c302caba409f1a7347fae4b6
+ms.sourcegitcommit: 6dc3173207d1e99e1bd0207f8ea5a5b137b36be1
+ms.openlocfilehash: b87799b0ee8dcf98b82bd8353ca7684ede0d8bc2
 
 
 ---
 
 
-# Inscriba el dispositivo Android en Intune
+# <a name="enroll-your-android-device-in-intune"></a>Inscriba el dispositivo Android en Intune
 
 Si su empresa o centro educativo usa Microsoft Intune, puede inscribir un dispositivo Android para obtener acceso al correo electrónico, a los archivos y a otros recursos de la empresa. Cuando los dispositivos se inscriben, el departamento de TI puede administrar esos recursos profesionales o educativos y mantenerlos protegidos, al tiempo que los usuarios pueden usar el dispositivo que elijan libremente para realizar su trabajo. Para más información sobre la inscripción, vea [What happens when I install the Company Portal app and enroll my device?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-android.md) (¿Qué ocurre cuando se instala la aplicación de portal de empresa y se inscribe el dispositivo?).
 
-Estas instrucciones de inscripción son adecuadas para dispositivos Android de Samsung Knox y dispositivos Android "nativos" (distintos a Samsung Knox). Para comprobar si tiene un dispositivo Samsung Knox, vaya a **Configuración** &gt; **Acerca del dispositivo**. Si no ve "Versión KNOX" en la lista, significa que el suyo es un dispositivo Android nativo.
+Estas instrucciones de inscripción son adecuadas para dispositivos Android de Samsung Knox y dispositivos Android "nativos" (que no son Samsung Knox). Para comprobar si tiene un dispositivo Samsung Knox, vaya a **Configuración** &gt; **Acerca del dispositivo**. Si no ve "Versión KNOX" en la lista, significa que el suyo es un dispositivo Android nativo.
 
 Antes o después de la inscripción, se le pedirá que elija una categoría que describa de la mejor forma posible cómo usar el dispositivo. El administrador de TI usa esta categoría para comprobar las aplicaciones a las que se tienen acceso.
 
@@ -68,7 +68,7 @@ Si recibe un error al intentar inscribir el dispositivo en Intune, puede [enviar
 10.  Si usa Android 6.0 o posterior, realice este paso. De lo contrario, vaya al próximo paso.
 
     Si el administrador de TI ha configurado algunas directivas, puede que aparezcan los siguientes mensajes:
-    -   **¿Permitir que Portal de empresa realice y administre llamadas telefónicas?**
+    -   **¿Permitir que el Portal de empresa realice y administre llamadas telefónicas?**
 
         ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
 
@@ -76,7 +76,7 @@ Si recibe un error al intentar inscribir el dispositivo en Intune, puede [enviar
 
     Si se deniega el acceso, el mensaje aparecerá de nuevo la próxima vez que inicie sesión en el Portal de empresa, pero puede desactivar los mensajes futuros si pulsa en la casilla **No volver a preguntar**. Si más adelante decide permitir el acceso, vaya a **Configuración** &gt; **Aplicaciones** &gt; **Portal de empresa** &gt; **Permisos** &gt; **Teléfono**y active el permiso.
 
-    -   **Allow Company Portal to access your contacts? (¿Permitir que el portal de empresa tenga acceso a los contactos?)**
+    -   **Allow Company Portal to access your contacts?** (¿Permitir que el Portal de empresa tenga acceso a los contactos?)
 
         ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
 
@@ -110,10 +110,10 @@ Si recibe un error al intentar inscribir el dispositivo en Intune, puede [enviar
 
 Antes de intentar instalar aplicaciones de empresa, vaya a **Ajustes** &gt; **Seguridad** y active **Fuentes desconocidas**. Si no activa esta opción antes de intentar instalar aplicaciones, verá el mensaje siguiente: "Instalación bloqueada. Por motivos de seguridad, el dispositivo está configurado para bloquear las instalaciones de aplicaciones procedentes de orígenes desconocidos". Puede pulsar **Configuración** en el cuadro de diálogo del error para ir a la opción **Orígenes desconocidos**.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI (consulte el [sitio web del Portal de empresa](http://portal.manage.microsoft.com) para obtener información de contacto) o escriba al equipo de Microsoft Android en wintunedroidfbk@microsoft.com.
+¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI (consulte el sitio web del [Portal de empresa](http://portal.manage.microsoft.com) para obtener información de contacto) o escriba al equipo de Microsoft Android en wintunedroidfbk@microsoft.com..
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Nov16_HO1-->
 
 

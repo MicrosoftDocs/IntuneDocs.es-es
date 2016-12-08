@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/18/2016
+ms.date: 11/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,99 +14,45 @@ ms.assetid: 36250832-c6fd-4e8d-b681-de735023ebc3
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9e0321b23bbbaaa16c28c23e56b5fbcaee0d3c24
-ms.openlocfilehash: 75f19a1c613b2d018e0cb89862f15aa4be2bc138
+ms.sourcegitcommit: 5fa0e9db799c7b3a9619d63ebc1ba5ffe010b1fd
+ms.openlocfilehash: ff780fa8ead4b1e54fb6b8dd2da6246c77c76b38
 
 
 ---
 
 
-# <a name="enroll-your-windows-10-mobile-or-windows-10-desktop-device-in-intune"></a>Inscribir un dispositivo Windows 10 Mobile o Windows 10 Escritorio en Intune
+# <a name="enroll-your-windows-10-devices-in-intune"></a>Inscribir dispositivos Windows 10 en Intune
 
-Si su empresa o centro educativo usa Microsoft Intune, puede inscribir los dispositivos para obtener acceso al correo electrónico, a los archivos y a otros recursos de la empresa. Cuando los dispositivos están inscritos, la organización puede tener protegidos los datos corporativos. Para más información sobre la inscripción, vea [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) (¿Qué ocurre cuando se instala la aplicación de portal de empresa y se inscribe el dispositivo en Intune?) y [What your IT administrator can and can't see on your device](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) (¿Qué puede ver y no ver el administrador de TI en el dispositivo?).
+La inscripción de dispositivos en Microsoft Intune permite que los dispositivos Windows 10 tengan acceso a datos seguros de la organización, incluidos el correo electrónico, los archivos y otros recursos. Esto se aplica tanto a dispositivos Windows 10 Escritorio como a dispositivos Windows 10 Mobile. La inscripción de dispositivos ayuda a proteger este acceso para el usuario y la organización, y permite mantener separados los datos profesionales de los datos personales.
 
+¿Quiere obtener más información? Averigüe lo que sucede al [inscribir el dispositivo en Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows) y lo que conlleva para la [información que contiene el dispositivo](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
 
-Para inscribir un dispositivo Windows 10 Mobile o Windows 10 Escritorio:
+## <a name="windows-10-desktop-devices"></a>Dispositivos Windows 10 Escritorio
+1.  Vaya a __Inicio__.
 
-1.  Vaya a **Configuración** de Windows y pulse **Cuentas**.
+ ![Menú Inicio de Windows](../media/windows-start-menu.png).
 
-    ![Configuración de Windows](./media/w10-enroll-rs1-settings-accounts.png)
+2. Escriba la frase "acerca de tu PC" en la __barra de búsqueda__ y, después, seleccione __Acerca de tu PC__.
 
-2.  Examine las dos pantallas siguientes y elija la que se parezca más a lo que ve en el dispositivo. Siga los pasos que tienen que ver con la pantalla que verá en el dispositivo.
+ ![configuración para la búsqueda de acerca de tu pc](../media/searching_for_about_your_pc.png)
 
-    Si aparece esta pantalla, siga las instrucciones de [Pasos a seguir si ve Acceso profesional o educativo](#steps-to-follow-if-you-see-access-work-or-school).
+2.  En __Configuración__, verá una lista con información sobre la versión de Windows 10 instalada en el equipo. En esta lista, busque la __versión__.
 
-    ![Conectarse a la red del trabajo o colegio](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+ ![Acerca del PC en Windows 10 Escritorio](../media/settings_about_pc.png)
 
-    Si aparece esta pantalla, siga los pasos de [Pasos a seguir si ve su cuenta](#steps-to-follow-if-you-see-your-account).
+3.  Si su versión es __1607__, continúe con [estos pasos](enroll-your-w10-device-access-work-or-school). Si su versión es __1511__, continúe con [estos pasos](enroll-your-w10-device-your-account).
 
-    ![Su cuenta](./media/w10-enroll-2-accounts-your-account.png)
+## <a name="windows-10-mobile-devices"></a>Dispositivos Windows 10 Mobile
 
-## <a name="steps-to-follow-if-you-see-access-work-or-school"></a>Pasos a seguir si ve acceso profesional o educativo
-
-1.  Pulse **Obtener acceso a trabajo o escuela** y, después, pulse **Conectar**.
-
-    ![Pulse la cuenta Acceso profesional o educativo](./media/w10-enroll-rs1-connect-to-work-or-school.png)
-
-2.  Escriba su dirección de correo electrónico profesional o educativo y pulse **Siguiente**.
-
-    ![Escriba su cuenta profesional o educativa](./media/w10-enroll-rs1-set-up-work-or-school-account.png)
-
-3. Inicie sesión en Intune con su cuenta profesional o educativa.
-
-    ![Agregar una cuenta profesional o educativa](./media/w10-enroll-rs1-enter-your-credentials.png)
-
-    Verá un mensaje que indica que su empresa o escuela están registradas en el dispositivo.
-
-4. Cuando las vea, significa que se ha**completado el proceso** pulse **Cerrar**. Ya ha terminado.
-
-  ![Pulse Cerrar en la pantalla "Todo listo"](./media/w10-enroll-rs1-youre-all-set.png)
-
-5. Si quiere comprobar de nuevo que la conexión es correcta, vuelva a **Configuración**, donde debería ver que aparece su cuenta profesional o educativa.
-
-    ![Compruebe que la conexión se ha configurado correctamente](./media/w10-enroll-rs1-validate-successful-enrollment.png)
-
-Si después de seguir los pasos anteriores, no consigue tener acceso a la cuenta de correo electrónico profesional o educativo y a los archivos, siga los pasos de [Pasos de solución de problemas a seguir si ve acceso profesional o educativo](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).
-
-
-## <a name="steps-to-follow-if-you-see-your-account"></a>Pasos a seguir si ve su cuenta
-
-1.  Vaya a **Configuración** de Windows y pulse **Cuentas**.
-
-    ![Vaya a Configuración y a Cuentas](./media/W10-enroll-1-settings-accounts.png)
-
-2.  Pulse en **Su cuenta**.
-
-    ![Pulse su cuenta](./media/W10-enroll-2-accounts-your-account.png)
-
-3.  Puntee en **Agregar una cuenta de trabajo o escuela**.
-
-    ![Pulse Agregar una cuenta profesional o educativa](./media/w10-enroll-3-add-work-school-acct.png)
-
-4.  Inicie sesión con las credenciales de su trabajo o escuela.
-
-    ![sign-in](./media/W10-enroll-4-sign-in.png)
-
-Si después de seguir los pasos anteriores, no consigue tener acceso al correo electrónico profesional o educativo, a los archivos o a otros datos, siga las instrucciones de [Pasos de solución de problemas a seguir si ve su cuenta](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account).
-
-También se recomienda instalar la aplicación Portal de empresa, que le permitirá identificar fácilmente y obtener las aplicaciones de la empresa que son relevantes para usted y su rol. Según la manera en que su empresa configuró Intune, la aplicación Portal de empresa se pudo haber instalado como parte del proceso de inscripción.
-
-Para comprobar si tiene la aplicación, busque **Portal de empresa** en la lista de aplicaciones. Si no ve el Portal de empresa en su lista de aplicaciones, siga estos pasos para instalarlo.
-
-1.  Pulse en **Inicio** &gt; **Tienda**.
-
-2.  Pulse **Buscar** y escriba **portal de empresa**.
-
-3.  En la lista de resultados, pulse en **Portal de empresa** &gt; **Instalar**.
-
-4.  Pulse en **Instalar** o **Gratis**. La opción mostrada dependerá de cómo la empresa haya configurado la aplicación.
+1.  En __Inicio__, deslice el dedo hasta la lista __Todas las aplicaciones__ y seleccione la aplicación __Configuración__.
+2.  Pulse __Sistema__ y, después, __Acerca de__.
+3.  En __Información del dispositivo__, pulse __Más información__. Verá una lista con información sobre el dispositivo. En esta lista, busque la __versión__.
+4.  Si su versión es __1607__, continúe con [estos pasos](enroll-your-w10-device-access-work-or-school). Si su versión es __1511__, continúe con [estos pasos](enroll-your-w10-device-your-account).
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 
 
-
-
-<!--HONumber=Oct16_HO1-->
+<!--HONumber=Nov16_HO3-->
 
 

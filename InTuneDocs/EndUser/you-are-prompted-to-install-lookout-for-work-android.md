@@ -2,8 +2,8 @@
 title: Se le pide que instale Lookout for Work en su dispositivo Android | Microsoft Intune
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 10/17/2016
 ms.topic: article
@@ -13,13 +13,13 @@ ms.technology:
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 2edbb8a70458290e69626d85f734d38243a2002a
-ms.openlocfilehash: f152da14c347cd41edbaf7cc8f4d16abc57bedbb
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: d55c7d4a7c77472453e6d317a22c4ad6209255a5
 
 
 ---
 
-# Se le pide que instale Lookout for Work
+# <a name="you-are-prompted-to-install-lookout-for-work"></a>Se le pide que instale Lookout for Work
 
 Antes de que tenga acceso a su trabajo, su administrador de TI necesita que instale la aplicación Lookout for Work, que le ayuda a proteger su dispositivo mediante la búsqueda de posibles amenazas de seguridad.
 
@@ -82,6 +82,6 @@ A veces, las instalaciones pueden producir errores debido a problemas técnicos 
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

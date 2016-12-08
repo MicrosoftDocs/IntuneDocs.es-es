@@ -2,10 +2,10 @@
 title: "¿Qué ocurre si anula la inscripción del dispositivo Android de Intune? | Microsoft Intune"
 description: 
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 10/25/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 2bc39ae41779e02882a5edf3698cb0e6976caec2
-ms.openlocfilehash: 5508b359329465e6f53fa3f5b4a93918932dfd8b
+ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
+ms.openlocfilehash: d846b1aa3d5526f0e73cb6b3a8ca17b3cdc67db2
 
 
 ---
 
 
-# ¿Qué ocurre si anula la inscripción del dispositivo Android de Intune?
+# <a name="what-happens-if-you-unenroll-your-android-device-from-intune"></a>¿Qué ocurre si anula la inscripción del dispositivo Android de Intune?
 
 Cuando anula la inscripción del dispositivo Android de Intune:
 
@@ -40,10 +40,10 @@ Si el dispositivo está configurado solo para recibir correo electrónico de emp
 
 Para obtener instrucciones sobre cómo anular la inscripción, vea [Anular la inscripción del dispositivo de Intune mediante la aplicación Portal de empresa](unenroll-your-device-from-intune-android.md).
 
-¿Necesita ayuda? Póngase en contacto con el administrador de TI (consulte el [sitio web del Portal de empresa](http://portal.manage.microsoft.com) para obtener información de contacto) o escriba al equipo de Microsoft Android en wintunedroidfbk@microsoft.com.
+¿Necesita ayuda? Póngase en contacto con el administrador de TI (visite el [sitio web del Portal de empresa](http://portal.manage.microsoft.com) para obtener la información de contacto), o escriba al [equipo de Microsoft Android](mailto:wintunedroidfbk@microsoft.com).
 
 
 
-<!--HONumber=Oct16_HO3-->
+<!--HONumber=Nov16_HO1-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "Establecer o cambiar el código de acceso | Microsoft Intune"
+title: "Establecer o cambiar la contraseña | Microsoft Intune"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 11/29/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,20 @@ ms.technology:
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
 ROBOTS: NOINDEX,NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 56f2cd4b92a383bc801cfb02ffde3d092f059d44
+ms.sourcegitcommit: 6a5bf59f3ef25df590625033fca4c114c3ace62f
+ms.openlocfilehash: 9a2f435220b9b2d4304f78e30cf152a4bb2af0c6
 
 
 ---
 
-# <a name="set-or-change-your-passcode"></a>Establecer o cambiar el código de acceso
+# <a name="make-your-device-safer-with-the-right-password"></a>Hacer que el dispositivo esté más seguro con la contraseña correcta
 
-Si el dispositivo Windows no se ajusta a la directiva de contraseñas del administrador de TI, aparece un mensaje que describe el problema brevemente y explica lo que hay que hacer para que la contraseña cumpla los requisitos.
+El acceso a recursos corporativos, como correo electrónico y documentos, es algo que las personas necesitan hacer cada día desde sus dispositivos de Windows. Su organización desea asegurarse de que el dispositivo lo hace sin ningún riesgo. Una manera de asegurarse de que el dispositivo tiene acceso de forma segura a estos recursos es requerir que los dispositivos usen una contraseña.
 
-El administrador de TI puede establecer más de un requisito para las contraseñas. Por ejemplo, la contraseña podría tener que incluir un número determinado de caracteres y ser una combinación de números y letras. Puesto que se puede establecer más de un requisito, en estas instrucciones solo se explica cómo establecer o cambiar la contraseña. No se explican todas las combinaciones posibles de requisitos.
+Si el dispositivo Windows no se ajusta a la directiva de contraseñas del administrador de TI, verá un mensaje que describirá el problema brevemente y explicará lo que hay que hacer para que la contraseña cumpla los requisitos.
 
-Si tiene problemas para establecer una contraseña que cumpla todos los requisitos, póngase en contacto con el administrador de TI para obtener ayuda.
+> [!Note]
+> El administrador de TI puede establecer más de un requisito para las contraseñas. Por ejemplo, la contraseña podría tener que incluir un número determinado de caracteres y ser una combinación de números y letras. Puesto que se puede establecer más de un requisito, en estas instrucciones solo se explica cómo establecer o cambiar la contraseña. No se explican todas las combinaciones posibles de requisitos.
 
 ## <a name="to-change-your-password-on-windows-phone-81"></a>Para cambiar la contraseña en Windows Phone 8.1
 
@@ -46,6 +47,6 @@ Si tiene problemas para establecer una contraseña que cumpla todos los requisit
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Nov16_HO5-->
 
 
