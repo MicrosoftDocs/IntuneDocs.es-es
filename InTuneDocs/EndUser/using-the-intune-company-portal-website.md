@@ -14,8 +14,8 @@ ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: aaecaf82bc4635beefa84fed5702476c9e66a90e
+ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
+ms.openlocfilehash: 695a419ea05b6d3ff93cfe45eae3d80012f44568
 
 
 ---
@@ -46,11 +46,11 @@ Pueden llevar a cabo las siguientes tareas desde el sitio web del Portal de empr
 Los usuarios finales pueden realizar la mayoría de las tareas que hacen en el **sitio web del Portal de empresa** en la **aplicación del Portal de empresa** que instalan en su dispositivo. Consulte las páginas siguientes para obtener vínculos a todas las tareas que pueden realizar los usuarios finales en su dispositivo:
 
 - [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
-- [Uso de un dispositivo iOS o Mac OS X con Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Uso de un dispositivo iOS o Mac OS con Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
 - [Usar un dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

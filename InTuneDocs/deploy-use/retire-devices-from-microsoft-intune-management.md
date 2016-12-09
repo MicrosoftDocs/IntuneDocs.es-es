@@ -14,8 +14,8 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b76e9e16ef1fa6870783326630ae74d07ae59cbb
-ms.openlocfilehash: be3a30535fc9cebad5d4a167b75c484ddafd7f85
+ms.sourcegitcommit: 8f3a8e42688bf830e3050cf387ccb15a1af811fa
+ms.openlocfilehash: e7f861adc757b4037c5d0ef97c361a57948386bf
 
 
 ---
@@ -55,7 +55,7 @@ En el caso de los dispositivos que deban reasignarse, también puede usar un [bo
 8.  Elija los dispositivos según corresponda y, luego, **Eliminar dispositivo**. El dispositivo se eliminará la próxima vez que se sincronice con Active Directory. Esto suele producirse al cabo de cuatro horas. Después de la sincronización, el dispositivo se elimina de la administración. Con este proceso, se elimina un dispositivo del límite de dispositivos de este usuario.
 
 ## <a name="retire-managed-computers"></a>Retirar equipos administrados
-Se pueden eliminar de la administración equipos administrados con el software cliente de Intune en la consola de administración de Intune. De esta forma también se desinstala el software cliente y se elimina del equipo la directiva de Intune. Vea información sobre cómo [retirar equipos administrados con el software cliente de Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md).
+Se pueden eliminar de la administración equipos administrados con el software cliente de Intune en la consola de administración de Intune. De esta forma también se desinstala el software cliente y se elimina del equipo la directiva de Intune. Vea información sobre cómo [retirar equipos administrados con el software cliente de Intune](retire-a-windows-pc-with-microsoft-intune.md).
 
 ## <a name="block-access-a-device"></a>Bloquear el acceso a un dispositivo
 Si se ha perdido un dispositivo o si se debe retirar porque un empleado ha abandonado la empresa sin devolver un hardware propiedad de la misma, puede [restablecer el código de acceso y bloquear de forma remota](use-remote-lock-and-passcode-reset-in-microsoft-intune.md) el dispositivo. Esto impide que la información de la empresa se use incorrectamente, aunque puede que tenga que cancelar el dispositivo por pérdida.
@@ -70,6 +70,6 @@ A veces, es el propio dispositivo el que llega al final del ciclo de vida. En ta
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -2,8 +2,8 @@
 title: "Protección de aplicaciones LOB en dispositivos no inscritos | Microsoft Intune"
 description: "En este tema se describe cómo puede preparar sus aplicaciones personalizadas de línea de negocios de manera que sea posible aplicar directivas de administración de aplicaciones móviles que le ayuden a evitar la pérdida de datos."
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 3bce8989944985c36a3d233fbb05d2f3f135b7e7
+ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
+ms.openlocfilehash: bc1efb1e0c62e6bd52658690db95901c70403d4d
 
 
 ---
@@ -29,9 +29,9 @@ En este tema se explican los pasos necesarios para aplicar directivas MAM a las 
 
 ##  <a name="step-1-prepare-the-app"></a>Paso 1: preparar la aplicación
 
-Antes de poder aplicar directivas MAM a una aplicación, primero debe ajustar la aplicación mediante la herramienta de ajuste de aplicaciones de Microsoft Intune para [iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool) y [Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool), o utilizar el [SDK de aplicaciones de Intune](/../develop/intune-app-sdk) para integrar manualmente las funciones de protección de aplicaciones de Intune.
+Antes de poder aplicar directivas MAM a una aplicación, primero debe ajustar la aplicación mediante la herramienta de ajuste de aplicaciones de Microsoft Intune para [iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) y [Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md), o utilizar el [SDK de aplicaciones de Intune](../develop/intune-app-sdk.md) para integrar manualmente las funciones de protección de aplicaciones de Intune.
 
-Para obtener más información sobre el uso de la herramienta de ajuste de aplicaciones y el SDK, vea [Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles con Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune).
+Para obtener más información sobre el uso de la herramienta de ajuste de aplicaciones y el SDK, vea [Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles con Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
 
 ## <a name="step-2-add-the-app"></a>Paso 2: agregar la aplicación
 
@@ -81,6 +81,6 @@ Puede quitar una aplicación de línea de negocio de la lista de aplicaciones. C
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 
