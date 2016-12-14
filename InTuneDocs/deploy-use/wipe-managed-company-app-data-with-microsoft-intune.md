@@ -2,8 +2,8 @@
 title: "Borrar los datos administrados de la aplicación de la empresa | Microsoft Intune"
 description: Aprenda a quitar selectivamente datos de la empresa desde dispositivos de forma remota.
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 11/08/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 2742e1d5-d2d5-42cd-b719-665dd6e0a0e9
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1877fc4a76932d550cc8c4be3cb4ebd089cd6ad3
-ms.openlocfilehash: 3939d732057c7fd9365d7fab93ed37ec62f6993d
+ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
+ms.openlocfilehash: d32a66ee283906586e25173e736c02ee8bf23042
 
 
 ---
@@ -55,7 +55,7 @@ En la hoja **Administración de aplicaciones móviles de Intune** , encontrará 
 
 2.  En la hoja **Solicitud de borrado**, puede ver la lista de solicitudes agrupadas según usuarios. Debido a que el sistema crea una solicitud de borrado para cada aplicación protegida que se ejecuta en el dispositivo, puede que vea varias solicitudes para un mismo usuario. Este estado indica si una solicitud de borrado está **pendiente**, ha provocado un **error** o si es **correcta**.
 
-El usuario debe abrir la aplicación de la que se vaya a realizar el borrado, que puede tardar hasta 30 minutos después de efectuar la solicitud. 
+El usuario debe abrir la aplicación de la que se vaya a realizar el borrado, que puede tardar hasta 30 minutos después de efectuar la solicitud.
 
 Los borrados con estado pendiente se muestran hasta que se eliminen manualmente.  Para eliminar manualmente una solicitud de borrado, haga clic derecho y seleccione Eliminar.
 
@@ -66,6 +66,6 @@ Los borrados con estado pendiente se muestran hasta que se eliminen manualmente.
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

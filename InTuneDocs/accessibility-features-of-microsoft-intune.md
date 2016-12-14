@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/24/2016
+ms.date: 12/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 6d7ed613-be97-4973-9532-8cb5bd434a1b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 1c4f44619f025b5a35a089c0970188b989b710e6
+ms.sourcegitcommit: b99c90bfafd65e87e258e1e0ac01691e83581659
+ms.openlocfilehash: 9915f85e6bc2dc20b061618fc8ccc6da8f3cec36
 
 
 ---
 
-# Características de accesibilidad de Microsoft Intune
+# <a name="accessibility-features-of-microsoft-intune"></a>Características de accesibilidad de Microsoft Intune
 Además de las características de accesibilidad y herramientas de Microsoft Windows, las siguientes funciones hacen que [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] sea más accesible para personas con discapacidades:
 
 -   Uso de los métodos abreviados de teclado
@@ -28,7 +28,7 @@ Además de las características de accesibilidad y herramientas de Microsoft Win
 > [!NOTE]
 > [!INCLUDE[accessibility6](./includes/accessibility6_md.md)]
 
-## Uso de los métodos abreviados de teclado
+## <a name="using-keyboard-shortcuts"></a>Uso de los métodos abreviados de teclado
 
 |Para|Utilice este método abreviado de teclado|
 |--------------|------------------------------|
@@ -44,11 +44,10 @@ Además de las características de accesibilidad y herramientas de Microsoft Win
 |Pasar al siguiente grupo de aplicaciones|Flecha arriba|
 |Mostrar las acciones disponibles para un dispositivo seleccionado|Flecha hacia la derecha|
 > [!NOTE]
-> [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] Es posible navegar por los portales mediante los métodos abreviados de teclado estándar de Internet Explorer.
+> Es posible navegar por los portales [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] mediante los métodos abreviados de teclado estándar de Internet Explorer.
 
 
 
-
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO1-->
 
 
