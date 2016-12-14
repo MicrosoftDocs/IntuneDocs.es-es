@@ -2,8 +2,8 @@
 title: "Creación de una directiva de cumplimiento normativo de dispositivos | Microsoft Intune"
 description: "Cree una directiva de cumplimiento normativo para ayudar a proteger los dispositivos móviles y equipos utilizados para acceder a los datos de su compañía."
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 10/12/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 376c9bce811ffd986242678929469f3e28bfad4c
-ms.openlocfilehash: 43c8d5e065e785269b9d0cbf1813dcea83464975
+ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
+ms.openlocfilehash: b21fcbf10659e072d8eb73703dfdd6695ac9a9b0
 
 
 ---
@@ -57,8 +57,8 @@ En la siguiente tabla se muestran las opciones de configuración de directiva de
 |Requerir una contraseña para desbloquear dispositivos móviles|iOS 6 y versiones posteriores|Android 4.0 y versiones posteriores <br>Samsung KNOX Standard 4.0 y posterior|Windows Phone 8.1 y versiones posteriores|
 |Permitir contraseñas sencillas|iOS 6 y versiones posteriores|No compatible|Windows Phone 8.1 y versiones posteriores|
 |Longitud mínima de la contraseña|iOS 6 y versiones posteriores| Android 4.0 y versiones posteriores<br>Samsung KNOX Standard 4.0 y posterior| Windows Phone 8.1 y versiones posteriores<br>Windows 8.1|
-|Tipo de contraseña obligatoria|iOS 6 y versiones posteriores|No disponible|Windows Phone 8.1 y versiones posteriores <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
-|Número mínimo de conjuntos de caracteres|iOS 6 y versiones posteriores|No disponible|Windows Phone 8.1 y versiones posteriores <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
+|Tipo de contraseña obligatoria|iOS 6 y versiones posteriores|No disponible|Windows Phone 8.1 y versiones posteriores <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
+|Número mínimo de conjuntos de caracteres|iOS 6 y versiones posteriores|No disponible|Windows Phone 8.1 y versiones posteriores <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
 |Calidad de contraseña|No disponible|Android 4.0 y versiones posteriores <br>Samsung KNOX Standard 4.0 y posterior|No disponible|
 |Minutos de inactividad antes de que se pida la contraseña|iOS 6 y versiones posteriores|Android 4.0 y versiones posteriores<br>Samsung KNOX Standard 4.0 y posterior|Windows Phone 8.1 y versiones posteriores<br>Windows RT y Windows RT 8.1<br>Windows 8.1|
 |Caducidad de contraseña (días)|iOS 6 y versiones posteriores|Android 4.0 y versiones posteriores<br>Samsung KNOX Standard 4.0 y posterior|Windows Phone 8.1 y versiones posteriores<br>Windows RT y Windows RT 8.1<br>Windows 8.1|
@@ -88,6 +88,6 @@ Seleccione una de las siguientes opciones para obtener más información sobre l
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

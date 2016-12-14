@@ -2,7 +2,8 @@
 title: "Habilitar la regla de protección de dispositivos en la directiva de cumplimiento normativo | Microsoft Intune"
 description: "Habilite la regla de protección contra amenazas móviles en la directiva de cumplimiento normativo del dispositivo."
 keywords: 
-author: karthikaraman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 09/13/2016
 ms.topic: article
@@ -13,8 +14,8 @@ ms.assetid: c951692d-6538-46c0-a9f0-d607ded189ae
 ms.reviewer: sandera
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 686321a1c19acb9a3a7e262822b11304d07adb40
-ms.openlocfilehash: 3e6aef013ae8764d9b031e880c333e184191feb4
+ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
+ms.openlocfilehash: efddf7645d0548c842ae8aa3b1ca5222023913b5
 
 
 ---
@@ -61,6 +62,6 @@ Puede ver el estado de cumplimiento de un dispositivo en la página **Todos los 
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

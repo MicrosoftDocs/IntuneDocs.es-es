@@ -14,8 +14,8 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
-ms.openlocfilehash: df7f2683d8ae8860b7eaa0d1c37c7443830291a0
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: cbfdb0e5db6862fcf046f42b85b8c9aabbba8721
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: df7f2683d8ae8860b7eaa0d1c37c7443830291a0
 Puede borrar las aplicaciones y datos de los dispositivos administrados por Intune que ya no son necesarios, se van a reutilizar o han desaparecido. Para hacer esto, Intune proporciona funcionalidades de borrado completo y de borrado selectivo. Los usuarios también pueden emitir un comando de borrado remoto de dispositivos desde el portal de empresa de Intune en dispositivos de propiedad privada inscritos en Intune.
 
   > [!NOTE]
-  > En este tema se trata únicamente el borrado de dispositivos administrados mediante la administración de dispositivos móviles de Intune. También puede usar [Azure Portal](https://portal.azure.com) para [eliminar datos corporativos de las aplicaciones](wipe-managed-company-app-data-with-microsoft-intune.md). También puede [retirar los equipos administrados con software cliente de Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#retire-a-computer.md).
+  > En este tema se trata únicamente el borrado de dispositivos administrados mediante la administración de dispositivos móviles de Intune. También puede usar [Azure Portal](https://portal.azure.com) para [eliminar datos corporativos de las aplicaciones](wipe-managed-company-app-data-with-microsoft-intune.md). También puede [retirar los equipos administrados con software cliente de Intune](retire-a-windows-pc-with-microsoft-intune.md).
 
 ## <a name="full-wipe"></a>Borrar todos los datos
 
@@ -165,6 +165,6 @@ Este informe también muestra quién realizó la acción.
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

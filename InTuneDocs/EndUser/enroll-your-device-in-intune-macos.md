@@ -15,8 +15,8 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 162d176c5f272f5f19ba18cdd07fe815ac1bcce7
-ms.openlocfilehash: fc0efceb8a0c3e1323f7d94625bc5f618d35bfd6
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 650e9b0700971e626e4062c312111ef60e74badc
 
 
 ---
@@ -46,7 +46,7 @@ Puede obtener acceso a las aplicaciones, los datos y los recursos de su organiza
  ![Inscribir este dispositivo macOS](./media/macOS_enroll_003_enroll_popup.png)
 
   > [!NOTE]
-  > Intune necesita acceder a su equipo para asegurarse de que es lo suficientemente seguro como para acceder a los recursos de su organización. Descubra [lo que pasa cuando inscribe su dispositivo en Intune](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios).
+  > Intune necesita acceder a su equipo para asegurarse de que es lo suficientemente seguro como para acceder a los recursos de su organización. Descubra [lo que pasa cuando inscribe su dispositivo en Intune](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md).
 
 6. Se abrirán las __preferencias del sistema__, que le preguntarán si quiere __instalar el perfil de administración__. Haga clic en __Instalar__ para continuar o en __Mostrar perfil__ para más información.
 
@@ -64,6 +64,6 @@ Puede obtener acceso a las aplicaciones, los datos y los recursos de su organiza
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

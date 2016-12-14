@@ -2,8 +2,8 @@
 title: Portal de Azure para directivas de MAM | Microsoft Intune
 description: "Cree directivas de administración de aplicaciones móviles con Azure Portal. Las directivas que cree aquí se pueden aplicar a dispositivos con o sin inscripción en Intune."
 keywords: 
-author: karthikaraman
-ms.author: karaman
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 10/22/2016
 ms.topic: article
@@ -14,8 +14,8 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 03410d1e82cfeb8d354ee1d010ada07ca86191bc
-ms.openlocfilehash: e9d917401a8927099bdf8558e9f7e7185351f709
+ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
+ms.openlocfilehash: b377d527621693f4c231f6f8b16cab277853cdf7
 
 
 ---
@@ -67,6 +67,6 @@ En el Portal de Azure se pueden crear directivas de MAM aplicables a los siguien
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

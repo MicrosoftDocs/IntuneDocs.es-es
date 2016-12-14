@@ -14,8 +14,8 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 391612c35a7665073ca8a5c629169e5be967ab59
+ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
+ms.openlocfilehash: 270e6015e629c048b01b218793640888706d118e
 
 
 ---
@@ -40,8 +40,8 @@ Para permitir que los empleados inscriban sus dispositivos móviles con Intune, 
 ## <a name="step-1-enable-connections"></a>Paso 1: Habilitar conexiones
 
 Antes de habilitar la inscripción de dispositivos móviles, asegúrese de que ha hecho lo siguiente:
-- [Ha revisado los puertos y las direcciones URL de red necesarios](../get-started/network-infrastructure-requirements-for-microsoft-intune)
-- [Ha agregado y comprobado su nombre de dominio](../get-started/domain-names-for-microsoft-intune)
+- [Ha revisado los puertos y las direcciones URL de red necesarios](../get-started/network-infrastructure-requirements-for-microsoft-intune.md)
+- [Ha agregado y comprobado su nombre de dominio](../get-started/domain-names-for-microsoft-intune.md)
 
 ## <a name="step-2-set-mdm-authority"></a>Paso 2: Configurar entidad de MDM
 La entidad de MDM define el servicio de administración que tiene permiso para administrar un conjunto de dispositivos. Las opciones para la entidad de MDM incluyen Intune y Configuration Manager con Intune. Si establece Configuration Manager como la entidad de administración, ningún otro servicio podrá usarse para la administración de dispositivos móviles.
@@ -111,7 +111,7 @@ Después de guardar los cambios, puede usar los vínculos que aparecen en la par
 
 ## <a name="step-5-assign-user-licenses"></a>Paso 5: Asignar licencias de usuario
 
-El **portal de administración de Office 365** se usa para agregar manualmente usuarios basados en la nube y asignar licencias a las cuentas de usuario basadas en la nube y a las cuentas sincronizadas desde Active Directory local con Azure Active Directory (Azure AD). Puede [sincronizar usuarios locales con Azure AD](../get-started/domain-names-for-microsoft-intune#to-synchronize-on-premises-users-with-azure-ad.md).
+El **portal de administración de Office 365** se usa para agregar manualmente usuarios basados en la nube y asignar licencias a las cuentas de usuario basadas en la nube y a las cuentas sincronizadas desde Active Directory local con Azure Active Directory (Azure AD). Puede [sincronizar usuarios locales con Azure AD](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md#how-to-sync-on-premises-users-with-azure-ad).
 
 1.  Inicie sesión en el [portal de administración de Office 365](https://portal.office.com/Admin/Default.aspx) con las credenciales del administrador de inquilinos.
 
@@ -136,7 +136,7 @@ Configurar la administración de las plataformas siguientes:
 - [Equipos y portátiles con Windows](set-up-windows-device-management-with-microsoft-intune.md)
 - [Windows 10 Mobile y Windows Phone](set-up-windows-phone-management-with-microsoft-intune.md)
 
-También puede habilitar la [inscripción de dispositivos corporativos](manage-corporate-owned-devices).
+También puede habilitar la [inscripción de dispositivos corporativos](manage-corporate-owned-devices.md).
 
 ## <a name="step-7-next-steps"></a>Paso 7: Pasos siguientes
 
@@ -149,6 +149,6 @@ Ahora que la inscripción está habilitada, debe configurar la administración p
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 
