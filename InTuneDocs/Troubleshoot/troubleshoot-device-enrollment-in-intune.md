@@ -14,8 +14,8 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e33dcb095b1a405b3c8d99ba774aee1832273eaf
-ms.openlocfilehash: f279e79432f70214245854db42641535eaf65824
+ms.sourcegitcommit: 998c24744776e0b04c9201ab44dfcdf66537d523
+ms.openlocfilehash: 9c5963f1413e1cd9f119186f47f46c7f7f16720d
 
 
 ---
@@ -86,7 +86,7 @@ Los administradores pueden eliminar dispositivos en el portal de Azure Active Di
 >
 > Si agrega una cuenta de usuario al grupo de administradores de inscripción de dispositivos, esta no podrá realizar la inscripción al aplicarse la directiva de acceso condicional cuando ese usuario en cuestión inicie sesión.
 
-### <a name="company-portal-temporarily-unavailable"></a>El Portal de empresa no está disponible temporalmente
+### <a name="company-portal-emporarily-unavailable"></a>Portal de empresa no está disponible temporalmente
 **Problema:** un usuario recibió en su dispositivo el error **El Portal de empresa no está disponible temporalmente**.
 
 **Solución:**
@@ -214,23 +214,40 @@ Si no funciona la solución 2, pida a los usuarios que sigan estos pasos para qu
 
 ### <a name="android-certificate-issues"></a>Problemas de certificados Android
 
-**Problema**: el usuario recibe el siguiente mensaje en su dispositivo: "*No puede iniciar sesión porque falta un certificado necesario en su dispositivo".*
+**Problema**: los usuarios reciben el siguiente mensaje en su dispositivo: *No puede iniciar sesión porque falta un certificado necesario en su dispositivo*.
 
-**Solución**:
+**Solución 1**:
 
-- El usuario puede recuperar el certificado que le falta siguiendo [estas instrucciones](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator).
-- Si el usuario no puede recuperar el certificado, puede que falten los certificados intermedios en el servidor ADFS. Android requiere los certificados intermedios para confiar en el servidor.
+Pídale a los usuarios que sigan las instrucciones que aparecen en [El dispositivo no tiene un certificado necesario](/intune/enduser/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator). Si el error sigue apareciendo después de que los usuarios siguen las instrucciones, intente con la solución 2.
 
-Puede importar los certificados en el almacén intermedio del servidor ADFS o los servidores proxy como sigue:
+**Solución 2**:
 
-1.  En el servidor de ADFS, inicie **Microsoft Management Console** y agregue el complemento Certificados para la **cuenta de equipo**.
-5.  Busque el certificado que utiliza el servicio ADFS y vea su certificado primario.
-6.  Copie el certificado primario y péguelo en **Computer\Intermediate Certification Authorities\Certificates**.
-7.  Copie los certificados de ADFS, descifrado de ADFS y firma de ADFS y péguelos en el almacén personal del servicio ADFS.
-8.  Reinicie los servidores ADFS.
+Si los usuarios siguen viendo el error de certificado faltante después de ingresar las credenciales corporativas y de ser redirigido a la experiencia de inicio de sesión federado, es posible que falte un certificado intermedio en el servidor de Servicios de federación de Active Directory (AD FS).
 
+El error de certificado se genera porque los dispositivos Android requieren incluir certificados intermedios en un script [hello de SSL de servidor](https://technet.microsoft.com/library/cc783349.aspx), pero actualmente una instalación de servidor Proxy de AD FS o un servidor AD FS predeterminado solo envía el certificado SSL del servicio de AD FS en la respuesta del script hello del servidor SSL a un script hello de cliente de SSL.
+
+Para corregir el problema, importe los certificados a los certificados personales de equipos en los servidores proxy o el servidor AD FS de la manera siguiente:
+
+1.  En los servidores proxy y ADFS, inicie la consola de Administración de certificados del equipo local; para ello, haga clic con el botón derecho en el botón **Inicio**, haga clic en **Ejecutar** y escriba **certlm.msc**.
+2.  Expanda **Personal** y seleccione **Certificados**.
+3.  Busque el certificado correspondiente a la comunicación del servicio AD FS (un certificado firmado públicamente) y haga doble clic para ver sus propiedades.
+4.  Seleccione la pestaña **Ruta de certificación** para ver los certificados primarios del certificado.
+5.  En cada certificado primario, seleccione **Ver certificado**.
+6.  Seleccione la pestaña **Detalles** y elija **Copiar en archivo...**.
+7.  Siga las instrucciones del asistente para exportar o guardar la clave pública del certificado en la ubicación de archivo deseada.
+8.  Importe los certificados primarios que se exportaron en el paso 3 a la carpeta Equipo local\Personal\Certificados; para ello, haga clic con el botón derecho en **Certificados**, seleccione **Todas las tareas** > **Importar** y, luego, siga las instrucciones del asistente para importar los certificados.
+9.  Reinicie los servidores AD FS.
+10. Repita los pasos anteriores en todos los servidores proxy y de AD FS.
 Ahora, el usuario podrá iniciar sesión en el Portal de empresa en el dispositivo Android.
 
+**Para validar que el certificado se instaló correctamente**:
+
+Los pasos siguientes describen solo uno de los muchos métodos y herramientas que se pueden usar para validar que el certificado se instaló correctamente.
+
+1. Vaya a la [herramienta gratuita Digicert](ttps://www.digicert.com/help/).
+2. Escriba el nombre de dominio completo del servidor AD FS (por ejemplo, sts.contoso.com) y seleccione **CHECK SERVER** (Comprobar servidor).
+
+Si el certificado de servidor se instaló correctamente, verá marcas de verificación en los resultados. Si existe el problema anterior, verá una X roja en las secciones "Certificate Name Matches" ("El nombre de certificado coincide") y "SSL Certificate is correctly Installed" ("El certificado SSL se instaló correctamente") del informe.
 
 
 ## <a name="ios-issues"></a>Problemas de iOS
@@ -356,6 +373,6 @@ Si esta información para solucionar problemas no le ha ayudado, póngase en con
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

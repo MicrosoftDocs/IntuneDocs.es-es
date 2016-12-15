@@ -1,6 +1,6 @@
 ---
-title: Using your iOS or Mac OS X device with Intune (Usar un dispositivo iOS o Mac OS X con Intune) | Microsoft Intune
-description: "Lista de vínculos a tareas que puede realizar en el dispositivo móvil iOS o Mac OS X cuando este está inscrito en Intune"
+title: Uso de un dispositivo iOS o macOS con Intune | Microsoft Intune
+description: "Lista de vínculos a tareas que puede realizar en el dispositivo móvil iOS o macOS cuando este está inscrito en Intune"
 keywords: 
 author: barlanmsft
 ms.author: barlan
@@ -15,13 +15,13 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: bc031fe080cd17b3436388f59ecc83df53a16a32
+ms.sourcegitcommit: 2f92ce22c9e6a87bccc7ab17144d0d52ff6cfc7b
+ms.openlocfilehash: e10c0eb3000bcf3a98a0cab891c40d32fe06d335
 
 
 ---
 
-# <a name="using-your-ios-or-mac-os-x-device-with-intune"></a>Using your iOS or Mac OS X device with Intune
+# <a name="using-your-ios-or-macos-device-with-intune"></a>Uso de un dispositivo iOS o macOS con Intune
 
 Este artículo contiene vínculos a todas las tareas que los usuarios finales pueden llevar a cabo en sus dispositivos administrados con Intune. Los administradores de TI pueden consultar esta información para ver los pasos que deben seguir los usuarios para llevar a cabo distintas tareas, que se agrupan en las siguientes categorías:
 - Instalación de aplicaciones del Portal de empresa e inscripción a Intune
@@ -34,7 +34,7 @@ La información de esta sección le ayuda con la instalación del Portal de empr
 
 - [Instale e inicie sesión en la aplicación Portal de empresa de Intune](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 - [Inscribir el dispositivo iOS en Intune](enroll-your-device-in-intune-ios.md)
-- [Inscribir el dispositivo Mac OS X en Intune](enroll-your-device-in-intune-mac-os-x.md)
+- [Inscribir el dispositivo macOS en Intune](enroll-your-device-in-intune-macos.md)
 - [¿Qué ocurre si instala la aplicación Portal de empresa e inscribe el dispositivo en Intune?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-ios.md)
 
 ## <a name="things-users-can-do-when-their-device-is-enrolled-in-intune"></a>Lo que pueden hacer los usuarios cuando su dispositivo está inscrito en Intune
@@ -67,6 +67,6 @@ La información de esta sección ayuda a los usuarios a solucionar problemas que
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

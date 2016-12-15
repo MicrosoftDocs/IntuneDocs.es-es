@@ -9,14 +9,14 @@ keywords: "documentación de Intune, administración de aplicaciones, administra
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 11/15/2016
+ms.date: 12/7/2016
 ms.topic: hubpage
 ms.service: microsoft-intune
 ms.suite: ems
 ms.assetid: 3414479e-e548-4753-bcf7-6322b43221fd
 translationtype: Human Translation
-ms.sourcegitcommit: f9ab2200b1d357d6a805e3e5cd37f3c4391e3571
-ms.openlocfilehash: 581bf46694ed339a6405a18a87e9a1aec4d5e3de
+ms.sourcegitcommit: b921a15ca5fd24d9ddbf54789c42a0740b72d7f6
+ms.openlocfilehash: 61855f89dd2aa70bf9b6d7be72acae90e5463b7d
 
 
 ---
@@ -24,8 +24,8 @@ ms.openlocfilehash: 581bf46694ed339a6405a18a87e9a1aec4d5e3de
 <article id="main">
     <section id="hero-content">
       <h1>Documentación de Intune</h1>
-      <h2>Obtenga información sobre cómo implementar y administrar Microsoft Intune, un servicio de administración de dispositivos móviles y aplicaciones.</h2>
-      <h3>¿Quiere administrar Intune con Configuration Manager? <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management" target="_blank">Más información sobre la administración de dispositivos móviles híbridos&rarr;</a></h3>
+      <h2>Administración de dispositivos y aplicaciones móviles y administración de PC desde la nube. </h2>
+      <h3>¿Quiere administrar Intune con Configuration Manager? <a href="https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management" target="_blank">Más información sobre la administración de dispositivos móviles híbridos&rarr;</a></h3>
     </section>
     <section id="featured" class="container">
       <h2 class="section-heading"><span class="icon icon-warning"></span> Contenido destacado</h2>
@@ -33,7 +33,7 @@ ms.openlocfilehash: 581bf46694ed339a6405a18a87e9a1aec4d5e3de
         <ul class="column column-half">
           <li><a href="http://fasttrack.microsoft.com/ems">¿Más de 150 licencias? Aproveche las ventajas de FastTrack</a></li>
           <li><a href="/intune/understand-explore/common-ways-to-use-intune">Usos habituales de Intune</a></li>
-          <li><a href="/intune/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune">Proteger datos de la aplicación</a></li>
+          <li><a href="/intune-azure/introduction/what-is-microsoft-intune">Intune en la versión preliminar de Azure Portal</a></li>
         </ul>
         <ul class="column column-half">
           <li><a href="/intune/deploy-use/restrict-access-based-on-device-network-app-risk">Proteger el acceso a los recursos de la empresa</a></li>
@@ -285,6 +285,6 @@ ms.openlocfilehash: 581bf46694ed339a6405a18a87e9a1aec4d5e3de
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO1-->
 
 

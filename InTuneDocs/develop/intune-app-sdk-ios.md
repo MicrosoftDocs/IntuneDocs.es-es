@@ -1,21 +1,21 @@
 ---
-title: "Guía para desarrolladores acerca del SDK de aplicaciones de Microsoft Intune para iOS | Microsoft Intune"
+title: "Guía para desarrolladores acerca del SDK de aplicaciones de Microsoft Intune para iOS | Microsoft Docs"
 description: 
 keywords: 
-author: Msmbaldwin
+author: mtillman
 manager: angrobe
-ms.author: oydang
-ms.date: 09/08/2016
+ms.author: mtillman
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
-ms.reviewer: jeffgilb
+ms.reviewer: oydang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 01b927178ad5fb1019781863e243133861887148
-ms.openlocfilehash: eb14be40a94513a21dbd24a62e42afb7a3e57381
+ms.sourcegitcommit: b55147e2be338bd46661695134fd0f0de105bb72
+ms.openlocfilehash: b8a723fce088c1d61bddb5f2479da59a4b5c3771
 
 
 ---
@@ -32,6 +32,8 @@ El SDK de la aplicación Microsoft Intune para iOS permite incorporar directivas
 * Necesita un equipo Mac OS que ejecute OS X 10.8.5 o posterior y que tenga instalada la versión 5 o posterior del conjunto de herramientas XCode.
 
 * Revise los [términos de licencia del SDK de aplicaciones de Intune para iOS](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS%20.pdf). Imprimir y conservar una copia de los términos de licencia para sus archivos. Al descargar y usar el SDK de aplicaciones de Intune para iOS, acepta dichos términos.  Si no los acepta, no use el software.
+
+* Descargue los archivos del SDK de aplicaciones de Intune para iOS en [GitHub](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios).
 
 ## <a name="whats-in-the-sdk"></a>Qué hay en el SDK
 
@@ -322,9 +324,9 @@ Si se produce un error en la inscripción, la aplicación debe considerar la pos
 
 Una vez que se haya invocado esta API, la aplicación puede seguir funcionando de la manera habitual. Si la inscripción se realiza correctamente, el SDK le notificará al usuario que se debe reiniciar la aplicación.
 
-## <a name="debug-information"></a>Información de depuración
+## <a name="status-result-and-debug-notifications"></a>Notificaciones de estado, resultados y depuración
 
-La aplicación puede recibir notificaciones de depuración sobre las solicitudes siguientes en el servicio de MAM de Intune:
+La aplicación puede recibir notificaciones de estado, resultados y depuración sobre las solicitudes siguientes en el servicio de MAM de Intune:
 
  - Solicitudes de inscripción
  - Solicitudes de actualización de directivas
@@ -365,7 +367,7 @@ Estos métodos delegados devuelven un objeto `IntuneMAMEnrollmentStatus` que con
 
 Este objeto está definido en Headers/IntuneMAMEnrollmentStatus.h junto con los códigos de estado específicos que se pueden devolver.
 
-Es importante tener en cuenta que la lógica de negocios de la aplicación no debe basarse en estas notificaciones. La idea es que la aplicación envíe esta información a un servicio de telemetría con fines de depuración o supervisión.
+
 
 
 ## <a name="sample-code"></a>Código de ejemplo
@@ -637,7 +639,7 @@ Sí, el administrador de TI puede enviar un comando de borrado selectivo a la ap
 
 ## <a name="submit-your-app-to-the-app-store"></a>Enviar la aplicación a la Tienda de aplicaciones
 
-Las compilaciones de marco y biblioteca estáticas de Intune App SDK son archivos binarios universales. Esto significa que tienen código para todas las arquitecturas de simulador y dispositivo. Apple rechazará las aplicaciones enviadas a la Tienda de aplicaciones si contienen código de simulador. Cuando se compila con la biblioteca estática para las compilaciones solo de dispositivos, el vinculador eliminará automáticamente el código de simulador.
+Las compilaciones de marco y biblioteca estáticas de Intune App SDK son archivos binarios universales. Esto significa que tienen código para todas las arquitecturas de simulador y dispositivo. Apple rechazará las aplicaciones enviadas a la Tienda de aplicaciones si contienen código de simulador. Cuando se compila con la biblioteca estática para las compilaciones solo de dispositivos, el vinculador eliminará automáticamente el código de simulador. Siga los pasos siguientes para asegurarse de que se quite todo el código de simulador antes de cargar la aplicación a la Tienda de aplicaciones.
 
 1. Asegúrese de que `IntuneMAM.framework` está en el escritorio.
 
@@ -654,6 +656,6 @@ Las compilaciones de marco y biblioteca estáticas de Intune App SDK son archivo
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

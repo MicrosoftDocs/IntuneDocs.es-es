@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 106a39e4c51831a01a88db39270cda07421d2c9a
+ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
+ms.openlocfilehash: 52633b881b0fb4c22848e8e408de7cd183db12df
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: 106a39e4c51831a01a88db39270cda07421d2c9a
 
 # <a name="you-are-asked-to-identify-your-device-when-youre-trying-to-enroll"></a>Se le pedirá que identifique el dispositivo cuando esté intentando la inscripción
 
-Si intenta inscribir el dispositivo iOS o Mac OS X en Intune y ve una pantalla que le pide que identifique el dispositivo, al menos uno de los dispositivos ya se ha inscrito y asignado a su cuenta con un método distinto de la aplicación de portal de empresa. Para que la aplicación de portal de empresa funcione correctamente, debe identificar si el dispositivo que está usando ya se ha inscrito en Intune.
+Si intenta inscribir el dispositivo iOS o macOS en Intune y ve una pantalla que le pide que identifique el dispositivo, al menos uno de los dispositivos ya se ha inscrito y asignado a su cuenta con un método distinto de la aplicación Portal de empresa. Para que la aplicación de portal de empresa funcione correctamente, debe identificar si el dispositivo que está usando ya se ha inscrito en Intune.
 
 1. Si ve el dispositivo en la lista, púlselo. Si no lo ve, pulse **nuevo dispositivo**.
 2. Pulse **continuar**.
@@ -34,6 +34,6 @@ Si intenta inscribir el dispositivo iOS o Mac OS X en Intune y ve una pantalla q
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO1-->
 
 

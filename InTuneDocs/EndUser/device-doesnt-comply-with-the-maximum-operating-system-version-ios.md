@@ -1,11 +1,11 @@
 ---
-title: "El dispositivo iOS no es compatible con la versión máxima de sistema operativo | Microsoft Intune"
+title: "El dispositivo no es compatible con la versión máxima de sistema operativo | Microsoft Intune"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 12/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,19 +15,21 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 2292c3c22671e5e4ea593a1f379ea5ffd4d67d14
+ms.sourcegitcommit: 308706452538ea6d87546d72ca4478b227ced0d6
+ms.openlocfilehash: 928845c6e0bc21ae678fd6ba31c3bd0bbde5d338
 
 
 ---
 
 
-# <a name="ios-device-doesnt-comply-with-the-setting-for-the-latest-operating-system-version"></a>El dispositivo iOS no es compatible con las opciones de configuración de la versión más reciente del sistema operativo.
+# <a name="your-devices-operating-system-version-isnt-yet-supported"></a>La versión del sistema operativo de su dispositivo todavía no es compatible
 
-El dispositivo iOS no cumple con la directiva del administrador de TI de la versión más reciente del sistema operativo que se puede utilizar. Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+Debido al rápido ritmo del desarrollo de las tecnologías móviles, a veces es posible que su dispositivo esté más adelantado que los elementos que su administrador de TI haya podido probar. Es posible que la versión más reciente de iOS no funcione con algunas de las otras herramientas de la empresa.
+
+Deberá ponerse en contacto con el administrador de TI para solucionar este problema. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

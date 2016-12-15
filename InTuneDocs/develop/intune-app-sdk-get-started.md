@@ -1,21 +1,21 @@
 ---
-title: "Introducción al SDK para aplicaciones de Microsoft Intune | Microsoft Intune"
+title: "Introducción al SDK para aplicaciones de Microsoft Intune | Microsoft Docs"
 description: 
 keywords: 
-author: Msmbaldwin
-manager: jeffgilb
+author: mtillman
+manager: angrobe
 ms.author: oydang
-ms.date: 09/08/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
-ms.reviewer: jeffgilb
+ms.reviewer: oydang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ca4623db80d711f3543b6d688fb1bb1ef228c62c
-ms.openlocfilehash: 2a65ae79a0bba21d555dbed9f1bc40e01452f08c
+ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
+ms.openlocfilehash: 7372cdd1c1001d621ba8374284e814951f55ef93
 
 
 ---
@@ -85,11 +85,11 @@ Para integrar el SDK de aplicaciones de Intune en la aplicación de Android nati
 
 Para compilar aplicaciones de Cordova con el complemento Cordova del SDK para aplicaciones de Intune, necesitará lo siguiente:
 
-* **[Guía de complemento Cordova de SDK para aplicaciones de Intune](intune-app-sdk-cordova)**: este documento le ayudará a crear aplicaciones iOS y Android con Cordova para la administración de aplicaciones móviles de Intune.
+* **[Guía de complemento Cordova de SDK para aplicaciones de Intune](intune-app-sdk-cordova.md)**: este documento le ayudará a crear aplicaciones iOS y Android con Cordova para la administración de aplicaciones móviles de Intune.
 
 Para compilar aplicaciones de Xamarin con el complemento Xamarin del SDK para aplicaciones de Intune, necesitará lo siguiente:
 
-* **[Guía de complemento Xamarin de SDK para aplicaciones de Intune](intune-app-sdk-xamarin)**: este documento le ayudará a crear aplicaciones iOS y Android con Cordova para la administración de aplicaciones móviles de Intune.
+* **[Guía de complemento Xamarin de SDK para aplicaciones de Intune](intune-app-sdk-xamarin.md)**: este documento le ayudará a crear aplicaciones iOS y Android con Cordova para la administración de aplicaciones móviles de Intune.
 
 
 
@@ -118,6 +118,6 @@ Cuando haya completado los pasos necesarios para integrar la aplicación iOS o A
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 
