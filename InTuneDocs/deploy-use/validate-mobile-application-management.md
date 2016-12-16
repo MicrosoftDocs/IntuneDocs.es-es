@@ -2,8 +2,8 @@
 title: "Validación de la configuración de MAM | Microsoft Docs"
 description: "En este tema se describe cómo puede probar y verificar si su directiva de MAM está configurada correctamente y funciona según lo esperado."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angerobe
 ms.date: 08/16/2016
 ms.topic: article
