@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: a08a9865463edcea2308df33fb40635d9466091f
+ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
+ms.openlocfilehash: 8a8f3416f22cb5ce11fe0951f126d8ce36a248bd
 
 
 ---
@@ -24,7 +24,7 @@ ms.openlocfilehash: a08a9865463edcea2308df33fb40635d9466091f
 
 # <a name="sync-your-ios-device-manually"></a>Sincronización manual del dispositivo iOS
 
-Si la instalación de la aplicación está tardando demasiado, puede intentar sincronizar el dispositivo manualmente. La sincronización manual puede ayudar a acelerar la instalación. La característica de sincronización solo se aplica a iOS, no a Mac OS X.
+Si la instalación de la aplicación está tardando demasiado, puede intentar sincronizar el dispositivo manualmente. La sincronización manual puede ayudar a acelerar la instalación. La característica de sincronización solo se aplica a iOS, no a macOS.
 
 1. Abra la aplicación del portal de empresa de iOS.
 
@@ -42,6 +42,6 @@ Aparece en pantalla un círculo que gira hasta que finalice la sincronización.
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: Acerca del portal de empresa | Microsoft Intune
+title: "¿Qué es el portal de empresa? | Microsoft Intune"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 12/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: adf7fc0b7ddeb7fa8361d37efd0fdd5c714a72e4
+ms.sourcegitcommit: 3891d0389df3526ea328fc2952e3d181b1e766c0
+ms.openlocfilehash: a0424ada754a210fb34acd49cf47d1c457ed86af
 
 
 ---
@@ -42,7 +42,7 @@ Para saber qué puede hacer con el sitio web de Portal de empresa en vez de usar
 
 > [!div class="op_single_selector"]
 - [Android](using-your-android-device-with-intune.md)
-- [iOS y Mac OS X](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [iOS y macOS](using-your-ios-or-mac-os-x-device-with-intune.md)
 - [Windows](using-your-windows-device-with-intune.md)
 - [Sitio web del Portal de empresa](using-the-intune-company-portal-website.md)
 
@@ -53,12 +53,12 @@ Para saber lo que el administrador de TI puede y no puede ver en su dispositivo,
 
 > [!div class="op_single_selector"]
 - [Android](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
-- [iOS y Mac OS X](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+- [iOS y macOS](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 - [Windows](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md)
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>¿Qué tipos de equipos o dispositivos se pueden agregar al Portal de empresa?
 
--   iPhone, iPad y dispositivos Mac OS X
+-   iPhone, iPad y dispositivos macOS
 
 -   Dispositivos móviles Android
 
@@ -75,7 +75,7 @@ Al *quitar* un equipo o dispositivo, está anulando la inscripción el dispositi
 
 > [!div class="op_single_selector"]
 - [Android](unenroll-your-device-from-intune-android.md)
-- [iOS y Mac OS X](unenroll-your-device-from-intune-ios.md)
+- [iOS y macOS](unenroll-your-device-from-intune-ios.md)
 - [Windows](unenroll-your-device-from-intune-windows.md)
 
 Al *restablecer* un equipo o dispositivo, el portal de empresa intenta restablecer la configuración predeterminada de fábrica del equipo o dispositivo. Si restablece el dispositivo, se quitarán todos los datos personales y de empresa del dispositivo. Si ha perdido el dispositivo, lo puede restablecer también de forma remota desde el sitio web del portal de empresa.
@@ -84,7 +84,7 @@ Para saber cómo se restablece un dispositivo, seleccione uno de los siguientes 
 
 > [!div class="op_single_selector"]
 - [Android](reset-erase-your-lost-or-stolen-device-android.md)
-- [iOS y Mac OS X](reset-erase-your-lost-or-stolen-device-ios.md)
+- [iOS y macOS](reset-erase-your-lost-or-stolen-device-ios.md)
 - [Windows](reset-erase-your-lost-or-stolen-device-windows.md)
 - [Restablecer un dispositivo desde el sitio web del Portal de empresa](reset-your-device-cpwebsite.md)
 
@@ -96,6 +96,6 @@ Si necesita ayuda, póngase en contacto con el Administrador de TI. Para averigu
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

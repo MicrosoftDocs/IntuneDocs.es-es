@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 12/06/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,25 +15,28 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 016449720f6e77b8862fcaa232d252eefa8b20b3
-ms.openlocfilehash: 5b7586c57f3f2825edfa9ae45a3fdec9af0fe956
+ms.sourcegitcommit: 06da6823465521b5784188123aab3544fef9fc2e
+ms.openlocfilehash: 4c58060bad8b269394e577df5bb3ccd50b8fa97b
 
 
 ---
 
+# <a name="your-android-device-is-rooted-so-you-cant-connect"></a>El dispositivo Android se ha modificado y no se puede conectar
 
-# <a name="your-android-device-is-rooted-and-you-cant-connect"></a>El dispositivo Android se ha modificado y no se puede conectar
+Está aquí porque vio un mensaje que le indicaba que el dispositivo se _modificó_.
 
-Cuando el dispositivo Android se ha modificado, este se ha cambiado para habilitar determinadas funcionalidades que podrían poner en peligro la seguridad y los recursos de empresa. Si ve este mensaje, no podrá tener acceso a los recursos de la empresa hasta que se resuelva el problema.
+Sin un dispositivo Android se "modificó", significa que parte del software del dispositivo se cambió para permitir funcionalidades que, de otro modo, no estarían disponibles. A menudo, estas modificaciones pueden afectar el acceso seguro a los recursos de la empresa, como son el correo electrónico y los documentos. Por lo tanto, se impide usar los dispositivos modificados para obtener acceso a estos recursos hasta que se solucione el problema.  
 
-Si cree que no ha hecho nada para modificar deliberadamente el dispositivo, consulte estos otros motivos que podrían justificar la modificación del dispositivo:
+Hay un par de formas comunes en las que se pudo haber modificado el dispositivo:
 
-- Es posible que haya instalado una aplicación en el dispositivo que el software de detección de modificaciones considere que supone un riesgo para la seguridad. Si ve este mensaje después de que instale una aplicación, puede probar a desinstalarla para ver si sirve de ayuda.
+- Es posible que haya instalado una aplicación en el dispositivo que el software de detección de modificaciones considere que supone un riesgo para la seguridad. Si ve este mensaje inmediatamente después de instalar una aplicación, intente desinstalarla.
 
-- El fabricante del dispositivo instaló software en el dispositivo que el software de detección de modificaciones considera que supone un riesgo para la seguridad. Póngase en contacto con el administrador de TI para obtener ayuda. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+- El fabricante del dispositivo instaló software en el dispositivo que el software de detección de modificaciones considera que supone un riesgo para la seguridad. En este caso, póngase en contacto con el administrador de TI para obtener ayuda. Para averiguar su información de contacto, vaya al [sitio web Portal de empresa](http://portal.manage.microsoft.com).
+
+Si usted mismo modificó el dispositivo, deberá revertir el proceso y restaurar el dispositivo.
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 
