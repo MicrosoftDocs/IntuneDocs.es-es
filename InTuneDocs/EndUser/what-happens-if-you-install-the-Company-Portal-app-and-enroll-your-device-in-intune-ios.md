@@ -1,5 +1,5 @@
 ---
-title: "¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo iOS o Mac OS X en Intune? | Microsoft Intune"
+title: "¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo iOS o macOS en Intune? | Microsoft Intune"
 description: 
 keywords: 
 author: barlanmsft
@@ -15,16 +15,16 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 737effbcd9d7e70186d874c3aefd8afaab05fca8
+ms.sourcegitcommit: e007f666d2c179dd1dc4bcdd1265cecf8b9e5358
+ms.openlocfilehash: 4d169a5d9f27037378df6f2e3b1997ebbc9e8ab7
 
 
 ---
 
 
-# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-mac-os-x-device-in-intune"></a>¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo iOS o Mac OS X en Intune?
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-macos-device-in-intune"></a>¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo iOS o macOS en Intune?
 
-Al instalar la aplicación Portal de empresa e inscribir su dispositivo iOS o Mac OS X en Intune, puede usar la aplicación Portal de empresa para:
+Al instalar la aplicación Portal de empresa e inscribir su dispositivo iOS o macOS en Intune, puede usar la aplicación Portal de empresa para:
 
 -   Acceder a la red, el correo electrónico y los archivos de trabajo de la empresa.
 
@@ -96,6 +96,6 @@ Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 
