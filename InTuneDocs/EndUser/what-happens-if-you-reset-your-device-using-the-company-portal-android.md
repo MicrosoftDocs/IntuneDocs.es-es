@@ -1,5 +1,5 @@
 ---
-title: "¿Qué ocurre si restablece un dispositivo Android mediante el Portal de empresa? | Microsoft Intune"
+title: "¿Qué ocurre si restablece un dispositivo Android mediante el Portal de empresa? | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 967d403b1fd2c4efd7129842d98ceda4a02c46be
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: a696858380fe15efd4e40db9f2b4c6b5157051bc
 
 
 ---
@@ -36,6 +36,6 @@ Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para 
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 
