@@ -1,5 +1,5 @@
 ---
-title: "¿Qué ocurre si anula la inscripción del dispositivo Windows de Intune? | Microsoft Intune"
+title: "¿Qué ocurre si anula la inscripción del dispositivo Windows de Intune? | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -15,8 +15,8 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 5cf2e7e821f962d2f12813062cc30b724e2fc45a
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 7a04c458044bf5e3ec5e050da7cf80f8dc924221
 
 
 ---
@@ -89,6 +89,6 @@ Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para 
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 
