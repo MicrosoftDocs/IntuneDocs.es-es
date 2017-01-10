@@ -21,6 +21,9 @@ ms.openlocfilehash: e373fe71f54472bca538ba4a14beff39d090e23d
 ---
 
 # <a name="what-is-intune"></a>¿Qué es Intune?
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune es un servicio de administración de movilidad empresarial (EMM) basado en nube que ayuda a los empleados a ser productivos mientras mantiene protegidos los datos corporativos. Intune permite:
 * Administrar los dispositivos móviles que los empleados usan para tener acceso a datos de la empresa.
 * Administrar las aplicaciones móviles que usa la plantilla.
