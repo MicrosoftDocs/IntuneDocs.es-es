@@ -1,11 +1,11 @@
 ---
-title: Restringir el acceso a Skype Empresarial Online | Microsoft Intune
+title: Proteger el acceso a Skype Empresarial Online | Microsoft Docs
 description: Proteja y controle el acceso a Skype Empresarial Online con el acceso condicional.
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,21 @@ ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 04fcdceb593051a32b715cb39b53cc328f167d09
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 37915fcfc0f10e65aa65d400422d72adc63513fa
 
 
 ---
 
-# <a name="restrict-access-to-skype-for-business-online-with-microsoft-intune"></a>Restringir el acceso a Skype Empresarial Online con Microsoft Intune
+# <a name="protect-access-to-skype-for-business-online-with-microsoft-intune"></a>Proteger el acceso a Skype Empresarial Online con Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Puede usar una directiva de acceso condicional para **Skype Empresarial Online** a fin de controlar el acceso a Skype Empresarial Online.
 El acceso condicional tiene dos componentes:
 - Una directiva de cumplimiento del dispositivo con la que debe cumplir el dispositivo para que se considere conforme.
 - Una directiva de acceso condicional, donde se especifican las condiciones que debe cumplir el dispositivo para que tenga acceso al servicio.
-Para más información sobre cómo funciona el acceso condicional, consulte el artículo [Restringir el acceso al correo electrónico y los servicios de O365](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+Para más información sobre cómo funciona el acceso condicional, consulte el artículo [Proteger el acceso al correo electrónico y los servicios de O365](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 Cuando un usuario determinado intenta usar Skype Empresarial Online en su dispositivo, se produce la siguiente evaluación:
 
@@ -117,6 +120,6 @@ Seleccione cualquier grupo de dispositivos móviles. Luego, en la pestaña **Dis
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 
