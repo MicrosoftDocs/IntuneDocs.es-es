@@ -7,7 +7,7 @@
 ### [Otras opciones y extras](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [Convertir a una suscripción de pago](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
 ## [Escenarios frecuentes](understand-explore/common-ways-to-use-intune.md)
-## [Glosario](understand-explore/intune-glossary.md)
+
 
 # [Introducción](get-started/get-started.md)
 ## [Configuración de Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
@@ -42,8 +42,9 @@
 ## [Sección 9: Pruebas y validación](plan-design/section-9-test-and-validation.md)
 ## [Recursos adicionales](plan-design/additional-resources.md)
 
-# Novedades
+# [Novedades](whats-new/whats-new-in-microsoft-intune.md)
 ## [Novedades](whats-new/whats-new-in-microsoft-intune.md)
+## [Novedades en la vista previa de Azure](/intune-azure/introduction/whats-new?toc=%2fintune%2ftoc.json)
 ## [Archivo de novedades](whats-new/whats-new-archive.md)
 
 # Implementación y uso
@@ -216,7 +217,9 @@
 
 ## [Solucionar problemas de integración de Lookout](troubleshoot/troubleshooting-lookout-integration.md)
 
+# [Glosario](understand-explore/intune-glossary.md)
 
-<!--HONumber=Jan17_HO1-->
+
+<!--HONumber=Jan17_HO2-->
 
 

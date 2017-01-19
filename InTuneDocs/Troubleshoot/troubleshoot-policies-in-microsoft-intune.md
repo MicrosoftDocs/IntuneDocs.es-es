@@ -1,17 +1,22 @@
---
-# <a name="required-metadata"></a>metadatos necesarios
+---
+title: "Directivas de solución de problemas | Microsoft Docs"
+description: "Solucionar problemas de configuración de directivas."
+keywords: 
+author: robstackmsft
+ms.author: robstack
+manager: angrobe
+ms.date: 01/04/2017
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
+ms.reviewer: tscott
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: b28590bdb5a9387331354c8e5766975e3188bb91
+ms.openlocfilehash: e314d247c964b98c4159ca05cd746862d1b0db2e
 
-título: Solucionar problemas de directivas | Descripción de Microsoft Docs: Solucionar problemas de configuración de directivas.
-palabras clave: author: robstackmsft ms.author: robstack manager: angrobe ms.date: 01/04/2017 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
-
-# <a name="optional-metadata"></a>metadatos opcionales
-
-#<a name="robots"></a>ROBOTS:
-#<a name="audience"></a>destinatarios:
-#<a name="msdevlang"></a>ms.devlang:
-ms.reviewer: tscott ms.suite: ems
-#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
-#<a name="mscustom"></a>ms.custom:
 
 ---
 
@@ -95,6 +100,7 @@ Para resolver este problema, establezca la hora del sistema local lo más cercan
 Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el servicio de soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico de Microsoft Intune).
 
 
-<!--HONumber=Jan17_HO1-->
+
+<!--HONumber=Jan17_HO2-->
 
 
