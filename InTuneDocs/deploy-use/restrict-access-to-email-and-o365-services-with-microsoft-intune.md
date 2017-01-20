@@ -14,13 +14,16 @@ ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
-ms.openlocfilehash: e80949d6207c54b9ff576bb63819c8833965a39a
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 911c97a724c28b97bb2bc6e236532e4e0d89c7b1
 
 
 ---
 
 # <a name="protect-access-to-email-office-365-and-other-services-with-microsoft-intune"></a>Proteger el acceso al correo electrónico, a Office 365 y a otros servicios con Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Puede proteger el acceso a su correo electrónico de empresa, a servicios de Office 365 como **Exchange local**, **Exchange Online**, **Exchange Online dedicado**, **SharePoint Online**, **Skype Empresarial Online**, y a otros servicios mediante el acceso condicional de Enterprise Mobility + Security (EMS). Esta característica le permite asegurarse de que el acceso al correo electrónico de la empresa y a los servicios de Office 365 está restringido a los dispositivos compatibles con las reglas de acceso condicional que establece en la consola de administración de Intune o en el Portal de Azure clásico.
 ## <a name="how-does-conditional-access-work"></a>¿Cómo funciona el acceso condicional?
 Puede usar la configuración de la directiva de cumplimiento para evaluar el cumplimiento del dispositivo. La directiva de acceso condicional usa la evaluación para restringir o permitir el acceso a un servicio específico. Cuando usa una directiva de acceso condicional en combinación con una directiva de cumplimiento de dispositivos, solo podrán tener acceso al servicio los dispositivos compatibles. La directiva de cumplimiento y de acceso condicional se implementan en el usuario. Cualquier dispositivo que utilice el usuario para tener acceso a los servicios se somete a comprobaciones para verificar que cumple con las directivas.
@@ -40,7 +43,7 @@ Flujo típico de acceso condicional:
 
 Microsoft Intune y Azure Active Directory (Azure AD) Premium funcionan sin problemas conjuntamente para proporcionar varias capas de control a través del acceso condicional de EMS. Si quiere implementar directivas de acceso condicional con Intune, se le solicitará que tenga licencia para ambos productos.
 
-Las **licencias de Azure AD Premium** pueden comprarse como un servicio independiente o pueden comprarse (junto con Intune) como parte de Enterprise. Si ha implementado directivas de acceso condicional con Intune, asegúrese de que ha obtenido las **licencias de EMS** o de Azure AD Premium correctas.
+Las **licencias de Azure AD Premium** pueden comprarse como un servicio independiente o pueden comprarse (junto con Intune) como parte de un contrato Enterprise. Si ha implementado directivas de acceso condicional con Intune, asegúrese de que ha obtenido las **licencias de EMS** o de Azure AD Premium correctas.
 
 - Más información sobre la [página de precios de Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) o la [página de precios de Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
 
@@ -79,6 +82,6 @@ A diferencia de otras directivas de Intune, no se implementan directivas de acce
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 
