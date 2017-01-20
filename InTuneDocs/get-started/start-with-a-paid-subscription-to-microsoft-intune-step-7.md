@@ -1,11 +1,11 @@
 ---
-title: Personalizar el portal de empresa | Microsoft Intune
+title: Personalizar el portal de empresa | Microsoft Docs
 description: "El Portal de empresa de Intune permite a los usuarios realizar tareas comunes como inscribir dispositivos, instalar aplicaciones y encontrar información del departamento de TI."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 12/13/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,21 @@ ms.assetid: eb4a9f01-f857-4563-ab6f-5d0d7dfa659d
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 04cccd410417dca4477c0d6cd61b0940dda8c389
+ms.sourcegitcommit: 77f1af3a07e5a5758227c81010ce853906803b08
+ms.openlocfilehash: f103a919d0708c2925cb6af4cf7231ed05029e46
 
 
 ---
 
 # <a name="customize-the-company-portal"></a>Personalizar el portal de empresa
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 El portal de empresa de Intune es el lugar donde los usuarios tienen acceso a los datos de la empresa y pueden realizar tareas habituales como, por ejemplo, inscribir dispositivos, instalar aplicaciones y buscar información de ayuda del departamento de TI.
 
 El Portal de empresa de Microsoft Intune proporciona a los usuarios acceso a aplicaciones y datos de la empresa. El Portal de empresa está disponible en dos formas:
 
--   **Aplicación del Portal de empresa**: una aplicación que está disponible en dispositivos administrados con Intune. Obtenga más información sobre las aplicaciones de Portal de empresa para [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune) y [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
+-   **Aplicación del Portal de empresa**: una aplicación que está disponible en dispositivos administrados con Intune. Obtenga más información sobre las aplicaciones de Portal de empresa para [Android](/Intune/EndUser/using-your-android-device-with-intune), [iOS](/Intune/EndUser/using-your-iOS-or-macOS-device-with-intune) y [Windows](/Intune/EndUser/using-your-windows-device-with-intune).
 
 
 - **El sitio web del Portal de empresa**: un sitio web que permite a los usuarios finales realizar la mayor parte de las tareas que pueden hacer desde la aplicación del Portal de empresa. La dirección URL del Portal de empresa de Intune es [http://portal.manage.microsoft.com](http://portal.manage.microsoft.com). Obtenga más información sobre este sitio web en [Usar el sitio web del Portal de empresa de Intune](/Intune/EndUser/using-the-intune-company-portal-website).
@@ -42,11 +45,6 @@ Estas son algunas de las tareas que los usuarios pueden hacer en el Portal de em
 -   Bloquear de forma remota su dispositivo
 -   Descargar el software implementado por la organización
 -   Ponerse en contacto con el departamento de TI para obtener ayuda
-
-> [!NOTE]
-> La aplicación de portal de empresa todavía no está disponible en determinados países.
-> __iOS__: la aplicación de portal de empresa para iOS se ha publicado en [todos los territorios disponibles](https://go.microsoft.com/fwlink/?linkid=831284) de la Apple iOS App Store.
-> __Android__: la aplicación del Portal de empresa para Android no está disponible actualmente en China. Para estos países, una solución alternativa es [transferir localmente la versión de Android de la aplicación de portal de empresa](https://www.microsoft.com/en-us/download/details.aspx?id=49140).  
 
 ## <a name="customize-company-portal-settings"></a>Personalizar la configuración del Portal de empresa
 Con la personalización del portal de empresa, es más fácil ofrecer una experiencia conocida y útil a los usuarios finales. Inicie sesión en la [consola de administrador de Microsoft Intune](https://manage.microsoft.com) como administrador de inquilinos o de servicios, elija **Administración** &gt; **Portal de empresa** y configure el Portal de empresa.
@@ -91,6 +89,6 @@ Después de guardar los cambios puede usar los vínculos que aparecen en la part
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 
