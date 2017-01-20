@@ -86,15 +86,17 @@ Este artículo proporciona respuestas a algunas preguntas frecuentes en la admin
 
   2. **¿Qué se cifra?** Solo se cifran los datos marcados como "corporativos" según la directiva de protección de la aplicación del administrador de TI. Los datos se consideran "corporativos" cuando se originan desde una ubicación de la empresa. Para las aplicaciones de Office, Intune considera las siguientes ubicaciones de la empresa: correo electrónico (Exchange) o almacenamiento en la nube (aplicación OneDrive con una cuenta de OneDrive para la Empresa). Para las aplicaciones de línea de negocio habilitadas por la herramienta de ajuste de aplicaciones de Intune, todos los datos de aplicaciones se consideran "corporativos".
 
-**¿Cómo Intune borra los datos de forma remota?** Intune puede borrar los datos de aplicaciones de dos maneras diferentes: borrado completo y borrado selectivo. Para obtener más información sobre el borrado remoto, consulte [Ayudar a proteger sus datos con el borrado completo o selectivo con Microsoft Intune](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md).
+**¿Cómo Intune borra los datos de forma remota?** Intune puede borrar los datos de la aplicación de tres maneras diferentes: borrado completo del dispositivo, borrado selectivo para MDM y borrado selectivo de MAM. Para obtener más información sobre el borrado remoto para MDM, consulte [Ayudar a proteger sus datos con el borrado completo o selectivo con Microsoft Intune](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md). Para obtener más información acerca del borrado selectivo mediante MAM, consulte [Borrar los datos administrados de la aplicación de la empresa con Microsoft Intune](wipe-managed-company-app-data-with-microsoft-intune.md)
 
   1. **¿Qué es el borrado completo?** [Borrado completo](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe) quita todos los datos de usuario y la configuración del **dispositivo** restaurando el dispositivo a la configuración predeterminada de fábrica. El dispositivo se quita de Intune.
   >[!NOTE]
   > El borrado completo solo se puede lograr en dispositivos inscritos con la administración de dispositivos móviles de Intune (MDM).
 
-  2. **¿Qué es el borrado selectivo?** Consulte [Ayudar a proteger los datos con el borrado selectivo o completo mediante Microsoft Intune](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe) para leer sobre el borrado selectivo.
+  2. **¿Qué es el borrado selectivo para MDM?** Consulte [Ayudar a proteger los datos con el borrado selectivo o completo mediante Microsoft Intune](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe) para leer sobre el borrado selectivo.
 
-  3. **¿Con qué rapidez se produce el borrado selectivo?** Si el usuario está utilizando la aplicación cuando se inicia el borrado selectivo, Intune App SDK comprueba cada 30 minutos una solicitud de borrado selectivo desde el servicio Intune MAM. También comprueba el borrado selectivo cuando el usuario inicia la aplicación por primera vez e inicia sesión con su cuenta profesional o educativa.
+  3. **¿Qué es el borrado selectivo para MAM?** El borrado selectivo de MAM simplemente quita los datos de la aplicación de empresa de la aplicación. La solicitud se inicia mediante el Portal de Intune Azure. Para obtener información sobre cómo iniciar una solicitud de borrado, consulte [Borrar los datos administrados de la aplicación de la empresa con Microsoft Intune](wipe-managed-company-app-data-with-microsoft-intune.md)
+
+  4. **¿Con qué rapidez se produce el borrado selectivo para MAM?** Si el usuario está utilizando la aplicación cuando se inicia el borrado selectivo, Intune App SDK comprueba cada 30 minutos una solicitud de borrado selectivo desde el servicio Intune MAM. También comprueba el borrado selectivo cuando el usuario inicia la aplicación por primera vez e inicia sesión con su cuenta profesional o educativa.
 
 **¿Por qué no funcionan los servicios locales con aplicaciones protegidas de Intune?** La protección de aplicaciones de Intune depende de la identidad del usuario para ser coherente entre la aplicación e Intune App SDK. La única manera de garantizar esto es a través de la autenticación moderna. Hay escenarios en los que las aplicaciones pueden funcionar con una configuración local, pero no son coherentes ni ofrecen garantías.
 
@@ -110,6 +112,6 @@ Este artículo proporciona respuestas a algunas preguntas frecuentes en la admin
 **Puedo usar la extensión de recursos compartidos de iOS para abrir los datos profesionales o educativos en aplicaciones no administradas, incluso con la directiva de transferencia de datos establecida en "Solo aplicaciones administradas" o "Ninguna aplicación". ¿No es esto una pérdida de datos?** La directiva de protección de aplicaciones de Intune no puede controlar la extensión de recursos compartidos de iOS sin administrar el dispositivo. Por lo tanto, Intune _**cifra los datos "corporativos" antes de compartirlos fuera de la aplicación**_. Puede validar esto intentando abrir el archivo "corporativo" fuera de la aplicación administrada. El archivo debe estar cifrado y no debe poder abrirse fuera de la aplicación administrada.
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 

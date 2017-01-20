@@ -1,5 +1,5 @@
 ---
-title: Uso de un dispositivo Android con Intune | Microsoft Intune
+title: Uso de un dispositivo Android con Intune | Microsoft Docs
 description: "Lista de vínculos a tareas que los usuarios finales pueden realizar en su dispositivo móvil Android cuando este está inscrito en Intune"
 keywords: 
 author: barlanmsft
@@ -14,8 +14,8 @@ ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 7751d5661f3fb9235820c716fdbded3dab385ec4
+ms.sourcegitcommit: b264ea53e727f706bc635ed9c738ad605e1ac750
+ms.openlocfilehash: a88b0eafdf72f00b5c28d0347010eeee3c9effc4
 
 
 ---
@@ -59,22 +59,22 @@ La información de esta sección ayuda a los usuarios con acciones que pueden ll
 La información de esta sección ayuda a los usuarios a solucionar problemas que podrían encontrarse al inscribir su dispositivo Android en Intune.
 
 - [Usar Registro detallado para ayudar al administrador de TI a solucionar los problemas del dispositivo](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-- [Enviar registros de datos de diagnóstico al administrador de TI mediante correo electrónico](send-diagnostic-data-logs-to-your-it-administrator-using-email-android.md)
-- [Enviar registros de datos de diagnóstico al administrador de TI mediante un cable USB](send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android.md)
-- [Enviar errores de inscripción al administrador de TI](send-enrollment-errors-to-your-it-administrator-android.md)
-- [El dispositivo no tiene la versión necesaria mínima del sistema operativo](device-doesnt-have-the-required-minimum-operating-system-version-android.md)
-- [El dispositivo no es compatible con la versión máxima de sistema operativo](device-doesnt-comply-with-maximum-operating-system-version-android.md)
+- [Enviar registros al administrador de TI mediante correo electrónico](send-logs-to-your-it-admin-by-email-android.md)
+- [Enviar registros al administrador de TI mediante un cable USB](send-logs-to-your-it-admin-using-cable-android.md)
+- [Enviar errores de inscripción al administrador de TI](send-enrollment-errors-to-your-it-admin-android.md)
+- [El dispositivo no tiene la versión necesaria mínima del sistema operativo](you-need-to-update-your-android-device.md)
+- [El dispositivo no es compatible con la versión máxima de sistema operativo](your-android-version-isnt-yet-supported.md)
 - [El dispositivo se ha modificado y no se puede conectar](your-device-is-rooted-and-you-cant-connect-android.md)
-- [El dispositivo no tiene un certificado necesario](your-device-is-missing-a-required-certificate-android.md)
-- [Se le pide que desactive Orígenes desconocidos](you-are-asked-to-turn-off-unknown-sources-android.md)
+- [El dispositivo no tiene un certificado necesario](your-device-is-missing-a-required-certificate-landing-android.md)
+- [Se le pide que desactive los orígenes desconocidos](you-are-asked-to-turn-off-unknown-sources-android.md)
 - [Se le pide que desactive Depuración USB](you-are-asked-to-turn-off-usb-debugging-android.md)
-- [Se le pide activar Buscar amenazas de seguridad en el dispositivo](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
+- [Se le pide que active las amenazas de seguridad](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
 - [El dispositivo no tiene la revisión de seguridad mínima](your-device-does-not-meet-the-minimum-security-patch-android.md)
 - [Se le pide instalar Lookout for Work en un dispositivo Android](you-are-prompted-to-install-lookout-for-work-android.md)
 - [Debe solucionar una amenaza detectada por Lookout for Work en el dispositivo Android](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 

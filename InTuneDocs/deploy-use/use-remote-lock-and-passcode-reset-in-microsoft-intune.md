@@ -1,11 +1,11 @@
 ---
-title: "Restablecimiento de código de acceso y bloqueo remoto | Microsoft Intune"
+title: "Restablecimiento de código de acceso y bloqueo remoto | Microsoft Docs"
 description: "Intune proporciona funcionalidades de restablecimiento de código de acceso y de bloqueo remoto."
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/08/2016
+ms.date: 01/06/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,15 +13,20 @@ ms.technology:
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 translationtype: Human Translation
-ms.sourcegitcommit: aae739b5ea8640449f180535a6d8f1550c7ae228
-ms.openlocfilehash: 8dc7f1c7eb32828854b4e2309c915f4fd0cba9a2
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: b3504cc1aab8bbe553581d822af63363668a8ef7
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Ayudar a proteger los dispositivos con el restablecimiento de código de acceso y el bloqueo remoto
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune proporciona funcionalidades de restablecimiento de código de acceso y de bloqueo remoto.
 
 ## <a name="lock-a-device-remotely"></a>Bloquear un dispositivo de forma remota
-Si un usuario pierde su dispositivo, es posible bloquearlo de forma remota. La tabla siguiente muestra el modo en que se puede usar el bloqueo remoto en distintas plataformas móviles.
+Si un usuario pierde su dispositivo, es posible bloquearlo de forma remota. El dispositivo debe tener ya un PIN o código de acceso establecido en él para poder usar el bloqueo remoto. 
+
+La tabla siguiente muestra el modo en que se puede usar el bloqueo remoto en distintas plataformas móviles.
 
 |Plataforma|Bloqueo remoto|
 |------------|---------------|
@@ -79,6 +84,6 @@ No se admite el restablecimiento de código de acceso para equipos Windows inscr
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Jan17_HO2-->
 
 

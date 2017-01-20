@@ -1,6 +1,6 @@
 ---
-title: "Creación de grupos para organizar usuarios y dispositivos | Microsoft Intune"
-description: "Creación de usuarios y grupos para la suscripción de Intune."
+title: "Creación de grupos para organizar usuarios y dispositivos | Microsoft Docs"
+description: "Crear usuarios y grupos para la suscripción de Intune"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,14 +14,17 @@ ms.assetid: 5fdf98c8-fe67-4d7a-9837-ed1234348014
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 85b2e7c50f4ea1e07bd1474e3902cebcbccc1467
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 446156265047994f0a15890d7699991d032c0bd5
 
 
 ---
 
 
 # <a name="create-groups-to-organize-users-and-devices"></a>Creación de grupos para organizar usuarios y dispositivos
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Los grupos de Intune ofrecen una gran flexibilidad para administrar dispositivos y usuarios. Puede configurar los grupos para que se adapten a las necesidades de su organización (por ejemplo, por ubicación geográfica, departamento o características del hardware) y usarlos para realizar una amplia variedad de tareas administrativas, desde implementar directivas para un conjunto de usuarios hasta implementar aplicaciones en un conjunto de dispositivos.
 
 ## <a name="group-management-moving-to-azure-ad"></a>Movimiento de la administración de grupos a Azure AD
@@ -84,6 +87,6 @@ Encontrará el grupo recién creado en la lista **Grupos** del área de trabajo 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 
