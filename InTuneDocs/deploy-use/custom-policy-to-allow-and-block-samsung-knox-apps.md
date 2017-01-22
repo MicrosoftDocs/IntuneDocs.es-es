@@ -1,5 +1,5 @@
 ---
-title: Aplicaciones permitidas y bloqueadas para KNOX | Microsoft Intune
+title: Aplicaciones permitidas y bloqueadas para KNOX | Microsoft Docs
 description: Perfil personalizado para crear una lista de aplicaciones permitidas y bloqueadas para KNOX
 keywords: 
 author: robstackmsft
@@ -14,13 +14,15 @@ ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 9fa2de1d7e36f53415e28a7c963232eecb9bc5ca
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: be3cfc0120caf6e702139b829fc6ee1fa9bf9a1e
 
 
 
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Uso de directivas personalizadas para permitir y bloquear aplicaciones para dispositivos Samsung KNOX Standard
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Use los procedimientos de este tema para crear una directiva personalizada de Microsoft Intune que cree una de las siguientes opciones:
 
@@ -72,6 +74,6 @@ Cuando se selecciona una directiva implementada, puede ver más información ace
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

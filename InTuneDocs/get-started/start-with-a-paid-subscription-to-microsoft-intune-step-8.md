@@ -1,5 +1,5 @@
 ---
-title: "Habilitar la inscripción de dispositivos | Microsoft Intune"
+title: "Habilitar la inscripción de dispositivos | Microsoft Docs"
 description: "Establezca la entidad de MDM y habilite la inscripción para dispositivos iOS, Windows, Android y Mac."
 keywords: 
 author: nathbarn
@@ -14,13 +14,16 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 031cf995da4fa46b244b65a6b1c51b6a1aa00d9f
-ms.openlocfilehash: 8c3076b26844669f9927478b5847f88f2265c6c9
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 654c5b65a9fde6742f3682b1fd5ba6c056d0d45b
 
 
 ---
 
 # <a name="enroll-mobile-devices-and-install-an-app"></a>Inscripción de dispositivos móviles e instalación de una aplicación
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Para configurar la administración de dispositivos móviles con Intune, primero debe establecer la *autoridad de administración de dispositivos móviles*, que identifica el servicio que puede administrar los dispositivos asociados a su cuenta. En esta guía se asume que usará el servicio de Intune en lugar de System Center Configuration Manager. Una vez establecida la entidad de MDM, puede habilitar la administración para plataformas de dispositivos e inscribir sus dispositivos con la aplicación del Portal de empresa.
 
 ## <a name="enable-device-enrollment"></a>Permitir la inscripción de dispositivos
@@ -66,6 +69,6 @@ Enhorabuena. Acaba de completar el último paso de la *Guía de inicio rápido d
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

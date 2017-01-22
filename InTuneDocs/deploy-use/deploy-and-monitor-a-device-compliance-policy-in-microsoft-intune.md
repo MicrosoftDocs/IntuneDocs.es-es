@@ -1,5 +1,5 @@
 ---
-title: "Implementación y supervisión de una directiva de cumplimiento normativo | Microsoft Intune"
+title: "Implementación y supervisión de una directiva de cumplimiento normativo | Microsoft Docs"
 description: Siga las instrucciones paso a paso de este tema para implementar y supervisar una directiva de cumplimiento normativo del dispositivo.
 keywords: 
 author: andredm7
@@ -14,13 +14,16 @@ ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: c5c7ed25942a2f7c570bd81aa1e6c08483c0417b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 59c107b9431d4e2925b13d09ab3e01a25c8351fa
 
 
 ---
 
 # <a name="deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune"></a>Implementar y supervisar una directiva de cumplimiento normativo en Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ## <a name="deploy-a-compliance-policy"></a>Implementar una directiva de cumplimiento
 Implemente la directiva de cumplimiento normativo que ha [creado](create-a-device-compliance-policy-in-microsoft-intune.md) en uno o más grupos de usuarios de la organización. Cuando se implementa una directiva de cumplimiento para un usuario, se comprueba el cumplimiento de todos los dispositivos del usuario.
 

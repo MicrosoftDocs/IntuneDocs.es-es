@@ -1,11 +1,11 @@
 ---
-title: "Crear directivas y publicar una aplicación para los usuarios | Microsoft Intune"
+title: "Crear directivas y publicar una aplicación para los usuarios | Microsoft Docs"
 description: "Cómo crear directivas y publicar una aplicación al registrarse para obtener una evaluación gratuita de 30 días de Intune"
 keywords: 
 author: lindavr
 ms.author: lindavr
 manager: angrobe
-ms.date: 08/09/2016
+ms.date: 12/12/2016
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,17 @@ ms.assetid: c3a17884-442a-44f5-bc81-4589e823f65e
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 64f857307046ea061e702d0b383968b322b89c33
+ms.sourcegitcommit: 53b05e0ad1be63315dcb5e5b9938a7d9459cb6c3
+ms.openlocfilehash: edcef68c4dd6715c0e3b7c8a164d6266d1c154ae
 
 
 ---
 
 
 # <a name="create-policies-and-publish-an-app-to-evaluation-users"></a>Crear directivas y publicar una aplicación para los usuarios de evaluación
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Las directivas de Intune proporcionan una configuración con la que es más fácil: controlar la configuración de seguridad en dispositivos móviles, mantener la configuración de Firewall de Windows y Endpoint Protection de los equipos e implementar aplicaciones. Si está planeando usar Intune para los dispositivos que configura para su uso de producción después de la evaluación, es fundamental que siga las instrucciones de [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) y [Ayudar a proteger los equipos de Windows con Endpoint Protection para Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune).
 
 Puede realizar dos tipos de instalaciones de aplicación mediante Intune. El primer tipo es una **instalación requerida**, que implementa automáticamente la aplicación en los dispositivos administrados. El segundo es una **instalación disponible**, que implementa la aplicación o un vínculo a la aplicación de Portal de empresa de Intune, de forma que los usuarios pueden elegir si quieren instalarlo en sus equipos o en sus dispositivos móviles.
@@ -102,6 +105,6 @@ Convertir a una [suscripción de pago](get-started-with-a-30-day-trial-of-micros
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

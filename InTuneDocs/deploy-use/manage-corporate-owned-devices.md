@@ -1,5 +1,5 @@
 ---
-title: Administrar dispositivos corporativos | Microsoft Intune
+title: Administrar dispositivos corporativos | Microsoft Docs
 description: "Inscriba dispositivos corporativos de muchas maneras, según el tipo de dispositivo, cómo se haya adquirido y las necesidades de la organización."
 keywords: 
 author: staciebarker
@@ -14,13 +14,15 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
-ms.openlocfilehash: 2c8dc4917c3ef85955f017c4619c0d7496d03dbf
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 58270feb34185441406abc15e1f889c2924722e8
 
 
 ---
 
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Inscripción de dispositivos corporativos mediante Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Puede inscribir dispositivos corporativos o propiedad de la organización para administrarlos con Intune de muchas maneras, en función del tipo de dispositivo, cómo se haya adquirido y las necesidades de la organización. También puede instalar la aplicación de Portal de empresa para inscribir y administrar dispositivos corporativos, como en un escenario "traiga su propio dispositivo" (BYOD).
 
@@ -63,6 +65,6 @@ Cuando un dispositivo se etiqueta como corporativo, verá **Corporativo** en la 
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

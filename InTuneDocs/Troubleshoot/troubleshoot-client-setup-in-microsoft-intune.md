@@ -1,5 +1,5 @@
 ---
-title: "Solucionar los problemas de configuración del cliente | Microsoft Intune"
+title: "Solucionar los problemas de configuración del cliente | Microsoft Docs"
 description: "Solucione los problemas comunes de configuración de cliente."
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 889a13bd50943b9cdf0f40d50b6f8ce263dde56d
-ms.openlocfilehash: e37b5da81150f89fce1ee3d57bd84de0ff7fb76f
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2d5c7d4800e1140efb502c47151ea8cc87548acd
 
 
 ---
 
 # <a name="troubleshoot-client-setup-in-microsoft-intune"></a>Solucionar los problemas de configuración del cliente en Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use la información siguiente como ayuda para solucionar problemas comunes de configuración del cliente. Si esta información no soluciona el problema, vea [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico para Microsoft Intune) para conocer otras formas de obtener ayuda.
 
 ## <a name="client-installation-fails"></a>Error en la instalación de cliente
@@ -70,7 +73,7 @@ Esto puede deberse a la ausencia de actualizaciones de software imprescindibles 
 **Solución:** asegúrese de que la directiva de actualización de software permite la instalación de actualizaciones imprescindibles, como se describe en [Keep Windows PCs up to date with software updates in Microsoft Intune (Mantener los equipos de Windows al día con actualizaciones de software en Microsoft Intune)](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)
 
 
-## <a name="microsoft-intune-policyrelated-errors-in-policyplatformlog"></a>Errores relacionados con las directivas de Microsoft Intune en policyplatform.log
+## <a name="microsoft-intune-policy-related-errors-in-policyplatformlog"></a>Errores relacionados con las directivas de Microsoft Intune en policyplatform.log
 Para los dispositivos de Windows que no sean de MDM, los errores de directivas del archivo policyplatform.log pueden ser el resultado de opciones de configuración no predeterminadas en el Control de cuentas de usuario (UAC) de Windows en el dispositivo. Algunas opciones de configuración de UAC no predeterminadas pueden afectar a las instalaciones de cliente de Microsoft Intune y a la ejecución de directivas.
 
 ### <a name="to-resolve-uac-issues"></a>Para resolver problemas de UAC
@@ -127,6 +130,6 @@ Si esta información para solucionar problemas no le ha ayudado, póngase en con
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

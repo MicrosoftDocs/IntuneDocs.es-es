@@ -1,5 +1,5 @@
 ---
-title: Aplicaciones Android con directivas MAM | Microsoft Intune
+title: Aplicaciones Android con directivas de MAM | Microsoft Docs
 description: "En este tema se describe qué esperar cuando la aplicación está administrada por directivas de administración de aplicaciones móviles."
 keywords: 
 author: NathBarn
@@ -14,13 +14,16 @@ ms.assetid: 53c8e2ad-f627-425b-9adc-39ca69dbb460
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 945c9f48846fc37358c44b83990feed1f3694966
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: aeacfddb3ed42938dd9443e2734222c977436430
 
 
 ---
 
 # <a name="what-to-expect-when-your-android-app-is-managed-by-mam-policies"></a>What to expect when your Android app is managed by MAM policies (Qué esperar cuando la aplicación Android está administrada por directivas de MAM)
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 En este tema se describe la experiencia del usuario en aplicaciones con directivas de administración de aplicaciones móviles (MAM). Las directivas de MAM solo se aplican cuando se usan aplicaciones en el contexto laboral: por ejemplo, cuando el usuario obtiene acceso a las aplicaciones con la cuenta profesional o a archivos que están almacenados en la ubicación empresarial de OneDrive.
 ##  <a name="access-apps"></a>Acceso a las aplicaciones
 

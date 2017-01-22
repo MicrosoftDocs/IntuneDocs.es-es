@@ -1,11 +1,11 @@
 ---
-title: Proteger dispositivos | Microsoft Intune
+title: Proteger dispositivos | Microsoft Docs
 description: "Obtenga información acerca de algunas de las maneras en que Intune puede ayudarle a proteger los dispositivos contra accesos no autorizados y otras amenazas."
 keywords: 
 author: Robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/01/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: 235db7eb1036bfccd074fd83b4b59e75529a5e34
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 47263a7b0e4255cfa3fe830c969ce6116447ae9f
 
 
 ---
 
 # <a name="protect-devices-with-microsoft-intune"></a>Proteger dispositivos con Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune le ofrece un conjunto de capacidades para que pueda proteger los dispositivos que administra y los datos almacenados en dichos dispositivos. Lea este tema para aprender los conceptos básicos de estas capacidades y descubrir cómo obtener más información.
 
@@ -63,6 +65,6 @@ Intune sigue siendo compatible con las directivas de seguridad para equipos Wind
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: Usar aplicaciones administradas en el dispositivo Android | Microsoft Intune
+title: Usar aplicaciones administradas en el dispositivo Android | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -11,12 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ed10a62c-b026-4ad3-ac41-641933522df2
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: b9764ec0b728ebce48c14fed9e3bb052a43b85fb
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: ca37b4bf393d03e61bed93fa8e7d83efe3922412
 
 
 ---
@@ -76,6 +78,6 @@ Para obtener más información sobre las aplicaciones administradas en el dispos
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

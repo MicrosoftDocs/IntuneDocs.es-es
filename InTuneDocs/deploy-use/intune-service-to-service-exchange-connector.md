@@ -1,5 +1,5 @@
 ---
-title: Exchange Connector para Exchange Online | Microsoft Intune
+title: Exchange Connector para Exchange Online | Microsoft Docs
 description: "Conecte Intune al servicio de Office 365 Exchange para admitir la administración de dispositivos móviles (MDM) de Exchange ActiveSync."
 keywords: 
 author: staciebarker
@@ -14,13 +14,15 @@ ms.assetid: 05fa5dc9-9bad-4557-987a-9b8ce4edebb0
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 6adfb7375f9747f64e7037164f48918789bd7ee0
-ms.openlocfilehash: b6d67391b50954e591817610164d8fe80fda8fd5
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: b322f368637e39da1ab10b41dd724859fb49e1f2
 
 
 ---
 
 # <a name="configure-the-intune-service-to-service-connector-for-exchange-online"></a>Configurar Intune Service to Service Connector para Exchange Online
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Use esta información para conectar Microsoft Intune y Exchange Online o el nuevo servicio Exchange Online dedicado. Para determinar si su entorno Exchange Online dedicado es una versión **nueva** o **heredada**, póngase en contacto con su administrador de cuentas. Intune solo admite una conexión de Exchange Connector de cualquier tipo por suscripción.
 

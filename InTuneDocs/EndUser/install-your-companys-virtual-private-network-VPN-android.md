@@ -1,5 +1,5 @@
 ---
-title: Instalar la red privada virtual (VPN) de la empresa | Microsoft Intune
+title: Instalar la red privada virtual (VPN) de la empresa | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -11,12 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ed4a9f15-72fb-4171-84cb-63d2f1a6d04c
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: f82bc74083f522498425af3a01bf11300b8133ea
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 0df9d0bd3281fac683a5b5b27b320fd17e0f32b6
 
 
 ---
@@ -39,6 +41,6 @@ Si el administrador de TI ha configurado una aplicación de VPN para que pueda c
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: Administrar el acceso web con el explorador administrado | Microsoft Intune
+title: Administrar el acceso web con Managed Browser | Microsoft Docs
 description: "Implemente la aplicación del explorador administrado para restringir la exploración web y la transferencia de datos de web a otras aplicaciones."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: a85aa3ce78425f2e00479ab0e48338e5eef8aec3
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 3982f05e4c81c26d2eb8bdab3a266597d6aab4df
 
 
 ---
 
-# Administrar el acceso a Internet mediante directivas de explorador administrado con Microsoft Intune
+# <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Administrar el acceso a Internet mediante directivas de explorador administrado con Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 El explorador administrado es una aplicación de exploración web que puede implementar en su organización mediante Microsoft Intune. Una directiva de explorador administrado configura una lista de permitidos o una lista de bloqueados que restringe los sitios web que pueden visitar los usuarios del explorador administrado.
 
 Debido a que se trata de una aplicación administrada, también puede aplicarle directivas de administración de aplicaciones móviles. Estas directivas pueden controlar el uso de las funciones de cortar, copiar y pegar, impedir la obtención de capturas de pantalla y garantizar que los vínculos al contenido que los usuarios seleccionan se abran solo en otras aplicaciones administradas. Para obtener más información, vea [Configure and deploy mobile application management policies in the Microsoft Intune console (Configurar e implementar directivas de administración de aplicaciones móviles en la consola de Microsoft Intune)](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
@@ -39,15 +42,15 @@ Puede crear directivas de explorador administrado para los siguientes tipos de d
 
 Intune Managed Browser admite la apertura de contenido web de [Microsoft Intune application partners](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) (Partners de aplicaciones de Microsoft Intune).
 
-## Crear una directiva de explorador administrado
+## <a name="create-a-managed-browser-policy"></a>Crear una directiva de explorador administrado
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), seleccione **Directiva** &gt; **Agregar directiva**.
 
 2.  Configure uno de los siguientes tipos de directivas de **software** :
 
-    -   **Explorador administrado (Android 4 y posterior)**
+    -   **Managed Browser (Android 4 y versiones posteriores)**
 
-    -   **Managed Browser (iOS 8.0 y posterior)**
+    -   **Managed Browser (iOS 8.0 y versiones posteriores)**
 
     Para más información sobre cómo crear e implementar directivas, consulte el tema [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
@@ -65,7 +68,7 @@ Para obtener más información acerca de los formatos de dirección URL que pued
 
 La nueva directiva aparece en el nodo **Directivas de configuración** del área de trabajo **Directiva** .
 
-## Crear una implementación para la aplicación de explorador administrado
+## <a name="create-a-deployment-for-the-managed-browser-app"></a>Crear una implementación para la aplicación de explorador administrado
 Después de crear la directiva de explorador administrado, puede crear una implementación de software para la aplicación de explorador administrado y asociarla a la directiva de explorador administrado que ha creado.
 
 > [!IMPORTANT]
@@ -75,7 +78,7 @@ Implemente la aplicación y asegúrese de seleccionar la directiva de explorador
 
 Para obtener más información sobre cómo implementar aplicaciones, vea [Deploy apps in Microsoft Intune (Implementar aplicaciones en Microsoft Intune)](deploy-apps-in-microsoft-intune.md).
 
-## Seguridad y privacidad del explorador administrado
+## <a name="security-and-privacy-for-the-managed-browser"></a>Seguridad y privacidad del explorador administrado
 
 -   En dispositivos iOS, no se pueden abrir los sitios web que visitan los usuarios y que tienen un certificado expirado o que no es de confianza.
 
@@ -87,12 +90,12 @@ Para obtener más información sobre cómo implementar aplicaciones, vea [Deploy
 
 -   Para permitir la autenticación y garantizar el acceso a la documentación de Intune, **&#42;.microsoft.com** está exento de la configuración de permitidos o bloqueados. Siempre está permitida.
 
-### Desactivar los datos de uso
+### <a name="turn-off-usage-data"></a>Desactivar los datos de uso
 Microsoft recopila automáticamente datos anónimos sobre el rendimiento y el uso del explorador administrado para mejorar sus productos y servicios. Los usuarios pueden usar en sus dispositivos la configuración de **Datos de uso** para desactivar la recopilación de datos. No tiene ningún control sobre la recopilación de estos datos.
 
-## Información de referencia
+## <a name="reference-information"></a>Información de referencia
 
-### Formato de dirección URL para las direcciones URL permitidas y bloqueadas
+### <a name="url-format-for-allowed-and-blocked-urls"></a>Formato de dirección URL para las direcciones URL permitidas y bloqueadas
 Use la siguiente información para conocer los formatos permitidos y los caracteres comodín que puede usar al especificar direcciones URL en las listas de permitidos y bloqueados:
 
 -   Puede usar el carácter comodín (**&#42;**) según las reglas de la siguiente lista de patrones permitidos.
@@ -142,7 +145,7 @@ Use la siguiente información para conocer los formatos permitidos y los caracte
 
     -   http://www.contoso.com: /&#42;
 
-### Cómo se resuelven los conflictos entre las listas de permitidos y bloqueados
+### <a name="how-conflicts-between-the-allow-and-block-list-are-resolved"></a>Cómo se resuelven los conflictos entre las listas de permitidos y bloqueados
 Si se implementan varias directivas de explorador administrado en un dispositivo y la configuración presenta conflictos, tanto el modo (permitir o bloquear) como las listas de direcciones URL se evalúan para detectar conflictos. En caso de conflicto, se aplica el comportamiento siguiente:
 
 -   Si los modos de cada directiva son iguales, pero las listas de direcciones URL son diferentes, las direcciones URL no se aplicarán en el dispositivo.
@@ -155,6 +158,6 @@ Si se implementan varias directivas de explorador administrado en un dispositivo
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

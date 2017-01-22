@@ -1,12 +1,12 @@
 ---
-title: "Evitar pérdidas de datos de empresa desde aplicaciones móviles de Office 365  | Microsoft Intune"
+title: "Evitar pérdidas de datos de empresa desde aplicaciones móviles de Office 365 | Microsoft Docs"
 description: "Use Intune para proteger los datos de su organización mediante directivas de administración de aplicaciones móviles (MAM) que ayudan a evitar pérdidas de datos de empresa desde aplicaciones móviles de Office 365 u otras aplicaciones de línea de negocio (LOB)."
 keywords: 
 author: jeffgilb
 ms.author: jeffgilb
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,13 +14,16 @@ ms.assetid: 19be3de7-539c-49f5-8c46-5363b987fef9
 ms.reviewer: pchacon
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4ee5f39ac31c2a35770b88c937f138f9c0b525b6
-ms.openlocfilehash: bf3976b0ffbcc74f860c904f0e5829a5a02b6a3e
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: 0288ecd940d650304d83b7dd5803a56f69b936f7
 
 
 ---
 
 # <a name="quick-start-guide-prevent-company-data-leaks-from-office-365-mobile-apps"></a>Guía de inicio rápido: Evitar pérdidas de datos de empresa desde aplicaciones móviles de Office 365
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune puede ayudarle a proteger los datos de su organización mediante directivas de administración de aplicaciones móviles (MAM) que ayudan a evitar pérdidas de datos de empresa desde aplicaciones móviles de Office 365 u otras aplicaciones de línea de negocio (LOB). Las directivas de Intune MAM pueden utilizarse sin necesidad de que los usuarios finales inscriban sus dispositivos en la administración de dispositivos móviles de Intune (MDM). Por lo tanto, si tiene usuarios que no desean inscribir sus dispositivos móviles Android o iOS BYOD en una solución de Microsoft MDM (Intune, Configuration Manager o EAS), y desea proteger los datos corporativos sin administrar los dispositivos de los usuarios finales o si ya está utilizando una solución que no es una solución MDM de Microsoft, Intune puede ayudar a aumentar la seguridad de los datos de su empresa.   
 
 ## <a name="is-this-quick-start-guide-right-for-me"></a>¿Es esta guía de inicio rápido adecuada para mí?
@@ -45,6 +48,6 @@ Si la respuesta es sí, Microsoft Intune le permite establecer directivas MAM pa
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

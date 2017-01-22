@@ -1,9 +1,9 @@
 ---
-title: Requisitos previos para directivas de MAM | Microsoft Intune
+title: Requisitos previos para directivas de MAM | Microsoft Docs
 description: "En este tema se describen los requisitos previos de configuración de los usuarios antes de crear directivas de administración de aplicaciones móviles."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 11/29/2016
 ms.topic: article
@@ -14,13 +14,16 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: ac820146d81fb121a60f7029f6a52a0056d6ab0a
+ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
+ms.openlocfilehash: cb525deb240668c0f0f14b19f39eb1226e338629
 
 
 ---
 
 # <a name="get-ready-to-configure-mobile-app-management-policies-on-the-azure-portal"></a>Preparación para configurar directivas de administración de aplicaciones móviles en Azure Portal
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 En este tema se describen los requisitos previos y los pasos que debe completar **antes** de que pueda crear directivas de administración de aplicaciones móviles (MAM) en Azure Portal.
 
 Para comprender de qué modo las directivas de MAM de Intune pueden proteger los datos de su empresa, vea [Proteger aplicaciones y datos con Microsoft Intune](protect-apps-and-data-with-microsoft-intune.md).
@@ -121,6 +124,6 @@ En la tabla siguiente se enumeran los roles y permisos que puede asignar a los u
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

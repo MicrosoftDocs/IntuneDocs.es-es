@@ -1,11 +1,11 @@
 ---
-title: "Personalizar vistas de consola para roles de administración | Microsoft Intune"
+title: "Personalizar vistas de consola para roles de administración | Microsoft Docs"
 description: "Use este tema para ayudarle a filtrar la vista de la consola de administración de Intune para que los administradores solo puedan ver los elementos que necesiten de acuerdo con su rol."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +14,19 @@ ms.assetid: e0783eaa-67dc-410e-9e80-4d3aa72f36d8
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 02448f2f960d98b28780798b469aea23cdab0e2d
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: ee35fb2c8e39af099fb061211ea1fdf767230217
 
 
 ---
 
-# Personalizar vistas de consola de Intune según los roles de administración
+# <a name="customize-intune-console-views-according-to-admin-roles"></a>Personalizar vistas de consola de Intune según los roles de administración
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 La vista de la consola de administración de Microsoft Intune se puede filtrar de forma que los administradores solo puedan ver los elementos que necesiten de acuerdo con su rol. Así, por ejemplo, puede permitir que solo los operadores de la consola de administración actualicen definiciones de malware o restablezcan la contraseña en los dispositivos. Para ello, se usan **designaciones** preestablecidas que se asignan a usuarios específicos. Cuando estos usuarios obtienen acceso a la consola de administración, solo ven los elementos específicos de su designación.
 
-## Para crear una vista personalizada
+## <a name="to-create-a-custom-view"></a>Para crear una vista personalizada
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), elija **Administración**&gt;**Administradores de servicios**.
 
@@ -32,7 +35,7 @@ La vista de la consola de administración de Microsoft Intune se puede filtrar d
 3.  En el cuadro de diálogo **Administrar acceso** , seleccione el nivel de acceso que desea asignar al usuario seleccionado. Puede elegir entre:
 
     -   **Acceso completo**
-    -   **Acceso solo de lectura**
+    -   **Acceso de solo lectura**
     -   **Departamento de soporte técnico: nodo Grupos**
 
     El acceso total y el acceso de solo lectura no necesitan explicación. <!--- **Helpdesk - Groups Node** allows users to choose from one of the following designations that provide custom levels of access to the [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] admin console:--->
@@ -69,6 +72,6 @@ Cuando el administrador configurado abra la consola de administración de Intune
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 
