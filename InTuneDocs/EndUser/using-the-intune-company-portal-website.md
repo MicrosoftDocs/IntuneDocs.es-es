@@ -11,11 +11,13 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
+searchScope:
+- Company Portal
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 1314fad0c387224302a4c2b67c913f9d2ec6c5d4
+ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
+ms.openlocfilehash: d10cc421dc6fe422b7a2c26b4902997c8c6b2e61
 
 
 ---
@@ -46,11 +48,11 @@ Pueden llevar a cabo las siguientes tareas desde el sitio web del Portal de empr
 Los usuarios finales pueden realizar la mayoría de las tareas que hacen en el **sitio web del Portal de empresa** en la **aplicación del Portal de empresa** que instalan en su dispositivo. Consulte las páginas siguientes para obtener vínculos a todas las tareas que pueden realizar los usuarios finales en su dispositivo:
 
 - [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
-- [Uso de un dispositivo iOS o Mac OS con Intune](using-your-ios-or-mac-os-x-device-with-intune.md)
+- [Uso de un dispositivo iOS o Mac OS con Intune](using-your-ios-or-macOS-device-with-intune.md)
 - [Usar un dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

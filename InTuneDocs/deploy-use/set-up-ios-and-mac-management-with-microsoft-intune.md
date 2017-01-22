@@ -14,13 +14,16 @@ ms.assetid: dc451224-1372-4b84-b641-cfa67cb3849b
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: d4dffccca11582b11196c6441ba8828ceeb4ebb8
+ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
+ms.openlocfilehash: 594b6b66a4c756155e958815b926674e63f07bb5
 
 
 ---
 
 # <a name="set-up-ios-and-mac-device-management"></a>Configurar la administración de dispositivos iOS y Mac
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune permite la administración de dispositivos móviles (MDM) de iPad, iPhone y dispositivos Mac OS X y concede acceso a los usuarios al correo electrónico y las aplicaciones de la empresa. El certificado del Servicio de notificaciones push de Apple (APNs) es necesario para que Intune pueda administrar dispositivos iOS y Mac. Una vez que el certificado se agrega a Intune, los usuarios pueden instalar la aplicación Portal de empresa para inscribir sus dispositivos o el administrador puede configurar la [administración de dispositivos iOS de la empresa](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
 1.  **Configurar Intune**<br>
@@ -48,7 +51,7 @@ Intune permite la administración de dispositivos móviles (MDM) de iPad, iPhone
 
     Para más información acerca de otras tareas de usuario final, consulte estos artículos:
     - [Recursos sobre la experiencia del usuario final con Microsoft Intune](what-to-tell-your-end-users-about-using-microsoft-intune.md)
-    - [Guía de usuario final para dispositivos iOS y Mac](../enduser/using-your-ios-or-mac-os-x-device-with-intune.md)
+    - [Guía de usuario final para dispositivos iOS y Mac](../enduser/using-your-ios-or-macOS-device-with-intune.md)
 
 Si la empresa u organización adquiere dispositivos iOS para los usuarios, estos dispositivos también se pueden inscribir en la administración como [dispositivos iOS propiedad de la empresa](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
 
@@ -57,6 +60,6 @@ Si la empresa u organización adquiere dispositivos iOS para los usuarios, estos
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 
