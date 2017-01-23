@@ -1,5 +1,5 @@
 ---
-title: "Introducción | Microsoft Intune"
+title: "Introducción | Microsoft Docs"
 description: "Condiciones y requisitos previos para comenzar a usar su suscripción de Intune"
 keywords: 
 author: nathbarn
@@ -14,14 +14,17 @@ ms.assetid: d158503c-1276-422b-ab81-5f66c1cd7e7a
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 6963f14de4bf54ba37166e7e37cd8395a941db51
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 804c62c3ee840a01ee7b3f7d96bf984bc9501ea0
 
 
 ---
 
 
 # <a name="intune-quick-start-guide"></a>Guía de inicio rápido de Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Esta guía le ofrece una introducción a su suscripción de pago de Microsoft Intune. Siga estos pasos para administrar los dispositivos móviles y PC de Windows, así como aplicaciones de su organización. Puede seguir cada paso en orden u omitir los pasos que no se apliquen a su entorno o a sus necesidades empresariales. Si desea probar Intune, consulte la [guía de evaluación de Intune](/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune).  
 
 Si actualmente usa Microsoft System Center Configuration Manager para administrar equipos y servidores, también puede [ampliar Configuration Manager para administrar dispositivos móviles](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
@@ -50,6 +53,6 @@ Si actualmente usa Microsoft System Center Configuration Manager para administra
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO2-->
 
 

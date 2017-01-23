@@ -1,5 +1,5 @@
 ---
-title: Transferir localmente aplicaciones para Windows y Windows Phone | Microsoft Intune
+title: Transferir localmente aplicaciones para Windows y Windows Phone | Microsoft Docs
 description: "Aprenda a firmar aplicaciones de línea de negocios de modo que pueda usar Intune para implementarlas."
 keywords: 
 author: robstackmsft
@@ -11,12 +11,14 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 938e3a1914f379d115bf24ebd7d990f6e1d319a9
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2e8220f850e3b38a24aa4c48bcc3a59088251c24
 
 
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Firma de aplicaciones de línea de negocio para que se puedan implementar en dispositivos Windows con Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Como administrador de Intune, puede implementar aplicaciones de línea de negocio (LOB) en dispositivos Windows y Windows 10 Mobile, incluida la aplicación del Portal de empresa. Para implementar aplicaciones .appx o .xap en dispositivos móviles Windows 10 y Windows 10, o para implementar cualquier aplicación LOB en dispositivos Windows 8.1 o Windows Phone 8.1, debe obtener un **certificado de firma de código móvil empresarial de Symantec **. El certificado de Symantec es de confianza para estas aplicaciones en los dispositivos Windows correspondientes. Puede usar su propia entidad de certificación para aplicaciones de Windows 10 y aplicaciones "universales". Este certificado se requiere para:
 

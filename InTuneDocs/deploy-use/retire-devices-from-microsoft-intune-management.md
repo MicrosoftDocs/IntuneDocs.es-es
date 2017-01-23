@@ -1,11 +1,11 @@
 ---
-title: Retirar dispositivos | Microsoft Intune
+title: Retirar dispositivos | Microsoft Docs
 description: "Intune admite una eliminación selectiva y una eliminación completa para quitar el dispositivo de administración de Intune mediante la eliminación de la directiva y el portal de empresa."
 keywords: 
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 12/30/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,21 @@ ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 8f3a8e42688bf830e3050cf387ccb15a1af811fa
-ms.openlocfilehash: e7f861adc757b4037c5d0ef97c361a57948386bf
+ms.sourcegitcommit: 464e6d73765a75aaefb3eca95281bf54b4cc7a2d
+ms.openlocfilehash: 2bb4eb56bea4f640fa304c03b0f86b78625fe6a7
 
 
 ---
 
 # <a name="retire-devices-from-intune-management"></a>Retirar dispositivos de la administración de Intune
 
-Al final es necesario eliminar un dispositivo administrado de la administración de Intune, tanto si se trata de un dispositivo personal como propiedad de la empresa. Es posible que tenga que retirar un dispositivo por una serie de motivos:
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Al final es necesario eliminar un dispositivo administrado de la administración de Intune, tanto si se trata de un dispositivo personal como propiedad de la empresa. 
+
+Los dispositivos nunca se quitan de Intune sin su intervención, aunque los dispositivos no se hayan conectado al servicio de Intune durante un período de tiempo. 
+
+Es posible que tenga que retirar un dispositivo por una serie de motivos:
 
 -   El usuario deja una organización de manera planeada (partida "administrada").
 -   El usuario la deja repentinamente (se le despide, se va, etc.).
@@ -70,6 +76,6 @@ A veces, es el propio dispositivo el que llega al final del ciclo de vida. En ta
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

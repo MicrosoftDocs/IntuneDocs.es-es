@@ -1,5 +1,5 @@
 ---
-title: Configurar la infraestructura de certificados para SCEP | Microsoft Intune
+title: Configurar la infraestructura de certificados para SCEP | Microsoft Docs
 description: Infraestructura para crear e implementar perfiles de certificado SCEP.
 keywords: 
 author: robstackmsft
@@ -14,11 +14,14 @@ ms.assetid: 4ae137ae-34e5-4a45-950c-983de831270f
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c68e89755d753b3913004a2c1cb1c41158ce5703
-ms.openlocfilehash: 787533f4b1c24cc4af125cbf6b2a4a18e48c4d3e
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 4140c310bb14faf1731e3c316e1dafae5dc0f97a
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>Configurar la infraestructura de certificados para SCEP
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 En este tema se explica qué infraestructura es necesaria para crear e implementar perfiles de certificado.
 
 ### <a name="on-premises-infrastructure"></a>Infraestructura local
@@ -93,7 +96,7 @@ En esta tarea tendrá que:
 
 ##### <a name="to-configure-the-certification-authority"></a>Para configurar la entidad de certificación
 
-1.  Inicie sesión como administrador de organización. 
+1.  Inicie sesión como administrador de organización.
 
 2.  En la CA emisora, use el complemento Plantillas de certificado para crear una nueva plantilla personalizada o copiar una plantilla existente y, luego, editarla (por ejemplo, la plantilla de usuario) para su uso con NDES.
 
@@ -109,7 +112,7 @@ En esta tarea tendrá que:
         > En el caso de plantillas de certificado de iOS y Mac OS X, en la pestaña **Extensiones**, edite **Uso de claves** y asegúrese de que la opción **Firma como prueba de origen** no esté seleccionada.
 
     -   En la pestaña **Seguridad**, agregue la cuenta de servicio NDES y otórguele permisos de **inscripción**en la plantilla. Los administradores de Intune que vayan a crear perfiles SCEP necesitan derechos de **lectura** para poder ir a la plantilla al crear perfiles SCEP.
-    
+
     > [!NOTE]
     > Para revocar certificados de la cuenta de servicio NDES, necesitará derechos para *emitir y administrar certificados* referentes a cada plantilla de certificado que use un perfil de certificado.
 
@@ -120,19 +123,19 @@ En esta tarea tendrá que:
 
 Estas son capturas de pantalla de una configuración de plantilla de ejemplo.
 
-![Plantilla, pestaña Administración de solicitudes](..\media\scep_ndes_request_handling.png) 
+![Plantilla, pestaña Administración de solicitudes](..\media\scep_ndes_request_handling.png)
 
-![Plantilla, pestaña Nombre del sujeto](..\media\scep_ndes_subject_name.jpg) 
+![Plantilla, pestaña Nombre del sujeto](..\media\scep_ndes_subject_name.jpg)
 
-![Plantilla, pestaña Seguridad](..\media\scep_ndes_security.jpg) 
+![Plantilla, pestaña Seguridad](..\media\scep_ndes_security.jpg)
 
-![Plantilla, pestaña Extensiones](..\media\scep_ndes_extensions.jpg) 
+![Plantilla, pestaña Extensiones](..\media\scep_ndes_extensions.jpg)
 
-![Plantilla, pestaña Requisitos de emisión](..\media\scep_ndes_issuance_reqs.jpg) 
+![Plantilla, pestaña Requisitos de emisión](..\media\scep_ndes_issuance_reqs.jpg)
 
 >   [!IMPORTANT]
     > En el caso de directivas de aplicación (en la cuarta captura de pantalla), agregue únicamente las directivas de aplicación necesarias. Confirme las elecciones con los administradores de seguridad.
-   
+
 
 
 Para configurar la CA para permitir que el solicitante especifique el período de validez, en la CA, ejecute los siguientes comandos:
@@ -239,12 +242,12 @@ En esta tarea tendrá que:
 
 4. En el Administrador de IIS, seleccione **Sitio web predeterminado** -> **Filtrado de solicitudes** -> **Modificar configuración de característica** y cambie **Longitud máxima de dirección URL** y **Cadena de consulta máxima** a *65534*, como se muestra.
 
-    ![Longitud de dirección URL y de consulta máximas de IIS](..\media\SCEP_IIS_max_URL.png) 
+    ![Longitud de dirección URL y de consulta máximas de IIS](..\media\SCEP_IIS_max_URL.png)
 
 5.  Reinicie el servidor. La ejecución de **iisreset** en el servidor no será suficiente para finalizar estos cambios.
 6. Vaya a http://*FQDN*/certsrv/mscep/mscep.dll. Debería ver una página SCEP similar a esta:
 
-    ![Probar SCEP](..\media\SCEP_NDES_URL.png) 
+    ![Probar SCEP](..\media\SCEP_NDES_URL.png)
 
     Si aparece **503 Servicio no disponible**, compruebe el Visor de eventos. Es probable que el grupo de aplicaciones se haya detenido debido a la falta de un derecho para el usuario SCEP. Esos derechos se describen en la tarea 1.
 
@@ -350,6 +353,6 @@ Ya está listo para configurar perfiles de certificado, como se describe en [Con
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

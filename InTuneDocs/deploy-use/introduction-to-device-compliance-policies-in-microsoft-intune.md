@@ -1,5 +1,5 @@
 ---
-title: Directivas de cumplimiento de dispositivos | Microsoft Intune
+title: Directivas de cumplimiento de dispositivos | Microsoft Docs
 description: "En este tema se explican qué son las directivas de cumplimiento del dispositivo y cómo funcionan."
 keywords: 
 author: andredm7
@@ -14,13 +14,16 @@ ms.assetid: 0775107a-6662-41c8-9404-be14bbb599f3
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: b41307f620284315e4c71b0d0292b229753876ad
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 7b91e52d72704b6beb79a1b35bb1a24ebb340a4b
 
 
 ---
 
 # <a name="device-compliance-policies-in-microsoft-intune"></a>Directivas de cumplimiento de dispositivos en Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 ## <a name="what-is-a-compliance-policy"></a>¿Qué es una directiva de cumplimiento?
 Para ayudar a proteger los datos de empresa, debe asegurarse de que los dispositivos usados para acceder a datos y aplicaciones de empresa cumplan ciertas reglas. Estas reglas pueden incluir el uso de un PIN para acceder a los dispositivos y el cifrado de los datos almacenados en ellos. A un conjunto de estas reglas se le denomina directiva de cumplimiento.
 

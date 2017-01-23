@@ -1,5 +1,5 @@
 ---
-title: Uso del registro detallado para ayudar al administrador de TI a solucionar los problemas del dispositivo | Microsoft Intune
+title: Uso del registro detallado para ayudar al administrador de TI a solucionar los problemas del dispositivo | Microsoft Docs
 description: Ayuda al administrador de TI a solucionar los problemas del dispositivo mediante el registro detallado
 keywords: 
 author: barlanmsft
@@ -11,12 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 2a9183a6-b40d-4132-a1ce-61ce0f1c23aa
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 1771b5a67f0f8580068c750a818d6b7a45c23796
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 501b2c5990acce9bc2f8c5efd1efc07fbee1606f
 
 
 ---
@@ -32,6 +34,6 @@ Para activar o desactivar el registro detallado, inicie sesión en la aplicació
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

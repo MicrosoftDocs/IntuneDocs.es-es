@@ -1,11 +1,11 @@
 ---
-title: Restringir el acceso a redes con Cisco ISE | Microsoft Intune
+title: Proteger el acceso a redes con Cisco ISE | Microsoft Docs
 description: Use Cisco ISE con Intune de forma que los dispositivos se inscriban y cumplan la directiva de Intune antes de que tengan acceso al Wi-Fi y a la VPN controlados por Cisco ISE.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/06/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1dd3fde8119b54f574265c2ca9cf62cee9e77b01
-ms.openlocfilehash: bd6307cd8ff465bbce3de124ffdb444333d12efe
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 8ef24e4d413662012f091c1be318d1d274e16439
 
 
 ---
 
 # <a name="using-cisco-ise-with-microsoft-intune"></a>Usar Cisco ISE con Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 La integración de Intune con Cisco Identity Services Engine (ISE) le permite crear directivas de red en su entorno de ISE mediante el estado de cumplimiento y la inscripción de dispositivos de Intune. Puede usar estas directivas para garantizar que el acceso a la red de la compañía esté restringido a los dispositivos administrados por Intune y a los que cumplen con sus directivas.
 
 ## <a name="configuration-steps"></a>Pasos de configuración
@@ -64,7 +67,7 @@ b. Elija el icono de bloqueo &gt; **Más información**.
 > Compruebe la fecha de expiración del certificado, ya que tendrá que exportar e importar un certificado nuevo cuando este expire.
 
 
-### <a name="obtain-a-selfsigned-cert-from-ise"></a>Obtener un certificado autofirmado de ISE 
+### <a name="obtain-a-self-signed-cert-from-ise"></a>Obtener un certificado autofirmado de ISE 
 
 1.  En la consola de ISE, vaya a **Administración** > **Certificados** > **Certificados de sistema** > **Generar certificado autofirmado**.  
 2.       Exportar el certificado autofirmado.
@@ -100,7 +103,7 @@ Asegúrese de que todo el texto está en una única línea.
 |Punto de conexión de token de OAuth 2.0|Dirección URL de emisión de token|
 |Actualizar el código con el identificador de cliente|Identificador de cliente|
 
-### <a name="step-4-upload-the-selfsigned-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>Paso 4: cargue el certificado autofirmado de ISE en la aplicación ISE creada en Azure AD
+### <a name="step-4-upload-the-self-signed-certificate-from-ise-into-the-ise-app-you-created-in-azure-ad"></a>Paso 4: cargue el certificado autofirmado de ISE en la aplicación ISE creada en Azure AD
 1.     Obtenga el valor del certificado codificado en base64 y la huella digital de un archivo de certificado público .cer X509. En este ejemplo se usa PowerShell:
    
       
@@ -189,6 +192,6 @@ Existe también un [conjunto descargable de instrucciones de inscripción](https
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 

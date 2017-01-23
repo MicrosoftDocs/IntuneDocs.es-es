@@ -1,11 +1,11 @@
 ---
-title: Implementar aplicaciones | Microsoft Intune
+title: Implementar aplicaciones | Microsoft Docs
 description: En este tema se explican los conceptos que es preciso conocer para empezar a implementar aplicaciones con Intune.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,20 @@ ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: eedf7db0a974f9a0aa0a21b27b64ed8b4a91b378
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: efa8245020b961797405a6f8b90df7e7b172b4c3
 
 
 ---
 
-# Implementar aplicaciones con Microsoft Intune
+# <a name="deploy-apps-with-microsoft-intune"></a>Implementar aplicaciones con Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 En este tema se explican algunos de los conceptos que es preciso conocer para empezar a implementar aplicaciones con Microsoft Intune.
 
 
-## Acciones de implementación de aplicaciones
+## <a name="app-deployment-actions"></a>Acciones de implementación de aplicaciones
 Al implementar aplicaciones, puede elegir una de las siguientes acciones de implementación:
 
 -   **Instalación requerida:** la aplicación se instala en el dispositivo sin intervención por parte del usuario.
@@ -41,7 +43,7 @@ Al implementar aplicaciones, puede elegir una de las siguientes acciones de impl
 
 -   **No aplicable**: La aplicación no aparece en el portal de empresa y no está instalada en los dispositivos.
 
-#### Saber qué acciones de implementación están disponibles para cada tipo de instalador
+#### <a name="understand-which-deployment-actions-are-available-for-each-installer-type"></a>Saber qué acciones de implementación están disponibles para cada tipo de instalador
 
 |Tipo de instalador|Instalación requerida|Instalación disponible|Desinstalar|No aplicable|
 |------------------|--------------------|---------------------|-------------|------------------|
@@ -58,7 +60,7 @@ Al implementar aplicaciones, puede elegir una de las siguientes acciones de impl
 > [!TIP]
 > Si, al implementar aplicaciones, selecciona grupos tanto de usuarios como de dispositivos, la aplicación solo se puede implementar como una **instalación disponible**.
 
-## Conflictos de implementación
+## <a name="deployment-conflicts"></a>Conflictos de implementación
 Cuando un dispositivo recibe dos implementaciones, con la misma acción de implementación, se aplican las siguientes reglas:
 
 -   Las implementaciones para un grupo de dispositivos tienen prioridad sobre las implementaciones para un grupo de usuarios. Sin embargo, si una aplicación se implementa para un grupo de usuarios con la acción de implementación **Disponible** y la misma aplicación se implementa también para un grupo de dispositivos con la acción de implementación **No aplicable**, la aplicación estará disponible en el portal de la compañía para que los usuarios la instalen.
@@ -68,12 +70,12 @@ Cuando un dispositivo recibe dos implementaciones, con la misma acción de imple
 -   Si un dispositivo recibe una instalación requerida y una instalación disponible, ambas acciones se combinan. En otras palabras, el usuario puede instalar la aplicación disponible desde el portal de empresa antes de que comience la instalación requerida.
 
 
-## Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 Obtenga información sobre cómo [implementar aplicaciones en Microsoft Intune](deploy-apps-in-microsoft-intune.md).
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

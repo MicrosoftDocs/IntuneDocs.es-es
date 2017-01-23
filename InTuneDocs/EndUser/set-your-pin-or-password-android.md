@@ -1,5 +1,5 @@
 ---
-title: "Establecimiento del PIN o la contraseña | Microsoft Intune"
+title: "Establecimiento del PIN o la contraseña | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -11,12 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b29ac1bb-ef57-4ef1-9ea5-191ee8694e58
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 9d70549b2a2c30bb7d3e056550ad75848433d885
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 95c8983428ee4770ec71f804f8dac59c427e096c
 
 
 ---
@@ -36,6 +38,6 @@ Para establecer un PIN o una contraseña, use los siguientes pasos.
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

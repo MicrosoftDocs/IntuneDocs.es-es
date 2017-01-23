@@ -1,5 +1,5 @@
 ---
-title: "Convertir a una suscripción de pago | Microsoft Intune"
+title: "Convertir a una suscripción de pago | Microsoft Docs"
 description: "Qué necesita saber sobre las suscripciones y licencias después de configurar la evaluación gratuita de 30 días de Intune."
 keywords: 
 author: lindavr
@@ -13,13 +13,16 @@ ms.technology:
 ms.assetid: cad9ae15-26e5-418d-8ce5-c2dafc2071f0
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: a2b037e0c066422d53d71ffd401deb3e48a2ba7f
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: f121ff01a3eee20473637626128239c4d883e826
 
 
 ---
 
 # <a name="ways-to-subscribe-to-microsoft-intune"></a>Formas de subscribirse a Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Si adquiere al menos 150 licencias de Microsoft Intune en un plan elegible, puede usar el "beneficio del Centro FastTrack", un servicio donde los especialistas en Microsoft trabajan con usted para preparar su entorno para Intune. Consulte [Programa FastTrack para Enterprise Mobility Suite](https://docs.microsoft.com/enterprise-mobility/Solutions/fasttrack-center-benefit-for-enterprise-mobility-suite-ems).
 
 Puede convertir la evaluación gratuita de Intune en una suscripción de pago de las maneras siguientes:
@@ -34,6 +37,6 @@ Puede convertir la evaluación gratuita de Intune en una suscripción de pago de
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Dec16_HO2-->
 
 

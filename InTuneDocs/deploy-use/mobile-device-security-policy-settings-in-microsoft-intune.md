@@ -1,5 +1,5 @@
 ---
-title: "Configuración de directivas de seguridad de dispositivos móviles | Microsoft Intune"
+title: "Configuración de directivas de seguridad de dispositivos móviles | Microsoft Docs"
 description: "Use Intune para configurar una amplia variedad de opciones que puede implementar en los dispositivos administrados de su organización."
 keywords: 
 author: robstackmsft
@@ -14,14 +14,17 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: a64336ad959daad9685bdfbef3c284a14e708894
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 755cf7d87d7145c55eb5fe583748bd98d34e8fb1
 
 
 
 ---
 
 # <a name="mobile-device-security-policy-settings-in-microsoft-intune"></a>Configuración de directivas de seguridad de dispositivos móviles en Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 > [!IMPORTANT]
 > Ahora Microsoft Intune presenta directivas de configuración independientes para cada plataforma de dispositivos. Estas directivas contienen la configuración más actualizada que puede usar. Puede seguir usando la directiva de seguridad de dispositivos móviles, ya que las implementaciones existentes seguirán funcionando. En cambio, debe planear la migración a las nuevas directivas de configuración tan pronto como sea posible, ya que la directiva de seguridad de dispositivos móviles se eliminará en el futuro.
 
@@ -53,7 +56,7 @@ Puede crear e implementar directivas de seguridad de dispositivos móviles para 
 |**Longitud mínima de contraseña**|Sí|Sí|Sí|Sí|Sí|
 |**Permitir contraseñas sencillas**<br /><br />Las contraseñas sencillas incluyen “0000” y “1234”.|No|No|Sí|Sí|No|
 |**Número de errores de inicio de sesión repetidos que se permiten antes de que se borre el dispositivo**|Sí|Sí|Sí|Sí|Sí|
-|**Minutos de inactividad antes de que se apague la pantalla**1|Sí|Sí|Sí|Sí|Sí|
+|**Minutos de inactividad antes de que se apague la pantalla**<sup>1</sup>|Sí|Sí|Sí|Sí|Sí|
 |**Expiración de contraseña (días)**|Sí|Sí|Sí|Sí|Sí|
 |**Recordar el historial de contraseñas**|Sí|Sí|Sí|Sí|Sí|
 |**Recordar historial de la contraseña** : **Impedir la reutilización de contraseñas anteriores**|Sí|Sí|Sí|Sí|Sí|
@@ -61,7 +64,7 @@ Puede crear e implementar directivas de seguridad de dispositivos móviles para 
 |**Permitir contraseña de imagen y PIN**|Sí|Sí|No|No|No|
 |**Minutos de inactividad antes de que se pida la contraseña**|No|No|No|Sí|No|
 |**Permitir desbloqueo mediante huellas digitales**|No|No|No|iOS 7 y versiones posteriores|No|
-1En los dispositivos iOS, cuando configura las opciones **Minutos de inactividad antes de que se apague la pantalla** y **Minutos de inactividad antes de que sea necesaria la contraseña**, se aplican en secuencia. Por ejemplo, si establece el valor para ambas opciones en **5** minutos, la pantalla se apagará automáticamente transcurridos 5 minutos y el dispositivo se bloqueará pasados 5 minutos más. Sin embargo, si el usuario apaga la pantalla manualmente, la segunda opción se aplica inmediatamente. En el mismo ejemplo, una vez que el usuario apague la pantalla, el dispositivo se bloqueará 5 minutos más tarde.
+<sup>1</sup>En los dispositivos iOS, cuando configura las opciones **Minutos de inactividad antes de que se apague la pantalla** y **Minutos de inactividad antes de que sea necesaria la contraseña**, se aplican en secuencia. Por ejemplo, si establece el valor para ambas opciones en **5** minutos, la pantalla se apagará automáticamente transcurridos 5 minutos y el dispositivo se bloqueará pasados 5 minutos más. Sin embargo, si el usuario apaga la pantalla manualmente, la segunda opción se aplica inmediatamente. En el mismo ejemplo, una vez que el usuario apague la pantalla, el dispositivo se bloqueará 5 minutos más tarde.
 
 Cuando implementa una directiva de longitud de contraseña para dispositivos que ejecutan Windows RT, los usuarios se verán obligados a restablecer la contraseña, aunque la contraseña actual cumpla los requisitos de la directiva.
 
@@ -69,9 +72,9 @@ Cuando implementa una directiva de longitud de contraseña para dispositivos que
 
 |Nombre de la configuración|Windows 8.1 y Windows RT 8.1|Windows RT|Windows Phone 8 y Windows Phone 8.1|iOS|Android y Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Requerir cifrado en dispositivo móvil**1<br /><br />Para dispositivos de Windows Phone 8, debe establecerse en **Sí**.<br /><br />Para habilitar el cifrado en dispositivos iOS, habilite la opción **Requerir una contraseña para desbloquear dispositivos móviles**.|Sí|No|Sí|No|Sí|
+|**Requerir cifrado en dispositivo móvil**<sup>1</sup><br /><br />Para dispositivos de Windows Phone 8, debe establecerse en **Sí**.<br /><br />Para habilitar el cifrado en dispositivos iOS, habilite la opción **Requerir una contraseña para desbloquear dispositivos móviles**.|Sí|No|Sí|No|Sí|
 |**Requerir cifrado en tarjetas de almacenamiento**<br /><br />Esta opción también se aplica a dispositivos administrados por Exchange ActiveSync.|n/a|n/a|n/a <br />Las aplicaciones y los datos asociados se cifran automáticamente.|n/a|Sí|
-1Aquí se muestra información adicional para los dispositivos que ejecutan Windows 8.1:
+<sup>1</sup>Aquí se muestra información adicional para los dispositivos que ejecutan Windows 8.1:
 
 -   Para forzar el cifrado en los dispositivos que ejecutan Windows 8.1, debe instalar la [Actualización de cliente de diciembre de 2014 MDM en Windows](http://support.microsoft.com/kb/3013816) en cada dispositivo.
 
@@ -105,7 +108,7 @@ Cuando implementa una directiva de longitud de contraseña para dispositivos que
 |**Permitir el restablecimiento de la configuración de fábrica**|No|No|No|No|Sí (solo Samsung KNOX Standard)|
 
 
-## <a name="cloud-settings-documents-and-data"></a>Configuración de nube: documentos y datos
+## <a name="cloud-settings--documents-and-data"></a>Configuración de nube: documentos y datos
 
 |Nombre de la configuración|Windows 8.1 y Windows RT 8.1|Windows RT|Windows Phone 8 y Windows Phone 8.1|iOS|Android y Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -116,7 +119,7 @@ Cuando implementa una directiva de longitud de contraseña para dispositivos que
 |**Dirección URL de carpetas de trabajo**<br /><br />Esta opción establece la dirección URL de la carpeta de trabajo para permitir que los documentos se sincronicen en todos los dispositivos.|Sí|No|No|No|No|
 |**Permitir copia de seguridad de Google**|No|No|No|No|Sí (solo Samsung KNOX Standard)|
 
-## <a name="cloud-settings-accounts-and-synchronization"></a>Configuración de nube: cuentas y sincronización
+## <a name="cloud-settings--accounts-and-synchronization"></a>Configuración de nube: cuentas y sincronización
 
 |Nombre de la configuración|Windows 8.1 y Windows RT 8.1|Windows RT|Windows Phone 8 y Windows Phone 8.1|iOS|Android y Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
@@ -127,7 +130,7 @@ Cuando implementa una directiva de longitud de contraseña para dispositivos que
 
 |Nombre de la configuración|Windows 8.1 y Windows RT 8.1|Windows RT|Windows Phone 8 y Windows Phone 8.1|iOS|Android y Samsung KNOX Standard|
 |----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Permitir a los usuarios descargar datos adjuntos de correo electrónico**1|n/a|n/a|n/a|n/a|n/a|
+|**Permitir a los usuarios descargar datos adjuntos de correo electrónico**<sup>1</sup>|n/a|n/a|n/a|n/a|n/a|
 |**Periodo de sincronización del correo electrónico** <br /><br />Esta opción también se aplica a dispositivos administrados por Exchange ActiveSync.|n/a|n/a|n/a|n/a|n/a|
 |**Permitir que los dispositivos móviles que no son totalmente compatibles con esta configuración se sincronicen con Exchange (Exchange ActiveSync)** <br /><br />Esta opción también se aplica a dispositivos administrados por Exchange ActiveSync.|n/a|n/a|n/a|n/a|n/a|
 |**Hacer que la cuenta Microsoft sea opcional en la aplicación Windows Mail**|Sí|No|No|No|No|
@@ -214,6 +217,6 @@ Cuando implementa una directiva de longitud de contraseña para dispositivos que
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

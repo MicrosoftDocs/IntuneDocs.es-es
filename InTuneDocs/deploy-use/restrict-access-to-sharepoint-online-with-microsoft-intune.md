@@ -1,11 +1,11 @@
 ---
-title: Restringir el acceso a SharePoint Online | Microsoft Intune
+title: Proteger el acceso a SharePoint Online | Microsoft Docs
 description: Proteja y controle el acceso a los datos de la empresa en SharePoint Online mediante el uso del acceso condicional.
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,21 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 550b6999b5a4bde91f5fe03f441517c230f576bd
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 2efac12d3564932ebcb3cbe4165fbc7ad4595172
 
 
 ---
 
-# <a name="restrict-access-to-sharepoint-online-with-microsoft-intune"></a>Restringir el acceso a SharePoint Online con Microsoft Intune
+# <a name="protect-access-to-sharepoint-online-with-microsoft-intune"></a>Proteger el acceso a SharePoint Online con Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use el acceso condicional de [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] para controlar el acceso a los archivos que se encuentran en SharePoint Online.
 El acceso condicional tiene dos componentes:
 - Una directiva de cumplimiento del dispositivo con la que debe cumplir el dispositivo para que se considere conforme.
 - Una directiva de acceso condicional, donde se especifican las condiciones que debe cumplir el dispositivo para tener acceso al servicio.
-Para más información sobre cómo funciona el acceso condicional, consulte el tema [Restringir el acceso al correo electrónico, a O365 y a otros servicios](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+Para más información sobre cómo funciona el acceso condicional, consulte el tema [Proteger el acceso al correo electrónico, a O365 y a otros servicios](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 Debe implementar las directivas de acceso condicional y cumplimiento en los usuarios. Cualquier dispositivo que un usuario use para tener acceso a los servicios se somete a comprobaciones para comprobar que cumple con las directivas.
 
@@ -66,7 +69,7 @@ No se admite lo siguiente:
 - Android 4.0 y versiones posteriores, Samsung Knox Standard 4.0 o versiones posteriores
 - Windows Phone 8.1 y versiones posteriores
 
-Puede restringir el acceso a SharePoint Online cuando dispositivos **iOS** y **Android** obtengan acceso a él desde un explorador. Solo se permite el acceso desde exploradores compatibles en dispositivos que también lo sean:
+Puede proteger el acceso a SharePoint Online cuando dispositivos **iOS** y **Android** obtengan acceso a él desde un explorador. Solo se permite el acceso desde exploradores compatibles en dispositivos que también lo sean:
 * Safari (iOS)
 * Chrome (Android)
 * Intune Managed Browser (iOS y Android 5.0 y posterior)
@@ -192,10 +195,10 @@ Seleccione cualquier grupo de dispositivos móviles. Luego, en la pestaña **Dis
 -   **Dispositivos registrados en AAD y conformes**. Estos dispositivos pueden tener acceso a SharePoint Online.
 
 ### <a name="see-also"></a>Consulte también
-[Restringir el acceso al correo electrónico y a los servicios de O365 con Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
+[Proteger el acceso al correo electrónico y a los servicios de O365 con Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: "Administración de DEP de Apple para dispositivos iOS | Microsoft Intune"
+title: "Administración de DEP de Apple para dispositivos iOS | Microsoft Docs"
 description: "Implemente un perfil de inscripción que inscriba dispositivos iOS adquiridos a través del Programa de inscripción de dispositivos (DEP) iOS &quot;de forma inalámbrica&quot; para administrar dispositivos Apple."
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: arob98
-ms.date: 07/19/2016
+ms.date: 12/31/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cfbf04627892dd700d2e31fabe8bca357f692d51
-ms.openlocfilehash: d1e534677bf5e5098f3a3665765983305a6bac69
+ms.sourcegitcommit: 8063b933a767740a7951fa69a918a8677b664d02
+ms.openlocfilehash: e8a21ace32b5668f8158b9a383b882b7c2f524df
 
 
 ---
 
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>Inscribir dispositivos iOS de la empresa mediante el Programa de inscripción de dispositivos
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune puede implementar un perfil de inscripción que inscriba dispositivos iOS que se han adquirido a través del Programa de inscripción de dispositivos (DEP) de Apple "de forma inalámbrica". El paquete de inscripción puede incluir opciones de asistente de instalación para el dispositivo. Los usuarios no pueden anular la inscripción de dispositivos inscritos a través de DEP.
 
 ## <a name="apple-dep-management-for-ios-devices-with-microsoft-intune"></a>Administración de DEP de Apple para dispositivos iOS con Microsoft Intune
@@ -109,13 +112,13 @@ Antes de poder inscribir dispositivos iOS corporativos con DEP, necesita un toke
 
 ## <a name="changes-to-intune-group-assignments"></a>Cambios en las asignaciones de grupo de Intune
 
-A partir de noviembre, la administración de grupos de dispositivos se moverá a Azure Active Directory. Después de la transición a los grupos de Azure Active Directory, la asignación de grupo no aparecerá en las opciones del **perfil de inscripción corporativa**. Como este cambio se implantará en una serie de meses, puede que no vea el cambio directamente. Después de moverse al nuevo portal, se pueden definir nuevas asignaciones de grupos de dispositivos dinámicos según el nombre del perfil de inscripción corporativa. Este proceso garantiza que los dispositivos que ya se han asignado previamente a un grupo de dispositivos se inscriban automáticamente en el grupo con la directiva y las aplicaciones implementadas. [Más información acerca de los grupos de Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
+A partir de diciembre de 2016, la administración de grupos de dispositivos se moverá a Azure Active Directory. Después de la transición a los grupos de Azure Active Directory, la asignación de grupo no aparecerá en las opciones del **perfil de inscripción corporativa**. Como este cambio se implantará en una serie de meses, puede que no vea el cambio directamente. Después de moverse al nuevo portal, se pueden definir nuevas asignaciones de grupos de dispositivos dinámicos según el nombre del perfil de inscripción corporativa. Este proceso garantiza que los dispositivos que ya se han asignado previamente a un grupo de dispositivos se inscriban automáticamente en el grupo con la directiva y las aplicaciones implementadas. [Más información acerca de los grupos de Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/)
 
 ### <a name="see-also"></a>Consulte también
 [Requisitos previos para la inscripción de dispositivos](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

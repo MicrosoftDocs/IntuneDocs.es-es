@@ -1,11 +1,11 @@
 ---
-title: Aplicaciones iOS con directivas MAM | Microsoft Intune
+title: Aplicaciones iOS con directivas de MAM | Microsoft Docs
 description: "En este tema se describe qué esperar cuando la aplicación iOS está administrada por directivas de administración de aplicaciones móviles."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 10/18/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,21 +14,26 @@ ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: 3aa6728036ff66ea489176063af2d136bef4c7cc
+ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
+ms.openlocfilehash: f5a26d3d5ed060571892d91637dc12cae08f1a69
 
 
 ---
 
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-mam-policies"></a>What to expect when your iOS app is managed by MAM policies (Qué esperar cuando la aplicación iOS está administrada por directivas de MAM)
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
  En este tema se describe la experiencia del usuario en aplicaciones con directivas de administración de acceso a aplicaciones móviles (MAM). Las directivas de MAM solo se aplican cuando se usan aplicaciones en el contexto laboral: por ejemplo, cuando el usuario obtiene acceso a las aplicaciones con la cuenta profesional o a archivos que están almacenados en la ubicación empresarial de OneDrive.
 
 ##  <a name="access-apps"></a>Acceso a las aplicaciones
 
-Si el dispositivo **no está inscrito en Intune**, al usuario final se le pide que reinicie la aplicación cuando la use por primera vez.  Se exige un reinicio para poder aplicar las directivas MAM a la aplicación. En la captura de pantalla siguiente de la aplicación de Skype se muestra esta solicitud de reinicio:
+Si el dispositivo **no está inscrito en Intune**, al usuario final se le pide que reinicie la aplicación cuando la use por primera vez.  Se exige un reinicio para poder aplicar las directivas MAM a la aplicación. 
+
+<!--- The following screenshot from the Skype app illustrates this restart request: --->
 
 
-![Captura de pantalla del dispositivo iOS con la solicitud de PIN](../media/appmanagement/iOS_AppPINPrompt.png)
+<!---  ![Screenshot of the iOS device showing PIN prompt](../media/appmanagement/iOS_AppPINPrompt.png) --->
 
 En los dispositivos que **están inscritos para la administración en Intune**, el usuario ve un mensaje que indica que la aplicación ahora está administrada:
 
@@ -68,6 +73,6 @@ Si usa un dispositivo iOS, puede que aparezca un mensaje de bloqueo si intenta a
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

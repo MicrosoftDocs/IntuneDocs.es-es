@@ -1,5 +1,5 @@
 ---
-title: Perfiles de certificado para el acceso a los recursos | Microsoft Intune
+title: Perfiles de certificado para el acceso a los recursos | Microsoft Docs
 description: "Proteja VPN, Wi-Fi y el acceso al correo electrónico con un certificado instalado en cada dispositivo de usuario."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 8cbb8499-611d-4217-a7b4-e9b864785dd0
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 35d08100b4332cc63667a401143c17972225a908
-ms.openlocfilehash: b64260fd44e5c3fd0fb80e0dab4d75bd5c4eb305
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 9cf53cb240ba14317fbb680ad4f4c40c8320506d
 
 
 ---
 
 # <a name="secure-resource-access-with-certificate-profiles-in-microsoft-intune"></a>Secure resource access with certificate profiles in Microsoft Intune (Proteger el acceso a recursos con perfiles de certificado en Microsoft Intune)
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Si proporciona a los usuarios acceso a los recursos corporativos a través de VPN, Wi-Fi o perfiles de correo electrónico, tiene la opción de protegerlo con un certificado instalado en el dispositivo de cada usuario. Funciona de la siguiente manera:
 
 1. Asegúrese de disponer de la infraestructura de certificados correcta, como se explica en [Configurar la infraestructura de certificados para SCEP](configure-certificate-infrastructure-for-scep.md) y en [Configurar la infraestructura de certificados](configure-certificate-infrastructure-for-pfx.md).
@@ -44,7 +47,7 @@ Si proporciona a los usuarios acceso a los recursos corporativos a través de VP
 
   Use un **perfil de certificado SCEP** para dispositivos en estas plataformas:
     -   Mac OS X 10.9 y versiones posteriores
-    -   Windows Phone 8.1 
+    -   Windows Phone 8.1
 
 Debe crear un perfil independiente para cada plataforma. Al crear el perfil, debe asociarlo al **perfil de certificado raíz de confianza** que creó previamente.
 
@@ -61,6 +64,6 @@ Debe crear un perfil independiente para cada plataforma. Al crear el perfil, deb
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

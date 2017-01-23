@@ -1,5 +1,5 @@
 ---
-title: "Creación de grupos para organizar usuarios y dispositivos | Microsoft Intune"
+title: Crear grupos para organizar usuarios y dispositivos en la prueba gratuita | Microsoft Docs
 description: "Cómo crear grupos de dispositivos y grupos de usuarios al registrarse para obtener una evaluación gratuita de 30 días de Microsoft Intune."
 keywords: 
 author: lindavr
@@ -13,13 +13,16 @@ ms.technology:
 ms.assetid: 7162cad3-5c14-43f3-a760-833ffd7786b1
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: ab451a1213923ecd27dfc0b8ca353041e70435ed
+ms.sourcegitcommit: 89e190e6a3e514c0f38b33409cde2abea0776885
+ms.openlocfilehash: 0cdf5bf8f9fad1f44dbb0ef11de71aea55949d89
 
 
 ---
 
 # <a name="create-groups-to-organize-evaluation-subscription-users-and-devices"></a>Crear grupos para organizar los dispositivos y usuarios de la suscripción de evaluación
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Los grupos de Intune ofrecen una gran flexibilidad para administrar dispositivos y usuarios. Puede configurar los grupos para que se adapten a las necesidades de su organización (por ejemplo, por ubicación geográfica, departamento o características de hardware) y usarlos para realizar diversas tareas administrativas a escala, desde la configuración de directivas para un conjunto de usuarios hasta la implementación de aplicaciones en un conjunto de dispositivos.
 
 ## <a name="create-a-device-group"></a>Creación de un grupo de dispositivos
@@ -61,6 +64,6 @@ Para obtener más información sobre el uso de los grupos, vea [Usar grupos para
 
 
 
-<!--HONumber=Nov16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 

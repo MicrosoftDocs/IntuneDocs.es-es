@@ -1,33 +1,34 @@
 ---
-title: "Restablecer el código de acceso de un dispositivo desde el sitio web del portal de empresa | Microsoft Intune"
+title: "Restablecer el código de acceso de un dispositivo desde el sitio web del portal de empresa | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: b3a3b7c2a983776f79ffa8562e130bb11e714e29
+ms.sourcegitcommit: beba9603ffb43d025132d2d86f0996ff505a9019
+ms.openlocfilehash: f9d66fe07173245ff831f204dd120598ad7564db
 
 
 ---
 
-
-# <a name="reset-your-device-passcode-from-the-company-portal-website"></a>Restablecer el código de acceso de un dispositivo desde el sitio web del portal de empresa
+# <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Restablecer el código de acceso de un dispositivo desde el sitio web del portal de empresa
 
 Si pierde el PIN o la contraseña de un dispositivo inscrito en Intune, puede usar el [sitio web del portal de empresa](http://portal.manage.microsoft.com) para restablecerlos. Puede usar el sitio web del Portal de empresa para administrar equipos y dispositivos que haya inscrito en Intune y para realizar la mayoría de las tareas que se pueden hacer con la aplicación Portal de empresa.
 
 > [!NOTE]
-> Según la configuración de Intune que haya realizado el administrador de TI, es posible que no vea el botón **Restablecer código de acceso** en el sitio web del Portal de empresa. El restablecimiento del código de acceso no se admite en dispositivos Windows 8.1.
+> Es posible que no vea el botón **Restablecer contraseña** en el sitio web de Portal de empresa. Si no lo hace, tendrá que ponerse en contacto con el administrador de TI para obtener soporte técnico en el sitio web de Portal de empresa.
 
 Para restablecer el código de acceso:
 
@@ -47,15 +48,14 @@ Para restablecer el código de acceso:
 
     Consulte la tabla para ver cómo funciona **Restablecer código de acceso** en su dispositivo.
 
-    |Plataforma|Support|
+    |Tipo de dispositivo|¿Qué ocurre al restablecer?|
     |------------|-----------|
-    |Android|Crea un código de acceso temporal alfanumérico.|
-    |iOS|Quita el código de acceso del dispositivo y no crea ningún código de acceso temporal. Si usa Touch ID deberá volver a configurarlo en el dispositivo, ya que se eliminará al restablecer el código de acceso.|
-    |Windows 10 (solo para dispositivos móviles)|Crea un código de acceso temporal alfanumérico. Windows Hello es compatible.|
-    |Windows Phone 8,1|Crea un código de acceso temporal numérico.|
-    Después de desbloquear el dispositivo, puede establecer un código de acceso nuevo, Para ello, vaya a **Configuración** en el dispositivo.
+    |Android|Quita el código de acceso existente y crea un código de acceso temporal con letras y números|
+    |iOS|Quita el código de acceso existente y no crea un código de acceso temporal. Si utiliza el escáner de huellas dactilares Touch ID para abrir el dispositivo o realizar compras, deberá configurarlo de nuevo.|
+    |Windows 10 Mobile|Quita el código de acceso existente y crea un código de acceso temporal con letras y números. Si utiliza el reconocimiento facial de Windows Hello para iniciar sesión, seguirá siendo compatible.|
+    |Windows Phone 8,1|Quita el código de acceso existente y crea un código de acceso temporal con números.|
 
-5.  Desbloquee el dispositivo y establezca un código de acceso nuevo, o bien cambie el código de acceso temporal en **Configuración** en el dispositivo.
+    5.  Desbloquee el dispositivo y establezca un código de acceso nuevo, o bien cambie el código de acceso temporal en **Configuración** en el dispositivo.
 
     Para ver una notificación que confirme que la contraseña se restableció correctamente, haga clic en la marca de notificación en la parte superior derecha del sitio del portal de empresa.
 
@@ -63,6 +63,6 @@ Para restablecer el código de acceso:
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

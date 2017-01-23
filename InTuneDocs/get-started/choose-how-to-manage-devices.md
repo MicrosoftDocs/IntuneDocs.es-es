@@ -1,12 +1,12 @@
 ---
-title: "Elegir cómo administrar dispositivos | Microsoft Intune"
+title: "Elegir cómo administrar dispositivos | Microsoft Docs"
 description: "Obtenga información sobre las distintas formas en las que puede inscribir y administrar dispositivos."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,13 +14,15 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: b97ee1e99778c2a39e92061dd5aa051ecdf35caa
+ms.sourcegitcommit: e13a9c426e07ebb2443bd403d1a5c7274afd387e
+ms.openlocfilehash: dea0700e2901bfed566a87d7c599569219de85a2
 
 
 ---
 
 # <a name="choose-how-to-manage-devices"></a>Elegir cómo administrar dispositivos
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Para sacar provecho de las distintas características que ofrece Intune, como la implementación de aplicaciones y el control de la configuración de los dispositivos, los dispositivos deben estar *administrados*. La manera en que administre los dispositivos dependerá de las capacidades de Intune que quiera usar. Este tema le ayudará a elegir el método que satisfaga sus necesidades.
 
@@ -44,7 +46,7 @@ Inscriba equipos con Windows para obtener la máxima funcionalidad, aunque el cl
 - Asistencia remota a los usuarios con el software de TeamViewer
 
 Para obtener una lista detallada de las capacidades de administración que obtendrá con cada método, consulte [Funcionalidades de administración de dispositivos inscritos en Microsoft Intune](mobile-device-management-capabilities-in-microsoft-intune.md) y [Capacidades de administración de PC de Windows cuando se utiliza el cliente de software de Intune](windows-pc-management-capabilities-in-microsoft-intune.md).
-Para obtener información sobre los dispositivos y los equipos compatibles con Intune, consulte [Equipos y dispositivos móviles compatibles](/intune/get-started/supported-mobile-devices-and-computers).
+Para obtener información sobre los dispositivos y los equipos compatibles con Intune, consulte [Equipos y dispositivos móviles compatibles](https://docs.microsoft.com/intune/get-started/what-to-know-before-you-start-microsoft-intune#intune-supported-devices).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
@@ -54,6 +56,6 @@ Para obtener información sobre los dispositivos y los equipos compatibles con I
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

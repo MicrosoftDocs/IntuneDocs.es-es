@@ -1,11 +1,11 @@
 ---
-title: Ajuste de aplicaciones Android con la herramienta de ajuste de aplicaciones | Microsoft Intune
+title: Ajuste de aplicaciones Android con la herramienta de ajuste de aplicaciones | Microsoft Docs
 description: "Utilice la información de este tema para aprender a ajustar las aplicaciones Android sin modificar el código de la propia aplicación. Prepare las aplicaciones de modo que pueda aplicar las directivas de administración de aplicaciones móviles."
 keywords: 
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 09/13/2016
+ms.date: 12/19/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: oldang
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ee7e0491c0635c45cbc0377a5de01d5eba851132
-ms.openlocfilehash: e8ca141b31104fb5759d9796f19b618debe74752
+ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
+ms.openlocfilehash: 9a9899e192db1488c9a2c0fd38ffed6cef625c34
 
 
 ---
 
 # <a name="prepare-android-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Preparar aplicaciones Android para la administración de aplicaciones móviles con la Herramienta de ajuste de aplicaciones de Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Use la herramienta de ajuste de aplicaciones de Microsoft Intune para Android para modificar el comportamiento de las aplicaciones Android internas mediante la restricción de características de la aplicación sin modificar el código de la propia aplicación.
 
@@ -140,6 +142,6 @@ Para evitar posibles suplantaciones de identidad, la divulgación de informació
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

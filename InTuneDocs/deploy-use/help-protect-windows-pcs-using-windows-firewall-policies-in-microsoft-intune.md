@@ -1,11 +1,11 @@
 ---
-title: Directivas de Firewall para equipos Windows | Microsoft Intune
+title: Directivas de Firewall para equipos Windows | Microsoft Docs
 description: Intune puede ayudarle a proteger los equipos que administra con el cliente de Intune de varias maneras. Una de ellas es configurar Firewall de Windows.
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +14,20 @@ ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 3faede4b60ac989e688b87ddb8112aebcf4c56ef
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: bad0d8867602baf69dc398cc06b91ca30b24c487
 
 
 ---
 
-# Ayudar a proteger los equipos de Windows mediante directivas del Firewall de Windows en Microsoft Intune
+# <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Ayudar a proteger los equipos de Windows mediante directivas del Firewall de Windows en Microsoft Intune
 Microsoft Intune puede ayudarle a proteger los equipos que administra con el cliente de Intune de varias maneras. Una de ellas es proporcionar directivas que permiten configurar Firewall de Windows en equipos.
 
 Si aún no ha instalado el cliente de equipos Windows de Intune en sus equipos PC, vea [Instalar el cliente de equipos Windows con Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
 
 Use la información de las siguientes secciones como ayuda para configurar, implementar y supervisar las directivas de Firewall de Windows en equipos Windows.
 
-## Uso de directivas de Intune para administrar Firewall de Windows
+## <a name="use-intune-policies-to-manage-windows-firewall"></a>Uso de directivas de Intune para administrar Firewall de Windows
 La directiva de Firewall de Windows permite crear e implementar la configuración que controla Firewall de Windows en los equipos administrados. No puede administrar excepciones personalizadas para Firewall de Windows, y esta configuración no afecta a ningún firewall que no sea de Microsoft.
 
 > [!NOTE]
@@ -41,7 +41,7 @@ La directiva de Firewall de Windows permite crear e implementar la configuració
 > -   Firewall de Windows
 > -   Agente de directivas IPsec
 
-## Para configurar una directiva de Firewall de Windows
+## <a name="configure-a-windows-firewall-policy"></a>Para configurar una directiva de Firewall de Windows
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), seleccione **Directiva** &gt; **Agregar directiva**.
 
@@ -51,9 +51,9 @@ La directiva de Firewall de Windows permite crear e implementar la configuració
 
 Tras implementar la directiva de Firewall de Windows, puede ver su estado en la página **Todas las directivas** del área de trabajo **Directiva**.
 
-## Especificar la configuración de directiva para Firewall de Windows
+## <a name="specify-policy-settings-for-windows-firewall"></a>Especificar la configuración de directiva para Firewall de Windows
 
-### Activar Firewall de Windows
+### <a name="turn-on-windows-firewall"></a>Activar Firewall de Windows
 
 Esta configuración de directiva habilita Firewall de Windows en equipos administrados que están conectados a:
 - un dominio (por ejemplo, en el área de trabajo)
@@ -64,7 +64,7 @@ El valor predeterminado de cada uno de estos valores es **Sí**, que es el valor
 
 
 
-### Bloquear todas las conexiones entrantes, incluidas las de la lista de programas permitidos.
+### <a name="block-all-incoming-connections-including-those-in-the-list-of-allowed-programs"></a>Bloquear todas las conexiones entrantes, incluidas las de la lista de programas permitidos.
 
 Esta configuración de directiva configura Firewall de Windows para bloquear el tráfico de red de entrada en equipos administrados que están conectados a:
 - un dominio (por ejemplo, en el área de trabajo)
@@ -76,7 +76,7 @@ El valor predeterminado de cada uno de estos valores es **Sí**, que es el valor
 > [!IMPORTANT]
 > Si su entorno incluye equipos administrados que ejecutan Windows Vista sin ningún Service Pack instalado, debe instalar la actualización asociada al [artículo 971800](http://go.microsoft.com/fwlink/?LinkId=188405) de Microsoft Knowledge Base o deshabilitar la configuración de directiva **Bloquear todas las conexiones entrantes** en las directivas implementadas en dichos equipos.
 
-### Notificar al usuario cuando Firewall de Windows bloquee un nuevo programa
+### <a name="notify-the-user-when-windows-firewall-blocks-a-new-program"></a>Notificar al usuario cuando Firewall de Windows bloquee un nuevo programa
 
 Esta configuración de directiva determina si Firewall de Windows notifica al usuario de un equipo cuando se bloquea el tráfico de red de entrada cuando el equipo administrado está conectado a:
 - un dominio (por ejemplo, en el área de trabajo)
@@ -86,7 +86,7 @@ Esta configuración de directiva determina si Firewall de Windows notifica al us
 El valor predeterminado para cada uno de estos valores es **Sí**.
 
 
-### Configurar excepciones predefinidas
+### <a name="configure-predefined-exceptions"></a>Configurar excepciones predefinidas
 
 Puede configurar las excepciones que permiten determinados tipos de tráfico de red a través del firewall independientemente de los valores que haya configurado con anterioridad. De forma predeterminada, no se configura ninguna de estas opciones.
 
@@ -130,11 +130,11 @@ Puede configurar las excepciones que permiten determinados tipos de tráfico de 
 |**Windows Virtual PC**<br>(Windows 7 o posterior)|Permite que las máquinas virtuales se comuniquen con otros equipos.|
 |**Dispositivos portátiles inalámbricos**|Permite la transferencia de archivos multimedia a equipos administrados desde cualquier cámara o dispositivo multimedia que se pueda conectar a la red, por medio de Protocolo de transferencia multimedia (MTP). Esta configuración usa los protocolos de red SSDP y UPnP.|
 
-### Consulte también
+### <a name="see-also"></a>Consulte también
 [Directivas para proteger equipos de Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

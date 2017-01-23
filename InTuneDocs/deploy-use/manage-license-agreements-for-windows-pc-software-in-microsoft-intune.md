@@ -1,11 +1,11 @@
 ---
-title: Administrar contratos de licencia de software para equipos que ejecutan el software cliente de Intune | Microsoft Intune
+title: Administrar contratos de licencia de software para equipos que ejecutan el software cliente de Intune | Microsoft Docs
 description: "Intune permite administrar contratos de licencia de software adquiridos a través de los contratos de licencias por volumen de Microsoft, así como de software que se adquirió por otros medios."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/14/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 6eead7cd7f04641687b334c8f0c09a3af1f9b4ba
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 47c923cf145a7783a1bc2222442831fcbc0f6a47
 
 
 ---
 
-# Administrar contratos de licencia de software de equipos Windows en Microsoft Intune
+# <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Administrar contratos de licencia de software de equipos Windows en Microsoft Intune
 Microsoft Intune permite agregar y administrar información de contratos de licencia para el software adquirido a través de contratos de licencias por volumen de Microsoft. También puede hacerlo para software de Microsoft o de terceros adquirido por otros medios. Además, puede organizar esta información en grupos lógicos.
 
 > [!IMPORTANT]
@@ -43,7 +43,7 @@ Asimismo, puede generar informes que muestran recuentos de instalaciones y de li
 > [!TIP]
 > El área de trabajo **Licencias** no se muestra en la consola de administrador hasta que administre al menos un equipo Windows con el cliente para PC Windows de Intune.
 
-## Agregar contratos de licencias por volumen de Microsoft
+## <a name="add-microsoft-volume-licensing-agreements"></a>Agregar contratos de licencias por volumen de Microsoft
 Los contratos de licencias por volumen de Intune proporcionan información de licencias del software adquirido a través de contratos de licencias por volumen de Microsoft. Puede agregar contratos de licencias por volumen de Microsoft a Intune mediante pares coincidentes de números de contrato. Los números de autorización o contrato deben coincidir con los números de inscripción o licencia correctos. Los pares de números de contrato se obtienen al adquirir los contratos de licencia del [Volume Licensing Service Center (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842).
 
 1.  En la [consola de administrador de Microsoft Intune](https://account.manage.microsoft.com/admin/default.aspx), elija **Licencias**.
@@ -123,13 +123,13 @@ Después de actualizar la información de licencias por volumen, puede comparar 
 > [!NOTE]
 > El **Título del producto** que se muestra para todos los contratos de licencias por volumen de Microsoft es **No disponible**.
 
-## Agregar y editar otros contratos de licencias de software
+## <a name="add-and-edit-other-software-licensing-agreements"></a>Agregar y editar otros contratos de licencias de software
 También puede agregar otros tipos de contratos de licencias a Intune, además de los contratos de licencias por volumen de Microsoft. Estos contratos pueden incluir software que no sea de Microsoft o software de Microsoft adquirido a través de un distribuidor.
 
 > [!IMPORTANT]
 > Debe tener al menos un equipo Windows inscrito en Intune para poder agregar un contrato.  De igual manera, al menos un equipo inscrito debe tener cargado el paquete de software sujeto a licencia que desee usar para agregar un contrato de licencia.
 
-### Para agregar otros contratos de software
+### <a name="to-add-other-software-agreements"></a>Para agregar otros contratos de software
 
 1.  En la [consola de administrador de Microsoft Intune](https://account.manage.microsoft.com/admin/default.aspx), elija **Licencias**.
 
@@ -168,7 +168,7 @@ También puede agregar otros tipos de contratos de licencias a Intune, además d
 
 Se muestra la vista de lista **Todos los contratos** .
 
-## Administrar contratos de licencia
+## <a name="manage-license-agreements"></a>Administrar contratos de licencia
 Los contratos de licencias de software pueden agregarse a grupos de licencias. Puede utilizar grupos de licencias para organizar los contratos de licencias en unidades lógicas para la organización. Igualmente, puede eliminar los contratos de licencia que haya creado anteriormente.
 
 |||
@@ -181,6 +181,6 @@ Los contratos de licencias de software pueden agregarse a grupos de licencias. P
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

@@ -14,13 +14,16 @@ ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: e373fe71f54472bca538ba4a14beff39d090e23d
+ms.sourcegitcommit: d0057f1e3d2ead729c2143587571fa4b16a3dd2f
+ms.openlocfilehash: 9b4eed086853c0feeb8266a8087a275f2b70e40f
 
 
 ---
 
 # <a name="what-is-intune"></a>¿Qué es Intune?
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune es un servicio de administración de movilidad empresarial (EMM) basado en nube que ayuda a los empleados a ser productivos mientras mantiene protegidos los datos corporativos. Intune permite:
 * Administrar los dispositivos móviles que los empleados usan para tener acceso a datos de la empresa.
 * Administrar las aplicaciones móviles que usa la plantilla.
@@ -92,7 +95,7 @@ La mayoría de las soluciones de administración de movilidad empresarial admite
 
 Las organizaciones diferirán en la medida en que adopten escenarios "sin inscripción". Para algunas organizaciones son estándar, otras los permiten en dispositivos complementarios, como una tableta personal, y otras no los admiten en absoluto. Incluso en este último caso, en el que se requiere que todos los dispositivos de los empleados se inscriban en MDM, las organizaciones suelen admitir escenarios "sin inscripción" para contratistas, proveedores y otros dispositivos con exenciones específicas.
 
-También se puede usar tecnología de "sin inscripción" de Intune en los dispositivos inscritos. Por ejemplo, un dispositivo inscrito en MDM puede tener protecciones "Open-in" proporcionadas por el sistema operativo móvil. Además, el departamento de TI puede aplicar la directiva de protección de aplicaciones a las aplicaciones móviles administradas por EMS para controlar la opción de guardar como o proporcionar autenticación multifactor.
+También se puede usar tecnología de "sin inscripción" de Intune en los dispositivos inscritos. Por ejemplo, un dispositivo inscrito en MDM puede tener protecciones "Open-in" proporcionadas por el sistema operativo móvil. (La protección de apertura es una función de iOS que impide que se abra un documento desde una aplicación, como Outlook, en otra aplicación, como Word, a menos que el proveedor de MDM administre ambas aplicaciones) Además, el departamento de TI puede aplicar la directiva de protección de aplicaciones a las aplicaciones móviles administradas por EMS para controlar la opción de guardar como o proporcionar autenticación multifactor.
 
 Sea cual sea la postura de su organización con respecto a los dispositivos y aplicaciones móviles inscritos y no inscritos, Intune, como parte de EMS, dispone de herramientas que le ayudarán a aumentar la productividad de sus empleados mientras protege los datos de la empresa.
 
@@ -113,6 +116,6 @@ La siguiente lista de problemas empresariales contiene vínculos a información 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

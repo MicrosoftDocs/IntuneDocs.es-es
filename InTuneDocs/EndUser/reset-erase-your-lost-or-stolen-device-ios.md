@@ -1,5 +1,5 @@
 ---
-title: Restablecimiento (borrado) de un dispositivo iOS perdido o robado | Microsoft Intune
+title: Restablecimiento (borrado) de un dispositivo iOS perdido o robado | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -11,12 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 70788dca-765f-47a7-9994-a286f8a88588
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 586eb09811bf52cecf93dd51d1de76b2287b80ea
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 9014a09c79287a28502adfbf7e66c4b004336fa9
 
 
 ---
@@ -51,6 +53,6 @@ Si no puede restablecer el dispositivo perdido o robado, pida al administrador d
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

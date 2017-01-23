@@ -1,5 +1,5 @@
 ---
-title: "Cómo obtener asistencia | Microsoft Intune"
+title: "Cómo obtener asistencia | Microsoft Docs"
 description: "El soporte técnico está disponible tanto en línea como por teléfono para las suscripciones de pago y de prueba."
 keywords: 
 author: staciebarker
@@ -14,13 +14,15 @@ ms.assetid: 4682b6b6-c9ef-483e-a6de-b8830cb98b63
 ms.reviewer: cacamp
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c97ecfbb7b8ec7d76bead6a553df402f24296307
-ms.openlocfilehash: 9e976973b6230b985a6e9ae4331f452bc43e1a9a
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 1a83bd41e4dc3aaa2e98b78b918b0cfe4c74dfe3
 
 
 ---
 
 # <a name="how-to-get-admin-support-for-microsoft-intune"></a>Cómo obtener asistencia de administración para Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Microsoft proporciona servicios globales de soporte técnico, preventa, facturación y suscripción para Microsoft Intune. El soporte técnico está disponible tanto en línea como por teléfono para las suscripciones de pago y de prueba. El soporte técnico en línea está disponible en inglés y japonés. La asistencia telefónica y la asistencia de facturación en línea están disponibles en idiomas adicionales.
 
@@ -114,6 +116,6 @@ Si ya ha adquirido licencias de Microsoft a través de un programa de licencias 
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

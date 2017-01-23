@@ -1,11 +1,11 @@
 ---
-title: "Usar directivas para simplificar la administración de PC de Windows | Microsoft Intune"
+title: "Usar directivas para simplificar la administración de PC de Windows | Microsoft Docs"
 description: "Describe las directivas de administración de PC de Windows y la configuración de Microsoft Intune Center."
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 10/04/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,15 @@ ms.assetid: f0afda7e-f4c3-4bcd-b4bf-4304103cf73e
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 1c6800ea3fde39603478437de6da7200ecae5afb
+ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
+ms.openlocfilehash: da0dad4cd40a21aec9485f46ff918a48611b869d
 
 
 ---
 
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Usar directivas para simplificar la administración de PC de Windows
 
-Los equipos Windows que ejecutan el cliente de software de Intune se pueden administrar mediante las directivas **Administración de equipos** de Intune. Usar las directivas de **administración de equipos** de Intune para configurar las opciones de Microsoft Intune Center para controlar las actualizaciones en equipos y configurar Firewall de Windows para PC.
+Para administrar escritorios de Windows como PC, ejecutando el cliente de software de Intune en ellos, solo puede usar las directivas que se encuentran en las directivas de **Administración de equipos** de la consola de administración de Intune. Todas las demás directivas que aparecen en la consola de administración son solo para dispositivos móviles. Al usar las directivas de **Administración de equipos** puede configurar las opciones en Microsoft Intune Center, controlar las actualizaciones en PC y configurar Firewall de Windows para PC.
 
 ![Plantilla de directivas para equipos con Windows](../media/pc_policy_template.png)
 
@@ -63,6 +63,6 @@ Consulte los siguientes recursos para obtener información sobre las directivas 
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

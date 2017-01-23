@@ -1,40 +1,38 @@
 ---
-title: "Desactivar la recopilación de datos de uso de Microsoft para iOS | Microsoft Intune"
+title: "Cómo desactivar la recopilación de datos de Microsoft | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6515f4c4-3821-49b0-9bfe-abdf8143c8d1
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bff97f79c6e88bbf55c2c3a259891bb6206b690b
-ms.openlocfilehash: 1b193a401c05ae649456e27222503ee5bd9e150f
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 29fb52fd86aa84a2c5bab6be14d71d198d6b8deb
 
 
 ---
 
-
 # <a name="turn-off-microsoft-usage-data-collection"></a>Desactivar la recopilación de datos de uso de Microsoft
 
-Para mejorar sus productos y servicios, Microsoft recopila automáticamente datos anónimos sobre la confiabilidad, el rendimiento y el uso de la aplicación Portal de empresa.
+Microsoft recopila automáticamente determinados datos sobre nuestros productos y servicios. Hacemos esto para mejorar la confiabilidad y el rendimiento de nuestros productos, incluida la aplicación de portal de empresa. Aunque estos datos son anónimos, algunos usuarios no se sienten cómodos con esta recopilación. El administrador de TI no tiene control sobre la recopilación de estos datos y no puede cambiar la selección de este ajuste.
 
-Para desactivar la recopilación de datos de uso en el dispositivo iOS, vaya a **Configuración**, puntee en **Portal de empresa**, y, a continuación, desactive la configuración **Datos de uso**.
-
-Los administradores de TI no tienen ningún control sobre la recopilación de estos datos y no pueden cambiar la selección de este ajuste.
+Si quiere desactivar la recopilación de datos en el dispositivo iOS, abra **Configuración**, pulse **Portal de empresa** y, después, desactive **Datos de uso**.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 
 
-
-<!--HONumber=Sep16_HO3-->
+<!--HONumber=Dec16_HO3-->
 
 

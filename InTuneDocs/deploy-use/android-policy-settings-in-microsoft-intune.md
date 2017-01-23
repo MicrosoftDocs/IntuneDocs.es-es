@@ -1,12 +1,12 @@
 ---
 
-title: "Configuración de directivas de Android y Samsung KNOX Standard | Microsoft Intune"
+title: "Configuración de directivas de Android y Samsung KNOX Standard | Microsoft Docs"
 description: "Cree directivas que controlen la configuración y las características en los dispositivos Android que administra con Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/02/2016
+ms.date: 12/14/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,15 @@ ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 08ec9963bf00d81f080c0cf4f26e23a3104763ea
+ms.sourcegitcommit: a90e5bc6ed9c4c7447f6ed673f9b75db99257c04
+ms.openlocfilehash: 3f7236989ec2d444601aba4a594175a289e2fc77
 
 
 ---
 
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Configuración de directivas de Android y Samsung KNOX Standard en Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune proporciona una variedad de opciones generales integradas que puede configurar en los dispositivos Android. Además, puede especificar valores Open Mobile Alliance Uniform Resource Identifier (OMA-URI, identificador uniforme de recursos de Open Mobile Alliance) para crear una configuración personalizada que no esté disponible en Intune.
 
@@ -144,6 +146,8 @@ En la lista de **aplicaciones compatibles&amp; y no compatibles**, especifique l
 |**Editarar**|Permite editar el nombre, el editor y la dirección URL de la aplicación seleccionada.|
 |**Eliminar**|Elimina la aplicación seleccionada de la lista.|
 
+Las directivas que contienen ajustes de aplicaciones compatibles y no compatibles se deben implementar en los grupos de usuarios.
+
 ### <a name="kiosk-mode-settings"></a>Configuración del modo de pantalla completa
 Especifique la siguiente configuración para los **dispositivos Samsung KNOX Standard**:
 
@@ -177,9 +181,7 @@ Ejemplo: Busque Microsoft Office Mobile en Google Play. Usará la dirección URL
 Use la **directiva de configuración personalizada de Android** de Microsoft Intune para implementar las opciones de configuración de OMA-URI, que sirve para controlar características en dispositivos Android. Se trata de una configuración estándar que muchos fabricantes de dispositivos móviles usan para controlar las características del dispositivo.
 
 Esta capacidad está pensada para que se puedan implementar las opciones de configuración de Android que no se pueden definir con directivas de Intune.
-
-> [!NOTE]
-> Actualmente, las directivas personalizadas de Android solo admiten la configuración de Wi-Fi para dispositivos Android que incluyen una clave precompartida.
+Intune admite un número limitado de directivas personalizadas de Android en este momento. Vea los ejemplos de este tema para averiguar qué directivas puede configurar.
 
 ### <a name="general-settings"></a>Configuración general
 
@@ -209,6 +211,6 @@ Esta capacidad está pensada para que se puedan implementar las opciones de conf
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

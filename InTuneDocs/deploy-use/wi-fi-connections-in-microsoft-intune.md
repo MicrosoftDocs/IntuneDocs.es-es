@@ -1,5 +1,5 @@
 ---
-title: Conexiones Wi-Fi | Microsoft Intune
+title: Conexiones Wi-Fi | Microsoft Docs
 description: Use perfiles de Wi-Fi para que los usuarios se conecten a las redes Wi-Fi.
 keywords: 
 author: robstackmsft
@@ -14,13 +14,15 @@ ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: df3f5bd6f44b9de8c4f24a82c7f4e000f08aac5a
-ms.openlocfilehash: c90ede1f10ca8f01e01cf2ac4aed7afb8641f02f
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 985b3d14091f1adff15ae08dd95800640363d2f2
 
 
 ---
 
 # <a name="configure-devices-to-connect-to-your-corporate-wi-fi-networks"></a>Configurar dispositivos para que se conecten a las redes corporativas de Wi-Fi
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Use perfiles de Wi-Fi de Microsoft Intune para implementar la configuración de red inalámbrica en los usuarios y los dispositivos de la organización. Al implementar un perfil de Wi-Fi, los usuarios tendrán acceso a su red Wi-Fi corporativa sin tener que configurarla ellos mismos.
 
@@ -43,7 +45,7 @@ Puede implementar perfiles de Wi-Fi en las siguientes plataformas:
 
 -   Android for Work   
 
--   iOS 8.0 y versiones posteriores
+-   iOS 8.0 y versiones posteriores
 
 -   Mac OS X 10.9 y versiones posteriores
 
@@ -102,7 +104,7 @@ En Windows, puede usar la utilidad **netsh wlan** para exportar un perfil de Wi-
 4.  Ejecute este comando: `netsh wlan export profile name="ProfileName" folder=c:\Wifi`. Se creará un archivo de perfil de Wi-Fi denominado **Wi-Fi-WiFiName.xml** en la carpeta de destino.
 
 ### <a name="import-a-wi-fi-profile"></a>Importar un perfil de Wi-Fi
-Use la **Directiva de importación de Wi-Fi de Windows** para importar un conjunto de opciones de Wi-Fi que luego puede implementar en los grupos de usuarios o de dispositivos necesarios.
+Use la **Directiva de importación de Wi-Fi de Windows** para importar un conjunto de opciones de Wi-Fi que luego puede implementar en los grupos de usuarios o de dispositivos necesarios.
 
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), haga clic en **Directiva** &gt; **Agregar directiva**.
@@ -113,7 +115,7 @@ Use la **Directiva de importación de Wi-Fi de Windows** para importar un conjun
 
     Solo puede crear e implementar una directiva *personalizada* de importación de Wi-Fi de Windows. La configuración recomendada no está disponible.
 
-3.  Especifique los siguientes valores generales para la Directiva de importación de Wi-Fi de Windows:
+3.  Especifique los siguientes valores generales para la Directiva de importación de Wi-Fi de Windows:
 
     |Nombre de la configuración|Más información|
     |----------------|--------------------|
@@ -181,6 +183,6 @@ Aprenda a crear un perfil de Wi-Fi con una clave precompartida en [Crear un perf
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,6 +1,6 @@
 ---
-title: Administrar licencias de Intune | Microsoft Intune
-description: "Asignación de licencias a los usuarios de la suscripción de Intune."
+title: Administrar licencias de Intune | Microsoft Docs
+description: "Asignar licencias a usuarios para la suscripción de Intune"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,13 +14,16 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: f0f9d60a27afa580aaba8a3c24fff6325ae53f08
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 1d0bb386cab923f3d1b45a0c6b64296fd2291460
 
 
 ---
 
 # <a name="manage-intune-licenses"></a>Administración de licencias de Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Antes de que los usuarios puedan iniciar sesión para usar el servicio de Intune o inscriban sus dispositivos en la administración, primero debe asignar a cada usuario una licencia a su suscripción de Intune desde el [portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854).
 
 Las organizaciones que usan Microsoft Enterprise Mobility + Security (EMS) pueden tener usuarios que solo necesiten Azure Active Directory Premium o los servicios de Intune en el paquete de EMS. Puede asignar un servicio o un subconjunto de servicios mediante los [cmdlets de PowerShell de Azure Active Directory](https://msdn.microsoft.com/library/jj151815.aspx). Para obtener más información, vea [licencias de Intune administrar con PowerShell](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md).
@@ -94,6 +97,6 @@ Realice la comprobación con lo siguiente:
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

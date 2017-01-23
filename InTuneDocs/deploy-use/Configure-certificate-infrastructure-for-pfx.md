@@ -1,5 +1,5 @@
 ---
-title: Configurar la infraestructura de certificados para PFX | Microsoft Intune
+title: Configurar la infraestructura de certificados para PFX | Microsoft Docs
 description: Cree e implemente perfiles de certificado .PFX.
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 7d1f37a2ba2e634fb75058d33eaaccf3aa5845b0
-ms.openlocfilehash: 8fc1cc718fd0edae8b8ec4a0a8dc25487eafda2b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 12773352970deeacf30b1336a4e560e08b400ee3
 
 
 
 ---
 # <a name="configure-certificate-infrastructure"></a>Configurar la infraestructura de certificados
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 En este tema se describe qué se necesita para crear e implementar perfiles de certificado .PFX.
 
 Para realizar cualquier autenticación basada en certificados en la organización, se necesita una entidad de certificación empresarial.
@@ -31,7 +34,7 @@ Para usar perfiles de certificado .PFX, aparte de la entidad de certificación e
 
 -  El conector de certificado de Intune, que se ejecuta en el equipo que puede comunicarse con la entidad de certificación.
 
-## <a name="onpremises-infrastructure-description"></a>Descripción de infraestructura local
+## <a name="on-premises-infrastructure-description"></a>Descripción de infraestructura local
 
 
 -    **Dominio de Active Directory:** todos los servidores mencionados en esta sección (salvo el servidor Proxy de aplicación web) deben estar unidos al dominio de Active Directory.
@@ -65,7 +68,7 @@ Para poder configurar perfiles de certificado, debe llevar a cabo las siguientes
 - **Tarea 1**: configurar plantillas de certificado en la entidad de certificación.
 - **Tarea 2**: habilitar, instalar y configurar Intune Certificate Connector.
 
-### <a name="task-1-configure-certificate-templates-on-the-certification-authority"></a>Tarea 1: configurar plantillas de certificado en la entidad de certificación
+### <a name="task-1---configure-certificate-templates-on-the-certification-authority"></a>Tarea 1: configurar plantillas de certificado en la entidad de certificación
 En esta tarea se publicará la plantilla de certificado.
 
 ##### <a name="to-configure-the-certification-authority"></a>Para configurar la entidad de certificación
@@ -104,7 +107,7 @@ En esta tarea se publicará la plantilla de certificado.
 
 4.  En el equipo de la entidad de certificación, asegúrese de que el equipo que hospeda Intune Certificate Connector tiene permiso de inscripción para poder tener acceso a la plantilla usada al crear el perfil .PFX. Establezca ese permiso en la pestaña **Seguridad** de las propiedades del equipo de CA.
 
-### <a name="task-2-enable-install-and-configure-the-intune-certificate-connector"></a>Tarea 2: habilitar, instalar y configurar Intune Certificate Connector
+### <a name="task-2---enable-install-and-configure-the-intune-certificate-connector"></a>Tarea 2: habilitar, instalar y configurar Intune Certificate Connector
 En esta tarea tendrá que:
 
 Descargar, instalar y configurar Certificate Connector.
@@ -156,6 +159,6 @@ Ya está listo para configurar los perfiles de certificado, como se describe en 
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

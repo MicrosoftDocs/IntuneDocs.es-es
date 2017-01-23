@@ -1,5 +1,5 @@
 ---
-title: "Configuración de la directiva de términos y condiciones | Microsoft Intune"
+title: "Configuración de la directiva de términos y condiciones | Microsoft Docs"
 description: "Puede implementar los términos y condiciones de Intune en los grupos de usuarios para explicar en qué afecta la inscripción, el acceso a los recursos de trabajo y el uso del portal de empresa a los dispositivos y los usuarios."
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 6edf0ac1-4f46-4543-a9e5-f484ac37e9a5
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: cba0d6d781d3050f4dd8aabd661d677ae849eff1
-ms.openlocfilehash: bc9a7b837ab4dcd402aeec572b819d56070eba82
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: a6d5f19b1d5f5bac3cd5e6d8bc445d765d703de0
 
 
 ---
 
 # <a name="terms-and-condition-policy-settings-in-microsoft-intune"></a>Configuración de la directiva de términos y condiciones en Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Puede implementar los términos y condiciones de Intune en los grupos de usuarios para explicar en qué afecta la inscripción, el acceso a los recursos de trabajo y la aplicación Portal de empresa a los dispositivos y los usuarios. Los usuarios deben aceptar los términos y las condiciones para poder usar el portal de empresa a fin de inscribirse y obtener acceso a su trabajo.
 
 Puede crear e implementar varias directivas que contienen diferentes términos y condiciones. También puede generar versiones de los mismos términos y condiciones en distintos idiomas e implementarlas en los grupos correspondientes.
@@ -81,6 +84,6 @@ Al editar una directiva existente de términos y condiciones, puede elegir el co
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Configuración de directivas de Windows 10 | Microsoft Intune"
+title: "Configuración de directivas de Windows 10 | Microsoft Docs"
 description: "Use la configuración de directiva indicada en este tema para configurar las opciones integradas y personalizadas de los dispositivos Windows 10 Escritorio y Windows 10 Mobile inscritos."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,15 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 8c970a4d1362def67e17da656b5e12e5bab2667b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 5a1a861096bdfae461b6ad05e424f770796279a2
 
 
 ---
 
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Configuración de directivas de Intune para dispositivos Windows 10 en Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Este tema contiene información que le ayudará a entender la configuración de directivas de Intune que puede usar para administrar dispositivos Windows 10. Lea este tema, además de los procedimientos de [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md) para configurar opciones integradas y personalizadas para dispositivos Windows 10 Escritorio y Windows 10 Mobile inscritos. No puede usar estas directivas con equipos que ejecutan el [software cliente de PC de Intune](/intune/get-started/windows-pc-management-capabilities-in-microsoft-intune).
 

@@ -1,5 +1,5 @@
 ---
-title: "Buscar un nombre de familia de paquete (PFN) para la VPN por aplicación | Microsoft Intune"
+title: "Buscar un nombre de familia de paquete (PFN) para la VPN por aplicación | Microsoft Docs"
 description: "Busque un PFN para poder configurar una VPN por aplicación."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,15 @@ ms.assetid: 74643d1d-4fd9-4cff-ac79-1a42281d2f76
 ms.reviewer: tycast
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 17b957cc2baedddfc53bfdf7b875e4ecb28b8517
-ms.openlocfilehash: 6d3e43c1380114634c44bd364076df404bce95e3
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: b0006416f2b078c8c0cf5eb14ccea4749604e1dc
 
 
 ---
 
-# <a name="find-a-package-family-name-pfn-for-perapp-vpn-configuration"></a>Buscar un nombre de familia de paquete (PFN) para la configuración de la VPN por aplicación
+# <a name="find-a-package-family-name-pfn-for-per-app-vpn-configuration"></a>Buscar un nombre de familia de paquete (PFN) para la configuración de la VPN por aplicación
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Hay dos formas de buscar un PFN para poder configurar una VPN por aplicación.
 
@@ -86,6 +88,6 @@ Microsoft Edge muestra la información que quiere; en Internet Explorer, elija *
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

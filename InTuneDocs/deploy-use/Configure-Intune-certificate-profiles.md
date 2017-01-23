@@ -1,5 +1,5 @@
 ---
-title: Configurar perfiles de certificado | Microsoft Intune
+title: Configurar perfiles de certificado | Microsoft Docs
 description: Aprenda a crear un perfil de certificado de Intune.
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: bafb86b1e388163c07110559e2a51bbe0dadc5ed
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: f5b5bc13a834cb5071ebf875f3c5512c564efe93
 
 
 ---
 
 # <a name="configure-intune-certificate-profiles"></a>Configurar perfiles de certificado de Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Después de configurar la infraestructura y los certificados tal como se describe en [Configurar la infraestructura de certificados para SCEP](configure-certificate-infrastructure-for-scep.md) o [Configurar la infraestructura de certificados para PFX](configure-certificate-infrastructure-for-pfx.md), puede pasar a crear los perfiles de certificado. Este es el proceso:
 
 - **Tarea 1**: exportar el certificado de CA raíz de confianza
@@ -157,6 +160,6 @@ Aprenda a usar los certificados para proteger los perfiles de VPN, el Wi-Fi y el
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

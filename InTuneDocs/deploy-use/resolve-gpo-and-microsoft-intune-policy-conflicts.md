@@ -1,11 +1,11 @@
 ---
-title: Resolver conflictos de directivas de Intune y GPO | Microsoft Intune
+title: Resolver conflictos de directivas de Intune y GPO | Microsoft Docs
 description: "Obtenga información acerca de cómo resolver los conflictos entre las directivas de configuración de directiva de grupo e Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,18 @@ ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 3d883851ae9fecd8a5c3baa0aff8312552915ba4
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 439607bf79424ab32118948f112e3814577969e5
 
 
 ---
 
-# Resolver conflictos de directivas de Microsoft Intune y objetos de directiva de grupo (GPO)
+# <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>Resolver conflictos de directivas de Microsoft Intune y objetos de directiva de grupo (GPO)
 Intune usa directivas que le ayudan a administrar la configuración en equipos Windows. Por ejemplo, puede usar una directiva para controlar la configuración de Firewall de Windows en los equipos. Muchas de las opciones de Intune son similares a las opciones que se pueden configurar con la directiva de grupo de Windows. Pero es posible que, en ocasiones, los dos métodos entren en conflicto.
 
 Cuando se producen conflictos, la directiva de grupo de nivel de dominio tiene prioridad sobre la directiva de Intune, a menos que el equipo no pueda iniciar sesión en el dominio. En este caso, la directiva de Intune se aplica al equipo cliente.
 
-## Qué hacer si se utiliza la directiva de grupo
+## <a name="what-to-do-if-you-are-using-group-policy"></a>Qué hacer si se utiliza la directiva de grupo
 Asegúrese de que las directivas que aplica no se administran mediante la directiva de grupo. Para evitar conflictos, puede usar uno o más de los siguientes métodos:
 
 -   Mueva los equipos a una unidad organizativa (UO) de Active Directory que no tenga aplicada la configuración de la directiva de grupo antes de instalar el cliente de Intune. También es posible bloquear la herencia de directivas de grupo en las UO que contienen equipos inscritos en Intune a los que no quiere aplicar la configuración de la directiva de grupo.
@@ -36,7 +36,7 @@ Asegúrese de que las directivas que aplica no se administran mediante la direct
 
 Para obtener más información acerca de Active Directory y la directiva de grupo de Windows, consulte la documentación de Windows Server.
 
-## Cómo filtrar los GPO existentes para evitar conflictos con la directiva de Intune
+## <a name="how-to-filter-existing-gpos-to-avoid-conflicts-with-intune-policy"></a>Cómo filtrar los GPO existentes para evitar conflictos con la directiva de Intune
 Si ha identificado GPO cuya configuración entra en conflicto con las directivas de Intune, puede usar filtros de grupo de seguridad para restringir esos GPO únicamente a los equipos que no se administran mediante Intune.
 
 <!--- ### Use WMI filters
@@ -113,11 +113,11 @@ Puede aplicar los GPO únicamente a los grupos de seguridad especificados en el 
 
 El nuevo grupo de seguridad debe mantenerse inscrito en los cambios del servicio de Intune.
 
-### Consulte también
+### <a name="see-also"></a>Consulte también
 [Administrar equipos Windows con Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

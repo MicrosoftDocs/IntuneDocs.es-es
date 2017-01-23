@@ -1,5 +1,5 @@
 ---
-title: "Solucionar problemas de implementación de aplicaciones | Microsoft Intune"
+title: "Solucionar problemas de implementación de aplicaciones | Microsoft Docs"
 description: "Este tema le ayudará a solucionar problemas de implementación de aplicaciones con Microsoft Intune."
 keywords: 
 author: robstackmsft
@@ -14,16 +14,19 @@ ms.assetid: 28ac298e-fb73-4c1c-b3fd-8336639e05e6
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
-ms.openlocfilehash: efc280f0a1143cacc252ee9fc9344064aa211cb2
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 239371198cbbc01b1345c72b3f887055acd44462
 
 
 ---
 
-# Solucionar problemas de implementación de aplicaciones en Microsoft Intune
+# <a name="troubleshoot-app-deployment-problems-in-microsoft-intune"></a>Solucionar problemas de implementación de aplicaciones en Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Si tiene problemas al implementar y administrar aplicaciones con Intune, empiece aquí. En este tema se incluyen algunos problemas comunes que pueden surgir y sus soluciones.
 
-## Códigos de error comunes de implementación de aplicaciones
+## <a name="common-app-deployment-error-codes"></a>Códigos de error comunes de implementación de aplicaciones
 
 |Código de error|Posible problema|Solución recomendada|
 |--------------|--------------------|------------------------|
@@ -33,11 +36,11 @@ Si tiene problemas al implementar y administrar aplicaciones con Intune, empiece
 |0x80073CFB|El paquete suministrado ya está instalado y se ha bloqueado la reinstalación del paquete|Podría recibir este error si está instalando un paquete que no es idéntico al paquete que ya está instalado. Confirme que la firma digital también forma parte del paquete. Cuando un paquete se vuelve a generar o a firmar, dicho paquete ya no es idéntico bit a bit al paquete instalado previamente. Dos opciones para corregir este error son:<br /><br />-   Incrementar el número de versión de la aplicación y luego recompilar y volver a firmar el paquete.<br />-   Quitar el paquete antiguo para todos los usuarios del sistema antes de instalar el nuevo paquete.|
 |0x87D1041C|La instalación de la aplicación se realizó correctamente, pero esta no se detecta.|-La aplicación se implementó correctamente mediante Intune y luego se desinstaló (posiblemente por parte del usuario final). Indique al usuario que vuelva a instalar la aplicación desde el portal de empresa. Las aplicaciones necesarias se volverán a instalar automáticamente cuando se vuelva a comprobar el dispositivo.|
 
-## Solucionar problemas de aplicaciones de la Tienda Windows
+## <a name="troubleshooting-apps-from-the-windows-store"></a>Solucionar problemas de aplicaciones de la Tienda Windows
 
 La información contenida en el tema [Troubleshooting packaging, deployment, and query of Windows Store apps](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx) (Solución de problemas de empaquetado, implementación y consulta de aplicaciones de la Tienda Windows) le ayuda a solucionar problemas comunes que pueden surgir al instalar aplicaciones desde la Tienda Windows, tanto si usa Intune como otros medios.
 
-## Solucionar problemas de implementación de aplicaciones en equipos administrados por el cliente de software de Intune
+## <a name="troubleshooting-app-deployment-to-pcs-managed-by-the-intune-software-client"></a>Solucionar problemas de implementación de aplicaciones en equipos administrados por el cliente de software de Intune
 Para solucionar problemas relacionados con la implementación de aplicaciones en equipos administrados por el cliente de software de Intune, puede consultar los dos archivos de registro siguientes:
 - %Archivos de programa%\Microsoft\OnlineManagement\Logs folder
 - %Archivos de programa%\Microsoft\OnlineManagement\Updates\ReportingEvents.log
@@ -45,11 +48,11 @@ Para solucionar problemas relacionados con la implementación de aplicaciones en
 Además, si necesita abrir un caso de soporte técnico para Intune, también le resultará útil enviar estos registros a Microsoft.
 
 
-### Pasos siguientes
+### <a name="next-steps"></a>Pasos siguientes
 Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico de Microsoft Intune).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

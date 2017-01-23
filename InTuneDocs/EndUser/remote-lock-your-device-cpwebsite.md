@@ -1,43 +1,43 @@
 ---
-title: Bloquear un dispositivo de forma remota desde el sitio web del Portal de empresa | Microsoft Intune
+title: Bloquear un dispositivo de forma remota desde el sitio web del Portal de empresa | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/19/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42b
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 31b3f4c556c27de7a1793bfe84a1d3eb12302424
+ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
+ms.openlocfilehash: fad219ca06ceb62e8bad0b3dbd30b330d90ac977
 
 
 ---
 
+# <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Bloquear un dispositivo de forma remota desde el sitio web del Portal de empresa
 
-# <a name="remotely-lock-a-device-from-the-company-portal-website"></a>Bloquear un dispositivo de forma remota desde el sitio web del Portal de empresa
+Los accidentes suceden y a veces los dispositivos pueden perderse. Si el dispositivo se ha perdido o se lo han robado, la primera preocupación que tendrá será que alguien pueda acceder a la información que contiene, allá donde se encuentre el dispositivo.
 
-Si el dispositivo se ha perdido o ha sido robado, es posible bloquearlo mediante la opción Bloqueo remoto del [sitio web del Portal de empresa](http://portal.manage.microsoft.com). Bloqueo remoto funciona en los siguientes tipos de dispositivos:
+[!INCLUDE[wit_nextref](../includes/end-user-password-guidance.md)]
 
-Plataforma  |Detalles sobre compatibilidad  
----------|---------
-Android | Compatible.       
-iOS | Compatible.
-Windows 10 Mobile | Compatible únicamente si el teléfono tiene establecido un código de acceso     
-Windows 10 Escritorio | No compatible  
-Windows Phone 8,1 | Compatible únicamente si el teléfono tiene establecido un código de acceso
-PC (Windows 8.0 y anteriores) | No compatible       
-PC (Windows 8.1) | No compatible
+Para estar seguro, puede bloquearlo mediante la opción de bloqueo remoto en el [sitio web de Portal de empresa](http://portal.manage.microsoft.com). El bloqueo remoto funciona para:
 
-</br>
-Para usar Bloqueo remoto para bloquear el dispositivo:
+* Android
+* iOS
+* macOS
+* Windows 10 Mobile (si el dispositivo ya tenía un código de acceso establecido)
+* Windows Phone 8.1 (si el dispositivo ya tenía un código de acceso establecido)
+
+## <a name="to-use-remote-lock-to-lock-your-device"></a>Para usar el bloqueo remoto para bloquear el dispositivo
 
 1.  En el [sitio web del Portal de empresa](http://portal.manage.microsoft.com), puntee en el nombre del dispositivo que quiera bloquear.
 
@@ -45,25 +45,25 @@ Para usar Bloqueo remoto para bloquear el dispositivo:
 
     ![remote-lock-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
 
-3.  Lea el mensaje de advertencia que indica que va a bloquear el dispositivo y, a continuación, puntee **Bloqueo remoto** para que el sitio web del portal de empresa intente bloquear el dispositivo.
+3.  Aparecerá un aviso que le indicará que va a bloquear el dispositivo. Pulse **Bloqueo remoto** y el sitio web de Portal de empresa intentará bloquear el dispositivo.
 
-    Después de puntear en **Bloqueo remoto**, aparece el estado "Bloqueo remoto pendiente".  Cuando el bloqueo remoto se realiza correctamente, el estado cambia a "El bloqueo remoto se realizó correctamente".
+    Después de pulsar **Bloqueo remoto**, aparecerá el mensaje "Bloqueo remoto pendiente".  Cuando el bloqueo remoto se realiza correctamente, el estado cambia a "El bloqueo remoto se realizó correctamente".
 
     El estado Bloqueo remoto se muestra en tres lugares:
 
     * El área de notificaciones del sitio web.
-    * La página de detalles del dispositivo.
-    * El icono que muestra el nombre del dispositivo en la sección Mis dispositivos de la página.
+    * La página **Detalles** del dispositivo.
+    * El icono que muestra el nombre del dispositivo en la sección **Mis dispositivos** de la página.
 
-    Si ve una notificación "Error de bloqueo remoto", espere unos minutos y vuelva a intentar bloquear el dispositivo. Después de puntear para intentarlo de nuevo, el estado vuelve a cambiar a "Bloqueo remoto pendiente".
+> [!Note]
+> Si ve una notificación "Error de bloqueo remoto", espere unos minutos e intente bloquear el dispositivo de nuevo. Después de comenzar a intentarlo de nuevo, el estado volverá a cambiar a "Bloqueo remoto pendiente". Si el reintento no funciona, tendrá que dirigirse a su administrador de TI.
 
-    Si un reintento no funciona, póngase en contacto con el administrador de TI para obtener ayuda. Si encuentra el dispositivo y quiere desbloquearlo después de usar Bloqueo remoto, simplemente escriba el código de acceso.
+Si encuentra el dispositivo y quiere desbloquearlo después de usar Bloqueo remoto, simplemente escriba el código de acceso.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
 
 
-
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 

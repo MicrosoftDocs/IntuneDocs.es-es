@@ -1,5 +1,5 @@
 ---
-title: "Acceso condicional basado en aplicación con Office 365 | Microsoft Intune"
+title: "Acceso condicional basado en aplicación con Office 365 | Microsoft Docs"
 description: "Comprenda los conceptos de cómo el acceso condicional para MAM puede ayudar a controlar qué aplicaciones tienen acceso a los servicios de Office 365."
 keywords: 
 author: andredm7
@@ -14,13 +14,16 @@ ms.assetid: bd6bee60-5e39-42c8-a2e9-f5865ac3573f
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: c966d955365611781e83eea9f2aec743f0fc0321
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2babdeaaf10e9a58716d299cbde0babe45967fb1
 
 
 ---
 
 # <a name="allow-only-mobile-apps-that-support-intune-mam-policies-to-access-office-365-services"></a>Permitir solo aplicaciones móviles que admitan directivas MAM de Intune para acceder a servicios de Office 365
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 [Las directivas de administración de aplicaciones móviles (MAM) de Intune](protect-apps-and-data-with-microsoft-intune.md) ayudan a proteger los datos de su compañía en dispositivos inscritos para administración de Intune. También puede utilizar directivas MAM en **dispositivos que poseen los empleados que no están inscritos para la administración de Intune**.  En este caso, aunque no administre el dispositivo, deberá asegurarse de que los datos y los recursos de la empresa están protegidos. Al usar el acceso condicional para MAM (CA MAM), puede crear una directiva que permita que solo las aplicaciones móviles que admiten directivas MAM de Intune tengan acceso a servicios de Office 365 como Exchange Online.
 
 Por ejemplo, al permitir que solo la **aplicación Microsoft Outlook** acceda a Exchange Online, puede **bloquear las aplicaciones de correo integradas en iOS y Android**, que no tienen protección de datos desde las directivas MAM de Intune para obtener correo electrónico desde **Exchange Online**.
