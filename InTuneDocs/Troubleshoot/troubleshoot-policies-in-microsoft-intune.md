@@ -1,11 +1,11 @@
 ---
-title: "Directivas de solución de problemas | Microsoft Intune"
+title: "Directivas de solución de problemas | Microsoft Docs"
 description: "Solucionar problemas de configuración de directivas."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 01/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,21 @@ ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ms.reviewer: tscott
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: e95db6d0ccbe350984f11ce08749b700c2f5ad01
-ms.openlocfilehash: fbc18b12c00a4b61f7419731c6b4306b583638cc
+ms.sourcegitcommit: b28590bdb5a9387331354c8e5766975e3188bb91
+ms.openlocfilehash: e314d247c964b98c4159ca05cd746862d1b0db2e
 
 
 ---
 
-# Directivas de solución de problemas en Microsoft Intune
+# <a name="troubleshoot-policies-in-microsoft-intune"></a>Directivas de solución de problemas en Microsoft Intune
 
-Si tiene problemas al implementar y administrar las directivas con Intune, empiece aquí. En este tema se incluyen algunos problemas comunes que pueden surgir y sus soluciones.
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-## Problemas generales
+Si tiene problemas al implementar y administrar las directivas de Intune, empiece aquí. En este tema se incluyen algunos problemas comunes que pueden surgir y sus soluciones.
 
-### ¿Se aplicó una directiva implementada en el dispositivo?
+## <a name="general-issues"></a>Problemas generales
+
+### <a name="was-a-deployed-policy-applied-to-the-device"></a>¿Se aplicó una directiva implementada en el dispositivo?
 **Problema:** no está seguro de si una directiva se aplicó correctamente.
 
 En la consola de administración de Intune, cada dispositivo tiene una pestaña de directivas en **Propiedades del dispositivo**. Cada directiva tiene un **Valor previsto** y un **Estado**. El valor previsto es lo que tenía pensado lograr al asignar la directiva. El estado es lo que se aplica realmente cuando todas las directivas aplicables al dispositivo, así como las restricciones y los requisitos del hardware y el sistema operativo, se consideran conjuntamente. Los estados posibles son:
@@ -49,14 +51,14 @@ En la captura de pantalla que tiene a continuación se pueden ver dos ejemplos c
 > Recuerde que cuando dos directivas con distintos niveles de restricción se aplican al mismo dispositivo o usuario, la directiva más restrictiva se aplica en la práctica.
 
 
-## Problemas con los dispositivos inscritos
+## <a name="issues-with-enrolled-devices"></a>Problemas con los dispositivos inscritos
 
-### Alerta: error al guardar las reglas de acceso en Exchange
+### <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Alerta: error al guardar las reglas de acceso en Exchange
 **Problema**: recibe la alerta **Error al guardar las reglas de acceso en Exchange**  en la consola de administración.
 
 Si creó directivas en el área de trabajo de la directiva local de Exchange en la consola de administración pero usa O365, Intune no aplica las opciones configuradas de la directiva. Tenga en cuenta el origen de la directiva de la alerta.  En el área de trabajo de la directiva local de Exchange, elimine las reglas heredadas ya que son reglas de Exchange globales que se encuentran en el servicio Intune dedicado a Exchange local y no son relevantes para Office 365. A continuación, cree una directiva nueva para Office 365.
 
-### No se puede cambiar la directiva de seguridad en varios dispositivos inscritos
+### <a name="cannot-change-security-policy-for-various-enrolled-devices"></a>No se puede cambiar la directiva de seguridad en varios dispositivos inscritos
 Una vez establecidas las directivas de seguridad a través de MSM o EAS, los dispositivos Windows Phone no permiten que se reduzca el nivel de seguridad de las mismas. Por ejemplo, si establece una **contraseña con un número mínimo de 8 caracteres** no podrá reducirla a 4. Esto es debido a que ya se ha aplicado la directiva más restrictiva en el dispositivo.
 
 Dependiendo de la plataforma del dispositivo, si desea cambiar la directiva a un valor de menos seguro debe restablecer las directivas de seguridad.
@@ -64,12 +66,12 @@ Por ejemplo, en el escritorio de Windows, deslice el dedo desde la derecha para 
 En el menú de navegación izquierdo, hay un vínculo denominado **Restablecer las directivas de seguridad** en la parte inferior. Selecciónelo y luego elija el botón **Restablecer directivas**.
 En otros dispositivos MDM como Android, Windows Phone 8.1 y posteriores e iOS, es posible que tenga que eliminar la inscripción y volver a hacerla para que pueda aplicar una directiva menos restrictiva.
 
-## Problemas con equipos que ejecutan el cliente de software de Intune
+## <a name="issues-with-pcs-that-run-the-intune-software-client"></a>Problemas con equipos que ejecutan el cliente de software de Intune
 
-### Errores relacionados con las directivas de Microsoft Intune en policyplatform.log
+### <a name="microsoft-intune-policy-related-errors-in-policyplatformlog"></a>Errores relacionados con las directivas de Microsoft Intune en policyplatform.log
 Para los equipos Windows con el cliente de software de Intune, los errores de directivas del archivo policyplatform.log pueden ser el resultado de opciones de configuración no predeterminadas en el Control de cuentas de usuario (UAC) de Windows en el dispositivo. Algunas opciones de configuración de UAC no predeterminadas pueden afectar a las instalaciones de cliente de Microsoft Intune y a la ejecución de directivas.
 
-#### Para resolver problemas de UAC
+#### <a name="to-resolve-uac-issues"></a>Para resolver problemas de UAC
 
 1.  Retire el equipo, como se describe en [Retire devices from Microsoft Intune management (Retirar dispositivos de la administración de Microsoft Intune)](/intune/deploy-use/retire-devices-from-microsoft-intune-management).
 
@@ -82,7 +84,7 @@ Para los equipos Windows con el cliente de software de Intune, los errores de di
 
 4.  Mueva el control deslizante de la notificación a la opción de configuración predeterminada.
 
-### ERROR: No se puede obtener el valor del equipo, 0x80041013
+### <a name="error-cannot-obtain-the-value-from-the-computer-0x80041013"></a>ERROR: No se puede obtener el valor del equipo, 0x80041013
 Esto puede ocurrir si la hora del sistema local está desfasada cinco minutos o más. Si el tiempo en el equipo local no está sincronizado, no se podrán llevar a cabo transacciones seguras porque las marcas de tiempo no serán válidas.
 
 Para resolver este problema, establezca la hora del sistema local lo más cercana posible a la hora de Internet o la hora establecida en los controladores de dominio en la red.
@@ -94,11 +96,11 @@ Para resolver este problema, establezca la hora del sistema local lo más cercan
 
 
 
-### Pasos siguientes
+### <a name="next-steps"></a>Pasos siguientes
 Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el servicio de soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico de Microsoft Intune).
 
 
 
-<!--HONumber=Oct16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

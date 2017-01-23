@@ -1,5 +1,5 @@
 ---
-title: Recursos sobre la experiencia del usuario final con Microsoft Intune | Microsoft Intune
+title: Recursos sobre la experiencia del usuario final con Microsoft Intune | Microsoft Docs
 description: "Comparta información con sus usuarios finales para que la implementación de Intune se realice correctamente."
 keywords: "usuarios finales, usuarios, comunicación"
 author: barlanmsft
@@ -14,13 +14,15 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 83436b7d8e554eef0cf48d0f07999f06bf811bbc
+ms.sourcegitcommit: 77f1af3a07e5a5758227c81010ce853906803b08
+ms.openlocfilehash: a822559a55ee495065eca7eef5ec645cf4522e4b
 
 
 ---
 
 # <a name="resources-about-the-end-user-experience-with-microsoft-intune"></a>Recursos sobre la experiencia del usuario final con Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Use los vínculos y la información siguientes para entender los pasos que siguen los usuarios finales para efectuar diferentes tareas en Intune.
 
@@ -35,7 +37,7 @@ Puede usar esta [plantilla personalizable de inscripción de Intune de usuarios 
 Use los vínculos siguientes para ver los pasos a los que se envían a los usuarios desde el sitio web o la aplicación de portal de empresa. Los vínculos se dividen en secciones acerca de la instalación de la aplicación de portal de empresa e inscripción de Intune, tareas generales que pueden hacer los usuarios en sus dispositivos y solución de problemas.
 
 - [Uso de un dispositivo Android con Intune](/Intune/EndUser/using-your-android-device-with-intune)
-- [Uso de un dispositivo iOS o Mac OS con Intune](/Intune/EndUser/using-your-ios-or-mac-os-x-device-with-intune)
+- [Uso de un dispositivo iOS o Mac OS con Intune](/Intune/EndUser/using-your-iOS-or-macOS-device-with-intune)
 - [Usar un dispositivo Windows con Intune](/Intune/EndUser/using-your-windows-device-with-intune)
 - [Usar el sitio web del Portal de empresa de Intune](/Intune/EndUser/using-the-intune-company-portal-website)
 
@@ -50,6 +52,6 @@ Para entender cómo obtienen sus aplicaciones los usuarios finales, elija entre 
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 

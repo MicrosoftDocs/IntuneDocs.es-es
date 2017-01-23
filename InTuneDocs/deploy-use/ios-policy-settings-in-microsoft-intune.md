@@ -1,11 +1,11 @@
 ---
-title: "Configuración de directivas de iOS | Microsoft Intune"
+title: "Configuración de directivas de iOS | Microsoft Docs"
 description: "Cree directivas que controlen la configuración y las características en los dispositivos iOS que administra con Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/06/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: dfde68e4ef889ba881ff2fa93b226f879d01cbc8
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: 05d47e6cf5c7b380ac981d06a3938f38b27a430b
 
 
 ---
 
 # <a name="ios-policy-settings-in-microsoft-intune"></a>Configuración de directivas de iOS en Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune proporciona una variedad de opciones generales integradas que puede configurar en los dispositivos iOS. Además, puede usar la herramienta Apple Configurator para crear una configuración personalizada que no esté disponible en Intune.
 
@@ -78,12 +80,12 @@ Todas las configuraciones se aplican a iOS 8.0 y posterior.
 |----------------|-------|
 |**Permitir copias de seguridad en iCloud**|Permitir al usuario hacer copias de seguridad del dispositivo en iCloud.|
 |**Permitir sincronización de documentos en iCloud**|Permite la sincronización de clave-valor y documentos en el espacio de almacenamiento de iCloud.|
-|**Permitir sincronización de Photo Stream en iCloud**|Permite que las fotos del dispositivo se sincronicen con iCloud.|
+|**Permitir sincronización de Photo Stream en iCloud**|Permita que los usuarios habiliten **My Photo Stream** en su dispositivo que permite que las fotos se sincronicen en iCloud y estén disponibles para todos los dispositivos de usuario.|
 |**Requerir copia de seguridad cifrada**|Requiere que las copias de seguridad del dispositivo se cifren.|
 |**Permitir que las aplicaciones administradas sincronicen datos en iCloud**|Permitir que las aplicaciones que se administran con Intune sincronicen los datos con la cuenta de iCloud del usuario.|
 |**Permitir la entrega para continuar las actividades en otro dispositivo**|Permitir al usuario continuar el trabajo iniciado en un dispositivo iOS en otro dispositivo iOS o MAC OS X.|
-|**Permitir el uso compartido de fotografías de iCloud**|Permitir el uso de la característica Photo Stream compartida de iOS.|
-|**Permitir la biblioteca de fotografías de iCloud**|Permitir al usuario almacenar fotografías en iCloud. Si se deshabilita, se quitarán todas las fotos que ya estén almacenadas en iCloud.|
+|**Permitir el uso compartido de fotografías de iCloud**|Establezca **No** para deshabilitar **Fotos compartidas en iCloud** en el dispositivo.|
+|**Permitir la biblioteca de fotografías de iCloud**|Si se establece en **No**, deshabilita el uso de la Fototeca de iCloud que permite a los usuarios almacenar fotos y vídeos en la nube.   Las fotos que no se hayan descargado completamente de la Fototeca de iCloud al dispositivo se quitarán de este si esta opción se establece en **No**.|
 
 ### <a name="application-settings-for-the-browser"></a>Configuración de la aplicación para el explorador
 Todas las configuraciones se aplican a iOS 8.0 y posterior.
@@ -172,6 +174,8 @@ En la lista de **Aplicaciones conformes y no conformes**, especifique las aplica
 |**Importar aplicaciones**|Importar una lista de las aplicaciones que ha especificado en un archivo de valores separados por comas. En el archivo, use este formato: nombre de la aplicación, editor, dirección URL de la aplicación.|
 |**Editarar**|Editar el nombre, el editor y la dirección URL de la aplicación seleccionada.|
 |**Eliminar**|Eliminar la aplicación seleccionada de la lista.|
+
+Las directivas que contienen ajustes de aplicaciones compatibles y no compatibles se deben implementar en los grupos de usuarios.
 
 ### <a name="kiosk-mode-settings"></a>Configuración del modo de pantalla completa
 
@@ -383,6 +387,6 @@ Antes de empezar, debe tener instalado Apple Configurator y haber creado un arch
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

@@ -1,11 +1,11 @@
 ---
-title: Agregar aplicaciones para PC Windows en Microsoft Intune | Microsoft Intune
+title: Agregar aplicaciones para PC Windows en Microsoft Intune | Microsoft Docs
 description: "Use la información de este tema para aprender a agregar aplicaciones para equipos Windows a Intune antes de implementarlas."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: e6537b7b0a42c76ec99d51a6a09fe1f6ab4400a1
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: da23e1df3dcda7f90fd592b5a6f5a587c63815f1
 
 
 ---
 
-# Agregar aplicaciones para PC Windows en Microsoft Intune
+# <a name="add-apps-for-windows-pcs-that-run-the-intune-software-client"></a>Agregar aplicaciones para PC Windows en Microsoft Intune
 
 Use la información de este tema para aprender a agregar aplicaciones a Intune antes de implementarlas.
 
@@ -28,7 +28,7 @@ Use la información de este tema para aprender a agregar aplicaciones a Intune a
 > La información de este tema le servirá para agregar aplicaciones para equipos Windows administrados mediante el software cliente de Intune. Si quiere agregar aplicaciones para PC Windows inscritos y otros dispositivos móviles, vea [Agregar aplicaciones para dispositivos móviles en Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
 
 
-## Agregar la aplicación
+## <a name="add-the-app"></a>Agregar la aplicación
 En el siguiente procedimiento usará el editor de software de Intune para configurar las propiedades de la aplicación y cargarla en el espacio de almacenamiento en nube:
 
 1.  En la [consola de administrador de Microsoft Intune](https://manage.microsoft.com), elija **Aplicaciones** &gt; **Agregar aplicaciones** para iniciar el Editor de software de Intune.
@@ -85,12 +85,12 @@ En el siguiente procedimiento usará el editor de software de Intune para config
 
 La aplicación se muestra en el nodo **Aplicaciones** del área de trabajo **Aplicaciones**.
 
-## Pasos siguientes
+## <a name="next-steps"></a>Pasos siguientes
 
 Tras crear una aplicación, el siguiente paso es implementarla. Para obtener más información, vea [Implementar aplicaciones en Microsoft Intune](deploy-apps.md).
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

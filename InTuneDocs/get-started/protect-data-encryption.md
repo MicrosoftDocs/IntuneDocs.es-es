@@ -1,12 +1,12 @@
 ---
-title: "Protección de datos de empresa mediante el cifrado de datos | Microsoft Intune"
+title: "Protección de datos de empresa mediante el cifrado de datos | Microsoft Docs"
 description: "Esta guía puede ayudarle a proteger la empresa frente a la pérdida de datos al obligar a usar un código de acceso y cifrado de datos mediante una directiva en las aplicaciones móviles."
 keywords: cifrado, PIN, datos
 author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,13 +14,16 @@ ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4ee5f39ac31c2a35770b88c937f138f9c0b525b6
-ms.openlocfilehash: b907803b2170a09e076712e018987821dfb3caef
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: 11ed6b14bc940940e6fa22f6760420e690ac364f
 
 
 ---
 
 # <a name="quick-start-guide-protect-company-data-with-data-encryption"></a>Guía de inicio rápido: Proteger datos de empresa mediante el cifrado de datos
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune puede ayudarle a evitar la pérdida de datos de aplicaciones móviles de Office de varias maneras, lo que incluye:
 - Mediante el cifrado de datos corporativos con el máximo nivel de cifrado de dispositivo proporcionado por iOS y Android.
 - En dispositivos iOS y Android que, debido a requisitos legales o de privacidad, no se pueden inscribir en una solución de administración de dispositivos móviles.
@@ -50,6 +53,6 @@ Esta guía puede ayudarle a proteger la empresa frente a la pérdida de datos al
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Dec16_HO3-->
 
 

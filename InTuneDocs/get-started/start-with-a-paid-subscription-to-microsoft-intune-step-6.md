@@ -1,5 +1,5 @@
 ---
-title: Implementar directivas y aplicaciones | Microsoft Intune
+title: Implementar directivas y aplicaciones | Microsoft Docs
 description: "Tan pronto como los dispositivos se inscriban en la administración, puede habilitar la configuración de directivas e implementar las aplicaciones a las que se aplicarán."
 keywords: 
 author: nathbarn
@@ -14,13 +14,16 @@ ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 56f7d1578ba6b193c6547686675e0fd4fde5f378
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 9f75020a6d8a3e2aeb278fb99f54516253abf3dd
 
 
 ---
 
 # <a name="create-policies-and-publish-apps"></a>Crear directivas y publicar aplicaciones
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Antes de comenzar a inscribir aplicaciones en Intune, puede habilitar la configuración de directivas y las aplicaciones que se implementarán en cuanto dichos dispositivos se inscriban en la administración. Las directivas de Intune proporcionan una configuración con la que es más fácil: controlar la configuración de seguridad en dispositivos móviles, mantener la configuración de Firewall de Windows y Endpoint Protection de los equipos e implementar aplicaciones. Puede configurar directivas, agregar aplicaciones e implementar esas aplicaciones para que los dispositivos reciban la configuración y las aplicaciones en cuanto se inscriban en Intune.
 
 Las directivas y las aplicaciones son específicas de la plataforma.

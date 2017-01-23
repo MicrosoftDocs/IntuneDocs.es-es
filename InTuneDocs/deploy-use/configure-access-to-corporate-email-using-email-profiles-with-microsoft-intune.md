@@ -1,5 +1,5 @@
 ---
-title: "Acceso al correo electrónico corporativo mediante perfiles de correo electrónico | Microsoft Intune"
+title: "Acceso al correo electrónico corporativo mediante perfiles de correo electrónico | Microsoft Docs"
 description: "Las opciones de configuración de perfil de correo electrónico se pueden usar para configurar el acceso al correo de determinados clientes de correo en dispositivos móviles."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,15 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f0c5920f7cc46e40bf4d1795a68ba1d67840fcfa
-ms.openlocfilehash: 6ac7034ba0713c7b6bdd28c7b53b99c247d3aeb3
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 519d3f475e158391b08ab4e51f9410b7bdefcd4c
 
 
 ---
 
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Configurar el acceso al correo electrónico corporativo mediante perfiles de correo electrónico con Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
@@ -35,7 +37,7 @@ Los usuarios o los administradores de TI también pueden optar por instalar otro
 Puede usar perfiles de correo electrónico para configurar el cliente de correo nativo en los siguientes tipos de dispositivo:
 -   Windows Phone 8.1 y versiones posteriores
 -   Windows 10 (para el escritorio), Windows 10 Mobile y versiones posteriores
--   iOS 8.0 y versiones posteriores
+-   iOS 8.0 y versiones posteriores
 -   Samsung KNOX Standard (4.0 y posterior)
 -   Android for Work
 
@@ -138,6 +140,6 @@ En el área de trabajo **Directiva** de la página **General** , un resumen de e
 
 
 
-<!--HONumber=Nov16_HO3-->
+<!--HONumber=Dec16_HO2-->
 
 

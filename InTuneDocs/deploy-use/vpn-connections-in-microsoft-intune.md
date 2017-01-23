@@ -1,11 +1,11 @@
 ---
-title: Conexiones VPN | Microsoft Intune
+title: Conexiones VPN | Microsoft Docs
 description: "Use los perfiles de VPN para implementar la configuración de VPN para los usuarios y dispositivos de su organización."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 4cab83c3d1a63a0e4f16ee838443ec032bcf1532
-ms.openlocfilehash: 6d5d97a8e91ba3a99db5714a5634904c62320e76
+ms.sourcegitcommit: 0ba06e1d698e051ba72e9f88a654d37041c57cf1
+ms.openlocfilehash: cd9785889ca8b2a78a49ea2b04284d32b3fa8a65
 
 
 ---
 
 # <a name="vpn-connections-in-microsoft-intune"></a>VPN connections in Microsoft Intune (Conexiones VPN en Microsoft Intune)
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Las redes privadas virtuales (VPN) ofrecen a los usuarios un acceso remoto seguro a la red de la empresa. Los dispositivos utilizan un *perfil de conexión VPN* para iniciar una conexión con el servidor VPN. Use los *Perfiles de VPN* en Microsoft Intune para implementar la configuración de VPN para los usuarios y dispositivos de su organización, para que puedan conectarse de forma fácil y segura a la red.
 
@@ -28,9 +30,9 @@ Por ejemplo, suponga que quiere aprovisionar todos los dispositivos iOS con la c
 
 Puede configurar los siguientes tipos de dispositivo con perfiles de VPN:
 
-* Dispositivos que ejecutan Android 4 y versiones posteriores
+* Dispositivos que ejecutan Android 4 y versiones posteriores
 * Dispositivos Android for Work
-* Dispositivos que ejecutan iOS 8.0 y versiones posteriores
+* Dispositivos que ejecutan iOS 8.0 y versiones posteriores
 * Dispositivos que ejecutan Mac OS X 10.9 y versiones posteriores
 * Dispositivos inscritos que ejecutan Windows 8.1 y versiones posteriores
 * Dispositivos que ejecutan Windows Phone 8,1 y versiones posteriores
@@ -67,7 +69,7 @@ L2TP|Perfil personalizado de iOS|No |No |No|Sí (OMA-URI)|Sí|
 > [!IMPORTANT]
 > Para poder usar perfiles de VPN que se implementen en un dispositivo, debe instalar la aplicación VPN aplicable para el perfil. Puede usar la información del tema [Implementar aplicaciones en Microsoft Intune](deploy-apps-in-microsoft-intune.md) para ayudarle a implementar la aplicación correspondiente con Intune.  
 
- Obtenga información sobre cómo crear perfiles de VPN personalizados con la configuración de URI en [Personalizar configuraciones para perfiles de VPN](custom-configurations-for-vpn-profiles.md).     
+ Obtenga información sobre cómo crear perfiles de VPN personalizados con la configuración de URI en [Personalizar configuraciones para perfiles de VPN](create-custom-vpn-profiles.md).     
 
 ## <a name="methods-of-securing-vpn-profiles"></a>Métodos para proteger los perfiles de VPN
 
@@ -127,7 +129,7 @@ Nombre de la configuración  |Más información
 **Usar script de configuración automática** (solo iOS, Mac OS X, Windows 8.1 y Windows Phone 8.1)|Si el servidor VPN requiere un servidor proxy para la conexión, especifique si desea usar un script de configuración automática para definir la configuración y, después, especifique una dirección URL al archivo que contiene la configuración. Para más información, vea la documentación de Windows Server.
 **Usar servidor proxy** (solo iOS, Mac OS X, Windows 8.1 y Windows Phone 8.1)|Si el servidor VPN requiere un servidor proxy para la conexión, seleccione esta opción y especifique el número de puerto y la dirección del servidor proxy. Para más información, vea la documentación de Windows Server.
 **Omitir configuración proxy para direcciones locales** (solo iOS, Windows 8.1 y Windows Phone 8.1)|Si el servidor VPN requiere un servidor proxy para la conexión, seleccione esta opción si no quiere utilizar el servidor proxy para las direcciones locales que especifique. Para más información, vea la documentación de Windows Server.
-**XML personalizado** (Windows 8.1 y versiones posteriores y Windows Phone 8.1 y versiones posteriores)|Especifique los comandos XML personalizados que configuran la conexión VPN. Ejemplo para **Pulse Secure**: &lt;pulse-schema&gt;&lt;isSingleSignOnCredential&gt;true&lt;/isSingleSignOnCredential&gt;&lt;/pulse-schema&gt;. Ejemplo para **CheckPoint Mobile VPN**: &lt;CheckPointVPN port="443" name="CheckPointSelfhost" sso="true"  debug="3" /&gt;. Ejemplo para **Dell SonicWALL Mobile Connect**: &lt;MobileConnect&gt;&lt;Compression&gt;false&lt;/Compression&gt;&lt;debugLogging&gt;True&lt;/debugLogging&gt;&lt;packetCapture&gt;False&lt;/packetCapture&gt;&lt;/MobileConnect&gt;. Ejemplo para **F5 Edge Client**: &lt;f5-vpn-conf&gt;&lt;single-sign-on-credential /&gt;&lt;/f5-vpn-conf&gt;. Consulte la documentación de VPN de cada fabricante para más información sobre cómo escribir comandos XML personalizados.
+**XML personalizado** (Windows 8.1 y versiones posteriores y Windows Phone 8.1 y versiones posteriores)|Especifique los comandos XML personalizados que configuran la conexión VPN. Ejemplo para **Pulse Secure**: &lt;pulse-schema&gt;&lt;isSingleSignOnCredential&gt;true&lt;/isSingleSignOnCredential&gt;&lt;/pulse-schema&gt;. Ejemplo para **CheckPoint Mobile VPN**: &lt;CheckPointVPN port="443" name="CheckPointSelfhost" sso="true"  debug="3" /&gt;. Ejemplo para **Dell SonicWALL Mobile Connect**: &lt;MobileConnect&gt;&lt;Compression&gt;false&lt;/Compression&gt;&lt;debugLogging&gt;True&lt;/debugLogging&gt;&lt;packetCapture&gt;False&lt;/packetCapture&gt;&lt;/MobileConnect&gt;. Ejemplo para **F5 Edge Client**: &lt;f5-vpn-conf&gt;&lt;single-sign-on-credential /&gt;&lt;/f5-vpn-conf&gt;. Consulte la documentación de VPN de cada fabricante para más información sobre cómo escribir comandos XML personalizados.
 **Lista de búsqueda de sufijos DNS** (solo Windows Phone 8.1)|Especifique un sufijo DNS en cada línea. Al conectarse a un sitio web mediante un nombre corto, se buscará cada sufijo DNS que especifique. Por ejemplo, especifique los sufijos DNS **domain1.contoso.com** y **domain2.contoso.com**, visite la dirección URL **http://mywebsite**, y se buscarán las direcciones URL **http://mywebsite.domain1.contoso.com** y **http://mywebsite.domain2.contoso.com**.
 **Omitir VPN cuando se está conectado a una red Wi-Fi de la empresa** (solo Windows Phone 8.1)|Seleccione esta opción para especificar que la conexión VPN no se utilizará cuando el dispositivo se conecte a la red Wi-Fi de la empresa.
 **Omitir VPN cuando se está conectado a una red Wi-Fi doméstica** (solo Windows Phone 8.1)|Seleccione esta opción para especificar que la conexión VPN no se utilizará cuando el dispositivo se conecte a la red Wi-Fi doméstica.
@@ -194,13 +196,10 @@ Tras una implementación correcta, los usuarios verán el nombre de la conexión
 
 En el área de trabajo **Directiva** de la página **General** , un resumen de estado y las alertas identifican los problemas de la directiva que requieren su atención. Además, aparece un resumen de estado en el área de trabajo Panel.
 
-### <a name="see-also"></a>Consulte también
-[Configuraciones personalizadas para perfiles de VPN](Custom-configurations-for-VPN-profiles.md)
-
-[VPN por aplicación para Pulse Secure para Android](per-app-vpn-for-android-pulse-secure.md)
 
 
 
-<!--HONumber=Nov16_HO2-->
+
+<!--HONumber=Dec16_HO3-->
 
 

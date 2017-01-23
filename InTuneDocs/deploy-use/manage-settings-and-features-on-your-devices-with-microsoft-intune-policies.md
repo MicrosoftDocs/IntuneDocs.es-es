@@ -1,5 +1,5 @@
 ---
-title: "Administrar la configuración de dispositivos con directivas | Microsoft Intune"
+title: "Administrar la configuración de dispositivos con directivas | Microsoft Docs"
 description: "Use Intune para crear e implementar directivas que controlen la configuración y las características en los dispositivos inscritos que administre."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 09bae0b9-4f79-4658-8ca1-a71ab992c1b2
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0238350139837a06a48d0bff7c53e4c39e07168c
-ms.openlocfilehash: b2cba92c4cf75412b562267aef9d6a138f25952b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: f153e3a58f9655bd1e36094f292098c9f55742b6
 
 
 ---
 
 # <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Las *directivas* de Microsoft Intune son grupos de configuraciones que controlan características en equipos y dispositivos móviles. Las directivas se crean con plantillas que contienen configuraciones recomendadas o personalizadas, y se implementan en grupos de dispositivos o usuarios.
 
 ## <a name="types-of-policies"></a>Tipos de directivas
@@ -211,6 +214,6 @@ Vea [Directivas de solución de problemas en Microsoft Intune](/intune/troublesh
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

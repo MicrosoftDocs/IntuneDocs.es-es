@@ -1,12 +1,12 @@
 ---
-title: "Elegir cómo inscribir dispositivos móviles | Microsoft Intune"
+title: "Elegir cómo inscribir dispositivos móviles | Microsoft Docs"
 description: "Decidir cómo inscribir dispositivos móviles en Intune respondiendo a unas preguntas sencillas"
 keywords: 
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 11/22/2016
-ms.topic: article
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -14,13 +14,15 @@ ms.assetid: d2989e39-9b76-411b-b6fb-7209adb3bfb6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 translationtype: Human Translation
-ms.sourcegitcommit: 29b6e5a3d319c741482fcc2b600842e2e42b96e2
-ms.openlocfilehash: 09c2940a99577769df1482314c488acf5823b51f
+ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
+ms.openlocfilehash: 0b368ad490672c3d554dcb004e07b883e4851ee1
 
 
 ---
 
 # <a name="choose-how-to-enroll-mobile-devices"></a>Elegir cómo inscribir dispositivos móviles
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Las respuestas a la siguiente serie de preguntas le servirán para saber cuál es el mejor método de inscripción de los dispositivos bajo su administración.
 
@@ -37,6 +39,6 @@ Las respuestas a la siguiente serie de preguntas le servirán para saber cuál e
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

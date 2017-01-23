@@ -1,5 +1,5 @@
 ---
-title: "Requisitos previos para la inscripción de dispositivos móviles | Microsoft Intune"
+title: "Requisitos previos para la inscripción de dispositivos móviles | Microsoft Docs"
 description: "Configure los requisitos previos de administración de dispositivos móviles (MDM) y prepárese para inscribir distintos sistemas operativos."
 keywords: 
 author: staciebarker
@@ -14,13 +14,16 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c59707ba2967b069dc30aee71d2642e91d71b23b
-ms.openlocfilehash: 270e6015e629c048b01b218793640888706d118e
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: 2b7fe00a2f3b289958aa77df5eaffd35de7c8c97
 
 
 ---
 
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Requisitos previos para la administración de dispositivos móviles en Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Para permitir que los empleados inscriban sus dispositivos móviles con Intune, debe llevar a cabo los pasos siguientes. Estos mismos pasos son necesarios para administrar dispositivos de empresa.
 
 |Pasos|Detalles|  

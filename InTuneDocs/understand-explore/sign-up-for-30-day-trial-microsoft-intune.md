@@ -13,14 +13,20 @@ ms.technology:
 ms.assetid: 619a1d11-3d22-4635-8f70-770eba3e1712
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: a65ead23e62870647245120d1663706fc46810ac
+ms.sourcegitcommit: ca4af205f8f391089e86e0ee7787e32813d54cca
+ms.openlocfilehash: 6bd6cc3470c93f96e7c71b5d1efe6d9ffc045a7e
 
 
 ---
 
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Suscríbase para disfrutar de una prueba gratuita de Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Este artículo le guiará a través de una suscripción para una evaluación de Intune y prepara la versión de prueba con algunos usuarios de modo que puede seguir la guía de evaluación asociada para ver cómo Intune administra los dispositivos móviles. <!---or app data when devices are not enrolled in Intune.--->
+
+>[!Note]
+> A partir de diciembre de 2016, Microsoft Intune se traslada a Azure Portal, y algunas suscripciones de prueba gratuitas estarán en Intune en Azure Portal y otras estarán en Intune clásico. Si su versión de prueba está en Azure Portal, encontrará más útil el [contenido de la versión preliminar de Azure de Intune](https://docs.microsoft.com/en-us/intune-azure/introduction/what-is-microsoft-intune) después de completar los pasos de este artículo.
 
 ## <a name="assumptions"></a>Suposiciones
 Este artículo de suscripción y la guía de evaluación presuponen que está utilizando la versión de prueba solo con fines de evaluación y va a comenzar con un entorno limpio al suscribirse.
@@ -40,26 +46,9 @@ Si tiene una cuenta profesional o educativa y desea usarla para la versión de p
 ### <a name="post-sign-up-considerations"></a>Consideraciones posteriores al registro
 Si se registra para obtener una versión de prueba, recibirá un mensaje de correo electrónico con la información de la cuenta en la dirección de correo electrónico que haya proporcionado durante el proceso de suscripción. Este mensaje confirma que la versión de prueba está activa.
 
-Después de completar el proceso de registro, se le dirigirá a una página que se usa para agregar usuarios y asignarles licencias a través del centro de administración de Office 365. La próxima vez que inicie sesión en Intune, irá automáticamente a la consola de administración de Intune.
+Después de completar el proceso de registro, se le dirigirá a una página que se usa para agregar usuarios y asignarles licencias a través del centro de administración de Office 365. La próxima vez que inicie sesión en **Intune clásico** (https://manage.microsoft.com), irá automáticamente a la consola de administración de Intune.
 
-## <a name="keeping-the-admin-center-and-the-intune-administration-console-straight"></a>Mantener correctamente el centro de administración y la consola de administración de Intune
-Hay dos portales que se van a utilizar para Intune: el centro de administración de Office 365 ([portal.office.com](https://portal.office.com)) y la consola de administración de Intune ([manage.microsoft.com](https://manage.microsoft.com)).
-
-Normalmente, llevará a cabo su trabajo en la consola de administración de Intune que se muestra a continuación. Este es el sitio donde configurar y administrar grupos, directivas, dispositivos y aplicaciones.
-
-![Imagen de la consola de administración de Intune](./media/sign-up/intune-admin-console.png)
-
-Sin embargo, usará el centro de administración de Office 365, que aparece a continuación, para agregar y administrar los usuarios y otros aspectos de su cuenta, incluida la facturación y el soporte técnico.
-
-![Imagen del centro de administración de Office 365](./media/sign-up/office-admin-center.png)
-
-Puede navegar desde el centro de administración de Office 365 a la consola de administración de Intune. Los centros de administración están en el último elemento en el panel de navegación izquierdo. Elija **Intune** para abrir la consola de administración de Intune en una nueva ficha.
-
-![Imagen del vínculo a la consola de administración de Intune](./media/sign-up/link-to-intune.png)
-
-Para volver de Intune al centro de administración de Office 365, elija la tarea **Agregar usuarios** en la página de información general de grupos.
-
-![Imagen del vínculo de vuelta al centro de administración de Office 365](./media/sign-up/task-add-users.png)
+Si su versión de prueba está en **Azure Portal**, vaya a https://portal.azure.com e inicie sesión con sus credenciales de prueba de Intune.
 
 ## <a name="add-users"></a>Agregar usuarios
 Antes de abandonar el centro de administración de Office 365 para Intune, debe agregar algunos usuarios a su cuenta de prueba.
@@ -91,14 +80,65 @@ En el centro de administración de Office 365, puede agregar los usuarios indivi
 
 3. Una vez que haya creado y guardado el archivo .csv, elija **Examinar** para seleccionar el archivo. Compruebe y elija **Siguiente**. Los usuarios se cargarán y agregarán a la lista de usuarios activos.
 
-Ahora es el momento de dirigirse a la consola de administración de Intune para empezar a administrar los usuarios, sus dispositivos y sus aplicaciones.
-
 > [!NOTE]
 > Los usuarios no se mostrarán en Intune hasta que hayan inscrito un dispositivo para administrarlos.
 
+Ahora es el momento de dirigirse a Intune para empezar a administrar los usuarios, sus dispositivos y sus aplicaciones.
+
+## <a name="keeping-the-admin-experiences-straight"></a>Mantener en orden las experiencias de administración
+### <a name="classic-intune"></a>Intune clásico
+Existen dos portales que usará en Intune clásico:
+- El Centro de administración de Office 365 ([portal.office.com](https://portal.office.com))
+- La consola de administración de Intune ([manage.microsoft.com](https://manage.microsoft.com))
+
+Normalmente, llevará a cabo su trabajo en la consola de administración de Intune que se muestra a continuación. Este es el sitio donde configurar y administrar grupos, directivas, dispositivos y aplicaciones.
+
+![Imagen de la consola de administración de Intune](./media/sign-up/intune-admin-console.png)
+
+Sin embargo, usará el centro de administración de Office 365, que aparece a continuación, para agregar y administrar los usuarios y otros aspectos de su cuenta, incluida la facturación y el soporte técnico.
+
+![Imagen del centro de administración de Office 365](./media/sign-up/office-admin-center.png)
+
+Puede navegar desde el centro de administración de Office 365 a la consola de administración de Intune. Los centros de administración están en el último elemento en el panel de navegación izquierdo. Elija **Intune** para abrir la consola de administración de Intune en una nueva ficha.
+
+![Imagen del vínculo a la consola de administración de Intune](./media/sign-up/link-to-intune.png)
+
+Para volver de Intune al centro de administración de Office 365, elija la tarea **Agregar usuarios** en la página de información general de grupos.
+
+![Imagen del vínculo de vuelta al centro de administración de Office 365](./media/sign-up/task-add-users.png)
+
+### <a name="intune-azure-preview"></a>Versión preliminar de Azure de Intune
+Existen tres portales que usará para la versión preliminar de Azure de Intune:
+- El Centro de administración de Office 365 ([portal.office.com](https://portal.office.com))
+- El panel de Intune en Azure ([portal.azure.com](https://portal.azure.com))
+- La consola de administración de Intune clásico ([manage.microsoft.com](https://manage.microsoft.com))
+
+La primera vez que inicie sesión en Intune en Azure, puede que no lo vea en su panel de Azure. Para agregar el servicio de Intune a su panel de Azure:
+1. Pulse **Más servicios >** en la lista de servicios de Azure situada a la izquierda del panel y escriba Intune en el cuadro de búsqueda.
+2. Pulse **Intune** en la lista y seleccione la estrella para agregar el servicio a la lista de servicios.<br/> ![Imagen de la selección de Intune de la lista de servicios](./media/sign-up/azure-add-intune1.png)
+3. Pulse **Intune** en la lista de servicios para abrir el panel de Intune.
+
+Normalmente, realizará su trabajo en el panel de Intune que se muestra a continuación. Este es el sitio donde configurar y administrar grupos, directivas, dispositivos y aplicaciones. Puede ir a la consola de administración de Intune clásico desde el panel pulsando el icono **Abrir el portal clásico de Intune**. Para volver a la versión preliminar de Azure de Intune, escriba https://portal.azure.com en la barra de direcciones del explorador y, después, pulse **Intune** de nuevo en la lista de servicios.
+
+ ![Imagen del panel de Intune](./media/sign-up/intune-azure-dashboard.png)
+
+
+Sin embargo, usará el centro de administración de Office 365, que aparece a continuación, para agregar y administrar los usuarios y otros aspectos de su cuenta, incluida la facturación y el soporte técnico.
+
+![Imagen del centro de administración de Office 365](./media/sign-up/office-admin-center.png)
+
+Para ir desde el Centro de administración de Office 365 al panel de Intune, escriba https://portal.azure.com en la barra de direcciones del explorador. Pulse **Intune** en la lista de servicios.
+
+Para ir de Intune al Centro de administración de Office 365 de nuevo, escriba https://portal.office.com en la barra de direcciones del explorador. Si ya ha iniciado sesión en Intune, se le dirigirá directamente al Centro de administración de Office 365.
+
 ## <a name="next-steps"></a>Pasos siguientes
+### <a name="classic-intune"></a>Intune clásico
 Escenario de evaluación: [Evaluar la administración de dispositivos móviles en Microsoft Intune](mobile-device-management-trial-guide-microsoft-intune.md)
 
+### <a name="intune-azure-preview"></a>Versión preliminar de Azure de Intune
+Más información sobre [Intune en la versión preliminar de Azure Portal](https://docs.microsoft.com/en-us/intune-azure/introduction/what-is-microsoft-intune)
+
+### <a name="integration-with-other-products"></a>Integración con otros productos
 Obtenga más información sobre el uso de las cuentas de usuario de Azure Active Directory con Intune:
 - [¿Requisitos de identidad?](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
 - [Requisitos de sincronización de directorios](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
@@ -108,6 +148,6 @@ Obtenga más información sobre [Intune con System Center Configuration Manager]
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

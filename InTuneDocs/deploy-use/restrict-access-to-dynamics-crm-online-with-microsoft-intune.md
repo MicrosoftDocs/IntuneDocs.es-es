@@ -1,11 +1,11 @@
 ---
-title: "Restricción del acceso a Dynamics CRM Online | Microsoft Intune"
+title: Proteger el acceso a Dynamics CRM Online | Microsoft Docs
 description: "Proteja y controle el acceso a Dynamics CRM en línea con el acceso condicional."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,21 @@ ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: dae04661289c79798c2f37272a0f941d30335ea5
-ms.openlocfilehash: 2f4ba24ca6c56cee684931519937525fcde1c211
+ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
+ms.openlocfilehash: 0049da7a47070e42cf0f377da5a99d3222d9ed82
 
 
 ---
 
-# <a name="restrict-access-to-dynamics-crm-online-with-intune"></a>Restricción del acceso a Dynamics CRM Online con Intune
+# <a name="protect-access-to-dynamics-crm-online-with-intune"></a>Proteger el acceso a Dynamics CRM Online con Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Puede controlar el acceso a Microsoft Dynamics CRM Online desde los dispositivos de iOS y Android con el acceso condicional de Microsoft Intune.  El acceso condicional de Intune tiene dos componentes:
 * La [directiva de cumplimiento del dispositivo](introduction-to-device-compliance-policies-in-microsoft-intune.md), con la que debe cumplir el dispositivo para que se considere conforme.
 * La [directiva de acceso condicional](restrict-access-to-email-and-o365-services-with-microsoft-intune.md), donde se especifican las condiciones que debe cumplir el dispositivo para tener acceso al servicio.
 
-Para obtener más información sobre cómo funciona el acceso condicional, lea el artículo [Restrict access to email, 0365, and other services (Restringir el acceso al correo electrónico, a O365 y a otros servicios)](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+Para obtener más información sobre cómo funciona el acceso condicional, lea el artículo [Proteger el acceso al correo electrónico, a O365 y a otros servicios](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 > [!IMPORTANT]
 > Para implementar el acceso condicional debe tener suscripciones a Intune y Azure Active Directory Premium, y los usuarios deben tener la licencia de ambos productos. La **suscripción a Enterprise Mobility + Security (EMS)** incluye suscripciones a Intune y Azure Active Directory Premium. Para obtener más información, consulte la [página de precios de Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing). Si no tiene la suscripción de EMS, puede obtener una para Azure Active Directory Premium. Consulte la [página de precios de Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
@@ -92,15 +95,15 @@ Elija cualquier grupo de dispositivos móviles y, a continuación, en la ficha *
 * **Dispositivos registrados en AAD y conformes**. Estos dispositivos pueden tener acceso a Dynamics CRM.
 
 ##  <a name="next-steps"></a>Pasos siguientes
-* [Restricción del acceso a Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
+* [Proteger el acceso a Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
 
-* [Restricción del acceso a Exchange local](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-* [Restringir el acceso a SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+* [Proteger el acceso a Exchange local](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+* [Proteger el acceso a SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
-* [Restringir el acceso a Skype Empresarial Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+* [Proteger el acceso a Skype Empresarial Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO1-->
 
 

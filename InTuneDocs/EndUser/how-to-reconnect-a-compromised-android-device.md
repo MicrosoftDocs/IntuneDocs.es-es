@@ -1,33 +1,36 @@
 ---
-title: "Cómo volver a conectar un dispositivo Android en riesgo | Microsoft Intune"
+title: "Cómo volver a conectar un dispositivo Android en riesgo | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 12/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ade7353e-7338-484d-a50f-b91146d5fc46
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 0d2b62eb8e487e555d568a1ad968081a1929f019
+ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
+ms.openlocfilehash: 0909ac3e5eeefb0d137cba6b7c7c43e1cdff12dc
 
 
 ---
 
 # <a name="how-to-reconnect-a-compromised-android-device"></a>Cómo volver a conectar un dispositivo Android en riesgo
+
 El administrador de TI ha detectado que está utilizando un dispositivo desbloqueado. Por "descifrado" se entiende que el dispositivo se ha cambiado para permitir el acceso al sistema operativo, lo que puede poner en riesgo la seguridad y podría ser una amenaza para los recursos de la empresa. Cuando esto sucede, el dispositivo ya no puede obtener acceso a los recursos de la empresa.
 
-¿Necesita ayuda? Póngase en contacto con el administrador de TI (consulte el sitio web del [Portal de empresa](http://portal.manage.microsoft.com) para obtener información de contacto) o escriba al [equipo de Microsoft Android](mailto:wintunedroidfbk@microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI (visite el [sitio web del Portal de empresa](http://portal.manage.microsoft.com) para obtener la información de contacto), o escriba al [equipo de Microsoft Android](mailto:wintunedroidfbk@microsoft.com).
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

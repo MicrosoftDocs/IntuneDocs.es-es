@@ -1,22 +1,24 @@
 ---
-title: "¿Qué es el portal de empresa? | Microsoft Intune"
+title: "¿Qué es el portal de empresa? | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/06/2016
+ms.date: 01/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 523caa6b-d792-4bb6-bddb-24b2479932d8
+searchScope:
+- Company Portal
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 3891d0389df3526ea328fc2952e3d181b1e766c0
-ms.openlocfilehash: a0424ada754a210fb34acd49cf47d1c457ed86af
+ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
+ms.openlocfilehash: fa9c3fd2c995615e9aa9a16f3bd834b0c145b6d0
 
 
 ---
@@ -24,7 +26,7 @@ ms.openlocfilehash: a0424ada754a210fb34acd49cf47d1c457ed86af
 # <a name="about-the-company-portal"></a>Acerca del portal de empresa
 
 ## <a name="what-is-the-company-portal-and-what-can-you-do-with-it"></a>¿Qué es el portal de empresa y qué puedo hacer con él?
-El Portal de empresa de Microsoft Intune proporciona acceso a los datos y a las aplicaciones de su empresa o centro educativo. El portal de empresa se obtiene de dos maneras distintas:
+El Portal de empresa proporciona acceso a los datos y a las aplicaciones de su empresa o centro educativo. El portal de empresa se obtiene de dos maneras distintas:
 
 - Instalando la aplicación de portal de empresa en su dispositivo. Normalmente, la aplicación Portal de empresa se suele obtener en la tienda de aplicaciones de su dispositivo, pero el administrador de TI también puede instalar dicha aplicación por usted.
 - Yendo al [sitio web de Portal de empresa](http://portal.manage.microsoft.com) que se ha configurado el administrador de TI.
@@ -41,10 +43,10 @@ Existen algunas diferencias mínimas entre la aplicación Portal de empresa y el
 Para saber qué puede hacer con el sitio web de Portal de empresa en vez de usar la aplicación Portal de empresa en el dispositivo, seleccione uno de los siguientes vínculos:
 
 > [!div class="op_single_selector"]
-- [Android](using-your-android-device-with-intune.md)
-- [iOS y macOS](using-your-ios-or-mac-os-x-device-with-intune.md)
-- [Windows](using-your-windows-device-with-intune.md)
-- [Sitio web del Portal de empresa](using-the-intune-company-portal-website.md)
+- [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
+- [Uso de los dispositivos iOS y macOS con Intune](using-your-ios-or-macOS-device-with-intune.md)
+- [Usar un dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
+- [Uso del sitio web del portal de empresa](using-the-intune-company-portal-website.md)
 
 ## <a name="what-happens-when-you-add-a-computer-or-device-to-the-company-portal"></a>¿Qué ocurre cuando se agrega un equipo o dispositivo al Portal de empresa?
 Al agregar un equipo o dispositivo al Portal de empresa, puede que se instale algún software o se descargue alguna aplicación (en función del dispositivo).  También proporciona al administrador de TI permiso para administrar el dispositivo, a fin de ayudar a proteger la información de la empresa en el dispositivo.
@@ -58,9 +60,9 @@ Para saber lo que el administrador de TI puede y no puede ver en su dispositivo,
 
 ## <a name="what-kind-of-computers-or-devices-can-you-add-to-the-company-portal"></a>¿Qué tipos de equipos o dispositivos se pueden agregar al Portal de empresa?
 
--   iPhone, iPad y dispositivos macOS
+-   Dispositivos Apple con iOS (iPhone, iPad) y macOS (iMac, MacBook)
 
--   Dispositivos móviles Android
+-   Dispositivos Android
 
 -   Dispositivos Windows
     -   Windows 10 Mobile
@@ -96,6 +98,6 @@ Si necesita ayuda, póngase en contacto con el Administrador de TI. Para averigu
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO1-->
 
 

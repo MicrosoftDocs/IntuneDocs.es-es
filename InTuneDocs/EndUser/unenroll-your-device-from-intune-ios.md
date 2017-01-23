@@ -1,5 +1,5 @@
 ---
-title: "Anular la inscripción del dispositivo iOS de Intune | Microsoft Intune"
+title: "Anular la inscripción del dispositivo iOS de Intune | Microsoft Docs"
 description: "Describe cómo anular la inscripción de un dispositivo iOS de Intune."
 keywords: 
 author: barlanmsft
@@ -11,12 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 28914db1-3e62-45f5-9632-b0d2a808a44d
+searchScope:
+- Company Portal
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 9ddbcde20fac83289c4622f69538ff00fa0cb65b
-ms.openlocfilehash: 5db58b87e5c48c40794315e7781d32b02a653b2b
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: eb41be0b4096c2b2ee5711204b34e8c3bb13e25b
 
 
 ---
@@ -57,6 +59,6 @@ Cuando se anula la inscripción de un dispositivo de Intune, ocurre lo siguiente
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO2-->
 
 

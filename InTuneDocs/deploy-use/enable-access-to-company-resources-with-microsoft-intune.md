@@ -1,5 +1,5 @@
 ---
-title: Habilitar el acceso a los recursos de empresa | Microsoft Intune
+title: Habilitar el acceso a los recursos de empresa | Microsoft Docs
 description: "Los perfiles de correo electrónico, Wi-Fi y VPN funcionan de manera conjunta para ayudar a los usuarios a acceder a los archivos y recursos que necesitan."
 keywords: 
 author: robstackmsft
@@ -14,13 +14,16 @@ ms.assetid: 3dd8dd4e-e165-4d0c-97b7-b3e86ebab909
 ms.reviewer: jeffgilb
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: f91c3530599b75093f536fd85eaf21d0b4e86e50
+ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
+ms.openlocfilehash: bda32f27216c7b65bd02334bae2882e840e7a99d
 
 
 ---
 
 # <a name="enable-access-to-company-resources-with-microsoft-intune"></a>Habilitar el acceso a los recursos de empresa con Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Los perfiles de correo electrónico, Wi-Fi y VPN de Microsoft Intune funcionan de manera conjunta para ayudar a los usuarios a obtener acceso a los archivos y recursos que necesitan para trabajar, estén donde estén. Los perfiles de certificado sirven para proteger ese acceso.
 
 ## <a name="wi-fi-profileswi-fi-connections-in-microsoft-intunemd-and-supported-platforms"></a>[Perfiles de Wi-Fi](wi-fi-connections-in-microsoft-intune.md) y plataformas compatibles
@@ -57,6 +60,6 @@ Contribuya a proteger el acceso a los recursos de empresa tales como las redes i
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

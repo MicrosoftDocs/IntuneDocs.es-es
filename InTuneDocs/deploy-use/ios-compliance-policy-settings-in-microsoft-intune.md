@@ -1,11 +1,11 @@
 ---
-title: "Configuración de directivas de cumplimiento para dispositivos iOS | Microsoft Intune"
+title: "Configuración de directivas de cumplimiento para dispositivos iOS | Microsoft Docs"
 description: "En este tema se describen las reglas y la configuración que puede establecer en una directiva de cumplimiento para dispositivos iOS."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 12/15/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,16 @@ ms.assetid: 4a59d24f-ed58-49b1-b874-b2d4aea3ec76
 ms.reviewer: chrisgre
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d6ff74f0b46baf384dbdedf13ad75538dd33a089
-ms.openlocfilehash: 0ee697472a7cb553d78aef9977381197149c3177
+ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
+ms.openlocfilehash: f09ad4f705d152b25918ca477b97cf7b1df7bfc8
 
 
 ---
 
 
 # <a name="compliance-policy-settings-for-ios-devices-in-microsoft-intune"></a>Configuración de directivas de cumplimiento para dispositivos iOS en Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 La configuración de directivas que se describe en este tema se aplica a los dispositivos con iOS 8.0 y versiones posteriores.
 
@@ -82,6 +84,6 @@ Se mostrará un vínculo con información sobre cómo actualizar el sistema. El 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

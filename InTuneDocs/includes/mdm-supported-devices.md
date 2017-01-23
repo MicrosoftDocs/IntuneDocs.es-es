@@ -5,7 +5,7 @@
   - Mac OS X 10.9 y versiones posteriores
 
 ### <a name="windows"></a>Windows
-  - Equipos con Windows 10 (versiones Home, Pro, Education y Enterprise)
+  - Equipos con Windows 10 (versiones Pro, Education y Enterprise)
   - Windows Phone 8.1 y versiones posteriores
   - Windows 8.1 RT
   - Equipos con Windows 8.1
@@ -23,6 +23,6 @@ Los clientes que tengan Enterprise Mobility + Security (EMS) también pueden [us
  
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 

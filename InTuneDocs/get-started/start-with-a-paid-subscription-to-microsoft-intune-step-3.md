@@ -1,6 +1,6 @@
 ---
-title: Agregar usuarios y conceder permisos | Microsoft Intune
-description: "Sincronización de usuarios locales con Azure AD y concesión de permisos de administrador para la suscripción de Intune."
+title: Agregar usuarios y conceder permisos | Microsoft Docs
+description: "Sincronizar usuarios locales con Azure AD y conceder permisos de administrador para la suscripción a Intune"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,13 +14,15 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 18d31a306549bae6dd44ab78d1dd08649ee71158
+ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
+ms.openlocfilehash: 02b6dd389c94d2b31bd96b2095ae48b685084370
 
 
 ---
 
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>Agregar usuarios y conceder permiso administrativo a Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Como administrador, puede agregar usuarios directamente o sincronizarlos desde la instancia local de Active Directory. Una vez agregados, los usuarios pueden inscribir dispositivos y obtener acceso a los recursos de la empresa. También puede conceder a los usuarios permisos adicionales, incluidos permisos de *administrador de inquilinos*, permisos de *administrador de servicios* y permisos de *administrador de inscripción de dispositivos*.
 
@@ -101,6 +103,6 @@ Los administradores de inscripción de dispositivos son cuentas de usuario está
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

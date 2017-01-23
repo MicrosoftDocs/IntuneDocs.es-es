@@ -1,11 +1,11 @@
 ---
-title: "Configuración de directivas de Exchange ActiveSync | Microsoft Intune"
+title: "Configuración de directivas de Exchange ActiveSync | Microsoft Docs"
 description: "Use la directiva de Exchange ActiveSync de Intune para configurar las opciones que le permitirán controlar características y funciones en los dispositivos administrados por Exchange ActiveSync."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/29/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,31 +14,34 @@ ms.assetid: e9cbb826-b155-4df6-abf3-60c6f05b2783
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 770871d8cc7a32fb54ef01fb9ac84b1fdee2ec90
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: f35a6da93e48141489b89e62b37b473d885479cf
 
 
 ---
 
-# Configuración de directivas de Exchange ActiveSync en Microsoft Intune
+# <a name="exchange-activesync-policy-settings-in-microsoft-intune"></a>Configuración de directivas de Exchange ActiveSync en Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use la directiva de **Exchange ActiveSync** de Microsoft Intune para configurar las opciones que controlan diversas características y funcionalidades en los dispositivos que Exchange ActiveSync administra.
 
 
-## Configuración de contraseña
+## <a name="password-settings"></a>Configuración de contraseña
 
 |Nombre de la configuración|Detalles
 |----------------|---|
 |**Requerir una contraseña para desbloquear dispositivos móviles**|Especifica si se deben bloquear los dispositivos con una contraseña.<br>(No aplicable a los dispositivos que ejecutan Windows RT).|
 |**Tipo de contraseña obligatoria**|Especifica el tipo de contraseña que será necesaria, como solo numérica o alfanumérica.|
-|**Longitud mínima de la contraseña**|Especifica el número mínimo de caracteres necesarios en la contraseña del dispositivo.|
+|**Longitud mínima de contraseña**|Especifica el número mínimo de caracteres necesarios en la contraseña del dispositivo.|
 |**Permitir contraseñas sencillas**|Especifica si se pueden usar contraseñas simples, que incluyen "0000" y "1234".|
 |**Número de errores de inicio de sesión repetidos que se permiten antes de que se borre el dispositivo**|Especifica el número de veces que un usuario puede escribir una contraseña incorrecta antes de que se borre el dispositivo.|
-|**Caducidad de contraseña (días)**|Especifica el número de días tras el que debe cambiarse la contraseña del dispositivo.
+|**Expiración de contraseña (días)**|Especifica el número de días tras el que debe cambiarse la contraseña del dispositivo.
 |**Recordar el historial de contraseñas**|Especifica si no se permite el uso de contraseñas usadas previamente.|
 |**Recordar historial de la contraseña** : **Impedir la reutilización de contraseñas anteriores**|Especifica el número de contraseñas usadas previamente que no se pueden volver a usar.|
 |**Minutos de inactividad antes de que se pida la contraseña**|Especifica la cantidad de tiempo que un dispositivo debe estar inactivo antes de que se bloquee la pantalla.
 
-## Configuración de cifrado
+## <a name="encryption-settings"></a>Configuración de cifrado
 
 |Nombre de la configuración|Detalles|
 |----------------|---|
@@ -54,7 +57,7 @@ Use la directiva de **Exchange ActiveSync** de Microsoft Intune para configurar 
 
 -   Al aplicar el cifrado en un dispositivo Windows 8.1, solo se puede acceder a la clave de recuperación desde la cuenta de Microsoft del usuario, a la que se accede desde la cuenta de OneDrive del usuario. No se puede recuperar esta clave en nombre de un usuario.
 
-## Configuración de correo electrónico
+## <a name="email-settings"></a>Configuración de correo electrónico
 
 |Nombre de la configuración|Detalles
 |----------------|---|
@@ -62,13 +65,13 @@ Use la directiva de **Exchange ActiveSync** de Microsoft Intune para configurar 
 |**Periodo de sincronización del correo electrónico**|Especifica el número de días que se sincroniza el correo electrónico recibido en el dispositivo.
 |**Permitir que los dispositivos móviles que no son totalmente compatibles con la configuración de Exchange ActiveSync se sincronicen con Exchange**|Especifica si se permite el acceso a Exchange en los dispositivos que no son compatibles con una o más configuraciones de Exchange ActiveSync.
 
-## Configuración del explorador
+## <a name="browser-settings"></a>Configuración del explorador
 
 |Nombre de la configuración|Detalles
 |----------------|---|
 |**Permitir explorador web**|Especifica si se puede usar el explorador web en el dispositivo.<br>(No disponible para Windows RT ni Windows Phone).
 
-## Configuración de hardware
+## <a name="hardware-settings"></a>Configuración de hardware
 
 |Nombre de la configuración|Detalles
 |----------------|---|
@@ -76,11 +79,11 @@ Use la directiva de **Exchange ActiveSync** de Microsoft Intune para configurar 
 
 
 
-### Consulte también
+### <a name="see-also"></a>Consulte también
 [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
 
 
 
-<!--HONumber=Oct16_HO4-->
+<!--HONumber=Dec16_HO5-->
 
 

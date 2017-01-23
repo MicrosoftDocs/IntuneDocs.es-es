@@ -1,11 +1,11 @@
 ---
-title: Perfiles de aprovisionamiento de aplicaciones | Microsoft Intune
+title: Perfiles de aprovisionamiento de aplicaciones | Microsoft Docs
 description: "Intune proporciona las herramientas para implementar proactivamente una nueva directiva de perfil de aprovisionamiento a dispositivos que tengan aplicaciones cuya expiración esté próxima."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/19/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,15 @@ ms.assetid: 86fbe736-7bdb-4f5e-ae21-13c91eb2462c
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 409433dbe5ca777b33b21a2655e15cde8003b4a2
-ms.openlocfilehash: d67b26b23e65d4a144c1efda1494de1df94cc33c
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: db76786da0428b0e064f2091089653244d90ee2a
 
 
 ---
 
 # <a name="use-ios-mobile-provisioning-profile-policies-to-prevent-your-apps-from-expiring"></a>Uso de directivas de perfil de aprovisionamiento móvil iOS para evitar que las aplicaciones expiren
 
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Las aplicaciones de línea de negocio de Apple iOS implementadas en iPhone y iPad se crean con un perfil de aprovisionamiento incluido y un código firmado con un certificado. Cuando la aplicación está en ejecución, iOS confirma la integridad de la aplicación de iOS y exige el cumplimiento de las directivas definidas por el perfil de aprovisionamiento. Se producen las validaciones siguientes:
 
@@ -53,6 +54,6 @@ Cuando el certificado haya expirado, debe volver a firmar la aplicación con un 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

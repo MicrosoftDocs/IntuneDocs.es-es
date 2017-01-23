@@ -1,11 +1,11 @@
 ---
-title: "Configuración de directivas de MAM en la consola Intune | Microsoft Intune"
+title: "Configuración de directivas de MAM en la consola de Intune | Microsoft Docs"
 description: "Las directivas de administración de aplicaciones móviles de Microsoft Intune permiten modificar la función de las aplicaciones que se implementan para que, de este modo, estén en consonancia con las directivas de seguridad y cumplimiento de la compañía."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/06/2016
+ms.date: 12/27/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,16 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: a4f7a503417938eabb4334757dcf12a63f082fd3
-ms.openlocfilehash: 90b5a9f78a93cde7466937d0ce9dac3d83f3ff64
+ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
+ms.openlocfilehash: f7504657f5fb2d73242f25f2f059c8c4e7ab1547
 
 
 ---
 
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Configure and deploy mobile application management policies in the Microsoft Intune console
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Las directivas de administración de aplicaciones móviles (MAM) de Microsoft Intune permiten modificar la función de las aplicaciones que se implementan para que, de este modo, estén en consonancia con las directivas de seguridad y cumplimiento de la compañía. Por ejemplo, puede limitar las operaciones de cortar, copiar y pegar dentro de una aplicación administrada, o configurar una aplicación para abrir todos los vínculos web dentro de un explorador administrado.
 
 Compatibilidad con las directivas de administración de aplicaciones móviles:
@@ -71,7 +74,7 @@ Por ejemplo, mediante la aplicación de Outlook:
 
 -   **Paso 5:** supervise la implementación de la aplicación.
 
-## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mamenabled-app"></a>Paso 1: Obtenga el vínculo a una aplicación administrada por directiva, cree una aplicación ajustada o use el SDK para aplicaciones de Intune para escribir una aplicación habilitada para MAM
+## <a name="step-1-get-the-link-to-a-policy-managed-app-create-a-wrapped-app-or-use-the-intune-app-sdk-to-write-a-mam-enabled-app"></a>Paso 1: Obtenga el vínculo a una aplicación administrada por directiva, cree una aplicación ajustada o use el SDK para aplicaciones de Intune para escribir una aplicación habilitada para MAM
 
 Desde la tienda de aplicaciones, busque y anote la dirección URL de la aplicación administrada por directiva que quiere implementar. Por ejemplo, la dirección URL de Microsoft Word para la aplicación de iPad es **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
@@ -194,6 +197,6 @@ En casos en los que el dispositivo o el usuario recibe dos directivas en conflic
 
 
 
-<!--HONumber=Nov16_HO2-->
+<!--HONumber=Dec16_HO5-->
 
 

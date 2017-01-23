@@ -1,9 +1,9 @@
 ---
-title: Portal de Azure para directivas de MAM | Microsoft Intune
+title: Azure Portal para directivas de MAM | Microsoft Docs
 description: "Cree directivas de administración de aplicaciones móviles con Azure Portal. Las directivas que cree aquí se pueden aplicar a dispositivos con o sin inscripción en Intune."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
 ms.date: 10/22/2016
 ms.topic: article
@@ -14,29 +14,27 @@ ms.assetid: 7d6dae94-a833-40b7-9016-14ea234bb33c
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87e37cd8334ddb9331c0662b691545cd0ab0553a
-ms.openlocfilehash: b377d527621693f4c231f6f8b16cab277853cdf7
+ms.sourcegitcommit: fe44466fbcef67d02b16d3d2d335f657251451d3
+ms.openlocfilehash: fa8d839da1cf0b2d207edc0b28de8a714ba0df02
 
 
 ---
 
 # <a name="azure-portal-for-microsoft-intune-mam-policies"></a>Portal de Azure para directivas de MAM de Microsoft Intune
 
-## <a name="use-the-azure-portal"></a>Usar Azure Portal
-Azure Portal le permite crear y administrar directivas de administración de aplicaciones móviles (MAM).
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-En el Portal de Azure se pueden crear directivas de MAM aplicables a los siguientes elementos:
+Azure Portal se usa para crear y administrar directivas de administración de aplicaciones móviles (MAM) para:
+
 - Aplicaciones que se ejecutan en dispositivos **inscritos y administrados con Intune**.
 
 - Aplicaciones que se ejecutan en dispositivos **no inscritos** en ninguna solución de MDM
 - Aplicaciones que se ejecutan en dispositivos **inscritos en una solución de MDM de terceros**.
 
 >[!IMPORTANT]
+> Azure Portal es la nueva consola de administración para crear directivas MAM, pero también puede crear una directiva MAM que admita aplicaciones para dispositivos inscritos en Intune mediante el uso de la [consola de administración de Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) para escenarios MDM.
 
-
-> Si usa la consola de administración de Intune para administrar los dispositivos, puede crear una directiva de MAM que admita aplicaciones para los dispositivos inscritos en Intune mediante la [consola de administración de Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
-
-> Es posible que no vea todas las configuraciones de directivas de MAM en la consola de administración de Intune. El Portal de Azure es la nueva consola de administración para crear directivas de MAM. Si crea directivas de MAM en la consola de administración de Intune y en Azure Portal, la directiva de Azure Portal se aplica a las aplicaciones y se implementa para los usuarios.
+> Es posible que no vea todas las configuraciones de directivas de MAM disponibles en la consola de administración de Intune. Además, si crea directivas MAM en la consola de administración de Intune y en Azure Portal, las directivas creadas en Azure Portal invalidarán las creadas en la consola de administración de Intune. En este escenario, las directivas de MAM de Azure Portal se aplicarán a las aplicaciones y se implementarán en usuarios.
 
 
 ## <a name="sign-in-to-the-azure-portal-and-customize-your-start-page"></a>Iniciar sesión en Azure Portal y personalizar la página de inicio
@@ -49,24 +47,25 @@ En el Portal de Azure se pueden crear directivas de MAM aplicables a los siguien
 
     ![Captura de pantalla del panel del Portal de Azure](../media/AppManagement/AzurePortal_MAMStartboard_NoMAM.png)
 
-3.  En el menú **Examinar**, busque **Intune**.![Captura de pantalla del menú Examinar con Intune resaltado](../media/AppManagement/AzurePortal_MAM_Browse_Intune.png)
+3.  En el menú **Examinar**, busque **Intune**.
+
+    ![Captura de pantalla del menú Examinar con Intune resaltado](../media/AppManagement/MAM-Azure-Portal-1.png)
 
 4.  Elija **Intune** > **Administración de aplicaciones móviles de Intune** > **Configuración**.
 
-    ![Captura de pantalla de la hoja Administración de aplicaciones móviles de Intune](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
+    ![Captura de pantalla de la hoja Administración de aplicaciones móviles de Intune](../media/AppManagement/MAM-Azure-Portal-2.png)
 
-    > [!TIP]
-
-    > Para anclar una hoja a la página **Inicio** , puede usar la opción **anclar** de la hoja. Haga clic en el icono de anclar de la **hoja de administración de aplicaciones móviles de Intune** para anclarla a la página **Inicio**.
+5. (Opcional): Para anclar una hoja a la página **Inicio** , puede usar la opción **anclar** de la hoja. Haga clic en el icono de anclar de la **hoja de administración de aplicaciones móviles de Intune** para anclarla a la página **Inicio**.
 
     ![Captura de pantalla de la hoja Administración de aplicaciones móviles de Intune con el icono de anclaje resaltado](../media/AppManagement/AzurePortal_MAM_PinBladeAction.png)
 
     ![Captura de pantalla del panel con el icono de Intune anclado](../media/AppManagement/AzurePortal_MAM_Startboard_withMAM.png)
+
 ## <a name="next-steps"></a>Pasos siguientes
 [Preparación para configurar directivas de administración de aplicaciones móviles](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

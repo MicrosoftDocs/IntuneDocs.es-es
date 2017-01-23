@@ -1,11 +1,11 @@
 ---
-title: Agregar aplicaciones para dispositivos inscritos | Microsoft Intune
+title: Agregar aplicaciones para dispositivos inscritos | Microsoft Docs
 description: "Antes de que pueda implementar una aplicación, debe agregarla a Intune. Después, esta se encuentra disponible en la consola de Intune donde puede implementarla y administrarla."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/28/2016
+ms.date: 01/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,15 @@ ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: eeb85a28ea6f99a0123ec5df3b0d476a678b85cb
-ms.openlocfilehash: 00facaf07d8cb5ad7f1827eee9b0efb3547cec95
+ms.sourcegitcommit: 18f200ca30cfcd4c9fb00519c149f48e9b9fa8cb
+ms.openlocfilehash: b566b13f8c93c8a6bddccdbc0da5eb508907dac2
 
 
 ---
 
 # <a name="add-apps-for-enrolled-devices-to-intune"></a>Agregar aplicaciones a los dispositivos inscritos en Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Antes de que pueda implementar o administrar una aplicación, debe agregarla a Microsoft Intune. En este tema se muestra cómo agregar aplicaciones a los dispositivos inscritos.
 
@@ -57,6 +59,9 @@ Use el Editor de software de Intune para configurar las propiedades de la aplica
         Por ejemplo, si quiere implementar la aplicación Microsoft Word desde iTunes Store en los dispositivos, la página sería similar a esta:
 
         ![editor de software de Intune](./media/publisher-for-mobile.png)
+
+> [!NOTE]
+> Al agregar e implementar una aplicación desde un almacén, los usuarios finales deben tener una cuenta con el almacén para poder instalar la aplicación.
 
 3.  En la página **Descripción del software**, configure las siguientes opciones:
 
@@ -100,6 +105,6 @@ Tras crear una aplicación, el siguiente paso es implementarla. Para obtener má
 
 
 
-<!--HONumber=Nov16_HO4-->
+<!--HONumber=Jan17_HO2-->
 
 
