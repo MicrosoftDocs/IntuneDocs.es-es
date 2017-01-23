@@ -94,6 +94,6 @@ Puede encontrar las novedades en la vista previa de Intune en Azure [aquí](http
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -84,6 +84,6 @@ No se admite el restablecimiento de código de acceso para equipos Windows inscr
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

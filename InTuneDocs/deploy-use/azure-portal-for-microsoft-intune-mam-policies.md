@@ -66,6 +66,6 @@ Azure Portal se usa para crear y administrar directivas de administración de ap
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

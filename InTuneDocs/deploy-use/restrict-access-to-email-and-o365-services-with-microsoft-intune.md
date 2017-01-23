@@ -82,6 +82,6 @@ A diferencia de otras directivas de Intune, no se implementan directivas de acce
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 
