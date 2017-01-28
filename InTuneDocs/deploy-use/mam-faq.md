@@ -1,3 +1,25 @@
+---
+title: "Preguntas más frecuentes sobre MAM y la protección de la aplicación"
+description: "Este artículo proporciona respuestas a algunas preguntas frecuentes en la administración de aplicaciones móvil de Intune (MAM) y la protección de aplicaciones de Intune."
+keywords: 
+author: oydang
+ms.author: oydang
+manager: mtillman
+ms.date: 01/20/2017
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
+ms.reviewer: oydang
+ms.suite: ems
+translationtype: Human Translation
+ms.sourcegitcommit: 474bb04d743290ff78aa0772595b744be46ae1af
+ms.openlocfilehash: b6b2d066b773e91003884a8735b6663ebf125aa3
+
+
+---
+
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Preguntas más frecuentes sobre MAM y la protección de la aplicación
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -111,7 +133,15 @@ Este artículo proporciona respuestas a algunas preguntas frecuentes en la admin
 
 **Puedo usar la extensión de recursos compartidos de iOS para abrir los datos profesionales o educativos en aplicaciones no administradas, incluso con la directiva de transferencia de datos establecida en "Solo aplicaciones administradas" o "Ninguna aplicación". ¿No es esto una pérdida de datos?** La directiva de protección de aplicaciones de Intune no puede controlar la extensión de recursos compartidos de iOS sin administrar el dispositivo. Por lo tanto, Intune _**cifra los datos "corporativos" antes de compartirlos fuera de la aplicación**_. Puede validar esto intentando abrir el archivo "corporativo" fuera de la aplicación administrada. El archivo debe estar cifrado y no debe poder abrirse fuera de la aplicación administrada.
 
+### <a name="see-also"></a>Consulte también
+- [Opciones de configuración de directiva de administración de aplicaciones móviles de Android en Microsoft Intune](android-mam-policy-settings.md)
+- [Opciones de configuración de directiva de administración de aplicaciones móviles iOS](ios-mam-policy-settings.md)
+- [Validar la configuración de administración de aplicaciones móviles](validate-mobile-application-management.md)
+- [Preparación para configurar directivas de administración de aplicaciones móviles con Microsoft Intune](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+- [Cómo obtener soporte técnico para Microsoft Intune](../troubleshoot/how-to-get-support-for-microsoft-intune.md)
 
-<!--HONumber=Jan17_HO2-->
+
+
+<!--HONumber=Jan17_HO4-->
 
 
