@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -50,8 +50,6 @@ Puede implementar perfiles de Wi-Fi en las siguientes plataformas:
 -   Mac OS X 10.9 y versiones posteriores
 
 En el caso de dispositivos que ejecutan sistemas operativos Windows 8.1 o Windows 10 para móvil o escritorio, puede importar un perfil de configuración de Wi-Fi que se haya exportado anteriormente a un archivo. Para más información, consulte [Exportar o importar un perfil de configuración de Wi-Fi para dispositivos Windows](#export-or-import-a-wi-fi-configuration-profile-for-windows-devices).
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), seleccione **Directiva** &gt; **Agregar directiva**.
 
