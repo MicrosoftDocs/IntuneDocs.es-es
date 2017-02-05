@@ -222,6 +222,6 @@
 # [Glosario](understand-explore/intune-glossary.md)
 
 
-<!--HONumber=Jan17_HO5-->
+<!--HONumber=Feb17_HO1-->
 
 
