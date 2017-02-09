@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 018bda65-7238-41f5-b92a-e5f67b7fe085
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
@@ -29,9 +30,9 @@ Si inscribió un dispositivo Windows en Intune, pero ya no quiere usarlo para el
 
 Para anular la inscripción de un dispositivo, use el vínculo de la sección anterior "En este artículo" correspondiente al tipo de dispositivo que use:
 
--   [Anular la inscripción de un dispositivo Windows 10](#unenroll-your-windows-10-device)
--   [Anular la inscripción de un equipo con Windows 8.1](#unenroll-your-windows-8-1-computer)
--   [Anular la inscripción de un dispositivo Windows Phone 8.1](#unenroll-your-windows-phone-8-1-device)
+-    [Anular la inscripción de un dispositivo Windows 10](#unenroll-your-windows-10-device)
+-    [Anular la inscripción de un equipo con Windows 8.1](#unenroll-your-windows-8-1-computer)
+-    [Anular la inscripción de un dispositivo Windows Phone 8.1](#unenroll-your-windows-phone-8-1-device)
 
 ## <a name="unenroll-your-windows-10-device"></a>Anular la inscripción de un dispositivo Windows 10
 

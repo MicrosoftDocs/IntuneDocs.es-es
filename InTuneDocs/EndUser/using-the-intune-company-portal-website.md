@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
 translationtype: Human Translation
@@ -37,7 +38,7 @@ Pueden llevar a cabo las siguientes tareas desde el sitio web del Portal de empr
 
 -   [Bloquear un dispositivo de forma remota](remote-lock-your-device-cpwebsite.md)
 
--   [Sincronizar el dispositivo manualmente para acelerar las instalaciones de aplicaciones lentas](sync-your-device-manually-cpwebsite.md)
+-    [Sincronizar el dispositivo manualmente para acelerar las instalaciones de aplicaciones lentas](sync-your-device-manually-cpwebsite.md)
 
 -   Buscar información de contacto del administrador de TI, si está configurado
 

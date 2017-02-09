@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: b217da11-2cd7-49ab-a91f-2f6d7784c6b6
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
@@ -45,8 +46,6 @@ Cuando se crea un perfil de trabajo:
 Para ver los pasos necesarios para crear un perfil de trabajo, consulte [Creación de un perfil de trabajo e inscripción del dispositivo](create-a-work-profile-and-enroll-your-device-in-intune-android.md).
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
-
-
 
 
 
