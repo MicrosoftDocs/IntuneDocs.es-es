@@ -30,35 +30,35 @@ Cuando inscribe su dispositivo Windows en Intune, el administrador de TI tiene p
 
 **Lo que el personal de TI no puede ver**
 
--   Historial web y de llamadas
+- Historial web y de llamadas
 
--   Ubicación
+-    Ubicación
 
--   Mensajes de texto y de correo electrónico
+- Mensajes de texto y de correo electrónico
 
--   Contactos
+- Contactos
 
--   Contraseñas
+-    Contraseñas
 
--   Calendario
+- Calendario
 
--   Álbum de cámara
+- Álbum de cámara
 
 **Lo que el personal de TI puede ver**
 
--   Modelo
+- Modelo
 
--   Número de serie
+- Número de serie
 
--   Sistema operativo
+- Sistema operativo
 
--   Nombres de aplicación
+- Nombres de aplicación
 
--   Propietario
+- Propietario
 
--   Nombre del dispositivo
+- Nombre del dispositivo
 
--   Fabricante
+- Fabricante
 
 Para más información, consulte [¿Qué ocurrirá cuando instale la aplicación Portal de empresa e inscriba el dispositivo Windows en Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md).
 
