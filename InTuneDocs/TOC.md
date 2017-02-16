@@ -6,12 +6,14 @@
 ### [Creación de directivas y publicación de una aplicación](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)
 ### [Otras opciones y extras](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
 ### [Convertir a una suscripción de pago](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
+## [Preguntas más frecuentes de protección MAM y aplicación](understand-explore/mam-faq.md)
 ## [Escenarios frecuentes](understand-explore/common-ways-to-use-intune.md)
 
 
 # [Introducción](get-started/get-started.md)
 ## [Configuración de Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
-### [Requisitos previos](get-started/what-to-know-before-you-start-microsoft-intune.md)
+### [Requisitos previos]
+#### [Dispositivos compatibles](get-started/what-to-know-before-you-start-microsoft-intune.md)
 #### [Uso de red](get-started/network-bandwidth-use.md)
 ### [Iniciar sesión en Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
 ### [Configurar dominios](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
@@ -57,7 +59,6 @@
 #### [Administración de Android](deploy-use/set-up-android-management-with-microsoft-intune.md)
 #### [Administración de Android for Work](deploy-use/set-up-android-for-work.md)
 #### [Administración de dispositivos Windows](deploy-use/set-up-windows-device-management-with-microsoft-intune.md)
-#### [Windows 10 Mobile y Windows Phone](deploy-use/set-up-windows-phone-management-with-microsoft-intune.md)
 ### [Administración de dispositivos corporativos](deploy-use/manage-corporate-owned-devices.md)
 #### [Inscribir dispositivos iOS corporativos](deploy-use/enroll-corporate-owned-ios-devices-in-microsoft-intune.md)
 ##### [Inscripción con el asistente para la configuración de iOS](deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune.md)
@@ -165,13 +166,13 @@
 #### [Habilitar la directiva de cumplimiento de protección contra amenazas de dispositivos](deploy-use/device-threat-protection-policy.md)
 
 ### [Proteger datos de aplicaciones con MAM](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Azure Portal para directivas de MAM](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
-#### [Preparar la configuración de directivas MAM](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Crear e implementar directivas MAM](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Directivas MAM para Android](deploy-use/android-mam-policy-settings.md)
-#### [Directivas MAM para iOS](deploy-use/ios-mam-policy-settings.md)
-#### [Validar las directivas MAM](deploy-use/validate-mobile-application-management.md)
-#### [Supervisar el cumplimiento de directivas](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Portal de Azure para directivas de protección de aplicaciones](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
+#### [Prepararse para configurar directivas de protección de aplicaciones](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Crear e implementar directivas de protección de aplicaciones](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Directivas de protección de aplicaciones para Android](deploy-use/android-mam-policy-settings.md)
+#### [Directivas de protección de aplicaciones para iOS](deploy-use/ios-mam-policy-settings.md)
+#### [Validar las directivas de protección de aplicaciones](deploy-use/validate-mobile-application-management.md)
+#### [Supervisar el cumplimiento de directivas de protección de aplicaciones](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Administrar la transferencia de datos entre aplicaciones iOS](deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
 #### [Consola de administración de Intune para directivas MAM](deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
@@ -182,7 +183,6 @@
 #### [Aplicaciones LOB en dispositivos no administrados por Intune](deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md)
 #### [Usar el SDK al escribir una aplicación](deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management.md)
 
-### [Preguntas más frecuentes de protección MAM y aplicación](deploy-use/mam-faq.md)
 
 ## Retirar aplicaciones y datos
 ### [Usar el borrado selectivo o completo](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
@@ -222,6 +222,6 @@
 # [Glosario](understand-explore/intune-glossary.md)
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 
