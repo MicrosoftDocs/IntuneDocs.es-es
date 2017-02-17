@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,8 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 65a6b2e22359bdcb9b0c15a84c6b3586dafe4d6c
-ms.openlocfilehash: 7db1a8ec10d0c214264bba7608ae8bdc09a27420
+ms.sourcegitcommit: a2e840797c06322b9efc59438e0675e57b7cdb24
+ms.openlocfilehash: facae5f49b52760dcea0653bd261e16e13e11bbf
 
 
 ---
@@ -105,7 +105,10 @@ Un perfil de inscripción de dispositivo define la configuración que se aplica 
 
   -  **Agregar de forma manual los detalles del dispositivo**: especifique el número de serie y cualquier nota o detalle de hasta 15 dispositivos.
 
-  Para realizar cambios en esta lista de números de serie más adelante, consulte [Agregar o actualizar números de serie de iOS](#add-or-update-ios-serial-numbers).
+  En el panel **Revisar dispositivos**, puede confirmar los números de serie. También puede decidir si quiere sobrescribir los **Detalles** de números de serie que se van a volver a importar o puede desactivar el cuadro **Sobrescribir** para conservar los detalles actuales. 
+
+> [!NOTE] 
+> En la consola de administrador de Intune existente, los administradores pueden aceptar detalles asociados desde un archivo CSV cargado y sobrescribir los detalles existentes de números de serie individuales. En el nuevo Azure Portal, solo podrá sobrescribir los detalles de todos los números de serie o ignorar nuevos detalles de todos los números de serie.
 
   > [!NOTE]
   > Si posteriormente quiere quitar dispositivos corporativos de la administración de Intune, es posible que tenga que ir al grupo de dispositivos **Mediante número de serie de iOS** en **Dispositivos corporativos inscritos previamente** y quitar el número de serie del dispositivo de Intune para deshabilitar la inscripción de dispositivos. Si Intune realiza un procedimiento de recuperación ante desastres en el momento en que se quitan los números de serie o en torno a este momento, se deberá comprobar que solo los números de serie de los dispositivos activos están presentes en ese grupo.
@@ -179,29 +182,12 @@ Los dispositivos ya están listos para la inscripción corporativa.
 
 Apague los dispositivos y distribúyalos a los usuarios. Cuando los usuarios enciendan sus dispositivos, se iniciará el Asistente de configuración.
 
-## <a name="add-or-update-ios-serial-numbers"></a>Agregar o actualizar números de serie de iOS
-
-En los pasos anteriores, se explican todos los pasos que debe realizar para inscribir dispositivos desde el “día 0”, incluido cómo cargar los números de serie de iOS, pero es probable que quiera agregar o actualizar los detalles sobre los números de serie de vez en cuando. Siga estos pasos para agregar o actualizar la lista de números de serie de dispositivos iOS. 
-
-1. En la [consola de administración de Microsoft Intune](http://manage.microsoft.com), elija **Grupos** &gt; **Todos los dispositivos** &gt; **Dispositivos corporativos inscritos previamente** &gt; **Mediante número de serie de iOS** y luego **Agregar dispositivos...** Si quiere quitar un número de serie o actualizarlo, seleccione el número de serie y después seleccione **Quitar** en lugar de seleccionar **Agregar dispositivos...**
-
-2. Para seguir agregando o actualizando números de serie, seleccione uno de los siguientes, como se describe en los pasos anteriores de este tema, y después seleccione **Siguiente**:
-
-   -  **Cargar un archivo .csv con números de serie** 
-   -  **Agregar de forma manual los detalles del dispositivo** 
-
-3.  En el panel **Revisar dispositivos**, puede confirmar los números de serie. También puede decidir si quiere sobrescribir los **Detalles** de números de serie que se van a volver a importar o puede desactivar el cuadro **Sobrescribir** para conservar los detalles actuales. 
-
-4.  Seleccione **Finalizar** para importar los números de serie.  Los números de serie y detalles importados se agregan a la lista **Mediante número de serie de iOS**.
-
-> [!NOTE] 
-> Cuando su organización se migre al nuevo Azure Portal en un futuro próximo, verá un cambio en esta característica. En la consola de administrador de Intune existente, los administradores pueden aceptar detalles asociados desde un archivo CSV cargado y sobrescribir los detalles existentes de números de serie individuales. En el nuevo Azure Portal, solo podrá sobrescribir los detalles de todos los números de serie o ignorar nuevos detalles de todos los números de serie.
 
 ### <a name="see-also"></a>Consulte también
 [Requisitos previos para la inscripción de dispositivos](prerequisites-for-enrollment.md)
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 
