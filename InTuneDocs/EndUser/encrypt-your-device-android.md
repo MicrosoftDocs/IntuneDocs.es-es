@@ -1,11 +1,11 @@
 ---
-title: Cifrado del dispositivo | Microsoft Docs
-description: "Describe cómo cifrar un dispositivo Android"
+title: "Cómo proteger el dispositivo Android con cifrado | Microsoft Docs"
+description: Proteger su dispositivo Android
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/7/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,24 @@ ms.technology:
 ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 54439c96b75efd60e2068207eb1602e669504831
+ms.sourcegitcommit: 5ca9814992edd0a18d48145243a4be524dbb4f23
+ms.openlocfilehash: 727b99f9ca2f0322eb1fee5fec29cd71dc901e01
 
 
 ---
 
 
-# <a name="encrypt-your-device"></a>Cifrado del dispositivo
+# <a name="how-to-protect-your-android-device-using-encryption"></a>Cómo proteger el dispositivo Android mediante el cifrado
 
-Haga lo siguiente si su empresa u organización solicita que se cifre el dispositivo Android para poder tener acceso a los archivos, al correo electrónico o a los datos de la empresa. Si el administrador de TI así lo requiere, puede que tenga que establecer un PIN o una contraseña antes del cifrado.
+Cuando cifra un dispositivo, está ajustando la información en una capa de código de protección que evita que los usuarios sin autorización tengan acceso a él. Para asegurarnos de que su información está protegida, la organización le pide que cifre su dispositivo Android antes de poder acceder a archivos, correos electrónicos o datos de la empresa.
+
+> [!Note]
+> Si el administrador de TI así lo requiere, puede que tenga que establecer un PIN o una contraseña antes del cifrado.
 
 Si anula la inscripción del dispositivo, este permanecerá cifrado.
 
@@ -63,6 +68,6 @@ Si anula la inscripción del dispositivo, este permanecerá cifrado.
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO5-->
 
 
