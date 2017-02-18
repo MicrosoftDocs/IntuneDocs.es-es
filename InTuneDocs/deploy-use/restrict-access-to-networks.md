@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
 ms.openlocfilehash: 8ef24e4d413662012f091c1be318d1d274e16439
@@ -154,7 +155,7 @@ En la consola de administración de ISE, proporcione estos valores de configurac
 ## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Información compartida entre su inquilino de Intune y el servidor de Cisco ISE
 En esta tabla se enumera la información compartida entre su inquilino de Intune y su servidor de Cisco ISE para los dispositivos que administra Intune.
 
-|Propiedad|  Descripción|
+|Propiedad|    Descripción|
 |---------------|------------------------------------------------------------|
 |complianceState|La cadena de verdadero o falso que indica si el dispositivo es compatible o no.|
 |IsManaged|La cadena de verdadero o falso que indica si el cliente se administra mediante Intune o no.|

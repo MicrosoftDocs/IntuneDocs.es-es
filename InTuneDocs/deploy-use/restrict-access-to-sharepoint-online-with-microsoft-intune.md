@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
 ms.openlocfilehash: fad731fe01ba4782b64e8a5af97bd536ae9478d3
@@ -143,7 +144,7 @@ A continuación, configure la directiva para requerir que solo los dispositivos 
         Esto requiere que cualquier dispositivo usado para obtener acceso a **SharePoint Online** se inscriba en Intune y cumpla las directivas. Cualquier aplicación cliente que use la **autenticación moderna** estará sujeta a la directiva de acceso condicional. Si la plataforma no es compatible actualmente con Intune, el acceso a **SharePoint Online** se bloqueará.
 
         Seleccionar la opción **Todas las plataformas** significa que Azure Active Directory aplica esta directiva a todas las solicitudes de autenticación, independientemente de la plataforma notificada por la aplicación cliente. Todas las plataformas tienen que inscribirse y ser compatibles, excepto:
-        *   Los dispositivos Windows, que deben estar inscritos y ser compatibles, estar unidos a dominio con Active Directory local, o ambos.
+        *    Los dispositivos Windows, que deben estar inscritos y ser compatibles, estar unidos a dominio con Active Directory local, o ambos.
         * Plataformas no compatibles como Mac. Por el contrario, las aplicaciones que usan autenticación moderna que proceden de estas plataformas seguirán bloqueadas.
 
     -   **Plataformas específicas**

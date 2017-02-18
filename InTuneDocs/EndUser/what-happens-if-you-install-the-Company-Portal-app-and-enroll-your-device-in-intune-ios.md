@@ -16,6 +16,7 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
 ms.openlocfilehash: 8e10aa7c1db7490a462032e1bf86c7509b7b0e18
@@ -42,13 +43,13 @@ Cuando inscribe el dispositivo en Intune, está concediendo permiso al administr
 
 -   Historial web y de llamadas
 
--   Ubicación
+-    Ubicación
 
 -   Mensajes de texto y de correo electrónico
 
 -   Contactos
 
--   Contraseñas
+-    Contraseñas
 
 -   Calendario
 

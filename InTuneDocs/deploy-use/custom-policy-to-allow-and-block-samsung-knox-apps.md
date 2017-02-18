@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: be3cfc0120caf6e702139b829fc6ee1fa9bf9a1e
@@ -40,9 +41,9 @@ Esta configuración solo se puede usar en dispositivos que ejecutan Samsung KNOX
     
     - **Nombre de la configuración** Escriba **PreventStartPackages**.
     - **Descripción del valor** Escriba una descripción opcional como "Lista de aplicaciones bloqueadas que no se pueden ejecutar".
-    -   **Tipo de datos** En la lista desplegable, elija **Cadena**.
-    -   **OMA-URI.** Escriba **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
-    -   **Valor** Escriba una lista de los nombres del paquete de aplicaciones que quiere permitir. Puede usar **; : ,** o **|** como delimitador. (Ejemplo: paquete1;paquete2;)
+    -     **Tipo de datos** En la lista desplegable, elija **Cadena**.
+    -     **OMA-URI.** Escriba **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
+    -     **Valor** Escriba una lista de los nombres del paquete de aplicaciones que quiere permitir. Puede usar **; : ,** o **|** como delimitador. (Ejemplo: paquete1;paquete2;)
 
     Para obtener una lista de las aplicaciones que los usuarios pueden instalar de Google Play Store al excluir todas las demás aplicaciones:
 
