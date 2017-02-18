@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/09/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,9 +14,10 @@ ms.technology:
 ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 6c5ea937e5f6e0c8d20c72e086de1faa17d0ad34
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: b95f7dbf37a159a62894ae27d1fdb731ede5570c
 
 
 ---
@@ -25,9 +26,7 @@ ms.openlocfilehash: 6c5ea937e5f6e0c8d20c72e086de1faa17d0ad34
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
-Intune proporciona una variedad de opciones generales integradas que puede configurar en los dispositivos Android for Work.
+Intune proporciona una variedad de opciones generales integradas que puede configurar en los dispositivos [Android for Work](android-for-work.md).
 
 ## <a name="general-configuration-policy"></a>Directiva de configuración general
 
@@ -60,8 +59,6 @@ Si el valor que busca no aparece en este tema, puede crearlo mediante una direct
 |**Permitir uso compartido de datos entre perfiles de trabajo y personales**|Permite a las aplicaciones del perfil de trabajo compartir datos con las aplicaciones del perfil personal de los usuarios. Elija de entre las siguientes opciones:<br><br>- **Impide el uso compartido más allá de los límites**<br>- **Las aplicaciones de un perfil de trabajo pueden controlar la solicitud de uso compartido desde un perfil personal**<br>- **No hay restricciones para el uso compartido**|
 |**Ocultar notificaciones del perfil de trabajo cuando el dispositivo está bloqueado**<br>(Android 6 y versiones posteriores)|Controle si se muestran las notificaciones del perfil de trabajo cuando el dispositivo está bloqueado.|
 |**Establecer directiva de permisos de aplicación predeterminada**<br>(Android 6 y versiones posteriores)|Establece la directiva de permisos predeterminada para todas las aplicaciones del perfil de trabajo.|
-
-
 
 
 ## <a name="custom-policy-settings"></a>Configuración de directivas personalizadas
@@ -97,6 +94,6 @@ Intune admite un número limitado de directivas personalizadas de Android en est
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

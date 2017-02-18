@@ -5,15 +5,16 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 01/23/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 00994a92eb555827d17ad633ffcf765804365621
-ms.openlocfilehash: b419a07ef13d386fc08aa7fd5605fbb0bea79348
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 24ab39a92d69e92e1c202005fcd783018c4d4621
 
 
 ---
@@ -21,8 +22,6 @@ ms.openlocfilehash: b419a07ef13d386fc08aa7fd5605fbb0bea79348
 # <a name="enable-enrollment-of-android-for-work-devices"></a>Habilitación de la inscripción de dispositivos Android for Work
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Para habilitar la administración de dispositivos Android for Work, debe agregar un enlace de Android for Work en Intune. Para inscribir dispositivos que admiten Android for Work, pero anteriormente se han inscrito como dispositivos de Android normal, se debe anular la inscripción de los dispositivos y después volver a inscribirlos.
 
@@ -54,7 +53,7 @@ Después de configurar el enlace de Android for Work y la configuración, puede 
 
 ## <a name="unbinding-your-android-for-work-administrative-account"></a>Desenlazado de la cuenta administrativa de Android for Work
 
-Puede desactivar la inscripción y administración de Android for Work. Si hace clic en **Desenlazar**, se quitan todos los dispositivos inscritos de Android for Work y quita la relación entre la cuenta de Android for Work y Intune.
+Puede desactivar la inscripción y administración de Android for Work. Si hace clic en **Desenlazar** en la consola de administración de Intune, se quitan todos los dispositivos inscritos de Android for Work y se quita la relación entre la cuenta de Android for Work e Intune.
 
 ### <a name="how-to-unbind-an-android-for-work-account"></a>Cómo desenlazar una cuenta de Android for Work
 
@@ -66,6 +65,6 @@ Puede desactivar la inscripción y administración de Android for Work. Si hace 
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO1-->
 
 
