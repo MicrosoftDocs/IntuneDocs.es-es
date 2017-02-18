@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fa33bd3833f7f7198eed3f4f486c27bae3ba47d7
-ms.openlocfilehash: 5f05aa4a27be14a05663aa9de82af63291699403
+ms.sourcegitcommit: 70be873367edccdefd724b6aa6959eb67b377bdd
+ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
 
 
 ---
@@ -135,7 +136,7 @@ Vamos a explorar con más detalle estas dependencias externas comunes a continua
 
 ### <a name="identity"></a>Identidad
 
-Identidad es la manera en que identificamos a los usuarios que pertenecen a su organización y se inscriben en un dispositivo. Intune requiere Azure Active Directory (Azure AD) como el proveedor de identidades de usuario. Si ya usa este servicio, ya podrá aprovechar su identidad existente en la nube. Además, Azure AD Connect es la herramienta recomendada para sincronizar sus identidades de usuario locales con los servicios en la nube de Microsoft. Si su organización ya está usando Office 365, es importante que Intune use el mismo entorno de Azure Active Directory.
+Identidad es la manera en que se identifica a los usuarios que pertenecen a la organización y que se inscriben en un dispositivo. Intune requiere Azure Active Directory (Azure AD) como el proveedor de identidades de usuario. Si ya usa este servicio, ya podrá aprovechar su identidad existente en la nube. Además, Azure AD Connect es la herramienta recomendada para sincronizar sus identidades de usuario locales con los servicios en la nube de Microsoft. Si su organización ya está usando Office 365, es importante que Intune use el mismo entorno de Azure Active Directory.
 
 Puede encontrar más información sobre los requisitos de identidad de Intune a continuación.
 
@@ -411,6 +412,6 @@ En la siguiente sección se proporcionan instrucciones sobre el [proceso de impl
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Jan17_HO3-->
 
 
