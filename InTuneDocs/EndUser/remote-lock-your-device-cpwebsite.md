@@ -1,5 +1,5 @@
 ---
-title: Bloquear un dispositivo de forma remota desde el sitio web del Portal de empresa | Microsoft Docs
+title: Bloquear un dispositivo desde el portal de empresa | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
@@ -16,9 +16,10 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
-ms.openlocfilehash: fad219ca06ceb62e8bad0b3dbd30b330d90ac977
+ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
+ms.openlocfilehash: a888592c4bf4f71cba44cebadb5cf90d2cc9aef6
 
 
 ---
@@ -39,13 +40,13 @@ Para estar seguro, puede bloquearlo mediante la opción de bloqueo remoto en el 
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>Para usar el bloqueo remoto para bloquear el dispositivo
 
-1.  En el [sitio web del Portal de empresa](http://portal.manage.microsoft.com), puntee en el nombre del dispositivo que quiera bloquear.
+1.    En el [sitio web del Portal de empresa](http://portal.manage.microsoft.com), puntee en el nombre del dispositivo que quiera bloquear.
 
-2.  Pulse **Bloqueo remoto**.
+2.    Pulse **Bloqueo remoto**.
 
     ![remote-lock-option-on-company-portal-website](./media/iwp-screen-with-all-options.png)
 
-3.  Aparecerá un aviso que le indicará que va a bloquear el dispositivo. Pulse **Bloqueo remoto** y el sitio web de Portal de empresa intentará bloquear el dispositivo.
+3.    Aparecerá un aviso que le indicará que va a bloquear el dispositivo. Pulse **Bloqueo remoto** y el sitio web de Portal de empresa intentará bloquear el dispositivo.
 
     Después de pulsar **Bloqueo remoto**, aparecerá el mensaje "Bloqueo remoto pendiente".  Cuando el bloqueo remoto se realiza correctamente, el estado cambia a "El bloqueo remoto se realizó correctamente".
 
@@ -64,6 +65,6 @@ Si encuentra el dispositivo y quiere desbloquearlo después de usar Bloqueo remo
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 
