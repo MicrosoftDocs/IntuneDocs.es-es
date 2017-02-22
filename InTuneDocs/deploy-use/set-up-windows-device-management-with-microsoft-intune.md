@@ -4,7 +4,7 @@ description: "Habilite la administración de dispositivos móviles (MDM) para di
 keywords: 
 author: staciebarker
 manager: stabar
-ms.date: 02/09/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,8 @@ ms.assetid: 9a18c0fe-9f03-4e84-a4d0-b63821bf5d25
 ms.reviewer: damionw
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 45c32cf08e4d6fd570af287ed64411edc9d9b394
-ms.openlocfilehash: e020ac2a4f600a94e7409e04c4c48f0c405c56cf
+ms.sourcegitcommit: 115eae8e2d733397eb4b0f025789ca7d0522a845
+ms.openlocfilehash: 5dc90c1e1ddba91fe8bbb4530eb09bca0c9e3ac9
 
 
 ---
@@ -25,13 +25,13 @@ ms.openlocfilehash: e020ac2a4f600a94e7409e04c4c48f0c405c56cf
 
 Use uno de los métodos siguientes para configurar la inscripción de dispositivos Windows:
 
-- **[Inscripción automática de Windows 10 y Windows 10 Mobile con Azure Active Directory Premium](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium)** 
+- [**Inscripción automática de Windows 10 y Windows 10 Mobile con Azure Active Directory Premium**](#set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium) 
  -  Este método solo es aplicable a dispositivos Windows 10 y Windows 10 Mobile.
  -  Debe tener Azure Active Directory Premium para usar este método. De lo contrario, use el método de inscripción para Windows 8.1 y Windows Phone 8.1.
  -  Si decide no habilitar la inscripción automática, use el método de inscripción para Windows 8.1 y Windows Phone 8.1.
 
 
-- **[Inscripción de Windows 8.1 y Windows Phone 8.1 mediante la configuración de CNAME](#set-up-windows-8--1-and-windows-phone-8--1-enrollment-by-configuring-cname)** 
+- [**Inscripción de Windows 8.1 y Windows Phone 8.1 mediante la configuración de CNAME**](#set-up-windows-81-and-windows-phone-81-enrollment-by-configuring-cname) 
  - Debe usar este método para inscribir dispositivos Windows 8.1 y Windows Phone 8.1.
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
@@ -46,8 +46,6 @@ Si aún no lo ha hecho, prepárese para la administración de dispositivos móvi
 Debe crear registros de recursos DNS **CNAME** para el dominio de su empresa. Por ejemplo, si el sitio web de la empresa es contoso.com, debe crear un CNAME en DNS que redirija EnterpriseEnrollment.contoso.com a enterpriseenrollment-s.manage.microsoft.com.
 
     Aunque la creación de entradas DNS CNAME es opcional, los registros CNAME facilitan la inscripción para los usuarios. Si no se encuentra ningún registro CNAME de inscripción, los usuarios deberán escribir manualmente el nombre del servidor MDM, enrollment.manage.microsoft.com.    
-
-    Si tiene ahora un CNAME en el DNS que redirija EnterpriseEnrollment.contoso.com a manage.microsoft.com, sugerimos que lo reemplace por un CNAME en el DNS que redirija EnterpriseEnrollment.contoso.com a enterpriseenrollment-s.manage.microsoft.com. Se recomienda este cambio, porque en una versión futura el punto de conexión manage.microsoft.com estará en desuso para las inscripciones.
 
     Los registros de recursos CNAME deben tener la siguiente información:
 
@@ -78,6 +76,6 @@ Debe crear registros de recursos DNS **CNAME** para el dominio de su empresa. Po
 
 
 
-<!--HONumber=Feb17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 
