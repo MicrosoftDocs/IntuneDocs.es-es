@@ -1,11 +1,11 @@
 ---
-title: Unenroll your device from Intune if you declined "Terms of Use" | Microsoft Docs
+title: "Anulación de la inscripción del dispositivo si ha rechazado los &quot;Términos de uso&quot; | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,17 +13,19 @@ ms.technology:
 ms.assetid: 4278f000-0258-4de5-93a1-195b48e5061e
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 1d91847166f0e2da22a322ac1a1483266b46d8ed
-ms.openlocfilehash: e8dbf10fcc649bd71ac33bd07d1d79f825a91f73
+ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
+ms.openlocfilehash: 73dfec1fe1a0a027aa560de62b6bd7ed7732faa0
 
 
 ---
 
 
-# <a name="unenroll-your-device-from-intune-if-you-declined-terms-of-use"></a>Anular la inscripción del dispositivo de Intune si ha rechazado los “términos de uso”
+# <a name="unenroll-your-device-if-you-declined-terms-of-use"></a>Anular la inscripción del dispositivo si ha rechazado los "Términos de uso"
 
 La mejor forma de anular la inscripción del dispositivo Android es aceptar los términos de uso, iniciar sesión en la aplicación Portal de empresa y después usar [estas instrucciones](unenroll-your-device-from-intune-android.md) para anular la inscripción. Pero si rechazó los términos de uso al intentar iniciar sesión en la aplicación del Portal de empresa, se le impedirá iniciar sesión en dicha aplicación en futuros intentos, por lo que necesita seguir estas instrucciones alternativas para anular la inscripción del dispositivo.
 
@@ -45,6 +47,6 @@ Para anular la inscripción del dispositivo de Intune y desinstalar la aplicaci�
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 
