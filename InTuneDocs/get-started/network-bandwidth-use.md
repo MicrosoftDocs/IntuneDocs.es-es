@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e13a9c426e07ebb2443bd403d1a5c7274afd387e
-ms.openlocfilehash: 213e2e43635dd64cd64c850d74f7fd05f649bd64
+ms.sourcegitcommit: 0f5972171349325eeb750e552481cbcf903fdf95
+ms.openlocfilehash: 9f1cd7ea3e92ac2e3a1b828e8185961060a7c619
 
 
 ---
@@ -23,6 +24,8 @@ ms.openlocfilehash: 213e2e43635dd64cd64c850d74f7fd05f649bd64
 # <a name="intune-network-bandwidth-use"></a>Uso de ancho de banda de red de Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Esta guía va dirigida a administradores del sistema que son responsables de la administración de dispositivos en la empresa. Para obtener ayuda con el uso de Intune en su dispositivo móvil, consulte las [preguntas más frecuentes sobre el Portal de empresa de Intune](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions).
 
 Antes de configurar Microsoft Intune, repase este tema y los requisitos que aparecen en [What to know before you start Microsoft Intune](what-to-know-before-you-start-microsoft-intune.md) (Información necesaria antes de iniciar Microsoft Intune).
 
@@ -231,6 +234,6 @@ En la tabla siguiente se enumeran los puertos y los servicios a los que accede e
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

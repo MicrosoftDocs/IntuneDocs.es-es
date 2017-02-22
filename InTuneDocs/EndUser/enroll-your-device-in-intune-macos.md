@@ -13,19 +13,20 @@ ms.technology:
 ms.assetid: 58eb0e7a-1321-4c66-a281-88fb01e72c1c
 searchScope:
 - Company Portal
-ROBOTS: 
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 70b11804b6b96e76b43cc450ac4c433fb31be6f8
+ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
+ms.openlocfilehash: 60879acf553934d246c662060e3d57ec50c51658
 
 
 ---
 
 # <a name="enroll-your-macos-device-in-intune"></a>Inscribir un dispositivo macOS en Intune
 
-Puede obtener acceso a las aplicaciones, los datos y los recursos de su organización que necesita para hacer su trabajo. Si usa un dispositivo macOS en el trabajo, esto implica instalar un __perfil de administración__. Se trata simplemente de un archivo que instala su administrador de TI que carga la configuración y la información de acceso en su Mac. ¿Quiere saber más? Descubra [qué ocurre si instala la aplicación del Portal de empresa e inscribe el dispositivo en Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
+Puede obtener acceso a las aplicaciones, los datos y los recursos de su organización que necesita para hacer su trabajo. Si usa un dispositivo macOS en el trabajo, esto implica instalar un __perfil de administración__. Se trata simplemente de un archivo que instala su administrador de TI que carga la configuración y la información de acceso en su Mac. ¿Quiere obtener más información? Descubra [qué ocurre si instala la aplicación del Portal de empresa e inscribe el dispositivo en Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
   > [!NOTE]
   > Si lo que intenta inscribir es un dispositivo iOS, como un iPhone o un iPad, [pruebe en su lugar con estas instrucciones](enroll-your-device-in-intune-ios.md).
@@ -66,6 +67,6 @@ Puede obtener acceso a las aplicaciones, los datos y los recursos de su organiza
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

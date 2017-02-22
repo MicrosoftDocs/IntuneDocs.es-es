@@ -1,11 +1,11 @@
 ---
-title: Requisitos previos | Microsoft Docs
-description: "Vínculos a requisitos previos y requisitos de Intune"
+title: Dispositivos admitidos - Microsoft Intune | Microsoft Docs
+description: "Se muestran las plataformas y los exploradores de dispositivo admitidos para la administración de dispositivos de Intune."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 01/10/2017
+ms.date: 02/07/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,19 @@ ms.technology:
 ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a567d55141c4510a5c81861df1522f118104de61
-ms.openlocfilehash: 900b3a9bcc9ce58cd165b14592c850b50739a33a
+ms.sourcegitcommit: b3732d0c6461f9fb8462ae5584055204d597aae0
+ms.openlocfilehash: 0af4f49713a65900079d69a09f20d210797c935c
 
 
 ---
 
-# <a name="prerequisites-to-getting-started-with-intune"></a>Requisitos previos para empezar a trabajar con Intune
+# <a name="supported-devices-and-browsers"></a>Exploradores y dispositivos admitidos
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+Este artículo va dirigido a administradores del sistema que son responsables de la administración de dispositivos en la empresa. Para obtener ayuda para la instalación de Intune en el teléfono, consulte el [uso de dispositivos administrados para realizar el trabajo](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions).
 
 Antes de empezar a configurar Microsoft Intune, revise los siguientes requisitos:
 
@@ -43,7 +46,7 @@ La administración de dispositivos de Intune proporciona [estas funcionalidades]
 
 ### <a name="windows-pc-software-client"></a>Cliente de software de PC Windows
 
-Un [cliente de software Intune](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) se puede implementar e instalar en PC Windows como método de inscripción alternativo. Puede usar el cliente de software Intune para administrar equipos con Windows 7 y versiones posteriores. La administración de equipos con el software cliente proporciona [estas capacidades](windows-pc-management-capabilities-in-microsoft-intune.md).
+Un [cliente de software Intune](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune) se puede implementar e instalar en PC Windows como método de inscripción alternativo. Puede usar el cliente de software de Intune para administrar equipos con Windows 7 y versiones posteriores, con la excepción de Windows 10 Home Edition. La administración de equipos con el software cliente proporciona [estas capacidades](windows-pc-management-capabilities-in-microsoft-intune.md).
 
 ### <a name="exchange-activesync-management"></a>Administración de Exchange ActiveSync
 
@@ -74,6 +77,6 @@ Solo los usuarios con permisos de administrador de servicios o que sean administ
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

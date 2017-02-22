@@ -5,17 +5,17 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 09/30/2016
+ms.date: 01/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
-ms.reviewer: andcerat
+ms.reviewer: maxles
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: d80f548f0c1382e1bd024bd31078d2a4e6366656
-ms.openlocfilehash: a2130fa76f66528f6e77c720bc93286e0d01aba2
+ms.sourcegitcommit: 136c0ea7c9c43afc589ce5aaa03978a0818e8e7e
+ms.openlocfilehash: ff8394bbceb21668e60b1ec27ffc0be5308ca6cd
 
 
 ---
@@ -51,14 +51,29 @@ Existen dos categorías de configuración de directiva: configuración de acceso
 
 | Configuración | Cómo se usa | Valor predeterminado |
 |------|------|------|
-| **Requerir PIN para acceder** | Pulse **Sí** para requerir un PIN para usar esta aplicación. Se pedirá al usuario que configure este PIN la primera vez que ejecute la aplicación en un contexto profesional o educativo. Valor predeterminado = **Sí**.<br><br> Configure las siguientes opciones para la intensidad del PIN: <ul><li>**Número de intentos antes del restablecimiento del PIN**: especifique el número de veces que el usuario tiene que escribir correctamente el PIN antes de que deba restablecerlo. Valor predeterminado = **5**.</li><li> **Permitir el PIN simple**: pulse **Sí** para permitir que los usuarios usen secuencias de PIN simples como 1234 o 1111. Pulse **No** para impedir que usen secuencias simples. Valor predeterminado = **Sí**. </li><li> **Longitud de PIN**: especifique el número mínimo de dígitos en una secuencia de PIN. Valor predeterminado = **4**. </li><li> **Permitir desbloqueo mediante huellas digitales en lugar de mediante PIN (iOS 8.0+)**: pulse **Sí** para permitir que el usuario use [Touch ID](https://support.apple.com/en-us/HT201371) en lugar de un PIN para el acceso a la aplicación. Valor predeterminado = **Sí**.<br><br> En dispositivos iOS, puede permitir que el usuario demuestre su identidad con [Touch ID](https://support.apple.com/en-us/HT201371) en lugar de con un PIN. Cuando el usuario intenta usar esta aplicación con su cuenta profesional o educativa, se le solicita que indique su identidad mediante huella digital en lugar de escribir un PIN. </li></ul>| Requerir PIN: Sí <br><br> Intentos de restablecimiento del PIN: 5 <br><br> Permitir PIN simple: Sí <br><br> Longitud de PIN: 4 <br><br> Permitir huella digital: Sí |
+| **Requerir PIN para acceder** | Pulse **Sí** para requerir un PIN para usar esta aplicación. Se pedirá al usuario que configure este PIN la primera vez que ejecute la aplicación en un contexto profesional o educativo. Valor predeterminado = **Sí**.<br><br> Configure las siguientes opciones para la intensidad del PIN: <ul><li>**Número de intentos antes del restablecimiento del PIN**: especifique el número de veces que el usuario tiene que escribir correctamente el PIN antes de que deba restablecerlo. Valor predeterminado = **5**.</li><li> **Permitir el PIN simple**: pulse **Sí** para permitir que los usuarios usen secuencias de PIN simples como 1234 o 1111. Pulse **No** para impedir que usen secuencias simples. Valor predeterminado = **Sí**. </li><li> **Longitud del PIN**: especifique el número mínimo de dígitos en una secuencia de PIN. Valor predeterminado = **4**. </li><li> **Permitir desbloqueo mediante huellas digitales en lugar de mediante PIN (iOS 8.0+)**: pulse **Sí** para permitir que el usuario use [Touch ID](https://support.apple.com/en-us/HT201371) en lugar de un PIN para el acceso a la aplicación. Valor predeterminado = **Sí**.<br><br> En dispositivos iOS, puede permitir que el usuario demuestre su identidad con [Touch ID](https://support.apple.com/en-us/HT201371) en lugar de con un PIN. Cuando el usuario intenta usar esta aplicación con su cuenta profesional o educativa, se le solicita que indique su identidad mediante huella digital en lugar de escribir un PIN. Cuando esta opción está habilitada, la imagen de vista previa de las últimas aplicaciones estará borrosa mientras use una cuenta profesional o educativa. </li></ul>| Requerir PIN: Sí <br><br> Intentos de restablecimiento del PIN: 5 <br><br> Permitir PIN simple: Sí <br><br> Longitud del PIN: 4 <br><br> Permitir huella digital: Sí |
 | **Requerir credenciales corporativas en acceso** | Pulse **Sí** para requerir que el usuario inicie sesión con su cuenta profesional o educativa en lugar de escribir un PIN para el acceso a la aplicación. Si se establece en **Sí**, se reemplazarán los requisitos de introducción de un PIN o un Touch ID.  | No |
 | **Bloquear la ejecución de aplicaciones administradas en dispositivos descodificados o descifrados** |  Pulse **Sí** para impedir que esta aplicación se ejecute en dispositivos descodificados o descifrados. El usuario seguirá siendo capaz de usar esta aplicación para las tareas personales, pero tendrá que usar un dispositivo distinto para tener acceso a los datos profesionales o educativos de esta aplicación. | Sí |
-| **Volver a comprobar los requisitos de acceso después de (minutos)** | Configure las siguientes opciones: <ul><li>**Tiempo de espera**: especifique el tiempo (en minutos) que debe transcurrir antes de que se vuelvan a comprobar los requisitos de acceso de la aplicación. Valor predeterminado = **30** minutos.</li><li>**Período de gracia sin conexión**: si el dispositivo está desconectado, especifique el tiempo (en minutos) que debe transcurrir antes de que se vuelvan a comprobar los requisitos de acceso de la aplicación. Valor predeterminado = **720** minutos (12 horas).</li></ul>| Tiempo de espera: 30 <br><br> Sin conexión: 720 |
-| **Intervalo sin conexión antes de que se borren los datos de la aplicación (días)** | Los datos profesionales o educativos de esta aplicación pueden borrarse si un dispositivo ha estado sin conexión durante más de un período determinado. Especifique el número de días que un dispositivo puede estar sin conexión antes de que se eliminen los datos profesionales o educativos del dispositivo. <br><br> | 90 días |
+| **Volver a comprobar los requisitos de acceso después de (minutos)** | Configure las siguientes opciones: <ul><li>**Tiempo de espera**: es el número de minutos antes de que se vuelvan a comprobar los requisitos de acceso (definidos anteriormente en la directiva). Por ejemplo, un administrador activa el PIN en la directiva, un usuario abre una aplicación MAM y debe escribir un PIN. Cuando se usa esta opción, el usuario no tendría que escribir un PIN en ninguna aplicación MAM durante **30 minutos** (valor predeterminado).</li><li>**Período de gracia sin conexión**: es el número de minutos que las aplicaciones MAM pueden ejecutarse sin conexión, especifique el tiempo (en minutos) que debe transcurrir antes de que se vuelvan a comprobar los requisitos de acceso de la aplicación. Valor predeterminado = **720** minutos (12 horas). Una vez transcurrido este período, la aplicación requerirá la autenticación de usuario en AAD para poder seguir ejecutándose.</li></ul>| Tiempo de espera: 30 <br><br> Sin conexión: 720 |
+| **Intervalo sin conexión antes de que se borren los datos de la aplicación (días)** | Después de este número de días (definido por el administrador) de ejecución sin conexión, la propia aplicación realizará un borrado selectivo. Este borrado selectivo es el mismo que el que puede iniciar el administrador en el flujo de trabajo de borrado MAM. <br><br> | 90 días |
+
+##  <a name="add-ins-for-outlook-app"></a>Complementos para la aplicación Outlook
+
+Outlook ha incorporado recientemente complementos de Outlook para iOS que le permiten integrar aplicaciones conocidas con el cliente de correo electrónico. Los complementos para Outlook están disponibles en la plataforma web y en Windows, Mac y Outlook para iOS. Dado que los complementos se administran mediante Microsoft Exchange, los usuarios podrán compartir datos y mensajes entre Outlook y aplicaciones de complementos sin administrar a no ser que en Exchange los complementos estén desactivado para el usuario.
+
+Si quiere que los usuarios finales dejen de acceder a complementos de Outlook e instalarlos (esto afecta a todos los clientes de Outlook), asegúrese de que existen los siguientes cambios en los roles en el centro de administración de Exchange:
+
+- Para evitar que los usuarios instalen complementos de la Tienda Office, quíteles el rol Mi Marketplace.
+- Para evitar que los usuarios carguen complementos, quíteles el rol Mis aplicaciones personalizadas.
+- Para evitar que los usuarios instalen todos los complementos, quíteles los roles Mis aplicaciones personalizadas y Mi Marketplace.
+
+Estas instrucciones se aplican a Office 365, Exchange 2016, Exchange 2013 a través de Outlook en la web, Windows, Mac y dispositivos móviles.
+
+- Más información sobre [complementos para Outlook](https://technet.microsoft.com/library/jj943753(v=exchg.150).aspx).
+- Aprenda [cómo especificar los administradores y los usuarios que pueden instalar y administrar complementos para la aplicación Outlook](https://technet.microsoft.com/library/jj943754(v=exchg.150).aspx).
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO1-->
 
 

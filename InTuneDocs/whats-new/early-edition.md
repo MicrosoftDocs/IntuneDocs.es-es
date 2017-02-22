@@ -1,11 +1,11 @@
 ---
-title: "La edición anticipada | Microsoft Docs"
+title: "Edición anticipada | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/21/2016
+ms.date: 02/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 18d47678b0fbdbd98502f2d3b469b202b567b2e7
-ms.openlocfilehash: 3c7edc236878232c6f4c0ae993733c967946e765
+ms.sourcegitcommit: 68c7a23dc8769330c14f74e6aebb07eeb188a991
+ms.openlocfilehash: 4bc9a2799bcce035c6847b7b2884ee24160426da
 
 
 ---
 
-# <a name="the-early-edition-for-microsoft-intune---january"></a>La edición anticipada de Microsoft Intune: enero
+
+# <a name="the-early-edition-for-microsoft-intune---february-2017"></a>La edición anticipada de Microsoft Intune: febrero de 2017
 
 La **edición anticipada** proporciona una lista de características que se incluirán en las próximas versiones de Microsoft Intune. Esta información se proporciona conforme al NDA en una base extremadamente limitada y está vinculada a cambios. Algunas de las características enumeradas aquí corren el riesgo de no cumplir las fechas límite y pueden retrasarse hasta una versión futura. Otras características se están probando en una prueba piloto (distribución de paquetes piloto) para asegurarse de que están preparadas para el cliente. Póngase en contacto con su persona conocida de Intune/PM si tiene alguna pregunta o problema.
 
@@ -32,48 +33,38 @@ Esta página se actualiza periódicamente. Compruebe si hay actualizaciones adic
 
 ## <a name="new-capabilities"></a>Nuevas funcionalidades
 
-### <a name="actions-for-non-compliance---730266--"></a>Acciones en caso de incumplimiento <!--730266-->
-_Acciones en caso de incumplimiento_ es una nueva característica de directivas de cumplimiento que le permite realizar acciones en dispositivos no compatibles. Puede especificar una o varias acciones y especificar el período de tiempo en el que se deben producir esas acciones. Por ejemplo, puede notificar a los usuarios de dispositivos no compatibles inmediatamente después de que el dispositivo se convierta en no compatible mediante el correo electrónico, o puede impedir que los dispositivos no compatibles tengan acceso a los recursos corporativos después de un período de gracia de 3 días mediante el acceso condicional.
+### <a name="modernizing-the-company-portal-website---753980--"></a>Renovación del sitio web del portal de empresa<!--753980-->
+El sitio web del portal de empresa admitirá aplicaciones destinadas a aquellos usuarios que no tienen dispositivos administrados. El sitio web se alineará con otros productos y servicios de Microsoft mediante una nueva combinación de colores de contraste, ilustraciones dinámicas y un "menú hamburguesa", ![pequeña imagen del menú hamburguesa que se agrega ahora a la esquina superior izquierda del sitio web del portal de empresa](./media/CP_hamburger_menu.png) que contendrá los detalles de contacto del departamento de soporte técnico e información sobre los dispositivos administrados existentes. La página de inicio se reorganizará para destacar las aplicaciones que están disponibles para los usuarios, con carruseles para aplicaciones destacadas y actualizadas recientemente. Puede encontrar imágenes de antes y después disponibles en la [página de actualizaciones de la interfaz de usuario](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui).
 
-### <a name="in-console-reports-for-mam-without-enrollment---677961--"></a>Informes en la consola para MAM sin inscripción <!--677961-->
-Se han agregado nuevos informes de protección de aplicaciones para los dispositivos inscritos y no inscritos. Obtenga más información sobre cómo puede [supervisar directivas de administración de aplicaciones móviles con Microsoft Intune aquí](https://docs.microsoft.com/en-us/intune/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune).
+### <a name="new-guided-experience-for-windows-10-company-portal---713927--"></a>Nueva experiencia guiada del Portal de empresa de Windows 10<!--713927-->
+A partir de marzo, el Portal de empresa para Windows 10 incluirá la experiencia de un tutorial de Intune guiado para dispositivos que no se han identificado ni inscrito. La nueva experiencia proporciona instrucciones paso a paso, personalizadas para la compilación de Windows 10 del usuario, que guían a los usuarios por la realización del registro en AAD (necesario para la identificación de las características de acceso condicional) y la inscripción de MDM (necesaria para características de administración de dispositivos). La experiencia guiada será accesible desde la página principal del Portal de empresa y es opcional; los usuarios pueden seguir usando la aplicación aunque no realicen la inscripción ni el registro, pero puede que experimenten funcionalidad limitada.
 
-### <a name="conditional-access-for-mam-with-sharepoint-online---679339--"></a>Acceso condicional para MAM con SharePoint Online<!--679339-->
-Puede impedir que las aplicaciones que no son compatibles con las directivas de administración de aplicaciones móviles (MAM) de Intune accedan a SharePoint Online.  Puede comenzar a usar la administración de aplicaciones móviles de Intune mediante el portal de Azure. Busque la sección __Acceso condicional__ en la hoja __Configuración__ que incluirá la opción para SharePoint Online. Esta característica se distribuirá aparte del resto de la versión del servicio. <!--Find out more about this new feature [here](https://docs.microsoft.com/intune/deploy-use/mam-ca-for-sharepoint-online).-->
-
-### <a name="android-711-support---694397--"></a>Compatibilidad con Android 7.1.1 <!--694397-->
-Ahora, Intune admite y administra completamente Android 7.1.1.
+###
 
 ## <a name="notices"></a>Notificaciones
 
-### <a name="defaulting-to-managing-windows-desktop-devices-through-windows-settings---663050--"></a>Restablecer la administración de dispositivos de escritorio Windows predeterminada mediante la configuración de Windows <!--663050-->
-El comportamiento predeterminado para inscribir equipos de escritorio de Windows 10 está cambiando. Las nuevas inscripciones seguirán el típico flujo de inscripción del agente MDM en lugar del agente de PC.
+### <a name="group-migration-will-not-require-any-updates-to-groups-or-policies-for-ios-devices---898837--"></a>La migración de grupo no requiere actualizaciones a grupos ni directivas para dispositivos iOS <!--898837-->
+Para cada grupo de dispositivos de Intune previamente asignado mediante un perfil de inscripción de dispositivos corporativos, se creará un grupo de dispositivos dinámico correspondiente en AAD según el nombre del perfil de inscripción de dispositivos corporativos, durante la migración a grupos de dispositivos de Azure Active Directory. Esto garantizará que, según se inscriban dispositivos, estos se agrupen de forma automática y reciban las mismas directivas y aplicaciones que el grupo de Intune original.
 
-El sitio web de portal de empresa proporcionará a los usuarios de escritorio de Windows 10 las instrucciones de inscripción que les guiarán a través del proceso de agregar equipos de escritorio de Windows 10 como dispositivos móviles. Esto no afectará a los PC inscritos en estos momentos, y su organización todavía puede administrar equipos de escritorio de Windows 10 con el agente de PC [si lo prefiere](https://docs.microsoft.com/en-us/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune).
+Una vez que un inquilino empieza el proceso de migración para agrupar y seleccionar el destino, Intune creará de forma automática un grupo dinámico de AAD para que se corresponda con un grupo de Intune destinado mediante un perfil de inscripción de dispositivos corporativos. Si el administrador de Intune elimina el grupo de destino de Intune, no se eliminará el grupo de AAD dinámico correspondiente. Se borrarán los miembros del grupo y la consulta dinámica, pero el propio grupo permanecerá hasta que el administrador de TI lo quite a través del portal de AAD.
 
-### <a name="company-portal-for-ios-links-open-inside-the-app---665954--"></a>Los vínculos de portal de empresa para iOS se abren dentro de la aplicación <!--665954-->
-Los vínculos dentro de la aplicación de portal de empresa para iOS, incluidos los de documentación y aplicaciones, se abrirán directamente en la aplicación de portal de empresa con una vista desde la aplicación de Safari. Esta actualización se enviará por separado desde la actualización del servicio en enero.
+De forma similar, si el administrador de TI cambia qué grupo de Intune es el destino de un perfil de inscripción de dispositivos corporativos, Intune crea un nuevo grupo dinámico que refleje la nueva asignación de perfil, pero no quitará el grupo dinámico creado para la asignación anterior.
 
-### <a name="improving-mobile-app-management-support-for-selective-wipe---581242--"></a>Mejorar la asistencia de la administración de aplicaciones móviles para el borrado selectivo <!--581242-->
-A los usuarios finales se les proporcionarán instrucciones adicionales sobre cómo recuperar el acceso a los datos profesionales o educativos si estos se quitaron automáticamente debido a la directiva "Intervalo sin conexión antes de que se borren los datos de la aplicación".<!--, or the removal of the Intune Company Portal on Android.-->
+### <a name="new-mdm-server-address-for-windows-devices---893007--"></a>Nueva dirección del servidor MDM para dispositivos Windows <!--893007-->
+Se producirá un error en la inscripción del dispositivo si los usuarios de Windows y Windows Phone especifican __manage.microsoft.com__ como la dirección del servidor MDM (si se le pide). La dirección del servidor MDM cambia de __manage.microsoft.com__ a __enrollment.manage.microsoft.com__. Notifique al usuario que use __enrollment.manage.microsoft.com__ como la dirección del servidor MDM si se le pide durante la inscripción de un dispositivo Windows o Windows Phone. Esta actualización necesitará que cualquier CNAME en el DNS que redirija __EnterpriseEnrollment.contoso.com__ a __manage.microsoft.com__ se reemplace por un CNAME en el DNS que redirija __EnterpriseEnrollment.contoso.com__ a __EnterpriseEnrollment-s.manage.microsoft.com__. Para obtener información adicional sobre este cambio, visite [aka.ms/intuneenrollsvrchange](https://aka.ms/intuneenrollsvrchange).
 
-### <a name="new-documentation-for-app-protection-policies---583398--"></a>Nueva documentación para las directivas de protección de aplicaciones <!--583398-->
-Hemos actualizado nuestra documentación para administradores y desarrolladores de aplicaciones que quieran habilitar directivas de protección de aplicaciones (conocidas como directivas de MAM) en sus aplicaciones iOS y Android con la herramienta de ajuste de aplicaciones de Intune o con el SDK para aplicaciones de Intune.
+### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Nueva experiencia del usuario en la aplicación del portal de empresa para Android <!--621622-->
+A partir de marzo, la aplicación del portal de empresa para Android seguirá las [directrices de Material Design](https://material.io/guidelines/material-design/introduction.html) para crear una apariencia más moderna. Esta experiencia del usuario mejorada incluye:
 
-Se han actualizado los siguientes artículos:
+* __Colores__: los encabezados de pestaña pueden colorearse según la paleta de colores personalizada.
+* __Interfaz__: los botones Aplicaciones destacadas y Todas las aplicaciones se han actualizado en la pestaña Aplicaciones. El botón Buscar ahora es un botón de acción flotante.
+* __Navegación__: Todas las aplicaciones muestra una vista con pestañas de Destacadas, Todas y Categorías para navegar más fácilmente.
+* __Servicio__: las pestañas Mis dispositivos y Contactar con TI han mejorado la legibilidad.
 
-* [Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles mediante Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune)
-* [Preparar aplicaciones iOS para la administración de aplicaciones móviles con la Herramienta de ajuste de aplicaciones de Intune](https://docs.microsoft.com/intune/deploy-use/prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool)
-* [Introducción al SDK para aplicaciones de Microsoft Intune](https://docs.microsoft.com/intune/develop/intune-app-sdk-get-started)
-* [Guía para desarrolladores sobre el SDK de aplicaciones de Intune para iOS](https://docs.microsoft.com/intune/develop/intune-app-sdk-ios)
+Puede encontrar imágenes de antes y después en la [página de actualizaciones de la interfaz de usuario](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui).
 
-Se han agregado los siguientes artículos nuevos a la biblioteca de documentos:
-
-* [Complemento Cordova del SDK para aplicaciones de Intune](https://docs.microsoft.com/intune/develop/intune-app-sdk-cordova)
-* [Componente Xamarin del SDK para aplicaciones de Intune](https://docs.microsoft.com/intune/develop/intune-app-sdk-xamarin)
-
-### <a name="progress-bar-when-launching-the-company-portal-on-ios---665978--"></a>Barra de progreso cuando se inicia el portal de empresa en iOS <!--665978-->
-El portal de empresa para iOS presenta una barra de progreso en la pantalla de inicio para proporcionar información al usuario sobre los procesos de carga que se producen. Habrá una implementación por fases de la barra de progreso para reemplazar el control de número. Esto significa que algunos usuarios verán la nueva barra de progreso y otros seguirán viendo el control de número.
+### <a name="associate-multiple-management-tools-with-the-windows-store-for-business---926135--"></a>Asociación de varias herramientas de administración con la Tienda Windows para empresas<!--926135-->
+Si usa más de una herramienta de administración para implementar las aplicaciones de la Tienda Windows para empresas, anteriormente solo podía asociar una de ellas con la Tienda Windows para empresas. Ahora puede asociar varias herramientas de administración con la tienda, por ejemplo, Intune y Configuration Manager. Para más información, consulte [Administrar las aplicaciones adquiridas a través de la Tienda Windows para empresas con Microsoft Intune](https://docs.microsoft.com/en-us/intune/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune#associate-your-windows-store-for-business-account-with-intune).
 
 ## <a name="public-preview-of-the-new-intune-admin-experience-on-azure---736542--"></a>Versión preliminar pública de la nueva experiencia de administración de Intune en Azure <!--736542-->
 
@@ -84,6 +75,29 @@ Nuevos inquilinos de prueba comenzarán a ver la versión preliminar pública de
 La experiencia de administración del portal de Azure usará la nueva funcionalidad de agrupación y selección de destino ya anunciada; cuando se migre su inquilino existente a la nueva experiencia de agrupación también se migrará a la versión preliminar la nueva experiencia de administración en el inquilino. Mientras tanto, si quiere probar o examinar alguna de las nuevas características hasta que se migre su inquilino, regístrese para obtener una nueva cuenta de prueba de Intune o revise la [nueva documentación](https://docs.microsoft.com/en-us/intune-azure/introduction/what-is-microsoft-intune).
 
 Si tiene alguna pregunta sobre la programación de la migración de su inquilino, póngase en contacto con nuestro equipo de migración en [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
+
+### <a name="february-2017"></a>Febrero de 2017
+
+#### <a name="ability-to-restrict-mobile-device-enrollment---747600-795782--"></a>Capacidad para restringir la inscripción de dispositivos móviles <!--747600, 795782-->
+Intune está agregando nuevas restricciones de inscripción que controlan qué plataformas de dispositivos móviles pueden inscribir. Intune separa las plataformas de dispositivos móviles como iOS, Mac OS, Android, Windows y Windows Mobile.
+
+* La restricción la inscripción de dispositivos móviles no restringe la inscripción del cliente de PC.  
+* Solo para iOS y Android, hay una opción adicional para bloquear la inscripción de dispositivos de propiedad personal.
+
+Intune marca todos los dispositivos nuevos como personal a menos que el administrador de TI tome la medida de marcarlos como propiedad de la empresa, como se explica en [este artículo](https://docs.microsoft.com/en-us/intune/deploy-use/manage-corporate-owned-devices).
+
+#### <a name="view-all-actions-on-managed-devices---677150--"></a>Ver todas las acciones en los dispositivos administrados <!--677150-->
+Un nuevo informe __Acciones de dispositivo__ muestra quién ha realizado acciones remotas como el restablecimiento de fábrica en dispositivos y, además, muestra el estado de esa acción.
+
+#### <a name="non-managed-devices-can-access-assigned-apps---664691--"></a>Los dispositivos no administrados puedan acceder a aplicaciones asignadas <!--664691-->
+Como parte de los cambios de diseño en el sitio web del portal de empresa, los usuarios de iOS y Android podrán instalar aplicaciones asignadas a ellos como "disponibles sin inscripción" en sus dispositivos no administrados. Con sus credenciales de Intune, los usuarios podrán iniciar sesión en el sitio web del portal de empresa y ver la lista de aplicaciones asignadas. Los paquetes de aplicación de las aplicaciones "disponibles sin inscripción" se encuentran disponibles para descargar a través del sitio web del portal de empresa. Las aplicaciones que requieren la inscripción para la instalación no se ven afectadas por este cambio, ya que se les pedirá a los usuarios que inscriban su dispositivo si quieren instalar esas aplicaciones.
+
+#### <a name="custom-app-categories---748805--"></a>Categorías de aplicaciones personalizadas <!--748805-->
+Ahora puede crear, editar y asignar categorías a las aplicaciones que agregue a Intune. En estos momentos, las categorías solo pueden especificarse en inglés.
+Consulte [How to add an app to Intune](/intune-azure/manage-apps/add-apps) (Cómo agregar una aplicación a Intune).
+
+#### <a name="display-device-categories---814654--"></a>Mostrar categorías de dispositivos <!--814654-->
+Ahora puede ver la categoría del dispositivo como una columna en la lista de dispositivos. También puede editar la categoría desde la sección de propiedades de la hoja de propiedades del dispositivo.
 
 ### <a name="january-2017"></a>Enero de 2017
 
@@ -103,6 +117,6 @@ Consulte [Novedades de Microsoft Intune](whats-new-in-microsoft-intune.md) para 
 
 
 
-<!--HONumber=Dec16_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

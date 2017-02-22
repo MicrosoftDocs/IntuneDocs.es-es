@@ -13,11 +13,12 @@ ms.technology:
 ms.assetid: d217ddcf-4908-4047-97a1-716bd433a13c
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 850a85e724a15859d925bd466171212c75d91691
+ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
+ms.openlocfilehash: 7696deb59bae37bb424ae3e659a67f3d3f91ace7
 
 
 ---
@@ -25,7 +26,7 @@ ms.openlocfilehash: 850a85e724a15859d925bd466171212c75d91691
 
 # <a name="enroll-your-windows-device-in-intune"></a>Inscriba el dispositivo Windows en Intune
 
-Si su empresa o centro educativo usa Microsoft Intune, puede inscribir un dispositivo Windows para obtener acceso al correo electrónico, a los archivos y a otros recursos de la empresa. Cuando se inscriben los dispositivos, la organización puede tener protegidos los datos corporativos. Para más información sobre la inscripción, vea [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) (¿Qué ocurre cuando se instala la aplicación de portal de empresa y se inscribe el dispositivo en Intune?) y [What your IT administrator can and can't see on your device](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) (¿Qué puede ver y no ver el administrador de TI en el dispositivo?).
+Si su empresa o centro educativo usa Microsoft Intune, puede inscribir un dispositivo Windows para obtener acceso al correo electrónico, a los archivos y a otros recursos de la empresa. Cuando se inscriben los dispositivos, la organización puede tener protegidos los datos corporativos. Para más información sobre la inscripción, consulte [¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo iOS o macOS en Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) y [What your IT administrator can and can't see on your device](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) (¿Qué puede y no puede ver el administrador de TI en el dispositivo?).
 
 Para inscribirse, use el vínculo que corresponda al dispositivo que está usando:
 
@@ -35,6 +36,6 @@ Para inscribirse, use el vínculo que corresponda al dispositivo que está usand
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

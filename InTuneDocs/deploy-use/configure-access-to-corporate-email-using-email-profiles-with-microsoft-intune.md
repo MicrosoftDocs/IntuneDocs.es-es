@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 519d3f475e158391b08ab4e51f9410b7bdefcd4c
+ms.sourcegitcommit: 3ee87c8f6104b06c8a9492566ff160540624f17e
+ms.openlocfilehash: 8f35cf70d0c97afc88eba38b1eaff5e2e38425d0
 
 
 ---
@@ -33,11 +34,11 @@ Si necesita tomar medidas adicionales para la prevención de pérdida de datos, 
 Los usuarios o los administradores de TI también pueden optar por instalar otros clientes de correo electrónico (por ejemplo, Microsoft Outlook para Android o iOS). Puede que estos clientes de correo electrónico no admitan perfiles de correo y no puedan configurarse mediante perfiles de correo electrónico de Intune.  
 
 Puede usar perfiles de correo electrónico para configurar el cliente de correo nativo en los siguientes tipos de dispositivo:
--   Windows Phone 8.1 y versiones posteriores
--   Windows 10 (para el escritorio), Windows 10 Mobile y versiones posteriores
--   iOS 8.0 y versiones posteriores
--   Samsung KNOX Standard (4.0 y posterior)
--   Android for Work
+-    Windows Phone 8.1 y versiones posteriores
+-    Windows 10 (para el escritorio), Windows 10 Mobile y versiones posteriores
+-    iOS 8.0 y versiones posteriores
+-    Samsung KNOX Standard (4.0 y posterior)
+-    Android for Work
 
 >[!NOTE]
 >Intune proporciona dos perfiles de correo electrónico de Android for Work, uno para cada una de las aplicaciones de correo electrónico de Gmail y de Nine Work. Estas aplicaciones están disponibles en Google Play Store y admiten conexiones a Exchange. Para habilitar la conectividad de correo electrónico, implemente una de estas aplicaciones de correo electrónico en los dispositivos de los usuarios y, después, cree e implemente el perfil adecuado.
@@ -88,7 +89,7 @@ La contraseña no está incluida en el perfil de correo electrónico, por lo que
 
     -   **Perfil de correo electrónico (Android for Work - Gmail)**
 
-    -   **Perfil de correo electrónico (Android for Work - Nine Work)**
+    -    **Perfil de correo electrónico (Android for Work - Nine Work)**
 
     Solo puede crear e implementar una directiva de perfiles de correo electrónico personalizada. La configuración recomendada no está disponible.
 
@@ -134,10 +135,10 @@ En el área de trabajo **Directiva** de la página **General** , un resumen de e
 
 > [!NOTE]
 > - En el caso de Android for Work, asegúrese de que también implementa las aplicaciones Gmail o Nine Work, además del perfil de correo electrónico adecuado.
-> - Si desea quitar un perfil de correo electrónico de un dispositivo, edite la implementación y quite los grupos de los que sea miembro el dispositivo.
+> - Si desea quitar un perfil de correo electrónico de un dispositivo, edite la implementación y quite los grupos de los que sea miembro el dispositivo. Tenga en cuenta que un perfil de correo electrónico no se puede quitar de esta manera, si es el único perfil de correo electrónico en un dispositivo.
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

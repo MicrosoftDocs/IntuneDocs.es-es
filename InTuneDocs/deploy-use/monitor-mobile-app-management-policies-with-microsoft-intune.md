@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 02/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,14 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: fe44466fbcef67d02b16d3d2d335f657251451d3
-ms.openlocfilehash: e60d707833ee276971000411e50564f39b41b207
+ms.sourcegitcommit: 22c30f51bf83219053f97310ed1830ad9e01acd8
+ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
 
 
 ---
 
 # <a name="monitor-mobile-app-management-policies-with-microsoft-intune"></a>Supervisión de directivas de administración de aplicaciones móviles con Microsoft Intune
-Puede supervisar el estado de cumplimiento de las directivas de administración de aplicaciones móviles (MAM) que haya aplicado a los usuarios en la hoja de protección de aplicaciones de Intune en [Azure Portal](https://portal.azure.com). Podrá encontrar información sobre los usuarios afectados por las directivas MAM, el estado de cumplimiento y cualquier problema que puedan estar experimentando los usuarios finales.
+Puede supervisar el estado de cumplimiento de las directivas de administración de aplicaciones móviles (MAM) que haya aplicado a los usuarios. Podrá encontrar información sobre los usuarios afectados por las directivas MAM, el estado de cumplimiento y cualquier problema que puedan estar experimentando los usuarios finales.
 
 Hay tres lugares diferentes para supervisar el estado de cumplimiento:
 
@@ -36,7 +36,7 @@ Hay tres lugares diferentes para supervisar el estado de cumplimiento:
 Siga estos tres pasos para abrir la vista de resumen:
 
 1. Vaya a [Azure Portal](https://portal.azure.com) y especifique sus credenciales.
-2. Elija **Más servicios** y escriba "Intune".
+2. Elija **More Services** (Más servicios) y escriba **Intune** en el cuadro de texto de filtro.
 3. Elija **Protección de aplicaciones de Intune**.
 
 En la hoja **Administración de aplicaciones móviles de Intune**, puede ver un resumen del estado de cumplimiento:
@@ -89,13 +89,11 @@ La vista detallada muestra el mensaje de error, la aplicación a la que se obtuv
 
 Puede encontrar los mismos informes en la vista detallada e informes adicionales que le ayudarán en el estado de cumplimiento de la directiva MAM:
 
-![Captura de pantalla 4](../media/MAM-reporting-7.png)
+![Captura de pantalla&4;](../media/MAM-reporting-7.png)
 
 -   **Informe de usuario de protección de aplicaciones:** describe la misma información que puede encontrar en el informe **Estado usuario** en la sección de vista detallada anterior.
 
 -   **Informe de aplicación de protección de aplicaciones:** ofrece dos estados de protección de aplicaciones diferentes que los administradores pueden seleccionar antes de generar el informe. Los estados pueden estar protegidos o desprotegidos.
-
-    ![Captura de pantalla de 1](../media/MAM-reporting-1.png)
 
     -   Estado de usuario para la actividad de MAM administrada (protegido): este informe resume la actividad de cada aplicación MAM administrada por el usuario.
 
@@ -107,7 +105,28 @@ Puede encontrar los mismos informes en la vista detallada e informes adicionales
 
         -   Todas las aplicaciones están registradas, pero no reciben ninguna directiva MAM.
 
-![Captura de pantalla 2](../media/MAM-reporting-4.png)
+![Captura de pantalla&2;](../media/MAM-reporting-4.png)
+
+## <a name="table-grouping"></a>Agrupación de tablas
+
+Cuando se muestren los datos del **informe de usuario de protección de aplicaciones**, puede agregar datos de las siguientes maneras:
+
+- **Resultado de la validación:** los datos aparecen agrupados por estado de protección de la aplicación, que puede ser error, advertencia o correcto.
+- **Nombre de la aplicación:** los datos aparecen agrupados por aplicaciones (el nombre de aplicación real) con error, advertencia o correcto.
+
+## <a name="export-app-protection-activities-to-csv"></a>Exportación de actividades de protección de aplicaciones a CSV
+
+Puede exportar todas las actividades de directiva de protección de aplicaciones a un archivo .csv único. Esto puede resultar útil para analizar todos los estados de protección de aplicaciones notificados por los usuarios.
+
+Siga estos pasos para generar el informe de protección de aplicaciones:
+
+1. En la hoja de administración de aplicaciones móviles de Intune, elija el informe de protección de aplicaciones.
+
+    ![Captura de pantalla&6;](../media/app-protection-report-csv-2.png)
+
+2. Elija Sí para guardar el informe, elija Guardar como y seleccione la carpeta en la que quiere guardar el informe.
+
+    ![Captura de pantalla&7;](../media/app-protection-report-csv-1.png)
 
 ## <a name="see-also"></a>Consulte también
 [Administrar la transferencia de datos entre aplicaciones iOS](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
@@ -117,6 +136,6 @@ Puede encontrar los mismos informes en la vista detallada e informes adicionales
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 
