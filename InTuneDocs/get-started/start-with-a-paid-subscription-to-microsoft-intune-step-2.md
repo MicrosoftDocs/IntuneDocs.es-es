@@ -1,11 +1,11 @@
 ---
 title: Configurar un nombre de dominio personalizado | Microsoft Docs
-description: "Agregar un nombre de dominio personalizado para su suscripción de Intune"
+description: "Agregue un nombre de dominio personalizado para su suscripción de Intune."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: e51746bbd114476e394c44f813fb8cb329879172
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: 7e921e3f92b0c9b94e4fdc387513ab5c1627817a
 
 
 ---
@@ -25,6 +26,7 @@ ms.openlocfilehash: e51746bbd114476e394c44f813fb8cb329879172
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
+En este tema se explica a los administradores cómo pueden crear un CNAME de DNS para simplificar y personalizar su experiencia de inicio de sesión.
 
 Cuando su organización se registra en un servicio en la nube de Microsoft como es Intune, se le asigna un nombre de dominio inicial hospedado en Azure Active Directory (AD) que es similar al siguiente: **sudominio.onmicrosoft.com**. En este ejemplo, **sudominio** es el nombre de dominio que eligió al suscribirse y **onmicrosoft.com** es el sufijo asignado a las cuentas que agregue a su suscripción. Si su organización posee un dominio personalizado, puede configurar la instancia de Intune para que use ese dominio en lugar del nombre de dominio proporcionado con la suscripción.
 
@@ -62,6 +64,6 @@ Puede obtener más información [sobre su dominio inicial onmicrosoft.com en Off
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

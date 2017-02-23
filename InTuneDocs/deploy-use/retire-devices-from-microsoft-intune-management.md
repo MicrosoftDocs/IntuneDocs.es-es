@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 12/30/2016
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 3dbec400-5d8a-47be-b892-7745811d9de2
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 464e6d73765a75aaefb3eca95281bf54b4cc7a2d
-ms.openlocfilehash: 2bb4eb56bea4f640fa304c03b0f86b78625fe6a7
+ms.sourcegitcommit: 00e9dfd165a449182c5b937372db7085c981c68f
+ms.openlocfilehash: cca12024ba12cff5cdb8c515f7719a7592ba97ea
 
 
 ---
@@ -24,16 +25,16 @@ ms.openlocfilehash: 2bb4eb56bea4f640fa304c03b0f86b78625fe6a7
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Al final es necesario eliminar un dispositivo administrado de la administración de Intune, tanto si se trata de un dispositivo personal como propiedad de la empresa. 
+Al final es necesario eliminar un dispositivo administrado de la administración de Intune, tanto si se trata de un dispositivo personal como propiedad de la empresa.
 
-Los dispositivos nunca se quitan de Intune sin su intervención, aunque los dispositivos no se hayan conectado al servicio de Intune durante un período de tiempo. 
+Los dispositivos nunca se quitan de Intune sin su intervención, aunque los dispositivos no se hayan conectado al servicio de Intune durante un período de tiempo.
 
 Es posible que tenga que retirar un dispositivo por una serie de motivos:
 
--   El usuario deja una organización de manera planeada (partida "administrada").
--   El usuario la deja repentinamente (se le despide, se va, etc.).
--   Pérdida del dispositivo.
--   Reasignación de un dispositivo (entrega a otro usuario, uso para otro propósito, etc.).
+-    El usuario deja una organización de manera planeada (partida "administrada").
+-    El usuario la deja repentinamente (se le despide, se va, etc.).
+-    Pérdida del dispositivo.
+-    Reasignación de un dispositivo (entrega a otro usuario, uso para otro propósito, etc.).
 
 Puede realizar un borrado selectivo o completo en un dispositivo administrado como dispositivo móvil, o puede bloquearlo y restablecer la contraseña. Si borra el dispositivo, libera la suscripción del usuario para agregar otro dispositivo. También puede retirar los equipos administrados con el software cliente de Intune.
 
@@ -43,6 +44,9 @@ Tanto la eliminación selectiva como la completa quitan el dispositivo de la adm
 El [borrado selectivo](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#selective-wipe) es la acción preferida para los empleados que inscribieron sus propios dispositivos en Intune, porque no afecta a la información personal del dispositivo. Solo se quitan los datos corporativos.
 
 En el caso de los dispositivos que deban reasignarse, también puede usar un [borrado completo](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md#full-wipe), que restablece el dispositivo a la configuración predeterminada de fábrica.
+
+### <a name="removing-user-licenses-and-managed-devices"></a>Quitar licencias de usuario y dispositivos administrados
+Al quitar una licencia de usuario, los dispositivos inscritos de dicho usuario dejan de estar inscritos. Se recomienda usar la eliminación selectiva para eliminar los datos de la empresa de los dispositivos administrados antes de quitar la licencia de Intune de un usuario. Una vez que se quita la licencia de usuario, el dispositivo no puede ser objeto de acciones remotas.
 
 ## <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Eliminar dispositivos en el portal de Azure Active Directory
 
@@ -76,6 +80,6 @@ A veces, es el propio dispositivo el que llega al final del ciclo de vida. En ta
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Feb17_HO2-->
 
 

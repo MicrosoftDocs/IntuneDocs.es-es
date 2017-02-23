@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 02/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: da23e1df3dcda7f90fd592b5a6f5a587c63815f1
+ms.sourcegitcommit: 547330c05b7fbdd2981e49320c913d8109563384
+ms.openlocfilehash: f8f1359ff08b67261b23a694a4f6bbbeca24fa2a
 
 
 ---
@@ -26,6 +27,8 @@ Use la información de este tema para aprender a agregar aplicaciones a Intune a
 
 > [!IMPORTANT]
 > La información de este tema le servirá para agregar aplicaciones para equipos Windows administrados mediante el software cliente de Intune. Si quiere agregar aplicaciones para PC Windows inscritos y otros dispositivos móviles, vea [Agregar aplicaciones para dispositivos móviles en Microsoft Intune](add-apps-for-mobile-devices-in-microsoft-intune.md).
+
+Para instalar aplicaciones en equipos, estas deben poder instalarse automáticamente, sin interacción por parte del usuario. Si no es así, se producirá un error en la instalación.
 
 
 ## <a name="add-the-app"></a>Agregar la aplicación
@@ -40,7 +43,7 @@ En el siguiente procedimiento usará el editor de software de Intune para config
 
     - **Seleccionar el tipo de archivo instalador de software**. Indica el tipo de software que desea implementar. En el caso de un PC Windows, elija **Windows Installer**.
     - **Especificar la ubicación de los archivos de instalación del software**. Escriba la ubicación de los archivos de instalación o elija **Examinar** para seleccionar la ubicación en una lista.
-    - **Incluir archivos y subcarpetas adicionales de la misma carpeta**. Algún software que usa Windows Installer requiere los archivos auxiliares. Normalmente, estos se encuentran en la misma carpeta que los archivos de instalación. Seleccione esta opción si también desea implementar estos archivos auxiliares.
+    - **Incluir archivos y subcarpetas adicionales de la misma carpeta**. Algún software que usa Windows Installer requiere los archivos auxiliares. Estos deben estar ubicados en la misma carpeta que el archivo de instalación. Seleccione esta opción si también desea implementar estos archivos auxiliares.
 
     Por ejemplo, si quiere publicar una aplicación llamada Application.msi en Intune, la página sería similar a la siguiente: ![Página de configuración del software del publicador](./media/publisher-for-pc.png)
 
@@ -73,7 +76,11 @@ En el siguiente procedimiento usará el editor de software de Intune para config
 
     Si la aplicación cumple alguna de las reglas que configuró, no se instalará.
 
-6.  Únicamente para el tipo de archivo **Windows Installer** (.msi y .exe): en la página **Argumentos de la línea de comandos **, elija si quiere proporcionar argumentos de línea de comandos opcionales para el instalador. Por ejemplo, algunos instaladores podrían admitir el argumento **/q** para realizar una instalación silenciosa sin intervención del usuario.
+6.  Únicamente para el tipo de archivo **Windows Installer** (.msi y .exe): en la página **Argumentos de la línea de comandos **, elija si quiere proporcionar argumentos de línea de comandos opcionales para el instalador.
+    Intune agrega automáticamente los parámetros siguientes:
+    - Para los archivos .exe, se agrega **/install**.
+    - Para los archivos .msi, se agrega **/quiet**.
+    Tenga en cuenta que estas opciones solo funcionarán si el creador del paquete de aplicaciones ha habilitado la funcionalidad correspondiente.
 
 7.  Únicamente para el tipo de archivo **Windows Installer** (solo .exe): en la página **Códigos de retorno** puede agregar nuevos códigos de error que Intune interpretará cuando la aplicación se instale en un equipo Windows administrado.
 
@@ -89,8 +96,10 @@ La aplicación se muestra en el nodo **Aplicaciones** del área de trabajo **Apl
 
 Tras crear una aplicación, el siguiente paso es implementarla. Para obtener más información, vea [Implementar aplicaciones en Microsoft Intune](deploy-apps.md).
 
+Si quiere obtener más información sobre consejos y trucos para implementar software en equipos Windows, consulte la entrada de blog [Support Tip: Best Practices for Intune Software Distribution to PC’s](https://blogs.technet.microsoft.com/intunesupport/2016/06/13/support-tip-best-practices-for-intune-software-distribution-to-pcs/) (Consejo de soporte: recomendaciones para la distribución de software de Intune en PC).
 
 
-<!--HONumber=Dec16_HO5-->
+
+<!--HONumber=Feb17_HO3-->
 
 
