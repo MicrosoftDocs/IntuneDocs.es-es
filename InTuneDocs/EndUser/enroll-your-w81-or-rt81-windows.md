@@ -16,16 +16,17 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: be9117d917ff0c90ebe604383e37451a9fc856b6
+ms.sourcegitcommit: aca401cab49230d2bcb9171cf532b52ce5219798
+ms.openlocfilehash: 8e030c7b4b4aad7793b55e274a4d022bcf098611
 
 
 ---
 
 # <a name="how-to-enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>Cómo inscribir el dispositivo Windows 8.1 o Windows RT 8.1 en Intune
 
-Si su empresa o centro educativo usa Microsoft Intune, puede inscribir los dispositivos para obtener acceso al correo electrónico, a los archivos y a otros recursos de la empresa. Cuando se inscriben los dispositivos, la organización puede tener protegidos los datos corporativos. Para más información sobre la inscripción, vea [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) (¿Qué ocurre cuando se instala la aplicación de portal de empresa y se inscribe el dispositivo en Intune?) y [What your IT administrator can and can't see on your device](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) (¿Qué puede ver y no ver el administrador de TI en el dispositivo?).
+Si su empresa o centro educativo usa Microsoft Intune, puede inscribir los dispositivos para obtener acceso al correo electrónico, a los archivos y a otros recursos de la empresa. Cuando se inscriben los dispositivos, la organización puede tener protegidos los datos corporativos. Para más información sobre la inscripción, vea [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) (¿Qué ocurre cuando se instala la aplicación de portal de empresa y se inscribe el dispositivo en Intune?) y [What your IT administrator can and can't see on your device](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) (¿Qué puede ver y no ver el administrador de TI en el dispositivo?).
 
 
 Para inscribir el dispositivo Windows 8.1 o Windows RT 8.1:
@@ -68,6 +69,6 @@ También se recomienda instalar la aplicación Portal de empresa, que le permiti
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 

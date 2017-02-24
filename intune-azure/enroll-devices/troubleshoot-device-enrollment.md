@@ -1,11 +1,12 @@
 ---
-title: "Solución de problemas de inscripción de dispositivos | Versión preliminar de Intune Azure | Microsoft Docs"
+title: "Solucionar problemas de inscripción de dispositivos"
+titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: aprenda a solucionar problemas de inscripción de dispositivos."
 keywords: 
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/010/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +14,10 @@ ms.technology:
 ms.assetid: c324c74e-e225-40ad-88b7-72a6d9ea09b5
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 151e71f719b459a4f2c9612035201908d2610980
-ms.openlocfilehash: 78f0ff9a1b7bdaf30721d8702c36ff0e613b109e
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 9fff350240e4313994056bc5aebf82e204ab3c62
 
 
 ---
@@ -46,7 +48,7 @@ Los siguientes problemas pueden producirse en cualquiera de las plataformas de d
 
 #### <a name="check-number-of-devices-enrolled-and-allowed"></a>Compruebe el número de dispositivos inscritos y permitidos
 
-En la hoja de Intune del portal de Azure, vaya a **Inscribir dispositivos** > **Restricciones de inscripción** y valide que el usuario no tenga más de 15 dispositivos asignados, que es el máximo permitido.
+En Azure Portal, elija **Más servicios** > **Supervisión y administración** > **Intune**. En la hoja de Intune del portal de Azure, vaya a **Inscribir dispositivos** > **Restricciones de inscripción** y valide que el usuario no tenga más de 15 dispositivos asignados, que es el máximo permitido.
 
 <!--- Mobile device users can delete devices at the following URL: [https://byodtestservice.azurewebsites.net/](https://byodtestservice.azurewebsites.net/). --->
 
@@ -218,16 +220,16 @@ El error de certificado se genera porque los dispositivos Android requieren incl
 
 Para corregir el problema, importe los certificados a los certificados personales de equipos en los servidores proxy o el servidor AD FS de la manera siguiente:
 
-1.  En los servidores proxy y ADFS, inicie la consola de Administración de certificados del equipo local; para ello, haga clic con el botón derecho en el botón **Inicio**, haga clic en **Ejecutar** y escriba **certlm.msc**.
-2.  Expanda **Personal** y seleccione **Certificados**.
-3.  Busque el certificado correspondiente a la comunicación del servicio AD FS (un certificado firmado públicamente) y haga doble clic para ver sus propiedades.
-4.  Seleccione la pestaña **Ruta de certificación** para ver los certificados primarios del certificado.
-5.  En cada certificado primario, seleccione **Ver certificado**.
-6.  Seleccione la pestaña **Detalles** y elija **Copiar en archivo...**.
-7.  Siga las instrucciones del asistente para exportar o guardar la clave pública del certificado en la ubicación de archivo deseada.
-8.  Importe los certificados primarios que se exportaron en el paso 3 a la carpeta Equipo local\Personal\Certificados; para ello, haga clic con el botón derecho en **Certificados**, seleccione **Todas las tareas** > **Importar** y, luego, siga las instrucciones del asistente para importar los certificados.
-9.  Reinicie los servidores AD FS.
-10. Repita los pasos anteriores en todos los servidores proxy y de AD FS.
+1.    En los servidores proxy y ADFS, inicie la consola de Administración de certificados del equipo local; para ello, haga clic con el botón derecho en el botón **Inicio**, haga clic en **Ejecutar** y escriba **certlm.msc**.
+2.    Expanda **Personal** y seleccione **Certificados**.
+3.    Busque el certificado correspondiente a la comunicación del servicio AD FS (un certificado firmado públicamente) y haga doble clic para ver sus propiedades.
+4.    Seleccione la pestaña **Ruta de certificación** para ver los certificados primarios del certificado.
+5.    En cada certificado primario, seleccione **Ver certificado**.
+6.    Seleccione la pestaña **Detalles** y elija **Copiar en archivo...**.
+7.    Siga las instrucciones del asistente para exportar o guardar la clave pública del certificado en la ubicación de archivo deseada.
+8.    Importe los certificados primarios que se exportaron en el paso 3 a la carpeta Equipo local\Personal\Certificados; para ello, haga clic con el botón derecho en **Certificados**, seleccione **Todas las tareas** > **Importar** y, luego, siga las instrucciones del asistente para importar los certificados.
+9.    Reinicie los servidores AD FS.
+10.    Repita los pasos anteriores en todos los servidores proxy y de AD FS.
 Ahora, el usuario podrá iniciar sesión en el Portal de empresa en el dispositivo Android.
 
 **Para validar que el certificado se instaló correctamente**:
@@ -389,6 +391,6 @@ Si esta información para solucionar problemas no le ha ayudado, póngase en con
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

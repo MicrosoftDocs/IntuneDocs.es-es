@@ -16,9 +16,10 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
-ms.openlocfilehash: fe6a3e323828b28b303f7f8ca012fa1cc00db507
+ms.sourcegitcommit: aca401cab49230d2bcb9171cf532b52ce5219798
+ms.openlocfilehash: ad18e2bdfe8a045077a1c91abfcc123afec72cb9
 
 
 ---
@@ -26,7 +27,7 @@ ms.openlocfilehash: fe6a3e323828b28b303f7f8ca012fa1cc00db507
 
 # <a name="enroll-your-windows-phone-81-device-in-intune"></a>Inscribir el dispositivo Windows Phone 8.1 en Intune
 
-Si su empresa o centro educativo usa Microsoft Intune, puede inscribir los dispositivos para obtener acceso al correo electrónico, a los archivos y a otros recursos de la empresa. Cuando se inscriben los dispositivos, la organización puede tener protegidos los datos corporativos. Para más información sobre la inscripción, vea [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) (¿Qué ocurre cuando se instala la aplicación de portal de empresa y se inscribe el dispositivo en Intune?) y [What your IT administrator can and can't see on your device](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) (¿Qué puede ver y no ver el administrador de TI en el dispositivo?).
+Si su empresa o centro educativo usa Microsoft Intune, puede inscribir los dispositivos para obtener acceso al correo electrónico, a los archivos y a otros recursos de la empresa. Cuando se inscriben los dispositivos, la organización puede tener protegidos los datos corporativos. Para más información sobre la inscripción, vea [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) (¿Qué ocurre cuando se instala la aplicación de portal de empresa y se inscribe el dispositivo en Intune?) y [What your IT administrator can and can't see on your device](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) (¿Qué puede ver y no ver el administrador de TI en el dispositivo?).
 
 
 Para inscribir el dispositivo Phone 8.1 en Intune, siga las instrucciones que se ajusten a su empresa:
@@ -90,6 +91,6 @@ Si su administrador de TI configuró el Portal de empresa para que se instale du
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

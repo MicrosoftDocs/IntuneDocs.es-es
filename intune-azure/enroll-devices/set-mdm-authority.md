@@ -1,5 +1,6 @@
 ---
-title: "Establecimiento de la entidad de administración de dispositivos móviles | Versión preliminar de Intune Azure | Microsoft Docs"
+title: "Establecer la entidad de administración de dispositivos móviles"
+titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: aprenda a configurar la entidad de administración de dispositivos móviles en Intune. "
 keywords: 
 author: staciebarker
@@ -13,9 +14,10 @@ ms.technology:
 ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: 3c0de501c172484f036aa2d812f0c40fcfa1d93f
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 9d7a1a934188f0a40553d3c6b8b567ba8f6af034
 
 ---
 
@@ -36,7 +38,7 @@ La configuración de la entidad de administración de dispositivos móviles dete
 
 **Para establecer la entidad de administración de dispositivos móviles**
 
-1. En el portal de Azure, elija **More Services** (Más servicios), escriba **Intune** en el cuadro de texto y luego seleccione **Other** (Otros)  > **Intune**.
+1. En Azure Portal, elija **Más servicios** > **Supervisión y administración** > **Intune**.
 
 2. En la hoja de Intune, elija **Inscribir dispositivos** y luego elija **Overview** (Información general).
 
@@ -44,6 +46,6 @@ La configuración de la entidad de administración de dispositivos móviles dete
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

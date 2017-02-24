@@ -16,9 +16,10 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 9530eb45bf027c66c4a36e4cea1ec05c5f15a6e5
-ms.openlocfilehash: 7696deb59bae37bb424ae3e659a67f3d3f91ace7
+ms.sourcegitcommit: aca401cab49230d2bcb9171cf532b52ce5219798
+ms.openlocfilehash: 8829d392931cdbe23d5b0be7622729ddd2903fcb
 
 
 ---
@@ -26,7 +27,7 @@ ms.openlocfilehash: 7696deb59bae37bb424ae3e659a67f3d3f91ace7
 
 # <a name="enroll-your-windows-device-in-intune"></a>Inscriba el dispositivo Windows en Intune
 
-Si su empresa o centro educativo usa Microsoft Intune, puede inscribir un dispositivo Windows para obtener acceso al correo electrónico, a los archivos y a otros recursos de la empresa. Cuando se inscriben los dispositivos, la organización puede tener protegidos los datos corporativos. Para más información sobre la inscripción, consulte [¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo iOS o macOS en Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) y [What your IT administrator can and can't see on your device](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md) (¿Qué puede y no puede ver el administrador de TI en el dispositivo?).
+Si su empresa o centro educativo usa Microsoft Intune, puede inscribir un dispositivo Windows para obtener acceso al correo electrónico, a los archivos y a otros recursos de la empresa. Cuando se inscriben los dispositivos, la organización puede tener protegidos los datos corporativos. Para más información sobre la inscripción, consulte [¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo iOS o macOS en Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) y [What your IT administrator can and can't see on your device](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) (¿Qué puede y no puede ver el administrador de TI en el dispositivo?).
 
 Para inscribirse, use el vínculo que corresponda al dispositivo que está usando:
 
@@ -36,6 +37,6 @@ Para inscribirse, use el vínculo que corresponda al dispositivo que está usand
 
 
 
-<!--HONumber=Feb17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

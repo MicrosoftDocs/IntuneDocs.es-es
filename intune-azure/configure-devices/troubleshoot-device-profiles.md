@@ -1,5 +1,6 @@
 ---
-title: "Solución de problemas de perfiles de dispositivo en Microsoft Intune | Versión preliminar de Intune Azure | Microsoft Docs"
+title: "Solución de problemas de perfiles de dispositivo en Microsoft Intune"
+titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: si se queda atascado, use este tema para ayudarle a resolver problemas con perfiles de dispositivo de Intune."
 keywords: 
 author: robstackmsft
@@ -13,9 +14,10 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 132c0b308031a57277c20cedd5b4ad37bfdf92e6
-ms.openlocfilehash: fe2a694d7b6135b4e8f7aaf1c863bc1685e93ea6
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 962eb30ada84355c1aceacbf8f487b0f5b3cf1f2
 
 
 ---
@@ -499,6 +501,6 @@ En otros dispositivos MDM como Android, Windows Phone 8.1 y posteriores e iOS, e
 Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el servicio de soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune](/intune/troubleshoot/how-to-get-support-for-microsoft-intune) (Cómo obtener soporte técnico de Microsoft Intune).
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

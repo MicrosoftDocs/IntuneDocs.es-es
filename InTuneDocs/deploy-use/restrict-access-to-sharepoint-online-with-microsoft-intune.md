@@ -15,8 +15,8 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: fad731fe01ba4782b64e8a5af97bd536ae9478d3
+ms.sourcegitcommit: c4077c41da897e570e5d29702ba0e776c7deee6b
+ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
 
 
 ---
@@ -155,8 +155,6 @@ A continuación, configure la directiva para requerir que solo los dispositivos 
 
      -   **Los dispositivos deben estar unidos a un dominio o ser conformes.** Elija esta opción para requerir que el equipo esté unido al dominio o que cumpla las directivas establecidas en [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Si un equipo no cumple alguno de estos requisitos, se le solicita al usuario que inscriba el dispositivo en [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
-     -   **Los dispositivos deben estar unidos a un dominio.** Elija esta opción para requerir que los equipos estén unidos al dominio para tener acceso a Exchange Online. Si el equipo no está unido a un dominio, el acceso al correo electrónico se bloquea y el usuario debe ponerse en contacto con el administrador de TI.
-
      -   **Los dispositivos deben ser conformes.** Elija esta opción para requerir que los equipos estén inscritos en [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] y sean conformes. Si el equipo no está inscrito, se muestra un mensaje con instrucciones sobre cómo inscribirse.
 
 4.   En **Acceso al explorador** en SharePoint Online y OneDrive para la Empresa, puede permitir el acceso a Exchange Online solo a través de los exploradores admitidos: Safari (iOS) y Chrome (Android). El acceso desde otros exploradores está bloqueado. Las mismas restricciones de plataforma que seleccionó para el acceso a la aplicación OneDrive también se aplican aquí.
@@ -200,6 +198,6 @@ Seleccione cualquier grupo de dispositivos móviles. Luego, en la pestaña **Dis
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 

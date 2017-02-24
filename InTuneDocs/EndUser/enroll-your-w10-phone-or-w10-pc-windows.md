@@ -16,9 +16,10 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jieyan
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 81ee6143d53ca08f03dfd3555b118f77319ccf2d
-ms.openlocfilehash: e72a61b2250c2d048392e025655b81dbc8297176
+ms.sourcegitcommit: aca401cab49230d2bcb9171cf532b52ce5219798
+ms.openlocfilehash: b6e9a357b79b0069e5fadf5aa280dae5b4787212
 
 
 ---
@@ -28,7 +29,7 @@ ms.openlocfilehash: e72a61b2250c2d048392e025655b81dbc8297176
 
 La inscripción de dispositivos en Microsoft Intune permite que los dispositivos Windows 10 tengan acceso a datos seguros de la organización, incluidos el correo electrónico, los archivos y otros recursos. Esto se aplica tanto a dispositivos Windows 10 Escritorio como a dispositivos Windows 10 Mobile. La inscripción de dispositivos ayuda a proteger este acceso para el usuario y la organización, y permite mantener separados los datos profesionales de los datos personales.
 
-¿Quiere obtener más información? Averigüe lo que sucede al [inscribir el dispositivo en Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) y lo que conlleva para la [información que contiene el dispositivo](what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows.md).
+¿Quiere obtener más información? Averigüe lo que sucede al [inscribir el dispositivo en Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) y lo que conlleva para la [información que contiene el dispositivo](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
 ## <a name="windows-10-desktop-devices"></a>Dispositivos Windows 10 Escritorio
 1.    Vaya a __Inicio__.
@@ -56,6 +57,6 @@ La inscripción de dispositivos en Microsoft Intune permite que los dispositivos
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

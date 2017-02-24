@@ -18,8 +18,8 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 8e10aa7c1db7490a462032e1bf86c7509b7b0e18
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: d593b00ee3fd30adec6c36c3939c895647e8dada
 
 
 ---
@@ -38,36 +38,6 @@ Al instalar la aplicación Portal de empresa e inscribir su dispositivo iOS o ma
 -   Configurar automáticamente la cuenta de correo electrónico profesional.
 
 Cuando inscribe el dispositivo en Intune, está concediendo permiso al administrador de TI para administrarlo con el fin de ayudarle a proteger la información de la empresa que tiene en el mismo.
-
-**Lo que el personal de TI no puede ver**
-
--   Historial web y de llamadas
-
--    Ubicación
-
--   Mensajes de texto y de correo electrónico
-
--   Contactos
-
--    Contraseñas
-
--   Calendario
-
--   Álbum de cámara
-
-**Lo que el personal de TI puede ver**
-
--   Modelo
-
--   Número de serie
-
--   Sistema operativo
-
--   Nombres de aplicación
-
--   Propietario
-
--   Nombre del dispositivo
 
 Cuando el dispositivo esté inscrito, el Administrador de TI podrá:
 
@@ -99,6 +69,6 @@ Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para 
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 
