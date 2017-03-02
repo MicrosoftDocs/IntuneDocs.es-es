@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: f27eacc8a8282c9216f8983db32dc5e4e8bc7006
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 142b57f48c2950f6eecc228decfa06ce44c76319
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-configure-the-company-portal-app"></a>Configuración de la aplicación Portal de empresa
+# <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Configuración de la aplicación Portal de empresa de Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -64,9 +65,4 @@ Puede personalizar su portal de empresa con su logotipo de empresa, nombre de em
 |**Mostrar logotipo de la empresa**|Si habilita esta opción, puede cargar el logotipo de su empresa para que se muestre en el portal de empresa. Puede cargar dos logotipos: uno que se mostrará cuando el fondo del portal de empresa sea de color blanco y otro que se mostrará cuando el fondo del portal de empresa use el color de tema seleccionado. El tipo de archivo del logotipo debe ser .png o .jpg, con una resolución máxima de 400 x 100 píxeles y un tamaño de 750 KB o menos.<br>También puede mostrar el nombre de la empresa que escribió junto al logotipo cargado.|
 
 Después de guardar los cambios, puede elegir **Obtenga una vista previa de la configuración en el portal web de Intune.** para ver el aspecto de las configuraciones.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
