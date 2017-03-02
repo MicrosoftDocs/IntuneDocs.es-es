@@ -1,5 +1,6 @@
 ---
-title: "Configuración de la infraestructura de certificados de Intune para SCEP | Versión preliminar de Intune Azure | Microsoft Docs"
+title: Configurar la infraestructura de certificados para SCEP
+titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: aprenda a configurar la infraestructura antes de crear e implementar perfiles de certificado SCEP de Intune."
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 86f493e0ffd2a96ac4cfdfe6d8719f56532ed77c
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 8f713769e0b8a13e91e6d9991e4e7415e1da22a2
+ms.lasthandoff: 02/18/2017
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep-in-microsoft-intune"></a>Configurar la infraestructura de certificados para SCEP en Microsoft Intune

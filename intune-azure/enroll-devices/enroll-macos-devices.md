@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 1/3/2016
+ms.date: 02/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ba2affcdbcdfcd690d671c7b20f9d1e14a74f764
-ms.openlocfilehash: 171175689adca027181f3da4d05222117de97e13
+ms.sourcegitcommit: a2e840797c06322b9efc59438e0675e57b7cdb24
+ms.openlocfilehash: f217988313debd33bcba3f8168aa03b6dbf8586e
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -24,7 +25,7 @@ ms.openlocfilehash: 171175689adca027181f3da4d05222117de97e13
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Como administrador de Intune, puede administrar dispositivos macOS. De forma predeterminada, el portal de Azure permite a los usuarios inscribir sus dispositivos macOS. Basta con que indique a los usuarios que vayan al [sitio web del Portal de empresa](http://portal.manage.microsoft.com) e inscriban su dispositivo macOS. 
+Intune le permite administrar dispositivos macOS. Para habilitar la administración de dispositivos, los usuarios deben inscribir sus dispositivos dirigiéndose al [sitio web del portal de empresa](http://portal.manage.microsoft.com) y seguir las indicaciones. Una vez que los dispositivos macOS estén bajo su administración, puede [crear una configuración personalizada para dispositivos macOS](https://docs.microsoft.com/intune-azure/configure-devices/custom-for-macos). Próximamente habrá mas funciones.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -39,20 +40,17 @@ Complete los siguientes requisitos previos antes de configurar la inscripción d
 
 ## <a name="set-up-macos-enrollment"></a>Configuración de la inscripción de macOS
 
-De forma predeterminada, Intune ya está configurado para permitir la inscripción de dispositivos macOS. 
+De manera predeterminada, Intune ya permite la inscripción de dispositivos macOS. 
 
-Para ver la configuración que permite o bloquea la inscripción de dispositivos macOS, vaya a la hoja de Intune en el portal de Azure y elija **Inscripción** > **Restricciones de inscripción**. 
+Para bloquear la inscripción de dispositivos macOS, vea [Set device type restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions) (Establecer restricciones de tipos de dispositivo). 
+
+Para establecer el número máximo de dispositivos que un usuario puede inscribir, vea [Set device limit restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-limit-restrictions) (Establecer restricciones de límite de dispositivos).
 
 ## <a name="tell-your-users-how-to-enroll-their-devices-to-access-company-resources"></a>Indique a los usuarios cómo inscribir sus dispositivos para acceder a recursos de la empresa.
 
-Para obtener instrucciones de inscripción para usuarios finales, consulte [Inscribir un dispositivo macOS en Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-macos). El proceso de inscripción indica a los usuarios lo que pueden esperar y qué pueden o no ver los administradores de TI en sus dispositivos.
+Necesitará indicar a sus usuarios finales que vayan al [sitio web del portal de empresa](http://portal.manage.microsoft.com) y sigan las indicaciones para inscribir sus dispositivos. También puede enviarles un vínculo sobre los pasos de inscripción en línea: [Inscriba el dispositivo macOS en Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-macos). 
 
 Para más información acerca de otras tareas de usuario final, consulte estos artículos:
 
 - [Recursos sobre la experiencia del usuario final con Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)
 - [Uso de un dispositivo iOS o Mac OS con Intune](https://docs.microsoft.com/intune/enduser/using-your-ios-or-mac-os-x-device-with-intune)
-
-
-<!--HONumber=Feb17_HO1-->
-
-

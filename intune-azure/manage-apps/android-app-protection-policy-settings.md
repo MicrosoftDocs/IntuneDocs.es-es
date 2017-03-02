@@ -1,5 +1,6 @@
 ---
-title: "Configuración de directivas de protección de aplicaciones de Android | Versión preliminar de Intune Azure | Microsoft Docs"
+title: "Configuración de directivas de protección de aplicaciones de Android"
+titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: en este tema se describe la configuración de directivas de protección de aplicaciones para dispositivos Android."
 keywords: 
 author: NathBarn
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 59bf958274d19f6e260c24222f0eb3d175158db1
-ms.openlocfilehash: cc9b2e34878b410aa7d6f61b3bc58515ad6a67d4
-ms.lasthandoff: 02/14/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 5a5bef54e805dacf4bf972a4f0a56bd08dbf95f7
+ms.lasthandoff: 02/18/2017
 
 
 ---

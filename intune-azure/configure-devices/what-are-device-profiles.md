@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/15/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,18 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 89afae81076d563f4ebba289f8fa82eaea6ab234
-ms.openlocfilehash: 0e126c067b5c212ae5bfe1cf69e01128a00b1c8e
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: a5f6ad4dd5339b31a6a1fd549a3b29b0ff258a5b
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="what-are-device-profiles"></a>¿Qué son los perfiles de dispositivo?
-<!--- This topic doesn't really answer the topic title: What are device profiles?" It needs to answer that question, then it can go on to discuss what profiles are in Intune and how to use them. Linda--->
+# <a name="what-are-microsoft-intune-device-profiles"></a>¿Qué son los perfiles de dispositivo de Microsoft Intune?
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Use la carga de trabajo **Configurar dispositivos** de Microsoft Intune para administrar la configuración y las características de todos los dispositivos administrados.
+Use la carga de trabajo **Configurar dispositivos** de Microsoft Intune para administrar la configuración y las características de todos los dispositivos administrados. Principalmente, usará esta carga de trabajo para crear perfiles de dispositivo, que le permiten administrar y controlar toda una gama de diferentes funciones y características en los dispositivos que administra.
 
 Cuando abra esta carga de trabajo, verá las siguientes opciones:
 
@@ -60,10 +60,6 @@ Compatible con Android, iOS, macOS, Windows Phone 8.1, Windows 8.1 y Windows 10.
 Este tipo de perfil le permite configurar certificados SCEP y PKCS de confianza, que se pueden asignar a dispositivos y usarse para la autenticación de perfiles de Wi-Fi, VPN y correo electrónico.
 Para más información, consulte [How to configure certificates](how-to-configure-certificates.md) (Configuración de certificados). Compatible con Android, iOS, Windows Phone 8.1, Windows 8.1 y Windows 10.
 
-## <a name="education"></a>Education
-Le ayuda a especificar los certificados correctos para el uso del dispositivo iOS en el entorno educativo.
-Para más información, consulte [How to configure Intune education settings for iOS devices](education-settings-for-ios.md) (Configuración de dispositivos iOS para el entorno educativo). Solo compatible con iOS.
-
 ## <a name="edition-upgrade"></a>Actualización de la edición
 Este tipo de perfil le permite actualizar automáticamente dispositivos que ejecutan algunas versiones de Windows 10 a una edición más reciente. Para más información, consulte [How to configure Windows 10 edition upgrades](how-to-configure-windows-10-edition-upgrade.md) (Configuración de actualizaciones de ediciones de Windows 10). Solo compatible con Windows 10.
 
@@ -74,9 +70,4 @@ Para más información, consulte [How to configure Windows Information Protectio
 ## <a name="custom"></a>Personalizada
 La configuración personalizada le permite asignar valores de configuración del dispositivo que no están integrados en Intune. Por ejemplo, en dispositivos Android, puede especificar valores de OMA-URI que configuran el dispositivo. Para dispositivos iOS, puede importar un archivo de configuración creado Apple Configurator.
 Para más información, consulte [How to configure custom settings](how-to-configure-custom-settings.md) (Configuración personalizada). Compatible con Android, iOS, macOS y Windows Phone 8.1.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
