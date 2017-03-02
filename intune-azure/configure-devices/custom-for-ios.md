@@ -1,11 +1,12 @@
 ---
-title: "Configuración personalizada de Intune para dispositivos iOS | Versión preliminar de Intune Azure | Microsoft Docs"
+title: "Configuración personalizada de Intune para dispositivos iOS"
+titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: conozca la configuración que puede usar en un perfil personalizado de iOS."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +14,16 @@ ms.technology:
 ms.assetid: 6da8caa8-65c2-4f47-842f-9570dcb1ac22
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 5ab494a3dd1e1bdea9703ab314574b192c5208ee
-ms.openlocfilehash: cfccdbf34437c5ab23cefba5307c53c60573ddb0
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: d8e6d0d641dd55c79442f68e7e97d21efcdad7fa
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="intune-custom-settings-for-ios-devices-in-intune-azure-preview"></a>Configuración personalizada de Intune para dispositivos iOS en la versión preliminar de Intune Azure
+# <a name="microsoft-intune-custom-settings-for-ios-devices"></a>Configuración personalizada de Microsoft Intune para dispositivos iOS
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -37,9 +40,4 @@ Esta funcionalidad permite implementar la configuración de iOS que no se puede 
 Asegúrese de que la configuración que exporta de la herramienta Apple Configurator sea compatible con la versión de iOS en los dispositivos en los que implementa la directiva personalizada de iOS. Para obtener información sobre la resolución de las opciones de configuración incompatibles, busque la **Referencia de perfiles de configuración** y la **Referencia del protocolo de administración de dispositivos móviles** en el sitio web de [Apple Developer](https://developer.apple.com/).
 
 El archivo importado se mostrará en el área de **contenido del archivo** de la hoja.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/07/2017
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,9 +14,11 @@ ms.assetid: f49650f4-31fa-406c-a4da-d8c9a4a8384d
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 68c7a23dc8769330c14f74e6aebb07eeb188a991
-ms.openlocfilehash: 4bc9a2799bcce035c6847b7b2884ee24160426da
+ms.sourcegitcommit: d0b3a883bb307fb06cb8d16500798086f328314a
+ms.openlocfilehash: eeebf8b6b3bc5c7c35386eb20c96097af1f6769c
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -34,7 +36,7 @@ Esta página se actualiza periódicamente. Compruebe si hay actualizaciones adic
 ## <a name="new-capabilities"></a>Nuevas funcionalidades
 
 ### <a name="modernizing-the-company-portal-website---753980--"></a>Renovación del sitio web del portal de empresa<!--753980-->
-El sitio web del portal de empresa admitirá aplicaciones destinadas a aquellos usuarios que no tienen dispositivos administrados. El sitio web se alineará con otros productos y servicios de Microsoft mediante una nueva combinación de colores de contraste, ilustraciones dinámicas y un "menú hamburguesa", ![pequeña imagen del menú hamburguesa que se agrega ahora a la esquina superior izquierda del sitio web del portal de empresa](./media/CP_hamburger_menu.png) que contendrá los detalles de contacto del departamento de soporte técnico e información sobre los dispositivos administrados existentes. La página de inicio se reorganizará para destacar las aplicaciones que están disponibles para los usuarios, con carruseles para aplicaciones destacadas y actualizadas recientemente. Puede encontrar imágenes de antes y después disponibles en la [página de actualizaciones de la interfaz de usuario](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui).
+A partir de febrero, el diseño del sitio web del portal de empresa se alineará con otros productos y servicios de Microsoft mediante una nueva combinación de colores de contraste, ilustraciones dinámicas y un "menú hamburguesa", ![pequeña imagen del menú hamburguesa que se agrega ahora a la esquina superior izquierda del sitio web del portal de empresa](./media/CP_hamburger_menu.png) que contendrá los detalles de contacto del departamento de soporte técnico e información sobre los dispositivos administrados existentes. La página de inicio se reorganizará para destacar las aplicaciones que están disponibles para los usuarios, con carruseles para aplicaciones destacadas y actualizadas recientemente. Puede encontrar imágenes de antes y después disponibles en la [página de actualizaciones de la interfaz de usuario](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui).
 
 ### <a name="new-guided-experience-for-windows-10-company-portal---713927--"></a>Nueva experiencia guiada del Portal de empresa de Windows 10<!--713927-->
 A partir de marzo, el Portal de empresa para Windows 10 incluirá la experiencia de un tutorial de Intune guiado para dispositivos que no se han identificado ni inscrito. La nueva experiencia proporciona instrucciones paso a paso, personalizadas para la compilación de Windows 10 del usuario, que guían a los usuarios por la realización del registro en AAD (necesario para la identificación de las características de acceso condicional) y la inscripción de MDM (necesaria para características de administración de dispositivos). La experiencia guiada será accesible desde la página principal del Portal de empresa y es opcional; los usuarios pueden seguir usando la aplicación aunque no realicen la inscripción ni el registro, pero puede que experimenten funcionalidad limitada.
@@ -114,9 +116,4 @@ Ahora estamos comenzando a realizar la integración de la versión preliminar co
 
 ### <a name="see-also"></a>Consulte también
 Consulte [Novedades de Microsoft Intune](whats-new-in-microsoft-intune.md) para obtener más información sobre los desarrollos recientes.
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

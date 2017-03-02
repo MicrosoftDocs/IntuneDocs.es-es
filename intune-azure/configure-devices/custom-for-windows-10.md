@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 7bcea136-7260-4042-b21b-c7dab86b380d
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 0da8c0fe399f76f43439cc66eaecd12bb454f9a6
-ms.openlocfilehash: 05856480f8bb76e561f2b459d4ab800f9909a40a
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: bc740d9e43e2937757075bf84735fe611433f6f0
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="custom-device-settings-for-windows-10-devices-in-intune-azure-preview"></a>Configuración personalizada de dispositivos para dispositivos Windows 10 en la versión preliminar de Intune Azure
+# <a name="custom-device-settings-for-windows-10-devices-in-microsoft-intune"></a>Configuración personalizada de dispositivos para dispositivos Windows 10 en Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -167,9 +168,4 @@ En la siguiente captura de pantalla, se ha habilitado el valor **Connectivity/Al
 |**Permitir guardar contraseña**<br>./Vendor/MSFT/Policy/Config/Browser/AllowPasswordManager|Escritorio y Mobile<br />**Tipo de datos:** entero<br />**Valores**<br>**0**: el administrador de contraseñas está deshabilitado <br>**1**: el administrador de contraseñas está habilitado (valor predeterminado)|
 |**Permitir el autorrelleno**<br>./Vendor/MSFT/Policy/Config/Browser/AllowAutofill|Solo escritorio<br />**Tipo de datos:** entero<br />**Valores:** **0**: deshabilitado (valor predeterminado); **1**: habilitado|
 |**Configurar la lista de sitios de empresa**<br>./Vendor/MSFT/Policy/Config/Browser/EnterpriseModeSiteList|Solo escritorio<br />**Tipo de datos:** cadena<br />**Valores:<br>**0**: no configurado; <br>**1**: usar la lista de sitios del modo de empresa de IE si está configurado (valor predeterminado); <br>**2**: especificar la ubicación de la lista de sitios de empresa|
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

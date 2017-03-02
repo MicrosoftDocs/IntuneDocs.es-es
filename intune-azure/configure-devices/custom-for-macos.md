@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 68100ea5-7d9b-4c0b-8df7-b9a24b2442c8
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 5ab494a3dd1e1bdea9703ab314574b192c5208ee
-ms.openlocfilehash: 113572430f0ef82c9a6fa533e3d6fc17b86119cb
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 13648aa35057201ac7420e2f1d334aee206605fe
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="custom-settings-for-macos-devices-in-intune-azure-preview"></a>Configuración personalizada para dispositivos de macOS en la versión preliminar de Intune Azure
+# <a name="custom-settings-for-macos-devices-in-microsoft-intune"></a>Opciones de configuración personalizadas para dispositivos macOS en Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -37,9 +38,4 @@ Esta funcionalidad le permite implementar configuraciones de macOS que no son co
 Asegúrese de que la configuración que exporta de la herramienta Apple Configurator sea compatible con la versión de macOS en los dispositivos en los que implementa la directiva personalizada de macOS. Para obtener información sobre la resolución de las opciones de configuración incompatibles, busque la **Referencia de perfiles de configuración** y la **Referencia del protocolo de administración de dispositivos móviles** en el sitio web de [Apple Developer](https://developer.apple.com/).
 
 El archivo importado se mostrará en el área de **contenido del archivo** de la hoja.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,12 +14,13 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 87250baede6c86e7ac5c402e79026908e712f48c
-ms.openlocfilehash: 809fe8d8eea7e472d80f6ee22e26c1f376e870eb
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 7a2d494a995072c6fa61cf99aa5f841256e86885
+ms.lasthandoff: 02/16/2017
 
 ---
 
-# <a name="how-to-manage-ios-apps-you-purchased-through-a-volume-purchase-program"></a>Administración de aplicaciones iOS adquiridas mediante un programa de compra por volumen | Microsoft Intune
+# <a name="how-to-manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Administrar aplicaciones de iOS compradas a través de un programa de compras por volumen con Microsoft Intune
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -81,9 +82,4 @@ Al asignar la aplicación como una instalación **requerida**, cada usuario que 
 Para reclamar una licencia, debe cambiar la acción de asignación a **Desinstalar**. La licencia se recupera cuando se desinstala la aplicación.
 
 Si un usuario con un dispositivo elegible intenta primero instalar una aplicación de PCV, se le pedirá que se una al Programa de Compras por Volumen de Apple. Debe hacerlo para poder continuar con la instalación de la aplicación.
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

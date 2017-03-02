@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 89229a5e-3421-4221-a62f-fa800620cc0d
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: ac907e4cb63e4175dafc4c50239d3e0cbe581ad9
-ms.openlocfilehash: 1790878c1d1b4ad8381e6c3a3689542877ec6d26
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 85224b2758eeb1f9c7745b9f18f250a7d1292e0f
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="intune-wi-fi-settings-for-ios-devices-in-intune-azure-preview"></a>Configuración de Wi-Fi de Intune para dispositivos iOS en la versión preliminar de Intune Azure
+# <a name="wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Configuración de Wi-Fi para dispositivos iOS en Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -78,9 +79,4 @@ ms.openlocfilehash: 1790878c1d1b4ad8381e6c3a3689542877ec6d26
 |--------------|-------------|----------|
 |**Certificado cliente para la autenticación del cliente (certificado de identidad)**|Seleccione el perfil de certificado SCEP o PKCS que se usa para autenticar la conexión.|El tipo de EAP es **EAP-TLS**.|
 |**Método de autenticación**|Seleccione el método de autenticación para la conexión:<br>- **Certificados**: para seleccionar el certificado de cliente SCEP o PKCS que es el certificado de identidad presentado al servidor.<br><br>- **Nombre de usuario y contraseña** para especificar un método de autenticación diferente. <br><br>Si seleccionó **Nombre de usuario y contraseña**, configure:<br><br>-  **Método que no es EAP (identidad interna)** y luego seleccione cómo se autenticará la conexión desde:<br>- **Ninguno**<br>- **Contraseña no cifrada (PAP)**<br>- **Protocolo de autenticación por desafío mutuo (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP versión 2 (MS-CHAP v2)**<br>Las opciones disponibles dependen del tipo de EAP seleccionado.<br><br>**y**<br><br>- **Método que no es EAP (identidad interna)**: especifique el texto que se envía como respuesta a una solicitud de identidad EAP. Este texto puede ser cualquier valor. Durante la autenticación, esta identidad anónima se envía inicialmente, seguida de la identificación real enviada en un túnel seguro.|El tipo de EAP es **EAP-TTLS** o *.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

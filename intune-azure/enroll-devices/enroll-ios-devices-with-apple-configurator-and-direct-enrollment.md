@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: dagerrit
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
-ms.openlocfilehash: f6770556e6ee4e6a6fa1173c8c65c7e54d159016
+ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
+ms.openlocfilehash: 642ecb716a4325d736be6fc392f39162e903d835
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -53,7 +54,7 @@ Complete los siguientes requisitos previos antes de configurar la inscripción d
 
 Un perfil de inscripción de dispositivo define la configuración que se aplica a un grupo de dispositivos. Los siguientes pasos muestran cómo crear un perfil de inscripción de dispositivos para dispositivos iOS inscritos mediante Apple Configurator.
 
-1. En el portal de Azure, elija **More Services** (Más servicios), escriba **Intune** en el cuadro de texto y luego seleccione **Other** (Otros)  > **Intune**.
+1. En Azure Portal, elija **Más servicios** > **Supervisión y administración** > **Intune**.
 
 2. En la hoja de Intune, elija **Inscribir dispositivos** y luego elija **Inscripción de Apple**.
 
@@ -98,9 +99,4 @@ Un perfil de inscripción de dispositivo define la configuración que se aplica 
 4. En el dispositivo iOS, abra **Configuración** y vaya a **General**  > **Administración de dispositivos** > **Perfil de administración**. Confirme que aparece la instalación del perfil y compruebe las restricciones de directivas de iOS y las aplicaciones instaladas. Las aplicaciones y las restricciones de directivas pueden tardar hasta 10 minutos en aparecer en el dispositivo.
 
 5. Distribuya los dispositivos. Ahora el dispositivo iOS está inscrito con Intune y administrado.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

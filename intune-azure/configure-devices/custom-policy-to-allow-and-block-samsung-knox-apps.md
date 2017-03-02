@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/18/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: c2b49fb985290b2806e172543f95db21727c113e
-ms.openlocfilehash: 581283b1918efb941409c7f58d99682fa2894ce5
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: f5267d2e06f1cd7ec471fd1782bfd965843d1c7e
+ms.lasthandoff: 02/16/2017
 
 
 
 ---
-# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-intune-azure-preview"></a>Uso de directivas personalizadas para permitir y bloquear aplicaciones para dispositivos Samsung KNOX Standard en la versión preliminar de Intune Azure.
+# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>Uso de directivas personalizadas para permitir y bloquear aplicaciones para dispositivos Samsung KNOX Standard en Microsoft Intune
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]Use los procedimientos de este tema para crear una directiva personalizada de Microsoft Intune que cree una de las siguientes opciones:
 
 - Una lista de aplicaciones bloqueadas que no se pueden ejecutar en el dispositivo. Las aplicaciones de esta lista se bloquean y no se pueden ejecutar, aunque ya estuvieran instaladas en el momento en que se ha aplicado la directiva.
@@ -45,9 +46,9 @@ Esta configuración solo se puede usar en dispositivos que ejecutan Samsung KNOX
 
 - **Nombre**: escriba **PreventStartPackages**.
 - **Descripción**: escriba una descripción opcional, por ejemplo, "Lista de aplicaciones bloqueadas que no se pueden ejecutar".
--   **Tipo de datos**: en la lista desplegable, elija **Cadena**.
--   **OMA-URI**: escriba **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**.
--   **Valor**: escriba una lista de los nombres de paquetes de aplicaciones que quiere permitir. Puede usar **; : ,** o **|** como delimitador. (Ejemplo: paquete1;paquete2;)
+-     **Tipo de datos**: en la lista desplegable, elija **Cadena**.
+-     **OMA-URI**: escriba **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**.
+-     **Valor**: escriba una lista de los nombres de paquetes de aplicaciones que quiere permitir. Puede usar **; : ,** o **|** como delimitador. (Ejemplo: paquete1;paquete2;)
 
 ### <a name="for-a-list-of-apps-that-users-are-allowed-to-install-from-the-google-play-store-while-excluding-all-other-apps"></a>Para obtener una lista de las aplicaciones que los usuarios pueden instalar de Google Play Store al excluir todas las demás aplicaciones:
 - **Nombre**: escriba **AllowInstallPackages**.
@@ -65,9 +66,4 @@ La próxima vez que se registre cada dispositivo de destino, se aplicará la con
 
 
 <!---## Assign the custom profile--->
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

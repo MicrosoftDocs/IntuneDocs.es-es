@@ -19,11 +19,11 @@ Con la inscripción automática, los usuarios pueden inscribir en Intune equipos
 
 4. Haga clic en **Configurar** para empezar a configurar la inscripción automática de MDM con Microsoft Intune.
 
-5. Especifique las direcciones URL de Intune:
+5. Use los valores predeterminados para las siguientes direcciones URL:
 
-  - **Dirección URL de inscripción de MDM**: use el valor predeterminado.
-  - **Dirección URL de las condiciones de uso de MDM**: use el valor predeterminado. Esta dirección URL muestra las condiciones de uso de los usuarios al efectuar la inscripción de los dispositivos.
-  - **Dirección URL de cumplimiento de MDM**: use el valor predeterminado. Si un dispositivo no sigue el cumplimiento, aparecerá el mensaje **Acceso denegado** con esta dirección URL. La dirección URL señala a una página que ayuda a los usuarios a comprender el motivo por el que el dispositivo no cumple la directiva y cómo pueden corregir esta situación.
+  - **Inscripción de MDM**
+  - **Condiciones de uso de MDM** 
+  - **Cumplimiento de MDM**
 
 6.  Especifique los dispositivos de los usuarios que se deben administrar mediante Microsoft Intune. Los dispositivos Windows 10 de estos usuarios se inscribirán automáticamente para la administración con Microsoft Intune.
 
@@ -32,8 +32,3 @@ Con la inscripción automática, los usuarios pueden inscribir en Intune equipos
   - **Ninguno**
 
 7. Elija **Guardar**.
-
-
-<!--HONumber=Feb17_HO2-->
-
-

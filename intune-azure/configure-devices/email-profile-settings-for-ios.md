@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/19/2016
+ms.date: 02/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,14 @@ ms.assetid: 9f0fa6af-3669-439a-bd0d-75d8b1a0b135
 ms.reviewer: heenamac
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: f16c9dfb41cb2cfe07ce473a131dac767dee9c74
-ms.openlocfilehash: 255a5e8c8b430e15aba989e1ce805f7d627f0e0c
+ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
+ms.openlocfilehash: 186630903a606842406ff1d76115c1fa7d1c962e
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
-# <a name="email-profile-settings-for-ios-devices-in-intune-azure-preview"></a>Configuración del perfil de correo electrónico para dispositivos iOS en la versión preliminar de Intune Azure
+# <a name="email-profile-settings-for-ios-devices-in-microsoft-intune"></a>Configuración del perfil de correo electrónico para dispositivos iOS en Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -39,9 +40,4 @@ ms.openlocfilehash: 255a5e8c8b430e15aba989e1ce805f7d627f0e0c
 - **Permitir a los mensajes moverse a otras cuentas de correo electrónico**: esta opción permite a los usuarios mover mensajes de correo electrónico entre distintas cuentas que tengan configuradas en su dispositivo.
 - **Permitir el envío de correo electrónico desde aplicaciones de terceros**: permite que el usuario seleccione este perfil como la cuenta predeterminada para enviar correo electrónico, y permite que aplicaciones de terceros abran el correo electrónico en la aplicación de correo electrónico nativa, por ejemplo, para adjuntar archivos a un correo electrónico.
 - **Sincronizar direcciones de correo electrónico usadas recientemente**: esta característica permite sincronizar la lista de direcciones de correo electrónico que se han usado recientemente en el dispositivo.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

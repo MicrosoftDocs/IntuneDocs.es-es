@@ -13,15 +13,17 @@ ms.technology:
 ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 22c30f51bf83219053f97310ed1830ad9e01acd8
-ms.openlocfilehash: bd270cd4b04894d4824487d36ea4f0c1929dd568
+ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
+ms.openlocfilehash: 96c25307c4060a8872ba4f6de47992c4d9f9dd85
+ms.lasthandoff: 02/14/2017
 
 
 ---
 
-# <a name="monitor-mobile-app-management-policies-with-microsoft-intune"></a>Supervisión de directivas de administración de aplicaciones móviles con Microsoft Intune
-Puede supervisar el estado de cumplimiento de las directivas de administración de aplicaciones móviles (MAM) que haya aplicado a los usuarios. Podrá encontrar información sobre los usuarios afectados por las directivas MAM, el estado de cumplimiento y cualquier problema que puedan estar experimentando los usuarios finales.
+# <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Supervisión de directivas de protección de aplicaciones con Microsoft Intune
+Puede supervisar el estado de cumplimiento de las directivas de protección de aplicaciones que haya aplicado a los usuarios. Podrá encontrar información sobre los usuarios afectados por las directivas de protección de aplicaciones, el estado de cumplimiento y cualquier problema que puedan estar experimentando sus usuarios.
 
 Hay tres lugares diferentes para supervisar el estado de cumplimiento:
 
@@ -59,7 +61,7 @@ Puede obtener la vista detallada del resumen si selecciona las ventanas **Estado
 Puede buscar un solo usuario y examinar su estado de cumplimiento. La hoja **Informes de aplicaciones** muestra la siguiente información sobre el usuario seleccionado:
 - Dispositivos que están asociados a la cuenta de usuario
 
-- Aplicaciones con la directiva MAM en el dispositivo
+- Aplicaciones con una directiva de protección de aplicaciones en el dispositivo
 
 - Estado:
 
@@ -68,7 +70,7 @@ Puede buscar un solo usuario y examinar su estado de cumplimiento. La hoja **Inf
   - **No protegido:** significa que la directiva se implementó para el usuario, pero la aplicación no se ha usado desde entonces en el contexto de trabajo.
 
 >[!NOTE]
-> Si el usuario que buscó no tiene la directiva de MAM implementada, aparecerá un mensaje informándole de que el usuario no será objeto de ninguna directiva MAM.
+> Si los usuarios que ha buscado no tienen la directiva de protección de aplicaciones implementada, verá un mensaje indicándole que el usuario no es objeto de ninguna directiva de protección de aplicaciones.
 
 Para ver los informes sobre un usuario, siga estos pasos:
 
@@ -87,7 +89,7 @@ La vista detallada muestra el mensaje de error, la aplicación a la que se obtuv
 
 ## <a name="reporting-view"></a>Generación de informes
 
-Puede encontrar los mismos informes en la vista detallada e informes adicionales que le ayudarán en el estado de cumplimiento de la directiva MAM:
+Puede encontrar los mismos informes en la vista detallada e informes adicionales que le ayudarán en el estado de cumplimiento de la directiva de protección de aplicaciones:
 
 ![Captura de pantalla&4;](../media/MAM-reporting-7.png)
 
@@ -97,13 +99,13 @@ Puede encontrar los mismos informes en la vista detallada e informes adicionales
 
     -   Estado de usuario para la actividad de MAM administrada (protegido): este informe resume la actividad de cada aplicación MAM administrada por el usuario.
 
-        -   Muestra todas las aplicaciones de destino de las directivas MAM para cada usuario y desglosa el estado de cada aplicación como registrado con directivas MAM, o destinadas a una directiva MAM, pero que la aplicación nunca se registró.
+        -   Muestra todas las aplicaciones de destino de las directivas de protección de aplicaciones para cada usuario y desglosa el estado de cada aplicación como registrado con directivas de protección de aplicaciones, o destinadas a una directiva de protección de aplicaciones, pero la aplicación nunca se ha registrado.
 <br></br>
     -   Estado de usuario para la actividad de MAM sin administrar (sin proteger): este informe resume la actividad de las aplicaciones habilitadas por MAM que están sin administrar actualmente por el usuario. Esto puede ocurrir por los siguientes motivos:
 
-        -   Estas aplicaciones están siendo utilizadas por un usuario o una aplicación que no está destinada actualmente mediante una directiva MAM.
+        -   Estas aplicaciones están siendo usadas por un usuario o una aplicación que no está destinada actualmente mediante una directiva de protección de aplicaciones.
 
-        -   Todas las aplicaciones están registradas, pero no reciben ninguna directiva MAM.
+        -   Todas las aplicaciones están registradas, pero no reciben ninguna directiva de protección de aplicaciones.
 
 ![Captura de pantalla&2;](../media/MAM-reporting-4.png)
 
@@ -131,11 +133,6 @@ Siga estos pasos para generar el informe de protección de aplicaciones:
 ## <a name="see-also"></a>Consulte también
 [Administrar la transferencia de datos entre aplicaciones iOS](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-* [Qué esperar cuando la aplicación Android está administrada por directivas MAM](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Qué esperar cuando la aplicación iOS está administrada por directivas MAM](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
+* [What to expect when your Android app is managed by app protection policies](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)
+* [Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
 
