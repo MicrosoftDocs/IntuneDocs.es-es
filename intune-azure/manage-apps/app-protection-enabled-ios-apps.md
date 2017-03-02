@@ -1,5 +1,6 @@
 ---
-title: "Aplicaciones iOS con directivas de protección de aplicaciones | Versión preliminar de Intune Azure | Microsoft Docs"
+title: "Aplicaciones iOS con directivas de protección de aplicaciones | Versión preliminar de Intune Azure"
+titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: este tema describe qué esperar cuando la aplicación iOS está administrada por directivas de protección de aplicaciones."
 keywords: 
 author: NathBarn
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 89afae81076d563f4ebba289f8fa82eaea6ab234
-ms.openlocfilehash: ae646cf3dd1b1469b9f87ac66ad7171d77ef6518
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 5a4ce6d6248378ba48cddeaefb941c139dd990f6
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -63,9 +66,4 @@ Si usa un dispositivo iOS, puede que aparezca un mensaje de bloqueo si intenta a
 [What to expect when your Android app is managed by app protection policies](app-protection-enabled-android-apps.md) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)
 ### <a name="see-also"></a>Consulte también
 [Creación e implementación de directivas de protección de aplicaciones con Microsoft Intune](app-protection-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

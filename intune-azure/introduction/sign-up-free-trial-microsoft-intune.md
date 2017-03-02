@@ -1,5 +1,6 @@
 ---
-title: "Registro para una evaluación gratuita de 30 días | Versión preliminar de Intune Azure | Microsoft Docs"
+title: "Suscríbase para disfrutar de una prueba gratuita de 30 días"
+titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: cómo registrarse en Intune en Azure."
 keywords: 
 author: lindavr
@@ -12,9 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: cd98141b4b377f0013607f2a2ebb93a93cd7f0ce
-ms.openlocfilehash: ce69e7efbee286839a1bf3440db692bd237b0e06
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 29b33341b136c8e8d76b666f94a9f620212944c5
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -144,9 +147,4 @@ Obtenga más información sobre el uso de las cuentas de usuario de Azure Active
 - [Requisitos de Multi-factor Authentication:](https://docs.microsoft.com/en-us/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
 
 Obtenga más información sobre [Intune con System Center Configuration Manager](https://docs.microsoft.com/en-us/sccm/mdm/understand/hybrid-mobile-device-management)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -11,9 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: b9a51cb2123bc9b6e73c0bf72ef5393252e8d37d
+ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
+ms.openlocfilehash: ea5407c284f5408774ee5934ad6151bccfd7e6d1
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -61,7 +63,7 @@ ms.openlocfilehash: b9a51cb2123bc9b6e73c0bf72ef5393252e8d37d
 |-|-|
 |Perfil de correo electrónico|Esta directiva se puede usar para configurar las [opciones de acceso a correo electrónico](/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) para clientes de correo electrónico específicos en dispositivos móviles reduciendo al mínimo la configuración que debe llevar a cabo el usuario final.|
 |EMS|Microsoft Enterprise Mobility + Security (anteriormente Enterprise Mobility Suite) protege los datos de la empresa al mismo tiempo que permite que los usuarios [accedan a las aplicaciones y el contenido que necesitan](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility).|
-|Usuario final|[Usuarios de dispositivos como teléfonos y equipos](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) que se administran mediante Intune.|
+|Usuario final|[Usuarios de dispositivos como teléfonos y equipos](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune) que se administran mediante Intune.|
 |Inscribir|Microsoft Intune usa la [inscripción](/intune/deploy-use/enroll-devices-in-microsoft-intune) para incluir dispositivos en la administración y permitir el acceso a los recursos.|
 
 ## <a name="f"></a>F
@@ -145,9 +147,4 @@ ms.openlocfilehash: b9a51cb2123bc9b6e73c0bf72ef5393252e8d37d
 |||
 |-|-|
 |Perfil de Wi-Fi|Directiva que implementa la [configuración de red inalámbrica](/intune/deploy-use/wi-fi-connections-in-microsoft-intune) en los dispositivos para permitir que los usuarios se conecten a la red de la empresa sin necesidad de que conozcan o configuren las opciones.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

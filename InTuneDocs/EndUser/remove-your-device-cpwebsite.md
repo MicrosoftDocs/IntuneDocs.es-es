@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,8 +18,9 @@ ms.reviewer: mamoriss
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a1e346047fb029689c0c9c68073b89b9bac20530
-ms.openlocfilehash: f557aab61a61bde8937d72c99ccf652787170002
+ms.sourcegitcommit: b47b5159a5de5180859a9d3d9edc500b0853448c
+ms.openlocfilehash: dfcc383f88d82ff1a12d917905ca25740f2e9ac0
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -30,18 +31,19 @@ Si decide que ya no quiere que la empresa o la organización administren el disp
 
 Para quitar el dispositivo:
 
-1.  Abra el [sitio web del portal de empresa](http://portal.manage.microsoft.com) y pulse el nombre del dispositivo que quiera quitar.
+1.    En el [sitio web del Portal de empresa](http://portal.manage.microsoft.com), pulse el botón __menú__ ![Pequeña imagen del botón menú, tres barras horizontales apiladas en paralelo.](/Intune/whats-new/media/CP_hamburger_menu.png), luego seleccione __Mis dispositivos__.
 
-2.  Pulse en **Quitar**.
+  ![Imagen del sitio web del Portal de empresa con un menú lateral expandido en el lado izquierdo de la pantalla con botones Inicio, Todas las aplicaciones, Mis dispositivos, Departamento de soporte técnico y Cerrar sesión.](/media/iwp-expanded-sidebar.png)
 
-    ![Quitar la opción de dispositivo en el sitio web de Portal de empresa](./media/iwp-screen-with-all-options.png)
+2. En la página __Mis dispositivos__, seleccione el nombre del dispositivo que quiere quitar.
 
-3. Lea el mensaje de advertencia y después pulse **Quitar** para quitar el dispositivo del portal de empresa.
+    ![Captura de pantalla de la página Mis dispositivos con un par de dispositivos sin identificar sobre el mensaje emergente para inscribir los dispositivos que no figuran en la lista o para identificar los no identificados.](./media/macOS_enroll_002_tap_here_banner.png)
+
+3.    El dispositivo se abrirá en una ventana emergente. Pulse el botón **Quitar**.
+
+      ![Todas las opciones de un dispositivo seleccionado en el sitio web del Portal de empresa, incluidas Cambiar nombre, Quitar, Restablecer dispositivo, Restablecer código de acceso y Bloqueo remoto. ](./media/iwp-screen-with-all-options.png)
+
+4. Lea el mensaje de advertencia y después pulse **Quitar** para quitar el dispositivo del portal de empresa.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

@@ -5,17 +5,22 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 02/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 465763db-b68d-4392-a5a4-732b5b875c2b
+searchScope:
+- Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b264ea53e727f706bc635ed9c738ad605e1ac750
-ms.openlocfilehash: a88b0eafdf72f00b5c28d0347010eeee3c9effc4
+ms.sourcegitcommit: 76001bd12e5f665eb1a5a0f0fe5442f0a6fedb8c
+ms.openlocfilehash: d653d3eb1d71d30e2bf1104b1d55bfbcf2725c13
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -23,23 +28,15 @@ ms.openlocfilehash: a88b0eafdf72f00b5c28d0347010eeee3c9effc4
 
 # <a name="using-your-android-device-with-intune"></a>Uso de un dispositivo Android con Intune
 
-Este artículo contiene vínculos a todas las tareas que los usuarios finales pueden realizar en sus dispositivos administrados por Intune. Los administradores de TI pueden consultar esta información para ver los pasos que deben seguir los usuarios para llevar a cabo distintas tareas, que se agrupan en las siguientes categorías:
+Intune tiene varias características que facilitan la vida laboral. Esta es una lista de las tareas más habituales que la empresa puede pedirle.
 
-- Instalación de aplicaciones del Portal de empresa e inscripción a Intune
-- Tareas de administración posteriores a la inscripción
-- Problemas de cumplimiento
-
-## <a name="company-portal-app-installation-and-intune-enrollment"></a>Instalación de aplicaciones del Portal de empresa e inscripción a Intune
-
-La información de esta sección ayuda a los usuarios con la instalación del Portal de empresa de Intune y con la inscripción de dispositivos Android.
+## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Inscripción en Intune e instalación del Portal de empresa
 
 - [Inscripción del dispositivo en Intune](enroll-your-device-in-Intune-android.md)
 - [Creación de un perfil de trabajo e inscripción del dispositivo en Intune](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
 - [¿Qué ocurre si instala la aplicación Portal de empresa e inscribe el dispositivo en Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 
-## <a name="things-users-can-do-when-their-device-is-enrolled-in-intune"></a>Lo que pueden hacer los usuarios cuando su dispositivo está inscrito en Intune
-
-La información de esta sección ayuda a los usuarios con acciones que pueden llevar a cabo después de que sus dispositivos Android están inscritos en Intune.
+## <a name="things-you-can-do-when-your-device-is-enrolled-in-intune"></a>Cosas que puede hacer cuando el dispositivo está inscrito en Intune
 
 - [Usar aplicaciones administradas en el dispositivo](use-managed-apps-on-your-device-android.md)
 - [Cifrado del dispositivo](encrypt-your-device-android.md)
@@ -53,28 +50,4 @@ La información de esta sección ayuda a los usuarios con acciones que pueden ll
 - [¿Qué ocurre si anula la inscripción del dispositivo de Intune?](what-happens-if-you-unenroll-your-device-from-intune-android.md)
 - [¿Qué ocurre si restablece un dispositivo Android mediante la aplicación Portal de empresa?](what-happens-if-you-reset-your-device-using-the-company-portal-android.md)
 <!--- - [What is the Rights Management sharing app?](what-is-the-rms-sharing-app-android.md) --->
-
-## <a name="steps-to-fix-device-and-compliance-issues"></a>Pasos para solucionar problemas de dispositivos y cumplimiento
-
-La información de esta sección ayuda a los usuarios a solucionar problemas que podrían encontrarse al inscribir su dispositivo Android en Intune.
-
-- [Usar Registro detallado para ayudar al administrador de TI a solucionar los problemas del dispositivo](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
-- [Enviar registros al administrador de TI mediante correo electrónico](send-logs-to-your-it-admin-by-email-android.md)
-- [Enviar registros al administrador de TI mediante un cable USB](send-logs-to-your-it-admin-using-cable-android.md)
-- [Enviar errores de inscripción al administrador de TI](send-enrollment-errors-to-your-it-admin-android.md)
-- [El dispositivo no tiene la versión necesaria mínima del sistema operativo](you-need-to-update-your-android-device.md)
-- [El dispositivo no es compatible con la versión máxima de sistema operativo](your-android-version-isnt-yet-supported.md)
-- [El dispositivo se ha modificado y no se puede conectar](your-device-is-rooted-and-you-cant-connect-android.md)
-- [El dispositivo no tiene un certificado necesario](your-device-is-missing-a-required-certificate-landing-android.md)
-- [Se le pide que desactive los orígenes desconocidos](you-are-asked-to-turn-off-unknown-sources-android.md)
-- [Se le pide que desactive Depuración USB](you-are-asked-to-turn-off-usb-debugging-android.md)
-- [Se le pide que active las amenazas de seguridad](you-are-asked-to-turn-on-scan-device-for-security-threats-android.md)
-- [El dispositivo no tiene la revisión de seguridad mínima](your-device-does-not-meet-the-minimum-security-patch-android.md)
-- [Se le pide instalar Lookout for Work en un dispositivo Android](you-are-prompted-to-install-lookout-for-work-android.md)
-- [Debe solucionar una amenaza detectada por Lookout for Work en el dispositivo Android](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

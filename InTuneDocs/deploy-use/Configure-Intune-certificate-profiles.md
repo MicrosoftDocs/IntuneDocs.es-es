@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 679a20a1-e66f-4b6b-bd8f-896daf1f8175
 ms.reviewer: kmyrup
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: f5b5bc13a834cb5071ebf875f3c5512c564efe93
+ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
+ms.openlocfilehash: 70fba8f983efb245afc3fb19fa38287d1a84b1f4
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -104,7 +106,7 @@ Después de haber creado un perfil de certificado de CA de confianza, cree perfi
     >
     > Las dos variables que se admiten actualmente para el formato personalizado son `Common Name (CN)` y `Email (E)`. Mediante una combinación de estas variables y cadenas estáticas, puede crear un formato de nombre de sujeto personalizado, como el siguiente:
 
-    >     CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US
+    >     CN={{nombreDeUsuario}},E={{direcciónDeCorreoElectrónico}},OU=Móvil,O=Departamento financiero,L=Redmond,ST=Washington,C=US
 
     > En este ejemplo, el administrador crea un formato de nombre de sujeto que, además de las variables `CN` y `E`, usa cadenas para los valores Unidad organizativa, Organización, Ubicación, Estado y País. [La función CertStrToName](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx) muestra las cadenas admitidas.
 
@@ -157,9 +159,4 @@ Aprenda a usar los certificados para proteger los perfiles de VPN, el Wi-Fi y el
 -  [Configurar el acceso al correo electrónico corporativo mediante perfiles de correo electrónico](configure-access-to-corporate-email-using-email-profiles-with-Microsoft-Intune.md)
 -  [Wi-Fi connections in Microsoft Intune](wi-fi-connections-in-microsoft-intune.md) (Conexiones Wi-Fi en Microsoft Intune)
 -  [Conexiones VPN en Microsoft Intune](vpn-connections-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

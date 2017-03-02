@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
-ms.openlocfilehash: a7edd3d23a28f3496b22efdc3b17fb25b40399b6
+ms.sourcegitcommit: 1fa570c3bca5d24ad234e8437a8553bf358520b8
+ms.openlocfilehash: c0baa59aacc6475544d70d2ead5f6fbf45429dfd
+ms.lasthandoff: 02/22/2017
 
 
 ---
@@ -75,6 +76,9 @@ La configuración que se indica en esta sección se admite en Windows Phone 8.1 
   -  **BitLocker habilitado**: si BitLocker está activado, el dispositivo puede proteger los datos almacenados en la unidad frente al acceso no autorizado cuando el sistema se apaga o entra en estado de hibernación. La característica Cifrado de unidad BitLocker de Windows cifra todos los datos almacenados en el volumen del sistema operativo Windows. BitLocker usa el TPM para ayudar a proteger el sistema operativo Windows y los datos de usuario. BitLocker también ayuda a garantizar que no se manipule un equipo, incluso si se deja desatendido, se pierde o lo roban. Si el equipo incluye un TPM compatible, BitLocker lo usa para bloquear las claves de cifrado que ayudan a proteger los datos. Como resultado, las claves no son accesibles hasta que TPM termina la comprobación del estado del equipo.
   -  **Integridad de código habilitada**: la integridad de código es una característica que valida la integridad de un archivo del sistema o controlador cada vez que se carga en la memoria. La integridad de código detecta si se está cargando en el kernel un archivo del sistema o controlador sin firmar. También detecta si se ha modificado un archivo del sistema mediante software malintencionado que una cuenta de usuario ejecuta con privilegios de administrador.
   - **Arranque seguro habilitado**: si el arranque seguro está habilitado, el sistema debe arrancar en un estado de confianza de fábrica. Además, si el arranque seguro está habilitado, los componentes principales que se usan para arrancar el equipo deben tener las firmas de cifrado correctas que son de confianza para la organización que fabricó el dispositivo. El firmware UEFI lo comprueba antes de permitir iniciar el equipo. Si los archivos se han manipulado e interrumpido su firma, el sistema no arrancará.
+
+  > [!IMPORTANT]
+  > Los dispositivos de Windows no admiten software de terceros de **antimalware de inicio temprano** (ELAM) instalado como parte de la atestación de estado del dispositivo.
 
   Para obtener información sobre cómo funciona el servicio HAS, consulte [HealthAttestation CSP](https://msdn.microsoft.com/library/dn934876.aspx).
 ###  <a name="device-property-settings"></a>Configuración de propiedades de dispositivo
@@ -151,9 +155,4 @@ Para buscar la versión de sistema operativo que se usará para las opciones **M
 
 - En los equipos que ejecutan Windows 10, la versión debe establecerse en **10.0** más el número de compilación del sistema operativo devuelto por el comando **winver**. Por ejemplo, podría ser similar a 10.0.10586.
 > ![Versión de compilación del sistema operativo resaltada en el cuadro de diálogo "Acerca de Windows"](./media/ca_win10-os-version.png)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

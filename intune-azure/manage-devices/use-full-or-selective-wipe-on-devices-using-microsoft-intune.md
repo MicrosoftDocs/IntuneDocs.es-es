@@ -1,5 +1,6 @@
 ---
-title: "Borrado selectivo o completo en dispositivos mediante Intune | Versión preliminar de Intune Azure | Microsoft Docs"
+title: Borrado selectivo o completo en dispositivos mediante Intune
+titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: aprenda a realizar un borrado selectivo de los datos de empresa en un dispositivo o un borrado completo para restablecer el dispositivo a los valores predeterminados de fábrica."
 keywords: 
 author: staciebarker
@@ -12,9 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 990062ecf03a117dad74eb71e3f40abb79f22be6
-ms.openlocfilehash: 9188f4bb4ea526227ccd9f2029fc9b44cbd4a334
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 22e188e81f2bc278045bb0988642b1b68372d6af
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -122,9 +125,4 @@ El **borrado selectivo** quita los datos de la empresa incluidos los datos de ad
 3.  En la hoja que muestra el nombre del dispositivo, elija **Eliminar datos de la compañía** y luego elija **Sí** para confirmar el borrado.
 
 Si el dispositivo está encendido y conectado, un comando de borrado tarda menos de 15 minutos en propagarse por cualquier tipo de dispositivo.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

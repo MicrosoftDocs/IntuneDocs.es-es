@@ -1,5 +1,6 @@
 ---
-title: "Creación e implementación de directivas de protección de aplicaciones | Versión preliminar de Intune Azure | Microsoft Docs"
+title: "Crear e implementar directivas de protección de aplicaciones"
+titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: aprenda cómo las directivas de protección de aplicaciones de Intune pueden ayudar a proteger los datos de empresa que usan las aplicaciones que administra."
 keywords: 
 author: NathBarn
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 424fae862592c1ab5b4221fb5ad40a52c39f6760
-ms.openlocfilehash: 5112c6641577f3faefb85650dd06bd1634542019
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 607598812a414843f1f33a00670a6a85b6687878
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -74,7 +77,7 @@ La directiva solo se aplica a los usuarios que tengan asignadas licencias de Mic
 
 Los usuarios finales pueden descargar las aplicaciones desde App Store o Google Play. Para obtener más información, vea:
 * [What to expect when your Android app is managed by app protection policies](app-protection-enabled-android-apps.md) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)
-* [Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones](app-protection-enabled-ios-apps.md)
+* [What to expect when your iOS app is managed by app protection policies](app-protection-enabled-ios-apps.md) (Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones)
 
 ##  <a name="change-existing-policies"></a>Cambiar las directivas existentes
 Puede editar una directiva existente y aplicarla a los usuarios objetivo. Con todo, al cambiar las directivas existentes, los usuarios que ya han iniciado sesión en las aplicaciones no verán los cambios durante un período de 8 horas.
@@ -121,10 +124,5 @@ Para ver una lista completa de las configuraciones de directiva para iOS y Andro
 
 ### <a name="see-also"></a>Consulte también
 * [What to expect when your Android app is managed by app protection policies](app-protection-enabled-android-apps.md) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)
-* [Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones](app-protection-enabled-ios-apps.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
+* [What to expect when your iOS app is managed by app protection policies](app-protection-enabled-ios-apps.md) (Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones)
 

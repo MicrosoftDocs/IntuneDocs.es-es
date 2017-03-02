@@ -1,11 +1,11 @@
 ---
-title: Proteger dispositivos | Microsoft Docs
+title: Proteger dispositivos con Microsoft Intune | Microsoft Docs
 description: "Obtenga información acerca de algunas de las maneras en que Intune puede ayudarle a proteger los dispositivos contra accesos no autorizados y otras amenazas."
 keywords: 
 author: Robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 02/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 47263a7b0e4255cfa3fe830c969ce6116447ae9f
+ms.sourcegitcommit: 10191f27ae7efd097ea6e74b557776f8be8fe6e6
+ms.openlocfilehash: 042c5673c48bb19aacd624028260267670f9846e
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -45,10 +47,10 @@ Intune cuenta con [directivas de conformidad de dispositivos](introduction-to-de
 ### <a name="protect-apps-and-the-data-they-use"></a>Proteger las aplicaciones y los datos que usan
 Intune le ofrece una serie de características que le ayudan a proteger las aplicaciones y sus datos. Por ejemplo, las directivas de administración de aplicaciones móviles (MAM) pueden impedir que se haga una copia de seguridad de los datos desde una aplicación protegida, restringir la acción de copiar y pegar a otras aplicaciones, pedir un PIN para obtener acceso a una aplicación, etc. Para obtener más información sobre cómo proteger las aplicaciones, consulte [Proteger aplicaciones y datos con Microsoft Intune](protect-apps-and-data-with-microsoft-intune.md)
 
-## <a name="further-capabilities-for-windows-devices"></a>Otras capacidades para dispositivos Windows
+### <a name="add-an-additional-layer-of-protection-to-devices"></a>Agregar una capa adicional de protección a dispositivos
+La [autenticación multifactor (MFA)](multi-factor-authentication-azure-active-directory.md) es una forma más segura de autenticar a los usuarios de dispositivos en la red.  Con MFA, los usuarios deben confirmar su identidad, más allá del nombre de usuario y la contraseña, mediante una llamada de teléfono o un mensaje de texto.
 
-### <a name="add-an-additional-layer-of-protection-to-windows-devices"></a>Agregar una capa adicional de protección en dispositivos Windows
-[Multi-Factor Authentication (MFA)](protect-windows-devices-with-multi-factor-authentication.md) es una forma más segura de autenticar a los usuarios de dispositivos Windows y Windows Phone en la red.  Con MFA, los usuarios deben confirmar su identidad, más allá del nombre de usuario y la contraseña, mediante una llamada de teléfono o un mensaje de texto.
+## <a name="further-capabilities-for-windows-devices"></a>Otras capacidades para dispositivos Windows
 
 ### <a name="control-windows-hello-for-business-settings-on-windows-devices"></a>Controlar la configuración de Windows Hello para empresas en los dispositivos Windows
 Intune permite la integración con [Windows Hello para empresas](control-microsoft-passport-settings-on-devices-with-microsoft-intune.md) (anteriormente denominado Microsoft Passport), que es un método alternativo de inicio de sesión para Windows 10 y versiones posteriores que usa Active Directory o una cuenta de Azure Active Directory para reemplazar una contraseña, una tarjeta inteligente o una tarjeta inteligente virtual.
@@ -62,9 +64,4 @@ El bloqueo de activación es una característica que sirve para proteger los dis
 
 ## <a name="protect-windows-pcs-managed-with-the-intune-client"></a>Proteger equipos Windows administrados con el cliente de Intune
 Intune sigue siendo compatible con las directivas de seguridad para equipos Windows que no se inscriben, sino que se administran con el software cliente de equipo de Intune. Para averiguar cómo pueden ayudar estas directivas a proteger los equipos Windows, consulte [Use policies to help protect Windows PCs that run the Intune client software](policies-to-protect-windows-pcs-in-microsoft-intune.md) (Usar directivas para ayudar a proteger equipos Windows que ejecutan el software cliente de Intune).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

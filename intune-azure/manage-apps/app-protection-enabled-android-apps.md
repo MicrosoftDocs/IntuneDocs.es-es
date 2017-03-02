@@ -1,5 +1,6 @@
 ---
-title: "Aplicaciones Android con directivas de protección de aplicaciones | Versión preliminar de Intune Azure | Documentos de Microsoft"
+title: "Aplicaciones Android con directivas de protección de aplicaciones"
+titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: este tema describe qué esperar cuando la aplicación Android está administrada por directivas de protección de aplicaciones."
 keywords: 
 author: NathBarn
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 89afae81076d563f4ebba289f8fa82eaea6ab234
-ms.openlocfilehash: 949686ea8a13072e820d1fdc4f14a22e2730e8f1
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 896a7143bc0b7ec80f69482681f4ed17d79661d4
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -80,9 +83,4 @@ Se admiten los siguientes tipos de archivos:
 
 ### <a name="see-also"></a>Consulte también
 [Creación e implementación de directivas de protección de aplicaciones con Microsoft Intune](app-protection-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

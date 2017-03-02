@@ -18,8 +18,9 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
-ms.openlocfilehash: 7a4b5acea4a4bdce32c42ca33f81778965ee1abb
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: bde2ccc0c170a85e926357d54fcf4ffe6ee50fd9
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -34,7 +35,7 @@ Cuando inscribe un dispositivo Windows o Windows Phone en Intune, puede:
 
 -   Acceder a la red, el correo electrónico y los archivos de trabajo de la empresa.
 
--   Obtener aplicaciones de empresa desde el sitio web del Portal de empresa. (Para Windows 7 y Windows Vista, solo puede obtener aplicaciones de empresa desde el sitio web del Portal de empresa).
+-   Obtener aplicaciones de empresa desde el sitio web del Portal de empresa. (__Nota__: Para Windows 7 y Windows Vista, solo puede obtener aplicaciones de empresa desde el sitio web del Portal de empresa).
 
 -   Configurar automáticamente la cuenta de correo electrónico profesional o educativa.
 
@@ -67,6 +68,7 @@ Al inscribir el dispositivo, da permiso al administrador de TI para hacer cosas 
 -  El administrador de TI puede instalar aplicaciones y actualizaciones en el equipo.
 
 ## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>¿Qué ocurre cada ocho horas después de la inscripción de dispositivo?
+
 Cada ocho horas aproximadamente, los dispositivos inscritos harán lo siguiente:
 
 -   Descargar las actualizaciones de directivas o aplicaciones proporcionadas por el administrador de TI.
@@ -76,9 +78,4 @@ Cada ocho horas aproximadamente, los dispositivos inscritos harán lo siguiente:
 -   Enviar actualizaciones de inventario de aplicaciones de empresa.
 
 Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

@@ -1,11 +1,12 @@
 ---
-title: "Control de acceso basado en rol (RBAC) para Microsoft Intune | Versión preliminar de Intune Azure | Microsoft Docs"
+title: Control de acceso basado en rol (RBAC) para Microsoft Intune
+titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: aprenda cómo RBAC le permite controlar quién puede realizar acciones y efectuar cambios."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.date: 12/18/2016
+ms.date: 02/22/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 1024d2a33d843c628ffbb68f7b01a5d511191e7e
-ms.openlocfilehash: db0f88db8eee33781ccf3ef54e34089a25118726
+ms.sourcegitcommit: f4a80949dafbd3acc0413c75bbb0b8b5f5ae5664
+ms.openlocfilehash: 2507626d23beece9723134191e8747f731478ddb
+ms.lasthandoff: 02/23/2017
 
 
 ---
@@ -40,7 +43,7 @@ Los siguientes roles están integrados en Intune y puede personalizarlos o asign
 - **Administrador de Intune**: tiene permisos totales para todas las operaciones de Intune.
 - **Administrador de aplicaciones**: administrar e implementa aplicaciones y perfiles.
 - **Administrador de directivas de configuración**: administrar e implementa perfiles y opciones de configuración.
-- **Departamento de soporte**: realiza tareas de forma remota y ve información de usuarios y dispositivos.
+- **Departamento de soporte técnico**: realiza tareas remotas y ve información de usuarios y dispositivos.
 - **Operador de solo lectura**: ve información en el portal de Intune sin posibilidad de realizar cambios.
 
 
@@ -171,8 +174,3 @@ Al crear un rol personalizado, puede configurar uno o varios de los siguientes v
 |**Eliminar**|Eliminar la configuración de términos y condiciones.|
 |**Lectura**|Leer la configuración de términos y condiciones en el portal de Intune.|
 |**Actualizar**|Actualizar la configuración de términos y condiciones existente.|
-
-
-<!--HONumber=Feb17_HO1-->
-
-

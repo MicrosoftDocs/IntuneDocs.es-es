@@ -1,5 +1,6 @@
 ---
-title: "Problemas conocidos de la versión preliminar de Microsoft Intune | Versión preliminar de Intune Azure | Microsoft Docs"
+title: "Problemas conocidos de la versión preliminar de Microsoft Intune"
+titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: lea acerca de los problemas conocidos de la versión preliminar."
 keywords: 
 author: robstackmsft
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: f479b4236243fd05630229520633a09c451e6e1e
-ms.openlocfilehash: c1f79db598651b6a8a1c2a34627a901eff6a0beb
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: ee4422f462270b6466f11721aa7dc8cb2d432f7d
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -35,9 +38,4 @@ Si quiere solicitar que se agregue una nueva característica a Intune, considere
 ## <a name="administration-and-accounts"></a>Administración y cuentas
 
 - Los administradores globales (también denominados administradores de inquilinos) pueden seguir realizando tareas de administración cotidianas sin una licencia independiente de Intune o Enterprise Mobility Suite (EMS). Sin embargo, si los administradores globales quieren usar el servicio, por ejemplo para inscribir sus dispositivos, un dispositivo de la empresa o para usar el Portal de empresa de Intune, necesitarán una licencia de Intune o EMS igual que cualquier otro usuario.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
