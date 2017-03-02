@@ -1,5 +1,6 @@
 ---
-title: "¿Qué son las directivas de protección de aplicaciones | Versión preliminar de Intune Azure | Microsoft Docs"
+title: "¿Qué son las directivas de protección de aplicaciones?"
+titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: use este tema para aprender a proteger los datos de empresa con directivas de protección de aplicaciones de Microsoft Intune."
 keywords: 
 author: NathBarn
@@ -13,9 +14,11 @@ ms.technology:
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 424fae862592c1ab5b4221fb5ad40a52c39f6760
-ms.openlocfilehash: 34f5f17e581e8e146fccce6534202939d1418135
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: cb3342812a8b77f0b2ee8e2cdd1532ba6dfc651b
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -65,7 +68,7 @@ Hay otras ventajas derivadas del uso de MDM con directivas de protección de apl
 -   Android 4 o posterior
 
 Los dispositivos Windows no son compatibles actualmente. En cambio, cuando inscribe los dispositivos Windows 10 en Intune, puede usar Windows Information Protection, ya que ofrece una funcionalidad similar. Para obtener más información, vea [Protege los datos de su empresa con Windows Information Protection (WIP)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
-##  <a name="how-app-protection-policies-protect-app-data"></a>Modo en que las directivas de protección de aplicaciones protegen los datos de una aplicación
+##  <a name="how-app-protection-policies-protect-app-data"></a>Protección de datos de una aplicación con directivas de protección de aplicaciones
 
 ####  <a name="apps-without-app-protection-policies"></a>Aplicaciones sin directivas de protección de aplicaciones
 
@@ -134,9 +137,4 @@ Todas las aplicaciones móviles de Office admiten varias identidades.
 ##  <a name="next-steps"></a>Pasos siguientes
 
 [Creación e implementación de directivas de protección de aplicaciones con Microsoft Intune](app-protection-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

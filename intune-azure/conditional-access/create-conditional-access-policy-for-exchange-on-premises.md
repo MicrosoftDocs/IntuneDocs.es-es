@@ -1,5 +1,6 @@
 ---
-title: "Directiva de acceso condicional para Exchange local | Versión preliminar de Intune Azure | Microsoft Docs"
+title: Directiva de acceso condicional de Exchange local
+titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: cómo configurar el acceso condicional para Exchange local y Exchange Online heredado dedicado en Intune"
 keywords: 
 author: andredm7
@@ -12,9 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 581f9be824ea883fd0208abc3b2ecc09174cb911
-ms.openlocfilehash: a80d6a19948291cc80e42ad5a9a2f016effb2f37
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: a9edd882e2cf0fb7abf50002e9f1e8dfd5634fe1
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -96,9 +99,4 @@ La aplicación **Correo** en Windows 8.1 y versiones posteriores (cuando se insc
   - Cuando configure esta opción para bloquear el acceso, se bloqueará inmediatamente a todos los dispositivos el acceso a Exchange local inicialmente.  Los dispositivos que pertenecen a los usuarios de **Grupos incluidos** tendrán acceso una vez que el dispositivo esté inscrito en Intune y se evalúe como conforme. En dispositivos Android que no ejecuten Samsung KNOX Standard el acceso siempre estará bloqueado ya que no admiten esta configuración.
 10. En **Excepciones de la plataforma de dispositivo**, elija **Agregar** para especificar las plataformas. Si la opción **Acceso a dispositivos no administrados** está establecida en **Bloqueado**, se permitirán los dispositivos inscritos y conformes incluso si hay una excepción de plataforma para bloquear. Elija **Aceptar** para guardar la configuración.
 11. En la hoja **Local**, haga clic en **Guardar** para guardar la directiva de acceso condicional.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
