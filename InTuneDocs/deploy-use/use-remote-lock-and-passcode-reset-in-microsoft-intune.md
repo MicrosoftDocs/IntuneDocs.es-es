@@ -2,19 +2,20 @@
 title: "Restablecimiento de código de acceso y bloqueo remoto | Microsoft Docs"
 description: "Intune proporciona funcionalidades de restablecimiento de código de acceso y de bloqueo remoto."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: NathBarn
+ms.author: NathBarn
 manager: angrobe
-ms.date: 01/06/17
+ms.date: 02/16/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: b3504cc1aab8bbe553581d822af63363668a8ef7
+ms.sourcegitcommit: 87589903acd3c2e7c45d62c619571a1273e7fb76
+ms.openlocfilehash: 8de91a0e0640b9c0fb281686d4ecd4983134d4af
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Ayudar a proteger los dispositivos con el restablecimiento de código de acceso y el bloqueo remoto
@@ -24,7 +25,7 @@ ms.openlocfilehash: b3504cc1aab8bbe553581d822af63363668a8ef7
 Microsoft Intune proporciona funcionalidades de restablecimiento de código de acceso y de bloqueo remoto.
 
 ## <a name="lock-a-device-remotely"></a>Bloquear un dispositivo de forma remota
-Si un usuario pierde su dispositivo, es posible bloquearlo de forma remota. El dispositivo debe tener ya un PIN o código de acceso establecido en él para poder usar el bloqueo remoto. 
+Si un usuario pierde su dispositivo, es posible bloquearlo de forma remota. El dispositivo debe tener ya un PIN o código de acceso establecido en él para poder usar el bloqueo remoto.
 
 La tabla siguiente muestra el modo en que se puede usar el bloqueo remoto en distintas plataformas móviles.
 
@@ -33,7 +34,8 @@ La tabla siguiente muestra el modo en que se puede usar el bloqueo remoto en dis
 |macOS|No compatible|
 |iOS|Compatible.|
 |Android|Compatible.|
-|Windows 10 y Windows 10 Mobile|Compatible.|
+|Windows 10 Mobile|Compatible.|
+|Windows 10 Escritorio|No compatible|
 |Windows Phone 8 y Windows Phone 8.1|Compatible.|
 |Windows RT 8.1 y Windows RT|Compatible si el usuario actual del dispositivo es el mismo usuario que inscribió el dispositivo.|
 |Windows 8.1|Compatible si el usuario actual del dispositivo es el mismo usuario que inscribió el dispositivo.|
@@ -84,6 +86,6 @@ No se admite el restablecimiento de código de acceso para equipos Windows inscr
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

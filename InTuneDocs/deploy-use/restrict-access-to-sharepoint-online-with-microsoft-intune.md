@@ -1,5 +1,5 @@
 ---
-title: Proteger el acceso a SharePoint Online | Microsoft Docs
+title: Proteger SharePoint Online | Microsoft Docs
 description: Proteja y controle el acceso a los datos de la empresa en SharePoint Online mediante el uso del acceso condicional.
 keywords: 
 author: andredm7
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
-ms.openlocfilehash: 2efac12d3564932ebcb3cbe4165fbc7ad4595172
+ms.sourcegitcommit: c4077c41da897e570e5d29702ba0e776c7deee6b
+ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
 
 
 ---
@@ -143,7 +144,7 @@ A continuación, configure la directiva para requerir que solo los dispositivos 
         Esto requiere que cualquier dispositivo usado para obtener acceso a **SharePoint Online** se inscriba en Intune y cumpla las directivas. Cualquier aplicación cliente que use la **autenticación moderna** estará sujeta a la directiva de acceso condicional. Si la plataforma no es compatible actualmente con Intune, el acceso a **SharePoint Online** se bloqueará.
 
         Seleccionar la opción **Todas las plataformas** significa que Azure Active Directory aplica esta directiva a todas las solicitudes de autenticación, independientemente de la plataforma notificada por la aplicación cliente. Todas las plataformas tienen que inscribirse y ser compatibles, excepto:
-        *   Los dispositivos Windows, que deben estar inscritos y ser compatibles, estar unidos a dominio con Active Directory local, o ambos.
+        *    Los dispositivos Windows, que deben estar inscritos y ser compatibles, estar unidos a dominio con Active Directory local, o ambos.
         * Plataformas no compatibles como Mac. Por el contrario, las aplicaciones que usan autenticación moderna que proceden de estas plataformas seguirán bloqueadas.
 
     -   **Plataformas específicas**
@@ -153,8 +154,6 @@ A continuación, configure la directiva para requerir que solo los dispositivos 
      En el caso de los equipos de Windows, un equipo debe estar unido a un dominio o inscrito con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] y ser conforme. Puede establecer los requisitos siguientes:
 
      -   **Los dispositivos deben estar unidos a un dominio o ser conformes.** Elija esta opción para requerir que el equipo esté unido al dominio o que cumpla las directivas establecidas en [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Si un equipo no cumple alguno de estos requisitos, se le solicita al usuario que inscriba el dispositivo en [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
-
-     -   **Los dispositivos deben estar unidos a un dominio.** Elija esta opción para requerir que los equipos estén unidos al dominio para tener acceso a Exchange Online. Si el equipo no está unido a un dominio, el acceso al correo electrónico se bloquea y el usuario debe ponerse en contacto con el administrador de TI.
 
      -   **Los dispositivos deben ser conformes.** Elija esta opción para requerir que los equipos estén inscritos en [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] y sean conformes. Si el equipo no está inscrito, se muestra un mensaje con instrucciones sobre cómo inscribirse.
 
@@ -199,6 +198,6 @@ Seleccione cualquier grupo de dispositivos móviles. Luego, en la pestaña **Dis
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 

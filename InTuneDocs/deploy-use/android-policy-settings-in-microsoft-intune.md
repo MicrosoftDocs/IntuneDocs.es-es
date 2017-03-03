@@ -1,6 +1,6 @@
 ---
 
-title: "Configuración de directivas de Android y Samsung KNOX Standard | Microsoft Docs"
+title: "Opciones de configuración de directivas de Android y Samsung KNOX | Microsoft Docs"
 description: "Cree directivas que controlen la configuración y las características en los dispositivos Android que administra con Intune."
 keywords: 
 author: robstackmsft
@@ -14,9 +14,10 @@ ms.technology:
 ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a90e5bc6ed9c4c7447f6ed673f9b75db99257c04
-ms.openlocfilehash: 3f7236989ec2d444601aba4a594175a289e2fc77
+ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
+ms.openlocfilehash: 2da96c2ffb6cc826494972ab8c88ce62981eeae6
 
 
 ---
@@ -211,6 +212,6 @@ Intune admite un número limitado de directivas personalizadas de Android en est
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

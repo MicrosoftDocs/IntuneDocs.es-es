@@ -1,11 +1,11 @@
 ---
-title: "Sincronización manual del dispositivo con el sitio web de Portal de empresa | Microsoft Docs"
+title: Sincronizar el dispositivo con el sitio web del portal de empresa | Microsoft Docs
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/05/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,16 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: fbbe9233ae2e07209356a0cec14d085f742e6436
+ms.sourcegitcommit: a87fe0cf9591040f1455d71b1f40cd0705ba8abf
+ms.openlocfilehash: 1dded693cb60bacb9c0a445bb26c818dde778a7a
 
 
 ---
 
 
-# <a name="use-the-company-portal-website-to-sync-your-device"></a>Use el sitio web Portal de empresa para sincronizar el dispositivo
+# <a name="sync-your-device-with-the-company-portal-website"></a>Sincronizar el dispositivo con el sitio web del portal de empresa
 
 En algunas ocasiones, instalar una aplicación o realizar alguna otra tarea puede demorar más de lo normal. Si demora demasiado, puede intentar sincronizar manualmente el dispositivo para acelerar la tarea que pretende hacer.
 
@@ -38,6 +39,6 @@ En algunas ocasiones, instalar una aplicación o realizar alguna otra tarea pued
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

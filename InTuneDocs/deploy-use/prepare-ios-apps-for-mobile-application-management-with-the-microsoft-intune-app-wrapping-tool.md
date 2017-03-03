@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b0abdd44716f8fe0ff8298fa8f6b9f4197964cb9
-ms.openlocfilehash: 06f0f7c436eef63a63182196d4d124b2d928a083
+ms.sourcegitcommit: ee3a0b80f7e534262fbcc8d897e069cff1e35727
+ms.openlocfilehash: a68ffc7be5bcaf55a789ab96035a3f23be0b8b3a
 
 
 ---
@@ -107,6 +108,9 @@ Necesitará lo siguiente para distribuir aplicaciones ajustadas con Intune:
 
   ![Seleccionar certificado interno y ad hoc](../media/app-wrapper/iOS-signing-cert-3.png)
 
+>[!NOTE]
+>Si no planea distribuir la aplicación y solo quiere probarla internamente, puede usar un certificado de desarrollo de aplicaciones de iOS en lugar de un certificado para producción. Si usa un certificado de desarrollo, asegúrese de que el perfil móvil de aprovisionamiento haga referencia a los dispositivos en los que se instalará la aplicación.
+
 7. Haga clic en **Siguiente** en la parte inferior de la página.
 
 8. Lea las instrucciones sobre la creación de una **solicitud de firma de certificado (CSR)** con la aplicación Acceso a llaves en su equipo macOS.
@@ -131,11 +135,12 @@ Necesitará lo siguiente para distribuir aplicaciones ajustadas con Intune:
 
 14. Haga doble clic en el archivo de certificado que acaba de descargar para agregar el certificado a una cadena de claves.
 
-15. Abra **Acceso a llaves** de nuevo. Busque su certificado escribiendo **"iPhone"** en la barra de búsqueda de la parte superior derecha de la ventana de Acceso a llaves. Haga doble clic en el elemento para que aparezca el menú y haga clic en **Obtener información**.
+15. Abra **Acceso a llaves** de nuevo. Busque su certificado al escribir su nombre en la barra de búsqueda de la parte superior derecha. Haga doble clic en el elemento para que aparezca el menú y haga clic en **Obtener información**. En las pantallas de ejemplo se está usando un certificado de desarrollo en lugar de un certificado de producción.
+
 
   ![Agregar su certificado a una cadena de claves](../media/app-wrapper/iOS-signing-cert-8.png)
 
-16. Aparece una ventana informativa. Desplácese a la parte inferior y busque en la etiqueta **Huellas digitales**. Copie la cadena **SHA1** para usarla como el parámetro -c para la herramienta de ajuste de aplicaciones.
+16. Aparece una ventana informativa. Desplácese a la parte inferior y busque en la etiqueta **Huellas digitales**. Copie la cadena **SHA1** (borrosa) para usarla como argumento para "-c" para la herramienta de ajuste de aplicaciones.
 
   ![Agregar su certificado a una cadena de claves](../media/app-wrapper/iOS-signing-cert-9.png)
 
@@ -397,6 +402,6 @@ Use los procedimientos recomendados de seguridad y privacidad siguientes al usar
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO2-->
 
 

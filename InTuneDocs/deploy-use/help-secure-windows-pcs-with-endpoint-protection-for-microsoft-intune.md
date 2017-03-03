@@ -2,10 +2,10 @@
 title: Endpoint Protection para equipos Windows | Microsoft Docs
 description: "Proteja los equipos administrados con Endpoint Protection, que ofrece protección en tiempo real contra las amenazas de malware."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: arob98
-ms.date: 07/25/2016
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 6e2658cdfcd0b78a254c375fe39b67f7ef9afad6

@@ -1,11 +1,11 @@
 ---
-title: Cifrado del dispositivo | Microsoft Docs
-description: "Describe cómo cifrar un dispositivo Android"
+title: "Cómo proteger el dispositivo Android con cifrado | Microsoft Docs"
+description: Proteger su dispositivo Android
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/7/2016
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,19 +13,25 @@ ms.technology:
 ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 54439c96b75efd60e2068207eb1602e669504831
+ms.sourcegitcommit: 879f8faa37309edae9d1cbb0456d372ff27b8b98
+ms.openlocfilehash: a36c7dca0274b465315493261f03ab362c09383a
+ms.lasthandoff: 02/23/2017
 
 
 ---
 
 
-# <a name="encrypt-your-device"></a>Cifrado del dispositivo
+# <a name="how-to-protect-your-android-device-using-encryption"></a>Cómo proteger el dispositivo Android mediante el cifrado
 
-Haga lo siguiente si su empresa u organización solicita que se cifre el dispositivo Android para poder tener acceso a los archivos, al correo electrónico o a los datos de la empresa. Si el administrador de TI así lo requiere, puede que tenga que establecer un PIN o una contraseña antes del cifrado.
+Cuando cifra un dispositivo, está ajustando la información en una capa de código de protección que evita que los usuarios sin autorización tengan acceso a él. Para asegurarnos de que su información está protegida, la organización le pide que cifre su dispositivo Android antes de poder acceder a archivos, correos electrónicos o datos de la empresa.
+
+> [!Note]
+> Si el administrador de TI así lo requiere, puede que tenga que establecer un PIN o una contraseña antes del cifrado.
 
 Si anula la inscripción del dispositivo, este permanecerá cifrado.
 
@@ -35,6 +41,9 @@ Si anula la inscripción del dispositivo, este permanecerá cifrado.
     (En algunos teléfonos, tendrá que elegir **Almacenamiento** &gt; **Cifrado de almacenamiento** o **Almacenamiento** &gt; **Pantalla de bloqueo y seguridad** &gt; **Otras opciones de seguridad** para encontrar la opción "Cifrar").
 
 3.  Siga las instrucciones de la pantalla. Durante el cifrado, el dispositivo podría reiniciarse varias veces.
+
+> [!Note]
+> Determinados dispositivos Android no se pueden cifrar. Descubra más [aquí](your-device-appears-encrypted-but-cp-says-otherwise-android.md).
 
 ### <a name="what-to-do-if-you-have-issues"></a>Qué hacer si tiene problemas
 **Problema:** con el dispositivo ya cifrado, ocurre una de las siguientes cosas:
@@ -59,10 +68,6 @@ Si anula la inscripción del dispositivo, este permanecerá cifrado.
 
     5. Abra la aplicación de Portal de empresa, seleccione el dispositivo y pulse **Comprobar cumplimiento**.
 
+
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI (visite el [sitio web del Portal de empresa](http://portal.manage.microsoft.com) para obtener la información de contacto), o escriba al [equipo de Microsoft Android](mailto:wintunedroidfbk@microsoft.com).
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 01/10/17
+ms.date: 03/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 151e71f719b459a4f2c9612035201908d2610980
-ms.openlocfilehash: f6cbca6207b0e253077682bbf213a916b20c5247
+ms.sourcegitcommit: 785e7514c6c6109cfec61a47ae2fc7183c7c2330
+ms.openlocfilehash: 91c6a040f8fd3990c8d48087ac7397db8360f666
+ms.lasthandoff: 01/25/2017
 
 
 ---
@@ -31,10 +33,10 @@ En este tema se proporcionan sugerencias para solucionar problemas de inscripci�
 
 Antes de empezar a solucionar problemas, compruebe que ha configurado Intune correctamente para habilitar la inscripción. Puede leer sobre estos requisitos de configuración en:
 
--   [Preparar la inscripción de dispositivos en Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment)
--   [Configurar la administración de dispositivos iOS y Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
--   [Configurar la administración de Windows Phone y Windows 10 Mobile con Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
--   [Configurar la administración de dispositivos Windows](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
+-    [Preparar la inscripción de dispositivos en Microsoft Intune](/intune/deploy-use/prerequisites-for-enrollment)
+-    [Configurar la administración de dispositivos iOS y Mac](/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
+-    [Configurar la administración de Windows Phone y Windows 10 Mobile con Microsoft Intune](/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
+-    [Configurar la administración de dispositivos Windows](/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 
 
 Los usuarios de dispositivos administrados pueden recopilar registros de inscripción y diagnóstico para que usted pueda revisarlos. Aquí se proporcionan instrucciones de usuario para recopilar registros:
@@ -227,16 +229,16 @@ El error de certificado se genera porque los dispositivos Android requieren incl
 
 Para corregir el problema, importe los certificados a los certificados personales de equipos en los servidores proxy o el servidor AD FS de la manera siguiente:
 
-1.  En los servidores proxy y ADFS, inicie la consola de Administración de certificados del equipo local; para ello, haga clic con el botón derecho en el botón **Inicio**, haga clic en **Ejecutar** y escriba **certlm.msc**.
-2.  Expanda **Personal** y seleccione **Certificados**.
-3.  Busque el certificado correspondiente a la comunicación del servicio AD FS (un certificado firmado públicamente) y haga doble clic para ver sus propiedades.
-4.  Seleccione la pestaña **Ruta de certificación** para ver los certificados primarios del certificado.
-5.  En cada certificado primario, seleccione **Ver certificado**.
-6.  Seleccione la pestaña **Detalles** y elija **Copiar en archivo...**.
-7.  Siga las instrucciones del asistente para exportar o guardar la clave pública del certificado en la ubicación de archivo deseada.
-8.  Importe los certificados primarios que se exportaron en el paso 3 a la carpeta Equipo local\Personal\Certificados; para ello, haga clic con el botón derecho en **Certificados**, seleccione **Todas las tareas** > **Importar** y, luego, siga las instrucciones del asistente para importar los certificados.
-9.  Reinicie los servidores AD FS.
-10. Repita los pasos anteriores en todos los servidores proxy y de AD FS.
+1.    En los servidores proxy y ADFS, inicie la consola de Administración de certificados del equipo local; para ello, haga clic con el botón derecho en el botón **Inicio**, haga clic en **Ejecutar** y escriba **certlm.msc**.
+2.    Expanda **Personal** y seleccione **Certificados**.
+3.    Busque el certificado correspondiente a la comunicación del servicio AD FS (un certificado firmado públicamente) y haga doble clic para ver sus propiedades.
+4.    Seleccione la pestaña **Ruta de certificación** para ver los certificados primarios del certificado.
+5.    En cada certificado primario, seleccione **Ver certificado**.
+6.    Seleccione la pestaña **Detalles** y elija **Copiar en archivo...**.
+7.    Siga las instrucciones del asistente para exportar o guardar la clave pública del certificado en la ubicación de archivo deseada.
+8.    Importe los certificados primarios que se exportaron en el paso 3 a la carpeta Equipo local\Personal\Certificados; para ello, haga clic con el botón derecho en **Certificados**, seleccione **Todas las tareas** > **Importar** y, luego, siga las instrucciones del asistente para importar los certificados.
+9.    Reinicie los servidores AD FS.
+10.    Repita los pasos anteriores en todos los servidores proxy y de AD FS.
 Ahora, el usuario podrá iniciar sesión en el Portal de empresa en el dispositivo Android.
 
 **Para validar que el certificado se instaló correctamente**:
@@ -260,7 +262,7 @@ Si el certificado de servidor se instaló correctamente, verá marcas de verific
 
 **Resolución:** comparta las soluciones siguientes con los usuarios finales para ayudarles a recuperar el acceso a recursos corporativos.
 
-Cuando los usuarios inician la aplicación de Portal de empresa de iOS, puede indicar si el dispositivo ha perdido el contacto con Intune. Si detecta que no hay ningún contacto, intenta automáticamente sincronizar con Intune para volver a conectar y los usuarios verán la notificación en línea **Intentando sincronizar...** en línea **Intentando sincronizar…** 
+Cuando los usuarios inician la aplicación de Portal de empresa de iOS, puede indicar si el dispositivo ha perdido el contacto con Intune. Si detecta que no hay ningún contacto, intenta automáticamente sincronizar con Intune para volver a conectar y los usuarios verán la notificación en línea **Intentando sincronizar...** en línea Intentando sincronizar…
 
   ![Notificación Intentando sincronizar](./media/ios_cp_app_trying_to_sync_notification.png)
 
@@ -268,11 +270,11 @@ Si la sincronización se realiza correctamente, verá la notificación en línea
 
   ![Notificación Sincronización correcta](./media/ios_cp_app_sync_successful_notification.png)
 
-Si la sincronización es incorrecta, los usuarios verán una notificación en línea **No se puede sincronizar** en la aplicación del Portal de empresa de iOS. 
+Si la sincronización es incorrecta, los usuarios verán una notificación en línea **No se puede sincronizar** en la aplicación del Portal de empresa de iOS.
 
   ![Notificación No se puede sincronizar](./media/ios_cp_app_unable_to_sync_notification.png)
 
-Para corregir el problema, los usuarios deben seleccionar el botón **Configurar**, que está a la derecha de la notificación **No se puede sincronizar**. El botón Configurar lleva a los usuarios a la pantalla de flujo de Configuración de acceso de la empresa, donde pueden seguir las indicaciones para inscribir su dispositivo. 
+Para corregir el problema, los usuarios deben seleccionar el botón **Configurar**, que está a la derecha de la notificación **No se puede sincronizar**. El botón Configurar lleva a los usuarios a la pantalla de flujo de Configuración de acceso de la empresa, donde pueden seguir las indicaciones para inscribir su dispositivo.
 
   ![Pantalla Configuración de acceso a la empresa](./media/ios_cp_app_company_access_setup.png)
 
@@ -294,32 +296,20 @@ Una vez inscrito, los dispositivos vuelven a un estado correcto y recuperan el a
 ### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>El dispositivo iOS inscrito no aparece en la consola cuando se usa System Center Configuration Manager con Intune
 **Problema:** el usuario inscribe el dispositivo iOS, pero no aparece en la consola de administración de Configuration Manager. El dispositivo no indica que se ha inscrito. Posibles causas:
 
-- Puede que haya inscrito el conector de Intune en una cuenta y que después lo haya inscrito en otra cuenta.
+- Microsoft Intune Connector en el sitio de Configuration Manager no se comunica con el servicio Intune.
+- El componente Data Discovery Manager (ddm) o el componente State Manager (statmgr) no está procesando mensajes desde el servicio Intune.
 - Puede que haya descargado el certificado MDM de una cuenta y que lo haya usado en otra cuenta.
 
 
-**Solución:** lleve a cabo los pasos siguientes:
+**Resolución:** revise los siguientes archivos de registro para ver si contienen errores:
 
-1. Deshabilite iOS en el conector de Windows Intune.
-    1. Haga clic con el botón derecho en la suscripción de Intune y seleccione **Propiedades**.
-    1. En la pestaña "iOS", desactive la opción "Habilitar inscripción de iOS".
+- dmpdownloader.log
+- ddm.log
+- statmgr.log
 
-
-
-1. En SQL, ejecute los pasos siguientes en la base de datos de CAS.
-
-    1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%'
-    1. delete from MDMPolicy where PolicyType = 7
-    1. delete from MDMPolicyAssignment where PolicyType = 7
-    1. update SC_ClientComponent_Property set Value2 = '' where Name like '%APNS%'
-    1. delete from MDMPolicy where PolicyType = 11
-    1. delete from MDMPolicyAssignment where PolicyType = 11
-    1. DELETE Drs_Signals
-1. Reinicie el servicio SMS Executive o el servidor de CM.
+Se agregarán pronto ejemplos sobre lo que debe buscar en estos archivos de registro.
 
 
-
-1. Obtenga un nuevo certificado de APNs y cárguelo. Haga clic con el botón derecho en la suscripción de Intune en el panel izquierdo de Configuration Manager. Seleccione **Crear solicitud de certificado APNs** y siga las instrucciones.
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>Problemas al usar System Center Configuration Manager con Intune
 ### <a name="mobile-devices-disappear"></a>Los dispositivos móviles desaparecen
 **Problema:** después de inscribir correctamente un dispositivo móvil a Configuration Manager, este desaparece de la colección de dispositivos móviles, pero el dispositivo aún tiene el perfil de administración y aparece en la puerta de enlace de CSS.
@@ -397,9 +387,4 @@ Esto puede deberse a que el equipo se inscribió anteriormente o a que tiene la 
 
 ### <a name="next-steps"></a>Pasos siguientes
 Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el servicio de soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico de Microsoft Intune).
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

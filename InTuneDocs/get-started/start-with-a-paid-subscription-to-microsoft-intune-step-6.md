@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 9f75020a6d8a3e2aeb278fb99f54516253abf3dd
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: 4093497553ccb7cc5f5c949f2ff0004697beb42a
 
 
 ---
@@ -24,13 +25,15 @@ ms.openlocfilehash: 9f75020a6d8a3e2aeb278fb99f54516253abf3dd
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
+En este tema se explica a los administradores de Intune cómo crear directivas y publicar aplicaciones que luego pueden implementar en dispositivos administrados.
+
 Antes de comenzar a inscribir aplicaciones en Intune, puede habilitar la configuración de directivas y las aplicaciones que se implementarán en cuanto dichos dispositivos se inscriban en la administración. Las directivas de Intune proporcionan una configuración con la que es más fácil: controlar la configuración de seguridad en dispositivos móviles, mantener la configuración de Firewall de Windows y Endpoint Protection de los equipos e implementar aplicaciones. Puede configurar directivas, agregar aplicaciones e implementar esas aplicaciones para que los dispositivos reciban la configuración y las aplicaciones en cuanto se inscriban en Intune.
 
 Las directivas y las aplicaciones son específicas de la plataforma.
 
 ## <a name="manage-device-settings"></a>Administrar la configuración del dispositivo
 
- La configuración de las directivas de dispositivo se realiza y administra por plataforma. Puede configurar directivas para las siguientes plataformas:
+ La configuración de las directivas de dispositivo se realiza y administra por plataforma. En los siguientes vínculos se proporcionan listas de opciones de configuración disponibles para sus respectivas plataformas:
 
 - [iOS](https://docs.microsoft.com/intune/deploy-use/ios-policy-settings-in-microsoft-intune)
 - [Android y Samsung KNOX Standard](https://docs.microsoft.com/intune/deploy-use/android-policy-settings-in-microsoft-intune)
@@ -72,6 +75,6 @@ Ahora que la aplicación está disponible en Intune, puede implementarla en disp
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 88936b8a-7453-4410-b6db-29f636ba3e72
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d92b8b03c1c71898a15b1d1f0a1ee5e1f288dc2e
-ms.openlocfilehash: 759e5b7d04ccbbfb338d182bad03e0b0218cdeca
+ms.sourcegitcommit: 6b99854e17e00a0dd0f91fa82fd1b79d1dfe5663
+ms.openlocfilehash: 43ac18d298901f24c8d6352537b285bf0108f667
 
 
 ---
@@ -46,7 +47,7 @@ Antes de su inscripción en Intune, los dispositivos deben darse de baja de su s
 
 ## <a name="enrolling-devices-in-intune"></a>Inscribir dispositivos en Intune
 
-Los usuarios que vayan a migrar deberán inscribirse de inmediato en Intune para recuperar o no perder el acceso a los recursos, el correo electrónico y las aplicaciones de la empresa. Si ha configurado el acceso condicional y los usuarios intentan conectarse al correo electrónico antes de inscribirse en Intune, el acceso se bloquea y se les da la bienvenida con un correo electrónico con instrucciones de inscripción. Este correo electrónico les sirve de guía para inscribir su dispositivo en Intune.  Los usuarios también tienen la opción de inscribirse en Intune a través de la aplicación de Portal de empresa de Intune o de forma nativa a través del sistema operativo en Windows 8.1 y Windows 10 Mobile. Vea [Qué decirles a los usuarios finales sobre el uso de Microsoft Intune](/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) para obtener más instrucciones de inscripción por plataforma.
+Los usuarios que vayan a migrar deberán inscribirse de inmediato en Intune para recuperar o no perder el acceso a los recursos, el correo electrónico y las aplicaciones de la empresa. Si ha configurado el acceso condicional y los usuarios intentan conectarse al correo electrónico antes de inscribirse en Intune, el acceso se bloquea y se les da la bienvenida con un correo electrónico con instrucciones de inscripción. Este correo electrónico les sirve de guía para inscribir su dispositivo en Intune.  Los usuarios también tienen la opción de inscribirse en Intune a través de la aplicación de Portal de empresa de Intune o de forma nativa a través del sistema operativo en Windows 8.1 y Windows 10 Mobile. Vea [Qué decirles a los usuarios finales sobre el uso de Microsoft Intune](/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune) para obtener más instrucciones de inscripción por plataforma.
 
 ## <a name="configure-intune-conditional-access-optional"></a>Configurar el acceso condicional de Intune (opcional)
 
@@ -75,6 +76,6 @@ Para obtener una copia descargable de toda esta guía, visite la [Galería de Te
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO3-->
 
 

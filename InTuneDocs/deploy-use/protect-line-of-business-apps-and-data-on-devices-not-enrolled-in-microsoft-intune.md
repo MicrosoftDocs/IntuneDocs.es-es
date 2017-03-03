@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 1d3efa5d35e346ea668c71ba8b46ba21b11c39e7
@@ -46,7 +47,7 @@ Para asociar la aplicación de línea de negocio a las directivas MAM, debe agre
 2. En la hoja **Aplicaciones de línea de negocio**, seleccione **Agregar una aplicación personalizada**.
 
   ![Captura de pantalla de la hoja de aplicaciones de línea de negocio con el botón Agregar aplicación personalizada en la parte superior](../media/mam-azure-portal-add-lob-app-action.png)
-3.  Proporcione un nombre para la aplicación, el identificador de la agrupación de trabajos en el campo Identificador de la aplicación y la plataforma (iOS o Android).
+3.    Proporcione un nombre para la aplicación, el identificador de la agrupación de trabajos en el campo Identificador de la aplicación y la plataforma (iOS o Android).
 
   ![Captura de pantalla de la hoja Agregar una aplicación personalizada](../media/mam-azure-portal-add-app-details.png)
 
@@ -71,11 +72,11 @@ Si necesita cambiar detalles de la aplicación como su nombre o el identificador
 ##  <a name="remove-apps"></a>Quitar aplicaciones
 Puede quitar una aplicación de línea de negocio de la lista de aplicaciones. Con esto se quitará la aplicación de la lista y también la asociación con las directivas MAM, pero no se quitará ni desinstalará la aplicación del dispositivo del usuario.  
 
-1.  En [Azure Portal](https://portal.azure.com/), vaya a **Administración de aplicaciones móviles de Intune** > **Configuración**. En la hoja **Configuración**, seleccione **Línea de negocio** para abrir la lista de aplicaciones existentes.  
-2.  Elija la aplicación que quiere quitar y, luego, el menú **(...) contexto**.
+1.    En [Azure Portal](https://portal.azure.com/), vaya a **Administración de aplicaciones móviles de Intune** > **Configuración**. En la hoja **Configuración**, seleccione **Línea de negocio** para abrir la lista de aplicaciones existentes.  
+2.    Elija la aplicación que quiere quitar y, luego, el menú **(...) contexto**.
 
   ![Captura de pantalla de la hoja de aplicaciones de línea de negocio con los puntos suspensivos](../media/mam-azure-portal-lob-context-menu.png)
-3.  Seleccione **Eliminar aplicación** para eliminar la aplicación.
+3.    Seleccione **Eliminar aplicación** para eliminar la aplicación.
 
   ![Captura de pantalla de la hoja de línea de negocio con la opción de eliminar aplicación](../media/mam-azure-portal-delete-app.png)
 

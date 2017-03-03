@@ -1,5 +1,5 @@
 ---
-title: "Proteger el acceso de correo electrónico a Exchange local | Microsoft Docs"
+title: "Proteger el correo electrónico en Exchange local | Microsoft Docs"
 description: "Proteja y controle el acceso al correo electrónico de empresa en Exchange local con el acceso condicional."
 keywords: 
 author: andredm7
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: a55071f5-101e-4829-908d-07d3414011fc
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: 24d000f650cafffc0c998ef80ba52bd06b56afe2
+ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
+ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
 
 
 ---
@@ -24,18 +25,19 @@ ms.openlocfilehash: 24d000f650cafffc0c998ef80ba52bd06b56afe2
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
+Puede configurar el acceso condicional para controlar el acceso de correo electrónico a Exchange local o a Exchange Online dedicado heredado con Microsoft Intune.
+Para más información sobre cómo funciona el acceso condicional, consulte el artículo [Proteger el acceso al correo electrónico y los servicios de O365](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+
 > [!NOTE]
 > Si tiene un entorno de Exchange Online dedicado y necesita averiguar si es la configuración nueva o heredada, póngase en contacto con su administrador de cuentas.
 
+## <a name="before-you-begin"></a>Antes de comenzar
 
-Para controlar el acceso de correo electrónico a Exchange local o al entorno heredado de Exchange Online dedicado, puede configurar el acceso condicional para Exchange local con Microsoft Intune.
-Para más información sobre cómo funciona el acceso condicional, consulte el artículo [Proteger el acceso al correo electrónico y los servicios de O365](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
-
-**Antes** de configurar el acceso condicional, debe comprobar lo siguiente:
+Asegúrese de comprobar lo siguiente:
 
 -   Su versión de Exchange debe ser **Exchange 2010 o posterior**. Se admiten las matrices del servidor de acceso de cliente (CAS) de Exchange Server.
 
--   Debe usar **Exchange Connector local** que conecta [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] con Exchange local. Esto le permite administrar dispositivos a través de la consola de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Para obtener detalles sobre Connector, consulte [Intune on-premises Exchange connector (Intune Exchange Connector local)](intune-on-premises-exchange-connector.md).
+-   Debe usar [Exchange Connector local de Intune](intune-on-premises-exchange-connector.md) que conecta [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] con Exchange local. Esto le permite administrar dispositivos a través de la consola de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
     -   La versión de Exchange Connector local que tiene disponible en la consola de Intune es específica de su inquilino de Intune y no puede usarla con otro inquilino. Le recomendamos que también se asegure de que la versión de Exchange Connector del inquilino esté instalada **en un solo equipo**.
 
@@ -47,6 +49,8 @@ Para más información sobre cómo funciona el acceso condicional, consulte el a
 
 -   Debe configurar **Exchange ActiveSync** con autenticación basada en certificados o con la entrada de credenciales de usuario.
 
+### <a name="device-compliance-requirements"></a>Requisitos de cumplimiento del dispositivo
+
 Cuando configura directivas de acceso condicional y se aplican a un usuario, antes de que este pueda conectarse a su correo electrónico, el **dispositivo** que usa debe ser:
 
 -  Un PC unido a un dominio o estar **inscrito** con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
@@ -57,11 +61,13 @@ Cuando configura directivas de acceso condicional y se aplican a un usuario, ant
 
 -   Debe **cumplir** todas las directivas de cumplimiento de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] que se han implementado en el dispositivo.
 
+### <a name="how-conditional-access-works-with-exchange-on-premises"></a>Cómo funciona el acceso condicional con Exchange local
+
 En el diagrama siguiente se muestra el flujo que usan las directivas de acceso condicional de Exchange local para evaluar si se permitirá o se bloqueará el acceso a los dispositivos.
 
 ![Diagrama que muestra los puntos de decisión que determinan si un dispositivo puede tener acceso a Exchange local o si se bloquea](../media/ConditionalAccess8-2.png)
 
-Si no se cumple una directiva de acceso condicional, el usuario ve uno de los mensajes siguientes cuando inicia sesión:
+Si no se cumple una directiva de acceso condicional, hay un período de 10 minutos entre el dispositivo que se bloquea y el usuario que recibe uno de los siguientes mensajes de cuarentena cuando inicia sesión:
 
 - Si el dispositivo no está inscrito con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] o no está registrado en Azure Active Directory, se muestra un mensaje con instrucciones sobre cómo instalar la aplicación de portal de empresa, inscribir el dispositivo y activar el correo electrónico. Este proceso también asocia el identificador de Exchange ActiveSync del dispositivo con el registro del dispositivo en Azure Active Directory.
 
@@ -136,6 +142,6 @@ Se admite lo siguiente:
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

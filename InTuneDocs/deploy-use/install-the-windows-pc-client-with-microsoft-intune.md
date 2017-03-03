@@ -5,7 +5,7 @@ description: "Siga esta guía para administrar sus equipos Windows con el softwa
 keywords: 
 author: staciebarker
 ms.author: stabar
-ms.date: 07/19/2016
+ms.date: 02/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,28 +13,29 @@ ms.technology:
 ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 928e4e8097b9cd326e0863a45b183226a7eae056
-ms.openlocfilehash: c9a29b6bf9af97f05730251a37b313a662c27a35
+ms.sourcegitcommit: 2e7062169ceb855f03a13d1afb4b4de41af593ac
+ms.openlocfilehash: 9606d8f79166e6b38f02aefd4afc52f2a47c1362
+ms.lasthandoff: 02/16/2017
 
 
 ---
 
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Instalar el cliente de software de Intune en equipos con Windows
-Los equipos con Windows se pueden inscribir instalando el software cliente de Intune. El software cliente de Intune se puede instalar de las maneras siguientes:
+Los equipos con Windows se pueden inscribir instalando el software cliente de Intune. El software cliente de Intune se puede instalar siguiendo los métodos siguientes:
 
-- Instalado manualmente
-- Instalado mediante directivas de grupo
-- Incluido en una imagen de disco
-- Instalado por parte de los usuarios
+- Mediante el administrador de TI, con uno de estos métodos: instalación manual, directiva de grupo o instalación incluida en una imagen de disco
 
-El software cliente de Intune que se descarga primero contiene el software mínimo necesario para inscribir el equipo en la administración de Intune. Después de inscribir un equipo, el software cliente de Intune descarga el software cliente completo que se necesita para la administración del equipo.
+- Mediante los usuarios finales, que instalan manualmente el software cliente
 
-Esta serie de descargas minimiza el tiempo necesario para inscribir inicialmente su equipo en Intune. También garantiza que el cliente tenga disponible el software más reciente una vez finalizada la segunda descarga.
+El software cliente de Intune contiene el software mínimo necesario para inscribir el equipo en la administración de Intune. Después de inscribir un equipo, el software cliente de Intune descarga el software cliente completo que se necesita para la administración del equipo.
+
+Esta serie de descargas reduce el impacto en el ancho de banda de la red y reduce al mínimo el tiempo necesario para inscribir inicialmente el equipo en Intune. También garantiza que el cliente tenga disponible el software más reciente una vez finalizada la segunda descarga.
 
 ## <a name="download-the-intune-client-software"></a>Descargar el software cliente de Intune
 
-Para todos los métodos, excepto en el que los usuarios mismos instalan el software cliente de Intune, debe descargar el software para poder implementarlo.
+Todos los métodos, excepto aquellos en los que los usuarios instalan el software cliente de Intune, requieren que los administradores de TI descarguen el software primero para que pueda implementarse posteriormente en los usuarios finales.
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), haga clic en **Administración** &gt; **Descargar software cliente**.
 
@@ -42,8 +43,7 @@ Para todos los métodos, excepto en el que los usuarios mismos instalan el softw
 
 2.  En la página **Descarga de software cliente**, haga clic en **Descargar software cliente**. A continuación, guarde el paquete **Microsoft_Intune_Setup.zip** que contiene el software en una ubicación segura de la red.
 
-    > [!NOTE]
-    > El paquete de instalación del software cliente de Intune contiene información sobre su cuenta. Si usuarios no autorizados obtienen acceso al paquete de instalación, estos podrán inscribir los equipos en la cuenta representada por el certificado incrustado y acceder a los recursos de la empresa.
+El paquete de instalación del software cliente de Intune contiene información exclusiva y específica, que está disponible a través de un certificado insertado, sobre su cuenta. Si usuarios no autorizados obtienen acceso al paquete de instalación, estos podrán inscribir los equipos en la cuenta representada por el certificado insertado y acceder a los recursos de la empresa.
 
 3.  Extraiga el contenido del paquete de instalación en la ubicación segura de la red.
 
@@ -52,10 +52,10 @@ Para todos los métodos, excepto en el que los usuarios mismos instalan el softw
 
 ## <a name="deploy-the-client-software-manually"></a>Implementar el software cliente manualmente
 
-En un equipo, vaya a la carpeta donde se encuentran los archivos de instalación de software cliente. A continuación, ejecute **Microsoft_Intune_Setup.exe** para instalar el software cliente.
+En los equipos en los que el software cliente se va a instalar, vaya a la carpeta donde se encuentran los archivos de instalación del software cliente. A continuación, ejecute **Microsoft_Intune_Setup.exe** para instalar el software cliente.
 
-    > [!NOTE]
-    > The status of the installation is displayed when you hover over the icon in the taskbar on the client computer.
+> [!NOTE]
+> El estado de la instalación se muestra al colocar el puntero sobre el icono de la barra de tareas en el equipo cliente.
 
 ## <a name="deploy-the-client-software-by-using-group-policy"></a>Implementar el software cliente mediante una directiva de grupo
 
@@ -72,7 +72,7 @@ En un equipo, vaya a la carpeta donde se encuentran los archivos de instalación
 
 3.  Use la directiva de grupo para implementar el software en los equipos de la red.
 
-    Para obtener más información acerca de cómo utilizar la directiva de grupo para implementar software automáticamente, consulte la documentación de Windows Server.
+    Para más información sobre cómo usar la directiva de grupo para implementar software automáticamente, consulte [Directiva de grupo para principiantes](https://technet.microsoft.com/library/hh147307.aspx).
 
 ## <a name="deploy-the-client-software-as-part-of-an-image"></a>Implementar el software cliente como parte de una imagen
 El software cliente de Intune se puede implementar en equipos como parte de una imagen de sistema operativo. Para ello, puede usar el siguiente procedimiento como guía:
@@ -98,17 +98,64 @@ El software cliente de Intune se puede implementar en equipos como parte de una 
 
 5.  Capture una imagen del equipo de referencia y, a continuación, impleméntela en los equipos de destino.
 
-Cuando se reinicie el equipo de destino al finalizar la instalación de Windows, se creará la clave **WindowsIntuneEnrollPending** en el Registro. El paquete de inscripción comprueba si el equipo está inscrito. Si el equipo está inscrito, no se realiza ninguna otra acción. Si el equipo no está inscrito, el paquete de inscripción crea una tarea de inscripción automática de Microsoft Intune.
+    Cuando se reinicie el equipo de destino al finalizar la instalación de Windows, se creará la clave **WindowsIntuneEnrollPending** en el Registro. El paquete de inscripción comprueba si el equipo está inscrito. Si el equipo está inscrito, no se realiza ninguna otra acción. Si el equipo no está inscrito, el paquete de inscripción crea una tarea de inscripción automática de Microsoft Intune.
 
-Cuando se ejecuta la tarea de inscripción automática a la siguiente hora programada, se comprueba la existencia del valor **WindowsIntuneEnrollPending** en el Registro y se intenta inscribir el equipo de destino en Intune. Si por algún motivo se produjera un error en la inscripción, se reintentará la inscripción la próxima vez que se ejecute la tarea. Los reintentos continuarán durante un mes.
+    Cuando se ejecuta la tarea de inscripción automática a la siguiente hora programada, se comprueba la existencia del valor **WindowsIntuneEnrollPending** en el Registro y se intenta inscribir el equipo de destino en Intune. Si por algún motivo se produjera un error en la inscripción, se reintentará la inscripción la próxima vez que se ejecute la tarea. Los reintentos continuarán durante un mes.
 
-La tarea de inscripción automática de Intune, el valor **WindowsIntuneEnrollPending** del Registro y el certificado de cuenta se eliminarán del equipo de destino cuando se haya inscrito correctamente o al cabo de un mes, lo que suceda primero.
+    La tarea de inscripción automática de Intune, el valor **WindowsIntuneEnrollPending** del Registro y el certificado de cuenta se eliminarán del equipo de destino cuando se haya inscrito correctamente o al cabo de un mes, lo que suceda primero.
 
 ## <a name="instruct-users-to-self-enroll"></a>Indicar a los usuarios que efectúen una inscripción automática
 
-Los usuarios pueden instalar el software cliente de Intune desde el [sitio web del portal de empresa](http://portal.manage.microsoft.com). Si el portal web puede detectar que el dispositivo es un equipo con Windows, se solicitará a los usuarios que lo inscriban descargando el software cliente de Intune. Una vez descargado el software, los usuarios pueden instalarlo para incorporar sus equipos a la administración.
+Los usuarios instalan el software cliente de Intune desde el [sitio web del portal de empresa](http://portal.manage.microsoft.com). La información exacta que ven los usuarios en el portal web varía, dependiendo de la entidad de MDM de la cuenta y la plataforma y la versión de sistema operativo del equipo del usuario. 
 
-![El portal de Intune solicita descargar el cliente de software de Intune](../media/software-client-download.png)
+Si a los usuarios no se les ha asignado una licencia de Intune o si la entidad de MDM de la organización no se ha establecido en Intune, los usuarios no ven ninguna opción para inscribirse.
+
+Si a los usuarios se les ha asignado una licencia de Intune y la entidad de MDM de la organización se ha establecido en Intune:
+
+- Los usuarios de equipos con Windows 7 o Windows 8 ven SOLO la opción de inscribirse a Intune mediante la descarga e instalación del software cliente de PC que es única para su organización.
+
+- A los usuarios de equipos con Windows 10 o Windows 8.1 se les muestran dos opciones de inscripción:
+
+  -  **Inscribir el equipo como un dispositivo móvil**: los usuarios pulsan el botón **Cómo inscribirse** y se les dirige a las instrucciones sobre cómo inscribir sus equipos como un dispositivo móvil. Este botón se muestra claramente, ya que la inscripción de MDM se considera la opción de inscripción preferida y predeterminada. En cambio, la opción de MDM no se aplica a este tema, que trata solo la instalación del software cliente.
+  - **Inscribir el equipo con el software cliente de Intune**: necesitará indicar a los usuarios que seleccionen el vínculo **Haga clic aquí para descargar**, que les guía a través de la instalación del software cliente.
+
+En la siguiente tabla se resumen las opciones.
+
+  ![Opciones de inscripción predeterminadas por plataforma](../media/default-enrollment-options-table.png)
+
+En las siguientes capturas de pantalla se muestra lo que ven los usuarios a medida que inscriben sus dispositivos con el software cliente.
+
+Primero, a los usuarios se les pide que identifiquen o inscriban su dispositivo.
+
+  ![identificar o inscribir el dispositivo](../media/identify-device-or-enroll.png)
+
+Para que los usuarios instalen el software cliente del equipo, necesitará indicarles que seleccionen el vínculo **Haga clic aquí para descargar**, que permite a los usuarios descargar el software cliente del equipo y guiarles a través del proceso de instalación. El botón **Cómo inscribirse** dirige a los usuarios a la documentación sobre cómo inscribirse con la inscripción de MDM, que no es relevante a esas instrucciones del software cliente.
+
+  ![pulsar el vínculo Haga clic aquí para descargar](../media/enroll-your-windows-device.png)
+
+Cuando los usuarios hacen clic en el vínculo, ven un botón **Descargar software**, que seleccionan para iniciar la instalación del software cliente del equipo.
+
+  ![pulsar el botón Descargar software](../media/download-pc-client-software.png)
+
+Después, a los usuarios se les pide que inicien sesión con sus credenciales corporativas.
+
+  ![Iniciar sesión con sus credenciales](../media/sign-in-to-intune.png)
+
+Se dirige a los usuarios a la página principal de la instalación.
+
+  ![Página principal de la instalación cliente del equipo](../media/welcome-to-pc-agent-install-wizard.png)
+
+Los usuarios pulsan **Siguiente** y la instalación se inicia.
+
+  ![Página principal de la instalación cliente del equipo](../media/welcome-to-pc-agent-install-wizard.png)
+
+Cuando se completa la instalación, los usuarios pulsan **Finalizar**.
+
+  ![Finalizar la instalación cliente del equipo](../media/completed-the-setup-wizard.png)
+
+Si los usuarios intentan inscribir su equipo como un dispositivo móvil después de que ya esté inscrito con el software cliente de equipo de Intune, verán la siguiente pantalla de error.
+
+  ![Pantalla que se muestra si el equipo ya está inscrito](../media/page-shown-if-pc-already-enrolled.png)
 
 ## <a name="monitor-and-validate-successful-client-deployment"></a>Supervisión y validación de una implementación correcta del cliente
 Use uno de los procedimientos siguientes como ayuda para supervisar y validar una implementación correcta del cliente.
@@ -136,9 +183,4 @@ Use uno de los procedimientos siguientes como ayuda para supervisar y validar un
 ### <a name="see-also"></a>Consulte también
 [Administrar equipos Windows con Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
 [Solucionar los problemas de configuración del cliente en Microsoft Intune](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

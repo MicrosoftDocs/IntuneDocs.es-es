@@ -1,11 +1,11 @@
 ---
-title: "Restablecer el código de acceso de un dispositivo desde el sitio web del portal de empresa | Microsoft Docs"
+title: "Restablecer el código de acceso desde el sitio web del portal de empresa | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 02/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,11 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mamoriss
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: beba9603ffb43d025132d2d86f0996ff505a9019
-ms.openlocfilehash: f9d66fe07173245ff831f204dd120598ad7564db
+ms.sourcegitcommit: f293901d3865f0b10ed876e83b151cf59a046cba
+ms.openlocfilehash: 68725bb63ae2750e89a03c16027f8b4fd9111255
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -32,21 +34,26 @@ Si pierde el PIN o la contraseña de un dispositivo inscrito en Intune, puede us
 
 Para restablecer el código de acceso:
 
-1.  Abra el [sitio web del Portal de empresa](http://portal.manage.microsoft.com) y elija el dispositivo cuyo código de acceso quiere restablecer.
+1.    En el [sitio web del Portal de empresa](http://portal.manage.microsoft.com), pulse el botón __menú__ ![Pequeña imagen del botón menú, tres barras horizontales apiladas en paralelo.](/Intune/whats-new/media/CP_hamburger_menu.png), luego seleccione __Mis dispositivos__.
 
-2.  Elija **Restablecer código de acceso**.
+2. En la página __Mis dispositivos__, seleccione el nombre del dispositivo cuyo código de acceso quiere restablecer.
 
-    ![Detalles del dispositivo con el botón Restablecer código de acceso](./media/iwp-screen-with-all-options.png)
+  ![Captura de pantalla de la página Mis dispositivos con un par de dispositivos sin identificar sobre el mensaje emergente para inscribir los dispositivos que no figuran en la lista o para identificar los no identificados.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.  Elija **Cerrar sesión** y vuelva a iniciar sesión con las credenciales de su cuenta profesional o educativa. Tendrá que volver a iniciar sesión en un plazo de cinco minutos.
+3.    El dispositivo se abrirá en una ventana emergente. Seleccione el botón **Restablecer código de acceso**.
 
-    ![Mensaje de restablecimiento con el botón Cerrar sesión](./media/iwp-2-sign-out.png)
+    ![Todas las opciones de un dispositivo seleccionado en el sitio web del Portal de empresa, incluidas Cambiar nombre, Quitar, Restablecer dispositivo, Restablecer código de acceso y Bloqueo remoto. ](./media/iwp-screen-with-all-options.png)
 
-4.  Elija **Restablecer código de acceso**.
+4.  Aparece un mensaje emergente que le solicita que confirme que quiere restablecer el código de acceso y que el dispositivo cerrará la sesión después de hacerlo. Luego tendrá que esperar 5 minutos antes de volver a iniciar sesión.
 
-    ![Mensaje que explica lo que ocurre al restablecer el código de acceso](./media/iwp-3-tap-reset-passcode-after-signin.png)
+  ![Mensaje emergente de restablecimiento del código de acceso con la advertencia sobre el restablecimiento del código de acceso del dispositivo y el cierre de la sesión del usuario. Los botones de entrada de usuario son Cerrar sesión y Cancelar.](./media/iwp-reset-passcode-popup.png)
 
-    Consulte la tabla para ver cómo funciona **Restablecer código de acceso** en su dispositivo.
+4.  Seleccione **Cerrar sesión** y aparecerá un último mensaje sobre la eliminación del código de acceso del dispositivo. Si no tiene el dispositivo a mano, no quite el código de acceso, ya que cualquiera que tenga acceso físico a él podría acceder a la mayor parte de la información que contiene, personal o corporativa.
+
+  ![Segundo mensaje emergente de restablecimiento del código de acceso con la advertencia sobre el restablecimiento del código de acceso del dispositivo y la eliminación del código de acceso del dispositivo. También aconseja sobre cómo establecer un nuevo código de acceso desde los ajustes del dispositivo.](./media/iwp-reset-passcode-2nd-popup.png)
+
+
+Puesto que los distintos dispositivos tienen diferentes tipos de códigos de acceso, puede conocer cómo podría afectar el restablecimiento del código de acceso a un dispositivo concreto en la tabla siguiente. 
 
     |Tipo de dispositivo|¿Qué ocurre al restablecer?|
     |------------|-----------|
@@ -60,9 +67,4 @@ Para restablecer el código de acceso:
     Para ver una notificación que confirme que la contraseña se restableció correctamente, haga clic en la marca de notificación en la parte superior derecha del sitio del portal de empresa.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

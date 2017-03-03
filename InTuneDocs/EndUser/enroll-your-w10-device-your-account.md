@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2016
+ms.date: 02/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,32 +13,37 @@ ms.technology:
 ms.assetid: 43b738b7-6a56-498a-a433-112da5104876
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 32bde9552e79d91dd967050b96cec62146367f9b
+ms.sourcegitcommit: 580ca62628981016c444b2992e792ecc4a5da442
+ms.openlocfilehash: 7afe4eca15c395806bcc800bc261d5e6b7ba5f0c
+ms.lasthandoff: 02/18/2017
 
 
 ---
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>Inscribir un dispositivo Windows 10 en Intune
 
-1.  Vaya a **Configuración** de Windows y pulse **Cuentas**.
+1.  Abra la aplicación **Configuración** de Windows al ir al **menú Inicio** y seleccionar el botón **Configuración**. También puede buscar "configuración" en la barra de búsqueda.
+
+2. Seleccione **Cuentas**.
 
     ![Vaya a Configuración y a Cuentas](./media/W10-enroll-1-settings-accounts.png)
 
-2.  Pulse en **Su cuenta**.
+3. Seleccione **Su cuenta**.
 
-    ![Pulse su cuenta](./media/W10-enroll-2-accounts-your-account.png)
+    ![Seleccionar la cuenta](./media/W10-enroll-2-accounts-your-account.png)
 
-3.  Puntee en **Agregar una cuenta de trabajo o escuela**.
+4. Seleccione **Agregar una cuenta profesional o educativa**.
 
-    ![Pulse Agregar una cuenta profesional o educativa](./media/w10-enroll-3-add-work-school-acct.png)
+    ![Seleccionar agregar una cuenta profesional o educativa](./media/w10-enroll-3-add-work-school-acct.png)
 
-4.  Inicie sesión con las credenciales de su trabajo o escuela.
+5. Inicie sesión con las credenciales de su trabajo o escuela.
 
-    ![sign-in](./media/W10-enroll-4-sign-in.png)
+    ![Iniciar sesión](./media/W10-enroll-4-sign-in.png)
 
 ¿Sigue sin poder acceder a su correo electrónico, archivos u otros datos profesionales o educativos? Para corregirlo, [solucione los problemas relacionados con su cuenta](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account). Si sigue sin tener acceso, deberá ponerse en contacto con el administrador de TI para obtener más ayuda.
 
@@ -46,16 +51,11 @@ Puede obtener ayuda del administrador de TI fácilmente a través de la informac
 
 Si no ve el Portal de empresa en su lista de aplicaciones, siga estos pasos para instalarlo.
 
-1.  Pulse en **Inicio** &gt; **Tienda**.
+1. Seleccione **Iniciar** > **Tienda**.
 
-2.  Pulse **Buscar** y escriba **portal de empresa**.
+2. Seleccione **Buscar** y luego escriba **portal de empresa**.
 
-3.  En la lista de resultados, pulse en **Portal de empresa** &gt; **Instalar**.
+3. En la lista de resultados, seleccione **Portal de empresa** > **Instalar**.
 
-4.  Pulse **Instalar** o **Gratis**. No hay ninguna diferencia entre estas dos opciones. La opción que se muestra depende de la manera en que su organización configuró la aplicación de portal de empresa.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
+4. Seleccione **Instalar** o **Gratis**. No hay ninguna diferencia entre estas dos opciones. La opción que se muestra depende de la manera en que su organización configuró la aplicación de portal de empresa.
 

@@ -1,11 +1,11 @@
 ---
-title: "Preparación de aplicaciones para la administración de aplicaciones móviles | Microsoft Docs"
+title: "Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles mediante Microsoft Intune | Microsoft Docs"
 description: "La información de este tema le ayuda a decidir cuándo se debe usar la herramienta de ajuste de aplicaciones y el SDK de aplicaciones para permitir que las aplicaciones personalizadas de línea de negocio usen las directivas de administración de aplicaciones móviles."
 keywords: 
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 12/19/2016
+ms.date: 02/8/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,15 @@ ms.technology:
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: oldang
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
-ms.openlocfilehash: 8ee3f539e619d4646013db4982ea96223eea5896
+ms.sourcegitcommit: 06e0a74dd2c0b861497062f2d659c5eb08126fca
+ms.openlocfilehash: 6ec9f6136cf23b9015da125817bfeb86ecfbfca6
 
 
 ---
 
-# <a name="decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune"></a>Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles mediante Microsoft Intune
+# <a name="prepare-line-of-business-apps-for-mam"></a>Preparar aplicaciones de línea de negocio para MAM
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -55,7 +56,7 @@ Para obtener más información sobre la herramienta de ajuste de aplicaciones pa
 ## <a name="intune-app-sdk"></a>SDK para aplicaciones de Intune
 El SDK de aplicaciones está diseñado principalmente para clientes que tienen aplicaciones en App Store de Apple o Google Play Store y quieren administrar las aplicaciones con Intune. Pero cualquier aplicación puede aprovechar la integración del SDK, incluso las aplicaciones de línea de negocio.
 
-Para obtener más información sobre el SDK, consulte la [Introducción](/intune/develop/intune-app-sdk). Para empezar a usar el SDK, consulte [Introducción al SDK para aplicaciones de Microsoft Intune](/intune/develop/intune-app-sdk-get-started).
+Para obtener más información sobre el SDK, consulte la [Introducción](../develop/intune-app-sdk.md). Para empezar a usar el SDK, consulte [Introducción al SDK para aplicaciones de Microsoft Intune](../develop/intune-app-sdk-get-started.md).
 
 ### <a name="reasons-to-use-the-sdk"></a>Razones para usar el SDK
 * La aplicación no tiene funciones de protección de datos integradas.
@@ -69,8 +70,8 @@ Para obtener más información sobre el SDK, consulte la [Introducción](/intune
 
 |**SDK de aplicaciones de Intune** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|Sí: usar el [componente Xamarin del SDK de aplicaciones de Intune](/../develop/intune-app-sdk-xamarin).|Sí: usar el [complemento Cordova del SDK de aplicaciones de Intune](/../develop/intune-app-sdk-cordova).|
-|**Android**| Sí: usar el [componente Xamarin del SDK de aplicaciones de Intune](/../develop/intune-app-sdk-xamarin).|Sí: usar el [complemento Cordova del SDK de aplicaciones de Intune](/../develop/intune-app-sdk-cordova).|
+|**iOS**|Sí: usar el [componente Xamarin del SDK de aplicaciones de Intune](../develop/intune-app-sdk-xamarin.md).|Sí: usar el [complemento Cordova del SDK de aplicaciones de Intune](../develop/intune-app-sdk-cordova.md).|
+|**Android**| Sí: usar el [componente Xamarin del SDK de aplicaciones de Intune](../develop/intune-app-sdk-xamarin.md).|Sí: usar el [complemento Cordova del SDK de aplicaciones de Intune](../develop/intune-app-sdk-cordova.md).|
 
 ## <a name="feature-comparison"></a>Comparación de características
 En la siguiente tabla se enumeran los valores que puede usarse para el SDK para aplicaciones y la herramienta de ajuste de aplicaciones.
@@ -109,6 +110,6 @@ En la siguiente tabla se enumeran los valores que puede usarse para el SDK para 
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

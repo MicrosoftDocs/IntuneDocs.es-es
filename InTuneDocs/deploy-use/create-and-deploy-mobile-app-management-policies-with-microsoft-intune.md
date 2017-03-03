@@ -13,35 +13,35 @@ ms.technology:
 ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9e208608d50c9b5f7fe66743de0d3c7e741dbfbd
-ms.openlocfilehash: 3e077bfa8a03526b9472b4e9fdd4a75da22c28c8
+ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
+ms.openlocfilehash: f4bc5a2092585c91e224c390eaae717985055b10
 
 
 ---
 
-# <a name="create-and-deploy-mobile-app-management-policies-with-microsoft-intune"></a>Crear e implementar directivas de administración de aplicaciones móviles con Microsoft Intune
+# <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>Creación e implementación de directivas de protección de aplicaciones con Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Las directivas de administración de aplicaciones móviles (MAM) se pueden usar en aplicaciones que se ejecutan en dispositivos administrados o no por Intune. Para ver una descripción más detallada de cómo funcionan las directivas de MAM y los posibles escenarios que las directivas de MAM de Intune admiten, consulte [Protección de los datos de la aplicación mediante directivas MAM](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
+En este tema se describe el proceso de creación de directivas de protección de aplicaciones en **Azure Portal**. Azure Portal es la nueva consola de administración para crear directivas de protección de aplicaciones. Recomendamos utilizar este portal para crear este tipo de directivas. El portal de Azure admite los siguientes escenarios de MAM:
 
-En este tema se describe el proceso de creación de una directiva de MAM en el **Portal de Azure**. Azure Portal es la nueva consola de administración para crear directivas de MAM. Recomendamos utilizar este portal para crear este tipo de directivas. El portal de Azure admite los siguientes escenarios de MAM:
 - Dispositivos inscritos en Intune.
 - Dispositivos administrados por una solución de MDM de terceros.
 - Dispositivos que no están administrados por ninguna solución de MDM (BYOD).
 
 >[!IMPORTANT]
-Tenga en cuenta lo siguiente si está usando actualmente la **consola de administración de Intune** para administrar sus dispositivos:
+Si está usando la **consola de administración de Intune** para administrar los dispositivos, estos son algunos aspectos que debe tener en cuenta:
 
-> * Puede crear una directiva de MAM que admita aplicaciones para los dispositivos inscritos en Intune mediante la [consola de administración de Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
-> * Las directivas de MAM que se han creado en la consola de administración de Intune no pueden importarse en el Portal de Azure.  Las directivas de MAM deben volver a crearse en el Portal de Azure.
+> * Puede crear una directiva de protección de aplicaciones que admita aplicaciones para los dispositivos inscritos en Intune mediante la [consola de administración de Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
+> * Las directivas de protección de aplicaciones creadas con la consola de administración de Intune no pueden importarse en Azure Portal.  Las directivas de protección de aplicaciones deben volver a crearse en Azure Portal.
 
-> * Es posible que no vea todas las configuraciones de directivas de MAM en la consola de administración de Intune. El Portal de Azure es la nueva consola de administración para crear directivas de MAM.
+> * Es posible que no vea todas las opciones de configuración de las directivas de protección de aplicaciones en la consola de administración de Intune. Azure Portal es la nueva consola de administración para crear directivas de protección de aplicaciones.
 
-> * Para implementar aplicaciones administradas, debe crear una directiva de MAM en la consola de administración de Intune. En este caso, puede que quiera crear directivas de MAM tanto en la consola de administración de Intune como en Azure Portal: en la consola de administración de Intune para asegurarse de que tiene la capacidad de implementar aplicaciones administradas y en Azure Portal porque es la nueva consola de administración que tiene todas las opciones de configuración de directivas de MAM.
+> * Para implementar aplicaciones administradas, debe crear una directiva de protección de aplicaciones en la consola de administración de Intune. En este caso, puede que quiera crear directivas de protección de aplicaciones tanto en la consola de administración de Intune como en Azure Portal: en la consola de administración de Intune para asegurarse de tener la capacidad de implementar aplicaciones administradas, y en Azure Portal porque es la nueva consola de administración que tiene todas las opciones de configuración de las directivas de protección de aplicaciones.
 
-> * Si crea directivas de MAM en la consola de administración de Intune y en el Portal de Azure, la directiva que se crea en el Portal de Azure se aplica a las aplicaciones.
+> * Si crea directivas de protección de aplicaciones en la consola de administración de Intune y en Azure Portal, la directiva creada en el segundo se aplicará a las aplicaciones.
 
 Para ver una lista de las configuraciones de directiva compatibles en plataformas iOS y Android, seleccione uno de los siguientes:
 
@@ -49,16 +49,24 @@ Para ver una lista de las configuraciones de directiva compatibles en plataforma
 - [Directivas de iOS](ios-mam-policy-settings.md)
 - [Directivas de Android](android-mam-policy-settings.md)
 
-##  <a name="create-a-mam-policy"></a>Crear una directiva MAM
-Antes de crear una directiva de MAM, repase la información sobre [requisitos previos y compatibilidad](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md).
-1.  Seleccione **Administración de aplicaciones móviles de Intune &gt; Configuración** para abrir la hoja **Configuración**.
+- Para obtener una descripción más detallada de cómo funcionan las directivas de protección de aplicaciones y los escenarios admitidos por las directivas de protección de aplicaciones de Intune, consulte [Proteger datos de aplicaciones mediante directivas de protección de aplicaciones](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
-    ![Captura de pantalla de la hoja Administración de aplicaciones móviles de Intune](../media/AppManagement/AzurePortal_MAM_Mainblade.png)
+##  <a name="create-an-app-protection-policy"></a>Crear directivas de protección de aplicaciones
+Las directivas de protección de aplicaciones se crean en Azure Portal. Si esta es la primera vez que lo usa, lea [Azure Portal para directivas de protección de aplicaciones de Microsoft Intune](azure-portal-for-microsoft-intune-mam-policies.md) para familiarizarse con él. Antes de crear una directiva de protección de aplicaciones, repase la información sobre [requisitos previos y compatibilidad](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md).
 
-    > [!TIP]
-    > Si esta es la primera vez que usa el Portal de Azure, lea antes [Azure portal for Microsoft Intune MAM policies](azure-portal-for-microsoft-intune-mam-policies.md) (Portal de Azure para directivas de MAM de Microsoft Intune) para familiarizarse con el Portal.
+Siga estos pasos para crear directivas de protección de aplicaciones:
 
-2.  En la hoja **Configuración**, seleccione **Directiva de aplicaciones**. De este modo se abrirá la hoja **Directiva de aplicaciones**, donde podrá crear nuevas directivas y editar las existentes. Elija **Agregar una directiva**.
+1. Vaya a [Azure Portal](http://portal.azure.com) y especifique sus credenciales.
+
+2. Elija **Más servicios** y escriba "Intune".
+
+3. Elija **Protección de aplicaciones de Intune**.
+
+4. Seleccione **Administración de aplicaciones móviles de Intune &gt; Configuración** para abrir la hoja **Toda la configuración**.
+
+    ![Captura de pantalla de la hoja Administración de aplicaciones móviles de Intune](../media/AppManagement/AzurePortal_MAM_Mainblade-2.png)
+
+2.  En la hoja **Toda la configuración**, elija **Directiva de aplicaciones**. De este modo se abrirá la hoja **Directiva de aplicaciones**, donde podrá crear nuevas directivas y editar las existentes. Elija **Agregar una directiva**.
 
     ![Captura de pantalla de la hoja Agregar directiva con la opción de menú Agregar directiva resaltada ](../media/AppManagement/AzurePortal_MAM_AddPolicy.png)
 
@@ -90,10 +98,10 @@ Antes de crear una directiva de MAM, repase la información sobre [requisitos pr
 Cuando termine de crear una directiva como se describe en el procedimiento anterior, no se implementará en ningún usuario. Para implementar una directiva, consulte la sección siguiente titulada "Implementar una directiva para los usuarios".
 
 > [!IMPORTANT]
-> Si crea una directiva de MAM para una aplicación con la consola de administración de Intune y una directiva de MAM con el Portal de Azure, la directiva creada con el Portal de Azure tiene prioridad. Pero los informes de la consola de Intune o de Configuration Manager informarán de la configuración de directiva creada en la consola de administración de Intune. Por ejemplo:
+> Si crea una directiva de protección de aplicaciones para una aplicación con la consola de administración de Intune y otra con Azure Portal, la directiva creada con este último tendrá prioridad. Pero los informes de la consola de Intune o de Configuration Manager informarán de la configuración de directiva creada en la consola de administración de Intune. Por ejemplo:
 >
-> -   Ha creado una directiva de MAM en la consola de administración de Intune que bloquea la copia desde una aplicación.
-> -   Ha creado una directiva de MAM en la consola de Azure que permite la copia desde una aplicación.
+> -   Ha creado una directiva de protección de aplicaciones en la consola de administración de Intune que bloquea la copia desde una aplicación.
+> -   Ha creado una directiva de protección de aplicaciones en la consola de Azure que permite la copia desde una aplicación.
 > -   Luego asocia ambas directivas a la misma aplicación.
 > -   La directiva creada desde la consola de Azure tiene prioridad y se permite la copia.
 > -   Sin embargo, el estado y los informes de la consola de Intune indicarán incorrectamente que la copia está bloqueada.
@@ -116,8 +124,8 @@ Solo se ven afectados por la directiva los usuarios que tengan asignadas licenci
 > Si usa Intune con Administrador de configuración para administrar los dispositivos iOS y Android, la directiva solo se aplica a los usuarios directamente en el grupo seleccionado. No se ven afectados los miembros de los grupos secundarios anidados en el grupo seleccionado.
 
 Los usuarios finales pueden descargar las aplicaciones desde App Store o Google Play. Para obtener más información, vea:
-* [Qué esperar cuando la aplicación Android está administrada por directivas MAM](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Qué esperar cuando la aplicación iOS está administrada por directivas MAM](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [What to expect when your Android app is managed by app protection policies](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)
+* [What to expect when your iOS app is managed by app protection policies](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md) (Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones)
 
 ##  <a name="change-existing-policies"></a>Cambiar las directivas existentes
 Puede editar una directiva existente y aplicarla a los usuarios objetivo. Con todo, al cambiar las directivas existentes, los usuarios que ya han iniciado sesión en las aplicaciones no verán los cambios durante un período de 8 horas.
@@ -171,11 +179,11 @@ Para ver una lista completa de las configuraciones de directiva para iOS y Andro
 [Supervisar el estado del cumplimiento y del usuario](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### <a name="see-also"></a>Consulte también
-* [Qué esperar cuando la aplicación Android está administrada por directivas MAM](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md)
-* [Qué esperar cuando la aplicación iOS está administrada por directivas MAM](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [What to expect when your Android app is managed by app protection policies](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)
+* [What to expect when your iOS app is managed by app protection policies](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md) (Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones)
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

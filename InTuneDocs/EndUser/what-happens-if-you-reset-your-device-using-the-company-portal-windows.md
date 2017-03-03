@@ -1,5 +1,5 @@
 ---
-title: "¿Qué ocurre si restablece el dispositivo Windows mediante el Portal de empresa? | Microsoft Docs"
+title: "¿Qué ocurre al restablecer el dispositivo Windows? | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -16,9 +16,10 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: cc2800d11bc36b4414f9b76587e3c4bf751d3224
+ms.sourcegitcommit: 42e6b4d44dffa457f009e8402d5c429aa55932d6
+ms.openlocfilehash: 74983ab11e1c1763bd5394af483b93b74b715f89
 
 
 ---
@@ -26,7 +27,7 @@ ms.openlocfilehash: cc2800d11bc36b4414f9b76587e3c4bf751d3224
 
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>¿Qué ocurre si restablece el dispositivo Windows mediante el Portal de empresa?
 
-Cuando usa la aplicación del Portal de empresa o el [sitio web del Portal de empresa](reset-your-device-cpwebsite.md) para restablecer el dispositivo Windows, restablece el dispositivo a la configuración de fábrica y elimina todas las aplicaciones, configuración y datos, incluidos los datos personales. Lo que sucede en cada dispositivo depende del tipo y del empleo del mismo, como se describe en la tabla siguiente. Para obtener instrucciones sobre cómo restablecer el dispositivo perdido o robado, vea [Restablecer (borrar) el dispositivo perdido o robado](reset-erase-your-lost-or-stolen-device-windows.md).
+Cuando usa la aplicación del Portal de empresa o el [sitio web del Portal de empresa](reset-erase-your-device-cpwebsite.md) para restablecer el dispositivo Windows, restablece el dispositivo a la configuración de fábrica y elimina todas las aplicaciones, configuración y datos, incluidos los datos personales. Lo que sucede en cada dispositivo depende del tipo y del empleo del mismo, como se describe en la tabla siguiente. Para obtener instrucciones sobre cómo restablecer el dispositivo perdido o robado, vea [Restablecer (borrar) el dispositivo perdido o robado](reset-erase-your-device-cpwebsite.md).
 
 |Administración y configuración de dispositivos|Tipo de dispositivo|
 |---------------------------------------|---------------|
@@ -38,6 +39,6 @@ Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO4-->
 
 

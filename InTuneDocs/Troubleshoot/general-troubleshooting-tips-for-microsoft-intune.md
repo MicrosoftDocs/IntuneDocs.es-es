@@ -1,4 +1,3 @@
-
 ---
 title: "Sugerencias de solución de problemas generales | Microsoft Docs"
 description: Recursos generales para resolver problemas con Intune.
@@ -13,6 +12,7 @@ ms.technology:
 ms.assetid: c86a4e4a-6b9f-4835-a3d3-61a3f5f4c1ec
 ms.reviewer: tscott
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
 ms.openlocfilehash: ef6c482a45a7c759cec1062b129d2644562d0da2
@@ -97,6 +97,6 @@ Los temas siguientes proporcionan ayuda para solucionar problemas específicos. 
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Jan17_HO4-->
 
 

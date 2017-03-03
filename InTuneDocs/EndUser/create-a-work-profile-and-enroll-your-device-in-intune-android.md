@@ -1,11 +1,11 @@
 ---
-title: "Creación de un perfil de trabajo e inscripción del dispositivo en Intune | Microsoft Docs"
-description: "Describe cómo cifrar un dispositivo Android"
+title: Inscribir el dispositivo con un perfil de trabajo | Microsoft Docs
+description: "Cómo mejorar la seguridad de los dispositivos Android con perfiles de trabajo."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,13 @@ ms.technology:
 ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
 searchScope:
 - Company Portal
+ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: arnab
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: d4e3d60115bf5e2f41a40cd3746c9678cfb915bd
+ms.sourcegitcommit: 5ca9814992edd0a18d48145243a4be524dbb4f23
+ms.openlocfilehash: 2384889d377713757b6172a12d608b32a1756978
 
 
 ---
@@ -71,7 +73,7 @@ Para crear un perfil de trabajo:
 
     Brevemente, verá el mensaje "Inscribir el dispositivo".
 
-11. Cuando la pantalla **Configuración de acceso a la empresa** muestra que todo se ha configurado correctamente, pulse **CONTINUAR**. 
+11. Cuando la pantalla **Configuración de acceso a la empresa** muestra que todo se ha configurado correctamente, pulse **CONTINUAR**.
 
     ![La configuración de acceso a la empresa muestra que está completa la inscripción y el perfil de trabajo.](./media/andr-afw-company-access-setup-green-checks.png)
 
@@ -87,8 +89,6 @@ Para crear un perfil de trabajo:
 
 
 
-
-
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO5-->
 
 

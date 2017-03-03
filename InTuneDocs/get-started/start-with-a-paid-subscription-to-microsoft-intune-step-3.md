@@ -1,11 +1,11 @@
 ---
 title: Agregar usuarios y conceder permisos | Microsoft Docs
-description: "Sincronizar usuarios locales con Azure AD y conceder permisos de administrador para la suscripción a Intune"
+description: "Sincronización de usuarios locales con Azure AD y concesión de permisos de administrador para la suscripción de Intune."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: 02b6dd389c94d2b31bd96b2095ae48b685084370
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: b1f16df329c01aeb45885f3981e2d9d7ef854e8b
 
 
 ---
@@ -23,6 +24,8 @@ ms.openlocfilehash: 02b6dd389c94d2b31bd96b2095ae48b685084370
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>Agregar usuarios y conceder permiso administrativo a Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+En este tema se explica a los administradores cómo pueden agregar usuarios a Intune y qué permisos administrativos están disponibles en el servicio Intune.
 
 Como administrador, puede agregar usuarios directamente o sincronizarlos desde la instancia local de Active Directory. Una vez agregados, los usuarios pueden inscribir dispositivos y obtener acceso a los recursos de la empresa. También puede conceder a los usuarios permisos adicionales, incluidos permisos de *administrador de inquilinos*, permisos de *administrador de servicios* y permisos de *administrador de inscripción de dispositivos*.
 
@@ -35,7 +38,7 @@ Este tema le permite:
   - [Administradores de inscripción de dispositivos](#device-enrollment-managers)
 
 ## <a name="add-users-to-intune"></a>Agregar usuarios a Intune
-Puede agregar manualmente usuarios a la suscripción de Intune mediante el [portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), a los que no se les asigna automáticamente una licencia de Intune. En vez de ello, un administrador de inquilinos de Intune deberá editar posteriormente la cuenta de usuario para asignar una licencia al usuario desde el portal de Office 365. Para instrucciones, consulte [Agregar usuarios individualmente o de forma masiva al portal de Office 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
+Puede agregar manualmente usuarios a la suscripción de Intune mediante el [Portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), pero no se les asigna ninguna licencia de Intune automáticamente. En vez de ello, un administrador de inquilinos de Intune deberá editar posteriormente la cuenta de usuario para asignar una licencia al usuario desde el portal de Office 365. Para instrucciones, consulte [Agregar usuarios individualmente o de forma masiva al portal de Office 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
 ### <a name="sync-active-directory-and-add-users-to-intune"></a>Sincronizar Active Directory y agregar usuarios a Intune
 Puede configurar la sincronización de directorios para importar las cuentas de usuario desde la instancia local de Active Directory a Microsoft Azure Active Directory (Azure AD), que incluye los usuarios de Intune. Tener el servicio local de Active Directory conectado con todos los servicios basados en Azure Active Directory facilita la administración de identidades de usuario en gran medida. También puede configurar características de inicio de sesión único para que la experiencia de autenticación resulte fácil y familiar a los usuarios. Al vincular el mismo [inquilino de Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/) con varios servicios, las cuentas de usuario que sincronizó previamente están disponibles para todos los servicios basados en la nube.
@@ -103,6 +106,6 @@ Los administradores de inscripción de dispositivos son cuentas de usuario está
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 
