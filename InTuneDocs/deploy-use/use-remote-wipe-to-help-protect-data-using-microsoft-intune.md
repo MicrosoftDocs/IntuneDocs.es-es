@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 11/02/2016
+ms.date: 02/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 8131d130e843db37e99b05ab17cd1b8ba23c7c57
+ms.sourcegitcommit: 7da3108cbc3185cd40c1ca9b52545bbd4e46b21f
+ms.openlocfilehash: 043b5ccb611600bdf18ce93fccfa853f3994a860
 
 
 ---
@@ -117,10 +118,14 @@ El **borrado selectivo** quita los datos de la empresa incluidos los datos de ad
 |Configuración de perfil de Wi-Fi y VPN|Quitado.|Quitado.|
 |Configuración de perfil de certificado|Certificados revocados, pero no eliminados.|Certificados eliminados y revocados.|
 |Agente de administración|Se revocarán los privilegios del administrador de dispositivos.|Se revocarán los privilegios del administrador de dispositivos.|
-|Correo electrónico|Se quita el correo electrónico recibido en la aplicación de Microsoft Outlook para Android.|Los perfiles de correo electrónico que se aprovisionan mediante Intune se quitan y el correo electrónico almacenado en caché en el dispositivo se elimina.|
-|Outlook|Se quita el correo electrónico recibido en la aplicación de Microsoft Outlook para iOS.</br>Excepción: Si Exchange está hospedado de forma local, no se quita el correo electrónico .|Se quita el correo electrónico recibido en la aplicación de Microsoft Outlook para iOS.</br>Excepción: Si Exchange está hospedado de forma local, no se quita el correo electrónico .|
+|Correo electrónico|N/D. Vea el elemento de Outlook.|Los perfiles de correo electrónico que se aprovisionan mediante Intune se quitan y el correo electrónico almacenado en caché en el dispositivo se elimina.|
+|Outlook|Se quita el correo electrónico recibido por la aplicación Microsoft Outlook para Android, pero solo si Outlook está protegido con directivas MAM. De lo contrario, Outlook no se borra en la anulación de la inscripción.</br>Excepción: Si Exchange está hospedado de forma local, no se quita el correo electrónico .|Se quita el correo electrónico recibido por la aplicación Microsoft Outlook para Android, pero solo si Outlook está protegido con directivas MAM. De lo contrario, Outlook no se borra en la anulación de la inscripción.</br>Excepción: Si Exchange está hospedado de forma local, no se quita el correo electrónico .|
 |Separación de Azure Active Directory (AAD)|Registro de AAD eliminado.|Registro de AAD eliminado.|
 |Contactos | Se quitan los contactos sincronizados directamente desde la aplicación en la libreta de direcciones nativa.  No se pueden borrar los contactos sincronizados desde la libreta de direcciones nativa en otro origen externo. <br /> <br />Actualmente, se admite solo la aplicación Outlook.|Se quitan los contactos sincronizados directamente desde la aplicación en la libreta de direcciones nativa.  No se pueden borrar los contactos sincronizados desde la libreta de direcciones nativa en otro origen externo. <br /> <br />Actualmente, se admite solo la aplicación Outlook.
+
+**Android for Work**
+
+Al realizar un borrado selectivo en un dispositivo de Android for Work, se quitan todos los datos, las aplicaciones y las configuraciones del perfil de trabajo en dicho dispositivo. Esto retira el dispositivo de la administración con Intune. No se admite el borrado completo en Android for Work.
 
 **Windows**
 
@@ -168,6 +173,6 @@ Este informe también muestra quién realizó la acción.
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

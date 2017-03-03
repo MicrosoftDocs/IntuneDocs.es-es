@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 02/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 27e6a4d59c0cc00ac9dd154605518d9c937e5fc6
+ms.sourcegitcommit: f7998da5566f9b963807b613a47d35b629620f96
+ms.openlocfilehash: 9e8b9e1c935dd771c3e37bea5a552fba2374bf68
 
 
 ---
@@ -63,7 +64,7 @@ Antes de empezar a utilizar el editor de software, debe instalar la versión com
 ## <a name="cloud-storage-space"></a>Espacio de almacenamiento en nube
 Todas las aplicaciones que cree mediante el tipo de instalación del instalador de software (por ejemplo, una aplicación de línea de negocio) se deben empaquetar y cargar en el almacenamiento en la nube de Microsoft Intune. Una suscripción de prueba de Intune incluye 2 gigabytes (GB) de almacenamiento en nube destinados a almacenar actualizaciones y aplicaciones administradas. Una suscripción completa incluye 20 GB de espacio de almacenamiento.
 
-En el nodo **Uso del almacenamiento** del área de trabajo **Administración** puede ver la cantidad de espacio que está usando.
+En el nodo **Uso del almacenamiento** del área de trabajo **Administración** puede ver la cantidad de espacio que está usando. Puede adquirir almacenamiento adicional para Intune usando el método de compra original.  Si el importe se le ha facturado o lo ha abonado con tarjeta de crédito, visite el [portal de administración de suscripciones](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions).  De lo contrario, póngase en contacto con su asociado o agente de ventas.
 
 Los requisitos de espacio de almacenamiento en nube son los siguientes:
 
@@ -96,6 +97,6 @@ Tendrá que agregar aplicaciones en la consola de Intune para, luego, poder impl
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Feb17_HO2-->
 
 

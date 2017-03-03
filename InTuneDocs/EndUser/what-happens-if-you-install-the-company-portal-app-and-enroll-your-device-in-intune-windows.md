@@ -1,11 +1,11 @@
 ---
-title: "¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo Windows en Intune? | Microsoft Docs"
+title: "Instalar la aplicación de portal de empresa para Windows | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,11 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: ae372c141ffd98d280715c454057284c4bd3d6e9
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: bde2ccc0c170a85e926357d54fcf4ffe6ee50fd9
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -33,7 +35,7 @@ Cuando inscribe un dispositivo Windows o Windows Phone en Intune, puede:
 
 -   Acceder a la red, el correo electrónico y los archivos de trabajo de la empresa.
 
--   Obtener aplicaciones de empresa desde el sitio web del Portal de empresa. (Para Windows 7 y Windows Vista, solo puede obtener aplicaciones de empresa desde el sitio web del Portal de empresa).
+-   Obtener aplicaciones de empresa desde el sitio web del Portal de empresa. (__Nota__: Para Windows 7 y Windows Vista, solo puede obtener aplicaciones de empresa desde el sitio web del Portal de empresa).
 
 -   Configurar automáticamente la cuenta de correo electrónico profesional o educativa.
 
@@ -66,6 +68,7 @@ Al inscribir el dispositivo, da permiso al administrador de TI para hacer cosas 
 -  El administrador de TI puede instalar aplicaciones y actualizaciones en el equipo.
 
 ## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>¿Qué ocurre cada ocho horas después de la inscripción de dispositivo?
+
 Cada ocho horas aproximadamente, los dispositivos inscritos harán lo siguiente:
 
 -   Descargar las actualizaciones de directivas o aplicaciones proporcionadas por el administrador de TI.
@@ -75,9 +78,4 @@ Cada ocho horas aproximadamente, los dispositivos inscritos harán lo siguiente:
 -   Enviar actualizaciones de inventario de aplicaciones de empresa.
 
 Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

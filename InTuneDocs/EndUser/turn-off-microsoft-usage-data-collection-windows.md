@@ -1,11 +1,11 @@
 ---
-title: "Cómo desactivar la recopilación de datos de uso de Microsoft | Microsoft Docs"
+title: "Cómo desactivar la recopilación de datos de Microsoft para Windows | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 12/20/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,16 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: priyar
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: bc757320199362ba1885a6322b316e4f30750613
-ms.openlocfilehash: 42c1b63bb6bd6890c98b5c619d2dced945c10484
+ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
+ms.openlocfilehash: fc48199acad7a65bd4a06b5a51f6f5b851997edb
 
 
 ---
 
 
-# <a name="turn-off-microsoft-usage-data-collection"></a>Desactivar la recopilación de datos de uso de Microsoft
+# <a name="how-to-turn-off-microsoft-data-collection"></a>Cómo desactivar la recopilación de datos de Microsoft
 
 Microsoft recopila automáticamente determinados datos sobre nuestros productos y servicios. Hacemos esto para mejorar la confiabilidad y el rendimiento de nuestros productos, incluida la aplicación de portal de empresa. Aunque estos datos son anónimos, algunos usuarios no se sienten cómodos con esta recopilación. Su administrador de TI no tiene control sobre la recopilación de estos datos y no puede cambiar la selección de este ajuste.
 
@@ -34,6 +35,6 @@ Si quiere desactivar la recopilación de datos en el dispositivo Windows, busque
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -5,17 +5,18 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/28/2016
+ms.date: 02/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8e38d47d-0c5e-40ce-b379-29d3657f5c28
-ms.reviewer: jeffgilb
+ms.reviewer: coryfe
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 1e0cb157182415e25cd5829e244e47b2bd5b539b
+ms.sourcegitcommit: a57ac0e6cb29dbfc87bb09c04bb372228a1d72be
+ms.openlocfilehash: 34e9ce6a5c0b7cb912a54644e6323574c2e041a7
 
 
 ---
@@ -45,6 +46,9 @@ Antes de habilitar la sincronización en la consola de Intune, debe configurar l
 1. Asegúrese de que inicia sesión en la Tienda para empresas con la misma cuenta de inquilino que usa para iniciar sesión en Intune.
 2. En la Tienda para empresas, seleccione **Configuración** > **Herramientas de administración**.
 3. En la página de Herramientas de administración, elija primero **Agregar una herramienta de administración** y, después, **Microsoft Intune**.
+
+> [!NOTE]
+> Si usa más de una herramienta de administración para implementar las aplicaciones de la Tienda Windows para empresas, anteriormente solo podía asociar una de ellas con la Tienda Windows para empresas. Ahora puede asociar varias herramientas de administración con la tienda, por ejemplo, Intune y Configuration Manager.
 
 Ya puede continuar y configurar la sincronización en la consola de Intune.
 
@@ -83,6 +87,6 @@ Al implementar una aplicación de la Tienda Windows para empresas, cada usuario 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

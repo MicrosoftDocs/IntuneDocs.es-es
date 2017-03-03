@@ -1,11 +1,11 @@
 ---
-title: "¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo iOS o macOS en Intune? | Microsoft Docs"
+title: "Instalar la aplicación de portal de empresa para iOS y macOS | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/25/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,10 @@ searchScope:
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: cef8045c071396419805274ba94cbcfff864a495
+ms.sourcegitcommit: 0e6b7ae1794ff0857dfb203eb3c67d7ba494bd8e
+ms.openlocfilehash: d593b00ee3fd30adec6c36c3939c895647e8dada
 
 
 ---
@@ -37,36 +38,6 @@ Al instalar la aplicación Portal de empresa e inscribir su dispositivo iOS o ma
 -   Configurar automáticamente la cuenta de correo electrónico profesional.
 
 Cuando inscribe el dispositivo en Intune, está concediendo permiso al administrador de TI para administrarlo con el fin de ayudarle a proteger la información de la empresa que tiene en el mismo.
-
-**Lo que el personal de TI no puede ver**
-
--   Historial web y de llamadas
-
--   Ubicación
-
--   Mensajes de texto y de correo electrónico
-
--   Contactos
-
--   Contraseñas
-
--   Calendario
-
--   Álbum de cámara
-
-**Lo que el personal de TI puede ver**
-
--   Modelo
-
--   Número de serie
-
--   Sistema operativo
-
--   Nombres de aplicación
-
--   Propietario
-
--   Nombre del dispositivo
 
 Cuando el dispositivo esté inscrito, el Administrador de TI podrá:
 
@@ -98,6 +69,6 @@ Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

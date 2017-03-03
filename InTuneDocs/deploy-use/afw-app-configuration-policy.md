@@ -1,11 +1,11 @@
 ---
-title: "Uso de directivas de configuración de aplicaciones móviles Android for Work | Microsoft Docs"
+title: "Directiva de configuración de aplicaciones Android for Work | Microsoft Docs"
 description: "Use las directivas de configuración de aplicaciones móviles de Intune para proporcionar los valores de configuración que podrían ser necesarios cuando los usuarios ejecutan una aplicación Android for Work."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/3/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: chrisbal
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 42581ff16740da0ebcc7160c96b7f70962662ba9
+ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
+ms.openlocfilehash: 58671d037c7f62e5fdaa56657737a4470c90bdb7
 
 
 ---
@@ -28,19 +29,17 @@ ms.openlocfilehash: 42581ff16740da0ebcc7160c96b7f70962662ba9
 
 Use las directivas de configuración de aplicaciones móviles de Microsoft Intune para proporcionar los valores de configuración que podrían ser necesarios cuando los usuarios ejecutan una aplicación. Por ejemplo, una aplicación puede requerir a los usuarios que especifiquen:
 
--   Un número de puerto personalizado.
+-   Un número de puerto personalizado
+-   Configuración de idioma
+-   Configuración de marca, como un logotipo de empresa
 
--   Configuración de idioma.
+Si el usuario ha especificado la configuración incorrectamente, puede aumentar la carga del departamento de soporte técnico y ralentizar la adopción de nuevas aplicaciones.
 
--   Configuración de marca, como un logotipo de empresa.
+Las directivas de configuración de aplicaciones móviles permiten implementar la configuración en dispositivos antes de que los usuarios ejecuten la aplicación. La configuración se proporciona de forma automática y los usuarios no tienen que realizar ninguna acción.
 
-Si el usuario ha especificado esta configuración incorrectamente, puede aumentar la carga del departamento de soporte técnico y ralentizar la adopción de nuevas aplicaciones.
+Para usar las directivas de configuración de aplicaciones, el desarrollador de la aplicación debe haber expuesto las configuraciones de aplicación de empresa al crearlas. Por ejemplo, Google Chrome expone la configuración que le permite establecer marcadores predeterminados, sitios permitidos y denegados, y mucho más. Póngase en contacto con el desarrollador de la aplicación para ver si se admite esta configuración y cómo especificarla en la directiva.
 
-Las directivas de configuración de aplicaciones móviles pueden ayudarle a eliminar estos problemas al permitirle implementar esta configuración para los usuarios de ejecutar la aplicación. A continuación, la configuración se proporciona de forma automática y los usuarios no tienen que realizar ninguna acción.
-
-Para utilizar las directivas de configuración de la aplicación, el desarrollador de la aplicación debe haber expuesto las configuraciones de aplicación de empresa cuando se crean. Por ejemplo, Google Chrome expone la configuración que le permite establecer marcadores predeterminados, sitios permitidos y denegados, y mucho más. Póngase en contacto con el desarrollador de la aplicación para ver si se admite esta configuración y cómo especificarla en la directiva.
-
-Puede implementar la directiva de configuración de aplicación en los mismos usuarios en los que se ha implementado la aplicación que desea configurar. Cada vez que se ejecute la aplicación, se usará la configuración de la directiva.
+Puede implementar la directiva de configuración de aplicación en los mismos usuarios en los que se ha implementado la aplicación que desea configurar. La configuración de la aplicación se aplica cuando se ejecuta la aplicación.
 
 ## <a name="configure-a-mobile-app-configuration-policy"></a>Configurar directivas de configuración de aplicaciones móviles
 
@@ -80,6 +79,6 @@ Cuando se ejecuta la aplicación implementada en un dispositivo, se ejecutará c
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO1-->
 
 

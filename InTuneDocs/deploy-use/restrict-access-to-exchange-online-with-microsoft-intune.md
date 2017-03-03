@@ -1,11 +1,11 @@
 ---
-title: "Proteger el acceso de correo electrónico a Exchange Online | Microsoft Docs"
+title: "Proteger el correo electrónico en Exchange Online | Microsoft Docs"
 description: "Proteja y controle el acceso al correo electrónico de empresa en Exchange Online con el acceso condicional."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f34d54710f0ec662eecec85f7fa041061132a0d
-ms.openlocfilehash: 6078684e3f8e5821f057b890eac5caf388206a82
+ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
+ms.openlocfilehash: ab4b244e733f973581216f3358fce0653609aaaa
 
 
 ---
@@ -25,24 +26,26 @@ ms.openlocfilehash: 6078684e3f8e5821f057b890eac5caf388206a82
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
+Puede configurar el acceso condicional para Exchange Online o Exchange Online dedicado con Microsoft Intune. Para más información sobre cómo funciona el acceso condicional, consulte el artículo [Proteger el acceso al correo electrónico, a O365 y a otros servicios](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+
 > [!NOTE]
 >Si tiene un entorno de Exchange Online dedicado y necesita averiguar si es la configuración nueva o heredada, póngase en contacto con su administrador de cuentas.
 
-Para controlar el acceso de correo electrónico a Exchange Online o a su nuevo entorno de Exchange Online dedicado, puede configurar el acceso condicional para Exchange Online con Microsoft Intune. Para más información sobre cómo funciona el acceso condicional, consulte el artículo [Proteger el acceso al correo electrónico, a O365 y a otros servicios](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
+## <a name="before-you-begin"></a>Antes de comenzar
 
-
-**Antes** de configurar el acceso condicional, debe:
+Para configurar el acceso condicional, debe:
 
 -   Tener una **suscripción de Office 365 que incluya Exchange Online (por ejemplo, E3)** y los usuarios deben tener licencia para Exchange Online.
 
 - Tener una **suscripción de Enterprise Mobility + Security (EMS)** o una **suscripción de Azure Active Directory (Azure AD) Premium** y los usuarios deben tener la licencia de EMS o Azure AD. Para obtener más detalles, vea la [página de precios de Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) o la [página de precios de Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
 
 -  Considerar la posibilidad de configurar el **conector de servicio a servicio de Intune** opcional, que conecta [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] a Exchange Online y facilita la administración de información de dispositivos a través de la consola de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. No necesita usar el conector para usar directivas de cumplimiento o de acceso condicional, pero sí para ejecutar informes que ayuden a evaluar el impacto del acceso condicional.
+    -  Obtenga más información sobre el [Intune Service to Service Connector](intune-service-to-service-exchange-connector.md).
 
    > [!NOTE]
-   > No configure el conector de servicio a servicio si piensa usar el acceso condicional para Exchange Online y Exchange local.
+   > No configure el Intune Service to Service Connector si piensa usar el acceso condicional tanto para Exchange Online como para Exchange local.
 
-   Para obtener instrucciones sobre cómo configurar el conector, vea [Conector de servicio a servicio de Intune](intune-service-to-service-exchange-connector.md).
+### <a name="device-compliance-requirements"></a>Requisitos de cumplimiento del dispositivo
 
 Cuando configura directivas de acceso condicional y se aplican a un usuario, antes de que este pueda conectarse a su correo electrónico, el **dispositivo** que usa debe ser:
 
@@ -54,12 +57,15 @@ Cuando configura directivas de acceso condicional y se aplican a un usuario, ant
 
 -   Debe ser **compatible** con todas las directivas de cumplimiento de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] que se han implementado en el dispositivo, o bien debe estar unido a un dominio local.
 
-Si no se cumple una directiva de acceso condicional, el usuario ve uno de los mensajes siguientes cuando inicia sesión:
+### <a name="when-the-device-is-not-compliant"></a>Cuando el dispositivo no es conforme
+
+Si no se cumple una directiva de acceso condicional, el dispositivo inmediatamente se pone en cuarentena y el usuario recibe un correo electrónico con una de las siguientes notificaciones de cuarentena cuando inicia sesión:
 
 - Si el dispositivo no está inscrito con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] o no está registrado en Azure Active Directory, se muestra un mensaje con instrucciones sobre cómo instalar la aplicación de portal de empresa, inscribir el dispositivo y activar el correo electrónico. Este proceso también asocia el identificador de Exchange ActiveSync del dispositivo con el registro en Azure Active Directory.
 
 -   Si se considera que el dispositivo no es compatible con las reglas de la directiva de cumplimiento, se dirige al usuario al sitio web del portal de empresa de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] o a la aplicación de portal de empresa, donde encontrará información sobre el problema y sobre cómo resolverlo.
 
+### <a name="how-conditional-access-works-with-exchange-online"></a>Cómo funciona el acceso condicional con Exchange Online
 
 En el diagrama siguiente se muestra el flujo que usan las directivas de acceso condicional para Exchange Online.
 
@@ -70,7 +76,6 @@ Puede proteger el acceso al correo electrónico de Exchange Online desde **Outlo
 
 - Android 4.0 y versiones posteriores, Samsung Knox Standard 4.0 y versiones posteriores, y Android for Work
 - iOS 8.0 y versiones posteriores
-- Windows Phone 8.1 y versiones posteriores
 
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
@@ -85,7 +90,8 @@ Puede proteger el acceso a **Outlook Web Access (OWA)** en Exchange Online cuand
 * Chrome (Android)
 * Intune Managed Browser (iOS, Android 5.0 y versiones posteriores)
 
-**Los exploradores no compatibles están bloqueados**.
+   > [!IMPORTANT]
+   > **Los exploradores no compatibles están bloqueados**.
 
 **La aplicación OWA para iOS y Android puede modificarse de modo que no use la autenticación moderna, y no se admite. El acceso desde la aplicación OWA se debe bloquear mediante reglas de notificaciones de ADFS.**
 
@@ -204,7 +210,7 @@ Solo se evalúan los grupos en los que se aplica la directiva de acceso condicio
         Esto requiere que cualquier dispositivo que se usa para tener acceso a **Exchange Online** se inscriba en Intune y que sea compatible con las directivas. Cualquier aplicación cliente que use la **autenticación moderna** estará sujeta a la directiva de acceso condicional. Si la plataforma no es compatible actualmente con Intune, el acceso a **Exchange Online** se bloqueará.
 
         Seleccionar la opción **Todas las plataformas** significa que Azure Active Directory aplica esta directiva a todas las solicitudes de autenticación, independientemente de la plataforma notificada por la aplicación cliente. Todas las plataformas tienen que inscribirse y ser compatibles, excepto:
-        *   Los dispositivos Windows, que deben estar inscritos y ser compatibles, estar unidos a dominio con Active Directory local, o ambos.
+        *    Los dispositivos Windows, que deben estar inscritos y ser compatibles, estar unidos a dominio con Active Directory local, o ambos.
         * Plataformas no compatibles como Mac OS. Por el contrario, las aplicaciones que usan la autenticación moderna y proceden de estas plataformas seguirán bloqueadas.
 
     -   **Plataformas específicas**
@@ -272,6 +278,6 @@ En el panel de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], elija el 
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

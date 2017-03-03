@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: staciebarker
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 02/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: d97fb610-9d88-40e5-bb06-447eec533630
 ms.reviewer: esmich
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b068da7685792757825a4bc0d555e28ee0168cb1
-ms.openlocfilehash: 7009cf7626008124e4c8a71198e21ae6def93581
+ms.sourcegitcommit: 211b996263aae7a42f8370eb343c7e759ef87790
+ms.openlocfilehash: 5aae8edd2b851eb94156e82bc9b6e604644cb900
 
 
 ---
@@ -35,7 +36,7 @@ Para obtener más información acerca de cómo los usuarios pueden enviarle los 
 
 - [Usar el registro detallado para que el administrador de TI pueda solucionar los problemas del dispositivo](/intune/enduser/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android): describe cómo los usuarios activan el registro detallado, que le enviará todos sus registros de datos automáticamente. De forma predeterminada, el registro detallado está activado.
 
-- [Enviar registros de datos de diagnóstico de Android al administrador de TI mediante correo electrónico](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
+- [Enviar registros de datos de diagnóstico de Android al administrador de TI mediante correo electrónico](/intune/enduser/send-logs-to-your-it-admin-by-email-android)
 
 - [Enviar registros de datos de diagnóstico al administrador de TI mediante un cable USB](/intune/enduser/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
 
@@ -59,6 +60,6 @@ En el portal de empresa para Windows, los registros se encuentran en *%localappd
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

@@ -1,6 +1,6 @@
 ---
 title: Uso de aplicaciones con CA MAM | Microsoft Docs
-description: "Comprenda los conceptos de cómo el acceso condicional para MAM puede ayudar a controlar qué aplicaciones tienen acceso a los servicios de Office 365."
+description: "Comprenda los conceptos de cómo el acceso condicional para MAM puede ayudar a controlar qué aplicaciones tienen acceso a los servicios de Office&365;."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -13,21 +13,22 @@ ms.technology:
 ms.assetid: 71dcf9bc-bfd1-4e06-b7ad-14b33a2288d0
 ms.reviewer: chrisgre
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 22746475bf50f8e4775c81e6833428c7f2ef9eba
+ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
+ms.openlocfilehash: 2ab3769ff878cf8b6223e4f46244f16eab8743a0
 
 
 ---
-# <a name="what-to-expect-when-using-an-app-with-mam-ca"></a>¿Qué se puede esperar al usar una aplicación con el acceso condicional de MAM?
+# <a name="what-to-expect-when-using-an-app-with-app-based-ca"></a>¿Qué se puede esperar al usar una aplicación con acceso condicional basado en la aplicación?
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-El acceso condicional de MAM comprueba la identidad de la aplicación aprobada por medio de una aplicación de agente que debe estar presente en el dispositivo:
+El acceso condicional basado en la aplicación comprueba la identidad de la aplicación aprobada por medio de una aplicación de agente que debe estar presente en el dispositivo:
 *  En **iOS**, la **aplicación Azure Authenticator** es la aplicación de agente.
 * En **Android**, la **aplicación Portal de empresa de Intune** es la aplicación de agente. 
 
-A los usuarios finales que inician sesión por primera vez, en una aplicación compatible con el acceso condicional de MAM, como OneDrive o Outlook, se les pedirá que instalen la aplicación de agente y registren el dispositivo con Azure AD. El registro del dispositivo en Azure AD (anteriormente conocido Workplace Join) creará un registro y un certificado del dispositivo con el que se emiten los tokens.  **No** es lo mismo que la **inscripción de MDM**. No existen perfiles de administración ni directivas que se apliquen y no hay ningún inventario tomado de las aplicaciones en el dispositivo.  Solo se realizará el proceso de instalación de la aplicación de agente y de registro del dispositivo en el primer uso de una aplicación administrada.
+A los usuarios finales que inician sesión por primera vez en una aplicación compatible con el acceso condicional basado en la aplicación, como OneDrive o Outlook, se les pedirá que instalen la aplicación de agente y registren el dispositivo en Azure AD. El registro del dispositivo en Azure AD (anteriormente conocido Workplace Join) creará un registro y un certificado del dispositivo con el que se emiten los tokens.  **No** es lo mismo que la **inscripción de MDM**. No existen perfiles de administración ni directivas que se apliquen y no hay ningún inventario tomado de las aplicaciones en el dispositivo.  Solo se realizará el proceso de instalación de la aplicación de agente y de registro del dispositivo en el primer uso de una aplicación administrada.
 
 La siguiente es una lista de propiedades que se obtienen directamente del dispositivo:
 
@@ -45,16 +46,14 @@ Es posible quitar el registro del dispositivo a través de la consola de adminis
 
 
 
-## <a name="mam-ca-with-conditional-access-based-on-device-compliance"></a>Acceso condicional de MAM con acceso condicional basado en el cumplimiento del dispositivo  
+## <a name="app-based-ca-with-conditional-access-based-on-device-compliance"></a>Acceso condicional basado en la aplicación con acceso condicional basado en el cumplimiento del dispositivo  
 
-Puede configurar el [acceso condicional basado en el cumplimiento del dispositivo](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (**acceso condicional del dispositivo**) en la [consola de administrador de Intune](https://manage.microsoft.com) o en la [consola de administración de Azure AD Premium] (https://manage.windowsazure.com). El acceso condicional del dispositivo requiere que los usuarios se conecten a Exchange Online solo a través de los dispositivos administrados por Intune que sean compatibles con la directiva de cumplimiento del dispositivo de Intune o equipos unidos a un dominio.  Si un usuario pertenece a uno o más grupos de seguridad que tienen como destino las directivas del acceso condicional de MAM y del acceso condicional del dispositivo, el usuario debe cumplir uno de los dos requisitos siguientes:
-* La aplicación que se utiliza para acceder a la aplicación móvil que es compatible con el acceso condicional de MAM y el dispositivo en el que se está ejecutando la aplicación, tiene el **autenticador de iOS (para dispositivos iOS)** o **la aplicación Portal de empresa (para dispositivos Android)** instalado.
+Puede configurar el [acceso condicional basado en el cumplimiento del dispositivo](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (**acceso condicional del dispositivo**) en la [consola de administrador de Intune](https://manage.microsoft.com) o en la [consola de administración de Azure AD Premium] (https://manage.windowsazure.com). El acceso condicional del dispositivo requiere que los usuarios se conecten a Exchange Online solo a través de los dispositivos administrados por Intune que sean compatibles con la directiva de cumplimiento del dispositivo de Intune o equipos unidos a un dominio.  Si un usuario pertenece a uno o varios grupos de seguridad que tienen como destino las directivas del acceso condicional basado en la aplicación y del acceso condicional del dispositivo, este debe cumplir uno de los dos requisitos siguientes:
+* La aplicación que se utiliza para acceder al servicio es una aplicación móvil compatible. 
+* El dispositivo en el que se está ejecutando la aplicación tiene el **autenticador de iOS (para dispositivos iOS)** o la **aplicación del Portal de empresa (para dispositivos Android)** instalados.
 * El dispositivo utilizado para acceder al servicio está **administrado y es conforme con Intune** con la directiva de cumplimiento del dispositivo de Intune o es un **equipo unido al dominio**.  Estos son algunos ejemplos para ayudar a ilustrar esto:
-  * Si un usuario intenta conectarse desde el **aplicación de correo electrónico de iOS nativa**, deben estar en un **dispositivo administrado y conformes** ya que la aplicación de correo electrónico nativo no es compatible con el acceso condicional de MAM.
+  * Si un usuario intenta conectarse desde la **aplicación nativa de correo electrónico de iOS**, deberá estar en un **dispositivo administrado y compatible**, ya que la aplicación nativa de correo electrónico no es compatible con el acceso condicional basado en la aplicación.
   * Si un usuario intenta conectarse desde un **equipo doméstico Windows**, se aplicará la **directiva del acceso condicional del dispositivo**, que requiere que debe usar un equipo unido al dominio.
-
-
-
 
 ## <a name="next-steps"></a>Pasos siguientes
 [Creación de una directiva de Exchange Online para aplicaciones MAM](mam-ca-for-exchange-online.md)
@@ -63,10 +62,10 @@ Puede configurar el [acceso condicional basado en el cumplimiento del dispositiv
 
 ### <a name="see-also"></a>Consulte también
 
-[Proteger datos de aplicaciones mediante las directivas de MAM](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
+[Protección de datos de aplicaciones con directivas de protección de aplicaciones](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

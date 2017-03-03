@@ -2,10 +2,10 @@
 title: Solucionar problemas de Endpoint Protection | Microsoft Docs
 description: Resolver problemas al usar Microsoft Intune Endpoint Protection.
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 08/02/2016
+ms.date: 01/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: e31df2d2-bb1b-491b-9a71-04e0b18829c1
 ms.reviewer: tscott
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: c0942dc6911a67dc7c3fa0c19e5a38ac60ec18b8
+ms.sourcegitcommit: a43fc6fcd33f65725d325060a513d5380baae10f
+ms.openlocfilehash: b47469c8c5d35098e2e932e5ae9c9de4f5cdafb8
 
 
 ---
@@ -24,10 +25,9 @@ ms.openlocfilehash: c0942dc6911a67dc7c3fa0c19e5a38ac60ec18b8
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Use la información de esta sección como ayuda para resolver los problemas que se producen al usar Microsoft Intune Endpoint Protection.
+Use la información de esta sección como ayuda para resolver los problemas que se producen al usar Microsoft Intune Endpoint Protection. También puede revisar la información sobre la [solución de problemas de Windows Defender](https://technet.microsoft.com/itpro/windows/keep-secure/troubleshoot-windows-defender-in-windows-10).
 
 Si esta información no soluciona el problema, vea [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico para Microsoft Intune) para conocer otras formas de obtener ayuda.
-
 
 ### <a name="endpoint-protection-error-messages"></a>Mensajes de error de Endpoint Protection
 En esta sección se describen las posibles causas y soluciones de los siguientes errores y advertencias que aparecen en el panel **Estado de Endpoint Protection** de la [consola de administración de Intune](https://manage.microsoft.com).
@@ -52,6 +52,6 @@ Si esta información para solucionar problemas no le ha ayudado, póngase en con
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

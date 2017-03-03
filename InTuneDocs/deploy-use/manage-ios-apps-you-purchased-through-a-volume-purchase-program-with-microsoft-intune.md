@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/15/2016
+ms.date: 01/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 1f4bffd4aad8915034b3e6f4f962aed4d5ccd731
-ms.openlocfilehash: 29ed9bea92b23998899fcf57502a9982377c3eb6
+ms.sourcegitcommit: 56ef80138d0790933ae216bb02101c3f408311c7
+ms.openlocfilehash: 5bea5a9f1a69193543fa3c5e8997a6527721d3ef
 
 
 ---
@@ -45,7 +46,7 @@ Antes de empezar, es necesario obtener un token de PCV de Apple y cargarlo en la
 * De forma predeterminada, Intune se sincroniza con el servicio PCV de Apple dos veces al día. Puede iniciar una sincronización manual en cualquier momento.
 * Después de importar el token de PCV en Intune, no importe el mismo token en otra solución de administración de dispositivos. Si lo hace, podría perder la asignación de licencias y los registros de usuario.
 * Antes de empezar a usar el PCV de iOS con Intune, quite todas las cuentas de usuario de PCV existentes creadas con otros proveedores de administración de dispositivos móviles (MDM). Intune no sincronizará esas cuentas de usuario en Intune como medida de seguridad. Intune solo sincronizará los datos del servicio PCV de Apple que se creó mediante Intune.
-* No puede implementar aplicaciones de PCV para iOS en dispositivos de usuarios que se han inscrito con el protocolo de inscripción de dispositivos (DEP).
+* Solo se pueden implementar aplicaciones de PCV para iOS en dispositivos de usuarios que se han inscrito con el protocolo de inscripción de dispositivos (DEP) si está configurada la afinidad del usuario con el dispositivo.
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Para obtener y cargar un token de PCV de Apple
 
@@ -94,6 +95,6 @@ Puede supervisar qué aplicaciones de PCV están implementadas y el número de l
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 

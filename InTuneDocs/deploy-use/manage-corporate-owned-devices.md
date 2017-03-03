@@ -5,7 +5,7 @@ keywords:
 author: staciebarker
 ms.author: stabar
 manager: angrobe
-ms.date: 07/20/2016
+ms.date: 01/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 58270feb34185441406abc15e1f889c2924722e8
+ms.sourcegitcommit: 521a37044d6721fe905db7740329688ba2c24b35
+ms.openlocfilehash: ae077d80e05b33d625285d796917f4f6c153ca3f
 
 
 ---
@@ -25,6 +26,8 @@ ms.openlocfilehash: 58270feb34185441406abc15e1f889c2924722e8
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Puede inscribir dispositivos corporativos o propiedad de la organización para administrarlos con Intune de muchas maneras, en función del tipo de dispositivo, cómo se haya adquirido y las necesidades de la organización. También puede instalar la aplicación de Portal de empresa para inscribir y administrar dispositivos corporativos, como en un escenario "traiga su propio dispositivo" (BYOD).
+
+De manera predeterminada, los dispositivos de todas las plataformas pueden inscribirse en Intune. Para bloquear la inscripción de dispositivos, inicie sesión en el [portal de administración de Microsoft Intune](http://manage.microsoft.com) con sus credenciales de administrador. Elija **Administrador** > **Administración de dispositivos móviles** > **Reglas de inscripción** y después desactive las casillas correspondientes de las plataformas que quiera bloquear.
 
 ## <a name="enroll-corporate-owned-ios-devices"></a>Inscribir dispositivos iOS de empresa
 
@@ -65,6 +68,6 @@ Cuando un dispositivo se etiqueta como corporativo, verá **Corporativo** en la 
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Jan17_HO5-->
 
 

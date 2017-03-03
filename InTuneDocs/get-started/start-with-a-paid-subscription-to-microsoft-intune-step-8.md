@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,16 +13,19 @@ ms.technology:
 ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 654c5b65a9fde6742f3682b1fd5ba6c056d0d45b
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: c4ef429722f5e33092473641839b59de3bee1c1c
 
 
 ---
 
-# <a name="enroll-mobile-devices-and-install-an-app"></a>Inscripción de dispositivos móviles e instalación de una aplicación
+# <a name="enable-enrollment-for-mobile-devices"></a>Habilitar la inscripción de dispositivos móviles
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+En este tema se describe el procedimiento que deben seguir los administradores de Intune para habilitar la inscripción de dispositivos móviles. Para obtener ayuda sobre el uso de Intune en el teléfono, consulte el [uso de dispositivos administrados para realizar el trabajo](https://docs.microsoft.com/intune/enduser/company-portal-frequently-asked-questions). 
 
 Para configurar la administración de dispositivos móviles con Intune, primero debe establecer la *autoridad de administración de dispositivos móviles*, que identifica el servicio que puede administrar los dispositivos asociados a su cuenta. En esta guía se asume que usará el servicio de Intune en lugar de System Center Configuration Manager. Una vez establecida la entidad de MDM, puede habilitar la administración para plataformas de dispositivos e inscribir sus dispositivos con la aplicación del Portal de empresa.
 
@@ -46,7 +49,7 @@ La inscripción debe estar habilitada para dispositivos iOS, Mac y Android for W
 
 Habilite la inscripción de dispositivos para la plataforma de dispositivos que desee administrar. Los requisitos necesarios varían según la plataforma:
 
--  [iOS y macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune.md)
+-  [iOS y macOS](https://docs.microsoft.com/intune/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)
 -  [PC Windows](https://docs.microsoft.com/intune/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 -  [Windows 10 Mobile y Windows Phone](https://docs.microsoft.com/intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune)
 - [Android for Work](https://docs.microsoft.com/intune/deploy-use/set-up-android-for-work)
@@ -69,6 +72,6 @@ Enhorabuena. Acaba de completar el último paso de la *Guía de inicio rápido d
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 

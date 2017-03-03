@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: fc2fb3c2c59b4fc2de048d8a27a6eadec592fba3
@@ -32,9 +33,9 @@ Microsoft Intune puede ayudar a aumentar la productividad de los usuarios finale
 Si es así, Microsoft Intune le permite publicar aplicaciones (Office Mobile, línea interna de negocio u otras aplicaciones de escritorio y móviles) en un único portal común: [el sitio web o la aplicación de Portal de empresa de Intune](/intune/enduser/company-portal-frequently-asked-questions).
 
 ## <a name="how-do-i-do-it"></a>¿Cómo lo hago?
-1.  [Inscribir dispositivos](/intune/deploy-use/enroll-devices-in-microsoft-intune) en la administración de dispositivos móviles de Intune.
-2.  [Agregar aplicaciones a Intune](/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune) que desea implementar en dispositivos inscritos.
-3.  [Implementar aplicaciones mediante Intune](/intune/deploy-use/deploy-apps) para dispositivos inscritos.
+1.    [Inscribir dispositivos](/intune/deploy-use/enroll-devices-in-microsoft-intune) en la administración de dispositivos móviles de Intune.
+2.    [Agregar aplicaciones a Intune](/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune) que desea implementar en dispositivos inscritos.
+3.    [Implementar aplicaciones mediante Intune](/intune/deploy-use/deploy-apps) para dispositivos inscritos.
 
 ### <a name="additional-information"></a>Información adicional:
 Si la publicación de aplicaciones móviles de Office se realiza con la intención de usar las capacidades MAM de Intune para administrar la protección frente a la pérdida de datos de esas aplicaciones, cada usuario final al que se asignen directivas MAM deberá tener [asignada una licencia de usuario para Office 365](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).

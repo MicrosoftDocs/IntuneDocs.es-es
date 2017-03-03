@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/10/2016
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,6 +13,7 @@ ms.technology:
 ms.assetid: 0b1b86ed-2e80-474d-8437-17dd4bc07b55
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 985b3d14091f1adff15ae08dd95800640363d2f2
@@ -43,15 +44,13 @@ Puede implementar perfiles de Wi-Fi en las siguientes plataformas:
 
 -   Android 4.0 y versiones posteriores
 
--   Android for Work   
+-    Android for Work   
 
 -   iOS 8.0 y versiones posteriores
 
 -   Mac OS X 10.9 y versiones posteriores
 
 En el caso de dispositivos que ejecutan sistemas operativos Windows 8.1 o Windows 10 para móvil o escritorio, puede importar un perfil de configuración de Wi-Fi que se haya exportado anteriormente a un archivo. Para más información, consulte [Exportar o importar un perfil de configuración de Wi-Fi para dispositivos Windows](#export-or-import-a-wi-fi-configuration-profile-for-windows-devices).
-
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), seleccione **Directiva** &gt; **Agregar directiva**.
 

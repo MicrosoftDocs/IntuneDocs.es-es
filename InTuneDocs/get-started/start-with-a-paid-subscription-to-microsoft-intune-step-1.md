@@ -1,11 +1,11 @@
 ---
 title: "Suscribirse o iniciar sesión en Intune | Microsoft Docs"
-description: "Suscribirse a una suscripción de Intune o iniciar sesión para comenzar con la suscripción"
+description: "Registro para obtener una suscripción de Intune o inicio de sesión para iniciar su suscripción"
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 02/14/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,9 +13,10 @@ ms.technology:
 ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: jeffgilb
 ms.suite: ems
+ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
-ms.openlocfilehash: 029ef5aedc8177c13fa1ac89cb00b961a04e88d5
+ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
+ms.openlocfilehash: af147a50f533e4be948261898b60c4d522a9e4eb
 
 
 ---
@@ -24,6 +25,8 @@ ms.openlocfilehash: 029ef5aedc8177c13fa1ac89cb00b961a04e88d5
 # <a name="sign-up-or-sign-in-to-intune"></a>Registro o inicio de sesión en Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
+En este tema se explica a los administradores del sistema cómo pueden registrarse para obtener una cuenta de Intune.
 
 Para poder iniciar sesión o registrarse en Intune, debe determinar si su organización ya tiene una cuenta profesional o educativa de Microsoft Online Services, o bien si tiene un Contrato Enterprise o un contrato de licencias por volumen equivalente con Microsoft. Se suministra una cuenta profesional o educativa al firmar un contrato de licencias por volumen con Microsoft o al suscribirse a otros servicios en la nube de Microsoft, como Office 365.
 
@@ -53,6 +56,6 @@ Después de completar el proceso de registro, se le dirigirá a una página que 
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO3-->
 
 
