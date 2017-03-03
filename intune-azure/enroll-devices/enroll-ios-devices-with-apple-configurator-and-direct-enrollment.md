@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: d335572ae2bc5ce74532de281658d06903f995ee
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: b464a07e701797d39b7f9f50d1854a9a2682ac8e
+ms.openlocfilehash: 3208e964f2676ebcc1e54e29f039c4965c20238f
+ms.lasthandoff: 03/01/2017
 
 
 ---
@@ -44,7 +44,7 @@ Complete los siguientes requisitos previos antes de configurar la inscripción d
 - [Configurar dominios](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
 - [Establecer la entidad de MDM](set-mdm-authority.md)
 - [Crear grupos](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
-- [Configurar el Portal de empresa](/intune-azure/manage-apps/company-portal-app.md)
+- [Configurar el Portal de empresa](/intune-azure/manage-apps/company-portal-app)
 - Asignar licencias de usuario en el [Portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Obtener un certificado push MDM de Apple](get-an-apple-mdm-push-certificate.md)
 - Asegurarse de tener acceso físico a dispositivos iOS
