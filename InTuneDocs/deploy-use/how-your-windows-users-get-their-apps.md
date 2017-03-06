@@ -4,7 +4,7 @@ description: "Métodos para hacer que las aplicaciones de Windows estén disponi
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: arob98
+manager: angrobe
 ms.date: 12/05/2016
 ms.topic: article
 ms.prod: 
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: 6e295c5df6ec52d3c106fe934d05f10dbc2a3e1f
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -39,9 +40,4 @@ Las **aplicaciones no administradas** se pueden administrar mediante directivas 
 ### <a name="see-also"></a>Consulte también
 [Cómo obtienen sus aplicaciones los usuarios de Android](how-your-android-users-get-their-apps.md)</br>
 [Cómo obtienen sus aplicaciones los usuarios de iOS](how-your-ios-users-get-their-apps.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
