@@ -2,8 +2,8 @@
 title: "Administrar la vinculación de dispositivos de usuario en equipos PC de Windows | Microsoft Docs"
 description: "Cómo vincular un usuario a un PC de Windows administrado por Intune."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
 ms.openlocfilehash: 3a20dc18a72518ba9e01552cd1283170972b4bbb
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -48,8 +49,3 @@ Para vincular un usuario a un PC:
 ### <a name="see-also"></a>Consulte también
 
 [Tareas comunes de administración de equipos Windows con el cliente de software de Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
-
-
-<!--HONumber=Dec16_HO3-->
-
-

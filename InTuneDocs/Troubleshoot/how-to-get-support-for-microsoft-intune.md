@@ -2,8 +2,8 @@
 title: "Cómo obtener asistencia | Microsoft Docs"
 description: "El soporte técnico está disponible tanto en línea como por teléfono para las suscripciones de pago y de prueba."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 01/27/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
 ms.openlocfilehash: 8f43dc529b2da2c97500c03056ba7908bb8ab0fa
+ms.lasthandoff: 01/28/2017
 
 
 ---
@@ -146,9 +147,4 @@ El soporte "break-fix" está incluido en las suscripciones a Microsoft Intune y 
 Si un ingeniero de soporte le pide que abra vales de soporte adicionales para otros problemas, tenga en cuenta que eso ayudará a toda la comunidad. Agradecemos su comprensión y el hecho de que colabore con nosotros para conseguir una experiencia de soporte excelente.
 
 Para consultar los precios de cada incidente y nivel de severidad, consulte [Opciones de soporte técnico profesional](https://support.microsoft.com/gp/offerprophone).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

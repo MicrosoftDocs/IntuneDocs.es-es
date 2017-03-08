@@ -2,8 +2,8 @@
 title: "Ponerse en contacto con la asistencia telefónica | Microsoft Intune"
 description: "Números de teléfono para obtener ayuda de Microsoft Intune."
 keywords: horario comercial
-author: staciebarker
-ms.author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: d05c9d7a78474c19e142bca94e232289fbfba1d9
 ms.openlocfilehash: d5460d5e68fcc5346c2e0b745ea694c6875b5480
+ms.lasthandoff: 01/23/2017
 
 
 ---
@@ -118,9 +119,4 @@ ms.openlocfilehash: d5460d5e68fcc5346c2e0b745ea694c6875b5480
 |Uruguay|24 x 7|Lunes – viernes<br /><br />09:00 – 17:00 UYST (UTC -2)|Español&#42;, inglés|000-411-002-7131||
 |Venezuela|24 x 7|Lunes – viernes<br /><br />09:00 – 17:00 VET (UTC -4:30)|Español&#42;, inglés|0-800-100-8763||
 &#42; Compatible con la interpretación por teléfono.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

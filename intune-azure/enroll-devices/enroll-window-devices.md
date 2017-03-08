@@ -3,8 +3,8 @@ title: "Inscripción de dispositivos Windows"
 titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: habilite la administración de dispositivos móviles (MDM) de Intune para dispositivos Windows."
 keywords: 
-author: staciebarker
-manager: stabar
+author: nathbarn
+manager: nathbarn
 ms.date: 02/15/17
 ms.topic: article
 ms.prod: 
@@ -17,6 +17,7 @@ ms.custom: intune-azure
 translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: 7262093700dab3a7befd5b82ac9f8ee3dde22dcf
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -84,9 +85,4 @@ Puede dejar que los usuarios instalen e inscriban sus dispositivos con la aplica
     Para más información sobre las tareas del usuario final, vea [Recursos sobre la experiencia del usuario final con Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune).
 
 No es necesario ningún trabajo adicional a menos que vaya a implementar el portal de empresa en dispositivos.  Puede omitir sin ningún problema los pasos 2 y 3 de la consola de administración.
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

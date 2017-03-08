@@ -2,8 +2,8 @@
 title: Retirar dispositivos | Microsoft Docs
 description: "Intune admite una eliminación selectiva y una eliminación completa para quitar el dispositivo de administración de Intune mediante la eliminación de la directiva y el portal de empresa."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/13/2017
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 00e9dfd165a449182c5b937372db7085c981c68f
 ms.openlocfilehash: cca12024ba12cff5cdb8c515f7719a7592ba97ea
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -77,9 +78,4 @@ A veces, es el propio dispositivo el que llega al final del ciclo de vida. En ta
 
 ### <a name="see-also"></a>Consulte también
 [Ayudar a proteger los datos con un borrado selectivo o completo](use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

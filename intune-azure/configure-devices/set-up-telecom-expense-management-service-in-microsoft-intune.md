@@ -3,8 +3,8 @@ title: "Configurar un servicio de administración de gastos de telecomunicacione
 titleSuffix: Intune Azure preview
 description: "Versión preliminar de Azure de Intune: configure el servicio de administración de gastos de telecomunicaciones de Saaswedo para su integración con Intune."
 keywords: Saaswedo
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/16/2017
 ms.topic: article

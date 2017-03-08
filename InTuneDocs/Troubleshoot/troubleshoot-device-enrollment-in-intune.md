@@ -2,8 +2,8 @@
 title: "Solución de problemas con la inscripción de dispositivos | Microsoft Docs"
 description: "Sugerencias para solucionar problemas de inscripción de dispositivos."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 03/01/2017
 ms.topic: article

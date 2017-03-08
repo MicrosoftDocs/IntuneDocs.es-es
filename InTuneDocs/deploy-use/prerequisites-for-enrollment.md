@@ -2,8 +2,8 @@
 title: "Requisitos previos para la inscripción de dispositivos móviles | Microsoft Docs"
 description: "Configure los requisitos previos de administración de dispositivos móviles (MDM) y prepárese para inscribir distintos sistemas operativos."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/21/2017
 ms.topic: article

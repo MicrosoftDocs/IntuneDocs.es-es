@@ -2,8 +2,8 @@
 title: Administrar PC con software cliente | Microsoft Docs
 description: Administre equipos Windows instalando el software cliente de Intune.
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/09/2017
 ms.topic: article

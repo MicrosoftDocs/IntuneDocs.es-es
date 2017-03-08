@@ -2,8 +2,8 @@
 title: Ver el inventario de software y hardware para PC de Windows | Microsoft Docs
 description: "Cómo ver información de hardware y software sobre escritorios de Windows que administra como PC con el cliente de software de Intune."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
 ms.openlocfilehash: 8425cee511cdd54e051a93a10a941142c33df893
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -66,8 +67,3 @@ Intune recopila información detallada sobre el hardware y software de los escri
 ### <a name="see-also"></a>Consulte también
 
 [Tareas comunes de administración de equipos Windows con el cliente de software de Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
-
-
-<!--HONumber=Dec16_HO3-->
-
-

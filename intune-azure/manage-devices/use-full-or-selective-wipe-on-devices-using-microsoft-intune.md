@@ -3,8 +3,8 @@ title: Borrado selectivo o completo en dispositivos mediante Intune
 titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: aprenda a realizar un borrado selectivo de los datos de empresa en un dispositivo o un borrado completo para restablecer el dispositivo a los valores predeterminados de fábrica."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/07/2016
 ms.topic: article

@@ -2,8 +2,8 @@
 title: "Administración de DEP de Apple para dispositivos iOS | Microsoft Docs"
 description: "Implemente un perfil de inscripción que inscriba dispositivos iOS adquiridos a través del Programa de inscripción de dispositivos (DEP) iOS &quot;de forma inalámbrica&quot; para administrar dispositivos Apple."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
