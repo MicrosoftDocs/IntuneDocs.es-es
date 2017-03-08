@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: fbc9c2b9-b454-4b33-86cc-650742bbf1e1
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 4e1b2094a89940355e02c062614620a4abf70e53
 ms.openlocfilehash: 5de975c1c4b06d1cce0dcdb2564826d09a53260e
+ms.lasthandoff: 12/21/2016
 
 
 ---
@@ -35,9 +36,4 @@ Si se producen errores en el dispositivo iOS mientras usa la aplicación de port
 -   En la aplicación de portal de empresa, agite el dispositivo y, después, pulse **Correo electrónico** cuando aparezca la alerta de diagnóstico. Si la alerta no aparece cuando agita el dispositivo, abra **Configuración** > **Portal de empresa** y asegúrese de que la opción **Gesto de sacudida** está activada.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

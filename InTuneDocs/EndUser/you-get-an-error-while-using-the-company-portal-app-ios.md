@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 09cd4ed6-1ce4-4530-9753-59808f01c6d7
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
 ms.openlocfilehash: 34ad0d3c65230d4d296027e8431f1087c59f289a
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -36,9 +37,4 @@ Si se produce un error mientras usa la aplicación de portal de empresa en el di
 -   Mientras se encuentra en la aplicación de portal de empresa, agite el dispositivo y, después, pulse **Correo electrónico** cuando aparezca la alerta de diagnóstico. Si la alerta no aparece cuando agita el dispositivo, abra **Configuración** > **Portal de empresa** y asegúrese de que la opción **Gesto de sacudida** está activada.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

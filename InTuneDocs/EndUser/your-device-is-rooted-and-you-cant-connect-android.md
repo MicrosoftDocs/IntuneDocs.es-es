@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 9786b71a-d2ff-4d95-a2d9-47ece0aec8ca
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 3bebc6cb1d44e99f8337a057eadfae676904ea3d
 ms.openlocfilehash: 27b57f7f8723a1271442b4ed18e219660959b0a8
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -37,9 +38,4 @@ Hay un par de formas comunes en las que se pudo haber modificado el dispositivo:
 - El fabricante del dispositivo instaló software en el dispositivo que el software de detección de modificaciones considera que supone un riesgo para la seguridad. En este caso, póngase en contacto con el administrador de TI para obtener ayuda. Para averiguar su información de contacto, vaya al [sitio web Portal de empresa](http://portal.manage.microsoft.com).
 
 Si usted mismo modificó el dispositivo, deberá revertir el proceso y restaurar el dispositivo.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

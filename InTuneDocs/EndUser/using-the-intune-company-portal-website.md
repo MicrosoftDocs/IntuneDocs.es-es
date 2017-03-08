@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: mamoriss
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
 ms.openlocfilehash: d10cc421dc6fe422b7a2c26b4902997c8c6b2e61
+ms.lasthandoff: 01/05/2017
 
 
 ---
@@ -52,9 +53,4 @@ Los usuarios finales pueden realizar la mayoría de las tareas que hacen en el *
 - [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
 - [Uso de un dispositivo iOS o Mac OS con Intune](using-your-ios-or-macOS-device-with-intune.md)
 - [Usar un dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

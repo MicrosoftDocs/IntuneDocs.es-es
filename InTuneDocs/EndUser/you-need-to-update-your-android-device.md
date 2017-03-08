@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 3ef43ff5-8d6b-4be1-baa4-6fb6a7f3c312
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
 ms.openlocfilehash: b70e80fdbbf5009d570f0e4e268537b44996ff50
+ms.lasthandoff: 12/21/2016
 
 
 ---
@@ -31,9 +32,4 @@ ms.openlocfilehash: b70e80fdbbf5009d570f0e4e268537b44996ff50
 Actualice el dispositivo Android pulsando **Configuración** > **Acerca del teléfono**. En la sección __Configuración__, pulse __Buscar actualizaciones__ e instale la actualización disponible.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

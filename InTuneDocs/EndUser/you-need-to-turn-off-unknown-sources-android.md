@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c7a10998-9aa6-4bc0-8405-27a30c61bca7
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 16589a70cabe4971e89f2fe7983d2d79def2caca
 ms.openlocfilehash: 25d954040f7b94089e8b931a39257c05663002e0
+ms.lasthandoff: 01/12/2017
 
 
 ---
@@ -31,9 +32,4 @@ Si ve el mensaje “Debe deshabilitarse la instalación desde orígenes desconoc
 Después de que **Orígenes desconocidos** se desactiva, pueden pasar unos minutos antes de poder seguir usando el dispositivo Android para tener acceso a los datos de la empresa o la escuela.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

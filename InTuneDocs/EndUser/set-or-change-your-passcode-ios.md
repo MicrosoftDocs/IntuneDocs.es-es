@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: fc22acb9f0c08491852592f41dc60bef0fcf0928
 ms.openlocfilehash: 9e616d6368a40e3ae06303cf3556b5e0760fb477
+ms.lasthandoff: 12/21/2016
 
 
 ---
@@ -44,9 +45,4 @@ Si tiene problemas para establecer un código de acceso que cumpla los requisito
 3. Escriba un nuevo código de acceso que cumpla los requisitos del administrador de TI y, luego, vuelva a escribirlo para confirmarlo.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

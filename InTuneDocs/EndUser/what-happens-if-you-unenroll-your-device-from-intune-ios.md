@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c6a97c74-c35c-4977-b925-6efe01e31d3c
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: esmich, elocholi
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 9b2eba939bccf5b1296e21868fdf3af93297b42c
 ms.openlocfilehash: e8065b2964e8995a58a2aa3e6322fb235f0829af
+ms.lasthandoff: 02/04/2017
 
 
 ---
@@ -46,9 +47,4 @@ Cuando se anula la inscripción del dispositivo iOS o macOS de Intune:
 Para obtener instrucciones sobre cómo anular la inscripción, vea [Anulación de la inscripción del dispositivo en Intune](unenroll-your-device-from-intune-ios.md).
 
 Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

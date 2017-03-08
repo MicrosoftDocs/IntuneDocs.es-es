@@ -12,14 +12,15 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1ee6e275-d1ec-4da3-bbef-d5da2c61a02a
 searchScope:
-- Company Portal
-ROBOTS: NOINDEX,NOFOLLOW
+- User help
+ROBOTS: 
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
 ms.sourcegitcommit: 42e6b4d44dffa457f009e8402d5c429aa55932d6
 ms.openlocfilehash: 74983ab11e1c1763bd5394af483b93b74b715f89
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -36,9 +37,4 @@ Cuando usa la aplicación del Portal de empresa o el [sitio web del Portal de em
 |PCs y portátiles|**Windows 8.1 y Windows 8**<br />No se puede restablecer un equipo con Windows 8 o Windows 8.1 a menos que solo se use para el correo electrónico.<br /><br />**Windows 7 o Windows Vista**<br />No se puede restablecer un equipo con Windows 7 o anterior.|
 
 Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 
