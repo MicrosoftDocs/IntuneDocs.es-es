@@ -43,7 +43,6 @@ Intune tiene varias características que facilitan la vida laboral. Esta es una 
 - [Establecimiento del PIN o la contraseña](set-your-pin-or-password-android.md)
 - [Instalar la red privada virtual (VPN) de la empresa](install-your-companys-virtual-private-network-VPN-android.md)
 - [Establecer el período de tiempo antes de que se bloquee el dispositivo](set-the-amount-of-time-before-your-device-is-locked-android.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-android.md)-->
 - [Restablecer (borrar) el dispositivo perdido o robado](reset-erase-your-device-cpwebsite.md)
 - [Desactivar la recopilación de datos de uso de Microsoft](turn-off-microsoft-usage-data-collection-android.md)
 - [Anulación de la inscripción del dispositivo en Intune](unenroll-your-device-from-intune-android.md)

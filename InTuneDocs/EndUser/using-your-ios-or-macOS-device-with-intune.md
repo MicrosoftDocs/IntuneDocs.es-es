@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 03/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -40,7 +40,6 @@ Intune tiene varias características que facilitan la vida laboral. Esta es una 
 
 - [Usar aplicaciones administradas en el dispositivo](use-managed-apps-on-your-device-ios.md)
 - [Establecer o cambiar el código de acceso](set-or-change-your-passcode-ios.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
 - [Restablecer (borrar) el dispositivo perdido o robado](reset-erase-your-device-cpwebsite.md)
 - [Desactivar la recopilación de datos de uso de Microsoft](turn-off-microsoft-usage-data-collection-ios.md)
 - [Anulación de la inscripción del dispositivo en Intune](unenroll-your-device-from-intune-ios.md)
