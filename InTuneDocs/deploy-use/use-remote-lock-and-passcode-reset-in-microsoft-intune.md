@@ -5,7 +5,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 02/16/17
+ms.date: 03/06/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,8 +14,9 @@ ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 87589903acd3c2e7c45d62c619571a1273e7fb76
-ms.openlocfilehash: 8de91a0e0640b9c0fb281686d4ecd4983134d4af
+ms.sourcegitcommit: 665d3347636d5ec0c698ffb93b768028c9d59ce3
+ms.openlocfilehash: b918c9843bdc6cfbbfd9c2da9d698b255487152c
+ms.lasthandoff: 03/07/2017
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Ayudar a proteger los dispositivos con el restablecimiento de código de acceso y el bloqueo remoto
@@ -34,6 +35,7 @@ La tabla siguiente muestra el modo en que se puede usar el bloqueo remoto en dis
 |macOS|No compatible|
 |iOS|Compatible.|
 |Android|Compatible.|
+|Android for Work|Compatible.|
 |Windows 10 Mobile|Compatible.|
 |Windows 10 Escritorio|No compatible|
 |Windows Phone 8 y Windows Phone 8.1|Compatible.|
@@ -61,6 +63,7 @@ Si un usuario olvida su código de acceso, puede quitar la contraseña de un dis
 |macOS|No compatible|
 |iOS|Permite borrar la contraseña de un dispositivo. No admite la creación de una nueva contraseña temporal.|
 |Android|Compatible con versiones anteriores a Android 7.0. Crea un código de acceso temporal.|
+|Android for Work|No compatible|
 |Windows 10 Mobile|Compatible.|
 |Windows Phone 8 y Windows Phone 8.1|Compatible.|
 |Windows RT 8.1|No compatible.|
@@ -83,9 +86,4 @@ No se admite el restablecimiento de código de acceso para equipos Windows inscr
 
 ### <a name="see-also"></a>Consulte también
 [Retirar dispositivos](retire-devices-from-microsoft-intune-management.md) y [Windows Selective Wipe for Device Data Management](http://technet.microsoft.com/library/dn486874.aspx) (Eliminación selectiva de Windows para la administración de datos del dispositivo)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
