@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: 66a8f72e2560352c2e4f422b41c7e54b4ae124e6
+ms.sourcegitcommit: 7ac6041fb33f95e5b0c53b81c2af9aef42767a38
+ms.openlocfilehash: 115a27512930fa995a2781afc8a94c1d7f97958e
+ms.lasthandoff: 03/02/2017
 
 
 ---
@@ -55,7 +56,7 @@ Es posible ver si estas condiciones se cumplen en un dispositivo en el Portal de
      -   Un perfil de correo electrónico existente creado por el usuario bloqueará la implementación de un perfil de Intune creado por el administrador. Este es un problema común, ya que los usuarios de iOS suelen crear un perfil de correo y luego inscribirse. El portal de empresa informará al usuario de que no son compatibles debido a su perfil de correo configurado manualmente y le pedirá que quite ese perfil. El usuario debe quitar su perfil de correo para que se pueda implementar el perfil de Intune. Para evitar el problema, indique a los usuarios que se inscriban sin instalar un perfil de correo y que permitan que Intune implemente el perfil.
      -     Un dispositivo iOS puede quedarse atascado en un estado de comprobación de cumplimiento e impedir que el usuario inicie otra comprobación. Esto puede solucionarse reiniciando el portal de empresa y el estado de cumplimiento reflejará el estado del dispositivo en Intune. Después de que se recopilen todos los datos desde una sincronización de dispositivos, la comprobación del cumplimiento es rápida, menos de medio segundo de media.
 
-        Normalmente, los dispositivos de motivo permanecen en este estado porque están teniendo problemas al conectarse con el servicio o la sincronización tarda mucho tiempo.  Si el problema persiste en diferentes configuraciones de red (celular, Wi-Fi y VPN), a través de reinicios del dispositivo y después de comprobar que el SSP está actualizado en el dispositivo, póngase en contacto con el soporte técnico de Microsoft tal y como se describe en [Cómo obtener soporte técnico de Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+        Normalmente, los dispositivos de motivo permanecen en este estado porque están teniendo problemas al conectarse con el servicio o la sincronización tarda mucho tiempo.  Si el problema persiste en diferentes configuraciones de red (red de telefonía móvil, Wi-Fi y VPN), a través de reinicios del dispositivo y después de comprobar que el SSP está actualizado en el dispositivo, póngase en contacto con el soporte técnico de Microsoft, tal y como se describe en [Cómo obtener soporte técnico de Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 ## <a name="policy-issues"></a>Problemas de directivas
 
@@ -159,9 +160,4 @@ Para habilitar el registro detallado:
 
 ### <a name="next-steps"></a>Pasos siguientes
 Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el servicio de soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico de Microsoft Intune).
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

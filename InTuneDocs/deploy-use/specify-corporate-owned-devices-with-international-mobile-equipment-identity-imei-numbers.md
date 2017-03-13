@@ -2,10 +2,10 @@
 title: "Especificar números IMEI | Microsoft Docs"
 description: "Microsoft Intune permite a los administradores importar números IMEI de plataformas de dispositivos móviles para ayudar a identificar dispositivos móviles corporativos"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbc9e94d3fc5dc7e69f5d59ca1d52493b2beefc3
-ms.openlocfilehash: 5fa3c62553403dfafd182a691f611ba12a2d729c
+ms.sourcegitcommit: 51f9d7bad6a1411ff68fa94c62421e2c0a43ab5a
+ms.openlocfilehash: 97bedfdd2d756ae79350496f54076c16ada64def
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -50,13 +51,11 @@ Microsoft Intune permite que los administradores importen números de identidad 
 3.  En el panel **Revisar dispositivos**, puede confirmar los números IMEI de dispositivos importados. También puede decidir si sobrescribe los **Detalles** de los números IMEI que se van a volver a importar. Puede desactivar la casilla **Sobrescribir** para conservar los detalles actuales. Seleccione **Finalizar** para importar los números IMEI.
 4.  Los números IMEI importados y las descripciones se agregan a la lista **Mediante IMEI (todas las plataformas)**.
 
+> [!IMPORTANT]
+> Si va a importar los números IMEI para dispositivos Android, tenga en cuenta que algunos dispositivos Android pueden tener varios números IMEI. Si importa un número IMEI pero no es el IMEI notificado por el dispositivo a Intune, el dispositivo se clasificará como un dispositivo personal en lugar de como un dispositivo propiedad de la empresa.
+
 Cuando se inscribe un dispositivo con número IMEI en Intune, normalmente cuando un usuario instala la aplicación Portal de empresa y completa el proceso de inscripción, el dispositivo se etiqueta como corporativo y aparece como inscrito en el grupo **Dispositivos IMEI**.
 
->[!NOTE] 
+>[!NOTE]
 > Cuando su organización se migre al nuevo Azure Portal en un futuro próximo, verá un cambio en esta característica. En la consola de administrador de Intune existente, los administradores pueden aceptar detalles asociados desde un archivo CSV cargado y sobrescribir los detalles existentes de identificadores de hardware individuales. En el nuevo Azure Portal, podrá sobrescribir de forma automática los detalles de todos los identificadores de hardware o ignorar todos los nuevos detalles de los identificadores existentes.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

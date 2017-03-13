@@ -3,9 +3,9 @@
 title: Instalar el software cliente de PC | Microsoft Docs
 description: "Siga esta guía para administrar sus equipos Windows con el software cliente de Microsoft Intune."
 keywords: 
-author: staciebarker
-ms.author: stabar
-ms.date: 02/14/2017
+author: nathbarn
+ms.author: nathbarn
+ms.date: 02/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2e7062169ceb855f03a13d1afb4b4de41af593ac
-ms.openlocfilehash: 9606d8f79166e6b38f02aefd4afc52f2a47c1362
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: e7beff3bf4579d9fb79f0c3f2fb8fbf9bb1ea160
+ms.openlocfilehash: e7e199bd1820299e7c0ea4f9adc3f5e62bffab97
+ms.lasthandoff: 02/22/2017
 
 
 ---
@@ -179,6 +179,83 @@ Use uno de los procedimientos siguientes como ayuda para supervisar y validar un
     > [!TIP]
     > Para ordenar la lista del informe por el contenido de una columna, haga clic en el encabezado de esa columna.
 
+## <a name="uninstall-the-windows-client-software"></a>Desinstalar el software de cliente de Windows
+
+Hay dos formas de anular la inscripción del software de cliente de Windows:
+
+- Desde la consola de administración de Intune (método recomendado)
+- Desde un símbolo del sistema en el cliente
+
+### <a name="unenroll-by-using-the-intune-admin-console"></a>Anular la inscripción mediante la consola de administración de Intune
+
+Para anular la inscripción del software cliente mediante la consola de administración de Intune, vaya a **Grupos** > **Todos los equipos** > **Dispositivos**. Haga clic con el botón derecho en el cliente y seleccione **Retirar/Eliminar datos**.
+
+### <a name="unenroll-by-using-a-command-prompt-on-the-client"></a>Anular la inscripción mediante un símbolo del sistema en el cliente
+
+Desde un símbolo del sistema con privilegios elevados, ejecute uno de los siguientes comandos.
+
+**Método 1**:
+
+    ```
+    "C:\Program Files\Microsoft\OnlineManagement\Common\ProvisioningUtil.exe" /UninstallAgents /MicrosoftIntune
+    ```
+
+**Método 2** (tenga en cuenta que no todos los agentes están instalados en cada SKU de Windows):
+
+    ```
+    wmic product where name="Microsoft Endpoint Protection Management Components" call uninstall<br>
+    wmic product where name="Microsoft Intune Notification Service" call uninstall<br>
+    wmic product where name="System Center 2012 - Operations Manager Agent" call uninstall<br>
+    wmic product where name="Microsoft Online Management Policy Agent" call uninstall<br>
+    wmic product where name="Microsoft Policy Platform" call uninstall<br>
+    wmic product where name="Microsoft Security Client" call uninstall<br>
+    wmic product where name="Microsoft Online Management Client" call uninstall<br>
+    wmic product where name="Microsoft Online Management Client Service" call uninstall<br>
+    wmic product where name="Microsoft Easy Assist v2" call uninstall<br>
+    wmic product where name="Microsoft Intune Monitoring Agent" call uninstall<br>
+    wmic product where name="Windows Intune Endpoint Protection Agent" call uninstall<br>
+    wmic product where name="Windows Firewall Configuration Provider" call uninstall<br>
+    wmic product where name="Microsoft Intune Center" call uninstall<br>
+    wmic product where name="Microsoft Online Management Update Manager" call uninstall<br>
+    wmic product where name="Microsoft Online Management Agent Installer" call uninstall<br>
+    wmic product where name="Microsoft Intune" call uninstall<br>
+    wmic product where name="Windows Endpoint Protection Management Components" call uninstall<br>
+    wmic product where name="Windows Intune Notification Service" call uninstall<br>
+    wmic product where name="System Center 2012 - Operations Manager Agent" call uninstall<br>
+    wmic product where name="Windows Online Management Policy Agent" call uninstall<br>
+    wmic product where name="Windows Policy Platform" call uninstall<br>
+    wmic product where name="Windows Security Client" call uninstall<br>
+    wmic product where name="Windows Online Management Client" call uninstall<br>
+    wmic product where name="Windows Online Management Client Service" call uninstall<br>
+    wmic product where name="Windows Easy Assist v2" call uninstall<br>
+    wmic product where name="Windows Intune Monitoring Agent" call uninstall<br>
+    wmic product where name="Windows Intune Endpoint Protection Agent" call uninstall<br>
+    wmic product where name="Windows Firewall Configuration Provider" call uninstall<br>
+    wmic product where name="Windows Intune Center" call uninstall<br>
+    wmic product where name="Windows Online Management Update Manager" call uninstall<br>
+    wmic product where name="Windows Online Management Agent Installer" call uninstall<br>
+    wmic product where name="Windows Intune" call uninstall
+    ```
+
+> [!TIP]
+> La anulación de la suscripción del cliente dejará un registro obsoleto del lado del servidor para el cliente afectado. El proceso de anulación de la suscripción es asincrónico y hay nueve agentes que desinstalar, por lo que puede tardar hasta 30 minutos en completarse.
+
+### <a name="check-the-unenrollment-status"></a>Comprobar el estado de la anulación de la suscripción
+
+Compruebe "%ProgramFiles%\Microsoft\OnlineManagement" y asegúrese de que solo se muestran los siguientes directorios a la izquierda:
+
+- AgentInstaller
+- Registros
+- Updates
+- Común 
+
+### <a name="remove-the-onlinemanagement-folder"></a>Quitar la carpeta OnlineManagement
+
+El proceso de anulación de la suscripción no elimina la carpeta OnlineManagement. Espere 30 minutos después de la desinstalación y luego ejecute este comando. Si se ejecuta demasiado pronto, la desinstalación podría quedar en un estado desconocido. Para quitar la carpeta, abra una ventana de símbolo del sistema con privilegios elevados y ejecute:
+
+    ```
+    "rd /s /q %ProgramFiles%\Microsoft\OnlineManagement".
+    ```
 
 ### <a name="see-also"></a>Consulte también
 [Administrar equipos Windows con Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)

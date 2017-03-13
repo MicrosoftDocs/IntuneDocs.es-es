@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 3ee87c8f6104b06c8a9492566ff160540624f17e
-ms.openlocfilehash: 8f35cf70d0c97afc88eba38b1eaff5e2e38425d0
+ms.sourcegitcommit: 51f9d7bad6a1411ff68fa94c62421e2c0a43ab5a
+ms.openlocfilehash: d60b9afdf7fe9f78dd5cc4693259b8667fb17299
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -41,7 +42,7 @@ Puede usar perfiles de correo electrónico para configurar el cliente de correo 
 -    Android for Work
 
 >[!NOTE]
->Intune proporciona dos perfiles de correo electrónico de Android for Work, uno para cada una de las aplicaciones de correo electrónico de Gmail y de Nine Work. Estas aplicaciones están disponibles en Google Play Store y admiten conexiones a Exchange. Para habilitar la conectividad de correo electrónico, implemente una de estas aplicaciones de correo electrónico en los dispositivos de los usuarios y, después, cree e implemente el perfil adecuado.
+>Intune proporciona dos perfiles de correo electrónico de Android for Work, uno para cada una de las aplicaciones de correo electrónico de Gmail y de Nine Work. Estas aplicaciones están disponibles en Google Play Store y admiten conexiones a Exchange. Para habilitar la conectividad de correo electrónico, implemente una de estas aplicaciones de correo electrónico en los dispositivos de los usuarios y, después, cree e implemente el perfil adecuado. Es posible que aplicaciones de correo electrónico como Nine Work no sean gratuitas. Revise los detalles de la licencia de la aplicación o póngase en contacto con la empresa de la aplicación si tiene alguna pregunta.
 
 Además de configurar una cuenta de correo electrónico en el dispositivo, también puede configurar la cantidad de correo electrónico que se sincronizará y, en función del tipo de dispositivo, los tipos de contenido que se sincronizarán.
 
@@ -105,7 +106,7 @@ La contraseña no está incluida en el perfil de correo electrónico, por lo que
     |**Dirección de correo electrónico**|Modo en que se genera la dirección de correo electrónico para el usuario en cada dispositivo. Seleccione **Dirección SMTP primaria** para usar la dirección SMTP primaria para iniciar sesión en Exchange o **Nombre principal de usuario** para usar el nombre principal completo como dirección de correo electrónico.|
     |**Método de autenticación** (Android for Work, Samsung KNOX e iOS)|Seleccione **Nombre de usuario y contraseña** o **Certificados** como método de autenticación que usa el perfil de correo electrónico.|
     |**Seleccionar un certificado de cliente para la autenticación de cliente (certificado de identidad)** (Android for Work, Samsung KNOX e iOS)|Seleccione el certificado SCEP de cliente que creó previamente y que se utilizará para autenticar la conexión de Exchange. Para más información sobre cómo usar perfiles de certificado en Intune, vea [Secure resource access with certificate profiles](secure-resource-access-with-certificate-profiles.md) (Proteger el acceso a recursos con perfiles de certificado). Esta opción solo se muestra cuando el método de autenticación es **Certificados**.|
-    |**Usar S/MIME** (Samsung KNOX e iOS)|Enviar correo electrónico saliente mediante cifrado S/MIME.|
+    |**Usar S/MIME** (Samsung KNOX e iOS)|Envíe correo electrónico saliente mediante firma S/MIME.|
     |**Certificado de firma** (Samsung KNOX e iOS)|Seleccione el certificado de firma que se utilizará para firmar el correo electrónico saliente. Esta opción se muestra solo cuando se selecciona **Usar S/MIME**.|
     |**Número de días de correo electrónico para sincronizar**|El número de días de correo electrónico que quiere sincronizar o seleccione **Sin límite** para sincronizar todo el correo electrónico disponible.|
     |**Programación de sincronización** (Android for Work, Samsung KNOX, Windows Phone 8 y versiones posteriores, Windows 10)|Seleccione la programación por la que los dispositivos sincronizarán los datos del servidor Exchange. También puede seleccionar **Cuando llegan los mensajes** (los datos se sincronizan tan pronto como llegan) o **Manual** (el usuario del dispositivo debe iniciar la sincronización).|
@@ -136,9 +137,4 @@ En el área de trabajo **Directiva** de la página **General** , un resumen de e
 > [!NOTE]
 > - En el caso de Android for Work, asegúrese de que también implementa las aplicaciones Gmail o Nine Work, además del perfil de correo electrónico adecuado.
 > - Si desea quitar un perfil de correo electrónico de un dispositivo, edite la implementación y quite los grupos de los que sea miembro el dispositivo. Tenga en cuenta que un perfil de correo electrónico no se puede quitar de esta manera, si es el único perfil de correo electrónico en un dispositivo.
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

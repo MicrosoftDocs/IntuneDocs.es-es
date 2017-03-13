@@ -1,9 +1,10 @@
 ---
-title: "¿Qué es la inscripción de dispositivos de Microsoft Intune | Versión preliminar de Intune Azure | Microsoft Docs"
+title: "¿Qué es la inscripción de dispositivos de Microsoft Intune?"
+titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: aprenda sobre la inscripción de dispositivos iOS, Android y Windows."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: get-started-article
@@ -11,12 +12,12 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
-ms.reviewer: 
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: a92daf02c6fb2405c1255ff4ff8988f669dd76ce
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 900883ea9e38342cced195f97693447fafd0e73f
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.lasthandoff: 02/15/2017
 
 En este tema se describe qué es la inscripción y las diferentes formas de inscribir dispositivos móviles en la administración de Intune.
 
-Los dispositivos (incluidos PC con Windows) se inscriben en Intune para poder administrarlos. En la documentación de Intune esta funcionalidad se conoce como administración de dispositivos móviles (MDM). Cuando los dispositivos se inscriben como dispositivos móviles (no como PC), se les emite un certificado MDM que los dispositivos usan para comunicarse con el servicio de Intune. 
+Los dispositivos (incluidos PC con Windows) se inscriben en Intune para poder administrarlos. En la documentación de Intune esta funcionalidad se conoce como administración de dispositivos móviles (MDM). Cuando los dispositivos se inscriben como dispositivos móviles (no como PC), se les emite un certificado MDM que los dispositivos usan para comunicarse con el servicio de Intune.
 
 La forma en que inscriba a los dispositivos depende del tipo de dispositivo, la propiedad y el nivel de administración que sea necesario. La inscripción BYOD ("Bring your own device") permite a los usuarios inscribir sus teléfonos, tabletas o equipos personales. La inscripción de dispositivos corporativos (COD) permite escenarios de administración como la inscripción automática, los dispositivos compartidos o los requisitos de inscripción previamente autorizada.
 
@@ -76,7 +77,7 @@ Los usuarios "Bring your own device" instalan la aplicación Portal de empresa e
 Los dispositivos corporativos (COD) se pueden administrar mediante el portal de Azure. Los dispositivos iOS se pueden inscribir directamente a través de las herramientas proporcionadas por Apple. Un administrador puede inscribir cualquier tipo de dispositivo mediante el administrador de inscripción de dispositivos. Los dispositivos con un número IMEI también se pueden identificar y etiquetar como de propiedad corporativa para, así, posibilitar escenarios de dispositivos propiedad de la empresa.
 
 ### <a name="dem"></a>DEM
-El administrador de inscripción de dispositivos es una cuenta especial de que se usa para inscribir y administrar varios dispositivos corporativos. Los administradores pueden instalar el portal de empresa e inscribir muchos dispositivos sin usuario. Obtenga más información sobre [DEM](enroll-devices-using-device-enrollment-manager.md). ([Volver a la tabla](#overview-of-device-enrollment-methods))
+El administrador de inscripción de dispositivos (DEM) es una cuenta especial de usuario que se usa para inscribir y administrar varios dispositivos de la empresa. Los administradores pueden instalar el portal de empresa e inscribir muchos dispositivos sin usuario. Obtenga más información sobre [DEM](enroll-devices-using-device-enrollment-manager.md). ([Volver a la tabla](#overview-of-device-enrollment-methods))
 
 ### <a name="dep"></a>DEP
 La administración del Programa de inscripción de dispositivos (DEP) de Apple permite crear e implementar directivas "de forma inalámbrica" para dispositivos iOS que se han adquirido y administrado con DEP. El dispositivo se inscribe cuando los usuarios lo activan por primera vez y ejecutan el asistente de configuración de iOS. Este método admite el modo **iOS supervisado**, que a su vez permite lo siguiente:
@@ -87,7 +88,7 @@ La administración del Programa de inscripción de dispositivos (DEP) de Apple p
 Para más información sobre la inscripción de dispositivos iOS, consulte:
 
 - [Elegir cómo inscribir los dispositivos iOS](choose-ios-enrollment-method.md)
-- [Enroll iOS devices using Device Enrollment Program](enroll-ios-devices-using-device-enrollment-program.md) (Inscripción de dispositivos iOS mediante el Programa de inscripción de dispositivos). 
+- [Enroll iOS devices using Device Enrollment Program](enroll-ios-devices-using-device-enrollment-program.md) (Inscripción de dispositivos iOS mediante el Programa de inscripción de dispositivos)
 - [Volver a la tabla anterior](#overview-of-device-enrollment-methods)
 
 ### <a name="usb-sa"></a>USB-SA
@@ -98,10 +99,10 @@ Los administradores de TI usan Apple Configurator a través de la conexión USB 
 Para más información sobre la inscripción de dispositivos iOS, consulte:
 
 - [Decide how to enroll iOS devices](choose-ios-enrollment-method.md) (Decidir cómo inscribir dispositivos iOS)
-- [Enroll iOS devices with Configurator and Setup Assistant](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md) (Inscripción de dispositivos iOS con el Asistente de configuración y Apple Configurator). 
+- [Enroll iOS devices with Configurator and Setup Assistant](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md) (Inscripción de dispositivos iOS con el Asistente de configuración y Apple Configurator)
 
 ### <a name="usb-direct"></a>USB-Direct
-Para realizar una inscripción directa, el administrador debe inscribir cada dispositivo manualmente creando una directiva de inscripción y exportándola a Apple Configurator. Los dispositivos corporativos conectados por USB se inscriben directamente, sin necesidad de un restablecimiento de fábrica. Los dispositivos se administran como dispositivos sin usuario. No se bloquean ni se supervisan y no son compatibles con el acceso condicional, la detección de jailbreak ni la administración de aplicaciones móviles. 
+Para realizar una inscripción directa, el administrador debe inscribir cada dispositivo manualmente creando una directiva de inscripción y exportándola a Apple Configurator. Los dispositivos corporativos conectados por USB se inscriben directamente, sin necesidad de un restablecimiento de fábrica. Los dispositivos se administran como dispositivos sin usuario. No se bloquean ni se supervisan y no son compatibles con el acceso condicional, la detección de jailbreak ni la administración de aplicaciones móviles.
 
 Para más información sobre la inscripción de dispositivos iOS, consulte:
 

@@ -1,5 +1,6 @@
 ---
-title: "Asignación de aplicaciones a grupos | Versión preliminar de Intune Azure | Microsoft Docs"
+title: "Asignación de aplicaciones a grupos"
+titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: cuando haya agregado una aplicación a Intune, querrá asignarla a grupos de usuarios o dispositivos."
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 638ad0d87c19c9e40e96b42d18e5c4342f40a156
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: b372d4ee505ca39a4739069e5798918ecde134ea
+ms.openlocfilehash: abf45b835d13ef5fe4acb769194542611448504e
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -42,6 +44,33 @@ Se pueden asignar aplicaciones a dispositivos aunque no estén administrados en 
 
 > [!NOTE]
 > Actualmente, puede asignar aplicaciones iOS y Android (tanto de línea de negocio como comparas en la tienda) a dispositivo que no estén inscritos en Intune.
+
+## <a name="changes-to-how-you-assign-apps-to-groups-in-the-intune-preview"></a>Cambios en la asignación de aplicaciones a grupos en la versión preliminar de Intune
+
+En la versión preliminar de Azure de Intune ya no se usan grupos de Intune para asignar aplicaciones. Ahora se usan grupos de seguridad de Azure Active Directory (Azure AD). Por este motivo, debe conocer algunos cambios en el funcionamiento de las asignaciones de aplicaciones, especialmente cuando haya asignado aplicaciones a grupos secundarios de Intune.
+Lo más importante que debe tener en cuenta es que en Azure AD no existe el concepto de grupo secundario. En cambio, es posible que algunos grupos contengan los mismos miembros. En este caso, el comportamiento entre la versión clásica de Intune y la versión preliminar de Azure de Intune es diferente. En la tabla siguiente se muestra este comportamiento:
+
+||||||
+|-|-|-|-|-|
+|**Versión clásica de Intune (antes de la migración de inquilino)**|-|**Azure de Intune (después de completar la migración de inquilino)**|-|**Más información**|
+|**Intento de implementación de grupo primario**|**Intento de implementación de grupo secundario**|**Intento de asignación resultante para los miembros comunes del grupo primario y secundario anterior**|**Acción de intento de asignación resultante para los miembros del grupo primario**|-|    
+|Available|Requerido|Requerido y Disponible|Available|Requerido y Disponible significa que las aplicaciones asignadas como requeridas también pueden verse en la aplicación Portal de empresa.
+|No aplicable|Available|No aplicable|No aplicable|Solución alternativa: Quite el intento de implementación "No aplicable" del grupo primario de Intune.
+|Requerido|Available|Requerido y Disponible|Requerido|-|
+|Requerido y Disponible<sup>1</sup>|Available|Requerido y Disponible|Requerido y Disponible|-|    
+|Requerido|No aplicable|Requerido|Requerido|-|    
+|Requerido y Disponible|No aplicable|Requerido y Disponible|Requerido y Disponible|-|    
+|Requerido|Desinstalar|Requerido|Requerido|-|    
+|Requerido y Disponible|Desinstalar|Requerido y Disponible|Requerido y Disponible|-|
+<sup>1</sup> Solo para aplicaciones administradas de la tienda de iOS, cuando se agregan a Intune y se implementan como requeridas, se crean automáticamente los intentos Requerido y Disponible.
+
+Puede realizar las siguientes acciones para evitar conflictos de implementación:
+
+1.    Si ha implementado previamente aplicaciones en grupos primarios y secundarios relacionados de Intune, considere la posibilidad de quitar estas implementaciones antes de comenzar la migración del inquilino.
+2.    Quite los grupos secundarios de los grupos primarios y cree un nuevo grupo que contenga los miembros del grupo secundario anterior. Después, puede crear una nueva implementación de aplicación para este grupo.
+Notas: Si el grupo primario anterior era "Todos los usuarios", deberá crear un nuevo grupo dinámico que no incluya a los miembros del grupo secundario.
+Debe realizar los cambios a los grupos en [Azure Portal](https://portal.azure.com/) para grupos de usuarios y dispositivos. El [Portal de Azure clásico](https://manage.windowsazure.com/) solo permite realizar cambios en grupos de usuarios.
+
 
 ## <a name="how-to-assign-an-app"></a>Asignación de una aplicación
 
