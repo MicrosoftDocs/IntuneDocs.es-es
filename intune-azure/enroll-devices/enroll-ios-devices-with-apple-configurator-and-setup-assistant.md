@@ -1,9 +1,10 @@
 ---
-title: "Inscripción de dispositivos iOS con Apple Configurator y el Asistente de configuración | Versión preliminar de Intune Azure | Microsoft Docs"
+title: "Inscripción de dispositivos iOS: Apple Configurator y el Asistente de configuración"
+titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: aprenda a usar Apple Configurator para inscribir dispositivos iOS corporativos con el Asistente de configuración."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: 888e7b7af7dcca4154f67a1de781eb7908d9a187
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: b2d2e4e0210526ff70b86526bd0b2e17bab0286b
+ms.lasthandoff: 02/18/2017
 
 
 ---
