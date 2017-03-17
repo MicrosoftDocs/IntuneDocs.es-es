@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 0154e3bfeac0457de57257045e3e7ce833325bce
 ms.openlocfilehash: a462bcfa107bf1a37ea4e84bc3d88d0dd81f9fc8
+ms.lasthandoff: 02/03/2017
 
 
 ---
@@ -169,6 +170,7 @@ Puede configurar la VPN a petición para dispositivos iOS 8.0 y versiones poster
   - **Evaluar conexión**, que tiene tres configuraciones a. **Acción del dominio**: elija **Conectarse si es necesario** o **No conectarse nunca**
      b. **Lista de dominios separados por comas**: configure esta opción solo si elige una **acción del dominio** de **Conectarse si es necesario**
      c. **Sondeo de cadena de dirección URL requerida**: dirección URL HTTP o HTTPS (preferido), como *https://vpntestprobe.contoso.com*. La regla comprueba si hay una respuesta desde esta dirección. Si no la hay y la **acción del dominio** es **Conectarse si es necesario**, se activará la VPN.
+      
      > [!TIP]
      >
      >Un ejemplo de cuándo se puede usar esta acción es cuando algunos sitios de la red corporativa requieren una conexión de red corporativa directa o de VPN, pero otros no. Si la lista de **Lista de dominios de búsqueda de DNS separados por comas** *corp.contoso.com*, puede elegir **Conectarse si es necesario** y luego mostrar sitios específicos dentro de esa red que pueden requerir la VPN, como *sharepoint.corp.contoso.com*. La regla, después, comprobará si se puede conectar con *vpntestprobe.contoso.com*. En caso contrario, se activará la VPN para el sitio de SharePoint.
@@ -192,9 +194,4 @@ Las reglas específicas de dominio se evalúan antes que las reglas de todos los
 Tras una implementación correcta, los usuarios verán el nombre de la conexión VPN especificado en la lista de conexiones VPN en sus dispositivos.
 
 En el área de trabajo **Directiva** de la página **General** , un resumen de estado y las alertas identifican los problemas de la directiva que requieren su atención. Además, aparece un resumen de estado en el área de trabajo Panel.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
