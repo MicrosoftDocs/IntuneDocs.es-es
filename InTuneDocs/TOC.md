@@ -120,6 +120,7 @@
 
 ## [Agregar aplicaciones](deploy-use/add-apps.md)
 ### [Agregar aplicaciones a los dispositivos inscritos](deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md)
+### [Transferencia local de aplicaciones de Windows](deploy-use/sideload-apps-for-windows.md)
 ### [Agregar aplicaciones a los equipos cliente de Intune](deploy-use/add-apps-for-windows-pcs-in-microsoft-intune.md)
 #### [Administrar contratos de licencia para equipos cliente de Intune](deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md)
 ## [Implementación de aplicaciones](deploy-use/deploy-apps.md)
@@ -136,7 +137,6 @@
 ### [Directivas de configuración de aplicaciones Android for Work](deploy-use/afw-app-configuration-policy.md)
 ### [Perfiles de aprovisionamiento de aplicaciones móviles iOS](deploy-use/ios-mobile-app-provisioning-profiles.md)
 ### [Administrar el acceso a Internet](deploy-use/manage-internet-access-using-managed-browser-policies.md)
-### [Transferir localmente aplicaciones LOB](deploy-use/sideload-apps-for-windows.md)
 
 ## [Proteger aplicaciones y datos](deploy-use/protect-apps-and-data-with-microsoft-intune.md)
 ### [Directivas de cumplimiento de dispositivos](deploy-use/introduction-to-device-compliance-policies-in-microsoft-intune.md)
@@ -193,12 +193,10 @@
 ### [Borrar los datos administrados de la aplicación de la empresa](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [Cómo presentar Intune a los usuarios finales](deploy-use/how-to-educate-your-end-users-about-microsoft-intune.md)
-### [Uso de un dispositivo Android con Intune](EndUser/using-your-android-device-with-intune.md)
-#### [Cómo obtienen sus aplicaciones los usuarios de Android](deploy-use/how-your-android-users-get-their-apps.md)
-### [Uso de un dispositivo iOS con Intune](EndUser/using-your-iOS-or-macos-device-with-intune.md)
-#### [Cómo obtienen sus aplicaciones los usuarios de iOS](deploy-use/how-your-ios-users-get-their-apps.md)
-### [Uso de un dispositivo Windows con Intune](EndUser/using-your-windows-device-with-intune.md)
-#### [Cómo obtienen sus aplicaciones los usuarios de Windows](deploy-use/how-your-windows-users-get-their-apps.md)
+### [Mensajes que los usuarios finales ven en el portal de empresa](deploy-use/help-end-users-understand-company-portal-app-messages.md)
+### [Cómo obtienen sus aplicaciones los usuarios de Android](deploy-use/how-your-android-users-get-their-apps.md)
+### [Cómo obtienen sus aplicaciones los usuarios de iOS](deploy-use/how-your-ios-users-get-their-apps.md)
+### [Cómo obtienen sus aplicaciones los usuarios de Windows](deploy-use/how-your-windows-users-get-their-apps.md)
 
 # Desarrollo y personalización de aplicaciones
 ## [Información general sobre el SDK de aplicaciones de Microsoft Intune](develop/intune-app-sdk.md)

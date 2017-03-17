@@ -169,6 +169,8 @@
 ### [Crear una directiva de cumplimiento de Android for Work](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
 ### [Crear una directiva de cumplimiento de iOS](set-device-compliance/create-a-compliance-policy-for-ios.md)
 ### [Crear una directiva de cumplimiento de Windows](set-device-compliance/create-a-compliance-policy-for-windows.md)
+### [Create Actions for noncompliance](set-device-compliance/actions-for-noncompliance.md) (Creación de acciones para la no conformidad)
+### [Supervisar el cumplimiento del dispositivo](set-device-compliance/monitor-intune-device-compliance-policies.md)
 <!--- ### [Monitor device compliance](set-device-compliance/monitor-device-compliance.md)--->
 
 
