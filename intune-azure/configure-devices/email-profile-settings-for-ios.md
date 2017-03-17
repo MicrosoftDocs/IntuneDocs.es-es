@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 02/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: c388cb26be11edb6f8f4b23d455632fad9ca98c9
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 78f99bba07180c06f979fec997a7bfb749d879c8
+ms.openlocfilehash: f18fd3ceee5c73a96444092691c590c7d9a7419c
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -36,7 +36,7 @@ ms.lasthandoff: 02/18/2017
 - **Método de autenticación**: seleccione **Nombre de usuario y contraseña** o **Certificados** como método de autenticación que usa el perfil de correo electrónico.
     - Si seleccionó **Certificado**, seleccione un cliente SCEP o un perfil de certificado PKCS creados anteriormente, que se usará para autenticar la conexión de Exchange.
 - **SSL**: use la comunicación de Capa de sockets seguros (SSL) al enviar correos electrónicos, recibir correos electrónicos y comunicarse con el servidor Exchange.
-- **S/MIME**: envíe correo electrónico saliente mediante cifrado S/MIME.
+- **S/MIME**: envíe correo electrónico saliente mediante firma S/MIME.
     - Si seleccionó **Certificado**, seleccione un cliente SCEP o un perfil de certificado PKCS creados anteriormente, que se usará para autenticar la conexión de Exchange.
 - **Cantidad de correo electrónico para sincronizar**: elija el número de días de correo electrónico que quiere sincronizar, o seleccione **Unlimited** (Sin límite) para sincronizar todos el correo electrónico disponible.
 - **Permitir a los mensajes moverse a otras cuentas de correo electrónico**: esta opción permite a los usuarios mover mensajes de correo electrónico entre distintas cuentas que tengan configuradas en su dispositivo.

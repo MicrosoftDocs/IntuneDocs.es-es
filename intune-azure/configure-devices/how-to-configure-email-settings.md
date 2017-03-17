@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: e9d1c64ef617a134f05c3e80c23145fd1fdc5399
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: d201715e5e744b0bf2bd37aca2867ef17133311b
+ms.openlocfilehash: 12ad8430d4a9bd6a3f91447db2422f1eb4144a24
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/18/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Se puede usar la configuración del perfil de correo electrónico para configurar dispositivos administrados con los valores necesarios para conectarse al correo electrónico de la empresa y sincronizarlo. Esto ayuda a garantizar que la configuración es estándar en todos los dispositivos y también ayuda a reducir las llamadas al soporte técnico por usuarios finales que no conocen la configuración correcta del correo electrónico.
+Se pueden usar perfiles de correo electrónico para configurar dispositivos administrados con los valores necesarios para conectarse al correo electrónico de la empresa y sincronizarlo. Esto ayuda a garantizar que la configuración es estándar en todos los dispositivos y también ayuda a reducir las llamadas al soporte técnico por usuarios finales que no conocen la configuración correcta del correo electrónico.
 
 El cliente de correo integrado se admite en la mayoría de las plataformas. Actualmente no se admiten la mayoría de aplicaciones de correo electrónico de terceros.
 

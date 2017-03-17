@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 03/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: cb1679deda0ba325ee3bd7288713f12317489006
-ms.openlocfilehash: 37d44dc2752815ef7abf47e5d4a658a126892a86
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: a9336e3d230de962d2623dd627e45c6e9262a822
+ms.openlocfilehash: cfe4a0bb802956278387ac2a39d5316482e09332
+ms.lasthandoff: 03/01/2017
 
 
 ---
@@ -80,6 +80,12 @@ La experiencia de administración del portal de Azure usará la nueva funcionali
 Si tiene alguna pregunta sobre la programación de la migración de su inquilino, póngase en contacto con nuestro equipo de migración en [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
 
 Puede encontrar las novedades en la vista previa de Intune en Azure [aquí](https://docs.microsoft.com/intune-azure/introduction/whats-new).
+
+## <a name="whats-coming"></a>Próximas novedades
+
+### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple requerirá actualizaciones para la Seguridad de transporte de aplicaciones <!--748318-->
+
+Apple ha anunciado que, a partir de la primavera de 2017, se aplicarán requisitos específicos para la Seguridad de transporte de aplicaciones (ATS). ATS se usa para aplicar una seguridad más estricta en todas las comunicaciones de aplicaciones a través de HTTPS. Este cambio afecta a los clientes de Intune que usan aplicaciones del portal de empresa de iOS. Visite nuestro [blog de soporte técnico de Intune](https://aka.ms/compportalats) para obtener más información. 
 
 ### <a name="see-also"></a>Consulte también
 * [Blog de Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882)
