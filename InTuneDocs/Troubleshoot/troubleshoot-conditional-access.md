@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 7ac6041fb33f95e5b0c53b81c2af9aef42767a38
-ms.openlocfilehash: 115a27512930fa995a2781afc8a94c1d7f97958e
-ms.lasthandoff: 03/02/2017
+ms.sourcegitcommit: 9894fdb696f4e010e176efc47068827bddaf7d4e
+ms.openlocfilehash: 8c84703828db3c5da2aa88fa3dc16329f3a4a1e1
+ms.lasthandoff: 03/04/2017
 
 
 ---
@@ -57,6 +57,13 @@ Es posible ver si estas condiciones se cumplen en un dispositivo en el Portal de
      -     Un dispositivo iOS puede quedarse atascado en un estado de comprobación de cumplimiento e impedir que el usuario inicie otra comprobación. Esto puede solucionarse reiniciando el portal de empresa y el estado de cumplimiento reflejará el estado del dispositivo en Intune. Después de que se recopilen todos los datos desde una sincronización de dispositivos, la comprobación del cumplimiento es rápida, menos de medio segundo de media.
 
         Normalmente, los dispositivos de motivo permanecen en este estado porque están teniendo problemas al conectarse con el servicio o la sincronización tarda mucho tiempo.  Si el problema persiste en diferentes configuraciones de red (red de telefonía móvil, Wi-Fi y VPN), a través de reinicios del dispositivo y después de comprobar que el SSP está actualizado en el dispositivo, póngase en contacto con el soporte técnico de Microsoft, tal y como se describe en [Cómo obtener soporte técnico de Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+
+ - Para dispositivos Android:
+     - Algunos dispositivos Android podrían parecer cifrados, pero la aplicación de portal de empresa reconoce estos dispositivos como no cifrados. 
+    
+        -    Los dispositivos que se encuentran en este estado requieren que el usuario establezca un código de acceso de inicio seguro. El usuario verá una notificación de dispositivo de la aplicación de portal de empresa que le pedirá que establezca un código de acceso de inicio para el dispositivo. Después de pulsar la notificación de dispositivo y confirmar el PIN o el código de acceso existente, seleccione la opción **Require PIN to start device** (Solicitar PIN para iniciar el dispositivo) en la pantalla **Secure start-up** (Inicio seguro). Después, pulse el botón **Comprobar cumplimiento** para el dispositivo en la aplicación de portal de empresa. El dispositivo debería detectarse ahora como cifrado.
+    
+        -     Algunos fabricantes de dispositivos cifran sus dispositivos con un PIN predeterminado, en vez de con el PIN secreto establecido por el usuario. Intune reconoce el cifrado con el PIN predeterminado como no seguro, ya que este método de cifrado puede poner en peligro los datos del dispositivo si un usuario malintencionado tiene acceso físico al dispositivo. Si este es el caso, considere la posibilidad de usar [directivas de protección de aplicaciones](https://docs.microsoft.com/en-us/intune/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
 
 ## <a name="policy-issues"></a>Problemas de directivas
 
