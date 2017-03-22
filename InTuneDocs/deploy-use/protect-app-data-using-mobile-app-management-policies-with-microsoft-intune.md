@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
 ms.openlocfilehash: 651899219458f799e26ed7957ccef97d7ae2af09
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -36,8 +37,8 @@ Se pueden configurar directivas de protección de aplicaciones para aplicaciones
 
 -   **Inscritos en una solución MDM de terceros:** los dispositivos de esta categoría son normalmente dispositivos corporativos.
 
-  > [!NOTE]
-  > No se recomienda utilizar directivas de protección de aplicaciones con soluciones de contenedor seguras o administración de aplicaciones móviles de terceros.
+      > [!NOTE]
+      > No se recomienda utilizar directivas de protección de aplicaciones con soluciones de contenedor seguras o administración de aplicaciones móviles de terceros.
 
 -   **No inscritos en ninguna solución MDM:** los dispositivos de esta categoría normalmente son dispositivos de empleados no administrados ni inscritos en Intune ni en ninguna otra solución MDM.
 
@@ -133,9 +134,4 @@ Todas las aplicaciones móviles de Office admiten el acceso de varias identidade
 - [Preparativos para la configuración de directivas de protección de aplicaciones](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 - [Creación e implementación de directivas de protección de aplicaciones con Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
