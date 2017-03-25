@@ -15,8 +15,9 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: bac9e6784ed6814d27bec9ad07b507facc9e8fc2
-ms.openlocfilehash: 48fe5f0a124a6608434f87905c24cda822fe63b7
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 69f7f366e798c1c987a6ddfb93300598b22a7d01
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -25,8 +26,6 @@ Obtenga más información sobre las actualizaciones que hemos realizado en la in
 
 > [!Note]
 > Tenga en cuenta que las imágenes siguientes corresponden a la versión preliminar y que el producto anunciado puede diferir de las versiones presentadas.
-
-## <a name="whats-coming"></a>Próximas novedades
 
 ### <a name="february-2017"></a>Febrero de 2017
 
@@ -68,9 +67,4 @@ A partir de febrero, el sitio web del portal de empresa admitirá aplicaciones d
 * [Guía básica de Cloud Platform](http://www.microsoft.com/en-us/server-cloud/roadmap/Indevelopment.aspx?TabIndex=0&dropValue=Intune)
 * [Novedades en la vista previa de Azure](https://docs.microsoft.com/intune-azure/introduction/whats-new)
 * [Archivo de novedades](whats-new-archive.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
