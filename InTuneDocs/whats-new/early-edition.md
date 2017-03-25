@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 03/09/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0936051b5c33a2e98f275ef7a3a32be2e8f5a8b0
-ms.openlocfilehash: 0ba6695b595849f72eb44d8e6f095e8b1aae39eb
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: 3b355d43d4be05535f256d88a8648c2e67035882
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -31,7 +31,7 @@ La **edición anticipada** proporciona una lista de características que se incl
 Esta página se actualiza periódicamente. Compruebe si hay actualizaciones adicionales.
 
 > [!Note]
-> Los siguientes cambios están en fase de desarrollo de Intune. Todas estas características finalmente se admitirán para las implementaciones de clientes híbridos (Configuration Manager con Intune). Para más información sobre las nuevas características híbridas, vea nuestra [página sobre novedades de las implementaciones híbridas](https://docs.microsoft.com/en-us/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
+> Los siguientes cambios están en fase de desarrollo de Intune. Todas estas características finalmente se admitirán para las implementaciones de clientes híbridos (Configuration Manager con Intune). Para más información sobre las nuevas características híbridas, vea nuestra [página sobre novedades de las implementaciones híbridas](https://docs.microsoft.com/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
 ## <a name="new-capabilities"></a>Nuevas funcionalidades
 
@@ -47,11 +47,15 @@ La aplicación de Portal de empresa para Android va a actualizar su interfaz de 
 
 Pueden encontrar más detalles de estos cambios en la [página de actualizaciones de la interfaz de usuario de la aplicación] (whats-new-in-intune-app-ui.md].
 
+### <a name="signing-script-for-windows-10-company-portal---941642--"></a>Script de firma para el Portal de empresa para Windows 10<!--941642-->
+
+Los clientes que necesitan descargar y transferir localmente la aplicación del Portal de empresa para Windows 10, ahora pueden usar un script para simplificar y agilizar el proceso de firma de aplicaciones en su organización.   Para descargar el script y las instrucciones de uso, consulte el artículo [Microsoft Intune Signing Script for Windows 10 Company Portal](https://aka.ms/win10cpscript) (Script de firma de Microsoft Intune para el Portal de empresa para Windows 10) de la Galería de TechNet. Para obtener más información sobre este anuncio, consulte [Updating your Windows 10 Company Portal app](https://blogs.technet.microsoft.com/intunesupport/2017/03/13/updating-your-windows-10-company-portal-app/) (Actualización de la aplicación del Portal de empresa para Windows 10) en el blog del equipo de asistencia técnica de Intune. 
+
 ## <a name="notices"></a>Notificaciones
 
 ### <a name="improved-support-for-android-users-based-in-china---720444--"></a>Compatibilidad mejorada para usuarios de Android radicados en China<!--720444-->
 
-Debido a la ausencia de Google Play Store en China, los dispositivos Android deben obtener aplicaciones en los mercados chinos. El Portal de empresa admitirá este flujo de trabajo al redirigir a los usuarios de Android de China para que descarguen las aplicaciones de Portal de empresa y de Outlook desde tiendas de aplicaciones locales. Esto mejorará la experiencia del usuario cuando se habiliten las directivas de acceso condicional, tanto para administración de dispositivos móviles como para la administración de aplicaciones móviles. Las aplicaciones de Portal de empresa y Outlook para Android están disponibles en los siguientes tiendas de aplicaciones chinas: 
+Debido a la ausencia de Google Play Store en China, los dispositivos Android deben obtener aplicaciones en los mercados chinos. El Portal de empresa admitirá este flujo de trabajo al redirigir a los usuarios de Android de China para que descarguen las aplicaciones de Portal de empresa y de Outlook desde tiendas de aplicaciones locales. Esto mejorará la experiencia del usuario cuando se habiliten las directivas de acceso condicional, tanto para administración de dispositivos móviles como para la administración de aplicaciones móviles. Las aplicaciones de Portal de empresa y Outlook para Android están disponibles en los siguientes tiendas de aplicaciones chinas:
 
 - [Baidu](https://go.microsoft.com/fwlink/?linkid=836946)
 - [Xiaomi](https://go.microsoft.com/fwlink/?linkid=836947)
@@ -61,7 +65,7 @@ Debido a la ausencia de Google Play Store en China, los dispositivos Android deb
 
 ### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple requerirá actualizaciones para la Seguridad de transporte de aplicaciones <!--748318-->
 
-Apple ha anunciado que, a partir de la primavera de 2017, se aplicarán requisitos específicos para la Seguridad de transporte de aplicaciones (ATS). ATS se usa para aplicar una seguridad más estricta en todas las comunicaciones de aplicaciones a través de HTTPS. Este cambio afecta a los clientes de Intune que usan aplicaciones del portal de empresa de iOS/macOS. Visite nuestro [blog de soporte técnico de Intune](https://aka.ms/compportalats) para obtener más información.
+Apple ha anunciado que, a partir de la primavera de 2017, se aplicarán requisitos específicos para la Seguridad de transporte de aplicaciones (ATS). ATS se usa para aplicar una seguridad más estricta en todas las comunicaciones de aplicaciones a través de HTTPS. Este cambio afecta a los clientes de Intune que usan aplicaciones del portal de empresa de iOS. Visite nuestro [blog de soporte técnico de Intune](https://aka.ms/compportalats) para obtener más información.
 
 ## <a name="public-preview-of-the-new-intune-admin-experience-on-azure---736542--"></a>Versión preliminar pública de la nueva experiencia de administración de Intune en Azure <!--736542-->
 
@@ -69,9 +73,7 @@ A principios de 2017 migraremos nuestra experiencia de administración completa 
 
 Nuevos inquilinos de prueba comenzarán a ver la versión preliminar pública de la nueva experiencia de administración en el portal de Azure de este mes. Durante el estado de versión preliminar, se proporcionarán funcionalidades y paridad con la consola de Intune existente de manera iterativa.
 
-La experiencia de administración del portal de Azure usará la nueva funcionalidad de agrupación y selección de destino ya anunciada; cuando se migre su inquilino existente a la nueva experiencia de agrupación también se migrará a la versión preliminar la nueva experiencia de administración en el inquilino. Mientras tanto, si quiere probar o examinar alguna de las nuevas características hasta que se migre su inquilino, regístrese para obtener una nueva cuenta de prueba de Intune o revise la [nueva documentación](https://docs.microsoft.com/en-us/intune-azure/introduction/what-is-microsoft-intune).
-
-Si tiene alguna pregunta sobre la programación de la migración de su inquilino, póngase en contacto con nuestro equipo de migración en [intunegrps@microsoft.com](mailto:intunegrps@microsoft.com).
+La experiencia de administración del portal de Azure usará la nueva funcionalidad de agrupación y selección de destino ya anunciada; cuando se migre su inquilino existente a la nueva experiencia de agrupación también se migrará a la versión preliminar la nueva experiencia de administración en el inquilino. Mientras tanto, si quiere probar o examinar alguna de las nuevas características hasta que se migre su inquilino, regístrese para obtener una nueva cuenta de prueba de Intune o revise la [nueva documentación](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune).
 
 ### <a name="non-managed-devices-can-access-assigned-apps---664691--"></a>Los dispositivos no administrados puedan acceder a aplicaciones asignadas <!--664691-->
 
@@ -92,7 +94,7 @@ Consulte [How to add an app to Intune](/intune-azure/manage-apps/add-apps) (Cóm
 
 ### <a name="assign-lob-apps-to-users-with-unenrolled-devices---748823--"></a>Asignación de aplicaciones LOB a los usuarios con dispositivos no inscritos <!--748823-->
 
-Ahora puede asignar aplicaciones de línea de negocio desde la tienda a usuarios tengan o no inscritos sus dispositivos con Intune. Si el dispositivo de los usuarios no está inscrito con Intune, deben ir al sitio web del portal de empresa para instalarlo, en lugar de a la aplicación de portal de empresa.
+Ahora puede asignar aplicaciones de línea de negocio desde la tienda a usuarios tengan o no inscritos sus dispositivos con Intune. Si el dispositivo de los usuarios no está inscrito con Intune, deben ir al sitio web del Portal de empresa para instalarlo, en lugar de a la aplicación del Portal de empresa.
 
 ### <a name="new-compliance-reports---846671--"></a>Nuevos informes de cumplimiento <!--846671-->
 

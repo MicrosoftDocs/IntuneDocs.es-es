@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,16 +18,16 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: db5714009d4d0bcdd77be23314e4f2ff4db44b6e
-ms.openlocfilehash: 95c8983428ee4770ec71f804f8dac59c427e096c
-ms.lasthandoff: 12/21/2016
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: 393a1aa0f9e917d2a124f4deaa086f0369ded4ef
+ms.lasthandoff: 03/13/2017
 
 
 ---
 
 # <a name="set-your-pin-or-password"></a>Establecimiento del PIN o la contraseña
 
-El administrador de TI puede pedir que establezca un PIN o una contraseña en el dispositivo Android cuando use Intune para tener acceso a datos profesionales o educativos. También es posible que aparezcan mensajes que le exijan alargar el PIN o la contraseña o hacerlos más complejos para que sean más seguros.  
+El administrador de TI puede pedir que establezca un PIN o una contraseña en el dispositivo Android cuando use Intune para tener acceso a datos profesionales o educativos. También es posible que aparezcan mensajes que le exijan alargar el PIN o la contraseña o hacerlos más complejos para que sean más seguros. Por ejemplo, estos códigos de acceso se utilizan para acceder al dispositivo desde la pantalla de bloqueo.
 
 Para establecer un PIN o una contraseña, use los siguientes pasos.
 

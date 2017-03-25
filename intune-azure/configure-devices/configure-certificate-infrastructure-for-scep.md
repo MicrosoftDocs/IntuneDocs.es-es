@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 8f713769e0b8a13e91e6d9991e4e7415e1da22a2
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: ea910594195313978d6defae529a526bc0310022
+ms.lasthandoff: 03/13/2017
 
 ---
 # <a name="configure-certificate-infrastructure-for-scep-in-microsoft-intune"></a>Configurar la infraestructura de certificados para SCEP en Microsoft Intune
@@ -54,7 +54,7 @@ Desde la red perimetral a la red de confianza, permita todos los puertos y proto
 Se recomienda publicar el servidor NDES a través de un proxy, como el [proxy de aplicación de Azure AD](https://azure.microsoft.com/en-us/documentation/articles/active-directory-application-proxy-publish/), [el proxy de acceso web](https://technet.microsoft.com/en-us/library/dn584107.aspx) o un proxy de terceros.
 
 
-### <a name="a-namebkmkcertsandtemplatesacertificates-and-templates"></a><a name="BKMK_CertsAndTemplates"></a>Certificados y plantillas
+### <a name="BKMK_CertsAndTemplates"></a>Certificados y plantillas
 
 |Objeto|Detalles|
 |----------|-----------|
@@ -63,13 +63,13 @@ Se recomienda publicar el servidor NDES a través de un proxy, como el [proxy de
 |**Certificado de autenticación de servidor**|Solicitado desde la CA emisora o la CA pública, este certificado SSL se instala y se enlaza en IIS, en el servidor NDES.|
 |**Certificado de CA raíz de confianza**|Expórtelo como archivo **.cer** desde la entidad de certificación o desde cualquier dispositivo que confíe en la entidad de certificación raíz e impleméntelo en dispositivos con el perfil de certificado de CA de confianza.<br /><br />Use un único certificado de CA raíz de confianza por cada plataforma de sistema operativo y asócielo a cada perfil de certificado raíz de confianza que cree.<br /><br />Puede usar certificados de CA raíz de confianza adicionales cuando sea necesario. Por ejemplo, podría hacerlo para proporcionar una relación de confianza con una CA que firme los certificados de autenticación de servidor para los puntos de acceso Wi-Fi.|
 
-### <a name="a-namebkmkaccountsaaccounts"></a><a name="BKMK_Accounts"></a>Cuentas
+### <a name="BKMK_Accounts"></a>Cuentas
 
 |Nombre|Detalles|
 |--------|-----------|
 |**Cuenta de servicio NDES**|Especifique una cuenta de usuario de dominio que se vaya a usar como cuenta de servicio NDES.|
 
-## <a name="a-namebkmkconfigureinfrastructureaconfigure-your-infrastructure"></a><a name="BKMK_ConfigureInfrastructure"></a>Configurar la infraestructura
+## <a name="BKMK_ConfigureInfrastructure"></a>Configurar la infraestructura
 Para poder configurar perfiles de certificado debe completar las tareas siguientes, que requieren conocimientos de Windows Server 2012 R2 y Servicios de certificados de Active Directory (ADCS):
 
 **Tarea 1:** crear una cuenta de servicio SCEP
@@ -108,7 +108,7 @@ En esta tarea tendrá que:
     -   En la pestaña **Extensiones** , asegúrese de que **Descripción de las directivas de aplicación** incluya **Autenticación del cliente**.
 
         > [!IMPORTANT]
-        > En el caso de plantillas de certificado de iOS y Mac OS X, en la pestaña **Extensiones**, edite **Uso de claves** y asegúrese de que la opción **Firma como prueba de origen** no esté seleccionada.
+        > En el caso de plantillas de certificado de iOS y macOS, en la pestaña **Extensiones**, edite **Uso de claves** y asegúrese de que la opción **Firma como prueba de origen** no esté seleccionada.
 
     -   En la pestaña **Seguridad**, agregue la cuenta de servicio NDES y otórguele permisos de **inscripción**en la plantilla. Los administradores de Intune que vayan a crear perfiles SCEP necesitan derechos de **lectura** para poder ir a la plantilla al crear perfiles SCEP.
 
@@ -118,7 +118,7 @@ En esta tarea tendrá que:
 3.  Revise la configuración de **Período de validez** en la pestaña **General** de la plantilla. Intune usa de forma predeterminada el valor configurado en la plantilla. Pero tiene la opción de configurar la CA para permitir que el solicitante especifique otro valor, lo que se puede establecer desde la consola de administrador de Intune. Si desea usar siempre el valor de la plantilla, omita el resto de este paso.
 
     > [!IMPORTANT]
-    > Las plataformas iOS y Mac OS X siempre usan el valor establecido en la plantilla, con independencia de otras configuraciones que realice.
+    > iOS y macOS siempre usa el valor establecido en la plantilla con independencia de otras configuraciones que realice.
 
 Estas son capturas de pantalla de una configuración de plantilla de ejemplo.
 

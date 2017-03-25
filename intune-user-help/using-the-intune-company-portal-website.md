@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: mamoriss
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: d2ed7b2e713f5efd4161eb8015ab43c8f97a017b
-ms.openlocfilehash: d10cc421dc6fe422b7a2c26b4902997c8c6b2e61
-ms.lasthandoff: 01/05/2017
+ms.sourcegitcommit: 499ec16ffa04ec6c5d1fff829729fddc3f74a02b
+ms.openlocfilehash: 9b5ca824612f2ad40690f14a4845e9fafc7b6fed
+ms.lasthandoff: 03/16/2017
 
 
 ---
@@ -40,7 +40,7 @@ Pueden llevar a cabo las siguientes tareas desde el sitio web del Portal de empr
 
 -   [Bloquear un dispositivo de forma remota](remote-lock-your-device-cpwebsite.md)
 
--    [Sincronizar el dispositivo manualmente para acelerar las instalaciones de aplicaciones lentas](sync-your-device-manually-cpwebsite.md)
+-    [Sincronizar el dispositivo manualmente para que las aplicaciones se instalen más rápido](sync-your-device-manually-cpwebsite.md)
 
 -   Buscar información de contacto del administrador de TI, si está configurado
 

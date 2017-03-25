@@ -1,12 +1,12 @@
 ---
-title: Control de acceso basado en rol (RBAC) para Microsoft Intune
+title: Roles de Intune (RBAC) para Microsoft Intune
 titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: aprenda cómo RBAC le permite controlar quién puede realizar acciones y efectuar cambios."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 02/22/2016
+ms.date: 03/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: f4a80949dafbd3acc0413c75bbb0b8b5f5ae5664
-ms.openlocfilehash: 2507626d23beece9723134191e8747f731478ddb
-ms.lasthandoff: 02/23/2017
+ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
+ms.openlocfilehash: e60edd86289e0fca2aa03660d8ce782e373c0236
+ms.lasthandoff: 03/15/2017
 
 
 ---
 
-# <a name="role-based-access-control-rbac-for-microsoft-intune"></a>Control de acceso basado en rol (RBAC) para Microsoft Intune
+# <a name="intune-roles-rbac-for-microsoft-intune"></a>Roles de Intune (RBAC) para Microsoft Intune
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
@@ -68,7 +68,7 @@ Contrata a un nuevo administrador de TI que se encargará de implementar y admin
 
 1. Inicie sesión en el portal de Azure.
 2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
-3. En la hoja **Intune**, elija **Control de acceso**.
+3. En la hoja **Intune**, elija **Intune roles** (Roles de Intune).
 ![Carga de trabajo de control de acceso](./media/axxess-control.png)
 1. En la hoja **Roles** de la carga de trabajo **Control de acceso**, elija **Agregar personalizado**.
 2. En la hoja **Agregar rol personalizado**, escriba un nombre y una descripción para el nuevo rol y luego haga clic en **Permisos**.

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/24/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ searchScope:
 ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: fc22acb9f0c08491852592f41dc60bef0fcf0928
-ms.openlocfilehash: 9e616d6368a40e3ae06303cf3556b5e0760fb477
-ms.lasthandoff: 12/21/2016
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: fbb3143baa0063343d639d2df6101ebaec98ee65
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -27,7 +27,7 @@ ms.lasthandoff: 12/21/2016
 
 Si el dispositivo iOS no se ajusta a la directiva de códigos de acceso del administrador de TI, aparece un mensaje que describe el problema brevemente y explica lo que debe hacer para que el código de acceso cumpla los requisitos.
 
-El administrador de TI puede establecer más de un requisito para los códigos de acceso. Por ejemplo, el código de acceso podría contener un número determinado de caracteres y ser una combinación de números, letras o caracteres. Puesto que se puede establecer más de un requisito, en estas instrucciones solo se puede explicar cómo establecer o cambiar el código de acceso. No se explican todas las combinaciones posibles de requisitos.
+El administrador de TI puede establecer más de un requisito para los códigos de acceso. Por ejemplo, el código de acceso podría contener un número determinado de caracteres y ser una combinación de números, letras o caracteres. Puesto que se puede establecer más de un requisito, en estas instrucciones solo se puede explicar cómo establecer o cambiar el código de acceso. No se explican todas las combinaciones posibles de requisitos. Por ejemplo, estos códigos de acceso se utilizan para acceder al dispositivo desde la pantalla de bloqueo.
 
 Si tiene problemas para establecer un código de acceso que cumpla los requisitos, póngase en contacto con el administrador de TI para obtener ayuda.
 
