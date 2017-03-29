@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: deea78dcea9ade031441bf12b388a862235a8e9c
-ms.openlocfilehash: 01e8a6968797bc2b2b0f3bb5710ee396d9094584
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 881ce40cb093b1817c9c4b84c9f8ca78b19de727
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -51,7 +51,8 @@ ms.lasthandoff: 03/15/2017
 -     **Métodos abreviados de teclado (solo supervisados)**: permite el uso de métodos abreviados de teclado.
 -     **Detección de muñeca para Apple Watch enlazado**: cuando se habilita, Apple Watch no muestra notificaciones si no se lleva puesto.
 - **Requerir contraseña de emparejamiento para solicitudes salientes de AirPlay**: solicita una contraseña de emparejamiento cuando el usuario usa AirPlay para transmitir contenido a otros dispositivos Apple.
-- **Modificación de la cuenta (solo supervisado)**: permite al usuario cambiar la configuración de la cuenta, como las configuraciones del correo electrónico.
+- **Modificación de la cuenta (solo supervisada)**: cuando está bloqueada, evita que el usuario modifique la configuración específica del dispositivo desde la aplicación de configuración de iOS, como crear cuentas nuevas del dispositivo y cambiar el nombre de usuario o la contraseña.
+Esto también se aplica a valores accesibles desde la aplicación de configuración de iOS como correo, contactos, calendario, Facebook y Twitter. No es válido para las aplicaciones con la configuración de la cuenta que no se pueden configurar desde la aplicación de configuración de iOS, por ejemplo, la aplicación de Microsoft Outlook.
 - **Emparejamiento con Apple Watch (solo supervisado)**: permite al dispositivo emparejarse con un dispositivo Apple Watch.
 - **Modificación de Bluetooth (solo supervisado)**: impide al usuario cambiar la configuración de Bluetooth del dispositivo.
 - **Observación de pantalla remota mediante la aplicación Classroom (solo supervisado)**: permite o impide que la aplicación Classroom observe la pantalla en dispositivos remotos.

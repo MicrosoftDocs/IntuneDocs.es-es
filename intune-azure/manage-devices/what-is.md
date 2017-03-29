@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/14/2017
+ms.date: 03/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
-ms.openlocfilehash: 957192c744bf05cd835dfae60b6bb521b8f8b26b
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
+ms.openlocfilehash: 8a43e1646476696b978a7f8a3e92f920606a698b
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -73,9 +73,10 @@ Si un dispositivo iOS se ha robado o perdido, puede habilitar Modo Perdido. Esto
 2.    En la hoja **Modo Perdido**, habilite Modo Perdido, escriba el mensaje que se mostrará y un número de teléfono de contacto (opcional).
 3.    Haga clic en **Aceptar**.
 Al habilitar Modo Perdido, se bloquea el uso del dispositivo al completo. El usuario final no puede acceder al dispositivo hasta que deshabilite Modo Perdido. Mientras Modo Perdido esté habilitado, puede utilizar la acción **Buscar dispositivo** para averiguar dónde está el dispositivo.
+Para usar el Modo Perdido, el dispositivo debe ser un dispositivo iOS de la empresa, inscrito mediante DEP, que esté en modo supervisado.
 
 ### <a name="locate-device"></a>**Buscar dispositivo**
-Use esta acción remota para mostrar la ubicación de un dispositivo iOS perdido o robado en un mapa. Debe ser un dispositivo iOS de empresa con el modo supervisado. Antes de realizar esta acción, el dispositivo debe tener habilitado Modo Perdido.
+Use esta acción remota para mostrar la ubicación de un dispositivo iOS perdido o robado en un mapa. El dispositivo debe ser un dispositivo iOS de la empresa, inscrito mediante DEP, que esté en modo supervisado. Antes de realizar esta acción, el dispositivo debe tener habilitado Modo Perdido.
 1.    En la hoja de propiedades de un dispositivo iOS, elija **Más** > **Buscar dispositivo**.
 2.    Cuando se haya localizado el dispositivo, se muestra su ubicación en la hoja **Buscar dispositivo**. 
     ![Hoja Buscar dispositivo](./media/locate-device.png)

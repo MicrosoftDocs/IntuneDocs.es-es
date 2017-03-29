@@ -15,9 +15,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 51f9d7bad6a1411ff68fa94c62421e2c0a43ab5a
-ms.openlocfilehash: d60b9afdf7fe9f78dd5cc4693259b8667fb17299
-ms.lasthandoff: 02/25/2017
+ms.sourcegitcommit: 832c7dd8016bb30a24cc1748f84e5692130cb658
+ms.openlocfilehash: a37f217d3ce3c87b9aa673a8a7fc93ad390c6a68
+ms.lasthandoff: 03/23/2017
 
 
 ---
@@ -39,27 +39,21 @@ Puede usar perfiles de correo electrónico para configurar el cliente de correo 
 -    Windows 10 (para el escritorio), Windows 10 Mobile y versiones posteriores
 -    iOS 8.0 y versiones posteriores
 -    Samsung KNOX Standard (4.0 y posterior)
--    Android for Work
-
->[!NOTE]
->Intune proporciona dos perfiles de correo electrónico de Android for Work, uno para cada una de las aplicaciones de correo electrónico de Gmail y de Nine Work. Estas aplicaciones están disponibles en Google Play Store y admiten conexiones a Exchange. Para habilitar la conectividad de correo electrónico, implemente una de estas aplicaciones de correo electrónico en los dispositivos de los usuarios y, después, cree e implemente el perfil adecuado. Es posible que aplicaciones de correo electrónico como Nine Work no sean gratuitas. Revise los detalles de la licencia de la aplicación o póngase en contacto con la empresa de la aplicación si tiene alguna pregunta.
+-    Android for Work (aplicaciones de correo de terceros; la aplicación de correo nativa es solo de perfil personal)
 
 Además de configurar una cuenta de correo electrónico en el dispositivo, también puede configurar la cantidad de correo electrónico que se sincronizará y, en función del tipo de dispositivo, los tipos de contenido que se sincronizarán.
 
->[!NOTE]
->
->Si el usuario ha instalado un perfil de correo electrónico antes de la configuración de un perfil mediante Intune, el resultado de la implementación del perfil de correo electrónico de Intune depende de la plataforma del dispositivo:
+Si el usuario ha instalado un perfil de correo electrónico antes de la configuración de un perfil mediante Intune, el resultado de la implementación del perfil de correo electrónico de Intune depende de la plataforma del dispositivo:
 
->**iOS**: se detecta un perfil de correo electrónico existente duplicado basándose en el nombre de host y la dirección de correo electrónico. El perfil de correo electrónico duplicado que ha creado el usuario bloquea la implementación de un perfil de Intune creado por el administrador. Este es un problema común, ya que los usuarios de iOS suelen crear un perfil de correo electrónico y luego inscribirse. El Portal de empresa informa al usuario de que no es compatible debido a su perfil de correo electrónico configurado manualmente y solicita al usuario que quite ese perfil. El usuario debe quitar su perfil de correo electrónico para que el perfil de Intune pueda configurarse. Para evitar el problema, indique a los usuarios que se inscriban antes de instalar un perfil de correo electrónico y que permitan que Intune configure el perfil.
+**iOS**<br>Se detecta un perfil de correo electrónico existente duplicado en función del nombre de host y la dirección de correo electrónico. El perfil de correo electrónico duplicado que ha creado el usuario bloquea la implementación de un perfil de Intune creado por el administrador. Este es un problema común, ya que los usuarios de iOS suelen crear un perfil de correo electrónico y luego inscribirse. El Portal de empresa informa al usuario de que no es compatible debido a su perfil de correo electrónico configurado manualmente y solicita al usuario que quite ese perfil. El usuario debe quitar su perfil de correo electrónico para que el perfil de Intune pueda configurarse. Para evitar el problema, indique a los usuarios que se inscriban antes de instalar un perfil de correo electrónico y que permitan que Intune configure el perfil.
 
->**Windows**: se detecta un perfil de correo electrónico existente duplicado basándose en el nombre de host y la dirección de correo electrónico. Intune sobrescribe el perfil de correo electrónico existente que ha creado el usuario.
+**Windows**<br>Se detecta un perfil de correo electrónico existente duplicado en función del nombre de host y la dirección de correo electrónico. Intune sobrescribe el perfil de correo electrónico existente que ha creado el usuario.
 
->**Samsung KNOX**: se detecta un perfil de correo electrónico existente duplicado basándose en la dirección de correo electrónico y se sobrescribe con el perfil de Intune. Si el usuario configura esa cuenta, se sobrescribe de nuevo mediante el perfil de Intune. Tenga en cuenta que esto puede provocar confusión en el usuario.
+**Samsung KNOX**<br>Se detecta un perfil de correo electrónico existente duplicado en función de la dirección de correo electrónico y se sobrescribe con el perfil de Intune. Si el usuario configura esa cuenta, se sobrescribe de nuevo mediante el perfil de Intune. Tenga en cuenta que esto puede provocar confusión en el usuario.
 
->Como Samsung KNOX no usa el nombre de host para identificar el perfil, recomendamos que no cree varios perfiles de correo electrónico para usarlos en la misma dirección de correo electrónico en diferentes hosts, ya que estos se sobrescriben entre sí.
+Como Samsung KNOX no usa el nombre de host para identificar el perfil, recomendamos que no cree varios perfiles de correo electrónico para usarlos en la misma dirección de correo electrónico en diferentes hosts, ya que estos se sobrescriben entre sí.
 
->**Android for Work**: el perfil de Intune solo se aplica a aplicaciones de correo electrónico específicas en el perfil de trabajo del dispositivo y no afecta a la configuración de correo electrónico del perfil de usuario del dispositivo.
-
+**Android for Work**<br>Intune proporciona dos perfiles de correo electrónico de Android for Work, uno para cada una de las aplicaciones de correo electrónico de Gmail y de Nine Work. Estas aplicaciones están disponibles en Google Play Store, instalan el perfil de trabajo del dispositivo y admiten conexiones a Exchange. Para habilitar la conectividad de correo electrónico, implemente una de estas aplicaciones de correo electrónico en los dispositivos de los usuarios y, después, cree e implemente el perfil adecuado. Es posible que aplicaciones de correo electrónico como Nine Work no sean gratuitas. Revise los detalles de la licencia de la aplicación o póngase en contacto con la empresa de la aplicación si tiene alguna pregunta.
 
 ## <a name="secure-email-profiles"></a>Proteger los perfiles de correo electrónico
 Los perfiles de correo electrónico se pueden proteger mediante un certificado o una contraseña.

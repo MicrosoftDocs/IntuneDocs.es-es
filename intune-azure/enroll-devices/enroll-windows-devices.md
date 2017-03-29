@@ -5,7 +5,7 @@ description: "Versión preliminar de Intune Azure: habilite la administración d
 keywords: 
 author: nathbarn
 manager: nathbarn
-ms.date: 03/15/17
+ms.date: 03/21/17
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: a95aca706a4996d40e268a80c7c334ebb9854df5
-ms.openlocfilehash: 6cbaf8414452f11f0aa97616bbed2cf164b49ac0
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
+ms.openlocfilehash: 609656c2831c09c67e911c8150d31f38faad020b
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -33,23 +33,13 @@ Use uno de los métodos siguientes para configurar la inscripción de dispositiv
  -  Debe tener Azure Active Directory Premium para usar este método. De lo contrario, use el método de inscripción para Windows 8.1 y Windows Phone 8.1.
  -  Si decide no habilitar la inscripción automática, use el método de inscripción para Windows 8.1 y Windows Phone 8.1.
 
-- [**Inscripción de Windows 8.1 y Windows Phone 8.1 mediante la configuración de CNAME**](#simplify-enrollment-by-configuring-cname)
+- [**Inscripción sin la inscripción automática de Azure AD Premium**](#enable-windows-enrollment-without-azure-ad-premium)
  - Debe usar este método para inscribir dispositivos Windows 8.1 y Windows Phone 8.1.
- - También puede utilizar este método si no dispone de Azure Active Directory (AD) Premium.
-
-
-## <a name="prerequisites"></a>Requisitos previos
-
-Si algunos de los siguientes requisitos previos no están aún en la versión preliminar de Intune Azure, debe realizarlos desde la consola de administración de Intune clásica.
-
-- [Configurar un nombre de dominio personalizado](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
-- [Establecer la entidad de administración de dispositivos móviles (MDM) ](set-mdm-authority.md) como **Microsoft Intune**
-- [Configurar la aplicación de portal de empresa](/intune-azure/manage-apps/company-portal-app.md)
-- Asignar licencias a usuarios
+ - También puede utilizar este método para dispositivos Windows 8.1 y posteriores si no desea usar Azure Active Directory (AD) Premium.
 
 [!INCLUDE[AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-## <a name="enable-windows-workplace-enrollment"></a>Habilitar la inscripción del área de trabajo de Windows
+## <a name="enable-windows-enrollment-without-azure-ad-premium"></a>Habilitación de la inscripción de Windows sin Azure AD Premium
 
 Puede permitir a los usuarios instalar e inscribir sus dispositivos sin la inscripción automática de Azure AD Premium. Al crear registros de recursos CNAME de DNS, los usuarios se conectan a Intune y se inscriben sin especificar un nombre de servidor.
 
@@ -79,7 +69,7 @@ Puede permitir a los usuarios instalar e inscribir sus dispositivos sin la inscr
 
     Para obtener instrucciones de inscripción del usuario final, consulte [Inscribir el dispositivo Windows en Intune](https://docs.microsoft.com/intune/enduser/enroll-your-device-in-intune-windows). También puede enviar a los usuarios a la página que trata sobre [lo que ven los administradores de TI en los dispositivos](https://docs.microsoft.com/intune/enduser/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).
 
-    Para más información sobre las tareas del usuario final, vea [Recursos sobre la experiencia del usuario final con Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune).
+    Para más información sobre las tareas del usuario final, vea [Recursos sobre la experiencia del usuario final con Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/how-to-educate-your-end-users-about-microsoft-intune).
 
 No es necesario ningún trabajo adicional a menos que vaya a implementar el portal de empresa en dispositivos.  Puede omitir sin ningún problema los pasos 2 y 3 de la consola de administración.
 

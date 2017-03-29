@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 861e14227b847422d584d69364315a2418a986de
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 238c67c3edb843ef62deccb42cfa2879232e1434
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -30,8 +30,8 @@ ms.lasthandoff: 02/18/2017
 
 1. Inicie sesión en el portal de Azure.
 2. Elija **More Services** >  (Más servicios) **Other** >  (Otros) **Intune**.
-3. En la hoja **Intune**, elija **Configurar dispositivos**.
-1. En la hoja **Configurar dispositivo**, elija **Administrar** > **Perfiles**.
+3. En la hoja **Intune**, elija **Configuración del dispositivo**.
+1. En la hoja **Configuración del dispositivo**, elija **Administrar** > **Perfiles**.
 2. En la hoja de lista de perfiles, elija el perfil que quiere administrar y, luego, en la hoja <*nombre del perfil*> **Informes**, elija **Administrar** > **Asignaciones**.
 3. En la siguiente hoja, haga clic en **Seleccionar grupos** y, a continuación, en la hoja **Seleccionar grupos**, elija los grupos de Azure AD a los que quiere asignar el perfil. Para seleccionar varios, grupos, mantenga presionada la tecla **CTRL**.
 4. Cuando haya terminado, en la hoja **Seleccionar grupos**, elija **Seleccionar**.

@@ -1,11 +1,11 @@
 ---
-title: "Restablecer el código de acceso desde el sitio web del portal de empresa | Microsoft Docs"
+title: "Restablecimiento del código de acceso desde el sitio web del portal de empresa | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 03/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
 searchScope:
 - User help
 ROBOTS: 
-ms.reviewer: mamoriss
+ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: f293901d3865f0b10ed876e83b151cf59a046cba
-ms.openlocfilehash: 68725bb63ae2750e89a03c16027f8b4fd9111255
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
+ms.openlocfilehash: 1c3b986df3e0d8a5ee54da0a91f37b445b4dd9f7
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -48,23 +48,23 @@ Para restablecer el código de acceso:
 
   ![Mensaje emergente de restablecimiento del código de acceso con la advertencia sobre el restablecimiento del código de acceso del dispositivo y el cierre de la sesión del usuario. Los botones de entrada de usuario son Cerrar sesión y Cancelar.](./media/iwp-reset-passcode-popup.png)
 
-4.  Seleccione **Cerrar sesión** y aparecerá un último mensaje sobre la eliminación del código de acceso del dispositivo. Si no tiene el dispositivo a mano, no quite el código de acceso, ya que cualquiera que tenga acceso físico a él podría acceder a la mayor parte de la información que contiene, personal o corporativa.
+5.  Seleccione **Cerrar sesión** y aparecerá un último mensaje sobre la eliminación del código de acceso del dispositivo. Si no tiene el dispositivo a mano, no quite el código de acceso, ya que cualquiera que tenga acceso físico a él podría acceder a la mayor parte de la información que contiene, personal o corporativa.
 
   ![Segundo mensaje emergente de restablecimiento del código de acceso con la advertencia sobre el restablecimiento del código de acceso del dispositivo y la eliminación del código de acceso del dispositivo. También aconseja sobre cómo establecer un nuevo código de acceso desde los ajustes del dispositivo.](./media/iwp-reset-passcode-2nd-popup.png)
 
+  Los dispositivos diferentes tienen distintos tipos de códigos de acceso.
 
-Puesto que los distintos dispositivos tienen diferentes tipos de códigos de acceso, puede conocer cómo podría afectar el restablecimiento del código de acceso a un dispositivo concreto en la tabla siguiente. 
+  **Android**: quita el código de acceso existente y crea un código de acceso temporal con letras y números.
 
-    |Tipo de dispositivo|¿Qué ocurre al restablecer?|
-    |------------|-----------|
-    |Android|Quita el código de acceso existente y crea un código de acceso temporal con letras y números|
-    |iOS|Quita el código de acceso existente y no crea un código de acceso temporal. Si utiliza el escáner de huellas dactilares Touch ID para abrir el dispositivo o realizar compras, deberá configurarlo de nuevo.|
-    |Windows 10 Mobile|Quita el código de acceso existente y crea un código de acceso temporal con letras y números. Si utiliza el reconocimiento facial de Windows Hello para iniciar sesión, seguirá siendo compatible.|
-    |Windows Phone 8,1|Quita el código de acceso existente y crea un código de acceso temporal con números.|
+  **iOS**: quita el código de acceso existente y no crea un código de acceso temporal. Si utiliza el escáner de huellas dactilares Touch ID para abrir el dispositivo o realizar compras, deberá configurarlo de nuevo.
 
-    5.  Desbloquee el dispositivo y establezca un código de acceso nuevo, o bien cambie el código de acceso temporal en **Configuración** en el dispositivo.
+  **Windows 10 Mobile**: quita el código de acceso existente y crea un código de acceso temporal con letras y números. Si utiliza el reconocimiento facial de Windows Hello para iniciar sesión, seguirá siendo compatible.
+    
+  **Windows Phone 8.1**: elimina el código de acceso existente y crea un código de acceso temporal con números.
 
-    Para ver una notificación que confirme que la contraseña se restableció correctamente, haga clic en la marca de notificación en la parte superior derecha del sitio del portal de empresa.
+6.  Desbloquee el dispositivo y establezca un código de acceso nuevo, o bien cambie el código de acceso temporal en **Configuración** en el dispositivo.
+
+Para ver una notificación que confirme que la contraseña se restableció correctamente, haga clic en la marca de notificación en la parte superior derecha del sitio del portal de empresa.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
 
