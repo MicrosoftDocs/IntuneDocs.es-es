@@ -570,7 +570,7 @@ Antes de probar manualmente la aplicación habilitada para MAM con Microsoft Int
 
 3. En Root.plist (que se encuentra en Settings.bundle), agregue una preferencia con `Type` = `Child Pane` y `FileName` = `MAMDebugSettings`.
 
-4. En **Configuración** > ** SuNombreDeAplicación**, active **Enable Test Policies** (Habilitar directivas de prueba).
+4. En **Configuración** > **SuNombreDeAplicación**, active **Enable Test Policies** (Habilitar directivas de prueba).
 
 5. Inicie la aplicación (ya sea dentro o fuera de Xcode).
 
@@ -579,7 +579,7 @@ Antes de probar manualmente la aplicación habilitada para MAM con Microsoft Int
 7. Inicie la aplicación (ya sea dentro o fuera de Xcode). Compruebe que el PIN funciona según lo previsto.
 
 > [!NOTE]
-> Ahora puede usar **Configuración** > ** SuNombreDeAplicación** > **Enable Test Policies** (Habilitar directivas de prueba) para habilitar y activar o desactivar la configuración.
+> Ahora puede usar **Configuración** > **SuNombreDeAplicación** > **Enable Test Policies** (Habilitar directivas de prueba) para habilitar y activar o desactivar la configuración.
 
 ## <a name="ios-best-practices"></a>Prácticas recomendadas de iOS
 
