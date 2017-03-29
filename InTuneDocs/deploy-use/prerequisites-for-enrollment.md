@@ -34,7 +34,7 @@ Para permitir que los empleados inscriban sus dispositivos móviles con Intune, 
 |**Paso 2:** [Configurar la entidad de MDM](#step-2-set-mdm-authority)|La entidad de administración de dispositivos móviles define el servicio asignado a los dispositivos.|
 |**Paso 3:** [Crear grupos](#step-3-create-groups)|Configure las opciones orientadas al usuario de la aplicación de portal de empresa.|  
 |**Paso 4:** [ Configurar el portal de empresa](#step-4-configure-company-portal)|Configure las opciones orientadas al usuario de la aplicación de portal de empresa.|  
-|**Paso 5: ** [Asignar licencias de usuario](#step-5-assign-user-licenses)|Asigne licencias de Intune a los usuarios para que puedan inscribir dispositivos.|
+|**Paso 5:** [Asignar licencias de usuario](#step-5-assign-user-licenses)|Asigne licencias de Intune a los usuarios para que puedan inscribir dispositivos.|
 |**Paso 6:** [Habilitar la inscripción](#step-6-enable-enrollment)|Habilite la configuración específica de la plataforma para la administración de iOS y Windows. Los dispositivos Android no necesitan ninguna configuración adicional.|
 |**Paso 7:** [Pasos siguientes](#step-7-next-steps)|Habilite la configuración específica de la plataforma para la administración de iOS y Windows. Los dispositivos Android no necesitan ninguna configuración adicional.|
 
