@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/23/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ searchScope:
 ROBOTS: 
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: 6157cef87c5cdad6d0e293946321fa8bdf18e61a
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: 62e37d42aef9a828551db1fbbcf5e3cb1b3eeec9
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -31,24 +31,23 @@ Antes de que tenga acceso a su trabajo, su administrador de TI necesita que inst
 
 1.    Si ve el siguiente mensaje, pulse **Instalar** para permitir que Lookout for Work se instale en su dispositivo.
 
-    ![Pulse Instalar para instalar Lookout for Work.](./media/ios-lfw-install-app-request.png)
+  ![Pulse Instalar para instalar Lookout for Work.](./media/ios-mtd-install-app-request.png)
 
 2. Cuando vea el siguiente mensaje, pulse **Configuración**, active **Servicios de ubicación** y, después, pulse **Continuar**.
 
-    ![Pulse Configuración y, después, Servicios de ubicación.](./media/ios-lfw-allow-location-services.png)
+  ![Pulse Configuración y, después, Servicios de ubicación.](./media/ios-lfw-allow-location-services.png)
 
 3. Revise los permisos que necesita Lookout for Work y pulse **Continuar**.
 
-    ![ahora está conectado a Lookout for Work](./media/ios-lfw-permissions-lookout-needs.png)
+  ![ahora está conectado a Lookout for Work](./media/ios-lfw-permissions-lookout-needs.png)
 
 4. En el mensaje que le solicita que permita que Lookout for Work le envíe notificaciones, pulse **Permitir**.
 
-    ![Pulse Configuración y, después, Servicios de ubicación.](./media/ios-lfw-allow-notifications.png)
-
+  ![Pulse Configuración y, después, Servicios de ubicación.](./media/ios-lfw-allow-notifications.png)
 
 Una vez que Lookout for Work finaliza la instalación, verá la siguiente pantalla si no se ha encontrado ninguna amenaza de seguridad en el dispositivo.
 
-![Lookout for Work no ha encontrado amenazas de seguridad](./media/ios-lfw-no-threats-found.png)
+  ![Lookout for Work no ha encontrado amenazas de seguridad](./media/ios-lfw-no-threats-found.png)
 
 Si Lookout for Work encuentra una amenaza de seguridad en su dispositivo, verá instrucciones sobre cómo solucionar el problema.
 
