@@ -2,8 +2,8 @@
 title: "Aplicaciones iOS con directivas de protección de aplicaciones | Microsoft Docs"
 description: "En este tema se describe qué esperar cuando la aplicación iOS está administrada por directivas de protección de aplicaciones."
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 03/06/2017
 ms.topic: article
