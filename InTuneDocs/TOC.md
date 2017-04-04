@@ -11,7 +11,7 @@
 
 
 # [Introducción](get-started/get-started.md)
-## [Configuración de Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
+## [Configurar Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
 ### [Requisitos previos]
 #### [Dispositivos compatibles](get-started/what-to-know-before-you-start-microsoft-intune.md)
 #### [Uso de red](get-started/network-bandwidth-use.md)
