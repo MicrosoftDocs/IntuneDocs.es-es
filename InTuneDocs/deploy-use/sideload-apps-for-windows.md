@@ -154,7 +154,8 @@ Puede implementar manualmente la aplicación del Portal de empresa para Windows 
 2. Cuando haya adquirido la aplicación, selecciónela en la página **Inventario**.  
 3. Seleccione **Windows 10 all devices** (Todos los dispositivos Windows 10) como la **plataforma**, luego, la **arquitectura** correspondiente y, finalmente, haga clic en Descargar. No se necesita un archivo de licencia de la aplicación para esta aplicación.
 ![Imagen de Windows 10 all devices (Todos los dispositivos Windows 10) y los detalles del paquete de la arquitectura x86 para su descarga](../media/Win10CP-all-devices.png)
-4. Descargue todos los paquetes en "Marcos necesarios". Debe hacerse para las arquitecturas x86, x64 y ARM, lo que produce un total de 9 paquetes, tal como se muestra a continuación.  
+4. Descargue todos los paquetes en "Marcos necesarios". Debe hacerse para las arquitecturas x86, x64 y ARM, lo que produce un total de 9 paquetes, tal como se muestra a continuación.
+
 ![Imagen de los archivos de dependencia para descargar ](../media/Win10CP-dependent-files.png)
 5. Antes de cargar la aplicación del Portal de empresa en Intune, cree una carpeta (por ejemplo, C:&#92;Company Portal) con los paquetes estructurados de la manera siguiente:
   1. Colocar el paquete del Portal de empresa en C:\Company Portal. Cree también una subcarpeta Dependencias en esta ubicación.  
