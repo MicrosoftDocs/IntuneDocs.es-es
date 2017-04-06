@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: adb2fd27d7f2b3f0ef4dce6b26fcb20d74b69a00
-ms.openlocfilehash: f099fdf942795b128fe46f9bd1d82432d89f6f75
-ms.lasthandoff: 02/04/2017
+ms.sourcegitcommit: a4b6d8b0a63d707631e3f0e231b2e9b40f2609cf
+ms.openlocfilehash: 1d8109fca8170ad127f6377918d7c0313ba26d78
+ms.lasthandoff: 03/24/2017
 
 
 ---
@@ -32,7 +32,7 @@ Las organizaciones pueden usar Intune para administrar un gran número de dispos
 Los usuarios deben existir en Azure Portal para agregarlos como administradores de inscripción de dispositivos. Para lograr una seguridad óptima, el usuario DEM no debería ser también un administrador de Intune.
 
 >[!NOTE]
->No se puede usar el método de inscripción de DEM con el [Asistente de configuración de Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md), el [método de inscripción directa](ios-direct-enrollment-in-microsoft-intune.md) ni el [método de inscripción de DEP](ios-device-enrollment-program-in-microsoft-intune.md). 
+>No se puede usar el método de inscripción de DEM con el [Asistente de configuración de Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md), el [método de inscripción directa](ios-direct-enrollment-in-microsoft-intune.md) ni el [método de inscripción de DEP](ios-device-enrollment-program-in-microsoft-intune.md).
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Ejemplo de escenario de administrador de inscripción de dispositivos
 
@@ -42,9 +42,9 @@ Solo los usuarios de la consola Intune pueden ser administradores de inscripció
 
 El usuario DEM puede:
 
--   Inscribir hasta 1000 dispositivos en Intune.
--   Iniciar sesión en el portal de empresa para obtener aplicaciones de empresa.
--   Configure el acceso a datos de la empresa mediante la implementación de aplicaciones específicas del rol a las tabletas.
+-   Inscribir hasta 1000 dispositivos en Intune
+-   Usar la aplicación Portal de empresa para obtener aplicaciones de empresa
+-   Configurar el acceso a los datos de la empresa implementando aplicaciones específicas del rol en las tabletas
 
 ## <a name="limitations-of-devices-that-are-enrolled-with-a-dem-account"></a>Limitaciones de los dispositivos que están inscritos con una cuenta DEM
 
@@ -57,9 +57,9 @@ Los dispositivos inscritos con una cuenta de administrador de inscripción de di
   - El usuario DEM no puede anular la inscripción de dispositivos inscritos de DEM en el propio dispositivo mediante el Portal de empresa. El administrador de Intune tiene esta capacidad, pero el usuario DEM no.
 
   - Solo el dispositivo local aparece en el sitio web o en la aplicación de Portal de empresa.
- 
+
   - Los usuarios no pueden usar aplicaciones del Programa de Compras por Volumen de Apple (PCV) debido a los requisitos de identificador de Apple por usuario para la administración de aplicaciones.
- 
+
   - (solo iOS) Si utiliza DEM para inscribir dispositivos iOS, no puede utilizar Apple Configurator o el Programa de Compras por Volumen de Apple (PCV) para inscribir dispositivos.
 
 > [!NOTE]
@@ -77,7 +77,7 @@ Los dispositivos inscritos con una cuenta de administrador de inscripción de di
 
 4.  Elija **Agregar...**. Se abre el cuadro de diálogo **Agregar administrador de inscripción de dispositivos** .
 
-5.  Escriba el **Id. de usuario** de la cuenta de Intune y, después, elija **Aceptar**. 
+5.  Escriba el **Id. de usuario** de la cuenta de Intune y, después, elija **Aceptar**.
 
     El usuario DEM puede ahora inscribir dispositivos móviles mediante el mismo procedimiento que un usuario final usa para un escenario de BYOD en el portal de empresa. El usuario final de administrador puede instalar la aplicación de Portal de empresa e inscribir el dispositivo utilizando sus credenciales DEM en hasta 1000 dispositivos. Para los pasos de inscripción del usuario final para cada plataforma, consulte:
 

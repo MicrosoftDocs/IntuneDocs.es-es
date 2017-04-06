@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,9 +17,9 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
-ms.openlocfilehash: b80ced5cbaee26dfe8cb4b2f5e46d93af9733788
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: 1d0284ca2b5fd935a8657e3dd73d23d45071fd50
+ms.openlocfilehash: 126fce43ea91d5ec9e447d731e4e9ab5663df956
+ms.lasthandoff: 03/25/2017
 
 
 ---
@@ -29,7 +29,7 @@ ms.lasthandoff: 03/13/2017
 A veces pueden producirse problemas en el dispositivo Android que se pueden corregir mediante la solución de problemas. A continuación se enumeran algunos problemas comunes que puede intentar resolver primero por su cuenta. Para problemas más complejos, se recomienda ponerse en contacto con el administrador de TI mediante su información de contacto en el [sitio web del Portal de empresa](http://portal.manage.microsoft.com).
 
 - [Comprobar el cumplimiento en el dispositivo Android](check-compliance-on-your-device-android.md)
-- [Usar Registro detallado para ayudar al administrador de TI a solucionar los problemas del dispositivo](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
+- [Usar el registro detallado para ayudar al administrador de TI a solucionar los problemas del dispositivo](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 - [Enviar registros al administrador de TI mediante correo electrónico](send-logs-to-your-it-admin-by-email-android.md)
 - [Enviar registros al administrador de TI mediante un cable USB](send-logs-to-your-it-admin-using-cable-android.md)
 - [Enviar errores de inscripción al administrador de TI](send-enrollment-errors-to-your-it-admin-android.md)
@@ -41,6 +41,6 @@ A veces pueden producirse problemas en el dispositivo Android que se pueden corr
 - [Tiene que desactivar la depuración USB](you-need-to-turn-off-usb-debugging-android.md)
 - [Tiene que activar la búsqueda de amenazas de seguridad](you-need-to-turn-on-scanning-for-security-threats-android.md)
 - [El dispositivo no tiene la revisión de seguridad mínima](you-need-to-update-your-device-OS-security-patch-android.md)
-- [Se le pide instalar Lookout for Work en un dispositivo Android](you-are-prompted-to-install-lookout-for-work-android.md)
-- [Debe solucionar una amenaza detectada por Lookout for Work en el dispositivo Android](you-need-to-resolve-a-threat-found-by-lookout-for-work-android.md)
+- [Se le pide que instale una aplicación de protección contra amenazas de dispositivo en el dispositivo Android](you-are-prompted-to-install-mtd-android.md)
+- [Tiene que solucionar una amenaza detectada por una aplicación de protección contra amenazas de dispositivo en el dispositivo Android](you-need-to-resolve-a-threat-found-by-mtd-android.md)
 

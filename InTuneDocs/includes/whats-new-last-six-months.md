@@ -5,9 +5,6 @@
 ### <a name="modernizing-the-company-portal-website---753980--"></a>Renovación del sitio web del portal de empresa<!--753980-->
 El sitio web del portal de empresa admitirá aplicaciones destinadas a aquellos usuarios que no tienen dispositivos administrados. El sitio web se alineará con otros productos y servicios de Microsoft mediante una nueva combinación de colores de contraste, ilustraciones dinámicas y un "menú hamburguesa", ![pequeña imagen del menú hamburguesa que se agrega ahora a la esquina superior izquierda del sitio web del portal de empresa](/intune/whats-new/media/CP_hamburger_menu.png) que contendrá los detalles de contacto del departamento de soporte técnico e información sobre los dispositivos administrados existentes. La página de inicio se reorganizará para destacar las aplicaciones que están disponibles para los usuarios, con carruseles para aplicaciones destacadas y actualizadas recientemente. Puede encontrar imágenes de antes y después disponibles en la [página de actualizaciones de la interfaz de usuario](https://docs.microsoft.com/intune/whats-new/whats-new-in-intune-app-ui).
 
-### <a name="new-guided-experience-for-windows-10-company-portal---713927--"></a>Nueva experiencia guiada del Portal de empresa de Windows 10<!--713927-->
-A partir de marzo, el Portal de empresa para Windows 10 incluirá la experiencia de un tutorial de Intune guiado para dispositivos que no se han identificado ni inscrito. La nueva experiencia proporciona instrucciones paso a paso, personalizadas para la compilación de Windows 10 del usuario, que guían a los usuarios por la realización del registro en AAD (necesario para la identificación de las características de acceso condicional) y la inscripción de MDM (necesaria para características de administración de dispositivos). La experiencia guiada será accesible desde la página principal del Portal de empresa y es opcional; los usuarios pueden seguir usando la aplicación aunque no realicen la inscripción ni el registro, pero puede que experimenten funcionalidad limitada.
-
 ## <a name="notices"></a>Notificaciones
 
 ### <a name="group-migration-will-not-require-any-updates-to-groups-or-policies-for-ios-devices---898837--"></a>La migración de grupo no requiere actualizaciones a grupos ni directivas para dispositivos iOS <!--898837-->
@@ -56,14 +53,8 @@ Puede encontrar las novedades en la vista previa de Intune en Azure [aquí](http
 
 ### <a name="new-capabilities"></a>Nuevas funcionalidades
 
-<!--### Actions for non-compliance <!--730266
-_Actions for non-compliance_ is a new feature of compliance policies that lets you take action on devices that are out of compliance. You can specify single or multiple actions and specify the time period at which those actions must occur. For example, you can notify users of non-compliant devices immediately after the devices become non-compliant through email, or you can block non-compliant devices from accessing corporate resources after a 3-day grace period via Conditional Access.-->
-
 #### <a name="in-console-reports-for-mam-without-enrollment---677961--"></a>Informes en la consola para MAM sin inscripción <!--677961-->
 Se han agregado nuevos informes de protección de aplicaciones para los dispositivos inscritos y no inscritos. Obtenga más información sobre cómo puede [supervisar directivas de administración de aplicaciones móviles con Microsoft Intune aquí](https://docs.microsoft.com/intune/deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune).
-
-<!--### Conditional access for MAM with SharePoint Online <!--679339
-You can block apps that are not supported by Intune mobile app management (MAM) policies from accessing SharePoint Online.  You can get started using Intune mobile app management in the Azure portal. Look for the __Conditional Access__ section in the __Settings__ blade which will include the option for SharePoint Online. This feature will ship separately from the rest of the service release. <!--Find out more about this new feature [here](https://docs.microsoft.com/intune/deploy-use/mam-ca-for-sharepoint-online).-->
 
 #### <a name="android-711-support---694397--"></a>Compatibilidad con Android 7.1.1 <!--694397-->
 Ahora, Intune admite y administra completamente Android 7.1.1.
@@ -157,34 +148,12 @@ __Las aplicaciones AV Player, Image Viewer y PDF Viewer de Intune ya no son comp
 
 ### <a name="new-capabilities"></a>Nuevas funcionalidades
 
-<!--### View App States for All Platforms in Real Time
-App installation status is now shown in real-time in the console. When you previously deployed an app, you had to wait for a targeted device to report back before the app install status was displayed in the Intune console.
-
-### Streamline iOS App Management for your End Users
-Intune can now automatically take over management of the previously installed app and no end user action is required.
-
-Previously, if the end user of an enrolled iOS device installed an app from the App Store before you deployed that same app with a deployment action of __Available__, then the end user had to:
-
-1. Open the __Company Portal__.
-2. Select the app.
-3. Tap __Install__ to enable Intune to take over management of the app.-->
-
 __Nuevo portal de empresa de Microsoft Intune disponible para los dispositivos Windows 10__ Microsoft ha lanzado una nueva aplicación de portal de empresa de [Microsoft Intune para los dispositivos Windows 10](https://www.microsoft.com/store/apps/9wzdncrfj3pz). Esta aplicación, que aprovecha el nuevo formato de Windows 10 Universal, proporcionará al usuario una experiencia de usuario actualizada dentro de la aplicación y experiencias idénticas en todos los dispositivos Windows 10, PC y móvil, mientras sigue permitiendo las mismas funcionalidades que usa hoy en día.
 
 La nueva aplicación también permitirá a los usuarios aprovechar características de plataforma adicional como el inicio de sesión único (SSO) y la autenticación basada en certificados en dispositivos Windows 10. La aplicación estará disponible como una actualización del portal de empresa de Windows 8.1 existente y este se instala desde la Tienda Windows. Para más información, vaya a [aka.ms/intunecp_universalapp](http://aka.ms/intunecp_universalapp).
 
-<!--### Support for Windows Store for Business Apps Being Deployed as Available
-You can now deploy apps you synchronized from the Windows Store for Business (WSfB) with a deployment action of __Available__ or __Required__. After syncing WSfB apps into Intune, administrators will be able to target those apps as available installs to groups of users. End users will see the deployed WSfB apps as available for install in the Universal Company Portal, where they can choose whether they would like to acquire the apps.
-
-### Conditional Access for MAM with SharePoint Online
-
-You can block apps that are not supported by Intune mobile app management (MAM) policies from accessing SharePoint online.  You can get started in Intune mobile app management via the Azure portal. Look for the  Conditional Access section in the “Settings” blade which now includes the option for SharePoint online.-->
-
 > [!IMPORTANT]
-
-> __Actualización de Intune y Android for Work__
-
-> Aunque se pueden implementar aplicaciones Android for Work con una acción __Requerido__, solo se pueden implementar aplicaciones como __Disponible__ si los grupos de Intune se han migrado a la nueva experiencia de grupos de Azure AD.
+> __Actualización de Intune y Android for Work__ Aunque se pueden implementar aplicaciones de Android for Work con una acción __Requerido__, solo puede implementar aplicaciones como __Disponible__ si los grupos de Intune se han migrado a la nueva experiencia de grupos de Azure AD.
 
 __El complemento Cordova del SDK para aplicaciones de Intune ahora admite MAM sin inscripción__Los desarrolladores de aplicaciones ahora pueden usar el complemento Cordova del SDK para aplicaciones de Intune para habilitar la funcionalidad MAM sin inscribir el dispositivo en sus aplicaciones de Cordova para Android e iOS. El complemento Cordova del SDK para aplicaciones de Intune se puede encontrar [aquí](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam).
 
@@ -214,15 +183,12 @@ Ahora puede crear directivas de acceso condicional a través de la consola de ad
 
 Intune ahora forma parte del programa de Android for Work (AfW). Comenzaremos este mes por implementar la compatibilidad con las características de AfW y continuaremos en los próximos meses. Tenga en cuenta que la implementación de aplicaciones disponibles de AfW aprovecha la nueva experiencia de agrupación y selección de destino. Las cuentas de servicio de Intune aprovisionadas recientemente podrán usar esta característica cuando AfW esté disponible para ellas.
 
-<!--Existing Intune customers can use this feature in production once their tenant has been migrated. Existing customers are welcome to create a trial Intune account to plan for and test this feature until their tenant has been migrated. -->
-
 [Lea el anuncio de Microsoft sobre la compatibilidad de Intune con Android for Work](https://blogs.technet.microsoft.com/enterprisemobility/2016/09/12/microsoft-intune-support-for-android-for-work/).
 
 Los temas de Intune siguientes son nuevos o actualizados con la información de Android for Work:
 
 Para profesionales de TI:
 - [Configurar Android for Work](/intune/deploy-use/set-up-android-for-work)
-<!--- [Nathan Bigman's resource access topics]()-->
 - [Restringir el acceso de correo electrónico a Exchange Online y nuevo Exchange Online dedicado](/intune/deploy-use/restrict-access-to-exchange-online-with-microsoft-intune)
 - [Restringir el acceso de correo electrónico a Exchange local y Exchange Online dedicado heredado con Intune](/intune/deploy-use/restrict-access-to-exchange-onpremises-with-microsoft-intune)
 - [Configuración de directivas de cumplimiento para dispositivos Android for Work](/intune/deploy-use/afw-compliance-policy-settings-in-microsoft-intune)
@@ -239,11 +205,6 @@ En octubre, Microsoft se está integrando en la solución de protección de amen
 
 A los usuarios finales de los dispositivos iOS no compatibles se les solicitará que se inscriban; necesitarán instalar la aplicación Lookout for Work en sus dispositivos, activar la aplicación y corregir las amenazas que se mencionan en la aplicación Lookout for Work para obtener acceso a los datos de la empresa. Obtenga información sobre cómo [Configurar e implementar aplicaciones Lookout for Work](/intune/deploy-use/configure-and-deploy-lookout-for-work-apps).
 <!--TFS 1319493-->
-
-<!--### New Microsoft Intune Company Portal available for Windows 10 devices
-Microsoft is releasing a new [Microsoft Intune Company Portal for Windows 10 devices](https://go.microsoft.com/fwlink/?linkid=830663). This app, which leverages the new Windows 10 Universal format, will provide the user with an updated user experience within the app and identical experiences across all Windows 10 devices, PC and Mobile alike, while still enabling all the same functionality that they are using today.
-
-The new app will also allow users to leverage additional platform features like single sign-on (SSO) and certificate-based authentication on Windows 10 devices. The app will be made available as an upgrade to the existing Windows 8.1 Company Portal and Windows Phone 8.1 Company Portal installs from the Windows Store.-->
 
 ### <a name="intune-app-wrapping-tool-for-android"></a>Herramienta de ajuste de aplicaciones Intune para Android
 Puede habilitar las aplicaciones para que usen directivas de administración de aplicaciones móviles (MAM) de Intune mediante la herramienta de ajuste de aplicaciones de Intune. La compatibilidad con directivas MAM de Intune sin requerir la inscripción de dispositivos ya está disponible.
@@ -368,7 +329,6 @@ Hemos agregado un nuevo [tema de glosario](https://docs.microsoft.com/intune/und
 
 ## <a name="august-2016"></a>Agosto de 2016
 ### <a name="app-management"></a>Administración de aplicaciones
-<!---@Barry, I created the buckets of App management, Device management, etc but am not tied to them. Just wanted to break up and organize the feature list. If you're going to take over the Company Portal section, please talk to Stacie about how she's been organizing it. --->
 
 __Aplicaciones ocultas y visibles para iOS 9.3__ En dispositivos con iOS 9.3 o versiones posteriores, puede usar la lista de aplicaciones ocultas y visibles de la directiva de configuración general de iOS para:
 - Especificar una lista de las aplicaciones ocultas para los usuarios. Los usuarios no pueden ver ni iniciar estas aplicaciones.
@@ -388,9 +348,6 @@ __Nuevas aplicaciones compatibles con las directivas de administración de aplic
 
 Para ver una lista completa de aplicaciones compatibles con MAM, consulte el sitio de los [asociados de aplicaciones de Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners).
 <!--- TFS 1252335 & 1252336 checked--->
-
-
-<!--- I started putting TFS numbers in the What's Coming topic and found it helpful when updating the What's New. Up to you if you want to continue. --->
 
 __Aplicaciones de visor de Intune__ Con el lanzamiento de la nueva aplicación RMS sharing, quitaremos las siguientes aplicaciones de visor de Intune a partir de agosto de 2016:
 - Visor de AV de Intune
@@ -438,7 +395,7 @@ Además de los cambios en la administración de grupos, **la siguiente funcional
 __Adición de "Notificaciones" al portal de empresa para Android__ Vamos a lanzar una actualización en el portal de empresa para Android en septiembre que presentará un nuevo icono de **Notificaciones** en la página principal. Pulse este icono para acceder a la página **Notificaciones** que mostrará al usuario final todos los elementos que requieren atención en la aplicación Portal de empresa, como no cumplimiento de dispositivos, actualización de inscripciones y activación de inscripciones. Si también usa la aplicación de Portal de la compañía de iOS, ya verá la experiencia de notificaciones. Con la introducción de la página **Notificaciones**, no verá la página **Configuración de acceso a la empresa** cada vez que inicia o reanuda el Portal de empresa para Android, siempre que el dispositivo ya esté inscrito. Tenemos conocimiento de que muchos usuarios han creado una guía para el usuario final y agradecemos que nos avisen por adelantado cuando la guía y las capturas de pantalla necesiten actualizarse. Actualice la documentación para reflejar el próximo cambio en la experiencia. Busque las capturas de pantalla actualizadas en https://aka.ms/androidcpupdate.  
 
 ### <a name="service-deprecation"></a>Degradación del servicio
-<!---@Barry, we started listing service deprecations earlier this summer. --->
+
 - **Cambios en la compatibilidad de la aplicación de portal de empresa de iOS**<br/>
 En septiembre, todos los usuarios de la aplicación Portal de empresa de Microsoft Intune para iOS deberán usar la versión más reciente. Los nuevos usuarios solo podrán descargar la versión más reciente y se pedirá a los usuarios actuales que la actualicen. La versión más reciente requiere iOS 8.0 o posterior, de modo que los dispositivos que ejecuten versiones anteriores de iOS no podrán usar el portal de empresa ni inscribirse hasta que se actualicen a iOS 8.0 o posterior y, luego, se actualice la aplicación de portal de empresa a la versión más reciente. Los dispositivos inscritos que ejecuten versiones anteriores a iOS 8.0 seguirán administrándose y apareciendo en la consola de administración de Intune.  
 
@@ -449,19 +406,3 @@ En agosto, Intune publicará una aplicación Microsoft Intune Managed Browser ac
 - **Las aplicaciones de portal de empresa para Windows 8 y Windows Phone 8 se dejarán de usar a partir de septiembre de 2016** <br/>
 A partir de septiembre de 2016, Microsoft Intune dejará de proporcionar soporte para las aplicaciones de Portal de empresa de Microsoft Intune para las plataformas Windows Phone 8 y Windows 8. Actualice los dispositivos a Windows 8.1 y Windows Phone 8.1 y use las aplicaciones de portal de empresa de Windows 8.1 y Windows Phone 8.1 correspondientes para poder seguir con la distribución de aplicaciones en estos dispositivos.
 <!---TFS 1255391--->
-
-<!--- - **Custom Group Targeting of Notification Rules Removal.**<br/>
-Intune notification rules define who an email alert will be sent to from Intune. Currently, you can configure notification rules to send emails to all users of devices in an Intune device group that you created. From around June 1st 2016 moving forward, targeting user-created groups will no longer be supported.
-
-    Today, to target a notification rule to a group you created from the Microsoft Intune administration console, you would take the following steps:
-
-    In the **Admin** workspace, click **Notification Rules** > **Create New Rule**
-
-    In step two of the Create Notification Rule Wizard, select the device groups which the rule will target. This step, “select device groups”, is being removed from the Intune Console.
-
-    The preliminary timeline for this change is as follows:
-    - In August, 2016, new tenants will not see step two of the Create Notification Rule Wizard. Exiting tenants are unaffected.
-    - Around September, 2016, some existing tenants will not see the “select device groups” in the wizard.
-    - Around November, 2016, we expect that all tenants will not see the “select device groups” in the wizard.
-
---->

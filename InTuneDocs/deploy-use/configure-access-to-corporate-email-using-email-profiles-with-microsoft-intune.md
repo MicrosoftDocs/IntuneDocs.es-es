@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/24/2017
+ms.date: 03/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 832c7dd8016bb30a24cc1748f84e5692130cb658
-ms.openlocfilehash: a37f217d3ce3c87b9aa673a8a7fc93ad390c6a68
-ms.lasthandoff: 03/23/2017
+ms.sourcegitcommit: c473a1f05b0a7b0ce5205598b2b9a9b86bfe6c1d
+ms.openlocfilehash: f76b65ad97771d6b40c4e3bff75a19fd1f922eea
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -53,7 +53,7 @@ Si el usuario ha instalado un perfil de correo electrónico antes de la configur
 
 Como Samsung KNOX no usa el nombre de host para identificar el perfil, recomendamos que no cree varios perfiles de correo electrónico para usarlos en la misma dirección de correo electrónico en diferentes hosts, ya que estos se sobrescriben entre sí.
 
-**Android for Work**<br>Intune proporciona dos perfiles de correo electrónico de Android for Work, uno para cada una de las aplicaciones de correo electrónico de Gmail y de Nine Work. Estas aplicaciones están disponibles en Google Play Store, instalan el perfil de trabajo del dispositivo y admiten conexiones a Exchange. Para habilitar la conectividad de correo electrónico, implemente una de estas aplicaciones de correo electrónico en los dispositivos de los usuarios y, después, cree e implemente el perfil adecuado. Es posible que aplicaciones de correo electrónico como Nine Work no sean gratuitas. Revise los detalles de la licencia de la aplicación o póngase en contacto con la empresa de la aplicación si tiene alguna pregunta.
+**Android for Work**<br>Intune proporciona dos perfiles de correo electrónico de Android for Work, uno para cada una de las aplicaciones de correo electrónico de Gmail y de Nine Work. Estas aplicaciones están disponibles en Google Play Store e instalan el perfil de trabajo del dispositivo para que no se generen perfiles duplicados. Ambas aplicaciones admiten conexiones a Exchange. Para habilitar la conectividad de correo electrónico, implemente una de estas aplicaciones de correo en los dispositivos de los usuarios y, después, cree e implemente el perfil de correo electrónico adecuado. Es posible que aplicaciones de correo electrónico como Nine Work no sean gratuitas. Revise los detalles de la licencia de la aplicación o póngase en contacto con la empresa de la aplicación si tiene alguna pregunta.
 
 ## <a name="secure-email-profiles"></a>Proteger los perfiles de correo electrónico
 Los perfiles de correo electrónico se pueden proteger mediante un certificado o una contraseña.
