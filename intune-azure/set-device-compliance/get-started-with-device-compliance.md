@@ -16,9 +16,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: a3e3d4968623f29e320f1fcca8243c861c7caab4
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
+ms.openlocfilehash: 0c0d2f73e48864caabdec6e83c2fdf58db5a0630
+ms.lasthandoff: 03/10/2017
 
 
 ---
@@ -28,19 +28,20 @@ ms.lasthandoff: 02/18/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-En este tema, aprenderá lo que necesita antes de comenzar a crear una directiva de cumplimiento de dispositivo, y tendrá una idea rápida de lo que puede ver y hacer en el portal de Azure. Si el cumplimiento de dispositivos no le resulta familiar, puede leer este tema para saber lo que es y cómo usarlo en su empresa.
+En este tema, aprenderá lo siguiente: 
+
+- Lo que necesita antes de poder empezar a crear una directiva de cumplimiento de dispositivos.
+- Una vista rápida de lo que puede ver y hacer en el portal de la versión preliminar de Intune Azure. 
+
+Si el cumplimiento de dispositivos no le resulta familiar, puede leer [este tema](https://docs.microsoft.com/intune-azure/set-device-compliance/what-is-device-compliance) para saber lo que es y cómo podría usarla en su organización.
 
 ##  <a name="pre-requisites"></a>Requisitos previos
-
 
 -   Una suscripción a Intune
 
 -   Una suscripción a Azure Active Directory.
 
-
-
 ##  <a name="supported-platforms"></a>Plataformas compatibles:
-
 
 -   Android
 
@@ -54,8 +55,7 @@ En este tema, aprenderá lo que necesita antes de comenzar a crear una directiva
 
 ##  <a name="azure-portal-workflow"></a>Flujo de trabajo del portal de Azure
 
-
-Esta es una visión general de cómo puede crear y administrar el cumplimiento de dispositivos en el portal de Azure.
+Esta es una visión general de cómo puede crear y administrar el cumplimiento de dispositivos en el portal de la versión preliminar de Intune Azure.
 
 <!---### Overview
 

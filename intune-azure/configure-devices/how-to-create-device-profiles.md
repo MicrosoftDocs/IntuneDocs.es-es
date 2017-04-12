@@ -1,11 +1,12 @@
 ---
-title: "Creación de perfiles de configuración de dispositivo de Intune | Versión preliminar de Intune Azure | Microsoft Docs"
+title: "Creación de perfiles de configuración de dispositivo de Intune | Versión preliminar de Azure de Intune"
+titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: aprenda a crear perfiles de configuración de dispositivo de Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 908169c47d9eaa583c775c8ed06acea233040e50
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 17c5649e7ece5becd17e8ef9a74d748b6202693f
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -37,6 +39,7 @@ ms.lasthandoff: 02/16/2017
     - **Plataforma**: seleccione el tipo de plataforma para el perfil que quiere crear.
     - **Tipo de perfil**: seleccione el tipo de perfil que quiere crear. La lista de tipos disponibles variará dependiendo de la plataforma que eligiera.
     - **Configuración**: consulte los siguientes temas para información sobre la configuración de cada tipo de perfil:
+        -  [Configuración de características de dispositivo](/intune-azure/configure-devices/how-to-configure-device-features)
         -  [Configuración de restricciones de dispositivo](/intune-azure/configure-devices/how-to-configure-device-restrictions)
         -  [Configuración de correo electrónico](/intune-azure/configure-devices/how-to-configure-email-settings)
         -  [Configuración de VPN](/intune-azure/configure-devices/how-to-configure-vpn-settings)
@@ -44,7 +47,7 @@ ms.lasthandoff: 02/16/2017
         -  [Configuración de actualización de la edición de Windows 10](/intune-azure/configure-devices/how-to-configure-windows-10-edition-upgrade)
         -  [Configuración de certificados](/intune-azure/configure-devices/how-to-configure-certificates)
         -  [Configuración de Windows Information Protection](/intune-azure/configure-devices/how-to-configure-windows-information-protection)
-        -  [Configuración de educación](/intune-azure/configure-devices/education-settings-for-ios.md)
+        -  [Configuración de educación](/intune-azure/configure-devices/how-to-configure-education-settings)
         -  [Configuración personalizada](/intune-azure/configure-devices/how-to-configure-custom-settings)
 
     ![Creación del perfil de dispositivo](./media/create-device-profile.png)

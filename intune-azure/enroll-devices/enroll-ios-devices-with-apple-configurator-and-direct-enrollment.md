@@ -3,8 +3,8 @@ title: "Inscripción de dispositivos iOS con Apple Configurator e inscripción d
 titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: aprenda a usar Apple Configurator para inscribir dispositivos iOS corporativos con inscripción directa."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

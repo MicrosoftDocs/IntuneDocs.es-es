@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/21/2017
+ms.date: 03/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 2ed76d2905042f299022f1625ce7215c6834ad3f
-ms.openlocfilehash: d1b24b745fe1e860e42fa23647976aadea1953cd
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
+ms.openlocfilehash: 8f18f9ff2c32bb24b68fa987a8aad990b911a549
+ms.lasthandoff: 03/11/2017
 
 
 ---
@@ -38,7 +38,7 @@ En la tabla siguiente se muestran los métodos de inscripción de Intune, así c
 
 - **Borrar**: indica si el dispositivo debe borrarse antes de que los usuarios lo inscriban. El término "borrado" significa el restablecimiento de fábrica del dispositivo, lo que elimina todos los datos. Para obtener más información, vea [Retirar dispositivos de la administración de Intune](retire-devices-from-microsoft-intune-management.md).
 - **Afinidad**: los dispositivos se asocian a los usuarios. Es necesaria para la administración de aplicaciones móviles (MAM) y el acceso condicional a los datos de la empresa. Para obtener más información, vea [Inscribir dispositivos iOS de empresa en Microsoft Intune](enroll-corporate-owned-ios-devices-in-microsoft-intune.md#use-the-company-portal-on-dep-enrolled-or-apple-configurator-enrolled-devices).
-- **Bloqueo**: indica si se evita que los usuarios anulen la inscripción de los dispositivos mediante menús nativos del sistema operativo. Los usuarios pueden anular la inscripción de sus dispositivos en todas las plataformas mediante el uso de su aplicación del portal de empresa. 
+- **Bloqueo**: indica si se evita que los usuarios anulen la inscripción de los dispositivos mediante menús nativos del sistema operativo. Los usuarios pueden anular la inscripción de sus dispositivos en todas las plataformas mediante el uso de su aplicación del portal de empresa.
 
 **Métodos de inscripción de iOS**
 
@@ -54,7 +54,7 @@ En la tabla siguiente se muestran los métodos de inscripción de Intune, así c
 
 | **Método** |    **¿Se requiere borrado?** |    **Afinidad**    |    **Bloqueo** | **Detalles**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Sí|    Sí |    No | [Más información](prerequisites-for-enrollment.md).|
+|**[BYOD](#byod)** | No|    Sí |    No | [Más información](prerequisites-for-enrollment.md).|
 |**[DEM](#dem)**|    No |No |No    |[Más información](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).|
 
 **Métodos de inscripción de Android**
@@ -75,7 +75,7 @@ En la tabla siguiente se muestran los métodos de inscripción de Intune, así c
 
 | **Método** |    **¿Se requiere borrado?** |    **Afinidad**    |    **Bloqueo** | **Detalles**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | Sí|    Sí |    No | [Más información](prerequisites-for-enrollment.md).|
+|**[BYOD](#byod)** | No|    Sí |    No | [Más información](prerequisites-for-enrollment.md).|
 
 
 Para ver una serie de preguntas que pueden ayudarle a decidir el método adecuado, vea [Elegir cómo inscribir dispositivos móviles](/intune/get-started/choose-how-to-enroll-devices1).

@@ -1,12 +1,13 @@
 # Introducción
 ## [¿Qué es la vista previa de Azure Portal?](introduction/what-is-microsoft-intune.md)
+## [Características de Intune en Azure](introduction/ui-changes-in-microsoft-intune.md)
 ## Introducción
 <!---(introduction/get-started.md) --->
 ### [Suscríbase para disfrutar de una prueba gratuita](introduction/sign-up-free-trial-microsoft-intune.md)
 ## [Novedades](introduction/whats-new.md)
 ## [Problemas conocidos](introduction/known-issues-in-the-intune-preview.md)
 ## [Obtener soporte técnico](introduction/how-to-get-support-for-microsoft-intune.md)
-<!--- 
+<!---
 
 ## [Related resources](introduction/related-resources.md)
 
@@ -33,6 +34,7 @@
 ### [Obtener un token de DEP de Apple](enroll-devices/get-apple-dep-token.md)
 ### [Elegir cómo inscribir los dispositivos iOS](enroll-devices/choose-ios-enrollment-method.md)
 ## Cómo
+### [Asignar licencias a usuarios](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=%2fintune-azure%2ftoc.json)
 ### [Inscribir dispositivos Android](enroll-devices/enroll-android-and-knox-standard-devices.md)
 ### Inscribir dispositivos iOS
 #### [Inscribir dispositivos iOS mediante el uso del Asistente de configuración](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
@@ -41,7 +43,7 @@
 #### [Inscribir dispositivos iOS mediante el uso del programa de inscripción de dispositivos](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
 ### [Inscribir dispositivos mediante el uso del administrador de inscripción de dispositivos](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [Inscribir dispositivos macOS](enroll-devices/enroll-macos-devices.md)
-### [Inscribir dispositivos Windows](enroll-devices/enroll-window-devices.md)
+### [Inscribir dispositivos Windows](enroll-devices/enroll-windows-devices.md)
 ### Administrar la inscripción de dispositivos
 #### [Crear términos y condiciones](enroll-devices/create-terms-and-conditions.md)
 #### [Establecer restricciones de inscripción](enroll-devices/set-enrollment-restrictions.md)
@@ -108,6 +110,11 @@
 ## [Plan and design](configure-devices/plan-and-design.md) --->
 ## Cómo
 ### [Configurar perfiles de dispositivo](configure-devices/how-to-create-device-profiles.md)
+
+### [Configurar características de dispositivo](configure-devices/how-to-configure-device-features.md)
+#### [iOS](configure-devices/device-features-for-ios.md)
+#### [macOS](configure-devices/device-features-for-macos.md)
+
 ### [Configurar restricciones de dispositivo](configure-devices/how-to-configure-device-restrictions.md)
 #### [Android](configure-devices/device-restrictions-for-android.md)
 #### [iOS](configure-devices/device-restrictions-for-ios.md)
@@ -138,6 +145,7 @@
 #### [Windows 8.1 y Windows 10](configure-devices/wi-fi-import-for-windows-8-1.md)
 
 ### [Configurar las opciones de actualización de la edición de Windows 10](configure-devices/how-to-configure-windows-10-edition-upgrade.md)
+### [Configurar Windows Update para empresas](configure-devices/how-to-configure-windows-update-for-business.md)
 ### [Configurar certificados](configure-devices/how-to-configure-certificates.md)
 #### [SCEP](configure-devices/configure-certificate-infrastructure-for-scep.md)
 #### [PKCS](configure-devices/configure-certificate-infrastructure-for-pfx.md)
@@ -168,6 +176,8 @@
 ### [Crear una directiva de cumplimiento de Android for Work](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
 ### [Crear una directiva de cumplimiento de iOS](set-device-compliance/create-a-compliance-policy-for-ios.md)
 ### [Crear una directiva de cumplimiento de Windows](set-device-compliance/create-a-compliance-policy-for-windows.md)
+### [Create Actions for noncompliance](set-device-compliance/actions-for-noncompliance.md) (Creación de acciones para la no conformidad)
+### [Supervisar el cumplimiento del dispositivo](set-device-compliance/monitor-intune-device-compliance-policies.md)
 <!--- ### [Monitor device compliance](set-device-compliance/monitor-device-compliance.md)--->
 
 

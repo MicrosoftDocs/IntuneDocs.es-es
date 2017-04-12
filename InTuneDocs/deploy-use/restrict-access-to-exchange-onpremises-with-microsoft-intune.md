@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/03/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 53d2c0d5b2157869804837ae2fa08b1cce429982
-ms.openlocfilehash: e3b404526d8e662fd8ae285c144b1d6f5cf22bf3
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: f1d8ecdf64b680940e46afc90dec79d237d80030
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -80,11 +81,12 @@ No se admite lo siguiente:
 -   La aplicación de correo electrónico nativa de iOS.
 
 -   Clientes de correo de Exchange ActiveSync, como Gmail en Android 4 o versiones posteriores.
-- Clientes de correo de Exchange ActiveSync en **dispositivos Android for Work**: solo se admiten las aplicaciones **Gmail** y **Nine Work** en el **perfil de trabajo** en los dispositivos Android for Work. Para que el acceso condicional funcione con Android for Work, debe implementar un perfil de correo electrónico para la aplicación Gmail o Nine Work, y también implementar esas aplicaciones como una instalación obligatoria. 
+-   Clientes de correo de Exchange ActiveSync en **dispositivos Android for Work**: solo se admiten las aplicaciones **Gmail** y **Nine Work** en el **perfil de trabajo** en los dispositivos Android for Work. Para que el acceso condicional funcione con Android for Work, debe implementar un perfil de correo electrónico para la aplicación Gmail o Nine Work, y también implementar esas aplicaciones como una instalación obligatoria. 
 
+<!---
 [!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
-> [!NOTE]
+--->
+> [!NOTE] 
 > La aplicación Microsoft Outlook para iOS y Android no es compatible.
 
 ## <a name="support-for-pcs"></a>Compatibilidad para equipos
@@ -110,14 +112,12 @@ Se admite lo siguiente:
   - **Excepciones de plataforma**: pulse **Agregar regla** para configurar una regla que defina los niveles de acceso para las familias y los modelos de dispositivos móviles especificados. Dado que estos dispositivos pueden ser de cualquier tipo, también puede configurar tipos de dispositivo que no sean compatibles con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
 
   - **Regla predeterminada**: en el caso de un dispositivo que no esté cubierto por ninguna de las otras reglas, puede permitirle el acceso a Exchange, bloquearlo o ponerlo en cuarentena. Al establecer la regla para permitir el acceso a los dispositivos que están inscritos y que cumplen con las directivas, se concede acceso automático al correo electrónico a los dispositivos iOS, Windows y Samsung KNOX. El usuario no tiene que realizar ningún proceso para acceder a su correo electrónico.
-
-        En los dispositivos Android que no ejecutan Samsung KNOX, los usuarios reciben un correo electrónico de cuarentena con un tutorial detallado que les ayudará a comprobar la inscripción y el cumplimiento para poder tener acceso al correo electrónico. Si establece la regla para bloquear el acceso o establecer una cuarentena para los dispositivos, todos los dispositivos se bloquean al obtener acceso a Exchange, independientemente de si están ya inscritos en Intune o no. Para evitar que los dispositivos inscritos y compatibles a las directivas se vean afectados por esta regla, active la casilla **Invalidación de regla predeterminada**.
+      - En los dispositivos Android que no ejecutan Samsung KNOX, los usuarios reciben un correo electrónico de cuarentena con un tutorial detallado que les ayudará a comprobar la inscripción y el cumplimiento para poder tener acceso al correo electrónico. Si establece la regla para bloquear el acceso o establecer una cuarentena para los dispositivos, todos los dispositivos se bloquean al obtener acceso a Exchange, independientemente de si están ya inscritos en Intune o no. Para evitar que los dispositivos inscritos y compatibles a las directivas se vean afectados por esta regla, active la casilla **Invalidación de regla predeterminada**.
 >[!TIP]
 >Si se pretende bloquear todos los dispositivos antes de conceder acceso al correo electrónico, elija las opciones de bloqueo de regla de acceso o la regla de cuarentena. La regla predeterminada se aplica a todos los tipos de dispositivo, por lo que los tipos de dispositivo que configure como excepciones de la plataforma que no sean compatibles con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] también se verán afectados.
 
   - **Notificación de usuario**: además del correo electrónico de notificación que envía Exchange, Intune envía un correo electrónico que incluye los pasos para desbloquear el dispositivo. Puede editar el mensaje predeterminado para personalizarlo según sus necesidades. En el caso de que el dispositivo del usuario se bloquee antes de que reciba el correo electrónico de notificación de Intune que contiene las instrucciones de corrección (este correo electrónico se envía al buzón de Exchange del usuario), puede usar un dispositivo desbloqueado u otro método para acceder a Exchange y ver el mensaje.
-
-        This is especially true when the **Default Rule** is set to block or quarantine. In this case, the user has to go to their app store, download the Microsoft Company Portal app, and enroll their device. This is applicable to iOS, Windows, and Samsung KNOX devices. For devices that don't run Samsung KNOX, you need to send the quarantine email to an alternate email account. The user has to copy the email to their blocked device to complete the enrollment and compliance process.
+      - Esta situación se da concretamente cuando la **regla predeterminada** está establecida para bloquear o para poner en cuarentena los dispositivos. En este caso, el usuario tendrá que ir a su tienda de aplicaciones, descargar la aplicación Portal de empresa e inscribir su dispositivo. Esto es aplicable a dispositivos iOS, Windows y Samsung KONX. En el caso de dispositivos que no ejecutan Samsung KNOX, tiene que enviar el mensaje de cuarentena a una cuenta de correo electrónico alternativa. El usuario tiene que copiar el mensaje de correo en el dispositivo bloqueado para completar el proceso de inscripción y cumplimiento.
   > [!NOTE]
   > Para que Exchange pueda enviar el correo electrónico de notificación, debe especificar la cuenta que se usa para enviarlo.
   >
@@ -139,9 +139,4 @@ Se admite lo siguiente:
 -   [Proteger el acceso a SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 -   [Proteger el acceso a Skype Empresarial Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: 2ab3769ff878cf8b6223e4f46244f16eab8743a0
+ms.sourcegitcommit: e55cf608c2e5157feeb40ba20d3988b5b35064db
+ms.openlocfilehash: 22ea926719efc788c53861bc91f78d24631d54c1
+ms.lasthandoff: 02/25/2017
 
 
 ---
@@ -44,9 +45,7 @@ Es posible quitar el registro del dispositivo a través de la consola de adminis
 * **Dispositivo iOS**: abra la aplicación Azure Authenticator, desplácese a la izquierda en la cuenta y elija anular el registro.  
 * **Dispositivo Android**: desinstale la aplicación de portal de empresa o elimine la cuenta de la **configuración del sistema**.
 
-
-
-## <a name="app-based-ca-with-conditional-access-based-on-device-compliance"></a>Acceso condicional basado en la aplicación con acceso condicional basado en el cumplimiento del dispositivo  
+## <a name="app-based-ca-with-device-based-ca"></a>Entidad de certificación basada en la aplicación con entidad de certificación basada en dispositivos  
 
 Puede configurar el [acceso condicional basado en el cumplimiento del dispositivo](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (**acceso condicional del dispositivo**) en la [consola de administrador de Intune](https://manage.microsoft.com) o en la [consola de administración de Azure AD Premium] (https://manage.windowsazure.com). El acceso condicional del dispositivo requiere que los usuarios se conecten a Exchange Online solo a través de los dispositivos administrados por Intune que sean compatibles con la directiva de cumplimiento del dispositivo de Intune o equipos unidos a un dominio.  Si un usuario pertenece a uno o varios grupos de seguridad que tienen como destino las directivas del acceso condicional basado en la aplicación y del acceso condicional del dispositivo, este debe cumplir uno de los dos requisitos siguientes:
 * La aplicación que se utiliza para acceder al servicio es una aplicación móvil compatible. 
@@ -63,9 +62,4 @@ Puede configurar el [acceso condicional basado en el cumplimiento del dispositiv
 ### <a name="see-also"></a>Consulte también
 
 [Protección de datos de aplicaciones con directivas de protección de aplicaciones](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

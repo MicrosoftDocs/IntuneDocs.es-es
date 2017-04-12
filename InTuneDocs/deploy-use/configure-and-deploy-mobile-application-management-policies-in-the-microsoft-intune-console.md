@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: f7504657f5fb2d73242f25f2f059c8c4e7ab1547
+ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
+ms.openlocfilehash: 4a921334b0cd402dba91eab665ff1a23290c82eb
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -139,7 +140,7 @@ Una vez que haya comprobado que la aplicación se carga correctamente, continúe
     |**Requerir cumplimiento de dispositivos con la directiva corporativa en acceso**|Esta configuración solo permite que se use la aplicación cuando el dispositivo no está liberado ni modificado.|
     |**Volver a comprobar los requisitos de acceso después de (minutos)**|En el campo **Tiempo de espera** , especifique el período de tiempo que debe transcurrir antes de que se vuelvan a comprobar los requisitos de acceso de la aplicación una vez abierta la aplicación.|
     |**Período de gracia sin conexión**|Si el dispositivo está desconectado, especifique el período de tiempo que debe transcurrir antes de que se vuelvan a comprobar los requisitos de acceso de la aplicación.|
-    |**Cifrar datos de aplicación**|Esta configuración especifica que se cifren todos los datos asociados a esta aplicación. Esto incluye datos almacenados externamente, como tarjetas SD.<br /><br />**Cifrado para iOS**<br /><br />En el caso de aplicaciones que están asociadas a una directiva de administración de aplicaciones móviles de Intune, los datos se cifran en reposo con el cifrado de nivel de dispositivo que proporciona el sistema operativo. Esta opción se habilita a través de la directiva de PIN del dispositivo que establece el administrador de TI. Cuando se requiere un PIN, los datos se cifrarán según la configuración de la directiva de administración de aplicaciones móviles. Como se indica en la documentación de Apple, [los módulos que usa iOS están certificados mediante FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Cifrado para Android**<br /><br />En el caso de aplicaciones que están asociadas a una directiva de administración de aplicaciones móviles de Intune, Microsoft proporciona el cifrado. Los datos se cifran de forma sincrónica durante las operaciones de E/S de archivo.  Siempre se cifrará el contenido del almacenamiento del dispositivo. El método de cifrado no está certificado mediante FIPS 140-2.|
+    |**Cifrar datos de aplicación**|Esta configuración especifica que se cifren todos los datos asociados a esta aplicación. Esto incluye datos almacenados externamente, como tarjetas SD.<br /><br />**Cifrado para iOS**<br /><br />En el caso de aplicaciones que están asociadas a una directiva de administración de aplicaciones móviles de Intune, los datos se cifran en reposo con el cifrado de nivel de dispositivo que proporciona el sistema operativo. Esta opción se habilita a través de la directiva de PIN del dispositivo que establece el administrador de TI. Cuando se requiere un PIN, los datos se cifrarán según la configuración de la directiva de administración de aplicaciones móviles. Como se indica en la documentación de Apple, [los módulos que usa iOS están certificados mediante FIPS 140-2](http://support.apple.com/en-us/HT202739).<br /><br />**Cifrado para Android**<br /><br />En el caso de aplicaciones que están asociadas a una directiva de administración de aplicaciones móviles de Intune, Microsoft proporciona el cifrado. Los datos se cifran de forma sincrónica durante las operaciones de E/S de archivo.  Siempre se cifrará el contenido del almacenamiento del dispositivo. El método de cifrado cumple con FIPS 140-2 solo para dispositivos Samsung KNOX.|
     |**Bloquear captura de pantalla** (solo en dispositivos Android)|Esta configuración especifica que las funciones de captura de pantalla del dispositivo se bloquean cuando alguien usa esta aplicación.|
 
 4. Cuando termine, seleccione **Guardar directiva**.
@@ -195,9 +196,4 @@ En casos en los que el dispositivo o el usuario recibe dos directivas en conflic
 -   Si ya se implementó una directiva para el dispositivo, la configuración de directiva existente no se sobrescribe.
 
 -   Si todavía no se implementó ninguna directiva para el dispositivo y se implementan dos configuraciones en conflicto, se usa la configuración predeterminada integrada en el dispositivo.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

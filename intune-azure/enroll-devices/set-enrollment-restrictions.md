@@ -3,8 +3,8 @@ title: "Establecer restricciones de inscripción en Intune"
 titleSuffix: Intune Azure preview
 description: "Versión preliminar de Azure de Intune: restrinja las inscripciones por plataforma y establezca un límite de inscripciones de dispositivos en Intune. "
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article

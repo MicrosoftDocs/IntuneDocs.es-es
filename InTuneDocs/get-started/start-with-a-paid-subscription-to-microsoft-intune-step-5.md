@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: 1b14ec6330c512981025a2910dbd222fa4d7cf7f
+ms.sourcegitcommit: d8cb15d1b8c1c100f15084e43d2c3c4633fd64b5
+ms.openlocfilehash: 434eea4244931f0708eb05cfc39d0c97b4936830
+ms.lasthandoff: 03/09/2017
 
 
 ---
@@ -32,7 +33,7 @@ Los grupos de Intune ofrecen una gran flexibilidad para administrar dispositivos
 
 ## <a name="group-management-moving-to-azure-ad"></a>Movimiento de la administración de grupos a Azure AD
 
-**A partir de noviembre de 2016**, se usarán nuevas cuentas para administrar grupos de usuarios y dispositivos en el portal de Azure Acitve Directory (AD). En diciembre de 2016, el equipo del producto de Intune comenzará la migración de los clientes existentes a la nueva experiencia de administración de grupos basada en Azure AD. Los grupos de dispositivos y usuarios se migrarán a los grupos de seguridad de Azure AD. Las migraciones no se iniciarán hasta que se pueda minimizar cualquier impacto en su trabajo diario y se espere que no tengan ningún efecto en sus usuarios. También se le avisará antes de migrar su cuenta.
+**A partir de noviembre de 2016**, se usarán nuevas cuentas para administrar grupos de usuarios y dispositivos en el portal de Azure Active Directory (AD). En diciembre de 2016, el equipo del producto de Intune comenzará la migración de los clientes existentes a la nueva experiencia de administración de grupos basada en Azure AD. Los grupos de dispositivos y usuarios se migrarán a los grupos de seguridad de Azure AD. Las migraciones no se iniciarán hasta que se pueda minimizar cualquier impacto en su trabajo diario y se espere que no tengan ningún efecto en sus usuarios. También se le avisará antes de migrar su cuenta.
 
 
 >[!IMPORTANT]
@@ -87,9 +88,4 @@ Encontrará el grupo recién creado en la lista **Grupos** del área de trabajo 
 >[!div class="step-by-step"]
 
 >[&larr; **Administrar licencias de Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-4.md) [**Crear directivas y aplicaciones** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 547330c05b7fbdd2981e49320c913d8109563384
 ms.openlocfilehash: f8f1359ff08b67261b23a694a4f6bbbeca24fa2a
+ms.lasthandoff: 02/17/2017
 
 
 ---
@@ -76,7 +77,7 @@ En el siguiente procedimiento usará el editor de software de Intune para config
 
     Si la aplicación cumple alguna de las reglas que configuró, no se instalará.
 
-6.  Únicamente para el tipo de archivo **Windows Installer** (.msi y .exe): en la página **Argumentos de la línea de comandos **, elija si quiere proporcionar argumentos de línea de comandos opcionales para el instalador.
+6.  Únicamente para el tipo de archivo **Windows Installer** (.msi y .exe): en la página **Argumentos de la línea de comandos**, elija si quiere proporcionar argumentos de línea de comandos opcionales para el instalador.
     Intune agrega automáticamente los parámetros siguientes:
     - Para los archivos .exe, se agrega **/install**.
     - Para los archivos .msi, se agrega **/quiet**.
@@ -97,9 +98,4 @@ La aplicación se muestra en el nodo **Aplicaciones** del área de trabajo **Apl
 Tras crear una aplicación, el siguiente paso es implementarla. Para obtener más información, vea [Implementar aplicaciones en Microsoft Intune](deploy-apps.md).
 
 Si quiere obtener más información sobre consejos y trucos para implementar software en equipos Windows, consulte la entrada de blog [Support Tip: Best Practices for Intune Software Distribution to PC’s](https://blogs.technet.microsoft.com/intunesupport/2016/06/13/support-tip-best-practices-for-intune-software-distribution-to-pcs/) (Consejo de soporte: recomendaciones para la distribución de software de Intune en PC).
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

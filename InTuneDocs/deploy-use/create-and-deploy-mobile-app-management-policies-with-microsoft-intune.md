@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
 ms.openlocfilehash: f4bc5a2092585c91e224c390eaae717985055b10
+ms.lasthandoff: 02/14/2017
 
 
 ---
@@ -112,7 +113,7 @@ Cuando termine de crear una directiva como se describe en el procedimiento anter
 
     ![Captura de pantalla de la hoja Grupos de usuarios con la opción de menú Agregar grupo de usuarios resaltada](../media/AppManagement/AzurePortal_MAM_AddUserstoPolicy.png)
 
-2.  Se mostrará una lista de grupos de usuarios en la hoja **Agregar grupo de usuarios** . Esta es una lista de todos los grupos de seguridad de su **Azure Active Directory**. Seleccione los grupos de usuarios a los que quiera aplicar esta directiva y, después, elija **Seleccionar**. Al ** **hacerlo, la directiva se implementa en los usuarios.
+2.  Se mostrará una lista de grupos de usuarios en la hoja **Agregar grupo de usuarios** . Esta es una lista de todos los grupos de seguridad de su **Azure Active Directory**. Seleccione los grupos de usuarios a los que quiera aplicar esta directiva y, después, elija **Seleccionar**. Al ****hacerlo, la directiva se implementa en los usuarios.
 
     ![Captura de pantalla de la hoja Agregar grupo de usuarios que muestra la lista de usuarios de Azure Active Directory](../media/AppManagement/AzurePortal_MAM_SelectUserstoDeploy.png)
 
@@ -181,9 +182,4 @@ Para ver una lista completa de las configuraciones de directiva para iOS y Andro
 ### <a name="see-also"></a>Consulte también
 * [What to expect when your Android app is managed by app protection policies](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)
 * [What to expect when your iOS app is managed by app protection policies](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md) (Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

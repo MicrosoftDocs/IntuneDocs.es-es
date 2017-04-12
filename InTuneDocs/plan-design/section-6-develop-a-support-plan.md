@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 874146573898e8a28de83ed599dbd4829ea8f335
-ms.openlocfilehash: fb72b74d922cef8659c34ef9d3d36e14b1a22ac1
+ms.sourcegitcommit: 6df87e20011f20b99b91d88e669c67bb97ad2277
+ms.openlocfilehash: e21b088dbb7fdcef9996e2b970bb406cab5ee0aa
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -27,9 +28,9 @@ ms.openlocfilehash: fb72b74d922cef8659c34ef9d3d36e14b1a22ac1
 
 Tener un plan de soporte técnico de Intune puede ser beneficioso en la identificación y resolución más eficaz de problemas relacionados con Intune y en la mejora de la experiencia de Intune general del usuario final. Estas son algunas preguntas para tener en cuenta a la hora de desarrollar su plan de soporte técnico de Intune:
 
--   ¿Qué equipos serán los responsables de proporcionar soporte técnico de Intune?
+-   ¿Qué equipos serán los responsables de proporcionar asistencia técnica de Intune?
 
--   Si su organización de soporte técnico tiene varios niveles (por ejemplo, nivel 1 a 3), ¿cuáles son las responsabilidades de soporte técnico de Intune de cada nivel?
+-   Si su organización de asistencia técnica tiene varios niveles (por ejemplo, del 1 al 3), ¿cuáles son las responsabilidades de asistencia técnica de Intune en cada nivel?
 
 -   ¿Qué proceso se usará para proporcionar soporte técnico de Intune?
 
@@ -41,7 +42,7 @@ Revisemos cada área con más detalle.
 
 ## <a name="which-teams-are-responsible-for-providing-support"></a>¿Qué equipos son responsables de proporcionar soporte técnico?
 
-Las organizaciones pueden tener diferentes niveles (1 a 3) de soporte técnico. Por ejemplo, el nivel 1 y 2 pueden formar parte del equipo de soporte técnico, y el nivel 3 incluir miembros del equipo de MDM responsable de la implementación de Intune.
+Las organizaciones pueden tener diferentes niveles (1 a&3;) de soporte técnico. Por ejemplo, el nivel 1 y 2 pueden formar parte del equipo de soporte técnico, y el nivel 3 incluir miembros del equipo de MDM responsable de la implementación de Intune.
 
 ## <a name="what-is-the-support-process"></a>¿Cuál es el proceso de soporte técnico?
 
@@ -95,9 +96,4 @@ Implicar al personal del departamento de soporte técnico de TI en las primeras 
 ## <a name="next-section"></a>Sección siguiente
 
 En la siguiente sección se proporcionan instrucciones sobre el [diseño de Intune](section-7-create-an-intune-design.md).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

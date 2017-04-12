@@ -3,8 +3,8 @@ title: "Establecer la entidad de administración de dispositivos móviles"
 titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: aprenda a configurar la entidad de administración de dispositivos móviles en Intune. "
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 01/06/2016
 ms.topic: article
@@ -18,6 +18,7 @@ ms.custom: intune-azure
 translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: 9d7a1a934188f0a40553d3c6b8b567ba8f6af034
+ms.lasthandoff: 02/18/2017
 
 ---
 
@@ -43,9 +44,4 @@ La configuración de la entidad de administración de dispositivos móviles dete
 2. En la hoja de Intune, elija **Inscribir dispositivos** y luego elija **Overview** (Información general).
 
 3. En la hoja **Empezar a administrar dispositivos**, elija **Establecer Intune como entidad de MDM**. Un mensaje indica que ha configurado correctamente su entidad de MDM en Intune.
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

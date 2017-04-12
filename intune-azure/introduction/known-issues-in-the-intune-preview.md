@@ -16,9 +16,9 @@ ms.reviewer:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: ee4422f462270b6466f11721aa7dc8cb2d432f7d
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
+ms.openlocfilehash: ec3f87994b19591bda4ec201eac3c839798d634c
+ms.lasthandoff: 03/15/2017
 
 
 ---
@@ -38,4 +38,7 @@ Si quiere solicitar que se agregue una nueva característica a Intune, considere
 ## <a name="administration-and-accounts"></a>Administración y cuentas
 
 - Los administradores globales (también denominados administradores de inquilinos) pueden seguir realizando tareas de administración cotidianas sin una licencia independiente de Intune o Enterprise Mobility Suite (EMS). Sin embargo, si los administradores globales quieren usar el servicio, por ejemplo para inscribir sus dispositivos, un dispositivo de la empresa o para usar el Portal de empresa de Intune, necesitarán una licencia de Intune o EMS igual que cualquier otro usuario.
+
+## <a name="apple-enrollment-profile-migration"></a>Migración de perfiles de inscripción de Apple
+- En los próximos meses, Intune permitirá administrar las inscripciones de Apple Configurator y el programa de inscripciones de dispositivos de Apple mediante el nuevo Azure Portal. Si elimina el token del programa de inscripción de dispositivos de Apple y no carga uno actualizado, el original se restaurará en el nuevo Azure Portal como parte del proceso de migración de su cuenta de Intune. Para quitar este token y evitar la inscripción de DEP, simplemente elimine el token en Azure Portal. 
 
