@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 364534ad788466f8b268b4091decee5326b94163
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: d1c1833ea7fe9e794a70b2b2536f44801b68fa7e
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -79,18 +79,18 @@ Debe crear un perfil de certificado de confianza para poder crear un perfil de c
 
 1. Inicie sesión en el portal de Azure.
 2. Elija **More Services** >  (Más servicios) **Other** >  (Otros) **Intune**.
-3. En la hoja **Intune**, elija **Configurar dispositivos**.
+3. En la hoja **Intune**, elija **Configuración del dispositivo**.
 2. En la hoja **Configuración del dispositivo**, elija **Administrar** > **Perfiles**.
 3. En la hoja de perfiles, elija **Create Profile** (Crear perfil).
 4. En la hoja **Create Profile** (Crear perfil), escriba un **nombre** y una **descripción** para el perfil de certificado de confianza.
-5. En la lista desplegable **Plataforma**, seleccione la plataforma de dispositivo para este certificado de confianza. Actualmente, puede elegir una de las siguientes plataformas para la configuración de restricciones de dispositivos:
+5. En la lista desplegable **Plataforma**, seleccione la plataforma de dispositivo para este certificado de confianza. Actualmente, puede elegir una de las siguientes plataformas para la configuración del certificado:
     - **Android**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
     - **Windows 8.1 y versiones posteriores**
     - **Windows 10 y versiones posteriores**
-6. En la lista desplegable de **tipos de perfil**, elija **Certificado de confianza**.
+6. En la lista desplegable de **Tipos de perfil**, elija **Certificado de confianza**.
 7. Busque el certificado que guardó en la tarea 1 y haga clic en **Aceptar**.
 8. Solo para dispositivos Windows 8.1 y Windows 10, seleccione el **almacén de destino** del certificado de confianza. Las opciones son:
     - **Almacén de certificados de equipo - Raíz**

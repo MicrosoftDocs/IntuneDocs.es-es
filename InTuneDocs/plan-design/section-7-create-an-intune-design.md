@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 12/28/2016
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 70be873367edccdefd724b6aa6959eb67b377bdd
-ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
+ms.sourcegitcommit: 6df87e20011f20b99b91d88e669c67bb97ad2277
+ms.openlocfilehash: 1768b98cdcb18b5489d9a30b8c1f455f5de58418
+ms.lasthandoff: 03/13/2017
 
 
 ---
@@ -25,11 +26,11 @@ ms.openlocfilehash: 92dedcd165ffec47f6c5b818533fce08ed04b1a0
 
 [!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
-La sección de la guía debe usarse en paralelo con otros temas de la sección 2. Este diseño se basará en la información que ha recopilado y en las decisiones que ha tomado al completar las secciones anteriores de esta guía. En esta sección de diseño, nos centraremos en Intune independiente, que es un servicio basado en la nube de Microsoft que se encuentra en la nube.
+La sección de la guía debe usarse en paralelo con otros temas de la sección 2. Este diseño se basará en la información que ha recopilado y en las decisiones que ha tomado al completar las secciones anteriores de esta guía. En esta sección de diseño, nos centraremos en Intune independiente, que es un servicio basado en la nube de Microsoft.
 
-Aunque existen requisitos mínimos de infraestructura local, se recomienda trabajar en un plan de diseño para asegurarse de que tendrá la solución de administración de dispositivos móviles correcta que cumpla sus metas, objetivos y requisitos.
+Aunque existen requisitos mínimos de infraestructura local, trabaje en un plan de diseño para asegurarse de que tendrá la solución de administración de dispositivos móviles correcta que cumpla sus metas, objetivos y requisitos.
 
-Además, es normal tener cambios de diseño durante la implementación y fases de pruebas, por lo que asegúrese de documentar todos estos cambios y el razonamiento subyacente a medida que se produzcan. Trataremos las siguientes áreas:
+Además, es normal tener cambios de diseño durante la implementación y fases de pruebas, por lo que asegúrese de documentar estos cambios y el razonamiento subyacente a medida que se produzcan. Trataremos las siguientes áreas:
 
 -   El entorno actual
 
@@ -409,9 +410,4 @@ Aquí se muestra un ejemplo de cómo documentar las directivas de acceso condici
 ## <a name="next-section"></a>Sección siguiente
 
 En la siguiente sección se proporcionan instrucciones sobre el [proceso de implementación de Intune](section-8-onboarding-process.md).
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 

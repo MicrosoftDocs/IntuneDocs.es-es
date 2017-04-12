@@ -2,8 +2,8 @@
 title: "Cómo obtener asistencia | Microsoft Docs"
 description: "El soporte técnico está disponible tanto en línea como por teléfono para las suscripciones de pago y de prueba."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 01/27/2016
 ms.topic: article
@@ -15,8 +15,9 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 526830839aa801a7ac78aeb4baaa790d6bb5da5c
-ms.openlocfilehash: 8f43dc529b2da2c97500c03056ba7908bb8ab0fa
+ms.sourcegitcommit: 5726934501b3d6b243de94951cf0c57cbd79a811
+ms.openlocfilehash: ccc0502c81cb16d2ca13e5d6a702c0ff863b83e4
+ms.lasthandoff: 03/09/2017
 
 
 ---
@@ -41,15 +42,13 @@ Antes de crear un vale de soporte, consulte los recursos siguientes para obtener
 
 ### <a name="microsoft-intune-uservoice-product-feedback-site"></a>Sitio de comentarios sobre el producto de Microsoft Intune UserVoice
 
-¿Tiene comentarios sobre cómo Microsoft puede mejorar Intune? Háganoslo saber agregando sus ideas en el sitio de comentarios de Microsoft Intune [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas). También puede votar sobre las ideas que otros usuarios han agregado a UserVoice. 
+¿Tiene comentarios sobre cómo Microsoft puede mejorar Intune? Háganoslo saber agregando sus ideas en el sitio de comentarios de Microsoft Intune [UserVoice](https://microsoftintune.uservoice.com/forums/291681-ideas). También puede votar sobre las ideas que otros usuarios han agregado a UserVoice.
 
 ![Página de comentarios de Microsoft Intune UserVoice](./media/intune-uservoice-feedback-page.png)
 
-## <a name="create-an-online-support-ticket"></a>Creación de un vale de soporte en línea
+## <a name="create-a-support-ticket"></a>Creación de una incidencia de soporte técnico
 
-Si no encuentra respuestas en los recursos de autoayuda, puede crear un vale de soporte en línea.
-
-**Limite cada vale de soporte a un único problema** para que podamos ayudarle mejor. Estas son las razones:
+Si no encuentra respuestas en los recursos de autoayuda, puede crear un vale de soporte en línea. **Limite cada vale de soporte a un único problema** para que podamos ayudarle mejor. Estas son las razones:
 
 - Los ingenieros de soporte que reciben los vales suelen estar especializados en áreas específicas, de modo que sea más fácil elegir al experto adecuado para ayudarle con un asunto concreto.
 - Los equipos de ingeniería pueden priorizar su trabajo en las áreas del producto en las que se producen la mayoría de los incidentes.
@@ -57,12 +56,15 @@ Si no encuentra respuestas en los recursos de autoayuda, puede crear un vale de 
 
 Revise la [definición de un incidente de soporte](#definition-of-a-support-incident) antes de crear un vale de soporte.
 
-**Para crear un vale de soporte en línea**:
+### <a name="steps-to-create-an-online-support-ticket"></a>Pasos para crear una incidencia de soporte en línea
 
 1.  Inicie sesión en el [Centro de administradores de Office 365](https://portal.office.com) con las credenciales de Intune.
+
+    Si es un cliente del soporte técnico Premier, debe abrir en su lugar una incidencia de soporte técnico de Intune en la [página de soporte técnico Premier](https://support.microsoft.com/en-us/premier/contacts).
+
     >[!NOTE]
     >
-    >Los clientes del soporte técnico Premier pueden abrir una incidencia de soporte técnico de Intune en la [página de soporte técnico Premier](https://support.microsoft.com/en-us/premier/contacts).
+    >Los clientes del soporte técnico Premier deben abrir una incidencia de soporte técnico de Intune en la [página de soporte técnico Premier](https://support.microsoft.com/en-us/premier/contacts).
 
 2.  Seleccione el icono de **administración**.
 3.  A la izquierda, en **Soporte técnico**, elija **Soporte técnico** para abrir la incidencia.
@@ -83,9 +85,9 @@ Revise la [definición de un incidente de soporte](#definition-of-a-support-inci
 
 3.  Siga las instrucciones para abrir la solicitud.
 
-### <a name="create-a-support-ticket-with-alternate-methods"></a>Crear una incidencia de soporte técnico con métodos alternativos
+### <a name="steps-to-create-a-support-ticket-with-alternate-methods"></a>Pasos para crear una incidencia de soporte técnico con métodos alternativos
 
-Si su página de soporte técnico tiene el siguiente aspecto, siga este procedimiento:
+Si su página de soporte técnico del centro de administradores de Office 365 tiene el siguiente aspecto, siga este procedimiento:
 
 ![Soporte técnico alternativo de Intune](../media/alternate-support-ui.png)
 
@@ -101,30 +103,30 @@ Si su página de soporte técnico tiene el siguiente aspecto, siga este procedim
 Consulte [Asistencia telefónica para Microsoft Intune](contact-assisted-phone-support-for-microsoft-intune.md) para obtener una lista de números de teléfono de soporte técnico por país y región, horario de soporte técnico e idiomas admitidos para cada región.
 
 ## <a name="track-your-support-requests"></a>Realizar un seguimiento de las solicitudes de soporte
-1.  Inicie sesión en el [Centro de administradores de Office 365](https://portal.office.com) con las credenciales de Intune.
+1.  Inicie sesión en el [Centro de administradores de Office 365](https://portal.office.com) con las credenciales de administrador de Intune.
 2.  Seleccione el icono de **administración**.
 3.  A la izquierda, en **Soporte técnico**, elija **Solicitudes de servicio**. A continuación, puede revisar las solicitudes.
 
-Las respuestas iniciales a las solicitudes de soporte dependen de la gravedad del problema. En el caso de los problemas más graves, nuestra primera respuesta para los clientes profesionales tendrá lugar en el plazo de dos horas. Para los clientes de soporte técnico Premier, la respuesta variará según el contrato de soporte. Se pueden dar dos casos:
+Las respuestas iniciales a las solicitudes de soporte dependen de la gravedad del problema. En el caso de los problemas más graves, nuestra primera respuesta para los clientes profesionales tendrá lugar en el plazo de dos horas. Para los clientes de soporte técnico Premier, la respuesta variará según el contrato de soporte. Un caso es **más grave** cuando:
 
 - Uno o más servicios no son accesibles o no se pueden utilizar.
 - Los plazos de producción, operaciones o implementación se ven gravemente afectados, o habrá graves repercusiones en la producción o rentabilidad.
 - Varios usuarios o servicios se ven afectados.
 
-En el caso de los problemas moderadamente graves, nuestra primera respuesta para los clientes profesionales tendrá lugar en el plazo de cuatro horas. Para los clientes de soporte técnico Premier, la respuesta variará según el contrato de soporte.  Se pueden dar dos casos:
+En el caso de los problemas moderadamente graves, nuestra primera respuesta para los clientes profesionales tendrá lugar en el plazo de cuatro horas. Para los clientes de soporte técnico Premier, la respuesta variará según el contrato de soporte. Un caso es **moderadamente grave** cuando:
 
 - El servicio se puede utilizar, pero no funciona tan bien como de costumbre.
 - La situación tiene repercusiones moderadas para el negocio y se puede solucionar en horario laboral.
 - Afecta parcialmente a un solo usuario, cliente o servicio.
 
-En otros problemas, nuestra primera respuesta para los clientes profesionales tendrá lugar en el plazo de ocho horas. Para los clientes de soporte técnico Premier, la respuesta variará según el contrato de soporte.  Se pueden dar dos casos:
+En otros problemas, nuestra primera respuesta para los clientes profesionales tendrá lugar en el plazo de ocho horas. Para los clientes de soporte técnico Premier, la respuesta variará según el contrato de soporte. Un caso es el menos grave cuando:
 
 - La situación tiene un impacto mínimo en la empresa.
 - El problema es importante, pero no tiene repercusiones importantes e inmediatas para el cliente en cuanto al servicio o la productividad.
 - Un solo usuario ve su actividad parcialmente interrumpida, pero existe una solución aceptable.
 
 > [!NOTE]
-> **Si usa Microsoft System Center Configuration Manager** o **Microsoft System Center Endpoint Protection:** para obtener soporte técnico con Configuration Manager o Endpoint Protection, póngase en contacto con su partner o visite el [Centro de soluciones de Microsoft System Center Configuration Manager y System Center Endpoint Protection](http://www.microsoft.com/en-us/server-cloud/products/system-center-2012-r2/resources.aspx), donde encontrará abundante material de autoayuda. También le ofrecerá la posibilidad de abrir una solicitud de soporte en línea o por teléfono.
+> **Si usa Microsoft System Center Configuration Manager** o **Microsoft System Center Endpoint Protection:** para obtener soporte técnico con Configuration Manager o Endpoint Protection, póngase en contacto con su asociado o consulte la documentación de [Microsoft System Center Configuration Manager](https://docs.microsoft.com/sccm/) y [Endpoint Protection](https://technet.microsoft.com/en-us/library/hh508836.aspx), donde encontrará abundante material de autoayuda. También le ofrecerá la posibilidad de abrir una solicitud de soporte en línea o por teléfono.
 >
 > El soporte técnico de System Center Configuration Manager o System Center Endpoint Protection requiere realizar un pago o se descuenta bien de la licencia existente, bien de los contratos de soporte técnico Premier.
 
@@ -146,9 +148,4 @@ El soporte "break-fix" está incluido en las suscripciones a Microsoft Intune y 
 Si un ingeniero de soporte le pide que abra vales de soporte adicionales para otros problemas, tenga en cuenta que eso ayudará a toda la comunidad. Agradecemos su comprensión y el hecho de que colabore con nosotros para conseguir una experiencia de soporte excelente.
 
 Para consultar los precios de cada incidente y nivel de severidad, consulte [Opciones de soporte técnico profesional](https://support.microsoft.com/gp/offerprophone).
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

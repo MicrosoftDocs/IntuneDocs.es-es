@@ -4,7 +4,7 @@ description: "En este tema se proporcionan instrucciones a los administradores q
 keywords: 
 author: nathbarn
 manager: angrobe
-ms.date: 11/22/2016
+ms.date: 03/07/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,6 +14,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: 9dc65b442a165609963cb5625009a723cbcb55dd
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -28,9 +29,4 @@ Esta guía incluye:
 - [Guía de inicio rápido de Intune:](start-with-a-paid-subscription-to-microsoft-intune.md) instrucciones paso a paso para transferir su suscripción de prueba de la prueba a la administración empresarial o para configurar una nueva suscripción para su organización
 - [Migrar a Intune](migrate-to-intune.md): guía para migrar a Intune desde la solución de administración de movilidad empresarial actual a Intune
 - [Pasos siguientes con Intune](prevent-company-data-leaks-from-Office-365-mobile-apps.md): Información general y pasos siguientes para tareas comunes de Intune
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

@@ -16,45 +16,24 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 5c8e0d2bec63c3eab5c1af08471d54f66feb5231
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: cddeb6bf854b9ffbbc1744d5d164c8ceea34ff49
+ms.openlocfilehash: a0950e3b816128ccd042620eb1344f908c915a21
+ms.lasthandoff: 03/10/2017
 
 
 ---
 
-# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune-azure-preview"></a>Creación de una directiva de cumplimiento de dispositivo para dispositivos Android en la versión preliminar de Intune Azure
+# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune-azure-preview-portal"></a>Creación de una directiva de cumplimiento de dispositivo para dispositivos Android en el portal de la versión preliminar de Intune Azure
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Las directivas de cumplimiento se crean para cada plataforma.  Puede crear una directiva de cumplimiento en el portal de Azure. Para aprender más sobre lo que son las directivas de cumplimiento, consulte el tema [¿Qué es el cumplimiento de los dispositivos?](what-is-device-compliance.md). Para conocer los requisitos previos que deben satisfacerse antes de crear una directiva de cumplimiento, consulte el tema [Introducción al cumplimiento de dispositivos](get-started-with-device-compliance.md).
+Las directivas de cumplimiento de dispositivos se crean para cada plataforma del portal de la versión preliminar de Intune Azure. 
 
-En la tabla siguiente se describe cómo administrar la configuración de no conformidad cuando se usa una directiva de cumplimiento con una directiva de acceso condicional.
+- Para aprender más sobre lo que son las directivas de cumplimiento, consulte el tema [¿Qué es el cumplimiento de los dispositivos?](what-is-device-compliance.md).
+- Para conocer los requisitos previos que deben satisfacerse antes de crear una directiva de cumplimiento, consulte el tema [Introducción al cumplimiento de dispositivos](get-started-with-device-compliance.md).
 
---------------------
-
-|**Configuración de directiva**| **Android 4.0 y versiones posteriores, Samsung Knox Standard 4.0 y versiones posteriores** |
-| --- | ----|
-| **Configuración de PIN o contraseña** |  En cuarentena |
-| **Cifrado del dispositivo** | En cuarentena |
-| **Dispositivo liberado o modificado** | En cuarentena (no es una configuración) |
-| **Perfil de correo electrónico** | No aplicable |
-| **Versión de SO mínima** | En cuarentena |
-| **Versión de SO máxima** |   En cuarentena |
-| **Atestación de estado de Windows** | No aplicable |
-
---------------------------
-
-
-**Corregido** = el sistema operativo del dispositivo exige compatibilidad. (Por ejemplo, se obliga al usuario a configurar un PIN).
-
-**En cuarentena** = el sistema operativo del sistema no exige compatibilidad. (Por ejemplo, los dispositivos Android no obligan al usuario a cifrar el dispositivo). Si los dispositivos no son conformes, se emprenden las acciones siguientes:
-
-- El dispositivo se bloquea si se aplica una directiva de acceso condicional al usuario.
-- El portal de empresa notifica al usuario acerca de los problemas de cumplimiento.
-
-## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Creación de una directiva de cumplimiento en el portal de Azure
+## <a name="to-create-a-device-compliance-policy"></a>Pasos para crear una directiva de cumplimiento de dispositivos
 
 1. En la hoja **Intune**, elija **Establecer la compatibilidad con dispositivos**. En **Administrar**, elija **All device compliance policies** (Todas las directivas de cumplimiento de dispositivo) y elija **Crear**.
 2. Escriba un nombre y una descripción y elija la plataforma a la que quiere que se aplique esta directiva.
@@ -67,7 +46,7 @@ En la tabla siguiente se describe cómo administrar la configuración de no conf
 8. Choose **Add** to finish creating the action.
 9. You can create multiple actions and the sequence in which they should occur. Choose **OK** when you are finished creating all the actions.-->
 
-## <a name="assign-user-groups"></a>Asignación de grupos de usuarios
+## <a name="to-assign-user-groups"></a>Pasos para asignar grupos de usuarios
 
 Para asignar una directiva de cumplimiento a los usuarios, elija una directiva que haya configurado. Las directivas existentes se pueden encontrar en la hoja **Directivas de cumplimiento normativo**.
 
@@ -77,6 +56,26 @@ Para asignar una directiva de cumplimiento a los usuarios, elija una directiva q
 Ya ha aplicado la directiva a los usuarios.  Ahora se evaluará el cumplimiento de los dispositivos usados por los usuarios a los que se aplique la directiva.
 
 <!---##  Compliance policy settings--->
+
+## <a name="device-health-and-security-settings"></a>Configuración de estado y la seguridad de dispositivos
+
+- **El dispositivo no debe estar modificado por los métodos de acceso jailbreak o root:** si habilita esta opción, los dispositivos descodificados se considerarán no conformes.
+- **Los dispositivos deben impedir la instalación de aplicaciones de orígenes desconocidos (Android 4.0+)**: para bloquear los dispositivos que tienen **Seguridad** > **Orígenes desconocidos** habilitado, habilite esta configuración y establézcala en **Sí**.
+
+### <a name="important"></a>Importante
+
+Las aplicaciones de instalación de prueba requieren que se habilite la opción **Orígenes desconocidos**. Aplique esta directiva de cumplimiento solo si no tiene aplicaciones Android de instalación de prueba en dispositivos.
+
+- **Requerir que se deshabilite la depuración USB (Android 4.2 o posterior)**: esta opción especifica si está habilitada la opción para detectar la opción de depuración USB en el dispositivo.
+- **Requerir que los dispositivos habiliten el dispositivo de análisis de amenazas de seguridad (Android 4.4 4.2)**: Esta opción especifica que la característica **Comprobar aplicaciones** está habilitada en el dispositivo.
+- **Nivel de revisión de seguridad mínimos de Android (Android 6.0 o posterior)**: Utilice esta opción para especificar el nivel de revisión mínima de Android. No serán compatibles los dispositivos que no están al menos en este nivel de revisión. La fecha debe especificarse en el formato: AAAA-MM-DD.
+- **Requerir que se habilite la Protección contra amenazas del dispositivo**: use esta opción para hacer que la evaluación del riesgo de la solución Lookout MTP sea una condición para el cumplimiento. Elija el nivel de amenaza máximo permitido, que es uno de los siguientes:
+  - **Ninguno (protegido)**: es la más segura. Esto significa que el dispositivo no puede tener ninguna amenaza. Si se detecta cualquier nivel de amenaza en el dispositivo, se evaluará como no conforme.
+  - **Bajo**: el dispositivo se evalúa como conforme si solo hay amenazas de nivel bajo. Cualquier valor por encima coloca al dispositivo en un estado de no conformidad.
+  - **Medio**: el dispositivo se evalúa como conforme si las amenazas presentes en él son de nivel bajo o medio. Si se detecta que el dispositivo tiene amenazas de nivel alto, se determina como no conforme.
+  - **Alto**: esta opción es la menos segura. Básicamente, esto permite todos los niveles de amenaza. Quizás sea útil si está usando esta solución solo con fines informativos.
+
+Para ver más detalles, consulte [Habilitar la regla de protección contra amenazas móviles en la directiva de cumplimiento normativo](https://docs.microsoft.com/en-us/intune/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
 
 ## <a name="system-security-settings"></a>Configuración de seguridad del sistema
 
@@ -101,30 +100,35 @@ Ya ha aplicado la directiva a los usuarios.  Ahora se evaluará el cumplimiento 
 
 - **Requerir cifrado en el dispositivo móvil**: establezca esta opción en **Sí** para exigir que los dispositivos estén cifrados cuando se conecten a los recursos. Los dispositivos se cifran al elegir la opción **Requerir una contraseña para desbloquear dispositivos móviles**.
 
-## <a name="device-health-and-security-settings"></a>Configuración de estado y la seguridad de dispositivos
-
-- **El dispositivo no debe estar modificado por los métodos de acceso jailbreak o root:** si habilita esta opción, los dispositivos descodificados se considerarán no conformes.
-- **Los dispositivos deben impedir la instalación de aplicaciones de orígenes desconocidos (Android 4.0+)**: para bloquear los dispositivos que tienen **Seguridad** > **Orígenes desconocidos** habilitado, habilite esta configuración y establézcala en **Sí**.
-
-### <a name="important"></a>Importante
-
-Las aplicaciones de instalación de prueba requieren que se habilite la opción **Orígenes desconocidos**. Aplique esta directiva de cumplimiento solo si no tiene aplicaciones Android de instalación de prueba en dispositivos.
-
-- **Requerir que se deshabilite la depuración USB (Android 4.2 o posterior)**: esta opción especifica si está habilitada la opción para detectar la opción de depuración USB en el dispositivo.
-- **Requerir que los dispositivos habiliten el dispositivo de análisis de amenazas de seguridad (Android 4.4 4.2)**: Esta opción especifica que la característica **Comprobar aplicaciones** está habilitada en el dispositivo.
-- **Nivel de revisión de seguridad mínimos de Android (Android 6.0 o posterior)**: Utilice esta opción para especificar el nivel de revisión mínima de Android. No serán compatibles los dispositivos que no están al menos en este nivel de revisión. La fecha debe especificarse en el formato: AAAA-MM-DD.
-- **Requerir que se habilite la Protección contra amenazas del dispositivo**: use esta opción para hacer que la evaluación del riesgo de la solución Lookout MTP sea una condición para el cumplimiento. Elija el nivel de amenaza máximo permitido, que es uno de los siguientes:
-  - **Ninguno (protegido)**: es la más segura. Esto significa que el dispositivo no puede tener ninguna amenaza. Si se detecta cualquier nivel de amenaza en el dispositivo, se evaluará como no conforme.
-  - **Bajo**: el dispositivo se evalúa como conforme si solo hay amenazas de nivel bajo. Cualquier valor por encima coloca al dispositivo en un estado de no conformidad.
-  - **Medio**: el dispositivo se evalúa como conforme si las amenazas presentes en él son de nivel bajo o medio. Si se detecta que el dispositivo tiene amenazas de nivel alto, se determina como no conforme.
-  - **Alto**: esta opción es la menos segura. Básicamente, esto permite todos los niveles de amenaza. Quizás sea útil si está usando esta solución solo con fines informativos.
-
-Para ver más detalles, consulte [Habilitar la regla de protección contra amenazas móviles en la directiva de cumplimiento normativo](https://docs.microsoft.com/en-us/intune/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
-
 ## <a name="device-property-settings"></a>Configuración de propiedades de dispositivo
 
 - **Minimum OS required** (SO mínimo necesario): cuando un dispositivo no cumpla el requisito de versión de SO mínima, se notificará como no conforme. Además, se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario puede optar por actualizar el dispositivo, tras lo cual podrá tener acceso a los recursos de la empresa.
 - **Maximum OS version allowed** (Versión de SO máxima permitida): cuando un dispositivo usa una versión de SO posterior a la especificada en la regla, se bloquea el acceso a los recursos de la empresa y se solicita al usuario que se ponga en contacto con el administrador de TI. Mientras no se cambien las reglas para permitir la versión de SO, este dispositivo no podrá usarse para tener acceso a los recursos de la empresa.
+
+## <a name="how-non-compliant-settings-work-with-conditional-access-policies"></a>¿Cómo funciona la configuración de no conformidad con las directivas de acceso condicional?
+
+En la tabla siguiente se describe cómo administrar la configuración de no conformidad cuando se usa una directiva de cumplimiento con una directiva de acceso condicional.
+
+--------------------
+
+|**Configuración de directiva**| **Android 4.0 y versiones posteriores, Samsung Knox Standard 4.0 y versiones posteriores** |
+| --- | ----|
+| **Configuración de PIN o contraseña** |  En cuarentena |
+| **Cifrado del dispositivo** | En cuarentena |
+| **Dispositivo liberado o modificado** | En cuarentena (no es una configuración) |
+| **Perfil de correo electrónico** | No aplicable |
+| **Versión de SO mínima** | En cuarentena |
+| **Versión de SO máxima** |   En cuarentena |
+| **Atestación de estado de Windows** | No aplicable |
+
+--------------------------
+
+**Corregido** = el sistema operativo del dispositivo exige compatibilidad. (Por ejemplo, se obliga al usuario a configurar un PIN).
+
+**En cuarentena** = el sistema operativo del sistema no exige compatibilidad. (Por ejemplo, los dispositivos Android no obligan al usuario a cifrar el dispositivo). Si los dispositivos no son conformes, se emprenden las acciones siguientes:
+
+- El dispositivo se bloquea si se aplica una directiva de acceso condicional al usuario.
+- El portal de empresa notifica al usuario acerca de los problemas de cumplimiento.
 
 <!--- ## Next steps
 

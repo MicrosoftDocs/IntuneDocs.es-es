@@ -1,11 +1,12 @@
 ---
-title: "Configuración del correo electrónico de Intune | Versión preliminar de Intune Azure | Microsoft Docs"
+title: "Cómo configurar opciones de correo electrónico de Intune"
+titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: aprenda a configurar Intune para crear conexiones al correo electrónico corporativo en los dispositivos que administra."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 66c189ed45b8b5226e36ef4769c0872c428646bb
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
+ms.openlocfilehash: 70d013768c07f1782255a309b5941f05c2222912
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -25,13 +27,14 @@ ms.lasthandoff: 02/16/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Se puede usar la configuración del perfil de correo electrónico para configurar dispositivos administrados con los valores necesarios para conectarse al correo electrónico de la empresa y sincronizarlo. Esto ayuda a garantizar que la configuración es estándar en todos los dispositivos y también ayuda a reducir las llamadas al soporte técnico por usuarios finales que no conocen la configuración correcta del correo electrónico.
+Se pueden usar perfiles de correo electrónico para configurar dispositivos administrados con los valores necesarios para conectarse al correo electrónico de la empresa y sincronizarlo. Esto ayuda a garantizar que la configuración es estándar en todos los dispositivos y también ayuda a reducir las llamadas al soporte técnico por usuarios finales que no conocen la configuración correcta del correo electrónico.
 
 El cliente de correo integrado se admite en la mayoría de las plataformas. Actualmente no se admiten la mayoría de aplicaciones de correo electrónico de terceros.
 
 Puede usar perfiles de correo electrónico para configurar el cliente de correo nativo en los siguientes tipos de dispositivo:
 
-- Android 4.0 y versiones posteriores
+- Samsung KNOX Standard 4.0 y versiones posteriores
+- Android for Work
 - iOS 8.0 y versiones posteriores
 - Windows Phone 8.1 y versiones posteriores
 - Windows 10 (escritorio) y Windows 10 Mobile
@@ -42,7 +45,7 @@ Use la información de este tema para conocer los aspectos básicos de la config
 
 1. Inicie sesión en el portal de Azure.
 2. Elija **More Services** >  (Más servicios) **Other** >  (Otros) **Intune**.
-3. En la hoja **Intune**, elija **Configurar dispositivos**.
+3. En la hoja **Intune**, elija **Configuración del dispositivo**.
 2. En la hoja **Configuración del dispositivo**, elija **Administrar** > **Perfiles**.
 3. En la hoja de perfiles, elija **Create Profile** (Crear perfil).
 4. En la hoja **Create Profile** (Crear perfil), escriba un **nombre** y una **descripción** para el perfil de correo electrónico.

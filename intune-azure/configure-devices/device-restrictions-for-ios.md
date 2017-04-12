@@ -1,11 +1,12 @@
 ---
-title: "Configuración de restricciones de dispositivos de Intune para iOS | Versión preliminar de Intune Azure | Microsoft Docs"
+title: "Configuración de restricciones de dispositivos de Intune para iOS"
+titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: conozca los valores de configuración de Intune que puede usar para controlar la configuración y la funcionalidad de los dispositivos iOS."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 2b8bf6d3944f9968d0f4020fbb5c57ef8180062c
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 881ce40cb093b1817c9c4b84c9f8ca78b19de727
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -49,7 +51,8 @@ ms.lasthandoff: 02/16/2017
 -     **Métodos abreviados de teclado (solo supervisados)**: permite el uso de métodos abreviados de teclado.
 -     **Detección de muñeca para Apple Watch enlazado**: cuando se habilita, Apple Watch no muestra notificaciones si no se lleva puesto.
 - **Requerir contraseña de emparejamiento para solicitudes salientes de AirPlay**: solicita una contraseña de emparejamiento cuando el usuario usa AirPlay para transmitir contenido a otros dispositivos Apple.
-- **Modificación de la cuenta (solo supervisado)**: permite al usuario cambiar la configuración de la cuenta, como las configuraciones del correo electrónico.
+- **Modificación de la cuenta (solo supervisada)**: cuando está bloqueada, evita que el usuario modifique la configuración específica del dispositivo desde la aplicación de configuración de iOS, como crear cuentas nuevas del dispositivo y cambiar el nombre de usuario o la contraseña.
+Esto también se aplica a valores accesibles desde la aplicación de configuración de iOS como correo, contactos, calendario, Facebook y Twitter. No es válido para las aplicaciones con la configuración de la cuenta que no se pueden configurar desde la aplicación de configuración de iOS, por ejemplo, la aplicación de Microsoft Outlook.
 - **Emparejamiento con Apple Watch (solo supervisado)**: permite al dispositivo emparejarse con un dispositivo Apple Watch.
 - **Modificación de Bluetooth (solo supervisado)**: impide al usuario cambiar la configuración de Bluetooth del dispositivo.
 - **Observación de pantalla remota mediante la aplicación Classroom (solo supervisado)**: permite o impide que la aplicación Classroom observe la pantalla en dispositivos remotos.
@@ -220,7 +223,7 @@ Use la información de esta lista para identificar el nombre, el publicador y el
 -     **Fototeca de iCloud**: si se establece en **No**, deshabilita el uso de la Fototeca de iCloud, que permite a los usuarios almacenar fotos y vídeos en la nube.    Las fotos que no se hayan descargado completamente de la Fototeca de iCloud al dispositivo se quitarán de este si esta opción se establece en **No**.
 -     **Sincronización de aplicaciones administradas con la nube**: permite que las aplicaciones que se administran con Intune sincronicen los datos con la cuenta de iCloud del usuario.
 -     **Fotos en streaming compartidas**: establezca en **No** para deshabilitar **fotos compartidas en iCloud** en el dispositivo.
--     **Continuación de la actividad**: permite que el usuario continúe el trabajo que inició en un dispositivo iOS en otro dispositivo iOS o Mac OS X (Handoff).
+-     **Continuación de la actividad**: permite que el usuario continúe el trabajo que inició en un dispositivo iOS en otro dispositivo iOS o macOS (Handoff).
 
 ## <a name="kiosk"></a>Pantalla completa
 -     **Bloqueo de activación**: permite el bloqueo de activación en dispositivos iOS supervisados.

@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
 ms.openlocfilehash: 3982f05e4c81c26d2eb8bdab3a266597d6aab4df
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -109,7 +110,7 @@ Use la siguiente información para conocer los formatos permitidos y los caracte
 
     -   Puerto 443 para https
 
-    No se admite el uso de caracteres comodín para el número de puerto. Por ejemplo, **http&colon;//www&period;contoso&period;com:*;** y **http&colon;//www&period;contoso&period;com: /*;** no se admiten.
+    No se admite el uso de caracteres comodín para el número de puerto. Por ejemplo, **http&colon;//www&period;contoso&period;com:*;**y**http&colon;//www&period;contoso&period;com: /*;** no se admiten.
 
 -   Use la siguiente tabla para obtener información sobre los patrones permitidos que puede usar al especificar direcciones URL:
 
@@ -156,9 +157,4 @@ Si se implementan varias directivas de explorador administrado en un dispositivo
 -   Si un dispositivo está recibiendo las directivas de explorador administrado por primera vez y dos directivas están en conflicto, las direcciones URL no se aplicarán en el dispositivo. Utilice el nodo **Conflictos de directivas** del área de trabajo **Directiva** para ver los conflictos.
 
 -   Si un dispositivo ya ha recibido una directiva de explorador administrado y se implementa una segunda directiva con la configuración en conflicto, la configuración original permanece en el dispositivo. Utilice el nodo **Conflictos de directivas** del área de trabajo **Directiva** para ver los conflictos.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

@@ -1,11 +1,12 @@
 ---
-title: "Adición de identificadores IMEI a Intune | Versión preliminar de Intune Azure | Microsoft Docs"
+title: Agregar identificadores IMEI a Intune
+titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: aprenda cómo agregar identificadores corporativos (números de IMEI) a Microsoft Intune. "
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 08dad848a48adad7d9c6f0b5b3286f6550a266bd
-ms.openlocfilehash: 8667f063de65fd5fa86149ac124b236a432eecef
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
+ms.openlocfilehash: e0a853c34c6d38e8fae6f4712ba6c2b767e5d0ba
+ms.lasthandoff: 03/22/2017
 
 ---
 
@@ -24,14 +26,24 @@ ms.lasthandoff: 02/15/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Puede crear una lista de números de identidad de equipo móvil internacional (IMEI) para identificar los dispositivos corporativos. Estos dispositivos pueden o no estar inscritos y tienen un estado de "Inscrito" o "No conectado". "No conectado" significa que el dispositivo nunca se registra con el servicio Intune.
+Como administrador de TI, puede crear e importar un archivo de valores separados por comas (.csv) que incluye los números de identidad internacional de equipos móviles (IMEI) para identificar los dispositivos de la empresa. Cada número IMEI puede tener detalles especificados en la lista para fines administrativos.
 
-Para crear la lista, cree una lista de dos columnas de valores separados por comas (.csv) sin un encabezado. Agregue el identificador IMEI en la columna izquierda y los detalles en la columna derecha. El número máximo actual de filas de la lista es 500.
+## <a name="create-a-csv-file"></a>Creación de un archivo .csv
+Para crear la lista, cree una lista de dos columnas de valores separados por comas (.csv) sin un encabezado. Agregue el identificador IMEI en la columna izquierda y los detalles en la columna derecha. Los detalles se limitan a 128 caracteres. El límite actual es 500 filas por archivo. csv.
 
-En un editor de texto, la lista .csv tiene este aspecto:
+**Cargar un archivo .csv con números de serie**: cree una lista de valores separados por comas (.csv) de dos columnas sin encabezado y limítela a 5000 dispositivos o a 5 MB por archivo .csv.
 
-01 234567 890123,detalles del dispositivo</br>
-02 234567 890123,detalles del dispositivo
+|||
+|-|-|
+|&lt;IMEI n.º 1&gt;|&lt;Detalles del dispositivo n.º 1&gt;|
+|&lt;IMEI n.º 2&gt;|&lt;Detalles del dispositivo n.º 2&gt;|
+
+    This .csv file when viewed in a text editor appears as:
+
+    ```
+    01 234567 890123,device details
+    02 234567 890123,device details
+    ```
 
 **Para agregar una lista .csv de identificadores corporativos**
 
@@ -43,11 +55,18 @@ En un editor de texto, la lista .csv tiene este aspecto:
 
 4. Vaya al archivo CSV de IMEI y seleccione **Agregar**.
 
-**Para eliminar una lista .csv de identificadores corporativos**
+> [!IMPORTANT]
+> Algunos dispositivos Android tienen varios números IMEI. Intune inventaría un número IMEI por dispositivo. Si importa un número IMEI pero no es el IMEI inventariado por Intune, el dispositivo se clasificará como un dispositivo personal en lugar de como un dispositivo propiedad de la empresa. Si importa varios números IMEI para un dispositivo, en el estado de inscripción de los números no inventariados se mostrará **Desconocido**.
+
+Una vez importados, estos dispositivos pueden o no estar inscritos y su estado es **Inscrito** o **No contactado**. **No contactado** significa que el dispositivo nunca se ha comunicado con el servicio Intune.
+
+## <a name="delete-a-csv-list"></a>Eliminación de una lista de .csv
 
 1. En Azure Portal, elija **Más servicios** > **Supervisión y administración** > **Intune**.
 
 2. En la hoja de Intune, elija **Inscribir dispositivos** y luego elija **Identificadores de dispositivo corporativos**.
 
 3. Elija **Eliminar**.
+
+Para obtener especificaciones detalladas sobre identificadores internacionales de equipos móviles, consulte [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729).
 

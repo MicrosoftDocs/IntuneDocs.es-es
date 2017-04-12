@@ -2,8 +2,8 @@
 title: Recopilar registros de dispositivo| Microsoft Docs
 description: "Obtenga información sobre cómo recopilar registros desde sus dispositivos administrados."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 02/07/2017
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 211b996263aae7a42f8370eb343c7e759ef87790
 ms.openlocfilehash: 5aae8edd2b851eb94156e82bc9b6e604644cb900
+ms.lasthandoff: 02/08/2017
 
 
 ---
@@ -57,9 +58,4 @@ En la aplicación de Portal de empresa de Windows Phone, los usuarios eligen los
 ### <a name="windows"></a>Windows
 
 En el portal de empresa para Windows, los registros se encuentran en *%localappdata%\Packages\Microsoft.CompanyPortal_8wekyb3d8bbwe\LocalState*.
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

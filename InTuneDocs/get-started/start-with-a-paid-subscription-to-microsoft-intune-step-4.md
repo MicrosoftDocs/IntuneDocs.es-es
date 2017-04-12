@@ -1,59 +1,49 @@
 ---
-title: Administrar licencias de Intune | Microsoft Docs
+title: Asignar licencias de Intune | Microsoft Docs
 description: "Asignación de licencias a los usuarios de la suscripción de Intune."
 keywords: 
-author: nathbarn
-ms.author: nathbarn
+author: lindavr
+ms.author: lindavr
 manager: angrobe
-ms.date: 02/14/2017
+ms.date: 03/28/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
-ms.reviewer: jeffgilb
+ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: b6ab60eff3c65244290b7141e81a7b052dd790ed
-ms.lasthandoff: 02/15/2017
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: b2fc3a3dc47466313a54d2f6aef6b67dff8d7343
+ms.lasthandoff: 03/29/2017
 
 
 ---
 
-# <a name="manage-intune-licenses"></a>Administración de licencias de Intune
+# <a name="assign-intune-licenses-to-your-user-accounts"></a>Asignar licencias de Intune a las cuentas de usuario
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-En este tema se explica a los administradores cómo asignar licencias de Intune a usuarios para que puedan agregar dispositivos a la administración.
+Tanto si quiere agregar usuarios manualmente como si quiere sincronizar desde Active Directory local, debe asignar primero a cada usuario una licencia de Intune para que los usuarios puedan inscribir sus dispositivos en Intune.
 
-Antes de que los usuarios puedan iniciar sesión para usar el servicio de Intune o inscribir sus dispositivos en la administración, primero debe asignar a cada uno de ellos una licencia a su suscripción de Intune en el [Portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854).
+## <a name="assign-an-intune-license-in-the-office-365-admin-center"></a>Asignar una licencia de Intune en el Centro de administración de Office 365
 
-Las organizaciones que usan Microsoft Enterprise Mobility + Security (EMS) pueden tener usuarios que solo necesiten Azure Active Directory Premium o los servicios de Intune en el paquete de EMS. Puede asignar un servicio o un conjunto de ellos mediante los [cmdlets de PowerShell de Azure Active Directory](https://msdn.microsoft.com/library/jj151815.aspx). Para obtener más información, vea [licencias de Intune administrar con PowerShell](start-with-a-paid-subscription-to-microsoft-intune-step-4-posh.md).
+Puede usar el [Portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) para agregar manualmente usuarios basados en la nube y asignar licencias a las cuentas de usuario basadas en la nube y a las cuentas sincronizadas desde Active Directory local con Azure AD.
 
-## <a name="how-intune-licenses-are-assigned"></a>Cómo se asignan las licencias de Intune
-Cuando las cuentas de usuario se sincronizan desde Active Directory local o se agregan manualmente a su suscripción de servicios en la nube a través del [portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854), no se les asigna automáticamente una licencia de Intune. En vez de ello, un administrador de inquilinos de Intune deberá editar posteriormente la cuenta de usuario para asignar una licencia al usuario desde el portal de Office 365.
+1.  Inicie sesión en el [Portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) con las credenciales de administrador de inquilinos y luego elija **Contactos** > **Usuarios activos**.
 
-Cuando la suscripción comparte Azure AD con otros servicios en la nube asociados a la suscripción, usted también debe tener acceso a los usuarios que se agregaron a esos servicios. Estos usuarios no tienen una licencia para [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] hasta que le asigne una licencia a cada uno de ellos.
+2.  Seleccione la cuenta de usuario a la que quiere asignar una licencia de usuario de Intune y luego elija **Licencias de producto** > **Editar**.
 
-> [!TIP]
-> Si la opción de asignar o revocar una licencia de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] está deshabilitada, la suscripción podría incluir opciones de licencias por volumen, como las disponibles cuando se usa [Enterprise Mobility Suite + Security](https://www.microsoft.com/en-us/server-cloud/enterprise-mobility/overview.aspx). Para obtener información acerca de cómo asignar o revocar licencias, consulte la documentación de las opciones de licencia.
+3.  Alterne entre **Intune** o **Enterprise Mobility + Security** en **Activado** y elija **Guardar**.
 
-## <a name="assign-an-intune-user-license"></a>Asigne una licencia de usuario de Intune
-
-El [portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) se usa para agregar manualmente usuarios basados en la nube y asignar licencias a las cuentas de usuario basadas en la nube y a las cuentas sincronizadas desde Active Directory local con Azure AD.
-
-1.  Inicie sesión en el [portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) con las credenciales del administrador de inquilinos y, después, seleccione **Contactos** > **Todos los usuarios**.
-
-2.  Seleccione la cuenta de usuario a la que desea asignar una licencia de Intune y, a continuación, seleccione **Microsoft Intune** (independiente) o **Enterprise Mobility Suite**.
-
-3.  Ahora, la cuenta de usuario tiene los permisos necesarios para usar el servicio e inscribir dispositivos en la administración.
+4. Ahora, la cuenta de usuario tiene los permisos necesarios para usar el servicio e inscribir dispositivos en la administración.
 
 > [!NOTE]
-> Los usuarios aparecerán en la consola cuando hayan inscrito un dispositivo.
+> Los usuarios solo aparecerán en la consola de administración cuando hayan inscrito un dispositivo. Además, puede seleccionar un grupo de usuarios para editarlos a la vez, ya sea seleccionando agregar o reemplazar una licencia para todos los usuarios seleccionados.
 
-### <a name="use-powershell-to-selectively-manage-ems-user-licenses"></a>Usar PowerShell para administrar de forma selectiva las licencias de usuario de EMS
+## <a name="use-powershell-to-selectively-manage-ems-user-licenses"></a>Usar PowerShell para administrar de forma selectiva las licencias de usuario de EMS
 Las organizaciones que usan Microsoft Enterprise Mobility + Security (anteriormente denominado Enterprise Mobility Suite) pueden tener usuarios que solo necesiten Azure Active Directory Premium o los servicios de Intune en el paquete de EMS. Puede asignar un servicio o un subconjunto de servicios mediante los [cmdlets de PowerShell de Azure Active Directory](https://msdn.microsoft.com/library/jj151815.aspx).
 
 Para asignar licencias de usuario de forma selectiva a los servicios de EMS, abra PowerShell como administrador en un equipo que tenga instalado el [módulo de Azure Active Directory para Windows PowerShell](https://msdn.microsoft.com/library/jj151815.aspx#bkmk_installmodule). Puede instalar PowerShell en un equipo local o en un servidor de ADFS.
@@ -84,10 +74,8 @@ Deshabilite la parte de Intune de la licencia de EMS de un usuario que ya tenga 
 
     Connect-MsolService
 
-    Set-MsolUserLicense -UserPrincipalName user@<TenantName>.onmicrosoft.com -RemoveLicenses IAPProdPartnerTest:EMS
-
     $CustomEMS = New-MsolLicenseOptions -AccountSkuId "<TenantName>:EMS" -DisabledPlans INTUNE_A
-    Set-MsolUserLicense -UserPrincipalName user@<TenantName>.onmicrosoft.com -AddLicenses <TenantName>:EMS -LicenseOptions $CustomEMS
+    Set-MsolUserLicense -UserPrincipalName user@<TenantName>.onmicrosoft.com -LicenseOptions $CustomEMS
 
 Realice la comprobación con lo siguiente:
 

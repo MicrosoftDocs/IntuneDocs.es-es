@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: arob98
-ms.date: 01/31/2017
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 6e2658cdfcd0b78a254c375fe39b67f7ef9afad6
+ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
+ms.openlocfilehash: 7f94d420529ff365504b2bb053d034cf36d30953
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -171,11 +172,12 @@ Puede supervisar el estado de infección con malware en sus equipos a través de
 ### <a name="how-to-view-recent-detection-paths-for-malware-on-computers"></a>Cómo ver las rutas de acceso de detección recientes de malware en equipos
 Intune puede mostrar las rutas de acceso de hasta 10 de las instancias de malware detectadas más recientemente en un dispositivo. La opción **Rutas de acceso de detección recientes** está deshabilitada de forma predeterminada. Para habilitar esta vista:
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), seleccione **Grupos** > **Todos los dispositivos** > **Malware**.
+1. En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), elija **Grupos** > **Todos los dispositivos** > **Todos los equipos**.
+2. Haga clic en el equipo cuyas rutas de acceso de detección recientes desea ver y seleccione **Propiedades**.
+3. Seleccione **Malware** desde las pestañas de la parte superior.
 
-2.  Haga clic con el botón derecho en un encabezado de columna. Aparece una lista de las columnas disponibles.
-
-3.  Active la casilla **Rutas de acceso de detección recientes** de la lista. La columna **Rutas de acceso de detección recientes** aparece y muestra hasta 10 de las instancias de malware supervisadas más recientemente en el dispositivo.
+   ![Seleccione la pestaña Malware y después haga clic en la casilla Rutas de acceso de detección recientes.](../media/malware-path-column.png)
+4. Haga clic con el botón derecho en un encabezado de columna. Aparece una lista de las columnas disponibles. Active la casilla **Rutas de acceso de detección recientes** de la lista. La columna **Rutas de acceso de detección recientes** aparece y muestra hasta 10 de las instancias de malware supervisadas más recientemente en el dispositivo.
 
 ## <a name="run-a-malware-scan-or-update-malware-definitions-on-a-computer"></a>Ejecutar un examen de malware o actualizar las definiciones de malware en un equipo
 Intune puede ejecutar un examen rápido o completo de malware mediante Endpoint Protection o Windows Defender en un equipo administrado de forma remota que tenga instalado el cliente de Intune.
@@ -184,17 +186,9 @@ Intune puede ejecutar un examen rápido o completo de malware mediante Endpoint 
 
 2. Seleccione la lista desplegable **Tareas remotas** y, después, la tarea que se va a ejecutar en el equipo remoto.
 
-
-
-
 ## <a name="need-more-help"></a>¿Necesita más ayuda?
 Para obtener más ayuda y soporte técnico, vea [Solucionar problemas de Endpoint Protection en Microsoft Intune](/intune/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune).
 
 ### <a name="see-also"></a>Consulte también
 [Directivas para proteger equipos de Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

@@ -2,10 +2,10 @@
 title: "Especificar números IMEI | Microsoft Docs"
 description: "Microsoft Intune permite a los administradores importar números IMEI de plataformas de dispositivos móviles para ayudar a identificar dispositivos móviles corporativos"
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: NathBarn
+ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2016
+ms.date: 03/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbc9e94d3fc5dc7e69f5d59ca1d52493b2beefc3
-ms.openlocfilehash: 5fa3c62553403dfafd182a691f611ba12a2d729c
+ms.sourcegitcommit: e76d66768ac58df25313e102b7f60d2bc7bbc59b
+ms.openlocfilehash: 02743ee216ce09c74a9d0ab2455e826b36e8aa4a
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -29,7 +30,7 @@ Microsoft Intune permite que los administradores importen números de identidad 
 
 1. En la [consola de administración de Microsoft Intune](http://manage.microsoft.com), elija **Grupos** &gt; **Todos los dispositivos** &gt; **Todos los dispositivos corporativos inscritos previamente** &gt; **Mediante IMEI (todas las plataformas)** y, luego, **Agregar dispositivos...** Puede agregar dispositivos de dos maneras:
 
-    -   **Cargar un archivo .csv con números de serie**: cree una lista de valores separados por comas (.csv) de dos columnas sin encabezado y limítela a 5000 dispositivos o a 5 MB por archivo .csv.
+    -   **Cargar un archivo .csv con números de serie**: cree una lista de valores separados por comas (.csv) de dos columnas sin encabezado y limítela a 5000 dispositivos o a 5 MB por archivo .csv. El campo de detalles tiene un límite de 128 caracteres.
 
         |||
         |-|-|
@@ -38,8 +39,8 @@ Microsoft Intune permite que los administradores importen números de identidad 
         Este archivo .csv, cuando se ve en un editor de texto, aparece como:
 
         ```
-        AABBBBBBCCCCCCD,PO 1234
-        AABBBBBBCCCCCCE,PO 1234
+        01 234567 890123,device details
+        02 234567 890123,device details
         ```
 
     -   **Agregar manualmente los detalles del dispositivo**: especifique el número IMEI y los detalles de 15 dispositivos como máximo.
@@ -50,13 +51,13 @@ Microsoft Intune permite que los administradores importen números de identidad 
 3.  En el panel **Revisar dispositivos**, puede confirmar los números IMEI de dispositivos importados. También puede decidir si sobrescribe los **Detalles** de los números IMEI que se van a volver a importar. Puede desactivar la casilla **Sobrescribir** para conservar los detalles actuales. Seleccione **Finalizar** para importar los números IMEI.
 4.  Los números IMEI importados y las descripciones se agregan a la lista **Mediante IMEI (todas las plataformas)**.
 
+> [!IMPORTANT]
+> Si va a importar los números IMEI para dispositivos Android, tenga en cuenta que algunos dispositivos Android pueden tener varios números IMEI. Si importa un número IMEI pero no es el IMEI notificado por el dispositivo a Intune, el dispositivo se clasificará como un dispositivo personal en lugar de como un dispositivo propiedad de la empresa.
+
 Cuando se inscribe un dispositivo con número IMEI en Intune, normalmente cuando un usuario instala la aplicación Portal de empresa y completa el proceso de inscripción, el dispositivo se etiqueta como corporativo y aparece como inscrito en el grupo **Dispositivos IMEI**.
 
->[!NOTE] 
+>[!NOTE]
 > Cuando su organización se migre al nuevo Azure Portal en un futuro próximo, verá un cambio en esta característica. En la consola de administrador de Intune existente, los administradores pueden aceptar detalles asociados desde un archivo CSV cargado y sobrescribir los detalles existentes de identificadores de hardware individuales. En el nuevo Azure Portal, podrá sobrescribir de forma automática los detalles de todos los identificadores de hardware o ignorar todos los nuevos detalles de los identificadores existentes.
 
-
-
-<!--HONumber=Feb17_HO1-->
-
+Para obtener especificaciones detalladas sobre identificadores internacionales de equipos móviles, consulte [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729).
 

@@ -1,5 +1,6 @@
 ---
-title: "Configuración de VPN de Intune para dispositivos macOS | Versión preliminar de Intune Azure | Microsoft Docs"
+title: "Configuración de VPN de Intune para dispositivos macOS"
+titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: aprenda sobre la configuración de Intune que puede usar para configurar conexiones VPN en dispositivos macOS."
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: d203a70d-37df-4195-85f7-ad5ef14ac2a1
 ms.reviewer: karanda
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 758573964627b1d5e4f98ea3729df696bf96bf1c
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
+ms.openlocfilehash: 068dcd5209ff1cc2b2799919fe38bdfbf809423a
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -43,7 +45,7 @@ Según la configuración que elija, no todos los valores de la siguiente lista s
     - **VPN personalizada**
 - **Tunelización dividida** - : puede **Habilitar** o **Deshabilitar** esta opción, que permite que los dispositivos decidan qué conexión usar en función del tráfico. Por ejemplo, un usuario en un hotel usará la conexión VPN para acceder a los archivos de trabajo, pero usará la red normal del hotel para la exploración web habitual.
 
-<!--- **Per-app VPN** - Select this option if you want to associate this VPN connection with an iOS or Mac OS X app so that the connection will be opened when the app is run. You can associate the VPN profile with an app when you deploy the software. For more information, see [How to deploy and monitor apps](/intune-azure/manage-apps/deploy-apps). --->
+<!--- **Per-app VPN** - Select this option if you want to associate this VPN connection with an iOS or macOS app so that the connection will be opened when the app is run. You can associate the VPN profile with an app when you deploy the software. For more information, see [How to deploy and monitor apps](/intune-azure/manage-apps/deploy-apps). --->
 
 ## <a name="custom-vpn-settings"></a>Configuración de VPN personalizada
 

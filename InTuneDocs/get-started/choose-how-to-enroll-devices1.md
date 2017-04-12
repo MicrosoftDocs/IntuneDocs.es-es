@@ -13,9 +13,11 @@ ms.technology:
 ms.assetid: d2989e39-9b76-411b-b6fb-7209adb3bfb6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
+ms.custom: intune-classic EXPIERIMENT
 translationtype: Human Translation
 ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
 ms.openlocfilehash: 0b368ad490672c3d554dcb004e07b883e4851ee1
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -36,9 +38,4 @@ Las respuestas a la siguiente serie de preguntas le servirán para saber cuál e
 - **Dispositivos propiedad de los usuarios** (Bring your own device o "BYOD"): los usuarios pueden instalar la aplicación de portal de empresa de Intune en sus dispositivos y, luego, inscribirlos para obtener acceso a recursos de la empresa, como el correo electrónico, aplicaciones de empresa, datos de la compañía y soporte técnico.  
 
 - **Dispositivos propiedad de la empresa:** los dispositivos propiedad de la empresa (COD) se pueden inscribir de diversas formas, según cuáles sean las necesidades de la organización y los tipos de dispositivos administrados.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

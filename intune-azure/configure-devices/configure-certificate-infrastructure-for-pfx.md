@@ -1,11 +1,12 @@
 ---
-title: "Configuración de la infraestructura de certificados de Intune para PKCS | Versión preliminar de Intune Azure | Microsoft Docs"
+title: "Configuración de la infraestructura de certificados de Intune para PKCS"
+titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: aprenda a configurar su infraestructura para usar certificados PKCS con Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 03/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: e189ebd1-6ca1-4365-9d5d-fab313b7e979
 ms.reviewer: vinaybha
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 6f08dc63a9afaa5e92b188883d160d0b76f3631f
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
+ms.openlocfilehash: ed1d6ce687666e1630ca25b08db72d6c99ef617a
+ms.lasthandoff: 03/13/2017
 
 
 
@@ -84,12 +86,12 @@ En esta tarea se publicará la plantilla de certificado.
     -   En la pestaña **Extensiones** , asegúrese de que **Descripción de las directivas de aplicación** incluya **Autenticación del cliente**.
 
         > [!IMPORTANT]
-        > En el caso de plantillas de certificado de iOS y Mac OS X, en la pestaña **Extensiones**, edite **Uso de claves** y asegúrese de que la opción **Firma como prueba de origen** no esté seleccionada.
+        > En el caso de plantillas de certificado de iOS y macOS, en la pestaña **Extensiones**, edite **Uso de claves** y asegúrese de que la opción **Firma como prueba de origen** no esté seleccionada.
 
 2.  Revise la configuración de **Período de validez** en la pestaña **General** de la plantilla. Intune usa de forma predeterminada el valor configurado en la plantilla. Pero tiene la opción de configurar la CA para permitir que el solicitante especifique otro valor, lo que se puede establecer desde la consola de administrador de Intune. Si desea usar siempre el valor de la plantilla, omita el resto de este paso.
 
     > [!IMPORTANT]
-    > Las plataformas iOS y Mac OS X siempre usan el valor establecido en la plantilla, con independencia de otras configuraciones que efectúe.
+    > iOS y macOS siempre usa el valor establecido en la plantilla con independencia de otras configuraciones que realice.
 
     Para configurar la CA para permitir que el solicitante especifique el período de validez, ejecute los siguientes comandos en la CA:
 

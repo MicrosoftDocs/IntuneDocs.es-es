@@ -2,8 +2,8 @@
 title: "Usar directivas para simplificar la administración de PC de Windows | Microsoft Docs"
 description: "Describe las directivas de administración de PC de Windows y la configuración de Microsoft Intune Center."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 10dd2caa9ce1b96424f55e373e904a778390eb15
 ms.openlocfilehash: da0dad4cd40a21aec9485f46ff918a48611b869d
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -61,9 +62,4 @@ Consulte los siguientes recursos para obtener información sobre las directivas 
 ### <a name="see-also"></a>Consulte también
 
 [Tareas comunes de administración de equipos Windows con el cliente de software de Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

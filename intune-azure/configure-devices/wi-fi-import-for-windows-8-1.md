@@ -1,5 +1,6 @@
 ---
-title: "Importación de la configuración de Wi-Fi para Windows 8.1 y posterior | Versión preliminar de Intune Azure | Microsoft Docs"
+title: "Importar la configuración de Wi-Fi para dispositivos Windows 8.1 y posterior"
+titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: cómo importar la configuración de Wi-Fi de Windows a un perfil de Wi-Fi de Intune."
 keywords: 
 author: robstackmsft
@@ -13,10 +14,11 @@ ms.technology:
 ms.assetid: 2c4e9b19-b268-4f6d-9663-7cdbe4e4a8dd
 ms.reviewer: heenamac
 ms.suite: ems
+ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b4d095506215b775d56d172e9aabae1737757310
-ms.openlocfilehash: 2600c8363c677465e29af382fa5ef4a921048fef
-ms.lasthandoff: 02/16/2017
+ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
+ms.openlocfilehash: 9f98a786e97afbb93628609808637def0a7e8fe8
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -39,7 +41,7 @@ En Windows, use la utilidad **netsh wlan** para exportar un perfil de Wi-Fi exis
 
 1. Inicie sesión en el portal de Azure.
 2. Elija **More Services** >  (Más servicios) **Other** >  (Otros) **Intune**.
-3. En la hoja **Intune**, elija **Configurar dispositivos**.
+3. En la hoja **Intune**, elija **Configuración del dispositivo**.
 2. En la hoja **Configuración del dispositivo**, elija **Administrar** > **Perfiles**.
 3. En la hoja de perfiles, haga clic en **Create Profile** (Crear perfil).
 4. En la hoja **Create Profile** (Crear perfil), escriba un **nombre** y una **descripción** para el perfil de restricción de dispositivo.

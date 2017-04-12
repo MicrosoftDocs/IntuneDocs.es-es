@@ -2,8 +2,8 @@
 title: "Solucionar los problemas de configuración del cliente | Microsoft Docs"
 description: "Solucione los problemas comunes de configuración de cliente."
 keywords: 
-author: staciebarker
-ms.author: staciebarker
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/22/2017
 ms.topic: article

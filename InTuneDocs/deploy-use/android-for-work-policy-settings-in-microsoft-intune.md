@@ -16,8 +16,9 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
-ms.openlocfilehash: b95f7dbf37a159a62894ae27d1fdb731ede5570c
+ms.sourcegitcommit: 02c844a5b38023a6dfc6c4ef1de81e1416601fba
+ms.openlocfilehash: b0c3520c7c1fd29a631587fe1a69d4c411099cb4
+ms.lasthandoff: 03/07/2017
 
 
 ---
@@ -58,7 +59,7 @@ Si el valor que busca no aparece en este tema, puede crearlo mediante una direct
 |----------------|-|
 |**Permitir uso compartido de datos entre perfiles de trabajo y personales**|Permite a las aplicaciones del perfil de trabajo compartir datos con las aplicaciones del perfil personal de los usuarios. Elija de entre las siguientes opciones:<br><br>- **Impide el uso compartido más allá de los límites**<br>- **Las aplicaciones de un perfil de trabajo pueden controlar la solicitud de uso compartido desde un perfil personal**<br>- **No hay restricciones para el uso compartido**|
 |**Ocultar notificaciones del perfil de trabajo cuando el dispositivo está bloqueado**<br>(Android 6 y versiones posteriores)|Controle si se muestran las notificaciones del perfil de trabajo cuando el dispositivo está bloqueado.|
-|**Establecer directiva de permisos de aplicación predeterminada**<br>(Android 6 y versiones posteriores)|Establece la directiva de permisos predeterminada para todas las aplicaciones del perfil de trabajo.|
+|**Establecer directiva de permisos de aplicación predeterminada**<br>(Android 6 y versiones posteriores)|Establece la directiva de permisos predeterminada para todas las aplicaciones del perfil de trabajo. A partir de Android 6, algunos permisos requeridos por las aplicaciones se solicitan al usuario final en tiempo de ejecución.  Esta configuración de directiva permite a TI decidir cómo o si se pide a los usuarios que concedan permisos para las aplicaciones en el perfil de trabajo. <br/><br/>Por ejemplo, TI puede insertar una aplicación en el perfil de trabajo que requiere acceso de ubicación.  Normalmente, esa aplicación podría aparecer en un cuadro de diálogo al usuario preguntando si desea conceder el acceso de la ubicación a la aplicación y el usuario puede aprobarlo o rechazarlo.  Esta directiva permite que TI decidir si todos los permisos deben concederse automáticamente sin preguntar al usuario, denegarse automáticamente sin preguntar al usuario o dejar que el usuario final decida.|
 
 
 ## <a name="custom-policy-settings"></a>Configuración de directivas personalizadas
@@ -91,9 +92,4 @@ Intune admite un número limitado de directivas personalizadas de Android en est
 
 ### <a name="see-also"></a>Consulte también
 [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c09c0b5d76a3035b2af82fe32d4b6c6e35d06baf
-ms.openlocfilehash: 46b140db09163187c68385d0919edb9a58056923
+ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
+ms.openlocfilehash: e71ebacec9d7b890b41e7650c8c50f42952c6326
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -32,17 +33,17 @@ Como parte de la protección de los datos de la empresa es necesario asegurarse 
 
 -   También puede implementar y administrar aplicaciones a través del **canal de administración de dispositivos móviles (MDM)**.  Esto requiere la inscripción de los dispositivos en la solución de MDM. Se puede tratar de aplicaciones **administradas por directivas** u otras aplicaciones administradas.
 
-La característica de **administración Open In** (o administración de "Abrir en") para dispositivos iOS puede limitar las transferencias de archivos para que solo se realicen entre las aplicaciones que se implementan en los dispositivos mediante el **canal de MDM**. Las restricciones de administración de Open In se establecen en los valores de configuración y se implementan con la solución MDM.  Cuando el usuario instala la aplicación implementada, se aplican las restricciones que usted defina.
+La característica de **administración de Open In** para dispositivos iOS puede limitar las transferencias de archivos para que solo se realicen entre las aplicaciones que se implementan en los dispositivos mediante el **canal de MDM**. Las restricciones de administración de Open In se establecen en los valores de configuración y se implementan con la solución MDM.  Cuando el usuario instala la aplicación implementada, se aplican las restricciones que usted defina.
 
 ##  <a name="manage-data-transfer-between-ios-apps"></a>Administrar la transferencia de datos entre aplicaciones iOS
 Las directivas de protección de aplicaciones se pueden usar con la característica de **administración Open In** de iOS para proteger los datos de la empresa de las siguientes formas:
 
 -   **Dispositivos propiedad de los empleados no administrados por una solución MDM:** puede establecer la [configuración de directiva de protección de aplicaciones](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) en **Allow app to transfer data to only managed apps** (Permitir a la aplicación transferir datos solo a aplicaciones administradas). Si el usuario final abre un archivo protegido en una aplicación no administrada por directivas, el archivo es ilegible.
 
--   **Dispositivos administrados por Intune:** en el caso de los dispositivos inscritos en Intune, se permite automáticamente la transferencia de datos entre aplicaciones con directivas de protección de aplicaciones y otras aplicaciones iOS administradas que se hayan implementado a través de Intune. Para permitir la transferencia de datos entre aplicaciones con directivas de protección de aplicaciones, habilite la opción **Allow app to transfer data to only managed apps** (Permitir a la aplicación transferir datos solo a aplicaciones administradas). Puede usar la característica de **administración Open In** para controlar la transferencia de datos entre aplicaciones que estén implementadas a través de Intune.   
+-   **Dispositivos administrados por Intune**: para los dispositivos inscritos en Intune, se permite automáticamente la transferencia de datos entre aplicaciones con directivas de protección de aplicaciones y otras aplicaciones iOS administradas que se hayan implementado mediante Intune. Para permitir la transferencia de datos entre aplicaciones con directivas de protección de aplicaciones, habilite la opción **Allow app to transfer data to only managed apps** (Permitir a la aplicación transferir datos solo a aplicaciones administradas). Puede usar la característica de **administración Open In** para controlar la transferencia de datos entre aplicaciones que estén implementadas a través de Intune.   
 
 -   **Dispositivos administrados por una solución MDM de terceros:** puede usar la característica de **administración Open In** para restringir la transferencia de datos a solo las aplicaciones administradas.
-Para asegurarse de que las aplicaciones que se implementen mediante la solución MDM de otros fabricantes también estén asociadas a las directivas de protección de aplicaciones que haya configurado en Intune, debe configurar el valor de UPN de usuario como se describe en el tutorial [Configurar el valor de UPN de usuario](#configure-user-upn-setting-for-third-party-emm).  Al implementar aplicaciones con el valor de UPN de usuario, las directivas de protección de aplicaciones también se usan para la aplicación en cuestión cuando el usuario final inicia sesión con su cuenta profesional.
+Para asegurarse de que las aplicaciones que se implementan mediante la solución MDM de otros fabricantes también están asociadas con las directivas de protección de aplicaciones que ha configurado en Intune, debe configurar el valor de UPN de usuario como se describe en el tutorial [Configurar el valor de UPN de usuario](#configure-user-upn-setting-for-third-party-emm).  Si se implementan aplicaciones con el valor de UPN de usuario, las directivas de protección de aplicaciones se aplican a la aplicación cuando el usuario final inicia sesión con su cuenta profesional.
 
 > [!IMPORTANT]
 > El valor de UPN de usuario solo se necesita para aplicaciones implementadas en dispositivos administrados por MDM de terceros.  Para dispositivos administrados por Intune, este valor no es necesario.
@@ -59,7 +60,7 @@ La configuración del valor de UPN de usuario es **necesaria** para los disposit
 
       **clave** = IntuneMAMUPN, **valor** = <username@company.com>
 
-      Ejemplo: ['IntuneMAMUPN',‘jondoe@microsoft.com’]
+      Ejemplo: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
   2.  Implemente la directiva de administración Open In mediante su proveedor de MDM externo en los dispositivos inscritos.
 
@@ -74,11 +75,11 @@ La configuración del valor de UPN de usuario es **necesaria** para los disposit
 
   La sintaxis exacta del par clave-valor puede diferir en función del proveedor de MDM externo. En la siguiente tabla se incluyen ejemplos de proveedores de MDM externos y los valores exactos que debe escribir para el par clave-valor.
 
-|Proveedor de MDM externo| Clave de configuración | Tipo de valor | Valor de configuración|
+|Proveedor de MDM externo| Configuration Key | Tipo de valor | Valor de configuración|
 | ------- | ---- | ---- | ---- |
-|VMware AirWatch| IntuneMAMUPN | String | {UserPrincipalName}|
-|MobileIron | IntuneMAMUPN | String | ${userUPN} **o** ${userEmailAddress} |
-
+| VMware AirWatch | IntuneMAMUPN | String | {UserPrincipalName}|
+| MobileIron Core | IntuneMAMUPN | String | $EMAIL$ **o** $USER_UPN$ |
+| MobileIron Cloud | IntuneMAMUPN | String | ${userUPN} **o** ${userEmailAddress} |
 
 ### <a name="example-2-end-user-experience"></a>Ejemplo 2: Experiencia del usuario final
 
@@ -95,7 +96,7 @@ La configuración del valor de UPN de usuario es **necesaria** para los disposit
 
 5.  Cuando el inicio de sesión se realiza correctamente, la configuración de directivas de protección de aplicaciones se aplica a Word.
 
-6.  De este modo, la transferencia de datos se realiza correctamente y el documento se etiqueta como identidad corporativa en la aplicación. Además, los datos se tratan en un contexto de trabajo en el que la configuración de directivas se aplica en consecuencia.
+6.  Ahora la transferencia del archivo se ha realizado correctamente y el documento se etiqueta como identidad corporativa en la aplicación. Además, el archivo se trata en un contexto de trabajo en el que la configuración de directivas se aplica en consecuencia.
 
 ### <a name="validate-user-upn-setting-for-third-party-emm"></a>Validar el valor de UPN de usuario para EMM de terceros
 
@@ -109,9 +110,4 @@ Primero, [cree e implemente una directiva de protección de aplicaciones](create
 
 ### <a name="see-also"></a>Consulte también
 [Protección de datos de aplicaciones con directivas de protección de aplicaciones mediante Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

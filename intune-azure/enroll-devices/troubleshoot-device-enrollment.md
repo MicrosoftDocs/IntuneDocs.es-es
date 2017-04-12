@@ -3,8 +3,8 @@ title: "Solucionar problemas de inscripción de dispositivos"
 titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: aprenda a solucionar problemas de inscripción de dispositivos."
 keywords: 
-author: staciebarker
-ms.author: stabar
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
@@ -18,6 +18,7 @@ ms.custom: intune-azure
 translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: 9fff350240e4313994056bc5aebf82e204ab3c62
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -388,9 +389,4 @@ Este error puede deberse a que el equipo se inscribió anteriormente o a que tie
 
 ### <a name="next-steps"></a>Pasos siguientes
 Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el servicio de soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune) (Cómo obtener soporte técnico de Microsoft Intune).
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
