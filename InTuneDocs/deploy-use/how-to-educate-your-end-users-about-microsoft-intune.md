@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 04/10/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +14,16 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bb2848e42e0e842bd8049ab74904c70c582d6917
-ms.openlocfilehash: 5f01c174be566b9dd645bb058de501b02693e07e
-ms.lasthandoff: 02/23/2017
+ms.sourcegitcommit: bed28fc91271c12377f45662aa00fc9616d16fe8
+ms.openlocfilehash: 3d3f35f38a4d6f09f8fdc3e1bbc1c6ca5af6bbe7
+ms.lasthandoff: 04/11/2017
 
 
 ---
 
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Cómo presentar Microsoft Intune a los usuarios finales
 
-Microsoft Intune permite capacitar a los empleados con dispositivos móviles manteniendo protegidos los datos corporativos. Hay muchos pasos para garantizar una implementación correcta, incluidos la evaluación de Intune por medio de una [prueba gratuita](/Intune/Understand/mobile-device-management-trial-guide-microsoft-intune.md), la [protección del correo electrónico](/Intune/Understand/common-ways-to-use-intune#protecting-your-office-365-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices.md) y la [incrustación de las aplicaciones con el SDK de Intune](/intune/develop/intune-app-sdk.md).
+Microsoft Intune permite capacitar a los empleados con dispositivos móviles manteniendo protegidos los datos corporativos. Hay muchos pasos para garantizar una implementación correcta, incluidos la evaluación de Intune por medio de una [prueba gratuita](/Intune/Understand/mobile-device-management-trial-guide-microsoft-intune.md), la [protección del correo electrónico](https://docs.microsoft.com/intune/understand-explore/common-ways-to-use-intune#protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices) y la [incrustación de las aplicaciones con el SDK de Intune](/intune/develop/intune-app-sdk.md).
 
 Ninguna de estas tecnologías garantiza que los usuarios entiendan la importancia de administrar los dispositivos. De hecho, muchos de los usuarios finales pueden sentir que se infringe su privacidad, especialmente si se ha implementado Intune como una [solución BYOD](/enterprise-mobility-security/solutions/byod-design-considerations-guide.md).
 
