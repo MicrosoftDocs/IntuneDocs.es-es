@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f807d6e4b20b98ecf622d1ebdd9db33b132a2e6a
-ms.openlocfilehash: 2e46c5612c120a24d3f8fe32decd3eb7a0d4e709
+ms.sourcegitcommit: d10906ee3fb69458738b31bb1d4252d632a9a0cf
+ms.openlocfilehash: 6014527422ea3dae4d1333965ccd9e48e8216afb
+ms.lasthandoff: 04/08/2017
 
 
 ---
@@ -91,12 +92,7 @@ Los desafíos de la implementación son problemas que son esenciales para una or
 <br>
     -   **Mitigación:** aunque es posible que esté emocionado por comenzar el proyecto, asegúrese de tener los objetivos definidos claramente. Inclúyalos en todas las actividades de difusión y aprendizaje para ayudar a garantizar que los usuarios entiendan por qué la organización ha seleccionado Intune.
 
-## <a name="next-section"></a>Sección siguiente
+## <a name="next-steps"></a>Pasos siguientes
 
 Ahora que ha identificado los objetivos y metas de la implementación, y los desafíos potenciales, vayamos a la sección siguiente: [Identificar escenarios de casos de uso](section-2-identify-use-case-scenarios.md).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
