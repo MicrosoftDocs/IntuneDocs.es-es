@@ -48,11 +48,11 @@ Además, es necesario [Microsoft Authenticator](https://docs.microsoft.com/azure
 
 1.  En la consola clásica de Intune, elija **Aplicaciones** &gt; **Agregar aplicaciones** para iniciar el Editor de software de Intune y, a continuación, haga clic en **Siguiente**.
 
-2.  En la página **Instalación de software**, elija **Vínculo externo**. Luego pegue la [URL de Skycure para Android](https://play.google.com/store/apps/details?id=com.skycure.skycure) en **Specify the URL** (Especificar la URL).
+2.  En la página **Instalación de software**, elija **Vínculo externo**. Luego pegue la [URL de Skycure para Android](https://play.google.com/store/apps/details?id=com.skycure.skycure) en **Especificar la dirección URL**.
 
     ![Editor de software de Intune: Especificar la URL](../media/mtp/skycure-add-apps-1.png)
 
-3.  En la página **Descripción del software**, escriba el **Editor**, el **Nombre** y la **Descripción** y seleccione la opción **Display this as a featured app and highlight it in the company portal** (Mostrarla como una aplicación especial y destacarla en el portal de la empresa). A continuación, haga clic en **Siguiente**.
+3.  En la página **Descripción del software**, especique los valores de **Editor**, **Nombre** y **Descripción**, y seleccione la opción **Mostrar como aplicación destacada y resaltarla en el portal de la empresa**. A continuación, haga clic en **Siguiente**.
 
     ![Editor de software de Intune: Descripción del software](../media/mtp/skycure-add-apps-2.png)
 
@@ -66,7 +66,7 @@ Además, es necesario [Microsoft Authenticator](https://docs.microsoft.com/azure
 
     ![Editor de software de Intune: Aplicación para iOS administrada](../media/mtp/skycure-add-apps-3.png)
 
-3.  En la página **Descripción del software**, escriba el **Editor**, el **Nombre** y la **Descripción** y seleccione la opción **Display this as a featured app and highlight it in the company portal** (Mostrarla como una aplicación especial y destacarla en el portal de la empresa). A continuación, haga clic en **Siguiente**.
+3.  En la página **Descripción del software**, especique los valores de **Editor**, **Nombre** y **Descripción**, y seleccione la opción **Mostrar como aplicación destacada y resaltarla en el portal de la empresa**. A continuación, haga clic en **Siguiente**.
 
     ![Editor de software de Intune: Opciones](../media/mtp/skycure-add-apps-4.png)
 
@@ -82,7 +82,7 @@ Además, es necesario [Microsoft Authenticator](https://docs.microsoft.com/azure
 
     ![Editor de software de Intune: Aplicación para iOS administrada 2](../media/mtp/skycure-add-apps-5.png)
 
-3.  En la página **Descripción del software**, escriba el **Editor**, el **Nombre** y la **Descripción** y seleccione la opción **Display this as a featured app and highlight it in the company portal** (Mostrarla como una aplicación especial y destacarla en el portal de la empresa). A continuación, haga clic en **Siguiente**.
+3.  En la página **Descripción del software**, especique los valores de **Editor**, **Nombre** y **Descripción**, y seleccione la opción **Mostrar como aplicación destacada y resaltarla en el portal de la empresa**. A continuación, haga clic en **Siguiente**.
 
     ![Editor de software de Intune: Aplicación para iOS administrada 3](../media/mtp/skycure-add-apps-6.png)
 

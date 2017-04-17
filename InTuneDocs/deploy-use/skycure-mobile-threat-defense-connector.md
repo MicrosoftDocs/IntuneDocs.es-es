@@ -130,5 +130,5 @@ Estos son los pasos que debe realizar para integrar Intune con Skycure:
 
 6.  [Habilitación de Mobile Threat Defense de Skycure en Intune](https://docs.microsoft.com/intune/deploy-use/enable-skycure-mobile-threat-defense-in-intune)
 
-7.  [Creación de directiva de cumplimiento de Mobile Threat Defense de Skycure en Intune](https://docs.microsoft.com/intune/deploy-use/create-skycure-mobile-threat-defense-compliance-policy)
+7.  [Creación de la directiva de cumplimiento de Mobile Threat Defense de Skycure en Intune](https://docs.microsoft.com/intune/deploy-use/create-skycure-mobile-threat-defense-compliance-policy)
 
