@@ -31,17 +31,16 @@
 ### [Establecer la entidad de MDM](enroll-devices/set-mdm-authority.md)
 ## Planeamiento y diseño
 ### [Obtener un certificado push MDM de Apple](enroll-devices/get-an-apple-mdm-push-certificate.md)
-### [Obtener un token de DEP de Apple](enroll-devices/get-apple-dep-token.md)
 ### [Elegir cómo inscribir los dispositivos iOS](enroll-devices/choose-ios-enrollment-method.md)
 ## Cómo
 ### [Asignar licencias a usuarios](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4?toc=%2fintune-azure%2ftoc.json)
 ### [Inscribir dispositivos Android](enroll-devices/enroll-android-and-knox-standard-devices.md)
 ### Inscribir dispositivos iOS
-#### [Inscribir dispositivos iOS mediante el uso del Asistente de configuración](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
-#### [Inscribir dispositivos iOS mediante el uso de la inscripción directa](enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)
+#### [Apple Configurator: Asistente de configuración](enroll-devices/enroll-ios-devices-with-apple-configurator-and-setup-assistant.md)
+#### [Inscripción directa de Apple Configurator](enroll-devices/enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md)
 #### [Agregar números de serie de Apple Configurator](enroll-devices/add-apple-configurator-serial-numbers.md)
-#### [Inscribir dispositivos iOS mediante el uso del programa de inscripción de dispositivos](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
-### [Inscribir dispositivos mediante el uso del administrador de inscripción de dispositivos](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
+#### [DEP](enroll-devices/enroll-ios-devices-using-device-enrollment-program.md)
+### [Administrador de inscripción de dispositivos](enroll-devices/enroll-devices-using-device-enrollment-manager.md)
 ### [Inscribir dispositivos macOS](enroll-devices/enroll-macos-devices.md)
 ### [Inscribir dispositivos Windows](enroll-devices/enroll-windows-devices.md)
 ### Administrar la inscripción de dispositivos
