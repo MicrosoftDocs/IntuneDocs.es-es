@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 3e1898441b7576c07793e8b70f3c3f09f1cac534
-ms.openlocfilehash: ddeaeb2d532635802c615d09b4625dee0a824919
-ms.lasthandoff: 02/23/2017
+ms.sourcegitcommit: 61fbc2af9a7c43d01c20f86ff26012f63ee0a3c2
+ms.openlocfilehash: c56bea46c8b505e0d357cfe90678ab149559b896
+ms.lasthandoff: 04/07/2017
 
 
 ---
@@ -27,48 +27,64 @@ ms.lasthandoff: 02/23/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Microsoft Intune puede implementar un perfil de inscripción que inscriba dispositivos iOS que se han adquirido a través del Programa de inscripción de dispositivos (DEP) de Apple "de forma inalámbrica". Un perfil contiene la configuración de administración que quiere aplicar a los dispositivos. El paquete de inscripción puede incluir opciones del Asistente de configuración del dispositivo. Los usuarios no pueden anular la inscripción de dispositivos inscritos a través de DEP.
+En este tema se ayuda a los administradores de TI a inscribir dispositivos iOS propiedad de la empresa adquiridos mediante el [Programa de inscripción de dispositivos (DEP) de Apple](https://deploy.apple.com). Microsoft Intune puede implementar un perfil de inscripción que inscribe el DEP de manera inalámbrica para que el administrador nunca tenga que tocar todos los dispositivos administrados. Un perfil de DEP contiene la configuración de administración que quiere aplicar a los dispositivos durante la inscripción. El paquete de inscripción puede incluir opciones del Asistente de configuración del dispositivo.
 
 >[!NOTE]
->Este método de inscripción no se puede usar con el método del [administrador de inscripción de dispositivos](enroll-devices-using-device-enrollment-manager.md).
+>La inscripción de DEP no se puede usar con el [administrador de inscripción de dispositivos](enroll-devices-using-device-enrollment-manager.md).
+>Además, si los usuarios inscriben sus dispositivos iOS con la aplicación Portal de empresa y los números de serie de dichos dispositivos se importan luego y se les asigna un perfil de DEP, se anulará la inscripción del dispositivo en Intune.
 
-Para administrar dispositivos iOS corporativos con el Programa de inscripción de dispositivos (DEP) de Apple, la organización debe unirse a DEP de Apple y obtener dispositivos a través de ese programa. Puede consultar los detalles de este proceso en:  [https://deploy.apple.com](https://deploy.apple.com). Las ventajas del programa incluyen dispositivos configurados con manos libres sin necesidad de usar un cable USB para conectar cada dispositivo a un equipo.
+**Pasos para la inscripción de DEP**
+1. [Obtener un token de DEP de Apple](#get-the-apple-dep-certificate)
+2. [Crear un perfil de DEP](#create-anapple-dep-profile)
+3. [Asignar números de serie de DEP de Apple al servidor de Intune](#assign-apple-dep-serial-numbers-to-your-mdm-server)
+4. [Sincronizar dispositivos administrados por DEP](#synchronize-dep-managed-devices)
+5. Distribuir los dispositivos a los usuarios
 
-Para poder inscribir dispositivos iOS corporativos con DEP, necesita un [token de DEP](get-apple-dep-token.md) de Apple. Este token permite a Intune sincronizar información sobre dispositivos corporativos que participan en DEP. También permite a Intune realizar cargas de perfiles de inscripción a Apple y asignar dispositivos a esos perfiles.
 
-En [Choose how to enroll iOS devices in Intune](choose-ios-enrollment-method.md) (Selección del método para inscribir dispositivos iOS en Intune), se describen otros métodos de inscripción de dispositivos iOS).
 
-## <a name="prerequisites"></a>Requisitos previos
+## <a name="get-the-apple-dep-certificate"></a>Obtener el certificado de DEP de Apple
+Antes de poder inscribir dispositivos iOS propiedad de la empresa con el Programa de inscripción de dispositivos (DEP) de Apple, necesita un certificado de DEP (.p7m) de Apple. Este token permite a Intune sincronizar información sobre dispositivos corporativos que participan en DEP. También permite a Intune realizar cargas de perfiles de inscripción a Apple y asignar dispositivos a esos perfiles.
 
-Complete los siguientes requisitos previos antes de configurar la inscripción de dispositivos iOS:
+Para administrar dispositivos iOS corporativos con el DEP, la organización debe unirse a DEP de Apple y obtener los dispositivos a través de ese programa. Puede consultar los detalles de este proceso en: https://deploy.apple.com. Las ventajas del programa incluyen dispositivos configurados con manos libres sin necesidad de usar un cable USB para conectar cada dispositivo a un equipo.
 
-- [Configurar dominios](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2)
-- [Establecer la entidad de MDM](set-mdm-authority.md)
-- [Crear grupos](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5)
-- Asignar licencias de usuario en el [Portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854)
-- [Obtener un certificado push MDM de Apple](get-an-apple-mdm-push-certificate.md)
-- [Obtener un token de DEP de Apple](get-apple-dep-token.md)
+> [!NOTE]
+> Si se ha migrado el inquilino de Intune de la consola clásica de Intune a Azure Portal y se ha eliminado un token de DEP de Apple de la consola de administración de Intune durante el período de migración, es posible que el token de DEP se haya restaurado a su cuenta de Intune. Puede volver a eliminar el token de DEP desde Azure Portal.
 
-## <a name="create-an-apple-dep-profile-for-devices"></a>Creación de un perfil de DEP de Apple para dispositivos
+
+
+
+**Paso 1. Descargue un certificado de clave pública de Intune necesario para crear un token de DEP de Apple.**<br>
+1. En Azure Portal, elija **Más servicios** > **Supervisión y administración** > **Intune**. En la hoja de Intune, elija **Inscripción de dispositivos** > **Token de DEP de Apple**.
+2. Seleccione **Download your public key** (Descargar la clave pública) para descargar y guardar localmente el archivo de la clave de cifrado (.pem). El archivo .pem se usa para solicitar un certificado de relación de confianza en el portal del Programa de Inscripción de Dispositivos de Apple.
+
+**Paso 2. Descargue un token de DEP de Apple desde el sitio web de Apple adecuado.**<br>
+Seleccione [Crear token de DEP mediante los Programas de implementación de Apple](https://deploy.apple.com) (https://deploy.apple.com) e inicie sesión con su id. de Apple de empresa. Puede usar este id. de Apple para renovar el token de DEP.
+
+   1.  En el [Portal del Programa de inscripción de dispositivos](https://deploy.apple.com) de Apple, vaya a **Device Enrollment Program (Programa de inscripción de dispositivos)** &gt; **Manage Servers (Administrar servidores)** y, después, elija **Add MDM Server** (Agregar servidor MDM).
+   2.  Escriba el **nombre del servidor MDM** y, después, elija **Siguiente**. El nombre del servidor es su referencia para identificar el servidor de administración de dispositivos móviles (MDM). No es el nombre ni la dirección URL del servidor de Microsoft Intune.
+   3.  Se abre el cuadro de diálogo **Agregar &lt;NombreDeServidor&gt;**. Elija **Elegir archivo...** para cargar el archivo .pem y, después, elija **Siguiente**.
+   4.  El cuadro de diálogo **Agregar &lt;NombreDeServidor&gt;** muestra un vínculo **Your Server Token (Su token de servidor)**. Descargue el archivo de token de servidor (.p7m) en el equipo y, después, elija **Listo**.
+
+**Paso 3. Escriba el id. de Apple usado para crear el token de DEP de Apple. Este id. se puede usar para renovar el token de DEP de Apple.**
+
+**Paso 4. Vaya a su token de DEP de Apple para cargarlo. Intune se sincronizará automáticamente con su cuenta de DEP.**<br>
+Vaya al archivo de certificado (.pem), elija **Abrir** y luego elija **Cargar**. Con el certificado push, Intune puede inscribir y administrar dispositivos iOS insertando la directiva en los dispositivos móviles inscritos.
+
+## <a name="create-an-apple-dep-profile"></a>Crear un perfil de DEP de Apple
 
 Un perfil de inscripción de dispositivo define la configuración que se aplica a un grupo de dispositivos. Los siguientes pasos muestran cómo crear un perfil de inscripción de dispositivos para dispositivos iOS inscritos mediante DEP.
 
 1. En Azure Portal, elija **Más servicios** > **Supervisión y administración** > **Intune**.
-
 2. En la hoja de Intune, elija **Inscribir dispositivos** y luego elija **Inscripción de Apple**.
-
 3. En **Administrar la configuración del Programa de inscripción de dispositivos (DEP) de Apple**, seleccione **Perfiles DEP**.
-
 4. En la hoja **Apple DEP Profiles** (Perfiles DEP de Apple), seleccione **Crear**.
-
 5. En la hoja **Crear perfil de inscripción**, escriba un nombre y una descripción para el perfil.
-
 6. En **Afinidad de usuario**, elija si los dispositivos con este perfil se inscribirán con o sin afinidad de usuario.
 
  - **Inscribir con afinidad de usuario**: el dispositivo se debe afiliar a un usuario durante la configuración inicial y luego se le puede permitir el acceso a los datos y al correo electrónico de la empresa. Elija la afinidad de usuario para dispositivos administrados por DEP que pertenezcan a usuarios y necesiten usar el Portal de empresa para hacer uso de servicios, como instalar aplicaciones. Tenga en cuenta que la autenticación multifactor (MFA) no funciona durante la inscripción en dispositivos DEP con afinidad de usuario. Después de la inscripción, MFA funciona según lo previsto en estos dispositivos. No se puede pedir a los nuevos usuarios que cambien la contraseña al iniciar sesión por primera vez durante la inscripción en dispositivos DEP. Además, no se puede pedir a los usuarios cuyas contraseñas hayan expirado que las restablezcan durante la inscripción de DEP y tienen que hacerlo desde otro dispositivo.
 
     >[!NOTE]
-    >DEP con la afinidad de usuario requiere un punto de conexión de WS-Trust 1.3 nombreDeUsuario/Mixto para que se habilite para solicitar el token de usuario.
+    >DEP con afinidad de usuario precisa que el [punto de conexión WS-Trust 1.3 Username/Mixed](https://technet.microsoft.com/en-us/library/adfs2-help-endpoints) esté habilitado para solicitar el token de usuario. [Obtenga más información sobre WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
  - **Inscribir sin afinidad de usuario**: el dispositivo no está afiliado a ningún usuario. Utilice esta afiliación para dispositivos que realizan tareas sin tener acceso a datos de usuario local. Las aplicaciones que requieren la afiliación de un usuario no funcionarán, incluida la aplicación Portal de empresa cuando se usa para instalar aplicaciones de línea de negocio.
 
@@ -111,7 +127,7 @@ Un perfil de inscripción de dispositivo define la configuración que se aplica 
 
 4. Elija **Assign to Server** (Asignar al servidor), elija el &lt;NombreDeServidor&gt; especificado para Microsoft Intune y después elija **Aceptar**.
 
-## <a name="synchronize-dep-managed-devices"></a>Sincronizar los dispositivos administrados por DEP
+## <a name="synchronize-dep-managed-devices"></a>Sincronizar dispositivos administrados por DEP
 
 1. En Azure Portal, elija **Más servicios** > **Supervisión y administración** > **Intune**.
 

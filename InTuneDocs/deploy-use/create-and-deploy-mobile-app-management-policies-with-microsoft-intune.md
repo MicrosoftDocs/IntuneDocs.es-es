@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: f4bc5a2092585c91e224c390eaae717985055b10
-ms.lasthandoff: 02/14/2017
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: 34d4dc309044336eb3e625a1ecdc50abb48d6fa3
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -94,8 +94,6 @@ Siga estos pasos para crear directivas de protección de aplicaciones:
 
     ![Captura de pantalla de la hoja Agregar directiva donde se muestra que se han configurado las aplicaciones y la configuración](../media/AppManagement/AzurePortal_MAM_CreatePolicy.png)
 
-
-
 Cuando termine de crear una directiva como se describe en el procedimiento anterior, no se implementará en ningún usuario. Para implementar una directiva, consulte la sección siguiente titulada "Implementar una directiva para los usuarios".
 
 > [!IMPORTANT]
@@ -106,6 +104,46 @@ Cuando termine de crear una directiva como se describe en el procedimiento anter
 > -   Luego asocia ambas directivas a la misma aplicación.
 > -   La directiva creada desde la consola de Azure tiene prioridad y se permite la copia.
 > -   Sin embargo, el estado y los informes de la consola de Intune indicarán incorrectamente que la copia está bloqueada.
+
+## <a name="line-of-business-lob-apps-optional"></a>Aplicaciones de línea de negocio (LOB) (opcional)
+
+A partir de la versión 1703 de Intune, tiene la opción de agregar de forma general aplicaciones de LOB a Intune al crear una nueva directiva de protección de aplicaciones. Esto le permite definir directivas de protección de aplicaciones para aplicaciones de LOB mediante el SDK de MAM, sin necesidad de permisos completos de implementación de aplicaciones.
+
+> [!TIP] 
+> También puede agregar aplicaciones de LOB a Intune a través del flujo de trabajo de [Intune App SDK](https://docs.microsoft.com/intune/develop/intune-app-sdk-get-started).
+
+> [!IMPORTANT]
+> Si los usuarios solo tienen permisos específicos para implementar aplicaciones MAM y no tienen permisos completos de implementación de aplicaciones, que les permitirían implementar cualquier aplicación en Intune, no podrán pasar por el flujo de trabajo del SDK de Intune, pero podrán agregar sus aplicaciones de LOB a través del flujo de trabajo de creación de directivas de protección de aplicaciones MAM.
+
+### <a name="to-add-lob-apps-ios-and-android"></a>Para agregar aplicaciones de LOB (iOS y Android)
+
+1.  En la hoja Agregar directiva, elija **Aplicaciones** para abrir la hoja Aplicaciones.
+
+    ![MAM: hoja Agregar directiva](../media/AppManagement/mam-lob-apps-1.png)
+
+2.  Haga clic en **Más aplicaciones** y, luego, escriba el **Id. de paquete** (para iOS) o **Id. del paquete** (para Android) y haga clic en Seleccionar para agregar las aplicaciones de LOB.
+
+    ![MAM: hoja Más aplicaciones](../media/AppManagement/mam-lob-apps-2.png)
+
+### <a name="to-add-lob-apps-windows"></a>Para agregar aplicaciones de LOB (Windows)
+
+> [!IMPORTANT] 
+> Debe seleccionar Windows 10 en la lista desplegable de la plataforma al crear una nueva directiva de protección de aplicaciones.
+
+1.  En la hoja Agregar directiva, elija **Aplicaciones permitidas** o **Aplicaciones exentas** para abrir la hoja Aplicaciones permitidas o Aplicaciones exentas.
+
+    > [!NOTE]
+    > 
+    - **Aplicaciones permitidas**: estas son las aplicaciones que deben cumplir esta directiva.
+    - **Aplicaciones exentas**: estas aplicaciones están exentas del cumplimiento de esta directiva y pueden acceder a los datos corporativos sin restricciones.
+<br></br>
+2. En la hoja Aplicaciones permitidas o Aplicaciones exentas, haga clic en **Agregar aplicaciones**. Puede agregar aplicaciones recomendadas de Microsoft, o aplicaciones de escritorio o de la Tienda.
+
+    a.  **Aplicaciones recomendadas**: una lista rellenada previamente de aplicaciones (en su mayoría de Office) que permitimos que los administradores importen fácilmente a la directiva.
+
+    b.  **Aplicaciones de la Tienda**: el administrador puede agregar cualquier aplicación de la Tienda Windows a la directiva.
+
+    c.  **Aplicaciones de escritorio de Windows**: el administrador puede agregar cualquier aplicación de escritorio tradicional de Windows a la directiva (por ejemplo, exe, dll, etc.).
 
 ## <a name="deploy-a-policy-to-users"></a>Implementar una directiva para los usuarios
 

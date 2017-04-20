@@ -5,7 +5,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/03/2017
+ms.date: 03/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,8 +13,9 @@ ms.technology:
 ms.assetid: b2fdcea9-9ad7-4d73-88e2-854b7a774bb2
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 31e28514ab4bdb0f5af261a1f7c87633ca0bd4a6
-ms.openlocfilehash: 24ab39a92d69e92e1c202005fcd783018c4d4621
+ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
+ms.openlocfilehash: df1a9b21cd7114c2eebfeb114edf161c4a0e9ef3
+ms.lasthandoff: 04/01/2017
 
 
 ---
@@ -23,7 +24,7 @@ ms.openlocfilehash: 24ab39a92d69e92e1c202005fcd783018c4d4621
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Para habilitar la administración de dispositivos Android for Work, debe agregar un enlace de Android for Work en Intune. Para inscribir dispositivos que admiten Android for Work, pero anteriormente se han inscrito como dispositivos de Android normal, se debe anular la inscripción de los dispositivos y después volver a inscribirlos.
+Para habilitar la administración de dispositivos Android for Work, debe agregar un enlace de Android for Work en Intune. Para inscribir dispositivos que admiten Android for Work, pero que anteriormente se han inscrito como dispositivos de Android normal, se debe anular la inscripción de los dispositivos y después volver a inscribirlos.
 
 ## <a name="add-android-for-work-binding-for-intune"></a>Adición de un enlace de Android for Work Binding para Intune
 
@@ -34,7 +35,7 @@ Si aún no lo ha hecho, prepárese para la administración de dispositivos móvi
     Como administrador de Intune, abra la [consola de administración de Microsoft Intune](http://manage.microsoft.com), vaya a **Administración** &gt; **Administración de dispositivos móviles**&gt;**Android for Work**, y haga clic en **Configurar** para abrir el sitio web de Android for Work en Google Play. Se abrirá en una nueva pestaña en el explorador.
 
 3. **Iniciar sesión en Google**<br>
-   En la página de inicio de sesión de Google, escriba la cuenta de Google que se asociará con todas las tareas de administración de Android for Work para este inquilino. Podría ser la cuenta de Google que se comparte entre los administradores que administran Intune. Se trata de la cuenta de Google que su organización utiliza para administrar y publicar aplicaciones en la consola de Play for Work.
+   En la página de inicio de sesión de Google, escriba la cuenta de Google que se asociará con todas las tareas de administración de Android for Work para este inquilino. Se trata de la cuenta de Google que los administradores de TI de su organización compartían para administrar y publicar aplicaciones en la consola de Play for Work.
 
 4. **Proporcionar detalles de la organización**<br>
    Proporcione el nombre de su empresa en **Nombre de la organización**. Para el **proveedor de administración de Enterprise Mobility (EMM)**, *Microsoft Intune* debe mostrarse. Acepte el acuerdo Android for Work y, después, haga clic en **Confirmar**. La solicitud se procesará.
@@ -42,9 +43,9 @@ Si aún no lo ha hecho, prepárese para la administración de dispositivos móvi
 ## <a name="specify-android-for-work-enrollment-settings"></a>Especificación de la configuración de inscripción de Android for Work
    Android for Work solo se admite en determinados dispositivos Android. Consulte los [requisitos de Android for Work](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window") de Google.  Cualquier dispositivo que admita Android for Work, también admitirá la administración Android convencional.  Intune le permite especificar cómo se deben administrar los dispositivos que admiten Android for Work:
 
-   - **Administrar todos los dispositivos como Android**: (deshabilitado) Todos los dispositivos Android se inscribirán, incluidos los dispositivos que admiten Android for Work, como dispositivos Android convencionales.
-   - **Administrar dispositivos compatibles como Android for Work**: (habilitado) Todos los dispositivos que admiten Android for Work se inscriben como dispositivos Android for Work. Todo dispositivo Android que no admita Android for Work estará inscrito como dispositivo Android convencional.
-   - **Administrar los dispositivos compatibles para los usuarios únicamente en estos grupos de usuarios como Android for Work**: (pruebas) Le permite dirigir la administración de Android for Work a un conjunto limitado de usuarios. Solo los miembros de los grupos seleccionados que inscriben un dispositivo que admita Android for Work se inscriben como dispositivos Android for Work. Todos los demás se inscriben como dispositivos Android.
+   - **Administrar todos los dispositivos como Android**: se inscribirán todos los dispositivos Android, incluidos los dispositivos que admiten Android for Work, como dispositivos Android convencionales.
+   - **Administrar los dispositivos compatibles como Android for Work**: todos los dispositivos que admiten Android for Work se inscriben como dispositivos Android for Work. Todo dispositivo Android que no admita Android for Work estará inscrito como dispositivo Android convencional.
+   - **Manage supported devices for users only in these user groups as Android for Work** (Administrar los dispositivos compatibles para los usuarios únicamente en estos grupos de usuarios como Android for Work): le permite dirigir la administración de Android for Work a un conjunto limitado de usuarios. Solo los miembros de los grupos seleccionados que inscriben un dispositivo que admita Android for Work se inscriben como dispositivos Android for Work. Todos los demás se inscriben como dispositivos Android. Esto resulta útil durante las implementaciones piloto de Android for Work.
 
 ## <a name="next-steps-for-android-for-work"></a>Pasos siguientes para Android for Work
 Después de configurar el enlace de Android for Work y la configuración, puede hacer lo siguiente:
@@ -62,9 +63,4 @@ Puede desactivar la inscripción y administración de Android for Work. Si hace 
 
 2. **Acepte eliminar el enlace de Android for Work**.<br>
   Haga clic en **Sí** para eliminar el enlace y anular la inscripción de todos los dispositivos Android for Work de Intune.
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

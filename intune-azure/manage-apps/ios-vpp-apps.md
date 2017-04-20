@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: e75ab41176f2aa1feac98fcf067349b132d4d61b
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 771aed4e1c57171183b9a9ea7d9e0f702dc1859c
+ms.openlocfilehash: 3b0a674fadf30c660ff3e8e8db172a590f07c8be
+ms.lasthandoff: 04/06/2017
 
 ---
 
@@ -30,9 +30,6 @@ ms.lasthandoff: 02/18/2017
 La App Store de iOS permite comprar varias licencias de una aplicación que quiera ejecutar en la empresa. Esto ayuda a reducir la carga administrativa relacionada con el seguimiento de varias copias compradas de las aplicaciones.
 
 Microsoft Intune ayuda a administrar las aplicaciones que se compran a través de este programa. Para ello, importa la información de licencia desde la App Store, realiza el seguimiento de la cantidad de licencias usadas y le impide instalar más copias de la aplicación de las que posee.
-
-> [!Important]
-> Actualmente, Intune asigna licencias de aplicación del Programa de Compras por Volumen (PCV) de iOS para empresas a los usuarios, no a los dispositivos. Por este motivo, los usuarios deben escribir la contraseña de su ID de Apple para instalar la aplicación.
 
 ## <a name="manage-volume-purchased-apps-for-ios-devices"></a>Administrar aplicaciones compradas por volumen para dispositivos iOS
 Puede comprar varias licencias para aplicaciones iOS mediante el [Programa de compras por volumen de Apple para empresas](http://www.apple.com/business/vpp/) o el [Programa de compras por volumen de Apple para educación](http://volume.itunes.apple.com/us/store). Esto implica configurar una cuenta de PCV de Apple en el sitio web de Apple y cargar el token de PCV de Apple en Intune.  De este modo, puede sincronizar la información de compras por volumen con Intune y hacer el seguimiento del uso de aplicaciones compradas por volumen.
@@ -71,8 +68,8 @@ Puede sincronizar los datos que tiene Apple con Intune en cualquier momento al e
 1. En la carga de trabajo **Administrar aplicaciones**, elija **Administrar** > **Aplicaciones con licencia**.
 2. En la hoja de lista de aplicaciones, elija la aplicación que quiere asignar y, luego, seleccione **...** > **Asignar grupos**.
 3. En la hoja <*nombre de la aplicación*> - **Grupos asignados**, elija **Administrar** > **Grupos asignados**.
-4. Elija **Asignar grupos** y, en la hoja **Seleccionar grupos**, elija los grupos de Azure AD a los que quiere asignar la aplicación.
-Debe elegir una acción de implementación de **Requerido**. Las instalaciones disponibles no se admiten actualmente.
+4. Elija **Asignar grupos** y, en la hoja **Seleccionar grupos**, elija los grupos de dispositivos o usuarios de Azure AD a los que quiere asignar la aplicación.
+Debe elegir una acción de implementación de **Requerido**. Las instalaciones disponibles no se admiten actualmente. Además, las asignaciones a grupos de dispositivos están disponibles para los nuevos inquilinos creados después de enero de 2017. Si el inquilino se ha creado antes de esa fecha y no tiene la opción de asignar aplicaciones de PCV a grupos de dispositivos, póngase en contacto con el soporte técnico de Intune.
 5. Cuando termine, elija **Guardar**.
 
 Consulte [Supervisión de aplicaciones](monitor-apps.md) para obtener información que le ayude a supervisar las asignaciones de aplicaciones.
