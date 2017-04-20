@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: 6bc3afe58d5e0f1f12c8b6c6fc62e37d01cd5132
 ms.openlocfilehash: cab9833a1e1b92c156a2eb77411436289c70ad71
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -165,7 +166,7 @@ Las reglas de notificación de Intune definen a quién se enviará una alerta de
 
     En el área de trabajo **Administración**, haga clic en **Reglas de notificación** > **Crear nueva regla**.
 
-    En el paso&2; del Asistente para crear reglas de notificación, se seleccionan los grupos de dispositivos a los que se destinará la regla. Este paso ("Seleccionar grupos de dispositivos") se va a quitar de la consola de Intune.
+    En el paso 2 del Asistente para crear reglas de notificación, se seleccionan los grupos de dispositivos a los que se destinará la regla. Este paso ("Seleccionar grupos de dispositivos") se va a quitar de la consola de Intune.
 
     La escala de tiempo preliminar de este cambio es la siguiente:
     - En junio de 2016, los nuevos inquilinos no verán el paso 2 del Asistente para crear reglas de notificación. Los inquilinos existentes no se verán afectados.
@@ -216,9 +217,4 @@ Antes de que se agregaran estos estados, los usuarios se confundían si una inst
 >[!div class="step-by-step"]
 
 >[&larr; **Novedades de Intune**](whats-new-in-microsoft-intune.md)    
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
