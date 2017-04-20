@@ -1,4 +1,4 @@
-## <a name="set-up-windows-10-and-windows-10-mobile-automatic-enrollment-with-azure-active-directory-premium"></a>Configuración de la inscripción automática de Windows 10 y Windows 10 Mobile con Azure Active Directory Premium
+## <a name="enable-windows-10-automatic-enrollment"></a>Habilitar la inscripción automática de Windows 10
 
 Con la inscripción automática, los usuarios pueden inscribir en Intune equipos Windows 10 corporativos o personales y dispositivos Windows 10 Mobile agregando una cuenta profesional o educativa y aceptando su administración. Así de fácil. En segundo plano, el dispositivo del usuario se registra y se une a Azure Active Directory. Una vez registrado, el dispositivo se administra con Intune.
 
@@ -9,26 +9,31 @@ Con la inscripción automática, los usuarios pueden inscribir en Intune equipos
 
 ### <a name="configure-automatic-mdm-enrollment"></a>Configurar la inscripción automática de MDM
 
-1. En el [portal de administración de Azure](https://portal.azure.com) (https://manage.windowsazure.com), vaya al nodo **Active Directory** y seleccione su directorio.
+1. Inicie sesión en el [Portal de administración de Azure](https://portal.azure.com) (https://manage.windowsazure.com) y seleccione **Azure Active Directory**.
 
-2. Seleccione la pestaña **Aplicaciones**. **Microsoft Intune** aparece en la lista de aplicaciones.
+  ![Captura de pantalla de Azure Portal](../media/auto-enroll-azure-main.png)
 
-    ![Aplicaciones de Azure AD con Microsoft Intune](../media/aad-intune-app.png)
+2. Seleccione **Movilidad (MDM y MAM)**.
 
-3. Seleccione la flecha para **Microsoft Intune**. Se abre una página que le permite configurar Microsoft Intune.
+  ![Captura de pantalla de Azure Portal](../media/auto-enroll-mdm.png)
 
-4. Haga clic en **Configurar** para empezar a configurar la inscripción automática de MDM con Microsoft Intune.
+3. Seleccione **Microsoft Intune**.
 
-5. Use los valores predeterminados para las siguientes direcciones URL:
+  ![Captura de pantalla de Azure Portal](../media/auto-enroll-intune.png)
 
+4. Configurar los usuarios que se inscribirán automáticamente.
+
+  ![Captura de pantalla de Azure Portal](../media/auto-enroll-scope.png)
+
+  Use los valores predeterminados para las siguientes direcciones URL:
   - **Inscripción de MDM**
-  - **Condiciones de uso de MDM** 
+  - **Condiciones de uso de MDM**
   - **Cumplimiento de MDM**
 
-6.  Especifique los dispositivos de los usuarios que se deben administrar mediante Microsoft Intune. Los dispositivos Windows 10 de estos usuarios se inscribirán automáticamente para la administración con Microsoft Intune.
+5. Especifique los dispositivos de los usuarios que se deben administrar mediante Microsoft Intune. Los dispositivos Windows 10 de estos usuarios se inscribirán automáticamente para la administración con Microsoft Intune.
 
   - **Todos**
   - **Grupos**
   - **Ninguno**
 
-7. Elija **Guardar**.
+6. Seleccione **Guardar**.
