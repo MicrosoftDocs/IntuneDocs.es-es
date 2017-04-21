@@ -15,9 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 0936051b5c33a2e98f275ef7a3a32be2e8f5a8b0
-ms.openlocfilehash: 8c67fc70b5b1678df29605fe3ba4dae907bc7bd1
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: df54ac3a62b5ef21e8a32f3a282dd5299974a1b0
+ms.openlocfilehash: 1d2cb0d4b9442262c562e559a675f5a4a28ee572
+ms.lasthandoff: 04/12/2017
 
 
 ---
@@ -71,7 +71,12 @@ El objetivo del SDK para aplicaciones de Intune para iOS es agregar capacidades 
 
 Para habilitar Intune App SDK, siga estos pasos:
 
-1. **Opción 1**: vincular a la biblioteca `libIntuneMAM.a`. Arrastre la bibloteca `libIntuneMAM.a` en la lista de **Linked Frameworks and Libraries** (Marcos y bibliotecas vinculados) del destino del proyecto.
+1. **Opción 1 (recomendada)**: vínculo `IntuneMAM.framework` al proyecto. Arrastre `IntuneMAM.framework` en la lista de **Linked Frameworks and Libraries** (Marcos y bibliotecas vinculados) del destino del proyecto.
+
+    > [!NOTE]
+    > Si usa el marco, debe quitar manualmente las arquitecturas de simulador del marco universal antes de enviar la aplicación a la Tienda de aplicaciones. Vea [Enviar la aplicación a la Tienda de aplicaciones](#Submit-your-app-to-the-App-Store) para más información.
+
+2. **Opción 2**: vincular a la biblioteca `libIntuneMAM.a`. Arrastre la bibloteca `libIntuneMAM.a` en la lista de **Linked Frameworks and Libraries** (Marcos y bibliotecas vinculados) del destino del proyecto.
 
     ![Intune App SDK para iOS: marcos y bibliotecas vinculados](../media/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
@@ -84,11 +89,6 @@ Para habilitar Intune App SDK, siga estos pasos:
 
         > [!NOTE]
         > Para encontrar `PATH_TO_LIB`, seleccione el archivo `libIntuneMAM.a` y elija **Obtener información** en el menú **Archivo**. Copie y pegue la información **Dónde** (la ruta de acceso) de la sección **General** de la ventana **Información**.
-
-2. **Opción 2**: vincule `IntuneMAM.framework` al proyecto. Arrastre `IntuneMAM.framework` en la lista de **Linked Frameworks and Libraries** (Marcos y bibliotecas vinculados) del destino del proyecto.
-
-    > [!NOTE]
-    > Si usa el marco, debe quitar manualmente las arquitecturas de simulador del marco universal antes de enviar la aplicación a la Tienda de aplicaciones. Consulte [Enviar la aplicación a la Tienda de aplicaciones](#Submit-your-app-to-the-App-Store).
 
 3. Agregue estos marcos de iOS al proyecto:
     * MessageUI.framework
@@ -127,22 +127,21 @@ Para habilitar Intune App SDK, siga estos pasos:
     </array>
     ```
 
-7. Después de habilitar el uso compartido de cadena de claves, siga estos pasos para crear un grupo de acceso independiente en el que se almacenarán los datos del SDK para aplicaciones de Intune. Puede crear un grupo de acceso a cadena de claves mediante la interfaz de usuario o mediante el archivo de derechos.
-
-    Mediante la interfaz de usuario para crear un grupo de acceso a cadena de claves:
+7. Después de habilitar el uso compartido de cadena de claves, siga estos pasos para crear un grupo de acceso independiente en el que se almacenarán los datos del SDK para aplicaciones de Intune. Puede crear un grupo de acceso a cadena de claves mediante la interfaz de usuario o mediante el archivo de derechos. Si utiliza la interfaz de usuario para crear el grupo de acceso de la cadena de claves, asegúrese de seguir los pasos siguientes:
 
     1. Si la aplicación móvil no tiene ningún grupo de acceso a cadena de claves definido, agregue el id. del lote de la aplicación como el primer grupo.
 
-    2. Agregue el grupo de cadenas de claves compartidas `com.microsoft.intune.mam`. Intune App SDK usa este grupo de acceso para almacenar datos.
+    2. Agregue el grupo de cadena de claves compartido `com.microsoft.intune.mam` a los grupos de acceso existentes. Intune App SDK usa este grupo de acceso para almacenar datos.
 
     3. Agregue `com.microsoft.adalcache` a los grupos de acceso existentes.
 
-    ![Intune App SDK iOS: uso compartido de cadena de claves](../media/intune-app-sdk-ios-keychain-sharing.png)
+        4. Agregue `com.microsoft.workplacejoin` a los grupos de acceso existentes.
+            ![Intune App SDK iOS: uso compartido de cadena de claves](../media/intune-app-sdk-ios-keychain-sharing.png)
 
-    Si usa el archivo de derechos para crear el grupo de acceso a la cadena de claves, deberá anteponer `$(AppIdentifierPrefix)` al grupo de accesos de cadena de claves en el archivo de derechos. Por ejemplo:
+      5. Si usa el archivo de derechos para crear el grupo de acceso a la cadena de claves, deberá anteponer `$(AppIdentifierPrefix)` al grupo de accesos de cadena de claves en el archivo de derechos. Por ejemplo:
 
-          * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
-        * `$(AppIdentifierPrefix)com.microsoft.adalcache`
+            * `$(AppIdentifierPrefix)com.microsoft.intune.mam`
+            * `$(AppIdentifierPrefix)com.microsoft.adalcache`
 
     > [!NOTE]
     > Un archivo de derechos es un archivo XML que es exclusivo para su aplicación móvil. Se utiliza para especificar permisos especiales y capacidades en su aplicación iOS.
@@ -151,42 +150,37 @@ Para habilitar Intune App SDK, siga estos pasos:
 
 8. Para las aplicaciones móviles desarrolladas en iOS 9+, incluya cada protocolo que la aplicación pasa a `UIApplication canOpenURL` en la matriz `LSApplicationQueriesSchemes` del archivo Info.plist de la aplicación. Además, para cada protocolo que se muestra, agregue un nuevo protocolo y anéxelo con `-intunemam`. También debe incluir `http-intunemam`, `https-intunemam`y `ms-outlook-intunemam` en la matriz.
 
-9. Si la aplicación tiene grupos de aplicaciones definidos en sus derechos, agregue estos grupos al diccionario IntuneMAMSettings en la clave `AppGroupIdentifiers` como una matriz de cadenas.
-
-10. Vincule la aplicación móvil a la biblioteca de autenticación de Azure Directory (ADAL) para iOS. La biblioteca ADAL para Objective C está disponible en [GitHub](https://github.com/AzureAD/azure-activedirectory-library-for-objc).
-
-    > [!NOTE]
-    > Se recomienda que la aplicación se vincule con la versión más reciente o en funcionamiento de ADAL.
-
-11. Incluya el lote de recursos `ADALiOSBundle.bundle` del proyecto arrastrando el lote de recursos de **Copy Bundle Resources** (Copiar recursos del lote) en **Build Phases** (Fases de compilación).
-
-12. Use la opción del enlazador `-force_load PATH_TO_ADAL_LIBRARY` al vincular a la biblioteca.
-
-    Agregue `-force_load {PATH_TO_LIB}/libADALiOS.a` al ajuste de la configuración de compilación `OTHER_LDFLAGS` del proyecto u **Other Linker Flags** (Otras marcas del enlazador) en la interfaz de usuario. `PATH_TO_LIB` debe reemplazarse por la ubicación de archivos binarios de ADAL.
+9. Si la aplicación tiene grupos de aplicaciones definidos en sus derechos, agregue estos grupos al diccionario **IntuneMAMSettings** en la clave `AppGroupIdentifiers` como una matriz de cadenas.
 
 
 
-## <a name="configure-azure-directory-authentication-library-adal"></a>Configurar la Biblioteca de autenticación de Azure Directory (ADAL)
+## <a name="configure-azure-active-directory-authentication-library-adal"></a>Configurar Azure Active Directory Authentication Library (ADAL)
 
-El SDK para aplicaciones de Intune usa ADAL para sus escenarios de inicio condicional y de autenticación. También se basa en ADAL para registrar la identidad del usuario con el servicio de MAM para la administración sin escenarios de inscripción de dispositivos.
+Intune App SDK usa [Azure Active Directory Authentication Library](https://github.com/AzureAD/azure-activedirectory-library-for-objc) para sus escenarios de inicio condicional y de autenticación. También se basa en ADAL para registrar la identidad del usuario con el servicio de MAM para la administración sin escenarios de inscripción de dispositivos.
 
-Normalmente, ADAL requiere que las aplicaciones se registren con Azure Active Directory (AAD) y que obtengan un identificador único (ClientID), y otros identificadores para garantizar la seguridad de los tokens concedidos a la aplicación. Intune App SDK usa valores de registro predeterminados al ponerse en contacto con Azure AD.  
+Normalmente, ADAL requiere que las aplicaciones se registren con Azure Active Directory (AAD) y que obtengan un identificador único (ClientID), y otros identificadores para garantizar la seguridad de los tokens concedidos a la aplicación. A menos que se especifique lo contrario, Intune App SDK usa valores de registro predeterminados al ponerse en contacto con Azure AD.  
 
-Si la propia aplicación usa ADAL para su escenario de autenticación, la aplicación debe utilizar los valores de registro existentes y reemplazar los valores predeterminados de Intune App SDK. Esto garantiza que no se pide a los usuarios que se vuelva a autenticar (una Intune App SDK y otra la aplicación).
+Si su aplicación ya usa ADAL para la autenticación de usuarios, la aplicación debe utilizar los valores de registro existentes y reemplazar los valores predeterminados de Intune App SDK. Esto garantiza que no se pide a los usuarios que se vuelva a autenticar (una Intune App SDK y otra la aplicación).
 
-### <a name="adal-faqs"></a>Preguntas más frecuentes sobre ADAL
+### <a name="recommendations"></a>Recomendaciones
 
-**¿Qué archivos binarios de ADAL debo usar?**
+Se recomienda que la aplicación se vincule a la [versión más reciente de ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-objc/releases) en la bifurcación principal. Intune App SDK usa actualmente la bifurcación del agente de ADAL para admitir aplicaciones que requieren acceso condicional. (Estas aplicaciones, por lo tanto, dependen de la aplicación Microsoft Authenticator). Sin embargo, el SDK sigue siendo compatible con la bifurcación principal de ADAL. Use la bifurcación que sea adecuada para su aplicación.
 
-Intune App SDK usa actualmente la bifurcación del agente de [ADAL en GitHub](https://github.com/AzureAD/azure-activedirectory-library-for-objc) para admitir aplicaciones que requieren acceso condicional. (Estas aplicaciones, por lo tanto, dependen de la aplicación Microsoft Authenticator). Sin embargo, el SDK sigue siendo compatible con la bifurcación principal de ADAL. Use la bifurcación que sea adecuada para su aplicación.
+### <a name="link-to-adal-binaries"></a>Vincular a archivos binarios de ADAL
 
-**¿Cómo se vincula a archivos binarios de ADAL?**
+Siga los pasos siguientes para vincular la aplicación a los archivos binarios de ADAL:
 
-Agregue `-force_load {PATH_TO_LIB}/libADALiOS.a` al ajuste de la configuración de compilación `OTHER_LDFLAGS` del proyecto u **Other Linker Flags** (Otras marcas del enlazador) en la interfaz de usuario. `PATH_TO_LIB` debe reemplazarse por la ubicación de archivos binarios de ADAL. Asegúrese también de copiar el lote de ADAL en su aplicación.  
+1. Descargue [Azure Active Directory Authentication Library (ADAL) para Objective-C](https://github.com/AzureAD/azure-activedirectory-library-for-objc) desde GitHub y luego siga las [instrucciones](https://github.com/AzureAD/azure-activedirectory-library-for-objc/blob/master/README.md) sobre cómo descargar ADAL mediante submódulos de Git o CocoaPods.
 
-Para obtener más información, consulte las instrucciones de [ADAL en GitHub](https://github.com/AzureAD/azure-activedirectory-library-for-objc).
+2. Incluya el lote de recursos `ADALiOSBundle.bundle` del proyecto arrastrando el lote de recursos de **Copy Bundle Resources** (Copiar recursos del lote) en **Build Phases** (Fases de compilación).
 
-**¿Cómo se puede compartir la caché de token de ADAL con otras aplicaciones firmadas con el mismo perfil de aprovisionamiento?**
+3. Agregue `-force_load {PATH_TO_LIB}/libADALiOS.a` al ajuste de la configuración de compilación `OTHER_LDFLAGS` del proyecto u **Other Linker Flags** (Otras marcas del enlazador) en la interfaz de usuario. `PATH_TO_LIB` debe reemplazarse por la ubicación de archivos binarios de ADAL.
+
+
+
+### <a name="share-the-adal-token-cache-with-other-apps-signed-with-the-same-provisioning-profile"></a>¿Cómo se puede compartir la caché de token de ADAL con otras aplicaciones firmadas con el mismo perfil de aprovisionamiento?**
+
+Si desea compartir tokens de ADAL entre aplicaciones firmadas con el mismo perfil de aprovisionamiento, siga las instrucciones siguientes:
 
 1. Si la aplicación no tiene definido ningún grupo de acceso a cadena de claves, agregue el identificador del lote de la aplicación como el primer grupo.
 
@@ -194,9 +188,9 @@ Para obtener más información, consulte las instrucciones de [ADAL en GitHub](h
 
 3. En caso de que esté estableciendo explícitamente el grupo de cadenas de claves de caché compartida de ADAL, asegúrese de que esté establecido en `<app_id_prefix>.com.microsoft.adalcache`. ADAL lo establecerá automáticamente a menos que lo reemplace. Si quiere especificar un grupo de cadenas de claves personalizado para reemplazar `com.microsoft.adalcache`, especifíquelo en el archivo Info.plist, en "IntuneMAMSettings", mediante la clave `ADALCacheKeychainGroupOverride`.
 
-**¿Cómo se fuerza a que el SDK de aplicaciones de Intune use los valores de ADAL que ya usa mi aplicación?**
+### <a name="configure-adal-settings-for-the-intune-app-sdk"></a>Establecer la configuración de ADAL para Intune App SDK
 
-Si la aplicación ya usa ADAL, vea [Configurar Intune App SDK](#configure-settings-for-the-intune-app-sdk) para obtener información sobre cómo rellenar las opciones siguientes:  
+Si la aplicación ya usa ADAL para la autenticación y tiene su propia configuración de ADAL, puede hacer que Intune App SDK use la misma configuración durante la autenticación en Azure Active Directory. Esto garantiza que la aplicación no vuelva a solicitar la autenticación al usuario. Vea [Configurar Intune App SDK](#configure-settings-for-the-intune-app-sdk) para obtener información sobre cómo rellenar las opciones siguientes:  
 
 * ADALClientId
 * ADALAuthority
@@ -204,29 +198,25 @@ Si la aplicación ya usa ADAL, vea [Configurar Intune App SDK](#configure-settin
 * ADALRedirectScheme
 * ADALCacheKeychainGroupOverride
 
+Si su aplicación ya usa ADAL, son necesarias las siguientes configuraciones:
 
-**¿Cómo se puede reemplazar la dirección URL de la entidad de Azure AD por una dirección URL específica del inquilino proporcionada en tiempo de ejecución?**
+1. En el archivo Info.plist del proyecto, en el diccionario **IntuneMAMSettings** con el nombre de clave `ADALClientId`, especifique el ClientID que se usará para llamadas de ADAL.
 
-Establezca la propiedad `aadAuthorityUriOverride` en la instancia IntuneMAMPolicyManager.
+2. Además, en el diccionario **IntuneMAMSettings** con el nombre de clave `ADALAuthority`, especifique la entidad de Azure AD.
+
+3. En el diccionario **IntuneMAMSettings** con el nombre de clave `ADALRedirectUri`, especifique el URI de redireccionamiento que se usará para llamadas de ADAL. También debe especificar `ADALRedirectScheme` según el formato del URI de redirección de la aplicación.
+
+
+Además, puede reemplazar la dirección URL de la entidad de Azure AD por una dirección URL específica del inquilino en tiempo de ejecución. Para ello, basta con establecer la propiedad `aadAuthorityUriOverride` en la instancia `IntuneMAMPolicyManager`.
 
 > [!NOTE]
-> Se necesita que la aplicación sin la inscripción del dispositivo permita al SDK reutilizar el token de actualización de ADAL capturado por la aplicación.
+> Es necesario configurar la dirección URL de la entidad de AAD para la [aplicación sin inscripción de dispositivos](#App-protection-policy-without-device-enrollment) para que el SDK pueda reutilizar el token de actualización de ADAL capturado por la aplicación.
 
-El SDK seguirá usando esta dirección URL de la entidad para la actualización de directivas y para las solicitudes de inscripción posteriores a menos que el valor se elimine o se cambie.  Es importante borrar el valor cuando un usuario corporativo cierra la sesión de la aplicación y restablecerlo cuando inicia sesión otro usuario corporativo.
+El SDK seguirá usando esta dirección URL de la entidad para la actualización de directivas y para las solicitudes de inscripción posteriores a menos que el valor se elimine o se cambie.  Por lo tanto, es importante borrar el valor cuando un usuario administrado cierra la sesión de la aplicación y restablecerlo cuando inicia sesión un nuevo usuario administrado.
 
-**¿Qué debo hacer si mi aplicación ya usa ADAL para la autenticación?**
+### <a name="if-your-app-does-not-use-adal"></a>Si su aplicación no usa ADAL
 
-Las siguientes acciones son necesarias si la aplicación ya usa ADAL para la autenticación:
-
-1. En el archivo Info.plist del proyecto, en el diccionario IntuneMAMSettings con el nombre de clave `ADALClientId`, especifique el ClientID que se usará para llamadas de ADAL.
-
-2. Además, en el diccionario IntuneMAMSettings con el nombre de clave `ADALAuthority`, especifique la entidad de Azure AD.
-
-3. En el diccionario IntuneMAMSettings con el nombre de clave `ADALRedirectUri`, especifique el URI de redireccionamiento que se usará para llamadas de ADAL. También debe especificar `ADALRedirectScheme` según el formato del URI de redirección de la aplicación.
-
-**¿Qué ocurre si mi aplicación no utiliza todavía ADAL para la autenticación?**
-
-Si su aplicación no usa ADAL, Intune App SDK proporcionará valores predeterminados para parámetros ADAL y controlará la autenticación en Azure AD.
+Si su aplicación no usa ADAL, Intune App SDK proporcionará valores predeterminados para parámetros ADAL y controlará la autenticación en Azure AD. No es necesario especificar los valores de configuración de ADAL mencionados anteriormente.
 
 ## <a name="app-protection-policy-without-device-enrollment"></a>Directiva de protección de aplicaciones sin la inscripción de dispositivos
 
@@ -426,9 +416,6 @@ La API **isSaveToAllowedForLocation** proporciona constantes para comprobar si e
 * IntuneMAMSaveLocationOther
 * IntuneMAMSaveLocationOneDriveForBusiness
 * IntuneMAMSaveLocationSharePoint
-* IntuneMAMSaveLocationBox
-* IntuneMAMSaveLocationDropbox
-* IntuneMAMSaveLocationGoogleDrive
 * IntuneMAMSaveLocationLocalDrive
 
 Las aplicaciones deben usar las constantes de la API **isSaveToAllowedForLocation** para comprobar si los datos se pueden guardar en ubicaciones que se consideran "administradas", como OneDrive para la Empresa, o "personales". Además, la API debe usarse cuando la aplicación no puede determinar si una ubicación es "administrada" o "personal".
@@ -560,27 +547,46 @@ De forma predeterminada, se considera que las aplicaciones son de una única ide
 
     Tenga en cuenta que este método se llama desde un subproceso en segundo plano. La aplicación no debe devolver un valor hasta que se hayan quitado todos los datos del usuario (a excepción de los archivos si la aplicación devuelve el valor FALSE).
 
-## <a name="debug-the-intune-app-sdk-in-xcode"></a>Depurar el SDK de aplicaciones de Intune en Xcode
+## <a name="test-app-protection-policy-settings-in-xcode"></a>Probar la configuración de directivas de protección de aplicaciones en Xcode
 
-Antes de probar manualmente la aplicación habilitada para MAM con Microsoft Intune, puede usar un archivo Settings.bundle mientras se encuentre en Xcode. Esto le permitirá establecer directivas de prueba sin necesidad de una conexión a Intune. Para habilitarlo:
+Antes de probar manualmente la aplicación habilitada para Intune en producción, puede usar un archivo Settings.bundle mientras se encuentre en Xcode. Esto le permitirá establecer directivas de protección para realizar pruebas sin necesidad de una conexión a Intune.
 
-1. Agregue un archivo Settings.bundle haciendo clic con el botón derecho en la carpeta de nivel superior del proyecto. Seleccione **Agregar** > **Nuevo archivo** en el menú. En **Recursos**, elija la plantilla **Lote de configuración** que agregar.
+### <a name="enable-policy-testing"></a>Habilitar prueba de directivas
 
-2. Solo en las compilaciones de depuración, copie el archivo MAMDebugSettings.plist en Settings.bundle.
+Siga los pasos siguientes para habilitar la prueba de directivas en Xcode:
 
-3. En Root.plist (que se encuentra en Settings.bundle), agregue una preferencia con `Type` = `Child Pane` y `FileName` = `MAMDebugSettings`.
+1. Asegúrese de que esté en una compilación de depuración. Agregue un archivo Settings.bundle haciendo clic con el botón derecho en la carpeta de nivel superior del proyecto. Seleccione **Agregar** > **Nuevo archivo** en el menú. En **Recursos**, elija la plantilla **Lote de configuración**.
 
-4. En **Configuración** > **SuNombreDeAplicación**, active **Enable Test Policies** (Habilitar directivas de prueba).
+2.  Copie el siguiente bloque en el archivo Settings.bundle/**Root.plist** para la compilación de depuración:
+    ```xml
+    <key>PreferenceSpecifiers</key>
+    <array>
+        <dict>
+            <key>Type</key>
+            <string>PSChildPaneSpecifier</string>
+            <key>Title</key>
+            <string>MDM Debug Settings</string>
+            <key>Key</key>
+            <string>MAMDebugSettings</string>
+            <key>File</key>
+            <string>MAMDebugSettings</string>
+        </dict>
+    </array>
+    ```
 
-5. Inicie la aplicación (ya sea dentro o fuera de Xcode).
+3. En el diccionario **IntuneMAMSettings** en Info.plist de la aplicación, agregue un valor booleano denominado "DebugSettingsEnabled". Establezca el valor de DebugSettingsEnabled en "Sí".
 
-6. En **Configuración** > **SuNombreDeAplicación** > **Enable Test Policies** (Habilitar directivas de prueba), active una directiva, por ejemplo, **PIN**.
 
-7. Inicie la aplicación (ya sea dentro o fuera de Xcode). Compruebe que el PIN funciona según lo previsto.
 
-> [!NOTE]
-> Ahora puede usar **Configuración** > **SuNombreDeAplicación** > **Enable Test Policies** (Habilitar directivas de prueba) para habilitar y activar o desactivar la configuración.
+### <a name="app-protection-policy-settings"></a>Configuración de directivas de protección de aplicaciones
 
+La siguiente tabla describe la configuración de directivas de protección de aplicaciones que puede probar con MAMDebugSettings.plist. Para activar una configuración, agréguela en MAMDebugSettings.plist.
+
+| Nombre de configuración de directiva | Descripción | Posibles valores |
+| -- | -- | -- |
+| AccessRecheckOfflineTimeout | El período en minutos en que la aplicación puede estar sin conexión antes de que Intune bloquee el inicio o la reanudación de la aplicación si está habilitada la autenticación. | Cualquier entero mayor que 0 |
+|    AccessRecheckOnlineTimeout | El período en minutos que se puede ejecutar la aplicación antes de que se le solicite al usuario el PIN o la autenticación al iniciar o reanudar (si la autenticación o el PIN para el acceso están habilitados). | Cualquier entero mayor que 0 |
+| AppSharingFromLevel | Especifica las aplicaciones a partir de las que esta puede aceptar datos. | 0 = |
 ## <a name="ios-best-practices"></a>Prácticas recomendadas de iOS
 
 Aquí hay algunas prácticas recomendadas para el desarrollo de iOS:

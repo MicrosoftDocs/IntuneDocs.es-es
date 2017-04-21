@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 69f7f366e798c1c987a6ddfb93300598b22a7d01
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: 0a39abc7f19f4c2c8074de66a9cd5df9cef78ed5
+ms.openlocfilehash: 81761af5ab5aebe6abb44ff43a7df5a337d38fc7
+ms.lasthandoff: 04/13/2017
 
 
 ---
@@ -27,9 +27,58 @@ Obtenga más información sobre las actualizaciones que hemos realizado en la in
 > [!Note]
 > Tenga en cuenta que las imágenes siguientes corresponden a la versión preliminar y que el producto anunciado puede diferir de las versiones presentadas.
 
+## <a name="whats-coming-in-intune-app-ui"></a>Novedades de la interfaz de usuario de aplicaciones de Intune
+
+### <a name="april-2017"></a>Abril de 2017
+
+#### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Nuevos iconos para Managed Browser y el Portal de empresa <!--918433, 918431-->
+
+Managed Browser está recibiendo iconos actualizados para las versiones de iOS y Android de la aplicación. El nuevo icono contendrá el distintivo de Intune actualizado para que sea más coherente con otras aplicaciones de Enterprise Mobility + Security (EM+S).
+
+<html>
+<body>
+   <table id="wrapper">
+      <tr>
+         <td>
+            <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_manbro_before_042017.png" alt="The previous version of the Managed Browser app icon." width=200 height=366 align=center>
+          </td>
+          <td>
+             <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_manbro_after_042017.png" alt="The updated version of the Managed Browser app icon." width=200 height=366 align=center>
+           </td>
+      </tr>
+   </table>
+</body>
+</html>
+
+El Portal de empresa también está recibiendo iconos actualizados para las versiones de Windows, iOS y Android de la aplicación con el objetivo de mejorar la coherencia con otras aplicaciones de EM+S. Estos iconos se lanzarán gradualmente en las plataformas desde abril hasta finales de mayo.
+
+#### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Indicador de progreso de inicio de sesión en Portal de empresa de Android <!--953374-->
+
+Una actualización de la aplicación Portal de empresa de Android muestra un indicador de progreso de inicio de sesión cuando el usuario inicia o reanuda la aplicación. El indicador avanza por nuevos estados en el siguiente orden: "Conectando...", "Iniciando sesión..." y "Checking for security requirements..." (Comprobando requisitos de seguridad) antes de permitir que el usuario acceda a la aplicación.
+
+<html>
+<body>
+   <table id="wrapper">
+      <tr>
+         <td>
+            <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_signing_in_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Connecting' underneath it." width=200 height=366 align=center>
+          </td>
+          <td>
+             <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_checking_security_reqs_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Signing in' underneath it." width=200 height=366 align=center>
+           </td>
+           <td>
+              <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_connecting_042017.png" alt="The Company Portal app for Android sign in screen that shows a partially filled loading bar with the phrase 'Checking for security requirements' underneath it." width=200 height=366 align=center>
+           </td>
+      </tr>
+   </table>
+</body>
+</html>
+
+## <a name="whats-been-announced-for-ui-updates-for-end-user-apps"></a>¿Qué se ha anunciado para las actualizaciones de la interfaz de usuario para las aplicaciones de usuario final?
+
 ### <a name="february-2017"></a>Febrero de 2017
 
-#### <a name="new-user-experience-for-the-company-portal-app-for-android---621622-announced-1702--"></a>Nueva experiencia del usuario en la aplicación del portal de empresa para Android <!--621622, announced 1702-->
+### <a name="new-user-experience-for-the-company-portal-app-for-android---621622-announced-1702--"></a>Nueva experiencia del usuario en la aplicación del portal de empresa para Android <!--621622, announced 1702-->
 A partir de marzo, la aplicación del portal de empresa para Android seguirá las [directrices de Material Design](https://material.io/guidelines/material-design/introduction.html) para crear una apariencia más moderna. Esta experiencia del usuario mejorada incluye:
 
 * __Colores__: los encabezados de pestaña pueden colorearse según la paleta de colores personalizada.
@@ -47,16 +96,16 @@ A partir de marzo, la aplicación del portal de empresa para Android seguirá la
    <table id="wrapper">
       <tr>
          <td>
-            <img src="https://docs.microsoft.com/en-us/InTune/whats-new/media/cp_android_contactit_after.png" alt="The Company Portal app for Android displaying an updated version of the Contact IT tab. The tab shows available contact information for IT, including phone number, email address, IT website, and IT contact information." width=200 height=366 align=center>
+            <img src="https://docs.microsoft.com/InTune/whats-new/media/cp_android_contactit_after.png" alt="The Company Portal app for Android displaying an updated version of the Contact IT tab. The tab shows available contact information for IT, including phone number, email address, IT website, and IT contact information." width=200 height=366 align=center>
           </td>
       </tr>
    </table>
 </body>
 </html>
 
-### <a name="january-2017"></a>Enero de 2017
+## <a name="january-2017"></a>Enero de 2017
 
-#### <a name="modernizing-the-company-portal-website---753980-announced-1701--"></a>Renovación del sitio web del portal de empresa<!--753980, announced 1701-->
+### <a name="modernizing-the-company-portal-website---753980-announced-1701--"></a>Renovación del sitio web del portal de empresa<!--753980, announced 1701-->
 A partir de febrero, el sitio web del portal de empresa admitirá aplicaciones destinadas a aquellos usuarios que no tienen dispositivos administrados. El sitio web se asemejará a otros productos y servicios de Microsoft gracias a una nueva combinación de colores de contraste, ilustraciones dinámicas y un “menú hamburguesa”, ![Pequeña imagen del menú hamburguesa que se ha agregado en la esquina superior izquierda del sitio web del portal de empresa](./media/CP_hamburger_menu.png) que contendrá los detalles de contacto del departamento de soporte técnico e información sobre los dispositivos administrados existentes. La página de inicio se reorganizará para destacar las aplicaciones que están disponibles para los usuarios, con carruseles para aplicaciones destacadas y actualizadas recientemente.
 
 ![A la izquierda, una imagen de la versión actual del sitio web Portal de empresa con su versión anterior de Aplicaciones, Mis dispositivos, y las vistas Destacadas y Categorías. A la derecha, una imagen de la versión actualizada del sitio web Portal de empresa con un carrusel de aplicaciones actualizado, la lista de aplicaciones publicadas recientemente y la vista Categorías actualizada.](./media/CP_Website_BeforeAfter_Feb2016.png)

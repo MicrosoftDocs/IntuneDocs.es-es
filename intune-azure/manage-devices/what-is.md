@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 04/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.assetid:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
-ms.openlocfilehash: 8a43e1646476696b978a7f8a3e92f920606a698b
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: 24498abc504f05bd22dc7309bc22948292f9b1e6
+ms.openlocfilehash: 731d57859474276b51c0cb0b17a3354eaec17348
+ms.lasthandoff: 04/13/2017
 
 
 ---
@@ -80,6 +80,9 @@ Use esta acción remota para mostrar la ubicación de un dispositivo iOS perdido
 1.    En la hoja de propiedades de un dispositivo iOS, elija **Más** > **Buscar dispositivo**.
 2.    Cuando se haya localizado el dispositivo, se muestra su ubicación en la hoja **Buscar dispositivo**. 
     ![Hoja Buscar dispositivo](./media/locate-device.png)
+
+>[!NOTE]
+>Por motivos de privacidad, se limita la distancia con la que puede hacer zoom en el mapa.
 
 ### <a name="restart"></a>**Reiniciar**
 Hace que el dispositivo se reinicie. Como al propietario del dispositivo no se le informa automáticamente del reinicio, podría perder trabajo.

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/22/2017
+ms.date: 04/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 10c7bc5461c746ab50e83c2ffc590b89efe75e5f
-ms.openlocfilehash: ed878327650b4560a891f9acb470b31aa64fbfa6
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: 15415f9f31d520d66257df3a7e134e4b1de8467c
+ms.openlocfilehash: 6da1d00ce654add003a2f8e39b1a1c987d96e5a4
+ms.lasthandoff: 04/07/2017
 
 
 ---
@@ -33,7 +33,7 @@ Al cifrar un dispositivo, se codifica la información que contiene mediante una 
 Algunos dispositivos Android de la versión 7.0+ cifran los datos de maneras no coherentes con determinados estándares de la plataforma Android. Estos dispositivos parecen venir cifrados de fábrica, pero Intune reconoce los métodos usados como si la información del dispositivo estuviera en peligro por parte de usuarios malintencionados con acceso físico al dispositivo.
 
 > [!Note]
-> Microsoft trabaja con los fabricantes de la lista en una solución a estos problemas y actualizará esta lista en consecuencia. 
+> Microsoft trabaja con todos los fabricantes enumerados para resolver este problema y actualizará esta lista en consecuencia a medida que se completen las correcciones.
 
 ## <a name="an-incomplete-list-of-devices"></a>Lista incompleta de dispositivos
 
