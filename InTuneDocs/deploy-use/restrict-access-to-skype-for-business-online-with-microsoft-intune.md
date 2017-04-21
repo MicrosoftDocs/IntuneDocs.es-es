@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 182ca17c53b672d70ff1b30a63c0662050db95c3
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 312a3ae8a74b0a8460f969f96bee14077c6c7161
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -37,9 +38,9 @@ Cuando un usuario determinado intenta usar Skype Empresarial Online en su dispos
 
 **Antes** de configurar una directiva de acceso condicional para Skype Empresarial Online, debe:
 - Tener una **suscripción de Skype Empresarial Online** y asignar la licencia de Skype Empresarial Online a los usuarios.
-- Tener una **suscripción de Enterprise Mobility + Security (EMS)** o una **suscripción de Azure Active Directory (Azure AD) Premium** y que los usuarios tengan licencia de EMS o Azure AD. Para más detalles, consulte los [precios de Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) o los [precios de Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+- Tener una **suscripción de Enterprise Mobility + Security (EMS)** o una **suscripción de Azure Active Directory (Azure AD) Premium** y que los usuarios tengan licencia de EMS o Azure AD. Para más detalles, consulte los [precios de Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) o los [precios de Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
--   [Habilitar la autenticación moderna](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) para Skype Empresarial Online.
+-   [Habilitar la autenticación moderna](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-skype-for-business-online-with-microsoft-intune) para Skype Empresarial Online.
 -  Todos los usuarios deben usar **Skype Empresarial Online**. Si tiene una implementación con Skype Empresarial Online y Skype Empresarial local, la directiva de acceso condicional no se aplicará a los usuarios.
 
 El dispositivo que necesita tener acceso a Skype Empresarial Online:
@@ -118,9 +119,4 @@ Seleccione cualquier grupo de dispositivos móviles. Luego, en la pestaña **Dis
 * **Dispositivos no conformes**: estos dispositivos están bloqueados en Skype Empresarial Online.
 
 * **Dispositivos registrados en AAD y conformes**: estos dispositivos pueden tener acceso a Skype Empresarial Online.
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

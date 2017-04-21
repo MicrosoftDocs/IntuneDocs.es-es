@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: 9a814f6df407802b8e48626ed0e3f828c52c661b
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: cfb3a7cc4e70a062bc511cd4fe80a50b6262864f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -38,7 +38,7 @@ Para configurar el acceso condicional, debe:
 
 -   Tener una **suscripción de Office 365 que incluya Exchange Online (por ejemplo, E3)** y los usuarios deben tener licencia para Exchange Online.
 
-- Tener una **suscripción de Enterprise Mobility + Security (EMS)** o una **suscripción de Azure Active Directory (Azure AD) Premium** y los usuarios deben tener la licencia de EMS o Azure AD. Para obtener más detalles, vea la [página de precios de Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) o la [página de precios de Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+- Tener una **suscripción de Enterprise Mobility + Security (EMS)** o una **suscripción de Azure Active Directory (Azure AD) Premium** y los usuarios deben tener la licencia de EMS o Azure AD. Para obtener más detalles, vea la [página de precios de Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) o la [página de precios de Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
 -  Considerar la posibilidad de configurar el **conector de servicio a servicio de Intune** opcional, que conecta [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] a Exchange Online y facilita la administración de información de dispositivos a través de la consola de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. No necesita usar el conector para usar directivas de cumplimiento o de acceso condicional, pero sí para ejecutar informes que ayuden a evaluar el impacto del acceso condicional.
     -  Obtenga más información sobre el [Intune Service to Service Connector](intune-service-to-service-exchange-connector.md).
@@ -83,7 +83,7 @@ Puede proteger el acceso al correo electrónico de Exchange Online desde **Outlo
 La **autenticación moderna** proporciona el inicio de sesión basado en la biblioteca de autenticación de Active Directory (ADAL) a los clientes de Microsoft Office.
 
 -   La autenticación basada en ADAL permite a los clientes de Office realizar la autenticación basada en explorador (también conocida como autenticación pasiva). Para realizar la autenticación, se envía un usuario a una página web de inicio de sesión.
--   Este nuevo método de inicio de sesión permite mejorar la seguridad como la **autenticación multifactor** y la **autenticación basada en certificados**. Para obtener información más detallada, vea [Cómo funciona la autenticación moderna](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517). Puede configurar reglas de notificaciones de ADFS para bloquear protocolos de autenticación no moderna. Se proporcionan instrucciones detalladas en el [Escenario 3: Bloquear todo el acceso externo a Office 365 excepto las aplicaciones basadas en explorador](https://technet.microsoft.com/library/dn592182.aspx).
+-   Este nuevo método de inicio de sesión permite mejorar la seguridad como la **autenticación multifactor** y la **autenticación basada en certificados**. Para obtener información más detallada, vea [Cómo funciona la autenticación moderna](https://support.office.com/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517). Puede configurar reglas de notificaciones de ADFS para bloquear protocolos de autenticación no moderna. Se proporcionan instrucciones detalladas en el [Escenario 3: Bloquear todo el acceso externo a Office 365 excepto las aplicaciones basadas en explorador](https://technet.microsoft.com/library/dn592182.aspx).
 
 Puede proteger el acceso a **Outlook Web Access (OWA)** en Exchange Online cuando un usuario accede a él desde un explorador en dispositivos **iOS** y **Android**. Solo se permite el acceso desde exploradores compatibles en dispositivos que también lo sean:
 
@@ -123,7 +123,7 @@ Puede configurar el acceso condicional para PC que ejecutan aplicaciones de escr
   >[!NOTE]
     >No se admite el acceso condicional en los PC que ejecutan el cliente del equipo de Intune.
 
--   [La autenticación moderna de Office 365 debe estar habilitada](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) y tener las actualizaciones más recientes de Office.
+-   [La autenticación moderna de Office 365 debe estar habilitada](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) y tener las actualizaciones más recientes de Office.
 
     La autenticación moderna proporciona el inicio de sesión basado en la biblioteca de autenticación de Active Directory (ADAL) a los clientes de Office 2013 o Windows. Permite mejorar la seguridad como la **autenticación multifactor** y la **autenticación basada en certificados**.
 
@@ -192,7 +192,7 @@ Solo se evalúan los grupos en los que se aplica la directiva de acceso condicio
 >[!NOTE]
 > También puede crear una directiva de acceso condicional en la consola de administración de Azure AD. La consola de administración de Azure AD le permite crear una directiva de acceso condicional de dispositivos de Intune (denominada **directiva de acceso condicional basada en dispositivos** en Azure AD), además de otras directivas de acceso condicional, como la autenticación multifactor.
 
->También puede establecer directivas de acceso condicional para aplicaciones empresariales de terceros compatibles con Azure AD, como Salesforce y Box. Para más información, vea [Establecimiento de una directiva de acceso condicional basado en dispositivos para aplicaciones conectadas a Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
+>También puede establecer directivas de acceso condicional para aplicaciones empresariales de terceros compatibles con Azure AD, como Salesforce y Box. Para más información, vea [Establecimiento de una directiva de acceso condicional basado en dispositivos para aplicaciones conectadas a Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
 
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), elija **Directiva** > **Acceso condicional** > **Directiva de Exchange Online**.

@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 7b91e52d72704b6beb79a1b35bb1a24ebb340a4b
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 2de9a7d639ee667ee195ded2875a8ac8e478fffb
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -34,7 +35,7 @@ Las directivas de cumplimiento se pueden usar con directivas de acceso condicion
 También puede usar las directivas de cumplimiento con independencia del acceso condicional. Cuando se usan directivas de cumplimiento de forma independiente, los dispositivos de destino se evalúan y su estado se cumplimiento se notifica. Por ejemplo, si quiere informar sobre el número de dispositivos que no están cifrados o sobre qué dispositivos están liberados o modificados. Pero cuando se usan directivas de cumplimiento de manera independiente, no existen restricciones de acceso a los recursos de empresa.
 
 Usted se encarga de implementar las directivas de cumplimiento para los usuarios. Cuando se implementa una directiva de cumplimiento para un usuario, se comprueba el cumplimiento de todos los dispositivos del usuario.
-Para más información sobre cuánto tiempo tardan los dispositivos móviles en obtener una directiva una vez que esta se ha implementado, consulte [Administrar la configuración y las características de los dispositivos](https://docs.microsoft.com/en-us/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#frequently-asked-questions-about-intune-policies).
+Para más información sobre cuánto tiempo tardan los dispositivos móviles en obtener una directiva una vez que esta se ha implementado, consulte [Administrar la configuración y las características de los dispositivos](https://docs.microsoft.com/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#frequently-asked-questions-about-intune-policies).
 
 En la tabla siguiente se enumera los tipos de dispositivos que admiten directivas de cumplimiento. También se describe cómo administrar la configuración no compatible cuando se usa una directiva de cumplimiento con una directiva de acceso condicional.
 
@@ -67,9 +68,4 @@ En la tabla siguiente se enumera los tipos de dispositivos que admiten directiva
 
 ### <a name="see-also"></a>Consulte también
 [Restringir el acceso al correo electrónico y los servicios de O365](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

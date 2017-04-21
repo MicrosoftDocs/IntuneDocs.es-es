@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 827c7cd1b6b3ef98a681eef26bb7742228fca5e9
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 6740e6f5894f6dfd7788d90cc8f445e0a63821a9
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -32,7 +33,7 @@ Puede controlar el acceso a Microsoft Dynamics CRM Online desde los dispositivos
 Para obtener más información sobre cómo funciona el acceso condicional, lea el artículo [Proteger el acceso al correo electrónico, a O365 y a otros servicios](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 > [!IMPORTANT]
-> Para implementar el acceso condicional debe tener suscripciones a Intune y Azure Active Directory Premium, y los usuarios deben tener la licencia de ambos productos. La **suscripción a Enterprise Mobility + Security (EMS)** incluye suscripciones a Intune y Azure Active Directory Premium. Para obtener más información, consulte la [página de precios de Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing). Si no tiene la suscripción de EMS, puede obtener una para Azure Active Directory Premium. Consulte la [página de precios de Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+> Para implementar el acceso condicional debe tener suscripciones a Intune y Azure Active Directory Premium, y los usuarios deben tener la licencia de ambos productos. La **suscripción a Enterprise Mobility + Security (EMS)** incluye suscripciones a Intune y Azure Active Directory Premium. Para obtener más información, consulte la [página de precios de Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing). Si no tiene la suscripción de EMS, puede obtener una para Azure Active Directory Premium. Consulte la [página de precios de Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
 Cuando un usuario determinado intenta usar la aplicación Dynamics CRM en su dispositivo, se produce la siguiente evaluación:
 
@@ -102,9 +103,4 @@ Elija cualquier grupo de dispositivos móviles y, a continuación, en la ficha *
 * [Proteger el acceso a SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 * [Proteger el acceso a Skype Empresarial Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

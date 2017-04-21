@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: 9759c1331a3fb5308e1dbc53564059618a8ef45c
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 53b86bf579af6af29fd36ce58f9cdf1e92b98abc
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -61,11 +61,11 @@ Para obtener instrucciones sobre cómo crear una directiva de aplicaciones media
 - Windows 10
 
 >[!NOTE]
->A partir de la versión 1703, se pueden definir directivas de protección de aplicaciones para dispositivos Windows 10 en MAM sin escenario de inscripción. Para obtener más información, vea [Protege los datos de su empresa con Windows Information Protection (WIP)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+>A partir de la versión 1703, se pueden definir directivas de protección de aplicaciones para dispositivos Windows 10 en MAM sin escenario de inscripción. Para obtener más información, vea [Protege los datos de su empresa con Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
 ##  <a name="supported-apps"></a>Aplicaciones compatibles
 * **Aplicaciones de Microsoft:** estas aplicaciones tienen el SDK para aplicaciones de Intune integrado y no requieren ningún procesamiento adicional antes de aplicar las directivas de protección de aplicaciones.
-Para ver la lista completa de las aplicaciones de Microsoft compatibles, vaya a [Microsoft Intune mobile application gallery (Galería de aplicaciones móviles de Microsoft Intune)](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) en la página de partners de aplicaciones de Microsoft Intune. Haga clic en una aplicación para ver los escenarios y las plataformas admitidos y si la aplicación admite varias identidades.
+Para ver la lista completa de las aplicaciones de Microsoft compatibles, vaya a [Microsoft Intune mobile application gallery (Galería de aplicaciones móviles de Microsoft Intune)](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) en la página de partners de aplicaciones de Microsoft Intune. Haga clic en una aplicación para ver los escenarios y las plataformas admitidos y si la aplicación admite varias identidades.
 
 * **Aplicaciones de línea de negocio de su organización:** debe preparar estas aplicaciones para incluir el SDK para aplicaciones de Intune y poder aplicar las directivas de protección de aplicaciones.
 
@@ -76,7 +76,7 @@ Para ver la lista completa de las aplicaciones de Microsoft compatibles, vaya a 
 ## <a name="prerequisites"></a>Requisitos previos
 
 -   **Una suscripción a Microsoft Intune**. Los usuarios necesitan licencias de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] para obtener aplicaciones que tienen directivas de protección de aplicaciones.
-Ya tiene una suscripción de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] si usa [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] actualmente para administrar los dispositivos. También tiene una suscripción de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] si ha adquirido una licencia de Enterprise Mobility Suite (EMS). Si está probando [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] para comprobar las funcionalidades de MAM, puede obtener una cuenta de prueba en la [página de Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/).
+Ya tiene una suscripción de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] si usa [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] actualmente para administrar los dispositivos. También tiene una suscripción de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] si ha adquirido una licencia de Enterprise Mobility Suite (EMS). Si está probando [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] para comprobar las funcionalidades de MAM, puede obtener una cuenta de prueba en la [página de Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/).
 
     Para comprobar si tiene una suscripción de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], en el portal de Office, vaya a la página de **facturación**.  Si tiene una suscripción, debe ver [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] como **Activo** en las suscripciones.
 
@@ -98,13 +98,13 @@ Ya tiene una suscripción de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.m
 
 1.  Inicie sesión en el [Portal de Office](http://portal.office.com) con sus credenciales de administrador.
 
-2.  Agregue los usuarios como se describió en los **Pasos para completar una evaluación de 30 días de Intune** de la [guía de evaluación de Intune](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) y, luego, asigne las licencias de Intune. Para conceder a un usuario la capacidad de acceder al portal de Office, al Portal de Azure AD y al Portal de Azure, asígnele el **rol de administrador global**.
+2.  Agregue los usuarios como se describió en los **Pasos para completar una evaluación de 30 días de Intune** de la [guía de evaluación de Intune](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune) y, luego, asigne las licencias de Intune. Para conceder a un usuario la capacidad de acceder al portal de Office, al Portal de Azure AD y al Portal de Azure, asígnele el **rol de administrador global**.
 
-5.  Las directivas de protección de aplicaciones se implementan para grupos de usuarios de Azure Active Directory. Para crear grupos de usuarios para sus directivas de protección de aplicaciones, cree un grupo de usuarios como se describe en la sección **Creación de un grupo de usuarios** de [Crear grupos para organizar los dispositivos y usuarios de la suscripción de evaluación](https://docs.microsoft.com/en-us/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3).
+5.  Las directivas de protección de aplicaciones se implementan para grupos de usuarios de Azure Active Directory. Para crear grupos de usuarios para sus directivas de protección de aplicaciones, cree un grupo de usuarios como se describe en la sección **Creación de un grupo de usuarios** de [Crear grupos para organizar los dispositivos y usuarios de la suscripción de evaluación](https://docs.microsoft.com/intune/understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3).
 
 ### <a name="assign-roles-to-non-global-admin-users"></a>Asignar roles a usuarios administradores no globales
 
-Los administradores globales tienen acceso al [Portal de Azure](https://portal.azure.com).  Si quiere que los usuarios que no sean administradores globales puedan configurar directivas y realizar otras tareas de administración de aplicaciones móviles, consulte el artículo [Uso de asignaciones de roles para administrar el acceso a los recursos de la suscripción de Azure](https://azure.microsoft.com/en-us/documentation/articles/role-based-access-control-configure/).
+Los administradores globales tienen acceso al [Portal de Azure](https://portal.azure.com).  Si quiere que los usuarios que no sean administradores globales puedan configurar directivas y realizar otras tareas de administración de aplicaciones móviles, consulte el artículo [Uso de asignaciones de roles para administrar el acceso a los recursos de la suscripción de Azure](https://azure.microsoft.com/documentation/articles/role-based-access-control-configure/).
 
 ## <a name="next-steps"></a>Pasos siguientes
 [Creación e implementación de directivas de protección de aplicaciones con Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)

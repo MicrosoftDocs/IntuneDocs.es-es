@@ -15,9 +15,9 @@ ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: 61851f7669e9a5c3a192b2eda344fcde9c4fa3e6
-ms.lasthandoff: 03/20/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 0fa045d31125ba0d67f19bb46aa2728ae9bbcc93
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -67,7 +67,7 @@ Las diferentes tareas administrativas requieren que use uno de los siguientes si
 |**Sitio web del Portal de empresa**     |**En dispositivos móviles:** use el explorador web predeterminado para cada plataforma compatible   <br /><br />**En equipos de Windows:** Internet Explorer 10 o posterior, o Microsoft Edge<br /><br />**En Mac OS X 10.9 o posterior:** Apple Safari    |
 
 > [!Note]
-> Microsoft Edge y los exploradores móviles no son compatibles con la consola de administración porque no admiten [Microsoft Silverlight](https://msdn.microsoft.com/en-us/library/cc838158(v=vs.95).aspx). La migración de la consola de Intune desde la experiencia de Silverlight se realizará a lo largo de un período de tiempo; al final, todos los dispositivos móviles y las características de administración de aplicaciones de Intune estarán [disponibles en el nuevo portal de Microsoft Azure](https://blogs.technet.microsoft.com/enterprisemobility/2015/11/17/enhancing-managed-mobile-productivity/).
+> Microsoft Edge y los exploradores móviles no son compatibles con la consola de administración porque no admiten [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx). La migración de la consola de Intune desde la experiencia de Silverlight se realizará a lo largo de un período de tiempo; al final, todos los dispositivos móviles y las características de administración de aplicaciones de Intune estarán [disponibles en el nuevo portal de Microsoft Azure](https://blogs.technet.microsoft.com/enterprisemobility/2015/11/17/enhancing-managed-mobile-productivity/).
 
 
 Solo los usuarios con permisos de administrador de servicios o que sean administradores de inquilinos con el rol de administrador global pueden iniciar sesión en este portal. Para acceder a la consola de administración, su cuenta debe tener una licencia para usar Intune y un estado de inicio de sesión de **Permitido**.

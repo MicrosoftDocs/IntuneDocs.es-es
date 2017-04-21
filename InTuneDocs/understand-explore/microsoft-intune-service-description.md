@@ -15,8 +15,9 @@ ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f268cf29461447306d0f5c3ca06d541d9a03a49d
-ms.openlocfilehash: 8e8257a426bd6b9a99e21e928b08c84f162d5da3
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 5975ba0219f464c8f5aa1735657ff3d1c186b991
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -29,7 +30,7 @@ Microsoft Intune es un servicio basado en la nube que le ayuda a administrar dis
 
 Microsoft le ofrece los beneficios propios de la incorporación a Intune para aquellos servicios válidos que se encuentren en planes aptos. El beneficio de incorporación le permite trabajar de forma remota con los especialistas de Microsoft para preparar el entorno de Intune para su uso. Para obtener más información sobre el beneficio de incorporación, consulte [Microsoft Intune Onboarding Benefit Description](http://go.microsoft.com/fwlink/?LinkId=619281) (Descripción del beneficio de incorporación de Microsoft Intune).
 
-Puede empezar a usar Intune con una versión de evaluación gratuita de 30 días que incluye 100 licencias de usuario. Para iniciar la versión de prueba gratuita, [vaya a la página de registro de Intune](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/). Si su organización tiene un contrato Enterprise o un contrato de licencias por volumen equivalente, póngase en contacto con su representante de Microsoft para configurar la versión de evaluación gratuita.
+Puede empezar a usar Intune con una versión de evaluación gratuita de 30 días que incluye 100 licencias de usuario. Para iniciar la versión de prueba gratuita, [vaya a la página de registro de Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/). Si su organización tiene un contrato Enterprise o un contrato de licencias por volumen equivalente, póngase en contacto con su representante de Microsoft para configurar la versión de evaluación gratuita.
 
 > [!NOTE]
 > Si su organización tiene una cuenta profesional o educativa de Microsoft Online Services y es posible que continúe con esta suscripción de Intune en producción una vez finalizado el período de evaluación, elija la opción **Iniciar sesión** de esa página y autentíquese con la cuenta de administrador global de su organización. Esta acción garantizará que su versión de evaluación de Intune se vincula con su cuenta de trabajo o académica existente.
@@ -69,13 +70,13 @@ Puede configurar Intune de diversas maneras para administrar y proteger los disp
 
 -**Configuración de Intune independiente.** Use la consola de administración basada en web de Intune para administrar los dispositivos de su organización. Intune se puede usar sin una infraestructura de TI local. Si se usa Intune con Active Directory Domain Services, pueden emplearse las cuentas de usuario de dominio que se administran con Domain Services mediante Intune.
 
--**Intune con System Center Configuration Manager.** Use la consola de administración de Configuration Manager para administrar los equipos y dispositivos móviles de su empresa. Esta configuración puede ayudarle a administrar todos los dispositivos de la organización a través de una única consola, la consola de administración de Configuration Manager. Configuration Manager admite grandes cantidades de dispositivos móviles, servidores y equipos. Para obtener más información sobre Configuration Manager, consulte [Administración híbrida de dispositivos móviles (MDM) con System Center Configuration Manager y Microsoft Intune](https://technet.microsoft.com/library/mt627883.aspx). Para obtener más ayuda para decidir qué enfoque es adecuado para usted, vea [Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager (Elegir entre Microsoft Intune independiente y la administración de dispositivos móviles híbrida con Configuration Manager)](https://technet.microsoft.com/en-us/library/mt706478.aspx).
+-**Intune con System Center Configuration Manager.** Use la consola de administración de Configuration Manager para administrar los equipos y dispositivos móviles de su empresa. Esta configuración puede ayudarle a administrar todos los dispositivos de la organización a través de una única consola, la consola de administración de Configuration Manager. Configuration Manager admite grandes cantidades de dispositivos móviles, servidores y equipos. Para obtener más información sobre Configuration Manager, consulte [Administración híbrida de dispositivos móviles (MDM) con System Center Configuration Manager y Microsoft Intune](https://technet.microsoft.com/library/mt627883.aspx). Para obtener más ayuda para decidir qué enfoque es adecuado para usted, vea [Choose between Microsoft Intune standalone and hybrid mobile device management with Configuration Manager (Elegir entre Microsoft Intune independiente y la administración de dispositivos móviles híbrida con Configuration Manager)](https://technet.microsoft.com/library/mt706478.aspx).
 
 
 ## <a name="learn-more-about-intune"></a>Obtenga más información acerca de Intune
 Use estos recursos para obtener más información acerca de Intune:
 
-- En el [Centro de confianza de Microsoft Intune](http://www.microsoft.com/en-us/server-cloud/products/intune-trust-center/) se proporciona información sobre las prácticas de seguridad, privacidad y cumplimiento de Intune y se describen algunas certificaciones de Intune.
+- En el [Centro de confianza de Microsoft Intune](https://www.microsoft.com/server-cloud/products/intune-trust-center/) se proporciona información sobre las prácticas de seguridad, privacidad y cumplimiento de Intune y se describen algunas certificaciones de Intune.
 
 - [Funcionalidades de administración de dispositivos inscritos en Microsoft Intune](/intune/get-started/mobile-device-management-capabilities-in-microsoft-intune)
 
@@ -84,9 +85,4 @@ Use estos recursos para obtener más información acerca de Intune:
 [Biblioteca de documentación de System Center 2012 Configuration Manager](https://technet.microsoft.com/library/gg682041.aspx)
 
 [Novedades de Microsoft Intune](/intune/deploy-use/whats-new-in-microsoft-intune)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

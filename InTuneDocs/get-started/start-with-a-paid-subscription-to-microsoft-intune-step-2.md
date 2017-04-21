@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: 7e921e3f92b0c9b94e4fdc387513ab5c1627817a
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 86062a73092f6e438de7a315d9ec1c2f395c9c50
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -48,22 +49,17 @@ No puede cambiar el nombre o quitar ese nombre de dominio inicial. Sin embargo, 
 3. Elija **Agregar dominio** y escriba el nombre de su dominio personalizado.
 
 4. El cuadro de diálogo **Comprobar dominio** se abre proporcionándole los valores para crear el registro TXT en su proveedor de host DNS.
-    - **Usuarios de GoDaddy**: el Portal de administración de Office 365 le redirige a la página de inicio de sesión de GoDaddy. El registro TXT se crea automáticamente después de escribir sus credenciales y de aceptar el acuerdo del permiso de cambio de dominio. También puede [crear el registro TXT](https://support.office.com/en-us/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a?ui=en-US&rs=en-US&ad=US).
-    - **Usuarios de Register.com**: siga las [instrucciones paso a paso](https://support.office.com/en-us/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e?ui=en-US&rs=en-US&ad=US#BKMK_verify) para crear el registro TXT.
+    - **Usuarios de GoDaddy**: el Portal de administración de Office 365 le redirige a la página de inicio de sesión de GoDaddy. El registro TXT se crea automáticamente después de escribir sus credenciales y de aceptar el acuerdo del permiso de cambio de dominio. También puede [crear el registro TXT](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a).
+    - **Usuarios de Register.com**: siga las [instrucciones paso a paso](https://support.office.com/article/Create-DNS-records-at-Register-com-for-Office-365-55bd8c38-3316-48ae-a368-4959b2c1684e#BKMK_verify) para crear el registro TXT.
 
     > [!TIP]
     > Asegúrese de crear un alias DNS (CNAME) para la [inscripción de dispositivos de Windows](/Intune/deploy-use/set-up-windows-phone-management-with-microsoft-intune) mientras se realizan cambios en su proveedor de host DNS.
 
-Los pasos para agregar y comprobar un dominio personalizado también se pueden [realizar en Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-add-domain/).
+Los pasos para agregar y comprobar un dominio personalizado también se pueden [realizar en Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-add-domain/).
 
-Puede obtener más información [sobre su dominio inicial onmicrosoft.com en Office 365](https://support.office.com/en-us/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A?ui=en-US&rs=en-US&ad=US)
+Puede obtener más información [sobre su dominio inicial onmicrosoft.com en Office 365](https://support.office.com/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A)
 
 >[!div class="step-by-step"]
 
 >[&larr; **Iniciar sesión en Intune**](.\start-with-a-paid-subscription-to-microsoft-intune-step-1.md)     [**Agregar usuarios a Intune** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-3.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

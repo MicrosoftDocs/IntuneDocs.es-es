@@ -15,8 +15,9 @@ ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: d87cbc82b55c4c7615decf8d37d59e2194de9922
-ms.openlocfilehash: 59e376202ee268a9b99c017f813a7ef870e79548
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 0325f60e83b6e339c96b38b36465f53d6ee5421b
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -89,7 +90,7 @@ El grupo recién creado aparece en la lista **Grupos** del área de trabajo **Gr
     > En la actualidad, si el grupo incluye miembros de grupos de seguridad o de administradores concretos y se excluye a miembros de algunos grupos, se quitarán los miembros que se incluyeron en un principio. Para crear un grupo que tenga tanto los miembros incluidos como los excluidos, primero se recomienda crear un grupo primario que tenga los miembros incluidos. Luego, cree un grupo secundario para ese grupo primario. En el nuevo grupo secundario, enumere los miembros excluidos. Luego, use ese grupo secundario para administrar la distribución de directivas, perfiles y aplicaciones de Intune.
 
     > [!NOTE]
-    > En el portal de Azure, puede crear grupos basados en los administradores de los que dependen los usuarios. Este tipo de grupo es dinámico y cambiará a medida que se agreguen o se quiten empleados del equipo de un administrador en Azure Active Directory. El procedimiento para crear un grupo de Azure basado en el nombre del administrador se describe en [Uso de atributos para crear reglas avanzadas](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/), en la sección **Para configurar un grupo como un grupo de "Administrador"**.
+    > En el portal de Azure, puede crear grupos basados en los administradores de los que dependen los usuarios. Este tipo de grupo es dinámico y cambiará a medida que se agreguen o se quiten empleados del equipo de un administrador en Azure Active Directory. El procedimiento para crear un grupo de Azure basado en el nombre del administrador se describe en [Uso de atributos para crear reglas avanzadas](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/), en la sección **Para configurar un grupo como un grupo de "Administrador"**.
 
 4.  En la página **Definir pertenencia directa**, elija **Examinar** para seleccionar usuarios individuales que quiera incluir o excluir. Si selecciona usuarios que no están en el grupo primario especificado, estos se agregan automáticamente a él. La opción para agregar un usuario de forma manual se encuentra en la parte inferior del cuadro de diálogo **Seleccionar miembros**. Esto resulta útil si quiere agregar un usuario que todavía no tiene un dispositivo inscrito.
 
@@ -151,9 +152,4 @@ Cada directiva tiene un **Valor previsto** y un **Estado**. El valor previsto es
 
 > [!NOTE]
 > Recuerde que cuando dos directivas con distintos niveles de restricción se aplican al mismo dispositivo o usuario, la directiva más restrictiva se aplica en la práctica.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

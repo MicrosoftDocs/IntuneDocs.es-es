@@ -14,8 +14,9 @@ ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 361348939341b580a9abc576938522d166125183
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 31788f18d983ab6b0fc57a93566bd43e6606f10f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -36,7 +37,7 @@ Para obtener más información sobre alertas, notificaciones e informes, vea [Su
 ## <a name="intune-capabilities"></a>Capacidades de Intune
 Intune tiene una amplia variedad de funciones que abarcan mucho más de lo expuesto en estos breves pasos de configuración. Estos son algunos ejemplos de estas capacidades:
 
--   **Controle el acceso a Exchange y Office 365.** Para obtener más información, vea [Manage app access to Exchange Online (Administrar el acceso de las aplicaciones a Exchange Online)](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) y [Manage app access to Office 365 services (Administrar el acceso de las aplicaciones a los servicios de Office 365)](https://docs.microsoft.com/en-us/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
+-   **Controle el acceso a Exchange y Office 365.** Para obtener más información, vea [Manage app access to Exchange Online (Administrar el acceso de las aplicaciones a Exchange Online)](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) y [Manage app access to Office 365 services (Administrar el acceso de las aplicaciones a los servicios de Office 365)](https://docs.microsoft.com/intune/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
 
 -   **Administre los dispositivos iOS propiedad de la empresa.** Para obtener más detalles, vea [Inscribir dispositivos iOS de empresa en Microsoft Intune](/Intune/Deploy-Use/enroll-corporate-owned-ios-devices-in-microsoft-intune).
 
@@ -56,9 +57,4 @@ Las opciones de soporte técnico se describen en [Cómo obtener asistencia para 
 Lea sobre algunas [formas comunes de usar Intune](common-ways-to-use-intune.md)
 
 Convertir a una [suscripción de pago](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

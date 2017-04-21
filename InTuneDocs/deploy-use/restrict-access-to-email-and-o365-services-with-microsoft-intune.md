@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: 399c6260a98d51417a067d001c0fd42c926c1513
-ms.lasthandoff: 01/24/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: f66772dd318e97b9fef124776e80d9d9a4c7de7f
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -30,7 +30,7 @@ Puede proteger el acceso a su correo electrónico de empresa, a servicios de Off
 ## <a name="how-does-conditional-access-work"></a>¿Cómo funciona el acceso condicional?
 Puede usar la configuración de la directiva de cumplimiento para evaluar el cumplimiento del dispositivo. La directiva de acceso condicional usa la evaluación para restringir o permitir el acceso a un servicio específico. Cuando usa una directiva de acceso condicional en combinación con una directiva de cumplimiento de dispositivos, solo podrán tener acceso al servicio los dispositivos compatibles. La directiva de cumplimiento y de acceso condicional se implementan en el usuario. Cualquier dispositivo que utilice el usuario para tener acceso a los servicios se somete a comprobaciones para verificar que cumple con las directivas.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Tenga en cuenta que el usuario que usa el dispositivo debe tener implementada una directiva de cumplimiento para que se pueda evaluar el cumplimiento del dispositivo.
 > Si no se implementa ninguna directiva de cumplimiento en el usuario, el dispositivo se considera conforme y no se aplicarán restricciones de acceso.
 
@@ -48,7 +48,7 @@ Microsoft Intune y Azure Active Directory (Azure AD) Premium funcionan sin probl
 
 Las **licencias de Azure AD Premium** pueden comprarse como un servicio independiente o pueden comprarse (junto con Intune) como parte de un contrato Enterprise. Si ha implementado directivas de acceso condicional con Intune, asegúrese de que ha obtenido las **licencias de EMS** o de Azure AD Premium correctas.
 
-- Más información sobre la [página de precios de Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) o la [página de precios de Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+- Más información sobre la [página de precios de Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) o la [página de precios de Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
 Además, asegúrese de que a los usuarios que planea que van a aplicar directivas de acceso condicional se les hayan [asignado licencias de EMS o de Azure AD Premium](/Intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md).
 

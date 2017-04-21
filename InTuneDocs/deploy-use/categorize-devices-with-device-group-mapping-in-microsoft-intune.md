@@ -15,8 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 28af253b0a0fe174478961810a26b45d8ac3d959
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 57c739444c18d12a6d7ee8ca591f9a1dd72985d7
+ms.lasthandoff: 04/14/2017
 
 ---
 
@@ -77,7 +78,7 @@ Usará el nombre de la categoría de dispositivo al crear grupos de seguridad de
 
 En este paso, creará grupos dinámicos en Azure Portal según la categoría del dispositivo y el nombre de la categoría del dispositivo.
 
-Para continuar, consulte el tema [Uso de atributos para crear reglas avanzadas](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) en la documentación de Azure Active Directory.
+Para continuar, consulte el tema [Uso de atributos para crear reglas avanzadas](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) en la documentación de Azure Active Directory.
 Utilice la información de este tema para crear un grupo de dispositivos con una regla avanzada mediante el atributo **deviceCategory**.
 Por ejemplo (**device.deviceCategory -eq** "<*el nombre de la categoría de dispositivo que obtuvo desde la consola de administración de Intune*>")
 
@@ -88,9 +89,4 @@ Cuando los usuarios inscriban sus dispositivos, verán una lista de las categor�
 
 ### <a name="see-also"></a>Consulte también
 [Usar grupos para administrar usuarios y dispositivos en Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
-ms.openlocfilehash: 16e4b6ddd1df9c56e36318dfd3050d1a1f627adc
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: fdd85177f21a430eb940d1f88b3bb016c56cee55
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -48,14 +49,9 @@ Puede proteger los datos empresariales mediante directivas de MAM en los disposi
 
 Para asociar una aplicación a una directiva de MAM, la aplicación debe incorporar el Kit de desarrollo de software (SDK) de aplicaciones de Microsoft Intune o usar la herramienta de ajuste de aplicaciones.
 
-Algunas aplicaciones, como las de Microsoft Office, tienen integrado el SDK de aplicaciones de Intune. Para ver la lista completa de las aplicaciones compatibles, vaya a la [Microsoft Intune mobile application gallery](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps) (Galería de aplicaciones móviles de Microsoft Intune) de la página de partners de aplicaciones de Microsoft Intune. Seleccione la aplicación para ver los escenarios y las plataformas admitidos y si la aplicación admite varias identidades.
+Algunas aplicaciones, como las de Microsoft Office, tienen integrado el SDK de aplicaciones de Intune. Para ver la lista completa de las aplicaciones compatibles, vaya a la [Microsoft Intune mobile application gallery](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) (Galería de aplicaciones móviles de Microsoft Intune) de la página de partners de aplicaciones de Microsoft Intune. Seleccione la aplicación para ver los escenarios y las plataformas admitidos y si la aplicación admite varias identidades.
 
 También puede [habilitar sus aplicaciones personalizadas de línea de negocio](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) para usarlas con directivas de MAM.
 
 Además de restringir el movimiento de datos, si un dispositivo se pierde o es robado, o bien si el usuario ya no trabaja con la empresa, puede [borrar de forma selectiva datos empresariales](wipe-managed-company-app-data-with-microsoft-intune.md) y dejar solo los datos personales.
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

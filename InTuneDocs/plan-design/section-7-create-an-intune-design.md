@@ -15,9 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6df87e20011f20b99b91d88e669c67bb97ad2277
-ms.openlocfilehash: 1768b98cdcb18b5489d9a30b8c1f455f5de58418
-ms.lasthandoff: 03/13/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: ce51e92f9643ddc77e84e6b4c65825d397a37ddc
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -153,7 +153,7 @@ Grupos de usuarios y dispositivos determina el destino de una implementación. E
 
 -   Más información sobre la [planeación de grupos de usuarios y dispositivos](https://docs.microsoft.com/intune/deploy-use/plan-your-user-and-device-groups).
 
--   Más información sobre [cómo crear grupos de usuarios y dispositivos](https://docs.microsoft.com/en-us/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+-   Más información sobre [cómo crear grupos de usuarios y dispositivos](https://docs.microsoft.com/intune/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
 ### <a name="public-key-infrastructure-pki"></a>Infraestructura de clave pública (PKI)
 
@@ -326,7 +326,7 @@ A continuación se muestra un ejemplo de la documentación del diseño de un per
 
 Los perfiles de correo electrónico permiten que un cliente de correo se configure automáticamente con la información de conexión y la configuración del correo electrónico de instalación. Intune admite los perfiles de correo electrónico en algunos dispositivos.
 
--   Más información sobre los [perfiles de correo electrónico](https://docs.microsoft.com/en-us/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) y qué plataformas son compatibles.
+-   Más información sobre los [perfiles de correo electrónico](https://docs.microsoft.com/intune/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) y qué plataformas son compatibles.
 
 A continuación se muestra un ejemplo de la documentación del diseño de perfiles de correo electrónico:
 

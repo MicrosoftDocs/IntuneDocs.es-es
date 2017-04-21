@@ -15,8 +15,9 @@ ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: dc059b2865cef32091582b0f0d2a2ced8b35e8fa
-ms.openlocfilehash: 55e4be001c3ff946b8a63291ed9227bc3d185001
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 95c12111693e00fb6f67d20464dd159aeb4bb609
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -37,14 +38,14 @@ El SDK para aplicaciones de Intune admite escenarios similares en iOS y Android,
 
 Primero _**debe**_ registrar la aplicación con Microsoft Intune y aceptar las condiciones de registro. Los administradores de TI pueden entonces aplicar la directiva de protección de aplicaciones a la aplicación habilitada, que se mostrará como un partner de las aplicaciones de Intune.
 
-Mientras no se complete el registro y no se confirme por parte del equipo de Microsoft Intune, los administradores de Intune no tendrán la opción de aplicar la directiva de protección de aplicaciones al vínculo profundo de la aplicación. Microsoft también agregará la aplicación a su [página de partners de Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps). Allí, el icono de la aplicación mostrará que admite las directivas de protección de aplicaciones de Intune.
+Mientras no se complete el registro y no se confirme por parte del equipo de Microsoft Intune, los administradores de Intune no tendrán la opción de aplicar la directiva de protección de aplicaciones al vínculo profundo de la aplicación. Microsoft también agregará la aplicación a su [página de partners de Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps). Allí, el icono de la aplicación mostrará que admite las directivas de protección de aplicaciones de Intune.
 
 Para comenzar el proceso de registro, rellene el [Cuestionario de partner de la aplicación de Microsoft Intune](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR6oOVGFZ3pxJmwSN1N_eXwJUQUc5Mkw2UVU0VzI5WkhQOEYyMENWNDBWRS4u).
 
 Usaremos las direcciones de correo que se muestran en la respuesta del cuestionario para dirigirse al proceso de registro y continuarlo. Además, usamos la dirección de correo electrónico del registro para ponernos en contacto con usted si surge cualquier problema.
 
 > [!NOTE]
-> Toda la información recopilada en el cuestionario y a través de la correspondencia por correo electrónico con el equipo de Microsoft Intune cumplirá la [declaración de privacidad de Microsoft](https://www.microsoft.com/en-us/privacystatement/default.aspx).
+> Toda la información recopilada en el cuestionario y a través de la correspondencia por correo electrónico con el equipo de Microsoft Intune cumplirá la [declaración de privacidad de Microsoft](https://www.microsoft.com/privacystatement/default.aspx).
 
 **Qué esperar durante el proceso de registro**:
 
@@ -52,7 +53,7 @@ Usaremos las direcciones de correo que se muestran en la respuesta del cuestiona
 
 2. Después de que recibamos la información necesaria, le enviaremos el Acuerdo de partner de la aplicación de Microsoft Intune para que lo firme. En este contrato se describen los términos que su empresa debe aceptar para convertirse en partner de las aplicaciones de Microsoft Intune.
 
-3. También le notificaremos si la aplicación se registra correctamente con el servicio de Microsoft Intune y si la aplicación aparece en el sitio de [partners de Microsoft Intune](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-apps).
+3. También le notificaremos si la aplicación se registra correctamente con el servicio de Microsoft Intune y si la aplicación aparece en el sitio de [partners de Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 4. Por último, el vínculo profundo se agregará a la actualización del próximo mes del servicio de Intune. Por ejemplo, si la información de registro se ha completado en julio, el vínculo profundo se admitirá hacia mediados de agosto.
 
@@ -137,9 +138,4 @@ Este distintivo es un icono de maletín y puede verse en los ejemplos siguientes
 * Una aplicación de manipulación de imágenes que pueda leer archivos **.eps** o una aplicación de Adobe que pueda leer archivos **.ai**.
 
 * Puede encontrar las [instrucciones y activos de distintivo de aplicaciones de Intune](https://github.com/msintuneappsdk/intune-app-partner-badge) en Microsoft Intune GitHub.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
