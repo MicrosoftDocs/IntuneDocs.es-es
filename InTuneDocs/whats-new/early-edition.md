@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 04/05/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f051d8366ba9c6ca2183b5661c64087eb4cce9f0
-ms.openlocfilehash: 682545af10a7dc1f66158f95f871b889e9f85c4a
-ms.lasthandoff: 04/06/2017
+ms.sourcegitcommit: 0a39abc7f19f4c2c8074de66a9cd5df9cef78ed5
+ms.openlocfilehash: 2b6e29e7323d42b1ce3d75a46648203a7a43165c
+ms.lasthandoff: 04/13/2017
 
 
 ---
@@ -49,7 +49,7 @@ Microsoft MyApps tiene ahora mejor compatibilidad con Managed Browser. A los usu
 
 ### <a name="new-icons-for-the-managed-browser-and-the-company-portal---918433-918431--"></a>Nuevos iconos para Managed Browser y el Portal de empresa <!--918433, 918431-->
 
-Managed Browser está recibiendo iconos actualizados para las versiones de iOS y Android de la aplicación. El nuevo icono contendrá el distintivo de Intune actualizado para que sea más coherente con otras aplicaciones de Enterprise Mobility + Security (EM+S).
+Managed Browser está recibiendo iconos actualizados para las versiones de iOS y Android de la aplicación. El nuevo icono contendrá el distintivo de Intune actualizado para que sea más coherente con otras aplicaciones de Enterprise Mobility + Security (EM+S). Puede ver el nuevo icono de Managed Browser en la página de [novedades de la interfaz de usuario de la aplicación de Intune](whats-new-in-intune-app-ui.md).
 
 El Portal de empresa también está recibiendo iconos actualizados para las versiones de Windows, iOS y Android de la aplicación con el objetivo de mejorar la coherencia con otras aplicaciones de EM+S. Estos iconos se lanzarán gradualmente en las plataformas desde abril hasta finales de mayo.
 
@@ -59,7 +59,7 @@ Los usuarios ya no tienen que iniciar sesión en la aplicación de Outlook si ya
 
 ### <a name="sign-in-progress-indicator-in-android-company-portal---953374--"></a>Indicador de progreso de inicio de sesión en Portal de empresa de Android <!--953374-->
 
-Una actualización de la aplicación Portal de empresa de Android muestra un indicador de progreso de inicio de sesión cuando el usuario inicia o reanuda la aplicación. El indicador avanza por nuevos estados en el siguiente orden: "Conectando...", "Iniciando sesión..." y "Checking for security requirements..." (Comprobando requisitos de seguridad) antes de permitir que el usuario acceda a la aplicación.
+Una actualización de la aplicación Portal de empresa de Android muestra un indicador de progreso de inicio de sesión cuando el usuario inicia o reanuda la aplicación. El indicador avanza por nuevos estados en el siguiente orden: "Conectando...", "Iniciando sesión..." y "Checking for security requirements..." (Comprobando requisitos de seguridad) antes de permitir que el usuario acceda a la aplicación. Puede ver las nuevas pantallas de la aplicación Portal de empresa en la página de [novedades de la interfaz de usuario de la aplicación de Intune](whats-new-in-intune-app-ui.md). 
 
 
 ## <a name="notices"></a>Notificaciones
@@ -175,11 +175,6 @@ Puede asignar aplicaciones de compras por volumen (PCV) de iOS como instalacione
 ### <a name="synchronize-ebooks-from-apple-vpp-store----800878---"></a>Sincronizar libros electrónicos de la tienda de compras por volumen de Apple <!-- 800878 -->
 
 Puede sincronizar los libros que haya adquirido a través de la tienda del programa de compras por volumen de Apple con Intune y asignarlos a los usuarios.
-
-### <a name="shared-shift-worker-devices-for-samsung-knox-standard-devices----773753---"></a>Dispositivos de trabajo por turnos compartidos para dispositivos Samsung KNOX Standard <!-- 773753 -->
-
-Puede configurar un dispositivo Samsung KNOX Standard como un dispositivo de trabajo por turnos compartido en el portal de Intune. Una vez que el dispositivo está en modo compartido, las aplicaciones, las directivas y el correo electrónico de ese dispositivo están vinculados a la identidad del usuario que está iniciando sesión en el Portal de empresa.
-Los usuarios pueden iniciar sesión en la aplicación Portal de empresa mediante sus credenciales de Azure Active Directory, y se aplicarán automáticamente sus aplicaciones, sus directivas y su configuración de correo electrónico al dispositivo.
 
 ### <a name="multi-user-management-for-samsung-knox-standard-devices----971988---"></a>Administración de varios usuarios para dispositivos Samsung KNOX Standard <!-- 971988 -->
 
