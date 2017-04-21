@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ad13897fe7bbe4fe13167bb4ce7f558b436a7a90
-ms.openlocfilehash: af147a50f533e4be948261898b60c4d522a9e4eb
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: abeef923eb5c964ef1e306bbb2c25d0570959674
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -44,7 +45,7 @@ Si ya tiene una cuenta profesional o educativa, podrá **iniciar sesión** con e
 ## <a name="post-sign-up-considerations"></a>Consideraciones posteriores al registro
 Si se registra para obtener una nueva suscripción, recibirá un mensaje de correo electrónico con la información de la cuenta en la dirección de correo electrónico que haya proporcionado durante el proceso de suscripción. Este mensaje confirma que la suscripción está activa.
 
-Después de completar el proceso de registro, se le dirigirá a una página que se usa para agregar usuarios y asignarles licencias a través del centro de administración de Office 365. Si solo tendrá cuentas basadas en la nube con el nombre de dominio onmicrosoft.com predeterminado, puede continuar para agregar usuarios y asignar licencias. Pero si va a usar el nombre de dominio personalizado de la organización o si quiere sincronizar la información de la cuenta de usuario de Active Directory local, puede cerrar la ventana del explorador y avanzar al paso 2 de esta guía de inicio rápido. También puede obtener más información [sobre su dominio inicial onmicrosoft.com en Office 365](https://support.office.com/en-us/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A?ui=en-US&rs=en-US&ad=US)
+Después de completar el proceso de registro, se le dirigirá a una página que se usa para agregar usuarios y asignarles licencias a través del centro de administración de Office 365. Si solo tendrá cuentas basadas en la nube con el nombre de dominio onmicrosoft.com predeterminado, puede continuar para agregar usuarios y asignar licencias. Pero si va a usar el nombre de dominio personalizado de la organización o si quiere sincronizar la información de la cuenta de usuario de Active Directory local, puede cerrar la ventana del explorador y avanzar al paso 2 de esta guía de inicio rápido. También puede obtener más información [sobre su dominio inicial onmicrosoft.com en Office 365](https://support.office.com/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A)
 
 >[!TIP]
 > La próxima vez que inicie sesión en Intune, irá automáticamente a la consola de administración de Intune.
@@ -53,9 +54,4 @@ Después de completar el proceso de registro, se le dirigirá a una página que 
 >[!div class="step-by-step"]
 
 >[&larr; **Requisitos pervios**](.\what-to-know-before-you-start-microsoft-intune.md)     [**Configuración de dominio** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-2.md)  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

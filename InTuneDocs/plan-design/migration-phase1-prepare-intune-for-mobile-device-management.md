@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 8da2695c4c6dc8b45559323b83a4bb77167303b7
-ms.openlocfilehash: 2e7bcedebdf777db64a9ec90aa758822634ed435
-ms.lasthandoff: 03/28/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 4bf9bd15f3f22e0609c4f56f5651454a62dbb7a8
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -58,7 +58,7 @@ Antes de profundizar en los detalles de configuración de Intune, revisemos los 
 
 -   ¿Están los usuarios familiarizados con la tecnología y el entorno de TI en general?
 
-### <a name="what-is-your-device-security-policy"></a>¿Cuál es su directiva de seguridad de dispositivos? 
+### <a name="what-is-your-device-security-policy"></a>¿Cuál es su directiva de seguridad de dispositivos?
 
 -   ¿Necesita cifrado de nivel de dispositivo?
 
@@ -84,7 +84,7 @@ Antes de profundizar en los detalles de configuración de Intune, revisemos los 
 
 ## <a name="additional-information"></a>Información adicional
 
--   Para obtener ejemplos más detallados, revise estos [casos prácticos](https://customers.microsoft.com/en-US/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune) desde diferentes sectores para ver cómo las organizaciones evalúan sus requisitos de administración de dispositivos móviles.
+-   Para obtener ejemplos más detallados, revise estos [casos prácticos](https://customers.microsoft.com/story/mwh-global-now-part-of-stantec-secures-mobile-devices-with-intune) desde diferentes sectores para ver cómo las organizaciones evalúan sus requisitos de administración de dispositivos móviles.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

@@ -15,9 +15,9 @@ ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 905be6a926dc5bab8e9b1016ba82751ee47313e5
-ms.openlocfilehash: 70fba8f983efb245afc3fb19fa38287d1a84b1f4
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: acfcb5fc8bf0af2ba5fb897e9e18d61e60f11978
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -108,7 +108,7 @@ Después de haber creado un perfil de certificado de CA de confianza, cree perfi
 
     >     CN={{nombreDeUsuario}},E={{direcciónDeCorreoElectrónico}},OU=Móvil,O=Departamento financiero,L=Redmond,ST=Washington,C=US
 
-    > En este ejemplo, el administrador crea un formato de nombre de sujeto que, además de las variables `CN` y `E`, usa cadenas para los valores Unidad organizativa, Organización, Ubicación, Estado y País. [La función CertStrToName](https://msdn.microsoft.com/en-us/library/windows/desktop/aa377160.aspx) muestra las cadenas admitidas.
+    > En este ejemplo, el administrador crea un formato de nombre de sujeto que, además de las variables `CN` y `E`, usa cadenas para los valores Unidad organizativa, Organización, Ubicación, Estado y País. [La función CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) muestra las cadenas admitidas.
 
 4.  Seleccione **Guardar directiva**.
 

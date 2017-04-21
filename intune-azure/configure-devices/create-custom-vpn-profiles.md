@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 04/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 990f3ff6528b537d1ea62c82440f1e46bcde8c95
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
+ms.openlocfilehash: a91a1b92a4b3d720d3fae9f196d4c4e34aea24b7
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -60,69 +60,6 @@ Este tipo de directiva puede ser útil cuando las directivas estándar de VPN de
 El perfil se crea y aparece en la hoja de la lista de perfiles.
 Si desea continuar y asignar este perfil a grupos, consulte [Asignación de perfiles de dispositivo](how-to-assign-device-profiles.md).
 
-## <a name="example-uri-settings"></a>Ejemplo de la configuración de URI
-
-Estas opciones de configuración pueden usarse para crear una configuración personalizada para una VPN en una empresa ficticia denominada Contoso.
-Para ver los detalles completos de todas las opciones que puede usar, vea [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx).
-
-VPN de Contoso nativa (IKEv2): ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
-
-vpn.contoso.com ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/NativeProtocolType
-
-Ikev2 ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/RoutingPolicyType
-
-SplitTunnel ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/UserMethod
-
-Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuration &lt;EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig"&gt;&lt;EapMethod&gt;&lt;Type xmlns="http://www.microsoft.com/provisioning/EapCommon"&gt;13&lt;/Type&gt;&lt;VendorId xmlns="http://www.microsoft.com/provisioning/EapCommon"&gt;0&lt;/VendorId&gt;&lt;VendorType xmlns="http://www.microsoft.com/provisioning/EapCommon"&gt;0&lt;/VendorType&gt;&lt;AuthorId xmlns="http://www.microsoft.com/provisioning/EapCommon"&gt;0&lt;/AuthorId&gt;&lt;/EapMethod&gt;&lt;Config xmlns="http://www.microsoft.com/provisioning/EapHostConfig"&gt;&lt;Eap xmlns="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1"&gt;&lt;Type&gt;13&lt;/Type&gt;&lt;EapType xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV1"&gt;&lt;CredentialsSource&gt;&lt;CertificateStore&gt;&lt;SimpleCertSelection&gt;true&lt;/SimpleCertSelection&gt;&lt;/CertificateStore&gt;&lt;/CredentialsSource&gt;&lt;ServerValidation&gt;&lt;DisableUserPromptForServerValidation&gt;false&lt;/DisableUserPromptForServerValidation&gt;&lt;ServerNames&gt;&lt;/ServerNames&gt;&lt;/ServerValidation&gt;&lt;DifferentUsername&gt;false&lt;/DifferentUsername&gt;&lt;PerformServerValidation xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2"&gt;false&lt;/PerformServerValidation&gt;&lt;AcceptServerName xmlns="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV2"&gt;false&lt;/AcceptServerName&gt;&lt;/EapType&gt;&lt;/Eap&gt;&lt;/Config&gt;&lt;/EapHostConfig&gt;
-
-**./Vendor/MSFT/VPNv2/ContosoVPN/ByPassForLocal** True
-
-**./Vendor/MSFT/VPNv2/ContosoVPN/RememberCredentials** 1
-
-**./Vendor/MSFT/VPNv2/ContosoVPN/DomainNameInformationList/1/DomainName** Corp.Contoso.com
-
-**./Vendor/MSFT/VPNv2/ContosoVPN/DnsSuffix** Corp.Contoso.com
-
-**./Vendor/MSFT/VPNv2/ContosoVPN/TrustedNetworkDetection** Corp.Contoso.com
-
-**./Vendor/MSFT/VPNv2/ContosoVPN/RouteList/1/Address** 10.0.0.0
-
-**./Vendor/MSFT/VPNv2/ContosoVPN/RouteList/1/PrefixSize** 8
-
-**./Vendor/MSFT/VPNv2/ContosoVPN/AlwaysOn** true
-
-**./Vendor/MSFT/VPNv2/ContosoVPN/AppTriggerList/0/App/Id** %PROGRAMFILES%\Internet Explorer\iexplore.exe
-
-**./Vendor/MSFT/VPNv2/ContosoVPN/AppTriggerList/1/App/Id** %PROGRAMFILES% (x86)\Internet Explorer\iexplore.exe
-
-**./Vendor/MSFT/VPNv2/ContosoVPN/AppTriggerList/2/App/Id** Microsoft.MicrosoftEdge_8wekyb3d8bbwe
-
-**./Vendor/MSFT/VPNv2/ContosoVPN/TrafficFilterList/0/App/Id** %PROGRAMFILES% (x86)\Internet Explorer\iexplore.exe
-
-**./Vendor/MSFT/VPNv2/ContosoVPN/TrafficFilterList/1/App/Id** Microsoft.MicrosoftEdge_8wekyb3d8bbwe
-
-Los clientes que tengan preguntas sobre cómo usar estas opciones de configuración o que necesiten más información sobre lo que hacen, deben consultar la documentación del proveedor de servicios de configuración (CSP) correspondiente: https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx.
-
-## <a name="uri-settings-for-android-per-app-vpn-on-pulsesecure"></a>Valores de URI para una VPN por aplicación de Android en PulseSecure
-### <a name="custom-uri-for-package-list"></a>URI PERSONALIZADO PARA LISTA DE PAQUETES
--  Data type = String
--  OMA-URI = ./Vendor/MSFT/VPN/Profile/Name/PackageList
--  Value = Lista de paquete separada por delimitador
-   - Delimitadores: punto y coma (;), dos puntos (:), coma (,), barra vertical (|)
-
-Ejemplos:
-- com.android.chrome
-- com.android.chrome;com.android.browser
-
-### <a name="custom-uri-for-mode-optional"></a>URI PERSONALIZADO PARA MODO (OPCIONAL)
-- Data Type = String
-- OMA-URI = ./Vendor/MSFT/VPN/Profile/NAME/Mode
-
-> Notas
-> - Use el mismo *nombre* que haya asignado al perfil personalizado
-> - Valores posibles: *GLOBAL*, *WHITELIST*, *BLACKLIST*
-> - El valor predeterminado es *GLOBAL* si no se proporciona ningún valor de PackageList (compatibilidad con versiones anteriores de perfiles de todo el sistema)
-> - El valor predeterminado es *WHITELIST* si se proporciona un valor de PackageList
 
 
 

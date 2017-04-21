@@ -13,9 +13,9 @@ ms.technology:
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 911d2887791cf16d4290c3ac5189aa44086f4603
-ms.openlocfilehash: d3b4b823683196148d4fb8aa296b59c9c712e99f
-ms.lasthandoff: 03/11/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 2296490a8c3984e79eeeb553d90591048ed46711
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -51,9 +51,9 @@ Algunas características existentes de los grupos de Intune no están disponible
 ## <a name="how-to-get-ready"></a>Cómo estar preparado
 
 - Lea los siguientes temas de Azure AD para obtener información sobre los grupos de seguridad de Azure AD y su funcionamiento:
-    -  [Administración del acceso a los recursos con grupos de Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-manage-groups/).
-    -  [Administración de grupos en Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-manage-groups/).
-    -  [Uso de atributos para crear reglas avanzadas](https://azure.microsoft.com/en-us/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
+    -  [Administración del acceso a los recursos con grupos de Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-manage-groups/).
+    -  [Administración de grupos en Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-manage-groups/).
+    -  [Uso de atributos para crear reglas avanzadas](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/).
 - Considere la posibilidad de quitar cualquier grupo de Intune que ya no use antes de la migración.
 -  Asegúrese de que cualquier administrador que necesite crear grupos se agregue al rol de Azure AD **Administrador del servicio de Intune**. Tenga en cuenta que el rol Administrador del servicio de Azure AD no tiene permisos de **Administrar grupo**.
 -  Si usa grupos con la opción **Excluir miembros específicos**, considere si puede volver a diseñar estos grupos para que no necesiten exclusiones, o si puede usar reglas avanzadas en su consulta de Azure AD para conseguir el mismo resultado.

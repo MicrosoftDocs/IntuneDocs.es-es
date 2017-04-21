@@ -14,18 +14,18 @@ ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: bed28fc91271c12377f45662aa00fc9616d16fe8
-ms.openlocfilehash: 3d3f35f38a4d6f09f8fdc3e1bbc1c6ca5af6bbe7
-ms.lasthandoff: 04/11/2017
+ms.sourcegitcommit: e0ecc775f70703574c4e1adf0f0aa204f2745b72
+ms.openlocfilehash: a0ae4d74ad99adcfab596eb0c441c845fbca3a9e
+ms.lasthandoff: 04/20/2017
 
 
 ---
 
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Cómo presentar Microsoft Intune a los usuarios finales
 
-Microsoft Intune permite capacitar a los empleados con dispositivos móviles manteniendo protegidos los datos corporativos. Hay muchos pasos para garantizar una implementación correcta, incluidos la evaluación de Intune por medio de una [prueba gratuita](/Intune/Understand/mobile-device-management-trial-guide-microsoft-intune.md), la [protección del correo electrónico](https://docs.microsoft.com/intune/understand-explore/common-ways-to-use-intune#protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices) y la [incrustación de las aplicaciones con el SDK de Intune](/intune/develop/intune-app-sdk.md).
+Microsoft Intune permite capacitar a los empleados con dispositivos móviles manteniendo protegidos los datos corporativos. Hay muchos pasos para garantizar una implementación correcta, incluidos la evaluación de Intune por medio de una [prueba gratuita](/Intune/Understand/mobile-device-management-trial-guide-microsoft-intune), la [protección del correo electrónico](https://docs.microsoft.com/intune/understand-explore/common-ways-to-use-intune#protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices) y la [incrustación de las aplicaciones con el SDK de Intune](/intune/develop/intune-app-sdk).
 
-Ninguna de estas tecnologías garantiza que los usuarios entiendan la importancia de administrar los dispositivos. De hecho, muchos de los usuarios finales pueden sentir que se infringe su privacidad, especialmente si se ha implementado Intune como una [solución BYOD](/enterprise-mobility-security/solutions/byod-design-considerations-guide.md).
+Ninguna de estas tecnologías garantiza que los usuarios entiendan la importancia de administrar los dispositivos. De hecho, muchos de los usuarios finales pueden sentir que se infringe su privacidad, especialmente si se ha implementado Intune como una [solución BYOD](/enterprise-mobility-security/solutions/byod-design-considerations-guide).
 
 > [!Important]
 > Entender y resolver de forma proactiva las dudas de los usuarios finales sobre por qué la empresa necesita administrar los dispositivos es vital para una implementación correcta.
@@ -59,7 +59,7 @@ Asumir estas preocupaciones de los usuarios facilitará la implementación. Esta
   * [Cómo obtienen sus aplicaciones los usuarios de Android](how-your-android-users-get-their-apps.md)
 
 * **iOS**
-  * [Uso de un dispositivo iOS con Intune](https://docs.microsoft.com/Intune/EndUser/using-your-ios-device-with-intune)
+  * [Uso de un dispositivo iOS con Intune](https://docs.microsoft.com/intune-user-help/using-your-ios-or-macos-device-with-intune)
   * [Cómo obtienen sus aplicaciones los usuarios de iOS](how-your-ios-users-get-their-apps.md)
 
 * **Windows**

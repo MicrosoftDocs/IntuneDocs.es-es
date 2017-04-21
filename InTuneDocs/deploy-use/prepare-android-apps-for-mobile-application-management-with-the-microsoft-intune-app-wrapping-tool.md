@@ -15,8 +15,9 @@ ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f46f13e9dbf03fa2b3e2ec7339cad927ea0b38e0
-ms.openlocfilehash: 9a9899e192db1488c9a2c0fd38ffed6cef625c34
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: a89c2b26daf2b3b4da57e0c190f772e078681bee
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -130,7 +131,7 @@ Para evitar posibles suplantaciones de identidad, la divulgación de informació
 
 -   Importe la aplicación de salida a la consola de Intune en el mismo equipo donde se ejecuta la herramienta. Consulte [keytool](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/keytool.html) para más información sobre Java KeyTool.
 
--   Si la aplicación de salida y la herramienta se encuentran en una ruta de acceso de convención de nomenclatura universal (UNC), y no ejecuta la herramienta y los archivos de entrada en el mismo equipo, configure el entorno para que sea seguro mediante el [protocolo de seguridad de Internet (IPsec)](http://en.wikipedia.org/wiki/IPsec) o [la firma del bloque de mensajes del servidor (SMB)](https://support.microsoft.com/en-us/kb/887429).
+-   Si la aplicación de salida y la herramienta se encuentran en una ruta de acceso de convención de nomenclatura universal (UNC), y no ejecuta la herramienta y los archivos de entrada en el mismo equipo, configure el entorno para que sea seguro mediante el [protocolo de seguridad de Internet (IPsec)](http://wikipedia.org/wiki/IPsec) o [la firma del bloque de mensajes del servidor (SMB)](https://support.microsoft.com/kb/887429).
 
 -   Asegúrese de que la aplicación procede de un origen de confianza.
 
@@ -140,9 +141,4 @@ Para evitar posibles suplantaciones de identidad, la divulgación de informació
 - [Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles mediante Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)
 
 - [Usar el SDK para habilitar aplicaciones para la administración de aplicaciones móviles)](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

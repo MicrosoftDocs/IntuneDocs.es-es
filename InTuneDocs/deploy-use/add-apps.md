@@ -15,9 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: c294a0abaf69017b6c098a95870fc035f28d0787
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 23037cdb5a474b2c62c231ac1966989902a983e1
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -34,7 +34,7 @@ Antes de empezar a implementar aplicaciones con Microsoft Intune, dedique algo d
 
 |Tipo de aplicación|Detalles|
 |----------------|-------|
-|**Windows Installer (&#42;.exe, &#42;.msi)**|Este tipo de aplicación debe admitir la instalación silenciosa sin intervención del usuario. La documentación de la aplicación debe incluir las opciones de línea de comandos pertinentes para instalarla de forma silenciosa (por ejemplo, **/q**). Puede encontrar una lista de opciones de línea de comandos comunes en [Modificadores de línea de comandos para la herramienta Microsoft Windows Installer](https://support.microsoft.com/en-us/kb/227091).<br><br>Los archivos y las carpetas adicionales que requiere el programa de instalación de la aplicación deben estar disponibles en la ubicación que se especifique para los archivos de instalación de la aplicación.<br><br>En la mayoría de los casos, los archivos de Windows Installer (.msi) y de revisión de Windows Installer (.msp) no requieren que Intune instale argumentos de línea de comandos. Consulte la documentación de la aplicación.<br><br>Si es necesario especificar argumentos de línea de comandos, deben escribirse como pares nombre=valor (como, por ejemplo, TRANSFORMS=custom_transform.mst).<br><br>Este tipo de aplicación solo se aplica a PC que ejecutan el cliente de software de Intune.|
+|**Windows Installer (&#42;.exe, &#42;.msi)**|Este tipo de aplicación debe admitir la instalación silenciosa sin intervención del usuario. La documentación de la aplicación debe incluir las opciones de línea de comandos pertinentes para instalarla de forma silenciosa (por ejemplo, **/q**). Puede encontrar una lista de opciones de línea de comandos comunes en [Modificadores de línea de comandos para la herramienta Microsoft Windows Installer](https://support.microsoft.com/kb/227091).<br><br>Los archivos y las carpetas adicionales que requiere el programa de instalación de la aplicación deben estar disponibles en la ubicación que se especifique para los archivos de instalación de la aplicación.<br><br>En la mayoría de los casos, los archivos de Windows Installer (.msi) y de revisión de Windows Installer (.msp) no requieren que Intune instale argumentos de línea de comandos. Consulte la documentación de la aplicación.<br><br>Si es necesario especificar argumentos de línea de comandos, deben escribirse como pares nombre=valor (como, por ejemplo, TRANSFORMS=custom_transform.mst).<br><br>Este tipo de aplicación solo se aplica a PC que ejecutan el cliente de software de Intune.|
 |**Paquete de aplicación de Android (&#42;.apk)**|Para implementar aplicaciones Android, debe disponer de un paquete .apk válido.|
 |**Paquete de aplicación de iOS (&#42;.ipa)**|Para implementar aplicaciones iOS, debe disponer de un paquete .ipa válido.<br><br>El paquete .ipa debe estar firmado por Apple y la fecha de expiración en el perfil de aprovisionamiento debe ser válida. Intune puede distribuir aplicaciones iOS de certificado de empresa.<br><br>No todas las aplicaciones con certificación de desarrollador de Apple son compatibles.<br><br>Su empresa debe estar registrada en el programa iOS Developer Enterprise Program.<br><br>Asegúrese de que el servidor de seguridad de la organización permite el acceso a los sitios web de certificación y aprovisionamiento de iOS.<br><br>No es necesario implementar un archivo de manifiesto (.plist) con la aplicación.|
 |**Paquete de aplicación de Windows Phone (&#42;.xap, .appx, .appxbundle)**|Para implementar aplicaciones, necesitará un certificado de firma de código móvil de empresa. Pata obtener detalles, vea [Configurar la administración de Windows Phone con Microsoft Intune](set-up-windows-device-management-with-microsoft-intune.md).|
@@ -49,7 +49,7 @@ Use un vínculo externo cuando tenga:
 
 Las aplicaciones basadas en vínculos externos no se almacenan en el espacio de almacenamiento en nube de Intune.
 ### <a name="managed-ios-app-from-the-app-store"></a>**Aplicación iOS administrada desde la tienda de aplicaciones**
-Puede usar aplicaciones iOS administradas para administrar e implementar aplicaciones iOS gratuitas desde la tienda de aplicaciones. También puede usar aplicaciones iOS administradas para asociar [directivas de administración de aplicaciones móviles](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) a [aplicaciones compatibles](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx) y revisar su estado en la consola del administrador.<br /><br />Las aplicaciones iOS administradas no se almacenan en el espacio de almacenamiento en nube de Intune.
+Puede usar aplicaciones iOS administradas para administrar e implementar aplicaciones iOS gratuitas desde la tienda de aplicaciones. También puede usar aplicaciones iOS administradas para asociar [directivas de administración de aplicaciones móviles](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) a [aplicaciones compatibles](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx) y revisar su estado en la consola del administrador.<br /><br />Las aplicaciones iOS administradas no se almacenan en el espacio de almacenamiento en nube de Intune.
 
 > [!TIP]
 > Las opciones para dispositivos móviles no estarán disponibles hasta que [establezca la entidad de MDM ](prerequisites-for-enrollment.md) en Intune.

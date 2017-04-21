@@ -15,8 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 32653a46d8758eac5b884f4f6f7a2e07447c1e36
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 7451b1872a848ac322db4ec485564f2ebf983f0d
+ms.lasthandoff: 04/14/2017
 
 ---
 # <a name="deploy-apps-in-microsoft-intune"></a>Deploy apps in Microsoft Intune (Implementar aplicaciones en Microsoft Intune)
@@ -48,7 +49,7 @@ En este procedimiento, se implementa una aplicación en los grupos de dispositiv
 
 5. Si la aplicación que va a implementar se puede configurar mediante una directiva de administración de aplicaciones móviles, se abrirá la página **Administración de aplicaciones móviles**. En esta página, seleccione la directiva de administración de aplicaciones móviles que quiere asociar a esta aplicación.
 
-    [Vea qué aplicaciones de Microsoft son compatibles con las directivas de administración de aplicaciones móviles.](https://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/partners.aspx)
+    [Vea qué aplicaciones de Microsoft son compatibles con las directivas de administración de aplicaciones móviles.](https://www.microsoft.com/server-cloud/products/microsoft-intune/partners.aspx)
 
 6. Si la aplicación que va a implementar es compatible con perfiles de VPN de Intune, se mostrará la página **Perfil de VPN**. En esta página, puede elegir asociar aplicaciones iOS a un perfil de VPN que haya implementado. La conexión VPN se abre automáticamente al iniciar la aplicación. Para disponer de un perfil de VPN, debe tener habilitada la configuración de perfil **VPN por aplicación**.
  Para obtener información sobre cómo configurar perfiles de VPN, incluida información sobre cómo asociar los perfiles con las aplicaciones, consulte [Conexiones VPN en Microsoft Intune](vpn-connections-in-microsoft-intune.md).
@@ -72,9 +73,4 @@ Si implementó la aplicación como **Requerida** en un dispositivo iOS, el usuar
 ## <a name="next-steps"></a>Pasos siguientes
 
 Después de implementar una aplicación, probablemente le interese supervisar su progreso. Para obtener más información, vea [Monitor apps in Microsoft Intune](monitor-apps-in-microsoft-intune.md) (Supervisar aplicaciones en Microsoft Intune).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

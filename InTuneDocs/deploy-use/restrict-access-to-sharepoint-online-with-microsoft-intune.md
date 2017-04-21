@@ -15,8 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: c4077c41da897e570e5d29702ba0e776c7deee6b
-ms.openlocfilehash: c72d4525a41e7b1498232526c6e05cc4b7bef978
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 9e4fca9e29c8f0c2ec3ef088c3f91ad15ac11804
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -40,7 +41,7 @@ Cuando un usuario intenta conectarse a un archivo mediante una aplicación compa
 
 **Antes** de configurar una directiva de acceso condicional para SharePoint Online, debe:
 - Tener una **suscripción de SharePoint Online** y los usuarios deben tener licencia para SharePoint Online.
-- Tener una **suscripción de Enterprise Mobility + Security (EMS)** o una **suscripción de Azure Active Directory (Azure AD) Premium** y los usuarios deben tener la licencia de EMS o Azure AD. Para obtener más detalles, vea la [página de precios de Enterprise Mobility](https://www.microsoft.com/en-us/cloud-platform/enterprise-mobility-pricing) o la [página de precios de Azure Active Directory](https://azure.microsoft.com/en-us/pricing/details/active-directory/).
+- Tener una **suscripción de Enterprise Mobility + Security (EMS)** o una **suscripción de Azure Active Directory (Azure AD) Premium** y los usuarios deben tener la licencia de EMS o Azure AD. Para obtener más detalles, vea la [página de precios de Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) o la [página de precios de Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
 
   Para conectarse a los archivos requeridos, un dispositivo debe:
@@ -59,10 +60,10 @@ Si no se cumple una condición, el usuario ve uno de los mensajes siguientes cua
 
 -   Si el dispositivo no es conforme, se muestra un mensaje que dirige al usuario al sitio web del Portal de empresa de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], donde encontrará información sobre el problema y sobre cómo resolverlo.
 
-**El acceso condicional no se aplica al uso compartido externo**. Para información sobre cómo impedir el uso compartido externo en el inquilino o una colección de sitios, consulte [Administrar el uso compartido externo en su entorno de SharePoint Online](https://support.office.com/en-us/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85?ui=en-US&rs=en-US&ad=US).
+**El acceso condicional no se aplica al uso compartido externo**. Para información sobre cómo impedir el uso compartido externo en el inquilino o una colección de sitios, consulte [Administrar el uso compartido externo en su entorno de SharePoint Online](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85).
 
 >[!NOTE]
->Si habilita el acceso condicional para SharePoint Online, se recomienda que deshabilite el dominio en la lista como se describe en el tema [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/en-us/library/dn917451.aspx).  
+>Si habilita el acceso condicional para SharePoint Online, se recomienda que deshabilite el dominio en la lista como se describe en el tema [Remove-SPOTenantSyncClientRestriction](https://technet.microsoft.com/library/dn917451.aspx).  
 
 ## <a name="support-for-mobile-devices"></a>Compatibilidad con dispositivos móviles
 No se admite lo siguiente:
@@ -84,7 +85,7 @@ No se admite lo siguiente:
 > [!NOTE]
 >Para usar el acceso condicional con equipos Windows 10, debe actualizarlos con la Actualización de aniversario de Windows 10.
 
-  - Debe configurar los equipos unidos a un dominio para que [se registren automáticamente](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-automatic-device-registration/) con Azure Active Directory. El servicio Registro de dispositivos de Azure AD se activará automáticamente para los clientes de Intune y Office 365. Los clientes que ya hayan implementado el servicio Registro de dispositivos de ADFS no podrán ver los dispositivos registrados en la instancia local de Active Directory.
+  - Debe configurar los equipos unidos a un dominio para que [se registren automáticamente](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) con Azure Active Directory. El servicio Registro de dispositivos de Azure AD se activará automáticamente para los clientes de Intune y Office 365. Los clientes que ya hayan implementado el servicio Registro de dispositivos de ADFS no podrán ver los dispositivos registrados en la instancia local de Active Directory.
 
   - Si la directiva está establecida para requerir la unión a un dominio y el equipo no está unido a ningún dominio, se muestra un mensaje que indica que es necesario ponerse en contacto con el administrador de TI.
 
@@ -92,7 +93,7 @@ No se admite lo siguiente:
   >[!NOTE]
   >No se admite el acceso condicional en los equipos que ejecutan el cliente del equipo de Intune.
 
-[La autenticación moderna de Office 365 debe estar habilitada](https://support.office.com/en-US/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) y tener las actualizaciones más recientes de Office.
+[La autenticación moderna de Office 365 debe estar habilitada](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) y tener las actualizaciones más recientes de Office.
 
 La autenticación moderna aporta inicio de sesión basado en la biblioteca de autenticación de Active Directory (ADAL) para los clientes de Windows en Office 2013 y habilita una mejor seguridad como la **autenticación multifactor** y la **autenticación basada en certificados**.
 
@@ -129,7 +130,7 @@ A continuación, configure la directiva para requerir que solo los dispositivos 
 #### <a name="bkmk_spopolicy"></a>
 
 >[!NOTE]
-> También puede crear una directiva de acceso condicional para dispositivos Intune en la consola de administración de Azure AD (la directiva se conoce como la **directiva de acceso condicional basado en dispositivo** en Azure AD). Además, puede crear otras directivas de acceso condicional, como la autenticación multifactor. También puede establecer directivas de acceso condicional para aplicaciones empresariales de terceros compatibles con Azure AD, como Salesforce y Box. Para obtener más información, consulte [Establecimiento de una directiva de acceso condicional basado en dispositivos de Azure Active Directory para el control de acceso a aplicaciones conectadas a Azure Active Directory](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
+> También puede crear una directiva de acceso condicional para dispositivos Intune en la consola de administración de Azure AD (la directiva se conoce como la **directiva de acceso condicional basado en dispositivo** en Azure AD). Además, puede crear otras directivas de acceso condicional, como la autenticación multifactor. También puede establecer directivas de acceso condicional para aplicaciones empresariales de terceros compatibles con Azure AD, como Salesforce y Box. Para obtener más información, consulte [Establecimiento de una directiva de acceso condicional basado en dispositivos de Azure Active Directory para el control de acceso a aplicaciones conectadas a Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
 
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), seleccione **Directiva** > **Acceso condicional** > **Directiva de SharePoint Online**.
@@ -195,9 +196,4 @@ Seleccione cualquier grupo de dispositivos móviles. Luego, en la pestaña **Dis
 
 ### <a name="see-also"></a>Consulte también
 [Proteger el acceso al correo electrónico y a los servicios de O365 con Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
