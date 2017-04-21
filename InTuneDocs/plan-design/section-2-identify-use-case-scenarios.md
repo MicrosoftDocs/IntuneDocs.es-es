@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f807d6e4b20b98ecf622d1ebdd9db33b132a2e6a
-ms.openlocfilehash: c834b0282b8f9b47566ab1da2125d993ba8febdf
+ms.sourcegitcommit: 3c5744e7c1290bf9016bc03dcb2db9a1bd9f43dd
+ms.openlocfilehash: 031820d505e0e9cb007e47a5397934d0e505aed4
+ms.lasthandoff: 04/10/2017
 
 
 ---
@@ -25,7 +26,7 @@ ms.openlocfilehash: c834b0282b8f9b47566ab1da2125d993ba8febdf
 
 [!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
 
-Los escenarios de casos de uso de la administración de dispositivos móviles describen el tipo de usuario o el rol y la propiedad de su dispositivo (por ejemplo, de la empresa o personal). Los escenarios de casos de uso son útiles porque le permiten segmentar a sus usuarios en grupos manejables. Identificar los escenarios de casos de uso es una parte importante del proceso de planeación para obtener una implementación correcta de Intune.
+Los escenarios de casos de uso de la administración de dispositivos móviles describen el tipo de usuario o el rol y la propiedad de su dispositivo (por ejemplo, de la empresa o personal). Los escenarios de casos de uso son útiles porque le permiten segmentar a sus usuarios en grupos administrables. Identificar los escenarios de casos de uso es una parte importante del proceso de planeación para obtener una implementación correcta de Intune.
 
 Vamos a tratar algunos ejemplos para ayudar a su organización a identificar escenarios de casos de uso de Intune, así como grupos de la organización y plataformas de dispositivos móviles asociadas a cada caso de uso.
 
@@ -81,12 +82,7 @@ Aquí identificará las plataformas de dispositivos móviles asociadas con cada 
 | BYOD | Trabajador de la información | Marketing, ventas | iOS |                                                           
 | BYOD | Ejecutivos | Marketing, ventas | iOS |
 
-## <a name="next-section"></a>Sección siguiente
+## <a name="next-steps"></a>Pasos siguientes
 
 En la sección siguiente se proporcionan instrucciones sobre [cómo identificar los requisitos de Intune para cada escenario de caso de uso](section-3-determine-use-case-requirements.md).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

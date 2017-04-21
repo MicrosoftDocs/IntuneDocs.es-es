@@ -16,9 +16,9 @@ ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b6c245d60c661c04b4c4d29c9bdcdd752254d978
-ms.openlocfilehash: 6932e75fd002661245baa7754824ec6cfe500a22
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: 15415f9f31d520d66257df3a7e134e4b1de8467c
+ms.openlocfilehash: d70b3bc82b528184b5cfb4d4cad19cb034093e94
+ms.lasthandoff: 04/07/2017
 
 
 ---
@@ -46,5 +46,5 @@ El informe de configuración de cumplimiento proporciona detalles sobre cada uno
 - Número de dispositivos que no cumplen la configuración.
 - La plataforma a la que se aplica la configuración.
 
-Puede profundizar en cada una de las opciones de configuración para ver más información sobre los perfiles en los que se han habilitado estas opciones y el valor configurado de cada opción.
+Puede profundizar en cada una de las opciones de configuración para ver más información sobre los perfiles en los que se han habilitado estas opciones y el valor de cada opción.
 

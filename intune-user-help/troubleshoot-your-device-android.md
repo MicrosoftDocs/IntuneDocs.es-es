@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,9 +17,9 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 translationtype: Human Translation
-ms.sourcegitcommit: 1d0284ca2b5fd935a8657e3dd73d23d45071fd50
-ms.openlocfilehash: 126fce43ea91d5ec9e447d731e4e9ab5663df956
-ms.lasthandoff: 03/25/2017
+ms.sourcegitcommit: bed28fc91271c12377f45662aa00fc9616d16fe8
+ms.openlocfilehash: f46a93d42427ea41adf71403c91fa95052c0bba2
+ms.lasthandoff: 04/11/2017
 
 
 ---
@@ -41,6 +41,7 @@ A veces pueden producirse problemas en el dispositivo Android que se pueden corr
 - [Tiene que desactivar la depuración USB](you-need-to-turn-off-usb-debugging-android.md)
 - [Tiene que activar la búsqueda de amenazas de seguridad](you-need-to-turn-on-scanning-for-security-threats-android.md)
 - [El dispositivo no tiene la revisión de seguridad mínima](you-need-to-update-your-device-OS-security-patch-android.md)
+- [El dispositivo aparece cifrado, pero la aplicación del portal de empresa indica lo contrario](your-device-appears-encrypted-but-cp-says-otherwise-android.md)
 - [Se le pide que instale una aplicación de protección contra amenazas de dispositivo en el dispositivo Android](you-are-prompted-to-install-mtd-android.md)
 - [Tiene que solucionar una amenaza detectada por una aplicación de protección contra amenazas de dispositivo en el dispositivo Android](you-need-to-resolve-a-threat-found-by-mtd-android.md)
 
