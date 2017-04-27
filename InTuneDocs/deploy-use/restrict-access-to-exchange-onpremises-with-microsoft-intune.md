@@ -83,10 +83,7 @@ No se admite lo siguiente:
 -   Clientes de correo de Exchange ActiveSync, como Gmail en Android 4 o versiones posteriores.
 -   Clientes de correo de Exchange ActiveSync en **dispositivos Android for Work**: solo se admiten las aplicaciones **Gmail** y **Nine Work** en el **perfil de trabajo** en los dispositivos Android for Work. Para que el acceso condicional funcione con Android for Work, debe implementar un perfil de correo electrónico para la aplicación Gmail o Nine Work, y también implementar esas aplicaciones como una instalación obligatoria. 
 
-<!---
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
---->
-> [!NOTE] 
+> [!NOTE]
 > La aplicación Microsoft Outlook para iOS y Android no es compatible.
 
 ## <a name="support-for-pcs"></a>Compatibilidad para equipos

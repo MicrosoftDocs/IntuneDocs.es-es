@@ -58,8 +58,6 @@ Debe crear un perfil de certificado de confianza para poder crear un perfil de c
 
 -  Windows Phone 8.1 y versiones posteriores
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
-
 2.  Agregue una directiva **Perfil de certificado de confianza**.
 
     Más información: [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
