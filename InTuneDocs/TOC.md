@@ -12,7 +12,7 @@
 
 # [Introducción](get-started/get-started.md)
 ## [Configurar Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune.md)
-### [Requisitos previos]
+### Requisitos previos
 #### [Dispositivos compatibles](get-started/what-to-know-before-you-start-microsoft-intune.md)
 #### [Uso de red](get-started/network-bandwidth-use.md)
 ### [Iniciar sesión en Intune](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-1.md)
@@ -189,10 +189,13 @@
 
 ### [Proteger datos de aplicaciones con MAM](deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
 #### [Portal de Azure para directivas de protección de aplicaciones](deploy-use/azure-portal-for-microsoft-intune-mam-policies.md)
-#### [Prepararse para configurar directivas de protección de aplicaciones](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
-#### [Crear e implementar directivas de protección de aplicaciones](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Preparativos para configurar directivas de protección de aplicaciones para iOS y Android](deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Preparativos para configurar directivas de protección de aplicaciones para Windows 10](deploy-use/get-ready-to-configure-app-protection-policies-for-windows-10.md)
 #### [Directivas de protección de aplicaciones para Android](deploy-use/android-mam-policy-settings.md)
 #### [Directivas de protección de aplicaciones para iOS](deploy-use/ios-mam-policy-settings.md)
+#### [Directivas de protección de aplicaciones para Windows](deploy-use/create-windows-information-protection-policy-with-intune.md)
+#### [Creación e implementación de directivas de protección de aplicaciones para iOS y Android](deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
+#### [Creación e implementación de directivas de protección de aplicaciones de trabajo en curso para Windows 10](deploy-use/create-windows-information-protection-policy-with-intune.md)
 #### [Validar las directivas de protección de aplicaciones](deploy-use/validate-mobile-application-management.md)
 #### [Supervisar el cumplimiento de directivas de protección de aplicaciones](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
