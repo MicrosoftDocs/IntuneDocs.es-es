@@ -17,6 +17,7 @@ ms.custom: intune-classic
 translationtype: Human Translation
 ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
 ms.openlocfilehash: f153e3a58f9655bd1e36094f292098c9f55742b6
+ms.lasthandoff: 12/10/2016
 
 
 ---
@@ -41,7 +42,6 @@ Para obtener más información, consulte [Restrict access to email and O365 serv
 - **Directivas de acceso a recursos:** estas directivas funcionan juntas para ayudar a los usuarios a obtener acceso a los archivos y recursos que necesitan para hacer su trabajo correctamente, estén donde estén.
 Para obtener más información, vea [Enable access to company resources with Microsoft Intune](enable-access-to-company-resources-with-microsoft-intune.md) (Habilitar el acceso a los recursos de la empresa con Microsoft Intune).
 
-[!INCLUDE[wit_nextref](../includes/afw_rollout_disclaimer.md)]
 
 Para obtener una lista completa de las directivas de Intune, consulte [Microsoft Intune policy reference](microsoft-intune-policy-reference.md) (Referencia de directivas de Microsoft Intune).
 
@@ -212,9 +212,4 @@ Al eliminar una directiva o quitar un dispositivo de un grupo al que se le aplic
 ### <a name="where-can-i-find-help-troubleshooting-policies"></a>¿Dónde puedo encontrar ayuda para solucionar problemas en las directivas?
 
 Vea [Directivas de solución de problemas en Microsoft Intune](/intune/troubleshoot/troubleshoot-policies-in-microsoft-intune).
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
