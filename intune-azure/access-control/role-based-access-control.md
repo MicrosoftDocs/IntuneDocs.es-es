@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 03/15/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -81,9 +81,7 @@ El nuevo rol se muestra en la lista de la hoja **Roles**.
 ## <a name="how-to-assign-a-role"></a>Asignación de un rol
 
 1. En la hoja **Roles** de la carga de trabajo **Control de acceso**, elija el rol personalizado integrado que quiere asignar.
-2. En la hoja <*nombre del rol*> - **Propiedades**, elija **Administrar** > **Asignaciones**.
-    >[!TIP]
-    >En esta hoja, también puede editar o eliminar roles existentes.
+2. En la hoja <*nombre del rol*> - **Propiedades**, elija **Administrar** > **Asignaciones**. En esta hoja, también puede editar o eliminar roles existentes.
 3. En la siguiente hoja, elija **Asignar**.
 4. En la hoja **Asignaciones de roles**, escriba un **nombre** y una **descripción** opcional para la asignación y luego elija lo siguiente:
     - **Miembros**: seleccione un grupo que contenga el usuario al que quiere conceder los permisos.
