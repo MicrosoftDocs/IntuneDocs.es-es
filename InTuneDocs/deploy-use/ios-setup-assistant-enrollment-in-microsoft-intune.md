@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 2a1a9bb4e49e997a6f152cadcf0c7a75b553cb42
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 5c57a069fc9d2ca561954f50cbefa21b13a563d1
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -58,7 +58,7 @@ Si su empresa requiere grupos de dispositivos móviles para ayudar a administrar
 
 Un perfil de inscripción de dispositivo define la configuración que se aplica a un grupo de dispositivos.
 
-1. En la [consola de administración de Microsoft Intune](http://manage.microsoft.com), vaya a **Directiva** &gt; **Inscripción de dispositivos corporativos** y, después, elija **Agregar**.
+1. En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), vaya a **Directiva** &gt; **Inscripción de dispositivos corporativos** y, después, elija **Agregar**.
 
   ![Crear perfil de inscripción de dispositivo](../media/pol-sa-corp-enroll.png)
 
@@ -85,7 +85,7 @@ Un perfil de inscripción de dispositivo define la configuración que se aplica 
 
 ### <a name="add-ios-devices-to-enroll-with-setup-assistant"></a>Agregar dispositivos iOS para inscribirse con el Asistente de configuración
 
-1. En la [consola de administración de Microsoft Intune](http://manage.microsoft.com), vaya a **Grupos** &gt; **Todos los dispositivos** &gt; **Todos los dispositivos corporativos** &gt; **Todos los dispositivos** y luego elija **Agregar dispositivos**.
+1. En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), vaya a **Grupos** &gt; **Todos los dispositivos** &gt; **Todos los dispositivos corporativos** &gt; **Todos los dispositivos** y luego elija **Agregar dispositivos**.
 
    Puede agregar dispositivos de dos maneras:
 
@@ -128,7 +128,7 @@ Especifique el perfil que se va a asignar a los dispositivos agregados desde la 
 
 ### <a name="export-a-profile-to-deploy-to-ios-devices"></a>Exportar un perfil para implementarlo en dispositivos iOS
 
-1. En la [consola de administración de Microsoft Intune](http://manage.microsoft.com), vaya a **Directiva** &gt; **Inscripción de dispositivos corporativos** y luego seleccione el perfil de dispositivo para implementar en dispositivos móviles.
+1. En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), vaya a **Directiva** &gt; **Inscripción de dispositivos corporativos** y luego seleccione el perfil de dispositivo para implementar en dispositivos móviles.
 
 2. Elija **Exportar** en la barra de tareas. Copie y guarde el valor de **Dirección URL del perfil**. Se cargará en Apple Configurator más tarde para definir el perfil de Intune utilizado por los dispositivos iOS.
 

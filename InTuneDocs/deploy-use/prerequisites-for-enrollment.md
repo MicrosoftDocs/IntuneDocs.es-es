@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: f57323fe0b093f2478d71d3f01b9c0e5ee2727eb
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 160b8a7fe883b8af61831b30b711ad0243a3ec08
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -34,7 +34,7 @@ Para permitir que los empleados inscriban sus dispositivos móviles con Intune, 
 |**Paso 2:** [Configurar la entidad de MDM](#step-2-set-mdm-authority)|La entidad de administración de dispositivos móviles define el servicio asignado a los dispositivos.|
 |**Paso 3:** [Crear grupos](#step-3-create-groups)|Configure las opciones orientadas al usuario de la aplicación de portal de empresa.|  
 |**Paso 4:** [ Configurar el portal de empresa](#step-4-configure-company-portal)|Configure las opciones orientadas al usuario de la aplicación de portal de empresa.|  
-|**Paso 5:** [Asignar licencias de usuario](#step-5-assign-user-licenses)|Asigne licencias de Intune a los usuarios para que puedan inscribir dispositivos.|
+|**Paso 5:**  [Asignar licencias de usuario](#step-5-assign-user-licenses)|Asigne licencias de Intune a los usuarios para que puedan inscribir dispositivos.|
 |**Paso 6:** [Habilitar la inscripción](#step-6-enable-enrollment)|Habilite la configuración específica de la plataforma para la administración de iOS y Windows. Los dispositivos Android no necesitan ninguna configuración adicional.|
 |**Paso 7:** [Pasos siguientes](#step-7-next-steps)|Habilite la configuración específica de la plataforma para la administración de iOS y Windows. Los dispositivos Android no necesitan ninguna configuración adicional.|
 
@@ -55,7 +55,7 @@ La entidad de MDM define el servicio de administración que tiene permiso para a
 > Considere detenidamente si quiere administrar los dispositivos móviles solo mediante Intune (servicio en línea) o mediante System Center Configuration Manager con Intune (solución de software local junto con el servicio en línea). Después de establecer la entidad de administración de dispositivos móviles, no puede cambiarla sin ayuda de Soporte técnico de Microsoft. Vea [Qué hacer si se elige la configuración incorrecta de la entidad de MDM](#what-to-do-if-you-choose-the-wrong-mdm-authority-setting) para obtener instrucciones.
 
 
-1.  En la [consola de administración de Microsoft Intune](http://manage.microsoft.com), haga clic en **Administración** &gt; **Administración de dispositivos móviles**.
+1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), haga clic en **Administración** &gt; **Administración de dispositivos móviles**.
 
 2.  En la lista **Tareas** , haga clic en **Configurar entidad de administración de dispositivos móviles**. Se abre el cuadro de diálogo **Establecer entidad de administración de dispositivos móviles** .
 

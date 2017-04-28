@@ -15,9 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: a6d5f19b1d5f5bac3cd5e6d8bc445d765d703de0
-ms.lasthandoff: 12/10/2016
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 177485a0b09a2b0213a293914799a34a3bfa1136
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -32,7 +32,7 @@ Puede crear e implementar varias directivas que contienen diferentes términos y
 
 ## <a name="create-a-terms-and-conditions-policy"></a>Crear una directiva de términos y condiciones
 
-1.  En la [consola de administración de Microsoft Intune](http://manage.microsoft.com), haga clic en **Directiva** &gt; **Términos y condiciones**.
+1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), haga clic en **Directiva** &gt; **Términos y condiciones**.
 
     ![Captura de pantalla de la directiva de términos y condiciones](./media/pol-sa-terms-conditions.png)
 
@@ -54,7 +54,7 @@ Puede crear e implementar varias directivas que contienen diferentes términos y
 
 ## <a name="deploy-a-terms-and-conditions-policy"></a>Implementar una directiva de términos y condiciones
 
-1.  En la [consola de administración de Microsoft Intune](http://manage.microsoft.com), haga clic en **Directiva** &gt; **Términos y condiciones**.
+1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), haga clic en **Directiva** &gt; **Términos y condiciones**.
 
 2.  En la lista **Directivas de términos y condiciones**, seleccione la directiva que desea implementar y, luego, haga clic en **Administrar implementación**.
 
@@ -64,7 +64,7 @@ Puede crear e implementar varias directivas que contienen diferentes términos y
 
 ## <a name="monitor-a-terms-and-conditions-policy"></a>Supervisar una directiva de términos y condiciones
 
-1.  En la [consola de administración de Microsoft Intune](http://manage.microsoft.com), haga clic en **Directiva** &gt; **Términos y condiciones**.
+1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), haga clic en **Directiva** &gt; **Términos y condiciones**.
 
 2.  En la ventana **Crear nuevo informe**, haga clic en **Ver informe**. El informe se abrirá e indicará los usuarios que aceptaron los términos y las condiciones que implementó.
 
@@ -73,7 +73,7 @@ Al editar una directiva existente de términos y condiciones, puede elegir el co
 
 ## <a name="work-with-multiple-versions-of-terms-and-conditions"></a>Trabajar con varias versiones de los términos y las condiciones
 
-1.  En la [consola de administración de Microsoft Intune](http://manage.microsoft.com), haga clic en **Directiva** &gt; **Términos y condiciones**.
+1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), haga clic en **Directiva** &gt; **Términos y condiciones**.
 
 2.  Seleccione la directiva de términos y condiciones que desea modificar y luego haga clic en **Editar**.
 

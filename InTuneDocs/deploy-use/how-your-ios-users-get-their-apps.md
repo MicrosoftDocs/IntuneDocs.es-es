@@ -15,8 +15,9 @@ ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: dbc5f1b106df17aa8875997330dbfbb04a81f82f
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 02e54d4ae2ffa860fb95725c74fdff913e88365b
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -40,13 +41,13 @@ Las restricciones de Apple prohíben que las aplicaciones de la tienda de aplica
 
 Los usuarios inscritos obtienen sus aplicaciones tocando en los iconos siguientes de la pantalla de aplicaciones de la aplicación del Portal de empresa:
 
-- **Todas las aplicaciones** apunta a una lista de todas las aplicaciones en la pestaña TODO del [sitio web del Portal de empresa](http://portal.manage.microsoft.com).
+- **Todas las aplicaciones** apunta a una lista de todas las aplicaciones en la pestaña TODO del [sitio web del Portal de empresa](https://portal.manage.microsoft.com).
 
 - **Las aplicaciones destacadas** llevarán a los usuarios a la pestaña DESTACADOS del sitio web del Portal de empresa.
 
 - **Categorías** apunta a la pestaña CATEGORÍAS del sitio web del Portal de empresa.
 
- 
+
 ![Pantalla de aplicaciones del Portal de empresa de iOS](./media/ios-cp-app-main-apps-screen.png)
 
 Para obtener más información sobre cómo agregar aplicaciones y colocarlas en estos iconos, consulte [Agregar aplicaciones a los dispositivos inscritos en Intune](https://docs.microsoft.com/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md).
@@ -55,9 +56,4 @@ Para obtener más información sobre cómo agregar aplicaciones y colocarlas en 
 [Cómo obtienen sus aplicaciones los usuarios de Android](how-your-android-users-get-their-apps.md)
 
 [Cómo obtienen sus aplicaciones los usuarios de Windows](how-your-windows-users-get-their-apps.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 
