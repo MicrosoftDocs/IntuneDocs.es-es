@@ -15,8 +15,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: f35a6da93e48141489b89e62b37b473d885479cf
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: c4023007f993436e0d7628cce52f78a1127c88f8
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -50,7 +51,7 @@ Use la directiva de **Exchange ActiveSync** de Microsoft Intune para configurar 
 |**Requerir cifrado en tarjetas de almacenamiento**|Requiere que se cifren los datos almacenados en un almacenamiento externo, como una tarjeta SD (en dispositivos compatibles).
 <sup>1</sup> Información adicional para los dispositivos que ejecutan Windows 8.1
 
--   Para forzar el cifrado en los dispositivos que ejecutan Windows 8.1, debe instalar en cada dispositivo la [Actualización de cliente MDM de diciembre de 2014 para Windows](http://support.microsoft.com/kb/3013816).
+-   Para forzar el cifrado en los dispositivos que ejecutan Windows 8.1, debe instalar en cada dispositivo la [Actualización de cliente MDM de diciembre de 2014 para Windows](https://support.microsoft.com/kb/3013816).
 
 -   Si habilita esta configuración para dispositivos Windows 8.1, todos los usuarios del dispositivo deben tener una cuenta de Microsoft.
 
@@ -82,9 +83,4 @@ Use la directiva de **Exchange ActiveSync** de Microsoft Intune para configurar 
 
 ### <a name="see-also"></a>Consulte también
 [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

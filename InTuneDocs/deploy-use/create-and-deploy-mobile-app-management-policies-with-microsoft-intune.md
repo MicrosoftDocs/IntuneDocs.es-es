@@ -15,9 +15,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: a85b9f603e022b3296cb16754effd06087074a72
-ms.openlocfilehash: 34d4dc309044336eb3e625a1ecdc50abb48d6fa3
-ms.lasthandoff: 04/01/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 31b7ff2b9644f47107199f0f1d237847169c3143
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -57,7 +57,7 @@ Las directivas de protección de aplicaciones se crean en Azure Portal. Si esta 
 
 Siga estos pasos para crear directivas de protección de aplicaciones:
 
-1. Vaya a [Azure Portal](http://portal.azure.com) y especifique sus credenciales.
+1. Vaya a [Azure Portal](https://portal.azure.com) y especifique sus credenciales.
 
 2. Elija **Más servicios** y escriba "Intune".
 
@@ -109,7 +109,7 @@ Cuando termine de crear una directiva como se describe en el procedimiento anter
 
 A partir de la versión 1703 de Intune, tiene la opción de agregar de forma general aplicaciones de LOB a Intune al crear una nueva directiva de protección de aplicaciones. Esto le permite definir directivas de protección de aplicaciones para aplicaciones de LOB mediante el SDK de MAM, sin necesidad de permisos completos de implementación de aplicaciones.
 
-> [!TIP] 
+> [!TIP]
 > También puede agregar aplicaciones de LOB a Intune a través del flujo de trabajo de [Intune App SDK](https://docs.microsoft.com/intune/develop/intune-app-sdk-get-started).
 
 > [!IMPORTANT]
@@ -127,13 +127,13 @@ A partir de la versión 1703 de Intune, tiene la opción de agregar de forma gen
 
 ### <a name="to-add-lob-apps-windows"></a>Para agregar aplicaciones de LOB (Windows)
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Debe seleccionar Windows 10 en la lista desplegable de la plataforma al crear una nueva directiva de protección de aplicaciones.
 
 1.  En la hoja Agregar directiva, elija **Aplicaciones permitidas** o **Aplicaciones exentas** para abrir la hoja Aplicaciones permitidas o Aplicaciones exentas.
 
     > [!NOTE]
-    > 
+    >
     - **Aplicaciones permitidas**: estas son las aplicaciones que deben cumplir esta directiva.
     - **Aplicaciones exentas**: estas aplicaciones están exentas del cumplimiento de esta directiva y pueden acceder a los datos corporativos sin restricciones.
 <br></br>

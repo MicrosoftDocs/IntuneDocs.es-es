@@ -15,9 +15,9 @@ ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 6673c8de8d5deb74005b40a58274efcb10783fcc
-ms.openlocfilehash: 7f94d420529ff365504b2bb053d034cf36d30953
-ms.lasthandoff: 03/08/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 39dab717810aa5f900cbb4f4371491b05de1ecd1
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -89,7 +89,7 @@ Si ha establecido los valores de directivas de **Instalar Endpoint Protection** 
 |**Supervisar la actividad de archivos y programas en los equipos**|Habilita la supervisión de los archivos entrantes y los archivos salientes, así como la actividad de los programas en los equipos. Con esta opción de configuración, Endpoint Protection puede supervisar cuándo empieza la ejecución de archivos y programas, y le envía alertas sobre las acciones que realizan o las acciones que se realizan con ellos.<br /><br />Valor recomendado: **Sí**|
 |**Archivos supervisados**|Permite decidir si se supervisan solo los archivos entrantes, los salientes o todos.<br /><br />Valor recomendado: **Supervisar todos los archivos**|
 |**Habilitar supervisión del comportamiento**|Permite a Microsoft Intune Endpoint Protection buscar determinados patrones de actividad sospechosa en equipos cliente.<br /><br />Valor recomendado: **Sí**|
-|**Habilitar Sistema de inspección de red**|Habilita el Sistema de inspección de red (NIS) en los equipos cliente. NIS usa firmas de vulnerabilidades conocidas del [Microsoft Malware Protection Center (Centro de protección contra malware de Microsoft)](http://go.microsoft.com/fwlink/?LinkId=234249) para ayudar a detectar y bloquear tráfico de red malintencionado.<br /><br />Valor recomendado: **Sí**|
+|**Habilitar Sistema de inspección de red**|Habilita el Sistema de inspección de red (NIS) en los equipos cliente. NIS usa firmas de vulnerabilidades conocidas del [Microsoft Malware Protection Center (Centro de protección contra malware de Microsoft)](https://go.microsoft.com/fwlink/?LinkId=234249) para ayudar a detectar y bloquear tráfico de red malintencionado.<br /><br />Valor recomendado: **Sí**|
 
   ![Configuración en tiempo real para Endpoint Protection](./media/pol-sa-pc-policy-realtime.png)
 
