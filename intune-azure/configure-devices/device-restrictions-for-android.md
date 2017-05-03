@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/29/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: f316b332c3f1b80b9d6af488943298fcfea13741
-ms.openlocfilehash: 009c6491b8ce457a371f5db31de3f122fa41fb95
-ms.lasthandoff: 03/30/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 3ba986b624e602f05eb6ab25ec30e9d58173dbd8
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -42,6 +42,7 @@ ms.lasthandoff: 03/30/2017
 |**Captura de pantalla**|Permite al usuario capturar el contenido en pantalla como una imagen.|No|Sí|
 |**Asistente de voz**|Permite usar software de asistente de voz en el dispositivo.|No|Sí|
 |**YouTube**|Permite el uso de la aplicación de YouTube en el dispositivo.|No|Sí|
+|**Dispositivos compartidos**|Configure un dispositivo Samsung KNOX Standard como compartido. De este modo, los usuarios finales puede iniciar y cerrar sesión del dispositivo con sus credenciales de Azure AD, y el dispositivo se administra de forma central tanto si está en uso como si no.<br>Cuando los usuarios finales inician sesión, tienen acceso a aplicaciones, además de las directivas aplicadas a ellas. Cuando los usuarios cierran sesión, se borran todos los datos de la aplicación.|No|Sí|
 
 ## <a name="password"></a>Contraseña
 
@@ -53,11 +54,18 @@ ms.lasthandoff: 03/30/2017
 |**Máximo de minutos de inactividad hasta que se bloquea la pantalla**|Especifica el número de minutos de inactividad antes de que el dispositivo se bloquee automáticamente.|Sí|Sí|
 |**Número de errores de inicio de sesión antes de borrar el dispositivo**|Especifica el número de errores de inicio de sesión que se permite antes de que se borre el dispositivo.|Sí|Sí|
 |**Expiración de contraseña (días)**|Especifica el número de días antes de que se deba cambiar la contraseña del dispositivo.|Sí|Sí|
-|**Tipo de contraseña obligatoria**|Especifica el nivel requerido de complejidad de la contraseña y si se pueden usar dispositivos biométricos.|Sí|Sí|
+|**Tipo de contraseña obligatoria**|Especifica el nivel requerido de complejidad de la contraseña y si se pueden usar dispositivos biométricos. Elija de entre las siguientes opciones:<br><br>    -     **Valor predeterminado de dispositivo**<br>-     **Biométrica de seguridad baja**<br>    -     **Al menos numérica**<br>    -     **Complejo numérico** (no se permiten números consecutivos o de repetición, como "1111" o "1234")<sup>1</sup><br>    -     **Al menos alfabética**<br>    -     **Al menos alfanumérica**<br>    -     **Al menos alfanumérica con símbolos**|Sí|Sí|
 |**Impedir la reutilización de contraseñas anteriores**|Impide que el usuario final cree una contraseña que ha usado anteriormente.|Sí|Sí|
 |**Desbloqueo con huella digital**|Permite el uso de una huella digital para desbloquear dispositivos compatibles.|No|Sí|
 |**Smart Lock y otros agentes de confianza**|Le permite controlar la característica de Smart Lock en dispositivos Android compatibles (Samsung KNOX Standard 5.0 y versiones posteriores). Esta funcionalidad del teléfono, conocida también en ocasiones como agentes de confianza, le permite deshabilitar u omitir la contraseña de la pantalla de bloqueo del dispositivo si el dispositivo está en una ubicación de confianza (por ejemplo, cuando se conecta a un dispositivo Bluetooth específico o cuando está cerca de una etiqueta NFC). Puede usar esta opción para impedir que los usuarios configuren Smart Lock.|Sí (5.0 y versiones posteriores)|No|
 |**Cifrado**|Requiere el cifrado de los archivos en el dispositivo.|Sí|Sí|
+
+<sup>1</sup>Antes de asignar esta configuración a los dispositivos, asegúrese de que la aplicación Portal de empresa se actualizó a la versión más reciente en los dispositivos de destino.
+
+Si configura el valor de **Complejo numérico** y luego lo asigna a un dispositivo que ejecuta una versión de Android anterior a la versión 5.0, se aplica el comportamiento siguiente.
+- Si la aplicación Portal de empresa se ejecuta en una versión anterior a 1704, no se aplicará ninguna directiva de PIN en el dispositivo y se mostrará un error en el portal de Intune.
+- Si la aplicación Portal de empresa se actualizó a la versión 1704, solo aparecerá un PIN simple. Las versiones de Android anteriores a 5.0 no admiten esta configuración. No se muestra ningún error en el portal de Intune.
+
 
 ## <a name="google-play-store"></a>Google Play Store
 

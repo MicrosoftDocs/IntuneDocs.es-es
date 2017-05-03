@@ -16,16 +16,16 @@ ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 7edbba3a86213db71e41bd0d0de6c5d285025b8b
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
+ms.openlocfilehash: b0d0ad102942c65ac3988ea4659b34b397289126
+ms.lasthandoff: 04/19/2017
 
 ---
 
 # <a name="set-up-a-telecom-expense-management-service-in-intune-azure-preview"></a>Configurar un servicio de administración de gastos de telecomunicaciones en la versión preliminar de Azure de Intune
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Intune permite administrar los gastos de telecomunicaciones derivados del uso de datos en dispositivos móviles empresariales. Para ello, Intune se ha integrado con la solución de administración de gastos de telecomunicaciones Datalert del desarrollador de software externo Saaswedo. Datalert es un software de administración de gastos de telecomunicaciones en tiempo real que le permite administrar el uso de datos de telecomunicaciones y evitar los costosos e imprevistos sobrecargos de datos e itinerancia en los dispositivos administrados por Intune. 
+Intune permite administrar los gastos de telecomunicaciones derivados del uso de datos en dispositivos móviles empresariales. Para ello, Intune se ha integrado con la solución de administración de gastos de telecomunicaciones Datalert del desarrollador de software externo Saaswedo. Datalert es un software de administración de gastos de telecomunicaciones en tiempo real que le permite administrar el uso de datos de telecomunicaciones y evitar los costosos e imprevistos sobrecargos de datos e itinerancia en los dispositivos administrados por Intune.
 
 La integración de Intune con Datalert le permite establecer, supervisar y aplicar de formal centralizada límites para el uso de datos nacionales y de itinerancia mediante alertas automatizadas que se disparan cuando los límites superan los umbrales definidos. Puede configurar el servicio para que se apliquen diferentes acciones sobre individuos o grupos de usuarios finales, como deshabilitar la itinerancia cuando los usuarios superan el umbral. Además, en la consola de administración de Datalert se pueden encontrar informes que proporcionan información sobre la supervisión y el uso de datos.
 
@@ -85,7 +85,7 @@ Tras completar el paso 1, la conexión debe haberse habilitado automáticamente 
 
 3. En la hoja **Intune**, elija **Configuración del dispositivo**.
 
-4. En la hoja **Configuración del dispositivo**, elija **Configuración** > **Administración de gastos de telecomunicaciones**. 
+4. En la hoja **Configuración del dispositivo**, elija **Configuración** > **Administración de gastos de telecomunicaciones**.
 
    Busque el estado de conexión **Activo** en la parte superior de la página.
 
@@ -97,7 +97,7 @@ Para garantizar que solo se recopile información sobre el uso de datos de líne
 
 #### <a name="define-device-categories-and-device-groups-mapped-to-the-categories"></a>Definir categorías de dispositivos y grupos de dispositivos asignados a las categorías
 
-En función de las necesidades de su organización, deberá crear al menos dos categorías de dispositivos (por ejemplo, Empresarial y Personal) y grupos de dispositivos dinámicos para cada categoría. Puede crear más categorías para su organización, según resulte necesario. 
+En función de las necesidades de su organización, deberá crear al menos dos categorías de dispositivos (por ejemplo, Empresarial y Personal) y grupos de dispositivos dinámicos para cada categoría. Puede crear más categorías para su organización, según resulte necesario.
 
 Estas categorías se mostrarán a los usuarios durante la inscripción. Dependiendo de la categoría que estos elijan, el dispositivo inscrito se trasladará al grupo de dispositivos correspondiente. Para obtener más información sobre cómo crear categorías de dispositivos, consulte [Map devices to groups](https://docs.microsoft.com/intune-azure/enroll-devices/how-to-use-device-group-mapping) (Asignar dispositivos a grupos).
 
@@ -109,7 +109,7 @@ Siga estos pasos para crear la aplicación Datalert en Intune para cada platafor
 
 1. En la hoja **Intune** de Azure Portal, elija **Administrar aplicaciones**.
 
-2. En la hoja **Administrar aplicaciones**, elija **Administrar** > **Aplicaciones**. 
+2. En la hoja **Administrar aplicaciones**, elija **Administrar** > **Aplicaciones**.
 
 3. Seleccione **Agregar** para agregar una aplicación.
 
@@ -129,7 +129,7 @@ Siga estos pasos para crear la aplicación Datalert en Intune para cada platafor
 
 1. Seleccione la aplicación de iOS Datalert que creó en el paso anterior.
 
-2. En la hoja **Aplicaciones**, vaya a **Administrar** > **Asignaciones**. 
+2. En la hoja **Aplicaciones**, vaya a **Administrar** > **Asignaciones**.
 
 3. Elija **Seleccionar grupos** y siga los pasos para seleccionar el grupo de dispositivos empresariales.
 
@@ -137,9 +137,9 @@ Siga estos pasos para crear la aplicación Datalert en Intune para cada platafor
 
   ![Captura de pantalla de la hoja Agregar directiva](../media/tem-assign-datalert-app-to-device-group.png)
 
-### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>Paso 4: Agregar líneas de teléfono empresariales de pago a la consola de Datalert 
+### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>Paso 4: Agregar líneas de teléfono empresariales de pago a la consola de Datalert
 
-Llegado este paso, ya habrá configurado los servicios Intune y Datalert para que se comuniquen entre sí. Ahora debe agregar las líneas de teléfono empresariales de pago a la consola de Datalert, y definir umbrales y acciones para las posibles infracciones del uso de la itinerancia o los datos móviles. 
+Llegado este paso, ya habrá configurado los servicios Intune y Datalert para que se comuniquen entre sí. Ahora debe agregar las líneas de teléfono empresariales de pago a la consola de Datalert, y definir umbrales y acciones para las posibles infracciones del uso de la itinerancia o los datos móviles. Puede agregar manualmente líneas telefónicas corporativas de pago a la consola de Datalert, o bien puede hacer que las líneas se agreguen automáticamente una vez que el dispositivo se inscribe en Intune.
 
 Para configurar estos elementos, vaya a la [página de configuración de Datalert para Microsoft Intune](http://www.datalert.fr/microsoft-intune/intune-setup) (http://www.datalert.fr/microsoft-intune/intune-setup) y siga los pasos del asistente para la configuración, en la pestaña **Settings** (Configuración).
 
@@ -147,6 +147,11 @@ Para configurar estos elementos, vaya a la [página de configuración de Dataler
 
 
 El servicio Datalert ya está activo y comienza la supervisión del uso de datos y la deshabilitación de datos móviles y de itinerancia en los dispositivos que superan los límites de uso configurados.
+
+## <a name="client-enrollment-experience"></a>Experiencia de inscripción de cliente
+Consulte lo siguiente para ver la experiencia de inscripción de cliente:
+-    [Inscripción del dispositivo iOS en la administración de gastos de telecomunicaciones](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-ios)
+-    [Inscripción del dispositivo Android en la administración de gastos de telecomunicaciones](https://docs.microsoft.com/intune-user-help/enroll-your-device-with-telecom-expense-management-android)
 
 ## <a name="turning-off-the-datalert-service"></a>Desactivar el servicio Datalert
 

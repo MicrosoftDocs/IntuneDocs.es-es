@@ -16,9 +16,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 6a6b64465c95a3edd6fc2e2d4ae3da80ba3367ee
-ms.openlocfilehash: 92bd41aa4acc02e67e983c68f818bd656b0b9608
-ms.lasthandoff: 04/12/2017
+ms.sourcegitcommit: 6a1dbb2c9d3810f19536fc709719767de923b519
+ms.openlocfilehash: e5067631fc17fa375a3b263f9910936300e6f8e9
+ms.lasthandoff: 04/18/2017
 
 
 ---
@@ -26,14 +26,15 @@ ms.lasthandoff: 04/12/2017
 Hemos aprovechado la oportunidad para organizar algunas tareas de forma más lógica durante el traslado de Intune a Azure Portal. Pero, como ocurre con todas las mejoras, deberá aprender la nueva organización. Por ello, hemos creado esta guía de referencia para aquellos que están familiarizados con Intune en la consola clásica y se preguntan dónde se encuentra una determinada función en Intune en Azure. Si en este artículo no se incluye una característica que intenta encontrar, deje un comentario al final para que podamos actualizarlo.
 ## <a name="quick-reference-guide"></a>Guía de referencia rápida
 |Característica |Ruta en la consola clásica|Ruta en Intune en Azure| |------------||---------------|---------------|
-|Programa de inscripción de dispositivos (DEP) |Administrador > Administración de dispositivos móviles > iOS y Mac OS X > Programa de inscripción de dispositivos|[Inscripción de dispositivos > Inscripción de Apple > Enrollment Program Token (Token de programa de inscripción)](#where-did-apple-dep-go) |
-|Programa de inscripción de dispositivos (DEP)| Administrador > Administración de dispositivos móviles > iOS y Mac OS X > Programa de inscripción de dispositivos |[Inscripción de dispositivos > Inscripción de Apple > Enrollment Program Serial Numbers (Números de serie de programa de inscripción)](#where-did-apple-dep-go) |
+|Programa de inscripción de dispositivos (DEP) |Administrador > Administración de dispositivos móviles > iOS y Mac OS X > Programa de inscripción de dispositivos|[Inscripción de dispositivos > Inscripción de Apple > Token del programa de inscripción](#where-did-apple-dep-go) |
+|Programa de inscripción de dispositivos (DEP)| Administrador > Administración de dispositivos móviles > iOS y Mac OS X > Programa de inscripción de dispositivos |[Inscripción de dispositivos > Inscripción de Apple > Números de serie del programa de inscripción](#where-did-apple-dep-go) |
 |Reglas de inscripción |Administrador > Administración de dispositivos móviles > Reglas de inscripción|[Inscripción de dispositivos > Restricciones de inscripción](#where-did-enrollment-rules-go) |
-|Grupos mediante número de serie de iOS |Grupos > Todos los dispositivos > Dispositivos corporativos inscritos previamente > Mediante número de serie de iOS|[Inscripción de dispositivos > Inscripción de Apple > Enrollment Program Serial Numbers (Números de serie de programa de inscripción)](#where-did-corporate-pre-enrolled-devices-go) |
-|Grupos mediante número de serie de iOS |Grupos > Todos los dispositivos > Dispositivos corporativos inscritos previamente > Mediante número de serie de iOS| [Inscripción de dispositivos > Inscripción de Apple > AC Serial numbers (Números de serie de AC)](#where-did-corporate-pre-enrolled-devices-go)|
-|Grupos mediante IMEI (todas las plataformas)| Grupos > Todos los dispositivos > Dispositivos corporativos inscritos previamente > Mediante IMEI (todas las plataformas) | [Inscripción de dispositivos > Identificadores de dispositivo corporativos](#by-imei-all-platforms)|
-| Perfil de inscripción de dispositivos corporativos| Directiva > Inscripción de dispositivos corporativos | [Inscripción de dispositivos > Inscripción de Apple > Enrollment Program Profiles (Perfiles de programa de inscripción)](#where-did-corporate-pre-enrolled-devices-go) |
-| Perfil de inscripción de dispositivos corporativos | Directiva > Inscripción de dispositivos corporativos | [Inscripción de dispositivos > Inscripción de Apple > Perfiles de AC](#where-did-corporate-pre-enrolled-devices-go) |
+|Grupos por número de serie iOS |Grupos > Todos los dispositivos > Dispositivos corporativos inscritos previamente > Por número de serie iOS|[Inscripción de dispositivos > Inscripción de Apple > Números de serie del programa de inscripción](#where-did-corporate-pre-enrolled-devices-go) |
+|Grupos por número de serie iOS |Grupos > Todos los dispositivos > Dispositivos corporativos inscritos previamente > Por número de serie iOS| [Inscripción de dispositivos > Inscripción de Apple > Números de serie de AC](#where-did-corporate-pre-enrolled-devices-go)|
+|Grupos por IMEI (todas las plataformas)| Grupos > Todos los dispositivos > Dispositivos corporativos inscritos previamente > Por IMEI (todas las plataformas) | [Inscripción de dispositivos > Identificadores de dispositivos corporativos](#by-imei-all-platforms)|
+| Perfil de inscripción de dispositivos corporativos| Directiva > Inscripción de dispositivos corporativos | [Inscripción de dispositivos > Inscripción de Apple > Perfiles del programa de inscripción](#where-did-corporate-pre-enrolled-devices-go) |
+| Perfil de la inscripción de dispositivos corporativos | Directiva > Inscripción de dispositivos corporativos | [Inscripción de dispositivos > Inscripción de Apple > Perfiles de AC](#where-did-corporate-pre-enrolled-devices-go) |
+| Android for Work | Administrador > Administración de dispositivos móviles > Android for Work | Inscripción de dispositivos > Inscripción de Android for Work | | Términos y condiciones | Directiva > Términos y condiciones | Inscripción de servicios > Términos y condiciones |
 
 
 ## <a name="where-do-i-manage-groups"></a>¿Dónde se administran los grupos?

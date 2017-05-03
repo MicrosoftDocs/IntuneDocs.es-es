@@ -1,22 +1,23 @@
 ---
 title: "Configuración de la directiva de actualización de edición de Windows | Microsoft Docs"
-description: "Aprenda a actualizar automáticamente dispositivos de Windows 10 a la versión más reciente con Intune."
+description: "Aprenda a actualizar automáticamente los dispositivos Windows 10 a una versión distinta con Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 09/30/2016
+ms.date: 04/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 8589866a-3f13-489b-a5cd-cee017d16d54
-ms.reviewer: jeffgilb
+ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: ae6477866991cec4091ff2790b925b0e464375f9
+ms.sourcegitcommit: 66be6716df38d868e8247131b49ffb50fc48e60b
+ms.openlocfilehash: 81061f032ef2079695f45e54e99cbb6479252bed
+ms.lasthandoff: 04/15/2017
 
 
 ---
@@ -25,7 +26,7 @@ ms.openlocfilehash: ae6477866991cec4091ff2790b925b0e464375f9
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-La **directiva de actualización de edición** de Microsoft Intune permite actualizar automáticamente los dispositivos que ejecutan una de las siguientes versiones de Windows 10 a una edición más reciente:
+La **directiva de actualización de edición** de Microsoft Intune permite actualizar automáticamente los dispositivos que ejecutan una de las siguientes versiones de Windows 10 a una edición distinta:
 * Windows 10 Escritorio
 * Windows 10 Holographic
 * Windows 10 Mobile
@@ -54,9 +55,4 @@ Antes de empezar a actualizar dispositivos a la versión más reciente, necesita
 
 ### <a name="see-also"></a>Consulte también
 [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

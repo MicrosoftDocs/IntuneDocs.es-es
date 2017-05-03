@@ -15,9 +15,9 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab5aa4e12d951d818c5afb4e1ac5e866b05733fb
-ms.openlocfilehash: d59ddb11ef96e90fdc47ad556c300cfa1dd53de5
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 9178404c1ed0b09ac4ae21c9c3a1b8d817241ea0
+ms.openlocfilehash: 4c5e436373303d44e01a9ee8d1474334cf8655db
+ms.lasthandoff: 04/17/2017
 
 
 ---
@@ -42,7 +42,7 @@ Aquí tiene un ejemplo de cómo podría comunicar la migración a la organizaci�
     -   [Descargue la plantilla de correo electrónico \#2 para usarla en la organización.](https://gallery.technet.microsoft.com/Intune-migration-guide-end-a9d25eb5)
 <br></br>
 
--   **Correo electrónico \#3:** la concesión de una escala de tiempo a los usuarios antes de acceder tiene consecuencias. De nuevo, recuerde a los usuarios las ventajas y las razones estratégicas para la migración. Los intervalos de correo electrónico deben tener una ventana deslizante que coincida con la canalización de fases. Por ejemplo, en junio, envíe el correo electrónico \#1 a los usuarios de la fase, el correo electrónico \#2 a los usuarios de la fase 2 y el correo electrónico \#1 a los usuarios de la fase 3.
+-   **Correo electrónico \#3:** la concesión de una escala de tiempo a los usuarios antes de acceder tiene consecuencias. De nuevo, recuerde a los usuarios las ventajas y las razones estratégicas para la migración. Los intervalos de correo electrónico deben tener una ventana deslizante que coincida con la canalización de fases. Por ejemplo, en junio, envíe el correo electrónico \#1 a los usuarios de la fase 1, el correo electrónico \#2 a los usuarios de la fase 2 y el correo electrónico \#1 a los usuarios de la fase 3.
 
     -   [Descargue la plantilla de correo electrónico \#3 para usarla en la organización](https://gallery.technet.microsoft.com/Intune-migration-guide-end-831521b5).
 
@@ -54,7 +54,7 @@ Después de un período determinado, puede comenzar a exigir el cumplimiento med
 
 Intune cuenta con otros recursos de plantilla para promover la inscripción de dispositivos para los usuarios finales:
 
--   Consulte [Cómo presentar Microsoft Intune a los usuarios finales](https://docs.microsoft.com/en-us/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) para obtener más instrucciones sobre los pasos de inscripción por plataforma de sistema operativo móvil.
+-   Consulte [Cómo presentar Microsoft Intune a los usuarios finales](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) para obtener más instrucciones sobre los pasos de inscripción por plataforma de sistema operativo móvil.
 
 -   Descargue una [plantilla de inscripción de usuario final y personalizable de Intune para administradores de TI](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a).
 

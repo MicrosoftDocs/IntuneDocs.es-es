@@ -1,6 +1,6 @@
 ## <a name="enable-windows-10-automatic-enrollment"></a>Habilitar la inscripción automática de Windows 10
 
-Con la inscripción automática, los usuarios pueden inscribir en Intune equipos Windows 10 corporativos o personales y dispositivos Windows 10 Mobile agregando una cuenta profesional o educativa y aceptando su administración. Así de fácil. En segundo plano, el dispositivo del usuario se registra y se une a Azure Active Directory. Una vez registrado, el dispositivo se administra con Intune.
+La inscripción automática permite que los usuarios inscriban sus dispositivos Windows 10 en Intune cuando agreguen sus cuentas profesionales a sus dispositivos de propiedad personal o cuando una sus dispositivos corporativos a la instancia de Azure Active Directory. En segundo plano, el dispositivo del usuario se registra y se une a Azure Active Directory. Una vez registrado, el dispositivo se administra con Intune.
 
 **Requisitos previos**
 - Suscripción a Azure Active Directory Premium ([suscripción de prueba](http://go.microsoft.com/fwlink/?LinkID=816845))
@@ -21,19 +21,19 @@ Con la inscripción automática, los usuarios pueden inscribir en Intune equipos
 
   ![Captura de pantalla de Azure Portal](../media/auto-enroll-intune.png)
 
-4. Configurar los usuarios que se inscribirán automáticamente.
+4. Configure **Ámbito de usuario de MDM**. Especifique los dispositivos de los usuarios que se deben administrar mediante Microsoft Intune. Los dispositivos Windows 10 de estos usuarios se inscribirán automáticamente para la administración con Microsoft Intune.
 
-  ![Captura de pantalla de Azure Portal](../media/auto-enroll-scope.png)
-
-  Use los valores predeterminados para las siguientes direcciones URL:
-  - **Inscripción de MDM**
-  - **Condiciones de uso de MDM**
-  - **Cumplimiento de MDM**
-
-5. Especifique los dispositivos de los usuarios que se deben administrar mediante Microsoft Intune. Los dispositivos Windows 10 de estos usuarios se inscribirán automáticamente para la administración con Microsoft Intune.
-
-  - **Todos**
-  - **Grupos**
   - **Ninguno**
+  - **Algunos**
+  - **Todos**
+
+   ![Captura de pantalla de Azure Portal](../media/auto-enroll-scope.png)
+
+5. Use los valores predeterminados para las siguientes direcciones URL:
+    - **URL de los términos de uso de MDM**
+    - **URL de detección de MDM**
+    - **URL de cumplimiento de MDM**
 
 6. Seleccione **Guardar**.
+
+De forma predeterminada, la autenticación en dos fases no está habilitada para el servicio. En cambio, se recomienda la autenticación en dos fases al registrar un dispositivo. Antes de requerir la autenticación en dos fases para este servicio, debe configurar un proveedor de autenticación de dos fases en Azure Active Directory y configurar las cuentas de usuario para la autenticación multifactor. Vea [Introducción a Servidor Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).
