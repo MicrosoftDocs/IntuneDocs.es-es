@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/17/2017
+ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 881ce40cb093b1817c9c4b84c9f8ca78b19de727
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 9e348278f62b2b9ba10f0f77c9fda214b43812a7
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -225,6 +225,67 @@ Use la información de esta lista para identificar el nombre, el publicador y el
 -     **Fotos en streaming compartidas**: establezca en **No** para deshabilitar **fotos compartidas en iCloud** en el dispositivo.
 -     **Continuación de la actividad**: permite que el usuario continúe el trabajo que inició en un dispositivo iOS en otro dispositivo iOS o macOS (Handoff).
 
+## <a name="autonomous-single-app-mode-supervised-only"></a>Modo de aplicación única autónoma (solo supervisado)
+
+Use esta opción para configurar dispositivos iOS de modo que ejecuten aplicaciones especificadas en modo de aplicación única autónoma. Cuando se configura este modo y se ejecuta la aplicación, el dispositivo se bloquea para que solo pueda ejecutar esa aplicación. Un ejemplo es cuando se configura una aplicación que permite a los usuarios hacer un examen en el dispositivo. Cuando se completan las acciones de la aplicación o quita esta directiva, el dispositivo vuelve a su estado normal.
+
+### <a name="settings"></a>Configuración
+
+- **Nombre de la aplicación**: escriba el nombre de la aplicación tal como aparecerá en la lista de aplicaciones de esta hoja.
+- **Identificador del paquete de aplicaciones**: escriba el identificador del paquete de la aplicación. Si necesita ayuda, consulte **Bundle ID reference for built-in iOS apps** (Referencia de identificador de lote para aplicaciones iOS integradas) de este tema.
+
+Una vez que especifique el nombre de cada aplicación y cada identificador de paquete, elija **Agregar** para anexarlo a la lista.
+
+- **Importar**: importe un archivo de valores separados por comas (.csv) que contiene una lista de nombres de aplicación y los identificadores de paquete asociados.
+- **Exportar**: exporte los nombres de aplicaciones y los identificadores de paquetes asociados que configuró a un archivo de valores separados por coma (.csv).
+
+### <a name="bundle-id-reference-for-built-in-ios-apps"></a>Referencia de identificador de lote para aplicaciones iOS integradas
+
+En esta lista se muestra el identificador de lote de algunas aplicaciones iOS comunes integradas. Póngase en contacto con el proveedor de software para encontrar el identificador de lote de otras aplicaciones.
+
+|||
+|-|-|
+|Nombre de la aplicación|Identificador de lote|
+|Tienda de aplicaciones|com.apple.AppStore|
+|Calculadora|com.apple.calculator|
+|Calendario|com.apple.mobilecal|
+|Cámara|com.apple.camera|
+|Reloj|com.apple.mobiletimer|
+|Compass|com.apple.compass|
+|Contactos|com.apple.MobileAddressBook|
+|FaceTime|com.apple.facetime|
+|Buscar amigos|com.apple.mobileme.fmf1|
+|Buscar mi iPhone|com.apple.mobileme.fmip1|
+|Centro de juegos|com.apple.gamecenter|
+|GarageBand|com.apple.mobilegarageband|
+|Mantenimiento|com.apple.Health|
+|iBooks|com.apple.iBooks|
+|iTunes Store|com.apple.MobileStore|
+|iTunes U|com.apple.itunesu|
+|Keynote|com.apple.Keynote|
+|Mail|com.apple.mobilemail|
+|Asignaciones|com.apple.Maps|
+|Mensajes|com.apple.MobileSMS|
+|Música|com.apple.Music|
+|Noticias|com.apple.news|
+|Notas|com.apple.mobilenotes|
+|Números|com.apple.Numbers|
+|Páginas|com.apple.Pages|
+|Photo Booth|com.apple.Photo-Booth|
+|Fotos|com.apple.mobileslideshow|
+|Podcasts|com.apple.podcasts|
+|Recordatorios|com.apple.reminders|
+|Safari|com.apple.mobilesafari|
+|Configuración|com.apple.Preferences|
+|Acciones|com.apple.stocks|
+|Sugerencias|com.apple.tips|
+|Vídeos|com.apple.videos|
+|VoiceMemos|com.apple.VoiceMemos|
+|Wallet|com.apple.Passbook|
+|Inspección|com.apple.Bridge|
+|Clima|com.apple.weather|
+
+
 ## <a name="kiosk"></a>Pantalla completa
 -     **Bloqueo de activación**: permite el bloqueo de activación en dispositivos iOS supervisados.
 -     **Aplicación que se ejecuta en modo de pantalla completa**: elija **Aplicación administrada** para seleccionar una aplicación que haya agregado a Intune, o **Aplicación de la Tienda** para especificar la dirección URL a una aplicación de la tienda. No se podrá ejecutar ninguna otra aplicación en el dispositivo. Lea "Cómo especificar las direcciones URL de tiendas de aplicaciones" más adelante en este tema para obtener más ayuda.
@@ -256,4 +317,21 @@ Use la información de esta lista para identificar el nombre, el publicador y el
 -     **JavaScript**: permite la ejecución de scripts de Java en el explorador.
 -     **Advertencias de fraude**: permite advertencias de fraude en el explorador.
 -     **Elementos emergentes**: habilita o deshabilita el bloqueador de elementos emergentes del explorador.
+
+
+## <a name="domains"></a>Domains
+
+### <a name="unmarked-email-domains"></a>Dominios de correo electrónico no marcados
+
+En el campo **Email Domain URL** (Dirección URL de dominio de correo electrónico), agregue una o más direcciones URL a la lista. Cuando los usuarios finales reciben un correo electrónico de un dominio distinto del configurado, el correo electrónico se marcará como correo electrónico no de confianza en la aplicación de correo iOS.
+
+
+### <a name="managed-web-domains"></a>Dominios web administrados
+
+En el campo **Web Domain URL** (Dirección URL de dominio web), agregue una o más direcciones URL a la lista. Los documentos que se descarguen de los dominios que especifica se considerarán administrados. Esta configuración solo se aplica a los documentos que se descargan con el explorador Safari.
+
+
+### <a name="safari-password-auto-fill-domains"></a>Dominios de relleno automático de contraseña de Safari
+
+En el campo **Domain URL** (Dirección URL de dominio), agregue una o más direcciones URL a la lista. Los usuarios solo pueden guardar contraseñas web de las direcciones URL que aparecen en esta lista. Esta configuración solo se aplica al explorador Safari y a dispositivos iOS 9.3 y versiones posteriores en modo supervisado. Si no especifica ninguna dirección URL, se podrán guardar contraseñas de todos los sitios web.
 

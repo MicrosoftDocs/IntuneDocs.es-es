@@ -15,8 +15,9 @@ ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ee3a0b80f7e534262fbcc8d897e069cff1e35727
-ms.openlocfilehash: a68ffc7be5bcaf55a789ab96035a3f23be0b8b3a
+ms.sourcegitcommit: 62dcb40ad5a7921c514a9d41da14b991e39f3bcd
+ms.openlocfilehash: 991393e0caf64c44cc10c7775fba45083212659e
+ms.lasthandoff: 04/20/2017
 
 
 ---
@@ -108,8 +109,8 @@ Necesitará lo siguiente para distribuir aplicaciones ajustadas con Intune:
 
   ![Seleccionar certificado interno y ad hoc](../media/app-wrapper/iOS-signing-cert-3.png)
 
->[!NOTE]
->Si no planea distribuir la aplicación y solo quiere probarla internamente, puede usar un certificado de desarrollo de aplicaciones de iOS en lugar de un certificado para producción. Si usa un certificado de desarrollo, asegúrese de que el perfil móvil de aprovisionamiento haga referencia a los dispositivos en los que se instalará la aplicación.
+  >[!NOTE]
+  >Si no planea distribuir la aplicación y solo quiere probarla internamente, puede usar un certificado de desarrollo de aplicaciones de iOS en lugar de un certificado para producción. Si usa un certificado de desarrollo, asegúrese de que el perfil móvil de aprovisionamiento haga referencia a los dispositivos en los que se instalará la aplicación.
 
 7. Haga clic en **Siguiente** en la parte inferior de la página.
 
@@ -136,7 +137,6 @@ Necesitará lo siguiente para distribuir aplicaciones ajustadas con Intune:
 14. Haga doble clic en el archivo de certificado que acaba de descargar para agregar el certificado a una cadena de claves.
 
 15. Abra **Acceso a llaves** de nuevo. Busque su certificado al escribir su nombre en la barra de búsqueda de la parte superior derecha. Haga doble clic en el elemento para que aparezca el menú y haga clic en **Obtener información**. En las pantallas de ejemplo se está usando un certificado de desarrollo en lugar de un certificado de producción.
-
 
   ![Agregar su certificado a una cadena de claves](../media/app-wrapper/iOS-signing-cert-8.png)
 
@@ -205,7 +205,7 @@ Puede usar los siguientes parámetros de línea de comandos con la herramienta d
 |**-p**|`<Path of your provisioning profile for iOS apps>`|
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**|Muestra información de uso detallada sobre las propiedades de línea de comandos disponibles para la herramienta de ajuste de aplicaciones.|
-|**-v**|(Opcional) Genera mensajes detallados para la consola.|
+|**-v**|(Opcional) Genera mensajes detallados para la consola. Se recomienda usar esta marca para depurar cualquier error.|
 |**-e**| (Opcional) Use esta marca para que la herramienta de ajuste de aplicaciones quite los derechos que faltan mientras procesa la aplicación. Consulte Configurar los derechos de la aplicación para más información.|
 |**-xe**| (Opcional) Imprime información sobre las extensiones de iOS de la aplicación y sobre los derechos necesarios para usarlas. Consulte Configurar los derechos de la aplicación para más información. |
 |**-x**| (Opcional) `<An array of paths to extension provisioning profiles>`. Úsela si la aplicación necesita perfiles de aprovisionamiento de extensión.|
@@ -399,9 +399,4 @@ Use los procedimientos recomendados de seguridad y privacidad siguientes al usar
 - [Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles mediante Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md)</br>
 - [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
 - [Use the SDK to enable apps for mobile application management (Usar el SDK para habilitar aplicaciones para la administración de aplicaciones móviles)](use-the-sdk-to-enable-apps-for-mobile-application-management.md)
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

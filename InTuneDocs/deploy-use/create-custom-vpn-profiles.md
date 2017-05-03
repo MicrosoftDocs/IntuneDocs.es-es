@@ -15,8 +15,9 @@ ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f2b364b2c57adab33df2a8e6b34c1f30c02988d3
-ms.openlocfilehash: 9dbb44981c1525e6137dd8a469b1582731ee9719
+ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
+ms.openlocfilehash: 260c328d37174c94bde37162ec011aded26a9f72
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -32,7 +33,7 @@ Puede usar directivas de configuración personalizadas de Intune para crear perf
 * Dispositivos Android for Work
 * Dispositivos inscritos que ejecutan Windows 8.1 y versiones posteriores
 * Dispositivos que ejecutan Windows Phone 8,1 y versiones posteriores
-* Dispositivos inscritos que ejecutan Windows 10 Escritorio 
+* Dispositivos inscritos que ejecutan Windows 10 Escritorio
 * Dispositivos que ejecutan Windows 10 Mobile
 
 Este tipo de directiva puede ser útil cuando las directivas estándar de VPN de Intune no contienen la configuración que quiere usar.
@@ -52,7 +53,7 @@ Después, [implemente la directiva](/intune/deploy-use/manage-settings-and-featu
 ## <a name="example-uri-settings"></a>Ejemplo de la configuración de URI
 
 Estas opciones de configuración pueden usarse para crear una configuración personalizada para una VPN en una empresa ficticia denominada Contoso.
-Para ver los detalles completos de todas las opciones que puede usar, vea [VPNv2 CSP](https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776.aspx).
+Para ver los detalles completos de todas las opciones que puede usar, vea [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx).
 
 VPN de Contoso nativa (IKEv2): ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Servers
 
@@ -90,7 +91,7 @@ Eap ./Vendor/MSFT/VPNv2/ContosoVPN/NativeProfile/Authentication/Eap/Configuratio
 
 **./Vendor/MSFT/VPNv2/ContosoVPN/TrafficFilterList/1/App/Id** Microsoft.MicrosoftEdge_8wekyb3d8bbwe
 
-Los clientes que tengan preguntas sobre cómo usar estas opciones de configuración o que necesiten más información sobre lo que hacen, deben consultar la documentación del proveedor de servicios de configuración (CSP) correspondiente: https://msdn.microsoft.com/en-us/library/windows/hardware/dn914776(v=vs.85).aspx.
+Los clientes que tengan preguntas sobre cómo usar estas opciones de configuración o que necesiten más información sobre lo que hacen, deben consultar la documentación del proveedor de servicios de configuración (CSP) correspondiente: https://msdn.microsoft.com/library/windows/hardware/dn914776(v=vs.85).aspx.
 
 ## <a name="uri-settings-for-android-per-app-vpn-on-pulsesecure"></a>Valores de URI para una VPN por aplicación de Android en PulseSecure
 ### <a name="custom-uri-for-package-list"></a>URI PERSONALIZADO PARA LISTA DE PAQUETES
@@ -116,9 +117,4 @@ Ejemplos:
 
 ### <a name="see-also"></a>Consulte también
 [Conexiones VPN en Microsoft Intune](vpn-connections-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

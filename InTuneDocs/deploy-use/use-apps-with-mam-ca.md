@@ -1,6 +1,6 @@
 ---
-title: Uso de aplicaciones con CA MAM | Microsoft Docs
-description: "Comprenda los conceptos de cómo el acceso condicional para MAM puede ayudar a controlar qué aplicaciones tienen acceso a los servicios de Office&365;."
+title: Uso de aplicaciones con CA MAM
+description: "Comprenda los conceptos de cómo el acceso condicional para MAM puede ayudar a controlar qué aplicaciones tienen acceso a los servicios de Office 365."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,9 +15,9 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: e55cf608c2e5157feeb40ba20d3988b5b35064db
-ms.openlocfilehash: 22ea926719efc788c53861bc91f78d24631d54c1
-ms.lasthandoff: 02/25/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: ee407827c1c4eb7b113d29c301da0b9fa08fa86d
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -37,6 +37,11 @@ La siguiente es una lista de propiedades que se obtienen directamente del dispos
 * deviceOSType
 * deviceOSVersion
 * displayName
+
+> [!NOTE]
+> En dispositivos Android:
+  * Es necesario que la aplicación Portal de empresa esté instalada en el dispositivo, pero no es necesario que el usuario final inicie sesión en esa aplicación.
+  * El registro de dispositivos se debe hacer mediante OneDrive o la aplicación Outlook.
 
 ## <a name="to-remove-a-device-from-azure-ad-registration"></a>Para quitar un dispositivo del registro de Azure AD
 Es posible quitar el registro del dispositivo a través de la consola de administración de Azure AD, lo que suele llevar a cabo el administrador de TI.  También puede hacerlo el usuario final en el propio dispositivo.

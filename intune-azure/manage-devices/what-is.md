@@ -15,14 +15,14 @@ ms.assetid:
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 24498abc504f05bd22dc7309bc22948292f9b1e6
-ms.openlocfilehash: 731d57859474276b51c0cb0b17a3354eaec17348
-ms.lasthandoff: 04/13/2017
+ms.sourcegitcommit: e5dd7cb5b320df7f443b52a1b502027fa3c4acaf
+ms.openlocfilehash: 25a46754f6c7e44b3f4fef7e8eef015cf559e31f
+ms.lasthandoff: 04/19/2017
 
 
 ---
 
-# <a name="what-is-microsoft-intune-device-management"></a>¿Qué es la administración de dispositivos de Microsoft Intune? 
+# <a name="what-is-microsoft-intune-device-management"></a>¿Qué es la administración de dispositivos de Microsoft Intune?
 
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
@@ -38,8 +38,8 @@ Ahora, elija una de las opciones siguientes:
 - **Overview** (Información general): obtenga información sobre los dispositivos que ha inscrito y los sistemas operativos en los que se ejecuta cada dispositivo.
 - **Administrar**: elija **Todos los dispositivos** para ver una lista de todos los dispositivos administrados.
     Seleccione uno de los dispositivos de la lista para abrir la hoja *nombre de dispositivo*> **Overview** (Información general) donde puede seleccionar una de estas opciones:
-    - **Overview** (Información general): consulte las limitaciones generales sobre el dispositivo, como la información sobre su nombre, el propietario, si se trata de un dispositivo BYOD, cuándo se registró por última vez, y mucho más. 
-                
+    - **Overview** (Información general): consulte las limitaciones generales sobre el dispositivo, como la información sobre su nombre, el propietario, si se trata de un dispositivo BYOD, cuándo se registró por última vez, y mucho más.
+
     - **Hardware**: consulte información más detallada sobre el dispositivo, como el espacio libre de almacenamiento, el modelo, el fabricante y mucho más.
     ![Inventario de hardware de dispositivo administrado](./media/hardware-inventory.png)
     - **Aplicaciones detectadas**: muestra una lista de todas las aplicaciones instaladas en el dispositivo que encuentra Intune.
@@ -67,6 +67,12 @@ Genera una contraseña para el dispositivo que se muestra en la hoja <*nombre de
 ### <a name="bypass-activation-lock"></a>**Omitir bloqueo de activación**
 Esta acción quita el bloqueo de activación de un dispositivo iOS sin la contraseña y el identificador de Apple. Cuando se omite el bloqueo de activación, el dispositivo activa de nuevo el bloqueo de activación cuando se inicia la aplicación Buscar mi iPhone. Omita el bloqueo de activación solo si tiene acceso físico al dispositivo.
 
+### <a name="fresh-start"></a>**Fresh Start**
+
+Quita todas las aplicaciones que se instalaron en un equipo Windows 10 que ejecuta Creators Update y, luego, actualiza automáticamente el equipo a la versión más reciente de Windows.
+Esto puede servir para ayudar a quitar las aplicaciones de OEM preinstaladas que a menudo se entregan con los nuevos equipos. Puede configurar si se conservan los datos de usuario cuando se lleva a cabo esta acción de dispositivo. En este caso, se quitan las aplicaciones y la configuración, pero se conserva el contenido de la carpeta de inicio de los usuarios.
+
+
 ### <a name="lost-mode"></a>**Modo Perdido**
 Si un dispositivo iOS se ha robado o perdido, puede habilitar Modo Perdido. Esto le permite especificar un mensaje y un número de teléfono que se mostrarán en la pantalla de bloqueo del dispositivo. Para ello:
 1.    En la hoja de propiedades de un dispositivo iOS, elija **Más** > **Modo Perdido**.
@@ -78,7 +84,7 @@ Para usar el Modo Perdido, el dispositivo debe ser un dispositivo iOS de la empr
 ### <a name="locate-device"></a>**Buscar dispositivo**
 Use esta acción remota para mostrar la ubicación de un dispositivo iOS perdido o robado en un mapa. El dispositivo debe ser un dispositivo iOS de la empresa, inscrito mediante DEP, que esté en modo supervisado. Antes de realizar esta acción, el dispositivo debe tener habilitado Modo Perdido.
 1.    En la hoja de propiedades de un dispositivo iOS, elija **Más** > **Buscar dispositivo**.
-2.    Cuando se haya localizado el dispositivo, se muestra su ubicación en la hoja **Buscar dispositivo**. 
+2.    Cuando se haya localizado el dispositivo, se muestra su ubicación en la hoja **Buscar dispositivo**.
     ![Hoja Buscar dispositivo](./media/locate-device.png)
 
 >[!NOTE]

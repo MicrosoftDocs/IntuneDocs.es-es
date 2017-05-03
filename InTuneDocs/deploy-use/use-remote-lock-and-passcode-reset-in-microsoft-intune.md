@@ -5,7 +5,7 @@ keywords:
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 03/06/17
+ms.date: 03/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,9 +14,9 @@ ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ms.reviewer: chrisgre
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 665d3347636d5ec0c698ffb93b768028c9d59ce3
-ms.openlocfilehash: b918c9843bdc6cfbbfd9c2da9d698b255487152c
-ms.lasthandoff: 03/07/2017
+ms.sourcegitcommit: f0a477c9eb1ed0580314e79135e377809eaab197
+ms.openlocfilehash: 9b0ae19b211373548061e2c2979620739a0bf0a0
+ms.lasthandoff: 04/17/2017
 
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Ayudar a proteger los dispositivos con el restablecimiento de código de acceso y el bloqueo remoto
@@ -64,7 +64,7 @@ Si un usuario olvida su código de acceso, puede quitar la contraseña de un dis
 |iOS|Permite borrar la contraseña de un dispositivo. No admite la creación de una nueva contraseña temporal.|
 |Android|Compatible con versiones anteriores a Android 7.0. Crea un código de acceso temporal.|
 |Android for Work|No compatible|
-|Windows 10 Mobile|Compatible.|
+|Windows 10 Mobile|Compatible con los dispositivos móviles con la versión Windows 10 Creator y posteriores que están unidos a Azure AD.|
 |Windows Phone 8 y Windows Phone 8.1|Compatible.|
 |Windows RT 8.1|No compatible.|
 |Windows 8.1|No compatible.|

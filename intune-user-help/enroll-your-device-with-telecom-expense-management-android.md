@@ -1,11 +1,11 @@
 ---
 title: "Inscripción del dispositivo Android en la administración de gastos de telecomunicaciones con Intune"
-description: 
+description: "Obtenga información sobre cómo inscribir un dispositivo Android en la administración de gastos de telecomunicaciones."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/03/2017
+ms.date: 04/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,14 +13,14 @@ ms.technology:
 ms.assetid: 26aa3698-7e4d-453a-8852-ab75e72b6485
 searchScope:
 - User help
-ROBOTS: NOINDEX,NOFOLLOW
+ROBOTS: 
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: 8da2695c4c6dc8b45559323b83a4bb77167303b7
-ms.openlocfilehash: f2f93bccd17d16f258e90268f0ddef3e3cb7a598
-ms.lasthandoff: 03/28/2017
+ms.sourcegitcommit: e0ecc775f70703574c4e1adf0f0aa204f2745b72
+ms.openlocfilehash: fa36b1449cb1ce5d9e0d3b1ca2f3e0db78729f1d
+ms.lasthandoff: 04/20/2017
 
 
 ---
@@ -31,19 +31,35 @@ Su organización puede estar usando software de administración de gastos de tel
 
 ![Captura de la pantalla "selección de la categoría más apropiada para un dispositivo" en un dispositivo iOS. Muestra una selección de inscripciones personales o corporativas.](./media/and-enroll-11-tem-select-best-category.png)
 
-1. Seleccione la opción adecuada y recibirá una notificación para instalar la aplicación [__Datalert__](https://play.google.com/store/apps/details?id=fr.memobox.databox) en Google Play Store. Con la aplicación Datalert su organización puede medir el uso de datos. Puntee en la flecha __siguiente__ situada en la esquina superior derecha de la pantalla para continuar.
+Seleccione la opción adecuada y recibirá una notificación para instalar la aplicación [__Datalert__](https://play.google.com/store/apps/details?id=fr.memobox.databox) en Google Play Store. Con la aplicación Datalert su organización puede medir el uso de datos. Si la organización configuró la opción de inscripción profesional o educativa, se le pedirá que inicie sesión con su cuenta profesional o educativa. Si no se ha habilitado, deberá proporcionar información, como su número de teléfono, y verificar el dispositivo con un código para inscribirse en el servicio Datalert desde la aplicación.
+
+Puntee en la flecha __siguiente__ situada en la esquina superior derecha de la pantalla para continuar. El administrador de TI debe indicarle si iniciará sesión con su __cuenta profesional o educativa de Microsoft__ o usará su __número de teléfono__.
 
   ![Captura de la pantalla de bienvenida de la aplicación Datalert, que le pregunta si desea pasar a la siguiente pantalla después de proporcionar una breve explicación sobre cómo Datalert puede ayudarle a sacar el máximo provecho de su plan de datos.](./media/and-enroll-12-tem-datalert-setup.png)
 
-2. Indique el número de teléfono de su dispositivo.
+## <a name="enroll-into-datalert-using-your-microsoft-work-or-school-account"></a>Inscripción en Datalert con su cuenta profesional o educativa de Microsoft
+
+1. Seleccione __Enroll with Microsoft account__ (Inscribirse con cuenta Microsoft).
+
+  ![Una imagen de la pantalla Configuración de la aplicación Datalert, que ofrece un campo de número de teléfono para inscribir un dispositivo en la mitad superior de la pantalla e "Inscribirse con cuenta Microsoft" en la parte inferior, siempre que tenga una cuenta de Microsoft Office 365 y una suscripción de Intune.](./media/and-enroll-12a-tem-datalert-enroll-msft-account.png)
+
+2. Elija su cuenta profesional o educativa en las cuentas disponibles. Si la cuenta no aparece en la lista, puede iniciar sesión en ella con el botón **Agregar cuenta**.
+
+  ![Captura de pantalla de la opción "Elegir cuenta", que muestra una cuenta de ejemplo y el botón Agregar cuenta.](./media/and-enroll-12b-tem-datalert-enroll-select-msft-account.png)
+
+3. La configuración de Datalert se ejecutará durante unos momentos y, luego, se debe completar. Pulse __Finalizar__ cuando se complete.
+
+## <a name="enroll-into-datalert-using-your-phone-number"></a>Inscripción en Datalert con su número de teléfono
+
+1. Indique el número de teléfono de su dispositivo.
 
   ![Captura de pantalla de la aplicación Datalert donde se solicita el número de teléfono.](./media/and-enroll-13-tem-datalert-phone-number.png)
 
-3. Después, recibirá un código de comprobación a través de un mensaje SMS. Escriba el código y pulse __Aceptar__.
+2. Después, recibirá un código de comprobación a través de un mensaje SMS. Escriba el código y pulse __Aceptar__.
 
   ![Captura de pantalla de la aplicación Datalert donde se solicita el código de verificación SMS.](./media/and-enroll-14-tem-datalert-sms.png)
 
-4. Una vez que haya proporcionado el código de comprobación, se completará la instalación de Datalert. Pulse __Finalizar__ y podrá supervisar los datos desde la aplicación Datalert.
+3. Una vez que haya proporcionado el código de comprobación, se completará la instalación de Datalert. Pulse __Finalizar__ y podrá supervisar los datos desde la aplicación Datalert.
 
   ![Captura de pantalla de la aplicación Datalert con la supervisión del uso de datos de hoy en día.](./media/and-enroll-15-tem-datalert-monitoring-active.png)
 
