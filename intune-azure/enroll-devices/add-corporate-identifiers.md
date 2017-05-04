@@ -33,7 +33,7 @@ Como administrador de TI, puede crear e importar un archivo de valores separados
 ## <a name="add-corporate-identifiers"></a>Adición de identificadores corporativos
 Para crear la lista, cree una lista de dos columnas de valores separados por comas (.csv) sin un encabezado. Agregue el identificador IMEI en la columna izquierda y los detalles en la columna derecha. Los detalles están limitados a 128 caracteres y son solo de uso administrativo. Los detalles no se muestran en el dispositivo. El límite actual es 500 filas por archivo. csv.
 
-**Cargar un archivo .csv con números de serie**: cree una lista de valores separados por comas (.csv) de dos columnas sin encabezado y limítela a 5000 dispositivos o a 5 MB por archivo .csv.
+**Cargar un archivo .csv con números de serie**: cree una lista de valores separados por comas (.csv) de dos columnas sin encabezado y limítela a 5000 dispositivos o a 5 MB por archivo .csv. 
 
 |||
 |-|-|
@@ -43,8 +43,8 @@ Para crear la lista, cree una lista de dos columnas de valores separados por com
 Este archivo .csv, cuando se ve en un editor de texto, aparece como:
 
 ```
-01 234567 890123,device details
-02 234567 890123,device details
+01234567890123,device details
+02234567890123,device details
 ```
 
 

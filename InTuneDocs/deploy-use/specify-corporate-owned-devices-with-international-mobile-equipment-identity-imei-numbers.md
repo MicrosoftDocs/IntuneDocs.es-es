@@ -30,7 +30,7 @@ Microsoft Intune permite que los administradores importen números de identidad 
 
 1. En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), elija **Grupos** &gt; **Todos los dispositivos** &gt; **Todos los dispositivos corporativos inscritos previamente** &gt; **Mediante IMEI (todas las plataformas)** y, luego, **Agregar dispositivos...** Puede agregar dispositivos de dos maneras:
 
-    -   **Cargar un archivo .csv con números de serie**: cree una lista de valores separados por comas (.csv) de dos columnas sin encabezado y limítela a 5000 dispositivos o a 5 MB por archivo .csv. El campo de detalles tiene un límite de 128 caracteres.
+    -   **Cargar un archivo .csv con números de serie**: cree una lista de valores separados por comas (.csv) de dos columnas sin encabezado y limítela a 5000 dispositivos o a 5 MB por archivo .csv. El campo de detalles tiene un límite de 128 caracteres. 
 
         |||
         |-|-|
@@ -39,8 +39,8 @@ Microsoft Intune permite que los administradores importen números de identidad 
         Este archivo .csv, cuando se ve en un editor de texto, aparece como:
 
         ```
-        01 234567 890123,device details
-        02 234567 890123,device details
+        01234567890123,device details
+        02234567890123,device details
         ```
 
     -   **Agregar manualmente los detalles del dispositivo**: especifique el número IMEI y los detalles de 15 dispositivos como máximo.
