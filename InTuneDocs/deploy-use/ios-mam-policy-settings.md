@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 01/19/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 03f53e6ec9f934eb40415434a60213bc839f6afe
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: e96413a9f1398e7f025bbc2fbd66153c1c54c504
+ms.openlocfilehash: 29fe0acf6c3724455d56b4657c79bc93fb258441
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -43,7 +43,7 @@ Existen dos categorías de configuración de directiva: configuración de acceso
 | **Cifrar datos de aplicación** | Para las aplicaciones administradas por directivas, los datos están cifrados en reposo con el esquema de cifrado de nivel de dispositivo proporcionado por iOS. Cuando se requiere un PIN, los datos se cifran según la configuración de la directiva de protección de aplicaciones. <br><br> Vaya a la documentación oficial de Apple [aquí](https://support.apple.com/HT202739) para ver qué módulos de cifrado iOS están certificados mediante FIPS 140-2 o están pendientes de certificación mediante FIPS 140-2. <br><br> Especifique cuándo se cifran los datos profesionales o educativos en esta aplicación. Elija de entre las siguientes opciones: <ul><li>**Cuando el dispositivo esté bloqueado**: todos los datos de la aplicación que están asociados a esta directiva se cifran mientras el dispositivo está bloqueado.</li><li>**Cuando el dispositivo esté bloqueado y haya archivos abiertos**: todos los datos de la aplicación asociados a esta directiva se cifran mientras el dispositivo está bloqueado, excepto los datos de los archivos que están abiertos actualmente en la aplicación.</li><li>**Después de reiniciar el dispositivo**: todos los datos de la aplicación asociados a esta directiva se cifran al reiniciar el dispositivo, hasta que el dispositivo se desbloquea por primera vez.</li><li>**Usar la configuración del dispositivo**: los datos de la aplicación se cifran en función de la configuración predeterminada del dispositivo. Si habilita esta configuración, se solicita al usuario que configure y use un PIN para acceder a su dispositivo.  Si no hay ningún PIN, las aplicaciones no se abren y se le solicita al usuario que establezca un PIN con un mensaje: "Su organización ha solicitado que primero habilite un PIN de dispositivo para acceder a esta aplicación". </li></ul> | Cuando el dispositivo está bloqueado |
 | **Deshabilitar la sincronización de contactos** | Pulse **Sí** para impedir que la aplicación guarde datos en la aplicación nativa Contactos del dispositivo. Si pulsa **No**, la aplicación puede guardar datos en la aplicación Contactos nativa del dispositivo. <br><br>Cuando realiza un borrado selectivo para quitar los datos profesionales o educativos de la aplicación, se quitan los contactos sincronizados directamente desde la aplicación a la aplicación nativa Contactos. No se pueden borrar los contactos sincronizados desde la libreta de direcciones nativa en otro origen externo. Actualmente esto se aplica únicamente para la aplicación Microsoft Outlook. | No |
 | **Deshabilitar la impresión** | Pulse **Sí** para impedir que la aplicación imprima datos profesionales o educativos. | No |
-
+| **Seleccione en qué servicios de almacenamiento se pueden guardar datos empresariales** | Los usuarios pueden guardar en los servicios seleccionados (OneDrive para la Empresa, SharePoint y almacenamiento local). El resto de servicios se bloquearán. | OneDrive para la Empresa y SharePoint |
 
 > [!NOTE]
 > Ninguna de las opciones de configuración de reubicación de datos controla la característica de Administración abierta de Apple (Apple Managed Open In) en dispositivos iOS. Para usar Administración abierta de Apple (Apple Managed Open In), vea [Administrar la transferencia de datos entre aplicaciones iOS con Microsoft Intune](manage-data-transfer-between-ios-apps-with-microsoft-intune.md).
@@ -72,6 +72,7 @@ La directiva de protección de aplicaciones de Intune puede permitir la transfer
 | **Bloquear la ejecución de aplicaciones administradas en dispositivos descodificados o descifrados** |  Pulse **Sí** para impedir que esta aplicación se ejecute en dispositivos descodificados o descifrados. El usuario seguirá siendo capaz de usar esta aplicación para las tareas personales, pero tendrá que usar un dispositivo distinto para tener acceso a los datos profesionales o educativos de esta aplicación. | Sí |
 | **Volver a comprobar los requisitos de acceso después de (minutos)** | Configure las siguientes opciones: <ul><li>**Tiempo de espera**: es el número de minutos antes de que se vuelvan a comprobar los requisitos de acceso (definidos anteriormente en la directiva). Por ejemplo, un administrador activa el PIN en la directiva, un usuario abre una aplicación MAM y debe escribir un PIN. Cuando se usa esta opción, el usuario no tendría que escribir un PIN en ninguna aplicación MAM durante **30 minutos** (valor predeterminado).</li><li>**Período de gracia sin conexión**: es el número de minutos que las aplicaciones MAM pueden ejecutarse sin conexión, especifique el tiempo (en minutos) que debe transcurrir antes de que se vuelvan a comprobar los requisitos de acceso de la aplicación. Valor predeterminado = **720** minutos (12 horas). Una vez transcurrido este período, la aplicación requerirá la autenticación de usuario en AAD para poder seguir ejecutándose.</li></ul>| Tiempo de espera: 30 <br><br> Sin conexión: 720 |
 | **Intervalo sin conexión antes de que se borren los datos de la aplicación (días)** | Después de este número de días (definido por el administrador) de ejecución sin conexión, la propia aplicación realizará un borrado selectivo. Este borrado selectivo es el mismo que el que puede iniciar el administrador en el flujo de trabajo de borrado MAM. <br><br> | 90 días |
+| **Deshabilitar el PIN de aplicación cuando se administra el PIN del dispositivo** | Elija **Sí** para deshabilitar el PIN de aplicación cuando se detecta un bloqueo de dispositivo en un dispositivo inscrito. | No |
 
 ##  <a name="add-ins-for-outlook-app"></a>Complementos para la aplicación Outlook
 

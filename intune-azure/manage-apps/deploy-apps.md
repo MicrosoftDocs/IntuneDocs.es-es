@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: b372d4ee505ca39a4739069e5798918ecde134ea
-ms.openlocfilehash: abf45b835d13ef5fe4acb769194542611448504e
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: a6a6992ab450a5601468c5d5e3eff112fc7ea222
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -76,8 +76,8 @@ Debe realizar los cambios a los grupos en [Azure Portal](https://portal.azure.co
 
 1. Inicie sesión en el portal de Azure.
 2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
-3. En la hoja **Intune**, elija **Administrar aplicaciones**.
-1. En la carga de trabajo **Administrar aplicaciones**, elija **Administrar** > **Aplicaciones**.
+3. En la hoja **Intune**, elija **Mobile apps**.
+1. En la carga de trabajo **Mobile Apps**, elija **Administrar** > **Aplicaciones**.
 2. En la hoja de lista de aplicaciones, haga clic en la aplicación que quiere asignar.
 3. En la hoja <*nombre de la aplicación*> - **Overview** (Información general), elija **Administrar** > **Asignaciones**.
 4. Elija **Seleccionar grupos** y, en la hoja **Seleccionar grupos**, elija los grupos de Azure AD al que quiere asignar la aplicación.

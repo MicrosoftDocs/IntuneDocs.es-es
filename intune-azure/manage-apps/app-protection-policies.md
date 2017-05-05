@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 607598812a414843f1f33a00670a6a85b6687878
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 0aabb7af82bc7c9ed55eca91e615bace5e299d11
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -30,8 +30,8 @@ ms.lasthandoff: 02/18/2017
 
 Las directivas de protección de aplicaciones se pueden aplicar a aplicaciones que se ejecutan en dispositivos que podrían estar o no administrados por Intune. Para obtener una descripción más detallada de cómo funcionan las directivas de protección de aplicaciones y los escenarios admitidos por las directivas de protección de aplicaciones de Intune, consulte [What is Microsoft Intune app protection policies](what-is-app-protection-policy.md) (¿Qué son las directivas de protección de aplicaciones de Microsoft Intune?).
 
-##  <a name="create-an-app-protection-policy"></a>Creación de una directiva de protección de aplicaciones
-1.  En la carga de trabajo **Manage apps** (Administrar aplicaciones, elija **Administrar** > **App protection policies** (Directivas de protección de aplicaciones).
+##  <a name="create-an-app-protection-policy"></a>Crear directivas de protección de aplicaciones
+1.  En la carga de trabajo **Mobile apps**, elija **Administrar** > **Directivas de protección de aplicaciones**.
 
 2.  Se abre la hoja **App protection policies** (Directivas de protección de aplicaciones), donde creará nuevas directivas y editará las existentes. Elija **Agregar una directiva**.
 
@@ -65,7 +65,7 @@ Cuando termine de crear una directiva como se describe en el procedimiento anter
 
   ![Captura de pantalla de la hoja Grupos de usuarios con la opción de menú Agregar grupo de usuarios resaltada](../media/app-protection-policy-add-users.png)
 
-2.  Se mostrará una lista de grupos de usuarios en la hoja **Agregar grupo de usuarios** . Esta es una lista de todos los grupos de seguridad de su **Azure Active Directory**. Seleccione los grupos de usuarios a los que quiera aplicar esta directiva y, después, elija **Seleccionar**. Al ** **hacerlo, la directiva se implementa en los usuarios.
+2.  Se mostrará una lista de grupos de usuarios en la hoja **Agregar grupo de usuarios** . Esta es una lista de todos los grupos de seguridad de su **Azure Active Directory**. Seleccione los grupos de usuarios a los que quiera aplicar esta directiva y, después, elija **Seleccionar**. Al **** hacerlo, la directiva se implementa en los usuarios.
   ![Captura de pantalla de la hoja Agregar grupo de usuarios que muestra la lista de usuarios de Azure Active Directory](../media/azure-ad-user-group-list.png)
 
 Ahora ha creado una directiva y la ha implementado en los usuarios.

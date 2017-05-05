@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 01/20/2017
+ms.date: 04/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,8 +15,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: 56ef80138d0790933ae216bb02101c3f408311c7
-ms.openlocfilehash: 5bea5a9f1a69193543fa3c5e8997a6527721d3ef
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: b81228ccd1c515bfd82486475996eecf20655993
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -66,7 +67,7 @@ Puede sincronizar los datos que tiene Apple con Intune en cualquier momento al e
 
 ## <a name="to-deploy-a-volume-purchased-app"></a>Para implementar una aplicación comprada por volumen
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), elija **Aplicaciones** &gt; **Software administrado** &gt; **Aplicaciones compradas por volumen**. En esta lista se muestran todas las aplicaciones que se han sincronizado desde el servicio PCV de Apple.
+1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), elija **Aplicaciones** &gt; **Aplicaciones** &gt; **Aplicaciones compradas por volumen**. En esta lista se muestran todas las aplicaciones que se han sincronizado desde el servicio PCV de Apple.
 
 2.  Seleccione la aplicación que quiera implementar, elija **Administrar implementación** y siga las instrucciones del tema [Implementar aplicaciones en Microsoft Intune](deploy-apps-in-microsoft-intune.md) para completar la carga, la creación y la implementación de la aplicación.
 
@@ -79,22 +80,14 @@ Para reclamar una licencia, se debe cambiar la acción de implementación a **De
 
 Si un usuario con un dispositivo elegible intenta primero instalar una aplicación de PCV, se le pedirá que se una al Programa de Compras por Volumen de Apple. Debe hacerlo para poder continuar con la instalación de la aplicación.
 
-> [!TIP]
-> Observe la columna **Estado de los términos y condiciones de PCV** para ver el estado de aceptación para cada usuario para el que se implementó la aplicación.
-
 Si no hay más licencias disponibles, no se podrá realizar la implementación.
 
 ## <a name="to-monitor-apple-vpp-apps"></a>Para supervisar aplicaciones de PCV de Apple
-Puede supervisar qué aplicaciones de PCV están implementadas y el número de licencias que se usan desde el área de trabajo **Aplicaciones**, en el nodo **Software administrado** &gt; **Aplicaciones compradas por volumen**.
+Puede supervisar qué aplicaciones de PCV están implementadas y el número de licencias que se usan desde el área de trabajo **Aplicaciones**, en el nodo **Aplicaciones compradas por volumen**.
 
 > [!TIP]
 > También puede usar **Filtros** de aplicación para examinar el estado de la instalación de cada aplicación.
 
 ### <a name="see-also"></a>Consulte también
 [Implementar aplicaciones en Microsoft Intune](deploy-apps-in-microsoft-intune.md)
-
-
-
-<!--HONumber=Jan17_HO3-->
-
 

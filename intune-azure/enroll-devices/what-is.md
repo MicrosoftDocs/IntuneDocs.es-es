@@ -15,9 +15,9 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 671d862c8d9a98e02f33d96cf6ceba712e740dec
-ms.openlocfilehash: 6127604afb01a9482eadc3d03b566304e2acdd21
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: a816ee8fd2738cf244fd46a91af46d2b137a5dfb
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -27,11 +27,11 @@ ms.lasthandoff: 03/17/2017
 
 En este tema se describe qué es la inscripción y las diferentes formas de inscribir dispositivos móviles en la administración de Intune.
 
-Los dispositivos (incluidos PC con Windows) se inscriben en Intune para poder administrarlos. En la documentación de Intune esta funcionalidad se conoce como administración de dispositivos móviles (MDM). Cuando los dispositivos se inscriben como dispositivos móviles (no como PC), se les emite un certificado MDM que los dispositivos usan para comunicarse con el servicio de Intune.
+Los dispositivos se inscriben en Intune para poder administrarlos. En la documentación de Intune esta funcionalidad se conoce como administración de dispositivos móviles (MDM). Cuando los dispositivos se inscriben en Intune, se les emite un certificado MDM que los dispositivos usan para comunicarse con el servicio de Intune.
 
 La forma en que inscriba a los dispositivos depende del tipo de dispositivo, la propiedad y el nivel de administración que sea necesario. La inscripción BYOD ("Bring your own device") permite a los usuarios inscribir sus teléfonos, tabletas o equipos personales. La inscripción de dispositivos corporativos (COD) permite escenarios de administración como la inscripción automática, los dispositivos compartidos o los requisitos de inscripción previamente autorizada.
 
-Si usa Exchange ActiveSync, ya sea local u hospedado en la nube, puede habilitar la administración de Intune sencilla sin inscripción (en breve habrá más información disponible). Puede administrar PC con Windows como dispositivos móviles, que es el método recomendado que se describe a continuación. También puede administrarlos como PC mediante [software cliente de Intune](https://docs.microsoft.com/intune/deploy-use/manage-windows-pcs-with-microsoft-intune).
+Si usa Exchange ActiveSync, ya sea local u hospedado en la nube, puede habilitar la administración de Intune sencilla sin inscripción (en breve habrá más información disponible). Puede administrar PC con Windows como dispositivos móviles, que es el método recomendado que se describe a continuación.
 
 
 ## <a name="overview-of-device-enrollment-methods"></a>Información general de los métodos de inscripción de dispositivos
@@ -53,21 +53,20 @@ En la tabla siguiente se muestran los métodos de inscripción de Intune, así c
 |**[USB-SA](#usb-sa)**|    Sí |    Opcional |    No| [Más información](enroll-ios-devices-with-apple-configurator-and-setup-assistant.md).|
 |**[USB-Direct](#usb-direct)**|    No |    No    | No|[Más información](enroll-ios-devices-with-apple-configurator-and-direct-enrollment.md).|
 
-
-
 **Métodos de inscripción de Windows**
 
 | **Método** |    **¿Se requiere borrado?** |    **Afinidad**    |    **Bloqueo** | **Detalles**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | No |    Sí |    No | Más información disponible próximamente|
+|**[BYOD](#byod)** | No |    Sí |    No | [Más información](#enroll-windows-devices.md).|
 |**[DEM](#dem)**|    No |No |No    |[Más información](enroll-devices-using-device-enrollment-manager.md).|
 
 **Métodos de inscripción de Android**
 
 | **Método** |    **¿Se requiere borrado?** |    **Afinidad**    |    **Bloqueo** | **Detalles**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | No|    Sí |    No | Más información disponible próximamente|
-|**[DEM](#dem)**|    No |No |No    |[Más información](enroll-ios-devices-using-device-enrollment-program.md)|
+|**[BYOD](#byod)** | No|    Sí |    No | [Más información](#enroll-android-and-knox-standard-devices.md).|
+|**[DEM](#dem)**|    No |No |No    |[Más información](enroll-ios-devices-using-device-enrollment-program.md).|
+|[**Android for Work**](#android-for-work)| No | Sí | No| [Más información](#enroll-android-and-knox-standard-devices.md) |
 
 
 ## <a name="byod"></a>BYOD
@@ -112,21 +111,11 @@ Para más información sobre la inscripción de dispositivos iOS, consulte:
 ## <a name="mobile-device-management-with-exchange-activesync-and-intune"></a>Administración de dispositivos móviles con Exchange ActiveSync e Intune
 Los dispositivos móviles que no estén inscritos, pero que se conecten a Exchange ActiveSync (EAS), se pueden administrar mediante Intune a través de la directiva de MDM de EAS. Intune usa Exchange Connector para comunicarse con EAS, tanto localmente como hospedado en la nube. Más información disponible próximamente.
 
-
-## <a name="windows-pc-management-with-intune"></a>Administración de equipos con Windows con Intune  
-Microsoft Intune también se puede usar para administrar equipos Windows con el software cliente de Intune. Los equipos que se administran con el cliente de Intune pueden:
-
- - Informar de los inventarios de software y hardware
- - Instalar aplicaciones de escritorio (por ejemplo, archivos .msi y .exe)
- - Administrar la configuración de firewall
-
-Los equipos que se administran con el software cliente de Intune no pueden borrarse completamente, pero sí de manera selectiva. Los equipos administrados con el software cliente de Intune no se pueden beneficiar de muchas características de administración de Intune, por ejemplo, el acceso condicional, la configuración de VPN y Wi-Fi o la implementación de certificados y las configuraciones de correo electrónico. Más información disponible próximamente.
-
 ## <a name="supported-device-platforms-and-browsers"></a>Exploradores y plataformas de dispositivos compatibles
 
 Consulte [Dispositivos y exploradores admitidos para Intune](https://docs.microsoft.com/intune/get-started/supported-mobile-devices-and-computers)
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>Limpieza de dispositivos móviles tras la expiración del certificado MDM
 
-El certificado MDM se renueva automáticamente cuando los dispositivos móviles se comunican con el servicio de Intune. Si se borran los dispositivos móviles (no PC) o estos no pueden comunicarse con el servicio de Intune durante un tiempo, el certificado MDM no se renovará. El dispositivo se quita del portal de Azure 180 días después de que expire el certificado MDM.
+El certificado MDM se renueva automáticamente cuando los dispositivos móviles se comunican con el servicio de Intune. Si se borran los dispositivos móviles o estos no pueden comunicarse con el servicio de Intune durante un tiempo, el certificado MDM no se renovará. El dispositivo se quita del portal de Azure 180 días después de que expire el certificado MDM.
 
