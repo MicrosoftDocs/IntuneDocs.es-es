@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/27/2017
+ms.date: 04/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,9 +15,9 @@ ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: cc1a3c8c3e2f25ee154db964de2601510e32f1ea
-ms.openlocfilehash: 41354f0eee051bd9c691a27830264f6c95502fa5
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: d16374606d60f3b09dc24b3c4ef4f196a739b32e
+ms.lasthandoff: 04/24/2017
 
 
 
@@ -32,7 +32,7 @@ Use la información de este tema como ayuda para crear y administrar informes de
 ## <a name="using-reports"></a>Uso de informes
 Los informes de Intune proporcionan información sobre el software, el hardware y las licencias de software de la organización. Los informes pueden ayudar a confirmar las necesidades actuales y pronosticar gastos futuros. El área de trabajo **Informes** proporciona las herramientas para crear y administrar los informes. 
 
-### <a name="report-types"></a>Report types (Tipos de informes)
+## <a name="report-types"></a>Report types (Tipos de informes)
 
 |Tipo de informe|Descripción|
 |---------------|---------------|
@@ -49,8 +49,10 @@ Los informes de Intune proporcionan información sobre el software, el hardware 
 |**Informes de atestación de estado**|Muestra el estado de los dispositivos móviles.|
 |**Informe de hardware de Mac OS X**|Muestra los detalles de hardware de todos los dispositivos Mac OS X inscritos de los grupos que seleccione. Para obtener información sobre el inventario de hardware recopilado de estos dispositivos, consulte [Comprender el funcionamiento de sus dispositivos mediante el inventario en Microsoft Intune](understand-your-devices-with-inventory-in-microsoft-intune.md).|
 |**Informe del software de Mac OS X**|Muestra el software instalado en todos los dispositivos Mac OS X de los grupos seleccionados. El informe muestra el nombre del software (como un identificador de paquete), la versión corta o el nombre corto (o descriptivo), la versión y el número de dispositivos con el software instalado.|
+|**Informes de Windows Information Protection**|Muestra información acerca de las operaciones de Windows Information Protection (WIP) en dispositivos que administra.|
+|**Informes de atestación de estado**|Muestra información notificada por el servicio de atestación de estado de Windows para los dispositivos que administra.|
 
-#### <a name="to-create-a-report"></a>Para crear un informe
+## <a name="to-create-a-report"></a>Para crear un informe
 
 1.  En la consola de administración de Intune, elija **Informes**. Después, elija el tipo de informe que quiere generar, como se describe en la tabla anterior.
 

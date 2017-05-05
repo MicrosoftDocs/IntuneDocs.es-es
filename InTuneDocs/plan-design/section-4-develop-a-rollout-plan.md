@@ -15,8 +15,9 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
 translationtype: Human Translation
-ms.sourcegitcommit: f807d6e4b20b98ecf622d1ebdd9db33b132a2e6a
-ms.openlocfilehash: 36530602813467c184b4f262719a56cedbaa2ba9
+ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
+ms.openlocfilehash: 2a970badf5ac18a05115a72dc267ee455ba4628d
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -91,9 +92,4 @@ Aquí se muestra un ejemplo de un plan de implementación de Intune con los grup
 ## <a name="next-section"></a>Sección siguiente
 
 En la sección siguiente se proporcionan instrucciones sobre el [desarrollo de un plan de comunicación de implementación de Intune](section-5-develop-a-rollout-communication-plan.md).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

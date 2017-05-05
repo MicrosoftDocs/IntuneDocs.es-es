@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 04/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,9 +16,9 @@ ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: d02d7c3367e18c96cc1d72de3a3a0ef581ef63ff
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 6e410a37f91e0828d5f6b205acb4d340dae86c6d
+ms.lasthandoff: 04/24/2017
 
 ---
 
@@ -58,7 +58,7 @@ Ya puede continuar y configurar la sincronización en la consola de Intune.
 
 1. Inicie sesión en el portal de Azure.
 2. Elija **More Services** >  (Más servicios) **Other** >  (Otros) **Intune**.
-3. En la hoja **Intune**, elija **Administrar aplicaciones**.
+3. En la hoja **Intune**, elija **Mobile apps**.
 1. En la hoja **Mobile Apps**, elija **Configuración** > **Tienda Windows para empresas**.
 2. Haga clic en **Habilitar**.
 3. Si aún no lo ha hecho, haga clic en el vínculo para registrarse en la Tienda Windows para empresas y asocie la cuenta como se ha descrito anteriormente.
@@ -67,7 +67,7 @@ Ya puede continuar y configurar la sincronización en la consola de Intune.
 
 ## <a name="synchronize-apps"></a>Sincronizar aplicaciones
 
-1. En la carga de trabajo **Administrar aplicaciones**, elija **Configuración** > **Tienda Windows para empresas**.
+1. En la carga de trabajo **Mobile apps**, elija **Configuración** > **Tienda Windows para empresas**.
 2. Haga clic en **Sincronizar** para que las aplicaciones que ha adquirido en la Tienda Windows aparezcan en Intune.
 
 ## <a name="assign-apps"></a>Asignación de aplicaciones

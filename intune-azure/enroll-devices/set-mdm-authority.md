@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 01/06/2016
+ms.date: 04/20/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,32 +16,34 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 9d7a1a934188f0a40553d3c6b8b567ba8f6af034
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: dc08ba96eeea0ce2aad78e4d6ca0d94e709d885d
+ms.openlocfilehash: 6cf7c56924091713f55fe8824fb11e522825b98f
+ms.lasthandoff: 04/21/2017
 
 ---
 
-# <a name="set-the-mobile-device-management-authority"></a>Establecer la entidad de administración de dispositivos móviles 
+# <a name="set-the-mobile-device-management-authority"></a>Establecer la entidad de administración de dispositivos móviles
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-La configuración de la entidad de administración de dispositivos móviles determina cómo se administran los dispositivos. Las configuraciones posibles son:
+La configuración de la entidad de administración de dispositivos móviles (MDM) determina cómo se administran los dispositivos. Como administrador de TI, debe establecer una entidad de MDM antes de que los usuarios puedan inscribir dispositivos para la administración.
 
-- **Intune independiente**: administración solo en la nube, que se configura mediante el portal de Azure. Incluye el conjunto completo de funcionalidades que ofrece Intune.
+Las configuraciones posibles son:
 
-- **Intune híbrido**: integración de la solución de nube de Intune con System Center Configuration Manager. Intune se configura mediante la consola de Configuration Manager.
+- **Intune independiente**: administración solo en la nube, que se configura mediante el portal de Azure. Incluye el conjunto completo de funcionalidades que ofrece Intune. [Establecer la entidad de MDM en la consola de Intune](#set-mdm-authority-to-Intune).
 
-- **Administración de dispositivos móviles para Office 365**: integración de Office 365 con la solución de nube de Intune. Intune se configura desde el Centro de administración de Office 365. Incluye un subconjunto de las funcionalidades que están disponibles con la versión independiente de Intune.
+- **Intune híbrido**: integración de la solución de nube de Intune con System Center Configuration Manager. Intune se configura mediante la consola de Configuration Manager. [Establecer la entidad de MDM en Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-intune-subscription).
+
+- **Administración de dispositivos móviles para Office 365**: integración de Office 365 con la solución de nube de Intune. Intune se configura desde el Centro de administración de Office 365. Incluye un subconjunto de las funcionalidades que están disponibles con la versión independiente de Intune. Establecer la entidad de MDM en el Centro de administración de Office 365.
 
 >[!IMPORTANT]
 >Una vez establecida la entidad de administración de dispositivos móviles, tendrá que ponerse en contacto con el [soporte técnico de Microsoft](https://docs.microsoft.com/intune/troubleshoot/how-to-get-support-for-microsoft-intune) para cambiarla, así que tenga cuidado cuando haga su elección.
 
-**Para establecer la entidad de administración de dispositivos móviles**
+## <a name="set-mdm-authority-to-intune"></a>Establecimiento de la entidad de MDM en Intune
 
 1. En Azure Portal, elija **Más servicios** > **Supervisión y administración** > **Intune**.
-
-2. En la hoja de Intune, elija **Inscribir dispositivos** y luego elija **Overview** (Información general).
+  ![Captura de pantalla de la carga de trabajo de solución de problemas de Intune con el vínculo Seleccionar usuario](media/set-mdm-auth.png)
+2. En la hoja de Intune, elija **Inscripción de dispositivos** y luego elija **Información general**.
 
 3. En la hoja **Empezar a administrar dispositivos**, elija **Establecer Intune como entidad de MDM**. Un mensaje indica que ha configurado correctamente su entidad de MDM en Intune.
 

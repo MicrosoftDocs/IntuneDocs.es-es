@@ -16,8 +16,9 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 1809422e7f5a3d5aa5e2ef32e1aa7cadf00ecabb
+ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
+ms.openlocfilehash: 330dba6b9402ef354d0925da27ee1b37ef50db00
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -42,8 +43,8 @@ Hay tres lugares diferentes para supervisar el estado de cumplimiento:
 
 1. Inicie sesión en el portal de Azure.
 2. Elija **More Services** >  (Más servicios) **Other** >  (Otros) **Intune**.
-3. En la hoja **Intune**, elija **Administrar aplicaciones**.
-4. En la carga de trabajo **Administrar aplicaciones**, elija **Monitor** >  (Supervisar) **Estado de usuario de protección de aplicaciones**, para ver la vista de resumen:
+3. En la hoja **Intune**, elija **Mobile apps**.
+4. En la carga de trabajo **Mobile apps**, elija **Supervisar** > **Estado de usuario de protección de aplicaciones**, para ver la vista de resumen:
 
 ![Ventana de resumen en la hoja Administración de aplicaciones móviles de Intune](../media/app-protection-user-status-summary.png)
 
@@ -93,7 +94,7 @@ La vista detallada muestra el mensaje de error, la aplicación a la que se obtuv
 
 Puede encontrar los mismos informes en la vista detallada e informes adicionales que le ayudarán en el estado de cumplimiento de la directiva MAM:
 
-![Captura de pantalla&4;](../media/MAM-reporting-7.png)
+![Captura de pantalla 4](../media/MAM-reporting-7.png)
 
 -   **Informe de usuario de protección de aplicaciones:** describe la misma información que puede encontrar en el informe **Estado usuario** en la sección de vista detallada anterior.
 
@@ -109,7 +110,7 @@ Puede encontrar los mismos informes en la vista detallada e informes adicionales
 
         -   Todas las aplicaciones están registradas, pero no reciben ninguna directiva MAM.
 
-![Captura de pantalla&2;](../media/MAM-reporting-4.png)
+![Captura de pantalla 2](../media/MAM-reporting-4.png)
 
 ## <a name="table-grouping"></a>Agrupación de tablas
 
@@ -126,20 +127,15 @@ Siga estos pasos para generar el informe de protección de aplicaciones:
 
 1. En la hoja de administración de aplicaciones móviles de Intune, elija el informe de protección de aplicaciones.
 
-    ![Captura de pantalla&6;](../media/app-protection-report-csv-2.png)
+    ![Captura de pantalla 6](../media/app-protection-report-csv-2.png)
 
 2. Elija Sí para guardar el informe, elija Guardar como y seleccione la carpeta en la que quiere guardar el informe.
 
-    ![Captura de pantalla&7;](../media/app-protection-report-csv-1.png)
+    ![Captura de pantalla 7](../media/app-protection-report-csv-1.png)
 
 ## <a name="see-also"></a>Consulte también
 [Administrar la transferencia de datos entre aplicaciones iOS](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
 * [What to expect when your Android app is managed by app protection policies](app-protection-enabled-android-apps.md) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)
 * [What to expect when your iOS app is managed by app protection policies](app-protection-enabled-ios-apps.md) (Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

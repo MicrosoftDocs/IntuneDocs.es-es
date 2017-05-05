@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/20/2017
+ms.date: 04/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -18,9 +18,9 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 translationtype: Human Translation
-ms.sourcegitcommit: d42fa20a3bc6b6f4a74dd0872aae25cfb33067b9
-ms.openlocfilehash: 1c3b986df3e0d8a5ee54da0a91f37b445b4dd9f7
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 53f1c688aad2f810d8a887435dd8d122d4f471ae
+ms.openlocfilehash: 9220eecc32ee27725454a48484608af5f4ea0e83
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -48,7 +48,7 @@ Para restablecer el código de acceso:
 
   ![Mensaje emergente de restablecimiento del código de acceso con la advertencia sobre el restablecimiento del código de acceso del dispositivo y el cierre de la sesión del usuario. Los botones de entrada de usuario son Cerrar sesión y Cancelar.](./media/iwp-reset-passcode-popup.png)
 
-5.  Seleccione **Cerrar sesión** y aparecerá un último mensaje sobre la eliminación del código de acceso del dispositivo. Si no tiene el dispositivo a mano, no quite el código de acceso, ya que cualquiera que tenga acceso físico a él podría acceder a la mayor parte de la información que contiene, personal o corporativa.
+5.  Seleccione **Cerrar sesión** y aparecerá un último mensaje sobre la eliminación del código de acceso del dispositivo. Si no tiene el dispositivo a mano, no quite el código de acceso, ya que cualquiera que tenga acceso físico a él podría acceder a la mayor parte de la información que contiene, personal o corporativa. 
 
   ![Segundo mensaje emergente de restablecimiento del código de acceso con la advertencia sobre el restablecimiento del código de acceso del dispositivo y la eliminación del código de acceso del dispositivo. También aconseja sobre cómo establecer un nuevo código de acceso desde los ajustes del dispositivo.](./media/iwp-reset-passcode-2nd-popup.png)
 
@@ -61,6 +61,8 @@ Para restablecer el código de acceso:
   **Windows 10 Mobile**: quita el código de acceso existente y crea un código de acceso temporal con letras y números. Si utiliza el reconocimiento facial de Windows Hello para iniciar sesión, seguirá siendo compatible.
     
   **Windows Phone 8.1**: elimina el código de acceso existente y crea un código de acceso temporal con números.
+
+  Para dispositivos Android y Windows, la contraseña temporal aparecerá en **Detalles del dispositivo**. 
 
 6.  Desbloquee el dispositivo y establezca un código de acceso nuevo, o bien cambie el código de acceso temporal en **Configuración** en el dispositivo.
 
