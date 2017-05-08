@@ -1,5 +1,6 @@
 # Introducción
 ## [¿Qué es la vista previa de Azure Portal?](introduction/what-is-microsoft-intune.md)
+## [¿Qué es Intune for Education?](/intune/understand-explore/introduction-to-intune-education?toc=/intune/toc.json)
 ## [Características de Intune en Azure](introduction/ui-changes-in-microsoft-intune.md)
 ## Introducción
 <!---(introduction/get-started.md) --->
@@ -82,10 +83,13 @@
 #### [Aplicaciones LOB para iOS](manage-apps/ios-lob-app.md)
 #### [Aplicaciones web](manage-apps/web-app.md)
 #### [Aplicaciones de la Tienda de Windows Phone 8.1](manage-apps/windows-phone-8-1-store-app.md)
+#### [Aplicaciones de línea de negocio de Windows Phone](manage-apps/windows-phone-line-of-business-app.md)
 #### [Aplicaciones de la Tienda Windows](manage-apps/windows-store-app.md)
+#### [Aplicaciones de línea de negocio de Windows](manage-apps/windows-line-of-business-app.md)
 ### [Asignar aplicaciones](manage-apps/deploy-apps.md)
 ### [Supervisión de aplicaciones](manage-apps/monitor-apps.md)
-### [Usar directivas de configuración de aplicaciones](manage-apps/app-configuration-policies.md)
+### [Usar perfiles de configuración de aplicaciones](manage-apps/app-configuration-policies.md)
+### [Usar perfiles de aprovisionamiento de aplicaciones iOS](manage-apps/ios-app-provisioning-profile.md)
 ### [Borrar aplicaciones de forma selectiva](manage-apps/app-selective-wipe.md)
 <!---Is this specific to app protection policy or more general app management?--->
 ### [Trabajar con aplicaciones compradas por volumen](manage-apps/volume-purchased-apps.md)
