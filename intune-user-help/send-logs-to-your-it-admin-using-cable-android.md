@@ -37,7 +37,7 @@ Si se produce un error mientras usa la aplicación de portal de empresa en el di
 
 2.  Conecte el dispositivo al equipo mediante un cable USB. Por lo general, suele ser el mismo cable que se utiliza para cargar el dispositivo en un enchufe.
 
-3.  En el equipo, busque un directorio que contenga el nombre del dispositivo. En dicho directorio busque *Dispositivo Android\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\\**.
+3.  En el equipo, busque un directorio que contenga el nombre del dispositivo. En dicho directorio busque **Dispositivo Android\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\\**.
 
 4.  Seleccione los archivos y adjúntelos a un correo electrónico. Envíe este correo electrónico a su administrador de TI.
 
