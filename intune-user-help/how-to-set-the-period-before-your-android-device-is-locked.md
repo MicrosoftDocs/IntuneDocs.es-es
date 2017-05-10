@@ -17,10 +17,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 3bda44c401ae7cf5dd796486d2d1a6332828bed1
-ms.openlocfilehash: be3307165b420ef0fe9c143a3a55f88285a344da
-ms.lasthandoff: 01/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a1968bedeba42758c36e7b9bb9cddfc26309ca71
+ms.openlocfilehash: af2625387e6d2d454200e851ce5e64f8eb5607c7
+ms.contentlocale: es-es
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -31,17 +32,17 @@ Para volver a conectar con su trabajo, deberá establecer el tiempo de espera de
 
 ## <a name="native-non-samsung-knox-device"></a>Dispositivo nativo (distinto a Samsung KNOX)
 
-1.  En el dispositivo, en **Configuración**, toque **Seguridad** &gt; **Automatically Lock ** (Bloqueo automático) (aparece como **Lock phone after ** [Bloquear teléfono tras] en algunos dispositivos).
+1.  En el dispositivo, en **Configuración**, toque **Seguridad** &gt; **Automatically Lock**  (Bloqueo automático) (aparece como **Lock phone after** [Bloquear teléfono tras] en algunos dispositivos).
 
-    Si **Bloqueo automático** (**Bloquear teléfono tras** en algunos dispositivos) no aparece, asegúrese de que ha establecido una contraseña válida en **Configuración** &gt; **Bloqueo de pantalla** &gt; **Contraseña**.
+    Si **Bloqueo automático** (**Bloquear teléfono tras** en algunos dispositivos) no aparece, asegúrese de que ha establecido una contraseña válida en **Configuración** &gt; **Bloqueo de pantalla** &gt; **Contraseña** .
 
 2.  Seleccione el valor de tiempo de espera de la contraseña.
 
 ## <a name="samsung-knox-device"></a>Dispositivo Samsung KNOX
 
-1.  En el dispositivo, en **Configuración**, toque **Pantalla de bloqueo y seguridad** &gt; **bloqueo automático**.
+1.  En el dispositivo, en **Configuración** , toque **Pantalla de bloqueo y seguridad** &gt; **bloqueo automático** .
 
-    Si no aparece **Automatically Lock ** (Bloqueo automático) (**Lock phone after** [Bloquear teléfono tras] en algunos dispositivos), asegúrese de que ha establecido una contraseña válida en **Configuración** &gt; **Bloqueo de pantalla** &gt; **Contraseña**.
+    Si no aparece **Automatically Lock** (Bloqueo automático) (**Lock phone after** [Bloquear teléfono tras] en algunos dispositivos), asegúrese de que ha establecido una contraseña válida en **Configuración** &gt; **Bloqueo de pantalla** &gt; **Contraseña**.
 
 2.  Seleccione un valor de tiempo de espera de la contraseña.
 
