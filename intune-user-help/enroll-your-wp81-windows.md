@@ -17,10 +17,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: aca401cab49230d2bcb9171cf532b52ce5219798
-ms.openlocfilehash: ad18e2bdfe8a045077a1c91abfcc123afec72cb9
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a1968bedeba42758c36e7b9bb9cddfc26309ca71
+ms.openlocfilehash: 307999a7bb18a7b33d111bec212922558a5e10bf
+ms.contentlocale: es-es
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -42,19 +43,19 @@ Instale la aplicación del Portal de empresa en su dispositivo:
 
 1.  Pulse en **Inicio** &gt; **Tienda**.
 
-2.  Pulse **Buscar** y escriba **portal de empresa**.
+2.  Pulse **Buscar** y escriba **portal de empresa** .
 
-3.  En la lista de resultados, pulse en **Portal de empresa**.
+3.  En la lista de resultados, pulse en **Portal de empresa** .
 
     ![Resultados de búsqueda del portal de empresa](./media/WP81-1-CP-search-store-v2.png)
 
-4.  Pulse en **Portal de empresa ** &gt; **Instalar**.
+4.  Pulse en **Portal de empresa**  &gt; **Instalar** .
 
     ![Instalar el portal de empresa](./media/WP81-2-CP-install-v2.png)
 
 Inscriba su dispositivo:
 
-1.  En el dispositivo, abra la aplicación **Portal de empresa de Microsoft Intune**.
+1.  En el dispositivo, abra la aplicación **Portal de empresa de Microsoft Intune** .
 
 2.  Proporcione sus credenciales. Se le pedirá que acepte los términos y condiciones de su empresa, si es necesario.
 
