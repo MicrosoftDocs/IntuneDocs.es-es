@@ -15,9 +15,10 @@ ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
 ms.openlocfilehash: 896a7143bc0b7ec80f69482681f4ed17d79661d4
+ms.contentlocale: es-es
 ms.lasthandoff: 02/18/2017
 
 
@@ -37,7 +38,7 @@ La aplicación Portal de empresa es una manera de que Intune pueda compartir dat
 
 Las directivas de protección de aplicaciones solo se aplican en el contexto profesional cuando se usa la aplicación, por lo que es posible que observe distintos comportamientos de las aplicaciones según el contexto: profesional o personal.
 
-En las aplicaciones que admiten varias identidades, Intune solo aplica las directivas de protección de aplicaciones cuando el usuario final está usando la aplicación en el contexto laboral.  Por ejemplo, el usuario final verá una solicitud de PIN al acceder a los datos de trabajo.  En la **aplicación Outlook**, al usuario final se le pide un PIN al iniciar la aplicación. En la **aplicación OneDrive**, esto ocurre cuando el usuario final escribe en la cuenta de trabajo.  En Microsoft **Word**, **PowerPoint* y **Excel**, esto ocurre cuando el usuario final accede a documentos almacenados en la ubicación de OneDrive para la empresa.
+En las aplicaciones que admiten varias identidades, Intune solo aplica las directivas de protección de aplicaciones cuando el usuario final está usando la aplicación en el contexto laboral.  Por ejemplo, el usuario final verá una solicitud de PIN al acceder a los datos de trabajo.  En la **aplicación Outlook**, al usuario final se le pide un PIN al iniciar la aplicación. En la **aplicación OneDrive**, esto ocurre cuando el usuario final escribe en la cuenta de trabajo.  En Microsoft **Word**, **PowerPoint* y* *Excel**, esto ocurre cuando el usuario final accede a documentos almacenados en la ubicación de OneDrive para la empresa.
 ##  <a name="managing-user-accounts-on-the-device"></a>Administración de cuentas de usuario en el dispositivo
 
 En Intune solo se pueden implementar directivas de protección de aplicaciones en una única cuenta de usuario por dispositivo.
