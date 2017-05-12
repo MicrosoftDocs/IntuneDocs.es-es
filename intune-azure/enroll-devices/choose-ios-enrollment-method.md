@@ -15,10 +15,11 @@ ms.assetid: e6c0a430-1851-4108-812a-87e0fc2623b5
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 748f5b6e18b7bc6d9e9d3e6635ac2c3e7eb11a67
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 3015c5493e8b38b425309584430c372e6a4d90cf
+ms.contentlocale: es-es
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -35,7 +36,7 @@ Use la siguiente información para decidir qué método usar para inscribir disp
 
 ## <a name="user-owned-ios-devices-byod"></a>Dispositivos iOS corporativos (BYOD)
 
-Si los usuarios quieren inscribir sus dispositivos personales, BYOD (traiga su propio dispositivo), el único método de inscripción disponible es que descarguen la aplicación Portal de empresa para iOS desde la App Store y sigan las instrucciones de inscripción de la aplicación. Una vez inscritos, los usuarios pueden conectarse a la red de empresa, unirse al dominio o a Azure Active Directory y obtener acceso a los recursos corporativos. Puede bloquear la inscripción de los dispositivos iOS de propiedad personal. Vea [Set device type restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions) (Establecer restricciones de tipos de dispositivo) para obtener instrucciones.
+Si los usuarios quieren inscribir sus dispositivos personales, BYOD (traiga su propio dispositivo), el único método de inscripción disponible es que descarguen la aplicación Portal de empresa para iOS desde la App Store y sigan las instrucciones de inscripción de la aplicación. Una vez inscritos, los usuarios pueden conectarse a la red de empresa, unirse al dominio o a Azure Active Directory y obtener acceso a los recursos corporativos. Puede bloquear la inscripción de los dispositivos iOS de propiedad personal. Vea [Set device type restrictions](set-enrollment-restrictions.md#set-device-type-restrictions) (Establecer restricciones de tipos de dispositivo) para obtener instrucciones.
 
 ## <a name="apple-configurator"></a>Apple Configurator
 
