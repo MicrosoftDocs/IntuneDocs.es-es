@@ -14,10 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
-ms.openlocfilehash: a816ee8fd2738cf244fd46a91af46d2b137a5dfb
-ms.lasthandoff: 04/25/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: adeea52461f58bd03b291c4b2cc336e9da19d429
+ms.contentlocale: es-es
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -38,7 +39,7 @@ Si usa Exchange ActiveSync, ya sea local u hospedado en la nube, puede habilitar
 
 En la tabla siguiente se muestran los métodos de inscripción de Intune, así como las funciones admitidas y los requisitos de cada método. A continuación se describen las funciones y los requisitos. En la tabla se emplean los términos siguientes:
 
-- **Borrar**: indica si el dispositivo debe borrarse antes de que los usuarios lo inscriban. El término "borrado" significa el restablecimiento de fábrica del dispositivo, lo que elimina todos los datos. Para más información, consulte [Use full or selective wipe on devices](/intune-azure/manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune) (Uso de borrado completo o selectivo en los dispositivos).
+- **Borrar**: indica si el dispositivo debe borrarse antes de que los usuarios lo inscriban. El término "borrado" significa el restablecimiento de fábrica del dispositivo, lo que elimina todos los datos. Para más información, consulte [Use full or selective wipe on devices](../manage-devices/use-full-or-selective-wipe-on-devices-using-microsoft-intune.md) (Uso de borrado completo o selectivo en los dispositivos).
 - **Afinidad**: los dispositivos se asocian a los usuarios. Es necesaria para la administración de aplicaciones móviles (MAM) y el acceso condicional a los datos de la empresa. Para obtener más información, vea [Inscribir dispositivos iOS de empresa en Microsoft Intune](enroll-ios-devices-using-device-enrollment-program.md).
 - **Bloqueo**: indica si se impide que los usuarios anulen la inscripción de la administración de sus dispositivos. Los usuarios pueden anular la inscripción de sus dispositivos en todas las plataformas mediante el uso de su aplicación del portal de empresa. No pueden usar los menús del sistema operativo nativo para anular la inscripción.
 
@@ -70,7 +71,7 @@ En la tabla siguiente se muestran los métodos de inscripción de Intune, así c
 
 
 ## <a name="byod"></a>BYOD
-Los usuarios "Bring your own device" instalan la aplicación Portal de empresa e inscriben su dispositivo. Esto permite a los usuarios conectarse a la red de la empresa y unirse al dominio o a Azure Active Directory. Para la mayoría de las plataformas, tiene que habilitar la inscripción BYOD en muchos escenarios COD. Puede bloquear la inscripción de los dispositivos Android e iOS de propiedad personal. Vea [Set device type restrictions](https://docs.microsoft.com/intune-azure/enroll-devices/set-enrollment-restrictions#set-device-type-restrictions) (Establecer restricciones de tipos de dispositivo) para obtener instrucciones.
+Los usuarios "Bring your own device" instalan la aplicación Portal de empresa e inscriben su dispositivo. Esto permite a los usuarios conectarse a la red de la empresa y unirse al dominio o a Azure Active Directory. Para la mayoría de las plataformas, tiene que habilitar la inscripción BYOD en muchos escenarios COD. Puede bloquear la inscripción de los dispositivos Android e iOS de propiedad personal. Vea [Set device type restrictions](set-enrollment-restrictions.md#set-device-type-restrictions) (Establecer restricciones de tipos de dispositivo) para obtener instrucciones.
 
 ## <a name="corporate-owned-devices"></a>Dispositivos de propiedad corporativa
 Los dispositivos corporativos (COD) se pueden administrar mediante el portal de Azure. Los dispositivos iOS se pueden inscribir directamente a través de las herramientas proporcionadas por Apple. Un administrador puede inscribir cualquier tipo de dispositivo mediante el administrador de inscripción de dispositivos. Los dispositivos con un número IMEI también se pueden identificar y etiquetar como de propiedad corporativa para, así, posibilitar escenarios de dispositivos propiedad de la empresa.
