@@ -1,12 +1,12 @@
 ---
-title: "Configuración de certificados con Intune"
+title: "Configuración de certificados con Intune | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: aprenda a usar Intune para crear y asignar certificados que ayuden a proteger conexiones Wi-Fi, VPN y otras."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
-ms.openlocfilehash: 7d1d3c101aaa3832e36a0b9e9369fd1eeb0a6250
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: ecb6a806e7870fd2b1986c4247607c9374431151
+ms.contentlocale: es-es
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -47,7 +48,7 @@ Cada uno de los tipos de certificado tiene sus propios requisitos previos y requ
     - Windows 8.1 y posterior
     - Windows Phone 8.1 y versiones posteriores
     - Windows 10 y versiones posteriores
-3. Cree perfiles de certificados para que los dispositivos soliciten un certificado para la autenticación del acceso al correo electrónico y a las redes VPN y Wi-Fi. Puede crear e implementar un perfil de certificado **PKCS** o **SCEP** para dispositivos que ejecutan estas plataformas:
+3. Cree perfiles de certificados para que los dispositivos soliciten un certificado para la autenticación del acceso al correo electrónico y a las redes VPN y Wi-Fi. Puede crear y asignar un perfil de certificado **PKCS** o **SCEP** para dispositivos que ejecutan estas plataformas:
     - iOS 8.0 y versiones posteriores
     - Android 4.0 y versiones posteriores
     - Android for Work
@@ -71,8 +72,8 @@ Debe crear un perfil independiente para cada plataforma de dispositivo. Cuando c
 
 Consulte uno de los temas siguientes para configurar la infraestructura de cada tipo de perfil de certificado:
 
-- [Configuración y administración de certificados SCEP con Intune](/intune-azure/configure-devices/configure-certificate-infrastructure-for-scep)
-- [Configuración y administración de certificados PKCS con Intune](/intune-azure/configure-devices/configure-certificate-infrastructure-for-pfx)
+- [Configuración y administración de certificados SCEP con Intune](configure-certificate-infrastructure-for-scep.md)
+- [Configuración y administración de certificados PKCS con Intune](configure-certificate-infrastructure-for-pfx.md)
 
 
 ## <a name="step-2---export-your-trusted-root-ca-certificate"></a>Paso 2: exportar el certificado de CA raíz de confianza
@@ -119,8 +120,8 @@ Si desea continuar y asignar este perfil a grupos, consulte [Asignación de perf
 
 Consulte uno de los temas siguientes para configurar y asignar cada tipo de perfil de certificado:
 
-- [Configuración y administración de certificados SCEP con Intune](/intune-azure/configure-devices/configure-certificate-infrastructure-for-scep)
-- [Configuración y administración de certificados PKCS con Intune](/intune-azure/configure-devices/configure-certificate-infrastructure-for-pfx)
+- [Configuración y administración de certificados SCEP con Intune](configure-certificate-infrastructure-for-scep.md)
+- [Configuración y administración de certificados PKCS con Intune](configure-certificate-infrastructure-for-pfx.md)
 
 Después de haber creado un perfil de certificado de confianza, cree perfiles de certificado SCEP o PKCS para cada plataforma que quiera usar. Al crear un perfil de certificado SCEP, debe especificar un perfil de certificado de confianza para esa misma plataforma. Esto vincula los dos perfiles de certificado, aunque todavía debe asignar cada perfil por separado.
 

@@ -1,5 +1,5 @@
 ---
-title: "¿Qué son los perfiles de dispositivo de Microsoft Intune?"
+title: "¿Qué son los perfiles de dispositivo de Microsoft Intune? | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: conozca sobre los perfiles de dispositivo de Intune y cómo pueden ayudarle a administrar y proteger los dispositivos de su empresa."
 keywords: 
@@ -15,10 +15,11 @@ ms.assetid:
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 5383e20081285131f91418b47162e0cd5ba92c90
-ms.lasthandoff: 03/17/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: b33d8ec48c057ce1e67487d5772ca203793d8a79
+ms.contentlocale: es-es
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -37,7 +38,7 @@ Cuando abra esta carga de trabajo, verá las siguientes opciones:
 
 ## <a name="getting-started"></a>Introducción
 
-El flujo de trabajo para la creación de perfiles de dispositivo es similar para todos los perfiles. Lea [How to create Microsoft Intune device configuration profiles](/intune-azure/configure-devices/how-to-create-device-profiles) (Cómo crear perfiles de configuración de dispositivo de Microsoft Intune) para más información sobre cómo crear perfiles. Luego, lea la información específica sobre la creación de configuraciones para cada tipo de perfil.
+El flujo de trabajo para la creación de perfiles de dispositivo es similar para todos los perfiles. Lea [How to create Microsoft Intune device configuration profiles](how-to-create-device-profiles.md) (Cómo crear perfiles de configuración de dispositivo de Microsoft Intune) para más información sobre cómo crear perfiles. Luego, lea la información específica sobre la creación de configuraciones para cada tipo de perfil.
 
 Puede administrar las siguientes funcionalidades de sus dispositivos:
 
@@ -51,15 +52,15 @@ Las restricciones de dispositivos permiten controlar una amplia variedad de conf
 Para más información, consulte [How to configure device restriction settings](how-to-configure-device-restrictions.md) (Configuración de la restricción de dispositivos). Compatible con Android, iOS, macOS, Windows 10 y Windows 10 Team.
 
 ## <a name="email"></a>Correo electrónico
-Los perfiles de correo electrónico le permiten crear, implementar y supervisar la configuración de correo electrónico de Exchange ActiveSync en los dispositivos que administra. Al implementar esta configuración, se garantiza la coherencia, se reducen las llamadas al soporte técnico y se permite a los usuarios finales acceder al correo electrónico de la empresa en sus dispositivos personales sin necesidad de ninguna configuración por su parte.
+Los perfiles de correo electrónico le permiten crear, asignar y supervisar la configuración de correo electrónico de Exchange ActiveSync en los dispositivos que administra. Al asignar esta configuración, se garantiza la coherencia, se reducen las llamadas al soporte técnico y se permite a los usuarios finales acceder al correo electrónico de la empresa en sus dispositivos personales sin necesidad de ninguna configuración por su parte.
 Para más información, consulte [How to configure email settings](how-to-configure-email-settings.md) (Configuración del correo electrónico). Compatible con Android, iOS, Windows Phone 8.1 y Windows 10.
 
 ## <a name="wi-fi"></a>Wi-Fi
-Use perfiles de Wi-Fi para implementar la configuración de red inalámbrica para los usuarios y dispositivos de la organización. Al implementar un perfil de Wi-Fi, los usuarios tendrán acceso a su red Wi-Fi corporativa sin tener que configurarla ellos mismos.
+Use perfiles de Wi-Fi para asignar la configuración de red inalámbrica para los usuarios y dispositivos de la organización. Al asignar un perfil de Wi-Fi, los usuarios tendrán acceso a su red Wi-Fi corporativa sin tener que configurarla ellos mismos.
 Para más información, consulte [How to configure Wi-Fi settings](how-to-configure-wi-fi-settings.md) (Configuración de Wi-Fi). Compatible con Android, iOS, macOS y Windows 8.1 (solo importación).
 
 ## <a name="vpn"></a>VPN
-Las redes privadas virtuales (VPN) ofrecen a los usuarios un acceso remoto seguro a la red de la empresa. Los dispositivos utilizan un perfil de conexión VPN para iniciar una conexión con el servidor VPN. Use los perfiles de VPN para implementar la configuración de VPN para los usuarios y dispositivos de su organización, para que puedan conectarse de forma fácil y segura a la red.
+Las redes privadas virtuales (VPN) ofrecen a los usuarios un acceso remoto seguro a la red de la empresa. Los dispositivos utilizan un perfil de conexión VPN para iniciar una conexión con el servidor VPN. Use los perfiles de VPN para asignar la configuración de VPN a los usuarios y dispositivos de la organización, para que puedan conectarse a la red de forma fácil y segura.
 Para más información, consulte [How to configure VPN settings](how-to-configure-vpn-settings.md) (Configuración de VPN).
 Compatible con Android, iOS, macOS, Windows Phone 8.1, Windows 8.1 y Windows 10.
 

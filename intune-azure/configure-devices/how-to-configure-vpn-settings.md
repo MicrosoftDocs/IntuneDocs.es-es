@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: ca4f1adc5704ecd66d2af7823f95ca63ec20469e
-ms.openlocfilehash: 96756c4aa5afa52821614d5f7fbc6d0bca15895b
-ms.lasthandoff: 03/17/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: d44eec0cdfc2a7762a0f0ca62da4dacd0d083484
+ms.contentlocale: es-es
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.lasthandoff: 03/17/2017
 
 [!INCLUDE[azure_preview](../includes/azure_preview.md)]
 
-Las redes privadas virtuales (VPN) ofrecen a los usuarios un acceso remoto seguro a la red de la empresa. Los dispositivos utilizan un perfil de conexión VPN para iniciar una conexión con el servidor VPN. Use los **Perfiles de VPN** en Microsoft Intune para implementar la configuración de VPN para los usuarios y dispositivos de su organización, para que puedan conectarse de forma fácil y segura a la red.
+Las redes privadas virtuales (VPN) ofrecen a los usuarios un acceso remoto seguro a la red de la empresa. Los dispositivos utilizan un perfil de conexión VPN para iniciar una conexión con el servidor VPN. Use los **perfiles de VPN** en Microsoft Intune para asignar la configuración de VPN a los usuarios y dispositivos de la organización, para que puedan conectarse a la red de forma fácil y segura.
 
 Por ejemplo, suponga que quiere aprovisionar todos los dispositivos iOS con la configuración necesaria para conectarse a un recurso compartido de archivos de la red corporativa. Debe crear un perfil de VPN con la configuración necesaria para conectarse a la red corporativa y, a continuación, debe implementar este perfil en todos los usuarios con dispositivos iOS. Los usuarios ven la conexión VPN en la lista de redes disponibles y pueden conectarse realizando un mínimo esfuerzo.
 
@@ -53,7 +54,7 @@ Puede crear perfiles de VPN mediante los siguientes tipos de conexión:
 
 
 > [!IMPORTANT]
-> Para poder usar perfiles de VPN que se implementen en un dispositivo, debe instalar la aplicación VPN aplicable para el perfil. Puede usar la información del tema [What is app management in Microsoft Intune?](/intune-azure/manage-apps/what-is-app-management) (¿Qué es la administración de aplicaciones en Microsoft Intune?) para ayudarle a implementar la aplicación con Intune.  
+> Para poder usar perfiles de VPN asignados a un dispositivo, debe instalar la aplicación VPN aplicable al perfil. Puede usar la información del tema [¿Qué es la administración de aplicaciones de Microsoft Intune?](../manage-apps/what-is-app-management.md) para ayudarlo a implementar la aplicación con Intune.  
 
 Aprenda a crear perfiles de VPN personalizados mediante la configuración de URI en [Configuraciones personalizadas para perfiles de VPN de Microsoft Intune](create-custom-vpn-profiles.md).     
 
@@ -92,7 +93,7 @@ Los perfiles de VPN pueden utilizar diferentes tipos de conexiones y protocolos 
 
 ### <a name="certificates"></a>Certificados
 
-Al crear el perfil de VPN, elija un perfil de certificado SCEP o PKCS que haya creado previamente en Intune. Esto se conoce como certificado de identidad y se utiliza para autenticar con un perfil de certificado de confianza (o un *certificado raíz*) que ha creado para establecer que el dispositivo del usuario tiene permiso para conectarse. El certificado de confianza se implementa en el equipo que autentica la conexión VPN, por lo general, el servidor de VPN.
+Al crear el perfil de VPN, elija un perfil de certificado SCEP o PKCS que haya creado previamente en Intune. Esto se conoce como certificado de identidad y se utiliza para autenticar con un perfil de certificado de confianza (o un *certificado raíz*) que ha creado para establecer que el dispositivo del usuario tiene permiso para conectarse. El certificado de confianza se asigna al equipo que autentica la conexión VPN, por lo general, el servidor de VPN.
 
 Para más información sobre cómo crear y usar perfiles de certificado en Intune, consulte [How to configure certificates with Microsoft Intune](how-to-configure-certificates.md) (Configuración de certificados con Microsoft Intune).
 
