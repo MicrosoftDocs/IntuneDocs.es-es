@@ -16,10 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: e3924cb3409ab03f8070376c2248a2791a1e713d
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: 9ce22cb6e4031432f8d78653230b526f504b5f8c
+ms.contentlocale: es-es
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -72,7 +73,7 @@ Este artículo usa OneDrive para la Empresa como ejemplo para demostrar la exper
 ## <a name="user-experience-on-an-android-device"></a>Experiencia del usuario en un dispositivo Android
 
 1. Inicie la aplicación OneDrive para la Empresa para abrir la página de inicio de sesión.  <br/> ![Imagen de la pantalla de bienvenida de la aplicación OneDrive](./media/onedrive-android-welcome.png)
-2. Escriba su nombre de usuario de la cuenta profesional. Se le redirigirá a la página de autenticación de Office 365 para que indique las credenciales de trabajo. <br/> ![Imagen de inicio de sesión de Office&365; en Android](./media/o365-sign-in-android.png)
+2. Escriba su nombre de usuario de la cuenta profesional. Se le redirigirá a la página de autenticación de Office 365 para que indique las credenciales de trabajo. <br/> ![Imagen de inicio de sesión de Office 365 en Android](./media/o365-sign-in-android.png)
 3. Una vez que Azure Active Directory autentique correctamente sus credenciales, verá un mensaje que le indica que instale la aplicación Portal de empresa, si aún no está instalada en el dispositivo. Pulse en **Ir a la tienda** para continuar. <br/> ![Imagen del mensaje para obtener la aplicación Portal de empresa](./media/get-company-portal-android.png) <br/>Si ya tiene instalada la aplicación Portal de empresa en el teléfono, la aplicación OneDrive para la Empresa se iniciará automáticamente y podrá saltar a la nota final.
 >[!IMPORTANT]
 >En Android, una vez que ha configurado aplicaciones de Office para que se administren mediante una directiva MAM, el usuario del dispositivo **debe** instalar la aplicación Portal de empresa para acceder a los correos electrónicos y documentos de trabajo, aunque en realidad el usuario final no tenga necesidad de abrir la aplicación o iniciar sesión en ella para leer los correo electrónicos o los documentos.
@@ -132,5 +133,5 @@ Para ver o actualizar estas directivas, o las directivas que se crean en la vers
 ![Imagen de la ruta de la interfaz de usuario para ver las directivas](./media/image-for-faq.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
-Más información sobre [las directivas de protección de aplicaciones](https://docs.microsoft.com/intune-azure/manage-apps/what-is-app-protection-policy).
+Más información sobre [las directivas de protección de aplicaciones](https://docs.microsoft.comwhat-is-app-protection-policy.md).
 

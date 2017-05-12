@@ -15,10 +15,11 @@ ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: a981b0253f56d66292ce77639faf4beba8832a9e
-ms.openlocfilehash: b0d0ad102942c65ac3988ea4659b34b397289126
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 3758df744311392528be01c826527c2a9d879975
+ms.openlocfilehash: e0f40d21412e261d31a0a492c260a6097d4dd007
+ms.contentlocale: es-es
+ms.lasthandoff: 05/10/2017
 
 ---
 
@@ -99,7 +100,7 @@ Para garantizar que solo se recopile información sobre el uso de datos de líne
 
 En función de las necesidades de su organización, deberá crear al menos dos categorías de dispositivos (por ejemplo, Empresarial y Personal) y grupos de dispositivos dinámicos para cada categoría. Puede crear más categorías para su organización, según resulte necesario.
 
-Estas categorías se mostrarán a los usuarios durante la inscripción. Dependiendo de la categoría que estos elijan, el dispositivo inscrito se trasladará al grupo de dispositivos correspondiente. Para obtener más información sobre cómo crear categorías de dispositivos, consulte [Map devices to groups](https://docs.microsoft.com/intune-azure/enroll-devices/how-to-use-device-group-mapping) (Asignar dispositivos a grupos).
+Estas categorías se mostrarán a los usuarios durante la inscripción. Dependiendo de la categoría que estos elijan, el dispositivo inscrito se trasladará al grupo de dispositivos correspondiente. Para obtener más información sobre cómo crear categorías de dispositivos, consulte [Map devices to groups](../enroll-devices/how-to-use-device-group-mapping.md) (Asignar dispositivos a grupos).
 
   ![Captura de pantalla de la hoja Agregar directiva](../media/tem-dynamic-membership-rules.png)
 
