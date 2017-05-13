@@ -14,9 +14,10 @@ ms.assetid: ebc7cfc8-40b9-47c2-8357-d392ebbb27c8
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: e10453155343bb7fd91a4fd3874d393ef78d0b1a
 ms.openlocfilehash: 86a59771fc57971a626f71083e81cd4b7d858cfa
+ms.contentlocale: es-es
 ms.lasthandoff: 04/25/2017
 
 
@@ -41,7 +42,7 @@ Antes de crear una directiva de protección de aplicaciones para Windows 10, deb
 
 3.  Se abre la hoja de **Azure AD**, elija **Movilidad (MDM y MAM)	** y, a continuación, haga clic en **Microsoft Intune**.
 
-    ![Movilidad (MDM y MAM)](../media/AppManagement/mam-provider-sc-1.png)
+    ![Movilidad (MDM y MAM)](../media/AppManagement/mam-provider-sc-2.png)
 
 4.  Cuando se abra la hoja de configuración, elija primero **Restaurar las URL de MAM predeterminadas** y luego configure lo siguiente:
 
