@@ -84,7 +84,7 @@
 #### [Reglas de acceso de Exchange](deploy-use/exchange-access-rules-for-mobile-devices.md)
 ### [Administrar Android for Work](deploy-use/android-for-work.md)
 
-## [Administración de equipos con agentes de software](deploy-use/manage-windows-pcs-with-microsoft-intune.md)
+## [Administración de equipos con cliente de software](deploy-use/manage-windows-pcs-with-microsoft-intune.md)
 ### [Instalación del cliente de equipo](deploy-use/install-the-windows-pc-client-with-microsoft-intune.md)
 ### [Tareas comunes de administración de equipos](deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
 #### [Directivas de equipos](deploy-use/use-policies-to-simplify-windows-pc-management.md)
