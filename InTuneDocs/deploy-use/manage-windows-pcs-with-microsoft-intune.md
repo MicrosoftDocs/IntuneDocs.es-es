@@ -14,40 +14,26 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: c66226b7fc31f91669c4f4f0693ccbd7c679189f
-ms.openlocfilehash: 74f2848dcd2863022dac44cf302b330a99cf1a55
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 271459e3faf886a45bcd673d2450f36a4a33a5db
+ms.openlocfilehash: 0060eb9c912c3a770220c16acde9f4705fa27194
+ms.contentlocale: es-es
+ms.lasthandoff: 04/28/2017
 
 
 ---
 
-# <a name="manage-windows-pcs-with-intune-pc-client-software"></a>Administración de PC con Windows con el software de cliente de PC de Intune
-[Inscripción de equipos Windows como dispositivos móviles](set-up-windows-device-management-with-microsoft-intune.md) es el método preferido para inscribir equipos Windows en Intune, pero como administrador de TI también puede inscribir y administrar equipos Windows mediante la instalación del software cliente de Intune, tal y como se describe en este tema. El software cliente de Intune no es compatible con la inscripción como dispositivo móvil.
+# <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Administración de PC con Windows con el software de cliente de PC de Intune
 
-Intune administra equipos Windows mediante directivas, del mismo modo que los objetos de directiva de grupo (GPO) de los Servicios de dominio de Active Directory (AD DS) de Windows Server. Si va a administrar equipos unidos a un dominio de Active Directory con Intune, [asegúrese de que las directivas de Intune no entren en conflicto con ningún GPO](resolve-gpo-and-microsoft-intune-policy-conflicts.md) configurado para la organización. Puede leer más información sobre los GPO [aquí](https://technet.microsoft.com/library/hh147307.aspx).
+Intune proporciona una solución completa para que las organizaciones administren dispositivos móviles. Intune puede administrar PC con Windows como dispositivos móviles mediante las funcionalidades de administración de dispositivos modernos integradas en el sistema operativo de Windows 10. Para satisfacer las necesidades de administración de su organización, Intune también puede administrar PC con Windows como equipos con el cliente de software de Intune. Este método de administración utiliza las funcionalidades de administración de equipos tradicionales en el sistema operativo de Windows heredado.
 
-## <a name="policies-and-app-deployments-for-the-intune-software-client"></a>Directivas e implementaciones de aplicación para el software cliente de Intune
+El cliente de software de Intune es ideal para PC con Windows que ejecutan sistemas operativos heredados, como Windows 7, que no se pueden administrar como dispositivos móviles. El cliente de software de Intune usa las funcionalidades de administración como la Directiva de grupos para administrar los equipos desde la nube.
 
-Aunque el software cliente de Intune admite [características de administración que ayudan a proteger los equipos](policies-to-protect-windows-pcs-in-microsoft-intune.md) mediante la administración de actualizaciones de software, Firewall de Windows y Endpoint Protection, los equipos administrados con el software cliente de Intune no pueden ser objeto de otras directivas de Intune, incluida la configuración de directivas de **Windows** que es específica de la administración de dispositivos móviles.
+Intune admite la administración de PC con Windows como equipos con el cliente de software para 7000 equipos como máximo. Para implementaciones más grandes, administre los PC con Windows 10 como dispositivos móviles. Cada versión de Intune y actualización de Windows 10 incluyen características de administración basadas en la arquitectura de administración de dispositivos móviles. Se recomienda encarecidamente que traslade su organización a Windows 10 administrado como dispositivos móviles.
 
-Cuando use el software cliente de Intune para administrar equipos con Windows, solo puede usar las directivas que se muestran en la sección **Administración de equipos**.
-
-  ![Selección de la plantilla para la nueva directiva de equipo de Windows](../media/select-template-for-pc-policy.png)
-
-Para obtener descripciones detalladas de las directivas que puede definir, consulte:
-
-- [Usar directivas para ayudar a proteger los equipos Windows que ejecutan el software cliente de Intune](https://docs.microsoft.com/intune/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune)
-- [Mantener los equipos Windows al día con las actualizaciones de software de Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)
-- [Ayudar a proteger los equipos de Windows mediante directivas del Firewall de Windows en Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune)
-- [Ayudar a proteger los equipos de Windows con Endpoint Protection para Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
-
-Además, al implementar aplicaciones, puede solo el instalador de Windows (.exe, .msi).
-
-  ![Selección de la plataforma y la ubicación de los archivos del software cliente de PC](../media/select-platform-of-software-files-for-pc-agent.png)
 
 > [!NOTE]
-> Puede administrar dispositivos Windows 8.1 o versiones posteriores como equipos, con el software cliente de Intune, o como dispositivos móviles con la función de administración de dispositivos móviles (MDM). No puede usar ambos métodos juntos, así que medite su decisión antes de optar por la administración de los equipos mediante el software cliente de Intune. Este tema solo se aplica a la administración de dispositivos como equipos mediante la ejecución del software cliente de Intune.
+> Puede administrar dispositivos con Windows 8.1 o versiones posteriores como equipos con el software de cliente de Intune, o como dispositivos móviles. No puede usar ambos métodos en el mismo dispositivo. Piense detenidamente antes de decidir administrar equipos con el software de cliente de Intune. Este tema solo se aplica a la administración de dispositivos como equipos mediante la ejecución del software cliente de Intune.
 
 ## <a name="requirements-for-intune-pc-client-management"></a>Requisitos para la administración de clientes de PC de Intune
 
@@ -68,31 +54,48 @@ Además, al implementar aplicaciones, puede solo el instalador de Windows (.exe,
 |Windows Installer 3.1|El equipo debe tener, como mínimo, Windows Installer 3.1.<br /><br />Para ver la versión de Windows Installer de un equipo:<br /><br />  En el PC, haga clic con el botón derecho en **%windir%\System32\msiexec.exe** y, luego, haga clic en **Propiedades**.<br /><br />Puede descargar la última versión de Windows Installer desde [Windows Installer Redistributables (Paquetes redistribuibles de Windows Installer)](http://go.microsoft.com/fwlink/?LinkID=234258) en el sitio web de Microsoft Developer Network.|
 |Quitar software cliente incompatible|Antes de instalar el software cliente de Intune, desinstale cualquier software cliente de Configuration Manager, Operations Manager, Operations Management Suite y Service Manager desde ese equipo.|
 
+## <a name="deploying-the-intune-software-client"></a>Implementación del cliente de software de Intune
+Como administrador de Intune, puede hacer que el cliente de software de Intune esté disponible para los usuarios de diversas formas. Para obtener una guía, vea [Instalar el cliente de software de Intune en equipos con Windows](install-the-windows-pc-client-with-microsoft-intune.md).
+
 ## <a name="computer-management-capabilities-with-the-intune-client-software"></a>Características de administración de equipos con el software cliente de Intune
+En la mayoría de los escenarios, los dispositivos se inscribirán con Microsoft Intune, lo que proporciona un mayor número de capacidades. En cambio, también puede administrar los PC mediante el cliente de software de Intune, que proporciona las siguientes características:
 
-Después de que el software cliente de Intune se instale, las características de administración incluyen:
+-   **[Administración de actualizaciones de software](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)**: puede mantener actualizados los equipos y decidir cuándo se aplican las actualizaciones.
 
-- [Administración de aplicaciones](deploy-apps-in-microsoft-intune.md)
+-   **[Directiva de Firewall de Windows](/intune/deploy-use/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune)**: ayuda a asegurarse de que ningún equipo que se use en la empresa tenga un Firewall de Windows inactivo o mal configurado.
 
-- [Supervisión en tiempo real y Endpoint Protection](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md): Endpoint Protection es lo mismo que Windows Defender. Endpoint Protection se aplica a Windows 7 y Windows 8. Para Windows 10 y versiones posteriores, el nombre del producto ha cambiado a Windows Defender.
+-   **[Protección antimalware](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)**: Intune incluye Endpoint Protection, que ayuda a proteger los equipos contra el malware.
 
-- [Administración de la configuración de Firewall de Windows](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md), inventario de hardware y software, control remoto (a través de solicitudes de asistencia remota)
+-   **[Asistencia remota](/intune/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#request-and-provide-remote-assistance-to-windows-pcs-that-use-the-intune-client-software )**: Intune permite a los usuarios ponerse en contacto con el personal de soporte técnico de TI, que puede proporcionar asistencia mediante una característica de Escritorio remoto incluida en Intune (requiere el software TeamViewer).
 
-- [Configuración de la actualización de software](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md)
+-   **[Administración de licencias de software](/intune/deploy-use/manage-license-agreements-for-windows-pc-software-in-microsoft-intune)**: realice el seguimiento del número de licencias de software disponibles y cuántas de estas se usan.
+-   **[Implementación de aplicaciones](/intune/deploy-use/add-apps-for-windows-pcs-in-microsoft-intune)**: implemente software en los equipos que administra. Algunas características de administración de aplicaciones no están disponibles cuando los PC se administran con el cliente de software.
 
-- Informes de la configuración de cumplimiento
+<!-- - **Compliance settings reporting** -->
 
-En la consola de administración de Intune, determinadas secciones, como "Actualizaciones", "Protección" y "Licencia" solo aparecen si se han inscrito dispositivos mediante el software cliente de Intune.
+## <a name="policies-and-app-deployments-for-the-intune-software-client"></a>Directivas e implementaciones de aplicación para el software cliente de Intune
 
-  ![Elementos de la consola de administración que aparecen solo para el equipo cliente](../media/admin-console-settings-only-for-pc-agent.png)
+Aunque el software cliente de Intune admite [características de administración que ayudan a proteger los equipos](policies-to-protect-windows-pcs-in-microsoft-intune.md) mediante la administración de actualizaciones de software, Firewall de Windows y Endpoint Protection, los equipos administrados con el software cliente de Intune no pueden ser objeto de otras directivas de Intune, incluida la configuración de directivas de **Windows** que es específica de la administración de dispositivos móviles.
 
-También puede usar la consola de administración de Intune para realizar otras tareas comunes de administración del equipo en equipos Windows que tengan instalado el cliente:
+Cuando use el software cliente de Intune para administrar equipos con Windows, solo puede usar las directivas que se muestran en la sección **Administración de equipos**.
 
--   Ver información de inventario de hardware y software sobre los equipos administrados
--   Reiniciar un equipo de forma remota
--   Retirar un equipo para desinstalar el software cliente y quitarlo de la administración con Intune
--   Vincular usuarios a determinados equipos administrados
--   Responder a solicitudes de asistencia remota
+Intune administra equipos con Windows mediante directivas, de la misma forma en que los objetos de directiva de grupo (GPO) de Active Directory Domain Services (AD DS) de Windows Server. Si administra equipos unidos a un dominio de Active Directory con Intune, [asegúrese de que las directivas de Intune no entren en conflicto con ningún GPO](https://docs.microsoft.com/intune/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts) utilizado en la organización. Para obtener más información, vea [Directiva de grupo para principiantes](https://technet.microsoft.com/library/hh147307.aspx).
+
+  ![Selección de la plantilla para la nueva directiva de equipo de Windows](../media/select-template-for-pc-policy.png)
+
+Al implementar aplicaciones, puede usar solo Windows Installer (.exe o .msi).
+
+  ![Selección de la plataforma y la ubicación de los archivos del software cliente de PC](../media/select-platform-of-software-files-for-pc-agent.png)
+
+## <a name="common-tasks-for-windows-pcs"></a>Tareas comunes de equipos con Windows
+
+Puede usar la consola de administración de Intune para realizar otras tareas comunes de administración del equipo en equipos con Windows que tengan instalado el cliente:
+- [Usar directivas para simplificar la administración de PC](use-policies-to-simplify-windows-pc-management.md): describe las directivas de **administración de equipos** y enumera las opciones de Microsoft Intune Center.
+
+- [Ver el inventario de hardware y software para PC de Windows](view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md): explica cómo crear un informe que muestra información acerca de las capacidades de hardware de PC y el software instalado en ellos. También explica cómo actualizar el inventario de PC para asegurarse de que está actualizado.
+- [Retirar un PC de Windows](retire-a-windows-pc-with-microsoft-intune.md): enumera los pasos necesarios para retirar un PC de Windows y describe lo que sucede cuando se retira un PC.
+- [Administrar la vinculación del dispositivo de usuario para PC de Windows](manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md): explica cómo y cuándo debe vincular un usuario a un PC antes de implementar software para el usuario.
+- [Solicitar y proporcionar asistencia remota a los PC de Windows](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md): explica cómo los usuarios de PC de Intune obtienen ayuda de asistencia remota gracias a usted y describe los requisitos previos y el programa de instalación de TeamViewer.
 
 Para obtener más información sobre las tareas anteriores, vea [Tareas comunes de administración de equipos Windows con el cliente de software de Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).
 
@@ -101,8 +104,11 @@ Para obtener más información sobre las tareas anteriores, vea [Tareas comunes 
 Algunas opciones de administración, que pueden usarse para administrar equipos como dispositivos móviles, no pueden usarse en equipos administrados con el software cliente de Intune:
 
 -   Borrado completo (el borrado selectivo está disponible)
-
 -   Acceso condicional
+
+También tenga en cuenta que en la consola de administración de Intune, determinadas secciones, como **Actualizaciones**, **Protección** y **Licencia** solo aparecen si se han inscrito dispositivos mediante el software de cliente de Intune.
+
+  ![Elementos de la consola de administración que aparecen solo para el equipo cliente](../media/admin-console-settings-only-for-pc-agent.png)
 
 ## <a name="help-with-troubleshooting"></a>Ayuda con la solución de problemas
 

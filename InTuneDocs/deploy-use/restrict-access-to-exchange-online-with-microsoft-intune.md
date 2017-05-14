@@ -14,10 +14,11 @@ ms.assetid: 09c82f5d-531c-474d-add6-784c83f96d93
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: cfb3a7cc4e70a062bc511cd4fe80a50b6262864f
-ms.lasthandoff: 04/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 742a989744a11dbc1c9e17a25b70388e06dd5ae7
+ms.contentlocale: es-es
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -40,7 +41,7 @@ Para configurar el acceso condicional, debe:
 
 - Tener una **suscripción de Enterprise Mobility + Security (EMS)** o una **suscripción de Azure Active Directory (Azure AD) Premium** y los usuarios deben tener la licencia de EMS o Azure AD. Para obtener más detalles, vea la [página de precios de Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) o la [página de precios de Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
--  Considerar la posibilidad de configurar el **conector de servicio a servicio de Intune** opcional, que conecta [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] a Exchange Online y facilita la administración de información de dispositivos a través de la consola de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. No necesita usar el conector para usar directivas de cumplimiento o de acceso condicional, pero sí para ejecutar informes que ayuden a evaluar el impacto del acceso condicional.
+-  Considerar la posibilidad de configurar el **conector de servicio a servicio de Intune** opcional, que conecta Intune a Exchange Online y facilita la administración de información de dispositivos a través de la consola de Intune. No necesita usar el conector para usar directivas de cumplimiento o de acceso condicional, pero sí para ejecutar informes que ayuden a evaluar el impacto del acceso condicional.
     -  Obtenga más información sobre el [Intune Service to Service Connector](intune-service-to-service-exchange-connector.md).
 
    > [!NOTE]
@@ -50,21 +51,21 @@ Para configurar el acceso condicional, debe:
 
 Cuando configura directivas de acceso condicional y se aplican a un usuario, antes de que este pueda conectarse a su correo electrónico, el **dispositivo** que usa debe ser:
 
--   Un PC unido a un dominio o estar **inscrito** con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+-   Un PC unido a un dominio o **inscrito** con Intune.
 
--  Debe estar **registrado en Azure Active Directory**. Esto sucede automáticamente cuando el dispositivo se inscribe con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Además, el identificador de Exchange ActiveSync del cliente debe registrarse con Azure Active Directory.
+-  Debe estar **registrado en Azure Active Directory**. Esto sucede automáticamente cuando el dispositivo se inscribe con Intune. Además, el identificador de Exchange ActiveSync del cliente debe registrarse con Azure Active Directory.
 
   El servicio Registro de dispositivos de Azure Active Directory se activa automáticamente para los clientes de Intune y Office 365. Los clientes que ya hayan implementado el servicio Registro de dispositivos de ADFS no podrán ver los dispositivos registrados en la instancia local de Active Directory.
 
--   Debe ser **compatible** con todas las directivas de cumplimiento de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] que se han implementado en el dispositivo, o bien debe estar unido a un dominio local.
+-   Debe ser **compatible** con todas las directivas de cumplimiento de Intune que se han implementado en el dispositivo, o bien debe estar unido a un dominio local.
 
 ### <a name="when-the-device-is-not-compliant"></a>Cuando el dispositivo no es conforme
 
 Si no se cumple con una directiva de acceso condicional, el dispositivo se envía de inmediato a cuarentena y el usuario recibe un correo electrónico además de ver las siguientes notificaciones de cuarentena cuando inicia sesión:
 
-- Si el dispositivo no está inscrito con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] o no está registrado en Azure Active Directory, se muestra un mensaje con instrucciones sobre cómo instalar la aplicación de portal de empresa, inscribir el dispositivo y activar el correo electrónico. Este proceso también asocia el identificador de Exchange ActiveSync del dispositivo con el registro en Azure Active Directory.
+- Si el dispositivo no está inscrito con Intune o no está registrado en Azure Active Directory, se muestra un mensaje con instrucciones sobre cómo instalar la aplicación de portal de empresa, inscribir el dispositivo y activar el correo electrónico. Este proceso también asocia el identificador de Exchange ActiveSync del dispositivo con el registro en Azure Active Directory.
 
--   Si se considera que el dispositivo no es compatible con las reglas de la directiva de cumplimiento, se dirige al usuario al sitio web del portal de empresa de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] o a la aplicación de portal de empresa, donde encontrará información sobre el problema y sobre cómo resolverlo.
+-   Si se considera que el dispositivo no es compatible con las reglas de la directiva de cumplimiento, se dirige al usuario al sitio web del portal de empresa de Intune o a la aplicación de portal de empresa, donde encontrará información sobre el problema y sobre cómo resolverlo.
 
 ### <a name="how-conditional-access-works-with-exchange-online"></a>Cómo funciona el acceso condicional con Exchange Online
 
@@ -114,7 +115,7 @@ Puede configurar el acceso condicional para PC que ejecutan aplicaciones de escr
 
   El equipo debe estar unido a un dominio o cumplir las reglas de la directiva de cumplimiento.
 
-  Para que se considere compatible, el equipo debe estar inscrito en [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] y cumplir las directivas.
+  Para que se considere compatible, el equipo debe estar inscrito en Intune y cumplir las directivas.
 
   Para los PC unidos a un dominio debe configurar el acceso condicional para [registrar automáticamente el dispositivo](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) con Azure Active Directory.
 
@@ -138,11 +139,11 @@ Asegúrese de [crear](create-a-device-compliance-policy-in-microsoft-intune.md) 
 ### <a name="step-2-evaluate-the-effect-of-the-conditional-access-policy"></a>Paso 2: evaluar el impacto de la directiva de acceso condicional
 Puede usar los **Informes de inventario de dispositivos móviles** para identificar los dispositivos a los que se les podría bloquear el acceso a Exchange después de configurar la directiva de acceso condicional.
 
-Para ello, configure una conexión entre [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] y Exchange mediante el [conector de servicio a servicio de Microsoft Intune](intune-service-to-service-exchange-connector.md).
+Para ello, configure una conexión entre Intune y Exchange mediante el [conector de servicio a servicio de Microsoft Intune](intune-service-to-service-exchange-connector.md).
 1.  Vaya a **Informes** > **Informes de inventario de dispositivos móviles**.
 ![Captura de pantalla de la página de informes de inventario de dispositivos móviles](../media/IntuneSA2bMobileDeviceInventoryReport.png)
 
-2.  En los parámetros del informe, seleccione el grupo de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] que quiere evaluar y, si es necesario, las plataformas de dispositivos en las que se aplicará la directiva.
+2.  En los parámetros del informe, seleccione el grupo de Intune que quiere evaluar y, si es necesario, las plataformas de dispositivos en las que se aplicará la directiva.
 3.  Después de que haya seleccionado los criterios que satisfagan las necesidades de la organización, elija **Ver informe**.
 El Visor de informes se abrirá en una nueva ventana.
 ![Captura de pantalla de un ejemplo de informe de inventario de dispositivos móviles](../media/IntuneSA2cViewReport.PNG)
@@ -200,7 +201,7 @@ Solo se evalúan los grupos en los que se aplica la directiva de acceso condicio
     > [!NOTE]
     > Si no ha implementado una directiva de cumplimiento, los dispositivos se consideran compatibles.
     >
-    > Independientemente del estado de cumplimiento, todos los usuarios a los que se aplique la directiva deben inscribir sus dispositivos en [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+    > Independientemente del estado de cumplimiento, todos los usuarios a los que se aplique la directiva deben inscribir sus dispositivos en Intune.
 
 3.  En **Acceso a la aplicación**, en el caso de las aplicaciones que usan la autenticación moderna, tiene dos maneras de elegir en qué plataformas se debe aplicar la directiva. Las plataformas compatibles incluyen Android, iOS, Windows y Windows Phone.
 
@@ -257,7 +258,7 @@ Solo se evalúan los grupos en los que se aplica la directiva de acceso condicio
 
 -   Cuando un usuario crea una cuenta de correo electrónico, el dispositivo se bloquea inmediatamente.
 
--   Si un usuario bloqueado inscribe el dispositivo con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] y corrige los problemas de no conformidad, el acceso al correo electrónico se desbloquea en dos minutos.
+-   Si un usuario bloqueado inscribe el dispositivo con Intune y corrige los problemas de no conformidad, el acceso al correo electrónico se desbloquea en dos minutos.
 
 -   Si el usuario anula la inscripción de su dispositivo, el correo se bloquea después de aproximadamente seis horas.
 
@@ -267,7 +268,7 @@ Para ver algunos **escenarios de ejemplo sobre la configuración de la directiva
 
 #### <a name="to-view-devices-that-are-blocked-from-exchange"></a>Para ver los dispositivos que tienen bloqueado el acceso a Exchange
 
-En el panel de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], elija el icono **Dispositivos bloqueados de Exchange** para que se muestren el número de dispositivos bloqueados y los vínculos para más información.
+En el panel de Intune, elija el icono **Dispositivos bloqueados de Exchange** para que se muestren el número de dispositivos bloqueados y los vínculos para más información.
 ![Captura de pantalla del panel de Intune que muestra el número de dispositivos a los que se ha bloqueado el acceso a Exchange](../media/IntuneSA6BlockedDevices.PNG)
 
 ## <a name="next-steps"></a>Pasos siguientes

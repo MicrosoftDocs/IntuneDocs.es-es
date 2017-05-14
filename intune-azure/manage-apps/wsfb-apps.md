@@ -1,12 +1,12 @@
 ---
-title: "Administración de aplicaciones de la Tienda Windows para empresas"
+title: "Administración de aplicaciones de la Tienda Windows para empresas | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: aprenda cómo sincronizar aplicaciones en Intune desde la Tienda Windows para empresas y luego asignarlas y realizar el seguimiento de ellas."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/24/2017
+ms.date: 05/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 6e410a37f91e0828d5f6b205acb4d340dae86c6d
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f9e8a5deb17ebb77d480213567e5ccf6550e3493
+ms.openlocfilehash: 40b07a011d0d4126945f6cce6304a4cbf5e8b6aa
+ms.contentlocale: es-es
+ms.lasthandoff: 05/03/2017
 
 ---
 
@@ -31,10 +32,10 @@ En la [Tienda Windows para empresas](https://www.microsoft.com/business-store) p
 * Puede sincronizar la lista de aplicaciones que ha adquirido en la tienda con Intune.
 * Las aplicaciones que se sincronizan aparecen en la consola de administración de Intune, y puede asignarlas igual que el resto de las aplicaciones.
 * Puede controlar el número de licencias disponibles y las que se usan en la consola de administración de Intune.
-* Intune bloquea la implementación e instalación de aplicaciones si el número de licencias disponibles es insuficiente.
+* Intune bloquea la asignación e instalación de aplicaciones si el número de licencias disponibles es insuficiente.
 
 ## <a name="before-you-start"></a>Antes de empezar
-Revise la información siguiente antes de iniciar la sincronización y la implementación de aplicaciones de la Tienda Windows para empresas:
+Revise la información siguiente antes de iniciar la sincronización y la asignación de aplicaciones de la Tienda Windows para empresas:
 * Debe configurar Intune como la entidad de administración de dispositivos móviles de su organización.
 * Debe haber registrado una cuenta en la Tienda Windows para empresas.
 * Una vez que haya asociado una cuenta de la Tienda Windows para empresas con Intune, no podrá cambiar a otra cuenta en el futuro.
@@ -50,7 +51,7 @@ Antes de habilitar la sincronización en la consola de Intune, debe configurar l
 3. En la página de Herramientas de administración, elija primero **Agregar una herramienta de administración** y, después, **Microsoft Intune**.
 
 > [!NOTE]
-> Si usa más de una herramienta de administración para implementar las aplicaciones de la Tienda Windows para empresas, anteriormente solo podía asociar una de ellas con la Tienda Windows para empresas. Ahora puede asociar varias herramientas de administración con la tienda, por ejemplo, Intune y Configuration Manager.
+> Si usa más de una herramienta de administración para asignar las aplicaciones de la Tienda Windows para empresas, anteriormente solo podía asociar una de ellas con la Tienda Windows para empresas. Ahora puede asociar varias herramientas de administración con la tienda, por ejemplo, Intune y Configuration Manager.
 
 Ya puede continuar y configurar la sincronización en la consola de Intune.
 
@@ -72,13 +73,13 @@ Ya puede continuar y configurar la sincronización en la consola de Intune.
 
 ## <a name="assign-apps"></a>Asignación de aplicaciones
 
-Las aplicaciones de la tienda se asignan del mismo modo que se implementa cualquier otra aplicación de Intune. Para más información, consulte [Asignación de aplicaciones a grupos con Microsoft Intune](deploy-apps.md). Sin embargo, en lugar de asignar aplicaciones desde la página **Todas las aplicaciones**, asígnelas desde la página **Aplicaciones con licencia**.
+Las aplicaciones de la tienda se asignan del mismo modo que cualquier otra aplicación de Intune. Para más información, consulte [Asignación de aplicaciones a grupos con Microsoft Intune](deploy-apps.md). Sin embargo, en lugar de asignar aplicaciones desde la página **Todas las aplicaciones**, asígnelas desde la página **Aplicaciones con licencia**.
 
-Al asignar una aplicación de la Tienda Windows para empresas, cada usuario que instala la aplicación usa una licencia. Si usa todas las licencias disponibles para una aplicación implementada, no puede implementar más copias. Debe realizar una de las siguientes acciones:
+Al asignar una aplicación de la Tienda Windows para empresas, cada usuario que instala la aplicación usa una licencia. Si usa todas las licencias disponibles para una aplicación asignada, no puede asignar más copias. Debe realizar una de las siguientes acciones:
 * Desinstalar la aplicación de algunos dispositivos.
-* Reducir el ámbito de la implementación actual y restringirla únicamente a los usuarios para los que haya suficientes licencias.
+* Reducir el ámbito de la asignación actual y restringirla únicamente a los usuarios para los que haya suficientes licencias.
 * Comprar más copias de la aplicación en la Tienda Windows para empresas.
 
 > [!Important]
-> Las aplicaciones implementadas solo están disponibles para el usuario que originalmente haya inscrito el dispositivo. Ningún otro usuario puede tener acceso a la aplicación.
+> Las aplicaciones asignadas solo están disponibles para el usuario que originalmente haya inscrito el dispositivo. Ningún otro usuario puede tener acceso a la aplicación.
 

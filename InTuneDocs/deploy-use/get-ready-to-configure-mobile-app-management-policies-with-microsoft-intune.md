@@ -14,10 +14,11 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 71ebb310699cf80310b33be1b665a968ac102bde
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 7901508dc482af55f0ef2296cf35576f09340fb0
+ms.contentlocale: es-es
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -75,10 +76,10 @@ Para ver la lista completa de las aplicaciones de Microsoft compatibles, vaya a 
 
 ## <a name="prerequisites"></a>Requisitos previos
 
--   **Una suscripción a Microsoft Intune**. Los usuarios necesitan licencias de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] para obtener aplicaciones que tienen directivas de protección de aplicaciones.
-Ya tiene una suscripción de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] si usa [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] actualmente para administrar los dispositivos. También tiene una suscripción de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] si ha adquirido una licencia de Enterprise Mobility Suite (EMS). Si está probando [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] para comprobar las funcionalidades de MAM, puede obtener una cuenta de prueba en la [página de Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/).
+-   **Una suscripción a Microsoft Intune**. Los usuarios necesitan licencias de Intune para obtener aplicaciones que tienen directivas de protección de aplicaciones.
+Ya tiene una suscripción de Intune si lo usa actualmente para administrar los dispositivos. También tiene una suscripción de Intune si ha adquirido una licencia de Enterprise Mobility Suite (EMS). Si está probando Intune para comprobar las funcionalidades de MAM, puede obtener una cuenta de prueba en la [página de Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/).
 
-    Para comprobar si tiene una suscripción de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], en el portal de Office, vaya a la página de **facturación**.  Si tiene una suscripción, debe ver [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] como **Activo** en las suscripciones.
+    Para comprobar si tiene una suscripción de Intune, en el portal de Office, vaya a la página de **facturación**.  Si tiene una suscripción, debe ver Intune como **Activo** en las suscripciones.
 
 -   **Una suscripción de Office 365**, que se necesita para lo siguiente:
 

@@ -1,12 +1,12 @@
 ---
-title: "Solución de problemas de perfiles de dispositivo en Microsoft Intune"
+title: "Solución de problemas de perfiles de dispositivo en Microsoft Intune | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: si se queda atascado, use este tema para ayudarle a resolver problemas con perfiles de dispositivo de Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 1ba0dab35e0da6cfe744314a4935221a206fcea7
-ms.openlocfilehash: 9bc5b328fc204a12cf7aa992f62ac00b9ddfd45d
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: c984c908afe97c988b9a1b9f46262c5a14a7d4d8
+ms.contentlocale: es-es
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -30,8 +31,8 @@ ms.lasthandoff: 03/13/2017
 
 La información de este tema puede usarse para ayudarle a solucionar problemas comunes de perfiles de dispositivo de Intune.
 
-## <a name="how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-deployed"></a>¿Cuánto tiempo tardan los dispositivos móviles en obtener directivas o aplicaciones una vez implementados?
-Cuando se implementa una directiva o aplicación, Intune empieza inmediatamente a intentar notificar al dispositivo que debe conectar con el servicio Intune. Este proceso suele tardar menos de cinco minutos.
+## <a name="how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned"></a>¿Cuánto tiempo tardan los dispositivos móviles en obtener directivas o aplicaciones una vez asignadas?
+Cuando se asigna una directiva o aplicación, Intune empieza inmediatamente a intentar notificar al dispositivo que debe conectar con el servicio Intune. Este proceso suele tardar menos de cinco minutos.
 
 Si un dispositivo no se conecta para recibir la directiva una vez enviada la primera notificación, Intune hace tres intentos más.  Si el dispositivo está desconectado (por ejemplo, está desactivado o no está conectado a una red), puede que no reciba las notificaciones. En ese caso, el dispositivo obtendrá la directiva en la próxima conexión programada con el servicio Intune, como se indica a continuación:
 
@@ -50,12 +51,12 @@ Si el dispositivo se acaba de inscribir, la frecuencia de conexión será más f
 Los usuarios también pueden abrir la aplicación del Portal de empresa y sincronizar el dispositivo para buscar la directiva inmediatamente en cualquier momento.
 
 ## <a name="what-actions-cause-intune-to-immediately-send-a-notification-to-a-device"></a>¿Qué acciones provocan que Intune envíe inmediatamente una notificación a un dispositivo?
-Los dispositivos conectan con Intune cuando reciben una notificación que se lo indica o durante la conexión programada periódicamente.  Cuando el destino es un dispositivo o usuario concreto con una acción como un borrado, bloqueo, restablecimiento de código de acceso, implementación de aplicaciones, implementación de perfiles (Wi-Fi, VPN, correo electrónico, etc.) o implementación de directivas, Intune comenzará inmediatamente a intentar notificar al dispositivo que debe conectarse al servicio Intune para recibir estas actualizaciones.
+Los dispositivos conectan con Intune cuando reciben una notificación que se lo indica o durante la conexión programada periódicamente.  Cuando el destino es un dispositivo o usuario concreto con una acción como un borrado, bloqueo, restablecimiento de código de acceso, asignación de aplicaciones, asignación de perfiles (Wi-Fi, VPN, correo electrónico, etc.) o asignación de directivas, Intune comenzará inmediatamente a intentar notificar al dispositivo que debe conectarse al servicio Intune para recibir estas actualizaciones.
 
 Otros cambios, como la revisión de la información de contacto del Portal de empresa, no provocan una notificación inmediata a los dispositivos.
 
-## <a name="if-multiple-policies-are-deployed-to-the-same-user-or-device-how-do-i-know-which-settings-will-get-applied"></a>Si varias directivas se implementan en el mismo usuario o dispositivo, ¿cómo puedo saber qué configuración se aplicará?
-Cuando se aplican dos o más directivas al mismo usuario o dispositivo, la evaluación de la configuración aplicada se hace a nivel de parámetro individual:
+## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-will-get-applied"></a>Si varias directivas se asignan al mismo usuario o dispositivo, ¿cómo puedo saber qué configuración se aplicará?
+Cuando se asignan dos o más directivas al mismo usuario o dispositivo, la evaluación a la que se aplica la configuración se realiza a nivel de parámetro individual:
 
 -   La configuración de directivas de cumplimiento siempre tiene prioridad respecto a la configuración de directivas de configuración.
 
@@ -63,25 +64,25 @@ Cuando se aplican dos o más directivas al mismo usuario o dispositivo, la evalu
 
 -   Si una opción de la directiva de configuración entra en conflicto con una opción de una directiva de configuración diferente, este conflicto se mostrará en la consola de Intune. Debe resolver manualmente dichos conflictos.
 
-## <a name="what-happens-when-mobile-application-management-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>¿Qué sucede cuando las directivas de administración de aplicaciones móviles entran en conflicto entre sí? ¿Cuál se aplicará a la aplicación?
-Los valores en conflicto son la configuración más restrictiva disponible en una directiva de MAM, excepto para los campos de entrada de números (como intentos de PIN antes del restablecimiento).  Los campos de entrada de números se definirán con los mismos valores que si crease una directiva de MAM en la consola con la opción de configuración recomendada.
+## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>¿Qué sucede cuando las directivas de protección de aplicaciones entran en conflicto entre sí? ¿Cuál se aplicará a la aplicación?
+Los valores en conflicto son la configuración más restrictiva disponible en una directiva de protección de aplicaciones, excepto para los campos de entrada de números (como intentos de PIN antes del restablecimiento).  Los campos de entrada de números se definirán con los mismos valores que si crease una directiva de MAM en la consola con la opción de configuración recomendada.
 
-Se producen conflictos cuando dos configuraciones de directiva son iguales.  Por ejemplo, si configura dos directivas MAM que son idénticas, salvo por la configuración de copiar y pegar.  En este escenario, la configuración de copiar y pegar se definirá con el valor más restrictivo, pero el resto de parámetros se aplicará según la configuración.
+Se producen conflictos cuando dos configuraciones de perfil son iguales.  Por ejemplo, si configura dos directivas MAM que son idénticas, salvo por la configuración de copiar y pegar.  En este escenario, la configuración de copiar y pegar se definirá con el valor más restrictivo, pero el resto de parámetros se aplicará según la configuración.
 
-Si una directiva se implementa en la aplicación y se aplica y, a continuación, se implementa una segunda, la primera tendrá precedencia y se aplicará, mientras que la segunda presentará un conflicto. Si se aplican al mismo tiempo, lo que significa que no hay ninguna directiva anterior, ambas estarán en conflicto. Cualquier configuración en conflicto se establecerá en los valores más restrictivos.
+Si un perfil se asigna a la aplicación y se aplica y, a continuación, se asigna un segundo, el primero tendrá precedencia y se aplicará, mientras que el segundo presentará un conflicto. Si se aplican al mismo tiempo, lo que significa que no hay ningún perfil anterior, ambos estarán en conflicto. Cualquier configuración en conflicto se establecerá en los valores más restrictivos.
 
 ## <a name="what-happens-when-ios-custom-policies-conflict"></a>¿Qué sucede cuando hay un conflicto de directivas personalizadas de iOS?
-Intune no evalúa la carga de archivos de configuración de Apple ni directivas personalizadas de identificador uniforme de recursos de Open Mobile Alliance (OMA-URI). Sencillamente, se usa como mecanismo de entrega.
+Intune no evalúa la carga de archivos de configuración de Apple ni perfiles personalizados de identificador uniforme de recursos de Open Mobile Alliance (OMA-URI). Sencillamente, se usa como mecanismo de entrega.
 
-Al implementar una directiva personalizada, asegúrese de que los valores configurados no entran en conflicto con las directivas de cumplimiento, configuración o de otro tipo. En el caso de una directiva personalizada con conflictos de parámetros, el orden en que se aplican los conflictos es aleatorio.
+Al asignar un perfil personalizado, asegúrese de que los valores configurados no entran en conflicto con las directivas de cumplimiento, de configuración o con directivas personalizadas de otro tipo. En el caso de un perfil personalizado con conflictos de parámetros, el orden en que se aplican los conflictos es aleatorio.
 
-## <a name="what-happens-when-a-policy-is-deleted-or-no-longer-applicable"></a>¿Qué ocurre cuando se elimina una directiva o deja de ser aplicable?
-Al eliminar una directiva o quitar un dispositivo de un grupo al que se le aplica una directiva, se quitará la directiva y la configuración del dispositivo según las siguientes listas.
+## <a name="what-happens-when-a-profile-is-deleted-or-no-longer-applicable"></a>¿Qué ocurre cuando se elimina un perfil o deja de ser aplicable?
+Al eliminar un perfil o quitar un dispositivo de un grupo al que se le asigna un perfil, se quitará el perfil y la configuración del dispositivo según las siguientes listas.
 
 ### <a name="enrolled-devices"></a>Dispositivos inscritos
 
 - Perfiles de correo electrónico, certificado, VPN y Wi-Fi: estos perfiles se quitan de todos los dispositivos inscritos admitidos.
-- Todos los demás tipos de directivas:
+- Todos los demás tipos de perfiles:
     - **Dispositivos Windows y Android**: la configuración no se quita del dispositivo.
     - **Dispositivos Windows Phone 8.1**: se quitan las opciones siguientes:
         - Requerir una contraseña para desbloquear dispositivos móviles
@@ -115,44 +116,13 @@ Al eliminar una directiva o quitar un dispositivo de un grupo al que se le aplic
         - Permitir itinerancia de datos
         - Permitir la sincronización automática en itinerancia
 
-### <a name="windows-pcs-running-the-intune-client-software"></a>Equipos Windows que ejecutan el software cliente de Intune
+## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>He cambiado un perfil de restricción de dispositivos, pero los cambios no han surtido efecto
+Una vez establecidas las directivas de seguridad a través de MSM o EAS, los dispositivos Windows Phone no permiten que se reduzca el nivel de seguridad de las mismas. Por ejemplo, si establece una **contraseña con un número mínimo de 8 caracteres** no podrá reducirla a 4. Esto se debe a que ya se ha aplicado el perfil más restrictivo en el dispositivo.
 
-- **Configuración de Endpoint Protection**: se restablecen los valores recomendados de la configuración. La única excepción es la opción de configuración **Unirse a Microsoft Active Protection Service**, cuyo valor predeterminado es **No**. Para obtener más información, consulte [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune) (Ayudar a proteger los equipos de Windows con Endpoint Protection para Microsoft Intune).
-- **Configuración de actualizaciones de software**: se restablece la configuración al estado predeterminado para el sistema operativo. Para obtener más información, consulte [Keep Windows PCs up to date with software updates in Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune) (Mantener los equipos de Windows al día con las actualizaciones de software de Microsoft Intune).
-- **Configuración de Microsoft Intune Center**: cualquier información de contacto de soporte configurada por la directiva se elimina de los equipos.
-- **Configuración del Firewall de Windows**: se restablece la configuración predeterminada para el sistema operativo del equipo. Para obtener más información, consulte [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune) (Ayudar a proteger los equipos de Windows con Endpoint Protection para Microsoft Intune).
-
-
-## <a name="how-can-i-refresh-the-policies-on-a-device-to-ensure-that-they-are-current-applies-to-windows-pcs-running-the-intune-client-software-only"></a>¿Cómo puedo actualizar las directivas en un dispositivo para asegurarme de que están actualizadas (solo se aplica a los equipos con Windows que ejecutan el software cliente de Intune)?
-
-1.  En un grupo de dispositivos, seleccione los dispositivos en los que quiere actualizar las directivas y luego elija **Tareas remotas** &gt; **Actualizar directivas**.
-2.  Elija **Tareas remotas** en la esquina inferior derecha de la ventana de la consola de administración de Intune para comprobar el estado de la tarea.
-
-
-
-### <a name="how-do-i-know-that-my-profile-was-assigned-to-a-device"></a>¿Cómo sé que mi perfil se asignó a un dispositivo?
-
-En la consola de administración de Intune, cada dispositivo tiene una pestaña de directivas en **Propiedades del dispositivo**. Cada directiva tiene un **Valor previsto** y un **Estado**. El valor previsto es lo que tenía pensado lograr al asignar la directiva. El estado es lo que se aplica realmente cuando todas las directivas aplicables al dispositivo, así como las restricciones y los requisitos del hardware y el sistema operativo, se consideran conjuntamente. Los estados posibles son:
-
--   **Cumple**: el dispositivo ha recibido la directiva e indica al servicio que se ajusta a la configuración.
-
--   **No es aplicable**: la configuración de directiva no es aplicable. Por ejemplo, la configuración de correo electrónico para dispositivos iOS no se aplicaría a un dispositivo Android.
-
--   **Pendiente**: la directiva se ha enviado al dispositivo, pero no se ha informado de su estado al servicio. Por ejemplo, el cifrado en Android requiere que el usuario final lo habilite y, por tanto, la directiva puede estar pendiente.
-
-
-> [!NOTE]
-> Recuerde que cuando dos directivas con distintos niveles de restricción se aplican al mismo dispositivo o usuario, la directiva más restrictiva se aplica en la práctica.
-
-
-## <a name="i-changed-a-device-restriction-policy-but-the-changes-havent-taken-effect"></a>He cambiado una directiva de restricción de dispositivos, pero los cambios no han surtido efecto
-Una vez establecidas las directivas de seguridad a través de MSM o EAS, los dispositivos Windows Phone no permiten que se reduzca el nivel de seguridad de las mismas. Por ejemplo, si establece una **contraseña con un número mínimo de 8 caracteres** no podrá reducirla a 4. Esto es debido a que ya se ha aplicado la directiva más restrictiva en el dispositivo.
-
-Dependiendo de la plataforma del dispositivo, si desea cambiar la directiva a un valor de menos seguro debe restablecer las directivas de seguridad.
+Dependiendo de la plataforma del dispositivo, si desea cambiar el perfil a un valor menos seguro, debe restablecer las directivas de seguridad.
 Por ejemplo, en el escritorio de Windows, deslice el dedo desde la derecha para abrir la barra de **Botones de acceso** y seleccione **Configuración** &gt; **Panel de Control**.  Seleccione el applet **Cuentas de usuario** .
 En el menú de navegación izquierdo, hay un vínculo denominado **Restablecer las directivas de seguridad** en la parte inferior. Selecciónelo y luego elija el botón **Restablecer directivas**.
-En otros dispositivos MDM como Android, Windows Phone 8.1 y posteriores e iOS, es posible que tenga que eliminar la inscripción y volver a hacerla para que pueda aplicar una directiva menos restrictiva.
-
+En otros dispositivos MDM como Android, Windows Phone 8.1 y posteriores y iOS, es posible que tenga que eliminar la inscripción y volver a hacerla para que pueda aplicar un perfil menos restrictivo.
 
 <!--- ## Status codes for MDM managed Windows devices
 
@@ -499,4 +469,4 @@ En otros dispositivos MDM como Android, Windows Phone 8.1 y posteriores e iOS, e
 --->
 
 ### <a name="next-steps"></a>Pasos siguientes
-Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el servicio de soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune](/intune/troubleshoot/how-to-get-support-for-microsoft-intune) (Cómo obtener soporte técnico de Microsoft Intune).
+Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el servicio de soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune](/intune-azure/introduction/how-to-get-support-for-microsoft-intune) (Cómo obtener soporte técnico de Microsoft Intune).

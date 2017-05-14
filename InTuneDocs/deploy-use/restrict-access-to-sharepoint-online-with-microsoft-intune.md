@@ -14,10 +14,11 @@ ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: ab6d9b6b296fb4e1fb0aaa9496fede28976728dc
-ms.openlocfilehash: 9e4fca9e29c8f0c2ec3ef088c3f91ad15ac11804
-ms.lasthandoff: 04/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 4a8b3f5a3ab5df9f31741e3331d2b6bbfd2c0c9f
+ms.contentlocale: es-es
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -26,7 +27,7 @@ ms.lasthandoff: 04/14/2017
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Use el acceso condicional de [!INCLUDE[wit_firstref](../includes/wit_firstref_md.md)] para controlar el acceso a los archivos que se encuentran en SharePoint Online.
+Use el acceso condicional de Microsoft Intune para controlar el acceso a los archivos que se encuentran en SharePoint Online.
 El acceso condicional tiene dos componentes:
 - Una directiva de cumplimiento del dispositivo con la que debe cumplir el dispositivo para que se considere conforme.
 - Una directiva de acceso condicional, donde se especifican las condiciones que debe cumplir el dispositivo para tener acceso al servicio.
@@ -45,20 +46,20 @@ Cuando un usuario intenta conectarse a un archivo mediante una aplicación compa
 
 
   Para conectarse a los archivos requeridos, un dispositivo debe:
--   Estar **inscrito** con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] o ser un equipo unido a un dominio.
+-   Estar **inscrito** con Intune o ser un equipo unido a un dominio.
 
--   Estar **registrado** en Azure Active Directory, lo que se lleva a cabo automáticamente si el dispositivo está inscrito con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+-   Estar **registrado** en Azure Active Directory, lo que se lleva a cabo automáticamente si el dispositivo está inscrito con Intune.
 
 
--   **Cumplir** con las directivas de cumplimiento de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] implementadas.
+-   **Cumplir** todas las directivas de cumplimiento de Intune implementadas.
 
 El estado del dispositivo se almacena en Azure Active Directory, que concede o bloquea el acceso a los archivos según las condiciones que especifica.
 
 Si no se cumple una condición, el usuario ve uno de los mensajes siguientes cuando inicie sesión:
 
--   Si el dispositivo no está inscrito con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] o si no está registrado en Azure Active Directory, se muestra un mensaje con instrucciones sobre cómo instalar la aplicación Portal de empresa e inscribirse.
+-   Si el dispositivo no está inscrito con Intune o si no está registrado en Azure Active Directory, se muestra un mensaje con instrucciones sobre cómo instalar la aplicación del Portal de empresa e inscribirse.
 
--   Si el dispositivo no es conforme, se muestra un mensaje que dirige al usuario al sitio web del Portal de empresa de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], donde encontrará información sobre el problema y sobre cómo resolverlo.
+-   Si el dispositivo no es conforme, se muestra un mensaje que dirige al usuario al sitio web del Portal de empresa de Intune, donde encontrará información sobre el problema y sobre cómo resolverlo.
 
 **El acceso condicional no se aplica al uso compartido externo**. Para información sobre cómo impedir el uso compartido externo en el inquilino o una colección de sitios, consulte [Administrar el uso compartido externo en su entorno de SharePoint Online](https://support.office.com/article/Manage-external-sharing-for-your-SharePoint-Online-environment-C8A462EB-0723-4B0B-8D0A-70FEAFE4BE85).
 
@@ -115,7 +116,7 @@ Si un usuario pertenece a ambos grupos, estará exento de la directiva.
 Si todavía no lo ha hecho, cree una directiva de cumplimiento e impleméntela para todos los usuarios a los que se dirige la directiva de SharePoint Online.
 
 > [!NOTE]
-> Mientras se implementan las directivas de cumplimiento en los grupos de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], las directivas de acceso condicional se aplican a los grupos de seguridad de Azure Active Directory.
+> Mientras se implementan las directivas de cumplimiento en los grupos de Intune, las directivas de acceso condicional se aplican a los grupos de seguridad de Azure Active Directory.
 
 Para más información sobre cómo configurar la directiva de cumplimiento, consulte [Crear una directiva de cumplimiento](create-a-device-compliance-policy-in-microsoft-intune.md).
 
@@ -152,11 +153,11 @@ A continuación, configure la directiva para requerir que solo los dispositivos 
 
          La directiva de acceso condicional se aplica a cualquier aplicación cliente que use la autenticación moderna en las plataformas que especifique.
 
-     En el caso de los equipos de Windows, un equipo debe estar unido a un dominio o inscrito con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] y ser conforme. Puede establecer los requisitos siguientes:
+     Para los equipos con Windows, el equipo debe estar unido a un dominio o inscrito con Intune y ser conforme. Puede establecer los requisitos siguientes:
 
-     -   **Los dispositivos deben estar unidos a un dominio o ser conformes.** Elija esta opción para requerir que el equipo esté unido al dominio o que cumpla las directivas establecidas en [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Si un equipo no cumple alguno de estos requisitos, se le solicita al usuario que inscriba el dispositivo en [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+     -   **Los dispositivos deben estar unidos a un dominio o ser conformes.** Elija esta opción para requerir que el equipo esté unido al dominio o que cumpla las directivas establecidas en Intune. Si un equipo no cumple alguno de estos requisitos, se le solicita al usuario que inscriba el dispositivo en Intune.
 
-     -   **Los dispositivos deben ser conformes.** Elija esta opción para requerir que los equipos estén inscritos en [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] y sean conformes. Si el equipo no está inscrito, se muestra un mensaje con instrucciones sobre cómo inscribirse.
+     -   **Los dispositivos deben ser conformes.** Elija esta opción para requerir que los equipos estén inscritos en Intune y sean conformes. Si el equipo no está inscrito, se muestra un mensaje con instrucciones sobre cómo inscribirse.
 
 4.   En **Acceso al explorador** en SharePoint Online y OneDrive para la Empresa, puede permitir el acceso a Exchange Online solo a través de los exploradores admitidos: Safari (iOS) y Chrome (Android). El acceso desde otros exploradores está bloqueado. Las mismas restricciones de plataforma que seleccionó para el acceso a la aplicación OneDrive también se aplican aquí.
 
