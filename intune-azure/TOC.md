@@ -100,8 +100,8 @@
 ### [Crear y asignar directivas de protección de aplicaciones](manage-apps/app-protection-policies.md)
 ### [Preparativos para las directivas de protección de aplicaciones de trabajo en curso](manage-apps/get-ready-to-configure-app-protection-policies-for-windows-10.md)
 ### [Creación y asignación de directivas de protección de aplicaciones de trabajo en curso](manage-apps/create-windows-information-protection-policy-with-intune.md)
-#### [Configuración de Android](manage-apps/android-app-protection-policy-settings.md)
-#### [Configuración de iOS](manage-apps/ios-app-protection-policy-settings.md)
+### [Configuración de Android](manage-apps/android-app-protection-policy-settings.md)
+### [Configuración de iOS](manage-apps/ios-app-protection-policy-settings.md)
 ### [Validar las directivas de protección de aplicaciones](manage-apps/validate-app-protection-policies.md)
 ### [Supervisar el estado de usuario de protección de aplicaciones](manage-apps/monitor-app-protection-policies-with-microsoft-intune.md)
 ### [Administrar la transferencia de datos entre aplicaciones iOS](manage-apps/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
@@ -190,7 +190,7 @@
 ### [Crear una directiva de cumplimiento de Android for Work](set-device-compliance/create-a-compliance-policy-for-android-for-work.md)
 ### [Crear una directiva de cumplimiento de iOS](set-device-compliance/create-a-compliance-policy-for-ios.md)
 ### [Crear una directiva de cumplimiento de Windows](set-device-compliance/create-a-compliance-policy-for-windows.md)
-### [Create Actions for noncompliance](set-device-compliance/actions-for-noncompliance.md) (Creación de acciones para la no conformidad)
+<!---### [Create Actions for noncompliance](set-device-compliance/actions-for-noncompliance.md)--->
 ### [Supervisar el cumplimiento del dispositivo](set-device-compliance/monitor-intune-device-compliance-policies.md)
 <!--- ### [Monitor device compliance](set-device-compliance/monitor-device-compliance.md)--->
 
