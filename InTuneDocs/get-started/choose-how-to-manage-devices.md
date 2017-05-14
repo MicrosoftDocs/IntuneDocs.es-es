@@ -14,10 +14,11 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e13a9c426e07ebb2443bd403d1a5c7274afd387e
-ms.openlocfilehash: dea0700e2901bfed566a87d7c599569219de85a2
-ms.lasthandoff: 12/20/2016
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 271459e3faf886a45bcd673d2450f36a4a33a5db
+ms.openlocfilehash: 0ec828e881182dc0e0fb3bae671f0aec58f52aad
+ms.contentlocale: es-es
+ms.lasthandoff: 04/28/2017
 
 
 ---
@@ -47,7 +48,7 @@ Inscriba equipos con Windows para obtener la máxima funcionalidad, aunque el cl
 - Endpoint Protection y Firewall de Windows
 - Asistencia remota a los usuarios con el software de TeamViewer
 
-Para obtener una lista detallada de las capacidades de administración que obtendrá con cada método, consulte [Funcionalidades de administración de dispositivos inscritos en Microsoft Intune](mobile-device-management-capabilities-in-microsoft-intune.md) y [Capacidades de administración de PC de Windows cuando se utiliza el cliente de software de Intune](windows-pc-management-capabilities-in-microsoft-intune.md).
+Para obtener una lista detallada de las funciones de administración que obtendrá con cada método, vea [Funcionalidades de administración de dispositivos móviles](mobile-device-management-capabilities-in-microsoft-intune.md) y [Administración de PC con Windows con el software de cliente de PC de Intune](/intune/deploy-use/manage-windows-pcs-with-microsoft-intune).
 Para obtener información sobre los dispositivos y los equipos compatibles con Intune, consulte [Equipos y dispositivos móviles compatibles](https://docs.microsoft.com/intune/get-started/what-to-know-before-you-start-microsoft-intune#intune-supported-devices).
 
 ## <a name="next-steps"></a>Pasos siguientes

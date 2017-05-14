@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/02/2017
+ms.date: 05/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,10 +14,11 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 0154e3bfeac0457de57257045e3e7ce833325bce
-ms.openlocfilehash: a462bcfa107bf1a37ea4e84bc3d88d0dd81f9fc8
-ms.lasthandoff: 02/03/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 2801d6a3cc672fbf91f89d2586c36b6bd3f18490
+ms.contentlocale: es-es
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -163,7 +164,7 @@ Puede configurar la VPN a petición para dispositivos iOS 8.0 y versiones poster
 1. En la página de configuración de directiva, busque **Reglas a petición para esta conexión VPN**. Las columnas se etiquetan como **Coincidencia**, la condición que comprueba las reglas y **Acción**, la acción que la directiva desencadenará cuando la condición coincida.
 2. Elija **Agregar** para crear una regla. Hay dos tipos de coincidencias que se pueden configurar en la regla. Solo se puede configurar uno de estos tipos por regla.
   - **SSID**, que se hacen referencia a las redes inalámbricas.
-  - **Dominios de búsqueda de DNS**, que son...  Puede utilizar nombres de dominio completo, como *team.corp.contoso.com* o usar dominios como *contoso.com*, que es equivalente a usar **.contoso.com*.
+  - **Dominios de búsqueda DNS**. Puede utilizar nombres de dominio completo, como *team.corp.contoso.com* o usar dominios como *contoso.com*, que es equivalente a usar * *.contoso.com*.
 3. Opcional: proporcione un sondeo de cadena de dirección URL, que es una dirección URL que usa la regla de prueba. Si el dispositivo en el que está instalado este perfil puede acceder a esta dirección URL sin redirección, se establecerá la VPN y el dispositivo se conectará a la dirección URL de destino. El usuario no verá el sitio de sondeo de cadena de dirección URL. Un ejemplo de un sondeo de cadena de dirección URL es la dirección de un servidor web de auditoría que comprueba el cumplimiento del dispositivo antes de conectarse a la VPN. Otra posibilidad es que la dirección URL comprueba la capacidad de la VPN para conectarse a un sitio, antes de conectar el dispositivo a la dirección URL de destino a través de VPN.
 4. Elija una de las acciones siguientes:
   - **Connect**

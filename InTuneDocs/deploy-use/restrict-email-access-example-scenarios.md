@@ -14,9 +14,11 @@ ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 9f05e516723976dcf6862475dbb78f9dce2913be
-ms.openlocfilehash: c02961aa984f8041394639a872bf4cfcdfc0be91
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: 7d0b9cee72e8810b4f39bd81bd8f49d0818618c4
+ms.contentlocale: es-es
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -28,7 +30,7 @@ ms.openlocfilehash: c02961aa984f8041394639a872bf4cfcdfc0be91
 ## <a name="scenario-1-block-users-from-using-noncompliant-devices-to-access-exchange-online"></a>Escenario 1: Impida que los usuarios usen dispositivos no conformes para tener acceso a Exchange Online
 ### <a name="scenario-requirements"></a>Requisitos del escenario
 - Todos los usuarios del grupo de seguridad **Contabilidad** de Azure Active Directory deben tener bloqueado el acceso a Exchange Online si su dispositivo no cumple con una directiva de cumplimiento implementada.
-- Si existe algún usuario en este grupo cuyos dispositivos no son compatibles con [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)], se deberá bloquear su acceso a Exchange Online en ese dispositivo.
+- Si existe algún usuario en este grupo cuyos dispositivos no son compatibles con Intune, se deberá bloquear su acceso a Exchange Online en ese dispositivo.
 - Los usuarios que se encuentren en el grupo de seguridad **Finanzas** de Azure Active Directory deben estar exentos de la aplicación de la directiva, aunque también estén incluidos en el grupo de seguridad **Contabilidad**.
 
 Para ello, configure una directiva de acceso condicional para Exchange Online con las siguientes opciones:
@@ -68,7 +70,7 @@ Puede usar el flujo siguiente para decidir los dispositivos que pueden tener acc
 ## <a name="scenario-3-no-android-devices-can-access-exchange-on-premises"></a>Escenario 3: Ningún dispositivo Android puede tener acceso a Exchange local
 ### <a name="scenario-requirements"></a>Requisitos del escenario
 - Debe bloquearse el acceso a Exchange de todos los dispositivos Android.
-- Los demás dispositivos compatibles pueden tener acceso a Exchange, siempre que estén administrados por [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)].
+- Los demás dispositivos compatibles pueden tener acceso a Exchange, siempre que estén administrados por Intune.
 
 Para ello, configure una directiva de acceso condicional para Exchange local con las siguientes opciones:
 
@@ -82,9 +84,4 @@ Para ello, configure una directiva de acceso condicional para Exchange local con
 Puede usar el flujo siguiente para decidir los dispositivos que pueden tener acceso a Exchange:
 
 ![Flujo de acceso de dispositivos](./media/ConditionalAccess8-4.png)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

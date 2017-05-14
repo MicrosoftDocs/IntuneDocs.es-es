@@ -14,10 +14,11 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 8b2bd3ecba0b597bc742ea08872ffe8fc58155cf
-ms.openlocfilehash: 31b7ff2b9644f47107199f0f1d237847169c3143
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: a7d38caac1cfd035c66d02579766d60d4394dd5e
+ms.contentlocale: es-es
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -157,7 +158,7 @@ A partir de la versión 1703 de Intune, tiene la opción de agregar de forma gen
 
     Ahora ha creado una directiva y la ha implementado en los usuarios.
 
-Solo se ven afectados por la directiva los usuarios que tengan asignadas licencias de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)]. Los usuarios pertenecientes al grupo de seguridad seleccionado que no tengan asignada una licencia de [!INCLUDE[wit_nextref](../includes/wit_nextref_md.md)] no se verán afectados.
+La directiva solo afecta a los usuarios que tengan asignadas licencias de Intune. Los usuarios pertenecientes al grupo de seguridad seleccionado que no tengan asignada una licencia de Intune no se verán afectados.
 
 >[!IMPORTANT]
 > Si usa Intune con Administrador de configuración para administrar los dispositivos iOS y Android, la directiva solo se aplica a los usuarios directamente en el grupo seleccionado. No se ven afectados los miembros de los grupos secundarios anidados en el grupo seleccionado.

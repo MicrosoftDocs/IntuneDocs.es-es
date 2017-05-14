@@ -1,12 +1,12 @@
 ---
-title: "¿Qué es la administración de aplicaciones?"
+title: "Qué es la administración de aplicaciones | Microsoft Docs"
 titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: use este tema para conocer los aspectos básicos sobre la administración de aplicaciones con Microsoft Intune"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/04/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,10 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-translationtype: Human Translation
-ms.sourcegitcommit: 153cce3809e24303b8f88a833e2fc7bdd9428a4a
-ms.openlocfilehash: 33def827fc7417930338e56c650d01df4dad85fb
-ms.lasthandoff: 02/18/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: a9748a0ad6b9bbe10e36ba133ba74edb6aa6e09a
+ms.openlocfilehash: 34970d6adcfe41a6de9636a5605a17f9f5ef2d82
+ms.contentlocale: es-es
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -46,6 +47,7 @@ Intune ofrece diversas funcionalidades para ayudarle a conseguir las aplicacione
 |Agregar y asignar aplicaciones a dispositivos y usuarios|Sí|Sí|Sí|Sí|
 |Asignar aplicaciones a dispositivos no inscritos en Intune|Sí|Sí|No|No|
 |Usar directivas de configuración de aplicaciones para controlar el comportamiento de inicio de las aplicaciones|No|Sí|No|No|
+|Usar directivas de aprovisionamiento de aplicaciones móviles para renovar aplicaciones caducadas|No|Sí|No|No|
 |Proteger los datos de empresa de las aplicaciones con directivas de protección de aplicaciones|Sí|Sí|No|No<sup>1</sup>|
 |Quitar solo los datos corporativos de una aplicación instalada (eliminación selectiva de aplicaciones)|Sí|Sí|Sí|Sí|
 |Supervisar las asignaciones de aplicaciones|Sí|Sí|Sí|Sí|
@@ -68,7 +70,7 @@ Encontrará la mayoría de las tareas relacionadas con las aplicaciones en la ca
 
 1. Inicie sesión en el portal de Azure.
 2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
-3. En la hoja **Intune**, elija **Administrar aplicaciones**.
+3. En la hoja **Intune**, elija **Mobile apps**.
 
     ![La carga de trabajo Mobile Apps](./media/apps-workload.png)
 
@@ -77,19 +79,21 @@ Encontrará la mayoría de las tareas relacionadas con las aplicaciones en la ca
     - [Agregar aplicaciones](add-apps.md)
     - [Asignar aplicaciones](deploy-apps.md)
     - [Supervisión de aplicaciones](monitor-apps.md)
-- **Aplicaciones con licencia**: vea, implemente y supervise las aplicaciones compradas por volumen de las tiendas de aplicaciones.
-    - [Aplicaciones adquiridas por volumen de la Tienda Windows para empresas](wsfb-apps.md)
 - **Directivas de configuración de aplicaciones**: estas directivas le permiten suministrar valores de configuración que podrían ser necesarios cuando un usuario ejecuta una aplicación. Si desea obtener información detallada, consulte:
     - [Directivas de configuración de aplicaciones](app-configuration-policies.md)
 - **Directivas de protección de aplicaciones**: estas directivas permiten asociar valores de configuración con una aplicación con el fin de ayudar a proteger los datos de empresa que esta usa. Por ejemplo, podría restringir las funcionalidades de una aplicación para comunicarse con otras aplicaciones o pedir que el usuario escribiera un PIN para acceder a una aplicación de la empresa.
     - [Directivas de protección de aplicaciones](app-protection-policies.md)
 - **Borrado selectivo de aplicaciones**: quita solamente los datos corporativos del dispositivo de usuario seleccionado.
     - [Borrado selectivo de aplicaciones](app-selective-wipe.md)
+- **Perfiles de aprovisionamiento de iOS**: las aplicaciones iOS incluyen un perfil y un código de aprovisionamiento que está firmado por un certificado. Cuando el certificado expira, ya no se puede ejecutar la aplicación. Intune proporciona las herramientas para asignar proactivamente una nueva directiva de perfil de aprovisionamiento a dispositivos que tengan aplicaciones cuya expiración esté próxima.
+    - [Perfiles de aprovisionamiento de aplicaciones iOS](ios-app-provisioning-profile.md)
 
 ### <a name="monitor"></a>Supervisión
+- **Aplicaciones con licencia**: vea, asigne y supervise las aplicaciones compradas por volumen de las tiendas de aplicaciones.
+    - [Aplicaciones adquiridas por volumen de la Tienda Windows para empresas](wsfb-apps.md)
 - **Discovered Apps** (Aplicaciones detectadas): muestra todas las aplicaciones que asignó Intune y que están instaladas en un dispositivo.
 - **App Install Status** (Estado de instalación de aplicación): muestra el estado de una asignación de aplicación que ha creado.
-- **App Protection User Status** (Estado de usuario de protección de aplicación). muestra el estado de una directiva de protección de aplicaciones de un usuario seleccionado.
+- **App protection status** (Estado de protección de aplicación): muestra el estado de una directiva de protección de aplicaciones de un usuario seleccionado.
 
 Para más información, consulte [Supervisión de aplicaciones](monitor-apps.md).
 
@@ -98,6 +102,6 @@ Para más información, consulte [Supervisión de aplicaciones](monitor-apps.md)
     - [iOS volume-purchased apps](ios-vpp-apps.md) --->
 - **Tienda Windows para empresas**: configure la integración con la Tienda Windows para empresas. Luego, puede sincronizar las aplicaciones adquiridas en Intune, asignarlas y realizar el seguimiento de su uso de licencias. 
     - [Aplicaciones adquiridas por volumen de la Tienda Windows para empresas](wsfb-apps.md)
-- **Company Portal Branding** (Personalización de marca del Portal de empresa): personalice el Portal de empresa para adaptarlo a su empresa. 
+- **Company Portal branding** (Personalización de marca del Portal de empresa): personalice el Portal de empresa para adaptarlo a su empresa. 
     - [Configuración del Portal de empresa](company-portal-app.md)
 

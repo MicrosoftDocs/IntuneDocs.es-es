@@ -2,10 +2,10 @@
 title: "Características de accesibilidad | Microsoft Docs"
 description: "Obtenga información sobre las características de Intune que la hacen más accesible para personas con discapacidades."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 12/30/2016
+ms.date: 05/04/2017
 ms.topic: reference
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,17 @@ ms.assetid: 6d7ed613-be97-4973-9532-8cb5bd434a1b
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 9e3d509cf404c89b27f92ad54c900e927ce3878b
-ms.openlocfilehash: c1b585da0b2875f393a0cbe929f11d3a04875905
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 33febef8787887401960592d95356347f6917681
+ms.openlocfilehash: b54dffd23db966d9ed15ec23fe25a7e58a187d0b
+ms.contentlocale: es-es
+ms.lasthandoff: 05/04/2017
 
 
 ---
 
 # <a name="accessibility-features-of-microsoft-intune"></a>Características de accesibilidad de Microsoft Intune
-Además de las características de accesibilidad y herramientas de Microsoft Windows, las siguientes funciones hacen que [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] sea más accesible para personas con discapacidades:
+Además de las características de accesibilidad y herramientas de Microsoft Windows, las siguientes características hacen que Microsoft Intune sea más accesible para personas con discapacidades:
 
 -   Uso de los métodos abreviados de teclado
 
@@ -45,10 +47,5 @@ Además de las características de accesibilidad y herramientas de Microsoft Win
 |Pasar al siguiente grupo de aplicaciones|Flecha arriba|
 |Mostrar las acciones disponibles para un dispositivo seleccionado|Flecha hacia la derecha|
 > [!NOTE]
-> Es posible navegar por los portales [!INCLUDE[wit_firstref](./includes/wit_firstref_md.md)] mediante los métodos abreviados de teclado estándar de Internet Explorer.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
+> Es posible navegar por los portales de Microsoft Intune mediante los métodos abreviados de teclado estándar de Internet Explorer.
 
