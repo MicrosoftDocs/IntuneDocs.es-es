@@ -86,6 +86,7 @@
 #### [Aplicaciones de línea de negocio de Windows Phone](manage-apps/windows-phone-line-of-business-app.md)
 #### [Aplicaciones de la Tienda Windows](manage-apps/windows-store-app.md)
 #### [Aplicaciones de línea de negocio de Windows](manage-apps/windows-line-of-business-app.md)
+#### [Aplicaciones Android for Work](/manage-apps/android-for-work-apps.md)
 ### [Asignar aplicaciones](manage-apps/deploy-apps.md)
 ### [Supervisión de aplicaciones](manage-apps/monitor-apps.md)
 ### [Usar perfiles de configuración de aplicaciones](manage-apps/app-configuration-policies.md)
