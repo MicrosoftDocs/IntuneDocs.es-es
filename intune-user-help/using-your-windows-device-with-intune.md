@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 05/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,10 +17,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb089cc9b6e76e13b2f5da65efb3452aa5274af
-ms.openlocfilehash: e3993c97475b699da90a0634bdb3ac1ba4f5a28c
-ms.lasthandoff: 02/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: bc32b2f4b1ea26cc4487ac8576ec5fb7cd333aaa
+ms.openlocfilehash: 64cfbf02e54244457aeaefb84e3049350764c410
+ms.contentlocale: es-es
+ms.lasthandoff: 05/09/2017
 
 
 ---
@@ -28,6 +29,17 @@ ms.lasthandoff: 02/24/2017
 # <a name="using-your-windows-device-with-intune"></a>Usar un dispositivo Windows con Intune
 
 Intune tiene varias características que facilitan la vida laboral. Esta es una lista de las tareas más habituales que la empresa puede pedirle.
+
+## <a name="supported-versions"></a>Versiones compatibles
+
+Intune actualmente admite las siguientes versiones de Windows.
+
+* Windows 10 (versiones Home, Pro, Education y Enterprise)
+* Windows Phone 8.1 y versiones posteriores
+* Windows 8.1 RT
+* Windows 8.1
+
+Intune también admite otras versiones de Windows, como [Windows 10 Holographic](https://www.microsoft.com/hololens). Estas versiones no aparecen en la lista porque son para usos muy específicos.
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Inscripción en Intune e instalación del Portal de empresa
 
