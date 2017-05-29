@@ -14,9 +14,11 @@ ms.assetid: 5daad56d-71c8-455b-8a55-f8b33e279a8a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: ee0d10f9b86b1122d0f16568b71b087c341e88df
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 808268faa797d8576f5fb693d9940d97d17abf21
+ms.contentlocale: es-es
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -47,9 +49,4 @@ En la lista de aplicaciones, seleccione cualquier aplicación y elija **Ver prop
 En la página **Propiedades del software** de la aplicación, elija una de estas pestañas: **General** (para ver información general sobre la aplicación y su estado de instalación), **Dispositivos** (para ver los dispositivos que han instalado correctamente una implementación dirigida de la aplicación) y **Usuarios**para ver los usuarios en cuyos dispositivos se ha instalado correctamente una implementación dirigida de la aplicación).
 
 Al igual que antes, puede usar la lista desplegable **Filtros** para configurar los valores mostrados en cada una de las pestañas.
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

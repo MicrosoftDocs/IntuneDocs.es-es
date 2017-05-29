@@ -2,8 +2,8 @@
 title: "Solucionar problemas de perfiles de correo electrónico | Microsoft Docs"
 description: "Perfiles de correo electrónico y cómo se pueden solucionar."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article
@@ -14,9 +14,11 @@ ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 017a7912cb991f00916373acc18f4ab2b97ce8ed
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 0387fa91628c5f786d9289df309b82bd17cf6447
+ms.contentlocale: es-es
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -72,9 +74,4 @@ Revise la configuración de su perfil EAS de Samsung KNOX y la directiva de orig
 
 ## <a name="next-steps"></a>Pasos siguientes
 Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el servicio de soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico de Microsoft Intune).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

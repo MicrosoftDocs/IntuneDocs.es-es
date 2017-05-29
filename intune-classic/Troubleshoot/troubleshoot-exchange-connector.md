@@ -14,9 +14,11 @@ ms.assetid: c5cb5465-fd8e-4524-83b9-ccdf3393b6dc
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 04c89b6dba34be4e3c49bfc907abe7a6240f3d51
-ms.openlocfilehash: 4ada25264aee779f5b31708fdec4f44d19b2e7f7
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: ad0519145b6cc7c837490892089c18bf20e08d57
+ms.contentlocale: es-es
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -52,9 +54,4 @@ Compruebe si Exchange Connector se está sincronizando con el servidor Exchange.
 
 ### <a name="next-steps"></a>Pasos siguientes
 Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el servicio de soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico de Microsoft Intune).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

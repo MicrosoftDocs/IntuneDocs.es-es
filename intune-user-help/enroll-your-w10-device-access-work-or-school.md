@@ -1,11 +1,11 @@
 ---
 title: Inscribir el dispositivo Windows 10 en Intune | Microsoft Docs
-description: "Inscribir un dispositivo Windows 10 versión 1607 en Intune"
+description: "Inscribir un dispositivo con Windows 10 1607 o una versión posterior en Intune"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/18/2017
+ms.date: 05/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,21 +17,30 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 10c7bc5461c746ab50e83c2ffc590b89efe75e5f
-ms.openlocfilehash: 5cf93d5f29e7fa3b989b1a00070d620e06f720c4
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: aa12a88cfd80f62e2f7b249b52333bd16cbb6533
+ms.contentlocale: es-es
+ms.lasthandoff: 05/23/2017
 
 
 ---
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>Inscribir un dispositivo Windows 10 en Intune
 
+> [!NOTE]
+> Windows 10 funciona en dispositivos de todo tipo. Tanto si usa un dispositivo de escritorio como un teléfono o una tableta, los pasos que debe seguir son los mismos, aunque puede que presenten pequeñas diferencias respecto a las imágenes que se muestran en esta página.
+
 <iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/Windows-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
 
-1.  Abra la aplicación **Configuración** de Windows al ir al **menú Inicio** y seleccionar el botón **Configuración**. También puede buscar "configuración" en la barra de búsqueda.
+1. Vaya a **Inicio**.
 
-2. Seleccione **Cuentas** > **Obtener acceso a trabajo o escuela** > **Conectar**.
+  - Si está usando un dispositivo con **una versión de escritorio de Windows 10**, vaya al **menú Inicio**.
+  - Si está usando un dispositivo con **Windows 10 Mobile**, vaya al **menú Inicio** y, después, deslice el dedo para ir a la lista **Todas las aplicaciones**.
+
+2.  Abra la aplicación **Configuración** de Windows buscando "configuración" en la barra de búsqueda.
+
+3. Seleccione **Cuentas** > **Obtener acceso a trabajo o escuela** > **Conectar**.
 
     ![Seleccionar cuenta Obtener acceso a trabajo o escuela](./media/w10-enroll-rs1-connect-to-work-or-school.png)
 

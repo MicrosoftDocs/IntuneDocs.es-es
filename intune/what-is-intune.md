@@ -1,0 +1,112 @@
+---
+title: "Introducción a Intune en la versión preliminar de Azure Portal"
+titleSuffix: Intune Azure preview
+description: "Versión preliminar de Intune Azure: conozca los conceptos básicos sobre Intune en la versión preliminar del portal de Azure y cómo puede ayudarle a administrar sus dispositivos."
+keywords: 
+author: robstackmsft
+ms.author: robstack
+nmanager: angrobe
+ms.date: 04/24/2017
+ms.topic: get-started-article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
+ms.suite: ems
+ms.custom: intune-azure
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 16d7ff50eb821e0927c3c6ea21f3cdb1257762a0
+ms.contentlocale: es-es
+ms.lasthandoff: 05/23/2017
+
+
+---
+
+
+# <a name="introduction-to-microsoft-intune-in-the-azure-portal-preview"></a>Introducción a Microsoft Intune en la versión preliminar del portal de Azure
+
+
+[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+
+Microsoft Intune está realizando la transición al portal de Azure, lo que significa que los flujos de trabajo y la funcionalidad que usa cambiarán.
+El nuevo portal le ofrece una versión preliminar de funciones nuevas y actualizadas en Azure Portal, donde puede administrar los dispositivos móviles, los equipos y las aplicaciones de su organización.
+Toda la funcionalidad de Intune se moverá finalmente a Azure, pero podrá realizar hoy mismo muchas tareas de Intune en Azure Portal. Dado que esta nueva experiencia se encuentra en versión preliminar, es posible que algunas funciones no aparezcan aún en el portal. Revise la sección de [novedades](#whats-new) para obtener más información.
+
+> [!IMPORTANT]
+> **¿Aún no puede ver el nuevo portal?**<br>
+> Ya hemos comenzado a implementar la versión preliminar en algunos inquilinos. Los inquilinos existentes se migrarán a la nueva experiencia a principios de 2017. Recibirá una notificación en el Centro de mensajes de Office antes de la migración de su inquilino.
+>
+> Las cuentas de Intune creadas antes de enero de 2017 requerirán una migración única antes de que los flujos de trabajo de Apple Enrollment estén disponibles en Azure. Aún no se ha anunciado la programación para la migración, pero la información estará disponible tan pronto como sea posible. Se recomienda encarecidamente crear una cuenta de prueba para probar la nueva experiencia si su cuenta no tiene acceso a la versión preliminar.
+
+
+Encontrará nueva documentación del producto en esta biblioteca, que se actualizará continuamente durante la versión preliminar. Si tiene sugerencias que le gustaría ver, deje sus comentarios en la sección de comentarios sobre el tema. Queremos saber su opinión.
+
+<!--- You can view the new Intune technical preview console in Azure at [portal.azure.com]. --->
+
+Algunos de los aspectos destacables de la nueva experiencia son:
+
+- Consola integrada para todos los componentes de Enterprise Mobility + Security (EMS)
+- Consola basada en HTML basada en estándares web
+- Soporte técnico de la API de Microsoft Graph para automatizar muchas acciones
+- Grupos de Azure Active Directory (AD) para proporcionar compatibilidad entre todas las aplicaciones de Azure
+- Compatibilidad con la mayoría de los exploradores web más modernos
+
+Si busca documentación sobre la consola de Intune clásica, vea [la biblioteca de documentación de Intune](https://docs.microsoft.com/intune-classic/).
+
+## <a name="before-you-start"></a>Antes de empezar
+
+Para usar Intune en el portal de Azure, debe tener una cuenta de administrador y de inquilino de Intune. [Regístrese para obtener una cuenta](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) si todavía no tiene una.
+
+## <a name="supported-web-browsers-for-the-azure-portal"></a>Exploradores web admitidos en el portal de Azure
+
+El portal de Azure funciona en la mayoría de equipos PC, Mac y tabletas más modernos. No es compatible con teléfonos móviles.
+Actualmente, se admiten los siguientes exploradores:
+
+- Microsoft Edge (última versión)
+- Microsoft Internet Explorer 11
+- Safari (solo en Mac, última versión)
+- Chrome (última versión)
+- Firefox (última versión)
+
+Para obtener la información más reciente sobre los exploradores admitidos, vea [Azure Portal](https://docs.microsoft.com/azure/azure-preview-portal-supported-browsers-devices).
+
+## <a name="whats-in-this-library"></a>¿Qué hay en esta biblioteca?
+
+La documentación refleja el diseño del portal de Intune para que resulte más fácil encontrar la información que necesita.
+
+![Cargas de trabajo del portal de Azure](./media/azure-portal-workloads.png)
+
+### <a name="introduction-and-get-started"></a>Introducción y empezar a trabajar
+Esta sección contiene información sobre [novedades](whats-new.md), [problemas conocidos](known-issues.md), [cómo obtener asistencia técnica](get-support.md) y cómo [empezar a trabajar con una prueba gratuita](free-trial-sign-up.md) de Intune.
+### <a name="plan-and-design"></a>Planeamiento y diseño
+Información para ayudarlo a [planear y diseñar](/intune-classic/plan-and-design/introduction) su entorno Intune.
+### <a name="device-enrollment"></a>Inscripción de dispositivos
+[Cómo administrar sus dispositivos con Intune](device-enrollment.md).
+### <a name="device-compliance"></a>Cumplimiento de dispositivos
+[Defina un nivel de cumplimiento para sus dispositivos y, después, notifique los dispositivos que no son conformes](device-compliance.md).
+### <a name="device-configuration"></a>Configuración de los dispositivos
+[Obtenga información sobre los perfiles que puede usar para configurar opciones y características en los dispositivos que administra](device-profiles.md).
+### <a name="devices"></a>Dispositivos
+[Conozca los dispositivos que administra con inventarios e informes](device-management.md).
+### <a name="mobile-apps"></a>Aplicaciones móviles
+[Cómo publicar, administrar, configurar y proteger las aplicaciones](app-management.md).
+### <a name="conditional-access"></a>Acceso condicional
+[Restrinja el acceso a los servicios de Exchange en función de las condiciones que especifique](conditional-access.md).
+### <a name="on-premises-access"></a>Acceso local
+[Configure el acceso a Exchange ActiveSync y a Exchange local](/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)
+### <a name="users"></a>Usuarios
+[Obtenga información sobre los usuarios de dispositivos que administra y clasifique recursos en grupos](user-management.md).
+### <a name="groups"></a>Grupos
+[Obtenga información acerca de cómo usar grupos de Azure Active Directory con Intune](groups-get-started.md)
+### <a name="intune-roles"></a>Roles de Intune
+[Controle quién puede realizar diversas acciones de Intune y a quién se aplican esas acciones](role-based-access-control.md). Puede usar los roles integrados que abarcan algunos escenarios de Intune comunes, o crear los suyos propios.
+### <a name="software-updates"></a>Actualizaciones de software
+[Obtenga información acerca de cómo configurar las actualizaciones de software para dispositivos Windows 10](windows-update-for-business-configure.md).
+
+
+
+## <a name="whats-new"></a>Novedades
+
+[Descubra las novedades de la versión preliminar](whats-new.md).
+

@@ -13,9 +13,11 @@ ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: a2e43444bff3b189c1516c6ca7131771035313ea
-ms.openlocfilehash: a967758387e9904eb9ce794b3783e777322c83a7
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 7944b6e16e72b781bb2f9101623deb1ce484fa46
+ms.contentlocale: es-es
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -70,9 +72,4 @@ Esta característica de varias identidades ayuda a solucionar el problema de la 
 Muchos usuarios con dispositivos personales quieren tener acceso a los datos corporativos sin inscribir sus dispositivos personales con un proveedor de administración de dispositivos móviles (MDM). Debido a que la inscripción en MDM requiere el control global del dispositivo, los usuarios dudan a menudo a la hora de conceder ese control de sus dispositivos personales a su empresa.
 
 La protección de aplicaciones sin la inscripción de dispositivos permite al servicio de Microsoft Intune implementar la directiva de protección de aplicaciones en una aplicación directamente, sin tener que depender de que un canal de administración de dispositivos que implemente la directiva.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
