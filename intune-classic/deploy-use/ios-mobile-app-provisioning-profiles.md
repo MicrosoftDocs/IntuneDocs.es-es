@@ -14,9 +14,11 @@ ms.assetid: 86fbe736-7bdb-4f5e-ae21-13c91eb2462c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: db76786da0428b0e064f2091089653244d90ee2a
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: adebcc5a8d8f43bed383b51bb094fa122ebabc0a
+ms.contentlocale: es-es
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -52,9 +54,4 @@ Cuando el certificado haya expirado, debe volver a firmar la aplicación con un 
     - **Archivo de perfil de configuración:** haga clic en **Importar** y, luego, elija un archivo de perfil de configuración móvil de Apple (con la extensión **.mobileprovision**) que ha descargado del sitio web para desarrolladores de Apple.
 4. Cuando termine, elija **Guardar directiva**.
 5. A continuación, implemente la directiva en los dispositivos iOS necesarios. Para más información, vea [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

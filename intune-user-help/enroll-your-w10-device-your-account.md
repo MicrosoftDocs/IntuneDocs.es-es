@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/17/2017
+ms.date: 05/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,31 +17,40 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-translationtype: Human Translation
-ms.sourcegitcommit: 10c7bc5461c746ab50e83c2ffc590b89efe75e5f
-ms.openlocfilehash: 351a0e6cf440b1506426db57ec0529496ed70231
-ms.lasthandoff: 03/13/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 624819ddd8afabef1e3b5419706268eef6d960d0
+ms.contentlocale: es-es
+ms.lasthandoff: 05/23/2017
 
 
 ---
 
 # <a name="enroll-your-windows-10-device-in-intune"></a>Inscribir un dispositivo Windows 10 en Intune
 
-1.  Abra la aplicación **Configuración** de Windows al ir al **menú Inicio** y seleccionar el botón **Configuración**. También puede buscar "configuración" en la barra de búsqueda.
+> [!NOTE]
+> Windows 10 funciona en dispositivos de todo tipo. Tanto si usa un dispositivo de escritorio como un teléfono o una tableta, los pasos que debe seguir son los mismos, aunque puede que presenten pequeñas diferencias respecto a las imágenes que se muestran en esta página.
 
-2. Seleccione **Cuentas**.
+1.  Vaya a **Inicio**.
+
+  - Si está usando un dispositivo con **una versión de escritorio de Windows 10**, vaya al **menú Inicio**.
+  - Si está usando un dispositivo con **Windows 10 Mobile**, vaya al **menú Inicio** y, después, deslice el dedo para ir a la lista **Todas las aplicaciones**.
+
+2. Abra la aplicación **Configuración** de Windows buscando "configuración" en la barra de búsqueda.
+
+3. Seleccione **Cuentas**.
 
     ![Vaya a Configuración y a Cuentas](./media/W10-enroll-1-settings-accounts.png)
 
-3. Seleccione **Su cuenta**.
+4. Seleccione **Su cuenta**.
 
     ![Seleccionar la cuenta](./media/W10-enroll-2-accounts-your-account.png)
 
-4. Seleccione **Agregar una cuenta profesional o educativa**.
+5. Seleccione **Agregar una cuenta profesional o educativa**.
 
     ![Seleccionar agregar una cuenta profesional o educativa](./media/w10-enroll-3-add-work-school-acct.png)
 
-5. Inicie sesión con las credenciales de su trabajo o escuela.
+6. Inicie sesión con las credenciales de su trabajo o escuela.
 
     ![Iniciar sesión](./media/W10-enroll-4-sign-in.png)
 

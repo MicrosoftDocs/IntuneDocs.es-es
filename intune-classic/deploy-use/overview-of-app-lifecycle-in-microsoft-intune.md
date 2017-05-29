@@ -14,9 +14,11 @@ ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: c3394663b234ada70f724b750dfdffc8369cb203
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 2c1b4876e92e64912f237560b346aedceb0771c5
+ms.contentlocale: es-es
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -52,9 +54,4 @@ Intune ofrece muchas maneras de ayudar a proteger los datos de las aplicaciones.
 ## <a name="retire"></a>Retirar
 
 Por último, es probable que las aplicaciones que haya implementado queden obsoletas y tengan que quitarse. Intune facilita la [retirada de aplicaciones del servicio](retire-apps-using-microsoft-intune.md).
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

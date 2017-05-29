@@ -14,10 +14,11 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: fbb41a8cf6fada76b72213b8cb04fdc0428515e9
-ms.openlocfilehash: 96c25307c4060a8872ba4f6de47992c4d9f9dd85
-ms.lasthandoff: 02/14/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: d80632aceaa675f08eb4b23ce59e3bcabb72b4d0
+ms.contentlocale: es-es
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -91,7 +92,7 @@ La vista detallada muestra el mensaje de error, la aplicación a la que se obtuv
 
 Puede encontrar los mismos informes en la vista detallada e informes adicionales que le ayudarán en el estado de cumplimiento de la directiva de protección de aplicaciones:
 
-![Captura de pantalla&4;](../media/MAM-reporting-7.png)
+![Captura de pantalla 4](../media/MAM-reporting-7.png)
 
 -   **Informe de usuario de protección de aplicaciones:** describe la misma información que puede encontrar en el informe **Estado usuario** en la sección de vista detallada anterior.
 
@@ -107,7 +108,7 @@ Puede encontrar los mismos informes en la vista detallada e informes adicionales
 
         -   Todas las aplicaciones están registradas, pero no reciben ninguna directiva de protección de aplicaciones.
 
-![Captura de pantalla&2;](../media/MAM-reporting-4.png)
+![Captura de pantalla 2](../media/MAM-reporting-4.png)
 
 ## <a name="table-grouping"></a>Agrupación de tablas
 
@@ -124,15 +125,15 @@ Siga estos pasos para generar el informe de protección de aplicaciones:
 
 1. En la hoja de administración de aplicaciones móviles de Intune, elija el informe de protección de aplicaciones.
 
-    ![Captura de pantalla&6;](../media/app-protection-report-csv-2.png)
+    ![Captura de pantalla 6](../media/app-protection-report-csv-2.png)
 
 2. Elija Sí para guardar el informe, elija Guardar como y seleccione la carpeta en la que quiere guardar el informe.
 
-    ![Captura de pantalla&7;](../media/app-protection-report-csv-1.png)
+    ![Captura de pantalla 7](../media/app-protection-report-csv-1.png)
 
 ## <a name="see-also"></a>Consulte también
 [Administrar la transferencia de datos entre aplicaciones iOS](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
 * [What to expect when your Android app is managed by app protection policies](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)
-* [Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md)
+* [What to expect when your iOS app is managed by app protection policies](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md) (Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones)
 

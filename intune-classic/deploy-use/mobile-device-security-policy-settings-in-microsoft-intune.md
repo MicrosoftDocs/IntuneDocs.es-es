@@ -14,9 +14,11 @@ ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: b6d5ea579b675d85d4404f289db83055642ffddd
-ms.openlocfilehash: 755cf7d87d7145c55eb5fe583748bd98d34e8fb1
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 95adade7940e99768feb8e4cf50eca1401a46dd6
+ms.contentlocale: es-es
+ms.lasthandoff: 05/23/2017
 
 
 
@@ -215,9 +217,4 @@ Cuando implementa una directiva de longitud de contraseña para dispositivos que
 
 ### <a name="see-also"></a>Consulte también
 [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-
-
-
-<!--HONumber=Dec16_HO2-->
-
 

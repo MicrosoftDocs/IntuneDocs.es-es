@@ -14,10 +14,11 @@ ms.assetid: bc8c8be9-7f4f-4891-9224-55fc40703f0b
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: 547330c05b7fbdd2981e49320c913d8109563384
-ms.openlocfilehash: f8f1359ff08b67261b23a694a4f6bbbeca24fa2a
-ms.lasthandoff: 02/17/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 41823544901f0ae2c87cba4e8591446068b8d144
+ms.contentlocale: es-es
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -77,7 +78,7 @@ En el siguiente procedimiento usará el editor de software de Intune para config
 
     Si la aplicación cumple alguna de las reglas que configuró, no se instalará.
 
-6.  Únicamente para el tipo de archivo **Windows Installer** (.msi y .exe): en la página **Argumentos de la línea de comandos**, elija si quiere proporcionar argumentos de línea de comandos opcionales para el instalador.
+6.  Únicamente para el tipo de archivo **Windows Installer** (.msi y .exe): en la página **Argumentos de la línea de comandos** , elija si quiere proporcionar argumentos de línea de comandos opcionales para el instalador.
     Intune agrega automáticamente los parámetros siguientes:
     - Para los archivos .exe, se agrega **/install**.
     - Para los archivos .msi, se agrega **/quiet**.

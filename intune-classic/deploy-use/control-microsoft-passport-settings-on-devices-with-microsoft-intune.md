@@ -2,8 +2,8 @@
 title: "Controlar la configuración de Windows Hello para empresas en dispositivos | Microsoft Docs"
 description: "Obtenga información sobre cómo se integra Intune en Windows Hello para empresas, un método alternativo de inicio de sesión que usa Active Directory o una cuenta de Azure Active Directory para reemplazar una contraseña, una tarjeta inteligente o una tarjeta inteligente virtual."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 09/27/2016
 ms.topic: article
@@ -14,9 +14,11 @@ ms.assetid: 402bc5a1-ada3-4c4c-a0de-292d026b4444
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-translationtype: Human Translation
-ms.sourcegitcommit: e7d1760a10e63233fe7cc7f6fd57a68c5283647c
-ms.openlocfilehash: 7da3ee985cb831ae1e0e5e7c5aaf861be1c3cde6
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
+ms.openlocfilehash: 9a223f7fb1fd0736541da0d6a15ad5285241577a
+ms.contentlocale: es-es
+ms.lasthandoff: 05/23/2017
 
 
 ---
@@ -70,7 +72,7 @@ Para garantizar que se resuelven los conflictos de directivas y que la directiva
 - **Requerir minúsculas en el PIN**/**Requerir mayúsculas en el PIN**/**Requerir caracteres especiales en el PIN**. Si quiere aplicar un PIN más seguro, puede requerir el uso de letras mayúsculas, letras minúsculas y caracteres especiales en el PIN. Elija de entre las siguientes opciones:
     - **Permitido**. Los usuarios pueden usar el tipo de carácter en el PIN, pero no es obligatorio.
     - **Requerido**. Los usuarios deben incluir al menos uno de los tipos de carácter en el PIN. Por ejemplo, una práctica habitual consiste en obligar a usar como mínimo una mayúscula y un carácter especial.
-    - **No permitido** (valor predeterminado). Los usuarios no deben usar estos tipos de caracteres en el PIN. (Este es también el comportamiento si no se configura esta opción).<br>Los caracteres especiales incluyen: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
+    - **No permitido** (valor predeterminado). Los usuarios no deben usar estos tipos de caracteres en el PIN. (Este es también el comportamiento si no se configura esta opción).<br>Entre los caracteres especiales se incluyen los siguientes: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**.
 - **Expiración del PIN (días)**. Se recomienda especificar un período de expiración del PIN, transcurrido el cual hay que cambiarlo. El valor predeterminado es 41 días.
 - **Recordar historial de PIN**. Restringe la reutilización de los PIN usados anteriormente. De forma predeterminada, no se pueden volver a usar los últimos cinco PIN.
 - **Permitir autenticación biométrica**. Habilita la autenticación biométrica, como el reconocimiento facial o la huella digital, como alternativa a un PIN para Windows Hello para empresas. Los usuarios todavía deben configurar un PIN de trabajo por si produce un error en la autenticación biométrica. Elija de entre las siguientes opciones:
@@ -81,9 +83,4 @@ Para garantizar que se resuelven los conflictos de directivas y que la directiva
 
 ## <a name="further-information"></a>Más información
 Para obtener más información sobre Microsoft Passport, vea [la guía](https://technet.microsoft.com/library/mt589441.aspx) en la documentación de Windows 10.
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
