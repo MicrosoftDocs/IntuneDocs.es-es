@@ -127,7 +127,7 @@ Para ver registros de Exchange Connector, use la [herramienta del visor de segui
 
 #### <a name="locating-sync-logs"></a>Localizar registros de sincronización
 
--    Localice una sincronización completa en los registros buscando **sincronización completa**. Este texto marcará el principio de una sincronización completa:
+-    Localice una sincronización completa en los registros buscando **full sync**. Este texto marcará el principio de una sincronización completa:
 
     'Comando de control: obtener la lista de dispositivos móviles sin un filtro de tiempo (sincronización completa) para los usuarios de <number>'
 
@@ -135,7 +135,7 @@ Para ver registros de Exchange Connector, use la [herramienta del visor de segui
 
     La obtención de la lista de dispositivos móviles sin un filtro de tiempo (sincronización completa) para 4 usuarios se completó correctamente. Detalles: resultado del comando de inventario - Dispositivos sincronizados 0 Identificador de comando: commandIDGUID' Estado de Exchange: 'Server health 'Nombre: 'PowerShellExchangeServer: <Name=mymailservername>' Estado: Conectado','
 
--    Localice una sincronización rápida (diferencial) en los registros buscando **sincronización rápida**.
+-    Localice una sincronización rápida (diferencial) en los registros buscando **quick sync**.
 
 ##### <a name="exceptions-in-get-next-command"></a>Excepciones en el siguiente comando de Get
 Compruebe los registros de Exchange Connector para ver las excepciones en **Obtener el siguiente comando**, y proporciónelos al soporte técnico de Microsoft.
