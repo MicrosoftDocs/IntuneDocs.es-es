@@ -41,7 +41,7 @@ Antes de crear una directiva de protección de aplicaciones para Windows 10, deb
 
     ![Configuración de proveedor de MAM](./media/mam-provider-sc-1.png)
 
-3.  Se abre la hoja de **Azure AD**, elija **Movilidad (MDM y MAM)	** y, a continuación, haga clic en **Microsoft Intune**.
+3.  Se abre la hoja de **Azure AD**, elija **Movilidad (MDM y MAM)** y, a continuación, haga clic en **Microsoft Intune**.
 
     ![Movilidad (MDM y MAM)](./media/mam-provider-sc-1.png)
 
