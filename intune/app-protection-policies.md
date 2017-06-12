@@ -66,7 +66,7 @@ Cuando termine de crear una directiva como se describe en el procedimiento anter
 
   ![Captura de pantalla de la hoja Grupos de usuarios con la opción de menú Agregar grupo de usuarios resaltada](./media/app-protection-policy-add-users.png)
 
-2.  Se mostrará una lista de grupos de usuarios en la hoja **Agregar grupo de usuarios** . Esta es una lista de todos los grupos de seguridad de su **Azure Active Directory**. Seleccione los grupos de usuarios a los que quiera aplicar esta directiva y, después, elija **Seleccionar**. Al **** hacerlo, la directiva se implementa en los usuarios.
+2.  Se mostrará una lista de grupos de usuarios en la hoja **Agregar grupo de usuarios** . Esta es una lista de todos los grupos de seguridad de su **Azure Active Directory**. Seleccione los grupos de usuarios a los que quiera aplicar esta directiva y, después, elija **Seleccionar**. Al elegir **Seleccionar**, la directiva se implementa para los usuarios.
   ![Captura de pantalla de la hoja Agregar grupo de usuarios que muestra la lista de usuarios de Azure Active Directory](./media/azure-ad-user-group-list.png)
 
 Ahora ha creado una directiva y la ha implementado en los usuarios.
