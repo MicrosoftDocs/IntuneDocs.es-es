@@ -1,5 +1,5 @@
 ---
-title: "Inscripción de dispositivos iOS de empresa | Microsoft Docs"
+title: Inscribir dispositivos iOS de empresa
 description: "Inscripción de dispositivos iOS de empresa mediante el Programa de inscripción de dispositivos (DEP) de Apple o Apple Configurator"
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 44b4fbad45decde806fb5be41ea12f0d8bcf9c95
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 42da9c874183287bc9485035ae39e94efbaa3e8b
 ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -59,8 +59,8 @@ Los dispositivos configurados con afinidad de usuario pueden instalar y ejecutar
 
 La afinidad de usuario es necesaria para admitir lo siguiente:
   - Aplicaciones de administración de aplicaciones móviles (MAM)
-  -    Acceso condicional al correo electrónico y los datos de la empresa
-  -    Aplicación de portal de empresa
+  - Acceso condicional al correo electrónico y los datos de la empresa
+  - Aplicación de portal de empresa
 
 **Inscripción de dispositivos iOS de empresa con afinidad de usuario**
 1. Cuando los usuarios encienden su dispositivo, se les pide que completen el Asistente de configuración. Durante la instalación, se pide a los usuarios sus credenciales. Deben usar las credenciales (es decir, el nombre único personal o UPN) que están asociadas con su suscripción en Intune.

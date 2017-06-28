@@ -1,5 +1,5 @@
 ---
-title: Solicitar y proporcionar asistencia remota para equipos con Windows | Microsoft Docs
+title: Solicitar y proporcionar asistencia remota para equipos con Windows
 description: "Describe los pasos de administración de TI y usuario final para proporcionar asistencia remota para equipos de escritorio de Windows que están administrándose como PC y para iniciar un PC de forma remota."
 keywords: 
 author: nathbarn
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 416fb7a4f4be0450dcfbd02b1fdb51097553df0a
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 3d173cf9a9ec8617cb7feec858b696aa0e80c12d
 ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Solicitar y proporcionar asistencia remota para equipos con Windows
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 
 La información de este tema se aplica solo a equipos de escritorio de Windows que está administrando como PC mediante el cliente de software de Intune.
 

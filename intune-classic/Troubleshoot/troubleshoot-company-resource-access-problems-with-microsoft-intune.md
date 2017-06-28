@@ -1,5 +1,5 @@
 ---
-title: Solucionar problemas de acceso a los recursos de la empresa | Microsoft Docs
+title: Solucionar problemas de acceso a recursos de empresa
 description: "Códigos de error y estado en este tema para ayudarle a solucionar problemas de acceso a los recursos."
 keywords: 
 author: lleonard-msft
@@ -15,10 +15,10 @@ ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 2f24da5173c5d4e19af1e2ac4d425ca20d48f150
-ms.openlocfilehash: a89a624544d8b46a3aca5325cedd06ff8a93b7e2
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: ba84b53fc10b49d932223e208870041762e5663a
 ms.contentlocale: es-es
-ms.lasthandoff: 05/31/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

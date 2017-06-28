@@ -1,5 +1,5 @@
 ---
-title: "Adición de aplicaciones de Skycure, la aplicación de Microsoft Authenticator y la directiva de configuración de iOS | Microsoft Docs"
+title: "Adición de aplicaciones de Skycure, la aplicación de Microsoft Authenticator y la directiva de configuración de iOS"
 description: "Agregue aplicaciones de Skycure, la aplicación de Microsoft Authenticator y la directiva de configuración de iOS en la consola clásica de Intune."
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 47fd977d899c7f0763801b3bb86b515b727bc5aa
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 425b86e92281bb6e3657a6c806be269ccae94311
 ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

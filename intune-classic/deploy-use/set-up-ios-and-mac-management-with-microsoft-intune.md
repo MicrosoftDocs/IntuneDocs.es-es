@@ -1,5 +1,5 @@
 ---
-title: "Configurar la administración de iOS y Mac | Microsoft Docs"
+title: Set up iOS and Mac management
 description: "Habilite la administración de dispositivos móviles (MDM) para dispositivos iOS, como iPad e iPhone, así como para dispositivos de Mac OS X con Microsoft Intune."
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ef1fbee09172a89e0f83cbe905a00f3a3ef25b05
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: af300534b3868a829c0b648d4df2587886ef749b
 ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -53,7 +53,7 @@ Intune permite la administración de dispositivos móviles (MDM) de iPad, iPhone
     Para instrucciones sobre la inscripción del usuario final, vea [Inscribir un dispositivo iOS en Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) o [Inscribir un dispositivo macOS en Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos). El proceso de inscripción indica a los usuarios lo que pueden esperar y qué pueden o no ver los administradores de TI en sus dispositivos.
 
     Para más información acerca de otras tareas de usuario final, consulte estos artículos:
-    - [Recursos sobre la experiencia del usuario final con Microsoft Intune](how-to-educate-your-end-users-about-microsoft-intune.md)
+    - [Recursos sobre la experiencia del usuario final con Microsoft Intune](/intune/end-user-educate)
     - [Guía de usuario final para dispositivos iOS y Mac](https://docs.microsoft.com/intune-user-help/using-your-ios-or-macOS-device-with-intune)
 
 Si la empresa u organización adquiere dispositivos iOS para los usuarios, estos dispositivos también se pueden inscribir en la administración como [dispositivos iOS propiedad de la empresa](enroll-corporate-owned-ios-devices-in-microsoft-intune.md).
