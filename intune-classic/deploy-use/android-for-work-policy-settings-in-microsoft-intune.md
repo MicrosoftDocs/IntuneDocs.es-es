@@ -1,6 +1,6 @@
 ---
 
-title: Opciones de directivas de Android for Work | Microsoft Docs
+title: Opciones de directivas de Android for Work
 description: "Cree directivas que controlen la configuración y las características en los dispositivos Android for Work que administra con Intune."
 keywords: 
 author: robstackmsft
@@ -16,10 +16,10 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: b0c3520c7c1fd29a631587fe1a69d4c411099cb4
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 858c4a525945694326952e8afe280e4b66cd2ccb
 ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---

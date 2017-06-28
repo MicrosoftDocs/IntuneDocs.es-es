@@ -1,5 +1,5 @@
 ---
-title: Usar grupos para administrar usuarios y dispositivos | Microsoft Docs
+title: Utilizar grupos para administrar usuarios y dispositivos
 description: "Cree y administre grupos mediante el área de trabajo Grupos."
 keywords: 
 author: Mtillman
@@ -15,10 +15,10 @@ ms.reviewer: lpatha
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 095b8db0cb5097edca98d138edccafbe8e55b9ba
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 13c8946dd75d6bdede0e2a8941030250c6b12ef6
 ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -108,7 +108,7 @@ En las vistas de grupo filtradas, puede personalizar lo que un administrador de 
 -   Quiere que los administradores de TI puedan implementar elementos únicamente para dispositivos y usuarios concretos
 -   Quiere que los administradores de TI vean solo los grupos que son relevantes para ellos
 
-Puede configurar vistas de grupo filtradas para los administradores de servicios en la consola de administración de Intune. Para más información, consulte [What to know before you start Microsoft Intune (Información necesaria antes de iniciar Microsoft Intune)](/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune).
+Puede configurar vistas de grupo filtradas para los administradores de servicios en la consola de administración de Intune. Para más información, consulte [What to know before you start Microsoft Intune (Información necesaria antes de iniciar Microsoft Intune)](/intune/supported-devices-browsers).
 
 Después de configurar vistas de grupo filtradas para un administrador de servicios, cuando este implementa directivas o software, o ejecuta informes, solo puede ver y seleccionar los grupos que usted ha especificado. El administrador tampoco ve información de estado en estas páginas de la consola de administración:
 

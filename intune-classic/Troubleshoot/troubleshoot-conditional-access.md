@@ -1,5 +1,5 @@
 ---
-title: Solucionar problemas de acceso condicional | Microsoft Docs
+title: Solucionar problemas de acceso condicional
 description: "Qué hacer cuando los usuarios no pueden obtener acceso a los recursos a través del acceso condicional de Intune."
 keywords: 
 author: andredm7
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 19635b4dda7f4f04690ad165bad6608cad7ac84f
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 04b1785c0b75d4668879488e5221d8b8c2794834
 ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -36,11 +36,11 @@ En este tema se explica qué hacer cuando los usuarios no pueden obtener acceso 
 
 Para que el acceso condicional funcione, necesita las siguientes condiciones:
 
--    Intune tiene que administrar el dispositivo
--    El dispositivo tiene que estar registrado con Azure Active Directory (AAD). En circunstancias normales, este registro se realiza automáticamente durante la inscripción de Intune
--    El dispositivo debe ser compatible con las directivas de cumplimiento de Intune, para el dispositivo y para el usuario del dispositivo.  Si no hay ninguna directiva de cumplimiento, la inscripción de Intune es suficiente.
--    Si el usuario recupera el correo a través del cliente de correo nativo del dispositivo en lugar de hacerlo a través de Outlook, Exchange ActiveSync debe estar activado en el dispositivo.     Esto ocurre automáticamente para dispositivos estándar iOS, Windows Phone y Android/KNOX.
--    Intune Exchange Connector debe estar configurado correctamente. Consulte [Solucionar problemas de Exchange Connector en Microsoft Intune](troubleshoot-exchange-connector.md) para obtener más información.
+-   Intune tiene que administrar el dispositivo
+-   El dispositivo tiene que estar registrado con Azure Active Directory (AAD). En circunstancias normales, este registro se realiza automáticamente durante la inscripción de Intune
+-   El dispositivo debe ser compatible con las directivas de cumplimiento de Intune, para el dispositivo y para el usuario del dispositivo.  Si no hay ninguna directiva de cumplimiento, la inscripción de Intune es suficiente.
+-   Si el usuario recupera el correo a través del cliente de correo nativo del dispositivo en lugar de hacerlo a través de Outlook, Exchange ActiveSync debe estar activado en el dispositivo.     Esto ocurre automáticamente para dispositivos estándar iOS, Windows Phone y Android/KNOX.
+-   Intune Exchange Connector debe estar configurado correctamente. Consulte [Solucionar problemas de Exchange Connector en Microsoft Intune](troubleshoot-exchange-connector.md) para obtener más información.
 
 Es posible ver si estas condiciones se cumplen en un dispositivo en el Portal de administración de Azure y en el informe de inventario del dispositivo.
 
@@ -55,16 +55,16 @@ Es posible ver si estas condiciones se cumplen en un dispositivo en el Portal de
  -  El registro de la información de cumplimiento de un dispositivo puede llevar un tiempo. Espere unos minutos y vuelva a intentarlo .
  -  Para dispositivos iOS:
      -   Un perfil de correo electrónico existente creado por el usuario bloqueará la implementación de un perfil de Intune creado por el administrador. Este es un problema común, ya que los usuarios de iOS suelen crear un perfil de correo y luego inscribirse. El portal de empresa informará al usuario de que no son compatibles debido a su perfil de correo configurado manualmente y le pedirá que quite ese perfil. El usuario debe quitar su perfil de correo para que se pueda implementar el perfil de Intune. Para evitar el problema, indique a los usuarios que se inscriban sin instalar un perfil de correo y que permitan que Intune implemente el perfil.
-     -     Un dispositivo iOS puede quedarse atascado en un estado de comprobación de cumplimiento e impedir que el usuario inicie otra comprobación. Esto puede solucionarse reiniciando el portal de empresa y el estado de cumplimiento reflejará el estado del dispositivo en Intune. Después de que se recopilen todos los datos desde una sincronización de dispositivos, la comprobación del cumplimiento es rápida, menos de medio segundo de media.
+     -   Un dispositivo iOS puede quedarse atascado en un estado de comprobación de cumplimiento e impedir que el usuario inicie otra comprobación. Esto puede solucionarse reiniciando el portal de empresa y el estado de cumplimiento reflejará el estado del dispositivo en Intune. Después de que se recopilen todos los datos desde una sincronización de dispositivos, la comprobación del cumplimiento es rápida, menos de medio segundo de media.
 
         Normalmente, los dispositivos de motivo permanecen en este estado porque están teniendo problemas al conectarse con el servicio o la sincronización tarda mucho tiempo.  Si el problema persiste en diferentes configuraciones de red (red de telefonía móvil, Wi-Fi y VPN), a través de reinicios del dispositivo y después de comprobar que el SSP está actualizado en el dispositivo, póngase en contacto con el soporte técnico de Microsoft, tal y como se describe en [Cómo obtener soporte técnico de Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
  - Para dispositivos Android:
-     - Algunos dispositivos Android podrían parecer cifrados, pero la aplicación de portal de empresa reconoce estos dispositivos como no cifrados. 
+    - Algunos dispositivos Android podrían parecer cifrados, pero la aplicación de portal de empresa reconoce estos dispositivos como no cifrados. 
     
-        -    Los dispositivos que se encuentran en este estado requieren que el usuario establezca un código de acceso de inicio seguro. El usuario verá una notificación de dispositivo de la aplicación de portal de empresa que le pedirá que establezca un código de acceso de inicio para el dispositivo. Después de pulsar la notificación de dispositivo y confirmar el PIN o el código de acceso existente, seleccione la opción **Require PIN to start device** (Solicitar PIN para iniciar el dispositivo) en la pantalla **Secure start-up** (Inicio seguro). Después, pulse el botón **Comprobar cumplimiento** para el dispositivo en la aplicación de portal de empresa. El dispositivo debería detectarse ahora como cifrado.
+        -   Los dispositivos que se encuentran en este estado requieren que el usuario establezca un código de acceso de inicio seguro. El usuario verá una notificación de dispositivo de la aplicación de portal de empresa que le pedirá que establezca un código de acceso de inicio para el dispositivo. Después de pulsar la notificación de dispositivo y confirmar el PIN o el código de acceso existente, seleccione la opción **Require PIN to start device** (Solicitar PIN para iniciar el dispositivo) en la pantalla **Secure start-up** (Inicio seguro). Después, pulse el botón **Comprobar cumplimiento** para el dispositivo en la aplicación de portal de empresa. El dispositivo debería detectarse ahora como cifrado.
     
-        -     Algunos fabricantes de dispositivos cifran sus dispositivos con un PIN predeterminado, en vez de con el PIN secreto establecido por el usuario. Intune reconoce el cifrado con el PIN predeterminado como no seguro, ya que este método de cifrado puede poner en peligro los datos del dispositivo si un usuario malintencionado tiene acceso físico al dispositivo. Si este es el caso, considere la posibilidad de usar [directivas de protección de aplicaciones](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
+        -   Algunos fabricantes de dispositivos cifran sus dispositivos con un PIN predeterminado, en vez de con el PIN secreto establecido por el usuario. Intune reconoce el cifrado con el PIN predeterminado como no seguro, ya que este método de cifrado puede poner en peligro los datos del dispositivo si un usuario malintencionado tiene acceso físico al dispositivo. Si este es el caso, considere la posibilidad de usar [directivas de protección de aplicaciones](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
 
 ## <a name="policy-issues"></a>Problemas de directivas
 
@@ -120,7 +120,7 @@ Si estos procedimientos de solución de problemas no resuelven el problema, hay 
 ### <a name="exchange-connector-logs"></a>Registros de Exchange Connector
 
 #### <a name="general-log-information"></a>Información del registro general
-Para ver registros de Exchange Connector, use la [herramienta del visor de seguimiento del servidor](herramienta del visor de seguimiento del servidor) (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx'). Esta herramienta requiere que descargue el SDK de Windows Server.
+Para ver registros de Exchange Connector, use la [herramienta del visor de seguimiento del servidor]\(herramienta del visor de seguimiento del servidor) (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx'). Esta herramienta requiere que descargue el SDK de Windows Server.
 
 >[!NOTE]
 >Los registros se encuentran en C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs. Los registros se encuentran en una serie de 30 archivos de registro a partir de *Connector0.log* y que acaba en *Connector29.log*. Registra la sustitución de uno a otro después de 10 MB de datos acumulados en un registro. Una vez que los registros lleguen a Connector29, volverán a comenzar en Connector0 de nuevo y sobrescribirán los archivos de registro anteriores.
@@ -135,7 +135,7 @@ Para ver registros de Exchange Connector, use la [herramienta del visor de segui
 
     La obtención de la lista de dispositivos móviles sin un filtro de tiempo (sincronización completa) para 4 usuarios se completó correctamente. Detalles: resultado del comando de inventario - Dispositivos sincronizados 0 Identificador de comando: commandIDGUID' Estado de Exchange: 'Server health 'Nombre: 'PowerShellExchangeServer: <Name=mymailservername>' Estado: Conectado','
 
--    Localice una sincronización rápida (diferencial) en los registros buscando **quick sync**.
+-   Localice una sincronización rápida (diferencial) en los registros buscando **quick sync**.
 
 ##### <a name="exceptions-in-get-next-command"></a>Excepciones en el siguiente comando de Get
 Compruebe los registros de Exchange Connector para ver las excepciones en **Obtener el siguiente comando**, y proporciónelos al soporte técnico de Microsoft.
@@ -144,9 +144,9 @@ Compruebe los registros de Exchange Connector para ver las excepciones en **Obte
 
 Para habilitar el registro detallado:
 
-1.    Abra el archivo de configuración de seguimiento de Exchange Connector. El archivo se encuentra en: %ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml.
-2.    Busque TraceSourceLine con la clave siguiente: OnPremisesExchangeConnectorService
-3.    Cambie el valor del nodo **SourceLevel** de **Seguimiento de actividad de advertencia** (valor predeterminado) a **Seguimiento de actividad detallado**, tal como se muestra a continuación.
+1.  Abra el archivo de configuración de seguimiento de Exchange Connector. El archivo se encuentra en: %ProgramData%\Microsoft\Windows Intune Exchange Connector\TracingConfiguration.xml.
+2.  Busque TraceSourceLine con la clave siguiente: OnPremisesExchangeConnectorService
+3.  Cambie el valor del nodo **SourceLevel** de **Seguimiento de actividad de advertencia** (valor predeterminado) a **Seguimiento de actividad detallado**, tal como se muestra a continuación.
 
     <TraceSourceLine>
           <Key xsi:type="xsd:string">OnPremisesExchangeConnectorService</Key>

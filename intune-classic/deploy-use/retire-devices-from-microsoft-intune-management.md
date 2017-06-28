@@ -1,5 +1,5 @@
 ---
-title: Retirar dispositivos | Microsoft Docs
+title: Retirar dispositivos
 description: "Intune admite una eliminación selectiva y una eliminación completa para quitar el dispositivo de administración de Intune mediante la eliminación de la directiva y el portal de empresa."
 keywords: 
 author: nathbarn
@@ -15,10 +15,10 @@ ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 88a18975049158ca632d51796e8b4022c42dff94
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 493b5bfce7ab9b78f5f7c48d0d18524d1b191f1f
 ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -33,10 +33,10 @@ Los dispositivos nunca se quitan de Intune sin su intervención, aunque los disp
 
 Es posible que tenga que retirar un dispositivo por una serie de motivos:
 
--    El usuario deja una organización de manera planeada (partida "administrada").
--    El usuario la deja repentinamente (se le despide, se va, etc.).
--    Pérdida del dispositivo.
--    Reasignación de un dispositivo (entrega a otro usuario, uso para otro propósito, etc.).
+-   El usuario deja una organización de manera planeada (partida "administrada").
+-   El usuario la deja repentinamente (se le despide, se va, etc.).
+-   Pérdida del dispositivo.
+-   Reasignación de un dispositivo (entrega a otro usuario, uso para otro propósito, etc.).
 
 Puede realizar un borrado selectivo o completo en un dispositivo administrado como dispositivo móvil, o puede bloquearlo y restablecer la contraseña. Si borra el dispositivo, libera la suscripción del usuario para agregar otro dispositivo. También puede retirar los equipos administrados con el software cliente de Intune.
 

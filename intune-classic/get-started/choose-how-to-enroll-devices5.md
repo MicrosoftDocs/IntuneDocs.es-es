@@ -1,5 +1,5 @@
 ---
-title: "Elegir cómo inscribir dispositivos móviles | Microsoft Docs"
+title: "Elegir cómo inscribir dispositivos móviles"
 description: "Decidir cómo inscribir dispositivos móviles en Intune respondiendo a unas preguntas sencillas"
 keywords: 
 author: NathBarn
@@ -15,10 +15,10 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.custom: intune-classic EXPIERIMENT
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 64f8a051cfa873df034e3d260862181ce637948c
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: e978a9df5d0c0e2e94f484c5e683a970f66dc945
 ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -31,9 +31,11 @@ Las respuestas a la siguiente serie de preguntas le servirán para saber cuál e
 ## <a name="how-will-you-manage-shared-ios-devices"></a>**¿Cómo se administran los dispositivos iOS compartidos?**
 
 > [!div class="button"]
-Inscripción de DEP de iOS > [!div class="button"]
-> Inscripción directa de iOS > [!div class="button"]
-Inscripción de DEM >
+[Inscripción de DEP de iOS >](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
+> [!div class="button"]
+[Inscripción directa de iOS >](/intune-classic/deploy-use/ios-direct-enrollment-in-microsoft-intune)
+> [!div class="button"]
+[Inscripción de DEM >](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
   - **Programa de inscripción de dispositivos (DEP) de Apple:** los dispositivos iOS adquiridos o administrados con DEP se pueden inscribir con un perfil de inscripción. Cuando esos dispositivos se encienden por primera vez, descargan el perfil de DEP y se inscriben con ese perfil de DEP.
 

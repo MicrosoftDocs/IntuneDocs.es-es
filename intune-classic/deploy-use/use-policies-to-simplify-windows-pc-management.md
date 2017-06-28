@@ -1,5 +1,5 @@
 ---
-title: "Usar directivas para simplificar la administración de PC de Windows | Microsoft Docs"
+title: "Usar directivas para simplificar la administración de PC de Windows"
 description: "Describe las directivas de administración de PC de Windows y la configuración de Microsoft Intune Center."
 keywords: 
 author: nathbarn
@@ -15,15 +15,17 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: a2b956f8c999ec5489152a63a9af6e24da8ec536
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: e14b5c56356812fdc3ea775cddde0f668b344177
 ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Usar directivas para simplificar la administración de PC de Windows
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Para administrar escritorios de Windows como PC, ejecutando el cliente de software de Intune en ellos, solo puede usar las directivas que se encuentran en las directivas de **Administración de equipos** de la consola de administración de Intune. Todas las demás directivas que aparecen en la consola de administración son solo para dispositivos móviles. Al usar las directivas de **Administración de equipos** puede configurar las opciones en Microsoft Intune Center, controlar las actualizaciones en PC y configurar Firewall de Windows para PC.
 

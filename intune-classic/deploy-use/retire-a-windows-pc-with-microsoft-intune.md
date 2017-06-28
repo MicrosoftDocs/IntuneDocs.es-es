@@ -1,5 +1,5 @@
 ---
-title: Retirar un PC de Windows | Microsoft Docs
+title: Retirar un PC de Windows
 description: "Cómo retirar un PC de Windows administrado por Intune."
 keywords: 
 author: nathbarn
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 30781be121782196b760f5aa163e922122480d33
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 09bba1ea199b51fdd1503cb1f0a3beeb97b6aa47
 ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="retire-a-windows-pc"></a>Retirar un PC de Windows
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Use los siguientes pasos para retirar equipos de escritorio que está administrando como PC ejecutando el cliente de software de Intune en ellos. Cuando retira un PC, este se quita de la administración de Intune. No puede restablecer la configuración de fábrica de un PC desde Intune para establecerlo de nuevo con la configuración de fábrica original.
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), seleccione **Grupos** &gt; **Todos los dispositivos** (u otro grupo que contenga el PC que quiera retirar).

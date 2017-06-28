@@ -18,16 +18,16 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0a4f5cbc81ed1fa7a1d1110080cc298a18463b22
+ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
+ms.openlocfilehash: f01d8b31f493b7103fe788aa62d37f9c73981984
 ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
 
 # <a name="using-the-intune-company-portal-website"></a>Usar el sitio web del Portal de empresa de Intune
-El [sitio web del Portal de empresa](http://portal.manage.microsoft.com) es una página web que pueden usar los usuarios finales para administrar equipos y dispositivos que hayan inscrito en Intune.
+El [sitio web del Portal de empresa](https://portal.manage.microsoft.com) es una página web que pueden usar los usuarios finales para administrar equipos y dispositivos que hayan inscrito en Intune.
 
 Pueden llevar a cabo las siguientes tareas desde el sitio web del Portal de empresa:
 

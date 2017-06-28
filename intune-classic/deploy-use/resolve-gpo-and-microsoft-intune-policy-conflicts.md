@@ -1,5 +1,5 @@
 ---
-title: Resolver conflictos de directivas de Intune y GPO | Microsoft Docs
+title: Resolver conflictos de directivas de Intune y GPO
 description: "Obtenga información acerca de cómo resolver los conflictos entre las directivas de configuración de directiva de grupo e Intune."
 keywords: 
 author: robstackmsft
@@ -15,15 +15,18 @@ ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 250ddb35aa33523141ae0f5af19b48b75ce0bef0
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 42debb9e26a226da6b2485a2ab1be2855d309747
 ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
 
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>Resolver conflictos de directivas de Microsoft Intune y objetos de directiva de grupo (GPO)
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Intune usa directivas que le ayudan a administrar la configuración en equipos Windows. Por ejemplo, puede usar una directiva para controlar la configuración de Firewall de Windows en los equipos. Muchas de las opciones de Intune son similares a las opciones que se pueden configurar con la directiva de grupo de Windows. Pero es posible que, en ocasiones, los dos métodos entren en conflicto.
 
 Cuando se producen conflictos, la directiva de grupo de nivel de dominio tiene prioridad sobre la directiva de Intune, a menos que el equipo no pueda iniciar sesión en el dominio. En este caso, la directiva de Intune se aplica al equipo cliente.

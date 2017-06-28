@@ -1,5 +1,5 @@
 ---
-title: "Simplificar la configuración de correo electrónico en dispositivos móviles | Microsoft Docs"
+title: "Simplificar la configuración de correo electrónico en dispositivos móviles"
 description: 
 keywords: 
 author: jeffgilb
@@ -15,10 +15,10 @@ ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 78bce5b82cfbb65473ad0b8cadb0db349ed3df3c
+ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
+ms.openlocfilehash: 2fe65f3021596390af8262f83704d6e4ceaa1716
 ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -37,8 +37,8 @@ Si es así, Microsoft Intune puede configurar automáticamente el correo electr�
 Después de configura el perfil de correo electrónico, puede restringir fácilmente el acceso al correo electrónico de empresa y a los servicios de Office 365 con directivas de acceso condicional de Intune. Estas directivas le permiten asegurarse de que el acceso al correo electrónico de la empresa y a los servicios de Office 365 está restringido a los dispositivos compatibles con las reglas establecidas en Intune.
 
 ## <a name="how-do-i-do-it"></a>¿Cómo lo hago?
-1.    Configure [automáticamente los perfiles de correo electrónico de usuario final](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) en dispositivos Windows, iOS y Android.
-2.    [Controle el acceso al correo electrónico de empresa](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) mediante directivas de acceso condicional.
+1.  Configure [automáticamente los perfiles de correo electrónico de usuario final](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) en dispositivos Windows, iOS y Android.
+2.  [Controle el acceso al correo electrónico de empresa](/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune) mediante directivas de acceso condicional.
 
 
 ### <a name="additional-information"></a>Información adicional:
