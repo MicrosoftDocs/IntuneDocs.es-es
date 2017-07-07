@@ -14,15 +14,12 @@ ms.assetid: d211b876-4d3a-473c-999f-843c0a16cd22
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 3159985bfbaec40899dd58766e214daa672ee6d4
-ms.contentlocale: es-es
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="download-skycure-ios-app-configuration-policy"></a>Descarga de la directiva de configuración de la aplicación de iOS de Skycure
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -32,7 +29,7 @@ ms.lasthandoff: 06/08/2017
 Debe iniciar sesión en la consola de administración de Skycure para llevar a cabo los siguientes pasos.
 
 > [!TIP] 
-> Si utiliza Microsoft Internet Explorer 11 o Microsoft Edge, debe abrir la consola de administración de Skycure en modo privado.
+> Si utiliza Microsoft Internet Explorer 11 o Edge, debe abrir la consola de administración de Skycure en modo privado.
 
 ## <a name="to-download-the-ios-app-configuration-policy"></a>Para descargar la directiva de configuración de la aplicación de iOS
 
@@ -54,4 +51,3 @@ Debe iniciar sesión en la consola de administración de Skycure para llevar a c
 ## <a name="next-steps"></a>Pasos siguientes
 
 [Adición de aplicaciones de Skycure, la aplicación de Microsoft Authenticator y la directiva de configuración de iOS](/intune-classic/deploy-use/add-skycure-apps-microsoft-authenticator-and-ios-app-configuration-policy)
-

@@ -1,11 +1,11 @@
 ---
-title: "Clasificar los dispositivos con la asignación de grupos de dispositivos | Microsoft Docs"
+title: "Clasificar los dispositivos con la asignación de grupos de dispositivos"
 description: "Use la asignación de grupos de dispositivos de Microsoft Intune para agrupar dispositivos en las categorías que haya definido y que, de este modo, sea más fácil administrarlos."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 10/26/2016
+ms.date: 06/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,12 @@ ms.assetid: 8b8c06a3-6b6c-4cf1-8646-b24fa9b1a39e
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 618827ed6baf7a9dec6aef804f19bcbca08ed39f
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: ff136d430496392b6ca8e5b944820fe9e14553d3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="categorize-devices-with-device-group-mapping-in-microsoft-intune"></a>Clasificar los dispositivos con la asignación de grupos de dispositivos en Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -32,7 +30,7 @@ En la asignación de grupos de dispositivos se produce el siguiente flujo de tra
 1. Crear categorías que los usuarios podrán elegir cuando inscriban sus dispositivos
 2. Puede crear grupos, o usar grupos existentes, para cada categoría que quiera usar. Según la versión de Intune que esté utilizando, serán grupos de Intune o grupos de seguridad de Azure Active Directory.
 2. Se configuran reglas que asignan la categoría que elija al grupo de dispositivos creado.
-3. Cuando los usuarios finales inscriben sus dispositivos, deben elegir una categoría en la lista de categorías configuradas. Tras elegirlas, sus dispositivos se agregan automáticamente al grupo correspondiente que ha creado. Si un dispositivo ya está inscrito, se pedirá al usuario final que seleccione una categoría la próxima vez que tenga acceso a la aplicación Portal de empresa.
+3. Cuando los usuarios finales de dispositivos iOS y Android inscriben sus dispositivos, deben elegir una categoría de la lista de categorías configuradas. Para asignar una categoría a un dispositivo Windows, los usuarios finales deben usar el sitio web del Portal de empresa (consulte **Después de configurar los grupos de dispositivos** en este tema para más información).
 4. Después, puede implementar directivas y aplicaciones en esos grupos.
 
 Puede crear las categorías de dispositivos que desee, por ejemplo:
@@ -86,8 +84,13 @@ Por ejemplo (**device.deviceCategory -eq** "<*el nombre de la categoría de disp
 
 ## <a name="after-you-configure-device-groups"></a>Después de configurar grupos de dispositivos
 
-Cuando los usuarios inscriban sus dispositivos, verán una lista de las categorías configuradas. Tras elegir una categoría y finalizar la inscripción, sus dispositivos se agregarán al grupo de dispositivos de Intune, o al grupo de seguridad de Active Directory correspondiente a la categoría que eligieron.
+Cuando los usuarios finales de dispositivos iOS y Android inscriben sus dispositivos, deben elegir una categoría de la lista de categorías configuradas. Tras elegir una categoría y finalizar la inscripción, sus dispositivos se agregarán al grupo de dispositivos de Intune, o al grupo de seguridad de Active Directory correspondiente a la categoría que eligieron.
+
+Para asignar una categoría a un dispositivo Windows, los usuarios finales deben usar el sitio web del Portal de empresa (portal.manage.microsoft.com) después de inscribir el dispositivo. En un dispositivo Windows, acceda al sitio web y vaya a **Menú** > **Mis dispositivos**. Elija un dispositivo inscrito de la página y luego seleccione una categoría. 
+
+Tras elegir una categoría, el dispositivo se agrega automáticamente al grupo correspondiente que ha creado. Si un dispositivo ya estaba inscrito antes de que configurara las categorías, el usuario final verá una notificación sobre el dispositivo en el sitio web del Portal de empresa y se le pedirá que seleccione una categoría la próxima vez que acceda a la aplicación del Portal de empresa en iOS o Android.
+
+
 
 ### <a name="see-also"></a>Consulte también
 [Usar grupos para administrar usuarios y dispositivos en Microsoft Intune](use-groups-to-manage-users-and-devices-with-microsoft-intune.md)
-

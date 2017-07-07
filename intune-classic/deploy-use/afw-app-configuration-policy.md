@@ -1,5 +1,5 @@
 ---
-title: "Directiva de configuración de aplicaciones Android for Work | Microsoft Docs"
+title: "Directiva de configuración de aplicaciones Android for Work"
 description: "Use las directivas de configuración de aplicaciones móviles de Intune para proporcionar los valores de configuración que podrían ser necesarios cuando los usuarios ejecutan una aplicación Android for Work."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: fc6b645a-e837-4b2a-a10f-144065cbd8dd
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 69cee5763cb8a24b4a3be6e981bcd46512bfc3ba
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: f2284920852de5a79cf47fee81922a5b069157c3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-android-for-work-apps-with-mobile-app-configuration-policies-in-microsoft-intune"></a>Configuración de aplicaciones Android for Work con directivas de configuración de aplicaciones móviles en Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -76,4 +73,3 @@ Cuando se ejecuta la aplicación implementada en un dispositivo, se ejecutará c
 
 > [!TIP]
 > Solo puede implementar una directiva de configuración de aplicación para cada aplicación en un usuario.
-

@@ -1,5 +1,5 @@
 ---
-title: Otras opciones y extras para las evaluaciones de Intune | Microsoft Docs
+title: Otras opciones y extras para las evaluaciones de Intune
 description: "Describe alertas, notificaciones e informes, además de capacidades generales de Intune que necesita conocer al registrarse para obtener una evaluación gratuita de 30 días de Intune."
 keywords: 
 author: lindavr
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 170cd959-d35b-4129-ae60-117d7e881bc9
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3dcaf3ccc8c8581704351a19bce0a0ab57013040
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c0299b9bcb8c4cf35e2ddf60da428cc04bbdb4f0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="other-options-and-extras-for-intune-evaluation-subscriptions"></a>Otras opciones y extras para las suscripciones de evaluación de Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -46,16 +43,13 @@ Intune tiene una amplia variedad de funciones que abarcan mucho más de lo expue
 
 -   **Controle el acceso a los recursos de la empresa.** Puede implementar certificados, perfiles de correo electrónico, perfiles de VPN y perfiles de Wi-Fi en dispositivos móviles, lo que permite configurarlos más rápidamente. Para obtener más información, vea [Habilitar el acceso a los recursos de empresa con Microsoft Intune](/intune-classic/Deploy-Use/enable-access-to-company-resources-with-microsoft-intune).
 
-Para más detalles sobre todas las funciones de Intune, vea:
-- [Funcionalidades de administración de dispositivos inscritos en Microsoft Intune](/intune-classic/get-started/mobile-device-management-capabilities-in-microsoft-intune)
-- [Funciones de administración de equipos Windows en Microsoft Intune](/intune-classic/get-started/windows-pc-management-capabilities-in-microsoft-intune)
+Para obtener información sobre todas las funcionalidades de Intune, vea [Funcionalidades de administración de dispositivos inscritos en Microsoft Intune](/intune-classic/get-started/mobile-device-management-capabilities-in-microsoft-intune).
 
-Si quiere obtener más información sobre las funciones incorporadas recientemente a Intune, vea [Novedades de Microsoft Intune](/intune-classic/Deploy-Use/whats-new-in-microsoft-intune).
+Si quiere obtener más información sobre las funciones incorporadas recientemente a Intune, vea [Novedades de Microsoft Intune](/intune-classic/whats-new/whats-new-in-microsoft-intune).
 
 Las opciones de soporte técnico se describen en [Cómo obtener asistencia para Microsoft Intune](/intune-classic/Troubleshoot/how-to-get-support-for-microsoft-intune) y puede unirse a las discusiones sobre Intune en [Foros de Microsoft Intune](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod).
 
 ## <a name="next-steps"></a>Pasos siguientes
-Lea sobre algunas [formas comunes de usar Intune](common-ways-to-use-intune.md)
+Lea sobre algunas [formas comunes de usar Intune](/intune/common-scenarios)
 
 Convertir a una [suscripción de pago](get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
-

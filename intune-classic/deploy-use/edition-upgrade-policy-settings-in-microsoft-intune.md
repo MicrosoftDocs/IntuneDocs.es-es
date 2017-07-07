@@ -1,5 +1,5 @@
 ---
-title: "Configuración de la directiva de actualización de edición de Windows | Microsoft Docs"
+title: "Configuración de la directiva de actualización de ediciones de Windows"
 description: "Aprenda a actualizar automáticamente los dispositivos Windows 10 a una versión distinta con Intune."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 8589866a-3f13-489b-a5cd-cee017d16d54
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 81061f032ef2079695f45e54e99cbb6479252bed
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1505adb219c38d9a67f4fa276ca345f05a0df42a
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="windows-edition-upgrade-policy-settings-in-microsoft-intune"></a>Configuración de directivas de actualización de edición de Windows en Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -56,4 +53,3 @@ Antes de empezar a actualizar dispositivos a la versión más reciente, necesita
 
 ### <a name="see-also"></a>Consulte también
 [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

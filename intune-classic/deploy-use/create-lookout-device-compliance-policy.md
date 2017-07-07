@@ -1,5 +1,5 @@
 ---
-title: "Habilitar la regla de protección de dispositivos | Microsoft Docs"
+title: "Habilitación de la regla de protección de dispositivos"
 description: "Habilite la regla de protección contra amenazas móviles en la directiva de cumplimiento normativo del dispositivo."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: c951692d-6538-46c0-a9f0-d607ded189ae
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 67913bfcbca3cef52e309ad86bfe722db6e16895
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 28ae825a9e33547a1987989d38667417214b97b2
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-lookout-device-compliance-policy-in-intune"></a>Creación de la directiva de cumplimiento de dispositivos de Lookout en Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -62,4 +59,3 @@ Para ver el estado de cumplimiento de un dispositivo, vaya a la [consola de admi
   * [SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
   * [Skype Empresarial Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
   * [Dynamics CRM](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
-

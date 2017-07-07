@@ -1,5 +1,5 @@
 ---
-title: "Opciones de configuración de cumplimiento para Android for Work | Microsoft Docs"
+title: "Opciones de configuración de cumplimiento para Android for Work"
 description: "En este tema se describe la configuración de directivas de cumplimiento para dispositivos Android que son compatibles con Android for Work."
 keywords: 
 author: andredm7
@@ -14,16 +14,12 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 88774055297f06d6901f1a9eea8e6fd60a697e64
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 79be4993c9b23294d1f49743f863588f9d0cb9b5
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="compliance-policy-settings-for-android-for-work-devices-in-microsoft-intune"></a>Configuración de directivas de cumplimiento para dispositivos Android for Work en Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -85,4 +81,3 @@ Si quiere información sobre otras plataformas, seleccione uno de los siguientes
   Además, se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario final puede optar por actualizar el dispositivo, tras lo cual podrá tener acceso a los recursos de la empresa.
 
 - **Maximum OS version allowed** (Versión de SO máxima permitida): cuando un dispositivo usa una versión de sistema operativo (SO) posterior a la especificada en la regla, se bloquea el acceso a los recursos de la empresa y se solicita al usuario que se ponga en contacto con el administrador de TI. Mientras no se cambie la regla para permitir la versión de sistema operativo, este dispositivo no podrá usarse para tener acceso a los recursos de la empresa.
-

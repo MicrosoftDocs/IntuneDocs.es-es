@@ -14,15 +14,12 @@ ms.assetid: 018d26f4-4a75-4e27-bb04-54f54106cb2f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 425b86e92281bb6e3657a6c806be269ccae94311
-ms.contentlocale: es-es
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="add-skycure-apps-microsoft-authenticator-app-and-ios-configuration-policy"></a>Adición de aplicaciones de Skycure, la aplicación de Microsoft Authenticator y la directiva de configuración de iOS
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -108,4 +105,3 @@ Además, es necesario [Microsoft Authenticator](https://docs.microsoft.com/azure
 ## <a name="next-steps"></a>Pasos siguientes
 
 [Implementación de aplicaciones de Skycure, la aplicación de Microsoft Authenticator y la directiva de configuración de iOS](/intune-classic/deploy-use/deploy-skycure-apps-microsoft-authenticator-app-and-ios-app-configuration-policy)
-

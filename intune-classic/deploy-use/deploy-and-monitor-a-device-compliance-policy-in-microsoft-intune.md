@@ -14,15 +14,12 @@ ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: d0d48724a8c09a5dac0bfa2987a1eee05f218950
-ms.contentlocale: es-es
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune"></a>Implementar y supervisar una directiva de cumplimiento normativo en Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -73,4 +70,3 @@ Para obtener información sobre cómo usar la directiva de cumplimiento con dire
 
 ### <a name="see-also"></a>Consulte también
 [Introducción a las directivas de cumplimiento de dispositivos en Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md)
-
