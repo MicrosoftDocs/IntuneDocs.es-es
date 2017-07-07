@@ -1,5 +1,5 @@
 ---
-title: "Personalizar vistas de consola para roles de administración | Microsoft Docs"
+title: "Personalización de las vistas de consola para roles de administrador"
 description: "Use este tema para ayudarle a filtrar la vista de la consola de administración de Intune para que los administradores solo puedan ver los elementos que necesiten de acuerdo con su rol."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: e0783eaa-67dc-410e-9e80-4d3aa72f36d8
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 1ab4c0a7ae79d0d3396efe7c54deaf1d794a5aeb
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9b2016bc4f2c7ef63722becc413422d618939336
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="customize-intune-console-views-according-to-admin-roles"></a>Personalizar vistas de consola de Intune según los roles de administración
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -72,4 +69,3 @@ La vista de la consola de administración de Microsoft Intune se puede filtrar d
         -   Restablecer un código de acceso
 
 Cuando el administrador configurado abra la consola de administración de Intune, se le dará el nivel de acceso que se haya especificado.
-

@@ -1,5 +1,4 @@
 ---
-
 title: Opciones de directivas de Android for Work
 description: "Cree directivas que controlen la configuración y las características en los dispositivos Android for Work que administra con Intune."
 keywords: 
@@ -15,15 +14,12 @@ ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 858c4a525945694326952e8afe280e4b66cd2ccb
-ms.contentlocale: es-es
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="android-for-work-policy-settings-in-microsoft-intune"></a>Opciones de directivas de Android for Work en Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -93,4 +89,3 @@ Intune admite un número limitado de directivas personalizadas de Android en est
 
 ### <a name="see-also"></a>Consulte también
 [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

@@ -1,5 +1,5 @@
 ---
-title: Comprender las operaciones mediante informes | Microsoft Docs
+title: Comprender las operaciones mediante informes
 description: "Cree y administre informes sobre el software, el hardware y las licencias de software de la organización."
 keywords: 
 author: robstackmsft
@@ -14,16 +14,12 @@ ms.assetid: 857309c2-61c9-4c22-becf-4839fedeaece
 ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d16374606d60f3b09dc24b3c4ef4f196a739b32e
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: c433acc553b1f89789cdb72a33e8dbbc7929bae0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="understand-microsoft-intune-operations-by-using-reports"></a>Comprender las operaciones de Microsoft Intune mediante informes
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -73,6 +69,5 @@ Además, los informes admiten las siguientes acciones:
 |**Guardar**|En la página **Crear nuevo informe** , cada usuario puede guardar hasta 100 informes. Configure los parámetros del informe según sus requisitos y, después, elija **Guardar**o **Guardar como** (si quiere usar otro nombre).|
 |**Cargar**|En la página **Crear nuevo informe**, elija **Cargar** para recuperar cualquier conjunto de parámetros de informe que haya guardado.|
 |**Eliminar**|En el área de trabajo **Informes**, seleccione el tipo de informe deseado y elija **Cargar**. Luego, en la lista de informes, elija el icono de eliminación (x), situado junto al informe.|
-
 
 

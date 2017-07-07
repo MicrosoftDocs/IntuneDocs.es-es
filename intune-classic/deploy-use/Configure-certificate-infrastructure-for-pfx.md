@@ -14,14 +14,11 @@ ms.assetid: 2c543a02-44a5-4964-8000-a45e3bf2cc69
 ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 868578d6c6c87a9e7459160ed89dfd50629bdb51
-ms.contentlocale: es-es
-ms.lasthandoff: 06/08/2017
-
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="configure-certificate-infrastructure"></a>Configurar la infraestructura de certificados
 
@@ -159,4 +156,3 @@ Descargar, instalar y configurar Certificate Connector.
 
 ### <a name="next-steps"></a>Pasos siguientes
 Ya está listo para configurar los perfiles de certificado, como se describe en [Configurar perfiles de certificado de Intune](Configure-Intune-certificate-profiles.md).
-

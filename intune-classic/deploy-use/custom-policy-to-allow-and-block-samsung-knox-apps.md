@@ -1,5 +1,5 @@
 ---
-title: Aplicaciones permitidas y bloqueadas para KNOX | Microsoft Docs
+title: Aplicaciones bloqueadas y permitidas para KNOX
 description: Perfil personalizado para crear una lista de aplicaciones permitidas y bloqueadas para KNOX
 keywords: 
 author: robstackmsft
@@ -14,14 +14,11 @@ ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 933a47163ccc66a1bab636982ca422c4a704656d
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
-
+ms.openlocfilehash: b215425534e833db7e92e3f60fc507a168ef576f
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Uso de directivas personalizadas para permitir y bloquear aplicaciones para dispositivos Samsung KNOX Standard
 
@@ -43,9 +40,9 @@ Esta configuración solo se puede usar en dispositivos que ejecutan Samsung KNOX
     
     - **Nombre de la configuración** Escriba **PreventStartPackages**.
     - **Descripción del valor** Escriba una descripción opcional como "Lista de aplicaciones bloqueadas que no se pueden ejecutar".
-    -     **Tipo de datos** En la lista desplegable, elija **Cadena**.
-    -     **OMA-URI.** Escriba **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
-    -     **Valor** Escriba una lista de los nombres de paquetes de aplicaciones que quiera bloquear. Puede usar **; : ,** o **|** como delimitador. (Ejemplo: paquete1;paquete2;)
+    -   **Tipo de datos** En la lista desplegable, elija **Cadena**.
+    -   **OMA-URI.** Escriba **./Vendor/MSFT/PolicyManager/My/ApplicationManagement/PreventStartPackages**
+    -   **Valor** Escriba una lista de los nombres de paquetes de aplicaciones que quiera bloquear. Puede usar **; : ,** o **|** como delimitador. (Ejemplo: paquete1;paquete2;)
 
     Para obtener una lista de las aplicaciones que los usuarios pueden instalar de Google Play Store al excluir todas las demás aplicaciones:
 
@@ -74,4 +71,3 @@ Cuando se selecciona una directiva implementada, puede ver más información ace
 
 ### <a name="see-also"></a>Consulte también
 [Configuración de directivas de Android y Samsung KNOX en Microsoft Intune](android-policy-settings-in-microsoft-intune.md)
-

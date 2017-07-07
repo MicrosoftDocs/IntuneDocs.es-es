@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6eeec7aa-1b07-4ce3-894c-13e09b89bdd4
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: af3313e6ba5cbf9184aaaa9b197f7a3b2b9d4c3e
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="enroll-your-ios-device-in-intune"></a>Inscriba el dispositivo iOS en Intune
 
 Si su empresa o centro educativo usa Microsoft Intune, puede inscribir un dispositivo iOS para obtener acceso al correo electrónico, a los archivos y a otros recursos de la empresa. Cuando los dispositivos se inscriben, el departamento de TI puede administrar esos recursos profesionales o educativos y mantenerlos protegidos, al tiempo que los usuarios pueden usar el dispositivo que elijan libremente para realizar su trabajo. Para obtener más información sobre la inscripción, vea [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) (¿Qué ocurre cuando se instala la aplicación de portal de empresa y se inscribe el dispositivo en Intune?).
@@ -65,7 +60,7 @@ Si su empresa o centro educativo usa Microsoft Intune, puede inscribir un dispos
 
 5.  En la pantalla **¿Qué ocurre después?**, lea lo que ocurre durante la inscripción y, luego, pulse en **Inscribir**.
 
-     ![ios-enroll-what-comes-next](./media/ios-enroll-1d-what-comes-next.png)
+    ![ios-enroll-what-comes-next](./media/ios-enroll-1d-what-comes-next.png)
 
 6.  En la pantalla **Instalar perfil**, pulse **Instalar** y escriba su contraseña, si se le pide.
 
@@ -77,15 +72,15 @@ Si su empresa o centro educativo usa Microsoft Intune, puede inscribir un dispos
 
 8.  Pulse **Instalar** para indicar que ha leído la advertencia.
 
-       ![ios-enroll-tap-install-after-warning](./media/ios-enroll-4-warning.png)
+    ![ios-enroll-tap-install-after-warning](./media/ios-enroll-4-warning.png)
 
 9.  Pulse **Confiar**.
 
-       ![ios-enroll-tap-trust](./media/ios-enroll-5-trust.png)
+    ![ios-enroll-tap-trust](./media/ios-enroll-5-trust.png)
 
 10.  Cuando la pantalla cambie para indicar que el perfil ha terminado de instalarse, pulse en **Listo**.
 
-     ![ios-enroll-tap-done](./media/ios-enroll-6-done.png)
+    ![ios-enroll-tap-done](./media/ios-enroll-6-done.png)
 
     Aparece el mensaje "Inscribiendo el dispositivo" en pantalla.
 
@@ -107,4 +102,3 @@ El dispositivo ya está inscrito en Intune. Se le dirigirá de nuevo a la aplica
 > Si su organización usa software de administración de gastos de telecomunicaciones, deberá completar algunos pasos adicionales antes de que el dispositivo esté completamente inscrito. Descubra más [aquí](enroll-your-device-with-telecom-expense-management-ios.md).
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
-

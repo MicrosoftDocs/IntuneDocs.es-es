@@ -14,15 +14,12 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 535979b6adf25c67daaab2df924cbb0e21e15a36
-ms.contentlocale: es-es
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>Tareas comunes de administración de equipos Windows con el cliente de software de Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -39,6 +36,5 @@ En este tema se enumeran las tareas que puede realizar para administrar escritor
 - [Administrar la vinculación del dispositivo de usuario para PC de Windows](manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md): explica cómo y cuándo debe vincular un usuario a un PC antes de implementar software para el usuario.
 
 - [Solicitar y proporcionar asistencia remota a los PC de Windows](request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md): explica cómo los usuarios de PC de Intune obtienen ayuda de asistencia remota gracias a usted y describe los requisitos previos y el programa de instalación de TeamViewer.
-
 
 

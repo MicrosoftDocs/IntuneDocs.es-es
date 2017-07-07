@@ -1,5 +1,5 @@
 ---
-title: "Habilitación de Mobile Threat Defense de Skycure en Intune | Microsoft Docs"
+title: "Habilitación de Mobile Threat Defense de Skycure en Intune"
 description: "Habilite Mobile Threat Defense de Skycure en la consola clásica de Intune."
 keywords: 
 author: andredm7
@@ -14,20 +14,17 @@ ms.assetid: 0cc4e59d-819a-47a2-a26f-4f8d0f8df7bf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9be25144ce8c556e890668979e674dd56370f8cd
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 4dad45d15fec7189fdcf184839040b9e3f9a3a48
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enable-skycure-mobile-threat-defense-in-intune"></a>Habilitación de Mobile Threat Defense de Skycure en Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Para habilitar la protección contra amenazas móviles de Skycure
+Para habilitar la conexión de Mobile Threat Defense (MTD) de Skycure en Intune, ya debe haber configurado el [conector de Intune en la consola de Skycure] (/intune-classic/deploy-use/setup-the-skycure-integration-with-Intune).
 
 ## <a name="to-enable-the-skycure-mtd-connection-in-intune"></a>Para habilitar la conexión de MTD de Skycure en Intune
 
@@ -45,4 +42,3 @@ Con esto se completa la configuración de la integración de Skycure e Intune en
 ## <a name="next-steps"></a>Pasos siguientes
 
 [Creación de directiva de cumplimiento de Mobile Threat Defense de Skycure en Intune](/intune-classic/deploy-use/create-skycure-mobile-threat-defense-compliance-policy)
-

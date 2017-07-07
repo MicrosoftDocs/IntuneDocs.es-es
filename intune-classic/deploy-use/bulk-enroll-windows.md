@@ -1,5 +1,5 @@
 ---
-title: "Inscripción masiva para Windows 10 | Microsoft Docs"
+title: "Inscripción masiva para Windows 10"
 description: "Creación de un paquete de inscripción masiva para Microsoft Intune"
 keywords: 
 author: NathBarn
@@ -13,12 +13,11 @@ ms.technology:
 ms.assetid: 0053e37a-f26e-452f-9524-5039a635b52e
 ms.reviewer: damionw
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 027f2ff4e822f7800405bd0f318afe28a47c5a00
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: ab52ba70403da5192cd3539dfd6d1e64bd79268c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Inscripción masiva para dispositivos Windows
 
@@ -48,19 +47,19 @@ La inscripción masiva de dispositivos Windows requiere lo siguiente:
   - **Project folder**: carpeta en la que se guardará el proyecto nuevo
   - **Description**: descripción opcional del proyecto ![Captura de pantalla de la especificación de nombre, carpeta de proyecto y descripción en la aplicación Windows Configuration Designer](../media/bulk-enroll-name.png)
 
-4.    Escriba un nombre único para los dispositivos. Los nombres pueden incluir un número de serie (%%SERIAL%%) o un conjunto aleatorio de caracteres. De manera opcional, también puede escribir una clave de producto si actualiza la edición de Windows, configura el dispositivo para su uso compartido y quita software instalado previamente.<BR>
+4.  Escriba un nombre único para los dispositivos. Los nombres pueden incluir un número de serie (%%SERIAL%%) o un conjunto aleatorio de caracteres. De manera opcional, también puede escribir una clave de producto si actualiza la edición de Windows, configura el dispositivo para su uso compartido y quita software instalado previamente.<BR>
 ![Captura de pantalla de la especificación de nombre, carpeta de proyecto y descripción en la aplicación Windows Configuration Designer](../media/bulk-enroll-device.png)
 
-5.    De manera opcional, puede configurar la red Wi-Fi a la que se conectan los dispositivos cuando se inician por primera vez.  Si no se configura, se requiere una conexión de red con cable cuando se inicia por primera vez el dispositivo.
+5.  De manera opcional, puede configurar la red Wi-Fi a la que se conectan los dispositivos cuando se inician por primera vez.  Si no se configura, se requiere una conexión de red con cable cuando se inicia por primera vez el dispositivo.
 ![Captura de pantalla de la habilitación de la red Wi-Fi, incluidas opciones de tipo de red y SSID de red en la aplicación Windows Configuration Designer](../media/bulk-enroll-network.png)
 
-6.    Seleccione **Enroll in Azure AD** (Inscribirse en Azure AD), escriba una fecha de expiración en **Bulk Token Expiry** (Expiración de token de operación masiva) y, luego, seleccione **Get Bulk Token** (Obtener token de operación masiva).
+6.  Seleccione **Enroll in Azure AD** (Inscribirse en Azure AD), escriba una fecha de expiración en **Bulk Token Expiry** (Expiración de token de operación masiva) y, luego, seleccione **Get Bulk Token** (Obtener token de operación masiva).
 ![Captura de pantalla de la especificación de nombre, carpeta de proyecto y descripción en la aplicación Windows Configuration Designer](../media/bulk-enroll-account.png)
 
 7. Proporcione sus credenciales de Azure AD para obtener un token de operación masiva.
 ![Captura de pantalla de la especificación de nombre, carpeta de proyecto y descripción en la aplicación Windows Configuration Designer](../media/bulk-enroll-cred.png)
 
-8.    Haga clic en **Siguiente** cuando el **Bulk Token** (Token de operación masiva) se recupere correctamente.
+8.  Haga clic en **Siguiente** cuando el **Bulk Token** (Token de operación masiva) se recupere correctamente.
 
 9. De manera opcional, puede **agregar aplicaciones** y **agregar certificados**. Estas aplicaciones y certificados se aprovisionan en el dispositivo.
 
@@ -88,4 +87,3 @@ El aprovisionamiento está diseñado para usarlo en dispositivos Windows nuevos.
 
 - Un paquete de aprovisionamiento que intenta unirse a un dominio de Active Directory o a un inquilino de Azure Active Directory que no crea una cuenta local podría generar que el dispositivo no sea accesible si el proceso de unión al dominio presenta un error debido a la falta de conectividad de red.
 - Los scripts que ejecuta el paquete de aprovisionamiento se ejecutan en contexto de sistema y pueden hacer cambios arbitrarios en las configuraciones y el sistema de archivos del dispositivo. Un script incorrecto o malintencionado podría poner el dispositivo en un estado que solo se podría recuperar si se restablece la imagen inicial o se realiza un restablecimiento de fábrica del dispositivo.
-

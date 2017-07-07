@@ -14,15 +14,12 @@ ms.assetid: f5c944ea-32a6-48af-bb57-16d5f1f3c588
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: f79ebec4dea17bd03b88d97aa1d7b30a58e35cdb
-ms.contentlocale: es-es
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="troubleshoot-email-profiles-in-microsoft-intune"></a>Solucionar problemas de perfiles de correo electrónico en Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -74,4 +71,3 @@ Revise la configuración de su perfil EAS de Samsung KNOX y la directiva de orig
 
 ## <a name="next-steps"></a>Pasos siguientes
 Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el servicio de soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico de Microsoft Intune).
-

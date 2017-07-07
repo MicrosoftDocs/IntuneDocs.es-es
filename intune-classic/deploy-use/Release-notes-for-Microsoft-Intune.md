@@ -1,5 +1,5 @@
 ---
-title: "Notas de la versión para Microsoft Intune | Microsoft Docs"
+title: "Notas de la versión para Microsoft Intune"
 description: "Notas de la versión de Intune"
 keywords: 
 author: arob98
@@ -14,15 +14,12 @@ ms.assetid: db9479b2-582d-4a1a-9fbc-fbfc6c680e6f
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2c7563ba79819a59740ba81c078c5540d0792ee5
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 751bd0bc90b762c5b51b85fae2129e53773b54fe
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="release-notes-for-microsoft-intune"></a>Notas de la versión para Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -78,7 +75,7 @@ En ambos casos, el perfil de acceso de recursos (perfil de correo electrónico) 
 ## <a name="microsoft-intune-app-wrapping-tool-for-android-has-no-built-in-uninstall-capability"></a>La herramienta de ajuste de aplicaciones de Microsoft Intune para Android no presenta ninguna capacidad de desinstalación integrada
 **Problema:** la **Herramienta de ajuste de aplicaciones de Microsoft para Android** no tiene funciones integradas para desinstalar la herramienta.
 
-**Solución:** vaya a la ubicación donde instaló la herramienta y elimine el directorio. La ubicación de instalación predeterminada es: **C:\Program Files.
+**Solución:** vaya a la ubicación donde instaló la herramienta y elimine el directorio. La ubicación de instalación predeterminada es: **C:\Archivos de programa\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool. Para más información sobre la herramienta de ajuste de aplicaciones, consulte [Preparar aplicaciones Android para la administración de aplicaciones móviles con la Herramienta de ajuste de aplicaciones de Intune](/intune/app-wrapper-prepare-android).
 
 ## <a name="remote-assistance-is-not-available-on-computers-that-run-windows-8-or-windows-81"></a>La asistencia remota no está disponible en equipos que ejecutan Windows 8 o Windows 8.1
 **Problema:** en esta versión, la característica de asistencia remota no está disponible en equipos que ejecutan Windows 8 o Windows 8.1.
@@ -94,4 +91,3 @@ En ambos casos, el perfil de acceso de recursos (perfil de correo electrónico) 
 Azure Portal admite los siguientes idiomas: alemán, checo, chino (simplificado), chino (tradicional), coreano, español, francés, húngaro, inglés, italiano, japonés, neerlandés, polaco, portugués (Brasil), portugués (Portugal), ruso, sueco y turco.
 
 La consola de administración de Intune y las experiencias móviles de usuario admiten danés, finés, griego, noruego y rumano, además de todos los idiomas admitidos en Azure Portal.
-

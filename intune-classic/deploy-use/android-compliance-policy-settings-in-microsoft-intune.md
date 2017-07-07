@@ -1,5 +1,5 @@
 ---
-title: "Opciones de configuración de directivas de cumplimiento para Android | Microsoft Docs"
+title: "Configuración de directivas de cumplimiento para Android"
 description: "En este tema se describe la configuración de directivas de cumplimiento normativo para dispositivos Android."
 keywords: 
 author: andredm7
@@ -14,16 +14,12 @@ ms.assetid: e721c5c7-9678-4f3b-81d4-564da5efd337
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 06996ca5d6c330357d6fdee19963d425bc353070
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: cc698998491fa56769376c013fb76ac75b5627bb
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="compliance-policy-settings-for-android-devices-in-microsoft-intune"></a>Opciones de configuración de directivas de cumplimiento para dispositivos Android en Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -90,4 +86,3 @@ Si quiere información sobre otras plataformas, seleccione uno de los siguientes
   Además, se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario puede optar por actualizar el dispositivo, tras lo cual podrá tener acceso a los recursos de la empresa.
 
 - **Versión de SO máxima permitida**: cuando un dispositivo usa una versión de SO posterior a la especificada en la regla, se bloquea el acceso a los recursos de la empresa y se solicita al usuario que se ponga en contacto con el administrador de TI. Mientras que cambie la regla para permitir la versión de SO, este dispositivo no podrá usarse para acceder a los recursos de la empresa.
-
