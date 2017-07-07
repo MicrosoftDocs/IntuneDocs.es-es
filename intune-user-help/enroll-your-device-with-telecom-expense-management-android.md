@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 26aa3698-7e4d-453a-8852-ab75e72b6485
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: fa36b1449cb1ce5d9e0d3b1ca2f3e0db78729f1d
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>Inscripción del dispositivo Android en la administración de gastos de telecomunicaciones
 
 Su organización puede estar usando software de administración de gastos de telecomunicaciones para asegurarse de que sus planes de voz y datos se utilizan dentro de límites aceptables. Cuando haya completado la inscripción del dispositivo, se le pedirá que seleccione la categoría más apropiada para dicho dispositivo.
@@ -67,4 +63,3 @@ Puntee en la flecha __siguiente__ situada en la esquina superior derecha de la p
 Una vez inscrito, puede empezar a ver su uso de datos en la aplicación Datalert.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
-

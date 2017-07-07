@@ -1,12 +1,12 @@
 ---
 title: Borrado selectivo o completo en dispositivos mediante Intune
-titleSuffix: Intune Azure preview
-description: "Versión preliminar de Intune Azure: aprenda a realizar un borrado selectivo de los datos de empresa en un dispositivo o un borrado completo para restablecer el dispositivo a los valores predeterminados de fábrica."
+titleSuffix: Intune on Azure
+description: "Aprenda a realizar un borrado selectivo de los datos de la compañía en un dispositivo o un borrado completo para restablecer el dispositivo a los valores predeterminados de fábrica."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 06/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,15 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: a8233ba1b5ea05a46f46219d98625e4d4bea6bb9
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2063612ee11d2bc7915ebe4bb28c67854a2599c3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-full-or-selective-wipe"></a>Usar el borrado selectivo o completo
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Puede borrar las aplicaciones y datos de los dispositivos administrados por Intune que ya no son necesarios, se van a reutilizar o han desaparecido. Para hacer esto, Intune proporciona funcionalidades de borrado completo y de borrado selectivo. Los usuarios también pueden emitir un comando de borrado remoto de dispositivos desde el portal de empresa de Intune en dispositivos de propiedad privada inscritos en Intune.
 
@@ -101,8 +98,8 @@ El **borrado selectivo** quita los datos de la empresa incluidos los datos de ad
 |Configuración de perfil de Wi-Fi y VPN|Quitado.|Quitado.|
 |Configuración de perfil de certificado|Certificados revocados, pero no eliminados.|Certificados eliminados y revocados.|
 |Agente de administración|Se revocarán los privilegios del administrador de dispositivos.|Se revocarán los privilegios del administrador de dispositivos.|
-|Correo electrónico|Se quita el correo electrónico recibido en la aplicación de Microsoft Outlook para Android.|Los perfiles de correo electrónico que se aprovisionan mediante Intune se quitan y el correo electrónico almacenado en caché en el dispositivo se elimina.|
-|Outlook|Se quita el correo electrónico recibido en la aplicación de Microsoft Outlook para iOS.</br>Excepción: Si Exchange está hospedado de forma local, no se quita el correo electrónico .|Se quita el correo electrónico recibido en la aplicación de Microsoft Outlook para iOS.</br>Excepción: Si Exchange está hospedado de forma local, no se quita el correo electrónico .|
+|Correo electrónico|n/a (los dispositivos Android no admiten perfiles de correo electrónico)|Los perfiles de correo electrónico que se aprovisionan mediante Intune se quitan y el correo electrónico almacenado en caché en el dispositivo se elimina.|
+|Outlook|Se quita el correo electrónico recibido en la aplicación de Microsoft Outlook para Android.</br>Excepción: Si Exchange está hospedado de forma local, no se quita el correo electrónico .|Se quita el correo electrónico recibido en la aplicación de Microsoft Outlook para Android.</br>Excepción: Si Exchange está hospedado de forma local, no se quita el correo electrónico .|
 |Separación de Azure Active Directory (AAD)|Registro de AAD eliminado.|Registro de AAD eliminado.|
 |Contactos | Se quitan los contactos sincronizados directamente desde la aplicación en la libreta de direcciones nativa.  No se pueden borrar los contactos sincronizados desde la libreta de direcciones nativa en otro origen externo. <br /> <br />Actualmente, se admite solo la aplicación Outlook.|Se quitan los contactos sincronizados directamente desde la aplicación en la libreta de direcciones nativa.  No se pueden borrar los contactos sincronizados desde la libreta de direcciones nativa en otro origen externo. <br /> <br />Actualmente, se admite solo la aplicación Outlook.
 
@@ -130,4 +127,3 @@ Al realizar un borrado selectivo en un dispositivo de Android for Work, se quita
 3.  En la hoja que muestra el nombre del dispositivo, elija **Eliminar datos de la compañía** y luego elija **Sí** para confirmar el borrado.
 
 Si el dispositivo está encendido y conectado, un comando de borrado tarda menos de 15 minutos en propagarse por cualquier tipo de dispositivo.
-

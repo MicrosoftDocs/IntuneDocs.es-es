@@ -1,7 +1,7 @@
 ---
 title: "Configuración del correo electrónico de Intune para dispositivos Windows 10"
-titleSuffix: Intune Azure preview
-description: "Versión preliminar de Intune Azure: aprenda sobre la configuración de Intune que puede usar para configurar conexiones de correo electrónico en dispositivos Windows 10."
+titleSuffix: Intune on Azure
+description: "Conozca la configuración de Intune que puede usar para configurar las conexiones de correo electrónico en los dispositivos Windows 10."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,18 +15,15 @@ ms.assetid: 2ffafbd0-4b5d-4c86-a46b-611f9b7a58e5
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 50de3e52fa87170fe208dd944b87c9d3006bd437
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 121c21d49d3639925ef0abcdc55cb599ed276778
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="email-profile-settings-for-windows-10-devices-in-microsoft-intune"></a>Configuración del perfil de correo electrónico para dispositivos Windows 10 en Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 
@@ -53,4 +50,3 @@ ms.lasthandoff: 05/23/2017
     - **Contactos**
     - **Calendarioio**
     - **Tareas**
-

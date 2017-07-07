@@ -1,12 +1,12 @@
 ---
 title: "Solucionar problemas de inscripción de dispositivos"
-titleSuffix: Intune Azure preview
-description: "Versión preliminar de Intune Azure: aprenda a solucionar problemas de inscripción de dispositivos."
+titleSuffix: Intune on Azure
+description: "Aprenda a solucionar problemas con la inscripción de dispositivos."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: c324c74e-e225-40ad-88b7-72a6d9ea09b5
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3084b7179a310a44c520dd42a8e194490dca90d8
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9b7af9168164f1cccf3feae5bbdfd8014f8c7c1f
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Solución de problemas con la inscripción de dispositivos en Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 En este tema se proporcionan sugerencias para solucionar problemas de inscripción de dispositivos. Si esta información no soluciona el problema, vea [How to get support for Microsoft Intune](https://docs.microsoft.com/intune-classic/troubleshoot/get-support) (Cómo obtener soporte técnico para Microsoft Intune) para conocer otras formas de obtener ayuda.
 
@@ -102,8 +99,8 @@ Los administradores pueden eliminar dispositivos en el portal de Azure Active Di
 
 1.  Compruebe que la entidad de MDM se haya establecido correctamente para el tipo de servicio Intune que usa; esto es, para Intune, Office 365 y System Center Configuration Manager con Intune. Consulte [Establecimiento de la entidad de administración de dispositivos móviles](mdm-authority-set.md) para obtener instrucciones.
 
-    > [!NOTE]
-    > Una vez establecida la entidad de MDM, solo podrá cambiarla si se pone en contacto con el servicio de soporte técnico, como se explica en [Cómo obtener asistencia para Microsoft Intune](https://docs.microsoft.com/intune-classic/troubleshoot/get-support).
+    > [!NOTE]    
+    > En la versión 1610 o posterior de Configuration Manager y en la versión 1705 de Microsoft Intune, puede cambiar la entidad de MDM sin tener que ponerse en contacto con el soporte técnico de Microsoft y sin necesidad de anular la inscripción de los dispositivos administrados existentes e inscribirlos de nuevo. Para más información, consulte [Qué hacer si se elige la configuración incorrecta de la entidad de MDM](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting).
 
 2.  Compruebe que las credenciales del usuario se han sincronizado correctamente con Azure Active Directory; para ello, asegúrese de que sus UPN coinciden con la información de Active Directory en el Portal de cuentas.
     Si el UPN no coincide con la información de Active Directory:
@@ -222,16 +219,16 @@ El error de certificado se genera porque los dispositivos Android requieren incl
 
 Para corregir el problema, importe los certificados a los certificados personales de equipos en los servidores proxy o el servidor AD FS de la manera siguiente:
 
-1.    En los servidores proxy y ADFS, inicie la consola de Administración de certificados del equipo local; para ello, haga clic con el botón derecho en el botón **Inicio**, haga clic en **Ejecutar** y escriba **certlm.msc**.
-2.    Expanda **Personal** y seleccione **Certificados**.
-3.    Busque el certificado correspondiente a la comunicación del servicio AD FS (un certificado firmado públicamente) y haga doble clic para ver sus propiedades.
-4.    Seleccione la pestaña **Ruta de certificación** para ver los certificados primarios del certificado.
-5.    En cada certificado primario, seleccione **Ver certificado**.
-6.    Seleccione la pestaña **Detalles** y elija **Copiar en archivo...**.
-7.    Siga las instrucciones del asistente para exportar o guardar la clave pública del certificado en la ubicación de archivo deseada.
-8.    Importe los certificados primarios que se exportaron en el paso 3 a la carpeta Equipo local\Personal\Certificados; para ello, haga clic con el botón derecho en **Certificados**, seleccione **Todas las tareas** > **Importar** y, luego, siga las instrucciones del asistente para importar los certificados.
-9.    Reinicie los servidores AD FS.
-10.    Repita los pasos anteriores en todos los servidores proxy y de AD FS.
+1.  En los servidores proxy y ADFS, inicie la consola de Administración de certificados del equipo local; para ello, haga clic con el botón derecho en el botón **Inicio**, haga clic en **Ejecutar** y escriba **certlm.msc**.
+2.  Expanda **Personal** y seleccione **Certificados**.
+3.  Busque el certificado correspondiente a la comunicación del servicio AD FS (un certificado firmado públicamente) y haga doble clic para ver sus propiedades.
+4.  Seleccione la pestaña **Ruta de certificación** para ver los certificados primarios del certificado.
+5.  En cada certificado primario, seleccione **Ver certificado**.
+6.  Seleccione la pestaña **Detalles** y elija **Copiar en archivo...**.
+7.  Siga las instrucciones del asistente para exportar o guardar la clave pública del certificado en la ubicación de archivo deseada.
+8.  Importe los certificados primarios que se exportaron en el paso 3 a la carpeta Equipo local\Personal\Certificados; para ello, haga clic con el botón derecho en **Certificados**, seleccione **Todas las tareas** > **Importar** y, luego, siga las instrucciones del asistente para importar los certificados.
+9.  Reinicie los servidores AD FS.
+10. Repita los pasos anteriores en todos los servidores proxy y de AD FS.
 Ahora, el usuario podrá iniciar sesión en el Portal de empresa en el dispositivo Android.
 
 **Para validar que el certificado se instaló correctamente**:
@@ -255,7 +252,7 @@ Si el certificado de servidor se instaló correctamente, verá marcas de verific
 
 **Resolución:** comparta las soluciones siguientes con los usuarios finales para ayudarles a recuperar el acceso a recursos corporativos.
 
-Cuando los usuarios inician la aplicación de Portal de empresa de iOS, puede indicar si el dispositivo ha perdido el contacto con Intune. Si detecta que no hay ningún contacto, intenta automáticamente sincronizar con Intune para volver a conectar y los usuarios verán la notificación en línea **Intentando sincronizar...** en línea Intentando sincronizar… 
+Cuando los usuarios inician la aplicación de Portal de empresa de iOS, puede indicar si el dispositivo ha perdido el contacto con Intune. Si detecta que no hay ningún contacto, intenta automáticamente sincronizar con Intune para volver a conectar y los usuarios verán la notificación en línea **Intentando sincronizar...** en línea Intentando sincronizar…
 
   ![Notificación Intentando sincronizar](./media/ios_cp_app_trying_to_sync_notification.png)
 
@@ -263,11 +260,11 @@ Si la sincronización se realiza correctamente, verá la notificación en línea
 
   ![Notificación Sincronización correcta](./media/ios_cp_app_sync_successful_notification.png)
 
-Si la sincronización es incorrecta, los usuarios verán una notificación en línea **No se puede sincronizar** en la aplicación del Portal de empresa de iOS. 
+Si la sincronización es incorrecta, los usuarios verán una notificación en línea **No se puede sincronizar** en la aplicación del Portal de empresa de iOS.
 
   ![Notificación No se puede sincronizar](./media/ios_cp_app_unable_to_sync_notification.png)
 
-Para corregir el problema, los usuarios deben seleccionar el botón **Configurar**, que está a la derecha de la notificación **No se puede sincronizar**. El botón Configurar lleva a los usuarios a la pantalla de flujo de Configuración de acceso de la empresa, donde pueden seguir las indicaciones para inscribir su dispositivo. 
+Para corregir el problema, los usuarios deben seleccionar el botón **Configurar**, que está a la derecha de la notificación **No se puede sincronizar**. El botón Configurar lleva a los usuarios a la pantalla de flujo de Configuración de acceso de la empresa, donde pueden seguir las indicaciones para inscribir su dispositivo.
 
   ![Pantalla Configuración de acceso a la empresa](./media/ios_cp_app_company_access_setup.png)
 
@@ -313,7 +310,7 @@ Una vez inscrito, los dispositivos vuelven a un estado correcto y recuperan el a
 3. Reinicie el servicio SMS Executive o el servidor de CM.
 
 4. Obtenga un nuevo certificado APN y cárguelo. Para ello, haga clic con el botón derecho en la suscripción de Intune en el panel izquierdo de Configuration Manager. Seleccione **Crear solicitud de certificado APNs** y siga las instrucciones.
-5. 
+5.
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>Problemas al usar System Center Configuration Manager con Intune
 
 ### <a name="mobile-devices-disappear"></a>Los dispositivos móviles desaparecen
@@ -362,7 +359,7 @@ Este error puede deberse a que el equipo se inscribió anteriormente o a que tie
 
     > [!IMPORTANT]
     > Esta sección, método o tarea contiene pasos que indican cómo modificar el Registro. Pero pueden producirse problemas graves si modifica incorrectamente el Registro. Por lo tanto, asegúrese de que sigue estos pasos cuidadosamente. Como protección adicional, haga una copia de seguridad del Registro antes de modificarlo. Y así, si se produce algún problema, puede restaurarlo.
-    > Para más información sobre cómo realizar copias de seguridad del Registro y cómo restaurarlo, lea [Cómo realizar una copia de seguridad y restaurar el Registro de Windows](https://support.microsoft.com/en-us/kb/322756).
+    > Para más información sobre cómo realizar copias de seguridad del Registro y cómo restaurarlo, lea [Cómo realizar una copia de seguridad y restaurar el Registro de Windows](https://support.microsoft.com/kb/322756).
 
 ## <a name="general-enrollment-error-codes"></a>Códigos de error de inscripción generales
 
@@ -382,7 +379,7 @@ Este error puede deberse a que el equipo se inscribió anteriormente o a que tie
 |0x80043008, 0x80CF3008|No se pudo iniciar el servicio de actualización de Microsoft Online Management.|Póngase en contacto con el servicio de soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune](https://docs.microsoft.com/intune-classic/troubleshoot/get-support) (Cómo obtener soporte técnico de Microsoft Intune).|
 |0x80043009, 0x80CF3009|El equipo cliente ya está inscrito en el servicio.|Debe retirar el equipo cliente para poder volver a inscribirlo en el servicio.|
 |0x8004300B, 0x80CF300B|No se puede ejecutar el paquete de instalación del software cliente porque no se admite la versión de Windows que se está ejecutando en el cliente.|Intune no es compatible con la versión de Windows que se está ejecutando en el equipo cliente.|
-|0xAB2|Windows Installer no pudo tener acceso al tiempo de ejecución de VBScript para una acción personalizada.|Este error está causado por una acción personalizada basada en Bibliotecas de vínculos dinámicos (DLL). Cuando solucione problemas de DLL, quizás deba usar las herramientas que se describen en [INFO: Herramientas útiles para el paquete y los problemas de implementación ](https://support.microsoft.com/en-us/kb/198038).|
+|0xAB2|Windows Installer no pudo tener acceso al tiempo de ejecución de VBScript para una acción personalizada.|Este error está causado por una acción personalizada basada en Bibliotecas de vínculos dinámicos (DLL). Cuando solucione problemas de DLL, quizás deba usar las herramientas que se describen en [INFO: Herramientas útiles para el paquete y los problemas de implementación ](https://support.microsoft.com/kb/198038).|
 |0x80cf0440|Se terminó la conexión al extremo de servicio.|La cuenta de prueba o de pago está suspendida. Cree una nueva cuenta de prueba o de pago y vuelva a realizar la inscripción.|
 
 
@@ -390,4 +387,3 @@ Este error puede deberse a que el equipo se inscribió anteriormente o a que tie
 
 ### <a name="next-steps"></a>Pasos siguientes
 Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el servicio de soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune](https://docs.microsoft.com/intune-classic/troubleshoot/get-support) (Cómo obtener soporte técnico de Microsoft Intune).
-

@@ -14,13 +14,11 @@ ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 0329720b6f02c718ef27a59e6efc5f3a76eed1c5
-ms.contentlocale: es-es
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Complemento Cordova del SDK para aplicaciones de Microsoft Intune
 
@@ -159,4 +157,3 @@ Después de iniciar la aplicación por primera vez, debería ver un cuadro de di
 * Cada vez que modifique la lista de UTI en el nodo **CFBundleDocumentTypes** del archivo **Info.plist**, debe borrar el UTI de Intune en la sección de UTI importados del mismo archivo plist (nodo **UTImportedTypeDeclarations**) antes de volver a compilar. Todos los UTI de Intune empezarán con el prefijo `com.microsoft.intune.mam`.
 
 * Si quiere quitar el complemento de Intune App SDK para Cordova del proyecto de Cordova, también debe quitar la plataforma iOS y volver a agregarla para deshacer parte de la configuración de Intune en los archivos .xcodeproj y .plist.
-

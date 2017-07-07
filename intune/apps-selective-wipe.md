@@ -1,7 +1,7 @@
 ---
 title: Borrado solo de datos corporativos de aplicaciones
-titleSuffix: Intune Azure preview
-description: "Versión preliminar de Intune Azure: aprenda cómo borrar aplicaciones de forma selectiva con Microsoft Intune."
+titleSuffix: Intune on Azure
+description: "Aprenda cómo borrar aplicaciones de forma selectiva con Microsoft Intune."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,17 +15,15 @@ ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: affe7323b8572aa17122011b293cb6a3a2fd7747
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: bfebc391997ac4e63466eb3a09044318cf807dbc
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Borrado solo de datos corporativos de aplicaciones administradas por Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Cuando un dispositivo se pierde o lo roban, o cuando un empleado deja la empresa, le interesa asegurarse de que se eliminan del dispositivo los datos de la aplicación de empresa. Pero es posible que no quiera quitar del dispositivo los datos personales, sobre todo si se trata de un dispositivo propiedad de un empleado.
 
@@ -38,7 +36,7 @@ Para quitar de forma selectiva datos de la aplicación de empresa, siga los paso
 
 1.  Inicie sesión en el [Portal de Azure](https://portal.azure.com).
 
-2.  Elija **More Services** (Más servicios), escriba **Intune** en el cuadro de texto de filtro y seleccione **Intune**. Se abre la hoja de la versión preliminar de Intune: elija la hoja **Administrar aplicaciones**.
+2.  Elija **More Services** (Más servicios), escriba **Intune** en el cuadro de texto de filtro y seleccione **Intune**. En la hoja de Intune que se abre, elija la hoja **Administrar aplicaciones**.
 
     ![Captura de pantalla de la hoja Nueva solicitud de borrado](./media/intune-azure-preview-blade.png)
 
