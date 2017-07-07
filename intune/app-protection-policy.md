@@ -1,7 +1,7 @@
 ---
 title: "¿Qué son las directivas de protección de aplicaciones?"
-titleSuffix: Intune Azure preview
-description: "Versión preliminar de Intune Azure: use este tema para aprender a proteger los datos de empresa con directivas de protección de aplicaciones de Microsoft Intune."
+titleSuffix: Intune on Azure
+description: "Use este tema para aprender a proteger los datos de empresa con directivas de protección de aplicaciones de Microsoft Intune."
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,19 +15,16 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 01f77e3511785d2c8da2edcd92df809b3b7e73e7
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 13b3199108c34a61d117e4d89d118bdd05d7d20f
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/03/2017
 ---
-
 # <a name="what-are-app-protection-policies"></a>¿Qué son las directivas de protección de aplicaciones?
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Las directivas de protección de aplicaciones de Microsoft Intune ayudan a proteger los datos de empresa y evitan la pérdida de datos.
 
@@ -68,7 +65,7 @@ Hay otras ventajas derivadas del uso de MDM con directivas de protección de apl
 
 -   Android 4 o posterior
 
-Los dispositivos Windows no son compatibles actualmente. En cambio, cuando inscribe los dispositivos Windows 10 en Intune, puede usar Windows Information Protection, ya que ofrece una funcionalidad similar. Para obtener más información, vea [Protege los datos de su empresa con Windows Information Protection (WIP)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+Los dispositivos Windows no son compatibles actualmente. En cambio, cuando inscribe los dispositivos Windows 10 en Intune, puede usar Windows Information Protection, ya que ofrece una funcionalidad similar. Para obtener más información, vea [Protege los datos de su empresa con Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 ##  <a name="how-app-protection-policies-protect-app-data"></a>Protección de datos de una aplicación con directivas de protección de aplicaciones
 
 ####  <a name="apps-without-app-protection-policies"></a>Aplicaciones sin directivas de protección de aplicaciones
@@ -138,4 +135,3 @@ Por ejemplo, cuando el usuario inicia la aplicación OneDrive con su cuenta prof
 ##  <a name="next-steps"></a>Pasos siguientes
 
 [Creación e implementación de directivas de protección de aplicaciones con Microsoft Intune](app-protection-policies.md)
-

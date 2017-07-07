@@ -1,7 +1,7 @@
 ---
 title: "Configuración del correo electrónico de Intune para dispositivos iOS"
-titleSuffix: Intune Azure preview
-description: "Versión preliminar de Intune Azure: aprenda sobre la configuración de Intune que puede usar para configurar conexiones de correo electrónico en dispositivos iOS."
+titleSuffix: Intune on Azure
+description: "Conozca la configuración de Intune que puede usar para configurar las conexiones de correo electrónico en los dispositivos iOS."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,18 +15,15 @@ ms.assetid: 9f0fa6af-3669-439a-bd0d-75d8b1a0b135
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6f941247295761815804b2e91234ce664c90e06f
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: dcac410ae5c20b5942bf37f5eaa9a46205a4cc07
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="email-profile-settings-for-ios-devices-in-microsoft-intune"></a>Configuración del perfil de correo electrónico para dispositivos iOS en Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 
@@ -43,4 +40,3 @@ ms.lasthandoff: 05/23/2017
 - **Permitir a los mensajes moverse a otras cuentas de correo electrónico**: esta opción permite a los usuarios mover mensajes de correo electrónico entre distintas cuentas que tengan configuradas en su dispositivo.
 - **Permitir el envío de correo electrónico desde aplicaciones de terceros**: permite que el usuario seleccione este perfil como la cuenta predeterminada para enviar correo electrónico, y permite que aplicaciones de terceros abran el correo electrónico en la aplicación de correo electrónico nativa, por ejemplo, para adjuntar archivos a un correo electrónico.
 - **Sincronizar direcciones de correo electrónico usadas recientemente**: esta característica permite sincronizar la lista de direcciones de correo electrónico que se han usado recientemente en el dispositivo.
-

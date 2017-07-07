@@ -1,6 +1,6 @@
 ---
 title: "Supervisión del cumplimiento de acceso condicional de Exchange local y Exchange Online"
-titleSuffix: Intune Azure preview
+titleSuffix: Intune on Azure
 description: "Supervisión del cumplimiento de acceso condicional de Exchange local y Exchange Online a través de Azure Portal en Intune"
 keywords: 
 author: andredm7
@@ -14,16 +14,13 @@ ms.technology:
 ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d170958bbdc00423081aa606c9c7f4e7a8ec4b06
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2ec9bcc605486258203f49f9f7631bd2a04cdf22
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
-# <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune-azure-preview"></a>Supervisión del cumplimiento de acceso condicional de Exchange local y Exchange Online a través de la versión preliminar de Azure en Intune
+# <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Supervisión del cumplimiento del acceso condicional en Exchange local y Exchange Online en Intune
 
 A partir de la versión 1704 de Intune, los administradores pueden ver información de los informes relacionados con los registros de dispositivos de Exchange ActiveSync que se sincronizan con Intune mediante la instancia de Exchange Connector local o el conector de Intune de servicio a servicio (conector de Exchange Online). Los informes de cumplimiento de acceso condicional proporcionan un resumen de los dispositivos con diferentes estados de sincronización:
 
@@ -70,4 +67,3 @@ En la hoja de detalles del dispositivo, puede ver más información:
 -   **Configuración del dispositivo:** muestra los detalles de configuración de todos los dispositivos.
 
 -   **Acceso de Exchange:** aquí puede obtener más información sobre el estado del dispositivo después de aplicar las directivas de acceso condicional.
-

@@ -1,6 +1,7 @@
 ---
-title: "Configuración de Windows Update para empresas: Intune | Versión preliminar de Intune Azure | Microsoft Docs"
-description: "Versión preliminar de Intune Azure: Aprenda a configurar Windows Update para empresas en Intune con el objetivo de controlar las actualizaciones de dispositivos Windows 10."
+title: "Configuración de Windows Update para empresas - Intune"
+titleSuffix: Intune on Azure
+description: "Obtenga información sobre cómo configurar Windows Update para empresas en Intune para controlar las actualizaciones de dispositivos Windows 10\"."
 keywords: 
 author: dougeby
 ms.author: dougeby
@@ -13,18 +14,15 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: b0bc3e557f303cd80c780634ba47b24405c327e1
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c05a6c007b147d81c4d98b708c0e0ae92392f0e0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-windows-update-for-business-settings-with-microsoft-intune"></a>Procedimiento para configurar Windows Update para empresas con Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>Introducción
 Windows como servicio es la nueva forma de proporcionar actualizaciones para Windows 10. A partir de Windows 10, todas las nuevas actualizaciones de calidad y características contienen las actualizaciones anteriores. Es decir, siempre que haya instalado la más reciente, sabrá que sus dispositivos Windows 10 están completamente actualizados. A diferencia de las versiones anteriores de Windows, ahora debe instalar la actualización completa en lugar de una parte.
@@ -87,7 +85,7 @@ Después de crear anillos de actualización, debe asignarnos a grupos de disposi
     - **Automatic update behavior** (Comportamiento de actualización automática): elija cómo administrar el comportamiento de actualización automática para examinar, descargar e instalar actualizaciones. Para obtener más información, consulte la sección [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate).
     - **Quality update deferral period (days)** (Período de aplazamiento de actualizaciones de calidad [días]): especifique el número de días que se aplazarán las actualizaciones de calidad. Puede aplazar la recepción de estas actualizaciones de calidad durante un período de hasta 30 días a partir de su publicación.  
 
-      Las actualizaciones de calidad suelen ser correcciones y mejoras de la funcionalidad de Windows y se publican normalmente el primer martes de cada mes, aunque Microsoft puede lanzarlas en cualquier momento. Puede definir si, y durante cuánto tiempo, desea aplazar la recepción de actualizaciones de calidad después de su disponibilidad.
+    Las actualizaciones de calidad suelen ser correcciones y mejoras de la funcionalidad de Windows y se publican normalmente el primer martes de cada mes, aunque Microsoft puede lanzarlas en cualquier momento. Puede definir si, y durante cuánto tiempo, desea aplazar la recepción de actualizaciones de calidad después de su disponibilidad.
     - **Feature update deferral period (days)** (Período de aplazamiento de actualizaciones de características [días]): especifique el número de días que se aplazarán las actualizaciones de características. Puede aplazar la recepción de estas actualizaciones de características durante un período de hasta 180 días a partir de su publicación.
 
     Las actualizaciones de características suelen ser nuevas características de Windows. Después de configurar la opción **Rama de mantenimiento** (**CB** o **CBB**), podrá definir si, y durante cuánto tiempo, desea aplazar la recepción de actualizaciones de características después de que Microsoft las publique en Windows Update.
@@ -148,4 +146,3 @@ Puede pausar un dispositivo para que deje de recibir actualizaciones de caracter
 > [!IMPORTANT]
 > Al emitir un comando de pausa, los dispositivos reciben este comando una vez que se registran con el servicio. Es posible que antes de que se registren, instalen una actualización programada.
 > Además, si un dispositivo de destino está apagado cuando se emite el comando de pausa, al encenderse, podría descargar e instalar actualizaciones programadas antes de que se registre con Intune.
-
