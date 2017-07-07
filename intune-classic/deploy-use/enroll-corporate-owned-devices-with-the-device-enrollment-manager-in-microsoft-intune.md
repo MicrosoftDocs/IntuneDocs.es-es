@@ -1,5 +1,5 @@
 ---
-title: "Inscripción con el administrador de inscripción de dispositivos | Microsoft Docs"
+title: "Inscripción con el administrador de inscripción de dispositivos"
 description: "La cuenta de administrador de inscripción de dispositivos (DEM) puede administrar un gran número de dispositivos móviles corporativos y compartidos con una única cuenta de usuario."
 keywords: 
 author: nathbarn
@@ -14,16 +14,12 @@ ms.assetid: a23abc61-69ed-44f1-9b71-b86aefc6ba03
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d1f63a9e65435e2cfc421c23de3ad87363bc446d
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 095b89d1428d6b8f06143043d8bb6ed37fd8fa5b
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>Inscripción de dispositivos propiedad de la empresa con el Administrador de inscripción de dispositivos de Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -108,4 +104,3 @@ La eliminación de un administrador de inscripción de dispositivos no afecta a 
 -   Las credenciales de la cuenta del administrador de inscripción de dispositivos eliminado todavía no pueden borrar ni retirar dispositivos.
 
 -   La relación de la cuenta del administrador de inscripción de dispositivos eliminado se mantiene pero no se pueden inscribir dispositivos adicionales.
-

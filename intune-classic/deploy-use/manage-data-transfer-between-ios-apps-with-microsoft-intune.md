@@ -14,15 +14,12 @@ ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 05975303bd45764d56f00986aea5aa30399893f9
-ms.contentlocale: es-es
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>Administrar la transferencia de datos entre aplicaciones iOS con Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -111,4 +108,3 @@ Primero, [cree e implemente una directiva de protección de aplicaciones](create
 
 ### <a name="see-also"></a>Consulte también
 [Protección de datos de aplicaciones con directivas de protección de aplicaciones mediante Microsoft Intune](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-

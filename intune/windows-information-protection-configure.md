@@ -1,7 +1,7 @@
 ---
 title: "Configuración de Windows Information Protection: Intune"
-titleSuffix: Intune Azure preview
-description: "Versión preliminar de Intune Azure: aprenda sobre la configuración de Intune que puede usar para administrar Windows Information Protection."
+titleSuffix: Intune on Azure
+description: "Obtenga información sobre la configuración de Intune que puede usar para administrar Windows Information Protection\"."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,18 +15,15 @@ ms.assetid: f233672c-7d9b-4554-af1f-92c001a1a3c5
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fc58b07fe33ff6223dfa182fb4f81f15379295fa
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 7ac59456dd2bc59a0a50eeab4e483dea2033c0fa
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-windows-information-protection-in-microsoft-intune"></a>Configuración de Windows Information Protection en Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Con el aumento en las empresas de dispositivos que pertenecen a los empleados, existe también un riesgo mayor de pérdidas accidentales de datos a través de aplicaciones y servicios como el correo electrónico, los medios sociales y la nube pública, que están fuera del control de la empresa. Por ejemplo, un empleado envía las imágenes de ingeniería más recientes desde una cuenta de correo electrónico personal, copia y pega la información del producto en un tweet o guarda un informe de ventas en curso en un almacenamiento en la nube pública.
 
@@ -39,4 +36,3 @@ Esta directiva de Intune administra la lista de aplicaciones protegidas por Wind
 
 ### <a name="next-steps"></a>Pasos siguientes
 Para obtener más información, consulte [Protect your enterprise data using Windows Information Protection](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip) (Protección de los datos de su empresa mediante Windows Information Protection).
-

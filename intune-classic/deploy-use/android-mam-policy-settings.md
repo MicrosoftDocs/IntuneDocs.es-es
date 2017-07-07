@@ -1,5 +1,5 @@
 ---
-title: "Opciones de configuración de directiva de MAM de Android | Microsoft Docs"
+title: "Configuración de directivas de MAM de Android"
 description: "En este tema se describe la configuración de directiva de administración de aplicaciones móviles para dispositivos Android."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 5dbb702a-1df5-4637-95c9-77a5f0b1a0e3
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 017c316ce102b71b3ef9552d8fe69181b79473de
-ms.contentlocale: es-es
-ms.lasthandoff: 05/31/2017
-
-
+ms.openlocfilehash: 785e36bb9354e02e4040b5cf2271cbf6f10c4041
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Configuración de directivas de protección de aplicaciones Android en Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -91,4 +88,3 @@ Existen dos categorías de configuración de directiva: configuración de acceso
 | **Intervalo sin conexión antes de que se borren los datos de la aplicación (días)** | Después de este número de días (definido por el administrador) de ejecución sin conexión, la propia aplicación realizará un borrado selectivo. Este borrado selectivo es el mismo que el que puede iniciar el administrador en el flujo de trabajo de borrado MAM. <br><br> | 90 días |
 | **Bloquear captura de pantalla y Asistente para Android (Android 6.0+)** | Pulse **Sí** para bloquear las características de captura de pantalla y **Asistente para Android** del dispositivo cuando se usa esta aplicación. Al pulsar **Sí** también se desenfocará la imagen de vista previa de las últimas aplicaciones si se usa esta aplicación con una cuenta profesional o educativa. | No |
 | **Deshabilitar el PIN de aplicación cuando se administra el PIN del dispositivo** | Elija **Sí** para deshabilitar el PIN de aplicación cuando se detecta un bloqueo de dispositivo en un dispositivo inscrito. | No |
-

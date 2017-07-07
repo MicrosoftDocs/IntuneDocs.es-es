@@ -14,15 +14,12 @@ ms.assetid: 2b60bbff-25e6-489b-9621-c71b4275fa06
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 8dae789ad1996543ddf9b92d031ac995beff6a46
-ms.contentlocale: es-es
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-corporate-owned-devices-by-using-intune"></a>Inscripción de dispositivos corporativos mediante Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -67,4 +64,3 @@ Intune reconoce un dispositivo como "corporativo" cuando cumple alguna de las co
  - El dispositivo está registrado en [Azure Active Directory o Enterprise Mobility Suite como un dispositivo Windows 10 Enterprise](https://docs.microsoft.com/active-directory/active-directory-azureadjoin-windows10-devices-overview) (solo Windows 10).
 
 Cuando un dispositivo se etiqueta como corporativo, verá **Corporativo** en la columna **Propiedad** para ese registro del dispositivo en la consola de administrador. 
-

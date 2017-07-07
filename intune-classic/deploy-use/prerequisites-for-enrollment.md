@@ -1,11 +1,11 @@
 ---
-title: "Requisitos previos para la inscripción de dispositivos móviles | Microsoft Docs"
+title: "Requisitos previos para la inscripción de dispositivos móviles"
 description: "Configure los requisitos previos de administración de dispositivos móviles (MDM) y prepárese para inscribir distintos sistemas operativos."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/21/2017
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,12 @@ ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6877c5263f3c97b9cff295d62d39a365027151eb
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ea6d7b9ffe698addc7ee317517abc7c760c232c0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Requisitos previos para la administración de dispositivos móviles en Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -46,15 +43,14 @@ Para permitir que los empleados inscriban sus dispositivos móviles con Intune, 
 ## <a name="step-1-enable-connections"></a>Paso 1: Habilitar conexiones
 
 Antes de habilitar la inscripción de dispositivos móviles, asegúrese de que ha hecho lo siguiente:
-- [Ha revisado los puertos y las direcciones URL de red necesarios](../get-started/network-bandwidth-use.md)
-- [Ha agregado y comprobado su nombre de dominio](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-2.md)
+- [Ha revisado los puertos y las direcciones URL de red necesarios](/intune/network-bandwidth-use)
+- [Ha agregado y comprobado su nombre de dominio](/intune/custom-domain-name-configure)
 
 ## <a name="step-2-set-mdm-authority"></a>Paso 2: Configurar entidad de MDM
 La entidad de MDM define el servicio de administración que tiene permiso para administrar un conjunto de dispositivos. Las opciones para la entidad de MDM incluyen Intune y Configuration Manager con Intune. Si establece Configuration Manager como la entidad de administración, ningún otro servicio podrá usarse para la administración de dispositivos móviles.
 
 >[!IMPORTANT]
-> Considere detenidamente si quiere administrar los dispositivos móviles solo mediante Intune (servicio en línea) o mediante System Center Configuration Manager con Intune (solución de software local junto con el servicio en línea). Después de establecer la entidad de administración de dispositivos móviles, no puede cambiarla sin ayuda de Soporte técnico de Microsoft. Vea [Qué hacer si se elige la configuración incorrecta de la entidad de MDM](#what-to-do-if-you-choose-the-wrong-mdm-authority-setting) para obtener instrucciones.
-
+> En la versión 1610 o posterior de Configuration Manager y en la versión 1705 de Microsoft Intune, puede cambiar la entidad de MDM sin tener que ponerse en contacto con el soporte técnico de Microsoft y sin necesidad de anular la inscripción de los dispositivos administrados existentes e inscribirlos de nuevo. Para más información, consulte [Qué hacer si se elige la configuración incorrecta de la entidad de MDM](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting).
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), haga clic en **Administración** &gt; **Administración de dispositivos móviles**.
 
@@ -116,7 +112,7 @@ Después de guardar los cambios, puede usar los vínculos que aparecen en la par
 
 ## <a name="step-5-assign-user-licenses"></a>Paso 5: Asignar licencias de usuario
 
-El **portal de administración de Office 365** se usa para agregar manualmente usuarios basados en la nube y asignar licencias a las cuentas de usuario basadas en la nube y a las cuentas sincronizadas desde Active Directory local con Azure Active Directory (Azure AD). Puede [sincronizar usuarios locales con Azure AD](../get-started/start-with-a-paid-subscription-to-microsoft-intune-step-3.md#how-to-sync-on-premises-users-with-azure-ad).
+El **portal de administración de Office 365** se usa para agregar manualmente usuarios basados en la nube y asignar licencias a las cuentas de usuario basadas en la nube y a las cuentas sincronizadas desde Active Directory local con Azure Active Directory (Azure AD). Puede [sincronizar usuarios locales con Azure AD](/intune/users-permissions-add#how-to-sync-on-premises-users-with-azure-ad).
 
 1.  Inicie sesión en el [portal de administración de Office 365](https://portal.office.com/Admin/Default.aspx) con las credenciales del administrador de inquilinos.
 
@@ -154,7 +150,13 @@ Ahora que la inscripción está habilitada, debe configurar la administración p
 
 ## <a name="what-to-do-if-you-choose-the-wrong-mdm-authority-setting"></a>Qué hacer si se elige la configuración incorrecta de la entidad de MDM
 
-Si decide que ha elegido la configuración incorrecta de la entidad de MDM y necesita cambiarla, debe ponerse en contacto con Soporte técnico de Microsoft. No puede cambiarla por sí mismo. Antes de ponerse en contacto con Soporte técnico de Microsoft, lea la información siguiente, en la que se indican los datos que necesitará Soporte técnico de Microsoft para realizar el cambio.
+Si llega a la conclusión de que ha elegido la configuración incorrecta de la entidad de MDM y necesita cambiarla, tiene las siguientes opciones.
+
+### <a name="change-the-mdm-authority-yourself"></a>Cambiar la entidad de MDM por sí mismo
+A partir de la versión 1610 de Configuration Manager y de la versión 1705 de Microsoft Intune, puede cambiar la entidad de MDM de Microsoft Intune a Configuration Manager (híbrido), o viceversa, sin tener que ponerse en contacto con el Soporte técnico de Microsoft y sin necesidad de anular la inscripción de los dispositivos administrados existentes e inscribirlos de nuevo. Para obtener información detallada, vea [Cambio de la entidad de MDM]( /sccm/mdm/deploy-use/change-mdm-authority).
+
+### <a name="contact-microsoft-support"></a>Póngase en contacto con los servicios de soporte técnico de Microsoft.
+Si tiene una versión de Configuration Manager anterior a la 1610, debe ponerse en contacto con el Soporte técnico de Microsoft. No puede cambiarla por sí mismo. Antes de ponerse en contacto con Soporte técnico de Microsoft, lea la información siguiente, en la que se indican los datos que necesitará Soporte técnico de Microsoft para realizar el cambio.
 
 Hay tres formas posibles de restablecer la entidad de MDM. En la solicitud de soporte técnico, tendrá que elegir la forma correspondiente a su situación. Si el escenario que va a solicitar no aparece, realice un seguimiento con Soporte técnico de Microsoft.
 
@@ -166,7 +168,7 @@ Soporte técnico de Microsoft le pedirá que confirme la información siguiente:
 
 Si usa la coexistencia, tiene que repasar las listas de comprobación de Intune y Office 365.
 
-### <a name="reset-mdm-authority-from-intune-to-configuration-manager"></a>Restablecer la entidad de MDM de Intune a Configuration Manager
+#### <a name="reset-mdm-authority-from-intune-to-configuration-manager"></a>Restablecer la entidad de MDM de Intune a Configuration Manager
 
 Realice estos pasos antes de ponerse en contacto con Soporte técnico de Microsoft para restablecer la entidad de MDM.
 
@@ -180,7 +182,7 @@ Realice estos pasos antes de ponerse en contacto con Soporte técnico de Microso
 - Elimine todas las directivas para los dispositivos MDM en **Directivas** > **Directivas de configuración**.
 - Elimine todas las aplicaciones publicadas para los dispositivos MDM en **Aplicaciones** > **Software administrado**.
 
-### <a name="reset-mdm-authority-from-configuration-manager-to-intune"></a>Restablecer la entidad de MDM de Configuration Manager a Intune
+#### <a name="reset-mdm-authority-from-configuration-manager-to-intune"></a>Restablecer la entidad de MDM de Configuration Manager a Intune
 
 Realice estos pasos antes de ponerse en contacto con Soporte técnico de Microsoft para restablecer la entidad de MDM.
 
@@ -194,7 +196,7 @@ Realice estos pasos antes de ponerse en contacto con Soporte técnico de Microso
 - Reinicie el servicio SMS Executive.
 - Proporcione algunos usuarios de ejemplo para que se pueda comprobar, una vez finalizado el proceso, que se han quitado las licencias de Configuration Manager.
 
-### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>Restablecer la entidad de MDM de Office 365 a Configuration Manager
+#### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>Restablecer la entidad de MDM de Office 365 a Configuration Manager
 
 1. Vaya a [https://protection.office.com](https://protection.office.com).
 2. Seleccione la pestaña **Directivas de seguridad** y luego **Administración de dispositivos**.
@@ -205,10 +207,9 @@ Realice estos pasos antes de ponerse en contacto con Soporte técnico de Microso
 >[!NOTE]
 >El certificado de APNs de iOS no se puede eliminar y permanece unido a la cuenta.
 
-### <a name="next-steps-for-mdm-authority-resets"></a>Pasos siguientes para restablecimientos de la entidad de MDM
+#### <a name="next-steps-for-mdm-authority-resets"></a>Pasos siguientes para restablecimientos de la entidad de MDM
 
 Una vez que Soporte técnico de Microsoft verifica los elementos de la lista de comprobación correspondiente, el restablecimiento de la entidad de MDM puede llevar hasta tres días laborables, aunque normalmente se realiza en un día.
 
 >[!IMPORTANT]
 >No intente configurar la suscripción hasta que Soporte técnico de Microsoft confirme que el restablecimiento se ha realizado correctamente. Una configuración prematura puede causar daños o afectar a la posibilidad de usar el servicio Intune.
-

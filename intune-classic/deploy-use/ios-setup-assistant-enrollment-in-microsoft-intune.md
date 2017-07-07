@@ -1,5 +1,5 @@
 ---
-title: "Inscribir dispositivos iOS con el Asistente de configuración | Microsoft Docs"
+title: "Inscripción de dispositivos iOS con el Asistente de configuración"
 description: "Inscriba dispositivos iOS corporativos con la herramienta Apple Configurator para restablecer la configuración de fábrica del dispositivo y prepararlo para ejecutar el Asistente de configuración."
 keywords: 
 author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: 46e5b027-4280-4809-b45f-651a6ab6d0cd
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 12466562ea8431156e9644e63fda16231ac70f32
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 402b5b469b1536e9f2ea13948e45c9232baca458
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-ios-devices-with-apple-configurator-by-using-setup-assistant"></a>Inscripción de dispositivos iOS con Apple Configurator mediante el Asistente de configuración
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -175,4 +172,3 @@ Los dispositivos ya están listos para la inscripción corporativa. Apague los d
 
 ### <a name="see-also"></a>Consulte también
 [Requisitos previos para la inscripción de dispositivos](prerequisites-for-enrollment.md)
-

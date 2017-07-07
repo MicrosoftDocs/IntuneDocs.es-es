@@ -14,15 +14,12 @@ ms.assetid: b1e84ef8-a260-4e3d-aaf1-8b3facfecafa
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 71d57965164f0822e1a6d95715c4f9c92f7bf4bd
-ms.contentlocale: es-es
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="quick-start-guide-publish-mobile-apps-to-your-users"></a>Guía de inicio rápido: Publicar aplicaciones móviles para los usuarios
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -45,4 +42,3 @@ Si la publicación de aplicaciones móviles de Office se realiza con la intenci�
 ## <a name="what-should-i-do-next"></a>¿Qué debo hacer después?
 - [Supervisar la implementación de aplicaciones en Microsoft Intune](/intune-classic/deploy-use/monitor-apps-in-microsoft-intune)
 - [Proteger sus datos de la compañía contra la pérdida de datos en dispositivos móviles](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune)
-

@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: efb3c261-1f6c-4d39-bfa4-18661f8c59c7
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 2b2c86a46c671d35551a8485b5b1a70674168ac5
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="your-password-does-not-meet-your-it-admins-requirements"></a>La contraseña no cumple los requisitos del administrador de TI
 
 La contraseña que usa para tener acceso a los recursos de empresa o educativos no cumple uno o varios requisitos que el administrador de TI ha configurado. Para solucionar el problema, siga las instrucciones que se muestran en el dispositivo. Las descripciones de los problemas se muestran a continuación.
@@ -51,4 +47,3 @@ Descripciones del problema de PIN o contraseña:
 - **La contraseña no es lo bastante compleja para cumplir los requisitos**. Su administrador de TI requiere que use caracteres más complejos en su contraseña. Pruebe a usar caracteres como números, letras mayúsculas o símbolos como $, % y #. Esto también puede aplicarse a otras cuentas de su dispositivo, por lo que debe comprobar las demás cuentas profesionales para garantizar que la contraseña cumpla los requisitos establecidos por el departamento de TI para su dispositivo.
 
 Si no sabe cómo hacer que la contraseña cumpla los requisitos, póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
-

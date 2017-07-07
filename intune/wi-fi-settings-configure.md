@@ -1,12 +1,12 @@
 ---
 title: "Cómo configurar opciones de Wi-Fi de Intune"
-titleSuffix: Intune Azure preview
-description: "Versión preliminar de Intune Azure: aprenda a usar Intune para configurar conexiones Wi-Fi en los dispositivos que administra."
+titleSuffix: Intune on Azure
+description: "Obtenga información sobre cómo usar Intune para configurar conexiones Wi-Fi en los dispositivos que administra\"."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 1fadb488-9c6c-43c1-ba23-8c69db633b96
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3378df904936def8737ca3b5b791feebdb95823b
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 0e191fe443757a5ea43ccc2b4ef2e9cb331b2142
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Configuración de Wi-Fi en Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Use perfiles de Wi-Fi de Microsoft Intune para asignar la configuración de red inalámbrica a los usuarios y los dispositivos de la organización. Al asignar un perfil de Wi-Fi, los usuarios tendrán acceso a su red Wi-Fi corporativa sin tener que configurarla ellos mismos.
 
@@ -39,6 +36,7 @@ Por ejemplo, suponga que instala una nueva red Wi-Fi denominada Contoso Wi-Fi y 
 Los perfiles de Wi-Fi admiten las siguientes plataformas de dispositivo:
 
 - Android 4 y versiones posteriores
+- Android for Work
 - iOS 8.0 y versiones posteriores
 - macOS (Mac OS X 10.9 y versiones posteriores)
 
@@ -49,13 +47,14 @@ Use la información de este tema para conocer los aspectos básicos de la config
 ## <a name="create-a-device-profile-containing-wi-fi-settings"></a>Creación de un perfil de dispositivo que contenga la configuración de Wi-Fi
 
 1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Other** >  (Otros) **Intune**.
+2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
 3. En la hoja **Intune**, elija **Configuración del dispositivo**.
 2. En la hoja **Configuración del dispositivo**, elija **Administrar** > **Perfiles**.
 3. En la hoja de perfiles, elija **Create Profile** (Crear perfil).
 4. En la hoja **Create Profile** (Crear perfil), escriba un **nombre** y una **descripción** para el perfil de Wi-Fi.
 5. En la lista desplegable **Plataforma**, seleccione la plataforma de dispositivo a la que quiere aplicar la configuración de Wi-Fi. Actualmente, puede elegir una de las siguientes plataformas para la configuración de Wi-Fi:
     - **Android**
+    - **Android for Work**
     - **iOS**
     - **macOS**
     - **Windows 8.1 y versiones posteriores (importe un perfil)**
@@ -63,7 +62,7 @@ Use la información de este tema para conocer los aspectos básicos de la config
     >[!TIP]
     >Use **Wi-Fi básica** para proporcionar características básicas, como el nombre de red y el SSID. **Wi-Fi empresarial** le permite proporcionar información más avanzada, como el Protocolo de autenticación extensible (EAP) si la red Wi-Fi lo utiliza. **Importación de Wi-Fi** (para Windows 8.1 y Windows 10) le permite importar la configuración de Wi-Fi como un archivo XML que se ha exportado anteriormente desde otro dispositivo.
 7. Dependiendo de la plataforma que eligió, las opciones que pueda configurar serán diferentes. Vaya a uno de los siguientes temas para conocer más detalles sobre la configuración para cada plataforma:
-    - [Configuración de Android](wi-fi-settings-android.md)
+    - [Configuración de Android y Android for Work](wi-fi-settings-android.md)
     - [Configuración de iOS](wi-fi-settings-ios.md)
     - [Configuración de macOS](wi-fi-settings-macos.md)
     - [Configuración de Windows Phone 8.1](wi-fi-settings-import-windows-8-1.md)
@@ -71,5 +70,3 @@ Use la información de este tema para conocer los aspectos básicos de la config
 
 El perfil se crea y aparece en la hoja de la lista de perfiles.
 Si desea continuar y asignar este perfil a grupos, consulte [Asignación de perfiles de dispositivo](device-profile-assign.md).
-
-

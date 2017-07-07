@@ -1,12 +1,12 @@
 ---
-title: "Administración de la transferencia de datos entre aplicaciones iOS | Versión preliminar de Azure de Intune"
-titleSuffix: Intune Azure preview
-description: "Versión preliminar de Intune Azure: consulte este tema para entender cómo puede usar la característica Open In de iOS y las directivas de administración de aplicaciones móviles para administrar las transferencias de datos entre aplicaciones."
+title: "Administración de la transferencia de datos entre aplicaciones iOS"
+titleSuffix: Intune on Azure
+description: "Consulte este tema para entender cómo puede usar la característica Open In de iOS y las directivas de administración de aplicaciones móviles para administrar las transferencias de datos entre aplicaciones."
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,12 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 44747236ba1bda84ccb01f613e1702c536720a2c
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e3c588d2237f48501d78af364760acf1ef290639
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-manage-data-transfer-between-ios-apps"></a>Administración de transferencias de datos entre aplicaciones iOS
 ## <a name="manage-ios-apps"></a>Administrar aplicaciones iOS
 Como parte de la protección de los datos de la empresa es necesario asegurarse de que las transferencias de archivos se limiten a las aplicaciones que usted administra.  Puede administrar aplicaciones iOS de la siguiente manera:
@@ -36,7 +33,7 @@ La característica de **administración Open In** (o administración de "Abrir e
 ##  <a name="using-app-protection-with-ios-apps"></a>Uso de la protección de aplicaciones con aplicaciones iOS
 Las directivas de protección de aplicaciones se pueden usar con la característica de **administración Open In** de iOS para proteger los datos de la empresa de las siguientes formas:
 
--   **Dispositivos propiedad de los empleados no administrados por una solución MDM**: puede establecer la configuración de directiva de protección de aplicaciones en **Allow app to transfer data to only managed apps** (Permitir a la aplicación transferir datos solo a aplicaciones administradas). El usuario final no podrá abrir el archivo protegido en una aplicación que no se administre mediante una directiva.
+-   **Dispositivos propiedad de los empleados no administrados por una solución MDM**: puede establecer la configuración de directivas de protección de aplicaciones en **Allow app to transfer data to only managed apps** (Permitir a la aplicación transferir datos solo a aplicaciones administradas por directivas). El comportamiento Open In en una aplicación administrada por directivas solo presentará otras aplicaciones administradas por directivas como opción en el uso compartido. Si un usuario intenta enviar un archivo protegido por directivas como datos adjuntos desde OneDrive en el correo nativo, el archivo será ilegible.
 
 -   **Dispositivos administrados por Intune**: para los dispositivos inscritos en Intune, se permite automáticamente la transferencia de datos entre aplicaciones con directivas de protección de aplicaciones y otras aplicaciones iOS administradas que se hayan implementado mediante Intune. Para permitir la transferencia de datos entre aplicaciones con directivas de protección de aplicaciones, habilite la opción **Allow app to transfer data to only managed apps** (Permitir a la aplicación transferir datos solo a aplicaciones administradas). Puede usar la característica de **administración Open In** para controlar la transferencia de datos entre aplicaciones que estén implementadas a través de Intune.   
 
@@ -108,4 +105,3 @@ Primero, [cree y asigne una directiva de protección de aplicaciones](app-protec
 
 ### <a name="see-also"></a>Consulte también
 [¿Qué es la directiva de protección de aplicaciones de Intune?](app-protection-policy.md)
-

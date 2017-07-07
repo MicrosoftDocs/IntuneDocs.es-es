@@ -1,5 +1,5 @@
 ---
-title: Proteger Dynamics CRM Online | Microsoft Docs
+title: Proteger Dynamics CRM Online
 description: "Proteja y controle el acceso a Dynamics CRM en línea con el acceso condicional."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6740e6f5894f6dfd7788d90cc8f445e0a63821a9
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: da92d75cfafa2a605ed8606ba7c8f3ec18dc6063
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-access-to-dynamics-crm-online-with-intune"></a>Proteger el acceso a Dynamics CRM Online con Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -84,8 +81,8 @@ A continuación, configure la directiva para requerir que solo los dispositivos 
   * **iOS**
   * **Android**
 4.  En **Grupos de destino**, seleccione **Modificar** para seleccionar los grupos de seguridad de Azure Active Directory a los que se aplicará la directiva. Puede elegir aplicarla a todos los usuarios o solo a un grupo específico de usuarios.
-5.    En **Grupos exentos**, opcionalmente, elija **Modificar** para seleccionar los grupos de seguridad de Azure Active Directory exentos de esta directiva.
-6.    Cuando termine, elija **Guardar**.
+5.  En **Grupos exentos**, opcionalmente, elija **Modificar** para seleccionar los grupos de seguridad de Azure Active Directory exentos de esta directiva.
+6.  Cuando termine, elija **Guardar**.
 
 Acaba de configurar el acceso condicional para Dynamics CRM. No es necesario implementar la directiva de acceso condicional, ya que surte efecto inmediatamente.
 ##  <a name="monitor-the-compliance-and-conditional-access-policies"></a>Supervisar el cumplimiento y las directivas de acceso condicional
@@ -104,4 +101,3 @@ Elija cualquier grupo de dispositivos móviles y, a continuación, en la ficha *
 * [Proteger el acceso a SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
 
 * [Proteger el acceso a Skype Empresarial Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-

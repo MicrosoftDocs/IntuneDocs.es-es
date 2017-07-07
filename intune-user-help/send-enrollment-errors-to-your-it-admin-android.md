@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d7c871b8-e5d8-4912-b87f-7e6bc59897be
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 667282ef1ab6e5058e852b6e3b94daecd01c5d53
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="send-enrollment-errors-to-your-it-admin"></a>Enviar errores de inscripción a su administrador de TI
 
 Si recibe un error al intentar inscribir el dispositivo Android en Intune, puede intentar volver a inscribirlo pulsando **Reintentar**. Si esto no funciona, puede enviar información acerca de lo que está ocurriendo al administrador de TI en un correo electrónico pulsando **Enviar información**.
@@ -36,4 +32,3 @@ Hay diferentes maneras de enviar los registros de datos del dispositivo al admin
 
 - [Usar el botón Enviar información para enviar registros por correo electrónico](send-logs-to-your-it-admin-by-email-android.md)
 - [Usar un cable USB para enviar registros como un archivo adjunto de correo electrónico](send-logs-to-your-it-admin-using-cable-android.md)
-

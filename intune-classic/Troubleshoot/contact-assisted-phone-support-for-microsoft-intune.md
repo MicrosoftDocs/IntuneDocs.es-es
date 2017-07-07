@@ -1,5 +1,5 @@
 ---
-title: "Ponerse en contacto con la asistencia telefónica | Microsoft Intune"
+title: "Póngase en contacto con la asistencia telefónica. "
 description: "Números de teléfono para obtener ayuda de Microsoft Intune."
 keywords: horario comercial
 author: arob98
@@ -14,15 +14,12 @@ ms.assetid: 01c096eb-088b-4d2b-a1fa-dce6cdb12294
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e514aaf67881a754eb2e75b2920445536978a68c
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 99d837e589ed981f2d14f5f89312a195f45d26e2
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="contact-assisted-phone-support-for-microsoft-intune"></a>Asistencia telefónica para Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -120,4 +117,3 @@ ms.lasthandoff: 05/23/2017
 |Uruguay|24 x 7|Lunes – viernes<br /><br />09:00 – 17:00 UYST (UTC -2)|Español&#42;, inglés|000-411-002-7131||
 |Venezuela|24 x 7|Lunes – viernes<br /><br />09:00 – 17:00 VET (UTC -4:30)|Español&#42;, inglés|0-800-100-8763||
 &#42; Compatible con la interpretación por teléfono.
-

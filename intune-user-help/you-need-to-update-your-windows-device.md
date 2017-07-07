@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 2df6fca5-9731-4ea0-a8ee-45b648caa5b4
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 4b5bbaf1d475eeb8f6e468d61996131baf9c772b
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-update-your-windows-device"></a>Necesita actualizar el dispositivo Windows
 
 [!INCLUDE[wit_nextref](includes/end-user-os-update-guidance.md)]
@@ -40,4 +36,3 @@ Para equipos que ejecutan Windows, busque el **sistema operativo** y siga las in
 Para Windows 10 y Windows 8.1, escriba __Versión de Windows__ en la __barra de búsqueda__. En __¿Puedo ayudar?__, seleccione __Versión de Windows__. Aparecerá el número de versión. Este número tendrá un aspecto similar a __10.0.14393.447__.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
-

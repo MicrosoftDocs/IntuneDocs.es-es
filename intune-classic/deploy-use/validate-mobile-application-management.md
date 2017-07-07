@@ -1,5 +1,5 @@
 ---
-title: "Validación de la configuración de MAM | Microsoft Docs"
+title: "Validación de la configuración de MAM"
 description: "En este tema se describe cómo puede probar y verificar si su directiva de MAM está configurada correctamente y funciona según lo esperado."
 keywords: 
 author: andredm7
@@ -13,15 +13,12 @@ ms.technology:
 ms.assetid: 41d82597-e13e-4c3e-9151-e71392236ca0
 ms.reviewer: joglocke
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ab04c85d6704d7011cc5d4ea2a9f83d78b5b73e3
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1e22be7b238cce195ee88c938b1cca009c0b21d3
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="validating-your-mobile-application-management-setup"></a>Validar la configuración de administración de aplicaciones móviles
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -50,7 +47,7 @@ Si las pruebas muestran que el comportamiento de la directiva de MAM no es el pr
 ### <a name="what-to-do"></a>Qué hacer
 Aquí se muestran las acciones que se deben tomar en función del estado del usuario:
 
-- Si el usuario no tiene licencia para MAM, asígnele una licencia de Intune, como se describe en [Administración de licencias de Intune](..\get-started\start-with-a-paid-subscription-to-microsoft-intune.md).
+- Si el usuario no tiene licencia para MAM, asígnele una licencia de Intune, como se describe en [Administración de licencias de Intune](/intune/setup-steps).
 - Si el usuario no tiene licencia para Office 365, obtenga una.
 - Si la aplicación de un usuario aparece como **No protegido**, compruebe si ha configurado correctamente una directiva de MAM para esa aplicación.
 - Asegúrese de que estas condiciones se aplican a todos los usuarios a los que quiera aplicar directivas de MAM.
@@ -59,4 +56,3 @@ Aquí se muestran las acciones que se deben tomar en función del estado del usu
 [Preparación para configurar directivas de administración de aplicaciones móviles con Microsoft Intune](..\deploy-use\get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 [Proteger datos mediante las directivas de administración de aplicaciones móviles con Microsoft Intune](..\deploy-use\protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)
-

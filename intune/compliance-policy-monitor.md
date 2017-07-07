@@ -1,7 +1,7 @@
 ---
 title: "Supervisión de las directivas de cumplimiento de dispositivos Intune"
-titleSuffix: Intune Azure preview
-description: "Versión preliminar de Intune Azure: Aprenda a supervisar las directivas de cumplimiento de dispositivos."
+titleSuffix: Intune on Azure
+description: Aprenda a supervisar las directivas de cumplimiento de dispositivos.
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,13 +15,11 @@ ms.assetid: 503d1dd2-a647-4aea-bf48-55319a3dd8a7
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9c57a45ed93b12c3b9fd9635bfa1aec465f63bbc
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 6d0105e49bac2af0c241fe9203c411ef7f9e7d76
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Supervisión de las directivas de cumplimiento de dispositivos Intune
 
@@ -123,8 +121,6 @@ Si hace clic en **botón Filtrar**, se abre el filtro emergente con las siguient
 
 Si hace clic en el **botón Actualizar**, se debería cerrar el menú emergente y los resultados se deberían actualizar según los criterios del filtro seleccionado.
 
-![Botón de actualización de filtro](./media/idc-5.png)
-
 ##### <a name="device-details"></a>Detalles del dispositivo
 
 Al hacer clic en un dispositivo, se abre la **hoja Dispositivos** con el dispositivo seleccionado. De este modo, obtendrá información detallada sobre la configuración de directivas de cumplimiento de dispositivos aplicada a ese dispositivo.
@@ -154,4 +150,3 @@ Este informe permite ver, por configuración de cumplimiento, el número total d
 Al hacer clic en el icono de cumplimiento de configuración, seleccione una de las configuraciones de directivas de cumplimiento de dispositivos para ver el **estado de cumplimiento**, el **alias de correo electrónico del usuario**, el **modelo de dispositivo** y la **ubicación** de cada dispositivo destino de esa directiva de cumplimiento de dispositivos.
 
 ![Icono de cumplimiento de configuración](./media/idc-11.png)
-

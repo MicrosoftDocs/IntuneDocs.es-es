@@ -1,5 +1,5 @@
 ---
-title: Directivas de Firewall para equipos Windows | Microsoft Docs
+title: Directivas de firewall para equipos Windows
 description: Intune puede ayudarle a proteger los equipos que administra con el cliente de Intune de varias maneras. Una de ellas es configurar Firewall de Windows.
 keywords: 
 author: robstackmsft
@@ -14,16 +14,16 @@ ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d96fd3cf4d8963f1e79ef4ed27c1b826c8893b5f
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 13ec6a424c3665e48938315d4af11cc986a83339
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Ayudar a proteger los equipos de Windows mediante directivas del Firewall de Windows en Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune puede ayudarle a proteger los equipos que administra con el cliente de Intune de varias maneras. Una de ellas es proporcionar directivas que permiten configurar Firewall de Windows en equipos.
 
 Si aún no ha instalado el cliente de equipos Windows de Intune en sus equipos PC, vea [Instalar el cliente de equipos Windows con Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
@@ -135,4 +135,3 @@ Puede configurar las excepciones que permiten determinados tipos de tráfico de 
 
 ### <a name="see-also"></a>Consulte también
 [Directivas para proteger equipos de Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-

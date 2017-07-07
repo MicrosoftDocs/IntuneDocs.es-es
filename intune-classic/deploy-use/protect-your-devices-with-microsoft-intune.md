@@ -14,15 +14,12 @@ ms.assetid: 71e0cbf3-2bfb-412e-8a12-8503df08b4cf
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 8acde93c1c0c0d3bf443daf61d5f8d75b3d061df
-ms.contentlocale: es-es
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-devices-with-microsoft-intune"></a>Proteger dispositivos con Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -65,4 +62,3 @@ El bloqueo de activación es una característica que sirve para proteger los dis
 
 ## <a name="protect-windows-pcs-managed-with-the-intune-client"></a>Proteger equipos Windows administrados con el cliente de Intune
 Intune sigue siendo compatible con las directivas de seguridad para equipos Windows que no se inscriben, sino que se administran con el software cliente de equipo de Intune. Para averiguar cómo pueden ayudar estas directivas a proteger los equipos Windows, consulte [Use policies to help protect Windows PCs that run the Intune client software](policies-to-protect-windows-pcs-in-microsoft-intune.md) (Usar directivas para ayudar a proteger equipos Windows que ejecutan el software cliente de Intune).
-

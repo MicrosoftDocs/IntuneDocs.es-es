@@ -1,7 +1,7 @@
 ---
-title: "Establecer la administración básica de datos en aplicaciones de Office 365: versión preliminar de Intune Azure"
-titleSuffix: Intune Azure preview
-description: "Versión preliminar de Intune Azure: documentación complementaria del asistente para administrar aplicaciones de Office 365."
+title: "Establecimiento de la administración básica de datos en aplicaciones de Office 365 en Intune"
+titleSuffix: Intune on Azure
+description: "Documentación complementaria del asistente Administrar aplicaciones de Office 365."
 keywords: 
 author: lindavr
 ms.author: lindavr
@@ -16,16 +16,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 639d045e036ecdc6ff40d6ae335d2c5109d9e420
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 302f646bfb9ff0ac024687fa0b3926d83158995c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps"></a>Cómo sus usuarios experimentarán la protección básica en las aplicaciones administradas de Office 365
 
 El **asistente para administrar aplicaciones de Office 365** crea una directiva de protección de aplicaciones para cada plataforma de dispositivo.
@@ -129,9 +125,8 @@ En Android, para las aplicaciones que están asociadas con una directiva MAM de 
 Siempre puede modificar estas opciones de directiva para satisfacer los requisitos de su organización.
 
 ### <a name="how-can-i-view-and-edit-the-policies-created-by-the-wizard"></a>¿Cómo puedo ver y editar las directivas creadas por el asistente?
-Para ver o actualizar estas directivas, o las directivas que se crean en la versión preliminar de Intune Azure, en el panel, elija **Administrar aplicaciones** > **Directivas de protección de aplicaciones**. Se abrirá la lista de directivas a la derecha. Seleccione la directiva que desea ver para editar la configuración. <br/>
+Para ver o actualizar estas directivas, o las directivas que se crean en el portal de Azure de Intune, en el panel, elija **Administrar aplicaciones** > **Directivas de protección de aplicaciones**. Se abrirá la lista de directivas a la derecha. Seleccione la directiva que desea ver para editar la configuración. <br/>
 ![Imagen de la ruta de la interfaz de usuario para ver las directivas](./media/image-for-faq.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
 Más información sobre [las directivas de protección de aplicaciones](https://docs.microsoft.comapp-protection-policy.md).
-

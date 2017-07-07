@@ -14,15 +14,12 @@ ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 67810c51c7a7b2ec1e1ff33c11a27a8757b2bcbd
-ms.contentlocale: es-es
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Configuración de directivas de cumplimiento para dispositivos Windows en Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -156,4 +153,3 @@ Para buscar la versión de sistema operativo que se usará para las opciones **M
 
 - En los equipos que ejecutan Windows 10, la versión debe establecerse en **10.0** más el número de compilación del sistema operativo devuelto por el comando **winver**. Por ejemplo, podría ser similar a 10.0.10586.
 > ![Versión de compilación del sistema operativo resaltada en el cuadro de diálogo "Acerca de Windows"](./media/ca_win10-os-version.png)
-

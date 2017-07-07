@@ -11,20 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f0ba4cbb-ef0a-4335-86bf-f1d006867fa2
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: b1f4176704ba25f5e4ff1b1572a6f1e5ce0f620b
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="your-android-device-is-missing-a-certificate-required-by-your-it-admin"></a>El dispositivo Android no tiene un certificado que necesita el administrador de TI
 
 Si el dispositivo no está inscrito en Intune y no tiene un certificado determinado que necesita el administrador de TI, no podrá iniciar sesión en la aplicación de portal de empresa. Cuando intente iniciar sesión, verá el siguiente mensaje:
@@ -73,4 +70,3 @@ Para resolver este problema y obtener el certificado necesario, hay dos pasos pr
 7. Vuelva a abrir la aplicación del portal de empresa. Ahora debería poder iniciar sesión en la aplicación Portal de empresa. Si necesita ayuda, póngase en contacto con el administrador de TI.
 
 Si aparece el mismo mensaje que indica que "falta un certificado" como el que se ha mostrado anteriormente, y ya ha seguido el procedimiento, probablemente todavía haya otro certificado que el administrador de TI necesitará ayudarle a instalar. Póngase en contacto con el administrador de TI para obtener ayuda con la información de contacto disponible en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
-

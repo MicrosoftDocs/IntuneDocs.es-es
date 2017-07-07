@@ -1,5 +1,5 @@
 ---
-title: Administrar contratos de licencia de software para equipos que ejecutan el software cliente de Intune | Microsoft Docs
+title: "Administración de contratos de licencia de software para equipos que ejecutan el software cliente de Intune"
 description: "Intune permite administrar contratos de licencia de software adquiridos a través de los contratos de licencias por volumen de Microsoft, así como de software que se adquirió por otros medios."
 keywords: 
 author: robstackmsft
@@ -14,16 +14,16 @@ ms.assetid: c59d8635-3f66-40f5-824a-a71c738e0341
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 18fbeb0e5bbf46795a02590a8dce205342a3a357
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: afaeb5b1af35008e6aa778e4391cafeda979bdc0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Administrar contratos de licencia de software de equipos Windows en Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune permite agregar y administrar información de contratos de licencia para el software adquirido a través de contratos de licencias por volumen de Microsoft. También puede hacerlo para software de Microsoft o de terceros adquirido por otros medios. Además, puede organizar esta información en grupos lógicos.
 
 > [!IMPORTANT]
@@ -181,4 +181,3 @@ Los contratos de licencias de software pueden agregarse a grupos de licencias. P
 |Cambiar el nombre de un grupo de licencias|En el área de trabajo **Licencias**, elija un grupo de licencias y, después, elija **Editar grupo de licencias** en el menú **Tareas**.|
 |Eliminar un grupo de licencias|En el área de trabajo **Licencias**, elija un grupo de licencias y, después, elija **Eliminar grupo de licencias** en el menú **Tareas**. **Sugerencia:** Todas las licencias que se encontraban en el grupo eliminado se llevan al grupo de licencias **Contratos sin asignar**.|
 |Eliminar un contrato de licencia|En el área de trabajo **Licencias**, elija un contrato y, después, elija **Eliminar**. **Sugerencia:** Después de eliminar los contratos de licencias por volumen, para actualizar la información de licencia, elija **Actualizar ahora** en la página **Información general sobre licencias** o en la pestaña **General** para un grupo de licencias determinado.|
-

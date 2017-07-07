@@ -1,5 +1,5 @@
 ---
-title: "Protección de los datos de la aplicación mediante directivas de MAM | Microsoft Docs"
+title: "Protección de datos de aplicaciones mediante directivas de MAM"
 description: "En este tema se explica cómo pueden ayudar las directivas de administración de aplicaciones móviles a proteger los datos de su empresa, evitar la pérdida de datos y separar la información personal y profesional."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9959e9f757e83c7aa4274b7e7b9df949fff022cc
-ms.contentlocale: es-es
-ms.lasthandoff: 05/31/2017
-
-
+ms.openlocfilehash: 40a6badf072c254f635a2656189d626e4f13a320
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-app-data-using-app-protection-policies-with-microsoft-intune"></a>Proteger datos de aplicaciones mediante directivas de protección de aplicaciones con Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -38,8 +35,8 @@ Se pueden configurar directivas de protección de aplicaciones para aplicaciones
 
 -   **Inscritos en una solución MDM de terceros:** los dispositivos de esta categoría son normalmente dispositivos corporativos.
 
-      > [!NOTE]
-      > No se recomienda utilizar directivas de protección de aplicaciones con soluciones de contenedor seguras o administración de aplicaciones móviles de terceros.
+    > [!NOTE]
+    > No se recomienda utilizar directivas de protección de aplicaciones con soluciones de contenedor seguras o administración de aplicaciones móviles de terceros.
 
 -   **No inscritos en ninguna solución MDM:** los dispositivos de esta categoría normalmente son dispositivos de empleados no administrados ni inscritos en Intune ni en ninguna otra solución MDM.
 
@@ -135,4 +132,3 @@ Por ejemplo, cuando el usuario inicia la aplicación OneDrive con su cuenta prof
 - [Preparativos para la configuración de directivas de protección de aplicaciones](get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 
 - [Creación e implementación de directivas de protección de aplicaciones con Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-

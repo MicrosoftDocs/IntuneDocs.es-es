@@ -1,7 +1,7 @@
 ---
-title: "Aplicaciones iOS con directivas de protección de aplicaciones | Versión preliminar de Intune Azure"
-titleSuffix: Intune Azure preview
-description: "Versión preliminar de Intune Azure: este tema describe qué esperar cuando la aplicación iOS está administrada por directivas de protección de aplicaciones."
+title: "Aplicaciones iOS con directivas de protección de aplicaciones"
+titleSuffix: Intune on Azure
+description: "En este tema se describe qué esperar cuando la aplicación iOS está administrada por directivas de protección de aplicaciones."
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,17 +15,14 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 5e172b940dfae32213c870b29f05f56573192704
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 912bc5230904f5798b2e0026dcf0dd1cecdb811c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]En este tema se describe la experiencia del usuario en aplicaciones con directivas de protección de aplicaciones. Las directivas de protección de aplicaciones solo se aplican cuando se usan aplicaciones en el contexto profesional: por ejemplo, cuando se accede a aplicaciones con la cuenta profesional o cuando se accede a los archivos almacenados en la ubicación empresarial de OneDrive.
+[!INCLUDE[azure_portal](./includes/azure_portal.md)] En este tema se describe la experiencia del usuario en aplicaciones con directivas de protección de aplicaciones. Las directivas de protección de aplicaciones solo se aplican cuando se usan aplicaciones en el contexto profesional: por ejemplo, cuando se accede a aplicaciones con la cuenta profesional o cuando se accede a los archivos almacenados en la ubicación empresarial de OneDrive.
 ##  <a name="accessing-apps"></a>Acceso a aplicaciones
 
 Si el dispositivo **no está inscrito en Intune**, al usuario final se le pedirá que reinicie la aplicación cuando la use por primera vez.  Se requiere un reinicio para poder aplicar directivas de protección de aplicaciones a la aplicación. En la captura de pantalla siguiente se puede ver esto con la aplicación Skype:
@@ -67,4 +64,3 @@ Si usa un dispositivo iOS, puede que aparezca un mensaje de bloqueo si intenta a
 [What to expect when your Android app is managed by app protection policies](app-protection-enabled-apps-android.md) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)
 ### <a name="see-also"></a>Consulte también
 [Creación e implementación de directivas de protección de aplicaciones con Microsoft Intune](app-protection-policies.md)
-

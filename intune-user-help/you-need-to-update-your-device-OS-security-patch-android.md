@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 6b25c4551cd66e2e58b12c90ca9055c14b4e33cd
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>Necesita actualizar el sistema operativo del dispositivo Android
 
 Si ha visto un mensaje que indica que la "no se ha configurado el nivel de revisión de seguridad de Android mínimo", debe instalar una actualización para asegurarse de que el dispositivo sigue siendo seguro. Se publica una _revisión_ para que el software siga ejecutándose sin problemas y esté actualizado. El administrador de TI requiere que instale esta revisión para asegurarse de que los datos corporativos se mantengan con la máxima protección posible en el dispositivo. La ubicación de la revisión de seguridad que necesita variará dependiendo de si tiene un tipo específico de dispositivo Samsung.
@@ -43,4 +39,3 @@ Vaya a **Configuración** > **Actualizaciones del sistema** > **Buscar nueva act
 
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
-

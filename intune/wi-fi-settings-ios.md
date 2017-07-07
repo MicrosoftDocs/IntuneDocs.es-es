@@ -1,7 +1,7 @@
 ---
 title: "Configuración de Wi-Fi de Intune para dispositivos iOS"
-titleSuffix: Intune Azure preview
-description: "Versión preliminar de Intune Azure: aprenda sobre la configuración de Intune que puede usar para configurar conexiones Wi-Fi en dispositivos iOS."
+titleSuffix: Intune on Azure
+description: "Obtenga información sobre la configuración de Intune que puede usar para configurar conexiones Wi-Fi en dispositivos iOS\"."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
@@ -15,18 +15,15 @@ ms.assetid: 89229a5e-3421-4221-a62f-fa800620cc0d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: edd7cfc8ed6e444105f58002b3ba7c0086fde518
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 001a65733d3565df8f4aea485c5a7488f2756a88
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Configuración de Wi-Fi para dispositivos iOS en Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
 
@@ -82,4 +79,3 @@ ms.lasthandoff: 05/23/2017
 |--------------|-------------|----------|
 |**Certificado cliente para la autenticación del cliente (certificado de identidad)**|Seleccione el perfil de certificado SCEP o PKCS que se usa para autenticar la conexión.|El tipo de EAP es **EAP-TLS**.|
 |**Método de autenticación**|Seleccione el método de autenticación para la conexión:<br>- **Certificados**: para seleccionar el certificado de cliente SCEP o PKCS que es el certificado de identidad presentado al servidor.<br><br>- **Nombre de usuario y contraseña** para especificar un método de autenticación diferente. <br><br>Si seleccionó **Nombre de usuario y contraseña**, configure:<br><br>-  **Método que no es EAP (identidad interna)** y luego seleccione cómo se autenticará la conexión desde:<br>- **Ninguno**<br>- **Contraseña no cifrada (PAP)**<br>- **Protocolo de autenticación por desafío mutuo (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP versión 2 (MS-CHAP v2)**<br>Las opciones disponibles dependen del tipo de EAP seleccionado.<br><br>**y**<br><br>- **Método que no es EAP (identidad interna)**: especifique el texto que se envía como respuesta a una solicitud de identidad EAP. Este texto puede ser cualquier valor. Durante la autenticación, esta identidad anónima se envía inicialmente, seguida de la identificación real enviada en un túnel seguro.|El tipo de EAP es **EAP-TTLS** o *.
-

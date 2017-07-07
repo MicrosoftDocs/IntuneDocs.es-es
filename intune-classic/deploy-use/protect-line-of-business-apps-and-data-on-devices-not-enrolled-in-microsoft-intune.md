@@ -1,5 +1,5 @@
 ---
-title: "Protección de aplicaciones LOB en dispositivos no inscritos | Microsoft Docs"
+title: "Protección de aplicaciones LOB en dispositivos no inscritos"
 description: "En este tema se describe cómo puede preparar sus aplicaciones personalizadas de línea de negocios de manera que sea posible aplicar directivas de administración de aplicaciones móviles que le ayuden a evitar la pérdida de datos."
 keywords: 
 author: mtillman
@@ -14,29 +14,26 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f30837d90954b9b30b27e77240bb241db6e2b037
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 0b09daa05db673817bea67cd8b88c2ac63be7f1e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>Proteger aplicaciones y datos de línea de negocio en dispositivos no inscritos en Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Las directivas de administración de aplicaciones móviles (MAM) ayudan a proteger los datos de la empresa al restringir las acciones que podrían provocar una pérdida de datos de la empresa e imponer requisitos de acceso a datos, como el PIN de aplicación. Para aplicar directivas de MAM a aplicaciones iOS y Android de línea de negocio, primero tiene que ajustar la aplicación con la herramienta de ajuste de aplicaciones de Microsoft Intune. El ajuste de aplicaciones es el proceso de aplicar una capa de administración a una aplicación móvil sin necesidad de realizar cambios en la aplicación subyacente. Una vez que la aplicación está ajustada, puede aplicarle directivas MAM y distribuirla a los usuarios.  
+Las directivas de administración de aplicaciones móviles (MAM) ayudan a proteger los datos de la empresa al restringir las acciones que podrían provocar una pérdida de datos de la empresa e imponer requisitos de acceso a datos, como el PIN de aplicación. Para aplicar directivas de MAM a aplicaciones iOS y Android de línea de negocio, primero tiene que ajustar la aplicación con la herramienta de ajuste de aplicaciones de Microsoft Intune. El ajuste de aplicaciones es el proceso mediante el cual se aplica una capa de administración a una aplicación móvil sin requerir chan/intune/apps-prepare-mobile-application-managementes en ella para distribuirla a los usuarios.  
 
-En este tema se explican los pasos necesarios para aplicar directivas MAM a las aplicaciones a las que se obtiene acceso en **dispositivos no administrados propiedad de los empleados** y en dispositivos administrados por una **solución de administración de dispositivos móviles (MDM) de terceros**.  Para preparar las aplicaciones de línea de negocio que se ejecutan en **dispositivos inscritos en MDM de Intune**, consulte [Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles mediante Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
+En este tema se explican los pasos necesarios para aplicar directivas MAM a las aplicaciones a las que se obtiene acceso en **dispositivos no administrados propiedad de los empleados** y en dispositivos administrados por una **solución de administración de dispositivos móviles (MDM) de terceros**.  Para preparar las aplicaciones de línea de negocio que se ejecutan en **dispositivos inscritos en MDM de Intune**, consulte [Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles mediante Microsoft Intune](/intune/apps-prepare-mobile-application-management).
 
 
 ##  <a name="step-1-prepare-the-app"></a>Paso 1: preparar la aplicación
 
-Antes de poder aplicar directivas MAM a una aplicación, primero debe ajustar la aplicación mediante la herramienta de ajuste de aplicaciones de Microsoft Intune para [iOS](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) y [Android](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md), o utilizar el [SDK de aplicaciones de Intune](../develop/intune-app-sdk.md) para integrar manualmente las funciones de protección de aplicaciones de Intune.
+Antes de poder aplicar directivas de MAM a una aplicación, primero debe ajustar la aplicación mediante la herramienta de ajuste de aplicaciones de Microsoft Intune para [iOS](prepare-ios-apps-for-mo/intune/apps-prepare-mobile-application-managementoid](/intune/app-wrapper-prepare-android), o utilizar el [SDK de aplicaciones de Intune](/intune/app-sdk) para integrar manualmente las características de protección de aplicaciones de Intune.
 
-Para obtener más información sobre el uso de la herramienta de ajuste de aplicaciones y el SDK, vea [Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles con Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
+Para obtener más información sobre el uso de la herramienta de ajuste de aplicaciones y el SDK, vea [Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles con Microsoft Intune](/intune/apps-prepare-mobile-application-management).
 
 ## <a name="step-2-add-the-app"></a>Paso 2: agregar la aplicación
 
@@ -49,7 +46,7 @@ Para asociar la aplicación de línea de negocio a las directivas MAM, debe agre
 2. En la hoja **Aplicaciones de línea de negocio**, seleccione **Agregar una aplicación personalizada**.
 
   ![Captura de pantalla de la hoja de aplicaciones de línea de negocio con el botón Agregar aplicación personalizada en la parte superior](../media/mam-azure-portal-add-lob-app-action.png)
-3.    Proporcione un nombre para la aplicación, el identificador de la agrupación de trabajos en el campo Identificador de la aplicación y la plataforma (iOS o Android).
+3.  Proporcione un nombre para la aplicación, el identificador de la agrupación de trabajos en el campo Identificador de la aplicación y la plataforma (iOS o Android).
 
   ![Captura de pantalla de la hoja Agregar una aplicación personalizada](../media/mam-azure-portal-add-app-details.png)
 
@@ -74,13 +71,12 @@ Si necesita cambiar detalles de la aplicación como su nombre o el identificador
 ##  <a name="remove-apps"></a>Quitar aplicaciones
 Puede quitar una aplicación de línea de negocio de la lista de aplicaciones. Con esto se quitará la aplicación de la lista y también la asociación con las directivas MAM, pero no se quitará ni desinstalará la aplicación del dispositivo del usuario.  
 
-1.    En [Azure Portal](https://portal.azure.com/), vaya a **Administración de aplicaciones móviles de Intune** > **Configuración**. En la hoja **Configuración**, seleccione **Línea de negocio** para abrir la lista de aplicaciones existentes.  
-2.    Elija la aplicación que quiere quitar y, luego, el menú **(...) contexto**.
+1.  En [Azure Portal](https://portal.azure.com/), vaya a **Administración de aplicaciones móviles de Intune** > **Configuración**. En la hoja **Configuración**, seleccione **Línea de negocio** para abrir la lista de aplicaciones existentes.  
+2.  Elija la aplicación que quiere quitar y, luego, el menú **(...) contexto**.
 
   ![Captura de pantalla de la hoja de aplicaciones de línea de negocio con los puntos suspensivos](../media/mam-azure-portal-lob-context-menu.png)
-3.    Seleccione **Eliminar aplicación** para eliminar la aplicación.
+3.  Seleccione **Eliminar aplicación** para eliminar la aplicación.
 
   ![Captura de pantalla de la hoja de línea de negocio con la opción de eliminar aplicación](../media/mam-azure-portal-delete-app.png)
 
   Esto quitará las aplicaciones de la lista de aplicaciones de línea de negocio y de la lista Aplicaciones de destino de la directiva MAM.
-

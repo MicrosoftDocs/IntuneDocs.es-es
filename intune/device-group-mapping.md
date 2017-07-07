@@ -1,12 +1,12 @@
 ---
 title: "Cómo usar las categorías de dispositivos en Intune"
-titleSuffix: Intune Azure preview
-description: "Versión preliminar de Intune Azure: aprenda a usar las categorías de dispositivos que los usuarios pueden elegir cuando inscriben sus dispositivos en Intune."
+titleSuffix: Intune on Azure
+description: "Aprenda a usar las categorías de dispositivos que los usuarios pueden elegir cuando inscriben sus dispositivos en Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 06/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,26 +14,23 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 0ac86a48c00c278b4d65dd7aabb096673fb2c00d
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 4e7c46a0bab45223293b73f8eaa2f8b40850cd43
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="map-device-groups"></a>Asignación de grupos de dispositivos
 
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Use las categorías de dispositivos de Microsoft Intune para agregar dispositivos automáticamente a los grupos en función de las categorías que defina, a fin de facilitar la administración de dichos dispositivos.
 
 Las categorías de dispositivos usan el siguiente flujo de trabajo:
-1.    Crear categorías que los usuarios podrán elegir cuando inscriban sus dispositivos
-4.    Cuando los usuarios finales inscriben sus dispositivos, deben elegir una categoría en la lista de categorías configuradas. Si un dispositivo ya está inscrito, se pedirá al usuario final que seleccione una categoría la próxima vez que tenga acceso a la aplicación Portal de empresa.
-
+1. Crear categorías que los usuarios podrán elegir cuando inscriban sus dispositivos
+3. Cuando los usuarios finales de dispositivos iOS y Android inscriben sus dispositivos, deben elegir una categoría de la lista de categorías configuradas. Para asignar una categoría a un dispositivo Windows, los usuarios finales deben usar el sitio web del Portal de empresa (consulte **Después de configurar los grupos de dispositivos** en este tema para más información).
+4. Después, puede implementar directivas y aplicaciones en esos grupos.
 
 Puede crear las categorías de dispositivos que desee, por ejemplo:
 - Dispositivo de punto de venta
@@ -46,7 +43,6 @@ Puede crear las categorías de dispositivos que desee, por ejemplo:
 
 ### <a name="step-1---create-device-categories-in-the-intune-blade-of-the-azure-portal"></a>Paso 1: Creación de categorías de dispositivos en la hoja de Intune del portal de Azure
 1. En Azure Portal, elija **Más servicios** > **Supervisión y administración** > **Intune**.
-2. Elija **More Services** >  (Más servicios) **Other** >  (Otros) **Intune**.
 3. En la hoja **Intune**, elija **Inscribir dispositivos**.
 3. En la hoja **Inscripción**, elija **Categorías de dispositivos**.
 4. En la página **Categorías de dispositivos**, elija **Crear** para agregar una nueva categoría.
@@ -66,31 +62,35 @@ Después de configurar grupos de dispositivos y de que los usuarios inscriban su
 
 ### <a name="how-to-view-the-categories-of-devices-you-manage"></a>Visualización de las categorías de los dispositivos administrados
 
-1.    En Azure Portal, elija **Más servicios** > **Supervisión y administración** > **Intune**.
+1.  En Azure Portal, elija **Más servicios** > **Supervisión y administración** > **Intune**.
 
 2. En la hoja de Intune del portal de Azure, elija **Dispositivos y grupos**.
 
-3.    En **Administrar**, haga clic en **Todos los dispositivos**.
+3.  En **Administrar**, haga clic en **Todos los dispositivos**.
 
-4.    En la lista de dispositivos, examine la columna **Categoría**.
+4.  En la lista de dispositivos, examine la columna **Categoría**.
 
 Si la columna **Categoría**no se muestra, haga clic en **Columnas**, elija **Categoría** en la lista y, a continuación, haga clic en **Aplicar**.
 
 ### <a name="to-change-the-category-of-a-device"></a>Cambio de la categoría de un dispositivo
 
 1. En Azure Portal, elija **Más servicios** > **Supervisión y administración** > **Intune**.
-2. Elija **More Services** >  (Más servicios) **Other** >  (Otros) **Intune**.
 3. En la hoja **Intune**, elija **Dispositivos y grupos**.
 4. En la hoja **Dispositivos y grupos**, elija **Administrar** > **Todos los dispositivos**.
 5. En la lista de dispositivos, elija el dispositivo que desee, y después, en la hoja de propiedades del dispositivo, elija **Administrar** > **Propiedades**.
 6. En la siguiente hoja, puede cambiar la **categoría del dispositivo** seleccionado por cualquiera de los nombres de categoría que configuró anteriormente.
 
+## <a name="after-you-configure-device-groups"></a>Después de configurar grupos de dispositivos
 
+Cuando los usuarios finales de dispositivos iOS y Android inscriben sus dispositivos, deben elegir una categoría de la lista de categorías configuradas. Tras elegir una categoría y finalizar la inscripción, sus dispositivos se agregarán al grupo de dispositivos de Intune, o al grupo de seguridad de Active Directory correspondiente a la categoría que eligieron.
+
+Para asignar una categoría a un dispositivo Windows, los usuarios finales deben usar el sitio web del Portal de empresa (portal.manage.microsoft.com) después de inscribir el dispositivo. En un dispositivo Windows, acceda al sitio web y vaya a **Menú** > **Mis dispositivos**. Elija un dispositivo inscrito de la página y luego seleccione una categoría. 
+
+Tras elegir una categoría, el dispositivo se agrega automáticamente al grupo correspondiente que ha creado. Si un dispositivo ya estaba inscrito antes de que configurara las categorías, el usuario final verá una notificación sobre el dispositivo en el sitio web del Portal de empresa y se le pedirá que seleccione una categoría la próxima vez que acceda a la aplicación del Portal de empresa en iOS o Android.
 
 ## <a name="further-information"></a>Más información
 - Puede editar una categoría de dispositivo en Azure Portal, pero si lo hace, debe actualizar manualmente los grupos de seguridad de Azure Active Directory que hagan referencia a esta categoría.
 
 - Si elimina una categoría, los dispositivos que posteriormente se asignen a esta mostrarán el nombre de la categoría **Sin asignar**.
-
 
 

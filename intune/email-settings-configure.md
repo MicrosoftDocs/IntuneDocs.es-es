@@ -1,12 +1,12 @@
 ---
 title: "Cómo configurar opciones de correo electrónico de Intune"
-titleSuffix: Intune Azure preview
-description: "Versión preliminar de Intune Azure: aprenda a configurar Intune para crear conexiones al correo electrónico corporativo en los dispositivos que administra."
+titleSuffix: Intune on Azure
+description: "Aprenda a configurar Intune para crear conexiones al correo electrónico corporativo en los dispositivos que administra."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 8e22d95dbaa51e8a799c771ec2cfe34f09e527d8
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 2ae3e8ec9f9c791d536fe311bc4d30cae41b9482
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Configuración del correo electrónico en Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Se pueden usar perfiles de correo electrónico para configurar dispositivos administrados con los valores necesarios para conectarse al correo electrónico de la empresa y sincronizarlo. Esto ayuda a garantizar que la configuración es estándar en todos los dispositivos y también ayuda a reducir las llamadas al soporte técnico por usuarios finales que no conocen la configuración correcta del correo electrónico.
 
@@ -45,19 +42,20 @@ Use la información de este tema para conocer los aspectos básicos de la config
 ## <a name="create-a-device-profile-containing-email-settings"></a>Creación de un perfil de dispositivo que contenga la configuración de correo electrónico
 
 1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Other** >  (Otros) **Intune**.
+2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
 3. En la hoja **Intune**, elija **Configuración del dispositivo**.
 2. En la hoja **Configuración del dispositivo**, elija **Administrar** > **Perfiles**.
 3. En la hoja de perfiles, elija **Create Profile** (Crear perfil).
 4. En la hoja **Create Profile** (Crear perfil), escriba un **nombre** y una **descripción** para el perfil de correo electrónico.
 5. En la lista desplegable **Plataforma**, seleccione la plataforma del dispositivo a la que quiere aplicar configuración de correo electrónico. Actualmente, puede elegir una de las siguientes plataformas para la configuración del dispositivo de correo electrónico:
-    - **Android**
+    - **Android** (solo Android Samsung KNOX Standard)
+    - **Android for Work**
     - **iOS**
     - **Windows Phone 8.1**
     - **Windows 10 y versiones posteriores**
 6. En la lista desplegable de **tipos de perfil**, elija **Correo electrónico**.
 7. Dependiendo de la plataforma que eligió, las opciones que pueda configurar serán diferentes. Vaya a uno de los siguientes temas para conocer más detalles sobre la configuración para cada plataforma:
-    - [Configuración de Android](email-settings-android.md)
+    - [Configuración de Android for Work y Samsung KNOX Standard](email-settings-android.md)
     - [Configuración de iOS](email-settings-ios.md)
     - [Configuración de Windows Phone 8.1](email-settings-windows-phone-8-1.md)
     - [Configuración de Windows 10](email-settings-windows-10.md)
@@ -88,10 +86,10 @@ Si el usuario ya ha configurado una cuenta de correo electrónico, el resultado 
 
 - **iOS**: se detecta un perfil de correo electrónico existente duplicado en función del nombre de host y la dirección de correo electrónico. El perfil de correo electrónico duplicado bloquea la asignación de un perfil de Intune. En este caso, el Portal de empresa informa al usuario de que no es compatible y le pide que quite el perfil configurado manualmente. Para evitar este problema, indique a los usuarios que se inscriban antes de instalar un perfil de correo electrónico. Esto permite que Intune configure el perfil.
 - **Windows**: se detecta un perfil de correo electrónico existente duplicado en función del nombre de host y la dirección de correo electrónico. Intune sobrescribe el perfil de correo electrónico existente que ha creado el usuario.
-- **Android**: se detecta un perfil de correo electrónico existente duplicado en función de la dirección de correo electrónico y se sobrescribe con el perfil de Intune.
+- **Android Samsung KNOX Standard**: se detecta un perfil de correo electrónico duplicado existente según la dirección de correo electrónico y se sobrescribe con el perfil de Intune.
 Como Android no usa el nombre de host para identificar el perfil, se recomienda que no creen varios perfiles de correo electrónico para usarlos en la misma dirección de correo electrónico en diferentes hosts, ya que estos se sobrescriben entre sí.
+- **Android for Work**: Intune proporciona dos perfiles de correo electrónico de Android for Work, uno para cada una de las aplicaciones de correo electrónico de Gmail y de Nine Work. Estas aplicaciones están disponibles en Google Play Store e instalan el perfil de trabajo del dispositivo para que no se generen perfiles duplicados. Ambas aplicaciones admiten conexiones a Exchange. Para habilitar la conectividad de correo electrónico, implemente una de estas aplicaciones de correo en los dispositivos de los usuarios y, después, cree e implemente el perfil de correo electrónico adecuado. Es posible que aplicaciones de correo electrónico como Nine Work no sean gratuitas. Revise los detalles de la licencia de la aplicación o póngase en contacto con la empresa de la aplicación si tiene alguna pregunta.
 
 ### <a name="update-an-email-profile"></a>Actualización de un perfil de correo electrónico
 
 Si hace cambios en el perfil de correo electrónico que asignó anteriormente, es posible que los usuarios finales vean un mensaje que les pida aprobar la reconfiguración de los ajustes de correo electrónico.
-

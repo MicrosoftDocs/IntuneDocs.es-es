@@ -1,5 +1,5 @@
 ---
-title: Administrar el acceso web con Managed Browser | Microsoft Docs
+title: "Administración del acceso web con Managed Browser"
 description: "Implemente la aplicación del explorador administrado para restringir la exploración web y la transferencia de datos de web a otras aplicaciones."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: dc946303-e09b-4d73-8bf4-87742299bc54
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 49ad005846265deb7d4b34b52a1c139e8f61372b
-ms.contentlocale: es-es
-ms.lasthandoff: 05/31/2017
-
-
+ms.openlocfilehash: 89f60e34fd89784ca8ea1fa3999927c7b0bc66e4
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Administrar el acceso a Internet mediante directivas de explorador administrado con Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -158,4 +155,3 @@ Si se implementan varias directivas de explorador administrado en un dispositivo
 -   Si un dispositivo está recibiendo las directivas de explorador administrado por primera vez y dos directivas están en conflicto, las direcciones URL no se aplicarán en el dispositivo. Utilice el nodo **Conflictos de directivas** del área de trabajo **Directiva** para ver los conflictos.
 
 -   Si un dispositivo ya ha recibido una directiva de explorador administrado y se implementa una segunda directiva con la configuración en conflicto, la configuración original permanece en el dispositivo. Utilice el nodo **Conflictos de directivas** del área de trabajo **Directiva** para ver los conflictos.
-

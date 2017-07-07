@@ -1,5 +1,5 @@
 ---
-title: Requisitos previos para directivas de MAM | Microsoft Docs
+title: Requisitos previos para directivas de MAM
 description: "En este tema se describen los requisitos previos de configuración de los usuarios antes de crear directivas de administración de aplicaciones móviles."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 7e6a85e7-e007-41b6-9034-64d77f547b87
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3c209a350a7de7ba7ddb71468c5cd4230dcf5423
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 67c261a3a31229f84d02d4536ab78857369391f1
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="get-ready-to-configure-app-protection-policies-in-the-azure-portal"></a>Preparativos para la configuración de directivas de protección de aplicaciones en Azure Portal
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -70,7 +67,7 @@ Para ver la lista completa de las aplicaciones de Microsoft compatibles, vaya a 
 
 * **Aplicaciones de línea de negocio de su organización:** debe preparar estas aplicaciones para incluir el SDK para aplicaciones de Intune y poder aplicar las directivas de protección de aplicaciones.
 
-  * Para dispositivos administrados por Intune, vea [Decide how to prepare apps for MAM](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md) (Decidir cómo preparar las aplicaciones para MAM).
+  * Para dispositivos administrados por Intune, vea [Decide how to prepare apps for MAM](/intune/apps-prepare-mobile-application-management) (Decidir cómo preparar las aplicaciones para MAM).
 
   * Para dispositivos no administrados (como dispositivos propiedad de los empleados) o para dispositivos administrados por otra solución de administración de dispositivos móviles, vea [Proteger aplicaciones y datos de línea de negocio en dispositivos no inscritos en Microsoft Intune](protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune.md).
 
@@ -109,4 +106,3 @@ Los administradores globales tienen acceso al [Portal de Azure](https://portal.a
 
 ## <a name="next-steps"></a>Pasos siguientes
 [Creación e implementación de directivas de protección de aplicaciones con Microsoft Intune](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md)
-

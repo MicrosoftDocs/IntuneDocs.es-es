@@ -1,5 +1,5 @@
 ---
-title: Administrar PC con software cliente | Microsoft Docs
+title: "Administración de equipos con software cliente"
 description: Administre equipos Windows instalando el software cliente de Intune.
 keywords: 
 author: nathbarn
@@ -14,16 +14,15 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6bd4e3315fd27201e8005b1053fa6e15bf2c21b5
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e217648c744d76d4cde6b8927137cd569b8d0a2e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Administración de PC con Windows con el software de cliente de PC de Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune proporciona una solución completa para que las organizaciones administren dispositivos móviles. Intune puede administrar PC con Windows como dispositivos móviles mediante las funcionalidades de administración de dispositivos modernos integradas en el sistema operativo de Windows 10. Para satisfacer las necesidades de administración de su organización, Intune también puede administrar PC con Windows como equipos con el cliente de software de Intune. Este método de administración utiliza las funcionalidades de administración de equipos tradicionales en el sistema operativo de Windows heredado.
 
@@ -79,7 +78,7 @@ Aunque el software cliente de Intune admite [características de administración
 
 Cuando use el software cliente de Intune para administrar equipos con Windows, solo puede usar las directivas que se muestran en la sección **Administración de equipos**.
 
-Intune administra los equipos de Windows mediante directivas, que son similares al uso de Windows Server Active Directory Domain Services en su organización. Para obtener más información, vea [Directiva de grupo para principiantes](https://technet.microsoft.com/library/hh147307.aspx).
+Intune administra equipos con Windows mediante directivas, de la misma forma en que los objetos de directiva de grupo (GPO) de Active Directory Domain Services (AD DS) de Windows Server. Si administra equipos unidos a un dominio de Active Directory con Intune, [asegúrese de que las directivas de Intune no entren en conflicto con ningún GPO](/intune-classic/deploy-use/resolve-gpo-and-microsoft-intune-policy-conflicts) utilizado en la organización. Para obtener más información, vea [Directiva de grupo para principiantes](https://technet.microsoft.com/library/hh147307.aspx).
 
   ![Selección de la plantilla para la nueva directiva de equipo de Windows](../media/select-template-for-pc-policy.png)
 
@@ -115,4 +114,3 @@ También tenga en cuenta que en la consola de administración de Intune, determi
 El software cliente de Intune, normalmente, se ejecuta silenciosamente en segundo plano sin necesidad de mucha interacción con el usuario o de solucionar problemas. Si necesita solucionar problemas de administración de equipos, puede comprobar los registros. El software cliente de Intune y los registros correspondientes están instalados en el directorio %Archivos de programa%\Microsoft\OnlineManagement.
 
 También puede revisar [Solucionar los problemas de configuración del cliente en Microsoft Intune](/intune-classic/troubleshoot/troubleshoot-client-setup-in-microsoft-intune) para buscar problemas que podrían producirse y las soluciones o alternativas.
-

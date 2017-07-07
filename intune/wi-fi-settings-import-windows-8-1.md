@@ -1,12 +1,12 @@
 ---
 title: "Importar la configuración de Wi-Fi para dispositivos Windows 8.1 y posterior"
-titleSuffix: Intune Azure preview
-description: "Versión preliminar de Intune Azure: cómo importar la configuración de Wi-Fi de Windows a un perfil de Wi-Fi de Intune."
+titleSuffix: Intune on Azure
+description: "Importación de la configuración de Wi-Fi de Windows a un perfil de Wi-Fi de Intune\"."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 2c4e9b19-b268-4f6d-9663-7cdbe4e4a8dd
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 80181ce809265dc4289e56ef65aff66214d2e765
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c4ef9bf6ed3f731afada55d2af71d56367f4638d
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-import-wi-fi-settings-for-windows-81-and-later-devices-in-microsoft-intune"></a>Importación de la configuración de Wi-Fi para Windows 8.1 y dispositivos posteriores en Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 En el caso de los dispositivos que ejecutan Windows 8.1 o Windows 10 para escritorio o móvil, puede importar un perfil de configuración de Wi-Fi que se haya exportado previamente a un archivo.
 
@@ -41,7 +38,7 @@ En Windows, use la utilidad **netsh wlan** para exportar un perfil de Wi-Fi exis
 ## <a name="import-the-wi-fi-settings-into-intune"></a>Importación de la configuración de Wi-Fi en Intune
 
 1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Other** >  (Otros) **Intune**.
+2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
 3. En la hoja **Intune**, elija **Configuración del dispositivo**.
 2. En la hoja **Configuración del dispositivo**, elija **Administrar** > **Perfiles**.
 3. En la hoja de perfiles, haga clic en **Create Profile** (Crear perfil).
@@ -55,4 +52,3 @@ En Windows, use la utilidad **netsh wlan** para exportar un perfil de Wi-Fi exis
 8. Cuando haya terminado, vuelva a la hoja **Create Profile** (Crear perfil) y presione **Crear**.
 
 El perfil se crea y aparece en la hoja de la lista de perfiles.
-

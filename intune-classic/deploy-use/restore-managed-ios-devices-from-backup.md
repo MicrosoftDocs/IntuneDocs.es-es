@@ -14,15 +14,12 @@ ms.assetid: a19e5612-8805-4bd7-a86a-b734bde293ae
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 7fc99a944000a8d5ecfc09ebc2e956e7c0f201c9
-ms.contentlocale: es-es
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="restore-intune-managed-ios-devices-from-backup"></a>Restauración de dispositivos iOS administrados en Intune desde una copia de seguridad
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -52,4 +49,3 @@ Inicie la aplicación Portal de empresa, seleccione el icono del dispositivo act
 
 ### <a name="for-users-who-will-use-both-their-old-and-new-devices"></a>Para usuarios que van a usar el dispositivo antiguo y el nuevo
 Pulse en __Configuración__ > __Safari__ > __Borrar historial y datos de sitios web__ para borrar las cookies de Safari. Después de borrar, desinstale y vuelva a instalar la aplicación Portal de empresa y siga los pasos de inscripción estándar para [inscribir un dispositivo iOS en Intune](/intune-user-help/enroll-your-device-in-intune-ios).
-

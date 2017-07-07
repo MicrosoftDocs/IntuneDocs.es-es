@@ -1,5 +1,5 @@
 ---
-title: Endpoint Protection para equipos Windows | Microsoft Docs
+title: Endpoint Protection para equipos Windows
 description: "Proteja los equipos administrados con Endpoint Protection, que ofrece protección en tiempo real contra las amenazas de malware."
 keywords: 
 author: nathbarn
@@ -14,16 +14,16 @@ ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 180da5e2e0d6980214fff1cfffa3fb1d5b0058d3
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c51f9e471b432b13e0680538c5cf4ad68c1c12f1
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Ayudar a proteger los equipos de Windows con Endpoint Protection para Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune puede ayudarle a proteger los equipos administrados con Endpoint Protection, que proporciona protección en tiempo real contra amenazas de malware, mantiene las definiciones de malware actualizadas y examina automáticamente los equipos. Endpoint Protection también proporciona herramientas que ayudan a administrar y supervisar los ataques de malware.
 
 Si aún no ha instalado el cliente Intune en sus equipos, vea [Instalar el cliente de equipos Windows con Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
@@ -192,4 +192,3 @@ Para obtener más ayuda y soporte técnico, vea [Solucionar problemas de Endpoin
 
 ### <a name="see-also"></a>Consulte también
 [Directivas para proteger equipos de Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-

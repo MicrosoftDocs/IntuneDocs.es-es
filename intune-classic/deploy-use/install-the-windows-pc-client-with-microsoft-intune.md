@@ -1,6 +1,5 @@
 ---
-
-title: Instalar el software cliente de PC | Microsoft Docs
+title: "Instalación del software cliente del PC"
 description: "Siga esta guía para administrar sus equipos Windows con el software cliente de Microsoft Intune."
 keywords: 
 author: nathbarn
@@ -14,16 +13,16 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 19cfb242fbd1be613b38c8aa06c12b741bc6cd74
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 356ada64224f8982baf93ddaccb44df123c4568c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Instalar el cliente de software de Intune en equipos con Windows
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Los equipos con Windows se pueden inscribir instalando el software cliente de Intune. El software cliente de Intune se puede instalar siguiendo los métodos siguientes:
 
 - Mediante el administrador de TI, con uno de estos métodos: instalación manual, directiva de grupo o instalación incluida en una imagen de disco
@@ -261,4 +260,3 @@ El proceso de anulación de la suscripción no elimina la carpeta OnlineManageme
 ### <a name="see-also"></a>Consulte también
 [Administrar equipos Windows con Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)
 [Solucionar los problemas de configuración del cliente en Microsoft Intune](../troubleshoot/troubleshoot-client-setup-in-microsoft-intune.md)
-

@@ -1,6 +1,6 @@
 ---
-title: "Administración de DEP de Apple para dispositivos iOS | Microsoft Docs"
-description: "Implemente un perfil de inscripción que inscriba dispositivos iOS adquiridos a través del Programa de inscripción de dispositivos (DEP) iOS &quot;de forma inalámbrica&quot; para administrar dispositivos Apple."
+title: "Administración de DEP de Apple para dispositivos iOS"
+description: "Implemente un perfil de inscripción que inscriba dispositivos iOS adquiridos a través del Programa de inscripción de dispositivos (DEP) iOS \"de forma inalámbrica\" para administrar dispositivos Apple."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d5facd519f53ea8534445ad95ae9221cf537b50a
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1a02a8b092242df369b382b6cdcc2c2bbd10c10a
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>Inscribir dispositivos iOS de la empresa mediante el Programa de inscripción de dispositivos
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -81,8 +78,8 @@ En los siguientes pasos, se explica cómo inscribir dispositivos iOS en “día 
 
    - **Solicitar afinidad de usuario**: el dispositivo se debe afiliar a un usuario durante la configuración inicial antes de que se le permita el acceso a los datos y al correo electrónico de la empresa como dicho usuario. La **afinidad de usuario** debe configurarse para dispositivos administrados por DEP que pertenezcan a usuarios y necesiten usar el portal de empresa (es decir, para instalar aplicaciones). La autenticación multifactor (MFA) no funciona durante la inscripción en dispositivos DEP con afinidad de usuario. Después de la inscripción, MFA funciona según lo previsto en estos dispositivos. No se puede pedir a los nuevos usuarios que cambien la contraseña al iniciar sesión por primera vez durante la inscripción en dispositivos DEP. Además, no se puede pedir a los usuarios cuyas contraseñas hayan expirado que las restablezcan durante la inscripción de DEP y tienen que hacerlo desde otro dispositivo.
 
-       >[!NOTE]
-       >DEP con afinidad de usuario precisa que el [punto de conexión WS-Trust 1.3 Username/Mixed](https://technet.microsoft.com/en-us/library/adfs2-help-endpoints) esté habilitado para solicitar el token de usuario. [Obtenga más información sobre WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+    >[!NOTE]
+    >DEP con afinidad de usuario precisa que el [punto de conexión WS-Trust 1.3 Username/Mixed](https://technet.microsoft.com/en-us/library/adfs2-help-endpoints) esté habilitado para solicitar el token de usuario. [Obtenga más información sobre WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
    - **Sin afinidad de usuario**: el dispositivo no está afiliado a ningún usuario. Use esta afiliación para dispositivos que realizan tareas sin tener acceso a datos de usuario local. Las aplicaciones que requieren la afiliación de usuario, incluida la aplicación de portal de empresa que se usa para instalar aplicaciones de línea de negocio, no funcionarán.
 
@@ -173,4 +170,3 @@ También puede [obtener más información sobre los grupos de Azure Active Direc
 
 ### <a name="see-also"></a>Consulte también
 [Requisitos previos para la inscripción de dispositivos](prerequisites-for-enrollment.md)
-

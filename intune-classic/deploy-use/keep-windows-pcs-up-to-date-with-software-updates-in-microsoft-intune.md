@@ -1,5 +1,5 @@
 ---
-title: Actualizaciones de software para equipos Windows | Microsoft Docs
+title: Actualizaciones de software para equipos Windows
 description: "Intune ayuda a mantener actualizados los equipos administrados garantizando la rápida instalación de las revisiones y actualizaciones de software más recientes."
 keywords: 
 author: robstackmsft
@@ -14,16 +14,16 @@ ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 5530c1a85c53f76f94d5ebf6d356bfebd1aa2adb
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 1243d52f3d135ac02b9451022451bf9cf8c7304b
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Mantener los equipos Windows al día con las actualizaciones de software de Microsoft Intune
+
+[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+
 Microsoft Intune le ayuda a proteger los equipos administrados de varias formas. Por ejemplo, Intune puede administrar e instalar rápidamente las actualizaciones de software que mantienen los equipos actualizados con las últimas revisiones y mejoras de software.
 
 Si aún no ha instalado el cliente Intune en sus equipos, vea [Instalar el cliente de equipos Windows con Microsoft Intune](install-the-windows-pc-client-with-microsoft-intune.md).
@@ -255,4 +255,3 @@ Al seleccionar una actualización de la lista estarán disponibles otros comando
 
 ### <a name="see-also"></a>Consulte también
 [Directivas para proteger equipos de Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)
-

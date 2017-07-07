@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ed4a9f15-72fb-4171-84cb-63d2f1a6d04c
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 6d18e7c2fc0e0aff071b60f5a51238897c56b247
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-to-install-your-companys-virtual-private-network-vpn"></a>Cómo instalar la red privada virtual (VPN) de la empresa
 
 Si el administrador de TI ha configurado una aplicación de VPN para que pueda conectarse a los recursos de la empresa, verá una notificación en el dispositivo Android que indica que necesita instalar una aplicación de VPN. Siga estos pasos para instalar la aplicación de VPN:
@@ -39,4 +34,3 @@ Si el administrador de TI ha configurado una aplicación de VPN para que pueda c
 
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
-

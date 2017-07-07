@@ -1,5 +1,5 @@
 ---
-title: "Configuración de directivas de Windows 10 | Microsoft Docs"
+title: "Configuración de directivas de Windows 10"
 description: "Use la configuración de directiva indicada en este tema para configurar las opciones integradas y personalizadas de los dispositivos Windows 10 Escritorio y Windows 10 Mobile inscritos."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: dd81102eb768ab8ad5f9ee1d2f122f15a8e17b89
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 85612fc63b3fb738e6135ac71065edc06169fa9e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Configuración de directivas de Intune para dispositivos Windows 10 en Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -118,16 +115,16 @@ Use la **directiva de configuración general** de Microsoft Intune para Windows 
 
 |Nombre de la configuración|Información adicional (si es necesario)|
 |----------------|----------------------|
-|**Permitir explorador web**|Permite el uso del explorador web de Edge en el dispositivo<br>(Windows 10 Mobile solo)|
+|**Permitir explorador web**|Permite el uso del explorador web de Microsoft Edge en el dispositivo<br>(Windows 10 Mobile solo)|
 |**Permitir sugerencias de búsqueda en la barra de direcciones**|Permite que el motor de búsqueda sugiera sitios a medida que se escriben las frases de búsqueda|
 |**Permitir enviar tráfico de intranet a Internet Explorer**|Permite a los usuarios abrir sitios web de intranet en Internet Explorer<br>(Windows 10 Escritorio solo)|
-|**Permitir No realizar seguimiento**|Configura el explorador Edge para que envíe encabezados Do Not Track a los sitios web que visitan los usuarios|
+|**Permitir No realizar seguimiento**|Configura el explorador Microsoft Edge para que envíe encabezados Do Not Track a los sitios web que visitan los usuarios|
 |**Habilitar SmartScreen**||
-|**Permitir Active scripting**|Permite que scripts, como JavaScript, se ejecuten en el explorador Edge|
+|**Permitir Active scripting**|Permite que scripts, como JavaScript, se ejecuten en el explorador Microsoft Edge|
 |**Permitir elementos emergentes**|Solo se aplica a Windows 10 Escritorio|
 |**Permitir cookies**||
 |**Permitir el autorrelleno**|Permite a los usuarios cambiar la configuración de Autocompletar en el explorador<br>(Windows 10 Escritorio solo)|
-|**Permitir administrador de contraseñas**|Habilita o deshabilita la característica Administrador de contraseñas de Edge|
+|**Permitir administrador de contraseñas**|Habilita o deshabilita la característica Administrador de contraseñas de Microsoft Edge|
 |**Ubicación de la lista de sitios de Modo de empresa**|Especifica dónde se encuentra la lista de sitios web que se abren en modo de empresa. Los usuarios no pueden editar esta lista.<br>(Windows 10 Escritorio solo)|
 
 ### <a name="apps"></a>Aplicaciones
@@ -214,4 +211,3 @@ Todos los valores son solo válidos para Windows 10 Escritorio.
 
 ### <a name="see-also"></a>Consulte también
 [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

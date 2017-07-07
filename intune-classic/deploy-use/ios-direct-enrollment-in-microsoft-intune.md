@@ -1,5 +1,5 @@
 ---
-title: "Inscripción directa para dispositivos iOS | Microsoft Docs"
+title: "Inscripción directa para dispositivos iOS"
 description: "Use la herramienta Apple Configurator para inscribir directamente los dispositivos iOS corporativos con una directiva predefinida conectándolos mediante USB a un equipo Mac."
 keywords: 
 author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: a692b90c-72ae-47d1-ba9c-67a2e2576cc2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: ee0320db2c4a1a977326f62fcd20597fa39aba24
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9909e1dd4f9891a2efb47383242ed7765d3f0291
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="directly-enroll-ios-devices-by-using-apple-configurator"></a>Inscribir directamente dispositivos iOS mediante Apple Configurator
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -93,4 +90,3 @@ Cuando inscribe dispositivos iOS directamente, puede inscribir un dispositivo si
 9.  En el dispositivo iOS, abra **Configuración** y vaya a **General** &gt; **Administración de dispositivos** &gt; **Perfil de administración**. Confirme que aparece la instalación del perfil y compruebe las restricciones de directivas de iOS y las aplicaciones instaladas. Las aplicaciones y las restricciones de directivas pueden tardar hasta 10 minutos en aparecer en el dispositivo.
 
 10.  Distribuya los dispositivos. Ahora el dispositivo iOS está inscrito con Intune y administrado.
-

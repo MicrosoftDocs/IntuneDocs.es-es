@@ -5,27 +5,23 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 06/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a26d9e3c-8f58-4494-9571-fc88ba91852e
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5ed0e84c16ea540c08e97cb55ef8a09cbc7339f6
-ms.openlocfilehash: f01d8b31f493b7103fe788aa62d37f9c73981984
-ms.contentlocale: es-es
-ms.lasthandoff: 05/25/2017
-
-
+ms.openlocfilehash: 90168dae6b73185ae8cdf6c55093c79ab3d729c0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="using-the-intune-company-portal-website"></a>Usar el sitio web del Portal de empresa de Intune
 El [sitio web del Portal de empresa](https://portal.manage.microsoft.com) es una página web que pueden usar los usuarios finales para administrar equipos y dispositivos que hayan inscrito en Intune.
 
@@ -41,7 +37,7 @@ Pueden llevar a cabo las siguientes tareas desde el sitio web del Portal de empr
 
 -   [Bloquear un dispositivo de forma remota](remote-lock-your-device-cpwebsite.md)
 
--    [Sincronizar el dispositivo manualmente para que las aplicaciones se instalen más rápido](sync-your-device-manually-cpwebsite.md)
+-   [Sincronizar el dispositivo manualmente para que las aplicaciones se instalen más rápido](sync-your-device-manually-cpwebsite.md)
 
 -   Buscar información de contacto del administrador de TI, si está configurado
 
@@ -49,9 +45,4 @@ Pueden llevar a cabo las siguientes tareas desde el sitio web del Portal de empr
 
 -   Administrar de forma remota su PC (solo funciona en PC)
 
-Los usuarios finales pueden realizar la mayoría de las tareas que hacen en el **sitio web del Portal de empresa** en la **aplicación del Portal de empresa** que instalan en su dispositivo. Consulte las páginas siguientes para obtener vínculos a todas las tareas que pueden realizar los usuarios finales en su dispositivo:
-
-- [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
-- [Uso de un dispositivo iOS o Mac OS con Intune](using-your-ios-or-macOS-device-with-intune.md)
-- [Usar un dispositivo Windows con Intune](using-your-windows-device-with-intune.md)
-
+¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).

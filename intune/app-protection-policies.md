@@ -1,7 +1,7 @@
 ---
 title: "Crear e implementar directivas de protección de aplicaciones"
-titleSuffix: Intune Azure preview
-description: "Versión preliminar de Intune Azure: aprenda cómo las directivas de protección de aplicaciones de Intune pueden ayudar a proteger los datos de empresa que usan las aplicaciones que administra."
+titleSuffix: Intune on Azure
+description: "Aprenda cómo las directivas de protección de aplicaciones de Intune pueden ayudar a proteger los datos de empresa que usan las aplicaciones que administra."
 keywords: 
 author: NathBarn
 ms.author: nathbarn
@@ -15,21 +15,23 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d63e99561766268941b2c6d8b3bb6a1dd028f72c
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 56a19bc4d970f230f719af9369dada45ffb65e76
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Creación y asignación de directivas de protección de aplicaciones
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-**Si no está en el servicio de Intune del programa de versión preliminar del portal Azure**, en este tema se explica [cómo crear directivas de protección de aplicaciones](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) en la consola de Intune clásica.
+## <a name="before-you-begin"></a>Antes de comenzar
+
+Si desea obtener instrucciones en la consola de Intune clásica, vea [cómo crear directivas de protección de aplicaciones](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune).
 
 Las directivas de protección de aplicaciones se pueden aplicar a aplicaciones que se ejecutan en dispositivos que podrían estar o no administrados por Intune. Para obtener una descripción más detallada de cómo funcionan las directivas de protección de aplicaciones y los escenarios admitidos por las directivas de protección de aplicaciones de Intune, consulte [What is Microsoft Intune app protection policies](app-protection-policy.md) (¿Qué son las directivas de protección de aplicaciones de Microsoft Intune?).
+
+Si desea acceder a una lista de aplicaciones compatibles con MAM, vea la [lista de aplicaciones de MAM](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 ##  <a name="create-an-app-protection-policy"></a>Crear directivas de protección de aplicaciones
 1.  En la carga de trabajo **Mobile apps**, elija **Administrar** > **Directivas de protección de aplicaciones**.
@@ -116,7 +118,6 @@ Para ver el efecto de los cambios inmediatamente, el usuario final tendrá que s
 ## <a name="policy-settings"></a>Configuraciones de directiva
 Para ver una lista completa de las configuraciones de directiva para iOS y Android, seleccione una opción a continuación:
 
-> [!div class="op_single_selector"]
 - [Directivas de iOS](app-protection-policy-settings-ios.md)
 - [Directivas de Android](app-protection-policy-settings-android.md)
 
@@ -126,4 +127,3 @@ Para ver una lista completa de las configuraciones de directiva para iOS y Andro
 ### <a name="see-also"></a>Consulte también
 * [What to expect when your Android app is managed by app protection policies](app-protection-enabled-apps-android.md) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)
 * [What to expect when your iOS app is managed by app protection policies](app-protection-enabled-apps-ios.md) (Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones)
-

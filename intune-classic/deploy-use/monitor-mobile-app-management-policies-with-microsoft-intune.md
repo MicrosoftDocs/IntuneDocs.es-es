@@ -1,5 +1,5 @@
 ---
-title: "Supervisión de las directivas de MAM con Microsoft Intune | Microsoft Docs"
+title: "Supervisión de las directivas de MAM con Microsoft Intune"
 description: "Vea cuántos usuarios tienen la directiva y profundice para descubrir más detalles."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d80632aceaa675f08eb4b23ce59e3bcabb72b4d0
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: c3c41f5e3b0fc81232b03fe547bee7f72fb427a0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Supervisión de directivas de protección de aplicaciones con Microsoft Intune
 Puede supervisar el estado de cumplimiento de las directivas de protección de aplicaciones que haya aplicado a los usuarios. Podrá encontrar información sobre los usuarios afectados por las directivas de protección de aplicaciones, el estado de cumplimiento y cualquier problema que puedan estar experimentando sus usuarios.
 
@@ -134,6 +131,5 @@ Siga estos pasos para generar el informe de protección de aplicaciones:
 ## <a name="see-also"></a>Consulte también
 [Administrar la transferencia de datos entre aplicaciones iOS](manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
 
-* [What to expect when your Android app is managed by app protection policies](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)
-* [What to expect when your iOS app is managed by app protection policies](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md) (Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones)
-
+* [What to expect when your Android app is managed by app protection policies](/intune/end-user-mam-apps-android) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)
+* [What to expect when your iOS app is managed by app protection policies](/intune/end-user-mam-apps-ios) (Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones)
