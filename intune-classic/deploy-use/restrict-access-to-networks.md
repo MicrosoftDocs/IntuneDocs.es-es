@@ -1,5 +1,5 @@
 ---
-title: Proteger el acceso a redes con Cisco ISE | Microsoft Docs
+title: Proteger el acceso a redes con Cisco ISE
 description: Use Cisco ISE con Intune de forma que los dispositivos se inscriban y cumplan la directiva de Intune antes de que tengan acceso al Wi-Fi y a la VPN controlados por Cisco ISE.
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e3dd45ace4016619a962fdd6836ddddad5d143f6
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 958108c4fbeb52803bf900a1a0f9f633716cddb8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="using-cisco-ise-with-microsoft-intune"></a>Usar Cisco ISE con Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -157,7 +154,7 @@ En la consola de administración de ISE, proporcione estos valores de configurac
 ## <a name="information-shared-between-your-intune-tenant-and-your-cisco-ise-server"></a>Información compartida entre su inquilino de Intune y el servidor de Cisco ISE
 En esta tabla se enumera la información compartida entre su inquilino de Intune y su servidor de Cisco ISE para los dispositivos que administra Intune.
 
-|Propiedad|    Descripción|
+|Propiedad|  Descripción|
 |---------------|------------------------------------------------------------|
 |complianceState|La cadena de verdadero o falso que indica si el dispositivo es compatible o no.|
 |IsManaged|La cadena de verdadero o falso que indica si el cliente se administra mediante Intune o no.|
@@ -192,4 +189,3 @@ Existe también un [conjunto descargable de instrucciones de inscripción](https
 ### <a name="see-also"></a>Consulte también
 
 [Guía del administrador del motor de los servicios de identidad de Cisco, versión 2.1](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF)
-

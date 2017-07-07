@@ -1,5 +1,5 @@
 ---
-title: "Elegir cómo administrar dispositivos | Microsoft Docs"
+title: "Elegir cómo administrar dispositivos"
 description: "Obtenga información sobre las distintas formas en las que puede inscribir y administrar dispositivos."
 keywords: 
 author: nathbarn
@@ -14,15 +14,12 @@ ms.assetid: 770aad50-fd7a-4cf1-a793-f95fe47fc3f8
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: dfd79323c7db53cb3291f729878bcd1d36f93fe7
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 0dbe387ee6b8130e3dc64323f89b38e868087dfe
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="choose-how-to-manage-devices"></a>Elegir cómo administrar dispositivos
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -48,12 +45,11 @@ Inscriba equipos con Windows para obtener la máxima funcionalidad, aunque el cl
 - Endpoint Protection y Firewall de Windows
 - Asistencia remota a los usuarios con el software de TeamViewer
 
-Para obtener una lista detallada de las capacidades de administración que obtendrá con cada método, consulte [Capacidades de administración de dispositivos móviles](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune).
-Para obtener información sobre los dispositivos y los equipos compatibles con Intune, consulte [Equipos y dispositivos móviles compatibles](/intune-classic/get-started/what-to-know-before-you-start-microsoft-intune#intune-supported-devices).
+Para obtener una lista detallada de las funcionalidades de administración que obtendrá con cada método, consulte [Mobile device managem/intune/supported-devices-browserssoft-intune).
+Para obtener información sobre los dispositivos y los equipos compatibles con Intune, consulte [Equipos y dispositivos móviles compatibles](/intune/supported-devices-browsers#intune-supported-devices).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 - [Elegir cómo inscribir dispositivos móviles](/intune-classic/get-started/choose-how-to-enroll-devices1)
 - [Administrar un equipo con Windows con el software cliente de equipos de Intune](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)
 - [Administración de dispositivos móviles de Exchange ActiveSync con Microsoft Intune](/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune).
-

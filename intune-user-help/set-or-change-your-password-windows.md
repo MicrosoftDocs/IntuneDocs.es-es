@@ -11,19 +11,15 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c4801a78-580e-4e3d-beca-0b09b9b2437c
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: d7d9ce0e1dc17dfafe78757a4bd8e48f9f67132d
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="make-your-device-safer-with-the-right-password"></a>Hacer que el dispositivo esté más seguro con la contraseña correcta
 
 El acceso a recursos corporativos, como correo electrónico y documentos, es algo que las personas necesitan hacer cada día desde sus dispositivos de Windows. Su organización desea asegurarse de que el dispositivo lo hace sin ningún riesgo. Una manera de asegurarse de que el dispositivo tiene acceso de forma segura a estos recursos es requerir que los dispositivos usen una contraseña. Por ejemplo, estas contraseñas se utilizan para acceder al dispositivo desde la pantalla de bloqueo.
@@ -49,4 +45,3 @@ Si el dispositivo Windows no se ajusta a la directiva de contraseñas del admini
 4. Elija **Listo**.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
-

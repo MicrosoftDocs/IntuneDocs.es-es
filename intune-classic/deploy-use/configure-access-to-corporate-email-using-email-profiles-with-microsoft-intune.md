@@ -1,5 +1,5 @@
 ---
-title: "Acceso al correo electrónico corporativo mediante perfiles de correo electrónico | Microsoft Docs"
+title: "Acceso al correo electrónico corporativo con perfiles de correo electrónico"
 description: "Las opciones de configuración de perfil de correo electrónico se pueden usar para configurar el acceso al correo de determinados clientes de correo en dispositivos móviles."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: 10f0cd61-e514-4e44-b13e-aeb85a8e53ae
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 21eee53a4e3674dc28b01311a61dda0d71f9f7fa
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 87bf5c96ee29f8a39b875543c4f6a3731f3e604e
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Configurar el acceso al correo electrónico corporativo mediante perfiles de correo electrónico con Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -36,11 +33,11 @@ Si necesita tomar medidas adicionales para la prevención de pérdida de datos, 
 Los usuarios o los administradores de TI también pueden optar por instalar otros clientes de correo electrónico (por ejemplo, Microsoft Outlook para Android o iOS). Puede que estos clientes de correo electrónico no admitan perfiles de correo y no puedan configurarse mediante perfiles de correo electrónico de Intune.  
 
 Puede usar perfiles de correo electrónico para configurar el cliente de correo nativo en los siguientes tipos de dispositivo:
--    Windows Phone 8.1 y versiones posteriores
--    Windows 10 (para el escritorio), Windows 10 Mobile y versiones posteriores
--    iOS 8.0 y versiones posteriores
--    Samsung KNOX Standard (4.0 y posterior)
--    Android for Work (aplicaciones de correo de terceros; la aplicación de correo nativa es solo de perfil personal)
+-   Windows Phone 8.1 y versiones posteriores
+-   Windows 10 (para el escritorio), Windows 10 Mobile y versiones posteriores
+-   iOS 8.0 y versiones posteriores
+-   Samsung KNOX Standard (4.0 y posterior)
+-   Android for Work (aplicaciones de correo de terceros; la aplicación de correo nativa es solo de perfil personal)
 
 Además de configurar una cuenta de correo electrónico en el dispositivo, también puede configurar la cantidad de correo electrónico que se sincronizará y, en función del tipo de dispositivo, los tipos de contenido que se sincronizarán.
 
@@ -85,7 +82,7 @@ La contraseña no está incluida en el perfil de correo electrónico, por lo que
 
     -   **Perfil de correo electrónico (Android for Work - Gmail)**
 
-    -    **Perfil de correo electrónico (Android for Work - Nine Work)**
+    -   **Perfil de correo electrónico (Android for Work - Nine Work)**
 
     Solo puede crear e implementar una directiva de perfiles de correo electrónico personalizada. La configuración recomendada no está disponible.
 
@@ -133,4 +130,3 @@ En el área de trabajo **Directiva** de la página **General** , un resumen de e
 > - En el caso de Android for Work, asegúrese de que también implementa las aplicaciones Gmail o Nine Work, además del perfil de correo electrónico adecuado.
 > - Si desea quitar un perfil de correo electrónico de un dispositivo, edite la implementación y quite los grupos de los que sea miembro el dispositivo. Tenga en cuenta que un perfil de correo electrónico no se puede quitar de esta manera, si es el único perfil de correo electrónico en un dispositivo.
 > - Si hace cambios en el perfil de correo electrónico que implementó anteriormente, es posible que los usuarios finales vean un mensaje que les pida aprobar la reconfiguración de los ajustes de correo electrónico.
-

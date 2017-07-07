@@ -1,7 +1,7 @@
 ---
 title: "Creación de una directiva de cumplimiento para Android"
-titleSuffix: Intune Azure preview
-description: "Versión preliminar de Intune Azure: aprenda a crear una directiva de cumplimiento para dispositivos Android."
+titleSuffix: Intune on Azure
+description: Aprenda a crear una directiva de cumplimiento para dispositivos Android.
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,21 +15,18 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 08d503fad2304b25e6feb7f41cf0b93546dd26fd
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: cc68bf4a52e5fcf9a8fbb3550a5bee814f4f46f0
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Creación de una directiva de cumplimiento de dispositivos para dispositivos Android en Intune
 
-# <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune-azure-preview-portal"></a>Creación de una directiva de cumplimiento de dispositivo para dispositivos Android en el portal de la versión preliminar de Intune Azure
 
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
-
-Las directivas de cumplimiento de dispositivos se crean para cada plataforma del portal de la versión preliminar de Intune Azure. 
+Las directivas de cumplimiento de dispositivos se crean para cada plataforma que constituye el portal de Azure de Intune. 
 
 - Para aprender más sobre lo que son las directivas de cumplimiento, consulte el tema [¿Qué es el cumplimiento de los dispositivos?](device-compliance.md).
 - Para conocer los requisitos previos que deben satisfacerse antes de crear una directiva de cumplimiento, consulte el tema [Introducción al cumplimiento de dispositivos](device-compliance-get-started.md).
@@ -134,4 +131,3 @@ En la tabla siguiente se describe cómo administrar la configuración de no conf
 <!--- ## Next steps
 
 [How to monitor device compliance](device-compliance-monitor.md)--->
-

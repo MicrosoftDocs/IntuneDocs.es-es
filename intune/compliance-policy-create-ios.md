@@ -1,7 +1,7 @@
 ---
 title: "Creación de una directiva de cumplimiento para iOS"
-titleSuffix: Intune Azure preview
-description: "Versión preliminar de Intune Azure: aprenda a crear una directiva de cumplimiento para dispositivos iOS."
+titleSuffix: Intune on Azure
+description: Aprenda a crear una directiva de cumplimiento para dispositivos iOS.
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,19 +15,16 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 423c6058c8a2803e62a90f309f4b9c9ad62f9ede
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9337586ad5daa909f38aba2b25fc159b44f55e65
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="how-to-create-a-device-compliance-policy-for-ios-devices-in-intune"></a>Creación de una directiva de cumplimiento para dispositivos iOS en Intune
 
-# <a name="how-to-create-a-device-compliance-policy-for-ios-devices-in-intune-azure-preview"></a>Creación de una directiva de cumplimiento de dispositivos para dispositivos iOS en la versión preliminar de Intune Azure
 
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Las directivas de cumplimiento se crean para cada plataforma.  Puede crear una directiva de cumplimiento en el portal de Azure. Para aprender más sobre lo que son las directivas de cumplimiento, consulte el tema [¿Qué es el cumplimiento de los dispositivos?](device-compliance.md). Para conocer los requisitos previos que deben satisfacerse antes de crear una directiva de cumplimiento, consulte el tema [Introducción al cumplimiento de dispositivos](device-compliance-get-started.md).
 
@@ -124,4 +121,3 @@ Para más información sobre los perfiles de correo electrónico, consulte [Conf
 <!--- ## Next steps
 
 [How to monitor device compliance](device-compliance-monitor.md)--->
-

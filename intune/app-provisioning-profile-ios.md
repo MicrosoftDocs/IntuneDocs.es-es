@@ -1,7 +1,7 @@
 ---
-title: Perfiles de aprovisionamiento de aplicaciones | Microsoft Docs
-titleSuffix: Intune Azure preview
-description: "Versión preliminar de Intune Azure: Intune proporciona las herramientas para asignar proactivamente un nuevo perfil de aprovisionamiento a dispositivos que tengan aplicaciones cuya expiración esté próxima."
+title: Perfiles de aprovisionamiento de aplicaciones
+titleSuffix: Intune on Azure
+description: "Intune proporciona las herramientas para asignar proactivamente un nuevo perfil de aprovisionamiento a dispositivos que tengan aplicaciones cuya expiración esté próxima."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -15,17 +15,15 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 966c097280ebebac68749e71c20381ee816360da
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: bf2da880f0f092b9948a400f6a10bd9ad032f959
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="use-ios-mobile-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Uso de perfiles de aprovisionamiento móvil iOS para evitar que las aplicaciones expiren
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>Introducción
 
@@ -42,8 +40,8 @@ Cuando el certificado haya expirado, debe volver a firmar la aplicación con un 
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>Creación de un perfil de aprovisionamiento de aplicaciones móviles iOS
 
 1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Other** >  (Otros) **Intune**.
-3. En la hoja **Intune**, elija **Mobile apps**.
+2. Elija **Más servicios** > **Supervisión y administración** > **Intune**.
+3. En la hoja **Intune**, elija **Aplicaciones móviles**.
 1.  En la carga de trabajo **Mobile Apps**, elija **Administrar** > **Perfiles de aprovisionamiento de iOS**.
 2.  En la hoja de lista de perfiles, elija **Crear perfil**.
 3. En la hoja **Crear perfil**, configure los siguientes valores:
@@ -55,4 +53,3 @@ Cuando el certificado haya expirado, debe volver a firmar la aplicación con un 
 ## <a name="next-steps"></a>Pasos siguientes
 
 Asigne el perfil a los dispositivos iOS necesarios. Para obtener más información, siga los pasos de [Asignación de perfiles de dispositivo](device-profile-assign.md).
-

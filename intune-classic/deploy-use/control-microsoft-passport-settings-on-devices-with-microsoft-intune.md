@@ -1,5 +1,5 @@
 ---
-title: "Controlar la configuración de Windows Hello para empresas en dispositivos | Microsoft Docs"
+title: "Control de la configuración de Windows Hello para empresas en los dispositivos"
 description: "Obtenga información sobre cómo se integra Intune en Windows Hello para empresas, un método alternativo de inicio de sesión que usa Active Directory o una cuenta de Azure Active Directory para reemplazar una contraseña, una tarjeta inteligente o una tarjeta inteligente virtual."
 keywords: 
 author: lleonard-msft
@@ -14,15 +14,12 @@ ms.assetid: 402bc5a1-ada3-4c4c-a0de-292d026b4444
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9a223f7fb1fd0736541da0d6a15ad5285241577a
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 7c4ac0b79e30283b90612c77acf1462a25bb6093
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="control-windows-hello-for-business-settings-on-devices-with-microsoft-intune"></a>Controlar la configuración de Windows Hello para empresas en dispositivos que tienen Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -83,4 +80,3 @@ Para garantizar que se resuelven los conflictos de directivas y que la directiva
 
 ## <a name="further-information"></a>Más información
 Para obtener más información sobre Microsoft Passport, vea [la guía](https://technet.microsoft.com/library/mt589441.aspx) en la documentación de Windows 10.
-

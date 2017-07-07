@@ -1,5 +1,5 @@
 ---
-title: "Supervisar la implementación de aplicaciones | Microsoft Docs"
+title: "Supervisión de las implementaciones de aplicaciones"
 description: "Obtenga información acerca de cómo supervisar las aplicaciones implementadas con Intune."
 keywords: 
 author: robstackmsft
@@ -14,16 +14,12 @@ ms.assetid: 5daad56d-71c8-455b-8a55-f8b33e279a8a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 808268faa797d8576f5fb693d9940d97d17abf21
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 9255a9cb966ef02aba11e0a6aaf7caf7e808a41c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="monitor-app-deployments-in-microsoft-intune"></a>Supervisar la implementación de aplicaciones en Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -49,4 +45,3 @@ En la lista de aplicaciones, seleccione cualquier aplicación y elija **Ver prop
 En la página **Propiedades del software** de la aplicación, elija una de estas pestañas: **General** (para ver información general sobre la aplicación y su estado de instalación), **Dispositivos** (para ver los dispositivos que han instalado correctamente una implementación dirigida de la aplicación) y **Usuarios**para ver los usuarios en cuyos dispositivos se ha instalado correctamente una implementación dirigida de la aplicación).
 
 Al igual que antes, puede usar la lista desplegable **Filtros** para configurar los valores mostrados en cada una de las pestañas.
-

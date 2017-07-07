@@ -1,12 +1,12 @@
 ---
 title: "Cómo configurar opciones de VPN de Intune"
-titleSuffix: Intune Azure preview
-description: "Versión preliminar de Intune Azure: aprenda a usar Intune para configurar conexiones VPN en los dispositivos que administra.¡"
+titleSuffix: Intune on Azure
+description: "Obtenga información sobre cómo usar Intune para configurar conexiones VPN en los dispositivos que administra\"."
 keywords: 
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,15 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 8a8742d0b579fec734dd8335e2a610d126db21fa
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e6a59c1f5fcb94d427b6d12eef19d4d49ff930ce
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>Configuración de VPN en Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Las redes privadas virtuales (VPN) ofrecen a los usuarios un acceso remoto seguro a la red de la empresa. Los dispositivos utilizan un perfil de conexión VPN para iniciar una conexión con el servidor VPN. Use los **perfiles de VPN** en Microsoft Intune para asignar la configuración de VPN a los usuarios y dispositivos de la organización, para que puedan conectarse a la red de forma fácil y segura.
 
@@ -36,12 +33,11 @@ Por ejemplo, suponga que quiere aprovisionar todos los dispositivos iOS con la c
 
 Puede crear perfiles de VPN mediante los siguientes tipos de conexión:
 
-||||||||
+|Tipo de conexión|Android<br>Android for Work|iOS|macOS|Windows Phone 8,1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
-|Tipo de conexión|Android|iOS|macOS|Windows Phone 8,1|Windows 8.1|Windows 10|
 |Pulse Secure|Sí|Sí|Sí|Sí|Sí|Sí|
 |Cisco (IPSec)|No|Sí|No|No|No|No|
-|Citrix|Sí|Sí|No|No|No|No|
+|Citrix|Sí (solo Android)|Sí|No|No|No|No|
 |F5 Edge Client|Sí|Sí|Sí|Sí|Sí|Sí|
 |Dell SonicWALL Mobile Connect|Sí|Sí|Sí|Sí|Sí|Sí|
 |Check Point Capsule VPN|Sí|Sí|Sí|Sí|Sí|Sí|
@@ -61,13 +57,14 @@ Aprenda a crear perfiles de VPN personalizados mediante la configuración de URI
 ## <a name="create-a-device-profile-containing-vpn-settings"></a>Creación de un perfil de dispositivo que contenga la configuración de VPN
 
 1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Other** >  (Otros) **Intune**.
+2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
 3. En la hoja **Intune**, elija **Configuración del dispositivo**.
 2. En la hoja **Configuración del dispositivo**, elija **Administrar** > **Perfiles**.
 3. En la hoja de perfiles, elija **Create Profile** (Crear perfil).
 4. En la hoja **Create Profile** (Crear perfil), escriba un **nombre** y una **descripción** para el perfil de VPN.
 5. En la lista desplegable **Plataforma**, seleccione la plataforma de dispositivo a la que quiere aplicar la configuración de VPN. Actualmente, puede elegir una de las siguientes plataformas para la configuración del dispositivo VPN:
     - **Android**
+    - **Android for Work**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
@@ -75,7 +72,7 @@ Aprenda a crear perfiles de VPN personalizados mediante la configuración de URI
     - **Windows 10 y versiones posteriores**
 6. En la lista desplegable de **tipos de perfil**, elija **VPN**.
 7. Dependiendo de la plataforma que eligió, las opciones que pueda configurar serán diferentes. Vaya a uno de los siguientes temas para conocer más detalles sobre la configuración para cada plataforma:
-    - [Configuración de Android](vpn-settings-android.md)
+    - [Configuración de Android y Android for Work](vpn-settings-android.md)
     - [Configuración de iOS](vpn-settings-ios.md)
     - [Configuración de macOS](vpn-settings-macos.md)
     - [Configuración de Windows Phone 8.1](vpn-settings-windows-phone-8-1.md)
@@ -100,4 +97,3 @@ Para más información sobre cómo crear y usar perfiles de certificado en Intun
 ### <a name="user-name-and-password"></a>Nombre de usuario y contraseña
 
 El usuario se autentica en el servidor de VPN proporcionando el nombre de usuario y contraseña.
-

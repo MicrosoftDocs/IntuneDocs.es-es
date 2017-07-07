@@ -1,5 +1,5 @@
 ---
-title: "Configuración de directivas de iOS | Microsoft Docs"
+title: "Configuración de directivas de iOS"
 description: "Cree directivas que controlen la configuración y las características en los dispositivos iOS que administra con Intune."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 3a59391aaf241e52f59bb3ff5de3eae84c496c51
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ba270c2bb8780db6bc230022446f982b81f8a2ee
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="ios-policy-settings-in-microsoft-intune"></a>Configuración de directivas de iOS en Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -88,7 +85,7 @@ Todas las configuraciones se aplican a iOS 8.0 y posterior.
 |**Permitir que las aplicaciones administradas sincronicen datos en iCloud**|Permitir que las aplicaciones que se administran con Intune sincronicen los datos con la cuenta de iCloud del usuario.|
 |**Permitir la entrega para continuar las actividades en otro dispositivo**|Permitir al usuario continuar el trabajo iniciado en un dispositivo iOS en otro dispositivo iOS o MAC OS X.|
 |**Permitir el uso compartido de fotografías de iCloud**|Establezca **No** para deshabilitar **Fotos compartidas en iCloud** en el dispositivo.|
-|**Permitir la biblioteca de fotografías de iCloud**|Si se establece en **No**, deshabilita el uso de la Fototeca de iCloud que permite a los usuarios almacenar fotos y vídeos en la nube.    Las fotos que no se hayan descargado completamente de la Fototeca de iCloud al dispositivo se quitarán de este si esta opción se establece en **No**.|
+|**Permitir la biblioteca de fotografías de iCloud**|Si se establece en **No**, deshabilita el uso de la Fototeca de iCloud que permite a los usuarios almacenar fotos y vídeos en la nube.   Las fotos que no se hayan descargado completamente de la Fototeca de iCloud al dispositivo se quitarán de este si esta opción se establece en **No**.|
 
 ### <a name="application-settings-for-the-browser"></a>Configuración de la aplicación para el explorador
 Todas las configuraciones se aplican a iOS 8.0 y posterior.
@@ -387,4 +384,3 @@ Antes de empezar, debe tener instalado Apple Configurator y haber creado un arch
 
 ### <a name="see-also"></a>Consulte también
 [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
-

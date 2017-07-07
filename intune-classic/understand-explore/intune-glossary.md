@@ -1,26 +1,24 @@
 ---
-title: Glosario de Intune | Microsoft Docs
+title: Glosario de Intune
 description: "Obtenga información sobre la terminología de Microsoft Intune"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/17/2016
+ms.date: 06/16/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
+ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 43b6dbfc004e8687eaf2a0ee185728136f457bfc
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: be3b078edc4e133fb586bb9476ba1dd770d0f389
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="microsoft-intune-glossary"></a>Glosario de Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -29,10 +27,17 @@ ms.lasthandoff: 05/23/2017
 
 |||
 |-|-|
-|SDK para aplicaciones|El [SDK de aplicaciones de Microsoft Intune](/intune-classic/develop/intune-app-sdk) permite agregar funcionalidad a las aplicaciones escritas internamente que permite administrarlas mediante directivas de administración de aplicaciones móviles de Intune.|
-|Herramienta de ajuste de aplicaciones|[Aplicación de línea de comandos](/intune-classic/deploy-use/decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune) que crea un contenedor en torno a una aplicación de línea de negocios, que permite administrarla mediante una directiva de administración de aplicaciones móviles de Intune.|
+|Perfil de configuración de aplicaciones|Configura una aplicación iOS con una [configuración específica](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) antes de ejecutarla.|
+|Implementación de aplicaciones|Permite a los usuarios [buscar, descargar e instalar](/intune-classic/deploy-use/deploy-apps) las aplicaciones que necesitan.|
+|Supervisión de aplicaciones|Le permite [revisar el estado y la actividad recientes](/intune-classic/deploy-use/monitor-apps-in-microsoft-intune) relacionados con la implementación de aplicaciones.|
+|Tarea de eliminación de datos de protección de aplicaciones|[Quita los datos de la aplicación](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) en el dispositivo del usuario.|
+|Directiva de protección de aplicaciones|Garantiza que las aplicaciones del usuario son compatibles con las [directivas de protección de datos de la empresa](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune).|
+|Informes de aplicaciones|Le permite [revisar los datos históricos](/intune-classic/deploy-use/understand-microsoft-intune-operations-by-using-reports) sobre la actividad y el estado de implementación de la aplicación.|
+|SDK para aplicaciones|El [SDK de aplicaciones de Microsoft Intune](/intune/app-sdk) permite agregar funcionalidad a las aplicaciones escritas internamente que permite administrarlas mediante directivas de administración de aplicaciones móviles de Intune.|
+|Acción de desinstalación de aplicaciones|Le permite [desinstalar aplicaciones](/intune-classic/deploy-use/deploy-apps) en los dispositivos del usuario.|
+|Herramienta de ajuste de aplicaciones|[Aplicación de línea de comandos](/intune/apps-prepare-mobile-application-management) que crea un contenedor en torno a una aplicación de línea de negocios, que permite administrarla mediante una directiva de administración de aplicaciones móviles de Intune.|
 |Instalación disponible|Cuando se implementa una aplicación con esta acción, aparece en el portal de empresa y los usuarios pueden [solicitar instalarla](/intune-classic/deploy-use/deploy-apps).|
-|Portal de Azure|Nueva consola de Intune que se presentará próximamente. En este momento, puede usar Azure Portal para crear [directivas de MAM de Intune](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies) para dispositivos.|
+|Portal de Azure|La nueva consola de Intune que se presentará próximamente. [Obtenga más información sobre el nuevo portal](/intune/what-is-intune).|
 
 ## <a name="b"></a>B
 |||
@@ -56,7 +61,7 @@ ms.lasthandoff: 05/23/2017
 |-|-|
 |Implementación|Acto de enviar una aplicación o una directiva a un dispositivo o un usuario que usted administra.|
 |Acción de implementación|Opción que se elige al [implementar una aplicación](/intune-classic/deploy-use/deploy-apps-in-microsoft-intune). Puede decidir que la instalación de la aplicación sea obligatoria, opcional o puede desinstalar la aplicación.|
-|Administrador de inscripción de dispositivos|Las organizaciones pueden usar Intune para administrar un gran número de dispositivos móviles con una sola cuenta de usuario. La cuenta es una cuenta de Intune especial con la que se pueden inscribir hasta mil dispositivos.|
+|Administrador de inscripción de dispositivos|Las organizaciones pueden usar Intune para administrar un gran número de dispositivos móviles con una sola cuenta de usuario. La [cuenta del administrador de inscripción de dispositivos (DEM)](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) es una cuenta especial de Intune con permisos para inscribir hasta 1000 dispositivos.|
 |Asignación de grupos de dispositivos|Ayuda a [agregar automáticamente dispositivos a grupos](/intune-classic/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune) en función de una categoría de dispositivo (por ejemplo, "Personal" o "Ventas") que usted o el usuario final pueden asignar al dispositivo.|
 
 ## <a name="e"></a>E
@@ -64,7 +69,7 @@ ms.lasthandoff: 05/23/2017
 |-|-|
 |Perfil de correo electrónico|Esta directiva se puede usar para configurar las [opciones de acceso a correo electrónico](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) para clientes de correo electrónico específicos en dispositivos móviles reduciendo al mínimo la configuración que debe llevar a cabo el usuario final.|
 |EMS|Microsoft Enterprise Mobility + Security (anteriormente Enterprise Mobility Suite) protege los datos de la empresa al mismo tiempo que permite que los usuarios [accedan a las aplicaciones y el contenido que necesitan](https://www.microsoft.com/cloud-platform/enterprise-mobility).|
-|Usuario final|[Usuarios de dispositivos como teléfonos y equipos](/intune-classic/deploy-use/how-to-educate-your-end-users-about-microsoft-intune) que se administran mediante Intune.|
+|Usuario final|[Usuarios de dispositivos como teléfonos y equipos](/intune/end-user-educate) que se administran mediante Intune.|
 |Inscribir|Microsoft Intune usa la [inscripción](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) para incluir dispositivos en la administración y permitir el acceso a los recursos.|
 
 ## <a name="f"></a>F
@@ -99,8 +104,8 @@ ms.lasthandoff: 05/23/2017
 |||
 |-|-|
 |Explorador administrado|[Aplicación de exploración web](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies) que se puede implementar en la organización mediante Microsoft Intune. Una directiva de explorador administrado configura una lista de permitidos o una lista de bloqueados que restringe los sitios web que pueden visitar los usuarios del explorador administrado.|
-|Administración de aplicaciones móviles|La administración de aplicaciones móviles le permite publicar, distribuir, configurar, proteger, supervisar y actualizar aplicaciones móviles para sus usuarios.
-|Administración de dispositivos móviles|La administración de dispositivos móviles le permite inscribir dispositivos en Intune, de modo que los pueda aprovisionar, configurar o supervisar, así como realizar acciones en ellos.
+|Administración de aplicaciones móviles|La [administración de aplicaciones móviles (MAM)](/intune/app-lifecycle) permite publicar, insertar, configurar, proteger, supervisar y actualizar aplicaciones móviles para los usuarios.
+|Administración de dispositivos móviles|La [administración de dispositivos móviles (MDM)](/intune/device-lifecycle) permite inscribir dispositivos en Intune para poder aprovisionar, configurar y supervisar esos dispositivos, además de llevar a cabo acciones en ellos.
 |Entidad de MDM|La [entidad de MDM](/intune-classic/deploy-use/get-ready-to-enroll-devices-in-microsoft-intune) define el servicio de administración que tiene permiso para administrar un conjunto de dispositivos. Las opciones para la entidad de MDM incluyen Intune y Configuration Manager con Intune.|
 |Directiva de aprovisionamiento de aplicaciones móviles|Directiva de iOS que ayuda a asegurarse de que los [perfiles de aprovisionamiento](/intune-classic/deploy-use/ios-mobile-app-provisioning-profiles) de las aplicaciones iOS implementadas no expiran.|
 |Directiva de configuración de aplicaciones móviles|Directiva de iOS que se usa para [proporcionar la configuración a aplicaciones iOS compatibles](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) cuando se ejecutan, por ejemplo, el nombre de la empresa o la dirección del servidor.|
@@ -148,4 +153,3 @@ ms.lasthandoff: 05/23/2017
 |||
 |-|-|
 |Perfil de Wi-Fi|Directiva que implementa la [configuración de red inalámbrica](/intune-classic/deploy-use/wi-fi-connections-in-microsoft-intune) en los dispositivos para permitir que los usuarios se conecten a la red de la empresa sin necesidad de que conozcan o configuren las opciones.
-

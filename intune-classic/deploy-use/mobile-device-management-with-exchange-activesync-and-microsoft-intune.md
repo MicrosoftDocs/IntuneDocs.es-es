@@ -1,5 +1,5 @@
 ---
-title: "Administración de dispositivos de Exchange ActiveSync | Microsoft Docs"
+title: "Administración de dispositivos de Exchange ActiveSync"
 description: "Administrar dispositivos móviles con la administración de Exchange ActiveSync (EAS) mediante Exchange Connector"
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: 14f5cf53-6764-4e22-a18b-fa750b3acd41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: b9e6d1def269bc80d54f259bc8b7c12dbb520e06
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 8982072b93c22e0294b6e454d597e0aa5bbb7b71
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="exchange-activesync-mobile-device-management-with-microsoft-intune"></a>Administración de dispositivos móviles de Exchange ActiveSync con Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -50,4 +47,3 @@ La consola de Intune se puede usar para administrar [la configuración de direct
 
 ## <a name="wipe-company-data-from-mobile-devices"></a>Borrar los datos de la empresa de los dispositivos móviles
 Por último, puede [borrar los datos de la empresa de los dispositivos móviles administrados por EAS](wipe-for-exchange-managed-mobile-devices.md) cuando ya no se usen o en caso de robo o pérdida del dispositivo.
-

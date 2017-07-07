@@ -1,5 +1,5 @@
 ---
-title: "Configuración de directivas de MAM en la consola de Intune | Microsoft Docs"
+title: "Configuración de directivas de MAM en la consola de Intune"
 description: "Las directivas de administración de aplicaciones móviles de Microsoft Intune permiten modificar la función de las aplicaciones que se implementan para que, de este modo, estén en consonancia con las directivas de seguridad y cumplimiento de la compañía."
 keywords: 
 author: robstackmsft
@@ -14,15 +14,12 @@ ms.assetid: b4fb33a8-a2fa-4353-bd89-5bda48b68e83
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 65b2eb20aea4bbadba9d470590b6c344ac37b9f5
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ce97f18a799725a86ef3ab7f4f7c0cc8cdf8f062
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Configure and deploy mobile application management policies in the Microsoft Intune console
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -46,11 +43,10 @@ Para restringir una aplicación, esta debe incorporar el SDK para aplicaciones d
 
 -   **Usar una aplicación administrada por directiva**. Una aplicación administrada por directiva tiene integrado el SDK de la aplicación. Para agregar este tipo de aplicación, especifique un vínculo a la aplicación desde una tienda de aplicaciones como, por ejemplo, iTunes Store o Google Play. No es necesario ningún procesamiento adicional para este tipo de aplicación. Para obtener más información, vea la [lista de aplicaciones que puede usar con las directivas de administración de aplicaciones móviles de Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
--   **Usar una aplicación ajustada**. Una aplicación ajustada es una aplicación que se vuelve a empaquetar para incluir el SDK de la aplicación con la herramienta de ajuste de aplicaciones de Microsoft Intune. Esta herramienta se usa normalmente para procesar aplicaciones de empresa que se hayan creado internamente. No se puede usar para procesar aplicaciones que se hayan descargado desde la tienda de aplicaciones. Para obtener más información, vea [Preparar aplicaciones iOS para la administración de aplicaciones móviles con la herramienta de ajuste de aplicaciones de Microsoft Intune](prepare-ios-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md) y [Preparar aplicaciones de Android para la administración de aplicaciones móviles con la herramienta de ajuste de aplicaciones de Microsoft Intune](prepare-android-apps-for-mobile-application-management-with-the-microsoft-intune-app-wrapping-tool.md).
+-   **Usar una aplicación ajustada**. Una aplicación ajustada es una aplicación que se vuelve a empaquetar para incluir el SDK de la aplicación con la herramienta de ajuste de aplicaciones de Microsoft Intune. Esta herramienta se usa normalmente para procesar aplicaciones de empresa que se hayan creado internamente. No se puede usar para procesar aplicaciones que se hayan descargado desde la tienda de aplicaciones. Para obtener más información, vea [Preparar aplicaciones iOS para la administración de aplicaciones móviles con la herramienta de ajuste de aplicaciones de Microsoft Intune](/intune/app-wrapper-prepare-ios) y [Preparar aplicaciones de Android para la administración de aplicaciones móviles con la herramienta de ajuste de aplicaciones de Microsoft Intune](/intune/app-wrapper-prepare-android).
 
-- **Escribir su propia aplicación que incorpora el SDK para aplicaciones de Intune**. El SDK para aplicaciones de Intune le permite incorporar características de administración de aplicaciones en una aplicación mientras la está escribiendo. Para obtener más información, vea [Información general del SDK para aplicaciones de Intune](/intune-classic/develop/intune-app-sdk).
-
-Para obtener ayuda para elegir entre la herramienta de ajuste de aplicaciones y el SDK para aplicaciones de Intune, vea [Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles con Microsoft Intune](decide-how-to-prepare-apps-for-mobile-application-management-with-microsoft-intune.md).
+- **Escribir su propia aplicación que incorpora el SDK para aplicaciones de Intune**. El SDK para aplicaciones de Intune le permite incorporar características de administración de aplicaciones en una aplicación mientras la está escribiendo. Para obtener más información, vea [Información general del SDK para aplicaciones de Intune](/intune/app-sdk).
+/intune/apps-prepare-mobile-application-management Para obtener ayuda para elegir entre la herramienta de ajuste de aplicaciones y el SDK para aplicaciones de Intune, consulte [Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles con Microsoft Intune](/intune/apps-prepare-mobile-application-management).
 
 Algunas aplicaciones administradas, como la aplicación Outlook para iOS y Android admiten *identidades múltiples*. Esto significa que Intune solo aplica la configuración de administración a las cuentas corporativas o los datos de la aplicación.
 
@@ -197,4 +193,3 @@ En casos en los que el dispositivo o el usuario recibe dos directivas en conflic
 -   Si ya se implementó una directiva para el dispositivo, la configuración de directiva existente no se sobrescribe.
 
 -   Si todavía no se implementó ninguna directiva para el dispositivo y se implementan dos configuraciones en conflicto, se usa la configuración predeterminada integrada en el dispositivo.
-

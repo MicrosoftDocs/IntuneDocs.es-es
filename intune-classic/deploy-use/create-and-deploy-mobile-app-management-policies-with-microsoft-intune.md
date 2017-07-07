@@ -1,5 +1,5 @@
 ---
-title: Crear e implementar directivas de MAM | Microsoft Docs
+title: Crear e implementar directivas MAM
 description: "Siga las instrucciones paso a paso de este tema para crear e implementar directivas de administración de aplicaciones móviles."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: c1b9a343-1737-4a65-a9c6-aca48acad11c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d91ce526650166197520d37c82084c0ff141ec80
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ebb4b03307f8af7e1390c6db994d3120942fae89
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>Creación e implementación de directivas de protección de aplicaciones con Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -109,9 +106,9 @@ Cuando termine de crear una directiva como se describe en el procedimiento anter
 ## <a name="line-of-business-lob-apps-optional"></a>Aplicaciones de línea de negocio (LOB) (opcional)
 
 A partir de la versión 1703 de Intune, tiene la opción de agregar de forma general aplicaciones de LOB a Intune al crear una nueva directiva de protección de aplicaciones. Esto le permite definir directivas de protección de aplicaciones para aplicaciones de LOB mediante el SDK de MAM, sin necesidad de permisos completos de implementación de aplicaciones.
-
+/intune/app-sdk-get-started
 > [!TIP]
-> También puede agregar aplicaciones de LOB a Intune a través del flujo de trabajo de [Intune App SDK](/intune-classic/develop/intune-app-sdk-get-started).
+> También puede agregar aplicaciones de LOB a Intune a través del flujo de trabajo de [Intune App SDK](/intune/app-sdk-get-started).
 
 > [!IMPORTANT]
 > Si los usuarios solo tienen permisos específicos para implementar aplicaciones MAM y no tienen permisos completos de implementación de aplicaciones, que les permitirían implementar cualquier aplicación en Intune, no podrán pasar por el flujo de trabajo del SDK de Intune, pero podrán agregar sus aplicaciones de LOB a través del flujo de trabajo de creación de directivas de protección de aplicaciones MAM.
@@ -164,8 +161,8 @@ La directiva solo afecta a los usuarios que tengan asignadas licencias de Intune
 > Si usa Intune con Administrador de configuración para administrar los dispositivos iOS y Android, la directiva solo se aplica a los usuarios directamente en el grupo seleccionado. No se ven afectados los miembros de los grupos secundarios anidados en el grupo seleccionado.
 
 Los usuarios finales pueden descargar las aplicaciones desde App Store o Google Play. Para obtener más información, vea:
-* [What to expect when your Android app is managed by app protection policies](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)
-* [What to expect when your iOS app is managed by app protection policies](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md) (Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones)
+* [What to expect when your Android app is managed by app protection policies](/intune/end-user-mam-apps-android) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)
+* [What to expect when your iOS app is managed by app protection policies](/intune/end-user-mam-apps-ios) (Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones)
 
 ##  <a name="change-existing-policies"></a>Cambiar las directivas existentes
 Puede editar una directiva existente y aplicarla a los usuarios objetivo. Con todo, al cambiar las directivas existentes, los usuarios que ya han iniciado sesión en las aplicaciones no verán los cambios durante un período de 8 horas.
@@ -219,6 +216,5 @@ Para ver una lista completa de las configuraciones de directiva para iOS y Andro
 [Supervisar el estado del cumplimiento y del usuario](monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
 ### <a name="see-also"></a>Consulte también
-* [What to expect when your Android app is managed by app protection policies](user-experience-for-mam-enabled-android-apps-with-microsoft-intune.md) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)
-* [What to expect when your iOS app is managed by app protection policies](user-experience-for-mam-enabled-ios-apps-with-microsoft-intune.md) (Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones)
-
+* [What to expect when your Android app is managed by app protection policies](/intune/end-user-mam-apps-android) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)
+* [What to expect when your iOS app is managed by app protection policies](/intune/end-user-mam-apps-ios) (Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones)

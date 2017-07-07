@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: d4430e92-04cc-48e9-a77a-81b95a90b6b3
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 8ba85e15fb55a4de1b2f1db53bc5b9962de84394
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-to-protect-your-android-device-using-encryption"></a>Cómo proteger el dispositivo Android mediante el cifrado
 
 Cuando cifra un dispositivo, está ajustando la información en una capa de código de protección que evita que los usuarios sin autorización tengan acceso a él. Para asegurarnos de que su información está protegida, la organización le pide que cifre su dispositivo Android antes de poder acceder a archivos, correos electrónicos o datos de la empresa.
@@ -70,4 +65,3 @@ Si anula la inscripción del dispositivo, este permanecerá cifrado.
     5. Abra la aplicación de Portal de empresa, seleccione el dispositivo y pulse **Comprobar cumplimiento**.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI (visite el [sitio web del Portal de empresa](http://portal.manage.microsoft.com) para obtener la información de contacto), o escriba al <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">equipo de Microsoft Android</a>.
-

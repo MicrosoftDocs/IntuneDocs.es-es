@@ -1,5 +1,5 @@
 ---
-title: "Proteger el correo electrónico y Office 365 | Microsoft Docs"
+title: "Proteger el correo electrónico y Office 365"
 description: "En este tema se describe cómo puede utilizar acceso condicional para permitir que únicamente los dispositivos que cumplan los requisitos puedan tener acceso al correo electrónico y los datos de la empresa en SharePoint Online y otros servicios."
 keywords: 
 author: andredm7
@@ -14,15 +14,12 @@ ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: fc89c1b5b502f00bab5ed02f6e7df6422241aeb1
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 3405671130a58aa944d6c689264379a254face1d
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="protect-access-to-email-office-365-and-other-services-with-microsoft-intune"></a>Proteger el acceso al correo electrónico, a Office 365 y a otros servicios con Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -51,7 +48,7 @@ Las **licencias de Azure AD Premium** pueden comprarse como un servicio independ
 
 - Más información sobre la [página de precios de Enterprise Mobility](https://www.microsoft.com/cloud-platform/enterprise-mobility-pricing) o la [página de precios de Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
-Además, asegúrese de que a los usuarios que planea que van a aplicar directivas de acceso condicional se les hayan [asignado licencias de EMS o de Azure AD Premium](/intune-classic/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4.md).
+Además, asegúrese de que a los usuarios que planea que van a aplicar directivas de acceso condicional se les hayan [asignado licencias de EMS o de Azure AD Premium](/intune/licenses-assign).
 
 ### <a name="device-compliance-settings"></a>Configuración de cumplimiento de dispositivos
 
@@ -83,4 +80,3 @@ A diferencia de otras directivas de Intune, no se implementan directivas de acce
   - [Crear una directiva de acceso condicional para SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
   - [Crear una directiva de acceso condicional para Skype Empresarial Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
   - [Crear una directiva de acceso condicional para Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
-

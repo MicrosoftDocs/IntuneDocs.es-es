@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42b
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: a213a46066de4244df23d0cd532b5fb4596ede77
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Bloquear un dispositivo de forma remota desde el sitio web del Portal de empresa
 
 Los accidentes suceden y a veces los dispositivos pueden perderse. Si el dispositivo se ha perdido o se lo han robado, la primera preocupación que tendrá será que alguien pueda acceder a la información que contiene, allá donde se encuentre el dispositivo.
@@ -42,7 +38,7 @@ Para estar seguro, puede bloquearlo mediante la opción de bloqueo remoto en el 
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>Para usar el bloqueo remoto para bloquear el dispositivo
 
-1.    En el [sitio web del Portal de empresa](http://portal.manage.microsoft.com), pulse el botón __menú__ ![Pequeña imagen del botón menú, tres barras horizontales apiladas en paralelo.](/Intune/whats-new/media/CP_hamburger_menu.png), luego seleccione __Mis dispositivos__.
+1.  En el [sitio web del Portal de empresa](http://portal.manage.microsoft.com), pulse el botón __menú__ ![Pequeña imagen del botón menú, tres barras horizontales apiladas en paralelo.](/Intune/whats-new/media/CP_hamburger_menu.png), luego seleccione __Mis dispositivos__.
 
   ![Imagen del sitio web del Portal de empresa con un menú lateral expandido en el lado izquierdo de la pantalla con botones Inicio, Todas las aplicaciones, Mis dispositivos, Departamento de soporte técnico y Cerrar sesión.](/media/iwp-expanded-sidebar.png)
 
@@ -50,11 +46,11 @@ Para estar seguro, puede bloquearlo mediante la opción de bloqueo remoto en el 
 
   ![Captura de pantalla de la página Mis dispositivos con un par de dispositivos sin identificar sobre el mensaje emergente para inscribir los dispositivos que no figuran en la lista o para identificar los no identificados.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.    El dispositivo se abrirá en una ventana emergente. Pulse el botón **Bloqueo remoto**.
+3.  El dispositivo se abrirá en una ventana emergente. Pulse el botón **Bloqueo remoto**.
 
     ![Todas las opciones de un dispositivo seleccionado en el sitio web del Portal de empresa, incluidas Cambiar nombre, Quitar, Restablecer dispositivo, Restablecer código de acceso y Bloqueo remoto. ](./media/iwp-screen-with-all-options.png)
 
-4.    Aparecerá un aviso que le indicará que va a bloquear el dispositivo. Pulse **Bloqueo remoto** y el sitio web de Portal de empresa intentará bloquear el dispositivo.
+4.  Aparecerá un aviso que le indicará que va a bloquear el dispositivo. Pulse **Bloqueo remoto** y el sitio web de Portal de empresa intentará bloquear el dispositivo.
 
     Después de seleccionar **Bloqueo remoto**, aparecerá un mensaje "Bloqueo remoto pendiente".  Cuando el bloqueo remoto se realiza correctamente, el estado cambia a "El bloqueo remoto se realizó correctamente".
 
@@ -70,4 +66,3 @@ Para estar seguro, puede bloquearlo mediante la opción de bloqueo remoto en el 
 Si encuentra el dispositivo y quiere desbloquearlo después de usar Bloqueo remoto, simplemente escriba el código de acceso.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
-

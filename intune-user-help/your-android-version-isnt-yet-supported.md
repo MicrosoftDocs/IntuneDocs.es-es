@@ -11,23 +11,19 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 58f2a207-88cf-446c-ac9f-ad10a124e4e2
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 7568ce8f8a5cb648f1f250751f1a03c7c55a0fd2
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="your-android-devices-operating-system-version-isnt-yet-supported"></a>La versión del sistema operativo de su dispositivo Android todavía no es compatible
 
 Debido al rápido ritmo del desarrollo de la tecnología, a veces es posible que su dispositivo esté más adelantado que los elementos que su administrador de TI haya podido probar. Es posible que la versión más reciente de Android no funcione con algunas de las otras herramientas de la empresa.
 
 Deberá ponerse en contacto con el administrador de TI para solucionar este problema. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
-

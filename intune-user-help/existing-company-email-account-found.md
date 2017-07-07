@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 74c51f7b-7bd8-45cf-99bd-02d1972267cb
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 510e35a7c60709a6f002907e0f7963ba5b78f35c
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="an-existing-company-email-account-was-found"></a>Se ha encontrado una cuenta de correo electrónico de empresa existente encontrado
 
 Ya tiene una cuenta de correo electrónico con su organización o empresa y desea tener acceso a esa cuenta en su dispositivo móvil. El administrador de TI necesita su ayuda para proteger el acceso al correo electrónico en su camino de la persona que realizó el envío al dispositivo. Puede que la dirección de correo electrónico actual haya funcionado, pero si realiza estos pasos, dispondrá de una información más segura.
@@ -39,4 +35,3 @@ Ya tiene una cuenta de correo electrónico con su organización o empresa y dese
 3.  Espere un momento para la nueva configuración de correo electrónico que se aplicará automáticamente a su dispositivo.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
-

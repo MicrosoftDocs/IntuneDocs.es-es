@@ -11,21 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 84892bbc-f888-417b-bbeb-978cc7e10028
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 4a1639c289e335d4f50c549da7b7d895dd2a10bb
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="you-need-to-enable-code-integrity"></a>Necesita habilitar la integridad de código
 
 El mantenimiento de la información de la organización requiere diferentes tipos de seguridad para evitar varios tipos de problemas. Una manera de mantener la seguridad es usar la integridad de código de Windows, que garantiza que los archivos de sistema y los programas de nivel profundo (controladores) no se han modificado.
@@ -38,4 +34,3 @@ La integridad de código se activa automáticamente cuando el sistema usa de man
 Si se siente cómodo realizando el procedimiento, consulte la sección "Para volver a habilitar el arranque seguro" de la página [Deshabilitar el arranque seguro](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) para tratar de habilitarlo usted mismo.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
-

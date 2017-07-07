@@ -11,22 +11,17 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 33ffff16-0280-43bf-87b3-74ddf4439bfa
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
 ms.openlocfilehash: 734856b1598a225f6f3a2aaf640d34d393c744e7
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="create-a-work-profile-and-enroll-your-device-in-intune"></a>Creación de un perfil de trabajo e inscripción del dispositivo en Intune
 
 Inscribir su dispositivo Android le proporciona acceso al correo electrónico de la empresa, a las aplicaciones y a otros datos de trabajo. Como parte de la inscripción, debe configurar un perfil de trabajo que separa los datos personales de su dispositivo de los datos de trabajo. Su administrador de TI solo puede administrar el perfil de trabajo, que es el que contiene los datos de trabajo. En cambio, su administrador de TI no puede administrar los datos personales de su dispositivo. Puede encontrar más información sobre [¿Qué ocurre cuando se crea un perfil de trabajo?](what-happens-when-you-create-a-work-profile-android.md)
@@ -88,4 +83,3 @@ Para crear un perfil de trabajo:
     ![Página de aplicaciones de Play Store for Work](./media/andr-afw-tap-work-play-store-icon.png)
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
-
