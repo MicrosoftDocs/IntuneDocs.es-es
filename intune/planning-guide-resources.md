@@ -13,18 +13,17 @@ ms.technology:
 ms.assetid: 63060896-e00e-4ef0-b2ad-276e55164895
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 4f893c0c8308a246d7bab15fed68a78c4e10b70a
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 828dd9406d308d9bdb7af686b31689df79633940
+ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/11/2017
 ---
-# <a name="additional-resources-for-planning-your-intune-deployment"></a>Recursos adicionales para planear la implementación de Intune
+# Recursos adicionales para planear la implementación de Intune
+<a id="additional-resources-for-planning-your-intune-deployment" class="xliff"></a>
 
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
-
-## <a name="templates"></a>Plantillas
+## Plantillas
+<a id="templates" class="xliff"></a>
 
 Las plantillas de Microsoft Excel para las tablas utilizadas en la guía de planeación están disponibles para [descargarlas](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 
@@ -45,7 +44,8 @@ Aquí se muestra una lista de plantillas de tabla para cada sección.
 | | Directiva de acceso condicional|-|
 
 
-## <a name="links"></a>Links
+## Lectura adicional
+<a id="further-reading" class="xliff"></a>
 
 Consulte estos recursos para obtener información adicional que puede resultar útil durante el proceso de planeación, diseño y ejecución de la implementación de Intune.
 

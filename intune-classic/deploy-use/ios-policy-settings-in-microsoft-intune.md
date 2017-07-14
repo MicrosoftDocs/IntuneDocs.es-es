@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 12/27/2016
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,19 +14,21 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ba270c2bb8780db6bc230022446f982b81f8a2ee
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8036dbbb6486d06fa46f7f96199055b9ca7a398c
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
-# <a name="ios-policy-settings-in-microsoft-intune"></a>Configuración de directivas de iOS en Microsoft Intune
+# Configuración de directivas de iOS en Microsoft Intune
+<a id="ios-policy-settings-in-microsoft-intune" class="xliff"></a>
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
 Intune proporciona una variedad de opciones generales integradas que puede configurar en los dispositivos iOS. Además, puede usar la herramienta Apple Configurator para crear una configuración personalizada que no esté disponible en Intune.
 
-## <a name="general-configuration-policy-settings"></a>Configuración general de directivas
+## Configuración general de directivas
+<a id="general-configuration-policy-settings" class="xliff"></a>
 
 Use la **directiva de configuración general de iOS** de Microsoft Intune para configurar las siguientes opciones:
 
@@ -41,7 +43,8 @@ Use la **directiva de configuración general de iOS** de Microsoft Intune para c
 
 Si el valor que busca no aparece en este tema, puede crearlo mediante una directiva personalizada de iOS que le permita importar la configuración creada con la [herramienta Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12). Para obtener más información, consulte "Configuración de directivas personalizadas" más adelante en este tema.
 
-### <a name="security-settings"></a>Configuración de seguridad
+### Configuración de seguridad
+<a id="security-settings" class="xliff"></a>
 Todas las configuraciones se aplican a iOS 8.0 y posterior.
 
 |Nombre de la configuración|Detalles|
@@ -60,7 +63,8 @@ Todas las configuraciones se aplican a iOS 8.0 y posterior.
 |**Permitir desbloqueo mediante huellas digitales**|Permite desbloquear el dispositivo mediante las huellas digitales.|
 <sup>1</sup> En los dispositivos iOS, cuando configura las opciones **Minutos de inactividad antes de que se apague la pantalla** y **Minutos de inactividad antes de que sea necesaria la contraseña**, se aplican en secuencia. Por ejemplo, si establece el valor para ambas opciones en **5** minutos, la pantalla se apagará automáticamente transcurridos 5 minutos y el dispositivo se bloqueará pasados 5 minutos más. Sin embargo, si el usuario apaga la pantalla manualmente, la segunda opción se aplica inmediatamente. En el mismo ejemplo, una vez que el usuario apague la pantalla, el dispositivo se bloqueará 5 minutos más tarde.
 
-### <a name="system-settings"></a>Configuración del sistema
+### Configuración del sistema
+<a id="system-settings" class="xliff"></a>
 Todas las configuraciones se aplican a iOS 8.0 y posterior.
 
 |Nombre de la configuración|Detalles|
@@ -73,7 +77,8 @@ Todas las configuraciones se aplican a iOS 8.0 y posterior.
 |**Permitir el envío de datos de diagnóstico**|Permite o impide que el dispositivo envíe datos de diagnóstico a Apple.|
 |**Permitir libreta con dispositivo bloqueado**|Permite al usuario tener acceso a la aplicación Libreta mientras el dispositivo está bloqueado.|
 
-### <a name="cloud-settings-for-documents-and-data"></a>Configuración de nube para documentos y datos
+### Configuración de nube para documentos y datos
+<a id="cloud-settings-for-documents-and-data" class="xliff"></a>
 Todas las configuraciones se aplican a iOS 8.0 y posterior.
 
 |Nombre de la configuración|Detalles|
@@ -87,7 +92,8 @@ Todas las configuraciones se aplican a iOS 8.0 y posterior.
 |**Permitir el uso compartido de fotografías de iCloud**|Establezca **No** para deshabilitar **Fotos compartidas en iCloud** en el dispositivo.|
 |**Permitir la biblioteca de fotografías de iCloud**|Si se establece en **No**, deshabilita el uso de la Fototeca de iCloud que permite a los usuarios almacenar fotos y vídeos en la nube.   Las fotos que no se hayan descargado completamente de la Fototeca de iCloud al dispositivo se quitarán de este si esta opción se establece en **No**.|
 
-### <a name="application-settings-for-the-browser"></a>Configuración de la aplicación para el explorador
+### Configuración de la aplicación para el explorador
+<a id="application-settings-for-the-browser" class="xliff"></a>
 Todas las configuraciones se aplican a iOS 8.0 y posterior.
 
 |Nombre de la configuración|Detalles|
@@ -99,7 +105,8 @@ Todas las configuraciones se aplican a iOS 8.0 y posterior.
 |**Permitir scripting de Java**|Permite que los scripts de Java se ejecuten en el explorador.|
 |**Permitir advertencias de fraude**|Permitir mostrar advertencias de fraude en el explorador.|
 
-### <a name="application-settings-for-apps"></a>Configuración de la aplicación para aplicaciones
+### Configuración de la aplicación para aplicaciones
+<a id="application-settings-for-apps" class="xliff"></a>
 Todas las configuraciones se aplican a iOS 8.0 y posterior.
 
 |Nombre de la configuración|Detalles|
@@ -113,7 +120,8 @@ Todas las configuraciones se aplican a iOS 8.0 y posterior.
 |**Permitir que el usuario confíe en nuevos autores de aplicaciones empresariales**|Permite que el usuario confíe en aplicaciones que no se han descargado en la tienda de aplicaciones.|
 
 
-### <a name="application-settings-for-games"></a>Configuración de la aplicación para juegos
+### Configuración de la aplicación para juegos
+<a id="application-settings-for-games" class="xliff"></a>
 Todas las configuraciones se aplican a iOS 8.0 y posterior.
 
 |Nombre de la configuración|Detalles|
@@ -121,7 +129,8 @@ Todas las configuraciones se aplican a iOS 8.0 y posterior.
 |**Permitir agregar amigos al centro de juegos**|Permite al usuario agregar a amigos del centro de juegos.|
 |**Permitir juegos multijugador**|Permite al usuario jugar a juegos multijugador en el dispositivo.|
 
-### <a name="application-settings-for-media-content"></a>Configuración de aplicación para el contenido multimedia
+### Configuración de aplicación para el contenido multimedia
+<a id="application-settings-for-media-content" class="xliff"></a>
 Todas las configuraciones se aplican a iOS 8.0 y posterior.
 
 |Nombre de la configuración|Detalles|
@@ -131,7 +140,8 @@ Todas las configuraciones se aplican a iOS 8.0 y posterior.
 |**Permite al usuario descargar contenido desde la tienda de iBooks marcada como "Erótico"**|Permitir al usuario descargar libros con la categoría "Erotismo".|
 
 
-### <a name="device-capabilities-settings-for-hardware"></a>Configuración de funcionalidades del dispositivo para hardware
+### Configuración de funcionalidades del dispositivo para hardware
+<a id="device-capabilities-settings-for-hardware" class="xliff"></a>
 Todas las configuraciones se aplican a iOS 8.0 y posterior.
 
 |Nombre de la configuración|Detalles|
@@ -140,7 +150,8 @@ Todas las configuraciones se aplican a iOS 8.0 y posterior.
 |**Forzar a los dispositivos Apple Watch enlazados a usar la detección de muñeca**|Si se habilita, el dispositivo Apple Watch no mostrará notificaciones si no se lleva puesto.|
 |**Requerir una contraseña de emparejamiento para las solicitudes salientes de AirPlay**|Requerir una contraseña de emparejamiento cuando el usuario usa AirPlay para transmitir contenido a otros dispositivos de Apple.|
 
-### <a name="device-capabilities-settings-for-cellular"></a>Configuración de funcionalidades del dispositivo para red de telefonía móvil
+### Configuración de funcionalidades del dispositivo para red de telefonía móvil
+<a id="device-capabilities-settings-for-cellular" class="xliff"></a>
 Todas las configuraciones se aplican a iOS 8.0 y posterior.
 
 |Nombre de la configuración|Detalles|
@@ -149,7 +160,8 @@ Todas las configuraciones se aplican a iOS 8.0 y posterior.
 |**Permitir itinerancia de datos**|Permite la itinerancia de datos cuando el dispositivo está en una red de telefonía móvil.|
 |**Permitir captura de fondo global durante la itinerancia**|Permite al dispositivo capturar datos (por ejemplo, correo electrónico) mientras está en itinerancia en una red de telefonía móvil.|
 
-### <a name="device-capabilities-settings-for-features"></a>Configuración de funcionalidades del dispositivo para características
+### Configuración de funcionalidades del dispositivo para características
+<a id="device-capabilities-settings-for-features" class="xliff"></a>
 Todas las configuraciones se aplican a iOS 8.0 y posterior.
 
 |Nombre de la configuración|Detalles|
@@ -160,7 +172,8 @@ Todas las configuraciones se aplican a iOS 8.0 y posterior.
 |**No permitir Airdrop con aplicaciones administradas**|Las aplicaciones administradas ya no pueden enviar datos a través de Airdrop.|
 
 
-### <a name="settings-for-compliant-and-noncompliant-apps"></a>Configuración de aplicaciones conformes y no conformes
+### Configuración de aplicaciones conformes y no conformes
+<a id="settings-for-compliant-and-noncompliant-apps" class="xliff"></a>
 En la lista de **Aplicaciones conformes y no conformes**, especifique las aplicaciones que son conformes y no conformes con la siguiente información.
 
 > [!NOTE]
@@ -177,7 +190,8 @@ En la lista de **Aplicaciones conformes y no conformes**, especifique las aplica
 
 Las directivas que contienen ajustes de aplicaciones compatibles y no compatibles se deben implementar en los grupos de usuarios.
 
-### <a name="kiosk-mode-settings"></a>Configuración del modo de pantalla completa
+### Configuración del modo de pantalla completa
+<a id="kiosk-mode-settings" class="xliff"></a>
 
 |Nombre de la configuración|Detalles|
 |----------------|--------------------|
@@ -204,17 +218,20 @@ Las directivas que contienen ajustes de aplicaciones compatibles y no compatible
 > -   Antes de configurar un dispositivo iOS para pantalla completa, debe usar la [herramienta Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) o el [Programa de Inscripción de Dispositivos de Apple](ios-device-enrollment-program-in-microsoft-intune.md) para pasar el dispositivo al modo supervisado. Para obtener más información sobre la herramienta Apple Configurator, consulte la documentación de Apple.
 > -   Si la aplicación de iOS que especifique se instala después de implementar la directiva de configuración, el dispositivo no pasará a pantalla completa hasta que se reinicie.
 
-### <a name="reference-information-for-compliant-and-noncompliant-apps"></a>Información de referencia para las aplicaciones conformes y no conformes
+### Información de referencia para las aplicaciones conformes y no conformes
+<a id="reference-information-for-compliant-and-noncompliant-apps" class="xliff"></a>
 
 Utilice el **Informe de aplicaciones no conformes** para ver la conformidad de las aplicaciones permitidas y bloqueadas.
 
-##### <a name="to-run-the-noncompliant-apps-report"></a>Para ejecutar el informe de aplicaciones no conformes
+##### Para ejecutar el informe de aplicaciones no conformes
+<a id="to-run-the-noncompliant-apps-report" class="xliff"></a>
 
 1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), elija **Informes** &gt; **Informe de aplicaciones no conformes**.
 
 2.  Seleccione los grupos de dispositivos que quiere comprobar, si quiere comprobar las aplicaciones conformes, las aplicaciones no conformes o ambas y, después, elija **Ver informe**.
 
-#### <a name="how-to-specify-urls-to-app-stores"></a>Cómo especificar las direcciones URL de tiendas de aplicaciones
+#### Cómo especificar las direcciones URL de tiendas de aplicaciones
+<a id="how-to-specify-urls-to-app-stores" class="xliff"></a>
 Para especificar una dirección URL de aplicación en la lista de aplicaciones conformes y no conformes o en la opción **Seleccione una aplicación administrada que se podrá ejecutar cuando el dispositivo esté en modo de pantalla completa** (solo iOS), use el siguiente formato:
 
 1. Con la ayuda de un motor de búsqueda, busque la aplicación que quiere usar en iTunes App Store y abra la página de la aplicación.
@@ -226,17 +243,20 @@ Para especificar una dirección URL de aplicación en la lista de aplicaciones c
 > [!NOTE]
 > También puede utilizar el software de iTunes para encontrar la aplicación y, a continuación, utilizar el comando **Copiar vínculo** para obtener la dirección URL de la aplicación.
 
-### <a name="enrollment-settings"></a>Configuración de la inscripción
+### Configuración de la inscripción
+<a id="enrollment-settings" class="xliff"></a>
 Todas las configuraciones se aplican a iOS 8.0 y posterior.
 
 |Nombre de la configuración|Detalles|
 |----------------|--------------------|
 |**Permitir bloqueo de activación cuando el dispositivo está en modo supervisado**|Permitir bloqueo de activación en dispositivos iOS supervisados.|
 
-### <a name="supervised-mode-settings"></a>Configuración del modo supervisado
+### Configuración del modo supervisado
+<a id="supervised-mode-settings" class="xliff"></a>
 Puede configurar las siguientes opciones en dispositivos con iOS 8.0 y posterior que estén en modo supervisado.
 
-### <a name="supervised-mode-settings-for-device-restrictions"></a>Configuración del modo supervisado para las restricciones de dispositivos
+### Configuración del modo supervisado para las restricciones de dispositivos
+<a id="supervised-mode-settings-for-device-restrictions" class="xliff"></a>
 
 |Nombre de la configuración|Detalles|
 |----------------|--------------------|
@@ -252,7 +272,8 @@ Puede configurar las siguientes opciones en dispositivos con iOS 8.0 y posterior
 |**Permitir modificar la configuración de notificaciones**|Permitir que el usuario cambie la configuración de las notificaciones del dispositivo.|
 |**Permitir modificar fondo de pantalla**|Permitir que el usuario cambie el fondo de pantalla del dispositivo.|
 
-### <a name="supervised-mode-settings-for-feature-restrictions"></a>Configuración del modo supervisado para las restricciones de características
+### Configuración del modo supervisado para las restricciones de características
+<a id="supervised-mode-settings-for-feature-restrictions" class="xliff"></a>
 
 |Nombre de la configuración|Detalles|
 |----------------|--------------------|
@@ -266,7 +287,8 @@ Puede configurar las siguientes opciones en dispositivos con iOS 8.0 y posterior
 |**Permitir revisión ortográfica de teclado**|Permite el uso del corrector ortográfico del dispositivo.|
 |**Permitir métodos abreviados de teclado**|Permite el uso de métodos abreviados de teclado.|
 
-### <a name="supervised-mode-settings-for-app-restrictions"></a>Configuración del modo supervisado para las restricciones de aplicaciones
+### Configuración del modo supervisado para las restricciones de aplicaciones
+<a id="supervised-mode-settings-for-app-restrictions" class="xliff"></a>
 
 |Nombre de la configuración|Detalles|
 |----------------|--------------------|
@@ -283,7 +305,8 @@ Puede configurar las siguientes opciones en dispositivos con iOS 8.0 y posterior
 |**Permitir Game Center**|Permite el uso de la aplicación Centro de juegos.|
 
 
-### <a name="show-or-hide-apps"></a>Mostrar u ocultar aplicaciones
+### Mostrar u ocultar aplicaciones
+<a id="show-or-hide-apps" class="xliff"></a>
 
 Use la **Lista de aplicaciones ocultas y visibles** para controlar las siguientes opciones en los dispositivos supervisados que ejecutan iOS 9.3 o versiones posteriores:
 
@@ -291,7 +314,8 @@ Use la **Lista de aplicaciones ocultas y visibles** para controlar las siguiente
 - Especificar una lista de las aplicaciones que los usuarios pueden ver e iniciar. No se puede ver ni iniciar ninguna otra aplicación.
 
 
-#### <a name="how-to-create-a-hidden-or-shown-app-list"></a>Cómo crear una lista de aplicaciones ocultas y visibles
+#### Cómo crear una lista de aplicaciones ocultas y visibles
+<a id="how-to-create-a-hidden-or-shown-app-list" class="xliff"></a>
 
 Especifique las siguientes opciones:
 
@@ -305,49 +329,50 @@ Especifique las siguientes opciones:
 |**Editarar**|Permite editar el nombre, el editor y la dirección URL de la aplicación seleccionada.|
 |**Eliminar**|Elimina la aplicación seleccionada de la lista.|
 
-#### <a name="app-information-for-built-in-ios-apps"></a>Información de aplicaciones para las aplicaciones integradas de iOS
+#### Información de aplicaciones para las aplicaciones integradas de iOS
+<a id="app-information-for-built-in-ios-apps" class="xliff"></a>
 
 Use la información de esta lista para identificar el nombre, el publicador y el identificador de lote de aplicaciones de las aplicaciones integradas de iOS que quiere mostrar u ocultar. Si quiere mostrar u ocultar todas las aplicaciones de la lista, puede copiar los datos siguientes en un archivo de texto con la extensión **.csv** y, después, usar la opción **Importar aplicaciones** para importar todas las aplicaciones a la vez.
 
 ```
-App Store,Apple,com.apple.AppStore
-Calculator,Apple,com.apple.calculator
-Calendar,Apple,com.apple.mobilecal
-Camera,Apple,com.apple.camera
-Clock,Apple,com.apple.mobiletimer
-Compass,Apple,com.apple.compass
-Contacts,Apple,com.apple.MobileAddressBook
-FaceTime,Apple,com.apple.facetime
-Find Friends,Apple,com.apple.mobileme.fmf1
-Find iPhone,Apple,com.apple.mobileme.fmip1
-Game Center,Apple,com.apple.gamecenter
-GarageBand,Apple,com.apple.mobilegarageband
-Health,Apple,com.apple.Health
-iBooks,Apple,com.apple.iBooks
-iTunes Store,Apple,com.apple.MobileStore
-iTunes U,Apple,com.apple.itunesu
-Keynote,Apple,com.apple.Keynote
-Mail,Apple,com.apple.mobilemail
-Maps,Apple,com.apple.Maps
-Messages,Apple,com.apple.MobileSMS
-Music,Apple,com.apple.Music
-News,Apple,com.apple.news
-Notes,Apple,com.apple.mobilenotes
-Numbers,Apple,com.apple.Numbers
-Pages,Apple,com.apple.Pages
-Photo Booth,Apple,com.apple.Photo-Booth
-Photos,Apple,com.apple.mobileslideshow
-Podcasts,Apple,com.apple.podcasts
-Reminders,Apple,com.apple.reminders
-Safari,Apple,com.apple.mobilesafari
-Settings,Apple,com.apple.Preferences
-Stocks,Apple,com.apple.stocks
-Tips,Apple,com.apple.tips
-Videos,Apple,com.apple.videos
-VoiceMemos,Apple,com.apple.VoiceMemos
-Wallet,Apple,com.apple.Passbook
-Watch,Apple,com.apple.Bridge
-Weather,Apple,com.apple.weather
+,com.apple.AppStore,App Store,Apple
+,com.apple.calculator,Calculator,Apple
+,com.apple.mobilecal,Calendar,Apple
+,com.apple.camera,Camera,Apple
+,com.apple.mobiletimer,Clock,Apple
+,com.apple.compass,Compass,Apple
+,com.apple.MobileAddressBook,Contacts,Apple
+,com.apple.facetime,FaceTime,Apple
+,com.apple.mobileme.fmf1,Find Friends,Apple
+,com.apple.mobileme.fmip1,Find iPhone,Apple
+,com.apple.gamecenter,Game Center,Apple
+,com.apple.mobilegarageband,GarageBand,Apple
+,com.apple.Health,Health,Apple
+,com.apple.iBooks,iBooks,Apple
+,com.apple.MobileStore,iTunes Store,Apple
+,com.apple.itunesu,iTunes U,Apple
+,com.apple.Keynote,Keynote,Apple
+,com.apple.mobilemail,Mail,Apple
+,com.apple.MapsMaps,Apple
+,com.apple.MobileSMS,Messages,Apple
+,com.apple.Music,Music,Apple
+,com.apple.news,News,Apple
+,com.apple.mobilenotes,Notes,Apple
+,com.apple.Numbers,Numbers,Apple
+,com.apple.Pages,Pages,Apple
+,com.apple.Photo-Booth,Photo Booth,Apple
+,com.apple.mobileslideshow,Photos,Apple
+,com.apple.podcasts,Podcasts,Apple
+,com.apple.reminders,Reminders,Apple
+,com.apple.mobilesafariSafari,Apple
+,com.apple.Preferences,Settings,Apple
+,com.apple.stocks,Stocks,Apple
+,com.apple.tips,Tips,Apple
+,com.apple.videos,Videos,Apple
+,com.apple.VoiceMemos,VoiceMemos,Apple
+,com.apple.Passbook,Wallet,Apple
+,com.apple.Bridge,Watch,Apple
+,com.apple.weather,Weather,Apple
 
 
 ```
@@ -355,26 +380,30 @@ Weather,Apple,com.apple.weather
 
 
 
-## <a name="custom-policy-settings"></a>Configuración de directivas personalizadas
+## Configuración de directivas personalizadas
+<a id="custom-policy-settings" class="xliff"></a>
 
 Use la **Directiva personalizada para iOS** de Microsoft Intune para implementar la configuración que ha creado mediante la [herramienta Apple Configurator](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12) en dispositivos iOS. Esta herramienta permite crear muchas configuraciones para controlar el funcionamiento de estos dispositivos y exportarlas a un perfil de configuración. A continuación, puede importar este perfil de configuración en una directiva personalizada de iOS de Intune e implementar la configuración para los usuarios y dispositivos de su organización.
 
 Esta funcionalidad permite implementar la configuración de iOS que no se puede configurar con directivas de configuración general de Intune.
 
-### <a name="prerequisites"></a>Requisitos previos
+### Requisitos previos
+<a id="prerequisites" class="xliff"></a>
 Antes de empezar, debe tener instalado Apple Configurator y haber creado un archivo de configuración que contenga la configuración que quiere implementar en usuarios o dispositivos. Puede descargar Apple Configurator y obtener información sobre esta aplicación en [Mac App Store](https://itunes.apple.com/us/app/apple-configurator/id434433123?mt=12).
 
 > [!NOTE]
 > Intune no notifica el cumplimiento de opciones de configuración individuales de una directiva personalizada de iOS. Sin embargo, se notifica el cumplimiento general de la directiva.
 
-### <a name="general-settings"></a>Configuración general
+### Configuración general
+<a id="general-settings" class="xliff"></a>
 
 |Nombre de la configuración|Detalles|
     |----------------|--------------------|
     |**Nombre**|Escriba un nombre único para la directiva personalizada de iOS que le ayude a identificarla en la consola de Intune.|
     |**Descripción**|Proporcione una descripción que ofrezca una visión general de la directiva personalizada de iOS y otra información relevante que le ayude a encontrarla.|
 
-### <a name="custom-settings"></a>Configuración personalizada
+### Configuración personalizada
+<a id="custom-settings" class="xliff"></a>
 
 |Nombre de la configuración|Detalles|
     |----------------|--------------------|
@@ -382,5 +411,6 @@ Antes de empezar, debe tener instalado Apple Configurator y haber creado un arch
 |**Archivo del perfil de configuración**|Elija **Importar** y, luego, examine el perfil de configuración que ha creado con Apple Configurator. **Nota:** Asegúrese de que la configuración que exporta de la herramienta Apple Configurator sea compatible con la versión de iOS en los dispositivos en los que implementa la directiva personalizada de iOS. Para obtener información sobre la resolución de las opciones de configuración incompatibles, busque la **Referencia de perfiles de configuración** y la **Referencia del protocolo de administración de dispositivos móviles** en el sitio web de [Apple Developer](https://developer.apple.com/).|
     |**Detalles del perfil de configuración**|Mostrar el código XML del perfil de configuración que ha importado.|
 
-### <a name="see-also"></a>Consulte también
+### Consulte también
+<a id="see-also" class="xliff"></a>
 [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
