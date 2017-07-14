@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,19 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 365b56082207c2110965681663432cce10f27c99
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 7ec66c3864aae3d680c006ada95859df0e7f0e84
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
-# <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos iOS en Microsoft Intune
+# Configuración de restricciones de dispositivos iOS en Microsoft Intune
+<a id="ios-device-restriction-settings-in-microsoft-intune" class="xliff"></a>
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="general"></a>General
+## General
+<a id="general" class="xliff"></a>
 -   **Cámara**: seleccione si se puede usar la cámara del dispositivo.   
 -   **Envío de datos de diagnóstico**: permite o impide que el dispositivo envíe datos de diagnóstico a Apple.
 -   **FaceTime**: permite el uso de la aplicación FaceTime en el dispositivo.
@@ -73,7 +75,8 @@ Esto también se aplica a valores accesibles desde la aplicación de configuraci
 - **Apple News (solo supervisado)**: permite el uso de la aplicación Apple News.
 - **Cambios en el perfil de configuración**: permite al usuario instalar perfiles de configuración.
 
-## <a name="password"></a>Contraseña
+## Contraseña
+<a id="password" class="xliff"></a>
 -   **Contraseña necesaria**: exige que el usuario final escriba una contraseña para acceder al dispositivo.
 -   **Contraseñas sencillas**: permite contraseñas sencillas, como 0000 y 1234.
 -   **Tipo de contraseña necesaria**: especifica el tipo de contraseña que es necesaria, como solo numérica o alfanumérica.
@@ -88,7 +91,8 @@ Esto también se aplica a valores accesibles desde la aplicación de configuraci
 
 <sup>1</sup>Al configurar los valores **Máximo de minutos de inactividad hasta que se bloquea la pantalla** y **Máximo de minutos tras bloqueo de pantalla antes de solicitar la contraseña**, se aplican en secuencia. Por ejemplo, si establece el valor para ambas opciones en **5** minutos, la pantalla se apagará automáticamente transcurridos 5 minutos y el dispositivo se bloqueará pasados 5 minutos más. Sin embargo, si el usuario apaga la pantalla manualmente, la segunda opción se aplica inmediatamente. En el mismo ejemplo, una vez que el usuario apague la pantalla, el dispositivo se bloqueará 5 minutos más tarde.
 
-## <a name="app-store-doc-viewing-gaming"></a>Tienda de aplicaciones, presentación de documentos, juegos
+## Tienda de aplicaciones, presentación de documentos, juegos
+<a id="app-store-doc-viewing-gaming" class="xliff"></a>
 
 
 -   **Tienda de aplicaciones (solo supervisado)**: bloquea el acceso a la tienda de aplicaciones en dispositivos supervisados.
@@ -106,7 +110,8 @@ Esto también se aplica a valores accesibles desde la aplicación de configuraci
 -   **Región de clasificación**: elija la región de clasificación para la que quiere configurar descargas permitidas y luego elija la clasificación permitida para **Películas** y **Programas de TV**.
 -   **Aplicaciones**: elija la clasificación por edades permitida de las aplicaciones que los usuarios podrán descargar. También puede elegir **Permitir todas las aplicaciones**.
 
-## <a name="restricted-apps"></a>Aplicaciones restringidas
+## Aplicaciones restringidas
+<a id="restricted-apps" class="xliff"></a>
 
 En la lista de aplicaciones restringidas, puede configurar una de las listas siguientes:
 
@@ -115,7 +120,8 @@ En la lista de aplicaciones restringidas, puede configurar una de las listas sig
 
 Para configurar la lista, haga clic en **Agregar** y especifique un nombre de su elección. Opcionalmente, puede indicar el editor de la aplicación y la dirección URL de la aplicación en la tienda de aplicaciones.
 
-### <a name="how-to-specify-the-url-to-an-app-in-the-store"></a>Especificación de la dirección URL para una aplicación de la tienda
+### Especificación de la dirección URL para una aplicación de la tienda
+<a id="how-to-specify-the-url-to-an-app-in-the-store" class="xliff"></a>
 
 Para especificar una dirección URL en la lista de aplicaciones, use el siguiente formato:
 
@@ -130,11 +136,13 @@ Ejemplo: busque Microsoft Word para iPad. La dirección URL que debe usar es htt
 
 
 
-### <a name="additional-options"></a>Opciones adicionales
+### Opciones adicionales
+<a id="additional-options" class="xliff"></a>
 
 También puede hacer clic en **Importar** para rellenar la lista a partir de un archivo csv con el formato <*url de aplicación*>, <*nombre de aplicación*>, <*editor de aplicación*> o en **Exportar** para crear un archivo csv que contenga la lista de aplicaciones restringidas en el mismo formato.
 
-## <a name="show-or-hide-apps"></a>Aplicaciones visibles u ocultas
+## Aplicaciones visibles u ocultas
+<a id="show-or-hide-apps" class="xliff"></a>
 
 En la lista de aplicaciones visibles u ocultas, puede configurar una de las siguientes listas (requiere dispositivos supervisados que ejecuten iOS 9.3 o posterior).
 
@@ -143,7 +151,8 @@ En la lista de aplicaciones visibles u ocultas, puede configurar una de las sigu
 
 Para configurar la lista, haga clic en **Agregar** y especifique un nombre de su elección. Opcionalmente, puede indicar el editor de la aplicación y la dirección URL de la aplicación en la tienda de aplicaciones.
 
-### <a name="how-to-specify-the-url-to-an-app-in-the-store"></a>Especificación de la dirección URL para una aplicación de la tienda
+### Especificación de la dirección URL para una aplicación de la tienda
+<a id="how-to-specify-the-url-to-an-app-in-the-store" class="xliff"></a>
 
 Para especificar una dirección URL en la lista de aplicaciones, use el siguiente formato:
 
@@ -155,19 +164,22 @@ Ejemplo: busque Microsoft Word para iPad. La dirección URL que debe usar es htt
 > [!Note]
 > También puede utilizar el software de iTunes para encontrar la aplicación y, a continuación, utilizar el comando **Copiar vínculo** para obtener la dirección URL de la aplicación.
 
-### <a name="additional-options"></a>Opciones adicionales
+### Opciones adicionales
+<a id="additional-options" class="xliff"></a>
 
 También puede hacer clic en **Importar** para rellenar la lista a partir de un archivo csv con el formato <*url de aplicación*>, <*nombre de aplicación*>, <*editor de aplicación*> o en **Exportar** para crear un archivo csv que contenga la lista de aplicaciones visibles u ocultas en el mismo formato.
 
 
-## <a name="cellular"></a>Móvil
+## Móvil
+<a id="cellular" class="xliff"></a>
 -   **Itinerancia de datos**: permite la itinerancia de datos cuando el dispositivo está en una red de telefonía móvil.
 -   **Captura de fondo global en itinerancia**: permite que el dispositivo capture datos, como el correo electrónico, mientras está en itinerancia en una red de telefonía móvil.
 -   **Marcación por voz**: permite el uso de la característica de marcación por voz en el dispositivo.
 -   **Itinerancia de voz**: permite la itinerancia de voz cuando el dispositivo está en una red de telefonía móvil.
 -   **Cambios en la configuración de uso de datos móviles de la aplicación (solo supervisado)**: permite al usuario controlar qué aplicaciones pueden usar datos móviles.
 
-## <a name="cloud-and-storage"></a>Nube y almacenamiento
+## Nube y almacenamiento
+<a id="cloud-and-storage" class="xliff"></a>
 -   **Copia de seguridad en iCloud**: permite al usuario realizar una copia de seguridad del dispositivo en iCloud.
 -   **Sincronización del documento con iCloud (solo supervisado)**: permite la sincronización de documentos y de clave-valor con el espacio de almacenamiento de iCloud.
 -   **Sincronización de Photo Stream en iCloud**: permite que los usuarios habiliten **Mis fotos en streaming** en su dispositivo para que las fotos se sincronicen con iCloud y está disponible en todos los dispositivos de usuario.
@@ -177,11 +189,13 @@ También puede hacer clic en **Importar** para rellenar la lista a partir de un 
 -   **Fotos en streaming compartidas**: establezca en **No** para deshabilitar **fotos compartidas en iCloud** en el dispositivo.
 -   **Continuación de la actividad**: permite que el usuario continúe el trabajo que inició en un dispositivo iOS en otro dispositivo iOS o macOS (Handoff).
 
-## <a name="autonomous-single-app-mode-supervised-only"></a>Modo de aplicación única autónoma (solo supervisado)
+## Modo de aplicación única autónoma (solo supervisado)
+<a id="autonomous-single-app-mode-supervised-only" class="xliff"></a>
 
 Use esta opción para configurar dispositivos iOS de modo que ejecuten aplicaciones especificadas en modo de aplicación única autónoma. Cuando se configura este modo y se ejecuta la aplicación, el dispositivo se bloquea para que solo pueda ejecutar esa aplicación. Un ejemplo es cuando se configura una aplicación que permite a los usuarios hacer un examen en el dispositivo. Cuando se completan las acciones de la aplicación o quita esta directiva, el dispositivo vuelve a su estado normal.
 
-### <a name="settings"></a>Configuración
+### Configuración
+<a id="settings" class="xliff"></a>
 
 - **Nombre de la aplicación**: escriba el nombre de la aplicación tal como aparecerá en la lista de aplicaciones de esta hoja.
 - **Identificador del paquete de aplicaciones**: escriba el identificador del paquete de la aplicación. Si necesita ayuda, consulte **Bundle ID reference for built-in iOS apps** (Referencia de identificador de lote para aplicaciones iOS integradas) de este tema.
@@ -191,54 +205,57 @@ Una vez que especifique el nombre de cada aplicación y cada identificador de pa
 - **Importar**: importe un archivo de valores separados por comas (.csv) que contiene una lista de nombres de aplicación y los identificadores de paquete asociados.
 - **Exportar**: exporte los nombres de aplicaciones y los identificadores de paquetes asociados que configuró a un archivo de valores separados por coma (.csv).
 
-### <a name="bundle-id-reference-for-built-in-ios-apps"></a>Referencia de identificador de lote para aplicaciones iOS integradas
+### Referencia de identificador de lote para aplicaciones iOS integradas
+<a id="bundle-id-reference-for-built-in-ios-apps" class="xliff"></a>
 
 En esta lista se muestra el identificador de lote de algunas aplicaciones iOS comunes integradas. Póngase en contacto con el proveedor de software para encontrar el identificador de lote de otras aplicaciones.
 
-|||
-|-|-|
-|Nombre de la aplicación|Identificador de lote|
-|Tienda de aplicaciones|com.apple.AppStore|
-|Calculadora|com.apple.calculator|
-|Calendario|com.apple.mobilecal|
-|Cámara|com.apple.camera|
-|Reloj|com.apple.mobiletimer|
-|Compass|com.apple.compass|
-|Contactos|com.apple.MobileAddressBook|
-|FaceTime|com.apple.facetime|
-|Buscar amigos|com.apple.mobileme.fmf1|
-|Buscar mi iPhone|com.apple.mobileme.fmip1|
-|Centro de juegos|com.apple.gamecenter|
-|GarageBand|com.apple.mobilegarageband|
-|Mantenimiento|com.apple.Health|
-|iBooks|com.apple.iBooks|
-|iTunes Store|com.apple.MobileStore|
-|iTunes U|com.apple.itunesu|
-|Keynote|com.apple.Keynote|
-|Mail|com.apple.mobilemail|
-|Asignaciones|com.apple.Maps|
-|Mensajes|com.apple.MobileSMS|
-|Música|com.apple.Music|
-|Noticias|com.apple.news|
-|Notas|com.apple.mobilenotes|
-|Números|com.apple.Numbers|
-|Páginas|com.apple.Pages|
-|Photo Booth|com.apple.Photo-Booth|
-|Fotos|com.apple.mobileslideshow|
-|Podcasts|com.apple.podcasts|
-|Recordatorios|com.apple.reminders|
-|Safari|com.apple.mobilesafari|
-|Configuración|com.apple.Preferences|
-|Acciones|com.apple.stocks|
-|Sugerencias|com.apple.tips|
-|Vídeos|com.apple.videos|
-|VoiceMemos|com.apple.VoiceMemos|
-|Wallet|com.apple.Passbook|
-|Inspección|com.apple.Bridge|
-|Clima|com.apple.weather|
+```
+,com.apple.AppStore,App Store,Apple
+,com.apple.calculator,Calculator,Apple
+,com.apple.mobilecal,Calendar,Apple
+,com.apple.camera,Camera,Apple
+,com.apple.mobiletimer,Clock,Apple
+,com.apple.compass,Compass,Apple
+,com.apple.MobileAddressBook,Contacts,Apple
+,com.apple.facetime,FaceTime,Apple
+,com.apple.mobileme.fmf1,Find Friends,Apple
+,com.apple.mobileme.fmip1,Find iPhone,Apple
+,com.apple.gamecenter,Game Center,Apple
+,com.apple.mobilegarageband,GarageBand,Apple
+,com.apple.Health,Health,Apple
+,com.apple.iBooks,iBooks,Apple
+,com.apple.MobileStore,iTunes Store,Apple
+,com.apple.itunesu,iTunes U,Apple
+,com.apple.Keynote,Keynote,Apple
+,com.apple.mobilemail,Mail,Apple
+,com.apple.MapsMaps,Apple
+,com.apple.MobileSMS,Messages,Apple
+,com.apple.Music,Music,Apple
+,com.apple.news,News,Apple
+,com.apple.mobilenotes,Notes,Apple
+,com.apple.Numbers,Numbers,Apple
+,com.apple.Pages,Pages,Apple
+,com.apple.Photo-Booth,Photo Booth,Apple
+,com.apple.mobileslideshow,Photos,Apple
+,com.apple.podcasts,Podcasts,Apple
+,com.apple.reminders,Reminders,Apple
+,com.apple.mobilesafariSafari,Apple
+,com.apple.Preferences,Settings,Apple
+,com.apple.stocks,Stocks,Apple
+,com.apple.tips,Tips,Apple
+,com.apple.videos,Videos,Apple
+,com.apple.VoiceMemos,VoiceMemos,Apple
+,com.apple.Passbook,Wallet,Apple
+,com.apple.Bridge,Watch,Apple
+,com.apple.weather,Weather,Apple
 
 
-## <a name="kiosk"></a>Pantalla completa
+```
+
+
+## Pantalla completa
+<a id="kiosk" class="xliff"></a>
 -   **Bloqueo de activación**: permite el bloqueo de activación en dispositivos iOS supervisados.
 -   **Aplicación que se ejecuta en modo de pantalla completa**: elija **Aplicación administrada** para seleccionar una aplicación que haya agregado a Intune, o **Aplicación de la Tienda** para especificar la dirección URL a una aplicación de la tienda. No se podrá ejecutar ninguna otra aplicación en el dispositivo. Lea "Cómo especificar las direcciones URL de tiendas de aplicaciones" más adelante en este tema para obtener más ayuda.
 -   **Assistive touch**: habilita o deshabilita la configuración de accesibilidad **Assistive Touch**, que ayuda al usuario a realizar gestos en pantalla que podrían resultarle difíciles.
@@ -262,7 +279,8 @@ En esta lista se muestra el identificador de lote de algunas aplicaciones iOS co
 > Antes de configurar un dispositivo iOS para pantalla completa, debe usar la herramienta Apple Configurator o el Programa de inscripción de dispositivos de Apple para pasar el dispositivo al modo supervisado. Para obtener más información sobre la herramienta Apple Configurator, consulte la documentación de Apple.
 >Si la aplicación de iOS que especifique se instala después de asignar el perfil, el dispositivo no pasará a pantalla completa hasta que se reinicie.
 
-## <a name="safari"></a>Safari
+## Safari
+<a id="safari" class="xliff"></a>
 -   **Safari (solo supervisado)**: especifique si el explorador Safari se puede usar en el dispositivo.
 -   **Autofill** (Rellenar automáticamente): permite al usuario cambiar la configuración de Autocompletar en el explorador.
 -   **Cookies**: permite que el explorador use cookies.
@@ -271,18 +289,22 @@ En esta lista se muestra el identificador de lote de algunas aplicaciones iOS co
 -   **Elementos emergentes**: habilita o deshabilita el bloqueador de elementos emergentes del explorador.
 
 
-## <a name="domains"></a>Domains
+## Domains
+<a id="domains" class="xliff"></a>
 
-### <a name="unmarked-email-domains"></a>Dominios de correo electrónico no marcados
+### Dominios de correo electrónico no marcados
+<a id="unmarked-email-domains" class="xliff"></a>
 
 En el campo **Email Domain URL** (Dirección URL de dominio de correo electrónico), agregue una o más direcciones URL a la lista. Cuando los usuarios finales reciben un correo electrónico de un dominio distinto del configurado, el correo electrónico se marcará como correo electrónico no de confianza en la aplicación de correo iOS.
 
 
-### <a name="managed-web-domains"></a>Dominios web administrados
+### Dominios web administrados
+<a id="managed-web-domains" class="xliff"></a>
 
 En el campo **Web Domain URL** (Dirección URL de dominio web), agregue una o más direcciones URL a la lista. Los documentos que se descarguen de los dominios que especifica se considerarán administrados. Esta configuración solo se aplica a los documentos que se descargan con el explorador Safari.
 
 
-### <a name="safari-password-auto-fill-domains"></a>Dominios de relleno automático de contraseña de Safari
+### Dominios de relleno automático de contraseña de Safari
+<a id="safari-password-auto-fill-domains" class="xliff"></a>
 
 En el campo **Domain URL** (Dirección URL de dominio), agregue una o más direcciones URL a la lista. Los usuarios solo pueden guardar contraseñas web de las direcciones URL que aparecen en esta lista. Esta configuración solo se aplica al explorador Safari y a dispositivos iOS 9.3 y versiones posteriores en modo supervisado. Si no especifica ninguna dirección URL, se podrán guardar contraseñas de todos los sitios web.

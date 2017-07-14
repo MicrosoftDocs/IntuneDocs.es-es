@@ -2,8 +2,8 @@
 title: "Aplicaciones iOS con directivas de protección de aplicaciones"
 description: "En este tema se describe qué esperar cuando la aplicación iOS está administrada por directivas de protección de aplicaciones."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
 ms.date: 05/05/2017
 ms.topic: article
@@ -14,21 +14,23 @@ ms.assetid: b57e6525-b57c-4cb4-a84c-9f70ba1e8e19
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a4b7ad6cfd8e07137bac9d430088274d9161c7ac
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: e66042e5198b76ec484fe0218127acb653394cce
+ms.sourcegitcommit: f100c943a635f5a08254ba7cf30f1aaebb7e810e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
-# <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones
+# Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones
+<a id="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies" class="xliff"></a>
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
  En este tema se describe la experiencia del usuario cuando se usan aplicaciones con directivas de protección de aplicaciones aplicadas. Las directivas de protección de aplicaciones solo se aplican cuando se usan aplicaciones en el contexto laboral: por ejemplo, cuando el usuario obtiene acceso a las aplicaciones con la cuenta profesional o a archivos que están almacenados en la ubicación de OneDrive para la Empresa.
 
-##  <a name="access-apps"></a>Acceso a las aplicaciones
+##  Acceso a las aplicaciones
+<a id="access-apps" class="xliff"></a>
 
-Si el dispositivo **no está inscrito en Intune**, al usuario final se le pide que reinicie la aplicación cuando la use por primera vez. Se requiere un reinicio para poder aplicar directivas de protección de aplicaciones a la aplicación. 
+Si el dispositivo **no está inscrito en Intune**, al usuario final se le pide que reinicie la aplicación cuando la use por primera vez. Se requiere un reinicio para poder aplicar directivas de protección de aplicaciones a la aplicación.
 
 <!--- The following screenshot from the Skype app illustrates this restart request: --->
 
@@ -37,7 +39,8 @@ Si el dispositivo **no está inscrito en Intune**, al usuario final se le pide q
 
 En los dispositivos que **están inscritos para la administración en Intune**, el usuario ve un mensaje que indica que la aplicación ahora está administrada.
 
-##  <a name="use-apps-with-multi-identity-support"></a>Uso de aplicaciones con compatibilidad con varias identidades
+##  Uso de aplicaciones con compatibilidad con varias identidades
+<a id="use-apps-with-multi-identity-support" class="xliff"></a>
 
 Las aplicaciones que admiten varias identidades permiten usar diferentes cuentas (profesionales y personales) para obtener acceso a las mismas aplicaciones, aunque las directivas de protección de aplicaciones se aplican solo cuando las aplicaciones se usen en el contexto laboral.  
 
@@ -47,7 +50,8 @@ Por ejemplo, el usuario obtiene una solicitud de PIN al obtener acceso a los dat
 
 Las directivas de protección de aplicaciones solo se aplican en el contexto laboral. Por lo tanto, la aplicación podría comportarse de manera distinta si el contexto es laboral o personal.
 
-##  <a name="manage-user-accounts-on-the-device"></a>Administración de cuentas de usuario en el dispositivo
+##  Administración de cuentas de usuario en el dispositivo
+<a id="manage-user-accounts-on-the-device" class="xliff"></a>
 
 Intune solo admite la implementación de directivas de protección de aplicaciones en una cuenta de usuario por dispositivo.
 
@@ -63,9 +67,11 @@ Consulte el siguiente escenario de ejemplo para profundizar aún más en cómo s
 
 El usuario A trabaja para dos empresas: la **empresa X** y la **empresa Y**. El usuario A tiene una cuenta profesional para cada empresa y en ambas se usa Intune para implementar directivas de protección de aplicaciones. La **Compañía X** implementa directivas de protección de aplicaciones **antes que** la **Compañía Y**. La cuenta que está asociada a la **empresa X** obtiene la directiva de protección de aplicaciones, pero no la cuenta asociada a la empresa Y. Si quiere que la cuenta de usuario asociada a la empresa Y se administre por medio de las directivas de protección de aplicaciones, deberá quitar la cuenta de usuario asociada a la empresa X.
 
-### <a name="add-a-second-account"></a>Incorporación de una segunda cuenta
+### Incorporación de una segunda cuenta
+<a id="add-a-second-account" class="xliff"></a>
 
 Si usa un dispositivo iOS, puede que aparezca un mensaje de bloqueo si intenta agregar una segunda cuenta profesional en ese dispositivo. Se mostrarán las cuentas y, luego, podrá elegir la que desea quitar.
 
-## <a name="next-steps"></a>Pasos siguientes
+## Pasos siguientes
+<a id="next-steps" class="xliff"></a>
 [What to expect when your Android app is managed by app protection policies](end-user-mam-apps-android.md) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)

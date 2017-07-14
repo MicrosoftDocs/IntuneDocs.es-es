@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/16/2017
+ms.date: 07/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,14 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 515d4e2b089d077ec708fc1dea1e1747169a60ae
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 33ddb60df7aebe36ff652e1da6da592442b96d4b
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
-# <a name="what-is-microsoft-intune-app-management"></a>¿Qué es la administración de aplicaciones de Microsoft Intune?
+# ¿Qué es la administración de aplicaciones de Microsoft Intune?
+<a id="what-is-microsoft-intune-app-management" class="xliff"></a>
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -36,7 +37,8 @@ Aparte de todo esto, puede que quiera asignar y administrar aplicaciones en disp
 
 Intune ofrece diversas funcionalidades para ayudarle a conseguir las aplicaciones que necesita y en los dispositivos de su elección.
 
-## <a name="app-management-capabilities-by-platform"></a>Funcionalidades de administración de aplicaciones por plataforma
+## Funcionalidades de administración de aplicaciones por plataforma
+<a id="app-management-capabilities-by-platform" class="xliff"></a>
 
 ||||||
 |-|-|-|-|-|
@@ -56,11 +58,12 @@ Intune ofrece diversas funcionalidades para ayudarle a conseguir las aplicacione
 |Aplicaciones de una tienda|Sí|Sí|Sí|Sí|
 |Actualizar aplicaciones|Sí|Sí|Sí|Sí|
 
-<sup>1</sup> Considere la opción de usar Windows Information Protection para proteger aplicaciones en dispositivos que ejecutan Windows 10.
+<sup>1</sup> Considere el uso de [Windows Information Protection](windows-information-protection-configure.md) para proteger aplicaciones en dispositivos que ejecutan Windows 10.
 
 <sup>1</sup>Se aplica solo a dispositivos administrados por Intune.
 
-## <a name="how-to-get-started"></a>Cómo empezar
+## Cómo empezar
+<a id="how-to-get-started" class="xliff"></a>
 
 Puede encontrar la mayoría de las tareas relacionadas con las aplicaciones en la carga de trabajo **Mobile Apps** a la que puede acceder de la manera siguiente:
 
@@ -70,7 +73,8 @@ Puede encontrar la mayoría de las tareas relacionadas con las aplicaciones en l
 
     ![La carga de trabajo Mobile Apps](./media/apps-workload.png)
 
-### <a name="manage"></a>Administrar
+### Administrar
+<a id="manage" class="xliff"></a>
 - **Aplicaciones**: en este nodo puede agregar, asignar y supervisar la mayoría de las aplicaciones.
     - [Agregar aplicaciones](apps-add.md)
     - [Asignar aplicaciones](apps-deploy.md)
@@ -85,7 +89,8 @@ Puede encontrar la mayoría de las tareas relacionadas con las aplicaciones en l
 - **Perfiles de aprovisionamiento de iOS**: las aplicaciones iOS incluyen un perfil y un código de aprovisionamiento que está firmado por un certificado. Cuando el certificado expira, ya no se puede ejecutar la aplicación. Intune proporciona las herramientas para asignar proactivamente una nueva directiva de perfil de aprovisionamiento a dispositivos que tengan aplicaciones cuya expiración esté próxima.
     - [Perfiles de aprovisionamiento de aplicaciones iOS](app-provisioning-profile-ios.md)
 
-### <a name="monitor"></a>Supervisión
+### Supervisión
+<a id="monitor" class="xliff"></a>
 - **Aplicaciones con licencia**: vea, asigne y supervise las aplicaciones compradas por volumen de las tiendas de aplicaciones.
     - [Aplicaciones adquiridas por volumen de la Tienda Windows para empresas](windows-store-for-business.md)
 - **Discovered Apps** (Aplicaciones detectadas): muestra todas las aplicaciones que asignó Intune y que están instaladas en un dispositivo.
@@ -94,7 +99,8 @@ Puede encontrar la mayoría de las tareas relacionadas con las aplicaciones en l
 
 Para más información, consulte [Supervisión de aplicaciones](apps-monitor.md).
 
-### <a name="setup"></a>Setup
+### Setup
+<a id="setup" class="xliff"></a>
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
 - **Tienda Windows para empresas**: configure la integración con la Tienda Windows para empresas. Luego, puede sincronizar las aplicaciones adquiridas en Intune, asignarlas y realizar el seguimiento de su uso de licencias.
