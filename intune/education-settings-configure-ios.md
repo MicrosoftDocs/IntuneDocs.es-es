@@ -1,33 +1,29 @@
 ---
-title: "Configuración de Intune para la aplicación Classroom para iOS | Microsoft Docs"
-titleSuffix: Intune Azure preview
-description: "Versión preliminar de Intune Azure: conozca los valores de configuración de Intune que puede usar para controlar la configuración de la aplicación Classroom en dispositivos iOS."
+title: "Configuración de Intune para la aplicación Classroom para iOS"
+titleSuffix: Intune on Azure
+description: "Conozca la configuración de Intune que puede usar para controlar los valores de configuración de la aplicación Classroom en los dispositivos iOS."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/02/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
-ms.reviewer: heenamac
+ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 6f24636687291ff55686277c3f24b2774cfb32f4
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 4188c3951c9cb864b77bde52a5d19f022f17c11c
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
-
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>Configuración de Intune para la aplicación Classroom para iOS
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>Introducción
 [Classroom](https://itunes.apple.com/app/id1085319084) es una aplicación que ayuda a los profesores a guiar el aprendizaje y controlar los dispositivos de los estudiantes en el aula. Por ejemplo, mediante la aplicación, el profesor puede hacer lo siguiente:
@@ -38,14 +34,14 @@ ms.lasthandoff: 05/23/2017
 - Navegar por los iPad de los estudiantes hasta un marcador o el capítulo de un libro
 - Mostrar la pantalla del iPad de un estudiante en un televisor Apple
 
-Use el perfil **Educación** del dispositivo iOS de Intune y la información de este tema para configurar la aplicación Classroom y los dispositivos en los que la usará.
+Use el perfil **Educación** del dispositivo iOS de Intune y la información de este tema para configurar la aplicación Classroom y los dispositivos en los que la usa.
 
 ## <a name="before-you-start"></a>Antes de empezar
 
 Tenga en cuenta lo siguiente antes de comenzar a configurar estas opciones:
 
 - Tanto los iPad de los profesores como de los estudiantes deben estar inscritos en Intune.
-- Asegúrese de que haya instalado la aplicación [Classroom de Apple](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) en el dispositivo del profesor. Puede hacerlo manualmente o usar la [administración de aplicaciones de Intune](app-management.md).
+- Asegúrese de que haya instalado la aplicación [Classroom de Apple](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) en el dispositivo del profesor. Puede instalar la aplicación manualmente o usar la [administración de aplicaciones de Intune](app-management.md).
 - Debe configurar los certificados para autenticar las conexiones entre los dispositivos de profesores y estudiantes (consulte el paso 2).
 - Los iPad de los profesores y estudiantes deben estar en la misma red Wi-Fi y también tener habilitado Bluetooth.
 - La aplicación Classroom se ejecuta en iPad supervisados con iOS 9.3 o una versión posterior.
@@ -57,7 +53,7 @@ Tenga en cuenta lo siguiente antes de comenzar a configurar estas opciones:
 Use School Data Sync (SDS) de Microsoft para importar los registros de la escuela desde un sistema de información de estudiantes (SIS) existente a Azure Active Directory (Azure AD).
 SDS sincroniza la información de su SIS y la almacena en Azure AD. Azure AD es un sistema de administración de Microsoft que ayuda a organizar los usuarios y los dispositivos. Luego, puede utilizar estos datos para administrar sus estudiantes y clases. [Obtenga más información sobre cómo implementar SDS](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91).
 
-### <a name="how-to-import-data-using-sds"></a>¿Cómo se importan datos con SDS?
+### <a name="how-to-import-data-using-sds"></a>Cómo importar datos con SDS
 
 Puede importar información a SDS mediante uno de los siguientes métodos:
 
@@ -77,14 +73,14 @@ Puede importar información a SDS mediante uno de los siguientes métodos:
 ### <a name="configure-general-settings"></a>Configuración de las opciones generales
 
 1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Other** >  (Otros) **Intune**.
-3.    En la hoja **Intune**, elija **Configurar dispositivos**.
-4.    En la hoja **Configuración del dispositivo**, elija **Administrar** > **Perfiles**.
-5.    En la hoja de perfiles, elija **Create Profile** (Crear perfil).
-6.    En la hoja **Crear perfil**, escriba un **nombre** y una **descripción** para el perfil Educación de iOS.
-7.    En la lista desplegable **Plataforma**, elija **iOS**.
-8.    En la lista desplegable **Tipo de perfil**, elija **Educación**.
-9.    Elija **Configuración** > **Configurar**.
+2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
+3.  En la hoja **Intune**, elija **Configurar dispositivos**.
+4.  En la hoja **Configuración del dispositivo**, elija **Administrar** > **Perfiles**.
+5.  En la hoja de perfiles, elija **Create Profile** (Crear perfil).
+6.  En la hoja **Crear perfil**, escriba un **nombre** y una **descripción** para el perfil Educación de iOS.
+7.  En la lista desplegable **Plataforma**, elija **iOS**.
+8.  En la lista desplegable **Tipo de perfil**, elija **Educación**.
+9.  Elija **Configuración** > **Configurar**.
 
 
 A continuación, necesita certificados para establecer una relación de confianza entre los iPad de profesores y estudiantes. Se utilizan certificados para autenticar sin problemas y de forma silenciosa las conexiones entre los dispositivos sin tener que escribir nombres de usuario ni contraseñas.
@@ -92,7 +88,7 @@ A continuación, necesita certificados para establecer una relación de confianz
 >[!IMPORTANT]
 >Los certificados de profesores y estudiantes que utilice deben ser emitidos por diferentes entidades de certificación (CA). Debe crear dos nuevas CA subordinadas conectadas a la infraestructura de certificados existente; una para los profesores y otra para los estudiantes.
 
-Los perfiles de educación de iOS solo admiten certificados PFX y no aceptan certificados SCEP.
+Los perfiles de educación de iOS solo admiten certificados PFX. No se admiten certificados SCEP.
 
 Los certificados que crea deben admitir la autenticación de servidor además de la autenticación de usuario.
 
@@ -120,8 +116,8 @@ Cuando haya terminado la configuración de los certificados, haga clic en **Acep
 
 ### <a name="configure-student-certificates"></a>Configuración de certificados de estudiantes
 
-1.    En la hoja **Educación**, elija **Student certificates** (Certificados de estudiante).
-2.    En la hoja **Student certificates** (Certificados de estudiante) de la lista de tipos **Student device certificate** (Certificados de dispositivos de estudiantes), elija **1:1**.
+1.  En la hoja **Educación**, elija **Student certificates** (Certificados de estudiante).
+2.  En la hoja **Student certificates** (Certificados de estudiante) de la lista de tipos **Student device certificate** (Certificados de dispositivos de estudiantes), elija **1:1**.
 
 #### <a name="configure-student-root-certificate"></a>Configuración de certificado raíz de estudiantes
 
@@ -143,8 +139,8 @@ Cuando haya terminado la configuración de los certificados, haga clic en **Acep
 
 ## <a name="finish-up"></a>Finalizar
 
-1.    En la hoja **Educación**, elija Aceptar.
-2.    En la hoja **Create Profile** (Crear perfil), elija **Crear**.
+1.  En la hoja **Educación**, elija Aceptar.
+2.  En la hoja **Create Profile** (Crear perfil), elija **Crear**.
     
 El perfil se crea y aparece en la hoja de la lista de perfiles.
 
@@ -156,3 +152,4 @@ Ahora cuando un profesor utilice la aplicación Classroom, tendrá el control to
 
 Para obtener más información sobre la aplicación Classroom, vea [Ayuda de Classroom](https://help.apple.com/classroom/ipad/2.0/) en el sitio web de Apple.
 
+Si quiere configurar dispositivos iPad compartidos para los estudiantes, vea [Cómo configurar las opciones de educación de Intune para los dispositivos iPad compartidos](education-settings-configure-ios-shared.md).

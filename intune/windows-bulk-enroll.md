@@ -1,12 +1,12 @@
 ---
-title: "Inscripción masiva para Windows 10 | Microsoft Docs"
-titleSuffix: Intune Azure preview
+title: "Inscripción masiva para Windows 10"
+titleSuffix: Intune on Azure
 description: "Creación de un paquete de inscripción masiva para Microsoft Intune"
 keywords: 
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 03/18/2017
+ms.date: 06/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +14,15 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: f8d1ff7a9a8bd804d4fe40f8aec7e7d0bf998e35
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 4e9dae27b981533dfff2080a5b7f9ca961509cd8
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Inscripción masiva para dispositivos Windows
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Como administrador, puede unir una gran cantidad de dispositivos Windows nuevos a Azure Active Directory e Intune. Para inscribir de forma masiva dispositivos para el inquilino de Azure AD, debe crear un paquete de aprovisionamiento con la aplicación Windows Configuration Designer (WC). Aplicar el paquete de aprovisionamiento en dispositivos corporativos une estos dispositivos al inquilino de Azure AD y los inscribe para la administración de Intune. Una vez que se aplica el paquete, está listo para que los usuarios de Azure AD inicien sesión.
 
@@ -49,19 +48,19 @@ La inscripción masiva de dispositivos Windows requiere lo siguiente:
   - **Project folder**: carpeta en la que se guardará el proyecto
   - **Description**: descripción opcional del proyecto ![Captura de pantalla de la especificación de nombre, carpeta de proyecto y descripción en la aplicación Windows Configuration Designer](media/bulk-enroll-name.png)
 
-4.    Escriba un nombre único para los dispositivos. Los nombres pueden incluir un número de serie (%%SERIAL%%) o un conjunto aleatorio de caracteres. De manera opcional, también puede escribir una clave de producto si actualiza la edición de Windows, configura el dispositivo para su uso compartido y quita software instalado previamente.
+4.  Escriba un nombre único para los dispositivos. Los nombres pueden incluir un número de serie (%%SERIAL%%) o un conjunto aleatorio de caracteres. De manera opcional, también puede escribir una clave de producto si actualiza la edición de Windows, configura el dispositivo para su uso compartido y quita software instalado previamente.
 ![Captura de pantalla de la especificación de nombre, carpeta de proyecto y descripción en la aplicación Windows Configuration Designer](media/bulk-enroll-device.png)
 
-5.    De manera opcional, puede configurar la red Wi-Fi a la que se conectan los dispositivos cuando se inician por primera vez.  Si no se configura, se requiere una conexión de red con cable cuando se inicia por primera vez el dispositivo.
+5.  De manera opcional, puede configurar la red Wi-Fi a la que se conectan los dispositivos cuando se inician por primera vez.  Si no se configura, se requiere una conexión de red con cable cuando se inicia por primera vez el dispositivo.
 ![Captura de pantalla de la habilitación de la red Wi-Fi, incluidas opciones de tipo de red y SSID de red en la aplicación Windows Configuration Designer](media/bulk-enroll-network.png)
 
-6.    Seleccione **Enroll in Azure AD** (Inscribirse en Azure AD), escriba una fecha de expiración en **Bulk Token Expiry** (Expiración de token de operación masiva) y, luego, seleccione **Get Bulk Token** (Obtener token de operación masiva).
+6.  Seleccione **Enroll in Azure AD** (Inscribirse en Azure AD), escriba una fecha de expiración en **Bulk Token Expiry** (Expiración de token de operación masiva) y, luego, seleccione **Get Bulk Token** (Obtener token de operación masiva).
 ![Captura de pantalla de la especificación de nombre, carpeta de proyecto y descripción en la aplicación Windows Configuration Designer](media/bulk-enroll-account.png)
 
 7. Proporcione sus credenciales de Azure AD para obtener un token de operación masiva.
 ![Captura de pantalla de la especificación de nombre, carpeta de proyecto y descripción en la aplicación Windows Configuration Designer](media/bulk-enroll-cred.png)
 
-8.    Haga clic en **Siguiente** cuando el **Bulk Token** (Token de operación masiva) se recupere correctamente.
+8.  Haga clic en **Siguiente** cuando el **Bulk Token** (Token de operación masiva) se recupere correctamente.
 
 9. De manera opcional, puede **agregar aplicaciones** y **agregar certificados**. Estas aplicaciones y certificados se aprovisionan en el dispositivo.
 
@@ -85,8 +84,14 @@ La inscripción masiva de dispositivos Windows requiere lo siguiente:
 
 ## <a name="troubleshooting-windows-bulk-enrollment"></a>Solución de problemas con la inscripción masiva de Windows
 
+### <a name="provisioning-issues"></a>Problemas de aprovisionamiento
 El aprovisionamiento está diseñado para usarlo en dispositivos Windows nuevos. Los errores de aprovisionamiento pueden requerir un restablecimiento de fábrica del dispositivo o recuperar el dispositivo a partir de una imagen de arranque. En estos ejemplos se describen algunas de las razones para los errores de aprovisionamiento:
 
 - Un paquete de aprovisionamiento que intenta unirse a un dominio de Active Directory o a un inquilino de Azure Active Directory que no crea una cuenta local podría generar que el dispositivo no sea accesible si el proceso de unión al dominio presenta un error debido a la falta de conectividad de red.
 - Los scripts que ejecuta el paquete de aprovisionamiento se ejecutan en contexto de sistema y pueden hacer cambios arbitrarios en las configuraciones y el sistema de archivos del dispositivo. Un script incorrecto o malintencionado podría poner el dispositivo en un estado que solo se podría recuperar si se restablece la imagen inicial o se realiza un restablecimiento de fábrica del dispositivo.
 
+### <a name="problems-with-bulk-enrollment-and-company-portal"></a>Problemas con la inscripción masiva y el portal de empresa
+Si un usuario intenta inscribir un dispositivo inscrito de manera masiva anteriormente con el portal de empresa, recibirá una advertencia de que su dispositivo necesita más acciones, de configuración o de inscripción. El dispositivo está inscrito, pero el sitio web o la aplicación del portal de empresa no reconocen la inscripción.
+
+### <a name="conditional-access"></a>Acceso condicional
+El acceso condicional no está disponible para los dispositivos Windows inscritos mediante la inscripción masiva.

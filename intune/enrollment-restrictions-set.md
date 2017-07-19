@@ -1,12 +1,12 @@
 ---
 title: "Establecer restricciones de inscripción en Intune"
-titleSuffix: Intune Azure preview
-description: "Versión preliminar de Azure de Intune: restrinja las inscripciones por plataforma y establezca un límite de inscripciones de dispositivos en Intune. "
+titleSuffix: Intune on Azure
+description: "Restrinja las inscripciones por plataforma y establezca un límite de inscripciones de dispositivos en Intune. \""
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,56 +15,54 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: d99f7ca5b5e96a7ab113a14d36f0fef474411836
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 2dfcba8c788f262ce816dcd23dc2921fd57f331b
+ms.sourcegitcommit: d1ad84edf4f03cb4c11fe55131556b43fc3a4500
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/05/2017
 ---
+# <a name="set-enrollment-restrictions"></a>Establecer restricciones de inscripción
 
-# <a name="set-enrollment-restrictions"></a>Establecer restricciones de inscripción 
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+Como administrador de Intune, puede determinar qué dispositivos pueden inscribirse en la administración con Intune. Use el portal de Intune para establecer las siguientes restricciones para la inscripción de dispositivos:
 
-Puede establecer los tipos y el número máximo de dispositivos que permitirá que se inscriban. En la hoja Restricciones de inscripción, puede establecer lo siguiente:
+- Número máximo de dispositivos inscritos
+- Plataformas de dispositivo que se pueden inscribir:
+  - Android
+  - iOS
+  - macOS
+  - Windows
+- Restringir los dispositivos de propiedad personal (solo iOS y Android)
 
-- Las plataformas que se pueden inscribir y si desea bloquear la inscripción de dispositivos de propiedad personal para iOS y Android.
-
-- El número máximo de dispositivos que puede inscribir un usuario.
+>[!NOTE]
+>Las restricciones de inscripción no son una característica de seguridad. Los dispositivos en peligro pueden falsificar su carácter. Estas restricciones son un obstáculo al mejor esfuerzo para los usuarios no malintencionados.
 
 ## <a name="set-device-type-restrictions"></a>Establecer restricciones de tipo de dispositivo
+Las restricciones de inscripción predeterminadas se aplican a todos los usuarios a los que no se les han asignado restricciones de inscripción de mayor prioridad.  
+1. En el portal de Intune, pulse **Inscripción de dispositivos** y **Restricciones de inscripción**.
+![Captura de pantalla del área de trabajo de restricciones de dispositivos con las restricciones de tipo de dispositivo predeterminadas y las restricciones de límite de dispositivos.](media/device-restrictions-set-default.png)
+2. En **Restricciones de inscripción** > **Restricciones de tipo de dispositivo**, seleccione **Predeterminado**.
+3. En **Todos los usuarios**, seleccione **Plataformas**. Pulse **Permitir** o **Bloquear** para cada plataforma:
+  - **Android**
+  - **iOS**
+  - **macOS**
+  - **Windows**
 
-1. En Azure Portal, elija **Más servicios** > **Supervisión y administración** > **Intune**.
+  Haga clic en **Guardar**.
+4. En **Todos los usuarios**, seleccione **Configuraciones de plataforma** y seleccione las configuraciones siguientes:
+  - **Propiedad personal**: especifica si **Permitir** o **Bloquear** dispositivos Android e iOS.
+  ![Captura de pantalla del área de trabajo de restricciones de dispositivos con las configuraciones de plataforma de dispositivos predeterminadas que muestran las opciones de propiedad personal configuradas.](media/device-restrictions-platform-configurations.png)
+  Haga clic en **Guardar**.
 
-2. En la hoja de Intune, elija **Inscribir dispositivos** y, luego, **Restricciones de inscripción**.
-
-3. En **Restricciones de tipo de dispositivo**, seleccione **Predeterminado**.
-
-4. En la hoja **Todos los usuarios**, seleccione **Plataformas**.
-
-5. Para las plataformas que tengan permiso para inscribirse en Intune, seleccione **Permitir**. Para las plataformas a las que quiera impedir la inscripción, seleccione **Bloquear**. En el caso de las plataformas, la opción **Permitir** está establecida de forma predeterminada. 
-
-    >[!NOTE]
-    >Esta configuración no se aplica a las inscripciones de Windows que usen el cliente de software de Intune, y tampoco las bloquea. Esta configuración afecta solo a las inscripciones que usen la administración de dispositivos móviles. 
-
-6. Seleccione **Guardar**.
-
-7. Seleccione **Configuraciones de plataforma**.
-
-8. Seleccione si quiere **Permitir** o **Bloquear** la inscripción de dispositivos iOS y Android de propiedad personal.
-
-9. Seleccione **Guardar**.
+>[!NOTE]
+>Si bloquea los dispositivos Android de propiedad personal de la inscripción, los dispositivos Android for Work todavía pueden inscribirse.
 
 ## <a name="set-device-limit-restrictions"></a>Establecer restricciones de límite de dispositivos
+Las restricciones de inscripción predeterminadas se aplican a todos los usuarios a los que no se les han asignado restricciones de inscripción de mayor prioridad.  
+1. En el portal de Intune, pulse **Inscripción de dispositivos** y **Restricciones de inscripción**.
+2. Pulse **Restricciones de inscripción** > **Restricciones de límite de dispositivos**.
+3. En **Todos los usuarios**, seleccione **Límite de dispositivos**. Especifique el número máximo de dispositivos inscritos por usuario.  
+![Captura de pantalla de la hoja de restricciones de límite de dispositivos con las restricciones de límite de dispositivos.](./media/device-restrictions-limit.png)
 
-1. En Azure Portal, elija **Más servicios** > **Supervisión y administración** > **Intune**.
-
-2. En la hoja de Intune, elija **Inscribir dispositivos** y, luego, **Restricciones de inscripción**.
-
-3. En **Restricciones de límite de dispositivos**, seleccione **Predeterminado**.
-
-4. En la hoja **Todos los usuarios**, seleccione **Límite de dispositivos**.
-
-5. Seleccione el número máximo de dispositivos que un usuario puede inscribir y haga clic en **Guardar**.
-
+  Haga clic en **Guardar**.

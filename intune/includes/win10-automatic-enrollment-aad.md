@@ -34,6 +34,9 @@ La inscripción automática permite que los usuarios inscriban sus dispositivos 
     - **URL de detección de MDM**
     - **URL de cumplimiento de MDM**
 
+    > [!IMPORTANT]
+    > Si un usuario es miembro de un grupo que tiene tanto la inscripción de MDM automática y MAM habilitados, y el usuario intenta unirse al área de trabajo en su dispositivo personal, entonces solo MAM está habilitado. 
+
 6. Seleccione **Guardar**.
 
 De forma predeterminada, la autenticación en dos fases no está habilitada para el servicio. En cambio, se recomienda la autenticación en dos fases al registrar un dispositivo. Antes de requerir la autenticación en dos fases para este servicio, debe configurar un proveedor de autenticación de dos fases en Azure Active Directory y configurar las cuentas de usuario para la autenticación multifactor. Vea [Introducción a Servidor Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).

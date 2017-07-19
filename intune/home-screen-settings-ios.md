@@ -1,12 +1,12 @@
 ---
 title: "Configuración de diseño de pantalla principal de Intune para dispositivos iOS"
-titleSuffix: Intune Azure preview
-description: "Versión preliminar de Azure de Intune: conozca la configuración que puede usar para personalizar la pantalla principal y la base de los dispositivos iOS."
+titleSuffix: Intune on Azure
+description: "Conozca la configuración que puede usar para personalizar la pantalla principal y la base de los dispositivos iOS."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 07/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,33 +15,30 @@ ms.assetid: 6aba4491-afb9-43cd-9ccc-14e6a2a5a3b1
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 7743573ab893b7d54c11e183133fa02368c00779
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: de15a5f5291a6701782d357d24e2e802d7e7e44b
+ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/05/2017
 ---
-
 # <a name="intune-home-screen-layout-settings-for-ios-devices"></a>Configuración de diseño de pantalla principal de Intune para dispositivos iOS
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Use estos valores para configurar el diseño de aplicaciones, carpetas e imágenes web en la base y la pantalla principal de todos los dispositivos iOS a los que asigna la directiva.
+Use estos valores para configurar el diseño de aplicaciones, carpetas e imágenes web en la base y la pantalla principal de todos los dispositivos iOS.
 
 iOS devices to which you assign the profile must be in supervised mode and running iOS 9.3 or later.
 
-1. En la hoja **Características del dispositivo**, elija **Diseño de pantalla principal (solo supervisado)**.
+1. En las hojas **Características del dispositivo**, pulse **Diseño de pantalla principal (solo supervisado)**.
 2. En la hoja **Diseño de pantalla principal (solo supervisado**, elija si desea configurar los diseños de **Base** o **Páginas**.
 
 ## <a name="add-items-to-the-dock"></a>Agregar elementos a la base
 
-En la hoja **Base**, puede agregar hasta 6 elementos o carpetas a la base que se encuentra en la parte inferior de la pantalla iOS. Sin embargo, muchos dispositivos admiten menos elementos; por ejemplo, los dispositivos iPhone admiten hasta 4 elementos. En este caso, en el dispositivo se mostrarán solo los primeros cuatro elementos que configuró.
+En la hoja **Base**, puede agregar hasta seis elementos o carpetas a la base de la pantalla iOS. En cambio, muchos dispositivos admiten menos elementos; por ejemplo, los dispositivos iPhone admiten hasta cuatro elementos. En este caso, en el dispositivo se muestran solo los primeros cuatro elementos que ha configurado.
 
 1. Elija **Agregar** para agregar un elemento a la base.
 2. En la hoja **Agregar fila**, elija si desea agregar una **aplicación** o una **carpeta**.
-3. Use la información que se encuentra en las secciones **Cómo agregar una aplicación a la lista** y **Cómo agregar una carpeta a la lista** de este tema para configurar las aplicaciones y carpetas que desea que aparezcan en la base.
+3. Con la información de este tema, configure las aplicaciones y las carpetas que quiere que aparezcan en la base.
 4. Siga agregando elementos. Cuando termine, haga clic en **Aceptar** en cada hoja hasta que vuelva a la hoja **Crear perfil**. Elija **Crear**.
 
 >[!TIP]
@@ -53,19 +50,19 @@ En este ejemplo, se configuró la pantalla de la base para mostrar solo las apli
 
 ![Configuración de base de iOS de ejemplo](http://i.imgur.com/FfFiUcP.png)
 
-Cuando asigna la directiva a un dispositivo iPhone, el resultado será una base similar a la siguiente:
+Cuando asigna la directiva a un dispositivo iPhone, el resultado es una base similar a esta captura de pantalla:
 
 ![Diseño de base de iOS de ejemplo en iPhone](http://i.imgur.com/bAgCe8F.png)
 
 ## <a name="add-home-screen-pages"></a>Agregar páginas de pantalla principal
 
-Agregue las páginas que desee que aparezcan en la pantalla principal y las aplicaciones que aparecerán en cada página. Las aplicaciones que agrega a una página se organizan de izquierda a derecha, según el orden especificado en la lista. Si agrega más aplicaciones que las que caben en una página, se moverán a una página subsiguiente.
+Agregue las páginas que quiere que aparezcan en la pantalla principal y las aplicaciones que aparecen en cada página. Las aplicaciones que agrega a una página se organizan de izquierda a derecha, según el orden especificado en la lista. Si agrega más aplicaciones que las que caben en una página, se mueven a una página posterior.
 
 
 1. En la hoja **Páginas**, elija **Agregar**.
-2. En la hoja **Agregar fila**, escriba un **Nombre de página**. Este se usa como referencia en el portal de Intune y *no se muestra* en el dispositivo iOS.
+2. En la hoja **Agregar fila**, escriba un **Nombre de página**. Este nombre se usa como referencia en el portal de Intune y *no se muestra* en el dispositivo iOS.
 3. Elija **Agregar** y, luego, elija si desea agregar una **aplicación** o una **carpeta** a la página.
-4. Use la información que se encuentra en las secciones **Cómo agregar una aplicación a la lista** y **Cómo agregar una carpeta a la lista** de este tema para configurar las aplicaciones y carpetas que desea que aparezcan en la página.
+4. Con la información de este tema, configure las aplicaciones y las carpetas que quiere que aparezcan en la página.
 
 ### <a name="example"></a>Ejemplo
 
@@ -73,25 +70,25 @@ En este ejemplo, configuró una página nueva llamada **Contoso**. En esta pági
 
 ![Ejemplo de configuración de pantalla principal de iOS](http://i.imgur.com/Jc2OxyX.png)
 
-Cuando asigna la directiva a un dispositivo iPhone, el resultado será una página similar a la siguiente:
+Cuando asigna la directiva a un dispositivo iPhone, el resultado es una página similar a esta captura de pantalla:
 
 ![Dispositivo iOS con la pantalla principal modificada](http://i.imgur.com/Bd37PHa.png)
 
 ## <a name="how-to-add-an-app-to-the-list"></a>Cómo agregar una aplicación a la lista
 
-1. Escriba el **nombre de la aplicación**. Este se usa como referencia en el portal de Intune y *no se muestra* en el dispositivo iOS.
+1. Escriba el **nombre de la aplicación**. Este nombre se usa como referencia en el portal de Intune y *no se muestra* en el dispositivo iOS.
 2. Escriba el **Identificador del lote de aplicaciones** de la aplicación que quiere mostrar. Consulte **Bundle ID reference for built-in iOS apps** (Referencia de identificador de lote para aplicaciones iOS integrada) más adelante en este tema para obtener ayuda.
 3. Haga clic en **Aceptar** y, luego, siga agregando hasta un máximo de **6** elementos en la base del dispositivo y **60** para una página del dispositivo.
 4. Cuando haya terminado, haga clic en **Aceptar**.
 
 ## <a name="how-to-add-a-folder-to-the-list"></a>Cómo agregar una carpeta a la lista
 
-Las aplicaciones que agrega a una página en una carpeta se organizan de izquierda a derecha, según el orden especificado en la lista. Si agrega más aplicaciones que las que caben en una página, se moverán a una página subsiguiente.
+Las aplicaciones que agrega a una página en una carpeta se organizan de izquierda a derecha, según el orden especificado en la lista. Si agrega más aplicaciones que las que caben en una página, se mueven a una página posterior.
 
-1. Escriba el **nombre de la carpeta**. Este aparecerá en el dispositivo de los usuarios.
+1. Escriba el **nombre de la carpeta**. Este nombre aparece en el dispositivo de los usuarios.
 2. Elija **Agregar** para crear una página en la carpeta. Puede agregar hasta 20 páginas.
-3. En la hoja **Agregar fila**, escriba un nombre para la página. Este se usa como referencia en el portal de Intune y *no se muestra* en el dispositivo iOS.
-3. Escriba el **nombre de la aplicación**. Este se usa como referencia en el portal de Intune y *no se muestra* en el dispositivo iOS.
+3. En la hoja **Agregar fila**, escriba un nombre para la página. Este nombre se usa como referencia en el portal de Intune y *no se muestra* en el dispositivo iOS.
+3. Escriba el **nombre de la aplicación**. Este nombre se usa como referencia en el portal de Intune y *no se muestra* en el dispositivo iOS.
 2. Escriba el **Identificador del lote de aplicaciones** de la aplicación que quiere mostrar. Consulte **Cómo agregar una aplicación a la lista** para obtener ayuda.
 3. Seleccione **Agregar**. Puede agregar hasta 60 elementos.
 4. Cuando haya terminado, haga clic en **Aceptar**.
@@ -144,3 +141,6 @@ En esta lista se muestra el identificador de lote de algunas aplicaciones iOS co
 |Clima|com.apple.weather|
 
 
+## <a name="next-steps"></a>Pasos siguientes
+
+Ahora puede asignar el perfil de dispositivo a los grupos que elija. Para obtener más información, vea [Asignación de perfiles de dispositivo](device-profile-assign.md).

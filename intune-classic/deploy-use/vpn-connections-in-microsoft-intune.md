@@ -1,5 +1,5 @@
 ---
-title: Conexiones VPN | Microsoft Docs
+title: Conexiones VPN
 description: "Use los perfiles de VPN para implementar la configuración de VPN para los usuarios y dispositivos de su organización."
 keywords: 
 author: lleonard-msft
@@ -14,15 +14,12 @@ ms.assetid: abc57093-7351-408f-9f41-a30877f96f73
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 51096dedbc29726b2622e0a156b0d2516522e497
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e1498cb88fe99129a5ee7f24b618f78fefcf42a6
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="vpn-connections-in-microsoft-intune"></a>VPN connections in Microsoft Intune (Conexiones VPN en Microsoft Intune)
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -168,9 +165,7 @@ Puede configurar la VPN a petición para dispositivos iOS 8.0 y versiones poster
 3. Opcional: proporcione un sondeo de cadena de dirección URL, que es una dirección URL que usa la regla de prueba. Si el dispositivo en el que está instalado este perfil puede acceder a esta dirección URL sin redirección, se establecerá la VPN y el dispositivo se conectará a la dirección URL de destino. El usuario no verá el sitio de sondeo de cadena de dirección URL. Un ejemplo de un sondeo de cadena de dirección URL es la dirección de un servidor web de auditoría que comprueba el cumplimiento del dispositivo antes de conectarse a la VPN. Otra posibilidad es que la dirección URL comprueba la capacidad de la VPN para conectarse a un sitio, antes de conectar el dispositivo a la dirección URL de destino a través de VPN.
 4. Elija una de las acciones siguientes:
   - **Connect**
-  - **Evaluar conexión**, que tiene tres configuraciones a. **Acción del dominio**: elija **Conectarse si es necesario** o **No conectarse nunca**
-     b. **Lista de dominios separados por comas**: configure esta opción solo si elige una **acción del dominio** de **Conectarse si es necesario**
-     c. **Sondeo de cadena de dirección URL requerida**: dirección URL HTTP o HTTPS (preferido), como *https://vpntestprobe.contoso.com*. La regla comprueba si hay una respuesta desde esta dirección. Si no la hay y la **acción del dominio** es **Conectarse si es necesario**, se activará la VPN.
+  - **Evaluar conexión**, que tiene tres configuraciones a. **Acción del dominio**: pulse **Conectarse si es necesario** o **No conectarse nunca** b. **Lista de dominios separados por comas**: configure esta opción solo si elige una **acción del dominio** de **Conectarse si es necesario** c. **Sondeo de cadena de dirección URL requerida**: dirección URL HTTP o HTTPS (preferido), como *https://vpntestprobe.contoso.com*. La regla comprueba si hay una respuesta desde esta dirección. Si no la hay y la **acción del dominio** es **Conectarse si es necesario**, se activará la VPN.
       
      > [!TIP]
      >
@@ -195,4 +190,3 @@ Las reglas específicas de dominio se evalúan antes que las reglas de todos los
 Tras una implementación correcta, los usuarios verán el nombre de la conexión VPN especificado en la lista de conexiones VPN en sus dispositivos.
 
 En el área de trabajo **Directiva** de la página **General** , un resumen de estado y las alertas identifican los problemas de la directiva que requieren su atención. Además, aparece un resumen de estado en el área de trabajo Panel.
-

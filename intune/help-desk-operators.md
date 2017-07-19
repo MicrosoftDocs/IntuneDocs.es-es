@@ -1,12 +1,12 @@
 ---
-title: "Portal de solución de problemas del departamento de soporte técnico | Microsoft Docs"
-titleSuffix: Intune Azure preview
+title: "Portal de solución de problemas del departamento de soporte técnico"
+titleSuffix: Intune on Azure
 description: "El personal del departamento de soporte técnico usa el portal de solución de problemas para solucionar los problemas técnicos de los usuarios"
 keywords: 
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
-ms.date: 03/18/2017
+ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,44 +14,64 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: e6bc22ccaf8c2c98cd67667f8fe30071ccdbc714
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
+ms.openlocfilehash: 7a61c3703cd1016ef63c8baa371c3a21dca127fc
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
 # <a name="help-users-with-the-troubleshooting-portal-in-microsoft-intune"></a>Ayude a los usuarios con el portal de solución de problemas en Microsoft Intune
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-El portal de solución de problemas permite que los operadores del departamento de soporte técnico y los administradores de Intune vean a los usuarios y sus dispositivos y, además, realicen tareas para solucionar problemas técnicos de Intune.
+El portal de solución de problemas permite que los operadores del departamento de soporte técnico y los administradores de Intune vean la información de usuario para solucionar las solicitudes de ayuda del usuario. Las organizaciones que incluyen los operadores del departamento de soporte técnico en su personal pueden asignar el **operador del departamento de soporte técnico** a un grupo de usuarios, que pueden usar después la hoja de solución de problemas para ayudar a los usuarios.
+
+Por ejemplo, cuando un usuario se pone en contacto con el soporte técnico por un problema técnico con Intune, el operador del departamento de soporte técnico escribe el nombre del usuario. Intune muestra la información pertinente que puede ayudar a resolver muchos problemas de nivel 1 como el estado del usuario, errores en la instalación de aplicaciones o problemas de cumplimiento. Los problemas que se tratan pueden incluir:
+- El dispositivo no responde
+-   El dispositivo no obtiene una configuración Wi-Fi o VPN
+-   Error de instalación de la aplicación
+
 
 ## <a name="add-help-desk-operators"></a>Incorporación de operadores del departamento de soporte técnico
-Un administrador de Intune puede asignar permiso de operador del departamento de soporte técnico a los usuarios. Luego, los usuarios del departamento de soporte técnico pueden ver el portal de Intune pero no pueden ver ni realizar tareas administrativas fuera de la carga de trabajo de la solución de problemas.
+Un administrador de Intune puede asignar permiso de operador del departamento de soporte técnico a los usuarios de dos maneras:
+- Asignar el rol **Operador del departamento de soporte técnico** integrado
+- Crear y asignar un rol personalizado
 
-1. Como administrador de Intune, inicie sesión en [Azure Portal](https:portal.azure.com), seleccione **Más servicios** > **Supervisión y administración** > **Intune**.
-2. En la hoja de navegación de la izquierda, seleccione **Roles de Intune**.
-3. En la carga de trabajo **Roles de Intune**, seleccione **Operador del departamento de soporte técnico** y, luego, seleccione **Asignar**.
-4. Escriba un **nombre de la asignación** (obligatorio), una **descripción de la asignación** (opcional) y, luego, asigne los **miembros (grupos)** y el **ámbito (grupos)**.
-5. Los miembros del rol Operador del departamento de soporte técnico ahora pueden usar el portal de solución de problemas.
+## <a name="assign-help-desk-operator-role"></a>Asignar el rol de operador del departamento de soporte técnico
+Como administrador de Intune, puede asignar el rol Operador del departamento de soporte técnico a un grupo de usuarios. Los miembros de ese grupo pueden usar el portal de administración. Cada operador del departamento de soporte técnico debe tener una licencia de Intune para tener acceso al portal de Intune. Obtenga información sobre cómo [asignar licencias de Intune](licenses-assign.md).
+
+1. Como administrador de Intune, inicie sesión en el portal de Intune y seleccione **Roles de Intune**.
+2. En la carga de trabajo **Roles de Intune**, seleccione **Operador del departamento de soporte técnico** > **Asignaciones** y, luego, seleccione **Asignar**.
+  ![Captura de pantalla del portal de Intune que muestra los roles de Intune resaltados y una lista de roles integrados incluido el Operador del departamento de soporte técnico con Asignaciones resaltado y un cuadro rojo alrededor de Asignar](./media/help-desk-user-assign.png)
+3. Escriba un **nombre de la asignación** (obligatorio), una **descripción de la asignación** (opcional) y, luego, asigne los **miembros (grupos)** y el **ámbito (grupos)**.
+4. Los miembros del rol Operador del departamento de soporte técnico ahora pueden usar el portal de solución de problemas.
 
 Para más información sobre los roles de Intune, consulte [Roles de Intune (RBAC)](role-based-access-control.md).
+
+## <a name="create-a-custom-role-for-troubleshooting"></a>Crear un rol personalizado para la solución de problemas
+Como administrador de Intune, puede crear un rol personalizado que permita a los usuarios usar el portal de solución de problemas con permisos que se adapten a las necesidades de su organización. Para más información sobre los roles de Intune, consulte [Roles de Intune (RBAC)](role-based-access-control.md).
+
+![Captura de pantalla del portal de Intune que muestra los roles de Intune resaltados y una lista de roles integrados incluido el Operador del departamento de soporte técnico](./media/help-desk-user-add.png)
+
+Para usar la consola de Intune para obtener una vista del departamento de soporte técnico, un rol del departamento de soporte técnico personalizado debe tener los permisos siguientes:
+- MobileApps: Lectura
+- ManagedApps: Lectura
+- ManagedDevices: Lectura
+- Organización: Lectura
 
 ## <a name="access-the-troubleshooting-portal"></a>Acceso al portal de solución de problemas
 
 El personal del departamento de soporte técnico y los administradores de Intune pueden acceder al portal de solución de problemas de dos formas:
-- En [Azure Portal](https://portal.azure.com), seleccione **Más servicios** > **Supervisión y administración** > **Intune** y, luego, en la hoja de navegación de la izquierda, seleccione **Solución de problemas**. Otras cargas de trabajo están visibles en la hoja de navegación izquierda, pero no están disponibles.
+- Abra [http://aka.ms/intunetroubleshooting](http://aka.ms/intunetroubleshooting) en un explorador web.
+- En el portal de Intune, vaya a **Ayuda y soporte técnico** > **Solucionar problemas**.
 
 ![Captura de pantalla de la carga de trabajo Solución de problemas de Intune con el vínculo Seleccionar usuario](media/help-desk-user.png)
-- Abra [http://aka.ms/intunetroubleshooting](http://aka.ms/intunetroubleshooting) en un explorador web. Está visible solo el portal de solución de problemas.
 
 ## <a name="use-the-troubleshooting-portal"></a>Uso del portal de solución de problemas
 
-En el portal de solución de problemas, puede seleccionar **Seleccionar usuario** para ver la información de usuarios. La información de usuario puede ayudarle a comprender el estado actual de los usuarios y sus dispositivos. El portal de solución de problemas muestra los siguientes detalles de dispositivos y usuarios de Intune:
-- Información de cuenta de usuario
-- Pertenencia a grupos de usuarios
-- Detalles del dispositivo
-
-Los usuarios del departamento de soporte técnico realizan tareas remotas en dispositivos como **Bloqueo remoto**.
-
+En el portal de solución de problemas, puede elegir la opción **Seleccionar usuario** para ver la información de usuarios. La información de usuario puede ayudarle a comprender el estado actual de los usuarios y sus dispositivos. En el portal de solución de problemas se muestran los siguientes detalles:
+- **Estado del inquilino**
+- **Estado del usuario**
+- **Dispositivos** y acciones de dispositivo
+- **Pertenencia a grupos**
+- **Estado de protección de la aplicación**

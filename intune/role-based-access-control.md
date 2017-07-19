@@ -1,12 +1,12 @@
 ---
-title: Roles de Intune (RBAC) para Microsoft Intune
+title: RBAC con Intune
 titleSuffix: Intune Azure preview
 description: "Versión preliminar de Intune Azure: aprenda cómo RBAC le permite controlar quién puede realizar acciones y efectuar cambios."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 04/26/2017
+ms.date: 06/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,161 +15,119 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9a6dfde1d02313e51f59d4fd101a175f347f6cec
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: e2302b0e53254b945215aadbb13107c85f345412
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="role-based-administration-control-rbac-with-intune"></a>Control de administración basada en roles (RBAC) con Intune
 
-# <a name="intune-roles-rbac-for-microsoft-intune"></a>Roles de Intune (RBAC) para Microsoft Intune
+RBAC ayuda a controlar quién puede realizar diversas tareas de Intune dentro de su organización y a quién se aplican dichas tareas. Puede usar los roles integrados que abarcan algunos escenarios de Intune comunes, o crear los suyos propios. Un rol se define mediante:
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
-
-En términos sencillo, los **roles** (o RBAC) de Intune le ayudan a controlar quién puede realizar varias acciones de Intune y a quién se aplican esas acciones. Puede usar los roles integrados que abarcan algunos escenarios de Intune comunes, o crear los suyos propios.
-
-Un rol se define mediante:
-
-- **Definición**: el nombre de un rol y los permisos que configura.
-- **Miembros**: el usuario o el grupo de usuarios a los que se concederán esos permisos.
-- **Ámbito**: los usuarios o dispositivos que puede administrar una persona determinada (el miembro).
+- **Definición de roles**: el nombre de un rol, los recursos que administra y los permisos concedidos para cada recurso.
+- **Miembros**: los grupos de usuarios a los que se conceden los permisos.
+- **Ámbito**: los grupos de usuarios o dispositivos que los miembros pueden administrar.
 - **Asignación**: una vez configurados la definición, los miembros y el ámbito, se asigna el rol.
+
+![Ejemplo de RBAC en Intune](./media/intune-rbac-1.PNG)
+
+Con el nuevo portal de Intune, **Azure Active Directory (Azure AD)** ofrece dos roles de directorio que se pueden usar con Intune. A estos roles se les conceden permisos completos para realizar todas las actividades en Intune:
+
+- **Administrador global:** los usuarios con este rol tienen acceso a todas las características administrativas de Azure AD, así como a los servicios que permiten la federación con Azure AD, como Exchange Online, SharePoint Online y Skype Empresarial Online. La persona que se suscribe al inquilino de Azure AD se convierte en administrador global. Solo los administradores globales pueden asignar otros roles de administrador de Azure AD. Puede haber más de un administrador global en tu organización. Los administradores globales pueden restablecer la contraseña de cualquier usuario y de todos los administradores.
+
+- **Administrador del servicio de Intune:** los usuarios con este rol tienen permisos globales en Intune cuando el servicio está presente. Además, este rol ofrece la capacidad de administrar usuarios y dispositivos y de crear y administrar grupos.
+
+- **Administrador de acceso condicional:** los usuarios con este rol solo tienen permisos para ver, crear, modificar y eliminar directivas de acceso condicional.
+
+    > [!IMPORTANT]
+    > El rol de administrador del servicio de Intune no proporciona la capacidad para administrar la configuración de acceso condicional de Azure AD.
+
+    > [!TIP]
+    > Intune también muestra tres extensiones de Azure AD: **usuarios**, **grupos** y **acceso condicional** que se controlan mediante RBAC en Azure AD. Además, el **administrador de cuentas de usuario** solo realiza actividades de usuario o grupo de AAD y no tiene permisos completos para realizar todas las actividades en Intune. Consulte [RBAC con Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) para obtener información más detallada.
+
+## <a name="roles-created-in-the-intune-classic-console"></a>Roles creados en la consola clásica de Intune
+
+Solo los usuarios con roles de **administradores del servicio** de Intune con permisos "completos" pueden migrarse desde la consola clásica de Intune a Intune en Azure. Debe reasignar a los usuarios con roles de **administradores del servicio** de Intune permisos de "Solo lectura" o "Departamento de soporte técnico" para acceder a los roles de Intune en Azure Portal y eliminarlos del portal clásico.
+
+> [!IMPORTANT]
+> Es posible que necesite mantener el acceso del administrador del servicio de Intune en la consola clásica en caso de que los administradores todavía necesiten acceder para administrar equipos con Intune.
 
 ## <a name="built-in-roles"></a>Roles integrados
 
-Los siguientes roles están integrados en Intune y puede personalizarlos o asignarlos a grupos sin necesidad de ninguna otra configuración.
+Los siguientes roles están integrados en Intune y puede asignarlos a grupos sin necesidad de realizar ninguna configuración adicional:
 
-- **Administrador de Intune**: tiene permisos totales para todas las operaciones de Intune.
-- **Administrador de aplicaciones**: administrar e implementa aplicaciones y perfiles.
-- **Administrador de directivas de configuración**: administrar e implementa perfiles y opciones de configuración.
-- **Departamento de soporte técnico**: realiza tareas remotas y ve información de usuarios y dispositivos.
-- **Operador de solo lectura**: ve información en el portal de Intune sin posibilidad de realizar cambios.
+- **Departamento de soporte técnico**: realiza tareas remotas relacionadas con usuarios y dispositivos y puede asignar aplicaciones o directivas a usuarios o dispositivos. 
+- **Administrador de directivas y perfiles**: administra la directiva de cumplimiento, los perfiles de configuración, la inscripción de Apple y los identificadores de dispositivos corporativos.
+- **Operador de solo lectura**: ve información sobre usuarios, dispositivos, inscripciones, configuraciones y aplicaciones, pero no puede realizar ningún cambio en Intune.
+- **Administrador de aplicaciones**: administra las aplicaciones móviles y administradas y puede leer la información del dispositivo.
 
+### <a name="to-assign-a-built-in-role"></a>Para asignar un rol integrado
 
-## <a name="custom-roles"></a>Roles personalizados
+1. En **Roles de Intune**, elija el rol integrado que desea asignar.
 
-Si ninguno de los roles integrados se adapta a sus necesidades, puede crear uno propio. Para ello, elija valores de configuración que abarquen muchas de las funcionalidades de Intune. Puede ver una lista de los valores de configuración disponibles más adelante en este tema.
+2. En la hoja <*nombre del rol*> - **Propiedades**, elija **Administrar** y luego **Asignaciones**.
 
-### <a name="example"></a>Ejemplo
+    > [!NOTE] 
+    > No se pueden eliminar ni editar los roles integrados
+    
+3. En la hoja de roles personalizados, elija **Asignar**.
 
-Contrata a un nuevo administrador de TI que se encargará de implementar y administrar aplicaciones para los usuarios de la oficina de Londres. Los usuarios están en un grupo de Azure AD denominado **Londres**. Quiere asegurarse de que el administrador de TI no pueda implementar aplicaciones para los usuarios de ninguna otra oficina. Realiza las siguientes acciones:
-
-- Asigna el rol integrado **Administrador de aplicaciones** con las siguientes propiedades:
-    - **Miembros**: seleccione un grupo que contenga el administrador de TI que implementará las aplicaciones.
-    - **Ámbito**: seleccione el grupo de Azure AD **Londres**.
-
-    >[!IMPORTANT]
-    >Para crear, editar o asignar roles, la cuenta debe tener uno de los siguientes permisos en Azure AD:
-    >- **Administrador de AAD global**
-    >- **Administrador del servicio Intune**
-
-### <a name="how-to-create-a-custom-role"></a>Creación de un rol personalizado
-
-1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
-3. En la hoja **Intune**, elija **Intune roles** (Roles de Intune).
-![Carga de trabajo de control de acceso](./media/axxess-control.png)
-1. En la hoja **Roles** de la carga de trabajo **Control de acceso**, elija **Agregar personalizado**.
-2. En la hoja **Agregar rol personalizado**, escriba un nombre y una descripción para el nuevo rol y luego haga clic en **Permisos**.
-3. En la hoja **Permisos**, elija los permisos que quiere usar con este rol. Puede usar como ayuda la lista de referencia de configuración de roles que aparece más adelante en este tema.
-4. Cuando haya terminado, haga clic en **Aceptar**.
-5. En la hoja **Agregar rol de personalizado**, haga clic en **Crear**.
-
-El nuevo rol se muestra en la lista de la hoja **Roles**.
-
-## <a name="how-to-assign-a-role"></a>Asignación de un rol
-
-1. En la hoja **Roles** de la carga de trabajo **Control de acceso**, elija el rol personalizado integrado que quiere asignar.
-2. En la hoja <*nombre del rol*> - **Propiedades**, elija **Administrar** > **Asignaciones**. En esta hoja, también puede editar o eliminar roles existentes.
-3. En la siguiente hoja, elija **Asignar**.
 4. En la hoja **Asignaciones de roles**, escriba un **nombre** y una **descripción** opcional para la asignación y luego elija lo siguiente:
     - **Miembros**: seleccione un grupo que contenga el usuario al que quiere conceder los permisos.
     - **Ámbito** seleccione un grupo que contenga los usuarios que tendrá permiso para administrar el miembro anterior.
-5. Cuando haya terminado, haga clic en **Aceptar**.
+<br></br>
+5. Cuando haya terminado, haga clic en **Aceptar**. La nueva asignación se muestra en la lista de asignaciones.
 
-La nueva asignación se muestra en la lista de asignaciones.
+### <a name="intune-rbac-table"></a>Tabla de RBAC en Intune
 
-## <a name="custom-role-settings-reference"></a>Referencia de la configuración de roles personalizados
+- Descargue la [tabla de RBAC en Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) para ver más detalles sobre lo que puede hacer cada rol.
 
-Al crear un rol personalizado, puede configurar uno o varios de los siguientes valores:
+## <a name="custom-roles"></a>Roles personalizados
 
-### <a name="device-configurations"></a>Configuraciones de dispositivo
+Puede crear un rol personalizado que incluye los permisos necesarios para una función de trabajo específica. Por ejemplo, si un grupo del departamento de TI administra las aplicaciones, las directivas y los perfiles de configuración, puede agregar todos los permisos juntos en un rol personalizado.
 
-|||
-|-|-|
-|**Asignar**|Asignar perfiles de dispositivo a grupos.|
-|**Crear**|Crear perfiles de dispositivo.|
-|**Eliminar**|Eliminar perfiles de dispositivo.|
-|**Lectura**|Leer perfiles de dispositivo y sus propiedades.|
-|**Actualizar**|Actualizar los perfiles de dispositivo existentes.|
+> [!IMPORTANT]
+> Para crear, editar o asignar roles, la cuenta debe tener uno de los siguientes permisos en Azure AD:
+> - **Administrador global**
+> - **Administrador del servicio de Intune**
 
-### <a name="managed-apps"></a>Aplicaciones administradas
+### <a name="to-create-a-custom-role"></a>Para crear un rol personalizado
 
-|||
-|-|-|
-|**Asignar**|Asignar aplicaciones administradas a grupos.|
-|**Crear**|Agregar nuevas aplicaciones administradas a Intune.|
-|**Eliminar**|Eliminar aplicaciones administradas.|
-|**Lectura**|Leer aplicaciones administradas y sus propiedades.|
-|**Actualizar**|Actualizar aplicaciones administradas existentes.|
-|**Eliminación de datos**|Borrar aplicaciones administradas de dispositivos.|
+1. Inicie sesión en [Azure Portal](https://portal.azure.com) con las credenciales de Intune.
 
-### <a name="managed-devices"></a>Dispositivos administrados
+2. Elija **Más servicios** en el menú izquierdo y, luego, escriba **Intune** en el filtro del cuadro de texto.
 
-|||
-|-|-|
-|**Eliminar**|Eliminar dispositivos administrados de Intune.|
-|**Lectura**|Ver información sobre los dispositivos administrados en el portal de Intune.|
-|**Actualizar**|Actualizar información sobre dispositivos administrados.|
+3. Elija **Intune** y, cuando se abra el panel de Intune, seleccione **Roles de Intune**.
 
-### <a name="mobile-apps"></a>Aplicaciones móviles
+4. En la hoja **Roles de Intune**, elija **Roles de Intune** y después **Agregar personalizado**.
 
-|||
-|-|-|
-|**Asignar**|Asignar aplicaciones móviles a grupos.|
-|**Crear**|Agregar nuevas aplicaciones móviles a Intune.|
-|**Eliminar**|Eliminar aplicaciones móviles.|
-|**Lectura**|Leer aplicaciones móviles y sus propiedades.|
-|**Actualizar**|Actualizar aplicaciones móviles existentes.|
+5. En la hoja **Agregar rol personalizado**, escriba un nombre y una descripción para el nuevo rol y luego haga clic en **Permisos**.
 
-### <a name="organization"></a>Organización
+3. En la hoja **Permisos**, elija los permisos que quiere usar con este rol. Use la [tabla de RBAC en Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a) para ayudarle a decidir qué permisos desea aplicar.
 
-|||
-|-|-|
-|**Lectura**|Leer configuración de inquilino.|
-|**Actualizar**|Actualizar configuración de inquilino.|
+4. Cuando termine, elija **Aceptar**.
 
-### <a name="remote-tasks"></a>Tareas remotas
+5. En la hoja **Agregar rol de personalizado**, haga clic en **Crear**. El nuevo rol se muestra en la lista de la hoja **Roles de Intune**.
 
-|||
-|-|-|
-|**Omitir bloqueo de activación**|Quitar el bloqueo de activación de un dispositivo iOS sin el id. de Apple y la contraseña del usuario. |
-|**Deshabilitar modo de pérdida**|Deshabilitar el modo de pérdida. El modo de pérdida le permite especificar un mensaje y un número de teléfono que se mostrarán en la pantalla de bloqueo del dispositivo.|
-|**Habilitar modo de pérdida**|Habilitar el modo de pérdida. El modo de pérdida le permite especificar un mensaje y un número de teléfono que se mostrarán en la pantalla de bloqueo del dispositivo.|
-|**Buscar dispositivo**|-|
-|**Reiniciar ahora**|Hace que el dispositivo se reinicie.|
-|**Bloqueo remoto**|Bloquea un dispositivo. El propietario del dispositivo debe usar su contraseña para desbloquearlo.|
-|**Restablecer código acceso**|Genera una nueva contraseña para el dispositivo que se mostrará en la <device name> hoja de información general.|
-|**Retirar**|Quita solo los datos de empresa administrados por Intune. No se quitan datos personales del dispositivo.|
-|**Eliminación de datos**|Devuelve el dispositivo a su configuración predeterminada.|
+### <a name="to-assign-a-custom-role"></a>Para asignar un rol personalizado
 
+1. En **Roles de Intune**, elija el rol personalizado que desea asignar.
 
+2. En la hoja <*nombre del rol*> - **Propiedades**, elija **Administrar** y luego **Asignaciones**. En esta hoja, también puede editar o eliminar roles existentes.
 
-### <a name="telecom-expenses"></a>Gastos de telecomunicaciones
+3. En la hoja de roles personalizados, elija **Asignar**.
 
-|||
-|-|-|
-|**Lectura**|Leer la configuración de administración de gastos de telecomunicaciones (TEM).|
-|**Actualizar**|Actualizar la configuración de administración de gastos de telecomunicaciones (TEM).|
+4. En la hoja **Asignaciones de roles**, escriba un **nombre** y una **descripción** opcional para la asignación y luego elija lo siguiente:
+    - **Miembros**: seleccione un grupo que contenga el usuario al que quiere conceder los permisos.
+    - **Ámbito** seleccione un grupo que contenga los usuarios que tendrá permiso para administrar el miembro anterior.
+<br></br>
+5. Cuando haya terminado, haga clic en **Aceptar**. La nueva asignación se muestra en la lista de asignaciones.
 
-### <a name="terms-and-conditions"></a>términos y condiciones
+## <a name="next-steps"></a>Pasos siguientes
 
-|||
-|-|-|
-|**Asignar**|Asignar términos y condiciones a grupos.|
-|**Crear**|Crear configuración de términos y condiciones.|
-|**Eliminar**|Eliminar la configuración de términos y condiciones.|
-|**Lectura**|Leer la configuración de términos y condiciones en el portal de Intune.|
-|**Actualizar**|Actualizar la configuración de términos y condiciones existente.|
+[Use el rol Departamento de soporte técnico de Intune en el portal de solución de problemas](help-desk-operators.md)
+
+## <a name="see-also"></a>Consulte también
+
+[Asignación de roles mediante Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)

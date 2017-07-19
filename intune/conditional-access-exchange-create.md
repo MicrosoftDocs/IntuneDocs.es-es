@@ -1,7 +1,7 @@
 ---
 title: "Creación y asignación de directiva de acceso condicional de Exchange local"
-titleSuffix: Intune Azure preview
-description: "Versión preliminar de Intune Azure: cómo configurar el acceso condicional para Exchange local y Exchange Online heredado dedicado en Intune"
+titleSuffix: Intune on Azure
+description: "Configuración del acceso condicional en Exchange local y en el entorno de Exchange Online heredado dedicado en Intune"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -14,18 +14,15 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 2f1775eb98d6518ce35dcc38852e167c5eada616
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: b72dbe27b52be187a907392aea5a1803fb36e4d3
+ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/03/2017
 ---
+# <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>Creación y asignación de una directiva de acceso condicional para Exchange local y el entorno de Exchange Online dedicado heredado en Microsoft Intune
 
-# <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune-azure-preview"></a>Creación y asignación de una directiva de acceso condicional para Exchange local y Exchange Online heredado dedicado en la versión preliminar de Azure Microsoft Intune
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Este tema le guiará en el proceso de configuración del acceso condicional para Exchange local basado en el cumplimiento de dispositivos.
 
@@ -85,7 +82,7 @@ La aplicación **Correo** nativa en Windows 8.1 y versiones posteriores (cuando 
 
 4. Elija **Intune** y aparecerá el **panel de Intune**.
 
-5.  Elija **Acceso condicional** y luego
+5. Pulse **Acceso local**, después pulse
 
 6. La hoja **Local** muestra el estado de la directiva de acceso condicional y los dispositivos que se ven afectados por ella.
 
@@ -93,8 +90,8 @@ La aplicación **Correo** nativa en Windows 8.1 y versiones posteriores (cuando 
 
 8. En la hoja **Acceso local a Exchange**, elija **Sí** para el control de acceso local a Exchange.
 
-      > [!NOTE]
-      > Si no ha configurado el conector de Exchange Active Sync local, esta opción se deshabilitará.  Primero debe instalar y configurar este conector antes de habilitar el acceso condicional para Exchange local. Para más información, consulte [Install the Intune On-premises Exchange Connector](exchange-connector-install.md) (Instalación del conector de Exchange local para Intune).
+    > [!NOTE]
+    > Si no ha configurado el conector de Exchange Active Sync local, esta opción se deshabilitará.  Primero debe instalar y configurar este conector antes de habilitar el acceso condicional para Exchange local. Para más información, consulte [Install the Intune On-premises Exchange Connector](exchange-connector-install.md) (Instalación del conector de Exchange local para Intune).
 
 9. En **Asignación**, elija **Grupos incluidos**.  Use el grupo de usuarios de seguridad que debería tener aplicado el acceso condicional. Para ello, es necesario que los usuarios hayan inscrito sus dispositivos en Intune y que satisfagan los perfiles de cumplimiento.
 
@@ -114,12 +111,12 @@ La aplicación **Correo** nativa en Windows 8.1 y versiones posteriores (cuando 
 
 15. En la hoja **Local**, haga clic en **Guardar** para guardar la directiva de acceso condicional.
 
-## <a name="create-azure-ad-conditional-access-policies-in-intune-azure-preview"></a>Creación de directivas de acceso condicional de Azure AD en la versión preliminar de Intune Azure
+## <a name="create-azure-ad-conditional-access-policies-in-intune"></a>Creación de directivas de acceso condicional de Azure AD en Intune
 
-A partir de la versión 1704 de Intune, los administradores pueden crear directivas de acceso condicional de Azure AD desde la vista preliminar de Intune Azure, que facilita el proceso para que no sea necesario cambiar entre las cargas de trabajo de Azure y Intune.
+A partir de la versión 1704 de Intune, los administradores pueden crear directivas de acceso condicional de Azure AD desde el portal de Azure de Intune, lo que facilita el proceso ya que no es necesario cambiar entre las cargas de trabajo de Azure e Intune.
 
 > [!IMPORTANT]
-> Debe disponer de una licencia premium de Azure AD para crear directivas de acceso condicional de Azure AD desde el portal de la versión preliminar de Intune Azure.
+> Para crear directivas de acceso condicional de Azure AD desde el portal de Azure de Intune, debe disponer de una licencia de Azure AD Premium.
 
 ### <a name="to-create-azure-ad-conditional-access-policy"></a>Para crear una directiva de acceso condicional de Azure AD
 

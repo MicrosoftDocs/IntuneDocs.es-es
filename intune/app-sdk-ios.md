@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 manager: angrobe
 ms.author: mtillman
-ms.date: 12/15/2016
+ms.date: 06/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
-ms.openlocfilehash: 9fad536aab83f0e8ae12aff8cab44943ae1ac82d
-ms.contentlocale: es-es
-ms.lasthandoff: 06/08/2017
-
-
+ms.openlocfilehash: 0fb1d52a97a03609ddefb94caf707bd8cbee8f12
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guía para desarrolladores acerca del SDK de aplicaciones de Microsoft Intune para iOS
 
 > [!NOTE]
@@ -460,6 +457,17 @@ MAMTelemetryDisabled| Boolean| Especifica si el SDK no enviará los datos de tel
 > [!NOTE]
 > Si la aplicación se va a publicar en la Tienda de aplicaciones, `MAMPolicyRequired` debe establecerse en "NO", según los estándares de la Tienda de aplicaciones.
 
+## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>Habilitar la configuración de destino de MAM para las aplicaciones iOS
+La configuración de destino de MAM permite que una aplicación reciba datos de configuración mediante Intune App SDK. El formato y las variantes de estos datos deben definirse y comunicarse a los clientes de Intune mediante el desarrollador o el propietario de la aplicación. Los administradores de Intune pueden dirigirse e implementar los datos de configuración mediante la consola de Azure de Intune. A partir de Intune App SDK para iOS (v 7.0.1), a las aplicaciones que estén participando en la configuración de destino de MAM se les pueden proporcionar datos de la configuración de destino de MAM mediante el servicio MAM. Los datos de configuración de la aplicación se insertan a través del servicio MAM directamente en la aplicación, y no a través del canal de MDM. Intune App SDK proporciona una clase para tener acceso a los datos recuperados de estas consolas. Considere lo siguiente como requisitos previos: <br>
+* La aplicación necesita inscribirse en MAM-WE antes de que tenga acceso a la interfaz de usuario de la configuración de destino de MAM. Para obtener más información sobre MAM-WE, vea [Directiva de protección de aplicaciones sin la inscripción de dispositivos en la guía de Intune App SDK](https://docs.microsoft.com/en-us/intune/app-sdk-ios#app-protection-policy-without-device-enrollment).
+* Incluya ```IntuneMAMAppConfigManager.h``` en el archivo de origen de la aplicación.
+* Llame a ```[[IntuneMAMAppConfig instance] appConfigForIdentity:]``` para obtener el objeto de configuración de la aplicación.
+* Llame al selector adecuado en el objeto ```IntuneMAMAppConfig```. Por ejemplo, si la clave de la aplicación es una cadena, querrá usar ```stringValueForKey``` o ```allStringsForKey```. El archivo ```IntuneMAMAppConfig.h header``` trata sobre condiciones de error o valores devueltos.
+
+Para obtener más información sobre las funciones de Graph API en relación con los valores de configuración de destino de MAM, vea la [referencia sobre Graph API para la configuración de destino de MAM](https://graph.microsoft.io/en-us/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>
+
+Para obtener más información sobre cómo crear una directiva de configuración de aplicaciones de destino de MAM en iOS, vea la sección de la configuración de aplicaciones de destino de MAM en [How to use Microsoft Intune app configuration policies for iOS](https://docs.microsoft.com/en-us/intune/app-configuration-policies-use-ios) (Cómo usar las directivas de configuración de aplicaciones de Microsoft Intune para iOS).
+
 ## <a name="telemetry"></a>Telemetría
 
 De manera predeterminada, el SDK de aplicaciones de Intune para iOS registra los datos de telemetría en los siguientes eventos de uso. Estos datos se envían a Microsoft Intune.
@@ -656,4 +664,3 @@ Las compilaciones de marco y biblioteca estáticas de Intune App SDK son archivo
     cp ~/Desktop/IntuneMAM.device_only ~/Desktop/IntuneMAM.framework/IntuneMAM
     ```
     El primer comando elimina las arquitecturas de simulador del archivo DYLIB del marco. El segundo comando copia el archivo DYLIB solo de dispositivos de nuevo en el directorio del marco.
-

@@ -1,12 +1,12 @@
 ---
 title: "Configuración de notificaciones de aplicación de Intune para dispositivos iOS"
-titleSuffix: Intune Azure preview
-description: "Versión preliminar de Azure de Intune: conozca la configuración que puede usar para controlar las notificaciones de aplicaciones en dispositivos iOS."
+titleSuffix: Intune on Azure
+description: "Conozca la configuración que puede usar para controlar las notificaciones de aplicaciones en dispositivos iOS."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 07/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,37 +15,34 @@ ms.assetid: bda26d1d-2a3b-4669-adf8-a5aa7f994916
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: c64167275a2628c6a3a4e899e00c25df4c10b06b
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 36a9e9a5be9b2dc45ded1a99c7a5871780f7d9b2
+ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/05/2017
 ---
-
 # <a name="intune-app-notifications-settings-for-ios-devices"></a>Configuración de notificaciones de aplicación de Intune para dispositivos iOS
 
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Ahora configuraremos cómo las aplicaciones instaladas en un dispositivo envían notificaciones. Esta configuración admite dispositivos supervisados que ejecuten iOS 9.3 y versiones posteriores.
 
 ## <a name="configure-settings"></a>Configurar valores
 
-1. En la hoja **Características del dispositivo**, elija **Notificaciones de aplicación (solo supervisadas)**.
+1. En la hoja Características del dispositivo, pulse **Notificaciones de aplicación (solo supervisadas)**.
 2. En la hoja **Notificaciones de aplicación**, elija **Agregar** y, luego, configure los valores siguientes:
     - **App bundle ID** (Identificador del lote de aplicaciones): escriba el **Identificador del lote de aplicaciones** de la aplicación que quiere configurar. Consulte **Bundle ID reference for built-in iOS apps** (Referencia de identificador de lote para aplicaciones iOS integrada) más adelante en este tema para obtener ayuda.
-    - **App name** (Nombre de la aplicación): escriba el nombre de la aplicación que desea configurar. Esto no es muestra en el dispositivo y se usa para ayudarle a identificar la aplicación en la lista.
-    - **Publisher** (Publicador): escriba el publicador de la aplicación que desea configurar. Esto no es muestra en el dispositivo y se usa para ayudarle a identificar la aplicación en la lista.
+    - **App name** (Nombre de la aplicación): escriba el nombre de la aplicación que desea configurar. Este nombre no se muestra en el dispositivo y se usa para ayudarle a identificar la aplicación en la lista.
+    - **Publisher** (Publicador): escriba el publicador de la aplicación que desea configurar. El nombre del publicador no se muestra en el dispositivo y se usa solo para ayudarle a identificar la aplicación en la lista.
     - **Notifications** (Notificaciones): habilite o deshabilite el envío de notificaciones de la aplicación al dispositivo. Si deshabilita esta configuración, también se deshabilitan las siguientes.
-        - **Show in Notification Center** (Mostrar en centro de notificaciones): habilite esta opción para permitir que la aplicación muestre notificaciones en el centro de notificaciones del dispositivo.
-        - **Show in Lock Screen** (Mostrar en pantalla de bloqueo): habilite esta opción para ver las notificaciones de la aplicación en la pantalla de bloqueo del dispositivo.
+        - **Mostrar en Centro de notificaciones**: habilite esta opción para permitir que la aplicación muestre notificaciones en el centro de notificaciones del dispositivo.
+        - **Mostrar en pantalla de bloqueo**: habilite esta opción para ver las notificaciones de la aplicación en la pantalla de bloqueo del dispositivo.
         - **Alert type** (Tipo de alerta): seleccione el tipo de notificación que desea cuando el dispositivo se desbloquea:
             - **None** (Ninguna): no se muestra ninguna notificación.
             - **Banner** (Mensaje emergente): un mensaje emergente que muestra la notificación aparece brevemente.
             - **Modal** (Modal): se muestra la notificación y el usuario debe descartarla manualmente antes de poder continuar usando el dispositivo.
-        - **Badge on app icon** (Distintivo en el icono de aplicación): habilite esta opción para agregar un distintivo en el icono de aplicación para indicar que la aplicación envió una notificación.
-        - **Sounds** (Sonidos): habilite esta opción para reproducir un sonido cuando se entrega una notificación.
+        - **Distintivo en el icono de la aplicación**: habilite esta opción para agregar un distintivo en el icono de aplicación para indicar que la aplicación ha enviado una notificación.
+        - **Sonidos**: habilite esta opción para reproducir un sonido cuando se entrega una notificación.
 3. Siga agregando las aplicaciones que necesita. Cuando termine, elija **Aceptar**.
 4. Elija **Aceptar** hasta que vuelva a la hoja **Crear perfil** y, luego, elija **Crear**. 
 
@@ -95,3 +92,7 @@ En esta lista se muestra el identificador de lote de algunas aplicaciones iOS co
 |Wallet|com.apple.Passbook|
 |Inspección|com.apple.Bridge|
 |Clima|com.apple.weather|
+
+## <a name="next-steps"></a>Pasos siguientes
+
+Ahora puede asignar el perfil de dispositivo a los grupos que elija. Para obtener más información, vea [Asignación de perfiles de dispositivo](device-profile-assign.md).

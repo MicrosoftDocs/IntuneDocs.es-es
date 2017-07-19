@@ -5,43 +5,39 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 04/26/2017
+ms.date: 06/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 4fa3255b-9d1e-42d5-bd8b-70963dcf2d86
-searchScope:
-- User help
+searchScope: User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 9220eecc32ee27725454a48484608af5f4ea0e83
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: ae85e523a2c5b87e172a2bfc01254f87093c71b1
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Restablecer el código de acceso de un dispositivo desde el sitio web del portal de empresa
 
 Si pierde el PIN o la contraseña de un dispositivo inscrito en Intune, puede usar el [sitio web del portal de empresa](http://portal.manage.microsoft.com) para restablecerlos. Puede usar el sitio web del Portal de empresa para administrar equipos y dispositivos que haya inscrito en Intune y para realizar la mayoría de las tareas que se pueden hacer con la aplicación Portal de empresa.
 
 > [!NOTE]
-> Es posible que no vea el botón **Restablecer contraseña** en el sitio web de Portal de empresa. Si no lo hace, tendrá que ponerse en contacto con el administrador de TI para obtener soporte técnico en el sitio web de Portal de empresa.
+> Es posible que no vea el botón Restablecer el código de acceso en el sitio web del portal de empresa si usa un dispositivo corporativo inscrito. Si no lo hace, necesitará ponerse en contacto con su administrador de TI para que le restablezca el código de acceso.
 
 Para restablecer el código de acceso:
 
-1.    En el [sitio web del Portal de empresa](http://portal.manage.microsoft.com), pulse el botón __menú__ ![Pequeña imagen del botón menú, tres barras horizontales apiladas en paralelo.](/Intune/whats-new/media/CP_hamburger_menu.png), luego seleccione __Mis dispositivos__.
+1.  En el [sitio web del Portal de empresa](http://portal.manage.microsoft.com), pulse el botón __menú__ ![Pequeña imagen del botón menú, tres barras horizontales apiladas en paralelo.](/intune/media/CP_hamburger_menu.png), luego seleccione __Mis dispositivos__.
 
 2. En la página __Mis dispositivos__, seleccione el nombre del dispositivo cuyo código de acceso quiere restablecer.
 
   ![Captura de pantalla de la página Mis dispositivos con un par de dispositivos sin identificar sobre el mensaje emergente para inscribir los dispositivos que no figuran en la lista o para identificar los no identificados.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.    El dispositivo se abrirá en una ventana emergente. Seleccione el botón **Restablecer código de acceso**.
+3.  El dispositivo se abrirá en una ventana emergente. Seleccione el botón **Restablecer código de acceso**.
 
     ![Todas las opciones de un dispositivo seleccionado en el sitio web del Portal de empresa, incluidas Cambiar nombre, Quitar, Restablecer dispositivo, Restablecer código de acceso y Bloqueo remoto. ](./media/iwp-screen-with-all-options.png)
 
@@ -55,7 +51,10 @@ Para restablecer el código de acceso:
 
   Los dispositivos diferentes tienen distintos tipos de códigos de acceso.
 
-  **Android**: quita el código de acceso existente y crea un código de acceso temporal con letras y números.
+  **Android**: quita el código de acceso existente y crea un código de acceso temporal con letras y números. 
+  
+  > [!NOTE]
+  > No puede restablecer el código de acceso para los dispositivos con Android 7.0 y versiones posteriores. Debe restablecer estos dispositivos a la configuración de fábrica si ha olvidado el código de acceso.
 
   **iOS**: quita el código de acceso existente y no crea un código de acceso temporal. Si utiliza el escáner de huellas dactilares Touch ID para abrir el dispositivo o realizar compras, deberá configurarlo de nuevo.
 
@@ -70,4 +69,3 @@ Para restablecer el código de acceso:
 Para ver una notificación que confirme que la contraseña se restableció correctamente, haga clic en la marca de notificación en la parte superior derecha del sitio del portal de empresa.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
-
