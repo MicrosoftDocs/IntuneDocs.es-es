@@ -1,12 +1,6 @@
 # Descripción y exploración
 ## [Introducción a Intune](/intune/introduction-intune?toc=/intune-classic/toc.json)
 ## [Intune para educación](/intune/introduction-intune-education?toc=/intune-classic/toc.json)
-## [Suscríbase para disfrutar de una prueba gratuita](understand-explore/sign-up-for-30-day-trial-microsoft-intune.md)
-## [Evaluar MDM de Intune](understand-explore/mobile-device-management-trial-guide-microsoft-intune.md)
-### [Creación de grupos para organizar usuarios y dispositivos](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-3.md)
-### [Creación de directivas y publicación de una aplicación](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-4.md)
-### [Otras opciones y extras](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-6.md)
-### [Convertir a una suscripción de pago](understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune-step-7.md)
 ## [Preguntas más frecuentes de protección MAM y aplicación](understand-explore/mam-faq.md)
 ## [Escenarios frecuentes](/intune/common-scenarios?toc=/intune-classic/toc.json)
 
