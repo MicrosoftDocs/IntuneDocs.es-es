@@ -1,12 +1,12 @@
 ---
-title: "Introducción a Intune en la versión preliminar de Azure Portal"
-titleSuffix: Intune Azure preview
-description: "Versión preliminar de Intune Azure: conozca los conceptos básicos sobre Intune en la versión preliminar del portal de Azure y cómo puede ayudarle a administrar sus dispositivos."
+title: "Introducción a Intune en Azure Portal"
+titleSuffix: Intune on Azure
+description: "Conozca los conceptos básicos sobre Intune en Azure Portal y cómo puede ayudarle a administrar sus dispositivos\"."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 nmanager: angrobe
-ms.date: 04/24/2017
+ms.date: 06/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,35 +14,30 @@ ms.technology:
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: intune-azure
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9ff1adae93fe6873f5551cf58b1a2e89638dee85
-ms.openlocfilehash: 16d7ff50eb821e0927c3c6ea21f3cdb1257762a0
-ms.contentlocale: es-es
-ms.lasthandoff: 05/23/2017
-
-
+ms.openlocfilehash: 7549f3277c23c3951090502f2babfe7c47b0a201
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
+# <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Introducción a Microsoft Intune en Azure Portal
 
 
-# <a name="introduction-to-microsoft-intune-in-the-azure-portal-preview"></a>Introducción a Microsoft Intune en la versión preliminar del portal de Azure
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-
-[!INCLUDE[azure_preview](./includes/azure_preview.md)]
-
-Microsoft Intune está realizando la transición al portal de Azure, lo que significa que los flujos de trabajo y la funcionalidad que usa cambiarán.
-El nuevo portal le ofrece una versión preliminar de funciones nuevas y actualizadas en Azure Portal, donde puede administrar los dispositivos móviles, los equipos y las aplicaciones de su organización.
-Toda la funcionalidad de Intune se moverá finalmente a Azure, pero podrá realizar hoy mismo muchas tareas de Intune en Azure Portal. Dado que esta nueva experiencia se encuentra en versión preliminar, es posible que algunas funciones no aparezcan aún en el portal. Revise la sección de [novedades](#whats-new) para obtener más información.
+Microsoft Intune ahora está en Azure Portal, lo que significa que los flujos de trabajo y la funcionalidad que conoce han cambiado.
+El nuevo portal le ofrece una funcionalidad nueva y actualizada en Azure Portal, donde puede administrar los dispositivos móviles, los equipos y las aplicaciones de su organización.
 
 > [!IMPORTANT]
 > **¿Aún no puede ver el nuevo portal?**<br>
-> Ya hemos comenzado a implementar la versión preliminar en algunos inquilinos. Los inquilinos existentes se migrarán a la nueva experiencia a principios de 2017. Recibirá una notificación en el Centro de mensajes de Office antes de la migración de su inquilino.
+> Los inquilinos existentes se están migrando a la nueva experiencia. Se muestra una notificación en el Centro de mensajes de Office antes de la migración de su inquilino.
 >
-> Las cuentas de Intune creadas antes de enero de 2017 requerirán una migración única antes de que los flujos de trabajo de Apple Enrollment estén disponibles en Azure. Aún no se ha anunciado la programación para la migración, pero la información estará disponible tan pronto como sea posible. Se recomienda encarecidamente crear una cuenta de prueba para probar la nueva experiencia si su cuenta no tiene acceso a la versión preliminar.
+> Las cuentas de Intune creadas antes de enero de 2017 requieren una migración única antes de que los flujos de trabajo de inscripción de Apple estén disponibles en Azure. Todavía no se anuncia la programación de la migración. Si la cuenta existente no puede acceder a Azure Portal, se recomienda crear una cuenta de prueba.
+>
+> Revise la lista de posibles bloqueadores https://blogs.technet.microsoft.com/intunesupport/2017/05/17/intune-migration-blockers-for-grouping-targeting/
 
 
-Encontrará nueva documentación del producto en esta biblioteca, que se actualizará continuamente durante la versión preliminar. Si tiene sugerencias que le gustaría ver, deje sus comentarios en la sección de comentarios sobre el tema. Queremos saber su opinión.
-
-<!--- You can view the new Intune technical preview console in Azure at [portal.azure.com]. --->
+Puede encontrar información sobre el nuevo portal en esta biblioteca, la que se actualiza continuamente. Si tiene sugerencias que le gustaría ver, deje sus comentarios en la sección de comentarios sobre el tema. Queremos saber su opinión.
 
 Algunos de los aspectos destacables de la nueva experiencia son:
 
@@ -78,13 +73,13 @@ La documentación refleja el diseño del portal de Intune para que resulte más 
 ![Cargas de trabajo del portal de Azure](./media/azure-portal-workloads.png)
 
 ### <a name="introduction-and-get-started"></a>Introducción y empezar a trabajar
-Esta sección contiene información sobre [novedades](whats-new.md), [problemas conocidos](known-issues.md), [cómo obtener asistencia técnica](get-support.md) y cómo [empezar a trabajar con una prueba gratuita](free-trial-sign-up.md) de Intune.
+En esta sección se encuentra [información de introducción](introduction-intune.md) que le permite comenzar a usar Intune.
 ### <a name="plan-and-design"></a>Planeamiento y diseño
-Información para ayudarlo a [planear y diseñar](/intune-classic/plan-and-design/introduction) su entorno Intune.
+Información para ayudarlo a [planear y diseñar](/intune-classic/plan-design/introduction) su entorno Intune.
 ### <a name="device-enrollment"></a>Inscripción de dispositivos
 [Cómo administrar sus dispositivos con Intune](device-enrollment.md).
 ### <a name="device-compliance"></a>Cumplimiento de dispositivos
-[Defina un nivel de cumplimiento para sus dispositivos y, después, notifique los dispositivos que no son conformes](device-compliance.md).
+[Defina un nivel de cumplimiento para sus dispositivos y, luego, notifique los dispositivos que no son conformes](device-compliance.md).
 ### <a name="device-configuration"></a>Configuración de los dispositivos
 [Obtenga información sobre los perfiles que puede usar para configurar opciones y características en los dispositivos que administra](device-profiles.md).
 ### <a name="devices"></a>Dispositivos
@@ -108,5 +103,4 @@ Información para ayudarlo a [planear y diseñar](/intune-classic/plan-and-desig
 
 ## <a name="whats-new"></a>Novedades
 
-[Descubra las novedades de la versión preliminar](whats-new.md).
-
+[Conozca las novedades de Intune](whats-new.md).

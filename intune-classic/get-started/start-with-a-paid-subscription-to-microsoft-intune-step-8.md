@@ -14,15 +14,12 @@ ms.assetid: 5d3215e7-0a5c-44bd-afb0-aeafce98c43f
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.translationtype: Human Translation
-ms.sourcegitcommit: df3c42d8b52d1a01ddab82727e707639d5f77c16
 ms.openlocfilehash: 64c6eb58246ac3ad232c1b8ee89d12a83e7e1784
-ms.contentlocale: es-es
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 07/01/2017
 ---
-
 # <a name="enable-enrollment-for-mobile-devices"></a>Habilitar la inscripción de dispositivos móviles
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
@@ -33,8 +30,7 @@ Para configurar la administración de dispositivos móviles con Intune, primero 
 
 ## <a name="enable-device-enrollment"></a>Permitir la inscripción de dispositivos
 
-1. **Convertir Intune en la entidad de administración de dispositivos móviles**
-   En la [consola de administración de Intune](https://manage.microsoft.com/), elija **Administración** > **Administración de dispositivos móviles** y, luego, **Establecer entidad de MDM** en **Tareas**.  
+1. **Convertir Intune en la entidad de administración de dispositivos móviles** En la [consola de administración de Intune](https://manage.microsoft.com/), pulse **Administración** > **Administración de dispositivos móviles** y, después, **Establecer entidad de MDM** en **Tareas**.  
 
 2. Elija **Sí** en el cuadro de diálogo Entidad de MDM.
 
@@ -70,4 +66,3 @@ Enhorabuena. Acaba de completar el último paso de la *Guía de inicio rápido d
 
 >[!div class="step-by-step"]
 >[&larr;**Inscribir dispositivos**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)      [**Tareas posteriores a la configuración** &rarr;](.\post-configuration-tasks.md)  
-
