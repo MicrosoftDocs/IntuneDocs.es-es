@@ -1,6 +1,6 @@
 ---
 title: "Configuración básica de Intune"
-description: "El propósito de este artículo es indicar los pasos necesarios para configurar Microsoft Intune."
+description: "En este artículo se indican los pasos necesarios para configurar Microsoft Intune."
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -13,16 +13,13 @@ ms.technology:
 ms.assetid: 60cfa440-0723-4ea0-bacf-3c5d26f9a1d3
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: c3129b2a8d93e91493455da5f3e5fd1a59dd77bb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9ea12f3707b830f0e3426526a7ae91d176d6e809
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="basic-setup"></a>Configuración básica
-
-[!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
 Después de evaluar el entorno, ha llegado la hora de configurar Intune.
 
@@ -30,25 +27,23 @@ Después de evaluar el entorno, ha llegado la hora de configurar Intune.
 
 ### <a name="identity"></a>Identidad
 
-Intune exige Azure Active Directory (AAD) como proveedor de agrupaciones de identidades y de usuarios.
+Intune exige Azure Active Directory (AAD) como proveedor de agrupaciones de identidades y de usuarios. Más información acerca de:
 
--   Más información sobre los [requisitos de identidad](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview).
+-  [¿Requisitos de identidad?](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-overview#design-considerations-overview)
 
--   Más información sobre los [requisitos de sincronización de directorios](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements).
+-   [Requisitos de sincronización de directorios](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-directory-sync-requirements)
 
--   Más información sobre los [requisitos de Multi-factor Authentication](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements).
+-   [Requisitos de la autenticación multifactor (MFA)](https://docs.microsoft.com/active-directory/active-directory-hybrid-identity-design-considerations-multifactor-auth-requirements)
 
--   Más información sobre la [planeación de grupos de usuarios y dispositivos](/intune/users-permissions-add).
+-   [Planeación de grupos de usuarios y dispositivos](users-add.md)
 
--   Más información sobre [cómo crear grupos de usuarios y dispositivos](/intune/groups-get-started).
+-   [Creación de grupos de usuarios y dispositivos](groups-get-started.md)
 
-Si su organización ya está usando Office 365, es importante que Intune use el mismo entorno de Azure Active Directory.
+Si su organización ya usa Office 365, Intune debe usar el mismo entorno de Azure Active Directory.
 
 ### <a name="pki-optional"></a>PKI (opcional)
 
-Si piensa usar autenticación basada en certificados para perfiles de VPN, Wi-Fi o correo electrónico con Intune, tendrá que asegurarse de que tiene una [infraestructura PKI específica](/intune/certificates-configure) lista para crear e implementar perfiles de certificado.
-
-A continuación se ofrece más información sobre la configuración de certificados en Intune.
+Si piensa usar autenticación basada en certificados para perfiles de VPN, Wi-Fi o correo electrónico con Intune, tendrá que asegurarse de que tiene una [infraestructura PKI específica](certificates-configure.md) lista para crear e implementar perfiles de certificado. Obtenga más información sobre la configuración de certificados en Intune:
 
 -   [Cómo configurar la infraestructura de certificados para SCEP](/intune/certificates-scep-configure).
 
@@ -75,15 +70,15 @@ Para poder migrar a Intune, necesita primero una suscripción a Intune.
 
 ### <a name="task-3-set-your-mdm-authority-to-intune"></a>Tarea 3: Establecer Intune como entidad de MDM
 
-Intune puede administrarse mediante el portal de Azure o la consola de la rama actual de Configuration Manager. Salvo que tenga que integrar Intune con una implementación de la rama actual de Configuration Manager, se recomienda administrar Intune desde el [Portal Azure](https://portal.azure.com).
+Intune puede administrarse mediante el portal de Azure o la consola de la rama actual de Configuration Manager. Salvo que tenga que integrar Intune con una implementación de la rama actual de Configuration Manager, le recomendamos que administre Intune desde [Azure Portal](https://portal.azure.com).
 
-Establezca **Intune** como entidad de MDM para habilitar el Portal de Intune Azure. El uso de otra entidad de MDM permite a Intune transferir la administración de MDM a consolas de administración de Microsoft alternativas. Estos casos no son frecuentes.
+Establezca **Intune** como entidad de MDM para habilitar el portal de Intune Azure. El uso de otra entidad de MDM permite a Intune transferir la administración de MDM a consolas de administración de Microsoft alternativas. Estos casos no son frecuentes.
 
 > [!IMPORTANT]
 > Si va a transferir la administración de dispositivos móviles a Intune por primera vez, debe establecer Intune como entidad de MDM.
 
--   Aprenda a [establecer la entidad de administración de dispositivos móviles](/intune/mdm-authority-set).
+Aprenda a [establecer la entidad de administración de dispositivos móviles](mdm-authority-set.md).
 
 ## <a name="next-step"></a>Paso siguiente
 
-[Configurar las directivas de administración de dispositivos y aplicaciones](migration-guide-configure-policies.md)
+Configure las [directivas de administración de dispositivos y aplicaciones](migration-guide-configure-policies.md).

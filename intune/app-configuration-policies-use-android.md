@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/05/2017
+ms.date: 07/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f9ea697cafa0f277c176e55443250d32ca378dbb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b86d2d7f4d295ed41168c9dfdbaf8d4c253a0f75
+ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-android-for-work"></a>Uso de directivas de configuración de aplicaciones de Microsoft Intune para Android for Work
 
@@ -65,7 +65,7 @@ No asigne estas directivas directamente a usuarios y dispositivos. Asocie la dir
 
 La directiva se crea y aparece en la hoja de lista de directivas.
 
-A continuación, siga [asignando](apps-deploy.md) y [supervisando](apps-monitor.md) la aplicación como de costumbre.
+
 
 Cuando se ejecuta la aplicación asignada en un dispositivo, se ejecutará con las opciones configuradas en la directiva de configuración de aplicaciones.
 
@@ -89,3 +89,8 @@ También puede preconfigurar permisos para que las aplicaciones accedan a las ca
 8. Para asignar la directiva de configuración de aplicación, seleccione la directiva de configuración de aplicación, seleccione **Asignación** y después seleccione **Seleccionar grupos**.
 9. Seleccione los grupos de usuarios para asignar y, a continuación, elija **Seleccionar**.
 10. Elija **Guardar** para asignar la directiva.
+
+## <a name="next-steps"></a>Pasos siguientes
+
+Siga [asignando](apps-deploy.md) y [supervisando](apps-monitor.md) la aplicación como de costumbre.
+

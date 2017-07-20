@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/12/2017
+ms.date: 07/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ca51c413e3148039b05a9d05a9a511e7158c9a1c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 361777884187937632b2af02d7a7f15f0574193f
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos Android for Work en Microsoft Intune
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 07/01/2017
 ### <a name="work-profile-password"></a>Contraseña del perfil de trabajo
 - **Requerir contraseña de perfil de trabajo** (Android 7.0 y versiones posteriores con el perfil del trabajo habilitado): defina una directiva de código de acceso que se aplique solo a las aplicaciones del perfil del trabajo. De forma predeterminada, el usuario final tiene la opción de usar los dos PIN definidos por separado o de optar por combinar los dos en el más seguro de ellos.
 - **Longitud mínima de la contraseña**: escriba el número mínimo de caracteres que debe contener la contraseña de los usuarios (de **4**-**16**)
-- **Máximo de minutos de inactividad hasta que se bloquea la pantalla**: seleccione la cantidad de tiempo antes de que un dispositivo inactivo exija al usuario volver a escribir la contraseña del perfil de trabajo para ejecutar una aplicación de dicho perfil.
+- **Máximo de minutos de inactividad hasta que se bloquea la pantalla**: seleccione la cantidad de tiempo antes de que el perfil de trabajo se bloquee. El usuario deberá especificar sus credenciales para volver a obtener acceso.
 - **Número de errores de inicio de sesión antes de borrar el dispositivo**: escriba la cantidad de veces que se puede escribir una contraseña incorrecta antes de que se borre el perfil de trabajo del dispositivo.
 - **Expiración de la contraseña (días)**: escriba el número de días hasta que se deba cambiar la contraseña de un usuario final (de **1**-**255**).
 - **Tipo de contraseña obligatoria**: seleccione el tipo de contraseña que se debe establecer en el dispositivo. Elija de entre las siguientes opciones:
@@ -77,3 +77,7 @@ ms.lasthandoff: 07/01/2017
 - **Impedir la reutilización de contraseñas anteriores**: escriba la cantidad de contraseñas nuevas que se deben usar antes de que se pueda reutilizar una nueva (de **1**-**24**).
 - **Desbloqueo con huella digital**: impide que un usuario final use el escáner de huella digital del dispositivo para desbloquearlo.
 - **Smart Lock y otros agentes de confianza**: permite controlar la característica de Smart Lock en dispositivos compatibles. Esta funcionalidad del teléfono, conocida también en ocasiones como agentes de confianza, le permite deshabilitar u omitir la contraseña de la pantalla de bloqueo del dispositivo si el dispositivo está en una ubicación de confianza (por ejemplo, cuando se conecta a un dispositivo Bluetooth específico o cuando está cerca de una etiqueta NFC). Puede usar esta opción para impedir que los usuarios configuren Smart Lock.
+
+## <a name="next-steps"></a>Pasos siguientes
+
+Use la información del tema [Configuración de restricciones de dispositivos en Microsoft Intune](device-restrictions-configure.md) para guardar y asignar el perfil a los usuarios y dispositivos.

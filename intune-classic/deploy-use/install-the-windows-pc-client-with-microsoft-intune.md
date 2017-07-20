@@ -4,7 +4,7 @@ description: "Siga esta guía para administrar sus equipos Windows con el softwa
 keywords: 
 author: nathbarn
 ms.author: nathbarn
-ms.date: 03/27/2017
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.assetid: 64c11e53-8d64-41b9-9550-4b4e395e8c52
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 356ada64224f8982baf93ddaccb44df123c4568c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8e10f3a72cf522888108895f9f7141480b9af0b3
+ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Instalar el cliente de software de Intune en equipos con Windows
 
@@ -32,6 +32,8 @@ Los equipos con Windows se pueden inscribir instalando el software cliente de In
 El software cliente de Intune contiene el software mínimo necesario para inscribir el equipo en la administración de Intune. Después de inscribir un equipo, el software cliente de Intune descarga el software cliente completo que se necesita para la administración del equipo.
 
 Esta serie de descargas reduce el impacto en el ancho de banda de la red y reduce al mínimo el tiempo necesario para inscribir inicialmente el equipo en Intune. También garantiza que el cliente tenga disponible el software más reciente una vez finalizada la segunda descarga.
+
+Una licencia de Intune permite instalar el software cliente de Intune en un máximo de cinco equipos.
 
 ## <a name="download-the-intune-client-software"></a>Descargar el software cliente de Intune
 
