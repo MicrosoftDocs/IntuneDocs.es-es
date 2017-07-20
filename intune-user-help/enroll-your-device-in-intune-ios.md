@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 07/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,27 +16,27 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: af3313e6ba5cbf9184aaaa9b197f7a3b2b9d4c3e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 4d7ad138a8aa59ceeff00866469e59e2e1d19520
+ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/13/2017
 ---
 # <a name="enroll-your-ios-device-in-intune"></a>Inscriba el dispositivo iOS en Intune
 
 Si su empresa o centro educativo usa Microsoft Intune, puede inscribir un dispositivo iOS para obtener acceso al correo electrónico, a los archivos y a otros recursos de la empresa. Cuando los dispositivos se inscriben, el departamento de TI puede administrar esos recursos profesionales o educativos y mantenerlos protegidos, al tiempo que los usuarios pueden usar el dispositivo que elijan libremente para realizar su trabajo. Para obtener más información sobre la inscripción, vea [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) (¿Qué ocurre cuando se instala la aplicación de portal de empresa y se inscribe el dispositivo en Intune?).
 
-<iframe src="https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+> [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player]
 
 > [!NOTE]
-> Si lo que intenta inscribir es un dispositivo macOS, por ejemplo, un equipo MacBook Pro o iMac, [siga entonces estas instrucciones](enroll-your-device-in-intune-macos.md).
+> Si lo que intenta inscribir es un dispositivo macOS, como un equipo MacBook Pro o iMac, [siga estas instrucciones](enroll-your-device-in-intune-macos.md).
 
 **Antes de empezar**
 
-- Asegúrese de que termina la inscripción después de iniciar los pasos. Pausar durante unos minutos normalmente detiene el proceso y requerirá reiniciar.
-- Si se produce un error en la inscripción por algún motivo, debe volver a la aplicación de Portal de empresa para intentarlo de nuevo.
+- Asegúrese de que termina la inscripción después de iniciar los pasos. Hacer una pausa durante unos minutos suele detener el proceso, por lo que deberá reiniciarla.
+- Si por algún motivo se produce un error en la inscripción, deberá volver a la aplicación Portal de empresa para intentarlo de nuevo.
 - Asegúrese de que funciona la red Wi-Fi. De lo contrario, se producirá un error en la inscripción.
-- Si bloquea Safari en el dispositivo, debe desbloquearlo. Debe utilizar Safari para realizar la inscripción.
+- Si bloquea Safari en el dispositivo, debe desbloquearlo. Safari se usa como parte del proceso de inscripción de dispositivos.
 
 
 **Para inscribir el dispositivo iOS:**
@@ -51,8 +51,8 @@ Si su empresa o centro educativo usa Microsoft Intune, puede inscribir un dispos
 
     ![ios-enroll-why-enroll](./media/ios-enroll-1b-why-enroll.png)
 
-> [!NOTE]
-> Los triángulos amarillos no significan que ya haya un error. Estos iconos indican que todavía hay pasos del proceso de inscripción que deben completarse.
+  > [!NOTE]
+  > Los triángulos amarillos no significan que ya haya un error. Estos iconos indican que todavía hay pasos del proceso de inscripción que deben completarse.
 
 4. Revise una lista sobre lo que el administrador de TI puede y no puede ver en el dispositivo inscrito y después pulse **Continuar**.
 
@@ -88,7 +88,7 @@ Si su empresa o centro educativo usa Microsoft Intune, puede inscribir un dispos
 
     ![ios-enroll-open-comp-portal](./media/ios-enroll-7-open-cp.png)
 
-12. En la pantalla **Configuración de acceso a la empresa**, pulse **Continuar**. Si el administrador de TI ha configurado más requisitos de seguridad (como establecer obligatoriamente una contraseña), siga las instrucciones en pantalla hasta satisfacer todos los requisitos de cumplimiento. Tras ello, regresará a la pantalla Configuración de acceso a la empresa, donde deberá pulsar en **Continuar**.
+12. En la pantalla **Configuración de acceso a la empresa**, pulse **Continuar**. En esta pantalla se muestran los demás requisitos que debería cumplir para que el dispositivo sea compatible (como establecer una contraseña). Siga las instrucciones que aparecen en pantalla hasta que cumpla todos los requisitos de cumplimiento. Cuando haya terminado, volverá a la pantalla Configuración de acceso a la empresa. Pulse **Continuar**.
 
     ![ios-enroll-comp-access-tap-continue](./media/ios-enroll-8-comp-access-setup-compliance.png)
 
@@ -99,6 +99,6 @@ Si su empresa o centro educativo usa Microsoft Intune, puede inscribir un dispos
 El dispositivo ya está inscrito en Intune. Se le dirigirá de nuevo a la aplicación de portal de empresa.
 
 > [!Note]
-> Si su organización usa software de administración de gastos de telecomunicaciones, deberá completar algunos pasos adicionales antes de que el dispositivo esté completamente inscrito. Descubra más [aquí](enroll-your-device-with-telecom-expense-management-ios.md).
+> Debe seguir unos pocos pasos más para que el dispositivo esté totalmente inscrito. Obtenga más información sobre cómo [inscribir el dispositivo mediante la administración de gastos de telecomunicaciones](enroll-your-device-with-telecom-expense-management-ios.md). Si su organización usa el Programa de inscripción de dispositivos de Apple, obtenga más información [aquí](enroll-your-device-dep-ios.md).
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
