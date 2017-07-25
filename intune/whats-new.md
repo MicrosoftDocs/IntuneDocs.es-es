@@ -6,7 +6,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 07/13/2017
+ms.date: 07/17/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dec4fb1d373f49c1f6c15b1f2a9acb2f8d20138d
-ms.sourcegitcommit: be12974a7eaa4ce9cffe45aabe456c858d582e20
+ms.openlocfilehash: ca98230a54ba7c2067062676420e9e06ff9bf7d7
+ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2017
+ms.lasthandoff: 07/17/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novedades de Microsoft Intune
 
@@ -73,6 +73,10 @@ Anteriormente, Intune tenía numerosas aplicaciones integradas que se podían as
 Sin embargo, si las aplicaciones integradas ya están asignadas, seguirán mostrándose en la lista de aplicaciones. Las aplicaciones podrán seguir asignándose según se necesite.
 En una versión posterior, vamos a agregar un método sencillo para seleccionar y asignar aplicaciones integradas en el portal de Intune.
 
+#### <a name="easier-installation-of-office-365-apps-----1121362----"></a>Instalación más sencilla de aplicaciones de Office 365 <!--- 1121362 --->
+El nuevo tipo de aplicación de **Office 365 ProPlus** facilita la asignación de aplicaciones de Office 365 ProPlus 2016 a dispositivos que administre con la versión más reciente de Windows 10. Además, también puede instalar Microsoft Project y Microsoft Visio si dispone de licencias para ellos. Las aplicaciones que quiera se agrupan y aparecen como una única aplicación en la lista de aplicaciones de la consola de Intune.
+Para obtener más información, consulte el artículo sobre [cómo agregar aplicaciones de Office 365 para Windows 10](apps-add-office365.md).
+
 
 #### <a name="support-for-offline-apps-from-the-windows-store-for-business-----777044----"></a>Compatibilidad con aplicaciones sin conexión desde la Tienda Windows para empresas<!--- 777044 --->
 Las aplicaciones sin conexión que ha adquirido en la Tienda Windows para empresas ahora se sincronizarán con el portal de Intune. Así, puede implementar estas aplicaciones en grupos de usuarios o grupos de dispositivos. Las aplicaciones sin conexión no se instalan desde la Tienda, sino mediante Intune.
@@ -101,7 +105,7 @@ Para obtener más información, vea [Endpoint protection settings for Windows 10
 
 En esta versión, hemos agregado nuevas opciones para el perfil de restricción de dispositivos Windows 10, en las categorías siguientes:
 
- -  Windows Defender
+-  Windows Defender
 -  Red de telefonía móvil y conectividad
 -  Experiencia de pantalla bloqueada
 -  Privacidad
@@ -223,7 +227,7 @@ En el caso de las aplicaciones implementadas en perfiles de trabajo de dispositi
 Los dispositivos Android 7.0 y versiones posteriores con un perfil de trabajo administrado como un dispositivo Android for Work permiten que el administrador defina una directiva de código de acceso que solo se aplique a aplicaciones del perfil de trabajo.  Las opciones son:
 
 - Definir una contraseña de código de acceso a nivel de dispositivo: se trata del código de acceso que el usuario debe usar para desbloquear todo el dispositivo.
- Definir una directiva de código de acceso solo a nivel de perfil de trabajo: a los usuarios se les pedirá que escriban un código de acceso cada vez que se abra cualquier aplicación del perfil de trabajo.
+- Definir una directiva de código de acceso solo a nivel de perfil de trabajo: a los usuarios se les pedirá que escriban un código de acceso cada vez que se abra cualquier aplicación del perfil de trabajo.
 - Definir una directiva para el dispositivo y el perfil de trabajo: el administrador de TI tiene la opción de definir una directiva de código de acceso para el dispositivo y otra para el perfil de trabajo con diferentes intensidades (por ejemplo, un PIN de cuatro dígitos para desbloquear el dispositivo y uno de seis para abrir cualquier aplicación de trabajo).
 
 Para más información, consulte [Configuración de restricciones de dispositivos Android for Work en Microsoft Intune](device-restrictions-android-for-work.md).
