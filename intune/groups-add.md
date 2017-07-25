@@ -15,11 +15,11 @@ ms.assetid: f0a2b858-a824-4598-ab81-bdd8e62ac3b3
 ms.reviewer: amyros
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2c9d10e4e2a1d2a745b9e327bf9a8a9cd99e5ce4
-ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.openlocfilehash: ce779e8dad2c9813d5faf1f03bca9b33690508fe
+ms.sourcegitcommit: b287025b1a0d09d41faf51cf98c34b676fa1d98e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2017
+ms.lasthandoff: 07/07/2017
 ---
 # <a name="add-groups-in-intune"></a>Agregar grupos en Intune
 Intune usa grupos de Azure Active Directory (AD) para administrar dispositivos y usuarios. Como administrador de Intune, puede configurar los grupos de modo que satisfagan sus necesidades organizativas. Cree grupos para organizar a los usuarios o dispositivos por ubicación geográfica, departamento o características de hardware. Use los grupos para administrar tareas a escala. Por ejemplo, puede establecer directivas para muchos usuarios o implementar aplicaciones para un conjunto de dispositivos.
@@ -50,5 +50,5 @@ Use los siguientes pasos para crear un grupo.
 5. Elija **Crear** para agregar el nuevo grupo.
 
 ## <a name="see-also"></a>Consulte también
-[Administración del acceso a recursos con grupos de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)
-[Intune classic groups in the Azure portal (Grupos clásicos de Intune en Azure Portal)](groups-get-started.md)
+- [Administración del acceso a los recursos con grupos de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)
+- [Grupos clásicos de Intune en Azure Portal](groups-get-started.md)

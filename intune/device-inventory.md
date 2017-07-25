@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/25/2017
+ms.date: 07/11/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dae92c117bcf8a4a8ff133ed613f9f77ea0c07c2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3618c5ee0b4a7ff0e7b6a4d6ed58f77a2af0ba66
+ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/12/2017
 ---
 # <a name="how-to-view-intune-device-inventory"></a>Visualización del inventario de dispositivos de Intune
 
@@ -44,9 +44,13 @@ Ahora, seleccione una de las siguientes opciones:
     ![Inventario de hardware de dispositivo administrado](./media/hardware-inventory.png)
     - **Aplicaciones detectadas**: muestra una lista de todas las aplicaciones instaladas en el dispositivo que encuentra Intune.
     ![Nodo de aplicaciones detectadas](./media/detected-applications.png)
+    
+
+
     - **Cumplimiento de dispositivo**: muestra el estado de cumplimiento de todas las directivas de cumplimiento que se han asignado al dispositivo.
     - **Configuración de dispositivo**: muestra el estado de cumplimiento de todas las directivas de configuración de dispositivo que se han asignado al dispositivo.
 - **Monitor** (Supervisar): seleccione **Acciones de dispositivo** para ver una lista de acciones de dispositivo que se han realizado en los dispositivos administrados y su estado actual.
 - **Configuración** > **conector de TeamViewer**: configure la administración remota en dispositivos con el software de TeamViewer. Para obtener detalles, vea [Asistencia remota para dispositivos Android administrados con Intune](/intune/device-profile-android-teamviewer).
 
-
+>[!NOTE]
+> Intune solo recopila inventario de las aplicaciones de los dispositivos corporativos, no de los personales. En los equipos con Windows 10, solo recopila inventario de las aplicaciones modernas de los dispositivos corporativos. Intune no recopila información sobre las aplicaciones de Win32 del dispositivo.

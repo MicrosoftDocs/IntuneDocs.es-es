@@ -6,7 +6,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 07/03/2017
+ms.date: 07/13/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fdda99bfd72c71d36a19449d43bc6cbf6a00babe
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: dec4fb1d373f49c1f6c15b1f2a9acb2f8d20138d
+ms.sourcegitcommit: be12974a7eaa4ce9cffe45aabe456c858d582e20
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/14/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novedades de Microsoft Intune
 
@@ -55,25 +55,25 @@ Intune ahora admite la carga de números de serie de iOS, macOS y Android como i
 
 ### <a name="device-management"></a>Administración de dispositivos
 #### <a name="new-remote-actions-for-ios-devices----854689---"></a>Nuevas acciones remotas para los dispositivos iOS <!-- 854689 -->
-En esta versión, hemos agregado dos nuevas acciones de dispositivo remoto para dispositivos iOS:
+En esta versión, hemos agregado dos nuevas acciones de dispositivo remoto para los dispositivos iPad compartidos que administran la aplicación Classroom de Apple:
 
 -   [Cerrar sesión del usuario actual](device-logout-user.md): cierra la sesión del usuario actual de un dispositivo iOS que seleccione.
 -   [Quitar usuario](device-remove-user.md): elimina un usuario que seleccione de la memoria caché local en un dispositivo iOS.
 
-
-Con estas acciones remotas, los administradores pueden administrar las cuentas de los usuarios almacenadas en caché en un dispositivo iPad compartido y también cerrar la sesión del usuario que tiene la sesión iniciada en esos momentos en el dispositivo.
-
-Durante la inscripción, el administrador determina el número máximo de cuentas de usuario que pueden almacenarse en caché en un dispositivo. "Quitar usuario" permite a los administradores quitar usuarios determinados que están almacenados en caché.
-
-"Cerrar sesión del usuario actual" cerrará la sesión del usuario que tiene la sesión iniciada en esos momentos en el dispositivo. Esta acción puede encontrarse en la parte superior de la hoja de información general del dispositivo donde se encuentran normalmente las acciones del dispositivo.
-
-"Quitar usuario" eliminará un usuario especificado de la caché local del dispositivo. Esta acción puede encontrarse yendo a "Supervisar" -> "Usuarios" -> clic con el botón derecho en un usuario específico de la lista. Cualquier dato que esté asociado a la cuenta de usuario que no se haya sincronizado se perderá. Además, la lista de usuarios puede tardar hasta 24 horas en reflejar que el usuario se ha eliminado.
 
 #### <a name="support-for-shared-ipads-with-the-ios-classroom-app----1044681---"></a>Compatibilidad con dispositivos iPad compartidos con la aplicación Classroom de iOS<!-- 1044681 -->
 En esta versión, hemos ampliado la compatibilidad con la administración de la aplicación Classroom en iOS, a fin de incluir a los estudiantes que se registran en dispositivos iPad compartidos con sus identificadores de Apple administrados.
 
 
 ### <a name="app-management"></a>Administración de aplicaciones  
+
+#### <a name="changes-to-intune-built-in-apps----1332306---"></a>Cambios en las aplicaciones integradas de Intune <!-- 1332306 -->
+
+Anteriormente, Intune tenía numerosas aplicaciones integradas que se podían asignar rápidamente. Basándonos en los comentarios de los usuarios, hemos quitado esta lista y ya no se verán las aplicaciones integradas.
+Sin embargo, si las aplicaciones integradas ya están asignadas, seguirán mostrándose en la lista de aplicaciones. Las aplicaciones podrán seguir asignándose según se necesite.
+En una versión posterior, vamos a agregar un método sencillo para seleccionar y asignar aplicaciones integradas en el portal de Intune.
+
+
 #### <a name="support-for-offline-apps-from-the-windows-store-for-business-----777044----"></a>Compatibilidad con aplicaciones sin conexión desde la Tienda Windows para empresas<!--- 777044 --->
 Las aplicaciones sin conexión que ha adquirido en la Tienda Windows para empresas ahora se sincronizarán con el portal de Intune. Así, puede implementar estas aplicaciones en grupos de usuarios o grupos de dispositivos. Las aplicaciones sin conexión no se instalan desde la Tienda, sino mediante Intune.
 
@@ -266,12 +266,16 @@ Los roles de administración de aplicaciones móviles (MAM) existentes (colabora
 
 ## <a name="whats-coming"></a>Próximas novedades
 
+### <a name="end-of-support-for-android-43-and-lower----1171127-1326920----"></a>Fin de la compatibilidad con Android 4.3 y anterior <!---1171127, 1326920 --->
+Las aplicaciones administradas y la aplicación Portal de empresa para Android exigirán Android 4.4 y versiones posteriores para acceder a recursos de empresa. Los dispositivos que no estén actualizados antes del comienzo de octubre ya no podrán acceder a esas aplicaciones ni al Portal de empresa. En diciembre, todos los dispositivos inscritos serán eliminados, lo que provocará su pérdida de acceso a los recursos de empresa. Si está usando directivas de protección de aplicaciones sin MDM, las aplicaciones no recibirán actualizaciones y la calidad de su experiencia empeorará con el tiempo.
+
+
 ### <a name="platform-support-reminder-windows-phone-81-mainstream-support-will-end-july-11-2017"></a>Recordatorio de compatibilidad de plataforma: la compatibilidad estándar de Windows Phone 8.1 finalizará el 11 de julio de 2017
 <!-- 1327781 -->
 
 El 11 de julio de 2017 terminará la compatibilidad estándar de la plataforma Windows Phone 8.1. La compatibilidad de los equipos Windows 8.1 no se verá afectada.
 
-No hay ningún impacto inmediato en ningún dispositivo Windows Phone 8.1 administrado por el servicio Intune. Los dispositivos inscritos continuarán funcionando y todas las directivas, configuraciones y aplicaciones seguirán funcionando según lo previsto. Tenga en cuenta que no hay mejoras destinadas a la plataforma Windows Phone 8.1 en el servicio Intune ni para la aplicación Portal de empresa de Windows Phone 8.1. 
+No hay ningún impacto inmediato en ningún dispositivo Windows Phone 8.1 administrado por el servicio Intune. Los dispositivos inscritos continuarán funcionando y todas las directivas, configuraciones y aplicaciones seguirán funcionando según lo previsto. Tenga en cuenta que no hay mejoras destinadas a la plataforma Windows Phone 8.1 en el servicio Intune ni para la aplicación Portal de empresa de Windows Phone 8.1.
 
 Se recomienda que actualice los dispositivos Windows Phone 8.1 aptos a Windows 10 Mobile en cuanto pueda. 
 

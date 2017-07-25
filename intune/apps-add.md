@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 07/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6a4dfa9e0066a2ac6f410aa9f8e4d77a40484ea5
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: c102e93738ca2da3c247ad364db160c812b91118
+ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/17/2017
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>Agregar una aplicación a Microsoft Intune
 
@@ -79,34 +79,9 @@ Al agregar una aplicación a Intune, tiene la opción de seleccionar la categor�
 
 ## <a name="apps-added-automatically-by-intune"></a>Aplicaciones que Intune agrega automáticamente
 
-Las aplicaciones siguientes, publicadas por Microsoft, están integradas en Intune y, además, están listas para que asigne lo siguiente:
-
-|||
-|-|-|
-|Nombre|Plataforma|Tipo de aplicación|
-|Azure Information Protection|Android|Aplicación administrada de la tienda Android|
-|Dynamics CRM para teléfonos|Android|Aplicación administrada de la tienda Android|
-|Dynamics CRM para tabletas|Android|Aplicación administrada de la tienda Android|
-|Excel|iOS|Aplicación administrada de la tienda iOS|
-|Excel|Android|Aplicación administrada de la tienda Android|
-|Explorador administrado|Android|Aplicación administrada de la tienda Android|
-|Explorador administrado|iOS|Aplicación administrada de la tienda iOS|
-|Microsoft Dynamics CRM en teléfonos|iOS|Aplicación administrada de la tienda iOS|
-|Microsoft Dynamics CRM en tabletas|iOS|Aplicación administrada de la tienda iOS|
-|Microsoft Power BI|iOS|Aplicación administrada de la tienda iOS|
-|Microsoft Power BI|Android|Aplicación administrada de la tienda Android|
-|Microsoft SharePoint|iOS|Aplicación administrada de la tienda iOS|
-|Microsoft SharePoint|Android|Aplicación administrada de la tienda Android|
-|Microsoft Teams|Android|Aplicación administrada de la tienda Android|
-|Microsoft Teams|iOS|Aplicación administrada de la tienda iOS|
-|OneDrive|iOS|Aplicación administrada de la tienda iOS|
-|OneDrive|Android|Aplicación administrada de la tienda Android|
-|OneNote|iOS|Aplicación administrada de la tienda iOS|
-|Outlook|Android|Aplicación administrada de la tienda Android|
-|Outlook|iOS|Aplicación administrada de la tienda iOS|
-|Grupos de Outlook|Android|Aplicación administrada de la tienda Android|
-|Grupos de Outlook|iOS|Aplicación administrada de la tienda iOS|
-|PowerPoint|iOS|Aplicación de App Store administrada|
+Anteriormente, Intune tenía numerosas aplicaciones integradas que se podían asignar rápidamente. Basándonos en los comentarios de los usuarios, hemos quitado esta lista y ya no se verán las aplicaciones integradas.
+Sin embargo, si las aplicaciones integradas ya están asignadas, seguirán mostrándose en la lista de aplicaciones. Las aplicaciones podrán seguir asignándose según se necesite.
+En una versión posterior, vamos a agregar un método sencillo para seleccionar y asignar aplicaciones integradas en el portal de Intune.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
@@ -121,4 +96,5 @@ Elija uno de los siguientes temas para obtener información sobre cómo agregar 
 - [Aplicaciones de línea de negocio de Windows Phone](lob-apps-windows-phone.md)
 - [Aplicaciones de la Tienda Windows](store-apps-windows.md)
 - [Aplicación de línea de negocio de Windows](lob-apps-windows.md)
+- [Aplicaciones de Office 365 para Windows 10](apps-add-office365.md)
 
