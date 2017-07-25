@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0fb1d52a97a03609ddefb94caf707bd8cbee8f12
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a5f7ffa14a78cecd613dcf6b7523acc0afb427cf
+ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/10/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guía para desarrolladores acerca del SDK de aplicaciones de Microsoft Intune para iOS
 
@@ -49,15 +49,25 @@ En esta guía se tratará el uso de los siguientes componentes del SDK de aplica
 
 * **IntuneMAMResources.Bundle**: lote de recursos que contiene los recursos en los que se basa el SDK.
 
-* **Encabezados**: expone las API del SDK para aplicaciones de Intune. Si usa una API, deberá incluir el archivo de encabezado que contiene la API. Los archivos de encabezado siguientes incluyen las llamadas a funciones API necesarias para habilitar la funcionalidad del SDK de aplicaciones de Intune:
+* **Encabezados**: expone las API del SDK para aplicaciones de Intune. Si usa una API, deberá incluir el archivo de encabezado que contiene la API. Los siguientes archivos de encabezado incluyen las API, los tipos de datos y los protocolos que Intune App SDK pone a disposición de los desarrolladores:
 
-    * IntuneMAMAsyncResult.h
+    * IntuneMAMAppConfig.h
+    * IntuneMAMAppConfigManager.h
     * IntuneMAMDataProtectionInfo.h
     * IntuneMAMDataProtectionManager.h
+    * IntuneMAMDefs.h
+    * IntuneMAMEnrollmentDelegate.h
+    * IntuneMAMEnrollmentManager.h
+    * IntuneMAMEnrollmentStatus.h
     * IntuneMAMFileProtectionInfo.h
     * IntuneMAMFileProtectionManager.h
-    * IntuneMAMPolicyDelegate.h
     * IntuneMAMLogger.h
+    * IntuneMAMPolicy.h
+    * IntuneMAMPolicyDelegate.h
+    * IntuneMAMPolicyManager.h
+    * IntuneMAMVersionInfo.h
+    
+Los desarrolladores pueden hacer que el contenido de todos los encabezados anteriores esté disponible importando solamente IntuneMAM.h.
 
 
 ## <a name="how-the-intune-app-sdk-works"></a>Cómo funciona el SDK para aplicaciones de Intune
@@ -144,11 +154,13 @@ Para habilitar Intune App SDK, siga estos pasos:
     > [!NOTE]
     > Un archivo de derechos es un archivo XML que es exclusivo para su aplicación móvil. Se utiliza para especificar permisos especiales y capacidades en su aplicación iOS.
 
-7. Si la aplicación define los esquemas de direcciones URL en su archivo Info.plist, agregue otro esquema, con un sufijo `-intunemam` para cada esquema de dirección URL.
+8. Si la aplicación define los esquemas de direcciones URL en su archivo Info.plist, agregue otro esquema, con un sufijo `-intunemam` para cada esquema de dirección URL.
 
-8. Para las aplicaciones móviles desarrolladas en iOS 9+, incluya cada protocolo que la aplicación pasa a `UIApplication canOpenURL` en la matriz `LSApplicationQueriesSchemes` del archivo Info.plist de la aplicación. Además, para cada protocolo que se muestra, agregue un nuevo protocolo y anéxelo con `-intunemam`. También debe incluir `http-intunemam`, `https-intunemam`y `ms-outlook-intunemam` en la matriz.
+9. Si la aplicación define los tipos de documento en su archivo Info.plist, en la matriz "UTI de tipos de contenido de documentos" de cada elemento, agregue una entrada duplicada para cada cadena con un prefijo "com.microsoft.intune.mam".
 
-9. Si la aplicación tiene grupos de aplicaciones definidos en sus derechos, agregue estos grupos al diccionario **IntuneMAMSettings** en la clave `AppGroupIdentifiers` como una matriz de cadenas.
+10. Para las aplicaciones móviles desarrolladas en iOS 9+, incluya cada protocolo que la aplicación pasa a `UIApplication canOpenURL` en la matriz `LSApplicationQueriesSchemes` del archivo Info.plist de la aplicación. Además, para cada protocolo que se muestra, agregue un nuevo protocolo y anéxelo con `-intunemam`. También debe incluir `http-intunemam`, `https-intunemam`y `ms-outlook-intunemam` en la matriz.
+
+11. Si la aplicación tiene grupos de aplicaciones definidos en sus derechos, agregue estos grupos al diccionario **IntuneMAMSettings** en la clave `AppGroupIdentifiers` como una matriz de cadenas.
 
 
 
