@@ -5,7 +5,7 @@ keywords:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 07/06/2017
+ms.date: 07/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 299e2ed0a84c7158a582ee874f0711eb3c379532
-ms.sourcegitcommit: bee30f4c9e04129d70305fcafc4152c6e062a8b0
+ms.openlocfilehash: ebea9fe4cbf0c6c788ba4a209132856eda06445e
+ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 07/18/2017
 ---
 # <a name="prepare-android-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Preparar aplicaciones Android para la administración de aplicaciones móviles con la Herramienta de ajuste de aplicaciones de Intune
 
@@ -121,6 +121,17 @@ invoke-AppWrappingTool -InputPath .\app\HelloWorld.apk -OutputPath .\app_wrapped
 A continuación, se le pedirá que especifique **KeyStorePassword** y **KeyPassword**. Escriba las credenciales que usó para crear el archivo de almacén de claves.
 
 La aplicación ajustada se genera y guarda, junto con un archivo de registro en la ruta de acceso de salida especificada.
+
+## <a name="reusing-signing-certificates-and-wrapping-apps"></a>Reutilización de certificados de firma y aplicaciones de encapsulado
+Android requiere que todas las aplicaciones estén firmadas mediante un certificado válido para instalarlo en dispositivos Android.
+
+Las aplicaciones encapsuladas se pueden firmar ya sea como parte del proceso de encapsulado o *después* del encapsulado con las herramientas de firma existentes (se descarta cualquier información de firma en la aplicación antes del encapsulado).
+ 
+Si es posible, ya información de firma que ya se usó durante el proceso de compilación se debe usar durante el encapsulado. En ciertas organizaciones, esto podría requerir trabajar con la persona propietaria de la información del almacén de claves (es decir, el equipo de compilación de aplicaciones). 
+
+Si no se puede usar el certificado de firma anterior o si la aplicación no se implementó antes, puede crear un certificado de firma nuevo con las instrucciones que aparecen en la [Guía para desarrolladores de Android](https://developer.android.com/studio/publish/app-signing.html#signing-manually).
+
+Si la aplicación se implementó anteriormente con otro certificado de firma, la aplicación no se puede cargar a la consola de Intune después de la actualización. Los escenarios de actualización de la aplicación se interrumpirá si la aplicación se firma con un certificado distinto del certificado con que se compila la aplicación. Por tanto, se deben conservar todos los certificados de firma nuevos para las actualizaciones de la aplicación. 
 
 ## <a name="security-considerations-for-running-the-app-wrapping-tool"></a>Consideraciones de seguridad para ejecutar la herramienta de ajuste de aplicaciones
 Para evitar posibles suplantaciones de identidad, la divulgación de información y ataques de elevación de privilegios:

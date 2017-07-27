@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/16/2017
+ms.date: 07/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ee43647190da705581eaa5a266db3712391e06f2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: e47e6fd8bbb3476beb8bd9df22376fdfd339ba2e
+ms.sourcegitcommit: 83dd7a127898dd9528187aa8d430cc1be9dd7738
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/15/2017
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>Usar aplicaciones administradas en el dispositivo iOS
 
@@ -38,6 +38,8 @@ Las aplicaciones administradas se obtienen de dos maneras distintas:
 -   Cuando el dispositivo está inscrito en Microsoft Intune, puede instalar la aplicación desde la aplicación Portal de empresa o un sitio web del Portal de empresa, o bien el administrador de TI puede instalarla en el dispositivo. Para más información sobre la inscripción, consulte [Inscribir un dispositivo iOS en Intune](enroll-your-device-in-intune-ios.md) o [Inscribir un dispositivo macOS en Intune](enroll-your-device-in-intune-macos.md).
 
 -   Instale una aplicación desde App Store y después inicie sesión con la cuenta de usuario corporativo que administra Intune.
+
+Es posible que el administrador de TI a veces compre varias licencias de una aplicación que instale. Si aparece un mensaje donde se le pide aceptar el contrato de Programas de Compras por Volumen de Apple, es normal y puede aceptarlo. Si no lo hace, no podrá instalar la aplicación.
 
 ### <a name="what-can-my-it-admin-manage-in-an-app"></a>¿Qué puede administrar el administrador de TI en una aplicación?
 Estos son algunos ejemplos de opciones que el administrador de TI puede administrar en una aplicación y que pueden afectar a las interacciones con los datos de la empresa en el dispositivo:

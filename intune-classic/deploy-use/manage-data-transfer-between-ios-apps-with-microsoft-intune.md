@@ -14,11 +14,11 @@ ms.assetid: 3a4515c1-b325-4ac1-9f0a-45ac27e00681
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 05975303bd45764d56f00986aea5aa30399893f9
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6314f6b13ec7fa23c0b3b46ecd3418a75d581db1
+ms.sourcegitcommit: abd8f9f62751e098f3f16b5b7de7eb006b7510e4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/20/2017
 ---
 # <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>Administrar la transferencia de datos entre aplicaciones iOS con Microsoft Intune
 
@@ -78,6 +78,7 @@ La configuración del valor de UPN de usuario es **necesaria** para los disposit
 | VMware AirWatch | IntuneMAMUPN | String | {UserPrincipalName}|
 | MobileIron Core | IntuneMAMUPN | String | $EMAIL$ **o** $USER_UPN$ |
 | MobileIron Cloud | IntuneMAMUPN | String | ${userUPN} **o** ${userEmailAddress} |
+| Administrador de dispositivos móviles ManageEngine | IntuneMAMUPN | String | %upn% |
 
 ### <a name="example-2-end-user-experience"></a>Ejemplo 2: Experiencia del usuario final
 
