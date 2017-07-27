@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 07/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 537087b720338413261b3947365a4d90fed89fbb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 272628c501d15dc9661a1110e7dcab2d0e9f1d02
+ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/17/2017
 ---
 #  <a name="ios-app-protection-policy-settings"></a>Configuración de directivas de protección de aplicaciones de iOS
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -71,8 +71,8 @@ La directiva de protección de aplicaciones de Intune puede permitir la transfer
 | **Volver a comprobar los requisitos de acceso después de (minutos)** | Configure las siguientes opciones: <ul><li>**Tiempo de espera**: es el número de minutos antes de que se vuelvan a comprobar los requisitos de acceso (definidos anteriormente en la directiva). Por ejemplo, un administrador activa el PIN en la directiva, un usuario abre una aplicación MAM y debe escribir un PIN. Cuando se usa esta opción, el usuario no tendría que escribir un PIN en ninguna aplicación MAM durante **30 minutos** (valor predeterminado).</li><li>**Período de gracia sin conexión**: es el número de minutos que las aplicaciones MAM pueden ejecutarse sin conexión, especifique el tiempo (en minutos) que debe transcurrir antes de que se vuelvan a comprobar los requisitos de acceso de la aplicación. Valor predeterminado = **720** minutos (12 horas). Una vez transcurrido este período, la aplicación requerirá la autenticación de usuario en AAD para poder seguir ejecutándose.</li></ul>| Tiempo de espera: 30 <br><br> Sin conexión: 720 |
 | **Intervalo sin conexión antes de que se borren los datos de la aplicación (días)** | Después de este número de días (definido por el administrador) de ejecución sin conexión, la propia aplicación realizará un borrado selectivo. Este borrado selectivo es el mismo que el que puede iniciar el administrador en el flujo de trabajo de borrado MAM. <br><br> | 90 días |
 | **Deshabilitar el PIN de aplicación cuando se administra el PIN del dispositivo** | Elija **Sí** para deshabilitar el PIN de aplicación cuando se detecta un bloqueo de dispositivo en un dispositivo inscrito. | No |
-| **Requiere el sistema operativo mínimo iOS** | Pulse **Sí** para requerir un sistema operativo mínimo iOS para usar esta aplicación. Se bloqueará el acceso al usuario si la versión de iOS en el dispositivo no cumple el requisito. | No |
-| **Requiere el sistema operativo mínimo iOS (solo advertencia)** | Pulse **Sí** para requerir un sistema operativo mínimo iOS para usar esta aplicación. El usuario verá una notificación si la versión de iOS en el dispositivo no cumple el requisito. Se puede descartar esta notificación. | No |
+| **Requiere el sistema operativo mínimo iOS** | Pulse **Sí** para requerir un sistema operativo mínimo iOS para usar esta aplicación. Se bloqueará el acceso al usuario si la versión de iOS en el dispositivo no cumple el requisito. Esta directiva admite un solo punto decimal, como iOS 10.3. | No |
+| **Requiere el sistema operativo mínimo iOS (solo advertencia)** | Pulse **Sí** para requerir un sistema operativo mínimo iOS para usar esta aplicación. El usuario verá una notificación si la versión de iOS en el dispositivo no cumple el requisito. Se puede descartar esta notificación. Esta directiva admite un solo punto decimal, como iOS 10.3. | No |
 | **Requiere la versión mínima de la aplicación** | Seleccione **Sí** para requerir la versión mínima de la aplicación para usar esta aplicación. Se bloquea el acceso al usuario si la versión de la aplicación en el dispositivo no cumple el requisito.<br><br>Como las aplicaciones a menudo tienen esquemas de control de versiones distintos entre sí, cree una directiva con una versión de aplicación mínima destinada a una aplicación (por ejemplo, "directiva de versión de Outlook"). <br><br> | No | 
 | **Requiere la versión mínima de la aplicación (solo advertencia)** | Seleccione **Sí** para recomendar la versión mínima de la aplicación para usar esta aplicación. El usuario ve una notificación si la versión de la aplicación en el dispositivo no cumple el requisito. Se puede descartar esta notificación.<br><br>Como las aplicaciones a menudo tienen esquemas de control de versiones distintos entre sí, cree una directiva con una versión de aplicación mínima destinada a una aplicación (por ejemplo, "directiva de versión de Outlook"). <br><br> | No | 
 | **Requiere una versión mínima del SDK de la directiva de protección de aplicaciones de Intune** | Elija **Sí** para requerir una versión mínima del SDK de la directiva de protección de aplicaciones de Intune en la aplicación que se usará. Se bloquea el acceso al usuario si la versión del SDK de la directiva de protección de aplicaciones de Intune de la aplicación no cumple el requisito. <br> <br> Para obtener más información sobre el SDK de la directiva de protección de aplicaciones de Intune, vea [Información general del SDK para aplicaciones de Intune](app-sdk.md). <br><br> | No |

@@ -14,11 +14,11 @@ ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f5af3aefe814a52ae3b43a894242ac972e0cc8fc
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 531112301d0c3827ec7eb3ab4087218caa331b90
+ms.sourcegitcommit: 2b7d644c7a4f85315e11a7d0c5885cc66975c2ad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/14/2017
 ---
 # <a name="intune-network-bandwidth-use"></a>Uso de ancho de banda de red de Intune
 
@@ -30,7 +30,7 @@ Esta guía ayuda a los administradores de Intune a comprender los requisitos de 
 En la tabla siguiente se muestra el tamaño aproximado y la frecuencia de contenido común que pasa a través de la red de cada cliente.
 
 > [!NOTE]
-> Para asegurarse de que los equipos y dispositivos móviles reciban las actualizaciones y el contenido necesarios del servicio de Intune, se deben conectar periódicamente a Internet. El tiempo que se tarda en recibir actualizaciones o contenido varía, pero como norma, se debe permanecer conectado de forma continua a Internet como mínimo una hora al día.
+> Para asegurarse de que los dispositivos reciban actualizaciones y contenido de Intune, se deben conectar a Internet de forma periódica. El tiempo que se requiere para recibir actualizaciones o contenido puede variar, pero los dispositivos deben permanecer conectados de forma continua a Internet como mínimo una hora al día.
 
 |Tipo de contenido|Tamaño aproximado|Frecuencia y detalles|
 |----------------|--------------------|-------------------------|
@@ -51,9 +51,9 @@ En la tabla siguiente se muestra el tamaño aproximado y la frecuencia de conten
 Puede usar uno o varios de los métodos siguientes para reducir el uso de ancho de banda de red de clientes de Intune.
 
 ### <a name="use-a-proxy-server-to-cache-content-requests"></a>Utilizar un servidor proxy para almacenar en caché solicitudes de contenido
-Puede utilizar un servidor proxy que pueda almacenar en caché contenido para reducir la duplicación de descargas y el uso de ancho de banda de red por parte de clientes que solicitan contenido de Internet.
+Un servidor proxy puede almacenar en caché contenido para reducir las descargas duplicadas y disminuir el ancho de banda de red del contenido de Internet.
 
-Un servidor proxy de almacenamiento en caché recibe solicitudes de contenido de equipos cliente de su red, recupera ese contenido de Internet y puede almacenar en caché las respuestas HTTP y las descargas binarias. El servidor utiliza la información almacenada en caché para responder las sucesivas solicitudes procedentes de equipos cliente de Intune.
+Un servidor proxy de almacenamiento en caché que recibe solicitudes de contenido de los clientes puede recuperar dicho contenido y almacenar en caché tanto las respuestas web como las descargas. El servidor usa los datos almacenados en caché para responder solicitudes subsiguientes de los clientes.
 
 A continuación, se indica la configuración típica que se utiliza para un servidor proxy que almacena en caché contenido para clientes de Intune.
 
@@ -70,7 +70,7 @@ Intune admite el uso del Servicio de transferencia inteligente en segundo plano 
 Para obtener más información sobre BITS y equipos Windows, consulte [Servicio de transferencia inteligente en segundo plano](http://technet.microsoft.com/library/bb968799.aspx) en la biblioteca TechNet.
 
 ### <a name="use-branchcache-on-computers"></a>Usar BranchCache en los equipos
-Los clientes de Intune pueden utilizar BranchCache para reducir el tráfico de la red de área extensa (WAN). Los siguientes sistemas operativos admitidos como clientes también admiten BranchCache:
+Los clientes de Intune pueden utilizar BranchCache para reducir el tráfico de la red de área extensa (WAN). Los siguientes sistemas operativos admiten BranchCache:
 
 - Windows 7
 - Windows 8.0
@@ -79,22 +79,26 @@ Los clientes de Intune pueden utilizar BranchCache para reducir el tráfico de l
 
 Para utilizar BranchCache, el equipo cliente debe tener BranchCache habilitado y, a continuación, configurarse para el **modo de caché distribuida**.
 
-De forma predeterminada, BranchCache y el modo de caché distribuida se habilitan en un equipo cuando se instala el cliente de Intune. Sin embargo, si el cliente ya tiene una directiva de grupo que deshabilita BranchCache, Intune no invalida esa directiva y BranchCache permanecerá deshabilitado en ese equipo.
+De forma predeterminada, BranchCache y el modo de caché distribuida se habilitan en los equipos cuando se instala el cliente de Intune. Sin embargo, si la directiva de grupo deshabilitó BranchCache, Intune no invalida dicha directiva y BranchCache sigue deshabilitado.
 
-Si utiliza BranchCache, debe comunicarse con los demás administradores de su organización que administren la directiva de grupo y la directiva de Firewall de Intune para asegurarse de que no implementan la directiva que deshabilita las excepciones de Firewall o BranchCache. Para obtener información sobre BranchCache, vea [Información general sobre BranchCache](http://technet.microsoft.com/library/hh831696.aspx).
+Si usa BranchCache, colabore con otros administradores de la organización para administrar la directiva de grupo y la directiva de firewall de Intune. Asegúrese de que no implementen ninguna directiva que deshabilite las excepciones de BranchCache o de firewall. Para obtener información sobre BranchCache, vea [Información general sobre BranchCache](http://technet.microsoft.com/library/hh831696.aspx).
 
 ## <a name="network-communication-requirements"></a>Requisitos de comunicación de red
 
-Para administrar su suscripción de Intune y los sitios web necesarios para los servicios basados en la nube, debe habilitar las comunicaciones de red entre los dispositivos que administra y usa.
+Habilite las comunicaciones de red entre los dispositivos que administra y los sitios web que se requieren para los servicios basados en la nube.
 
 Intune no usa ninguna infraestructura local, por ejemplo, servidores que ejecuten software Intune, pero existen opciones para usar la infraestructura local, como las herramientas de sincronización de Exchange y Active Directory.
 
-Para administrar los equipos que están detrás de firewalls y servidores proxy, debe configurar los firewalls y los servidores proxy de modo que permitan las comunicaciones de Intune. Para administrar los equipos que están detrás de un servidor proxy, tenga en cuenta que:
+Para administrar equipos que se encuentren detrás de firewalls y servidores proxy, debe habilitar la comunicación para Intune.
 
 -   El servidor proxy debe ser compatible con **HTTP (80)** y **HTTPS (443)**, ya que los clientes de Intune usan ambos protocolos.
--   Intune necesita acceso de un servidor proxy no autenticado a manage.microsoft.com para algunas operaciones como la descarga de software y actualizaciones
+-   Intune necesita acceso de un servidor proxy no autenticado a manage.microsoft.com para algunas tareas como la descarga de software y actualizaciones
 
 Puede modificar la configuración del servidor proxy o los equipos cliente individuales, o bien usar la configuración de la directiva de grupo para cambiar de todos los equipos cliente que se encuentran detrás de un servidor proxy especificado.
+
+
+<!--
+> [!NOTE] If Windows 8.1 devices haven't cached proxy server credentials, enrollment might fail because the request doesn't prompt for credentials. Enrollment fails without warning as the request wait for a connection. If users might experience this issue, instruct them to open their browser settings and save proxy server settings to enable a connection.   -->
 
 Los dispositivos administrados requieren configuraciones que dejen acceder a **Todos los usuarios** a los servicios a través de firewalls.
 

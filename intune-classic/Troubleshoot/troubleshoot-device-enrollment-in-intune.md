@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/31/2017
+ms.date: 07/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f0c55caa70c1a23da549f2fe8804c2ae69ef6045
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 14407e26a0715f3d5aa8cf570a2109dac7140079
+ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/17/2017
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Solución de problemas con la inscripción de dispositivos en Intune
 
@@ -151,6 +151,17 @@ Los administradores pueden eliminar dispositivos en el portal de Azure Active Di
 
 
 ## <a name="android-issues"></a>Problemas de Android
+
+### <a name="android-enrollment-errors"></a>Errores de inscripción de Android
+
+En la siguiente tabla se muestran los errores que los usuarios finales pueden encontrar durante la inscripción de los dispositivos Android en Intune.
+
+|Mensaje de error|Problema|Solución|
+|---|---|---|
+|**El administrador de TI debe asignar una licencia para el acceso**<br>El administrador de TI no le ha concedido acceso para usar esta aplicación. Solicite ayuda al administrador de TI o vuelva a intentarlo más tarde.|El dispositivo no se puede inscribir porque la cuenta del usuario no tiene la licencia necesaria.|Antes de que los usuarios puedan inscribir los dispositivos, deben tener asignada la licencia necesaria. Este mensaje significa que tienen el tipo de licencia incorrecto para la entidad de administración de dispositivos móviles designada. Por ejemplo, si Intune se ha designado como la entidad de administración de dispositivos móviles y se usa una licencia de System Center 2012 R2 Configuration Manager, verá este error.<br><br>Consulte información sobre cómo [asignar licencias de Intune a las cuentas de usuario](/intune/licenses-assign.md).
+|**El administrador de TI debe establecer la autoridad de MDM<br>Al parecer, el administrador de TI no estableció ninguna autoridad de MDM. Solicite ayuda al administrador de TI o vuelva a intentarlo más tarde.|La entidad de administración de dispositivos móviles no se ha definido.|La entidad de administración de dispositivos móviles no se ha designado en Intune. Consulte información sobre cómo [establecer la autoridad de administración de dispositivos móviles](/intune/mdm-authority-set.md).|
+
+
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>Los dispositivos no se pueden registrar con el servicio Intune y se muestran con un estado "Incorrecto" en la consola de administración de Intune.
 **Problema:** algunos dispositivos Samsung que ejecutan las versiones de Android 4.4.x y 5.x podrían dejar de registrarse con el servicio de Intune. Si los servicios no se registran:
 

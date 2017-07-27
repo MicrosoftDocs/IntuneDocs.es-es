@@ -14,17 +14,17 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0b09daa05db673817bea67cd8b88c2ac63be7f1e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1627627ab1744f963d738dcedde6a772bb3ae663
+ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/18/2017
 ---
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>Proteger aplicaciones y datos de línea de negocio en dispositivos no inscritos en Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
-Las directivas de administración de aplicaciones móviles (MAM) ayudan a proteger los datos de la empresa al restringir las acciones que podrían provocar una pérdida de datos de la empresa e imponer requisitos de acceso a datos, como el PIN de aplicación. Para aplicar directivas de MAM a aplicaciones iOS y Android de línea de negocio, primero tiene que ajustar la aplicación con la herramienta de ajuste de aplicaciones de Microsoft Intune. El ajuste de aplicaciones es el proceso mediante el cual se aplica una capa de administración a una aplicación móvil sin requerir chan/intune/apps-prepare-mobile-application-managementes en ella para distribuirla a los usuarios.  
+Las directivas de administración de aplicaciones móviles (MAM) ayudan a proteger los datos de la empresa al restringir las acciones que podrían provocar una pérdida de datos de la empresa e imponer requisitos de acceso a datos, como el PIN de aplicación. Para aplicar directivas de MAM a aplicaciones iOS y Android de línea de negocio, primero tiene que ajustar la aplicación con la herramienta de ajuste de aplicaciones de Microsoft Intune. El encapsulado de aplicaciones es el proceso de aplicar una capa de administración a una aplicación móvil sin necesidad de realizar cambios en ella ni distribuirla a los usuarios.  
 
 En este tema se explican los pasos necesarios para aplicar directivas MAM a las aplicaciones a las que se obtiene acceso en **dispositivos no administrados propiedad de los empleados** y en dispositivos administrados por una **solución de administración de dispositivos móviles (MDM) de terceros**.  Para preparar las aplicaciones de línea de negocio que se ejecutan en **dispositivos inscritos en MDM de Intune**, consulte [Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles mediante Microsoft Intune](/intune/apps-prepare-mobile-application-management).
 

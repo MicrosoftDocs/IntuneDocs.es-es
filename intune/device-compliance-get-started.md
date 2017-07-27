@@ -1,49 +1,92 @@
 ---
-title: "Introducción al cumplimiento de dispositivos"
+title: Directivas de cumplimiento de dispositivos Intune
 titleSuffix: Intune on Azure
-description: Use este tema para comprender los requisitos previos que necesita para crear directivas de cumplimiento en Microsoft Intune.
+description: Use este tema para aprender sobre el cumplimiento de dispositivos en Microsoft Intune.
 keywords: 
-author: NathBarn
-ms.author: nathbarn
+author: andredm7
+ms.author: andredm
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 07/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 8103df7f-1700-47b4-9a72-c196d2a02f22
+ms.assetid: a916fa0d-890d-4efb-941c-7c3c05f8fe7c
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aa9a5c8c44b82dcbc1ae7a4609b12e22c6599e9e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 9723e5a8b001068e8b7c9994723e6c7111e7a80d
+ms.sourcegitcommit: abd8f9f62751e098f3f16b5b7de7eb006b7510e4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 07/20/2017
 ---
-# <a name="get-started-with-device-compliance-in-intune"></a>Introducción al cumplimiento de dispositivos en Intune
-
+# <a name="get-started-with-intune-device-compliance-policies"></a>Introducción a las directivas de cumplimiento de dispositivos de Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-En este tema, aprenderá lo siguiente: 
+## <a name="what-is-device-compliance-in-intune"></a>¿Qué es el cumplimiento de dispositivos en Intune?
 
-- Lo que necesita antes de poder empezar a crear una directiva de cumplimiento de dispositivos.
-- Resumen de lo que puede ver y hacer en el portal de Azure de Intune. 
+Las directivas de cumplimiento de dispositivos Intune definen las reglas y configuraciones con las que debe cumplir un dispositivo para que Intune lo considere compatible.
 
-Si el cumplimiento de dispositivos no le resulta familiar, puede leer [este tema](device-compliance.md) para saber lo que es y cómo podría usarla en su organización.
+Estas son algunas de las reglas:
+
+- Usar una contraseña para acceder a los dispositivos
+
+- Cifrado
+
+- Si el dispositivo está liberado
+
+- Versión de SO mínima requerida
+
+- Versión de SO máxima permitida
+
+- Requerir que el dispositivo se encuentre en el nivel de Mobile Threat Defense
+
+También puede usar directivas de cumplimiento de dispositivos para supervisar el estado de cumplimiento de los dispositivos.
+
+### <a name="device-compliance-requirements"></a>Requisitos de cumplimiento del dispositivo
+
+Los requisitos de cumplimiento son básicamente reglas, como exigir el PIN de un dispositivo o especificar el cifrado como obligatorio o no obligatorio para una directiva de cumplimiento.
+
+<!---### Actions for noncompliance
+
+You can specify what needs to happen when a device is determined as noncompliant. This can be a sequence of actions during a specific time.
+When you specify these actions, Intune will automatically initiate them in the sequence you specify. See the following example of a sequence of
+actions for a device that continues to be in the noncompliant status for
+a week:
+
+-   When the device is first determined to be non-compliant, an email with noncompliant notification is sent to the user.
+
+-   3 days after initial noncompliance state, a follow up reminder is sent to the user.
+
+-   5 days after initial noncompliance state, a final reminder with a notification that access to company resources will be blocked on the device in 2 days if the compliance issues are not remediated is sent to the user.
+
+-   7 days after initial noncompliance state, access to company resources is blocked. This requires that you have conditional access policy that specifies that access from noncompliant devices should    be blocked for services such as Exchange and SharePoint.
+
+### Grace Period
+
+This is the time between when a device is first determined as
+noncompliant to when access to company resources on that device is blocked. This time allows for time that the user has to resolve
+compliance issues on the device. You can also use this time to create your action sequences to send notifications to the user before their access is blocked.
+
+Remember that you need to implement conditional access policies in addition to compliance policies in order for access to company resources to be blocked.--->
 
 ##  <a name="pre-requisites"></a>Requisitos previos
 
--   Una suscripción a Intune
+Debe tener las siguientes suscripciones para usar las directivas de cumplimiento de dispositivos con Intune:
 
--   Una suscripción a Azure Active Directory.
+- Intune EMS
 
-##  <a name="supported-platforms"></a>Plataformas compatibles:
+- Azure AD Premium
+
+###  <a name="supported-platforms"></a>Plataformas compatibles:
 
 -   Android
 
 -   iOS
+
+-   macOS (versión preliminar)
 
 -   Windows 8.1
 
@@ -51,32 +94,48 @@ Si el cumplimiento de dispositivos no le resulta familiar, puede leer [este tema
 
 -   Windows 10
 
-##  <a name="azure-portal-workflow"></a>Flujo de trabajo del portal de Azure
+> [!IMPORTANT]
+> Los dispositivos se deben inscribir en Intune para informar sus estados de cumplimiento.
 
-Esta es una visión general de cómo puede crear y administrar el cumplimiento de dispositivos en el portal de Azure de Intune.
+## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>Funcionamiento de las directivas de cumplimiento de dispositivos Intune con Azure AD
 
-<!---### Overview
+Cuando un dispositivo está inscrito en Intune, se produce el proceso de registro de Azure AD, el que actualiza los atributos del dispositivo con más información en Azure AD. Parte clave de la información de un dispositivo es el estado de cumplimiento del dispositivo, que las directivas de acceso condicional usan para bloquear o permitir el acceso al correo electrónico y otros recursos corporativos.
 
-When you choose the **Set device compliance** workload, the blade opens with an  **Overview** section that displays a summary view of your compliance policies that you have created and the status of the devices they have been applied to. If you
-don’t have any policies configured yet, the overview will just include the various reports but with no data.--->
+- Más información sobre el [proceso de registro de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-device-registration-overview).
 
-### <a name="manage"></a>Administrar
+##  <a name="ways-to-use-device-compliance-policies"></a>Formas de usar las directivas de cumplimiento de dispositivos
 
-Puede crear, editar y eliminar directivas de cumplimiento. También podrá asignar directivas a los usuarios desde aquí.
+### <a name="with-conditional-access"></a>Con acceso condicional
+Puede usar la directiva de cumplimiento con acceso condicional para permitir que solo los dispositivos que satisfacen una o varias reglas de las directivas de cumplimiento de dispositivos accedan al correo electrónico y otros servicios corporativos.
 
-<!---### Monitor
+### <a name="without-conditional-access"></a>Sin acceso condicional
+También puede usar las directivas de cumplimiento de dispositivos con independencia del acceso condicional. Cuando se usan directivas de cumplimiento de forma independiente, los dispositivos de destino se evalúan y su estado se cumplimiento se notifica. Por ejemplo, puede obtener un informe sobre cuántos dispositivos no están cifrados o qué dispositivos están liberados. Pero cuando se usan directivas de cumplimiento de manera independiente, no existen restricciones de acceso a los recursos de empresa.
 
-This section is a detailed view of what you see in the **Overview**. A list of all the reports are displayed in this section and you can interactively drill down through each of these reports.--->
+Las directivas de cumplimiento se implementan para los usuarios. Cuando se implementa una directiva de cumplimiento para un usuario, se comprueba el cumplimiento de todos los dispositivos del usuario. Para más información sobre cuánto tiempo tardan los dispositivos móviles en obtener una directiva una vez que esta se ha implementado, consulte Administración de la configuración y las características de los dispositivos.
 
-### <a name="setup"></a>Setup
+##  <a name="using-device-compliance-policies-in-the-intune-classic-portal-vs-azure-portal"></a>Uso de directivas de cumplimiento de dispositivos en el portal de Intune clásico en comparación con Portal de Azure
 
-Período de validez del estado de cumplimiento
+Tenga en cuenta las principales diferencias que le permitirán realizar la transición al nuevo flujo de trabajo de las directivas de cumplimiento de dispositivos en Azure Portal.
+
+- En el portal de Azure, las directivas de cumplimiento se crean por separado para cada plataforma compatible.
+- En el portal de Intune clásico, había una directiva de cumplimiento de dispositivos común a todas las plataformas compatibles.
+
+<!--- -   In the Azure portal, you have the ability to specify actions and notifications that are intiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
+
+-   In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
+
+##  <a name="migrate-device-compliance-policies-from-the-intune-classic-portal-to-the-azure-portal"></a>Migración de las directivas de cumplimiento de dispositivos desde el portal de Intune clásico a Azure Portal
+
+Las directivas de cumplimiento de dispositivos creadas en el [portal clásico de Intune](https://manage.microsoft.com) no aparecerán en [Azure Portal de Intune](https://portal.azure.com). Pero todavía se destinan a los usuarios y pueden administrarse mediante el portal de Intune clásico.
+
+Si desea aprovechar las nuevas características relacionadas con el cumplimiento de dispositivos en Azure Portal, debe crear nuevas directivas de cumplimiento de dispositivos en el mismo Azure Portal. Si asigna una nueva directiva de cumplimiento de dispositivos de Azure Portal a un usuario al que también se ha asignado una directiva de cumplimiento de dispositivos en el portal clásico de Intune, las directivas de cumplimiento de dispositivos de Azure Portal de Intune tienen prioridad sobre las creadas en el portal de Intune clásico.
 
 ##  <a name="next-steps"></a>Pasos siguientes
-[Creación de una directiva de cumplimiento para Android](compliance-policy-create-android.md)
 
-[Creación de una directiva de cumplimiento para Android for Work](compliance-policy-create-android-for-work.md)
+Cree una directiva de cumplimiento de directivas para las plataformas siguientes:
 
-[Creación de una directiva de cumplimiento para iOS](compliance-policy-create-ios.md).
-
-[Creación de una directiva de cumplimiento para Windows](compliance-policy-create-windows.md)
+- [Android](compliance-policy-create-android.md)
+- [Android for work](compliance-policy-create-android-for-work.md)
+- [iOS](compliance-policy-create-ios.md)
+- [macOS](compliance-policy-create-mac-os.md)
+- [Windows](compliance-policy-create-windows.md)
