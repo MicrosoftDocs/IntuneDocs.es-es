@@ -20,13 +20,11 @@ ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/11/2017
 ---
-# Desarrollo de un plan de lanzamiento
-<a id="develop-a-rollout-plan" class="xliff"></a>
+# <a name="develop-a-rollout-plan"></a>Desarrollo de un plan de lanzamiento
 
 En el plan de lanzamiento se identifican los grupos de la organización a los que destinar el lanzamiento de Intune, el período de tiempo de lanzamiento para cada grupo y el método de inscripción que se usará.
 
-## Grupos de destino y períodos de tiempo
-<a id="targeted-groups-and-timeframes" class="xliff"></a>
+## <a name="targeted-groups-and-timeframes"></a>Grupos de destino y períodos de tiempo
 
 En primer lugar, revise los grupos de destino del lanzamiento de Intune identificados en los [escenarios de casos de uso](planning-guide-scenarios.md).
 
@@ -38,20 +36,17 @@ En segundo lugar, determine el período de tiempo para cada grupo de destino. Es
 * Ubicación geográfica
 * Riesgo empresarial
 
-## Fases de implementación
-<a id="rollout-phases" class="xliff"></a>
+## <a name="rollout-phases"></a>Fases de implementación
 Normalmente, las organizaciones deciden comenzar la implementación de Intune con un piloto inicial, dirigiéndose a un grupo de usuarios pequeño del departamento de TI. El piloto puede expandirse para incluir un conjunto más amplio de usuarios de TI y, además, puede englobar la participación de otros grupos de la organización.
 
-### Fase piloto
-<a id="pilot" class="xliff"></a>
+### <a name="pilot"></a>Fase piloto
 La primera fase del lanzamiento debe estar destinada a usuarios piloto. Estos deben saber que son los primeros usuarios de una solución nueva. Además, deben estar dispuestos a proporcionar comentarios para ayudar a mejorar la configuración, la documentación, las notificaciones, y facilitar el camino a los demás usuarios en fases de lanzamiento posteriores. Estos usuarios no deben ser ejecutivos ni personas VIP.
 
 La fase piloto es una buena oportunidad para probar los [desafíos](planning-guide-deployment-goals.md) y restringir los [requisitos](planning-guide-requirements.md) que recopiló anteriormente.
 
 Incluya el plan de [comunicación](planning-guide-communication-plan.md), el plan de [soporte técnico](planning-guide-support-plan.md) y las [pruebas y la validación](planning-guide-test-validation.md) para solucionar cualquier problema mientras el impacto en los usuarios todavía es de menor importancia.
 
-### Lanzamiento en producción
-<a id="production-rollout" class="xliff"></a>
+### <a name="production-rollout"></a>Lanzamiento en producción
 Tras una fase piloto satisfactoria, ya puede iniciar un lanzamiento completo en producción, destinado al resto de los grupos de la organización. Algunos ejemplos de grupos y fases de lanzamiento distintos son:
 
 -   **Departamentos** <br/>Cada departamento puede ser una fase de lanzamiento. Puede centrarse en un departamento completo a la vez. En este tipo de lanzamiento, los usuarios de cada departamento tienden a usar el dispositivo móvil de la misma forma y acceden a las mismas aplicaciones. Los usuarios probablemente tendrán los mismos tipos de directivas.
@@ -71,26 +66,22 @@ Aquí se muestra un ejemplo de un plan de implementación de Intune que incluye 
 | Fase de implementación de producción 3 |  |  |  | Recursos humanos (50 usuarios), Finanzas (40 usuarios), Ejecutivos (30 usuarios) |
 
 Puede [descargar una plantilla de la tabla anterior](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para especificar las fases de lanzamiento de la organización.
-## Correspondencia de los grupos de lanzamiento con los métodos de inscripción
-<a id="match-rollout-groups-to-enrollment-approaches" class="xliff"></a>
+## <a name="match-rollout-groups-to-enrollment-approaches"></a>Correspondencia de los grupos de lanzamiento con los métodos de inscripción
 
 Ahora que ha determinado los grupos de destino y los períodos de tiempo para el lanzamiento de Intune, el siguiente paso consiste en elegir el método de inscripción de Intune más apropiado para cada grupo. Puede usar distintos métodos de inscripción, entre ellos:
 * Autoservicio del usuario
 * Inscripción asistida de usuario
 * Feria técnica de TI
 
-### Autoservicio del usuario
-<a id="user-self-service" class="xliff"></a>
+### <a name="user-self-service"></a>Autoservicio del usuario
 
 En este caso, el usuario es responsable de la inscripción de su propio dispositivo, normalmente siguiendo las instrucciones de inscripción que le ha proporcionado su organización de TI. Este método es el que más se usa en las organizaciones y es más escalable que la inscripción asistida por el usuario.
 
-### Inscripción asistida por el usuario
-<a id="user-assisted-enrollment" class="xliff"></a>
+### <a name="user-assisted-enrollment"></a>Inscripción asistida por el usuario
 
 Se conoce como un método "preferencial". Un miembro del equipo de TI ayuda al usuario durante el proceso de inscripción, en persona o con Skype. Este método se usa normalmente con personal ejecutivo y otros grupos que pueden necesitar más ayuda durante el proceso de inscripción.
 
-### Feria técnica de TI
-<a id="it-tech-fair" class="xliff"></a>
+### <a name="it-tech-fair"></a>Feria técnica de TI
 
 Otra opción para la inscripción de usuarios de Intune es tener una feria técnica de TI. En este evento, el grupo de TI configura un área de asistencia de inscripción de Intune donde los usuarios pueden recibir información sobre la inscripción de Intune, realizar preguntas y obtener ayuda con el proceso de inscripción. Esta opción puede resultar beneficiosa para los usuarios y grupos de TI, sobre todo, durante las primeras fases del lanzamiento de Intune.
 
@@ -111,7 +102,6 @@ A continuación se muestra un ejemplo actualizado del plan de lanzamiento de Int
 | Autoservicio |  |  |  | Recursos humanos, finanzas |
 | Preferencial |  |  |  | Ejecutivos |
 
-## Pasos siguientes
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Pasos siguientes
 
 En la sección siguiente se proporcionan instrucciones sobre el [desarrollo de un plan de comunicación de implementación de Intune](planning-guide-communication-plan.md).

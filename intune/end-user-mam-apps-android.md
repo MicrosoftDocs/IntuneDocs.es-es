@@ -20,14 +20,12 @@ ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/13/2017
 ---
-# Qué esperar cuando la aplicación Android está administrada por directivas de protección de aplicaciones
-<a id="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies" class="xliff"></a>
+# <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Qué esperar cuando la aplicación Android está administrada por directivas de protección de aplicaciones
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 En este tema se describe la experiencia del usuario en aplicaciones con directivas de protección de aplicaciones. Las directivas de protección de aplicaciones solo se aplican cuando se usan aplicaciones en el contexto laboral: por ejemplo, cuando el usuario obtiene acceso a las aplicaciones con la cuenta profesional o a archivos que están almacenados en la ubicación empresarial de OneDrive.
-##  Acceso a las aplicaciones
-<a id="access-apps" class="xliff"></a>
+##  <a name="access-apps"></a>Acceso a las aplicaciones
 
 La aplicación Portal de empresa se necesita en todas las aplicaciones que están asociadas a directivas de protección de aplicaciones en los dispositivos Android.
 
@@ -36,15 +34,13 @@ En el caso de los dispositivos que no están inscritos en Intune, la aplicación
 La aplicación Portal de empresa es una manera de que Intune pueda compartir datos en una ubicación protegida. Por lo tanto, la aplicación Portal de empresa es un requisito para todas las aplicaciones asociadas con las directivas de protección de aplicaciones, incluso si el dispositivo no está inscrito en Intune.
 
 
-##  Uso de aplicaciones con compatibilidad con varias identidades
-<a id="use-apps-with-multi-identity-support" class="xliff"></a>
+##  <a name="use-apps-with-multi-identity-support"></a>Uso de aplicaciones con compatibilidad con varias identidades
 
 Las directivas de protección de aplicaciones solo se aplican en el contexto laboral. Por lo tanto, la aplicación podría comportarse de manera distinta si el contexto es laboral o personal.
 
 Por ejemplo, el usuario obtiene una solicitud de PIN al obtener acceso a los datos de trabajo. En la **aplicación Outlook**, al usuario se le pide un PIN al iniciar la aplicación. En la **aplicación OneDrive**, al usuario se le pide el PIN cuando escribe la cuenta profesional. En Microsoft **Word**, **PowerPoint** y **Excel**, al usuario se le pide el PIN cuando obtiene acceso a documentos que se encuentran almacenados en la ubicación OneDrive para la Empresa.
 
-##  Administración de cuentas de usuario en el dispositivo
-<a id="manage-user-accounts-on-the-device" class="xliff"></a>
+##  <a name="manage-user-accounts-on-the-device"></a>Administración de cuentas de usuario en el dispositivo
 
 Intune solo admite la implementación de directivas de protección de aplicaciones en una cuenta de usuario por dispositivo.
 
@@ -61,16 +57,13 @@ Intune solo admite la implementación de directivas de protección de aplicacion
 Consulte el siguiente escenario de ejemplo para profundizar aún más en cómo se tratan varias cuentas de usuario.
 
 El usuario A trabaja para dos empresas: la **empresa X** y la **empresa Y**. El usuario A tiene una cuenta profesional para cada empresa y en ambas se usa Intune para implementar directivas de protección de aplicaciones. La **Compañía X** implementa directivas de protección de aplicaciones **antes que** la **Compañía Y**. La cuenta que está asociada a la **empresa X** obtiene la directiva de protección de aplicaciones, pero no la cuenta asociada a la empresa Y. Si quiere que la cuenta de usuario asociada a la empresa Y se administre por medio de las directivas de protección de aplicaciones, deberá quitar la cuenta de usuario asociada a la empresa X.
-### Incorporación de una segunda cuenta
-<a id="add-a-second-account" class="xliff"></a>
-####  Android
-<a id="android" class="xliff"></a>
+### <a name="add-a-second-account"></a>Incorporación de una segunda cuenta
+####  <a name="android"></a>Android
 Si usa un dispositivo Android, podría aparecer un mensaje de bloqueo con instrucciones para quitar la cuenta existente y agregar una nueva.  Para quitar la cuenta existente, vaya a **Configuración &gt;General &gt; Administrador de aplicaciones &gt;Portal de empresa**. Luego, elija **Borrar datos**.
 
 ![Captura de pantalla del mensajes de error e instrucciones para quitar la cuenta](./media/Android_SwitchUser.png)
 
-##  Visualización de archivos multimedia con la aplicación de Azure Information Protection
-<a id="view-media-files-with-the-azure-information-protection-app" class="xliff"></a>
+##  <a name="view-media-files-with-the-azure-information-protection-app"></a>Visualización de archivos multimedia con la aplicación de Azure Information Protection
 Para ver archivos de imagen, AV y PDF de la empresa en dispositivos Android, use la [aplicación Azure Information Protection](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer) (conocida anteriormente como la aplicación Rights Management sharing).
 
 Descargue esta aplicación de Google Play Store.  
@@ -87,6 +80,5 @@ Se admiten los siguientes tipos de archivos:
 |----|----|
 |Pfile es un formato "contenedor" genérico para archivos protegidos que encapsula el contenido cifrado y las licencias de Azure Information Protection. Puede usarse para proteger cualquier tipo de archivo.|Los archivos de texto, incluidos XML, CSV, etc. pueden abrirse para verse en la aplicación incluso cuando están protegidos. Tipos de archivo: .txt, .ptxt, .csv, .pcsv, .log, .plog, .xml, .pxml.|
 
-## Pasos siguientes
-<a id="next-steps" class="xliff"></a>
+## <a name="next-steps"></a>Pasos siguientes
 [Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones](end-user-mam-apps-ios.md)
