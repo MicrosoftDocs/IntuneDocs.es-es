@@ -22,8 +22,7 @@ ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/13/2017
 ---
-# Anular la inscripción del dispositivo iOS de Intune
-<a id="unenroll-your-ios-device-from-intune" class="xliff"></a>
+# <a name="unenroll-your-ios-device-from-intune"></a>Anular la inscripción del dispositivo iOS de Intune
 
 Una vez anulada la inscripción del dispositivo iOS de Intune, este ya no podrá acceder a los recursos de la empresa ni será administrado por Intune.
 

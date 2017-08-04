@@ -14,11 +14,11 @@ ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c7c4390629178256728c55e47f06bffae043a729
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2e08a228c19e934e92ed2db1de407859e20559f7
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Inscribir dispositivos para administrarlos en Intune
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 07/01/2017
 
 Puede inscribir dispositivos, incluidos equipos Windows, para habilitar la administración de dispositivos móviles (MDM) con Microsoft Intune. En este tema se describen diferentes maneras de inscribir dispositivos móviles en la administración de Intune. La forma en que inscriba los dispositivos depende del tipo de dispositivo, de la propiedad de los mismos y del nivel de administración que sea necesario. La inscripción BYOD ("Bring your own device") permite a los usuarios inscribir sus teléfonos, tabletas o equipos personales. La inscripción de dispositivos corporativos (COD) permite escenarios de administración como la inscripción automática, los dispositivos compartidos o los requisitos de inscripción previamente autorizada.
 
-Si usa [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune), ya sea local u hospedado en la nube, puede habilitar una administración de Intune sencilla sin inscripción. Los equipos Windows también se pueden administrar con el [software cliente de Intune](#manage-windows-pcs-with-intune).
+Si usa [Exchange ActiveSync](#mobile-device-management-with-exchange-activesync-and-intune), ya sea local u hospedado en la nube, puede habilitar una administración de Intune sencilla sin inscripción. Los equipos Windows también se pueden administrar con el [software cliente de Intune](#windows-pc-management-with-intune).
 
 De manera predeterminada, los dispositivos de todas las plataformas pueden inscribirse en Intune. Para bloquear la inscripción de dispositivos, inicie sesión en el [portal de administración de Microsoft Intune](https://manage.microsoft.com) con sus credenciales de administrador. Elija **Administrador** > **Administración de dispositivos móviles** > **Reglas de inscripción** y después desactive las casillas correspondientes de las plataformas que quiera bloquear.
 

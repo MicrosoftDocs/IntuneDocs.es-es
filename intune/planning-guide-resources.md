@@ -19,11 +19,9 @@ ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 07/11/2017
 ---
-# Recursos adicionales para planear la implementación de Intune
-<a id="additional-resources-for-planning-your-intune-deployment" class="xliff"></a>
+# <a name="additional-resources-for-planning-your-intune-deployment"></a>Recursos adicionales para planear la implementación de Intune
 
-## Plantillas
-<a id="templates" class="xliff"></a>
+## <a name="templates"></a>Plantillas
 
 Las plantillas de Microsoft Excel para las tablas utilizadas en la guía de planeación están disponibles para [descargarlas](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0).
 
@@ -44,8 +42,7 @@ Aquí se muestra una lista de plantillas de tabla para cada sección.
 | | Directiva de acceso condicional|-|
 
 
-## Lectura adicional
-<a id="further-reading" class="xliff"></a>
+## <a name="further-reading"></a>Lectura adicional
 
 Consulte estos recursos para obtener información adicional que puede resultar útil durante el proceso de planeación, diseño y ejecución de la implementación de Intune.
 

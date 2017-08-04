@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/23/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 3129cbaf-96c2-4837-8907-ca87a605a496
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 716ca0a2041bdd2ecfadd180999a09f80373cb2a
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 76d532745ad3b8761a88aaf0772053f0629e050a
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="macos-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos macOS en Microsoft Intune
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 07/01/2017
 Use estas opciones para administrar dispositivos macOS en un perfil de restricción de dispositivos.
 
 ## <a name="password"></a>Contraseña
--   **Contraseña necesaria**: exige que el usuario final escriba una contraseña para acceder al dispositivo.
+-   **Contraseña**: exige que el usuario final escriba una contraseña para acceder al dispositivo.
     -   **Tipo de contraseña necesaria**: especifique si la contraseña solo puede ser numérica o si debe ser alfanumérica (contener letras y números). Esta configuración solo es compatible con Mac OS X versión 10.10.3 y posteriores.
     -   **Número de caracteres no alfanuméricos en la contraseña**: especifique el número de caracteres complejos necesarios en la contraseña (de **0** a **4**).<br>Un carácter complejo es un símbolo, como **?**
     -   **Minimum password length** (Longitud mínima de contraseña): escriba la longitud mínima de contraseña que un usuario debe configurar (entre **4** y **16** caracteres).

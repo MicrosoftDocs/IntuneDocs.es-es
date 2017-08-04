@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 07/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,16 +16,13 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2e27bdcb6af7d81ed87aa113b11affbff695b808
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 93a08f4c653fe320284821c1532cdbd84d090b2f
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--"></a>¿Cómo puedo iniciar sesión en la aplicación de portal de empresa? <!--User Story 1132123-->
-
-> [!IMPORTANT]
-> Esta característica está en proceso de implementación. Su experiencia puede ser diferente. Quitaremos esta notificación cuando se complete la implementación.
 
 Use la aplicación de portal de empresa para tener acceso a los recursos de empresa, como las aplicaciones empresariales y de correo electrónico. Existen dos maneras principales en las que puede iniciar sesión en el portal de empresa:
 
