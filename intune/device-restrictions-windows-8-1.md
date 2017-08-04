@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 02/15/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,21 +15,22 @@ ms.assetid: fe5785e9-8d35-4ad7-95e8-d50f8d87154a
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da190ddeda62ce3385aab4308595b473c3059ed6
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 56a133105df88d0efede1dd8829285cc845d3621
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="windows-81-and-later-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos Windows 8.1 y versiones posteriores en Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>General
--   **Aplicar todas las configuraciones a Windows 10**: permite que la configuración de esta directiva se aplique a dispositivos Windows 10, además de a dispositivos Windows 8.1.
+
 -   **Envío de datos de diagnóstico**: permite que el dispositivo envíe información de diagnóstico a Microsoft.
 -   **Firewall**: requiere que el Firewall de Windows esté activado.
 -   **Control de cuentas de usuario**: requiere el uso de Control de cuentas de usuario (UAC) en los dispositivos.
+
 ## <a name="password"></a>Contraseña
 -   **Tipo de contraseña necesaria**: requiere que el usuario final escriba una contraseña para acceder al dispositivo.
 -   **Minimum password length** (Longitud mínima de contraseña): configura la longitud mínima necesaria (de caracteres) para la contraseña.
@@ -62,8 +63,10 @@ Al exigir el cifrado en un dispositivo, solo se puede obtener acceso a la clave 
 -   **Acceso al menú Modo de empresa**: permite a los usuarios tener acceso a las opciones del menú Modo de empresa desde Internet Explorer.
 Si selecciona esta opción, también puede especificar una **Ubicación de informes de registro** que contenga una dirección URL a un informe que muestre los sitios web para los que los usuarios hayan activado el acceso en Modo de empresa.
 -   **Ubicación de la lista de sitios del modo de empresa**: especifica la ubicación de la lista de sitios web que van a usar el modo de empresa cuando esté activo.
+
 ## <a name="cellular"></a>Móvil
 -   **Itinerancia de datos**: permite la itinerancia de datos cuando el dispositivo está en una red de telefonía móvil.
+
 ## <a name="cloud-and-storage"></a>Nube y almacenamiento
 -   **Dirección URL de carpetas de trabajo**: establece la dirección URL de la carpeta de trabajo para permitir que los documentos se sincronicen en todos los dispositivos.
 -   **Acceso a la aplicación Correo de Windows sin una cuenta Microsoft**: permite el acceso a la aplicación Windows Mail sin una cuenta Microsoft.    

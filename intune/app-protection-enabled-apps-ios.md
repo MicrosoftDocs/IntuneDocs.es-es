@@ -15,14 +15,17 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 912bc5230904f5798b2e0026dcf0dd1cecdb811c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 519a721b19e42c3fe2cc8120f7985b18cd57a1ce
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones
-[!INCLUDE[azure_portal](./includes/azure_portal.md)] En este tema se describe la experiencia del usuario en aplicaciones con directivas de protección de aplicaciones. Las directivas de protección de aplicaciones solo se aplican cuando se usan aplicaciones en el contexto profesional: por ejemplo, cuando se accede a aplicaciones con la cuenta profesional o cuando se accede a los archivos almacenados en la ubicación empresarial de OneDrive.
+
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+En este tema se describe la experiencia del usuario en aplicaciones con directivas de protección de aplicaciones. Las directivas de protección de aplicaciones solo se aplican cuando se usan aplicaciones en el contexto profesional: por ejemplo, cuando se accede a aplicaciones con la cuenta profesional o cuando se accede a los archivos almacenados en la ubicación empresarial de OneDrive.
 ##  <a name="accessing-apps"></a>Acceso a aplicaciones
 
 Si el dispositivo **no está inscrito en Intune**, al usuario final se le pedirá que reinicie la aplicación cuando la use por primera vez.  Se requiere un reinicio para poder aplicar directivas de protección de aplicaciones a la aplicación. En la captura de pantalla siguiente se puede ver esto con la aplicación Skype:

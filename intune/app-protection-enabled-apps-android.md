@@ -15,14 +15,17 @@ ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 63badd001958f22339415e0cd03da9ade275c6f3
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 97a7a2d2727d823c24e720b61531dce78f6935d1
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Qué esperar cuando la aplicación Android está administrada por directivas de protección de aplicaciones 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]En este tema se describe la experiencia del usuario en aplicaciones con directivas de protección de aplicaciones. Las directivas de protección de aplicaciones solo se aplican cuando se usan aplicaciones en el contexto profesional: por ejemplo, cuando se accede a aplicaciones con la cuenta profesional o cuando se accede a los archivos almacenados en la ubicación empresarial de OneDrive.
+
+[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+En este tema se describe la experiencia del usuario en aplicaciones con directivas de protección de aplicaciones. Las directivas de protección de aplicaciones solo se aplican cuando se usan aplicaciones en el contexto profesional: por ejemplo, cuando se accede a aplicaciones con la cuenta profesional o cuando se accede a los archivos almacenados en la ubicación empresarial de OneDrive.
 ##  <a name="accessing-apps"></a>Acceso a aplicaciones
 
 La aplicación Portal de empresa se necesita en todas las aplicaciones que están asociadas a directivas de MAM en los dispositivos Android.

@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 02/08/2017
+ms.date: 07/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9d03f3936d608b9d526724eccbbdadbe030b53b8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 036899c5e438355cc10da8ab2bd47ec0830c9946
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>Ayudar a proteger los datos con el borrado selectivo o completo mediante Microsoft Intune
 
@@ -99,8 +99,8 @@ El **borrado selectivo** quita los datos de la empresa incluidos los datos de ad
 |Configuración de perfil de Wi-Fi y VPN|Quitado.|
 |Configuración de perfil de certificado|Certificados eliminados y revocados.|
 |Agente de administración|Se quitará el perfil de administración.|
-|Correo electrónico|Los perfiles de correo electrónico que se aprovisionan mediante Intune se quitan y el correo electrónico almacenado en caché en el dispositivo se elimina. Si Microsoft Exchange se hospeda de forma local, no se quitan los perfiles de correo electrónico y el correo electrónico almacenado en caché.|
-|Outlook|Se quita el correo electrónico recibido en la aplicación de Microsoft Outlook para iOS.</br>Excepción: Si Exchange está hospedado de forma local, no se quita el correo electrónico .|
+|Correo electrónico|Los perfiles de correo electrónico que se aprovisionan mediante Intune se quitan y el correo electrónico almacenado en caché en el dispositivo se elimina.|
+|Outlook|Se quita el correo electrónico recibido en la aplicación de Microsoft Outlook para iOS.|
 |Separación de Azure Active Directory (AAD)|Se quita el registro de AAD.|
 |Contactos | Se quitan los contactos sincronizados directamente desde la aplicación en la libreta de direcciones nativa.  No se pueden borrar los contactos sincronizados desde la libreta de direcciones nativa en otro origen externo. <br /> <br />Actualmente, se admite solo la aplicación Outlook.
 
@@ -118,7 +118,7 @@ El **borrado selectivo** quita los datos de la empresa incluidos los datos de ad
 |Configuración de perfil de certificado|Certificados revocados, pero no eliminados.|Certificados eliminados y revocados.|
 |Agente de administración|Se revocarán los privilegios del administrador de dispositivos.|Se revocarán los privilegios del administrador de dispositivos.|
 |Correo electrónico|N/D. Vea el elemento de Outlook.|Los perfiles de correo electrónico que se aprovisionan mediante Intune se quitan y el correo electrónico almacenado en caché en el dispositivo se elimina.|
-|Outlook|Se quita el correo electrónico recibido por la aplicación Microsoft Outlook para Android, pero solo si Outlook está protegido con directivas MAM. De lo contrario, Outlook no se borra en la anulación de la inscripción.</br>Excepción: Si Exchange está hospedado de forma local, no se quita el correo electrónico .|Se quita el correo electrónico recibido por la aplicación Microsoft Outlook para Android, pero solo si Outlook está protegido con directivas MAM. De lo contrario, Outlook no se borra en la anulación de la inscripción.</br>Excepción: Si Exchange está hospedado de forma local, no se quita el correo electrónico .|
+|Outlook|Se quita el correo electrónico recibido por la aplicación Microsoft Outlook para Android, pero solo si Outlook está protegido con directivas MAM. De lo contrario, Outlook no se borra en la anulación de la inscripción.|Se quita el correo electrónico recibido por la aplicación Microsoft Outlook para Android, pero solo si Outlook está protegido con directivas MAM. De lo contrario, Outlook no se borra en la anulación de la inscripción.|
 |Separación de Azure Active Directory (AAD)|Registro de AAD eliminado.|Registro de AAD eliminado.|
 |Contactos | Se quitan los contactos sincronizados directamente desde la aplicación en la libreta de direcciones nativa.  No se pueden borrar los contactos sincronizados desde la libreta de direcciones nativa en otro origen externo. <br /> <br />Actualmente, se admite solo la aplicación Outlook.|Se quitan los contactos sincronizados directamente desde la aplicación en la libreta de direcciones nativa.  No se pueden borrar los contactos sincronizados desde la libreta de direcciones nativa en otro origen externo. <br /> <br />Actualmente, se admite solo la aplicación Outlook.
 
@@ -134,7 +134,7 @@ Al realizar un borrado selectivo en un dispositivo de Android for Work, se quita
 |Configuración|Las configuraciones que estableció la directiva de Intune ya no se aplican y los usuarios pueden cambiar la configuración.|Las configuraciones que estableció la directiva de Intune ya no se aplican y los usuarios pueden cambiar la configuración.|Las configuraciones que estableció la directiva de Intune ya no se aplican y los usuarios pueden cambiar la configuración.|Las configuraciones que estableció la directiva de Intune ya no se aplican y los usuarios pueden cambiar la configuración.|
 |Configuración de perfil de Wi-Fi y VPN|Quitado.|Quitado.|No compatible.|Quitado.|
 |Configuración de perfil de certificado|Certificados eliminados y revocados.|Certificados eliminados y revocados.|No compatible.|Certificados eliminados y revocados.|
-|Correo electrónico|Quita el correo electrónico habilitado para EFS que incluye la aplicación de correo electrónico y datos adjuntos de Windows.|No compatible.|Los perfiles de correo electrónico que se aprovisionan mediante Intune se quitan y el correo electrónico almacenado en caché en el dispositivo se elimina.|Quita el correo electrónico habilitado para EFS que incluye la aplicación de correo electrónico y datos adjuntos de Windows. Se quitan las cuentas de correo aprovisionadas por Intune.</br>**Excepción**: Si Exchange está hospedado de forma local, no se quitan las cuentas de correo electrónico.|
+|Correo electrónico|Quita el correo electrónico habilitado para EFS que incluye la aplicación de correo electrónico y datos adjuntos de Windows.|No compatible.|Los perfiles de correo electrónico que se aprovisionan mediante Intune se quitan y el correo electrónico almacenado en caché en el dispositivo se elimina.|Quita el correo electrónico habilitado para EFS que incluye la aplicación de correo electrónico y datos adjuntos de Windows. Se quitan las cuentas de correo aprovisionadas por Intune.|
 |Separación de Azure Active Directory (AAD)|No.|No.|Registro de AAD eliminado.|No aplicable. Windows 10 no admite la eliminación selectiva en los dispositivos unidos a Azure Active Directory.|
 
 ## <a name="wipe-encryption-file-system-efs-enabled-content"></a>Borrar el contenido habilitado para el sistema de archivos de cifrado (EFS)
