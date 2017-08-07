@@ -8,9 +8,7 @@
 ### [Novedades de la interfaz de usuario de aplicaciones](whats-new-app-ui.md)
 ### [Novedades (Azure Portal)](whats-new-archive.md)
 ### [Novedades (Portal clásico)](whats-new-archive-classic.md)
-
-<!--## High-level architecture-->
-
+## [Arquitectura de alto nivel](high-level-architecture.md)
 ## [Ciclos de vida de aplicaciones y dispositivos](introduction-device-app-lifecycles.md)
 ### [Ciclo de vida del dispositivo](device-lifecycle.md)
 ### [Ciclo de vida de la aplicación](app-lifecycle.md)
@@ -264,6 +262,8 @@
 
 # Supervisión y solución de problemas
 ## [Uso del rol del departamento de soporte](help-desk-operators.md)
+## [Uso de Intune Data Warehouse](reports-nav-create-intune-reports.md)
+### [Conexión a Data Warehouse con Power BI](reports-proc-get-a-link-powerbi.md)
 
 # Desarrollo y personalización
 ## [Configuración de los valores personalizados del dispositivo](custom-settings-configure.md)
@@ -288,5 +288,16 @@
 ### [Componente de Intune App SDK Xamarin](app-sdk-xamarin.md)
 ## [Uso de las API Graph de Intune](intune-graph-apis.md)
 ## [API Graph de Intune](https://graph.microsoft.io/docs/api-reference/beta/resources/intune_graph_overview)
+## [Intune Data Warehouse API](reports-nav-intune-date-warehouse.md)
+<!-- ### [Get data from the Data Warehouse API with a REST client](reports-proc-data-rest.md) -->
+### [Punto de conexión de Warehouse API](reports-api-url.md)
+### [Modelo de datos de Data Warehouse](reports-ref-data-model.md)
+#### [Referencia de la entidad de fecha](reports-ref-date.md)
+#### [Referencia de la entidad de usuario](reports-ref-user.md)
+#### [Referencia de entidades de administración de aplicaciones móviles (MAM)](reports-ref-mobile-app-management.md)
+#### [Referencia de entidades de dispositivos](reports-ref-devices.md)
+#### [Referencia de entidades de aplicaciones](reports-ref-application.md)
+#### [Referencia de entidades de directivas](reports-ref-policy.md)
+<!-- #### [Relationship of Entities](reports-api-entity-relationships.md) !-->
 
 # [Glosario](intune-glossary.md)
