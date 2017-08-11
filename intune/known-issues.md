@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/17/2017
+ms.date: 07/31/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b08a097e785f85d8b9260cdaa60e720ed88cb4a1
-ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
+ms.openlocfilehash: d069775cf51e8c077a6f30123bf4fa2fe58b6bd8
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problemas conocidos de Microsoft Intune
 
@@ -37,7 +37,7 @@ Si quiere solicitar una nueva característica para Intune, considere la posibili
 
 ### <a name="groups-created-by-intune-during-migration-might-affect-functionality-of-other-microsoft-products"></a>Los grupos creados por Intune durante la migración pueden afectar a la funcionalidad de otros productos de Microsoft
 
-Al migrar de Intune clásico a Azure, es posible que vea un nuevo grupo denominado **All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421**. Este grupo contiene todos los usuarios de Azure Active Directory, no solo los usuarios con licencia de Intune. Este uso podría causar problemas con otros productos de Microsoft si espera que algunos usuarios nuevos o existentes no sean miembros de los grupos.
+Al migrar de Intune clásico a Azure Portal, es posible que vea un nuevo grupo denominado **All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421**. Este grupo contiene todos los usuarios de Azure Active Directory, no solo los usuarios con licencia de Intune. Este uso podría causar problemas con otros productos de Microsoft si espera que algunos usuarios nuevos o existentes no sean miembros de los grupos.
 
 ### <a name="secondary-migration-required-for-select-capabilities"></a>Migración secundaria necesaria para funcionalidades seleccionadas
 
@@ -51,7 +51,7 @@ Para usar estas funcionalidades en Azure Portal, se deben migrar las cuentas de 
 
 Como no se pueden administrar estas funcionalidades desde las consolas de Azure y de Silverlight clásicas, la migración:
 - Las deshabilita en la consola clásica,
-- Las habilita en la consola de Azure.  
+- Las habilita en la consola de Azure  
 
 Si ahora administra estas funciones de Intune en Azure Portal, tenga en cuenta los siguientes aspectos:
 
@@ -64,8 +64,7 @@ Si ha eliminado un token del Programa de inscripción de dispositivos de Apple e
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>Las hojas de estado para directivas migradas no funcionan.
 
-No se puede ver la información de estado de las directivas que se migraron desde el portal clásico en Azure Portal. Sin embargo, aún puede ver informes de estas directivas en el portal clásico.
-Para ver la información de estado de las directivas de configuración migradas, vuelva a crearlas en Azure Portal.
+No se puede ver la información de estado de las directivas que se migraron desde el portal clásico en Azure Portal. En cambio, aún puede ver informes de estas directivas en el portal clásico. Para ver la información de estado de las directivas de configuración migradas, vuelva a crearlas en Azure Portal.
 
 ## <a name="apps"></a>Aplicaciones
 
@@ -111,7 +110,7 @@ Para obtener más información, consulte [¿Qué es el cumplimiento del disposit
 
 ### <a name="ios-app-protection-policies"></a>Directivas de protección de aplicaciones iOS
 
-Puede definir las [directivas de protección de aplicaciones para iOS](app-protection-policy-settings-ios.md) que están disponibles para usuarios en dispositivos administrados a través de MAM sin inscripción. Debido a un error temporal, solo puede definir estas directivas para las versiones de iOS con un solo punto decimal en lugar de varios puntos decimales. En lugar de establecer una versión mínima de iOS 10.3.1, la establece para iOS 10.3. Esto se resolverá en una actualización disponible próximamente del SDK de iOS.
+Puede definir las [directivas de protección de aplicaciones para iOS](app-protection-policy-settings-ios.md) que están disponibles para usuarios en dispositivos administrados a través de la administración de aplicaciones móviles (MAM) sin inscripción. Debido a un error temporal, solo puede definir estas directivas para las versiones de iOS con un solo punto decimal en lugar de varios puntos decimales. En lugar de establecer una versión mínima de iOS 10.3.1, la establece para iOS 10.3. Esto se resolverá en una actualización disponible próximamente del SDK de iOS.
 
 
 ## <a name="administration-and-accounts"></a>Administración y cuentas

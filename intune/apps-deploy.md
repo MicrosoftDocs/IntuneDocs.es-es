@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 07/24/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 059c6d2c65c78b6a94f93c26d606abe0451edbbb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0bb3ca2f63ee963dae61ee6622d41fe4aef7adfd
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Asignación de aplicaciones a grupos con Microsoft Intune
 
@@ -59,9 +59,10 @@ Se pueden asignar aplicaciones a dispositivos aunque no estén administrados en 
     - **Requerida**: la aplicación se instala en dispositivos de los grupos seleccionados.
     - **Desinstalar**: la aplicación se ha desinstalado de dispositivos de los grupos seleccionados.
     - **Available with or without enrollment** (Disponible con o sin inscripción): asignar esta aplicación a grupos de usuarios cuyos dispositivos no se hayan inscrito en Intune.
+6. **Solo para aplicaciones iOS**: si ha creado un perfil de VPN para iOS que contiene la configuración de VPN por aplicación, puede seleccionarlo en **VPN**. Cuando se ejecuta la aplicación, se abre la conexión de VPN. Para obtener más información, vea [Configuración de VPN para dispositivos iOS](vpn-settings-ios.md).
 6. Cuando termine, elija **Guardar**.
 
-La aplicación ahora se asigna al grupo que ha seleccionado.
+La aplicación ahora se asigna a los grupos que ha seleccionado.
 
 ## <a name="how-conflicts-between-app-intents-are-resolved"></a>Cómo se resuelven los conflictos entre las intenciones de aplicación
 
@@ -100,7 +101,7 @@ A veces, la misma aplicación se asigna a varios grupos, pero con diferentes int
 |Usuario disponible sin inscripción|Usuario disponible|Available|
 |Usuario disponible sin inscripción|Dispositivo Requerido|Requerido y Disponible sin inscripción|
 |Usuario disponible sin inscripción|Dispositivo no disponible|Disponible sin inscripción|
-|Usuario disponible sin inscripción|Desinstalar dispositivo|Desinstalar y Disponible sin inscripción.<br>Si el usuario no ha instalado la aplicación desde el portal de empresa entonces se respetará la desinstalación.<br>Si el usuario instala la aplicación desde el portal de empresa, entonces la instalación se priorizará sobre la desinstalación.|
+|Usuario disponible sin inscripción|Desinstalar dispositivo|Desinstalar y Disponible sin inscripción.<br>Si el usuario no ha instalado la aplicación desde el portal de empresa, entonces se respeta la desinstalación.<br>Si el usuario instala la aplicación desde el portal de empresa, entonces la instalación se prioriza sobre la desinstalación.|
 
 >[!NOTE]
 >Solo para aplicaciones administradas de la tienda de iOS, cuando se agregan a Intune y se asignan como necesarias, se crean automáticamente con las intenciones Requerido y Disponible.

@@ -15,11 +15,11 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 272628c501d15dc9661a1110e7dcab2d0e9f1d02
-ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
+ms.openlocfilehash: f9274daf30a89f75c5c664a17a5f890540e9f562
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/03/2017
 ---
 #  <a name="ios-app-protection-policy-settings"></a>Configuración de directivas de protección de aplicaciones de iOS
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -69,7 +69,7 @@ La directiva de protección de aplicaciones de Intune puede permitir la transfer
 | **Requerir credenciales corporativas en acceso** | Pulse **Sí** para requerir que el usuario inicie sesión con su cuenta profesional o educativa en lugar de escribir un PIN para el acceso a la aplicación. Si se establece en **Sí**, se reemplazarán los requisitos de introducción de un PIN o un Touch ID.  | No |
 | **Bloquear la ejecución de aplicaciones administradas en dispositivos descodificados o descifrados** |  Pulse **Sí** para impedir que esta aplicación se ejecute en dispositivos descodificados o descifrados. El usuario seguirá siendo capaz de usar esta aplicación para las tareas personales, pero tendrá que usar un dispositivo distinto para tener acceso a los datos profesionales o educativos de esta aplicación. | Sí |
 | **Volver a comprobar los requisitos de acceso después de (minutos)** | Configure las siguientes opciones: <ul><li>**Tiempo de espera**: es el número de minutos antes de que se vuelvan a comprobar los requisitos de acceso (definidos anteriormente en la directiva). Por ejemplo, un administrador activa el PIN en la directiva, un usuario abre una aplicación MAM y debe escribir un PIN. Cuando se usa esta opción, el usuario no tendría que escribir un PIN en ninguna aplicación MAM durante **30 minutos** (valor predeterminado).</li><li>**Período de gracia sin conexión**: es el número de minutos que las aplicaciones MAM pueden ejecutarse sin conexión, especifique el tiempo (en minutos) que debe transcurrir antes de que se vuelvan a comprobar los requisitos de acceso de la aplicación. Valor predeterminado = **720** minutos (12 horas). Una vez transcurrido este período, la aplicación requerirá la autenticación de usuario en AAD para poder seguir ejecutándose.</li></ul>| Tiempo de espera: 30 <br><br> Sin conexión: 720 |
-| **Intervalo sin conexión antes de que se borren los datos de la aplicación (días)** | Después de este número de días (definido por el administrador) de ejecución sin conexión, la propia aplicación realizará un borrado selectivo. Este borrado selectivo es el mismo que el que puede iniciar el administrador en el flujo de trabajo de borrado MAM. <br><br> | 90 días |
+| **Intervalo sin conexión antes de que se borren los datos de la aplicación (días)** | Después de estos días (definidos por el administrador) de ejecución sin conexión, la aplicación necesitará que el usuario se conecte a la red y vuelva a autenticarse. Si el usuario se autentica correctamente, puede seguir teniendo acceso a sus datos y el intervalo sin conexión se restablecerá.  Si el usuario no puede autenticarse, la aplicación realizará un borrado selectivo de los datos y la cuenta de los usuarios.  Vea [Borrado solo de datos corporativos de aplicaciones administradas por Intune](https://docs.microsoft.com/en-us/intune/apps-selective-wipe) para obtener más información sobre qué datos se eliminan con un borrado selectivo. <br><br> | 90 días |
 | **Deshabilitar el PIN de aplicación cuando se administra el PIN del dispositivo** | Elija **Sí** para deshabilitar el PIN de aplicación cuando se detecta un bloqueo de dispositivo en un dispositivo inscrito. | No |
 | **Requiere el sistema operativo mínimo iOS** | Pulse **Sí** para requerir un sistema operativo mínimo iOS para usar esta aplicación. Se bloqueará el acceso al usuario si la versión de iOS en el dispositivo no cumple el requisito. Esta directiva admite un solo punto decimal, como iOS 10.3. | No |
 | **Requiere el sistema operativo mínimo iOS (solo advertencia)** | Pulse **Sí** para requerir un sistema operativo mínimo iOS para usar esta aplicación. El usuario verá una notificación si la versión de iOS en el dispositivo no cumple el requisito. Se puede descartar esta notificación. Esta directiva admite un solo punto decimal, como iOS 10.3. | No |

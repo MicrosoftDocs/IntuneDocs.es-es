@@ -263,7 +263,7 @@
 ### [Cómo obtener aplicaciones de Windows](end-user-apps-windows.md)
 
 # Supervisión y solución de problemas
-## [Uso del rol del departamento de soporte](help-desk-operators.md)
+## [Ayudar a los usuarios a solucionar problemas](help-desk-operators.md)
 ## [Uso de Intune Data Warehouse](reports-nav-create-intune-reports.md)
 ### [Conexión a Data Warehouse con Power BI](reports-proc-get-a-link-powerbi.md)
 

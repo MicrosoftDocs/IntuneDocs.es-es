@@ -15,11 +15,11 @@ ms.assetid: 0444183e-f924-4605-96a8-48fdfbc58fd1
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e442a0ee7953fe5474d39e1a29a88dfcca58800d
-ms.sourcegitcommit: abd8f9f62751e098f3f16b5b7de7eb006b7510e4
+ms.openlocfilehash: 55fa980c79ed178649562189dfe8fb704e26fcd9
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-preview-with-intune"></a>Creación de una directiva de cumplimiento para dispositivos macOS (versión preliminar) con Intune
 
@@ -104,6 +104,9 @@ Tiene distintas categorías con valores distintos entre los cuales elegir cuando
 
 - **Number of previous passwords to prevent reuse** (Número de contraseñas anteriores para impedir que se vuelvan a usar): especifique el número de contraseñas usadas anteriormente que no se pueden volver a usar.
 
+    > [!IMPORTANT]
+    > Cuando se cambia el requisito de contraseña en un dispositivo macOS, no entra en vigor hasta la próxima vez que el usuario cambie su contraseña. Por ejemplo, si establece la restricción de longitud de contraseña en ocho dígitos y el dispositivo macOS actualmente tiene una contraseña de 6 dígitos, el dispositivo sigue siendo compatible hasta la próxima vez que el usuario actualice su contraseña en el dispositivo.
+
 ## <a name="to-create-a-device-compliance-policy"></a>Pasos para crear una directiva de cumplimiento de dispositivos
 
 1. Vaya a [Azure Portal](https://portal.azure.com) e inicie sesión con sus credenciales de Intune.
@@ -128,7 +131,7 @@ Tiene distintas categorías con valores distintos entre los cuales elegir cuando
 
 ## <a name="assign-user-groups"></a>Asignación de grupos de usuarios
 
-Para asignar una directiva de cumplimiento a los usuarios, elija una directiva que haya configurado. Las directivas existentes se pueden encontrar en la hoja **Directivas de cumplimiento normativo**.
+Para asignar una directiva de cumplimiento a los usuarios, elija una directiva que haya configurado. Las directivas existentes se pueden encontrar en la hoja **Directivas de cumplimiento**.
 
 1. Elija la directiva de cumplimiento de dispositivos que desea asignar a los usuarios y elija **Asignaciones**. Se abre la hoja donde puede seleccionar **Grupos de seguridad de Azure Active Directory** y asignarlos a la directiva.
 

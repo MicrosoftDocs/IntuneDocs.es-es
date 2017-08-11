@@ -15,11 +15,11 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: de40d149818b2655a8fc3b647a7e850973814165
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 978e32476069183865f7e729de9791e13bc81ebc
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Supervisión de las directivas de protección de aplicaciones
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -46,11 +46,13 @@ Hay tres lugares diferentes para supervisar el estado de cumplimiento:
 
 ![Ventana de resumen en la hoja Administración de aplicaciones móviles de Intune](./media/app-protection-user-status-summary.png)
 
--   **USUARIOS:** número total de usuarios de la empresa que usan las aplicaciones que están asociadas a la directiva.
+-   **Usuarios**: el número total de usuarios en su empresa que está usando una aplicación que está asociada con una directiva en un contexto de trabajo.
 
--   **ADMINISTRADO POR UNA DIRECTIVA:** número de usuarios que han usado al menos una de las aplicaciones en un contexto de trabajo.
+-   **ADMINISTRADO POR UNA DIRECTIVA**: el número de usuarios que ha usado una aplicación que tiene una directiva asignada a ellos en un contexto de trabajo.
 
--   **NINGUNA DIRECTIVA:** número de usuarios que usan las aplicaciones asociadas a la directiva, pero a los que no se les aplica la directiva. Considere la posibilidad de agregar estos usuarios a la directiva.
+-   **SIN DIRECTIVA**: el número de usuarios que está usando una aplicación que no tiene como destino ninguna directiva en un contexto de trabajo. Considere la posibilidad de agregar estos usuarios a la directiva.
+    > [!NOTE]
+    > Si tiene varias directivas por plataforma, se considerará que un usuario está administrado por una directiva cuando tenga al menos una directiva asignada.
 
 - **Usuarios marcados:** número de usuarios que experimentan problemas. Actualmente, solo los usuarios con dispositivos descodificados aparecen como **Usuarios marcados**.
 
