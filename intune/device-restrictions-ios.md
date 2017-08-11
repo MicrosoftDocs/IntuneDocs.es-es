@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/11/2017
+ms.date: 07/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,90 +15,67 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ec66c3864aae3d680c006ada95859df0e7f0e84
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+ms.openlocfilehash: eec078fa0ddc0414b2912e3df841841d96b2e79e
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 08/03/2017
 ---
-# Configuración de restricciones de dispositivos iOS en Microsoft Intune
-<a id="ios-device-restriction-settings-in-microsoft-intune" class="xliff"></a>
+# <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos iOS en Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## General
-<a id="general" class="xliff"></a>
--   **Cámara**: seleccione si se puede usar la cámara del dispositivo.   
+## <a name="general"></a>General
+    
 -   **Envío de datos de diagnóstico**: permite o impide que el dispositivo envíe datos de diagnóstico a Apple.
--   **FaceTime**: permite el uso de la aplicación FaceTime en el dispositivo.
 -   **Captura de pantalla**: permite que el usuario capture el contenido de la pantalla como una imagen.
--   **Siri**: permite el uso del asistente de voz Siri en el dispositivo.
-    -   **Siri con dispositivo bloqueado**: permite el uso del asistente de voz Siri en el dispositivo aunque esté bloqueado.
-    -   **Filtro de obscenidad de Siri (solo supervisado)**: evita que Siri dicte o hable con un lenguaje obsceno.
-    -   **Consulta de Siri de contenido generado por usuarios de Internet (solo supervisada)**: permite que Siri acceda a sitios web para responder a preguntas.
+    - **Observación de pantalla remota mediante la aplicación Aula (solo supervisado)**: permite o impide que la aplicación Aula de Apple observe la pantalla de dispositivos iOS.
+    - **Observación de pantalla sin mensajes desde la aplicación Aula (solo con supervisión)**: si se permite, los profesores pueden observar en silencio la pantalla de los dispositivos iOS de los estudiantes con la aplicación Aula sin que lo sepan los estudiantes.
 -   **Certificados TLS que no son de confianza**: permite certificados de Seguridad de capa de transporte en los que no se confía en el dispositivo.
+-   **Confianza de aplicaciones empresariales**: permite que el usuario confíe en aplicaciones que no se descargaron de la tienda de aplicaciones.
+- **Modificación de la cuenta (solo supervisada)**: cuando está bloqueada, evita que el usuario modifique la configuración específica del dispositivo desde la aplicación de configuración de iOS, como crear cuentas nuevas del dispositivo y cambiar el nombre de usuario o la contraseña.
+Esto también se aplica a valores accesibles desde la aplicación de configuración de iOS como correo, contactos, calendario, Facebook y Twitter. No es válido para las aplicaciones con la configuración de la cuenta que no se pueden configurar desde la aplicación de configuración de iOS, por ejemplo, la aplicación de Microsoft Outlook.
+- **Habilitación de restricciones en la configuración del dispositivo (solo supervisado)**: permite al usuario configurar restricciones (controles parentales) en el dispositivo.
+- **Uso de la opción de borrar todo el contenido y la configuración del dispositivo (solo supervisado)**: permite que el usuario use la opción de borrar todo el contenido y la configuración del dispositivo.
+- **Modificación del nombre del dispositivo (solo supervisado)**: permite que el usuario cambie el nombre del dispositivo.
+- **Modificación de la configuración de notificaciones (solo supervisado)**: permitir al usuario cambiar la configuración de notificación del dispositivo.
+- **Modificación del fondo de pantalla (solo supervisado)**: permite al usuario cambiar el fondo de pantalla del dispositivo.
+- **Modificación de la configuración de confianza de aplicaciones empresariales (solo supervisado)**: permite que el usuario confíe en aplicaciones que no se descargaron de la tienda de aplicaciones.
+- **Cambios en el perfil de configuración**: permite al usuario instalar perfiles de configuración.
+- **Bloqueo de activación (solo supervisado)**: permite el bloqueo de activación en dispositivos iOS supervisados.
+
+## <a name="password"></a>Contraseña
+-   **Contraseña**: exige que el usuario final escriba una contraseña para acceder al dispositivo.
+    -   **Contraseñas sencillas**: permite contraseñas sencillas, como 0000 y 1234.
+    -   **Tipo de contraseña necesaria**: especifica el tipo de contraseña que es necesaria, como solo numérica o alfanumérica.
+    -   **Número de caracteres no alfanuméricos en la contraseña**: especifica el número de caracteres de símbolos (como **#** o **@**) que se deben incluir en la contraseña.
+    -   **Minimum password length** (Longitud mínima de contraseña): especifica el número mínimo de caracteres en la contraseña.
+    -   **Número de errores de inicio de sesión antes de borrar el dispositivo**: especifique el número de intentos de inicios de sesión erróneos antes de que esta configuración borre el dispositivo.
+    -   **Máximo de minutos tras bloqueo de pantalla antes de solicitar la contraseña**<sup>1</sup>: especifique cuánto tiempo puede permanecer inactivo el dispositivo antes de que el usuario deba volver a escribir su contraseña.
+    -   **Máximo de minutos de inactividad hasta que se bloquea la pantalla**<sup>1</sup>: especifique el número de minutos antes de que la pantalla del dispositivo se apague.
+    -   **Caducidad de la contraseña (días)**: especifique el número de días antes de que deba cambiarse la contraseña del dispositivo.
+    -   **Impedir la reutilización de contraseñas anteriores**: especifique el número de contraseñas usadas anteriormente que el dispositivo puede recordar.
+    -   **Desbloqueo con huella digital**: permite el uso de una huella digital para desbloquear dispositivos compatibles.
+- **Modificación del código de acceso (solo supervisado)**: impide que el código de acceso se cambie, se agregue o se quite. 
+    - **Modificación de huella digital (solo con supervisión)**: impide que el usuario cambie, agregue o quite la configuración de TouchID.
+
+<sup>1</sup>Al configurar los valores **Máximo de minutos de inactividad hasta que se bloquea la pantalla** y **Máximo de minutos tras bloqueo de pantalla antes de solicitar la contraseña**, se aplican en secuencia. Por ejemplo, si establece el valor para ambas opciones en **5** minutos, la pantalla se apagará automáticamente transcurridos 5 minutos y el dispositivo se bloqueará pasados 5 minutos más. Sin embargo, si el usuario apaga la pantalla manualmente, la segunda opción se aplica inmediatamente. En el mismo ejemplo, una vez que el usuario apague la pantalla, el dispositivo se bloqueará 5 minutos más tarde.
+
+## <a name="locked-screen-experience"></a>Experiencia de pantalla bloqueada
+
 -   **Acceso al centro de control con dispositivo bloqueado**: permite al usuario acceder a la aplicación del centro de control cuando el dispositivo está bloqueado.
 -   **Notificaciones con dispositivo bloqueado**: permite al usuario acceder a la vista de notificaciones sin desbloquear el dispositivo.
 -   **Permitir libreta con dispositivo bloqueado**: permite al usuario acceder a la aplicación Libreta mientras el dispositivo está bloqueado.
 -   **Vista de hoy con dispositivo bloqueado**: permite al usuario ver la vista del día de hoy cuando el dispositivo está bloqueado.
--   **Confianza de aplicaciones empresariales**: permite que el usuario confíe en aplicaciones que no se descargaron de la tienda de aplicaciones.
--   **AirDrop (solo supervisado)**: permite que el usuario de la característica AirDrop intercambie contenido con dispositivos cercanos.
--   **Búsqueda de Spotlight para devolver resultados de Internet (solo supervisada)**: permite que la búsqueda de Spotlight se conecte a Internet para obtener más resultados.
--   **Búsqueda de definiciones de palabras (solo supervisada)**: permite la característica de iOS que le deja resaltar una palabra y buscar su definición.
--   **Teclados predictivos (solo supervisados)**: permite el uso de teclados predictivos que sugieren palabras que el usuario podría buscar.
--   **Autocorrección (solo supervisada)**: permite que el dispositivo corrija automáticamente las palabras mal escritas.
--   **Revisión ortográfica de teclado (solo supervisada)**: permite el corrector ortográfico del dispositivo.
--   **Métodos abreviados de teclado (solo supervisados)**: permite el uso de métodos abreviados de teclado.
--   **Detección de muñeca para Apple Watch enlazado**: cuando se habilita, Apple Watch no muestra notificaciones si no se lleva puesto.
-- **Requerir contraseña de emparejamiento para solicitudes salientes de AirPlay**: solicita una contraseña de emparejamiento cuando el usuario usa AirPlay para transmitir contenido a otros dispositivos Apple.
-- **Modificación de la cuenta (solo supervisada)**: cuando está bloqueada, evita que el usuario modifique la configuración específica del dispositivo desde la aplicación de configuración de iOS, como crear cuentas nuevas del dispositivo y cambiar el nombre de usuario o la contraseña.
-Esto también se aplica a valores accesibles desde la aplicación de configuración de iOS como correo, contactos, calendario, Facebook y Twitter. No es válido para las aplicaciones con la configuración de la cuenta que no se pueden configurar desde la aplicación de configuración de iOS, por ejemplo, la aplicación de Microsoft Outlook.
-- **Emparejamiento con Apple Watch (solo supervisado)**: permite al dispositivo emparejarse con un dispositivo Apple Watch.
-- **Modificación de Bluetooth (solo supervisado)**: impide al usuario cambiar la configuración de Bluetooth del dispositivo.
-- **Observación de pantalla remota mediante la aplicación Classroom (solo supervisado)**: permite o impide que la aplicación Classroom observe la pantalla en dispositivos remotos.
-- **Habilitación de restricciones en la configuración del dispositivo (solo supervisado)**: permite al usuario configurar restricciones (controles parentales) en el dispositivo.
-- **Uso de la opción de borrar todo el contenido y la configuración del dispositivo (solo supervisado)**: permite que el usuario use la opción de borrar todo el contenido y la configuración del dispositivo.
-- **Modificación del nombre del dispositivo (solo supervisado)**: permite que el usuario cambie el nombre del dispositivo.
-- **Modificación de la configuración de envío de diagnósticos (solo supervisado)**: permite o impide que el dispositivo envíe datos de diagnóstico a Apple.
-- **Emparejamiento de host para controlar los dispositivos con los que se puede emparejar un dispositivo iOS (solo supervisado)**: permite el emparejamiento de host para dejar que el administrador controle con qué dispositivos se puede emparejar un dispositivo iOS.
-- **Modificación de la configuración de notificaciones (solo supervisado)**: permitir al usuario cambiar la configuración de notificación del dispositivo.
-- **Modificación del código de acceso (solo supervisado)**: permite agregar, cambiar o quitar la contraseña del dispositivo.
-- **Modificación del fondo de pantalla (solo supervisado)**: permite al usuario cambiar el fondo de pantalla del dispositivo.
-- **Modificación de la configuración de confianza de aplicaciones empresariales (solo supervisado)**: permite que el usuario confíe en aplicaciones que no se descargaron de la tienda de aplicaciones.
-- **Instalación de aplicaciones de App Store (solo supervisado)**: permite que el dispositivo acceda a la tienda de aplicaciones e instale aplicaciones.
-- **Cambios en la configuración de la aplicación Buscar a mis amigos (solo supervisado)**: permite que el usuario cambiar la configuración de la aplicación Buscar a mis amigos.
-- **Tienda iBooks (solo supervisado)**: permite que el usuario explore y compre libros de la tienda iBooks.
-- **Aplicación Mensajes del dispositivo (solo supervisado)**: permite el uso de la aplicación Mensajes para enviar y leer mensajes de texto.
-- **Podcasts (solo supervisado)**: permite el uso de la aplicación Podcasts.
-- **Servicio Música (solo supervisado)**: permite el uso de la aplicación Música.
-- **Servicio Radio de iTunes (solo supervisado)**: permite el uso de la aplicación Radio de iTunes.
-- **Apple News (solo supervisado)**: permite el uso de la aplicación Apple News.
-- **Cambios en el perfil de configuración**: permite al usuario instalar perfiles de configuración.
 
-## Contraseña
-<a id="password" class="xliff"></a>
--   **Contraseña necesaria**: exige que el usuario final escriba una contraseña para acceder al dispositivo.
--   **Contraseñas sencillas**: permite contraseñas sencillas, como 0000 y 1234.
--   **Tipo de contraseña necesaria**: especifica el tipo de contraseña que es necesaria, como solo numérica o alfanumérica.
--   **Número de caracteres no alfanuméricos en la contraseña**: especifica el número de caracteres de símbolos (como **#** o **@**) que se deben incluir en la contraseña.
--   **Minimum password length** (Longitud mínima de contraseña): especifica el número mínimo de caracteres en la contraseña.
--   **Número de errores de inicio de sesión antes de borrar el dispositivo**: especifique el número de intentos de inicios de sesión erróneos antes de que esta configuración borre el dispositivo.
--   **Máximo de minutos tras bloqueo de pantalla antes de solicitar la contraseña**<sup>1</sup>: especifique cuánto tiempo puede permanecer inactivo el dispositivo antes de que el usuario deba volver a escribir su contraseña.
--   **Máximo de minutos de inactividad hasta que se bloquea la pantalla**<sup>1</sup>: especifique el número de minutos antes de que la pantalla del dispositivo se apague.
--   **Caducidad de la contraseña (días)**: especifique el número de días antes de que deba cambiarse la contraseña del dispositivo.
--   **Impedir la reutilización de contraseñas anteriores**: especifique el número de contraseñas usadas anteriormente que el dispositivo puede recordar.
--   **Desbloqueo con huella digital**: permite el uso de una huella digital para desbloquear dispositivos compatibles.
-
-<sup>1</sup>Al configurar los valores **Máximo de minutos de inactividad hasta que se bloquea la pantalla** y **Máximo de minutos tras bloqueo de pantalla antes de solicitar la contraseña**, se aplican en secuencia. Por ejemplo, si establece el valor para ambas opciones en **5** minutos, la pantalla se apagará automáticamente transcurridos 5 minutos y el dispositivo se bloqueará pasados 5 minutos más. Sin embargo, si el usuario apaga la pantalla manualmente, la segunda opción se aplica inmediatamente. En el mismo ejemplo, una vez que el usuario apague la pantalla, el dispositivo se bloqueará 5 minutos más tarde.
-
-## Tienda de aplicaciones, presentación de documentos, juegos
-<a id="app-store-doc-viewing-gaming" class="xliff"></a>
+## <a name="app-store-doc-viewing-gaming"></a>Tienda de aplicaciones, presentación de documentos, juegos
 
 
--   **Tienda de aplicaciones (solo supervisado)**: bloquea el acceso a la tienda de aplicaciones en dispositivos supervisados.
+-   **Tienda de aplicaciones**: bloquea el acceso a la tienda de aplicaciones en dispositivos supervisados.
+    - **Instalación de aplicaciones de App Store (solo supervisado)**: bloquea la tienda de aplicaciones desde la pantalla principal del dispositivo. Los usuarios finales pueden seguir usando iTunes o Apple Configurator para instalar aplicaciones.
+    - **Descargas de aplicaciones automáticas (solo supervisado)**: impide que las aplicaciones que se han adquirido en otro dispositivo iOS se descarguen en este dispositivo.
 -   **Contraseña para acceder a la tienda de aplicaciones**: exige al usuario que escriba una contraseña antes de que pueda visitar la tienda de aplicaciones.
 -   **Compras desde la aplicación**: permite realizar compras en la tienda desde una aplicación en ejecución.
--   **Descargas de aplicaciones automáticas (solo supervisado)** -
 -   **Música, podcasts o contenido de noticias explícitos de iTunes (solo supervisado)**: permite que el dispositivo acceda a contenido clasificado como adulto en la tienda.
 -   **Descargar contenido marcado como " Erótico" de la tienda iBooks**: permite que el usuario descargue libros de la categoría "Erótica".
 -   **Visualización de documentos corporativos en aplicaciones no administradas**: permite la visualización de documentos corporativos en cualquier aplicación.<br>**Ejemplo:** Quiere evitar que los usuarios guarden archivos de la aplicación OneDrive en Dropbox. Configure este ajuste en no. Después de que el dispositivo reciba la directiva (por ejemplo, después de un reinicio), ya no le permitirá guardar.
@@ -110,8 +87,24 @@ Esto también se aplica a valores accesibles desde la aplicación de configuraci
 -   **Región de clasificación**: elija la región de clasificación para la que quiere configurar descargas permitidas y luego elija la clasificación permitida para **Películas** y **Programas de TV**.
 -   **Aplicaciones**: elija la clasificación por edades permitida de las aplicaciones que los usuarios podrán descargar. También puede elegir **Permitir todas las aplicaciones**.
 
-## Aplicaciones restringidas
-<a id="restricted-apps" class="xliff"></a>
+## <a name="built-in-apps"></a>Aplicaciones integradas
+
+-   **Cámara**: seleccione si se puede usar la cámara del dispositivo. 
+    -   **FaceTime**: permite el uso de la aplicación FaceTime en el dispositivo.
+-   **Siri**: permite el uso del asistente de voz Siri en el dispositivo.
+    -   **Siri con dispositivo bloqueado**: permite el uso del asistente de voz Siri en el dispositivo aunque esté bloqueado.
+    -   **Filtro de obscenidad de Siri (solo supervisado)**: evita que Siri dicte o hable con un lenguaje obsceno.
+    -   **Consulta de Siri de contenido generado por usuarios de Internet (solo supervisada)**: permite que Siri acceda a sitios web para responder a preguntas.
+- **Apple News (solo supervisado)**: permite el uso de la aplicación Apple News.
+- **Tienda iBooks (solo supervisado)**: permite que el usuario explore y compre libros de la tienda iBooks.
+- **Aplicación Mensajes del dispositivo (solo supervisado)**: permite el uso de la aplicación Mensajes para enviar y leer mensajes de texto.
+- **Podcasts (solo supervisado)**: permite el uso de la aplicación Podcasts.
+- **Servicio Música (solo supervisado)**: permite el uso de la aplicación Música.
+- **Servicio Radio de iTunes (solo supervisado)**: permite el uso de la aplicación Radio de iTunes.
+- **Cambios en la configuración de la aplicación Buscar a mis amigos (solo supervisado)**: permite que el usuario cambiar la configuración de la aplicación Buscar a mis amigos.
+- **Búsqueda de Spotlight para devolver resultados de Internet (solo supervisada)**: permite que la búsqueda de Spotlight se conecte a Internet para obtener más resultados.
+
+## <a name="restricted-apps"></a>Aplicaciones restringidas
 
 En la lista de aplicaciones restringidas, puede configurar una de las listas siguientes:
 
@@ -120,8 +113,7 @@ En la lista de aplicaciones restringidas, puede configurar una de las listas sig
 
 Para configurar la lista, haga clic en **Agregar** y especifique un nombre de su elección. Opcionalmente, puede indicar el editor de la aplicación y la dirección URL de la aplicación en la tienda de aplicaciones.
 
-### Especificación de la dirección URL para una aplicación de la tienda
-<a id="how-to-specify-the-url-to-an-app-in-the-store" class="xliff"></a>
+### <a name="how-to-specify-the-url-to-an-app-in-the-store"></a>Especificación de la dirección URL para una aplicación de la tienda
 
 Para especificar una dirección URL en la lista de aplicaciones, use el siguiente formato:
 
@@ -136,13 +128,11 @@ Ejemplo: busque Microsoft Word para iPad. La dirección URL que debe usar es htt
 
 
 
-### Opciones adicionales
-<a id="additional-options" class="xliff"></a>
+### <a name="additional-options"></a>Opciones adicionales
 
 También puede hacer clic en **Importar** para rellenar la lista a partir de un archivo csv con el formato <*url de aplicación*>, <*nombre de aplicación*>, <*editor de aplicación*> o en **Exportar** para crear un archivo csv que contenga la lista de aplicaciones restringidas en el mismo formato.
 
-## Aplicaciones visibles u ocultas
-<a id="show-or-hide-apps" class="xliff"></a>
+## <a name="show-or-hide-apps-supervised-only"></a>Mostrar u ocultar aplicaciones (solo con supervisión)
 
 En la lista de aplicaciones visibles u ocultas, puede configurar una de las siguientes listas (requiere dispositivos supervisados que ejecuten iOS 9.3 o posterior).
 
@@ -151,8 +141,7 @@ En la lista de aplicaciones visibles u ocultas, puede configurar una de las sigu
 
 Para configurar la lista, haga clic en **Agregar** y especifique un nombre de su elección. Opcionalmente, puede indicar el editor de la aplicación y la dirección URL de la aplicación en la tienda de aplicaciones.
 
-### Especificación de la dirección URL para una aplicación de la tienda
-<a id="how-to-specify-the-url-to-an-app-in-the-store" class="xliff"></a>
+### <a name="how-to-specify-the-url-to-an-app-in-the-store"></a>Especificación de la dirección URL para una aplicación de la tienda
 
 Para especificar una dirección URL en la lista de aplicaciones, use el siguiente formato:
 
@@ -164,22 +153,43 @@ Ejemplo: busque Microsoft Word para iPad. La dirección URL que debe usar es htt
 > [!Note]
 > También puede utilizar el software de iTunes para encontrar la aplicación y, a continuación, utilizar el comando **Copiar vínculo** para obtener la dirección URL de la aplicación.
 
-### Opciones adicionales
-<a id="additional-options" class="xliff"></a>
+### <a name="additional-options"></a>Opciones adicionales
 
 También puede hacer clic en **Importar** para rellenar la lista a partir de un archivo csv con el formato <*url de aplicación*>, <*nombre de aplicación*>, <*editor de aplicación*> o en **Exportar** para crear un archivo csv que contenga la lista de aplicaciones visibles u ocultas en el mismo formato.
 
 
-## Móvil
-<a id="cellular" class="xliff"></a>
+## <a name="wireless"></a>Inalámbrico
 -   **Itinerancia de datos**: permite la itinerancia de datos cuando el dispositivo está en una red de telefonía móvil.
 -   **Captura de fondo global en itinerancia**: permite que el dispositivo capture datos, como el correo electrónico, mientras está en itinerancia en una red de telefonía móvil.
 -   **Marcación por voz**: permite el uso de la característica de marcación por voz en el dispositivo.
 -   **Itinerancia de voz**: permite la itinerancia de voz cuando el dispositivo está en una red de telefonía móvil.
 -   **Cambios en la configuración de uso de datos móviles de la aplicación (solo supervisado)**: permite al usuario controlar qué aplicaciones pueden usar datos móviles.
+-   **Punto de acceso personal**: no permite que el dispositivo se use como un punto de acceso personal. Esta opción puede que no sea compatible con algunos operadores.
+-   **Conexión a redes Wi-Fi solo con perfiles de configuración (solo con supervisión)**: solo permite que el dispositivo se una a redes Wi-Fi que se han configurado con un perfil de Wi-Fi de Intune.
 
-## Nube y almacenamiento
-<a id="cloud-and-storage" class="xliff"></a>
+- **Reglas de uso de datos móviles (solo aplicaciones administradas)**: le permite definir los tipos de datos que las aplicaciones administradas pueden usar cuando están en redes de telefonía móvil. Elija de entre las siguientes opciones:
+    - **Bloquear uso de datos móviles**
+    - **Bloquear uso de datos móviles en itinerancia**
+
+## <a name="connected-devices"></a>Dispositivos conectados
+
+-   **AirDrop (solo supervisado)**: permite que el usuario de la característica AirDrop intercambie contenido con dispositivos cercanos.
+-   **Emparejamiento con Apple Watch (solo supervisado)**: permite al dispositivo emparejarse con un dispositivo Apple Watch.
+-   **Detección de muñeca para Apple Watch enlazado**: cuando se habilita, Apple Watch no muestra notificaciones si no se lleva puesto.
+-   **Modificación de Bluetooth (solo supervisado)**: impide al usuario cambiar la configuración de Bluetooth del dispositivo.
+-   **Emparejamiento de host para controlar los dispositivos con los que se puede emparejar un dispositivo iOS (solo supervisado)**: permite el emparejamiento de host para dejar que el administrador controle con qué dispositivos se puede emparejar un dispositivo iOS.
+-   **Requerir contraseña de emparejamiento para solicitudes salientes de AirPlay**: solicita una contraseña de emparejamiento cuando el usuario usa AirPlay para transmitir contenido a otros dispositivos Apple.
+
+## <a name="keyboard-and-dictionary"></a>Teclado y diccionario
+
+-   **Búsqueda de definiciones de palabras (solo supervisada)**: permite la característica de iOS que le deja resaltar una palabra y buscar su definición.
+-   **Teclados predictivos (solo supervisados)**: permite el uso de teclados predictivos que sugieren palabras que el usuario podría buscar.
+-   **Autocorrección (solo supervisada)**: permite que el dispositivo corrija automáticamente las palabras mal escritas.
+-   **Revisión ortográfica de teclado (solo supervisada)**: permite el corrector ortográfico del dispositivo.
+-   **Métodos abreviados de teclado (solo supervisados)**: permite el uso de métodos abreviados de teclado.
+-   **Dictado (solo con supervisión)**: impide que el usuario use la entrada de voz para escribir texto.
+
+## <a name="cloud-and-storage"></a>Nube y almacenamiento
 -   **Copia de seguridad en iCloud**: permite al usuario realizar una copia de seguridad del dispositivo en iCloud.
 -   **Sincronización del documento con iCloud (solo supervisado)**: permite la sincronización de documentos y de clave-valor con el espacio de almacenamiento de iCloud.
 -   **Sincronización de Photo Stream en iCloud**: permite que los usuarios habiliten **Mis fotos en streaming** en su dispositivo para que las fotos se sincronicen con iCloud y está disponible en todos los dispositivos de usuario.
@@ -189,13 +199,11 @@ También puede hacer clic en **Importar** para rellenar la lista a partir de un 
 -   **Fotos en streaming compartidas**: establezca en **No** para deshabilitar **fotos compartidas en iCloud** en el dispositivo.
 -   **Continuación de la actividad**: permite que el usuario continúe el trabajo que inició en un dispositivo iOS en otro dispositivo iOS o macOS (Handoff).
 
-## Modo de aplicación única autónoma (solo supervisado)
-<a id="autonomous-single-app-mode-supervised-only" class="xliff"></a>
+## <a name="autonomous-single-app-mode-supervised-only"></a>Modo de aplicación única autónoma (solo supervisado)
 
 Use esta opción para configurar dispositivos iOS de modo que ejecuten aplicaciones especificadas en modo de aplicación única autónoma. Cuando se configura este modo y se ejecuta la aplicación, el dispositivo se bloquea para que solo pueda ejecutar esa aplicación. Un ejemplo es cuando se configura una aplicación que permite a los usuarios hacer un examen en el dispositivo. Cuando se completan las acciones de la aplicación o quita esta directiva, el dispositivo vuelve a su estado normal.
 
-### Configuración
-<a id="settings" class="xliff"></a>
+### <a name="settings"></a>Configuración
 
 - **Nombre de la aplicación**: escriba el nombre de la aplicación tal como aparecerá en la lista de aplicaciones de esta hoja.
 - **Identificador del paquete de aplicaciones**: escriba el identificador del paquete de la aplicación. Si necesita ayuda, consulte **Bundle ID reference for built-in iOS apps** (Referencia de identificador de lote para aplicaciones iOS integradas) de este tema.
@@ -205,8 +213,7 @@ Una vez que especifique el nombre de cada aplicación y cada identificador de pa
 - **Importar**: importe un archivo de valores separados por comas (.csv) que contiene una lista de nombres de aplicación y los identificadores de paquete asociados.
 - **Exportar**: exporte los nombres de aplicaciones y los identificadores de paquetes asociados que configuró a un archivo de valores separados por coma (.csv).
 
-### Referencia de identificador de lote para aplicaciones iOS integradas
-<a id="bundle-id-reference-for-built-in-ios-apps" class="xliff"></a>
+### <a name="bundle-id-reference-for-built-in-ios-apps"></a>Referencia de identificador de lote para aplicaciones iOS integradas
 
 En esta lista se muestra el identificador de lote de algunas aplicaciones iOS comunes integradas. Póngase en contacto con el proveedor de software para encontrar el identificador de lote de otras aplicaciones.
 
@@ -254,33 +261,30 @@ En esta lista se muestra el identificador de lote de algunas aplicaciones iOS co
 ```
 
 
-## Pantalla completa
-<a id="kiosk" class="xliff"></a>
--   **Bloqueo de activación**: permite el bloqueo de activación en dispositivos iOS supervisados.
+## <a name="kiosk-supervised-only"></a>Pantalla completa (solo supervisado)
 -   **Aplicación que se ejecuta en modo de pantalla completa**: elija **Aplicación administrada** para seleccionar una aplicación que haya agregado a Intune, o **Aplicación de la Tienda** para especificar la dirección URL a una aplicación de la tienda. No se podrá ejecutar ninguna otra aplicación en el dispositivo. Lea "Cómo especificar las direcciones URL de tiendas de aplicaciones" más adelante en este tema para obtener más ayuda.
--   **Assistive touch**: habilita o deshabilita la configuración de accesibilidad **Assistive Touch**, que ayuda al usuario a realizar gestos en pantalla que podrían resultarle difíciles.
--   **Invertir colores**: habilita o deshabilita la configuración de accesibilidad Invertir colores, que ajusta la pantalla para ayudar a los usuarios con discapacidades visuales.
--   **Audio mono**: habilita o deshabilita la configuración de accesibilidad Audio mono.
--   **VoiceOver**: habilita o deshabilita la configuración de accesibilidad **VoiceOver**, que lee en voz alta el texto de la pantalla del dispositivo.
--   **Zoom**: habilita o deshabilita la configuración de accesibilidad **Zoom**, que permite al usuario usar un toque para acercar la pantalla del dispositivo.
--   **Bloqueo automático**: habilita o deshabilita el bloqueo automático del dispositivo.
--   **Cambio de timbre**: habilita o deshabilita el conmutador de timbre (silencio) en el dispositivo.
--   **Rotación de pantalla**: habilita o deshabilita el cambio de orientación de la pantalla cuando el usuario gira el dispositivo.
--   **Botón de suspensión de pantalla**: habilita o deshabilita el botón de reposo o activación de pantalla en el dispositivo.
--   **Táctil**: habilita o deshabilita la pantalla táctil en el dispositivo.
--   **Botones de volumen**: habilita o deshabilita el uso de los botones de volumen en el dispositivo.
--   **Control de AssistiveTouch**: habilita o deshabilita los ajustes de Assistive Touch, que permiten al usuario ajustar la función de Assistive Touch.
--   **Control Invertir colores**: habilita o deshabilita los ajustes de invertir colores, que permiten al usuario ajustar la función de invertir colores.
--   **Speak on selected text** (Leer el texto seleccionado) habilita o deshabilita la configuración de accesibilidad Reproducir selección, que puede leer en voz alta el texto que selecciona el usuario.
--   **Control de VoiceOver**: habilita o deshabilita los ajustes de VoiceOver, que permiten al usuario ajustar la función VoiceOver (por ejemplo, la rapidez con la que se lee el texto en pantalla en voz alta).
--   **Control de zoom**: habilita o deshabilita los ajustes de zoom, que permiten al usuario ajustar la función de zoom.
+    -   **Assistive touch**: habilita o deshabilita la configuración de accesibilidad **Assistive Touch**, que ayuda al usuario a realizar gestos en pantalla que podrían resultarle difíciles.
+    -   **Invertir colores**: habilita o deshabilita la configuración de accesibilidad Invertir colores, que ajusta la pantalla para ayudar a los usuarios con discapacidades visuales.
+    -   **Audio mono**: habilita o deshabilita la configuración de accesibilidad Audio mono.
+    -   **VoiceOver**: habilita o deshabilita la configuración de accesibilidad **VoiceOver**, que lee en voz alta el texto de la pantalla del dispositivo.
+    -   **Zoom**: habilita o deshabilita la configuración de accesibilidad **Zoom**, que permite al usuario usar un toque para acercar la pantalla del dispositivo.
+    -   **Bloqueo automático**: habilita o deshabilita el bloqueo automático del dispositivo.
+    -   **Cambio de timbre**: habilita o deshabilita el conmutador de timbre (silencio) en el dispositivo.
+    -   **Rotación de pantalla**: habilita o deshabilita el cambio de orientación de la pantalla cuando el usuario gira el dispositivo.
+    -   **Botón de suspensión de pantalla**: habilita o deshabilita el botón de reposo o activación de pantalla en el dispositivo.
+    -   **Táctil**: habilita o deshabilita la pantalla táctil en el dispositivo.
+    -   **Botones de volumen**: habilita o deshabilita el uso de los botones de volumen en el dispositivo.
+    -   **Control de AssistiveTouch**: habilita o deshabilita los ajustes de Assistive Touch, que permiten al usuario ajustar la función de Assistive Touch.
+    -   **Control Invertir colores**: habilita o deshabilita los ajustes de invertir colores, que permiten al usuario ajustar la función de invertir colores.
+    -   **Speak on selected text** (Leer el texto seleccionado) habilita o deshabilita la configuración de accesibilidad Reproducir selección, que puede leer en voz alta el texto que selecciona el usuario.
+    -   **Control de VoiceOver**: habilita o deshabilita los ajustes de VoiceOver, que permiten al usuario ajustar la función VoiceOver (por ejemplo, la rapidez con la que se lee el texto en pantalla en voz alta).
+    -   **Control de zoom**: habilita o deshabilita los ajustes de zoom, que permiten al usuario ajustar la función de zoom.
 
 >[!NOTE]
 > Antes de configurar un dispositivo iOS para pantalla completa, debe usar la herramienta Apple Configurator o el Programa de inscripción de dispositivos de Apple para pasar el dispositivo al modo supervisado. Para obtener más información sobre la herramienta Apple Configurator, consulte la documentación de Apple.
 >Si la aplicación de iOS que especifique se instala después de asignar el perfil, el dispositivo no pasará a pantalla completa hasta que se reinicie.
 
-## Safari
-<a id="safari" class="xliff"></a>
+## <a name="safari"></a>Safari
 -   **Safari (solo supervisado)**: especifique si el explorador Safari se puede usar en el dispositivo.
 -   **Autofill** (Rellenar automáticamente): permite al usuario cambiar la configuración de Autocompletar en el explorador.
 -   **Cookies**: permite que el explorador use cookies.
@@ -289,22 +293,18 @@ En esta lista se muestra el identificador de lote de algunas aplicaciones iOS co
 -   **Elementos emergentes**: habilita o deshabilita el bloqueador de elementos emergentes del explorador.
 
 
-## Domains
-<a id="domains" class="xliff"></a>
+## <a name="domains"></a>Domains
 
-### Dominios de correo electrónico no marcados
-<a id="unmarked-email-domains" class="xliff"></a>
+### <a name="unmarked-email-domains"></a>Dominios de correo electrónico no marcados
 
 En el campo **Email Domain URL** (Dirección URL de dominio de correo electrónico), agregue una o más direcciones URL a la lista. Cuando los usuarios finales reciben un correo electrónico de un dominio distinto del configurado, el correo electrónico se marcará como correo electrónico no de confianza en la aplicación de correo iOS.
 
 
-### Dominios web administrados
-<a id="managed-web-domains" class="xliff"></a>
+### <a name="managed-web-domains"></a>Dominios web administrados
 
 En el campo **Web Domain URL** (Dirección URL de dominio web), agregue una o más direcciones URL a la lista. Los documentos que se descarguen de los dominios que especifica se considerarán administrados. Esta configuración solo se aplica a los documentos que se descargan con el explorador Safari.
 
 
-### Dominios de relleno automático de contraseña de Safari
-<a id="safari-password-auto-fill-domains" class="xliff"></a>
+### <a name="safari-password-auto-fill-domains"></a>Dominios de relleno automático de contraseña de Safari
 
 En el campo **Domain URL** (Dirección URL de dominio), agregue una o más direcciones URL a la lista. Los usuarios solo pueden guardar contraseñas web de las direcciones URL que aparecen en esta lista. Esta configuración solo se aplica al explorador Safari y a dispositivos iOS 9.3 y versiones posteriores en modo supervisado. Si no especifica ninguna dirección URL, se podrán guardar contraseñas de todos los sitios web.

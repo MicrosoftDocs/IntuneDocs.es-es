@@ -1,37 +1,35 @@
 ---
 title: Glosario de Intune
-titleSuffix: Intune on Azure
+titleSuffix: 
 description: "Obtener información sobre la terminología usada en Microsoft Intune"
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/15/2017
+ms.date: 07/28/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: a9b43fc1a1877a3fc8bf4c5ee00e02dfee3cdea8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2df6c8c79954c2145ffa6eb33782cee690d78b1d
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="microsoft-intune-glossary"></a>Glosario de Microsoft Intune
-
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="a"></a>A
 
 |||
 |-|-|
 |Asignación de aplicaciones|Permite a los usuarios [buscar, descargar e instalar](/intune/app-management) las aplicaciones que necesitan. Esto se denominaba anteriormente *implementación de aplicaciones*.|
-|Perfil de configuración de aplicaciones|Configura una aplicación [iOS](/intune/app-configuration-policies-use-ios) o [Android](/intune/app-configuration-policies-use-android) con una configuración específica antes de ejecutarla.|
+|Perfil de configuración de aplicaciones <br/><br/>Directiva de configuración de aplicaciones|Disponible para aplicaciones móviles con configuraciones específicas del proveedor. Configura una aplicación [iOS](/intune/app-configuration-policies-use-ios) o [Android](/intune/app-configuration-policies-use-android) con una configuración específica antes de ejecutarla.|
 |Supervisión de aplicaciones|Le permite [revisar el estado y la actividad recientes](/intune/apps-monitor) relacionados con la asignación de aplicaciones.|
 |Tarea de eliminación de datos de protección de aplicaciones|[Quita los datos de la aplicación](/intune/app-protection-policies) en el dispositivo del usuario.|
-|Directiva de protección de aplicaciones|Garantiza que las aplicaciones del usuario son compatibles con las [directivas de protección de datos de la empresa](/intune/app-protection-policies).|
+|Directiva de protección de aplicaciones|Disponible para aplicaciones móviles que se integran con tecnologías de Enterprise Mobility + Security (EMS). Garantiza que las aplicaciones del usuario son compatibles con las [directivas de protección de datos de la empresa](/intune/app-protection-policies).|
 |SDK para aplicaciones|El [SDK para aplicaciones de Microsoft Intune](/intune/app-sdk) permite agregar funcionalidad a las aplicaciones escritas internamente que permite administrarlas mediante directivas de protección de aplicaciones de Intune.|
 |Acción de desinstalación de aplicaciones|Le permite [desinstalar aplicaciones](/intune/apps-deploy) en los dispositivos del usuario.|
 |Herramienta de ajuste de aplicaciones|[Aplicación de línea de comandos](/intune/apps-prepare-mobile-application-management) que crea un contenedor en torno a una aplicación de línea de negocios, que permite administrarla mediante una directiva de protección de aplicaciones de Intune.|
@@ -103,7 +101,7 @@ ms.lasthandoff: 07/01/2017
 |-|-|
 |Explorador administrado|[Aplicación de exploración web](/intune/app-configuration-managed-browser) que se puede asignar en la organización mediante Intune. Una directiva de explorador administrado configura una lista de permitidos o una lista de bloqueados que restringe los sitios web que pueden visitar los usuarios del explorador administrado.|
 |Entidad de MDM|La [entidad de MDM](/intune/mdm-authority-set) define el servicio de administración que tiene permiso para administrar un conjunto de dispositivos. Las opciones para la entidad de MDM incluyen Intune y Configuration Manager con Intune.|
-|Directiva de configuración de aplicaciones móviles|Directiva de [iOS](/intune/app-configuration-policies-use-ios) o [Android](/intune/app-configuration-policies-use-android) que se usa para proporcionar la configuración a aplicaciones compatibles cuando se ejecutan, por ejemplo, el nombre de la empresa o la dirección del servidor.|
+|Directiva de configuración de aplicaciones móviles|Disponible para aplicaciones móviles con configuraciones específicas del proveedor. Por ejemplo, una directiva de [iOS](/intune/app-configuration-policies-use-ios) o [Android](/intune/app-configuration-policies-use-android) que se usa para proporcionar la configuración a aplicaciones compatibles cuando se ejecutan, por ejemplo, el nombre de la empresa o la dirección del servidor.|
 |Directiva de aprovisionamiento de aplicaciones móviles|Directiva de iOS que ayuda a asegurarse de que los [perfiles de aprovisionamiento](/intune/app-provisioning-profile-ios) de las aplicaciones iOS asignadas no expiran.|
 |Administración de aplicaciones móviles|La [administración de aplicaciones móviles (MAM)](/intune/app-lifecycle) permite publicar, insertar, configurar, proteger, supervisar y actualizar aplicaciones móviles para los usuarios.
 |Administración de dispositivos móviles|La [administración de dispositivos móviles (MDM)](/intune/device-lifecycle) permite inscribir dispositivos en Intune para poder aprovisionar, configurar y supervisar esos dispositivos, además de administrarlos.
@@ -131,7 +129,7 @@ ms.lasthandoff: 07/01/2017
 ## <a name="s"></a>S
 |||
 |-|-|
-|La eliminación de datos selectiva|El [borrado selectivo](/intune/device-company-data-remove) solo quita los datos de la empresa, incluidos los datos de administración de aplicaciones móviles (MAM) si procede, las configuraciones y los perfiles de correo electrónico de un dispositivo. El borrado selectivo deja los datos personales del usuario en el dispositivo.|
+|La eliminación de datos selectiva|Un [borrado selectivo](/intune/device-company-data-remove) solo quita los datos de la empresa protegidos por la directiva de protección de aplicaciones incluidas las configuraciones y los perfiles de correo electrónico de un dispositivo. El borrado selectivo deja los datos personales del usuario en el dispositivo.|
 |Instalación de prueba|Acción de instalar una aplicación de línea de negocio sin tener acceso a ella desde una tienda de aplicaciones.|
 |Suscripción|El contrato que especifica que permite tener acceso a un inquilino de Intune.|
 

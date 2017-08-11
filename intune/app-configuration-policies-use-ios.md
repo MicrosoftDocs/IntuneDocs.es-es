@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/12/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0cbcf70af17ba7690f54196790da04becd8ba1eb
-ms.sourcegitcommit: 388c5f59bc992375ac63968fd7330af5d84a1348
+ms.openlocfilehash: b261834c85a9dd3cbc6f8fae40933dd7a79acf93
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-use-microsoft-intune-app-configuration-policies-for-ios"></a>Uso de directivas de configuración de aplicaciones de Microsoft Intune para iOS
 
@@ -37,7 +37,7 @@ Utilice las directivas de configuración de aplicaciones de Microsoft Intune par
 
 Si los usuarios han especificado esta configuración incorrectamente, puede aumentar la carga del departamento de soporte técnico y ralentizar la adopción de nuevas aplicaciones.
 
-Las directivas de configuración de aplicaciones pueden ayudarle a eliminar estos problemas al permitirle asignar esta configuración a los usuarios en una directiva antes de ejecutar la aplicación. A continuación, la configuración se proporciona de forma automática y los usuarios no tienen que realizar ninguna acción.
+Las directivas de configuración de aplicaciones pueden ayudarle a eliminar estos problemas al permitirle asignar esta configuración a los usuarios en una directiva antes de ejecutar la aplicación. A continuación, la configuración se proporciona de forma automática y los usuarios no tienen que realizar ninguna acción. Las aplicaciones deben haberse escrito para admitir el uso de configuraciones de aplicaciones. Consulte con el proveedor de su aplicación para obtener más información.
 
 No asigne estas directivas directamente a usuarios y dispositivos. Asocie la directiva con una aplicación y, a continuación, asigne la aplicación. La configuración de directiva se usará cada vez que la aplicación la compruebe (normalmente, la primera vez que se ejecuta).
 
@@ -57,8 +57,8 @@ No asigne estas directivas directamente a usuarios y dispositivos. Asocie la dir
 5.  En la hoja de lista de directivas, elija **Agregar**.
 6.  En la hoja **Agregar directiva de configuración**, proporcione un **nombre** y una **descripción** opcional para la directiva de configuración de aplicaciones.
 7.  Elija una de las siguientes opciones para **Tipo de inscripción del dispositivo**:
-    - **Inscrito en Intune**: para las aplicaciones que han integrado la utilidad Intune App SDK y que se administran mediante Intune.
-    - **No inscrito en Intune**: para las aplicaciones que han integrado la utilidad Intune App SDK y que no se administran mediante Intune, o bien se hace a través de otra solución.
+    - **Inscrito en Intune**: para aplicaciones que se administran mediante Intune.
+    - **No inscrito en Intune**: para las aplicaciones que no se administran mediante Intune, o que se administran mediante otra solución.
 8.  Para **Plataforma**, elija **iOS** (solo para dispositivos inscritos en Intune).
 9.  Elija **Aplicación asociada** y, en la hoja **Aplicación asociada**, elija la aplicación administrada a la que quiere aplicar la configuración.
 10. En la hoja **Agregar directiva de configuración**, elija **Opciones de configuración**.

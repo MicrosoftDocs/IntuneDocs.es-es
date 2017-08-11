@@ -14,11 +14,11 @@ ms.assetid: d3aa6c74-6b5d-4b50-aa66-a040ec44393e
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c3c41f5e3b0fc81232b03fe547bee7f72fb427a0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 5be08d2535acefe099429ab732d6d5d99205b2e7
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Supervisión de directivas de protección de aplicaciones con Microsoft Intune
 Puede supervisar el estado de cumplimiento de las directivas de protección de aplicaciones que haya aplicado a los usuarios. Podrá encontrar información sobre los usuarios afectados por las directivas de protección de aplicaciones, el estado de cumplimiento y cualquier problema que puedan estar experimentando sus usuarios.
@@ -43,11 +43,13 @@ En la hoja **Administración de aplicaciones móviles de Intune**, puede ver un 
 
 ![Ventana de resumen en la hoja Administración de aplicaciones móviles de Intune](../media/mam-azure-portal-user-status-summary.png)
 
--   **USUARIOS:** número total de usuarios de la empresa que usan las aplicaciones que están asociadas a la directiva.
+-   **Usuarios**: el número total de usuarios en su empresa que está usando una aplicación que está asociada con una directiva en un contexto de trabajo.
 
--   **ADMINISTRADO POR UNA DIRECTIVA:** número de usuarios que han usado al menos una de las aplicaciones en un contexto de trabajo.
+-   **ADMINISTRADO POR UNA DIRECTIVA**: el número de usuarios que ha usado una aplicación que tiene una directiva asignada a ellos en un contexto de trabajo.
 
--   **NINGUNA DIRECTIVA:** número de usuarios que usan las aplicaciones asociadas a la directiva, pero a los que no se les aplica la directiva. Considere la posibilidad de agregar estos usuarios a la directiva.
+-   **SIN DIRECTIVA**: el número de usuarios que está usando una aplicación que no tiene como destino ninguna directiva en un contexto de trabajo. Considere la posibilidad de agregar estos usuarios a la directiva.
+    > [!NOTE]
+    > Si tiene varias directivas por plataforma, se considerará que un usuario está administrado por una directiva cuando tenga al menos una directiva asignada.
 
 - **Usuarios marcados:** número de usuarios que experimentan problemas. Actualmente, solo los usuarios con dispositivos descodificados aparecen como **Usuarios marcados**.
 

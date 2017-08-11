@@ -5,7 +5,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 07/10/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 71558786cc7f058cee31e9bbe3960ed75a76891b
-ms.sourcegitcommit: ce363409d1206e4a3d669709863ccc9eb22b7d5f
+ms.openlocfilehash: b535c137d16ed8e17f4aee22d1fe2e922247f088
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="implement-your-intune-plan"></a>Implementar el plan de Intune
 
@@ -32,7 +32,7 @@ Los requisitos principales de Intune independiente son los siguientes:
 
 -   Suscripción a Enterprise Mobility + Security (EMS)/Intune
 
--   Suscripción a Office 365 (para aplicaciones de Office y aplicaciones administradas de directivas de MAM)
+-   Suscripción a Office 365 (para aplicaciones de Office y aplicaciones administradas de directivas de protección de aplicaciones)
 
 -   Certificado de APNs de Apple (para habilitar la administración de plataforma de dispositivos iOS)
 
@@ -109,7 +109,7 @@ Intune admite los perfiles de VPN, Wi-Fi y correo electrónico. Agregue estos pe
 
 ### <a name="task-10-add-and-deploy-apps"></a>Tarea 10: Agregar e implementar aplicaciones
 
-Intune admite la implementación de aplicaciones de almacén público, aplicaciones de línea de negocio y aplicaciones web. También puede administrar aplicaciones que tienen el SDK de Intune integrado si las asocia con directivas de MAM. Agregue aplicaciones según corresponda e impleméntelas en los grupos de destino en función de los requisitos y los casos de uso de la implementación de Intune.
+Intune admite la implementación de aplicaciones de almacén público, aplicaciones de línea de negocio y aplicaciones web. También puede administrar aplicaciones que tienen el SDK de Intune integrado si las asocia con directivas de protección de aplicaciones. Agregue aplicaciones según corresponda e impleméntelas en los grupos de destino en función de los requisitos y los casos de uso de la implementación de Intune.
 
 -   Obtenga más información sobre cómo [agregar e implementar aplicaciones](app-management.md).
 

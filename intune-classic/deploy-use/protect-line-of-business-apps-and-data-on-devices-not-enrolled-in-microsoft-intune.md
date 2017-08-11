@@ -14,11 +14,11 @@ ms.assetid: 00219467-a62e-43b6-954b-3084f54c45ba
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1627627ab1744f963d738dcedde6a772bb3ae663
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: 205c9c52759d5fee2429fe46d19c8882aacafa7a
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="protect-line-of-business-apps-and-data-on-devices-that-are-not-enrolled-in-microsoft-intune"></a>Proteger aplicaciones y datos de línea de negocio en dispositivos no inscritos en Microsoft Intune
 
@@ -31,7 +31,7 @@ En este tema se explican los pasos necesarios para aplicar directivas MAM a las 
 
 ##  <a name="step-1-prepare-the-app"></a>Paso 1: preparar la aplicación
 
-Antes de poder aplicar directivas de MAM a una aplicación, primero debe ajustar la aplicación mediante la herramienta de ajuste de aplicaciones de Microsoft Intune para [iOS](prepare-ios-apps-for-mo/intune/apps-prepare-mobile-application-managementoid](/intune/app-wrapper-prepare-android), o utilizar el [SDK de aplicaciones de Intune](/intune/app-sdk) para integrar manualmente las características de protección de aplicaciones de Intune.
+Antes de poder aplicar directivas MAM a una aplicación, primero debe ajustar la aplicación mediante la herramienta de ajuste de aplicaciones de Microsoft Intune para [iOS](/intune/app-wrapper-prepare-ios), [Android](/intune/app-wrapper-prepare-android) o usar [Intune App SDK](/intune/app-sdk) para integrar manualmente las funciones de protección de aplicaciones de Intune.
 
 Para obtener más información sobre el uso de la herramienta de ajuste de aplicaciones y el SDK, vea [Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles con Microsoft Intune](/intune/apps-prepare-mobile-application-management).
 

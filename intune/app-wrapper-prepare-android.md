@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ebea9fe4cbf0c6c788ba4a209132856eda06445e
-ms.sourcegitcommit: 5eb209ae48173ddfdbbab131f12f3ac3498dcd87
+ms.openlocfilehash: fed97412df96d0bdffaf3b10ad5306a6f56d0066
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="prepare-android-apps-for-mobile-application-management-with-the-intune-app-wrapping-tool"></a>Preparar aplicaciones Android para la administración de aplicaciones móviles con la Herramienta de ajuste de aplicaciones de Intune
 
@@ -50,16 +50,7 @@ Antes de ejecutar la herramienta, lea [Consideraciones de seguridad para ejecuta
     > [!NOTE]
     > En algunos casos, la versión de 32 bits de Java puede producir problemas de memoria. Es muy conveniente instalar la versión de 64 bits.
 
-- Android requiere que todos los paquetes de aplicaciones estén firmados (.apks). Utilice la herramienta de claves de Java para generar las credenciales necesarias para firmar la aplicación de salida ajustada. Por ejemplo, el siguiente comando utiliza el ejecutable keytool.exe de Java para generar las claves que pueden usarse para iniciar sesión en la aplicación de salida ajustada con la herramienta de ajuste de aplicaciones.
-
-    ```
-    keytool.exe -genkeypair -v -keystore mykeystorefile -alias mykeyalias -keyalg RSA -keysize 2048 -validity 50000
-    ```
-    En este ejemplo se genera un par de claves (una clave pública y una clave privada asociada de 2048 bits) mediante el algoritmo RSA. Luego se encapsula la clave pública en un certificado X.509 v3 autofirmado, que se almacena como una cadena de certificados de un único elemento. Esta cadena de certificados y la clave privada se almacenan en una entrada nueva del almacén de claves denominada "mykeystorefile" e identificada mediante el alias "mykeyalias." La entrada del almacén de claves es válida durante 50 000 días.
-
-    El comando le solicitará que proporcione las contraseñas para el almacén de claves y la clave. Utilice contraseñas seguras, pero anótelas ya que las necesitará para ejecutar la herramienta de ajuste de aplicaciones.
-
-    Para obtener documentación detallada, obtenga más información sobre la [herramienta de claves](http://docs.oracle.com/javase/6/docs/technotes/tools/windows/keytool.html) de Java y Java [KeyStore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html) de Java en el sitio web de la documentación de Oracle.
+- Android requiere que todos los paquetes de aplicaciones estén firmados (.apks). Para **volver a usar** certificados existentes e instrucciones generales de certificado de firma, vea [Reutilización de certificados de firma y aplicaciones de encapsulado](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). El archivo ejecutable de Java keytool.exe se usa para generar **nuevas** credenciales necesarias para firmar la aplicación de salida ajustada. Cualquier contraseña que se establezca debe ser segura, pero anótelas ya que las necesitará para ejecutar la herramienta de ajuste de aplicaciones.
 
 ## <a name="install-the-app-wrapping-tool"></a>Instalar la herramienta de ajuste de aplicaciones
 
@@ -95,7 +86,7 @@ Tome nota de la carpeta donde instala la herramienta. La ubicación predetermina
 |**-KeyStorePassword**&lt;SecureString&gt;|Contraseña usada para descifrar el almacén de claves. Android requiere que todos los paquetes de aplicaciones (.apk) estén firmados. Utilice la herramienta de claves de Java para generar el valor KeyStorePassword. Más información sobre Java [Keystore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html) aquí.| |
 |**-KeyAlias**&lt;String&gt;|Nombre de la clave que se usará para firmar.| |
 |**-KeyPassword**&lt;SecureString&gt;|Contraseña usada para descifrar la clave privada que se usará para firmar.| |
-|**-SigAlg**&lt;SecureString&gt;| (Opcional) Nombre del algoritmo de firma que se usará para firmar. El algoritmo debe ser compatible con la clave privada.|Ejemplos: SHA256withRSA, SHA1withRSA, MD5withRSA|
+|**-SigAlg**&lt;SecureString&gt;| (Opcional) Nombre del algoritmo de firma que se usará para firmar. El algoritmo debe ser compatible con la clave privada.|Ejemplos: SHA256withRSA, SHA1withRSA|
 | **&lt;CommonParameters&gt;** | (Opcional) El comando admite parámetros comunes de PowerShell como verbose y debug. |
 
 

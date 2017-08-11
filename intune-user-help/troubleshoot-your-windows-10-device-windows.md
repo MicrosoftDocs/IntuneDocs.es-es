@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/12/2016
+ms.date: 07/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 465d84490f5000b13a2c7371677cee77baadc4d2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 701ee2081d8f696a1c37eaa2857ab92942d79f48
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Solución de problemas con la inscripción de dispositivos de Windows 10
 Si ha seguido los pasos descritos en [Inscribir un dispositivo de escritorio de Windows 10 Mobile o Windows 10 en Intune](enroll-your-w10-phone-or-w10-pc-windows.md), pero todavía no se puede obtener acceso a su correo electrónico profesional o educativo, pruebe estos pasos para solucionar problemas.
@@ -35,7 +35,7 @@ Si ha seguido los pasos descritos en [Inscribir un dispositivo de escritorio de 
 
     ![settings-accounts-your-account](./media/W10-enroll-2-accounts-your-account.png)
 
-## <a name="troubleshooting-steps-to-follow-if-you-see-access-work-or-school"></a>Pasos de solución de problemas a seguir si ve acceso profesional o educativo
+## <a name="troubleshooting-steps-to-follow-if-you-see-access-work-or-school"></a>Pasos de solución de problemas a seguir si ve "Acceso profesional o educativo"
 
 1.  Si después de seguir los pasos anteriores, no consigue tener acceso a los archivos y al correo electrónico profesional o educativo, vuelva a **Acceso profesional o educativo**.
 
@@ -47,12 +47,16 @@ Si ha seguido los pasos descritos en [Inscribir un dispositivo de escritorio de 
 
     - Si no ve la información de conexión que se muestra arriba, o la ve, pero carece de algunas de las opciones, seleccione **Conectar**, y, a continuación, inicie sesión con sus credenciales profesionales o educativas. Ahora debe estar conectado.
 
-## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>Pasos de solución de problemas a seguir si ve su cuenta
+## <a name="troubleshooting-steps-to-follow-if-you-see-your-account"></a>Pasos de solución de problemas a seguir si ve "Su cuenta"
 
 Si después de seguir los pasos anteriores, no consigue tener acceso al correo, a los archivos y a otros datos laborales o educativos, vuelva a **Cuentas** y pulse **Acceso profesional**.
 
 - Si ve su cuenta profesional o educativa, felicidades. Está conectado.
 
 - Si no la ve, pulse en **Conectar** y luego inicie sesión con sus credenciales laborales o educativas.
+
+## <a name="troubleshooting-steps-to-follow-if-you-see-set-up-a-work-or-school-account"></a>Pasos de solución de problemas a seguir si ve "Configurar una cuenta profesional o educativa"
+
+Si ve un mensaje que dice __No pudimos detectar automáticamente un punto de conexión de administración que coincida con el nombre de usuario escrito. Compruebe su nombre de usuario y vuelva a intentarlo. Si conoce la dirección URL para el punto de conexión de administración, escríbala.__, entonces debe intentar volver a escribir su nombre de usuario y contraseña. Si todavía no funciona, debe consultar con su administrador de TI el sitio web que necesita proporcionar en el cuadro de texto **Punto de conexión de administración**. Este es un sitio web que probablemente tenga este aspecto **www.yourcompany.onmicrosoft.com**. 
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).

@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 06/28/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c3819042d3b6e7236506c288156f98a0e55c15ea
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b49c227e3cae6c5dca8655362cfbfa6fd3f94807
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos Windows 10 y versiones posteriores en Microsoft Intune
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 07/01/2017
     -       **Ninguno**: no se envían datos a Microsoft.
     -       **Básico**: se envía información limitada a Microsoft.
     -       **Mejorado**: se envían datos de diagnóstico mejorados a Microsoft.
-    -       **Completo** : envía los mismos datos que Mejorado, además de datos adicionales sobre el estado del dispositivo.
+    -       **Completo **: envía los mismos datos que Mejorado, además de datos adicionales sobre el estado del dispositivo.
 -   **Cámara**: permite o bloquea el uso de la cámara en el dispositivo.
 -   **Sincronización de archivos de OneDrive**: bloquea la sincronización de archivos de OneDrive en el dispositivo.
 -   **Almacenamiento extraíble**: especifica si se pueden usar dispositivos de almacenamiento externo, como tarjetas SD, con el dispositivo.
@@ -43,14 +43,9 @@ ms.lasthandoff: 07/01/2017
 -   **Restablecimiento del teléfono**: controla si el usuario puede restablecer su dispositivo a la configuración de fábrica.
 -   **Conexión USB (solo móviles)**: controla si los dispositivos pueden tener acceso a dispositivos de almacenamiento externo a mediante una conexión USB.
 -   **Modo antirrobo (solo móviles)**: permite habilitar el modo antirrobo de Windows.
--   **Notificaciones del centro de actividades (solo móviles)**: habilite o deshabilite las notificaciones del centro de actividades en la pantalla de bloqueo del dispositivo (solo Windows 10 Mobile).
 -   **Cortana**: habilita o deshabilita el asistente de voz de Cortana.
 -   **Grabación de voz (solo móviles)**: permite o bloquea el uso de la grabadora de voz del dispositivo.
--   **Modificación de la configuración de inicio/apagado y suspensión (solo escritorio)**: evita que el usuario final cambie la configuración de inicio/apagado y suspensión en el dispositivo.
--   **Modificación de la configuración regional (solo escritorio)**: evita que el usuario final cambie la configuración regional en el dispositivo.
--   **Modificación de la configuración de idioma (solo escritorio)**: evita que el usuario cambie la configuración de idioma en el dispositivo.
--   **Modificación de la hora del sistema**: evita que el usuario final cambie la fecha y hora del dispositivo.
--   **Modificación del nombre del dispositivo**: evita que el usuario final cambie el nombre del dispositivo.
+-   **Modificación del nombre del dispositivo**: evita que el usuario final cambie el nombre del dispositivo (solo para Windows 10 Mobile)
 -   **Agregar paquetes de aprovisionamiento**: bloquea el agente de configuración de tiempo de ejecución que instala paquetes de aprovisionamiento.
 -   **Quitar paquetes de aprovisionamiento**: bloquea el agente de configuración de tiempo de ejecución que quita paquetes de aprovisionamiento.
 -   **Detección de dispositivos**: bloquea la detección de un dispositivo por parte de otros dispositivos.
@@ -67,7 +62,7 @@ Para los dispositivos que ejecutan Windows 10 Mobile: si el inicio de sesión fa
     -   **Máximo de minutos de inactividad hasta que se bloquea la pantalla**: especifique la longitud de tiempo que un dispositivo debe estar inactivo antes de que se bloquee la pantalla.
     -   **Caducidad de la contraseña (días)**: especifica el período de tiempo transcurrido el cual debe cambiarse la contraseña del dispositivo.
     -   **Impedir la reutilización de contraseñas anteriores**: especifica el número de contraseñas usadas anteriormente que se recuerdan el dispositivo.
-    -   **Requerir contraseña cuando el dispositivo vuelve de un estado de inactividad**: especifica que el usuario debe escribir una contraseña para desbloquear el dispositivo (solo Windows 10 Mobile).
+    -   **Requerir contraseña cuando el dispositivo vuelve de un estado de inactividad (solo móviles)**: especifica que el usuario debe escribir una contraseña para desbloquear el dispositivo (solo Windows 10 Mobile).
     -   **Contraseñas sencillas**: le permite el uso de contraseñas sencillas, como 1111 y 1234. Esta configuración también permite o bloquea el uso de contraseñas de imagen de Windows.
 -   **Cifrado**: habilita el cifrado en los dispositivos de destino (solo Windows 10 Mobile).
 
@@ -105,6 +100,7 @@ Para los dispositivos que ejecutan Windows 10 Mobile: si el inicio de sesión fa
 -   **Instalar los datos de aplicación en el volumen del sistema**: esta opción hace que las aplicaciones dejen de almacenar datos en el volumen del sistema del dispositivo.
 -   **Instalar las aplicaciones en la unidad del sistema**: esta opción hace que las aplicaciones dejen de almacenar datos en la unidad del sistema del dispositivo.
 -   **Game DVR (solo escritorio)**: configura si se permite la grabación y difusión de los juegos.
+-   **Apps from store only** (Aplicaciones solo de la tienda): configura si los usuarios pueden instalar aplicaciones de otros lugares distintos de la tienda de aplicaciones.
 
 
 
@@ -112,7 +108,6 @@ Para los dispositivos que ejecutan Windows 10 Mobile: si el inicio de sesión fa
 -   **Explorador de Microsoft Edge (solo móvil)**: permite el uso del explorador web Edge en el dispositivo.
 -   **Lista desplegable de la barra de direcciones (solo escritorio)**: use esto para impedir que Edge muestre una lista de sugerencias en una lista desplegable cuando escriba. Esto ayuda a minimizar el uso del ancho de banda de red entre Edge y servicios Microsoft.
 -   **Sincronizar favoritos entre exploradores de Microsoft (solo escritorio)**: permite que Windows sincronice los favoritos entre Internet Explorer y Edge.
--   **SmartScreen**: habilita o deshabilita SmartScreen que bloquea los sitios web fraudulentos.
 -   **Enviar encabezados de no seguimiento**: configura el explorador Edge para que envíe encabezados de no seguimiento a sitios web que visitan los usuarios.
 -   **Cookies**: permite que el explorador guarde cookies de Internet en el dispositivo.
 -   **JavaScript**: permite la ejecución de scripts, como JavaScript, en el explorador Edge.
@@ -130,13 +125,16 @@ Para los dispositivos que ejecutan Windows 10 Mobile: si el inicio de sesión fa
 -   **Páginas principales**: agrega una lista de sitios que quiere usar como páginas principales en el explorador Edge (solo escritorio).
 -   **Cambia a la página de inicio**: permite que los usuarios cambien las páginas de inicio que se muestran cuando se abre Edge. Use la configuración de páginas principales para crear la página o enumerar las páginas que se abren cuando se inicia Edge.
 -   **Bloquear acceso a about:flags**: impide que el usuario final tenga acceso a la página about:flags de Microsoft Edge que contiene la configuración experimental y de desarrollador.
--   **Invalidación de avisos de SmartScreen**: permite que el usuario final omita las advertencias de filtro de SmartScreen sobre los sitios web potencialmente malintencionados.
--   **Invalidación de avisos de SmartScreen para archivos**: permite que el usuario final omita las advertencias de filtro de SmartScreen sobre la descarga de archivos potencialmente malintencionados.
 -   **Dirección IP de localhost para WebRtc**: impide que la dirección IP de localhost de los usuarios se muestre cuando se hacen llamadas telefónicas a través del protocolo WebRtc.
 -   **Motor de búsqueda predeterminado**: especifica el motor de búsqueda predeterminado que se usará. Los usuarios finales pueden cambiar este valor en cualquier momento.
 -   **Borrar datos de navegación al salir**: borra el historial y los datos de navegación cuando el usuario sale de Edge.
 -   **Recopilación de datos para iconos dinámicos**: impide que Windows recopile información de iconos dinámicos cuando los usuarios anclan un sitio al menú de inicio de Edge.
 
+## <a name="edge-browser-smartscreen"></a>SmartScreen del explorador de Edge
+
+-   **SmartScreen**: habilita o deshabilita SmartScreen que bloquea los sitios web fraudulentos.
+-   **Invalidación de avisos de SmartScreen**: permite que el usuario final omita las advertencias de filtro de SmartScreen sobre los sitios web potencialmente malintencionados.
+-   **Invalidación de avisos de SmartScreen para archivos**: permite que el usuario final omita las advertencias de filtro de SmartScreen sobre la descarga de archivos potencialmente malintencionados.
 
 ## <a name="search"></a>Búsqueda
 - **Búsqueda segura (solo móviles)**: controla cómo Cortana filtra contenido para adultos en los resultados de la búsqueda. Puede seleccionar **Strict** (Estricto), **Moderate** (Moderado) o permitir que el usuario final elija su propia configuración.
@@ -156,7 +154,6 @@ Para los dispositivos que ejecutan Windows 10 Mobile: si el inicio de sesión fa
 -   **Detectabilidad de Bluetooth**: permite que otros dispositivos con Bluetooth habilitado detecten el dispositivo.
 -   **Emparejamiento previo Bluetooth**: permite que configure dispositivos Bluetooth específicos para emparejarse automáticamente con un dispositivo de host.
 -   **Anuncios de Bluetooth**: permite que el dispositivo reciba anuncios a través de Bluetooth.
--   **Nombre de Bluetooth del dispositivo**: especifica el nombre de Bluetooth de un dispositivo. Si no especifica un nombre, se usa el nombre de radio predeterminado.
 -   **Servicio de dispositivos conectados**: permite decidir si permitir el servicio de dispositivos conectados, que habilita la detección y la conexión a otros dispositivos Bluetooth.
 -   **NFC**: permite al usuario habilitar y configurar funcionalidades de transmisión de datos en proximidad en el dispositivo.
 -   **Wi-Fi**: permite al usuario habilitar y configurar Wi-Fi en el dispositivo (solo Windows 10 Mobile).
@@ -170,11 +167,16 @@ Para los dispositivos que ejecutan Windows 10 Mobile: si el inicio de sesión fa
 
 -   **Aplicación de configuración**: bloquea el acceso a la aplicación de configuración de Windows.
     -   **Sistema**: bloquea el acceso al área de sistema de la aplicación de configuración.
+        -   **Modificación de la configuración de inicio/apagado y suspensión (solo escritorio)**: evita que el usuario final cambie la configuración de inicio/apagado y suspensión en el dispositivo.
     -   **Dispositivos**: bloquea el acceso al área de dispositivos de la aplicación de configuración.
     -   **Red e Internet**: bloquea el acceso al área de la red e Internet de la aplicación de configuración.
     -   **Personalización**: bloquea el acceso al área de personalización de la aplicación de configuración.
     -   **Cuentas**: bloquea el acceso al área de cuentas de la aplicación de configuración.
     -   **Hora e idioma**: bloquea el acceso al área de hora e idioma de la aplicación de configuración.
+        -   **Modificación de la hora del sistema**: evita que el usuario final cambie la fecha y hora del dispositivo.
+        -   **Modificación de la configuración regional (solo escritorio)**: evita que el usuario final cambie la configuración regional en el dispositivo.
+        -   **Modificación de la configuración de idioma (solo escritorio)**: evita que el usuario cambie la configuración de idioma en el dispositivo.
+    -   **Juegos**: bloquea el acceso a la aplicación Juegos en la configuración.
     -   **Accesibilidad**: bloquea el acceso al área de accesibilidad de la aplicación de configuración.
     -   **Privacidad**: bloquea el acceso al área de privacidad de la aplicación de configuración.
     -   **Actualización y seguridad**: bloquea el acceso al área de actualizaciones y seguridad de la aplicación de configuración.
@@ -237,17 +239,17 @@ Si los archivos de la unidad son de solo lectura, Defender no puede quitar el ma
 ## <a name="windows-spotlight"></a>Contenido destacado de Windows
 
 
-- Contenido destacado de Windows: use esta opción para bloquear todas las funciones de Contenido destacado de Windows en los dispositivos de Windows 10. Si bloquea esta configuración, las siguientes opciones no estarán disponibles.
+- **Contenido destacado de Windows**: use esta opción para bloquear todas las funciones de Contenido destacado de Windows en los dispositivos de Windows 10. Si bloquea esta configuración, las siguientes opciones no estarán disponibles.
     - **Contenido destacado de Windows en la pantalla de bloqueo**: impide que Contenido destacado de Windows muestre información en la pantalla de bloqueo del dispositivo.
     - **Sugerencias de terceros en Contenido destacado de Windows**: impide que Contenido destacado de Windows sugiera contenido que no ha sido publicado por Microsoft.
-    - **Sugerencias de Windows**: permite impedir que las sugerencias emergentes se muestren en Windows.
     - **Características de consumidor**: permite bloquear las características de consumidor, como sugerencias del menú Inicio y notificaciones de pertenencia.
+    - **Sugerencias de Windows**: permite impedir que las sugerencias emergentes se muestren en Windows.
     - **Contenido destacado de Windows en el centro de actividades**: impide que las sugerencias de Contenido destacado de Windows como una nueva aplicación o contenido de seguridad aparezcan en el centro de actividades de Windows.
     - **Personalización de Contenido destacado de Windows**: impide que Contenido destacado de Windows personalice los resultados basándose en el uso de un dispositivo.
     - **Experiencia de bienvenida de Windows**: bloquea la experiencia de bienvenida de Windows que muestra la información de usuario sobre características nuevas o actualizadas.
 
 
-## <a name="display"></a>Pantalla
+## <a name="projection"></a>Proyección
 
 - **Entrada de usuario desde receptores de pantalla inalámbricos**: bloquea la entrada de usuario desde receptores de pantalla inalámbricos.
 - **Proyección en este equipo**: impide que otros dispositivos detecten el equipo para proyección.

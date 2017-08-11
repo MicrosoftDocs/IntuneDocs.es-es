@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/17/2017
+ms.date: 07/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0f6a3cdc2b5d95f57f1ffc1f68b6748b357f2ef4
-ms.sourcegitcommit: 21a9db380956a50031dbea360b4c76664cbc2768
+ms.openlocfilehash: 1a97e58f1d108932e44b0b4e36bda5a30b7a90da
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/17/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Asignación de aplicaciones de Office 365 ProPlus 2016 a dispositivos Windows 10 con Microsoft Intune
 
-Este tipo de aplicación facilita la asignación de aplicaciones de Office 365 ProPlus 2016 a dispositivos que administre y que ejecuten Windows 10. Además, también puede instalar aplicaciones para el cliente de escritorio de Microsoft Project Online y Microsoft Visio Pro para Office 365, si posee sus licencias. Las aplicaciones que desea que aparezcan como una aplicación en la lista de aplicaciones de la consola de Intune.
+Este tipo de aplicación facilita la asignación de aplicaciones de Office 365 ProPlus 2016 a dispositivos que administre y que ejecuten Windows 10. También puede instalar aplicaciones para el cliente de escritorio de Microsoft Project Online y Microsoft Visio Pro para Office 365, si posee sus licencias. Las aplicaciones que desea que aparezcan como una aplicación en la lista de aplicaciones de la consola de Intune.
 
 
 ## <a name="before-you-start"></a>Antes de empezar
@@ -34,11 +34,8 @@ Este tipo de aplicación facilita la asignación de aplicaciones de Office 365 P
 - Los dispositivos en los que implementa estas aplicaciones deben ejecutar Windows 10 Creator Update o una versión posterior.
 - Intune solo admite agregar aplicaciones de Office desde el conjunto de aplicaciones de Office 365 ProPlus 2016.
 - Si alguna aplicación de Office está abierta cuando Intune instala el conjunto de aplicaciones, es posible que los usuarios finales pierdan los datos de los archivos no guardados.
-- Si instala Office en un dispositivo que ya tenga instalado Office, lea las consideraciones siguiente:
-    - Independientemente de la versión de Office que use, no puede instalar productos Office de 32 bits y de 64 bits en el mismo dispositivo.
-    - No puede instalar la misma versión de Hacer clic y ejecutar ni las versiones MSI de Office en el mismo dispositivo, pero sí puede instalar versiones principales distintas.
-    - Si ya tiene una versión anterior de Office que haya instalado con Hacer clic y ejecutar, debe quitar las aplicaciones que desea reemplazar por la versión más reciente. Por ejemplo, si tiene una versión anterior de Word en el dispositivo y desea asignar la versión más reciente, primero debe quitar la versión anterior.
-    - Si un dispositivo ya tiene instalado Office 365, asignar el conjunto de aplicaciones de Office 365 ProPlus 2016 al dispositivo puede significar que tenga que cambiar el nivel de la suscripción de Office.
+- Este método de instalación no se admite en dispositivos Windows 10S.
+- Si asigna este tipo de aplicación como Disponible y se dirige a varios usuarios con las diferentes asignaciones, solo verán la asignación de destino más reciente.
 
 
 ## <a name="get-started"></a>Introducción

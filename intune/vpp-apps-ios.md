@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/03/2017
+ms.date: 07/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16b7ce81eb63a81534af2911b34904d870ac41ad
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 433cec8e0bc2012090e680e0a28a9a77d7b13a38
+ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="how-to-manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Administrar aplicaciones de iOS compradas a través de un programa de compras por volumen con Microsoft Intune
 
@@ -33,6 +33,19 @@ Microsoft Intune le ayuda a administrar las aplicaciones que ha adquirido a trav
 - Importando la información de licencia desde la tienda de aplicaciones
 - Realizando un seguimiento de cuántas licencias ha usado
 - Evitando que instale más copias de la aplicación que tiene
+
+Existen dos métodos que puede usar para asignar aplicaciones compradas por volumen:
+
+### <a name="device-licensing"></a>Licencias de dispositivo
+
+Cuando asigna una aplicación a los dispositivos, se usa una licencia de aplicación y permanece asociada con el dispositivo al que se le ha asignado.
+Cuando asigna aplicaciones compradas por volumen a un dispositivo, el usuario final del dispositivo no tiene que proporcionar un id. de Apple para tener acceso a la tienda. 
+
+### <a name="user-licensing"></a>Licencias de usuario
+
+Cuando asigna una aplicación a los usuarios, se usa una licencia de aplicación para el usuario y se asocia con este. La aplicación puede ejecutarse en varios dispositivos que tiene el usuario.
+Cuando asigna una aplicación comprada por volumen a los usuarios, cada usuario final debe tener un id. de Apple válido para tener acceso a la tienda de aplicaciones.
+
 
 Además, puede sincronizar, administrar y asignar los libros que haya adquirido a través de la tienda del Programa de Compras por Volumen de Apple con Intune. Use la carga de trabajo **Libros** del portal de Intune para administrar los libros. Los procedimientos para administrar libros son iguales a los que usa para administrar aplicaciones.
 Debe haber cargado un token del Programa de Compras por Volumen de Apple antes de comenzar. Actualmente, solo puede asignar libros como una instalación **requerida**.
@@ -81,24 +94,28 @@ Puede sincronizar los datos que tiene Apple con Intune en cualquier momento al e
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Para asignar una aplicación comprada por volumen
 
-1. En la carga de trabajo **Aplicaciones móviles**, elija **Administrar** > **Aplicaciones con licencia**.
-2. En la hoja de la lista de aplicaciones, elija la aplicación que desea asignar y luego elija '**...** ' > **Asignar grupos**.
-3. En la hoja <*nombre de la aplicación*> - **Grupos asignados**, elija **Administrar** > **Grupos asignados**.
-4. Elija **Asignar grupos** y, en la hoja **Seleccionar grupos**, elija los grupos de dispositivos o usuarios de Azure AD a los que quiere asignar la aplicación.
-Debe elegir una acción de implementación de **Requerido**. Además, las asignaciones a grupos de dispositivos están disponibles para los nuevos inquilinos creados después de enero de 2017. Si el inquilino se ha creado antes de esta fecha y no tiene la opción de asignar aplicaciones de VPP a grupos de dispositivos, póngase en contacto con el soporte técnico de Intune.
-5. Cuando termine, elija **Guardar**.
+1.  En la carga de trabajo **Mobile Apps**, pulse **Administrar** > **Licencias de aplicaciones**.
+2.  En la hoja de la lista de aplicaciones, elija la aplicación que desea asignar y luego elija '**... **' > **Asignar grupos**.
+3.  En la hoja *<app name>* - **Asignaciones**, pulse **Administrar** > **Asignaciones**.
+4.  Pulse **Seleccionar grupos** y, en la hoja **Seleccionar grupos**, pulse los grupos de dispositivos o usuarios de Azure AD a los que quiere asignar la aplicación.
+5.  Para cada grupo que ha seleccionado, pulse las opciones siguientes:
+    - **Tipo**: elija si la aplicación estará **Disponible** (los usuarios finales pueden instalar la aplicación del portal de empresa) o será **Necesaria** (los usuarios finales tendrán automáticamente la aplicación instalada).
+Cuando asigna una aplicación de VPP como **disponible**, la licencia y el contenido de la aplicación se asignan directamente desde la tienda de aplicaciones.
+    - **Tipo de licencia**: elija **Licencias de usuario** o **Licencias de dispositivo**.
+6.  Cuando termine, elija **Guardar**.
+
 
 >[!NOTE]
 >La lista de aplicaciones mostradas está asociada con un token. Si tiene una aplicación que está asociada con varios tokens de VPP, verá la misma aplicación mostrándose varias veces; una por cada token.
 
-Consulte [Supervisión de aplicaciones](apps-monitor.md) para obtener información que le ayude a supervisar las asignaciones de aplicaciones.
-
 ## <a name="further-information"></a>Más información
 
-Al asignar la aplicación como una instalación **requerida**, cada usuario que instala dicha aplicación usa una licencia.
-
-Para reclamar una licencia, debe cambiar la acción de asignación a **Desinstalar**. La licencia se recupera cuando se desinstala la aplicación.
+Para reclamar una licencia, debe cambiar la acción de asignación a Desinstalar. La licencia se recupera cuando se desinstala la aplicación.
 
 Si un usuario con un dispositivo elegible intenta primero instalar una aplicación de VPP, se le pedirá que se una al Programa de Compras por Volumen de Apple. Debe unirse para poder continuar con la instalación de la aplicación. La invitación para unirse al Programa de Compras por Volumen de Apple requiere que el usuario pueda usar la aplicación iTunes en el dispositivo iOS. Si ha configurado una directiva para deshabilitar la aplicación iTunes Store, las licencias de aplicaciones VPP basadas en usuario no funcionan. La solución es quitar la directiva para permitir la aplicación iTunes o usar licencias basadas en dispositivos.
 
-Cuando asigna una aplicación de VPP como disponible, la licencia y el contenido de la aplicación se asignan directamente desde la tienda de aplicaciones.
+
+
+## <a name="next-steps"></a>Pasos siguientes
+
+Consulte [Supervisión de aplicaciones](apps-monitor.md) para obtener información que le ayude a supervisar las asignaciones de aplicaciones.

@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e2302b0e53254b945215aadbb13107c85f345412
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3aff61f6201d6569e35aa9d556aa655d28775d2f
+ms.sourcegitcommit: 18cdbdc226f64368de892a8c5cff157c37986c57
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/03/2017
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>Control de administración basada en roles (RBAC) con Intune
 
@@ -57,9 +57,9 @@ Solo los usuarios con roles de **administradores del servicio** de Intune con pe
 
 Los siguientes roles están integrados en Intune y puede asignarlos a grupos sin necesidad de realizar ninguna configuración adicional:
 
-- **Departamento de soporte técnico**: realiza tareas remotas relacionadas con usuarios y dispositivos y puede asignar aplicaciones o directivas a usuarios o dispositivos. 
+- **Departamento de soporte técnico**: realiza tareas remotas relacionadas con usuarios y dispositivos y puede asignar aplicaciones o directivas a usuarios o dispositivos.
 - **Administrador de directivas y perfiles**: administra la directiva de cumplimiento, los perfiles de configuración, la inscripción de Apple y los identificadores de dispositivos corporativos.
-- **Operador de solo lectura**: ve información sobre usuarios, dispositivos, inscripciones, configuraciones y aplicaciones, pero no puede realizar ningún cambio en Intune.
+- **Operador de solo lectura**: ve información sobre usuarios, dispositivos, inscripciones, configuraciones y aplicaciones. No puede realizar ningún cambio en Intune.
 - **Administrador de aplicaciones**: administra las aplicaciones móviles y administradas y puede leer la información del dispositivo.
 
 ### <a name="to-assign-a-built-in-role"></a>Para asignar un rol integrado
@@ -68,9 +68,9 @@ Los siguientes roles están integrados en Intune y puede asignarlos a grupos sin
 
 2. En la hoja <*nombre del rol*> - **Propiedades**, elija **Administrar** y luego **Asignaciones**.
 
-    > [!NOTE] 
+    > [!NOTE]
     > No se pueden eliminar ni editar los roles integrados
-    
+
 3. En la hoja de roles personalizados, elija **Asignar**.
 
 4. En la hoja **Asignaciones de roles**, escriba un **nombre** y una **descripción** opcional para la asignación y luego elija lo siguiente:
