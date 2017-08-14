@@ -14,17 +14,17 @@ ms.assetid: 5E5A35D3-88F8-441B-8A0B-C5D7A1E5137B
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a9d99b71b9f84eea45ae597ed0f69010f6e95805
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: b70bf3410e20dd792c0fcff050292ddea714d63e
+ms.sourcegitcommit: 99ffed621855357de427d6fdf7b70d4e543197e9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="connect-to-the-data-warehouse-with-power-bi"></a>Conectarse al Almacenamiento de datos con Power BI
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Puede descargar un archivo para su uso con Microsoft Power BI que le permite cargar informes interactivos generados de forma dinámica para el inquilino de Intune. El archivo de Almacenamiento de datos de Power BI (pbix) contiene la configuración de conexión del inquilino y los siguientes informes y gráficos de ejemplo: 
+Puede descargar un archivo para su uso con Microsoft Power BI que le permite cargar informes interactivos generados de forma dinámica para el inquilino de Intune. El archivo de Almacenamiento de datos de Power BI (pbix) contiene la configuración de conexión del inquilino y los siguientes informes y gráficos de ejemplo:  
 
   -  Dispositivos
   -  Inscripción
@@ -45,6 +45,9 @@ Instale la versión más reciente de Power BI Desktop. Puede descargar Power BI 
 ## <a name="load-the-data-and-reports-using-the-power-bi-file-pbix"></a>Cargar los datos e informes mediante el archivo de Power BI (pbix)
 
 El archivo de Power BI (pbix) contiene información de conexión del inquilino y un conjunto de informes creados previamente basados en el modelo de datos del Almacenamiento de datos. Abra el archivo en Power BI Desktop e inicie sesión en Azure AD. El informe carga los datos del inquilino de Intune.
+
+> [!Important]  
+> Cada archivo de Power BI (pbix) pueden variar según la ubicación del inquilino. Si administra varios inquilinos de Intune, asegúrese de usar el archivo descargado desde Azure Portal durante una sesión iniciada en ese inquilino.  
 
 1.  Inicie sesión en Azure Portal y seleccione **Supervisión y administración** > **Intune**. También puede buscar recursos para **Intune**.  
 2.  Abra la hoja **Microsoft Intune Data Warehouse API (Preview)** (API de Almacenamiento de datos de Microsoft Intune (versión preliminar)).
