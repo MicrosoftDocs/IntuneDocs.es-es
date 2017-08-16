@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b49c227e3cae6c5dca8655362cfbfa6fd3f94807
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: bd84f24400c5ca0828fb13a36963ffda274ba073
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos Windows 10 y versiones posteriores en Microsoft Intune
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 08/03/2017
     -       **Ninguno**: no se envían datos a Microsoft.
     -       **Básico**: se envía información limitada a Microsoft.
     -       **Mejorado**: se envían datos de diagnóstico mejorados a Microsoft.
-    -       **Completo **: envía los mismos datos que Mejorado, además de datos adicionales sobre el estado del dispositivo.
+    -       **Completo** : envía los mismos datos que Mejorado, además de datos adicionales sobre el estado del dispositivo.
 -   **Cámara**: permite o bloquea el uso de la cámara en el dispositivo.
 -   **Sincronización de archivos de OneDrive**: bloquea la sincronización de archivos de OneDrive en el dispositivo.
 -   **Almacenamiento extraíble**: especifica si se pueden usar dispositivos de almacenamiento externo, como tarjetas SD, con el dispositivo.
@@ -72,7 +72,7 @@ Para los dispositivos que ejecutan Windows 10 Mobile: si el inicio de sesión fa
 
 ## <a name="privacy"></a>Privacidad
 
--   **Personalización de entrada**: no permite el uso de servicios de voz basados en la nube para Cortana, Dictado o aplicaciones de la Tienda Windows. Si permite estos servicios, Microsoft puede recopilar datos de voz para mejorar el servicio.
+-   **Personalización de entrada**: no permite el uso de servicios de voz basados en la nube para Cortana, Dictado o aplicaciones de Microsoft Store. Si permite estos servicios, Microsoft puede recopilar datos de voz para mejorar el servicio.
 -   **Aceptación automática de los mensajes de consentimiento del usuario sobre emparejamiento y privacidad**: permite que Windows acepte automáticamente los mensajes de consentimiento sobre emparejamiento y privacidad al ejecutar las aplicaciones.
 
 
@@ -91,12 +91,12 @@ Para los dispositivos que ejecutan Windows 10 Mobile: si el inicio de sesión fa
 ## <a name="app-store"></a>Tienda de aplicaciones
 
 -   **Tienda de aplicaciones (solo móvil)**: permitir o bloquear el uso de la tienda de aplicaciones en dispositivos Windows 10 Mobile.
--   **Actualización automática de aplicaciones desde la tienda**: permite que las aplicaciones instaladas de la Tienda Windows se actualicen automáticamente.
+-   **Actualizar automáticamente las aplicaciones de la tienda**: permite que las aplicaciones instaladas de Microsoft Store se actualicen automáticamente.
 -   **Instalación de aplicaciones de confianza**: permite realizar una instalación de prueba de las aplicaciones firmadas con un certificado de confianza.
 -   **Desbloqueo de desarrollador**: permite que un usuario final modifique la configuración de desarrollador de Windows, como permitir las aplicaciones con instalación de prueba.
 -   **Datos de aplicación compartidos entre usuarios**: permite que las aplicaciones compartan datos entre distintos usuarios en el mismo dispositivo.
 -   **Usar solo una tienda privada**: habilite esta opción para permitir que los usuarios finales solo descarguen aplicaciones desde la tienda privada.
--   **Inicio de aplicaciones de la tienda**: se usa para deshabilitar todas las aplicaciones instaladas previamente en el dispositivo o que se descargaron de la Tienda Windows.
+-   **Inicio de aplicaciones de la tienda**: se usa para deshabilitar todas las aplicaciones instaladas previamente en el dispositivo o que se descargaron de Microsoft Store.
 -   **Instalar los datos de aplicación en el volumen del sistema**: esta opción hace que las aplicaciones dejen de almacenar datos en el volumen del sistema del dispositivo.
 -   **Instalar las aplicaciones en la unidad del sistema**: esta opción hace que las aplicaciones dejen de almacenar datos en la unidad del sistema del dispositivo.
 -   **Game DVR (solo escritorio)**: configura si se permite la grabación y difusión de los juegos.

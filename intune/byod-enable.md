@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: 8684ea31420edd836038dc9337bd8bdf56e78ba6
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 0d05918a62549559a186376d99e28c952af16b9c
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="enable-byod-with-intune"></a>Habilitación de BYOD con Intune
 
@@ -75,14 +75,14 @@ Con Intune es fácil:
 * [Entregar aplicaciones de la tienda a los dispositivos administrados](apps-deploy.md)
 * Destinar aplicaciones a los dispositivos no administrados mediante el sitio web del portal de empresa
 
-Intune también le permite administrar e implementar las aplicaciones que ha comprado por volumen en la App Store de iOS y en la Tienda Windows para empresas. Esto ayuda a reducir la carga administrativa relacionada con el seguimiento de las aplicaciones adquiridas por volumen.
+Intune también le permite administrar e implementar las aplicaciones que ha comprado por volumen en el App Store de iOS y en la Tienda Microsoft para Empresas. Esto ayuda a reducir la carga administrativa relacionada con el seguimiento de las aplicaciones adquiridas por volumen.
 
 > [!TIP]
 > Puede [configurar el inicio de sesión único (SSO) con Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect). El SSO permite que los usuarios inicien sesión en aplicaciones con el nombre de usuario y la contraseña del dominio que usan de forma local. Asimismo, puede [proporcionar acceso basado en Internet a aplicaciones web hospedadas localmente](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) mediante el Proxy de aplicación de Azure Active Directory.
 
 -   [Administrar aplicaciones adquiridas por volumen para dispositivos iOS](vpp-apps-ios.md). Puede comprar varias licencias para aplicaciones de iOS a través del [Programa de Compras por Volumen de Apple para empresas](http://www.apple.com/business/vpp/). Debe configurar una cuenta de PCV de Apple en el sitio web de Apple y cargar el token de PCV de Apple en Intune. De este modo, puede sincronizar la información de compras por volumen con Intune y hacer el seguimiento del uso de aplicaciones compradas por volumen.
 
--   [Administración de aplicaciones adquiridas a través de la Tienda Windows para empresas](windows-store-for-business.md). En la [Tienda Windows para empresas](https://www.microsoft.com/business-store) puede buscar y comprar aplicaciones para su organización, tanto sueltas como por volumen. Si conecta la tienda a Intune, puede administrar aplicaciones compradas por volumen desde la consola de Intune.
+-   [Administración de aplicaciones adquiridas a través de la Tienda Microsoft para Empresas](windows-store-for-business.md). En la [Tienda Microsoft para Empresas](https://www.microsoft.com/business-store), puede buscar y comprar aplicaciones para su organización, tanto sueltas como por volumen. Si conecta la tienda a Intune, puede administrar aplicaciones compradas por volumen desde la consola de Intune.
 
 ## <a name="protect-company-data"></a>Proteger los datos de la empresa
 
@@ -105,10 +105,10 @@ Puede usar [directivas de protección de aplicaciones de Intune](app-protection-
 
 Utilice las [directivas de Windows Information Protection (WIP)](app-protection-policies-configure-windows-10.md) para hacer lo mismo en los dispositivos de Windows 10 administrados. Estas directivas funcionan sin interferir en la experiencia de los empleados. No requieren cambios en el entorno de red ni en otras aplicaciones.
 
-### <a name="wipe-company-data-while-leaving-personal-data-intact"></a>Borrar datos de la empresa mientras se dejan intactos los datos personales
+### <a name="remove-company-data-while-leaving-personal-data-intact"></a>Quitar datos de la empresa mientras se dejan intactos los datos personales
 
-Cuando un dispositivo ya no es necesario para el trabajo, se va a reasignar o se ha perdido, puede quitar los datos y las aplicaciones de la empresa que contenga. Para ello, puede usar las funcionalidades de borrado completo y de borrado selectivo de Intune. Los usuarios también pueden borrar remotamente sus propios dispositivos del Portal de empresa de Intune si estos dispositivos están inscritos en Intune.
+Cuando un dispositivo ya no es necesario para el trabajo, se va a reasignar o se ha perdido, puede quitar los datos y las aplicaciones de la empresa que contenga. Para ello, puede usar las funcionalidades de Intune para eliminar los datos de la empresa o realizar un restablecimiento de fábrica. Los usuarios también pueden restablecer remotamente sus propios dispositivos desde el Portal de empresa de Intune si esos dispositivos están inscritos en Intune.
 
-El [borrado completo](devices-wipe.md) restaura la configuración predeterminada de fábrica del dispositivo y quita los datos y la configuración del usuario. El [borrado selectivo](devices-wipe.md#selective-wipe) solo quita del dispositivo los datos de empresa, pero deja intactos los datos personales de los usuarios.
+Un [restablecimiento de fábrica](devices-wipe.md) restaura la configuración predeterminada de fábrica del dispositivo, quita los datos y la configuración del usuario y quita el dispositivo de la administración de Intune. La opción [Eliminar datos de la compañía](devices-wipe.md#remove-company-data) solo quita del dispositivo los datos de la empresa, pero deja intactos los datos personales de los usuarios.
 
-Cuando se inicie, el dispositivo empezará de inmediato el proceso de borrado selectivo para quitarlo de la administración. Una vez finalizado el proceso, se eliminarán todos los datos de la empresa y se quitará el nombre del dispositivo del portal de Intune. con lo que finaliza el ciclo de vida de administración del dispositivo.
+Una vez que se inicia, el dispositivo comienza inmediatamente el proceso de restablecimiento. Una vez finalizado el proceso, se eliminarán todos los datos de la empresa y se quitará el nombre del dispositivo de Intune. con lo que finaliza el ciclo de vida de administración del dispositivo.
