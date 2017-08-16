@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/01/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,17 +15,20 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b9e009e94fb4d9bdb99960e0d238d5471d1f4b50
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 09641b5e34ab8200e7dd9d4c27f0dabf59fa62d2
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos Android y Samsung KNOX en Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Use esta configuración con una directiva de restricción de dispositivos Android para configurar los dispositivos de su organización.
+
+>[!TIP]
+>Si la configuración que quiere no está disponible, es posible que pueda configurar sus dispositivos con un [perfil personalizado](custom-settings-android.md). 
 
 ## <a name="general"></a>General
 
@@ -132,3 +135,8 @@ La configuración de pantalla completa se aplica solo a los dispositivos Samsung
     - **Agregar aplicaciones administradas**.
 - **Botón de suspensión de pantalla**: habilita o deshabilita el botón de reactivación de la suspensión de pantalla en el dispositivo.
 - **Botones de volumen**: habilita o deshabilita el uso de los botones de volumen en el dispositivo.
+
+
+## <a name="next-steps"></a>Pasos siguientes
+
+Siga usando las instrucciones del artículo [Configuración de restricciones de dispositivos](device-restrictions-configure.md) para crear y, después, asignar el perfil de restricción de dispositivo.
