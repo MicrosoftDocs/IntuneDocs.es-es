@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 05/04/2017
+ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 014e59c017eac0d54a632e545692e1a1a8053164
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 45a3a8fe4960cc1bb8c5f2150f57d34d59c08e0a
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="custom-settings-for-android-devices-in-microsoft-intune"></a>Opciones de configuración personalizadas para dispositivos Android en Microsoft Intune
 
@@ -40,3 +40,13 @@ Esta funcionalidad está pensada para que se puedan asignar las opciones de conf
     - **OMA-URI**: especifique la configuración OMA-URI para la que quiere suministrar un valor.
     - **Valor**: escriba el valor que quiere asociar con la configuración OMA-URI especificada.
 4. Haga clic en **Aceptar** cuando haya terminado y luego siga agregando más valores según sea necesario.
+
+## <a name="next-steps"></a>Pasos siguientes
+
+Cuando finalice la configuración, el perfil se creará y aparecerá en la hoja de la lista de perfiles. Si desea continuar y asignar este perfil a grupos, consulte [Asignación de perfiles de dispositivo](device-profile-assign.md).
+
+Para obtener ejemplos de configuraciones personalizadas que puede usar, vea:
+
+- [Uso de un perfil de dispositivo personalizado de Microsoft Intune para crear un perfil de Wi-Fi con una clave precompartida](/intune/wi-fi-profile-shared-key)
+- [Uso de un perfil personalizado de Microsoft Intune para crear un perfil de VPN por aplicación para dispositivos Android](/intune/android-pulse-secure-per-app-vpn)
+- [Uso de directivas personalizadas para permitir y bloquear aplicaciones para dispositivos Samsung KNOX Standard en Microsoft Intune](/intune/samsung-knox-apps-allow-block)

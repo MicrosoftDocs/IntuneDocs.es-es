@@ -17,11 +17,12 @@
 ## [Problemas conocidos](known-issues.md)
 ## [Obtener soporte técnico](get-support.md)
 
-# [Introducción](get-started-evaluation.md)
-## [Crear un grupo](get-started-groups.md)
+# [Introducción a Intune](get-started-evaluation.md)
+## [Navegar por Azure Portal](get-started-azure.md)
 ## [Crear un usuario](get-started-users.md)
-## [Inscripción de dispositivos](get-started-enroll.md)
+## [Crear un grupo](get-started-groups.md)
 ## [Asignar directivas](get-started-policies.md)
+## [Inscripción de dispositivos](get-started-enroll.md)
 ## [Asignar aplicaciones](get-started-apps.md)
 
 

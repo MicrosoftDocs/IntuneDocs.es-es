@@ -1,7 +1,7 @@
 ---
 title: "Cerrar la sesión del usuario de un dispositivo iOS con Intune"
 titleSuffix: Intune on Azure
-description: "Obtenga información sobre cómo cerrar la sesión del usuario actual de un dispositivo IOS con Intune."
+description: "Obtenga información sobre cómo cerrar la sesión del usuario actual de un dispositivo iOS con Intune."
 keywords: 
 author: robstackmsft
 ms.author: robstack
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 702bc46c-1a6f-4689-bd53-3b778a447baa
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dc01055995747a74782680ff2f64fb0bec6f4883
-ms.sourcegitcommit: be12974a7eaa4ce9cffe45aabe456c858d582e20
+ms.openlocfilehash: 1de2069b7b25ee5e5c21a8e4caa7512f13d4ca0e
+ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2017
+ms.lasthandoff: 08/09/2017
 ---
 # <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>Cerrar la sesión del usuario actual en dispositivos iOS administrados con Intune
 
@@ -26,7 +26,17 @@ ms.lasthandoff: 07/14/2017
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-La acción **Cerrar sesión del usuario actual** cierra la sesión del usuario actual en un dispositivo iPad compartido que se ha configurado para administrar la aplicación Classroom para iOS con un [perfil educativo de iOS](education-settings-configure-ios.md). 
+La acción **Cerrar sesión del usuario actual** cierra la sesión del usuario actual en un dispositivo iPad compartido que está configurado para administrar la aplicación Classroom para iOS con un [perfil educativo de iOS](education-settings-configure-ios.md). 
+
+## <a name="supported-platforms"></a>Plataformas compatibles
+
+- Windows: no compatible
+- Windows Phone: no compatible
+- iOS: compatible en iOS 9.3 y versiones posteriores (solo dispositivos iPad compartidos)
+- macOS: no compatible
+- Android: no compatible
+
+## <a name="how-to-logout-the-current-user"></a>Cómo cerrar la sesión del usuario actual
 
 1.  Inicie sesión en el portal de Azure.
 2.  Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.

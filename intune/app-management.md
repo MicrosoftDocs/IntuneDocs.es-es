@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 33ddb60df7aebe36ff652e1da6da592442b96d4b
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+ms.openlocfilehash: c05b2257fe03cd23ad5ba71a3fee217cd4802650
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>¿Qué es la administración de aplicaciones de Microsoft Intune?
 
@@ -87,7 +87,7 @@ Puede encontrar la mayoría de las tareas relacionadas con las aplicaciones en l
 
 ### <a name="monitor"></a>Supervisión
 - **Aplicaciones con licencia**: vea, asigne y supervise las aplicaciones compradas por volumen de las tiendas de aplicaciones.
-    - [Aplicaciones adquiridas por volumen de la Tienda Windows para empresas](windows-store-for-business.md)
+    - [Aplicaciones adquiridas por volumen de la Tienda Microsoft para Empresas](windows-store-for-business.md)
 - **Discovered Apps** (Aplicaciones detectadas): muestra todas las aplicaciones que asignó Intune y que están instaladas en un dispositivo.
 - **App Install Status** (Estado de instalación de aplicación): muestra el estado de una asignación de aplicación que ha creado.
 - **App protection status** (Estado de protección de aplicación): muestra el estado de una directiva de protección de aplicaciones de un usuario seleccionado.
@@ -97,7 +97,7 @@ Para más información, consulte [Supervisión de aplicaciones](apps-monitor.md)
 ### <a name="setup"></a>Setup
 <!--- **iOS VPP Tokens**
     - [iOS volume-purchased apps](vpp-apps-ios.md) --->
-- **Tienda Windows para empresas**: configure la integración con la Tienda Windows para empresas. Luego, puede sincronizar las aplicaciones adquiridas en Intune, asignarlas y realizar el seguimiento de su uso de licencias.
-    - [Aplicaciones adquiridas por volumen de la Tienda Windows para empresas](windows-store-for-business.md)
+- **Tienda Microsoft para Empresas**: configure la integración con la Tienda Microsoft para Empresas. Luego, puede sincronizar las aplicaciones adquiridas en Intune, asignarlas y realizar el seguimiento de su uso de licencias.
+    - [Aplicaciones adquiridas por volumen de la Tienda Microsoft para Empresas](windows-store-for-business.md)
 - **Company Portal branding** (Personalización de marca del Portal de empresa): personalice el Portal de empresa para adaptarlo a su empresa.
     - [Configuración del Portal de empresa](company-portal-app.md)

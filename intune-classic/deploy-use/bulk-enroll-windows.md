@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 0053e37a-f26e-452f-9524-5039a635b52e
 ms.reviewer: damionw
 ms.custom: intune-classic
-ms.openlocfilehash: ab52ba70403da5192cd3539dfd6d1e64bd79268c
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: dc37cfb782e1d1e1e076d90fef160c2ce910cda4
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Inscripción masiva para dispositivos Windows
 
@@ -36,7 +36,7 @@ La inscripción masiva de dispositivos Windows requiere lo siguiente:
 
 ## <a name="create-a-provisioning-package"></a>Creación de un paquete de aprovisionamiento
 
-1. Descargue [Windows Configuration Designer (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22) de la Tienda Windows.
+1. Descargue el [Diseñador de configuración de Windows (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22) de la Microsoft Store.
 ![Captura de pantalla de la descripción y capturas de pantalla de la aplicación Windows Configuration Designer](../media/bulk-enroll-store.png)
 
 2. Abra la aplicación **Windows Configuration Designer** y seleccione **Provision desktop devices** (Aprovisionar dispositivos de escritorio).
