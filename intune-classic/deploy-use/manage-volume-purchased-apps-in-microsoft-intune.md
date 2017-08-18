@@ -14,11 +14,11 @@ ms.assetid: 674c8f4c-00be-4c69-85b7-cf7bdaa71c94
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ba965dfdfa91920c0f76b4142dec05516c472cab
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 4527f7ccf1125992841b8f317024cc64837484ab
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="manage-volume-purchased-apps-using-microsoft-intune"></a>Administrar aplicaciones compradas por volumen con Microsoft Intune
 
@@ -30,8 +30,8 @@ Microsoft Intune ayuda a administrar las aplicaciones que se compran a través d
 
 ## <a name="which-types-of-apps-can-you-manage"></a>¿Qué tipos de aplicaciones puede administrar?
 
-Con Intune, puede administrar las aplicaciones que ha comprado por volumen en la App Store de iOS y en la Tienda Windows para empresas.
+Con Intune, puede administrar las aplicaciones que ha comprado por volumen en la App Store de iOS y en la Tienda Microsoft para Empresas.
 Para conocer cómo se administran las aplicaciones con licencia de cada tienda, elija uno de los temas siguientes:
 
 - [Administrar aplicaciones de iOS compradas por volumen](manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
-- [Administrar aplicaciones compradas por volumen en la Tienda Windows para empresas](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
+- [Administrar aplicaciones compradas por volumen en la Tienda Microsoft para Empresas](manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)

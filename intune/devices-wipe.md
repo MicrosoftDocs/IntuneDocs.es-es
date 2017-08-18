@@ -1,12 +1,12 @@
 ---
-title: Borrado selectivo o completo en dispositivos mediante Intune
+title: "Uso del restablecimiento de fábrica o eliminación de los datos de la compañía de dispositivos con Intune"
 titleSuffix: Intune on Azure
-description: "Aprenda a realizar un borrado selectivo de los datos de la compañía en un dispositivo o un borrado completo para restablecer el dispositivo a los valores predeterminados de fábrica."
+description: "Obtenga información sobre cómo eliminar datos de la compañía de un dispositivo o cómo realizar un restablecimiento de fábrica en el dispositivo."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/21/2017
+ms.date: 08/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,64 +14,40 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 44d1695b3f0297276376fb9cb4367c1411aa31b2
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 331ced93f0697f7c76d1356aae32b955602d17a3
+ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/10/2017
 ---
-# <a name="use-full-or-selective-wipe"></a>Usar el borrado selectivo o completo
+# <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Eliminación de dispositivos mediante el restablecimiento de fábrica o de los datos de la compañía
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Puede borrar las aplicaciones y datos de los dispositivos administrados por Intune que ya no son necesarios, se van a reutilizar o han desaparecido. Para hacer esto, Intune proporciona funcionalidades de borrado completo y de borrado selectivo. Los usuarios también pueden emitir un comando de borrado remoto de dispositivos desde el portal de empresa de Intune en dispositivos de propiedad privada inscritos en Intune.
+Puede eliminar de Intune los dispositivos que ya no son necesarios, que se van a reutilizar o que han desaparecido. Para ello, emita un comando **Eliminar datos de la compañía** o **Restablecimiento de fábrica**. Los usuarios también pueden emitir un comando remoto desde el Portal de empresa de Intune para los dispositivos de propiedad privada inscritos en Intune.
 
-  > [!NOTE]
-  > En este tema se trata únicamente el borrado de dispositivos administrados mediante la administración de dispositivos móviles de Intune. También puede usar [Azure Portal](https://portal.azure.com) para [eliminar datos corporativos de las aplicaciones](https://docs.microsoft.com/intune-classic/deploy-use/wipe-managed-company-app-data-with-microsoft-intune). También puede [retirar los equipos administrados con software cliente de Intune](https://docs.microsoft.com/intune-classic/deploy-use/retire-a-windows-pc-with-microsoft-intune).
+> [!NOTE]
+> Antes de eliminar un usuario de Azure Active Directory, emita un comando **Restablecimiento de fábrica** o **Eliminar datos de la compañía** a todos los dispositivos asociados a ese usuario. Si elimina usuarios con dispositivos administrados desde Azure Active Directory, Intune ya no podrá emitir el restablecimiento de fábrica o eliminar los datos de la compañía de esos dispositivos.
 
-## <a name="full-wipe"></a>Borrar todos los datos
+## <a name="factory-reset"></a>Restablecimiento de fábrica
 
-La opción **Borrar todos los datos** restaura la configuración predeterminada de fábrica del dispositivo y quita todos los datos y parámetros del usuario y la empresa. El dispositivo se quita de Intune. La eliminación completa es útil para restablecer un dispositivo antes de proporcionárselo a un nuevo usuario o en caso de que el dispositivo se haya perdido o robado.  **Tenga cuidado al seleccionar el borrado completo. Los datos del dispositivo no se pueden recuperar**.
+La opción **Restablecimiento de fábrica** restaura la configuración predeterminada de fábrica del dispositivo y quita todos los datos y parámetros del usuario y la compañía. El dispositivo se quita de la administración de Intune. El restablecimiento de fábrica es útil para restablecer un dispositivo antes de proporcionárselo a un nuevo usuario o en caso de que el dispositivo se haya perdido o lo hayan robado. Tenga cuidado al seleccionar el restablecimiento de fábrica. Los datos del dispositivo no se pueden recuperar.
 
+### <a name="to-factory-reset-a-device"></a>Para realizar el restablecimiento de fábrica de un dispositivo
 
-> [!Warning]
-> Los dispositivos Windows 10 RTM (anteriores a la versión 1511 de Windows 10) con menos de 4 GB de RAM podrían dejar de estar accesibles si se borran. Para acceder a un dispositivo Windows 10 que ha dejado de responder, puede arrancarlo desde una unidad USB.
+1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
+2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
+3. En la hoja **Dispositivos y grupos**, elija **Todos los dispositivos**.
+4. Elija el nombre del dispositivo en el que quiere realizar el restablecimiento de fábrica.
+5. En la hoja que muestra el nombre del dispositivo, elija **Restablecimiento de fábrica** y seleccione **Sí** para confirmar.
 
+Si el dispositivo está encendido y conectado, un comando de restablecimiento de fábrica tarda menos de 15 minutos en propagarse por cualquier tipo de dispositivo.
 
-**Para realizar un borrado completo (restablecimiento de fábrica) de un dispositivo**:
+## <a name="remove-company-data"></a>Eliminar datos de la compañía
 
-1.  En la hoja **Dispositivos y grupos**, elija **Todos los dispositivos**.
+El comando **Eliminar datos de la compañía** quita los datos de la aplicación administrada (si procede), la configuración y los perfiles de correo electrónico que se han asignado mediante Intune. El comando Eliminar datos de la compañía deja los datos personales del usuario en el dispositivo. El dispositivo se quita de la administración de Intune. En las tablas siguientes se describen los datos que se eliminan y el efecto en los datos que permanecen en el dispositivo después de eliminar los datos de la compañía.
 
-2.  Elija el nombre del dispositivo que quiere borrar.
-
-3.  En la hoja que muestra el nombre del dispositivo, elija **Restablecimiento de fábrica** y luego elija **Sí** para confirmar el borrado.
-
-Si el dispositivo está encendido y conectado, un comando de borrado tarda menos de 15 minutos en propagarse por cualquier tipo de dispositivo.
-
-### <a name="to-delete-devices-in-the-azure-active-directory-portal"></a>Eliminar dispositivos en el portal de Azure Active Directory
-
-1.  Vaya a [http://aka.ms/accessaad](http://aka.ms/accessaad) o seleccione **Administración** &gt; **Azure AD** en [https://portal.office.com](https://portal.office.com).
-
-2.  Inicie sesión con su identificador de organización mediante el vínculo que encontrará en el lado izquierdo de la página.
-
-3.  Cree una suscripción de Azure si no tiene una. Si tiene una cuenta de pago, no necesitará una tarjeta de crédito ni realizar ningún pago (seleccione el vínculo de suscripción **Registre su suscripción gratuita de Azure Active Directory**).
-
-4.  Seleccione **Active Directory** y, a continuación, seleccione su empresa.
-
-5.  Seleccione la pestaña **Usuarios** .
-
-6.  Seleccione el usuario cuyos dispositivos desea eliminar.
-
-7.  Seleccione **Dispositivos**.
-
-8.  Quite los dispositivos que crea oportunos, como por ejemplo aquellos que ya no estén en uso o que tienen definiciones inexactas.
-
-
-## <a name="selective-wipe"></a>La eliminación de datos selectiva
-
-El **borrado selectivo** quita los datos de la empresa incluidos los datos de administración de aplicaciones móviles (MAM) si procede, las configuraciones y los perfiles de correo electrónico de un dispositivo. El borrado selectivo deja los datos personales del usuario en el dispositivo. El dispositivo se quita de Intune. En las tablas siguientes se describen los datos que se eliminan y el efecto en los datos que permanecen en el dispositivo después de una eliminación selectiva. (Las tablas están organizadas por plataforma).
-
-**iOS**
+### <a name="ios"></a>iOS
 
 |Tipo de datos|iOS|
 |-------------|-------|
@@ -82,10 +58,10 @@ El **borrado selectivo** quita los datos de la empresa incluidos los datos de ad
 |Agente de administración|Se quitará el perfil de administración.|
 |Correo electrónico|Los perfiles de correo electrónico que se aprovisionan mediante Intune se quitan y el correo electrónico almacenado en caché en el dispositivo se elimina.|
 |Outlook|Se quita el correo electrónico recibido en la aplicación de Microsoft Outlook para iOS.|
-|Separación de Azure Active Directory (AAD)|Se quita el registro de AAD.|
-|Contactos | Se quitan los contactos sincronizados directamente desde la aplicación en la libreta de direcciones nativa.  No se pueden borrar los contactos sincronizados desde la libreta de direcciones nativa en otro origen externo. <br /> <br />Actualmente, se admite solo la aplicación Outlook.
+|Separación de Azure Active Directory (AD)|Se quita el registro de Azure AD.|
+|Contactos | Se quitan los contactos sincronizados directamente desde la aplicación en la libreta de direcciones nativa.  No se pueden eliminar los contactos sincronizados desde la libreta de direcciones nativa en otro origen externo. <br /> <br />Actualmente, se admite solo la aplicación Outlook.
 
-**Android**
+### <a name="android"></a>Android
 
 |Tipo de datos|Android|Android Samsung KNOX Standard|
 |-------------|-----------|------------------------|
@@ -100,30 +76,42 @@ El **borrado selectivo** quita los datos de la empresa incluidos los datos de ad
 |Agente de administración|Se revocarán los privilegios del administrador de dispositivos.|Se revocarán los privilegios del administrador de dispositivos.|
 |Correo electrónico|n/a (los dispositivos Android no admiten perfiles de correo electrónico)|Los perfiles de correo electrónico que se aprovisionan mediante Intune se quitan y el correo electrónico almacenado en caché en el dispositivo se elimina.|
 |Outlook|Se quita el correo electrónico recibido en la aplicación de Microsoft Outlook para Android.|Se quita el correo electrónico recibido en la aplicación de Microsoft Outlook para Android.|
-|Separación de Azure Active Directory (AAD)|Registro de AAD eliminado.|Registro de AAD eliminado.|
-|Contactos | Se quitan los contactos sincronizados directamente desde la aplicación en la libreta de direcciones nativa.  No se pueden borrar los contactos sincronizados desde la libreta de direcciones nativa en otro origen externo. <br /> <br />Actualmente, se admite solo la aplicación Outlook.|Se quitan los contactos sincronizados directamente desde la aplicación en la libreta de direcciones nativa.  No se pueden borrar los contactos sincronizados desde la libreta de direcciones nativa en otro origen externo. <br /> <br />Actualmente, se admite solo la aplicación Outlook.
+|Separación de Azure Active Directory (AD)|Registro de Azure AD eliminado.|Registro de Azure AD eliminado.|
+|Contactos | Se quitan los contactos sincronizados directamente desde la aplicación en la libreta de direcciones nativa.  No se pueden eliminar los contactos sincronizados desde la libreta de direcciones nativa en otro origen externo. <br /> <br />Actualmente, se admite solo la aplicación Outlook.|Se quitan los contactos sincronizados directamente desde la aplicación en la libreta de direcciones nativa.  No se pueden eliminar los contactos sincronizados desde la libreta de direcciones nativa en otro origen externo. <br /> <br />Actualmente, se admite solo la aplicación Outlook.
 
-**Android for Work**
+### <a name="android-for-work"></a>Android for Work
 
-Al realizar un borrado selectivo en un dispositivo de Android for Work, se quitan todos los datos, las aplicaciones y las configuraciones del perfil de trabajo en dicho dispositivo. Esto retira el dispositivo de la administración con Intune. No se admite el borrado completo en Android for Work.
+Al eliminar los datos de la compañía de un dispositivo de Android for Work, se eliminan todos los datos, las aplicaciones y las configuraciones del perfil de trabajo en dicho dispositivo. Esto retira el dispositivo de la administración con Intune. No se admite el restablecimiento de fábrica en Android for Work.
 
-**Windows**
+### <a name="windows"></a>Windows
 
 |Tipo de datos|Windows 8.1 (MDM) y Windows RT 8.1|Windows RT|Windows Phone 8 y Windows Phone 8.1|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
-|Aplicaciones de empresa y datos asociados instalados por Intune.|Los archivos protegidos por EFS tendrán su clave revocada y el usuario no podrá abrir los archivos.|No se quitarán las aplicaciones de empresa.|Se desinstalarán las aplicaciones instaladas originalmente a través del portal de empresa. Se quitarán los datos de la aplicación de empresa.|Se desinstalan las aplicaciones y se quitan las claves de instalación de prueba.|
+|Aplicaciones de empresa y datos asociados instalados por Intune.|Los archivos protegidos por EFS tendrán su clave revocada y el usuario no podrá abrir los archivos.|No se quitarán las aplicaciones de empresa.|Se desinstalarán las aplicaciones instaladas originalmente a través del portal de empresa. Se quitarán los datos de la aplicación de empresa.|Se desinstalan las aplicaciones y se quitan las claves de instalación de prueba.<br>Para Windows 10 versión 1703 (Creator Update) y posteriores, no se eliminan las aplicaciones de Office 365 ProPlus.|
 |Configuración|Las configuraciones que estableció la directiva de Intune ya no se aplican y los usuarios pueden cambiar la configuración.|Las configuraciones que estableció la directiva de Intune ya no se aplican y los usuarios pueden cambiar la configuración.|Las configuraciones que estableció la directiva de Intune ya no se aplican y los usuarios pueden cambiar la configuración.|Las configuraciones que estableció la directiva de Intune ya no se aplican y los usuarios pueden cambiar la configuración.|
 |Configuración de perfil de Wi-Fi y VPN|Quitado.|Quitado.|No compatible.|Quitado.|
 |Configuración de perfil de certificado|Certificados eliminados y revocados.|Certificados eliminados y revocados.|No compatible.|Certificados eliminados y revocados.|
 |Correo electrónico|Quita el correo electrónico habilitado para EFS que incluye la aplicación de correo electrónico y datos adjuntos de Windows.|No compatible.|Los perfiles de correo electrónico que se aprovisionan mediante Intune se quitan y el correo electrónico almacenado en caché en el dispositivo se elimina.|Quita el correo electrónico habilitado para EFS que incluye la aplicación de correo electrónico y datos adjuntos de Windows. Se quitan las cuentas de correo aprovisionadas por Intune.|
-|Separación de Azure Active Directory (AAD)|No.|No.|Registro de AAD eliminado.|No aplicable. Windows 10 no admite la eliminación selectiva en los dispositivos unidos a Azure Active Directory.|
+|Separación de Azure Active Directory (AD)|No.|No.|Registro de Azure AD eliminado.|No aplicable. Windows 10 no admite la eliminación de datos de la compañía en los dispositivos unidos a Azure Active Directory.|
 
-**Para realizar un borrado selectivo**:
+### <a name="to-remove-company-data"></a>Para eliminar los datos de la compañía
 
-1.  En la hoja **Dispositivos y grupos**, elija **Todos los dispositivos**.
+1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
+2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
+3. En la hoja **Dispositivos y grupos**, elija **Todos los dispositivos**.
+4. Elija el nombre del dispositivo del que quiere eliminar los datos de la compañía.
+5. En la hoja que muestra el nombre del dispositivo, elija **Eliminar datos de la compañía** y seleccione **Sí** para confirmar.
 
-2.  Elija el nombre del dispositivo que quiere borrar.
+Si el dispositivo está encendido y conectado, un comando de eliminación de datos tarda menos de 15 minutos en propagarse por cualquier tipo de dispositivo.
 
-3.  En la hoja que muestra el nombre del dispositivo, elija **Eliminar datos de la compañía** y luego elija **Sí** para confirmar el borrado.
+## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Eliminación de dispositivos en el portal de Azure Active Directory
 
-Si el dispositivo está encendido y conectado, un comando de borrado tarda menos de 15 minutos en propagarse por cualquier tipo de dispositivo.
+Si se producen problemas de comunicación o faltan dispositivos, es posible que deba eliminar dispositivos de Azure Active Directory (AD). El comando de eliminación no quita un dispositivo de la administración, pero puede usar **Eliminar** para quitar de la consola de Azure los registros de dispositivos que sabe que no son accesibles y que es poco probable que vuelvan a comunicarse con Azure.
+
+1.  Inicie sesión en [Azure Active Directory en Azure Portal](http://aka.ms/accessaad) con sus credenciales de administrador. También puede iniciar sesión en el [Portal de Office 365](https://portal.office.com) y, después, seleccionar **Administración** &gt; **Azure AD** mediante el vínculo en el lado izquierdo de la página.
+3.  Si no tiene ninguna, cree una suscripción de Azure. Si tiene una cuenta de pago, no necesitará una tarjeta de crédito ni realizar ningún pago (seleccione el vínculo de suscripción **Registre su suscripción gratuita de Azure Active Directory**).
+4.  Seleccione **Active Directory** y, a continuación, seleccione su empresa.
+5.  Seleccione la pestaña **Usuarios** .
+6.  Seleccione el usuario cuyos dispositivos desea eliminar.
+7.  Seleccione **Dispositivos**.
+8.  Quite los dispositivos que crea oportunos, como por ejemplo aquellos que ya no estén en uso o que tienen definiciones inexactas.

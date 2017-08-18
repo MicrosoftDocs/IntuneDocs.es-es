@@ -15,11 +15,11 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ad1156076f0ec34d5ac110e32a19a8332c8f863
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 812bdf5bde724798289668937ed2502438c524e0
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>Adición de aplicaciones de la tienda de Windows a Microsoft Intune
 
@@ -51,12 +51,12 @@ ms.lasthandoff: 07/01/2017
 La aplicación que ha creado se muestra en la lista de aplicaciones donde puede asignarla a los grupos que elija. Para obtener ayuda, consulte [Asignación de aplicaciones a grupos](apps-deploy.md).
 
 ## <a name="manually-assign-windows-10-company-portal-app"></a>Asignación manual de la aplicación del Portal de empresa para Windows 10
-Los usuarios finales pueden instalar la aplicación Portal de empresa desde la Tienda Windows para administrar dispositivos e instalar aplicaciones. No obstante, si sus necesidades empresariales requieren que asigne la aplicación Portal de empresa, puede asignar manualmente dicha aplicación para Windows 10 directamente desde Intune, aunque no haya integrado Intune con la Tienda Windows para empresas.
+Los usuarios finales pueden instalar la aplicación del Portal de empresa desde la Microsoft Store para administrar dispositivos e instalar aplicaciones. Pero si sus necesidades empresariales requieren que asigne la aplicación del Portal de empresa, puede asignar manualmente dicha aplicación para Windows 10 directamente desde Intune, aunque no haya integrado Intune con la Tienda Microsoft para Empresas.
 
  > [!NOTE]
  > Esta opción requiere asignar actualizaciones manuales cada vez que se publica una actualización de la aplicación.
 
-1. Inicie sesión con su cuenta en la [Tienda Windows para empresas](https://www.microsoft.com/business-store) y adquiera la versión de **licencia sin conexión** de la aplicación del Portal de empresa.  
+1. Inicie sesión con su cuenta en la [Tienda Microsoft para Empresas](https://www.microsoft.com/business-store) y adquiera la versión de **licencia sin conexión** de la aplicación del Portal de empresa.  
 2. Cuando haya adquirido la aplicación, selecciónela en la página **Inventario**.  
 3. Seleccione **Windows 10 all devices** (Todos los dispositivos Windows 10) como la **plataforma**, luego, la **arquitectura** correspondiente y, finalmente, haga clic en Descargar. No se necesita un archivo de licencia de la aplicación para esta aplicación.
 ![Imagen de Windows 10 all devices (Todos los dispositivos Windows 10) y los detalles del paquete de la arquitectura x86 para su descarga](./media/Win10CP-all-devices.png)
@@ -93,7 +93,7 @@ Si la aplicación del Portal de empresa para Windows 10 está firmada y asignada
 Así es cómo tiene que firmar y asignar la aplicación:
 
 1. Descargue el script de firma de la aplicación del Portal de empresa para Windows 10 con Microsoft Intune en [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript).  Este script requiere instalar Windows SDK para Windows 10 en el equipo host. Si quiere descargar Windows SDK para Windows 10, visite [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296).
-2. Descargue la aplicación del Portal de empresa para Windows 10 desde la Tienda Windows para empresas, tal como se describió anteriormente.  
+2. Descargue la aplicación del Portal de empresa para Windows 10 desde la Tienda Microsoft para Empresas, tal como se describe anteriormente.  
 3. Ejecute el script con los parámetros de entrada que se detallan en el encabezado del script para firmar la aplicación del Portal de empresa para Windows 10 (que detalla abajo). Las dependencias no tienen que pasarse al script. Solo se necesitan cuando la aplicación va a cargarse en la consola de administración de Intune.
 
 |Parámetro | Descripción|

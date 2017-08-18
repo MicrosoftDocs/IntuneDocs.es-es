@@ -11,11 +11,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: d668e50b3880bdaf569380fa5a5fd25f5ed4564e
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 790b9b0a5feb40cd22d366438fca566b93d2138b
+ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/08/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Firma de aplicaciones de línea de negocio para que se puedan implementar en dispositivos Windows con Intune
 
@@ -64,7 +64,7 @@ Los pasos que figuran a continuación le ayudarán a obtener los certificados ne
 
 ## <a name="example-download-sign-and-deploy-the-company-portal-app-for-windows-devices"></a>Ejemplo: Descarga, firma e implementación de la aplicación del Portal de empresa para dispositivos Windows
 
-Puede implementar la aplicación del Portal de empresa en dispositivos Windows Phone y Windows 10 Mobile, con Intune en lugar de instalarla desde la Tienda Windows. Debe descargar la aplicación del Portal de empresa y firmarla con el certificado.  Esto solo es necesario si los usuarios no usan la Tienda de empresa y desea implementar el Portal de empresa en dispositivos Windows Phone 8.1.
+Puede implementar la aplicación del Portal de empresa en dispositivos Windows Phone y Windows 10 Mobile con Intune en lugar de instalarla desde la Microsoft Store. Debe descargar la aplicación del Portal de empresa y firmarla con el certificado.  Esto solo es necesario si los usuarios no usan la Tienda de empresa y desea implementar el Portal de empresa en dispositivos Windows Phone 8.1.
 
 
 1.  **Descargar Portal de empresa**
@@ -75,7 +75,7 @@ Puede implementar la aplicación del Portal de empresa en dispositivos Windows P
 
     -   WinPhoneCompanyPortal.ps1: script de PowerShell que se puede usar para firmar el archivo de aplicación de Portal de empresa para que se pueda implementar en dispositivos Windows Phone 8.1
 
-    Como alternativa, puede descargar el Portal de empresa de Windows Phone 8.1 (paquete con licencia sin conexión) o el Portal de empresa de Windows 10 (paquete con licencia sin conexión) de la [Tienda Windows para empresas](http://businessstore.microsoft.com/). La aplicación del Portal de empresa se deberá adquirir con una licencia sin conexión y se deberá descargar el paquete apropiado para el uso sin conexión. Los listados de las plataformas de Windows 8 y Windows Phone 8 de la selección hacen referencia a sus homólogos de 8.1. Para obtener detalles sobre cómo hacer esto con Intune, vea [Administrar las aplicaciones adquiridas a través de la Tienda Windows para empresas con Microsoft Intune](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
+    Como alternativa, puede descargar el Portal de empresa de Windows Phone 8.1 (paquete con licencia sin conexión) o el Portal de empresa de Windows 10 (paquete con licencia sin conexión) desde la [Tienda Microsoft para Empresas](http://businessstore.microsoft.com/). La aplicación del Portal de empresa se deberá adquirir con una licencia sin conexión y se deberá descargar el paquete apropiado para el uso sin conexión. Los listados de las plataformas de Windows 8 y Windows Phone 8 de la selección hacen referencia a sus homólogos de 8.1. Para obtener detalles sobre cómo hacerlo con Intune, vea [Administrar las aplicaciones adquiridas a través de la Tienda Microsoft para Empresas con Microsoft Intune](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune).
 
 2.  **Descargar el SDK de Windows Phone** Descargue el SDK de Windows Phone 8.0 (http://go.microsoft.com/fwlink/?LinkId=615570) e instálelo en el equipo. Este SDK es necesario para generar un token de inscripción de aplicaciones.
 
@@ -144,12 +144,12 @@ El certificado de Symantec que se usa para implementar aplicaciones móviles de 
 5.  Firme todas las aplicaciones de línea de negocio nuevas y actualizadas con el nuevo certificado. No es necesario retirar ni volver a implementar las aplicaciones existentes.
 
 ## <a name="manually-deploy-windows-10-company-portal-app"></a>Implementación manual de la aplicación del Portal de empresa para Windows 10
-Puede implementar manualmente la aplicación del Portal de empresa para Windows 10 directamente desde Intune, aunque no haya integrado Intune con la Tienda Windows para empresas.
+Puede implementar manualmente la aplicación del Portal de empresa para Windows 10 directamente desde Intune, aunque no haya integrado Intune con la Tienda Microsoft para Empresas.
 
  > [!NOTE]
  > Esta opción requiere implementar actualizaciones manuales cada vez que se publica una actualización de la aplicación.
 
-1. Inicie sesión con su cuenta en la [Tienda Windows para empresas](https://www.microsoft.com/business-store) y adquiera la versión de **licencia sin conexión** de la aplicación del Portal de empresa.  
+1. Inicie sesión con su cuenta en la [Tienda Microsoft para Empresas](https://www.microsoft.com/business-store) y adquiera la versión de **licencia sin conexión** de la aplicación del Portal de empresa.  
 2. Cuando haya adquirido la aplicación, selecciónela en la página **Inventario**.  
 3. Seleccione **Windows 10 all devices** (Todos los dispositivos Windows 10) como la **plataforma**, luego, la **arquitectura** correspondiente y, finalmente, haga clic en Descargar. No se necesita un archivo de licencia de la aplicación para esta aplicación.
 ![Imagen de Windows 10 all devices (Todos los dispositivos Windows 10) y los detalles del paquete de la arquitectura x86 para su descarga](./media/Win10CP-all-devices.png)
@@ -186,7 +186,7 @@ Si la aplicación del Portal de empresa para Windows 10 está firmada e implemen
 Así es cómo tiene que firmar e implementar la aplicación:
 
 1. Descargue el script de firma de la aplicación del Portal de empresa para Windows 10 con Microsoft Intune en [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript).  Este script requiere instalar Windows SDK para Windows 10 en el equipo host. Si quiere descargar Windows SDK para Windows 10, visite [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296).
-2. Descargue la aplicación del Portal de empresa para Windows 10 desde la Tienda Windows para empresas, tal como se describió anteriormente.  
+2. Descargue la aplicación del Portal de empresa para Windows 10 desde la Tienda Microsoft para Empresas, tal como se describe anteriormente.  
 3. Ejecute el script con los parámetros de entrada que se detallan en el encabezado del script para firmar la aplicación del Portal de empresa para Windows 10 (que detalla abajo). Las dependencias no tienen que pasarse al script. Solo se necesitan cuando la aplicación va a cargarse en la consola de administración de Intune.
 
 |Parámetro | Descripción|

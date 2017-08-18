@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 07/05/2017
+ms.date: 08/09/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,15 +14,23 @@ ms.technology:
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3688eef68fc9dcfced976db02c8d50126fa30da8
-ms.sourcegitcommit: fd5b7aa26446d2fa92c21638cb29371e43fe169f
+ms.openlocfilehash: 9cf2549852c5949ff1c95af12b40f59136d56e34
+ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2017
+ms.lasthandoff: 08/10/2017
 ---
 # <a name="reset-the-passcode-on-windows-devices-integrated-with-the-microsoft-pin-reset-service-using-intune"></a>Restablecer el código de acceso en dispositivos Windows integrados con el Servicio de restablecimiento del PIN de Microsoft mediante Intune
 
 La capacidad de restablecimiento del código de acceso para dispositivos Windows se integra con el Servicio de restablecimiento del PIN de Microsoft para permitir la generación de un nuevo código de acceso para dispositivos con Windows 10 Mobile. Los dispositivos deben tener Windows 10 Creators Update o versiones posteriores.
+
+## <a name="supported-platforms"></a>Plataformas compatibles
+
+- Windows: compatible en Windows 10 Creators Update y versiones posteriores (unido a Azure AD)
+- Windows Phone: no compatible
+- iOS: no compatible
+- macOS: no compatible
+- Android: no compatible
 
 
 ## <a name="before-you-start"></a>Antes de empezar
@@ -40,13 +48,14 @@ Para restablecer de forma remota el código de acceso en los dispositivos Window
 
 ### <a name="configure-windows-devices-to-use-pin-reset"></a>Configurar dispositivos Windows para que usen el restablecimiento del PIN
 
-Para configurar el restablecimiento del PIN en los dispositivos Windows que administra, use una [directiva de dispositivo personalizada de Windows 10 de Intune](custom-settings-windows-10.md) para habilitar la característica. Configure la directiva mediante los siguientes proveedores de servicios de configuración de directivas de Windows (CSP):
+Para configurar el restablecimiento del PIN en los dispositivos Windows que administra, use una [directiva de dispositivo personalizada de Windows 10 de Intune](custom-settings-windows-10.md) para habilitar la característica. Configure la directiva mediante el siguiente proveedor de servicios de configuración de directivas de Windows (CSP):
 
 
-- **Para usuarios**: **./User/Vendor/MSFT/PassportForWork/<tenant ID>/Policies/EnablePinRecovery**
-- **Para dispositivos**: **./Device/Vendor/MSFT/PassportForWork/<tenant ID>/Policies/EnablePinRecovery**
+- **For devices** - **./Device/Vendor/MSFT/PassportForWork/*tenant ID*/Policies/EnablePinRecovery**
 
-Los valores de estos CSP deben establecerse en ambos casos en **True**.
+*tenant ID* hace referencia a Azure Active Directory. Puede obtener el identificador de directorio en la página **Propiedades** de Azure Active Directory.
+
+Establezca el valor de este CSP en **True**.
 
 ## <a name="steps-to-reset-the-passcode"></a>Pasos para restablecer el código de acceso
 
