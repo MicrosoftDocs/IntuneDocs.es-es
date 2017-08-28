@@ -11,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: cf4ad6d4-423f-4826-ab8d-6eb7a7cfb559
-ms.openlocfilehash: dcc97e5bcffb35752b65e8ce275d38b9578da6fa
-ms.sourcegitcommit: bee30f4c9e04129d70305fcafc4152c6e062a8b0
+ms.openlocfilehash: 3514b580a4e35cc9e0813d6dd7fd0e1eee550d7c
+ms.sourcegitcommit: af013af8d9a63c9aa16e5e9eddf38ad9c5a77898
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2017
+ms.lasthandoff: 08/12/2017
 ---
 # <a name="enrollment-options-for-intune"></a>Opciones de inscripción de Intune
 
@@ -41,6 +41,9 @@ Se necesita un certificado push MDM para la inscripción de dispositivos iOS y m
 ## <a name="corporate-identifiers"></a>Identificadores corporativos
 
 Puede mostrar los números de serie y los números de identidad internacional de equipo móvil (IMEI) para identificar los dispositivos corporativos. Obtenga más información sobre los [identificadores corporativos](corporate-identifiers-add.md).
+## <a name="multi-factor-authentication"></a>Multi-factor Authentication
+
+Puede requerir a los usuarios que usen un método de comprobación adicional, como un teléfono, un PIN o los datos biométricos, al inscribir un dispositivo. Obtenga más información sobre los [requisitos de la autenticación multifactor](multi-factor-authentication.md).
 
 ## <a name="device-enrollment-manager"></a>Administrador de inscripción de dispositivos
 Puede hacer que los usuarios sean administradores de inscripción de dispositivos.  Los usuarios DEM pueden inscribir un gran número de dispositivos móviles con una sola cuenta de usuario. La cuenta del administrador de inscripción de dispositivos (DEM) puede inscribir hasta 1000 dispositivos. Obtenga más información sobre los [administradores de inscripción de dispositivos](device-enrollment-manager-enroll.md).

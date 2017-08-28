@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8013d7f091c154709f0dd98dcda2e7f5f09056d2
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 2dad8cf3e9a38625b4657e284f8d8bb53ba289c0
+ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 08/14/2017
 ---
 # <a name="reference-for-devices-entities"></a>Referencia de las entidades Devices
 
@@ -261,96 +261,41 @@ La entidad **DevicePropertyHistory** tiene las mismas propiedades que las tablas
 |---------|------------|
 | DateKey |Referencia a la tabla de fechas que indica el día. |
 | DeviceKey |Identificador único del dispositivo en el almacenamiento de datos. Clave suplente. Se trata de una referencia a la tabla de dispositivos que contiene el identificador de dispositivo de Intune. |
-| DeviceModel |Modelo del dispositivo. |
-| Sistema operativo |Sistema operativo del dispositivo. |
 | DeviceName |Nombre del dispositivo en plataformas que permiten asignar nombre a un dispositivo. En otras plataformas, Intune crea un nombre a partir de otras propiedades. Este atributo no puede estar disponible para todos los dispositivos. |
-| SoftwareVersion |En la mayoría de los casos es la versión del sistema operativo, excepto en plataformas de Apple, en cuyo caso es diferente de la versión del sistema operativo. |
-| Imei |Número IMEI. |
-| HardwareInventoryTimeUtc |Primera vez que se notificó el inventario de este dispositivo. |
-| InventoryModifiedTimeUtc |Última vez que se almacenó el inventario al tomarse esta instantánea. |
-| InventoryReportingTimeUtc |Última vez que se recopiló el inventario de este dispositivo. |
-| ExchangeActiveSyncId |Identificador de dispositivo de Exchange ActiveSync. |
-| ComputerSystemDescription |Descripción del sistema. |
-| ComputerSystemName |Nombre del sistema |
-| ComputerSystemManufacturer |Fabricante del sistema. |
-| ComputerSystemModel |Modelo del sistema. |
-| UserName |Nombre de usuario |
-| OSType |Tipo de SO |
-| OSCaption |Descripción del sistema operativo. |
-| OSName |Nombre del sistema operativo. |
-| OSManufacturer |Fabricante del sistema operativo. |
-| OSProductSuite |Conjunto de productos del sistema operativo. |
-| OSProductType |Tipo de producto del sistema operativo. |
-| Configuración regional |Configuración regional. |
-| PhysicalMemoryCapacity |Capacidad de memoria física (en bytes). |
-| PhysicalMemoryRemovable |Memoria extraíble física (en bytes). |
-| SystemEnclosureChassisTypesInnerText |Define el tipo de chasis del sistema para este dispositivo. Los números indican los valores siguientes: 0 o vacío = desconocido; 1 = escritorio; 2 = portátil; 3 = estación de trabajo; 4 = Enterprise Server; 100 = teléfono; 101 = tableta; 102/103 = otro tipo desconocido de dispositivo móvil. |
-| SystemEnclosureModel |Modelo de revestimiento de hardware del sistema. |
-| SystemEnclosureSerialNumber |Número de serie del revestimiento de hardware del sistema. |
-| NetworkAdapterConfigurationText |Texto de configuración del adaptador de red. |
-| MacAddress |Dirección MAC |
-| SmsID |Identificador de dispositivo de Intune. |
-| CertExpiry |Fecha de expiración del certificado de administración de MDM. |
-| DeviceClientAgentVersion |Versión del agente de cliente. |
-| DeviceClientID |Identificador de cliente del dispositivo. |
-| SerialNumber |Número de serie |
-| DeviceManufacturer |Fabricante del dispositivo |
-| DMVersion |Versión de DM. |
-| FirmwareVersion |Versión de firmware |
-| HardwareVersion |Versión de hardware |
-| PlatformType |Tipo de plataforma |
-| ProcessorLevel |Nivel de procesador. |
-| ProcessorRevision |Revisión del procesador. |
-| Product |Product |
-| ProductVersion |Versión del producto |
-| OEM |Fabricante de equipo original. |
-| DeviceBuildVersion |Versión de compilación del dispositivo. |
-| Meid |Identificador de equipo móvil. |
-| PhoneNumber |Número de teléfono |
-| SubscriberCarrierNetwork |Nombre de red del operador de telefonía. |
-| CellularTechnology |Tipo de red del operador de telefonía (CDMA/GSM). |
-| Imsi |Número IMSI. |
-| JailBroken |True si el dispositivo está liberado o modificado. |
-| IsActivationLockEnabled |True si el bloqueo de activación está habilitado. |
-| DeviceType |Tipo de dispositivo |
-| IsSupervised |Está supervisado. |
-| DeviceDisplayNumberOfColors |Número de colores de la pantalla del dispositivo. |
-| HorizontalResolution |Resolución de pantalla horizontal del dispositivo. |
-| VerticalResolution |Resolución de pantalla vertical del dispositivo. |
-| StorageFree |Almacenamiento libre (en bytes). |
-| StorageTotal |Almacenamiento total (en bytes). |
-| ProgramFree |Memoria de programa libre (en bytes). |
-| ProgramTotal |Memoria de programa total (en bytes). |
-| RemovableStorageFree |Almacenamiento extraíble libre (en bytes). |
-| RemovableStorageTotal |Almacenamiento extraíble total (en bytes). |
-| DeviceMemoryDeviceCapacity |Capacidad de memoria del dispositivo. |
-| DeviceMemoryAvailableDeviceCapacity |Capacidad disponible de memoria del dispositivo. |
-| DeviceOSVersion |Versión del SO |
-| DeviceOSPlatform |Plataforma del sistema operativo. |
-| DeviceOSLanguage |Idioma del sistema operativo. |
-| PasswordMaxAttemptsBeforeWipe |Número máximo de intentos de contraseña permitidos antes de que se produzca el borrado del dispositivo. |
-| PasswordMinComplexChars |Número mínimo de caracteres complejos que se requieren en la contraseña. |
-| PasswordMinLength |Longitud mínima necesaria de la contraseña. |
-| PasswordHistory |Contraseña: número mínimo de contraseñas históricas que no se aceptan. |
-| PasswordEnabled |Contraseña: ¿habilitada? |
-| PasswordExpiration |Contraseña: fecha de expiración. |
-| AllowRecoveryPassword |Permitir recuperación de contraseña |
-| PasswordAutoLockTimeout |Contraseña: tiempo de espera de bloqueo automático. |
-| PasswordType |Tipo de contraseña. |
-| BacklightACTimeout |Tiempo de espera de retroiluminación cuando se está conectado a una fuente de alimentación. |
-| BacklightBatTimeout |Tiempo de espera de retroiluminación con batería. |
-| PowerBackupPercent |Porcentaje de energía de reserva. |
-| BatteryPercent |Porcentaje de batería restante. |
-| PlatformID |Identificador de plataforma. |
-| ExchangeDeviceID |Identificador de dispositivo de Exchange. |
-| SmsProcessorDescription |Descripción del procesador. |
-| OwnerEmailAddress |Dirección de correo electrónico del propietario. |
-| DeviceOSName |Nombre del sistema operativo. |
-| WifiMac |Dirección MAC de Wi-Fi. |
-| EthernetMac |Dirección MAC de Ethernet. |
-| RequireEncryption |Indica si el dispositivo está cifrado. |
-| ActivationLockBypassCode |Código de omisión del bloqueo de activación. |
-
+| DeviceTypeKey |Clave del atributo de tipo de dispositivo para este dispositivo. |
+| ClientRegisterationStateKey |Clave del atributo de estado de registro del cliente para este dispositivo. |
+| OwnerTypeKey |Clave del atributo de tipo de propietario para este dispositivo: corporativo, personal o desconocido. |
+| objectSourceKey |Ignore esta columna. |
+| CreatedDate |Fecha de inscripción del dispositivo. |
+| LastContact |Último registro de dispositivo conocido con Intune. |
+| LastContactNotification |Última vez que Intune ha notificado al dispositivo que se registre con Intune. |
+| LastContactWorkplaceJoin |Marca de tiempo que indica el último estado conocido de Workplace Join para este dispositivo. |
+| ManagementAgentKey |Clave del agente de administración asociado a este dispositivo. |
+| ManagementStateKey |Clave del estado de administración asociado a este dispositivo, que indica el estado más reciente de una acción remota o si estaba liberado o modificado. |
+| ReferenceId |Identificador del dispositivo en Azure Active Directory. |
+| WorkPlaceJoinStateKey |Clave del estado de Workplace Join asociado a este dispositivo. |
+| CategoryId |Ignore esta columna. |
+| EnrollmentTypeKey |Clave del tipo de inscripción asociado a este dispositivo, que indica el método de inscripción. |
+| CertExpirationDate |Fecha de expiración del certificado de administración de MDM. |
+| MdmStatusKey |Clave para MdmStatus. |
+| OSFamily |Familia de sistemas operativos (Windows, iOS, Android, etc.). |
+| OSVersion |Versión del sistema operativo |
+| OSMajorVersion |Componente de versión principal de la versión del sistema operativo (principal.secundaria.compilación.revisión) |
+| OSMinorVersion |Componente de versión secundaria de la versión del sistema operativo (principal.secundaria.compilación.revisión) |
+| OSBuildNumber |Componente de versión de compilación de la versión del sistema operativo (principal.secundaria.compilación.revisión) |
+| OSRevisionNumber |Componente de versión de revisión de la versión del sistema operativo (principal.secundaria.compilación.revisión) |
+| EasID |Identificador de EAS de este dispositivo, si está administrado mediante Exchange Active Sync. |
+| GraphDeviceIsManaged |Último estado de administración que Intune ha establecido en AAD. |
+| GraphDeviceIsCompliant |Último estado de cumplimiento que Intune ha establecido en AAD. |
+| SerialNumber |Número de serie del dispositivo, si está disponible. |
+| EnrolledByUser |Identificador del usuario que ha inscrito el dispositivo, que hace referencia a la columna userId de la tabla de usuario. |
+| RowLastModifiedDateTimeUTC |Fecha y hora de la última modificación de este registro. |
+| ProcessorArchitecture |Arquitectura de procesador |
+| DeviceAction |Última acción de dispositivo emitida. Ignórela por el momento. |
+| Fabricante |Fabricante del dispositivo. |
+| Modelo |Modelo del dispositivo. |
+| LastPolicyUpdateUtc |Hora más reciente en la que se ha actualizado la directiva del dispositivo. |
+| LastExchangeStatusUtc |Hora más reciente en la que se ha sincronizado el dispositivo con Exchange. |
 ## <a name="mdmdeviceinventoryhistories"></a>MdmDeviceInventoryHistories
 
 La entidad **MdmDeviceInventoryHistories** contiene instantáneas diarias de los datos del inventario para dispositivos administrados por MDM durante los últimos 90 días. La columna DateKey indica el día de la fila. Es posible que algunas propiedades no se puedan aplicar o rellenar para todos los dispositivos, por lo que debe consultar esta página. Para obtener más información, vea [Comprender el funcionamiento de sus dispositivos mediante el inventario en Microsoft Intune](https://docs.microsoft.com/Intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-Intune).

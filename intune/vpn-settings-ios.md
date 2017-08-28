@@ -15,17 +15,17 @@ ms.assetid: 1447c123-ea33-4ea0-aab4-69577cdb8d00
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a6cc079b05037cc18b7d27dd0d2674e87e1d54d0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d6adeca6189f9452c7e07bd0dea26564c62e1804
+ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="vpn-settings-for-ios-devices-in-microsoft-intune"></a>Configuración de VPN para dispositivos iOS en Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Según la configuración que elija, no todos los valores de la siguiente lista se pueden configurar.
+Según la configuración que elija, no todos los valores de la lista siguiente se podrán configurar.
 
 ## <a name="base-vpn-settings"></a>Configuración de VPN base
 
@@ -33,8 +33,8 @@ Según la configuración que elija, no todos los valores de la siguiente lista s
 **Connection name** (Nombre de la conexión): escriba un nombre para esta conexión. Los usuarios finales verán este nombre cuando exploren su dispositivo para ver la lista de conexiones VPN disponibles.
 - **Dirección IP o FQDN**: proporcione la dirección IP o el nombre de dominio completo del servidor VPN al que se conectarán los dispositivos. Ejemplos: **192.168.1.1**, **vpn.contoso.com**.
 - **Método de autenticación**: elija cómo se autenticarán los dispositivos en el servidor VPN. Las opciones son:
-    - **Certificados**: en **Certificado de autenticación**, elija un perfil de certificado SCEP o PKCS que anteriormente creó para autenticar la conexión. Para más información sobre los perfiles de certificado, consulte [Configuración de certificados](certificates-configure.md).
-    - **Nombre de usuario y contraseña**: los usuarios finales debe proporcionar un nombre de usuario y una contraseña para iniciar sesión en el servidor VPN.
+    - **Certificados**: en **Certificado de autenticación**, elija un perfil de certificado SCEP o PKCS que anteriormente creó para autenticar la conexión. Para obtener más información sobre los perfiles de certificado, consulte [Configuración de certificados](certificates-configure.md).
+    - **Nombre de usuario y contraseña**: los usuarios finales deben proporcionar un nombre de usuario y una contraseña para iniciar sesión en el servidor VPN.
 - **Tipo de conexión**: seleccione el tipo de conexión VPN de la siguiente lista de proveedores:
     - **Check Point Capsule VPN**
     - **Cisco AnyConnect**
@@ -57,16 +57,16 @@ Si seleccionó **VPN personalizada** como el tipo de conexión, configure ademá
 ## <a name="apps-per-app-vpn-settings"></a>Configuración de aplicaciones (VPN por aplicación)
 
 - **VPN por aplicación**: habilite esta opción si quiere definir las direcciones URL que permitirán la conexión VPN cuando se visiten desde el explorador Safari. Para configurar esta opción, debe haber seleccionado **Certificados** como método de autenticación en la configuración de VPN base.
-- **Especifique las direcciones URL que permitirán la conexión VPN al usar el explorador de Safari**: haga clic en esta opción para agregar una o varias direcciones URL de sitios web. Cuando se visitan estas direcciones URL; la conexión VPN se habilita.
+- **Direcciones URL que permitirán la conexión VPN al usar el explorador de Safari**: haga clic en esta opción para agregar una o varias direcciones URL de sitios web. Cuando se visiten estas direcciones URL, se habilitará la conexión VPN.
 
 - **Reglas a petición**: esta opción le permite configurar reglas condicionales que controlan cuándo se inicia la conexión VPN. Por ejemplo, podría crear una condición en la que la conexión VPN solo se usa cuando un dispositivo no está conectado a una de las redes Wi-Fi de empresa. Otra alternativa es crear una condición en la que, si un dispositivo no puede tener acceso a un dominio de búsqueda DNS que especifique, entonces no se inicia la conexión VPN.
 
-    - **SSIDs or DNS search domains** (SSID o dominios de búsqueda de DNS): seleccione si esta condición usará **SSID** de red inalámbrica o **dominios de búsqueda de DNS**. Elija Agregar para configurar uno o varios SSID o dominios de búsqueda.
-    - **Sondeo de cadena de dirección URL**: opcionalmente, proporcione una dirección URL que la regla usa como prueba. Si el dispositivo en el que está instalado este perfil puede acceder a esta dirección URL sin redirección, se iniciará la conexión VPN y el dispositivo se conectará a la dirección URL de destino. El usuario no verá el sitio de sondeo de cadena de dirección URL. Un ejemplo de un sondeo de cadena de dirección URL es la dirección de un servidor web de auditoría que comprueba el cumplimiento del dispositivo antes de conectarse a la VPN. Otra posibilidad es que la dirección URL comprueba la capacidad de la VPN para conectarse a un sitio, antes de conectar el dispositivo a la dirección URL de destino a través de VPN.
-    - **Acción del dominio**: elija una de las siguientes:
+    - **SSID o dominios de búsqueda de DNS**: seleccione si esta condición usará **SSID** de red inalámbrica o **dominios de búsqueda de DNS**. Elija Agregar para configurar uno o varios SSID o dominios de búsqueda.
+    - **Sondeo de cadena de dirección URL**: opcionalmente, proporcione una dirección URL que la regla usa como prueba. Si el dispositivo en el que está instalado este perfil puede acceder a esta dirección URL sin redireccionamiento, se iniciará la conexión VPN y el dispositivo se conectará a la dirección URL de destino. El usuario no verá el sitio de sondeo de cadena de dirección URL. Un ejemplo de un sondeo de cadena de dirección URL es la dirección de un servidor web de auditoría que comprueba el cumplimiento del dispositivo antes de conectarse a la VPN. Otra posibilidad es que la dirección URL compruebe la capacidad de la VPN para conectarse a un sitio antes de conectar el dispositivo a la dirección URL de destino a través de VPN.
+    - **Acción del dominio**: elija uno de los elementos siguientes:
         - Conectarse si es necesario 
         - No conectarse nunca 
-    - **Acción**: elija una de las opciones siguientes:
+    - **Acción**: elija uno de los elementos siguientes:
         - Conectar 
         - Evaluar conexión 
         - Omitir 

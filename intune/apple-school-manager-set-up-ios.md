@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8197e03e8a3eb42c6a5be3b6357d959ed9428454
-ms.sourcegitcommit: 0e012f25fb22124f66193f20f244362493c6b8bb
+ms.openlocfilehash: 91fd4719a4305f5e422163f9049684ebd9e9e656
+ms.sourcegitcommit: bb1a1e4e0bc26543a9c8fb52cb208e298c6b8e3f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/19/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Habilitación de la inscripción de dispositivos iOS con Apple School Manager
 
@@ -103,18 +103,16 @@ Un perfil de inscripción de dispositivos define la configuración que se aplica
 
     - **Supervisado**: un modo de administración que permite más opciones de administración y deshabilita el bloqueo de activación de forma predeterminada. Si deja en blanco la casilla, tendrá funcionalidades de administración limitadas.
 
-    - **Inscripción bloqueada** (requiere el modo de administración Supervisado): deshabilita la configuración de iOS que podría permitir la eliminación del perfil de administración. Si deja en blanco la casilla, permite que se quite el perfil de administración en el menú Configuración.
+     - **Inscripción bloqueada** (requiere el modo de administración Supervisado): deshabilita la configuración de iOS que podría permitir la eliminación del perfil de administración. Si deja en blanco la casilla, permite que se quite el perfil de administración en el menú Configuración.
+   - **iPad compartido**: (requiere los modos **Inscribir sin afinidad de usuario** y **Supervisado**). Permite que varios usuarios inicien sesión en dispositivos iPad inscritos mediante el uso de un identificador de Apple administrado. Los identificadores de Apple administrados se crean en el portal de Apple School Manager. Obtenga más información sobre los dispositivos [iPad compartidos](education-settings-configure-ios-shared.md).
+   >[!NOTE]
+   >Si **Afinidad de usuario** se establece en **Con afinidad de usuario** o el modo **Supervisado** se establece en **Desactivado**, el modo iPad compartido está deshabilitado para el perfil de inscripción.
 
-  - **iPad compartido**: (requiere los modos **Inscribir sin afinidad de usuario** y **Supervisado**). Permite que varios usuarios inicien sesión en dispositivos iPad inscritos mediante el uso de un identificador de Apple administrado. Los identificadores de Apple administrados se crean en el portal de Apple School Manager.
-
-  >[!NOTE]
-  >Si **Afinidad de usuario** se establece en **Con afinidad de usuario** o el modo **Supervisado** se establece en **Desactivado**, el modo iPad compartido está deshabilitado para el perfil de inscripción.
-
-  - **Número máximo de usuarios en caché**: (requiere **iPad compartido** = **Sí**) crea una partición en el dispositivo para cada usuario. El valor recomendado es el número de alumnos con probabilidades de usar el dispositivo durante un período de tiempo. Por ejemplo, si seis alumnos usan el dispositivo con regularidad durante la semana, defina este número en seis.  
+        - **Maximum Cached Users** - (Requires **Shared iPad** = **Yes**) Creates a partition on the device for each user. The recommended value is the number of students likely to use the device over a period of time. For example, if six students use the device regularly during the week, set this number to six.  
 
     - **Permitir emparejamiento**: especifica si se pueden sincronizar dispositivos iOS con equipos. Si elige **Permitir Apple Configurator mediante certificado**, debe seleccionar un certificado en **Certificado de Apple Configurator**.
 
-    - **Certificados de Apple Configurator**: si ha pulsado **Permitir Apple Configurator mediante certificado** en **Permitir emparejamiento**, seleccione un certificado de Apple Configurator para importar.
+      - **Certificados de Apple Configurator**: si ha pulsado **Permitir Apple Configurator mediante certificado** en **Permitir emparejamiento**, seleccione un certificado de Apple Configurator para importar.
 
 7. Elija **Valores del Asistente de configuración**, configure las siguientes opciones de perfil y, después, elija **Guardar**:
 

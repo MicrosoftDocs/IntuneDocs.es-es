@@ -3,8 +3,8 @@ title: "Adición de aplicaciones Android de la Tienda a Intune"
 titleSuffix: Intune on Azure
 description: "Obtenga información sobre cómo agregar aplicaciones Android de la tienda a Intune\"."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 05/04/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cbd1d32c5e863984c8044002365cd2012324e0ce
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a6e997c174acbb0c572dd3bb79432cfe6fae3068
+ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/15/2017
 ---
 # <a name="how-to-add-android-store-apps-to-microsoft-intune"></a>Adición de aplicaciones de la Tienda Android a Microsoft Intune
 

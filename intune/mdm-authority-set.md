@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 05/31/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 97dede1ac393a434342f62d1f8488389dcb28d44
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: dfcd7b97848ed68edb4572429abc53a1cc8f8558
+ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Establecer la entidad de administración de dispositivos móviles
 
@@ -40,11 +40,27 @@ En la versión 1610 o posterior de Configuration Manager y en la versión 1705 d
 
 ## <a name="set-mdm-authority-to-intune"></a>Establecimiento de la entidad de MDM en Intune
 
-1. En Azure Portal, elija **Más servicios** > **Supervisión y administración** > **Intune**.
-  ![Captura de pantalla de la carga de trabajo de solución de problemas de Intune con el vínculo Seleccionar usuario](media/set-mdm-auth.png)
+1. En [Azure Portal](https://portal.azure.com), elija **Más servicios** > **Supervisión y administración** > **Intune**.
 2. En la hoja de Intune, elija **Inscripción de dispositivos** y luego elija **Información general**.
+![Captura de pantalla de la sección para configurar Intune como la entidad de administración de dispositivos móviles](media/set-mdm-auth.png)
 
-3. En la hoja **Empezar a administrar dispositivos**, elija **Establecer Intune como entidad de MDM**. Un mensaje indica que ha configurado correctamente su entidad de MDM en Intune.
+3. En **Entidad de administración de dispositivos móviles**, elija la entidad de MDM entre las opciones siguientes:
+  - **Entidad de MDM de Intune**
+  - **Entidad de MDM Configuration Manager**
+  - **Ninguno**
+
+  Un mensaje indica que ha configurado correctamente su entidad de MDM en Intune.
+
+## <a name="enable-device-enrollment"></a>Permitir la inscripción de dispositivos
+
+Al establecer Intune como entidad de MDN, los usuarios pueden inscribir sus dispositivos personales y acceder a recursos como el correo siguiendo uno de estos métodos: instalando Portal de empresa (iOS y Android), agregando las credenciales profesionales (Windows) o bien accediendo al sitio web de Portal de empresa (iOS, Android y macOS).
+
+Las plataformas presentan los requisitos siguientes para habilitar o simplificar la inscripción:
+- **iOS** (obligatorio)[: obtener un certificado push de MDM de Apple](apple-mdm-push-certificate-get.md) y después [habilitar la inscripción para dispositivos iOS propiedad de la empresa](ios-enroll.md) (opcional).
+- **Android** (opcional)[: habilitar perfiles profesionales de Android](android-enroll.md)
+- **Windows** (opcional): habilitar la [inscripción automática](windows-enroll.md) o la [inscripción masiva](windows-bulk-enroll.md)
+- **macOS**: ningún requisito
+
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>Limpieza de dispositivos móviles tras la expiración del certificado MDM
 
