@@ -1,12 +1,12 @@
 ---
 title: "Introducción a los usuarios"
 titleSuffix: Intune on Azure
-description: 
+description: "Agregue a un usuario a Intune para que pueda acceder a los recursos de la empresa en dispositivos móviles."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,23 +15,21 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e711f32ebd77a83b17e6db468f8cb23a409c8d31
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 1559a265b28627281b484c8250d1c597d2f094c6
+ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 08/16/2017
 ---
-# <a name="get-started-with-users"></a>Introducción a los usuarios
+# <a name="get-started-with-managing-users"></a>Introducción a la administración de usuarios
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
-Azure Active Directory administra los grupos de objetos de la organización, como dispositivos y aplicaciones, y también grupos de usuarios. Puede agrupar usuarios o dispositivos conjuntamente en lugar de tener que administrar cada dispositivo de manera individual. Esto le permite asignar aplicaciones y opciones fácilmente a muchos usuarios y dispositivos.
+Tenga en cuenta a todas las personas de su organización. Cada una de ellas que use los datos de la empresa necesitará disponer de un usuario para administrar el acceso a ellos en Intune. 
 
 ## <a name="how-do-i-create-a-user"></a>¿Cómo se crea un usuario?
 
 1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
-2. Con **Buscar recursos**, busque **Usuarios y grupos**.
-3. Una vez que haya abierto la hoja **Usuarios y grupos**, seleccione **Todos los usuarios**, después seleccione **+ Nuevo usuario**.
+2. Con **Buscar recursos**, busque **Intune**.
+3. Después de abrir la hoja **Microsoft Intune**, seleccione **Usuarios**. En la página **Todos los usuarios**, seleccione **+ Usuario nuevo**.
 4. Escriba la información del usuario, como el **nombre** y el **nombre de usuario**. La parte del nombre de dominio del nombre de usuario debe ser el nombre de dominio predeterminado inicial "contoso.onmicrosoft.com" o un nombre de dominio no federado comprobado como "contoso.com".
 5. En **Grupos**, elija el grupo de prueba al que agregar el usuario.
 6. Guarde la contraseña de usuario que se ha generado automáticamente de manera que pueda usarla para iniciar sesión en un dispositivo de prueba. Debe proporcionar esta contraseña a los usuarios para que puedan cambiarla a una contraseña normal que puedan recordar.
@@ -50,3 +48,7 @@ Después de que haya creado un usuario, necesita usar el [Portal de Office 365](
  > Esto usa una de las licencias de este usuario. Si está usando un entorno dinámico, puede desactivarlo usando esta licencia más tarde para volver a asignarla a un usuario real.
 
 5. Seleccione **Guardar**.
+
+## <a name="next-steps"></a>Pasos siguientes
+
+[Introducción a los grupos](get-started-groups.md): organice a los usuarios en grupos para administrar las directivas y las aplicaciones a las que pueden acceder con más facilidad.

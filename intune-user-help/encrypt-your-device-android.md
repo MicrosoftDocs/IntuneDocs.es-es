@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 08/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8ba85e15fb55a4de1b2f1db53bc5b9962de84394
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: fe406fe2deb89fca1f3ab9d949ea78b779ee13af
+ms.sourcegitcommit: eb726c7e3a6e7defb74e69861447c96de0d1bb65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/17/2017
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>Cómo proteger el dispositivo Android mediante el cifrado
 
@@ -33,10 +33,10 @@ Si anula la inscripción del dispositivo, este permanecerá cifrado.
 
 1.  Asegúrese de que se ha establecido un PIN o una contraseña de bloqueo de pantalla para el dispositivo.
 
-2.  En **Configuración**, elija **Seguridad** &gt; **Encrypt Device** (Cifrar dispositivo).
-    (En algunos teléfonos, tendrá que elegir **Almacenamiento** &gt; **Cifrado de almacenamiento** o **Almacenamiento** &gt; **Pantalla de bloqueo y seguridad** &gt; **Otras opciones de seguridad** para encontrar la opción "Cifrar").
+2.  En **Configuración**, elija **Seguridad** > **Cifrar dispositivo**.
+    (En algunos teléfonos, tendrá que elegir **Almacenamiento** > **Cifrado de almacenamiento** o **Almacenamiento** > **Pantalla de bloqueo y seguridad** > **Otras opciones de seguridad** para poder encontrar la opción "Cifrar").
 
-3.  Siga las instrucciones de la pantalla. Durante el cifrado, el dispositivo podría reiniciarse varias veces.
+3.  Siga las instrucciones en pantalla. Durante el cifrado, el dispositivo podría reiniciarse varias veces.
 
 > [!Note]
 > Determinados dispositivos Android no se pueden cifrar. Descubra más [aquí](your-device-appears-encrypted-but-cp-says-otherwise-android.md).
@@ -54,14 +54,16 @@ Si anula la inscripción del dispositivo, este permanecerá cifrado.
 - Asegúrese de que ha establecido un PIN o una contraseña en el dispositivo.
 - Si ya ha configurado un PIN o una contraseña en el dispositivo, intente los pasos siguientes que podría requerir el administrador de TI para hacer que el dispositivo sea más seguro. Los nombres de menú que verá pueden diferir ligeramente de los incluidos en los pasos, en función del tipo de dispositivo Android que tenga.
 
-    1. Vaya a **Ajustes** > **Seguridad** > **Bloqueo de pantalla**. Confirme su PIN o contraseña actual.
+    1. Vaya a **Configuración** > **Pantalla de bloqueo y seguridad** > **Bloqueo de pantalla**. Confirme su PIN o contraseña actual.
 
-    2. En la pantalla **Elige un bloqueo**, elija el tipo de bloqueo de pantalla que quiere usar.
+    2. En la pantalla **Elige un bloqueo**, elija el tipo de bloqueo de pantalla que quiere usar. 
 
-    3. En la pantalla **Inicio seguro**, pulse **Solicitar PIN para iniciar el dispositivo** y **Continuar**.
+    3. Después de elegir el bloqueo de pantalla, vuelva a **Pantalla de bloqueo y seguridad** y seleccione **Inicio seguro**. 
+    
+    4. En la pantalla **Inicio seguro**, pulse **Solicitar PIN para iniciar el dispositivo** y **Continuar**.
 
-    4. Elija un PIN (puede escribir el mismo que haya especificado anteriormente) y pulse **Confirma el número PIN**.
+    5. Elija un PIN (puede escribir el mismo que haya especificado anteriormente) y pulse **Confirma el número PIN**.
 
-    5. Abra la aplicación de Portal de empresa, seleccione el dispositivo y pulse **Comprobar cumplimiento**.
+    6. Abra la aplicación de Portal de empresa, seleccione el dispositivo y pulse **Comprobar cumplimiento**.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI (visite el [sitio web del Portal de empresa](http://portal.manage.microsoft.com) para obtener la información de contacto), o escriba al <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">equipo de Microsoft Android</a>.

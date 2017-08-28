@@ -14,11 +14,11 @@ ms.assetid: A92DEF30-5D01-4774-9917-E26F5F0E2E68
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2e12792445b36ba6657cbe6b2f6c924f6d97fe3c
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 6107059888c8d2fb6227277202a5906491ac9092
+ms.sourcegitcommit: b8ef9d8387b4d9b2ea4e6ce937635304771e6532
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 08/11/2017
 ---
 # <a name="reference-for-application-entities"></a>Referencia de entidades de aplicaciones
 
@@ -52,9 +52,9 @@ La entidad **AppRevision** muestra todas las versiones de las aplicaciones.
 | IsCurrent |Indica si esta versión de la aplicación está actualizada o no en el almacenamiento de datos. |Verdadero/Falso |
 | RowLastModifiedDateTimeUTC |Fecha y hora en formato UTC en que se ha modificado por última vez esta versión de la aplicación en el almacenamiento de datos. |23/11/2016 12:00:00 AM |
 
-## <a name="appinstallertypes"></a>AppInstallerTypes
+## <a name="apptypes"></a>AppTypes
 
-La entidad **AppInstallerTypes** muestra el origen de instalación de una aplicación.
+La entidad **AppTypes** muestra el origen de instalación de una aplicación.
 
 | Propiedad  | Descripción |
 |---------|------------|
@@ -80,44 +80,6 @@ La entidad **AppInstallerTypes** muestra el origen de instalación de una aplica
 | 11 |MSI para Windows Mobile |Aplicación de línea de negocio de MSI. |
 | 12 |Aplicación de línea de negocio de Windows Phone |Aplicación de línea de negocio de Windows Phone. |
 
-## <a name="applicationtypes"></a>ApplicationTypes
-
-La entidad **ApplicationTypes** muestra los posibles tipos de una aplicación.
-
-| Propiedad  | Descripción |
-|---------|------------|
-| ApplicationTypeID |Identificador del tipo. |
-| ApplicationTypeKey |Clave suplente de la clave. |
-| ApplicationTypeName |Tipo de aplicación |
-
-## <a name="example"></a>Ejemplo
-
-| ApplicationTypeID  | Nombre | Descripción |
-|---------|------------|--------|
-| 0 |InHouse |Aplicación desarrollada internamente. |
-| 1 |DeepLink |Vínculo a una aplicación en una tienda de aplicaciones. |
-| 2 |WebLink |Vínculo a una aplicación web. |
-
-## <a name="managedsoftwaretypes"></a>ManagedSoftwareTypes
-
-La entidad **ManagedSoftwareTypes** enumera los posibles tipos de software administrado de una aplicación.
-
-| Propiedad  | Descripción |
-|---------|------------|
-| SoftwareTypeID |Identificador del tipo. |
-| SoftwareTypeKey |Clave suplente de la clave. |
-| SoftwareTypeName |Tipo de software |
-
-## <a name="example"></a>Ejemplo
-
-| SoftwareTypeID  | Nombre | Descripción |
-|---------|------------|--------|
-| 0 |Escritorio |Aplicación de escritorio. |
-| 2 |Actualizar |Actualización de ventana. |
-| 5 |SideCarAgent | |
-| 1 |Móvil |Aplicación móvil. |
-| 3 |WebLink |Vínculo web. |
-| 4 |VppDeepLink |Vínculo a una aplicación en una tienda de aplicaciones que forma parte de un VPP (Programa de Compras por Volumen) |
 
 ## <a name="vppprogramtypes"></a>VppProgramTypes
 

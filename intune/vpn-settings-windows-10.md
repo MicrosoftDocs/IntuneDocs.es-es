@@ -15,11 +15,11 @@ ms.assetid: 495e4ed6-b2ef-47cc-a110-13fa9b5f85a6
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f112983a33c1af24d288f19140114084575f36d
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8e7fb7697f50706566210063605e9b5d750e0c90
+ms.sourcegitcommit: 5a4529aae710ca2abac5b4d2cfd92cb2df7e67cb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/17/2017
 ---
 # <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>Configuración de VPN para dispositivos Windows 10 en Microsoft Intune
 
@@ -96,10 +96,13 @@ Consulte la documentación de VPN de cada fabricante para más información sobr
 
 ## <a name="conditional-access"></a>Acceso condicional
 
-**Acceso condicional para esta conexión VPN** -
-**Inicio de sesión único (SSO) con certificado alternativo** -
-**Uso mejorado de clave** -
-**Hash del emisor** -
+**Acceso condicional para esta conexión VPN**: habilita el flujo de cumplimiento del dispositivo desde el cliente. Cuando esta opción esté habilitada, el cliente VPN intentará comunicarse con Azure Active Directory para obtener un certificado que se usará para la autenticación. La VPN debe estar configurada para usar la autenticación de certificado, y el servidor VPN debe confiar en el servidor que devuelva Azure Active Directory.
+
+**Inicio de sesión único (SSO) con certificado alternativo**: para el cumplimiento normativo del dispositivo, use un certificado diferente al certificado de autenticación de la VPN para la autenticación Kerberos. Especifique el certificado usando la configuración siguiente: 
+
+- **Uso mejorado de clave**: nombre para el uso mejorado de clave (EKU).
+- **Identificador de objeto**: identificador de objeto del EKU.
+- **Hash del emisor**: huella digital del certificado de SSO.
 
 ## <a name="dns-settings"></a>Configuración de DNS
 
