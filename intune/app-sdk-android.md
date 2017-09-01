@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a11b094a896a2358d8e414cc248976fd34bad38b
-ms.sourcegitcommit: abd8f9f62751e098f3f16b5b7de7eb006b7510e4
+ms.openlocfilehash: a6e0ea5edc5a174e0400ccca3931323712f3cbbe
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guía para desarrolladores de Android acerca del SDK para aplicaciones de Microsoft Intune
 
@@ -663,6 +663,7 @@ Intune le permite utilizar todas las [características de copia de seguridad aut
     ```xml
 android:backupAgent="com.microsoft.intune.mam.client.app.backup.MAMDefaultBackupAgent"
     ```
+
 
 2. **[Opcional]** Si implementó un BackupAgent personalizado opcional, debe asegurarse de usar MAMBackupAgent o MAMBackupAgentHelper. Consulte las secciones siguientes. Considere la posibilidad de usar el elemento **MAMDefaultFullBackupAgent** de Intune (que se describe en el paso 1), que proporciona copias de seguridad sencillas en Android M y versiones superiores.
 
@@ -1340,8 +1341,6 @@ En el caso de las bases de código de gran tamaño que se ejecutan sin [ProGuard
 
  El archivo AndroidManifest.xml que se incluye en el SDK para aplicaciones de Intune contiene el elemento **MAMNotificationReceiverService**; este elemento debe ser un servicio exportado para permitir que el Portal de empresa envíe notificaciones a una aplicación habilitada. El servicio comprueba quién fue el autor de la llamada para asegurarse de que solo el Portal de empresa tiene permiso para enviar notificaciones.
 
-
-
 ## <a name="expectations-of-the-sdk-consumer"></a>Expectativas del consumidor del SDK
 
 El SDK de Intune mantiene el contrato proporcionado por la API de Android, aunque se pueden desencadenar condiciones de error con más frecuencia como resultado de la aplicación de directivas. Gracias a estas prácticas recomendadas, Android reducirá la probabilidad de que se produzcan errores:
@@ -1353,6 +1352,13 @@ El SDK de Intune mantiene el contrato proporcionado por la API de Android, aunqu
 * Las funciones derivadas deben llamar a través de sus versiones de superclase.
 
 * Evite usar cualquier API de manera ambigua. Por ejemplo, usar `Activity.startActivityForResult` sin comprobar antes si requestCode creará un comportamiento extraño.
+
+## <a name="telemetry"></a>Telemetría
+
+El SDK para aplicaciones de Intune para Android no controla la recopilación de datos de su aplicación. De manera predeterminada, la aplicación Portal de empresa registra los datos de telemetría en los siguientes eventos de uso. Estos datos se envían a Microsoft Intune. Según las directivas de Microsoft, no se recopila información de identificación personal (PII por sus siglas en inglés).
+
+> [!NOTE]
+> Si los usuarios finales deciden no enviar estos datos, deberán desactivar la telemetría en la sección Configuración de la aplicación Portal de empresa. Para obtener más información, consulte [Desactivar la recopilación de datos de uso de Microsoft](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
 
 ## <a name="recommended-android-best-practices"></a>Procedimientos recomendados de Android
 

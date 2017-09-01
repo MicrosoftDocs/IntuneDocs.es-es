@@ -6,7 +6,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/09/2017
+ms.date: 08/22/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c771d07cc41d91812a1cfa80ffe08234e58803e5
-ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
+ms.openlocfilehash: ae92a75958abdc97d781c5b518d70a4e54f4939a
+ms.sourcegitcommit: b5d7442e03d9727793acd1a1dd946779dbe9218d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 08/22/2017
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Omisión del bloqueo de activación en dispositivos iOS supervisados con Intune
 
@@ -58,8 +58,8 @@ Intune puede solicitar el estado de bloqueo de activación de dispositivos super
 Para omitir el Bloqueo de activación en los dispositivos, primero debe habilitarlo. Para ello, siga estas instrucciones:
 
 1. Configure un perfil de restricción de Intune para iOS mediante la información que se describe en [Configuración de restricciones de dispositivos en Microsoft Intune](/intune-azure/configure-devices/how-to-configure-device-restrictions).
-2. Habilite el modo **Pantalla completa** en **Bloqueo de activación**.
-3. Guarde el perfil y luego asígnelo a los dispositivos en los que desea administrar la omisión del bloqueo de activación.
+2. En la [configuración de restricción de dispositivos para iOS](device-restrictions-ios.md), en la sección **General**, habilite la opción **Bloqueo de activación**.
+3. Guarde el perfil y [asígnelo](device-profile-assign.md) a los dispositivos en los que quiera administrar la omisión de Bloqueo de activación.
 
 
 ## <a name="how-to-use-activation-lock-bypass"></a>Uso de la omisión del bloqueo de activación

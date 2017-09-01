@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/15/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -13,25 +13,46 @@ ms.technology:
 ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 33d1f28cd5522ed47c3fdf83b289116728ded12b
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.custom: intune-azure
+ms.openlocfilehash: 6db9bc7a3bafd61d03513ea1b6e1f0246faaab57
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Actualizaciones de la interfaz de usuario para las aplicaciones de usuario final de Intune
 Obtenga más información sobre las actualizaciones que hemos realizado en la interfaz de usuario para las aplicaciones que verán los usuarios finales en esta versión de Microsoft Intune. Esto puede ayudarle con las comunicaciones de usuario y cualquier documentación de actualización personalizada que haya creado para admitir su implementación. También puede ayudarle a comprender cómo solucionar mejor los posibles problemas a los que se enfrenten en caso de que sea necesario llamar al departamento de soporte técnico mediante el Portal de empresa.
 
+## <a name="week-of-august-21-2017"></a>Semana del 21 de agosto de 2017
+
+### <a name="intune-mobile-application-management-mam-dialog-boxes-will-have-a-modern-interface----1199015---"></a>Ahora los cuadros de diálogo de administración de aplicaciones móviles (MAM) de Intune tendrán una interfaz moderna <!-- 1199015 -->
+
+Se actualizarán los cuadros de diálogo de administración de aplicaciones móviles (MAM) de Intune para tener un aspecto moderno. Los cuadros de diálogo funcionarán de la misma manera que con el estilo anterior.
+
+**Experiencia anterior**
+
+![interfaz antigua](media\NewUI_Old_AttachFileHandler.jpg)
+
+**Experiencia moderna**
+
+![interfaz moderna](media\NewUI_Modern_AttachFileHandler.jpg)
+
+
 ## <a name="week-of-august-14-2017"></a>Semana del 14 de agosto de 2017
 
-### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10"></a>Actualizaciones en la página "Detalles del dispositivo" en la aplicación Portal de empresa para Windows 10
+### <a name="updates-to-the-device-details-page-on-the-company-portal-app-for-windows-10----1287448---"></a>Actualizaciones en la página "Detalles del dispositivo" en la aplicación Portal de empresa para Windows 10 <!---1287448--->
 
 La etiqueta __Categoría__ de la aplicación Portal de empresa para Windows 10 pasará de estar debajo del título a formar parte de una propiedad de la página __Detalles del dispositivo__.
 
 ![La pantalla "Detalles del dispositivo" de la aplicación Portal de empresa para Windows ahora muestra el campo "Categorías" como una propiedad, en lugar de hacerlo debajo del título.](./media/cp_win10_category_tag_move_after_1708.png)
 
 ## <a name="week-of-july-31-2017"></a>Semana del 31 de julio de 2017
+
+### <a name="apps-details-pages-will-display-new-information-for-android-devices---1287476--"></a>Las páginas de información de aplicaciones mostrarán información nueva para los dispositivos Android <!--1287476-->
+
+La página de información de aplicaciones de la aplicación Portal de empresa para Android mostrará las categorías de aplicaciones que el administrador de TI haya definido para esa aplicación.
+
+![Página de detalles de aplicaciones nueva](./media/cp_android_appdetails_after_1708.png)
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>Se mejoró la experiencia de inicio de sesión en todas las aplicaciones del Portal de empresa para todas las plataformas <!--User Story 1132123-->
 
@@ -128,7 +149,7 @@ Según los comentarios de los usuarios, se agregó una nueva acción de menú en
 
 ## <a name="week-of-june-5-2017"></a>Semana del 5 de junio de 2017
 
-### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios"></a>Mejoras de los iconos de aplicación en la aplicación Portal de empresa de Intune para iOS
+### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios---1230777--"></a>Mejoras de los iconos de aplicación en la aplicación Portal de empresa de Intune para iOS <!--1230777-->
 Se actualizó el diseño de los iconos de aplicación en la página principal para reflejar el color de personalización de marca que estableció para Portal de empresa de Intune.
 
 **Antes**

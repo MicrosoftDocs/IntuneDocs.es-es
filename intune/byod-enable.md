@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: 0d05918a62549559a186376d99e28c952af16b9c
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: fa70e21b9e9f7adfc508e24bd442a48c834ed7db
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="enable-byod-with-intune"></a>Habilitación de BYOD con Intune
 
@@ -44,22 +44,22 @@ Mientras lo hace, también debe [personalizar el Portal de empresa](company-port
 
 Una vez preparado el servicio de Intune, debe cumplir los distintos requisitos de inscripción de los distintos tipos de dispositivos que va a administrar. El proceso de inscripción de dispositivos en la administración es sencillo, pero es ligeramente diferente en función del tipo de dispositivo.
 
--   **Dispositivos iOS y Mac** Debe [obtener un certificado push MDM de Apple](apple-mdm-push-certificate-get.md) para inscribir dispositivos iPad, iPhone o MacOS. Una vez cargado el certificado push MDM en Intune, los usuarios pueden [inscribir dispositivos iOS](/intune-user-help/enroll-your-device-in-intune-ios) mediante la aplicación del portal de empresa y usar el sitio web del portal de empresa para [inscribir dispositivos MacOS](/intune-user-help/enroll-your-device-in-intune-macos).
+-   **Dispositivos iOS y Mac** Debe [obtener un certificado push MDM de Apple](apple-mdm-push-certificate-get.md) para inscribir dispositivos iPad, iPhone o macOS. Una vez cargado el certificado push MDM en Intune, los usuarios pueden [inscribir dispositivos iOS](/intune-user-help/enroll-your-device-in-intune-ios) mediante la aplicación del portal de empresa y usar el sitio web del portal de empresa para [inscribir dispositivos macOS](/intune-user-help/enroll-your-device-in-intune-macos).
 
 -   **Dispositivos Android** No es necesario que haga nada para preparar el servicio de Intune para la inscripción de dispositivos Android. Los usuarios pueden [inscribir sus dispositivos Android](/intune-user-help/enroll-your-device-in-intune-android) en la administración mediante la aplicación de portal de empresa que está disponible en Google Play.
 
--   **Equipos y dispositivos Windows Phone** Los dispositivos Windows pueden inscribirse con una configuración adicional. Para simplificar la experiencia de los usuarios, puede habilitar la inscripción automática para equipos de Windows 10 y dispositivos móviles Windows 10 en Azure Active Directory (AD) Premium. Si no tiene Azure AD Premium o si necesita admitir Windows 8.1, puede crear [un alias DNS para el servidor de inscripción](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium) para facilitar la inscripción.
+-   **Equipos y dispositivos Windows Phone** Los dispositivos Windows pueden inscribirse con una configuración adicional. Puede habilitar la inscripción automática para equipos de Windows 10 y dispositivos móviles Windows 10 en Azure Active Directory (AD) Premium para simplificar la experiencia de los usuarios. Si no tiene Azure AD Premium o si necesita admitir Windows 8.1, puede crear [un alias DNS para el servidor de inscripción](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium) para facilitar la inscripción.
 
 
 ### <a name="make-sure-that-managed-devices-meet-basic-security-requirements"></a>Asegurarse de que los dispositivos administrados cumplen los requisitos básicos de seguridad
 
 Después de que los usuarios inscriban sus dispositivos en la administración, el departamento de TI debe garantizar que los dispositivos usados para obtener acceso a los datos y aplicaciones de la empresa cumplen los requisitos básicos de seguridad. Estas reglas pueden incluir el uso de un PIN para acceder a los dispositivos y el cifrado de los datos almacenados en ellos. A un conjunto de tales reglas se le denomina una [directiva de cumplimiento](device-compliance.md).
 
-Al [implementar una directiva de cumplimiento](device-compliance-get-started.md) en un usuario, Intune comprueba todos los dispositivos administrados por el usuario para ver si cumplen los requisitos básicos de seguridad definidos como parte de la directiva BYOD. Una vez evaluado el cumplimiento de la directiva de este dispositivo, notifica su estado a Intune. En algunos casos es posible que se pida a los usuarios que modifiquen algunas opciones, como el PIN o el cifrado del dispositivo. En otros casos, la aplicación del Portal de empresa notifica al usuario todas las opciones que no cumplen la directiva.
+Al [implementar una directiva de cumplimiento](device-compliance-get-started.md) en un usuario, Intune comprueba cada dispositivo administrado por el usuario para ver si cumple los requisitos básicos de seguridad definidos como parte de la directiva BYOD. Una vez evaluado el cumplimiento de la directiva de este dispositivo, notifica su estado a Intune. En algunos casos es posible que se pida a los usuarios que modifiquen algunas opciones, como el PIN o el cifrado del dispositivo. En otros casos, la aplicación del Portal de empresa notifica al usuario todas las opciones que no cumplen la directiva.
 
 ## <a name="provide-access-to-company-resources"></a>Proporcionar acceso a los recursos de empresa
 
-Lo primero que la mayoría de los empleados quiere tener en su dispositivo móvil es acceso a los documentos y el correo electrónico de la empresa. Además, esperan poder configurarlo sin tener que realizar pasos complejos ni llamar al departamento de soporte técnico. Intune facilita la [creación e implementación de la configuración del correo electrónico](email-settings-configure.md) para las aplicaciones de correo electrónico nativas que están instaladas previamente en los dispositivos móviles.
+A lo primero que la mayoría de los empleados quiere acceder en su dispositivo móvil es a los documentos y el correo electrónico de la empresa. Esperan poder configurarlo sin tener que realizar pasos complejos ni llamar al departamento de soporte técnico. Intune facilita la [creación e implementación de la configuración del correo electrónico](email-settings-configure.md) para las aplicaciones de correo electrónico nativas que están instaladas previamente en los dispositivos móviles.
 
 
 > [!NOTE]
@@ -86,7 +86,7 @@ Intune también le permite administrar e implementar las aplicaciones que ha com
 
 ## <a name="protect-company-data"></a>Proteger los datos de la empresa
 
-Intune protege los datos empresariales mediante numerosas capas de tecnología. En la capa de identidad, el acceso condicional protege el acceso a los servicios. El acceso condicional solo permite que los dispositivos administrados y compatibles obtengan acceso a los recursos de la empresa. En la capa de aplicación cliente, la administración de aplicaciones móviles (MAM) protege la pérdida de datos.  Las directivas de protección de aplicaciones impiden que los datos se muevan a aplicaciones o ubicaciones de almacenamiento que no están protegidas. Estas directivas también le permiten borrar datos de empresa cuando se pierde o roba un dispositivo.
+Intune protege los datos empresariales mediante numerosas capas de tecnología. En la capa de identidad, el acceso condicional protege el acceso a los servicios. El acceso condicional solo permite que los dispositivos administrados y compatibles obtengan acceso a los recursos de la empresa. En la capa de la aplicación cliente, las directivas de protección de aplicaciones ayudan a evitar la pérdida de datos. Las directivas de protección de aplicaciones impiden que los datos se muevan a aplicaciones o ubicaciones de almacenamiento que no están protegidas. Estas directivas también le permiten borrar datos de empresa cuando se pierde o roba un dispositivo.
 
 ### <a name="enforce-conditional-access-to-company-resources"></a>Aplicar el acceso condicional a los recursos de la empresa
 
@@ -97,13 +97,13 @@ third link was (https://docs.microsoft.com/intune/deploy-use/restrict-access-to-
 > [!IMPORTANT]
 > Las directivas de acceso condicional no funcionarán si no se ha aplicado ninguna directiva de cumplimiento para validar el cumplimiento.
 
-### <a name="prevent-data-loss-of-company-data-with-application-protection-policies"></a>Evitar la pérdida de datos de la empresa con directivas de protección de aplicaciones
+### <a name="prevent-data-loss-of-company-data-with-app-protection-policies"></a>Evitar la pérdida de datos de la empresa con directivas de protección de aplicaciones
 
-Con las directivas de protección de aplicaciones de Intune, puede elegir cómo se obtiene acceso a los datos (con o sin la inscripción de dispositivos). Esta flexibilidad le permite proteger los datos de empresa de manera que un usuario podrá seguir obteniendo acceso a los datos de la empresa de forma segura aunque no inscriba su dispositivo en Intune.
+Con las directivas de protección de aplicaciones de Intune, puede elegir cómo se accede a los datos (con o sin la inscripción de dispositivos). Esta flexibilidad le permite proteger los datos de empresa de manera que un usuario podrá seguir obteniendo acceso a los datos de la empresa de forma segura aunque no inscriba su dispositivo en Intune.
 
-Puede usar [directivas de protección de aplicaciones de Intune](app-protection-policies.md) para ayudar a proteger los datos de la empresa a los que acceden los dispositivos iOS y Android de los usuarios. Si usa estas directivas de nivel de aplicación, puede controlar la manera en que los empleados usan y comparten los datos de la empresa, aunque Intune no administre el dispositivo en cuestión.
+Puede usar [directivas de protección de aplicaciones de Intune](app-protection-policies.md) para ayudar a proteger los datos de la empresa a los que acceden los dispositivos iOS y Android. Si usa estas directivas de nivel de aplicación, puede controlar la manera en que los empleados usan y comparten los datos de la empresa, aunque Intune no administre el dispositivo en cuestión.
 
-Utilice las [directivas de Windows Information Protection (WIP)](app-protection-policies-configure-windows-10.md) para hacer lo mismo en los dispositivos de Windows 10 administrados. Estas directivas funcionan sin interferir en la experiencia de los empleados. No requieren cambios en el entorno de red ni en otras aplicaciones.
+Use [Windows Information Protection (WIP)](app-protection-policies-configure-windows-10.md) para hacer lo mismo en los dispositivos Windows 10 administrados. Estas directivas funcionan sin interferir en la experiencia de los empleados. No requieren cambios en el entorno de red ni en otras aplicaciones.
 
 ### <a name="remove-company-data-while-leaving-personal-data-intact"></a>Quitar datos de la empresa mientras se dejan intactos los datos personales
 
