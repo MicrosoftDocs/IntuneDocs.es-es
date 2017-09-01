@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1667470154e5d2485e3a372ab25d36eea12109a7
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 204df4648f1d79167e8eb5941d91b48d65b90704
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>Inscripción de dispositivos mediante el administrador de inscripción de dispositivos
 
@@ -40,15 +40,15 @@ Solo los usuarios de la consola Intune pueden ser administradores de inscripció
 
 El usuario DEM puede:
 
--   Inscribir hasta 1000 dispositivos en Intune.
--   Iniciar sesión en el portal de empresa para obtener aplicaciones de empresa.
--   Configure el acceso a datos de la empresa mediante la implementación de aplicaciones específicas del rol a las tabletas.
+-   Inscribir hasta 1000 dispositivos en Intune
+-   Iniciar sesión en Portal de empresa para obtener aplicaciones de empresa
+-   Configurar el acceso a los datos de la empresa implementando aplicaciones específicas del rol en las tabletas
 
 ## <a name="limitations-of-devices-that-are-enrolled-with-a-dem-account"></a>Limitaciones de los dispositivos que están inscritos con una cuenta DEM
 
 Los dispositivos inscritos con una cuenta de administrador de inscripción de dispositivos tienen las siguientes limitaciones:
 
-  - Sin acceso por usuario. Dado que los dispositivos no tienen un usuario asignado, el dispositivo no tiene acceso a los datos de la compañía o al correo electrónico. A pesar de ello, se podrían usar, por ejemplo, configuraciones VPN para proporcionar a las aplicaciones de los dispositivos acceso a los datos.
+  - Sin acceso por usuario. Dado que los dispositivos no tienen un usuario asignado, el dispositivo no puede acceder a los datos de la compañía ni al correo electrónico. A pesar de ello, se podrían usar, por ejemplo, configuraciones VPN para proporcionar a las aplicaciones de los dispositivos acceso a los datos.
   - No hay acceso condicional porque estos escenarios son por usuario.
   - El usuario DEM no puede anular la inscripción de dispositivos inscritos de DEM en el propio dispositivo mediante el Portal de empresa. El administrador de Intune puede hacerlo, pero el usuario de DEM no.
   - Solo el dispositivo local aparece en el sitio web o en la aplicación de Portal de empresa.

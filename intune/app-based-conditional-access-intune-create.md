@@ -14,11 +14,11 @@ ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a7f054868d0bae061f348239614f3a40b96a15b1
-ms.sourcegitcommit: fd2e8f6f8761fdd65b49f6e4223c2d4a013dd6d9
+ms.openlocfilehash: 88db3730be62a9b481d924b4f09b70be775cb067
+ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 08/25/2017
 ---
 # <a name="set-up-app-based-conditional-access-policies"></a>Configurar las directivas de acceso condicional basado en aplicación
 
@@ -59,9 +59,30 @@ En este tema se proporcionan instrucciones sobre cómo configurar directivas de 
 2. Haga clic en los puntos suspensivos para ver las opciones de eliminación.
 3. Elija **Eliminar** para quitar el grupo de usuarios de la lista.
 
+## <a name="create-app-based-conditional-access-policies-in-azure-ad-workload"></a>Crear directivas de acceso condicional basado en la aplicación en la carga de trabajo de Azure AD
+
+A partir de la versión 1708 de Intune, los administradores de TI pueden crear directivas de acceso condicional basado en la aplicación a partir de la carga de trabajo de Azure AD. Esto resulta más cómodo, ya que no es necesario cambiar entre Azure y las cargas de trabajo de Intune.
+
+> [!IMPORTANT]
+> Para crear directivas de acceso condicional de Azure AD desde el portal de Azure de Intune, debe disponer de una licencia de Azure AD Premium.
+
+### <a name="to-create-an-app-based-conditional-access-policy"></a>Para crear una directiva de acceso condicional basado en aplicación
+
+> [!IMPORTANT]
+> Debe aplicar [directivas de protección de aplicaciones de Intune](app-protection-policies.md) a sus aplicaciones antes de usar las directivas de acceso condicional basado en la aplicación.
+
+1. En el **panel de Intune**, elija **Acceso condicional**.
+
+2. En la hoja **Directivas**, elija **Directiva nueva** para crear la directiva de acceso condicional basado en la aplicación.
+
+4. Tras escribir un nombre de directiva y configurar las opciones disponibles en la sección **Asignaciones**, elija **Conceder** en **Controles de acceso**.
+
+5. Elija **Requerir aplicación cliente aprobada**, **Seleccionar** y **Aceptar** para guardar la directiva nueva.
+
 ## <a name="next-steps"></a>Pasos siguientes
 [Bloqueo de aplicaciones que no usan la autenticación moderna](app-modern-authentication-block.md)
 
 ### <a name="see-also"></a>Consulte también
 
-[Protección de datos de aplicaciones con directivas de protección de aplicaciones](app-protection-policies.md)
+[Proteger datos de aplicaciones mediante directivas de protección de aplicaciones](app-protection-policies.md)
+[Acceso condicional en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)

@@ -6,7 +6,7 @@ keywords:
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/22/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 03a278762401ee9697909cf45b3fe86212393e66
-ms.sourcegitcommit: 0b164f806165d312acfc88815a60e325e3d02672
+ms.openlocfilehash: 12556e394e2e09307c4f89e1ae56bb3f268b28ae
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 08/28/2017
 ---
-# <a name="add-corporate-identifiers"></a>Adición de identificadores corporativos
+# <a name="identify-devices-as-corporate-owned"></a>Identificar dispositivos como corporativos
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -31,15 +31,13 @@ Un dispositivo se identifica como propiedad de la empresa si cumple alguna de la
 
 - Se ha inscrito con una cuenta de [administrador de inscripción de dispositivos](device-enrollment-manager-enroll.md) (todas las plataformas).
 - Se ha inscrito mediante el [Programa de inscripción de dispositivos](device-enrollment-program-enroll-ios.md) de Apple, [Apple School Manager](apple-school-manager-set-up-ios.md) o [Apple Configurator](apple-configurator-enroll-ios.md) (solo iOS).
-- Se ha declarado con antelación mediante un número de identidad internacional de dispositivos móviles IMEI (todas las plataformas con números IMEI) o un número de serie (iOS y Android).
-- Se ha registrado en Azure Active Directory o Enterprise Mobility Suite como un dispositivo Windows 10 Enterprise (solo Windows 10).
-- Se ha especificado **Corporativo** en las **propiedades** del dispositivo.
+- [Se ha identificado como corporativo antes de la inscripción](#identify-corporate-owned-devices-with-imei-or-serial-number) mediante un número de identidad internacional de dispositivos móviles IMEI (todas las plataformas con números IMEI) o un número de serie (iOS y Android).
+- Se ha registrado en Azure Active Directory o Enterprise Mobility + Security como un dispositivo Windows 10 Enterprise (solo para Windows 10).
+- Las propiedades del dispositivo especifican la [propiedad del dispositivo como corporativa](#change-device-ownership).
 
-Los dispositivos de la empresa muestran el mensaje **Corporativo** en la columna **Propiedad** en los registros de dispositivos de Intune. Para verlo, vaya a **Dispositivos** > **Todos los dispositivos**.
+## <a name="identify-corporate-owned-devices-with-imei-or-serial-number"></a>Identificar dispositivos corporativos con número de serie IMEI
 
-## <a name="predeclare-a-device-with-imei-or-serial-number"></a>Declarar un dispositivo con antelación mediante el número IMEI o de serie
-
-Los administradores de Intune pueden crear e importar un archivo de valores separados por comas (.csv) que muestre los números IMEI o de serie. Intune usa estos identificadores para especificar que la propiedad de los dispositivos es corporativa. Los números IMEI se pueden declarar para todas las plataformas compatibles. Solo puede declarar números de serie para dispositivos iOS y Android. Cada número IMEI o de serie puede tener detalles especificados en la lista para fines administrativos.
+Los administradores de Intune pueden crear e importar un archivo de valores separados por comas (.csv) que muestre los números IMEI o de serie. Intune usa estos identificadores para especificar que la propiedad de los dispositivos es corporativa durante la inscripción del dispositivo. Los números IMEI se pueden declarar para todas las plataformas compatibles. Solo puede declarar números de serie para dispositivos iOS y Android. Cada número IMEI o de serie puede tener detalles especificados en la lista para fines administrativos.
 
 <!-- When you upload serial numbers for company-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as company-owned. -->
 
@@ -80,7 +78,7 @@ Este archivo .csv, cuando se ve en un editor de texto, aparece como:
 
 Los dispositivos importados no tienen por qué inscribirse. Además, pueden tener un estado **Inscrito** o **Sin contacto**. **No contactado** significa que el dispositivo nunca se ha comunicado con el servicio Intune.
 
-## <a name="delete-corporate-identifiers"></a>Eliminación de identificadores corporativos
+### <a name="delete-corporate-identifiers"></a>Eliminación de identificadores corporativos
 
 1. En Azure Portal, en Intune, elija **Inscripción de dispositivos** > **Identificadores de dispositivo corporativos**.
 2. Seleccione los identificadores de dispositivo que quiera eliminar y elija **Eliminar**.
@@ -88,5 +86,16 @@ Los dispositivos importados no tienen por qué inscribirse. Además, pueden tene
 
 Eliminar un identificador corporativo de un dispositivo inscrito no modifica su propiedad. Para modificar la propiedad de un dispositivo, vaya a **Dispositivos** > **Todos los dispositivos**, seleccione el dispositivo, elija **Propiedades** y cambie **Propiedad del dispositivo**.
 
-## <a name="imei-specifications"></a>Especificaciones de IMEI
+### <a name="imei-specifications"></a>Especificaciones de IMEI
 Para obtener especificaciones detalladas sobre identificadores internacionales de equipos móviles, consulte [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729).
+
+## <a name="change-device-ownership"></a>Cambiar la propiedad del dispositivo
+
+Las propiedades del dispositivo muestran **Propiedad** en los registros de Intune para cada dispositivo. Como administrador, puede especificar un dispositivo como **Personal** o **Corporativo**.
+
+**Para cambiar la propiedad del dispositivo:**
+1. En la sección de Intune de Azure Portal, vaya a **Dispositivos** > **Todos los dispositivos** y elija el dispositivo.
+3. Seleccione **Propiedades**.
+4. Establezca **Propiedad del dispositivo** como **Personal** o **Corporativo**.
+
+  ![Captura de pantalla de las propiedades del dispositivo que muestra las opciones Categoría de dispositivo y Propiedad del dispositivo.](./media/device-properties.png)

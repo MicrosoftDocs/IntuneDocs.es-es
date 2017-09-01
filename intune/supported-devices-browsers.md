@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 06/07/2017
+ms.date: 06/23/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 5d1ac59c-a885-4276-8576-f3cf81c2d268
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: df9c4c0a0a23740bf9df4c13e34b8752838aa99a
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f862129d73c83e078d8b29201f1d92b9b65aa609
+ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="supported-devices-and-browsers"></a>Exploradores y dispositivos admitidos
 
@@ -65,7 +65,7 @@ Estos portales son compatibles con los siguientes exploradores:
 
 ### <a name="intune-classic-portal"></a>Portal de Intune clásico
 
-Las características únicamente clásicas de Intune, como el cliente de software de PC de Intune y la integración con asociados de Mobile Threat Defense, solo están disponibles en el portal de Intune clásico (https://manage.microsoft.com). La consola clásica de Intune requiere compatibilidad con el explorador Silverlight.
+Las características únicamente clásicas de Intune, como el cliente de software de PC de Intune y la integración con asociados de Mobile Threat Defense, solo están disponibles en el portal de Intune clásico (https://manage.microsoft.com). El portal clásico de Intune requiere compatibilidad con el explorador Silverlight.
 
 Los siguientes exploradores Silverlight admiten la consola clásica de Intune:
 - Internet Explorer 10 o posterior
@@ -74,6 +74,5 @@ Los siguientes exploradores Silverlight admiten la consola clásica de Intune:
 
 > [!Note]
 > Microsoft Edge y los exploradores móviles no son compatibles con la consola clásica de Intune porque no admiten [Microsoft Silverlight](https://msdn.microsoft.com/library/cc838158(v=vs.95).aspx).
-
 
 Solo los usuarios con permisos de administrador de servicios o que sean administradores de inquilinos con el rol de administrador global pueden iniciar sesión en este portal. Para acceder a la consola de administración, su cuenta debe tener una licencia para usar Intune y un estado de inicio de sesión de **Permitido**.
