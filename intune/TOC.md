@@ -40,6 +40,8 @@
 ### [Recursos adicionales](planning-guide-resources.md)
 ## Guías de implementación de escenarios
 ### [BYOD](byod-enable.md)
+### [Protección de Exchange Online](exchange-online-protect.md)
+### [Reducción de los costos del departamento de soporte técnico](password-reset.md)
 <!--### [Protect O365 data](/enterprise-mobility-security/solutions/protect-office365-data-with-intune?toc=/intune/toc.json)
 ### [Protect on-premises data](/enterprise-mobility-security/solutions/protect-on-premises-data-with-intune?toc=/intune/toc.json)
 ### [Protect data without enrollment](/enterprise-mobility-security/solutions/protect-company-data-without-managing-devices?toc=/intune/toc.json)
