@@ -1,11 +1,11 @@
 ---
-title: Tiene que instalar Skycure en el dispositivo iOS | Microsoft Docs
-description: 
+title: "Instalación obligatoria de Symantec Endpoint Protection Mobile en el dispositivo iOS | Microsoft Docs"
+description: "Obtenga información sobre cómo instalar SEP Mobile en el dispositivo iOS."
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/28/2017
+ms.date: 08/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,42 +14,42 @@ ms.assetid: 7394ff8f-3a21-414d-be4a-4626ec370720
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: ca6072ce66482f5986d37b2f61a123587ad8313f
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 5bc687566a82878f47f253ff70aa01d68a328b33
+ms.sourcegitcommit: 1135765fd3ac2149663341d8107f656aba236493
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 08/30/2017
 ---
-# <a name="you-need-to-install-skycure-on-your-ios-device"></a>Tiene que instalar Skycure en el dispositivo iOS
+# <a name="you-need-to-install-symantec-endpoint-protection-mobile-on-your-ios-device"></a>Instalación obligatoria de Symantec Endpoint Protection Mobile en el dispositivo iOS
 
-Para que pueda acceder a su trabajo, el administrador de TI tiene que instalar la aplicación Skycure, que le ayuda a proteger el dispositivo mediante la búsqueda de posibles amenazas de seguridad. Según cómo el administrador de TI haya configurado Skycure, puede que vea distintos mensajes en su dispositivo.
+Antes de poder acceder a su trabajo, el departamento de soporte técnico de la empresa necesitará que instale la aplicación Symantec Endpoint Protection (SEP) Mobile para detectar posibles amenazas de seguridad y proteger su dispositivo. Según cómo la empresa haya configurado SEP Mobile, puede que vea distintos mensajes.
 
 **Haga lo siguiente:**
 
-1.  Si ve el siguiente mensaje, pulse **Instalar** para permitir que Skycure se instale en el dispositivo.
+1.  Si ve el mensaje siguiente, pulse **Instalar** para permitir que SEP Mobile se instale en el dispositivo.
 
-  ![Pulsar Instalar para instalar Skycure](./media/ios-mtd-install-app-request.png)
+  <!--![Tap install to install Skycure](./media/ios-mtd-install-app-request.png)-->
 
 2. Cuando vea el siguiente mensaje, pulse **Configuración**, active **Servicios de ubicación** y, después, pulse **Continuar**.
 
-  ![Pulse Configuración y, después, Servicios de ubicación.](./media/ios-skycure-allow-location-services.png)
+  <!--![Tap Settings and then Location Services](./media/ios-skycure-allow-location-services.png)-->
 
-3. Revise los permisos que necesita Skycure y pulse **Continuar**.
+3. Revise los permisos que necesita SEP Mobile y pulse **Continuar**.
 
-4. En el mensaje que le pide que permita que Skycure le envíe notificaciones, pulse **Permitir**.
+4. En el mensaje en el que se le solicite que permita que SEP Mobile le envíe notificaciones, pulse **Permitir**.
 
-  ![Pulse Configuración y, después, Servicios de ubicación.](./media/ios-skycure-allow-notifications.png)
+  <!--![Tap Settings and then Location Services](./media/ios-skycure-allow-notifications.png)-->
 
-5. Skycure finaliza la instalación y muestra la pantalla de bienvenida.
+5. SEP Mobile finaliza la instalación y muestra la pantalla de bienvenida.
 
-  ![Pantalla de bienvenida de Skycure, que muestra una breve explicación de lo que Skycure es y presenta la opción Continuar.](./media/ios-skycure-welcome-screen.png)
+  <!--![Skycure welcome screen, which displays a short explanation of what Skycure is and presents the option to continue.](./media/ios-skycure-welcome-screen.png)-->
 
 6. Una vez finalizada la configuración, verá la siguiente pantalla si no se ha encontrado ninguna amenaza de seguridad en el dispositivo.
 
-  ![Skycure no ha detectado ninguna amenaza de seguridad](./media/ios-skycure-no-threats-found.png)
+  <!--![Skycure found no security threats](./media/ios-skycure-no-threats-found.png)-->
 
-Si Skycure encuentra una amenaza de seguridad en el dispositivo, verá instrucciones sobre cómo solucionar el problema.
+Si SEP Mobile encuentra una amenaza de seguridad en el dispositivo, verá instrucciones sobre cómo solucionar el problema.
 
 **Si la instalación no funciona**
 
-A veces, las instalaciones pueden producir errores debido a problemas técnicos fuera de su control. Si esto sucede, póngase en contacto con su administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+A veces, las instalaciones pueden producir errores debido a problemas técnicos fuera de su control. Si esto sucede, póngase en contacto con el soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
