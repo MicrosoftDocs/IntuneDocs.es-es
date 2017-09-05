@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/25/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 915b432ed32565e820e16a65932fcdeac00d9bc3
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: a100b436ecf257c1e3886c23f15fa967fb877b7c
+ms.sourcegitcommit: 10e3ab2aeb79a1fb2243bef2748ccc003fdd4cc7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/02/2017
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>Obtener un certificado push MDM de Apple
 
@@ -36,15 +36,16 @@ Seleccione **Descargue su CSR** para descargar y guardar localmente el archivo d
   ![Captura de pantalla que muestra la pantalla Configurar certificado push MDM con Inserción de MDM sin configurar.](./media/create-mdm-push-certificate.png)
 
 **Paso 2. Cree un certificado push MDM de Apple.**<br>
-Seleccione **Crear el certificado push MDM** para ir al Portal de certificados push de Apple. Inicie sesión con el id. de Apple de la empresa para crear el certificado push mediante el archivo de solicitud. Después de elegir **Cargar** en el Portal de certificados push de Apple, recibirá un archivo .json. Use este archivo para el certificado push. Complete la descarga, vuelva al portal de certificados push de Apple para Certificados para servidores de terceros y elija **Descargar**. Descargue el certificado push (archivo .pem) y guarde el archivo localmente.
+Seleccione **Crear el certificado push MDM** para ir al Portal de certificados push de Apple. Inicie sesión con el id. de Apple de su empresa y, después, haga clic en **Crear certificado**. Seleccione **Elegir archivo** y busque el archivo de solicitud de firma de certificado y, luego, elija **Cargar**. En la página de confirmación, elija **Descargar** para descargar el archivo de certificado (.pem) y guárdelo localmente.
 
 > [!NOTE]
 > El certificado está asociado con el id. de Apple que se usó para crearlo. Como práctica recomendada, use un id. de Apple de la empresa para tareas de administración. No use nunca un id. de Apple personal.
 
-**Paso 3. Escriba el id. de Apple usado para crear el certificado push MDM de Apple.**
+**Paso 3. Escriba el id. de Apple usado para crear el certificado push MDM de Apple.**<br>
+Registre este identificador como un recordatorio para renovar el certificado.
 
 **Paso 4. Busque el certificado push MDM de Apple que quiere cargar.**<br>
-Vaya al archivo de certificado (.pem), elija **Abrir** y luego elija **Cargar**. Con el certificado push, Intune puede inscribir y administrar dispositivos iOS insertando la directiva en los dispositivos móviles inscritos.
+Vaya al archivo de certificado (.pem), elija **Abrir** y luego elija **Cargar**. Con el certificado de inserción, Intune puede inscribir y administrar dispositivos de Apple.
 
 ## <a name="renew-apple-mdm-push-certificate"></a>Renovar un certificado push MDM de Apple
 El certificado push MDM de Apple es válido durante un año y debe renovarse anualmente para mantener la administración de dispositivos iOS y macOS. Si el certificado expira, no se podrá establecer una conexión con los dispositivos Apple inscritos.

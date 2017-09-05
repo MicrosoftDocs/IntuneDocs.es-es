@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 09/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +14,35 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6db9bc7a3bafd61d03513ea1b6e1f0246faaab57
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: c5f6c5a4f5d76845c435ce979068988807120769
+ms.sourcegitcommit: 2d67df51af66ec859587b66a6ce3965461601c29
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/01/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Actualizaciones de la interfaz de usuario para las aplicaciones de usuario final de Intune
 Obtenga más información sobre las actualizaciones que hemos realizado en la interfaz de usuario para las aplicaciones que verán los usuarios finales en esta versión de Microsoft Intune. Esto puede ayudarle con las comunicaciones de usuario y cualquier documentación de actualización personalizada que haya creado para admitir su implementación. También puede ayudarle a comprender cómo solucionar mejor los posibles problemas a los que se enfrenten en caso de que sea necesario llamar al departamento de soporte técnico mediante el Portal de empresa.
+
+## <a name="week-of-august-28-2017"></a>Semana del 28 de agosto de 2017
+
+
+### <a name="ios-11-mail-app-will-support-oauth----1196951---"></a>Compatibilidad de la aplicación Mail de iOS 11 con OAuth <!---1196951--->
+
+El acceso condicional con Intune es compatible con una autenticación más segura en dispositivos iOS con OAuth. Para lograr esta mayor seguridad en la autenticación, ahora habrá un flujo diferente en la aplicación Portal de empresa para iOS. Cuando los usuarios finales intenten iniciar sesión en una nueva cuenta de Exchange con la aplicación Mail, verán un mensaje de vista web. Tras la inscripción en Intune, los usuarios verán un mensaje para permitir que la aplicación nativa Mail acceda a un certificado. La mayoría de los usuarios finales no podrá ver correos electrónicos en cuarentena. Las cuentas de correo electrónico existentes continuarán usando el protocolo de autenticación básico, de modo que estos usuarios seguirán recibiendo correos electrónicos en cuarentena. Esta experiencia de inicio de sesión para los usuarios finales es similar a la de las aplicaciones móviles de Office.
+
+![Seleccione el tipo de cuenta en la aplicación de correo electrónico nativa.](./media/ios-11-ca-email-after-1708-01.png)
+
+![Después de seleccionar Exchange, el dispositivo iOS solicitará el nombre de la cuenta y la dirección de correo electrónico.](./media/ios-11-ca-email-after-1708-02.png)
+
+![Proporcione la dirección de correo electrónico y el nombre de la cuenta.](./media/ios-11-ca-email-after-1708-03.png)
+
+![Se le dirigirá a la página de inicio de sesión de Microsoft externa.](./media/ios-11-ca-email-after-1708-04.png)
+
+![Proporcione la contraseña en la página de Microsoft.](./media/ios-11-ca-email-after-1708-05.png)
+
+![Microsoft solicitará al usuario que inscriba el dispositivo en el sistema de administración.](./media/ios-11-ca-email-after-1708-06.png)
+
+![Se solicitará al usuario que inscriba su dispositivo en el sitio web Portal de empresa.](./media/ios-11-ca-email-after-1708-07.png)
 
 ## <a name="week-of-august-21-2017"></a>Semana del 21 de agosto de 2017
 
@@ -31,11 +52,11 @@ Se actualizarán los cuadros de diálogo de administración de aplicaciones móv
 
 **Experiencia anterior**
 
-![interfaz antigua](media\NewUI_Old_AttachFileHandler.jpg)
+![interfaz antigua](./media/NewUI_Old_AttachFileHandler.jpg)
 
 **Experiencia moderna**
 
-![interfaz moderna](media\NewUI_Modern_AttachFileHandler.jpg)
+![interfaz moderna](./media/NewUI_Modern_AttachFileHandler.jpg)
 
 
 ## <a name="week-of-august-14-2017"></a>Semana del 14 de agosto de 2017
