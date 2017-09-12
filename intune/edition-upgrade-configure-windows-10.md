@@ -1,6 +1,6 @@
 ---
 title: "Configuración de actualizaciones de la edición de Windows 10 con Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Aprenda a usar Intune para actualizar los dispositivos Windows 10 que administra a una edición distinta."
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7da261fcb59b8ac90ea412155d093dd09bf41d46
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 8f6bd4c4af168bc64acabc05fdaad93558ddd10a
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-configure-windows-10-edition-upgrades-in-microsoft-intune"></a>Configuración de actualizaciones de la edición de Windows 10 en Microsoft Intune
 

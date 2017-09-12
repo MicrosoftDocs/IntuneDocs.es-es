@@ -1,6 +1,6 @@
 ---
 title: "Asignación de aplicaciones a grupos"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Cuando haya agregado una aplicación a Intune, querrá asignarla a grupos de usuarios o dispositivos."
 keywords: 
 author: mattbriggs
@@ -15,11 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a0249fe3ecd82f6382b2625378d6a81d33129069
-ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
+ms.openlocfilehash: 51abb6daad11b9d6036396dcc5a5ce8f2a2c4ac4
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Asignación de aplicaciones a grupos con Microsoft Intune
 

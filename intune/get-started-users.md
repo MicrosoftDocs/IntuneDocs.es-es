@@ -1,10 +1,10 @@
 ---
 title: "Introducción a los usuarios"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Agregue a un usuario a Intune para que pueda acceder a los recursos de la empresa en dispositivos móviles."
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/16/2017
 ms.topic: article
@@ -15,15 +15,15 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1559a265b28627281b484c8250d1c597d2f094c6
-ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
+ms.openlocfilehash: a33eb2d5dc96a2647cf2582bbc6cd4ba2d9c0961
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="get-started-with-managing-users"></a>Introducción a la administración de usuarios
 
-Tenga en cuenta a todas las personas de su organización. Cada una de ellas que use los datos de la empresa necesitará disponer de un usuario para administrar el acceso a ellos en Intune. 
+Tenga en cuenta a todas las personas de su organización. Cada una de ellas que use los datos de la empresa necesitará disponer de un usuario para administrar el acceso a ellos en Intune.
 
 ## <a name="how-do-i-create-a-user"></a>¿Cómo se crea un usuario?
 

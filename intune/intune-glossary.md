@@ -1,6 +1,6 @@
 ---
 title: Glosario de Intune
-titleSuffix: 
+titleSuffix: Azure portal
 description: "Obtener información sobre la terminología usada en Microsoft Intune"
 keywords: 
 author: robstackmsft
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: 2df6c8c79954c2145ffa6eb33782cee690d78b1d
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 8eaf82e995e3b572d897b63aaf36480424603ce6
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="microsoft-intune-glossary"></a>Glosario de Microsoft Intune
 
@@ -86,7 +86,7 @@ ms.lasthandoff: 08/03/2017
 ## <a name="i"></a>I
 |||
 |-|-|
-|Portal de Intune|Portal de Azure que se usa para la mayoría de las operaciones de administración de Intune.|
+|Portal de Azure|Portal de Azure que se usa para la mayoría de las operaciones de administración de Intune.|
 |Cliente de software de Intune|Una manera alternativa de [administrar algunos equipos con Windows](/intune-classic/get-started/choose-how-to-manage-devices) para obtener ayuda al decidir qué método quiere usar.|
 |editor de software de Intune|Herramienta que se usa para [definir las aplicaciones que se quieren implementar y cargarlas en un espacio de almacenamiento en nube](/intune-classic/deploy-use/add-apps).|
 |Tema de|Se usa para ver el [hardware y el software instalado](/intune/device-inventory) de los dispositivos administrados.|

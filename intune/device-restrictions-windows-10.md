@@ -1,6 +1,6 @@
 ---
 title: "Configuración de restricciones de dispositivo de Intune para Windows 10"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Conozca la configuración de Intune que puede usar para controlar los valores de configuración y la funcionalidad de los dispositivos Windows 10."
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e0bbbdfae73dfd843f4b011cecf0217d2c6eb699
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: 182088fa7c99f9f933d2228c0cdcf6a29aa4d727
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos Windows 10 y versiones posteriores en Microsoft Intune
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 08/25/2017
     -       **Ninguno**: no se envían datos a Microsoft.
     -       **Básico**: se envía información limitada a Microsoft.
     -       **Mejorado**: se envían datos de diagnóstico mejorados a Microsoft.
-    -       **Completo** : envía los mismos datos que Mejorado, además de datos adicionales sobre el estado del dispositivo.
+    -       **Completo **: envía los mismos datos que Mejorado, además de datos adicionales sobre el estado del dispositivo.
 -   **Cámara**: permite o bloquea el uso de la cámara en el dispositivo.
 -   **Sincronización de archivos de OneDrive**: bloquea la sincronización de archivos de OneDrive en el dispositivo.
 -   **Almacenamiento extraíble**: especifica si se pueden usar dispositivos de almacenamiento externo, como tarjetas SD, con el dispositivo.

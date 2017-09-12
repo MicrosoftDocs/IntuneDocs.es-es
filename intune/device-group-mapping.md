@@ -1,6 +1,6 @@
 ---
 title: "Cómo usar las categorías de dispositivos en Intune"
-titleSuffix: Intune on Azure
+titleSuffix: Azure portal
 description: "Aprenda a usar las categorías de dispositivos que los usuarios pueden elegir cuando inscriben sus dispositivos en Intune."
 keywords: 
 author: robstackmsft
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 7b668c37-40b9-4c69-8334-5d8344e78c24
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6c5d97499545d0ad3899f28ed4e88eb4dc1fe734
-ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
+ms.openlocfilehash: 00becba338f9a64e341b0b6d220b1a4ace3b40a9
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="map-device-groups"></a>Asignación de grupos de dispositivos
 
@@ -56,7 +56,7 @@ En este paso, creará grupos dinámicos en Azure Portal según la categoría del
 
 Para continuar, consulte el tema [Uso de atributos para crear reglas avanzadas](https://azure.microsoft.com/documentation/articles/active-directory-accessmanagement-groups-with-advanced-rules/#using-attributes-to-create-rules-for-device-objects) en la documentación de Azure Active Directory. 
 
-Use la información de esta sección para crear un grupo de dispositivos con una regla avanzada mediante el atributo**deviceCategory**. Por ejemplo (**device.deviceCategory -eq** "*<the device category name you got from the Intune portal>*").
+Use la información de esta sección para crear un grupo de dispositivos con una regla avanzada mediante el atributo**deviceCategory**. Por ejemplo (**device.deviceCategory -eq** "*<the device category name you got from the Azure portal>*").
 
 Después de configurar grupos de dispositivos y de que los usuarios inscriban sus dispositivos, se les presenta una lista de las categorías que ha configurado. Tras elegir una categoría y finalizar la inscripción, sus dispositivos se agregan al grupo de seguridad de Active Directory correspondiente a la categoría que eligieron.
 
