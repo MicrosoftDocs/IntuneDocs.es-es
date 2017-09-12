@@ -1,6 +1,6 @@
 ---
 title: "Configuración personalizada de Intune para dispositivos Windows 10"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Conozca la configuración que puede usar en un perfil personalizado de Windows 10."
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 7bcea136-7260-4042-b21b-c7dab86b380d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bda9e939e2d4aba4c4d005ea55ba65bec9c6e217
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 03dd17d1ef6cde7514720c063cef7da4c3c7db3d
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="custom-device-settings-for-windows-10-devices-in-microsoft-intune"></a>Configuración personalizada de dispositivos para dispositivos Windows 10 en Microsoft Intune
 

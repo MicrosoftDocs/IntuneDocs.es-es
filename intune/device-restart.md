@@ -1,6 +1,6 @@
 ---
 title: Reinicio remoto de los dispositivos con Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Aprenda a reiniciar los dispositivos de forma remota mediante la acción de reinicio del dispositivo."
 keywords: 
 author: robstackmsft
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5278179f22d174de6e97aa990bbe8761d8c8f8f8
-ms.sourcegitcommit: ee7f69efe9f32a1d6bdeb1fab73d03dbfe1ae58c
+ms.openlocfilehash: 5c3a067209e99f7537a15aee25b8d68c4ff218a0
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Reinicio remoto de los dispositivos con Intune
 

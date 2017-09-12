@@ -1,6 +1,6 @@
 ---
 title: "Inscripción masiva para Windows 10"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Creación de un paquete de inscripción masiva para Microsoft Intune"
 keywords: 
 author: NathBarn
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: 67af5f6545a0ef4a833c6f709fc4685de7f64113
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: 3e374f383275b1e74e22ac037ecaec282eeaa87c
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Inscripción masiva para dispositivos Windows
 

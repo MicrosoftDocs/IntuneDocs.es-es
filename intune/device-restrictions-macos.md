@@ -1,6 +1,6 @@
 ---
 title: "Configuración de restricciones de dispositivo de Intune para macOS"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Conozca la configuración de Intune que puede usar para controlar los valores de configuración y la funcionalidad de los dispositivos macOS."
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 3129cbaf-96c2-4837-8907-ca87a605a496
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76d532745ad3b8761a88aaf0772053f0629e050a
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: 978430ded8d2e6da36ce49cd9351c9d44789e2b0
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="macos-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos macOS en Microsoft Intune
 
