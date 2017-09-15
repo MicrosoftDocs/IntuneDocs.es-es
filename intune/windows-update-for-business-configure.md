@@ -1,6 +1,6 @@
 ---
-title: Administrar actualizaciones de software
-titleSuffix: Configure Windows Update for Business settings - Intune
+title: "Configuración de Windows Update para empresas en Intune"
+titleSuffix: Azure portal
 description: "Obtenga información sobre cómo configurar Windows Update para empresas en Intune para controlar las actualizaciones de dispositivos Windows 10\"."
 keywords: 
 author: dougeby
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 6d88fd62b84c0cc7c3678692cef5ab547bfb8c5d
-ms.sourcegitcommit: f9b01976c0fc479ac8bc3998eb55bbc517ed2d84
+ms.openlocfilehash: 71dad71cdfa9f503a47e301f0b5d3fef2567f886
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="manage-software-updates"></a>Administrar actualizaciones de software
 
@@ -54,20 +54,20 @@ Después de crear anillos de actualización, debe asignarnos a grupos de disposi
 
     Puede configurar esta opción manualmente, o bien utilizar un perfil de restricción de dispositivos Intune para Windows 10 y versiones posteriores. Para ello, configure la opción **General** > **Envío de datos de diagnóstico** con, al menos, el valor **Básico**. Para obtener más información sobre los perfiles de dispositivo, consulte [Configuración de restricciones de dispositivos en Microsoft Intune](device-restrictions-configure.md).
 
-- En la consola de administración de Intune clásica, hay cuatro opciones que controlan el comportamiento de las actualizaciones de software. Estos forman parte de la directiva de configuración general para dispositivos móviles y equipos con Windows 10:
+- En la consola de administración de Intune, hay cuatro opciones que controlan el comportamiento de las actualizaciones de software. Estos forman parte de la directiva de configuración general para dispositivos móviles y equipos con Windows 10:
     - **Permitir actualizaciones automáticas**
     - **Permitir características de evaluación**
     - **Día de instalación programado**
     - **Hora de instalación programada**
 
-  La consola clásica también tiene un número limitado de otras opciones de actualizaciones de Windows 10 en el perfil de configuración de dispositivo. Si tiene alguna de estas opciones configuradas en la consola de administración de Intune clásica al migrar a Azure Portal, le recomendamos encarecidamente que haga lo siguiente:
+  El portal clásico también tiene un número limitado de otras opciones de actualizaciones de Windows 10 en el perfil de configuración de dispositivo. Si tiene alguna de estas opciones configuradas en la consola de administración de Intune al migrar a Azure Portal, le recomendamos encarecidamente que haga lo siguiente:
 
 1. Cree anillos de actualización de Windows 10 en Azure Portal con la configuración que necesite. La opción **Permitir características de versión preliminar** no es compatible con Azure Portal porque ya no se puede emplear en las compilaciones más recientes de Windows 10. Al crear los anillos de configuración, puede configurar las otras tres opciones, así como otras opciones de actualizaciones de Windows 10.
 
   > [!NOTE]
-  > La configuración de actualizaciones de Windows 10 creada en la consola clásica no se muestra en Azure Portal después de la migración. Sin embargo, sí que siguen aplicando estas opciones. Si ha migrado cualquiera de estas opciones y editado la directiva migrada desde Azure Portal, esta configuración se quitará de la directiva.
+  > La configuración de actualizaciones de Windows 10 creada en el portal clásico no se muestra en Azure Portal después de la migración. Sin embargo, sí que siguen aplicando estas opciones. Si ha migrado cualquiera de estas opciones y editado la directiva migrada desde Azure Portal, esta configuración se quitará de la directiva.
 
-2. Elimine la configuración de actualización en la consola clásica. Después de migrar a Azure Portal y agregar la misma configuración a un anillo de actualización, debe eliminar la configuración en el portal clásico para evitar posibles conflictos entre directivas. Por ejemplo, cuando se configuran las mismas opciones con valores diferentes, se producirá un conflicto y no habrá una manera sencilla de saberlo, ya que la configuración de la consola clásica no se muestra en Azure Portal.
+2. Elimine la configuración de actualización en el portal clásico. Después de migrar a Azure Portal y agregar la misma configuración a un anillo de actualización, debe eliminar la configuración en el portal clásico para evitar posibles conflictos entre directivas. Por ejemplo, cuando se configuran las mismas opciones con valores diferentes, se producirá un conflicto y no habrá una manera sencilla de saberlo, ya que la configuración del portal clásico no se muestra en Azure Portal.
 
 ## <a name="how-to-create-and-assign-update-rings"></a>Creación y asignación de anillos de actualización
 

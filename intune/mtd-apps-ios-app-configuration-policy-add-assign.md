@@ -1,7 +1,7 @@
 ---
 title: Agregar y asignar aplicaciones de MTD en Intune
-titleSuffix: Intune on Azure
-description: "Agregar aplicaciones de MTD, la aplicación de Microsoft Authenticator y la directiva de configuración de iOS en Intune en Azure"
+titleSuffix: Azure portal
+description: "Adición de aplicaciones de MTD, la aplicación de Microsoft Authenticator y la directiva de configuración de iOS con Intune en Azure Portal"
 keywords: 
 author: andredm7
 ms.author: andredm
@@ -15,11 +15,11 @@ ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7edd80c7bae429c1f4032cf59aaaf8d91786f92c
-ms.sourcegitcommit: 3b21f20108e2bf1cf47c141b36a7bdae609c4ec3
+ms.openlocfilehash: 6d0802107353eee9359e0eff17b69037d9a237a6
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Agregar y asignar aplicaciones de Mobile Threat Defense (MTD) con Intune
 
@@ -115,7 +115,7 @@ Habilite la autenticación de Azure Active Directory para los usuarios de iOS ha
 
 ### <a name="for-skycure"></a>Para Skycure
 
--   Utilice la misma cuenta de Azure AD configurada previamente en la [consola de administración de Skycure](https://aad.skycure.com), que debe ser la misma que se usó para iniciar sesión en la consola clásica de Intune.
+-   Utilice la misma cuenta de Azure AD configurada previamente en la [consola de administración de Skycure](https://aad.skycure.com), que debe ser la misma que se usó para iniciar sesión en el portal clásico de Intune.
 
 -   Debe **descargar** el archivo de directiva de configuración de aplicaciones para iOS: 
     -   Vaya a la [consola de administración de Skycure](https://aad.skycure.com) e inicie sesión con sus credenciales de administrador.

@@ -1,10 +1,10 @@
 ---
 title: "Introducción a Azure Portal"
-titleSuffix: Intune on Azure
-description: "Obtenga información sobre cómo crear y compartir paneles de Intune en Azure."
+titlesuffix: Azure portal
+description: "Obtenga información sobre cómo crear y compartir paneles de Intune en Azure Portal."
 keywords: 
-author: barlanmsft
-ms.author: barlan
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 08/16/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f27ae85160573f6757b20c885e95a280eb7f1155
-ms.sourcegitcommit: 45204e0fb8cb4cce449e65f2f1d7bb6f6ac4ccf5
+ms.openlocfilehash: 42c43ca5fa1eee28cb245c7a64e47f7f704183f4
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="getting-started-with-intune-in-the-azure-portal"></a>Introducción a Intune en Azure Portal
 
@@ -52,7 +52,7 @@ Esto será más importante después de agregar más contenido a Intune, como los
 
 ## <a name="using-services"></a>Usar servicios
 
-Cuando abra Intune o cualquier otro servicio en Azure, se mostrará en una **hoja**. Algunas de las primeras cargas de trabajo que usa en Intune, como **Usuarios**, **Grupos** y **Aplicaciones móviles** se mostrarán en una hoja de pantalla completa. Al seleccionar una carga de trabajo, se abrirá su hoja en la página completa. Las demás hojas saldrán del lado izquierdo de la hoja al abrirlas y volverán a quedar por debajo de la hoja principal al contraerlas. 
+Cuando abra Intune o cualquier otro servicio en Azure, se mostrará en una **hoja**. Algunas de las primeras cargas de trabajo que usa en Intune, como **Usuarios**, **Grupos** y **Aplicaciones móviles** se mostrarán en una hoja de pantalla completa. Al seleccionar una carga de trabajo, se abrirá su hoja en la página completa. Las demás hojas saldrán del lado izquierdo de la hoja al abrirlas y volverán a quedar por debajo de la hoja principal al contraerlas.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

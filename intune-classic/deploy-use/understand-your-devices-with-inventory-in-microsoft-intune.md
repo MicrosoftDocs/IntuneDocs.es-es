@@ -5,7 +5,7 @@ keywords:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 11/10/2016
+ms.date: 09/05/2016
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 312911fe-b963-4949-9911-ae425e0590b2
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2d2acab722c0a1f0c5757f6bbe75687cd8416485
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 4d3b03d44fee3ffe103b6eeadc362d10c6f1b228
+ms.sourcegitcommit: 00352501833818a08479758ba1c9efdf7223e264
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/05/2017
 ---
 # <a name="understand-your-devices-with-inventory-in-microsoft-intune"></a>Comprender el funcionamiento de sus dispositivos mediante el inventario en Microsoft Intune
 
@@ -63,6 +63,9 @@ Para ver el inventario que recopilan los dispositivos móviles, ejecute la opci�
 |**MAC Ethernet**|Solo dispositivos Mac OS X|
 |**Bloqueo de activación habilitado**|Solo dispositivos iOS|
 |**Cifrado habilitado**|Todos los dispositivos|
+
+>[!NOTE]
+>Algunos de los elementos anteriores podrían no recopilarse, según el operador que se utilice con el dispositivo.
 
 ## <a name="whats-collected-from-windows-pcs"></a>¿Qué información se recopila de los equipos PC con Windows?
 > [!IMPORTANT]

@@ -1,12 +1,12 @@
 ---
 title: "Configuración de restricciones de dispositivo de Intune para Android"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Conozca la configuración de Intune que puede usar para controlar los valores de configuración y la funcionalidad de los dispositivos Android."
 keywords: 
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 08/08/2017
+ms.date: 09/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09641b5e34ab8200e7dd9d4c27f0dabf59fa62d2
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: db7287dcccf45e0ce98a6fcae3c953dbebc2bb82
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos Android y Samsung KNOX en Microsoft Intune
 
@@ -67,8 +67,8 @@ Use esta configuración con una directiva de restricción de dispositivos Androi
 <sup>1</sup> Antes de asignar esta configuración a los dispositivos, asegúrese de actualizar la aplicación del Portal de empresa a la versión más reciente en esos dispositivos.
 
 Si configura el valor de **Complejo numérico** y luego lo asigna a un dispositivo que ejecuta una versión de Android anterior a la versión 5.0, se aplica el comportamiento siguiente.
-- Si la aplicación del Portal de empresa se ejecuta en una versión anterior a 1704, no se aplica ninguna directiva de PIN al dispositivo y se muestra un error en el portal de Intune.
-- Si la aplicación del Portal de empresa ejecuta la versión 1704 o una versión posterior, solo se puede aplicar un PIN sencillo. Las versiones de Android anteriores a 5.0 no admiten esta configuración. No se muestra ningún error en el portal de Intune.
+- Si la aplicación de Portal de empresa se ejecuta en una versión anterior a 1704, no se aplica ninguna directiva de PIN al dispositivo y se muestra un error en Azure Portal.
+- Si la aplicación del Portal de empresa ejecuta la versión 1704 o una versión posterior, solo se puede aplicar un PIN sencillo. Las versiones de Android anteriores a 5.0 no admiten esta configuración. No se muestra ningún error en Azure Portal.
 
 
 ## <a name="google-play-store"></a>Google Play Store
@@ -79,7 +79,7 @@ Si configura el valor de **Complejo numérico** y luego lo asigna a un dispositi
 
 En la lista de aplicaciones restringidas, puede configurar una de las listas siguientes para dispositivos Android y dispositivos Samsung KNOX Standard:
 
-**Aplicaciones prohibidas**: aplicaciones (no administradas por Intune) que los usuarios no pueden instalar ni ejecutar.
+Lista de **Aplicaciones prohibidas**: enumera las aplicaciones (no administradas por Intune) por las que recibirá una notificación en caso de que el usuario las instale y ejecute.
 **Aplicaciones aprobadas**: aplicaciones que los usuarios pueden instalar. Para mantener el cumplimiento, los usuarios no deben instalar otras aplicaciones. Las aplicaciones que se administran mediante Intune están permitidas automáticamente.
 Se deben asignar perfiles de dispositivo que contengan configuración de aplicaciones restringidas para grupos de usuarios.
 
@@ -107,6 +107,21 @@ También puede hacer clic en **Importar** para obtener la lista de un archivo cs
 - **Javascript (solo Samsung KNOX)**: permite que el explorador web del dispositivo ejecute scripts de Java.
 - **Elementos emergentes (solo Samsung KNOX)**: permite el uso del bloqueador de elementos emergentes en el explorador web.
 
+## <a name="allow-or-block-apps"></a>Permiso o bloqueo para aplicaciones
+
+Esta configuración puede utilizarse para especificar las aplicaciones que se pueden instalar o iniciar en dispositivos que ejecutan solo Samsung KNOX Standard.
+Además, también puede especificar las aplicaciones instaladas que se ocultarán en el usuario del dispositivo. Los usuarios no pueden ejecutar estas aplicaciones.
+
+- **Aplicaciones cuya instalación se permite (solo Samsung KNOX Standard)**
+- **Aplicaciones cuyo inicio está bloqueado (solo Samsung KNOX Standard)**
+- **Aplicaciones ocultas para el usuario (solo Samsung KNOX Standard)**
+
+Para cada ajuste, configure una lista de aplicaciones con uno de los siguientes valores:
+
+- **Agregar aplicaciones por nombre de paquete**: se usa principalmente para aplicaciones de línea de negocio. Escriba el nombre de la aplicación y el nombre del paquete de la aplicación. 
+- **Agregar aplicaciones por URL**: especifique el nombre de la aplicación y su dirección URL en Google Play Store.
+- **Agregar aplicaciones administradas**: en la lista de aplicaciones que administra con Intune, seleccione la aplicación que necesita.
+
 ## <a name="cloud-and-storage"></a>Nube y almacenamiento
 
 - **Copia de seguridad de Google (solo Samsung KNOX)**: permite el uso de la característica de copia de seguridad de Google.
@@ -127,9 +142,9 @@ También puede hacer clic en **Importar** para obtener la lista de un archivo cs
 
 ## <a name="kiosk"></a>Pantalla completa
 
-La configuración de pantalla completa se aplica solo a los dispositivos Samsung KNOX Standard.
+La configuración de pantalla completa solo se aplica a dispositivos Samsung KNOX Standard y exclusivamente a las aplicaciones que administra mediante Intune.
 
-- **Seleccionar una aplicación administrada**: seleccione una de las siguientes opciones para agregar una o varias aplicaciones que se pueden ejecutar cuando el dispositivo esté en pantalla completa. Ninguna otra aplicación puede ejecutarse en el dispositivo.
+- **Seleccionar una aplicación administrada**: seleccione una de las siguientes opciones para agregar una o varias aplicaciones administradas que se pueden ejecutar cuando el dispositivo esté en pantalla completa. Ninguna otra aplicación puede ejecutarse en el dispositivo.
     - **Agregar aplicaciones por nombre de paquete**
     - **Agregar aplicaciones por dirección URL**
     - **Agregar aplicaciones administradas**.

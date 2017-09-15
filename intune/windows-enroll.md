@@ -1,6 +1,6 @@
 ---
 title: "Inscripción de dispositivos Windows"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Habilite la administración de dispositivos móviles (MDM) de Intune para dispositivos Windows\"."
 keywords: 
 author: nathbarn
@@ -14,11 +14,11 @@ ms.assetid: f94dbc2e-a855-487e-af6e-8d08fabe6c3d
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3b5b5e2cdf2b31c33a02a90560e4abf955d398b0
-ms.sourcegitcommit: d5b5cb9b6dcb59094e436e07f8ed46924b37ac94
+ms.openlocfilehash: 067009356171184fa34dd51c9a0b01b41f14cab7
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enroll-windows-devices"></a>Inscripción de dispositivos Windows
 
@@ -27,8 +27,8 @@ ms.lasthandoff: 08/30/2017
 Este tema ayuda a los administradores de TI a simplificar la inscripción de Windows para sus usuarios. Una vez que haya [configurado Intune](setup-steps.md), los usuarios inscriben los dispositivos Windows [iniciando sesión](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) con su cuenta profesional o educativa.  
 
 Como administrador de Intune, puede simplificar la inscripción de las siguientes maneras:
-- Habilitar la inscripción automática (se necesita Azure AD Premium)
-- Registro CNAME
+- [Habilitar la inscripción automática](#enable-windows-10-automatic-enrollment) (se necesita Azure AD Premium)
+- [Registro CNAME]()
 - Habilitar la inscripción masiva (se necesita Azure AD Premium y Diseñador de configuración de Windows)
 
 Hay dos factores que determinan cómo puede simplificar la inscripción de dispositivos Windows:
@@ -48,8 +48,8 @@ Los dispositivos que ejecutan Windows 10 Creators Update y que están unidos al 
 
 [!INCLUDE[AAD-enrollment](./includes/win10-automatic-enrollment-aad.md)]
 
-## <a name="enable-windows-enrollment-without-azure-ad-premium"></a>Habilitación de la inscripción de Windows sin Azure AD Premium
-Puede simplificar la inscripción para sus usuarios creando un alias DNS (tipo de registro CNAME) que redirige automáticamente las solicitudes de inscripción a los servidores de Intune. Si no crea un registro de recurso DNS CNAME, los usuarios que intentan conectarse a Intune deben especificar el nombre del servidor de Intune durante la inscripción.
+## <a name="simplify-windows-enrollment-without-azure-ad-premium"></a>Simplificación de la inscripción de Windows sin Azure AD Premium
+Puede simplificar la inscripción para sus usuarios creando un alias de servidor de nombres de dominio (DNS) (tipo de registro CNAME) que redirige automáticamente las solicitudes de inscripción a los servidores de Intune. Si no crea un registro de recurso DNS CNAME, los usuarios que intentan conectarse a Intune deben especificar el nombre del servidor de Intune durante la inscripción.
 
 **Paso 1: Crear CNAME** (opcional)<br>
 Cree registros de recursos DNS CNAME para el dominio de su empresa. Por ejemplo, si el sitio web de la empresa es contoso.com, debe crear un CNAME en DNS que redirija EnterpriseEnrollment.contoso.com a enterpriseenrollment-s.manage.microsoft.com.
@@ -74,7 +74,7 @@ Si tiene más de un sufijo UPN, debe crear un CNAME para cada nombre de dominio 
 Los cambios en los registros DNS pueden tardar hasta 72 horas en propagarse. No se puede comprobar el cambio DNS en Intune hasta que el registro DNS se propague.
 
 **Paso 2: Comprobar CNAME** (opcional)<br>
-En el portal de Azure Intune, elija **Más servicios** > **Supervisión y administración** > **Intune**. En la hoja Intune, elija **Inscribir dispositivos** > **Windows Enrollment** (Inscripción de Windows). Escriba la dirección URL del sitio web de empresa en el cuadro **Especificar un nombre de dominio verificado** y luego pulse **Probar detección automática**.
+En Azure Portal, elija **Más servicios** > **Supervisión y administración** > **Intune**. En la hoja Intune, elija **Inscribir dispositivos** > **Windows Enrollment** (Inscripción de Windows). Escriba la dirección URL del sitio web de empresa en el cuadro **Especificar un nombre de dominio verificado** y luego pulse **Probar detección automática**.
 
 ## <a name="tell-users-how-to-enroll-windows-devices"></a>Indicar a los usuarios cómo inscribir dispositivos Windows
 Indique a los usuarios cómo inscribir sus dispositivos Windows y qué esperar cuando se hayan incorporado a la administración. Para obtener instrucciones de inscripción del usuario final, consulte [Inscribir el dispositivo Windows en Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows). También puede indicar a los usuarios que revisen [¿Qué información puede ver mi administrador de TI cuando inscribo mi dispositivo en Intune?](https://docs.microsoft.com/intune-user-help/what-can-your-it-administrator-see-when-you-enroll-your-device-in-intune-windows).

@@ -1,6 +1,6 @@
 ---
 title: "Solución de problemas de perfiles de dispositivo en Microsoft Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Si se queda atascado, use este tema para ayudarle a resolver problemas con perfiles de dispositivo de Intune.
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ed238f35927f17b20402f64586686246afabb900
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 426bed61930e045f38e3c7c658dbb7168dc2f551
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="troubleshooting-device-profiles-in-microsoft-intune"></a>Solución de problemas de perfiles de dispositivo en Microsoft Intune
 
@@ -59,7 +59,7 @@ When two or more policies are assigned to the same user or device, the evaluatio
 
 -   La configuración de directivas de cumplimiento más restrictiva se aplica si se evalúa con la misma configuración en otra directiva de cumplimiento.
 
--   Si una opción de la directiva de configuración entra en conflicto con una opción de una directiva de configuración diferente, este conflicto se mostrará en la consola de Intune. Debe resolver manualmente dichos conflictos.
+-   Si una opción de la directiva de configuración entra en conflicto con una opción de una directiva de configuración diferente, este conflicto se mostrará en Azure Portal. Debe resolver manualmente dichos conflictos.
 
 ## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-will-be-applied-to-the-app"></a>¿Qué sucede cuando las directivas de protección de aplicaciones entran en conflicto entre sí? ¿Cuál se aplicará a la aplicación?
 Los valores en conflicto son la configuración más restrictiva disponible en una directiva de protección de aplicaciones, excepto para los campos de entrada de números (como intentos de PIN antes del restablecimiento).  Los campos de entrada de números se definirán con los mismos valores que si crease una directiva de MAM en la consola con la opción de configuración recomendada.

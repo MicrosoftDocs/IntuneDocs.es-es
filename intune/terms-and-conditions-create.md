@@ -1,6 +1,6 @@
 ---
 title: "Definir los términos y condiciones en Microsoft Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Establezca los términos y condiciones que los usuarios ven en el Portal de empresa de Intune. "
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0262b8068ddf134de5ffec0965476fb513ceb9ab
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 47b153223e10ec358c61a212bdacd109ee90bbcd
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="ensure-users-accept-company-terms-for-access"></a>Garantía de que los usuarios acepten los términos de acceso de la empresa
 
@@ -32,14 +32,14 @@ Puede crear varios conjuntos de términos y asignarlos a grupos distintos, como 
 ## <a name="create-terms-and-conditions"></a>Creación de términos y condiciones
 Complete estos pasos para crear los términos y condiciones. El nombre para mostrar y la descripción son para uso administrativo mientras las propiedades de términos se muestran a los usuarios en el Portal de empresa.
 
-1. En el portal de Intune, elija **Inscripción de dispositivos** y, luego, elija **Términos y condiciones**.
+1. En Azure Portal, elija **Inscripción de dispositivos** y, luego, elija **Términos y condiciones**.
 2. Seleccione **Crear**.
-![Captura de pantalla del portal Intune que muestra el botón Crear para los términos y condiciones](media/terms-create-terms.png)
+![Captura de pantalla de Azure Portal que muestra el botón Crear para los términos y condiciones](media/terms-create-terms.png)
 3. Especifique la información siguiente en la hoja de expansión:
 
-   - **Nombre para mostrar**: nombre de los términos en el portal de Intune. Los usuarios no ven este nombre.
+   - **Nombre para mostrar**: nombre de los términos en Azure Portal. Los usuarios no ven este nombre.
 
-   - **Descripción**: detalles opcionales que le ayudan a identificar este conjunto de términos en el portal Intune.
+   - **Descripción**: detalles opcionales que le ayudan a identificar este conjunto de términos en Azure Portal.
 
 4. Seleccione la flecha situada junto a Define terms of use (Definir términos de uso) para abrir la hoja Términos y condiciones y, luego, escriba la siguiente información:
 
@@ -64,9 +64,9 @@ Los ejemplos siguientes muestran los términos y condiciones en la consola de ad
 
 Puede asignar términos y condiciones a grupos de usuarios que deben aceptarlos antes de usar el Portal de empresa.
 
-1. En el portal de Intune, elija **Inscripción de dispositivos** y, luego, elija **Términos y condiciones**.
+1. En Azure Portal, elija **Inscripción de dispositivos** y, luego, elija **Términos y condiciones**.
 2. En la lista de términos y condiciones, seleccione los términos que desea asignar y, luego, seleccione **Grupos asignados**.
-![Captura de pantalla de la hoja Asignar grupo del portal Intune que muestra los botones Seleccionar grupo y Seleccionar para la asignación de términos y condiciones](media/terms-assign-groups.png)
+![Captura de pantalla de la hoja Asignar grupo de Azure Portal que muestra los botones Seleccionar grupo y Seleccionar para la asignación de términos y condiciones](media/terms-assign-groups.png)
 3. Haga clic en el botón **Seleccionar grupo** y, en la hoja **Seleccionar grupos**, seleccione los grupos a los que desea asignar los términos y, luego, haga clic en **Seleccionar**. No se pueden asignar términos y condiciones a los grupos dinámicos.
 4. En la hoja **Grupos asignados**, haga clic en **Guardar**.  Los términos y condiciones ahora están asociados a usuarios en los grupos seleccionados. La próxima vez que los usuarios accedan al portal de la empresa deberán aceptar los términos. Los términos y condiciones solo se deben aceptar una vez. No es necesario que los usuarios con varios dispositivos los acepten en cada uno de ellos.
 
@@ -83,7 +83,7 @@ Puede editar los términos y condiciones y administrar sus versiones. Se recomie
 
 2. En la hoja Intune, elija **Inscripción de dispositivos**, elija **Términos y condiciones**, seleccione los términos y condiciones que desea modificar y, luego, seleccione **Propiedades**.
 
-4. En la hoja **Propiedades**, seleccione **Términos y condiciones** y, luego, modifique el **título**, el **resumen de los términos** y los **términos y condiciones**, según corresponda. Si los cambios hechos hacen que los usuarios tengan que volver a aceptar los términos nuevos, haga clic en **Solicite a los usuarios que acepten de nuevo los términos e incremente el número de versión a** 
+4. En la hoja **Propiedades**, seleccione **Términos y condiciones** y, luego, modifique el **título**, el **resumen de los términos** y los **términos y condiciones**, según corresponda. Si los cambios hechos hacen que los usuarios tengan que volver a aceptar los términos nuevos, haga clic en **Solicite a los usuarios que acepten de nuevo los términos e incremente el número de versión a **
 
 4.  Seleccione **Aceptar** y, luego, **Guardar**.
 

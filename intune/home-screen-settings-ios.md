@@ -1,6 +1,6 @@
 ---
 title: "Configuración de diseño de pantalla principal de Intune para dispositivos iOS"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Conozca la configuración que puede usar para personalizar la pantalla principal y la base de los dispositivos iOS."
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 6aba4491-afb9-43cd-9ccc-14e6a2a5a3b1
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: de15a5f5291a6701782d357d24e2e802d7e7e44b
-ms.sourcegitcommit: c9b3a95bf529b6cb2a2bdacbc49127dfa0c233e5
+ms.openlocfilehash: 4a3f175337d521c92c909db9972d844ac6997cb0
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/05/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="intune-home-screen-layout-settings-for-ios-devices"></a>Configuración de diseño de pantalla principal de Intune para dispositivos iOS
 
@@ -60,7 +60,7 @@ Agregue las páginas que quiere que aparezcan en la pantalla principal y las apl
 
 
 1. En la hoja **Páginas**, elija **Agregar**.
-2. En la hoja **Agregar fila**, escriba un **Nombre de página**. Este nombre se usa como referencia en el portal de Intune y *no se muestra* en el dispositivo iOS.
+2. En la hoja **Agregar fila**, escriba un **Nombre de página**. Este nombre se usa como referencia en Azure Portal y *no se muestra* en el dispositivo iOS.
 3. Elija **Agregar** y, luego, elija si desea agregar una **aplicación** o una **carpeta** a la página.
 4. Con la información de este tema, configure las aplicaciones y las carpetas que quiere que aparezcan en la página.
 
@@ -76,7 +76,7 @@ Cuando asigna la directiva a un dispositivo iPhone, el resultado es una página 
 
 ## <a name="how-to-add-an-app-to-the-list"></a>Cómo agregar una aplicación a la lista
 
-1. Escriba el **nombre de la aplicación**. Este nombre se usa como referencia en el portal de Intune y *no se muestra* en el dispositivo iOS.
+1. Escriba el **nombre de la aplicación**. Este nombre se usa como referencia en Azure Portal y *no se muestra* en el dispositivo iOS.
 2. Escriba el **Identificador del lote de aplicaciones** de la aplicación que quiere mostrar. Consulte **Bundle ID reference for built-in iOS apps** (Referencia de identificador de lote para aplicaciones iOS integrada) más adelante en este tema para obtener ayuda.
 3. Haga clic en **Aceptar** y, luego, siga agregando hasta un máximo de **6** elementos en la base del dispositivo y **60** para una página del dispositivo.
 4. Cuando haya terminado, haga clic en **Aceptar**.
@@ -87,8 +87,8 @@ Las aplicaciones que agrega a una página en una carpeta se organizan de izquier
 
 1. Escriba el **nombre de la carpeta**. Este nombre aparece en el dispositivo de los usuarios.
 2. Elija **Agregar** para crear una página en la carpeta. Puede agregar hasta 20 páginas.
-3. En la hoja **Agregar fila**, escriba un nombre para la página. Este nombre se usa como referencia en el portal de Intune y *no se muestra* en el dispositivo iOS.
-3. Escriba el **nombre de la aplicación**. Este nombre se usa como referencia en el portal de Intune y *no se muestra* en el dispositivo iOS.
+3. En la hoja **Agregar fila**, escriba un nombre para la página. Este nombre se usa como referencia en Azure Portal y *no se muestra* en el dispositivo iOS.
+3. Escriba el **nombre de la aplicación**. Este nombre se usa como referencia en Azure Portal y *no se muestra* en el dispositivo iOS.
 2. Escriba el **Identificador del lote de aplicaciones** de la aplicación que quiere mostrar. Consulte **Cómo agregar una aplicación a la lista** para obtener ayuda.
 3. Seleccione **Agregar**. Puede agregar hasta 60 elementos.
 4. Cuando haya terminado, haga clic en **Aceptar**.

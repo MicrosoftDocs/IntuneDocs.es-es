@@ -1,6 +1,6 @@
 ---
 title: RBAC con Intune
-titleSuffix: Intune Azure preview
+titleSuffix: Azure portal
 description: "Versión preliminar de Intune Azure: aprenda cómo RBAC le permite controlar quién puede realizar acciones y efectuar cambios."
 keywords: 
 author: andredm7
@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3aff61f6201d6569e35aa9d556aa655d28775d2f
-ms.sourcegitcommit: 18cdbdc226f64368de892a8c5cff157c37986c57
+ms.openlocfilehash: e9dc65389485d2a77e351b5e781824eed0612054
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>Control de administración basada en roles (RBAC) con Intune
 
@@ -32,7 +32,7 @@ RBAC ayuda a controlar quién puede realizar diversas tareas de Intune dentro de
 
 ![Ejemplo de RBAC en Intune](./media/intune-rbac-1.PNG)
 
-Con el nuevo portal de Intune, **Azure Active Directory (Azure AD)** ofrece dos roles de directorio que se pueden usar con Intune. A estos roles se les conceden permisos completos para realizar todas las actividades en Intune:
+Con la nueva versión de Azure Portal, **Azure Active Directory (Azure AD)** ofrece dos roles de directorio que se pueden usar con Intune. A estos roles se les conceden permisos completos para realizar todas las actividades en Intune:
 
 - **Administrador global:** los usuarios con este rol tienen acceso a todas las características administrativas de Azure AD, así como a los servicios que permiten la federación con Azure AD, como Exchange Online, SharePoint Online y Skype Empresarial Online. La persona que se suscribe al inquilino de Azure AD se convierte en administrador global. Solo los administradores globales pueden asignar otros roles de administrador de Azure AD. Puede haber más de un administrador global en tu organización. Los administradores globales pueden restablecer la contraseña de cualquier usuario y de todos los administradores.
 
@@ -46,12 +46,12 @@ Con el nuevo portal de Intune, **Azure Active Directory (Azure AD)** ofrece dos 
     > [!TIP]
     > Intune también muestra tres extensiones de Azure AD: **usuarios**, **grupos** y **acceso condicional** que se controlan mediante RBAC en Azure AD. Además, el **administrador de cuentas de usuario** solo realiza actividades de usuario o grupo de AAD y no tiene permisos completos para realizar todas las actividades en Intune. Consulte [RBAC con Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) para obtener información más detallada.
 
-## <a name="roles-created-in-the-intune-classic-console"></a>Roles creados en la consola clásica de Intune
+## <a name="roles-created-in-the-intune-classic-portal"></a>Roles creados en el portal clásico de Intune
 
-Solo los usuarios con roles de **administradores del servicio** de Intune con permisos "completos" pueden migrarse desde la consola clásica de Intune a Intune en Azure. Debe reasignar a los usuarios con roles de **administradores del servicio** de Intune permisos de "Solo lectura" o "Departamento de soporte técnico" para acceder a los roles de Intune en Azure Portal y eliminarlos del portal clásico.
+Solo los usuarios con roles de **administradores del servicio** de Intune con permisos "completos" pueden migrarse desde el portal clásico de Intune a Intune en Azure Portal. Debe reasignar a los usuarios con roles de **administradores del servicio** de Intune permisos de "Solo lectura" o "Departamento de soporte técnico" para acceder a los roles de Intune en Azure Portal y eliminarlos del portal clásico.
 
 > [!IMPORTANT]
-> Es posible que necesite mantener el acceso del administrador del servicio de Intune en la consola clásica en caso de que los administradores todavía necesiten acceder para administrar equipos con Intune.
+> Es posible que necesite mantener el acceso del administrador del servicio de Intune en el portal clásico en caso de que los administradores todavía necesiten acceder para administrar equipos con Intune.
 
 ## <a name="built-in-roles"></a>Roles integrados
 

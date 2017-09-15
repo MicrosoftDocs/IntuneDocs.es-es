@@ -1,12 +1,12 @@
 ---
 title: "Uso del restablecimiento de fábrica o eliminación de los datos de la compañía de dispositivos con Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Obtenga información sobre cómo eliminar datos de la compañía de un dispositivo o cómo realizar un restablecimiento de fábrica en el dispositivo."
 keywords: 
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 08/07/2017
+ms.date: 08/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 331ced93f0697f7c76d1356aae32b955602d17a3
-ms.sourcegitcommit: 2ed8d1c39d4b3e3282111f1d758afb3a50f19f8f
+ms.openlocfilehash: 41bfb62f90965288d73948650b6935434c986d92
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Eliminación de dispositivos mediante el restablecimiento de fábrica o de los datos de la compañía
 
@@ -106,7 +106,7 @@ Si el dispositivo está encendido y conectado, un comando de eliminación de dat
 
 ## <a name="delete-devices-from-the-azure-active-directory-portal"></a>Eliminación de dispositivos en el portal de Azure Active Directory
 
-Si se producen problemas de comunicación o faltan dispositivos, es posible que deba eliminar dispositivos de Azure Active Directory (AD). El comando de eliminación no quita un dispositivo de la administración, pero puede usar **Eliminar** para quitar de la consola de Azure los registros de dispositivos que sabe que no son accesibles y que es poco probable que vuelvan a comunicarse con Azure.
+Si se producen problemas de comunicación o faltan dispositivos, es posible que deba eliminar dispositivos de Azure Active Directory (AD). El comando de eliminación no quita un dispositivo de la administración, pero puede usar **Eliminar** para quitar de Azure Portal los registros de dispositivos que sabe que no son accesibles y que es poco probable que vuelvan a comunicarse con Azure.
 
 1.  Inicie sesión en [Azure Active Directory en Azure Portal](http://aka.ms/accessaad) con sus credenciales de administrador. También puede iniciar sesión en el [Portal de Office 365](https://portal.office.com) y, después, seleccionar **Administración** &gt; **Azure AD** mediante el vínculo en el lado izquierdo de la página.
 3.  Si no tiene ninguna, cree una suscripción de Azure. Si tiene una cuenta de pago, no necesitará una tarjeta de crédito ni realizar ningún pago (seleccione el vínculo de suscripción **Registre su suscripción gratuita de Azure Active Directory**).

@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 
 ms.reviewer: vlpetros
 ms.suite: ems
-ms.openlocfilehash: fa70e21b9e9f7adfc508e24bd442a48c834ed7db
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: f4e414f3696c64f8ea450394928aa055ad427afd
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enable-byod-with-intune"></a>Habilitación de BYOD con Intune
 
@@ -48,7 +48,7 @@ Una vez preparado el servicio de Intune, debe cumplir los distintos requisitos d
 
 -   **Dispositivos Android** No es necesario que haga nada para preparar el servicio de Intune para la inscripción de dispositivos Android. Los usuarios pueden [inscribir sus dispositivos Android](/intune-user-help/enroll-your-device-in-intune-android) en la administración mediante la aplicación de portal de empresa que está disponible en Google Play.
 
--   **Equipos y dispositivos Windows Phone** Los dispositivos Windows pueden inscribirse con una configuración adicional. Puede habilitar la inscripción automática para equipos de Windows 10 y dispositivos móviles Windows 10 en Azure Active Directory (AD) Premium para simplificar la experiencia de los usuarios. Si no tiene Azure AD Premium o si necesita admitir Windows 8.1, puede crear [un alias DNS para el servidor de inscripción](windows-enroll.md#enable-windows-enrollment-without-azure-ad-premium) para facilitar la inscripción.
+-   **Equipos y dispositivos Windows Phone** Los dispositivos Windows pueden inscribirse con una configuración adicional. Puede habilitar la inscripción automática para equipos de Windows 10 y dispositivos móviles Windows 10 en Azure Active Directory (AD) Premium para simplificar la experiencia de los usuarios. Si no tiene Azure AD Premium o si necesita admitir Windows 8.1, puede crear [un alias DNS para el servidor de inscripción](windows-enroll.md#simplify-windows-enrollment-without-azure-ad-premium) para facilitar la inscripción.
 
 
 ### <a name="make-sure-that-managed-devices-meet-basic-security-requirements"></a>Asegurarse de que los dispositivos administrados cumplen los requisitos básicos de seguridad
@@ -82,7 +82,7 @@ Intune también le permite administrar e implementar las aplicaciones que ha com
 
 -   [Administrar aplicaciones adquiridas por volumen para dispositivos iOS](vpp-apps-ios.md). Puede comprar varias licencias para aplicaciones de iOS a través del [Programa de Compras por Volumen de Apple para empresas](http://www.apple.com/business/vpp/). Debe configurar una cuenta de PCV de Apple en el sitio web de Apple y cargar el token de PCV de Apple en Intune. De este modo, puede sincronizar la información de compras por volumen con Intune y hacer el seguimiento del uso de aplicaciones compradas por volumen.
 
--   [Administración de aplicaciones adquiridas a través de la Tienda Microsoft para Empresas](windows-store-for-business.md). En la [Tienda Microsoft para Empresas](https://www.microsoft.com/business-store), puede buscar y comprar aplicaciones para su organización, tanto sueltas como por volumen. Si conecta la tienda a Intune, puede administrar aplicaciones compradas por volumen desde la consola de Intune.
+-   [Administración de aplicaciones adquiridas a través de la Tienda Microsoft para Empresas](windows-store-for-business.md). En la [Tienda Microsoft para Empresas](https://www.microsoft.com/business-store), puede buscar y comprar aplicaciones para su organización, tanto sueltas como por volumen. Si conecta la tienda a Intune, puede administrar aplicaciones compradas por volumen desde Azure Portal.
 
 ## <a name="protect-company-data"></a>Proteger los datos de la empresa
 

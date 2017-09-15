@@ -1,6 +1,6 @@
 ---
 title: Novedades de Microsoft Intune
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Descubra las novedades del portal de Intune Azure
 keywords: 
 author: brenduns
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b50856bdc500cab4b206a105275b4842680d4423
-ms.sourcegitcommit: 71cdf99d639530e70dbe48d611d399e52c3150b0
+ms.openlocfilehash: c4787c716f94e95ab98badf924273af5d02751f8
+ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2017
+ms.lasthandoff: 09/12/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novedades de Microsoft Intune
 
@@ -102,7 +102,7 @@ Los usuarios finales ahora pueden usar cuentas diferentes (profesionales o educa
 - Obtenga más información sobre las aplicaciones que admiten [protección de aplicaciones y varias identidades](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) con Intune.
 
 #### <a name="new-settings-to-allow-and-block-apps-on-samsung-knox-standard-devices"></a>Nueva configuración para permitir y bloquear aplicaciones en dispositivos Samsung KNOX Standard
-<!-- 1305423 -->  
+<!-- 1305423 822899-->  
 En esta versión, se ha agregado una nueva [configuración de restricción de dispositivos](device-restrictions-android.md) que permite especificar las listas de aplicaciones siguientes:
  
 - Aplicaciones que los usuarios pueden instalar
@@ -112,7 +112,7 @@ En esta versión, se ha agregado una nueva [configuración de restricción de di
 Puede especificar la aplicación por dirección URL, nombre del paquete o desde la lista de aplicaciones que administra.
 
 #### <a name="new-azure-ad-app-based-conditional-access-policy-ui-link-from-intune"></a>Nuevo vínculo de interfaz de usuario de la directiva de acceso condicional basado en la aplicación de Azure AD desde Intune
-
+<!-- 1016201 -->
 Los administradores de TI ahora pueden establecer directivas condicionales basadas en aplicaciones mediante la nueva interfaz de usuario de directivas de acceso condicional en la carga de trabajo de Azure AD. El acceso condicional basado en la aplicación de la sección de Intune App Protection en Azure Portal por el momento no se moverá y se aplicará en paralelo. También encontrará un práctico vínculo a la interfaz de usuario de la nueva directiva de acceso condicional en la carga de trabajo de Intune.
 
 - Obtenga más información sobre el [acceso condicional basado en la aplicación en Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-technical-reference).
@@ -124,10 +124,10 @@ Los administradores de TI ahora pueden establecer directivas condicionales basad
 Hay una [lista actualizada de nombres DNS y direcciones IP](/intune/network-bandwidth-use) disponibles para la configuración de proxy del firewall.
 
 ### <a name="use-azure-active-directory-for-conditional-access----967947---"></a>Uso de Azure Active Directory para acceso condicional <!-- 967947 -->
-El acceso condicional está disponible en la sección Azure Active Directory de la consola de Azure y proporciona un marco más eficaz y flexible para establecer directivas de aplicaciones en la nube como Office 365 Exchange Online y SharePoint Online.  Use la hoja **Acceso condicional en Azure Active Directory** para configurar directivas en lugar de la consola de Intune clásica. Es necesario volver a crear las directivas existentes de la consola de Intune clásica en la consola de Azure. Para obtener más información, consulte [Creación de directivas de acceso condicional de Azure AD](/intune/conditional-access-exchange-create.md#create-azure-ad-conditional-access-policies-in-intune-azure-preview).
+El acceso condicional está disponible en la sección Azure Active Directory de Azure Portal y proporciona un marco más eficaz y flexible para establecer directivas de aplicaciones en la nube como Office 365 Exchange Online y SharePoint Online.  Use la hoja **Acceso condicional en Azure Active Directory** para configurar directivas en lugar de la consola de Intune. Es necesario volver a crear las directivas existentes de la consola de Intune en Azure Portal. Para obtener más información, consulte [Creación de directivas de acceso condicional de Azure AD](/intune/conditional-access-exchange-create.md#create-azure-ad-conditional-access-policies-in-intune-azure-preview).
 
 ### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>Acceso directo a los escenarios de inscripción de Apple <!--951869-->
-Para las cuentas de Intune creadas después de enero de 2017, Intune habilitó el acceso directo a los escenarios de inscripción de Apple mediante la carga de trabajo de inscripción de dispositivos en Azure Portal. Anteriormente, la vista previa de inscripción de Apple solo era accesible desde los vínculos al portal clásico de Intune. Las cuentas de Intune creadas antes de enero de 2017 requieren una migración única antes de que estas características estén disponibles en Azure. Aún no se ha anunciado la programación para la migración, pero la información estará disponible tan pronto como sea posible. Se recomienda encarecidamente crear una cuenta de prueba para probar la nueva experiencia si su cuenta no tiene acceso a Azure Portal.
+Para las cuentas de Intune creadas después de enero de 2017, Intune habilitó el acceso directo a los escenarios de inscripción de Apple mediante la carga de trabajo de inscripción de dispositivos en Azure Portal. Anteriormente, la vista preliminar de inscripción de Apple solo era accesible desde los vínculos del portal clásico de Intune. Las cuentas de Intune creadas antes de enero de 2017 requieren una migración única antes de que estas características estén disponibles en Azure. Aún no se ha anunciado la programación para la migración, pero la información estará disponible tan pronto como sea posible. Se recomienda encarecidamente crear una cuenta de prueba para probar la nueva experiencia si su cuenta no tiene acceso a Azure Portal.
 
 ### <a name="administration-roles-being-replaced-in-azure-portal"></a>Roles de administración que se reemplazan en el Portal de Azure
 Los roles de administración de aplicaciones móviles (MAM) existentes (colaborador, propietario y de solo lectura) usados en el portal clásico de Intune (Silverlight) se reemplazan por un conjunto completo de nuevos controles de administración basada en roles (RBAC) en el Portal de Intune Azure. Cuando haya migrado a Azure Portal, tendrá que reasignar estos nuevos roles de administración a los administradores. Para obtener más información sobre RBAC y los nuevos roles, vea [Roles de Intune (RBAC) para Microsoft Intune](/intune/role-based-access-control).
