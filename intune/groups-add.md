@@ -1,6 +1,6 @@
 ---
 title: "Establecer restricciones de inscripción en Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Restrinja las inscripciones por plataforma y establezca un límite de inscripciones de dispositivos en Intune. \""
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: f0a2b858-a824-4598-ab81-bdd8e62ac3b3
 ms.reviewer: amyros
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c8b945cf1722d25a9242a4a7776d023a58fe0036
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: b74faadfc93485023ea71f42b703f3b102aaa5b3
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="add-groups-in-intune"></a>Agregar grupos en Intune
 Intune usa grupos de Azure Active Directory (AD) para administrar dispositivos y usuarios. Como administrador de Intune, puede configurar los grupos de modo que satisfagan sus necesidades organizativas. Cree grupos para organizar a los usuarios o dispositivos por ubicación geográfica, departamento o características de hardware. Use los grupos para administrar tareas a escala. Por ejemplo, puede establecer directivas para muchos usuarios o implementar aplicaciones para un conjunto de dispositivos.
@@ -33,8 +33,8 @@ Puede agregar los siguientes tipos de grupos:
 ## <a name="add-a-new-group"></a>Agregar un grupo nuevo
 
 Use los siguientes pasos para crear un grupo.
-1. En el portal de Intune, vaya a **Grupos** y luego elija **Nuevo grupo** en la hoja **Todos los grupos**.
-  ![Captura de pantalla del portal de Intune con la opción Nuevo grupo seleccionada](./media/groups-add-new.png)
+1. En Azure Portal, vaya a **Grupos** y luego elija **Nuevo grupo** en la hoja **Todos los grupos**.
+  ![Captura de pantalla de Azure Portal con la opción Nuevo grupo seleccionada](./media/groups-add-new.png)
 2. Especifique el **Nombre** y la **Descripción** del nuevo grupo. Estas propiedades solo aparecen en el portal de administración y no se muestran a los usuarios.
 
 3. Elija **Tipo de pertenencia**:

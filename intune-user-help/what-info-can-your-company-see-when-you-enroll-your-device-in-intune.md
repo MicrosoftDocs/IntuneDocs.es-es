@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/21/2017
+ms.date: 09/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,34 +15,36 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: 88f1d4b3e54a27be86a542e1265ea9606498ab4f
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8da134d768333fb03cc87ab38230f5f022fee2e1
+ms.sourcegitcommit: 1afff0fd464ece84ffea6bc0c71c78215d59e696
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/08/2017
 ---
-# <a name="what-information-can-my-company-see-when-i-enroll-my-device-in-intune"></a>¿Qué información puede ver mi empresa cuando inscribo mi dispositivo en Intune?
+# <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>¿Qué información puede ver mi empresa cuando inscribo mi dispositivo?
 
-Cuando inscribe un dispositivo en la administración, proporciona al departamento de TI de la empresa permiso para acceder a fragmentos de información del dispositivo con el fin de ayudar a proteger los datos corporativos que haya en él.
+Cuando inscribe un dispositivo en la administración, proporciona a la empresa permiso para ver fragmentos de información del dispositivo con el fin de ayudar a proteger los datos corporativos que haya en él.
 
-**Lo que el personal de TI no puede ver**
+**Qué no puede ver nunca su empresa**
 
 - Historial de llamadas y exploración web
--   Ubicación
-- Correo electrónico personal
-- Mensajes de texto
+- Mensajes de texto y de correo electrónico
 - Contactos
--   Contraseñas de las cuentas personales
-- Eventos del calendario
+- Calendario
+-   Contraseñas
 - Imágenes, ni siquiera lo que hay en la aplicación de fotos ni en el álbum de cámara
 
-**Lo que el personal de TI puede ver**
+**Qué puede ver siempre su empresa**
 
--   Modelo
--   Número de serie
--   Versión del sistema operativo
--   Nombres de aplicación
--   Propietario
--   Nombre del dispositivo
--   Fabricante (en el caso de dispositivos no fabricados por Apple)
--   Número telefónico (para dispositivos de trabajo, el número completo. Para dispositivos personales, solo los cuatro últimos dígitos).
+- Modelo de dispositivo, como iPhone 7
+- Fabricante, como Microsoft
+- Sistema operativo, como Android 7.1
+- Nombres de aplicaciones, como Microsoft Word
+- Propietario del dispositivo
+- Nombre del dispositivo
+- Número de serie
+
+**Lo que su empresa podría ver**
+
+-  Número de teléfono: en el caso de los dispositivos propiedad de la **empresa**, se puede ver el número de teléfono completo. En el caso de los dispositivos **personales**, únicamente son visibles para la empresa los últimos cuatro dígitos del número de teléfono. Puede ver el **Tipo de propiedad** de cada dispositivo abriendo la página **Detalles del dispositivo** correspondiente. 
+-  Ubicación: su empresa nunca puede ver la ubicación de su dispositivo, excepto si tiene un dispositivo iOS que está supervisado y se ha perdido. [¿Cómo puedo saberlo?](https://go.microsoft.com/fwlink/?linkid=853816)

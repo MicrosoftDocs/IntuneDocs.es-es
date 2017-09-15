@@ -1,6 +1,6 @@
 ---
 title: "Asignación de aplicaciones a dispositivos Android for Work"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Utilice este tema para sincronizar y después asignar aplicaciones para dispositivos Android for Work desde Google Play for Work Store."
 keywords: 
 author: mattbriggs
@@ -15,18 +15,18 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bbe5be4afead5d80f38e2ef56d12c0b26351dfd8
-ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
+ms.openlocfilehash: 803f1475a220e52a0f7d8a41d58f0a5337ff6555
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Asignación de aplicaciones para dispositivos Android for Work con Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Puede asignar aplicaciones para dispositivos Android for Work de forma diferente a cuando las asigna en dispositivos Android estándar. Todas las aplicaciones que instale en Android for Work proceden de Google Play for Work Store. Inicie sesión en la tienda, busque las aplicaciones que desee y apruébelas.
-La aplicación aparecerá en el nodo **Aplicaciones con licencia** del portal Intune. Desde aquí, puede administrar la asignación de la aplicación de la misma manera que asignaría cualquier otra aplicación.
+La aplicación aparecerá en el nodo **Aplicaciones con licencia** de Azure Portal. Desde aquí, puede administrar la asignación de la aplicación de la misma manera que asignaría cualquier otra aplicación.
 
 Además, si ha creado sus propias aplicaciones de línea de negocio (LOB), puede asignarlas como sigue:
 - Suscríbase a una cuenta de Google Developer, que le permite publicar las aplicaciones en un área privada en Google Play Store.
@@ -34,7 +34,7 @@ Además, si ha creado sus propias aplicaciones de línea de negocio (LOB), puede
 
 ## <a name="before-you-start"></a>Antes de empezar
 
-Asegúrese de que ha configurado Intune y Android for Work para que trabajen juntos en la carga de trabajo **Inscripción de dispositivo** del portal Intune.
+Asegúrese de que ha configurado Intune y Android for Work para que trabajen juntos en la carga de trabajo **Inscripción de dispositivo** de Azure Portal.
 
 ## <a name="synchronize-an-app-from-the-google-play-for-work-store"></a>Sincronización de una aplicación desde Google Play for Work Store
 

@@ -1,6 +1,6 @@
 ---
 title: "Inscribir dispositivos: Administrador de inscripción de dispositivos"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Use la cuenta del administrador de inscripciones de dispositivos para inscribir dispositivos en Intune. "
 keywords: 
 author: nathbarn
@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 204df4648f1d79167e8eb5941d91b48d65b90704
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: 5caf60d0512a33c0c88f4305b1a9eb189112ba02
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>Inscripción de dispositivos mediante el administrador de inscripción de dispositivos
 
@@ -36,7 +36,7 @@ Los usuarios deben existir en Azure Portal para agregarlos como administradores 
 
 Un restaurante quiere proporcionar 50 tabletas de punto de venta para los camareros y monitores de pedidos para el personal de cocina. Los empleados nunca necesitan acceder a los datos de la empresa ni iniciar sesión como usuarios. El administrador de Intune crea una cuenta de administrador de inscripción de dispositivos y agrega un supervisor de restaurante a la cuenta DEM y le proporciona capacidades DEM. El supervisor puede inscribir ahora los 50 dispositivos de tabletas mediante las credenciales DEM.
 
-Solo los usuarios de la consola Intune pueden ser administradores de inscripción de dispositivos. El usuario administrador de inscripción de dispositivos no puede ser un administrador de Intune.
+Solo los usuarios de Azure Portal pueden ser administradores de inscripción de dispositivos. El usuario administrador de inscripción de dispositivos no puede ser un administrador de Intune.
 
 El usuario DEM puede:
 
@@ -95,5 +95,5 @@ La eliminación de un administrador de inscripción de dispositivos no afecta a 
 
 ## <a name="view-the-properties-of-a-device-enrollment-manager"></a>Visualización de las propiedades de un administrador de inscripción de dispositivos
 
-1. En el portal de Intune, elija **Inscripción de dispositivos** y luego elija **Administradores de inscripción de dispositivos**.
+1. En Azure Portal, elija **Inscripción de dispositivos** y luego elija **Administradores de inscripción de dispositivos**.
 2. En la hoja **Administradores de inscripción de dispositivos**, haga clic con el botón derecho en el usuario DEM y seleccione **Propiedades**.

@@ -12,17 +12,17 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 2a8754d684896f2c945e11ed0fc2577114459069
-ms.sourcegitcommit: 4034ac474bfed358270a32459a2cf2fe02f44e45
+ms.openlocfilehash: 3567f26053a235c5a5af761829f043e0db2f79b5
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Firma de aplicaciones de línea de negocio para que se puedan implementar en dispositivos Windows con Intune
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Como administrador de Intune, puede implementar aplicaciones de línea de negocio (LOB) en dispositivos Windows y Windows 10 Mobile, incluida la aplicación del Portal de empresa. Para implementar aplicaciones .appx o .xap en dispositivos móviles Windows 10 y Windows 10, o para implementar cualquier aplicación LOB en dispositivos Windows 8.1 o Windows Phone 8.1, debe obtener un **certificado de firma de código móvil empresarial de Symantec** . El certificado de Symantec es de confianza para estas aplicaciones en los dispositivos Windows correspondientes. Puede usar su propia entidad de certificación para aplicaciones de Windows 10 y aplicaciones "universales". Este certificado se requiere para:
+Como administrador de Intune, puede implementar aplicaciones de línea de negocio (LOB) en dispositivos Windows y Windows 10 Mobile, incluida la aplicación del Portal de empresa. Para implementar aplicaciones .appx o .xap en dispositivos móviles Windows 10 y Windows 10, o para implementar cualquier aplicación LOB en dispositivos Windows 8.1 o Windows Phone 8.1, debe obtener un **certificado de firma de código móvil empresarial de Symantec **. El certificado de Symantec es de confianza para estas aplicaciones en los dispositivos Windows correspondientes. Puede usar su propia entidad de certificación para aplicaciones de Windows 10 y aplicaciones "universales". Este certificado se requiere para:
 
 -   Firmar la aplicación del Portal de empresa para la implementación en equipos Windows, dispositivos Windows 10 Mobile y dispositivos Windows Phone
 
@@ -50,12 +50,12 @@ Los pasos que figuran a continuación le ayudarán a obtener los certificados ne
 
     ![Exportar el certificado de firma](./media/wit-walk-cert2.gif)
 
-    En el **Asistente para exportar certificado**, seleccione **Sí, exportar la clave privada** y, a continuación, haga clic en **Siguiente**. Seleccione **Intercambio de información personal: PKCS #12 (.PFX)**  y active **Si es posible, incluir todos los certificados en la ruta de acceso de certificación**. Complete el asistente. Para obtener más información, consulte [Exportar un certificado con la clave privada](http://go.microsoft.com/fwlink/?LinkID=203031).
+    En el **Asistente para exportar certificado**, seleccione **Sí, exportar la clave privada** y, a continuación, haga clic en **Siguiente**. Seleccione **Intercambio de información personal: PKCS #12 (.PFX) ** y active **Si es posible, incluir todos los certificados en la ruta de acceso de certificación**. Complete el asistente. Para obtener más información, consulte [Exportar un certificado con la clave privada](http://go.microsoft.com/fwlink/?LinkID=203031).
 
 6.  **Cargar la aplicación en Intune**<br>
     Cargue el archivo de la aplicación firmada y el certificado de firma de código para que la aplicación esté disponible para los usuarios finales.
 
-    1.  En el portal de Intune, haga clic en **Administración** &gt; **Windows Phone**.
+    1.  En Azure Portal, haga clic en **Administración** &gt; **Windows Phone**.
 
     2.  Haga clic en **Cargar archivo de aplicación firmado** e inicie sesión con su identificador de administrador de Intune.
 
@@ -136,7 +136,7 @@ El certificado de Symantec que se usa para implementar aplicaciones móviles de 
 
 1.  Firme la última versión de su aplicación de línea de negocio.
 
-2.  Abra la consola de Intune y vaya a **Administración** &gt; **Administración de dispositivos móviles** &gt; **Windows Phone** y haga clic en **Cargar aplicación firmada**.
+2.  Abra Azure Portal y vaya a **Administración** &gt; **Administración de dispositivos móviles** &gt; **Windows Phone** y haga clic en **Cargar aplicación firmada**.
 
 3.  Cargue el Portal de empresa recién firmado. Necesitará el archivo SSP.xap recién firmado y el nuevo archivo .PFX que recibió de Symantec o el token de inscripción de la aplicación que se creó con este nuevo archivo .PFX.
 

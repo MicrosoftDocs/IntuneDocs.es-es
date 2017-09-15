@@ -1,6 +1,6 @@
 ---
 title: "Configuración personalizada de perfil de Intune para Android for Work"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: Aprenda a crear configuraciones de perfil personalizadas de Intune para dispositivos de Android for Work.
 keywords: 
 author: robstackmsft
@@ -15,11 +15,11 @@ ms.assetid: 4724d6e5-05e5-496c-9af3-b74f083141f8
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b48fc7bd784b5d6d531ef5bf28fe835e394b106
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 47af10ea2eb04b5e5a470aff36d45d41105feb15
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="create-intune-custom-profile-settings-for-android-for-work-devices"></a>Creación de configuración personalizada de perfil de Intune para dispositivos de Android for Work
 
@@ -32,7 +32,7 @@ Esta funcionalidad está pensada para que se puedan asignar las opciones de conf
 1. Siga las instrucciones que se indican en [Configuración personalizada de dispositivos](custom-settings-configure.md) para comenzar.
 2. En la hoja **Configuración OMA-URI personalizada**, elija **Agregar** para agregar un nuevo valor.
 3. En la hoja **Agregar fila**, configure lo siguiente:
-    - **Name**: escriba un nombre único para la configuración personalizada de Android for Work que permita identificarla en el portal de Intune.
+    - **Name**: escriba un nombre único para la configuración personalizada de Android for Work que permita identificarla en Azure Portal.
     - **Description**: proporcione una descripción que ofrezca una visión general de la directiva personalizada de Android y otra información relevante que le ayude a encontrarla.
     - **OMA-URI**: escriba la configuración OMA-URI para la que quiere suministrar un valor.
     - **Tipo de datos**: seleccione el tipo de datos en el que especificará este valor OMA-URI. Elija entre **Cadena**, **Cadena (archivo XML)**, **Fecha y hora**, **Entero**, **Punto flotante**, **Booleano** o **Base64 (archivo)**.

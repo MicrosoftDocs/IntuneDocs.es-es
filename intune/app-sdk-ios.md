@@ -14,11 +14,11 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 62478796f1f24464503a0d564e0d8972dd04f8b3
-ms.sourcegitcommit: 10e3ab2aeb79a1fb2243bef2748ccc003fdd4cc7
+ms.openlocfilehash: 0485f7c93baec13c6e0a26f391f159006fa530ec
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/02/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guía para desarrolladores acerca del SDK de aplicaciones de Microsoft Intune para iOS
 
@@ -468,7 +468,7 @@ WebViewHandledURLSchemes | Matriz de cadenas | Especifica los esquemas de direcc
 > Si la aplicación se va a publicar en la Tienda de aplicaciones, `MAMPolicyRequired` debe establecerse en "NO", según los estándares de la Tienda de aplicaciones.
 
 ## <a name="enabling-mam-targeted-configuration-for-your-ios-applications"></a>Habilitar la configuración de destino de MAM para las aplicaciones iOS
-La configuración de destino de MAM permite que una aplicación reciba datos de configuración mediante Intune App SDK. El formato y las variantes de estos datos deben definirse y comunicarse a los clientes de Intune mediante el desarrollador o el propietario de la aplicación. Los administradores de Intune pueden dirigirse e implementar los datos de configuración mediante la consola de Azure de Intune. A partir de Intune App SDK para iOS (v 7.0.1), a las aplicaciones que estén participando en la configuración de destino de MAM se les pueden proporcionar datos de la configuración de destino de MAM mediante el servicio MAM. Los datos de configuración de la aplicación se insertan a través del servicio MAM directamente en la aplicación, y no a través del canal de MDM. Intune App SDK proporciona una clase para tener acceso a los datos recuperados de estas consolas. Considere lo siguiente como requisitos previos: <br>
+La configuración de destino de MAM permite que una aplicación reciba datos de configuración mediante Intune App SDK. El formato y las variantes de estos datos deben definirse y comunicarse a los clientes de Intune mediante el desarrollador o el propietario de la aplicación. Los administradores de Intune pueden dirigirse e implementar los datos de configuración mediante Azure Portal de Intune. A partir de Intune App SDK para iOS (v 7.0.1), a las aplicaciones que estén participando en la configuración de destino de MAM se les pueden proporcionar datos de la configuración de destino de MAM mediante el servicio MAM. Los datos de configuración de la aplicación se insertan a través del servicio MAM directamente en la aplicación, y no a través del canal de MDM. Intune App SDK proporciona una clase para tener acceso a los datos recuperados de estas consolas. Considere lo siguiente como requisitos previos: <br>
 * La aplicación necesita inscribirse en MAM-WE antes de que tenga acceso a la interfaz de usuario de la configuración de destino de MAM. Para obtener más información sobre MAM-WE, vea [Directiva de protección de aplicaciones sin la inscripción de dispositivos en la guía de Intune App SDK](https://docs.microsoft.com/en-us/intune/app-sdk-ios#app-protection-policy-without-device-enrollment).
 * Incluya ```IntuneMAMAppConfigManager.h``` en el archivo de origen de la aplicación.
 * Llame a ```[[IntuneMAMAppConfig instance] appConfigForIdentity:]``` para obtener el objeto de configuración de la aplicación.

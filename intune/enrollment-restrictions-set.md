@@ -1,6 +1,6 @@
 ---
 title: "Establecer restricciones de inscripción en Intune"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Restrinja las inscripciones por plataforma y establezca un límite de inscripciones de dispositivos en Intune. \""
 keywords: 
 author: nathbarn
@@ -15,17 +15,17 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 47dc35e5b50670027a85f395f674345b934d377b
-ms.sourcegitcommit: 7674efb7de5ad54390801165364f5d9c58ccaf84
+ms.openlocfilehash: 06c0c58992a2119aff7fd5be54ae90be886d2a53
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/05/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="set-enrollment-restrictions"></a>Establecer restricciones de inscripción
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Como administrador de Intune, puede determinar qué dispositivos pueden inscribirse en la administración con Intune. Use el portal de Intune para establecer las siguientes restricciones para la inscripción de dispositivos:
+Como administrador de Intune, puede determinar qué dispositivos pueden inscribirse en la administración con Intune. Use Azure Portal para establecer las siguientes restricciones para la inscripción de dispositivos:
 
 - Número máximo de dispositivos inscritos
 - Plataformas de dispositivo que se pueden inscribir:
@@ -68,7 +68,7 @@ Las restricciones de inscripción predeterminadas se aplican a todos los usuario
 1. Inicie sesión en el portal de Azure.
 2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
 3. Seleccione **Inscripción de dispositivos** > **Restricciones de inscripción**.
-4. En el portal de Intune, pulse **Inscripción de dispositivos** y **Restricciones de inscripción**.
+4. En Azure Portal, elija **Inscripción de dispositivos** y **Restricciones de inscripción**.
 5. Pulse **Restricciones de inscripción** > **Restricciones de límite de dispositivos**.
 6. En **Todos los usuarios**, seleccione **Límite de dispositivos**. Especifique el número máximo de dispositivos inscritos por usuario.  
 ![Captura de pantalla de la hoja de restricciones de límite de dispositivos con las restricciones de límite de dispositivos.](./media/device-restrictions-limit.png)

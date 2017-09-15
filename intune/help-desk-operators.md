@@ -1,6 +1,6 @@
 ---
 title: "Portal de solución de problemas del departamento de soporte técnico"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "El personal del departamento de soporte técnico usa el portal de solución de problemas para solucionar los problemas técnicos de los usuarios"
 keywords: 
 author: NathBarn
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: c932781f988d63395b98452a4f4739e0bce1d9c8
-ms.sourcegitcommit: ce8a1f0f4e95444949556600d1837937b6efd769
+ms.openlocfilehash: 14b47727428fcd6a16f9960e21f70ee64c7757d1
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>Uso del portal de solución de problemas para ayudar a los usuarios
 
@@ -35,14 +35,14 @@ Por ejemplo, cuando un usuario se pone en contacto con el soporte técnico por u
 -   Error de instalación de la aplicación
 
 ## <a name="add-help-desk-operators"></a>Incorporación de operadores del departamento de soporte técnico
-Como administrador de Intune, puede asignar el rol Operador del departamento de soporte técnico a un grupo de usuarios. Los miembros de ese grupo pueden usar el portal de administración para solucionar los problemas de los usuarios. Cada operador del departamento de soporte técnico debe tener una licencia de Intune para tener acceso al portal de Intune. Obtenga información sobre cómo [asignar licencias de Intune](licenses-assign.md).
+Como administrador de Intune, puede asignar el rol Operador del departamento de soporte técnico a un grupo de usuarios. Los miembros de ese grupo pueden usar Azure Portal para solucionar los problemas de los usuarios. Cada operador del departamento de soporte técnico debe tener una licencia de Intune para tener acceso a Azure Portal. Obtenga información sobre cómo [asignar licencias de Intune](licenses-assign.md).
 
 Para agregar usuarios al departamento de soporte técnico:
 1. [Agregue usuarios a Intune](users-add.md) si es necesario.
 2. [Cree un grupo de departamento de soporte técnico](groups-add.md) y agregue usuarios al grupo.
 3. [Asigne el rol Operador del departamento de soporte técnico de RBAC](role-based-access-control.md#built-in-roles).
 
-  ![Captura de pantalla del portal de Intune en la que se muestran los roles de Intune resaltados y una lista de roles integrados, incluido el rol Operador del departamento de soporte técnico](./media/help-desk-user-add.png) También puede [crear un rol personalizado](role-based-access-control.md#custom-roles) que puede modificar para dar acceso a los operadores del departamento de soporte técnico.  Los operadores del departamento de soporte técnico requieren los permisos siguientes para ayudar a solucionar los problemas de los usuarios:
+  ![Captura de pantalla de Azure Portal en la que se muestran los roles de Intune resaltados y una lista de roles integrados, incluido el rol Operador del departamento de soporte técnico](./media/help-desk-user-add.png) También puede [crear un rol personalizado](role-based-access-control.md#custom-roles) que puede modificar para dar acceso a los operadores del departamento de soporte técnico.  Los operadores del departamento de soporte técnico requieren los permisos siguientes para ayudar a solucionar los problemas de los usuarios:
     - MobileApps: Lectura
     - ManagedApps: Lectura
     - ManagedDevices: Lectura

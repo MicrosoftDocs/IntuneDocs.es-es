@@ -1,6 +1,6 @@
 ---
 title: "Administración de aplicaciones desde la Tienda Microsoft para Empresas"
-titleSuffix: Intune on Azure
+titlesuffix: Azure portal
 description: "Obtenga información sobre cómo puede sincronizar aplicaciones en Intune desde la Tienda Microsoft para Empresas y luego asignarlas y realizar un seguimiento de ellas."
 keywords: 
 author: robstackmsft
@@ -15,18 +15,18 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f5f1b49d0785682f72d208287098466934ff0e1
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: 649766b26a1061c4bce11235c04dcbe8570fcdc4
+ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/09/2017
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Cómo administrar las aplicaciones adquiridas a través de la Tienda Microsoft para Empresas con Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 
-En la [Tienda Microsoft para Empresas](https://www.microsoft.com/business-store), puede buscar y comprar aplicaciones para su organización, tanto sueltas como por volumen. Si conecta la tienda a Microsoft Intune, puede administrar las aplicaciones adquiridas por volumen desde el portal de Intune. Por ejemplo:
+En la [Tienda Microsoft para Empresas](https://www.microsoft.com/business-store), puede buscar y comprar aplicaciones para su organización, tanto sueltas como por volumen. Si conecta la tienda a Microsoft Intune, puede administrar las aplicaciones adquiridas por volumen desde Azure Portal. Por ejemplo:
 * Puede sincronizar la lista de aplicaciones que ha adquirido en la tienda con Intune.
 * Las aplicaciones que se sincronizan aparecen en la consola de administración de Intune, y puede asignarlas igual que el resto de las aplicaciones.
 * Puede controlar el número de licencias disponibles y las que se usan en la consola de administración de Intune.
@@ -64,7 +64,7 @@ Ya puede continuar y configurar la sincronización en la consola de Intune.
 1. En la hoja **Aplicaciones móviles**, seleccione **Configuración** > **Tienda Microsoft para Empresas**.
 2. Haga clic en **Habilitar**.
 3. Si aún no lo ha hecho, haga clic en el vínculo para registrarse en la Tienda Microsoft para Empresas y asocie la cuenta como se ha descrito anteriormente.
-5. En la lista desplegable **Idioma**, seleccione el idioma en el que las aplicaciones de la Tienda Microsoft para Empresas se muestran en el portal de Intune. Independientemente del idioma en el que se muestren, se instalan en el idioma del usuario final si esa versión está disponible.
+5. En la lista desplegable **Idioma**, seleccione el idioma en el que las aplicaciones de la Tienda Microsoft para Empresas se muestran en Azure Portal. Independientemente del idioma en el que se muestren, se instalan en el idioma del usuario final si esa versión está disponible.
 6. Haga clic en **Sincronizar** para que las aplicaciones que ha adquirido en la Microsoft Store aparezcan en Intune.
 
 ## <a name="synchronize-apps"></a>Sincronizar aplicaciones
