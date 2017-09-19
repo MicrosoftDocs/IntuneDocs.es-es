@@ -5,7 +5,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 08/14/2017
+ms.date: 9/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 51e53e28-5c34-4d0f-a4b1-6390a337514c
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a08296770ee3a326411d3267705ed6a912ab17bd
-ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
+ms.openlocfilehash: 040ce88c47eb12bbe9b228189d90ca422e5185e7
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Creación e implementación de una directiva de protección de aplicaciones de Windows Information Protection (WIP) con Intune
 
@@ -35,13 +35,6 @@ Hablemos sobre algunos conceptos que aparecen al agregar una directiva de WIP.
 -   **Aplicaciones permitidas**: estas son las aplicaciones que deben cumplir esta directiva.
 
 -   **Aplicaciones exentas**: estas aplicaciones están exentas del cumplimiento de esta directiva y pueden acceder a los datos corporativos sin restricciones.
-
-> [!IMPORTANT]  
-> Intune recomienda agregar la aplicación del Portal de empresa a la lista de exenciones para que la aplicación funcione correctamente. Para ello, agregue la siguiente **Aplicación de la Tienda** a la lista de **Aplicaciones exentas**:  
->   - Nombre: Portal de empresa  
->   - Publicador: CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US  
->   - Nombre del producto: Microsoft.CompanyPortal  
-
 
 ### <a name="types-of-apps"></a>Tipos de aplicaciones
 

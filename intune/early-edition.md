@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 31c3d3750aadbe8d302713f081f01f7c51d8ce96
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 0ac0d1fd2f618339f847201f333d3f32561ca6b1
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---september-2017"></a>La edición anticipada de Microsoft Intune: septiembre de 2017
 
@@ -35,10 +35,10 @@ Esta página se actualiza periódicamente. Compruebe si hay actualizaciones adic
 ## What's coming to Intune in the Azure portal  
 ## What's coming to Intune apps
 ## Notices
-
+   
 -->
 
-
+  
 
 ## <a name="intune-in-the-azure-portal"></a>Intune en el portal de Azure
 
@@ -167,7 +167,7 @@ Puede tener varios roles de servidor de acceso de cliente (CAS) para el conector
 El módulo de administración de System Center Operations Manager para Exchange Connector está disponible para ayudarle a analizar los registros de Exchange Connector. Este módulo de administración le proporciona distintas maneras de supervisar Intune cuando tenga que resolver problemas.
 
 ### <a name="end-of-support-for-ios-80----1164477---"></a>Fin de la compatibilidad con iOS 8.0 <!---1164477--->
-Las aplicaciones administradas y la aplicación Portal de empresa para iOS exigirán iOS 9.0 y versiones posteriores para acceder a recursos de empresa. Los dispositivos que no estén actualizados antes de septiembre de este año ya no podrán acceder a esas aplicaciones ni al Portal de empresa. En diciembre no podrán acceder a la totalidad de los recursos de empresa, incluido el correo electrónico. 
+Las aplicaciones administradas y la aplicación Portal de empresa para iOS exigirán iOS 9.0 y versiones posteriores para acceder a recursos de empresa. Los dispositivos que no estén actualizados antes de septiembre de este año ya no podrán acceder a esas aplicaciones ni al Portal de empresa.  
 
 ### <a name="end-of-support-for-android-43-and-lower----1171127-1326920----"></a>Fin de la compatibilidad con Android 4.3 y anterior <!---1171127, 1326920 --->
 Las aplicaciones administradas y la aplicación Portal de empresa para Android exigirán Android 4.4 y versiones posteriores para acceder a recursos de empresa. Los dispositivos que no estén actualizados antes del comienzo de octubre ya no podrán acceder a esas aplicaciones ni al Portal de empresa. En diciembre, todos los dispositivos inscritos serán eliminados, lo que provocará su pérdida de acceso a los recursos de empresa. Si está usando directivas de protección de aplicaciones sin MDM, las aplicaciones no recibirán actualizaciones y la calidad de su experiencia empeorará con el tiempo.

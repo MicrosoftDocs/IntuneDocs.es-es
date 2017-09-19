@@ -115,7 +115,7 @@
     - name: Configurar Intune
       href: setup-steps.md
       items:
-        - name: Requisitos previos
+        - name: Configuraciones admitidas
           href: supported-devices-browsers.md
           items:
             - name: Uso de ancho de banda de red
