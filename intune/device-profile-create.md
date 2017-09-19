@@ -3,8 +3,8 @@ title: "Creación de perfiles de configuración de dispositivos de Intune"
 titlesuffix: Azure portal
 description: "Aprenda a crear perfiles de configuración de dispositivos de Intune."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
 ms.date: 05/16/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5c23d33bde16ada61b6164bb560a30b81cab0020
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: ab7a2f905a7eec33204516e07f0a5d2cda4e1d95
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="how-to-create-device-configuration-profiles-in-microsoft-intune"></a>Creación de perfiles de configuración de dispositivos en Microsoft Intune
 

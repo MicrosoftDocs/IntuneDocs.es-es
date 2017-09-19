@@ -2,8 +2,8 @@
 title: "Configuración de directivas de iOS"
 description: "Cree directivas que controlen la configuración y las características en los dispositivos iOS que administra con Intune."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 ms.date: 07/11/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8036dbbb6486d06fa46f7f96199055b9ca7a398c
-ms.sourcegitcommit: fb17b59f4aa2b994b149fcc6d32520f74b0de6a5
+ms.openlocfilehash: a05b5221ac282bea7c409e96216390d86339bc8a
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="ios-policy-settings-in-microsoft-intune"></a>Configuración de directivas de iOS en Microsoft Intune
 

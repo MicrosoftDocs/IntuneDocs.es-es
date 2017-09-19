@@ -3,8 +3,8 @@ title: "Administración de aplicaciones y libros comprados por volumen con Intun
 titlesuffix: Azure portal
 description: "Obtenga información sobre cómo puede usar Intune para administrar y supervisar el uso de aplicaciones y libros comprados por volumen en tiendas\"."
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
 ms.date: 07/03/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 85b07f57-661a-4bc8-87d2-7b446d5cf4d6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76f6cedf638a5e1957a35da584ecf275afd7cd17
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 358e98d3e0183e89b4083387350ee01447ba0fa9
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="manage-volume-purchased-apps-and-books-with-microsoft-intune"></a>Administración de aplicaciones y libros comprados por volumen con Microsoft Intune
 
