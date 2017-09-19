@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/16/2017
+ms.date: 09/15/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d7a51094851af8c3b6d872300cd9b23e845c6494
-ms.sourcegitcommit: 2ee1e8248814d74cef80b609a8e43f59fa0b2618
+ms.openlocfilehash: d553f62ed2ee1c9e5a6b9121b766e6e427d06bf7
+ms.sourcegitcommit: 75cea2402a3726c72b12df6111f6d3ee93c852bf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/17/2017
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Solución de problemas con la inscripción de dispositivos en Intune
 
@@ -370,7 +370,14 @@ Se agregarán pronto ejemplos sobre lo que debe buscar en estos archivos de regi
 ### <a name="other-ios-enrollment-errors"></a>Otros errores de inscripción de iOS
 Encontrará una lista de errores de inscripción de iOS en la documentación de usuario del dispositivo, en [You see errors while trying to enroll your device in Intune](/intune-user-help/using-your-iOS-or-macOS-device-with-intune) (Ve errores al intentar inscribir su dispositivo en Intune).
 
-## <a name="pc--issues"></a>Problemas del equipo
+## <a name="pc-issues"></a>Problemas del equipo
+
+
+|Mensaje de error|Problema|Solución|
+|---|---|---|
+|**El administrador de TI debe asignar una licencia para el acceso**<br>El administrador de TI no le ha concedido acceso para usar esta aplicación. Solicite ayuda al administrador de TI o vuelva a intentarlo más tarde.|El dispositivo no se puede inscribir porque la cuenta del usuario no tiene la licencia necesaria.|Antes de que los usuarios puedan inscribir los dispositivos, deben tener asignada la licencia necesaria. Este mensaje significa que tienen el tipo de licencia incorrecto para la entidad de administración de dispositivos móviles designada. Por ejemplo, si Intune se ha designado como la entidad de administración de dispositivos móviles y se usa una licencia de System Center 2012 R2 Configuration Manager, verá este error.<br>Consulte información sobre cómo [asignar licencias de Intune a las cuentas de usuario](https://docs.microsoft.com/intune/licenses-assign).|
+
+
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>El equipo ya está inscrito. Error hr 0x8007064c
 **Problema:** la inscripción produce un error con el mensaje **The machine is already enrolled** (El equipo ya está inscrito). El registro de inscripción muestra el error **hr 0x8007064c**.
@@ -386,7 +393,7 @@ Esto puede deberse a que el equipo se inscribió anteriormente o a que tiene la 
 1. Haga doble clic en **Certificados**, seleccione **Cuenta de equipo** > **Siguiente** y, luego, **Equipo local**.
 1. Haga doble clic en **Certificados (equipo local)** y seleccione **Certificados personales**.
 1. Busque el certificado de Intune emitido por Sc_Online_Issuing y elimínelo si está presente.
-1. Elimine esta clave del Registro si existe:  **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** y todas las subclaves.
+1. Elimine esta clave del Registro si existe: ** HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** y todas las subclaves.
 1. Intente volver a realizar la inscripción.
 1. Si todavía no puede inscribir el PC, busque y elimine esta clave, si existe: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**.
 1. Intente volver a realizar la inscripción.

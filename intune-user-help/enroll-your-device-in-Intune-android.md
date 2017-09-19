@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 07/13/2017
+ms.date: 09/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e12f8d31abc4e067a6339e93cc21680921ce88e4
-ms.sourcegitcommit: 2a6ad3c233d15a9fb441362105f64b2bdd550c34
+ms.openlocfilehash: 256aa8f52bd25ddcb860aed25b22f1549053d2b1
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Inscriba el dispositivo Android en Intune
 
@@ -54,14 +54,14 @@ Si recibe un error al intentar inscribir el dispositivo en Intune, puede [enviar
 
 6.  En la pantalla **Configuración de acceso a la empresa**, pulse **COMENZAR**.
 
-    ![Pantalla Configuración de acceso de la compañía](./media/and-enroll-4a-comp-access-setup.png)
+    ![Pantalla Configuración de acceso de la compañía](/intune/media/android_cp_enroll_02_post_1709.png)
 
     > [!NOTE]
     > Los triángulos amarillos no significan que ya haya un error. Estos iconos indican que todavía hay pasos del proceso de inscripción que deben completarse.
 
-7. En la pantalla **¿Por qué inscribir el dispositivo?**, lea lo que puede hacer si inscribe el dispositivo y, luego, pulse en **Continuar**.
+7. En la pantalla **Ventajas de la administración de dispositivos**, lea lo que puede hacer si inscribe el dispositivo y, luego, pulse en **CONTINUAR**.
 
-    ![Pantalla ¿Por qué inscribir el dispositivo?](./media/and-enroll-4b-why-enroll.png)
+    ![Pantalla Ventajas de la administración de dispositivos](/intune/media/android_cp_enroll_02_post_1709.png)
 
 8.  Revise una lista sobre lo que el administrador de TI puede y no puede ver en el dispositivo y pulse **CONTINUAR**.
 
@@ -114,13 +114,13 @@ Si recibe un error al intentar inscribir el dispositivo en Intune, puede [enviar
 
 14. Cuando aparezca la pantalla **Configuración de acceso de la compañía**, pulse **CONTINUAR**. Si un mensaje indica que el dispositivo es incompatible, siga las instrucciones para solucionar el problema y luego pulse **CONTINUAR**.
 
-    ![El dispositivo no cumple las directivas, pero está inscrito.](./media/and-enroll-9a-noncompliant-enrolled-device.png)
+    ![El dispositivo no cumple las directivas, pero está inscrito.](/intune/media/android_cp_enroll_05_post_1709.png)
 
-    ![Se muestran problemas de cumplimiento de dispositivos que deben resolverse.](./media/and-enroll-9b-resolve-compliance-issues.png)
+    ![Se muestran problemas de cumplimiento de dispositivos que deben resolverse.](/intune/media/android_cp_enroll_03_post_1709.png)
 
     Puede encontrar más información sobre los problemas tocándolos.
 
-    ![Problemas de cumplimiento de dispositivos expandidos](./media/and-enroll-9c-resolve-compliance-issues-expanded.png)
+    ![Problemas de cumplimiento de dispositivos expandidos](/intune/media/android_cp_enroll_04_post_1709.png)
 
     ![Pantalla Configuración de acceso de la compañía](./media/and-enroll-9d-comp-access-setup.png)  
 

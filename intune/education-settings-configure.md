@@ -3,10 +3,10 @@ title: "Configuración del entorno educativo de Intune para Windows 10"
 titleSuffix: Azure portal
 description: Aprenda a usar Intune para configurar Windows 10 Education en los dispositivos que administra.
 keywords: 
-author: robstackmsft
-ms.author: robstack
+author: barlanmsft
+ms.author: barlan
 manager: angrobe
-ms.date: 06/03/2017
+ms.date: 09/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6f4de4bd-3dde-4a8d-8e22-46c5d06c3eea
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c18eaa0416a41e802f82bbe12b57a4d25118892c
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 12e36761320557f6af9554d3b671fc133253c13c
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="how-to-configure-windows-10-education-settings-in-microsoft-intune"></a>Configuración de los ajustes de educación de Windows 10 en Microsoft Intune
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 09/09/2017
 
 Los perfiles de educación le permiten especificar los detalles que configuran la aplicación Take a Test de Windows, incluidos los detalles de la cuenta y la dirección URL de la prueba. Al configurar esto, la aplicación Take a Test se abre con la prueba que especifique y ninguna otra aplicación puede ejecutarse en el dispositivo hasta que se complete la prueba.
 
-Use la información de este tema para conocer los aspectos básicos de la configuración de perfiles de restricciones de dispositivos. Luego, siga leyendo los temas correspondientes a cada plataforma para saber las peculiaridades de cada dispositivo.
+Para obtener más información sobre la aplicación Take a Test, consulte [Hacer exámenes en Windows 10](https://docs.microsoft.com/education/windows/take-tests-in-windows-10).
 
 ## <a name="create-a-device-profile-containing-education-profile-settings"></a>Creación de un perfil de dispositivo que contenga los parámetros del perfil de educación
 
@@ -47,6 +47,9 @@ Use la información de este tema para conocer los aspectos básicos de la config
 8. Cuando haya terminado, vuelva a la hoja **Create Profile** (Crear perfil) y presione **Crear**.
 
 El perfil se crea y aparece en la hoja de la lista de perfiles.
+
+## <a name="next-steps"></a>Pasos siguientes
+
 Si desea continuar y asignar este perfil a grupos, consulte [Asignación de perfiles de dispositivo](device-profile-assign.md).
 
 

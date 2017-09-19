@@ -15,19 +15,19 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 105b874523024b58098205d94da47c07ee432dfc
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 41b358f48412585ec40e369225b4263012bfd2f8
+ms.sourcegitcommit: b8987b8dfb009ea55678d7f640ac5f18a6ab167e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>¿Dónde está mi característica de Intune en Azure?
 Hemos aprovechado la oportunidad para organizar algunas tareas de forma más lógica durante el traslado de Intune a Azure Portal. Pero, como ocurre con todas las mejoras, deberá aprender la nueva organización. Por ello, hemos creado esta guía de referencia para aquellos que están familiarizados con Intune en el portal clásico y se preguntan dónde se encuentra una determinada función en Intune en Azure Portal. Si en este artículo no se incluye una característica que intenta encontrar, deje un comentario al final para que podamos actualizarlo.
 ## <a name="quick-reference-guide"></a>Guía de referencia rápida
 |Característica |Ruta de acceso del portal clásico|Ruta de acceso en Intune en Azure Portal|
 |------------|---------------|---------------|
-|Programa de inscripción de dispositivos (DEP) |Administración > Administración de dispositivos móviles > iOS y Mac OS X > Programa de inscripción de dispositivos|[Inscripción de dispositivos > Inscripción de Apple > Token del Programa de inscripción](#where-did-apple-dep-go) |
-|Programa de inscripción de dispositivos (DEP)| Administración > Administración de dispositivos móviles > iOS y Mac OS X > Programa de inscripción de dispositivos |[Inscripción de dispositivos > Inscripción de Apple > Números de serie del Programa de inscripción](#where-did-apple-dep-go) |
+|Programa de inscripción de dispositivos (DEP) [solo iOS]|Administración > Administración de dispositivos móviles > iOS > Programa de inscripción de dispositivos|[Inscripción de dispositivos > Inscripción de Apple > Token del Programa de inscripción](#where-did-apple-dep-go) |
+|Programa de inscripción de dispositivos (DEP) [solo iOS]| Administración > Administración de dispositivos móviles > iOS y Mac OS X > Programa de inscripción de dispositivos |[Inscripción de dispositivos > Inscripción de Apple > Números de serie del Programa de inscripción](#where-did-apple-dep-go) |
 |Reglas de inscripción |Administración > Administración de dispositivos móviles > Reglas de inscripción|[Inscripción de dispositivos > Restricciones de inscripción](#where-did-enrollment-rules-go) |
 |Grupos mediante número de serie de iOS |Grupos > Todos los dispositivos > Dispositivos corporativos inscritos previamente > Mediante número de serie de iOS|[Inscripción de dispositivos > Inscripción de Apple > Números de serie del Programa de inscripción](#where-did-corporate-pre-enrolled-devices-go) |
 |Grupos mediante número de serie de iOS |Grupos > Todos los dispositivos > Dispositivos corporativos inscritos previamente > Mediante número de serie de iOS| [Inscripción de dispositivos > Inscripción de Apple > Números de serie de AC](#where-did-corporate-pre-enrolled-devices-go)|

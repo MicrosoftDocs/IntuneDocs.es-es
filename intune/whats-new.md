@@ -6,7 +6,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.date: 09/01/2017
+ms.date: 09/18/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c4787c716f94e95ab98badf924273af5d02751f8
-ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
+ms.openlocfilehash: d48664186b1914d30757557bd97d3d61b6410338
+ms.sourcegitcommit: 695bf70a79e20a17168c061afbb675b73ea999f7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novedades de Microsoft Intune
 
@@ -41,6 +41,31 @@ Conozca las novedades semanales de Microsoft Intune. También podrá obtener inf
   ### Monitor and troubleshoot
 
 -->   
+
+## <a name="week-of-september-11-2017"></a>Semana del 11 de septiembre de 2017
+
+### <a name="device-enrollment"></a>Inscripción de dispositivos
+
+#### <a name="additional-push-notifications-for-end-users-on-the-company-portal-app-for-android-o----1475932---"></a>Notificaciones de inserción adicionales para los usuarios finales en la aplicación Portal de empresa para Android O<!---1475932--->
+
+Los usuarios finales verán notificaciones adicionales que les indicarán cuándo la aplicación Portal de empresa para Android O está realizando tareas en segundo plano, como la recuperación de directivas desde el servicio Intune. Esto aumenta la transparencia para los usuarios finales sobre cuándo Portal de empresa está realizando tareas administrativas en su dispositivo. Esto forma parte de la [optimización de la interfaz de usuario de Portal de empresa](https://blogs.technet.microsoft.com/intunesupport/2017/08/21/android-8-0-o-behaviour-changes-and-microsoft-intune) general para la aplicación Portal de empresa para Android O. 
+
+#### <a name="inform-end-users-what-device-information-can-be-seen-for-ios---739894--"></a>Informar a los usuarios finales de la información de dispositivo que puede verse para iOS <!--739894--> 
+
+Hemos agregado **Tipo de propiedad** a la pantalla Detalles del dispositivo en la aplicación del portal de empresa para iOS. Esto permitirá que los usuarios obtengan más información sobre privacidad directamente desde esta página de los documentos de usuario final de Intune. También podrán encontrar esta información en la pantalla Acerca de. 
+
+#### <a name="allow-end-users-to-access-the-company-portal-app-for-android-without-enrollment----1169910---"></a>Permitir que los usuarios finales accedan a la aplicación Portal de empresa para Android sin inscripción <!---1169910--->
+
+Pronto los usuarios finales no tendrán que inscribir sus dispositivos para acceder a la aplicación Portal de empresa para Android. Los usuarios finales de las organizaciones que usen directivas de protección de aplicaciones dejarán de recibir mensajes para inscribir sus dispositivos cuando abran la aplicación Portal de empresa. Los usuarios finales también podrán instalar aplicaciones desde el Portal de empresa sin inscribir el dispositivo. 
+
+
+#### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android----1396349---"></a>Expresión más fácil de entender para la aplicación de Portal de empresa para Android <!---1396349--->  
+
+El proceso de inscripción para la aplicación de Portal de empresa para Android se ha simplificado con nuevo texto para que resulte más sencillo para los usuarios finales. Si tiene documentación de inscripción personalizada, deberá actualizarla para que se muestre en las nuevas pantallas. También puede encontrar imágenes de muestra en nuestra página [Actualizaciones de la interfaz de usuario para las aplicaciones de usuario final de Intune](whats-new-app-ui.md#week-of-september-11-2017).
+
+#### <a name="windows-10-company-portal-app-added-to-windows-information-protection-allow-policy----677129---"></a>Adición de la aplicación de Portal de empresa de Windows 10 a la directiva de permiso de Windows Information Protection <!-- 677129 -->
+
+La aplicación de Portal de empresa de Windows 10 se ha actualizado para admitir Windows Information Protection (WIP). La aplicación puede agregarse a la directiva de permiso de WIP. Con este cambio, la aplicación ya no tiene que agregarse a la lista **Excluir**. 
 
 
 ## <a name="week-of-august-21-2017"></a>Semana del 21 de agosto de 2017
