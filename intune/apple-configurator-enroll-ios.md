@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/28/2017
+ms.date: 09/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b3ed7fe610f8101d90af044a8ff3849c57146c75
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 5b139db1780881e5bc0aed2345f9dc456a18f0e0
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Inscribir dispositivos iOS con Apple Configurator
 
@@ -48,13 +48,17 @@ Un perfil de inscripción de dispositivo define la configuración que se aplica 
 2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
 3. Elija **Inscripción de dispositivos** > **Inscripción de Apple**.
 4. En **Administrar la configuración de inscripción de Apple Configurator**, seleccione **Perfiles de AC**.
-5. En la hoja **Perfiles de inscripción de Apple Configurator**, seleccione **Crear**.
+5. En **Perfiles de inscripción de Apple Configurator**, seleccione **Crear**.
 6. Escriba un **nombre** y una **descripción** para el perfil con fines administrativos. Los usuarios no ven estos detalles. Puede usar este campo de nombre para crear un grupo dinámico en Azure Active Directory. Use el nombre de perfil para definir el parámetro enrollmentProfileName para asignar dispositivos con este perfil de inscripción. Obtenga más información sobre los grupos dinámicos de Azure Active Directory.
 
   ![Captura de pantalla de la pantalla de creación de perfil con inscripción con la afinidad de usuario seleccionada](./media/apple-configurator-profile-create.png)
 
 7. Especifique la **Afinidad de usuario**:
-   - **Inscribir con afinidad de usuario**: el dispositivo se debe afiliar a un usuario con el Asistente de configuración y, después, se le puede permitir el acceso a los datos y al correo electrónico de la empresa. Se requiere afinidad de usuario para los dispositivos administrados que pertenecen a usuarios y que necesitan usar el Portal de empresa para hacer uso de servicios, como instalar aplicaciones.
+   - **Inscribir con afinidad de usuario**: el dispositivo se debe afiliar a un usuario con el Asistente de configuración y, después, se le puede permitir el acceso a los datos y al correo electrónico de la empresa. Se requiere afinidad de usuario para los dispositivos administrados que pertenecen a usuarios y que necesitan usar el Portal de empresa para hacer uso de servicios, como instalar aplicaciones. Solo se admite para la inscripción con el asistente para la configuración. Se necesita una afinidad de usuario [Punto de conexión mixto/nombre de usuario de WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints). [Más información](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+
+   > [!NOTE]
+   > Multi-Factor Authentication (MFA) no funciona durante la configuración de la inscripción con afinidad de usuario. Después de la inscripción, MFA funciona según lo previsto en los dispositivos. Los dispositivos no pueden pedir a los usuarios que cambien su contraseña cuando inician sesión por primera vez. Además, no se puede pedir a los usuarios cuyas contraseñas hayan expirado que las restablezcan durante la inscripción. Los usuarios deben usar un dispositivo diferente para restablecer la contraseña.
+
    - **Inscribir sin afinidad de usuario**: el dispositivo no está afiliado a ningún usuario. Utilice esta afiliación para dispositivos que realizan tareas sin tener acceso a datos de usuario local. Las aplicaciones que requieren la afiliación de un usuario no funcionarán, incluida la aplicación Portal de empresa cuando se usa para instalar aplicaciones de línea de negocio. Se requiere para la inscripción directa.
 
 6. Seleccione **Crear** para guardar el perfil.
@@ -85,20 +89,22 @@ Los perfiles de inscripción se asignan al importar los números de serie de iOS
 
 #### <a name="assign-from-apple-configurator-devices"></a>Asignación desde dispositivos de Apple Configurator
 1. En Intune en Azure Portal, elija **Inscripción de dispositivos** y luego **Inscripción de Apple**.
-3. En la hoja **Dispositivos de Apple Configurator**, seleccione los números de serie a los que quiere asignar un perfil y luego seleccione **Asignar perfil**.
-4. En la hoja **Asignar perfil**, seleccione el **Nuevo perfil** que quiera asignar y luego seleccione **Asignar**.
+3. En **Dispositivos de Apple Configurator**, seleccione los números de serie a los que quiere asignar un perfil y luego seleccione **Asignar perfil**.
+4. En **Asignar perfil**, seleccione el **Nuevo perfil** que quiera asignar y luego seleccione **Asignar**.
 
 #### <a name="assign-from-profiles"></a>Asignación desde perfiles
 1. En Intune en Azure Portal, elija **Inscripción de dispositivos** y luego **Inscripción de Apple**.
 2. Elija **Perfiles de AC** y seleccione el perfil que quiera asignar a los números de serie.
-3. En la hoja del perfil, seleccione **Dispositivos asignados** y **Asignar**.
+3. En el perfil, seleccione **Dispositivos asignados** y **Asignar**.
 4. Filtre para buscar los números de serie del dispositivo que quiera asignar al perfil, seleccione los dispositivos y elija **Asignar**.
 
 ### <a name="export-the-profile"></a>Exportación del perfil
 Después de crear el perfil y asignar números de serie, debe exportar el perfil desde Intune como una dirección URL. Después, impórtelo en Apple Configurator en un equipo Mac para su implementación en dispositivos.
 
-1. En Intune en Azure Portal, seleccione **Inscripción de dispositivos** > Inscripción de Apple** > **Perfiles de AC** y elija el perfil que quiera exportar.
-2. En la hoja del perfil, seleccione **Exportar perfil**.
+1. En Intune en Azure Portal, seleccione **Inscripción de dispositivos** > **Inscripción de Apple** > **Perfiles de AC** y elija el perfil que quiera exportar.
+2. En el perfil, seleccione **Exportar perfil**.
+
+  ![Captura de pantalla de Exportar perfil para Inscripción del Asistente de configuración con URL del perfil destacado](./media/ios-apple-configurator-expor-sat.png)
 3. Copie la dirección URL del perfil. Puede agregarla a Apple Configurator más tarde para definir el perfil de Intune usado por los dispositivos iOS.
 
   Después, importe este perfil en Apple Configurator en el procedimiento siguiente para definir el perfil de Intune usado por dispositivos iOS.
@@ -114,7 +120,7 @@ Después de crear el perfil y asignar números de serie, debe exportar el perfil
 
   Puede omitir de forma segura una advertencia que indica "no se comprueba la dirección URL del servidor". Para continuar, elija **Siguiente** hasta que finalice el asistente.
 4.  Conecte los dispositivos móviles iOS al equipo Mac con un adaptador USB.
-5.  Elija **Preparar**. En el panel **Prepare iOS Device** (Preparar el dispositivo iOS), seleccione **Manual** y luego elija **Siguiente**.
+5.  Seleccione los dispositivos iOS que quiera administrar y, después, elija **Preparar**. En el panel **Prepare iOS Device** (Preparar el dispositivo iOS), seleccione **Manual** y luego elija **Siguiente**.
 6. En el panel **Enroll in MDM Server** (Inscribir en servidor MDM), seleccione el nuevo servidor y elija **Siguiente**.
 7. En el panel **Supervise Devices** (Supervisar dispositivos), seleccione el nivel de supervisión y luego elija **Siguiente**.
 8. En el panel **Create an Organization** (Crear una organización), seleccione la **organización** o cree una nueva y luego elija **Siguiente**.
@@ -134,13 +140,20 @@ Las aplicaciones que requieren la afiliación de un usuario no se pueden instala
 ### <a name="export-the-profile-as-mobileconfig-to-ios-devices"></a>Exportación del perfil como .mobileconfig a dispositivos iOS
 1. Inicie sesión en Azure Portal.
 2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
-3. En la hoja **Exportar perfil**, descargue el perfil de inscripción en [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) para insertarlo directamente como un perfil de administración en dispositivos iOS.
-4. Prepare el dispositivo con Apple Configurator mediante los pasos siguientes.
+3. En **Perfil de exportación**, elija **Descargar perfil** para descargar el perfil de inscripción.
+
+  ![Captura de pantalla de Exportar perfil para Inscripción del Asistente de configuración con URL del perfil destacado](./media/ios-apple-configurator-expor-de.png)
+
+4. Transfiera el archivo a un equipo Mac en el que se ejecute [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) para poder transferir archivos directamente como un perfil de administración a dispositivos iOS.
+5. Prepare el dispositivo con Apple Configurator mediante los pasos siguientes.
   1. En un equipo Mac, abra Apple Configurator 2.0.
   2. Conecte el dispositivo iOS al equipo Mac con un cable USB. Cierre Fotos, iTunes y otras aplicaciones que se abren en el dispositivo cuando se detecta el dispositivo.
   3. En Apple Configurator, elija el dispositivo iOS conectado y, después, elija el botón **Agregar**. Las opciones que se pueden agregar al dispositivo aparecen en la lista desplegable. Elija **Perfiles**.
+
+    ![Captura de pantalla de Exportar perfil para Inscripción del Asistente de configuración con URL del perfil destacado](./media/ios-apple-configurator-add-profile.png)
+
   4. Use el selector de archivos para seleccionar el archivo .mobileconfig que ha exportado desde Intune y, después, elija **Agregar**. El perfil se agrega al dispositivo. Si el dispositivo es No supervisado, la instalación requiere la aceptación en el dispositivo.
-5. Use los pasos siguientes para instalar el perfil en el dispositivo iOS. El dispositivo debe haber completado el Asistente de configuración y estar listo para usarse. Si la inscripción implica implementaciones de aplicaciones, el dispositivo debe tener un identificador de Apple configurado, porque las implementaciones de aplicaciones requieren que se disponga de un identificador de Apple con la sesión iniciada en App Store.
+6. Use los pasos siguientes para instalar el perfil en el dispositivo iOS. El dispositivo debe haber completado el Asistente de configuración y estar listo para usarse. Si la inscripción implica implementaciones de aplicaciones, el dispositivo debe tener un identificador de Apple configurado, porque la implementación de aplicaciones requieren que se disponga de un identificador de Apple con la sesión iniciada en App Store.
    1. Desbloquee el dispositivo iOS.
    2. En el cuadro de diálogo **Instalar el perfil** de **Perfil de administración**, elija **Instalar**.
    3. Proporcione el código de acceso del dispositivo o el identificador de Apple, si es necesario.
@@ -148,6 +161,6 @@ Las aplicaciones que requieren la afiliación de un usuario no se pueden instala
    5. Acepte la **advertencia remota** y elija **Confiar**.
    6. Cuando el cuadro **Perfil instalado** confirme el perfil como Instalado, elija **Listo**.
 
-6. En el dispositivo iOS, abra **Configuración** y vaya a **General**  > **Administración de dispositivos** > **Perfil de administración**. Confirme que aparece la instalación del perfil y compruebe las restricciones de directivas de iOS y las aplicaciones instaladas. Las aplicaciones y las restricciones de directivas pueden tardar hasta 10 minutos en aparecer en el dispositivo.
+7. En el dispositivo iOS, abra **Configuración** y vaya a **General**  > **Administración de dispositivos** > **Perfil de administración**. Confirme que aparece la instalación del perfil y compruebe las restricciones de directivas de iOS y las aplicaciones instaladas. Las aplicaciones y las restricciones de directivas pueden tardar hasta 10 minutos en aparecer en el dispositivo.
 
-7. Distribuya los dispositivos. Ahora el dispositivo iOS está inscrito en Intune y administrado.
+8. Distribuya los dispositivos. Ahora el dispositivo iOS está inscrito en Intune y administrado.

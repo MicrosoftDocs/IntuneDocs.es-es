@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: jeffgilb
 ms.suite: ems
-ms.openlocfilehash: 6e3a5e39cf3ee38820b1ff79eb54c019dbb68d29
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: f1a5c8a15007a38942fe543e6c1062bf957a481c
+ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Ayudar a que los usuarios finales comprendan los mensajes de la aplicación Portal de empresa
 
@@ -95,6 +95,17 @@ La segunda vez que los usuarios inician sesión en la aplicación Portal de empr
 ### <a name="how-to-explain-this-to-your-users"></a>Cómo explicar esto a los usuarios
 Envíe a sus usuarios a [Enviar registros al administrador de TI mediante correo electrónico](/intune-user-help/send-logs-to-your-it-admin-by-email-android). También puede enviarle a [Enviar registros al administrador de TI por cable](/intune-user-help/send-logs-to-your-it-admin-by-cable-android) si desea poder comparar los dos métodos.
 
+## <a name="your-company-support-needs-to-give-you-access-to-company-resources"></a>El servicio de soporte técnico de su empresa debe concederle acceso a sus recursos
+
+### <a name="where-it-appears"></a>Dónde aparece
+Si no ha agregado la aplicación Portal de empresa a las listas **Aplicaciones permitidas** o **Aplicaciones exentas** y un usuario intenta iniciar sesión, se producirá un error en el inicio de sesión. Se mostrará el siguiente mensaje:
+
+> **El servicio de soporte técnico de su empresa debe concederle acceso a sus recursos**  
+> Su empresa está usando directivas de Windows Information para proteger su dispositivo. El servicio de soporte técnico de su empresa tendrá que asegurarse de que permite que Portal de empresa pueda acceder a él.
+
+### <a name="what-it-means"></a>Significado
+
+Agregue Portal de empresa a las listas **Aplicaciones permitidas** o **Aplicaciones exentas** en la directiva de protección de la aplicación Windows Information Protection (WIP). Para obtener más información, consulte [Creación e implementación de una directiva de protección de aplicaciones de Windows Information Protection (WIP) con Intune](/intune-classic/deploy-use/create-windows-information-protection-policy-with-intune).
 
 ### <a name="see-also"></a>Consulte también
 [Qué decirles a los usuarios finales sobre el uso de Intune](end-user-educate.md)

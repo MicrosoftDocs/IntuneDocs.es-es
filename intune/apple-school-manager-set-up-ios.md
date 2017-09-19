@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 07/21/2017
+ms.date: 09/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6b3ecc9af91d1a78f84dd6d4b8f47f0bf3e8c742
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 787fbdd470b4e1fbb4cb3e22ba4065e52d4c63f8
+ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Habilitación de la inscripción de dispositivos iOS con Apple School Manager
 
@@ -38,17 +38,8 @@ Además, la inscripción de Apple School Manager no se puede usar con el [Progra
 - Se necesita una afinidad de usuario [Punto de conexión mixto/nombre de usuario de WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints). [Más información](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 - Los dispositivos tienen que haberse adquirido a través del programa de [Apple School Management](http://school.apple.com)
 
-**Pasos de inscripción de Apple School Manager**
-1. [Obtener un token de Apple School Manager y asignar los dispositivos](#get-the-apple-token-and-assign-devices)
-2. [Crear un perfil de inscripción](#create-an-apple-enrollment-profile)
-3. [Conectar School Data Sync](#connect-school-data-sync) (opcional)
-4. [Sincronizar los dispositivos administrados por Apple School Manager](#sync-managed-devices)
-5. [Asignar un perfil de Apple School Manager a los dispositivos](#assign-a-profile-to-devices)
-6. [Distribuir los dispositivos a los usuarios](#distribute-devices-to-users)
-
 >[!NOTE]
 >Multi-Factor Authentication (MFA) no funciona durante la inscripción en dispositivos Apple School Manager con afinidad de usuario. Después de la inscripción, MFA funciona según lo previsto en estos dispositivos. Después de la inscripción, MFA funciona según lo previsto en los dispositivos. Los dispositivos no pueden pedir a los usuarios que cambien su contraseña cuando inician sesión por primera vez. Además, no se puede pedir a los usuarios cuyas contraseñas hayan expirado que las restablezcan durante la inscripción. Los usuarios deben usar un dispositivo diferente para restablecer la contraseña.
-
 
 ## <a name="get-the-apple-token-and-assign-devices"></a>Obtener el token de Apple y asignar los dispositivos
 
@@ -104,7 +95,8 @@ Un perfil de inscripción de dispositivos define la configuración que se aplica
     - **Supervisado**: un modo de administración que permite más opciones de administración y deshabilita el bloqueo de activación de forma predeterminada. Si deja en blanco la casilla, tendrá funcionalidades de administración limitadas.
 
      - **Inscripción bloqueada** (requiere el modo de administración Supervisado): deshabilita la configuración de iOS que podría permitir la eliminación del perfil de administración. Si deja en blanco la casilla, permite que se quite el perfil de administración en el menú Configuración.
-   - **iPad compartido**: (requiere los modos **Inscribir sin afinidad de usuario** y **Supervisado**). Permite que varios usuarios inicien sesión en dispositivos iPad inscritos mediante el uso de un identificador de Apple administrado. Los identificadores de Apple administrados se crean en el portal de Apple School Manager. Obtenga más información sobre los dispositivos [iPad compartidos](education-settings-configure-ios-shared.md).
+   - **iPad compartido**: (requiere los modos **Inscribir sin afinidad de usuario** y **Supervisado**). Permite que varios usuarios inicien sesión en dispositivos iPad inscritos mediante el uso de un identificador de Apple administrado. Los identificadores de Apple administrados se crean en el portal de Apple School Manager. Obtenga más información sobre los dispositivos [iPad compartidos](education-settings-configure-ios-shared.md). También debe revisar los [requisitos para compartir un iPad de Apple](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
+
    >[!NOTE]
    >Si **Afinidad de usuario** se establece en **Con afinidad de usuario** o el modo **Supervisado** se establece en **Desactivado**, el modo iPad compartido está deshabilitado para el perfil de inscripción.
 
