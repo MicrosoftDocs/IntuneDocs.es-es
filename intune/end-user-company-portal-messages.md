@@ -101,7 +101,7 @@ Envíe a sus usuarios a [Enviar registros al administrador de TI mediante correo
 Si no ha agregado la aplicación Portal de empresa a las listas **Aplicaciones permitidas** o **Aplicaciones exentas** y un usuario intenta iniciar sesión, se producirá un error en el inicio de sesión. Se mostrará el siguiente mensaje:
 
 > **El servicio de soporte técnico de su empresa debe concederle acceso a sus recursos**  
-> Su empresa está usando directivas de Windows Information para proteger su dispositivo. El servicio de soporte técnico de su empresa tendrá que asegurarse de que permite que Portal de empresa pueda acceder a él.
+> Su empresa está usando directivas de Windows Information Protection para proteger su dispositivo. El servicio de soporte técnico de su empresa tendrá que asegurarse de que permite que Portal de empresa pueda acceder a él.
 
 ### <a name="what-it-means"></a>Significado
 
