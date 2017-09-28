@@ -15,11 +15,11 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b2cffc21ba78cbd54edfb75eaa892df1539ad62b
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 2e9b1a3dc42a9c18d61fc9b55d5a7b71f00c3e29
+ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Creación de directiva de cumplimiento de dispositivos de Mobile Threat Defense (MTD) con Intune
 
@@ -35,8 +35,6 @@ Como parte de la configuración de MTD, en la consola del partner de MTD se crea
 Requisitos previos de la directiva de cumplimiento de dispositivos con MTD:
 
 -   Configuración de la integración de MTD con Intune
-
--   Habilitación del conector de MTD en Intune
 
 ## <a name="to-create-a-mtd-device-compliance-policy"></a>Para crear una directiva de cumplimiento de dispositivos de MTD
 
@@ -77,3 +75,7 @@ Para asignar una directiva de cumplimiento de dispositivos a los usuarios, selec
 
     > [!NOTE] 
     > Ya ha aplicado la directiva a los usuarios. Ahora se evaluará el cumplimiento de los dispositivos usados por los usuarios a los que se aplique la directiva.
+
+## <a name="next-steps"></a>Pasos siguientes
+
+- [Habilitar MTD con Intune](mtd-connector-enable.md)
