@@ -27,7 +27,7 @@
 ### [Solución de problemas comunes con Android](troubleshoot-your-device-android.md)
 #### [Comprobación del cumplimiento de dispositivos](check-compliance-on-your-device-android.md)
 
-#### [Uso de registros para solucionar problemas]
+#### Uso de registros para solucionar problemas
 ##### [Activación del registro detallado](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 ##### [Envío de registros por correo electrónico](send-logs-to-your-it-admin-by-email-android.md)
 ##### [Envío de registros por cable USB](send-logs-to-your-it-admin-using-cable-android.md)
