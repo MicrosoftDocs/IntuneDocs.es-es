@@ -81,12 +81,16 @@
           href: planning-guide-resources.md
     - name: Guías de implementación de escenarios
       items:
-        - name: BYOD
-          href: byod-enable.md
         - name: Protección de Exchange Online
           href: exchange-online-protect.md
         - name: Reducir los costos del departamento de soporte técnico
           href: password-reset.md
+        - name: Evitar acceso no autorizado
+          href: data-outside-protect.md
+        - name: Evitar fugas de datos en dispositivos no administrados
+          href: data-leak-prevention.md
+        - name: BYOD
+          href: byod-enable.md
     - name: Guía de migración
       href: migration-guide.md
       items:
@@ -434,12 +438,19 @@
               items:
                 - name: Integración de Intune y los puntos de comprobación
                   href: checkpoint-sandblast-mobile-mtd-connector-integration.md
-            - name: Adición de aplicaciones MTD
-              href: mtd-apps-ios-app-configuration-policy-add-assign.md
-            - name: Habilitación de MTD en Intune
-              href: mtd-connector-enable.md
-            - name: Creación de una directiva de cumplimiento de dispositivos MTD
-              href: mtd-device-compliance-policy-create.md
+            - name: Configuración de Zimperium
+              href: zimperium-mobile-threat-defense-connector.md
+              items:
+                - name: Integración de Zimperium e Intune
+                  href: zimperium-mtd-connector-integration.md
+            - name: Configuración de Intune para MTD
+              items:
+                - name: Adición de aplicaciones MTD
+                  href: mtd-apps-ios-app-configuration-policy-add-assign.md
+                - name: Creación de una directiva de cumplimiento de dispositivos MTD
+                  href: mtd-device-compliance-policy-create.md
+                - name: Habilitación de MTD en Intune
+                  href: mtd-connector-enable.md
         - name: Control de acceso a la red
           href: network-access-control-integrate.md
         - name: Configuración de Windows Hello

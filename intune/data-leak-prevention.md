@@ -1,0 +1,63 @@
+---
+title: Evitar fugas de datos en dispositivos no administrados
+description: "Permitir el acceso a los datos corporativos de dispositivos y proteger los datos de las pérdidas de datos."
+keywords: "protección de datos, evitar pérdidas, dispositivo, O365, Office 365"
+author: arob98
+manager: angrobe
+ms.date: 09/22/2017
+ms.topic: article
+ms.prod: 
+ms.service: microsoft-intune
+ms.technology: 
+ms.assetid: b1512c3a-3bbd-4111-a0df-c874a0a335df
+ms.reviewer: pchacon
+ms.suite: ems
+ms.custom: intune-azure
+ms.openlocfilehash: 3ae8702c51df1c3c2b8e6dd2a79bf4599e6b7677
+ms.sourcegitcommit: 29ee35da2864b25f4432d2423b285014c77040af
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 09/23/2017
+---
+# <a name="prevent-data-leaks-on-non-managed-devices"></a>Evitar fugas de datos en dispositivos no administrados
+
+Si permite el acceso a datos corporativos hospedados en Office 365, puede controlar la manera en que los usuarios comparten y guardan los datos sin riesgo de sufrir pérdidas de datos de forma intencionada o accidental. Microsoft Intune proporciona directivas de protección de aplicaciones que se establecen para proteger los datos corporativos de dispositivos propiedad del usuario. No es necesario que los dispositivos estén inscritos en el servicio de Intune. 
+
+Las directivas de protección de aplicaciones configuradas con Intune también funcionan en los dispositivos administrados con una solución de administración de dispositivos que no sea de Microsoft. Los datos personales del dispositivo no se modifican. Solo el departamento de TI administra los datos de la empresa. 
+
+Puede establecer directivas de protección de aplicaciones para aplicaciones móviles de Office en dispositivos que ejecutan Windows, iOS o Android para proteger los datos de la empresa. Estas directivas le permiten establecer directivas como el cifrado de datos de empresa o el PIN basado en aplicación, o bien opciones más avanzadas para restringir cómo usan los usuarios las acciones cortar, copiar, pegar y "Guardar como" entre aplicaciones administradas y aplicaciones no administradas. También puede borrar de forma remota datos corporativos sin requerir que los usuarios inscriban los dispositivos. 
+
+Las directivas de protección de aplicaciones de Intune son independientes de la administración de dispositivos. Las directivas de protección de aplicaciones le permiten administrar aplicaciones móviles de Office en dispositivos no administrados y en dispositivos administrados por Intune, así como en dispositivos administrados por soluciones MDM que no sean de Microsoft. 
+
+## <a name="before-you-begin"></a>Antes de comenzar
+
+Se puede aplicar el siguiente plan de acción si se cumplen los siguientes requisitos:
+* Su empresa está preparada para pasar de forma segura a la nube.
+* Su empresa usa Office 365 Exchange Online, SharePoint Online, OneDrive para la Empresa o Yammer.
+* Su empresa tiene licencias de Microsoft 365, Enterprise Mobility + Security (EMS) o de Azure Information Protection.
+* Su empresa permite que los usuarios tengan acceso a datos corporativos desde dispositivos Android, iOS o Windows propiedad del usuario o de la empresa. 
+* Su empresa no quiere requerir la inscripción de dispositivos personales en un servicio de administración de dispositivos. 
+
+## <a name="action-plan"></a>Plan de acción
+
+Para dispositivos iOS y Android: 
+
+1. Vea cómo funcionan las [directivas de protección de aplicaciones](app-protection-policy.md).
+2. Aprenda a [crear e implementar directivas de protección de aplicaciones](app-protection-policies.md) para las aplicaciones móviles de Office. 
+3. [Supervise las directivas de protección de aplicaciones](app-protection-policies-monitor.md) que cree e implemente. 
+
+Para dispositivos Windows 10: 
+
+1. Vea [cómo funciona Windows Information Protection (WIP)](https://docs.microsoft.com/windows/threat-protection/windows-information-protection/protect-enterprise-data-using-wip). 
+2. Preparativos para configurar [directivas de protección de aplicaciones para Windows 10](app-protection-policies-configure-windows-10.md).
+3. [Cree e implemente directivas de protección de aplicaciones de WIP con Intune](windows-information-protection-policy-create.md).
+
+## <a name="what-to-tell-employees-and-students"></a>Qué decir a los empleados o estudiantes
+
+Según corresponda, comparta los vínculos siguientes para proporcionar más información: 
+* [What to expect when your iOS app is managed by app protection policies](app-protection-enabled-apps-ios.md) (Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones)
+* [What to expect when your Android app is managed by app protection policies](app-protection-enabled-apps-android.md) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones) 
+
+## <a name="next-steps"></a>Pasos siguientes
+
+¿Necesita ayuda para habilitar este u otros escenarios de EMS u Office 365? Si tiene al menos 150 licencias para Microsoft 365, Enterprise Mobility + Security o Azure Active Directory Premium, aproveche las [ventajas de FastTrack](https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program). 
