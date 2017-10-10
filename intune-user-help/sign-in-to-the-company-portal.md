@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 93a08f4c653fe320284821c1532cdbd84d090b2f
-ms.sourcegitcommit: 79116d4c7f11bafc7c444fc9f5af80fa0b21224e
+ms.openlocfilehash: ca6d811d884b5405bdb4e5f096366c123d8e00d1
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-do-i-sign-in-to-the-company-portal-app---user-story-1132123--"></a>¿Cómo puedo iniciar sesión en la aplicación de portal de empresa? <!--User Story 1132123-->
 
@@ -79,4 +79,4 @@ Si no usa una contraseña para iniciar sesión en los recursos de empresa, puede
 
   ![Después del proceso de autenticación, la aplicación de portal de empresa inicia sesión e indica su proceso con una barra de carga.](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_007.png)
 
-¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).
