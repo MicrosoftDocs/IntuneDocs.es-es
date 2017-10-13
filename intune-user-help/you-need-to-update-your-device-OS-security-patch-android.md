@@ -14,15 +14,15 @@ ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 6b25c4551cd66e2e58b12c90ca9055c14b4e33cd
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 5ee77c0889228080d4ea9dcd5c27fe8225865a6a
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>Necesita actualizar el sistema operativo del dispositivo Android
 
-Si ha visto un mensaje que indica que la "no se ha configurado el nivel de revisión de seguridad de Android mínimo", debe instalar una actualización para asegurarse de que el dispositivo sigue siendo seguro. Se publica una _revisión_ para que el software siga ejecutándose sin problemas y esté actualizado. El administrador de TI requiere que instale esta revisión para asegurarse de que los datos corporativos se mantengan con la máxima protección posible en el dispositivo. La ubicación de la revisión de seguridad que necesita variará dependiendo de si tiene un tipo específico de dispositivo Samsung.
+Si ha visto un mensaje que indica que la "no se ha configurado el nivel de revisión de seguridad de Android mínimo", debe instalar una actualización para asegurarse de que el dispositivo sigue siendo seguro. Se publica una _revisión_ para que el software siga ejecutándose sin problemas y esté actualizado. El equipo de soporte técnico de su empresa requiere que instale esta revisión para asegurarse de que los datos corporativos se mantengan con la máxima protección posible en el dispositivo. La ubicación de la revisión de seguridad que necesita variará dependiendo de si tiene un tipo específico de dispositivo Samsung.
 
 Si tiene un dispositivo Samsung, vaya a **Configuración** > **Sobre el teléfono** y compruebe si la palabra "KNOX" aparece en cualquier parte de la pantalla. Si es así, siga las instrucciones de Samsung KNOX.
 
@@ -38,4 +38,4 @@ Vaya a **Configuración** > **Actualizaciones del sistema** > **Buscar nueva act
 
 
 
-¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).

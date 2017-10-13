@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4a1639c289e335d4f50c549da7b7d895dd2a10bb
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 4fad2b78b8224fc1a90ad8c81d350917b17e3d57
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-need-to-enable-code-integrity"></a>Necesita habilitar la integridad de código
 
@@ -29,8 +29,8 @@ El mantenimiento de la información de la organización requiere diferentes tipo
 La integridad de código se activa automáticamente cuando el sistema usa de manera activa el arranque seguro.
 
 > [!Tip]
-> Habilitar el arranque seguro es una tarea avanzada. Le recomendamos ponerse en contacto con el administrador de TI para obtener ayuda con esta tarea.
+> Habilitar el arranque seguro es una tarea avanzada. Le recomendamos que se ponga en contacto con el equipo de soporte técnico de su empresa para obtener ayuda con esta tarea.
 
 Si se siente cómodo realizando el procedimiento, consulte la sección "Para volver a habilitar el arranque seguro" de la página [Deshabilitar el arranque seguro](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) para tratar de habilitarlo usted mismo.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).

@@ -1,12 +1,12 @@
 ---
-title: Administrar aplicaciones de iOS compradas por volumen
+title: "Administración de aplicaciones iOS compradas por volumen | Microsoft Docs"
 titlesuffix: Azure portal
 description: "Obtenga información sobre cómo puede sincronizar aplicaciones compradas por volumen en la tienda de iOS en Intune y luego administrar y realizar el seguimiento de su uso\"."
 keywords: 
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 08/18/2017
+ms.date: 09/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8be922d6cc839708ff26de2ebe792241b9bf357a
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: dc3160d40d4ddabcd0a7d8d5557b07b4086eea7c
+ms.sourcegitcommit: 4184db38d1a9a223e680bcb4c9b732f7069bf510
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/02/2017
 ---
-# <a name="how-to-manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Administrar aplicaciones de iOS compradas a través de un programa de compras por volumen con Microsoft Intune
+# <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Administrar aplicaciones de iOS compradas a través de un programa de compras por volumen con Microsoft Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -48,12 +48,17 @@ Cuando asigna aplicaciones compradas por volumen a un dispositivo, el usuario fi
 Cuando asigna una aplicación a los usuarios, se usa una licencia de aplicación para el usuario y se asocia con este. La aplicación se puede ejecutar en varios dispositivos del usuario (con un límite controlado por Apple).
 Cuando asigne una aplicación comprada por volumen a los usuarios, cada usuario final debe tener un ID de Apple válido y único para acceder al App Store.
 
-
 Además, puede sincronizar, administrar y asignar los libros que haya adquirido a través de la tienda del Programa de Compras por Volumen de Apple con Intune. Para obtener más información, consulte [Administración de libros electrónicos de iOS comprados a través de un programa de compras por volumen](vpp-ebooks-ios.md).
 
-
 ## <a name="manage-volume-purchased-apps-for-ios-devices"></a>Administrar aplicaciones compradas por volumen para dispositivos iOS
+
+### <a name="supports-apple-volume-purchase-program-volume-purchased-apps-for-ios-devices"></a>Admite las aplicaciones compradas por volumen del Programa de Compras por Volumen de Apple para dispositivos iOS
+
 Compre varias licencias para aplicaciones iOS mediante el [Programa de compras por volumen de Apple para empresas](http://www.apple.com/business/vpp/) o el [Programa de compras por volumen de Apple para educación](http://volume.itunes.apple.com/us/store). Este proceso implica configurar una cuenta de VPP de Apple en el sitio web de Apple y cargar el token de VPP de Apple en Intune.  De este modo, puede sincronizar la información de compras por volumen con Intune y hacer el seguimiento del uso de aplicaciones compradas por volumen.
+
+### <a name="supports-business-to-business-volume-purchased-apps-for-ios-devices"></a>Admite las aplicaciones compradas por volumen de negocio a negocio para dispositivos iOS
+
+Además, los desarrolladores de terceros también pueden distribuir aplicaciones de forma privada a miembros autorizados del Programa de Compras por Volumen para Empresas, especificados en iTunes Connect. Estos miembros pueden iniciar sesión en la tienda de aplicaciones del Programa de Compras por Volumen y comprar aplicaciones. Las aplicaciones del VPP para empresas que haya comprado el usuario final se sincronizarán con sus inquilinos de Intune.
 
 ## <a name="before-you-start"></a>Antes de empezar
 Antes de empezar, necesita obtener un token de VPP de Apple y cargarlo en la cuenta de Intune. Además, debe comprender los siguientes criterios:
@@ -64,12 +69,9 @@ Antes de empezar, necesita obtener un token de VPP de Apple y cargarlo en la cue
 * De forma predeterminada, Intune se sincroniza con el servicio PCV de Apple dos veces al día. Puede iniciar una sincronización manual en cualquier momento.
 * Antes de empezar a usar el PCV de iOS con Intune, quite todas las cuentas de usuario de PCV existentes creadas con otros proveedores de administración de dispositivos móviles (MDM). Intune no sincroniza esas cuentas de usuario en Intune como medida de seguridad. Intune solo sincroniza los datos del servicio VPP de Apple que se ha creado mediante Intune.
 * Intune admite la adición de hasta 256 tokens de VPP.
-* Si asigna una aplicación comprada por volumen para un dispositivo inscrito mediante un perfil de inscripción de dispositivo o Apple Configurator, solo las aplicaciones que están destinadas a los dispositivos funcionan. No puede asignar aplicaciones compradas por volumen a los usuarios de un dispositivo de DEP, que no tiene ninguna afinidad de usuario.
-Esto se debe a que las licencias de usuario VPP de iOS permiten que miles de dispositivos puedan inscribirse usando la misma cuenta de usuario. Las licencias de usuario VPP de iOS permiten que un usuario final instale una aplicación en entre 5 y 10 dispositivos.
-Esto significa que los primeros dispositivos inscritos mediante DEM recibirán la instalación de la aplicación de VPP mediante una licencia de usuario, mientras que los demás dispositivos no podrán obtener la aplicación.
+* El Programa Perfil de inscripción de dispositivos (DEP) de Apple automatiza la inscripción de la administración de dispositivos móviles (MDM). Puede usar DEP para configurar dispositivos corporativos sin tocarlos. Puede inscribirse en el programa DEP con la misma cuenta de agente de programa que usó con el VPP de Apple. El identificador del programa de implementación de Apple es único para los programas que aparecen en el sitio web [Deployment Programmes](https://deploy.apple.com) (Programas de implementación) de Apple y no se puede usar para iniciar sesión en los servicios de Apple, como la tienda iTunes. 
 * Un token de VPP solo se admite para su uso en una cuenta de Intune a la vez. No vuelva a usar el mismo token de VPP para varios inquilinos de Intune.
-* Cuando asigne aplicaciones de VPP con el modelo de licencias de usuario a los usuarios o dispositivos (con la afinidad de usuario), cada usuario de Intune necesita asociarse con un único id. de Apple o una dirección de correo electrónico cuando acepte los términos y condiciones de Apple en su dispositivo.
-Asegúrese de que cuando configure un dispositivo para un nuevo usuario de Intune, lo configura con esa dirección de correo electrónico o id. de Apple únicos del usuario. La dirección de correo electrónico o el id. de Apple y el usuario de Intune forman un único par y pueden usarse en hasta 5 dispositivos.
+* Cuando asigne aplicaciones de VPP con el modelo de licencias de usuario a los usuarios o dispositivos (con la afinidad de usuario), cada usuario de Intune necesita asociarse con un único id. de Apple o una dirección de correo electrónico cuando acepte los términos y condiciones de Apple en su dispositivo. No use el id. de Apple que se usa para el identificador del programa de implementación de Apple. Asegúrese de que cuando configure un dispositivo para un nuevo usuario de Intune, lo configura con esa dirección de correo electrónico o con el Id. de Apple únicos del usuario. La dirección de correo electrónico o el id. de Apple y el usuario de Intune forman un único par y pueden usarse en hasta cinco dispositivos.
 
 >[!IMPORTANT]
 >Después de importar el token de PCV en Intune, no importe el mismo token en otra solución de administración de dispositivos. Si lo hace, podría perder la asignación de licencias y los registros de usuario.
@@ -78,17 +80,13 @@ Asegúrese de que cuando configure un dispositivo para un nuevo usuario de Intun
 
 1. Inicie sesión en el portal de Azure.
 2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
-3. En la hoja **Intune**, elija **Aplicaciones móviles**.
-1.  En la carga de trabajo **Aplicaciones móviles**, elija **Instalación** > **Tokens de VPP de iOS**.
-2.  En la lista de la hoja de tokens del PCV, haga clic en **Agregar**.
-3.  En la hoja **Nuevo token de VPP**, especifique la información siguiente:
+2.  En la lista de la hoja de tokens del VPP, haga clic en **Crear**.
+4. En la hoja **Crear token de VPP**, especifique la información siguiente:
     - **Archivo de token de VPP**: si aún no lo ha hecho, regístrese en el Programa de compras por volumen para empresas o el Programa para educación. Después de registrarse, descargue el token de VPP de Apple para la cuenta y selecciónelo aquí.
-    - **Id. de Apple**: escriba el identificador de Apple de la cuenta asociada con el programa de compras por volumen.
-    - **Tipo de cuenta de VPP**: elija **Empresa** o **Educación**.
+    - **Actualizaciones automáticas de la aplicación**: Active la opción para habilitar las actualizaciones automáticas. Si está habilitada, Intune actualiza todas las aplicaciones compradas para el token especificado a través del servicio de Intune cuando se registra el dispositivo. Se detectarán las actualizaciones de la aplicación de VPP dentro del App Store y se insertarán automáticamente en el dispositivo cuando este se registre.
 4. Cuando haya terminado, haga clic en **Cargar**.
 
 El token se muestra en la hoja de la lista de tokens.
-
 
 Puede sincronizar los datos que tiene Apple con Intune en cualquier momento al elegir **Sincronizar ahora**.
 
@@ -97,12 +95,11 @@ Puede sincronizar los datos que tiene Apple con Intune en cualquier momento al e
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Para asignar una aplicación comprada por volumen
 
-1.  En la carga de trabajo **Mobile Apps**, pulse **Administrar** > **Licencias de aplicaciones**.
-2.  En la hoja de la lista de aplicaciones, elija la aplicación que quiera asignar y seleccione "**...**" > **Asignar grupos**.
-3.  En la hoja *<app name>* - **Asignaciones**, pulse **Administrar** > **Asignaciones**.
-4.  Pulse **Seleccionar grupos** y, en la hoja **Seleccionar grupos**, pulse los grupos de dispositivos o usuarios de Azure AD a los que quiere asignar la aplicación.
+1.  En la hoja **Intune**, elija **Aplicaciones móviles** > **Aplicaciones** en **Administrar**.
+2.  En la hoja de la lista de aplicaciones, elija la aplicación que quiera asignar y seleccione **Asignaciones**.
+3.  En la hoja ***Nombre de la aplicación*** - **Asignaciones**, elija **Seleccionar grupos** y, en la hoja **Seleccionar grupos**, elija los grupos de dispositivos o de usuarios de Azure AD a los que quiere asignar la aplicación.
 5.  Para cada grupo que ha seleccionado, pulse las opciones siguientes:
-    - **Tipo**: elija si la aplicación estará **Disponible** (los usuarios finales pueden instalar la aplicación del portal de empresa) o será **Necesaria** (los usuarios finales tendrán automáticamente la aplicación instalada).
+    - **Tipo**: Elija si la aplicación estará **disponible** (los usuarios finales pueden instalar la aplicación desde el Portal de empresa) o será **necesaria** (la aplicación se instalará automáticamente para los usuarios finales).
     - **Tipo de licencia**: elija **Licencias de usuario** o **Licencias de dispositivo**.
 6.  Cuando termine, elija **Guardar**.
 

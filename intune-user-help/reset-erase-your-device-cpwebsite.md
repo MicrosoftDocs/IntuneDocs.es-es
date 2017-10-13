@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 10/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ce0ce291f303b04f0851b93add5f5cde5e2ee13f
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: cadc8ac211f60fd767dbfa7d412b089c3c1c94ea
+ms.sourcegitcommit: f254f49fc65fc75a779ff721e2202c53d03cb981
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 10/02/2017
 ---
 # <a name="reset-your-device-from-the-company-portal-website"></a>Restablecer un dispositivo desde el sitio web del Portal de empresa
 
-Si pierde o le roban un dispositivo, es posible que quiera restablecerlo a los valores predeterminados de fábrica para evitar el acceso no autorizado a los datos. Puede restablecer el dispositivo de forma remota mediante el [sitio web del Portal de empresa](http://portal.manage.microsoft.com). El sitio web del portal de empresa es una página web que puede usar para administrar equipos y dispositivos que haya inscrito en Intune. Puede utilizar este sitio web para realizar la mayoría de las mismas tareas que se pueden realizar con la aplicación de Portal de empresa.
+Si pierde o le roban un dispositivo, es posible que quiera restablecerlo a los valores predeterminados de fábrica para evitar el acceso no autorizado a los datos. Puede restablecer el dispositivo de forma remota mediante el [sitio web del Portal de empresa](https://portal.manage.microsoft.com). El sitio web del portal de empresa es una página web que puede usar para administrar equipos y dispositivos que haya inscrito en Intune. Puede utilizar este sitio web para realizar la mayoría de las mismas tareas que se pueden realizar con la aplicación de Portal de empresa.
 
 Si restablece el dispositivo, dejará de aparecer en el Portal de empresa y se restablecerá a los valores predeterminados de fábrica.
 
@@ -33,7 +33,7 @@ Si restablece el dispositivo, dejará de aparecer en el Portal de empresa y se r
 
 Para restablecer el dispositivo:
 
-1.  En el [sitio web del Portal de empresa](http://portal.manage.microsoft.com), pulse el botón __menú__ ![Pequeña imagen del botón menú, tres barras horizontales apiladas en paralelo.](/Intune/whats-new/media/CP_hamburger_menu.png), luego seleccione __Mis dispositivos__.
+1.  En el [sitio web del Portal de empresa](https://portal.manage.microsoft.com), pulse el botón __Menú__ y seleccione __Mis dispositivos__.
 
 2. En la página __Mis dispositivos__, seleccione el dispositivo cuyo nombre quiere cambiar.
 
@@ -47,4 +47,4 @@ Para restablecer el dispositivo:
 
 Se ha restablecido el dispositivo.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).

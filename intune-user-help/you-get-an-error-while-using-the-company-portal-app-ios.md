@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2208d25b4e27f3a896c431f301a46392a4b21f80
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 407ef838fca1f47a191b5a99648dcc68433621f6
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-get-an-error-while-using-the-company-portal-app"></a>Obtiene un error mientras usa la aplicación Portal de empresa
 
-Si se produce un error mientras usa la aplicación de portal de empresa en el dispositivo iOS, puede ayudar al administrador de TI a solucionar el problema enviándole información. Puede enviar información de errores de maneras diferentes:
+Si se produce un error mientras usa la aplicación de Portal de empresa en el dispositivo iOS, puede ayudar al equipo de soporte técnico de su empresa a solucionar el problema enviándole información. Puede enviar información de errores de maneras diferentes:
 
 -   En los mensajes de alerta de error, pulse **Informe**.
 
@@ -32,4 +32,4 @@ Si se produce un error mientras usa la aplicación de portal de empresa en el di
 
 -   Mientras se encuentra en la aplicación de portal de empresa, agite el dispositivo y, después, pulse **Correo electrónico** cuando aparezca la alerta de diagnóstico. Si la alerta no aparece cuando agita el dispositivo, abra **Configuración** > **Portal de empresa** y asegúrese de que la opción **Gesto de sacudida** está activada.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).

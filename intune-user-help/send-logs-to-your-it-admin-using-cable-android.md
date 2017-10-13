@@ -1,5 +1,5 @@
 ---
-title: Enviar registros al administrador de TI mediante un cable USB | Microsoft Docs
+title: "Enviar registros al equipo de soporte técnico de su empresa mediante un cable USB | Microsoft Docs"
 description: "Envío de registros de datos mediante un cable USB"
 keywords: 
 author: barlanmsft
@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3e91ccb2aae973892044f19d0d26c7f57bd5d786
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f6df910d60498b0ed272ebeb86d54273e8c6dd1a
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-logs-to-your-it-admin-using-a-usb-cable"></a>Enviar registros al administrador de TI mediante un cable USB
+# <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>Enviar registros al equipo de soporte técnico de su empresa mediante un cable USB
 
-Si se produce un error mientras usa la aplicación de portal de empresa en el dispositivo Android, puede ayudar a su administrador de TI a solucionar el problema enviándole información por correo electrónico. Esta información se conserva en su dispositivo en un documento especial denominado "_registro de diagnóstico_".
+Si se produce un error mientras usa la aplicación de Portal de empresa en el dispositivo Android, puede ayudar al equipo de soporte técnico de su empresa a solucionar el problema enviándole información por correo electrónico. Esta información se conserva en su dispositivo en un documento especial denominado "_registro de diagnóstico_".
 
 > [!Note]
-> Antes de comenzar, asegúrese de que tiene a mano la dirección de correo electrónico de su administrador de TI. Puede encontrarla en el [sitio web del portal de empresa](http://portal.manage.microsoft.com) o en la aplicación de portal de empresa.
+> Antes de comenzar, asegúrese de que tiene a mano la dirección de correo electrónico del equipo de soporte técnico de su empresa. Puede encontrarla en el [sitio web del portal de empresa](https://portal.manage.microsoft.com) o en la aplicación de portal de empresa.
 
 1.  En la pantalla de error, puntee **Enviar información**. Cuando aparezca un mensaje preguntando qué método desea utilizar para enviar los registros, elija la opción que guardará los archivos en el dispositivo.
 
@@ -35,6 +35,6 @@ Si se produce un error mientras usa la aplicación de portal de empresa en el di
 
 3.  En el equipo, busque un directorio que contenga el nombre del dispositivo. En dicho directorio busque **Dispositivo Android\Phone\Android\data\com.microsoft.windowsintune.companyportal\files\**.
 
-4.  Seleccione los archivos y adjúntelos a un correo electrónico. Envíe este correo electrónico a su administrador de TI.
+4.  Seleccione los archivos y adjúntelos a un correo electrónico. Envíe este correo electrónico al equipo de soporte técnico de su empresa.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).

@@ -16,16 +16,16 @@ ROBOTS:
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d94e3a79af1951debc4dd04413efff8f4c716545
-ms.sourcegitcommit: d2a4f4477b3bf90aac6a9db77d41747e64ad7df4
+ms.openlocfilehash: e6d5bb79925588e78d2536e3c322ccbf5dd970c5
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="outlook-wont-sync-managed-email-when-battery-optimization-for-android-is-turned-on"></a>Outlook no sincroniza el correo electrónico administrado si la optimización de la batería en Android está activada
 
 > [!IMPORTANT]
-> Este problema se documenta aquí porque hemos estado recibiendo numerosos informes de clientes relacionados con él. Si sigue experimentando este problema después de haber seguido estos pasos, póngase en contacto con su [administrador de TI](https://portal.manage.microsoft.com) para obtener más ayuda.
+> Este problema se documenta aquí porque hemos estado recibiendo numerosos informes de clientes relacionados con él. Si sigue experimentando este problema después de haber seguido estos pasos, póngase en contacto con el [equipo de soporte técnico de su empresa](https://portal.manage.microsoft.com) para obtener más ayuda.
 
 La inscripción de un dispositivo en Intune le permite obtener acceso a los recursos de empresa. Uno de los recursos más comunes es el acceso al correo electrónico. Un problema que hemos detectado con el acceso al correo electrónico con Outlook para dispositivos Android es cuando la optimización de la batería está activada. La optimización de la batería se puede activar automáticamente para que el dispositivo siga encendido el máximo de tiempo posible. En este sentido, la optimización de la batería puede ayudarle en parte porque intenta detener las descargas automáticas de correo electrónico.
 
@@ -73,4 +73,4 @@ Otro ejemplo de una forma diferente para localizar estas opciones es a través d
 2. Tap **Battery** > **Battery optimization**.
 3. Select the Company Portal and Outlook apps, then select **Don’t optimize**. Tap **Done**.-->
 
-¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).

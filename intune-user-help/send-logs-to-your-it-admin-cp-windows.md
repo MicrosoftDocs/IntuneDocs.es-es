@@ -1,5 +1,5 @@
 ---
-title: "Envío de registros al administrador de TI para dispositivos Windows 10 | Microsoft Docs"
+title: "Envío de registros al equipo de soporte técnico de su empresa para dispositivos Windows 10 | Microsoft Docs"
 description: "Inscribir un dispositivo Windows 10 versión 1511 en Intune"
 keywords: 
 author: barlanmsft
@@ -16,22 +16,22 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 47e6b663cead876b1b19f61d02efed81be4d0dbc
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: f2287700e96c798be7033eac35539e3490bc3f8a
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-logs-to-your-it-admin-from-the-company-portal-app-for-windows-10"></a>Envío de registros al administrador de TI desde la aplicación Portal de empresa para Windows 10
+# <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>Envío de registros al equipo de soporte técnico de su empresa desde la aplicación Portal de empresa para Windows 10
 
-Si se produce un error mientras usa la aplicación de portal de empresa en el dispositivo Windows 10, puede ayudar a su administrador de TI a solucionar el problema enviándole información por correo electrónico. Esta información se conserva en su dispositivo en un documento especial denominado "_registro de diagnóstico_".
+Si se produce un error mientras usa la aplicación de Portal de empresa en el dispositivo Windows 10, puede ayudar al equipo de soporte técnico de su empresa a solucionar el problema enviándole información por correo electrónico. Esta información se conserva en su dispositivo en un documento especial denominado "_registro de diagnóstico_".
 
 1.  Abra la aplicación **Portal de empresa**.
 2.  Seleccione el engranaje de **Configuración** y después **Enviar registros**.
-3.  Se abrirá el menú para **compartir**. Seleccione **Correo**. Se creará un correo electrónico con los registros del Portal de empresa adjuntos que se puede enviar al administrador de TI.
+3.  Se abrirá el menú para **compartir**. Seleccione **Correo**. Se creará un correo electrónico con los registros del Portal de empresa adjuntos que se puede enviar al equipo de soporte técnico de su empresa.
 
-  ![El cuadro de diálogo Enviar registros de la página de configuración de la aplicación de Portal de empresa. En el vínculo en el que debe hacer clic se lee "Enviar registros - Se envía el registro de diagnósticos al administrador de TI para ayudarle a solucionar problemas con el Portal de empresa".](./media/w10-share-logs.png)
+  ![El cuadro de diálogo Enviar registros de la página de configuración de la aplicación de Portal de empresa. En el vínculo en el que debe hacer clic se lee "Send logs - Send diagnostic logs to your company support to help them solve issues within the Company Portal" (Enviar registros - Se envía el registro de diagnósticos al equipo de soporte técnico de su empresa para ayudarle a solucionar problemas con el Portal de empresa).](./media/w10-share-logs.png)
 
-También debe enviar [registros desde la aplicación de configuración](send-logs-to-your-it-admin-settings-windows.md) para proporcionar a su administrador de TI más ayuda para intentar solucionar los problemas que puede encontrar. 
+También debe enviar [registros desde la aplicación de configuración](send-logs-to-your-it-admin-settings-windows.md) para proporcionar al equipo de soporte técnico de su empresa más ayuda para intentar solucionar los problemas que puede encontrar. 
 
-¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).

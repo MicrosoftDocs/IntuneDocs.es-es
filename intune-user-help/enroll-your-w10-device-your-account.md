@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 39d2dad94b949a39451dca79431be22782cddcb8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3c110bab95cbdb7c0dbe3fbe47d34b4cad5aaf07
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>Inscribir un dispositivo Windows 10 en Intune
 
@@ -50,9 +50,9 @@ ms.lasthandoff: 07/01/2017
 
     ![Iniciar sesión](./media/W10-enroll-4-sign-in.png)
 
-¿Sigue sin poder acceder a su correo electrónico, archivos u otros datos profesionales o educativos? Para corregirlo, [solucione los problemas relacionados con su cuenta](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account). Si sigue sin tener acceso, deberá ponerse en contacto con el administrador de TI para obtener más ayuda.
+¿Sigue sin poder acceder a su correo electrónico, archivos u otros datos profesionales o educativos? Para corregirlo, [solucione los problemas relacionados con su cuenta](troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-your-account). Si sigue sin tener acceso, deberá ponerse en contacto con el equipo de soporte técnico de su empresa para obtener más ayuda.
 
-Puede obtener ayuda del administrador de TI fácilmente a través de la información de contacto incluida en la aplicación de portal de empresa. Esta aplicación también le permite buscar y descargar otras aplicaciones recomendadas y necesarias para el trabajo diario. Es posible que ya tenga la aplicación de portal de empresa instalada en el dispositivo. Una manera sencilla de comprobarlo consiste en buscar __Portal de empresa__ en la lista __Todas las aplicaciones__.
+Puede obtener ayuda del equipo de soporte técnico de su empresa fácilmente a través de la información de contacto incluida en la aplicación de Portal de empresa. Esta aplicación también le permite buscar y descargar otras aplicaciones recomendadas y necesarias para el trabajo diario. Es posible que ya tenga la aplicación de portal de empresa instalada en el dispositivo. Una manera sencilla de comprobarlo consiste en buscar __Portal de empresa__ en la lista __Todas las aplicaciones__.
 
 Si no ve el Portal de empresa en su lista de aplicaciones, siga estos pasos para instalarlo.
 

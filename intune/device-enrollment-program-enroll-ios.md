@@ -6,7 +6,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 09/13/2017
+ms.date: 10/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 94eeb453e5c83c2dadaa757b4c7867f9dd3f62ff
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: 311bb42f2ef9fbf689e32eacca7420c8189251bf
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Inscribir dispositivos iOS automáticamente con el Programa de inscripción de dispositivos de Apple
 
@@ -30,6 +30,9 @@ Este tema le ayuda a habilitar la inscripción de dispositivos iOS adquiridos me
 Para habilitar la inscripción de DEP, use los portales de DEP de Apple y de Intune. Se necesita una lista de números de serie o un número de pedido de compra, de manera que pueda asignar dispositivos a Intune para la administración. Puede crear perfiles de inscripción de DEP que contengan opciones que se apliquen a los dispositivos durante la inscripción.
 
 Además, la inscripción de DEP no funciona con el [administrador de inscripción de dispositivos](device-enrollment-manager-enroll.md).
+
+## <a name="what-is-supervised-mode"></a>¿Qué es el modo de supervisión?
+Apple introdujo el modo de supervisión en iOS 5. Los dispositivos iOS que estén en modo de supervisión se pueden administrar con más controles. Por lo tanto, resulta especialmente útil para los dispositivos corporativos. Intune admite la configuración de dispositivos en el modo de supervisión como parte del Programa de inscripción de dispositivos (DEP) de Apple. 
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -77,7 +80,6 @@ Use el portal de DEP de Apple para crear un token de DEP. También puede usar el
 
 5. Se abre el cuadro de diálogo **Agregar&lt;Nombre del servidor&gt;**, indicando **Cargar la clave pública**. Elija **Elegir archivo...** para cargar el archivo .pem y, después, elija **Siguiente**.
 
-6.  El cuadro de diálogo **Agregar &lt;NombreDeServidor&gt;** muestra un vínculo **Your Server Token (Su token de servidor)**. Descargue el archivo de token de servidor (.p7m) en el equipo y, después, elija **Listo**.
 
 7. Vaya a **Programa de implementación** &gt; **Programa de inscripción de dispositivos** &gt; **Administrar dispositivos**.
 8. En **Elegir dispositivos por**, especifique cómo se identifican los dispositivos:
@@ -115,9 +117,12 @@ Ahora que ha instalado el token, puede crear un perfil de inscripción para disp
 4. Seleccione **Configuración de administración de dispositivos** para configurar las siguientes opciones de perfil:
 
   ![Captura de pantalla sobre cómo elegir el modo de administración. El dispositivo tiene las opciones Supervisado, Inscripción bloqueada y Permitir emparejamiento con el valor Denegar todo. Los certificados de Apple Configurator correspondientes a un nuevo perfil del Programa de inscripción aparecen en gris.](./media/enrollment-program-profile-mode.png)
-    - **Supervisado**: un modo de administración que permite más opciones de administración y deshabilita el bloqueo de activación de forma predeterminada. Si deja en blanco la casilla, tendrá funcionalidades de administración limitadas.
+    - **Supervisado**: un modo de administración que permite más opciones de administración y deshabilita el bloqueo de activación de forma predeterminada. Si deja en blanco la casilla, tendrá funcionalidades de administración limitadas. Microsoft recomienda usar el DEP como mecanismo para habilitar el modo de supervisión, sobre todo para las organizaciones que implementan un gran número de dispositivos iOS.
 
-    - **Inscripción bloqueada** (requiere el modo de administración Supervisado): deshabilita la configuración de iOS que podría permitir la eliminación del perfil de administración. Si deja en blanco la casilla, permite que se quite el perfil de administración en el menú Configuración. Tras la inscripción de los dispositivos, no se puede cambiar esta configuración sin restablecer el dispositivo a los valores de fábrica.
+ > [!NOTE]
+ > La configuración de un dispositivo en el modo de supervisión no se puede llevar a cabo con Intune después de que se haya inscrito el dispositivo. Después de la inscripción, la única forma de habilitar el modo de supervisión pasa por conectar un dispositivo iOS a un equipo Mac con un cable USB y usar Apple Configurator, con lo que se restablecerá el dispositivo y se configurará en modo de supervisión. Obtenga más información en los documentos de [Apple Configurator](http://help.apple.com/configurator/mac/2.3). En la pantalla de bloqueo de los dispositivos supervisados aparecerá el mensaje "This iPhone is managed by Contoso" (Este iPhone está administrado por Contoso). Por otro lado, aparecerá "This iPhone is supervised. Contoso can monitor your Internet traffic and locate this device" (Este iPhone está supervisado. Contoso puede supervisar el tráfico de Internet y localizar este dispositivo) en **Ajustes** > **General** > **Acerca de**.
+
+    - **Inscripción bloqueada** (requiere el modo de administración Supervisado): Deshabilita la configuración de iOS que podría permitir la eliminación del perfil de administración. Si deja en blanco la casilla, permite que se quite el perfil de administración en el menú Configuración. Tras la inscripción de los dispositivos, no se puede cambiar esta configuración sin restablecer el dispositivo a los valores de fábrica.
 
   - **Habilitar iPad compartido**: el Programa de inscripción de dispositivos de Apple no admite iPad compartido.
 
@@ -146,6 +151,7 @@ Ahora que ha instalado el token, puede crear un perfil de inscripción para disp
         - **Datos de diagnóstico**
 
     Elija **Guardar**.
+
 9. Para guardar la configuración del perfil, seleccione **Crear** en la hoja **Crear perfil de inscripción**. El perfil de inscripción aparece en la lista de Perfiles de inscripción del Programa de inscripción de Apple.
 
 ## <a name="sync-managed-devices"></a>Sincronizar dispositivos administrados

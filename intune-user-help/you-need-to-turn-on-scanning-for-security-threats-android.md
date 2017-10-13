@@ -14,16 +14,16 @@ ms.assetid: b3e5994c-d215-4c72-8915-349bd0b2504d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 668f105b65f5bdd8d05600a935aba3c0d46314d5
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 61a9d7006a19888e0a43762b59300fcc62c1313c
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="you-need-to-make-your-device-able-to-scan-for-security-threats"></a>Es necesario que el dispositivo pueda analizar las amenazas de seguridad
 
-El dispositivo Android puede descargar e instalar aplicaciones que cumplan una gran variedad de tareas. No todas las aplicaciones son iguales y algunas aplicaciones pueden provocar problemas. Una recomendación general es descargar aplicaciones solo a partir de fuentes comprobadas, como Google Play Store. Una forma en la que el administrador de TI ha decidido proteger de forma adicional los datos en el dispositivo es que Google analice las aplicaciones que está instalando para asegurarse de que son seguras.
+El dispositivo Android puede descargar e instalar aplicaciones que cumplan una gran variedad de tareas. No todas las aplicaciones son iguales y algunas aplicaciones pueden provocar problemas. Una recomendación general es descargar aplicaciones solo a partir de fuentes comprobadas, como Google Play Store. Una forma en la que el equipo de soporte técnico de su empresa ha decidido proteger de forma adicional los datos en el dispositivo es que Google analice las aplicaciones que está instalando para asegurarse de que son seguras.
 
 Puede activar este análisis dirigiéndose a **Configuración** > **Google** > **Seguridad** y activando **Buscar amenazas de seguridad en el dispositivo**.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).
