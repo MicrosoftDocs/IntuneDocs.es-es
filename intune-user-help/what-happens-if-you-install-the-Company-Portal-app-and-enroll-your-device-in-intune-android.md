@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e9057866ac8f8e5d8487a93401282117a72015cd
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 38ee5446c679472927f4dccecfdc56f1228fb92c
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo Android en Intune?
 
@@ -34,13 +34,13 @@ Al instalar la aplicación Portal de empresa e inscribir su dispositivo Android 
 
 -   Restablecer el teléfono a la configuración de fábrica si lo pierde o se lo roban.
 
-Al inscribir un dispositivo Android, da permiso al administrador de TI para acceder a él. El administrador puede hacer cosas como:
+Al inscribir un dispositivo Android, da permiso al equipo de soporte técnico de su empresa para obtener acceso a él. El administrador puede hacer cosas como:
 
 -   Restablecer la configuración predeterminada de fábrica del dispositivo. Esto es útil en caso de pérdida o robo del dispositivo.
 
 -   Quitar todos los datos relacionados con la empresa. Los datos personales y la configuración no se quitan.
 
--   Establecer requisitos en el dispositivo, como la necesidad de disponer de una contraseña o de un PIN para ayudar a proteger los datos de la empresa. El administrador de TI también puede limitar cuántas veces puede especificar una contraseña incorrecta y podría bloquearle el acceso al dispositivo si se equivoca demasiadas veces.
+-   Establecer requisitos en el dispositivo, como la necesidad de disponer de una contraseña o de un PIN para ayudar a proteger los datos de la empresa. El equipo de soporte técnico de su empresa también puede limitar cuántas veces puede especificar una contraseña incorrecta y podría bloquearle el acceso al dispositivo si se equivoca demasiadas veces.
 
 -   Debe aceptar los términos y condiciones.
 
@@ -50,10 +50,10 @@ Al inscribir un dispositivo Android, da permiso al administrador de TI para acce
 
 Una vez agregado el dispositivo al Portal de empresa, este hará lo siguiente cada ocho horas aproximadamente:
 
--   Descargar las actualizaciones de directivas o aplicaciones proporcionadas por el administrador de TI.
+-   Descargar las actualizaciones de directivas o aplicaciones proporcionadas por el equipo de soporte técnico de su empresa.
 
 -   Enviar actualizaciones de inventario de hardware. (Estas actualizaciones no tienen información personal).
 
 -   Enviar actualizaciones de inventario de aplicaciones de empresa. (Estas actualizaciones no tienen información personal).
 
-¿Necesita ayuda? Póngase en contacto con el administrador de TI (visite el [sitio web del Portal de empresa](https://portal.manage.microsoft.com) para obtener la información de contacto), o escriba al <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">equipo de Microsoft Android</a>.
+¿Necesita ayuda? Póngase en contacto con el equipo de soporte técnico de su empresa (visite el [sitio web del Portal de empresa](https://portal.manage.microsoft.com) para obtener la información de contacto), o escriba al <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">equipo de Microsoft Android</a>.

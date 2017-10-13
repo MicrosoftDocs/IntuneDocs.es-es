@@ -14,11 +14,11 @@ ms.assetid: c002bcb2-ae37-478d-acf3-2bf51faae490
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 1cccc69ab772499183a7f434303d78ecf4308a5f
-ms.sourcegitcommit: 1c71fff769ca0097faf46fc2b58b953ff28386e8
+ms.openlocfilehash: d9a7ba4e3a4c10919ba933cc59c8093bec3588db
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/08/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-update-the-company-portal-app"></a>Cómo actualizar la aplicación de portal de empresa
 
@@ -45,7 +45,7 @@ Para actualizar la aplicación del Portal de empresa:
 2.  Siga los pasos de instalación.
 
     > [!NOTE]
-    > Si no puede tener acceso a la Microsoft Store, póngase en contacto con el administrador de TI.
+    > Si no puede tener acceso a la Microsoft Store, póngase en contacto con el equipo de soporte técnico de su empresa.
 
 
-¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).

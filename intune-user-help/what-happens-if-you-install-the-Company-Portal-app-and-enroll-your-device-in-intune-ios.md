@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b0205ebce012912cacc738382cadf56a355482f0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 8867125c9112089bda574f2bd710ddbc3d0b214c
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-or-macos-device-in-intune"></a>¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo iOS o macOS en Intune?
 
@@ -34,9 +34,9 @@ Al instalar la aplicación Portal de empresa e inscribir su dispositivo iOS o ma
 
 -   Configurar automáticamente la cuenta de correo electrónico profesional.
 
-Cuando inscribe el dispositivo en Intune, está concediendo permiso al administrador de TI para administrarlo con el fin de ayudarle a proteger la información de la empresa que tiene en el mismo.
+Cuando inscribe el dispositivo en Intune, está concediendo permiso al equipo de soporte técnico de su empresa para administrarlo con el fin de ayudarle a proteger la información de la empresa que tiene en el mismo.
 
-Cuando el dispositivo esté inscrito, el Administrador de TI podrá:
+Cuando el dispositivo esté inscrito, el equipo de soporte técnico de su empresa podrá:
 
 -   Restablecer la configuración predeterminada de fábrica del dispositivo, si este se le pierde o se lo roban.
 
@@ -62,4 +62,4 @@ Cuando el dispositivo esté inscrito, el Administrador de TI podrá:
 
 -   Habilitar o deshabilitar en el dispositivo la sincronización automática de archivos en modo de movilidad. Si se permite la sincronización automática de archivos, podrían aplicarse cargos por movilidad.
 
-Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).
+Si tiene alguna pregunta, póngase en contacto con el equipo de soporte técnico de su empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).

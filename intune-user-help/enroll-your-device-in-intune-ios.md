@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 975344e5eb773a2bff3a04d11e4e63d167b30b29
-ms.sourcegitcommit: 2d67df51af66ec859587b66a6ce3965461601c29
+ms.openlocfilehash: 41f39740b62074e06ccc64c6211d642d224efd6c
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-ios-device-in-intune"></a>Inscriba el dispositivo iOS en Intune
 
@@ -54,7 +54,7 @@ Si su empresa o centro educativo usa Microsoft Intune, puede inscribir un dispos
   > [!NOTE]
   > Los triángulos amarillos no significan que ya haya un error. Estos iconos indican que todavía hay pasos del proceso de inscripción que deben completarse.
 
-4. Revise una lista sobre lo que el administrador de TI puede y no puede ver en el dispositivo inscrito y después pulse **Continuar**.
+4. Revise una lista sobre lo que el equipo de soporte técnico de su empresa puede y no puede ver en el dispositivo inscrito y después pulse **Continuar**.
 
     ![ios-enroll-what-it-can-see](./media/ios-enroll-1c-we-care-privacy.png)
 
@@ -101,4 +101,4 @@ El dispositivo ya está inscrito en Intune. Se le dirigirá de nuevo a la aplica
 > [!Note]
 > Debe seguir unos pocos pasos más para que el dispositivo esté totalmente inscrito. Obtenga más información sobre cómo [inscribir el dispositivo mediante la administración de gastos de telecomunicaciones](enroll-your-device-with-telecom-expense-management-ios.md). Si su organización usa el Programa de inscripción de dispositivos de Apple, obtenga más información [aquí](enroll-your-device-dep-ios.md).
 
-¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).

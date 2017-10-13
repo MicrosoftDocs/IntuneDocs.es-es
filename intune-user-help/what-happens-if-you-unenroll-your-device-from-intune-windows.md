@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3de9589c46250727b1994381c24c68e6e2b90da2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 3b5b4136d1f6cee1dd16f9b946b35c9edf46481a
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-unenroll-your-windows-device-from-intune"></a>¿Qué ocurre si anula la inscripción del dispositivo Windows de Intune?
 
@@ -85,4 +85,4 @@ Si se quita un dispositivo Windows RT, ocurre lo siguiente:
 
 -   Dejará de aplicarse cualquier configuración que se modificara en el dispositivo al agregarlo, por ejemplo, deshabilitar la cámara o exigir una determinada longitud de la contraseña.
 
-Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+Si tiene alguna pregunta, póngase en contacto con el equipo de soporte técnico de su empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).

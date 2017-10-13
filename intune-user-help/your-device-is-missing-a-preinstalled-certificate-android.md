@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 63595e9905a220c326c315f5932379a9b743d3de
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 52070573560b798044c929b0fa9476cf1f7bbf89
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="your-android-device-is-missing-a-certificate-that-usually-comes-installed-on-your-phone"></a>El dispositivo Android no tiene un certificado que normalmente viene instalado en el teléfono
 
@@ -42,9 +42,9 @@ Puede solucionar este problema al obtener el certificado necesario de la [págin
 
 5. Cierre el explorador y la aplicación de portal de empresa.
 
-6. Vuelva a abrir la aplicación del portal de empresa. Ahora debería poder iniciar sesión en la aplicación Portal de empresa. Si todavía no puede usar la aplicación de portal de empresa, póngase en contacto con el administrador de TI con la información proporcionada en el [sitio web del portal de empresa](http://portal.manage.microsoft.com) para obtener más instrucciones.
+6. Vuelva a abrir la aplicación del portal de empresa. Ahora debería poder iniciar sesión en la aplicación Portal de empresa. Si todavía no puede usar la aplicación de Portal de empresa, póngase en contacto con el equipo de soporte técnico de su empresa con la información proporcionada en el [sitio web del Portal de empresa](https://portal.manage.microsoft.com) para obtener más instrucciones.
 
 >[!NOTE]
 > Si instala este certificado, no se soluciona el problema, verá un mensaje distinto "Falta un certificado" y tendrá que realizar pasos adicionales para [instalar el certificado que falta](your-device-is-missing-an-IT-required-certificate-android.md).
 
-¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).

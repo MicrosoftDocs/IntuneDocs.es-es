@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 393a1aa0f9e917d2a124f4deaa086f0369ded4ef
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 0b6667bc25263cdc8d638027f4e846724e15b1d0
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="set-your-pin-or-password"></a>Establecimiento del PIN o la contraseña
 
-El administrador de TI puede pedir que establezca un PIN o una contraseña en el dispositivo Android cuando use Intune para tener acceso a datos profesionales o educativos. También es posible que aparezcan mensajes que le exijan alargar el PIN o la contraseña o hacerlos más complejos para que sean más seguros. Por ejemplo, estos códigos de acceso se utilizan para acceder al dispositivo desde la pantalla de bloqueo.
+El equipo de soporte técnico de su empresa puede pedir que establezca un PIN o una contraseña en el dispositivo Android cuando use Intune para tener acceso a datos profesionales o educativos. También es posible que aparezcan mensajes que le exijan alargar el PIN o la contraseña o hacerlos más complejos para que sean más seguros. Por ejemplo, estos códigos de acceso se utilizan para acceder al dispositivo desde la pantalla de bloqueo.
 
 Para establecer un PIN o una contraseña, use los siguientes pasos.
 
@@ -33,4 +33,4 @@ Para establecer un PIN o una contraseña, use los siguientes pasos.
 2.  Elija y confirme la nueva contraseña.
 
 
-¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).

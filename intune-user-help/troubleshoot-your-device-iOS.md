@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3869659ea95f561365f40bcfcd164b82a7795ac0
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 50b4b9c8399e854e2f5961f6711090778b41ba37
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="fix-common-issues-with-your-ios-device"></a>Solución de problemas comunes con el dispositivo iOS
 
-A veces pueden producirse problemas con el dispositivo iOS que puede corregirse mediante la solución de problemas. A continuación se enumeran algunos problemas comunes que puede intentar resolver primero por su cuenta. Para problemas más complejos, se recomienda ponerse en contacto con el administrador de TI mediante su información de contacto en el [sitio web del Portal de empresa](http://portal.manage.microsoft.com).
+A veces pueden producirse problemas con el dispositivo iOS que puede corregirse mediante la solución de problemas. A continuación se enumeran algunos problemas comunes que puede intentar resolver primero por su cuenta. En el caso de problemas más complejos, le recomendamos que se ponga en contacto con el equipo de soporte técnico de su empresa mediante sus datos de contacto en el [sitio web del Portal de empresa](https://portal.manage.microsoft.com).
 
 - [Tengo que volver a conectar un dispositivo iOS en riesgo](how-to-reconnect-a-compromised-ios-device.md)
-- [Tengo que enviar errores al administrador de TI](send-errors-to-your-it-admin-ios.md)
+- [Tengo que enviar errores al equipo de soporte técnico de mi empresa](send-errors-to-your-it-admin-ios.md)
 - [Tengo que enviar errores a Microsoft](send-logs-to-microsoft-ios.md)
 - [Ha aparecido un error mientras usaba la aplicación Portal de empresa](you-get-an-error-while-using-the-company-portal-app-ios.md)
 - [Tengo que identificar el dispositivo para inscribirlo](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)

@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fe406fe2deb89fca1f3ab9d949ea78b779ee13af
-ms.sourcegitcommit: eb726c7e3a6e7defb74e69861447c96de0d1bb65
+ms.openlocfilehash: 3a2622c7c981e64b3e220424c6661a5ba9e30751
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>Cómo proteger el dispositivo Android mediante el cifrado
 
 Cuando cifra un dispositivo, está ajustando la información en una capa de código de protección que evita que los usuarios sin autorización tengan acceso a él. Para asegurarnos de que su información está protegida, la organización le pide que cifre su dispositivo Android antes de poder acceder a archivos, correos electrónicos o datos de la empresa.
 
 > [!Note]
-> Si el administrador de TI así lo requiere, puede que tenga que establecer un PIN o una contraseña antes del cifrado.
+> Si el equipo de soporte técnico de su empresa así lo requiere, puede que tenga que establecer un PIN o una contraseña antes del cifrado.
 
 Si anula la inscripción del dispositivo, este permanecerá cifrado.
 
@@ -52,7 +52,7 @@ Si anula la inscripción del dispositivo, este permanecerá cifrado.
 
 - Asegúrese de que el dispositivo está cargado y conectado.
 - Asegúrese de que ha establecido un PIN o una contraseña en el dispositivo.
-- Si ya ha configurado un PIN o una contraseña en el dispositivo, intente los pasos siguientes que podría requerir el administrador de TI para hacer que el dispositivo sea más seguro. Los nombres de menú que verá pueden diferir ligeramente de los incluidos en los pasos, en función del tipo de dispositivo Android que tenga.
+- Si ya ha configurado un PIN o una contraseña en el dispositivo, intente los pasos siguientes que podría requerir el equipo de soporte técnico de su empresa para hacer que el dispositivo sea más seguro. Los nombres de menú que verá pueden diferir ligeramente de los incluidos en los pasos, en función del tipo de dispositivo Android que tenga.
 
     1. Vaya a **Configuración** > **Pantalla de bloqueo y seguridad** > **Bloqueo de pantalla**. Confirme su PIN o contraseña actual.
 
@@ -66,4 +66,4 @@ Si anula la inscripción del dispositivo, este permanecerá cifrado.
 
     6. Abra la aplicación de Portal de empresa, seleccione el dispositivo y pulse **Comprobar cumplimiento**.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI (visite el [sitio web del Portal de empresa](http://portal.manage.microsoft.com) para obtener la información de contacto), o escriba al <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">equipo de Microsoft Android</a>.
+¿Sigue necesitando ayuda? Póngase en contacto con el equipo de soporte técnico de su empresa (visite el [sitio web del Portal de empresa](https://portal.manage.microsoft.com) para obtener la información de contacto), o escriba al <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">equipo de Microsoft Android</a>.

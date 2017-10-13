@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 787fbdd470b4e1fbb4cb3e22ba4065e52d4c63f8
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: afb3aeff7a7c6cc481d24bac3a61de0816b4d34b
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Habilitación de la inscripción de dispositivos iOS con Apple School Manager
 
@@ -94,8 +94,8 @@ Un perfil de inscripción de dispositivos define la configuración que se aplica
 
     - **Supervisado**: un modo de administración que permite más opciones de administración y deshabilita el bloqueo de activación de forma predeterminada. Si deja en blanco la casilla, tendrá funcionalidades de administración limitadas.
 
-     - **Inscripción bloqueada** (requiere el modo de administración Supervisado): deshabilita la configuración de iOS que podría permitir la eliminación del perfil de administración. Si deja en blanco la casilla, permite que se quite el perfil de administración en el menú Configuración.
-   - **iPad compartido**: (requiere los modos **Inscribir sin afinidad de usuario** y **Supervisado**). Permite que varios usuarios inicien sesión en dispositivos iPad inscritos mediante el uso de un identificador de Apple administrado. Los identificadores de Apple administrados se crean en el portal de Apple School Manager. Obtenga más información sobre los dispositivos [iPad compartidos](education-settings-configure-ios-shared.md). También debe revisar los [requisitos para compartir un iPad de Apple](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
+     - **Inscripción bloqueada** (requiere el modo de administración Supervisado): Deshabilita la configuración de iOS que podría permitir la eliminación del perfil de administración. Si deja en blanco la casilla, permite que se quite el perfil de administración en el menú Configuración.
+   - **iPad compartido habilitado** (requiere **Inscribir sin afinidad de usuario** y el modo Supervisado). Permite que varios usuarios inicien sesión en dispositivos iPad inscritos mediante el uso de un identificador de Apple administrado. Los identificadores de Apple administrados se crean en el portal de Apple School Manager. Obtenga más información sobre los dispositivos [iPad compartidos](education-settings-configure-ios-shared.md). También debe revisar los [requisitos para compartir un iPad de Apple](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
 
    >[!NOTE]
    >Si **Afinidad de usuario** se establece en **Con afinidad de usuario** o el modo **Supervisado** se establece en **Desactivado**, el modo iPad compartido está deshabilitado para el perfil de inscripción.

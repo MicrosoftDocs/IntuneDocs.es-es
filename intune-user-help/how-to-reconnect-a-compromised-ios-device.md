@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 208b7775ef66042339ed5e77637a6f0d63eb9831
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: a808f9030053b1aee571dbde9bba01d5d503a8a2
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="how-to-reconnect-a-compromised-ios-device"></a>Cómo volver a conectar un dispositivo iOS en riesgo
 
-El administrador de TI ha detectado que está utilizando un dispositivo desbloqueado. Por "descodificado" se entiende que el dispositivo se ha cambiado para permitir el acceso sin restricciones a determinados archivos importantes, lo que puede poner en riesgo la seguridad y podría ser una amenaza para los recursos de la empresa.
+El equipo de soporte técnico de su empresa ha detectado que está usando un dispositivo desbloqueado. Por "descodificado" se entiende que el dispositivo se ha cambiado para permitir el acceso sin restricciones a determinados archivos importantes, lo que puede poner en riesgo la seguridad y podría ser una amenaza para los recursos de la empresa.
 
-Cuando esto sucede, el dispositivo ya no puede tener acceso a recursos de la empresa y debe ponerse en contacto con el administrador de TI para obtener ayuda. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+Cuando esto sucede, el dispositivo ya no puede tener acceso a recursos de la empresa y debe ponerse en contacto con el equipo de soporte técnico de su empresa para obtener ayuda. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).

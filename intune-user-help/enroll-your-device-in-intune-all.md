@@ -14,15 +14,15 @@ ms.assetid: b51dbdd6-aaa3-48dd-a47f-9d01a4ca37f6
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 7b4206d49731195dc08fed5e91942f6071789724
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 6d6b1addbc03664e5eeaff34eef3042503a1470e
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="enroll-your-device-in-intune"></a>Inscripción del dispositivo en Intune
 
-Si su empresa o centro educativo usa Microsoft Intune, puede inscribir los dispositivos para obtener acceso al correo electrónico, a los archivos y a otros recursos de la empresa. Cuando los dispositivos están inscritos, la organización puede tener protegidos los datos corporativos. Para más información sobre la inscripción y lo que el administrador de TI puede y no puede ver en el dispositivo, vea los vínculos al final de este tema.
+Si su empresa o centro educativo usa Microsoft Intune, puede inscribir los dispositivos para obtener acceso al correo electrónico, a los archivos y a otros recursos de la empresa. Cuando los dispositivos están inscritos, la organización puede tener protegidos los datos corporativos. Para más información sobre la inscripción y lo que el equipo de soporte técnico de su empresa puede y no puede ver en el dispositivo, vea los vínculos al final de este tema.
 
 Para ver instrucciones de inscripción, seleccione el vínculo correspondiente al tipo de dispositivo que use:
 

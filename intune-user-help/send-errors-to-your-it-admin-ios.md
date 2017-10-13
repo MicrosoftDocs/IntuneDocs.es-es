@@ -1,5 +1,5 @@
 ---
-title: Enviar errores al administrador de TI | Microsoft Docs
+title: "Enviar errores al equipo de soporte técnico de su empresa | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 12fe4702217ad180a94dcf4d79326dd6840a7839
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: aff747c4888c0ad9a222735b8eadf40878cc294b
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-errors-to-your-it-admin-for-issues-with-your-ios-device"></a>Envío de errores al administrador de TI por problemas con dispositivos iOS
+# <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>Envío de errores al equipo de soporte técnico de su empresa por problemas con dispositivos iOS
 
-Si se producen errores en el dispositivo iOS mientras usa la aplicación de portal de empresa, puede enviar información para que le sea más fácil al administrador de TI solucionar el problema. Puede enviar información de errores de maneras diferentes:
+Si se producen errores en el dispositivo iOS mientras usa la aplicación de Portal de empresa, puede enviar información para que le sea más fácil al equipo de soporte técnico de su empresa solucionar el problema. Puede enviar información de errores de maneras diferentes:
 
 -   En los mensajes de alerta de error, pulse **Informe**.
 
@@ -32,4 +32,4 @@ Si se producen errores en el dispositivo iOS mientras usa la aplicación de port
 
 -   En la aplicación Portal de empresa, agite su dispositivo y, luego, pulse **Enviar informe de diagnóstico** cuando aparezca la alerta de diagnóstico. Si la alerta no aparece cuando agita el dispositivo, abra **Configuración** > **Portal de empresa** y asegúrese de que la opción **Gesto de sacudida** está activada.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).

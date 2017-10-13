@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ca763562c96c4c5f4f4e6bcf317bb6ccba68d8d2
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 2958710c0f758e16e2613627782f81e26f1d3051
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-when-you-create-a-work-profile"></a>¿Qué ocurre cuando se crea un perfil de trabajo?
 
@@ -28,9 +28,9 @@ Un perfil de trabajo es algo que se configura en el dispositivo para mantener el
 
 Cuando se crea un perfil de trabajo:
 
-- El administrador de TI puede administrar únicamente el correo electrónico, las aplicaciones, las opciones de configuración y los datos relacionados con el trabajo en el dispositivo, no las aplicaciones ni los datos personales.
+- El equipo de soporte técnico de su empresa puede administrar únicamente el correo electrónico, las aplicaciones, las opciones de configuración y los datos relacionados con el trabajo en el dispositivo, no las aplicaciones ni los datos personales.
 
-- Puede obtener aplicaciones de trabajo en Play Store for Work. Para obtener aplicaciones personales, acceda a Google Play Store para conseguirlas. El Administrador de TI no puede ver ni administrar las aplicaciones personales.
+- Puede obtener aplicaciones de trabajo en Play Store for Work. Para obtener aplicaciones personales, acceda a Google Play Store para conseguirlas. El equipo de soporte técnico de su empresa no puede ver ni administrar las aplicaciones personales.
 
 - Las aplicaciones de trabajo están separadas de las aplicaciones personales, pero pueden aparecen ambas en la pantalla principal al mismo tiempo. A continuación se muestra un ejemplo de lo que podría ver. Su pantalla podría tener un aspecto algo diferente.
 
@@ -38,9 +38,9 @@ Cuando se crea un perfil de trabajo:
 
     ![Android Play Store for Work](./media/afw-google-play-store-for-work.png)
 
-- Su empresa o centro educativo posee su perfil de trabajo, por lo que el administrador de TI puede instalar o quitar las aplicaciones de trabajo o su perfil, pero no sus aplicaciones o datos personales.
-- El administrador de TI no puede restablecer ni borrar su dispositivo.
+- Su empresa o centro educativo posee su perfil de trabajo, por lo que el equipo de soporte técnico de su empresa puede instalar o quitar las aplicaciones de trabajo o su perfil, pero no sus aplicaciones o datos personales.
+- El equipo de soporte técnico de su empresa no puede restablecer ni borrar su dispositivo.
 
 Para ver los pasos necesarios para crear un perfil de trabajo, consulte [Creación de un perfil de trabajo e inscripción del dispositivo](create-a-work-profile-and-enroll-your-device-in-intune-android.md).
 
-¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).

@@ -1,5 +1,5 @@
 ---
-title: "Enviar errores de inscripción al administrador de TI | Microsoft Docs"
+title: "Enviar errores de inscripción al equipo de soporte técnico de su empresa | Microsoft Docs"
 description: "Enviar errores de inscripción al administrador"
 keywords: 
 author: barlanmsft
@@ -16,19 +16,19 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 667282ef1ab6e5058e852b6e3b94daecd01c5d53
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 95be9fd1df23e8cc4c6d41f6c9f49cd30eef87cf
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-enrollment-errors-to-your-it-admin"></a>Enviar errores de inscripción a su administrador de TI
+# <a name="send-enrollment-errors-to-your-company-support"></a>Enviar errores de inscripción al equipo de soporte técnico de su empresa
 
-Si recibe un error al intentar inscribir el dispositivo Android en Intune, puede intentar volver a inscribirlo pulsando **Reintentar**. Si esto no funciona, puede enviar información acerca de lo que está ocurriendo al administrador de TI en un correo electrónico pulsando **Enviar información**.
+Si recibe un error al intentar inscribir el dispositivo Android en Intune, puede intentar volver a inscribirlo pulsando **Reintentar**. Si esto no funciona, puede enviar información sobre lo que está ocurriendo al equipo de soporte técnico de su empresa en un correo electrónico pulsando **Enviar información**.
 
-Al tocar en **Enviar información**, se crea automáticamente un correo electrónico. El correo electrónico se dirige a su administrador de TI y contiene la información o _registros_ que el administrador de TI necesita para ayudar a solucionar los problemas en el dispositivo.
+Al tocar en **Enviar información**, se crea automáticamente un correo electrónico. El correo electrónico se dirige al equipo de soporte técnico de su empresa y contiene la información o los _registros_ que el equipo de soporte técnico necesita para ayudar a solucionar los problemas del dispositivo.
 
-Hay diferentes maneras de enviar los registros de datos del dispositivo al administrador de TI para obtener ayuda con los errores:
+Hay diferentes maneras de enviar los registros de datos del dispositivo al equipo de soporte técnico de su empresa para obtener ayuda con los errores:
 
 - [Usar el botón Enviar información para enviar registros por correo electrónico](send-logs-to-your-it-admin-by-email-android.md)
 - [Usar un cable USB para enviar registros como un archivo adjunto de correo electrónico](send-logs-to-your-it-admin-using-cable-android.md)

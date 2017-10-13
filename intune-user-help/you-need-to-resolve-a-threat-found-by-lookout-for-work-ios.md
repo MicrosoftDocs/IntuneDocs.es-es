@@ -1,6 +1,6 @@
 ---
 title: Resolver amenazas encontradas por Lookout for Work en iOS | Microsoft Docs
-description: 
+description: Aprenda a resolver una amenaza detectada por Lookout for Work en iOS.
 keywords: 
 author: barlanmsft
 ms.author: barlan
@@ -14,13 +14,13 @@ ms.assetid: dd6aec3a-4063-4054-8d0f-d2f2034f0d3d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 4b51ad3fcc04d8e4b2cb6da6982f62885f466080
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 1b5a49c4bb29f5511dc13b7d12928b11fd98b2de
+ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="you-need-to-resolve-a-threat-found-by-lookout-for-work"></a>Debe solucionar una amenaza detectada por Lookout for Work
+# <a name="resolve-a-threat-found-by-lookout-for-work"></a>Resolver una amenaza detectada por Lookout for Work
 
 Lookout for Work ha detectado una amenaza potencial en el dispositivo que es necesario solucionar para recuperar el acceso al correo electrónico profesional o educativo, a las aplicaciones y a los archivos. El mensaje que ve podría ser similar a este:
 
@@ -34,7 +34,7 @@ Si hay un virus u otra amenaza de seguridad en el dispositivo inscrito e intenta
 
 ![Mensaje de error de Lookout for Work con vínculo al sitio web de Portal de empresa](./media/mtd-go-to-device-management-portal-android.png)
 
-Pulse el vínculo del **portal de administración de dispositivos** para ir al [sitio web de Portal de empresa](http://portal.manage.microsoft.com), donde verá instrucciones sobre cómo solucionar el problema.
+Pulse el vínculo del **portal de administración de dispositivos** para ir al [sitio web de Portal de empresa](https://portal.manage.microsoft.com), donde verá instrucciones sobre cómo solucionar el problema.
 
 ## <a name="example-of-an-app-that-lookout-for-work-sees-as-a-threat"></a>Ejemplo de aplicación que Lookout for Work considera una amenaza
 
@@ -46,4 +46,5 @@ Si ve algo similar a esto, pulse el nombre de la aplicación que se muestra en l
 
 Después de desinstalar la aplicación, se recupera el acceso al correo electrónico y a otros datos de la empresa o la institución educativa inmediatamente. Si omite la solicitud de desinstalar la aplicación, perderá el acceso al correo electrónico y a los datos de la empresa hasta que desinstale la aplicación.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).
+

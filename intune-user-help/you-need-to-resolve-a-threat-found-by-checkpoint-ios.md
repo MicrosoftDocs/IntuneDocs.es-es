@@ -1,26 +1,26 @@
 ---
-title: Resolver amenazas detectadas por SandBlast Mobile Protect en Android | Microsoft Docs
-description: Aprenda a resolver una amenaza detectada por Mobile Protect en Android.
+title: Resolver amenazas detectadas por SandBlast Mobile Protect en iOS | Microsoft Docs
+description: Aprenda a resolver una amenaza detectada por Mobile Protect en iOS.
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/25/2017
+ms.date: 08/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 449c34ec-2d94-4c7f-8691-a5200efee3cb
+ms.assetid: 5b2a69e7-cc86-4f1b-81d9-35b8b23b937b
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 2bcf23192829b5613b9245699cea47ffb85492f3
+ms.openlocfilehash: 568bc0c0627e78ce4dd73cdfe8f74afa7f544b46
 ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 09/28/2017
 ---
-# <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>Resolver una amenaza detectada por SandBlast Mobile Protect
+# <a name="you-need-to-resolve-a-threat-found-by-sandblast-mobile-protect"></a>Necesita solucionar una amenaza detectada por SandBlast Mobile Protect
 
 SandBlast Mobile Protect ha detectado una amenaza potencial en el dispositivo que es necesario solucionar para recuperar el acceso al correo electrónico profesional o educativo, a las aplicaciones y a los archivos. El mensaje que vea dependerá del problema que SandBlast Mobile Protect haya detectado en el dispositivo.
 
@@ -30,7 +30,7 @@ Para solucionar el problema, abra la aplicación SandBlast Mobile Protect y siga
 
 Si hay un virus u otra amenaza de seguridad en el dispositivo inscrito e intenta tener acceso al correo electrónico o a los archivos de la empresa, un mensaje de SandBlast Mobile Protect le avisará de que debe tomar medidas.
 
-Pulse el vínculo del **portal de administración de dispositivos** para ir al [sitio web del portal de empresa](https://portal.manage.microsoft.com), donde obtendrá instrucciones sobre cómo solucionar el problema.
+Pulse el vínculo del **portal de administración de dispositivos** para ir al [sitio web del portal de empresa](http://portal.manage.microsoft.com), donde obtendrá instrucciones sobre cómo solucionar el problema.
 
 ## <a name="example-of-an-app-that-sandblast-mobile-protect-sees-as-a-threat"></a>Ejemplo de aplicación que SandBlast Mobile Protect considera una amenaza
 
@@ -38,4 +38,4 @@ Si ha instalado una aplicación que SandBlast Mobile Protect considera una amena
 
 Cuando esto suceda, desinstale la aplicación para recuperar el acceso al correo electrónico y a los datos de la empresa inmediatamente. Si no lo hace, perderá el acceso al correo electrónico y a los datos hasta que desinstale la aplicación.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).

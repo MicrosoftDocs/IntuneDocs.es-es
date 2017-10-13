@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 052de47e19f4e171428ee22b4701ed516461231f
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 926e09173918488d6beb1f0e3f725a0cff2971b4
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo Windows en Intune?
 
-Al instalar la aplicación Portal de empresa y después usarla para inscribir un dispositivo Windows o Windows Phone, lo que hace es permitir que el administrador de TI administre el dispositivo para ayudar a mantener los datos profesionales o académicos seguros. En este tema se explica lo que ocurre con los dispositivos anteriores a Windows 10. Para dispositivos Windows 10, vea el [tema relacionado](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
+Al instalar la aplicación Portal de empresa y después usarla para inscribir un dispositivo Windows o Windows Phone, lo que hace es permitir que el equipo de soporte técnico de su empresa administre el dispositivo para ayudar a mantener los datos profesionales o académicos seguros. En este tema se explica lo que ocurre con los dispositivos anteriores a Windows 10. Para dispositivos Windows 10, vea el [tema relacionado](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
 
 ## <a name="what-happens-to-all-windows-devices-after-enrollment"></a>¿Qué ocurre con todos los dispositivos Windows después de la inscripción?
 Cuando inscribe un dispositivo Windows o Windows Phone en Intune, puede:
@@ -37,15 +37,15 @@ Cuando inscribe un dispositivo Windows o Windows Phone en Intune, puede:
 
 -   Restablecer el teléfono a la configuración de fábrica si lo pierde o se lo roban.
 
-Al inscribir el dispositivo, da permiso al administrador de TI para hacer cosas como estas:
+Al inscribir el dispositivo, da permiso al equipo de soporte técnico de su empresa para hacer cosas como estas:
 
 -   Restablecer la configuración predeterminada de fábrica del dispositivo. Esto es útil en caso de pérdida o robo del dispositivo.
 
 -   Quitar solo los archivos relacionados con la empresa y las aplicaciones empresariales. *Los datos personales y la configuración no se quitan.*
 
--   El administrador de TI puede ver el software instalado en el dispositivo, incluido el que usted haya instalado.
+-   El equipo de soporte técnico de su empresa puede ver el software instalado en el dispositivo, incluido el que usted haya instalado.
 
--   Establecer requisitos en el dispositivo, como la necesidad de disponer de una contraseña o de un PIN para ayudar a proteger los datos de la empresa. El administrador de TI también puede limitar cuántas veces puede especificar una contraseña incorrecta y podría bloquearle el acceso al dispositivo si se equivoca demasiadas veces.
+-   Establecer requisitos en el dispositivo, como la necesidad de disponer de una contraseña o de un PIN para ayudar a proteger los datos de la empresa. El equipo de soporte técnico de su empresa también puede limitar cuántas veces puede especificar una contraseña incorrecta y podría bloquearle el acceso al dispositivo si se equivoca demasiadas veces.
 
 -   Exigir el cifrado de los datos en el dispositivo para ayudar a proteger los datos de la empresa, en caso de pérdida o robo de su dispositivo.
 
@@ -55,22 +55,22 @@ Al inscribir el dispositivo, da permiso al administrador de TI para hacer cosas 
 
 ## <a name="what-happens-to-all-windows-pcs-after-enrollment"></a>¿Qué ocurre con todos los equipos de Windows después de la inscripción?
 
--  El software se instalará en el equipo para permitir que el administrador de TI lo administre y para permitirle a usted acceder a recursos de la empresa como aplicaciones e información de soporte técnico. El administrador de TI puede actualizar automáticamente este software.
+-  El software se instalará en el equipo para permitir que el equipo de soporte técnico de su empresa lo administre y para permitirle a usted obtener acceso a recursos de la empresa como aplicaciones e información de soporte técnico. El equipo de soporte técnico de su empresa puede actualizar automáticamente este software.
 
 -  Intune Endpoint Protection puede instalarse en el equipo. Se trata de un software que permite detectar virus y malware.
 
--  El administrador de TI puede recopilar o eliminar datos de la unidad de disco duro del equipo.
+-  El equipo de soporte técnico de su empresa puede recopilar o eliminar datos de la unidad de disco duro del equipo.
 
--  El administrador de TI puede instalar aplicaciones y actualizaciones en el equipo.
+-  El equipo de soporte técnico de su empresa puede instalar aplicaciones y actualizaciones en el equipo.
 
 ## <a name="what-happens-every-eight-hours-after-device-enrollment"></a>¿Qué ocurre cada ocho horas después de la inscripción de dispositivo?
 
 Cada ocho horas aproximadamente, los dispositivos inscritos harán lo siguiente:
 
--   Descargar las actualizaciones de directivas o aplicaciones proporcionadas por el administrador de TI.
+-   Descargar las actualizaciones de directivas o aplicaciones proporcionadas por el equipo de soporte técnico de su empresa.
 
 -   Enviar actualizaciones de inventario de hardware.
 
 -   Enviar actualizaciones de inventario de aplicaciones de empresa.
 
-Si tiene alguna pregunta, póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).
+Si tiene alguna pregunta, póngase en contacto con el equipo de soporte técnico de su empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).

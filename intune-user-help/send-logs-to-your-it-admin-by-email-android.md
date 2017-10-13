@@ -1,5 +1,5 @@
 ---
-title: "Envío de registros al administrador de TI mediante correo electrónico | Microsoft Docs"
+title: "Envío de registros al equipo de soporte técnico de su empresa mediante correo electrónico | Microsoft Docs"
 description: "Envío de registros de datos mediante correo electrónico en un dispositivo Android"
 keywords: 
 author: barlanmsft
@@ -16,20 +16,20 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3794f6c908dabb1946a262a7238a38537b7b06ec
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: b10e4f6571d581b76d8e9d280767ce09ec8e3684
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="send-logs-to-your-it-admin-using-email"></a>Envío de registros al administrador de TI mediante correo electrónico
+# <a name="send-logs-to-your-company-support-using-email"></a>Enviar registros al equipo de soporte técnico de su empresa por correo electrónico
 
-Si se produce un error mientras usa la aplicación de portal de empresa en el dispositivo Android, puede ayudar a su administrador de TI a solucionar el problema enviándole información por correo electrónico. Esta información se conserva en su dispositivo en un documento especial denominado "_registro de diagnóstico_".
+Si se produce un error mientras usa la aplicación de Portal de empresa en el dispositivo Android, puede ayudar al equipo de soporte técnico de su empresa a solucionar el problema enviándole información por correo electrónico. Esta información se conserva en su dispositivo en un documento especial denominado "_registro de diagnóstico_".
 
 > [!Note]
-> Para que el administrador de TI pueda averiguar cuál fue el problema más fácilmente, active el _registro detallado_. El registro detallado incluye toda la información relevante del informe. Obtenga información sobre cómo [activar el registro detallado aquí](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
+> Para que el equipo de soporte técnico de su empresa pueda averiguar cuál fue el problema más fácilmente, active el _registro detallado_. El registro detallado incluye toda la información relevante del informe. Obtenga información sobre cómo [activar el registro detallado aquí](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).
 
-Para enviar registros al administrador de TI mediante correo electrónico:
+Para enviar registros al equipo de soporte técnico de su empresa por correo electrónico:
 
 1.  Abra la aplicación del portal de empresa.
 
@@ -40,4 +40,4 @@ Para enviar registros al administrador de TI mediante correo electrónico:
 
 3.  En **Ayuda**, toque **Obtener ayuda**.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el administrador de TI. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).

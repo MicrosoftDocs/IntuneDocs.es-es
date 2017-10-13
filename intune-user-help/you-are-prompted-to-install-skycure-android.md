@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/29/2017
+ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,23 +14,21 @@ ms.assetid: 627cd171-6e1b-439e-809a-2e6f007c4b3d
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: f94a7cdb4feeea19527efec6486d09efcaca9b67
-ms.sourcegitcommit: 1135765fd3ac2149663341d8107f656aba236493
+ms.openlocfilehash: 6dba55de8d4c4551ff1e09bb0dffe797f0cf3190
+ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="you-need-to-install-symantec-endpoint-protection-mobile-on-your-android-device"></a>Instalación obligatoria de Symantec Endpoint Protection Mobile en el dispositivo Android
+# <a name="install-symantec-endpoint-protection-mobile-on-your-android-device"></a>Instalación de Symantec Endpoint Protection Mobile en su dispositivo Android
 
-Antes de poder acceder a su trabajo, el departamento de soporte técnico de la empresa necesitará que instale la aplicación Symantec Endpoint Protection (SEP) Mobile para detectar posibles amenazas de seguridad y proteger su dispositivo.
+Para poder obtener acceso a su trabajo, su empresa necesita que instale la aplicación Symantec Endpoint Protection (SEP) Mobile, que le permite detectar posibles amenazas de seguridad y proteger su dispositivo.
 
 Si tiene problemas con la instalación, pruebe los pasos de solución de problemas al final de este tema.
 
-**Haga lo siguiente:**
+## <a name="what-you-need-to-do"></a>Haga lo siguiente
 
 1. Arrastre hacia abajo desde la parte superior de la pantalla para abrir la barra de notificaciones y luego pulse **Aplicación requerida: instalar Skycure desde Play Store**. También puede encontrar esta opción en __Detalles de cumplimiento__ dentro de la aplicación del Portal de empresa.
-
-  <!--![The compliance details page on an Android device. The device is not in compliance, with a message at the bottom of the Company Portal page that says the device doesn't meet the mobile risk policy, and that Skycure must be opened to resolve the issue.](./media/skycure-resolves-compliance-android.png)-->
 
 2. Se le dirigirá a la página de instalación de SEP Mobile en Play Store. Instale SEP Mobile y pulse **Aceptar** para permitir el acceso al dispositivo.
 
@@ -46,20 +44,16 @@ Si tiene problemas con la instalación, pruebe los pasos de solución de problem
 
 8. SEP Mobile comienza a comprobar inmediatamente si existen amenazas de seguridad en el dispositivo.
 
-  <!--![Skycure is analyzing your device for security threats.](./media/skycure-scan-in-progress-android.png)-->
+  * Si SEP Mobile encuentra una amenaza de seguridad en el dispositivo, verá instrucciones sobre cómo solucionar el problema.
 
-  Si SEP Mobile encuentra una amenaza de seguridad en el dispositivo, verá instrucciones sobre cómo solucionar el problema.
+  * Si no se detecta ninguna amenaza, los tres tipos de amenaza aparecerán en verde.
 
-  <!--![Skycure found a security threat.](./media/skycure-found-a-threat-android.png)-->
-
-  Si no se detecta ninguna amenaza, los tres tipos de amenaza aparecerán en verde.
-
-    La pantalla **Detalles del dispositivo** del Portal de empresa muestra que ahora cumple con los requisitos de seguridad de la empresa.
+    * La pantalla **Detalles del dispositivo** del Portal de empresa muestra que ahora cumple con los requisitos de seguridad de la empresa.
 
     ![El dispositivo cumple ahora con las directivas](./media/mtd-device-now-compliant-android.png)
 
-**Si la instalación no funciona**
+## <a name="if-the-installation-doesnt-work"></a>Si la instalación no funciona
 
 A veces, las instalaciones pueden producir errores debido a problemas técnicos fuera de su control. Si esto sucede, intente instalar SEP Mobile [manualmente desde Play Store](https://play.google.com/store/apps/details?id=com.skycure.skycure).
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).

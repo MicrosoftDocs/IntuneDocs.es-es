@@ -16,15 +16,15 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b1f4176704ba25f5e4ff1b1572a6f1e5ce0f620b
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: 784fec4e29f64db0445c857e5073ddd7e890a795
+ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 09/28/2017
 ---
-# <a name="your-android-device-is-missing-a-certificate-required-by-your-it-admin"></a>El dispositivo Android no tiene un certificado que necesita el administrador de TI
+# <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>El dispositivo Android no tiene un certificado que necesita el equipo de soporte técnico de su empresa
 
-Si el dispositivo no está inscrito en Intune y no tiene un certificado determinado que necesita el administrador de TI, no podrá iniciar sesión en la aplicación de portal de empresa. Cuando intente iniciar sesión, verá el siguiente mensaje:
+Si el dispositivo no está inscrito en Intune y no tiene un certificado determinado que necesita el equipo de soporte técnico de su empresa, no podrá iniciar sesión en la aplicación de Portal de empresa. Cuando intente iniciar sesión, verá el siguiente mensaje:
 
 ![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
 
@@ -35,15 +35,15 @@ Para resolver este problema y obtener el certificado necesario, hay dos pasos pr
 
 ## <a name="identify-the-missing-certificate-by-looking-on-a-company-or-school-pc"></a>Identificar el certificado que falta mirando en el equipo de una empresa o escuela
 
-1. Abra un equipo y, luego, Internet Explorer. Si no tiene un equipo para esto, póngase en contacto con el administrador de TI. Para encontrar la información de contacto del administrador de TI, vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+1. Abra un equipo y, luego, Internet Explorer. Si no tiene un equipo para esto, póngase en contacto con el equipo de soporte técnico de su empresa. Para encontrar la información de contacto del equipo de soporte técnico de su empresa, vaya al [sitio web del Portal de empresa](https://portal.manage.microsoft.com).
 
-2. Vaya al [sitio web del portal de empresa](http://portal.manage.microsoft.com) e inicie sesión con sus credenciales profesionales o educativas.
+2. Vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com) e inicie sesión con sus credenciales profesionales o educativas.
 
 3. A la derecha de la barra de direcciones del explorador, elija el símbolo que parece un candado como se muestra en la siguiente captura de pantalla.
 
     ![screenshot-internet-explorer-address-bar-padlock-symbol](./media/andr-missing-cert-ie-padlock-symbol.png)
 
-    Si no ve el símbolo del candado, deténgase y póngase en contacto con el administrador de TI. El candado significa que la sesión iniciada es segura, por lo que no debe continuar a menos que vea dicho símbolo.
+    Si no ve el símbolo del candado, deténgase y póngase en contacto con el equipo de soporte técnico de su empresa. El candado significa que la sesión iniciada es segura, por lo que no debe continuar a menos que vea dicho símbolo.
 
 4. Elija **Ver certificados**.
 
@@ -67,6 +67,6 @@ Para resolver este problema y obtener el certificado necesario, hay dos pasos pr
 
 6. Cierre la aplicación del portal de empresa.
 
-7. Vuelva a abrir la aplicación del portal de empresa. Ahora debería poder iniciar sesión en la aplicación Portal de empresa. Si necesita ayuda, póngase en contacto con el administrador de TI.
+7. Vuelva a abrir la aplicación del portal de empresa. Ahora debería poder iniciar sesión en la aplicación Portal de empresa. Si necesita ayuda, póngase en contacto con el equipo de soporte técnico de su empresa.
 
-Si aparece el mismo mensaje que indica que "falta un certificado" como el que se ha mostrado anteriormente, y ya ha seguido el procedimiento, probablemente todavía haya otro certificado que el administrador de TI necesitará ayudarle a instalar. Póngase en contacto con el administrador de TI para obtener ayuda con la información de contacto disponible en el [sitio web del portal de empresa](http://portal.manage.microsoft.com).
+Si aparece el mismo mensaje que indica que "falta un certificado" como el que se ha mostrado anteriormente, y ya ha seguido el procedimiento, probablemente todavía haya otro certificado que el equipo de soporte técnico de su empresa necesitará ayudarle a instalar. Póngase en contacto con el equipo de soporte técnico de su empresa para obtener ayuda con la información de contacto disponible en el [sitio web del Portal de empresa](https://portal.manage.microsoft.com).

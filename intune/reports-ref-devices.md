@@ -14,11 +14,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2dad8cf3e9a38625b4657e284f8d8bb53ba289c0
-ms.sourcegitcommit: c8fb42fcb8735af432c7e07c380d956171012bd4
+ms.openlocfilehash: 7730a799176a74f1ddb8e4b5e49a110229255428
+ms.sourcegitcommit: 6fae2dfb3a5c8f2e5ccfd120fd15656b26e5d302
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="reference-for-devices-entities"></a>Referencia de las entidades Devices
 
@@ -106,7 +106,7 @@ La entidad **EnrollmentTypes** indica cómo se ha inscrito un dispositivo. El ti
 
 | enrollmentTypeID  | Nombre | Descripción |
 |---------|------------|--------|
-| 0 |Unknown |Tipo de inscripción desconocido. |
+| 0 |Unknown |No se recopiló el tipo de inscripción |
 | 1 |UserEnrollment |Inscripción iniciada por el usuario. |
 | 2 |DeviceEnrollment |Inscripción del dispositivo mediante un perfil sin usuario. |
 | 3 |DeviceEnrollmentWithUDA |Inscripción del dispositivo mediante un perfil UDA. |
@@ -356,7 +356,7 @@ La entidad **MdmDeviceInventoryHistories** contiene instantáneas diarias de los
 | JailBroken |True si el dispositivo está liberado o modificado. |
 | IsActivationLockEnabled |True si el bloqueo de activación está habilitado. |
 | DeviceType |Tipo de dispositivo |
-| IsSupervised |Está supervisado. |
+| IsSupervised |Está supervisado |
 | DeviceDisplayNumberOfColors |Número de colores de la pantalla del dispositivo. |
 | HorizontalResolution |Resolución de pantalla horizontal del dispositivo. |
 | VerticalResolution |Resolución de pantalla vertical del dispositivo. |

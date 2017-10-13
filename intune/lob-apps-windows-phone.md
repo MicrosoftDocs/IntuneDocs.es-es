@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/12/2017
+ms.date: 10/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a097b7b2-d01d-454b-954c-da4f3cd0ae86
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 32ce7f134d2774483023c090caa6ef2b4d422604
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 60776df3774d4f9ca7404ef04b1cc94536bcd164
+ms.sourcegitcommit: 4b776d1a87c0707244f4ae0122de882e0eef6fa3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="how-to-add-windows-phone-line-of-business-lob-apps-to-microsoft-intune"></a>Adición de aplicaciones de línea de negocio (LOB) de Windows Phone a Microsoft Intune
 
@@ -28,8 +28,8 @@ ms.lasthandoff: 09/09/2017
 
 ## <a name="step-1---specify-the-software-setup-file"></a>Paso 1: Especificación del archivo de instalación de software
 
-1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
+1. Inicie sesión en Azure Portal.
+2. Elija **More Services** >  (Más servicios) **Supervisión y administración** + **Intune**.
 3. En la hoja **Intune**, elija **Administrar aplicaciones**.
 4. En la carga de trabajo **Mobile Apps**, elija **Administrar** > **Aplicaciones**.
 5. Encima de la lista de aplicaciones, elija **Agregar**.
@@ -66,4 +66,8 @@ ms.lasthandoff: 09/09/2017
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-La aplicación que ha creado se muestra en la lista de aplicaciones, donde puede asignarla a los grupos que elija. Para obtener ayuda, consulte [Asignación de aplicaciones a grupos](apps-deploy.md).
+La aplicación que ha creado aparece en la lista de aplicaciones. Ahora puede asignarla a los grupos que elija. Para obtener ayuda, consulte [Asignación de aplicaciones a grupos](apps-deploy.md).
+
+Obtenga más información sobre los métodos disponibles para supervisar las propiedades y la asignación de la aplicación. Para más información, vea [Supervisión de información de aplicación y asignaciones](apps-monitor.md).
+
+Obtenga más información sobre el contexto de la aplicación en Intune. Para más información, vea [Información general sobre los ciclos de vida del dispositivo y la aplicación](introduction-device-app-lifecycles.md).

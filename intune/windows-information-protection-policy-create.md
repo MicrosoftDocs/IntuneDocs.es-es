@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 10/3/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 524b4b506855b50bb5312dc31e98eb5f451cb66d
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 3cf11c53a5f1ce78dda9c703da32270b0b07874a
+ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/04/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Creación e implementación de una directiva de protección de aplicaciones de Windows Information Protection (WIP) con Intune
 
@@ -47,7 +47,7 @@ Hablemos sobre algunos conceptos que aparecen al agregar una directiva de WIP.
 
 ## <a name="pre-requisites"></a>Requisitos previos
 
-Debe configurar el proveedor de MAM antes de poder crear una directiva de protección de la aplicación de WIP. Obtenga más información sobre [cómo configurar el proveedor de MAM con Intune](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md).
+Debe configurar el proveedor de MAM para poder crear una directiva de protección de la aplicación de WIP. Obtenga más información sobre [cómo configurar el proveedor de MAM con Intune](https://docs.microsoft.com/app-protection-policies-configure-windows-10.md).
 
 Además, necesita lo siguiente:
 
@@ -155,16 +155,13 @@ Una vez desactivado WIP, se realiza un intento de descifrar los archivos etiquet
 
 ### <a name="use-wip-learning"></a>Uso del aprendizaje de WIP
 
-1. Vaya al panel de Azure. <!---since they're changing from Intune MAM to Intune proper, a screenshot might be helpful.--->
+1. Abra Azure Portal. Elija **Más servicios**. Escriba **Intune** en el filtro del cuadro de texto.
 
-2. Elija **Más servicios** en el menú izquierdo y, luego, escriba **Intune** en el filtro del cuadro de texto.
+3. Elija **Intune** > **Aplicaciones móviles**.
 
-3. Elija **Intune** y, cuando se abra el **panel de Intune**, seleccione **Mobile Apps**.
-
-4. Elija **Aprendizaje de WIP** en **Supervisar**. Verá las aplicaciones desconocidas etiquetadas por el aprendizaje de WIP.
-
-> [!IMPORTANT]
-> Una vez que tenga las aplicaciones que se muestran en el informe de registro del aprendizaje de WIP, puede trasladarlas a las directivas de protección de aplicaciones.
+4. Elija **Estado de protección de la aplicación** > **Informes** > **Aprendizaje de Windows Information Protection**.  
+ 
+    Una vez que tenga las aplicaciones que se muestran en el informe de registro del aprendizaje de WIP, puede agregarlas a las directivas de protección de aplicaciones.
 
 ## <a name="deploy-your-wip-app-protection-policy"></a>Implementación de la directiva de protección de aplicaciones de WIP
 
@@ -175,7 +172,7 @@ Una vez desactivado WIP, se realiza un intento de descifrar los archivos etiquet
 
 Después de crear la directiva de protección de aplicaciones de WIP, debe implementarla en su organización mediante MAM.
 
-1.  En la hoja **Directiva de aplicaciones**, seleccione la directiva de protección de aplicaciones recién creada, elija **Grupos de usuarios** > **Agregar grupo de usuarios**.
+1.  En la hoja **Directiva de aplicaciones**, seleccione la directiva de protección de aplicaciones recién creada y elija **Grupos de usuarios** > **Agregar grupo de usuarios**.
 
     Se abre una lista de grupos de usuarios, que consta de todos los grupos de seguridad de Azure Active Directory, en la hoja **Agregar grupo de usuarios**.
 
