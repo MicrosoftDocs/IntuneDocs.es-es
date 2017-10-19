@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/29/2017
+ms.date: 10/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 208cf6eb2d29ec5458d97d0a4481cec420acc281
-ms.sourcegitcommit: 59811bf1183b3ef9c9e81eded634bd0d3124d0bb
+ms.openlocfilehash: be68e330c2bd2800ea68fd83845b71e3b257e785
+ms.sourcegitcommit: 751587b1c6ed15877152d770772748e042c1e3ff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/09/2017
+ms.lasthandoff: 10/13/2017
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>El dispositivo Android parece estar cifrado, pero el Portal de empresa indica lo contrario
 
@@ -39,6 +39,15 @@ Ciertos dispositivos Android le exigen que cree un PIN de inicio para garantizar
 ### <a name="downgrade-your-version-of-android"></a>Cambiar a la versión anterior de Android
 
 Si el dispositivo ofrece la opción de cambiar a la versión Android 6.0+, hágalo. Si intenta cambiar el dispositivo a una versión anterior, existe riesgo de pérdida de datos. Si no, se recomienda que se ponga en contacto con el equipo de soporte técnico de su empresa para resolver este problema. Puede obtener información de contacto del equipo de soporte técnico de su empresa en el [sitio web del Portal de empresa](https://portal.manage.microsoft.com).
+
+### <a name="encrypt-the-entire-device"></a>Cifrado de todo el dispositivo
+
+Algunos dispositivos le ofrecerán la opción de cifrar todo el dispositivo o simplemente el espacio usado. Elija la opción de cifrar todo el dispositivo en lugar de solo el espacio usado. Si ya ha cifrado solo el espacio usado:
+
+1. [Quite este dispositivo del Portal de empresa.](unenroll-your-device-from-intune-android.md)
+2. Descifre el espacio usado.
+3. Cifrado de todo el dispositivo
+4. Vuelva a inscribir el dispositivo.
 
 ## <a name="specific-manufacturer-issues"></a>Problemas específicos del fabricante
 
