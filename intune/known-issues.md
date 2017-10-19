@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/14/2017
+ms.date: 10/05/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bddab9000bfe609856b8e003f9bd4c3802f6e6b
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 534441a7ae337f99a251831b456ea5c295184bec
+ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/10/2017
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problemas conocidos de Microsoft Intune
 
@@ -53,7 +53,7 @@ Como estas funcionalidades no se pueden administrar ni desde la consola de Intun
 - Las deshabilita en el portal clásico
 - Las habilita en Azure Portal.  
 
-A partir del 11 de septiembre de 2017, la migración de estas características se incorporará a la migración principal a Azure. Si su cuenta ya se ha migrado para su uso en Azure Portal, esta migración secundaria se producirá entre el 11 y el 22 de setiembre de 2017. Cuando empiece la migración de su cuenta, se completará el mismo día. La migración puede tardar hasta 6 horas desde el momento en que se deshabiliten las características en el portal clásico de Intune.
+A partir del 22 de septiembre de 2017, la migración de estas características se incorporará a la migración principal a Azure. Si su cuenta ya se ha migrado para su uso en Azure Portal, es posible que esta migración secundaria ya se haya producido. En caso contrario, estas funciones se migrarán a Azure antes de noviembre. Cuando empiece la migración de su cuenta, se completará el mismo día. La migración puede tardar hasta 6 horas desde el momento en que se deshabiliten las características en el portal clásico de Intune.
 
 Si ahora administra estas funciones de Intune en Azure Portal, tenga en cuenta los siguientes aspectos:
 
