@@ -536,6 +536,8 @@
       items:
         - name: Conectarse al Almacenamiento de datos con Power BI
           href: reports-proc-get-a-link-powerbi.md
+        - name: Creación de un informe desde la fuente de OData con Power BI
+          href: reports-proc-create-with-odata.md
 - name: Automatización y personalización
   items:
     - name: Configuración de los valores personalizados del dispositivo
