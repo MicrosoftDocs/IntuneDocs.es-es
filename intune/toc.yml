@@ -162,6 +162,8 @@
               href: windows-enroll.md
             - name: Inscripción masiva
               href: windows-bulk-enroll.md
+            - name: Programa Windows AutoPilot Deployment
+              href: enrollment-autopilot.md
         - name: Configuración de la inscripción de Android
           href: android-enroll.md
         - name: Configuración de la inscripción en iOS
@@ -601,11 +603,9 @@
               href: reports-ref-devices.md
             - name: Referencia de entidades de aplicaciones
               href: reports-ref-application.md
-            - name: Referencia de entidades de directivas
-              href: reports-ref-policy.md
+            - name: Referencia de la entidad de asociaciones de dispositivos de usuario
+              href: reports-ref-userdeviceassociations.md
     - name: Transferencia local de aplicaciones de Windows
-      href: app-sideload-windows.md
-    - name: Uso de las API de Graph para Intune
       href: intune-graph-apis.md
       items:
         - name: Referencia de las API de Graph para Intune
