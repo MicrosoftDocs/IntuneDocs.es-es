@@ -83,7 +83,7 @@ Puede editar los términos y condiciones y administrar sus versiones. Se recomie
 
 2. En la hoja Intune, elija **Inscripción de dispositivos**, elija **Términos y condiciones**, seleccione los términos y condiciones que desea modificar y, luego, seleccione **Propiedades**.
 
-4. En la hoja **Propiedades**, seleccione **Términos y condiciones** y, luego, modifique el **título**, el **resumen de los términos** y los **términos y condiciones**, según corresponda. Si los cambios hechos hacen que los usuarios tengan que volver a aceptar los términos nuevos, haga clic en **Solicite a los usuarios que acepten de nuevo los términos e incremente el número de versión a **
+4. En la hoja **Propiedades**, seleccione **Términos y condiciones** y, luego, modifique el **título**, el **resumen de los términos** y los **términos y condiciones**, según corresponda. Si los cambios hechos hacen que los usuarios tengan que volver a aceptar los términos nuevos, haga clic en **Solicite a los usuarios que acepten de nuevo los términos e incremente el número de versión a** 
 
 4.  Seleccione **Aceptar** y, luego, **Guardar**.
 
