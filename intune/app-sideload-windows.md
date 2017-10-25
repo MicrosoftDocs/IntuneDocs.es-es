@@ -22,7 +22,7 @@ ms.lasthandoff: 09/09/2017
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Como administrador de Intune, puede implementar aplicaciones de línea de negocio (LOB) en dispositivos Windows y Windows 10 Mobile, incluida la aplicación del Portal de empresa. Para implementar aplicaciones .appx o .xap en dispositivos móviles Windows 10 y Windows 10, o para implementar cualquier aplicación LOB en dispositivos Windows 8.1 o Windows Phone 8.1, debe obtener un **certificado de firma de código móvil empresarial de Symantec **. El certificado de Symantec es de confianza para estas aplicaciones en los dispositivos Windows correspondientes. Puede usar su propia entidad de certificación para aplicaciones de Windows 10 y aplicaciones "universales". Este certificado se requiere para:
+Como administrador de Intune, puede implementar aplicaciones de línea de negocio (LOB) en dispositivos Windows y Windows 10 Mobile, incluida la aplicación del Portal de empresa. Para implementar aplicaciones .appx o .xap en dispositivos móviles Windows 10 y Windows 10, o para implementar cualquier aplicación LOB en dispositivos Windows 8.1 o Windows Phone 8.1, debe obtener un **certificado de firma de código móvil empresarial de Symantec** . El certificado de Symantec es de confianza para estas aplicaciones en los dispositivos Windows correspondientes. Puede usar su propia entidad de certificación para aplicaciones de Windows 10 y aplicaciones "universales". Este certificado se requiere para:
 
 -   Firmar la aplicación del Portal de empresa para la implementación en equipos Windows, dispositivos Windows 10 Mobile y dispositivos Windows Phone
 
@@ -50,7 +50,7 @@ Los pasos que figuran a continuación le ayudarán a obtener los certificados ne
 
     ![Exportar el certificado de firma](./media/wit-walk-cert2.gif)
 
-    En el **Asistente para exportar certificado**, seleccione **Sí, exportar la clave privada** y, a continuación, haga clic en **Siguiente**. Seleccione **Intercambio de información personal: PKCS #12 (.PFX) ** y active **Si es posible, incluir todos los certificados en la ruta de acceso de certificación**. Complete el asistente. Para obtener más información, consulte [Exportar un certificado con la clave privada](http://go.microsoft.com/fwlink/?LinkID=203031).
+    En el **Asistente para exportar certificado**, seleccione **Sí, exportar la clave privada** y, a continuación, haga clic en **Siguiente**. Seleccione **Intercambio de información personal: PKCS #12 (.PFX)**  y active **Si es posible, incluir todos los certificados en la ruta de acceso de certificación**. Complete el asistente. Para obtener más información, consulte [Exportar un certificado con la clave privada](http://go.microsoft.com/fwlink/?LinkID=203031).
 
 6.  **Cargar la aplicación en Intune**<br>
     Cargue el archivo de la aplicación firmada y el certificado de firma de código para que la aplicación esté disponible para los usuarios finales.
