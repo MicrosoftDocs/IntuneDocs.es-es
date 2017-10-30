@@ -36,7 +36,7 @@ Use la información de este tema para conocer los aspectos básicos de la config
 3. En la hoja **Intune**, elija **Configuración del dispositivo**.
 2. En la hoja **Configuración del dispositivo**, elija **Administrar** > **Perfiles**.
 3. En la hoja de perfiles, elija **Create Profile** (Crear perfil).
-4. En la hoja **Crear perfil	**, escriba un **Nombre** y una **Descripción** para el perfil de características del dispositivo.
+4. En la hoja **Crear perfil** ,escriba un **Nombre** y una **Descripción** para el perfil de características del dispositivo.
 5. En la lista desplegable **Plataforma**, seleccione la plataforma de dispositivo a la que quiere aplicar la configuración. Actualmente, puede elegir una de las siguientes plataformas para las características del dispositivo:
     - **iOS**
     - **macOS**
