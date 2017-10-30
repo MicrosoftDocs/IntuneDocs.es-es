@@ -15,11 +15,11 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 19c20ac5dd73b45dc06d1df6a7d08cc6bac42982
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 66d13a5a5d4b74cc70696239514875fe0092a164
+ms.sourcegitcommit: 4742390f29f84e553e674ea31c88318bda6ab059
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/18/2017
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Configuración de Endpoint Protection para Windows 10 y versiones posteriores en Microsoft Intune
 
@@ -29,6 +29,9 @@ El perfil de Endpoint Protection le permite controlar características de seguri
 
 Use la información de este tema para obtener información sobre cómo crear perfiles de Endpoint Protection.
 
+> [!Note]
+> Estas configuraciones no se admiten en las ediciones Home y Professional de Windows 10.
+
 ## <a name="create-an-endpoint-protection-profile"></a>Crear un perfil de Endpoint Protection
 
 1. Inicie sesión en el portal de Azure.
@@ -36,7 +39,7 @@ Use la información de este tema para obtener información sobre cómo crear per
 3. En la hoja **Intune**, elija **Configuración del dispositivo**.
 2. En la hoja **Configuración del dispositivo**, elija **Administrar** > **Perfiles**.
 3. En la hoja de perfiles, elija **Create Profile** (Crear perfil).
-4. En la hoja **Crear perfil	**, escriba un **Nombre** y una **Descripción** para el perfil de características del dispositivo.
+4. En la hoja **Crear perfil** , escriba un **Nombre** y una **Descripción** para el perfil de características del dispositivo.
 5. En la lista desplegable **Plataform** (Plataforma), elija **Windows 10 y versiones posteriores**.
 6. En la lista desplegable de **Tipos de perfil**, pulse **Endpoint Protection**.
 7. En la hoja **Cifrado de Windows**, configure las opciones que quiera. Use los detalles de este tema para ayudarle a entender lo que realiza cada opción de configuración. Cuando termine, elija **Aceptar**.

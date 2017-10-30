@@ -53,7 +53,7 @@ Los dispositivos conectan con Intune cuando reciben una notificación que se lo 
 Otros cambios, como la revisión de la información de contacto del Portal de empresa, no provocan una notificación inmediata a los dispositivos.
 
 ## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-will-get-applied"></a>Si varias directivas se asignan al mismo usuario o dispositivo, ¿cómo puedo saber qué configuración se aplicará?
-When two or more policies are assigned to the same user or device, the evaluation for which setting is applied happens at the individual setting level:
+Cuando se aplican dos o más directivas se asignen al mismo usuario o dispositivo, la evaluación de la configuración aplicada se hace a nivel de parámetro individual:
 
 -   La configuración de directivas de cumplimiento siempre tiene prioridad respecto a la configuración de directivas de configuración.
 
