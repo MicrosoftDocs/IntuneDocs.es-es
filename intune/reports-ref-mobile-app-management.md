@@ -14,11 +14,11 @@ ms.assetid: 084F11AD-F7BA-45A4-8424-45E6E4564930
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 44358d68a653760804f11668ab64d30ebf7ae9eb
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 32b5f3515c0b77ea8f411c1c1f42e7b44669ca23
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Referencia de entidades de administración de aplicaciones móviles (MAM)
 
@@ -41,7 +41,7 @@ La entidad **MamApplication** muestra las aplicaciones de línea de negocio (LOB
 | ApplicationKey |Identificador único de la aplicación MAM en el almacenamiento de datos. |123 |
 | ApplicationName |Nombre de la aplicación MAM. |"Palabra" |
 | ApplicationId |Identificador de la aplicación MAM. |b66bc706-ffff-7437-0340-032819502773 |
-| IsDeleted |Indica si se ha actualizado el registro de la aplicación MAM. True: la aplicación MAM tiene un nuevo registro con campos actualizados en esta tabla. False: registro más reciente de esta aplicación MAM. |Verdadero/Falso |
+| IsDeleted |Indica si se ha actualizado el registro de la aplicación MAM. <br>True: la aplicación MAM tiene un nuevo registro con campos actualizados en esta tabla. <br>False: registro más reciente de esta aplicación MAM. |Verdadero/Falso |
 | StartDateInclusiveUTC |Fecha y hora en formato UTC en que se ha creado esta aplicación MAM en el almacenamiento de datos. |23/11/2016 12:00:00 AM |
 | DeletedDateUTC |Fecha y hora en formato UTC en que IsDeleted ha cambiado a True. |23/11/2016 12:00:00 AM |
 | RowLastModifiedDateTimeUTC |Fecha y hora en formato UTC en que se ha modificado por última vez esta aplicación MAM en el almacenamiento de datos. |23/11/2016 12:00:00 AM |
@@ -63,7 +63,7 @@ La entidad **MamApplicationInstance** muestra las aplicaciones de administració
 | SdkVersion |Versión de SDK de MAM con la que se ha encapsulado esta aplicación MAM. |3.2 |
 | DeviceId |Identificador del dispositivo en el que está instalada esta aplicación MAM. |b66bc706-ffff-7437-0340-032819502773 |
 | DeviceName |Nombre del dispositivo en el que está instalada esta aplicación MAM. |"MiDispositivo" |
-| IsDeleted |Indica si se ha actualizado el registro de la instancia de esta aplicación MAM. True: la instancia de esta aplicación MAM tiene un nuevo registro con campos actualizados en esta tabla. False: registro más reciente de la instancia de esta aplicación MAM. |Verdadero/Falso |
+| IsDeleted |Indica si se ha actualizado el registro de la instancia de esta aplicación MAM. <br>True: la instancia de esta aplicación MAM tiene un nuevo registro con campos actualizados en esta tabla. <br>False: registro más reciente de la instancia de esta aplicación MAM. |Verdadero/Falso |
 | StartDateInclusiveUtc |Fecha y hora en formato UTC en que se ha creado la instancia de esta aplicación MAM en el almacenamiento de datos. |23/11/2016 12:00:00 AM |
 | DeletedDateUtc |Fecha y hora en formato UTC en que IsDeleted ha cambiado a True. |23/11/2016 12:00:00 AM |
 | RowLastModifiedDateTimeUtc |Fecha y hora en formato UTC en que se ha modificado por última vez la instancia de esta aplicación MAM en el almacenamiento de datos. |23/11/2016 12:00:00 AM |
@@ -94,8 +94,8 @@ La entidad **MamDeviceHealth** representa los dispositivos que tienen implementa
 |---------|------------|--------|
 | DeviceHealthKey |Identificador único del dispositivo y su mantenimiento asociado en el almacenamiento de datos. Clave suplente. |1/1/1900 12:00:00 AM |
 | DeviceHealth |Identificador único del dispositivo y su mantenimiento asociado. Es parecido a DeviceHealthKey, pero el identificador es una clave natural. |1/1/1900 12:00:00 AM |
-| DeviceHealthName |Representa el estado del dispositivo. No disponible: no hay información sobre este dispositivo. Correcto: el dispositivo no está liberado. Incorrecto: el dispositivo está liberado. |No disponible Correcto Incorrecto |
-| RowLastModifiedDateTimeUtc |Fecha y hora en formato UTC en que se ha modificado por última vez el mantenimiento del dispositivo MAM específico en el almacenamiento de datos. |23/11/2016 12:00:00 AM |
+| DeviceHealthName |Representa el estado del dispositivo. <br>No disponible: no hay información sobre este dispositivo. <br>Correcto: el dispositivo no está liberado. <br>Incorrecto: el dispositivo está liberado. |No disponible Correcto Incorrecto |
+| RowLastModifiedDateTimeUtc |Fecha y hora en formato UTC en que se ha modificado por última vez el estado del dispositivo MAM específico en el almacenamiento de datos. |23/11/2016 12:00:00 AM |
 
 ## <a name="mameffectivepolicy"></a>MamEffectivePolicy
 
@@ -126,5 +126,5 @@ La entidad **MamPlatform** muestra nombres y tipos de plataforma en los que se h
 |---------|------------|--------|
 | PlatformKey |Identificador único de la plataforma en el almacenamiento de datos. Clave suplente. |123 |
 | Plataforma |Identificador único de la plataforma. Se parece a PlatformKey, pero es una clave natural. |123 |
-| PlatformName |Nombre de la plataforma. |No disponible Ninguno Windows IOS Android |
+| PlatformName |Nombre de la plataforma. |No disponible <br>Ninguno <br>Windows <br>iOS <br>Android. |
 | RowLastModifiedDateTimeUtc |Fecha y hora en formato UTC en que se ha modificado por última vez esta plataforma en el almacenamiento de datos. |23/11/2016 12:00:00 AM |

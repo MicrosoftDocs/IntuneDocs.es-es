@@ -11,11 +11,11 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e6334421-85e1-4457-9c44-e5db8d4ee00e
-ms.openlocfilehash: a119f00cc8a92aa6cf7a1009f910df817593e0e8
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 199760a60ee2290560ebdf933192de0eaf569e9e
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="configure-ios-update-policies"></a>Configurar directivas de actualización de iOS
 Las directivas de actualización de iOS permiten forzar a dispositivos iOS supervisados a instalar automáticamente la última actualización de software disponible. Tiene la opción de configurar qué días y qué horas no quiere que los dispositivos instalen la actualización.
@@ -34,9 +34,13 @@ Para asignar una directiva de actualización de iOS a los usuarios, seleccione u
 1. Seleccione la directiva que quiere asignar a los usuarios y elija **Asignaciones**. Se abre la hoja donde puede seleccionar grupos de seguridad de Azure Active Directory y asignarlos a la directiva.
 2. Elija **Seleccionar grupos** para abrir la hoja que muestra los grupos de seguridad de Azure AD. Elija **Seleccionar** para implementar la directiva en los usuarios.
 
-Ya ha aplicado la directiva a los usuarios. Ahora se evaluará la comprobación de actualizaciones por parte de los dispositivos usados por los usuarios a los que se aplique la directiva.
+Ya ha aplicado la directiva a los usuarios. Se evalúa la comprobación de actualizaciones por parte de los dispositivos usados por los usuarios a los que se aplique la directiva.
 
 ## <a name="change-the-restricted-days-for-the-policy"></a>Cambio de los días restringidos de la directiva
 1. En la hoja **Actualizaciones de software**, seleccione **Directivas de actualización de iOS**.
 2. Seleccione la directiva de actualización de iOS que quiere actualizar.
 3. Seleccione **Propiedades** y actualice la información de los días restringidos.
+
+## <a name="monitor-ios-devices-with-older-ios-versions"></a>Supervisar dispositivos iOS con versiones anteriores de iOS 
+<!-- 1352223 -->
+El informe **Dispositivos iOS obsoletos** está disponible desde la hoja **Actualizaciones de software** > **Directivas de actualización de iOS**. En el informe, puede ver una lista de dispositivos iOS supervisados destinados mediante una directiva de actualización iOS y que no se pudieron actualizar. Para cada dispositivo, puede ver un estado por el que el dispositivo no se ha actualizado automáticamente.

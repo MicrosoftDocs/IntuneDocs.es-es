@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/04/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: 8da134d768333fb03cc87ab38230f5f022fee2e1
-ms.sourcegitcommit: 1afff0fd464ece84ffea6bc0c71c78215d59e696
+ms.openlocfilehash: 04b6d24d5174e49dd6e3f86b534bc59b94344002
+ms.sourcegitcommit: 2707a5fb68749a51c2a3ff54a1bac631bdaa3b87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 10/18/2017
 ---
 # <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>¿Qué información puede ver mi empresa cuando inscribo mi dispositivo?
 
@@ -46,5 +46,6 @@ Cuando inscribe un dispositivo en la administración, proporciona a la empresa p
 
 **Lo que su empresa podría ver**
 
--  Número de teléfono: en el caso de los dispositivos propiedad de la **empresa**, se puede ver el número de teléfono completo. En el caso de los dispositivos **personales**, únicamente son visibles para la empresa los últimos cuatro dígitos del número de teléfono. Puede ver el **Tipo de propiedad** de cada dispositivo abriendo la página **Detalles del dispositivo** correspondiente. 
+-  Número de teléfono: en el caso de los dispositivos propiedad de la **empresa**, se puede ver el número de teléfono completo. En el caso de los dispositivos **personales**, únicamente son visibles para la empresa los últimos cuatro dígitos del número de teléfono. Puede ver el **Tipo de propiedad** de cada dispositivo abriendo la página **Detalles del dispositivo** correspondiente.
 -  Ubicación: su empresa nunca puede ver la ubicación de su dispositivo, excepto si tiene un dispositivo iOS que está supervisado y se ha perdido. [¿Cómo puedo saberlo?](https://go.microsoft.com/fwlink/?linkid=853816)
+- Inventario de aplicaciones: si su empresa usa Mobile Threat Defense, se podrá consultar información adicional sobre las aplicaciones instaladas en el dispositivo. Obtenga más información sobre [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).

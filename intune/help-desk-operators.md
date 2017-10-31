@@ -1,12 +1,12 @@
 ---
-title: "Portal de solución de problemas del departamento de soporte técnico"
+title: "Portal de solución de problemas del departamento de soporte técnico | Microsoft Docs"
 titlesuffix: Azure portal
 description: "El personal del departamento de soporte técnico usa el portal de solución de problemas para solucionar los problemas técnicos de los usuarios"
 keywords: 
-author: NathBarn
-ms.author: NathBarn
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 09/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,58 +14,228 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 14b47727428fcd6a16f9960e21f70ee64c7757d1
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: f5678752830e2c4c9afbe75c9c6891d525eec34a
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>Uso del portal de solución de problemas para ayudar a los usuarios
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-El portal de solución de problemas permite que los operadores del departamento de soporte técnico y los administradores de Intune vean la información de usuario para solucionar las solicitudes de ayuda del usuario. Las organizaciones que incluyen los operadores del departamento de soporte técnico en su personal pueden asignar el **operador del departamento de soporte técnico** a un grupo de usuarios, que pueden usar después la hoja de solución de problemas para ayudar a los usuarios.
+El portal de solución de problemas permite que los operadores del departamento de soporte técnico y los administradores de Intune vean la información de usuario para solucionar las solicitudes de ayuda del usuario. Las organizaciones que disponen de un departamento de soporte técnico pueden asignar el **Operador del departamento de soporte técnico** a un grupo de usuarios. El rol de operador del departamento de soporte técnico puede usar la hoja de **solución de problemas**.
 
-Por ejemplo, cuando un usuario se pone en contacto con el soporte técnico por un problema técnico con Intune, el operador del departamento de soporte técnico escribe el nombre del usuario. Intune muestra datos útiles que pueden ayudar a resolver muchos problemas de nivel 1 incluidos:
+Para conocer los pasos sobre cómo agregar un rol de operador del departamento de soporte técnico, consulte [Control de administración basada en roles (RBAC) con Intune](/intune/role-based-access-control)
+
+Cuando un usuario se pone en contacto con el soporte técnico por un problema técnico con Intune, el operador del departamento de soporte técnico introduce el nombre del usuario. Intune muestra datos útiles que pueden ayudar a resolver muchos problemas de nivel 1, incluidos los siguientes:
+
 - Estado del usuario
 - Assignments
 - Problemas de cumplimiento
 - El dispositivo no responde
--   El dispositivo no obtiene una configuración Wi-Fi o VPN
--   Error de instalación de la aplicación
+- El dispositivo no obtiene una configuración Wi-Fi o VPN
+- Error de instalación de la aplicación
 
-## <a name="add-help-desk-operators"></a>Incorporación de operadores del departamento de soporte técnico
-Como administrador de Intune, puede asignar el rol Operador del departamento de soporte técnico a un grupo de usuarios. Los miembros de ese grupo pueden usar Azure Portal para solucionar los problemas de los usuarios. Cada operador del departamento de soporte técnico debe tener una licencia de Intune para tener acceso a Azure Portal. Obtenga información sobre cómo [asignar licencias de Intune](licenses-assign.md).
+## <a name="to-review-troubleshooting-details"></a>Para ver los detalles de solución de problemas, siga estos pasos:
 
-Para agregar usuarios al departamento de soporte técnico:
-1. [Agregue usuarios a Intune](users-add.md) si es necesario.
-2. [Cree un grupo de departamento de soporte técnico](groups-add.md) y agregue usuarios al grupo.
-3. [Asigne el rol Operador del departamento de soporte técnico de RBAC](role-based-access-control.md#built-in-roles).
+En la hoja de solución de problemas, elija la opción **Seleccionar usuario** para ver la información del usuario. La información de usuario puede ayudarle a comprender el estado actual de los usuarios y sus dispositivos.  
 
-  ![Captura de pantalla de Azure Portal en la que se muestran los roles de Intune resaltados y una lista de roles integrados, incluido el rol Operador del departamento de soporte técnico](./media/help-desk-user-add.png) También puede [crear un rol personalizado](role-based-access-control.md#custom-roles) que puede modificar para dar acceso a los operadores del departamento de soporte técnico.  Los operadores del departamento de soporte técnico requieren los permisos siguientes para ayudar a solucionar los problemas de los usuarios:
-    - MobileApps: Lectura
-    - ManagedApps: Lectura
-    - ManagedDevices: Lectura
-    - Organización: Lectura
-    - DeviceCompliancePolices: Lectura
-    - DeviceConfigurations: Lectura
+1. Inicie sesión en el portal de Azure.
+2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
+3. En la hoja **Intune**, elija **Solucionar problema**.
+4. Haga clic en **Seleccionar usuario**.
+5. Seleccione un usuario escribiendo su nombre o dirección de correo electrónico. Haga clic en **Seleccionar**. La información de solución de problemas para el usuario se muestra en la hoja de solución de problemas. En las tablas siguientes se explica la información proporcionada.
 
-4. Para proporcionar a los operadores del departamento de soporte técnico permiso para ver el estado del servicio y abrir vales de soporte técnico para Intune, [conceda permisos de administración a los usuarios](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal) como un **administrador de servicios**. No conceda permiso de **Administrador de servicios de Intune** porque este rol de directorio tiene más derechos que los que necesitan los operadores del departamento de soporte técnico.
+> [!Note]  
+> También puede acceder a la hoja de **solución de problemas** visitando la página [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) desde el explorador.
 
-## <a name="access-the-troubleshooting-portal"></a>Acceso al portal de solución de problemas
+## <a name="areas-of-troubleshooting-dashboard"></a>Áreas del panel de solución de problemas
 
-El personal del departamento de soporte técnico y los administradores de Intune pueden acceder al portal de solución de problemas de dos formas:
-- Abra [http://aka.ms/intunetroubleshooting](http://aka.ms/intunetroubleshooting) en un explorador web para ver solo el portal de solución de problemas.
-  ![Captura de pantalla de la consola de solución de problemas](./media/help-desk-console.png)
-- Inicie sesión en Azure Portal, seleccione **Más servicios** > **Supervisión y administración** > **Intune** y, después, vaya a **Ayuda y soporte técnico** > **Solucionar problemas**.
+Puede usar la hoja de **solución de problemas** para consultar la información de usuario. 
 
-Haga clic en **Seleccionar usuario** para ver un usuario y los detalles de este.
+![](/intune/media/troubleshooting-dash.png)
 
-## <a name="use-the-troubleshooting-portal"></a>Uso del portal de solución de problemas
+| Área | Nombre | Descripción |
+| ---  | ---  | ---         |
+| 1.   | Estado de la cuenta  | Muestra el estado del inquilino actual de Intune como **Activo** o **Inactivo**.       |
+| 2.   | Selección de usuarios  | El nombre del usuario seleccionado actualmente. Haga clic en **Cambiar usuario** para elegir un usuario nuevo.       |
+| 3.   | Estado del usuario  | Muestra el estado de la licencia de Intune del usuario, el número de dispositivos, la compatibilidad de cada dispositivo, el número de aplicaciones y la compatibilidad de las aplicaciones.       |
+| 4.   | Información de usuario  | Use la lista para seleccionar los detalles que vaya a consultar en la hoja. <br>Puede seleccionar: <ul><li>Aplicaciones móviles<li>Directivas de protección de aplicaciones<li>Directivas de cumplimiento<li> Directivas de configuración</ul>      |
+| 5.   | Pertenencia a grupos  | Yadda       |
 
-En el portal de solución de problemas, puede elegir la opción **Seleccionar usuario** para ver la información de usuarios. La información de usuario puede ayudarle a comprender el estado actual de los usuarios y sus dispositivos. En el portal de solución de problemas se muestran los siguientes detalles:
-- **Estado de la cuenta**
-- **Estado del usuario**
-- **Dispositivos** con acciones de dispositivo
-- **Pertenencia a grupos**
-- **Estado de protección de la aplicación**
+## <a name="mobile-apps-reference"></a>Referencia de aplicaciones móviles
+
+Las aplicaciones que se ejecutan en dispositivos o los dispositivos que pertenecen a los usuarios administrados por Intune y Azure Active Directory (AD).
+
+### <a name="properties"></a>Propiedades
+
+Las propiedades de las aplicaciones móviles.
+
+| Propiedad      | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Nombre          | El nombre de la aplicación.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Sistema operativo            | El sistema operativo instalado en el dispositivo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Tipo          | Puede elegir un tipo de asignación para cada aplicación.  <br> **Disponible**: los usuarios instalan la aplicación desde el sitio web o la aplicación del Portal de empresa.  <br> **No aplicable**: la aplicación no está instalada ni se muestra en el Portal de empresa. <br> **Desinstalar**: la aplicación se ha desinstalado de dispositivos de los grupos seleccionados.  <br> **Available with or without enrollment** (Disponible con o sin inscripción): asignar esta aplicación a grupos de usuarios cuyos dispositivos no se hayan inscrito en Intune. |
+| Última modificación | El nombre del tipo de dispositivo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+
+### <a name="devices"></a>Dispositivos
+
+Dispositivos administrados por Intune o por usuarios administrados por Intune o Azure AD.
+
+| Propiedad           | Descripción                                                                                                                         |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Nombre del dispositivo        | El nombre del tipo de dispositivo.                                                                                                     |
+| Administrado por         | La marca de tiempo en que se modificó la directiva.                                                                                              |
+| Tipo de combinación de Azure AD | El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**. |
+| Propiedad          | El tipo de propiedad del dispositivo. Puede ser **Empresa**, **Personal** o **Desconocido**.                                               |
+| Compatibilidad con Intune   | El nombre del tipo de dispositivo.                                                                                                     |
+| Compatibilidad con Azure AD | El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**. |
+| Sistema operativo                 | El sistema operativo instalado en el dispositivo.                                                                                       |
+| Versión del sistema operativo         | El número de versión del sistema operativo del dispositivo.                                                                                  |
+| Última inserción en el repositorio      | El nombre del tipo de dispositivo.                                                                                                     |
+
+### <a name="app-protection-status"></a>Estado de protección de la aplicación
+
+Las aplicaciones móviles que se integran con tecnologías de Enterprise Mobility Solution (EMS) disponen de una directiva de protección de aplicaciones, que proporciona una protección básica para los datos corporativos al descargarse en aplicaciones móviles, incluidas las de Office. 
+
+| Propiedad    | Descripción                                                                           |
+|-------------|---------------------------------------------------------------------------------------|
+| Estado      | El tipo de propiedad del dispositivo. Puede ser **Empresa**, **Personal** o **Desconocido**. |
+| Nombre de la aplicación    | El nombre de la aplicación.                                                           |
+| Nombre del dispositivo | El nombre del tipo de dispositivo.                                                       |
+| Tipo de dispositivo | El nombre del tipo de dispositivo.                                                       |
+| Directivas    | El tipo de propiedad del dispositivo. Puede ser **Empresa**, **Personal** o **Desconocido**. |
+| Última sincronización   | La marca de tiempo de la última vez que el dispositivo se sincronizó con Intune.                   |
+
+## <a name="app-protection-policies-reference"></a>Referencia de las directivas de protección de aplicaciones
+
+Las aplicaciones móviles que se integran con tecnologías de EMS disponen de una directiva de protección de aplicaciones, que proporciona una protección básica para los datos corporativos al descargarse en aplicaciones móviles, incluidas las de Office. 
+
+### <a name="properties"></a>Propiedades
+
+En la tabla se resume el estado de las directivas de protección de aplicaciones para dispositivos administrados por Intune.
+
+| Propiedad    | Descripción                                                                                                                                |
+|-------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Nombre        | El nombre de la aplicación.                                                                                                        |
+| Implementado    | El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**. |
+| Plataforma    | El tipo de propiedad del dispositivo. Puede ser **Empresa**, **Personal** o **Desconocido**.                                               |
+| Inscripción  | El nombre del tipo de dispositivo.                                                                                                     |
+| Última actualización | La marca de tiempo en que se modificó la directiva.                                                                                              |
+
+### <a name="devices"></a>Dispositivos
+
+Dispositivos administrados por Intune o por usuarios administrados por Intune o Azure AD.
+
+| Propiedad           | Texto                                                                                                                                |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Nombre del dispositivo        | El nombre del tipo de dispositivo.                                                                                                     |
+| Administrado por         | La marca de tiempo en que se modificó la directiva.                                                                                              |
+| Tipo de combinación de Azure AD | El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**. |
+| Propiedad          | El tipo de propiedad del dispositivo. Puede ser **Empresa**, **Personal** o **Desconocido**.                                               |
+| Compatibilidad con Intune   | El nombre del tipo de dispositivo.                                                                                                     |
+| Compatibilidad con Azure AD | El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**. |
+| Compatibilidad con Azure AD | El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**. |
+| Sistema operativo                 | El sistema operativo instalado en el dispositivo.                                                                                       |
+| Versión del sistema operativo         | El número de versión del sistema operativo del dispositivo.                                                                                  |
+| Última inserción en el repositorio      | El nombre del tipo de dispositivo.                                                                                                     |
+
+## <a name="compliance-policies-reference"></a>Referencia de las directivas de cumplimiento
+
+Garantiza que los dispositivos usados para acceder a las aplicaciones y a los datos de la empresa cumplan ciertas reglas, como el uso de un PIN para acceder al dispositivo y el cifrado de los datos almacenados en el dispositivo.
+
+### <a name="properties"></a>Propiedades
+
+Las propiedades de las directivas de cumplimiento.
+
+| Propiedad      | Descripción                                                                                                                         |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Asignación    | El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**. |
+| Nombre          | El nombre de la aplicación.                                                                                                        |
+| Sistema operativo            | El sistema operativo instalado en el dispositivo.                                                                                       |
+| Tipo de directiva   | El tipo de propiedad del dispositivo. Puede ser **Empresa**, **Personal** o **Desconocido**.                                               |
+| Última modificación | El nombre del tipo de dispositivo.                                                                                                     |
+
+### <a name="devices"></a>Dispositivos
+
+Dispositivos administrados por Intune o por usuarios administrados por Intune o Azure AD.
+
+| Propiedad           | Descripción                                                                                                                         |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Nombre del dispositivo        | El nombre del tipo de dispositivo.                                                                                                     |
+| Administrado por         | La marca de tiempo en que se modificó la directiva.                                                                                              |
+| Tipo de combinación de Azure AD | El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**. |
+| Propiedad          | El tipo de propiedad del dispositivo. Puede ser **Empresa**, **Personal** o **Desconocido**.                                               |
+| Compatibilidad con Intune   | El nombre del tipo de dispositivo.                                                                                                     |
+| Compatibilidad con Azure AD | El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**. |
+| Sistema operativo                 | El sistema operativo instalado en el dispositivo.                                                                                       |
+| Versión del sistema operativo         | El número de versión del sistema operativo del dispositivo.                                                                                  |
+| Última inserción en el repositorio      | El nombre del tipo de dispositivo.                                                                                                     |
+
+### <a name="app-protection-policies"></a>Directivas de protección de aplicaciones
+
+Las aplicaciones móviles que se integran con tecnologías de EMS disponen de una directiva de protección de aplicaciones, que proporciona una protección básica para los datos corporativos al descargarse en aplicaciones móviles, incluidas las de Office. 
+
+| Propiedad    | Descripción                                                                           |
+|-------------|---------------------------------------------------------------------------------------|
+| Estado      | El tipo de propiedad del dispositivo. Puede ser **Empresa**, **Personal** o **Desconocido**. |
+| Nombre de la aplicación    | El nombre de la aplicación.                                                           |
+| Nombre del dispositivo | El nombre del tipo de dispositivo.                                                       |
+| Tipo de dispositivo | El nombre del tipo de dispositivo.                                                       |
+| Directivas    | El tipo de propiedad del dispositivo. Puede ser **Empresa**, **Personal** o **Desconocido**. |
+| Última sincronización   | La marca de tiempo de la última vez que el dispositivo se sincronizó con Intune.                   |
+
+## <a name="configuration-policies-reference"></a>Referencia de las directivas de configuración
+
+Las aplicaciones móviles con configuraciones específicas del proveedor disponen de una directiva de configuración de aplicaciones. 
+
+### <a name="properties"></a>Propiedades
+
+Las propiedades de las directivas de configuración.
+
+| Propiedad      | Descripción                                                                                                                         |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Asignación    | El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**. |
+| Nombre          | El nombre de la aplicación.                                                                                                        |
+| Sistema operativo            | El sistema operativo instalado en el dispositivo.                                                                                       |
+| Tipo de directiva   | El tipo de propiedad del dispositivo. Puede ser **Empresa**, **Personal** o **Desconocido**.                                               |
+| Última modificación | El nombre del tipo de dispositivo.                                                                                                     |
+
+### <a name="devices"></a>Dispositivos
+
+Dispositivos administrados por Intune o por usuarios administrados por Intune o Azure AD.
+
+| Propiedad           | Descripción                                                                                                                         |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Nombre del dispositivo        | El nombre del tipo de dispositivo.                                                                                                     |
+| Administrado por         | La marca de tiempo en que se modificó la directiva.                                                                                              |
+| Tipo de combinación de Azure AD | El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**. |
+| Propiedad          | El tipo de propiedad del dispositivo. Puede ser **Empresa**, **Personal** o **Desconocido**.                                               |
+| Compatibilidad con Intune   | El nombre del tipo de dispositivo.                                                                                                     |
+| Compatibilidad con Azure AD | El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**. |
+| Sistema operativo                 | El sistema operativo instalado en el dispositivo.                                                                                       |
+| Versión del sistema operativo         | El número de versión del sistema operativo del dispositivo.                                                                                  |
+| Última inserción en el repositorio      | El nombre del tipo de dispositivo.                                                                                                     |
+
+
+### <a name="app-protection-policies"></a>Directivas de protección de aplicaciones
+
+Las aplicaciones móviles que se integran con tecnologías de EMS disponen de una directiva de protección de aplicaciones, que proporciona una protección básica para los datos corporativos al descargarse en aplicaciones móviles, incluidas las de Office. 
+
+| Propiedad    | Descripción                                                                           |
+|-------------|---------------------------------------------------------------------------------------|
+| Estado      | El tipo de propiedad del dispositivo. Puede ser **Empresa**, **Personal** o **Desconocido**. |
+| Nombre de la aplicación    | El nombre de la aplicación.                                                           |
+| Nombre del dispositivo | El nombre del tipo de dispositivo.                                                       |
+| Tipo de dispositivo | El nombre del tipo de dispositivo.                                                       |
+| Directivas    | El tipo de propiedad del dispositivo. Puede ser **Empresa**, **Personal** o **Desconocido**. |
+| Última sincronización   | La marca de tiempo de la última vez que el dispositivo se sincronizó con Intune.                   |
+
+## <a name="next-steps"></a>Pasos siguientes
+
+Puede obtener más información sobre el control de administración basada en roles (RBAC) para definir los roles en su dispositivo de empresa, en la administración de aplicaciones móviles y en las tareas de protección de datos en [Control de administración basada en roles (RBAC) con Intune](/intune/role-based-access-control).
+
+Obtenga información sobre los problemas conocidos de Microsoft Intune. Para obtener más información, consulte [Problemas conocidos de Microsoft Intune](/intune/known-issues).
+
+Obtenga información sobre cómo crear una incidencia de soporte técnico y obtener ayuda cuando lo necesite. [Obtener soporte técnico](/intune/get-support).

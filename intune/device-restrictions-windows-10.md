@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fee635b6c50355a4af8b418c9f8e7fae8e88cff0
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 759207adf49308dcd4e6253627e4a1213be22904
+ms.sourcegitcommit: 2e77fe177a3df1dfe48e72f4c2bfaa1f0494c621
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/19/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos Windows 10 y versiones posteriores en Microsoft Intune
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/15/2017
     -       **Ninguno**: no se envían datos a Microsoft.
     -       **Básico**: se envía información limitada a Microsoft.
     -       **Mejorado**: se envían datos de diagnóstico mejorados a Microsoft.
-    -       **Completo **: envía los mismos datos que Mejorado, además de datos adicionales sobre el estado del dispositivo.
+    -       **Completo** : envía los mismos datos que Mejorado, además de datos adicionales sobre el estado del dispositivo.
 -   **Cámara**: permite o bloquea el uso de la cámara en el dispositivo.
 -   **Sincronización de archivos de OneDrive**: bloquea la sincronización de archivos de OneDrive en el dispositivo.
 -   **Almacenamiento extraíble**: especifica si se pueden usar dispositivos de almacenamiento externo, como tarjetas SD, con el dispositivo.
@@ -64,7 +64,7 @@ Para los dispositivos que ejecutan Windows 10 Mobile: si el inicio de sesión fa
     -   **Impedir la reutilización de contraseñas anteriores**: especifica el número de contraseñas usadas anteriormente que se recuerdan el dispositivo.
     -   **Requerir contraseña cuando el dispositivo vuelve de un estado de inactividad (solo móviles)**: especifica que el usuario debe escribir una contraseña para desbloquear el dispositivo (solo Windows 10 Mobile).
     -   **Contraseñas sencillas**: le permite el uso de contraseñas sencillas, como 1111 y 1234. Esta configuración también permite o bloquea el uso de contraseñas de imagen de Windows.
--   **Cifrado**: habilita el cifrado en los dispositivos de destino (solo Windows 10 Mobile).
+-   **Cifrado**: habilita el cifrado en dispositivos de destino.
 
 ## <a name="personalization"></a>Personalization
 
