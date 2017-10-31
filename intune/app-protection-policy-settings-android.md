@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 635f99a0fd4857e9c0c2266371713c102ce37912
-ms.sourcegitcommit: 4b776d1a87c0707244f4ae0122de882e0eef6fa3
+ms.openlocfilehash: df96d525efc49cb1916812a547daababbfeea051
+ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="android-app-protection-policy-settings"></a>Configuración de directivas de protección de aplicaciones de Android
 La configuración de directivas que se describe en este tema puede [realizarse](app-protection-policies.md) para una directiva de protección de aplicaciones en la hoja **Configuración** del portal de Azure.
@@ -86,3 +86,8 @@ Existen dos categorías de configuración de directiva: configuración de acceso
 | **Intervalo sin conexión antes de que se borren los datos de la aplicación (días)** | Después de estos días (definidos por el administrador) de ejecución sin conexión, la aplicación necesitará que el usuario se conecte a la red y vuelva a autenticarse. Si el usuario se autentica correctamente, puede seguir teniendo acceso a sus datos y el intervalo sin conexión se restablecerá.  Si el usuario no puede autenticarse, la aplicación realizará un borrado selectivo de los datos y la cuenta de los usuarios.  Vea [Borrado solo de datos corporativos de aplicaciones administradas por Intune](https://docs.microsoft.com/en-us/intune/apps-selective-wipe) para obtener más información sobre qué datos se eliminan con un borrado selectivo.<br><br> | 90 días |
 | **Bloquear captura de pantalla y Asistente para Android (Android 6.0+)** | Pulse **Sí** para bloquear las características de captura de pantalla y **Asistente para Android** del dispositivo cuando se usa esta aplicación. Al pulsar **Sí** también se desenfocará la imagen de vista previa de las últimas aplicaciones si se usa esta aplicación con una cuenta profesional o educativa. | No |
 | **Deshabilitar el PIN de aplicación cuando se administra el PIN del dispositivo** | Elija **Sí** para deshabilitar el PIN de aplicación cuando se detecta un bloqueo de dispositivo en un dispositivo inscrito. | No |
+| **Requiere el sistema operativo mínimo Android** | Seleccione **Sí** para requerir un sistema operativo mínimo Android para usar esta aplicación. Se bloqueará el acceso al usuario si la versión de Android en el dispositivo no cumple el requisito. | No |
+| **Requiere el sistema operativo mínimo Android (solo advertencia)** | Seleccione **Sí** para requerir un sistema operativo mínimo Android para usar esta aplicación. El usuario verá una notificación si la versión de Android en el dispositivo no cumple el requisito. Se puede descartar esta notificación. | No |
+| **Requiere la versión mínima de la aplicación** | Seleccione **Sí** para requerir la versión mínima de la aplicación para usar esta aplicación. Se bloqueará el acceso al usuario si la versión de la aplicación en el dispositivo no cumple el requisito.<br><br>Al seleccionar aplicaciones de destino, tenga en cuenta que las aplicaciones a menudo tienen esquemas de versiones distintas entre sí.<br><br> | No | 
+| **Requiere la versión mínima de la aplicación (solo advertencia)** | Seleccione **Sí** para recomendar la versión mínima de la aplicación para usar esta aplicación. El usuario verá una notificación si la versión de la aplicación en el dispositivo no cumple el requisito. Se puede descartar esta notificación.<br><br>Al seleccionar aplicaciones de destino, tenga en cuenta que las aplicaciones a menudo tienen esquemas de versiones distintas entre sí.<br><br> | No | 
+
