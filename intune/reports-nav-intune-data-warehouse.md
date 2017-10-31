@@ -14,11 +14,11 @@ ms.assetid: 701D6CE9-43F6-4A29-8E84-E2B59931C635
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 52b498beb024b86282c93be7aa5a248800db6609
-ms.sourcegitcommit: 294de4d4058de2c625abb8143e90880d27da9284
+ms.openlocfilehash: a0d6bcb4ccac3563dd642ec0ad621645b7053dea
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 10/20/2017
 ---
 #  <a name="intune-data-warehouse-api"></a>API de Almacenamiento de datos de Intune
 
@@ -41,9 +41,12 @@ Esta sección de referencia contiene información general sobre los puntos de co
 
 ## <a name="odata-custom-client"></a>Cliente personalizado de OData
 
-Puede acceder al modelo de datos de almacenamiento de datos de Intune a través de puntos de conexión RESTful. Para obtener acceso a los datos, el cliente debe realizar la autorización con Microsoft Azure Active Directory (Azure AD) mediante OAuth 2.0. Configure una aplicación web y una aplicación cliente en Azure y conceda permisos al cliente. El cliente local obtendrá la autorización y, luego, podrá comunicarse con los puntos de conexión de almacenamiento de datos.
+Puede acceder al modelo de datos de almacenamiento de datos de Intune a través de puntos de conexión RESTful. Para obtener acceso a los datos, el cliente debe realizar la autorización con Azure Active Directory (Azure AD) mediante OAuth 2.0. Configure una aplicación web y una aplicación cliente en Azure y conceda permisos al cliente. El cliente local obtendrá la autorización y, luego, podrá comunicarse con los puntos de conexión de almacenamiento de datos.
 
 Para obtener más información, consulte [Get data from the Data Warehouse API with a REST client (Obtener datos de la API de almacenamiento de datos con un cliente de REST)](reports-proc-data-rest.md)
+
+> [!Note]  
+> Puede acceder al [repositorio de almacenamiento de datos de Intune](https://github.com/Microsoft/Intune-Data-Warehouse) en Github para obtener ejemplos de código.
 
 ## <a name="interacting-with-the-api"></a>Interactuar con la API
 
@@ -58,6 +61,8 @@ OData define un modelo de datos abstracto y un protocolo que permiten que todos 
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Escenarios de autenticación para Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios)  
-[odata.org](http://www.odata.org)  
-[OData versión 4.0](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)  
+Para obtener más información sobre cómo trabajar con Azure AD, lea [Escenarios de autenticación para Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios).
+
+Puede acceder a recursos de OData en [odata.org](http://www.odata.org).
+  
+Revise la versión de OData 4.0 estándar en [OData versión 4.0] (http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html).  

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/25/2017
+ms.date: 10/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 5b9ee20b-3c4e-4461-86d3-6fd26e7f71a6
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: f3c76f558987cd03a4e6434243b31908cd083807
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: ba3a947060877fe704d4980cb1f25f34f110ff1f
+ms.sourcegitcommit: 2707a5fb68749a51c2a3ff54a1bac631bdaa3b87
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 10/18/2017
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>Instalación de Mobile Threat Defense en su dispositivo iOS
 
@@ -31,6 +31,17 @@ Para que pueda obtener acceso a su trabajo, el equipo de soporte técnico de su 
 * [SandBlast Mobile Protect](you-are-prompted-to-install-sandblast-ios.md)
 * [Zimperium zIPS](you-are-prompted-to-install-zips-ios.md)
 
-**Si la instalación no funciona**
+## <a name="additional-information-your-company-can-see"></a>Información adicional que puede ver su empresa
+
+Mobile Threat Defense es una forma que tienen las empresas de garantizar que los dispositivos se mantengan protegidos frente a aplicaciones que podrían intentar robar información corporativa. Al agregar esta protección, hay que proporcionar información adicional sobre las aplicaciones instaladas en los dispositivos al servicio Mobile Threat Defense que use su empresa. Su empresa no puede ver los datos que contengan las aplicaciones personales. Si se usa un servicio de Mobile Threat Defense, todas las aplicaciones del dispositivo se agregan al [contenido que puede ver su empresa](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md). Estos son los elementos de la aplicación que su empresa puede ver:
+
+*   Nombre de la aplicación
+* Id. de Apple: el nombre único que identifica la aplicación en el App Store.
+*   Versión de la aplicación y número abreviado de la versión: los números de la versión específica de una aplicación.
+* El grupo de aplicaciones y el tamaño dinámico: la cantidad de espacio que usa una aplicación en el dispositivo.
+* Validez de la aplicación: si una aplicación está validada para usarse.
+*   Estado de administración de la aplicación: si una aplicación está administrada por su empresa o si se trata de una aplicación personal.
+
+## <a name="if-the-installation-doesnt-work"></a>Si la instalación no funciona
 
 A veces, las instalaciones pueden producir errores debido a problemas técnicos fuera de su control. Si esto sucede, póngase en contacto con el soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).

@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ab24b147b32c94ba51728c0c223de3e6c92dd215
-ms.sourcegitcommit: cf7f7e7c9e9cde5b030cf5fae26a5e8f4d269b0d
+ms.openlocfilehash: dadcd33f39827365fc3f22c46d4332f3ea3cbf09
+ms.sourcegitcommit: a1c751959c9b3d5678bd9d67007e762df30eab59
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/23/2017
 ---
 # <a name="sync-devices-with-intune-to-get-the-latest-policies-and-actions"></a>Sincronización de dispositivos con Intune para obtener las directivas y las acciones más recientes
 
@@ -29,11 +29,11 @@ La acción de dispositivo **Sincronizar** fuerza al dispositivo seleccionado a r
 
 ## <a name="supported-platforms"></a>Plataformas compatibles
 
-- Windows: compatible
-- Windows Phone: compatible
-- iOS: compatible
-- macOS: compatible
-- Android: compatible
+- Windows
+- Windows Phone
+- iOS
+- macOS
+- Android
 
 ## <a name="how-to-sync-a-device"></a>Cómo sincronizar un dispositivo
 
@@ -43,6 +43,26 @@ La acción de dispositivo **Sincronizar** fuerza al dispositivo seleccionado a r
 4. En la hoja **Dispositivos y grupos**, elija **Todos los dispositivos**.
 5. En la lista de dispositivos que administra, elija un dispositivo y seleccione la acción remota **Sincronizar**.
 7. Haga clic en **Sí** para confirmar la acción.
+
+
+## <a name="retriable-error-codes"></a>Códigos de error que admiten reintentos
+
+Cuando un administrador ejecute la acción de dispositivo **Sincronización**, las aplicaciones de iOS y Android que han fallado pero han generado un código de error que admite reintentos estarán disponibles para el dispositivo. En cambio, las aplicaciones que han generado un código de error que no admite reintentos deberán esperar siete días antes de estar disponibles para el dispositivo.
+
+
+| Código de error  | Sugerencia de descripción                                                                                                                  | Admite reintentos |
+|-------------|----------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| 2016330898 | Se produjo un error desconocido.                                                                                                             | No        |
+| 2016330897 | La conexión a Intune ha agotado el tiempo de espera. Restablezca la conexión.                                                                             | Sí       |
+| 2016330896 | Ha perdido la conexión a Internet. Restablezca la conexión.                                                                            | Sí       |
+| 2016330895 | Ha perdido la conexión a Internet. Restablezca la conexión.                                                                            | Sí       |
+| 2016330894 | Ha perdido la conexión a Internet. Restablezca la conexión.                                                                            | Sí       |
+| 2016330893 | Ha perdido la conexión a Internet. Restablezca la conexión.                                                                            | Sí       |
+| 2016330892 | La itinerancia internacional se ha deshabilitado.                                                                                                     | No        |
+| 2016330891 | No se puede acceder a la conexión de datos móviles de este dispositivo mientras se realiza una llamada de teléfono. Espere a que la llamada de teléfono finalice. | Sí       |
+| 2016330890 | La red de telefonía móvil para este dispositivo. Estos dispositivos no se pueden usar en este momento.                                                   | No        |
+| 2016330889 | Error de conexión segura. Restablezca la conexión.                                                                                   | Sí       |
+| 2016330888 | Error en la evaluación de confianza del servidor.                                                                                                | No        |
 
 ## <a name="next-steps"></a>Pasos siguientes
 

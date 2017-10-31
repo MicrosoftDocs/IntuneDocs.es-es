@@ -15,18 +15,19 @@ ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c749b72949399dbe709b8ac5554cd919e2b09bc
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: b2f91005394d1bb586dcc07f309c89a8a1f1da7a
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos Android for Work en Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="work-profile-settings"></a>Configuración de perfil de trabajo
-- **Uso compartido de datos entre el perfil de trabajo y el personal**: use esta configuración para controlar si las aplicaciones del perfil de trabajo y las aplicaciones del perfil personal pueden compartir datos. Este valor controla las acciones de uso compartido dentro de las aplicaciones (por ejemplo, la opción **Compartir...** de la aplicación de explorador Chrome) y no se aplica al comportamiento del Portapapeles de copiar y pegar. A diferencia de la [configuración de las directivas de protección de aplicaciones](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), la configuración de las restricciones del dispositivo se administra desde Azure Portal y se usa la partición del perfil de trabajo de Android for Work para aislar las aplicaciones administradas. Elija de entre las siguientes opciones:
+-   **Copie y pegue entre el perfil laboral y el personal**: controla la acción de copiar y pegar entre aplicaciones laborales y personales. Elija **Bloquear** para habilitar el bloqueo. Elija **Sin configurar** para deshabilitar el bloqueo.
+- **Uso compartido de datos entre el perfil de trabajo y el personal**: use esta configuración para controlar si las aplicaciones del perfil de trabajo y las aplicaciones del perfil personal pueden compartir datos. Este valor controla las acciones de uso compartido dentro de las aplicaciones (por ejemplo, la opción **Compartir...** de la aplicación de explorador Chrome) y no se aplica al comportamiento del Portapapeles de copiar y pegar. A diferencia de la [configuración de las directivas de protección de aplicaciones](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), la configuración de las restricciones del dispositivo se administra desde el portal de Intune y se usa la partición del perfil de trabajo de Android for Work para aislar las aplicaciones administradas. Elija de entre las siguientes opciones:
     - **Restricciones de uso compartido predeterminado**: esta opción es el comportamiento de uso compartido predeterminado del dispositivo que varía según la versión de Android que se ejecuta. De manera predeterminada, se permite el uso compartido desde el perfil personal hasta el perfil de trabajo. También de manera predeterminada, el uso compartido desde el perfil de trabajo hasta el perfil personal está bloqueado. Esta opción evita que se compartan datos desde el perfil de trabajo hasta el perfil personal. Google no proporciona ninguna manera de bloquear el uso compartido desde el perfil personal hasta el perfil de trabajo en dispositivos que ejecutan las versiones 6.0 y posteriores.   
     - **Las aplicaciones de un perfil profesional pueden controlar la solicitud de uso compartido desde un perfil personal**: use esta opción para habilitar la característica de Android integrada que permite el uso compartido desde el perfil personal al perfil profesional. Cuando esta opción está habilitada, una solicitud de uso compartido que se inicia en una aplicación del perfil personal se podrá compartir con las aplicaciones del perfil de trabajo. Esta opción es el comportamiento predeterminado de los dispositivos Android que ejecutan versiones anteriores a 6.0.
     - **Permitir el uso compartido a través de límites**: permite el uso compartido a través del límite del perfil de trabajo en ambas direcciones. Cuando selecciona esta configuración, las aplicaciones del perfil de trabajo pueden compartir datos con aplicaciones no administradas del perfil personal. Use esta configuración con precaución, ya que permite que las aplicaciones administradas en el perfil de trabajo se compartan con aplicaciones del lado sin administrar del dispositivo.

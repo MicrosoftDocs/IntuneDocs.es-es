@@ -14,11 +14,11 @@ ms.assetid: D5ADB9D8-D46A-43BD-AB0F-D6927508E3F4
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6af0ff1f463c153e62f6df63ce811076c5f692f2
-ms.sourcegitcommit: addf6a40caa22c22adfd2e2eff7d666cd1877e3c
+ms.openlocfilehash: 079cfe097d6cf462f9ccd0a32d2e327b3b605e40
+ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 10/20/2017
 ---
 # <a name="reference-for-policy-entities"></a>Referencia de entidades de directivas
 
@@ -39,7 +39,7 @@ La entidad **Policy** muestra los perfiles de configuración de dispositivos, lo
 | PolicyId |Identificador único de la directiva en el almacenamiento de datos. |b66bc706-ffff-7437-0340-032819502773 |
 | PolicyName |Nombre de la directiva. |"Línea base de Windows 10" |
 | PolicyVersion |Versión de la directiva. Cuando la directiva se modifica o se cambia, se crea una versión más reciente. |1, 2, 3 |
-| IsDeleted |Indica si se ha actualizado el registro de la directiva.  True: la directiva tiene un nuevo registro con campos actualizados. False: registro más reciente de la directiva. |Verdadero/Falso |
+| IsDeleted |Indica si se ha actualizado el registro de la directiva.  <br>True: la directiva tiene un nuevo registro con campos actualizados. <br>False: registro más reciente de la directiva. |Verdadero/Falso |
 | StartDateInclusiveUTC |Fecha y hora en formato UTC en que se ha creado la directiva en el almacenamiento de datos. |23/11/2016 12:00:00 AM |
 | DeletedDateUTC |Fecha y hora en formato UTC en que IsDeleted ha cambiado a True. |23/11/2016 12:00:00 AM |
 | RowLastModifiedDateTimeUTC |Fecha y hora en formato UTC en que se ha modificado por última vez la directiva en el almacenamiento de datos. |23/11/2016 12:00:00 AM |
@@ -52,7 +52,7 @@ La entidad **PolicyType** muestra los tipos de perfiles de configuración de dis
 |---------|------------|--------|
 | PolicyTypeId |Identificador único de la directiva en el sistema de origen. |123 |
 | PolicyTypeKey |Identificador único de la directiva en el almacenamiento de datos. |1 |
-| PolicyTypeName |Nombre del tipo de directiva. |Directiva de cumplimiento de Windows 10 |
+| PolicyTypeName |Nombre del tipo de directiva. |Directiva de cumplimiento de Windows 10. |
 
 ## <a name="deviceconfiguration"></a>DeviceConfiguration
 
@@ -86,7 +86,7 @@ La entidad **PolicyTypeActivity** muestra el número acumulado de dispositivos c
 |---------|------------|--------|
 | DateKey |Clave de fecha en la que se ha anotado en el almacenamiento de datos el registro del perfil de configuración de dispositivos. |20160703 |
 | PolicyKey |Clave de la directiva, que puede combinarse con la directiva para obtener el nombre de la directiva. |Línea base de Windows 10 |
-| PolicyTypeKey |Clave del tipo de directiva, que puede combinarse con el tipo de directiva para obtener el nombre del tipo de directiva. |Directiva Windows10Compliance |
+| PolicyTypeKey |Clave del tipo de directiva, que puede combinarse con el tipo de directiva para obtener el nombre del tipo de directiva. |Directiva de cumplimiento de Windows 10 |
 | Pending |Número de dispositivos únicos en estado pendiente. |123 |
 | Correcto |Número de dispositivos únicos en estado correcto. |12 |
 | Error |Número de dispositivos únicos en estado de error. |10 |
