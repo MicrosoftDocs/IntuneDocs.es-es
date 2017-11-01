@@ -73,7 +73,7 @@ Intune no evalúa la carga de archivos de configuración de Apple ni perfiles pe
 
 Al asignar un perfil personalizado, asegúrese de que los valores configurados no entran en conflicto con las directivas de cumplimiento, de configuración o con directivas personalizadas de otro tipo. En el caso de un perfil personalizado con conflictos de parámetros, el orden en que se aplican los conflictos es aleatorio.
 
-## <a name="what-happens-when-a-profile-is-deleted-or-no-longer-applicable"></a>What happens when a profile is deleted or no longer applicable?
+## <a name="what-happens-when-a-profile-is-deleted-or-no-longer-applicable"></a>¿Qué ocurre cuando se elimina un perfil o deja de ser aplicable?
 Al eliminar un perfil o quitar un dispositivo de un grupo al que se le asigna un perfil, se quitará el perfil y la configuración del dispositivo según las siguientes listas.
 
 ### <a name="enrolled-devices"></a>Dispositivos inscritos
