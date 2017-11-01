@@ -240,10 +240,15 @@
           href: apps-deploy.md
         - name: Supervisión de aplicaciones
           href: apps-monitor.md
-        - name: Perfiles de configuración de aplicaciones de iOS
-          href: app-configuration-policies-use-ios.md
-        - name: Perfiles de configuración de aplicaciones de Android
-          href: app-configuration-policies-use-android.md
+        - name: Directivas de configuración de aplicaciones
+          href: app-configuration-policies-overview.md
+          items:
+            - name: iOS dispositivos administrados
+              href: app-configuration-policies-use-ios.md
+            - name: Android dispositivos administrados
+              href: app-configuration-policies-use-android.md
+            - name: Aplicaciones administradas
+              href: app-configuration-policies-managed-app.md
         - name: Uso de perfiles de aprovisionamiento de aplicaciones de iOS
           href: app-provisioning-profile-ios.md
         - name: Borrado selectivo de aplicaciones
@@ -381,6 +386,8 @@
           href: compliance-policy-create-mac-os.md
         - name: Creación de una directiva de Windows
           href: compliance-policy-create-windows.md
+        - name: Acciones en caso de incumplimiento
+          href: actions-for-noncompliance.md
         - name: Supervisión del cumplimiento del dispositivo
           href: compliance-policy-monitor.md
     - name: Configuración del acceso condicional
