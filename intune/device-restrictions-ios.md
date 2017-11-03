@@ -6,7 +6,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 09/19/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff2c9943a04ec02a83e821a65e1307e311a9d1c0
-ms.sourcegitcommit: 4ce095c0c3fa2e42cf76207b6ff8edf1fe397165
+ms.openlocfilehash: 043bc1ecf652802dc569d2df8b287b2246585f15
+ms.sourcegitcommit: 1416daed6803546445b6f280a86c663e6e00465a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/27/2017
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos iOS en Microsoft Intune
 
@@ -108,10 +108,8 @@ Esto también se aplica a valores accesibles desde la aplicación de configuraci
 
 En la lista de aplicaciones restringidas, puede configurar una de las listas siguientes:
 
-**Aplicaciones prohibidas**: aplicaciones (no administradas por Intune) que los usuarios no pueden instalar ni ejecutar.
-**Aplicaciones aprobadas**: aplicaciones que los usuarios pueden instalar. Los usuarios no deben instalar aplicaciones que no se muestren en la lista. Las aplicaciones que se administran mediante Intune están permitidas automáticamente.
-
-No se impide que los usuarios instalen una aplicación prohibida, pero si lo hacen, recibirá una notificación.
+- **Aplicaciones prohibidas**: aplicaciones (no administradas por Intune) que los usuarios no pueden instalar ni ejecutar. No se impide que los usuarios instalen una aplicación prohibida, pero si lo hacen, recibirá una notificación.
+- **Aplicaciones aprobadas**: aplicaciones que los usuarios pueden instalar. Los usuarios no deben instalar aplicaciones que no se muestren en la lista. Las aplicaciones que se administran mediante Intune están permitidas automáticamente. No se impide que los usuarios instalen una aplicación que no esté en la lista aprobada pero, si lo hace, usted recibirá una notificación.
 
 Para configurar la lista, haga clic en **Agregar** y especifique un nombre de su elección. Opcionalmente, puede indicar el editor de la aplicación y la dirección URL de la aplicación en la tienda de aplicaciones.
 

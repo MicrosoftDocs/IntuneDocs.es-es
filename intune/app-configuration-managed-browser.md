@@ -15,11 +15,11 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9701bbe4f39d310786fb399b3152595744019a1
-ms.sourcegitcommit: 0ee9909fc041c2e49c0e0312ae05f40bbeb2ee51
+ms.openlocfilehash: 99b8b50dbbb2dc2e3d7e8cd5af2f95fa2bb3b861
+ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/14/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Administrar el acceso a Internet mediante directivas de Managed Browser con Microsoft Intune
 
@@ -37,7 +37,11 @@ Como esta aplicación cuenta con integración con el SDK de Intune, también pue
 
 Para obtener detalles, vea [¿Qué son las directivas de protección de aplicaciones?](/intune/app-protection-policy)
 
-Puede aplicar esta configuración a los dispositivos que están inscritos en Intune o en otro producto de administración de dispositivos, así como a los dispositivos que no están administrados.
+Puede aplicar esta configuración a:
+
+- Dispositivos móviles inscritos con Intune
+- Inscritos con otro producto de MDM
+- Dispositivos no administrados
 
 Si los usuarios instalan Managed Browser desde la tienda de aplicaciones y no lo administra Intune, se puede utilizar como un explorador web básico, con compatibilidad para el inicio de sesión único a través del sitio de Microsoft MyApps. A los usuarios se les remite directamente al sitio de MyApps, donde pueden ver todas las aplicaciones SaaS aprovisionadas.
 Si Intune no administra Managed Browser, no puede acceder a los datos de otras aplicaciones administradas por Intune. 
@@ -143,7 +147,7 @@ Mediante el procedimiento para establecer una configuración de aplicaciones de 
 |||
 |-|-|
 |Key|Valor|
-|Elija de entre las siguientes opciones:<br><br>- Especificar direcciones URL permitidas (solo se permiten estas direcciones URL; no se puede acceder a otros sitios): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- Especificar direcciones URL bloqueadas (se puede acceder a todos los demás sitios): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|El valor correspondiente de la clave es una lista de direcciones URL. Escriba todas las direcciones URL que quiera permitir o bloquear como un valor único, separadas por un carácter de barra vertical **&#124;**.<br><br>Ejemplos:<br><br>-**URL1&#124;URL2&#124;URL3**<br>-**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**|
+|Elija de entre las siguientes opciones:<br><br>- Especificar direcciones URL permitidas (solo se permiten estas direcciones URL; no se puede acceder a otros sitios): **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br>- Especificar direcciones URL bloqueadas (se puede acceder a todos los demás sitios): <br><br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**|El valor correspondiente de la clave es una lista de direcciones URL. Escriba todas las direcciones URL que quiera permitir o bloquear como un valor único, separadas por un carácter de barra vertical **&#124;**.<br><br>Ejemplos:<br><br>**URL1&#124;URL2&#124;URL3**<br>**http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com**|
 
 >[!IMPORTANT]
 >No especifique ambas claves. Si las dos claves están destinadas al mismo usuario, se usa la clave permitida, ya que se trata de la opción más restrictiva.

@@ -5,7 +5,7 @@ keywords:
 author: oydang
 ms.author: oydang
 manager: angrobe
-ms.date: 01/20/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 56d0d3e79e38b20cb00a528fc6b55ca9de6ba871
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: 6ba1d1d9d0b1c21c364ef97f8340157a94ae996b
+ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 10/31/2017
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Preguntas más frecuentes sobre MAM y la protección de la aplicación
 
@@ -70,16 +70,16 @@ Este artículo proporciona respuestas a algunas preguntas frecuentes sobre la ad
 
 **¿Cuáles son los requisitos adicionales para usar las aplicaciones [Word, Excel y PowerPoint](https://products.office.com/business/office)?**
 
-  1. El usuario final debe tener una licencia de [Office 365 Empresa o Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) asignada a su cuenta de Azure Active Directory. La suscripción debe incluir las aplicaciones de Office en dispositivos móviles y una cuenta de almacenamiento en la nube con [OneDrive para la Empresa](https://onedrive.live.com/about/business/). Las licencias de Office 365 se pueden asignar en el [portal de Office](http://portal.office.com) siguiendo estas [instrucciones](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
+  1. El usuario final debe tener una licencia de [Office 365 Empresa o Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) asignada a su cuenta de Azure Active Directory. La suscripción debe incluir las aplicaciones de Office en dispositivos móviles y puede incluir una cuenta de almacenamiento en la nube con [OneDrive para la Empresa](https://onedrive.live.com/about/business/). Las licencias de Office 365 se pueden asignar en el [portal de Office](http://portal.office.com) siguiendo estas [instrucciones](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
-  2. El usuario final debe tener la aplicación de [OneDrive](https://onedrive.live.com/about/) instalada en su dispositivo e iniciar sesión con su cuenta AAD.
+  2. El usuario final debe tener una ubicación administrada configurada con la funcionalidad pormenorizada Guardar como en la configuración de directiva de protección de aplicaciones "Impedir Guardar como". Por ejemplo, si la ubicación administrada es OneDrive, la aplicación [OneDrive](https://onedrive.live.com/about/) debe estar configurada en la aplicación Word, Excel o PowerPoint del usuario final.
 
-  3. La directiva de protección de aplicaciones implementada para el usuario final debe tener como destino la aplicación OneDrive.
+  3. Si la ubicación administrada es OneDrive, la directiva de protección de aplicaciones implementada para el usuario final debe tener como destino la aplicación.
 
   >[!NOTE]
   > Las aplicaciones móviles de Office actualmente solo admiten SharePoint Online y no SharePoint local.
 
-**¿Por qué se necesita OneDrive para Office?** Intune marca todos los datos de la aplicación como "empresa" o "personal". Los datos se consideran "corporativos" cuando se originan desde una ubicación de la empresa. Para las aplicaciones de Office, Intune considera las siguientes ubicaciones de la empresa: correo electrónico (Exchange) o almacenamiento en la nube (aplicación OneDrive con una cuenta de OneDrive para la Empresa).
+**¿Por qué se necesita una ubicación administrada (como OneDrive) para Office?** Intune marca todos los datos de la aplicación como "empresa" o "personal". Los datos se consideran "corporativos" cuando se originan desde una ubicación de la empresa. Para las aplicaciones de Office, Intune considera las siguientes ubicaciones de la empresa: correo electrónico (Exchange) o almacenamiento en la nube (aplicación OneDrive con una cuenta de OneDrive para la Empresa).
 
 **¿Cuáles son los requisitos adicionales para usar Skype Empresarial?** Consulte los requisitos de licencias de [Skype Empresarial](https://products.office.com/skype-for-business/it-pros).
   >[!NOTE]
@@ -102,6 +102,18 @@ Este artículo proporciona respuestas a algunas preguntas frecuentes sobre la ad
   2. **¿Es seguro el PIN?** El PIN sirve para permitir que solo el usuario correcto disponga de acceso a los datos de su organización en la aplicación. Por lo tanto, el usuario debe iniciar sesión con su cuenta profesional o educativa para poder establecer o restablecer el PIN de la aplicación de Intune. Esta autenticación se controla mediante Azure Active Directory a través del intercambio de token seguros y no es transparente para Intune App SDK. Desde una perspectiva de seguridad, la mejor manera de proteger los datos profesionales o educativos es cifrarlos. El cifrado no está relacionado con el PIN de la aplicación, pero tiene su propia directiva de protección de aplicaciones.
 
   3. **¿Cómo protege el PIN contra ataques por fuerza bruta Intune?** Como parte de la directiva de PIN de la aplicación, el administrador de TI puede establecer el número máximo de veces que un usuario puede intentar autenticar su PIN antes de bloquear la aplicación. Después de que se haya cumplido el número de intentos, Intune App SDK puede borrar los datos "corporativos" en la aplicación.
+  
+**¿Cómo funciona el PIN de la aplicación Intune entre el tipo numérico y el tipo de código de acceso?**
+MAM permite actualmente un PIN de nivel de aplicación (iOS) con caracteres alfanuméricos y especiales (llamado "código de acceso"), el que requiere la participación de aplicaciones (como WXP, Outlook, Managed Browser, Yammer) para integrar el SDK de aplicaciones de Intune para iOS. Sin esto, la configuración de código de acceso no se aplica correctamente en las aplicaciones de destino. Como las aplicaciones seguirán esta integración de manera gradual, el comportamiento entre el PIN numérico y el código de acceso se cambia temporalmente para el usuario final y requiere una aclaración importante. Para la versión de octubre de 2017 de Intune, el comportamiento es el siguiente...
+
+Las aplicaciones que
+1. tienen el mismo editor de aplicaciones
+2. tienen un PIN de código de acceso de destino a través de la consola y 
+3. adoptaron el SDK con esta característica (v 7.1.12+) podrán compartir el código de acceso entre estas aplicaciones. 
+
+Las aplicaciones que
+1. tienen el mismo editor de aplicaciones
+2. tienen un PIN numérico de destino a través de la consola podrán compartir el PIN numérico entre estas aplicaciones. 
 
 **¿Qué sucede con el cifrado?** Los administradores de TI pueden implementar una directiva de protección de aplicaciones que requiere cifrar los datos de aplicaciones. Como parte de la directiva, el administrador de TI también puede especificar cuándo se cifra el contenido.
 
