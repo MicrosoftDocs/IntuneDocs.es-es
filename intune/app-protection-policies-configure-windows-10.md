@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,44 +15,44 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 52b273532935184918e65d25a37ca3d03e76680c
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 09f3edbe8b53371514ae4826246c99201c005762
+ms.sourcegitcommit: b5692ee05e8be1842cb1007facf80c9bce972dc4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Preparativos para configurar directivas de protección de aplicaciones para Windows 10
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Antes de crear una directiva de protección de aplicaciones para Windows 10, debe habilitar la administración de aplicaciones móviles (MAM) para Windows 10 configurando el proveedor de MAM en Azure AD. Esta configuración le permite definir el estado de la inscripción al crear una nueva directiva de Windows Information Protection (WIP) con Intune.
+Habilite la administración de aplicaciones móviles (MAM) para Windows 10. Para ello, establezca el proveedor de MAM en Azure AD. Establecer un proveedor de MAM en Azure AD permite definir el estado de la inscripción al crear una nueva directiva de Windows Information Protection con Intune. El estado de la inscripción puede ser MAM o administración de dispositivos móviles (MDM).
 
 > [!NOTE]
-> El estado de la inscripción puede ser MAM o administración de dispositivos móviles (MDM).
+> Se requiere que los dispositivos con un estado de inscripción de MAM se combinen con Azure AD.
 
 ## <a name="to-configure-the-mam-provider"></a>Para configurar el proveedor de MAM
 
-1.  Vaya a [Azure Portal](https://portal.azure.com/) e inicie sesión con sus credenciales de Intune.
+1. Inicie sesión en Azure Portal y seleccione **Azure Active Directory.**
 
-2.  En el menú de la izquierda, elija **Azure Active Directory**.
+2. Elija **Movilidad (MDM y MAM)** en el grupo **Administrar**.
 
-    ![Configuración de proveedor de MAM](./media/mam-provider-sc-1.png)
+3. Haga clic en **Microsoft Intune**.
 
-3.  Se abre la hoja de **Azure AD**, elija **Movilidad (MDM y MAM)** y, a continuación, haga clic en **Microsoft Intune**.
+4. Configure los valores en el grupo **Restaurar las URL de MAM predeterminadas** en la hoja **Configurar**.
 
-    ![Movilidad (MDM y MAM)](./media/mam-provider-sc-1.png)
+    **Ámbito de usuario de MAM**  
+      Use la inscripción automática de MAM para administrar los datos de la empresa en los dispositivos Windows de sus empleados. La inscripción automática de MAM se configurará para traer sus propios escenarios de dispositivo.<ul><li>**Ninguno**<br>Seleccione si todos los usuarios se pueden inscribir en MAM.</li><li>**Algunos**<br>Seleccione los grupos de Azure AD que incluyen los usuarios que se inscribirán en MAM.</li><li>**Todos**<br>Seleccione si todos los usuarios se pueden inscribir en MAM.</li></ul>
 
-4.  Cuando se abra la hoja de configuración, elija primero **Restaurar las URL de MAM predeterminadas** y luego configure lo siguiente:
+    **URL de las condiciones de uso de MAM**  
+     La dirección URL del punto de conexión de los términos de uso del servicio MAM. El punto de conexión de las condiciones de uso se usa para mostrar las condiciones de servicio a los usuarios finales antes de inscribir sus dispositivos para administración. El texto de las condiciones se uso informa a los usuarios sobre las directivas que se aplican en el dispositivo móvil.
 
-    a.  Ámbito de usuario de MAM: puede usar MAM para proteger los datos corporativos en un grupo específico de usuarios que utilizan dispositivos Windows 10 o todos los usuarios.
+    **URL de detección de MAM**  
+    La dirección URL del punto de conexión de la inscripción del servicio MAM. El punto de conexión de inscripción se usa para inscribir dispositivos para administración con el servicio MAM.
 
-    b.  URL de los términos de uso de MAM: la dirección URL del extremo de términos de uso del servicio MAM. Se utiliza para mostrar el término del servicio MAM a los usuarios finales.
+    **URL de cumplimiento de MAM**  
+      La dirección URL del punto de conexión de cumplimiento del servicio MAM. Cuando se deniega el acceso de un usuario a un recurso desde un dispositivo no compatible, el usuario ve un vínculo a la dirección URL de cumplimiento. Los usuarios pueden navegar a esta dirección URL que el servicio MAM hospeda, para comprender por qué se considera que el dispositivo no es compatible. Los usuarios también pueden iniciar una corrección de autoservicio para que sus dispositivos sean compatibles y puedan seguir teniendo acceso a los recursos.
 
-    c.  URL de detección de MAM: esta es la dirección URL que buscan los dispositivos cuando necesitan aplicar directivas de protección de aplicaciones.
-
-    d.  URL de cumplimiento de MAM:
-
-5.  Una vez configurados estos valores, elija **Guardar**.
+5.  Haga clic en **Guardar**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

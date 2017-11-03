@@ -545,6 +545,8 @@
     - name: Usar el Almacenamiento de datos de Intune
       href: reports-nav-create-intune-reports.md
       items:
+        - name: Registro de cambios para el almacenamiento de datos
+          href: reports-changelog.md
         - name: Conectarse al Almacenamiento de datos con Power BI
           href: reports-proc-get-a-link-powerbi.md
         - name: Creación de un informe desde la fuente de OData con Power BI
@@ -602,18 +604,20 @@
         - name: Modelo de datos de Almacenamiento de datos
           href: reports-ref-data-model.md
           items:
-            - name: Referencia de la entidad Date
-              href: reports-ref-date.md
-            - name: Referencia de la entidad User
-              href: reports-ref-user.md
-            - name: Referencia de entidades de administración de aplicaciones móviles (MAM)
-              href: reports-ref-mobile-app-management.md
-            - name: Referencia de las entidades Devices
-              href: reports-ref-devices.md
             - name: Referencia de entidades de aplicaciones
               href: reports-ref-application.md
-            - name: Referencia de la entidad de asociaciones de dispositivos de usuario
-              href: reports-ref-userdeviceassociations.md
+            - name: Referencia de la entidad de fecha
+              href: reports-ref-date.md
+            - name: Referencia de las entidades Devices
+              href: reports-ref-devices.md
+            - name: Referencia de entidades de administración de aplicaciones móviles (MAM)
+              href: reports-ref-mobile-app-management.md
+            - name: Referencia de entidades de directivas
+              href: reports-ref-policy.md
+            - name: Referencia de asociación de dispositivos del usuario
+              href: reports-ref-user-device.md
+            - name: Referencia de la entidad User
+              href: reports-ref-user.md
     - name: Transferencia local de aplicaciones de Windows
       href: intune-graph-apis.md
       items:

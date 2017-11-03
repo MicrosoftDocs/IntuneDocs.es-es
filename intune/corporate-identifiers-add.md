@@ -15,11 +15,11 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 82b839943d21cd44c1be457cc8436928f41fe73c
-ms.sourcegitcommit: b6a2d55d9c4e3248ff7ef738393f458f1978de44
+ms.openlocfilehash: 8dce9dea82673ebabd4170c74e4212c1da26382c
+ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identificar dispositivos como corporativos
 
@@ -45,7 +45,7 @@ Los administradores de Intune pueden crear e importar un archivo de valores sepa
 [Obtenga información sobre cómo buscar el número de serie de un dispositivo Android](https://support.google.com/store/answer/3333000).
 
 ## <a name="add-corporate-identifiers"></a>Adición de identificadores corporativos
-Para crear la lista, cree una lista de dos columnas de valores separados por comas (.csv) sin un encabezado. Agregue el número IMEI o de serie en la columna izquierda y los detalles en la columna derecha. Solo puede importarse un tipo de identificador, número IMEI o de serie en un único archivo .csv. Los detalles están limitados a 128 caracteres y son solo de uso administrativo. Los detalles no se muestran en el dispositivo. El límite actual es 500 filas por archivo. csv.
+Para crear la lista, cree una lista de dos columnas de valores separados por comas (.csv) sin un encabezado. Agregue el número IMEI o de serie en la columna izquierda y los detalles en la columna derecha. Solo puede importarse un tipo de identificador, número IMEI o de serie en un único archivo .csv. Los detalles están limitados a 128 caracteres y son solo de uso administrativo. Los detalles no se muestran en el dispositivo. El límite actual es 5000 filas por archivo. csv.
 
 **Cargar un archivo .csv con números de serie**: cree una lista de valores separados por comas (.csv) de dos columnas sin encabezado y limítela a 5000 dispositivos o a 5 MB por archivo .csv.
 

@@ -14,11 +14,11 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b6fd8525da11fcc376c4850c53ed1b98f37798ae
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: 27725d28ac621bae9500d0e6639a82d6f033e4dc
+ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 10/26/2017
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guía para desarrolladores de Android acerca del SDK para aplicaciones de Microsoft Intune
 
@@ -47,7 +47,7 @@ Si el sistema de compilación no admite archivos AAR, puede usar los archivos si
 
 ## <a name="requirements"></a>Requisitos
 
-El SDK para aplicaciones de Intune es un proyecto de Android compilado. Como resultado, no se ve para nada afectado por la versión de Android que usa la aplicación para sus versiones de API mínima o de destino. El SDK admite desde la API 14 (Android 4.0+) a la API 25 (Android 7.1) de Android.
+El SDK para aplicaciones de Intune es un proyecto de Android compilado. Como resultado, no se ve para nada afectado por la versión de Android que usa la aplicación para sus versiones de API mínima o de destino. El SDK admite desde la API 19 (Android 4.4+) a la API 25 (Android 7.1) de Android.
 
 
 
