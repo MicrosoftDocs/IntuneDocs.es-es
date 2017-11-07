@@ -6,7 +6,7 @@ keywords:
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 10/3/2017
+ms.date: 10/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: df96d525efc49cb1916812a547daababbfeea051
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: 8c07125901709d4d7baf3339e4dd09cb5620e8d1
+ms.sourcegitcommit: e9f9fccccef691333143b7523d1b325ee7d1915a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/02/2017
 ---
 # <a name="android-app-protection-policy-settings"></a>Configuración de directivas de protección de aplicaciones de Android
 La configuración de directivas que se describe en este tema puede [realizarse](app-protection-policies.md) para una directiva de protección de aplicaciones en la hoja **Configuración** del portal de Azure.
@@ -90,4 +90,3 @@ Existen dos categorías de configuración de directiva: configuración de acceso
 | **Requiere el sistema operativo mínimo Android (solo advertencia)** | Seleccione **Sí** para requerir un sistema operativo mínimo Android para usar esta aplicación. El usuario verá una notificación si la versión de Android en el dispositivo no cumple el requisito. Se puede descartar esta notificación. | No |
 | **Requiere la versión mínima de la aplicación** | Seleccione **Sí** para requerir la versión mínima de la aplicación para usar esta aplicación. Se bloqueará el acceso al usuario si la versión de la aplicación en el dispositivo no cumple el requisito.<br><br>Al seleccionar aplicaciones de destino, tenga en cuenta que las aplicaciones a menudo tienen esquemas de versiones distintas entre sí.<br><br> | No | 
 | **Requiere la versión mínima de la aplicación (solo advertencia)** | Seleccione **Sí** para recomendar la versión mínima de la aplicación para usar esta aplicación. El usuario verá una notificación si la versión de la aplicación en el dispositivo no cumple el requisito. Se puede descartar esta notificación.<br><br>Al seleccionar aplicaciones de destino, tenga en cuenta que las aplicaciones a menudo tienen esquemas de versiones distintas entre sí.<br><br> | No | 
-
