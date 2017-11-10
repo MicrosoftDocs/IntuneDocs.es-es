@@ -1,12 +1,12 @@
 ---
-title: "Uso de directivas de configuración de aplicaciones de Intune para iOS"
+title: "Agregar directivas de configuración de aplicaciones para dispositivos iOS administrados | Microsoft Docs"
 titlesuffix: Azure portal
-description: "Aprenda a usar directivas de configuración de aplicaciones para proporcionar datos de configuración a una aplicación de iOS, cuando se ejecuta."
+description: "Obtenga más información sobre cómo usar directivas de configuración de aplicaciones para proporcionar datos de configuración a una aplicación de iOS cuando esta se ejecuta."
 keywords: 
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.date: 07/26/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,31 +15,17 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bc42f3cafa83b5f7ba053d03dbd066b725bb1fee
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: d293ff6001ef937c7da0055e6642aa5a1226bd2e
+ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/01/2017
 ---
-# <a name="how-to-use-microsoft-intune-app-configuration-policies-for-ios"></a>Uso de directivas de configuración de aplicaciones de Microsoft Intune para iOS
+# <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Agregar directivas de configuración de aplicaciones para dispositivos iOS administrados
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Utilice las directivas de configuración de aplicaciones de Microsoft Intune para proporcionar valores de configuración que se emplearán cuando los usuarios ejecuten una aplicación para iOS. Por ejemplo, una aplicación puede requerir a los usuarios que especifiquen:
-
--   Un número de puerto personalizado.
-
--   Configuración de idioma.
-
--   Configuración de seguridad.
-
--   Configuración de marca, como un logotipo de empresa.
-
-Si los usuarios han especificado esta configuración incorrectamente, puede aumentar la carga del departamento de soporte técnico y ralentizar la adopción de nuevas aplicaciones.
-
-Las directivas de configuración de aplicaciones pueden ayudarle a eliminar estos problemas al permitirle asignar esta configuración a los usuarios en una directiva antes de ejecutar la aplicación. A continuación, la configuración se proporciona de forma automática y los usuarios no tienen que realizar ninguna acción. Las aplicaciones deben haberse escrito para admitir el uso de configuraciones de aplicaciones. Consulte con el proveedor de su aplicación para obtener más información.
-
-No asigne estas directivas directamente a usuarios y dispositivos. Asocie la directiva con una aplicación y, a continuación, asigne la aplicación. La configuración de directiva se usará cada vez que la aplicación la compruebe (normalmente, la primera vez que se ejecuta).
+Use las directivas de configuración de aplicaciones de Microsoft Intune para proporcionar valores de configuración que se emplearán cuando los usuarios ejecuten una aplicación para iOS. No asigne estas directivas directamente a usuarios y dispositivos. Asocie la directiva con una aplicación y, a continuación, asigne la aplicación. La configuración de directivas se usa cada vez que la aplicación la comprueba, que suele ser la primera vez que se ejecuta.
 
 > [!TIP]
 > Este tipo de directiva está disponible solo para dispositivos con iOS 8.0 y versiones posteriores. Admite los siguientes tipos de instalación de la aplicación:
@@ -50,67 +36,55 @@ No asigne estas directivas directamente a usuarios y dispositivos. Asocie la dir
 > Para más información sobre los tipos de instalación de aplicaciones, consulte [Adición de una aplicación a Microsoft Intune](apps-add.md).
 
 ## <a name="create-an-app-configuration-policy"></a>Crear una directiva de configuración de aplicaciones
-1.  Inicie sesión en el portal de Azure.
-2.  Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
-3.  En la hoja **Intune**, elija **Aplicaciones móviles**.
-4.  En la carga de trabajo **Mobile apps**, elija **Administrar** > **Directivas de configuración de aplicaciones**.
-5.  En la hoja de lista de directivas, elija **Agregar**.
-6.  En la hoja **Agregar directiva de configuración**, proporcione un **nombre** y una **descripción** opcional para la directiva de configuración de aplicaciones.
-7.  Elija una de las siguientes opciones para **Tipo de inscripción del dispositivo**:
-    - **Inscrito en Intune**: para aplicaciones que se administran mediante Intune.
-    - **No inscrito en Intune**: para las aplicaciones que no se administran mediante Intune, o que se administran mediante otra solución.
-8.  Para **Plataforma**, elija **iOS** (solo para dispositivos inscritos en Intune).
-9.  Elija **Aplicación asociada** y, en la hoja **Aplicación asociada**, elija la aplicación administrada a la que quiere aplicar la configuración.
-10. En la hoja **Agregar directiva de configuración**, elija **Opciones de configuración**.
-11. En la hoja **Opciones de configuración**, elija cómo quiere especificar los valores XML que conforman el perfil de configuración entre una de estas opciones:
-    - **Especificar datos XML** (solo para dispositivos inscritos en Intune): escriba o pegue una lista de propiedades XML que contenga las opciones de configuración de aplicaciones que quiera. El formato de la lista de propiedades XML varía según la aplicación que configure. Para obtener más información sobre el formato exacto que debe usar, póngase en contacto con el proveedor de la aplicación.
-Intune comprueba que el XML especificado está en un formato válido. No comprueba que funcione con la aplicación asociada a la lista de propiedades XML.
-Para obtener más información acerca de las listas de propiedades XML, vea [Understanding XML Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) (Descripción de las listas de propiedades XML) en la biblioteca de desarrolladores de iOS.
-    - **Usar diseñador de configuraciones** (no importa si el dispositivo está inscrito en Intune o no): permite especificar pares de clave y valor XML directamente en el portal.
-11. Cuando haya terminado, vuelva a la hoja **Agregar directiva de configuración** y presione **Crear**.
 
-La directiva se crea y aparece en la hoja de lista de directivas.
+1. Inicie sesión en Azure Portal.
+2. Elija **More Services** >  (Más servicios) **Supervisión y administración** + **Intune**.
+3. Elija la carga de trabajo **Aplicaciones móviles**.
+4. En el grupo **Administrar**, haga clic en **Directivas de configuración de aplicaciones** y en **Agregar**.
+5. Especifique los siguientes detalles:
+    - **Nombre**  
+      Nombre del perfil que aparecerá en Azure Portal.
+    - **Descripción**  
+      Descripción del perfil que aparecerá en Azure Portal.
+    - **Tipo de inscripción del dispositivo**  
+      Elija **Dispositivos administrados**.
+6. Para la opción **Plataforma**, seleccione **iOS**.
+7.  Elija **Aplicación asociada** y, en la hoja **Aplicación asociada**, elija la aplicación administrada a la que quiere aplicar la configuración.
+8.  En la hoja **Agregar directiva de configuración**, elija **Opciones de configuración**.
+9. Seleccione **Formato de opciones de configuración**. Seleccione una de las siguientes opciones:
+    - **[Usar diseñador de configuraciones](#Use-the-configuration-designer)**
+    - **[Especificar datos XML](#enter-xml-data)**
+10. Haga clic en **Aceptar** y en **Agregar**.
 
+## <a name="use-configuration-designer"></a>Uso del Diseñador de configuración
 
+El diseñador de configuración se puede usar con las aplicaciones de dispositivos inscritos o no en Intune. El diseñador permite configurar los valores y las claves de configuración específicos. También se debe especificar el tipo de datos para cada valor. La configuración se proporciona a las aplicaciones de forma automática cuando se instalan.
 
->[!Note]
->Puede usar [Intune App SDK](https://docs.microsoft.com/intune/app-sdk-ios) para preparar las aplicaciones de línea de negocio que se administrarán mediante las directivas de protección de aplicaciones de Intune y las directivas de configuración de aplicaciones, con independencia de que el dispositivo esté inscrito en Intune o no. Por ejemplo, puede usar una directiva de configuración de aplicaciones con el fin de configurar direcciones URL permitidas y bloqueadas para [Intune Managed Browser](app-configuration-managed-browser.md). Cuando una aplicación sea compatible con estas directivas, podrá configurarlas utilizando una directiva.
+### <a name="add-a-setting"></a>Agregar una opción de configuración
 
+1. Para cada clave y valor de la configuración, establezca lo siguiente: <ul><li>**Clave de configuración**<br>Se usa para identificar de manera única la configuración específica.</li><li>**Tipo de valor**<br>Tipo de datos del valor de configuración. Los tipos pueden ser entero, real, cadena o booleano.</li><li>**Valor de configuración**<br>Se trata del valor de la configuración.</li></ul>
+2. Haga clic en **Aceptar** para establecer las opciones de configuración.
 
-Cuando se ejecuta la aplicación asignada en un dispositivo, lo hará con las opciones configuradas en la directiva de configuración de aplicaciones.
-Consulte la documentación de la aplicación que está configurando para obtener información sobre lo que ocurre si una o varias directivas de configuración de aplicaciones entra en conflicto.
+### <a name="delete-a-setting"></a>Eliminar una opción de configuración
 
->[!Tip]
->Además, puede usar API Graph para realizar estas tareas. Para obtener más información, consulte la [referencia sobre API Graph para la configuración de destino de MAM](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create).
-
-
-## <a name="information-about-the-xml-file-format"></a>Información sobre el formato de archivo XML
-
-Intune admite los siguientes tipos de datos en una lista de propiedades:
-
-- &lt;entero&gt;
-- &lt;real&gt;
-- &lt;cadena&gt;
-- &lt;matriz&gt;
-- &lt;dict&gt;
-- &lt;true /&gt; o &lt;false /&gt;
-
-Para obtener más información acerca de los tipos de datos, vea [About Property Lists](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html) (Acerca de las listas de propiedades) en la biblioteca de desarrolladores de iOS.
-
-Además, Intune admite los siguientes tipos de token en la lista de propiedades:
-- \{\{userprincipalname\}\} - (Ejemplo: **John@contoso.com**)
-- \{\{mail\}\} - (Ejemplo: **John@contoso.com**)
-- \{\{partialupn\}\} - (Ejemplo: **Alberto**)
-- \{\{accountid\}\} - (Ejemplo: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**)
-- \{\{deviceid\}\} - (Ejemplo: **b9841cd9-9843-405f-be28-b2265c59ef97**)
-- \{\{userid\}\} - (Ejemplo: **3ec2c00f-b125-4519-acf0-302ac3761822**)
-- \{\{username\}\} - (Ejemplo: **Alberto Tercedor**)
-- \{\{serialnumber\}\} - (Ejemplo: **F4KN99ZUG5V2**) para dispositivos iOS
-- \{\{serialnumberlast4digits\}\} - (Ejemplo: **G5V2**) para dispositivos iOS
+1. Haga clic en los puntos suspensivos (...) junto a la opción de configuración.
+2. Seleccione **Eliminar**.
 
 Los caracteres \{\{ y \}\} solo se usan para los tipos de token y no deben usarse para otros fines.
 
-## <a name="example-format-for-an-app-configuration-xml-file"></a>Ejemplo de formato de un archivo XML de configuración de aplicaciones
+## <a name="enter-xml-data"></a>Especificar datos XML
+
+Puede escribir o pegar una lista de propiedades XML que contenga las opciones de configuración de aplicaciones para dispositivos inscritos en Intune. El formato de la lista de propiedades XML varía según la aplicación que configure. Para obtener más información sobre el formato exacto que debe usar, póngase en contacto con el proveedor de la aplicación.
+
+Intune valida el formato XML, pero no comprueba que la lista de propiedades XML funcione con la aplicación de destino.
+Para obtener más información sobre las listas de propiedades XML, vea [Understanding XML Property Lists] (Descripción de las listas de propiedades XML).
+
+Para obtener más información sobre listas de propiedades XML:
+
+  -  Lea [Configurar aplicaciones de iOS con directivas de configuración de aplicaciones móviles en Microsoft Intune](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
+  -  Consulte el artículo [Understand XML Plist](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html) (Descripción de XML Plist) en la biblioteca para desarrolladores de iOS.
+
+### <a name="example-format-for-an-app-configuration-xml-file"></a>Ejemplo de formato de un archivo XML de configuración de aplicaciones
 
 Cuando crea un archivo de configuración de aplicaciones, puede especificar uno o varios de los siguientes valores con este formato:
 
@@ -137,8 +111,30 @@ Cuando crea un archivo de configuración de aplicaciones, puede especificar uno 
   <key>udidlast4digits</key>
   <string>{{udidlast4digits}}</string>
 </dict>
-
 ```
+### <a name="supported-xml-plist-data-types"></a>Tipos de datos XML PList admitidos
+
+Intune admite los siguientes tipos de datos en una lista de propiedades:
+
+- &lt;entero&gt;
+- &lt;real&gt;
+- &lt;cadena&gt;
+- &lt;matriz&gt;
+- &lt;dict&gt;
+- &lt;true /&gt; o &lt;false /&gt;
+
+### <a name="tokens-used-in-the-property-list"></a>Tokens usados en la lista de propiedades
+
+Además, Intune admite los siguientes tipos de token en la lista de propiedades:
+- \{\{userprincipalname\}\} - (Ejemplo: **John@contoso.com**)
+- \{\{mail\}\} - (Ejemplo: **John@contoso.com**)
+- \{\{partialupn\}\} - (Ejemplo: **Alberto**)
+- \{\{accountid\}\} - (Ejemplo: **fc0dc142-71d8-4b12-bbea-bae2a8514c81**)
+- \{\{deviceid\}\} - (Ejemplo: **b9841cd9-9843-405f-be28-b2265c59ef97**)
+- \{\{userid\}\} - (Ejemplo: **3ec2c00f-b125-4519-acf0-302ac3761822**)
+- \{\{username\}\} - (Ejemplo: **Alberto Tercedor**)
+- \{\{serialnumber\}\} - (Ejemplo: **F4KN99ZUG5V2**) para dispositivos iOS
+- \{\{serialnumberlast4digits\}\} - (Ejemplo: **G5V2**) para dispositivos iOS
 
 ## <a name="next-steps"></a>Pasos siguientes
 
