@@ -8,7 +8,7 @@
 
 ## [Cómo iniciar sesión en el portal de empresa](sign-in-to-the-company-portal.md)
 
-## [Uso de un dispositivo Android con Intune](using-your-android-device-with-intune.md)
+## [Uso del dispositivo Android](using-your-android-device-with-intune.md)
 ### [¿Qué ocurre al inscribir un dispositivo Android?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
 ### [Inscripción de dispositivos](enroll-your-device-in-Intune-android.md)
 #### [Inscripción de dispositivos con Android for Work](create-a-work-profile-and-enroll-your-device-in-intune-android.md)
@@ -57,13 +57,10 @@
 ##### [Uso de SandBlast Mobile Protect](you-need-to-resolve-a-threat-found-by-checkpoint-android.md)
 ##### [Uso de zIPS de Zimperium](you-need-to-resolve-a-threat-found-by-zips-android.md)
 
-## [Uso de un dispositivo iOS o Mac OS con Intune](using-your-iOS-or-macOS-device-with-intune.md)
+## [Uso de dispositivos iOS](using-your-iOS-device-with-intune.md)
 ### [¿Qué ocurre al inscribir un dispositivo iOS?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 ### [Instalación e inicio de sesión en el Portal de empresa](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [Inscripción de dispositivos iOS](enroll-your-device-in-intune-ios.md)
-### [Inscripción de dispositivos macOS](enroll-your-device-in-intune-macos.md)
-### [Inscripción de dispositivos macOS con el Portal de empresa](enroll-your-device-in-intune-macos-cp.md)
-### [Este dispositivo es algo distinto](device-little-different-jamf.md)
 
 ### [Usar aplicaciones administradas en el dispositivo](use-managed-apps-on-your-device-ios.md)
 ### [Establecer o cambiar el código de acceso](set-or-change-your-passcode-ios.md)
@@ -96,6 +93,11 @@
 ##### [Uso de SandBlast Mobile Protect](you-need-to-resolve-a-threat-found-by-checkpoint-ios.md)
 ##### [Uso de zIPS de Zimperium](you-need-to-resolve-a-threat-found-by-zips-ios.md)
 
+## [Uso de dispositivos macOS](using-your-macos-device-with-intune.md)
+### [¿Qué ocurre al inscribir un dispositivo macOS?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
+### [Inscripción de dispositivos macOS](enroll-your-device-in-intune-macos-cp.md)
+### [Inscripción de dispositivos macOS antiguos](enroll-your-device-in-intune-macos-legacy.md)
+### [Este dispositivo es algo distinto](device-little-different-jamf.md)
 
 ## [Uso del dispositivo Windows](using-your-windows-device-with-intune.md)
 ### [¿Qué ocurre al inscribir un dispositivo Windows 10?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
@@ -123,6 +125,9 @@
 #### [El dispositivo necesita software antimalware](your-device-needs-antimalware-software.md)
 #### [Habilitación del arranque seguro](you-need-to-enable-secure-boot-windows.md)
 #### [Habilitación de la integridad de código](you-need-to-enable-code-integrity.md)
-
+#### [Tengo que habilitar el firewall](you-need-to-enable-defender-firewall-windows.md)
+#### [Tengo que habilitar UAC](you-need-to-enable-uac-windows.md)
+#### [Tengo que actualizar Windows](you-need-to-update-os-build-version-windows.md)
+#### [Tengo que activar Windows Defender](turn-on-defender-windows.md) 
 
 ## [Usar el sitio web del Portal de empresa de Intune](using-the-intune-company-portal-website.md)
