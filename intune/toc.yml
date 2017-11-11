@@ -164,6 +164,8 @@
               href: windows-bulk-enroll.md
             - name: Programa Windows AutoPilot Deployment
               href: enrollment-autopilot.md
+            - name: Pantalla de estado de inscripción
+              href: windows-enrollment-status.md
         - name: Configuración de la inscripción de Android
           href: android-enroll.md
         - name: Configuración de la inscripción en iOS
@@ -365,6 +367,8 @@
               href: certficates-pfx-configure.md
         - name: Configuración las opciones de Windows Information Protection
           href: windows-information-protection-configure.md
+        - name: Administración de scripts de PowerShell
+          href: intune-management-extension.md
         - name: Supervisión de los gastos de telecomunicaciones
           href: telecom-expenses-monitor.md
         - name: Asignación de perfiles
@@ -610,6 +614,8 @@
               href: reports-ref-date.md
             - name: Referencia de las entidades Devices
               href: reports-ref-devices.md
+            - name: Referencia de la extensión de administración de Intune
+              href: reports-ref-intunemanagementextension.md
             - name: Referencia de entidades de administración de aplicaciones móviles (MAM)
               href: reports-ref-mobile-app-management.md
             - name: Referencia de entidades de directivas
