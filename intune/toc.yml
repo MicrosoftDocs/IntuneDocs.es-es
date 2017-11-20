@@ -164,6 +164,8 @@
               href: windows-bulk-enroll.md
             - name: Programa Windows AutoPilot Deployment
               href: enrollment-autopilot.md
+            - name: Pantalla de estado de inscripción
+              href: windows-enrollment-status.md
         - name: Configuración de la inscripción de Android
           href: android-enroll.md
         - name: Configuración de la inscripción en iOS
@@ -365,6 +367,8 @@
               href: certficates-pfx-configure.md
         - name: Configuración las opciones de Windows Information Protection
           href: windows-information-protection-configure.md
+        - name: Administración de scripts de PowerShell
+          href: intune-management-extension.md
         - name: Supervisión de los gastos de telecomunicaciones
           href: telecom-expenses-monitor.md
         - name: Asignación de perfiles
@@ -556,11 +560,11 @@
     - name: Configuración de los valores personalizados del dispositivo
       href: custom-settings-configure.md
       items:
+        - name: Perfil de Wi-Fi con una clave precompartida
+          href: wi-fi-profile-shared-key.md
         - name: Android
           href: custom-settings-android.md
           items:
-            - name: Perfil de Wi-Fi con una clave precompartida
-              href: wi-fi-profile-shared-key.md
             - name: Perfil de VPN por aplicación
               href: android-pulse-secure-per-app-vpn.md
             - name: Permiso o bloqueo para aplicaciones de Samsung KNOX Standard
@@ -604,17 +608,23 @@
         - name: Modelo de datos de Almacenamiento de datos
           href: reports-ref-data-model.md
           items:
+            - name: Representación de la duración del usuario en el Almacenamiento de datos de Intune
+              href: reports-ref-user-timeline.md
             - name: Referencia de entidades de aplicaciones
               href: reports-ref-application.md
+            - name: Referencia de la entidad de usuario actual
+              href: reports-ref-current-user.md
             - name: Referencia de la entidad de fecha
               href: reports-ref-date.md
             - name: Referencia de las entidades Devices
               href: reports-ref-devices.md
+            - name: Referencia de la entidad de extensión de administración de Intune
+              href: reports-ref-intunemanagementextension.md
             - name: Referencia de entidades de administración de aplicaciones móviles (MAM)
               href: reports-ref-mobile-app-management.md
             - name: Referencia de entidades de directivas
               href: reports-ref-policy.md
-            - name: Referencia de asociación de dispositivos del usuario
+            - name: Referencia de la entidad de asociación de dispositivos del usuario
               href: reports-ref-user-device.md
             - name: Referencia de la entidad User
               href: reports-ref-user.md

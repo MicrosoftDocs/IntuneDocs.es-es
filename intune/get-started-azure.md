@@ -1,12 +1,12 @@
 ---
 title: "Introducción a Azure Portal"
 titlesuffix: Azure portal
-description: "Obtenga información sobre cómo crear y compartir paneles de Intune en Azure Portal."
+description: "Obtenga más información sobre cómo crear y compartir paneles de Intune en Azure Portal."
 keywords: 
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 08/16/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 42c43ca5fa1eee28cb245c7a64e47f7f704183f4
-ms.sourcegitcommit: fa6aaf12611c3e03e38e467806fc30b1d0255e88
+ms.openlocfilehash: cce99fb69abd5f99a4a1eae0c6fbe0e5178af450
+ms.sourcegitcommit: fc24d7eb4838b9102088dd4dcf5d1aa6b2c2e590
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/12/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="getting-started-with-intune-in-the-azure-portal"></a>Introducción a Intune en Azure Portal
 
@@ -27,7 +27,7 @@ Puede encontrar el servicio Intune en Azure Portal. Hay una gran cantidad de ser
 
 ## <a name="changing-the-sidebar"></a>Modificar la barra lateral
 
-La __barra lateral__ en el lado izquierdo de Azure Portal muestra una lista de todos los servicios de Azure disponibles. Esta lista completa se puede modificar desde su vista predeterminada, por lo que puede mantener una vista permanente de los servicios que considere más importantes. Usaremos Intune como ejemplo de servicio y lo agregaremos a la parte superior de la lista.
+La __barra lateral__ en el lado izquierdo de Azure Portal muestra una lista de todos los servicios de Azure disponibles. Esta lista completa se puede modificar desde la vista predeterminada, por lo que puede mantener una vista permanente de los servicios que considere más importantes. Usaremos Intune como ejemplo de servicio y lo agregaremos a la parte superior de la lista.
 
 ![Un usuario buscando Intune en la lista "Más servicios".](./media/azure-add-intune1.png)
 
@@ -52,7 +52,7 @@ Esto será más importante después de agregar más contenido a Intune, como los
 
 ## <a name="using-services"></a>Usar servicios
 
-Cuando abra Intune o cualquier otro servicio en Azure, se mostrará en una **hoja**. Algunas de las primeras cargas de trabajo que usa en Intune, como **Usuarios**, **Grupos** y **Aplicaciones móviles** se mostrarán en una hoja de pantalla completa. Al seleccionar una carga de trabajo, se abrirá su hoja en la página completa. Las demás hojas saldrán del lado izquierdo de la hoja al abrirlas y volverán a quedar por debajo de la hoja principal al contraerlas.
+Cuando abra Intune o cualquier otro servicio en Azure, dicho servicio se mostrará en una **hoja**. Algunas de las primeras cargas de trabajo que usa en Intune, como **Usuarios**, **Grupos** y **Aplicaciones móviles** se mostrarán en una hoja de pantalla completa. Al seleccionar la carga de trabajo, la hoja se abre ocupando toda la página. Las demás hojas salen del lado izquierdo de la hoja al abrirlas y vuelven a quedar por debajo de la hoja principal al contraerlas.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

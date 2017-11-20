@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
-ms.openlocfilehash: 3f60ee6334ac8fa00dcaaa524485c5339b040381
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
+ms.openlocfilehash: d940bc937caf966dd2d8c2ce01570bfa09a65bfb
+ms.sourcegitcommit: ca10ab40fe40e5c9f4b6f6f4950b551eecf4aa03
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 11/13/2017
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Cómo presentar Microsoft Intune a los usuarios finales
 
@@ -59,7 +59,7 @@ Asumir estas preocupaciones de los usuarios facilitará la implementación. Esta
   * [Cómo obtienen sus aplicaciones los usuarios de Android](end-user-apps-android.md)
 
 * **iOS**
-  * [Uso de un dispositivo iOS con Intune](/intune-user-help/using-your-ios-or-macos-device-with-intune)
+  * [Uso de un dispositivo iOS con Intune](/intune-user-help/using-your-ios-device-with-intune)
   * [Cómo obtienen sus aplicaciones los usuarios de iOS](end-user-apps-ios.md)
 
 * **Windows**

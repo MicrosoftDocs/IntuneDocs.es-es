@@ -6,7 +6,7 @@ keywords:
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.date: 10/27/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 043bc1ecf652802dc569d2df8b287b2246585f15
-ms.sourcegitcommit: 1416daed6803546445b6f280a86c663e6e00465a
+ms.openlocfilehash: 2f35de553259921c76341fe5b4a824e60c71d4a5
+ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/03/2017
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos iOS en Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>General
-    
+
 -   **Envío de datos de diagnóstico**: permite o impide que el dispositivo envíe datos de diagnóstico a Apple.
 -   **Captura de pantalla**: permite que el usuario capture el contenido de la pantalla como una imagen.
     - **Observación de pantalla remota mediante la aplicación Aula (solo supervisado)**: permite o impide que la aplicación Aula de Apple observe la pantalla de dispositivos iOS.
@@ -44,6 +44,54 @@ Esto también se aplica a valores accesibles desde la aplicación de configuraci
 - **Cambios en el perfil de configuración**: permite al usuario instalar perfiles de configuración.
 - **Bloqueo de activación (solo supervisado)**: permite el bloqueo de activación en dispositivos iOS supervisados.
 
+## <a name="configurations-requiring-supervision"></a>Configuraciones que requieren supervisión
+
+El modo supervisado de iOS solo se puede habilitar durante la configuración inicial del dispositivo a través del Programa de inscripción de dispositivos de Apple o con Apple Configurator. Una vez activado el modo supervisado, Intune puede configurar un dispositivo con la funcionalidad siguiente:
+
+- Bloqueo de aplicaciones (modo de aplicación única) 
+- Proxy HTTP global 
+- Bypass del bloqueo de activación 
+- Modo de aplicación única autónoma 
+- Filtro de contenido web 
+- Establecer la pantalla de fondo y la pantalla de bloqueo 
+- Inserción de aplicación silenciosa 
+- VPN Always-On 
+- Permitir la instalación de aplicaciones administradas de forma exclusiva 
+- iBookstore 
+- iMessages 
+- Centro de juegos 
+- AirDrop 
+- AirPlay 
+- Emparejamiento de host 
+- Sincronización en la nube 
+- Búsqueda en Spotlight 
+- Handoff 
+- Borrar dispositivo 
+- Interfaz de usuario de restricciones 
+- Instalación de perfiles de configuración por interfaz de usuario 
+- Noticias 
+- Métodos abreviados de teclado 
+- Modificaciones de código de acceso 
+- Cambios en los nombres de dispositivos 
+- Cambios en los fondos de escritorio 
+- Descargas de aplicaciones automáticas 
+- Cambios en la confianza de las aplicaciones empresariales 
+- Apple Music 
+- Mail Drop 
+- Emparejamiento con Apple Watch 
+
+> [!NOTE]
+> Apple ha confirmado que ciertas opciones de configuración se trasladarán al modo de solo supervisión en 2018. Le recomendamos que lo tenga en cuenta a la hora de usar estas opciones, en lugar de esperar a que Apple las migre al modo de solo supervisión:
+> - Instalación de la aplicación por los usuarios finales
+> - Eliminación de aplicaciones
+> - FaceTime
+> - Safari
+> - iTunes
+> - Contenido explícito
+> - Documentos y datos de iCloud
+> - Juego multijugador
+> - Agregar amigos del centro de juegos
+
 ## <a name="password"></a>Contraseña
 -   **Contraseña**: exige que el usuario final escriba una contraseña para acceder al dispositivo.
     -   **Contraseñas sencillas**: permite contraseñas sencillas, como 0000 y 1234.
@@ -56,7 +104,7 @@ Esto también se aplica a valores accesibles desde la aplicación de configuraci
     -   **Caducidad de la contraseña (días)**: especifique el número de días antes de que deba cambiarse la contraseña del dispositivo.
     -   **Impedir la reutilización de contraseñas anteriores**: especifique el número de contraseñas usadas anteriormente que el dispositivo puede recordar.
     -   **Desbloqueo con huella digital**: permite el uso de una huella digital para desbloquear dispositivos compatibles.
-- **Modificación del código de acceso (solo supervisado)**: impide que el código de acceso se cambie, se agregue o se quite. 
+- **Modificación del código de acceso (solo supervisado)**: impide que el código de acceso se cambie, se agregue o se quite.
     - **Modificación de huella digital (solo con supervisión)**: impide que el usuario cambie, agregue o quite la configuración de TouchID.
 
 <sup>1</sup>Al configurar los valores **Máximo de minutos de inactividad hasta que se bloquea la pantalla** y **Máximo de minutos tras bloqueo de pantalla antes de solicitar la contraseña**, se aplican en secuencia. Por ejemplo, si establece el valor para ambas opciones en **5** minutos, la pantalla se apagará automáticamente transcurridos 5 minutos y el dispositivo se bloqueará pasados 5 minutos más. Sin embargo, si el usuario apaga la pantalla manualmente, la segunda opción se aplica inmediatamente. En el mismo ejemplo, una vez que el usuario apague la pantalla, el dispositivo se bloqueará 5 minutos más tarde.
@@ -89,7 +137,7 @@ Esto también se aplica a valores accesibles desde la aplicación de configuraci
 
 ## <a name="built-in-apps"></a>Aplicaciones integradas
 
--   **Cámara**: seleccione si se puede usar la cámara del dispositivo. 
+-   **Cámara**: seleccione si se puede usar la cámara del dispositivo.
     -   **FaceTime**: permite el uso de la aplicación FaceTime en el dispositivo.
 -   **Siri**: permite el uso del asistente de voz Siri en el dispositivo.
     -   **Siri con dispositivo bloqueado**: permite el uso del asistente de voz Siri en el dispositivo aunque esté bloqueado.
@@ -124,9 +172,7 @@ Se deben asignar perfiles de dispositivo que contengan configuración de aplicac
 Ejemplo: busque Microsoft Word para iPad. La dirección URL que debe usar es https://itunes.apple.com/es/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
-> También puede utilizar el software de iTunes para encontrar la aplicación y, a continuación, utilizar el comando **Copiar vínculo** para obtener la dirección URL de la aplicación.
-
-
+> También puede usar iTunes para encontrar la aplicación y, a continuación, emplear el comando **Copiar vínculo** para obtener la dirección URL de la aplicación.
 
 ### <a name="additional-options"></a>Opciones adicionales
 
@@ -247,7 +293,7 @@ En esta lista se muestra el identificador de lote de algunas aplicaciones iOS co
 ,com.apple.mobileslideshow,Photos,Apple
 ,com.apple.podcasts,Podcasts,Apple
 ,com.apple.reminders,Reminders,Apple
-,com.apple.mobilesafariSafari,Apple
+,com.apple.MobileSafari,Safari,Apple
 ,com.apple.Preferences,Settings,Apple
 ,com.apple.stocks,Stocks,Apple
 ,com.apple.tips,Tips,Apple
@@ -305,6 +351,6 @@ En el campo **Email Domain URL** (Dirección URL de dominio de correo electróni
 En el campo **Web Domain URL** (Dirección URL de dominio web), agregue una o más direcciones URL a la lista. Los documentos que se descarguen de los dominios que especifica se considerarán administrados. Esta configuración solo se aplica a los documentos que se descargan con el explorador Safari.
 
 
-### <a name="safari-password-auto-fill-domains"></a>Dominios de relleno automático de contraseña de Safari
+### <a name="safari-password-autofill-domains"></a>Dominios de relleno automático de contraseña de Safari
 
 En el campo **Domain URL** (Dirección URL de dominio), agregue una o más direcciones URL a la lista. Los usuarios solo pueden guardar contraseñas web de las direcciones URL que aparecen en esta lista. Esta configuración solo se aplica al explorador Safari y a dispositivos iOS 9.3 y versiones posteriores en modo supervisado. Si no especifica ninguna dirección URL, se podrán guardar contraseñas de todos los sitios web.

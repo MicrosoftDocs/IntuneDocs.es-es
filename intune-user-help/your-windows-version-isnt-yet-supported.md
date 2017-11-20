@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/04/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 35b66074c5e4003dec87c03a2f3ed771d7cd48d6
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: cdcad8e7265c72312663ce45056e1d42b7379699
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="your-windows-devices-operating-system-version-isnt-yet-supported"></a>La versión del sistema operativo de su dispositivo Windows todavía no es compatible
 
-Debido al rápido ritmo del desarrollo de la tecnología, a veces es posible que su dispositivo esté más adelantado que los elementos que el equipo de soporte técnico de su empresa haya podido probar. Es posible que la versión más reciente de Windows no funcione con algunas de las otras herramientas de la empresa.
+Debido al rápido ritmo del desarrollo de la tecnología, a veces es posible que su dispositivo esté más adelantado que los elementos que el equipo de soporte técnico de su empresa haya podido probar. Es posible que la versión más reciente de Windows no funcione con algunas de las otras herramientas de la empresa. 
 
 Deberá ponerse en contacto con el equipo de soporte técnico de su empresa para solucionar este problema. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).

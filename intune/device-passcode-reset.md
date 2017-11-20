@@ -14,18 +14,18 @@ ms.technology:
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3defec3624944918d14b9c4527487c368c487dd6
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 0446db40b829e92b681294ecc497a2c475480fac
+ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="reset-the-passcode-on-intune-managed-devices"></a>Restablecimiento del código de acceso en los dispositivos administrados con Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-La acción **Restablecer el código de acceso** genera un nuevo código de acceso para el dispositivo que se muestra en la hoja <*nombre del dispositivo*> **Introducción**.
+La acción **Quitar código de acceso** genera un nuevo código de acceso para el dispositivo que se muestra en la hoja **Información general** de <*nombre del dispositivo*> .
 
 ## <a name="supported-platforms"></a>Plataformas compatibles
 
@@ -41,7 +41,7 @@ La acción **Restablecer el código de acceso** genera un nuevo código de acces
 2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
 3. En la hoja **Intune**, elija **Dispositivos**.
 4. En la hoja **Dispositivos y grupos**, elija **Todos los dispositivos**.
-5. En la lista de dispositivos que administra, elija un dispositivo y luego elija la acción de dispositivo remoto **Restablecer el código de acceso**.
+5. En la lista de dispositivos que administra, elija un dispositivo y seleccione la acción remota de dispositivo **Quitar código de acceso**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
