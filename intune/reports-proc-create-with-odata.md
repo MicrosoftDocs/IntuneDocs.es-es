@@ -14,11 +14,11 @@ ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 37f36aca0d58f5d87b9d54a1a4bdf18eb011b40b
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 1e0ffcaa2ff8bd9e622c1d27f27564bd78df0276
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Creación de un informe desde la fuente de OData con Power BI
 
@@ -60,16 +60,16 @@ Instale la versión más reciente de Power BI Desktop. Puede descargar Power BI 
 
     ![Fuente OData](media/reports-create-01-odatafeed.png)
 
-9. Haga clic en **Aceptar**.
+9. Seleccione **Aceptar**.
 10. Seleccione **Cuenta de la organización** y después inicie sesión con sus credenciales de Intune. 
 
     ![Credenciales de la cuenta de la organización](media/reports-create-02-org-account.png)
 
-11. Haga clic en **Conectar**. Se abrirá el navegador y mostrará la lista de tablas en el Almacén de datos de Intune. 
+11. Seleccione **Conectar**. Se abrirá el navegador y mostrará la lista de tablas en el Almacén de datos de Intune. 
 
     ![Navegador](media/reports-create-02-loadentities.png)
 
-12. Seleccione las tablas **dispositivos** y **ownerTypes**.  Haga clic en **Cargar**. Power BI cargará los datos en el modelo.
+12. Seleccione las tablas **dispositivos** y **ownerTypes**.  Seleccione **Cargar**. Power BI cargará los datos en el modelo.
 
 ## <a name="create-a-relationship"></a>Crear una relación 
 
@@ -77,8 +77,8 @@ Puede importar varias tablas para analizar no solo los datos en una sola tabla s
 
 ![Administrar relaciones](media/reports-create-03-managerelationships.png)
 
-1. Haga clic en **Administrar relaciones**.
-2. Si Power BI todavía no ha detectado relaciones, haga clic en **Detección automática...**  
+1. Seleccione **Administrar relaciones**.
+2. Si Power BI todavía no ha detectado las relaciones, seleccione**Detección automática...**  
 La relación se muestra en una columna Desde a una columna Hasta. En este ejemplo, el campo de datos **ownerTypeKey** de la tabla **dispositivos** enlaza con el campo de datos **ownerTypeKey** de la tabla **ownerTypes**. La relación le servirá para buscar el nombre simple del código del tipo de dispositivo en la tabla **dispositivos**.
 
 ## <a name="create-a-treemap-visualization"></a>Crear una visualización de gráfico de rectángulos
@@ -100,7 +100,7 @@ Ahora dispone de un objeto visual que muestra la distribución de los fabricante
 
 Puede agregar un filtro al gráfico de rectángulos para poder responder a preguntas adicionales con la aplicación. 
 
-1. Para agregar un filtro, haga clic en el lienzo del informe y después haga clic en el **Icono de segmentación de datos** (![gráfico de rectángulos con datos](media/reports-create-slicer.png)) en **Visualizaciones**.
+1. Para agregar un filtro, seleccione el lienzo del informe y, después, seleccione el **icono de segmentación de datos** (![gráfico de rectángulos con datos](media/reports-create-slicer.png)) en **Visualizaciones**.
 2. Busque la tabla **ownerTypes** y arrastre el campo de datos **ownerTypeName** de la sección **Filtros** en el panel **Visualizaciones**.  
    En la tabla de dispositivos, hay un campo de datos denominado **OwnerTypeKey** que contiene un código que indica si un dispositivo es propiedad de la empresa o personal. Puesto que le interesa que se muestren nombres descriptivos en este filtro, busque la tabla **ownerTypes** y arrastre el **ownerTypeName**. Este es un ejemplo de cómo el modelo de datos es compatible con las relaciones entre tablas.
 
@@ -108,8 +108,8 @@ Puede agregar un filtro al gráfico de rectángulos para poder responder a pregu
 
 Ahora tiene un filtro interactivo que puede usar para alternar entre dispositivos que son propiedad de la empresa y dispositivos personales para ver cómo cambia la distribución.
 
-1. Haga clic en **Empresa** para ver la distribución de los dispositivos que son propiedad de la empresa.
-2. Haga clic en **Personal** para ver los dispositivos personales.
+1. Seleccione **Empresa** para ver la distribución de los dispositivos que son propiedad de la empresa.
+2. Seleccione **Personal** para ver los dispositivos personales.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

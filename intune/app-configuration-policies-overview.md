@@ -1,7 +1,7 @@
 ---
 title: "Directivas de configuración de aplicaciones de Intune | Microsoft Docs"
 titlesuffix: Azure portal
-description: "Obtenga información sobre el uso de directivas de configuración de aplicaciones para Intune."
+description: "Obtenga información sobre cómo usar las directivas de configuración de aplicaciones para Intune."
 keywords: 
 author: mattbriggs
 ms.author: mabrigg
@@ -15,20 +15,20 @@ ms.assetid: 834B4557-80A9-48C0-A72C-C98F6AF79708
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b690f691278d0cc708ed7e586e30aee4ed6e807a
-ms.sourcegitcommit: 67c037af31c1f167ec9b4f4baa754631c817e7d1
+ms.openlocfilehash: 406d0faa1e03a41d20c1b584d2d37f9810ddbf32
+ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="app-configuration-policies-for-intune"></a>Directivas de configuración de aplicaciones para Intune
 
 Proporcione valores de configuración cuando los usuarios ejecuten una aplicación para iOS o Android con directivas de configuración de aplicaciones en Microsoft Intune. Por ejemplo, una aplicación puede requerir a los usuarios que especifiquen:
 
-- Un número de puerto personalizado
-- Configuración de idioma
-- Configuración de seguridad
-- Configuración de marca, como un logotipo de empresa
+- Un número de puerto personalizado.
+- Configuración de idioma.
+- Configuración de seguridad.
+- Configuración de marca, como un logotipo de empresa.
 
 Si los usuarios han especificado esta configuración incorrectamente, puede aumentar la carga del departamento de soporte técnico y ralentizar la adopción de nuevas aplicaciones.
 
@@ -38,7 +38,7 @@ No asigne estas directivas directamente a usuarios y dispositivos. Asocie la dir
 
 Tiene dos opciones sobre cómo usar las configuraciones de aplicación con Intune:
  - **Dispositivos administrados**  
-   El dispositivo se administra mediante Intune como el proveedor de MDM.
+   El dispositivo se administra mediante Intune como el proveedor de administración de dispositivos móviles (MDM).
  - **Aplicaciones administradas**  
    Una aplicación se administra sin la inscripción de dispositivos.
 
@@ -46,7 +46,7 @@ Tiene dos opciones sobre cómo usar las configuraciones de aplicación con Intun
 
 Puede usar las directivas de configuración de aplicaciones en las aplicaciones que lo admitan. Para admitir la configuración de aplicaciones en Intune, las aplicaciones deben haberse escrito con ese fin. Consulte con el proveedor de su aplicación para obtener más información.
 
-Puede preparar las aplicaciones de línea de negocio mediante la incorporación de Intune App SDK en la aplicación o mediante la encapsulación de la aplicación después de que se ha desarrollado. El SDK de aplicaciones de Intune, disponible para iOS y Android, habilita su aplicación para las directivas de protección de aplicaciones de Intune. Su objetivo es minimizar la cantidad de cambios de código que debe realizar el desarrollador de la aplicación. Para obtener más información, vea [Información general del SDK para aplicaciones de Intune](app-sdk.md).
+Puede preparar las aplicaciones de línea de negocio incorporando Intune App SDK en la aplicación o encapsulando la aplicación después de que haberla desarrollado. El SDK de aplicaciones de Intune, disponible para iOS y Android, habilita su aplicación para las directivas de protección de aplicaciones de Intune. Su objetivo es minimizar la cantidad de cambios de código que debe realizar el desarrollador de la aplicación. Para obtener más información, vea [Información general del SDK para aplicaciones de Intune](app-sdk.md).
 
 ## <a name="graph-api-support-for-app-configuration"></a>Compatibilidad de API Graph para la configuración de aplicaciones
 

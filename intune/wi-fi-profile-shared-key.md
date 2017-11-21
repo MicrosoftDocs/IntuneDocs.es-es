@@ -3,10 +3,10 @@ title: Crear un perfil de Wi-Fi con una clave precompartida
 titleSuffix: Azure portal
 description: Use un perfil personalizado de Intune para crear un perfil de Wi-Fi con una clave precompartida".
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 05/15/2017
+ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c524acc403d6a1c041aa0dcea0948c2707202e03
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: bfcce8d38bc403a13aa28cc762370a7cfaa0bc2d
+ms.sourcegitcommit: 1df625330f4e8f7f661b5f2b9f16b5590971838d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/10/2017
 ---
-# <a name="use-a-microsoft-intune-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Uso de un perfil de dispositivo personalizado de Microsoft Intune para crear un perfil de Wi-Fi con una clave precompartida
+# <a name="use-a-custom-device-profile-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Uso de un perfil de dispositivo personalizado de Microsoft Intune para crear un perfil de Wi-Fi con una clave precompartida
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 En este tema se explica cómo usar **Custom device profiles** (Personalizar perfiles de dispositivo) para crear un perfil de Wi-Fi con una clave precompartida. Además, se incluye un ejemplo de cómo crear un perfil de Wi-Fi basado en EAP.
@@ -205,3 +205,12 @@ También puede crear un archivo XML desde una conexión Wi-Fi existente:
     Es mejor usar un equipo que no esté conectado a muchas redes inalámbricas, ya que tendrá que examinar todos los perfiles para encontrar el adecuado.
 3.     Busque el archivo XML que tenga el nombre correcto.
 4.     Cuando haya encontrado el archivo XML correcto, copie y pegue el código XML en el campo de datos de la página de configuración de OMA-URI.
+
+## <a name="best-practices"></a>Procedimientos recomendados
+Antes de implementar un perfil de Wi-Fi con PSK, confirme que el dispositivo puede conectarse directamente al punto de conexión.
+
+Al girar las claves (contraseñas o frases de contraseña), tenga previsto que va a producirse un tiempo de inactividad y, por tanto, planee las implementaciones en consecuencia. Considere la posibilidad de insertar nuevos perfiles de Wi-Fi durante las horas no laborables. Avise igualmente a los usuarios de que la conectividad pueden verse afectada.
+ 
+Para garantizar una experiencia de transición sin problemas y enviar las actualizaciones de directiva en el momento oportuno, los dispositivos deben tener al menos un canal de comunicación abierto en Intune. Para ello, use la conectividad de las redes de telefonía móvil o proporcione acceso Wi-Fi de invitado, que conecta a los usuarios solo a los puntos de conexión de Intune.
+
+

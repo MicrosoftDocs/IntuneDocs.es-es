@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f1b9f6900a5dfded736bd0cc92283fdca2220a5
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: c7947c9d047c6f206f9f93c389d418379fe8267a
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Configuración de Exchange Connector local de Intune en Microsoft Intune Azure
 
@@ -134,13 +134,18 @@ Después de que Exchange Connector configure la conexión, los dispositivos móv
 > [!NOTE]
 > Si ha instalado On-Premises Exchange Connector y en algún punto elimina la conexión de Exchange, deberá desinstalar On-Premises Exchange Connector del equipo en el que se instaló.
 
-## <a name="validate-the-exchange-connection"></a>Validación de la conexión de Exchange
+## <a name="monitor-the-exchange-connector-activity"></a>Supervisión de la actividad de Exchange Connector
 
 Después de haber configurado correctamente Exchange Connector, puede ver el estado de la conexión y la última sincronización correcta. Para validar la conexión de Exchange Connector:
 
-- En el panel de Intune, elija **Acceso local**. En **Administrar**, seleccione **Acceso local a Exchange** para verificar el estado de la conexión.
+1. En el panel de Intune, elija **Acceso local**.
+2. En **Administrar**, seleccione **Acceso local a Exchange** para verificar el estado de la conexión.
 
 También puede comprobar la fecha y la hora del último intento de sincronización correcto.
+
+### <a name="system-center-operations-manager-scom-management-pack"></a>Módulo de administración de System Center Operations Manager (SCOM)
+
+A partir de la versión de Intune 1710, puede usar el [módulo de administración de SCOM para Exchange Connector e Intune](https://www.microsoft.com/en-us/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True). Este módulo de administración proporciona distintas maneras de supervisar Exchange Connector cuando haya que resolver problemas.
 
 ## <a name="next-steps"></a>Pasos siguientes
 [Creación de una directiva de acceso condicional para el entorno local de Exchange](conditional-access-exchange-create.md)

@@ -6,7 +6,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 08/21/2017
+ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,21 +14,21 @@ ms.technology:
 ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 4b4c2b008536881a56e768c480338b54a9e87b7e
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 8abc5e9a1e1d5ec5e0ea632b075209a0ba9456c2
+ms.sourcegitcommit: 474a24ba67f6bf4f00268bf9e4eba52331a6b82d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 11/07/2017
 ---
 # <a name="manage-software-updates"></a>Administrar actualizaciones de software
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Windows como servicio es el método para actualizar los dispositivos Windows 10. A partir de Windows 10, todas las nuevas actualizaciones de calidad y de características contienen las actualizaciones anteriores. Es decir, siempre que haya instalado la más reciente, sabrá que sus dispositivos Windows 10 están completamente actualizados. A diferencia de las versiones anteriores de Windows, ahora debe instalar la actualización completa en lugar de una parte.
+Windows como servicio es el método para actualizar los dispositivos Windows 10. A partir de Windows 10, todas las nuevas actualizaciones de calidad y de características contienen las actualizaciones anteriores. Es decir, siempre que tenga instalada la más reciente, sabrá que sus dispositivos Windows 10 están actualizados. A diferencia de las versiones anteriores de Windows, ahora debe instalar la actualización completa en lugar de una parte.
 
 Gracias a Windows Update para empresas, puede simplificar la administración de actualizaciones, ya que no tendrá que aprobar actualizaciones individuales para grupos de dispositivos. Todavía puede administrar los riesgos en sus entornos configurando una estrategia de implementación de actualizaciones; Windows Update se asegurará de que las actualizaciones se instalen en el momento oportuno. Microsoft Intune ofrece la posibilidad de configurar las actualizaciones en los dispositivos y de aplazar su instalación. Intune no almacena las actualizaciones, sino únicamente la asignación de las directivas de actualización. Los dispositivos acceden a Windows Update directamente para las actualizaciones. Use Intune para configurar y administrar **círculos de actualizaciones de Windows 10**. Un anillo de actualización contiene un grupo de opciones que configuran cuándo y cómo se instalan las actualizaciones de Windows 10. Por ejemplo, puede configurar las siguientes opciones:
 
-- **Rama de mantenimiento de Windows 10**: elija si desea que los grupos de dispositivos reciban actualizaciones de la rama actual o de la rama actual para empresas.  
+- **Canal de servicio de Windows 10**: elija si desea que los grupos de dispositivos reciban actualizaciones del Canal semianual o del Canal semianual (dirigido).  
 - **Configuración de aplazamiento**: configure las opciones de aplazamiento de actualizaciones con el fin de retrasar la instalación de las actualizaciones para grupos de dispositivos. Puede usar esta configuración para realizar una implementación por fases para revisar el progreso de las actualizaciones.
 - **Pausa**: posponga la instalación de actualizaciones si detecta un problema en cualquier momento durante la implementación.
 - **Período de mantenimiento**: configure las horas en que se pueden instalar las actualizaciones.
@@ -78,7 +78,7 @@ Después de crear anillos de actualización, debe asignarnos a grupos de disposi
 5. En la hoja que muestra la lista de perfiles, elija **Crear**.
 6. En la hoja **Create Update Ring** (Crear anillo de actualización), proporcione un nombre y una descripción opcional para el anillo de actualización. Luego, elija **Configuración**.
 7. En la hoja **Configuración**, configure la siguiente información:
-    - **Rama de mantenimiento**: establezca la rama de la que el dispositivo recibe actualizaciones de Windows (Rama actual o Rama actual para empresas).
+    - **Canal de servicio**: establezca el canal para el que el dispositivo recibe actualizaciones de Windows, ya sea Canal semianual o Canal semianual (dirigido).
     - **Actualizaciones de Microsoft**: elija si desea buscar actualizaciones de aplicaciones de Microsoft Update.
     - **Controladores de Windows**: elija si desea excluir los controladores de Windows Update durante las actualizaciones.
     - **Automatic update behavior** (Comportamiento de actualización automática): elija cómo administrar el comportamiento de actualización automática para examinar, descargar e instalar actualizaciones. Para obtener más información, consulte la sección [Update/AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate).
@@ -87,12 +87,12 @@ Después de crear anillos de actualización, debe asignarnos a grupos de disposi
     Las actualizaciones de calidad suelen ser correcciones y mejoras de la funcionalidad de Windows y se publican normalmente el primer martes de cada mes, aunque Microsoft puede lanzarlas en cualquier momento. Puede definir si, y durante cuánto tiempo, desea aplazar la recepción de actualizaciones de calidad después de su disponibilidad.
     - **Período de aplazamiento de actualizaciones de características (días)**: especifique el número de días que se aplazarán las actualizaciones de características. Puede aplazar la recepción de estas actualizaciones de características durante un período de hasta 180 días a partir de su publicación.
 
-    Las actualizaciones de características suelen ser nuevas características de Windows. Después de configurar la opción **Rama de mantenimiento** (**CB** o **CBB**), podrá definir si, y durante cuánto tiempo, desea aplazar la recepción de actualizaciones de características después de que Microsoft las publique en Windows Update.
+    Las actualizaciones de características suelen ser nuevas características de Windows. Después de configurar la opción **Canal de servicio**, ya sea Canal semianual o el Canal semianual (dirigido), podrá definir si quiere aplazar la recepción de actualizaciones de características (y durante cuánto tiempo) después de que Microsoft las publique en Windows Update.
 
     Por ejemplo:  
-    **Si la rama de mantenimiento está establecida en CB y el período de aplazamiento es de 30 días**: supongamos que X actualización de características se publica primero en Windows Update que en CB, en enero. El dispositivo no recibirá la actualización hasta febrero: 30 días más tarde.
+    **Si el canal de servicio se establece en Canal semianual (dirigido) y el período de aplazamiento es de 30 días**: supongamos que la actualización de características X se publica inicialmente en Windows Update como Canal semianual (dirigido) en enero. El dispositivo no recibirá la actualización hasta febrero: 30 días más tarde.
 
-    **Si la rama de mantenimiento se establece en CBB y el período de aplazamiento es de 30 días**: supongamos que X actualización de características se publica primero en Windows Update que en CB, en enero. Cuatro meses más tarde, en abril, X actualización de características se publica en CBB. El dispositivo recibirá la actualización de características los 30 días siguientes al lanzamiento en CBB, y se actualizará en mayo.
+    **Si el canal de servicio se establece en Canal semianual y el período de aplazamiento es de 30 días**: supongamos que la actualización de características X se publica inicialmente en Windows Update como Canal semianual (dirigido) en enero. Cuatro meses más tarde, en abril, la actualización de características X se publicará en el Canal semianual. El dispositivo recibirá la actualización de características 30 días después de esta publicación en el Canal semianual y se actualizará en mayo.
 
     - **Optimización de distribución**: elija el método por el que los dispositivos descargarán las actualizaciones de Windows. Para obtener más información, consulte [DeliveryOptimization/DODownloadMode](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#deliveryoptimization-dodownloadmode).
 8. Una vez que haya terminado, haga clic en **Aceptar**y, luego, en la hoja **Create Update Ring** (Crear anillo de actualización), haga clic en **Crear**.

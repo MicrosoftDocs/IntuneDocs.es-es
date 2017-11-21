@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 02/23/2017
+ms.date: 11/07/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9317fd747e52524d97cea5d4c79fed49246b5866
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: d8a5989358da932e4e8ce59528602fefb2265528
+ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Usar dispositivos administrados para realizar el trabajo
 Microsoft Intune es una aplicación de software que permite a las organizaciones administrar dispositivos (como smartphones, tabletas y equipos), aplicaciones y otros recursos corporativos como el correo electrónico. Así, los empleados tienen acceso a su información de trabajo desde prácticamente cualquier parte en casi cualquier dispositivo, y además mantienen la información corporativa segura.
@@ -28,7 +28,7 @@ Microsoft Intune es una aplicación de software que permite a las organizaciones
 Cuando inscribe un dispositivo en la administración con Intune, su departamento de TI puede administrar esos recursos de trabajo o educativos y proteger el dispositivo, al tiempo que le proporciona a usted y a sus empleados la libertad de usar su dispositivo preferido para realizar su trabajo. Una manera más sencilla de realizar esto es inscribir el dispositivo en la administración mediante el Portal de empresa.
 
 ## <a name="what-information-can-my-company-see-when-i-enroll-my-device-in-intune"></a>¿Qué información puede ver mi empresa cuando inscribo mi dispositivo en Intune?
-El departamento de TI de la empresa puede ver aquella información que es relevante para el trabajo, pero no la información personal. Es importante saberlo si se va a inscribir un dispositivo personal para su uso en el trabajo. Se desglosa lo que TI [puede y no puede ver en el siguiente artículo de la Ayuda de usuario](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+El departamento de asistencia técnica de la empresa puede ver aquella información que es relevante para el trabajo, pero no la información personal. Es importante saberlo si se va a inscribir un dispositivo personal para su uso en el trabajo. Se desglosa lo que TI [puede y no puede ver en el siguiente artículo de la Ayuda de usuario](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
 
 ## <a name="how-do-i-get-the-company-portal"></a>¿Cómo se obtiene el Portal de empresa?
 El portal de empresa se obtiene de dos maneras distintas:
@@ -49,7 +49,8 @@ Existen algunas diferencias mínimas entre la aplicación Portal de empresa y el
 Para saber qué puede hacer con el sitio web de Portal de empresa en vez de usar la aplicación Portal de empresa en el dispositivo, seleccione uno de los siguientes vínculos:
 
 - [Uso del dispositivo Android](using-your-android-device-with-intune.md)
-- [Uso del dispositivo iOS o macOS](using-your-ios-or-macOS-device-with-intune.md)
+- [Uso de dispositivos iOS](using-your-ios-device-with-intune.md)
+- [Uso de dispositivos macOS](using-your-macos-device-with-intune.md)
 - [Uso del dispositivo Windows](using-your-windows-device-with-intune.md)
 - [Uso del sitio web del portal de empresa](using-the-intune-company-portal-website.md)
 
