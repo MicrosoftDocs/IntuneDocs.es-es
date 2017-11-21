@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 05/31/2017
+ms.date: 11/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 997f4a612c69a7ddd6d56d4d860614c3bc513d3d
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 3e4dcd7767620d6d3939686f69ad9d72f6a2d8e2
+ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps"></a>Administración de transferencias de datos entre aplicaciones iOS
 ## <a name="manage-ios-apps"></a>Administrar aplicaciones iOS
@@ -30,6 +30,7 @@ Como parte de la protección de los datos de la empresa es necesario asegurarse 
 -   También puede implementar y administrar aplicaciones a través del **canal de administración de dispositivos móviles (MDM)**.  Esto requiere la inscripción de los dispositivos en la solución de MDM. Se puede tratar de aplicaciones **administradas por directivas** u otras aplicaciones administradas.
 
 La característica de **administración Open In** (o administración de "Abrir en") para dispositivos iOS puede limitar las transferencias de archivos para que solo se realicen entre las aplicaciones que se implementan en los dispositivos mediante el **canal de MDM**. Las restricciones de administración de Open In se establecen en los valores de configuración y se implementan con la solución MDM.  Cuando el usuario instala la aplicación implementada, se aplican las restricciones que usted defina.
+
 ##  <a name="using-app-protection-with-ios-apps"></a>Uso de la protección de aplicaciones con aplicaciones iOS
 Las directivas de protección de aplicaciones se pueden usar con la característica de **administración Open In** de iOS para proteger los datos de la empresa de las siguientes formas:
 
@@ -40,30 +41,25 @@ Las directivas de protección de aplicaciones se pueden usar con la característ
 -   **Dispositivos administrados por una solución MDM de terceros:** puede usar la característica de **administración Open In** para restringir la transferencia de datos a solo las aplicaciones administradas.
 Para asegurarse de que las aplicaciones que se implementan mediante la solución MDM de otros fabricantes también están asociadas con las directivas de protección de aplicaciones que ha configurado en Intune, debe configurar el valor de UPN de usuario como se describe en el tutorial [Configurar el valor de UPN de usuario](#configure-user-upn-setting-for-third-party-emm).  Si se implementan aplicaciones con el valor de UPN de usuario, las directivas de protección de aplicaciones se aplican a la aplicación cuando el usuario final inicia sesión con su cuenta profesional.
 
-> [!IMPORTANT]
-> El valor de UPN de usuario solo se necesita para aplicaciones implementadas en dispositivos administrados por MDM de terceros.  Para dispositivos administrados por Intune, este valor no es necesario.
-
-
-## <a name="configure-user-upn-setting-for-third-party-emm"></a>Configurar el valor de UPN de usuario para EMM de terceros
-La configuración del valor de UPN de usuario es **necesaria** para los dispositivos administrados por una solución EMM de terceros. El procedimiento que se describe a continuación es un flujo general para la configuración del valor de UPN y la experiencia del usuario final resultante:
-
+## <a name="configure-user-upn-setting-for-microsoft-intune-or-third-party-emm"></a>Configurar el valor de UPN de usuario para Microsoft Intune o para una solución EMM de terceros
+La configuración del valor de UPN de usuario es **necesaria** para los dispositivos administrados por Intune o por una solución EMM de terceros. El procedimiento que se describe a continuación es un flujo general para la configuración del valor de UPN y la experiencia del usuario final resultante:
 
 1.  En [Azure Portal](https://portal.azure.com), [cree y asigne una directiva de protección de aplicaciones](app-protection-policies.md) para iOS. Configure las directivas según los requisitos de su empresa y seleccione las aplicaciones iOS que debe tener esta directiva.
 
-2.  Implemente las aplicaciones y el perfil de correo electrónico que quiera administrar **a través de la solución MDM de terceros** siguiendo los pasos generalizados que se indican a continuación. Esto también se aborda en el Ejemplo 1.
+2.  Implemente las aplicaciones y el perfil de correo electrónico que quiera administrar a través de Intune o de la solución MDM de terceros siguiendo los pasos generales que se indican a continuación. Esto también se aborda en el Ejemplo 1.
 
-  1.  Implemente la aplicación con las siguientes opciones de configuración de la aplicación:
+3.  Implemente la aplicación con las siguientes opciones de configuración de la aplicación:
 
       **clave** = IntuneMAMUPN, **valor** = <username@company.com>
 
       Ejemplo: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
-  2.  Implemente la directiva de administración Open In mediante su proveedor de MDM externo en los dispositivos inscritos.
+4.  Implemente la directiva de **administración Open In**  con Intune o a través de su proveedor de MDM externo en los dispositivos inscritos.
 
 
-### <a name="example-1-admin-experience-in-third-party-mdm-console"></a>Ejemplo 1: Experiencia de administración en la consola MDM de terceros
+### <a name="example-1-admin-experience-in-intune-or-third-party-mdm-console"></a>Ejemplo 1: Experiencia de administración en Intune o en la consola MDM de terceros
 
-1. Vaya a la consola de administración de su proveedor de MDM externo. Vaya a la sección de la consola en la que se implementan las opciones de configuración de la aplicación en los dispositivos iOS inscritos.
+1. Vaya a la consola de administración de Intune o de su proveedor de MDM externo. Vaya a la sección de la consola en la que se implementan las opciones de configuración de la aplicación en los dispositivos iOS inscritos.
 
 2. En la sección Configuración de la aplicación, escriba lo siguiente:
 
@@ -73,6 +69,7 @@ La configuración del valor de UPN de usuario es **necesaria** para los disposit
 
 |Proveedor de MDM externo| Configuration Key | Tipo de valor | Valor de configuración|
 | ------- | ---- | ---- | ---- |
+|Microsoft Intune| IntuneMAMUPN | String | {UserPrincipalName}|
 |VMware AirWatch| IntuneMAMUPN | String | {UserPrincipalName}|
 |MobileIron | IntuneMAMUPN | String | ${userUPN} **o** ${userEmailAddress} |
 

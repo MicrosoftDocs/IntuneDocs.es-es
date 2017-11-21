@@ -15,11 +15,11 @@ ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 759207adf49308dcd4e6253627e4a1213be22904
-ms.sourcegitcommit: 2e77fe177a3df1dfe48e72f4c2bfaa1f0494c621
+ms.openlocfilehash: 903ba99a747689dd8882acedcb24fef2dd00a01d
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/19/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos Windows 10 y versiones posteriores en Microsoft Intune
 
@@ -31,10 +31,10 @@ ms.lasthandoff: 10/19/2017
 -   **Cancelación manual de la suscripción**: permite al usuario eliminar manualmente la cuenta del área de trabajo desde el dispositivo.
 -   **Instalación manual del certificado raíz (solo móviles)**: impide que el usuario instale manualmente certificados raíz y certificados CAP intermedios.
 -   **Envío de datos de diagnóstico**: los valores posibles son:
-    -       **Ninguno**: no se envían datos a Microsoft.
-    -       **Básico**: se envía información limitada a Microsoft.
-    -       **Mejorado**: se envían datos de diagnóstico mejorados a Microsoft.
-    -       **Completo** : envía los mismos datos que Mejorado, además de datos adicionales sobre el estado del dispositivo.
+    - **Ninguno**: no se envían datos a Microsoft.
+    - **Básico**: se envía información limitada a Microsoft
+    - **Mejorado**: se envían datos de diagnóstico mejorados a Microsoft.
+    - **Completo** : envía los mismos datos que Mejorado, además de datos adicionales sobre el estado del dispositivo.
 -   **Cámara**: permite o bloquea el uso de la cámara en el dispositivo.
 -   **Sincronización de archivos de OneDrive**: bloquea la sincronización de archivos de OneDrive en el dispositivo.
 -   **Almacenamiento extraíble**: especifica si se pueden usar dispositivos de almacenamiento externo, como tarjetas SD, con el dispositivo.
@@ -105,6 +105,7 @@ Para los dispositivos que ejecutan Windows 10 Mobile: si el inicio de sesión fa
 
 
 ## <a name="edge-browser"></a>Explorador Edge
+
 -   **Explorador de Microsoft Edge (solo móvil)**: permite el uso del explorador web Edge en el dispositivo.
 -   **Lista desplegable de la barra de direcciones (solo escritorio)**: use esto para impedir que Edge muestre una lista de sugerencias en una lista desplegable cuando escriba. Esto ayuda a minimizar el uso del ancho de banda de red entre Edge y servicios Microsoft.
 -   **Sincronizar favoritos entre exploradores de Microsoft (solo escritorio)**: permite que Windows sincronice los favoritos entre Internet Explorer y Edge.
@@ -180,6 +181,44 @@ Para los dispositivos que ejecutan Windows 10 Mobile: si el inicio de sesión fa
     -   **Accesibilidad**: bloquea el acceso al área de accesibilidad de la aplicación de configuración.
     -   **Privacidad**: bloquea el acceso al área de privacidad de la aplicación de configuración.
     -   **Actualización y seguridad**: bloquea el acceso al área de actualizaciones y seguridad de la aplicación de configuración.
+
+## <a name="kiosk"></a>Pantalla completa
+
+-   **Pantalla completa**: identifica el tipo de [pantalla completa](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) que la directiva admite.  Las opciones son:
+
+      - **No configurado** (valor predeterminado): la directiva no habilita una pantalla completa. 
+      - **Quiosco con aplicación única**: el perfil habilita el dispositivo como un quiosco con aplicación única.
+      - **Quiosco con varias aplicaciones**: el perfil habilita el dispositivo como un quiosco con varias aplicaciones.
+
+    Los quioscos con aplicación única necesitan la siguiente configuración:
+
+      - **Cuenta de usuario**: especifica la cuenta de usuario local (en el dispositivo) o el inicio de sesión de cuenta de Azure AD asociada a la aplicación de pantalla completa.  En el caso de las cuentas unidas a dominios de Azure AD, especifique la cuenta con el formato `domain\\username@tenant.org`.
+
+         En el caso de los dispositivos en entornos públicos, use cuentas con privilegios mínimos para evitar actividades no autorizadas.  
+
+      - **Identificador de modelo de usuario de la aplicación (AUMID)**: especifica el AUMID de la aplicación de pantalla completa.  Para más información, vea [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Buscar el identificador de modelo de usuario de aplicación de una aplicación instalada).
+
+    Los quioscos con varias aplicaciones requieren una configuración de pantalla completa.  Use el botón **Agregar** para crear una configuración de pantalla completa o seleccionar una ya existente.
+
+    Las configuraciones de quiosco con varias aplicaciones incluyen las siguientes opciones:
+
+    - **Nombre de la configuración de quiosco**: nombre descriptivo que se usa para identificar una configuración determinada.
+
+    - Una o varias **aplicaciones de pantalla completa** que constan de lo siguiente:
+
+        - **Tipo de aplicación**, que especifica el tipo de la aplicación de pantalla completa.  Entre los valores compatibles se incluyen:   
+
+            - **Aplicación Win32**: una aplicación de escritorio tradicional  (necesitará el nombre/ruta de acceso completa del archivo ejecutable correspondiente al dispositivo).
+
+            - **Aplicación para UWP**: una aplicación Windows universal.  Necesitará el [AUMID de la aplicación](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+
+        - **Identificador de la aplicación**: especifica bien el nombre o ruta de acceso completa del archivo ejecutable (aplicaciones Win32), bien el [AUMID de aplicación](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (aplicaciones para UWP).
+
+    - **Barra de tareas** indica si la barra de tareas se muestra (**Habilitada**) o se oculta (**No configurada**) en la pantalla completa.
+
+    - **Diseño del menú Inicio**: especifica un archivo XML que describe el modo en que las aplicaciones [aparecen en el menú Inicio](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
+
+    - **Usuarios asignados**: especifica una o varias cuentas de usuario asociadas a la configuración de pantalla completa.  La cuenta de usuario puede ser local en el dispositivo o un inicio de sesión de cuenta de Azure AD asociada a la aplicación de pantalla completa.  Especifique cuentas unidas a dominio con el formato `domain\\username@tenant.org`.
 
 ## <a name="defender"></a>Defender
 

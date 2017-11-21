@@ -15,11 +15,11 @@ ms.assetid: 1fadb488-9c6c-43c1-ba23-8c69db633b96
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e3333a5addfd0c4ab757121e22e19ac66c0b3e1d
-ms.sourcegitcommit: ec8561b8c63515e0b5f21a858984108dc5dbd5d3
+ms.openlocfilehash: ae5210cb3da5503c4cf1b85be8b8522fa1cfd6ce
+ms.sourcegitcommit: 1df625330f4e8f7f661b5f2b9f16b5590971838d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/07/2017
+ms.lasthandoff: 11/10/2017
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Configuración de Wi-Fi en Microsoft Intune
 
@@ -58,9 +58,7 @@ Use la información de este tema para conocer los aspectos básicos de la config
     - **iOS**
     - **macOS**
     - **Windows 8.1 y versiones posteriores (importe un perfil)**
-6. En la lista desplegable de **tipos de perfil**, elija **Wi-Fi básica** o **Wi-Fi empresarial**.
-    >[!TIP]
-    >Use **Wi-Fi básica** para proporcionar características básicas, como el nombre de red y el SSID. **Wi-Fi empresarial** le permite proporcionar información más avanzada, como el Protocolo de autenticación extensible (EAP) si la red Wi-Fi lo utiliza. **Importación de Wi-Fi** (para Windows 8.1 y Windows 10) le permite importar la configuración de Wi-Fi como archivo XML exportado previamente de otro dispositivo.
+6. En la lista desplegable de **tipos de perfil**, elija **Wi-Fi básica** o **Wi-Fi empresarial**. Puede usar **Wi-Fi básica** para proporcionar características básicas, como el nombre de red y el SSID. **Wi-Fi empresarial** le permite proporcionar información más avanzada, como el Protocolo de autenticación extensible (EAP) si la red Wi-Fi lo utiliza. **Importación de Wi-Fi** (para Windows 8.1 y Windows 10) le permite importar la configuración de Wi-Fi como archivo XML exportado previamente de otro dispositivo.
 7. Dependiendo de la plataforma que eligió, las opciones que pueda configurar serán diferentes. Vaya a uno de los siguientes temas para conocer más detalles sobre la configuración para cada plataforma:
     - [Configuración de Android y Android for Work](wi-fi-settings-android.md)
     - [Configuración de iOS](wi-fi-settings-ios.md)

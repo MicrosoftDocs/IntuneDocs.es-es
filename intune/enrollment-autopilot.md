@@ -5,17 +5,17 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 10/04/2017
+ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: 83ab9e4a6fae4fda4c8e97c5fc091d4e5a03f3ea
-ms.sourcegitcommit: b8d3f8da6d8c2bd5d6140d538193a02d5875aefb
+ms.openlocfilehash: 736eda24e355024e2abadd57206c0f0423e6d4b4
+ms.sourcegitcommit: af958afce3070a3044aafea490c8afc55301d9df
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/27/2017
+ms.lasthandoff: 11/09/2017
 ---
 # <a name="enroll-windows-devices-using-windows-autopilot-deployment-program"></a>Inscribir dispositivos mediante el programa Windows AutoPilot Deployment
 El programa Windows AutoPilot Deployment simplifica el aprovisionamiento de dispositivos. Actualmente, crear y mantener imágenes personalizadas de sistemas operativos conlleva mucho tiempo. También se requiere mucho tiempo para aplicar estas imágenes en dispositivos nuevos a la hora de prepararlos para que los puedan usar los usuarios finales. Con Microsoft Intune y AutoPilot, puede proporcionar nuevos dispositivos a los usuarios finales sin necesidad de crear, mantener y aplicar imágenes personalizadas del sistema operativo a los dispositivos. Al usar Intune para administrar dispositivos AutoPilot, puede administrar directivas, perfiles, aplicaciones, etc. en los dispositivos después de inscribirlos. Para obtener información general sobre las ventajas, los escenarios y los requisitos previos, consulte [Información general sobre Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-10-auto-pilot).
@@ -57,6 +57,13 @@ Los perfiles de AutoPilot Deployment sirven para configurar los dispositivos Aut
 > - Omitir las páginas de configuración de registro de Cortana, OneDrive y OEM
 > - Configurar automáticamente cuentas para el trabajo o la escuela
 > - Iniciar sesión con la marca de empresa o centro educativo    
+
+## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Alertas de dispositivos sin asignar de Windows AutoPilot <!-- 163236 -->
+Puede ver una alerta de dispositivos sin asignar de Windows AutoPilot para saber cuántos dispositivos del programa AutoPilot no tienen asignados perfiles de implementación de AutoPilot. Use la información provista en la alerta para crear perfiles y asignarlos a los dispositivos sin asignar. Al hacer clic en la alerta, verá una lista completa de dispositivos de Windows AutoPilot e información detallada sobre ellos. 
+1. Inicie sesión en [Azure](https://portal.azure.com/). 
+2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
+3. En la hoja de **Intune**, seleccione **Inscripción de dispositivos**.
+4. Elija **Información general** para ver la alerta. Haga clic en la alerta para ver una lista de dispositivos de AutoPilot.  
 
 ## <a name="assign-an-autopilot-deployment-profile"></a>Asignar un perfil de AutoPilot Deployment
 Después de crear los perfiles de AutoPilot Deployment, puede asignarlos a los dispositivos seleccionados.

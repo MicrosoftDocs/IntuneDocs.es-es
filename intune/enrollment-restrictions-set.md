@@ -3,10 +3,10 @@ title: "Establecer restricciones de inscripción en Intune"
 titlesuffix: Azure portal
 description: "Restrinja las inscripciones por plataforma y establezca un límite de inscripciones de dispositivos en Intune. \""
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 10/31/2017
+ms.date: 11/6/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0117d3249f7fd2568201762b7dd16af9cc26392c
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 463278e4dc9ad677f654754d4710b110b376cc2d
+ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 11/08/2017
 ---
 # <a name="set-enrollment-restrictions"></a>Establecer restricciones de inscripción
 
@@ -33,7 +33,7 @@ Como administrador de Intune, puede determinar qué dispositivos pueden inscribi
   - iOS
   - macOS
   - Windows
-- Versión de sistema operativo de la plataforma (solo iOS y Android)
+- Versión del sistema operativo de plataforma de iOS, Android y Windows (solo se pueden usar versiones de Windows 10, dejar en blanco si se permite Windows 8.1)
   - Versión mínima
   - Versión máxima
 - Restricción de los dispositivos de propiedad personal (solo iOS, Android y macOS)
@@ -55,7 +55,7 @@ Las restricciones de inscripción predeterminadas se aplican a todos los usuario
 
   Haga clic en **Guardar**.
 6. En **Todos los usuarios**, seleccione **Configuraciones de plataforma** y elija las configuraciones siguientes. Para cada plataforma permitida, puede configurar las opciones siguientes:
-  - **Versiones**: especifique las versiones **Mín.** y **Máx.** del sistema operativo de la plataforma para dispositivos iOS y Android. Las versiones de sistema operativo no son aplicables a los dispositivos que se inscriben con el Programa de inscripción de dispositivos, Apple School Manager o la aplicación Apple Configurator.
+  - **Versiones**: especifique las versiones **Mín.** y **Máx.** del sistema operativo de la plataforma de dispositivos Android, iOS o Windows. Android admite major.minor.rev.build. iOS admite major.minor.rev. Windows admite major.minor.rev.build únicamente para Windows 10. Las versiones de sistema operativo no son relevantes en dispositivos Apple que se hayan inscrito con el Programa de inscripción de dispositivos, Apple School Manager o la aplicación Apple Configurator. 
   - **Propiedad personal**: especifica si **Permitir** o **Bloquear** dispositivos Android, iOS y macOS.
   ![Captura de pantalla del área de trabajo de restricciones de dispositivos con las configuraciones de plataforma de dispositivos predeterminadas que muestran las opciones de propiedad personal configuradas.](media/device-restrictions-platform-configurations.png)
   Haga clic en **Guardar**.

@@ -1,5 +1,5 @@
 ---
-title: "Instalar la aplicación Portal de empresa para iOS | Microsoft Docs"
+title: "Instalación de la aplicación de Portal de empresa para macOS | Microsoft Docs"
 description: 
 keywords: 
 author: barlanmsft
@@ -10,21 +10,21 @@ ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: a2467c02-aac5-41c8-b788-cbda830941ef
+ms.assetid: c1601bb7-5397-44af-a2e2-9c370f23976f
 searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 653ccf642cdf2c157694cfbe7e27e225a9df2d6d
+ms.openlocfilehash: c35c04f893e857ada04445611533c6b0f408d2dc
 ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/08/2017
 ---
-# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-device-in-intune"></a>¿Qué ocurre si instala la aplicación Portal de empresa e inscribe su dispositivo iOS en Intune?
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-macos-device-in-intune"></a>¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo macOS en Intune?
 
-Al instalar la aplicación Portal de empresa e inscribir su dispositivo iOS en Intune, puede usar la aplicación Portal de empresa para:
+Al instalar la aplicación de Portal de empresa e inscribir su dispositivo macOS en Intune, puede usar la aplicación de Portal de empresa para:
 
 -   Acceder a la red, el correo electrónico y los archivos de trabajo de la empresa.
 
