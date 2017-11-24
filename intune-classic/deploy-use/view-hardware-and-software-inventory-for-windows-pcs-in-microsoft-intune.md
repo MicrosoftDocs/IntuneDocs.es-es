@@ -1,5 +1,5 @@
 ---
-title: Vea el inventario de software y hardware para equipos Windows
+title: "Visualización del inventario de software y hardware para equipos Windows"
 description: "Cómo ver información de hardware y software sobre escritorios de Windows que administra como PC con el cliente de software de Intune."
 keywords: 
 author: arob98
@@ -20,7 +20,7 @@ ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/10/2017
 ---
-# <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>Vea el inventario de software y hardware para equipos Windows
+# <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>Visualización del inventario de software y hardware para equipos Windows
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -54,7 +54,7 @@ Intune recopila información detallada sobre el hardware y software de los escri
 
 ## <a name="to-refresh-computer-inventory-to-ensure-it-is-current"></a>Para actualizar el inventario de equipos a fin de asegurarse de que está al día
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), seleccione **Grupos** &gt; **Todos los dispositivos**  (u otro grupo que contenga el PC para el que quiera actualizar el inventario).
+1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), seleccione **Grupos** &gt; **Todos los dispositivos ** (u otro grupo que contenga el PC para el que quiera actualizar el inventario).
 
 2.  Seleccione un PC o mantenga presionada la tecla **Ctrl** para seleccionar varios PC.
 
