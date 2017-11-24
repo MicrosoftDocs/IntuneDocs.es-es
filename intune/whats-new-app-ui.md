@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/06/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,24 +14,49 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dff1cb496b85f933d8f462b94f6e15fa7ff69a28
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.openlocfilehash: 7ec7f322f0d35d50a7c84d8e40d43a6a04ae1b7d
+ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Actualizaciones de la interfaz de usuario para las aplicaciones de usuario final de Intune
 Obtenga más información sobre las actualizaciones que hemos realizado en la interfaz de usuario para las aplicaciones que verán los usuarios finales en esta versión de Microsoft Intune. Esto puede ayudarle con las comunicaciones de usuario y cualquier documentación de actualización personalizada que haya creado para admitir su implementación. También puede ayudarle a comprender cómo solucionar mejor los posibles problemas a los que se enfrenten en caso de que sea necesario llamar al departamento de soporte técnico mediante el Portal de empresa.
 
+## <a name="week-of-november-13-2017"></a>Semana del 13 de noviembre de 2017
+
+### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>Mejoras en el flujo de trabajo de configuración de dispositivos en Portal de empresa para iOS, versión 2.9.0 <!---1417174--->
+
+Hemos mejorado el flujo de trabajo de configuración de dispositivos en la aplicación Portal de empresa para iOS. El lenguaje ahora es más fácil de entender, y también hemos combinado las pantallas que hemos podido. También hemos utilizado el nombre de su empresa en el texto del proceso de configuración para que el lenguaje sea más específico.
+
+> [!NOTE]
+> Utilizamos el nombre de empresa que ha establecido en Azure Portal, en **Microsoft Intune** > **Mobile Apps** > **Personalización de marca del Portal de empresa** > **Nombre de la empresa**. Si no ha definido este valor, se usará el nombre del inquilino establecido en **Azure Active Directory** > **Propiedades** > **Nombre**. Si no ha establecido ningún nombre de empresa en Personalización de marca del Portal de empresa y no quiere que se muestre el nombre del inquilino, se recomienda definir el nombre de la empresa en dicha pestaña. Si no quiere que esta cadena aparezca en el encabezado de Portal de empresa, puede anular la selección de la casilla "Mostrar nombre de la empresa junto al logotipo".
+
+|Antes|Después|
+|---|---|
+|![01](./media/ios_cp_enroll_01_before_1711.png)|![01](./media/ios_cp_enroll_01_after_1711.png)|
+|![02](./media/ios_cp_enroll_02_before_1711.png)|*Combinado con el paso anterior*|
+|![03](./media/ios_cp_enroll_03_before_1711.png)|![03](./media/ios_cp_enroll_03_after_1711.png)|
+|![04](./media/ios_cp_enroll_04_before_1711.png)|![04](./media/ios_cp_enroll_04_after_1711.png)|
+|![05](./media/ios_cp_enroll_05_before_1711.png)|![05](./media/ios_cp_enroll_05_after_1711.png)|
+|![06](./media/ios_cp_enroll_06_before_1711.png)|![06](./media/ios_cp_enroll_06_after_1711.png)|
+|![07](./media/ios_cp_enroll_07_before_1711.png)|![07](./media/ios_cp_enroll_07_after_1711.png)|
+
 
 ## <a name="week-of-november-6-2017"></a>Semana del 6 de noviembre de 2017
+
+### <a name="updates-to-the-company-portal-app-for-windows-10---1299474--"></a>Actualizaciones de la aplicación Portal de empresa para Windows 10 <!--1299474-->
+La página Configuración de la aplicación de Portal de empresa para Windows 10 se ha actualizado para que las opciones y las acciones de usuario previstas sean más coherentes en relación con el resto de opciones de configuración. También se ha actualizado para que el diseño coincida con el de otras aplicaciones de Windows.
+
+|Antes|Después|
+|---|---|
+|![01](./media/w10-share-logs.png)|![02](./media/w10-share-logs-after-1711.png)|
+
 
 ### <a name="search-improvements-to-the-company-portal-apps-and-website---1418189--"></a>Mejoras de búsqueda en el sitio web y las aplicaciones del Portal de empresa <!--1418189-->
 Ahora, las aplicaciones del Portal de empresa realizan búsquedas en categorías de aplicaciones, nombres y descripciones. Los resultados se ordenan en orden decreciente de relevancia. Estas actualizaciones también están disponibles en el [sitio web del Portal de empresa](https://portal.manage.microsoft.com).
 
 Seguimos ajustando el modo de seguimiento de la relevancia, por lo que le agradeceríamos que nos hiciera saber si resulta útil mediante el vínculo "Comentarios" situado en la parte inferior del sitio web del Portal de empresa.
-
-
 
 ## <a name="week-of-october-16-2017"></a>Semana del 16 de octubre de 2017
 
@@ -45,10 +70,6 @@ Seguimos ajustando el modo de seguimiento de la relevancia, por lo que le agrade
 
 ### <a name="ios-company-portal-displays-large-icons----1454593---"></a>En el portal de empresa de iOS se muestran iconos de gran tamaño <!-- 1454593 -->
 Con esta versión se soluciona un problema conocido en relación con el modo en que el portal de empresa de iOS muestra los iconos en el icono de la aplicación. Si carga iconos de aplicación de 120x120 píxeles o más, ahora se muestran en el [sitio web del portal de empresa](https://portal.manage.microsoft.com) y las páginas de aplicaciones del Portal de empresa de iOS al tamaño completo del icono de aplicaciones.
-
-
-
-
 
 
 ## <a name="week-of-october-2-2017"></a>Semana del 2 de octubre de 2017
