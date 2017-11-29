@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/03/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: esmich
 ms.suite: ems
-ms.openlocfilehash: c03985bd7ca92fe4b4e8ea163b7db421bfae09c2
-ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
+ms.openlocfilehash: 6595382606b9c53083e7beec9ca02a314abb5899
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="what-information-can-my-company-see-when-i-enroll-my-device"></a>¿Qué información puede ver mi empresa cuando inscribo mi dispositivo?
 
@@ -36,7 +36,7 @@ Cuando inscribe un dispositivo en la administración, proporciona a la empresa p
 
 **Qué puede ver siempre su empresa**
 
-- Modelo de dispositivo, como iPhone 7
+- Modelo del dispositivo, como Google Pixel
 - Fabricante, como Microsoft
 - Sistema operativo, como iOS
 - Nombres de aplicaciones, como Microsoft Word
@@ -48,4 +48,5 @@ Cuando inscribe un dispositivo en la administración, proporciona a la empresa p
 
 -  Número de teléfono: en el caso de los dispositivos propiedad de la **empresa**, se puede ver el número de teléfono completo. En el caso de los dispositivos **personales**, únicamente son visibles para la empresa los últimos cuatro dígitos del número de teléfono. Puede ver el **Tipo de propiedad** de cada dispositivo abriendo la página **Detalles del dispositivo** correspondiente.
 -  Ubicación: su empresa nunca puede ver la ubicación de su dispositivo, excepto si tiene un dispositivo iOS que está supervisado y se ha perdido. [¿Cómo puedo saberlo?](https://go.microsoft.com/fwlink/?linkid=853816)
-- Inventario de aplicaciones: si su empresa usa Mobile Threat Defense, se podrá consultar información adicional sobre las aplicaciones instaladas en el dispositivo. Obtenga más información sobre [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
+- Inventario de aplicaciones: si su empresa usa Mobile Threat Defense, se podrá consultar información adicional sobre las aplicaciones instaladas en el dispositivo iOS. Obtenga más información sobre [Mobile Threat Defense](you-are-prompted-to-install-mtd-ios.md).
+- Información de la red: parte de la información sobre las conexiones de red de los dispositivos Android puede estar disponible para el soporte técnico de su empresa. Por ejemplo, si la empresa requiere que los dispositivos permanezcan dentro de cierto edificio, el dispositivo podría identificar la red donde está conectado. 

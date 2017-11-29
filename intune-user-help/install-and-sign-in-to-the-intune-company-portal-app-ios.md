@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 06/27/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5b3036485eef5d7a2b633b51229015d2f53d3fa7
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: ac9b138edeb77eee3dc223eee8a35dc4cfd4e273
+ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>Instalar e iniciar sesión en la aplicación de portal de empresa
 
@@ -34,6 +34,6 @@ El Portal de empresa es una aplicación que se instala en el dispositivo iOS y q
 
 3.  Abra la aplicación Portal de empresa, escriba la dirección y la contraseña del correo electrónico profesional o educativa y luego pulse **Iniciar sesión**.
 
-    Si va a iniciar sesión en la aplicación Portal de empresa por primera vez y su empresa o centro educativo usan Intune, se le solicitará que inscriba su dispositivo en Intune. Para realizar la inscripción, siga los pasos descritos en [Inscribir un dispositivo iOS en Intune](enroll-your-device-in-intune-ios.md) o en [Inscribir un dispositivo macOS en Intune](enroll-your-device-in-intune-macos.md). También puede [iniciar sesión con otro dispositivo](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device). 
+    Si va a iniciar sesión en la aplicación Portal de empresa por primera vez y su empresa o centro educativo usan Intune, se le solicitará que inscriba su dispositivo en Intune. Para inscribirlo, siga los pasos que aparecen en el artículo sobre la [inscripción del dispositivo iOS en Intune](enroll-your-device-in-intune-ios.md). También puede [iniciar sesión con otro dispositivo](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal#signing-in-from-another-device).
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).

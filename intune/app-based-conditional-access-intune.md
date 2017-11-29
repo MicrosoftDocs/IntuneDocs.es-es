@@ -14,11 +14,11 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f3a3104c4381028cca69ba3e129f4a30287a8e32
-ms.sourcegitcommit: 42a0e4c83e33c1a25506ca75d673e861e9206945
+ms.openlocfilehash: 0a813dbaff7db5bf07e3573fb9bf539f6a4676f0
+ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Acceso condicional basado en aplicación con Intune
 
@@ -54,7 +54,7 @@ En este ejemplo, el administrador ha aplicado directivas de protección de aplic
 > [!NOTE]
 > La estructura de diagrama de flujo siguiente puede usarse para otras aplicaciones administradas.
 
-![Diagrama de flujo del acceso condicional basado en aplicación con Intune](./media/ca-intune-common-ways-3.png)
+![diagrama de flujo del acceso condicional basado en aplicación con Intune](./media/ca-intune-common-ways-3.png)
 
 1.  El usuario intenta autenticarse en Azure AD desde la aplicación Outlook.
 

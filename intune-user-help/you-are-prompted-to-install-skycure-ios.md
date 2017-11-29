@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/25/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 7394ff8f-3a21-414d-be4a-4626ec370720
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: c03ac73377278925773123dc10d10cf3e8256e41
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 7842d55eb6f43cf7ada47324f5d5846212630501
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-ios-device"></a>Instalación de Symantec Endpoint Protection Mobile en su dispositivo iOS
 
@@ -42,7 +42,7 @@ Si SEP Mobile encuentra una amenaza de seguridad en el dispositivo, verá instru
 
 ## <a name="if-the-installation-doesnt-work"></a>Si la instalación no funciona
 
-A veces, las instalaciones pueden producir errores debido a problemas técnicos fuera de su control. Si esto sucede, intente instalar Zimperium zIPS [manualmente desde el App Store](https://itunes.apple.com/app/sep-mobile/id695620821).
+A veces, las instalaciones pueden producir errores debido a problemas técnicos fuera de su control. Si esto sucede, intente instalar SEP Mobile [manualmente desde la tienda de aplicaciones](https://itunes.apple.com/app/sep-mobile/id695620821).
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).
 

@@ -12,11 +12,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 3567f26053a235c5a5af761829f043e0db2f79b5
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 904041ba4936917dc976fd0a6de869e931927c2d
+ms.sourcegitcommit: f9bfdaed6037bd76f8715fa7ca15a3457d26370a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 11/17/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Firma de aplicaciones de línea de negocio para que se puedan implementar en dispositivos Windows con Intune
 
@@ -193,7 +193,8 @@ Así es cómo tiene que firmar e implementar la aplicación:
 |Parámetro | Descripción|
 | ------------- | ------------- |
 |InputWin10AppxBundle |La ruta de acceso donde se encuentra el archivo de origen appxbundle. |
-|OutputWin10AppxBundle |La ruta de acceso de salida del archivo firmado appxbundle.  Win81Appx La ruta de acceso a la ubicación del archivo del Portal de empresa para Windows Phone 8.1 o Windows 8.1 (.APPX).|
+|OutputWin10AppxBundle |La ruta de acceso de salida del archivo firmado appxbundle. |
+|Win81Appx | La ruta de acceso a la ubicación del archivo del Portal de empresa para Windows Phone 8.1 o Windows 8.1 (.APPX).|
 |PfxFilePath |La ruta de acceso al archivo de certificado de firma de código móvil de empresa de Symantec (.PFX). |
 |PfxPassword| La contraseña del certificado de firma de código móvil de empresa de Symantec. |
 |PublisherId |El identificador del publicador de la empresa. Si está ausente, se usa el campo 'Asunto' del certificado de firma de código móvil empresarial de Symantec.|

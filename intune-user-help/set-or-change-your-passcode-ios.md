@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 03/13/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 365f72a6-564d-4cbd-8f0a-70ec80b6e253
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 7272c3d21674e4e0029cf49140638d9a3fd3306f
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 5feec496d0f7952b1ae35ed1d905cbfc526bc387
+ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="set-or-change-your-passcode"></a>Establecer o cambiar el código de acceso
 
@@ -38,7 +38,7 @@ Si tiene problemas para establecer un código de acceso que cumpla los requisito
 
 1. Pulse en **Settings** > **Touch ID & Passcode**.
 2. Escriba el código de acceso. Se abre el menú **Touch ID & Passcode** (Touch ID y código de acceso).
-2. Pulse en **Change Passcode** y escriba la contraseña anterior.
+2. Pulse en **Change Passcode** (Cambiar código de acceso) y escriba el código de acceso anterior.
 3. Escriba un nuevo código de acceso que cumpla los requisitos del equipo de soporte técnico de su empresa y, luego, vuelva a escribirlo para confirmarlo.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).
