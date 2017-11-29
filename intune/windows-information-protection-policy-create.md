@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.date: 10/3/2017
+ms.date: 11/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3cf11c53a5f1ce78dda9c703da32270b0b07874a
-ms.sourcegitcommit: 001577b700f634da2fec0b44af2a378150d1f7ac
+ms.openlocfilehash: ab0456b58704f17d3dc5885ab5ae6b902c9ef152
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/04/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Creación e implementación de una directiva de protección de aplicaciones de Windows Information Protection (WIP) con Intune
 
@@ -125,13 +125,13 @@ Después de agregar las aplicaciones que desea proteger con WIP, debe aplicar un
 
 ### <a name="before-you-begin"></a>Antes de comenzar
 
-El Aprendizaje de WIP es un informe que permite supervisar las aplicaciones desconocidas de WIP. Las aplicaciones desconocidas son las que no ha implementado el departamento de TI de su organización. Puede exportar estas aplicaciones desde el informe y agregarlas a sus directivas de WIP para evitar la interrupción de productividad antes de exigir WIP en modo "Ocultar invalidaciones".
+El Aprendizaje de WIP es un informe que permite supervisar las aplicaciones desconocidas de WIP. Las aplicaciones desconocidas son las que no ha implementado el departamento de TI de su organización. Puede exportar estas aplicaciones desde el informe y agregarlas a sus directivas de WIP para evitar la interrupción de productividad antes de exigir WIP en modo "Bloquear".
 
-Se recomienda que empiece con **Silencioso** o **Permitir invalidaciones** al comprobar con un pequeño grupo que tiene las aplicaciones adecuadas en la lista de aplicaciones permitidas. Cuando haya terminado, puede cambiar a la directiva de aplicación final, **Ocultar invalidaciones**.
+Se recomienda que empiece con **Silencioso** o **Permitir invalidaciones** al comprobar con un pequeño grupo que tiene las aplicaciones adecuadas en la lista de aplicaciones permitidas. Cuando haya terminado, puede cambiar a la directiva de aplicación final, **Bloquear**.
 
 ### <a name="what-are-the-protection-modes"></a>¿Cuáles son los modos de protección?
 
-#### <a name="hide-overrides"></a>Ocultar invalidaciones
+#### <a name="block"></a>Bloquear
 WIP busca prácticas de uso compartido de datos inapropiadas y no permite al usuario completar la acción. Esto puede incluir el uso compartido de información entre aplicaciones protegidas no corporativas y el uso compartido de datos corporativos entre otras personas y dispositivos no pertenecientes a su organización.
 
 #### <a name="allow-overrides"></a>Permitir invalidaciones

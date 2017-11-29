@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7ad33ba7020f418f4894a689d5d66a74e4b8c10e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 78b5d58df44252d1f3916c1d2a2ea02fcb1a10e2
+ms.sourcegitcommit: 82088d297eef629e3da6011681ead442ae7e25f7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 11/15/2017
 ---
 # <a name="allow-only-mobile-apps-that-support-intune-app-protection-policies-to-access-office-365-services"></a>Permitir solo aplicaciones móviles que admitan directivas de protección de aplicaciones de Intune para obtener acceso a servicios de Office 365
 
@@ -55,7 +55,7 @@ Descripción de las abreviaturas usadas en los diagramas:
 >[!IMPORTANT]
 >En el caso de los dispositivos Android, el registro de dispositivo inicial se debe hacer iniciando sesión en la aplicación OneDrive o Outlook. La aplicación OneNote para Android todavía no es compatible con MAM sin inscripción.
 
-Para obtener información sobre la experiencia del usuario con una aplicación que tiene directivas de acceso condicional basado en la aplicación, vea [¿Qué se puede esperar al usar una aplicación con acceso condicional basado en la aplicación?](use-apps-with-mam-ca.md).
+Para información sobre la experiencia del usuario con una aplicación que tiene directivas de acceso condicional basado en la aplicación, consulte [¿Qué se puede esperar al usar una aplicación con acceso condicional basado en la aplicación?](use-apps-with-mam-ca.md).
 
 
 ## <a name="next-steps"></a>Pasos siguientes

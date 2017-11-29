@@ -1,11 +1,11 @@
 ---
-title: Inscribir un dispositivo iOS en Intune | Microsoft Docs
-description: "Describe cómo inscribir un dispositivo iOS en Intune."
+title: "Configuración del acceso a los recursos de empresa | Microsoft Docs"
+description: "Describe cómo hacer que Intune administre los dispositivos iOS"
 keywords: 
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 09/01/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,89 +16,63 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 41f39740b62074e06ccc64c6211d642d224efd6c
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: ee4275ec7b9b455cf6ebf032123127fde97a9a74
+ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/15/2017
 ---
-# <a name="enroll-your-ios-device-in-intune"></a>Inscriba el dispositivo iOS en Intune
+# <a name="set-up-access-to-your-company-resources"></a>Configuración del acceso a los recursos de empresa
 
-Si su empresa o centro educativo usa Microsoft Intune, puede inscribir un dispositivo iOS para obtener acceso al correo electrónico, a los archivos y a otros recursos de la empresa. Cuando los dispositivos se inscriben, el departamento de TI puede administrar esos recursos profesionales o educativos y mantenerlos protegidos, al tiempo que los usuarios pueden usar el dispositivo que elijan libremente para realizar su trabajo. Para obtener más información sobre la inscripción, vea [What happens if you install the Company Portal app and enroll your device in Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md) (¿Qué ocurre cuando se instala la aplicación de portal de empresa y se inscribe el dispositivo en Intune?).
+Una empresa tiene grandes cantidades de información confidencial, desde correos electrónicos hasta archivos, redes y mucho más. La empresa usa Microsoft Intune para proteger esa información cuando se accede a ella desde un dispositivo iOS. Esto permite administrar esos recursos, mantenerlos más seguros y tener la libertad de usar el dispositivo de su preferencia para llevar a cabo su trabajo.
 
 > [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment/player]
 
 > [!NOTE]
 > Si está tratando de acceder al correo electrónico de la empresa en la aplicación Mail, es probable que se le haya solicitado permiso para administrar su dispositivo por motivos de seguridad. Siga estas instrucciones para acceder a su correo electrónico y a otros recursos de la empresa en su dispositivo iOS.
 
-**Antes de empezar**
+## <a name="before-you-start"></a>Antes de empezar
 
-- Asegúrese de que termina la inscripción después de iniciar los pasos. Hacer una pausa durante unos minutos suele detener el proceso, por lo que deberá reiniciarla.
-- Si por algún motivo se produce un error en la inscripción, deberá volver a la aplicación Portal de empresa para intentarlo de nuevo.
-- Asegúrese de que funciona la red Wi-Fi. De lo contrario, se producirá un error en la inscripción.
-- Si bloquea Safari en el dispositivo, debe desbloquearlo. Safari se usa como parte del proceso de inscripción de dispositivos.
+- Asegúrese de finalizar todo el proceso una vez que comience a hacerlo. Hacer una pausa durante más de unos minutos suele detener el proceso y requiere que vuelva a iniciarlo.
+- Si este proceso presenta un error, debe volver a la aplicación Portal de empresa para volver a intentarlo.
+- Asegúrese de que su Wi-Fi esté funcionando y de que Safari funciona en el dispositivo.
+- Descargue [Instale e inicie sesión en la aplicación Portal de empresa de Intune](install-and-sign-in-to-the-intune-company-portal-app-ios.md).
 
 
-**Para inscribir el dispositivo iOS:**
+## <a name="using-the-company-portal-app-to-set-up-access-to-company-resources"></a>Uso de la aplicación Portal de empresa para configurar el acceso a los recursos de empresa
 
-1.  Siga los pasos de [Install and sign in to the Intune Company Portal app](install-and-sign-in-to-the-intune-company-portal-app-ios.md) (Instalar la aplicación de portal de empresa de Intune e iniciar sesión en ella).
-
-2. En la página **Configuración de acceso a la empresa**, pulse en **Comenzar**.
-
-    ![ios-enroll-comp-access-setup-begin](./media/ios-enroll-1a-comp-access-setup.png)
-
-3. En la pantalla **¿Por qué inscribir el dispositivo?**, lea lo que puede hacer si inscribe el dispositivo y, luego, pulse en **Continuar**.
-
-    ![ios-enroll-why-enroll](./media/ios-enroll-1b-why-enroll.png)
-
-  > [!NOTE]
-  > Los triángulos amarillos no significan que ya haya un error. Estos iconos indican que todavía hay pasos del proceso de inscripción que deben completarse.
-
-4. Revise una lista sobre lo que el equipo de soporte técnico de su empresa puede y no puede ver en el dispositivo inscrito y después pulse **Continuar**.
-
-    ![ios-enroll-what-it-can-see](./media/ios-enroll-1c-we-care-privacy.png)
-
-5.  En la pantalla **¿Qué ocurre después?**, lea lo que ocurre durante la inscripción y, luego, pulse en **Inscribir**.
-
-    ![ios-enroll-what-comes-next](./media/ios-enroll-1d-what-comes-next.png)
-
-6.  En la pantalla **Instalar perfil**, pulse **Instalar** y escriba su contraseña, si se le pide.
-
-    ![ios-enroll-install-profile](./media/ios-enroll-2-mgt-profile-install.png)
-
-7.  Pulse **Instalar**.
-
-    ![ios-enroll-tap-install](./media/ios-enroll-3-mgt-profile-install-2.png)    
-
-8.  Pulse **Instalar** para indicar que ha leído la advertencia.
-
-    ![ios-enroll-tap-install-after-warning](./media/ios-enroll-4-warning.png)
-
-9.  Pulse **Confiar**.
-
-    ![ios-enroll-tap-trust](./media/ios-enroll-5-trust.png)
-
-10.  Cuando la pantalla cambie para indicar que el perfil ha terminado de instalarse, pulse en **Listo**.
-
-    ![ios-enroll-tap-done](./media/ios-enroll-6-done.png)
-
-    Aparece el mensaje "Inscribiendo el dispositivo" en pantalla.
-
-11.  Cuando se muestre un mensaje en el que se le pregunte si quiere abrir la página en el Portal de empresa, pulse **Abrir**.
-
-    ![ios-enroll-open-comp-portal](./media/ios-enroll-7-open-cp.png)
-
-12. En la pantalla **Configuración de acceso a la empresa**, pulse **Continuar**. En esta pantalla se muestran los demás requisitos que debería cumplir para que el dispositivo sea compatible (como establecer una contraseña). Siga las instrucciones que aparecen en pantalla hasta que cumpla todos los requisitos de cumplimiento. Cuando haya terminado, volverá a la pantalla Configuración de acceso a la empresa. Pulse **Continuar**.
-
-    ![ios-enroll-comp-access-tap-continue](./media/ios-enroll-8-comp-access-setup-compliance.png)
-
-13. Pulse **Listo**.
-
-    ![ios-enroll-tap-done](./media/ios-enroll-9-comp-access-setup-complete.png)
-
-El dispositivo ya está inscrito en Intune. Se le dirigirá de nuevo a la aplicación de portal de empresa.
+|Lo que verá|Explicación|
+|---|---|
+|![Pantalla de inicio de sesión de Portal de empresa, con el botón "Iniciar sesión" en la parte inferior.](./media/ios-0-cp-enroll-1711.png)|Abra la aplicación Portal de empresa y pulse **Iniciar sesión**.|
+|![Solicitud de inicio de sesión de Azure AD.](./media/ios-0a-cp-enroll-1711.png)|Escriba su dirección de correo electrónico de la empresa y, luego, pulse **Siguiente**.|
+|![Solicitud de contraseña de Azure AD.](./media/ios-0b-cp-enroll-1711.png)|Escriba la contraseña y pulse **Iniciar sesión**.|
+|![Carga de la pantalla de presentación de los recursos de empresa.](./media/ios-1-cp-enroll-1711.png)|Espere a que se complete la carga.|
+|![Términos y condiciones.](./media/ios-2-cp-enroll-1711.png)|Debe leer y **aceptar todos** los términos y condiciones.|
+|![Pantalla de configuración del acceso a la empresa. En estos momentos debe solucionar tanto la administración como la configuración.](./media/ios-3-cp-enroll-1711.png)|Pulse **Get your device managed** (Hacer que administren el dispositivo) para comenzar el proceso para hacer que el dispositivo pueda acceder a los recursos de la empresa. Si no puede hacerlo ahora mismo, puede **Posponer** el proceso, pero eso significa que no podrá recibir correo electrónico, documentos, etc.|
+|![Pantalla Qué puede ver mi empresa.](./media/ios-4-cp-enroll-1711.png)|Puede **obtener más información** sobre el contenido que puede ver la empresa si pulsa en el vínculo que aparece en la parte inferior. De lo contrario, pulse **Continuar**.|
+|![Pantalla ¿Qué viene a continuación?](./media/ios-5-cp-enroll-1711.png)|Esta pantalla le guía por lo que sucede en el programa de instalación. Pasará por Safari, la aplicación Configuración y la aplicación Portal de empresa para completar este proceso. Pulse **Siguiente**.|
+|![Carga de la pantalla después de pulsar Siguiente en ¿Qué viene a continuación?.](./media/ios-6-cp-enroll-1711.png)||
+|![Dirigido a Safari para la inscripción.](./media/ios-7-cp-enroll-1711.png)|Se le envía a Safari para administrar la información de administración para el dispositivo.|
+|![Aviso del sistema para pedir que se abra la aplicación Configuración.](./media/ios-8-cp-enroll-1711.png)|Pulse **Permitir** para abrir la aplicación Configuración para descargar el perfil de configuración. Instálelo para permitir que la empresa administre la información corporativa en el dispositivo.|
+|![Perfil abierto en la configuración.](./media/ios-9-cp-enroll-1711.png)|Pulse **Instalar**.|
+|![Diálogo modal de instalación del perfil en la parte inferior de la pantalla.](./media/ios-10-cp-enroll-1711.png)|Pulse **Instalar**.|
+|![Carga de la pantalla de instalación del perfil.](./media/ios-11-cp-enroll-1711.png)|Espere a que se complete la carga.|
+|![Pantalla de advertencia de administración de perfil.](./media/ios-12-cp-enroll-1711.png)|Esta advertencia escrita por Apple le permite obtener más información sobre qué tipos de acciones se pueden realizar en un dispositivo bajo administración. Conozca más sobre [qué información puede ver la empresa](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)|
+|![Aviso del sistema que pregunta sobre la confianza en la administración remota.](./media/ios-13-cp-enroll-1711.png)|Pulse **Confiar** para permitir que la empresa administre la información corporativa y la configuración del dispositivo.|
+|![Pantalla de carga de finalización de la instalación del perfil.](./media/ios-14-cp-enroll-1711.png)|Espere a que se complete la carga.|
+|![Pantalla de perfil instalado.](./media/ios-15-cp-enroll-1711.png)|El perfil se instaló y la configuración y la información corporativa del dispositivo están a punto de ser administradas.|
+|![Dirigido a Safari para la inscripción.](./media/ios-16-cp-enroll-1711.png)|Se le envía nuevamente a Safari para finalizar la obtención de la información de administración para el dispositivo. |
+|![Aviso del sistema para abrir el portal de empresa.](./media/ios-17-cp-enroll-1711.png)|Pulse **Abrir**.|
+|![Carga de la pantalla de los recursos de empresa.](./media/ios-18-cp-enroll-1711.png)|Espere a que se complete la carga.|
+|![Seleccione la categoría de dispositivo en la aplicación de portal de empresa.](./media/ios-19-cp-enroll-1711.png)|Seleccione la mejor categoría para el dispositivo. Habitualmente, esto tiene relación con el propietario del dispositivo o su ubicación la mayoría del tiempo.|
+|![Categoría seleccionada.](./media/ios-20-cp-enroll-1711.png)||
+|![Administración de dispositivos correcta, ahora necesita actualizar la configuración.](./media/ios-21-cp-enroll-1711.png)|Logró que se administre el dispositivo. Es probable que su empresa todavía tenga que actualizar algunas configuraciones, como la longitud de la contraseña. Pulse **Actualizar configuración del dispositivo** para continuar.|
+|![Confirmación de la configuración del dispositivo.](./media/ios-22-cp-enroll-1711.png)|Portal de empresa comprobará si es necesario actualizar parte de la configuración.|
+|![Comprobación de la configuración finalizada, con una versión de SO incorrecta](./media/ios-23-cp-enroll-1711.png)|Portal de empresa proporcionará instrucciones sobre cómo puede corregir cualquier problema de configuración. Cuando termine de corregir los problemas, pulse **Comprobar la configuración**.|
+|![Pantalla de carga de confirmación de la configuración de dispositivo](./media/ios-24-cp-enroll-1711.png)|El dispositivo comprobará si la configuración es suficientemente segura para acceder a los recursos de empresa.|
+|![La configuración se inscribió y actualizó correctamente](./media/ios-25-cp-enroll-1711.png)|Enhorabuena. El dispositivo ya está inscrito en Intune.|
 
 > [!Note]
-> Debe seguir unos pocos pasos más para que el dispositivo esté totalmente inscrito. Obtenga más información sobre cómo [inscribir el dispositivo mediante la administración de gastos de telecomunicaciones](enroll-your-device-with-telecom-expense-management-ios.md). Si su organización usa el Programa de inscripción de dispositivos de Apple, obtenga más información [aquí](enroll-your-device-dep-ios.md).
+> Es posible que deba seguir unos pocos pasos más para que el dispositivo esté totalmente administrado. Obtenga más información sobre cómo [inscribir el dispositivo mediante la administración de gastos de telecomunicaciones](enroll-your-device-with-telecom-expense-management-ios.md). Si su organización usa el Programa de inscripción de dispositivos de Apple, obtenga más información [aquí](enroll-your-device-dep-ios.md).
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).

@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 08/16/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3a2622c7c981e64b3e220424c6661a5ba9e30751
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 895a089a58845da609423ab7fd74fbf26e0b967f
+ms.sourcegitcommit: dc2595bec05206a826cd10cb834bf6043145c917
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 11/14/2017
 ---
 # <a name="how-to-protect-your-android-device-using-encryption"></a>Cómo proteger el dispositivo Android mediante el cifrado
 
 Cuando cifra un dispositivo, está ajustando la información en una capa de código de protección que evita que los usuarios sin autorización tengan acceso a él. Para asegurarnos de que su información está protegida, la organización le pide que cifre su dispositivo Android antes de poder acceder a archivos, correos electrónicos o datos de la empresa.
 
 > [!Note]
-> Si el equipo de soporte técnico de su empresa así lo requiere, puede que tenga que establecer un PIN o una contraseña antes del cifrado.
+> No es posible cifrar ciertos dispositivos Android, como algunos de Huawei y los de Vivo y OPPO. Descubra más [aquí](your-device-appears-encrypted-but-cp-says-otherwise-android.md).
 
 Si anula la inscripción del dispositivo, este permanecerá cifrado.
 
@@ -37,9 +37,6 @@ Si anula la inscripción del dispositivo, este permanecerá cifrado.
     (En algunos teléfonos, tendrá que elegir **Almacenamiento** > **Cifrado de almacenamiento** o **Almacenamiento** > **Pantalla de bloqueo y seguridad** > **Otras opciones de seguridad** para poder encontrar la opción "Cifrar").
 
 3.  Siga las instrucciones en pantalla. Durante el cifrado, el dispositivo podría reiniciarse varias veces.
-
-> [!Note]
-> Determinados dispositivos Android no se pueden cifrar. Descubra más [aquí](your-device-appears-encrypted-but-cp-says-otherwise-android.md).
 
 ### <a name="what-to-do-if-you-have-issues"></a>Qué hacer si tiene problemas
 **Problema:** con el dispositivo ya cifrado, ocurre una de las siguientes cosas:
