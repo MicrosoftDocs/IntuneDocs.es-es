@@ -2,10 +2,10 @@
 title: "Edición anticipada"
 description: 
 keywords: 
-author: brenduns
-ms.author: brenduns
+author: ErikjeMS
+ms.author: erikje
 manager: angrobe
-ms.date: 11/20/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f4fd810529732d2b24b948eb0ae741d37e0fb59e
-ms.sourcegitcommit: d64b03bff0566f08d88ecb488dd48f19af74cab3
+ms.openlocfilehash: 1ea734e83cfab3fff22c775764ac9814012d52b6
+ms.sourcegitcommit: 70dc0aaad51b447e173b663d1092d993dc81ffdd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 12/02/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2017"></a>La edición anticipada para Microsoft Intune, diciembre de 2017
 
@@ -141,42 +141,14 @@ El tipo de aplicación **integrada** facilita la creación y la asignación de a
 ### <a name="single-sign-on-support-for-ios----1333645---"></a>Compatibilidad del inicio de sesión único con iOS <!-- 1333645 -->  
 Es posible usar el inicio de sesión único para los usuarios de iOS. Las aplicaciones de iOS que están codificadas para buscar las credenciales de usuario en la carga de inicio de sesión único funcionarán con esta actualización de la configuración de carga. También puede utilizar el UPN y el identificador de dispositivo de Intune para configurar el nombre de la entidad de seguridad y el dominio Kerberos.
 
-### <a name="ios-11-app-inventory-api-for-mobile-threat-detection----1391759---"></a>API de inventario de aplicaciones iOS 11 para la detección de amenazas en dispositivos móviles <!-- 1391759 -->
-Intune recopila la información de inventario de aplicaciones de los dispositivos personales y corporativos, y la pone a disposición de los proveedores de detección de amenazas en dispositivos móviles (MTD), como Lookout for Work. Podrá recopilar el inventario de aplicaciones de los usuarios de dispositivos iOS 11 y versiones posteriores.
-
-**Inventario de aplicaciones**  
-Los inventarios de los dispositivos iOS 11 y versiones posteriores, tanto de empresa como personales, se envían al proveedor de servicios MTD. El inventario de aplicaciones incluye los datos siguientes:
-
- - Identificador de la aplicación
- - Versión de la aplicación
- - Nombre corto de la versión
- - Nombre de la aplicación
- - Tamaño del lote de aplicaciones
- - Tamaño dinámico de la aplicación
- - Aplicación validada o no validada
- - Aplicación administrada o no administrada
-
-### <a name="audit-updates----1412961---"></a>Actualizaciones de auditoría <!-- 1412961 -->  
-La auditoría de Intune proporciona un registro de las operaciones que implican cambios en Intune.  Todas las operaciones de creación, actualización, eliminación y tareas remotas se registran y se conservan durante un año.  Azure Portal proporciona una vista filtrable de los datos auditados durante los últimos 30 días en cada carga de trabajo.  Con la correspondiente API Graph es posible recuperar los datos de auditoría almacenados durante el último año. 
-
-La auditoría se encuentra en el grupo **MONITOR**. El elemento de menú **Registros de auditoría** está disponible para cada una de las carga de trabajo.   
-
 ### <a name="text-protocol-allowed-from-managed-apps----1414050----"></a>Protocolo de texto permitido en aplicaciones administradas <!-- 1414050  -->
 Las aplicaciones administradas por Intune App SDK podrán enviar mensajes SMS.
-
-### <a name="remotely-restart-ios-device-supervised-only----1424595---"></a>Reinicio remoto de dispositivos iOS (solo supervisado) <!-- 1424595 -->
-Con una acción del dispositivo, podrá reiniciar un dispositivo supervisado iOS 10.3 y versiones posteriores. Para obtener más información sobre el uso de la acción de reinicio del dispositivo, consulte [Reinicio remoto de los dispositivos con Intune](device-restart.md).
-
-> [!Note]  
-> Para usar este comando es necesario que el dispositivo esté supervisado y disponer del derecho de acceso **Bloqueo del dispositivo**. El dispositivo se reinicia inmediatamente. Después de un reinicio, los dispositivos iOS bloqueados mediante código de acceso no volverán a unirse a una red Wi-Fi y es posible que no puedan comunicarse con el servidor.
 
 ### <a name="remotely-lock-managed-macos-device-with-intune----1437691---"></a>Bloqueo remoto de los dispositivos macOS administrados con Intune <!-- 1437691 -->
 Si pierde un dispositivo macOS, puede bloquearlo y establecer en él un PIN de recuperación de 6 dígitos. Una vez bloqueado, la hoja de **información general del dispositivo** muestra el PIN hasta que se envía otra acción de dispositivo.
 
 Para obtener más información, consulte [Bloqueo remoto de los dispositivos administrados con Intune](device-remote-lock.md).
 
-### <a name="windows-defender-advanced-threat-protection-reporting-frequency-settings------1455974-----"></a>Configuración de la frecuencia de informes de Protección contra amenazas avanzada de Windows Defender <!--- 1455974  --->
-El servicio Protección contra amenazas avanzada de Windows Defender (WDATP) permite a los administradores gestionar la frecuencia con la que se generan informes relativos a los dispositivos administrados. Con la nueva opción **Frecuencia de informes de telemetría urgentes**, WDATP recopila datos y evalúa los riesgos con una frecuencia mayor. El valor predeterminado para los informes optimiza el rendimiento y la velocidad. Aumentar la frecuencia de los informes puede ser muy útil para dispositivos de alto riesgo. Esta configuración puede encontrarse en el perfil **ATP de Windows Defender** en **Configuraciones de dispositivos**.
 
 ### <a name="assignment-conflict-resolution-has-changed-for-ios-store-apps----1480316---"></a>Modificación de la resolución de conflictos de asignación para aplicaciones de la tienda iOS <!-- 1480316 -->
 Los usuarios finales pueden experimentar un cambio en la disponibilidad de las aplicaciones de la tienda iOS. Actualmente, una aplicación que se ha asignado a dos grupos con un conflicto entre **Requerido y Disponible** y **No aplicable** se resuelve como **Requerido y Disponible**. Con el cambio, una aplicación que experimente este conflicto se resuelve como **No aplicable**.
@@ -218,75 +190,17 @@ En todos los casos, se conserva la normativa que haya previsto. No se requiere n
 
 El lanzamiento de estos cambios se iniciará con la actualización de noviembre, pero pueden tardar un tiempo en ejecutarse en su cuenta. Cuando estos cambios entren en vigor en su cuenta, recibirá una notificación de confirmación en el portal de Office 365.
 
-### <a name="support-for-multiple-network-device-enrollment-service-ndes-connectors----1528104---"></a>Compatibilidad con varios conectores de Servicio de inscripción de dispositivos de red (NDES) <!-- 1528104 -->
-NDES permite que los dispositivos móviles que se ejecutan sin credenciales de dominio puedan obtener certificados a través del Protocolo de inscripción de certificados simple (SCEP). Con esta actualización, se admitirán varios conectores NDES.
-
-### <a name="new-scep-profile-details-supported----1559808---"></a>Nuevos detalles admitidos del perfil SCEP <!-- 1559808 -->
-Los administradores podrán establecer configuraciones adicionales al crear un perfil de SCEP en plataformas Android, iOS, macOS y Windows.  Los administradores pueden establecer el IMEI, el número de serie o el nombre común, incluido el correo electrónico en el formato de nombre de sujeto.
 
 ### <a name="configure-an-ios-app-pin----1586774---"></a>Configurar un PIN de aplicación iOS <!-- 1586774 -->
 Pronto podrá solicitar un PIN para las aplicaciones iOS de destino. En Azure Portal puede configurar el requisito de PIN y la fecha de expiración en días. Para obtener acceso a una aplicación de iOS, se le pedirá al usuario que establezca y use un nuevo PIN. Solo las aplicaciones iOS que tienen habilitada la protección aplicaciones con Intune App SDK serán compatibles con esta característica.
 
-### <a name="retain-data-during-a-factory-reset-----1588489---"></a>Conservar los datos durante un restablecimiento de fábrica <!-- 1588489 -->
-Se agrega una nueva funcionalidad al restablecimiento de fábrica de Windows. Ahora, los administradores pueden especificar si la inscripción de dispositivos y otros datos de aprovisionamiento se conservan en un dispositivo tras un restablecimiento de fábrica. 
- 
-Los siguientes datos se conservan tras un restablecimiento de fábrica:
-- Cuentas de usuario asociadas con el dispositivo
-- Estado de la máquina (unión a un dominio, AADJ)
-- Inscripción de MDM
-- Aplicaciones instaladas por OEM (aplicaciones de Win32 y tienda)
-- Perfil de usuario
-- Datos de usuario fuera del perfil de usuario
-- Inicio de sesión automático del usuario
- 
-Los siguientes datos no se conservan:
-- Archivos de usuario
-- Aplicaciones instaladas por el usuario (aplicaciones de Win32 y tienda)
-- Configuración del dispositivo no predeterminada 
-
-### <a name="app-install-status-report-now-a-bar-chart----1249446---"></a>El informe Estado de instalación de la aplicación es ahora un gráfico de barras <!-- 1249446 -->  
-El informe **Estado de la instalación de la aplicación**, al que se puede tener acceso a través de la lista **Aplicación** de la carga de trabajo **Aplicaciones móviles**, pronto estará disponible como gráfico de barras.
-
 ### <a name="add-find-my-iphone-for-personal-devices---1427287--"></a>Agregar "Buscar mi iPhone" para dispositivos personales <!--1427287-->
 Podrá ver si los dispositivos iOS tienen activado el bloqueo de activación. Esta característica se encontraba anteriormente en Intune, en el portal clásico.
-
-### <a name="group-assigned-enrollment-restrictions----747598---"></a>Restricciones de inscripción asignada a grupos <!-- 747598 -->
-Como administrador de Intune, podrá crear restricciones de inscripción personalizadas de tipo de dispositivo y de límite de dispositivos para grupos de usuarios.
- 
-Azure Portal de Intune permite crear un máximo de 25 instancias de cada tipo de restricción que pueden asignarse luego a grupos de usuarios. Las restricciones asignadas por grupo invalidan las restricciones predeterminadas.
- 
-Todas las instancias de un tipo de restricción se mantienen en una lista ordenada de forma estricta. Este orden define un valor de prioridad para la resolución de conflictos. Un usuario afectado por más de una instancia de la restricción solo está limitado por la instancia con el valor de prioridad más alto. Para cambiar la prioridad de una determinada instancia, arrástrela a una posición diferente en la lista. 
- 
-Esta funcionalidad se publicará con la migración de la configuración de Android for Work desde el menú de inscripción de Android for Work al menú de restricciones de inscripción. Puesto que esta migración puede tardar varios días, la versión de noviembre puede afectar primero a otras partes de su cuenta antes de habilitar la asignación de grupo para las restricciones de inscripción.
-
-### <a name="windows-10-update-ring-assignments-are-displayed----1621837---"></a>Se muestran las asignaciones del círculo de actualizaciones de Windows 10 <!-- 1621837 -->
-Cuando esté **solucionando problemas**, y en relación al usuario que está visualizando, podrá observar las asignaciones de círculos de actualizaciones de Windows 10.  
-
-
 
 <!-- the following are present prior to 1711 -->
 
 ### <a name="azure-active-directory-web-sites-can-require-the-intune-managed-browser-app-and-support-single-sign-on-for-the-managed-browser-public-preview----710595---"></a>Los sitios web de Azure Active Directory pueden requerir la aplicación Intune Managed Browser y compatibilidad con el inicio de sesión único para Managed Browser (versión preliminar pública) <!-- 710595 -->   
 Con Azure Active Directory (Azure AD), podrá restringir el acceso a sitios web en dispositivos móviles a la aplicación Intune Managed Browser. En Managed Browser, los datos del sitio web permanecen seguros y separados de los datos personales del usuario final. Además, Managed Browser admite funciones de inicio de sesión único para sitios protegidos por Azure AD. Al iniciar sesión en Managed Browser, o al usarlo en un dispositivo con otra aplicación administrada por Intune, se permite que Managed Browser tenga acceso a sitios corporativos protegidos por Azure AD sin necesidad de que el usuario escriba sus credenciales. Esta funcionalidad se aplica a sitios como Outlook Web Access (OWA) y SharePoint Online, así como a otros sitios corporativos, como los recursos de intranet a los que se tiene acceso a través de Azure App Proxy.
-
-### <a name="troubleshoot-enrollment-issues------746324----"></a>Solución de problemas de inscripción <!--- 746324 --->  
-El área de trabajo de solución de problemas mostrará al usuario los problemas de inscripción. Los detalles del problema y los pasos de corrección sugeridos pueden ayudar a los administradores y a los operadores del departamento de soporte técnico a solucionar los problemas. Ciertos problemas de inscripción no se capturan, y es posible que no se sugieran correcciones para algunos errores.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!-- the following are present prior to 1710 -->

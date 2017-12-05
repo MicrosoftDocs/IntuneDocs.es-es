@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 04/27/2017
+ms.date: 11/21/2017
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bea477d4cb402198b348e9a96628dd8d99330e98
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: dde251482dd951200e5c1a7f19749ee863cd71b4
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Reinicio remoto de los dispositivos con Intune
 
@@ -31,7 +31,10 @@ La acción de dispositivo **Reiniciar** permite que se reinicie el dispositivo e
 
 - Windows: compatible con Windows 8.1 y versiones posteriores
 - Windows Phone: compatible con Windows Phone 8.1 y versiones posteriores
-- iOS: no compatible
+- iOS: compatible
+
+    > [!Note]  
+    > Para usar este comando es necesario que el dispositivo esté supervisado y disponer del derecho de acceso **Bloqueo del dispositivo**. El dispositivo se reinicia inmediatamente. Después de un reinicio, los dispositivos iOS bloqueados mediante código de acceso no volverán a unirse a una red Wi-Fi y es posible que no puedan comunicarse con el servidor.
 - macOS: no compatible
 - Android: no compatible
 
