@@ -16,11 +16,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 115f32989cfbb991e097404c5297e7997f28f796
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: f46d9cc4fad54415aeea8deaf1b8daa0c274c1dc
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="enroll-your-legacy-macos-device-in-intune"></a>Inscripción de su dispositivo macOS antiguo en Intune
 
@@ -28,7 +28,7 @@ Estas instrucciones funcionarán en los dispositivos macOS con OS X Yosemite 10.
 
 Puede obtener acceso a las aplicaciones, los datos y los recursos de su organización que necesita para hacer su trabajo. Si usa un dispositivo macOS en el trabajo, esto implica instalar un __perfil de administración__. Se trata de un archivo que instala el equipo de soporte técnico de su empresa que carga la configuración y la información de acceso en su Mac. ¿Quiere obtener más información? Descubra [qué ocurre si instala la aplicación del Portal de empresa e inscribe el dispositivo en Intune](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
-1. En el __Dock__, busque __Safari__ y abra una nueva ventana; a continuación, abra el [sitio web del Portal de empresa](https://portal.manage.microsoft.com).
+1. En el __Dock__, busque __Safari__ y abra una nueva ventana; a continuación, abra el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
 2. Inicie sesión en el sitio web del Portal de empresa con su cuenta profesional o educativa.
 
   [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
@@ -66,4 +66,4 @@ Puede obtener acceso a las aplicaciones, los datos y los recursos de su organiza
 
 En algunos perfiles podría aparecer el estado **No comprobado**. Siempre y cuando sean de su empresa, esto es normal.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el equipo de soporte técnico de su empresa. Puede encontrar su información de contacto en el [sitio web del Portal de empresa](https://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el equipo de soporte técnico de su empresa. Puede encontrar su información de contacto en el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

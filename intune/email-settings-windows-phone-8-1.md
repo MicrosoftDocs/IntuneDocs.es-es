@@ -3,8 +3,8 @@ title: "Configuración de correo electrónico de Intune para Windows Phone 8.1"
 titleSuffix: Azure portal
 description: "Conozca la configuración de Intune que puede usar para configurar las conexiones de correo electrónico en los dispositivos Windows Phone 8.1."
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 352d6bd9-ec8c-439e-be3a-ad3daf307df2
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 611ef17c72e27a31360c3c9d75bb282fdb8388a9
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: beebbc49d076ac9d3d65ff7650e4cea3fb8925f6
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="email-profile-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Configuración del perfil de correo electrónico para dispositivos Windows Phone 8.1 en Microsoft Intune
 

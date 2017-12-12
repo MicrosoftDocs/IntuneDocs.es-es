@@ -16,14 +16,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 162e2262067d38d792e23c8a98d52e81cf548bbe
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 2533146dcbb8261aba614c743a5220d4b693eb83
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="your-ios-devices-operating-system-version-isnt-yet-supported"></a>La versión del sistema operativo de su dispositivo iOS todavía no es compatible
 
 Debido al rápido ritmo del desarrollo de la tecnología, a veces es posible que su dispositivo esté más adelantado que los elementos que el equipo de soporte técnico de su empresa haya podido probar. Es posible que la versión más reciente de iOS no funcione con algunas de las otras herramientas de la empresa.
 
-Deberá ponerse en contacto con el equipo de soporte técnico de su empresa para solucionar este problema. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).
+Deberá ponerse en contacto con el equipo de soporte técnico de su empresa para solucionar este problema. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

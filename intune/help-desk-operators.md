@@ -14,17 +14,19 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: f5678752830e2c4c9afbe75c9c6891d525eec34a
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: dfe6e552917a006175e394b8c569b1000a002015
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users"></a>Uso del portal de solución de problemas para ayudar a los usuarios
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 El portal de solución de problemas permite que los operadores del departamento de soporte técnico y los administradores de Intune vean la información de usuario para solucionar las solicitudes de ayuda del usuario. Las organizaciones que disponen de un departamento de soporte técnico pueden asignar el **Operador del departamento de soporte técnico** a un grupo de usuarios. El rol de operador del departamento de soporte técnico puede usar la hoja de **solución de problemas**.
+
+En la hoja **Solución de problemas** también se muestran los problemas de inscripción del usuario. Los detalles del problema y los pasos de corrección sugeridos pueden ayudar a los administradores y a los operadores del departamento de soporte técnico a solucionar los problemas. Ciertos problemas de inscripción no se capturan, y es posible que no se sugieran correcciones para algunos errores. 
 
 Para conocer los pasos sobre cómo agregar un rol de operador del departamento de soporte técnico, consulte [Control de administración basada en roles (RBAC) con Intune](/intune/role-based-access-control)
 
@@ -33,7 +35,7 @@ Cuando un usuario se pone en contacto con el soporte técnico por un problema t�
 - Estado del usuario
 - Assignments
 - Problemas de cumplimiento
-- El dispositivo no responde
+- El dispositivo no
 - El dispositivo no obtiene una configuración Wi-Fi o VPN
 - Error de instalación de la aplicación
 

@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0720707c5e24daa9ef1677c549a8d2a763944f3b
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 4034e3848f49b13fc675f44c44ca1e80cf1e3568
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="what-happens-if-you-reset-your-windows-device-using-the-company-portal"></a>¿Qué ocurre si restablece el dispositivo Windows mediante el Portal de empresa?
 
@@ -32,4 +32,4 @@ Cuando usa la aplicación del Portal de empresa o el [sitio web del Portal de em
 |El dispositivo solo puede acceder al correo electrónico de la empresa|**Windows Phone 8.1**<br />El dispositivo ya no aparecerá en el Portal de empresa y se eliminarán la cuenta de correo corporativa y los mensajes sin guardar.<br /><br />**Windows 7 o Windows Vista**<br />No se puede restablecer un equipo con Windows 7 o anterior que solo se use para el correo electrónico.<br /><br />**Windows 8.1 y Windows 8**<br />El dispositivo ya no aparecerá en el Portal de empresa y se eliminarán la cuenta de correo corporativa y los mensajes sin guardar.|
 |PCs y portátiles|**Windows 8.1 y Windows 8**<br />No se puede restablecer un equipo con Windows 8 o Windows 8.1 a menos que solo se use para el correo electrónico.<br /><br />**Windows 7 o Windows Vista**<br />No se puede restablecer un equipo con Windows 7 o anterior.|
 
-Si tiene alguna pregunta, póngase en contacto con el equipo de soporte técnico de su empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).
+Si tiene alguna pregunta, póngase en contacto con el equipo de soporte técnico de su empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

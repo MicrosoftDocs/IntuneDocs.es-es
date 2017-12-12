@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/14/2017
+ms.date: 11/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ee4275ec7b9b455cf6ebf032123127fde97a9a74
-ms.sourcegitcommit: 0b96ae18524eb976df01a5340631ef331357e666
+ms.openlocfilehash: 206de56ee967f4cd142e5cd7c9d63971b9b727c6
+ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/01/2017
 ---
 # <a name="set-up-access-to-your-company-resources"></a>Configuración del acceso a los recursos de empresa
 
@@ -36,7 +36,7 @@ Una empresa tiene grandes cantidades de información confidencial, desde correos
 - Asegúrese de finalizar todo el proceso una vez que comience a hacerlo. Hacer una pausa durante más de unos minutos suele detener el proceso y requiere que vuelva a iniciarlo.
 - Si este proceso presenta un error, debe volver a la aplicación Portal de empresa para volver a intentarlo.
 - Asegúrese de que su Wi-Fi esté funcionando y de que Safari funciona en el dispositivo.
-- Descargue [Instale e inicie sesión en la aplicación Portal de empresa de Intune](install-and-sign-in-to-the-intune-company-portal-app-ios.md).
+- Descargue e instale la [aplicación Portal de empresa de Intune](install-and-sign-in-to-the-intune-company-portal-app-ios.md).
 
 
 ## <a name="using-the-company-portal-app-to-set-up-access-to-company-resources"></a>Uso de la aplicación Portal de empresa para configurar el acceso a los recursos de empresa
@@ -48,7 +48,7 @@ Una empresa tiene grandes cantidades de información confidencial, desde correos
 |![Solicitud de contraseña de Azure AD.](./media/ios-0b-cp-enroll-1711.png)|Escriba la contraseña y pulse **Iniciar sesión**.|
 |![Carga de la pantalla de presentación de los recursos de empresa.](./media/ios-1-cp-enroll-1711.png)|Espere a que se complete la carga.|
 |![Términos y condiciones.](./media/ios-2-cp-enroll-1711.png)|Debe leer y **aceptar todos** los términos y condiciones.|
-|![Pantalla de configuración del acceso a la empresa. En estos momentos debe solucionar tanto la administración como la configuración.](./media/ios-3-cp-enroll-1711.png)|Pulse **Get your device managed** (Hacer que administren el dispositivo) para comenzar el proceso para hacer que el dispositivo pueda acceder a los recursos de la empresa. Si no puede hacerlo ahora mismo, puede **Posponer** el proceso, pero eso significa que no podrá recibir correo electrónico, documentos, etc.|
+|![Pantalla de configuración del acceso a la empresa. En estos momentos debe solucionar tanto la administración como la configuración.](./media/ios-3-cp-enroll-1711.png)|Pulse **Empezar** para comenzar el proceso que permitirá al dispositivo acceder a los recursos de la empresa. Si no puede hacerlo ahora mismo, puede **Posponer** el proceso, pero eso significa que no podrá recibir correo electrónico, documentos, etc.|
 |![Pantalla Qué puede ver mi empresa.](./media/ios-4-cp-enroll-1711.png)|Puede **obtener más información** sobre el contenido que puede ver la empresa si pulsa en el vínculo que aparece en la parte inferior. De lo contrario, pulse **Continuar**.|
 |![Pantalla ¿Qué viene a continuación?](./media/ios-5-cp-enroll-1711.png)|Esta pantalla le guía por lo que sucede en el programa de instalación. Pasará por Safari, la aplicación Configuración y la aplicación Portal de empresa para completar este proceso. Pulse **Siguiente**.|
 |![Carga de la pantalla después de pulsar Siguiente en ¿Qué viene a continuación?.](./media/ios-6-cp-enroll-1711.png)||
@@ -66,7 +66,7 @@ Una empresa tiene grandes cantidades de información confidencial, desde correos
 |![Carga de la pantalla de los recursos de empresa.](./media/ios-18-cp-enroll-1711.png)|Espere a que se complete la carga.|
 |![Seleccione la categoría de dispositivo en la aplicación de portal de empresa.](./media/ios-19-cp-enroll-1711.png)|Seleccione la mejor categoría para el dispositivo. Habitualmente, esto tiene relación con el propietario del dispositivo o su ubicación la mayoría del tiempo.|
 |![Categoría seleccionada.](./media/ios-20-cp-enroll-1711.png)||
-|![Administración de dispositivos correcta, ahora necesita actualizar la configuración.](./media/ios-21-cp-enroll-1711.png)|Logró que se administre el dispositivo. Es probable que su empresa todavía tenga que actualizar algunas configuraciones, como la longitud de la contraseña. Pulse **Actualizar configuración del dispositivo** para continuar.|
+|![Administración de dispositivos correcta, ahora necesita actualizar la configuración.](./media/ios-21-cp-enroll-1711.png)|Logró que se administre el dispositivo. Es probable que su empresa todavía tenga que actualizar algunas configuraciones, como la longitud de la contraseña. Para proceder, haga clic en **Continuar**.|
 |![Confirmación de la configuración del dispositivo.](./media/ios-22-cp-enroll-1711.png)|Portal de empresa comprobará si es necesario actualizar parte de la configuración.|
 |![Comprobación de la configuración finalizada, con una versión de SO incorrecta](./media/ios-23-cp-enroll-1711.png)|Portal de empresa proporcionará instrucciones sobre cómo puede corregir cualquier problema de configuración. Cuando termine de corregir los problemas, pulse **Comprobar la configuración**.|
 |![Pantalla de carga de confirmación de la configuración de dispositivo](./media/ios-24-cp-enroll-1711.png)|El dispositivo comprobará si la configuración es suficientemente segura para acceder a los recursos de empresa.|

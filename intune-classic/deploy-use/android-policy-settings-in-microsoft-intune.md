@@ -2,8 +2,8 @@
 title: "Opciones de configuración de directivas de Android y Samsung KNOX"
 description: "Cree directivas que controlen la configuración y las características en los dispositivos Android que administra con Intune."
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 10/20/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 36ef93bb3894083e3db3732faddea6f926831ac6
-ms.sourcegitcommit: 128770ecc820f6ff3c99b15752bce7a58257f1d5
+ms.openlocfilehash: 8978194dfed956550a6417d4bfbedf3f2c547539
+ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/21/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Configuración de directivas de Android y Samsung KNOX Standard en Microsoft Intune
 
