@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3976327decf6b1850baed8e781609e458d375aa1
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: f5c2536e4566baa2661b77f5574085410784a787
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Bloquear un dispositivo de forma remota desde el sitio web del Portal de empresa
 
@@ -28,7 +28,7 @@ Los accidentes suceden y a veces los dispositivos pueden perderse. Si el disposi
 
 [!INCLUDE[wit_nextref](includes/end-user-password-guidance.md)]
 
-Para estar seguro, puede bloquearlo mediante la opción de bloqueo remoto en el [sitio web de Portal de empresa](https://portal.manage.microsoft.com). El bloqueo remoto funciona para:
+Para estar seguro, puede bloquearlo mediante la opción de bloqueo remoto en el [sitio web de Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog). El bloqueo remoto funciona para:
 
 * Android
 * iOS
@@ -38,7 +38,7 @@ Para estar seguro, puede bloquearlo mediante la opción de bloqueo remoto en el 
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>Para usar el bloqueo remoto para bloquear el dispositivo
 
-1.  En el [sitio web del Portal de empresa](https://portal.manage.microsoft.com), pulse el botón __menú__ ![Pequeña imagen del botón menú, tres barras horizontales apiladas en paralelo.](/Intune/whats-new/media/CP_hamburger_menu.png), luego seleccione __Mis dispositivos__.
+1.  En el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog), pulse el botón __menú__ ![Pequeña imagen del botón menú, tres barras horizontales apiladas en paralelo.](/Intune/whats-new/media/CP_hamburger_menu.png), luego seleccione __Mis dispositivos__.
 
   ![Imagen del sitio web del Portal de empresa con un menú lateral expandido en el lado izquierdo de la pantalla con botones Inicio, Todas las aplicaciones, Mis dispositivos, Departamento de soporte técnico y Cerrar sesión.](/media/iwp-expanded-sidebar.png)
 
@@ -65,4 +65,4 @@ Para estar seguro, puede bloquearlo mediante la opción de bloqueo remoto en el 
 
 Si encuentra el dispositivo y quiere desbloquearlo después de usar Bloqueo remoto, simplemente escriba el código de acceso.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

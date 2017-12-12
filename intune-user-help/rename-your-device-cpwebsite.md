@@ -16,19 +16,19 @@ ROBOTS:
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8023e3a75dbf9a3275654b7ed8f917546d401168
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 59d9ed0ddc6b24d680f665eb6f5c9976001d940b
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="rename-your-device-from-the-company-portal-website"></a>Cambiar el nombre de un dispositivo desde el sitio web del Portal de empresa
 
-Puede decidir cambiar el nombre de su dispositivo para que resulte más fácil de identificar. Puede llevar a cabo las siguientes tareas desde el [sitio web del Portal de empresa](https://portal.manage.microsoft.com). El sitio web del portal de empresa es una página web que puede usar para administrar equipos y dispositivos que haya inscrito en la administración con el departamento de TI.
+Puede decidir cambiar el nombre de su dispositivo para que resulte más fácil de identificar. Puede llevar a cabo las siguientes tareas desde el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog). El sitio web del portal de empresa es una página web que puede usar para administrar equipos y dispositivos que haya inscrito en la administración con el departamento de TI.
 
 Para cambiar el nombre del dispositivo:
 
-1.  En el [sitio web del Portal de empresa](https://portal.manage.microsoft.com), pulse el botón __menú__ ![Pequeña imagen del botón menú, tres barras horizontales apiladas en paralelo.](/Intune/whats-new/media/CP_hamburger_menu.png), luego seleccione __Mis dispositivos__.
+1.  En el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog), pulse el botón __menú__ ![Pequeña imagen del botón menú, tres barras horizontales apiladas en paralelo.](/Intune/whats-new/media/CP_hamburger_menu.png), luego seleccione __Mis dispositivos__.
 
 2. En la página __Mis dispositivos__, seleccione el dispositivo cuyo nombre quiere cambiar.
 
@@ -40,4 +40,4 @@ Para cambiar el nombre del dispositivo:
 
 4.  En el cuadro donde aparece el nombre del dispositivo, escriba el nuevo nombre y puntee en el botón **Cambiar nombre**. El dispositivo aparece ahora con el nuevo nombre.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

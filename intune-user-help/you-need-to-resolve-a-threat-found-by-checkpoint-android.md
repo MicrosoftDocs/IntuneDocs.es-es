@@ -14,11 +14,11 @@ ms.assetid: 449c34ec-2d94-4c7f-8691-a5200efee3cb
 searchScope: User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 2bcf23192829b5613b9245699cea47ffb85492f3
-ms.sourcegitcommit: 668b408819c75ba5e827e36974935aafaf85871e
+ms.openlocfilehash: 8a8a2d6669e1360ee033744120af415d7310c346
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="resolve-a-threat-found-by-sandblast-mobile-protect"></a>Resolver una amenaza detectada por SandBlast Mobile Protect
 
@@ -30,7 +30,7 @@ Para solucionar el problema, abra la aplicación SandBlast Mobile Protect y siga
 
 Si hay un virus u otra amenaza de seguridad en el dispositivo inscrito e intenta tener acceso al correo electrónico o a los archivos de la empresa, un mensaje de SandBlast Mobile Protect le avisará de que debe tomar medidas.
 
-Pulse el vínculo del **portal de administración de dispositivos** para ir al [sitio web del portal de empresa](https://portal.manage.microsoft.com), donde obtendrá instrucciones sobre cómo solucionar el problema.
+Pulse el vínculo del **portal de administración de dispositivos** para ir al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog), donde obtendrá instrucciones sobre cómo solucionar el problema.
 
 ## <a name="example-of-an-app-that-sandblast-mobile-protect-sees-as-a-threat"></a>Ejemplo de aplicación que SandBlast Mobile Protect considera una amenaza
 
@@ -38,4 +38,4 @@ Si ha instalado una aplicación que SandBlast Mobile Protect considera una amena
 
 Cuando esto suceda, desinstale la aplicación para recuperar el acceso al correo electrónico y a los datos de la empresa inmediatamente. Si no lo hace, perderá el acceso al correo electrónico y a los datos hasta que desinstale la aplicación.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

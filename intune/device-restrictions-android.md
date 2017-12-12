@@ -15,11 +15,11 @@ ms.assetid: 6bdf714a-5d93-485c-8b52-513635c60cb6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 094fc13705c1b746a4b753c02127478f10754f46
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 97e125d768ca7b0cf58a2892d78675dfa42ef7ce
+ms.sourcegitcommit: fa0f0402dfd25ec56a0df08c23708c7e2ad41120
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 11/29/2017
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos Android y Samsung KNOX en Microsoft Intune
 
@@ -42,7 +42,7 @@ Use esta configuración con una directiva de restricción de dispositivos Androi
 - **Captura de pantalla (solo Samsung KNOX)**: permite al usuario capturar el contenido de la pantalla como una imagen.
 - **Asistente de voz (solo Samsung KNOX)**: permite el uso de software del asistente de voz en el dispositivo.
 - **YouTube (solo Samsung KNOX)**: permite el uso de la aplicación YouTube en el dispositivo.
-- **Dispositivos compartidos**: configure un dispositivo Samsung KNOX Standard administrado como compartido. En este modo, los usuarios finales pueden iniciar y cerrar sesión en el dispositivo con sus credenciales de Azure AD. El dispositivo permanece administrado tanto si se usa como si no.<br>Cuando los usuarios finales inician sesión, tienen acceso a las aplicaciones y además se les aplican las directivas. Cuando los usuarios cierran sesión, se borran todos los datos de la aplicación.
+- **Dispositivos compartidos (solo Samsung KNOX)**: configure un dispositivo Samsung KNOX Standard administrado como compartido. En este modo, los usuarios finales pueden iniciar y cerrar sesión en el dispositivo con sus credenciales de Azure AD. El dispositivo permanece administrado tanto si se usa como si no.<br>Cuando se usa junto con un perfil de certificado SCEP, esta característica permite a los usuarios finales compartir un dispositivo con el mismo conjunto de aplicaciones para todos los usuarios, pero con su propio certificado de usuario SCEP.  Cuando los usuarios cierran sesión, se borran todos los datos de la aplicación.  Esta característica se limita a las aplicaciones LOB.
 
 ## <a name="password"></a>Contraseña
 

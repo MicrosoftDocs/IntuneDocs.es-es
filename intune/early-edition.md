@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1ea734e83cfab3fff22c775764ac9814012d52b6
-ms.sourcegitcommit: 70dc0aaad51b447e173b663d1092d993dc81ffdd
+ms.openlocfilehash: 35bf193563deb34ac59df245c622bbc011d80b76
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/02/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2017"></a>La edición anticipada para Microsoft Intune, diciembre de 2017
 
@@ -60,9 +60,6 @@ Con este cambio, los administradores de TI pueden ver cuáles son los dispositiv
 
 ### <a name="new-ios-device-action------1244701---"></a>Nueva acción de dispositivo iOS   <!-- 1244701 -->
 Puede apagar los dispositivos iOS 10.3 supervisados. Esta acción apaga inmediatamente el dispositivo sin enviar una advertencia al usuario final. La acción **Shut down (supervised only)** [Apagar (solo con supervisión)] se puede encontrar en las propiedades de dispositivos cuando se selecciona un dispositivo en la carga de trabajo del **dispositivo**.
-
-### <a name="palo-alto-vpn-now-supported----1333680-eeready---"></a>La VPN de Palo Alto ahora es compatible <!-- 1333680 eeready -->
-La lista de **tipos de conexión** incluirá la VPN de Palo Alto cuando configure la VPN de base.
 
 ### <a name="multiple-connector-support-for-scep-and-pfx-certificate-handling----1361755-eeready---"></a>Compatibilidad de varios conectores con el control de certificados SCEP y PFX <!-- 1361755 eeready -->
 Los clientes que usan el conector NDES local para entregar los certificados a los dispositivos podrán configurar varios conectores en un solo inquilino.
