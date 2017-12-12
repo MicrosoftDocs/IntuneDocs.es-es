@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b6796d004a966cd6ed3032ce7243377743e40927
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: 476f1cfa59f562a8c0953236184693e1c5674ee3
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>¿Qué ocurre si restablece un dispositivo Android mediante el Portal de empresa?
 
@@ -32,4 +32,4 @@ Si tiene un dispositivo Samsung KNOX, puede llevar a cabo un “borrado selectiv
 - El correo electrónico, VPN y Wi-Fi.
 - La posibilidad del equipo de soporte técnico de su empresa de aplicar determinadas opciones de configuración.
 
-Si tiene alguna pregunta, póngase en contacto con el equipo de soporte técnico de su empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).
+Si tiene alguna pregunta, póngase en contacto con el equipo de soporte técnico de su empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

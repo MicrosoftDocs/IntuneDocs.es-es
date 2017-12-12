@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: vadona
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 22cdbc1140c57cb7475689307df5a261774761d5
-ms.sourcegitcommit: db7a7bbead3a3fa78c4d643607f709a2909eb608
+ms.openlocfilehash: ef555fa550e1c2fcab96d4837e7fcdba1ab4a9e6
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/28/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="you-need-to-upgrade-your-device-to-install-the-outlook-app"></a>Para instalar la aplicación Outlook hay que actualizar el dispositivo
 
@@ -34,4 +34,4 @@ Vaya a **Configuración** y use la opción **Actualizar** o **Actualización del
 ## <a name="if-you-have-an-ios-device"></a>Si tiene un dispositivo iOS
 Pulse **Configuración** > **General** > **Actualización de software**.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
