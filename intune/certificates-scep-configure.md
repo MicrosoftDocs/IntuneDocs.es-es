@@ -3,10 +3,10 @@ title: "Configuración y administración de certificados SCEP con Intune"
 titlesuffix: Azure portal
 description: Aprenda a configurar la infraestructura y, luego, crear y asignar perfiles de certificado SCEP de Intune.
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 11/29/2017
+ms.date: 12/09/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 03c78fde793809713e630f371a02c48393b68810
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 36c495767d41c83c1393d837a808961ed9868bed
+ms.sourcegitcommit: 6d5c919286b0e285f709d9b918624b927f99f979
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/11/2017
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>Configuración y administración de certificados SCEP con Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -88,7 +88,7 @@ Para poder configurar perfiles de certificado debe completar las tareas siguient
 Cree una cuenta de usuario de dominio que vaya a usar como cuenta de servicio NDES. Esta cuenta se especifica al configurar las plantillas en la CA emisora antes de instalar y configurar NDES. Asegúrese de que el usuario tenga los derechos predeterminados, los derechos **Iniciar sesión localmente**, **Iniciar sesión como un servicio** e **Iniciar sesión como trabajo por lotes**. Algunas organizaciones tienen directivas de protección que deshabilitan estos derechos.
 
 #### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>Paso 2: configurar plantillas de certificado en la entidad de certificación
-En esta tarea tendrá que:
+En esta tarea tendrá que hacer lo siguiente:
 
 -   Configurar una plantilla de certificado para NDES
 
@@ -153,7 +153,7 @@ Para configurar la CA para permitir que el solicitante especifique el período d
 
 
 #### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>Paso 3: configurar los requisitos previos en el servidor NDES
-En esta tarea tendrá que:
+En esta tarea tendrá que hacer lo siguiente:
 
 -   Agregar NDES a un servidor con Windows Server y configurar IIS para que admita NDES
 
@@ -164,7 +164,7 @@ En esta tarea tendrá que:
 
 
 
-   1.  En el servidor en el que se va a hospedar NDES, debe iniciar sesión como **Administrador de la empresa** y, luego, usar el [Asistente para agregar roles y características](https://technet.microsoft.com/library/hh831809.aspx) para instalar NDES:
+   1.  En el servidor en el que se hospeda NDES, inicie sesión como **Administrador de organización** y, luego, use el [Asistente para agregar roles y características](https://technet.microsoft.com/library/hh831809.aspx) para instalar NDES:
 
     1.  En el asistente, seleccione **Servicios de certificados de Active Directory** para obtener acceso a los servicios de rol de AD CS. Seleccione el **Servicio de inscripción de dispositivos de red**, desactive **Entidad de certificación**y complete el asistente.
 
@@ -194,7 +194,7 @@ En esta tarea tendrá que:
 `**setspn –s http/Server01.contoso.com contoso\NDESService**`
 
 #### <a name="step-4---configure-ndes-for-use-with-intune"></a>Paso 4: configurar NDES para su uso con Intune
-En esta tarea tendrá que:
+En esta tarea tendrá que hacer lo siguiente:
 
 -   Configurar NDES para su uso con la CA emisora
 
@@ -255,7 +255,7 @@ En esta tarea tendrá que:
 1.  En el servidor NDES, solicite e instale un certificado de **autenticación de servidor** de la CA interna o de una CA pública. Después, este certificado SSL se enlaza en IIS.
 
     > [!TIP]
-    > Después de enlazar el certificado SSL en IIS, también debe instalar un certificado de autenticación del cliente. Este certificado puede estar emitido por una CA de confianza para el servidor NDES. Aunque no es un procedimiento recomendado, puede usar el mismo certificado para la autenticación del servidor y del cliente, siempre y cuando el certificado tenga dos usos mejorados de clave (EKU). Revise los siguientes pasos para obtener información sobre estos certificados de autenticación.
+    > Después de enlazar el certificado SSL en IIS, instale un certificado de autenticación del cliente. Este certificado puede estar emitido por una CA de confianza para el servidor NDES. Aunque no es un procedimiento recomendado, puede usar el mismo certificado para la autenticación del servidor y del cliente, siempre y cuando el certificado tenga dos usos mejorados de clave (EKU). Revise los siguientes pasos para obtener información sobre estos certificados de autenticación.
 
     1.  Después de obtener el certificado de autenticación de servidor, abra el **Administrador de IIS**, seleccione el **Sitio web predeterminado** en el panel **Conexiones** y haga clic en **Enlaces** en el panel **Acciones** .
 
@@ -297,32 +297,19 @@ En esta tarea tendrá que:
 4. Reinicie el servidor de NDES. El servidor está ya preparado para admitir el conector certificado.
 
 #### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>Paso 5: habilitar, instalar y configurar Intune Certificate Connector
-En esta tarea tendrá que:
+En esta tarea tendrá que hacer lo siguiente:
 
 - Habilitar la compatibilidad con SCEP en Intune.
-
-- Descargar, instalar y configurar Certificate Connector en el servidor SCEP.
-
-   > [!NOTE]
-   > Para admitir la alta disponibilidad, puede instalar varias instancias de Certificate Connector.
-
-<!--1528104 we need to flesh out the HA recommendation in the note above -->
-
-##### <a name="to-enable-support-for-the-certificate-connector"></a>Para habilitar la compatibilidad de Certificate Connector
-
-1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
-3. En la hoja **Intune**, elija **Configurar dispositivos**.
-4. En la hoja **Configuración del dispositivo**, elija **Entidad de certificación**.
-5.  Seleccione **Habilitar Certificate Connector**.
+- Descargar, instalar y configurar Certificate Connector en un servidor de su entorno. Para admitir la alta disponibilidad, puede instalar varias instancias de Certificate Connector en distintos servidores.
 
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>Para descargar, instalar y configurar Certificate Connector
-
-1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
-3. En la hoja **Intune**, elija **Configurar dispositivos**.
-4. En la hoja **Configuración del dispositivo**, elija **Entidad de certificación**.
-5. Elija **Descargar Certificate Connector**.
+![ConnectorDownload](./media/certificates-download-connector.png)   
+ 
+1. Inicie sesión en el portal de Azure. 
+2. Seleccione **Más servicios** > **Supervisión y administración** > **Intune**.
+3. En la hoja **Intune**, seleccione **Configuración del dispositivo**.
+4. En la hoja **Configuración del dispositivo**, seleccione **Entidad de certificación**.
+5. Haga clic en **Agregar** y seleccione **Descargue el archivo del conector**. Guarde la descarga en una ubicación a la que pueda acceder desde el servidor donde vaya a realizar la instalación. 
 6.  Una vez finalizada la descarga, ejecute el instalador descargado (**ndesconnectorssetup.exe**) en un servidor de Windows Server 2012 R2. El instalador también instala el módulo de directivas para SCEP y el servicio web de CRP. (El servicio web de CRP, CertificateRegistrationSvc, se ejecuta como una aplicación en IIS).
 
     > [!NOTE]
@@ -358,17 +345,17 @@ Para validar que el servicio se ejecuta, abra un explorador y escriba la siguien
 ## <a name="how-to-create-a-scep-certificate-profile"></a>Creación de un perfil de certificado SCEP
 
 1. En Azure Portal, seleccione la carga de trabajo **Configurar dispositivos**.
-2. En la hoja **Configuración del dispositivo**, elija **Administrar** > **Perfiles**.
-3. En la hoja de perfiles, elija **Create Profile** (Crear perfil).
-4. En la hoja **Create Profile** (Crear perfil), escriba un **nombre** y una **descripción** para el perfil de certificado SCEP.
-5. En la lista desplegable **Plataforma**, seleccione la plataforma de dispositivo para este certificado SCEP. Actualmente, puede elegir una de las siguientes plataformas para la configuración de restricciones de dispositivos:
+2. En la hoja **Configuración del dispositivo**, seleccione **Administrar** > **Perfiles**.
+3. En la hoja de perfiles, seleccione **Crear perfil**.
+4. En la hoja **Crear perfil**, escriba un **nombre** y una **descripción** para el perfil de certificado SCEP.
+5. En la lista desplegable **Plataforma**, seleccione la plataforma de dispositivo para este certificado SCEP. Actualmente puede seleccionar una de las siguientes plataformas para la configuración de restricciones de dispositivos:
     - **Android**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
     - **Windows 8.1 y versiones posteriores**
     - **Windows 10 y versiones posteriores**
-6. En la lista desplegable de **tipos de perfil**, elija **Certificado SCEP**.
+6. En la lista desplegable de los **tipos de perfil**, seleccione **Certificado SCEP**.
 7. En la hoja **Certificado SCEP**, configure los siguientes valores:
     - **Período de validez del certificado**: si ha ejecutado el comando **certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE** en la entidad de certificación emisora, que permite un período de validez personalizado, puede especificar la cantidad de tiempo restante antes de que expire el certificado.<br>Puede especificar un valor inferior al período de validez de la plantilla de certificado especificada, pero no superior. Por ejemplo, si el período de validez del certificado en la plantilla de certificado es de dos años, puede especificar un valor de un año, pero no un valor de cinco años. El valor también debe ser menor que el período de validez restante del certificado de la CA emisora. 
     - **Proveedor de almacenamiento de claves (KSP)** (Windows Phone 8.1, Windows 8.1, Windows 10): especifique dónde se almacena la clave del certificado. Elija uno de los siguientes valores:
@@ -392,7 +379,7 @@ Para validar que el servicio se ejecuta, abra un explorador y escriba la siguien
     - **Tamaño de la clave (bits)**: seleccione el número de bits que contiene la clave. 
     - **Algoritmo hash** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): seleccione uno de los tipos de algoritmos hash disponibles para usar con este certificado. Seleccione el nivel máximo de seguridad que admiten los dispositivos de conexión. 
     - **Certificado raíz**: elija un perfil de certificado de CA raíz que previamente haya configurado y asignado al usuario o dispositivo. Este certificado de CA debe ser el certificado raíz para la entidad de certificación que emite el certificado que va a configurar en este perfil de certificado. 
-    - **Uso mejorado de clave**: elija **Agregar** para agregar valores para la finalidad prevista del certificado. En la mayoría de los casos, el certificado requiere **Autenticación de cliente** para que el usuario o dispositivo pueda autenticarse en un servidor. Sin embargo, puede agregar otros usos de clave según sea necesario. 
+    - **Uso mejorado de clave**: seleccione **Agregar** para agregar valores para la finalidad prevista del certificado. En la mayoría de los casos, el certificado requiere **Autenticación de cliente** para que el usuario o dispositivo pueda autenticarse en un servidor. Sin embargo, puede agregar otros usos de clave según sea necesario. 
     - **Configuración de la inscripción**
         - **Umbral de renovación (%)**: especifique qué porcentaje de la duración del certificado tiene que quedar para que el dispositivo solicite la renovación del certificado.
         - **Direcciones URL de servidor SCEP**: especifique una o varias direcciones URL para los servidores NDES que emiten certificados mediante SCEP. 
