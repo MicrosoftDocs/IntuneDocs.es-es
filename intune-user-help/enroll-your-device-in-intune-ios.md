@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/21/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 206de56ee967f4cd142e5cd7c9d63971b9b727c6
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 7e1ff77fef9e084000938022fb36217b21279c28
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="set-up-access-to-your-company-resources"></a>Configuración del acceso a los recursos de empresa
 
@@ -57,7 +57,7 @@ Una empresa tiene grandes cantidades de información confidencial, desde correos
 |![Perfil abierto en la configuración.](./media/ios-9-cp-enroll-1711.png)|Pulse **Instalar**.|
 |![Diálogo modal de instalación del perfil en la parte inferior de la pantalla.](./media/ios-10-cp-enroll-1711.png)|Pulse **Instalar**.|
 |![Carga de la pantalla de instalación del perfil.](./media/ios-11-cp-enroll-1711.png)|Espere a que se complete la carga.|
-|![Pantalla de advertencia de administración de perfil.](./media/ios-12-cp-enroll-1711.png)|Esta advertencia escrita por Apple le permite obtener más información sobre qué tipos de acciones se pueden realizar en un dispositivo bajo administración. Conozca más sobre [qué información puede ver la empresa](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)|
+|![Pantalla de advertencia de administración de perfil.](./media/ios-12-cp-enroll-1711.png)|Esta advertencia escrita por Apple le permite obtener más información sobre qué tipos de acciones se pueden realizar en un dispositivo bajo administración. Obtenga más información sobre la [información que puede ver la empresa](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).|
 |![Aviso del sistema que pregunta sobre la confianza en la administración remota.](./media/ios-13-cp-enroll-1711.png)|Pulse **Confiar** para permitir que la empresa administre la información corporativa y la configuración del dispositivo.|
 |![Pantalla de carga de finalización de la instalación del perfil.](./media/ios-14-cp-enroll-1711.png)|Espere a que se complete la carga.|
 |![Pantalla de perfil instalado.](./media/ios-15-cp-enroll-1711.png)|El perfil se instaló y la configuración y la información corporativa del dispositivo están a punto de ser administradas.|
@@ -75,4 +75,4 @@ Una empresa tiene grandes cantidades de información confidencial, desde correos
 > [!Note]
 > Es posible que deba seguir unos pocos pasos más para que el dispositivo esté totalmente administrado. Obtenga más información sobre cómo [inscribir el dispositivo mediante la administración de gastos de telecomunicaciones](enroll-your-device-with-telecom-expense-management-ios.md). Si su organización usa el Programa de inscripción de dispositivos de Apple, obtenga más información [aquí](enroll-your-device-dep-ios.md).
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

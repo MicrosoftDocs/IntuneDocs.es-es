@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/30/2017
+ms.date: 12/05/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 06cc4d70b30ec92946baefbc020aa4cda28b0c88
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: fd9a9444d5a91a44672d9e0a60fb6da961883986
+ms.sourcegitcommit: 548b9e6c1e50074a5ffb89160ae23ee3caa5ba65
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/06/2017
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Aplicación del cumplimiento en equipos Mac administrados con Jamf Pro
 
@@ -42,12 +42,9 @@ Puede usar Azure Active Directory y las directivas de acceso condicional de Micr
 
 ## <a name="deploy-the-company-portal-app-for-macos-in-jamf-pro"></a>Implementar la aplicación Portal de empresa para macOS en Jamf Pro
 
-Hay dos maneras de implementar la aplicación Portal de empresa para macOS en Jamf Pro:
+Debe implementar la aplicación Portal de empresa para macOS en Jamf Pro como una instalación en segundo plano. Para hacerlo, siga este procedimiento:
 
-- Hacer que la implementación de la aplicación Portal de empresa esté disponible en Jamf Self Service, o bien,
-- Como una instalación en segundo plano para que los usuarios sigan el procedimiento siguiente:
-
-1. En un dispositivo macOS, descargue la versión actual de la [aplicación Portal de empresa para macOS](https://go.microsoft.com/fwlink/?linkid=862280).
+1. En un dispositivo macOS, descargue la versión actual de la [aplicación Portal de empresa para macOS](https://go.microsoft.com/fwlink/?linkid=862280). No la instale, ya que necesita una copia de la aplicación para cargarla en Jamf Pro.
 2. Abra Jamf Pro y navegue a **Administración de equipos** > **Paquetes**.
 3. Cree un paquete con la aplicación Portal de empresa para macOS y, luego, haga clic en **Guardar**.
 4. Abra **Equipos** > **Directivas** y seleccione **Nuevo**.
@@ -71,7 +68,7 @@ Los usuarios finales deben iniciar la aplicación Portal de empresa a través de
 > La aplicación Portal de empresa debe iniciarse desde Jamf Self Service para comenzar el registro de dispositivos. <br><br>Iniciar manualmente la aplicación Portal de empresa (por ejemplo, desde las carpetas Aplicaciones o Descargas) no registrará el dispositivo. Si un usuario final inicia manualmente el Portal de empresa, verá la advertencia "AccountNotOnboarded".
 
 1. En Jamf Pro, navegue a **Equipos** > **Directivas** y cree una directiva nueva para el registro de dispositivos.
-2. Configure la carga **Integración de Microsoft Intune**, incluido el desencadenador y la frecuencia de ejecución. Establezca la prioridad en **Después**.
+2. Configure la carga **Integración de Microsoft Intune**, incluido el desencadenador y la frecuencia de ejecución.
 3. Haga clic en la pestaña **Ámbito** y establezca el ámbito de la directiva en todos los dispositivos de destino.
 4. Haga clic en la pestaña **Autoservicio** para hacer que la directiva esté disponible en el autoservicio de Jamf. Incluya la directiva en la categoría **Cumplimiento de dispositivos**. Haga clic en **Guardar**.
 
