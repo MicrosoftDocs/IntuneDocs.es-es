@@ -15,11 +15,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9dc65389485d2a77e351b5e781824eed0612054
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 791d93326ed1af173606d28639e92647ed7c1312
+ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/07/2017
 ---
 # <a name="role-based-administration-control-rbac-with-intune"></a>Control de administración basada en roles (RBAC) con Intune
 
@@ -36,7 +36,7 @@ Con la nueva versión de Azure Portal, **Azure Active Directory (Azure AD)** ofr
 
 - **Administrador global:** los usuarios con este rol tienen acceso a todas las características administrativas de Azure AD, así como a los servicios que permiten la federación con Azure AD, como Exchange Online, SharePoint Online y Skype Empresarial Online. La persona que se suscribe al inquilino de Azure AD se convierte en administrador global. Solo los administradores globales pueden asignar otros roles de administrador de Azure AD. Puede haber más de un administrador global en tu organización. Los administradores globales pueden restablecer la contraseña de cualquier usuario y de todos los administradores.
 
-- **Administrador del servicio de Intune:** los usuarios con este rol tienen permisos globales en Intune cuando el servicio está presente. Además, este rol ofrece la capacidad de administrar usuarios y dispositivos y de crear y administrar grupos.
+- **Administrador del servicio de Intune:** los usuarios con este rol tienen permisos globales en Intune cuando el servicio está presente. Además de cualquier restricción reemplazada de Azure, este rol ofrece la posibilidad de administrar usuarios, dispositivos y de crear y administrar grupos de Intune.
 
 - **Administrador de acceso condicional:** los usuarios con este rol solo tienen permisos para ver, crear, modificar y eliminar directivas de acceso condicional.
 
