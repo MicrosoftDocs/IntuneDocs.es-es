@@ -1,9 +1,9 @@
 ---
-title: Transferir localmente aplicaciones para Windows y Windows Phone
+title: Transferir localmente aplicaciones de Windows y Windows Phone para Intune
 description: "Aprenda a firmar aplicaciones de línea de negocios de modo que pueda usar Intune para implementarlas."
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 06/07/2017
 ms.topic: article
@@ -12,11 +12,11 @@ ms.service:
 ms.technology: 
 ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 ms.custom: intune-classic
-ms.openlocfilehash: 904041ba4936917dc976fd0a6de869e931927c2d
-ms.sourcegitcommit: f9bfdaed6037bd76f8715fa7ca15a3457d26370a
+ms.openlocfilehash: d6b66c44b1c6b5b5977d7a26d279c32eb39ff7ff
+ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 12/08/2017
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>Firma de aplicaciones de línea de negocio para que se puedan implementar en dispositivos Windows con Intune
 
@@ -32,7 +32,7 @@ Los pasos que figuran a continuación le ayudarán a obtener los certificados ne
 
 
 1. **Registrarse como desarrollador de Microsoft**<br>
-   [Regístrese como desarrollador de Microsoft](http://go.microsoft.com/fwlink/?LinkId=268442) con la información de la cuenta corporativa que utilizó cuando se registró para adquirirla. Esta solicitud deberá estar autorizada por un oficial de la empresa antes de recibir un certificado de firma de código.
+   [Regístrese como desarrollador de Microsoft](http://go.microsoft.com/fwlink/?LinkId=268442) con la información de la cuenta corporativa que usó cuando se registró para adquirirla. Esta solicitud deberá estar autorizada por un oficial de la empresa antes de recibir un certificado de firma de código.
 
 2. **Obtener un certificado de empresa de Symantec**<br>
   Adquiera un certificado desde el [sitio web de Symantec](http://go.microsoft.com/fwlink/?LinkId=268441) mediante su identificador de Symantec. Después de adquirir el certificado, el aprobador corporativo que designase cuando se registró como desarrollador de Microsoft recibirá un correo electrónico en el que se pide la aprobación de la solicitud de certificado. Para más información sobre el requisito de certificado de Symantec, vea [Why Windows Phone requires a Symantec certificate?](https://technet.microsoft.com/library/dn764959.aspx#BKMK_Symantec) (¿Por qué Windows Phone pide un certificado de Symantec?). Preguntas más frecuentes sobre la inscripción de dispositivos Windows.
