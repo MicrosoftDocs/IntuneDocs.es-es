@@ -198,7 +198,7 @@
           href: device-logout-user.md
         - name: Quitar usuario
           href: device-remove-user.md
-        - name: Control remoto en Android
+        - name: Dispositivos móviles de control remoto
           href: device-profile-android-teamviewer.md
         - name: Restablecimiento del PIN de Windows 10
           href: device-windows-pin-reset.md
@@ -236,6 +236,8 @@
               href: apps-add-android-for-work.md
             - name: Aplicaciones de Office 365 para Windows 10
               href: apps-add-office365.md
+            - name: Aplicaciones de Office 365 para macOS
+              href: apps-add-office365-macos.md
         - name: Asignación de aplicaciones
           href: apps-deploy.md
         - name: Supervisión de aplicaciones
@@ -417,6 +419,10 @@
           href: app-modern-authentication-block.md
         - name: Supervisión del cumplimiento de acceso condicional
           href: conditional-access-exchange-monitor.md
+        - name: Integración de Jamf Pro con Intune para cumplimiento
+          href: conditional-access-integrate-jamf.md
+        - name: Aplicación del cumplimiento en equipos Mac administrados con Jamf Pro
+          href: conditional-access-assign-jamf.md
     - name: Proteger datos de dispositivos y aplicaciones
       items:
         - name: Uso de directivas de protección de aplicaciones
@@ -575,7 +581,7 @@
           items:
             - name: Perfil de VPN por aplicación
               href: android-pulse-secure-per-app-vpn.md
-            - name: Permiso o bloqueo para aplicaciones de Samsung KNOX Standard
+            - name: Permiso o bloqueo de aplicaciones de Samsung KNOX Standard
               href: samsung-knox-apps-allow-block.md
         - name: iOS
           href: custom-settings-ios.md
