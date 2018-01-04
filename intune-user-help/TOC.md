@@ -4,9 +4,9 @@
 
 ## [¿Qué información puede ver mi empresa con Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
-## [¿Qué ocurre al restablecer el dispositivo?](what-happens-if-you-reset-your-device-cpwebsite.md)
+## [Restablecer mi dispositivo](what-happens-if-you-reset-your-device-cpwebsite.md)
 
-## [Cómo iniciar sesión en el portal de empresa](sign-in-to-the-company-portal.md)
+## [Iniciar sesión en el Portal de empresa](sign-in-to-the-company-portal.md)
 
 ## [Uso del dispositivo Android](using-your-android-device-with-intune.md)
 ### [¿Qué ocurre al inscribir un dispositivo Android?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-android.md)
@@ -27,12 +27,14 @@
 ### [Solución de problemas comunes con Android](troubleshoot-your-device-android.md)
 #### [Comprobación del cumplimiento de dispositivos](check-compliance-on-your-device-android.md)
 #### [Sincronización del correo de Outlook con el modo de ahorro de batería](power-saving-mode-android.md)
+#### [Solución de problemas comunes con Samsung Knox](samsung-knox-errors-android.md)
 
 #### Uso de registros para solucionar problemas
 ##### [Activación del registro detallado](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 ##### [Envío de registros por correo electrónico](send-logs-to-your-it-admin-by-email-android.md)
 ##### [Envío de registros por cable USB](send-logs-to-your-it-admin-using-cable-android.md)
 ##### [Envío de errores de inscripción](send-enrollment-errors-to-your-it-admin-android.md)
+##### [Envío de errores a Microsoft](send-logs-to-microsoft-android.md)
 
 ### Preguntas sobre el sistema operativo
 #### [Actualización de dispositivos](you-need-to-update-your-android-device.md)
@@ -66,15 +68,16 @@
 ### [Establecer o cambiar el código de acceso](set-or-change-your-passcode-ios.md)
 ### [¿Qué ocurre si restablece el dispositivo con el Portal de empresa?](what-happens-if-you-reset-your-device-using-the-company-portal-ios.md)
 ### [Restablecer el dispositivo](reset-erase-your-device-cpwebsite.md)
-### [Desactivar la recopilación de datos de uso de Microsoft](turn-off-microsoft-usage-data-collection-ios.md)
 ### [Anulación de la inscripción de dispositivos](unenroll-your-device-from-intune-ios.md)
 #### [¿Qué ocurre al anular la inscripción de un dispositivo?](what-happens-if-you-unenroll-your-device-from-intune-ios.md)
 ### [Sincronizar el dispositivo manualmente](sync-your-device-manually-ios.md)
 
-### [Solución de problemas comunes con iOS](troubleshoot-your-device-iOS.md)
+#### [Solución de problemas comunes con iOS](troubleshoot-your-device-iOS.md)
 #### [Volver a conectar un dispositivo iOS en riesgo](how-to-reconnect-a-compromised-ios-device.md)
 #### [Envío de errores a la empresa](send-errors-to-your-it-admin-ios.md)
 #### [Envío de errores a Microsoft](send-logs-to-microsoft-ios.md)
+#### [Cuenta de correo electrónico de empresa existente encontrada](existing-company-email-account-found.md)
+#### [Desactivar la recopilación de datos de uso de Microsoft](turn-off-microsoft-usage-data-collection-ios.md)
 #### [Aparición de errores](you-get-an-error-while-using-the-company-portal-app-ios.md)
 #### [Identificación de dispositivos](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
 #### [Búsqueda de números de serie](how-do-i-find-the-serial-number-on-my-device-ios.md)
@@ -97,16 +100,25 @@
 ### [¿Qué ocurre al inscribir un dispositivo macOS?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [Inscripción de dispositivos macOS](enroll-your-device-in-intune-macos-cp.md)
 ### [Inscripción de dispositivos macOS antiguos](enroll-your-device-in-intune-macos-legacy.md)
-### [Este dispositivo es algo distinto](device-little-different-jamf.md)
+### [Anular la inscripción del dispositivo macOS](unenroll-your-device-from-intune-macos.md)
+
+### [Solucionar problemas habituales en macOS](troubleshoot-your-device-macos.md)
+#### [La versión de macOS aún no es compatible](your-macos-version-isnt-yet-supported.md)
+#### [Actualización de dispositivos macOS](you-need-to-update-your-macos-device.md)
+#### [Enviar errores del Portal de empresa](send-errors-macos.md)
+#### [Desactivar la recopilación de datos de uso de Microsoft](turn-off-microsoft-usage-data-collection-macos.md)
+#### [Este dispositivo es algo distinto](device-little-different-jamf.md)
+#### [Búsqueda de números de serie](how-do-i-find-the-serial-number-on-my-device-macos.md)
+#### [Identificación de dispositivos](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
 
 ## [Uso del dispositivo Windows](using-your-windows-device-with-intune.md)
 ### [¿Qué ocurre al inscribir un dispositivo Windows 10?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md)
-### [¿Qué ocurre al inscribir un dispositivo Windows con otra versión de Windows?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
-
+#### [¿Qué ocurre al inscribir un dispositivo de otras versiones de Windows?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
 ### [Inscripción de dispositivos Windows](enroll-your-device-in-intune-windows.md)
-### [¿Qué ocurre si instala la aplicación Portal de empresa e inscribe el dispositivo en Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md)
+#### [Inscripción de dispositivos Windows 10](enroll-your-w10-phone-or-w10-pc-windows.md)
+#### [Inscripción de dispositivos Windows 8.1 o Windows RT 8.1](enroll-your-w81-or-rt81-windows.md)
+#### [Inscripción de dispositivos Windows Phone 8.1](enroll-your-wp81-windows.md)
 ### [Restablecer el dispositivo](reset-erase-your-device-cpwebsite.md)
-
 ### [Cifrado del dispositivo](encrypt-your-device-windows.md)
 ### [Establecer o cambiar la contraseña](set-or-change-your-password-windows.md)
 ### [Anulación de la inscripción del dispositivo en Intune](unenroll-your-device-from-intune-windows.md)
@@ -128,6 +140,6 @@
 #### [Tengo que habilitar el firewall](you-need-to-enable-defender-firewall-windows.md)
 #### [Tengo que habilitar UAC](you-need-to-enable-uac-windows.md)
 #### [Tengo que actualizar Windows](you-need-to-update-os-build-version-windows.md)
-#### [Tengo que activar Windows Defender](turn-on-defender-windows.md) 
+#### [Tengo que activar Windows Defender](turn-on-defender-windows.md)
 
 ## [Usar el sitio web del Portal de empresa de Intune](using-the-intune-company-portal-website.md)
