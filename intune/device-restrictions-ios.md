@@ -3,8 +3,8 @@ title: "Configuración de restricciones de dispositivos de Intune para iOS"
 titleSuffix: Azure portal
 description: "Conozca la configuración de Intune que puede usar para controlar los valores de configuración y la funcionalidad de los dispositivos iOS."
 keywords: 
-author: lleonard-msft
-ms.author: alleonar
+author: vhorne
+ms.author: victorh
 manager: angrobe
 ms.date: 11/03/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f35de553259921c76341fe5b4a824e60c71d4a5
-ms.sourcegitcommit: 0f877251e6adf4e45b918cc8dc9193626727f2d9
+ms.openlocfilehash: b871726c887916662986008010e0728811f2ba98
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos iOS en Microsoft Intune
 
@@ -41,7 +41,7 @@ Esto también se aplica a valores accesibles desde la aplicación de configuraci
 - **Modificación de la configuración de notificaciones (solo supervisado)**: permitir al usuario cambiar la configuración de notificación del dispositivo.
 - **Modificación del fondo de pantalla (solo supervisado)**: permite al usuario cambiar el fondo de pantalla del dispositivo.
 - **Modificación de la configuración de confianza de aplicaciones empresariales (solo supervisado)**: permite que el usuario confíe en aplicaciones que no se descargaron de la tienda de aplicaciones.
-- **Cambios en el perfil de configuración**: permite al usuario instalar perfiles de configuración.
+- **Cambios en el perfil de configuración (solo supervisado)**: permite al usuario instalar perfiles de configuración.
 - **Bloqueo de activación (solo supervisado)**: permite el bloqueo de activación en dispositivos iOS supervisados.
 
 ## <a name="configurations-requiring-supervision"></a>Configuraciones que requieren supervisión

@@ -1,11 +1,11 @@
 ---
-title: Este dispositivo es algo distinto |Microsoft Docs
+title: Errores que pueden aparecer con Jamf Self Service | Microsoft Docs
 description: "Obtenga más información sobre el dispositivo macOS habilitado para Intune administrado por Jamf."
 keywords: Mac OS X, macOS, OS X
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 10/13/2017
+ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 14db11738b1ef34a9180515e5f909ff1960bfbb0
-ms.sourcegitcommit: e692be57ec7044dfc224b70941affbfd7efba421
+ms.openlocfilehash: 080bc7c287dcc068ac18a3aec60295e777840368
+ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/12/2017
 ---
 # <a name="performing-actions-on-a-macos-device-managed-by-jamf"></a>Realizar acciones en un dispositivo macOS administrado por Jamf
 
@@ -28,4 +28,8 @@ Su empresa usa una combinación de herramientas para asegurarse de que su dispos
 
 Si está usando un dispositivo macOS administrado por Jamf y tiene problemas de cumplimiento, haga clic en el botón **Resolver** para iniciar **Autoservicio**.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el equipo de soporte técnico de su empresa. Puede encontrar su información de contacto en el [sitio web del Portal de empresa](https://portal.manage.microsoft.com).
+__Qué hacer si aparece "AccountNotOnboarded" o "El dispositivo ya está inscrito"__
+
+Si ha abierto la aplicación Portal de empresa y aparece un mensaje que indica "AccountNotOnboarded", debe salir de la aplicación Portal de empresa e ir a **Aplicaciones** > **Self Service**. La empresa tiene una directiva de registro de dispositivos que debe instalar. Haga clic en la directiva para instalarla y luego vuelva a abrir la aplicación Portal de empresa.
+
+¿Sigue necesitando ayuda? Póngase en contacto con el equipo de soporte técnico de su empresa. Puede encontrar su información de contacto en el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
