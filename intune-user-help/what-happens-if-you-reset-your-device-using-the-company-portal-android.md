@@ -16,17 +16,17 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 476f1cfa59f562a8c0953236184693e1c5674ee3
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 4095ffc0da85501ec4649940d886b4d9a4719c7a
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="what-happens-if-you-reset-your-android-device-using-the-company-portal"></a>¿Qué ocurre si restablece un dispositivo Android mediante el Portal de empresa?
 
 Al usar el Portal de empresa para restablecer el dispositivo Android, se eliminarán todas las aplicaciones, opciones de configuración y datos personales del dispositivo. Así se restablece el dispositivo a la configuración predeterminada de fábrica.
 
-Si tiene un dispositivo Samsung KNOX, puede llevar a cabo un “borrado selectivo”; para ello, elija la opción **quitar dispositivo** del Portal de empresa. El borrado selectivo solo quita:
+Si tiene un dispositivo Samsung Knox, puede llevar a cabo un “borrado selectivo”; para ello, elija la opción **quitar dispositivo** del Portal de empresa. El borrado selectivo solo quita:
 
 - Las aplicaciones empresariales que el equipo de soporte técnico de su empresa haya puesto a su disposición.
 - El correo electrónico, VPN y Wi-Fi.

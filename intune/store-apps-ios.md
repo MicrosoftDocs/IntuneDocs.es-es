@@ -3,8 +3,8 @@ title: "Cómo agregar aplicaciones iOS de la tienda a Intune | Microsoft Docs"
 titlesuffix: Azure portal
 description: "Obtenga información sobre cómo agregar aplicaciones iOS de la tienda a Intune\"."
 keywords: Intune
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 09/18/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: c59514d7-1256-4576-9380-e7a0b85a0378
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4c5d18f217659c9be59c116670fbf92a6d1b2ab4
-ms.sourcegitcommit: bb2c181fd6de929cf1e5d3856e048d617eb72063
+ms.openlocfilehash: 7dcb857127b3c36d2b90208aac9b8ad901e31d89
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/20/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="how-to-add-ios-store-apps-to-microsoft-intune"></a>Adición de aplicaciones de la tienda iOS a Microsoft Intune
 
@@ -39,7 +39,7 @@ Solo se pueden asignar aplicaciones mediante este método si son gratuitas en la
 ## <a name="step-1---search-for-the-app-in-the-store"></a>Paso 1: Búsqueda de la aplicación en la tienda
 
 1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
+2. Elija **Más servicios** > **Supervisión y administración** > **Intune**.
 3. En la hoja **Intune**, elija **Administrar aplicaciones**.
 4. En la carga de trabajo **Mobile Apps**, elija Administrar > **Aplicaciones**.
 5. Encima de la lista de aplicaciones, elija **Agregar**.

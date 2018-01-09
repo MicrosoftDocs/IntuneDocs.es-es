@@ -3,8 +3,8 @@ title: "Asignación de aplicaciones a grupos"
 titlesuffix: Azure portal
 description: "Cuando haya agregado una aplicación a Intune, querrá asignarla a grupos de usuarios o dispositivos."
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/24/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 51abb6daad11b9d6036396dcc5a5ce8f2a2c4ac4
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 7121cffaf1deb206aa88373a3aa77ce23bdf030e
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Asignación de aplicaciones a grupos con Microsoft Intune
 
@@ -48,7 +48,7 @@ Se pueden asignar aplicaciones a dispositivos aunque no estén administrados en 
 
 1. Inicie sesión en el portal de Azure.
 2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
-3. En la hoja **Intune**, elija **Mobile apps**.
+3. En la hoja **Intune**, elija **Aplicaciones móviles**.
 1. En la carga de trabajo **Mobile Apps**, elija **Administrar** > **Aplicaciones**.
 2. En la hoja de lista de aplicaciones, haga clic en la aplicación que quiere asignar.
 3. En la hoja <*nombre de la aplicación*> - **Overview** (Información general), elija **Administrar** > **Asignaciones**.

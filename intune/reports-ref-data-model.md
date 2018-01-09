@@ -2,8 +2,8 @@
 title: Modelo de datos de Almacenamiento de datos | Microsoft Docs
 description: "El Almacenamiento de datos de Intune muestrea los datos a diario para proporcionar una vista histórica del entorno móvil, en constante cambio."
 keywords: Almacenamiento de datos de Intune
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 11/14/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 29825c58febc813c7b11072699d06106725584d3
-ms.sourcegitcommit: d26930f45ba9e6292a49bcb08defb5b3f14b704b
+ms.openlocfilehash: bb4248c773e30244beb310a5b5c8b3fb0bb9d5f0
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="data-warehouse-data-model"></a>Modelo de datos de Almacenamiento de datos
 
@@ -41,7 +41,7 @@ Dichas áreas contienen las entidades, o aspectos, que son significativas para s
   -  [Extensión de administración de Intune](reports-ref-intunemanagementextension.md)
   -  [Directiva](reports-ref-policy.md)
   -  [Administración de aplicaciones móviles (MAM)](reports-ref-mobile-app-management.md)
-  -  [Usuario](reports-ref-user.md)
+  -  [User](reports-ref-user.md)
   -  [Usuario actual](reports-ref-current-user.md)
   -  [Asociación de dispositivos de usuario](reports-ref-user-device.md)
 
@@ -59,6 +59,6 @@ El almacén de datos es descendiente en relación con los datos de Intune. Todos
 
 ## <a name="next-steps"></a>Pasos siguientes
 
- - Para obtener más información sobre cómo el almacén de datos realiza un seguimiento de la duración de un usuario en Intune, consulte [Representación de la duración del usuario en el Almacenamiento de datos de Intune](reports-ref-user-timeline.md).
+ - Para más información sobre cómo el almacén de datos realiza un seguimiento de la duración de un usuario en Intune, consulte [Representación de la duración del usuario en el Almacenamiento de datos de Intune](reports-ref-user-timeline.md).
  - Para obtener más información sobre cómo trabajar con almacenes de datos, consulte [Create First Data WareHouse](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse) (Creación del primer almacén de datos).
  - Para obtener más información sobre cómo trabajar con Power BI y un almacén de datos, consulte [Creación de un informe de Power BI nuevo mediante la importación de un conjunto de datos](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/). 

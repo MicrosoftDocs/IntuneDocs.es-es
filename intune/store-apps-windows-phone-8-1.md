@@ -3,8 +3,8 @@ title: "Adición de aplicaciones de la tienda de Windows Phone 8.1 a Intune"
 titleSuffix: Azure portal
 description: "Obtenga información sobre cómo agregar aplicaciones de la tienda de Windows Phone 8.1 a Intune\"."
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 4a95e575-2c63-4bfc-b9c4-f0a132eef618
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 175c670f78123f7a74fe5e7d87fd24ad165cb2ce
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: b5ee86715338bd7df432e9f7007ad0be211d3130
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="how-to-add-windows-phone-81-store-apps-to-microsoft-intune"></a>Adición de aplicaciones de la Tienda de Windows Phone 8.1 a Microsoft Intune
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 09/09/2017
 
 
 1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
+2. Elija **Más servicios** > **Supervisión y administración** > **Intune**.
 3. En la hoja **Intune**, elija **Administrar aplicaciones**.
 4. En la carga de trabajo **Mobile Apps**, elija **Administrar** > **Aplicaciones**.
 5. Encima de la lista de aplicaciones, elija **Agregar**.

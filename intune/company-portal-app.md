@@ -3,8 +3,8 @@ title: "Configuración de la aplicación Portal de empresa"
 titleSuffix: Azure portal
 description: "Aprenda a aplicar personalización de marca específica de la compañía a la aplicación del Portal de empresa de Intune. \""
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 02/15/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 303d4a4cbce9d63abc0809a27ae1e22dcd1e195b
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 994d8b8fd90e4e66b5fdadae1cfdbbba403897ae
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Configuración de la aplicación Portal de empresa de Microsoft Intune
 
@@ -50,7 +50,7 @@ El sitio web de soporte se muestra a los usuarios en el portal de empresa para q
 
 
 
-|Nombre del campo|Longitud máxima|Más información|        
+|Nombre de campo|Longitud máxima|Más información|        
 |-|-|-|     
 |**Dirección URL del sitio web de soporte**|150|Si tiene un sitio web de soporte que desea que utilicen los usuarios finales, especifique la dirección URL aquí. La dirección URL debe tener el formato **https://www.contoso.com**. Si no especifica una dirección URL, no se mostrará ningún sitio web de soporte en la página **Contacto de TI** del portal de empresa.|        
 |**Nombre del sitio web de soporte técnico**|40|Este nombre es el nombre descriptivo que se muestra para la dirección URL del sitio web de soporte. Si especifica una dirección URL de sitio web de soporte sin nombre descriptivo, se mostrará Ir a sitio web de TI en la página **Contacto de TI** del Portal de empresa.       

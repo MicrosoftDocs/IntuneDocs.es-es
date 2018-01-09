@@ -3,8 +3,8 @@ title: "Cómo agregar aplicaciones a Microsoft Intune"
 titlesuffix: Azure portal
 description: "Estos procedimientos le ayudarán a tener sus aplicaciones en Intune listas para ser asignadas a usuarios y dispositivos. \""
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 07/17/2017
 ms.topic: article
@@ -15,17 +15,17 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 108f789f16304498cf54387326d112353bf70aa2
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: b33e15e8bd6597464bfe54a5152a872889d08e15
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>Agregar una aplicación a Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Antes de poder administrar y asignar aplicaciones a los usuarios, debe agregarlos a Intune. Intune admite una gran variedad de distintos tipos de aplicaciones y las opciones podrían ser diferentes para cada tipo.
+Antes de poder administrar y asignar aplicaciones a los usuarios, debe agregarlos a Intune. Intune admite una amplia gama de tipos de aplicación diferentes y las opciones pueden ser diferentes para cada tipo.
 
 Intune permite agregar y asignar estos tipos de aplicación:
 
@@ -58,10 +58,10 @@ Todas las aplicaciones que cree mediante el tipo de instalación del instalador 
 
 Puede adquirir almacenamiento adicional para Intune mediante el método de compra original.  Si el importe se le ha facturado o lo ha abonado con tarjeta de crédito, visite el [portal de administración de suscripciones](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions).  De lo contrario, póngase en contacto con su asociado o agente de ventas.
 
-Los requisitos de espacio de almacenamiento en nube son los siguientes:
+Estos son los requisitos de espacio de almacenamiento en la nube:
 
 -   Todos los archivos de instalación deben encontrarse en la misma carpeta.
--   El tamaño máximo de archivo de cualquier archivo que se cargue es de 2 GB.
+-   El tamaño máximo de archivo para cualquier archivo que cargue es de 2 GB.
 
 ## <a name="how-to-create-and-edit-categories-for-apps"></a>Creación y edición de categorías de aplicaciones
 
@@ -70,11 +70,11 @@ Al agregar una aplicación a Intune, tiene la opción de seleccionar la categor�
 
 1. Inicie sesión en el portal de Azure.
 2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
-3. En la hoja **Intune**, elija **Mobile apps**.
+3. En la hoja **Intune**, elija **Aplicaciones móviles**.
 4. En la carga de trabajo **Mobile Apps**, elija **Configuración** > **Categorías de aplicaciones**.
 5. En la hoja **Categorías de aplicaciones**, se muestra una lista de las categorías actuales. Elija una de las acciones siguientes:
     - **Crear una categoría**: en la hoja **Crear categoría**, escriba un nombre para la nueva categoría. Los nombres solo pueden escribirse en un solo idioma, Intune no los traduce. Haga clic en **Crear** cuando acabe.
-    - **Editar una categoría**: para cualquier categoría de la lista, elija '**...**'. En la hoja **Propiedades**, puede escribir un nuevo nombre para la categoría o eliminarla.
+    - **Editar una categoría**: para cualquier categoría de la lista, elija '**...**'. En la hoja **Propiedad**, puede escribir un nuevo nombre para la categoría o eliminar la categoría.
 
 
 ## <a name="apps-added-automatically-by-intune"></a>Aplicaciones que Intune agrega automáticamente
@@ -89,7 +89,7 @@ Elija uno de los siguientes temas para obtener información sobre cómo agregar 
 
 - [Aplicaciones de Google Play Store](store-apps-android.md)
 - [Aplicaciones LOB para Android](lob-apps-android.md)
-- [Aplicaciones de la Tienda iOS](store-apps-ios.md)
+- [Aplicaciones de App Store](store-apps-ios.md)
 - [Aplicaciones LOB para iOS](lob-apps-ios.md)
 - [Aplicaciones web (para todas las plataformas)](web-app.md)
 - [Aplicaciones de la Tienda de Windows Phone 8.1](store-apps-windows-phone-8-1.md)

@@ -3,8 +3,8 @@ title: "Adición de aplicaciones de la Tienda Windows a Intune"
 titleSuffix: Azure portal
 description: "Obtenga información sobre cómo agregar aplicaciones de la tienda Windows a Intune\"."
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: Erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 05/04/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f10da996f8587e63320e31ae57e88a5f14f3f9c2
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 19339bee8b362b1168e62da9716dbfd3144e85e7
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>Adición de aplicaciones de la tienda de Windows a Microsoft Intune
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 09/09/2017
 
 
 1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
+2. Elija **Más servicios** > **Supervisión y administración** > **Intune**.
 3. En la hoja **Intune**, elija **Administrar aplicaciones**.
 4. En la carga de trabajo **Mobile Apps**, elija **Administrar** > **Aplicaciones**.
 5. Encima de la lista de aplicaciones, elija **Agregar**.
