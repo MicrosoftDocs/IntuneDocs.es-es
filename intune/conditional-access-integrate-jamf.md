@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 11/29/2017
+ms.date: 01/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 87ddb1a5f6ca5cc9be2815aacc9c1570a51e792f
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 8207c77688bcc6e14064322ab2447435c2377b09
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Integración de Jamf Pro con Intune para cumplimiento
 
@@ -28,18 +28,12 @@ ms.lasthandoff: 12/01/2017
 |¿Busca información sobre Intune en el portal clásico? [Vaya aquí](/intune/introduction-intune?toc=/intune-classic/toc.json).|
 | |
 
-|Actualmente en versión preliminar privada|
-|--|
-|Las características que se describen en este tema solo están disponibles para los clientes que dispongan actualmente de la versión preliminar privada. Este mensaje se eliminará cuando se haya publicado para todos los clientes.|
-| |
-
 Si la organización usa [Jamf Pro](https://www.jamf.com) para administrar los equipos Mac de los usuarios finales, puede usar las directivas de cumplimiento de Microsoft Intune con acceso condicional de Azure Active Directory para garantizar que los dispositivos de la organización son compatibles.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
 Necesitará lo siguiente para configurar el acceso condicional con Jamf Pro:
 
-- Acceso a la versión preliminar privada de Intune para el acceso condicional de macOS
 - Jamf Pro 10.1.0 o versiones posteriores
 - [Aplicación Portal de empresa para macOS](https://aka.ms/macoscompanyportal)
 - Dispositivos macOS con OS X 10.11 Yosemite o versiones posteriores
@@ -60,7 +54,7 @@ Puede conectar Intune con Jamf Pro mediante la:
 4. Seleccione **Web app / API** (API/aplicación web).
 5. Especifique la **Dirección URL de inicio de sesión** con la dirección URL de la instancia de Jamf Pro.
 6. Haga clic en **Crear aplicación**.
-7. Guarde el **Id. de aplicación** recién creado, abra **Configuración** y vaya a **Acceso de API** > **Claves** para crear una clave de aplicación. Escriba una **Descripción**, cuánto hay que esperar antes de que **expire** y, después, guarde la clave de aplicación. 
+7. Guarde el **Id. de aplicación** recién creado, abra **Configuración** y vaya a **Acceso de API** > **Claves** para crear una clave de aplicación. Escriba una **Descripción**, cuánto hay que esperar antes de que **expire** y, después, guarde la clave de aplicación.
 
   > [!IMPORTANT]
   > La clave de aplicación solo aparece una vez durante este proceso. Asegúrese de guardarla donde pueda recuperarla fácilmente.
@@ -105,7 +99,7 @@ Jamf Pro captura la información de inventario sobre los dispositivos macOS admi
 * Cifrado (FileVault 2)
 * Estado del equipo selector
 * Contraseña: número mínimo de conjuntos de caracteres
-* Caducidad de contraseña (días)
+* Expiración de contraseña (días)
 * Tipo de contraseña: simple, alfanumérico o desconocido
 * Evitar inicio de sesión automático
 * Longitud necesaria del código de acceso

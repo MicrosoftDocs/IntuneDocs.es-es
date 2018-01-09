@@ -3,10 +3,10 @@ title: "Administración de aplicaciones iOS compradas por volumen | Microsoft Do
 titlesuffix: Azure portal
 description: "Obtenga información sobre cómo puede sincronizar aplicaciones compradas por volumen en la tienda de iOS en Intune y luego administrar y realizar el seguimiento de su uso\"."
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
-ms.date: 11/20/2017
+ms.date: 12/13/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 620957c04d4114d1f12e9b44101704c370663d3b
-ms.sourcegitcommit: 9ccdac76e0b0716723452a6675b091f15a4d31f2
+ms.openlocfilehash: f820be41c532384f9f2db57e0e0e497a05307d73
+ms.sourcegitcommit: 06abc5ccc8b868c9ff3ad3f8f62473a87b2da481
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Administrar aplicaciones de iOS compradas a través de un programa de compras por volumen con Microsoft Intune
 
@@ -38,9 +38,9 @@ Existen dos métodos que puede usar para asignar aplicaciones compradas por volu
 
 ### <a name="device-licensing"></a>Licencias de dispositivo
 
-Cuando asigna una aplicación a los dispositivos, se usa una licencia de aplicación y permanece asociada con el dispositivo al que se le ha asignado. 
+Cuando asigna una aplicación a los dispositivos, se usa una licencia de aplicación y permanece asociada con el dispositivo al que se le ha asignado.
 
-Cuando asigna aplicaciones compradas por volumen a un dispositivo, el usuario final del dispositivo no tiene que proporcionar un id. de Apple para tener acceso a la tienda. 
+Cuando asigna aplicaciones compradas por volumen a un dispositivo, el usuario final del dispositivo no tiene que proporcionar un id. de Apple para tener acceso a la tienda.
 
 ### <a name="user-licensing"></a>Licencias de usuario
 
@@ -92,7 +92,8 @@ Asegúrese de que cuando configure un dispositivo para un nuevo usuario de Intun
         > Al cambiar el país, los metadatos de las aplicaciones se actualizarán y almacenarán la dirección URL en la siguiente sincronización con el servicio de Apple para las aplicaciones creadas con ese token. La aplicación no se actualizará si no existe en la tienda del nuevo país.
 
     - **Tipo de cuenta de VPP**: elija **Empresa** o **Educación**.
-    - **Actualizaciones automáticas de la aplicación**: Active la opción para habilitar las actualizaciones automáticas. Si está habilitada, Intune actualiza todas las aplicaciones compradas para el token especificado a través del servicio de Intune cuando se registra el dispositivo. Se detectarán las actualizaciones de la aplicación de VPP dentro del App Store y se insertarán automáticamente en el dispositivo cuando este se registre.
+    - **Actualizaciones automáticas de la aplicación**: Active la opción para habilitar las actualizaciones automáticas. Si está habilitada, Intune actualiza todas las aplicaciones compradas para el token especificado a través del servicio de Intune cuando se registra el dispositivo.
+Se detectarán las actualizaciones de la aplicación de VPP dentro del App Store y se insertarán automáticamente en el dispositivo cuando este se registre.
 4. Cuando haya terminado, seleccione **Cargar**.
 
 El token se muestra en la hoja de la lista de tokens.
@@ -119,13 +120,13 @@ El usuario final recibirá solicitudes para que instale la aplicación de VPP en
 
 | # | Escenario                                | Invitar al programa VPP de Apple                              | Solicitud de instalación de la aplicación | Solicitud del ID de Apple |
 |---|--------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------|-----------------------------------|
-| 1 | BYOD: usuario con licencia                             | esté                                                                                               | S                                           | esté                                 |
-| 2 | Corp: usuario con licencia (dispositivo no supervisado)     | esté                                                                                               | S                                           | esté                                 |
+| 1 | BYOD: usuario con licencia                             | esté                                                                                               | esté                                           | esté                                 |
+| 2 | Corp: usuario con licencia (dispositivo no supervisado)     | esté                                                                                               | esté                                           | esté                                 |
 | 3 | Corp: usuario con licencia (dispositivo supervisado)         | esté                                                                                               | N                                           | esté                                 |
 | 4 | BYOD: dispositivo con licencia                           | N                                                                                               | esté                                           | N                                 |
 | 5 | Corp: dispositivo con licencia (dispositivo no supervisado)                           | N                                                                                               | esté                                           | N                                 |
-| 6 | Corp: dispositivo con licencia (dispositivo supervisado)                           | N                                                                                               | No                                           | N                                 |
-| 7 | Pantalla completa (dispositivo supervisado): dispositivo con licencia | N                                                                                               | No                                           | N                                 |
+| 6 | Corp: dispositivo con licencia (dispositivo supervisado)                           | N                                                                                               | N                                           | N                                 |
+| 7 | Pantalla completa (dispositivo supervisado): dispositivo con licencia | N                                                                                               | N                                           | N                                 |
 | 8 | Pantalla completa (dispositivo supervisado): usuario con licencia   | --- | ---                                          | ---                                |
 
 > [!Note]  
@@ -134,6 +135,8 @@ El usuario final recibirá solicitudes para que instale la aplicación de VPP en
 ## <a name="further-information"></a>Más información
 
 Para reclamar una licencia, debe cambiar la acción de asignación a **Desinstalar**. La licencia se recupera cuando se desinstala la aplicación. Si quita una aplicación que se ha asignado a un usuario, Intune intentará reclamar todas las licencias de aplicación que estaban asociadas al usuario.
+
+<!-- 820879 -->You can delete a iOS Volume Purchasing Program (VPP) token using the console. This may be necessary when you have duplicate instances of a VPP token. Deleting a token will also delete any associated apps and assignment. However, deleting a token does not revoke app licenses. Intune cannot revoke app licenses after a token has been deleted. 
 
 Si un usuario con un dispositivo válido intenta primero instalar una aplicación de VPP en un dispositivo, se le pedirá que se una al Programa de Compras por Volumen de Apple. Debe unirse para poder continuar con la instalación de la aplicación. La invitación para unirse al Programa de Compras por Volumen de Apple requiere que el usuario pueda usar la aplicación iTunes en el dispositivo iOS. Si ha configurado una directiva para deshabilitar la aplicación iTunes Store, las licencias de aplicaciones VPP basadas en usuario no funcionan. La solución es quitar la directiva para permitir la aplicación iTunes o usar licencias basadas en dispositivos.
 
