@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 372e25968005258fd1e00cbab7db542ad0211206
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 5cdda6a34311bb7b70234ab046975e6ff5417878
+ms.sourcegitcommit: cfe3607ba0b76a37a3c54f465754482d49a816a0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problemas conocidos de Microsoft Intune
 
@@ -43,31 +43,6 @@ La capacidad para administrar Windows 10 en Intune en Azure Portal está disponi
 
 Al migrar de Intune a Azure Portal, es posible que vea un nuevo grupo denominado **All Users - b0b08746-4dbe-4a37-9adf-9e7652c0b421**. Este grupo contiene todos los usuarios de Azure Active Directory, no solo los usuarios con licencia de Intune. Este uso podría causar problemas con otros productos de Microsoft si espera que algunos usuarios nuevos o existentes no sean miembros de los grupos.
 
-### <a name="secondary-migration-required-for-select-capabilities"></a>Migración secundaria necesaria para funcionalidades seleccionadas
-
-Para usar las funcionalidades siguientes en Azure Portal, se deben migrar las cuentas de Intune creadas antes de enero de 2017:
-
-- Perfiles de inscripción de dispositivos corporativos
-- Programa de inscripción de dispositivos de Apple
-- Declarar dispositivos con antelación mediante el número de serie de iOS
-- Cuentas de administrador de inscripción de dispositivos
-- Programa de Compras por Volumen de Apple
-
-Como estas funcionalidades no se pueden administrar ni desde la consola de Intune (Silverlight) ni desde Azure Portal, la migración:
-- Las deshabilita en el portal clásico
-- Las habilita en Azure Portal.  
-
-A partir del 22 de septiembre de 2017, la migración de estas características se incorporará a la migración principal a Azure. Si su cuenta ya se ha migrado para su uso en Azure Portal, es posible que esta migración secundaria ya se haya producido. En caso contrario, estas funciones se migrarán a Azure antes de noviembre. Cuando empiece la migración de su cuenta, se completará el mismo día. La migración puede tardar hasta 6 horas desde el momento en que se deshabiliten las características en el portal clásico de Intune.
-
-Si ahora administra estas funciones de Intune en Azure Portal, tenga en cuenta los siguientes aspectos:
-
-#### <a name="removes-default-corporate-device-enrollment-profiles-in-apple-dep"></a>Quita los perfiles de inscripción de dispositivos corporativos en DEP de Apple.
-Azure Portal no admite el perfil de inscripción de dispositivos corporativos predeterminado para los dispositivos del Programa de inscripción de dispositivos de Apple (DEP). Esta funcionalidad, que está disponible en la consola de Intune (Silverlight), se retira para evitar la asignación involuntaria de perfiles. Al sincronizar los números de serie de DEP en Azure Portal, no se asigna ningún perfil de inscripción de dispositivos corporativos. Debe asignarse un perfil de inscripción antes de usar el dispositivo.
-
-#### <a name="apple-dep-token-restored-with-migration"></a>Token de DEP de Apple restaurado con la migración
-
-Si ha eliminado un token del Programa de inscripción de dispositivos de Apple en el portal de Intune (Silverlight) y no carga uno nuevo en Azure Portal, el token original se restaurará en Azure Portal cuando realice la migración. Para quitar este token y evitar la inscripción de DEP, elimine el token de Azure Portal.
-
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>Las hojas de estado para directivas migradas no funcionan.
 
 No se puede ver la información de estado de las directivas que se migraron desde el portal clásico en Azure Portal. En cambio, aún puede ver informes de estas directivas en el portal clásico. Para ver la información de estado de las directivas de configuración migradas, vuelva a crearlas en Azure Portal.
@@ -79,6 +54,9 @@ Las aplicaciones compradas por volumen de iOS se muestran y solo pueden asignars
 
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>Se cargan varias copias del mismo programa de compra por volumen de iOS
 No haga clic en el botón **Cargar** varias veces desde el mismo token de PCV. Esto provocará que se carguen tokens de PCV duplicados y que las aplicaciones se sincronicen varias veces para el mismo token de PCV.
+
+### <a name="assigning-office-365-to-macos-devices"></a>Asignación de Office 365 a dispositivos macOS
+La característica de asignación de Office 365 a dispositivos macOS con Microsoft Intune estará disponible una vez completada la actualización de la interfaz de usuario.
 
 <!-- ## Groups -->
 

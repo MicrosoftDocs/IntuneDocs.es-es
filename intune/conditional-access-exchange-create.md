@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 840ef2ce59551a45cd753190b784e8ca0bba617a
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 6b598441d39d90a4ae81df7fffff99f9a5ccc451
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>Creación y asignación de una directiva de acceso condicional para Exchange local y el entorno de Exchange Online dedicado heredado en Microsoft Intune
 
@@ -49,7 +49,7 @@ Antes de configurar el acceso condicional, compruebe lo siguiente:
     - Debe estar **inscrito** en Intune o estar en un equipo unido a un dominio.
     - Debe estar **registrado en Azure Active Directory**. Además, el identificador de Exchange ActiveSync del cliente debe registrarse con Azure Active Directory.
 <br></br>
-- AAD DRS se activará automáticamente para los clientes de Intune y Office 365. Los clientes que ya hayan implementado el servicio de registro de dispositivos de ADFS no podrán ver los dispositivos registrados en la instancia local de Active Directory. **Esto no se aplica a equipos de Windows ni a dispositivos Windows Phone.**
+- AAD DRS se activará automáticamente para los clientes de Intune y Office 365. Los clientes que ya hayan implementado el servicio de registro de dispositivos de ADFS no podrán ver los dispositivos registrados en la instancia local de Active Directory. **Esto no se aplica a equipos de Windows ni a dispositivos Windows Phone.**
 
 - **Cumplir** todas las directivas de cumplimiento de dispositivos implementadas en ese dispositivo.
 
@@ -105,7 +105,7 @@ La aplicación **Correo** nativa en Windows 8.1 y versiones posteriores (cuando 
 
 13. En dispositivos a los que no les afecta las reglas de acceso condicional o de otro tipo, puede optar por permitirles acceder a Exchange o bloquearlo.
   - Cuando configure esta opción para permitir el acceso, todos los dispositivos podrán acceder a Exchange local inmediatamente.  Los dispositivos que pertenecen a los usuarios de **Grupos incluidos** se bloquean si se evalúan posteriormente como no conformes con las directivas de cumplimiento o no inscritos en Intune.
-  - Cuando configure esta opción para bloquear el acceso, se bloqueará inmediatamente a todos los dispositivos el acceso a Exchange local inicialmente.  Los dispositivos que pertenecen a los usuarios de **Grupos incluidos** tendrán acceso una vez que el dispositivo esté inscrito en Intune y se evalúe como conforme. En dispositivos Android que no ejecuten Samsung KNOX Standard el acceso siempre estará bloqueado ya que no admiten esta configuración.
+  - Cuando configure esta opción para bloquear el acceso, se bloqueará inmediatamente a todos los dispositivos el acceso a Exchange local inicialmente.  Los dispositivos que pertenecen a los usuarios de **Grupos incluidos** tendrán acceso una vez que el dispositivo esté inscrito en Intune y se evalúe como conforme. En dispositivos Android que no ejecuten Samsung Knox Standard el acceso siempre estará bloqueado, ya que no admiten esta configuración.
 <br></br>
 14. En **Excepciones de la plataforma de dispositivo**, elija **Agregar** para especificar las plataformas. Si la opción **Acceso a dispositivos no administrados** está establecida en **Bloqueado**, se permitirán los dispositivos inscritos y conformes incluso si hay una excepción de plataforma para bloquear. Elija **Aceptar** para guardar la configuración.
 
@@ -124,6 +124,6 @@ A partir de la versión 1704 de Intune, los administradores pueden crear directi
 
 2. En la hoja **Directivas**, elija **Directiva nueva** para crear la directiva de acceso condicional de Azure AD.
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 
 [Acceso condicional en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)

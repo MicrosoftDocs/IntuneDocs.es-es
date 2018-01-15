@@ -14,11 +14,11 @@ ms.assetid: 4b3c9af9-78da-44d2-8bd2-3f0f8885952d
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 864f99f52e0c8b46307f1ec24d11da51d8f52662
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: c77e2f9f46e61442261f65ddaa90877fc0063906
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>Identificación de escenarios de casos de uso de administración de dispositivos móviles
 
@@ -74,7 +74,7 @@ Ahora necesita identificar los grupos de la organización que están asociados c
 
 El siguiente paso consiste en identificar las plataformas de dispositivos móviles asociadas con cada escenario de casos de uso. Puede haber más de una.
 
-Por ejemplo, su escenario de caso de uso corporativo puede admitir las plataformas de dispositivos iOS y Android Samsung KNOX. La directiva BYOD puede incluir compatibilidad con plataformas de dispositivos móviles adicionales como Windows 10 Mobile y Android (no Samsung KNOX). Según los ejemplos anteriores, se han asociado las plataformas de dispositivos móviles con cada escenario de caso de uso.
+Por ejemplo, su escenario de caso de uso corporativo puede admitir las plataformas de dispositivos iOS y Android Samsung Knox. La directiva BYOD puede incluir compatibilidad con plataformas de dispositivos móviles adicionales como Windows 10 Mobile y Android (no Samsung Knox). Según los ejemplos anteriores, se han asociado las plataformas de dispositivos móviles con cada escenario de caso de uso.
 
 | **Casos de uso** | **Casos de subuso** | **Grupos** | **Plataformas de dispositivos** |   
 |:---:|:---:|:---:|:---:|

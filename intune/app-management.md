@@ -6,7 +6,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 07/11/2017
+ms.date: 01/08/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5a1cbd6fc3244686c1f5a1db3e4365e615662f0e
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 0ea0c9a406d6ddb78cd016a7b594d077d7181952
+ms.sourcegitcommit: 12b2111839e648f85374c1c0db4288f08e0ef85d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/09/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>¿Qué es la administración de aplicaciones de Microsoft Intune?
 
@@ -66,7 +66,7 @@ Puede encontrar la mayoría de las tareas relacionadas con las aplicaciones en l
 
 1. Inicie sesión en el portal de Azure.
 2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
-3. En la hoja **Intune**, elija **Mobile apps**.
+3. En la hoja **Intune**, elija **Aplicaciones móviles**.
 
     ![La carga de trabajo Mobile Apps](./media/apps-workload.png)
 
@@ -85,19 +85,33 @@ Puede encontrar la mayoría de las tareas relacionadas con las aplicaciones en l
 - **Perfiles de aprovisionamiento de iOS**: las aplicaciones iOS incluyen un perfil y un código de aprovisionamiento que está firmado por un certificado. Cuando el certificado expira, ya no se puede ejecutar la aplicación. Intune proporciona las herramientas para asignar proactivamente una nueva directiva de perfil de aprovisionamiento a dispositivos que tengan aplicaciones cuya expiración esté próxima.
     - [Perfiles de aprovisionamiento de aplicaciones iOS](app-provisioning-profile-ios.md)
 
+Para obtener más información, consulte [Administrar aplicaciones](app-management.md).
+
 ### <a name="monitor"></a>Supervisión
-- **Aplicaciones con licencia**: vea, asigne y supervise las aplicaciones compradas por volumen de las tiendas de aplicaciones.
+- **Licencias de aplicaciones**: vea, asigne y supervise las aplicaciones compradas por volumen de las tiendas de aplicaciones.
     - [Aplicaciones adquiridas por volumen de la Tienda Microsoft para Empresas](windows-store-for-business.md)
-- **Discovered Apps** (Aplicaciones detectadas): muestra todas las aplicaciones que asignó Intune y que están instaladas en un dispositivo.
+- **Aplicaciones detectadas**: muestra todas las aplicaciones que asignó Intune y que están instaladas en un dispositivo.
 - **App Install Status** (Estado de instalación de aplicación): muestra el estado de una asignación de aplicación que ha creado.
 - **App protection status** (Estado de protección de aplicación): muestra el estado de una directiva de protección de aplicaciones de un usuario seleccionado.
+- **Registros de auditoría**: muestra la actividad relacionada con la aplicación de Intune desarrollada por todos los administradores de TI.
 
 Para más información, consulte [Supervisión de aplicaciones](apps-monitor.md).
 
 ### <a name="setup"></a>Setup
-<!--- **iOS VPP Tokens**
-    - [iOS volume-purchased apps](vpp-apps-ios.md) --->
+- **Tokens de PCV de iOS**: aplique y vea sus licencias del programa de compras por volumen (PCV) de iOS.
+    - [Aplicaciones de iOS adquiridas por volumen](vpp-apps-ios.md)
+- **Certificado de empresa de Windows**: aplique o vea el estado de un certificado de firma de código utilizado para distribuir aplicaciones de línea de negocio en los dispositivos de Windows administrados. 
+- **Certificado de Windows Symantec**: aplique o vea el estado de un certificado de firma de código de Symantec que se necesita para distribuir archivos appx de XAP y WP8.x a dispositivos Windows 10 Mobile. 
 - **Tienda Microsoft para Empresas**: configure la integración con la Tienda Microsoft para Empresas. Luego, puede sincronizar las aplicaciones adquiridas en Intune, asignarlas y realizar el seguimiento de su uso de licencias.
     - [Aplicaciones adquiridas por volumen de la Tienda Microsoft para Empresas](windows-store-for-business.md)
+- **Claves de instalación de prueba de Windows**: puede agregar una clave de instalación de prueba de Windows que puede usarse para instalar una aplicación directamente en dispositivos en lugar de publicar y descargar la aplicación desde la tienda Windows.
+    - [Instalación de prueba de una aplicación de Windows](app-sideload-windows.md) 
 - **Company Portal branding** (Personalización de marca del Portal de empresa): personalice el Portal de empresa para adaptarlo a su empresa.
     - [Configuración del Portal de empresa](company-portal-app.md)
+- **Categorías de aplicaciones**: agregue, ancle y elimine los nombres de categoría de las aplicaciones.
+- **Android for Work**: apruebe y sincronice las aplicaciones que ha aprobado para su empresa.
+    - [Aplicaciones Android for Work](apps-add-android-for-work.md) 
+
+### <a name="help-and-support"></a>Ayuda y soporte técnico
+- **Ayuda y soporte técnico**: solucione problemas, solicite soporte técnico o vea el estado de Intune.
+    - [Solución de problemas](help-desk-operators.md)

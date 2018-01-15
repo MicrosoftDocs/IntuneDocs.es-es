@@ -5,7 +5,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 06/12/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: oldang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4ef7c8bb8daa76c5555b5d55d06fc30a9bb6c317
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 05d60bfea2058e3360c350d227b0031b6b620913
+ms.sourcegitcommit: 4eafb3660d6f5093c625a21e41543b06c94a73ad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicaciones iOS para directivas de protección de aplicaciones con la herramienta de ajuste de aplicaciones de Intune
 
@@ -393,7 +393,19 @@ Use los procedimientos recomendados de seguridad y privacidad siguientes al usar
 
 -   Cuando supervisa la carpeta de documentos en su dispositivo desde dentro de una aplicación ajustada, puede que vea una carpeta llamada .msftintuneapplauncher. Si cambia o elimina este archivo, podría afectar al funcionamiento correcto de las aplicaciones restringidas.
 
-### <a name="see-also"></a>Consulte también
+## <a name="getting-logs-for-your-wrapped-applications"></a>Obtención de registros para las aplicaciones ajustadas
+Siga estos pasos para obtener registros para las aplicaciones ajustadas durante la solución de problemas.
+
+1. Vaya a la aplicación de configuración de iOS en el dispositivo y seleccione la aplicación LOB.
+2. Cambie la **Consola de diagnóstico** a **Activado**.
+3. Inicie la aplicación de LOB.
+4. Haga clic en el vínculo "Comenzar".
+5. Ahora puede copiar los registros a través del correo electrónico o copiarlos en una ubicación de OneDrive.
+
+>[!NOTE]
+La funcionalidad de registro está habilitada para las aplicaciones ajustadas con la versión de Intune App Wrapping Tool 7.1.13 o una posterior.
+
+### <a name="see-also"></a>Vea también
 - [Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles mediante Microsoft Intune](apps-prepare-mobile-application-management.md)</br>
 - [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)</br>
 - [Use the SDK to enable apps for mobile application management (Usar el SDK para habilitar aplicaciones para la administración de aplicaciones móviles)](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)

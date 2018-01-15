@@ -5,7 +5,7 @@ keywords:
 author: oydang
 ms.author: oydang
 manager: angrobe
-ms.date: 10/27/2017
+ms.date: 12/21/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6ba1d1d9d0b1c21c364ef97f8340157a94ae996b
-ms.sourcegitcommit: 623c52116bc3fdd12680b9686dcd0e1eeb6ea5ed
+ms.openlocfilehash: c96be109a6e73f8a56e0c985f127eeed182a5c4b
+ms.sourcegitcommit: 4eafb3660d6f5093c625a21e41543b06c94a73ad
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Preguntas más frecuentes sobre MAM y la protección de la aplicación
 
@@ -103,17 +103,11 @@ Este artículo proporciona respuestas a algunas preguntas frecuentes sobre la ad
 
   3. **¿Cómo protege el PIN contra ataques por fuerza bruta Intune?** Como parte de la directiva de PIN de la aplicación, el administrador de TI puede establecer el número máximo de veces que un usuario puede intentar autenticar su PIN antes de bloquear la aplicación. Después de que se haya cumplido el número de intentos, Intune App SDK puede borrar los datos "corporativos" en la aplicación.
   
-**¿Cómo funciona el PIN de la aplicación Intune entre el tipo numérico y el tipo de código de acceso?**
-MAM permite actualmente un PIN de nivel de aplicación (iOS) con caracteres alfanuméricos y especiales (llamado "código de acceso"), el que requiere la participación de aplicaciones (como WXP, Outlook, Managed Browser, Yammer) para integrar el SDK de aplicaciones de Intune para iOS. Sin esto, la configuración de código de acceso no se aplica correctamente en las aplicaciones de destino. Como las aplicaciones seguirán esta integración de manera gradual, el comportamiento entre el PIN numérico y el código de acceso se cambia temporalmente para el usuario final y requiere una aclaración importante. Para la versión de octubre de 2017 de Intune, el comportamiento es el siguiente...
+  4. **¿Por qué tengo que establecer un PIN dos veces en las aplicaciones del mismo publicador?**
+MAM (en iOS) permite actualmente un PIN de nivel de aplicación con caracteres alfanuméricos y especiales (llamado "código de acceso"), que requiere la participación de aplicaciones (como WXP, Outlook, Managed Browser, Yammer) para integrar el SDK de aplicaciones de Intune para iOS. Sin esto, la configuración de código de acceso no se aplica correctamente en las aplicaciones de destino. Se trata de una característica publicada en el SDK de Intune para iOS v. 7.1.12. <br> Para admitir esta característica y garantizar la compatibilidad con versiones anteriores de los SDK de Intune para iOS, todos los PIN (ya sean numéricos o un código de acceso) en 7.1.12+ se tratan por separado a partir del PIN numérico en versiones anteriores del SDK. Por lo tanto, si un dispositivo tiene aplicaciones con el SDK de Intune para iOS en versiones anteriores a 7.1.12 Y posteriores a 7.1.12 del mismo publicador, será necesario configurar dos PIN. <br><br> Dicho esto, los dos PIN (para cada aplicación) no están relacionados de ninguna manera, es decir, deben cumplir la directiva de protección de aplicaciones correspondiente a la aplicación. Por lo tanto, *solo* si las aplicaciones A y B tienen las mismas directivas aplicadas (con respecto a los PIN), el usuario podrá configurar dos veces el mismo PIN. <br><br> Este comportamiento es específico para el PIN en aplicaciones de iOS que ya están habilitadas con la Administración de aplicaciones móviles de Intune. Con el tiempo, a medidas que las aplicaciones adoptan las versiones posteriores del SDK de Intune para iOS, el hecho de tener que establecer un PIN dos veces en las aplicaciones del mismo editor dejará de ser un problema importante. Vea la nota a continuación para obtener un ejemplo.
 
-Las aplicaciones que
-1. tienen el mismo editor de aplicaciones
-2. tienen un PIN de código de acceso de destino a través de la consola y 
-3. adoptaron el SDK con esta característica (v 7.1.12+) podrán compartir el código de acceso entre estas aplicaciones. 
-
-Las aplicaciones que
-1. tienen el mismo editor de aplicaciones
-2. tienen un PIN numérico de destino a través de la consola podrán compartir el PIN numérico entre estas aplicaciones. 
+>[!NOTE]
+> Por ejemplo, si la aplicación A se compila con una versión anterior a 7.1.12 y aplicación B se compila con una versión mayor o igual a 7.1.12 del mismo editor, el usuario final deberá configurar por separado los PIN para A y B si ambos se instalan en un dispositivo iOS. <br> Si una aplicación C con la versión 7.1.9 del SDK está instalada en el dispositivo, compartirá el mismo PIN que la aplicación A. <br> Una aplicación D compilada con 7.1.14 compartirá el mismo PIN que la aplicación B. <br> Si solo se instalan las aplicaciones A y C se instalan en un dispositivo, tendrá que configurarse un PIN. Esto mismo se aplica si solo se instalan las aplicaciones B y D en un dispositivo.
 
 **¿Qué sucede con el cifrado?** Los administradores de TI pueden implementar una directiva de protección de aplicaciones que requiere cifrar los datos de aplicaciones. Como parte de la directiva, el administrador de TI también puede especificar cuándo se cifra el contenido.
 
@@ -146,7 +140,7 @@ Las aplicaciones que
 
 **Puedo usar la extensión de recursos compartidos de iOS para abrir los datos profesionales o educativos en aplicaciones no administradas, incluso con la directiva de transferencia de datos establecida en "Solo aplicaciones administradas" o "Ninguna aplicación". ¿No es esto una pérdida de datos?** La directiva de protección de aplicaciones de Intune no puede controlar la extensión de recursos compartidos de iOS sin administrar el dispositivo. Por lo tanto, Intune _**cifra los datos "corporativos" antes de compartirlos fuera de la aplicación**_. Puede validar esto intentando abrir el archivo "corporativo" fuera de la aplicación administrada. El archivo debe estar cifrado y no debe poder abrirse fuera de la aplicación administrada.
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 - [Opciones de configuración de directiva de administración de aplicaciones móviles de Android en Microsoft Intune](../deploy-use/android-mam-policy-settings.md)
 - [Opciones de configuración de directiva de administración de aplicaciones móviles iOS](../deploy-use/ios-mam-policy-settings.md)
 - [Validar la configuración de administración de aplicaciones móviles](../deploy-use/validate-mobile-application-management.md)

@@ -16,17 +16,17 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1c4813649092dd12b6be2c07b900d6c1af957bcb
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 13ad914f076f00d1a505510b726f84645ba22cc1
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="how-to-set-the-amount-of-time-before-your-android-device-locks-its-screen"></a>Cómo establecer el período de tiempo antes de que el dispositivo Android bloquee la pantalla
 
 Para volver a conectar con su trabajo, deberá establecer el tiempo de espera de la contraseña en el dispositivo siguiendo los pasos para el tipo de dispositivo que tiene.
 
-## <a name="native-non-samsung-knox-device"></a>Dispositivo nativo (distinto a Samsung KNOX)
+## <a name="native-non-samsung-knox-device"></a>Dispositivo nativo (distinto a Samsung Knox)
 
 1.  En el dispositivo, en **Configuración**, toque **Seguridad** &gt; **Automatically Lock**  (Bloqueo automático) (aparece como **Lock phone after** [Bloquear teléfono tras] en algunos dispositivos).
 
@@ -34,7 +34,7 @@ Para volver a conectar con su trabajo, deberá establecer el tiempo de espera de
 
 2.  Seleccione el valor de tiempo de espera de la contraseña.
 
-## <a name="samsung-knox-device"></a>Dispositivo Samsung KNOX
+## <a name="samsung-knox-device"></a>Dispositivo Samsung Knox
 
 1.  En el dispositivo, en **Configuración** , toque **Pantalla de bloqueo y seguridad** &gt; **bloqueo automático** .
 

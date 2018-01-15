@@ -3,10 +3,10 @@ title: Integrar Zimperium con Intune
 titleSuffix: Intune on Azure
 description: Integrar Intune con Zimperium
 keywords: 
-author: andredm7
-ms.author: andredm
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.date: 09/06/2017
+ms.date: 12/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,20 +15,20 @@ ms.assetid: 363fd280-1865-4a61-855b-eb75c3c62753
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1b4adb2db14c2e1c83be8e7b3644944c1910cb97
-ms.sourcegitcommit: d434dfab7ef7a6c4082d675717fa22d5581b4f51
+ms.openlocfilehash: 515f99f694a9125d60bb9210becc6722bfb9e24f
+ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2017
+ms.lasthandoff: 12/30/2017
 ---
 # <a name="integrate-zimperium-with-intune"></a>Integrar Zimperium con Intune
 
-Debe seguir los pasos siguientes para integrar la solución Mobile Threat Defense de Zimperium con Intune.
+Complete estos pasos para integrar la solución Zimperium Mobile Threat Defense con Intune.
 
 ## <a name="before-you-begin"></a>Antes de comenzar
 
 > [!NOTE]
-> Estos pasos se deben seguir en la [consola MTD de Zimperium](https://staging2-console.zimperium.com).
+> Los pasos siguientes debe completarlos en la [consola Zimperium MTD](https://staging2-console.zimperium.com).
 
 Antes de iniciar el proceso de integración de Zimperium con Intune, asegúrese de que dispone de lo siguiente:
 
@@ -48,7 +48,7 @@ Antes de iniciar el proceso de integración de Zimperium con Intune, asegúrese 
 
 ### <a name="zimperium-app-authorization"></a>Autorización de la aplicación Zimperium
 
-El proceso de autorización de la aplicación Zimperium consta de los siguientes pasos:
+El proceso de autorización de la aplicación Zimperium es el siguiente:
 
 -   Permitir que el servicio de Zimperium comunique a Intune la información relacionada con el estado de mantenimiento del dispositivo.
 
@@ -68,14 +68,14 @@ El proceso de autorización de la aplicación Zimperium consta de los siguientes
 
 4.  Seleccione **Add MDM** (Agregar MDM) y, luego, seleccione **Microsoft Intune** en la lista **MDM provider** (Proveedor MDM).
 
-5.  Cuando haya establecido Microsoft Intune como servicio MDM, aparecerá la ventana **Microsoft Intune Configuration** (Configuración de Microsoft Intune). Seleccione la opción **Add Azure Active Directory** (Agregar Azure Active Directory) para todas las opciones, **Zimperium zConsole** (consola zConsole de Zimperium) y **zIPS iOS and Android apps** (aplicaciones zIPS para iOS y Android), para autorizar a Zimperium para que se comunique con Intune y Azure AD mediante el inicio de sesión único de Azure AD.
+5.  Una vez que haya establecido Microsoft Intune como servicio MDM, aparecerá la ventana **Microsoft Intune Configuration** (Configuración de Microsoft Intune). Seleccione la opción **Add Azure Active Directory** (Agregar Azure Active Directory) para todas las opciones, **Zimperium zConsole** (consola zConsole de Zimperium) y **zIPS iOS and Android apps** (aplicaciones zIPS para iOS y Android), para autorizar a Zimperium para que se comunique con Intune y Azure AD mediante el inicio de sesión único de Azure AD.
 
     > [!IMPORTANT]
     > Debe agregar la consola zConsole de Zimperium y las aplicaciones zIPS para iOS y Android para completar el proceso de integración con Intune.
 
 6.  Seleccione **Accept** (Aceptar) para autorizar a la aplicación de Zimperium que se comunique con Intune y con Azure Active Directory.
 
-7.  Una vez agregadas a Azure AD la consola **zConsole de Zimperium** y las **aplicaciones zIPS para iOS y Android**, debe agregar los grupos de seguridad de Azure AD para que Zimperium pueda sincronizar el grupo de seguridad de Azure AD con su servicio.
+7.  Una vez agregadas a Azure AD la consola **zConsole de Zimperium** y las **aplicaciones zIPS para iOS y Android**, agregue los grupos de seguridad de Azure AD para que Zimperium pueda sincronizar el grupo de seguridad de Azure AD con su servicio.
 
 8.  Seleccione **Finish** (Finalizar) para guardar la configuración e iniciar la primera sincronización de grupo de seguridad de Azure AD.
 

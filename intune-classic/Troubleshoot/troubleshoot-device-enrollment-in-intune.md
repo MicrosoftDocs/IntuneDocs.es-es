@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2ec41724eacc4abca994b1dadff6e6d9df63c74d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 50adfb13c619f81a8429c46e798b7f78acf3217e
+ms.sourcegitcommit: 229f9bf89efeac3eb3d28dff01e9a77ddbf618eb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Solución de problemas con la inscripción de dispositivos en Intune
 
@@ -37,6 +37,12 @@ Antes de empezar a solucionar problemas, compruebe que ha configurado Intune cor
 -   [Configurar la administración de dispositivos Windows](/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune)
 -   [Configurar la administración de dispositivos Android](/intune-classic/deploy-use/set-up-android-management-with-microsoft-intune). No se necesitan más pasos.
 -   [Configurar la administración de dispositivos Android for Work](/intune-classic/deploy-use/set-up-android-for-work)
+
+También puede asegurarse de que la hora y fecha en el dispositivo del usuario están establecidas correctamente:
+
+1. Reinicie el dispositivo.
+2. Asegúrese de que la fecha y hora se establecen cerca de los estándares de GMT (+ o - 12 horas) con respecto a la zona horaria del usuario final.
+3. Desinstale y vuelva a instalar el Portal de empresa de Intune (si procede).
 
 Los usuarios de dispositivos administrados pueden recopilar registros de inscripción y diagnóstico para que usted pueda revisarlos. Aquí se proporcionan instrucciones de usuario para recopilar registros:
 
@@ -229,27 +235,29 @@ Si no funciona la solución 2, pida a los usuarios que sigan estos pasos para qu
 
 **Solución 1**:
 
-Pídale a los usuarios que sigan las instrucciones que aparecen en [El dispositivo no tiene un certificado necesario](/intune-user-help/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator). Si el error sigue apareciendo después de que los usuarios siguen las instrucciones, intente con la solución 2.
+El usuario podría ser capaz de recuperar el certificado que falta siguiendo las instrucciones de [El dispositivo no tiene un certificado necesario](/intune-user-help/your-device-is-missing-a-required-certificate-android#your-device-is-missing-a-certificate-required-by-your-it-administrator). Si el error persiste, pruebe la solución 2.
 
 **Solución 2**:
 
-Si los usuarios siguen viendo el error de certificado faltante después de ingresar las credenciales corporativas y de ser redirigido a la experiencia de inicio de sesión federado, es posible que falte un certificado intermedio en el servidor de Servicios de federación de Active Directory (AD FS).
+Si los usuarios siguen viendo el error de certificado faltante después de escribir las credenciales corporativas y de ser redirigidos al inicio de sesión federado, es posible que falte un certificado intermedio en el servidor de Servicios de federación de Active Directory (AD FS).
 
-El error de certificado se genera porque los dispositivos Android requieren incluir certificados intermedios en un script [hello de SSL de servidor](https://technet.microsoft.com/library/cc783349.aspx), pero actualmente una instalación de servidor Proxy de AD FS o un servidor AD FS predeterminado solo envía el certificado SSL del servicio de AD FS en la respuesta del script hello del servidor SSL a un script hello de cliente de SSL.
+El error de certificado se produce porque los dispositivos Android requieren certificados intermedios que se incluirán en una instancia de [hola de SSL de servidor](https://technet.microsoft.com/library/cc783349.aspx). Actualmente, un servidor AD FS predeterminado o un servidor proxy WAP - AD FS envía solo el certificado SSL del servicio AD FS en la respuesta de hola de SSL de servidor a un hola de SSL de cliente.
 
 Para corregir el problema, importe los certificados a los certificados personales de equipos en los servidores proxy o el servidor AD FS de la manera siguiente:
 
-1.  En los servidores proxy y ADFS, inicie la consola de Administración de certificados del equipo local; para ello, haga clic con el botón derecho en el botón **Inicio**, haga clic en **Ejecutar** y escriba **certlm.msc**.
-2.  Expanda **Personal** y seleccione **Certificados**.
+1.  En los servidores proxy y AD FS, haga clic en **Inicio** > **Ejecutar** > **certlm.msc**. De este modo se inicia la consola de administración de certificados de la máquina local.
+2.  Expanda **Personal** y elija **Certificados**.
 3.  Busque el certificado correspondiente a la comunicación del servicio AD FS (un certificado firmado públicamente) y haga doble clic para ver sus propiedades.
-4.  Seleccione la pestaña **Ruta de certificación** para ver los certificados primarios del certificado.
-5.  En cada certificado primario, seleccione **Ver certificado**.
-6.  Seleccione la pestaña **Detalles** y elija **Copiar en archivo...**.
-7.  Siga las instrucciones del asistente para exportar o guardar la clave pública del certificado en la ubicación de archivo deseada.
-8.  Importe los certificados primarios que se exportaron en el paso 3 a la carpeta Equipo local\Personal\Certificados; para ello, haga clic con el botón derecho en **Certificados**, seleccione **Todas las tareas** > **Importar** y, luego, siga las instrucciones del asistente para importar los certificados.
-9.  Reinicie los servidores AD FS.
-10. Repita los pasos anteriores en todos los servidores proxy y de AD FS.
-Ahora, el usuario podrá iniciar sesión en el Portal de empresa en el dispositivo Android.
+4.  Elija la pestaña **Ruta de certificación** para ver los certificados primarios del certificado.
+5.  En cada certificado primario, elija **Ver certificado**.
+6.  En la pestaña **Detalles**, elija **Copiar en archivo....**.
+7.  Siga las instrucciones del asistente para exportar o guardar la clave pública del certificado primario en la ubicación de archivo deseada.
+8.  Haga clic derecho en **Certificados** > **Todas las tareas** > **Importar**.
+9.  Siga el asistente para importar los certificados primarios en **Equipo local\Personal\Certificados**.
+10. Reinicie los servidores AD FS.
+11. Repita los pasos anteriores en todos los servidores proxy y de AD FS.
+
+Para comprobar que el certificado se ha instalado correctamente, puede utilizar la herramienta de diagnóstico disponible en [https://www.digicert.com/help/](https://www.digicert.com/help/). En el cuadro **Dirección del servidor**, escriba el FQDN de su servidor ADFS (esto es, sts.contso.com) y haga clic en **Comprobar servidor**.
 
 **Para validar que el certificado se instaló correctamente**:
 
@@ -273,7 +281,7 @@ En la siguiente tabla se muestran los errores que los usuarios finales pueden en
 |APNSCertificateNotValid|Existe un problema con el certificado que permite al dispositivo móvil comunicarse con la red de empresa.<br /><br />|Apple Push Notification Service (APNs) proporciona un canal para llegar a dispositivos iOS inscritos. Si no se han realizado los pasos para obtener un certificado de APNs o este ha expirado, los intentos de inscripción producirán un error y aparecerá este mensaje.<br /><br />Consulte la información sobre cómo configurar usuarios en [Sincronizar Active Directory y agregar usuarios a Intune](/intune/users-permissions-add) y [Organizar usuarios y dispositivos](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5).|
 |AccountNotOnboarded|Existe un problema con el certificado que permite al dispositivo móvil comunicarse con la red de empresa.<br /><br />|Apple Push Notification Service (APNs) proporciona un canal para llegar a dispositivos iOS inscritos. Si no se han realizado los pasos para obtener un certificado de APNs o este ha expirado, los intentos de inscripción producirán un error y aparecerá este mensaje.<br /><br />Para más información, consulte [Configurar la administración de dispositivos iOS y Mac con Microsoft Intune](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune).|
 |DeviceTypeNotSupported|Es posible que el usuario haya intentado inscribirse con un dispositivo que no sea iOS. No se admite el tipo de dispositivo móvil que intenta inscribir.<br /><br />Confirme que el dispositivo ejecuta iOS versión 8.0 o posterior.<br /><br />|Compruebe que el dispositivo del usuario ejecute la versión 8.0 de iOS o una posterior.|
-|UserLicenseTypeInvalid|No se puede inscribir el dispositivo porque la cuenta del usuario todavía no es miembro de un grupo de usuarios requerido.<br /><br />|Antes de que los usuarios puedan inscribir los dispositivos, deben ser miembros del grupo de usuarios correcto. Este mensaje significa que tienen el tipo de licencia incorrecto para la entidad de administración de dispositivos móviles designada. Por ejemplo, si Intune se ha designado como la entidad de administración de dispositivos móviles y se usa una licencia de System Center 2012 R2 Configuration Manager, verá este error.<br /><br />Revise lo siguiente para más información:<br /><br />Consulte [Configurar la administración de iOS y Mac con Microsoft Intune](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) y la información sobre cómo configurar usuarios en [Sincronizar Active Directory y agregar usuarios a Intune](/intune/users-permissions-add) y [Organizar usuarios y dispositivos](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5).|
+|UserLicenseTypeInvalid|No se puede inscribir el dispositivo porque la cuenta del usuario todavía no es miembro de un grupo de usuarios requerido.<br /><br />|Antes de que los usuarios puedan inscribir los dispositivos, deben ser miembros del grupo de usuarios correcto. Este mensaje significa que tienen el tipo de licencia incorrecto para la entidad de administración de dispositivos móviles designada. Por ejemplo, si se ha designado Intune como entidad de administración de dispositivos móviles y el usuario usa una licencia de System Center 2012 R2 Configuration Manager, recibirá este error.<br /><br />Revise lo siguiente para más información:<br /><br />Consulte [Configurar la administración de iOS y Mac con Microsoft Intune](/Intune/Deploy-use/set-up-ios-and-mac-management-with-microsoft-intune) y la información sobre cómo configurar usuarios en [Sincronizar Active Directory y agregar usuarios a Intune](/intune/users-permissions-add) y [Organizar usuarios y dispositivos](/Intune/Get-Started/start-with-a-paid-subscription-to-microsoft-intune-step-5).|
 |MdmAuthorityNotDefined|La entidad de administración de dispositivos móviles no se ha definido.<br /><br />|La entidad de administración de dispositivos móviles no se ha designado en Intune.<br /><br />Revise el primer elemento de la sección "Paso 6: inscribir dispositivos móviles e instalar una aplicación" en [Empezar a trabajar con una versión de prueba de 30 días de Microsoft Intune](/Intune/Understand-explore/get-started-with-a-30-day-trial-of-microsoft-intune).|
 
 ### <a name="devices-are-inactive-or-the-admin-console-cannot-communicate-with-them"></a>Los dispositivos están inactivos o la consola de administración no puede comunicarse con ellos
