@@ -6,51 +6,51 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 08/23/2017
+ms.date: 1/8/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 89f2d806-2e97-430c-a9a1-70688269627f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cf39d06bb033f15a667a88f7628bcfc1401a275e
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 849c5c45429394e92b993a57c1e2345b20f78f0a
+ms.sourcegitcommit: 95a0553531133f8d926afbecd0aaf91f64a63162
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/08/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos Windows 10 y versiones posteriores en Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>General
--   **Captura de pantalla (solo móviles)**: permite que el usuario capture la pantalla del dispositivo como imagen.
--   **Copiar y pegar (solo móviles)**: permite acciones de copiar y pegar entre aplicaciones del dispositivo.
--   **Cancelación manual de la suscripción**: permite al usuario eliminar manualmente la cuenta del área de trabajo desde el dispositivo.
--   **Instalación manual del certificado raíz (solo móviles)**: impide que el usuario instale manualmente certificados raíz y certificados CAP intermedios.
--   **Envío de datos de diagnóstico**: los valores posibles son:
+- **Captura de pantalla (solo móviles)**: permite que el usuario capture la pantalla del dispositivo como imagen.
+- **Copiar y pegar (solo móviles)**: permite acciones de copiar y pegar entre aplicaciones del dispositivo.
+- **Cancelación manual de la suscripción**: permite al usuario eliminar manualmente la cuenta del área de trabajo desde el dispositivo.
+- **Instalación manual del certificado raíz (solo móviles)**: impide que el usuario instale manualmente certificados raíz y certificados CAP intermedios.
+- **Envío de datos de diagnóstico**: los valores posibles son:
     - **Ninguno**: no se envían datos a Microsoft.
     - **Básico**: se envía información limitada a Microsoft
     - **Mejorado**: se envían datos de diagnóstico mejorados a Microsoft.
     - **Completo** : envía los mismos datos que Mejorado, además de datos adicionales sobre el estado del dispositivo.
--   **Cámara**: permite o bloquea el uso de la cámara en el dispositivo.
--   **Sincronización de archivos de OneDrive**: bloquea la sincronización de archivos de OneDrive en el dispositivo.
--   **Almacenamiento extraíble**: especifica si se pueden usar dispositivos de almacenamiento externo, como tarjetas SD, con el dispositivo.
--   **Geolocation** (Geolocalización): especifica si el dispositivo puede usar la información de servicios de ubicación.
--   **Conexión compartida**: permite el uso compartido de una conexión a Internet en el dispositivo.
--   **Restablecimiento del teléfono**: controla si el usuario puede restablecer su dispositivo a la configuración de fábrica.
--   **Conexión USB (solo móviles)**: controla si los dispositivos pueden tener acceso a dispositivos de almacenamiento externo a mediante una conexión USB.
--   **Modo antirrobo (solo móviles)**: permite habilitar el modo antirrobo de Windows.
--   **Cortana**: habilita o deshabilita el asistente de voz de Cortana.
--   **Grabación de voz (solo móviles)**: permite o bloquea el uso de la grabadora de voz del dispositivo.
--   **Modificación del nombre del dispositivo**: evita que el usuario final cambie el nombre del dispositivo (solo para Windows 10 Mobile)
--   **Agregar paquetes de aprovisionamiento**: bloquea el agente de configuración de tiempo de ejecución que instala paquetes de aprovisionamiento.
--   **Quitar paquetes de aprovisionamiento**: bloquea el agente de configuración de tiempo de ejecución que quita paquetes de aprovisionamiento.
--   **Detección de dispositivos**: bloquea la detección de un dispositivo por parte de otros dispositivos.
--   **Conmutador de tareas (solo móviles)**: bloquea el conmutador de tareas en el dispositivo.
--   **Cuadro de diálogo de error de tarjeta SIM (solo móviles)**: impide que un mensaje de error se muestre en el dispositivo si no se detecta una tarjeta SIM.
+- **Cámara**: permite o bloquea el uso de la cámara en el dispositivo.
+- **Sincronización de archivos de OneDrive**: bloquea la sincronización de archivos de OneDrive en el dispositivo.
+- **Almacenamiento extraíble**: especifica si se pueden usar dispositivos de almacenamiento externo, como tarjetas SD, con el dispositivo.
+- **Geolocation** (Geolocalización): especifica si el dispositivo puede usar la información de servicios de ubicación.
+- **Conexión compartida**: permite el uso compartido de una conexión a Internet en el dispositivo.
+- **Restablecimiento del teléfono**: controla si el usuario puede restablecer su dispositivo a la configuración de fábrica.
+- **Conexión USB (solo móviles)**: controla si los dispositivos pueden tener acceso a dispositivos de almacenamiento externo a mediante una conexión USB.
+- **Modo antirrobo (solo móviles)**: permite habilitar el modo antirrobo de Windows.
+- **Cortana**: habilita o deshabilita el asistente de voz de Cortana.
+- **Grabación de voz (solo móviles)**: permite o bloquea el uso de la grabadora de voz del dispositivo.
+- **Modificación del nombre del dispositivo**: evita que el usuario final cambie el nombre del dispositivo (solo para Windows 10 Mobile)
+- **Agregar paquetes de aprovisionamiento**: bloquea el agente de configuración de tiempo de ejecución que instala paquetes de aprovisionamiento.
+- **Quitar paquetes de aprovisionamiento**: bloquea el agente de configuración de tiempo de ejecución que quita paquetes de aprovisionamiento.
+- **Detección de dispositivos**: bloquea la detección de un dispositivo por parte de otros dispositivos.
+- **Conmutador de tareas (solo móviles)**: bloquea el conmutador de tareas en el dispositivo.
+- **Cuadro de diálogo de error de tarjeta SIM (solo móviles)**: impide que un mensaje de error se muestre en el dispositivo si no se detecta una tarjeta SIM.
+<!--- **Automatic redeployment** - Allows users with administrative rights to delete all user data and settings using **CTRL + Win + R** at the device lock screen. The device is automatically reconfigured and reenrolled into management. -->
 
 
 ## <a name="password"></a>Contraseña
@@ -68,19 +68,68 @@ Para los dispositivos que ejecutan Windows 10 Mobile: si el inicio de sesión fa
 
 ## <a name="personalization"></a>Personalization
 
--   **Dirección URL de imagen de fondo de escritorio (solo escritorio)**: especifica la dirección URL de una imagen en formato PNG, JPG o JPEG que quiere usar como fondo de escritorio de Windows. Los usuarios no podrán cambiar este valor.
+- **Dirección URL de imagen de fondo de escritorio (solo escritorio)**: especifica la dirección URL de una imagen en formato PNG, JPG o JPEG que quiere usar como fondo de escritorio de Windows. Los usuarios no pueden cambiar esto.
 
 ## <a name="privacy"></a>Privacidad
 
 -   **Personalización de entrada**: no permite el uso de servicios de voz basados en la nube para Cortana, Dictado o aplicaciones de Microsoft Store. Si permite estos servicios, Microsoft puede recopilar datos de voz para mejorar el servicio.
 -   **Aceptación automática de los mensajes de consentimiento del usuario sobre emparejamiento y privacidad**: permite que Windows acepte automáticamente los mensajes de consentimiento sobre emparejamiento y privacidad al ejecutar las aplicaciones.
 
+Puede definir la información a la que pueden tener acceso todas las aplicaciones del dispositivo. Puede definir excepciones para cada aplicación mediante **excepciones de privacidad de cada aplicación**.
+
+### <a name="exceptions"></a>Excepciones
+
+- **Información de la cuenta**: define si esta aplicación puede tener acceso al nombre de usuario, las imágenes u otra información de contacto.
+- **Aplicaciones en segundo plano**: define si esta aplicación puede ejecutarse en segundo plano.
+- **Calendario**: define si esta aplicación puede tener acceso al calendario.
+- **Historial de llamadas**: define si esta aplicación puede tener acceso al historial de llamadas.
+- **Cámara**: define si esta aplicación puede tener acceso a la cámara.
+- **Contactos**: define si esta aplicación puede tener acceso a los contactos.
+- **Correo electrónico**: define si esta aplicación puede tener acceso al correo electrónico.
+- **Ubicación**: define si esta aplicación puede tener acceso a información de ubicación.
+- **Mensajería**: define si esta aplicación puede leer o enviar mensajes de texto o MMS.
+- **Micrófono**: define si esta aplicación puede usar el micrófono.
+- **Movimiento**: define si esta aplicación puede tener acceso a información de movimiento.
+- **Notificaciones**: define si esta aplicación puede tener acceso a las notificaciones.
+- **Teléfono**: define si esta aplicación puede tener acceso al teléfono.
+- **Radios**: algunas aplicaciones usan radios (por ejemplo, Bluetooth) en el dispositivo para enviar y recibir datos y necesitan activar o desactivar estas radios. Define si esta aplicación puede controlar estas radios.
+- **Tareas**: define si esta aplicación puede tener acceso a las tareas.
+- **Dispositivos de confianza**: define si esta aplicación puede usar dispositivos de confianza (hardware ya conectado o que se proporciona con este PC, tableta o teléfono). Por ejemplo: televisores, proyectores, etc.
+- **Comentarios y diagnóstico**: define si esta aplicación puede tener acceso a la información de diagnóstico.
+- **Sincronización con dispositivos**: define si esta aplicación puede compartir y sincronizar información automáticamente con dispositivos inalámbricos que no se emparejan explícitamente con este PC, tableta o teléfono.
+
+## <a name="per-app-privacy-exceptions"></a>Excepciones de privacidad para cada aplicación
+
+Puede agregar aplicaciones que deben tener un comportamiento de privacidad diferente del definido en "Privacidad determinada".
+
+- **Nombre del paquete**: nombre de la familia del paquete de aplicaciones.
+- **Nombre de la aplicación**: el nombre de la aplicación.
+
+### <a name="exceptions"></a>Excepciones
+
+- **Información de la cuenta**: define si esta aplicación puede tener acceso al nombre de usuario, las imágenes u otra información de contacto.
+- **Aplicaciones en segundo plano**: define si esta aplicación puede ejecutarse en segundo plano.
+- **Calendario**: define si esta aplicación puede tener acceso al calendario.
+- **Historial de llamadas**: define si esta aplicación puede tener acceso al historial de llamadas.
+- **Cámara**: define si esta aplicación puede tener acceso a la cámara.
+- **Contactos**: define si esta aplicación puede tener acceso a los contactos.
+- **Correo electrónico**: define si esta aplicación puede tener acceso al correo electrónico.
+- **Ubicación**: define si esta aplicación puede tener acceso a información de ubicación.
+- **Mensajería**: define si esta aplicación puede leer o enviar mensajes de texto o MMS.
+- **Micrófono**: define si esta aplicación puede usar el micrófono.
+- **Movimiento**: define si esta aplicación puede tener acceso a información de movimiento.
+- **Notificaciones**: define si esta aplicación puede tener acceso a las notificaciones.
+- **Teléfono**: define si esta aplicación puede tener acceso al teléfono.
+- **Radios**: algunas aplicaciones usan radios (por ejemplo, Bluetooth) en el dispositivo para enviar y recibir datos y necesitan activar o desactivar estas radios. Define si esta aplicación puede controlar estas radios.
+- **Tareas**: define si esta aplicación puede tener acceso a las tareas.
+- **Dispositivos de confianza**: define si esta aplicación puede usar dispositivos de confianza (hardware ya conectado o que se proporciona con este PC, tableta o teléfono). Por ejemplo: televisores, proyectores, etc.
+- **Comentarios y diagnóstico**: define si esta aplicación puede tener acceso a la información de diagnóstico.
+- **Sincronización con dispositivos**: define si esta aplicación puede compartir y sincronizar información automáticamente con dispositivos inalámbricos que no se emparejan explícitamente con este PC, tableta o teléfono.
 
 ## <a name="locked-screen-experience"></a>Experiencia de pantalla bloqueada
 
-
--   **Notificaciones del centro de actividades (solo móviles)**: permite que las notificaciones del centro de actividades aparezcan en la pantalla de bloqueo del dispositivo (solo Windows 10 Mobile).
--   **Dirección URL de imagen de pantalla bloqueada (solo escritorio)**: especifica la dirección URL de una imagen en formato PNG, JPG o JPEG que se usará como papel tapiz de la pantalla de bloqueo de Windows. Los usuarios no podrán cambiar este valor.
+- **Notificaciones del centro de actividades (solo móviles)**: permite que las notificaciones del centro de actividades aparezcan en la pantalla de bloqueo del dispositivo (solo Windows 10 Mobile).
+- **Dirección URL de imagen de pantalla bloqueada (solo escritorio)**: especifica la dirección URL de una imagen en formato PNG, JPG o JPEG que se usará como papel tapiz de la pantalla de bloqueo de Windows. Los usuarios no pueden cambiar esto.
 -   **Tiempo de espera de la pantalla configurable por el usuario (solo dispositivos móviles)**: permite que los usuarios configuren la cantidad de tiempo 
 -   **Cortana en pantalla bloqueada (solo escritorio)**: no permite que el usuario interactúe con Cortana cuando el dispositivo está en la pantalla de bloqueo (solo para equipos de escritorio de Windows 10).
 -   **Notificaciones del sistema en pantalla bloqueada**: impide que los mensajes de alerta se muestren en la pantalla de bloqueo del dispositivo.
@@ -131,13 +180,13 @@ Para los dispositivos que ejecutan Windows 10 Mobile: si el inicio de sesión fa
 -   **Borrar datos de navegación al salir**: borra el historial y los datos de navegación cuando el usuario sale de Edge.
 -   **Recopilación de datos para iconos dinámicos**: impide que Windows recopile información de iconos dinámicos cuando los usuarios anclan un sitio al menú de inicio de Edge.
 
-## <a name="edge-browser-smartscreen"></a>SmartScreen del explorador de Edge
+## <a name="windows-defender-smart-screen"></a>SmartScreen de Windows Defender
 
--   **SmartScreen**: habilita o deshabilita SmartScreen que bloquea los sitios web fraudulentos.
--   **Invalidación de avisos de SmartScreen**: permite que el usuario final omita las advertencias de filtro de SmartScreen sobre los sitios web potencialmente malintencionados.
--   **Invalidación de avisos de SmartScreen para archivos**: permite que el usuario final omita las advertencias de filtro de SmartScreen sobre la descarga de archivos potencialmente malintencionados.
+- **SmartScreen para Microsoft Edge**: permite a SmartScreen de Edge el acceso al sitio y las descargas de archivos.
+- **Acceso a sitio malintencionado**: impide que los usuarios omitan las advertencias del filtro SmartScreen de Windows Defender y no permite que vayan al sitio.
+- **Descarga de archivos no comprobados**: impide que los usuarios omitan las advertencias del filtro SmartScreen de Windows Defender y no permite que descarguen los archivos no comprobados.
 
-## <a name="search"></a>Búsqueda
+## <a name="search"></a>Buscar
 - **Búsqueda segura (solo móviles)**: controla cómo Cortana filtra contenido para adultos en los resultados de la búsqueda. Puede seleccionar **Strict** (Estricto), **Moderate** (Moderado) o permitir que el usuario final elija su propia configuración.
 
 ## <a name="cloud-and-storage"></a>Nube y almacenamiento
@@ -182,9 +231,30 @@ Para los dispositivos que ejecutan Windows 10 Mobile: si el inicio de sesión fa
     -   **Privacidad**: bloquea el acceso al área de privacidad de la aplicación de configuración.
     -   **Actualización y seguridad**: bloquea el acceso al área de actualizaciones y seguridad de la aplicación de configuración.
 
-## <a name="kiosk"></a>Pantalla completa
+## <a name="start"></a>Start
 
--   **Pantalla completa**: identifica el tipo de [pantalla completa](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) que la directiva admite.  Las opciones son:
+- **Desanclar aplicaciones de la barra de tareas**: impide que el usuario desancle aplicaciones del menú Inicio.
+- **Documentos en Inicio**: oculta o muestra la carpeta Documentos en el menú Inicio de Windows.
+- **Descargas en Inicio**: oculta o muestra la carpeta Descargas en el menú Inicio de Windows.
+- **Explorador de archivos en Inicio**: oculta o muestra la aplicación Explorador de archivos en el menú Inicio de Windows.
+- **Grupo Hogar en Inicio**: oculta o muestra la carpeta Grupo Hogar en el menú Inicio de Windows.
+- **Música en Inicio**: oculta o muestra la carpeta Música en el menú Inicio de Windows.
+- **Red en Inicio**: oculta o muestra la carpeta Red en el menú Inicio de Windows.
+- **Carpeta Personal en Inicio**: oculta o muestra la carpeta Personal en el menú Inicio de Windows.
+- **Imágenes en Inicio**: oculta o muestra la carpeta de imágenes en el menú Inicio de Windows.
+- **Configuración en Inicio**: oculta o muestra la aplicación Configuración en el menú Inicio de Windows.
+- **Vídeos en Inicio**: oculta o muestra la carpeta de vídeos en el menú Inicio de Windows.
+
+## <a name="display"></a>Pantalla
+
+- **Activar el ajuste de GDI para las aplicaciones**
+- **Desactivar el ajuste de GDI para las aplicaciones**
+
+  El ajuste de escala de PPP de GDI permite a las aplicaciones que no tienen en cuenta los PPP empezar a tenerlos en cuenta para cada monitor. Especifique las aplicaciones heredadas que tienen activado el ajuste de escala de PPP de GDI. Si el ajuste de escala de PPP de GDI está configurado para activarse y desactivarse en una aplicación, el ajuste de escala estará desactivado para la aplicación.
+
+## <a name="kiosk-preview"></a>Quiosco (versión preliminar)
+
+-   **Pantalla completa**: identifica el tipo de [pantalla completa](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) que la directiva admite. Las opciones son:
 
       - **No configurado** (valor predeterminado): la directiva no habilita una pantalla completa. 
       - **Quiosco con aplicación única**: el perfil habilita el dispositivo como un quiosco con aplicación única.
@@ -192,13 +262,13 @@ Para los dispositivos que ejecutan Windows 10 Mobile: si el inicio de sesión fa
 
     Los quioscos con aplicación única necesitan la siguiente configuración:
 
-      - **Cuenta de usuario**: especifica la cuenta de usuario local (en el dispositivo) o el inicio de sesión de cuenta de Azure AD asociada a la aplicación de pantalla completa.  En el caso de las cuentas unidas a dominios de Azure AD, especifique la cuenta con el formato `domain\\username@tenant.org`.
+      - **Cuenta de usuario**: especifica la cuenta de usuario local (en el dispositivo) o el inicio de sesión de cuenta de Azure AD asociada a la aplicación de pantalla completa. En el caso de las cuentas unidas a dominios de Azure AD, especifique la cuenta con el formato `domain\\username@tenant.org`.
 
          En el caso de los dispositivos en entornos públicos, use cuentas con privilegios mínimos para evitar actividades no autorizadas.  
 
-      - **Identificador de modelo de usuario de la aplicación (AUMID)**: especifica el AUMID de la aplicación de pantalla completa.  Para más información, vea [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Buscar el identificador de modelo de usuario de aplicación de una aplicación instalada).
+      - **Identificador de modelo de usuario de la aplicación (AUMID)**: especifica el AUMID de la aplicación de pantalla completa. Para más información, vea [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Buscar el identificador de modelo de usuario de aplicación de una aplicación instalada).
 
-    Los quioscos con varias aplicaciones requieren una configuración de pantalla completa.  Use el botón **Agregar** para crear una configuración de pantalla completa o seleccionar una ya existente.
+    Los quioscos con varias aplicaciones requieren una configuración específica. Use el botón **Agregar** para crear una configuración de pantalla completa o seleccionar una ya existente.
 
     Las configuraciones de quiosco con varias aplicaciones incluyen las siguientes opciones:
 
@@ -206,11 +276,11 @@ Para los dispositivos que ejecutan Windows 10 Mobile: si el inicio de sesión fa
 
     - Una o varias **aplicaciones de pantalla completa** que constan de lo siguiente:
 
-        - **Tipo de aplicación**, que especifica el tipo de la aplicación de pantalla completa.  Entre los valores compatibles se incluyen:   
+        - **Tipo de aplicación**, que especifica el tipo de la aplicación de quiosco.  Entre los valores compatibles se incluyen:   
 
-            - **Aplicación Win32**: una aplicación de escritorio tradicional  (necesitará el nombre/ruta de acceso completa del archivo ejecutable correspondiente al dispositivo).
+            - **Aplicación Win32**: una aplicación de escritorio tradicional (necesita el nombre/ruta de acceso completa del archivo ejecutable correspondiente al dispositivo).
 
-            - **Aplicación para UWP**: una aplicación Windows universal.  Necesitará el [AUMID de la aplicación](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+            - **Aplicación para UWP**: una aplicación Windows universal. Necesita el [AUMID de la aplicación](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
         - **Identificador de la aplicación**: especifica bien el nombre o ruta de acceso completa del archivo ejecutable (aplicaciones Win32), bien el [AUMID de aplicación](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (aplicaciones para UWP).
 
@@ -218,9 +288,9 @@ Para los dispositivos que ejecutan Windows 10 Mobile: si el inicio de sesión fa
 
     - **Diseño del menú Inicio**: especifica un archivo XML que describe el modo en que las aplicaciones [aparecen en el menú Inicio](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
 
-    - **Usuarios asignados**: especifica una o varias cuentas de usuario asociadas a la configuración de pantalla completa.  La cuenta de usuario puede ser local en el dispositivo o un inicio de sesión de cuenta de Azure AD asociada a la aplicación de pantalla completa.  Especifique cuentas unidas a dominio con el formato `domain\\username@tenant.org`.
+    - **Usuarios asignados**: especifica una o varias cuentas de usuario asociadas a la configuración de pantalla completa. La cuenta de usuario puede ser local en el dispositivo o un inicio de sesión de cuenta de Azure AD asociada a la aplicación de pantalla completa. Especifique cuentas unidas a dominio con el formato `domain\\username@tenant.org`.
 
-## <a name="defender"></a>Defender
+## <a name="windows-defender-antivirus"></a>Antivirus de Windows Defender
 
 -   **Supervisión en tiempo real**: habilita el análisis en tiempo real de malware, spyware y otro software no deseado.
 -   **Supervisión de comportamiento**: permite a Defender comprobar determinados patrones conocidos de actividad sospechosa en los dispositivos.
@@ -256,7 +326,7 @@ Si los archivos de la unidad son de solo lectura, Defender no puede quitar el ma
 
 
 
-## <a name="defender-exclusions"></a>Exclusiones de Defender
+### <a name="windows-defender-antivirus-exclusions"></a>Exclusiones del antivirus de Windows Defender
 
 -   **Archivos y carpetas para excluir de exámenes y protección en tiempo real**: agrega uno o varios archivos y carpetas, como **C:\Path** o **%ProgramFiles%\Path\filename.exe** a la lista de exclusiones. Estos archivos y carpetas no se incluyen en los exámenes en tiempo real ni programados.
 -   **Extensiones de archivo para excluir de exámenes y protección en tiempo real**: agrega una o varias extensiones de archivo, como **jpg** o **txt** a la lista de exclusiones. Los archivos con estas extensiones no se incluyen en los exámenes en tiempo real ni programados.
@@ -294,16 +364,41 @@ Si los archivos de la unidad son de solo lectura, Defender no puede quitar el ma
 - **Proyección en este equipo**: impide que otros dispositivos detecten el equipo para proyección.
 - **Requerir PIN para emparejamiento**: se requiere un PIN cuando se conecta a un dispositivo de proyección.
 
-## <a name="start"></a>Start
+## <a name="cloud-printer"></a>Impresora en la nube
 
-- **Desanclar aplicaciones de la barra de tareas**: impide que el usuario desancle aplicaciones del menú Inicio.
-- **Documentos en Inicio**: oculta o muestra la carpeta Documentos en el menú Inicio de Windows.
-- **Descargas en Inicio**: oculta o muestra la carpeta Descargas en el menú Inicio de Windows.
-- **Explorador de archivos en Inicio**: oculta o muestra la aplicación Explorador de archivos en el menú Inicio de Windows.
-- **Grupo Hogar en Inicio**: oculta o muestra la carpeta Grupo Hogar en el menú Inicio de Windows.
-- **Música en Inicio**: oculta o muestra la carpeta Música en el menú Inicio de Windows.
-- **Red en Inicio**: oculta o muestra la carpeta Red en el menú Inicio de Windows.
-- **Carpeta Personal en Inicio**: oculta o muestra la carpeta Personal en el menú Inicio de Windows.
-- **Imágenes en Inicio**: oculta o muestra la carpeta de imágenes en el menú Inicio de Windows.
-- **Configuración en Inicio**: oculta o muestra la aplicación Configuración en el menú Inicio de Windows.
-- **Vídeos en Inicio**: oculta o muestra la carpeta de vídeos en el menú Inicio de Windows.
+- **Dirección URL de detección de la impresora**: punto de conexión para detectar impresoras en la nube.
+- **Dirección URL de autoridad de acceso a la impresora**: punto de conexión de autenticación para la adquisición de tokens de OAuth.
+- **GUID de aplicación cliente nativa de Azure**: una GUID de una aplicación cliente autorizada para recuperar los tokens de OAuth desde OAuthAuthority.
+- **URI de recurso de servicio de impresión**: URI de recurso de OAuth para el servicio de impresión tal y como está configurado en Azure Portal.
+- **Máximo de impresoras para consultar (solo móvil)**: número máximo de impresoras que se deben consultar desde un punto de conexión de detección.
+- **URI de recurso de servicio de detección de impresora**: URI de recurso de OAuth para el servicio de detección de impresora tal y como está configurado en Azure Portal.
+
+## <a name="reporting-and-telemetry"></a>Informes y telemetría
+
+- **Compartir datos de uso**: seleccione el nivel de envío de datos de diagnóstico.
+- **Servidor proxy de telemetría**
+
+  Especifique el nombre de dominio completo (FQDN) o la dirección IP de un servidor proxy para las solicitudes de Telemetría y experiencias del usuario conectado mediante una conexión de Capa de sockets seguros. El formato de esta configuración es *servidor*:*puerto*. Si se produce un error en el proxy con nombre, o si no hay ningún proxy especificado cuando esta directiva está habilitada, los datos de Telemetría y experiencias del usuario conectado no se transmiten y permanecen en el dispositivo local.
+
+   Formatos de ejemplo:
+
+   IPv4: 192.246.246.106:100<br>
+ IPv6: [2001:4898:4010:4013:95c1:a8b2:953c:c633]:100<br> FQDN: www.contoso.com:345
+
+## <a name="messaging"></a>Mensajería
+
+- **Sincronización de mensajes (solo móvil)**: deshabilita Mensajes en cualquier dispositivo y la copia de seguridad y restauración de los mensajes de texto.
+- **MMS (solo móvil)**: deshabilita la funcionalidad de envío y recepción de MMS en el dispositivo.
+- **RCS (solo móvil)**: deshabilita la funcionalidad de envío o recepción de Rich Communication Services en el dispositivo.
+
+
+
+
+
+
+
+
+
+
+
+

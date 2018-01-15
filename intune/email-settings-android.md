@@ -15,21 +15,21 @@ ms.assetid: 4d3458cc-fcaa-4648-b13f-bf1f0616c1c5
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0c793721cad40ea0f1662ae72ed334b98226c96d
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: adc61e3d6a8b413ca5a03a2fdbc3d2353226040b
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="email-profile-settings-for-android--devices-in-microsoft-intune"></a>Configuración del perfil de correo electrónico para dispositivos Android en Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 Como administrador de Intune, puede crear y asignar configuraciones de correo electrónico a los siguientes dispositivos Android:
-- [Android Samsung KNOX Standard](#android-samsung-knox-standard-email-settings)
+- [Android Samsung Knox Standard](#android-samsung-knox-standard-email-settings)
 - [Android for Work](#android-for-work-email-settings)
 
-## <a name="android-samsung-knox-standard-email-settings"></a>Configuración del correo electrónico de Android Samsung KNOX Standard
+## <a name="android-samsung-knox-standard-email-settings"></a>Configuración del correo electrónico de Android Samsung Knox Standard
 - **Servidor de correo electrónico**: el nombre de host del servidor de Exchange.
 - **Nombre de la cuenta**: el nombre para mostrar de la cuenta de correo electrónico tal y como aparecerá para los usuarios en sus dispositivos.
 - **Atributo de nombre de usuario de AAD**: es el atributo de Active Directory (AD) o Azure AD que se usará para generar el nombre de usuario de este perfil de correo electrónico. Seleccione la **dirección SMTP principal**, como user1@contoso.com, o el **nombre principal de usuario**, como user1@contoso.com.

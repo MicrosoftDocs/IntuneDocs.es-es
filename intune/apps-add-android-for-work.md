@@ -3,8 +3,8 @@ title: "Asignación de aplicaciones a dispositivos Android for Work"
 titlesuffix: Azure portal
 description: "Utilice este tema para sincronizar y después asignar aplicaciones para dispositivos Android for Work desde Google Play for Work Store."
 keywords: 
-author: mattbriggs
-ms.author: mabrigg
+author: erikre
+ms.author: erikre
 manager: angrobe
 ms.date: 06/13/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 803f1475a220e52a0f7d8a41d58f0a5337ff6555
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: f873fa6324bab56ce8233a8a550e2d13fe2fb054
+ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 12/22/2017
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Asignación de aplicaciones para dispositivos Android for Work con Intune
 
@@ -43,7 +43,7 @@ Asegúrese de que ha configurado Intune y Android for Work para que trabajen jun
 3. En la página de la aplicación elegida, seleccione **Aprobar**. En este ejemplo, ha elegido la aplicación Microsoft Excel.<br>
   ![Ejemplo de aprobación de la aplicación](media/approve.png)
 4. Se abre una ventana de la aplicación que le pide que conceda permisos a la aplicación para realizar diversas operaciones. Elija **Aprobar** para continuar.<br>
-  ![Ejemplo de permisos para aprobar la aplicación](media/approve-app-permissions.png)
+  ![Ejemplo de permisos de aprobación de la aplicación](media/approve-app-permissions.png)
 5. La aplicación se aprueba y se muestra en la consola de administración de TI.
 
 ## <a name="publish-then-synchronize-a-line-of-business-app-from-the-google-play-for-work-store"></a>Publicación y posterior sincronización de una aplicación de línea de negocio desde Google Play for Work Store

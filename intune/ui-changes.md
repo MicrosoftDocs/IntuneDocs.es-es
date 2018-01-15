@@ -6,7 +6,7 @@ keywords:
 author: dagerrit
 ms.author: dagerrit
 manager: angrobe
-ms.date: 03/31/2017
+ms.date: 1/4/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid:
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41b358f48412585ec40e369225b4263012bfd2f8
-ms.sourcegitcommit: b8987b8dfb009ea55678d7f640ac5f18a6ab167e
+ms.openlocfilehash: d5f4947191ddc7462749bb03f86919fc38196672
+ms.sourcegitcommit: 6e91c1aed7e4d3bb57051b41ce69cc15d70844f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 01/05/2018
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>¿Dónde está mi característica de Intune en Azure?
 Hemos aprovechado la oportunidad para organizar algunas tareas de forma más lógica durante el traslado de Intune a Azure Portal. Pero, como ocurre con todas las mejoras, deberá aprender la nueva organización. Por ello, hemos creado esta guía de referencia para aquellos que están familiarizados con Intune en el portal clásico y se preguntan dónde se encuentra una determinada función en Intune en Azure Portal. Si en este artículo no se incluye una característica que intenta encontrar, deje un comentario al final para que podamos actualizarlo.
@@ -36,6 +36,7 @@ Hemos aprovechado la oportunidad para organizar algunas tareas de forma más ló
 | Perfil de inscripción de dispositivos corporativos | Directiva > Inscripción de dispositivos corporativos | [Inscripción de dispositivos > Inscripción de Apple > Perfiles de AC](#where-did-corporate-pre-enrolled-devices-go) |
 | Android for Work | Administración > Administración de dispositivos móviles > Android for Work | Inscripción de dispositivos > Inscripción en Android for Work |
 | Términos y condiciones | Directiva > Términos y condiciones | Inscripción de dispositivos > Términos y condiciones |
+Configuración del Portal de empresa|Admin > Portal de empresa|**Administrar** > Aplicaciones móviles<br> **Configurar** > Personalización de marca del Portal de empresa
 
 
 ## <a name="where-do-i-manage-groups"></a>¿Dónde se administran los grupos?
@@ -73,7 +74,7 @@ En Azure Portal, configure el Programa de inscripción de dispositivos de Apple 
 
 ![Imagen del token de DEP de Azure](./media/07-azure-dep-token.png)
 
-En cambio, la opción **Sincronizar** del portal clásico se ha movido al flujo de trabajo de administración de número de serie, puesto que los resultados de una sincronización manual aparecerán ahí:
+En cambio, la opción **Sincronizar** del portal clásico se ha movido al flujo de trabajo de administración de número de serie, puesto que los resultados de una sincronización manual aparecen ahí:
 
 ![Imagen de la sincronización de DEP de Azure](./media/08-azure-dep-sync.png)
 
@@ -97,7 +98,7 @@ En el portal clásico, puede enumerar previamente los números IMEI de los dispo
 
 ![Imagen de la lista clásica de números IMEI](./media/12-classic-corp-imei.png)
 
-En Azure Portal, debe cargar los mismos IMEI a la lista Identificadores de dispositivo corporativos con un archivo de valores separados por comas (CSV). El nuevo portal no admitirá la entrada manual de números IMEI:
+En Azure Portal, debe cargar los mismos IMEI a la lista Identificadores de dispositivo corporativos con un archivo de valores separados por comas (CSV). El nuevo portal no admite la entrada manual de números IMEI:
 
 ![Imagen de la lista de Azure de números IMEI](./media/13-azure-corp-imei.png)
 

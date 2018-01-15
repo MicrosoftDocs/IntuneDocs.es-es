@@ -3,8 +3,8 @@ title: "Inscripción masiva para Windows 10"
 titlesuffix: Azure portal
 description: "Creación de un paquete de inscripción masiva para Microsoft Intune"
 keywords: 
-author: NathBarn
-ms.author: NathBarn
+author: Erikje
+ms.author: erikje
 manager: angrobe
 ms.date: 10/23/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: 7738935675595bbdd3ba1f6411a78a2646894073
-ms.sourcegitcommit: ce35790090ebe768d5f75c108e8d5934fd19c8c7
+ms.openlocfilehash: f24bf5f8767763c3ca56d51127ab1d3f484e51d8
+ms.sourcegitcommit: 833b1921ced35be140f0107d0b4205ecacd2753b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/09/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Inscripción masiva para dispositivos Windows
 
@@ -29,8 +29,6 @@ Como administrador, puede unir una gran cantidad de dispositivos Windows nuevos 
 Los usuarios de Azure AD son usuarios estándar en estos dispositivos y reciben las aplicaciones requeridas y las directivas de Intune asignadas. En este momento, no se admiten los escenarios de autoservicio ni de portal de empresa.
 
 ## <a name="prerequisites-for-windows-devices-bulk-enrollment"></a>Requisitos previos para la inscripción masiva de dispositivos Windows
-
-La inscripción masiva de dispositivos Windows requiere lo siguiente:
 
 - Dispositivos que ejecuten Windows 10 Creator Update o posterior
 - [Inscripción automática de Windows](windows-enroll.md#enable-windows-10-automatic-enrollment)
@@ -43,15 +41,15 @@ La inscripción masiva de dispositivos Windows requiere lo siguiente:
 2. Abra la aplicación **Windows Configuration Designer** y seleccione **Provision desktop devices** (Aprovisionar dispositivos de escritorio).
 ![Captura de pantalla con la opción Provision desktop devices seleccionada en la aplicación Windows Configuration Designer](media/bulk-enroll-select.png)
 
-3. Se abre una ventana de **nuevo proyecto** cuando especifica lo siguiente:
+3. Se abre una ventana de **nuevo proyecto** cuando especifica la siguiente información:
   - **Name**: nombre para el proyecto
-  - **Project folder**: carpeta en la que se guardará el proyecto
+  - **Carpeta de proyecto**: guarde la ubicación para el proyecto
   - **Description**: descripción opcional del proyecto ![Captura de pantalla de la especificación de nombre, carpeta de proyecto y descripción en la aplicación Windows Configuration Designer](media/bulk-enroll-name.png)
 
 4.  Escriba un nombre único para los dispositivos. Los nombres pueden incluir un número de serie (%%SERIAL%%) o un conjunto aleatorio de caracteres. De manera opcional, también puede escribir una clave de producto si actualiza la edición de Windows, configura el dispositivo para su uso compartido y quita software instalado previamente.
 ![Captura de pantalla de la especificación de nombre, carpeta de proyecto y descripción en la aplicación Windows Configuration Designer](media/bulk-enroll-device.png)
 
-5.  De manera opcional, puede configurar la red Wi-Fi a la que se conectan los dispositivos cuando se inician por primera vez.  Si no se configura, se requiere una conexión de red con cable cuando se inicia por primera vez el dispositivo.
+5.  De manera opcional, puede configurar la red Wi-Fi a la que se conectan los dispositivos cuando se inician por primera vez.  Si no están configurados los dispositivos de red, se requiere una conexión de red con cable cuando se inicia por primera vez el dispositivo.
 ![Captura de pantalla de la habilitación de la red Wi-Fi, incluidas opciones de tipo de red y SSID de red en la aplicación Windows Configuration Designer](media/bulk-enroll-network.png)
 
 6.  Seleccione **Enroll in Azure AD** (Inscribirse en Azure AD), escriba una fecha de expiración en **Bulk Token Expiry** (Expiración de token de operación masiva) y, luego, seleccione **Get Bulk Token** (Obtener token de operación masiva).
@@ -88,14 +86,14 @@ La inscripción masiva de dispositivos Windows requiere lo siguiente:
 El aprovisionamiento está diseñado para usarlo en dispositivos Windows nuevos. Los errores de aprovisionamiento pueden requerir un restablecimiento de fábrica del dispositivo o recuperar el dispositivo a partir de una imagen de arranque. En estos ejemplos se describen algunas de las razones para los errores de aprovisionamiento:
 
 - Un paquete de aprovisionamiento que intenta unirse a un dominio de Active Directory o a un inquilino de Azure Active Directory que no crea una cuenta local podría generar que el dispositivo no sea accesible si el proceso de unión al dominio presenta un error debido a la falta de conectividad de red.
-- Los scripts que ejecuta el paquete de aprovisionamiento se ejecutan en contexto de sistema y pueden hacer cambios arbitrarios en las configuraciones y el sistema de archivos del dispositivo. Un script incorrecto o malintencionado podría poner el dispositivo en un estado que solo se podría recuperar si se restablece la imagen inicial o se realiza un restablecimiento de fábrica del dispositivo.
+- Los scripts ejecutados por el paquete de aprovisionamiento se ejecutan en el contexto del sistema. Los scripts pueden realizar cambios arbitrarios en el sistema de archivos del dispositivo y las configuraciones. Un script incorrecto o malintencionado podría poner el dispositivo en un estado que solo se podría recuperar si se restablece la imagen inicial o se realiza un restablecimiento de fábrica del dispositivo.
 
 ### <a name="problems-with-bulk-enrollment-and-company-portal"></a>Problemas con la inscripción masiva y el portal de empresa
 Si un usuario intenta inscribir un dispositivo inscrito de manera masiva anteriormente con el portal de empresa, recibirá una advertencia de que su dispositivo necesita más acciones, de configuración o de inscripción. El dispositivo está inscrito, pero el sitio web o la aplicación del portal de empresa no reconocen la inscripción.
 
 ### <a name="bulk-enrollment-with-wi-fi"></a>Inscripción masiva mediante Wi-Fi 
 
-Los certificados de usuarios específicos y la implementación Wi-Fi no se pueden usar con los dispositivos inscritos de forma masiva. Para administrar dichas conexiones, es necesario usar [certificados de nivel de dispositivo](certificates-configure.md). 
+Los certificados de usuarios específicos y la implementación Wi-Fi no se pueden usar con los dispositivos inscritos de forma masiva. Para administrar estas conexiones, es necesario usar [certificados de nivel de dispositivo](certificates-configure.md). 
 
 ### <a name="conditional-access"></a>Acceso condicional
 El acceso condicional no está disponible para los dispositivos Windows inscritos mediante la inscripción masiva.

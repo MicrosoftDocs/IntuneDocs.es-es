@@ -16,11 +16,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7a90ae7db1141b40934648c951276e3f4d43bc05
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 52364f7c5586f6021ac3bf83e73701d9781c4468
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Inscriba el dispositivo Android en Intune
 
@@ -28,7 +28,7 @@ Si su empresa o centro educativo usa Microsoft Intune, puede inscribir un dispos
 
 > [!VIDEO https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment/player]
 
-Estas instrucciones se aplican a dispositivos Android nativos y Samsung KNOX. Samsung KNOX es un tipo de seguridad que utilizan determinados dispositivos Samsung para proporcionar protección adicional fuera de lo que ofrece Android de forma nativa. Para comprobar si tiene un dispositivo Samsung KNOX, vaya a **Configuración** > **Acerca del dispositivo**. Si no ve "Versión KNOX" en la lista, significa que el suyo es un dispositivo Android nativo.
+Estas instrucciones se aplican a dispositivos Android nativos y Samsung Knox. Samsung Knox es un tipo de seguridad que utilizan determinados dispositivos Samsung para proporcionar protección adicional fuera de lo que ofrece Android de forma nativa. Para comprobar si tiene un dispositivo Samsung Knox, vaya a **Configuración** > **Acerca del dispositivo**. Si no ve "Versión Knox" en la lista, significa que el suyo es un dispositivo Android nativo.
 
 Antes o después de la inscripción, se le pedirá que elija una categoría que describa de la mejor forma posible cómo usar el dispositivo. El equipo de soporte técnico de su empresa usa esta categoría para comprobar las aplicaciones a las que se tienen acceso.
 
@@ -98,9 +98,9 @@ Antes o después de la inscripción, se le pedirá que elija una categoría que 
 
     ![Escriba el PIN o la contraseña](./media/and-enroll-6-PIN-native.png)
 
-13.  Si usa un dispositivo Samsung KNOX, pulse **Confirmar** y verá un mensaje que indica que el dispositivo se está inscribiendo. Si usa un dispositivo Android nativo, solo verá la pantalla siguiente, que muestra que el dispositivo se está inscribiendo.
+13.  Si usa un dispositivo Samsung Knox, pulse **Confirmar** y verá un mensaje que indica que el dispositivo se está inscribiendo. Si usa un dispositivo Android nativo, solo verá la pantalla siguiente, que muestra que el dispositivo se está inscribiendo.
 
-    ![Directiva de privacidad de Samsung KNOX](./media/and-enroll-7-knox-privacy-policy.png)
+    ![Directiva de privacidad de Samsung Knox](./media/and-enroll-7-knox-privacy-policy.png)
 
     En esta pantalla se muestra que el dispositivo se está inscribiendo.
 

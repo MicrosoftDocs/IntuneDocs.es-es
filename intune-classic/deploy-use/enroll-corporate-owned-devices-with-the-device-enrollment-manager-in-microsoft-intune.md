@@ -5,7 +5,7 @@ keywords:
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.date: 01/29/2017
+ms.date: 01/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b37cf4c93d3eb7e56be3716de6b1b5ffb373673
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b55c5d588eb366487a9e1594a46f88551e0b6ee2
+ms.sourcegitcommit: 5fd17a57989c6da3d325ed2e0018ce16fe20bb79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/04/2018
 ---
 # <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>Inscripción de dispositivos propiedad de la empresa con el Administrador de inscripción de dispositivos de Microsoft Intune
 
@@ -30,7 +30,7 @@ Las organizaciones pueden usar Intune para administrar un gran número de dispos
 Los usuarios deben existir en Azure Portal para agregarlos como administradores de inscripción de dispositivos. Para lograr una seguridad óptima, el usuario DEM no debería ser también un administrador de Intune.
 
 >[!NOTE]
->No se puede usar el método de inscripción de DEM con el [Asistente de configuración de Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md), el [método de inscripción directa](ios-direct-enrollment-in-microsoft-intune.md) ni el [método de inscripción de DEP](ios-device-enrollment-program-in-microsoft-intune.md).
+>No se puede usar el método de inscripción de DEM con el [Asistente de configuración de Apple Configurator](ios-setup-assistant-enrollment-in-microsoft-intune.md) o la [inscripción directa](ios-direct-enrollment-in-microsoft-intune.md), la inscripción macOS ni el [método de inscripción de DEP](ios-device-enrollment-program-in-microsoft-intune.md).
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Ejemplo de escenario de administrador de inscripción de dispositivos
 

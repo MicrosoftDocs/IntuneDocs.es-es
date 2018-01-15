@@ -1,7 +1,7 @@
 ---
-title: Directiva de Intune para permitir o bloquear aplicaciones para Samsung KNOX
+title: Directiva de Intune para permitir o bloquear aplicaciones para Samsung Knox
 titlesuffix: Azure portal
-description: Cree un perfil personalizado para permitir y bloquear aplicaciones para dispositivos Samsung KNOX Standard.
+description: Cree un perfil personalizado para permitir y bloquear aplicaciones para dispositivos Samsung Knox Standard.
 keywords: 
 author: vhorne
 ms.author: victorh
@@ -15,13 +15,13 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aaa85347dc647658faf981e93d7fb0ea60c9e296
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 22d1e578da6a0085fd2e41ffc1d2322d01d971f1
+ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/03/2018
 ---
-# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>Uso de directivas personalizadas para permitir y bloquear aplicaciones para dispositivos Samsung KNOX Standard en Microsoft Intune
+# <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices-in-microsoft-intune"></a>Uso de directivas personalizadas para permitir y bloquear aplicaciones para dispositivos Samsung Knox Standard en Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -30,7 +30,7 @@ Use los procedimientos de este tema para crear una directiva personalizada de Mi
 - Una lista de aplicaciones bloqueadas que no se pueden ejecutar en el dispositivo. Las aplicaciones de esta lista se bloquean y no se pueden ejecutar, aunque ya estuvieran instaladas en el momento en que se ha aplicado la directiva.
 - Una lista de aplicaciones que los usuarios del dispositivo pueden instalar desde la tienda Google Play. Solo las aplicaciones que enumere se pueden instalar. Desde la tienda no se puede instalar ninguna otra aplicación.
 
-Esta configuración solo se puede usar en dispositivos que ejecutan Samsung KNOX Standard.
+Esta configuración solo se puede usar en dispositivos que ejecutan Samsung Knox Standard.
 
 ## <a name="create-an-allowed-or-blocked-app-list"></a>Creación de una lista de aplicaciones permitidas o bloqueadas
 

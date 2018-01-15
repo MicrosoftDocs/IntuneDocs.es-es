@@ -15,11 +15,11 @@ ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c7947c9d047c6f206f9f93c389d418379fe8267a
-ms.sourcegitcommit: 5279a0bb8c5aef79aa57aa247ad95888ffe5a12b
+ms.openlocfilehash: 9650afefc8ba0ba782e95b28feaaf1aaceea8d7f
+ms.sourcegitcommit: 06abc5ccc8b868c9ff3ad3f8f62473a87b2da481
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/08/2017
+ms.lasthandoff: 12/15/2017
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Configuración de Exchange Connector local de Intune en Microsoft Intune Azure
 
@@ -45,7 +45,7 @@ En la siguiente tabla se indican los requisitos del equipo en el que se instala 
 |Hardware|El equipo donde se instala el conector debe requiere una CPU de 1,6 GHz con 2 GB de RAM y 10 GB de espacio libre en disco.|users-add.md
 |Sincronización de Active Directory|Para poder usar cualquiera el conector para conectar Intune a su instancia de Exchange Server, debe [configurar la sincronización de Active Directory](users-add.md) de forma que los usuarios locales y los grupos de seguridad estén sincronizados con su instancia de Azure Active Directory.|
 |Software adicional|El equipo que hospede el conector debe tener una instalación completa de Microsoft .NET Framework 4.5 y Windows PowerShell 2.0.|
-|Red|El equipo en el que se instala el conector debe estar en un dominio que tenga una relación de confianza con el dominio que hospeda Exchange Server.<br /><br />El equipo requiere configuraciones que le permitan obtener acceso al servicio de Intune a través de firewalls y servidores proxy mediante los puertos 80 y 443. Entre los dominios usados por Intune están manage.microsoft.com, &#42;manage.microsoft.com y &#42;.manage.microsoft.com.|
+|Network (Red)|El equipo en el que se instala el conector debe estar en un dominio que tenga una relación de confianza con el dominio que hospeda Exchange Server.<br /><br />El equipo requiere configuraciones que le permitan obtener acceso al servicio de Intune a través de firewalls y servidores proxy mediante los puertos 80 y 443. Entre los dominios usados por Intune están manage.microsoft.com, &#42;manage.microsoft.com y &#42;.manage.microsoft.com.|
 
 
 ### <a name="exchange-cmdlet-requirements"></a>Requisitos del cmdlet de Exchange
@@ -133,6 +133,13 @@ Después de que Exchange Connector configure la conexión, los dispositivos móv
 
 > [!NOTE]
 > Si ha instalado On-Premises Exchange Connector y en algún punto elimina la conexión de Exchange, deberá desinstalar On-Premises Exchange Connector del equipo en el que se instaló.
+
+## <a name="on-premises-exchange-connector-high-availability-support"></a>Compatibilidad de alta disponibilidad de On-premises Exchange Connector 
+Una vez que el conector de Exchange cree una conexión a Exchange mediante la CAS especificada, el conector tendrá la capacidad de detectar otras CAS. Si la CAS principal deja de estar disponible, el conector conmutará por error a otra CAS, si está disponible, hasta que la CAS principal esté disponible. Esta característica está activada de manera predeterminada. Puede desactivar esta característica mediante el procedimiento siguiente:
+1. En el servidor en el que está instalado el conector de Exchange, vaya a %*ProgramData*%\Microsoft\Windows Intune Exchange Connector. 
+2. Con un editor de texto, abra **OnPremisesExchangeConnectorServiceConfiguration.xml**.
+3. Cambie &lt;IsCasFailoverEnabled&gt;**true**&lt;/IsCasFailoverEnabled&gt; a &lt;IsCasFailoverEnabled&gt;**false**&lt;/IsCasFailoverEnabled&gt; para deshabilitar la característica.    
+
 
 ## <a name="monitor-the-exchange-connector-activity"></a>Supervisión de la actividad de Exchange Connector
 
