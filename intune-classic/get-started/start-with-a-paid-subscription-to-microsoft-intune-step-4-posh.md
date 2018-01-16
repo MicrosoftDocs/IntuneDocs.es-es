@@ -6,7 +6,7 @@ author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 02/14/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0920891e2c8b75d7103455b3588917372a14e3b3
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: d0bd31c07bb1b09893a065c4041d4fcc5015d72b
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="manage-intune-licenses-using-powershell"></a>Administrar licencias de Intune con PowerShell
 
@@ -60,13 +60,13 @@ Realice la comprobación con lo siguiente:
     $CustomEMS = New-MsolLicenseOptions -AccountSkuId "<TenantName>:EMS" -DisabledPlans INTUNE_A
     Set-MsolUserLicense -UserPrincipalName user@<TenantName>.onmicrosoft.com -AddLicenses <TenantName>:EMS -LicenseOptions $CustomEMS
 
-Realice la comprobación con lo siguiente:
+Comprobar con:
 
     (Get-MsolUser -UserPrincipalName "user@<TenantName>.onmicrosoft.com" .Licenses.ServiceStatus
 
 ![PoSH-AddLic-Verify](./media/posh-addlic-verify.png)
 
 ### <a name="next-steps"></a>Pasos siguientes
-Enhorabuena. Acaba de completar el paso 4 de la *Guía de inicio rápido de Intune*.
+¡Enhorabuena! Acaba de completar el paso 4 de la *Guía de inicio rápido de Intune*.
 >[!div class="step-by-step"]
 (/intune/custom-domain-name-configure) [&larr; **Sincronizar los usuarios con Intune**](/intune/custom-domain-name-configure)     [**Organizar usuarios y dispositivos** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)  
