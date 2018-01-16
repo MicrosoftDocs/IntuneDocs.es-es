@@ -13,11 +13,11 @@ metadata:
   ms.topic: article
   ms.devlang: na
   ms.service: microsoft-intune
-  ms.openlocfilehash: 13f8d1515c19ceae14d8cc99212079bf241438af
-  ms.sourcegitcommit: fc24d7eb4838b9102088dd4dcf5d1aa6b2c2e590
+  ms.openlocfilehash: 6e471cf531afd88c5c199ba4b39e771c77ead032
+  ms.sourcegitcommit: 4401890db054657954a8b3947de1f4308f4da170
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 11/03/2017
+  ms.lasthandoff: 01/11/2018
 sections:
 - items:
   - type: markdown
@@ -31,22 +31,22 @@ sections:
     - href: introduction-intune.md
       html: "<p>Obtenga información acerca de qué hace Intune y cómo funciona.</p>"
       image:
-        src: https://docs.microsoft.com/media/common/i_overview.svg
+        src: https://docs.microsoft.com/en-us/media/common/i_overview.svg
       title: "¿Qué es Intune?"
     - href: get-started-evaluation.md
       html: "<p>Vea cómo funciona Intune con este sencillo tutorial.</p>"
       image:
-        src: https://docs.microsoft.com/media/common/i_get-started.svg
+        src: https://docs.microsoft.com/en-us/media/common/i_get-started.svg
       title: "Introducción"
     - href: get-support.md
       html: "<p>Obtenga información acerca de cómo crear una incidencia de soporte técnico y obtener ayuda cuando lo necesite.</p>"
       image:
-        src: https://docs.microsoft.com/media/common/i_support.svg
+        src: https://docs.microsoft.com/en-us/media/common/i_support.svg
       title: "Obtención de soporte técnico"
     - href: whats-new.md
       html: <p>Vea las novedades de Intune de esta semana.</p>
       image:
-        src: https://docs.microsoft.com/media/common/i_whats-new.svg
+        src: https://docs.microsoft.com/en-us/media/common/i_whats-new.svg
       title: Novedades
 - title: "Nuevos artículos y entradas de blog"
   items:
@@ -60,27 +60,27 @@ sections:
     - href: what-is-intune.md
       title: "Obtenga información sobre Intune en Azure Portal"
       image:
-        src: https://docs.microsoft.com/media/common/i_portal.svg
+        src: https://docs.microsoft.com/en-us/media/common/i_portal.svg
     - href: ui-changes.md
       title: "Vea dónde se encuentran sus características de Intune en Azure Portal"
       image:
-        src: https://docs.microsoft.com/media/common/i_guide.svg
+        src: https://docs.microsoft.com/en-us/media/common/i_guide.svg
     - href: high-level-architecture.md
       title: Vea la arquitectura de alto nivel de Intune
       image:
-        src: https://docs.microsoft.com/media/common/i_architecture.svg
+        src: https://docs.microsoft.com/en-us/media/common/i_architecture.svg
     - href: enrollment-autopilot.md
       title: Compatibilidad del programa Windows AutoPilot Deployment en Microsoft Intune
       image:
-        src: https://docs.microsoft.com/media/common/i_generic-database.svg
+        src: https://docs.microsoft.com/en-us/media/common/i_generic-database.svg
     - href: https://blogs.technet.microsoft.com/intunesupport/2017/10/11/upcoming-security-enhancements-in-the-intune-service-your-action-is-required/
       title: '[Blog] Mejoras de seguridad en el servicio de Intune '
       image:
-        src: https://docs.microsoft.com/media/common/i_blog.svg
+        src: https://docs.microsoft.com/en-us/media/common/i_blog.svg
     - href: https://cloudblogs.microsoft.com/enterprisemobility/2017/10/26/intunes-new-troubleshooting-portal-makes-diagnosing-and-resolving-end-user-issues-easier/
       title: "[Blog] El Portal de solución de problemas facilita el diagnóstico y la resolución de problemas"
       image:
-        src: https://docs.microsoft.com/media/common/i_blog.svg
+        src: https://docs.microsoft.com/en-us/media/common/i_blog.svg
 - title: "Vídeos"
   items:
   - type: markdown
@@ -127,7 +127,7 @@ sections:
     - html: "<a href=\"/intune/apps-prepare-mobile-application-management\">Preparar aplicaciones de línea de negocio para las directivas de protección de aplicaciones</a>"
     - html: "<a href=\"/intune/app-sdk\">Preparar aplicaciones de línea de negocio con Intune App SDK</a>"
     - html: <a href="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview">Trabajar con Intune en Microsoft Graph</a>
-    - html: <a href="/intune/reports-nav-intune-date-warehouse">API de Almacenamiento de datos de Intune</a>
+    - html: <a href="/intune/reports-nav-intune-data-warehouse">API de Almacenamiento de datos de Intune</a>
 - title: Otros recursos
   items:
   - type: list

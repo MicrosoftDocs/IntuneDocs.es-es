@@ -6,18 +6,18 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 06/16/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: e733d1d59d073dab9fb2b6c18ee92dadbc86adbe
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: cb186004395a4ccf84de6f0bc335cbd44a79583b
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="microsoft-intune-glossary"></a>Glosario de Microsoft Intune
 
@@ -85,7 +85,7 @@ ms.lasthandoff: 10/10/2017
 ## <a name="h"></a>H
 |||
 |-|-|
-|Híbrido|Configuración en la que puede administrar dispositivos inscritos con Intune [a través de la consola de System Center Configuration Manager](/intune-classic/get-started/integration-with-cloud-services).|
+|Híbrida|Configuración en la que puede administrar dispositivos inscritos con Intune [a través de la consola de System Center Configuration Manager](/intune-classic/get-started/integration-with-cloud-services).|
 
 ## <a name="i"></a>I
 |||

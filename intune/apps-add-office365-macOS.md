@@ -15,16 +15,13 @@ ms.assetid: 2372332a-7e3a-4a9c-91a9-86654e0fabe2
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5613997340867dda6def6a9a0a308b1ef0b618b5
-ms.sourcegitcommit: 138df6f793d2dc718041346b90c367c0181990da
+ms.openlocfilehash: 5e0ad0b99a2c8a602b5e542530a1d437065461b2
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="how-to-assign-office-365-to-macos-devices-with-microsoft-intune"></a>Asignación de Office 365 a dispositivos macOS con Microsoft Intune
-
->[!Note]
-> Hay un problema conocido que afecta a esta característica. Para obtener más información, consulte [Problemas conocidos de Microsoft Intune](/intune/known-issues#apps).
 
 Este tipo de aplicación facilita la asignación de aplicaciones de Office 365 a los dispositivos macOS. Este nuevo tipo de aplicación le permite instalar Word, Excel, PowerPoint, Outlook y OneNote. Estas aplicaciones también incluyen Microsoft AutoUpdater (MAU) para ayudar a mantener las aplicaciones más seguras y actualizadas. Las aplicaciones que desea que aparezcan como una aplicación en la lista de aplicaciones de la consola de Intune.
 

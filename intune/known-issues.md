@@ -7,7 +7,7 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 10/31/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,11 +15,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5cdda6a34311bb7b70234ab046975e6ff5417878
-ms.sourcegitcommit: cfe3607ba0b76a37a3c54f465754482d49a816a0
+ms.openlocfilehash: c4210d77e52abba07454d8606ba7715c03078ca6
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problemas conocidos de Microsoft Intune
 
@@ -55,8 +55,6 @@ Las aplicaciones compradas por volumen de iOS se muestran y solo pueden asignars
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>Se cargan varias copias del mismo programa de compra por volumen de iOS
 No haga clic en el botón **Cargar** varias veces desde el mismo token de PCV. Esto provocará que se carguen tokens de PCV duplicados y que las aplicaciones se sincronicen varias veces para el mismo token de PCV.
 
-### <a name="assigning-office-365-to-macos-devices"></a>Asignación de Office 365 a dispositivos macOS
-La característica de asignación de Office 365 a dispositivos macOS con Microsoft Intune estará disponible una vez completada la actualización de la interfaz de usuario.
 
 <!-- ## Groups -->
 
