@@ -5,20 +5,20 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 07/07/2017
+ms.date: 01/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
-ms.reviewer: oldang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bc907e5671fcd6c7b777f3bc95a533503d85ca64
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: a691786ce2ee975086899844b285a91f676aa71f
+ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/13/2018
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicaciones Android para directivas de protección de aplicaciones con la herramienta de ajuste de aplicaciones de Intune
 
@@ -113,6 +113,14 @@ A continuación, se le pedirá que especifique **KeyStorePassword** y **KeyPassw
 
 La aplicación ajustada se genera y guarda, junto con un archivo de registro en la ruta de acceso de salida especificada.
 
+## <a name="how-often-should-i-rewrap-my-android-application-with-the-intune-app-wrapping-tool"></a>¿Con qué frecuencia conviene reajustar mi aplicación de Android con la herramienta de ajuste de aplicaciones de Intune?
+Los casos principales en los que resulta necesario reajustar las aplicaciones son los siguientes:
+* La aplicación tiene una nueva versión.
+* La herramienta de ajuste de aplicaciones de Intune para Android tiene una nueva versión que permite corregir errores importantes o bien presenta características nuevas y específicas relativas a la directiva de protección de la aplicación de Intune. Esto suele darse cada seis u ocho semanas a través del repositorio de GitHub para la [herramienta de ajuste de aplicaciones de Microsoft Intune para Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android).
+
+Entre los procedimientos recomendados para el reajuste destacan los siguientes: 
+* Mantenimiento de los certificados de firma utilizados durante el proceso de compilación ([Reutilización de certificados de firma y aplicaciones de encapsulado](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps))
+
 ## <a name="reusing-signing-certificates-and-wrapping-apps"></a>Reutilización de certificados de firma y aplicaciones de encapsulado
 Android requiere que todas las aplicaciones estén firmadas mediante un certificado válido para instalarlo en dispositivos Android.
 
@@ -137,7 +145,7 @@ Para evitar posibles suplantaciones de identidad, la divulgación de informació
 
 -   Proteja el directorio de salida que contiene la aplicación ajustada. Considere el uso de un directorio de nivel de usuario para la salida.
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 - [Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles mediante Microsoft Intune](apps-prepare-mobile-application-management.md)
 
 - [Usar el SDK para habilitar aplicaciones para la administración de aplicaciones móviles)](/intune/classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)

@@ -5,7 +5,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 11/15/2016
+ms.date: 1/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 54b8a14c01e0a08e76843b02f00124117617540d
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ddf7b2e90b0008e23d550cc347d2c904cc9bc9be
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="configure-certificate-infrastructure-for-scep"></a>Configurar la infraestructura de certificados para SCEP
 
@@ -338,6 +338,9 @@ Descargar, instalar y configurar Certificate Connector en el servidor SCEP.
 5.  En la IU **Conector de certificado** :
 
     Haga clic en **Iniciar sesión** y escriba sus credenciales de administrador de servicio de Intune o las credenciales de un administrador de inquilinos con permiso de administración global.
+
+    > [!NOTE]
+    > Si obtiene el error **No se reconoce el nombre de usuario** al conectarse a NDESConnectorUI.exe, normalmente significa que se ha utilizado una cuenta que no dispone de una licencia de Intune válida. Asigne una licencia de Intune o EMS a la cuenta y vuelva a intentarlo.
 
     Si su organización usa un servidor proxy y el proxy es necesario para que el servidor NDES obtenga acceso a Internet, haga clic en **Usar servidor proxy** e indique el nombre del servidor proxy, el puerto y las credenciales de la cuenta para conectarse.
 

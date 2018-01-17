@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 849c5c45429394e92b993a57c1e2345b20f78f0a
-ms.sourcegitcommit: 95a0553531133f8d926afbecd0aaf91f64a63162
+ms.openlocfilehash: 2774b59001cb4ce277048e60a81243cde15cb53d
+ms.sourcegitcommit: 5ecb0d6625e6972cc5ccdca7538f41f4aa8da46a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos Windows 10 y versiones posteriores en Microsoft Intune
 
@@ -50,7 +50,7 @@ ms.lasthandoff: 01/08/2018
 - **Detección de dispositivos**: bloquea la detección de un dispositivo por parte de otros dispositivos.
 - **Conmutador de tareas (solo móviles)**: bloquea el conmutador de tareas en el dispositivo.
 - **Cuadro de diálogo de error de tarjeta SIM (solo móviles)**: impide que un mensaje de error se muestre en el dispositivo si no se detecta una tarjeta SIM.
-<!--- **Automatic redeployment** - Allows users with administrative rights to delete all user data and settings using **CTRL + Win + R** at the device lock screen. The device is automatically reconfigured and reenrolled into management. -->
+- **Reimplementación automática**: permite a los usuarios con derechos administrativos eliminar todos los datos de usuario y las opciones de configuración con **Ctrl + Win + R** en la pantalla de bloqueo del dispositivo. En este caso, el dispositivo se vuelve a configurar e inscribir automáticamente para la administración.
 
 
 ## <a name="password"></a>Contraseña
