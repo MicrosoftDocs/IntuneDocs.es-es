@@ -7,18 +7,18 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 ms.date: 08/09/2017
-ms.topic: get-started-article
+ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: faf3e9b81f76755135f73f8753305d96d227ec14
-ms.sourcegitcommit: 769db6599d5eb0e2cca537d0f60a5df9c9f05079
+ms.openlocfilehash: 144313b63c1a6349a59220c901072dbf9d4c6f43
+ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 01/12/2018
 ---
 # <a name="reset-the-passcode-on-windows-devices-integrated-with-the-microsoft-pin-reset-service-using-intune"></a>Restablecer el código de acceso en dispositivos Windows integrados con el Servicio de restablecimiento del PIN de Microsoft mediante Intune
 
@@ -41,9 +41,9 @@ Para restablecer de forma remota el código de acceso en los dispositivos Window
 
 1. Visite el [sitio web de integración del Servicio de restablecimiento del PIN de Microsoft](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=b8456c59-1230-44c7-a4a2-99b085333e84&resource=https%3A%2F%2Fgraph.windows.net&redirect_uri=https%3A%2F%2Fcred.microsoft.com&state=e9191523-6c2f-4f1d-a4f9-c36f26f89df0&prompt=admin_consent) e inicie sesión con la cuenta de administrador de inquilino que usa para administrar el inquilino de Intune.
 2. Después de iniciar sesión, haga clic en **Acepto** para dar su consentimiento a que el Servicio del restablecimiento del PIN acceda a la cuenta.<br>
-![Página de permisos del Servicio de restablecimiento del PIN](./media/pin-reset-service-application.png)
+![Página de permisos del servicio de restablecimiento del PIN](./media/pin-reset-service-application.png)
 3. En el portal de Azure, puede comprobar que Intune y el Servicio de restablecimiento del PIN se han integrado en la hoja Aplicaciones empresariales - Todas las aplicaciones, como se muestra en la captura de pantalla siguiente:<br>
-![Aplicación del Servicio de restablecimiento del PIN en Azure](./media/pin-reset-service-home-screen.png)
+![Aplicación del servicio de restablecimiento del PIN en Azure](./media/pin-reset-service-home-screen.png)
 4. Inicie sesión en [este sitio web](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent) con las credenciales de administrador de inquilino de Intune y luego vuelva a elegir **Acepto** para dar su consentimiento a que el servicio acceda a la cuenta.
 
 ### <a name="configure-windows-devices-to-use-pin-reset"></a>Configurar dispositivos Windows para que usen el restablecimiento del PIN

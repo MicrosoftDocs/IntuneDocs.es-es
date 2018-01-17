@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/02/2018
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ searchScope: User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: 8edfc4f55e9265ef6bd2dfbcb5871496d5679a9f
-ms.sourcegitcommit: 5004b9564915712b41860df20324f39fac3dc27d
+ms.openlocfilehash: 77b3b8f3fff39df94d535b28c060334b3e0a63ce
+ms.sourcegitcommit: a55a7119a15836b6941fdd5b32b9076139093693
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 01/10/2018
 ---
 # <a name="fix-common-issues-with-your-samsung-knox-device"></a>Solución de problemas habituales en el dispositivo Samsung Knox
 
-A veces pueden producirse problemas con el dispositivo Samsung Knox que pueden corregirse mediante la solución de problemas. A continuación se enumeran algunos problemas comunes que puede intentar resolver primero por su cuenta. En el caso de problemas más complejos, le recomendamos que se ponga en contacto con el equipo de soporte técnico de su empresa mediante sus datos de contacto en el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+A veces pueden producirse problemas con el dispositivo Samsung Knox que pueden corregirse mediante la solución de problemas. A continuación se enumeran algunos problemas comunes que puede intentar resolver primero por su cuenta. Para problemas más complejos, le recomendamos que [se ponga en contacto con el equipo de Portal de empresa para Android](https://github.com/MicrosoftDocs/IntuneDocs/blob/master/intune-user-help/send-logs-to-microsoft-android.md).
 
 ## <a name="network-activation-error"></a>Error de activación de red
 
@@ -31,7 +31,7 @@ El mensaje que aparece podría ser similar al siguiente:
 
 |Mensaje de error|Qué debería intentar|
 |---|---|
-|**Error de activación de Samsung Knox**: no se pudo activar la licencia de Samsung Knox. Cambie a otra red inalámbrica o celular para intentarlo de nuevo.|No se puede activar el dispositivo en su red actual. Si se encuentra en una red celular, cambie a una red Wi-Fi y vuelva a intentarlo.|
+|**Error de activación de Samsung Knox**: no se pudo activar la licencia de Samsung Knox. Cambie a otra red inalámbrica o celular para intentarlo de nuevo.|No se puede activar el dispositivo en su red actual. Si se encuentra en una red de datos móviles, cambie a una red Wi-Fi y vuelva a intentarlo, o al revés.|
 
 ## <a name="license-activation-error"></a>Error de activación de licencia
 
