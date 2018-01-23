@@ -11,14 +11,14 @@ ms.prod:
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: f33d1684-b1b5-44f7-9aac-c6d5186a5d7c
-ms.reviewer: jeffgilb
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fac1ce49584af299face679270dcc43decc4d2f5
-ms.sourcegitcommit: 4dc5bed94cc965a54eacac2d87fb2d49c9300c3a
+ms.openlocfilehash: ad05e4eac40a6d3b8c522e893d8aea51de34c67a
+ms.sourcegitcommit: d44c32aad3e84f6c0b296bdb010981d3a818befb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 01/16/2018
 ---
 # <a name="how-your-android-users-get-their-apps"></a>Cómo obtienen sus aplicaciones los usuarios de Android
 
@@ -54,7 +54,7 @@ Las aplicaciones pueden ser administradas o no administradas, tal como se descri
 
 **Aplicaciones no administradas**: son aplicaciones que no se pueden administrar a través de directivas. Intune no las ha encapsulado o no incorporan el SDK para aplicaciones de Intune. Las directivas de aplicación no pueden aplicarse a estas aplicaciones.
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 [Agregar aplicaciones con Microsoft Intune](apps-add.md)
 
 [Cómo obtienen sus aplicaciones los usuarios de iOS](end-user-apps-ios.md)
