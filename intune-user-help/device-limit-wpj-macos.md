@@ -6,26 +6,27 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: angrobe
-ms.date: 01/11/2018
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: c8920bf0-e1bb-4601-961d-8c25290e53fb
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 458556c07fd84a72399021e7b99c72bcd95a17f1
-ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
+ms.openlocfilehash: b3e5387db3c95b3e192752b67eac0b0d15f483c1
+ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="the-limit-of-devices-you-can-register-has-been-reached"></a>Límite de dispositivos que se pueden registrar alcanzado
 
-Cada empresa establece un límite sobre el número de dispositivos que cada persona puede utilizar para acceder a los recursos corporativos. Esto permite a la empresa garantizar la seguridad de la información y asegurarse de que cada usuario tenga autorización para acceder a ella desde ubicaciones y dispositivos concretos. Si recibe un mensaje en el que se le indica que **no se puede registrar el dispositivo** porque se ha alcanzado el límite permitido, puede hacer dos cosas:
+Cada empresa establece un límite sobre el número de dispositivos que cada persona puede utilizar para acceder a los recursos corporativos. Esto permite a la empresa garantizar la seguridad de la información y asegurarse de que cada usuario tenga autorización para acceder a ella desde ubicaciones y dispositivos concretos. Si recibe un mensaje en el que se le indica que **no se puede registrar el dispositivo** porque se ha alcanzado el límite permitido, puede hacer tres cosas:
 
 1. Quitar uno de los dispositivos de la administración de Portal de empresa. 
 2. Quitar uno de los dispositivos del [portal MyApps](https://myapps.microsoft.com) y seleccionar **Perfil** en el extremo superior derecho de la página. 

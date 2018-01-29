@@ -6,20 +6,20 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 541be8b8-8668-41be-afce-3f3e08c12191
-ms.reviewer: 
+ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f14120bc6141853177559d4561ea2da866088fb2
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 64073cb53478b1bf2373426426e0a5d414ca40c4
+ms.sourcegitcommit: 967a7c23b863123398c40b812e2eb02c921a0afe
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/18/2018
 ---
 # <a name="use-windows-hello-for-business"></a>Uso de Windows Hello para empresas
 
@@ -52,7 +52,7 @@ Para garantizar que se resuelven los conflictos de directivas y que la directiva
 
 1.  En Azure Portal, elija **Más servicios** > **Supervisión y administración** > **Intune**.
 
-2.  En la hoja de Intune, elija **Inscribir dispositivos** y luego elija **Administrar** > **Windows Hello para empresas**.
+2.  En la hoja de Intune, elija **Endpoint Protection** y luego elija **Administrar** > **Windows Hello para empresas**.
 
 3.  En la hoja que se abre, elija la configuración **predeterminada**.
 
@@ -71,12 +71,12 @@ Para garantizar que se resuelven los conflictos de directivas y que la directiva
      - **Requerido** (valor predeterminado). Solo los dispositivos que tengan un TPM accesible pueden aprovisionar Windows Hello para empresas.
      - **Preferido**. Los dispositivos intentan primero usar un TPM. Si no está disponible, pueden usar el cifrado de software.
 
- - **Requerir longitud mínima de PIN**/**Requerir longitud máxima de PIN**. Configura los dispositivos para que usen las longitudes de PIN mínima y máxima que se especifiquen, lo cual garantiza un inicio de sesión seguro. La longitud de PIN predeterminada es de 6 caracteres, pero se puede aplicar una longitud mínima de 4 caracteres. La longitud de PIN máxima es de 127 caracteres.
+ - **Requerir longitud mínima de PIN**/**Requerir longitud máxima de PIN**. Configura los dispositivos para que usen las longitudes de PIN mínima y máxima que se especifiquen, lo cual garantiza un inicio de sesión seguro. La longitud de PIN predeterminada es de 6 caracteres, pero puede aplicar una longitud mínima de 4 caracteres. La longitud de PIN máxima es de 127 caracteres.
 
  - **Requerir minúsculas en el PIN**/**Requerir mayúsculas en el PIN**/**Requerir caracteres especiales en el PIN**. Si quiere aplicar un PIN más seguro, puede requerir el uso de letras mayúsculas, letras minúsculas y caracteres especiales en el PIN. Elija de entre las siguientes opciones:
 
      - **Permitido**. Los usuarios pueden usar el tipo de carácter en el PIN, pero no es obligatorio.
-    
+
      - **Requerido**. Los usuarios deben incluir al menos uno de los tipos de carácter en el PIN. Por ejemplo, una práctica habitual consiste en obligar a usar como mínimo una mayúscula y un carácter especial.
 
      - **No permitido** (valor predeterminado). Los usuarios no deben usar estos tipos de caracteres en el PIN. (Este es también el comportamiento si no se configura esta opción).<br>Entre los caracteres especiales se incluyen los siguientes: **! " # $ % &amp; ' ( ) &#42; + , - . / : ; &lt; = &gt; ? @ [ \ ] ^ _ &#96; { &#124; } ~**

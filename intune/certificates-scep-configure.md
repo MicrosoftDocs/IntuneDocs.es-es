@@ -6,20 +6,19 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.date: 12/09/2017
+ms.date: 1/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: d567d85f-e4ee-458e-bef7-6e275467efce
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36c495767d41c83c1393d837a808961ed9868bed
-ms.sourcegitcommit: 6d5c919286b0e285f709d9b918624b927f99f979
+ms.openlocfilehash: 3082bd52460bc9bd852edb3b560e96fb718a71c3
+ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="configure-and-manage-scep-certificates-with-intune"></a>Configuración y administración de certificados SCEP con Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -88,7 +87,7 @@ Para poder configurar perfiles de certificado debe completar las tareas siguient
 Cree una cuenta de usuario de dominio que vaya a usar como cuenta de servicio NDES. Esta cuenta se especifica al configurar las plantillas en la CA emisora antes de instalar y configurar NDES. Asegúrese de que el usuario tenga los derechos predeterminados, los derechos **Iniciar sesión localmente**, **Iniciar sesión como un servicio** e **Iniciar sesión como trabajo por lotes**. Algunas organizaciones tienen directivas de protección que deshabilitan estos derechos.
 
 #### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>Paso 2: configurar plantillas de certificado en la entidad de certificación
-En esta tarea tendrá que hacer lo siguiente:
+En esta tarea tendrá que:
 
 -   Configurar una plantilla de certificado para NDES
 
@@ -194,7 +193,7 @@ En esta tarea tendrá que hacer lo siguiente:
 `**setspn –s http/Server01.contoso.com contoso\NDESService**`
 
 #### <a name="step-4---configure-ndes-for-use-with-intune"></a>Paso 4: configurar NDES para su uso con Intune
-En esta tarea tendrá que hacer lo siguiente:
+En esta tarea tendrá que:
 
 -   Configurar NDES para su uso con la CA emisora
 
@@ -297,7 +296,7 @@ En esta tarea tendrá que hacer lo siguiente:
 4. Reinicie el servidor de NDES. El servidor está ya preparado para admitir el conector certificado.
 
 #### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>Paso 5: habilitar, instalar y configurar Intune Certificate Connector
-En esta tarea tendrá que hacer lo siguiente:
+En esta tarea tendrá que:
 
 - Habilitar la compatibilidad con SCEP en Intune.
 - Descargar, instalar y configurar Certificate Connector en un servidor de su entorno. Para admitir la alta disponibilidad, puede instalar varias instancias de Certificate Connector en distintos servidores.
@@ -330,6 +329,9 @@ En esta tarea tendrá que hacer lo siguiente:
 
     Haga clic en **Iniciar sesión** y escriba sus credenciales de administrador de servicio de Intune o las credenciales de un administrador de inquilinos con permiso de administración global.
 
+    > [!IMPORTANT]
+    > La cuenta de usuario debe tener una licencia válida de Intune asignada. Si la cuenta de usuario no tiene una licencia válida de Intune, NDESConnectorUI.exe produce un error.
+
     Si su organización usa un servidor proxy y el proxy es necesario para que el servidor NDES obtenga acceso a Internet, haga clic en **Usar servidor proxy** e indique el nombre del servidor proxy, el puerto y las credenciales de la cuenta para conectarse.
 
     Seleccione la pestaña **Avanzadas** , proporcione las credenciales de una cuenta que tenga el permiso **Emitir y administrar certificados** en la CA emisora y haga clic en **Aplicar**.
@@ -347,7 +349,7 @@ Para validar que el servicio se ejecuta, abra un explorador y escriba la siguien
 1. En Azure Portal, seleccione la carga de trabajo **Configurar dispositivos**.
 2. En la hoja **Configuración del dispositivo**, seleccione **Administrar** > **Perfiles**.
 3. En la hoja de perfiles, seleccione **Crear perfil**.
-4. En la hoja **Crear perfil**, escriba un **nombre** y una **descripción** para el perfil de certificado SCEP.
+4. En la hoja **Create Profile** (Crear perfil), escriba un **nombre** y una **descripción** para el perfil de certificado SCEP.
 5. En la lista desplegable **Plataforma**, seleccione la plataforma de dispositivo para este certificado SCEP. Actualmente puede seleccionar una de las siguientes plataformas para la configuración de restricciones de dispositivos:
     - **Android**
     - **iOS**
