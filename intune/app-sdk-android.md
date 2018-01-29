@@ -5,7 +5,7 @@ keywords: SDK
 author: erikre
 manager: angrobe
 ms.author: erikre
-ms.date: 11/28/2017
+ms.date: 01/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,18 +14,18 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7bb78d05f9225c681c5b8a3bb6f1fcee4581a0de
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: c3c6c82dcec8d85d0748d5966f6898f219b620d7
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guía para desarrolladores de Android acerca del SDK para aplicaciones de Microsoft Intune
 
 > [!NOTE]
 > Es posible que quiera leer primero la [Información general del SDK para aplicaciones de Intune](app-sdk.md), que cubre las características actuales del SDK y describe cómo preparar la integración en cada plataforma compatible.
 
-El SDK para aplicaciones de Microsoft Intune para Android permite incorporar directivas de aplicaciones de Intune (también conocidas como directivas MAM o **APP**) a la aplicación Android nativa. Una aplicación habilitada para Intune es aquella que está integrada con el SDK para aplicaciones de Intune. Los administradores de Intune pueden implementar fácilmente directivas de protección de aplicaciones en la aplicación habilitada para Intune cuando Intune la administra de manera activa.
+El SDK para aplicaciones de Microsoft Intune para Android permite incorporar directivas de aplicaciones de Intune (también conocidas como directivas MAM o **APP**) a la aplicación Android nativa. Una aplicación administrada por Intune es aquella que está integrada con el SDK para aplicaciones de Intune. Los administradores de Intune pueden implementar fácilmente directivas de protección de aplicaciones en la aplicación administrada por Intune cuando Intune la administra de manera activa.
 
 
 ## <a name="whats-in-the-sdk"></a>Qué hay en el SDK
@@ -55,7 +55,7 @@ El SDK para aplicaciones de Intune es un proyecto de Android compilado. Como res
 La aplicación [Portal de empresa](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) debe estar presente en el dispositivo para que el SDK para aplicaciones de Intune para Android pueda habilitar las directivas de protección. El Portal de empresa recupera las directivas de protección de aplicaciones del servicio Intune. Cuando se inicializa la aplicación, carga la directiva y el código para aplicar dicha directiva desde el Portal de empresa.
 
 > [!NOTE]
-> Si la aplicación Portal de empresa no está en el dispositivo, una aplicación habilitada para Intune tiene el mismo comportamiento que una aplicación normal que no admite las directivas de protección de aplicaciones de Intune.
+> Si la aplicación Portal de empresa no está en el dispositivo, una aplicación administrada por Intune tiene el mismo comportamiento que una aplicación normal que no admite las directivas de protección de aplicaciones de Intune.
 
 Para la protección de aplicaciones sin inscripción de dispositivo, _**no**_ es necesario que el usuario inscriba el dispositivo con la aplicación Portal de empresa.
 
@@ -352,7 +352,7 @@ MAMPolicyManager.getPolicy(currentActivity).getIsSaveToLocationAllowed(SaveLocat
 
 ## <a name="register-for-notifications-from-the-sdk"></a>Registrarse para recibir notificaciones del SDK
 
-### <a name="overview"></a>Información general
+### <a name="overview"></a>Introducción
 El SDK para aplicaciones de Intune permite que la aplicación controle el comportamiento de determinadas directivas, como la eliminación selectiva, cuando las implemente el administrador de TI. Cuando un administrador de TI implementa esta directiva, el servicio de Intune envía una notificación al SDK.
 
 La aplicación debe registrarse para recibir notificaciones del SDK mediante la creación de `MAMNotificationReceiver` y su registro mediante `MAMNotificationReceiverRegistry`. Para ello, se proporcionan el receptor y el tipo de notificación deseada en `App.onCreate`, como se ilustra en el ejemplo siguiente:
@@ -487,7 +487,7 @@ A continuación se describen las maneras comunes en que se puede configurar una 
 
 ## <a name="app-protection-policy-without-device-enrollment"></a>Directiva de protección de aplicaciones sin la inscripción de dispositivos
 
-### <a name="overview"></a>Información general
+### <a name="overview"></a>Introducción
 La directiva de protección de aplicaciones de Intune sin inscripción de dispositivos, también conocida como APP-WE o MAM-WE, permite a las aplicaciones ser administradas mediante Intune sin necesidad de que el dispositivo esté inscrito en MDM de Intune. APP-WE funciona con o sin inscripción de dispositivos. De todos modos, es necesario que Portal de empresa esté instalado en el dispositivo, pero no es necesario que el usuario inicie sesión en él e inscriba el dispositivo.
 
 > [!NOTE]
@@ -762,7 +762,7 @@ La guía sobre la copia de seguridad de datos especifica un algoritmo general pa
 
 ## <a name="multi-identity-optional"></a>Varias identidades (opcional)
 
-### <a name="overview"></a>Información general
+### <a name="overview"></a>Introducción
 De forma predeterminada, el SDK de Intune App aplicará la directiva a la aplicación en su conjunto. La característica Varias identidades es una característica de protección de aplicación de Intune opcional que se puede habilitar para permitir que se aplique una directiva en un nivel por identidad. Para ello es necesaria más participación en la aplicación que otras características de la protección de la aplicación.
 
 La aplicación *debe* informar al SDK cuando intente cambiar la identidad activa. En algunos casos, el SDK también notificará a la aplicación cuando se requiera un cambio de identidad. Sin embargo, en la mayoría de los casos, MAM no puede saber cuáles son los datos que se muestran en la UI ni los que se usan en un subproceso en un momento determinado y confía en que la aplicación establezca la identidad correcta a fin de evitar fugas de datos. En las secciones siguientes se detallarán algunos escenarios determinados que requieren acción de la aplicación.
@@ -875,7 +875,7 @@ También puede reemplazar un método en `MAMActivity` si desea que la aplicació
 
 ### <a name="implicit-identity-changes"></a>Cambios de identidad implícitos
 
-Además de la posibilidad de que la aplicación establezca la identidad, un subproceso o la identidad de un contexto pueden cambiar en función de la entrada de datos desde otra aplicación habilitada para Intune que tenga la directiva de protección de la aplicación.
+Además de la posibilidad de que la aplicación establezca la identidad, un subproceso o la identidad de un contexto pueden cambiar en función de la entrada de datos desde otra aplicación administrada por Intune que tenga la directiva de protección de la aplicación.
 
 #### <a name="examples"></a>Ejemplos
 
@@ -1353,6 +1353,32 @@ A continuación se muestra la lista completa de los atributos de estilo permitid
 | Color de énfasis | Borde del cuadro de PIN cuando está resaltado <br> Hipervínculos |accent_color | Color |
 | Logotipo de la aplicación | Icono grande que aparece en la pantalla de PIN de la aplicación Intune | logo_image | Drawable |
 
+## <a name="requiring-user-login-prompt-for-an-automatic-app-we-service-enrollment-requiring-intune-app-protection-policies-in-order-to-use-your-sdk-integrated-android-lob-app-and-enabling-adal-sso-optional"></a>Mensaje de Requerir inicio de sesión de usuario para la inscripción automática del servicio APP-WE, que requiere directivas de protección de aplicaciones de Intune para poder usar la aplicación de LOB de Android con SDK integrado, así como para habilitar el SSO de ADAL (opcional)
+
+La siguiente es una guía para el mensaje de Requerir usuario al iniciar la aplicación para una inscripción automática del servicio APP-WE (denominada**inscripción predeterminada** en esta sección), que requiere directivas de protección de aplicaciones de Intune para permitir que solo los usuarios protegidos de Intune usen la aplicación de LOB de Android con SDK integrado. También se describe cómo habilitar el SSO para la aplicación de LOB de Android con SDK integrado. **No** se admite para las aplicaciones de la tienda que puedan utilizar los usuarios que no sean de Intune.
+
+> [!NOTE] 
+> Las ventajas de la **inscripción predeterminada** incluyen un método simplificado de obtención de la directiva del servicio APP-WE para una aplicación en el dispositivo.
+
+### <a name="general-requirements"></a>Requisitos generales
+* El equipo del SDK de Intune solicitará el identificador de aplicación de su aplicación. Puede encontrar este dato mediante [Azure Portal](https://portal.azure.com/), en **Todas las aplicaciones**, en la columna de **Id. de aplicación**. Una buena manera de ponerse en contacto con el equipo de SDK de Intune es enviando un correo electrónico a msintuneappsdk@microsoft.com.
+     
+### <a name="working-with-the-intune-sdk"></a>Trabajar con el SDK de Intune
+Estas instrucciones son específicas para todas las aplicaciones de Android y Xamarin que quieren solicitar directivas de protección de aplicaciones de Intune para su uso en un dispositivo de usuario final.
+
+1. Configure ADAL siguiendo los pasos definidos en la [Guía para desarrolladores de Android acerca del SDK para aplicaciones de Microsoft Intune](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
+> [!NOTE] 
+> El término "Id. de cliente" vinculado a la aplicación es el mismo que el término "Id. de aplicación" de Azure Portal. 
+* Para habilitar el SSO, necesita el punto n.º 2 de la "Configuración de ADAL común".
+
+2. Habilite la inscripción predeterminada indicando el siguiente valor en el manifiesto:```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+> [!NOTE] 
+> Esta debe ser la única integración de MAM-WE en la aplicación. Podrían surgir conflictos si hay cualquier otro intento de llamada a las API de MAMEnrollmentManager.
+
+3. Habilite la directiva de MAM necesaria indicando el siguiente valor en el manifiesto:```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+> [!NOTE] 
+> Esto obliga al usuario a descargar el Portal de empresa en el dispositivo y completar el flujo de inscripción predeterminada antes de usarlo.
+
 ## <a name="limitations"></a>Limitaciones
 
 ### <a name="file-size-limitations"></a>Limitaciones del tamaño de archivo
@@ -1380,7 +1406,7 @@ En el caso de las bases de código de gran tamaño que se ejecutan sin [ProGuard
     
 ### <a name="exported-services"></a>Servicios exportados
 
- El archivo AndroidManifest.xml que se incluye en el SDK para aplicaciones de Intune contiene el elemento **MAMNotificationReceiverService**; este elemento debe ser un servicio exportado para permitir que el Portal de empresa envíe notificaciones a una aplicación habilitada. El servicio comprueba quién fue el autor de la llamada para asegurarse de que solo el Portal de empresa tiene permiso para enviar notificaciones.
+ El archivo AndroidManifest.xml que se incluye en el SDK para aplicaciones de Intune contiene el elemento **MAMNotificationReceiverService**; este elemento debe ser un servicio exportado para permitir que el Portal de empresa envíe notificaciones a una aplicación administrada. El servicio comprueba quién fue el autor de la llamada para asegurarse de que solo el Portal de empresa tiene permiso para enviar notificaciones.
 
 ### <a name="reflection-limitations"></a>Limitaciones de la reflexión
 Algunas de las clases base de MAM (como MAMActivity, MAMDocumentsProvider) contienen métodos (basados en las clases base de Android originales) que usan tipos de parámetro o de valor devuelto que solo están presentes por encima de determinados niveles de API. Por esta razón, es posible que no siempre se pueda usar la reflexión para enumerar todos los métodos de los componentes de la aplicación. Esta restricción no se limita a MAM; es la misma que se aplicaría si la propia aplicación implementara estos métodos de las clases base de Android.

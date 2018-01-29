@@ -1,6 +1,6 @@
 ---
-title: Uso de Azure AD para acceder a la API Graph de Intune
-description: Describe los pasos necesarios para que las aplicaciones que usan Azure AD accedan a la API Graph de Intune.
+title: "Cómo usar Azure AD para acceder a las API de Intune en Microsoft Graph"
+description: Describe los pasos necesarios para que las aplicaciones que usan Azure AD accedan a las API de Intune en Microsoft Graph.
 keywords: intune graphapi c# powershell roles permiso
 author: vhorne
 manager: angrobe
@@ -13,20 +13,20 @@ ms.technology:
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 351a066c8852125b6fbf26c039dd3718b63f8980
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 6637d7269f7620dc348b80533661afac8f12e0ba
+ms.sourcegitcommit: d6dc1211e9128c2e0608542b72d1caa4d6ba691d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/17/2018
 ---
-# <a name="how-to-use-azure-ad-to-access-the-intune-graph-api"></a>Uso de Azure AD para acceder a la API Graph de Intune
+# <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Cómo usar Azure AD para acceder a las API de Intune en Microsoft Graph
 
-La [API Microsoft Graph](https://developer.microsoft.com/graph/) ahora es compatible con Microsoft Intune con las API específicas y los roles de permiso.  La API Graph usa Azure Active Directory (Azure AD) para la autenticación y el control de acceso.  
-El acceso a la API Graph de Intune requiere:
+La [API de Microsoft Graph](https://developer.microsoft.com/graph/) ahora es compatible con Microsoft Intune con las API específicas y los roles de permiso.  La API de Microsoft Graph usa Azure Active Directory (Azure AD) para la autenticación y el control de acceso.  
+El acceso a las API de Intune en Microsoft Graph requieren lo siguiente:
 
 - Un identificador de la aplicación con:
 
-    - Permiso para llamar a Azure AD y a las API Graph.
+    - Permiso para llamar a Azure AD y a las API de Microsoft Graph.
     - Ámbitos de permiso pertinentes a tareas de aplicación específicas.
 
 - Credenciales de usuario con:
@@ -38,11 +38,11 @@ El acceso a la API Graph de Intune requiere:
 
 En este artículo:
 
-- Se muestra cómo registrar una aplicación con acceso a la API Graph y roles de permiso pertinentes.
+- Se muestra cómo registrar una aplicación con acceso a las API de Microsoft Graph y los roles de permiso pertinentes.
 
-- Se describen los roles de permiso de la API Graph de Intune.
+- Se describen los roles de permiso de la API de Intune.
 
-- Se proporcionan ejemplos de autenticación de la API Graph de Intune para C# y PowerShell.
+- Se proporcionan ejemplos de autenticación de la API de Intune para C# y PowerShell.
 
 - Se describe cómo admitir varios inquilinos.
 
@@ -53,9 +53,9 @@ Para obtener más información, vea:
 - [Integración de aplicaciones con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications)
 - [Comprender OAuth 2.0](https://oauth.net/2/)
 
-## <a name="register-apps-to-use-graph-api"></a>Registro de aplicaciones para utilizar la API Graph
+## <a name="register-apps-to-use-the-microsoft-graph-api"></a>Registro de aplicaciones para usar la API de Microsoft Graph
 
-Para registrar una aplicación para que utilice la API Graph:
+Para registrar una aplicación para usar la API de Microsoft Graph:
 
 1.  Inicie sesión en [Azure Portal](https://portal.azure.com) con credenciales administrativas.
 
@@ -97,7 +97,7 @@ Para registrar una aplicación para que utilice la API Graph:
 
     <img src="media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
-    Elija los roles necesarios para la aplicación mediante la colocación de una marca de verificación a la izquierda de los nombres correspondientes.  Para más información sobre los ámbitos de permiso específicos de Intune, consulte [Ámbitos de permiso de Intune](#user-content-intune-permission-scopes).  Para más información sobre los otros ámbitos de permiso de la API Graph, consulte [Referencia de permisos de Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
+    Elija los roles necesarios para la aplicación mediante la colocación de una marca de verificación a la izquierda de los nombres correspondientes.  Para más información sobre los ámbitos de permiso específicos de Intune, consulte [Ámbitos de permiso de Intune](#user-content-intune-permission-scopes).  Para obtener más información sobre los otros ámbitos de permiso de Graph API, consulte [Referencia de permisos de Microsoft Graph](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
 
     Para obtener mejores resultados, elija la menor cantidad de roles necesarios para implementar la aplicación.
 
@@ -127,15 +127,15 @@ En este punto, también puede:
 
 ## <a name="intune-permission-scopes"></a>Ámbitos de permiso de Intune
 
-Azure AD y la API Graph usan los ámbitos de permiso para controlar el acceso a los recursos corporativos.  
+Azure AD y Microsoft Graph usan los ámbitos de permiso para controlar el acceso a los recursos corporativos.  
 
-Los ámbitos de permiso (también denominados _ámbitos de OAuth_) controlan el acceso a entidades específicas de Intune y sus propiedades. En esta sección se resumen los ámbitos de permiso para las características de la API Graph de Intune.
+Los ámbitos de permiso (también denominados _ámbitos de OAuth_) controlan el acceso a entidades específicas de Intune y sus propiedades. En esta sección se resumen los ámbitos de permiso para las características de la API de Intune.
 
 Para más información:
 - [Autenticación de Azure AD](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-pass-through-authentication)
 - [Ámbitos de permiso de aplicaciones](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-scopes)
 
-Al conceder permiso a la API Graph, puede especificar los ámbitos siguientes para controlar el acceso a las características de Intune. En la tabla siguiente se resumen los ámbitos de permiso de la API Graph de Intune.  En la primera columna se muestra el nombre de la característica, tal como aparece en Azure Portal y en la segunda columna se proporciona el nombre del ámbito de permiso.
+Al conceder permiso a Microsoft Graph, puede especificar los ámbitos siguientes para controlar el acceso a las características de Intune. En la tabla siguiente se resumen los ámbitos de permiso de la API de Intune.  En la primera columna se muestra el nombre de la característica, tal como aparece en Azure Portal y en la segunda columna se proporciona el nombre del ámbito de permiso.
 
 Configuración _Habilitar acceso_ | Nombre de ámbito
 :--|:--
@@ -153,7 +153,7 @@ __Leer en la configuración de Microsoft Intune__ | [DeviceManagementServiceConf
 
 En la tabla se muestra la configuración según aparece en Azure Portal. En las siguientes secciones se describen los ámbitos en orden alfabético.
 
-En este momento, todos los ámbitos de permiso de Intune requieren acceso de administrador.  Esto significa que se necesitan las credenciales correspondientes al ejecutar aplicaciones o scripts que acceden a recursos de la API Graph de Intune.
+En este momento, todos los ámbitos de permiso de Intune requieren acceso de administrador.  Esto significa que se necesitan las credenciales correspondientes al ejecutar aplicaciones o scripts que acceden a recursos de la API de Intune.
 
 ### <a name="app-ro"></a>DeviceManagementApps.Read.All
 
@@ -319,7 +319,7 @@ Al probar cualquier ejemplo, puede recibir errores de estado HTTP 403 (prohibido
 
 Si esto ocurre, compruebe lo siguiente:
 
-- Ha actualizado el identificador de aplicación a uno autorizado para usar la API Graph y el ámbito de permiso `DeviceManagementManagedDevices.Read.All`.
+- Ha actualizado el identificador de aplicación a uno autorizado para usar la API de Microsoft Graph y el ámbito de permiso `DeviceManagementManagedDevices.Read.All`.
 
 - Las credenciales de inquilino admiten funciones administrativas.
 

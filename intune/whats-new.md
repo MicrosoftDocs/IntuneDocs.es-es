@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: angrobe
-ms.date: 01/11/2018
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5575d02d0c270e9d22e4b858d8fb00753b60448
-ms.sourcegitcommit: 5ecb0d6625e6972cc5ccdca7538f41f4aa8da46a
+ms.openlocfilehash: 8301e7fbd47ec0870f569ae03908e07cd6589549
+ms.sourcegitcommit: 5877b650d93fc9a5e8f058f845acbdbfdff828b7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/22/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novedades de Microsoft Intune
 
@@ -313,7 +313,7 @@ Cuando esté **solucionando problemas**, y en relación al usuario que está vis
 El servicio Protección contra amenazas avanzada de Windows Defender (WDATP) permite a los administradores gestionar la frecuencia con la que se generan informes relativos a los dispositivos administrados. Con la nueva opción **Frecuencia de informes de telemetría urgentes**, WDATP recopila datos y evalúa los riesgos con una frecuencia mayor. El valor predeterminado para los informes optimiza el rendimiento y la velocidad. Aumentar la frecuencia de los informes puede ser muy útil para dispositivos de alto riesgo. Esta configuración puede encontrarse en el perfil **ATP de Windows Defender** en **Configuraciones de dispositivos**.
 
 #### <a name="audit-updates----1412961---"></a>Actualizaciones de auditoría <!-- 1412961 -->  
-La auditoría de Intune proporciona un registro de las operaciones que implican cambios en Intune.  Todas las operaciones de creación, actualización, eliminación y tareas remotas se registran y se conservan durante un año.  Azure Portal proporciona una vista filtrable de los datos auditados durante los últimos 30 días en cada carga de trabajo.  Con la correspondiente API Graph es posible recuperar los datos de auditoría almacenados durante el último año.
+La auditoría de Intune proporciona un registro de las operaciones que implican cambios en Intune.  Todas las operaciones de creación, actualización, eliminación y tareas remotas se registran y se conservan durante un año.  Azure Portal proporciona una vista filtrable de los datos auditados durante los últimos 30 días en cada carga de trabajo.  Con la correspondiente API de Graph es posible recuperar los datos de auditoría almacenados durante el último año.
 
 La auditoría se encuentra en el grupo **MONITOR**. El elemento de menú **Registros de auditoría** está disponible para cada una de las carga de trabajo.
 
@@ -736,6 +736,10 @@ La aplicación de Portal de empresa para Windows 10 permite a los usuarios actua
 
 ## <a name="notices"></a>Notificaciones
 
+### <a name="plan-for-change-use-intune-on-azure-now-for-your-mdm-management----1227338---"></a>Plan de cambio: use Intune en Azure ahora para la administración de MDM<!-- 1227338 -->
+Hace más de un año anunciamos una [versión preliminar pública de Intune en Azure](https://cloudblogs.microsoft.com/enterprisemobility/2016/12/07/public-preview-of-intune-on-azure/) y hace seis meses seguimos con la [disponibilidad general de la nueva experiencia de administración](https://cloudblogs.microsoft.com/enterprisemobility/2017/06/08/the-new-intune-and-conditional-access-admin-consoles-are-ga/) para Intune. A partir del 2 de abril de 2018 se desactivará la administración de dispositivos móviles (MDM) en la consola de Silverlight clásica para los clientes que usan Intune de forma independiente. En su lugar, puede usar [Intune en Azure](https://aka.ms/Intune_on_Azure) para cubrir sus necesidades de MDM. Si todavía usa la consola clásica de MDM, deje de hacerlo y familiarícese con Intune en Azure. No se espera que este cambio afecte de ningún modo a los usuarios finales. La administración de PC clásica permanecerá en Silverlight. Puede obtener más información sobre este cambio y cómo le afecta [aquí](https://aka.ms/Intune_on_Azure_mdm).
+
+
 ### <a name="plan-for-change-easy-assist-end-of-life----1556480---"></a>Plan de cambio: final de ciclo de vida de Easy Assist <!-- 1556480 -->
 Intune usa Microsoft Easy Assist para la asistencia remota de administración de PC. Algo que quizá no sepa es que Microsoft Easy Assist es un componente de Office Live Meeting, un servicio que quedó en desuso el 31 de diciembre de 2017. Por lo tanto, Easy Assist de Intune dejará también de ofrecerse el 31 de diciembre de 2017.
 
@@ -769,15 +773,15 @@ En todos los casos, se conserva la normativa que haya previsto. No se requiere n
 ### <a name="deprecating-support-for-os-x-mavericks-1010-and-previous-versions-of-macos---1489263-plan-for-change-for-1802--"></a>Se está poniendo en desuso el soporte técnico de OS X Mavericks 10.10 y versiones anteriores de macOS <!--1489263, plan for change for 1802-->
 Anunciamos que, en febrero de 2018, la inscripción de dispositivos con OS X Yosemite 10.10 y versiones anteriores de macOS dejará de estar disponible. Intune es totalmente compatible con OS X El Capitan 10.11 y otras versiones más recientes.
 
-### <a name="new-path-for-managed-devices-in-graph-api----1586728---"></a>Nueva ruta de acceso para los dispositivos administrados en API Graph <!-- 1586728 -->
-Hemos realizado un cambio en la ruta de acceso que se usa para obtener acceso a los dispositivos administrados en la versión beta de API Graph. 
+### <a name="new-path-for-managed-devices-in-graph-api----1586728---"></a>Nueva ruta de acceso para los dispositivos administrados en Graph API <!-- 1586728 -->
+Hemos realizado un cambio en la ruta de acceso que se usa para acceder a los dispositivos administrados en la versión beta de Graph API. 
 
 | | |
 |--|--|
 | Ruta de acceso actual |  https://graph.microsoft.com/beta/managedDevices |
 | Nueva ruta de acceso | https://graph.microsoft.com/beta/deviceManagement/managedDevices |
 
-Ambas rutas de acceso funcionarán durante el mes de octubre. Después de la versión del servicio de octubre, solo funcionará la nueva ruta de acceso.  Si usa API Graph para tener acceso a los dispositivos administrados, actualice y compruebe los scripts y las aplicaciones con la nueva ruta de acceso. Para conocer otros cambios, consulte el [registro de cambios mensual de API Graph](https://developer.microsoft.com/graph/docs/concepts/changelog).
+Ambas rutas de acceso funcionarán durante el mes de octubre. Después de la versión del servicio de octubre, solo funcionará la nueva ruta de acceso.  Si usa Graph API para acceder a los dispositivos administrados, actualice y compruebe los scripts y las aplicaciones con la nueva ruta de acceso. Para conocer otros cambios, consulte el [registro de cambios mensual de Graph API](https://developer.microsoft.com/graph/docs/concepts/changelog).
 
 
 ### <a name="direct-access-to-apple-enrollment-scenarios---951869--"></a>Acceso directo a los escenarios de inscripción de Apple <!--951869-->
@@ -786,9 +790,13 @@ Para las cuentas de Intune creadas después de enero de 2017, Intune habilitó e
 ### <a name="administration-roles-being-replaced-in-azure-portal"></a>Roles de administración que se reemplazan en el Portal de Azure
 Los roles de administración de aplicaciones móviles (MAM) existentes (colaborador, propietario y de solo lectura) usados en el portal clásico de Intune (Silverlight) se reemplazan por un conjunto completo de nuevos controles de administración basada en roles (RBAC) en el Portal de Intune Azure. Cuando haya migrado a Azure Portal, tendrá que reasignar estos nuevos roles de administración a los administradores. Para obtener más información sobre RBAC y los nuevos roles, vea [Roles de Intune (RBAC) para Microsoft Intune](/intune/role-based-access-control).
 
-
-
 ## <a name="whats-coming"></a>Próximas novedades
+
+### <a name="user-experience-update-for-the-company-portal-app-for-ios---1412866--"></a>Actualización de la experiencia del usuario en la aplicación del Portal de empresa para iOS <!--1412866-->
+
+Lanzaremos una actualización importante de la experiencia de usuario para la aplicación del Portal de empresa para iOS. La actualización contará con un cambio de diseño visual completo, que incluye una apariencia y aspecto modernizados con mayor facilidad de uso y accesibilidad. Se mantendrán todas las funcionalidades del Portal de empresa de iOS actuales.
+
+Ofrecemos una versión preliminar de la aplicación del Portal de empresa actualizada para iOS a través del programa TestFlight de Apple para que la use y nos envíe sus comentarios. Regístrese en https://aka.ms/intune_ios_cp_testflight para obtener acceso a TestFlight.
 
 ### <a name="conditional-access-policies-for-intune-will-only-be-available-from-the-azure-portal-----1737088---"></a>Directivas de acceso condicional de Intune solo disponibles en Azure Portal <!-- 1737088 -->
 Se ha simplificado la ubicación en la que se configura y administra el acceso condicional. Ahora puede administrar el acceso condicional en la hoja Intune App Protection (MAM) y en la experiencia clásica de Azure AD, en [Microsoft Azure Portal](https://manage.windowsazure.com). A partir de enero, solo podrá configurar y administrar sus directivas en [Azure Portal](https://portal.azure.com), en **Azure Active Directory** > **Acceso condicional**. Para su comodidad, también puede acceder a esta hoja desde Intune, en Azure Portal, en **Intune** > **Acceso condicional**.

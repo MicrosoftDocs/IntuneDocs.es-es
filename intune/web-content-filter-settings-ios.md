@@ -6,20 +6,19 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 12/03/2017
+ms.date: 1/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 16aa0f3c-8977-4495-9fbe-ca30ad278c9e
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d0d8a6e198a58fc513645db68ae3a3ef84a3653
-ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
+ms.openlocfilehash: 54202baa7871f38581f4828bb80213be0f88ef61
+ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/30/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>Configuración de filtro de contenido web para dispositivos iOS
 
@@ -47,8 +46,11 @@ Si no especifica ninguna dirección URL, los usuarios finales no pueden acceder 
 ## <a name="configure-urls"></a>Configurar direcciones URL
 
 1. En la hoja **Filtro de contenido web**, seleccione una de las siguientes opciones si es necesario:
-    - **Direcciones URL permitidas**: en la hoja **Direcciones URL permitidas**, escriba las direcciones URL que desea permitir (omitiendo el filtro web de Apple) y elija Entrar después de cada una.
-    - **Direcciones URL bloqueadas**: en la hoja **Direcciones URL bloqueadas**, escriba las direcciones URL que desea bloquear (independientemente de la configuración de filtro web de Apple) y elija Entrar después de cada una.
+   - **Direcciones URL permitidas**: en la hoja **Direcciones URL permitidas**, escriba las direcciones URL que desea permitir (omitiendo el filtro web de Apple) y elija Entrar después de cada una.
+     > [!NOTE]
+     > Las direcciones URL que especifique aquí son las que no quiere que estén sujetas al filtro web de Apple. Estas direcciones URL no representan una lista de los únicos sitios web permitidos. Si eso es lo que quiere, use **Solo sitios web específicos**.
+
+   - **Direcciones URL bloqueadas**: en la hoja **Direcciones URL bloqueadas**, escriba las direcciones URL que desea bloquear (independientemente de la configuración de filtro web de Apple) y elija Entrar después de cada una.
 2. Cuando haya terminado, haga clic en **Aceptar**.
 
 

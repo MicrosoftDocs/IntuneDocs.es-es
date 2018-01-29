@@ -5,20 +5,20 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: angrobe
-ms.date: 12/12/2017
+ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
-ms.reviewer: oldang
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 05d60bfea2058e3360c350d227b0031b6b620913
-ms.sourcegitcommit: 4eafb3660d6f5093c625a21e41543b06c94a73ad
+ms.openlocfilehash: dc031b12ed49766c70a6a4ff373a7c5843ca21ad
+ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicaciones iOS para directivas de protección de aplicaciones con la herramienta de ajuste de aplicaciones de Intune
 
@@ -53,7 +53,6 @@ Antes de ejecutar la herramienta de ajuste de aplicaciones, necesita cumplir alg
   * La aplicación de entrada debe tener derechos establecidos antes de que la herramienta de ajuste de aplicaciones de Intune los procese. Los [derechos](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/AboutEntitlements.html) conceden permisos y características adicionales a la aplicación que van más allá de aquellas que se conceden en general. Consulte [Configurar los derechos de la aplicación](#setting-app-entitlements) para obtener instrucciones.
 
 ## <a name="apple-developer-prerequisites-for-the-app-wrapping-tool"></a>Requisitos previos de Apple Developer para la herramienta de ajuste de aplicaciones
-
 
 Para distribuir las aplicaciones ajustadas exclusivamente para los usuarios de la organización, necesita una cuenta con el [Programa Enterprise de Apple Developer](https://developer.apple.com/programs/enterprise/) y varias entidades para la firma de la aplicación que estén vinculadas a su cuenta de Apple Developer.
 
@@ -204,8 +203,8 @@ Puede usar los siguientes parámetros de línea de comandos con la herramienta d
 |**-c**|`<SHA1 hash of the signing certificate>`|
 |**-h**|Muestra información de uso detallada sobre las propiedades de línea de comandos disponibles para la herramienta de ajuste de aplicaciones.|
 |**-v**|(Opcional) Genera mensajes detallados para la consola. Se recomienda usar esta marca para depurar cualquier error.|
-|**-e**| (Opcional) Use esta marca para que la herramienta de ajuste de aplicaciones quite los derechos que faltan mientras procesa la aplicación. Consulte Configurar los derechos de la aplicación para más información.|
-|**-xe**| (Opcional) Imprime información sobre las extensiones de iOS de la aplicación y sobre los derechos necesarios para usarlas. Consulte Configurar los derechos de la aplicación para más información. |
+|**-e**| (Opcional) Use esta marca para que la herramienta de ajuste de aplicaciones quite los derechos que faltan mientras procesa la aplicación. Consulte [Configurar los derechos de la aplicación](#setting-app-entitlements) para más información.|
+|**-xe**| (Opcional) Imprime información sobre las extensiones de iOS de la aplicación y sobre los derechos necesarios para usarlas. Consulte [Configurar los derechos de la aplicación](#setting-app-entitlements) para más información. |
 |**-x**| (Opcional) `<An array of paths to extension provisioning profiles>`. Úsela si la aplicación necesita perfiles de aprovisionamiento de extensión.|
 |**-f**|(Opcional) `<Path to a plist file specifying arguments.>` Use esta marca delante del archivo [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) si decide usar la plantilla plist para especificar el resto de las propiedades de IntuneMAMPackager, como -i, -o y -p. Consulte Usar un archivo plist para la entrada de argumentos. |
 |**-b**|(Opcional) Use -b sin un argumento si quiere que la aplicación de salida ajustada tenga la misma versión de paquete que la aplicación de entrada (no recomendado). <br/><br/> Use `-b <custom bundle version>` si quiere que la aplicación ajustada tenga un valor CFBundleVersion personalizado. Si decide especificar un valor CFBundleVersion personalizado, se recomienda que incremente el valor de CFBundleVersion de la aplicación nativa según el componente menos significativo, por ejemplo, 1.0.0 -> 1.0.1. |
@@ -244,6 +243,16 @@ La aplicación ajustada se guarda en la carpeta de salida que especificó anteri
 > Al cargar una aplicación ajustada, puede intentar actualizar una versión anterior de la aplicación si ya se ha implementado en Intune una versión anterior (ajustada o nativa). Si experimenta un error, cargue la aplicación como una aplicación nueva y elimine la versión anterior.
 
 Ahora puede implementar la aplicación en los grupos de usuarios y definir directivas de protección de aplicaciones para la aplicación. La aplicación se ejecuta en el dispositivo con las directivas de protección de aplicaciones especificadas.
+
+## <a name="how-often-should-i-rewrap-my-ios-application-with-the-intune-app-wrapping-tool"></a>¿Con qué frecuencia conviene reajustar mi aplicación de iOS con la herramienta de ajuste de aplicaciones de Intune?
+Los casos principales en los que resulta necesario reajustar las aplicaciones son los siguientes:
+* La aplicación tiene una nueva versión. La versión anterior de la aplicación se ha ajustado y cargado en la consola de Intune.
+* La herramienta de ajuste de aplicaciones de Intune para iOS tiene una nueva versión que permite corregir errores importantes o bien presenta características nuevas y específicas relativas a la directiva de protección de la aplicación de Intune. Esto suele darse tras seis u ocho semanas a través del repositorio de GitHub para la [herramienta de ajuste de aplicaciones de Microsoft Intune para iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios).
+
+Para iOS, aunque es posible ajustar con un perfil de certificados y aprovisionamiento diferente al original utilizado para firmar la aplicación, si los derechos especificados en la aplicación no se incluyen en el nuevo perfil de aprovisionamiento, se producirá un error en el ajuste. Al usar la opción de línea de comandos "-e", que quita los derechos que faltan de la aplicación, para forzar que el ajuste no produzca un error en este escenario, puede provocar interrupciones de la funcionalidad en la aplicación.
+
+Entre los procedimientos recomendados para el reajuste destacan los siguientes:
+* Asegurarse de que otro perfil de aprovisionamiento tenga todos los derechos necesarios como cualquier perfil de aprovisionamiento anterior. 
 
 ## <a name="error-messages-and-log-files"></a>Archivos de registro y mensajes de error
 Use la siguiente información para solucionar los problemas que tenga con la herramienta de ajuste de aplicaciones.

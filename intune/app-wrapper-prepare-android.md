@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a691786ce2ee975086899844b285a91f676aa71f
-ms.sourcegitcommit: e76dbd0882526a86b6933ace2504f442e04de387
+ms.openlocfilehash: 1673fa1e9c580c1554537530341f87b1580e79eb
+ms.sourcegitcommit: 53d272defd2ec061dfdfdae3668d1b676c8aa7c6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/13/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicaciones Android para directivas de protección de aplicaciones con la herramienta de ajuste de aplicaciones de Intune
 
@@ -81,7 +81,7 @@ Tome nota de la carpeta donde instala la herramienta. La ubicación predetermina
 |Propiedad|Información de|Ejemplo|
 |-------------|--------------------|---------|
 |**-InputPath**&lt;String&gt;|Ruta de acceso de la aplicación de Android (.apk) de origen.| |
-|**-OutputPath**&lt;String&gt;|Ruta de acceso a la aplicación de Android de salida. Si se trata de la misma ruta de acceso al directorio que InputPath, se producirá un error en el empaquetado.| |
+ |**-OutputPath**&lt;String&gt;|Ruta de acceso a la aplicación de Android de salida. Si se trata de la misma ruta de acceso al directorio que InputPath, se producirá un error en el empaquetado.| |
 |**-KeyStorePath**&lt;String&gt;|Ruta de acceso al archivo de almacén de claves que contiene el par de claves pública y privada para firmar.|De forma predeterminada los archivos de almacén de claves se guardan en "C:\Archivos de programa (x86)\Java\jreX.X.X_XX\bin". |
 |**-KeyStorePassword**&lt;SecureString&gt;|Contraseña usada para descifrar el almacén de claves. Android requiere que todos los paquetes de aplicaciones (.apk) estén firmados. Utilice la herramienta de claves de Java para generar el valor KeyStorePassword. Más información sobre Java [Keystore](https://docs.oracle.com/javase/7/docs/api/java/security/KeyStore.html) aquí.| |
 |**-KeyAlias**&lt;String&gt;|Nombre de la clave que se usará para firmar.| |
@@ -115,7 +115,7 @@ La aplicación ajustada se genera y guarda, junto con un archivo de registro en 
 
 ## <a name="how-often-should-i-rewrap-my-android-application-with-the-intune-app-wrapping-tool"></a>¿Con qué frecuencia conviene reajustar mi aplicación de Android con la herramienta de ajuste de aplicaciones de Intune?
 Los casos principales en los que resulta necesario reajustar las aplicaciones son los siguientes:
-* La aplicación tiene una nueva versión.
+* La aplicación tiene una nueva versión. La versión anterior de la aplicación se ha ajustado y cargado en la consola de Intune.
 * La herramienta de ajuste de aplicaciones de Intune para Android tiene una nueva versión que permite corregir errores importantes o bien presenta características nuevas y específicas relativas a la directiva de protección de la aplicación de Intune. Esto suele darse cada seis u ocho semanas a través del repositorio de GitHub para la [herramienta de ajuste de aplicaciones de Microsoft Intune para Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android).
 
 Entre los procedimientos recomendados para el reajuste destacan los siguientes: 
@@ -144,6 +144,32 @@ Para evitar posibles suplantaciones de identidad, la divulgación de informació
 -   Asegúrese de que la aplicación procede de un origen de confianza.
 
 -   Proteja el directorio de salida que contiene la aplicación ajustada. Considere el uso de un directorio de nivel de usuario para la salida.
+
+## <a name="requiring-user-login-prompt-for-an-automatic-app-we-service-enrollment-requiring-intune-app-protection-policies-in-order-to-use-your-wrapped-android-lob-app-and-enabling-adal-sso-optional"></a>Mensaje de Requerir inicio de sesión de usuario para la inscripción automática del servicio APP-WE, que requiere directivas de protección de aplicaciones de Intune para poder usar la aplicación ajustada de LOB de Android, así como para habilitar el SSO de ADAL (opcional)
+
+La siguiente es una guía para el mensaje de Requerir usuario al iniciar la aplicación para una inscripción automática del servicio APP-WE (denominada**inscripción predeterminada** en esta sección), que requiere directivas de protección de aplicaciones de Intune para permitir que solo los usuarios protegidos de Intune usen la aplicación ajustada de LOB de Android. También se describe cómo habilitar el SSO para la aplicación ajustada de LOB de Android. 
+
+> [!NOTE] 
+> Las ventajas de la **inscripción predeterminada** incluyen un método simplificado de obtención de la directiva del servicio APP-WE para una aplicación en el dispositivo.
+
+### <a name="general-requirements"></a>Requisitos generales
+* El equipo del SDK de Intune solicitará el identificador de aplicación de su aplicación. Puede encontrar este dato mediante [Azure Portal](https://portal.azure.com/), en **Todas las aplicaciones**, en la columna de **Id. de aplicación**. Una buena manera de ponerse en contacto con el equipo de SDK de Intune es enviando un correo electrónico a msintuneappsdk@microsoft.com.
+     
+### <a name="working-with-the-intune-sdk"></a>Trabajar con el SDK de Intune
+Estas instrucciones son específicas para todas las aplicaciones de Android y Xamarin que quieren solicitar directivas de protección de aplicaciones de Intune para su uso en un dispositivo de usuario final.
+
+1. Configure ADAL siguiendo los pasos definidos en la [Guía para desarrolladores de Android acerca del SDK para aplicaciones de Microsoft Intune](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
+> [!NOTE] 
+> El término "Id. de cliente" vinculado a la aplicación es el mismo que el término "Id. de aplicación" de Azure Portal vinculado a la aplicación. 
+* Para habilitar el SSO, necesita el punto n.º 2 de la "Configuración de ADAL común".
+
+2. Habilite la inscripción predeterminada indicando el siguiente valor en el manifiesto:```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
+> [!NOTE] 
+> Esta debe ser la única integración de MAM-WE en la aplicación. Podrían surgir conflictos si hay cualquier otro intento de llamada a las API de MAMEnrollmentManager.
+
+3. Habilite la directiva de MAM necesaria indicando el siguiente valor en el manifiesto:```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
+> [!NOTE] 
+> Esto obliga al usuario a descargar el Portal de empresa en el dispositivo y completar el flujo de inscripción predeterminada antes de usarlo.
 
 ### <a name="see-also"></a>Vea también
 - [Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles mediante Microsoft Intune](apps-prepare-mobile-application-management.md)
