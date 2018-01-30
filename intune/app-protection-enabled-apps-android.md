@@ -5,7 +5,7 @@ description: "En este tema se describe qué esperar cuando la aplicación de And
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: a6816285-8e43-4dc8-bca0-e80ec5ef01e6
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d6fce4a48245bc8ba7533380fa5a365d44705ee
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 7ee7977d8608327560b4df0c1bfbcc60ff150da9
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Qué esperar cuando la aplicación Android está administrada por directivas de protección de aplicaciones 
 
@@ -80,7 +80,7 @@ Se admiten los siguientes tipos de archivos:
 |Pfile es un formato "contenedor" genérico para archivos protegidos que encapsula el contenido cifrado y las licencias de Azure Information Protection y puede usarse para proteger cualquier tipo de archivo.|Los archivos de texto, incluidos XML, CSV, etc. pueden abrirse para verse en la aplicación incluso cuando están protegidos. Tipos de archivo: txt, ptxt, csv, pcsv, log, plog, xml, pxml.|
 ---------------
 ## <a name="next-steps"></a>Pasos siguientes
-[Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones](app-protection-enabled-apps-ios.md)
+[What to expect when your iOS app is managed by app protection policies](app-protection-enabled-apps-ios.md) (Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones)
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 [Creación e implementación de directivas de protección de aplicaciones con Microsoft Intune](app-protection-policies.md)

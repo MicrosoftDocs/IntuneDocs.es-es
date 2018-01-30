@@ -4,23 +4,24 @@ description: "Obtenga información sobre cómo inscribir un dispositivo iOS en l
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 04/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 6d8c6372-f2ce-4558-8886-1d7c1966699c
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 13f284c62e1232a560ec9e5186de4055d616ef3a
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 90b07e1f18ab3cb9c74337e2a3538f186f4ea52a
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="enroll-your-ios-device-in-telecom-expense-management"></a>Inscripción del dispositivo iOS en la administración de gastos de telecomunicaciones
 
@@ -53,11 +54,11 @@ Seleccione la opción adecuada y recibirá una notificación para instalar la ap
 
   ![Captura de pantalla de la aplicación Datalert donde se solicita el número de teléfono.](./media/ios-enroll-12-tem-datalert-phone-number.png)
 
-2. Después, recibirá un código de comprobación a través de un mensaje SMS. Escriba el código y pulse __Aceptar__.
+2. Después, recibirá un código de verificación a través de un mensaje SMS. Escriba el código y pulse __Aceptar__.
 
   ![Captura de pantalla de la aplicación Datalert donde se solicita el código de verificación SMS.](./media/ios-enroll-13-tem-datalert-sms.png)
 
-3. Una vez que haya proporcionado el código de comprobación, se completará la instalación de Datalert. Pulse __Finalizar__ y podrá supervisar los datos desde la aplicación Datalert.
+3. Una vez que haya proporcionado el código de verificación, se completará la instalación de Datalert. Pulse __Finalizar__ y podrá supervisar los datos desde la aplicación Datalert.
 
   ![Captura de pantalla de la aplicación Datalert con la supervisión del uso de datos de hoy en día.](./media/ios-enroll-14-tem-datalert-monitoring-active.png)
 

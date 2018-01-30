@@ -4,23 +4,24 @@ description:
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
-ms.date: 02/23/2017
+manager: dougeby
+ms.date: 01/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: adc6af23-b22f-42e5-955a-4dffbdb8b42b
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f5c2536e4566baa2661b77f5574085410784a787
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 3926b64bacb1acde29146aed9d3030729e8b9b17
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="remotely-lock-your-device-from-the-company-portal-website"></a>Bloquear un dispositivo de forma remota desde el sitio web del Portal de empresa
 
@@ -33,14 +34,13 @@ Para estar seguro, puede bloquearlo mediante la opción de bloqueo remoto en el 
 * Android
 * iOS
 * macOS
+* Windows 10
 * Windows 10 Mobile (si el dispositivo ya tenía un código de acceso establecido)
 * Windows Phone 8.1 (si el dispositivo ya tenía un código de acceso establecido)
 
 ## <a name="to-use-remote-lock-to-lock-your-device"></a>Para usar el bloqueo remoto para bloquear el dispositivo
 
-1.  En el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog), pulse el botón __menú__ ![Pequeña imagen del botón menú, tres barras horizontales apiladas en paralelo.](/Intune/whats-new/media/CP_hamburger_menu.png), luego seleccione __Mis dispositivos__.
-
-  ![Imagen del sitio web del Portal de empresa con un menú lateral expandido en el lado izquierdo de la pantalla con botones Inicio, Todas las aplicaciones, Mis dispositivos, Departamento de soporte técnico y Cerrar sesión.](/media/iwp-expanded-sidebar.png)
+1.  En el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog), pulse el botón __Menú__ y seleccione __Mis dispositivos__.
 
 2. En la página __Mis dispositivos__, seleccione el nombre del dispositivo que quiere bloquear.
 

@@ -5,7 +5,7 @@ description: Aprenda a usar Empezar de cero para restablecer equipos con Windows
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 08/09/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 5aa5cfa3-c483-4099-b40f-578ff8dca425
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 181818bf40e569d0354ee5bd661169c529cb3d07
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: dce888c1985ff4761100d15d898b654d77318b65
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>Uso de Empezar de cero para restablecer dispositivos Windows 10 con Intune
 

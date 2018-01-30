@@ -4,21 +4,22 @@ description: Aprenda a resolver una amenaza detectada por Lookout for Work en iO
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 03/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: dd6aec3a-4063-4054-8d0f-d2f2034f0d3d
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 6cfc144b188b1701a2e5e599af43d12c98d48496
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: f317c8ddf89510e695b727548d5abafdf9319c25
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>Resolver una amenaza detectada por Lookout for Work
 
@@ -34,7 +35,7 @@ Si hay un virus u otra amenaza de seguridad en el dispositivo inscrito e intenta
 
 ![Mensaje de error de Lookout for Work con vínculo al sitio web de Portal de empresa](./media/mtd-go-to-device-management-portal-android.png)
 
-Pulse el vínculo del **portal de administración de dispositivos** para ir al [sitio web de Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog), donde verá instrucciones sobre cómo solucionar el problema.
+Pulse el vínculo del **portal de administración de dispositivos** para ir al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog), donde verá instrucciones sobre cómo solucionar el problema.
 
 ## <a name="example-of-an-app-that-lookout-for-work-sees-as-a-threat"></a>Ejemplo de aplicación que Lookout for Work considera una amenaza
 
