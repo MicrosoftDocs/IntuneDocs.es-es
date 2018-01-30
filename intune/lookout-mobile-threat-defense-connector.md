@@ -5,7 +5,7 @@ description: Configure el conector Mobile Threat Defense de Lookout con Intune.
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 06/09/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 3a730a5d-2a90-42b0-aa28-aadfc7a18788
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2c13aa920358526deddcdb912833217c88f27371
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 41270fb217c87880e67c1c5e0adf319576031126
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Conector Lookout Mobile Threat Defense con Intune
 
@@ -63,7 +63,7 @@ Cuando las aplicaciones malintencionadas como malware se detectan en dispositivo
 
 ![Diagrama que muestra una directiva de acceso condicional bloqueando el acceso cuando se determina que un dispositivo es no conforme debido a aplicaciones malintencionadas en el dispositivo](./media/malicious-apps-blocked.png)
 
-**Acceso concedido tras la solución:**
+**Acceso concedido tras la corrección:**
 
 ![diagrama en el que se muestra la directiva de acceso condicional concediendo acceso cuando se determina que, tras la solución, el dispositivo es conforme](./media/malicious-apps-unblocked.png)
 
@@ -86,7 +86,7 @@ Detecte amenazas para la red como ataques de tipo Man-in-the-middle y evite la s
 ![diagrama en el que se muestra el acceso condicional bloqueando el acceso del dispositivo a SharePoint Online en función de la detección de amenazas](./media/network-spo-blocked.png)
 
 
-**Acceso concedido tras la solución:**
+**Acceso concedido tras la corrección:**
 
 ![diagrama en el que se muestra el acceso condicional permitiendo el acceso tras la corrección de la amenaza de red](./media/network-spo-unblocked.png)
 

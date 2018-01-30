@@ -5,7 +5,7 @@ description: "Configuración de la suscripción a Lookout con Intune"
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6d63ddcd8f60ac3491087e3e76949f2a49cf7b9b
-ms.sourcegitcommit: a7c1e10e615e5c975bb5d52eca986c5cf5287687
+ms.openlocfilehash: 6b5d9a5fafdec0750e943dcfb3542d4dfd69f6ae
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Configurar la integración de Mobile Threat Defense de Lookout con Intune
 
@@ -44,7 +44,7 @@ Los pasos siguientes son necesarios para configurar la suscripción de Mobile Th
 El inquilino de Lookout Mobility Endpoint Security se asociará a la suscripción a Azure AD para integrar Lookout con Intune. Para habilitar la suscripción al servicio Mobile Threat Defense de Lookout, el soporte técnico de Lookout (enterprisesupport@lookout.com) necesita la siguiente información:
 
 * **Identificador del inquilino de Azure AD**
-* El **identificador del objeto de grupo de Azure AD** para el acceso **completo** a la consola de Lookout
+* **Id. del objeto de grupo de Azure AD** para el acceso **completo** a la consola de Lookout
 * El **identificador del objeto de grupo de Azure AD** para el acceso **restringido** a la consola de Lookout (opcional)
 
 Use los pasos siguientes para recopilar la información que debe proporcionar al equipo de soporte técnico de Lookout.

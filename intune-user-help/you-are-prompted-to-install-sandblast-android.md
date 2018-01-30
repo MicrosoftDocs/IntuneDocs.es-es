@@ -1,59 +1,60 @@
 ---
-title: You need to install SandBlast Mobile Protect on your Android device | Microsoft Docs
-description: Learn how to install SandBlast Mobile Protect on your Android device.
+title: Tiene que instalar SandBlast Mobile Protect en su dispositivo Android | Microsoft Docs
+description: Aprenda a instalar SandBlast Mobile Protect en su dispositivo Android.
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 754f4ea5-cff4-414d-8cd1-900238f79e84
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: 287917669523e257a42b47d0132de7cc0dcf18e0
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 277702604defe593fad9b3552d317c28b32710b9
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
-# <a name="you-need-to-install-sandblast-mobile-protect-on-your-android-device"></a>You need to install SandBlast Mobile Protect on your Android device
+# <a name="you-need-to-install-sandblast-mobile-protect-on-your-android-device"></a>Tiene que instalar SandBlast Mobile Protect en su dispositivo Android
 
-Before you can access your work, your company support needs you to install the SandBlast Mobile Protect app, which helps to protect your device by finding potential security threats.
+Para poder obtener acceso a su trabajo, el departamento de soporte técnico de la empresa necesitará que instale la aplicación SandBlast Mobile Protect para detectar posibles amenazas de seguridad y proteger su dispositivo.
 
-If you have trouble with the installation, try the troubleshooting steps at the end of this topic.
+Si tiene problemas con la instalación, pruebe los pasos de solución de problemas al final de este tema.
 
-**What you need to do:**
+**Haga lo siguiente:**
 
-1. Drag down from the top of the screen to open the Notifications bar, and then tap **Required application – Install Skycure from Play Store**. You can also find this inside of the Company Portal app under __Compliance Details__.
+1. Arrastre hacia abajo desde la parte superior de la pantalla para abrir la barra de notificaciones y luego pulse **Aplicación requerida: instalar Skycure desde Play Store**. También puede encontrar esta opción en __Detalles de cumplimiento__ dentro de la aplicación del Portal de empresa.
 
-2. You are taken to the SandBlast Mobile Protect installation page in the Play Store. Install SandBlast Mobile Protect, and then tap **ACCEPT** to let SandBlast Mobile Protect access your device.
+2. Se le dirigirá a la página de instalación de SandBlast Mobile Protect en Play Store. Instale SandBlast Mobile Protect y pulse **ACEPTAR** para que SandBlast Mobile Protect pueda obtener acceso a su dispositivo.
 
-3. Open SandBlast Mobile Protect, and then tap **VERIFY**.
+3. Abra SandBlast Mobile Protect y pulse **COMPROBAR**.
 
-4. Tap **Sign in with Azure Active Directory**, and then enter the account that you use to access work or school email and files.
+4. Pulse **Iniciar sesión en Azure Active Directory** y, después, escriba la cuenta que usa para tener acceso a los archivos y correos electrónicos profesionales o educativos.
 
-5. Select the account that you use to access work or school email and files, and then tap **ADD ACCOUNT**.
+5. Seleccione la cuenta que usa para tener acceso a los archivos y correos electrónicos profesionales o educativos y, después, pulse **AGREGAR CUENTA**.
 
-6. Tap **Accept** to give SandBlast Mobile Protect permission to sign you in and read your profile.
+6. Pulse **Aceptar** para conceder permiso a SandBlast Mobile Protect para que inicie su sesión y lea su perfil.
 
-7. Review the items about how SandBlast Mobile Protect protects your device, and then tap **OK**. SandBlast Mobile Protect will take a few moments to set up, then will begin to check for security threats on your device.
+7. Revise los artículos sobre cómo SandBlast Mobile Protect protege su dispositivo y, después, pulse **Aceptar**. SandBlast Mobile Protect tardará unos minutos en configurarse y, luego, empezará a buscar amenazas de seguridad en el dispositivo.
 
-8. SandBlast Mobile Protect starts to check right away for security threats on your device.
+8. SandBlast Mobile Protect comienza a comprobar inmediatamente si existen amenazas de seguridad en el dispositivo.
 
-9.  If SandBlast Mobile Protect finds a security threat on your device, you will see instructions about how to fix the issue.
+9.  Si SandBlast Mobile Protect encuentra una amenaza de seguridad en el dispositivo, verá instrucciones sobre cómo solucionar el problema.
 
-10.  If no threats are found, all three threat types will appear green.
+10.  Si no se detecta ninguna amenaza, los tres tipos de amenaza aparecerán en verde.
 
-11. The **Device Details** screen in the Company Portal shows that you are now in compliance with your company’s security requirements.
+11. La pantalla **Detalles del dispositivo** del Portal de empresa muestra que ahora cumple con los requisitos de seguridad de la empresa.
 
-    ![Your device is now in compliance with policies](./media/mtd-device-now-compliant-android.png)
+    ![El dispositivo cumple ahora con las directivas](./media/mtd-device-now-compliant-android.png)
 
-**If the installation doesn't work**
+**Si la instalación no funciona**
 
-Sometimes installations can fail due to technical issues beyond your control. If this happens, try installing SandBlast Mobile Protect [manually from the Play Store](https://play.google.com/store/apps/details?id=com.lacoon.security.fox).
+A veces, las instalaciones pueden producir errores debido a problemas técnicos fuera de su control. Si esto sucede, intente instalar SandBlast Mobile Protect [manualmente desde Play Store](https://play.google.com/store/apps/details?id=com.lacoon.security.fox).
 
-Still need help? Contact your company support. For contact information, check the [Company Portal website](https://portal.manage.microsoft.com#HelpDeskDialog).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

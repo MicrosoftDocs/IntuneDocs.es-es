@@ -5,7 +5,7 @@ description: Aprenda a crear una directiva de cumplimiento para dispositivos Win
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 13fc7783-d4de-47d0-b1b8-4c8710a9e6ab
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76d1bb091553fbe5a1220c818289f59f4ef4100b
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 59a68bbe3c7030e44e4b1eacb5601dd7a3121673
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Creación de una directiva de cumplimiento de dispositivos para dispositivos Windows en Intune
 
@@ -36,8 +36,8 @@ En la tabla siguiente se describe cómo administrar la configuración de no conf
 |----| ----| --- |
 | **Configuración de PIN o contraseña** | Corregido | Corregido |   
 | **Cifrado del dispositivo** | No aplicable | Corregido |   
-| **Dispositivo liberado o modificado** | No aplicable | No aplicable |  
-| **Perfil de correo electrónico** | No aplicable | No aplicable |   
+| **Dispositivo liberado o modificado** | No disponible | No disponible |  
+| **Perfil de correo electrónico** | No disponible | No disponible |   
 | **Versión de SO mínima** | En cuarentena | En cuarentena |   
 | **Versión de SO máxima** | En cuarentena | En cuarentena |   
 | **Atestación de estado de Windows** | Windows 10 y Windows 10 Mobile están en cuarentena|No aplicable: Windows 8.1 |

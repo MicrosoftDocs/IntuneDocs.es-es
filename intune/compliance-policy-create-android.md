@@ -5,7 +5,7 @@ description: Aprenda a crear una directiva de cumplimiento para dispositivos And
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 64e16233a9acb021c0a50b32f3eb750125eb0638
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: b67314ec37198553adc226424bc226293350453b
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Creación de una directiva de cumplimiento de dispositivos para dispositivos Android en Intune
 
@@ -114,10 +114,10 @@ En la tabla siguiente se describe cómo administrar la configuración de no conf
 | **Configuración de PIN o contraseña** |  En cuarentena |
 | **Cifrado del dispositivo** | En cuarentena |
 | **Dispositivo liberado o modificado** | En cuarentena (no es una configuración) |
-| **Perfil de correo electrónico** | No aplicable |
+| **Perfil de correo electrónico** | No disponible |
 | **Versión de SO mínima** | En cuarentena |
 | **Versión de SO máxima** |   En cuarentena |
-| **Atestación de estado de Windows** | No aplicable |
+| **Atestación de estado de Windows** | No disponible |
 
 --------------------------
 
