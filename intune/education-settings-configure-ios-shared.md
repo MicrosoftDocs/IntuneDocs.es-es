@@ -5,7 +5,7 @@ description: "Conozca la configuración de Intune que puede usar para controlar 
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9b24ee84d339b728addd753cb309b4d8572e5582
-ms.sourcegitcommit: e5501cdf08d3e79bc51dc726697606be02110e57
+ms.openlocfilehash: c183af24e953f87e12e87654f767dd9a30f8509f
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/21/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>Configuración del entorno educativo de Intune para dispositivos iPad compartidos
 
@@ -63,7 +63,7 @@ Puede importar información a SDS mediante uno de los siguientes métodos:
 ### <a name="configure-general-settings"></a>Configuración de las opciones generales
 
 1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Other** >  (Otros) **Intune**.
+2. Elija **Más servicios** > **Otros** > **Intune**.
 3. En la hoja **Intune**, elija **Configurar dispositivos**.
 4. En la hoja **Configuración del dispositivo**, elija **Administrar** > **Perfiles**.
 5. En la hoja de perfiles, elija **Create Profile** (Crear perfil).
@@ -177,7 +177,7 @@ Ahora el dispositivo está asociado a la categoría de dispositivo. Repita este 
 ## <a name="step-6--create-classroom-profiles"></a>Paso 6: Crear perfiles de aulas
 
 1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Other** >  (Otros) **Intune**.
+2. Elija **Más servicios** > **Otros** > **Intune**.
 3. En la hoja **Intune**, elija **Configurar dispositivos**.
 4. En la hoja **Configuración del dispositivo**, seleccione **Administrar** > **Perfiles de carro**.
 5. En la hoja de perfiles, elija **Create Profile** (Crear perfil).
@@ -193,7 +193,7 @@ El perfil se crea y aparece en la hoja de la lista de perfiles.
 ## <a name="step-7---assign-the-cart-profile-to-classes"></a>Paso 7: Asignar el perfil de carro a las clases
 
 1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Other** >  (Otros) **Intune**.
+2. Elija **Más servicios** > **Otros** > **Intune**.
 3. En la hoja **Intune**, elija **Configurar dispositivos**.
 4. En la hoja **Configuración del dispositivo**, pulse **Supervisar** > **Estado de la asignación**.
 5. En la hoja **Estado de la asignación**, seleccione el **Perfil de carro** que ha creado.

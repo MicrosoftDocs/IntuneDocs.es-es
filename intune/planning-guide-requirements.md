@@ -4,7 +4,7 @@ description: "Este artículo ayuda a determinar los requisitos de los escenarios
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: fd8cb5f7-19f0-4d80-8825-2bafa49624af
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 65a1fb8fb41fa8d9f3e707c73bf752a997a8a1a1
-ms.sourcegitcommit: 94d3d86f8ae9f82a9872384bbaae53580036a4ff
+ms.openlocfilehash: 7f4f080201d1a089a8ae10a6acf81c0c28fa33c9
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="determine-use-case-scenario-requirements"></a>Determinación de los requisitos de los escenarios de casos de uso
 
@@ -30,7 +30,7 @@ También puede tener grupos organizativos en el escenario de caso de uso corpora
 
 Estos son algunos ejemplos de requisitos de casos de uso de la organización, que muestran diferentes conjuntos de requisitos para cada escenario de casos de subuso o uso, grupo organizativo y plataforma de dispositivos móviles. También puede usar la tabla siguiente para especificar los requisitos de casos de uso de la organización:
 
-| **Casos de uso** | **Casos de subuso** | **Grupos** | **Plataformas de dispositivos** | **Requirements** |
+| **Casos de uso** | **Casos de subuso** | **Grupos** | **Plataformas de dispositivos** | **Requisitos** |
 |:---:|:---:|:---:|:---:|:---:|
 | Corporativos | Trabajador de la información | Recursos humanos, finanzas | iOS | Correo electrónico seguro, configuración de dispositivo, perfiles, aplicaciones |                                                          
 | Corporativos | Ejecutivos | Recursos humanos, finanzas | iOS | Correo electrónico seguro, configuración de dispositivo, perfiles, aplicaciones |                                                         

@@ -5,7 +5,7 @@ description: "Obtenga información sobre cómo crear una directiva de cumplimien
 keywords: 
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/17/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 0444183e-f924-4605-96a8-48fdfbc58fd1
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3cf085ff2ee4668ea4c14718719c466bcb982b10
-ms.sourcegitcommit: d4623cbfe296ae370c3d88c3213fffbda255e474
+ms.openlocfilehash: 7eb36cc8de655766afabc60f33a316cb6ef3bfb8
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>Creación de una directiva de cumplimiento para dispositivos macOS con Intune
 
@@ -47,7 +47,7 @@ En la tabla siguiente se describe cómo administrar la configuración de no conf
 | **Perfil de correo electrónico** | En cuarentena |
 |**Versión de SO mínima** | En cuarentena |
 | **Versión de SO máxima** | En cuarentena |  
-| **Atestación de estado de Windows** | No aplicable |  
+| **Atestación de estado de Windows** | No disponible |  
 ----------------------------
 
 

@@ -5,7 +5,7 @@ description: "Aprenda a usar Intune para configurar características en los disp
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/7/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ea280ac6858485aa4e3d64d11835f002c5bb35ca
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 98512f3d36af8c1c90440279d84b3a336bba339b
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-configure-device-feature-settings-in-microsoft-intune"></a>Configuración de características de dispositivos en Microsoft Intune
 
@@ -35,13 +35,13 @@ Use la información de este tema para conocer los aspectos básicos de la config
 2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
 3. En la hoja **Intune**, elija **Configuración del dispositivo**.
 2. En la hoja **Configuración del dispositivo**, elija **Administrar** > **Perfiles**.
-3. En la hoja de perfiles, elija **Create Profile** (Crear perfil).
-4. En la hoja **Crear perfil	**, escriba un **Nombre** y una **Descripción** para el perfil de características del dispositivo.
+3. En la hoja de perfiles, elija **Crear perfil**.
+4. En la hoja **Crear perfil**, escriba la información pertinente en **Nombre** y **Descripción** para el perfil de características del dispositivo.
 5. En la lista desplegable **Plataforma**, seleccione la plataforma de dispositivo a la que quiere aplicar la configuración. Actualmente, puede elegir una de las siguientes plataformas para las características del dispositivo:
     - **iOS**
     - **macOS**
 6. En la lista desplegable **Tipo de perfil**, elija **Características del dispositivo**. 
-7. Dependiendo de la plataforma que eligió, las opciones que pueda configurar serán diferentes. Vaya a uno de los siguientes temas para conocer más detalles sobre la configuración para cada plataforma:
+7. Dependiendo de la plataforma que eligió, las opciones que pueda configurar serán diferentes. Vaya a uno de los siguientes temas para la configuración detallada para cada plataforma:
     - [Configuración de AirPrint para iOS y MacOS](air-print-settings-ios-macos.md)
     - [Configuración de AirPlay para iOS](airplay-settings-ios.md)
     - [Configuración de diseño de pantalla principal para iOS](home-screen-settings-ios.md)

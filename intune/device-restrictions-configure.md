@@ -5,7 +5,7 @@ description: "Aprenda a usar Intune para configurar los valores y las caracterí
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 04/12/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 552e098438e7515c1a4b82a0a8dcb941c69ac81e
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 4cd21d6e87dfa142fe9e3ef4d9bbbc0be87eca9b
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos en Microsoft Intune
 
@@ -57,7 +57,7 @@ Para crear un perfil de dispositivo que contenga la configuración de restriccio
 8. Cuando haya terminado, vuelva a la hoja **Create Profile** (Crear perfil) y presione **Crear**.
 
 El perfil se crea y aparece en la hoja de la lista de perfiles.
-Si desea continuar y asignar este perfil a grupos, consulte [Asignación de perfiles de dispositivo](device-profile-assign.md).
+Si desea continuar y asignar este perfil a grupos, consulte [Asignación de perfiles de dispositivo de Microsoft Intune](device-profile-assign.md).
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 
