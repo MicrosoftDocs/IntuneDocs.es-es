@@ -4,21 +4,22 @@ description: Aprenda a instalar Lookout for Work para Android.
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 0d357dc0-3e14-43d0-9874-6886ebc847fc
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.custom: intune-enduser
-ms.openlocfilehash: c4e0eb3832114c83539025af9d7afebe38e68d81
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 3c07a84f029ee5b997b3bfe20a73de6335057cbc
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="install-lookout-for-work"></a>Instalación de Lookout for Work
 
@@ -44,9 +45,9 @@ Si tiene problemas con la instalación, pruebe los pasos de solución de problem
 
   ![inicie sesión con su cuenta profesional o educativa](./media/lookout-sign-in-azure-android.png)
 
-5. Seleccione la cuenta que usa para tener acceso a los archivos y correos electrónicos profesionales o educativos y, después, pulse **AGREGAR CUENTA**.
+5. Seleccione la cuenta que utilice para obtener acceso a los archivos y al correo electrónico escolar o del trabajo y, a continuación, seleccione **AGREGAR CUENTA**.
 
-  ![seleccione su cuenta profesional o educativa y pulse Agregar cuenta](./media/lookout-pick-account-android.png)
+  ![seleccione la cuenta profesional o educativa y seleccione Agregar cuenta](./media/lookout-pick-account-android.png)
 
 6. Pulse **Aceptar** para concederle permiso a Lookout for Work para que inicie su sesión y lea su perfil. Una pantalla muestra que Lookout for Work se está conectando a Lookout Security Cloud.
 
@@ -62,7 +63,7 @@ Si tiene problemas con la instalación, pruebe los pasos de solución de problem
 
   Lookout for Work comienza a comprobar inmediatamente si existen amenazas de seguridad en su dispositivo. Si no se encuentran amenazas, verá la siguiente pantalla.
 
-  ![Lookout for Work no ha encontrado amenazas de seguridad](./media/lookout-scan-no-threats-found-android.png)
+  ![Lookout for Work no ha detectado ninguna amenaza de seguridad](./media/lookout-scan-no-threats-found-android.png)
 
   La pantalla Detalles del dispositivo del portal de empresa muestra que ahora cumple con los requisitos de seguridad de su empresa.
 

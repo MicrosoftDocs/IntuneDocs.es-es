@@ -5,7 +5,7 @@ description: Utilice las configuraciones personalizadas para crear perfiles de V
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 06/03/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cc1374c3ccb60ed5a3dc57449f5c772963b8efc7
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 70af9ce41efa7f52987e1103b89493b4cf200091
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-create-custom-vpn-profiles-in-microsoft-intune"></a>Creación de perfiles de VPN personalizados en Microsoft Intune
 
@@ -56,7 +56,7 @@ Este tipo de directiva puede ser útil cuando las directivas estándar de VPN de
 4.  Después de haber especificado todos los valores de URI que necesita, elija **Aceptar** y, luego,, en la hoja **Create Profile** (Crear perfil), elija **Crear**.
 
 El perfil se crea y aparece en la hoja de la lista de perfiles.
-Si desea continuar y asignar este perfil a grupos, consulte [Asignación de perfiles de dispositivo](device-profile-assign.md).
+Si desea continuar y asignar este perfil a grupos, consulte [Asignación de perfiles de dispositivo de Microsoft Intune](device-profile-assign.md).
 
 
 

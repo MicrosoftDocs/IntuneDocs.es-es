@@ -4,23 +4,24 @@ description:
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: ba593c08-1a78-4013-8525-b45a948772ec
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f9c91c85b4a93fb211b5cd278dd82277a58cb08e
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: ab67a6f2fd1f861ba197464a9e369ca0b54e6b5d
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>El dispositivo Android parece estar cifrado, pero el Portal de empresa indica lo contrario
 
@@ -36,10 +37,6 @@ Las versiones más recientes de Android, especialmente desde la versión 7.0, re
 
 Ciertos dispositivos Android le exigen que cree un PIN de inicio para garantizar que el dispositivo sea seguro. Existen muchas versiones de Android de muchos fabricantes distintos. Para intentar corregir este problema, encuentre una ubicación en la aplicación de configuración para habilitar esta opción. Por ejemplo, en el Samsung Galaxy S7, habilita el inicio seguro en **Configuración** > **Pantalla de bloqueo y seguridad** > **Inicio seguro**.  
 
-### <a name="downgrade-your-version-of-android"></a>Cambiar a la versión anterior de Android
-
-Si el dispositivo ofrece la opción de cambiar a la versión Android 6.0+, hágalo. Si intenta cambiar el dispositivo a una versión anterior, existe riesgo de pérdida de datos. Si no, se recomienda que se ponga en contacto con el equipo de soporte técnico de su empresa para resolver este problema. Puede obtener información de contacto del equipo de soporte técnico de su empresa en el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
-
 ### <a name="encrypt-the-entire-device"></a>Cifrado de todo el dispositivo
 
 Algunos dispositivos le ofrecerán la opción de cifrar todo el dispositivo o simplemente el espacio usado. Elija la opción de cifrar todo el dispositivo en lugar de solo el espacio usado. Si ya ha cifrado solo el espacio usado:
@@ -48,6 +45,10 @@ Algunos dispositivos le ofrecerán la opción de cifrar todo el dispositivo o si
 2. Descifre el espacio usado.
 3. Cifrado de todo el dispositivo
 4. Vuelva a inscribir el dispositivo.
+
+### <a name="downgrade-your-version-of-android"></a>Cambiar a la versión anterior de Android
+
+Si el dispositivo ofrece la opción de cambiar a la versión Android 6.0+, hágalo. Si intenta cambiar el dispositivo a una versión anterior, existe riesgo de pérdida de datos. Si no, se recomienda que se ponga en contacto con el equipo de soporte técnico de su empresa para resolver este problema. Puede obtener información de contacto del equipo de soporte técnico de su empresa en el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
 
 ## <a name="specific-manufacturer-issues"></a>Problemas específicos del fabricante
 

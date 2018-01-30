@@ -4,7 +4,7 @@ description: "Conozca los conceptos sobre el funcionamiento del acceso condicion
 keywords: 
 author: arob98
 ms.author: angrobe
-manager: angrobe
+manager: dougeby
 ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3d89bec626e5e53a15bf46ecb96b244566d96dcb
-ms.sourcegitcommit: 9fabf1a8db53842f7b00762374de5b137158ee25
+ms.openlocfilehash: 43421ac02fc3791e2827d980adcb708619cde9b8
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Acceso condicional basado en aplicación con Intune
 

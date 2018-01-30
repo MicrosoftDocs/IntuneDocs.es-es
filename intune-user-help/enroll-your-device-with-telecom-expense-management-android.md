@@ -4,23 +4,24 @@ description: "Obtenga información sobre cómo inscribir un dispositivo Android 
 keywords: 
 author: barlanmsft
 ms.author: barlan
-manager: angrobe
+manager: dougeby
 ms.date: 04/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 26aa3698-7e4d-453a-8852-ab75e72b6485
-searchScope: User help
+searchScope:
+- User help
 ROBOTS: 
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4d8bf1304d0a7b1f007c85befa3565b519719dbd
-ms.sourcegitcommit: f2f147a1177d1cf5bbc8001701eb8f44dd833b7d
+ms.openlocfilehash: 68f760c84b1394245494809de094e603e388e59b
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="enroll-your-android-device-in-telecom-expense-management"></a>Inscripción del dispositivo Android en la administración de gastos de telecomunicaciones
 
@@ -52,11 +53,11 @@ Puntee en la flecha __siguiente__ situada en la esquina superior derecha de la p
 
   ![Captura de pantalla de la aplicación Datalert donde se solicita el número de teléfono.](./media/and-enroll-13-tem-datalert-phone-number.png)
 
-2. Después, recibirá un código de comprobación a través de un mensaje SMS. Escriba el código y pulse __Aceptar__.
+2. Después, recibirá un código de verificación a través de un mensaje SMS. Escriba el código y pulse __Aceptar__.
 
   ![Captura de pantalla de la aplicación Datalert donde se solicita el código de verificación SMS.](./media/and-enroll-14-tem-datalert-sms.png)
 
-3. Una vez que haya proporcionado el código de comprobación, se completará la instalación de Datalert. Pulse __Finalizar__ y podrá supervisar los datos desde la aplicación Datalert.
+3. Una vez que haya proporcionado el código de verificación, se completará la instalación de Datalert. Pulse __Finalizar__ y podrá supervisar los datos desde la aplicación Datalert.
 
   ![Captura de pantalla de la aplicación Datalert con la supervisión del uso de datos de hoy en día.](./media/and-enroll-15-tem-datalert-monitoring-active.png)
 
