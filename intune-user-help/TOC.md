@@ -30,8 +30,9 @@
 #### [Comprobación del cumplimiento de dispositivos](check-compliance-on-your-device-android.md)
 #### [Sincronización del correo de Outlook con el modo de ahorro de batería](power-saving-mode-android.md)
 #### [Solución de problemas comunes con Samsung Knox](samsung-knox-errors-android.md)
+#### [Actualización del dispositivo para instalar Outlook](update-device-outlook-android.md)
 
-#### Uso de registros para solucionar problemas
+#### Uso de registros para ayudar a solucionar problemas
 ##### [Activación del registro detallado](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)
 ##### [Envío de registros por correo electrónico](send-logs-to-your-it-admin-by-email-android.md)
 ##### [Envío de registros por cable USB](send-logs-to-your-it-admin-using-cable-android.md)
@@ -85,6 +86,7 @@
 #### [Identificación de dispositivos](you-are-asked-to-identify-your-device-when-trying-to-enroll-ios.md)
 #### [Búsqueda de números de serie](how-do-i-find-the-serial-number-on-my-device-ios.md)
 #### [Actualización de dispositivos iOS](you-need-to-update-your-ios-device.md)
+#### [Actualización del dispositivo para instalar Outlook](update-device-outlook-ios.md)
 #### [La versión de iOS aún no es compatible](your-ios-version-isnt-yet-supported.md)
 
 ### Mobile Threat Defense

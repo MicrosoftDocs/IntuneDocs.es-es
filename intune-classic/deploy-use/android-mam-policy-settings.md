@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9707858ba2b0462edade4847dba09404a895fb34
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b289e69d834d43d29725a32c48b3ca0a19ee07ec
+ms.sourcegitcommit: 638c9cd14c813670c1bd678826ca4308dfc9876e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Configuración de directivas de protección de aplicaciones Android en Microsoft Intune
 
@@ -30,7 +30,7 @@ Existen dos categorías de configuración de directiva: configuración de acceso
 
 ##  <a name="data-relocation-settings"></a>Configuración de reubicación de datos
 
-| Configuración | Cómo se usa | Valores predeterminados |
+| Setting | Cómo se usa | Valores predeterminados |
 |------|------|------|
 | **Impedir copias de seguridad de Android** | Pulse **Sí** para impedir que esta aplicación realice copias de seguridad de datos profesionales o educativos en el [Servicio de copia de seguridad de Android](https://developer.android.com/google/backup/index.html). Pulse **No** para permitir que esta aplicación realice copias de seguridad de datos profesionales o educativos.| Sí |
 | **Permitir que la aplicación transfiera datos a otras aplicaciones** | Especifique qué aplicaciones pueden recibir datos de esta aplicación: <ul><li> **Aplicaciones administradas por directivas**: permite las transferencias solo para otras aplicaciones administradas por directivas.</li> <li>**Todas las aplicaciones**: permite la transferencia a cualquier aplicación. </li> <li>**Ninguna**: no permite la transferencia de datos a ninguna aplicación, incluidas otras aplicaciones administradas por directivas.</li></ul> <p>Hay aplicaciones y servicios exentos a los que Intune puede permitir la transferencia de datos. Consulte [Exenciones de transferencia de datos](#Data-transfer-exemptions) para ver una lista completa de aplicaciones y servicios.| Todas las aplicaciones |
@@ -48,7 +48,7 @@ Existen dos categorías de configuración de directiva: configuración de acceso
 
   ## <a name="data-transfer-exemptions"></a>Exenciones de transferencia de datos
 
-  La directiva de protección de aplicaciones de Intune puede permitir la transferencia de datos desde y hacia algunas aplicaciones y servicios de plataforma. Por ejemplo, todas las aplicaciones habilitadas para Intune en Android deben poder transferir datos desde y hacia la función Texto a voz de Google, de forma que se pueda leer en voz alta el texto que aparezca en la pantalla del dispositivo móvil. Esta lista está sujeta a cambios y refleja los servicios y las aplicaciones que se consideran útiles para una productividad segura.
+  La directiva de protección de aplicaciones de Intune puede permitir la transferencia de datos desde y hacia algunas aplicaciones y servicios de plataforma. Por ejemplo, todas las aplicaciones administradas de Intune en Android deben poder transferir datos desde y hacia la función Texto a voz de Google, de forma que se pueda leer en voz alta el texto que aparezca en la pantalla del dispositivo móvil. Esta lista está sujeta a cambios y refleja los servicios y las aplicaciones que se consideran útiles para una productividad segura.
 
   ### <a name="full-exemptions"></a>Exenciones completas
 
@@ -80,7 +80,7 @@ Existen dos categorías de configuración de directiva: configuración de acceso
 
 ##  <a name="access-settings"></a>Configuración de acceso
 
-| Configuración | Cómo se usa | Valores predeterminados |
+| Setting | Cómo se usa | Valores predeterminados |
 |------|------|------|
 | **Requerir PIN para acceder** | Pulse **Sí** para requerir un PIN para usar esta aplicación. Se pedirá al usuario que configure este PIN la primera vez que ejecute la aplicación en un contexto profesional o educativo. Valor predeterminado = **Sí**.<br><br> Configure las siguientes opciones para la intensidad del PIN: <ul><li>**Número de intentos antes del restablecimiento del PIN**: especifique el número de veces que el usuario tiene que escribir correctamente el PIN antes de que deba restablecerlo. Valor predeterminado = **5**.</li><li> **Permitir el PIN simple**: pulse **Sí** para permitir que los usuarios usen secuencias de PIN simples como 1234 o 1111. Pulse **No** para impedir que usen secuencias simples. Valor predeterminado = **Sí**. </li><li> **Longitud del PIN**: especifique el número mínimo de dígitos en una secuencia de PIN. Valor predeterminado = **4**. </li><li> **Permitir desbloqueo mediante huellas digitales en lugar de mediante PIN (Android 6.0+)**: pulse **Sí** para permitir que el usuario use la [autenticación con huella digital](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication) en lugar de un PIN para el acceso a la aplicación. Valor predeterminado = **Sí**.</li></ul> En dispositivos Android, puede permitir que el usuario demuestre su identidad con la [autenticación con huella digital de Android](https://developer.android.com/about/versions/marshmallow/android-6.0.html#fingerprint-authentication) en lugar de usar un PIN. Cuando el usuario intenta usar esta aplicación con su cuenta profesional o educativa, se le solicita que indique su identidad mediante huella digital en lugar de escribir un PIN. </li></ul>| Requerir PIN: Sí <br><br> Intentos de restablecimiento del PIN: 5 <br><br> Permitir PIN simple: Sí <br><br> Longitud del PIN: 4 <br><br> Permitir huella digital: Sí |
 | **Requerir credenciales corporativas en acceso** | Pulse **Sí** para requerir que el usuario inicie sesión con su cuenta profesional o educativa en lugar de escribir un PIN para el acceso a la aplicación. Si se establece en **Sí**, se reemplazarán los requisitos de introducción de un PIN o un Touch ID.  | No |

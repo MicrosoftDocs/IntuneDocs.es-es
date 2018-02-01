@@ -5,7 +5,7 @@ description: "Obtenga información sobre la configuración de Intune que puede u
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/15/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 89229a5e-3421-4221-a62f-fa800620cc0d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 087a8ad8ad8d07bee1d00cd6adaca86ede737eb7
-ms.sourcegitcommit: a3a744ea55f38a360ca9f788c77a5b3018d1add5
+ms.openlocfilehash: 6a4a5b9b76995be6a82cc3dcaa9f782c158ba174
+ms.sourcegitcommit: b982f9d50da4f958fb0c48c56ba46c8ef71500c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/30/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Configuración de Wi-Fi para dispositivos iOS en Microsoft Intune
 
@@ -33,6 +33,7 @@ ms.lasthandoff: 12/30/2017
 - **SSID**: abreviatura de identificador de conjunto de servicios. Este es el nombre real de la red inalámbrica a la que se conectarán los dispositivos. Sin embargo, los usuarios verán únicamente el nombre de red que creó anteriormente cuando eligió la conexión.
 - **Conectar automáticamente**: el dispositivo se conecta siempre que está dentro del rango de alcance de esta red.
 - **Red oculta**: impide que esta red se muestre en la lista de redes disponibles en el dispositivo.
+- **Clave compartida previamente** - 
 - **Configuración de proxy**: elija entre:
     - **Ninguna**: no se configura ninguna configuración de proxy.
     - **Manual**: especifique la **dirección del servidor proxy** (como una dirección IP) y su **número de puerto** asociado.
