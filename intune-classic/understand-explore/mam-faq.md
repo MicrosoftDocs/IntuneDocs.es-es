@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: oydang
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4c345673eceea4da4efc3b90f43c6f9313ee15f1
-ms.sourcegitcommit: 0795870bfe941612259ebec0fe313a783a44d9b9
+ms.openlocfilehash: abb0267f46d2933b0037ed661281198a5981f659
+ms.sourcegitcommit: 638c9cd14c813670c1bd678826ca4308dfc9876e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 01/23/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Preguntas más frecuentes sobre MAM y la protección de la aplicación
 
@@ -32,7 +32,7 @@ Este artículo proporciona respuestas a algunas preguntas frecuentes sobre la ad
 
 **¿Qué es MAM?** La [administración de aplicaciones móviles de Intune](/intune/app-lifecycle) hace referencia al conjunto de funciones de administración de Intune que le permite publicar, insertar, configurar, proteger, supervisar y actualizar aplicaciones móviles para los usuarios.
 
-**¿Cuáles son las ventajas de la protección de aplicaciones MAM?** MAM protege los datos de la organización dentro de una aplicación. Con MAM-WE, una aplicación profesional o educativa que contiene información confidencial puede administrarse en casi cualquier dispositivo, incluidos los dispositivos personales en escenarios de Bring your own device (BYOD, traiga su propio dispositivo). Muchas aplicaciones de productividad, como las aplicaciones de Microsoft Office, pueden administrarse mediante Intune MAM. Consulte la lista oficial de [aplicaciones habilitadas para Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps), disponible para uso público.
+**¿Cuáles son las ventajas de la protección de aplicaciones MAM?** MAM protege los datos de la organización dentro de una aplicación. Con MAM-WE, una aplicación profesional o educativa que contiene información confidencial puede administrarse en casi cualquier dispositivo, incluidos los dispositivos personales en escenarios de Bring your own device (BYOD, traiga su propio dispositivo). Muchas aplicaciones de productividad, como las aplicaciones de Microsoft Office, pueden administrarse mediante Intune MAM. Consulte la lista oficial de [aplicaciones administradas de Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps), disponible para uso público.
 
 **¿Qué configuraciones de dispositivo admite MAM?** Intune MAM admite dos configuraciones:
   1. **MDM Intune + MAM**: esta es la primera configuración admitida por MAM cuando se publicó por primera vez. Los administradores de TI solo pueden administrar aplicaciones mediante directivas de protección de aplicaciones y MAM en los dispositivos que están inscritos con la administración de dispositivos móviles (MDM) de Intune. Para administrar aplicaciones con MDM + MAM, los clientes deben utilizar la consola de Intune independiente en https://manage.microsoft.com.
@@ -48,9 +48,9 @@ Este artículo proporciona respuestas a algunas preguntas frecuentes sobre la ad
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>Aplicaciones que puede administrar con directivas de protección de aplicaciones
 
-**¿Qué aplicaciones se pueden administrar mediante directivas de protección de aplicaciones?** Cualquier aplicación enriquecida mediante [Intune App SDK](/intune/app-sdk) o encapsulada mediante la [ herramienta de ajuste de aplicaciones de Intune ](/intune/apps-prepare-mobile-application-management) puede administrarse con las directivas de protección de aplicaciones de Intune. Consulte la lista oficial de [aplicaciones habilitadas para Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps), disponible para uso público.
+**¿Qué aplicaciones se pueden administrar mediante directivas de protección de aplicaciones?** Cualquier aplicación enriquecida mediante [Intune App SDK](/intune/app-sdk) o encapsulada mediante la [ herramienta de ajuste de aplicaciones de Intune ](/intune/apps-prepare-mobile-application-management) puede administrarse con las directivas de protección de aplicaciones de Intune. Consulte la lista oficial de [aplicaciones administradas de Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps), disponible para uso público.
 
-**¿Cuáles son los requisitos básicos para utilizar directivas de protección de aplicaciones en una aplicación habilitada para Intune?**
+**¿Cuáles son los requisitos básicos para utilizar directivas de protección de aplicaciones en una aplicación administrada de Intune?**
   1. El usuario final debe tener una cuenta de Azure Active Directory (AAD). Consulte [Agregar usuarios y conceder permiso administrativo a Intune](/intune/users-permissions-add) para aprender a crear usuarios de Intune en Azure Active Directory.
 
   2. El usuario final debe tener una licencia de Microsoft Intune asignada a su cuenta de Azure Active Directory. Consulte [Administrar licencias de Intune](/intune/licenses-assign) para obtener información sobre cómo asignar licencias de Intune a los usuarios finales.
@@ -136,7 +136,7 @@ MAM (en iOS) permite actualmente un PIN de nivel de aplicación con caracteres a
 
 **¿Por qué no funcionan los servicios locales con aplicaciones protegidas de Intune?** La protección de aplicaciones de Intune depende de la identidad del usuario para ser coherente entre la aplicación e Intune App SDK. La única manera de garantizar esto es a través de la autenticación moderna. Hay escenarios en los que las aplicaciones pueden funcionar con una configuración local, pero no son coherentes ni ofrecen garantías.
 
-**¿Hay una forma segura de abrir vínculos web desde aplicaciones administradas?** Sí. El administrador de TI puede implementar y establecer una directiva de protección de aplicaciones para la [aplicación Intune Managed Browser](../deploy-use/manage-internet-access-using-managed-browser-policies.md), un explorador web desarrollado por Microsoft Intune que puede administrarse fácilmente con Intune. El administrador de TI puede requerir que todos los vínculos web en aplicaciones habilitadas para Intune se abran con la aplicación Managed Browser.
+**¿Hay una forma segura de abrir vínculos web desde aplicaciones administradas?** Sí. El administrador de TI puede implementar y establecer una directiva de protección de aplicaciones para la [aplicación Intune Managed Browser](../deploy-use/manage-internet-access-using-managed-browser-policies.md), un explorador web desarrollado por Microsoft Intune que puede administrarse fácilmente con Intune. El administrador de TI puede requerir que todos los vínculos web en aplicaciones administradas de Intune se abran con la aplicación Managed Browser.
 
 
 ## <a name="app-experience-on-android"></a>Experiencia de la aplicación en Android

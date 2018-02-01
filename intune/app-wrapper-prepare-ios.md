@@ -4,7 +4,7 @@ description: "Use la información de este tema para aprender a ajustar las aplic
 keywords: 
 author: erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/18/2018
 ms.topic: article
 ms.prod: 
@@ -14,11 +14,11 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: dc031b12ed49766c70a6a4ff373a7c5843ca21ad
-ms.sourcegitcommit: 1a390b47b91e743fb0fe82e88be93a8d837e8b6a
+ms.openlocfilehash: 4925fc86596437d0560bd7fa2598eaf95126df16
+ms.sourcegitcommit: cede2e15bd62f1073131fbc9af7623cdfc3730cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 01/26/2018
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicaciones iOS para directivas de protección de aplicaciones con la herramienta de ajuste de aplicaciones de Intune
 
@@ -172,6 +172,9 @@ Necesitará lo siguiente para distribuir aplicaciones ajustadas con Intune:
 3. Elija **Acepto** para aceptar los términos de licencia, con lo que se monta el paquete en el equipo.
 
 4.  Abra la carpeta **IntuneMAMPackager** y guarde su contenido en el equipo macOS. Ahora está preparado para ejecutar la Herramienta de ajuste de aplicaciones.
+
+> [!NOTE]
+> El empaquetador de MAM de Intune podría montarse por separado en el equipo macOS y producir un error de "archivo no encontrado" cuando se ejecutan los comandos de ajuste. Por lo tanto, si se mueve el contenido de la carpeta IntuneMAMPackager permitirá que se encuentre la ruta de acceso del empaquetador durante el ajuste.
 
 ## <a name="run-the-app-wrapping-tool"></a>Ejecutar la herramienta de ajuste de aplicaciones
 

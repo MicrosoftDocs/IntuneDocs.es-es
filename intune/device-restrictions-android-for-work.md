@@ -5,21 +5,20 @@ description: "Conozca la configuración de Intune que puede usar para controlar 
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
-ms.date: 08/01/2017
+manager: dougeby
+ms.date: 1/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 1830720b-16cb-4f2f-a71a-62967f882563
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: beb8368aa2db33df84bb64985177b47beebc80ac
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: c7c69bb3984ae4ffa81aa81ae24cfe17663bc191
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos Android for Work en Microsoft Intune
 
@@ -44,11 +43,11 @@ ms.lasthandoff: 12/12/2017
 ### <a name="work-profile-password"></a>Contraseña del perfil de trabajo
 - **Requerir contraseña de perfil de trabajo** (Android 7.0 y versiones posteriores con el perfil del trabajo habilitado): defina una directiva de código de acceso que se aplique solo a las aplicaciones del perfil del trabajo. De manera predeterminada, el usuario final tiene la opción de usar los dos PIN definidos por separado o de optar por combinarlos en el más seguro de ellos.
 - **Longitud mínima de la contraseña**: escriba el número mínimo de caracteres que debe contener la contraseña de los usuarios (de **4**-**16**)
-- **Máximo de minutos de inactividad hasta que se bloquea la pantalla**: seleccione la cantidad de tiempo antes de que el perfil de trabajo se bloquee. El usuario deberá especificar sus credenciales para volver a obtener acceso.
+- **Máximo de minutos de inactividad hasta que se bloquea el perfil de trabajo**: seleccione la cantidad de tiempo antes de que el perfil de trabajo se bloquee. El usuario deberá especificar sus credenciales para volver a obtener acceso.
 - **Número de errores de inicio de sesión antes de borrar el dispositivo**: escriba la cantidad de veces que se puede escribir una contraseña incorrecta antes de que se borre el perfil de trabajo del dispositivo.
 - **Expiración de la contraseña (días)**: escriba el número de días hasta que se deba cambiar la contraseña de un usuario final (de **1**-**255**).
 - **Tipo de contraseña obligatoria**: seleccione el tipo de contraseña que se debe establecer en el dispositivo. Elija de entre las siguientes opciones:
-    - **Valor predeterminado de dispositivo**
+    - **Valor predeterminado del dispositivo**
     - **Biométrico de seguridad baja**
     - **Requerido**
     - **Al menos numérica**
@@ -65,9 +64,9 @@ ms.lasthandoff: 12/12/2017
 - **Longitud mínima de la contraseña**: escriba el número mínimo de caracteres que debe contener la contraseña de los usuarios (de **4**-**14**)
 - **Máximo de minutos de inactividad hasta que se bloquea la pantalla**: seleccione el tiempo antes de que un dispositivo inactivo se bloquee de forma automática.
 - **Número de errores de inicio de sesión antes de borrar el dispositivo**: escriba la cantidad de veces que se puede escribir una contraseña incorrecta antes de que se borren todos los datos del dispositivo.
-- **Expiración de la contraseña (días)**: escriba el número de días hasta que se deba cambiar la contraseña de un usuario final (de **1**-**255**).
+- **Expiración de la contraseña (días)**: especifique el número de días hasta que se deba cambiar la contraseña de un usuario final (**1**-**255**).
 - **Tipo de contraseña obligatoria**: seleccione el tipo de contraseña que se debe establecer en el dispositivo. Elija de entre las siguientes opciones:
-    - **Valor predeterminado de dispositivo**
+    - **Valor predeterminado del dispositivo**
     - **Biométrico de seguridad baja**
     - **Requerido**
     - **Al menos numérica**

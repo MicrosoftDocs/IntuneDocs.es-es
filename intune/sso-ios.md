@@ -5,7 +5,7 @@ description: "Aprenda a configurar el inicio de sesión único de Intune para di
 keywords: 
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/7/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ff71239a360b09ca831a6e99f5f7a759b08f5d56
-ms.sourcegitcommit: 67ec0606c5440cffa7734f4eefeb7121e9d4f94f
+ms.openlocfilehash: 07ac355232c1e4ac290c87191d3764e3df45327e
+ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2017
+ms.lasthandoff: 01/29/2018
 ---
 # <a name="configure-intune-for-ios-device-single-sign-on"></a>Configuración del inicio de sesión único de Intune para dispositivos iOS
 
@@ -89,7 +89,7 @@ Los patrones `http://.com` y `https://.com` coinciden con todas las direcciones 
 
 Indique qué aplicaciones del dispositivo de un usuario final pueden usar la carga de inicio de sesión único.
 
-La matriz `AppIdentifierMatches` debe contener cadenas que coincidan con los identificadores del lote de aplicaciones. Estas cadenas pueden ser coincidencias exactas (por ejemplo: `com.contoso.myapp`) o pueden especificar una coincidencia de prefijo en el identificador del lote mediante el carácter comodín *. El carácter comodín debe aparecer después de un carácter de punto (.) y solo puede hacerlo una vez, al final de la cadena (por ejemplo: `com.contoso.*`). Cuando se incluye un carácter comodín, se concede acceso a la cuenta a cualquier aplicación cuyo identificador de lote empiece por el prefijo.
+La matriz `AppIdentifierMatches` debe contener cadenas que coincidan con los identificadores del lote de aplicaciones. Estas cadenas pueden ser coincidencias exactas (por ejemplo: `com.contoso.myapp`) o pueden especificar una coincidencia de prefijo en el identificador del lote mediante el carácter comodín *\. El carácter comodín debe aparecer después de un carácter de punto (.) y solo puede hacerlo una vez, al final de la cadena (por ejemplo: `com.contoso.*`). Cuando se incluye un carácter comodín, se concede acceso a la cuenta a cualquier aplicación cuyo identificador de lote empiece por el prefijo.
 
 El campo **Nombre de la aplicación** se usa para agregar un nombre descriptivo que ayude a identificar el identificador de lote.
 

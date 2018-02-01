@@ -5,7 +5,7 @@ description: "Obtenga información sobre cómo puede usar Intune para facilitar 
 keywords: 
 author: dougeby
 ms.author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 08/14/2017
 ms.topic: article
 ms.prod: 
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7f1958e4a0fb5aeba3225ee7ea5fae1e7fb39db3
-ms.sourcegitcommit: 520eb7712625e129b781e2f2b9fe16f9b9f3d08a
+ms.openlocfilehash: 7ee1657351551ea83c6089c5ac52655b9cd64fc2
+ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 01/25/2018
 ---
 # <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Asignación de aplicaciones de Office 365 ProPlus 2016 a dispositivos Windows 10 con Microsoft Intune
 
@@ -35,7 +35,7 @@ Este tipo de aplicación facilita la asignación de aplicaciones de Office 365 P
 - Intune solo admite agregar aplicaciones de Office desde el conjunto de aplicaciones de Office 365 ProPlus 2016.
 - Si alguna aplicación de Office está abierta cuando Intune instala el conjunto de aplicaciones, es posible que los usuarios finales pierdan los datos de los archivos no guardados.
 - Este método de instalación no se admite en dispositivos Windows 10S.
-- Intune no admite la instalación de aplicaciones de escritorio de Office 365 desde la Tienda Windows (estas aplicaciones se conocen como Office Centennial) en un dispositivo al que ya haya implementado aplicaciones de Office 365 con Intune. Si instala esta configuración, puede provocar daños o la pérdida de datos.
+- Intune no admite la instalación de aplicaciones de escritorio de Office 365 desde Microsoft Store (estas aplicaciones se conocen como Office Centennial) en un dispositivo al que ya haya implementado aplicaciones de Office 365 con Intune. Si instala esta configuración, puede provocar daños o la pérdida de datos.
 
 
 ## <a name="get-started"></a>Introducción
@@ -63,7 +63,7 @@ En este paso, elija las aplicaciones de Office que desea asignar a los dispositi
 En este paso, proporcione información sobre el conjunto de aplicaciones. Esta información le ayuda a identificarlo en Intune y, además, ayuda a los usuarios finales a encontrarlo en la aplicación Portal de empresa.
 
 1.  En la hoja **Agregar aplicación**, elija **App Suite Information** (Información del conjunto de aplicaciones).
-2.  En la hoja **App Suite Information** (Información del conjunto de aplicaciones), especifique la información siguiente: 
+2.  En la hoja **App Suite Information** (Información del conjunto de aplicaciones), especifique la información siguiente:
     - **Nombre del conjunto**: escriba el nombre del conjunto tal como se muestra en el portal de empresa. Asegúrese de que todos los nombres de conjuntos que use sean únicos. Si el mismo nombre del conjunto ya existe, solo se muestra una de las aplicaciones a los usuarios en el portal de empresa.
     - **Descripción del conjunto**: escriba una descripción del conjunto de aplicaciones. Por ejemplo, podría mostrar las aplicaciones que seleccionó para incluir.
     - **Editor:** escriba el nombre del editor de la aplicación.
@@ -82,9 +82,9 @@ En este paso, proporcione información sobre el conjunto de aplicaciones. Esta i
 En este paso, configure las opciones de instalación para el conjunto de aplicaciones. La configuración se aplica a todas las aplicaciones que agregó al conjunto.
 
 1.  En la hoja **Agregar aplicación**, elija **App Suite Settings** (Configuración del conjunto de aplicaciones).
-2.  En la hoja **App Suite Settings** (Configuración del conjunto de aplicaciones), especifique la información siguiente: 
+2.  En la hoja **App Suite Settings** (Configuración del conjunto de aplicaciones), especifique la información siguiente:
     - **Versión de Office**: elija si desea asignar la versión de 32 bits o de 64 bits de Office. Puede instalar la versión de 32 bits en dispositivos de 32 y 64 bits, pero en los dispositivos de 64 bits solo puede instalar la versión de 64 bits.
-    - **Canal de actualización**: elija cómo Office se actualiza en los dispositivos. Para información sobre los distintos canales de actualización, consulte la introducción a los canales de actualización para Office 365 ProPlus. Elija de entre las siguientes opciones: 
+    - **Canal de actualización**: elija cómo Office se actualiza en los dispositivos. Para información sobre los distintos canales de actualización, consulte la introducción a los canales de actualización para Office 365 ProPlus. Elija de entre las siguientes opciones:
         - **Actual**
         - **Diferida**
         - **Primera versión actual**
@@ -104,19 +104,19 @@ Cuando haya terminado, en la hoja **Agregar aplicación**, elija **Guardar**. La
 
 La tabla siguiente muestra los códigos de error comunes que podría encontrar y su significado.
 
-### <a name="status-for-office-csp"></a>Estado de Office CSP: 
+### <a name="status-for-office-csp"></a>Estado de Office CSP:
 
 ||||
 |-|-|-|
 |Estado|Fase|Descripción|
 |1460 (ERROR_TIMEOUT)|Descarga|No se pudo descargar la Herramienta de implementación de Office|    
-|13 (ERROR_INVALID_DATA)|-|No se puede comprobar la firma de la Herramienta de implementación de Office descargada| 
+|13 (ERROR_INVALID_DATA)|-|No se puede comprobar la firma de la Herramienta de implementación de Office descargada|
 |Código de error de CertVerifyCertificateChainPolicy|-|No se pudo comprobar la certificación de la Herramienta de implementación de Office descargada|    
-|997|WIP|Instalación| 
+|997|WIP|Instalación|
 |0|Después de la instalación|La instalación se realizó correctamente|    
 |1603 (ERROR_INSTALL_FAILURE)|-|No se pudo realizar ninguna comprobación de requisitos previos, como:<br>- SxS (se intentó instalar con MSI 2016 instalado)<br>- versión no coincidente<br>- etc.|     
 |0x8000ffff (E_UNEXPECTED)|-|Se intentó instalar sin Office Hacer clic y ejecutar en la máquina.|    
-|17002|-|No se pudo completar el escenario (instalación). Posibles razones:<br>- El usuario canceló la instalación<br>- Otra instalación canceló la instalación<br>- Sin espacio en disco durante la instalación<br>- Identificación de idioma desconocido| 
+|17002|-|No se pudo completar el escenario (instalación). Posibles razones:<br>- El usuario canceló la instalación<br>- Otra instalación canceló la instalación<br>- Sin espacio en disco durante la instalación<br>- Identificación de idioma desconocido|
 |17004|-|SKU desconocidas|   
 
 
@@ -124,15 +124,15 @@ La tabla siguiente muestra los códigos de error comunes que podría encontrar y
 
 |||||
 |-|-|-|-|
-|Escenario|Código de retorno|UI|Nota| 
-|Trabajo de desinstalación sin una instalación de Hacer clic y ejecutar activa|-2147418113, 0x8000ffff o 2147549183|Código de error: 30088-1008<br>Código de error: 30125-1011 (404)|Herramienta de implementación de Office| 
-|Instalación cuando hay instalada una versión de MSI|1603|-|Herramienta de implementación de Office| 
-|El usuario u otra instalación canceló la instalación|17002|-|Hacer clic y ejecutar| 
-|Intentar instalar 64 bits en un dispositivo con 32 bits instalados.|1603|-|Código de devolución de la Herramienta de implementación de Office| 
-|Intentar instalar una SKU desconocida (no es un caso de uso legítimo de Office CSP porque solo podemos pasar SKU válidas)|17004|-|Hacer clic y ejecutar| 
-|Falta de espacio|17002|-|Hacer clic y ejecutar| 
-|El cliente Hacer clic y ejecutar no se pudo iniciar (inesperado)|17000|-|Hacer clic y ejecutar| 
-|El cliente Hacer clic y ejecutar no pudo poner el escenario en cola (inesperado)|17001|-|Hacer clic y ejecutar| 
+|Escenario|Código de retorno|UI|Nota|
+|Trabajo de desinstalación sin una instalación de Hacer clic y ejecutar activa|-2147418113, 0x8000ffff o 2147549183|Código de error: 30088-1008<br>Código de error: 30125-1011 (404)|Herramienta de implementación de Office|
+|Instalación cuando hay instalada una versión de MSI|1603|-|Herramienta de implementación de Office|
+|El usuario u otra instalación canceló la instalación|17002|-|Hacer clic y ejecutar|
+|Intentar instalar 64 bits en un dispositivo con 32 bits instalados.|1603|-|Código de devolución de la Herramienta de implementación de Office|
+|Intentar instalar una SKU desconocida (no es un caso de uso legítimo de Office CSP porque solo podemos pasar SKU válidas)|17004|-|Hacer clic y ejecutar|
+|Falta de espacio|17002|-|Hacer clic y ejecutar|
+|El cliente Hacer clic y ejecutar no se pudo iniciar (inesperado)|17000|-|Hacer clic y ejecutar|
+|El cliente Hacer clic y ejecutar no pudo poner el escenario en cola (inesperado)|17001|-|Hacer clic y ejecutar|
 
 ## <a name="next-steps"></a>Pasos siguientes
 
