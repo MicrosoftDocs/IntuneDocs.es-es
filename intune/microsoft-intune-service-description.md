@@ -14,11 +14,11 @@ ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 115a2ac3b4eb35591a2742143fdd29dde09c7de7
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f4671f643f9806945043adcb9279c7bc95d8efe2
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="microsoft-intune-service-description"></a>Descripción del servicio Microsoft Intune
 
@@ -55,7 +55,7 @@ Dado que el ecosistema de administración de dispositivos móviles cambia con fr
 
 - [Novedades de Microsoft Intune](whats-new.md). Este tema se actualiza con la actualización mensual del servicio y semanalmente cuando, por ejemplo, se publican aplicaciones, como la aplicación del portal de empresa.
 
-- También se anunciarán actualizaciones importantes del servicio en el Centro de mensajes del [portal de administración de Office 365](https://portal.office.com/Admin/Default.aspx). Si instala la [aplicación móvil complementaria de Office 365 Admin](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a), podrá recibir notificaciones en su dispositivo móvil. Obtenga más información sobre cómo trabajar con el [Centro de mensajes de Office 365](https://support.office.com/en-US/client/results?Shownav=true&lcid=1033&ns=O365ENTADMIN&version=15&omkt=en-US&ver=15&HelpID=O365E_MCManageUpdates).
+- También se anunciarán actualizaciones importantes del servicio en el Centro de mensajes del [portal de administración de Office 365](https://portal.office.com/Admin/Default.aspx). Si instala la [aplicación móvil complementaria de Office 365 Admin](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a), podrá recibir notificaciones en su dispositivo móvil. Obtenga más información sobre cómo trabajar con el [Centro de mensajes de Office 365](https://support.office.com/client/results?Shownav=true&ns=O365ENTADMIN&version=15&ver=15&HelpID=O365E_MCManageUpdates).
 
     Algunas sugerencias útiles:
 
