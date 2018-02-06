@@ -14,11 +14,11 @@ ms.technology:
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4cd446310256a71e7306364b4142bfacce482fe4
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fc50d6f5c4b0350d0117b5d68a0b9ac3e9ec3ab3
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos Windows 10 y versiones posteriores en Microsoft Intune
 
@@ -254,7 +254,7 @@ Puede agregar aplicaciones que deben tener un comportamiento de privacidad difer
 
 ## <a name="kiosk-preview"></a>Quiosco (versión preliminar)
 
--   **Pantalla completa**: identifica el tipo de [pantalla completa](https://docs.microsoft.com/en-us/windows/configuration/kiosk-shared-pc) que la directiva admite. Las opciones son:
+-   **Pantalla completa**: identifica el tipo de [pantalla completa](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc) que la directiva admite. Las opciones son:
 
       - **No configurado** (valor predeterminado): la directiva no habilita una pantalla completa. 
       - **Quiosco con aplicación única**: el perfil habilita el dispositivo como un quiosco con aplicación única.
@@ -266,7 +266,7 @@ Puede agregar aplicaciones que deben tener un comportamiento de privacidad difer
 
          En el caso de los dispositivos en entornos públicos, use cuentas con privilegios mínimos para evitar actividades no autorizadas.  
 
-      - **Identificador de modelo de usuario de la aplicación (AUMID)**: especifica el AUMID de la aplicación de pantalla completa. Para más información, vea [Find the Application User Model ID of an installed app](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Buscar el identificador de modelo de usuario de aplicación de una aplicación instalada).
+      - **Identificador de modelo de usuario de la aplicación (AUMID)**: especifica el AUMID de la aplicación de pantalla completa. Para más información, vea [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Buscar el identificador de modelo de usuario de aplicación de una aplicación instalada).
 
     Los quioscos con varias aplicaciones requieren una configuración específica. Use el botón **Agregar** para crear una configuración de pantalla completa o seleccionar una ya existente.
 
@@ -280,13 +280,13 @@ Puede agregar aplicaciones que deben tener un comportamiento de privacidad difer
 
             - **Aplicación Win32**: una aplicación de escritorio tradicional (necesita el nombre/ruta de acceso completa del archivo ejecutable correspondiente al dispositivo).
 
-            - **Aplicación para UWP**: una aplicación Windows universal. Necesita el [AUMID de la aplicación](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+            - **Aplicación para UWP**: una aplicación Windows universal. Necesita el [AUMID de la aplicación](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
-        - **Identificador de la aplicación**: especifica bien el nombre o ruta de acceso completa del archivo ejecutable (aplicaciones Win32), bien el [AUMID de aplicación](https://docs.microsoft.com/en-us/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (aplicaciones para UWP).
+        - **Identificador de la aplicación**: especifica bien el nombre o ruta de acceso completa del archivo ejecutable (aplicaciones Win32), bien el [AUMID de aplicación](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (aplicaciones para UWP).
 
     - **Barra de tareas** indica si la barra de tareas se muestra (**Habilitada**) o se oculta (**No configurada**) en la pantalla completa.
 
-    - **Diseño del menú Inicio**: especifica un archivo XML que describe el modo en que las aplicaciones [aparecen en el menú Inicio](https://docs.microsoft.com/en-us/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
+    - **Diseño del menú Inicio**: especifica un archivo XML que describe el modo en que las aplicaciones [aparecen en el menú Inicio](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
 
     - **Usuarios asignados**: especifica una o varias cuentas de usuario asociadas a la configuración de pantalla completa. La cuenta de usuario puede ser local en el dispositivo o un inicio de sesión de cuenta de Azure AD asociada a la aplicación de pantalla completa. Especifique cuentas unidas a dominio con el formato `domain\\username@tenant.org`.
 
