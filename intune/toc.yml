@@ -68,6 +68,8 @@
           href: app-lifecycle.md
     - name: Escenarios frecuentes
       href: common-scenarios.md
+    - name: PREGUNTAS MÁS FRECUENTES DE MAM
+      href: mam-faq.md
 - name: Planeamiento de la implementación
   items:
     - name: Planning guide (Guía de planificación)
@@ -87,7 +89,7 @@
           href: planning-guide-support-plan.md
         - name: Diseño
           href: planning-guide-design.md
-        - name: Preparar
+        - name: Implementar
           href: planning-guide-onboarding.md
         - name: Prueba y validación
           href: planning-guide-test-validation.md
@@ -144,7 +146,7 @@
         - name: Opciones de inscripción
           href: enrollment-options.md
           items:
-            - name: términos y condiciones
+            - name: Términos y condiciones
               href: terms-and-conditions-create.md
             - name: Restricciones
               href: enrollment-restrictions-set.md
@@ -318,7 +320,7 @@
               href: device-restrictions-macos.md
             - name: Windows 8.1
               href: device-restrictions-windows-8-1.md
-            - name: 'Windows Phone 8,1'
+            - name: "Windows\_Phone\_8,1"
               href: device-restrictions-windows-phone-8-1.md
             - name: Windows 10
               href: device-restrictions-windows-10.md
@@ -335,7 +337,7 @@
               href: email-settings-android.md
             - name: iOS
               href: email-settings-ios.md
-            - name: 'Windows Phone 8,1'
+            - name: "Windows\_Phone\_8,1"
               href: email-settings-windows-phone-8-1.md
             - name: Windows 10
               href: email-settings-windows-10.md
@@ -352,7 +354,7 @@
               href: vpn-settings-macos.md
             - name: Windows 8.1
               href: vpn-settings-windows-8-1.md
-            - name: 'Windows Phone 8,1'
+            - name: "Windows\_Phone\_8,1"
               href: vpn-settings-windows-phone-8-1.md
             - name: Windows 10
               href: vpn-settings-windows-10.md
@@ -602,7 +604,7 @@
               href: custom-settings-ios.md
             - name: macOS
               href: custom-settings-macos.md
-            - name: 'Windows Phone 8,1'
+            - name: "Windows\_Phone\_8,1"
               href: custom-settings-windows-phone-8-1.md
             - name: Windows 10
               href: custom-settings-windows-10.md
