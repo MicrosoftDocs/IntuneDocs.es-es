@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2bef90d3f5c317a0191f31901834c96829eea7e3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e1c97c32f5f6c81f1112c99b486898c271cc5ff2
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Cómo usar Azure AD para acceder a las API de Intune en Microsoft Graph
 
@@ -434,7 +434,7 @@ namespace IntuneGraphExample
 
 ### <a name="authenticate-azure-ad-powershell"></a>Autenticación de Azure AD (PowerShell)
 
-El siguiente script de PowerShell usa el módulo Azure AD PowerShell para la autenticación.  Para más información, consulte [Azure Active Directory PowerShell versión 2](https://docs.microsoft.co/powershell/azure/install-adv2?view=azureadps-2.0) y [Ejemplos de PowerShell de Intune](https://github.com/microsoftgraph/powershell-intune-samples).
+El siguiente script de PowerShell usa el módulo Azure AD PowerShell para la autenticación.  Para más información, consulte [Azure Active Directory PowerShell versión 2](https://docs.microsoft.com/powershell/azure/install-adv2?view=azureadps-2.0) y [Ejemplos de PowerShell de Intune](https://github.com/microsoftgraph/powershell-intune-samples).
 
 En este ejemplo, actualice el valor de `$clientID` para que coincida con un identificador de aplicación válido.
 
