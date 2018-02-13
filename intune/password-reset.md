@@ -12,11 +12,11 @@ ms.technology:
 ms.assetid: e018e31d-e524-4b41-8f47-399ab0ead6ca
 ms.reviewer: pchacon
 ms.suite: ems
-ms.openlocfilehash: 7d204f97f1d6e6aad55e5b7f1b53c8c751190b0f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ead246477ed4fe50798df7023c32041cb30a39f4
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>Reducir los costos del departamento de soporte técnico mediante el autoservicio de restablecimiento de contraseña
 
@@ -35,7 +35,7 @@ Puede permitir que los empleados restablezcan la contraseña de cuentas profesio
 ## <a name="next-steps"></a>Pasos siguientes
 
 Más información sobre los temas siguientes:
-* [Prácticas recomendadas para contraseñas](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwordsd) 
+* [Prácticas recomendadas para contraseñas](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords) 
 * [Licencias de autoservicio de establecimiento de contraseña](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords)
 
 ¿Necesita ayuda para habilitar este u otros escenarios de EMS u Office 365? Si tiene al menos 150 licencias para Microsoft 365, Enterprise Mobility + Security o Azure Active Directory Premium, aproveche las [ventajas de FastTrack](https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program).

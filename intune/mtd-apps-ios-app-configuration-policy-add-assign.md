@@ -15,11 +15,11 @@ ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4d84ecc31d266deb196192c8e1b3eeade6eb5ea3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ba0bbe8d10b3161af19b45e3a37f51101730d567
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Agregar y asignar aplicaciones de Mobile Threat Defense (MTD) con Intune
 
@@ -74,7 +74,7 @@ Para obtener información sobre cómo volver a firmar las aplicaciones Lookout f
 
 Habilite la autenticación de Azure Active Directory para los usuarios de iOS haciendo lo siguiente:
 
-1. Vaya a [Azure Portal](https://portal.sazure.com), inicie sesión con sus credenciales y, después, vaya a la página de la aplicación.
+1. Vaya a [Azure Portal](https://portal.azure.com), inicie sesión con sus credenciales y, después, vaya a la página de la aplicación.
   
 2. Agregue la **aplicación Lookout for Work de iOS** como una **aplicación de cliente nativ**.
 
