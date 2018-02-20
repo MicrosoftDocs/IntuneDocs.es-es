@@ -6,7 +6,7 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 04/24/2017
+ms.date: 02/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 02b130ed13b3bb8869e35b035e787c97b76b5e85
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 70c3de614b0f5ed5075b669ecdffc08e1226817d
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>Creación y asignación de una directiva de acceso condicional para Exchange local y el entorno de Exchange Online dedicado heredado en Microsoft Intune
 
@@ -65,7 +65,7 @@ Antes de configurar el acceso condicional, compruebe lo siguiente:
 - **Dispositivos Android for Work de clientes de correo EAS:** solo se admiten las aplicaciones **Gmail** y **Nine Work** en el **perfil de trabajo** en los dispositivos Android for Work. Para que el acceso condicional funcione con Android for Work, debe implementar un perfil de correo electrónico para la aplicación Gmail o Nine Work y también implementar esas aplicaciones como una instalación necesaria.
 
 > [!NOTE]
-> La aplicación Microsoft Outlook para iOS y Android no es compatible. Android for Work se implantará entre los inquilinos de Intune durante los próximos meses.
+> La aplicación Microsoft Outlook para iOS y Android no es compatible. 
 
 ### <a name="support-for-pcs"></a>Compatibilidad para equipos
 
