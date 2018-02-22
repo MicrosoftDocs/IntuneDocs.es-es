@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/03/2017
+ms.date: 02/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,28 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3e0163cc90e644bbae8f12759b473d81c9770bee
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: b56907217b45ddb2bfe869f23abc34c0508bdbd7
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Inscribir dispositivos iOS automáticamente con el Programa de inscripción de dispositivos de Apple
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+> [!NOTE]
+> ### <a name="temporary-user-interface-differences"></a>Diferencias temporales de la interfaz de usuario
+>
+>La actualización de las interfaces de usuario para las características descritas en esta página está en proceso. Estas actualizaciones se implementarán en todas las cuentas de usuario hasta final de abril.
+>
+>Si la página **Inscripción de dispositivos** es similar a la imagen siguiente, significa que la cuenta no se ha actualizado aún a la nueva interfaz de usuario y puede utilizar esta página de ayuda.
+>
+>![Interfaz de usuario anterior](./media/appleenroll-oldui.png)
+>
+>Si la página **Inscripción de dispositivos** es similar a la imagen siguiente, significa que tiene las interfaces de usuario actualizadas.  Vaya a [esta página de ayuda](device-enrollment-program-enroll-ios-newui.md).
+>
+>![Interfaz de usuario nueva](./media/appleenroll-newui.png)
 
 Este tema le ayuda a habilitar la inscripción de dispositivos iOS adquiridos mediante el [Programa de inscripción de dispositivos (DEP)](https://deploy.apple.com) de Apple. Puede habilitar la inscripción de DEP para muchos dispositivos sin ni siquiera tocarlos. Puede proporcionar dispositivos como iPhone e iPad directamente a los usuarios. Cuando el usuario activa el dispositivo, se ejecuta el Asistente para la instalación con opciones preconfiguradas y el dispositivo se inscribe en la administración.
 

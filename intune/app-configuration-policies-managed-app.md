@@ -3,10 +3,10 @@ title: "Agregar directivas de configuración para aplicaciones administradas sin
 titlesuffix: Azure portal
 description: "Obtenga información sobre cómo usar directivas de configuración para aplicaciones administradas sin inscripción de dispositivos."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/7/2017
+ms.date: 02/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c2266e460d816dfdd908d6a68944c8c2cc5c0afc
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 136032be6a05ad56dd78fe40e66d3d049a4b5a03
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Agregar directivas de configuración para aplicaciones administradas sin inscripción de dispositivos
 
@@ -41,8 +41,8 @@ Puede usar directivas de configuración de aplicaciones con aplicaciones adminis
 6. Seleccione **Aplicación asociada** para elegir la aplicación que se va a configurar. Seleccione la aplicación en la lista de aplicaciones que ha aprobado y sincronizado con Intune.
 7. En cada opción de configuración que la aplicación admita, escriba el **Nombre** y **Valor** y elija los puntos suspensivos (**...**).  
     Para eliminar una configuración, elija los puntos suspensivos (**...**) y seleccione **Eliminar**.  
-    Las aplicaciones habilitadas para Intune App SDK admiten configuraciones en pares de clave y valor. Para obtener más información sobre qué configuraciones de clave y valor se admiten, consulte la documentación de cada aplicación.  
-    Además, puede usar tokens que se rellenarán de forma dinámica con datos generados por la aplicación.
+    
+Las aplicaciones habilitadas para Intune App SDK admiten configuraciones en pares de clave y valor. Para obtener más información sobre qué configuraciones de clave y valor se admiten, consulte la documentación de cada aplicación. Tenga en cuenta que puede usar tokens que se rellenarán de forma dinámica con datos generados por la aplicación. Para obtener información sobre los ajustes de directivas de Outlook para la configuración de aplicaciones iOS, vea [Manage Outlook for iOS app configuration with Microsoft Intune](https://technet.microsoft.com/en-us/library/mt813789(v=exchg.150).aspx) (Administración de Outlook para la configuración de aplicaciones iOS con Microsoft Intune).
 
 ## <a name="configuration-values-for-using-tokens"></a>Valores de configuración para usar tokens
 

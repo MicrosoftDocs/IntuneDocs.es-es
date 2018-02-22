@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/03/2017
+ms.date: 02/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,28 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3e79ee1ddd2f8a8a9d7a3089e21b8807b9895d2c
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: c076bc52495d1b74a18e1d655376b6183dc5fe16
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Inscribir dispositivos iOS con Apple Configurator
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+> [!NOTE]
+> ### <a name="temporary-user-interface-differences"></a>Diferencias temporales de la interfaz de usuario
+>
+>La actualización de las interfaces de usuario para las características descritas en esta página está en proceso. Estas actualizaciones se implementarán en todas las cuentas de usuario hasta final de abril.
+>
+>Si la página **Inscripción de dispositivos** es similar a la imagen siguiente, significa que la cuenta no se ha actualizado aún a la nueva interfaz de usuario y puede utilizar esta página de ayuda.
+>
+>![Interfaz de usuario anterior](./media/appleenroll-oldui.png)
+>
+>Si la página **Inscripción de dispositivos** es similar a la imagen siguiente, significa que tiene las interfaces de usuario actualizadas.  Vaya a [esta página de ayuda](apple-configurator-enroll-ios-newui.md).
+>
+>![Interfaz de usuario nueva](./media/appleenroll-newui.png)
 
 Intune permite la inscripción de dispositivos iOS con la herramienta [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344) desde un equipo Mac. La inscripción con Apple Configurator requiere que conecte mediante USB cada dispositivo iOS a un equipo Mac para configurar la inscripción corporativa. Puede inscribir dispositivos en Intune con Apple Configurator de dos maneras:
 - **Inscripción con el Asistente de configuración**: restablece la configuración de fábrica del dispositivo y lo prepara para la inscripción mediante el Asistente de configuración.

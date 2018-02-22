@@ -14,11 +14,11 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ac18336efe36a5bed952ab3d89c7ae80e1fbbfc5
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: dee688b2f6768f55a0a814679bde7b23a0b26a57
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicaciones Android para directivas de protección de aplicaciones con la herramienta de ajuste de aplicaciones de Intune
 
@@ -50,7 +50,7 @@ Antes de ejecutar la herramienta, lea [Consideraciones de seguridad para ejecuta
     > [!NOTE]
     > En algunos casos, la versión de 32 bits de Java puede producir problemas de memoria. Es muy conveniente instalar la versión de 64 bits.
 
-- Android requiere que todos los paquetes de aplicaciones estén firmados (.apks). Para **volver a usar** certificados existentes e instrucciones generales de certificado de firma, vea [Reutilización de certificados de firma y aplicaciones de encapsulado](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). El archivo ejecutable de Java keytool.exe se usa para generar **nuevas** credenciales necesarias para firmar la aplicación de salida ajustada. Cualquier contraseña que se establezca debe ser segura, pero anótelas ya que las necesitará para ejecutar la herramienta de ajuste de aplicaciones.
+- Android requiere que todos los paquetes de aplicaciones estén firmados (.apks). Para **volver a usar** certificados existentes e instrucciones generales de certificado de firma, vea [Reutilización de certificados de firma y aplicaciones de encapsulado](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps). El archivo ejecutable de Java keytool.exe se usa para generar **nuevas** credenciales necesarias para firmar la aplicación de salida ajustada. Cualquier contraseña que se establezca debe ser segura, pero anótelas ya que las necesitará para ejecutar la herramienta de ajuste de aplicaciones.
 
 ## <a name="install-the-app-wrapping-tool"></a>Instalar la herramienta de ajuste de aplicaciones
 
@@ -119,7 +119,7 @@ Los casos principales en los que resulta necesario reajustar las aplicaciones so
 * La herramienta de ajuste de aplicaciones de Intune para Android tiene una nueva versión que permite corregir errores importantes o bien presenta características nuevas y específicas relativas a la directiva de protección de la aplicación de Intune. Esto suele darse cada seis u ocho semanas a través del repositorio de GitHub para la [herramienta de ajuste de aplicaciones de Microsoft Intune para Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android).
 
 Entre los procedimientos recomendados para el reajuste destacan los siguientes: 
-* Mantenimiento de los certificados de firma utilizados durante el proceso de compilación ([Reutilización de certificados de firma y aplicaciones de encapsulado](https://docs.microsoft.com/en-us/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps))
+* Mantenimiento de los certificados de firma utilizados durante el proceso de compilación ([Reutilización de certificados de firma y aplicaciones de encapsulado](https://docs.microsoft.com/intune/app-wrapper-prepare-android#reusing-signing-certificates-and-wrapping-apps))
 
 ## <a name="reusing-signing-certificates-and-wrapping-apps"></a>Reutilización de certificados de firma y aplicaciones de encapsulado
 Android requiere que todas las aplicaciones estén firmadas mediante un certificado válido para instalarlo en dispositivos Android.
@@ -158,7 +158,7 @@ La siguiente es una guía para el mensaje de Requerir usuario al iniciar la apli
 ### <a name="working-with-the-intune-sdk"></a>Trabajar con el SDK de Intune
 Estas instrucciones son específicas para todas las aplicaciones de Android y Xamarin que quieren solicitar directivas de protección de aplicaciones de Intune para su uso en un dispositivo de usuario final.
 
-1. Configure ADAL siguiendo los pasos definidos en la [Guía para desarrolladores de Android acerca del SDK para aplicaciones de Microsoft Intune](https://docs.microsoft.com/en-us/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
+1. Configure ADAL siguiendo los pasos definidos en la [Guía para desarrolladores de Android acerca del SDK para aplicaciones de Microsoft Intune](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
 > [!NOTE] 
 > El término "Id. de cliente" vinculado a la aplicación es el mismo que el término "Id. de aplicación" de Azure Portal vinculado a la aplicación. 
 * Para habilitar el SSO, necesita el punto n.º 2 de la "Configuración de ADAL común".
@@ -174,4 +174,4 @@ Estas instrucciones son específicas para todas las aplicaciones de Android y Xa
 ### <a name="see-also"></a>Vea también
 - [Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles mediante Microsoft Intune](apps-prepare-mobile-application-management.md)
 
-- [Usar el SDK para habilitar aplicaciones para la administración de aplicaciones móviles)](/intune/classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+- [Guía para desarrolladores sobre el SDK de aplicaciones de Microsoft Intune para Android](app-sdk-android.md)

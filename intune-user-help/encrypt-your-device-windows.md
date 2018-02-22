@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 01/23/2017
+ms.date: 01/29/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,18 +17,21 @@ ROBOTS:
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0cd9107462348e92c9b1a3122c19591bcab6a00e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ed8475956a13e2f35d37b57f0d404f916c239998
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="how-to-protect-your-windows-device-using-encryption"></a>Cómo proteger el dispositivo Windows mediante el cifrado
 
-Cuando cifra un dispositivo, está ajustando la información en una capa de código de protección que evita que los usuarios sin autorización tengan acceso a él. Para asegurarnos de que su información está protegida, la organización le pide que cifre su dispositivo Windows para proteger los datos de la escuela o empresa.
+Cuando cifra un dispositivo, está ajustando la información en una capa de código de protección que evita que los usuarios sin autorización tengan acceso a él. Para asegurarnos de que su información está protegida, la organización le pide que cifre su dispositivo Windows para proteger los datos de la escuela o empresa. 
+
+Si tiene un dispositivo Windows Phone y lo ha inscrito, se cifrará automáticamente en caso de que se requiera el cifrado.
 
 > [!Note]
-> Si tiene un dispositivo Windows Phone y lo ha inscrito, se cifrará automáticamente en caso de que se requiera el cifrado.
+> Windows 10 Home no admite el cifrado. Obtenga más información sobre cómo efectuar la actualización de [Windows 10 Home a Windows 10 Pro](https://support.microsoft.com/help/12384/windows-10-upgrading-home-to-pro).
+
 
 Si tiene un dispositivo de escritorio, siga estas instrucciones para cifrarlo.
 

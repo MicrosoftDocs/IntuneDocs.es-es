@@ -14,11 +14,11 @@ ms.assetid: 7e3135c1-df26-48c9-aa4c-cdab6168897a
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 31bb6cf7d118e121a5a8d8a74f92c2b3cf5da7bc
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 52d9c05d0bb2ed1c8592ac3b2c5cdeb07114367d
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-your-ios-users-get-their-apps"></a>Cómo obtienen sus aplicaciones los usuarios de iOS
 
@@ -47,7 +47,7 @@ Los usuarios inscritos obtienen sus aplicaciones tocando en los iconos siguiente
 
 ![Pantalla de aplicaciones del Portal de empresa de iOS](./media/ios-cp-app-main-apps-screen.png)
 
-Para obtener más información sobre cómo agregar aplicaciones y colocarlas en estos iconos, consulte [Agregar aplicaciones a los dispositivos inscritos en Intune](/intune-classic/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md).
+Para más información sobre cómo agregar aplicaciones, vea [Agregar una aplicación a Microsoft Intune](apps-add.md).
 
 ### <a name="see-also"></a>Vea también
 [Cómo obtienen sus aplicaciones los usuarios de Android](end-user-apps-android.md)

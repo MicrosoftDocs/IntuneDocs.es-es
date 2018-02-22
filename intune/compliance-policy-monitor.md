@@ -15,11 +15,11 @@ ms.assetid: 503d1dd2-a647-4aea-bf48-55319a3dd8a7
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 999cb6a9ec37c42b216cda1f6963bbd61ec8fa66
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f82293ee3803f189cbb67549b1a6cd653572eaaf
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Supervisión de las directivas de cumplimiento de dispositivos Intune
 
@@ -62,7 +62,7 @@ Se trata de un gráfico de anillos que muestra el estado de cumplimiento agregad
 
 -   **En período de gracia**: el administrador seleccionó como destino el dispositivo con una o varias configuraciones de directivas de cumplimiento de dispositivos, pero el usuario no ha aplicado las directivas aún, lo que significa que el dispositivo tiene el estado No conforme, pero se encuentra en el período de gracia definido por el administrador.
 
-    -   Obtenga más información sobre las acciones para los dispositivos que no cumplen las directivas.
+    -   Obtenga más información sobre las acciones disponibles para los dispositivos que no cumplen las directivas.
 
 -   **Device not synced** (Dispositivo no sincronizado): el dispositivo no pudo informar del estado de las directivas de cumplimiento de dispositivos por uno de los siguientes motivos:
 
@@ -133,7 +133,7 @@ Al hacer clic en la propia configuración de directivas de dispositivos, puede v
 
 ### <a name="per-policy-device-compliance-report"></a>Informe de cumplimiento de dispositivos por directiva
 
-Este informe proporciona una vista por directiva de cumplimiento y el número total de dispositivos en cada estado de cumplimiento. El icono de **cumplimiento de directivas** está disponible en el **panel de cumplimiento de dispositivos**, que muestra todas las directivas que creó previamente el administrador, las plataformas en las que se aplica la directiva, y el número de dispositivos conformes y no conformes.
+Este informe proporciona una vista por directiva de cumplimiento y el número total de dispositivos en cada estado de cumplimiento. El título **Cumplimiento de directivas** está disponible en el **panel Cumplimiento de dispositivos**. En él se muestran todas las directivas que ha creado el administrador previamente, las plataformas en las que se aplica la directiva y el número de dispositivos conformes y no conformes.
 
 ![Informe de cumplimiento de dispositivos por directiva](./media/idc-8.png)
 
@@ -143,7 +143,7 @@ Al hacer clic en el icono de cumplimiento de directivas, seleccione una de las d
 
 ### <a name="per-setting-device-compliance-report"></a>Informe de cumplimiento de dispositivos por configuración
 
-Este informe permite ver, por configuración de cumplimiento, el número total de dispositivos en cada estado de cumplimiento. El icono de **cumplimiento de configuración** está disponible en el **panel de cumplimiento de dispositivos**, y muestra todas las configuraciones de directivas de cumplimiento de dispositivos de todas las directivas de cumplimiento de dispositivos creadas por el administrador, las plataformas en las que se aplicaron las configuraciones de directivas y el número de dispositivos que no cumplen las directivas.
+Este informe permite ver, por configuración de cumplimiento, el número total de dispositivos en cada estado de cumplimiento. El título **Cumplimiento de configuración** está disponible en el **panel Cumplimiento de dispositivos**. En él se muestran todas las opciones de las directivas de cumplimiento de dispositivos creadas por el administrador, las plataformas en las que se han aplicado y el número de dispositivos no conformes.
 
 ![Informe de cumplimiento de dispositivos por configuración](./media/idc-10.png)
 

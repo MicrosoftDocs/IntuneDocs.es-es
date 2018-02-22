@@ -15,11 +15,11 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eda4ad57f1365a7fe27d58ad8f40399b1582b4b6
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4ae5060ca2ea884ddbcf0e21d7a6e95c56f973bc
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="enroll-devices-using-device-enrollment-manager"></a>Inscripción de dispositivos mediante el administrador de inscripción de dispositivos
 
@@ -30,7 +30,7 @@ Las organizaciones pueden usar Intune para administrar un gran número de dispos
 Los usuarios deben existir en Azure Portal para agregarlos como administradores de inscripción de dispositivos. Para lograr una seguridad óptima, el usuario DEM no debería ser también un administrador de Intune.
 
 >[!NOTE]
->No se puede usar el método de inscripción de DEM con estos otros métodos de inscripción: [Apple Configurator con el Asistente de instalación](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator con inscripción directa](apple-configurator-direct-enroll-ios.md), [Apple School Manager (ASM)](apple-school-manager-set-up-ios.md) o el [Programa de inscripción de dispositivos (DEP)](device-enrollment-program-enroll-ios.md). Tampoco se puede usar para inscribir dispositivos macOS. 
+>No se puede usar el método de inscripción de DEM con estos otros métodos de inscripción: [Apple Configurator con el Asistente de instalación](apple-configurator-setup-assistant-enroll-ios.md), [Apple Configurator con inscripción directa](apple-configurator-direct-enroll-ios.md), [Apple School Manager (ASM)](apple-school-manager-set-up-ios.md) o el [Programa de inscripción de dispositivos (DEP)](device-enrollment-program-enroll-ios.md). Tampoco se puede usar para inscribir dispositivos macOS.
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Ejemplo de escenario de administrador de inscripción de dispositivos
 
@@ -65,13 +65,11 @@ Los dispositivos inscritos con una cuenta de administrador de inscripción de di
 
 ## <a name="add-a-device-enrollment-manager"></a>Agregar un administrador de inscripción de dispositivos
 
-1.  En Azure Portal, elija **Más servicios** > **Supervisión y administración** > **Intune**.
+1.  En Intune, en [Azure Portal](https://aka.ms/intuneportal), elija **Inscripción de dispositivos** > **Administradores de inscripción de dispositivos**.
 
-2.  En la hoja de Intune, elija **Inscribir dispositivos** y luego elija **Administradores de inscripción de dispositivos**.
+2.  Seleccione **Agregar**.
 
-3.  Seleccione **Agregar**.
-
-4.  En la hoja **Agregar usuario**, escriba un nombre principal de usuario para el usuario de DEM y seleccione **Agregar**. El usuario DEM se agrega a la lista de usuarios DEM.
+3.  En la hoja **Agregar usuario**, escriba un nombre principal de usuario para el usuario de DEM y seleccione **Agregar**. El usuario DEM se agrega a la lista de usuarios DEM.
 
 ## <a name="permissions-for-dem"></a>Permisos para DEM
 

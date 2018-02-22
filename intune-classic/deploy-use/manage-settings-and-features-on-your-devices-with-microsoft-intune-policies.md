@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 362c7f4dc9acfe574eb6a98819339e2db44cb9ec
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: a3075aa4ecae75b2c422b1e59b9fa0ce5281a2d7
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="manage-settings-and-features-on-your-devices-with-microsoft-intune-policies"></a>Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune
 
@@ -166,7 +166,7 @@ Al eliminar una directiva o quitar un dispositivo de un grupo al que se le aplic
     - **Dispositivos Windows Phone 8.1**: se quitan las opciones siguientes:
         - Requerir una contraseña para desbloquear dispositivos móviles
         - Permitir contraseñas sencillas
-        - Longitud mínima de contraseña
+        - Longitud mínima de la contraseña
         - Tipo de contraseña obligatoria
         - Expiración de contraseña (días)
         - Recordar el historial de contraseñas
@@ -198,7 +198,7 @@ Al eliminar una directiva o quitar un dispositivo de un grupo al que se le aplic
 #### <a name="windows-pcs-running-the-intune-client-software"></a>Equipos Windows que ejecutan el software cliente de Intune
 
 - **Configuración de Endpoint Protection**: se restablecen los valores recomendados de la configuración. La única excepción es la opción de configuración **Unirse a Microsoft Active Protection Service**, cuyo valor predeterminado es **No**. Para obtener más información, consulte [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) (Ayudar a proteger los equipos de Windows con Endpoint Protection para Microsoft Intune).
-- **Configuración de actualizaciones de software**: se restablece la configuración al estado predeterminado para el sistema operativo. Para obtener más información, consulte [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) (Mantener los equipos de Windows al día con las actualizaciones de software de Microsoft Intune).
+- **Configuración de actualizaciones de software**: se restablece la configuración al estado predeterminado para el sistema operativo. Para obtener más información, consulte [Mantener los equipos Windows al día con las actualizaciones de software de Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).
 - **Configuración de Microsoft Intune Center**: cualquier información de contacto de soporte configurada por la directiva se elimina de los equipos.
 - **Configuración del Firewall de Windows**: se restablece la configuración predeterminada para el sistema operativo del equipo. Para obtener más información, consulte [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) (Ayudar a proteger los equipos de Windows con Endpoint Protection para Microsoft Intune).
 

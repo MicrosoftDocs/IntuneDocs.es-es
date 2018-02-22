@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: 645414169dcdf5c2e548bda9d21e017e8a18f76d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 15baae06398d135557439c0e67b50f7e1326b6fe
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Solucionar problemas de la administración de aplicaciones móviles
 
@@ -105,14 +105,14 @@ Cuadro de diálogo/mensaje de error | Causa | Corrección |
 **No se encontraron aplicaciones**: no hay ninguna aplicación en este dispositivo que su organización admita para abrir este contenido. Póngase en contacto con el administrador de TI para obtener ayuda. | El usuario intentó abrir datos profesionales o educativos con otra aplicación, pero Intune no puede encontrar ninguna otra aplicación administrada que pueda abrir los datos. | Asegúrese de que haya una directiva de protección de aplicación de Android implementada para la seguridad del usuario y que se dirija al menos a otra aplicación habilitada para MAM que pueda abrir los datos en cuestión.
 **Error de inicio de sesión**: vuelva a intentar iniciar la sesión. Si este problema persiste, póngase en contacto con el administrador de TI para obtener ayuda. | Error al autenticar la cuenta con la que el usuario intentó iniciar sesión. | Asegúrese de que el usuario inicia sesión con la cuenta profesional o educativa que ya está inscrita con el servicio MAM de Intune (la primera cuenta profesional o educativa con que se inició sesión correctamente en esta aplicación). <br><br> Borre los datos de la aplicación. <br><br> Asegúrese de que la versión de la aplicación esté actualizada. <br><br> Asegúrese de que la versión de Portal de empresa está actualizada.
 **Se requiere conexión a Internet**: debe conectarse a Internet para comprobar si puede usar esta aplicación. | El dispositivo no está conectado a Internet. | Conecte el dispositivo a una red de datos o WiFi.
-**Dispositivo no compatible**: no se puede usar esta aplicación porque está usando un dispositivo liberado. Póngase en contacto con el administrador de TI para obtener ayuda. | Intune detectó que el usuario usa un dispositivo liberado. | Restablezca los valores de fábrica predeterminados del dispositivo.
+**Dispositivo no conforme**: no se puede usar esta aplicación porque está usando un dispositivo liberado. Póngase en contacto con el administrador de TI para obtener ayuda. | Intune detectó que el usuario usa un dispositivo liberado. | Restablezca los valores de fábrica predeterminados del dispositivo.
 **Cuenta no configurada**: esta aplicación se debe administrar con Microsoft Intune, pero su cuenta no se configuró. Póngase en contacto con el administrador de TI para obtener ayuda. | La cuenta de usuario no tiene una licencia de Intune A Direct. | Asegúrese de que la cuenta del usuario tiene asignada una licencia de Intune en el [portal de Office](http://portal.office.com).
 **No se puede registrar la aplicación**: esta aplicación se debe administrar con Microsoft Intune, pero no fue posible registrarla en este momento. Póngase en contacto con el administrador de TI para obtener ayuda. | Error al inscribir automáticamente la aplicación con el servicio MAM cuando se requiere la directiva de protección de aplicación. | Borre los datos de la aplicación. <br><br> Envíe registros a Intune a través de la aplicación Portal de empresa o presente una incidencia de soporte técnico [aquí](how-to-get-support-for-microsoft-intune.md).
 
 
 
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 - [Validar la configuración de administración de aplicaciones móviles](../deploy-use/validate-mobile-application-management.md)
 - [Preparación para configurar directivas de administración de aplicaciones móviles con Microsoft Intune](../deploy-use/get-ready-to-configure-mobile-app-management-policies-with-microsoft-intune.md)
 - [Cómo obtener soporte técnico para Microsoft Intune](how-to-get-support-for-microsoft-intune.md)

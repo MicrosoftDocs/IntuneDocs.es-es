@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 21053cd7ce930bd11625807f7fdda3ebbdd953f3
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 5f16e14b32508adf1fc4f3f448f53a7dcad8e137
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-conditional-access"></a>Solucionar problemas de acceso condicional
 
@@ -90,7 +90,7 @@ Se puede bloquear un dispositivo desde el acceso condicional sin recibir un corr
 - Compruebe los registros de Exchange Connector para la actividad de sendemail y compruebe si hay errores. Un ejemplo del comando para buscar es SendEmail desde la cuenta de notificación a useremail.
 - Antes de que Exchange Connector bloquee el dispositivo, envía el correo electrónico de activación. Si el dispositivo está desconectado, no puede recibir el correo electrónico de activación. Compruebe si el cliente de correo electrónico del dispositivo tiene la recuperación de correo electrónico mediante la inserción en lugar de sondeo, ya que esto podría causar también que el usuario pierda el correo electrónico. Cambie a encuesta y compruebe si el dispositivo recibe el correo electrónico.
 
-## <a name="non-compliant-device-not-blocked"></a>Dispositivo no compatible no bloqueado
+## <a name="noncompliant-device-not-blocked"></a>Dispositivo no conforme no bloqueado
 
 Si encuentra un dispositivo que no es compatible, pero sigue teniendo acceso, realice los pasos siguientes.
 

@@ -6,19 +6,18 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 11/01/2017
+ms.date: 1/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 08f659cf-715e-4e10-9ab2-1bac3c6f2366
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: fa9b09f97568b54a68f34a609c91426eb12b71e0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1a7d047de1faa019eb137516ef75d64657e22e5a
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="manage-software-updates"></a>Administrar actualizaciones de software
 
@@ -45,8 +44,9 @@ Después de crear anillos de actualización, debe asignarnos a grupos de disposi
 - Windows Update admite las siguientes versiones de Windows 10:
     - Windows 10
     - Windows 10 Team (para dispositivos Surface Hub)
+    - [Windows Holographic for Business](#windows-holographic-for-business-support)
 
- No se admiten los dispositivos que ejecutan Windows 10 Mobile y Windows 10 Holographic.
+ No se admiten dispositivos que ejecuten Windows 10 Mobile.
 
 - En los dispositivos Windows, el valor de las opciones **Comentarios y diagnósticos** > **Datos de uso y diagnóstico** debe establecerse en, al menos, **Básico**.
 
@@ -89,8 +89,7 @@ Después de crear anillos de actualización, debe asignarnos a grupos de disposi
 
     Las actualizaciones de características suelen ser nuevas características de Windows. Después de configurar la opción **Canal de servicio**, ya sea Canal semianual o el Canal semianual (dirigido), podrá definir si quiere aplazar la recepción de actualizaciones de características (y durante cuánto tiempo) después de que Microsoft las publique en Windows Update.
 
-    Por ejemplo:  
-    **Si el canal de servicio se establece en Canal semianual (dirigido) y el período de aplazamiento es de 30 días**: supongamos que la actualización de características X se publica inicialmente en Windows Update como Canal semianual (dirigido) en enero. El dispositivo no recibirá la actualización hasta febrero: 30 días más tarde.
+    Por ejemplo, **si el canal de servicio está establecido en Canal semianual (dirigido) y el período de aplazamiento es de 30 días**, supongamos que la actualización de características X se publica inicialmente en Windows Update como Canal semianual (dirigido) en enero. El dispositivo no recibirá la actualización hasta febrero: 30 días más tarde.
 
     **Si el canal de servicio se establece en Canal semianual y el período de aplazamiento es de 30 días**: supongamos que la actualización de características X se publica inicialmente en Windows Update como Canal semianual (dirigido) en enero. Cuatro meses más tarde, en abril, la actualización de características X se publicará en el Canal semianual. El dispositivo recibirá la actualización de características 30 días después de esta publicación en el Canal semianual y se actualizará en mayo.
 
@@ -154,3 +153,11 @@ Puede pausar un dispositivo para que deje de recibir actualizaciones de caracter
 > [!IMPORTANT]
 > Al emitir un comando de pausa, los dispositivos reciben este comando una vez que se registran con el servicio. Es posible que antes de que se registren, instalen una actualización programada.
 > Además, si un dispositivo de destino está apagado cuando se emite el comando de pausa, al encenderse, podría descargar e instalar actualizaciones programadas antes de que se registre con Intune.
+
+## <a name="windows-holographic-for-business-support"></a>Compatibilidad con Windows Holographic for Business
+
+Windows Holographic for Business es compatible con las siguientes opciones de configuración:
+
+- **Comportamiento de las actualizaciones automáticas**
+- **Actualizaciones de productos de Microsoft**
+- **Canal de servicio**

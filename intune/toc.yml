@@ -89,7 +89,7 @@
           href: planning-guide-support-plan.md
         - name: Diseño
           href: planning-guide-design.md
-        - name: Implementar
+        - name: Preparar
           href: planning-guide-onboarding.md
         - name: Prueba y validación
           href: planning-guide-test-validation.md
@@ -146,7 +146,7 @@
         - name: Opciones de inscripción
           href: enrollment-options.md
           items:
-            - name: Términos y condiciones
+            - name: términos y condiciones
               href: terms-and-conditions-create.md
             - name: Restricciones
               href: enrollment-restrictions-set.md
@@ -287,6 +287,26 @@
           items:
             - name: Borrado selectivo de aplicaciones
               href: apps-selective-wipe.md
+            - name: Uso de directivas de protección de aplicaciones
+              href: app-protection-policy.md
+              items:
+                - name: Creación de directivas de protección de aplicaciones
+                  href: app-protection-policies.md
+                  items:
+                    - name: Configuración de Android
+                      href: app-protection-policy-settings-android.md
+                    - name: Configuración de iOS
+                      href: app-protection-policy-settings-ios.md
+                - name: Validación de directivas de protección de aplicaciones
+                  href: app-protection-policies-validate.md
+                - name: Supervisión del estado de usuario de protección de aplicaciones
+                  href: app-protection-policies-monitor.md
+                - name: Preparativos para las directivas de protección de aplicaciones de trabajo en curso
+                  href: app-protection-policies-configure-windows-10.md
+                - name: Creación y asignación de directivas de protección de aplicaciones de trabajo en curso
+                  href: windows-information-protection-policy-create.md
+                - name: Administrar la transferencia de datos entre aplicaciones iOS
+                  href: data-transfer-between-apps-manage-ios.md
     - name: Configurar dispositivos
       href: device-profiles.md
       items:
@@ -320,7 +340,7 @@
               href: device-restrictions-macos.md
             - name: Windows 8.1
               href: device-restrictions-windows-8-1.md
-            - name: "Windows\_Phone\_8,1"
+            - name: 'Windows Phone 8,1'
               href: device-restrictions-windows-phone-8-1.md
             - name: Windows 10
               href: device-restrictions-windows-10.md
@@ -337,7 +357,7 @@
               href: email-settings-android.md
             - name: iOS
               href: email-settings-ios.md
-            - name: "Windows\_Phone\_8,1"
+            - name: 'Windows Phone 8,1'
               href: email-settings-windows-phone-8-1.md
             - name: Windows 10
               href: email-settings-windows-10.md
@@ -354,7 +374,7 @@
               href: vpn-settings-macos.md
             - name: Windows 8.1
               href: vpn-settings-windows-8-1.md
-            - name: "Windows\_Phone\_8,1"
+            - name: 'Windows Phone 8,1'
               href: vpn-settings-windows-phone-8-1.md
             - name: Windows 10
               href: vpn-settings-windows-10.md
@@ -444,28 +464,8 @@
           href: conditional-access-integrate-jamf.md
         - name: Aplicación del cumplimiento en equipos Mac administrados con Jamf Pro
           href: conditional-access-assign-jamf.md
-    - name: Proteger datos de dispositivos y aplicaciones
+    - name: Protección de datos de dispositivos
       items:
-        - name: Uso de directivas de protección de aplicaciones
-          href: app-protection-policy.md
-          items:
-            - name: Creación de directivas de protección de aplicaciones
-              href: app-protection-policies.md
-              items:
-                - name: Configuración de Android
-                  href: app-protection-policy-settings-android.md
-                - name: Configuración de iOS
-                  href: app-protection-policy-settings-ios.md
-            - name: Validación de directivas de protección de aplicaciones
-              href: app-protection-policies-validate.md
-            - name: Supervisión del estado de usuario de protección de aplicaciones
-              href: app-protection-policies-monitor.md
-            - name: Preparativos para las directivas de protección de aplicaciones de trabajo en curso
-              href: app-protection-policies-configure-windows-10.md
-            - name: Creación y asignación de directivas de protección de aplicaciones de trabajo en curso
-              href: windows-information-protection-policy-create.md
-            - name: Administrar la transferencia de datos entre aplicaciones iOS
-              href: data-transfer-between-apps-manage-ios.md
         - name: Mobile Threat Defense
           href: mobile-threat-defense.md
           items:
@@ -604,7 +604,7 @@
               href: custom-settings-ios.md
             - name: macOS
               href: custom-settings-macos.md
-            - name: "Windows\_Phone\_8,1"
+            - name: 'Windows Phone 8,1'
               href: custom-settings-windows-phone-8-1.md
             - name: Windows 10
               href: custom-settings-windows-10.md
@@ -651,6 +651,8 @@
           href: reports-proc-data-rest.md
         - name: Punto de conexión de API de almacenamiento de datos
           href: reports-api-url.md
+        - name: Autenticación de solo aplicación de Almacenamiento de datos
+          href: data-warehouse-app-only-auth.md
         - name: Modelo de datos de Almacenamiento de datos
           href: reports-ref-data-model.md
           items:

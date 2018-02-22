@@ -5,7 +5,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 02/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -17,14 +17,14 @@ ROBOTS:
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 147ac06dbc472f1488b09766ef42b4ac2ab5685f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 64e8cc7fdb2405dad61e0db2093339c255d666aa
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-reconnect-a-compromised-ios-device"></a>Cómo volver a conectar un dispositivo iOS en riesgo
 
-El equipo de soporte técnico de su empresa ha detectado que está usando un dispositivo desbloqueado. Por "descodificado" se entiende que el dispositivo se ha cambiado para permitir el acceso sin restricciones a determinados archivos importantes, lo que puede poner en riesgo la seguridad y podría ser una amenaza para los recursos de la empresa.
+El equipo de soporte técnico de su empresa ha detectado que está usando un dispositivo desbloqueado. Por "descodificado" se entiende que el dispositivo se ha cambiado para permitir el acceso sin restricciones a determinados archivos importantes, lo que puede poner en riesgo la seguridad y podría ser una amenaza para los recursos de la empresa. 
 
-Cuando esto sucede, el dispositivo ya no puede tener acceso a recursos de la empresa y debe ponerse en contacto con el equipo de soporte técnico de su empresa para obtener ayuda. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Cuando esto sucede, el dispositivo ya no puede acceder a los recursos de la empresa y es probable que necesite restablecer el dispositivo a la configuración de fábrica. Se recomienda que se ponga en contacto con el equipo de soporte técnico de su empresa para recibir ayuda. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

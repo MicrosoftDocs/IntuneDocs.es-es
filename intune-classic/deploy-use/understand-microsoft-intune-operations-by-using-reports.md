@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pbala
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f812a740f5a703479e001fa2c5b6d1fd3336a2e2
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 9f8c1df81e8d5b4f41fa5df26aadf8e8dd0f18bd
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="understand-microsoft-intune-operations-by-using-reports"></a>Comprender las operaciones de Microsoft Intune mediante informes
 
@@ -34,7 +34,7 @@ Los informes de Intune proporcionan información sobre el software, el hardware 
 
 |Tipo de informe|Descripción|
 |---------------|---------------|
-|**Informes de actualización**|Muestran las actualizaciones de software que se han llevado a cabo correctamente en los equipos de su organización. También muestran las actualizaciones erróneas, pendientes o necesarias. Para más información sobre las actualizaciones de software, vea [Mantener los equipos Windows al día con las actualizaciones de software en Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).|
+|**Informes de actualización**|Muestran las actualizaciones de software que se han llevado a cabo correctamente en los equipos de su organización. También muestran las actualizaciones erróneas, pendientes o necesarias. Para obtener más información sobre las actualizaciones de software, vea [Mantener los equipos Windows al día con las actualizaciones de software en Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).|
 |**Informes de software detectado**|Muestran el software instalado en los equipos de su organización. También se incluyen las versiones de software. Puede filtrar la información mostrada en función de la compañía de software y la categoría de software. Puede seleccionar la flecha situada junto al elemento de lista para expandir las actualizaciones de la lista a fin de mostrar más detalles (como los equipos en los que hay una actualización instalada).<br /><br />Al retirar equipos o cambiar su pertenencia a grupos en Intune, los cambios pueden tardar varios minutos en quedar reflejados en el informe de software detectado. Para que los datos de inventario de software sean más precisos, espere unos minutos después de retirar equipos o cambiar su pertenencia a grupos antes de ejecutar un informe de software detectado que incluya dichos equipos.|
 |**Informes de inventario de equipos**|Muestra información sobre los equipos administrados en su organización. Use este informe para planear las compras de hardware y comprender mejor las necesidades de hardware de los usuarios de la organización. Para más información sobre cómo trabajar con los equipos administrados, vea [Administrar equipos de Windows con Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md).|
 |**Informes de inventario de dispositivos móviles**|Muestra información sobre los dispositivos móviles en la organización. Puede filtrar la información mostrada en función de los grupos, si el dispositivo está desbloqueado o es un dispositivo raíz, y según sistema operativo.|

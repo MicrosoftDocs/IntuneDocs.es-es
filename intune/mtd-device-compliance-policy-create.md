@@ -15,11 +15,11 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 23155cbb84c2d170f1b0216981621e35fd3ac0f1
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 5ae6947de91da43dc13c7544a6611e71ee15b58b
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Creación de directiva de cumplimiento de dispositivos de Mobile Threat Defense (MTD) con Intune
 
@@ -52,18 +52,18 @@ Requisitos previos de la directiva de cumplimiento de dispositivos con MTD:
 
 7.  En la hoja **Estado de dispositivos**, pulse el nivel de Mobile Threat desde la lista desplegable en **Requerir que el dispositivo tenga el nivel de Mobile Threat Defense**.
 
-    a.  **Protegido**: es la más segura. El dispositivo no puede tener ninguna amenaza presente y aún puede tener acceso a los recursos de la empresa. Si se encuentra alguna amenaza, el dispositivo se evalúa como no compatible.
+    a.  **Protegido**: es la más segura. El dispositivo no puede tener ninguna amenaza presente y aún puede tener acceso a los recursos de la empresa. Si se encuentra alguna amenaza, el dispositivo se clasificará como no conforme.
 
     b.  **Bajo**: el dispositivo se evalúa como compatible si solo hay amenazas de nivel bajo. Cualquier valor por encima coloca al dispositivo en un estado de no conformidad.
 
-    c.  **Medio**: el dispositivo se evalúa como compatible si las amenazas que se encuentran en él son de nivel bajo o medio. Si se detectan amenazas de nivel alto, se determina que el dispositivo no es conforme.
+    c.  **Medio**: el dispositivo se evalúa como compatible si las amenazas que se encuentran en él son de nivel bajo o medio. Si se detectan amenazas de nivel alto, se determinará que el dispositivo no es conforme.
 
     d.  **Alto**: esta opción es la menos segura. Permite todos los niveles de amenaza y usa Mobile Threat Defense solo con fines informativos. Los dispositivos deben tener activada la aplicación MTD con esta configuración.
 
 8.  Haga clic en **Aceptar** dos veces, después seleccione **Crear**.
 
 > [!IMPORTANT]
-> Si crea directivas de acceso condicional para Office 365 u otros servicios, la evaluación de cumplimiento de dispositivo se toma en consideración y se bloquea el acceso de los dispositivos no compatibles a los recursos corporativos hasta que se resuelva la amenaza en el dispositivo.
+> Si crea directivas de acceso condicional para Office 365 u otros servicios, se efectuará esta evaluación de cumplimiento de dispositivo y se bloqueará el acceso de los dispositivos no conformes a los recursos corporativos hasta que se resuelva la amenaza en el dispositivo.
 
 ## <a name="to-assign-a-mtd-device-compliance-policy"></a>Para asignar una directiva de cumplimiento de dispositivos de MTD
 

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f601253c6ea905e86a2a417cfd37bdb03b1df48b
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: ea45ac89064756f4b8ebd8ca9d163a151b6e6cc2
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="create-skycure-mobile-threat-defense-compliance-policy"></a>Creación de directiva de cumplimiento de Mobile Threat Defense de Skycure
 
@@ -47,16 +47,16 @@ Como parte de la configuración de Mobile Threat Defense de Skycure, en la conso
 
 4.  Seleccione el **Máximo nivel de amenaza permitido**:
 
-    a.  **Ninguno (protegido)**: es el más seguro. El dispositivo no puede tener ninguna amenaza presente y aún puede tener acceso a los recursos de la empresa. Si se encuentra alguna amenaza, el dispositivo se evalúa como no compatible.
+    a.  **Ninguno (protegido)**: es el más seguro. El dispositivo no puede tener ninguna amenaza presente y aún puede tener acceso a los recursos de la empresa. Si se encuentra alguna amenaza, el dispositivo se clasificará como no conforme.
 
     b.  **Bajo**: el dispositivo se evalúa como compatible si solo hay amenazas de nivel bajo. Cualquier valor por encima coloca al dispositivo en un estado de no conformidad.
 
-    c.  **Medio**: el dispositivo se evalúa como compatible si las amenazas que se encuentran en él son de nivel bajo o medio. Si se detectan amenazas de nivel alto, se determina que el dispositivo no es conforme.
+    c.  **Medio**: el dispositivo se evalúa como compatible si las amenazas que se encuentran en él son de nivel bajo o medio. Si se detectan amenazas de nivel alto, se determinará que el dispositivo no es conforme.
 
     d.  **Alto**: esta opción es la menos segura. Esto permite todos los niveles de amenaza y usa Mobile Threat Defense de Skycure solo con fines informativos.
 
 > [!IMPORTANT]
-> Si crea directivas de acceso condicional para Office 365 u otros servicios, esta evaluación de cumplimiento se toma en consideración y se bloquea el acceso de los dispositivos no compatibles a esos servicios hasta que se resuelva la amenaza.
+> Si crea directivas de acceso condicional para Office 365 u otros servicios, se efectuará esta evaluación de cumplimiento y se bloqueará el acceso de los dispositivos no conformes a dichos servicios hasta que se resuelva la amenaza.
 
 ## <a name="span-idmonitor-device-threats-classanchorspan-idnext-steps-classanchorspan-idtoc477360344-classanchorspanspanspannext-steps"></a><span id="monitor-device-threats" class="anchor"><span id="next-steps" class="anchor"><span id="_Toc477360344" class="anchor"></span></span></span>Pasos siguientes
 

@@ -15,11 +15,11 @@ ms.assetid: 3a730a5d-2a90-42b0-aa28-aadfc7a18788
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 41270fb217c87880e67c1c5e0adf319576031126
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 2647875ed6753cf437d4487faf0137e28bd40f43
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Conector Lookout Mobile Threat Defense con Intune
 
@@ -35,7 +35,7 @@ La aplicación móvil Lookout, **Lookout for Work**, está instalada y se ejecut
 
 La directiva de cumplimiento en Intune incluye una regla para Mobile Threat Protection de Lookout basada en la evaluación del riesgo de Lookout. Cuando esta regla está habilitada, Intune evalúa la conformidad del dispositivo con la directiva que habilitó.
 
-Si se detecta que el dispositivo no cumple con la regla, se puede bloquear el acceso a recursos como Exchange Online y SharePoint Online. Los usuarios de dispositivos bloqueados reciben los pasos para resolver el problema y volver a obtener acceso. Las instrucciones se inician desde la aplicación Lookout for Work.
+Si se detecta que el dispositivo no es compatible, puede bloquearse el acceso a recursos como Exchange Online y SharePoint Online. Los usuarios de dispositivos bloqueados reciben los pasos para resolver el problema y volver a obtener acceso. Las instrucciones se inician desde la aplicación Lookout for Work.
 
 ## <a name="supported-platforms"></a>Plataformas compatibles
 Las siguientes plataformas son compatibles con Lookout cuando se inscriben en Intune:
@@ -61,7 +61,7 @@ Cuando las aplicaciones malintencionadas como malware se detectan en dispositivo
 
 **Bloquear cuando se detectan aplicaciones malintencionadas:**
 
-![Diagrama que muestra una directiva de acceso condicional bloqueando el acceso cuando se determina que un dispositivo es no conforme debido a aplicaciones malintencionadas en el dispositivo](./media/malicious-apps-blocked.png)
+![Diagrama en el que se muestra la directiva de acceso condicional bloqueando el acceso cuando se determina que el dispositivo no es conforme por contener aplicaciones malintencionadas.](./media/malicious-apps-blocked.png)
 
 **Acceso concedido tras la corrección:**
 
