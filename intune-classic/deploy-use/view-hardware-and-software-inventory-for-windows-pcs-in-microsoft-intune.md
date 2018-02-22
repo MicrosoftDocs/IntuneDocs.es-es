@@ -54,7 +54,7 @@ Intune recopila información detallada sobre el hardware y software de los escri
 
 ## <a name="to-refresh-computer-inventory-to-ensure-it-is-current"></a>Para actualizar el inventario de equipos a fin de asegurarse de que está al día
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), seleccione **Grupos** &gt; **Todos los dispositivos ** (u otro grupo que contenga el PC para el que quiera actualizar el inventario).
+1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), seleccione **Grupos** &gt; **Todos los dispositivos** (u otro grupo que contenga el PC para el que quiera actualizar el inventario).
 
 2.  Seleccione un PC o mantenga presionada la tecla **Ctrl** para seleccionar varios PC.
 
