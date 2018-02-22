@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 27f9d3172750d4db5b96d0477ecaeeafa1e59ed2
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 5c9ac6ecc75c25f910a8aecd1632c947c95b26d6
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-client-setup-in-microsoft-intune"></a>Solucionar los problemas de configuración del cliente en Microsoft Intune
 
@@ -71,7 +71,7 @@ Use la información siguiente como ayuda para solucionar problemas comunes de co
 
 Esto puede deberse a la ausencia de actualizaciones de software imprescindibles en el equipo.
 
-**Solución:** asegúrese de que la directiva de actualización de software permite la instalación de actualizaciones imprescindibles, como se describe en [Keep Windows PCs up to date with software updates in Microsoft Intune (Mantener los equipos de Windows al día con actualizaciones de software en Microsoft Intune)](/intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)
+**Solución**: asegúrese de que la directiva de actualización de software permita la instalación de actualizaciones imprescindibles, como se describe en [Mantener los equipos Windows al día con las actualizaciones de software de Microsoft Intune](/intune-classic/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune).
 
 
 ## <a name="microsoft-intune-policy-related-errors-in-policyplatformlog"></a>Errores relacionados con las directivas de Microsoft Intune en policyplatform.log

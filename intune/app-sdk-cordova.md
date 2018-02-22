@@ -2,10 +2,10 @@
 title: Complemento Cordova del SDK para aplicaciones de Microsoft Intune
 description: 
 keywords: sdk, Cordova, intune
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,20 +14,23 @@ ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 00c1c805dbbf661bdcd4ad6b153fee8b2bbba9ee
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d42f8418e2f277dca0fbb2f01248f5a815606cb6
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Complemento Cordova del SDK para aplicaciones de Microsoft Intune
 
-> [!NOTE]
-> Puede que quiera leer primero el artículo [Introducción a Intune App SDK](app-sdk-get-started.md), en el que se explica cómo preparar la integración en cada plataforma compatible.
+> [!IMPORTANT]
+> La compatibilidad de Intune con el complemento de Microsoft Intune App SDK Cordova finalizará el 1 de mayo de 2018. En su lugar, se recomienda utilizar la herramienta de ajuste de aplicaciones de Intune. Para obtener más información sobre la herramienta de ajuste de aplicaciones, consulte [Herramienta de ajuste de aplicaciones para iOS](app-wrapper-prepare-ios.md) y [Herramienta de ajuste de aplicaciones para Android](app-wrapper-prepare-android.md). Para obtener más información sobre este cambio, consulte la sección [Notificaciones](whats-new.md#notices) de [Novedades de Microsoft Intune](whats-new.md).
 
 ## <a name="overview"></a>Introducción
 
 El [Complemento Cordova del SDK para aplicaciones de Intune](/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune) en aplicaciones de iOS y Android creadas con Cordova. El complemento permite a los desarrolladores integrar características de protección de datos y aplicaciones de Intune en la aplicación basada en Cordova.
+
+> [!NOTE]
+> Puede que quiera leer primero el artículo [Introducción a Intune App SDK](app-sdk-get-started.md), en el que se explica cómo preparar la integración en cada plataforma compatible.
 
 Descubrirá que puede habilitar características del SDK sin necesidad de cambiar el comportamiento de la aplicación. Una vez que haya creado el complemento en su aplicación iOS o Android, el administrador de Microsoft Intune podrá implementar la directiva de protección de aplicaciones de Intune, que consta de una variedad de características de protección de datos. El complemento se ha creado de manera que la mayoría de los pasos se realizan automáticamente en el proceso de compilación de Cordova. Como resultado, debe poder obtener la aplicación habilitada para la protección de aplicaciones de Intune rápidamente. Para comenzar, siga los pasos que se indican a continuación en función de la plataforma de destino.
 
@@ -65,7 +68,7 @@ Ahora, las aplicaciones Cordova compiladas con el complemento Cordova del SDK pu
 
 
 
-## <a name="quick-start"></a>Inicio rápido
+## <a name="quickstart"></a>Inicio rápido
 
 1. Actualice su versión de ADAL:
 

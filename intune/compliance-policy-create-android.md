@@ -15,11 +15,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b67314ec37198553adc226424bc226293350453b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7995b79422a142f3eb8d5e81d81dbc525fbbb696
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-devices-in-intune"></a>Creación de una directiva de cumplimiento de dispositivos para dispositivos Android en Intune
 
@@ -103,7 +103,7 @@ Para ver más detalles, consulte [Habilitar la regla de protección contra amena
 - **Minimum OS required** (SO mínimo necesario): cuando un dispositivo no cumpla el requisito de versión de SO mínima, se notificará como no conforme. Además, se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario puede optar por actualizar el dispositivo, tras lo cual podrá tener acceso a los recursos de la empresa.
 - **Maximum OS version allowed** (Versión de SO máxima permitida): cuando un dispositivo usa una versión de SO posterior a la especificada en la regla, se bloquea el acceso a los recursos de la empresa y se solicita al usuario que se ponga en contacto con el administrador de TI. Mientras no se cambien las reglas para permitir la versión de SO, este dispositivo no podrá usarse para tener acceso a los recursos de la empresa.
 
-## <a name="how-non-compliant-settings-work-with-conditional-access-policies"></a>¿Cómo funciona la configuración de no conformidad con las directivas de acceso condicional?
+## <a name="how-noncompliant-settings-work-with-conditional-access-policies"></a>¿Cómo funciona la configuración de no conformidad con las directivas de acceso condicional?
 
 En la tabla siguiente se describe cómo administrar la configuración de no conformidad cuando se usa una directiva de cumplimiento con una directiva de acceso condicional.
 

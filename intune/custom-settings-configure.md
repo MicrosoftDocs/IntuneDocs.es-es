@@ -11,15 +11,13 @@ ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6e3821f40cdf1c36f020bf807eed5c6fbd83a9aa
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: cafcf95cc9025872ce0fbb9605c9d820aa7a19c0
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-configure-custom-device-settings-in-microsoft-intune"></a>Configuración personalizada de dispositivos en Microsoft Intune
 
@@ -47,14 +45,15 @@ Use la información de este tema para conocer los aspectos básicos de la config
     - **Windows Phone 8.1**
     - **Windows 10 y versiones posteriores**
 6. En la lista desplegable de **tipos de perfil**, elija **Personalizado**.
-7. Dependiendo de la plataforma que eligió, las opciones que pueda configurar serán diferentes. Vaya a uno de los siguientes temas para conocer más detalles sobre la configuración para cada plataforma:
+7. Dependiendo de la plataforma que haya elegido, las opciones que pueda configurar serán diferentes. Vaya a uno de los siguientes temas para conocer más detalles sobre la configuración para cada plataforma:
     - [Configuración de Android](custom-settings-android.md)
     - [Configuración de iOS](custom-settings-ios.md)
     - [Configuración de macOS](custom-settings-macos.md)
     - [Configuración de Windows Phone 8.1](custom-settings-windows-phone-8-1.md)
     - [Configuración de Windows 10](custom-settings-windows-10.md)
+    - [Configuración de Windows Holographic for Business](custom-settings-windows-holographic.md)
     - [Configuración de Android for Work](custom-settings-android-for-work.md)
 8. Cuando haya terminado, vuelva a la hoja **Create Profile** (Crear perfil) y presione **Crear**.
 
 El perfil se crea y aparece en la hoja de la lista de perfiles.
-Si desea continuar y asignar este perfil a grupos, consulte [Asignación de perfiles de dispositivo de Microsoft Intune](device-profile-assign.md).
+Si desea continuar y asignar este perfil a grupos, consulte [Asignación de perfiles de dispositivo](device-profile-assign.md).

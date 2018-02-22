@@ -14,11 +14,11 @@ ms.assetid: 6e9ec662-465b-4ed4-94c1-cff0fe18f126
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 45e1b3747b4c1b74401fc1ce73716abe5e06110d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8ce84f51dcfb61ec16c78a6216135c2a7639657f
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="add-users-and-give-administrative-permission-to-intune"></a>Agregar usuarios y conceder permiso administrativo a Intune
 
@@ -102,7 +102,7 @@ Asigne a los usuarios uno o varios permisos de administrador. Estos permisos def
 - **Administrador de usuarios**: (Office 365 e Intune) restablece contraseñas, supervisa el estado del servicio, agrega y elimina cuentas de usuario y, además, administra solicitudes de servicio. El administrador de control de usuarios no puede eliminar a un administrador global, crear otros roles de administrador ni restablecer las contraseñas de otros administradores.
 - **Administrador de servicios de Intune**: todos los permisos de administrador global de Intune excepto el permiso para crear administradores con las opciones **Rol de directorio**.
 
-La cuenta que se usa para crear la suscripción a Microsoft Intune es un administrador global. Como procedimiento recomendado, no use un administrador global para las tareas de administración cotidianas. Un administrador no requiere una licencia de Intune para acceder a Azure Portal. 
+La cuenta que se usa para crear la suscripción a Microsoft Intune es un administrador global. Como procedimiento recomendado, no use un administrador global para las tareas de administración cotidianas. Aunque los administradores no necesitan tener una licencia de Intune para acceder al portal de Intune en Azure, sí que necesitan tener una licencia de Intunes para realizar ciertas tareas de administración, como configurar el Conector de servicio de Exchange. 
 
 Para tener acceso al portal de Office 365, su cuenta debe tener establecido un **inicio de sesión permitido**. En Azure Portal, en **Perfil**, establezca **Bloquear inicio de sesión** en **No** para permitir el acceso. Este estado es distinto a tener una licencia para la suscripción. De manera predeterminada, todas las cuentas de usuario tienen el estado **Permitido**. Los usuarios que no tienen permisos de administrador pueden usar el portal de Office 365 para restablecer las contraseñas de Intune.
 

@@ -6,20 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 1/31/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 3129cbaf-96c2-4837-8907-ca87a605a496
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 69fc2959c7694a0120efff8653ce8d619f33a9d3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a88cf11209726a622863339c3a6c117f7b83be1e
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="macos-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos macOS en Microsoft Intune
 
@@ -30,7 +28,7 @@ Use estas opciones para administrar dispositivos macOS en un perfil de restricci
 ## <a name="password"></a>Contraseña
 -   **Contraseña**: exige que el usuario final escriba una contraseña para acceder al dispositivo.
     -   **Tipo de contraseña necesaria**: especifique si la contraseña solo puede ser numérica o si debe ser alfanumérica (contener letras y números). Esta configuración solo es compatible con Mac OS X versión 10.10.3 y posteriores.
-    -   **Número de caracteres no alfanuméricos en la contraseña**: especifique el número de caracteres complejos necesarios en la contraseña (de **0** a **4**).<br>Un carácter complejo es un símbolo, como **?**
+    -   **Número de caracteres no alfanuméricos en la contraseña**: especifique el número de caracteres complejos necesarios en la contraseña (de **0** a **4**).<br>Un carácter complejo es un símbolo, por ejemplo, "**?**".
     -   **Minimum password length** (Longitud mínima de contraseña): escriba la longitud mínima de contraseña que un usuario debe configurar (entre **4** y **16** caracteres).
     -   **Contraseñas sencillas**: permita el uso de contraseñas sencillas, como **0000** o **1234**.
     -   **Máximo de minutos tras bloqueo de pantalla antes de solicitar la contraseña**: especifique cuánto tiempo el equipo debe estar inactivo antes de que se requiera una contraseña para desbloquearlo.
@@ -42,8 +40,8 @@ Use estas opciones para administrar dispositivos macOS en un perfil de restricci
 
 En la lista de aplicaciones restringidas, puede configurar una de las listas siguientes:
 
-**Aplicaciones prohibidas**: aplicaciones (no administradas por Intune) que los usuarios no pueden instalar ni ejecutar.
-**Aplicaciones aprobadas**: aplicaciones que los usuarios pueden instalar. Para mantener la conformidad, los usuarios no deben instalar aplicaciones que no se muestren en la lista. Las aplicaciones que se administran mediante Intune están permitidas automáticamente.
+- **Aplicaciones prohibidas**: aplicaciones (no administradas por Intune) que los usuarios no pueden instalar ni ejecutar. Los usuarios pueden instalar una aplicación prohibida, aunque, si lo hacen, usted recibirá una notificación.
+- **Aplicaciones aprobadas**: aplicaciones que los usuarios pueden instalar. Los usuarios no deben instalar aplicaciones que no se muestren en la lista. Las aplicaciones que se administran mediante Intune están permitidas automáticamente. Los usuarios pueden instalar una aplicación que no esté en la lista de aprobadas, aunque, si lo hacen, usted recibirá una notificación.
 
 Para configurar la lista, haga clic en **Agregar**, especifique un nombre de su elección (puede ser el publicador de la aplicación) y el identificador de paquete de la aplicación (por ejemplo *com.apple.calculator*).
 

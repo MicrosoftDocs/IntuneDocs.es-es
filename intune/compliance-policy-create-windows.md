@@ -6,27 +6,25 @@ keywords:
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 12/07/2016
+ms.date: 1/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 13fc7783-d4de-47d0-b1b8-4c8710a9e6ab
-ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 59a68bbe3c7030e44e4b1eacb5601dd7a3121673
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 05fb016277f8645c661bc8dee213ed98b95c0198
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Creación de una directiva de cumplimiento de dispositivos para dispositivos Windows en Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Las directivas de cumplimiento se crean para cada plataforma.  Puede crear una directiva de cumplimiento en el portal de Azure. Para aprender más sobre lo que son las directivas de cumplimiento, consulte el tema [¿Qué es el cumplimiento de los dispositivos?](device-compliance.md). Para conocer los requisitos previos que deben satisfacerse antes de crear una directiva de cumplimiento, consulte el tema [Introducción al cumplimiento de dispositivos](device-compliance-get-started.md).
+Las directivas de cumplimiento se crean para cada plataforma. Puede crear una directiva de cumplimiento en el portal de Azure. Para aprender más sobre lo que son las directivas de cumplimiento, consulte el tema [¿Qué es el cumplimiento de los dispositivos?](device-compliance.md). Para conocer los requisitos previos que deben satisfacerse antes de crear una directiva de cumplimiento, consulte el tema [Introducción al cumplimiento de dispositivos](device-compliance-get-started.md).
 
 En la tabla siguiente se describe cómo administrar la configuración de no conformidad cuando se usa una directiva de cumplimiento con una directiva de acceso condicional.
 
@@ -46,7 +44,7 @@ En la tabla siguiente se describe cómo administrar la configuración de no conf
 
 **Corregido** = el sistema operativo del dispositivo exige compatibilidad. (Por ejemplo, se obliga al usuario a configurar un PIN).
 
-**En cuarentena** = el sistema operativo del sistema no exige compatibilidad. (Por ejemplo, los dispositivos Android no obligan al usuario a cifrar el dispositivo). Si los dispositivos no son conformes, se emprenden las acciones siguientes:
+**En cuarentena** = el sistema operativo del sistema no exige compatibilidad. (Por ejemplo, los dispositivos Android no obligan al usuario a cifrar el dispositivo). Si los dispositivos no son compatibles, se emprenden las acciones siguientes:
 
 - El dispositivo se bloquea si se aplica una directiva de acceso condicional al usuario.
 - El portal de empresa notifica al usuario acerca de los problemas de cumplimiento.
@@ -71,7 +69,7 @@ Para asignar una directiva de cumplimiento a los usuarios, elija una directiva q
 1. Seleccione la directiva que quiere asignar a los usuarios y elija **Asignaciones**. Se abre la hoja donde puede seleccionar **Grupos de seguridad de Azure Active Directory** y asignarlos a la directiva.
 2. Elija **Seleccionar grupos** para abrir la hoja que muestra los grupos de seguridad de Azure AD.  Al elegir **Seleccionar** la directiva se implementa para los usuarios.
 
-Ya ha aplicado la directiva a los usuarios.  Ahora se evaluará el cumplimiento de los dispositivos usados por los usuarios a los que se aplique la directiva.
+Ya ha aplicado la directiva a los usuarios. Ahora se evaluará el cumplimiento de los dispositivos usados por los usuarios a los que se aplique la directiva.
 
 <!---## Compliance policy settings--->
 
@@ -82,9 +80,9 @@ Ya ha aplicado la directiva a los usuarios.  Ahora se evaluará el cumplimiento 
 - **Requerir una contraseña para desbloquear dispositivos móviles:** establezca esta opción en **Sí** para exigir que los usuarios escriban una contraseña antes de poder tener acceso a sus dispositivos.
 - **Permitir contraseñas sencillas:** establezca esta opción en **Sí** para permitir a los usuarios crear contraseñas sencillas como "**1234**"; o "**1111**".
 - **Minimum password length** (Longitud mínima de la contraseña): especifique el número mínimo de dígitos o caracteres que debe contener la contraseña del usuario.
-- **Tipo de contraseña necesaria**: especifique si los usuarios deben crear una contraseña **Alfanumérica** o **Numérica**.
+- **Tipo de contraseña obligatoria:** Especifique si los usuarios deben crear una contraseña **Alfanumérica** o **Numérica**.
 
-En los dispositivos a los que se obtiene acceso con una cuenta de Microsoft y que ejecutan Windows, la directiva de cumplimiento no podrá evaluarse correctamente si la longitud mínima de la contraseña es superior a 8 caracteres o si el número mínimo de conjuntos de caracteres es superior a 2.
+En los dispositivos a los que se obtiene acceso con una cuenta de Microsoft y que ejecutan Windows, la directiva de cumplimiento no puede evaluarse correctamente si la longitud mínima de la contraseña es superior a 8 caracteres o si el número mínimo de conjuntos de caracteres es superior a 2.
 
 - **Número mínimo de conjuntos de caracteres**: si la opción **Tipo de contraseña necesaria** está establecida en **Alfanumérica**, esta configuración especifica el número mínimo de caracteres que debe contener la contraseña. Los conjuntos de cuatro caracteres son los siguientes:
   - Letras minúsculas
@@ -92,7 +90,7 @@ En los dispositivos a los que se obtiene acceso con una cuenta de Microsoft y qu
   - Símbolos
   - Números
 
-Si se establece un número superior para este valor de configuración, los usuarios deberán crear contraseñas más complejas. En los dispositivos a los que se obtiene acceso con una cuenta de Microsoft y que ejecutan Windows, la directiva de cumplimiento no podrá evaluarse correctamente si la longitud mínima de la contraseña es superior a 8 caracteres o si el número mínimo de conjuntos de caracteres es superior a 2.
+Si se establece un número superior para este valor de configuración, los usuarios deberán crear contraseñas más complejas. En los dispositivos a los que se obtiene acceso con una cuenta de Microsoft y que ejecutan Windows, la directiva de cumplimiento no puede evaluarse correctamente si la longitud mínima de la contraseña es superior a 8 caracteres o si el número mínimo de conjuntos de caracteres es superior a 2.
 
 - **Minutos de inactividad antes de que sea necesaria la contraseña**: especifica el tiempo de inactividad que transcurre antes de que el usuario deba volver a escribir su contraseña.
 - **Caducidad de contraseña (días)**: seleccione el número de días que faltan para que la contraseña expire y se deba crear una nueva.
@@ -132,19 +130,19 @@ Para obtener información sobre cómo funciona el servicio HAS, consulte [Health
 
 Especifique el número mínimo de dígitos o caracteres que debe contener la contraseña del usuario.
 
-En los dispositivos a los que se obtiene acceso con una cuenta de Microsoft, la directiva de cumplimiento no podrá evaluarse correctamente si el valor de **Longitud mínima de la contraseña** es superior a 8 caracteres o el de **Número mínimo de conjuntos de caracteres** es superior a 2.
+En los dispositivos a los que se obtiene acceso con una cuenta de Microsoft, la directiva de cumplimiento no puede evaluarse correctamente si el valor de **Longitud mínima de la contraseña** es superior a ocho caracteres o el de **Número mínimo de conjuntos de caracteres** es superior a dos.
 
 - **Tipo de contraseña necesaria**: se admite en Windows RT, Windows RT 8.1 y Windows 8.1.
 
 Especifique si los usuarios deben crear una contraseña **Alfanumérica** o **Numérica**.
 
-- **Número mínimo de conjuntos de caracteres:**: se admite en Windows RT, Windows RT 8.1 y Windows 8.1. Si la opción **Tipo de contraseña necesaria** está establecida en **Alfanumérica**, esta configuración especifica el número mínimo de caracteres que debe contener la contraseña. Los conjuntos de cuatro caracteres son los siguientes:
+- **Número mínimo de conjuntos de caracteres:**: se admite en Windows RT, Windows RT 8.1 y Windows 8.1. Si la opción **Tipo de contraseña requerida** está establecida en **Alfanumérica**, esta configuración especifica el número mínimo de caracteres que debe contener la contraseña. Los conjuntos de cuatro caracteres son los siguientes:
   - Letras minúsculas
   - Letras mayúsculas
   - Símbolos
   - Números: si se establece un número superior para este valor de configuración, los usuarios deberán crear contraseñas más complejas.
 
-En los dispositivos a los que se obtiene acceso con una cuenta de Microsoft, la directiva de cumplimiento no podrá evaluarse correctamente si el valor de **Longitud mínima de la contraseña** es superior a 8 caracteres o el de **Número mínimo de conjuntos de caracteres** es superior a 2.
+En los dispositivos a los que se obtiene acceso con una cuenta de Microsoft, la directiva de cumplimiento no puede evaluarse correctamente si el valor de **Longitud mínima de la contraseña** es superior a ocho caracteres o el de **Número mínimo de conjuntos de caracteres** es superior a dos.
 
 - **Minutos de inactividad antes de que sea necesaria la contraseña:** se admite en Windows RT, Windows RT 8.1 y Windows 8.1.
 
@@ -185,10 +183,18 @@ Cuando un dispositivo tiene una versión anterior a la versión de sistema opera
 
 Cuando un dispositivo usa una versión de SO posterior a la especificada en la regla, se bloquea el acceso a los recursos de la empresa y se solicita al usuario que se ponga en contacto con el administrador de TI. Mientras no se cambie la regla para permitir la versión de SO, este dispositivo no podrá usarse para acceder a los recursos de la empresa.
 
-Para buscar la versión de sistema operativo que se usará para las opciones **Minimum OS required** (SO mínimo necesario) y **Maximum OS version allowed** (Versión de SO máxima permitida), ejecute el comando **winver** desde el símbolo del sistema. El comando winver devuelve la versión de sistema operativo notificada.
+Para buscar la versión de sistema operativo que se usará para las opciones **Minimum OS required** (Versión mínima de sistema operativo) y **Maximum OS version allowed** (Versión máxima de sistema operativo permitida), ejecute el comando **winver** desde el símbolo del sistema. El comando winver devuelve la versión de sistema operativo notificada.
 
 - Los equipos con Windows 8.1 devuelven la versión **3**. Si la regla de la versión de sistema operativo se establece en Windows 8.1 para Windows, el dispositivo se notificará como no conforme aunque tenga Windows 8.1.
 - En los equipos que ejecutan Windows 10, la versión debe establecerse en &quot;10.0&quot;+ el número de compilación del sistema operativo devuelto por el comando winver.
+
+## <a name="windows-holographic-for-business-support"></a>Compatibilidad con Windows Holographic for Business
+
+Windows Holographic for Business es compatible con las siguientes opciones de configuración:
+
+- Cifrado/seguridad del sistema
+
+  **Cifrado de los datos almacenados en el dispositivo**.
 
 <!--- ## Next steps
 

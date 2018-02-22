@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f8f004389c8bde2367045019fb04865e1a606914
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 46cb8510e80db7092de472a769fb5dc78eb5e167
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Eliminación de dispositivos mediante el restablecimiento de fábrica o de los datos de la compañía
 
@@ -81,9 +81,9 @@ El comando **Eliminar datos de la compañía** quita los datos de la aplicación
 |-------------|-----------|------------------------|
 |Vínculos web|Quitado.|Quitado.|
 |Aplicaciones no administradas de Google Play|Se mantendrán instalados los datos y las aplicaciones.|Se mantendrán instalados los datos y las aplicaciones.|
-|Línea de aplicaciones empresariales no administradas|Se mantendrán instalados los datos y las aplicaciones.|Las aplicaciones se desinstalan y, como consecuencia, se quitan los datos locales de la aplicación. Ningún dato de fuera de la aplicación (por ejemplo, en una tarjeta SD) se quita.|
+|Aplicaciones de línea de negocio no administradas|Se mantendrán instalados los datos y las aplicaciones.|Las aplicaciones se desinstalan y, como consecuencia, se quitan los datos locales de la aplicación. Ningún dato de fuera de la aplicación (por ejemplo, en una tarjeta SD) se quita.|
 |Aplicaciones administradas de Google Play|Se quitan los datos de la aplicación. La aplicación no se quita. Los datos protegidos mediante cifrado MAM fuera de la aplicación (por ejemplo, tarjeta SD, etc.) permanecen cifrados e inutilizables, pero no se quitan.|Se quitan los datos de la aplicación. La aplicación no se quita. Los datos protegidos mediante cifrado MAM fuera de la aplicación (por ejemplo, tarjeta SD, etc.) permanecen cifrados, pero no se quitan.|
-|Línea administrada de aplicaciones empresariales|Se quitan los datos de la aplicación. La aplicación no se quita. Los datos protegidos mediante cifrado MAM fuera de la aplicación (por ejemplo, tarjeta SD, etc.) permanecen cifrados e inutilizables, pero no se quitan.|Se quitan los datos de la aplicación. La aplicación no se quita. Los datos protegidos mediante cifrado MAM fuera de la aplicación (por ejemplo, tarjeta SD, etc.) permanecen cifrados e inutilizables, pero no se quitan.|
+|Aplicaciones de línea de negocio administradas|Se quitan los datos de la aplicación. La aplicación no se quita. Los datos protegidos mediante cifrado MAM fuera de la aplicación (por ejemplo, tarjeta SD, etc.) permanecen cifrados e inutilizables, pero no se quitan.|Se quitan los datos de la aplicación. La aplicación no se quita. Los datos protegidos mediante cifrado MAM fuera de la aplicación (por ejemplo, tarjeta SD, etc.) permanecen cifrados e inutilizables, pero no se quitan.|
 |Configuración|Las configuraciones que estableció la directiva de Intune ya no se aplican y los usuarios pueden cambiar la configuración.|Las configuraciones que estableció la directiva de Intune ya no se aplican y los usuarios pueden cambiar la configuración.|
 |Configuración de perfil de Wi-Fi y VPN|Quitado.|Quitado.|
 |Configuración de perfil de certificado|Certificados revocados, pero no eliminados.|Certificados eliminados y revocados.|

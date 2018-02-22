@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e7bd1d15276f93b50a22c7b47de6bd1eb619264a
-ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
+ms.openlocfilehash: d126853051bb4a6c2f1ea6fbd54195ae06254b51
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="vpn-settings-for-windows-10-devices-in-microsoft-intune"></a>Configuración de VPN para dispositivos Windows 10 en Microsoft Intune
 
@@ -25,16 +25,19 @@ ms.lasthandoff: 01/29/2018
 
 Según la configuración que elija, no todos los valores de la lista siguiente se podrán configurar.
 
+> [!NOTE]
+> Esta configuración también se aplica a los dispositivos que ejecuten Windows Holographic for Business.
+
 
 ## <a name="base-vpn-settings"></a>Configuración de VPN base
 
 
 - **Connection name** (Nombre de la conexión): escriba un nombre para esta conexión. Los usuarios finales verán este nombre cuando exploren su dispositivo para ver la lista de conexiones VPN disponibles.
-- **Servidores**: agregue uno o más servidores VPN a los que se conectarán los dispositivos.
+- **Servidores**: agregue uno o varios servidores VPN a los que se conectarán los dispositivos.
     - **Agregar**: abre la hoja **Add Row** (Agregar fila) donde puede especificar la siguiente información:
         - **Descripción**: especifique un nombre descriptivo para el servidor, por ejemplo, **servidor VPN de Contoso**.
         - **Dirección IP o FQDN**: proporcione la dirección IP o el nombre de dominio completo del servidor VPN al que se conectarán los dispositivos. Ejemplos: **192.168.1.1**, **vpn.contoso.com**.
-        - **Servidor predeterminado**: habilita este servidor como el servidor predeterminado que usarán los dispositivos para establecer la conexión. Asegúrese de establecer un solo servidor como predeterminado.
+        - **Servidor predeterminado**: permite habilitar este servidor como el predeterminado que usarán los dispositivos para establecer la conexión. Asegúrese de establecer un solo servidor como predeterminado.
     - **Importar**: desplácese hasta un archivo que contenga una lista separada por comas de servidores en la descripción de formato, dirección IP o FQDN y servidor predeterminado. Elija **Aceptar** para importarlos a la **Servidores**.
     - **Exportar**: exporta la lista de servidores a un archivo de valores separados con comas (csv).
 
@@ -78,9 +81,9 @@ Según la configuración que elija, no todos los valores de la lista siguiente s
     <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
 ```
 
-Consulte la documentación de VPN de cada fabricante para más información sobre cómo escribir comandos XML personalizados.
+Para obtener más información sobre cómo escribir comandos XML personalizados, consulte la documentación de la VPN de cada fabricante.
 
-Para obtener más información sobre la creación de XML de EAP personalizado, consulte [configuración de EAP](https://docs.microsoft.com/en-us/windows/client-management/mdm/eap-configuration).
+Para obtener más información sobre la creación de XML de EAP personalizado, consulte [configuración de EAP](https://docs.microsoft.com/windows/client-management/mdm/eap-configuration).
 
 **Tunelización dividida** - : puede **Habilitar** o **Deshabilitar** esta opción, que permite que los dispositivos decidan qué conexión usar en función del tráfico. Por ejemplo, un usuario en un hotel usará la conexión VPN para acceder a los archivos de trabajo, pero usará la red normal del hotel para la exploración web habitual.
 - **Rutas de tunelización dividida para esta conexión VPN**: agregue rutas opcionales para proveedores de VPN de terceros. Especifique un prefijo de destino y un tamaño de prefijo para cada uno.
@@ -91,14 +94,14 @@ Para obtener más información sobre la creación de XML de EAP personalizado, c
 **Aplicaciones asociadas**: proporcione una lista de las aplicaciones que usarán automáticamente la conexión VPN. El tipo de aplicación determinará el identificador de la aplicación. Para una aplicación universal, proporcione el nombre de familia de paquete. Para una aplicación de escritorio, proporcione la ruta de acceso al archivo de la aplicación.
 
 >[!IMPORTANT]
->Se recomienda que proteja todas las listas de aplicaciones que se compilan para su uso en la configuración de VPN por aplicación. Si un usuario no autorizado modifica la lista y, luego, se importa a la lista de aplicaciones de VPN por aplicación, se estará corriendo el riesgo de autorizar el acceso a VPN a aplicaciones que no deberían tenerlo. Una forma de proteger las listas de aplicaciones consiste en usar una lista de control de acceso (ACL).
+>Se recomienda proteger todas las listas de aplicaciones que se compilen para su uso en la configuración de VPN por aplicación. Si un usuario no autorizado modifica la lista y, luego, esta se importa a la lista de aplicaciones de VPN por aplicación, se estará corriendo el riesgo de autorizar el acceso a la VPN a aplicaciones que no deberían tenerlo. Una forma de proteger las listas de aplicaciones consiste en usar una lista de control de acceso (ACL).
 
 **Reglas de tráfico de red para esta conexión VPN**: seleccione qué protocolos y qué puertos locales y remotos e intervalos de direcciones se habilitarán para las conexiones VPN. Si no se crea ninguna regla de tráfico de red, se habilitan todos los protocolos, puertos e intervalos de direcciones. Una vez creada una regla, la conexión VPN solo usará los protocolos, puertos e intervalos de direcciones que especifique en esa regla.
 
 
 ## <a name="conditional-access"></a>Acceso condicional
 
-**Acceso condicional para esta conexión VPN**: habilita el flujo de cumplimiento del dispositivo desde el cliente. Cuando esta opción esté habilitada, el cliente VPN intentará comunicarse con Azure Active Directory para obtener un certificado que se usará para la autenticación. La VPN debe estar configurada para usar la autenticación de certificado, y el servidor VPN debe confiar en el servidor que devuelva Azure Active Directory.
+**Acceso condicional para esta conexión VPN**: habilita el flujo de cumplimiento del dispositivo desde el cliente. Si esta opción está habilitada, el cliente VPN intentará comunicarse con Azure Active Directory para obtener un certificado que se usará para la autenticación. La VPN debe estar configurada para usar la autenticación de certificado, y el servidor VPN debe confiar en el servidor que devuelva Azure Active Directory.
 
 **Inicio de sesión único (SSO) con certificado alternativo**: para el cumplimiento normativo del dispositivo, use un certificado diferente al certificado de autenticación de la VPN para la autenticación Kerberos. Especifique el certificado usando la configuración siguiente: 
 
@@ -117,7 +120,7 @@ Para cada servidor, especifique:
 ## <a name="proxy-settings"></a>Configuración del proxy
 
 - **Detectar automáticamente configuración de proxy**: si el servidor VPN requiere un servidor proxy para la conexión, especifique si quiere que los dispositivos detecten automáticamente la configuración de la conexión. Para más información, vea la documentación de Windows Server.
-- **Script de configuración automática**: use un archivo para configurar el servidor proxy. Escriba la **dirección URL del servidor proxy** (por ejemplo **http://proxy.contoso.com**) que contiene el archivo de configuración.
+- **Script de configuración automática**: use un archivo para configurar el servidor proxy. Escriba la **dirección URL del servidor proxy** (por ejemplo, **http://proxy.contoso.com) que contiene el archivo de configuración.
 - **Usar servidor proxy**: habilite esta opción si quiere especificar manualmente la configuración del servidor proxy.
     - **Dirección**: escriba la dirección del servidor proxy (como una dirección IP).
     - **Número de puerto**: especifique el número de puerto asociado con el servidor proxy.

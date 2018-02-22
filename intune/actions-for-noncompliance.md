@@ -11,15 +11,13 @@ ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 6d0e0c4b-a562-44f3-82a4-80eb688d4733
-ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e45f5d3836fc33851c650703f713c03204df792
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 573a8b000e63576f3dd3bae1b6e8e8c47733f6bf
+ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/03/2018
 ---
 # <a name="automate-actions-for-noncompliance"></a>Acciones automáticas en caso de incumplimiento
 
@@ -27,12 +25,17 @@ Las **acciones en caso de incumplimiento** le permiten configurar una secuencia 
 
 Existen dos tipos de acciones:
 
--   **Notificar a los usuarios finales por correo electrónico**: puede personalizar la notificación por correo electrónico antes de enviarla al usuario final. Intune permite personalizar los destinatarios, el asunto, el cuerpo del mensaje, incluido el logotipo de la empresa, y la información de contacto.
+-   **Notificar a los usuarios finales por correo electrónico**: puede personalizar la notificación por correo electrónico antes de enviarla al usuario final. Intune le permite personalizar los destinatarios, el asunto, el cuerpo del mensaje, incluido el logotipo de la empresa, y la información de contacto.
+
+    Además, Intune incluye información sobre los dispositivos no compatibles en la notificación de correo electrónico.
+
 -   **Marcar el dispositivo como no compatible**: puede determinar una programación en que se indique el número de días pasados los cuales hay que marcar el dispositivo como no compatible. Puede configurar la acción para que surta efecto de inmediato, pero también puede conceder al usuario un período de gracia para que el dispositivo cumpla las directivas de cumplimiento de dispositivos.
 
 ## <a name="before-you-begin"></a>Antes de comenzar
 
-- Debe tener, al menos, una directiva de cumplimiento de dispositivos creada para configurar las acciones en caso de incumplimiento. Aprenda a crear una directiva de cumplimiento de directivas para las plataformas siguientes:
+Debe tener, al menos, una directiva de cumplimiento de dispositivos creada para configurar las acciones en caso de incumplimiento. 
+
+- Aprenda a crear una directiva de cumplimiento de directivas para las plataformas siguientes:
 
     -   [Android](compliance-policy-create-android.md)
     -   [Android for Work](compliance-policy-create-android-for-work.md)
@@ -40,11 +43,11 @@ Existen dos tipos de acciones:
     -   [macOS](compliance-policy-create-mac-os.md)
     -   [Windows](compliance-policy-create-windows.md)
 
-- Debe tener lista la configuración del acceso condicional de Azure AD cuando vaya a usar las directivas de cumplimiento de dispositivos para bloquear los dispositivos con el fin de evitar que usen los recursos corporativos. Obtenga información sobre la [configuración de acceso condicional de EMS](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access).
+Debe tener lista la configuración del acceso condicional de Azure AD cuando vaya a usar las directivas de cumplimiento de dispositivos para bloquear los dispositivos con el fin de evitar que usen los recursos corporativos. 
 
-- Debe tener creada una plantilla de mensajes de notificación. La plantilla de mensajes de notificación se utiliza posteriormente en el proceso de creación de acciones en caso de incumplimiento para enviar correos electrónicos a los usuarios.
+- Obtenga información sobre la [configuración de acceso condicional de EMS](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access).
 
-- Debe configurar Exchange Online para que acepte el correo electrónico procedente de *IntuneNotificationService@microsoft.com* para permitir que Intune envíe la notificación de correo electrónico. Para obtener más información, vea [Configurar restricciones de entrega de mensajes para un buzón de correo](https://technet.microsoft.com/library/bb397214(v=exchg.160).aspx).
+Además, debe tener creada una plantilla de mensajes de notificación. La plantilla de mensajes de notificación se utiliza posteriormente en el proceso de creación de acciones en caso de incumplimiento para enviar correos electrónicos a los usuarios.
 
 ### <a name="to-create-a-notification-message-template"></a>Para crear una plantilla de mensajes de notificación:
 
@@ -60,14 +63,28 @@ Existen dos tipos de acciones:
     - Pie de página de correo electrónico: incluir nombre de la empresa
     - Pie de página de correo electrónico: incluir información de contacto
 
-   ![ejemplo de plantilla con el mensaje de notificación](./media/actionsfornoncompliance-1.PNG)
+5. Elija **Crear notificación** y después escriba la siguiente información:
+
+    a. Nombre
+
+    b. Firmante
+
+    c.  Mensaje
+
+    d. Encabezado de correo electrónico: incluir el logotipo de la compañía
+
+    e. Pie de página de correo electrónico: incluir nombre de la empresa
+
+    f. Pie de página de correo electrónico: incluir información de contacto
+
+![ejemplo de plantilla con el mensaje de notificación](./media/actionsfornoncompliance-1.PNG)
 
 Cuando haya terminado de agregar la información, elija **Crear**. La plantilla de mensajes de notificación está disponible para usarse.
 
-> [!NOTE] 
+> [!NOTE]
 > También puede editar una plantilla de notificación que creara anteriormente.
 
-## <a name="to-create-actions-for-non-compliance"></a>Pasos para crear acciones en caso de incumplimiento
+## <a name="to-create-actions-for-noncompliance"></a>Creación de acciones en caso de incumplimiento
 
 > [!TIP]
 > De forma predeterminada, Intune proporciona una acción predefinida en las acciones para la sección de no cumplimiento. La acción indica que el dispositivo no es compatible después de que se haya detectado que no cumple los criterios de la directiva de cumplimiento de dispositivos. Puede personalizar en qué momento después de la detección se marca el dispositivo como no compatible. La acción no se puede suprimir.
@@ -75,11 +92,14 @@ Cuando haya terminado de agregar la información, elija **Crear**. La plantilla 
 Puede agregar una acción en el momento de crear una directiva de cumplimiento de dispositivos o al editar una ya existente.
 
 1.  En la carga de trabajo de Intune, en la hoja **Directivas de cumplimiento de dispositivos**, seleccione **Políticas** en la sección **Administrar**.
+
 2.  Elija una directiva de cumplimiento de dispositivos haciendo clic en ella y después elija **Propiedades** en la sección **Administrar**.
-3.  En la hoja de **propiedades de directivas de cumplimiento de dispositivos**, seleccione **Acciones en caso de incumplimiento**.
-4.  En la hoja **Acciones en caso de incumplimiento**, elija **Agregar** para especificar los parámetros de acción. Puede elegir la plantilla de mensaje creada anteriormente, los destinatarios adicionales y la programación de un período de gracia. En la programación, puede especificar el número de días (de 0 a 365) para aplicar las directivas de acceso condicional. Si especifica **0** como número de días, el acceso condicional bloqueará **inmediatamente** el acceso a los recursos corporativos cuando los dispositivos no cumplan las directivas de cumplimiento de dispositivos.
+
+3.  La hoja **device compliance policy properties** (Propiedades de directivas de cumplimiento de dispositivos) se abrirá. Seleccione **Acciones en caso de incumplimiento**.
+
+4.  Se abrirá la hoja **Acciones en caso de incumplimiento**. Elija **Agregar** para especificar los parámetros de acción. Puede elegir la plantilla de mensaje creada anteriormente, los destinatarios adicionales y la programación de un período de gracia. En la programación, puede especificar el número de días (de 0 a 365) para aplicar las directivas de acceso condicional. Si especifica **0** como número de días, el acceso condicional bloqueará **inmediatamente** el acceso a los recursos corporativos cuando los dispositivos no cumplan las directivas de cumplimiento de dispositivos.
+
 5.  Cuando haya terminado de agregar la información, elija **Agregar** y después **Aceptar**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 Puede supervisar la actividad de cumplimiento de los dispositivos mediante la ejecución de los informes disponibles en la hoja de cumplimiento de dispositivos. Para obtener más información, consulte [Supervisión del cumplimiento de dispositivos en Intune](device-compliance-monitor.md).
-

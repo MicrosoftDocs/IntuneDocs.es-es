@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1dbac49ad8fe94e9000e609dea8ae8dd6749be52
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: bf92e34c5bb94fe0cb3c0cc9dabd687a0f2710b9
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="microsoft-intune-configuration-policy-reference"></a>Referencia de directivas de configuración de Microsoft Intune
 
@@ -113,10 +113,10 @@ Microsoft Intune ofrece ahora **directivas de configuración** independientes pa
 
 |Nombre de la directiva|Usar en los siguientes casos|
 |---------------|------------------------|
-|**Configuración del agente de Microsoft Intune**|Configurar el cliente PC de Intune en equipos, incluida la configuración de:<br /><br />-   Endpoint Protection<br />-   Actualizaciones de software<br />-   Programación de comprobación de directiva<br /><br />Este tipo de directiva se puede implementar únicamente para grupos de dispositivos.<br /><br />Los clientes de Intune descargan una directiva nueva y actualizada según el valor de **Frecuencia de detección de la aplicación y la actualización**, que es ocho horas de forma predeterminada. Sin embargo, puede forzar en cualquier momento la actualización de la directiva en los equipos.<br /><br />Para obtener más información, consulte [Keep Windows PCs up to date with software updates in Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md) (Mantener los equipos de Windows al día con las actualizaciones de software de Microsoft Intune).|
+|**Configuración del agente de Microsoft Intune**|Configurar el cliente PC de Intune en equipos, incluida la configuración de:<br /><br />-   Endpoint Protection<br />-   Actualizaciones de software<br />-   Programación de comprobación de directiva<br /><br />Este tipo de directiva se puede implementar únicamente para grupos de dispositivos.<br /><br />Los clientes de Intune descargan una directiva nueva y actualizada según el valor de **Frecuencia de detección de la aplicación y la actualización**, que es ocho horas de forma predeterminada. Sin embargo, puede forzar en cualquier momento la actualización de la directiva en los equipos.<br /><br />Para obtener más información, consulte [Mantener los equipos Windows al día con las actualizaciones de software de Microsoft Intune](keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md).|
 |**Configuración de Microsoft Intune Center**|Configurar los detalles que aparecen en el Microsoft Intune Center en los equipos administrados.<br /><br />Este tipo de directiva se puede implementar únicamente para grupos de dispositivos.<br /><br />Para obtener más información, vea [Tareas comunes de administración de PC Windows con el cliente de equipo de Microsoft Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md).|
 |**Configuración de Windows Firewall**|Configura las opciones y las excepciones de Firewall de Windows para las comunicaciones de red comunes en los equipos, incluidas:<br /><br />-   BranchCache<br />-   Asistencia remota<br />-   Uso compartido de multimedia<br /><br />Este tipo de directiva se puede implementar únicamente para grupos de dispositivos.<br /><br />Para obtener más información, consulte [Help secure Windows PCs with Endpoint Protection for Microsoft Intune](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md) (Ayudar a proteger los equipos de Windows con Endpoint Protection para Microsoft Intune).|
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 
 [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

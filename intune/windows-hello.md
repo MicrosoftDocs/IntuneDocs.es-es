@@ -6,20 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 11/28/2017
+ms.date: 1/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 541be8b8-8668-41be-afce-3f3e08c12191
-ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9ce18162391318374729b55aaeb302d850c17939
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 3fb7de9fb320b74895b702167750e149eba34e1e
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="use-windows-hello-for-business"></a>Uso de Windows Hello para empresas
 
@@ -43,7 +41,7 @@ Intune se integra con Hello para empresas de dos maneras:
 
 >En la Actualización de aniversario, estos dos PIN se combinaron en un solo PIN de dispositivo.
 Las directivas de configuración de Intune que establezca para controlar el PIN de dispositivo y las directivas de Windows Hello para empresas que configure serán las que establecerán ahora este nuevo valor de PIN.
-Si ha establecido que ambos tipos de directivas controlarán el PIN, la directiva de Windows Hello para empresas se aplicará en dispositivos de escritorio y móviles de Windows 10.
+Si ha establecido que ambos tipos de directivas controlarán el PIN, la directiva de Windows Hello para empresas se aplicará en los dispositivos móviles y de escritorio Windows 10.
 Para garantizar que se resuelven los conflictos de directivas y que la directiva de PIN se aplica correctamente, actualice su directiva de Windows Hello para empresas de modo que coincida con la configuración de la directiva de configuración y pídales a los usuarios que sincronicen sus dispositivos en la aplicación del portal de empresa.
 
 
@@ -64,14 +62,14 @@ Para garantizar que se resuelven los conflictos de directivas y que la directiva
     - **Habilitado**. Seleccione esta opción si quiere configurar Windows Hello para empresas.
     - **No configurado**. Seleccione esta opción si no quiere usar Intune para controlar la configuración de Windows Hello para empresas. No se cambiará ninguna de las opciones de configuración de Windows Hello para empresas en los dispositivos Windows 10. Todas las demás configuraciones de la hoja no están disponibles.
 
-6.  Si ha seleccionado **Habilitado** en el paso anterior, configure las opciones necesarias que se aplicarán a todos los dispositivos Windows 10 y Windows 10 Mobile inscritos.
+6.  Si ha seleccionado **Habilitado** en el paso anterior, configure las opciones necesarias que se aplicarán en todos los dispositivos Windows 10 y Windows 10 Mobile inscritos.
 
  - **Usar un Módulo de plataforma segura (TPM)**. Un chip de TPM ofrece una capa adicional de seguridad de datos.<br>Elija uno de los siguientes valores:
 
      - **Requerido** (valor predeterminado). Solo los dispositivos que tengan un TPM accesible pueden aprovisionar Windows Hello para empresas.
      - **Preferido**. Los dispositivos intentan primero usar un TPM. Si no está disponible, pueden usar el cifrado de software.
 
- - **Requerir longitud mínima de PIN**/**Requerir longitud máxima de PIN**. Configura los dispositivos para que usen las longitudes de PIN mínima y máxima que se especifiquen, lo cual garantiza un inicio de sesión seguro. La longitud de PIN predeterminada es de 6 caracteres, pero puede aplicar una longitud mínima de 4 caracteres. La longitud de PIN máxima es de 127 caracteres.
+ - **Requerir longitud mínima de PIN**/**Requerir longitud máxima de PIN**. Configura los dispositivos para que usen las longitudes de PIN mínima y máxima que se especifiquen, lo cual garantiza un inicio de sesión seguro. La longitud predeterminada del PIN es de seis caracteres, pero se puede aplicar una longitud mínima de cuatro. La longitud de PIN máxima es de 127 caracteres.
 
  - **Requerir minúsculas en el PIN**/**Requerir mayúsculas en el PIN**/**Requerir caracteres especiales en el PIN**. Si quiere aplicar un PIN más seguro, puede requerir el uso de letras mayúsculas, letras minúsculas y caracteres especiales en el PIN. Elija de entre las siguientes opciones:
 
@@ -94,6 +92,18 @@ Para garantizar que se resuelven los conflictos de directivas y que la directiva
 
  - **Usar inicio de sesión por teléfono**. Si esta opción se establece en **Sí**, los usuarios pueden usar una cuenta de Passport remota para que actúe como dispositivo complementario portátil para la autenticación del equipo de escritorio. El equipo de escritorio debe estar unido a Azure Active Directory y el dispositivo complementario debe configurarse con un PIN de Windows Hello para empresas.
 
+## <a name="windows-holographic-for-business-support"></a>Compatibilidad con Windows Holographic for Business
+
+Windows Holographic for Business es compatible con las siguientes opciones de configuración de Windows Hello for Business:
+
+- Usar un Módulo de plataforma segura (TPM)
+- Longitud mínima del PIN
+- Longitud máxima del PIN
+- Minúsculas en el PIN
+- Mayúsculas en el PIN
+- Caracteres especiales en el PIN
+- Expiración del PIN (días)
+- Recordar historial de PIN
 
 ## <a name="further-information"></a>Más información
 Para obtener más información sobre Microsoft Passport, vea [la guía](https://technet.microsoft.com/library/mt589441.aspx) en la documentación de Windows 10.

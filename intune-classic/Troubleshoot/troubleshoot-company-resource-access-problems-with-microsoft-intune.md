@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f77e6c0e473e2e713186b927485d4dcda1b0f5e1
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: e6649962402dd8c8d11ea7357b48edee268b0f05
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Solucionar problemas de acceso a los recursos de la empresa con Microsoft Intune
 
@@ -94,7 +94,7 @@ Si esta información no soluciona el problema, vea [How to get support for Micro
 |Código de estado|Código de error hexadecimal|Mensaje de error|
 |---------------|--------------------------|-----------------|
 |-2016299111|0x87D1B799|Error interno|
-|-2016299112|0x87D1B798|Error interno|
+|-2016299112|0x87D1B798|Error interno.|
 |-2016300111|0x87D1B3B1|36001: (error interno)|
 |-2016300112|0x87D1B3B0|36000: La red de telefonía móvil ya está configurada|
 |-2016301110|0x87D1AFCA|35002: Varias fuentes en una única carga|

@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d1e04113d2f8707be0d06cb0783e6113914b856a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: be7eed7618bca29b821a453c9fbf1e77cf8ce90d
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Conector Lookout Mobile Threat Defense con Intune
 
@@ -37,7 +37,7 @@ La aplicación móvil Lookout, **Lookout for Work**, está instalada y se ejecut
 
 La directiva de cumplimiento en Intune incluye una regla para Mobile Threat Protection de Lookout basada en la evaluación del riesgo de Lookout. Cuando esta regla está habilitada, Intune evalúa la conformidad del dispositivo con la directiva que habilitó.
 
-Si se detecta que el dispositivo no cumple con la regla, se puede bloquear el acceso a recursos como Exchange Online y SharePoint Online. Los usuarios de dispositivos bloqueados reciben los pasos para resolver el problema y volver a obtener acceso. Las instrucciones se inician desde la aplicación Lookout for Work.
+Si se detecta que el dispositivo no es compatible, puede bloquearse el acceso a recursos como Exchange Online y SharePoint Online. Los usuarios de dispositivos bloqueados reciben los pasos para resolver el problema y volver a obtener acceso. Las instrucciones se inician desde la aplicación Lookout for Work.
 
 ## <a name="supported-platforms"></a>Plataformas compatibles:
 Las siguientes plataformas son compatibles con Lookout cuando se inscriben en Intune:
@@ -60,10 +60,10 @@ Cuando las aplicaciones malintencionadas como malware se detectan en dispositivo
 * Sincronizar los archivos corporativos mediante la aplicación OneDrive para el trabajo
 * Acceder a las aplicaciones de empresa
 
-**Bloqueo cuando se detectan aplicaciones malintencionadas:**
-![diagrama en el que se muestra la directiva de acceso condicional bloqueando el acceso cuando se determina que el dispositivo no es compatible debido a que tiene aplicaciones malintencionadas](../media/mtp/malicious-apps-blocked.png).
+**Bloquear al detectar aplicaciones malintencionadas:**
+![diagrama en el que se muestra la directiva de acceso condicional bloqueando el acceso cuando se determina que el dispositivo no es conforme por contener aplicaciones malintencionadas](../media/mtp/malicious-apps-blocked.png).
 
-**Acceso concedido tras la solución:**
+**Acceso concedido tras la corrección:**
 
 ![diagrama en el que se muestra la directiva de acceso condicional concediendo acceso cuando se determina que, tras la solución, el dispositivo es conforme](../media/mtp/malicious-apps-unblocked.png)
 
@@ -73,7 +73,7 @@ Detecte amenazas para la red como ataques de tipo Man-in-the-middle y proteja el
 **Bloquear el acceso a la red a través de Wi-Fi:**
 ![diagrama en el que se muestra el acceso condicional bloqueando el acceso Wi-Fi en función de las amenazas de red](../media/mtp/network-wifi-blocked.png).
 
-**Acceso concedido tras la solución:**
+**Acceso concedido tras la corrección:**
 
 ![diagrama en el que se muestra el acceso condicional permitiendo el acceso tras la corrección de la amenaza](../media/mtp/network-wifi-unblocked.png)
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Control del acceso a SharePoint Online basado en amenazas a la red
@@ -85,7 +85,7 @@ Detecte amenazas para la red como ataques de tipo Man-in-the-middle y evite la s
 ![diagrama en el que se muestra el acceso condicional bloqueando el acceso del dispositivo a SharePoint Online en función de la detección de amenazas](../media/mtp/network-spo-blocked.png)
 
 
-**Acceso concedido tras la solución:**
+**Acceso concedido tras la corrección:**
 
 ![diagrama en el que se muestra el acceso condicional permitiendo el acceso tras la corrección de la amenaza de red](../media/mtp/network-spo-unblocked.png)
 

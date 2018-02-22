@@ -15,11 +15,11 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a6645261e2a90ea3890dc22b42fe65d6af4af6e5
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ac997e9543df5d964b6a8fba83677baa49af38e8
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="what-are-app-protection-policies"></a>¿Qué son las directivas de protección de aplicaciones?
 
@@ -72,6 +72,7 @@ Los dispositivos Windows no son compatibles actualmente. En cambio, cuando inscr
 ![Imagen que muestra que los datos se pueden mover libremente entre aplicaciones cuando no hay ninguna directiva de protección de aplicaciones establecida.](./media/apps-without-protection-policies.png)
 
 Cuando se usan aplicaciones sin restricciones, se pueden entremezclar los datos empresariales y personales.  Los datos de la compañía podrían acabar en ubicaciones como el almacenamiento personal o transferidas a aplicaciones fuera de su ámbito, lo cual provocaría una pérdida de datos. Las flechas del diagrama muestran el movimiento sin restricciones de los datos entre aplicaciones (personales y corporativas) y hacia ubicaciones de almacenamiento.
+
 
 ### <a name="data-protection-with-app-protection-policies"></a>Protección de datos con directivas de protección de aplicaciones
 
@@ -134,3 +135,6 @@ Por ejemplo, cuando el usuario inicia la aplicación OneDrive con su cuenta prof
 ##  <a name="next-steps"></a>Pasos siguientes
 
 [Creación e implementación de directivas de protección de aplicaciones con Microsoft Intune](app-protection-policies.md)
+
+## <a name="see-also"></a>Vea también
+Las aplicaciones de terceros, como la aplicación móvil de Salesforce, funcionan con Intune de formas específicas para proteger los datos corporativos. Para más información sobre cómo la aplicación de Salesforce funciona con Intune en particular (incluida la configuración de la aplicación de MDM), vea [Salesforce App and Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf) (Aplicación de Salesforce y Microsoft Intune).

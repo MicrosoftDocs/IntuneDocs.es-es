@@ -18,9 +18,9 @@
 - Windows 10 Mobile
 - Windows 10 IoT Enterprise (x86, x64)
 - Windows 10 IoT Mobile Enterprise
-- Windows Holographic y Windows Holographic Enterprise
+- Windows Holographic for Business
 
-  Para obtener información sobre cómo administrar dispositivos de Microsoft HoloLens, vea [Inscripción de HoloLens en la MDM](https://docs.microsoft.com/hololens/hololens-enroll-mdm).
+  Para obtener más información sobre cómo administrar dispositivos que ejecutan Windows Holographic for Business, consulte la [asistencia técnica de Windows Holographic for Business](../windows-holographic-for-business.md).
 
 - Windows Phone 8.1, Windows 8.1 RT y equipos con Windows 8.1 (modo de mantenimiento)
 

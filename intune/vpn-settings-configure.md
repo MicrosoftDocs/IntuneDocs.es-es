@@ -6,20 +6,18 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/03/2017
+ms.date: 1/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3637ad08e097e4edcd527b3603dd00e1eac47f71
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 772b7f025adc7ae80d0f14c5c630209c4c7529b2
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>Configuración de VPN en Microsoft Intune
 
@@ -27,7 +25,7 @@ ms.lasthandoff: 01/25/2018
 
 Las redes privadas virtuales (VPN) ofrecen a los usuarios un acceso remoto seguro a la red de la empresa. Los dispositivos utilizan un perfil de conexión VPN para iniciar una conexión con el servidor VPN. Use los **perfiles de VPN** en Microsoft Intune para asignar la configuración de VPN a los usuarios y dispositivos de la organización, para que puedan conectarse a la red de forma fácil y segura.
 
-Por ejemplo, suponga que quiere aprovisionar todos los dispositivos iOS con la configuración necesaria para conectarse a un recurso compartido de archivos de la red corporativa. Debe crear un perfil de VPN con la configuración necesaria para conectarse a la red corporativa y, a continuación, debe implementar este perfil en todos los usuarios con dispositivos iOS. Los usuarios ven la conexión VPN en la lista de redes disponibles y pueden conectarse realizando un mínimo esfuerzo.
+Por ejemplo, suponga que quiere aprovisionar todos los dispositivos iOS con la configuración necesaria para conectarse a un recurso compartido de archivos de la red corporativa. Debe crear un perfil de VPN con la configuración necesaria para conectarse a la red corporativa y, a continuación, debe implementar este perfil en todos los usuarios con dispositivos iOS. Los usuarios verán la conexión VPN en la lista de redes disponibles y podrán conectarse con un esfuerzo mínimo.
 
 ## <a name="vpn-connection-types"></a>Tipos de conexión VPN
 
@@ -71,13 +69,13 @@ Aprenda a crear perfiles de VPN personalizados mediante la configuración de URI
     - **Windows 8.1 y versiones posteriores**
     - **Windows 10 y versiones posteriores**
 6. En la lista desplegable de **tipos de perfil**, elija **VPN**.
-7. Dependiendo de la plataforma que eligió, las opciones que pueda configurar serán diferentes. Vaya a uno de los siguientes temas para conocer más detalles sobre la configuración para cada plataforma:
+7. Dependiendo de la plataforma que haya elegido, las opciones que pueda configurar serán diferentes. Vaya a uno de los siguientes temas para conocer más detalles sobre la configuración para cada plataforma:
     - [Configuración de Android y Android for Work](vpn-settings-android.md)
     - [Configuración de iOS](vpn-settings-ios.md)
     - [Configuración de macOS](vpn-settings-macos.md)
     - [Configuración de Windows Phone 8.1](vpn-settings-windows-phone-8-1.md)
     - [Configuración de Windows 8.1](vpn-settings-windows-8-1.md)
-    - [Configuración de Windows 10](vpn-settings-windows-10.md)
+    - [Configuración de Windows 10](vpn-settings-windows-10.md) (incluido Windows Holographic for Business)
 8. Cuando haya terminado, vuelva a la hoja **Create Profile** (Crear perfil) y presione **Crear**.
 
 El perfil se crea y aparece en la hoja de la lista de perfiles.

@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6b5d9a5fafdec0750e943dcfb3542d4dfd69f6ae
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 891fbda72d38b829397158a75bdceeb452bc8d3b
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Configurar la integración de Mobile Threat Defense de Lookout con Intune
 
@@ -113,7 +113,7 @@ En la opción **Error Management** (Administración de errores), escriba la dire
 ![captura de pantalla de la página de administración de errores del conector de Intune](./media/lookout-mtp-connector-error-notifications.png)
 
 ## <a name="configure-enrollment-settings"></a>Configurar las opciones de inscripción
-En el módulo **Sistema**, en la página **Conectores**, especifique el número de días antes de que un dispositivo se considere como desconectado.  Los dispositivos desconectados se consideran como no conforme y se les bloqueará el acceso a las aplicaciones de empresa basadas en las directivas de acceso condicional de Intune. Puede especificar valores entre 1 y 90 días.
+En el módulo **Sistema**, en la página **Conectores**, especifique el número de días antes de que un dispositivo se considere como desconectado.  Los dispositivos desconectados se consideran no conformes y se les bloqueará el acceso a las aplicaciones de la empresa de acuerdo con las directivas de acceso condicional de Intune. Puede especificar valores entre 1 y 90 días.
 
 ![Configuración de la inscripción de Lookout](./media/lookout-console-enrollment-settings.png)
 
@@ -128,7 +128,7 @@ Mobile Threat Defense de Lookout clasifica amenazas móviles de diversos tipos. 
 ![captura de pantalla de la página de directivas en la que se muestran amenazas y clasificaciones](./media/lookout-mtp-threat-classification.png)
 
 >[!IMPORTANT]
-> Los niveles de riesgo son un aspecto importante de Mobile Threat Defense, ya que la integración de Intune calcula el cumplimiento del dispositivo según estos niveles de riesgo en tiempo de ejecución. El administrador de Intune establece una regla en la directiva para identificar un dispositivo como no compatible si dicho dispositivo tiene una amenaza activa con un nivel mínimo de **Alto**, **Medio** o **Bajo**. La directiva de clasificación de amenazas de Mobile Threat Defense de Lookout determina directamente el cálculo del cumplimiento del dispositivo en Intune.
+> Los niveles de riesgo son un aspecto importante de Mobile Threat Defense, ya que la integración de Intune calcula el cumplimiento del dispositivo según estos niveles de riesgo en tiempo de ejecución. El administrador de Intune establece una regla en la directiva para identificar un dispositivo como no conforme si dicho dispositivo presenta una amenaza activa con un nivel mínimo de **Alto**, **Medio** o **Bajo**. La directiva de clasificación de amenazas de Mobile Threat Defense de Lookout determina directamente el cálculo del cumplimiento del dispositivo en Intune.
 
 ## <a name="watching-enrollment"></a>Inspección de la inscripción
 Una vez completada la configuración, Mobile Threat Defense de Lookout empieza a sondear Azure AD en busca de dispositivos que se correspondan con los grupos de inscripción especificados.  Encontrará información sobre los dispositivos inscritos en el módulo Dispositivos.  El estado inicial de los dispositivos se muestra como pendiente.  El estado del dispositivo cambia después de que la aplicación Lookout for Work se haya instalado, abierto y activado en el dispositivo.  Para obtener más información sobre cómo insertar la aplicación Lookout for Work en el dispositivo, vea el tema [Agregar aplicaciones Lookout for Work con Intune](mtd-apps-ios-app-configuration-policy-add-assign.md).

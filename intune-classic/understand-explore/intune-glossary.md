@@ -13,11 +13,11 @@ ms.technology:
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: cb186004395a4ccf84de6f0bc335cbd44a79583b
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: 843d11abb3e8b759b7e35db3ce59e7f611e26bc4
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="microsoft-intune-glossary"></a>Glosario de Microsoft Intune
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 01/12/2018
 |Informes de aplicaciones|Le permite [revisar los datos históricos](/intune-classic/deploy-use/understand-microsoft-intune-operations-by-using-reports) sobre la actividad y el estado de implementación de la aplicación.|
 |SDK para aplicaciones|El [SDK de aplicaciones de Microsoft Intune](/intune/app-sdk) permite agregar funcionalidad a las aplicaciones escritas internamente que permite administrarlas mediante directivas de administración de aplicaciones móviles de Intune.|
 |Acción de desinstalación de aplicaciones|Le permite [desinstalar aplicaciones](/intune-classic/deploy-use/deploy-apps) en los dispositivos del usuario.|
-|Herramienta de ajuste de aplicaciones|[Aplicación de línea de comandos](/intune/apps-prepare-mobile-application-management) que crea un contenedor en torno a una aplicación de línea de negocios, que permite administrarla mediante una directiva de administración de aplicaciones móviles de Intune.|
+|Herramienta de ajuste de aplicaciones|[Aplicación de línea de comandos](/intune/apps-prepare-mobile-application-management) que crea un encapsulador en torno a una aplicación de línea de negocios que a su vez permite administrarla mediante una directiva de administración de aplicaciones móviles de Intune.|
 |Instalación disponible|Cuando se implementa una aplicación con esta acción, aparece en el portal de empresa y los usuarios pueden [solicitar instalarla](/intune-classic/deploy-use/deploy-apps).|
 |Portal de Azure|La nueva consola de Intune que se presentará próximamente. [Obtenga más información sobre el nuevo portal](/intune/what-is-intune).|
 

@@ -17,11 +17,11 @@ ROBOTS:
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 51e7ab7454d7ba312ecd8df1989c8c703eead31e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 60a1f9b26aa8481697c01a2af50cd6f48ae9967b
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="your-android-device-is-missing-a-certificate-required-by-your-company-support"></a>El dispositivo Android no tiene un certificado que necesita el equipo de soporte técnico de su empresa
 
@@ -29,7 +29,7 @@ Si el dispositivo no está inscrito en Intune y no tiene un certificado determin
 
 ![screenshot-error-message-about-missing-certificate](./media/andr-cert_install-1-cert_missing.png)
 
-Para resolver este problema y obtener el certificado necesario, hay dos pasos principales que necesitará realizar:
+Para resolver este problema y obtener el certificado necesario, hay dos pasos principales que necesitará seguir:
 
 - Identificar el certificado que falta mirando en el equipo de una empresa o escuela.
 - Usar el dispositivo para descargar el certificado que falta desde Internet.

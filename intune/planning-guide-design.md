@@ -14,11 +14,11 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: 38cae4b0726d4ad96c243dd87ea2581a691da306
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b24b7615c6070614bb19aac0f4edb7d12ddc65c5
+ms.sourcegitcommit: 2c7794848777e73d6a9502b4e1000f0b07ac96bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="create-a-design"></a>Creación de un diseño
 
@@ -137,11 +137,11 @@ Identidad es la manera en que se identifica a los usuarios que pertenecen a la o
 
 Obtenga más información sobre los siguientes requisitos de identidad de Intune:
 
-- [Requisitos de identidad](https://docs.microsoft.com/en-us/azure/active-directory/understand-azure-identity-solutions).
+- [Requisitos de identidad](https://docs.microsoft.com/azure/active-directory/understand-azure-identity-solutions).
 
-- [Requisitos de sincronización de directorios](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect).
+- [Requisitos de sincronización de directorios](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).
 
-- [Requisitos de autenticación multifactor](https://docs.microsoft.com/en-us/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).
+- [Requisitos de autenticación multifactor](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud).
 
 ### <a name="user-and-device-groups"></a>Grupos de usuarios y dispositivos
 

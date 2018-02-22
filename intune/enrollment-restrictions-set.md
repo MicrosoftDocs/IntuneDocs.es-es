@@ -6,7 +6,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/29/2017
+ms.date: 01/30/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3e3f35648784de860eb7e3f2e203488bc77a96d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fab385762efa3ab095553fe21fb045f4f11ff197
+ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/01/2018
 ---
 # <a name="set-enrollment-restrictions"></a>Establecer restricciones de inscripción
 
@@ -31,7 +31,7 @@ Como administrador de Intune, puede crear y administrar las restricciones de ins
 >Las restricciones de inscripción no son características de seguridad. Los dispositivos en peligro pueden falsificar su carácter. Estas restricciones son un obstáculo al mejor esfuerzo para los usuarios no malintencionados.
 
 >[!NOTE]
->La funcionalidad de prioridad y la restricción de inscripción asignada a grupos que se mencionan a continuación se están implementando en la base de clientes de Intune. Es posible que no tenga acceso a dichas características hasta que la implementación se haya completado. 
+>La funcionalidad de prioridad y la restricción de inscripción asignada a grupos que se mencionan a continuación se están implementando en la base de clientes de Intune. Es posible que no tenga acceso a dichas características hasta que la implementación se haya completado.
 
 Las restricciones de inscripción específicas que se pueden crear son:
 
@@ -80,7 +80,7 @@ Puede cambiar la configuración de una restricción de tipo de dispositivo media
   - Android y Android for Work admiten major.minor.rev.build.
   - iOS admite major.minor.rev.
   - Windows admite major.minor.rev.build únicamente para Windows 10.
-  Las versiones de sistema operativo no son relevantes en dispositivos Apple que se hayan inscrito con el Programa de inscripción de dispositivos, Apple School Manager o la aplicación Apple Configurator. 
+  Las versiones de sistema operativo no son relevantes en dispositivos Apple que se hayan inscrito con el Programa de inscripción de dispositivos, Apple School Manager o la aplicación Apple Configurator.
 8. Especifique si quiere **Permitir** o **Bloquear** dispositivos de **propiedad personal** para las plataformas de la lista.
 
     ![Captura de pantalla del área de trabajo de restricciones de dispositivos con las configuraciones de plataforma de dispositivos predeterminadas en la que se muestran las opciones de propiedad personal configuradas.](media/device-restrictions-platform-configurations.png)
@@ -103,15 +103,19 @@ Para cambiar la configuración de una restricción de límite de dispositivos, s
     ![Captura de pantalla de la hoja de restricciones de límite de dispositivos con las restricciones de límite de dispositivos.](./media/device-restrictions-limit.png)
 6. Haga clic en **Guardar**.
 
+Cuando el usuario final alcance el límite de dispositivos inscritos, recibirá una notificación en que se le informará de ello. Por ejemplo, en iOS, tendría una aspecto similar al siguiente:
+
+![Captura de pantalla de la notificación de límite en un dispositivo iOS](./media/enrollment-restrictions-ios-set-limit-notification.png)
+
 ## <a name="change-enrollment-restriction-priority"></a>Cambiar la prioridad de las restricciones de inscripción
 
-La prioridad se usa cuando un usuario existe en varios grupos a los que se asignan restricciones. Los usuarios solo están sujetos a la restricción de prioridad más alta asignada a un grupo al que pertenecen. Por ejemplo, Juan está en el grupo A asignado a restricciones de prioridad 5 y en el grupo B asignado a restricciones de prioridad 2. Juan solo está sujeto a las restricciones de prioridad 2. 
+La prioridad se usa cuando un usuario existe en varios grupos a los que se asignan restricciones. Los usuarios solo están sujetos a la restricción de prioridad más alta asignada a un grupo al que pertenecen. Por ejemplo, Juan está en el grupo A asignado a restricciones de prioridad 5 y en el grupo B asignado a restricciones de prioridad 2. Juan solo está sujeto a las restricciones de prioridad 2.
 
 Cuando se crea una restricción, se agrega a la lista justo encima de la predeterminada.
 
-La inscripción de dispositivos incluye restricciones predeterminadas para el tipo y límite de dispositivo. Estas dos restricciones se aplican a todos los usuarios a menos que se reemplacen por restricciones de prioridad más alta. 
+La inscripción de dispositivos incluye restricciones predeterminadas para el tipo y límite de dispositivo. Estas dos restricciones se aplican a todos los usuarios a menos que se reemplacen por restricciones de prioridad más alta.
 
-Puede cambiar la prioridad de cualquier restricción que no sea la predeterminada. 
+Puede cambiar la prioridad de cualquier restricción que no sea la predeterminada.
 
 **Para cambiar la prioridad de las restricciones**
 
@@ -120,8 +124,3 @@ Puede cambiar la prioridad de cualquier restricción que no sea la predeterminad
 3. Seleccione **Inscripción de dispositivos** > **Restricciones de inscripción**.
 4. Mantenga el puntero sobre la restricción en la lista de prioridades.
 5. Con los tres puntos verticales, arrastre la prioridad a la posición deseada en la lista.
-
-
-
-
-
