@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 14117098235decb55350dc6d1f1ba9c7475f40b8
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b89b087c13847af06187cf3b6a046b9730a07826
+ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 01/30/2018
 ---
 # <a name="update-apps-using-microsoft-intune"></a>Actualizar aplicaciones con Microsoft Intune
 
@@ -57,6 +57,6 @@ El identificador de la aplicación es una propiedad que identifica de forma úni
 4.  Cuando termine, seleccione **Actualizar**.
 
 Cuando los dispositivos comprueben posteriormente si hay aplicaciones disponibles, la aplicación se actualizará automáticamente a la última versión.
-En el caso de las aplicaciones instaladas desde un paquete de aplicaciones (aplicaciones de línea de negocio), la aplicación se actualizará automáticamente tanto para implementaciones obligatorias como disponibles, siempre y cuando la aplicación tenga el mismo identificador.
+En el caso de las aplicaciones instaladas a partir de un paquete de aplicaciones (aplicaciones de línea de negocio), la aplicación se actualizará automáticamente tanto para las implementaciones obligatorias como las disponibles, siempre y cuando la aplicación tenga el mismo identificador.
 
 En el caso de las aplicaciones implementadas como un vínculo a un almacén, el almacén del que procede la aplicación administra la actualización.
