@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 nmanager: dougeby
-ms.date: 10/30/2017
+ms.date: 02/14/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,29 +14,25 @@ ms.technology:
 ms.assetid: 4a085264-232a-4af0-97f1-747496c44517
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: 19b5d98165be67b32afa86ba942c42fc4a3048b3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6e2528c243938e81a6f730a950ee3949ca44047c
+ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="introduction-to-microsoft-intune-in-the-azure-portal"></a>Introducción a Microsoft Intune en Azure Portal
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Microsoft Intune ahora está en Azure Portal, lo que significa que los flujos de trabajo y la funcionalidad que conoce han cambiado.
-El nuevo portal le ofrece una funcionalidad nueva y actualizada en Azure Portal, donde puede administrar los dispositivos móviles, los equipos y las aplicaciones de su organización.
+Al igual que otros servicios de Azure, Microsoft Intune está disponible en Azure Portal. Si selecciona **Intune** en Azure Portal, podrá administrar los dispositivos móviles, los equipos y las aplicaciones de la organización.
 
-* [¿Dónde está mi característica en Azure?](ui-changes.md) es una referencia para mostrar las UI y los flujos de trabajo específicos que cambiaron con la migración a Azure.
-* [Grupos de Intune clásicos en Azure Portal](groups-get-started.md) explica las implicaciones del cambio a los grupos de seguridad de Azure Active Directory para la administración de grupos.
+>[!NOTE] 
+> Si ha usado una versión anterior de Microsoft Intune, puede que le resulte útil la siguiente información:
+    * [¿Dónde está mi característica en Azure?](ui-changes.md) es una referencia para mostrar las UI y los flujos de trabajo específicos que cambiaron con la migración a Azure.
+    * [Grupos de Intune clásicos en Azure Portal](groups-get-started.md) explica las implicaciones del cambio a los grupos de seguridad de Azure Active Directory para la administración de grupos.
 
-
-
-
-Puede encontrar información sobre el nuevo portal en esta biblioteca, la que se actualiza continuamente. Si tiene sugerencias que le gustaría ver, deje sus comentarios en la sección de comentarios sobre el tema. Queremos saber su opinión.
-
-Algunos de los aspectos destacables de la nueva experiencia son:
+Los aspectos destacados de la experiencia de Microsoft Intune en Azure Portal incluyen lo siguiente:
 
 - Consola integrada para todos los componentes de Enterprise Mobility + Security (EMS)
 - Consola basada en HTML basada en estándares web
@@ -61,41 +57,37 @@ Actualmente, se admiten los siguientes exploradores:
 
 Para obtener la información más reciente sobre los exploradores admitidos, vea [Azure Portal](https://docs.microsoft.com/azure/azure-preview-portal-supported-browsers-devices).
 
-## <a name="whats-in-this-library"></a>¿Qué hay en esta biblioteca?
+## <a name="microsoft-intune-in-the-azure-portal"></a>Microsoft Intune en Azure Portal
 
-La documentación refleja el diseño de Azure Portal para que resulte más fácil encontrar la información que necesita.
+[Azure Portal](https://portal.azure.com) es la ubicación en la que se encuentra el servicio Microsoft Intune. Azure cuenta con varios servicios, muchos de los cuales es posible que no use habitualmente. Para leer una guía rápida para la personalización de la experiencia del portal, vea [Introducción a Intune en Azure Portal](get-started-azure.md).
+
+## <a name="the-microsoft-intune-documentation"></a>Documentación de Microsoft Intune
+
+Este tema, así como todo el conjunto de documentación de Microsoft Intune, se actualiza continuamente. Si tiene sugerencias que le gustaría ver, deje sus comentarios en la sección de comentarios sobre el tema. Queremos saber su opinión.
+
+La documentación refleja la distribución de Microsoft Intune en Azure Portal (se muestra a continuación), para que le resulte más fácil encontrar la información que necesita.
 
 ![Cargas de trabajo del portal de Azure](./media/azure-portal-workloads.png)
 
-### <a name="introduction-and-get-started"></a>Introducción y empezar a trabajar
-En esta sección se encuentra [información de introducción](introduction-intune.md) que le permite comenzar a usar Intune.
-### <a name="plan-and-design"></a>Planeamiento y diseño
-Información para ayudarlo a [planear y diseñar](/intune-classic/plan-design/introduction) su entorno Intune.
-### <a name="device-enrollment"></a>Inscripción de dispositivos
-[Cómo administrar sus dispositivos con Intune](device-enrollment.md).
-### <a name="device-compliance"></a>Cumplimiento de dispositivos
-[Defina un nivel de cumplimiento para sus dispositivos y, luego, notifique los dispositivos que no son conformes](device-compliance.md).
-### <a name="device-configuration"></a>Configuración de los dispositivos
-[Obtenga información sobre los perfiles que puede usar para configurar opciones y características en los dispositivos que administra](device-profiles.md).
-### <a name="devices"></a>Dispositivos
-[Conozca los dispositivos que administra con inventarios e informes](device-management.md).
-### <a name="mobile-apps"></a>Aplicaciones móviles
-[Cómo publicar, administrar, configurar y proteger las aplicaciones](app-management.md).
-### <a name="conditional-access"></a>Acceso condicional
-[Restrinja el acceso a los servicios de Exchange en función de las condiciones que especifique](conditional-access.md).
-### <a name="on-premises-access"></a>Acceso local
-[Configure el acceso a Exchange ActiveSync y a Exchange local](/intune-classic/deploy-use/mobile-device-management-with-exchange-activesync-and-microsoft-intune)
-### <a name="users"></a>Usuarios
-[Obtenga información sobre los usuarios de dispositivos que administra y clasifique recursos en grupos](users-add.md).
-### <a name="groups"></a>Grupos
-[Obtenga información acerca de cómo usar grupos de Azure Active Directory con Intune](groups-get-started.md)
-### <a name="intune-roles"></a>Roles de Intune
-[Controle quién puede realizar diversas acciones de Intune y a quién se aplican esas acciones](role-based-access-control.md). Puede usar los roles integrados que abarcan algunos escenarios de Intune comunes, o crear los suyos propios.
-### <a name="software-updates"></a>Actualizaciones de software
-[Obtenga información acerca de cómo configurar las actualizaciones de software para dispositivos Windows 10](windows-update-for-business-configure.md).
+### <a name="documentation-guide"></a>Guía de documentación
 
+Use la tabla siguiente para encontrar rápidamente y entender las principales áreas de Microsoft Intune.
 
+| Sección                                                      | Descripción                                                                                                                                                                                                                                                                                      |
+|--------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Introducción y primeros pasos](introduction-intune.md)       | Entienda los conceptos básicos de Intune, lo que incluye:<br /> - Soluciones comunes<br /> - Funcionamiento de Microsoft Intune<br /> - Administración de dispositivos en Intune<br /> - Administración de aplicaciones en Intune<br /> - Enterprise Mobility Management (EMM) con y sin inscripción de dispositivos                                                         |
+| [Planear y diseñar](planning-guide.md)                         | Guía para ayudar a planear y diseñar correctamente el entorno de Microsoft Intune.                                                                                                                                                                                                             |
+| [Inscripción de dispositivos](device-enrollment.md)                    | Entienda cómo Microsoft Intune ayuda a administrar los dispositivos de los recursos mediante su inscripción en el servicio Intune. Hay varios métodos para inscribir los dispositivos de los recursos.                                                                                                         |
+| [Conformidad de dispositivos](device-compliance.md)                    | Las directivas de cumplimiento de dispositivos de Intune definen las reglas y configuraciones con las que debe ser conforme un dispositivo para que Microsoft Intune lo considere conforme. Por ejemplo, exigir una contraseña para el acceso de dispositivos, cifrar los dispositivos y exigir una versión mínima del sistema operativo son ejemplos de cumplimiento. |
+| [Configuración de dispositivos](device-profiles.md)                   | Configure las opciones y características en todos los dispositivos que administre con Microsoft Intune mediante la creación de perfiles de dispositivo. Por ejemplo, puede configurar capacidades como las notificaciones, el uso compartido de datos, la compatibilidad con el correo electrónico, la conectividad Wi-Fi, los certificados y Endpoint Protection.              |
+| [Dispositivos](device-management.md)                              | Asegúrese de que los dispositivos que administra proporcionen los recursos que los usuarios finales necesitan para realizar su trabajo a la vez que protegen los datos de la empresa frente a riesgos. Para administrar los dispositivos, revise el inventario de dispositivos de los recursos y realice acciones de dispositivo remoto.                                                      |
+| [Aplicaciones móviles](app-management.md)                             | Entienda cómo agregar, implementar, supervisar, configurar y proteger las aplicaciones.                                                                                                                                                                                                                             |
+| [Acceso condicional](conditional-access.md)                  | Defina condiciones basadas en aplicaciones y dispositivos que filtren el acceso a los datos corporativos.                                                                                                                                                                                                            |
+| [Usuarios](users-add.md)                                        | Obtenga más información sobre cómo agregar usuarios de dispositivos y aplicaciones que administre.                                                                                                                                                                                                                                           |
+| [Grupos](groups-get-started.md)                              | Obtenga más información sobre cómo crear y administrar grupos con Intune. Con los grupos puede asignar rápidamente directivas de protección y configuración de dispositivos y aplicaciones.                                                                                                                                             |
+| [Roles de Intune](role-based-access-control.md)                 | Obtenga más información sobre cómo controlar quién puede realizar las distintas acciones de Intune y cómo se aplican esas acciones. Puede usar los roles integrados que abarcan algunos escenarios de Intune comunes, o crear los suyos propios.                                                                                 |
+| [Actualizaciones de software](windows-update-for-business-configure.md) | Obtenga más información sobre cómo configurar las actualizaciones de software para dispositivos Windows 10.                                                                                                                                                                                                                                  |
 
 ## <a name="whats-new"></a>Novedades
 
-[Conozca las novedades de Intune](whats-new.md).
+Para obtener información sobre las características más recientes de Microsoft Intune, vea [Novedades](whats-new.md).

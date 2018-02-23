@@ -1,25 +1,24 @@
 ---
 title: "Creación de una directiva de cumplimiento para macOS"
 titleSuffix: Azure portal
-description: "Obtenga información sobre cómo crear una directiva de cumplimiento para dispositivos macOS.\""
+description: "Obtenga más información sobre cómo crear una directiva de cumplimiento para dispositivos macOS."
 keywords: 
 author: andredm7
 ms.author: andredm
 manager: dougeby
-ms.date: 11/17/2017
+ms.date: 2/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 0444183e-f924-4605-96a8-48fdfbc58fd1
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7eb36cc8de655766afabc60f33a316cb6ef3bfb8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a5f1caeddbd3d171092ef59cfb092404b31154f2
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>Creación de una directiva de cumplimiento para dispositivos macOS con Intune
 
@@ -33,22 +32,18 @@ Antes de crear y asignar una directiva de cumplimiento de dispositivos, revise l
 - Para más información sobre las directivas de cumplimiento de dispositivos, consulte la [introducción a las directivas de cumplimiento de dispositivos](device-compliance.md).
 
 > [!IMPORTANT]
-> Necesita crear directivas de cumplimiento de dispositivos para cada plataforma. La configuración de la directiva de cumplimiento de dispositivos Intune depende de las funcionalidades de la plataforma, que es la configuración expuesta a través del protocolo MDM.
+> Necesita crear directivas de cumplimiento de dispositivos para cada plataforma. La configuración de las directivas de cumplimiento de dispositivos de Intune depende de las capacidades de la plataforma, que es la configuración expuesta a través del protocolo MDM.
 
-En la tabla siguiente se describe cómo administrar la configuración de no conformidad cuando se usa una directiva de cumplimiento con una directiva de acceso condicional.
-
--------------------------------
+En la tabla siguiente se explica cómo se administran las configuraciones no conformes cuando se usa una directiva de cumplimiento con una directiva de acceso condicional:
 
 
-| **Configuración de directiva** | **macOS 10.11 y versiones posteriores** |
+| Configuración de directiva | macOS 10.11 y versiones posteriores |
 | --- | --- |
 | **Configuración de PIN o contraseña** | Corregido |   
 | **Cifrado del dispositivo** | Corregido (estableciendo PIN) |
 | **Perfil de correo electrónico** | En cuarentena |
 |**Versión de SO mínima** | En cuarentena |
 | **Versión de SO máxima** | En cuarentena |  
-| **Atestación de estado de Windows** | No disponible |  
-----------------------------
 
 
 **Corregido** = el sistema operativo del dispositivo exige compatibilidad. (Por ejemplo, se obliga al usuario a configurar un PIN).
@@ -70,42 +65,42 @@ Tiene distintas categorías con valores distintos entre los cuales elegir cuando
 
 ### <a name="device-health"></a>Estado de dispositivos
 
-- **Require a system integrity protection** (Requerir protección de integridad del sistema): establezca esta opción en **Require** (Requerir) para comprobar si los dispositivos macOS tienen habilitada la protección de integridad del sistema.
+- **Requerir protección de integridad del sistema**: establezca en **Requerir** para comprobar si los dispositivos macOS tienen habilitada la protección de integridad del sistema.
 
 ### <a name="device-properties"></a>Propiedades del dispositivo
 
-- **Minimum OS version** (Versión mínima de SO): cuando un dispositivo no cumpla el requisito de versión de SO mínima, se notificará como no conforme. Se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario puede elegir actualizar su dispositivo. Después de eso, puede acceder a los recursos de la empresa.
+- **Versión mínima del sistema operativo**: cuando un dispositivo no cumple el requisito de versión mínima del sistema operativo, se notifica como no conforme. Se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario puede elegir actualizar su dispositivo. Después de eso, puede acceder a los recursos de la empresa.
 
-- **Maximum OS version allowed** (Versión máxima de SO máxima permitida): cuando un dispositivo usa una versión de SO posterior a la especificada en la regla, se bloquea el acceso a los recursos de la empresa y se solicita al usuario que se ponga en contacto con el administrador de TI. Mientras no se cambie la regla para permitir la versión de SO, este dispositivo no podrá usarse para acceder a los recursos de la empresa.
+- **Versión máxima del sistema operativo**: cuando un dispositivo usa una versión del sistema operativo posterior a la especificada en la regla, se bloquea el acceso a los recursos de la empresa y se pide al usuario que se ponga en contacto con el administrador de TI. Mientras no se cambie la regla para permitir la versión de SO, este dispositivo no podrá usarse para acceder a los recursos de la empresa.
 
 ### <a name="system-security-settings"></a>Configuración de seguridad del sistema
 
 #### <a name="password"></a>Contraseña
 
-- **Requerir una contraseña para desbloquear dispositivos móviles**: establezca esta opción en **Requerir** para que los usuarios tengan que escribir una contraseña antes de poder acceder al dispositivo.
+- **Requerir una contraseña para desbloquear dispositivos móviles**: establezca esta opción en **Requerir** para que los usuarios tengan que escribir una contraseña para poder acceder al dispositivo.
 
-- **Simple passwords** (Contraseñas sencillas): establezca esta opción en **Block** (Bloquear) para que los usuarios no puedan crear una contraseña sencilla como **1234** o **1111**.
+- **Contraseñas sencillas**: establezca esta opción en **Bloquear** para que los usuarios no puedan crear una contraseña sencilla como **1234** o **1111**.
 
-- **Minimum password length** (Longitud mínima de la contraseña): especifique el número mínimo de dígitos o caracteres que debe tener la contraseña del usuario.
+- **Longitud mínima de la contraseña**: especifique el número mínimo de dígitos o caracteres que debe tener la contraseña.
 
-- **Tipo de contraseña**: especifique si el usuario debe crear una contraseña **alfanumérica** o una contraseña **numérica**.
+- **Tipo de contraseña**: especifique si el usuario debe crear una contraseña **alfanumérica** o **numérica**.
 
-- **Number of non-alphanumeric character in password** (Número de caracteres no alfanuméricos en la contraseña): si establece **Tipo de contraseña obligatoria** en **Alfanumérico**, use esta configuración para especificar el número mínimo de juegos de caracteres que debe tener la contraseña. 
+- **Número de caracteres no alfanuméricos en la contraseña**: si establece **Tipo de contraseña requerida** en **Alfanumérico**, use esta opción para especificar el número mínimo de juegos de caracteres que debe tener la contraseña. 
 
     > [!NOTE]
-    > Para establecer un número mayor será necesario que el usuario cree una contraseña más compleja.
+    > Para establecer un número mayor, es necesario que el usuario cree una contraseña más compleja.
 
     > [!IMPORTANT]
     > En dispositivos macOS, esta configuración hace referencia al número de caracteres especiales (por ejemplo, **!** **#** , **&amp;**) que deben incluirse en la contraseña.
 
-- **Maximum minutes of inactivity before password is required** (Minutos máximos de inactividad antes de que sea necesaria la contraseña): especifique el tiempo de inactividad que transcurre antes de que el usuario deba volver a escribir su contraseña.
+- **Máximo de minutos de inactividad antes de solicitar la contraseña**: especifique el tiempo de inactividad que transcurre antes de que el usuario deba volver a escribir la contraseña.
 
 - **Expiración de la contraseña (días)**: seleccione el número de días (entre 1 y 250) que faltan para que la contraseña expire y se deba crear una nueva.
 
-- **Number of previous passwords to prevent reuse** (Número de contraseñas anteriores para impedir que se vuelvan a usar): especifique el número de contraseñas usadas anteriormente que no se pueden volver a usar.
+- **Número de contraseñas anteriores que no se pueden reutilizar**: especifique el número de contraseñas usadas anteriormente que no se pueden volver a usar.
 
     > [!IMPORTANT]
-    > Cuando se cambia el requisito de contraseña en un dispositivo macOS, no entra en vigor hasta la próxima vez que el usuario cambie su contraseña. Por ejemplo, si establece la restricción de longitud de contraseña en ocho dígitos y el dispositivo macOS actualmente tiene una contraseña de 6 dígitos, el dispositivo sigue siendo compatible hasta la próxima vez que el usuario actualice su contraseña en el dispositivo.
+    > Cuando se modifica un requisito de contraseña en un dispositivo macOS, no se aplica hasta la siguiente vez que el usuario cambia la contraseña. Por ejemplo, si establece la restricción de longitud de contraseña en ocho dígitos y el dispositivo macOS actualmente tiene una contraseña de seis dígitos, el dispositivo sigue siendo conforme hasta la siguiente vez que el usuario actualiza la contraseña en él.
 
 ## <a name="to-create-a-device-compliance-policy"></a>Pasos para crear una directiva de cumplimiento de dispositivos
 
@@ -142,7 +137,7 @@ Para asignar una directiva de cumplimiento a los usuarios, elija una directiva q
 4. Una vez que asigne la directiva de cumplimiento de dispositivos a los grupos, puede cerrar la hoja **Asignaciones**.
 
     > [!TIP]
-    > De manera predeterminada, los dispositivos comprueban el cumplimiento cada ocho horas, pero los usuarios pueden forzar este proceso a través de la aplicación Portal de empresa de Intune.
+    > De manera predeterminada, los dispositivos comprueban el cumplimiento cada ocho horas, aunque los usuarios pueden forzar este proceso a través de la aplicación Portal de empresa de Intune.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

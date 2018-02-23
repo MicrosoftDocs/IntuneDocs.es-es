@@ -15,11 +15,11 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f33598abe08ffb958ddac9eb7725ab500f9db981
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 35c33fb189187a678efa04d10706fe752d683e17
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Configuración de Endpoint Protection para Windows 10 y versiones posteriores en Microsoft Intune
 
@@ -225,7 +225,9 @@ Para habilitar la protección contra vulnerabilidades, cree un archivo XML que r
 
 Use **	directivas de integridad del código de control de aplicaciones** para elegir aplicaciones adicionales que deban auditarse o con confianza para ejecutarse mediante Windows Defender Application Control. Se confía automáticamente en la ejecución de los componentes de Windows y de todas las aplicaciones de la Tienda Windows.
 
-Las aplicaciones no se bloquearán al ejecutarse en modo "solo auditoría". El modo de "solo auditoría" registra todos los eventos en registros del cliente local.
+Las aplicaciones no se bloquearán al ejecutarse en modo **Solo auditoría**. El modo **Solo auditoría** registra todos los eventos en registros locales del cliente.
+
+Una vez habilitado, el control de aplicaciones solo puede deshabilitarse si se cambia el modo de **Aplicar** a **Solo auditoría**. El cambio de modo de **Aplicar** a **No configurado** da lugar a que el control de aplicaciones siga aplicándose en los dispositivos asignados.
 
 ## <a name="windows-defender-security-center"></a>Centro de seguridad de Windows Defender
 

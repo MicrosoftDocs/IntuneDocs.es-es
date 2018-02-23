@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 23dca24c69cca3c7a2851cb3fa7d9959f31df8e7
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e5f9eb33ca877fba0d59cfd9ddbc23f5eb2cd05c
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="protect-app-data-using-app-protection-policies-with-microsoft-intune"></a>Proteger datos de aplicaciones mediante directivas de protección de aplicaciones con Microsoft Intune
 
@@ -57,9 +57,7 @@ Hay otras ventajas derivadas del uso de MDM con directivas de protección de apl
 - **Las directivas de protección de aplicaciones garantizan que las protecciones de la capa de aplicaciones estén establecidas.** Por ejemplo, puede tener una directiva que requiera un PIN para abrir una aplicación en un contexto de trabajo, evitar que los datos se compartan entre aplicaciones o evitar que los datos de la aplicación de la compañía se guarden en una ubicación de almacenamiento personal.
 
 ## <a name="devices-that-support-mam"></a>Dispositivos que admiten MAM
-Actualmente, las directivas de protección de aplicaciones son compatibles con:
--   iOS 8.1 o posterior
--   Android 4 o posterior
+La compatibilidad de plataformas de directivas de protección de aplicaciones de Intune está alineada con la compatibilidad de plataformas de aplicaciones de Office. Para más información, vea [Requisitos del sistema de Office](https://products.office.com/en-US/office-system-requirements).
 
 >[!NOTE]
 >Los dispositivos de Windows no se admiten en MAM sin el escenario de inscripción. En cambio, cuando inscribe los dispositivos Windows 10 en Intune, puede usar Windows Information Protection, ya que ofrece una funcionalidad similar. Para obtener más información, vea [Protege los datos de su empresa con Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).

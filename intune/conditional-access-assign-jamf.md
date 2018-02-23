@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 12/14/2017
+ms.date: 02/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0844852aaa1e5833e0d5013ac9dea8862d7d752b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 747e54a1c62618f267c3ed07ec3f8858cf97b184
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Aplicación del cumplimiento en equipos Mac administrados con Jamf Pro
 
@@ -66,6 +66,12 @@ Los usuarios finales deben iniciar la aplicación Portal de empresa a través de
 2. Configure la carga **Integración de Microsoft Intune**, incluido el desencadenador y la frecuencia de ejecución.
 3. Haga clic en la pestaña **Ámbito** y establezca el ámbito de la directiva en todos los dispositivos de destino.
 4. Haga clic en la pestaña **Autoservicio** para hacer que la directiva esté disponible en el autoservicio de Jamf. Incluya la directiva en la categoría **Cumplimiento de dispositivos**. Haga clic en **Guardar**.
+
+## <a name="removing-a-jamf-managed-device-from-intune"></a>Eliminación de un dispositivo administrado por Jamf de Intune
+
+No es posible quitar un dispositivo administrado por Jamf de Intune. Es necesario quitar los dispositivos administrados por Jamf de Jamf Pro, con lo que se quitarán de Intune. 
+
+Obtenga más información sobre cómo [quitar un dispositivo administrado por Jamf en los documentos de Jamf Pro](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information). También puede presentar una incidencia de soporte técnico al [soporte técnico de Jamf](https://www.jamf.com/support/) para obtener más ayuda. 
 
 ## <a name="next-steps"></a>Pasos siguientes
 
