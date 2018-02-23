@@ -1,25 +1,24 @@
 ---
 title: "Cómo usar dispositivos administrados de forma remota con TeamViewer"
 titlesuffix: Azure portal
-description: Aprenda a administrar dispositivos de forma remota con TeamViewer.
+description: "Obtenga más información sobre cómo administrar dispositivos de forma remota con TeamViewer."
 keywords: 
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 12/14/2017
+ms.date: 2/14/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
-ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 476480ce3957ef2d411b37a0a078707c721fd2e6
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 0219993e0322be06dbf9b26707789332039001f1
+ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="provide-remote-assistance-for-intune-managed-devices"></a>Proporcione asistencia remota para dispositivos administrados con Intune
 
@@ -32,7 +31,7 @@ Intune puede usar el software [TeamViewer](https://www.teamviewer.com), que se c
 Los dispositivos Android y Windows administrados por Intune se pueden administrar de forma remota.
 
 >[!NOTE]
->Windows Holographic (HoloLens), el equipo de Windows (Surface Hub) y Windows 10 S no son compatibles con el software de TeamViewer. Aún tendrá que administrar los dispositivos mediante el [cliente de PC](/intune-classic/deploy-use/pc-management-comparison?toc=/intune/toc.json) en el portal clásico de Intune.
+>Windows Holographic (HoloLens), el equipo de Windows (Surface Hub) y Windows 10 S no son compatibles con el software de TeamViewer.
 
 
 
@@ -76,4 +75,4 @@ Cuando haya finalizado, cierre la ventana de TeamViewer.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Los usuarios finales verán una marca de notificación en el icono de la aplicación del Portal de empresa de su dispositivo y también verán una notificación cuando abran la aplicación. A continuación, pueden aceptar la solicitud de asistencia remota.
+Los usuarios finales ven una marca de notificación en el icono de la aplicación Portal de empresa de los dispositivos y, además, una notificación al abrir la aplicación. A continuación, pueden aceptar la solicitud de asistencia remota.
