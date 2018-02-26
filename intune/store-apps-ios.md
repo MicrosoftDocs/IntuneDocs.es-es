@@ -36,7 +36,7 @@ Use la información de este tema para agregar a Intune aplicaciones de la tienda
 Solo se pueden asignar aplicaciones mediante este método si son gratuitas en la tienda de aplicaciones. Si desea asignar aplicaciones de pago mediante Intune, considere usar el [programa de compra por volumen de iOS](vpp-apps-ios.md).
 
 >[!NOTE]
->Chrome y Edge son los exploradores recomendados cuando se trabaja con Microsoft Intune.
+>Chrome y Microsoft Edge son los exploradores recomendados cuando se trabaja con Microsoft Intune.
 
 ## <a name="step-1---search-for-the-app-in-the-store"></a>Paso 1: Búsqueda de la aplicación en la tienda
 

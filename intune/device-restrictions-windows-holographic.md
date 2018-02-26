@@ -45,14 +45,14 @@ Se admiten las siguientes configuraciones de restricciones de dispositivos en di
 -   **Instalación de aplicaciones de confianza**: permite realizar una instalación de prueba de las aplicaciones firmadas con un certificado de confianza.
 -   **Desbloqueo de desarrollador**: permite que un usuario final modifique la configuración de desarrollador de Windows, como permitir las aplicaciones con instalación de prueba.
 
-## <a name="edge-browser"></a>Explorador Edge
+## <a name="edge-browser"></a>Explorador Microsoft Edge
 
 -   **Explorador de Microsoft Edge**: permite el uso del explorador web Edge en el dispositivo.
 -   **Cookies**: permite que el explorador guarde cookies de Internet en el dispositivo.
 -   **Ventanas emergentes**: bloquea las ventanas emergentes en el explorador (solo se aplica a Windows 10 Escritorio).
 -   **Search suggestions** (Sugerencias de búsqueda): permite que el motor de búsqueda sugiera sitios a medida que se escriben las frases de búsqueda.
--   **Administrador de contraseñas**: habilita o deshabilita la característica de Administrador de contraseñas de Edge.
-- **Enviar encabezados de no seguimiento**: configura el explorador Edge para que envíe encabezados de no seguimiento a sitios web que visitan los usuarios.
+-   **Administrador de contraseñas**: habilita o deshabilita la característica de Administrador de contraseñas de Microsoft Edge.
+- **Enviar encabezados de no seguimiento**: configura el explorador Microsoft Edge para que envíe encabezados de no seguimiento a sitios web que visitan los usuarios.
 
 ## <a name="windows-defender-smart-screen"></a>SmartScreen de Windows Defender
 
