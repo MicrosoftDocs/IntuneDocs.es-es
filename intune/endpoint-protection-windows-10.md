@@ -223,7 +223,7 @@ Para habilitar la protección contra vulnerabilidades, cree un archivo XML que r
 
 ## <a name="windows-defender-application-control"></a>Windows Defender Application Control
 
-Use **	directivas de integridad del código de control de aplicaciones** para elegir aplicaciones adicionales que deban auditarse o con confianza para ejecutarse mediante Windows Defender Application Control. Se confía automáticamente en la ejecución de los componentes de Windows y de todas las aplicaciones de la Tienda Windows.
+Use **directivas de integridad del código de control de aplicaciones** para elegir aplicaciones adicionales que deban auditarse o con confianza para ejecutarse mediante Windows Defender Application Control. Se confía automáticamente en la ejecución de los componentes de Windows y de todas las aplicaciones de la Tienda Windows.
 
 Las aplicaciones no se bloquearán al ejecutarse en modo **Solo auditoría**. El modo **Solo auditoría** registra todos los eventos en registros locales del cliente.
 
