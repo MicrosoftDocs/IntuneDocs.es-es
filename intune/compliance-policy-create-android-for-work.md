@@ -15,18 +15,18 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5a8955cf87ecafd0e4ead38394b980a5d5949940
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: b5ff76137da7b42fddc5c1238ef9e102adfa1307
+ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/09/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Creación de una directiva de cumplimiento para dispositivos Android for Work en Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Las directivas de cumplimiento se crean para cada plataforma.  Puede crear una directiva de cumplimiento en el portal de Azure. Para aprender más sobre lo que son las directivas de cumplimiento, consulte el tema [¿Qué es el cumplimiento de los dispositivos?](device-compliance.md). Para conocer los requisitos previos que deben satisfacerse antes de crear una directiva de cumplimiento, consulte el tema [Introducción al cumplimiento de dispositivos](device-compliance-get-started.md).
+Las directivas de cumplimiento se crean para cada plataforma.  Puede crear una directiva de cumplimiento en el portal de Azure. Consulte [¿Qué es el cumplimiento de los dispositivos?](device-compliance.md) para obtener más información sobre las directivas de cumplimiento. Para conocer los requisitos previos que deben satisfacerse antes de crear una directiva de cumplimiento, vea [Introducción al cumplimiento de dispositivos](device-compliance-get-started.md).
 
 En la tabla siguiente se describe cómo administrar la configuración de no conformidad cuando se usa una directiva de cumplimiento con una directiva de acceso condicional.
 
@@ -52,8 +52,8 @@ En la tabla siguiente se describe cómo administrar la configuración de no conf
 ## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Creación de una directiva de cumplimiento en el portal de Azure
 
 1. En la hoja **Intune**, elija **Establecer la compatibilidad con dispositivos**. En **Administrar**, elija **All device compliance policies** (Todas las directivas de cumplimiento de dispositivo) y elija **Crear**.
-2. Escriba un nombre y una descripción y elija la plataforma a la que quiere que se aplique esta directiva.
-3. Elija **Requisitos de cumplimiento** para especificar los valores de **Seguridad**, **Mantenimiento de dispositivos** y **Propiedad del dispositivo**. Cuando haya terminado, elija **Aceptar**.
+2. Escriba un nombre y una descripción, y elija la plataforma a la que quiere que se aplique esta directiva.
+3. Elija **Requisitos de cumplimiento** para especificar valores para **Seguridad**, **Mantenimiento de dispositivos** y **Propiedad del dispositivo**. Cuando haya terminado, haga clic en **Aceptar**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -77,9 +77,9 @@ Ya ha aplicado la directiva a los usuarios.  Ahora se evaluará el cumplimiento 
 
 ### <a name="password"></a>Contraseña
 
-- **Requerir una contraseña para desbloquear dispositivos móviles:** establezca esta opción en **Sí** para exigir que los usuarios escriban una contraseña antes de poder tener acceso a sus dispositivos.
-- **Minimum password length** (Longitud mínima de la contraseña): especifique el número mínimo de dígitos o caracteres que debe contener la contraseña del usuario.
-- **Calidad de contraseña:** esta opción detecta si los requisitos de contraseña que especifique se configuran en el dispositivo. Habilite esta opción para requerir a los usuarios configurar determinados requisitos de contraseña para dispositivos Android. Elija de entre las siguientes opciones:
+- **Requerir una contraseña para desbloquear dispositivos móviles**: establezca esta opción en **Sí** para exigir que los usuarios escriban una contraseña antes de poder tener acceso a sus dispositivos.
+- **Longitud mínima de la contraseña**: especifique el número mínimo de dígitos o caracteres que debe contener la contraseña del usuario.
+- **Calidad de contraseña**: esta opción detecta si los requisitos de contraseña que especifique están configurados en el dispositivo. Habilite esta opción para requerir a los usuarios configurar determinados requisitos de contraseña para dispositivos Android. Elija de entre las siguientes opciones:
   - **Biométrico de seguridad baja**
   - **Requerido**
   - **Al menos numérica**
@@ -90,32 +90,30 @@ Ya ha aplicado la directiva a los usuarios.  Ahora se evaluará el cumplimiento 
 - **Caducidad de contraseña (días)**: seleccione el número de días que faltan para que la contraseña expire y se deba crear una nueva.
 - **Recordar historial de contraseñas:** use esta opción junto con **Impedir la reutilización de contraseñas anteriores** para impedir que el usuario cree contraseñas que se han usado anteriormente.
 - **Impedir la reutilización de contraseñas anteriores:** si la opción **Recordar historial de contraseñas** está seleccionada, especifique el número de contraseñas usadas previamente que no se pueden volver a usar.
-- **Requerir una contraseña cuando el dispositivo vuelva de un estado de inactividad:** este valor debe usarse junto con el de la opción **Minutos de inactividad antes de que sea necesaria la contraseña**. Se pedirá a los usuarios finales que escriban una contraseña para obtener acceso a un dispositivo que haya estado inactivo durante el tiempo especificado en la opción **Minutos de inactividad antes de que sea necesaria la contraseña**.
+- **Requerir una contraseña cuando el dispositivo vuelva de un estado de inactividad:** este valor debe usarse con el de la opción **Minutos de inactividad antes de que sea necesaria la contraseña**. Se pedirá a los usuarios finales que escriban una contraseña para obtener acceso a un dispositivo que haya estado inactivo durante el tiempo especificado en la opción **Minutos de inactividad antes de que sea necesaria la contraseña**.
 
 
 ### <a name="encryption"></a>Cifrado
 
-- **Requerir cifrado en el dispositivo móvil:** no tiene que configurar este valor ya que los dispositivos Android for Work fuerzan el cifrado.
+- **Requerir cifrado en el dispositivo móvil**: no tiene que configurar este valor ya que los dispositivos Android for Work fuerzan el cifrado.
 
 
 ## <a name="device-health-and-security-settings"></a>Configuración de estado y la seguridad de dispositivos
 
-- **El dispositivo no debe estar descodificado o descifrado:** si habilita esta opción, los dispositivos descodificados se considerarán como no compatibles.
-- **Los dispositivos deben impedir la instalación de aplicaciones de orígenes desconocidos:** no es necesario configurar este valor ya que los dispositivos Android for Work siempre restringen la instalación de orígenes desconocidos. .
+- **El dispositivo no debe estar descodificado o liberado**: si habilita esta opción, los dispositivos descodificados se consideran no conformes.
+- **Los dispositivos deben impedir la instalación de aplicaciones de orígenes desconocidos**: no es necesario configurar este valor ya que los dispositivos Android for Work siempre restringen la instalación de orígenes desconocidos.
 - **La depuración USB debe estar deshabilitada**: no es necesario configurar esta opción, dado que la depuración USB ya está deshabilitada en los dispositivos Android for Work.
 - **Nivel mínimo de revisión de seguridad de Android**: use esta opción para especificar el nivel mínimo de revisión de Android. No serán compatibles los dispositivos que no están al menos en este nivel de revisión. La fecha debe estar especificada en el formato: aaaa-MM-DD.
-- **Requerir que se habilite la Protección contra amenazas del dispositivo**: use esta opción para hacer que la evaluación del riesgo de la solución Lookout MTP sea una condición para el cumplimiento. Seleccione el nivel de amenaza máximo permitido, que es uno de los siguientes:
+- **Requerir la habilitación de la protección frente a amenazas de dispositivo**: utilice esta opción para hacer que la evaluación del riesgo de la solución Lookout MTP sea una condición para el cumplimiento. Seleccione el nivel de amenaza máximo permitido, que es uno de los siguientes:
   - **Ninguno (protegido)** es la más segura. Esto significa que el dispositivo no puede tener ninguna amenaza. Si se detecta cualquier nivel de amenaza en el dispositivo, se evaluará como no conforme.
-  - **Bajo:** el dispositivo se evalúa como conforme si solo hay amenazas de nivel bajo. Cualquier valor por encima coloca al dispositivo en un estado de no conformidad.
-  - **Medio:** el dispositivo se evalúa como conforme si las amenazas presentes en él son de nivel bajo o medio. Si se detecta que el dispositivo presenta amenazas de nivel alto, se clasificará como no conforme.
-  - **Alto:** esta opción es la menos segura. Básicamente, permite todos los niveles de amenaza y quizás solo sea útil si usa esta solución únicamente para fines informativos.
-
-Para ver más detalles, consulte [Habilitar la regla de protección contra amenazas móviles en la directiva de cumplimiento normativo](https://docs.microsoft.com/intune-classic/deploy-use/enable-device-threat-protection-rule-in-compliance-policy).
+  - **Bajo**: el dispositivo se evalúa como conforme si solo hay amenazas de nivel bajo. Cualquier valor por encima coloca al dispositivo en un estado de no conformidad.
+  - **Medio**: el dispositivo se evalúa como conforme si las amenazas presentes en él son de nivel bajo o medio. Si se detecta que el dispositivo presenta amenazas de nivel alto, se clasificará como no conforme.
+  - **Alto**: esta opción es la menos segura. Básicamente, permite todos los niveles de amenaza y quizás solo sea útil si usa esta solución únicamente para fines informativos.
 
 ## <a name="device-property-settings"></a>Configuración de propiedades de dispositivo
 
 - **SO mínimo requerido:** cuando un dispositivo no cumpla el requisito de versión de SO mínima, se notificará como no compatible. Además, se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario final puede optar por actualizar el dispositivo, tras lo cual podrá tener acceso a los recursos de la empresa.
-- **Versión de SO máxima permitida:** cuando un dispositivo usa una versión de SO posterior a la especificada en la regla, se bloquea el acceso a los recursos de la empresa y se solicita al usuario que se ponga en contacto con el administrador de TI. Mientras no se cambie la regla para permitir la versión de SO, este dispositivo no podrá usarse para acceder a los recursos de la empresa.
+- **Versión de SO máxima permitida**: cuando un dispositivo usa una versión de SO posterior a la especificada en la regla, se bloquea el acceso a los recursos de la empresa y se solicita al usuario que se ponga en contacto con el administrador de TI. Mientras no se cambie la regla para permitir la versión de SO, este dispositivo no podrá usarse para acceder a los recursos de la empresa.
 
 <!--- ## Next steps
 

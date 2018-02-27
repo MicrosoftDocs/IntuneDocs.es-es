@@ -3,10 +3,10 @@ title: "Preparativos para configurar directivas de protección de aplicaciones p
 titlesuffix: Azure portal
 description: "Configuración del proveedor de administración de aplicaciones móviles (MAM) en Azure AD"
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/25/2017
+ms.date: 02/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 949fddec-5318-4c9a-957e-ea260e6e05be
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4b6a442f83491160f72955d02b8023ee4d949f2
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 5514ea423f67e5bc824b4ee947f630c7f1b43d8f
+ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Preparativos para configurar directivas de protección de aplicaciones para Windows 10
 
@@ -40,17 +40,17 @@ Habilite la administración de aplicaciones móviles (MAM) para Windows 10. Para
 
 4. Configure los valores en el grupo **Restaurar las URL de MAM predeterminadas** en la hoja **Configurar**.
 
-    **Ámbito de usuario de MAM**  
-      Use la inscripción automática de MAM para administrar los datos de la empresa en los dispositivos Windows de sus empleados. La inscripción automática de MAM se configurará para traer sus propios escenarios de dispositivo.<ul><li>**Ninguno**<br>Seleccione si todos los usuarios se pueden inscribir en MAM.</li><li>**Algunos**<br>Seleccione los grupos de Azure AD que incluyen los usuarios que se inscribirán en MAM.</li><li>**Todos**<br>Seleccione si todos los usuarios se pueden inscribir en MAM.</li></ul>
+   **Ámbito de usuario de MAM**  
+   Use la inscripción automática de MAM para administrar los datos de la empresa en los dispositivos Windows de sus empleados. La inscripción automática de MAM se configurará para traer sus propios escenarios de dispositivo.<ul><li>**Ninguno**<br>Seleccione si todos los usuarios se pueden inscribir en MAM.</li><li>**Algunos**<br>Seleccione los grupos de Azure AD que incluyen los usuarios que se inscribirán en MAM.</li><li>**Todos**<br>Seleccione si todos los usuarios se pueden inscribir en MAM.</li></ul>
 
-    **URL de las condiciones de uso de MAM**  
-     La dirección URL del punto de conexión de los términos de uso del servicio MAM. El punto de conexión de las condiciones de uso se usa para mostrar las condiciones de servicio a los usuarios finales antes de inscribir sus dispositivos para administración. El texto de las condiciones se uso informa a los usuarios sobre las directivas que se aplican en el dispositivo móvil.
+   **URL de las condiciones de uso de MAM**  
+   Microsoft Intune no admite la URL de los términos de uso de MAM. Este cuadro de entrada se debe dejar en blanco para que se apliquen las directivas de protección.
 
-    **URL de detección de MAM**  
-    La dirección URL del punto de conexión de la inscripción del servicio MAM. El punto de conexión de inscripción se usa para inscribir dispositivos para administración con el servicio MAM.
+   **URL de detección de MAM**  
+   La dirección URL del punto de conexión de la inscripción del servicio MAM. El punto de conexión de inscripción se usa para inscribir dispositivos para administración con el servicio MAM.
 
-    **URL de cumplimiento de MAM**  
-      La dirección URL del punto de conexión de cumplimiento del servicio MAM. Si se deniega el acceso de un usuario a un recurso desde un dispositivo no conforme, el usuario verá un vínculo a la dirección URL de cumplimiento. Los usuarios pueden navegar a esta dirección URL que el servicio MAM hospeda para comprender por qué se considera que el dispositivo no es conforme. Los usuarios también pueden iniciar una corrección de autoservicio para que sus dispositivos sean compatibles y puedan seguir teniendo acceso a los recursos.
+   **URL de cumplimiento de MAM**  
+   Microsoft Intune no admite la URL de cumplimiento de MAM. Este cuadro de entrada se debe dejar en blanco para que se apliquen las directivas de protección. 
 
 5.  Haga clic en **Guardar**.
 

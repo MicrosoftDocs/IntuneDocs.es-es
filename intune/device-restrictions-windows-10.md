@@ -1,24 +1,23 @@
 ---
 title: "Configuración de restricciones de dispositivo de Intune para Windows 10"
 titlesuffix: Azure portal
-description: "Conozca la configuración de Intune que puede usar para controlar los valores de configuración y la funcionalidad de los dispositivos Windows 10."
+description: "Obtenga más información sobre la configuración de Intune que puede usar para controlar los ajustes y la funcionalidad de los dispositivos Windows 10."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/8/2018
+ms.date: 2/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b4b576e9b6195f3db8d162e1f880faf9f669f2c1
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 128e16ad989293e168d2bb53d5974e479e09a000
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos Windows 10 y versiones posteriores en Microsoft Intune
 
@@ -28,6 +27,8 @@ ms.lasthandoff: 02/09/2018
 - **Captura de pantalla (solo móviles)**: permite que el usuario capture la pantalla del dispositivo como imagen.
 - **Copiar y pegar (solo móviles)**: permite acciones de copiar y pegar entre aplicaciones del dispositivo.
 - **Cancelación manual de la suscripción**: permite al usuario eliminar manualmente la cuenta del área de trabajo desde el dispositivo.
+   - Esta configuración de directiva no se aplica si el equipo está unido a Azure Active Directory y la inscripción automática está habilitada. 
+   - Esta configuración de directiva no se aplica a equipos que ejecuten Windows 10 Home.
 - **Instalación manual del certificado raíz (solo móviles)**: impide que el usuario instale manualmente certificados raíz y certificados CAP intermedios.
 - **Envío de datos de diagnóstico**: los valores posibles son:
     - **Ninguno**: no se envían datos a Microsoft.
@@ -68,7 +69,7 @@ Para los dispositivos que ejecutan Windows 10 Mobile: si el inicio de sesión fa
 
 ## <a name="personalization"></a>Personalization
 
-- **Dirección URL de imagen de fondo de escritorio (solo escritorio)**: especifica la dirección URL de una imagen en formato PNG, JPG o JPEG que quiere usar como fondo de escritorio de Windows. Los usuarios no pueden cambiar esto.
+- **Dirección URL de imagen de fondo de escritorio (solo escritorio)**: especifica la dirección URL de una imagen en formato JPEG que quiere usar como fondo de escritorio de Windows. Los usuarios no pueden cambiar esto.
 
 ## <a name="privacy"></a>Privacidad
 
@@ -156,11 +157,11 @@ Puede agregar aplicaciones que deben tener un comportamiento de privacidad difer
 ## <a name="edge-browser"></a>Explorador Edge
 
 -   **Explorador de Microsoft Edge (solo móvil)**: permite el uso del explorador web Edge en el dispositivo.
--   **Lista desplegable de la barra de direcciones (solo escritorio)**: use esto para impedir que Edge muestre una lista de sugerencias en una lista desplegable cuando escriba. Esto ayuda a minimizar el uso del ancho de banda de red entre Edge y servicios Microsoft.
--   **Sincronizar favoritos entre exploradores de Microsoft (solo escritorio)**: permite que Windows sincronice los favoritos entre Internet Explorer y Edge.
--   **Enviar encabezados de no seguimiento**: configura el explorador Edge para que envíe encabezados de no seguimiento a sitios web que visitan los usuarios.
+-   **Lista desplegable de la barra de direcciones (solo escritorio)**: use esto para impedir que Microsoft Edge muestre una lista de sugerencias en una lista desplegable cuando escriba. Esto ayuda a minimizar el uso del ancho de banda de red entre Microsoft Edge y servicios Microsoft.
+-   **Sincronizar favoritos entre exploradores de Microsoft (solo escritorio)**: permite que Windows sincronice los favoritos entre Internet Explorer y Microsoft Edge.
+-   **Enviar encabezados de no seguimiento**: configura el explorador Microsoft Edge para que envíe encabezados de no seguimiento a sitios web que visitan los usuarios.
 -   **Cookies**: permite que el explorador guarde cookies de Internet en el dispositivo.
--   **JavaScript**: permite la ejecución de scripts, como JavaScript, en el explorador Edge.
+-   **JavaScript**: permite la ejecución de scripts, como JavaScript, en el explorador Microsoft Edge.
 -   **Ventanas emergentes**: bloquea las ventanas emergentes en el explorador (solo se aplica a Windows 10 Escritorio).
 -   **Search suggestions** (Sugerencias de búsqueda): permite que el motor de búsqueda sugiera sitios a medida que se escriben las frases de búsqueda.
 -   **Enviar el tráfico de la intranet a Internet Explorer**: permite a los usuarios abrir sitios web de intranet en Internet Explorer (solo Windows 10 Escritorio).
@@ -170,15 +171,15 @@ Puede agregar aplicaciones que deben tener un comportamiento de privacidad difer
 -   **Herramientas de desarrollo**: impiden que el usuario final abra las herramientas de desarrollo de Microsoft Edge.
 -   **Extensiones**: permiten que el usuario final instale extensiones de Microsoft Edge en el dispositivo.
 -   **Exploración de InPrivate**: impide que el usuario final abra sesiones de exploración de InPrivate.
--   **Mostrar la página de la primera ejecución**: impide que la página de introducción aparezca la primera vez que ejecuta Edge.
-    -   **URL de primera ejecución**: especifica la URL de una página que se muestra la primera vez que un usuario ejecuta Edge (solo Windows 10 Mobile).
--   **Páginas principales**: agrega una lista de sitios que quiere usar como páginas principales en el explorador Edge (solo escritorio).
--   **Cambia a la página de inicio**: permite que los usuarios cambien las páginas de inicio que se muestran cuando se abre Edge. Use la configuración de páginas principales para crear la página o enumerar las páginas que se abren cuando se inicia Edge.
+-   **Mostrar la página de la primera ejecución**: impide que la página de introducción aparezca la primera vez que ejecuta Microsoft Edge.
+    -   **URL de primera ejecución**: especifica la URL de una página que se muestra la primera vez que un usuario ejecuta Microsoft Edge (solo Windows 10 Mobile).
+-   **Páginas principales**: agrega una lista de sitios que quiere usar como páginas principales en el explorador Microsoft Edge (solo escritorio).
+-   **Cambia a la página de inicio**: permite que los usuarios cambien las páginas de inicio que se muestran cuando se abre Microsoft Edge. Use la configuración de páginas principales para crear la página o enumerar las páginas que se abren cuando se inicia Microsoft Edge.
 -   **Bloquear acceso a about:flags**: impide que el usuario final tenga acceso a la página about:flags de Microsoft Edge que contiene la configuración experimental y de desarrollador.
 -   **Dirección IP de localhost para WebRtc**: impide que la dirección IP de localhost de los usuarios se muestre cuando se hacen llamadas telefónicas a través del protocolo WebRtc.
 -   **Motor de búsqueda predeterminado**: especifica el motor de búsqueda predeterminado que se usará. Los usuarios finales pueden cambiar este valor en cualquier momento.
--   **Borrar datos de navegación al salir**: borra el historial y los datos de navegación cuando el usuario sale de Edge.
--   **Recopilación de datos para iconos dinámicos**: impide que Windows recopile información de iconos dinámicos cuando los usuarios anclan un sitio al menú de inicio de Edge.
+-   **Borrar datos de navegación al salir**: borra el historial y los datos de navegación cuando el usuario sale de Microsoft Edge.
+-   **Recopilación de datos para iconos dinámicos**: impide que Windows recopile información de iconos dinámicos cuando los usuarios anclan un sitio al menú de inicio de Microsoft Edge.
 
 ## <a name="windows-defender-smart-screen"></a>SmartScreen de Windows Defender
 
