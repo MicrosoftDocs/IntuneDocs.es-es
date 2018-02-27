@@ -15,15 +15,15 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3174fc498b5d8cffaade7c52f417409de64c7eb6
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: f6ef1d1dab39a6939b80bd13ba090424a67c6f53
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 02/19/2018
 ---
-# <a name="how-to-assign-office-365-proplus-2016-apps-to-windows-10-devices-with-microsoft-intune"></a>Asignación de aplicaciones de Office 365 ProPlus 2016 a dispositivos Windows 10 con Microsoft Intune
+# <a name="how-to-assign-office-365-proplus-apps-to-windows-10-devices-with-microsoft-intune"></a>Asignación de aplicaciones de Office 365 ProPlus a dispositivos Windows 10 con Microsoft Intune
 
-Este tipo de aplicación facilita la asignación de aplicaciones de Office 365 ProPlus 2016 a dispositivos que administre y que ejecuten Windows 10. También puede instalar aplicaciones para el cliente de escritorio de Microsoft Project Online y Microsoft Visio Pro para Office 365, si posee sus licencias. Las aplicaciones que quiere que aparezcan como una única entrada en la lista de aplicaciones de la consola de Intune.
+Este tipo de aplicación facilita la asignación de aplicaciones de Office 365 ProPlus a dispositivos que administre y que ejecuten Windows 10. También puede instalar aplicaciones para el cliente de escritorio de Microsoft Project Online y Microsoft Visio Pro para Office 365, si posee sus licencias. Las aplicaciones que quiere que aparezcan como una única entrada en la lista de aplicaciones de la consola de Intune.
 
 
 ## <a name="before-you-start"></a>Antes de empezar
@@ -32,7 +32,7 @@ Este tipo de aplicación facilita la asignación de aplicaciones de Office 365 P
 >Este método de instalación de Office solo se admite si no hay otras versiones de Microsoft Office instaladas en el dispositivo.
 
 - Los dispositivos en los que implementa estas aplicaciones deben ejecutar Windows 10 Creator Update o una versión posterior.
-- Intune solo admite agregar aplicaciones de Office desde el conjunto de aplicaciones de Office 365 ProPlus 2016.
+- Intune solo admite agregar aplicaciones de Office desde el conjunto de aplicaciones de Office 365 ProPlus.
 - Si alguna aplicación de Office está abierta cuando Intune instala el conjunto de aplicaciones, puede ser que la instalación falle y que los usuarios finales pierdan los datos de los archivos no guardados.
 - Este método de instalación no se admite en dispositivos Windows 10, Windows Home, Windows Team, Windows Holographic y Windows Holographic for Business.
 - Intune no admite la instalación de aplicaciones de escritorio de Office 365 desde Microsoft Store (estas aplicaciones se conocen como Office Centennial) en un dispositivo al que ya haya implementado aplicaciones de Office 365 con Intune. Si instala esta configuración, puede provocar daños o la pérdida de datos.

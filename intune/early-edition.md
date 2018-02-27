@@ -15,11 +15,11 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ed427382b94f591559a2264f40455ab5254daadb
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 7d54cb060dc44d29c95203138396f771abbb2325
+ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 02/19/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---february-2018"></a>La edición anticipada de Microsoft Intune: febrero de 2018
 
@@ -40,6 +40,10 @@ Esta página se actualiza periódicamente. Compruebe si hay actualizaciones adic
 
 
 <!-- 1802 start -->
+
+### <a name="new-enrollment-failure-trend-chart-and-failure-reasons-table----1471783---"></a>Nuevo gráfico de tendencias sobre errores de inscripción y tabla de motivos de error <!-- 1471783 -->
+
+En la página de información general de inscripción, verá la tendencia de los errores de inscripción y los cinco motivos de error principales. Al hacer clic en un gráfico o una tabla, podrá explorar los detalles para obtener consejos de resolución de problemas y sugerencias de corrección.
 
 ### <a name="prevent-end-users-from-adding-or-removing-accounts-in-the-work-profile----1728700---"></a>Impedir que los usuarios finales agreguen cuentas al perfil del trabajo o las quiten<!-- 1728700 -->    
 Al implementar la aplicación Gmail en un perfil de Android for Work, puede impedir que los usuarios finales agreguen o quiten cuentas en el perfil de trabajo mediante la opción de configuración **Agregar y quitar cuentas** del perfil de restricciones del dispositivo Android for Work.
@@ -76,9 +80,6 @@ Por ejemplo, puede agregar el paquete de WebEx como una excepción a la directiv
 ### <a name="customize-your-company-portal-themes-with-hex-codes---1049561-eeready--"></a>Personalice los temas del Portal de empresa con códigos hexadecimales <!--1049561 eeready-->
 
 Podrá personalizar el color del tema en las aplicaciones del Portal de empresa mediante los códigos hexadecimales. Cuando se escriba el código hexadecimal, Intune determinará el color del texto que proporciona el nivel más alto de contraste entre el color del texto y el color de fondo según los [estándares de WCAG 2.0](http://www.w3.org/TR/WCAG20). Puede ver el color del texto y el logotipo de su empresa con el color en **Aplicaciones móviles** > **Portal de empresa**. 
-
-### <a name="select-device-categories-by-using-the-access-work-or-school-settings----1058963---"></a>Selección de las categorías de dispositivos mediante el valor de configuración Obtener acceso a trabajo o escuela <!-- 1058963 --> 
-Si ha habilitado la [asignación de grupos de dispositivos](https://docs.microsoft.com/intune/device-group-mapping), se pedirá a los usuarios de Windows 10 que seleccionen una categoría de dispositivo después de la inscripción a través del botón **Conectar** en **Configuración** > **Cuentas** > **Obtener acceso a trabajo o escuela** o durante la configuración rápida.
 
 ### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>Nueva configuración de protección de credenciales de Windows Defender agregada a la configuración de endpoint protection<!--1102252 --> 
 
@@ -120,9 +121,9 @@ Habrá dos nuevas opciones de privacidad disponibles para los dispositivos:
 
 Los usuarios podrán usar el administrador de inscripciones de dispositivos cuando se inscriban con el Portal de empresa de macOS.
 
-#### <a name="new-settings-for-the-edge-browser---1469166---"></a>Nueva configuración para el explorador Edge <!--1469166 -->
+#### <a name="new-settings-for-the-edge-browser---1469166---"></a>Nueva configuración para el explorador Microsoft Edge <!--1469166 -->
 
-Habrá dos nuevas opciones disponibles para dispositivos con el explorador Edge: **Ruta de acceso al archivo de favoritos** y **Cambios a Favoritos**. 
+Habrá dos nuevas opciones disponibles para dispositivos con el explorador Microsoft Edge: **Ruta de acceso al archivo de favoritos** y **Cambios a Favoritos**. 
 
 ### <a name="windows-information-protection-wip-encrypted-data-in-windows-search-results----1469193---"></a>Datos cifrados de Windows Information Protection (WIP) en los resultados de la búsqueda de Windows <!-- 1469193 -->
 

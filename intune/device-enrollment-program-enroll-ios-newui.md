@@ -15,11 +15,11 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b97da0c8ca0a1e3891a64508b565749dec06de93
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 48b74b81c9f3f8b9c936ae22a343ccfb565b4ec1
+ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/15/2018
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Inscribir dispositivos iOS automáticamente con el Programa de inscripción de dispositivos de Apple
 
@@ -128,7 +128,7 @@ Ahora que ha instalado el token, puede crear un perfil de inscripción para disp
     ![Autenticación con el portal de empresa.](./media/device-enrollment-program-enroll-ios/authenticatewithcompanyportal.png)
 
     > [!NOTE]
-    > Multi-Factor Authentication (MFA) no funciona durante la inscripción de DEP si las propiedades del perfil están establecidas en **Use with User Affinity** (Usar con afinidad de usuario) y no usa un portal de empresa. Después de la inscripción, MFA funciona según lo previsto en los dispositivos. Los dispositivos no pueden pedir a los usuarios que cambien su contraseña cuando inician sesión por primera vez. Además, no se puede pedir a los usuarios cuyas contraseñas hayan expirado que las restablezcan durante la inscripción. Los usuarios deben usar un dispositivo diferente para restablecer la contraseña.
+    > Multi-Factor Authentication (MFA) no funciona durante la inscripción de DEP si las propiedades del perfil están establecidas en **Inscribir con afinidad de usuario** y no usa Portal de empresa. Después de la inscripción, MFA funciona según lo previsto en los dispositivos. Los dispositivos no pueden pedir a los usuarios que cambien su contraseña cuando inician sesión por primera vez. Además, no se puede pedir a los usuarios cuyas contraseñas hayan expirado que las restablezcan durante la inscripción. Los usuarios deben usar un dispositivo diferente para restablecer la contraseña.
 
 6. Elija **Configuración de administración de dispositivos** y seleccione si desea o no que se supervisen los dispositivos con este perfil.
     Los dispositivos **supervisados** ofrecen más opciones de administración y, en este caso, el bloqueo de activación está deshabilitado de forma predeterminada. Microsoft recomienda usar el DEP como mecanismo para habilitar el modo de supervisión, sobre todo para las organizaciones que implementan un gran número de dispositivos iOS.
