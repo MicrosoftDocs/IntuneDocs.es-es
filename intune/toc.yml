@@ -606,6 +606,10 @@
           href: end-user-apps-ios.md
         - name: Obtención de aplicaciones de Windows
           href: end-user-apps-windows.md
+        - name: Datos que Intune manda a Apple
+          href: data-intune-sends-to-apple.md
+        - name: Datos que Intune manda a Google
+          href: data-intune-sends-to-google.md
     - name: Supervisión y solución de problemas
       items:
         - name: Ayuda para los usuarios para solucionar problemas
