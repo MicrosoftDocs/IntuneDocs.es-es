@@ -1,12 +1,12 @@
 ---
 title: "Supervisión de información de aplicación y asignaciones"
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: "Después de haber asignado una aplicación a usuarios o dispositivos, use esta información para que le ayude a supervisar su estado."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/21/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 85ecc9729d7c03cb760c14bda0ca4d6321af548e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: b88530ef790dd181e81e420c158867d29d1d0d58
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-monitor-app-information-and-assignments-with-microsoft-intune"></a>Supervisión de información de aplicación y asignaciones con Microsoft Intune
 
@@ -27,9 +27,9 @@ ms.lasthandoff: 01/25/2018
 
 Intune proporciona diversas maneras en las cuales puede supervisar las propiedades de las aplicaciones que administra, así como el estado de la asignación.
 
-1. Inicie sesión en Azure Portal.
-2. Elija **More Services** >  (Más servicios) **Supervisión y administración** + **Intune**.
-3. En la carga de trabajo **Aplicaciones móviles**, elija **Aplicaciones** en el grupo **Administrar**.
+1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+3. Elija **Aplicaciones móviles** y **Aplicaciones** en el grupo **Administrar**.
 5. En la lista de la hoja de aplicaciones, elija una aplicación. Verá la hoja **Estado de instalación del dispositivo** de <*nombre de la aplicación*> .
 
 ## <a name="app-overview-blade"></a>Hoja de información general sobre las aplicaciones

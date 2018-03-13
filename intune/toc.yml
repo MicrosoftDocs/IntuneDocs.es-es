@@ -470,30 +470,6 @@
           href: conditional-access-assign-jamf.md
     - name: Protección de datos de dispositivos
       items:
-        - name: Uso de directivas de protección de aplicaciones
-          href: app-protection-policy.md
-          items:
-            - name: Creación de directivas de protección de aplicaciones
-              href: app-protection-policies.md
-              items:
-                - name: Configuración de Android
-                  href: app-protection-policy-settings-android.md
-                - name: Configuración de iOS
-                  href: app-protection-policy-settings-ios.md
-                - name: Excepciones de la directiva de transferencia de datos
-                  href: app-protection-policies-exception.md
-                - name: Revisión de los registros de protección de aplicaciones en Managed Browser
-                  href: app-protection-policy-settings-log.md
-            - name: Validación de directivas de protección de aplicaciones
-              href: app-protection-policies-validate.md
-            - name: Supervisión del estado de usuario de protección de aplicaciones
-              href: app-protection-policies-monitor.md
-            - name: Preparativos para las directivas de protección de aplicaciones de trabajo en curso
-              href: app-protection-policies-configure-windows-10.md
-            - name: Creación y asignación de directivas de protección de aplicaciones de trabajo en curso
-              href: windows-information-protection-policy-create.md
-            - name: Administrar la transferencia de datos entre aplicaciones iOS
-              href: data-transfer-between-apps-manage-ios.md
         - name: Mobile Threat Defense
           href: mobile-threat-defense.md
           items:

@@ -5,7 +5,7 @@ description: Conozca las novedades de los grupos en el portal de Intune Azure
 keywords: 
 author: nathbarn
 ms.author: nathbarn
-manager: angerobe
+manager: dougeby
 ms.date: 01/18/2017
 ms.topic: article
 ms.prod: 
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.assetid: 323f384d-8a76-4adc-999b-e508d641bfa1
 ms.custom: intune-azure
-ms.openlocfilehash: 7ba5c3d0e6f241c5734d629a23f092ac007f8300
-ms.sourcegitcommit: e10dfc9c123401fabaaf5b487d459826c1510eae
+ms.openlocfilehash: 96ac32059b91b9ee4f83386f36fd6af19da91004
+ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2017
+ms.lasthandoff: 02/27/2018
 ---
 # <a name="intune-classic-groups-in-the-azure-portal"></a>Grupos clásicos de Intune en Azure Portal
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 09/09/2017
 Hemos escuchado sus comentarios y hemos realizado algunos cambios sobre cómo trabaja con los grupos en Microsoft Intune.
 Si usa Intune desde el portal de Azure, los grupos de Intune se han migrado a grupos de seguridad de Azure Active Directory.
 
-La ventaja es que ahora usa la misma experiencia de grupos en Enterprise Mobility + Security y en las aplicaciones de Azure AD. Además, puede usar PowerShell y API Graph para extender y personalizar esta nueva función.
+La ventaja es que ahora usa la misma experiencia de grupos en Enterprise Mobility + Security y en las aplicaciones de Azure AD. Además, puede usar PowerShell y Graph API para extender y personalizar esta nueva función.
 
 Los grupos de seguridad de Azure AD admiten todos los tipos de implementaciones de Intune para los usuarios y los dispositivos. Además, puede usar los grupos dinámicos de Azure AD que se actualizan automáticamente basándose en los atributos que proporcione. Por ejemplo, puede crear un grupo de dispositivos que ejecute iOS 9. Cuando se inscriba un dispositivo que ejecuta iOS 9, el dispositivo se muestra automáticamente en el grupo dinámico.
 
