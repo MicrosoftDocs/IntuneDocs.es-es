@@ -1,12 +1,12 @@
 ---
 title: "Omisión del bloqueo de activación de iOS con Intune"
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: "Aprenda a usar Intune para omitir el bloqueo de activación de iOS a fin de acceder a los dispositivos bloqueados."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
-ms.date: 08/22/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 15c288b31ab3fb31080aff72d2461dc1d24ec5ae
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6ec8c1a25acfa7c84c62d3686c5f00e7398d573d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Omisión del bloqueo de activación en dispositivos iOS supervisados con Intune
 
@@ -69,11 +69,11 @@ Para omitir el Bloqueo de activación en los dispositivos, primero debe habilita
 
 La acción de dispositivo remoto **Omitir bloqueo de activación** quita el bloqueo de activación de un dispositivo iOS sin el id. de Apple y la contraseña del usuario. Cuando se omite el bloqueo de activación, el dispositivo activa de nuevo el bloqueo de activación cuando se inicia la aplicación Buscar mi iPhone. Omita el bloqueo de activación solo si tiene acceso físico al dispositivo.
 
-1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
+1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En la hoja **Intune**, elija **Dispositivos**.
-4. En la hoja **Dispositivos y grupos**, elija **Todos los dispositivos**.
-5. En la lista de dispositivos que administra, elija un dispositivo iOS supervisado y luego elija la acción de dispositivo remoto **Omitir bloqueo de activación**.
+4. En la hoja **Dispositivos**, pulse **Todos los dispositivos**.
+5. En la lista de dispositivos que administra, elija un dispositivo iOS supervisado, **Más** y, luego, la acción remota de dispositivo **Omisión del bloqueo de activación**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

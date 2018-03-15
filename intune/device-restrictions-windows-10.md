@@ -1,25 +1,26 @@
 ---
-title: "Configuración de restricciones de dispositivo de Intune para Windows 10"
-titlesuffix: Azure portal
-description: "Obtenga más información sobre la configuración de Intune que puede usar para controlar los ajustes y la funcionalidad de los dispositivos Windows 10."
+title: "Configuración de restricciones de dispositivos de Microsoft Intune para Windows 10"
+titlesuffix: 
+description: "Descubra las opciones de configuración de Microsoft Intune que puede usar para controlar la funcionalidad y la configuración de los dispositivos que ejecutan Windows 10."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 2/15/2018
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 128e16ad989293e168d2bb53d5974e479e09a000
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 861c971c98493f6adab78e6bc93d560bbc1d5243
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="windows-10-and-later-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos Windows 10 y versiones posteriores en Microsoft Intune
+#<a name="microsoft-intune-windows-10-and-later-device-restriction-settings"></a>Configuración de restricciones de Microsoft Intune de dispositivos Windows 10 y versiones posteriores
+En este artículo, se muestran todas las opciones de configuración de restricciones de dispositivos de Microsoft Intune que puede configurar para los dispositivos que ejecutan Windows 10.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -30,11 +31,7 @@ ms.lasthandoff: 02/19/2018
    - Esta configuración de directiva no se aplica si el equipo está unido a Azure Active Directory y la inscripción automática está habilitada. 
    - Esta configuración de directiva no se aplica a equipos que ejecuten Windows 10 Home.
 - **Instalación manual del certificado raíz (solo móviles)**: impide que el usuario instale manualmente certificados raíz y certificados CAP intermedios.
-- **Envío de datos de diagnóstico**: los valores posibles son:
-    - **Ninguno**: no se envían datos a Microsoft.
-    - **Básico**: se envía información limitada a Microsoft
-    - **Mejorado**: se envían datos de diagnóstico mejorados a Microsoft.
-    - **Completo** : envía los mismos datos que Mejorado, además de datos adicionales sobre el estado del dispositivo.
+
 - **Cámara**: permite o bloquea el uso de la cámara en el dispositivo.
 - **Sincronización de archivos de OneDrive**: bloquea la sincronización de archivos de OneDrive en el dispositivo.
 - **Almacenamiento extraíble**: especifica si se pueden usar dispositivos de almacenamiento externo, como tarjetas SD, con el dispositivo.
@@ -51,6 +48,7 @@ ms.lasthandoff: 02/19/2018
 - **Detección de dispositivos**: bloquea la detección de un dispositivo por parte de otros dispositivos.
 - **Conmutador de tareas (solo móviles)**: bloquea el conmutador de tareas en el dispositivo.
 - **Cuadro de diálogo de error de tarjeta SIM (solo móviles)**: impide que un mensaje de error se muestre en el dispositivo si no se detecta una tarjeta SIM.
+- **Área de trabajo de Ink**: impida que los usuarios accedan al área de trabajo de Ink. Cuando este valor no está configurado, se habilita el área de trabajo de Ink (se activa la característica) y el usuario puede usarla más allá de la pantalla de bloqueo.
 - **Reimplementación automática**: permite a los usuarios con derechos administrativos eliminar todos los datos de usuario y las opciones de configuración con **Ctrl + Win + R** en la pantalla de bloqueo del dispositivo. En este caso, el dispositivo se vuelve a configurar e inscribir automáticamente para la administración.
 
 
@@ -75,6 +73,9 @@ Para los dispositivos que ejecutan Windows 10 Mobile: si el inicio de sesión fa
 
 -   **Personalización de entrada**: no permite el uso de servicios de voz basados en la nube para Cortana, Dictado o aplicaciones de Microsoft Store. Si permite estos servicios, Microsoft puede recopilar datos de voz para mejorar el servicio.
 -   **Aceptación automática de los mensajes de consentimiento del usuario sobre emparejamiento y privacidad**: permite que Windows acepte automáticamente los mensajes de consentimiento sobre emparejamiento y privacidad al ejecutar las aplicaciones.
+- **Publicar las actividades del usuario**: establezca esta propiedad en **Bloquear** para evitar experiencias compartidas y la detección de recursos usados recientemente en el selector de tareas.
+- **Solo actividades locales**: establezca esta propiedad en **Bloquear** para evitar experiencias compartidas y la detección de recursos usados recientemente en el selector de tareas según la actividad local únicamente.
+
 
 Puede definir la información a la que pueden tener acceso todas las aplicaciones del dispositivo. Puede definir excepciones para cada aplicación mediante **excepciones de privacidad de cada aplicación**.
 
@@ -130,7 +131,7 @@ Puede agregar aplicaciones que deben tener un comportamiento de privacidad difer
 ## <a name="locked-screen-experience"></a>Experiencia de pantalla bloqueada
 
 - **Notificaciones del centro de actividades (solo móviles)**: permite que las notificaciones del centro de actividades aparezcan en la pantalla de bloqueo del dispositivo (solo Windows 10 Mobile).
-- **Dirección URL de imagen de pantalla bloqueada (solo escritorio)**: especifica la dirección URL de una imagen en formato PNG, JPG o JPEG que se usará como papel tapiz de la pantalla de bloqueo de Windows. Los usuarios no pueden cambiar esto.
+- **URL de imagen de pantalla de bloqueo (solo equipos de escritorio)**: especifica la URL de una imagen en formato JPEG que se usará como papel tapiz de la pantalla de bloqueo de Windows. Los usuarios no pueden cambiar esto.
 -   **Tiempo de espera de la pantalla configurable por el usuario (solo dispositivos móviles)**: permite que los usuarios configuren la cantidad de tiempo 
 -   **Cortana en pantalla bloqueada (solo escritorio)**: no permite que el usuario interactúe con Cortana cuando el dispositivo está en la pantalla de bloqueo (solo para equipos de escritorio de Windows 10).
 -   **Notificaciones del sistema en pantalla bloqueada**: impide que los mensajes de alerta se muestren en la pantalla de bloqueo del dispositivo.
@@ -154,32 +155,34 @@ Puede agregar aplicaciones que deben tener un comportamiento de privacidad difer
 
 
 
-## <a name="edge-browser"></a>Explorador Edge
+## <a name="edge-browser"></a>Explorador Microsoft Edge
 
 -   **Explorador de Microsoft Edge (solo móvil)**: permite el uso del explorador web Edge en el dispositivo.
--   **Lista desplegable de la barra de direcciones (solo escritorio)**: use esto para impedir que Microsoft Edge muestre una lista de sugerencias en una lista desplegable cuando escriba. Esto ayuda a minimizar el uso del ancho de banda de red entre Microsoft Edge y servicios Microsoft.
+-   **Lista desplegable de la barra de direcciones (solo escritorio)**: use esto para impedir que Edge muestre una lista de sugerencias en una lista desplegable cuando escriba. Esto ayuda a minimizar el uso del ancho de banda de red entre Microsoft Edge y servicios Microsoft.
 -   **Sincronizar favoritos entre exploradores de Microsoft (solo escritorio)**: permite que Windows sincronice los favoritos entre Internet Explorer y Microsoft Edge.
--   **Enviar encabezados de no seguimiento**: configura el explorador Microsoft Edge para que envíe encabezados de no seguimiento a sitios web que visitan los usuarios.
+-   **Enviar encabezados de no seguimiento**: configura el explorador Edge para que envíe encabezados de no seguimiento a sitios web que visitan los usuarios.
 -   **Cookies**: permite que el explorador guarde cookies de Internet en el dispositivo.
--   **JavaScript**: permite la ejecución de scripts, como JavaScript, en el explorador Microsoft Edge.
+-   **JavaScript**: permite la ejecución de scripts, como JavaScript, en el explorador Edge.
 -   **Ventanas emergentes**: bloquea las ventanas emergentes en el explorador (solo se aplica a Windows 10 Escritorio).
 -   **Search suggestions** (Sugerencias de búsqueda): permite que el motor de búsqueda sugiera sitios a medida que se escriben las frases de búsqueda.
 -   **Enviar el tráfico de la intranet a Internet Explorer**: permite a los usuarios abrir sitios web de intranet en Internet Explorer (solo Windows 10 Escritorio).
 -   **Rellenar automáticamente**: permite a los usuarios cambiar la configuración de Autocompletar en el explorador (solo Windows 10 Escritorio).
--   **Administrador de contraseñas**: habilita o deshabilita la característica de Administrador de contraseñas de Edge.
+-   **Administrador de contraseñas**: habilita o deshabilita la característica de Administrador de contraseñas de Microsoft Edge.
 -   **Ubicación de la lista de sitios del modo de empresa**: especifica dónde encontrar la lista de sitios web que se abren en modo de empresa. Los usuarios no pueden editar esta lista.<br>(Solo Windows 10 Escritorio)
 -   **Herramientas de desarrollo**: impiden que el usuario final abra las herramientas de desarrollo de Microsoft Edge.
 -   **Extensiones**: permiten que el usuario final instale extensiones de Microsoft Edge en el dispositivo.
 -   **Exploración de InPrivate**: impide que el usuario final abra sesiones de exploración de InPrivate.
--   **Mostrar la página de la primera ejecución**: impide que la página de introducción aparezca la primera vez que ejecuta Microsoft Edge.
+-   **Mostrar la página de la primera ejecución**: impide que la página de introducción aparezca la primera vez que ejecuta Edge.
     -   **URL de primera ejecución**: especifica la URL de una página que se muestra la primera vez que un usuario ejecuta Microsoft Edge (solo Windows 10 Mobile).
 -   **Páginas principales**: agrega una lista de sitios que quiere usar como páginas principales en el explorador Microsoft Edge (solo escritorio).
 -   **Cambia a la página de inicio**: permite que los usuarios cambien las páginas de inicio que se muestran cuando se abre Microsoft Edge. Use la configuración de páginas principales para crear la página o enumerar las páginas que se abren cuando se inicia Microsoft Edge.
 -   **Bloquear acceso a about:flags**: impide que el usuario final tenga acceso a la página about:flags de Microsoft Edge que contiene la configuración experimental y de desarrollador.
 -   **Dirección IP de localhost para WebRtc**: impide que la dirección IP de localhost de los usuarios se muestre cuando se hacen llamadas telefónicas a través del protocolo WebRtc.
 -   **Motor de búsqueda predeterminado**: especifica el motor de búsqueda predeterminado que se usará. Los usuarios finales pueden cambiar este valor en cualquier momento.
--   **Borrar datos de navegación al salir**: borra el historial y los datos de navegación cuando el usuario sale de Microsoft Edge.
+-   **Borrar datos de navegación al salir**: borra el historial y los datos de navegación cuando el usuario sale de Edge.
 -   **Recopilación de datos para iconos dinámicos**: impide que Windows recopile información de iconos dinámicos cuando los usuarios anclan un sitio al menú de inicio de Microsoft Edge.
+-  **Lista de favoritos**: define la ruta de acceso al archivo de favoritos. Por ejemplo, http://contoso.com/favorites.html.
+-  **Restringir los cambios a Favoritos**: establezca este valor en **Bloquear** para impedir que los usuarios agreguen, importen, ordenen o modifiquen la lista de favoritos. 
 
 ## <a name="windows-defender-smart-screen"></a>SmartScreen de Windows Defender
 

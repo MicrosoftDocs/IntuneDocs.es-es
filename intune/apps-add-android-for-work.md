@@ -1,12 +1,12 @@
 ---
 title: "Asignación de aplicaciones a dispositivos Android for Work"
-titlesuffix: Azure portal
-description: "Utilice este tema para sincronizar y después asignar aplicaciones para dispositivos Android for Work desde Google Play for Work Store."
+titlesuffix: Microsoft Intune
+description: "Descubra cómo sincronizar y asignar aplicaciones para dispositivos Android for Work desde Google Play for Work Store."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/13/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,17 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 248dcc978b5324733d5d640230aba2b6db1a2c62
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6a0b488120ed62031f8af5b8b65d9e90ea6d252b
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Asignación de aplicaciones para dispositivos Android for Work con Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Puede asignar aplicaciones para dispositivos Android for Work de forma diferente a cuando las asigna en dispositivos Android estándar. Todas las aplicaciones que instale en Android for Work proceden de Google Play for Work Store. Inicie sesión en la tienda, busque las aplicaciones que desee y apruébelas.
-La aplicación aparecerá en el nodo **Aplicaciones con licencia** de Azure Portal. Desde aquí, puede administrar la asignación de la aplicación de la misma manera que asignaría cualquier otra aplicación.
+Android for Work es un programa para dispositivos Android. Todas las aplicaciones que se instalan en dispositivos Android for Work proceden de Google Play for Work Store. Puede asignar aplicaciones para dispositivos Android for Work de forma diferente a cuando las asigna en dispositivos Android estándar. Inicie sesión en la tienda, busque las aplicaciones que desee y apruébelas. La aplicación aparecerá en el nodo **Aplicaciones con licencia** de Azure Portal. Desde aquí, puede administrar la asignación de la aplicación de la misma manera que asignaría cualquier otra aplicación.
 
 Además, si ha creado sus propias aplicaciones de línea de negocio (LOB), puede asignarlas como sigue:
 - Suscríbase a una cuenta de Google Developer, que le permite publicar las aplicaciones en un área privada en Google Play Store.

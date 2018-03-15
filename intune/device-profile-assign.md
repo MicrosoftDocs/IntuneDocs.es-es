@@ -1,12 +1,11 @@
 ---
-title: "Cómo asignar perfiles de dispositivo con Intune"
-titlesuffix: Azure portal
-description: Cuando haya creado un perfil de dispositivo de Intune, use este tema para aprender a asignarlo a los dispositivos.
+title: "Asignación de perfiles de dispositivo en Microsoft Intune - Azure | Microsoft Docs"
+description: "Use Azure Portal para asignar perfiles de dispositivo y directivas a los usuarios y dispositivos, y obtenga información sobre cómo excluir grupos de una asignación de perfil en Microsoft InTune"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 07/05/2017
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,45 +14,44 @@ ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ef03eeab32050559d34d3d7d580c06c21f5ffb05
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 512b9a0506241f87b5e0c19cf19cd6fe629fb291
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="how-to-assign-microsoft-intune-device-profiles"></a>Asignación de perfiles de dispositivo de Microsoft Intune
+# <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Asignación de perfiles de dispositivo en Microsoft Intune 
+
+Después de crear un perfil, puede asignarlo a grupos de Azure Active Directory.
 
 ## <a name="assign-a-device-profile"></a>Asignar un perfil de dispositivo
 
-1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
-3. En la hoja **Intune**, elija **Configuración del dispositivo**.
-1. En la hoja **Configuración del dispositivo**, elija **Administrar** > **Perfiles**.
-2. En la hoja de lista de perfiles, elija el perfil que quiere administrar y, luego, en la hoja <*nombre del perfil*> **Informes**, elija **Administrar** > **Asignaciones**.
-3. En la siguiente hoja, elija **Incluir** (para incluir grupos) o **Excluir** (para excluir grupos) y luego **Seleccionar grupos**.
-![Incluir y excluir grupos de una asignación de perfil.](./media/group-include-exclude.png)
-4. En la hoja **Seleccionar grupos**, elija los grupos de Azure AD que quiere incluir en la asignación o excluir de ella. Para seleccionar varios, grupos, mantenga presionada la tecla **CTRL**.
-4. Cuando haya terminado, en la hoja **Seleccionar grupos**, elija **Seleccionar**.
+1. En [Azure Portal](https://portal.azure.com), seleccione **All services** (Todos los servicios) y busque **Microsoft Intune**.
+2. En **Microsoft Intune**, seleccione **Configuración del dispositivo** y **Perfiles**. 
+3. En la lista de perfiles, seleccione el que quiera asignar y, luego, **Asignaciones**.
+4. Elija **Incluir** grupos o **Excluir** grupos y, después, **Seleccionar grupos**:  
 
+    ![Incluir y excluir grupos de una asignación de perfil](./media/group-include-exclude.png)
 
+5. Al seleccionar los grupos, se elige un grupo de Azure Active Directory. Para seleccionar varios grupos, mantenga presionada la tecla **CTRL**.
+6. Cuando termine, seleccione **Guardar** para guardar los cambios.
 
-## <a name="how-to-exclude-groups-from-a-device-profile-assignment"></a>Cómo excluir grupos de una asignación de perfil de dispositivo
+## <a name="exclude-groups-from-a-profile-assignment"></a>Excluir grupos de una asignación de perfil
 
 Los perfiles de configuración de dispositivo de Intune permiten excluir grupos de una asignación de directiva. Por ejemplo, puede asignar un perfil de dispositivo al grupo **Todos los usuarios corporativos**, pero excluir a todos los miembros del grupo **Personal de administración sénior**.
 
-Al excluir grupos de una asignación, excluya solo grupos de usuarios o dispositivos, no una combinación de grupos. Intune no tiene en cuenta ninguna asociación de usuario a dispositivo al excluir grupos. La inclusión de grupos de usuarios a la vez que se excluyen grupos de dispositivos no es probable que genere los resultados que necesita. Si se usan grupos mixtos o hay otros conflictos, la inclusión tiene prioridad sobre la exclusión.
+Al excluir grupos de una asignación, se excluyen solo los usuarios, o solo grupos de dispositivos (no una combinación de grupos), ya que Intune no considera ninguna relación de usuario a dispositivo. Es posible que la inclusión de grupos de usuarios a la vez que se excluyen grupos de dispositivos no genere los resultados que espera. Si se usan grupos mixtos o hay otros conflictos, la inclusión tiene prioridad sobre la exclusión.
 
 Por ejemplo, quiere asignar un perfil de dispositivo a todos los dispositivos de la organización, excepto los de pantalla completa. Incluye el grupo **Todos los usuarios**, pero excluye al grupo **Todos los dispositivos**.
 
 En este caso, todos los usuarios y sus dispositivos obtienen la directiva, aunque el dispositivo del usuario forme parte del grupo **Todos los dispositivos**. 
 
-La exclusión solo evalúa a los miembros directos de los grupos y no incluye a los dispositivos que están asociados a un usuario. Pero los dispositivos que no tienen un usuario no obtienen la directiva porque no tienen ninguna asociación al grupo **Todos los usuarios**. 
+La exclusión solo busca los miembros directos de los grupos y no incluye los dispositivos que están asociados a un usuario. En cambio, los dispositivos que no tienen un usuario no obtienen la directiva. Esto ocurre porque esos dispositivos no tienen ninguna relación con el grupo **Todos los usuarios**. 
 
-Si incluye **Todos los dispositivos** pero excluye **Todos los usuarios**, todos los dispositivos reciben la directiva. En este caso, la intención es excluir aquellos dispositivos que tienen un usuario asociado desde esta directiva. Pero no se consigue porque la característica de exclusión solo compara miembros de grupo directos. 
+Si incluye **Todos los dispositivos** y excluye **Todos los usuarios**, todos los dispositivos reciben la directiva. En este escenario, la intención es excluir aquellos dispositivos que tienen un usuario asociado de esta directiva. En cambio, no se excluyen los dispositivos porque la exclusión solo compara miembros de grupo directos. 
 
->[!Tip]
->Las exclusiones no están disponibles actualmente para las directivas de cumplimiento ni la asignación de aplicaciones. Para excluir miembros de una asignación, puede usar las opciones de asignación Disponible y No aplicable. Por ejemplo, asigne una aplicación a **Todos los usuarios corporativos** con la opción **Disponible** y a **Personal de administración sénior** con la opción **No aplicable**. La aplicación se asigna a todos los usuarios *excepto* a los del grupo **Personal de administración sénior**. Si asigna la aplicación a **Todos los usuarios corporativos** con la opción **Obligatorio**, los usuarios del grupo **Personal de administración sénior** no se excluyen.
- 
+>[!TIP]
+>Las exclusiones no están disponibles para las directivas de cumplimiento ni la asignación de aplicaciones. Para excluir miembros de una asignación, puede usar las asignaciones **Disponible** y **No aplicable**. Por ejemplo, asigne una aplicación a **Todos los usuarios corporativos** con la opción **Disponible** y asigne la aplicación a **Personal de administración sénior** con la opción **No aplicable**. La aplicación se asigna a todos los usuarios *excepto* a los del grupo **Personal de administración sénior**. Si asigna la aplicación a **Todos los usuarios corporativos** con la opción **Obligatorio**, los usuarios del grupo **Personal de administración sénior** también se incluyen.
     
 ## <a name="next-steps"></a>Pasos siguientes
-Consulte [Supervisión de perfiles de dispositivo](device-profile-monitor.md) para obtener información que le ayude a supervisar las asignaciones de perfil de dispositivo.
+Consulte [Cómo supervisar perfiles de dispositivo](device-profile-monitor.md) para obtener instrucciones a fin de supervisar las asignaciones de perfil de dispositivo.

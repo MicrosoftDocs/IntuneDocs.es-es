@@ -1,6 +1,6 @@
 ---
-title: "Agregar directivas de configuración de aplicaciones para dispositivos iOS administrados | Microsoft Docs"
-titlesuffix: Azure portal
+title: "Agregar directivas de configuración de aplicaciones para dispositivos iOS administrados"
+titlesuffix: Microsoft Intune
 description: "Obtenga más información sobre cómo usar directivas de configuración de aplicaciones para proporcionar datos de configuración a una aplicación de iOS cuando esta se ejecuta."
 keywords: 
 author: erikre
@@ -15,11 +15,11 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b64d8b60a4c577acc2f6ef161f6de37ac529e7ac
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: bdaec3150062dce5da5566fa9534425e11f3cdec
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Agregar directivas de configuración de aplicaciones para dispositivos iOS administrados
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/03/2018
 
 Use las directivas de configuración de aplicaciones de Microsoft Intune para proporcionar valores de configuración que se emplearán cuando los usuarios ejecuten una aplicación para iOS. No asigne estas directivas directamente a usuarios y dispositivos. Asocie la directiva con una aplicación y, a continuación, asigne la aplicación. La configuración de directivas se usa cada vez que la aplicación la comprueba, que suele ser la primera vez que se ejecuta.
 
-Puede asignar una directiva de configuración de aplicación a un grupo de usuarios y dispositivos mediante una combinación de asignaciones de inclusión y exclusión. Tras agregar una directiva de configuración de aplicación, podrá establecer las asignaciones de la directiva de configuración de aplicación. Al establecer las asignaciones para la directiva, puede elegir si quiere incluir o excluir los grupos de usuarios a los que se aplicará la directiva. Si decide incluir uno o varios grupos, puede optar por seleccionar grupos específicos para incluir o seleccionar los grupos integrados. Los grupos integrados incluyen **Todos los usuarios**, **Todos los dispositivos** y **Todos los usuarios + todos los dispositivos**. 
+Puede asignar una directiva de configuración de aplicación a un grupo de usuarios y dispositivos mediante una combinación de asignaciones de inclusión y exclusión. Tras agregar una directiva de configuración de aplicación, podrá establecer las asignaciones de la directiva de configuración de aplicación. Al establecer las asignaciones de la directiva, puede elegir si quiere incluir o excluir los grupos de usuarios a los que se aplica la directiva. Si decide incluir uno o varios grupos, puede optar por seleccionar grupos específicos para incluir o seleccionar los grupos integrados. Los grupos integrados incluyen **Todos los usuarios**, **Todos los dispositivos** y **Todos los usuarios + todos los dispositivos**. 
 
 >[!NOTE]
 >Intune ofrece los grupos creados previamente **Todos los usuarios** y **Todos los dispositivos** en la consola con las optimizaciones integradas para su comodidad. Es muy recomendable utilizar estos grupos para segmentar todos los usuarios y todos los dispositivos en lugar de usar cualquier grupo "Todos los usuarios" o "Todos los dispositivos" que haya podido crear.
@@ -44,38 +44,38 @@ Una vez haya seleccionado los grupos incluidos para la directiva de configuraci�
 
 ## <a name="create-an-app-configuration-policy"></a>Crear una directiva de configuración de aplicaciones
 
-1. Inicie sesión en Azure Portal.
-2. Elija **More Services** >  (Más servicios) **Supervisión y administración** + **Intune**.
+1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. Elija la carga de trabajo **Aplicaciones móviles**.
 4. En el grupo **Administrar**, elija **Directivas de configuración de aplicaciones** y **Agregar**.
 5. Especifique los siguientes detalles:
     - **Nombre**<br>
-      Nombre del perfil que aparecerá en Azure Portal.
+      Nombre del perfil que aparece en Azure Portal.
     - **Descripción**<br>
-      Descripción del perfil que aparecerá en Azure Portal.
+      Descripción del perfil que aparece en Azure Portal.
     - **Tipo de inscripción del dispositivo**<br>
       Elija **Dispositivos administrados**.
 6. En **Plataforma**, seleccione **iOS**.
-7.  Elija **Aplicación asociada**. Luego, en la hoja **Aplicación asociada**, elija la aplicación administrada a la que quiera aplicar la configuración.
-8.  En la hoja **Agregar directiva de configuración**, elija **Opciones de configuración**.
+7.  Elija **Aplicación asociada**. Luego, en el panel **Aplicación asociada**, elija la aplicación administrada a la que quiera aplicar la configuración y seleccione **Aceptar**.
+8.  En el panel **Agregar directiva de configuración**, elija **Opciones de configuración**.
 9. Seleccione **Formato de opciones de configuración**. Seleccione una de las acciones siguientes:
     - **[Usar diseñador de configuraciones](#use-configuration-designer)**
     - **[Especificar datos XML](#enter-xml-data)**
-10. Cuando haya agregado la información XML, elija **Aceptar**y elija **Agregar** para agregar la directiva de configuración. Se mostrará la hoja de introducción de la directiva de configuración.
+10. Cuando haya agregado la información XML, elija **Aceptar**y elija **Agregar** para agregar la directiva de configuración. Se muestra el panel de introducción de la directiva de configuración.
 11. Seleccione **Asignaciones** para mostrar las opciones de inclusión y exclusión. 
 
-    ![Asignaciones de directivas](./media/app-config-policy01.png)
+    ![Captura de pantalla de la pestaña Incluir de la hoja Asignaciones de la directiva](./media/app-config-policy01.png)
 12. Seleccione **Todos los usuarios** en la pestaña **Incluir**.
 
-    ![Asignaciones de directivas: todos los usuarios](./media/app-config-policy02.png)
+    ![Captura de pantalla de la opción Todos los usuarios de la lista desplegable de la hoja Asignaciones de la directiva](./media/app-config-policy02.png)
 13. Seleccione la pestaña **Excluir**. 
-14. Haga clic en **Seleccionar grupos para excluir** para mostrar la hoja relacionada.
+14. Haga clic en **Seleccionar grupos para excluir** para mostrar el panel relacionado.
 
-    ![Asignaciones de directivas: seleccionar grupos para excluir](./media/app-config-policy03.png)
+    ![Captura de pantalla de la hoja Seleccionar grupos para excluir de la página Asignaciones de la directiva](./media/app-config-policy03.png)
 15. Seleccione los grupos que quiera excluir y después haga clic en **Seleccionar**.
 
     >[!NOTE]
-    >Al agregar un grupo, si ya se ha incluido otro a un tipo de asignación determinado, este se preseleccionará y no se podrá cambiar por otros tipos de asignación de inclusión. Por lo tanto, ese grupo que se ha usado no se puede usar como un grupo de exclusión.
+    >Al agregar un grupo, si ya se ha incluido otro a un tipo de asignación determinado, este se preselecciona y no se puede cambiar por otros tipos de asignación de inclusión. Por lo tanto, ese grupo que se ha usado no se puede usar como un grupo de exclusión.
 16. Haga clic en **Guardar**.
 
 ## <a name="use-configuration-designer"></a>Uso del Diseñador de configuración

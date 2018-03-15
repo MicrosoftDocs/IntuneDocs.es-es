@@ -1,27 +1,26 @@
 ---
-title: "Configuración de restricciones de dispositivos de Intune para iOS"
-titleSuffix: Azure portal
-description: "Conozca la configuración de Intune que puede usar para controlar los valores de configuración y la funcionalidad de los dispositivos iOS."
+title: "Configuración de restricciones de dispositivos de Microsoft Intune para iOS"
+titleSuffix: 
+description: "Descubra las opciones de configuración de Intune que puede usar para controlar la funcionalidad y la configuración de los dispositivos que ejecutan iOS."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 11/03/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 73590192-54ca-4833-9f1d-83e1b654399f
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b450becb45aea7ba5aa6ac2b6798e2062c08b4f2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: bc53a7a6a4c961a649d01f23f30c59ff4dc90fe2
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="ios-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos iOS en Microsoft Intune
+# <a name="microsoft-intune-ios-device-restriction-settings"></a>Configuración de restricciones de dispositivos iOS de Microsoft Intune
+En este artículo se muestran todas las opciones de configuración de restricciones de dispositivos de Microsoft Intune que puede configurar para los dispositivos que ejecutan iOS.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -95,7 +94,7 @@ El modo supervisado de iOS solo se puede habilitar durante la configuración ini
 ## <a name="password"></a>Contraseña
 -   **Contraseña**: exige que el usuario final escriba una contraseña para acceder al dispositivo.
     -   **Contraseñas sencillas**: permite contraseñas sencillas, como 0000 y 1234.
-    -   **Tipo de contraseña necesaria**: especifica el tipo de contraseña que es necesaria, como solo numérica o alfanumérica.
+    -   **Tipo de contraseña obligatoria**: especifica el tipo de contraseña que es necesaria, como solo numérica o alfanumérica.
     -   **Número de caracteres no alfanuméricos en la contraseña**: especifica el número de caracteres de símbolos (como **#** o **@**) que se deben incluir en la contraseña.
     -   **Minimum password length** (Longitud mínima de contraseña): especifica el número mínimo de caracteres en la contraseña.
     -   **Número de errores de inicio de sesión antes de borrar el dispositivo**: especifique el número de intentos de inicios de sesión erróneos antes de que esta configuración borre el dispositivo.
@@ -107,7 +106,7 @@ El modo supervisado de iOS solo se puede habilitar durante la configuración ini
 - **Modificación del código de acceso (solo supervisado)**: impide que el código de acceso se cambie, se agregue o se quite.
     - **Modificación de huella digital (solo con supervisión)**: impide que el usuario cambie, agregue o quite la configuración de TouchID.
 
-<sup>1</sup>Al configurar los valores **Máximo de minutos de inactividad hasta que se bloquea la pantalla** y **Máximo de minutos tras bloqueo de pantalla antes de solicitar la contraseña**, se aplican en secuencia. Por ejemplo, si establece el valor para ambas opciones en **5** minutos, la pantalla se apagará automáticamente transcurridos 5 minutos y el dispositivo se bloqueará pasados 5 minutos más. Sin embargo, si el usuario apaga la pantalla manualmente, la segunda opción se aplica inmediatamente. En el mismo ejemplo, una vez que el usuario apague la pantalla, el dispositivo se bloqueará 5 minutos más tarde.
+<sup>1</sup>Al configurar los valores **Máximo de minutos de inactividad hasta que se bloquea la pantalla** y **Máximo de minutos tras bloqueo de pantalla antes de solicitar la contraseña**, se aplican en secuencia. Por ejemplo, si establece el valor para ambas opciones en **5** minutos, la pantalla se apagará automáticamente transcurridos cinco minutos y el dispositivo se bloqueará pasados cinco minutos más. Sin embargo, si el usuario apaga la pantalla manualmente, la segunda opción se aplica inmediatamente. En el mismo ejemplo, una vez que el usuario apague la pantalla, el dispositivo se bloqueará cinco minutos más tarde.
 
 ## <a name="locked-screen-experience"></a>Experiencia de pantalla bloqueada
 
@@ -133,7 +132,7 @@ El modo supervisado de iOS solo se puede habilitar durante la configuración ini
 -   **Game Center (solo supervisado)**: impide o permite el uso de la aplicación Game Center.
 -   **Juegos multijugador (solo supervisado)**: permite al usuario jugar a juegos multijugador en el dispositivo.
 -   **Región de clasificación**: elija la región de clasificación para la que quiere configurar descargas permitidas y luego elija la clasificación permitida para **Películas** y **Programas de TV**.
--   **Aplicaciones**: elija la clasificación por edades permitida de las aplicaciones que los usuarios podrán descargar. También puede elegir **Permitir todas las aplicaciones**.
+-   **Aplicaciones**: elija la clasificación por edades permitida de las aplicaciones que los usuarios pueden descargar. También puede elegir **Permitir todas las aplicaciones**.
 
 ## <a name="built-in-apps"></a>Aplicaciones integradas
 
@@ -156,8 +155,8 @@ El modo supervisado de iOS solo se puede habilitar durante la configuración ini
 
 En la lista de aplicaciones restringidas, puede configurar una de las listas siguientes:
 
-- **Aplicaciones prohibidas**: aplicaciones (no administradas por Intune) que los usuarios no pueden instalar ni ejecutar. No se impide que los usuarios instalen una aplicación prohibida, pero si lo hacen, recibirá una notificación.
-- **Aplicaciones aprobadas**: aplicaciones que los usuarios pueden instalar. Los usuarios no deben instalar aplicaciones que no se muestren en la lista. Las aplicaciones que se administran mediante Intune están permitidas automáticamente. No se impide que los usuarios instalen una aplicación que no esté en la lista aprobada pero, si lo hace, usted recibirá una notificación.
+- **Aplicaciones prohibidas**: aplicaciones (no administradas por Intune) que los usuarios no pueden instalar ni ejecutar. Los usuarios pueden instalar una aplicación prohibida, aunque, si lo hacen, usted recibirá una notificación.
+- **Aplicaciones aprobadas**: aplicaciones que los usuarios pueden instalar. Los usuarios no deben instalar aplicaciones que no se muestren en la lista. Las aplicaciones que se administran mediante Intune están permitidas automáticamente. Los usuarios pueden instalar una aplicación que no esté en la lista de aprobadas, aunque, si lo hacen, usted recibirá una notificación.
 
 Para configurar la lista, haga clic en **Agregar** y especifique un nombre de su elección. Opcionalmente, puede indicar el editor de la aplicación y la dirección URL de la aplicación en la tienda de aplicaciones.
 
@@ -182,8 +181,8 @@ También puede hacer clic en **Importar** para rellenar la lista a partir de un 
 
 En la lista de aplicaciones visibles u ocultas, puede configurar una de las siguientes listas (requiere dispositivos supervisados que ejecuten iOS 9.3 o posterior).
 
-**Aplicaciones ocultas** especifique una lista de aplicaciones que estarán ocultas para los usuarios. Los usuarios no pueden ver ni iniciar estas aplicaciones.
-**Aplicaciones visibles**: especifique una lista de aplicaciones que los usuarios puedan ver e iniciar. No se puede ver ni iniciar ninguna otra aplicación.
+Lista **Aplicaciones ocultas**: especifique una lista de aplicaciones que están ocultas para los usuarios. Los usuarios no pueden ver ni iniciar estas aplicaciones.
+Lista **Aplicaciones visibles**: especifique una lista de aplicaciones que los usuarios puedan ver e iniciar. No se puede ver ni iniciar ninguna otra aplicación.
 
 Para configurar la lista, haga clic en **Agregar** y especifique un nombre de su elección. Opcionalmente, puede indicar el editor de la aplicación y la dirección URL de la aplicación en la tienda de aplicaciones.
 
@@ -238,9 +237,9 @@ También puede hacer clic en **Importar** para rellenar la lista a partir de un 
 ## <a name="cloud-and-storage"></a>Nube y almacenamiento
 -   **Copia de seguridad en iCloud**: permite al usuario realizar una copia de seguridad del dispositivo en iCloud.
 -   **Sincronización del documento con iCloud (solo supervisado)**: permite la sincronización de documentos y de clave-valor con el espacio de almacenamiento de iCloud.
--   **Sincronización de Photo Stream en iCloud**: permite que los usuarios habiliten **Mis fotos en streaming** en su dispositivo para que las fotos se sincronicen con iCloud y está disponible en todos los dispositivos de usuario.
+-   **Sincronización de Photo Stream en iCloud**: permite que los usuarios habiliten **Mis fotos en streaming** en su dispositivo para que las fotos se sincronicen con iCloud y estén disponibles en todos los dispositivos de los usuarios.
 -   **Copia de seguridad cifrada**: exige el cifrado de cualquier copia de seguridad del dispositivo.
--   **Fototeca de iCloud**: si se establece en **No**, deshabilita el uso de la Fototeca de iCloud, que permite a los usuarios almacenar fotos y vídeos en la nube.    Las fotos que no se hayan descargado completamente de la Fototeca de iCloud al dispositivo se quitarán de este si esta opción se establece en **No**.
+-   **Fototeca de iCloud**: si se establece en **No**, se deshabilita el uso de la fototeca de iCloud, que permite a los usuarios almacenar fotos y vídeos en la nube.   Las fotos que no se hayan descargado completamente de la fototeca de iCloud al dispositivo se quitan de este si esta opción se establece en **No**.
 -   **Sincronización de aplicaciones administradas con la nube**: permite que las aplicaciones que se administran con Intune sincronicen los datos con la cuenta de iCloud del usuario.
 -   **Fotos en streaming compartidas**: establezca en **No** para deshabilitar **fotos compartidas en iCloud** en el dispositivo.
 -   **Continuación de la actividad**: permite que el usuario continúe el trabajo que inició en un dispositivo iOS en otro dispositivo iOS o macOS (Handoff).
@@ -251,7 +250,7 @@ Use esta opción para configurar dispositivos iOS de modo que ejecuten aplicacio
 
 ### <a name="settings"></a>Configuración
 
-- **Nombre de la aplicación**: escriba el nombre de la aplicación tal como aparecerá en la lista de aplicaciones de esta hoja.
+- **Nombre de la aplicación**: escriba el nombre de la aplicación tal como aparece en la lista de aplicaciones de esta hoja.
 - **Identificador del paquete de aplicaciones**: escriba el identificador del paquete de la aplicación. Si necesita ayuda, consulte **Bundle ID reference for built-in iOS apps** (Referencia de identificador de lote para aplicaciones iOS integradas) de este tema.
 
 Una vez que especifique el nombre de cada aplicación y cada identificador de paquete, elija **Agregar** para anexarlo a la lista.
@@ -308,7 +307,7 @@ En esta lista se muestra el identificador de lote de algunas aplicaciones iOS co
 
 
 ## <a name="kiosk-supervised-only"></a>Pantalla completa (solo supervisado)
--   **Aplicación que se ejecuta en modo de pantalla completa**: elija **Aplicación administrada** para seleccionar una aplicación que haya agregado a Intune, o **Aplicación de la Tienda** para especificar la dirección URL a una aplicación de la tienda. No se podrá ejecutar ninguna otra aplicación en el dispositivo. Lea "Cómo especificar las direcciones URL de tiendas de aplicaciones" más adelante en este tema para obtener más ayuda.
+-   **Aplicación que se ejecuta en modo de pantalla completa**: elija **Aplicación administrada** para seleccionar una aplicación que haya agregado a Intune, o **Aplicación de la Tienda** para especificar la dirección URL a una aplicación de la tienda. Ninguna otra aplicación puede ejecutarse en el dispositivo. Lea "Cómo especificar las direcciones URL de tiendas de aplicaciones" más adelante en este tema para obtener más ayuda.
     -   **Assistive touch**: habilita o deshabilita la configuración de accesibilidad **Assistive Touch**, que ayuda al usuario a realizar gestos en pantalla que podrían resultarle difíciles.
     -   **Invertir colores**: habilita o deshabilita la configuración de accesibilidad Invertir colores, que ajusta la pantalla para ayudar a los usuarios con discapacidades visuales.
     -   **Audio mono**: habilita o deshabilita la configuración de accesibilidad Audio mono.
@@ -343,12 +342,12 @@ En esta lista se muestra el identificador de lote de algunas aplicaciones iOS co
 
 ### <a name="unmarked-email-domains"></a>Dominios de correo electrónico no marcados
 
-En el campo **Email Domain URL** (Dirección URL de dominio de correo electrónico), agregue una o más direcciones URL a la lista. Cuando los usuarios finales reciben un correo electrónico de un dominio distinto del configurado, el correo electrónico se marcará como correo electrónico no de confianza en la aplicación de correo iOS.
+En el campo **Email Domain URL** (Dirección URL de dominio de correo electrónico), agregue una o más direcciones URL a la lista. Cuando los usuarios finales reciben un correo electrónico de un dominio distinto de los que ha configurado, el correo electrónico se marca como correo electrónico de no confianza en la aplicación Mail de iOS.
 
 
 ### <a name="managed-web-domains"></a>Dominios web administrados
 
-En el campo **Web Domain URL** (Dirección URL de dominio web), agregue una o más direcciones URL a la lista. Los documentos que se descarguen de los dominios que especifica se considerarán administrados. Esta configuración solo se aplica a los documentos que se descargan con el explorador Safari.
+En el campo **Web Domain URL** (Dirección URL de dominio web), agregue una o más direcciones URL a la lista. Los documentos que se descarguen de los dominios que especifica se consideran administrados. Esta configuración solo se aplica a los documentos que se descargan con el explorador Safari.
 
 
 ### <a name="safari-password-autofill-domains"></a>Dominios de relleno automático de contraseña de Safari

@@ -3,8 +3,8 @@ title: Conector MTD de Zimperium con Intune
 titleSuffix: Intune on Azure
 description: "Integración del conector de Zimperium con Intune"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 12/29/2017
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 975d8d84-792a-41ad-925a-4a7f1ae4dcaf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f26cf20b4e1168fbced1df88886343f41824158
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: ec93d2821150a67faa3c8b3c34e040e62ee43a3e
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Conector Mobile Threat Defense de Zimperium con Intune
 
@@ -29,7 +29,7 @@ Se pueden configurar directivas de acceso condicional en función de la evaluaci
 
 ## <a name="how-do-intune-and-zimperium-help-protect-your-company-resources"></a>¿Cómo ayudan Intune y Zimperium a proteger los recursos de la empresa?
 
-La aplicación Zimperium para Android e iOS capta el sistema de archivos, la pila de red y la telemetría de aplicaciones y dispositivos cuando está disponible. Después, envía los datos de telemetría al servicio en la nube de Zimperium para evaluar el riesgo del dispositivo frente a las amenazas móviles.
+La aplicación Zimperium para iOS y Android capta el sistema de archivos, la pila de red, el dispositivo y la telemetría de aplicaciones cuando está disponible. Después, envía los datos de telemetría al servicio en la nube de Zimperium para evaluar el riesgo del dispositivo frente a las amenazas móviles.
 
 La directiva de cumplimiento de dispositivos de Intune incluye una regla para Mobile Threat Defense de Zimperium que se basa en la evaluación del riesgo de Zimperium. Cuando esta regla está habilitada, Intune evalúa la conformidad del dispositivo con la directiva que habilitó. Si se detecta que el dispositivo no cumple con la directiva, se bloqueará el acceso de los usuarios a los recursos corporativos, como Exchange Online y SharePoint Online. Los usuarios también reciben los pasos de la aplicación Zimperium instalada en sus dispositivos para resolver el problema y volver a obtener acceso a los recursos corporativos.
 
@@ -93,7 +93,7 @@ Detecte amenazas para la red, como **ataques de tipo Man-in-the-middle**, y evit
 
 -   Suscripción a Mobile Threat Defense de Zimperium
 
-    -   Vea el [sitio web de Zimperium](https://www.zimperium.com/zips-mobile-ips) para más información.
+    -   Para obtener más información, vea el [sitio web de Zimperium](https://www.zimperium.com/zips-mobile-ips).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

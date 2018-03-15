@@ -1,25 +1,25 @@
 ---
-title: "Configuración del inicio de sesión único de Intune para dispositivos iOS"
-titlesuffix: Azure portal
-description: "Aprenda a configurar el inicio de sesión único de Intune para dispositivos iOS."
+title: "Configurar Microsoft Intune para el inicio de sesión único para dispositivos iOS"
+titlesuffix: 
+description: "Obtenga información sobre cómo configurar Microsoft Intune para el inicio de sesión único para dispositivos iOS."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/7/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 07ac355232c1e4ac290c87191d3764e3df45327e
-ms.sourcegitcommit: 4509039cbfd4d450324a3475fb5841906720baa1
+ms.openlocfilehash: b11f2b3a560d33503e381f96804bfe5489fe367d
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="configure-intune-for-ios-device-single-sign-on"></a>Configuración del inicio de sesión único de Intune para dispositivos iOS
+# <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Configurar Microsoft Intune para el inicio de sesión único para dispositivos iOS
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -35,16 +35,16 @@ Para aprovechar el inicio de sesión único para dispositivos iOS, debe cumplir 
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
 2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
-3. En la hoja **Intune**, elija **Configuración del dispositivo**.
-2. En la hoja **Configuración del dispositivo**, elija **Perfiles**.
-3. En la hoja Perfiles, elija **Crear perfil**, proporcione un nombre y una descripción, y configure los siguientes valores:
+3. En la página **Intune**, elija **Configuración del dispositivo**.
+2. En la página **Configuración del dispositivo**, elija **Perfiles**.
+3. En la página Perfiles, elija **Crear perfil**, proporcione un nombre y una descripción, y configure los siguientes valores:
    - **Plataforma**: elija **iOS**. 
    - **Tipo de perfil**: elija **Características del dispositivo**.
-4. En la hoja **Características del dispositivo**, elija **Inicio de sesión único**.
+4. En la página **Características del dispositivo**, elija **Inicio de sesión único**.
 
-   ![Hoja Inicio de sesión único](./media/sso-blade.png)
+   ![Página Inicio de sesión único](./media/sso-blade.png)
 
-2. Use la siguiente tabla de resumen como ayuda para rellenar los campos de la hoja **Inicio de sesión único**. Para obtener detalles, vea las secciones a continuación de la tabla.
+2. Use la siguiente tabla de resumen como ayuda para rellenar los campos de la página **Inicio de sesión único**. Para obtener detalles, vea las secciones a continuación de la tabla.
    
    |Campo  |Notas|
    |---------|---------|
@@ -82,7 +82,7 @@ Por ejemplo, cuando un usuario se conecta a alguno de estos sitios, el dispositi
 > [!NOTE]
 > Estas direcciones URL deben tener el formato FQDN correcto. Apple exige que tengan el formato `http://<yourURL.domain>`.
 
-Los patrones de coincidencia de la dirección URL deben comenzar por `http://` o `https://`. Se realiza una coincidencia de cadena simple, así que el prefijo de URL `http://www.contoso.com/` no coincide con `http://www.contoso.com:80/`. Pero con iOS 9.0 o posterior, se puede usar un único carácter comodín * para especificar todos los valores coincidentes. Por ejemplo, `http://*.contoso.com/` coincide con `http://store.contoso.com/` y con `http://www.contoso.com`.
+Los patrones de coincidencia de la dirección URL deben comenzar por `http://` o `https://`. Se realiza una coincidencia de cadena simple, así que el prefijo de URL `http://www.contoso.com/` no coincide con `http://www.contoso.com:80/`. Pero con iOS 9.0 o posterior, se puede usar un único carácter comodín \* para especificar todos los valores coincidentes. Por ejemplo, `http://*.contoso.com/` coincide con `http://store.contoso.com/` y con `http://www.contoso.com`.
 Los patrones `http://.com` y `https://.com` coinciden con todas las direcciones URL HTTP y HTTPS, respectivamente.
 
 ### <a name="apps-that-will-use-single-sign-on"></a>Aplicaciones que usarán el inicio de sesión único

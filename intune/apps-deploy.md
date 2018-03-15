@@ -1,12 +1,12 @@
 ---
-title: "Asignación de aplicaciones a grupos"
-titlesuffix: Azure portal
-description: "Cuando haya agregado una aplicación a Intune, querrá asignarla a grupos de usuarios o dispositivos."
+title: "Asignación de aplicaciones a grupos en Microsoft Intune"
+titlesuffix: 
+description: "Cuando haya agregado una aplicación a Microsoft Intune, querrá asignarla a grupos de usuarios o dispositivos."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc4732043153662ac83beac950d53246caff1b94
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 78a9e9f4af41cdb97efd017eec56e676eda82856
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Asignación de aplicaciones a grupos con Microsoft Intune
 
@@ -38,29 +38,30 @@ Se pueden asignar aplicaciones a dispositivos aunque no estén administrados en 
 |Asignar aplicaciones como disponibles|Sí|Sí|
 |Asignar aplicaciones como obligatorias|Sí|No|
 |Desinstalar aplicaciones|Sí|No|
+|Recibir actualizaciones de aplicaciones de Intune|Sí|No|
 |Los usuarios finales instalan las aplicaciones disponibles desde la aplicación Portal de empresa|Sí|No|
 |Los usuarios finales instalan aplicaciones disponibles desde el Portal de empresa basado en web|Sí|Sí|
 
 > [!NOTE]
-> Actualmente, puede asignar aplicaciones iOS y Android (tanto de línea de negocio como comparas en la tienda) a dispositivo que no estén inscritos en Intune.
+> Actualmente, puede asignar aplicaciones iOS y Android (tanto de línea de negocio como comparas en la tienda) a dispositivo que no estén inscritos en Intune.<br></br><br></br>
+> Para recibir actualizaciones de aplicaciones en dispositivos que no están inscritos con Intune, los usuarios de los dispositivos deben dirigirse al portal de su empresa e instalar manualmente las actualizaciones de las aplicaciones.
 
 ## <a name="how-to-assign-an-app"></a>Asignación de una aplicación
 
-1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
+1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+2. Elija **All services (Todos los servicios)** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En la hoja **Intune**, elija **Aplicaciones móviles**.
 1. En la carga de trabajo **Mobile Apps**, elija **Administrar** > **Aplicaciones**.
 2. En la hoja de lista de aplicaciones, haga clic en la aplicación que quiere asignar.
-3. En la hoja <*nombre de la aplicación*> - **Overview** (Información general), elija **Administrar** > **Asignaciones**.
-4. Elija **Seleccionar grupos** y, en la hoja **Seleccionar grupos**, elija los grupos de Azure AD al que quiere asignar la aplicación.
+3. En la hoja **Información general**, elija **Administrar** > **Asignaciones**.
+4. Luego, elija **Agregar grupo** en la hoja **Agregar grupo** y seleccione los grupos de Azure AD que quiera incluir o excluir de la asignación de la aplicación.
 5. Para cada aplicación que elija, seleccione un **tipo de asignación** para la aplicación, como:
-    - **Disponible**: los usuarios instalan la aplicación desde el sitio web o la aplicación del Portal de empresa.
-    - **No aplicable**: la aplicación no está instalada ni se muestra en el Portal de empresa.
+    - **Disponible para dispositivos inscritos**: los usuarios instalan la aplicación desde el sitio web o la aplicación del Portal de empresa.
+    - **Available with or without enrollment** (Disponible con o sin inscripción): asignar esta aplicación a grupos de usuarios cuyos dispositivos no se hayan inscrito en Intune.
     - **Requerida**: la aplicación se instala en dispositivos de los grupos seleccionados.
     - **Desinstalar**: la aplicación se ha desinstalado de dispositivos de los grupos seleccionados.
-    - **Available with or without enrollment** (Disponible con o sin inscripción): asignar esta aplicación a grupos de usuarios cuyos dispositivos no se hayan inscrito en Intune.
-6. **Solo para aplicaciones iOS**: si ha creado un perfil de VPN para iOS que contiene la configuración de VPN por aplicación, puede seleccionarlo en **VPN**. Cuando se ejecuta la aplicación, se abre la conexión de VPN. Para obtener más información, vea [Configuración de VPN para dispositivos iOS](vpn-settings-ios.md).
-6. Cuando termine, elija **Guardar**.
+6. **Solo para aplicaciones iOS**: si ha creado un perfil de VPN para iOS que contiene la configuración de VPN por aplicación, puede seleccionarlo en **VPN**. Cuando se ejecuta la aplicación, se abre la conexión VPN. Para obtener más información, vea [Configuración de VPN para dispositivos iOS](vpn-settings-ios.md).
+6. Una vez que haya terminado, elija **Aceptar** y, luego, **Guardar**.
 
 La aplicación ahora se asigna a los grupos que ha seleccionado.
 

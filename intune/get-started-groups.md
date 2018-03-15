@@ -1,10 +1,10 @@
 ---
-title: "Introducción a los grupos"
-titleSuffix: Azure portal
+title: Crear un grupo en Microsoft Intune
+titleSuffix: 
 description: "Organice a los usuarios en grupos para administrar las directivas y las aplicaciones a las que pueden acceder con más facilidad."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -15,15 +15,15 @@ ms.assetid: 39a93fb5-d318-4997-a409-b64549a00e7a
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 63a35c04a14ebd79ac55f1dab2680d70008ee0ed
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e052f7c8d5742859d009816473fe97a98c499b17
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="get-started-with-groups"></a>Introducción a los grupos
+# <a name="create-a-group-to-manage-your-users-and-data-access"></a>Crear un grupo para administrar los usuarios y el acceso a datos
 
-Los grupos se usan para administrar a los usuarios y controlar el acceso de los empleados a los recursos de la empresa. Estos recursos pueden formar parte de su directorio. También pueden ser recursos externos, como las aplicaciones de SaaS o los sitios de SharePoint.
+Los grupos se usan para administrar los usuarios y controlar el acceso de los empleados a los recursos de la empresa. Estos recursos pueden formar parte de su directorio. También pueden ser recursos externos, como las aplicaciones de SaaS o los sitios de SharePoint.
 
 Microsoft Intune usa Azure Active Directory (Azure AD) para administrar el acceso a los recursos de la empresa. Este acceso está controlado mediante roles en el directorio. Entonces Intune administra este acceso para los dispositivos móviles, que permite a los miembros de ese grupo tener acceso a los recursos.
 

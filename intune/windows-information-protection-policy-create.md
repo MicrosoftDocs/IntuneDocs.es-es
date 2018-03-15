@@ -3,10 +3,10 @@ title: "Creación e implementación de una directiva de protección de aplicacio
 titlesuffix: Azure portal
 description: "Creación e implementación de una directiva de protección de aplicaciones de WIP con Intune"
 keywords: 
-author: arob98
-ms.author: angrobe
-manager: dougeby
-ms.date: 12/29/2017
+author: Erikre
+ms.author: erikre
+manager: doubeby
+ms.date: 02/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 67d8a6eb4f284cf1922f9f79a8b767c124b66b06
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 647e6fd129593156f2ba24299a19e96686206165
+ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Creación e implementación de una directiva de protección de aplicaciones de Windows Information Protection (WIP) con Intune
 
@@ -49,7 +49,7 @@ Hablemos sobre algunos conceptos que aparecen al agregar una directiva de WIP.
 
 Debe configurar el proveedor de MAM para poder crear una directiva de protección de la aplicación de WIP. Obtenga más información sobre [cómo configurar el proveedor de MAM con Intune](app-protection-policies-configure-windows-10.md).
 
-Además, necesita lo siguiente:
+Además, necesita la siguiente licencia y actualización:
 
 -   Una licencia de [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium).
 -   [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
@@ -60,7 +60,7 @@ Además, necesita lo siguiente:
 
 ## <a name="to-add-a-wip-policy"></a>Para agregar una directiva de WIP
 
-Una vez configurado Intune en su organización, puede crear una directiva específica de WIP a través de [Azure Portal](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies). <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure docset?--->
+Una vez configurado Intune en su organización, puede crear una directiva específica de WIP a través de [Azure Portal](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies). <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure doc set?--->
 
 1.  Vaya al **panel de administración de aplicaciones móviles de Intune**, elija **Toda la configuración** > **Directiva de aplicaciones**.
 
@@ -80,7 +80,7 @@ Una vez configurado Intune en su organización, puede crear una directiva espec�
 
 1.  En la hoja **Directiva de aplicaciones**, elija el nombre de la directiva y luego elija **Aplicaciones permitidas** desde la hoja **Agregar una directiva**. Se abre la hoja de **Aplicaciones permitidas**, que muestra todas las aplicaciones que ya están incluidas en la lista para esta directiva de protección de aplicaciones.
 
-2.  En la hoja **Aplicaciones permitidas**, elija **Agregar aplicaciones**. Se abre la hoja **Agregar aplicaciones**, que muestra todas las aplicaciones que forman parte de esta lista.
+2.  En la hoja **Aplicaciones permitidas**, elija **Agregar aplicaciones**. En la información **Agregar aplicaciones**, se muestran todas las aplicaciones que forman parte de esta lista.
 
 3.  Seleccione cada aplicación a la que desea conceder acceso a los datos corporativos y, a continuación, seleccione **Aceptar**. La hoja **Aplicaciones permitidas** se actualiza y muestra todas las aplicaciones seleccionadas.
 
@@ -92,7 +92,7 @@ Una vez configurado Intune en su organización, puede crear una directiva espec�
 
 2.  En la hoja **Aplicaciones permitidas**, elija **Agregar aplicaciones**.
 
-3.  En la hoja **Agregar aplicaciones**, elija **Aplicaciones de la Tienda** en la lista desplegable. La hoja cambia para mostrar cuadros que le permiten agregar un **publicador** y el **nombre** de una aplicación.
+3.  En la hoja **Agregar aplicaciones**, elija **Aplicaciones de la Tienda** en la lista desplegable. La información cambia para mostrar cuadros que le permiten agregar un **publicador** y el **nombre** de una aplicación.
 
 4.  Escriba el nombre de la aplicación y el nombre de su publicador y, a continuación, elija **Aceptar**.
 
@@ -137,7 +137,7 @@ Al trabajar con aplicaciones que tengan WIP habilitado o que sean desconocidas p
 WIP busca prácticas de uso compartido de datos inapropiadas y no permite al usuario completar la acción. Esto puede incluir el uso compartido de información entre aplicaciones protegidas no corporativas y el uso compartido de datos corporativos entre otras personas y dispositivos no pertenecientes a su organización.
 
 #### <a name="allow-overrides"></a>Permitir invalidaciones
-WIP busca el uso compartido de datos inapropiado, avisando a los usuarios si hacen algo que se considera potencialmente no seguro. Sin embargo, este modo permite al usuario reemplazar la directiva y compartir los datos, registrando la acción en el registro de auditoría.
+WIP busca el uso compartido de datos inadecuado, avisando a los usuarios si hacen algo que se considera potencialmente no seguro. Sin embargo, este modo permite al usuario reemplazar la directiva y compartir los datos, registrando la acción en el registro de auditoría.
 
 #### <a name="silent"></a>Silencioso
 WIP se ejecuta en modo silencioso, ya que registra el uso compartido de datos inadecuado sin bloquear nada que se hubiera solicitado en la interacción con el empleado en el modo Permitir invalidaciones. Las acciones no permitidas, como las aplicaciones que intentan de manera inapropiada obtener acceso a un recurso de red o a datos protegidos por WIP, se siguen deteniendo.
@@ -153,7 +153,7 @@ Una vez desactivado WIP, se realiza un intento de descifrar los archivos etiquet
 
     ![Captura de pantalla del modo de aprendizaje](./media/learning-mode-sc1.png)
 
-1.  Elija **Guardar**.
+2.  Elija **Guardar**.
 
 ### <a name="use-wip-learning"></a>Uso del aprendizaje de WIP
 
@@ -165,10 +165,23 @@ Una vez desactivado WIP, se realiza un intento de descifrar los archivos etiquet
  
     Una vez que tenga las aplicaciones que se muestran en el informe de registro del aprendizaje de WIP, puede agregarlas a las directivas de protección de aplicaciones.
 
+## <a name="allow-windows-search-indexer-to-search-encrypted-items"></a>Permitir que el indizador de Windows Search busque elementos cifrados
+Permite o deniega la indexación de elementos. Este modificador es para el indizador de Windows Search, que controla si indexa los elementos que están cifrados, como los archivos protegidos de Windows Information Protection (WIP).
+
+Esta opción de directiva de protección de aplicaciones está en la **Configuración avanzada** de la directiva de Windows Information Protection. La directiva de protección de aplicaciones debe establecerse en la plataforma *Windows 10* y la directiva de aplicación **Estado de inscripción** debe establecerse en **Con inscripción**. 
+
+Cuando la directiva está habilitada, los elementos protegidos por WIP se indexan y los metadatos sobre ellos se almacenan en una ubicación sin cifrar. Los metadatos incluyen elementos tales como la ruta de acceso de archivo y la fecha de modificación.
+
+Cuando la directiva está deshabilitada, los elementos protegidos por WIP no se indexan y no se muestran en los resultados de Cortana o del explorador de archivos. También puede haber un impacto en el rendimiento de fotografías y aplicaciones de Groove si hay muchos archivos multimedia protegidos por WIP en el dispositivo.
+
+## <a name="add-encrypted-file-extensions"></a>Agregar extensiones de archivo cifrado
+
+Además de establecer la opción **Permitir que el indizador de Windows Search busque elementos cifrados**, puede especificar una lista de extensiones de archivo. Los archivos con estas extensiones se cifran cuando se copian desde un recurso compartido de bloque de mensajes del servidor (SMB) dentro de los límites corporativos, tal y como se define en la lista de ubicaciones de red. Cuando no se especifica esta directiva, se aplica el comportamiento de cifrado automático existente. Cuando se configura esta directiva, se cifrarán únicamente los archivos con las extensiones de la lista.
+
 ## <a name="deploy-your-wip-app-protection-policy"></a>Implementación de la directiva de protección de aplicaciones de WIP
 
 > [!IMPORTANT]
-> Este contenido corresponde a WIP sin la inscripción de dispositivos.
+> Esta información corresponde a WIP sin la inscripción de dispositivos.
 
 <!---not sure why you need the Important note. Isn't this what the topic is about? app protection w/o enrollment?--->
 
@@ -178,4 +191,8 @@ Después de crear la directiva de protección de aplicaciones de WIP, debe imple
 
     Se abre una lista de grupos de usuarios, que consta de todos los grupos de seguridad de Azure Active Directory, en la hoja **Agregar grupo de usuarios**.
 
-1.  Seleccione el grupo al que quiere que se aplique la directiva y, después, elija **Seleccionar** para implementar la directiva.
+2.  Seleccione el grupo al que quiere que se aplique la directiva y, después, elija **Seleccionar** para implementar la directiva.
+
+## <a name="next-steps"></a>Pasos siguientes
+
+- Para obtener más información sobre Windows Information Protection, consulte [Protect your enterprise data using Windows Information Protection (WIP)](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) [Protección de los datos de su empresa mediante Windows Information Protection (WIP)]. 

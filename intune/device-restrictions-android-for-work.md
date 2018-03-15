@@ -1,30 +1,34 @@
 ---
-title: "Configuración de restricciones de dispositivos de Intune para Android for Work"
-titlesuffix: Azure portal
-description: "Conozca la configuración de Intune que puede usar para controlar los valores de configuración y la funcionalidad de los dispositivos de Android for Work."
+title: "Configuración de restricciones de dispositivos de Microsoft Intune para Android for Work"
+titlesuffix: 
+description: "Descubra las opciones de configuración de Intune que puede usar para controlar la funcionalidad y la configuración de los dispositivos que ejecutan Android for Work."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/23/2018
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c7c69bb3984ae4ffa81aa81ae24cfe17663bc191
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d4d8089d7ae57c4bf95038e5f9dc88f4949f069e
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="android-for-work-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos Android for Work en Microsoft Intune
+# <a name="microsoft-intune-android-for-work-device-restriction-settings"></a>Configuración de restricciones de dispositivos Android for Work en Microsoft Intune
+
+En este artículo se muestran todas las opciones de configuración de restricciones de dispositivos de Microsoft Intune que puede configurar para los dispositivos que ejecutan Android for Work.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 ## <a name="work-profile-settings"></a>Configuración de perfil de trabajo
+
+### <a name="general-settings"></a>Configuración general
+
 -   **Copie y pegue entre el perfil laboral y el personal**: controla la acción de copiar y pegar entre aplicaciones laborales y personales. Elija **Bloquear** para habilitar el bloqueo. Elija **Sin configurar** para deshabilitar el bloqueo.
 - **Uso compartido de datos entre el perfil de trabajo y el personal**: use esta configuración para controlar si las aplicaciones del perfil de trabajo y las aplicaciones del perfil personal pueden compartir datos. Este valor controla las acciones de uso compartido dentro de las aplicaciones (por ejemplo, la opción **Compartir...** de la aplicación de explorador Chrome) y no se aplica al comportamiento del Portapapeles de copiar y pegar. A diferencia de la [configuración de las directivas de protección de aplicaciones](https://docs.microsoft.com/intune-classic/deploy-use/protect-app-data-using-mobile-app-management-policies-with-microsoft-intune), la configuración de las restricciones del dispositivo se administra desde el portal de Intune y se usa la partición del perfil de trabajo de Android for Work para aislar las aplicaciones administradas. Elija de entre las siguientes opciones:
     - **Restricciones de uso compartido predeterminado**: esta opción es el comportamiento de uso compartido predeterminado del dispositivo que varía según la versión de Android que se ejecuta. De manera predeterminada, se permite el uso compartido desde el perfil personal hasta el perfil de trabajo. También de manera predeterminada, el uso compartido desde el perfil de trabajo hasta el perfil personal está bloqueado. Esta opción evita que se compartan datos desde el perfil de trabajo hasta el perfil personal. Google no proporciona ninguna manera de bloquear el uso compartido desde el perfil personal hasta el perfil de trabajo en dispositivos que ejecutan las versiones 6.0 y posteriores.   
@@ -39,6 +43,12 @@ ms.lasthandoff: 01/25/2018
     -   **Denegación automática**
 
     El estado de concesión de los permisos se puede definir aún más para aplicaciones específicas mediante una directiva de configuración de aplicaciones (en **Aplicaciones móviles** > **Directivas de configuración de aplicaciones**).
+
+- **Agregar y quitar cuentas**
+
+   Impide que los usuarios finales agreguen o quiten cuentas manualmente en el perfil de trabajo.
+
+   Por ejemplo, cuando implemente la aplicación de Gmail en un perfil de Android for Work, podrá impedir que los usuarios finales agreguen o quiten cuentas en este perfil de trabajo.
 
 ### <a name="work-profile-password"></a>Contraseña del perfil de trabajo
 - **Requerir contraseña de perfil de trabajo** (Android 7.0 y versiones posteriores con el perfil del trabajo habilitado): defina una directiva de código de acceso que se aplique solo a las aplicaciones del perfil del trabajo. De manera predeterminada, el usuario final tiene la opción de usar los dos PIN definidos por separado o de optar por combinarlos en el más seguro de ellos.
@@ -87,4 +97,4 @@ ms.lasthandoff: 01/25/2018
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Use la información del tema [Configuración de restricciones de dispositivos en Microsoft Intune](device-restrictions-configure.md) para guardar y asignar el perfil a los usuarios y dispositivos.
+Use la información descrita en [Configuración de restricciones de dispositivos](device-restrictions-configure.md) para guardar y asignar el perfil a los usuarios y dispositivos.

@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 126a7489-fe3e-43fd-a681-defb2fe0bb66
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7884682b765fe0df0ecb8b55b18f7a85ac4b2ec9
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fcdd5e6fa844d4c475462cd0b2a4883f8ff9ba90
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="activate-lost-mode-on-ios-devices"></a>Activación del modo perdido en dispositivos iOS
 
@@ -37,11 +37,11 @@ La acción de dispositivo **Modo perdido** le ayuda a habilitar el modo perdido 
 
 ## <a name="how-to-activate-lost-mode"></a>Cómo activar el modo Perdido
 
-1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
+1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+2. Elija **All services (Todos los servicios)** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En la hoja **Intune**, elija **Dispositivos**.
-4. En la hoja **Dispositivos y grupos**, elija **Todos los dispositivos**.
-5. En la lista de dispositivos que administra, elija un dispositivo iOS y luego elija la acción remota **Modo perdido**.
+4. En la hoja **Dispositivos**, pulse **Todos los dispositivos**.
+5. En la lista de dispositivos que administra, elija un dispositivo iOS, **Más** y luego la acción remota **Modo Perdido**.
 6. En la hoja **Modo Perdido**, habilite el modo Perdido. Después, escriba el mensaje que se mostrará y, opcionalmente, un número de teléfono de contacto.
 7. Haga clic en **Aceptar**.
 
@@ -57,5 +57,5 @@ Para usar el modo Perdido, debe ser un dispositivo iOS de empresa con el modo su
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Para ver el estado de la acción que acaba de realizar, en la hoja **Dispositivos y grupos**, elija **Acciones de dispositivo**.
+Para ver el estado de la acción que acaba de realizar, en la hoja **Dispositivos**, elija **Acciones de dispositivo**.
 

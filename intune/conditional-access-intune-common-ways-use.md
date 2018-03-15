@@ -3,10 +3,10 @@ title: Acceso condicional con Intune
 titlesuffix: Azure portal
 description: Formas habituales de usar el acceso condicional con Intune
 keywords: 
-author: andredm7
-ms.author: andredm
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 02/22/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,19 @@ ms.technology:
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8987f8e6eb7a770a90d187c0787589acfbacdb09
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: d5ec945cdbc4efa791edc51e659a1546876446c5
+ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="common-ways-to-use-conditional-access-with-intune"></a>Formas habituales de usar el acceso condicional con Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Para impulsar el cumplimiento del acceso condicional en su organización, es necesario configurar la directiva de cumplimiento de dispositivos móviles de Intune y las funcionalidades de administración de aplicaciones móviles (MAM) de Intune. Se hablará sobre las formas comunes de usar el acceso condicional con Intune.
+Hay dos tipos principales de acceso condicional con Intune. El primero es el acceso condicional basado en dispositivos. El segundo es el acceso condicional basado en la aplicación. Debe configurar las directivas de cumplimiento relacionadas para aplicar el cumplimiento del acceso condicional en su organización.
+
+La siguiente información le ayudará a comprender cómo usar las capacidades de cumplimiento de *dispositivos* móviles de Intune y las capacidades de administración de *aplicaciones* móviles (MAM) de Intune. 
 
 ## <a name="device-based-conditional-access"></a>Acceso condicional basado en dispositivos
 
@@ -32,11 +34,11 @@ Intune y Azure Active Directory trabajan juntos para asegurarse de que solo los 
 
 Intune ofrece funcionalidades de directivas de cumplimiento de dispositivos que evalúan el estado de cumplimiento de los dispositivos. El estado de cumplimiento se notifica a Azure Active Directory, que usa esta información para exigir la directiva de acceso condicional creada en Azure Active Directory cuando el usuario intenta acceder a los recursos de la compañía.
 
-A partir del [nuevo portal de Azure](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune), las directivas de acceso condicional basado en dispositivos para Exchange en línea y otros productos de Office 365 se configuran mediante el portal de Azure.
+Las directivas de acceso condicional basado en dispositivos para Exchange en línea y otros productos de Office 365 se configuran mediante [Azure Portal](https://docs.microsoft.com/intune-azure/introduction/what-is-microsoft-intune).
 
 -   Más información sobre el [acceso condicional en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).
 
--   Más información sobre [qué es el cumplimiento de dispositivos de Intune](device-compliance.md).
+-   Más información sobre las [directivas de cumplimiento de dispositivos de Intune](device-compliance.md).
 
 -   Más información sobre la [protección del correo electrónico, Office 365 y otros servicios mediante el acceso condicional con Intune](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
 

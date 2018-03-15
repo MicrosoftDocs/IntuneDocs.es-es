@@ -1,11 +1,12 @@
 ---
 title: Ventajas del SDK para aplicaciones de Intune
+titlesuffix: Microsoft Intune
 description: "El SDK para aplicaciones de Intune está disponible para las plataformas iOS y Android y, gracias a él, podrá habilitar las características de administración de aplicaciones móviles con Microsoft Intune."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/24/2017
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,14 +15,14 @@ ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 75965145c38e94516846937e4dd408730d3ce10f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ae22d3e718fd01330b81206921b6e9a23313a30f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="intune-app-sdk-overview"></a>Información general del SDK para aplicaciones de Intune
-El SDK de aplicaciones de Intune, disponible para iOS y Android, habilita su aplicación para las directivas de protección de aplicaciones de Intune. Su objetivo es minimizar la cantidad de cambios de código que debe realizar el desarrollador de la aplicación. Encontrará que puede habilitar la mayoría de las características del SDK sin necesidad de cambiar el comportamiento de la aplicación. Para obtener una experiencia de administrador de TI y de usuario final mejorada, puede usar nuestras API para personalizar el comportamiento de la aplicación para aquellas características que requieren la participación de la aplicación.
+El SDK de aplicaciones de Intune, disponible para iOS y Android, habilita su aplicación para las directivas de protección de aplicaciones de Intune. Su objetivo es minimizar la cantidad de cambios de código que debe realizar el desarrollador de la aplicación. Verá que puede habilitar la mayoría de las características del SDK sin necesidad de cambiar el comportamiento de la aplicación. Para obtener una experiencia de administrador de TI y de usuario final mejorada, puede usar nuestras API con el objetivo de personalizar el comportamiento de la aplicación para aquellas características que requieren la participación de esta.
 
 Una vez que haya habilitado su aplicación para las directivas de protección de aplicaciones, los administradores de TI pueden implementar estas directivas para proteger sus datos corporativos dentro de la aplicación.
 
@@ -42,7 +43,7 @@ Los administradores de TI pueden aplicar una directiva que garantice el cifrado 
 Los administradores de TI pueden borrar remotamente datos corporativos desde una aplicación administrada por Intune. Esta característica está basada en identidades y eliminará tan solo los archivos asociados con la identidad corporativa del usuario final. Para ello, la característica requiere la participación de la aplicación. La aplicación puede especificar la identidad para la que debe producirse el borrado en función de la configuración de usuario. Si esta configuración especificada por el usuario no se encuentra en la aplicación, el comportamiento predeterminado será borrar el directorio de la aplicación y notificar al usuario final que se ha quitado el acceso.
 
 ### <a name="enforce-the-use-of-a-managed-browser"></a>Exigir el uso de un explorador administrado
-Los administradores de TI pueden forzar los vínculos web de la aplicación para que se abran con la [aplicación Managed Browser de Intune](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies). Esto garantiza que los vínculos que aparecen en un entorno corporativo se mantengan dentro del dominio de las aplicaciones administradas por Intune.
+Los administradores de TI pueden forzar los vínculos web de la aplicación para que se abran con la [aplicación Managed Browser de Intune](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies). Esta funcionalidad garantiza que los vínculos que aparecen en un entorno corporativo se mantengan dentro del dominio de las aplicaciones administradas por Intune.
 
 ### <a name="enforce-a-pin-policy"></a>Aplicar una directiva de PIN
 Los administradores de TI pueden solicitar al usuario final que escriba un PIN antes de tener acceso a los datos corporativos de la aplicación. Esto garantiza que el usuario que usa la aplicación sea el mismo que en un principio inició sesión con su cuenta profesional o educativa. Cuando los usuarios finales configuran su PIN, el SDK de aplicaciones de Intune usa Azure Active Directory para comprobar las credenciales de los usuarios finales con la cuenta de Intune inscrita.

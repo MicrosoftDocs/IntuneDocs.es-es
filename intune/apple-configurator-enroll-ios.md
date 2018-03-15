@@ -1,6 +1,6 @@
 ---
-title: "Inscripción de dispositivos iOS: Apple Configurator y el Asistente de configuración"
-titlesuffix: Azure portal
+title: Inscribir dispositivos iOS mediante Apple Configurator
+titlesuffix: Microsoft Intune
 description: "Aprenda a usar Apple Configurator para inscribir dispositivos iOS corporativos con el Asistente de configuración."
 keywords: 
 author: ErikjeMS
@@ -15,11 +15,11 @@ ms.assetid: 6d384cd0-b662-41e7-94f5-0c96790ab20a
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c076bc52495d1b74a18e1d655376b6183dc5fe16
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 5f74c39fd1d335f644542d99c534b5aea21833df
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Inscribir dispositivos iOS con Apple Configurator
 
@@ -32,11 +32,11 @@ ms.lasthandoff: 02/09/2018
 >
 >Si la página **Inscripción de dispositivos** es similar a la imagen siguiente, significa que la cuenta no se ha actualizado aún a la nueva interfaz de usuario y puede utilizar esta página de ayuda.
 >
->![Interfaz de usuario anterior](./media/appleenroll-oldui.png)
+>![Antigua interfaz de usuario de Intune](./media/appleenroll-oldui.png)
 >
 >Si la página **Inscripción de dispositivos** es similar a la imagen siguiente, significa que tiene las interfaces de usuario actualizadas.  Vaya a [esta página de ayuda](apple-configurator-enroll-ios-newui.md).
 >
->![Interfaz de usuario nueva](./media/appleenroll-newui.png)
+>![Nueva interfaz de usuario de Intune](./media/appleenroll-newui.png)
 
 Intune permite la inscripción de dispositivos iOS con la herramienta [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344) desde un equipo Mac. La inscripción con Apple Configurator requiere que conecte mediante USB cada dispositivo iOS a un equipo Mac para configurar la inscripción corporativa. Puede inscribir dispositivos en Intune con Apple Configurator de dos maneras:
 - **Inscripción con el Asistente de configuración**: restablece la configuración de fábrica del dispositivo y lo prepara para la inscripción mediante el Asistente de configuración.
@@ -64,7 +64,7 @@ Un perfil de inscripción de dispositivo define la configuración que se aplica 
 5. En **Perfiles de inscripción de Apple Configurator**, seleccione **Crear**.
 6. Escriba un **nombre** y una **descripción** para el perfil con fines administrativos. Los usuarios no ven estos detalles. Puede usar este campo de nombre para crear un grupo dinámico en Azure Active Directory. Use el nombre de perfil para definir el parámetro enrollmentProfileName para asignar dispositivos con este perfil de inscripción. Obtenga más información sobre los grupos dinámicos de Azure Active Directory.
 
-  ![Captura de pantalla de la pantalla de creación de perfil con inscripción con la afinidad de usuario seleccionada](./media/apple-configurator-profile-create.png)
+  ![Pantalla de creación de perfil con la opción Inscribir con afinidad de usuario seleccionada](./media/apple-configurator-profile-create.png)
 
 7. Especifique la **Afinidad de usuario**:
    - **Inscribir con afinidad de usuario**: el dispositivo se debe afiliar a un usuario con el Asistente de configuración y, después, se le puede permitir el acceso a los datos y al correo electrónico de la empresa. Se requiere afinidad de usuario para los dispositivos administrados que pertenecen a usuarios y que necesitan usar el Portal de empresa para hacer uso de servicios, como instalar aplicaciones. Solo se admite para la inscripción con el asistente para la configuración. Se necesita una afinidad de usuario [Punto de conexión mixto/nombre de usuario de WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints). [Más información](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
@@ -117,7 +117,7 @@ Después de crear el perfil y asignar números de serie, debe exportar el perfil
 1. En Intune en Azure Portal, seleccione **Inscripción de dispositivos** > **Inscripción de Apple** > **Perfiles de AC** y elija el perfil que quiera exportar.
 2. En el perfil, seleccione **Exportar perfil**.
 
-  ![Captura de pantalla de Exportar perfil para Inscripción del Asistente de configuración con URL del perfil destacado](./media/ios-apple-configurator-expor-sat.png)
+  ![Sección Inscripción del Asistente para configuración de Exportar perfil con la opción URL del perfil destacada](./media/ios-apple-configurator-expor-sat.png)
 3. Copie la dirección URL del perfil. Puede agregarla a Apple Configurator más tarde para definir el perfil de Intune usado por los dispositivos iOS.
 
   Después, importe este perfil en Apple Configurator en el procedimiento siguiente para definir el perfil de Intune usado por dispositivos iOS.
@@ -155,7 +155,7 @@ Las aplicaciones que requieren la afiliación de un usuario no se pueden instala
 2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
 3. En **Perfil de exportación**, elija **Descargar perfil** para descargar el perfil de inscripción.
 
-  ![Captura de pantalla de Exportar perfil para Inscripción del Asistente de configuración con URL del perfil destacado](./media/ios-apple-configurator-expor-de.png)
+  ![Sección Inscripción del Asistente para configuración de Exportar perfil con la opción URL del perfil destacada](./media/ios-apple-configurator-expor-de.png)
 
 4. Transfiera el archivo a un equipo Mac en el que se ejecute [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) para poder transferir archivos directamente como un perfil de administración a dispositivos iOS.
 5. Prepare el dispositivo con Apple Configurator mediante los pasos siguientes.
@@ -163,7 +163,7 @@ Las aplicaciones que requieren la afiliación de un usuario no se pueden instala
   2. Conecte el dispositivo iOS al equipo Mac con un cable USB. Cierre Fotos, iTunes y otras aplicaciones que se abren en el dispositivo cuando se detecta el dispositivo.
   3. En Apple Configurator, elija el dispositivo iOS conectado y, después, elija el botón **Agregar**. Las opciones que se pueden agregar al dispositivo aparecen en la lista desplegable. Elija **Perfiles**.
 
-    ![Captura de pantalla de Exportar perfil para Inscripción del Asistente de configuración con URL del perfil destacado](./media/ios-apple-configurator-add-profile.png)
+    ![Sección Inscripción del Asistente para configuración de Exportar perfil con la opción URL del perfil destacada](./media/ios-apple-configurator-add-profile.png)
 
   4. Use el selector de archivos para seleccionar el archivo .mobileconfig que ha exportado desde Intune y, después, elija **Agregar**. El perfil se agrega al dispositivo. Si el dispositivo es No supervisado, la instalación requiere la aceptación en el dispositivo.
 6. Use los pasos siguientes para instalar el perfil en el dispositivo iOS. El dispositivo debe haber completado el Asistente de configuración y estar listo para usarse. Si la inscripción implica implementaciones de aplicaciones, el dispositivo debe tener un identificador de Apple configurado, porque la implementación de aplicaciones requieren que se disponga de un identificador de Apple con la sesión iniciada en App Store.

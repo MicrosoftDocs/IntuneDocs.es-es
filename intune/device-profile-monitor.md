@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5b5a6ab74555eefc8c001ec444f803be24e34f3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ce72427900fcc6720048c7430a9194eb38bfe2ce
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-monitor-device-profiles-in-microsoft-intune"></a>Cómo supervisar perfiles de dispositivo en Microsoft Intune
 
@@ -28,10 +28,10 @@ ms.lasthandoff: 01/25/2018
 Puede supervisar el progreso de asignación de perfiles de dispositivo de Intune de dos maneras:
 
 
-1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
+1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En la hoja **Intune**, elija **Configuración del dispositivo**.
-2. En la hoja **Configuración del dispositivo**, elija **Administrar** > **Perfiles**.
+2. En la hoja **Configuración del dispositivo**, debajo de la sección **Administrar**, elija **Perfiles**.
 2. En la hoja de lista de perfiles, elija el perfil que quiere administrar y, a continuación:
-    - En la hoja <*nombre del perfil*> **Informes**, elija **Overview** (Información general) para ver información básica sobre el perfil y sus asignaciones.
-    - En la hoja <*nombre del perfil*> **Informes**, elija **Informes** para ver información más detallada sobre el perfil y sus asignaciones.
+    - En la hoja <*nombre del perfil*> **Perfil de configuración de dispositivo**, elija **Información general** para ver datos básicos sobre el perfil y sus asignaciones.
+    - En la hoja <*nombre del perfil*> **Perfil de configuración de dispositivo**, elija **Asignaciones** para ver información más detallada sobre el perfil y sus asignaciones.

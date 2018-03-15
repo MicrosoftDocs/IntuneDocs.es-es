@@ -1,12 +1,12 @@
 ---
 title: "Establecer la entidad de administración de dispositivos móviles"
-titlesuffix: Azure portal
-description: "Aprenda a configurar la entidad de administración de dispositivos móviles en Intune. \""
+titlesuffix: Microsoft Intune
+description: "Establezca la entidad de administración de dispositivos móviles en Intune."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc0634f5e5f4648dabaa371c3ab94f070a941057
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 5d48a2cea096c1639cd3661521cd636454f3e0ba
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Establecer la entidad de administración de dispositivos móviles
 
@@ -40,7 +40,8 @@ En la versión 1610 o posterior de Configuration Manager y en la versión 1705 d
 
 ## <a name="set-mdm-authority-to-intune"></a>Establecimiento de la entidad de MDM en Intune
 
-1. En [Azure Portal](https://portal.azure.com), elija **Más servicios** > **Supervisión y administración** > **Intune**.
+1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 2. Seleccione el banner de color naranja para abrir el ajuste **Entidad de administración de dispositivos móviles**.
 3. En **Entidad de administración de dispositivos móviles**, elija la entidad de MDM entre las opciones siguientes:
   - **Entidad de MDM de Intune**
