@@ -1,31 +1,30 @@
 ---
-title: Directivas de cumplimiento de dispositivos Intune
-titleSuffix: Azure portal
-description: Use este tema para aprender sobre el cumplimiento de dispositivos en Microsoft Intune.
+title: Directivas de cumplimiento de dispositivos de Microsoft Intune
+titleSuffix: 
+description: "Obtenga información sobre el cumplimiento de dispositivos en Microsoft Intune"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 2/6/2018
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98a9a93efb93697b454cb9bc06d1ac268ebaf9d8
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 9e3a7bdf3ddf6ad77a82ac6dc7075d696fbe6497
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="get-started-with-intune-device-compliance-policies"></a>Introducción a las directivas de cumplimiento de dispositivos de Intune
+# <a name="get-started-with-microsoft-intune-device-compliance-policies"></a>Introducción a las directivas de cumplimiento de dispositivos de Microsoft Intune
+
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-## <a name="what-is-device-compliance-in-intune"></a>¿Qué es el cumplimiento de dispositivos en Intune?
-
-Las directivas de cumplimiento de dispositivos Intune definen las reglas y configuraciones con las que debe cumplir un dispositivo para que Intune lo considere compatible.
+Las directivas de cumplimiento de dispositivos de Intune definen las reglas y configuraciones con las que debe cumplir un dispositivo para que Intune lo considere compatible.
 
 Estas son algunas de las reglas:
 
@@ -43,7 +42,7 @@ Estas son algunas de las reglas:
 
 También puede usar directivas de cumplimiento de dispositivos para supervisar el estado de cumplimiento de los dispositivos.
 
-### <a name="device-compliance-requirements"></a>Requisitos de cumplimiento del dispositivo
+## <a name="device-compliance-requirements"></a>Requisitos de cumplimiento del dispositivo
 
 Los requisitos de cumplimiento son básicamente reglas, como exigir el PIN de un dispositivo o especificar el cifrado como obligatorio o no obligatorio para una directiva de cumplimiento.
 
@@ -108,9 +107,9 @@ Si un dispositivo tiene varios perfiles de configuración asignados y distintos 
 
 |Estado  |Gravedad  |
 |---------|---------|
-|Pendiente     |1|
+|Pending     |1|
 |Correcto     |2|
-|Incorrecto     |3|
+|Failed     |3|
 |Error     |4|
 
 A continuación, se asigna un estado resultante de dos o más perfiles de configuración seleccionando el nivel de gravedad más alto de todos los perfiles asignados a un dispositivo.

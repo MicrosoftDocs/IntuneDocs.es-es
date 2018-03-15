@@ -1,12 +1,12 @@
 ---
 title: "Configuración de directivas de protección de aplicaciones de iOS"
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: "En este tema se describe la configuración de directivas de protección de aplicaciones para dispositivos iOS."
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/15/2018
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5366062588d518a7072fb4d56e4eade0f492bebf
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 6225afab71d1f47793ea295553dfcaf169374a06
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/05/2018
 ---
 #  <a name="ios-app-protection-policy-settings"></a>Configuración de directivas de protección de aplicaciones de iOS
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-La configuración de directivas que se describe en este tema puede [realizarse](app-protection-policies.md) para una directiva de protección de aplicaciones en la hoja **Configuración** del portal de Azure.
+La configuración de directivas que se describe en este tema puede [realizarse](app-protection-policies.md) para una directiva de protección de aplicaciones en la hoja **Agregar directiva** > **Configuración** de Azure Portal.
 
 Existen dos categorías de configuración de directiva: configuración de acceso y configuración de reubicación de datos. En este tema, el término ***aplicaciones administradas por directivas*** hace referencia a las aplicaciones que están configuradas con directivas de protección de aplicaciones.
 
@@ -32,8 +32,8 @@ Existen dos categorías de configuración de directiva: configuración de acceso
 
 | Setting | Cómo se usa | Valor predeterminado |
 |------|------|------|
-| **Impedir copias de seguridad de iTunes e iCloud** | Elija **Sí** para deshabilitar la copia de seguridad de todos los archivos administrados en iTunes y iCloud. Elija **No** para permitir que esta aplicación cree una copia de seguridad de los archivos administrados en iTunes y iCloud.| Sí |
-| **Permitir que la aplicación transfiera datos a otras aplicaciones** | Especifique qué aplicaciones pueden recibir datos de esta aplicación: <ul><li> **Aplicaciones administradas por directivas**: permite las transferencias solo para otras aplicaciones administradas por directivas.</li> <li>**Todas las aplicaciones**: permite la transferencia a cualquier aplicación. </li> <li>**Ninguna**: no permite la transferencia de datos a ninguna aplicación, incluidas otras aplicaciones administradas por directivas.</li></ul> Además, si establece esta opción en **Aplicaciones administradas por directivas** o **Ninguno**, la característica de iOS 9 que permite que la búsqueda de Spotlight busque datos dentro de las aplicaciones se bloqueará. <br><br> Hay aplicaciones y servicios exentos a los que Intune puede permitir la transferencia de datos. Consulte [Exenciones de transferencia de datos](#data-transfer-exemptions) para ver una lista completa de aplicaciones y servicios. | Todas las aplicaciones |
+| **Impedir copias de seguridad de iTunes e iCloud** | Pulse **Sí** para evitar que esta aplicación realice una copia de seguridad de los datos profesionales o educativos en iTunes e iCloud. Pulse **No** para permitir que esta aplicación realice una copia de seguridad de los datos profesionales o educativos en iTunes e iCloud.| Sí |
+| **Permitir que la aplicación transfiera datos a otras aplicaciones** | Especifique qué aplicaciones pueden recibir datos de esta aplicación: <ul><li> **Aplicaciones administradas por directivas**: permite las transferencias solo para otras aplicaciones administradas por directivas.</li> <li>**Todas las aplicaciones**: permite la transferencia a cualquier aplicación. </li> <li>**Ninguna**: no permite la transferencia de datos a ninguna aplicación, incluidas otras aplicaciones administradas por directivas.</li></ul> Además, si establece esta opción en **Aplicaciones administradas por directivas** o **Ninguno**, la característica de iOS 9 que permite que la búsqueda de Spotlight busque datos dentro de las aplicaciones se bloqueará. <br><br> Hay aplicaciones y servicios exentos a los que Intune puede permitir la transferencia de datos de forma predeterminada. Además, puede crear sus propias excepciones si necesita permitir que los datos se transfieran a una aplicación que no admita las directivas de protección de aplicaciones de Intune. Vea [Exenciones de transferencia de datos](#data-transfer-exemptions) para obtener más información. | Todas las aplicaciones |
 | **Permitir que la aplicación reciba datos de otras aplicaciones** | Especifique qué aplicaciones pueden transferir datos a esta aplicación: <ul><li>**Aplicaciones administradas por directivas**: permite las transferencias solo desde otras aplicaciones administradas por directivas.</li><li>**Todas las aplicaciones**: permite la transferencia de datos desde cualquier aplicación.</li><li>**Ninguna**: no permite la transferencia de datos desde ninguna aplicación, incluidas otras aplicaciones administradas por directivas.</li></ul> Hay aplicaciones y servicios exentos desde los que Intune puede permitir la transferencia de datos. Consulte [Exenciones de transferencia de datos](#data-transfer-exemptions) para ver una lista completa de aplicaciones y servicios. Las aplicaciones habilitadas para MAM con varias identidades en dispositivos de iOS no inscritos pasan por alto esta directiva y permiten los datos entrantes. | Todas las aplicaciones |
 | **Impedir "Guardar como"** | Pulse **Sí** para deshabilitar el uso de la opción Guardar como en esta aplicación. Elija **No** si quiere permitir el uso de Guardar como. | No |
 | **Restringir cortar, copiar y pegar con otras aplicaciones** | Especifique cuándo pueden usarse las acciones de cortar, copiar y pegar con esta aplicación. Elija de entre las siguientes opciones: <ul><li>**Bloqueado**: no permite las acciones de cortar, copiar y pegar entre esta aplicación y cualquier otra.</li><li>**Aplicaciones administradas por directivas**: permite las acciones de cortar, copiar y pegar entre esta aplicación y otras aplicaciones administradas por directivas.</li><li>**Aplicaciones administradas por directivas con pegar**: permite cortar o copiar entre esta aplicación y otras aplicaciones administradas por directivas. Permite que los datos de cualquier aplicación se peguen en esta aplicación.</li><li>**Cualquier aplicación**: no se aplican restricciones a las acciones de cortar, copiar y pegar para y desde esta aplicación. | Cualquier aplicación |
@@ -53,13 +53,12 @@ La directiva de protección de aplicaciones de Intune puede permitir la transfer
 | Nombres de aplicación/servicio | Descripción |
 | ---- | --- |
 |<code>tel; telprompt</code> | Aplicación de teléfono nativa |
-| <code>skype</code> | Skype |
-| <code>app-settings</code> | Configuración del dispositivo |
-| <code>itms; itmss; itms-apps; itms-appss; itms-services</code> | Tienda de aplicaciones |
-| <code>calshow</code> | Calendario nativo |
+|<code>skype</code> | Skype |
+|<code>app-settings</code> | Configuración del dispositivo |
+|<code>itms; itmss; itms-apps; itms-appss; itms-services</code> | Tienda de aplicaciones |
+|<code>calshow</code> | Calendario nativo |
 
-
-
+Para obtener más información, consulte [Data transfer policy exceptions for apps](app-protection-policies-exception.md) (Excepciones de la directiva de transferencia de datos para aplicaciones). 
 
 ## <a name="access-settings"></a>Configuración de acceso
 

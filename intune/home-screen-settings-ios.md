@@ -1,45 +1,43 @@
 ---
-title: "Configuración de diseño de pantalla principal de Intune para dispositivos iOS"
+title: "Configuración de diseño de la pantalla principal de Microsoft Intune para dispositivos que ejecutan iOS"
 titlesuffix: Azure portal
-description: "Conozca la configuración que puede usar para personalizar la pantalla principal y la base de los dispositivos iOS."
+description: "Conozca la configuración que puede usar para personalizar la pantalla principal y la base de los dispositivos que ejecutan iOS."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 6aba4491-afb9-43cd-9ccc-14e6a2a5a3b1
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2e4de4f4b1235136d7391c8d9efdc1405043e4da
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: ad8553506752cce99f22283e50cc5f490d72ed0b
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="intune-home-screen-layout-settings-for-ios-devices"></a>Configuración de diseño de pantalla principal de Intune para dispositivos iOS
+# <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>Configuración de diseño de la pantalla principal de Microsoft Intune para dispositivos que ejecutan iOS 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Use estos valores para configurar el diseño de aplicaciones y carpetas en la base y la pantalla principal de iOS.
+Use estos valores para configurar el diseño de aplicaciones y carpetas en la base y la pantalla principal de los dispositivos que ejecutan iOS.
 
-iOS devices to which you assign the profile must be in supervised mode and running iOS 9.3 or later.
+Los dispositivos con iOS con un perfil asignado deben estar en modo supervisado y ejecutar iOS 9.3 o versiones posteriores.
 
-1. En las hojas **Características del dispositivo**, pulse **Diseño de pantalla principal (solo supervisado)**.
-2. En la hoja **Diseño de pantalla principal (solo supervisado**, elija si desea configurar los diseños de **Base** o **Páginas**.
+1. En la página **Configuración del dispositivo**, **Crear perfil**, **Características del dispositivo**, elija **Diseño de pantalla principal (solo supervisado)**.
+2. En la página **Diseño de pantalla principal (solo supervisado)**, elija si quiere configurar los diseños de la **Base** o las **Páginas**.
 
 ## <a name="add-items-to-the-dock"></a>Agregar elementos a la base
 
-En la hoja **Base**, puede agregar hasta seis elementos o carpetas a la base de la pantalla iOS. En cambio, muchos dispositivos admiten menos elementos; por ejemplo, los dispositivos iPhone admiten hasta cuatro elementos. En este caso, en el dispositivo se muestran solo los primeros cuatro elementos que ha configurado.
+En la página **Base**, puede agregar hasta seis elementos o carpetas a la base de la pantalla de iOS. En cambio, muchos dispositivos admiten menos elementos; por ejemplo, los dispositivos iPhone admiten hasta cuatro elementos. En este caso, en el dispositivo se muestran solo los primeros cuatro elementos que ha configurado.
 
 1. Elija **Agregar** para agregar un elemento a la base.
-2. En la hoja **Agregar fila**, elija si desea agregar una **aplicación** o una **carpeta**.
+2. En la página **Agregar fila**, elija si quiere agregar una **aplicación** o una **carpeta**.
 3. Con la información de este tema, configure las aplicaciones y las carpetas que quiere que aparezcan en la base.
-4. Siga agregando elementos. Cuando termine, haga clic en **Aceptar** en cada hoja hasta que vuelva a la hoja **Crear perfil**. Elija **Crear**.
+4. Siga agregando elementos. Cuando termine, haga clic en **Aceptar** en cada página hasta que vuelva a la página **Crear perfil**. Elija **Crear**.
 
 >[!TIP]
 > Puede arrastrar y soltar elementos en cualquier lista de las páginas de la pantalla principal para reordenarlos. 
@@ -48,19 +46,19 @@ En la hoja **Base**, puede agregar hasta seis elementos o carpetas a la base de 
 
 En este ejemplo, se configuró la pantalla de la base para mostrar solo las aplicaciones Safari, Correo y Acciones. En la imagen siguiente, se selecciona la aplicación Correo para mostrar sus propiedades:
 
-![Configuración de base de iOS de ejemplo](http://i.imgur.com/FfFiUcP.png)
+![Configuración de base de iOS de ejemplo](./media/FfFiUcP.png)
 
 Cuando asigna la directiva a un dispositivo iPhone, el resultado es una base similar a esta captura de pantalla:
 
-![Diseño de base de iOS de ejemplo en iPhone](http://i.imgur.com/bAgCe8F.png)
+![Diseño de base de iOS de ejemplo en iPhone](./media/bAgCe8F.png)
 
 ## <a name="add-home-screen-pages"></a>Agregar páginas de pantalla principal
 
 Agregue las páginas que quiere que aparezcan en la pantalla principal y las aplicaciones que aparecen en cada página. Las aplicaciones que agrega a una página se organizan de izquierda a derecha, según el orden especificado en la lista. Si agrega más aplicaciones que las que caben en una página, se mueven a una página posterior.
 
 
-1. En la hoja **Páginas**, elija **Agregar**.
-2. En la hoja **Agregar fila**, escriba un **Nombre de página**. Este nombre se usa como referencia en Azure Portal y *no se muestra* en el dispositivo iOS.
+1. En la página **Páginas**, elija **Agregar**.
+2. En la página **Agregar fila**, escriba un **Nombre de la página**. Este nombre se usa como referencia en Azure Portal y *no se muestra* en el dispositivo iOS.
 3. Elija **Agregar** y, luego, elija si desea agregar una **aplicación** o una **carpeta** a la página.
 4. Con la información de este tema, configure las aplicaciones y las carpetas que quiere que aparezcan en la página.
 
@@ -68,11 +66,11 @@ Agregue las páginas que quiere que aparezcan en la pantalla principal y las apl
 
 En este ejemplo, configuró una página nueva llamada **Contoso**. En esta página solo se muestran las aplicaciones Buscar amigos y Configuración. En la imagen siguiente, se selecciona la aplicación Configuración para mostrar sus propiedades:
 
-![Ejemplo de configuración de pantalla principal de iOS](http://i.imgur.com/Jc2OxyX.png)
+![Ejemplo de configuración de pantalla principal de iOS](./media/Jc2OxyX.png)
 
 Cuando asigna la directiva a un dispositivo iPhone, el resultado es una página similar a esta captura de pantalla:
 
-![Dispositivo iOS con la pantalla principal modificada](http://i.imgur.com/Bd37PHa.png)
+![Dispositivo iOS con la pantalla principal modificada](./media/Bd37PHa.png)
 
 ## <a name="how-to-add-an-app-to-the-list"></a>Cómo agregar una aplicación a la lista
 
@@ -87,7 +85,7 @@ Las aplicaciones que agrega a una página en una carpeta se organizan de izquier
 
 1. Escriba el **nombre de la carpeta**. Este nombre aparece en el dispositivo de los usuarios.
 2. Elija **Agregar** para crear una página en la carpeta. Puede agregar hasta 20 páginas.
-3. En la hoja **Agregar fila**, escriba un nombre para la página. Este nombre se usa como referencia en Azure Portal y *no se muestra* en el dispositivo iOS.
+3. En la página **Agregar fila**, escriba un nombre para la página. Este nombre se usa como referencia en Azure Portal y *no se muestra* en el dispositivo iOS.
 3. Escriba el **nombre de la aplicación**. Este nombre se usa como referencia en Azure Portal y *no se muestra* en el dispositivo iOS.
 2. Escriba el **Identificador del lote de aplicaciones** de la aplicación que quiere mostrar. Consulte **Cómo agregar una aplicación a la lista** para obtener ayuda.
 3. Seleccione **Agregar**. Puede agregar hasta 60 elementos.

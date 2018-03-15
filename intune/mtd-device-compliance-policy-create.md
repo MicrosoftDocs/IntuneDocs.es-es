@@ -3,8 +3,8 @@ title: "Creación de directiva de cumplimiento de dispositivos de Mobile Threat 
 titlesuffix: Azure portal
 description: "Creación de directiva de cumplimiento de dispositivos de Mobile Threat Defense en Intune"
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 06/21/2017
 ms.topic: article
@@ -15,16 +15,16 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5ae6947de91da43dc13c7544a6611e71ee15b58b
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: a02f08c347f40821a10f6d9b6df3a6b26178180b
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Creación de directiva de cumplimiento de dispositivos de Mobile Threat Defense (MTD) con Intune
 
 > [!NOTE] 
-> La información de este tema se aplica a todos los asociados de Mobile Threat Defense.
+> Este tema se aplica a todos los partners de Mobile Threat Defense.
 
 Intune con MTD le ayuda a detectar amenazas y a evaluar el riesgo en dispositivos móviles. Puede crear una regla de directivas de cumplimiento de dispositivos de Intune que evalúe el riesgo para determinar si el dispositivo cumple con la directiva o no lo hace. Luego puede usar una directiva de acceso condicional para bloquear el acceso a servicios en función del cumplimiento del dispositivo.
 
@@ -52,13 +52,13 @@ Requisitos previos de la directiva de cumplimiento de dispositivos con MTD:
 
 7.  En la hoja **Estado de dispositivos**, pulse el nivel de Mobile Threat desde la lista desplegable en **Requerir que el dispositivo tenga el nivel de Mobile Threat Defense**.
 
-    a.  **Protegido**: es la más segura. El dispositivo no puede tener ninguna amenaza presente y aún puede tener acceso a los recursos de la empresa. Si se encuentra alguna amenaza, el dispositivo se clasificará como no conforme.
+    a.  **Protegido**: este nivel es el más seguro. El dispositivo no puede tener ninguna amenaza presente y aún puede tener acceso a los recursos de la empresa. Si se encuentra alguna amenaza, el dispositivo se clasificará como no conforme.
 
     b.  **Bajo**: el dispositivo se evalúa como compatible si solo hay amenazas de nivel bajo. Cualquier valor por encima coloca al dispositivo en un estado de no conformidad.
 
-    c.  **Medio**: el dispositivo se evalúa como compatible si las amenazas que se encuentran en él son de nivel bajo o medio. Si se detectan amenazas de nivel alto, se determinará que el dispositivo no es conforme.
+    c.  **Medio**: el dispositivo se evalúa como compatible si las amenazas que se encuentran en él son de nivel bajo o medio. Si se detectan amenazas de nivel alto, se determinará que el dispositivo no es compatible.
 
-    d.  **Alto**: esta opción es la menos segura. Permite todos los niveles de amenaza y usa Mobile Threat Defense solo con fines informativos. Los dispositivos deben tener activada la aplicación MTD con esta configuración.
+    d.  **Alto**: este nivel es el menos seguro. Permite todos los niveles de amenaza y usa Mobile Threat Defense solo con fines informativos. Los dispositivos deben tener activada la aplicación MTD con esta configuración.
 
 8.  Haga clic en **Aceptar** dos veces, después seleccione **Crear**.
 
@@ -69,12 +69,12 @@ Requisitos previos de la directiva de cumplimiento de dispositivos con MTD:
 
 Para asignar una directiva de cumplimiento de dispositivos a los usuarios, seleccione una directiva que haya configurado anteriormente. Las directivas existentes se pueden encontrar en la hoja **Directivas de cumplimiento de dispositivos**.
 
-1. Seleccione la directiva que quiere asignar a los usuarios y elija **Asignaciones**. Se abre la hoja donde puede seleccionar **Grupos de seguridad de Azure Active Directory** y asignarlos a la directiva.
+1. Seleccione la directiva que quiere asignar a los usuarios y elija **Asignaciones**. Con esta acción se abre la hoja donde puede seleccionar **Grupos de seguridad de Azure Active Directory** y asignarlos a la directiva.
 
 2. Elija **Seleccionar grupos** para abrir la hoja que muestra los grupos de seguridad de Azure AD.  Al elegir **Seleccionar** la directiva se implementa para los usuarios.
 
     > [!NOTE] 
-    > Ya ha aplicado la directiva a los usuarios. Ahora se evaluará el cumplimiento de los dispositivos usados por los usuarios a los que se aplique la directiva.
+    > Ya ha aplicado la directiva a los usuarios. Se evalúa el cumplimiento por parte de los dispositivos usados por los usuarios a los que se aplique la directiva.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

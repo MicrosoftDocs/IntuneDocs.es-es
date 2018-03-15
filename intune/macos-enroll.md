@@ -1,11 +1,11 @@
 ---
-title: "Inscripción de dispositivos macOS en Intune"
-titlesuffix: Azure portal
-description: "Obtenga información sobre cómo inscribir dispositivos macOS en Intune\"."
+title: "Configuración de la inscripción de dispositivos macOS"
+titlesuffix: Microsoft Intune
+description: "Descubra cómo configurar la inscripción de dispositivos macOS en Intune."
 keywords: 
 author: ErikjeMS
 ms.author: erikje
-nmanager: dougeby
+manager: dougeby
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
@@ -15,13 +15,13 @@ ms.assetid: 46429114-2e26-4ba7-aa21-b2b1a5643e01
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f896ebd51f989c0e441043d320247946cdb8997b
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 77a1551321079765f00f0e35d57211ae4c99e5a6
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="enroll-macos-devices-in-intune"></a>Inscripción de dispositivos macOS en Intune
+# <a name="set-up-enrollment-for-macos-devices-in-intune"></a>Configuración de la inscripción de dispositivos macOS en Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -37,6 +37,13 @@ Complete los siguientes requisitos previos antes de configurar la inscripción d
 - [Configurar el Portal de empresa](company-portal-app.md)
 - Asignar licencias de usuario en el [Portal de Office 365](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Obtener un certificado push MDM de Apple](apple-mdm-push-certificate-get.md)
+
+## <a name="user-owned-ios-devices-byod"></a>Dispositivos iOS corporativos (BYOD)
+
+Puede permitir que los usuarios inscriban sus dispositivos personales para la administración de Intune. Esto se conoce como "Bring Your Own Device" o BYOD. Tras completar los requisitos previos y asignar licencias a los usuarios, estos podrán descargar la aplicación Portal de empresa para macOS en la tienda de aplicaciones y seguir las instrucciones de inscripción.
+
+## <a name="company-owned-ios-devices"></a>Dispositivos iOS propiedad de la empresa
+Para las organizaciones que adquieran dispositivos para sus usuarios, Intune admite la inscripción de dispositivos macOS propiedad de la empresa con una cuenta de [administrador de inscripción de dispositivos](device-enrollment-manager-enroll.md).
 
 ## <a name="set-up-macos-enrollment"></a>Configuración de la inscripción de macOS
 

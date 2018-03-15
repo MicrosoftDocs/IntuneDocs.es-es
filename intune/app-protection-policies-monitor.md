@@ -1,7 +1,7 @@
 ---
 title: "Supervisión de las directivas de protección de aplicaciones"
-titleSuffix: Azure portal
-description: "Vea cuántos usuarios tienen la directiva y profundice para descubrir más detalles."
+titleSuffix: Microsoft Intune
+description: "Supervise el estado de cumplimiento de las directivas de administración de aplicaciones móviles en Intune."
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,11 +15,11 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f4dae7edb99dae26c7498e55d5eead3cee2e9a8f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: fb777bb8f04adb708f8c01c6f0bfcd08f7c663f5
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Supervisión de las directivas de protección de aplicaciones
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -27,7 +27,7 @@ ms.lasthandoff: 01/25/2018
 **Si no tiene acceso a Azure Portal**, en este tema se explica [cómo crear directivas de protección de aplicaciones](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) en el portal clásico de Intune.
 
 
-Puede supervisar el estado de cumplimiento de las directivas de administración de aplicaciones móviles (MAM) que haya aplicado a los usuarios en la hoja de protección de aplicaciones de Intune en [Azure Portal](https://portal.azure.com). Podrá encontrar información sobre los usuarios afectados por las directivas MAM, el estado de cumplimiento y cualquier problema que puedan estar experimentando los usuarios finales.
+Supervise el estado de cumplimiento de las directivas de administración de aplicaciones móviles (MAM) que haya aplicado a los usuarios en el panel de protección de aplicaciones de Intune en [Azure Portal](https://portal.azure.com). Obtenga información sobre los usuarios afectados por las directivas MAM, el estado de cumplimiento y cualquier problema que puedan estar experimentando los usuarios.
 
 Hay tres lugares diferentes para supervisar el estado de cumplimiento:
 
@@ -39,12 +39,12 @@ Hay tres lugares diferentes para supervisar el estado de cumplimiento:
 
 ## <a name="summary-view"></a>Vista Resumen
 
-1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
-3. En la hoja **Intune**, elija **Aplicaciones móviles**.
-4. En la carga de trabajo **Mobile apps**, elija **Supervisar** > **Estado de usuario de protección de aplicaciones**, para ver la vista de resumen:
+1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+2. Elija **All services (Todos los servicios)** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+3. En el panel **Intune**, elija **Aplicaciones móviles**.
+4. En la carga de trabajo **Aplicaciones móviles**, elija **Supervisar** > **Estado de protección de la aplicación** para ver la vista de resumen:
 
-![Ventana de resumen en la hoja Administración de aplicaciones móviles de Intune](./media/app-protection-user-status-summary.png)
+![Mosaico de resumen en el panel de administración de aplicaciones móviles de Intune](./media/app-protection-user-status-summary.png)
 
 -   **Usuarios**: el número total de usuarios en su empresa que está usando una aplicación que está asociada con una directiva en un contexto de trabajo.
 
@@ -61,7 +61,7 @@ Hay tres lugares diferentes para supervisar el estado de cumplimiento:
 Puede obtener la vista detallada del resumen si selecciona las ventanas **Estado del usuario** (según la plataforma del sistema operativo del dispositivo) y **Usuarios marcados**.
 
 ### <a name="user-status"></a>Estado del usuario
-Puede buscar un solo usuario y examinar su estado de cumplimiento. La hoja **Informes de aplicaciones** muestra la siguiente información sobre el usuario seleccionado:
+Puede buscar un solo usuario y examinar su estado de cumplimiento. En el panel **Informes de aplicaciones** se muestra la siguiente información sobre el usuario seleccionado:
 - Dispositivos que están asociados a la cuenta de usuario
 
 - Aplicaciones con la directiva MAM en el dispositivo
@@ -73,19 +73,19 @@ Puede buscar un solo usuario y examinar su estado de cumplimiento. La hoja **Inf
   - **No protegido:** significa que la directiva se implementó para el usuario, pero la aplicación no se ha usado desde entonces en el contexto de trabajo.
 
 >[!NOTE]
-> Si el usuario que buscó no tiene la directiva de MAM implementada, aparecerá un mensaje informándole de que el usuario no será objeto de ninguna directiva MAM.
+> Si el usuario que ha buscado no tiene la directiva de MAM implementada, aparecerá un mensaje informándole de que el usuario no es objeto de ninguna directiva de MAM.
 
 Para ver los informes sobre un usuario, siga estos pasos:
 
 1.  Para seleccionar un usuario, elija el icono **Resumen**.
 
-    ![Captura de pantalla 3](./media/MAM-reporting-6.png)
+    ![Captura de pantalla en la que se resalta el mosaico Resumen en la hoja Configuración de Administración de aplicaciones móviles de Intune](./media/MAM-reporting-6.png)
 
-2. En la hoja **Informes de aplicaciones** que se abre, elija **Seleccionar usuario** para buscar un usuario de Azure Active Directory.
+2. En el panel **Informes de aplicaciones** que se abre, elija **Seleccionar usuario** para buscar un usuario de Azure Active Directory.
 
-    ![Opción Seleccionar usuario de la hoja Informes de aplicaciones](./media/MAM-reporting-2.png)
+    ![Captura de pantalla en la que se resalta la opción Seleccionar usuario en el panel Informes de aplicaciones](./media/MAM-reporting-2.png)
 
-3. Seleccione el usuario de la lista. Verá los detalles del estado de cumplimiento de ese usuario.
+3. Seleccione el usuario de la lista. Podrá ver los detalles del estado de cumplimiento de ese usuario.
 
 ### <a name="flagged-users"></a>Usuarios marcados
 La vista detallada muestra el mensaje de error, la aplicación a la que se obtuvo acceso cuando se produjo el error, la plataforma del sistema operativo del dispositivo afectada y una marca de hora.
@@ -94,7 +94,7 @@ La vista detallada muestra el mensaje de error, la aplicación a la que se obtuv
 
 Puede encontrar los mismos informes en la vista detallada e informes adicionales que le ayudarán en el estado de cumplimiento de la directiva MAM:
 
-![Captura de pantalla 4](./media/MAM-reporting-7.png)
+![Captura de pantalla en la que se resaltan dos informes disponibles en el panel Configuración](./media/MAM-reporting-7.png)
 
 -   **Informe de usuario de protección de aplicaciones:** describe la misma información que puede encontrar en el informe **Estado usuario** en la sección de vista detallada anterior.
 
@@ -110,7 +110,7 @@ Puede encontrar los mismos informes en la vista detallada e informes adicionales
 
         -   Todas las aplicaciones están registradas, pero no reciben ninguna directiva MAM.
 
-![Captura de pantalla 2](./media/MAM-reporting-4.png)
+![Captura de pantalla en la que se muestra la hoja Informes de aplicaciones de un usuario con una tabla de detalles para tres aplicaciones registradas](./media/MAM-reporting-4.png)
 
 ## <a name="table-grouping"></a>Agrupación de tablas
 
@@ -125,13 +125,13 @@ Puede exportar todas las actividades de directiva de protección de aplicaciones
 
 Siga estos pasos para generar el informe de protección de aplicaciones:
 
-1. En la hoja de administración de aplicaciones móviles de Intune, elija el informe de protección de aplicaciones.
+1. En el panel Administración de aplicaciones móviles de Intune, elija **Informe de protección de la aplicación**.
 
-    ![Captura de pantalla 6](./media/app-protection-report-csv-2.png)
+    ![Captura de pantalla en la que se resalta el vínculo de descarga Informe de protección de la aplicación en el panel Administración de aplicaciones móviles de Intune](./media/app-protection-report-csv-2.png)
 
 2. Elija Sí para guardar el informe, elija Guardar como y seleccione la carpeta en la que quiere guardar el informe.
 
-    ![Captura de pantalla 7](./media/app-protection-report-csv-1.png)
+    ![Captura de pantalla del cuadro de diálogo de confirmación de Guardar informe](./media/app-protection-report-csv-1.png)
 
 ## <a name="see-also"></a>Vea también
 [Administrar la transferencia de datos entre aplicaciones iOS](data-transfer-between-apps-manage-ios.md)

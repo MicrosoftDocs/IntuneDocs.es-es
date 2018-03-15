@@ -1,9 +1,10 @@
 ---
 title: "Pruebas y validación de Intune"
-description: "Los detalles que debe tener en cuenta cuando prueba y valida en su entorno una solución de Intune que solo está en la nube."
+titlesuffix: Microsoft Intune
+description: "Cómo probar y validar en la solución solo en la nube de Intune en su entorno."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
@@ -13,15 +14,15 @@ ms.technology:
 ms.assetid: 4f82ee0c-4bd6-4623-9b10-9249d316ccf5
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
-ms.openlocfilehash: 8521ae12062ad73dfddb0f03aeac8c07ce65de58
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 1346c0f5b0e1665e49e09fc566b9ff3da17fc17a
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="intune-testing-and-validation"></a>Pruebas y validación de Intune
 
-La fase de pruebas tiene lugar durante y después de la fase de implementación. Necesita cuentas, grupos y dispositivos de prueba para llevar a cabo pruebas de todos los escenarios necesarios de TI (administración) y de usuario final (caso de uso) que haya identificado anteriormente.
+Al probar la implementación de Microsoft Intune, plantéese realizar una validación funcional y una validación de casos de uso. La validación funcional consiste en probar cada componente y configuración para determinar si está funcionando correctamente. La validación de casos de uso conlleva la realización de pruebas para comprobar que los escenarios que implican una serie de tareas funcionan según lo previsto. 
 
 Le recomendamos que incorpore a su personal del departamento de soporte técnico de TI en la fase de pruebas para que se cree documentación de soporte técnico y que el personal de ese departamento se encuentre cómodo proporcionando ayuda del producto. Si un componente o un escenario no funciona basándose en los casos de uso, asegúrese de documentar los cambios necesarios e incluir la razón por la que se efectuó el cambio.
 

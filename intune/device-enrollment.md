@@ -1,6 +1,6 @@
 ---
 title: "¿Qué es la inscripción de dispositivos de Microsoft Intune?"
-titlesuffix: Azure portal
+titlesuffix: Microsoft Intune
 description: "Aprenda sobre la inscripción de dispositivos iOS, Android y Windows."
 keywords: 
 author: ErikjeMS
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a94703ecc1d7fd464f565855bb9b8dd9ee3c3bfb
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9f49178a2d8e8a73a693ed2f374b86b8e702680f
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="what-is-device-enrollment"></a>¿Qué es la inscripción de dispositivos?
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -37,6 +37,14 @@ Como puede observar en las tablas siguientes, hay varias formas de inscribir los
 |**[DEP](#apple-device-enrollment-program)**|   Sí |   Opcional |  Opcional|[Más información](./device-enrollment-program-enroll-ios.md)|
 |**[USB-SA](#usb-sa)**| Sí |   Opcional |  No| [Más información](./apple-configurator-setup-assistant-enroll-ios.md)|
 |**[USB-Direct](#usb-direct)**| No |    No  | No|[Más información](./apple-configurator-direct-enroll-ios.md)|
+
+## <a name="macos-enrollment-methods"></a>Métodos de inscripción de macOS
+
+| **Método** |  **Se requiere reinicio** |  **Afinidad de usuario** | **Bloqueado** | **Detalles**|
+|:---:|:---:|:---:|:---:|:---:|
+|**[BYOD](#bring-your-own-device)** | No| Sí | No | [Más información](./macos-enroll.md)|
+|**[DEM](#device-enrollment-manager)**| No |No |No  | [Más información](./device-enrollment-manager-enroll.md)|
+
 
 ## <a name="windows-enrollment-methods"></a>Métodos de inscripción de Windows
 

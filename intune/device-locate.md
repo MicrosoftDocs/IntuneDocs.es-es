@@ -14,18 +14,18 @@ ms.technology:
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 90b1321c0df49f446bfdeccbacdfd5642396dacd
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 864d528091de7a6113485347304b0dc254af2c7d
+ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Búsqueda de dispositivos iOS perdidos o robados con Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-La acción de dispositivo **Buscar dispositivos** muestra la ubicación de un dispositivo iOS perdido o robado en un mapa. El dispositivo debe ser un dispositivo iOS de la empresa, inscrito mediante DEP, que esté en modo supervisado. Antes de usar esta acción, se debe haber colocado el dispositivo en [modo perdido](/intune-azure/manage-devices/lost-mode.md).
+La acción de dispositivo **Buscar dispositivos** muestra la ubicación de un dispositivo iOS perdido o robado en un mapa. El dispositivo debe ser un dispositivo iOS de la empresa, inscrito mediante DEP, que esté en modo supervisado. Antes de usar esta acción, se debe haber colocado el dispositivo en [modo perdido](device-lost-mode.md).
 
 ## <a name="supported-platforms"></a>Plataformas compatibles
 
@@ -37,11 +37,11 @@ La acción de dispositivo **Buscar dispositivos** muestra la ubicación de un di
 
 ## <a name="how-to-locate-a-lost-or-stolen-device"></a>Cómo buscar un dispositivo extraviado o robado
 
-1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
+1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+2. Elija **All services (Todos los servicios)** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En la hoja **Intune**, elija **Dispositivos**.
-4. En la hoja **Dispositivos y grupos**, elija **Todos los dispositivos**.
-5. En la lista de dispositivos que administra, elija un dispositivo iOS y luego elija la acción remota **Buscar dispositivo**.
+4. En la hoja **Dispositivos**, pulse **Todos los dispositivos**.
+5. En la lista de dispositivos que administra, elija un dispositivo iOS, **Más** y luego la acción remota **Buscar dispositivo**.
 6. Cuando se haya localizado el dispositivo, se muestra su ubicación en la hoja **Buscar dispositivo**.
     ![Hoja Buscar dispositivo](./media/locate-device.png)
 
@@ -58,4 +58,4 @@ La acción de dispositivo **Buscar dispositivos** muestra la ubicación de un di
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Para ver el estado de la acción que acaba de realizar, en la hoja **Dispositivos y grupos**, elija **Acciones de dispositivo**.
+Para ver el estado de la acción que acaba de realizar, en la hoja **Dispositivos**, elija **Acciones de dispositivo**.

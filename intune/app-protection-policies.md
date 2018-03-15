@@ -1,12 +1,12 @@
 ---
 title: "Crear e implementar directivas de protección de aplicaciones"
-titleSuffix: Azure portal
-description: "Aprenda cómo las directivas de protección de aplicaciones de Intune pueden ayudar a proteger los datos de empresa que usan las aplicaciones que administra."
+titleSuffix: Microsoft Intune
+description: "Aprenda a crear y asignar directivas de protección de aplicaciones de Microsoft Intune."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 04/24/2017
+ms.date: 02/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,15 +15,18 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4fbb9a1f6697a8339a2854e4352749ca04bb612e
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: cd92e787fd3c1abaa8b20ce1d75141b46ab17934
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Creación y asignación de directivas de protección de aplicaciones
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+
+Descubra cómo crear directivas de protección de aplicaciones de Microsoft Intune y asignarlas a los usuarios. En este tema también se describe cómo realizar cambios en las directivas existentes.
 
 ## <a name="before-you-begin"></a>Antes de comenzar
 
@@ -34,89 +37,91 @@ Las directivas de protección de aplicaciones se pueden aplicar a aplicaciones q
 Si desea acceder a una lista de aplicaciones compatibles con MAM, vea la [lista de aplicaciones de MAM](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 ##  <a name="create-an-app-protection-policy"></a>Crear directivas de protección de aplicaciones
-1.  En la carga de trabajo **Mobile apps**, elija **Administrar** > **Directivas de protección de aplicaciones**.
+1.  En la carga de trabajo **Aplicaciones móviles**, seleccione **Directivas de protección de aplicaciones** en la sección **Administrar**. Al seleccionar esa opción, se abrirán los detalles de **Directivas de protección de aplicaciones**, donde creará nuevas directivas y editará las existentes. 
+2. Elija **Agregar una directiva**. 
 
-2.  Se abre la hoja **App protection policies** (Directivas de protección de aplicaciones), donde creará nuevas directivas y editará las existentes. Elija **Agregar una directiva**.
+  ![Captura de pantalla de la hoja "Agregar directiva"](./media/app-protection-add-policy.png)
 
-  ![Captura de pantalla de la hoja Agregar directiva](./media/app-protection-add-policy.png)
+3.  Escriba un nombre para la directiva, agregue una descripción breve y seleccione el tipo de plataforma para la directiva. Si resulta necesario, puede crear más de una directiva para cada plataforma.
 
-3.  Escriba un nombre para la directiva, agregue una descripción breve y seleccione el tipo de plataforma para el que se creará la directiva (iOS o Android). Puede crear más de una directiva para cada plataforma.
-
-4.  Seleccione **Aplicaciones** para abrir la hoja **Aplicaciones**, donde se muestra una lista de las aplicaciones disponibles. Seleccione una o más aplicaciones de la lista que quiera asociar a la directiva que está creando. Una vez seleccionadas las aplicaciones, elija **Seleccionar**, en la parte inferior de la hoja **Aplicaciones**, para guardar la selección.
+4.  Seleccione **Aplicaciones** para abrir la hoja **Aplicaciones**, donde se muestra una lista de las aplicaciones disponibles. Seleccione una o varias aplicaciones de la lista que quiera asociar a la directiva que está creando. 
+5. Una vez que haya seleccionado las aplicaciones, elija **Seleccionar** para guardar la selección.
 
     > [!IMPORTANT]
     > Debe seleccionar al menos una aplicación para crear una directiva.
 
-5.  En la hoja **Agregar directiva**, elija **Configurar los valores obligatorios** para abrir la hoja de configuración de directivas.
+6.  Elija **Configurar los valores obligatorios** en la hoja **Agregar directiva** para abrir **Configuración**.
 
-    Existen dos categorías de configuración de directivas: **Reubicación de datos** y **Acceso**.  Las directivas de reubicación de datos son aplicables a la introducción y la extracción de datos de las aplicaciones, mientras que las directivas de acceso determinan el modo en el que el usuario final tiene acceso a las aplicaciones en un contexto de trabajo.
-    Para comenzar, la configuración de directiva tiene valores predeterminados. No es necesario realizar ningún cambio si los valores predeterminados satisfacen sus necesidades.
+    Existen dos categorías de configuración de directivas: **Reubicación de datos** y **Acceso**.  Las directivas de reubicación de datos se aplican al movimiento de datos dentro y fuera de las aplicaciones. Las directivas de acceso determinan cómo accede el usuario final a las aplicaciones en un contexto de trabajo.
+    Para comenzar, la configuración de directiva tiene valores predeterminados. Si los valores predeterminados cumplen sus requisitos, no resulta necesario realizar ningún cambio.
 
     > [!TIP]
-    > Esta configuración de directiva se aplica solo al usar aplicaciones en el contexto de trabajo.  Cuando el usuario final usa la aplicación para realizar una tarea personal, no se verá afectado por estas directivas.
+    > Esta configuración de directiva se aplica solo al usar aplicaciones en el contexto de trabajo. Cuando los usuarios finales usen la aplicación para realizar una tarea personal, no se verán afectados por estas directivas.
 
+7.  Seleccione **Aceptar** para guardar esta configuración. Esto le devolverá al panel **Agregar directiva**. Seleccione **Crear** para crear la directiva y guardar la configuración.
+8. Seleccione **Aceptar** para guardar esta configuración. De esta forma, volverá a la hoja **Agregar directiva**. 
+9. Seleccione **Crear** para crear la directiva y guardar la configuración.
 
-
-6.  Seleccione **Aceptar** para guardar esta configuración. Ahora habrá regresado a la hoja **Agregar una directiva** . Seleccione **Crear** para crear la directiva y guardar la configuración.
-
-
-Cuando termine de crear una directiva como se describe en el procedimiento anterior, no se implementará en ningún usuario. Para implementar una directiva, consulte la sección siguiente titulada "Implementar una directiva para los usuarios".
+Cuando termine de crear una directiva como se describe en el procedimiento anterior, no se implementará en ningún usuario. Para implementar una directiva, consulte [Implementar una directiva para los usuarios](app-protection-policies.md#deploy-a-policy-to-users).
 
 ## <a name="deploy-a-policy-to-users"></a>Implementar una directiva para los usuarios
 
-1.  En la hoja **Directiva**, seleccione **Grupos de usuarios**, que abre la hoja **Grupos de usuarios**. Seleccione **Agregar grupo de usuarios** en la hoja **Grupos de usuarios** para abrir la hoja **Agregar grupo de usuarios**.
 
-  ![Captura de pantalla de la hoja Grupos de usuarios con la opción de menú Agregar grupo de usuarios resaltada](./media/app-protection-policy-add-users.png)
+1. En el panel **Directivas de protección de aplicaciones**, seleccione una directiva.
 
-2.  Se mostrará una lista de grupos de usuarios en la hoja **Agregar grupo de usuarios** . Esta es una lista de todos los grupos de seguridad de su **Azure Active Directory**. Seleccione los grupos de usuarios a los que quiera aplicar esta directiva y, después, elija **Seleccionar**. Al elegir **Seleccionar**, la directiva se implementa para los usuarios.
-  ![Captura de pantalla de la hoja Agregar grupo de usuarios que muestra la lista de usuarios de Azure Active Directory](./media/azure-ad-user-group-list.png)
+1. En el panel **Directiva**, elija **Asignaciones**, lo que abrirá el panel **Protección de aplicaciones de Intune - Asignaciones**. Elija **Seleccionar grupos para incluir** en el panel **Asignaciones** para abrir el panel **Seleccionar grupos para incluir**.
 
-Ahora ha creado una directiva y la ha implementado en los usuarios.
+   ![Captura de pantalla del panel Asignaciones con la opción Seleccionar grupos para incluir resaltada](./media/app-protection-policy-add-users.png)
 
-La directiva solo se aplica a los usuarios que tengan asignadas licencias de Microsoft Intune. No se aplica a los usuarios pertenecientes al grupo de seguridad seleccionado que no tengan asignada una licencia de Microsoft Intune.
+2.  Se mostrará una lista de grupos de usuarios en el panel **Add user group** (Agregar grupo de usuarios). En esta aparecen todos los grupos de seguridad de su **Azure Active Directory**. Seleccione los grupos de usuarios a los que quiera aplicar esta directiva y, después, elija **Seleccionar**. Al elegir **Seleccionar**, la directiva se implementa para los usuarios.
+  
+    ![Captura de pantalla del panel Add user group (Agregar grupo de usuarios) que muestra la lista de usuarios de Azure Active Directory](./media/azure-ad-user-group-list.png)
+
+De esta forma, habrá creado una directiva y la habrá implementado en los usuarios.
+
+La directiva solo afecta a los usuarios con licencias asignadas de Microsoft Intune. Los usuarios del grupo de seguridad seleccionado que no tengan asignada una licencia de Intune no se verán afectados.
 
 >[!IMPORTANT]
-> Si usa Intune con Administrador de configuración para administrar los dispositivos iOS y Android, la directiva solo se aplica a los usuarios directamente en el grupo seleccionado. No se ven afectados los miembros de los grupos secundarios anidados en el grupo seleccionado.
+> Si usa Intune con Administrador de configuración para administrar los dispositivos, la directiva solo se aplicará a los usuarios que estén directamente en el grupo seleccionado. Los miembros de grupos secundarios anidados en el grupo seleccionado no se verán afectados.
 
 Los usuarios finales pueden descargar las aplicaciones desde App Store o Google Play. Para obtener más información, vea:
 * [What to expect when your Android app is managed by app protection policies](app-protection-enabled-apps-android.md) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)
 * [What to expect when your iOS app is managed by app protection policies](app-protection-enabled-apps-ios.md) (Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones)
 
 ##  <a name="change-existing-policies"></a>Cambiar las directivas existentes
-Puede editar una directiva existente y aplicarla a los usuarios objetivo. Con todo, al cambiar las directivas existentes, los usuarios que ya han iniciado sesión en las aplicaciones no verán los cambios durante un período de 8 horas.
+Puede editar una directiva existente y aplicarla a los usuarios objetivo. Sin embargo, al cambiar las directivas existentes, los usuarios que ya han iniciado sesión en las aplicaciones no verán los cambios durante un período de 8 horas.
 
 Para ver el efecto de los cambios inmediatamente, el usuario final tendrá que salir de la aplicación y volver a iniciar sesión.
 
 ### <a name="to-change-the-list-of-apps-associated-with-the-policy"></a>Para cambiar la lista de aplicaciones asociadas con la directiva
 
-1.  En la hoja **Directiva de aplicaciones**, elija la directiva que quiera cambiar. De este modo se abrirá una hoja específica de la directiva que acaba de seleccionar.
+1.  En el panel **Directivas de protección de aplicaciones**, elija la directiva que quiera cambiar para abrir un panel específico para dicha directiva seleccionada.
 
-2.  En la hoja de la directiva, seleccione **Aplicaciones de destino** para abrir la lista de aplicaciones.
+2.  En el panel de la directiva, elija **Aplicaciones destinatarias** para abrir la lista de aplicaciones.
 
 3.  Quite o agregue aplicaciones de la lista y seleccione el icono **Guardar** para guardar los cambios.
 
 ### <a name="to-change-the-list-of-user-groups"></a>Para cambiar la lista de grupos de usuarios
 
-1.  En la hoja **Directiva de aplicaciones**, elija la directiva que quiera cambiar. De este modo se abrirá la hoja específica de la directiva que ha seleccionado.
 
-2.  En la hoja de la directiva, seleccione **Grupos de usuarios** para abrir la hoja **Grupo de usuarios** en la que se muestra la lista de grupos de usuarios actuales regidos por esta directiva.
+1.  En el panel **Directivas de protección de aplicaciones**, elija la directiva que quiera cambiar para abrir el panel específico para dicha directiva seleccionada.
 
-3.  Para agregar un nuevo grupo de usuarios a la directiva, elija **Agregar grupo de usuarios** y seleccione el grupo de usuarios en cuestión. Elija **Seleccionar** para implementar la directiva en el grupo seleccionado.
+2.  En el panel de la directiva, elija **Asignaciones** para abrir el panel **Protección de aplicaciones de Intune - Asignaciones**, que muestra la lista de los grupos de usuarios actuales que tienen esta directiva.
 
-4.  Para eliminar un grupo de usuarios, resalte el grupo que quiere quitar. Después, elija el botón de puntos suspensivos (…) y seleccione **Eliminar** para quitar el grupo de usuarios.
-  ![Captura de pantalla que muestra la opción Eliminar](./media/app-protection-policy-delete-user.png)
+3.  Para agregar un nuevo grupo de usuarios a la directiva, en la pestaña **Incluir**, elija **Seleccionar grupos para incluir** y seleccione el grupo de usuarios. Elija **Seleccionar** para implementar la directiva en el grupo seleccionado.
+
+4.  Para eliminar un grupo de usuarios, en la pestaña **Excluir**, elija **Seleccionar grupos para excluir** y seleccione el grupo de usuarios. Elija **Seleccionar** para quitar el grupo de usuarios.
 
 ### <a name="to-change-policy-settings"></a>Para cambiar la configuración de directiva
 
-1.  En la hoja **Directiva de aplicaciones**, elija la directiva que quiera cambiar. De este modo se abrirá una hoja específica de la directiva que acaba de seleccionar.
+1.  En el panel **Directivas de protección de aplicaciones**, elija la directiva que quiera cambiar para abrir un panel específico para dicha directiva seleccionada.
 
-
-2.  Seleccione **Configuración de directiva** para abrir la hoja **Configuración de directiva**.
+2.  Seleccione **Configuración de directiva** para abrir el panel **Configuración de directiva**.
 
 3.  Cambie la configuración y elija el icono **Guardar** para guardar los cambios.
 
 ## <a name="policy-settings"></a>Configuraciones de directiva
-Para ver una lista completa de las configuraciones de directiva para iOS y Android, seleccione una opción a continuación:
+Para ver una lista completa de las configuraciones de directivas para iOS y Android, seleccione uno de los siguientes vínculos:
 
 - [Directivas de iOS](app-protection-policy-settings-ios.md)
 - [Directivas de Android](app-protection-policy-settings-android.md)

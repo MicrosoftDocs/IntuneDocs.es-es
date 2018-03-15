@@ -1,30 +1,28 @@
 ---
-title: "Información general sobre el ciclo de vida de MDM"
-description: "Obtenga información sobre cómo Intune le ayuda a administrar dispositivos a lo largo de su ciclo de vida desde la inscripción, pasando por la configuración, hasta su posible retirada."
+title: "Información general sobre el ciclo de vida de MDM de Microsoft Intune"
+description: "Obtenga información sobre cómo Intune le ayuda a administrar dispositivos a lo largo de su ciclo de vida: desde la inscripción hasta su posible retirada, pasando por la configuración."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 06/07/2017
+ms.date: 3/2/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: f6051fa7-133f-4712-86a5-e5f5bc5ab3c7
-ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 46297080dcb332734b1e175a62e17c6c5666b469
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8755faef07e6ddae2177a2fc2453e15f1ea0fefe
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="overview-of-the-mobile-device-management-mdm-lifecycle"></a>Información general sobre el ciclo de vida de administración de dispositivos móviles (MDM)
+# <a name="overview-of-the-microsoft-intune-mobile-device-management-mdm-lifecycle"></a>Información general sobre el ciclo de vida de administración de dispositivos móviles (MDM) de Microsoft Intune
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-Todos los dispositivos que administra tienen lo que llamamos un *ciclo de vida*. Intune puede ayudarle a administrar su ciclo de vida desde la inscripción, pasando por la configuración y la protección, hasta la retirada del dispositivo cuando ya no sea necesario:
+Todos los dispositivos que administra tienen un *ciclo de vida*. Intune puede ayudarle a administrar su ciclo de vida: desde la inscripción, pasando por la configuración y la protección, hasta la retirada del dispositivo cuando ya no resulte necesario.
 
 ![El ciclo de vida del dispositivo](./media/device-lifecycle.png "el ciclo de vida del dispositivo de Intune")
 
@@ -39,7 +37,7 @@ La inscripción de los dispositivos es solo el primer paso. Para aprovechar toda
 - [**Directivas de administración de equipos Windows (con el software cliente de Intune)**](/intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client). Aunque la inscripción de los equipos Windows con Intune ofrece el máximo de funcionalidades de administración de dispositivos, Intune sigue siendo compatible con la administración de equipos Windows con el software cliente de Intune. Si necesita información sobre algunas de las tareas que puede realizar con los equipos, empiece aquí.
 
 ## <a name="protect"></a>Proteger
-En el actual sector de las TI, la protección de los dispositivos frente al acceso no autorizado es una de las tareas más importantes que se realiza. Además de los elementos del paso **Configurar** del ciclo de vida del dispositivo, Intune proporciona más funcionalidades que ayudan a proteger los dispositivos que se administran frente al acceso no autorizado o a los ataques malintencionados:
+En el actual sector de las TI, la protección de los dispositivos frente al acceso no autorizado es una de las tareas más importantes que se realizan. Además de los elementos del paso **Configurar** del ciclo de vida del dispositivo, Intune proporciona más funcionalidades que ayudan a proteger los dispositivos que se administran frente al acceso no autorizado o a los ataques malintencionados:
 - [**Autenticación multifactor**](/intune-classic/deploy-use/protect-your-devices-with-microsoft-intune). La presencia de una capa adicional de autenticación para inicios de sesión de usuario puede ayudar a proteger aún más los dispositivos. Muchos dispositivos admiten la autenticación multifactor, que exige un segundo nivel de autenticación, como una llamada de teléfono o un mensaje de texto, para que los usuarios puedan acceder.
 - [**Configuración de Windows Hello para empresas**](windows-hello.md) ([Portal clásico](/intune-classic/deploy-use/control-microsoft-passport-settings-on-devices-with-microsoft-intune)). Windows Hello para empresas es un método alternativo de inicio de sesión que permite a los usuarios usar un *gesto*, como una huella digital o Windows Hello, para iniciar sesión sin necesidad de una contraseña.
 - [**Directivas para proteger equipos Windows (con el software cliente de Intune)**](/intune-classic/deploy-use/policies-to-protect-windows-pcs-in-microsoft-intune). Al administrar equipos Windows con el software cliente de Intune, hay disponibles directivas que permiten controlar la configuración de Endpoint Protection, de las actualizaciones de software y de Firewall de Windows en los equipos que administra.

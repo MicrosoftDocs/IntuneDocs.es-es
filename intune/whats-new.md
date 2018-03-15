@@ -5,9 +5,9 @@ description: Descubra las novedades del portal de Intune Azure
 keywords: 
 author: ErikjeMS
 ms.author: erikje
-manager: dougeby
-ms.date: 02/01/2018
-ms.topic: article
+manager: angrobe
+ms.date: 01/02/2018
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,11 +15,11 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: angrobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5058428dca9212d8b20364f58ac463939a699221
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 7490302c7bd928417cdf946cbbf74f8b8b7531ed
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novedades de Microsoft Intune
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 02/19/2018
 Conozca las novedades semanales de Microsoft Intune. También podrá obtener información sobre los [próximos cambios](#whats-coming), [notificaciones importantes](#notices) sobre el servicio e información sobre las [versiones anteriores](whats-new-archive.md).
 
 > [!Note]
-> Para obtener más información sobre la nueva funcionalidad de administración híbrida de dispositivos móviles (MDM), consulte la [página Novedades de MDM híbrida](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
+> Para obtener más información sobre la nueva funcionalidad de administración híbrida de dispositivos móviles (MDM), visite nuestra [página de novedades](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
 
 <!-- Common categories:  
@@ -41,6 +41,107 @@ Conozca las novedades semanales de Microsoft Intune. También podrá obtener inf
   ### Monitor and troubleshoot
 
 -->   
+
+
+## <a name="week-of-february-19-2018"></a>Semana del 19 de febrero de 2018
+### <a name="device-enrollment"></a>Inscripción de dispositivos
+
+#### <a name="intune-support-for-multiple-apple-dep--apple-school-manager-accounts----747685---"></a>Compatibilidad de Intune con varias cuentas del programa del Programa de inscripción de dispositivos (DEP) de Apple o de Apple School Manager (ASM) <!-- 747685 -->
+ 
+Intune ahora admite la inscripción de dispositivos de hasta 100 cuentas distintas del Programa de inscripción de dispositivos de Apple o de Apple School Manager. Cada token cargado puede administrarse por separado para los perfiles y los dispositivos de inscripción. Es posible asignar un perfil de inscripción diferente para cada token de DEP/School Manager. Si se cargan varios tokens de School Manager, solo pueden compartirse de uno en uno con Microsoft School Data Sync.
+
+Tras la migración, la versión beta de las API Graph y los scripts publicados para la administración de Apple DEP o ASM en Graph ya no funcionará. Las nuevas versiones beta de las API Graph están en desarrollo y se publicarán después de la migración.
+
+#### <a name="see-enrollment-restrictions-per-user----1634444-eeready-wnready---"></a>Vea las restricciones de inscripción por usuario <!-- 1634444 eeready wnready -->
+En la hoja **Solución de problemas**, ahora puede ver las restricciones de inscripción que están en vigor para cada usuario si selecciona **Restricciones de inscripción** en la lista **Asignaciones**.
+
+### <a name="device-management"></a>Administración de dispositivos
+#### <a name="windows-defender-health-status-and-threat-status-reports---854704---"></a>Informes de estado de mantenimiento y de estado de amenazas de Windows defender <!--854704 -->
+
+Conocer el estado de mantenimiento de Windows Defender es clave para la administración de equipos de Windows.  Con esta actualización, Intune agrega nuevos informes y acciones para el estado y el mantenimiento del agente de Windows Defender. Con un informe de resumen de estado en la carga de trabajo de conformidad de los dispositivos, puede ver los dispositivos que necesitan alguna de las siguientes acciones:
+- actualización de la firma
+- Reiniciar
+- intervención manual
+- examen completo
+- otros estados del agente que requieren intervención
+
+Un informe de obtención de detalles para cada categoría de estado muestra los equipos individuales que requieren atención o identificados como **limpios**.
+
+#### <a name="new-privacy-settings-for-device-restrictions---1308926---"></a>Nueva configuración de privacidad para las restricciones de dispositivos <!--1308926 -->
+Hay dos nuevas opciones de privacidad disponibles para los dispositivos:
+- **Publicar las actividades del usuario**: establezca esta propiedad en **Bloquear** para evitar experiencias compartidas y la detección de recursos usados recientemente en el selector de tareas.
+- **Solo actividades locales**: establezca esta propiedad en **Bloquear** para evitar experiencias compartidas y la detección de recursos usados recientemente en el selector de tareas según la actividad local únicamente.
+
+#### <a name="new-settings-for-the-edge-browser---1469166---"></a>Nueva configuración para el explorador Microsoft Edge <!--1469166 -->
+Hay dos nuevas opciones disponibles para dispositivos con el explorador Microsoft Edge: **Ruta de acceso al archivo de favoritos** y **Cambios a Favoritos**. 
+
+### <a name="app-management"></a>Administración de aplicaciones
+#### <a name="protocol-exceptions-for-applications---1035509---"></a>Excepciones de protocolo para las aplicaciones <!--1035509 -->
+
+Puede crear excepciones a la directiva de transferencia de datos de la administración de aplicaciones móviles (MAM) de Intune para abrir determinadas aplicaciones no administradas. Dichas aplicaciones deben ser de confianza para el departamento de TI. Aparte de las excepciones que cree, la transferencia de datos sigue estando limitada a las aplicaciones que se administran mediante Intune cuando la directiva de transferencia de datos se establece en **Managed apps only** (Solo aplicaciones administradas). Puede crear las restricciones mediante protocolos (iOS) o paquetes (Android).
+ 
+Por ejemplo, puede agregar el paquete de WebEx como una excepción a la directiva de transferencia de datos de MAM. Esto permitirá que los vínculos de WebEx en un mensaje de correo electrónico de Outlook administrado se abran directamente en la aplicación de WebEx. Se seguirá restringiendo la transferencia de datos en otras aplicaciones no administradas. Para obtener más información, consulte [Data transfer policy exceptions for apps](app-protection-policies-exception.md) (Excepciones de la directiva de transferencia de datos para aplicaciones).
+
+#### <a name="windows-information-protection-wip-encrypted-data-in-windows-search-results----1469193---"></a>Datos cifrados de Windows Information Protection (WIP) en los resultados de la búsqueda de Windows <!-- 1469193 -->
+Un parámetro de configuración de la directiva de Windows Information Protection (WIP) le permite controlar si los datos cifrados por WIP se incluyen en los resultados de la búsqueda de Windows. Para establecer esta opción de la directiva de protección de aplicaciones, seleccione **Permitir que el indizador de Windows Search busque elementos cifrados** en la **Configuración avanzada** de la directiva de Windows Information Protection. La directiva de protección de aplicaciones debe establecerse en la plataforma *Windows 10* y la directiva de aplicación **Estado de inscripción** debe establecerse en **Con inscripción**. Para obtener más información, consulte [Permitir que el indizador de Windows Search busque elementos cifrados](windows-information-protection-policy-create.md#allow-windows-search-indexer-to-search-encrypted-items).
+
+#### <a name="configuring-a-self-updating-mobile-msi-app----1740840---"></a>Configurar una aplicación MSI móvil de auto-actualización <!-- 1740840 -->
+Puede configurar una aplicación móvil MSI con auto-actualización para que omita el proceso de comprobación de versión. Esta capacidad resulta útil para evitar que se produzca una condición de carrera. Por ejemplo, este tipo de condición de carrera podría producirse cuando la aplicación que el desarrollador de aplicaciones actualiza automáticamente también la estuviera actualizando Intune. Ambos podrían tratar de aplicar una versión de la aplicación en un cliente de Windows, lo que podría crear un conflicto. Para estas aplicaciones MSI que se actualizan automáticamente, puede configurar el valor **Omitir la versión de la aplicación** en la hoja **Información de la aplicación**. Cuando se cambia esta configuración a **Sí**, Microsoft Intune omite la versión de la aplicación instalada en el cliente de Windows. 
+
+#### <a name="related-sets-of-app-licenses-supported-in-intune----1864117---"></a>Conjuntos de licencias de aplicaciones relacionadas admitidas en Intune <!-- 1864117 -->
+Intune en Azure Portal ya admite conjuntos de licencias de aplicaciones relacionadas como un elemento de aplicación único en la interfaz de usuario. Además, las aplicaciones con licencia sin conexión sincronizadas desde Microsoft Store para Empresas se consolidarán en una entrada de aplicación única y los detalles de implementación de los paquetes individuales se migrarán a la entrada única. Para ver los conjuntos de licencias de aplicaciones relacionadas en Azure Portal, seleccione **Licencias de aplicaciones** desde la hoja **Aplicaciones móviles**.
+
+### <a name="device-configuration"></a>Configuración de los dispositivos
+#### <a name="windows-information-protection-wip-file-extensions-for-automatic-encryption----1463582---"></a>Extensiones de archivo de Windows Information Protection (WIP) para el cifrado automático <!-- 1463582 -->
+Un valor de la directiva de Windows Information Protection (WIP) le permite ahora especificar qué extensiones de archivo se cifran automáticamente al copiar desde un recurso compartido del bloque de mensajes del servidor (SMB) dentro de los límites corporativos, como se define en la directiva de WIP.
+
+#### <a name="configure-resource-account-settings-for-surface-hubs"></a>Configurar las opciones de la cuenta del recurso para Surface Hubs
+
+Ya puede configurar de forma remota las opciones de la cuenta del recurso para Surface Hubs.
+
+Una instancia de Surface Hub usa la cuenta del recurso para autenticarse en Skype o Exchange y así poder unirse a una reunión. Deberá crear una cuenta del recurso única para que Surface Hub pueda aparecer en la reunión como la sala de conferencias. Por ejemplo, una cuenta del recurso como **Sala de conferencias B41/6233**.
+
+> [!NOTE]
+> - Si deja campos en blanco invalidará los atributos configurados previamente en el dispositivo.
+>
+> - Las propiedades de la cuenta del recurso pueden cambiar dinámicamente en Surface Hub. Por ejemplo, si el cambio de contraseñas está activado. Por lo tanto, es posible que los valores de la consola de Azure tarden algún tiempo en reflejar la realidad en el dispositivo. 
+>
+>   Para entender lo que está configurado actualmente en Surface Hub, se puede incluir la información de la cuenta del recurso en el inventario de hardware (que ya tiene un intervalo de 7 días) o como propiedades de solo lectura. Para mejorar la precisión después de llevar a cabo la acción remota, puede obtener el estado de los parámetros inmediatamente después de ejecutar la acción para actualizar la cuenta o los parámetros en Surface Hub.
+
+
+##### <a name="attack-surface-reduction"></a>Reducción de la superficie expuesta a ataques
+
+
+|Nombre de la configuración  |Opciones de configuración  |Descripción  |
+|---------|---------|---------|
+|Ejecución de contenido ejecutable protegido por contraseña del correo electrónico|Bloquear, Auditoría, No configurado|Evitar que se ejecuten los archivos ejecutables protegidos por contraseña descargados a través del correo electrónico.|
+|Protección de ransomware avanzada|Habilitado, Auditoría, No configurado|Usar protección ransomware intensa.|
+|Marcar el robo de credenciales desde el subsistema de autoridad de seguridad local de Windows|Habilitado, Auditoría, No configurado|Marcar el robo de credenciales desde el subsistema de autoridad de seguridad local de Windows (lsass.exe).|
+|Creación del proceso desde comandos PSExec y WMI|Bloquear, Auditoría, No configurado|Bloquear creaciones del proceso que se originan desde comandos PSExec y WMI.|
+|Procesos que no son de confianza y sin firma que se ejecutan desde una unidad USB|Bloquear, Auditoría, No configurado|Bloquear los procesos que no son de confianza y sin firma que se ejecutan desde una unidad USB.|
+|Archivos ejecutables que no cumplen unos criterios de uso habitual, edad o lista de confianza|Bloquear, Auditoría, No configurado|Bloquear la ejecución de los archivos ejecutables a menos que cumplan unos criterios de uso habitual, edad o lista de confianza.|
+
+##### <a name="controlled-folder-access"></a>Acceso controlado a carpetas
+
+|Nombre de la configuración  |Opciones de configuración  |Descripción  |
+|---------|---------|---------|
+|Protección de carpetas (ya implementado)|No configurado, Habilitar, Solo auditoría (ya implementado)<br><br> **Nuevo**<br>Impedir la modificación del disco, Auditar la modificación del disco|
+Proteger los archivos y carpetas frente a cambios no autorizados de aplicaciones hostiles.<br><br>**Habilitar**: impedir que las aplicaciones que no son de confianza modifiquen o eliminen archivos en carpetas protegidas y que escriban en los sectores de disco.<br><br>
+**Solo impedir la modificación del disco**:<br>Impedir que las aplicaciones que no son de confianza escriban en los sectores de disco. Las aplicaciones que no son de confianza todavía podrán modificar o eliminar archivos en las carpetas protegidas.|
+
+#### <a name="additions-to-system-security-settings-for-windows-10-and-later-compliance-policies---1704133--"></a>Adiciones a la configuración de seguridad del sistema para las directivas de cumplimiento de Windows 10 y posteriores <!--1704133-->
+
+Ya hay disponibles adiciones a la configuración de cumplimiento de Windows 10, incluida la necesidad del Firewall y el Antivirus de Windows Defender. 
+
+
+### <a name="role-based-access-control"></a>Control de acceso basado en roles
+### <a name="intune-apps"></a>Aplicaciones de Intune
+#### <a name="support-for-offline-apps-from-the-microsoft-store-for-business---1222672--"></a>Compatibilidad con aplicaciones sin conexión desde la Tienda Microsoft para Empresas <!--1222672-->
+Las aplicaciones sin conexión que ha adquirido en Microsoft Store para Empresas ahora se sincronizan con Azure Portal. Puede implementar estas aplicaciones en grupos de usuarios o dispositivos. Las aplicaciones sin conexión se instalan mediante Intune, no Microsoft Store.
+
+#### <a name="prevent-end-users-from-manually-adding-or-removing-accounts-in-the-work-profile----1728700---"></a>Impedir que los usuarios finales agreguen o quiten cuentas manualmente en el perfil de trabajo <!-- 1728700 -->
+
+Al implementar la aplicación Gmail en un perfil de Android for Work, puede impedir que los usuarios finales agreguen o quiten cuentas en el perfil de trabajo mediante la opción de configuración **Agregar y quitar cuentas** del perfil de restricciones del dispositivo Android for Work.
 
 ## <a name="week-of-february-5-2018"></a>Semana del 5 de febrero de 2018
 
@@ -69,6 +170,10 @@ Tras la migración, la versión beta de las API Graph y los scripts publicados p
 
 ### <a name="remote-printing-over-a-secure-network----1709994----"></a>Impresión remota a través de una red segura <!-- 1709994  -->
 Las soluciones de impresión móvil inalámbricas de PrinterOn permitirán a los usuarios imprimir remotamente desde cualquier lugar en cualquier momento a través de una red segura. PrinterOn se integrará con el SDK de aplicaciones de Intune para iOS y Android. Podrá destinar las directivas de protección de aplicaciones a esta aplicación a través de la hoja **Directivas de protección de aplicaciones** de Intune de la consola de administración. Los usuarios finales podrán descargar la aplicación "PrinterOn for Microsoft" a través de Play Store o iTunes para usarla dentro de su ecosistema de Intune.
+
+### <a name="macos-company-portal-support-for-enrollments-that-use-the-device-enrollment-manager----1352411---"></a>compatibilidad del Portal de empresa de macOS para las inscripciones que usen el administrador de inscripciones de dispositivos <!-- 1352411 -->
+
+Los usuarios ya pueden usar el administrador de inscripciones de dispositivos cuando se inscriban con Portal de empresa para macOS.
 
 ## <a name="week-of-january-29-2018"></a>Semana del 29 de enero de 2018
 
@@ -104,16 +209,6 @@ El tipo de aplicación **integrada** facilita la creación y la asignación de a
 #### <a name="including-and-excluding-app-assignment-based-on-groups----1406920---"></a>Inclusión o exclusión de la asignación de aplicaciones con base en grupos <!-- 1406920 -->
 
 Durante la asignación de aplicaciones y después de seleccionar un tipo de asignación, puede seleccionar los grupos para incluir, así como los grupos para excluir.
-
-#### <a name="website-learning-mode----1631908---"></a>Modo de aprendizaje del sitio web <!-- 1631908 -->
-
-Ahora Intune presenta una extensión del modo de aprendizaje de Windows Information Protection (WIP). Además de ver información sobre las aplicaciones habilitadas para WIP, puede ver un resumen de los dispositivos que han compartido datos de trabajo con sitios web. Con esta información, puede determinar qué sitios web se deben agregar a las directivas WIP de grupo y de usuario.
-
-#### <a name="approve-the-company-portal-app-for-android-for-work---1797090---"></a>Aprobación de la aplicación Portal de empresa para Android for Work <!--1797090 -->
-Si su organización usa Android for Work, debe aprobar manualmente la aplicación Portal de empresa para Android para seguir recibiendo actualizaciones automáticas desde la tienda de Google Play administrada.
-
-#### <a name="faceid-on-ios-devices----1807377---"></a>FaceID en dispositivos iOS<!-- 1807377 -->
-Las directivas de protección de aplicaciones de Intune ahora admiten una configuración que controla FaceID en dispositivos iOS. Esta configuración es para los dispositivos que admiten la funcionalidad FaceID (actualmente solo el iPhone X). Esta configuración es independiente de los controles de TouchID admitidos actualmente. Las organizaciones tienen la posibilidad de elegir si se debe confiar en FaceID como una solicitud de PIN válida como alternativa a los controles de TouchID.
 
 ### <a name="device-configuration"></a>Configuración de los dispositivos
 
@@ -196,7 +291,7 @@ Ahora puede apagar los dispositivos iOS 10.3 supervisados. Esta acción apaga in
 
 #### <a name="disallow-datetime-changes-to-samsung-knox-devices----1468103---"></a>No permitir cambios de fecha y hora en dispositivos Samsung Knox <!-- 1468103 -->
 
-Ya puede bloquear los cambios de fecha y hora en dispositivos Samsung KNOX. Encontrará esta característica en **Perfiles de configuración de dispositivo** > **Restricciones de dispositivos (Android)** > **General**.
+Hemos agregado una nueva característica que permite bloquear los cambios de fecha y hora en los dispositivos Samsung Knox. Puede encontrarla en **Perfiles de configuración de dispositivo** > **Device restrictions (Android)**(Restricciones de dispositivos [Android]) > **General**.
 
 #### <a name="surface-hub-resource-account-supported----1566442----"></a>Compatibilidad con la cuenta del recurso de Surface Hub <!-- 1566442  -->
 
@@ -241,7 +336,7 @@ Los administradores pueden configurar los valores siguientes:
      Especifica si la sincronización de calendario y otros servicios de Exchange Server están habilitados. Por ejemplo: sincronización de reunión.
 
 #### <a name="install-office-apps-on-macos-devices----1494311---"></a>Instalación de aplicaciones de Office en dispositivos macOS <!-- 1494311 -->
-Ahora podrá instalar aplicaciones de Office en dispositivos macOS. Este nuevo tipo de aplicación le permite instalar Word, Excel, PowerPoint, Outlook y OneNote. Estas aplicaciones también incluyen Microsoft AutoUpdater (MAU) para ayudar a mantener aplicaciones seguras y actualizadas.
+Ahora podrá instalar aplicaciones de Office en dispositivos macOS. Este nuevo tipo de aplicación le permitirá instalar Word, Excel, PowerPoint, Outlook y OneNote. Estas aplicaciones también incluyen Microsoft AutoUpdater (MAU) para ayudar a mantener aplicaciones seguras y actualizadas.
 
 ### <a name="app-management"></a>Administración de aplicaciones
 
@@ -267,8 +362,7 @@ Por otro lado, la nueva colección de entidades **Usuario actual** solo contiene
 
 ### <a name="updated-graph-apis----1736360---"></a>Actualización de las API Graph <!-- 1736360 -->
 
-Hemos actualizado algunas de las Graph API para Intune que están en versión beta. Consulte el [registro de cambios de Graph API](https://developer.microsoft.com/graph/docs/concepts/changelog) mensual para obtener más información.
-
+En esta versión, hemos actualizado algunas de las API Graph para Intune que están en versión beta. Consulte el [registro de cambios de API Graph](https://developer.microsoft.com/graph/docs/concepts/changelog) mensual para obtener más información.
 
 ## <a name="week-of-december-4-2017"></a>Semana del 4 de diciembre de 2017
 
@@ -599,6 +693,28 @@ La primera versión del modelo de datos del Almacenamiento de datos de Intune so
 
 
 ## <a name="notices"></a>Notificaciones
+
+
+### <a name="coming-soon-workflow-updates-to-intune-administration-ui"></a>Próximamente: actualizaciones de flujo de trabajo a la interfaz de usuario de administración de Intune
+
+Intune está actualizando la experiencia del administrador en la versión de servicio de marzo. No es necesario realizar ninguna acción, pero queríamos que lo supiera como parte del compromiso de transparencia de Microsoft. Cuando se habilita la administración de dispositivos Android o Apple, Intune envía información del usuario y dispositivo para integrar con estos servicios de terceros a fin de administrar sus dispositivos correspondientes. La experiencia de interfaz de usuario de administrador mejorada que presentamos en la versión de servicio de marzo proporcionará una mayor transparencia a los datos que se comparten. Los usuarios finales no se verán afectados por estos cambios de la interfaz de usuario.
+
+#### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
+
+Entre los escenarios que agregarán un consentimiento para compartir ventanas de datos se incluyen:
+- Al habilitar Android for Work. 
+- Al habilitar y cargar certificados push MDM de Apple. 
+- Al habilitar cualquiera de los servicios de Apple, por ejemplo, el Programa de inscripción de dispositivos, School Manager y el Programa de Compras por Volumen.
+
+En cada caso, el consentimiento está estrictamente relacionado con la ejecución de un servicio de administración de dispositivos móviles, por ejemplo, confirmar que un administrador de TI ha autorizado la inscripción de dispositivos Google o Apple. La documentación para tratar qué información se comparte cuando los nuevos flujos de trabajo se publican está disponible aquí:
+- [Datos que Intune manda a Google](data-intune-sends-to-google.md)
+- [Data que Intune manda a Apple](data-intune-sends-to-apple.md)
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué necesito hacer para prepararme para este cambio?
+
+No tiene que hacer nada para prepararse para este cambio, puesto que son actualizaciones secundarias de la interfaz de usuario del flujo de trabajo. Para obtener más información sobre el cumplimiento del reglamento RGPD por parte de Microsoft, vaya al Centro de confianza desde el vínculo Información adicional.
+
+
 
 ### <a name="plan-for-change-update-where-you-configure-your-app-protection-policies"></a>Plan de cambio: actualización de la ubicación en la que se configuran las directivas de protección de aplicaciones
 

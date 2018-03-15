@@ -1,12 +1,12 @@
 ---
 title: "Cómo agregar aplicaciones a Microsoft Intune"
-titlesuffix: Azure portal
-description: "Estos procedimientos le ayudarán a tener sus aplicaciones en Intune listas para ser asignadas a usuarios y dispositivos. \""
+titlesuffix: 
+description: "Descubra cómo agregar aplicaciones a Microsoft Intune para que pueda asignar aplicaciones a usuarios y dispositivos. Intune admite una gran variedad de tipos diferentes de aplicaciones."
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/13/2018
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9d5fda9cc74ffa3d7be43c90efa65c59451662d3
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: 91762eafbba5f96ce04f3ffd4d83f63434a3ac74
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>Agregar una aplicación a Microsoft Intune
 
@@ -121,8 +121,8 @@ Estos son los requisitos de espacio de almacenamiento en la nube:
 Se pueden usar categorías de aplicaciones para ordenar las aplicaciones de forma que sea más fácil para los usuarios encontrarlas en el portal de empresa. Puede asignar una o varias categorías a una aplicación, por ejemplo, **Desarrollador de aplicaciones** o **Communication apps** (Aplicaciones de comunicación).
 Al agregar una aplicación a Intune, tiene la opción de seleccionar la categoría que quiera. Use los temas específicos de la plataforma para agregar una aplicación y asignar categorías. Para crear y editar sus propias categorías, use el procedimiento siguiente:
 
-1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
+1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+2. Elija **All services (Todos los servicios)** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En la hoja **Intune**, elija **Aplicaciones móviles**.
 4. En la carga de trabajo **Mobile Apps**, elija **Configuración** > **Categorías de aplicaciones**.
 5. En la hoja **Categorías de aplicaciones**, se muestra una lista de las categorías actuales. Elija una de las acciones siguientes:

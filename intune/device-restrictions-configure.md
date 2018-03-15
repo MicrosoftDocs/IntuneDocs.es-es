@@ -1,25 +1,23 @@
 ---
-title: "Configuración de restricciones de dispositivo de Intune"
-titleSuffix: Azure portal
-description: "Aprenda a usar Intune para configurar los valores y las características en los dispositivos que administra."
+title: "Configuración de restricciones de dispositivos en Microsoft Intune"
+titleSuffix: 
+description: "Aprenda a usar Microsoft Intune para configurar los valores y las características en los dispositivos que administra."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 04/12/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 42f9b104-c1f6-4dfc-8aa4-1d33e1eaf61f
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 93b6a642f26ec6273853f75d063fd368698f3864
-ms.sourcegitcommit: 93622d740cbd12043eedc25a9699cc4256e23e7e
+ms.openlocfilehash: 62c12cde5ca128a26b10e0e4516e0bbf7e0f0bbb
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos en Microsoft Intune
 
@@ -33,16 +31,16 @@ Las restricciones de dispositivos permiten controlar una amplia gran de opciones
 
 Por ejemplo, puede crear un perfil de restricción de dispositivos que impida que los usuarios de dispositivos iOS accedan a la cámara del dispositivo.
 
-Use la información de este tema para conocer los aspectos básicos de la configuración de perfiles de restricciones de dispositivos. Luego, siga leyendo los temas correspondientes a cada plataforma para saber las peculiaridades de cada dispositivo.
+Descubra los conceptos básicos sobre los perfiles de restricción de dispositivos y lea los artículos de las distintas plataformas para obtener información sobre aspectos específicos de los dispositivos.
 
-Para crear un perfil de dispositivo que contenga la configuración de restricciones de dispositivos:
+## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Creación de un perfil de dispositivo que contenga la configuración de restricciones de dispositivos
 
-1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
-3. En la hoja **Intune**, elija **Configurar dispositivos**.
-2. En la hoja **Configuración del dispositivo**, elija **Administrar** > **Perfiles**.
-3. En la hoja de perfiles, elija **Create Profile** (Crear perfil).
-4. En la hoja **Create Profile** (Crear perfil), escriba un **nombre** y una **descripción** para el perfil de restricción de dispositivo.
+1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+2. Elija **All services (Todos los servicios)** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+3. En la página **Intune**, elija **Configuración del dispositivo**.
+2. En la página **Configuración del dispositivo**, en la sección **Administrar**, elija **Perfiles**.
+3. En la página **Perfiles**, elija **Crear perfil**.
+4. En la página **Crear perfil**, escriba un **Nombre** y una **Descripción** para el perfil de restricción de dispositivos.
 5. En la lista desplegable **Plataforma**, seleccione la plataforma del dispositivo a la que quiere aplicar configuración personalizada. Actualmente, puede elegir una de las siguientes plataformas para la configuración de restricciones de dispositivos:
     - **Android**
     - **iOS**
@@ -61,9 +59,9 @@ Para crear un perfil de dispositivo que contenga la configuración de restriccio
     - [Configuración de Windows 10 Team](device-restrictions-windows-10-teams.md)
     - [Configuración de Windows Holographic for Business](device-restrictions-windows-holographic.md)
     - [Configuración de Android for Work](device-restrictions-android-for-work.md)
-8. Cuando haya terminado, vuelva a la hoja **Create Profile** (Crear perfil) y presione **Crear**.
+8. Cuando haya terminado, vuelva a la página **Crear perfil** y haga clic en **Crear**.
 
-El perfil se crea y aparece en la hoja de la lista de perfiles.
+Se creará el perfil y aparecerá en la página con la lista de perfiles.
 Si desea continuar y asignar este perfil a grupos, consulte [Asignación de perfiles de dispositivo](device-profile-assign.md).
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.

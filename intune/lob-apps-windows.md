@@ -1,12 +1,12 @@
 ---
-title: "Adición de aplicaciones de línea de negocio de Windows a Intune"
-titlesuffix: Azure portal
-description: "Obtenga información sobre cómo agregar aplicaciones de línea de negocio de Windows a Intune\"."
+title: "Adición de aplicaciones de línea de negocio de Windows a Microsoft Intune"
+titlesuffix: 
+description: "Descubra cómo agregar aplicaciones de línea de negocio (LOB) de Windows a Microsoft Intune."
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/3/2017
+ms.date: 02/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,16 +15,17 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 72e0a9011ba6dda324ace96fb2dbefb42c608641
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: b687b71f9d264364ff758fdd46b0739465c16865
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-add-windows-line-of-business-lob-apps-to-microsoft-intune"></a>Adición de aplicaciones de línea de negocio (LOB) de Windows a Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+Una aplicación de línea de negocio (LOB) es aquella que se agrega desde un archivo de instalación de la aplicación. Estos tipos de aplicaciones normalmente se han escrito internamente. En los pasos siguientes se proporcionan instrucciones para ayudarle a agregar una aplicación de LOB de Windows a Microsoft Intune.
 
 ## <a name="step-1---specify-the-software-setup-file"></a>Paso 1: Especificación del archivo de instalación de software
 
@@ -68,6 +69,10 @@ ms.lasthandoff: 01/30/2018
 ## <a name="step-5---update-a-line-of-business-app"></a>Paso 5: Actualización de una aplicación de línea de negocio
 
 [!INCLUDE[shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
+
+## <a name="configuring-a-self-updating-mobile-msi-app-to-ignore-the-version-check-process"></a>Configuración de una aplicación móvil MSI con auto-actualización para omitir el proceso de comprobación de versión
+
+Puede configurar una aplicación móvil MSI con auto-actualización para que omita el proceso de comprobación de versión. Los desarrolladores de aplicaciones actualizan automáticamente algunas aplicaciones MSI basadas en el instalador. Para estas aplicaciones MSI que se actualizan automáticamente, puede configurar el valor **Omitir la versión de la aplicación** en la hoja **Información de la aplicación**. Cuando se cambia esta configuración a **Sí**, Microsoft Intune no aplica la versión de la aplicación instalada en el cliente de Windows. Esta capacidad resulta útil para evitar que se produzca una condición de carrera. Por ejemplo, este tipo de condición de carrera podría producirse cuando la aplicación que el desarrollador de aplicaciones actualiza automáticamente también la estuviera actualizando Intune. Ambos podrían tratar de aplicar una versión de la aplicación en un cliente de Windows, lo que podría crear un conflicto.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

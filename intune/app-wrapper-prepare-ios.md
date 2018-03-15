@@ -1,11 +1,11 @@
 ---
 title: Ajuste de aplicaciones iOS con la herramienta de ajuste de aplicaciones de Intune
-description: "Use la información de este tema para aprender a ajustar las aplicaciones iOS sin modificar el código de la propia aplicación. Prepare las aplicaciones de modo que pueda aplicar las directivas de administración de aplicaciones móviles."
+description: "Obtenga información sobre cómo ajustar las aplicaciones iOS sin modificar el código de la propia aplicación. Prepare las aplicaciones de modo que pueda aplicar las directivas de administración de aplicaciones móviles."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/18/2018
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4925fc86596437d0560bd7fa2598eaf95126df16
-ms.sourcegitcommit: cede2e15bd62f1073131fbc9af7623cdfc3730cf
+ms.openlocfilehash: c9329c25d6211149102c06b44fdb6d6222b13550
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicaciones iOS para directivas de protección de aplicaciones con la herramienta de ajuste de aplicaciones de Intune
 

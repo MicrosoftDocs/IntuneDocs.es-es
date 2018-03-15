@@ -1,25 +1,23 @@
 ---
-title: "Cómo configurar opciones de correo electrónico de Intune"
-titleSuffix: Azure portal
-description: "Aprenda a configurar Intune para crear conexiones al correo electrónico corporativo en los dispositivos que administra."
+title: "Configuración del correo electrónico de Microsoft Intune"
+titleSuffix: 
+description: "Aprenda a configurar Microsoft Intune para crear conexiones al correo electrónico corporativo en los dispositivos que administra."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 06/03/2017
+ms.date: 3/1/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 484bd9b0-fbf1-4f4f-940c-6b12fa07e228
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b8558da2460b6443cbd4d42f7dec420d3e7abc7d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d805d10efccb92ca3fe65b771bf7689e22f42088
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Configuración del correo electrónico en Microsoft Intune
 
@@ -37,16 +35,16 @@ Puede usar perfiles de correo electrónico para configurar el cliente de correo 
 - Windows Phone 8.1 y versiones posteriores
 - Windows 10 (escritorio) y Windows 10 Mobile
 
-Use la información de este tema para conocer los aspectos básicos de la configuración de un perfil de correo electrónico. Luego, siga leyendo los temas correspondientes a cada plataforma para saber las peculiaridades de cada dispositivo.
+Use la información de este artículo para conocer los aspectos básicos de la configuración de un perfil de correo electrónico. Luego, siga leyendo los temas correspondientes a cada plataforma para descubrir las peculiaridades de cada dispositivo.
 
 ## <a name="create-a-device-profile-containing-email-settings"></a>Creación de un perfil de dispositivo que contenga la configuración de correo electrónico
 
 1. Inicie sesión en el portal de Azure.
 2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
-3. En la hoja **Intune**, elija **Configuración del dispositivo**.
-2. En la hoja **Configuración del dispositivo**, elija **Administrar** > **Perfiles**.
-3. En la hoja de perfiles, elija **Create Profile** (Crear perfil).
-4. En la hoja **Create Profile** (Crear perfil), escriba un **nombre** y una **descripción** para el perfil de correo electrónico.
+3. En la página **Intune**, elija **Configuración del dispositivo**.
+2. En la página **Configuración del dispositivo**, elija **Administrar** > **Perfiles**.
+3. En la página de perfiles, elija **Crear perfil**.
+4. En la página **Crear perfil**, escriba un **Nombre** y una **Descripción** para el perfil de correo electrónico.
 5. En la lista desplegable **Plataforma**, seleccione la plataforma del dispositivo a la que quiere aplicar configuración de correo electrónico. Actualmente, puede elegir una de las siguientes plataformas para la configuración del dispositivo de correo electrónico:
     - **Android** (solo Android Samsung Knox Standard)
     - **Android for Work**
@@ -54,21 +52,21 @@ Use la información de este tema para conocer los aspectos básicos de la config
     - **Windows Phone 8.1**
     - **Windows 10 y versiones posteriores**
 6. En la lista desplegable de **tipos de perfil**, elija **Correo electrónico**.
-7. Dependiendo de la plataforma que eligió, las opciones que pueda configurar serán diferentes. Vaya a uno de los siguientes temas para conocer más detalles sobre la configuración para cada plataforma:
+7. Dependiendo de la plataforma que haya elegido, las opciones que pueda configurar serán diferentes. Vaya a uno de los siguientes temas para conocer más detalles sobre la configuración para cada plataforma:
     - [Configuración de Android for Work y Samsung Knox Standard](email-settings-android.md)
     - [Configuración de iOS](email-settings-ios.md)
     - [Configuración de Windows Phone 8.1](email-settings-windows-phone-8-1.md)
     - [Configuración de Windows 10](email-settings-windows-10.md)
-8. Cuando haya terminado, vuelva a la hoja **Create Profile** (Crear perfil) y presione **Crear**.
+8. Cuando haya terminado, vuelva a la página **Crear perfil** y pulse **Crear**.
 
-El perfil se crea y aparece en la hoja de la lista de perfiles.
+Se creará el perfil y aparecerá en la página con la lista de perfiles.
 Si desea continuar y asignar este perfil a grupos, consulte [Asignación de perfiles de dispositivo](device-profile-assign.md).
 
 ## <a name="further-information"></a>Más información
 
 ### <a name="remove-an-email-profile"></a>Eliminación de un perfil de correo electrónico
 
-Si desea quitar un perfil de correo electrónico de un dispositivo, edite la asignación y quite los grupos de los que sea miembro el dispositivo. Tenga en cuenta que un perfil de correo electrónico no se puede quitar de esta manera, si es el único perfil de correo electrónico en un dispositivo.
+Si desea quitar un perfil de correo electrónico de un dispositivo, edite la asignación y quite los grupos de los que sea miembro el dispositivo. No se puede quitar de esta manera un perfil de correo electrónico si es el único de un dispositivo.
 
 ### <a name="securing-email-access"></a>Protección del acceso al correo electrónico
 

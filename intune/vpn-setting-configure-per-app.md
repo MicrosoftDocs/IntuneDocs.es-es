@@ -1,7 +1,7 @@
 ---
 title: "Configuración de VPN por aplicación para dispositivos iOS en Microsoft Intune"
-titleSuffix: Intune on Azure
-description: Especifique las aplicaciones administradas que pueden usar su VPN en dispositivos iOS administrados con Intune.
+titleSuffix: 
+description: Especifique las aplicaciones administradas que pueden usar su red privada virtual (VPN) en dispositivos iOS administrados por Intune.
 keywords: 
 author: Erikre
 ms.author: erikre
@@ -15,15 +15,15 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f7e53f9a440d945d834c17b9db85ed5f6e42229
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 4e01ca43cc42ee7228e42cd3b0176475905ef566
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="set-up-per-app-vpn-in-microsoft-intune-for-ios-devices"></a>Configuración de VPN por aplicación para dispositivos iOS en Microsoft Intune
+# <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Configuración de la red privada virtual (VPN) por aplicación en Intune para dispositivos iOS
 
-Puede especificar las aplicaciones administradas que pueden usar su red privada virtual (VPN) en dispositivos iOS administrados con Intune. Si especifica una VPN por aplicación en Intune, los usuarios finales podrán conectarse automáticamente mediante la VPN para acceder a documentos empresariales.
+Puede especificar las aplicaciones administradas que pueden usar su red privada virtual (VPN) en dispositivos iOS administrados por Intune. Al crear una VPN por aplicación en Intune, los usuarios finales podrán conectarse automáticamente mediante la VPN para acceder a documentos corporativos.
 
 ## <a name="prerequisites-for-the-per-app-vpn"></a>Requisitos previos de la VPN por aplicación
 

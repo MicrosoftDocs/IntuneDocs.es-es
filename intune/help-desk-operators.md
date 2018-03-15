@@ -1,12 +1,12 @@
 ---
-title: "Portal de solución de problemas del departamento de soporte técnico | Microsoft Docs"
-titlesuffix: Azure portal
-description: "El personal del departamento de soporte técnico usa el portal de solución de problemas para solucionar los problemas técnicos de los usuarios"
+title: "Portal de solución de problemas del departamento de soporte técnico"
+titlesuffix: Microsoft Intune
+description: "El personal del departamento de soporte técnico usa el portal de solución de problemas para solucionar los problemas técnicos de los usuarios."
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/26/2017
+ms.date: 03/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.technology:
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 2da1a37af1ab0b0b1566738bf1ecdfe990dd760d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7997bf0494ff52ad25b09301173b65f2478dca37
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="use-the-troubleshooting-portal-to-help-users"></a>Uso del portal de solución de problemas para ayudar a los usuarios
+# <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Uso del portal de solución de problemas para ayudar a los usuarios de su empresa
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -63,7 +63,7 @@ Puede usar la hoja de **solución de problemas** para consultar la información 
 | 1.   | Estado de la cuenta  | Muestra el estado del inquilino actual de Intune como **Activo** o **Inactivo**.       |
 | 2.   | Selección de usuarios  | El nombre del usuario seleccionado actualmente. Haga clic en **Cambiar usuario** para elegir un usuario nuevo.       |
 | 3.   | Estado del usuario  | Muestra el estado de la licencia de Intune del usuario, el número de dispositivos, la compatibilidad de cada dispositivo, el número de aplicaciones y la compatibilidad de las aplicaciones.       |
-| 4.   | Información de usuario  | Use la lista para seleccionar los detalles que vaya a consultar en la hoja. <br>Puede seleccionar: <ul><li>Aplicaciones móviles<li>Directivas de protección de aplicaciones<li>Directivas de cumplimiento<li> Directivas de configuración</ul>      |
+| 4.   | Información de usuario  | Use la lista para seleccionar los detalles que vaya a consultar en la hoja. <br>Puede seleccionar: <ul><li>Aplicaciones móviles<li>Directivas de protección de aplicaciones<li>Directivas de cumplimiento<li> Directivas de configuración<li> Restricciones de inscripción</ul>      |
 | 5.   | Pertenencia a grupos  | Yadda       |
 
 ## <a name="mobile-apps-reference"></a>Referencia de aplicaciones móviles

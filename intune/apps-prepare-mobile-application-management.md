@@ -1,10 +1,11 @@
 ---
-title: "Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles mediante Microsoft Intune"
-description: "La información de este tema le ayuda a decidir cuándo se debe usar la herramienta de ajuste de aplicaciones y el SDK de aplicaciones para permitir que las aplicaciones personalizadas de línea de negocio usen las directivas de administración de aplicaciones móviles."
+title: "Preparar aplicaciones de línea de negocio para las directivas de protección de aplicaciones"
+titlesuffix: Microsoft Intune
+description: "Use la herramienta de ajuste de aplicaciones y el SDK de aplicaciones para permitir que sus aplicaciones de línea de negocio personalizadas usen las directivas de protección de aplicaciones en Microsoft Intune."
 keywords: 
-author: erikre
+author: Erikre
 ms.author: erikre
-manager: angrobe
+manager: dougeby
 ms.date: 01/24/2018
 ms.topic: article
 ms.prod: 
@@ -14,11 +15,11 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b2ab30f9bf061e7ea4a34372e7c99e059c6e30f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 76330c926ecac9ae8b071837465d800f48f925fb
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicaciones de línea de negocio para las directivas de protección de aplicaciones
 
@@ -102,6 +103,7 @@ En la siguiente tabla se enumeran los valores que puede usarse para el SDK para 
 |Configuración de aplicaciones de destino |X||
 |Compatibilidad con aplicaciones de identidades múltiples|X||
 |Estilo personalizable |X|||
+
 ## <a name="next-steps"></a>Pasos siguientes
 
 Para obtener más información sobre las directivas de protección de aplicaciones y Intune, consulte los temas siguientes:

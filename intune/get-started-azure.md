@@ -1,13 +1,13 @@
 ---
-title: "Introducción a Azure Portal"
-titlesuffix: Azure portal
-description: "Obtenga más información sobre cómo crear y compartir paneles de Intune en Azure Portal."
+title: "Introducción a Microsoft Intune en Azure Portal"
+titlesuffix: 
+description: "Obtenga información sobre cómo crear, compartir y explorar paneles de Microsoft Intune en Azure Portal."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 10/31/2017
-ms.topic: article
+ms.date: 02/22/2018
+ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
@@ -15,21 +15,21 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 27567c8a8b8b406bbffceafc1d742b202999425f
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: bd2a5af8c5535fc45083b1386f378604b0b67353
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/02/2018
 ---
-# <a name="getting-started-with-intune-in-the-azure-portal"></a>Introducción a Intune en Azure Portal
+# <a name="getting-started-with-microsoft-intune-in-the-azure-portal"></a>Introducción a Microsoft Intune en Azure Portal
 
-Puede encontrar el servicio Intune en Azure Portal. Hay una gran cantidad de servicios de Azure, y puede que muchos no los use con frecuencia. Personalizar el panel y la barra lateral puede ayudarle a encontrar rápidamente la información correcta cada vez que inicie sesión para administrar dispositivos con Intune.
+Azure Portal es la ubicación en la que se encuentra el servicio Microsoft Intune. Azure cuenta con varios servicios, muchos de los cuales es posible que no use habitualmente. Personalizar el panel y la barra lateral de Azure puede ayudarle a encontrar rápidamente la información correcta cada vez que inicie sesión para administrar dispositivos con Intune.
 
 ## <a name="changing-the-sidebar"></a>Modificar la barra lateral
 
-La __barra lateral__ en el lado izquierdo de Azure Portal muestra una lista de todos los servicios de Azure disponibles. Esta lista completa se puede modificar desde la vista predeterminada, por lo que puede mantener una vista permanente de los servicios que considere más importantes. Usaremos Intune como ejemplo de servicio y lo agregaremos a la parte superior de la lista.
+La __barra lateral__ en el lado izquierdo de Azure Portal muestra una lista de todos los servicios de Azure disponibles. Esta lista completa se puede modificar desde la vista predeterminada, por lo que puede mantener una vista permanente de los servicios que considere más importantes. En la siguiente información, se usa Intune como ejemplo de servicio que se agrega a la parte superior de la lista.
 
-![Un usuario buscando Intune en la lista "Más servicios".](./media/azure-add-intune1.png)
+![Un usuario busca Microsoft Intune en la lista "Más servicios".](./media/azure-add-intune1.png)
 
 1. Seleccione **Más servicios** en la parte inferior de la barra lateral de lado izquierdo de la página.
 2. Busque **Intune** en el cuadro de filtro.
@@ -38,21 +38,21 @@ La __barra lateral__ en el lado izquierdo de Azure Portal muestra una lista de t
 
 ## <a name="changing-the-dashboard"></a>Modificar el panel
 
-La página de inicio predeterminada es el **panel**. Aquí podrá personalizar los iconos para mostrar la información que considere más importante.
+La página de inicio predeterminada es el **panel**. En esta página puede personalizar los iconos para mostrar la información que considere más importante.
 
 ![Imagen del nuevo panel genérico. Muestra la barra lateral con todos los servicios a la izquierda, y el panel principal en el centro. Los botones de modificación del panel están en la parte superior; son los iconos que permiten acceder a todos los recursos, a los tutoriales de inicio rápido, al estado del servicio y a Azure Marketplace.](./media/azure-default-dashboard.png)
 
-Para modificar el panel actual, seleccione el botón **Editar panel**. Si no quiere modificar el panel predeterminado, también puede crear un **panel nuevo**. Al crear un panel se obtiene un panel vacío y privado que incluye la **Galería de iconos**. Esto le permite agregar o reorganizar los iconos. Puede buscar iconos por su **categoría general** o **tipo**, mediante la **búsqueda** o por su **grupo de recursos** o **etiqueta**.
+Para modificar el panel actual, seleccione el botón **Editar panel**. Si no quiere modificar el panel predeterminado, también puede crear un **panel nuevo**. Al crear un panel, se obtiene un panel vacío y privado que incluye la **Galería de iconos**, que le permite agregar o reorganizar iconos. Puede buscar iconos por su **categoría general** o **tipo**, mediante la **búsqueda** o por su **grupo de recursos** o **etiqueta**.
 
 También puede agregar iconos directamente al panel desde cualquier botón de **puntos suspensivos** y seleccionando **Anclar al panel**.
 
 ![Un primer plano de la sección Usuarios y grupos > Todas las ubicaciones de grupos en Intune, que muestra la opción "Anclar al panel" en el extremo derecho de un grupo.](./media/azure-pin-to-dashboard.png)
 
-Esto será más importante después de agregar más contenido a Intune, como los grupos y los usuarios.
+Esta funcionalidad será más importante después de agregar más contenido a Intune, como grupos y usuarios.
 
 ## <a name="using-services"></a>Usar servicios
 
-Cuando abra Intune o cualquier otro servicio en Azure, dicho servicio se mostrará en una **hoja**. Algunas de las primeras cargas de trabajo que usa en Intune, como **Usuarios**, **Grupos** y **Aplicaciones móviles** se mostrarán en una hoja de pantalla completa. Al seleccionar la carga de trabajo, la hoja se abre ocupando toda la página. Las demás hojas salen del lado izquierdo de la hoja al abrirlas y vuelven a quedar por debajo de la hoja principal al contraerlas.
+Cuando abra Microsoft Intune o cualquier otro servicio en Azure, ese servicio se mostrará en una **hoja**. Algunas de las primeras cargas de trabajo que usa en Intune, como **Usuarios**, **Grupos** y **Aplicaciones móviles** se mostrarán en una hoja de pantalla completa. Al seleccionar la carga de trabajo, la hoja se abre ocupando toda la página. Las demás hojas salen del lado izquierdo de la hoja al abrirlas y vuelven a quedar por debajo de la hoja principal al contraerlas.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

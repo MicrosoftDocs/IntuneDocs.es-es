@@ -1,12 +1,11 @@
 ---
-title: "Cómo usar dispositivos administrados de forma remota con TeamViewer"
-titlesuffix: Azure portal
-description: "Obtenga más información sobre cómo administrar dispositivos de forma remota con TeamViewer."
+title: "Administración de dispositivos de forma remota en Microsoft Intune - Azure | Microsoft Docs"
+description: "Consulte los roles necesarios para usar TeamViewer, cómo instalar el conector de TeamViewer y una guía paso a paso para administrar dispositivos de forma remota usando Microsoft Intune en Azure Portal"
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 2/14/2018
+ms.date: 03/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,65 +13,52 @@ ms.technology:
 ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0219993e0322be06dbf9b26707789332039001f1
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: 64f6dd6bf787a6f590655f03ac8f04312836e0b5
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/05/2018
 ---
-# <a name="provide-remote-assistance-for-intune-managed-devices"></a>Proporcione asistencia remota para dispositivos administrados con Intune
+# <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>Uso de TeamViewer para administrar dispositivos de Intune de forma remota
 
-Intune puede usar el software [TeamViewer](https://www.teamviewer.com), que se compra por separado, para permitirle ofrecer asistencia remota a los usuarios de los dispositivos que administra. Use la información de este tema para empezar a trabajar.
+Los dispositivos administrados por Intune pueden administrarse de forma remota con [TeamViewer](https://www.teamviewer.com). TeamViewer es un programa de terceros que se adquiere por separado. En este tema se muestra cómo configurar TeamViewer en Intune y cómo administrar un dispositivo de forma remota. 
 
-## <a name="before-you-start"></a>Antes de empezar
+## <a name="prerequisites"></a>Requisitos previos
 
-### <a name="supported-devices"></a>Dispositivos compatibles
+- Use un dispositivo compatible. Los dispositivos Android y Windows administrados por Intune se pueden administrar de forma remota. Es posible que TeamViewer no sea compatible con Windows Holographic (HoloLens), Windows Team (Surface Hub) o Windows 10 S. Si tiene dudas sobre la compatibilidad, consulte [TeamViewer](https://www.teamviewer.com) para ver las actualizaciones.
 
-Los dispositivos Android y Windows administrados por Intune se pueden administrar de forma remota.
+- El administrador de Intune en Azure Portal debe tener los siguientes [roles de Intune](role-based-access-control.md):  
 
->[!NOTE]
->Windows Holographic (HoloLens), el equipo de Windows (Surface Hub) y Windows 10 S no son compatibles con el software de TeamViewer.
+    - **Update Remote Assistance** (Actualizar asistencia remota): permite a los administradores modificar la configuración del conector de TeamViewer.
+    - **Solicitar asistencia remota**: permite a los administradores iniciar una nueva sesión de asistencia remota para cualquier usuario. Los usuarios con este rol no están limitados por ningún rol de Intune dentro de un ámbito. Además, los grupos de dispositivos o usuarios a los que se ha asignado un rol de Intune dentro de un ámbito también pueden solicitar asistencia remota. 
 
+- Una cuenta de [TeamViewer](https://www.teamviewer.com) con las credenciales de inicio de sesión.
 
+Al usar TeamViewer, permite que el conector de TeamViewer para Intune cree sesiones de TeamViewer, lea datos de Active Directory y guarde el token de acceso de la cuenta de TeamViewer.
 
-### <a name="required-permissions"></a>Permisos necesarios
+## <a name="configure-the-teamviewer-connector"></a>Configuración del conector de TeamViewer
 
-Asegúrese de que el usuario del portal de Azure tenga asignados los siguientes permisos como un [rol de Intune](https://docs.microsoft.com/intune-azure/access-control/role-based-access-control):
-- Para dejar que el administrador modifique la configuración del conector de TeamViewer, conceda el permiso para **actualizar la Asistencia remota**.
-- Para permitir que el administrador inicie una nueva solicitud de asistencia remota, conceda el permiso **Solicitar asistencia remota**. Los usuarios con el permiso **Solicitar asistencia remota** pueden solicitar iniciar una sesión de cualquier usuario. El ámbito de la asignación de roles de Intune no impone ninguna limitación. Los ámbitos de asignación de roles de Intune no limitan los dispositivos o los usuarios para los que se puede iniciar solicitudes de Asistencia remota.
+Para proporcionar asistencia remota a los dispositivos, configure el conector de TeamViewer para Intune siguiendo estos pasos:
 
->[!NOTE]
->Al habilitar TeamViewer, va a permitir que el conector TeamViewer para Intune cree sesiones de TeamViewer, lea datos de Active Directory y guarde el token de acceso de la cuenta de TeamViewer.
+1. En [Azure Portal](https://portal.azure.com), seleccione **All Services** (Todos los servicios) y busque **Microsoft Intune**.
+2. En **Microsoft Intune**, seleccione **Dispositivos** y, luego, **TeamViewer Connector**.
+3. Seleccione **Conectar** y acepte el contrato de licencia.
+4. Seleccione **Inicie sesión en TeamViewer para autorizar**.
+5. Se abre una página web en el sitio de TeamViewer. Escriba sus credenciales de la licencia de TeamViewer y haga clic en **Iniciar sesión**.
 
-### <a name="configure-the-intune-teamviewer-connector"></a>Configuración del conector de TeamViewer
+## <a name="remotely-administer-a-device"></a>Administración remota de un dispositivo
 
-Para proporcionar asistencia remota a los dispositivos, debe configurar el conector TeamViewer de Intune siguiendo estos pasos:
+Una vez configurado el conector, estará listo para administrar un dispositivo de forma remota. Use los pasos siguientes: 
 
+1. En [Azure Portal](https://portal.azure.com), seleccione **All Services** (Todos los servicios) y busque **Microsoft Intune**.
+2. En **Microsoft Intune**, seleccione **Dispositivos** y, luego, **Todos los dispositivos**.
+3. En la lista, seleccione el dispositivo que quiere administrar de forma remota. En las propiedades del dispositivo, seleccione **Nueva sesión de Asistencia remota**.
+4. Cuando Intune se conecte al servicio TeamViewer, verá información sobre el dispositivo. Elija **Conectar** para iniciar la sesión remota.
 
-1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
-3. En la hoja **Intune**, elija **Dispositivos**.
-4. En la hoja **Dispositivos y grupos**, elija **Configuración** > **TeamViewer Connector**.
-5. En la hoja **TeamViewer Connector**, haga clic en **Habilitar** y luego vea y acepte el contrato de licencia del servicio de TeamViewer.
-6. Elija **Inicie sesión en TeamViewer para autorizar**.
-7. Se abre una página web en el sitio de TeamViewer. Escriba sus credenciales de la licencia de TeamViewer y, a continuación, haga clic en **Iniciar sesión**.
+![Ejemplo de uso de TeamViewer para administrar un dispositivo Android de forma remota](./media/android-teamviewer.png)
 
+Al iniciar una sesión remota, el usuario final verá una marca de notificación en el icono de la aplicación Portal de empresa de su dispositivo. También aparecerá una notificación cuando abra la aplicación. Luego el usuario podrá aceptar la solicitud de asistencia remota.
 
-## <a name="how-to-remotely-administer-a-device"></a>Cómo administrar un dispositivo de forma remota
-
-1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
-3. En la hoja **Intune**, elija **Dispositivos**.
-4. En la hoja **Dispositivos**, elija **Administrar** > **Todos los dispositivos**.
-5. Seleccione el dispositivo que desea administrar de forma remota y luego, en la hoja de propiedades del dispositivo, elija **Más** > **Nueva sesión de Asistencia remota**.
-6. Cuando Intune se conecte al servicio TeamViewer, verá información sobre el dispositivo. Elija **Conectar** para iniciar la sesión remota.
-
-![Ejemplo de TeamViewer en Android](./media/android-teamviewer.png)
-
-En la ventana de TeamViewer, puede realizar diversas acciones remotas en el dispositivo, como controlarlo de forma remota. Para obtener detalles completos de las acciones que puede realizar, consulte la [documentación de TeamViewer](https://www.teamviewer.com/support/documents/).
+En TeamViewer, puede completar una serie de acciones en el dispositivo, incluida la toma del control de este. Para obtener más detalles sobre lo que puede hacer, consulte los [manuales de TeamViewer](https://www.teamviewer.com/support/documents/).
 
 Cuando haya finalizado, cierre la ventana de TeamViewer.
-
-## <a name="next-steps"></a>Pasos siguientes
-
-Los usuarios finales ven una marca de notificación en el icono de la aplicación Portal de empresa de los dispositivos y, además, una notificación al abrir la aplicación. A continuación, pueden aceptar la solicitud de asistencia remota.

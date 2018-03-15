@@ -1,7 +1,7 @@
 ---
-title: "Registros de la directiva de protección de aplicaciones"
-titlesuffix: Azure portal
-description: "En este tema se describe el registro de la configuración de la directiva de protección de aplicaciones que se almacena en los registros de aplicación."
+title: "Revisar los registros de la directiva de protección de aplicaciones"
+titlesuffix: Microsoft Intune
+description: "Obtenga información sobre la configuración que puede revisar en los registros de protección de aplicaciones."
 keywords: 
 author: erikre
 ms.author: erikre
@@ -15,15 +15,15 @@ ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 76b7771f974fb1c9a5de8afe52ef79eaa0ed0c2a
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f91328561f0dd4dc669844c0398a89f1abf15bf8
+ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/05/2018
 ---
 # <a name="review-client-app-protection-logs"></a>Revisión de los registros de protección de aplicaciones cliente
 
-Para acceder a los registros, habilite el modo de diagnósticos de Intune para una aplicación en un cliente móvil. En la tabla siguiente se muestra el nombre y una explicación de la configuración que se registró en el registro.
+Obtenga información sobre la configuración que puede revisar en los registros de protección de aplicaciones. Para acceder a los registros, habilite el modo de diagnóstico de Intune para una aplicación en un cliente móvil. En la tabla siguiente se muestra el nombre y una explicación de la configuración que se registró en el registro.
 
 ## <a name="app-protection-policy-settings"></a>Configuración de directivas de protección de aplicaciones
 

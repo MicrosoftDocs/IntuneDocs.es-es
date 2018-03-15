@@ -1,12 +1,12 @@
 ---
-title: "Instalar aplicaciones de Office 365 en dispositivos móviles mediante Intune"
-titlesuffix: Azure portal
-description: "Obtenga información sobre cómo puede usar Intune para facilitar la instalación de aplicaciones de Office 365 en dispositivos Windows 10."
+title: "Instalación de aplicaciones de Office 365 en dispositivos con Microsoft Intune"
+titlesuffix: 
+description: "Obtenga información sobre cómo puede usar Microsoft Intune para facilitar la instalación de aplicaciones de Office 365 en dispositivos Windows 10."
 keywords: 
-author: dougeby
-ms.author: dougeby
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 01/29/2018
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f6ef1d1dab39a6939b80bd13ba090424a67c6f53
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 1a8045261f93c6ac0282a03f13ac7bb7a7caac0d
+ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/02/2018
 ---
 # <a name="how-to-assign-office-365-proplus-apps-to-windows-10-devices-with-microsoft-intune"></a>Asignación de aplicaciones de Office 365 ProPlus a dispositivos Windows 10 con Microsoft Intune
 
@@ -74,7 +74,7 @@ En este paso, proporcione información sobre el conjunto de aplicaciones. Esta i
     - **Dirección URL de privacidad**: opcionalmente, escriba la dirección URL de un sitio web que contenga información de privacidad sobre esta aplicación. La dirección URL se muestra a los usuarios en el portal de empresa.
     - **Desarrollador**: opcionalmente, escriba el nombre del desarrollador de la aplicación.
     - **Propietario**: opcionalmente,, escriba un nombre para el propietario de esta aplicación, por ejemplo, **departamento de Recursos Humanos**.
-    - **Notas**: escriba notas que le gustaría asociar a esta aplicación.
+    - **Notas**: Escriba notas que le gustaría asociar a esta aplicación.
     - **Cargar icono**: Cargar un icono que se muestra con la aplicación cuando los usuarios examinan el portal de empresa.
 3.  Cuando haya terminado, haga clic en **Aceptar**.
 
@@ -85,11 +85,11 @@ En este paso, configure las opciones de instalación para el conjunto de aplicac
 1.  En la hoja **Agregar aplicación**, elija **App Suite Settings** (Configuración del conjunto de aplicaciones).
 2.  En la hoja **App Suite Settings** (Configuración del conjunto de aplicaciones), especifique la información siguiente:
     - **Versión de Office**: elija si desea asignar la versión de 32 bits o de 64 bits de Office. Puede instalar la versión de 32 bits en dispositivos de 32 y 64 bits, pero en los dispositivos de 64 bits solo puede instalar la versión de 64 bits.
-    - **Canal de actualización**: elija cómo Office se actualiza en los dispositivos. Para información sobre los distintos canales de actualización, consulte la introducción a los canales de actualización para Office 365 ProPlus. Elija de entre las siguientes opciones:
-        - **Actual**
-        - **Diferida**
-        - **Primera versión actual**
-        - **Primera versión diferida**
+    - **Canal de actualización**: elija cómo Office se actualiza en los dispositivos. Para obtener información sobre los distintos canales de actualización, consulte [Información general de los canales de actualización para Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus). Elija de entre las siguientes opciones:
+        - **Mensual**
+        - **Mensual (dirigido)**
+        - **Semianual**
+        - **Semianual (dirigido)**
     - **Automatically accept the app end user license agreement** (Aceptar automáticamente el contrato de licencia del usuario final de la aplicación): seleccione esta opción si no requiere que los usuarios finales acepten el contrato de licencia. De ese modo, Intune aceptará automáticamente el contrato.
     - **Use shared computer activation** (Usar activación en equipos compartidos): la activación en equipos compartidos se usa cuando varios usuarios comparten un equipo. Para más información, consulte la introducción a la activación de equipos compartidos para Office 365 ProPlus.
     - **Idiomas**: Office se instala automáticamente en cualquier idioma compatible que se instale con Windows en el dispositivo de los usuarios finales. Seleccione esta opción si desea instalar más idiomas con el conjunto de aplicaciones.
