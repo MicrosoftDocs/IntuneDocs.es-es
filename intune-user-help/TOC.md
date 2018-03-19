@@ -66,6 +66,7 @@
 ### [¿Qué ocurre al inscribir un dispositivo iOS?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
 ### [Instalación e inicio de sesión en el Portal de empresa](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [Inscripción de dispositivos iOS](enroll-your-device-in-intune-ios.md)
+### [Inscribir dispositivos iOS del programa de inscripción de dispositivos](enroll-your-device-dep-ios.md)
 
 ### [Usar aplicaciones administradas en el dispositivo](use-managed-apps-on-your-device-ios.md)
 ### [Establecer o cambiar el código de acceso](set-or-change-your-passcode-ios.md)
