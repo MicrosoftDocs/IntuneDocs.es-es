@@ -1,29 +1,29 @@
 ---
-title: "Valores de configuración de dispositivo compartido de Intune para iOS"
-titlesuffix: Azure portal
-description: "Obtenga información sobre la configuración de Intune que puede usar para mostrar información en la pantalla de bloqueo del dispositivo iOS\"."
+title: "Valores de configuración de dispositivo compartido de Microsoft Intune para iOS"
+titlesuffix: 
+description: "Obtenga información sobre la configuración de Microsoft Intune que se puede usar para mostrar información en la pantalla de bloqueo del dispositivo iOS."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 3/5/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: f122e4ee-90e7-4b42-b801-8c1c7c0a5bf7
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c5473a280551ab74f781a2de682d7e5922491e98
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9147eaff2bd366dbfd86c6422e0f7a29f685db62
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="shared-device-configuration-settings-to-display-messages-on-the-ios-device-lock-screen"></a>Valores de configuración de dispositivo compartido para mostrar mensajes en la pantalla de bloqueo del dispositivo iOS
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+En este artículo se muestra la configuración de Microsoft Intune que se puede usar para mostrar información en la pantalla de bloqueo del dispositivo iOS.
 
 Los valores de configuración de dispositivo compartido le permiten especificar texto opcional que se muestra en la ventana de inicio de sesión y la pantalla de bloqueo. Por ejemplo, puede escribir un mensaje "En caso de pérdida, devolver a" e información de etiqueta de inventario. 
 
@@ -32,11 +32,12 @@ Los valores de configuración de dispositivo compartido le permiten especificar 
 
 ## <a name="create-shared-device-settings"></a>Crear una configuración de dispositivo compartido
 
-1. En la hoja **Características del dispositivo**, pulse **Configuración de dispositivo compartido (solo supervisado)**.
-2. En la hoja **Configuración de dispositivo compartido (solo supervisado)**, configure las siguientes opciones:
+1. Desde [Intune en Azure Portal](https://portal.azure.com), vaya a [**Características del dispositivo** en el área de configuración de dispositivos](device-features-configure.md). 
+1. En el panel **Características del dispositivo**, pulse **Configuración de dispositivo compartido (solo supervisado)**.
+2. En el panel **Configuración de dispositivo compartido (solo supervisado)**, configure las opciones siguientes:
     - **Información de etiqueta del activo**: escriba información sobre la etiqueta del activo del dispositivo. Por ejemplo: **Propiedad de Contoso Corp**. La información que escriba se aplica a todos los dispositivos a los que asigne este perfil.
     - **Nota al pie de pantalla de bloqueo**: si el dispositivo se pierde o se lo roban, escriba una nota que pueda ayudar a que le devuelvan el dispositivo. Por ejemplo: **Si lo encuentra, llame al "número"**.
-3. Cuando termine, elija **Aceptar** hasta que vuelva a la hoja **Crear perfil** y, luego, elija **Crear**. 
+3. Cuando termine, haga clic en **Aceptar** hasta que vuelva al panel **Crear perfil** y, luego, haga clic en **Crear**. 
 
 
 ## <a name="next-steps"></a>Pasos siguientes

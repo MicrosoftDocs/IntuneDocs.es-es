@@ -1,29 +1,29 @@
 ---
-title: "Configuración de VPN de Intune para dispositivos iOS"
-titlesuffix: Azure portal
-description: "Obtenga información sobre la configuración de Intune que puede usar para configurar conexiones VPN en dispositivos iOS\"."
+title: "Configuración de VPN de Microsoft Intune para dispositivos que ejecutan iOS"
+titlesuffix: 
+description: "Obtenga información sobre la configuración de Intune que puede usar para configurar conexiones VPN en dispositivos que ejecutan iOS."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 12/15/2017
+ms.date: 3/5/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 1447c123-ea33-4ea0-aab4-69577cdb8d00
-ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3db57b851c405758c9cccdc3e70c96ca9e76000
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 70721d1d2f360527af0e269a93d6243b6a42431b
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="vpn-settings-for-ios-devices-in-microsoft-intune"></a>Configuración de VPN para dispositivos iOS en Microsoft Intune
+# <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-ios"></a>Configuración de VPN en Microsoft Intune para dispositivos que ejecutan iOS
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+En este artículo, se muestra la configuración de Intune que puede usar para configurar conexiones VPN en dispositivos que ejecutan iOS.
 
 Según la configuración que elija, no todos los valores de la lista siguiente se podrán configurar.
 
@@ -38,7 +38,7 @@ Según la configuración que elija, no todos los valores de la lista siguiente s
 - **Tipo de conexión**: seleccione el tipo de conexión VPN de la siguiente lista de proveedores:
     - **Check Point Capsule VPN**
     - **Cisco AnyConnect**
-    - **Dell SonicWALL Mobile Connect**
+    - **SonicWall Mobile Connect**
     - **F5 Edge Client**
     - **Pulse Secure**
     - **Cisco (IPSec)**
@@ -62,7 +62,7 @@ Si seleccionó **VPN personalizada** como el tipo de conexión, configure ademá
 - **Reglas a petición**: esta opción le permite configurar reglas condicionales que controlan cuándo se inicia la conexión VPN. Por ejemplo, podría crear una condición en la que la conexión VPN solo se usa cuando un dispositivo no está conectado a una de las redes Wi-Fi de empresa. Otra alternativa es crear una condición en la que, si un dispositivo no puede tener acceso a un dominio de búsqueda DNS que especifique, entonces no se inicia la conexión VPN.
 
     - **SSID o dominios de búsqueda de DNS**: seleccione si esta condición usará **SSID** de red inalámbrica o **dominios de búsqueda de DNS**. Elija Agregar para configurar uno o varios SSID o dominios de búsqueda.
-    - **Sondeo de cadena de dirección URL**: opcionalmente, proporcione una dirección URL que la regla usa como prueba. Si el dispositivo en el que está instalado este perfil puede acceder a esta dirección URL sin redireccionamiento, se iniciará la conexión VPN y el dispositivo se conectará a la dirección URL de destino. El usuario no verá el sitio de sondeo de cadena de dirección URL. Un ejemplo de un sondeo de cadena de dirección URL es la dirección de un servidor web de auditoría que comprueba el cumplimiento del dispositivo antes de conectarse a la VPN. Otra posibilidad es que la dirección URL compruebe la capacidad de la VPN para conectarse a un sitio antes de conectar el dispositivo a la dirección URL de destino a través de VPN.
+    - **Sondeo de cadena de dirección URL**: opcionalmente, proporcione una dirección URL que la regla usa como prueba. Si el dispositivo en el que está instalado este perfil puede acceder a esta dirección URL sin redireccionamiento, se iniciará la conexión VPN y el dispositivo se conectará a la dirección URL de destino. El usuario no ve el sitio de sondeo de cadena de dirección URL. Un ejemplo de un sondeo de cadena de dirección URL es la dirección de un servidor web de auditoría que comprueba el cumplimiento del dispositivo antes de conectarse a la VPN. Otra posibilidad es que la dirección URL compruebe la capacidad de la VPN para conectarse a un sitio antes de conectar el dispositivo a la dirección URL de destino a través de VPN.
     - **Acción del dominio**: elija uno de los elementos siguientes:
         - Conectarse si es necesario 
         - No conectarse nunca 
@@ -75,6 +75,6 @@ Si seleccionó **VPN personalizada** como el tipo de conexión, configure ademá
 
 ## <a name="proxy-settings"></a>Configuración del proxy
 
-- **Script de configuración automática**: use un archivo para configurar el servidor proxy. Escriba la **dirección URL del servidor proxy** (por ejemplo **http://proxy.contoso.com**) que contiene el archivo de configuración.
+- **Script de configuración automática**: use un archivo para configurar el servidor proxy. Escriba la **URL del servidor proxy** (por ejemplo, **http://proxy.contoso.com**) que contiene el archivo de configuración.
 - **Dirección**: escriba la dirección del servidor proxy (como una dirección IP).
 - **Número de puerto**: especifique el número de puerto asociado con el servidor proxy.

@@ -1,12 +1,12 @@
 ---
-title: "Configuración de filtro de contenido web de Intune para dispositivos iOS"
-titlesuffix: Azure portal
-description: "Obtenga información sobre la configuración que puede usar para permitir y bloquear el acceso a sitios web desde dispositivos iOS\"."
+title: "Configuración de filtro de contenido web de Microsoft Intune para dispositivos iOS"
+titlesuffix: 
+description: "Obtenga información sobre la configuración de Microsoft Intune que puede usar para permitir y bloquear el acceso a sitios web desde dispositivos que ejecutan iOS."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/18/2018
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,29 +14,29 @@ ms.technology:
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f46ddd58434be750bac74fb99b526d64fccdb179
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a401a3a04d10587606b8ec4862a62e551e7aadf0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>Configuración de filtro de contenido web para dispositivos iOS
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Use estos valores para configurar las direcciones URL que los usuarios finales de los exploradores web pueden o no visitar en dispositivos iOS. Hay dos métodos que puede usar para configurar direcciones URL:
+En este artículo, se muestra la configuración de Microsoft Intune que puede usar para controlar el acceso a direcciones URL del explorador desde dispositivos que ejecutan iOS.
+
+Hay dos métodos distintos para configurar las URL:
 
 - **Configurar direcciones URL**: use el filtro web integrado de Apple que busca términos para adultos, como lenguaje obsceno o sexualmente explícito. Esta función evalúa cada página web a medida que se carga e intenta identificar y bloquear contenido inadecuado. También puede configurar direcciones URL que el filtro no revisa, o bien direcciones URL para que estén bloqueadas, independientemente de la configuración del filtro.
 
 - **Solo sitios web específicos** (solo para el explorador web Safari): estas direcciones URL se agregan a los marcadores del explorador Safari. El usuario **solo** puede visitar estos sitios; no puede tener acceso a ningún otro sitio. Use esta opción solo si conoce la lista exacta de direcciones URL a las que pueden acceder los usuarios.
 Si no especifica ninguna dirección URL, los usuarios finales no pueden acceder a ningún sitio web, excepto microsoft.com, microsoft.net y apple.com.
 
-
-
 ## <a name="get-started"></a>Introducción
 
-1. En la hoja Características del dispositivo, pulse **Filtro de contenido web (solo supervisado)**.
-2. En la hoja **Filtro de contenido web**, elija el **tipo de filtro** desde donde desea configurar:
+1. En la página Características del dispositivo, elija **Filtro de contenido web (solo supervisados)**.
+2. En la página **Filtro de contenido web**, elija el **Tipo de filtro** desde donde quiere configurar:
     - **No configurado**: no se realiza ningún filtrado.
     - **Configurar direcciones URL**
     - **Solo sitios web específicos**
@@ -45,25 +45,25 @@ Si no especifica ninguna dirección URL, los usuarios finales no pueden acceder 
 
 ## <a name="configure-urls"></a>Configurar direcciones URL
 
-1. En la hoja **Filtro de contenido web**, seleccione una de las siguientes opciones si es necesario:
-   - **Direcciones URL permitidas**: en la hoja **Direcciones URL permitidas**, escriba las direcciones URL que desea permitir (omitiendo el filtro web de Apple) y elija Entrar después de cada una.
+1. En la página **Filtro de contenido web**, seleccione uno de los siguientes valores si es necesario:
+   - **URL permitidas**: en la página **URL permitidas**, escriba las URL que quiere permitir (omitiendo el filtro web de Apple) y presione Entrar después de cada una.
      > [!NOTE]
      > Las direcciones URL que especifique aquí son las que no quiere que estén sujetas al filtro web de Apple. Estas direcciones URL no representan una lista de los únicos sitios web permitidos. Si eso es lo que quiere, use **Solo sitios web específicos**.
 
-   - **Direcciones URL bloqueadas**: en la hoja **Direcciones URL bloqueadas**, escriba las direcciones URL que desea bloquear (independientemente de la configuración de filtro web de Apple) y elija Entrar después de cada una.
+   - **URL bloqueadas**: en la página **URL bloqueadas**, escriba las URL que quiere bloquear (independientemente de la configuración de filtro web de Apple) y presione Entrar después de cada una.
 2. Cuando haya terminado, haga clic en **Aceptar**.
 
 
 ## <a name="specific-websites-only"></a>Solo sitios web específicos
 
-1. En la hoja **Filtro de contenido web**, configure las siguientes opciones para cada sitio web que quiera permitir:
+1. En el panel **Filtro de contenido web**, configure las siguientes opciones para cada sitio web que quiera permitir:
     - **Dirección URL**: escriba la dirección URL del sitio web que desea permitir, por ejemplo, **http://www.contoso.com**.
     - **Ruta de acceso de marcador**: escriba la ruta de acceso al lugar donde desea almacenar el marcador, por ejemplo, **/Contoso/Business Apps**. Si no agrega una ruta de acceso, el marcador se agregará a la carpeta predeterminada de marcadores del dispositivo.
     - **Título**: escriba un título descriptivo para el marcador.
 2. Haga clic en **Agregar** después de escribir la información de cada sitio web.
 3. Cuando haya terminado, haga clic en **Aceptar**.
 
->[!IMPORTANT] 
+>[!IMPORTANT]
 > Intune permite automáticamente las siguientes direcciones URL.
 > - www.microsoft.com
 > - www.microsoft.net
@@ -71,7 +71,7 @@ Si no especifica ninguna dirección URL, los usuarios finales no pueden acceder 
 
 ## <a name="finish-up"></a>Finalizar
 
-Elija **Aceptar** para volver a la hoja **Crear perfil** y, luego, elija **Crear**.
+Elija **Aceptar** para volver al panel **Crear perfil** y, luego, seleccione **Crear**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

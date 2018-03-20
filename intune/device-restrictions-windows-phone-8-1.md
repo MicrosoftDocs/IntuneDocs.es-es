@@ -1,29 +1,30 @@
 ---
-title: "Configuración de restricciones de dispositivo de Intune para Windows Phone 8.1"
-titleSuffix: Azure portal
-description: "Conozca la configuración de Intune que puede usar para controlar los valores de configuración y la funcionalidad de los dispositivos Windows Phone 8.1."
+title: "Configuración de restricciones de dispositivos de Microsoft Intune para Windows Phone 8.1"
+titleSuffix: 
+description: "Descubra las opciones de configuración de Intune que puede usar para controlar la funcionalidad y la configuración de los dispositivos que ejecutan Windows Phone 8.1."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: c2d42714-49ca-43b3-b080-2e67a4268198
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98734b51cf72a097c6b4a9e425e80457b0b39afa
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 808c8e9ac1ef944b69ae8e548c62d4c6366820d0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="windows-phone-81-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos Windows Phone 8.1 en Microsoft Intune
+# <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>Configuración de restricciones de dispositivos Windows Phone 8.1 de Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+En este artículo, se muestran las opciones de configuración de restricciones de dispositivos de Microsoft Intune que puede configurar para los dispositivos que ejecutan Windows Phone 8.1.
+
 
 ## <a name="general"></a>General
 
@@ -69,13 +70,13 @@ Desde la página de la [Tienda de Windows Phone](https://www.microsoft.com/store
 
 Abra la página de la aplicación y copie la dirección URL en el Portapapeles. Ya puede usarla como dirección URL en una la lista de aplicaciones permitidas o bloqueadas.
 
-Ejemplo: busque la aplicación Skype en la tienda. La dirección URL que use será **http://www.windowsphone.com/es-es/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
+Ejemplo: busque la aplicación Skype en la tienda. La dirección URL que utiliza será **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
 
 
 
 ### <a name="additional-options"></a>Opciones adicionales
 
-También puede hacer clic en **Importar** para rellenar la lista a partir de un archivo csv con el formato <*url de aplicación*>, <*nombre de aplicación*>, <*editor de aplicación*> o en **Exportar** para crear un archivo csv que contenga la lista de aplicaciones restringidas en el mismo formato.
+También puede hacer clic en **Importar** para rellenar la lista a partir de un archivo csv con el formato <*url de aplicación*>, <*nombre de aplicación*>, <app publisher> o en **Exportar** para crear un archivo csv que contenga la lista de aplicaciones restringidas en el mismo formato.
 
 
 ## <a name="browser"></a>Explorador

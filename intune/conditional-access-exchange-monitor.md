@@ -1,12 +1,12 @@
 ---
-title: "Supervisión del cumplimiento de acceso condicional de Exchange local y Exchange Online"
-titlesuffix: Azure portal
-description: "Supervisión del cumplimiento de acceso condicional de Exchange local y Exchange Online a través de Azure Portal en Intune"
+title: Supervisar el acceso condicional de Exchange en Microsoft Intune
+titlesuffix: 
+description: "Supervise el cumplimiento de acceso condicional de Exchange local y Exchange Online a través de Azure Portal de Intune."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 04/24/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2025bbb008be090420ebb3778fc37a0b1790608b
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 932dfe32c6df5741615d9db9f303aaee7785d3a3
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Supervisión del cumplimiento del acceso condicional en Exchange local y Exchange Online en Intune
 
@@ -36,25 +36,25 @@ A partir de la versión 1704 de Intune, los administradores pueden ver informaci
 
 2.  Después de iniciar sesión correctamente, verá el **Panel de Azure**.
 
-3.  Elija **Más servicios** en el menú izquierdo y, luego, escriba **Intune** en el filtro del cuadro de texto.
+3.  Elija **Todos los servicios** en el menú de la izquierda y, luego, escriba **Intune** en el filtro del cuadro de texto.
 
 4.  Elija **Intune** y aparecerá el **panel de Intune**.
 
 5.  Elija **Acceso condicional** y luego **Introducción**.
 
-6.  Elija una de las tres áreas (**Bloqueado**, **En cuarentena** o **Permitido**) en el gráfico para ver los informes de cumplimiento de acceso condicional.
+6.  Elija una de las tres áreas (**Permitido**, **Bloqueado** o **Cuarentena**) en el gráfico para ver los informes de cumplimiento de acceso condicional.
 
-    ![Panel de acceso condicional](./media/CA-reporting-intune-1.png)
+    ![Imagen del panel de acceso condicional](./media/CA-reporting-intune-1.png)
 
-Una vez que elija una de las tres áreas, puede ver más detalles acerca de los dispositivos que se permiten, se bloquean o se ponen en cuarentena.
+Una vez que elija una de las tres áreas, puede ver más detalles sobre los dispositivos que se permiten, se bloquean o se ponen en cuarentena.
 
-También puede desglosar en dispositivos específicos para ver más detalles. Por ejemplo, el dispositivo seleccionado en la imagen siguiente está bloqueado. Intune le ofrece la opción de quitar los datos corporativos de la hoja de informe de cumplimiento de acceso condicional.
+También puede desglosar en dispositivos específicos para ver más detalles. Por ejemplo, el dispositivo seleccionado en la siguiente imagen está bloqueado. Intune le ofrece la opción de quitar los datos corporativos del panel de informe de cumplimiento de acceso condicional.
 
-![Informes de detalles de dispositivo de acceso condicional](./media/CA-reporting-intune-3.png)
+![Imagen de informes de detalles de dispositivo de acceso condicional](./media/CA-reporting-intune-3.png)
 
-En la hoja de detalles del dispositivo, puede ver más información:
+En el panel de detalles del dispositivo, puede ver más información:
 
--   **Información general:** puede ver propiedades del dispositivo como la versión del SO, el modelo de dispositivo, la propiedad, el número de serie, el fabricante del dispositivo, el número de teléfono y la última vez que se protegió.
+-   **Información general:** puede ver propiedades del dispositivo como la versión del sistema operativo, el modelo de dispositivo, la propiedad, el número de serie, el fabricante del dispositivo, el número de teléfono y la última vez que se protegió.
 
 -   **Propiedades:** puede establecer la propiedad del dispositivo (personal o corporativo).
 

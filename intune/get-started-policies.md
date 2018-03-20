@@ -1,12 +1,12 @@
 ---
-title: "Introducción a las directivas"
-titlesuffix: Azure portal
-description: Cree directivas para evitar que los usuarios usen sus dispositivos de forma no autorizada.
+title: "Introducción a las directivas en Microsoft Intune"
+titlesuffix: 
+description: Cree directivas para ayudar a proteger los datos corporativos y administrar los dispositivos que utilizan los usuarios finales para acceder a recursos de la empresa.
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,22 +15,22 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ea5fe13f7361b968f3158a617275cd08daedac1c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8af61eb207a8f9b2dc74650627fcab0e4d858904
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="get-started-with-policies"></a>Introducción a las directivas
+# <a name="get-started-with-creating-policies"></a>Introducción a la creación de directivas
 
-Uno de los objetivos principales de la introducción a Intune es la inscripción de dispositivos para garantizar que son compatibles con las directivas de la empresa. Las directivas de cumplimiento no solo le ayudan a administrar tipos de dispositivo especializados, como los quioscos propiedad de la empresa, sino también dispositivos sin usuario, tabletas y dispositivos personales (Bring Your Own).
+Uno de los objetivos principales de la introducción a Intune es la inscripción de dispositivos para garantizar que cumplen las directivas de la empresa. Las directivas de cumplimiento no solo le ayudan a administrar tipos de dispositivo especializados, como los quioscos propiedad de la empresa, sino también dispositivos sin usuario, tabletas y dispositivos personales (Bring Your Own).
 
-![Panel de cumplimiento con muy pocos datos](/intune/media/generic-compliance-dashboard.png)
+![Panel de cumplimiento con pocos datos](/intune/media/generic-compliance-dashboard.png)
 
-Las directivas de cumplimiento proporcionan las siguientes funciones de administración para dispositivos móviles:
+Administre dispositivos móviles en las siguientes áreas mediante directivas de cumplimiento:
 
 * Regular el número de dispositivos que cada usuario inscribe
-* Administrar la configuración de dispositivos (por ejemplo, cifrado de nivel de dispositivo, longitud de la contraseña, uso de la cámara)
+* Administrar la configuración del dispositivo (por ejemplo, el cifrado de nivel de dispositivo, la longitud de la contraseña o el uso de la cámara)
 * Entregar aplicaciones, perfiles de correo electrónico, perfiles de VPN, etc.
 * Evaluar los criterios de nivel de dispositivo para las directivas de cumplimiento de seguridad
 
@@ -45,13 +45,14 @@ Cree directivas de cumplimiento para cada plataforma de manera independiente. Pa
 
 __¿Cómo se crea una directiva?__
 
-1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
-2. **Buscar recursos**, busque **Intune**.
+1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. Seleccione **Cumplimiento del dispositivo**.
-4. En la hoja **Cumplimiento del dispositivo**, seleccione **Directivas**.
-5. Seleccione **Crear directiva**, después rellene los detalles como **Nombre** y **Descripción**. Pulse **iOS** como la **Plataforma**.
+4. En el panel **Cumplimiento del dispositivo**, seleccione **Directivas**.
+5. Seleccione **Crear directiva**, después rellene los detalles como **Nombre** y **Descripción**. 
+6. Pulse **iOS** como la **Plataforma**.
 6. En **Configuración**, seleccione **Seguridad del sistema**, después cambie **Requerir una contraseña para desbloquear dispositivos móviles** por **Requerir**. También puede establecer otras reglas, como **Longitud mínima de contraseña**, **Tipo de contraseña requerida** y **Número de caracteres no alfanuméricos en la contraseña**. Cuando haya terminado de configurar su directiva, seleccione **Aceptar**.
-7. Vuelva a la hoja **Crear directiva**, después seleccione **Crear**.
+7. Vuelva al panel **Crear directiva** y, después, seleccione **Crear**.
 8. Una vez que se haya creado la directiva, seleccione **Asignaciones** para asignarla a su grupo de prueba. Seleccione su grupo de prueba, que debe tener su usuario de prueba incluido y, después, asigne la directiva a ese grupo haciendo clic en **Guardar**.
 9. Espere unos minutos, después el dispositivo inscrito debe pedirle que necesita una contraseña actualizada para seguir siendo compatible con la directiva de empresa. También puede comprobar esto manualmente en la **aplicación de portal de empresa para iOS** pulsando en el nombre del dispositivo, después en el botón **Sincronizar**.
 

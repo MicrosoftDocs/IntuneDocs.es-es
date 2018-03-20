@@ -1,27 +1,25 @@
 ---
-title: "Configuración personalizada de Intune para dispositivos Windows Phone 8.1"
-titleSuffix: Azure portal
+title: "Configuración personalizada de Microsoft Intune para dispositivos que ejecutan Windows Phone 8.1"
+titleSuffix: 
 description: "Conozca la configuración que puede usar en un perfil personalizado de Windows Phone 8.1."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 05/04/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 21c55041-3821-4a62-9f85-855b97dba269
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bbe76f454575d9f09617b12e3811b0c7d5a75ca1
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: f45b2dd9cab0ccfd912d1f1348d90264bf8906b8
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="custom-settings-for-windows-phone-81-devices-in-microsoft-intune"></a>Configuración personalizada para dispositivos Windows Phone 8.1 en Microsoft Intune
+# <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-phone-81"></a>Configuración de dispositivo personalizada de Microsoft Intune para dispositivos que ejecutan Windows Phone 8.1
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -32,12 +30,12 @@ Esta funcionalidad tiene como fin permitirle asignar opciones de configuración 
 ## <a name="custom-policy-settings-for-windows-phone-81-devices"></a>Configuración de directiva personalizada para dispositivos Windows Phone 8.1
 
 1. Siga las instrucciones que se indican en [Configuración personalizada de dispositivos de Intune](custom-settings-configure.md) para comenzar.
-2. En la hoja **Create Profile** (Crear perfil), elija **Configuración** para agregar uno o varios valores de configuración de OMA-URI.
-3. En la hoja **Add Row** (Agregar fila), configure los siguientes valores para cada opción:
+2. En el panel **Configuración OMA-URI personalizada**, elija **Agregar** para agregar uno o varios valores de OMA-URI.
+3. En el panel **Agregar fila**, configure los siguientes valores para cada opción:
     - **Nombre**: escriba un nombre único para el valor OMA-URI que le ayude a identificarlo en la lista de valores de configuración.
     - **Descripción**: proporcione una descripción que ofrezca información general del valor y otra información relacionada que le ayude a encontrarlo.
     - **OMA-URI**: especifique la configuración OMA-URI para la que quiere suministrar un valor.
-    - **Tipo de datos**: seleccione el tipo de datos en el que especificará este valor OMA-URI. Elija entre **Cadena**, **fecha y hora**, **Entero**, **Punto flotante** o **Booleano**.
-    - **Valor**: escriba el valor que quiere asociar con la configuración OMA-URI especificada.
+    - **Tipo de datos**: seleccione el tipo de datos en el que especificar este valor OMA-URI. Elija entre **Cadena**, **Cadena (XML)**, **Fecha y hora**, **Entero**, **Punto flotante**, **Booleano** o **Base64**.
+    - **Valor**: escriba el valor o el archivo que quiere asociar con la configuración OMA-URI especificada.
 
 4. Haga clic en **Aceptar** cuando haya terminado y luego siga agregando más valores según sea necesario.

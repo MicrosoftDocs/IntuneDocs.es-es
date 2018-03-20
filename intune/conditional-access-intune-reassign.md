@@ -1,10 +1,10 @@
 ---
-title: "Migrar directivas de acceso condicional desde el Portal de Intune clásico a Azure Portal"
-titlesuffix: Azure portal
-description: "Migre directivas de acceso condicional desde el Portal de Intune clásico a Azure Portal."
+title: "Migración del acceso condicional a Azure Portal"
+titlesuffix: Microsoft Intune
+description: "Reasigne las directivas de acceso condicional que se han creado anteriormente en el Portal de Intune clásico a Azure Portal."
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
@@ -15,15 +15,15 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bdb64d4cc668bf382c39a235111547c2f4e21c9c
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 80c8c994486dd340c9037817854eb35b32ab3a9e
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Reasignar directivas de acceso condicional desde el Portal de Intune clásico a Azure Portal
 
-A partir del nuevo Azure Portal, el acceso condicional ofrece compatibilidad para varias directivas por aplicación junto con una mayor personalización.
+A partir del nuevo Azure Portal, el acceso condicional ofrece compatibilidad para varias directivas por aplicación junto con una mayor personalización. Si previamente ha creado directivas de acceso condicional en el Portal de Intune clásico, se pueden migrar a Azure Portal. 
 
 ## <a name="before-you-begin"></a>Antes de comenzar
 
@@ -79,7 +79,7 @@ La hoja **Protección de aplicaciones de Intune** en Azure Portal permite a los 
 
 4. En la **sección Asignaciones**, pulse **Usuarios y grupos** para dirigirse a la nueva directiva de acceso condicional.
     
-    ![Comparación de la interfaz de usuario de grupos de usuarios entre Intune y Azure Portal](./media/reassign-ca-1.png)
+    ![Imagen en la que se muestra una comparación de la interfaz de usuario de grupos de usuarios entre el Portal de Intune y Azure Portal](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 
     > La selección que hace para Azure Portal debe corresponder a la selección que ha realizado para el portal clásico. Por ejemplo, si ha seleccionado todos los usuarios en el Portal de Intune clásico, seleccione **Todos los usuarios** en Azure Portal. Además, si ha seleccionado la opción **Grupos exentos** en el Portal de Intune clásico, excluya también esos grupos seleccionados en Azure Portal.
@@ -94,7 +94,7 @@ La hoja **Protección de aplicaciones de Intune** en Azure Portal permite a los 
 
 9. Haga clic en **Listo**.
 
-    ![Comparación de la interfaz de usuario de aplicaciones en la nube entre Intune y Azure Portal](./media/reassign-ca-3.png)
+    ![Imagen en la que se muestra una comparación de la interfaz de usuario de una aplicación en la nube entre el Portal de Intune y Azure Portal](./media/reassign-ca-3.png)
 
     > [!TIP] 
     > Si tiene varias aplicaciones con la misma directiva, considere la posibilidad de consolidarlas en una única directiva en Azure Portal.
@@ -105,7 +105,7 @@ La hoja **Protección de aplicaciones de Intune** en Azure Portal permite a los 
 
 12. Cuando haya terminado de seleccionar las plataformas de dispositivo, haga clic en **Listo** dos veces.
 
-    ![Comparación de la interfaz de usuario de plataformas de dispositivos entre Intune y Azure Portal](./media/reassign-ca-4.png)
+    ![Imagen en la que se muestra una comparación de la interfaz de usuario de plataforma de dispositivo entre el Portal de Intune y Azure Portal](./media/reassign-ca-4.png)
 
     > [!TIP] 
     > Si ha seleccionado plataformas individuales en el Portal de Intune clásico, selecciónelas en Azure Portal.
@@ -119,7 +119,7 @@ La hoja **Protección de aplicaciones de Intune** en Azure Portal permite a los 
 
 15. Cuando haya terminado de seleccionar la aplicación cliente, haga clic en **Listo** dos veces.
 
-    ![Comparación de la interfaz de usuario de aplicaciones cliente entre Intune y Azure Portal](./media/reassign-ca-6.png)
+    ![Imagen en la que se muestra una comparación de la interfaz de usuario de aplicaciones cliente entre el Portal de Intune y Azure Portal](./media/reassign-ca-6.png)
 
 16. Si ha seleccionado las opciones del explorador en el Portal de Intune clásico, seleccione **Explorador** y **Aplicaciones móviles y aplicaciones de escritorio** en Azure Portal. En caso de que no haya elegido las opciones del explorador en el Portal de Intune clásico, pulse solo **Aplicaciones móviles y aplicaciones de escritorio**. 
 
@@ -133,7 +133,7 @@ La hoja **Protección de aplicaciones de Intune** en Azure Portal permite a los 
 
 21. Active la alternancia **Habilitar directiva** en la hoja de la directiva de acceso condicional **Nueva** y, después, haga clic en **Crear**.
 
-    ![Habilitar la comparación de la interfaz de usuario de directivas de acceso condicional entre Intune y Azure Portal](./media/reassign-ca-11.png)
+    ![Imagen en la que se muestra cómo habilitar la comparación de la interfaz de usuario de directivas de acceso condicional entre el Portal de Intune y Azure Portal](./media/reassign-ca-11.png)
 
 ## <a name="reassign-intune-device-based-conditional-access-policies-for-eas-clients"></a>Reasignar las directivas de acceso condicional basadas en el dispositivo de Intune para clientes de EAS
 
@@ -147,7 +147,7 @@ Si ha configurado las opciones de Exchange Active Sync como parte de una directi
 
 4. En la sección **Asignaciones**, pulse **Usuarios y grupos** para dirigirse a la nueva directiva de acceso condicional.
 
-    ![Comparación de la interfaz de usuario de grupos de usuarios entre Intune y Azure Portal](./media/reassign-ca-12.png)
+    ![Imagen en la que se muestra una comparación de la interfaz de usuario de grupos de usuarios entre el Portal de Intune y Azure Portal](./media/reassign-ca-12.png)
 
     > [!IMPORTANT] 
     > La selección que hace para Azure Portal debe corresponder a la selección que ha realizado para Azure Portal. Por ejemplo, si ha seleccionado todos los usuarios en el Portal de Intune clásico, seleccione **Todos los usuarios** en Azure Portal. Además, si ha seleccionado la opción **Grupos exentos** en el Portal de Intune clásico, excluya también esos grupos seleccionados en Azure Portal.
@@ -158,14 +158,14 @@ Si ha configurado las opciones de Exchange Active Sync como parte de una directi
 
 7. En la hoja **Aplicaciones en la nube**, haga clic en **Seleccionar aplicaciones** y pulse **Exchange Online**. Después, haga clic en **Seleccionar** y **Listo**.
 
-    ![Comparación de la interfaz de usuario de aplicaciones en la nube entre Intune y Azure Portal](./media/reassign-ca-14.png)
+    ![Imagen en la que se muestra una comparación de la interfaz de usuario de aplicaciones en la nube entre el Portal de Intune y Azure Portal](./media/reassign-ca-14.png)
 
     > [!IMPORTANT] 
     > Las directivas de acceso condicional de clientes de EAS no pueden incluir ninguna otra aplicación en la nube.
 
 8. En la hoja **Condiciones**, pulse **Aplicaciones cliente** y, después, seleccione la aplicación cliente aplicable. Si ha decidido bloquear clientes que no admite Intune, use la opción **Aplicar directiva solo en las plataformas compatibles**.
 
-    ![Comparación de la interfaz de usuario de aplicaciones cliente entre Intune y Azure Portal](./media/reassign-ca-15.png)
+    ![Imagen en la que se muestra una comparación de la interfaz de usuario de aplicaciones cliente entre el Portal de Intune y Azure Portal](./media/reassign-ca-15.png)
 
 9. Cuando haya terminado de seleccionar la aplicación cliente, haga clic en **Listo** dos veces.
 
@@ -173,11 +173,11 @@ Si ha configurado las opciones de Exchange Active Sync como parte de una directi
 
 11. En **Grant Access Controls** (Conceder controles de acceso), pulse **Requerir que el dispositivo esté marcado como compatible** y, después, haga clic en **Seleccionar**.
 
-    ![Comparación de la interfaz de usuario de concesión de acceso entre Intune y Azure Portal](./media/reassign-ca-16.png)
+    ![Imagen en la que se muestra una comparación de la interfaz de usuario de concesión de acceso entre el Portal de Intune y Azure Portal](./media/reassign-ca-16.png)
 
 12. Active la alternancia **Habilitar directiva** en la hoja de la directiva de acceso condicional **Nueva** y, después, haga clic en **Crear**.
 
-    ![Habilitar la comparación de la interfaz de usuario de directivas de acceso condicional entre Intune y Azure Portal](./media/reassign-ca-17.png)
+    ![Imagen en la que se muestra Habilitar la comparación de la interfaz de usuario de directivas de acceso condicional entre el Portal de Intune y Azure Portal](./media/reassign-ca-17.png)
 
 ## <a name="disable-conditional-access-policies-in-the-intune-classic-portal"></a>Deshabilitar directivas de acceso condicional en el Portal de Intune clásico
 
@@ -196,7 +196,7 @@ Después de que haya reasignado las directivas de acceso condicional en Azure Po
 
 4.  Desactive la opción **Habilitar directiva de acceso condicional** y, después, haga clic en **Guardar**.
 
-    ![Deshabilitar directivas de acceso condicional en el Portal de Intune clásico](./media/reassign-ca-18.png)
+    ![Imagen en la que se muestra Deshabilitar directivas de acceso condicional en el Portal de Intune clásico](./media/reassign-ca-18.png)
 
 ## <a name="see-also"></a>Vea también
 

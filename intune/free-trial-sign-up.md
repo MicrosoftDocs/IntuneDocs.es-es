@@ -6,7 +6,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 03/04/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.technology:
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
 ms.custom: 
-ms.openlocfilehash: 3b4d6528acd42a84c7d87968874d36199b661a90
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 08fa759515d437e40a751ce39b3ef617dd92e83f
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Suscríbase para disfrutar de una prueba gratuita de Microsoft Intune
 
@@ -32,44 +32,20 @@ Este artículo le guía por los pasos para registrarse en una versión de prueba
 
 2. Al final del proceso de registro, recibe un mensaje con la información de la nueva cuenta. <br/> ![Imagen de la información de cuenta](./media/2-end-of-sign-up-process.png) <br/>En este punto, si hace clic en **You're ready to go** (Está listo para comenzar), se le dirige al Centro de administración de Office 365, donde puede agregar usuarios al entorno de prueba. <br/><br/>Sin embargo, si quiere ir directamente al portal de Intune Azure, abra una nueva ventana de explorador y escriba **https://portal.azure.com** en la barra de direcciones. Se le dirige a la página de inicio de sesión de Azure donde puede usar las credenciales que se le asignaron para iniciar sesión. Use esta dirección siempre que quiera iniciar sesión en la versión de prueba de Intune. <br/> ![Imagen de la página de inicio de sesión del portal Azure](./media/azure-portal-signin.png)
 
-La primera vez que inicie sesión en el portal de Intune Azure, no verá Intune en el panel de Azure. Para agregar el servicio de Intune a su panel de Azure:
-1. Elija **More services >** (Más servicios) en la lista de servicios de Azure situada a la izquierda del panel y escriba **Intune** en el cuadro de búsqueda.
+La primera vez que inicie sesión en [Azure Portal](https://portal.azure.com) de Intune, puede que no vea Intune en el panel de Azure. Para agregar el servicio de Intune a su panel de Azure:
+1. Elija **Todos los servicios >** en la lista de servicios de Azure situada a la izquierda del panel y escriba **Intune** en el cuadro de búsqueda.
 2. Pulse **Intune** en la lista y seleccione la estrella para agregar el servicio a la lista de servicios.<br/> ![Imagen de la selección de Intune de la lista de servicios](./media/azure-add-intune1.png)
 3. Pulse **Intune** en la lista de servicios para abrir el panel de Intune.
 
 Si se registra en una versión de prueba, recibirá también un mensaje de correo electrónico con la información de la cuenta en la dirección que haya proporcionado durante el proceso de registro. Este mensaje confirma que la versión de prueba está activa.
 
-
-
 ## <a name="keeping-the-admin-experiences-straight"></a>Mantener en orden las experiencias de administración
 
-
-Existen tres portales que usa en Azure Portal de Intune:
-- El panel de Intune en Azure ([portal.azure.com](https://portal.azure.com)) donde puede explorar el [funcionalidades de Intune en el portal de Azure](what-is-intune.md).
+Puede usar dos portales:
+- El panel de Intune en Azure ([portal.azure.com](https://portal.azure.com)) donde puede explorar las [funcionalidades de Intune](what-is-intune.md). Normalmente, realizará su trabajo en el panel de Intune.
 - El Centro de administración de Office 365 ([portal.office.com](https://portal.office.com)) donde puede agregar y administrar usuarios si no usa Azure Active Directory para esa tarea. También puede administrar otros aspectos de su cuenta, como la facturación y el soporte técnico.
-- La consola de administración de Intune ([manage.microsoft.com](https://manage.microsoft.com)) donde puede explorar características que todavía no se han agregado a Azure.
-
-Normalmente, realizará su trabajo en el panel de Intune que se muestra a continuación. Este es el sitio donde configurar y administrar grupos, directivas, dispositivos y aplicaciones.
-
-Puede ir a la consola de administración de Intune desde el panel pulsando **Portal clásico** en la parte superior del panel.
-
-Para volver al portal de Intune Azure, escriba https://portal.azure.com en la barra de direcciones del explorador y, después, seleccione **Intune** de nuevo en la lista de servicios.
-
- ![Imagen del panel de Intune](./media/intune-azure-dashboard.png)
-
-
-Use el Centro de administración de Office 365, que aparece a continuación, para agregar y administrar los usuarios y otros aspectos de su cuenta, incluida la facturación y el soporte técnico.
-
-![Imagen del centro de administración de Office 365](./media/office-admin-center.png)
-
-Para ir desde el Centro de administración de Office 365 al panel de Intune, escriba https://portal.azure.com en la barra de direcciones del explorador. Pulse **Intune** en la lista de servicios.
-
-Para ir de Intune al Centro de administración de Office 365 de nuevo, escriba https://portal.office.com en la barra de direcciones del explorador. Si ya ha iniciado sesión en Intune, se le dirigirá directamente al Centro de administración de Office 365.
 
 ## <a name="next-steps"></a>Pasos siguientes
-
-### <a name="intune-in-the-azure-portal"></a>Intune en el portal de Azure
-Más información sobre [Intune en Azure Portal](what-is-intune.md)
 
 ### <a name="integration-with-other-products"></a>Integración con otros productos
 Obtenga más información sobre el uso de las cuentas de usuario de Azure Active Directory con Intune:

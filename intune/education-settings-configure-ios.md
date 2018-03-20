@@ -6,7 +6,7 @@ keywords:
 author: barlanmsft
 ms.author: barlan
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f7bbf0ab4196f5e86d7f25aa23f12d89f1bb5ee5
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: d9b2e6df6c40ec142554db22a64d362e02884c1d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>Configuración de Intune para la aplicación Classroom para iOS
 
@@ -72,12 +72,12 @@ Puede importar información a SDS mediante uno de los siguientes métodos:
 
 ### <a name="configure-general-settings"></a>Configuración de las opciones generales
 
-1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
-3.  En la hoja **Intune**, elija **Configurar dispositivos**.
-4.  En la hoja **Configuración del dispositivo**, elija **Administrar** > **Perfiles**.
-5.  En la hoja de perfiles, elija **Create Profile** (Crear perfil).
-6.  En la hoja **Crear perfil**, escriba un **nombre** y una **descripción** para el perfil Educación de iOS.
+1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+3. En el panel **Intune**, elija **Configuración del dispositivo**.
+2. En el panel **Configuración del dispositivo**, en la sección **Administrar**, elija **Perfiles**.
+5.  En el panel Perfiles, elija **Crear perfil**.
+6.  En el panel **Crear perfil**, escriba un **Nombre** y una **Descripción** para el perfil Educación de iOS.
 7.  En la lista desplegable **Plataforma**, elija **iOS**.
 8.  En la lista desplegable **Tipo de perfil**, elija **Educación**.
 9.  Elija **Configuración** > **Configurar**.
@@ -94,7 +94,7 @@ Los certificados que crea deben admitir la autenticación de servidor además de
 
 ### <a name="configure-teacher-certificates"></a>Configuración de certificados de profesores
 
-En la hoja **Educación**, elija **Teacher certificates** (Certificados de profesor).
+En el panel **Educación**, elija **Certificados de profesor**.
 
 #### <a name="configure-teacher-root-certificate"></a>Configuración de certificado raíz de profesor
 
@@ -116,8 +116,8 @@ Cuando haya terminado la configuración de los certificados, haga clic en **Acep
 
 ### <a name="configure-student-certificates"></a>Configuración de certificados de estudiantes
 
-1.  En la hoja **Educación**, elija **Student certificates** (Certificados de estudiante).
-2.  En la hoja **Student certificates** (Certificados de estudiante) de la lista de tipos **Student device certificate** (Certificados de dispositivos de estudiantes), elija **1:1**.
+1.  En el panel **Educación**, elija **Certificados de alumno**.
+2.  En el panel **Certificados de alumno** de la lista **Tipos de certificados de dispositivo de alumno**, elija **1:1**.
 
 #### <a name="configure-student-root-certificate"></a>Configuración de certificado raíz de estudiantes
 
@@ -139,10 +139,10 @@ Cuando haya terminado la configuración de los certificados, haga clic en **Acep
 
 ## <a name="finish-up"></a>Finalizar
 
-1.  En la hoja **Educación**, elija Aceptar.
-2.  En la hoja **Create Profile** (Crear perfil), elija **Crear**.
+1.  En el panel **Educación**, elija Aceptar.
+2.  En el panel **Crear perfil**, elija **Crear**.
     
-El perfil se crea y aparece en la hoja de la lista de perfiles.
+Se creará el perfil y aparecerá en el panel con la lista de perfiles.
 
 Asigne el perfil a los dispositivos de estudiante en los grupos de aula que se crearon al sincronizar los datos de la escuela con Azure AD (consulte [Asignación de perfiles de dispositivo](device-profile-assign.md).
 

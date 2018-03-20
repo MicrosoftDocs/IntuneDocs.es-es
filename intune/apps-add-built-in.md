@@ -1,12 +1,12 @@
 ---
-title: "Agregar aplicaciones integradas a dispositivos móviles mediante Intune"
-titlesuffix: Azure portal
+title: "Adición de aplicaciones integradas a dispositivos móviles con Microsoft Intune"
+titlesuffix: 
 description: "Obtenga información sobre cómo puede usar Intune para facilitar la instalación de aplicaciones integradas en dispositivos móviles."
 keywords: 
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/13/2018
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 0ec8de66-5a0f-4c8d-afbf-c2becc7d6eec
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d622f2cb8c6b3e8c9aace4e805108ccfa71eb4d2
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: 7d90f86babc2f73acd5ccd1b454c636c6d4f79b2
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-add-built-in-apps-to-microsoft-intune"></a>Cómo agregar aplicaciones integradas a Microsoft Intune
 
@@ -33,7 +33,7 @@ Las aplicaciones **integradas** facilitan la asignación de aplicaciones adminis
 ## <a name="add-built-in-app"></a>Agregar una aplicación integrada
 
 Para agregar una aplicación integrada a las aplicaciones que tiene disponibles en Microsoft Intune, siga los pasos que se describen a continuación.
-1.  Inicie sesión en el portal de Azure.
+1.  Inicie sesión en Azure Portal.
 2.  Visualice la hoja de Microsoft Intune, eligiendo **Más servicios** > **Supervisión y administración** > **Intune**.
 3.  En la hoja **Intune**, elija **Aplicaciones móviles**.
 4.  En la hoja **Aplicaciones móviles**, elija **Aplicaciones** en el grupo **Administrar**.
@@ -67,4 +67,4 @@ Puede modificar la información sobre la aplicación integrada. Esta informació
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Ahora puede asignar las aplicaciones a los grupos de su preferencia. Para obtener ayuda, consulte [Asignación de aplicaciones a grupos](apps-deploy.md).
+- Ahora puede asignar las aplicaciones a los grupos de su preferencia. Para obtener ayuda, consulte [Asignación de aplicaciones a grupos](apps-deploy.md).

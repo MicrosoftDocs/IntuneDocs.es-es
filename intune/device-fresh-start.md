@@ -1,12 +1,11 @@
 ---
-title: Restablecimiento de dispositivos Windows 10 con Intune
-titlesuffix: Azure portal
-description: Aprenda a usar Empezar de cero para restablecer equipos con Windows 10 que ejecutan Intune.
+title: 'Restablecimiento de dispositivos Windows 10 con Microsoft Intune: Azure | Microsoft Docs'
+description: "Use Empezar de cero para quitar o desinstalar aplicaciones en equipos con Windows 10 mediante Microsoft Intune, incluidas las aplicaciones preinstaladas de los OEM. También puede mantener el contenido de la carpeta Inicio mediante la configuración que indica si se conservan los datos del usuario."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 08/09/2017
+ms.date: 03/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,29 +13,31 @@ ms.technology:
 ms.assetid: 5aa5cfa3-c483-4099-b40f-578ff8dca425
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c45d3e47c90ca7739b3aa6eee1bf31d787a82264
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: d17c9dc11791f32f0c2c1e7faa88966c112fc6a5
+ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/09/2018
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>Uso de Empezar de cero para restablecer dispositivos Windows 10 con Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-La acción del dispositivo **Empezar de cero** elimina las aplicaciones que se instalaron en un equipo Windows 10 mediante la ejecución de Creators Update y luego actualiza automáticamente el equipo a la versión más reciente de Windows.
-Esta acción puede servir para ayudar a quitar las aplicaciones preinstaladas (OEM) que a menudo se entregan con los nuevos PC. Puede configurar si se conservan los datos de usuario cuando se lleva a cabo esta acción de dispositivo. En este caso, se quitan las aplicaciones y la configuración, pero se conserva el contenido de la carpeta de inicio de los usuarios.
+La acción de dispositivo **Empezar de cero** permite quitar las aplicaciones que están instaladas en un equipo que ejecuta Windows 10 Creators Update. Después, actualiza automáticamente el equipo a la versión más reciente de Windows.
 
-## <a name="how-to-use-fresh-start"></a>Cómo usar Empezar de cero
+Esta acción ayuda a eliminar aplicaciones preinstaladas (OEM) que normalmente se instalan con un nuevo equipo. Para mantener el contenido de la carpeta Inicio del usuario y quitar solo las aplicaciones y la configuración, use el valor `if user data is retained`.
 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
-3. En el panel **Intune**, elija **Dispositivos**.
-4. En el panel **Dispositivos**, seleccione **Todos los dispositivos**.
-5. En la lista de dispositivos que administra, elija un dispositivo de Windows 10 Escritorio y luego elija la acción de dispositivo remoto **Empezar de cero**.
+> [!IMPORTANT]
+> La característica Empezar de cero anula la inscripción del dispositivo de Intune, pero este sigue unido en Azure Active Directory.
+
+## <a name="use-fresh-start"></a>Uso de Empezar de cero
+
+1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
+2. Elija **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
+3. Seleccione **Dispositivos** y, después, **Todos los dispositivos**.
+4. En la lista de dispositivos que administra, elija un dispositivo de Windows 10 Desktop y, luego, seleccione **Empezar de cero**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Para ver el estado de la acción que acaba de realizar, en el panel **Dispositivos y grupos**, elija **Acciones de dispositivo**.
-
+Para ver el estado de esta acción, seleccione **Acciones de dispositivo** (**Microsoft Intune** > **Dispositivos**).

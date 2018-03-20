@@ -1,29 +1,29 @@
 ---
-title: Restricciones de dispositivos de Intune para Windows 10 Team
-titlesuffix: Azure portal
-description: Aprenda sobre las restricciones de dispositivos disponibles para dispositivos Windows 10 Team.
+title: Restricciones de dispositivos de Microsoft Intune para Windows 10 Team
+titlesuffix: 
+description: "Obtenga información sobre las restricciones de dispositivos disponibles para dispositivos que ejecutan Windows 10 Team."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: 677c41a2-5344-4c52-85f0-809dce3a5d5b
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3648f8b273f666d1898226f3da8580e55a6bc6f8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 69cceda6857412f7e9a50c58d075caeee4ea9c20
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="windows-10-team-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos Windows 10 Team en Microsoft Intune
+# <a name="microsoft-intune-windows-10-team-device-restriction-settings"></a>Configuración de restricciones de dispositivos Windows 10 Team de Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+En este artículo, se muestran las opciones de configuración de restricciones de dispositivos de Microsoft Intune que puede configurar para los dispositivos que ejecutan Windows 10 Team.
 
 
 ## <a name="apps-and-experience"></a>Aplicaciones y experiencia
@@ -47,7 +47,7 @@ Para conectarse a Visión operativa de Azure, se debe especificar un **Id. de á
 
 - **PIN para proyección inalámbrica**: especifica si debe escribir un PIN para poder usar las funcionalidades de proyección inalámbrica del dispositivo.
 - **Proyección inalámbrica de Miracast**: seleccione esta opción si quiere permitir que el dispositivo Windows 10 Team use los dispositivos habilitados para Miracast para proyectar.
-- **Canal de proyección inalámbrica de Miracast**: seleccione el canal de Miracast que se usará para establecer la conexión.
+- **Canal de proyección inalámbrica de Miracast**: seleccione el canal de Miracast que se usa para establecer la conexión.
 
 
 ## <a name="next-steps"></a>Pasos siguientes

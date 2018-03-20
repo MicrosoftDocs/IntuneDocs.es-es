@@ -1,7 +1,7 @@
 ---
-title: Conector de Skycure con Intune
-titlesuffix: Azure portal
-description: "Integración del conector de Skycure con Intune."
+title: Conector de Skycure con Microsoft Intune
+titlesuffix: 
+description: "Obtenga información sobre cómo integrar Intune con Skycure Mobile Threat Defense para controlar el acceso de los dispositivos móviles a los recursos corporativos."
 keywords: 
 author: msmimart
 ms.author: mimart
@@ -15,11 +15,11 @@ ms.assetid: df4ce3f6-a093-432c-ab86-7a83865e389e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 333322022882566b55e869e5d6a1a1e2b203b830
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: b3148a24b077dfd491ce06fcf708a81de7d12dc1
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="skycure-mobile-threat-defense-connector"></a>Conector de Mobile Threat Defense de Skycure
 
@@ -69,7 +69,7 @@ Cuando se detectan aplicaciones malintencionadas, como malware, en los dispositi
 
 **Acceso concedido tras la corrección:**
 
-![Aplicaciones malintencionadas detectadas y acceso concedido](./media/skycure-arch-2.png)
+![Acceso concedido en la corrección después de detectar aplicaciones malintencionadas](./media/skycure-arch-2.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Control del acceso basado en amenazas a la red
 

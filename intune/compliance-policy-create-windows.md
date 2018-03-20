@@ -1,30 +1,30 @@
 ---
-title: "Creación de una directiva de cumplimiento para Windows"
-titleSuffix: Azure portal
-description: Aprenda a crear una directiva de cumplimiento para dispositivos Windows.
+title: "Creación de una directiva de cumplimiento de dispositivos Windows en Microsoft Intune"
+titleSuffix: 
+description: Cree una directiva de cumplimiento de dispositivos de Microsoft Intune para dispositivos Windows para poder especificar los requisitos que debe cumplir un dispositivo para que sea compatible.
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 2/13/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fe5a66ca91181d0cebdaea846f0ee08f9252d76b
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: 32af54e3e753e7ded3c86d9d44b793da7fe2e9c0
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Creación de una directiva de cumplimiento de dispositivos para dispositivos Windows en Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Las directivas de cumplimiento se crean para cada plataforma. Puede crear una directiva de cumplimiento en el portal de Azure. Para aprender más sobre lo que son las directivas de cumplimiento, consulte el tema [¿Qué es el cumplimiento de los dispositivos?](device-compliance.md). Para conocer los requisitos previos que deben satisfacerse antes de crear una directiva de cumplimiento, consulte el tema [Introducción al cumplimiento de dispositivos](device-compliance-get-started.md).
+Una directiva de cumplimiento de dispositivos de Intune para Windows especifica las reglas y la configuración que los dispositivos Windows deben cumplir para que se consideren compatibles. Estas directivas se pueden usar con el acceso condicional para permitir o bloquear el acceso a recursos de la empresa, y se pueden obtener informes de dispositivos y realizar acciones en caso de incumplimiento. Las directivas de cumplimiento de dispositivos para cada plataforma se crean en Azure Portal de Intune. Para obtener más información sobre las directivas de cumplimiento y los requisitos previos que deben satisfacerse antes de crear una directiva de cumplimiento, consulte [Introducción a las directivas de cumplimiento de dispositivos](device-compliance-get-started.md).
 
 En la tabla siguiente se describe cómo administrar la configuración de no conformidad cuando se usa una directiva de cumplimiento con una directiva de acceso condicional.
 
@@ -51,12 +51,14 @@ En la tabla siguiente se describe cómo administrar la configuración de no conf
 
 ## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Creación de una directiva de cumplimiento en el portal de Azure
 
-1. En la hoja **Intune**, elija **Establecer la compatibilidad con dispositivos**. En **Administrar**, elija **All device compliance policies** (Todas las directivas de cumplimiento de dispositivo) y elija **Crear**.
+1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+1. En el panel **Intune**, elija **Cumplimiento del dispositivo**. En **Administrar**, elija **Directivas** y después **Crear directiva**.
 2. Escriba un nombre y una descripción y elija la plataforma a la que quiere que se aplique esta directiva.
-3. Elija **Requisitos de cumplimiento** para abrir la hoja de requisitos de cumplimiento.  Puede especificar aquí los valores de configuración de **Seguridad**, **Mantenimiento de dispositivos** y **Propiedad del dispositivo**. Cuando haya terminado, elija **Aceptar**.
+3. Elija **Configuración de valores** para especificar aquí las opciones de **Seguridad del sistema**, **Estado de dispositivos** y **Propiedades del dispositivo**. Cuando termine, elija **Aceptar**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
-5. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
+5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
 6. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance policy.
 7. Specify the **Grace period** which determines when that action to take place.  For example, you may want to send a notification as soon as the device is evaluated as noncompliant, but allow some time before enforcing the conditional access policy to block access to company resources like SharePoint online.
 8. Choose **Add** to finish creating the action.
@@ -64,10 +66,10 @@ En la tabla siguiente se describe cómo administrar la configuración de no conf
 
 ## <a name="assign-user-groups"></a>Asignación de grupos de usuarios
 
-Para asignar una directiva de cumplimiento a los usuarios, elija una directiva que haya configurado. Las directivas existentes se pueden encontrar en la hoja **Directivas de cumplimiento normativo**.
+Para asignar una directiva de cumplimiento a los usuarios, elija una directiva que haya configurado. Las directivas existentes se pueden encontrar en el panel **Conformidad del dispositivo: directivas**.
 
-1. Seleccione la directiva que quiere asignar a los usuarios y elija **Asignaciones**. Se abre la hoja donde puede seleccionar **Grupos de seguridad de Azure Active Directory** y asignarlos a la directiva.
-2. Elija **Seleccionar grupos** para abrir la hoja que muestra los grupos de seguridad de Azure AD.  Al elegir **Seleccionar** la directiva se implementa para los usuarios.
+1. Seleccione la directiva que quiere asignar a los usuarios y elija **Asignaciones**. Se abre el panel donde puede seleccionar **grupos de seguridad de Azure Active Directory** y asignarlos a la directiva.
+2. Elija **Grupos seleccionados** para abrir el panel en el que se muestran los grupos de seguridad de Azure AD.  Al elegir **Guardar**, la directiva se implementa para los usuarios.
 
 Ya ha aplicado la directiva a los usuarios. Ahora se evaluará el cumplimiento de los dispositivos usados por los usuarios a los que se aplique la directiva.
 
@@ -78,8 +80,8 @@ Ya ha aplicado la directiva a los usuarios. Ahora se evaluará el cumplimiento d
 ### <a name="password"></a>Contraseña
 
 - **Requerir una contraseña para desbloquear dispositivos móviles:** establezca esta opción en **Sí** para exigir que los usuarios escriban una contraseña antes de poder tener acceso a sus dispositivos.
-- **Permitir contraseñas sencillas:** establezca esta opción en **Sí** para permitir a los usuarios crear contraseñas sencillas como "**1234**"; o "**1111**".
-- **Minimum password length** (Longitud mínima de la contraseña): especifique el número mínimo de dígitos o caracteres que debe contener la contraseña del usuario.
+- **Permitir contraseñas sencillas**: establezca esta opción en **Sí** para permitir a los usuarios crear contraseñas sencillas como "**1234**" o "**1111**".
+- **Longitud mínima de la contraseña**: especifique el número mínimo de dígitos o caracteres que debe contener la contraseña del usuario.
 - **Tipo de contraseña obligatoria:** Especifique si los usuarios deben crear una contraseña **Alfanumérica** o **Numérica**.
 
 En los dispositivos a los que se obtiene acceso con una cuenta de Microsoft y que ejecutan Windows, la directiva de cumplimiento no puede evaluarse correctamente si la longitud mínima de la contraseña es superior a 8 caracteres o si el número mínimo de conjuntos de caracteres es superior a 2.
@@ -93,7 +95,7 @@ En los dispositivos a los que se obtiene acceso con una cuenta de Microsoft y qu
 Si se establece un número superior para este valor de configuración, los usuarios deberán crear contraseñas más complejas. En los dispositivos a los que se obtiene acceso con una cuenta de Microsoft y que ejecutan Windows, la directiva de cumplimiento no puede evaluarse correctamente si la longitud mínima de la contraseña es superior a 8 caracteres o si el número mínimo de conjuntos de caracteres es superior a 2.
 
 - **Minutos de inactividad antes de que sea necesaria la contraseña**: especifica el tiempo de inactividad que transcurre antes de que el usuario deba volver a escribir su contraseña.
-- **Caducidad de contraseña (días)**: seleccione el número de días que faltan para que la contraseña expire y se deba crear una nueva.
+- **Expiración de la contraseña (días)**: seleccione el número de días que faltan para que expire la contraseña y durante los cuales se debe crear otra.
 - **Recordar historial de contraseñas:** use esta opción junto con **Impedir la reutilización de contraseñas anteriores** para impedir que el usuario cree contraseñas que se han usado anteriormente.
 - **Impedir la reutilización de contraseñas anteriores:** si la opción **Recordar historial de contraseñas** está seleccionada, especifique el número de contraseñas usadas previamente que no se pueden volver a usar.
 - **Requerir una contraseña cuando el dispositivo vuelva de un estado de inactividad:** este valor debe usarse junto con el de la opción **Minutos de inactividad antes de que sea necesaria la contraseña**. Se pedirá a los usuarios que escriban una contraseña para acceder a un dispositivo que haya estado inactivo durante el tiempo especificado en la opción **Minutos de inactividad antes de que sea necesaria la contraseña**.
@@ -150,7 +152,7 @@ Especifique el tiempo de inactividad antes de que el usuario deba volver a escri
 
 - **Expiración de la contraseña (días)**: se admite en Windows RT, Windows RT 8.1 y Windows 8.1.
 
-Seleccione el número de días que faltan para que la contraseña expire y sea necesario crear una nueva.
+Seleccione el número de días que faltan para que expire la contraseña y durante los cuales se debe crear otra.
 
 - **Recordar historial de contraseñas:** se admite en Windows RT, Windows RT 8.1 y Windows 8.1.
 
@@ -186,7 +188,7 @@ Cuando un dispositivo usa una versión de SO posterior a la especificada en la r
 Para buscar la versión de sistema operativo que se usará para las opciones **Minimum OS required** (Versión mínima de sistema operativo) y **Maximum OS version allowed** (Versión máxima de sistema operativo permitida), ejecute el comando **winver** desde el símbolo del sistema. El comando winver devuelve la versión de sistema operativo notificada.
 
 - Los equipos con Windows 8.1 devuelven la versión **3**. Si la regla de la versión de sistema operativo se establece en Windows 8.1 para Windows, el dispositivo se notificará como no conforme aunque tenga Windows 8.1.
-- En los equipos que ejecutan Windows 10, la versión debe establecerse en &quot;10.0&quot;+ el número de compilación del sistema operativo devuelto por el comando winver.
+- En los equipos que ejecutan Windows 10, la versión debe establecerse en "10.0" + el número de compilación del sistema operativo devuelto por el comando winver.
 
 ## <a name="windows-holographic-for-business-support"></a>Compatibilidad con Windows Holographic for Business
 

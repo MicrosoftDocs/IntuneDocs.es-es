@@ -1,12 +1,11 @@
 ---
-title: "Configuración de actualizaciones de la edición de Windows 10 con Intune"
-titlesuffix: Azure portal
-description: "Aprenda a usar Intune para actualizar los dispositivos Windows 10 que administra a una edición distinta."
+title: "Actualización de dispositivos Windows 10 con Microsoft Intune: Azure | Microsoft Docs"
+description: "Cree un perfil de dispositivo en Microsoft Intune para actualizar los dispositivos Windows 10 a versiones más recientes. Consulte también las rutas de actualización admitidas para Windows 10 Pro, N, Education, Cloud, Enterprise, Core, Holographic y Mobile."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 12/17/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,25 +14,45 @@ ms.assetid: ae8b6528-7979-47d8-abe0-58cea1905270
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8581aea9db4c04efda5fe9f3281be95330bcd2e2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8084f1b2fbd513de596bd97f4ffec995b6f7aac4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="how-to-configure-windows-10-edition-upgrades-in-microsoft-intune"></a>Configuración de actualizaciones de la edición de Windows 10 en Microsoft Intune
+# <a name="configure-windows-10-edition-upgrade-profile-in-intune"></a>Configuración del perfil de actualización de la edición de Windows 10 en Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Use la información de este artículo para aprender a configurar un perfil de actualización de la edición de Windows 10. Este perfil le permite actualizar automáticamente los dispositivos que ejecutan una edición de Windows 10 a una edición distinta. 
+Configure un perfil de actualización en Intune para actualizar automáticamente los dispositivos que ejecutan una edición de Windows 10 a otra edición. Vea también las rutas de actualización admitidas.
 
-## <a name="before-you-start"></a>Antes de empezar
-Antes de empezar a actualizar dispositivos a la versión más reciente, necesitará uno de los elementos siguientes:
+## <a name="before-you-begin"></a>Antes de comenzar
+Antes de actualizar dispositivos a la versión más reciente, debe cumplir una las siguientes condiciones:
 
-- Una clave de producto válida para instalar la nueva versión de Windows en todos los dispositivos de destino de la directiva (para ediciones de Windows 10 Escritorio). Puede usar claves de activación múltiple (MAK), claves del servidor de administración de claves (KMS) o un archivo de licencia de Microsoft que contenga la información de licencia para instalar la nueva versión de Windows en todos los dispositivos a los que se aplica la directiva (para las ediciones de Windows 10 Mobile y Windows 10 Holographic).
-- Los dispositivos de Windows 10 a los que asigne la directiva deben estar inscritos en Microsoft Intune. No puede usar la directiva de actualización de edición con equipos que ejecutan el software cliente de PC de Intune.
+- Tener una clave de producto válida para instalar la versión actualizada de Windows en todos los dispositivos de destino de la directiva (para ediciones de Windows 10 Desktop). Puede usar claves de activación múltiple (MAK), claves del servidor de administración de claves (KMS) o un archivo de licencia de Microsoft que contenga la información de licencia para instalar la versión actualizada de Windows en todos los dispositivos a los que se aplica la directiva (para las ediciones de Windows 10 Mobile y Windows 10 Holographic).
+- Los dispositivos Windows 10 a los que asigna la directiva están inscritos en Microsoft Intune. No puede usar la directiva de actualización de edición con equipos que ejecutan el software cliente de PC de Intune.
 
-## <a name="supported-upgrade-paths-for-the-windows-10-edition-upgrade-profile"></a>Rutas de actualización admitidas para el perfil de actualización de edición de Windows 10
-Las siguientes listas proporcionan las rutas de actualización admitidas para el perfil de actualización de edición de Windows 10. La edición de Windows 10 a la que se actualizará figura en negrita y a continuación se muestra la lista de las ediciones compatibles desde las que puede actualizar:
+## <a name="supported-upgrade-paths"></a>Rutas de actualización compatibles
+En la siguiente tabla, se muestran las rutas de actualización admitidas para el perfil de actualización de edición de Windows 10.
+
+| Actualización de | Actualización a |
+|---|---|
+| Windows 10 Pro | Windows 10 Education <br/>Windows 10 Enterprise <br/>Windows 10 Pro Education |
+| Edición Windows 10 Pro N | Edición Windows 10 Education N <br/>Edición Windows 10 Enterprise N <br/>Edición Windows 10 Pro Education N | 
+| Windows 10 Pro Education | Windows 10 Education | 
+| Edición Windows 10 Pro Education N | Edición Windows 10 Education N |
+| Windows 10 Cloud | Windows 10 Education <br/>Windows 10 Enterprise <br/>Windows 10 Pro <br/>Windows 10 Pro Education | 
+| Edición Windows 10 Cloud N | Edición Windows 10 Education N <br/>Edición Windows 10 Enterprise N <br/>Edición Windows 10 Pro N <br/>Edición Windows 10 Pro Education N | 
+| Windows 10 Enterprise | Windows 10 Education | 
+| Edición Windows 10 Enterprise N | Edición Windows 10 Education N | 
+| Windows 10 Core | Windows 10 Education <br/>Windows 10 Enterprise <br/>Windows 10 Pro Education | 
+| Edición Windows 10 Core N | Edición Windows 10 Education N <br/>Edición Windows 10 Enterprise N <br/>Edición Windows 10 Pro Education N | 
+| Windows 10 Holographic | Windows 10 Holographic for Business |
+| Windows 10 Mobile | Windows 10 Mobile Enterprise |
+
+
+<!-- Testing a new table on 3/5/18 
+
+The following lists provide the supported upgrade paths for the Windows 10 edition upgrade profile. The Windows 10 edition to upgrade to is in bold followed by the list of supported editions that you can upgrade from:
 
 **Windows 10 Education**
 - Windows 10 Pro
@@ -42,44 +61,44 @@ Las siguientes listas proporcionan las rutas de actualización admitidas para el
 - Windows 10 Enterprise
 - Windows 10 Core
     
-**Edición Windows 10 Education N**    
-- Edición Windows 10 Pro N
-- Edición Windows 10 Pro Education N
-- Edición Windows 10 Cloud N
-- Edición Windows 10 Enterprise N
-- Edición Windows 10 Core N
+**Windows 10 Education N edition**    
+- Windows 10 Pro N edition
+- Windows 10 Pro Education N edition
+- Windows 10 Cloud N edition
+- Windows 10 Enterprise N edition
+- Windows 10 Core N edition
     
 **Windows 10 Enterprise**
 - Windows 10 Pro
 - Windows 10 Cloud
 - Windows 10 Core
     
-**Edición Windows 10 Enterprise N**
-- Edición Windows 10 Pro N
-- Edición Windows 10 Cloud N
-- Edición Windows 10 Core N
+**Windows 10 Enterprise N edition**
+- Windows 10 Pro N edition
+- Windows 10 Cloud N edition
+- Windows 10 Core N edition
     
 **Windows 10 Pro**
 - Windows 10 Cloud
     
-**Edición Windows 10 Pro N**
-- Edición Windows 10 Cloud N
+**Windows 10 Pro N edition**
+- Windows 10 Cloud N edition
     
 **Windows 10 Pro Education**
 - Windows 10 Pro
 - Windows 10 Cloud
 - Windows 10 Core
     
-**Edición Windows 10 Pro Education N**
-- Edición Windows 10 Pro N
-- Edición Windows 10 Cloud N
-- Edición Windows 10 Core N
+**Windows 10 Pro Education N edition**
+- Windows 10 Pro N edition
+- Windows 10 Cloud N edition
+- Windows 10 Core N edition
 
 **Windows 10 Holographic for Business**
 - Windows 10 Holographic
 
 **Windows 10 Mobile Enterprise**
-- Windows 10 Mobile
+- Windows 10 Mobile -->
 
 <!--The following table provides information about the supported upgrade paths for Windows 10 editions in this policy:
 
@@ -102,26 +121,24 @@ Las siguientes listas proporcionan las rutas de actualización admitidas para el
 |Holographic|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![unsupported](./media/x_blk.png)|![supported](./media/check_grn.png) -->
 
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Creación de un perfil de dispositivo que contenga la configuración de restricciones de dispositivos
-1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
-3. En la hoja **Intune**, elija **Configuración del dispositivo**.
-2. En la hoja **Configuración del dispositivo**, elija **Administrar** > **Perfiles**.
-3. En la hoja de perfiles, elija **Create Profile** (Crear perfil).
-4. En la hoja **Create Profile** (Crear perfil), escriba un **nombre** y una **descripción** para el perfil de actualización de la edición.
+1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+2. Seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
+3. Seleccione **Configuración del dispositivo**, **Perfiles** y, luego, **Crear perfil**.
+4. Escriba un **Nombre** y una **Descripción** para el perfil de actualización de la edición.
 5. En la lista desplegable **Plataforma**, elija **Windows 10 y versiones posteriores**.
 6. En la lista desplegable de **tipos de perfil**, elija **Actualización de edición**.
-7. En la hoja **Actualización de edición**, configure las opciones siguientes:
-    - **Edición a la que actualizar**: en la lista desplegable, seleccione la versión de Windows 10 Desktop, Windows 10 Holographic o Windows 10 Mobile a la que quiere actualizar los dispositivos de destino.
-    - **Clave de producto**: especifique la clave de producto que obtuvo de Microsoft, que se puede usar para actualizar todos los dispositivos de Windows 10 Escritorio de destino.<br>Después de crear una directiva que contenga una clave de producto, no se puede editar la clave de producto más adelante. Esto se debe a que la clave se oculta por motivos de seguridad. Para cambiar la clave de producto, debe escribir toda la clave de nuevo.
-    - **Archivo de licencia**: elija **Examinar** para seleccionar el archivo de licencia que obtuvo de Microsoft y que contiene la información de licencia de la edición Windows Holographic o Windows 10 Mobile a la que quiere actualizar los dispositivos de destino.
-8. Cuando haya terminado, vuelva a la hoja **Create Profile** (Crear perfil) y presione **Crear**.
+7. En las propiedades **Actualización de edición**, escriba la siguiente configuración:
+  - **Edición a la que actualizar**: en la lista desplegable, seleccione la versión de Windows 10 Desktop, Windows 10 Holographic o Windows 10 Mobile a la que está actualizando los dispositivos de destino.
+  - **Clave de producto**: escriba la clave de producto que le ha enviado Microsoft, que se puede usar para actualizar todos los dispositivos Windows 10 Desktop de destino. 
+    Después de crear una directiva que contenga una clave de producto, la clave no se puede actualizar y se oculta por motivos de seguridad. Para cambiar la clave de producto, escriba toda la clave de nuevo.
+  - **Archivo de licencia**: elija **Examinar** para seleccionar el archivo de licencia que le ha enviado Microsoft. Este archivo de licencia contiene información de licencia de la edición Windows Holographic o Windows 10 Mobile a la que está actualizando los dispositivos de destino.
+8. Cuando termine, seleccione **Crear** para guardar los cambios.
 
-El perfil se crea y aparece en la hoja de la lista de perfiles.
+El perfil se crea y aparece en la lista de perfiles.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Si desea continuar y asignar este perfil a grupos, consulte [Asignación de perfiles de dispositivo](device-profile-assign.md).
+Para asignar este perfil a grupos, consulte [Asignación de perfiles de dispositivo](device-profile-assign.md).
 
 >[!NOTE]
 >Si quita después la asignación de directiva, la versión de Windows en el dispositivo no se revierte y sigue funcionando con normalidad.
-
