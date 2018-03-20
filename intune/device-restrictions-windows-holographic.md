@@ -1,6 +1,6 @@
 ---
 title: "Configuración de restricción de dispositivos de Microsoft Intune para Windows Holographic for Business"
-titlesuffix: Azure portal
+titleSuffix: 
 description: "Obtenga información sobre la configuración de Intune que se puede usar para controlar los valores de configuración y la funcionalidad en dispositivos que ejecutan Windows Holographic for Business."
 keywords: 
 author: vhorne
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 10bb5a2eac9e72ba5b09a9a6f02932e872328c75
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 9acce571330a754de85b65caf8ec71912fd36a69
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="microsoft-intune-windows-holographic-for-business-device-restriction-settings"></a>Configuración de restricciones de dispositivos Windows Holographic for Business de Microsoft Intune
 

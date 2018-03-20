@@ -1,5 +1,6 @@
 ---
-title: Directiva | Microsoft Docs
+title: Directiva
+titlesuffix: Microsoft Intune
 description: "Tema de referencia sobre la categoría Directiva de las colecciones de entidades de la API de Almacenamiento de datos de Intune."
 keywords: Almacenamiento de datos de Intune
 author: Erikre
@@ -13,11 +14,11 @@ ms.technology:
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab8393f3792611001d15fe4eb031225587126251
-ms.sourcegitcommit: cccbb6730a8c84dc3a62093b8910305081ac9d24
+ms.openlocfilehash: c5546c686a51170c8c854252cddb048685c6b2d2
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="reference-for-policy-entities"></a>Referencia de entidades de directivas
 
@@ -104,10 +105,10 @@ En la tabla siguiente se resume el estado de asignación de directivas de cumpli
 |---------|---------|---------|
 |DateKey  |Clave de fecha del momento en el que se creó el resumen de la directiva de cumplimiento.|20161204 |
 |Unknown  |Número de dispositivos sin conexión o que no se pudieron comunicar con Intune o Azure AD por otros motivos. |5|
-|NotApplicable      |Número de dispositivos a los que no se aplican las directivas de cumplimiento de dispositivos asignadas por el administrador.|201 |
+|No aplicable      |Número de dispositivos a los que no se aplican las directivas de cumplimiento de dispositivos asignadas por el administrador.|201 |
 |Conforme      |Número de dispositivos con una o varias directivas de cumplimiento de dispositivos asignadas por el administrador aplicadas correctamente. |4083 |
 |InGracePeriod      |Número de dispositivos que no son conformes, pero que se encuentran en el período de gracia definido por el administrador. |57|
-|NonCompliant      |Número de dispositivos a los que no se pudo aplicar una o varias directivas de cumplimiento de dispositivos asignadas por el administrador o en los que el usuario no ha cumplido las directivas asignadas por el administrador.|43 |
+|No conforme      |Número de dispositivos a los que no se pudo aplicar una o varias directivas de cumplimiento de dispositivos asignadas por el administrador o en los que el usuario no ha cumplido las directivas asignadas por el administrador.|43 |
 |Error      |Número de dispositivos que no se pudieron comunicar con Intune o Azure AD y devolvieron un mensaje de error. |3|
 
 ### <a name="compliancepolicystatusdeviceperpolicyactivities"></a>CompliancePolicyStatusDevicePerPolicyActivities 
@@ -122,10 +123,10 @@ La siguiente tabla resume el estado de asignación de directivas de cumplimiento
 |PolicyKey     |Clave de la directiva de cumplimiento para la que se ha creado el resumen. |10178 |
 |PolicyPlatformKey      |Clave del tipo de plataforma de la directiva de cumplimiento para la que se ha creado el resumen.|5|
 |Unknown     |Número de dispositivos sin conexión o que no se pudieron comunicar con Intune o Azure AD por otros motivos.|13|
-|NotApplicable     |Número de dispositivos a los que no se aplican las directivas de cumplimiento de dispositivos asignadas por el administrador.|3|
+|No aplicable     |Número de dispositivos a los que no se aplican las directivas de cumplimiento de dispositivos asignadas por el administrador.|3|
 |Conforme      |Número de dispositivos con una o varias directivas de cumplimiento de dispositivos asignadas por el administrador aplicadas correctamente. |45|
-|InGracePeriod      |Número de dispositivos que no son conformes, pero que se encuentran en el período de gracia definido por el administrador. |3|
-|NonCompliant      |Número de dispositivos a los que no se pudo aplicar una o varias directivas de cumplimiento de dispositivos asignadas por el administrador o en los que el usuario no ha cumplido las directivas asignadas por el administrador.|7|
+|En período de gracia      |Número de dispositivos que no son conformes, pero que se encuentran en el período de gracia definido por el administrador. |3|
+|No conforme      |Número de dispositivos a los que no se pudo aplicar una o varias directivas de cumplimiento de dispositivos asignadas por el administrador o en los que el usuario no ha cumplido las directivas asignadas por el administrador.|7|
 |Error      |Número de dispositivos que no se pudieron comunicar con Intune o Azure AD y devolvieron un mensaje de error. |3|
 
 ### <a name="policyplatformtypes"></a>PolicyPlatformTypes
