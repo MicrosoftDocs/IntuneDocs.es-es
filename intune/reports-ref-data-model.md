@@ -1,11 +1,12 @@
 ---
-title: Modelo de datos de Almacenamiento de datos | Microsoft Docs
-description: "El Almacenamiento de datos de Intune muestrea los datos a diario para proporcionar una vista histórica del entorno móvil, en constante cambio."
+title: Modelo de datos de Almacenamiento de datos
+titlesuffix: Microsoft Intune
+description: "El almacenamiento de datos de Microsoft Intune muestrea los datos a diario para proporcionar una vista histórica del entorno móvil, en constante cambio."
 keywords: Almacenamiento de datos de Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 01/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +15,17 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f52531f854c57551613b1e94f0cfd0925c6d3d12
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7bf893acd5a3d162b767744001fe2257824d86a4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="data-warehouse-data-model"></a>Modelo de datos de Almacenamiento de datos
 
-El Almacenamiento de datos de Intune muestrea los datos a diario para proporcionar un historial del entorno móvil de los dispositivos móviles, en constante cambio. La vista del historial incluye varios aspectos relacionados a lo largo del tiempo.
+El Almacenamiento de datos de Intune muestrea los datos a diario para proporcionar un historial del entorno móvil de los dispositivos móviles, en constante cambio. La vista se compone de entidades relacionadas a lo largo del tiempo.
 
-## <a name="things-entity-sets"></a>Aspectos: conjuntos de entidades
+## <a name="entities-entity-sets"></a>Entidades: conjuntos de entidades
 
 El almacenamiento expone los datos en las siguientes áreas de alto nivel:
 
@@ -33,7 +34,7 @@ El almacenamiento expone los datos en las siguientes áreas de alto nivel:
   -  Inventario de aplicaciones y software
   -  Configuración de dispositivos y directivas de cumplimiento
 
-Dichas áreas contienen las entidades, o aspectos, que son significativas para su entorno de Intune. Encontrará más detalles sobre los conjuntos de entidades en los temas siguientes:
+Estas áreas contienen las entidades que son significativas para el entorno de Intune. Encontrará más detalles sobre los conjuntos de entidades en los temas siguientes:
 
   -  [Aplicación](reports-ref-application.md)
   -  [Fecha](reports-ref-date.md)

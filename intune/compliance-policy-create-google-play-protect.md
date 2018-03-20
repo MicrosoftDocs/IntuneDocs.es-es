@@ -6,7 +6,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/20/2017
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: E9810BEB-000A-4DFB-B5C7-A22A92082B22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 13aa627515b74d3c9fe6d091c44dd5147bd786bd
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 01b26a6165db6e3016d2b3d7063a4bca60ce0266
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-to-enable-google-play-protect"></a>Creación de una directiva de cumplimiento de dispositivos para habilitar Google Play Protect
 
@@ -29,14 +29,15 @@ La directiva de cumplimiento que requiere esta configuración se puede destinar 
 
 ## <a name="create-a-compliance-policy"></a>Crear una directiva de cumplimiento
 
-1. Inicie sesión en Azure Portal. Elija **More Services** >  (Más servicios) **Supervisión y administración** + **Intune**.
+1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 2. Elija **Conformidad de dispositivos** en el grupo **Administrar**. 
-3. Elija **Directivas** y después **Crear directiva**.
+3. Elija **Directivas** y haga clic en **Crear directiva**.
 4. Escriba el **nombre** y la **descripción** de la directiva.
 5. Seleccione **Android** como plataforma.
 6. Elija **Configuración** > **Estado de dispositivos**.
 7. Configure **Google Play Protect**.
-8. Una vez configurado Google Play Protect, especifique los ajustes **Seguridad** y **Propiedad de dispositivo**. Cuando termine, elija **Aceptar**.
+8. Una vez configurado los valores de Google Play Protect, especifique los ajustes **Seguridad del sistema** y **Propiedades de dispositivo**. Cuando termine, elija **Aceptar**.
 
 ## <a name="configure-the-google-play-protect-settings"></a>Configuración de Google Play Protect
 

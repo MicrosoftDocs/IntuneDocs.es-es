@@ -1,12 +1,12 @@
 ---
-title: "Creación de una directiva de cumplimiento para macOS"
-titleSuffix: Azure portal
-description: "Obtenga más información sobre cómo crear una directiva de cumplimiento para dispositivos macOS."
+title: "Creación de una directiva de cumplimiento para dispositivos macOS en Microsoft Intune"
+titleSuffix: 
+description: Cree una directiva de cumplimiento de dispositivos de Microsoft Intune para dispositivos macOS para poder especificar los requisitos que debe cumplir un dispositivo para que sea compatible.
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 2/13/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,16 +14,18 @@ ms.technology:
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a5f1caeddbd3d171092ef59cfb092404b31154f2
-ms.sourcegitcommit: 754fcc31155b28d6910bba45419c6be745f8793e
+ms.openlocfilehash: e7703b8ea26d6ce53b82e806a78c788d14ae05b4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>Creación de una directiva de cumplimiento para dispositivos macOS con Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+Una directiva de cumplimiento de dispositivos de Intune para macOS especifica las reglas y la configuración que los dispositivos macOS deben cumplir para que se consideren compatibles. Estas directivas se pueden usar con el acceso condicional para permitir o bloquear el acceso a recursos de la empresa, y se pueden obtener informes de dispositivos y realizar acciones en caso de incumplimiento. Las directivas de cumplimiento de dispositivos para cada plataforma se crean en el portal de Azure de Intune.
 
 ## <a name="before-you-begin"></a>Antes de comenzar
 
@@ -108,17 +110,17 @@ Tiene distintas categorías con valores distintos entre los cuales elegir cuando
 
 2. Después de iniciar sesión correctamente, podrá ver el **panel de Azure**.
 
-3. Elija **Más servicios** en el menú izquierdo y, luego, escriba **Intune** en el filtro del cuadro de texto.
+3. Elija **Todos los servicios** en el menú de la izquierda y, luego, escriba **Intune** en el filtro del cuadro de texto.
 
 4. Elija **Intune**, podrá ver el **panel de Intune**.
 
 5. Elija **Cumplimiento de dispositivos** y, luego, elija **Directivas** en **Administrar**.
 
-6. Elija **Crear directiva**.
+6. Haga clic en **Crear directiva**.
 
 7. Escriba un nombre y una descripción y elija la plataforma a la que quiere que se aplique esta directiva.
 
-8. La hoja **macOS compliance policy** (Directiva de cumplimiento de macOS), elija las categorías de configuración de cumplimiento de dispositivos **Seguridad**, **Estado del dispositivo** y **Propiedad del dispositivo** para especificar la configuración.
+8. En el panel **Directiva de cumplimiento de Mac** que se abre, elija las categorías de configuración de cumplimiento de dispositivos **Seguridad del sistema**, **Estado del dispositivo** y **Propiedades de dispositivo** para especificar la configuración.
 
 10. Una vez que haya elegido la configuración, seleccione **Aceptar** en cada categoría de configuración de cumplimiento de dispositivos.
 
@@ -126,15 +128,15 @@ Tiene distintas categorías con valores distintos entre los cuales elegir cuando
 
 ## <a name="assign-user-groups"></a>Asignación de grupos de usuarios
 
-Para asignar una directiva de cumplimiento a los usuarios, elija una directiva que haya configurado. Las directivas existentes se pueden encontrar en la hoja **Directivas de cumplimiento**.
+Para asignar una directiva de cumplimiento a los usuarios, elija una directiva que haya configurado. Las directivas existentes se pueden encontrar en el panel **Conformidad del dispositivo: directivas**.
 
-1. Elija la directiva de cumplimiento de dispositivos que desea asignar a los usuarios y elija **Asignaciones**. Se abre la hoja donde puede seleccionar **Grupos de seguridad de Azure Active Directory** y asignarlos a la directiva.
+1. Elija la directiva de cumplimiento de dispositivos que desea asignar a los usuarios y elija **Asignaciones**. Se abre el panel donde puede seleccionar **grupos de seguridad de Azure Active Directory** y asignarlos a la directiva.
 
-2. Elija **Seleccionar grupos** para abrir la hoja que muestra los grupos de seguridad de Azure AD.
+2. Elija **Grupos seleccionados** para abrir el panel en el que se muestran los grupos de seguridad de Azure AD.
 
-3. Elija **Seleccionar** y, luego, **Guardar** para asignar la directiva de cumplimiento de dispositivos a los grupos de seguridad de Azure AD.
+3. Haga clic en **Guardar** para asignar la directiva de cumplimiento de dispositivos a los grupos de seguridad de Azure AD.
 
-4. Una vez que asigne la directiva de cumplimiento de dispositivos a los grupos, puede cerrar la hoja **Asignaciones**.
+4. Una vez que asigne la directiva de cumplimiento de dispositivos a los grupos, puede cerrar el panel **Asignaciones**.
 
     > [!TIP]
     > De manera predeterminada, los dispositivos comprueban el cumplimiento cada ocho horas, aunque los usuarios pueden forzar este proceso a través de la aplicación Portal de empresa de Intune.

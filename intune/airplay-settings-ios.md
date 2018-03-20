@@ -6,7 +6,7 @@ keywords:
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 02/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fc1a30a86ae924777b435c67e67f926819753d67
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 9de6f0e2f7c74e7aec45c27f0fa20189b26c5e22
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="intune-airplay-settings-for-ios-devices"></a>Configuración de Intune AirPlay para dispositivos iOS
 
@@ -33,19 +33,20 @@ Con esta funcionalidad, puede:
 
 ## <a name="get-started"></a>Introducción
 
-1. En la hoja **Características del dispositivo**, elija **AirPlay**.
-2. En la hoja **AirPlay**, elija una de las acciones siguientes o ambas:
+1. Desde [Intune en Azure Portal](https://portal.azure.com), vaya a [**Características del dispositivo** en el área de configuración de dispositivos](device-features-configure.md). 
+1. En el panel **Características del dispositivo**, elija **AirPlay**.
+2. En el panel **AirPlay**, elija una de las acciones siguientes o ambas:
 
 ## <a name="configure-a-device-and-password-list"></a>Configuración de una lista de dispositivos y contraseñas
 
-1. En la hoja **Contraseñas**, escriba el **nombre del dispositivo** y la **contraseña** de un dispositivo AirPlay, por ejemplo, **Contoso Apple TV**.
+1. En el panel **Contraseñas**, escriba el **Nombre del dispositivo** y la **Contraseña** de un dispositivo AirPlay, por ejemplo, **Contoso Apple TV**.
 2. Después de escribir los detalles del dispositivo, haga clic en **Agregar**. El dispositivo aparece en la lista **Nombre de dispositivos**.
 3. Siga agregando dispositivos. Cuando termine, elija **Aceptar**.
 
 
 ## <a name="configure-allowed-destinations"></a>Configuración de destinos permitidos
 
-1. En la hoja **Destinos permitidos (solo supervisados)**, escriba el **identificador** de un dispositivo AirPlay, por ejemplo, 52:46:CD:51:83:4C.
+1. En el panel **Allowed destinations (supervised only)** [Destinos permitidos (solo supervisados)], escriba el **identificador** de un dispositivo AirPlay, por ejemplo, 52:46:CD:51:83:4C.
 2. Después de escribir el identificador del dispositivo, haga clic en **Agregar**. El identificador aparece en la lista de **identificadores de dispositivos**.
 3. Siga agregando dispositivos. Cuando termine, elija **Aceptar**.
 

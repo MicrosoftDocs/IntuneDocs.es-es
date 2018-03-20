@@ -1,5 +1,5 @@
 ---
-title: Archivo de novedades
+title: "Archivo de novedades del portal clásico de Microsoft Intune"
 description: Anuncios de novedades archivados de Microsoft Intune
 keywords: 
 author: brenduns
@@ -14,11 +14,11 @@ ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4386f38fc1311bcb01e03de8b889a82056795ce3
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 1f259620f64d70bfce4ed60c2a96194028a12c38
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Novedades del portal clásico de Intune: meses anteriores
 
@@ -139,7 +139,7 @@ Ahora puede controlar el acceso desde dispositivos móviles a recursos corporati
 - Defensa de aplicaciones
 - Defensa de vulnerabilidades
 
-Puede configurar directivas de acceso condicional de EMS basadas en la evaluación de riesgos de Skycure habilitada mediante las directivas de cumplimiento de dispositivos de Intune. Puede usar estas directivas para permitir o bloquear el acceso de dispositivos no conformes a recursos corporativos en función de las amenazas detectadas. Para obtener más información, vea [Conector de Mobile Threat Defense de Skycure](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector).
+Puede configurar directivas de acceso condicional de EMS basadas en la evaluación de riesgos de Skycure habilitada mediante las directivas de cumplimiento de dispositivos de Intune. Puede usar estas directivas para permitir o bloquear el acceso de dispositivos no compatibles a recursos corporativos en función de las amenazas detectadas. Para obtener más información, vea [Conector de Mobile Threat Defense de Skycure](/intune-classic/deploy-use/skycure-mobile-threat-defense-connector).
 
 #### <a name="new-user-experience-for-the-company-portal-app-for-android---621622--"></a>Nueva experiencia del usuario en la aplicación del portal de empresa para Android <!--621622-->
 

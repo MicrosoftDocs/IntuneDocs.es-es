@@ -1,12 +1,12 @@
 ---
-title: "Configuración de Intune Endpoint Protection para Windows 10"
-titlesuffix: Azure portal
+title: "Configuración de Microsoft Intune Endpoint Protection para Windows 10"
+titlesuffix: 
 description: "Obtenga información sobre la configuración de Intune que puede usar para controlar los valores de Endpoint Protection como BitLocker en dispositivos Windows 10."
 keywords: 
-author: arob98
-ms.author: angrobe
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 01/16/2018
+ms.date: 02/23/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,34 +15,34 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 35c33fb189187a678efa04d10706fe752d683e17
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 02a32f678b40b2b40535984e17b41e0a864d8fdf
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Configuración de Endpoint Protection para Windows 10 y versiones posteriores en Microsoft Intune
+# <a name="create-endpoint-protection-settings-for-windows-10-and-later-in-microsoft-intune"></a>Cree una configuración de Endpoint Protection para Windows 10 y versiones posteriores en Microsoft Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 El perfil de Endpoint Protection le permite controlar características de seguridad en dispositivos Windows 10, como BitLocker o Windows Defender.
 
-Use la información de este tema para obtener información sobre cómo crear perfiles de Endpoint Protection.
+Use la información de este artículo para obtener información sobre cómo crear perfiles de Endpoint Protection.
 
 > [!Note]
 > Estas configuraciones no se admiten en las ediciones Home y Professional de Windows 10.
 
 ## <a name="create-an-endpoint-protection-profile"></a>Crear un perfil de Endpoint Protection
 
-1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
+1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En la hoja **Intune**, elija **Configuración del dispositivo**.
-2. En la hoja **Configuración del dispositivo**, elija **Administrar** > **Perfiles**.
+2. En la hoja **Configuración del dispositivo**, debajo de la sección **Administrar**, elija **Perfiles**.
 3. En la hoja de perfiles, elija **Crear perfil**.
 4. En la hoja **Crear perfil**, escriba un **Nombre** y una **Descripción** para el perfil de características del dispositivo.
 5. En la lista desplegable **Plataform** (Plataforma), elija **Windows 10 y versiones posteriores**.
 6. En la lista desplegable de **Tipos de perfil**, pulse **Endpoint Protection**.
-7. Configure las opciones que desee. Use los detalles de este tema para ayudarle a entender lo que realiza cada opción de configuración. Cuando termine, elija **Aceptar**.
+7. Configure las opciones que desee. Use los detalles de este artículo para ayudarle a entender lo que realiza cada opción de configuración. Cuando termine, elija **Aceptar**.
 8. Vuelva a la hoja **Crear perfil** y seleccione **Crear**.
 
 El perfil se crea y aparece en la hoja de la lista de perfiles.
@@ -57,6 +57,7 @@ Protección de aplicaciones solo está disponible para dispositivos de Windows 1
 - **Imprimir desde el explorador virtual**: permitir que las impresoras PDF, XPS, locales o en red impriman contenido desde el explorador virtual.
 - **Recopilar registros**: recopilar registros de eventos que se producen dentro de una sesión de exploración de Protección de aplicaciones.
 - **Conservar datos del explorador generados por el usuario**: permitir que se guarden los datos de usuario (por ejemplo, contraseñas, favoritos y cookies) que se crean durante una sesión de exploración de Protección de aplicaciones virtual.
+- **Aceleración gráfica**: cargue más rápido los sitios web con gran cantidad de gráficos al trabajar en la sesión de exploración virtual de Protección de aplicaciones; para ello, habilite el acceso a una unidad de procesamiento de gráficos virtual.
 
 
 ## <a name="windows-defender-firewall"></a>Firewall de Windows Defender
@@ -66,7 +67,7 @@ Protección de aplicaciones solo está disponible para dispositivos de Windows 1
 Esta configuración se aplica a todos los tipos de redes.
 
 - **Protocolo de transferencia de archivos**: bloquear FTP con estado.
-- **Tiempo de inactividad de asociación de seguridad antes de la eliminación**: las asociaciones de seguridad se eliminan después de no haber detectado ningún tráfico de red durante *n* segundos.
+- **Tiempo de inactividad de la asociación de seguridad antes de la eliminación**: las asociaciones de seguridad se eliminan después de no haber detectado ningún tráfico de red durante *n* segundos.
 - **Codificación de clave previamente compartida**: codificar las claves previamente compartidas mediante UTF-8.
 - **Exenciones de IPsec**: configurar el tráfico específico que debe estar exento de realizar IPsec, incluidos los **códigos de tipo ICMP de IPv6 de descubrimiento de vecinos**, **ICMP**, **los códigos de tipo ICMP de IPv6 de descubrimiento de enrutadores** y **tráfico de redes DHCP de IPv4 e IPv6**.
 - **Comprobación de la lista de revocación de certificados**: establecer un valor para la forma en que se aplica la comprobación de la lista de revocación de certificados, incluido **Deshabilitar comprobación CRL**, **Error de comprobación de CRL solo al encontrar un certificado revocado** y **Error de comprobación de CRL al encontrar cualquier error**.
@@ -223,7 +224,7 @@ Para habilitar la protección contra vulnerabilidades, cree un archivo XML que r
 
 ## <a name="windows-defender-application-control"></a>Windows Defender Application Control
 
-Use **directivas de integridad del código de control de aplicaciones** para elegir aplicaciones adicionales que deban auditarse o con confianza para ejecutarse mediante Windows Defender Application Control. Se confía automáticamente en la ejecución de los componentes de Windows y de todas las aplicaciones de la Tienda Windows.
+Use **	directivas de integridad del código de control de aplicaciones** para elegir aplicaciones adicionales que deban auditarse o con confianza para ejecutarse mediante Windows Defender Application Control. Se confía automáticamente en la ejecución de los componentes de Windows y de todas las aplicaciones de la Tienda Windows.
 
 Las aplicaciones no se bloquearán al ejecutarse en modo **Solo auditoría**. El modo **Solo auditoría** registra todos los eventos en registros locales del cliente.
 

@@ -1,12 +1,12 @@
 ---
-title: Crear una directiva de cumplimiento para Android for Work
-titleSuffix: Azure portal
-description: Aprenda a crear una directiva de cumplimiento para dispositivos Android for Work.
+title: "Creación de una directiva de cumplimiento de Android for Work"
+titleSuffix: Microsoft Intune
+description: Cree una directiva de cumplimiento de dispositivos de Intune para dispositivos Android for Work para poder especificar los requisitos que debe cumplir un dispositivo para que sea compatible.
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 12/07/2016
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b5ff76137da7b42fddc5c1238ef9e102adfa1307
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
+ms.openlocfilehash: 8ca31d4c83ccc6b786933080b96f66953cf1a108
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Creación de una directiva de cumplimiento para dispositivos Android for Work en Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Las directivas de cumplimiento se crean para cada plataforma.  Puede crear una directiva de cumplimiento en el portal de Azure. Consulte [¿Qué es el cumplimiento de los dispositivos?](device-compliance.md) para obtener más información sobre las directivas de cumplimiento. Para conocer los requisitos previos que deben satisfacerse antes de crear una directiva de cumplimiento, vea [Introducción al cumplimiento de dispositivos](device-compliance-get-started.md).
+Una directiva de cumplimiento de dispositivos de Intune para Android for Work especifica las reglas y la configuración que los dispositivos Android for Work deben cumplir para que se consideren compatibles. Estas directivas se pueden usar con el acceso condicional para permitir o bloquear el acceso a recursos de la empresa, y se pueden obtener informes de dispositivos y realizar acciones en caso de incumplimiento. Las directivas de cumplimiento de dispositivos para cada plataforma se crean en Azure Portal de Intune. Para obtener más información sobre las directivas de cumplimiento y los requisitos previos que deben satisfacerse antes de crear una directiva de cumplimiento, consulte [Introducción a las directivas de cumplimiento de dispositivos](device-compliance-get-started.md).
 
 En la tabla siguiente se describe cómo administrar la configuración de no conformidad cuando se usa una directiva de cumplimiento con una directiva de acceso condicional.
 
@@ -51,12 +51,14 @@ En la tabla siguiente se describe cómo administrar la configuración de no conf
 
 ## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Creación de una directiva de cumplimiento en el portal de Azure
 
-1. En la hoja **Intune**, elija **Establecer la compatibilidad con dispositivos**. En **Administrar**, elija **All device compliance policies** (Todas las directivas de cumplimiento de dispositivo) y elija **Crear**.
-2. Escriba un nombre y una descripción, y elija la plataforma a la que quiere que se aplique esta directiva.
-3. Elija **Requisitos de cumplimiento** para especificar valores para **Seguridad**, **Mantenimiento de dispositivos** y **Propiedad del dispositivo**. Cuando haya terminado, haga clic en **Aceptar**.
+1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+1. En el panel **Intune**, elija **Cumplimiento del dispositivo**. En **Administrar**, elija **Directivas** y después **Crear directiva**.
+2. Escriba un nombre y una descripción y elija la plataforma a la que quiere que se aplique esta directiva.
+3. Elija **Configuración de valores** para especificar aquí las opciones de **Seguridad del sistema**, **Estado de dispositivos** y **Propiedades del dispositivo**. Cuando termine, elija **Aceptar**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
-5. In the **Actions for noncompliance** blade, choose **Add** to create a new action.  The action parameters blade allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
+5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
 6. The message template option allows you to create several custom emails depending on when the action is set to take. For example, you can create a message for notifications that are sent for the first time and a different message for final warning before access is blocked. The custom messages that you create can be used for all your device compliance policy.
 7. Specify the **Grace period** which determines when that action to take place.  For example, you may want to send a notification as soon as the device is evaluated as noncompliant, but allow some time before enforcing the conditional access policy to block access to company resources like SharePoint online.
 8. Choose **Add** to finish creating the action.
@@ -64,10 +66,10 @@ En la tabla siguiente se describe cómo administrar la configuración de no conf
 
 ## <a name="assign-user-groups"></a>Asignación de grupos de usuarios
 
-Para asignar una directiva de cumplimiento a los usuarios, elija una directiva que haya configurado. Las directivas existentes se pueden encontrar en la hoja **Directivas de cumplimiento normativo**.
+Para asignar una directiva de cumplimiento a los usuarios, elija una directiva que haya configurado. Las directivas existentes se pueden encontrar en el panel **Conformidad del dispositivo: directivas**.
 
-1. Seleccione la directiva que quiere asignar a los usuarios y elija **Asignaciones**. Se abre la hoja donde puede seleccionar **Grupos de seguridad de Azure Active Directory** y asignarlos a la directiva.
-2. Elija **Seleccionar grupos** para abrir la hoja que muestra los grupos de seguridad de Azure AD.  Al elegir **Seleccionar** la directiva se implementa para los usuarios.
+1. Seleccione la directiva que quiere asignar a los usuarios y elija **Asignaciones**. Se abre el panel donde puede seleccionar **grupos de seguridad de Azure Active Directory** y asignarlos a la directiva.
+2. Elija **Grupos seleccionados** para abrir el panel en el que se muestran los grupos de seguridad de Azure AD.  Al elegir **Guardar** la directiva se implementa para los usuarios.
 
 Ya ha aplicado la directiva a los usuarios.  Ahora se evaluará el cumplimiento de los dispositivos usados por los usuarios a los que se aplique la directiva.
 

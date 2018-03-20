@@ -1,28 +1,28 @@
 ---
 title: "Actualización de Windows Holographic a Windows Holographic for Business"
-titleSuffix: Azure portal
+titleSuffix: Microsoft Intune
 description: "Obtenga información sobre cómo actualizar dispositivos que ejecuten Windows Holographic a Windows Holographic for Business"
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/30/2018
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c467d2d4e02785bfac48afe2b39c50300eb4be40
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: e7c750b372c297637abcdb9e941dae17714d081b
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="upgrade-devices-running-windows-holographic-to-windows-holographic-for-business"></a>Actualización de dispositivos que ejecutan Windows Holographic a Windows Holographic for Business
 
 
-Para administrar los dispositivos que ejecutan Windows Holographic con Microsoft Intune, debe crear un perfil de actualización de edición para actualizar los dispositivos de Windows Holographic a Windows Holographic for Business. Para Microsoft HoloLens, puede adquirir Commercial Suite para obtener la licencia necesaria para la actualización. Para obtener más información, consulte [Desbloquear las funcionalidades de Windows Holographic for Business](https://docs.microsoft.com/en-us/hololens/hololens-upgrade-enterprise).
+Para administrar los dispositivos que ejecutan Windows Holographic con Microsoft Intune, debe actualizar los dispositivos de Windows Holographic a Windows Holographic for Business. Puede crear un perfil Actualización de edición para realizar la actualización. Para Microsoft HoloLens, puede adquirir Commercial Suite para obtener la licencia necesaria para la actualización. Para obtener más información, consulte [Desbloquear las funcionalidades de Windows Holographic for Business](https://docs.microsoft.com/en-us/hololens/hololens-upgrade-enterprise).
 
 ## <a name="to-set-up-an-edition-upgrade-device-configuration-profile"></a>Configuración de un perfil de configuración de dispositivos de actualización de edición
 
@@ -33,9 +33,9 @@ Para administrar los dispositivos que ejecutan Windows Holographic con Microsoft
 
     ![Crear perfil](media/Holographic-create-profile.png)
 
-3.  En la hoja **Crear perfil**, escriba un nombre para el perfil, seleccione **Windows 10 y versiones posteriores** como plataforma y seleccione **Actualización de edición** como tipo de perfil. Haga clic en **Configuración**.
+3.  En la página **Crear perfil**, escriba un nombre para el perfil, seleccione **Windows 10 y versiones posteriores** como plataforma y **Actualización de edición** como tipo de perfil. Haga clic en **Configuración**.
 
-5. En la hoja **Actualización de edición**, en **Edición a la que actualizar**, seleccione **Windows 10 Holographic for Business**. En **Archivo de licencia**, busque y seleccione el archivo de licencia XML que se le proporcionó.
+5. En la página **Actualización de edición**, en **Edición a la que actualizar**, seleccione **Windows 10 Holographic for Business**. En **Archivo de licencia**, busque y seleccione el archivo de licencia XML que se le proporcionó.
 
     ![Escriba el nombre de archivo XML](media/Holographic-edition-upgrade.png)
  
@@ -48,7 +48,7 @@ A continuación, asigne el perfil de actualización de edición a dispositivos o
 
 1. En el perfil que creó en los pasos anteriores, haga clic en **Asignaciones**.
 
-2. En la hoja **Asignaciones**, seleccione los grupos de usuarios y dispositivos que quiera incluir y excluir de la directiva.
+2. En la página **Asignaciones**, seleccione los grupos de usuarios y dispositivos que quiera incluir y excluir de la directiva.
 
 ![Incluir y excluir grupos](media/Holographic-groups.PNG)
 

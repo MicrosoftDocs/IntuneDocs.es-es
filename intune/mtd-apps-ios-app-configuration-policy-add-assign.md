@@ -1,7 +1,7 @@
 ---
-title: Agregar y asignar aplicaciones de MTD en Intune
-titleSuffix: Azure portal
-description: "Adición de aplicaciones de MTD, la aplicación de Microsoft Authenticator y la directiva de configuración de iOS con Intune en Azure Portal"
+title: Agregar y asignar aplicaciones MTD a Microsoft Intune
+titleSuffix: 
+description: "Use Intune para agregar aplicaciones de Mobile Threat Defense (MTD), la aplicación de Microsoft Authenticator y la directiva de configuración de iOS en Azure Portal."
 keywords: 
 author: msmimart
 ms.author: mimart
@@ -15,11 +15,11 @@ ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7afe03c635b63053ef0cc0f622bc9324f31ec68b
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: 3fc71620fee1b1df907a4027c1c57cd91b53032e
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Agregar y asignar aplicaciones de Mobile Threat Defense (MTD) con Intune
 

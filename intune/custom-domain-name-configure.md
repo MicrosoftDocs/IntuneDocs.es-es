@@ -5,7 +5,7 @@ keywords:
 author: arob98
 ms.author: angrobe
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/22/2018
 ms.topic: get-started-article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e02ee14f87f4c0a15b4ac942befb4b2eee2b4be9
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 6046b574c495035977dcd635786409e52be85bb8
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-a-custom-domain-name"></a>Configuración de un nombre de dominio personalizado
 
@@ -43,7 +43,7 @@ No puede cambiar el nombre del dominio inicial onmicrosoft.com ni quitarlo. Pued
 
 2. En el panel de navegación, elija **Configuración** &gt; **Dominios**.
 
-3. Elija **Agregar dominio** y escriba el nombre de su dominio personalizado.
+3. Elija **Agregar dominio** y escriba el nombre de su dominio personalizado. Seleccione **Siguiente**.
    ![Captura de pantalla del Centro de administración de Office 365 con la opción Configuración > Dominios seleccionada y un nombre de dominio nuevo agregado](./media/domain-custom-add.png)
 4. El cuadro de diálogo **Comprobar dominio** se abre proporcionándole los valores para crear el registro TXT en su proveedor de host DNS.
     - **Usuarios de GoDaddy**: el Portal de administración de Office 365 le redirige a la página de inicio de sesión de GoDaddy. El registro TXT se crea automáticamente después de escribir sus credenciales y de aceptar el acuerdo del permiso de cambio de dominio. También puede [crear el registro TXT](https://support.office.com/article/Create-DNS-records-at-GoDaddy-for-Office-365-f40a9185-b6d5-4a80-bb31-aa3bb0cab48a).

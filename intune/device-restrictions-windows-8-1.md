@@ -1,29 +1,30 @@
 ---
-title: "Configuración de restricciones de dispositivo de Intune para Windows 8.1"
-titleSuffix: Azure portal
-description: "Conozca la configuración de Intune que puede usar para controlar los valores de configuración y la funcionalidad de los dispositivos Windows 8.1."
+title: "Configuración de restricciones de dispositivos de Microsoft Intune para dispositivos que ejecutan Windows 8.1"
+titleSuffix: 
+description: "Descubra las opciones de configuración de Intune que puede usar para controlar la funcionalidad y la configuración de los dispositivos que ejecutan Windows 8.1."
 keywords: 
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 08/01/2017
+ms.date: 3/6/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
 ms.technology: 
-ms.assetid: fe5785e9-8d35-4ad7-95e8-d50f8d87154a
-ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3c96340255e9b71694278b5a396d907a6212541d
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 8cfaad3c35a0035546e5ebb7a55b9978da8025d8
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="windows-81-and-later-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos Windows 8.1 y versiones posteriores en Microsoft Intune
+# <a name="microsoft-intune-windows-81-and-later-device-restriction-settings"></a>Configuración de restricciones de Microsoft Intune de dispositivos Windows 8.1 y versiones posteriores
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+En este artículo, se muestran las opciones de configuración de restricciones de dispositivos de Microsoft Intune que puede configurar para los dispositivos que ejecutan Windows 8.1 y versiones posteriores.
+
 
 ## <a name="general"></a>General
 
@@ -62,7 +63,7 @@ Al exigir el cifrado en un dispositivo, solo se puede obtener acceso a la clave 
 -   **Nivel de seguridad alto para sitios restringidos**: configura el nivel de seguridad para la zona de sitios restringidos.
 -   **Acceso al menú Modo de empresa**: permite a los usuarios tener acceso a las opciones del menú Modo de empresa desde Internet Explorer.
 Si selecciona esta opción, también puede especificar una **Ubicación de informes de registro** que contenga una dirección URL a un informe que muestre los sitios web para los que los usuarios hayan activado el acceso en Modo de empresa.
--   **Ubicación de la lista de sitios del modo de empresa**: especifica la ubicación de la lista de sitios web que van a usar el modo de empresa cuando esté activo.
+-   **Ubicación de la lista de sitios del modo de empresa**: especifica la ubicación de la lista de sitios web que usan el modo de empresa cuando está activo.
 
 ## <a name="cellular"></a>Móvil
 -   **Itinerancia de datos**: permite la itinerancia de datos cuando el dispositivo está en una red de telefonía móvil.

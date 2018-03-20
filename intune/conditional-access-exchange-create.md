@@ -1,12 +1,12 @@
 ---
-title: "Creación y asignación de directiva de acceso condicional de Exchange local"
-titlesuffix: Azure portal
+title: "Creación de una directiva de acceso condicional de Exchange"
+titlesuffix: Microsoft Intune
 description: Configure el acceso condicional en Exchange local y en el entorno de Exchange Online heredado dedicado en Intune.
 keywords: 
-author: andredm7
-ms.author: andredm
+author: msmimart
+ms.author: mimart
 manager: dougeby
-ms.date: 02/14/2018
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: microsoft-intune
@@ -14,17 +14,17 @@ ms.technology:
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 70c3de614b0f5ed5075b669ecdffc08e1226817d
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 4cfe5916668de6d8bb3c42f2fd6afb6221bbc07e
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="how-to-create-and-assign-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated-in-microsoft-intune"></a>Creación y asignación de una directiva de acceso condicional para Exchange local y el entorno de Exchange Online dedicado heredado en Microsoft Intune
+# <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Cree una directiva de acceso condicional para Exchange local y en el entorno de Exchange Online dedicado heredado
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Este tema le guiará en el proceso de configuración del acceso condicional para Exchange local basado en el cumplimiento de dispositivos.
+En este artículo, se muestra cómo configurar el acceso condicional para Exchange local en función del cumplimiento del dispositivo.
 
 Si tiene un entorno de Exchange Online dedicado y necesita averiguar si es la configuración nueva o heredada, póngase en contacto con su administrador de cuentas. Para controlar el acceso de correo electrónico a Exchange local o a al entorno de Exchange Online dedicado heredado, configure el acceso condicional para Exchange local en Intune.
 
@@ -49,7 +49,7 @@ Antes de configurar el acceso condicional, compruebe lo siguiente:
     - Debe estar **inscrito** en Intune o estar en un equipo unido a un dominio.
     - Debe estar **registrado en Azure Active Directory**. Además, el identificador de Exchange ActiveSync del cliente debe registrarse con Azure Active Directory.
 <br></br>
-- AAD DRS se activará automáticamente para los clientes de Intune y Office 365. Los clientes que ya hayan implementado el servicio de registro de dispositivos de ADFS no podrán ver los dispositivos registrados en la instancia local de Active Directory. **Esto no se aplica a equipos de Windows ni a dispositivos Windows Phone.**
+- AAD DRS se activa automáticamente para los clientes de Intune y Office 365. Los clientes que ya han implementado el servicio de registro de dispositivos de ADFS no ven los dispositivos registrados en la instancia local de Active Directory. **Esto no se aplica a equipos de Windows ni a dispositivos Windows Phone.**
 
 - **Cumplir** todas las directivas de cumplimiento de dispositivos implementadas en ese dispositivo.
 
@@ -76,44 +76,43 @@ La aplicación **Correo** nativa en Windows 8.1 y versiones posteriores (cuando 
 
 1. Vaya a [Azure Portal](https://portal.azure.com/) e inicie sesión con sus credenciales de Intune.
 
-2. Después de iniciar sesión correctamente, verá el **Panel de Azure**.
+1. Después de iniciar sesión correctamente, verá el **Panel de Azure**.
 
-3. Elija **Más servicios** en el menú izquierdo y, luego, escriba **Intune** en el filtro del cuadro de texto.
+1. Elija **Todos los servicios** en el menú de la izquierda y, luego, escriba **Intune** en el filtro del cuadro de texto.
 
-4. Elija **Intune** y aparecerá el **panel de Intune**.
+1. Elija **Intune** y aparecerá el **panel de Intune**.
 
-5. Pulse **Acceso local**, después pulse
+1. Elija **Acceso local**. El panel **Acceso local** muestra el estado de la directiva de acceso condicional y los dispositivos que se ven afectados por ella.
 
-6. La hoja **Local** muestra el estado de la directiva de acceso condicional y los dispositivos que se ven afectados por ella.
+1. En **Administrar**, elija **Acceso local a Exchange**.
 
-7. En **Administrar**, elija **Acceso local a Exchange**.
-
-8. En la hoja **Acceso local a Exchange**, elija **Sí** para el control de acceso local a Exchange.
+1. En el panel **Acceso local a Exchange**, elija **Sí** para habilitar el control de acceso local a Exchange.
 
     > [!NOTE]
-    > Si no ha configurado el conector de Exchange Active Sync local, esta opción se deshabilitará.  Primero debe instalar y configurar este conector antes de habilitar el acceso condicional para Exchange local. Para más información, consulte [Install the Intune On-premises Exchange Connector](exchange-connector-install.md) (Instalación del conector de Exchange local para Intune).
+    > Si no ha configurado el conector de Exchange Active Sync local, esta opción se deshabilita.  Primero debe instalar y configurar este conector antes de habilitar el acceso condicional para Exchange local. Para más información, consulte [Install the Intune On-premises Exchange Connector](exchange-connector-install.md) (Instalación del conector de Exchange local para Intune).
 
-9. En **Asignación**, elija **Grupos incluidos**.  Use el grupo de usuarios de seguridad que debería tener aplicado el acceso condicional. Para ello, es necesario que los usuarios hayan inscrito sus dispositivos en Intune y que satisfagan los perfiles de cumplimiento.
+1. En **Asignación**, elija **Grupos incluidos**.  Use el grupo de usuarios de seguridad que debería tener aplicado el acceso condicional. Para ello, es necesario que los usuarios hayan inscrito sus dispositivos en Intune y que satisfagan los perfiles de cumplimiento.
 
-10. Si quiere excluir determinados grupos de usuarios, puede hacerlo; para ello, elija **Grupos excluidos** y seleccione un grupo de usuarios al que quiera que se le exima de exigir la inscripción y el cumplimiento del dispositivo.
+1. Si quiere excluir determinados grupos de usuarios, puede hacerlo; para ello, elija **Grupos excluidos** y seleccione un grupo de usuarios al que quiera que se le exima de exigir la inscripción y el cumplimiento del dispositivo.
 
-11. En **Configuración**, elija **Notificaciones de usuario** para modificar el mensaje de correo electrónico predeterminado. Este mensaje se envía a los usuarios si su dispositivo no es conforme y quieren acceder a Exchange local. La plantilla de mensaje usa lenguaje de marcado.  También podrá ver la vista previa del mensaje mientras escribe.
+1. En **Configuración**, elija **Notificaciones de usuario** para modificar el mensaje de correo electrónico predeterminado. Este mensaje se envía a los usuarios si su dispositivo no es conforme y quieren acceder a Exchange local. La plantilla de mensaje usa lenguaje de marcado.  También puede ver la vista previa del mensaje mientras escribe.
     > [!TIP]
     > Para más información sobre el lenguaje de marcado, consulte este [artículo](https://en.wikipedia.org/wiki/Markup_language) en Wikipedia.
 
-12. En la hoja **Advanced Exchange Active Sync** (Configuración avanzada de acceso a Exchange Active Sync), establezca la regla predeterminada global para el acceso desde dispositivos que no están administrados por Intune y para reglas de nivel de plataforma, como se describe en los dos pasos siguientes.
+1. En el panel **Configuración avanzada de acceso a Exchange ActiveSync**, establezca la regla predeterminada global para el acceso desde dispositivos que no están administrados por Intune y para reglas de nivel de plataforma, como se describe en los dos pasos siguientes.
 
-13. En dispositivos a los que no les afecta las reglas de acceso condicional o de otro tipo, puede optar por permitirles acceder a Exchange o bloquearlo.
-  - Cuando configure esta opción para permitir el acceso, todos los dispositivos podrán acceder a Exchange local inmediatamente.  Los dispositivos que pertenecen a los usuarios de **Grupos incluidos** se bloquean si se evalúan posteriormente como no conformes con las directivas de cumplimiento o no inscritos en Intune.
-  - Cuando configure esta opción para bloquear el acceso, se bloqueará inmediatamente a todos los dispositivos el acceso a Exchange local inicialmente.  Los dispositivos que pertenecen a los usuarios de **Grupos incluidos** tendrán acceso una vez que el dispositivo esté inscrito en Intune y se evalúe como conforme. En dispositivos Android que no ejecuten Samsung Knox Standard el acceso siempre estará bloqueado, ya que no admiten esta configuración.
-<br></br>
-14. En **Excepciones de la plataforma de dispositivo**, elija **Agregar** para especificar las plataformas. Si la opción **Acceso a dispositivos no administrados** está establecida en **Bloqueado**, se permitirán los dispositivos inscritos y conformes incluso si hay una excepción de plataforma para bloquear. Elija **Aceptar** para guardar la configuración.
+1. En dispositivos a los que no les afecta las reglas de acceso condicional o de otro tipo, puede optar por permitirles acceder a Exchange o bloquearlo.
 
-15. En la hoja **Local**, haga clic en **Guardar** para guardar la directiva de acceso condicional.
+   - Si configura esta opción para permitir el acceso, todos los dispositivos pueden acceder a Exchange local inmediatamente.  Los dispositivos que pertenecen a los usuarios de **Grupos incluidos** se bloquean si se evalúan posteriormente como no conformes con las directivas de cumplimiento o no inscritos en Intune.
+   - Si configura esta opción para bloquear el acceso, se bloquea inmediatamente a todos los dispositivos el acceso a Exchange local inicialmente.  Los dispositivos que pertenecen a los usuarios de **Grupos incluidos** tienen acceso una vez que el dispositivo esté inscrito en Intune y se evalúe como conforme. En dispositivos Android que no ejecuten Samsung Knox Standard el acceso siempre está bloqueado, ya que no admiten esta configuración.
+
+1. En **Excepciones de la plataforma de dispositivo**, elija **Agregar** para especificar las plataformas. Si el valor **Acceso a dispositivos no administrados** está establecido en **Bloqueado**, se permiten los dispositivos inscritos y conformes incluso si hay una excepción de plataforma para bloquear. Elija **Aceptar** para guardar la configuración.
+
+1. En el panel **Local**, haga clic en **Guardar** para guardar la directiva de acceso condicional.
 
 ## <a name="create-azure-ad-conditional-access-policies-in-intune"></a>Creación de directivas de acceso condicional de Azure AD en Intune
 
-A partir de la versión 1704 de Intune, los administradores pueden crear directivas de acceso condicional de Azure AD desde el portal de Azure de Intune, lo que facilita el proceso ya que no es necesario cambiar entre las cargas de trabajo de Azure e Intune.
+A partir de la versión 1704 de Intune, los administradores pueden crear directivas de acceso condicional de Azure AD desde Azure Portal de Intune, de forma que no tiene que cambiar entre las cargas de trabajo de Azure e Intune.
 
 > [!IMPORTANT]
 > Para crear directivas de acceso condicional de Azure AD desde el portal de Azure de Intune, debe disponer de una licencia de Azure AD Premium.
@@ -122,7 +121,7 @@ A partir de la versión 1704 de Intune, los administradores pueden crear directi
 
 1. En el **panel de Intune**, elija **Acceso condicional**.
 
-2. En la hoja **Directivas**, elija **Directiva nueva** para crear la directiva de acceso condicional de Azure AD.
+2. En el panel **Directivas**, elija **Nueva directiva** para crear la directiva de acceso condicional de Azure AD.
 
 ## <a name="see-also"></a>Vea también
 

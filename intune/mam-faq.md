@@ -1,25 +1,19 @@
----
-title: "Preguntas más frecuentes sobre MAM y la protección de la aplicación"
-description: "Este artículo proporciona respuestas a algunas preguntas frecuentes en la administración de aplicaciones móvil de Intune (MAM) y la protección de aplicaciones de Intune."
-keywords: 
-author: Erikre
-ms.author: erikre
-manager: angrobe
-ms.date: 02/06/2018
-ms.topic: article
-ms.prod: 
-ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
-ms.reviewer: erikre
-ms.suite: ems
+--
+# <a name="required-metadata"></a>metadatos necesarios
+
+title: Preguntas frecuentes sobre la administración de aplicaciones móviles (MAM) y la protección de aplicaciones description: En este artículo se proporcionan respuestas a algunas preguntas frecuentes sobre la administración de aplicaciones móviles (MAM) de Intune y la protección de aplicaciones de Intune.
+keywords: author: Erikre ms.author: erikre manager: angrobe ms.date: 28/02/2018 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
+
+# <a name="optional-metadata"></a>metadatos opcionales
+
+#<a name="audience"></a>destinatarios:
+#<a name="msdevlang"></a>ms.devlang:
+ms.reviewer: erikre ms.suite: ems
+#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
 ms.custom: intune-azure
-ms.openlocfilehash: 23ab21e21ff2ffd471523f8132acffd7545358f0
-ms.sourcegitcommit: 9bd6278d129fa29f184b2d850138f8f65f3674ea
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 02/09/2018
+
 ---
+
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Preguntas más frecuentes sobre MAM y la protección de la aplicación
 
 Este artículo proporciona respuestas a algunas preguntas frecuentes sobre la administración de aplicaciones móviles (MAM) de Intune y la protección de aplicaciones de Intune.
@@ -52,7 +46,7 @@ Este artículo proporciona respuestas a algunas preguntas frecuentes sobre la ad
 
 - El usuario final debe tener una licencia de Microsoft Intune asignada a su cuenta de Azure Active Directory. Vea [Administrar licencias de Intune](/intune/licenses-assign) para obtener información sobre cómo asignar licencias de Intune a los usuarios finales.
 
-- El usuario final debe pertenecer a un grupo de seguridad de destino de una directiva de protección de la aplicación. La misma directiva de protección de aplicaciones debe tener como destino la aplicación específica que se va a utilizar. Las directivas de protección de aplicaciones pueden crearse e implementarse en la consola de Intune en el [portal de Azure](http://portal.azure.com). Actualmente, se pueden crear grupos de seguridad en el [portal de Office](http://portal.office.com).
+- El usuario final debe pertenecer a un grupo de seguridad de destino de una directiva de protección de la aplicación. La misma directiva de protección de aplicaciones debe tener como destino la aplicación específica que se va a utilizar. Las directivas de protección de aplicaciones pueden crearse e implementarse en la consola de Intune en [Azure Portal](http://portal.azure.com). Actualmente, se pueden crear grupos de seguridad en el [portal de Office](http://portal.office.com).
 
 - El usuario final debe iniciar sesión en la aplicación con su cuenta de AAD.
 
@@ -135,14 +129,21 @@ Este artículo proporciona respuestas a algunas preguntas frecuentes sobre la ad
 
 **¿Hay una forma segura de abrir vínculos web desde aplicaciones administradas?** Sí. El administrador de TI puede implementar y establecer una directiva de protección de aplicaciones para la [aplicación Intune Managed Browser](app-configuration-managed-browser.md), un explorador web desarrollado por Microsoft Intune que puede administrarse fácilmente con Intune. El administrador de TI puede requerir que todos los vínculos web en aplicaciones administradas de Intune se abran con la aplicación Managed Browser.
 
-
 ## <a name="app-experience-on-android"></a>Experiencia de la aplicación en Android
 
 **¿Por qué la aplicación de portal de empresa necesitaba la protección de aplicaciones de Intune para funcionar con dispositivos Android?** La mayor parte de la función de protección de aplicaciones se integra en la aplicación de portal de empresa. La inscripción de dispositivos _no es obligatoria_ aunque la aplicación de portal de empresa se requiera siempre. Para MAM-WE, el usuario final solo necesita tener la aplicación de portal de empresa instalada en el dispositivo.
 
+**¿Cómo funcionan en Android las opciones de protección de acceso de aplicaciones de Intune configuradas para el mismo conjunto de aplicaciones y usuarios?** Las directivas de protección de aplicaciones de Intune para el acceso se aplicarán en un orden específico en los dispositivos de usuario final cuando intenten obtener acceso a una aplicación de destino desde su cuenta corporativa. En general, tendría prioridad un bloqueo y, después, una advertencia descartable. Por ejemplo, si es aplicable a la aplicación o usuario específico, una configuración de versión de revisión mínima de Android que advierte al usuario de realizar una actualización de revisión se aplicará después de la configuración de versión de revisión mínima de Android que bloquea el acceso del usuario. Por tanto, en el caso en que el administrador de TI configure la versión de revisión de Android mínima en 01-03-2018 y la versión de revisión de Android mínima (solo advertencia) en 01-02-2018, mientras el dispositivo que intenta obtener acceso a la aplicación esté en una versión de revisión 01-01-2018, se bloquearía al usuario final en función del valor más restrictivo para la versión de revisión de Android mínima que provoque el bloqueo del acceso. 
+
+Cuando se trabaja con diferentes tipos de configuraciones, un requisito de versión de la aplicación tendría prioridad, seguido por el requisito de versión de sistema operativo de Android y el requisito de versión de revisión de Android. Después, se comprueban en el mismo orden las advertencias para todos los tipos de configuración.
+
 ## <a name="app-experience-on-ios"></a>Experiencia de aplicación en iOS
 
 **Puedo usar la extensión de recursos compartidos de iOS para abrir los datos profesionales o educativos en aplicaciones no administradas, incluso con la directiva de transferencia de datos establecida en "Solo aplicaciones administradas" o "Ninguna aplicación". ¿No es esto una pérdida de datos?** La directiva de protección de aplicaciones de Intune no puede controlar la extensión de recursos compartidos de iOS sin administrar el dispositivo. Por lo tanto, Intune _**cifra los datos "corporativos" antes de compartirlos fuera de la aplicación**_. Puede validar esto intentando abrir el archivo "corporativo" fuera de la aplicación administrada. El archivo debe estar cifrado y no debe poder abrirse fuera de la aplicación administrada.
+
+**¿Cómo funcionan en iOS las opciones de protección de acceso de aplicaciones de Intune configuradas para el mismo conjunto de aplicaciones y usuarios?** Las directivas de protección de aplicaciones de Intune para el acceso se aplicarán en un orden específico en los dispositivos de usuario final cuando intenten obtener acceso a una aplicación de destino desde su cuenta corporativa. En general, tendría prioridad un borrado, seguido de un bloqueo y, después, una advertencia descartable. Por ejemplo, si es aplicable a la aplicación o usuario específico, una configuración de sistema operativo mínima de iOS que advierte al usuario de actualizar la versión de iOS se aplicará después de la configuración de sistema operativo mínima de iOS que bloquea el acceso del usuario. Por tanto, en el caso en que el administrador de TI configure el sistema operativo mínimo de iOS en 11.0.0.0 y el sistema operativo mínimo de iOS (solo advertencia) en 11.1.0.0, mientras el dispositivo que intenta obtener acceso a la aplicación esté en iOS 10, se bloquearía al usuario final en función del valor más restrictivo para la versión de sistema operativo de iOS mínima que provoque el bloqueo del acceso.
+
+Cuando se trabaja con diferentes tipos de configuraciones, un requisito de versión de Intune App SDK tendría prioridad, seguido por el requisito de versión de la aplicación y el requisito de versión del sistema operativo de iOS. Después, se comprueban en el mismo orden las advertencias para todos los tipos de configuración. Se recomienda configurar los requisitos de versión de Intune App SDK solo de acuerdo con las instrucciones del equipo de producto de Intune para escenarios de bloqueo esenciales.
 
 ## <a name="see-also"></a>Vea también
 - [Implementar el plan de Intune](planning-guide-onboarding.md)
