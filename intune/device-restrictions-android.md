@@ -1,24 +1,24 @@
 ---
-title: "Configuración de restricciones de dispositivos de Microsoft Intune para Android"
-titlesuffix: 
-description: "Descubra las opciones de configuración de Intune que puede usar para controlar la funcionalidad y la configuración de los dispositivos que ejecutan Android."
-keywords: 
+title: Configuración de restricciones de dispositivos de Microsoft Intune para Android
+titlesuffix: ''
+description: Descubra las opciones de configuración de Intune que puede usar para controlar la funcionalidad y la configuración de los dispositivos que ejecutan Android.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.reviewer: ayesham
+ms.technology: ''
+ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d939d86f6ccd7f9851cfc52f1080fddaeee6a947
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: f938967951045d24ae65315b3b4d40749c1bc20f
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Configuración de restricciones de dispositivos Android y Samsung Knox de Microsoft Intune 
 
@@ -144,7 +144,7 @@ Para cada ajuste, configure una lista de aplicaciones con uno de los siguientes 
 
 La configuración de pantalla completa solo se aplica a dispositivos Samsung Knox Standard y exclusivamente a las aplicaciones que administra mediante Intune.
 
-- **Seleccionar una aplicación administrada**: seleccione una de las siguientes opciones para agregar una o varias aplicaciones administradas que se pueden ejecutar cuando el dispositivo esté en pantalla completa. Ninguna otra aplicación puede ejecutarse en el dispositivo.
+- **Seleccionar una aplicación administrada**: seleccione una de las siguientes opciones para agregar una o varias aplicaciones administradas que se pueden ejecutar cuando el dispositivo esté en pantalla completa. Ninguna otra aplicación puede ejecutarse en el dispositivo. Los exploradores instalados previamente no se pueden considerar aplicaciones que pueden ejecutarse mientras el dispositivo está en pantalla completa. Si se necesita un explorador, puede utilizar [Managed Browser](app-configuration-managed-browser.md).
     - **Agregar aplicaciones por nombre de paquete**
     - **Agregar aplicaciones por dirección URL**
     - **Agregar aplicaciones administradas**.

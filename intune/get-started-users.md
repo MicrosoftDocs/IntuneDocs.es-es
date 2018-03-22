@@ -1,25 +1,25 @@
 ---
-title: "Introducción a la administración de usuarios"
+title: Introducción a la administración de usuarios
 titlesuffix: Microsoft Intune
-description: "Agregue un usuario a Intune y asígnele una licencia para que pueda acceder a recursos de la empresa en dispositivos móviles."
-keywords: 
+description: Agregue un usuario a Intune y asígnele una licencia para que pueda acceder a recursos de la empresa en dispositivos móviles.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e06b335c03caee0bd997748f9c48ed78d7d379b
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 53b5be6e5cdf8f60304126e133a727123bfef58d
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="get-started-managing-users"></a>Introducción a la administración de usuarios
 
@@ -27,13 +27,13 @@ Tenga en cuenta a todas las personas de su organización. Cada una de ellas que 
 
 ## <a name="how-do-i-create-a-user"></a>¿Cómo se crea un usuario?
 
-1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
-2. Con **Buscar recursos**, busque **Intune**.
-3. Después de abrir la hoja **Microsoft Intune**, seleccione **Usuarios**. En la página **Todos los usuarios**, seleccione **+ Usuario nuevo**.
+1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+3. Después de abrir el panel **Microsoft Intune**, seleccione **Usuarios**. En la página **Todos los usuarios**, seleccione **+ Usuario nuevo**.
 4. Escriba la información del usuario, como el **nombre** y el **nombre de usuario**. La parte del nombre de dominio del nombre de usuario debe ser el nombre de dominio predeterminado inicial "contoso.onmicrosoft.com" o un nombre de dominio no federado comprobado como "contoso.com".
 5. En **Grupos**, elija el grupo de prueba al que agregar el usuario.
 6. Guarde la contraseña de usuario que se ha generado automáticamente de manera que pueda usarla para iniciar sesión en un dispositivo de prueba. Debe proporcionar esta contraseña a los usuarios para que puedan cambiarla a una contraseña normal que puedan recordar.
-7. En la hoja **Usuario**, seleccione **Crear**.
+7. En el panel **Usuario**, seleccione **Crear**.
 
 ## <a name="assigning-licenses-to-users"></a>Asignar licencias a usuarios
 

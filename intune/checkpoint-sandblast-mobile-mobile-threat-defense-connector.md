@@ -1,25 +1,25 @@
 ---
-title: Conector SandBlast Mobile de Check Point con Intune
-titlesuffix: Azure portal
-description: "Integración de SandBlast de Check Point con Intune"
-keywords: 
+title: SandBlast MTD de Check Point con Microsoft Intune
+titlesuffix: ''
+description: Obtenga información sobre cómo integrar Intune con SandBlast Mobile Threat Defense de Check Point para controlar el acceso de los dispositivos móviles a los recursos corporativos.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 706a4228-9bdf-41e0-b8d1-64c923dd2d2b
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 10bc23b5b5e0d0d278677ed4bf332787fc16b367
-ms.sourcegitcommit: eac89306d1391a6d3ae1179612b0820b19c2baa6
+ms.openlocfilehash: a0dad532511b87b7856bb2e293707ac5311eb773
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Conector de defensa contra amenazas SandBlast Mobile de Check Point con Intune
 
@@ -29,7 +29,7 @@ Puede configurar directivas de acceso condicional según la evaluación de riesg
 
 ## <a name="how-do-intune-and-check-point-sandblast-mobile-help-protect-your-company-resources"></a>¿Cómo ayudan Intune y SandBlast Mobile de Check Point a proteger los recursos de su empresa?
 
-La aplicación SandBlast Mobile de Check Point para Android e iOS capta el sistema de archivos, la pila de red y la telemetría de aplicaciones y dispositivos cuando está disponible. Después, envía los datos de telemetría al servicio en la nube de SandBlast Mobile de Check Point para evaluar el riesgo del dispositivo frente a las amenazas móviles.
+La aplicación SandBlast Mobile de Check Point para Android y iOS capta el sistema de archivos, la pila de red y la telemetría de aplicaciones y dispositivos cuando está disponible. Después, envía los datos de telemetría al servicio en la nube de SandBlast Mobile de Check Point para evaluar el riesgo del dispositivo frente a las amenazas móviles.
 
 La directiva de cumplimiento de dispositivos de Intune incluye una regla para el conector de defensa contra amenazas SandBlast Mobile de Check Point, que se basa en la evaluación de riesgos de SandBlast de Check Point. Cuando esta regla está habilitada, Intune evalúa la conformidad del dispositivo con la directiva que habilitó. Si se detecta que el dispositivo no cumple con la directiva, se bloqueará el acceso de los usuarios a los recursos corporativos, como Exchange Online y SharePoint Online. Los usuarios también reciben los pasos de la aplicación móvil de SandBlast de Check Point instalada en sus dispositivos para resolver el problema y volver a obtener acceso a los recursos corporativos.
 

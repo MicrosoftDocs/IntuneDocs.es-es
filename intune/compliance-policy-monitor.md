@@ -1,23 +1,23 @@
 ---
-title: "Supervisión de las directivas de cumplimiento de dispositivos Intune"
-titlesuffix: Azure portal
-description: Aprenda a supervisar las directivas de cumplimiento de dispositivos
-keywords: 
-author: andredm7
-ms.author: andredm
+title: Supervisión de las directivas de cumplimiento de dispositivos de Microsoft Intune
+titlesuffix: ''
+description: Use el panel de cumplimiento de dispositivos para supervisar el cumplimiento general del dispositivo, ver informes y ver el cumplimiento de los dispositivos por directiva y por configuración.
+keywords: ''
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 2/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f80d46e3e7c25c2b2e7a7c1af9604de1257a21e
-ms.sourcegitcommit: a55c009a2ab223f79dc7439539937b284aee0626
+ms.openlocfilehash: 146b8034022ed5f5a50de9910d28baf27f7482ac
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Supervisión de las directivas de cumplimiento de dispositivos Intune
 
@@ -25,15 +25,15 @@ Los informes de cumplimiento ayudan a los administradores a analizar el estado d
 
 ## <a name="before-you-begin"></a>Antes de comenzar
 
-Siga estos pasos para encontrar el **panel de cumplimiento de dispositivos Intune** en Azure Portal:
+Siga los pasos de abajo para encontrar el **panel de cumplimiento de dispositivos Intune** en el portal de Azure:
 
 1.  Vaya a [Azure Portal](https://portal.azure.com) e inicie sesión con sus credenciales de Intune.
 
-2.  Elija **Más servicios** en el menú izquierdo y, luego, escriba **Intune** en el filtro del cuadro de texto.
+2.  Elija **Todos los servicios** en el menú de la izquierda y, luego, escriba **Intune** en el filtro del cuadro de texto.
 
 3.  Elija **Intune** &gt; **Conformidad de dispositivos** &gt; **Introducción**; se abrirá el **panel de cumplimiento de dispositivos**.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Los dispositivos deben inscribirse en Intune para recibir las directivas de cumplimiento de dispositivos.
 
 ## <a name="device-compliance-dashboard"></a>Panel de cumplimiento de dispositivos
@@ -46,7 +46,7 @@ En el **panel de cumplimiento de dispositivos** puede supervisar los estados de 
 
 -   Cumplimiento de dispositivos por configuración
 
-![Panel de cumplimiento de dispositivos](./media/idc-1.png)
+![Imagen en que se muestra el panel de cumplimiento del dispositivo](./media/idc-1.png)
 
 También puede ver la configuración y las directivas de cumplimiento específicas que se aplican a un dispositivo concreto, y el estado final de cumplimiento de cada una de estas opciones del dispositivo.
 
@@ -68,22 +68,22 @@ Se trata de un gráfico de anillos que muestra el estado de cumplimiento agregad
 
     -   **Error**: el dispositivo no pudo comunicarse con Intune y Azure AD, y recibe un mensaje de error con el motivo.
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 > Los dispositivos que están inscritos en Intune, pero no seleccionados como destino de ninguna directiva de cumplimiento de dispositivos, se incluyen en este informe, en el depósito **Conforme**.
 
 #### <a name="drill-down-option"></a>Opción de obtención de detalles
 
 En el **panel de cumplimiento de dispositivos**, si hace clic en el mosaico de cumplimiento de dispositivos, puede explorar en profundidad los **estados de cumplimiento**, **alias de correo electrónico del usuario**, **modelos de dispositivo** y **ubicaciones** específicos de cada dispositivo destino de las directivas de cumplimiento de dispositivos.
 
-![Exploración en profundidad del panel de cumplimiento de dispositivos](./media/idc-2.png)
+![Imagen en que se muestra una exploración en profundidad del panel de cumplimiento de dispositivos](./media/idc-2.png)
 
 Si necesita más información sobre un usuario específico, puede filtrar el informe de gráfico de cumplimiento de dispositivos escribiendo el alias de correo electrónico del usuario.
 
-![Usuario específico del panel de cumplimiento de dispositivos](./media/idc-3.png)
+![Imagen en que se muestra el usuario específico del panel de cumplimiento de dispositivos](./media/idc-3.png)
 
 También puede hacer clic en los diferentes estados de cumplimiento diferentes del gráfico de cumplimiento de dispositivos para ver más detalles de los estados de las directivas de cumplimiento de dispositivos del usuario.
 
-![Estados diferentes del panel de cumplimiento de dispositivos](./media/idc-4.png)
+![Imagen en que se muestran diferentes estados del panel de cumplimiento de dispositivos](./media/idc-4.png)
 
 #### <a name="filter"></a>Filtro
 
@@ -99,7 +99,7 @@ Si hace clic en **botón Filtrar**, se abre el filtro emergente con las siguient
 
     -   iOS
 
-    -   Mac OS
+    -   macOS
 
     -   Windows
 
@@ -113,7 +113,7 @@ Si hace clic en **botón Filtrar**, se abre el filtro emergente con las siguient
 
     -   En período de gracia
 
-    -   Unknown
+    -   Desconocido
 
     -   Error
 
@@ -121,41 +121,22 @@ Si hace clic en el **botón Actualizar**, se debería cerrar el menú emergente 
 
 ##### <a name="device-details"></a>Detalles del dispositivo
 
-Al hacer clic en un dispositivo, se abre la **hoja Dispositivos** con el dispositivo seleccionado. De este modo, obtendrá información detallada sobre la configuración de directivas de cumplimiento de dispositivos aplicada a ese dispositivo.
-
-![Panel de cumplimiento de dispositivos](./media/idc-6.png)
+Al hacer clic en un dispositivo, se abre el **panel de dispositivos** con el dispositivo seleccionado, que proporciona información detallada sobre la configuración de la directiva de cumplimiento del dispositivo aplicada a dicho dispositivo.
 
 Al hacer clic en la propia configuración de directivas de dispositivos, puede ver el que nombre de la directiva de cumplimiento de dispositivos originó dicha configuración de cumplimiento de dispositivos seleccionada como destino por el administrador.
 
-![Nombre de la configuración de cumplimiento de dispositivos](./media/idc-7.png)
-
-## <a name="policy-compliance-report"></a>Informe de cumplimiento de directivas
+### <a name="per-policy-device-compliance-report"></a>Informe de cumplimiento de dispositivos por directiva
 
 Este informe proporciona una vista por directiva de cumplimiento y el número total de dispositivos en cada estado de cumplimiento. El título **Cumplimiento de directivas** está disponible en el **panel Cumplimiento de dispositivos**. En él se muestran todas las directivas que ha creado el administrador previamente, las plataformas en las que se aplica la directiva y el número de dispositivos conformes y no conformes.
 
-![Informe de cumplimiento de dispositivos por directiva](./media/idc-8.png)
+![Imagen en que se muestra el informe de cumplimiento de dispositivos por directiva](./media/idc-8.png)
 
 Al hacer clic en el mosaico de cumplimiento de directivas, seleccione una de las directivas de cumplimiento de dispositivos para ver el **estado de cumplimiento**, el **alias de correo electrónico del usuario**, el **modelo de dispositivo** y la **ubicación** de cada dispositivo al que se aplique esa directiva de cumplimiento de dispositivos.
 
-![Icono de cumplimiento de directivas](./media/idc-9.png)
-
 ## <a name="setting-compliance-report"></a>Informe de configuración de cumplimiento
 
-Este informe permite ver, por configuración de cumplimiento, el número total de dispositivos en cada estado de cumplimiento. El título **Configuración de cumplimiento** está disponible en el **panel de cumplimiento de dispositivos**. En él se muestran todas las opciones de las directivas de cumplimiento de dispositivos creadas por el administrador, las plataformas en las que se han aplicado y el número de dispositivos no conformes.
+Este informe permite ver, por configuración de cumplimiento, el número total de dispositivos en cada estado de cumplimiento. El título **Cumplimiento de configuración** está disponible en el **panel Cumplimiento de dispositivos**. En él se muestran todas las opciones de las directivas de cumplimiento de dispositivos creadas por el administrador, las plataformas en las que se han aplicado y el número de dispositivos no conformes.
 
-![Informe de cumplimiento de dispositivos por configuración](./media/idc-10.png)
+![Imagen en que se muestra el informe de cumplimiento de dispositivos por configuración](./media/idc-10.png)
 
 Al hacer clic en el mosaico Configuración de cumplimiento, seleccione una de las configuraciones de directivas de cumplimiento de dispositivos para ver el **estado de cumplimiento**, el **alias de correo electrónico del usuario**, el **modelo de dispositivo** y la **ubicación** de cada dispositivo al que se aplique esa configuración de directivas de cumplimiento de dispositivos.
-
-![Icono de cumplimiento de configuración](./media/idc-11.png)
-
-## <a name="threat-agent-status-report"></a>Informe de estado del agente de amenazas
-
-Este informe permite ver el estado y el mantenimiento del agente de Windows Defender. Usando un informe de acumulación de estado en **Conformidad de dispositivos**, puede ver los dispositivos que requieren alguna de las siguientes acciones:
-- Actualización de la firma
-- Reiniciar
-- Intervención manual
-- Examen completo
-- Otros estados del agente que requieren intervención
-
-Un informe detallado para cada categoría de estado muestra los equipos individuales que precisan atención, así como aquellos que se identifican como **Limpiar**.

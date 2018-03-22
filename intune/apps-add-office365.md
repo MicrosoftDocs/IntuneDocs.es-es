@@ -1,29 +1,29 @@
 ---
-title: "Instalación de aplicaciones de Office 365 en dispositivos con Microsoft Intune"
-titlesuffix: 
-description: "Obtenga información sobre cómo puede usar Microsoft Intune para facilitar la instalación de aplicaciones de Office 365 en dispositivos Windows 10."
-keywords: 
+title: Instalación de aplicaciones de Office 365 en dispositivos con Microsoft Intune
+titlesuffix: ''
+description: Obtenga información sobre cómo puede usar Microsoft Intune para facilitar la instalación de aplicaciones de Office 365 en dispositivos Windows 10.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/26/2018
+ms.date: 03/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1a8045261f93c6ac0282a03f13ac7bb7a7caac0d
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 076d228f3b18416e4ecb8fd1b3543a58d037e386
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
-# <a name="how-to-assign-office-365-proplus-apps-to-windows-10-devices-with-microsoft-intune"></a>Asignación de aplicaciones de Office 365 ProPlus a dispositivos Windows 10 con Microsoft Intune
+# <a name="how-to-assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Asignación de aplicaciones de Office 365 a dispositivos Windows 10 con Microsoft Intune
 
-Este tipo de aplicación facilita la asignación de aplicaciones de Office 365 ProPlus a dispositivos que administre y que ejecuten Windows 10. También puede instalar aplicaciones para el cliente de escritorio de Microsoft Project Online y Microsoft Visio Pro para Office 365, si posee sus licencias. Las aplicaciones que quiere que aparezcan como una única entrada en la lista de aplicaciones de la consola de Intune.
+Este tipo de aplicación facilita la asignación de aplicaciones de Office 365 a dispositivos que administre y que ejecuten Windows 10. También puede instalar aplicaciones para el cliente de escritorio de Microsoft Project Online y Microsoft Visio Pro para Office 365, si posee sus licencias. Las aplicaciones que quiere que aparezcan como una única entrada en la lista de aplicaciones de la consola de Intune.
 
 
 ## <a name="before-you-start"></a>Antes de empezar
@@ -31,8 +31,8 @@ Este tipo de aplicación facilita la asignación de aplicaciones de Office 365 P
 >[!IMPORTANT]
 >Este método de instalación de Office solo se admite si no hay otras versiones de Microsoft Office instaladas en el dispositivo.
 
-- Los dispositivos en los que implementa estas aplicaciones deben ejecutar Windows 10 Creator Update o una versión posterior.
-- Intune solo admite agregar aplicaciones de Office desde el conjunto de aplicaciones de Office 365 ProPlus.
+- Los dispositivos en los que implementa estas aplicaciones deben ejecutar Windows 10 Creators Update o una versión posterior.
+- Intune solo admite agregar aplicaciones de Office desde el conjunto de aplicaciones de Office 365.
 - Si alguna aplicación de Office está abierta cuando Intune instala el conjunto de aplicaciones, puede ser que la instalación falle y que los usuarios finales pierdan los datos de los archivos no guardados.
 - Este método de instalación no se admite en dispositivos Windows 10, Windows Home, Windows Team, Windows Holographic y Windows Holographic for Business.
 - Intune no admite la instalación de aplicaciones de escritorio de Office 365 desde Microsoft Store (estas aplicaciones se conocen como Office Centennial) en un dispositivo al que ya haya implementado aplicaciones de Office 365 con Intune. Si instala esta configuración, puede provocar daños o la pérdida de datos.
@@ -41,12 +41,13 @@ Este tipo de aplicación facilita la asignación de aplicaciones de Office 365 P
 
 ## <a name="get-started"></a>Introducción
 
-1.  Inicie sesión en el portal de Azure.
-2.  Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
+1.  Inicie sesión en [Azure Portal](https://portal.azure.com).
+2.  Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3.  En la hoja **Intune**, elija **Aplicaciones móviles**.
-4.  En la carga de trabajo **Mobile Apps**, elija **Administrar** > **Aplicaciones**.
+4.  En la carga de trabajo **Aplicaciones móviles**, elija **Aplicaciones** en la sección **Administrar**.
 5.  Encima de la lista de aplicaciones, elija **Agregar**.
-6.  En la hoja **Agregar aplicación**, elija **Office 365 ProPlus Suite (Windows 10)**.
+6.  En la lista **Tipo de aplicación** de la hoja **Agregar aplicaciones**, seleccione **Windows 10** en **Conjunto de aplicaciones de Office 365**.
+    Ahora puede configurar el conjunto de aplicaciones.
 
 ## <a name="configure-the-app-suite"></a>Configuración del conjunto de aplicaciones
 
@@ -61,7 +62,7 @@ En este paso, elija las aplicaciones de Office que desea asignar a los dispositi
 
 ## <a name="configure-app-information"></a>Configuración de información de la aplicación
 
-En este paso, proporcione información sobre el conjunto de aplicaciones. Esta información le ayuda a identificarlo en Intune y, además, ayuda a los usuarios finales a encontrarlo en la aplicación Portal de empresa.
+En este paso, debe proporcionar información sobre el conjunto de aplicaciones. Esta información le ayuda a identificar el conjunto de aplicaciones en Intune y, además, ayuda a los usuarios finales a encontrarlo en la aplicación Portal de empresa.
 
 1.  En la hoja **Agregar aplicación**, elija **App Suite Information** (Información del conjunto de aplicaciones).
 2.  En la hoja **App Suite Information** (Información del conjunto de aplicaciones), especifique la información siguiente:
@@ -73,9 +74,9 @@ En este paso, proporcione información sobre el conjunto de aplicaciones. Esta i
     - **Dirección URL de información**: opcionalmente, escriba la dirección URL de un sitio web que contenga información sobre esta aplicación. La dirección URL se muestra a los usuarios en el portal de empresa.
     - **Dirección URL de privacidad**: opcionalmente, escriba la dirección URL de un sitio web que contenga información de privacidad sobre esta aplicación. La dirección URL se muestra a los usuarios en el portal de empresa.
     - **Desarrollador**: opcionalmente, escriba el nombre del desarrollador de la aplicación.
-    - **Propietario**: opcionalmente,, escriba un nombre para el propietario de esta aplicación, por ejemplo, **departamento de Recursos Humanos**.
-    - **Notas**: Escriba notas que le gustaría asociar a esta aplicación.
-    - **Cargar icono**: Cargar un icono que se muestra con la aplicación cuando los usuarios examinan el portal de empresa.
+    - **Propietario**: opcionalmente, escriba un nombre para el propietario de esta aplicación, por ejemplo, **departamento de Recursos Humanos**.
+    - **Notas**: escriba notas que le gustaría asociar a esta aplicación.
+    - **Logotipo**: cargue un icono que se muestre con la aplicación cuando los usuarios examinen el portal de empresa.
 3.  Cuando haya terminado, haga clic en **Aceptar**.
 
 ## <a name="configure-app-settings"></a>Configuración de aplicaciones
@@ -91,7 +92,7 @@ En este paso, configure las opciones de instalación para el conjunto de aplicac
         - **Semianual**
         - **Semianual (dirigido)**
     - **Automatically accept the app end user license agreement** (Aceptar automáticamente el contrato de licencia del usuario final de la aplicación): seleccione esta opción si no requiere que los usuarios finales acepten el contrato de licencia. De ese modo, Intune aceptará automáticamente el contrato.
-    - **Use shared computer activation** (Usar activación en equipos compartidos): la activación en equipos compartidos se usa cuando varios usuarios comparten un equipo. Para más información, consulte la introducción a la activación de equipos compartidos para Office 365 ProPlus.
+    - **Use shared computer activation** (Usar activación en equipos compartidos): la activación en equipos compartidos se usa cuando varios usuarios comparten un equipo. Para obtener más información, consulte la introducción a la activación de equipos compartidos para Office 365.
     - **Idiomas**: Office se instala automáticamente en cualquier idioma compatible que se instale con Windows en el dispositivo de los usuarios finales. Seleccione esta opción si desea instalar más idiomas con el conjunto de aplicaciones.
 
 >[!IMPORTANT]
@@ -99,7 +100,7 @@ En este paso, configure las opciones de instalación para el conjunto de aplicac
 
 ## <a name="finish-up"></a>Finalizar
 
-Cuando haya terminado, en la hoja **Agregar aplicación**, elija **Guardar**. La aplicación que ha creado aparece en la lista de aplicaciones.
+Cuando haya terminado, en la hoja **Agregar aplicación**, elija **Agregar**. La aplicación que ha creado aparece en la lista de aplicaciones.
 
 ## <a name="error-codes-when-installing-the-app-suite"></a>Códigos de error en la instalación del conjunto de aplicaciones
 
@@ -137,4 +138,4 @@ La tabla siguiente muestra los códigos de error comunes que podría encontrar y
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Ahora puede asignar las aplicaciones a los grupos de su preferencia. Para obtener ayuda, consulte [Asignación de aplicaciones a grupos](/intune-azure/manage-apps/deploy-apps).
+- Ahora puede asignar las aplicaciones a los grupos que elija. Para ello, consulte [Asignación de aplicaciones a grupos](/intune-azure/manage-apps/deploy-apps).

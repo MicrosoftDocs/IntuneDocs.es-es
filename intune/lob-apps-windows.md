@@ -1,25 +1,25 @@
 ---
-title: "Adición de aplicaciones de línea de negocio de Windows a Microsoft Intune"
-titlesuffix: 
-description: "Descubra cómo agregar aplicaciones de línea de negocio (LOB) de Windows a Microsoft Intune."
-keywords: 
+title: Adición de aplicaciones de línea de negocio de Windows a Microsoft Intune
+titlesuffix: ''
+description: Descubra cómo agregar aplicaciones de línea de negocio (LOB) de Windows a Microsoft Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/16/2018
+ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b687b71f9d264364ff758fdd46b0739465c16865
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: e23ddb70bb2c12e1278f4167ec074972eeba3003
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-add-windows-line-of-business-lob-apps-to-microsoft-intune"></a>Adición de aplicaciones de línea de negocio (LOB) de Windows a Microsoft Intune
 
@@ -29,41 +29,42 @@ Una aplicación de línea de negocio (LOB) es aquella que se agrega desde un arc
 
 ## <a name="step-1---specify-the-software-setup-file"></a>Paso 1: Especificación del archivo de instalación de software
 
-1. Inicie sesión en Azure Portal.
-2. Elija **More Services** >  (Más servicios) **Supervisión y administración** + **Intune**.
-3. En la hoja **Intune**, elija **Administrar aplicaciones**.
+1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+3. En el panel **Intune**, elija **Aplicaciones móviles**.
 4. En la carga de trabajo **Mobile Apps**, elija **Administrar** > **Aplicaciones**.
 5. Encima de la lista de aplicaciones, elija **Agregar**.
-6. En la hoja **Agregar aplicación** y elija **Aplicación de línea de negocio**.
+6. En el panel **Agregar aplicación**, elija **Aplicación de línea de negocio**.
 
 ## <a name="step-2---configure-the-app-package-file"></a>Paso 2: Configuración del archivo de paquete de aplicaciones
 
-1. En la hoja **Agregar aplicación**, elija el archivo de **paquete de aplicaciones**.
-2. En la hoja del archivo **Paquete de aplicaciones**, elija el botón Examinar y seleccione un archivo de instalación de Windows con la extensión **.msi**, **.appx** o **.appxbundle**.
+1. En el panel **Agregar aplicación**, elija el archivo **Paquete de la aplicación**.
+2. En el panel del archivo **Paquete de la aplicación**, elija el botón Examinar y seleccione un archivo de instalación de Windows con la extensión **.msi**, **.appx** o **.appxbundle**.
 3. Cuando termine, elija **Aceptar**.
 
 
 ## <a name="step-3---configure-app-information"></a>Paso 3: Configuración de la información de la aplicación
 
-1. En la hoja **Agregar aplicación**, elija el archivo de **paquete de aplicaciones**.
-2. En la hoja **Información de la aplicación**, configure la información siguiente (algunos de los valores de esta hoja podrían rellenarse de forma automática):
+1. En el panel **Agregar aplicación**, elija el archivo **Paquete de la aplicación**.
+2. En el panel **Información de la aplicación**, configure la información siguiente (algunos de los valores de este panel podrían rellenarse de forma automática):
     - **Nombre**: escriba el nombre de la aplicación tal como se muestra en el portal de empresa. Asegúrese de que todos los nombres de aplicación que usa son únicos. Si el mismo nombre de aplicación existe dos veces, solo se muestra a los usuarios una de las aplicaciones en el portal de empresa.
     - **Descripción:** escriba una descripción de la aplicación. La descripción se muestra a los usuarios en el portal de empresa.
     - **Editor:** escriba el nombre del editor de la aplicación.
+    - **Ignorar la versión de la aplicación:** seleccione **Sí**, si el desarrollador de la aplicación se actualiza automáticamente.
     - **Categoría**: seleccione una o más de las categorías de aplicaciones integradas, o una categoría que haya creado. La categorización de aplicaciones facilita a los usuarios encontrar la aplicación cuando exploren el portal de empresa.
     - **Mostrar como aplicación destacada en el Portal de empresa**: la aplicación se muestra de forma destacada en la página principal del Portal de empresa cuando los usuarios buscan aplicaciones.
     - **Dirección URL de información**: opcionalmente, escriba la dirección URL de un sitio web que contenga información sobre la aplicación. La dirección URL se muestra a los usuarios en el portal de empresa.
     - **Dirección URL de privacidad**: opcionalmente, escriba la dirección URL de un sitio web que contenga información de privacidad sobre la aplicación. La dirección URL se muestra a los usuarios en el portal de empresa.
     - **Argumentos de línea de comandos**: si lo desea, especifique los argumentos de línea de comandos que desea aplicar al archivo .msi cuando se ejecuta, como **/q**.
     - **Desarrollador**: opcionalmente, escriba el nombre del desarrollador de la aplicación.
-    - **Propietario**: opcionalmente,, escriba un nombre para el propietario de esta aplicación, por ejemplo, **departamento de Recursos Humanos**.
+    - **Propietario**: opcionalmente, escriba un nombre para el propietario de esta aplicación, por ejemplo, **departamento de Recursos Humanos**.
     - **Notas**: escriba notas que le gustaría asociar a esta aplicación.
     - **Logotipo**: cargue un icono que esté asociado a la aplicación. El icono se muestra con la aplicación cuando los usuarios examinan el portal de empresa.
 3. Cuando termine, elija **Aceptar**.
 
 ## <a name="step-4---finish-up"></a>Paso 4: Finalización
 
-1. En la hoja **Agregar aplicación**, compruebe que haya configurado correctamente la información de la aplicación.
+1. En el panel **Agregar aplicación**, compruebe que haya configurado correctamente la información de la aplicación.
 2. Elija **Agregar** para cargar la aplicación en Intune.
 
 ## <a name="step-5---update-a-line-of-business-app"></a>Paso 5: Actualización de una aplicación de línea de negocio
@@ -76,8 +77,8 @@ Puede configurar una aplicación móvil MSI con auto-actualización para que omi
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-La aplicación que ha creado aparece en la lista de aplicaciones. Ahora puede asignarla a los grupos que elija. Para obtener ayuda, consulte [Asignación de aplicaciones a grupos](apps-deploy.md).
+- La aplicación que ha creado aparece en la lista de aplicaciones. Ahora puede asignarla a los grupos que elija. Para obtener ayuda, consulte [Asignación de aplicaciones a grupos](apps-deploy.md).
 
-Obtenga más información sobre los métodos disponibles para supervisar las propiedades y la asignación de la aplicación. Para más información, vea [Supervisión de información de aplicación y asignaciones](apps-monitor.md).
+- Obtenga más información sobre los métodos disponibles para supervisar las propiedades y la asignación de la aplicación. Para más información, vea [Supervisión de información de aplicación y asignaciones](apps-monitor.md).
 
-Obtenga más información sobre el contexto de la aplicación en Intune. Para más información, vea [Información general sobre los ciclos de vida del dispositivo y la aplicación](introduction-device-app-lifecycles.md).
+- Obtenga más información sobre el contexto de la aplicación en Intune. Para más información, vea [Información general sobre los ciclos de vida del dispositivo y la aplicación](introduction-device-app-lifecycles.md).

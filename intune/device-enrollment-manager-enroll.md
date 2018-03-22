@@ -1,25 +1,25 @@
 ---
-title: "Inscripción de dispositivos mediante una cuenta de administrador de inscripción de dispositivos"
+title: Inscripción de dispositivos mediante una cuenta de administrador de inscripción de dispositivos
 titlesuffix: Microsoft Intune
 description: Use la cuenta del administrador de inscripciones de dispositivos para inscribir dispositivos en Intune. "
-keywords: 
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/03/2018
+ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 01f5791869876ecfb7096c987cbc2828a39a2844
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 0f5d723c86c120bb8dee1f4e109b70d9ea4e6091
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Inscripción de dispositivos mediante una cuenta de administrador de inscripción de dispositivos
 
@@ -34,7 +34,7 @@ Los usuarios deben existir en [Azure Portal](https://portal.azure.com) para pode
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Ejemplo de escenario de administrador de inscripción de dispositivos
 
-Un restaurante quiere proporcionar 50 tabletas de punto de venta para los camareros y monitores de pedidos para el personal de cocina. Los empleados nunca necesitan acceder a los datos de la empresa ni iniciar sesión como usuarios. El administrador de Intune crea una cuenta de administrador de inscripción de dispositivos y agrega un supervisor de restaurante a la cuenta DEM y le proporciona capacidades DEM. El supervisor puede inscribir ahora los 50 dispositivos de tabletas mediante las credenciales DEM.
+Un restaurante quiere proporcionar 50 tabletas de punto de venta para los camareros y monitores de pedidos para el personal de cocina. Los empleados nunca necesitan acceder a los datos de la empresa ni iniciar sesión como usuarios. El administrador de Intune crea una cuenta de administrador de inscripción de dispositivos y agrega un supervisor restaurante a la cuenta DEM. Ahora, el supervisor tiene capacidades DEM. El supervisor puede inscribir ahora los 50 dispositivos de tabletas mediante las credenciales DEM.
 
 Solo los usuarios de [Azure Portal](https://portal.azure.com) pueden ser administradores de inscripción de dispositivos. El usuario administrador de inscripción de dispositivos no puede ser un administrador de Intune.
 
@@ -50,16 +50,16 @@ Los dispositivos inscritos con una cuenta de administrador de inscripción de di
 
   - Sin acceso por usuario. Dado que los dispositivos no tienen un usuario asignado, el dispositivo no puede acceder a los datos de la compañía ni al correo electrónico. A pesar de ello, se podrían usar, por ejemplo, configuraciones VPN para proporcionar a las aplicaciones de los dispositivos acceso a los datos.
   - No hay acceso condicional porque estos escenarios son por usuario.
-  - El usuario DEM no puede anular la inscripción de dispositivos inscritos de DEM en el propio dispositivo mediante el Portal de empresa. El administrador de Intune puede hacerlo, pero el usuario de DEM no.
+  - El usuario DEM no puede anular la inscripción de dispositivos inscritos de DEM en el propio dispositivo mediante el Portal de empresa. El administrador de Intune puede anular la inscripción.
   - Solo el dispositivo local aparece en el sitio web o en la aplicación de Portal de empresa.
   - Los usuarios no pueden usar aplicaciones del Programa de Compras por Volumen de Apple (PCV) debido a los requisitos de identificador de Apple por usuario para la administración de aplicaciones.
   - (Solo iOS) Si usa DEM para inscribir dispositivos iOS, no podrá usar Apple Configurator, el Programa de inscripción de dispositivos de Apple (DEP) o Apple School Manager (ASM) para inscribir dispositivos.
-  - (Solo Android) Existe un límite en cuanto a la cantidad de dispositivos Android for Work que se pueden inscribir con una sola cuenta DEM. Se puede inscribir un máximo de diez dispositivos Android for Work por cada cuenta DEM. Esta limitación no engloba los dispositivos Android heredados.
+  - (Solo Android) Existe un límite en cuanto a número de dispositivos Android for Work que se pueden inscribir con una sola cuenta DEM. Se puede inscribir un máximo de 10 dispositivos Android for Work por cada cuenta DEM. Esta limitación no engloba los dispositivos Android heredados.
   - Cada dispositivo requiere una licencia. Más información sobre [licencias de usuario y dispositivo](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
 
 
 > [!NOTE]
-> Para implementar aplicaciones de empresa en dispositivos administrados por el administrador de inscripción de dispositivos, implemente la aplicación de Portal de empresa como una **Instalación requerida** en la cuenta de usuario del administrador de inscripción de dispositivos.
+> Puede implementar aplicaciones de empresa en dispositivos administrados por el administrador de inscripción de dispositivos. Implemente la aplicación Portal de empresa como un **instalación requerida** a la cuenta de usuario del administrador de inscripción de dispositivos.
 > Para mejorar el rendimiento, al ver la aplicación de portal de empresa en un dispositivo de DEM solo se muestra el dispositivo local. La administración remota de otros dispositivos de DEM solo puede realizarse desde la consola de administración de Intune.
 
 
@@ -75,7 +75,7 @@ Los dispositivos inscritos con una cuenta de administrador de inscripción de di
 
 Para llevar a cabo tareas de inscripción de DEM, se requieren los roles de Azure AD Administrador global o Administrador de servicios de Intune. Estos roles también son necesarios para ver todos los usuarios de DEM, pese a los permisos de RBAC que se enumeran y están disponibles en el rol de usuario personalizado. Los usuarios que no tengan asignado un rol Administrador global o Administrador de servicios de Intune, pero que tengan permiso de lectura para el rol Administradores de inscripciones de dispositivos, solo pueden ver los usuarios de DEM que hayan creado. La compatibilidad del rol RBAC con estas características se anunciarán en el futuro.
 
-Si un usuario no tiene asignado el rol Administrador global o Administrador de servicios de Intune, pero tiene habilitados permisos de lectura para el rol Administradores de inscripciones de dispositivos que tienen asignado, solo podrán ver los usuarios de DEM que hayan creado.
+Si un usuario no tiene asignado el rol Administrador global o Administrador de servicios de Intune, pero tiene habilitados permisos de lectura para el rol Administradores de inscripciones de dispositivos que tiene asignado, solo podrá ver los usuarios de DEM que haya creado.
 
 ## <a name="remove-a-device-enrollment-manager"></a>Eliminación de un administrador de inscripción de dispositivos
 
@@ -88,9 +88,8 @@ La eliminación de un administrador de inscripción de dispositivos no afecta a 
 
 **Eliminación de un administrador de inscripción de dispositivos**
 
-1. En [Azure Portal](https://portal.azure.com), elija **All services (Todos los servicios)** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
-2. En la hoja de Intune, elija **Inscripción de dispositivos** y, luego, **Administradores de inscripción de dispositivos**.
-3. En la hoja **Administradores de inscripción de dispositivos**, seleccione el usuario DEM y **Eliminar**.
+1. En [Intune, en Azure Portal](https://aka.ms/intuneportal), seleccione **Inscripción de dispositivos** y, luego, **Administradores de inscripción de dispositivos**.
+2. En la hoja **Administradores de inscripción de dispositivos**, seleccione el usuario DEM y **Eliminar**.
 
 ## <a name="view-the-properties-of-a-device-enrollment-manager"></a>Visualización de las propiedades de un administrador de inscripción de dispositivos
 

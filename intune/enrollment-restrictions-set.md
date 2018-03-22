@@ -1,25 +1,25 @@
 ---
-title: "Establecer restricciones de inscripción en Microsoft Intune"
-titlesuffix: 
-description: "Restrinja las inscripciones por plataforma y establezca un límite de inscripciones de dispositivos en Intune."
-keywords: 
+title: Establecer restricciones de inscripción en Microsoft Intune
+titlesuffix: ''
+description: Restrinja las inscripciones por plataforma y establezca un límite de inscripciones de dispositivos en Intune.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/30/2018
+ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 396c8881ba0dfae5cfad4eab9bf787b6a9f33d44
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: a6466d62cf8af4e6b8a14980db5e9a244deb45c4
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-enrollment-restrictions"></a>Establecer restricciones de inscripción
 
@@ -53,8 +53,8 @@ Las restricciones predeterminadas se proporcionan automáticamente para las rest
 
 ## <a name="create-a-restriction"></a>Crear una restricción
 
-1. Inicie sesión en el portal de Azure.
-2. Elija **Más servicios**, busque **Intune** y, después, seleccione **Intune**.
+1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. Seleccione **Inscripción de dispositivos** > **Restricciones de inscripción**.
 4. Haga clic en **Crear restricción**.
 5. Asigne un nombre y una descripción a la restricción.
@@ -70,8 +70,8 @@ Las restricciones predeterminadas se proporcionan automáticamente para las rest
 
 Puede cambiar la configuración de una restricción de tipo de dispositivo mediante estos pasos:
 
-1. Inicie sesión en el portal de Azure.
-2. Elija **Más servicios**, busque **Intune** y, después, seleccione **Intune**.
+1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. Seleccione **Inscripción de dispositivos** > **Restricciones de inscripción**.
 4. En **Restricciones de tipo de dispositivo**, elija la restricción que quiera establecer.
 5. Bajo el nombre de la restricción (**Todos los usuarios** para la restricción predeterminada), seleccione **Plataformas**. Pulse **Permitir** o **Bloquear** para cada plataforma de la lista.
@@ -81,10 +81,10 @@ Puede cambiar la configuración de una restricción de tipo de dispositivo media
   - iOS admite major.minor.rev.
   - Windows admite major.minor.rev.build únicamente para Windows 10.
   Las versiones de sistema operativo no son relevantes en dispositivos Apple que se hayan inscrito con el Programa de inscripción de dispositivos, Apple School Manager o la aplicación Apple Configurator.
-8. Especifique si quiere **Permitir** o **Bloquear** dispositivos de **propiedad personal** para las plataformas de la lista.
+6. Especifique si quiere **Permitir** o **Bloquear** dispositivos de **propiedad personal** para las plataformas de la lista.
 
     ![Captura de pantalla del área de trabajo de restricciones de dispositivos con la plataforma de dispositivos predeterminada configurada para dispositivos de propiedad personal](media/device-restrictions-platform-configurations.png)
-9. Haga clic en **Guardar**.
+7. Haga clic en **Guardar**.
 
 >[!NOTE]
 >- Si bloquea los dispositivos Android de propiedad personal de la inscripción, los dispositivos Android for Work de propiedad personal todavía pueden inscribirse.
@@ -95,15 +95,15 @@ Puede cambiar la configuración de una restricción de tipo de dispositivo media
 
 Para cambiar la configuración de una restricción de límite de dispositivos, siga estos pasos:
 
-1. Inicie sesión en el portal de Azure.
-2. Elija **Más servicios**, busque **Intune** y, después, seleccione **Intune**.
+1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. Seleccione **Inscripción de dispositivos** > **Restricciones de inscripción**.
 4. En **Restricciones de límite de dispositivo**, elija la restricción que quiera establecer.
 5. Haga clic en **Límite de dispositivos** y después, en la lista desplegable, seleccione el número máximo de dispositivos que puede inscribir un usuario.
     ![Captura de pantalla de la hoja de restricciones Límite de dispositivos](./media/device-restrictions-limit.png)
-6. Haga clic en **Guardar**.
+4. Haga clic en **Guardar**.
 
-Cuando el usuario final alcance el límite de dispositivos inscritos, recibirá una notificación en que se le informará de ello. Por ejemplo, en iOS, tendría una aspecto similar al siguiente:
+Cuando el usuario final alcance el límite de dispositivos inscritos, recibirá una notificación en que se le informará de ello. Por ejemplo, en iOS, tendría un aspecto similar al siguiente:
 
 ![Captura de pantalla de la notificación de límite en un dispositivo iOS](./media/enrollment-restrictions-ios-set-limit-notification.png)
 
@@ -119,8 +119,8 @@ Puede cambiar la prioridad de cualquier restricción que no sea la predeterminad
 
 **Para cambiar la prioridad de las restricciones**
 
-1. Inicie sesión en el portal de Azure.
-2. Elija **Más servicios**, busque **Intune** y, después, seleccione **Intune**.
+1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. Seleccione **Inscripción de dispositivos** > **Restricciones de inscripción**.
 4. Mantenga el puntero sobre la restricción en la lista de prioridades.
-5. Con los tres puntos verticales, arrastre la prioridad a la posición deseada en la lista.
+5. Con los tres puntos verticales a la izquierda, arrastre la prioridad a la posición deseada en la lista.

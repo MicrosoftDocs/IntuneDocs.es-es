@@ -1,23 +1,23 @@
 ---
-title: "Integración de Windows Hello para empresas con Microsoft Intune"
-titleSuffix: 
-description: "Obtenga información sobre cómo crear una directiva para controlar el uso de Windows Hello para empresas en dispositivos administrados\"."
-keywords: 
+title: Integración de Windows Hello para empresas con Microsoft Intune
+titleSuffix: ''
+description: Obtenga información sobre cómo crear una directiva para controlar el uso de Windows Hello para empresas en dispositivos administrados".
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 03/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 46bb82fd49fa58e87c22c8bf0abb57e1587b8b40
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: d415628419bec26c24494b38a13bd3801051c603
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>Integración de Windows Hello para empresas con Microsoft Intune
 
@@ -48,19 +48,19 @@ Para garantizar que se resuelven los conflictos de directivas y que la directiva
 
 ## <a name="create-a-windows-hello-for-business-policy"></a>Crear una directiva de Windows Hello para empresas
 
-1.  En Azure Portal, elija **Más servicios** > **Supervisión y administración** > **Intune**.
+1.  En [Azure Portal](https://portal.azure.com), elija **Todos los servicios** > **Supervisión y administración** > **Intune**.
 
-2.  En la página de Intune, elija **Inscripción de dispositivos** y, después, **Inscripción de Windows** > **Windows Hello para empresas**.
+2.  En el panel de Intune, elija **Inscripción de dispositivos** y, después, **Inscripción de Windows** > **Windows Hello para empresas**.
 
-3.  En la página que se abre, elija la configuración **Predeterminada**.
+3.  En el panel que se abre, elija la configuración **Predeterminada**.
 
-4.  En la página **Todos los usuarios**, haga clic en **Propiedades** y luego escriba un **Nombre** y una **Descripción** opcional para la configuración de Windows Hello para empresas.
+4.  En el panel **Todos los usuarios**, haga clic en **Propiedades** y luego escriba un **Nombre** y una **Descripción** opcional para la configuración de Windows Hello para empresas.
 
-5. En la página **Todos los usuarios**, haga clic en **Configuración** y, luego, elija entre las siguientes opciones para **Configurar Windows Hello para empresas**:
+5. En el panel **Todos los usuarios**, haga clic en **Configuración** y, luego, elija entre las siguientes opciones para **Configurar Windows Hello para empresas**:
 
     - **Deshabilitado**. Si no quiere usar Windows Hello para empresas, seleccione esta opción. De esta manera, todas las demás configuraciones en pantalla se deshabilitan.
     - **Habilitado**. Seleccione esta opción si quiere configurar Windows Hello para empresas.
-    - **No configurado**. Seleccione esta opción si no quiere usar Intune para controlar la configuración de Windows Hello para empresas. No se cambiará ninguna de las opciones de configuración de Windows Hello para empresas en los dispositivos Windows 10. Todas las demás configuraciones de la página no están disponibles.
+    - **No configurado**. Seleccione esta opción si no quiere usar Intune para controlar la configuración de Windows Hello para empresas. No se cambiará ninguna de las opciones de configuración de Windows Hello para empresas en los dispositivos Windows 10. Todas las demás configuraciones del panel no están disponibles.
 
 6.  Si ha seleccionado **Habilitado** en el paso anterior, configure las opciones necesarias que se aplicarán en todos los dispositivos Windows 10 y Windows 10 Mobile inscritos.
 
@@ -69,9 +69,9 @@ Para garantizar que se resuelven los conflictos de directivas y que la directiva
      - **Requerido** (valor predeterminado). Solo los dispositivos que tengan un TPM accesible pueden aprovisionar Windows Hello para empresas.
      - **Preferido**. Los dispositivos intentan primero usar un TPM. Si no está disponible, pueden usar el cifrado de software.
 
- - **Requerir longitud mínima de PIN**/**Requerir longitud máxima de PIN**. Configura los dispositivos para que usen las longitudes de PIN mínima y máxima que se especifiquen, lo cual garantiza un inicio de sesión seguro. La longitud predeterminada del PIN es de seis caracteres, pero se puede aplicar una longitud mínima de cuatro. La longitud de PIN máxima es de 127 caracteres.
+ - **Longitud mínima de PIN**/**Longitud máxima de PIN**. Configura los dispositivos para que usen las longitudes de PIN mínima y máxima que se especifiquen, lo cual garantiza un inicio de sesión seguro. La longitud predeterminada del PIN es de seis caracteres, pero se puede aplicar una longitud mínima de cuatro. La longitud de PIN máxima es de 127 caracteres.
 
- - **Requerir minúsculas en el PIN**/**Requerir mayúsculas en el PIN**/**Requerir caracteres especiales en el PIN**. Si quiere aplicar un PIN más seguro, puede requerir el uso de letras mayúsculas, letras minúsculas y caracteres especiales en el PIN. Elija de entre las siguientes opciones:
+ - **Letras minúsculas en el PIN**/**Letras mayúsculas en el PIN**/**Caracteres especiales en el PIN**. Si quiere aplicar un PIN más seguro, puede requerir el uso de letras mayúsculas, letras minúsculas y caracteres especiales en el PIN. Elija de entre las siguientes opciones:
 
      - **Permitido**. Los usuarios pueden usar el tipo de carácter en el PIN, pero no es obligatorio.
 
@@ -90,7 +90,7 @@ Para garantizar que se resuelven los conflictos de directivas y que la directiva
 
  - **Usar tecnología mejorada contra la suplantación de identidad, cuando esté disponible**. Establece si se van a usar las características contra la suplantación de identidad de Windows Hello en los dispositivos que lo permitan (por ejemplo, cuando se detecte una fotografía de un rostro en lugar de un rostro real).<br>Si esta opción se establece en **Sí**, Windows requiere que todos los usuarios usen tecnología contra la suplantación de identidad para características faciales cuando se admitan.
 
- - **Usar inicio de sesión por teléfono**. Si esta opción se establece en **Sí**, los usuarios pueden usar una cuenta de Passport remota para que actúe como dispositivo complementario portátil para la autenticación del equipo de escritorio. El equipo de escritorio debe estar unido a Azure Active Directory y el dispositivo complementario debe configurarse con un PIN de Windows Hello para empresas.
+ - **Permitir inicio de sesión por teléfono**. Si esta opción se establece en **Sí**, los usuarios pueden usar una cuenta de Passport remota para que actúe como dispositivo complementario portátil para la autenticación del equipo de escritorio. El equipo de escritorio debe estar unido a Azure Active Directory y el dispositivo complementario debe configurarse con un PIN de Windows Hello para empresas.
 
 ## <a name="windows-holographic-for-business-support"></a>Compatibilidad con Windows Holographic for Business
 

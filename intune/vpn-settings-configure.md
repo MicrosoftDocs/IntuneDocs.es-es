@@ -1,23 +1,23 @@
 ---
-title: "Configuración de VPN en Microsoft Intune"
-titleSuffix: 
-description: "Descubra cómo usar Microsoft Intune para configurar conexiones de red privada virtual (VPN) en dispositivos que administre."
-keywords: 
+title: Configuración de VPN en Microsoft Intune
+titleSuffix: ''
+description: Descubra cómo usar Microsoft Intune para configurar conexiones de red privada virtual (VPN) en dispositivos que administre.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/25/2018
+ms.date: 03/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: feba7e7dc3e88d7d9beefc548c20bf19fbba662d
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 9480f19a8cd71e001d196674d3e285c8f2a8bb09
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="how-to-configure-vpn-settings-in-microsoft-intune"></a>Configuración de VPN en Microsoft Intune
 
@@ -37,7 +37,7 @@ Puede crear perfiles de VPN mediante los siguientes tipos de conexión:
 |Cisco (IPSec)|No|Sí|No|No|No|No|
 |Citrix|Sí|Sí|No|No|No|Sí|
 |F5 Edge Client|Sí|Sí|Sí|Sí|Sí|Sí|
-|Dell SonicWALL Mobile Connect|Sí|Sí|Sí|Sí|Sí|Sí|
+|SonicWall Mobile Connect|Sí|Sí|Sí|Sí|Sí|Sí|
 |Check Point Capsule VPN|Sí|Sí|Sí|Sí|Sí|Sí|
 |Cisco AnyConnect|Sí|Sí|Sí|No|No|No|
 |Automático|No|No|No|No|No|Sí|
@@ -54,12 +54,12 @@ Aprenda a crear perfiles de VPN personalizados mediante la configuración de URI
 
 ## <a name="create-a-device-profile-containing-vpn-settings"></a>Creación de un perfil de dispositivo que contenga la configuración de VPN
 
-1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
-3. En la hoja **Intune**, elija **Configuración del dispositivo**.
-2. En la hoja **Configuración del dispositivo**, elija **Administrar** > **Perfiles**.
-3. En la hoja de perfiles, elija **Create Profile** (Crear perfil).
-4. En la hoja **Create Profile** (Crear perfil), escriba un **nombre** y una **descripción** para el perfil de VPN.
+1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+3. En el panel **Intune**, elija **Configuración del dispositivo**.
+2. En el panel **Configuración del dispositivo**, elija **Administrar** > **Perfiles**.
+3. En el panel Perfiles, elija **Crear perfil**.
+4. En el panel **Crear perfil**, escriba un **Nombre** y una **Descripción** para el perfil de VPN.
 5. En la lista desplegable **Plataforma**, seleccione la plataforma de dispositivo a la que quiere aplicar la configuración de VPN. Actualmente, puede elegir una de las siguientes plataformas para la configuración del dispositivo VPN:
     - **Android**
     - **Android for Work**
@@ -76,9 +76,9 @@ Aprenda a crear perfiles de VPN personalizados mediante la configuración de URI
     - [Configuración de Windows Phone 8.1](vpn-settings-windows-phone-8-1.md)
     - [Configuración de Windows 8.1](vpn-settings-windows-8-1.md)
     - [Configuración de Windows 10](vpn-settings-windows-10.md) (incluido Windows Holographic for Business)
-8. Cuando haya terminado, vuelva a la hoja **Create Profile** (Crear perfil) y presione **Crear**.
+8. Cuando haya terminado, vuelva al panel **Crear perfil** y seleccione **Crear**.
 
-El perfil se crea y aparece en la hoja de la lista de perfiles.
+Se creará el perfil y aparecerá en el panel con la lista de perfiles.
 Si desea continuar y asignar este perfil a grupos, consulte [Asignación de perfiles de dispositivo](device-profile-assign.md).
 
 

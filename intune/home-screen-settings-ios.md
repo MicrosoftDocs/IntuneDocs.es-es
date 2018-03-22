@@ -1,25 +1,25 @@
 ---
-title: "Configuración de diseño de la pantalla principal de Microsoft Intune para dispositivos que ejecutan iOS"
+title: Configuración de diseño de la pantalla principal de Microsoft Intune para dispositivos que ejecutan iOS
 titlesuffix: Azure portal
-description: "Conozca la configuración que puede usar para personalizar la pantalla principal y la base de los dispositivos que ejecutan iOS."
-keywords: 
+description: Conozca la configuración que puede usar para personalizar la pantalla principal y la base de los dispositivos que ejecutan iOS.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 03/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ad8553506752cce99f22283e50cc5f490d72ed0b
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 88be142c98d7b89720d245c738a45a26ac825395
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>Configuración de diseño de la pantalla principal de Microsoft Intune para dispositivos que ejecutan iOS 
+# <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>Configuración de diseño de la pantalla principal de Microsoft Intune para dispositivos que ejecutan iOS
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -27,20 +27,21 @@ Use estos valores para configurar el diseño de aplicaciones y carpetas en la ba
 
 Los dispositivos con iOS con un perfil asignado deben estar en modo supervisado y ejecutar iOS 9.3 o versiones posteriores.
 
-1. En la página **Configuración del dispositivo**, **Crear perfil**, **Características del dispositivo**, elija **Diseño de pantalla principal (solo supervisado)**.
-2. En la página **Diseño de pantalla principal (solo supervisado)**, elija si quiere configurar los diseños de la **Base** o las **Páginas**.
+1. Desde [Intune en Azure Portal](https://portal.azure.com), vaya a [**Características del dispositivo** en el área de configuración de dispositivos](device-features-configure.md).
+2. En el panel **Características del dispositivo**, elija **Diseño de pantalla principal (solo supervisado)**.
+3. En el panel **Diseño de pantalla principal (solo supervisado)**, elija si quiere configurar los diseños de la **Base** o las **Páginas**.
 
 ## <a name="add-items-to-the-dock"></a>Agregar elementos a la base
 
-En la página **Base**, puede agregar hasta seis elementos o carpetas a la base de la pantalla de iOS. En cambio, muchos dispositivos admiten menos elementos; por ejemplo, los dispositivos iPhone admiten hasta cuatro elementos. En este caso, en el dispositivo se muestran solo los primeros cuatro elementos que ha configurado.
+En el panel **Base**, puede agregar hasta seis elementos o carpetas a la base de la pantalla de iOS. En cambio, muchos dispositivos admiten menos elementos; por ejemplo, los dispositivos iPhone admiten hasta cuatro elementos. En este caso, en el dispositivo se muestran solo los primeros cuatro elementos que ha configurado.
 
 1. Elija **Agregar** para agregar un elemento a la base.
-2. En la página **Agregar fila**, elija si quiere agregar una **aplicación** o una **carpeta**.
+2. En el panel **Agregar fila**, elija si quiere agregar una **Aplicación** o una **Carpeta**.
 3. Con la información de este tema, configure las aplicaciones y las carpetas que quiere que aparezcan en la base.
 4. Siga agregando elementos. Cuando termine, haga clic en **Aceptar** en cada página hasta que vuelva a la página **Crear perfil**. Elija **Crear**.
 
 >[!TIP]
-> Puede arrastrar y soltar elementos en cualquier lista de las páginas de la pantalla principal para reordenarlos. 
+> Puede arrastrar y soltar elementos en cualquier lista de las páginas de la pantalla principal para reordenarlos.
 
 ### <a name="example"></a>Ejemplo
 
@@ -56,9 +57,8 @@ Cuando asigna la directiva a un dispositivo iPhone, el resultado es una base sim
 
 Agregue las páginas que quiere que aparezcan en la pantalla principal y las aplicaciones que aparecen en cada página. Las aplicaciones que agrega a una página se organizan de izquierda a derecha, según el orden especificado en la lista. Si agrega más aplicaciones que las que caben en una página, se mueven a una página posterior.
 
-
-1. En la página **Páginas**, elija **Agregar**.
-2. En la página **Agregar fila**, escriba un **Nombre de la página**. Este nombre se usa como referencia en Azure Portal y *no se muestra* en el dispositivo iOS.
+1. En el panel **Páginas**, elija **Agregar**.
+2. En el panel **Agregar fila**, escriba un **Nombre de página**. Este nombre se usa como referencia en Azure Portal y *no se muestra* en el dispositivo iOS.
 3. Elija **Agregar** y, luego, elija si desea agregar una **aplicación** o una **carpeta** a la página.
 4. Con la información de este tema, configure las aplicaciones y las carpetas que quiere que aparezcan en la página.
 
@@ -85,7 +85,7 @@ Las aplicaciones que agrega a una página en una carpeta se organizan de izquier
 
 1. Escriba el **nombre de la carpeta**. Este nombre aparece en el dispositivo de los usuarios.
 2. Elija **Agregar** para crear una página en la carpeta. Puede agregar hasta 20 páginas.
-3. En la página **Agregar fila**, escriba un nombre para la página. Este nombre se usa como referencia en Azure Portal y *no se muestra* en el dispositivo iOS.
+3. En el panel **Agregar fila**, escriba un nombre para la página. Este nombre se usa como referencia en Azure Portal y *no se muestra* en el dispositivo iOS.
 3. Escriba el **nombre de la aplicación**. Este nombre se usa como referencia en Azure Portal y *no se muestra* en el dispositivo iOS.
 2. Escriba el **Identificador del lote de aplicaciones** de la aplicación que quiere mostrar. Consulte **Cómo agregar una aplicación a la lista** para obtener ayuda.
 3. Seleccione **Agregar**. Puede agregar hasta 60 elementos.
@@ -94,36 +94,36 @@ Las aplicaciones que agrega a una página en una carpeta se organizan de izquier
 
 ## <a name="bundle-id-reference-for-built-in-ios-apps"></a>Referencia de identificador de lote para aplicaciones iOS integradas
 
-En esta lista se muestra el identificador de lote de algunas aplicaciones iOS comunes integradas. Póngase en contacto con el proveedor de software para encontrar el identificador de lote de otras aplicaciones. 
+En esta lista se muestra el identificador de lote de algunas aplicaciones iOS comunes integradas. Póngase en contacto con el proveedor de software para encontrar el identificador de lote de otras aplicaciones.
 
 |||
 |-|-|
 |Nombre de la aplicación|Identificador de lote|
-|Tienda de aplicaciones|com.apple.AppStore|
+|App Store|com.apple.AppStore|
 |Calculadora|com.apple.calculator|
 |Calendario|com.apple.mobilecal|
 |Cámara|com.apple.camera|
 |Reloj|com.apple.mobiletimer|
-|Compass|com.apple.compass|
+|Brújula|com.apple.compass|
 |Contactos|com.apple.MobileAddressBook|
 |FaceTime|com.apple.facetime|
 |Buscar amigos|com.apple.mobileme.fmf1|
 |Buscar mi iPhone|com.apple.mobileme.fmip1|
-|Centro de juegos|com.apple.gamecenter|
+|Game Center|com.apple.gamecenter|
 |GarageBand|com.apple.mobilegarageband|
-|Mantenimiento|com.apple.Health|
+|Salud|com.apple.Health|
 |iBooks|com.apple.iBooks|
 |iTunes Store|com.apple.MobileStore|
 |iTunes U|com.apple.itunesu|
 |Keynote|com.apple.Keynote|
 |Mail|com.apple.mobilemail|
-|Asignaciones|com.apple.Maps|
+|Mapas|com.apple.Maps|
 |Mensajes|com.apple.MobileSMS|
 |Música|com.apple.Music|
 |Noticias|com.apple.news|
 |Notas|com.apple.mobilenotes|
-|Números|com.apple.Numbers|
-|Páginas|com.apple.Pages|
+|Numbers|com.apple.Numbers|
+|Pages|com.apple.Pages|
 |Photo Booth|com.apple.Photo-Booth|
 |Fotos|com.apple.mobileslideshow|
 |Podcasts|com.apple.podcasts|
@@ -135,7 +135,7 @@ En esta lista se muestra el identificador de lote de algunas aplicaciones iOS co
 |Vídeos|com.apple.videos|
 |VoiceMemos|com.apple.VoiceMemos|
 |Wallet|com.apple.Passbook|
-|Inspección|com.apple.Bridge|
+|Watch|com.apple.Bridge|
 |Clima|com.apple.weather|
 
 

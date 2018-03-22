@@ -1,25 +1,25 @@
 ---
-title: "Configuración personalizada de Intune para dispositivos Windows Holographic for Business"
-titlesuffix: Azure portal
-description: "Obtenga información sobre las opciones de configuración que puede aplicar en un perfil personalizado de Windows Holographic for Business."
-keywords: 
+title: Configuración personalizada de Microsoft Intune para dispositivos Windows Holographic for Business
+titlesuffix: ''
+description: Obtenga información sobre las opciones de configuración que puede aplicar en un perfil personalizado de Windows Holographic for Business.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
-ms.date: 2/26/2018
+ms.date: 3/6/2018
 ms.article: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d204f9de5c02835fe059783807558496b0cff039
-ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
+ms.openlocfilehash: b95d891d1dfaecbce182fde4a2221255a7e1eb06
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/08/2018
 ---
-# <a name="custom-device-settings-for-windows-holographic-for-business-devices-in-microsoft-intune"></a>Configuración de dispositivos personalizada para dispositivos Windows Holographic for Business en Microsoft Intune
+# <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-holographic-for-business"></a>Configuración de dispositivos personalizada de Microsoft Intune para dispositivos Windows Holographic for Business
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
@@ -64,4 +64,4 @@ La siguiente configuración es útil para dispositivos que ejecuten Windows Holo
 
 Puede encontrar una lista completa de todos los proveedores de servicios de configuración (CSP) que admite Windows Holographic en [CSP admitidos en Windows Holographic](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference#hololens). No todas las configuraciones son compatibles con todas las versiones de Windows Holographic. La tabla del artículo sobre Windows indica las versiones compatibles con cada CSP.
 
-Además, Intune no admite todas las configuraciones que aparecen en el artículo. Para saber si Intune admite la configuración que quiere, abra el artículo correspondiente a esa configuración. La página de cada configuración muestra una operación compatible. Para trabajar con Intune, la configuración debe ser compatible con las operaciones **Add** o **Replace**.
+Además, Intune no admite todas las configuraciones que aparecen en el artículo. Para saber si Intune admite la configuración que quiere, abra el artículo correspondiente a dicha configuración. La página de cada configuración muestra una operación compatible. Para trabajar con Intune, la configuración debe ser compatible con las operaciones **Add** o **Replace**.
