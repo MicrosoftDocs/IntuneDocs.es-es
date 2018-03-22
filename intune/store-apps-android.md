@@ -1,25 +1,25 @@
 ---
-title: "Adición de aplicaciones de la Tienda Android a Microsoft Intune"
-titleSuffix: 
-description: "Obtenga información sobre cómo agregar aplicaciones de la tienda de Android a Microsoft Intune."
-keywords: 
+title: Adición de aplicaciones de la Tienda Android a Microsoft Intune
+titleSuffix: ''
+description: Obtenga información sobre cómo agregar aplicaciones de la tienda de Android a Microsoft Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/13/2018
+ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c2cbc68aa3ea11e3b5593597a94aa059dd2927ed
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 87fea551dea1f80ee071fe6b477b84729e000874
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-add-android-store-apps-to-microsoft-intune"></a>Adición de aplicaciones de la Tienda Android a Microsoft Intune
 
@@ -28,12 +28,12 @@ ms.lasthandoff: 03/05/2018
 Antes de asignar una aplicación a un dispositivo o a un grupo de usuarios, primero debe agregar la aplicación a Microsoft Intune. Los pasos siguientes permiten agregar una aplicación de la tienda Android a Intune desde Azure Portal.
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
-3. En la hoja **Microsoft Intune**, elija **Aplicaciones móviles**.
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+3. En el panel **Intune**, elija **Aplicaciones móviles**.
 4. En la carga de trabajo **Aplicaciones móviles**, elija **Aplicaciones** en la sección **Administrar**.
 5. Encima de la lista de aplicaciones, elija **Agregar**.
-6. En la hoja **Agregar aplicación**, seleccione **Android** en los tipos **Aplicación de la Tienda** disponibles.
-7. Seleccione **Configurar** para configurar la siguiente información de la aplicación. Dependiendo de la aplicación que haya elegido, algunos de los valores de esta hoja pueden haberse rellenado automáticamente:
+6. En el panel **Agregar aplicación**, seleccione **Android** en los tipos **Aplicación de la Tienda** disponibles.
+7. Seleccione **Configurar** para configurar la siguiente información de la aplicación. Dependiendo de la aplicación que haya elegido, algunos de los valores de este panel pueden haberse rellenado automáticamente:
     - **Nombre:** escriba el nombre de la aplicación tal como se mostrará en el portal de empresa. Asegúrese de que todos los nombres de aplicación que usa son únicos. Si el mismo nombre de aplicación existe dos veces, solo se mostrará a los usuarios una de las aplicaciones en el portal de empresa.
     - **Descripción:** escriba una descripción de la aplicación. Esta descripción se muestra a los usuarios en el Portal de empresa.
     - **Editor:** escriba el nombre del editor de la aplicación.

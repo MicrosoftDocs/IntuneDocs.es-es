@@ -1,23 +1,23 @@
 ---
-title: "Configuración de restricciones de dispositivos de Microsoft Intune para Windows 10"
-titlesuffix: 
-description: "Descubra las opciones de configuración de Microsoft Intune que puede usar para controlar la funcionalidad y la configuración de los dispositivos que ejecutan Windows 10."
-keywords: 
+title: Configuración de restricciones de dispositivos de Microsoft Intune para Windows 10
+titlesuffix: ''
+description: Descubra las opciones de configuración de Microsoft Intune que puede usar para controlar la funcionalidad y la configuración de los dispositivos que ejecutan Windows 10.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/1/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 861c971c98493f6adab78e6bc93d560bbc1d5243
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: eee23afb4e2398358dc2c6b19b7d85be6b4f9edb
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 #<a name="microsoft-intune-windows-10-and-later-device-restriction-settings"></a>Configuración de restricciones de Microsoft Intune de dispositivos Windows 10 y versiones posteriores
 En este artículo, se muestran todas las opciones de configuración de restricciones de dispositivos de Microsoft Intune que puede configurar para los dispositivos que ejecutan Windows 10.
@@ -48,7 +48,7 @@ En este artículo, se muestran todas las opciones de configuración de restricci
 - **Detección de dispositivos**: bloquea la detección de un dispositivo por parte de otros dispositivos.
 - **Conmutador de tareas (solo móviles)**: bloquea el conmutador de tareas en el dispositivo.
 - **Cuadro de diálogo de error de tarjeta SIM (solo móviles)**: impide que un mensaje de error se muestre en el dispositivo si no se detecta una tarjeta SIM.
-- **Área de trabajo de Ink**: impida que los usuarios accedan al área de trabajo de Ink. Cuando este valor no está configurado, se habilita el área de trabajo de Ink (se activa la característica) y el usuario puede usarla más allá de la pantalla de bloqueo.
+- **Área de trabajo de entrada de lápiz**: impida que los usuarios accedan al área de trabajo de entrada de lápiz. Cuando este valor no está configurado, se habilita el área de trabajo de entrada de lápiz (se activa la característica) y el usuario puede usarla más allá de la pantalla de bloqueo.
 - **Reimplementación automática**: permite a los usuarios con derechos administrativos eliminar todos los datos de usuario y las opciones de configuración con **Ctrl + Win + R** en la pantalla de bloqueo del dispositivo. En este caso, el dispositivo se vuelve a configurar e inscribir automáticamente para la administración.
 
 
@@ -65,7 +65,7 @@ Para los dispositivos que ejecutan Windows 10 Mobile: si el inicio de sesión fa
     -   **Contraseñas sencillas**: le permite el uso de contraseñas sencillas, como 1111 y 1234. Esta configuración también permite o bloquea el uso de contraseñas de imagen de Windows.
 -   **Cifrado**: habilita el cifrado en dispositivos de destino.
 
-## <a name="personalization"></a>Personalization
+## <a name="personalization"></a>Personalización
 
 - **Dirección URL de imagen de fondo de escritorio (solo escritorio)**: especifica la dirección URL de una imagen en formato JPEG que quiere usar como fondo de escritorio de Windows. Los usuarios no pueden cambiar esto.
 
@@ -139,7 +139,7 @@ Puede agregar aplicaciones que deben tener un comportamiento de privacidad difer
 
 
 
-## <a name="app-store"></a>Tienda de aplicaciones
+## <a name="app-store"></a>App Store
 
 -   **Tienda de aplicaciones (solo móvil)**: permitir o bloquear el uso de la tienda de aplicaciones en dispositivos Windows 10 Mobile.
 -   **Actualizar automáticamente las aplicaciones de la tienda**: permite que las aplicaciones instaladas de Microsoft Store se actualicen automáticamente.
@@ -235,7 +235,7 @@ Puede agregar aplicaciones que deben tener un comportamiento de privacidad difer
     -   **Privacidad**: bloquea el acceso al área de privacidad de la aplicación de configuración.
     -   **Actualización y seguridad**: bloquea el acceso al área de actualizaciones y seguridad de la aplicación de configuración.
 
-## <a name="start"></a>Start
+## <a name="start"></a>Inicio
 
 - **Desanclar aplicaciones de la barra de tareas**: impide que el usuario desancle aplicaciones del menú Inicio.
 - **Documentos en Inicio**: oculta o muestra la carpeta Documentos en el menú Inicio de Windows.

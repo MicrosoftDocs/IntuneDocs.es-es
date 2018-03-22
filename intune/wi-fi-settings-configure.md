@@ -1,23 +1,23 @@
 ---
-title: "Cómo configurar opciones de Wi-Fi de Intune"
+title: Cómo configurar opciones de Wi-Fi de Intune
 titleSuffix: Microsoft Intune
-description: "Obtenga información sobre cómo usar Microsoft Intune para configurar conexiones Wi-Fi en los dispositivos que administra."
-keywords: 
+description: Obtenga información sobre cómo usar Microsoft Intune para configurar conexiones Wi-Fi en los dispositivos que administra.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 1/25/2018
+ms.date: 03/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 21bc79d3440e57ec91f7e4482112d77cf233575f
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 90d2df028d5a61bb134b6a2b76efa570eed80f20
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Configuración de Wi-Fi en Microsoft Intune
 
@@ -47,17 +47,19 @@ Use la información de este tema para conocer los aspectos básicos de la config
 ## <a name="create-a-device-profile-containing-wi-fi-settings"></a>Creación de un perfil de dispositivo que contenga la configuración de Wi-Fi
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
-3. En la hoja **Intune**, elija **Configuración del dispositivo**.
-2. En la hoja **Configuración del dispositivo**, elija **Administrar** > **Perfiles**.
-3. En la hoja de perfiles, elija **Create Profile** (Crear perfil).
-4. En la hoja **Create Profile** (Crear perfil), escriba un **nombre** y una **descripción** para el perfil de Wi-Fi.
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+3. En el panel **Intune**, elija **Configuración del dispositivo**.
+2. En el panel **Configuración del dispositivo**, en la sección **Administrar**, elija **Perfiles**.
+3. En el panel Perfiles, elija **Crear perfil**.
+4. En el panel **Crear perfil**, escriba un **Nombre** y una **Descripción** para el perfil de Wi-Fi.
 5. En la lista desplegable **Plataforma**, seleccione la plataforma de dispositivo a la que quiere aplicar la configuración de Wi-Fi. Actualmente, puede elegir una de las siguientes plataformas para la configuración de Wi-Fi:
     - **Android**
     - **Android for Work**
     - **iOS**
     - **macOS**
-    - **Windows 8.1 y versiones posteriores (importe un perfil)**
+    - **Windows Phone 8.1**
+    - **Windows 8.1 y versiones posteriores**
+    - **Windows 10 y versiones posteriores**
 
    > [!IMPORTANT]
    > Para crear un perfil para dispositivos que ejecuten Windows 10, incluido Windows Holographic for Business, debe elegir la plataforma **Windows 8.1 y versiones posteriores**. La plataforma **Windows 10 y versiones posteriores** no incluye ningún tipo de perfil de Wi-Fi. 
@@ -70,9 +72,9 @@ Use la información de este tema para conocer los aspectos básicos de la config
     - [Configuración de iOS](wi-fi-settings-ios.md)
     - [Configuración de macOS](wi-fi-settings-macos.md)
     - [Configuración de Windows 8.1 y versiones posteriores](wi-fi-settings-import-windows-8-1.md) (incluido Windows Holographic for Business)
-1. Cuando haya terminado, vuelva a la hoja **Create Profile** (Crear perfil) y presione **Crear**.
+1. Cuando haya terminado, vuelva al panel **Crear perfil** y pulse **Crear**.
 
-El perfil se crea y aparece en la hoja de la lista de perfiles.
+Se creará el perfil y aparecerá en el panel con la lista de perfiles.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

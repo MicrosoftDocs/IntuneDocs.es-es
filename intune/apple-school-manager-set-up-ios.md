@@ -1,25 +1,25 @@
 ---
-title: "Configuración de la inscripción en el programa de Apple School Manager para dispositivos iOS"
+title: Configuración de la inscripción en el programa de Apple School Manager para dispositivos iOS
 titlesuffix: Microsoft Intune
-description: "Obtenga información sobre cómo configurar la inscripción en el programa de Apple School Manager para dispositivos iOS corporativos con Intune."
-keywords: 
+description: Obtenga información sobre cómo configurar la inscripción en el programa de Apple School Manager para dispositivos iOS corporativos con Intune.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f639a61c4d481a891156383c3a23e0e1511a5fbe
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: d3a599ff1dff3e27214dfcca694f6b97333f370a
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-school-manager"></a>Configuración de la inscripción de dispositivos iOS con Apple School Manager
 
@@ -89,7 +89,7 @@ Vaya al archivo de certificado (.p7m), elija **Abrir** y luego seleccione **Carg
 ## <a name="create-an-apple-enrollment-profile"></a>Creación de un perfil de inscripción de Apple
 Un perfil de inscripción de dispositivos define la configuración que se aplica a un grupo de dispositivos durante la inscripción.
 
-1. En Intune en Azure Portal, elija **Inscripción de dispositivos** y luego **Inscripción de Apple**.
+1. En [Intune en Azure Portal](https://aka.ms/intuneportal), elija **Inscripción de dispositivos** y luego **Inscripción de Apple**.
 2. En **Programa de inscripción**, elija **Perfiles del Programa de inscripción**.
 3. En la hoja **Perfiles del Programa de inscripción**, elija **Crear**.
 4. En la hoja **Crear perfil de inscripción**, escriba un **nombre** y una **descripción** para el perfil que se muestra en Intune.
@@ -149,7 +149,7 @@ Un perfil de inscripción de dispositivos define la configuración que se aplica
 ## <a name="sync-managed-devices"></a>Sincronizar dispositivos administrados
 Ahora que se ha concedido permiso a Intune para administrar los dispositivos de Apple School Manager, puede sincronizar Intune con el servicio de Apple para ver los dispositivos administrados en Intune.
 
-1. En Intune en Azure Portal, pulse **Inscripción de dispositivos** > **Inscripción de Apple** > **Dispositivos del Programa de inscripción** > **Sincronizar**. La barra de progreso muestra la cantidad de tiempo que debe esperar antes de solicitar de nuevo la sincronización.
+1. En [Intune en Azure Portal](https://aka.ms/intuneportal), elija **Inscripción de dispositivos** > **Inscripción de Apple** > **Dispositivos del Programa de inscripción** > **Sincronizar**. La barra de progreso muestra la cantidad de tiempo que debe esperar antes de solicitar de nuevo la sincronización.
 
   ![Se ha seleccionado el nodo Dispositivos del Programa de inscripción y se ha elegido el vínculo Sincronizar](./media/enrollment-program-device-sync.png)
 2. En la hoja **Sincronizar**, seleccione **Solicitar sincronización**. La barra de progreso muestra la cantidad de tiempo que debe esperar antes de solicitar de nuevo la sincronización.
@@ -166,7 +166,7 @@ Ahora que se ha concedido permiso a Intune para administrar los dispositivos de 
 ## <a name="assign-a-profile-to-devices"></a>Asignar un perfil a los dispositivos
 Los dispositivos de Apple School Manager administrados por Intune deben tener un perfil de inscripción asignado antes de la inscripción.
 
-1. En Intune en Azure Portal, pulse **Inscripción de dispositivos** > **Inscripción de Apple** y, después, pulse **Perfiles del Programa de inscripción**.
+1. En [Intune en Azure Portal](https://aka.ms/intuneportal), elija **Inscripción de dispositivos** > **Inscripción de Apple** y, después, elija **Perfiles del Programa de inscripción**.
 2. En la lista de **Perfiles del Programa de inscripción**, seleccione el perfil que quiere asignar a los dispositivos y, después, seleccione **Device Assignments** (Asignaciones de dispositivos).
 
  ![Asignaciones de dispositivo con la opción Asignar seleccionada.](./media/enrollment-program-device-assign.png)

@@ -1,27 +1,29 @@
 ---
-title: "Configuración del correo electrónico de Microsoft Intune para dispositivos que ejecutan Android y Android for Work"
-titleSuffix: 
-description: "Obtenga información sobre las opciones de configuración de Microsoft Intune que puede usar para configurar el correo electrónico en dispositivos que ejecutan Android y Android for Work."
-keywords: 
+title: Configuración del correo electrónico de Microsoft Intune para dispositivos que ejecutan Android y Android for Work
+titleSuffix: ''
+description: Obtenga información sobre las opciones de configuración de Microsoft Intune que puede usar para configurar el correo electrónico en dispositivos que ejecutan Android y Android for Work.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a68607be7cbd84d5a9e9080d0a8608bce85edd22
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: f989f9fafa4766ab71843c9dddef2bf3e18c5134
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-android-and-android-for-work"></a>Configuración de perfiles de correo electrónico en Microsoft Intune para dispositivos que ejecutan Android y Android for Work
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
+
+En este artículo se muestran las opciones de configuración de perfiles de correo electrónico que puede configurar para los dispositivos que ejecutan Android.
 
 Como administrador de Intune, puede crear y asignar configuraciones de correo electrónico a los siguientes dispositivos Android:
 - [Android Samsung Knox Standard](#android-samsung-knox-standard-email-settings)
@@ -50,7 +52,7 @@ Como administrador de Intune, puede crear y asignar configuraciones de correo el
 
 - **Tipo de contenido para sincronizar**: seleccione los tipos de contenido que quiere sincronizar con los dispositivos:
     - **Contactos**
-    - **Calendarioio**
+    - **Calendario**
     - **Tareas**
 
 ## <a name="android-for-work-email-settings"></a>Configuración del correo electrónico de Android for Work
@@ -65,5 +67,5 @@ Como administrador de Intune, puede crear y asignar configuraciones de correo el
 - **Cantidad de correo electrónico para sincronizar**: elija el número de días de correo electrónico que quiere sincronizar, o seleccione **Unlimited** (Sin límite) para sincronizar todos el correo electrónico disponible.
 - **Tipo de contenido para sincronizar** (solo Nine Work): seleccione los tipos de contenido que quiere sincronizar con los dispositivos:
     - **Contactos**
-    - **Calendarioio**
+    - **Calendario**
     - **Tareas**

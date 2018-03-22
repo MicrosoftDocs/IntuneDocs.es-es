@@ -1,31 +1,33 @@
 ---
-title: "Configuración de restricciones de dispositivos de Microsoft Intune para iOS"
-titleSuffix: 
-description: "Descubra las opciones de configuración de Intune que puede usar para controlar la funcionalidad y la configuración de los dispositivos que ejecutan iOS."
-keywords: 
+title: Configuración de restricciones de dispositivos de Microsoft Intune para iOS
+titleSuffix: ''
+description: Descubra las opciones de configuración de Intune que puede usar para controlar la funcionalidad y la configuración de los dispositivos que ejecutan iOS.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/1/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bc53a7a6a4c961a649d01f23f30c59ff4dc90fe2
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: b0523a514eb9d6a5c0429f1a2e2fa84d1ca00de4
+ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 03/12/2018
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Configuración de restricciones de dispositivos iOS de Microsoft Intune
-En este artículo se muestran todas las opciones de configuración de restricciones de dispositivos de Microsoft Intune que puede configurar para los dispositivos que ejecutan iOS.
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
+En este artículo se muestran todas las opciones de configuración de restricciones de dispositivos de Microsoft Intune que puede configurar para los dispositivos que ejecutan iOS.
+
 ## <a name="general"></a>General
 
+-   **Compartir datos de uso**: permite o impide que el dispositivo envíe datos de telemetría de uso y diagnóstico a Apple.
 -   **Envío de datos de diagnóstico**: permite o impide que el dispositivo envíe datos de diagnóstico a Apple.
 -   **Captura de pantalla**: permite que el usuario capture el contenido de la pantalla como una imagen.
     - **Observación de pantalla remota mediante la aplicación Aula (solo supervisado)**: permite o impide que la aplicación Aula de Apple observe la pantalla de dispositivos iOS.
@@ -49,7 +51,7 @@ El modo supervisado de iOS solo se puede habilitar durante la configuración ini
 
 - Bloqueo de aplicaciones (modo de aplicación única) 
 - Proxy HTTP global 
-- Bypass del bloqueo de activación 
+- Superación del bloqueo de activación 
 - Modo de aplicación única autónoma 
 - Filtro de contenido web 
 - Establecer la pantalla de fondo y la pantalla de bloqueo 
@@ -58,7 +60,7 @@ El modo supervisado de iOS solo se puede habilitar durante la configuración ini
 - Permitir la instalación de aplicaciones administradas de forma exclusiva 
 - iBookstore 
 - iMessages 
-- Centro de juegos 
+- Game Center 
 - AirDrop 
 - AirPlay 
 - Emparejamiento de host 
@@ -89,7 +91,7 @@ El modo supervisado de iOS solo se puede habilitar durante la configuración ini
 > - Contenido explícito
 > - Documentos y datos de iCloud
 > - Juego multijugador
-> - Agregar amigos del centro de juegos
+> - Agregar amigos de Game Center
 
 ## <a name="password"></a>Contraseña
 -   **Contraseña**: exige que el usuario final escriba una contraseña para acceder al dispositivo.
@@ -213,8 +215,8 @@ También puede hacer clic en **Importar** para rellenar la lista a partir de un 
 -   **Conexión a redes Wi-Fi solo con perfiles de configuración (solo con supervisión)**: solo permite que el dispositivo se una a redes Wi-Fi que se han configurado con un perfil de Wi-Fi de Intune.
 
 - **Reglas de uso de datos móviles (solo aplicaciones administradas)**: le permite definir los tipos de datos que las aplicaciones administradas pueden usar cuando están en redes de telefonía móvil. Elija de entre las siguientes opciones:
-    - **Bloquear uso de datos móviles**
-    - **Bloquear uso de datos móviles en itinerancia**
+    - **Bloquear el uso de datos móviles**: puede bloquear el uso de datos móviles en **Todas las aplicaciones administradas** o **Elegir aplicaciones específicas**.
+    - **Bloquear el uso de datos móviles en itinerancia**: puede impedir el uso de datos móviles en itinerancia para **Todas las aplicaciones administradas** o **Elegir aplicaciones específicas**.
 
 ## <a name="connected-devices"></a>Dispositivos conectados
 

@@ -1,25 +1,25 @@
 ---
 title: Borrado solo de datos corporativos de aplicaciones
 titleSuffix: Microsoft Intune
-description: "Descubra cómo borrar aplicaciones de forma selectiva con Microsoft Intune."
-keywords: 
+description: Descubra cómo borrar aplicaciones de forma selectiva con Microsoft Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/02/2018
+ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 42605e6e-5b84-44ff-b86e-346ea123b53e
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dfd1b37c1b944a545234b93b44d651ead8f0f486
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 913ff1c0ae7ab968ae1195425c7cbe4044591c6b
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Borrado solo de datos corporativos de aplicaciones administradas por Intune
 
@@ -39,23 +39,21 @@ Para quitar de forma selectiva datos de la aplicación de empresa, siga los paso
 
 1.  Inicie sesión en el [Portal de Azure](https://portal.azure.com).
 
-2.  Elija **More Services** (Más servicios), escriba **Intune** en el cuadro de texto de filtro y seleccione **Intune**. Se abrirá la hoja de Intune. Seleccione **Aplicaciones móviles**.
+2.  Elija **Todos los servicios**, escriba **Intune** en el cuadro de texto de filtro y seleccione **Intune**. En el panel de Intune que se abre, elija el panel **Aplicaciones móviles**.
 
-    ![Captura de pantalla de la hoja de Microsoft Intune](./media/apps-selective-wipe01.png)
+    ![Captura de pantalla del panel de Microsoft Intune](./media/apps-selective-wipe01.png)
 
-3.  En la hoja **Aplicaciones móviles**, elija **Borrado selectivo de aplicaciones**.
+3.  En el **panel Aplicaciones móviles**, elija **Borrado selectivo de aplicaciones**.
 
 4.  Elija **Nueva solicitud de borrado**. Se abrirá el panel **Nueva solicitud de borrado**.
 
     ![Captura de pantalla del panel Nueva solicitud de borrado](./media/AzurePortal_MAM_NewWipeRequest.png)
 
-5.  Elija **Usuario** para abrir la hoja **Usuario** y seleccione el usuario cuyos datos de aplicación quiera borrar.
+5.  Seleccione un usuario y después elija **Seleccionar** para seleccionar el usuario cuyos datos de aplicación quiera borrar.
 
-6.  Luego, elija **Dispositivo** en la hoja **Nueva solicitud de borrado**. Con esta acción se abre la hoja **Seleccionar dispositivo**. Así aparecen todos los dispositivos asociados con el usuario seleccionado. Además, este panel proporciona el nombre del dispositivo, que es un nombre descriptivo definido por el usuario, y el tipo de dispositivo, que especifica la plataforma de este. 
+6.  Luego, elija **Dispositivo** en el panel **Nueva solicitud de borrado**. Se abre el panel **Seleccionar dispositivo**, en el que muestran todos los dispositivos asociados al usuario seleccionado. También se proporcionan dos columnas: el nombre del dispositivo, que es un nombre descriptivo definido por el usuario, y el tipo de dispositivo, que indica la plataforma. Seleccione el dispositivo que desea borrar.
 
-7. En la lista, seleccione el dispositivo que quiere borrar.
-
-8.  Ahora está de nuevo en la hoja **Nueva solicitud de borrado**. Seleccione **Aceptar** para realizar una solicitud de borrado.
+7.  Ahora está de nuevo en el panel **Nueva solicitud de borrado**. Seleccione **Aceptar** para realizar una solicitud de borrado.
 
 El servicio crea y realiza el seguimiento de una solicitud de borrado independiente para cada aplicación protegida en el dispositivo, y del usuario asociado a la solicitud de borrado.
 
@@ -63,7 +61,7 @@ El servicio crea y realiza el seguimiento de una solicitud de borrado independie
 
 Puede tener un informe resumido que muestre el estado general de la solicitud de borrado y que incluya el número de solicitudes pendientes y errores. Para obtener más información, siga estos pasos:
 
-1.  En la hoja **Aplicaciones móviles - Borrado selectivo de aplicaciones**, puede ver la lista de solicitudes agrupadas por usuarios. Debido a que el sistema crea una solicitud de borrado para cada aplicación protegida que se ejecuta en el dispositivo, puede que vea varias solicitudes para un mismo usuario. Este estado indica si una solicitud de borrado está **pendiente**, ha provocado un **error** o si es **correcta**.
+1.  En el panel **Aplicaciones móviles - Borrado selectivo de aplicaciones**, puede ver la lista de solicitudes agrupadas por usuarios. Debido a que el sistema crea una solicitud de borrado para cada aplicación protegida que se ejecuta en el dispositivo, puede que vea varias solicitudes para un mismo usuario. Este estado indica si una solicitud de borrado está **pendiente**, ha provocado un **error** o si es **correcta**.
 
     ![Captura de pantalla del estado de la solicitud de borrado en el panel Borrado selectivo de aplicaciones](./media/wipe-request-status-1.png)
 
@@ -76,7 +74,7 @@ Además, podrá ver el nombre del dispositivo y su tipo, lo que puede resultar �
 
 Los borrados con estado pendiente se muestran hasta que se eliminen manualmente. Para eliminar manualmente una solicitud de borrado:
 
-1.  Abra la hoja **Aplicaciones móviles - Borrado selectivo de aplicaciones**.
+1.  En el panel **Aplicaciones móviles - Borrado selectivo de aplicaciones**.
 
 2.  En la lista, haga clic con el botón derecho en la solicitud de borrado que quiere eliminar y elija **Eliminar solicitud de borrado**.
 

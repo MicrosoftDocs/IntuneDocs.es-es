@@ -1,23 +1,23 @@
 ---
-title: "Configurar Microsoft Intune para el inicio de sesión único para dispositivos iOS"
-titlesuffix: 
-description: "Obtenga información sobre cómo configurar Microsoft Intune para el inicio de sesión único para dispositivos iOS."
-keywords: 
+title: Configurar Microsoft Intune para el inicio de sesión único para dispositivos iOS
+titlesuffix: ''
+description: Obtenga información sobre cómo configurar Microsoft Intune para el inicio de sesión único para dispositivos iOS.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/2/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b11f2b3a560d33503e381f96804bfe5489fe367d
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 3bb7c3bdffb19e26f2f2178c1750d1ef31a02556
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Configurar Microsoft Intune para el inicio de sesión único para dispositivos iOS
 
@@ -34,18 +34,19 @@ Para aprovechar el inicio de sesión único para dispositivos iOS, debe cumplir 
 
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
-3. En la página **Intune**, elija **Configuración del dispositivo**.
-2. En la página **Configuración del dispositivo**, elija **Perfiles**.
-3. En la página Perfiles, elija **Crear perfil**, proporcione un nombre y una descripción, y configure los siguientes valores:
-   - **Plataforma**: elija **iOS**. 
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+3. En el panel **Intune**, elija **Configuración del dispositivo**.
+4. En el panel **Configuración del dispositivo**, en la sección **Administrar**, elija **Perfiles**.
+5. En el panel Perfiles, elija **Crear perfil**.
+6. Proporcione un nombre y una descripción, y configure los siguientes valores:
+   - **Plataforma**: elija **iOS**.
    - **Tipo de perfil**: elija **Características del dispositivo**.
-4. En la página **Características del dispositivo**, elija **Inicio de sesión único**.
+7. En el panel **Características del dispositivo**, elija **Inicio de sesión único**.
 
-   ![Página Inicio de sesión único](./media/sso-blade.png)
+   ![Panel Inicio de sesión único](./media/sso-blade.png)
 
-2. Use la siguiente tabla de resumen como ayuda para rellenar los campos de la página **Inicio de sesión único**. Para obtener detalles, vea las secciones a continuación de la tabla.
-   
+8. Use la siguiente tabla de resumen como ayuda para rellenar los campos del panel **Inicio de sesión único**. Para obtener detalles, vea las secciones a continuación de la tabla.
+
    |Campo  |Notas|
    |---------|---------|
    |**Atributo de nombre de usuario de AAD**|Atributo en el que Intune busca cada usuario en AAD y rellena el campo correspondiente (como UPN) antes de generar la carga XML que se instala en el dispositivo.|

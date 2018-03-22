@@ -1,25 +1,25 @@
 ---
-title: "Administración de aplicaciones iOS compradas por volumen | Microsoft Docs"
+title: Administración de aplicaciones iOS compradas por volumen | Microsoft Docs
 titlesuffix: Azure portal
-description: "Obtenga información sobre cómo puede sincronizar aplicaciones compradas por volumen en la tienda de iOS en Intune y luego administrar y realizar el seguimiento de su uso\"."
-keywords: 
+description: Obtenga información sobre cómo puede sincronizar aplicaciones compradas por volumen en la tienda de iOS en Intune y luego administrar y realizar el seguimiento de su uso".
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/30/2018
+ms.date: 03/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3694cbde1aeba8b185c67e65269b7afbd530b048
-ms.sourcegitcommit: 3cc3a6554691c6edeff985e7d8fa402e7e49e8d3
+ms.openlocfilehash: 04a94e4baee23ac9a4a742a2ff11591087381fde
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/28/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Administrar aplicaciones de iOS compradas a través de un programa de compras por volumen con Microsoft Intune
 
@@ -80,11 +80,11 @@ Asegúrese de que cuando configure un dispositivo para un nuevo usuario de Intun
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Para obtener y cargar un token de PCV de Apple
 
-1. Inicie sesión en el portal de Azure.
-2. Elija **More Services** >  (Más servicios) **Supervisión y administración** > **Intune**.
-1.  En la hoja **Intune**, elija **Aplicaciones móviles** > **Tokens de VPP de iOS** en **Configuración**.
-2.  En la lista de la hoja de tokens del VPP, seleccione **Crear**.
-4. En la hoja **Crear token de VPP**, especifique la información siguiente:
+1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+1.  En el panel **Intune**, elija **Aplicaciones móviles** > **Tokens de VPP de iOS** en **Configuración**.
+2.  En la lista del panel de tokens del VPP, seleccione **Crear**.
+4. En el panel **Crear token de VPP**, especifique la información siguiente:
     - **Archivo de token de VPP**: si aún no lo ha hecho, regístrese en el Programa de compras por volumen para empresas o el Programa para educación. Después de registrarse, descargue el token de VPP de Apple para la cuenta y selecciónelo aquí.
     - **Id. de Apple**: escriba el identificador de Apple de la cuenta asociada con el programa de compras por volumen.
     - **País o región**: seleccione el país de la tienda del VPP.  Intune sincroniza las aplicaciones de VPP para todas las configuraciones regionales desde la instancia de App Store del país de VPP especificada.
@@ -92,19 +92,19 @@ Asegúrese de que cuando configure un dispositivo para un nuevo usuario de Intun
         > Al cambiar el país, los metadatos de las aplicaciones se actualizarán y almacenarán la dirección URL en la siguiente sincronización con el servicio de Apple para las aplicaciones creadas con ese token. La aplicación no se actualizará si no existe en la tienda del nuevo país.
 
     - **Tipo de cuenta de VPP**: elija **Empresa** o **Educación**.
-    - **Actualizaciones automáticas de la aplicación**: Active la opción para habilitar las actualizaciones automáticas. Si está habilitada, Intune actualiza todas las aplicaciones compradas para el token especificado a través del servicio de Intune cuando se registra el dispositivo.
+    - **Actualizaciones automáticas de la aplicación**: Elija entre **Activar** o **Desactivar** para habilitar las actualizaciones automáticas. Si está habilitada, Intune actualiza todas las aplicaciones compradas para el token especificado a través del servicio de Intune cuando se registra el dispositivo.
 Se detectarán las actualizaciones de la aplicación de VPP dentro del App Store y se insertarán automáticamente en el dispositivo cuando este se registre.
-4. Cuando haya terminado, seleccione **Cargar**.
+4. Cuando haya terminado, seleccione **Crear**.
 
-El token se muestra en la hoja de la lista de tokens.
+El token se muestra en el panel de la lista de tokens.
 
 Puede sincronizar los datos que tiene Apple con Intune en cualquier momento al elegir **Sincronizar ahora**.
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Para asignar una aplicación comprada por volumen
 
-1.  En la hoja **Intune**, elija **Aplicaciones móviles** > **Aplicaciones** en **Administrar**.
-2.  En la hoja de la lista de aplicaciones, elija la aplicación que quiera asignar y seleccione **Asignaciones**.
-3.  En la hoja ***Nombre de la aplicación*** - **Asignaciones**, elija **Seleccionar grupos** y, en la hoja **Seleccionar grupos**, elija los grupos de dispositivos o de usuarios de Azure AD a los que quiere asignar la aplicación.
+1.  En el panel **Intune**, elija **Aplicaciones móviles** > **Aplicaciones** en **Administrar**.
+2.  En el panel de la lista de aplicaciones, elija la aplicación que quiera asignar y elija **Asignaciones**.
+3.  En el panel ***Nombre de la aplicación*** - **Asignaciones**, elija **Agregar grupo** y, en el panel **Agregar grupo**, elija un **Tipo de asignación** y los grupos de dispositivos o de usuarios de Azure AD a los que quiera asignar la aplicación.
 5.  Para cada grupo que ha seleccionado, pulse las opciones siguientes:
     - **Tipo**: elija si la aplicación estará **disponible** (los usuarios finales pueden instalar la aplicación desde el Portal de empresa) o será **necesaria** (la aplicación se instalará automáticamente para los usuarios finales).
     - **Tipo de licencia**: elija **Licencias de usuario** o **Licencias de dispositivo**.

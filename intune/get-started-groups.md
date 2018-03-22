@@ -1,25 +1,25 @@
 ---
 title: Crear un grupo en Microsoft Intune
-titleSuffix: 
-description: "Organice a los usuarios en grupos para administrar las directivas y las aplicaciones a las que pueden acceder con más facilidad."
-keywords: 
+titleSuffix: ''
+description: Organice a los usuarios en grupos para administrar las directivas y las aplicaciones a las que pueden acceder con más facilidad.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 02/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 39a93fb5-d318-4997-a409-b64549a00e7a
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e052f7c8d5742859d009816473fe97a98c499b17
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 4fc4ee80b1cf5a8422d135d13a9fb498980500b5
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-a-group-to-manage-your-users-and-data-access"></a>Crear un grupo para administrar los usuarios y el acceso a datos
 
@@ -30,11 +30,13 @@ Microsoft Intune usa Azure Active Directory (Azure AD) para administrar el acces
 ## <a name="how-do-i-create-a-group"></a>¿Cómo se crea un grupo?
 
 1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
-2. Con **Buscar recursos**, busque **Intune**.
-3. Después de abrir la hoja **Microsoft Intune**, seleccione **Grupos**.
-4. En la hoja **Usuarios y grupos: todos los grupos**, seleccione el comando **Nuevo grupo**.
-5. En la hoja **Grupo**, agregue un **nombre** y una **descripción** para el grupo.
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+3. Después de abrir el panel **Microsoft Intune**, seleccione **Grupos**.
+4. En el panel **Usuarios y grupos: todos los grupos**, seleccione el comando **Nuevo grupo**.
+5. En el panel **Grupo**, elija un **Tipo de grupo**.
+5. Agregue un **Nombre** y una **Descripción** para el grupo.
 6. Establezca el **Tipo de pertenencia** como **Asignado**. No **habilite las características de Office** para el grupo de prueba.
+7. Seleccione **Miembros** para el grupo.
 7. Haga clic en **Crear**.
 
 Si ha creado correctamente un grupo, debe aparecer en la lista de **Todos los grupos**. Si no aparece ahí, pruebe a crear otro grupo.

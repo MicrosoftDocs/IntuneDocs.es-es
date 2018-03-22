@@ -1,35 +1,35 @@
 ---
-title: "Creación e implementación de una directiva de protección de aplicaciones de Windows Information Protection (WIP) con Intune"
-titlesuffix: Azure portal
-description: "Creación e implementación de una directiva de protección de aplicaciones de WIP con Intune"
-keywords: 
+title: Creación e implementación de una directiva de protección de aplicaciones de Windows Information Protection (WIP)
+titlesuffix: Microsoft Intune
+description: Creación e implementación de una directiva de protección de aplicaciones de Windows Information Protection (WIP) con Microsoft Intune
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: doubeby
-ms.date: 02/16/2018
+ms.date: 03/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 647e6fd129593156f2ba24299a19e96686206165
-ms.sourcegitcommit: 1978a30ab1af0f43aa5f447690d0bbcdcb9b563b
+ms.openlocfilehash: 4325d77982bcca748a38696fbbbb413a1c304ffb
+ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 03/08/2018
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Creación e implementación de una directiva de protección de aplicaciones de Windows Information Protection (WIP) con Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-A partir de la versión de Intune 1704, puede usar las directivas de protección de aplicaciones con Windows 10 para proteger aplicaciones sin la inscripción de dispositivos.
+Puede usar directivas de protección de aplicaciones con aplicaciones de Windows 10 para proteger las aplicaciones sin inscripción en dispositivos.
 
 ## <a name="before-you-begin"></a>Antes de comenzar
 
-Hablemos sobre algunos conceptos que aparecen al agregar una directiva de WIP.
+Antes de agregar una directiva de trabajo en curso, debe tener claros algunos conceptos:
 
 ### <a name="list-of-allowed-and-exempt-apps"></a>Lista de aplicaciones permitidas y exentas
 
@@ -39,95 +39,84 @@ Hablemos sobre algunos conceptos que aparecen al agregar una directiva de WIP.
 
 ### <a name="types-of-apps"></a>Tipos de aplicaciones
 
--   **Aplicaciones recomendadas**: lista rellenada previamente de aplicaciones (en su mayoría de Microsoft Office) que permite una importación sencilla en la directiva. <!---I really don't know what you mean by "easily import into policy"--->
-
+-   **Aplicaciones recomendadas**: lista rellenada previamente de aplicaciones (en su mayoría de Microsoft Office) que permite una importación sencilla en la directiva.
 -   **Aplicaciones de la Tienda**: puede agregar cualquier aplicación de la Tienda Windows a la directiva.
-
 -   **Aplicaciones de escritorio de Windows**: puede agregar cualquier aplicación de escritorio tradicional de Windows a la directiva (por ejemplo, .exe, .dll, etc.).
 
-## <a name="pre-requisites"></a>Requisitos previos
+## <a name="prerequisites"></a>Requisitos previos
 
 Debe configurar el proveedor de MAM para poder crear una directiva de protección de la aplicación de WIP. Obtenga más información sobre [cómo configurar el proveedor de MAM con Intune](app-protection-policies-configure-windows-10.md).
 
 Además, necesita la siguiente licencia y actualización:
 
--   Una licencia de [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium).
+-   Licencia de [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)
 -   [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
 
 > [!IMPORTANT]
 > WIP no admite varias identidades, solo puede existir una identidad administrada al mismo tiempo.
-<!---Should you be linking to a topic that explains what multi-identity is?--->
 
-## <a name="to-add-a-wip-policy"></a>Para agregar una directiva de WIP
+## <a name="to-add-a-wip-app-protection-policy"></a>Para agregar una directiva de protección de aplicaciones de WIP
 
-Una vez configurado Intune en su organización, puede crear una directiva específica de WIP a través de [Azure Portal](https://docs.microsoft.com/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies). <!---Is there an azure topic you can use instead of a classic? if not, should this topic be moved into the azure doc set?--->
+Una vez configurado Intune en su organización, puede crear una directiva específica de WIP.
 
-1.  Vaya al **panel de administración de aplicaciones móviles de Intune**, elija **Toda la configuración** > **Directiva de aplicaciones**.
-
-2.  En la hoja **Directiva de aplicaciones**, elija **Agregar una directiva** y, a continuación, escriba los siguientes valores:
-
-    a.  **Nombre:** escriba un nombre (necesario) para la nueva directiva.
-
-    b.  **Descripción**: escriba una descripción opcional.
-
-    c.  **Plataforma:** elija **Windows 10** como plataforma admitida para la directiva de protección de aplicaciones.
-
-    d.  **Estado de inscripción:** elija **Sin inscripción** como estado de inscripción para la directiva.
-
-3.  Elija **Crear**. La directiva se crea y aparece en la tabla de la hoja **Directiva de aplicaciones**.
+1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
+2. Elija **Todos los servicios** > **Intune**.
+3. Seleccione **Aplicaciones móviles** en la hoja **Microsoft Intune**.
+4. Seleccione las **Directivas de protección de aplicaciones** en la hoja **Aplicaciones móviles**.
+5. Haga clic en **Agregar directiva** para que se muestre la hoja **Agregar una directiva**.
+6. Agregue los siguientes valores:
+    - **Nombre:** escriba un nombre (necesario) para la nueva directiva.
+    - **Descripción** (opcional): escriba una descripción.
+    - **Plataforma:** elija **Windows 10** como plataforma admitida para la directiva de protección de aplicaciones.
+    - **Estado de inscripción:** elija **Sin inscripción** como estado de inscripción para la directiva.
+7.  Elija **Crear**. La directiva se crea y aparece en la tabla de la hoja **Directivas de protección de aplicaciones**.
 
 ## <a name="to-add-recommended-apps-to-your-allowed-apps-list"></a>Para agregar aplicaciones recomendadas a la lista de aplicaciones permitidas
 
-1.  En la hoja **Directiva de aplicaciones**, elija el nombre de la directiva y luego elija **Aplicaciones permitidas** desde la hoja **Agregar una directiva**. Se abre la hoja de **Aplicaciones permitidas**, que muestra todas las aplicaciones que ya están incluidas en la lista para esta directiva de protección de aplicaciones.
-
-2.  En la hoja **Aplicaciones permitidas**, elija **Agregar aplicaciones**. En la información **Agregar aplicaciones**, se muestran todas las aplicaciones que forman parte de esta lista.
-
-3.  Seleccione cada aplicación a la que desea conceder acceso a los datos corporativos y, a continuación, seleccione **Aceptar**. La hoja **Aplicaciones permitidas** se actualiza y muestra todas las aplicaciones seleccionadas.
+1. Seleccione **Aplicaciones móviles** en la hoja **Microsoft Intune**.
+2. Seleccione las **Directivas de protección de aplicaciones** en la hoja **Aplicaciones móviles**.
+3. En la hoja **Directivas de protección de aplicaciones**, seleccione la directiva que quiera modificar. Se muestra la hoja **Intune App Protection**.
+4. Elija **Aplicaciones protegidas** en la hoja **Intune App Protection**. Se abre la hoja **Aplicaciones protegidas**, que muestra todas las aplicaciones que ya están incluidas en la lista para esta directiva de protección de la aplicación.
+5. Seleccione **Agregar aplicaciones**. La información **Agregar aplicaciones** muestra una lista filtrada de aplicaciones. La lista de la parte superior de la hoja le permite cambiar el filtro de la lista.
+6. Seleccione cada una de las aplicaciones a las que quiera dar permiso para acceder a sus datos corporativos.
+7. Haga clic en **Aceptar**. La hoja **Aplicaciones protegidas** se actualiza y muestra todas las aplicaciones seleccionadas.
+8. Haga clic en **Guardar**.
 
 ## <a name="add-a-store-app-to-your-allowed-apps-list"></a>Agregar una aplicación de la Tienda a la lista de aplicaciones permitidas
 
 **Para agregar una aplicación de la Tienda**
-
-1.  En la hoja **Directiva de aplicaciones**, elija el nombre de la directiva y luego elija **Aplicaciones permitidas** en el menú que aparece con todas las aplicaciones que ya están incluidas en la lista para esta directiva de protección de aplicaciones.
-
-2.  En la hoja **Aplicaciones permitidas**, elija **Agregar aplicaciones**.
-
-3.  En la hoja **Agregar aplicaciones**, elija **Aplicaciones de la Tienda** en la lista desplegable. La información cambia para mostrar cuadros que le permiten agregar un **publicador** y el **nombre** de una aplicación.
-
-4.  Escriba el nombre de la aplicación y el nombre de su publicador y, a continuación, elija **Aceptar**.
-
-    > [!TIP]
-    > Este es un ejemplo de aplicación, donde el **Publicador** es *CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US* y el **nombre** del producto es *Microsoft.MicrosoftAppForWindows*.
-
-5.  Después de haber especificado la información en los campos, elija **Aceptar** para agregar la aplicación a la lista de **Aplicaciones permitidas**.
-
-> [!NOTE]
-> Para agregar varias aplicaciones de la Tienda a la vez, puede hacer clic en el menú **(…)** al final de la fila de aplicaciones y luego seguir agregando más aplicaciones. Cuando haya terminado, elija **Aceptar**.
+1. Seleccione **Aplicaciones móviles** en la hoja **Microsoft Intune**.
+2. Seleccione las **Directivas de protección de aplicaciones** en la hoja **Aplicaciones móviles**.
+3. En la hoja **Directivas de protección de aplicaciones**, seleccione la directiva que quiera modificar. Se muestra la hoja **Intune App Protection**.
+4. Elija **Aplicaciones protegidas** en la hoja **Intune App Protection**. Se abre la hoja **Aplicaciones protegidas**, que muestra todas las aplicaciones que ya están incluidas en la lista para esta directiva de protección de la aplicación.
+5. Seleccione **Agregar aplicaciones**. La información **Agregar aplicaciones** muestra una lista filtrada de aplicaciones. La lista de la parte superior de la hoja le permite cambiar el filtro de la lista.
+6. En la lista, seleccione **Aplicaciones de la Tienda**.
+7. Especifique los valores de **Nombre**, **Editor**, **Nombre de producto** y **Acción**. Asegúrese de establecer el valor **Acción** en **Permitir** para que la aplicación tenga acceso a los datos corporativos.
+9. Haga clic en **Aceptar**. La hoja **Aplicaciones protegidas** se actualiza y muestra todas las aplicaciones seleccionadas.
+10. Haga clic en **Guardar**.
 
 ## <a name="add-a-desktop-app-to-your-allowed-apps-list"></a>Agregar una aplicación de escritorio a la lista de aplicaciones permitidas
 
 **Para agregar una aplicación de escritorio**
-
-1.  En la hoja **Directiva de aplicaciones**, elija el nombre de la directiva y luego elija **Aplicaciones permitidas**. Se abre la hoja de **Aplicaciones permitidas**, que muestra todas las aplicaciones que ya están incluidas en la lista para esta directiva de protección de la aplicación.
-
-2.  En la hoja **Aplicaciones permitidas**, elija **Agregar aplicaciones**.
-
-3.  En la hoja **Agregar aplicaciones**, elija **Aplicaciones de escritorio** en la lista desplegable.
-
-4.  Después de haber especificado la información en los campos, elija **Aceptar** para agregar la aplicación a la lista de **Aplicaciones permitidas**.
-
-> [!NOTE]
-> Para agregar varias **aplicaciones de escritorio** a la vez, puede hacer clic en el menú **(…)** al final de la fila de aplicaciones y luego seguir agregando más aplicaciones. Cuando haya terminado, elija **Aceptar**.
+1. Seleccione **Aplicaciones móviles** en la hoja **Microsoft Intune**.
+2. Seleccione las **Directivas de protección de aplicaciones** en la hoja **Aplicaciones móviles**.
+3. En la hoja **Directivas de protección de aplicaciones**, seleccione la directiva que quiera modificar. Se muestra la hoja **Intune App Protection**.
+4. Elija **Aplicaciones protegidas** en la hoja **Intune App Protection**. Se abre la hoja **Aplicaciones protegidas**, que muestra todas las aplicaciones que ya están incluidas en la lista para esta directiva de protección de la aplicación.
+5. Seleccione **Agregar aplicaciones**. La información **Agregar aplicaciones** muestra una lista filtrada de aplicaciones. La lista de la parte superior de la hoja le permite cambiar el filtro de la lista.
+6. En la lista, seleccione **Aplicaciones de escritorio**.
+7. Introduzca los valores de **Nombre**, **Editor**, **Nombre de producto**, **Archivo**, **Versión mínima**, **Versión máxima** y **Acción**. Asegúrese de establecer el valor **Acción** en **Permitir** para que la aplicación tenga acceso a los datos corporativos.
+9. Haga clic en **Aceptar**. La hoja **Aplicaciones protegidas** se actualiza y muestra todas las aplicaciones seleccionadas.
+10. Haga clic en **Guardar**.
 
 ## <a name="wip-learning"></a>Aprendizaje de WIP
-<!---You've already defined WIP earlier in the topic. You don't need to keep doing so. --->
 Después de agregar las aplicaciones que desea proteger con WIP, debe aplicar un modo de protección mediante **Aprendizaje de WIP**.
 
 ### <a name="before-you-begin"></a>Antes de comenzar
 
 Aprendizaje de WIP es un informe que permite supervisar las aplicaciones que tengan WIP habilitado y las que sean desconocidas para WIP. Las aplicaciones desconocidas son las que no ha implementado el departamento de TI de su organización. Puede exportar estas aplicaciones desde el informe y agregarlas a sus directivas de WIP para evitar la interrupción de productividad antes de exigir WIP en modo "Bloquear".
 
-<!-- 1631908 --> In addition to viewing information about WIP-enabled apps, you can view a summary of the devices that have shared work data with websites. With this information, you can determine which websites should be added to group and user WIP policies. The summary shows which website URLs are accessed by WIP-enabled apps.
+<!-- 1631908 -->
+Además de ver información sobre las aplicaciones habilitadas para WIP, puede ver un resumen de los dispositivos que han compartido datos de trabajo con sitios web. Con esta información, puede determinar qué sitios web se deben agregar a las directivas WIP de grupo y de usuario. En el resumen se muestra que las aplicaciones habilitadas para WIP han accedido a las direcciones URL del sitio web.
 
 Al trabajar con aplicaciones que tengan WIP habilitado o que sean desconocidas para WIP, se recomienda que empiece con **Silencioso** o **Permitir invalidaciones** al realizar comprobaciones con un pequeño grupo que tenga las aplicaciones adecuadas en la lista de aplicaciones permitidas. Cuando haya terminado, puede cambiar a la directiva de aplicación final, **Bloquear**.
 
@@ -153,22 +142,22 @@ Una vez desactivado WIP, se realiza un intento de descifrar los archivos etiquet
 
     ![Captura de pantalla del modo de aprendizaje](./media/learning-mode-sc1.png)
 
-2.  Elija **Guardar**.
+1.  Seleccione un valor y elija **Guardar**.
 
 ### <a name="use-wip-learning"></a>Uso del aprendizaje de WIP
 
-1. Abra Azure Portal. Elija **Más servicios**. Escriba **Intune** en el filtro del cuadro de texto.
+1. Abra [Azure Portal](https://portal.azure.com). Elija **Todos los servicios**. Escriba **Intune** en el filtro del cuadro de texto.
 
 3. Elija **Intune** > **Aplicaciones móviles**.
 
 4. Elija **Estado de protección de la aplicación** > **Informes** > **Aprendizaje de Windows Information Protection**.  
- 
+
     Una vez que tenga las aplicaciones que se muestran en el informe de registro del aprendizaje de WIP, puede agregarlas a las directivas de protección de aplicaciones.
 
 ## <a name="allow-windows-search-indexer-to-search-encrypted-items"></a>Permitir que el indizador de Windows Search busque elementos cifrados
 Permite o deniega la indexación de elementos. Este modificador es para el indizador de Windows Search, que controla si indexa los elementos que están cifrados, como los archivos protegidos de Windows Information Protection (WIP).
 
-Esta opción de directiva de protección de aplicaciones está en la **Configuración avanzada** de la directiva de Windows Information Protection. La directiva de protección de aplicaciones debe establecerse en la plataforma *Windows 10* y la directiva de aplicación **Estado de inscripción** debe establecerse en **Con inscripción**. 
+Esta opción de directiva de protección de aplicaciones está en la **Configuración avanzada** de la directiva de Windows Information Protection. La directiva de protección de aplicaciones debe establecerse en la plataforma *Windows 10* y la directiva de aplicación **Estado de inscripción** debe establecerse en **Con inscripción**.
 
 Cuando la directiva está habilitada, los elementos protegidos por WIP se indexan y los metadatos sobre ellos se almacenan en una ubicación sin cifrar. Los metadatos incluyen elementos tales como la ruta de acceso de archivo y la fecha de modificación.
 
@@ -195,4 +184,4 @@ Después de crear la directiva de protección de aplicaciones de WIP, debe imple
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-- Para obtener más información sobre Windows Information Protection, consulte [Protect your enterprise data using Windows Information Protection (WIP)](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) [Protección de los datos de su empresa mediante Windows Information Protection (WIP)]. 
+Para obtener más información sobre Windows Information Protection, consulte [Protect your enterprise data using Windows Information Protection (WIP)](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip) [Protección de los datos de su empresa mediante Windows Information Protection (WIP)].
