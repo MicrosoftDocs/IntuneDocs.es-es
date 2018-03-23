@@ -1,7 +1,8 @@
 ---
-title: Registros de auditoría para actividades de Intune
-description: Obtenga información acerca de cómo revisar los registros de auditoría que registran las actividades de Intune.
+title: Registros de auditoría para actividades de Microsoft Intune
+description: Obtenga información acerca de cómo revisar los registros de auditoría que registran las actividades de Microsoft Intune.
 keywords: ''
+ms.author: dougeby
 author: dougeby
 manager: dougeby
 ms.date: 02/27/2018
@@ -10,11 +11,11 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
-ms.openlocfilehash: 55499bc8126958918ac2494fc86059eb3d331c69
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c7c8b860be9722138f8bd804a66131328b592022
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="audit-logs-for-intune-activities"></a>Registros de auditoría para actividades de Intune
 Los registros de auditoría proporcionan un registro de las actividades que generan un cambio en Microsoft Intune. Las acciones relacionadas con crear, actualizar (editar), eliminar y asignar, o las tareas remotas, generan eventos de auditoría que puede revisar. Puede revisar registros de auditoría para la mayoría de las cargas de trabajo de Intune. La auditoría está habilitada de forma predeterminada para todos los clientes y no se puede deshabilitar. Los eventos de auditoría empiezan a registrarse en la fecha de lanzamiento de la característica de diciembre de 2017; los eventos anteriores no están disponibles.
@@ -28,7 +29,7 @@ Los usuarios con los siguientes permisos pueden revisar los registros de auditor
 ## <a name="audit-logs-for-intune-workloads"></a>Registros de auditoría para cargas de trabajo de Intune
 Puede revisar los registros de auditoría en el grupo de supervisión para cada carga de trabajo de Intune.  
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En el panel **Intune**, elija la carga de trabajo para la que desea revisar los registros de auditoría, por ejemplo, **Dispositivos**.
 4. En el grupo **Supervisión** de la carga de trabajo, elija **Registros de auditoría**.
 
@@ -42,7 +43,7 @@ Un registro de auditoría tiene una vista de lista predeterminada que muestra lo
 - Nombre de aplicación
 - Actividad
 - Destinos
-- Categoría
+- Category
 - Estado
 
 Al hacer clic en un elemento en la vista de lista, obtendrá todos los detalles disponibles sobre él.
@@ -50,7 +51,7 @@ Al hacer clic en un elemento en la vista de lista, obtendrá todos los detalles 
 ![Registros de auditoría](./media/monitor-audit-log-detail.png "Registros de auditoría")
 
 > [!Note]    
-> La sección **Iniciado por (actor)** de los detalles de registro de auditoría proporciona información sobre quién llevó a cabo la actividad y desde donde se ha ejecutado. Por ejemplo, si lleva a cabo la actividad en Intune en Azure Portal, como **Aplicación** siempre figura **Extensión del portal de Microsoft Intune** y como **Id. de aplicación** siempre se usa el mismo GUID. 
+> La sección **Iniciado por (actor)** de los detalles de registro de auditoría proporciona información sobre quién llevó a cabo la actividad y desde donde se ha ejecutado. Por ejemplo, si lleva a cabo la actividad en Intune en Azure Portal,como **Aplicación** siempre figura **Extensión del portal de Microsoft Intune** y como **Id. de aplicación** siempre se usa el mismo GUID. 
 >    
 > La sección **Destinos** puede mostrar varios destinos y las propiedades que cambiaron.  
 
