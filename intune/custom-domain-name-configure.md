@@ -1,30 +1,31 @@
 ---
-title: "Configuración de un nombre de dominio personalizado"
-description: "Agregue un nombre de dominio personalizado para su suscripción de Intune."
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Configuración de un nombre de dominio personalizado
+titlesuffix: Microsoft Intune
+description: Adición de un nombre de dominio personalizado de su suscripción de Microsoft Intune
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2382f36f-13d8-4a32-81ad-6cfa604889c3
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6046b574c495035977dcd635786409e52be85bb8
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 913334a9fee8ab584cb11f8124ef2a491e01661f
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="configure-a-custom-domain-name"></a>Configuración de un nombre de dominio personalizado
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
-En este tema se explica a los administradores cómo pueden crear un CNAME de DNS para simplificar y personalizar su experiencia de inicio de sesión.
+En este tema se indica a los administradores cómo se puede crear un CNAME de DNS para simplificar y personalizar la experiencia de inicio de sesión con Microsoft Intune.
 
 Cuando su organización se registra en un servicio en la nube de Microsoft como es Intune, se le asigna un nombre de dominio inicial hospedado en Azure Active Directory (AD) similar a **su-dominio.onmicrosoft.com**. En este ejemplo, **su-dominio** es el nombre del dominio que eligió al suscribirse. **onmicrosoft.com** es el sufijo asignado a las cuentas que agregue a su suscripción. Puede configurar el dominio personalizado de su organización para obtener acceso a Intune en lugar del nombre de dominio proporcionado con la suscripción.
 

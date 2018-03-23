@@ -1,24 +1,24 @@
 ---
-title: "Guía para desarrolladores de Android acerca del SDK para aplicaciones de Microsoft Intune"
-description: "El SDK de la aplicación Microsoft Intune para Android le permite incorporar la administración de aplicaciones móviles (MAM) de Intune en su aplicación Android."
+title: Guía para desarrolladores de Android acerca del SDK para aplicaciones de Microsoft Intune
+description: El SDK de la aplicación Microsoft Intune para Android le permite incorporar la administración de aplicaciones móviles (MAM) de Intune en su aplicación Android.
 keywords: SDK
 author: Erikre
 manager: dougeby
 ms.author: erikre
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 7089ccbcd895cb1462b098354db237f5d041aa01
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 0eafbe9c57051b62f6ed53a3930705eabf5aebd0
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guía para desarrolladores de Android acerca del SDK para aplicaciones de Microsoft Intune
 
@@ -1311,7 +1311,7 @@ public interface MAMAppConfig {
 La configuración de aplicación agrega un nuevo tipo de notificación:
 * **REFRESH_APP_CONFIG**: esta notificación se envía en `MAMUserNotification` e informa a la aplicación que los datos de configuración de aplicación nuevos están disponibles.
 
-Para obtener más información sobre las funciones de Graph API en relación con los valores de configuración de destino de MAM, vea la [referencia sobre Graph API para la configuración de destino de MAM](https://developer.microsoft.com/graph/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create). <br>
+Para más información sobre las capacidades de Graph API, vea la [referencia de Graph API](https://developer.microsoft.com/graph/docs/concepts/overview). <br>
 
 Para más información sobre cómo crear una directiva de configuración de aplicaciones de destino de MAM en Android, vea la sección de la configuración de aplicaciones de destino de MAM en [How to use Microsoft Intune app configuration policies for Android](https://docs.microsoft.com/intune/app-configuration-policies-use-android) (Uso de las directivas de configuración de aplicaciones de Microsoft Intune para Android).
 

@@ -1,26 +1,25 @@
 ---
-title: "Configuración y administración de certificados SCEP con Intune"
-titlesuffix: Azure portal
-description: Aprenda a configurar la infraestructura y, luego, crear y asignar perfiles de certificado SCEP de Intune.
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Configuración y administración de certificados SCEP con Microsoft Intune
+description: Sepa cómo configurar la estructura y, luego, crear y asignar perfiles de certificados de Protocolo de inscripción de certificados simple (SCEP) de Intune en Microsoft Intune.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d723bc4d5032a7a5c330367fe83eabd4763917a2
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 88109f1dc4543a5c71f36378fddb110c03afa08f
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="configure-and-manage-scep-certificates-with-intune"></a>Configuración y administración de certificados SCEP con Intune
+# <a name="configure-and-manage-scep-certificates-with-microsoft-intune"></a>Configuración y administración de certificados SCEP con Microsoft Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
 En este tema se muestra cómo configurar la estructura y, luego, crear y asignar perfiles de certificados de Protocolo de inscripción de certificados simple (SCEP) con Intune.
@@ -305,7 +304,7 @@ En esta tarea tendrá que:
 ![ConnectorDownload](./media/certificates-download-connector.png)   
  
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En el panel **Intune**, seleccione **Configuración del dispositivo**.
 4. En el panel **Configuración del dispositivo**, seleccione **Entidad de certificación**.
 5. Haga clic en **Agregar** y seleccione **Descargue el archivo del conector**. Guarde la descarga en una ubicación a la que pueda acceder desde el servidor donde vaya a realizar la instalación. 

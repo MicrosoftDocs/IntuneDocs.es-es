@@ -1,27 +1,30 @@
 ---
-title: "Configuración de directivas MAM de iOS"
-description: "En este tema se describe la configuración de directiva de administración de aplicaciones móviles para dispositivos iOS."
-keywords: 
+title: Configuración de directivas MAM de iOS
+description: En este tema se describe la configuración de directiva de administración de aplicaciones móviles para dispositivos iOS.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
 ms.date: 04/18/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 673ff872-943c-4076-931c-0be90363aea9
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae861de505964e830aadc1cd913561462762f282
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: c4a87223a25ba26492e8db1731594f844136e003
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/20/2018
 ---
 #  <a name="ios-mobile-app-protection-policy-settings"></a>Configuración de directivas de protección de aplicaciones móviles de iOS
+
+> [!IMPORTANT]
+> El contenido de esta página está desfasado en gran medida, ya que las directivas de Intune App Protection han migrado por completo a Azure Portal. Obtenga más información sobre las [directivas de Intune App Protection para iOS en Azure Portal](https://docs.microsoft.com/intune/app-protection-policy-settings-ios).
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -31,7 +34,7 @@ Existen dos categorías de configuración de directiva: configuración de acceso
 
 ##  <a name="data-relocation-settings"></a>Configuración de reubicación de datos
 
-| Configuración | Cómo se usa | Valor predeterminado |
+| Setting | Cómo se usa | Valor predeterminado |
 |------|------|------|
 | **Impedir copias de seguridad de iTunes e iCloud** | Pulse **Sí** para evitar que esta aplicación realice una copia de seguridad de los datos profesionales o educativos en iTunes e iCloud. Pulse **No** para permitir que esta aplicación realice una copia de seguridad de los datos profesionales o educativos en iTunes e iCloud.| Sí |
 | **Permitir que la aplicación transfiera datos a otras aplicaciones** | Especifique qué aplicaciones pueden recibir datos de esta aplicación: <ul><li> **Aplicaciones administradas por directivas**: permite las transferencias solo para otras aplicaciones administradas por directivas.</li> <li>**Todas las aplicaciones**: permite la transferencia a cualquier aplicación. </li> <li>**Ninguna**: no permite la transferencia de datos a ninguna aplicación, incluidas otras aplicaciones administradas por directivas.</li></ul> Además, si establece esta opción en **Aplicaciones administradas por directivas** o **Ninguno**, la característica de iOS 9 que permite que la búsqueda de Spotlight busque datos dentro de las aplicaciones se bloqueará. <br><br> Hay aplicaciones y servicios exentos a los que Intune puede permitir la transferencia de datos. Consulte [Exenciones de transferencia de datos](#Data-transfer-exemptions) para ver una lista completa de aplicaciones y servicios. | Todas las aplicaciones |
@@ -64,7 +67,7 @@ La directiva de protección de aplicaciones de Intune puede permitir la transfer
 
 ## <a name="access-settings"></a>Configuración de acceso
 
-| Configuración | Cómo se usa | Valor predeterminado |
+| Setting | Cómo se usa | Valor predeterminado |
 |------|------|------|
 | **Requerir PIN para acceder** | Pulse **Sí** para requerir un PIN para usar esta aplicación. Se pedirá al usuario que configure este PIN la primera vez que ejecute la aplicación en un contexto profesional o educativo. Valor predeterminado = **Sí**.<br><br> Configure las siguientes opciones para la intensidad del PIN: <ul><li>**Número de intentos antes del restablecimiento del PIN**: especifique el número de veces que el usuario tiene que escribir correctamente el PIN antes de que deba restablecerlo. Valor predeterminado = **5**.</li><li> **Permitir el PIN simple**: pulse **Sí** para permitir que los usuarios usen secuencias de PIN simples como 1234 o 1111. Pulse **No** para impedir que usen secuencias simples. Valor predeterminado = **Sí**. </li><li> **Longitud del PIN**: especifique el número mínimo de dígitos en una secuencia de PIN. Valor predeterminado = **4**. </li><li> **Permitir desbloqueo mediante huellas digitales en lugar de mediante PIN (iOS 8.0+)**: pulse **Sí** para permitir que el usuario use [Touch ID](https://support.apple.com/HT201371) en lugar de un PIN para el acceso a la aplicación. Valor predeterminado = **Sí**.</li></ul> En dispositivos iOS, puede permitir que el usuario demuestre su identidad con [Touch ID](https://support.apple.com/HT201371) en lugar de con un PIN. Cuando el usuario intenta usar esta aplicación con su cuenta profesional o educativa, se le solicita que indique su identidad mediante huella digital en lugar de escribir un PIN. Cuando esta opción está habilitada, la imagen de vista previa de las últimas aplicaciones estará borrosa mientras use una cuenta profesional o educativa. </li></ul>| Requerir PIN: Sí <br><br> Intentos de restablecimiento del PIN: 5 <br><br> Permitir PIN simple: Sí <br><br> Longitud del PIN: 4 <br><br> Permitir huella digital: Sí |
 | **Requerir credenciales corporativas en acceso** | Pulse **Sí** para requerir que el usuario inicie sesión con su cuenta profesional o educativa en lugar de escribir un PIN para el acceso a la aplicación. Si se establece en **Sí**, se reemplazarán los requisitos de introducción de un PIN o un Touch ID.  | No |

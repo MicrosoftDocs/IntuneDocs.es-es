@@ -1,27 +1,26 @@
 ---
-title: RBAC con Intune
-titleSuffix: Azure portal
-description: "Versión preliminar de Intune Azure: aprenda cómo RBAC le permite controlar quién puede realizar acciones y efectuar cambios."
-keywords: 
-author: arob98
-ms.author: angrobe
+title: RBAC con Microsoft Intune
+description: Sepa cómo el control de acceso basado en roles (RBAC) le permite controlar quién puede realizar acciones y efectuar cambios en Microsoft Intune.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c19a3b8a6df82780d54f277d5477b947f050b1cc
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: edf17d98bb733f7567a615eec856fb7122ba251b
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="role-based-administration-control-rbac-with-intune"></a>Control de administración basada en roles (RBAC) con Intune
+# <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Control de administración basada en roles (RBAC) con Microsoft Intune
 
 RBAC ayuda a controlar quién puede realizar diversas tareas de Intune dentro de su organización y a quién se aplican dichas tareas. Puede usar los roles integrados que abarcan algunos escenarios de Intune comunes, o crear los suyos propios. Un rol se define mediante:
 
@@ -77,7 +76,7 @@ Los siguientes roles están integrados en Intune y puede asignarlos a grupos sin
 ### <a name="to-assign-a-built-in-role"></a>Para asignar un rol integrado
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En el panel **Intune**, elija **Roles de Intune** y, luego, seleccione **Todos los roles**.
 1. En el panel **Roles de Intune: todos los roles**, elija el rol integrado que quiera asignar.
 

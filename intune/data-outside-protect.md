@@ -1,25 +1,27 @@
 ---
 title: Evitar el acceso no autorizado a los datos de la empresa
-description: Evite el acceso no autorizado a los datos de su empresa cuando se comparten fuera de la red de la empresa.
-keywords: "Office 365, O365, datos de Azure Information Protection, protección fuera de la red de la empresa, datos"
-author: arob98
+titlesuffix: Microsoft Intune
+description: Evite el acceso no autorizado a los datos de su empresa cuando se comparten fuera de la red de la empresa usando Microsoft Intune.
+keywords: Office 365, O365, datos de Azure Information Protection, protección fuera de la red de la empresa, datos
+ms.author: dougeby
+author: dougeby
 manager: dougeby
-ms.date: 09/22/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6a88573a-aa60-455c-858c-74562798246b
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e3a52b2be557139cb2d31dd4919d239daeb81853
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 25f0572d65e6d651c636c8b1961903f7c2c78906
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="prevent-unauthorized-access-to-company-data"></a>Evitar el acceso no autorizado a los datos de la empresa 
+# <a name="prevent-unauthorized-access-to-company-data-using-microsoft-intune"></a>Evitar el acceso no autorizado a los datos de la empresa con Microsoft Intune
 
 Puede clasificar, etiquetar y proteger los documentos y mensajes de correo electrónico de Office 365 para que solo los usuarios autorizados tengan acceso a los datos. La configuración se administra automáticamente una vez que los administradores de TI o los usuarios hayan establecido las reglas y condiciones. El equipo de TI también puede proporcionar la configuración recomendada que deben seguir los usuarios. Los administradores y los usuarios también pueden revocar el acceso a los datos ya compartidos con otras personas sin la ayuda de otra autoridad. El resultado de este trabajo consiste en controlar quién abre o actualiza los datos protegidos, incluso cuando estos abandonan la red de la compañía. 
 
@@ -44,5 +46,5 @@ Puede compartir los detalles de [cómo y cuándo proteger documentos y mensajes 
 
 Como parte de los pasos siguientes, puede obtener más información sobre otras maneras de aumentar la protección de los datos de su empresa, como, por ejemplo: 
 
-* Aprenda a usar [Azure Information Protection en dispositivos iOS y Android](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq.
+* Obtenga información sobre cómo usar [Azure Information Protection en dispositivos iOS y Android] (https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq).
 * Para los equipos Mac y Windows Phone, obtenga información sobre la [aplicación Microsoft Rights Management sharing](https://technet.microsoft.com/dn451248).

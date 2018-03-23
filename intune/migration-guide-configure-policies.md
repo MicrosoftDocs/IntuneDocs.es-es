@@ -1,25 +1,26 @@
 ---
-title: "Configuración de directivas de administración de aplicaciones y cumplimiento de dispositivos durante una migración a Intune"
-description: "En este artículo se proporcionan los pasos necesarios para configurar directivas de aplicaciones y cumplimiento de dispositivos durante una migración de Intune."
-keywords: 
-author: andredm7
-ms.author: andredm
+title: Configuración de directivas de administración de aplicaciones y cumplimiento de dispositivos durante una migración a Intune
+titlesuffix: Microsoft Intune
+description: En este artículo se proporcionan los pasos necesarios para configurar directivas de aplicaciones y cumplimiento de dispositivos durante una migración de Microsoft Intune.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 07/11/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0062d08e-e5b3-4f73-8b64-5ad95adbe945
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: 96541c503a387e1a2ad3a4158f441266f1202be0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 13a9c0a036eb6ce6ea7e984419c9598194b35b68
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="configure-device-compliance-and-app-management-policies"></a>Configuración de directivas de administración de aplicaciones y cumplimiento de dispositivos
+# <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Configurar directivas administración de aplicaciones y cumplimiento de los dispositivos al migrar a Microsoft Intune
 
 El objetivo principal al migrar a Intune es que todos los dispositivos estén inscritos en Intune y cumplan con sus directivas. Las directivas de dispositivos no solo ayudan a administrar dispositivos de usuario único de propiedad corporativa, sino también dispositivos personales (BYOD) y compartidos, como pantallas completas, máquinas de punto de venta, tabletas compartidas entre varios alumnos en un aula o dispositivos sin usuario (solo iOS).
 

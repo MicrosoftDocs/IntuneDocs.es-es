@@ -1,24 +1,25 @@
 ---
-title: Administrar scripts de PowerShell en Intune para dispositivos Windows 10
-titlesuffix: Azure portal
-description: "Obtenga información sobre cómo cargar scripts de PowerShell en Intune para ejecutarse en dispositivos Windows 10."
-keywords: 
+title: Administrar scripts de PowerShell en Microsoft Intune para dispositivos Windows 10
+titlesuffix: ''
+description: Obtenga información sobre cómo cargar scripts de PowerShell en Microsoft Intune para ejecutarse en dispositivos Windows 10.
+keywords: ''
+ms.author: dougeby
 author: dougeby
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a52f2affa235a37b6d99a8452bc83a794cb04ce5
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c501292126200baa88e06e30b6226e5c5021b8ec
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Administrar scripts de PowerShell en Intune para dispositivos Windows 10
 La extensión de administración de Intune permite cargar los scripts de PowerShell en Intune para ejecutarse en dispositivos Windows 10. La extensión de administración complementa las capacidades de administración de dispositivos móviles (MDM) de Windows 10 y facilita la transición a una administración moderna.
@@ -37,7 +38,7 @@ La extensión de administración de Intune tiene los siguientes requisitos previ
 
 ## <a name="create-a-powershell-script-policy"></a>Crear una directiva de un script de PowerShell 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En el panel **Intune**, elija **Configuración del dispositivo**.
 4. En el panel **Configuración del dispositivo**, elija **Administrar** > **Scripts de PowerShell**.
 5. En el panel **Scripts de PowerShell**, haga clic en **Agregar**.
@@ -50,7 +51,7 @@ La extensión de administración de Intune tiene los siguientes requisitos previ
 
 ## <a name="assign-a-powershell-script-policy"></a>Asignar una directiva de script de PowerShell
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En el panel **Intune**, elija **Configuración del dispositivo**.
 4. En el panel **Configuración del dispositivo**, elija **Administrar** > **Scripts de PowerShell**.
 5. En el panel **Scripts de PowerShell**, seleccione el script que se va a asignar y luego elija **Administrar** > **Asignaciones**.
@@ -64,7 +65,7 @@ La extensión de administración de Intune se sincroniza con Intune una vez cada
 ## <a name="monitor-run-status-for-powershell-scripts"></a>Supervisar el estado de ejecución de scripts de PowerShell
 Puede supervisar el estado de ejecución de scripts de PowerShell para usuarios y dispositivos en Azure Portal.
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En el panel **Intune**, elija **Configuración del dispositivo**.
 4. En el panel **Configuración del dispositivo**, elija **Administrar** > **Scripts de PowerShell**.
 5. En el panel **Scripts de PowerShell**, seleccione el script que quiere supervisar y, después, elija **Supervisar** y uno de los informes siguientes:

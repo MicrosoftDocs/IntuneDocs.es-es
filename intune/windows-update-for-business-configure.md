@@ -1,23 +1,23 @@
 ---
-title: "Configuración de Windows Update para empresas en Intune"
-titleSuffix: Azure portal
-description: "Obtenga información sobre cómo configurar Windows Update para empresas en Intune para controlar las actualizaciones de dispositivos Windows 10\"."
-keywords: 
+title: Configuración de Windows Update para empresas en Microsoft Intune
+titleSuffix: ''
+description: Obtenga información sobre cómo configurar Windows Update para empresas en Microsoft Intune para controlar las actualizaciones de dispositivos Windows 10.
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: d6ccda2aba0b1383de6c38b7a2fdcfdc742d0e15
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ac26d0ac1855aa32ef0f00de6a4056bd57c07528
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="manage-software-updates"></a>Administrar actualizaciones de software
 
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/08/2018
 
 Windows como servicio es el método para actualizar los dispositivos Windows 10. A partir de Windows 10, todas las nuevas actualizaciones de calidad y de características contienen las actualizaciones anteriores. Es decir, siempre que tenga instalada la más reciente, sabrá que sus dispositivos Windows 10 están actualizados. A diferencia de las versiones anteriores de Windows, ahora debe instalar la actualización completa en lugar de una parte.
 
-Gracias a Windows Update para empresas, puede simplificar la administración de actualizaciones, ya que no tendrá que aprobar actualizaciones individuales para grupos de dispositivos. Todavía puede administrar los riesgos en sus entornos configurando una estrategia de implementación de actualizaciones; Windows Update se asegurará de que las actualizaciones se instalen en el momento oportuno. Microsoft Intune ofrece la posibilidad de configurar las actualizaciones en los dispositivos y de aplazar su instalación. Intune no almacena las actualizaciones, sino únicamente la asignación de las directivas de actualización. Los dispositivos acceden a Windows Update directamente para las actualizaciones. Use Intune para configurar y administrar **anillos de actualización de Windows 10**. Un anillo de actualización contiene un grupo de opciones que configuran cuándo y cómo se instalan las actualizaciones de Windows 10. Por ejemplo, puede configurar las siguientes opciones:
+Gracias a Windows Update para empresas, puede simplificar la administración de actualizaciones, ya que no tendrá que aprobar actualizaciones individuales para grupos de dispositivos. Todavía puede administrar los riesgos en sus entornos configurando una estrategia de implementación de actualizaciones; Windows Update se asegurará de que las actualizaciones se instalen en el momento oportuno. Microsoft Intune ofrece la posibilidad de configurar las actualizaciones en los dispositivos y de aplazar su instalación. Intune no almacena las actualizaciones, sino únicamente la asignación de las directivas de actualización. Los dispositivos acceden a Windows Update directamente para las actualizaciones. Use Intune para configurar y administrar **círculos de actualizaciones de Windows 10**. Un anillo de actualización contiene un grupo de opciones que configuran cuándo y cómo se instalan las actualizaciones de Windows 10. Por ejemplo, puede configurar las siguientes opciones:
 
 - **Canal de servicio de Windows 10**: elija si desea que los grupos de dispositivos reciban actualizaciones del Canal semianual o del Canal semianual (dirigido).  
 - **Configuración de aplazamiento**: configure las opciones de aplazamiento de actualizaciones con el fin de retrasar la instalación de las actualizaciones para grupos de dispositivos. Puede usar esta configuración para realizar una implementación por fases para revisar el progreso de las actualizaciones.
@@ -72,7 +72,7 @@ Después de crear anillos de actualización, debe asignarnos a grupos de disposi
 ## <a name="how-to-create-and-assign-update-rings"></a>Creación y asignación de anillos de actualización
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En el panel **Intune**, elija **Actualizaciones de software**.
 4. En el panel **Actualizaciones de Software**, elija **Administrar** > **Anillos de actualización de Windows 10**.
 5. En el panel que muestra la lista de anillos de actualización, elija **Crear**.
@@ -108,20 +108,20 @@ Puede consultar la comprobación de actualizaciones en Intune o mediante una sol
 
 ### <a name="review-update-compliance-in-intune"></a>Revisar la comprobación de actualizaciones en Intune 
 <!-- 1352223 -->
-Consulte un informe de directiva para conocer el estado de implementación para los anillos de actualización de Windows 10 que ha configurado. 
+Consulte un informe de directiva para conocer el estado de implementación para los círculos de actualizaciones de Windows 10 que ha configurado. 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En el panel **Intune**, elija **Actualizaciones de software**.
-4. En el panel **Actualizaciones de software**, seleccione **Información general**. A partir de aquí, puede ver información general sobre el estado de los anillos de actualización que tenga asignados.
+4. En el panel **Actualizaciones de software**, seleccione **Información general**. A partir de aquí, puede ver información general sobre el estado de los círculos de actualizaciones que tenga asignados.
 5. Abra uno de los informes siguientes: 
      
-   **Para todos los anillos de implementación:**
+   **Para todos los círculos de implementación:**
    1. En el panel **Actualizaciones de software** > **Anillos de actualización de Windows 10**. 
-   2. En la **sección Supervisar**, elija **Estado de implementación por anillo de actualización**.
+   2. En la **sección Supervisar**, elija **Por el estado de implementación del círculo de implementaciones**.
                    
-   **Para anillos de implementación específicos:** 
+   **Para círculos de implementación específicos:** 
    1. En el panel **Actualizaciones de software** > **Anillos de actualización de Windows 10**, elija los anillos de implementación para revisar.
-   2. En la sección **Supervisar**, elija uno de los siguientes informes para ver información más detallada sobre el anillo de actualización:
+   2. En la sección **Supervisar**, elija uno de los siguientes informes para ver información más detallada sobre el círculo de actualizaciones:
       - **Estado del dispositivo**
       - **Estado del usuario**
 
@@ -140,12 +140,12 @@ Por ejemplo, puede usar los siguientes valores en **Agregar o editar configuraci
 - **Tipo de datos:** Cadena
 - **Valor**: <*Utilizar el GUID que se muestra en la pestaña Telemetría de Windows del área de trabajo de OMS*>
 
-![Configuración de Windows para Datos de diagnóstico y uso](./media/commID.png)
+![Configuración de OMA-URI - Agregar fila](./media/commID.png)
 
 ## <a name="how-to-pause-updates"></a>Pausa de actualizaciones
 Puede pausar un dispositivo para que deje de recibir actualizaciones de características o de calidad durante un período máximo de 35 días desde el momento en que se pausa las actualizaciones. Después de que haya superado el número máximo de días, la funcionalidad de pausa expirará automáticamente y el dispositivo buscará en Windows Update las actualizaciones pertinentes. Después de este análisis, puede pausar las actualizaciones de nuevo.
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En el panel **Intune**, elija **Actualizaciones de software**.
 4. En el panel **Actualizaciones de Software**, elija **Administrar** > **Anillos de actualización de Windows 10**.
 5. En el panel que muestra la lista de anillos de actualización, elija el anillo que quiera pausar y, luego, seleccione **...** > **Pausar actualizaciones de calidad** > o **Pausar actualizaciones de características**, según el tipo de actualizaciones que quiera pausar.

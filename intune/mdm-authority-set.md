@@ -1,25 +1,25 @@
 ---
-title: "Establecer la entidad de administración de dispositivos móviles"
+title: Establecer la entidad de administración de dispositivos móviles
 titlesuffix: Microsoft Intune
-description: "Establezca la entidad de administración de dispositivos móviles en Intune."
-keywords: 
+description: Establezca la entidad de administración de dispositivos móviles en Intune.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5d48a2cea096c1639cd3661521cd636454f3e0ba
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ce6464cc6aa67636743479e69ad2b55c9b102ed9
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Establecer la entidad de administración de dispositivos móviles
 
@@ -60,7 +60,7 @@ Las plataformas presentan los requisitos siguientes para habilitar o simplificar
 - **iOS** (obligatorio)[: obtener un certificado push de MDM de Apple](apple-mdm-push-certificate-get.md) y después [habilitar la inscripción para dispositivos iOS propiedad de la empresa](ios-enroll.md) (opcional).
 - **Android** (opcional)[: habilitar perfiles profesionales de Android](android-enroll.md)
 - **Windows** (opcional): habilitar la [inscripción automática](windows-enroll.md) o la [inscripción masiva](windows-bulk-enroll.md)
-- **macOS**: ningún requisito
+- **macOS** (obligatorio): [Obtener un certificado push MDM de Apple](apple-mdm-push-certificate-get.md).
 
 
 ## <a name="mobile-device-cleanup-after-mdm-certificate-expiration"></a>Limpieza de dispositivos móviles tras la expiración del certificado MDM

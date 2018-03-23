@@ -1,26 +1,26 @@
 ---
-title: "Registro o inicio de sesión en Intune"
-description: "Registro para obtener una suscripción de Intune o inicio de sesión para iniciar su suscripción"
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Suscribirse o iniciar sesión en Microsoft Intune
+description: Se explica cómo registrarse para obtener una suscripción de Microsoft Intune o cómo iniciar sesión para comenzar una suscripción.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/30/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0f3ce07a-b718-42a9-bace-f99a8b8abd94
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d794837b88b0c0b3dbf4888e50714f06b94c8d53
-ms.sourcegitcommit: 80a2eefc1896a42cc2bc16be23093d1abf58b088
+ms.openlocfilehash: 8858768586398d3dbb341c9963727df5faf9da15
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/17/2018
 ---
-# <a name="sign-up-or-sign-in-to-intune"></a>Registro o inicio de sesión en Intune
+# <a name="sign-up-or-sign-in-to-microsoft-intune"></a>Suscribirse o iniciar sesión en Microsoft Intune
 
 [!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 

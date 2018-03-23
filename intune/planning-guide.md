@@ -1,30 +1,31 @@
 ---
-title: "Introducción de diseño y planeación de Intune"
-description: "Este artículo es una introducción de todas las secciones de implementación, diseño y planeación de Intune. Herramientas para facilitar la determinación de objetivos, requisitos y escenarios de casos de uso, crear planes de lanzamiento y comunicación, así como planes de soporte técnico, pruebas y validación."
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Introducción de diseño y planeación de Intune
+titlesuffix: Microsoft Intune
+description: Este artículo es una introducción de todas las secciones de implementación, diseño y planeación de Microsoft Intune. Herramientas para facilitar la determinación de objetivos, requisitos y escenarios de casos de uso, crear planes de lanzamiento y comunicación, así como planes de soporte técnico, pruebas y validación.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a65efa6e-4a48-47f3-8f6e-34a85ca64ced
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 962ec376b7f2e30ad857ce69e24124c5d482cda0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 074490428b52effbc4a555a63d997a47da55546e
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="intune-deployment-planning-design-and-implementation-guide"></a>Guía de implementación, diseño y planeación de Intune
 
 [!INCLUDE[note for both-portals](./includes/note-for-both-portals.md)]
 
-Una implementación correcta de Intune comienza con un buen plan y diseño. La finalidad de esta guía es guiarle paso a paso a través del proceso para desarrollar un plan de implementación, crear un diseño, incorporarlo en Intune y realizar una implementación de producción.
+Una implementación correcta de Microsoft Intune comienza con un buen plan y diseño. La finalidad de esta guía es guiarle paso a paso a través del proceso para desarrollar un plan de implementación, crear un diseño, incorporarlo en Intune y realizar una implementación de producción.
 
 ## <a name="whats-included-in-this-guide"></a>¿Qué se incluye en esta guía?
 

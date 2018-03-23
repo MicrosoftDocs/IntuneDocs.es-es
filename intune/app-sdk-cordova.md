@@ -1,24 +1,24 @@
 ---
 title: Complemento Cordova del SDK para aplicaciones de Microsoft Intune
-description: 
+description: El complemento Cordova del SDK para aplicaciones de Intune permite a los desarrolladores integrar características de protección de datos y aplicaciones de Intune en la aplicación basada en Cordova.
 keywords: sdk, Cordova, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/02/2018
+ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d42f8418e2f277dca0fbb2f01248f5a815606cb6
-ms.sourcegitcommit: a6fd6b3df8e96673bc2ea48a2b9bda0cf0a875ae
+ms.openlocfilehash: 84ff217361108ac3518567f31af8943d0b3032fe
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Complemento Cordova del SDK para aplicaciones de Microsoft Intune
 
@@ -32,11 +32,11 @@ El [Complemento Cordova del SDK para aplicaciones de Intune](/intune-classic/dep
 > [!NOTE]
 > Puede que quiera leer primero el artículo [Introducción a Intune App SDK](app-sdk-get-started.md), en el que se explica cómo preparar la integración en cada plataforma compatible.
 
-Descubrirá que puede habilitar características del SDK sin necesidad de cambiar el comportamiento de la aplicación. Una vez que haya creado el complemento en su aplicación iOS o Android, el administrador de Microsoft Intune podrá implementar la directiva de protección de aplicaciones de Intune, que consta de una variedad de características de protección de datos. El complemento se ha creado de manera que la mayoría de los pasos se realizan automáticamente en el proceso de compilación de Cordova. Como resultado, debe poder obtener la aplicación habilitada para la protección de aplicaciones de Intune rápidamente. Para comenzar, siga los pasos que se indican a continuación en función de la plataforma de destino.
+Descubrirá que puede habilitar características del SDK sin necesidad de cambiar el comportamiento de la aplicación. Una vez que haya creado el complemento en su aplicación iOS o Android, el administrador de Microsoft Intune podrá implementar la directiva de protección de aplicaciones de Intune, que consta de una variedad de características de protección de datos. El complemento se ha creado de manera que la mayoría de los pasos se realizan automáticamente en el proceso de compilación de Cordova. Como resultado, debe poder obtener la aplicación habilitada para la protección de aplicaciones de Intune rápidamente. Para comenzar, realice los siguientes pasos en función de la plataforma de destino.
 
 ## <a name="supported-platforms"></a>Plataformas compatibles
 
-* El complemento funciona en Windows, Mac y Linux OS
+* El complemento funciona en Windows, Mac y Linux OS.
 * El complemento funciona con aplicaciones Android con `minSdkVersion` >= 14 y `targetSdkVersion` <= 24
 * El complemento funciona con aplicaciones de iOS destinadas a iOS 9.0 y versiones posteriores.
 
@@ -118,19 +118,19 @@ El complemento reconoce automáticamente la información de firma que ha proporc
 
 Consulte la [información de firma de gradle de Cordova](https://cordova.apache.org/docs/en/latest/guide/platforms/android/#using-gradle) para obtener más información sobre el formato esperado.
 
-Actualmente no se admite la capacidad de proporcionar información de firma en `build.json` o ubicaciones arbitrarias proporcionadas a través de parámetros en la compilación de Cordova.
+Actualmente, Intune no admite la capacidad de proporcionar información de firma en `build.json` o ubicaciones arbitrarias proporcionadas a través de parámetros en la compilación de Cordova.
 
 ## <a name="debugging-from-visual-studio"></a>Depurar desde Visual Studio
 
-Después de iniciar la aplicación por primera vez, debería ver un cuadro de diálogo que le notifica que la aplicación se administra mediante Intune. Pulse "No volver a mostrar" y haga clic de nuevo en el botón para depurar o ejecutar en VS para encontrar los puntos de interrupción.
+Después de iniciar la aplicación por primera vez, debería ver un cuadro de diálogo que le notifica que la aplicación se administra por medio de Intune. Pulse "No volver a mostrar" y haga clic de nuevo en el botón para depurar o ejecutar en VS para encontrar los puntos de interrupción.
 
 ## <a name="known-limitations"></a>Limitaciones conocidas
 
 ### <a name="android"></a>Android
 
 * La compatibilidad con Multi-Dex está incompleta.
-* La aplicación debe tener `minSdkVersion` de 14 y `targetSdkVersion` de 24 o lo siguiente. Actualmente no se admiten aplicaciones destinadas a API 25.
-* No se pueden volver a firmar aplicaciones firmadas con el esquema de firma V2. Cuando las aplicaciones firmadas V2 se ajustan mediante el complemento, el .apk de salida ajustado estará sin firmar.
+* La aplicación debe tener `minSdkVersion` de 14 y `targetSdkVersion` de 24 o lo siguiente. Actualmente, Intune no admite aplicaciones destinadas a API 25.
+* Intune no puede volver a firmar aplicaciones firmadas con el esquema de firma V2. Cuando las aplicaciones firmadas V2 se ajustan mediante el complemento, el .apk de salida ajustado estará sin firmar.
 *
   * Puede deshabilitar la firma V2 predeterminada de Cordova agregando lo siguiente al archivo `build-extras.gradle`:
 
@@ -157,6 +157,6 @@ Después de iniciar la aplicación por primera vez, debería ver un cuadro de di
 
 ### <a name="ios"></a>iOS
 
-* Cada vez que modifique la lista de UTI en el nodo **CFBundleDocumentTypes** del archivo **Info.plist**, debe borrar el UTI de Intune en la sección de UTI importados del mismo archivo plist (nodo **UTImportedTypeDeclarations**) antes de volver a compilar. Todos los UTI de Intune empezarán con el prefijo `com.microsoft.intune.mam`.
+* Cada vez que modifique la lista de UTI en el nodo **CFBundleDocumentTypes** del archivo **Info.plist**, debe borrar el UTI de Intune en la sección de UTI importados del mismo archivo plist (nodo **UTImportedTypeDeclarations**) antes de volver a compilar. Todos los UTI de Intune empezarán por el prefijo `com.microsoft.intune.mam`.
 
 * Si quiere quitar el complemento de Intune App SDK para Cordova del proyecto de Cordova, también debe quitar la plataforma iOS y volver a agregarla para deshacer parte de la configuración de Intune en los archivos .xcodeproj y .plist.
