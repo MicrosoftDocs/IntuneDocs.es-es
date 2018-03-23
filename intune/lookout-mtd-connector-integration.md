@@ -15,11 +15,11 @@ ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7ffd55a82af4f7fdc8d8df7cab818c59def74109
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8b1b7d9ef1a7dce0b5a139f3b8acb85ab7d11d4c
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="set-up-your-lookout-mobile-threat-defense-integration-with-intune"></a>Configurar la integración de Mobile Threat Defense de Lookout con Intune
 
@@ -67,13 +67,11 @@ Use los pasos siguientes para recopilar la información que debe proporcionar al
 
 ## <a name="configure-your-subscription"></a>Configurar la suscripción
 
-1. Después de que el soporte técnico de Lookout cree su cuenta de empresa de Lookout, Lookout envía un correo electrónico al contacto principal de su empresa con un vínculo a la dirección URL de inicio de sesión: https://aad.lookout.com/les?action=consent.
+1. Después de que el soporte técnico de Lookout cree su cuenta de empresa de Lookout, Lookout envía un correo electrónico al contacto principal de su empresa con un vínculo a la dirección URL de inicio de sesión:https://aad.lookout.com/les?action=consent.
 
 2.  El primer inicio de sesión en la consola de Lookout debe realizarse con una cuenta de usuario con el rol de Azure AD de administrador global para registrar el inquilino de Azure AD. Después, el inicio de sesión no necesita este nivel de privilegio de Azure AD. Se muestra una página de consentimiento. Elija **Aceptar** para completar el registro. Una vez que haya aceptado y dado su consentimiento, se le redirige a la consola de Lookout.
 
     ![captura de pantalla de la página del primer inicio de sesión en la consola de Lookout](./media/lookout_mtp_initial_login.png)
-    > [!NOTE] 
-    > Vea [Solucionar problemas de integración de Lookout con Intune](https://docs.microsoft.com/intune/troubleshoot/troubleshooting-lookout-integration) para obtener ayuda con los problemas de inicio de sesión.
 
 3.  En la [consola de Lookout](https://aad.lookout.com), en el módulo **Sistema**, elija la pestaña **Conectores** y seleccione **Intune**.
 

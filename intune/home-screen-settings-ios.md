@@ -1,7 +1,7 @@
 ---
 title: Configuración de diseño de la pantalla principal de Microsoft Intune para dispositivos que ejecutan iOS
-titlesuffix: Azure portal
-description: Conozca la configuración que puede usar para personalizar la pantalla principal y la base de los dispositivos que ejecutan iOS.
+titleSuffix: ''
+description: Conozca la configuración de Microsoft Intune que puede usar para personalizar la pantalla principal y la base de los dispositivos que ejecutan iOS.
 keywords: ''
 author: vhorne
 ms.author: victorh
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88be142c98d7b89720d245c738a45a26ac825395
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 56527da7ac8c2ed00a4b33049c8ba4ad03299976
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="microsoft-intune-home-screen-layout-settings-for-devices-running-ios"></a>Configuración de diseño de la pantalla principal de Microsoft Intune para dispositivos que ejecutan iOS
 
@@ -99,31 +99,31 @@ En esta lista se muestra el identificador de lote de algunas aplicaciones iOS co
 |||
 |-|-|
 |Nombre de la aplicación|Identificador de lote|
-|App Store|com.apple.AppStore|
+|Tienda de aplicaciones|com.apple.AppStore|
 |Calculadora|com.apple.calculator|
 |Calendario|com.apple.mobilecal|
 |Cámara|com.apple.camera|
 |Reloj|com.apple.mobiletimer|
-|Brújula|com.apple.compass|
+|Compass|com.apple.compass|
 |Contactos|com.apple.MobileAddressBook|
 |FaceTime|com.apple.facetime|
 |Buscar amigos|com.apple.mobileme.fmf1|
 |Buscar mi iPhone|com.apple.mobileme.fmip1|
-|Game Center|com.apple.gamecenter|
+|Centro de juegos|com.apple.gamecenter|
 |GarageBand|com.apple.mobilegarageband|
-|Salud|com.apple.Health|
+|Mantenimiento|com.apple.Health|
 |iBooks|com.apple.iBooks|
 |iTunes Store|com.apple.MobileStore|
 |iTunes U|com.apple.itunesu|
 |Keynote|com.apple.Keynote|
 |Mail|com.apple.mobilemail|
-|Mapas|com.apple.Maps|
+|Asignaciones|com.apple.Maps|
 |Mensajes|com.apple.MobileSMS|
 |Música|com.apple.Music|
 |Noticias|com.apple.news|
 |Notas|com.apple.mobilenotes|
-|Numbers|com.apple.Numbers|
-|Pages|com.apple.Pages|
+|Números|com.apple.Numbers|
+|Páginas|com.apple.Pages|
 |Photo Booth|com.apple.Photo-Booth|
 |Fotos|com.apple.mobileslideshow|
 |Podcasts|com.apple.podcasts|
@@ -135,7 +135,7 @@ En esta lista se muestra el identificador de lote de algunas aplicaciones iOS co
 |Vídeos|com.apple.videos|
 |VoiceMemos|com.apple.VoiceMemos|
 |Wallet|com.apple.Passbook|
-|Watch|com.apple.Bridge|
+|Inspección|com.apple.Bridge|
 |Clima|com.apple.weather|
 
 
