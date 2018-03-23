@@ -1,25 +1,25 @@
 ---
-title: "Edición anticipada"
-description: 
-keywords: 
+title: Edición anticipada
+description: ''
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f49650f4-31fa-406c-a4da-d8c9a4a8384d
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9a2c104200518af31fd05e6b8abe853377767aa9
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: e91745abb7c3409b31724101b3071157407acec9
+ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="the-early-edition-for-microsoft-intune---march-2018"></a>Edición anticipada de Microsoft Intune: marzo de 2018
 
@@ -36,7 +36,7 @@ Esta página se actualiza periódicamente. Compruebe si hay actualizaciones adic
 ## Notices
 -->
 
-## <a name="intune-in-the-azure-portal"></a>Intune en Azure Portal
+## <a name="intune-in-the-azure-portal"></a>Intune en el portal de Azure
 
 <!-- 1803 start -->
 
@@ -147,6 +147,33 @@ Podrá crear categorías personalizadas de libros electrónicos y, después, asi
 
 Actualizaremos la aplicación Portal de empresa para Android para seguir las directrices de [Material Design](https://material.io/) de Android. Publicaremos imágenes de los iconos nuevos en el artículo [What's new in app UI](whats-new-app-ui.md) (Novedades en la interfaz de usuario de la aplicación) cuando se publique la aplicación. 
 
+### <a name="edge-mobile-support-for-intune-app-protection-policies----1817882---"></a>Compatibilidad móvil de Edge para directivas de Intune App Protection <!-- 1817882 -->
+
+El navegador Microsoft Edge para dispositivos móviles admitirá las directivas de protección de aplicaciones definidas en Intune.
+
+### <a name="use-fully-distinguished-name-as-subject-for-scep-certificate---2221763-eeready--"></a>Uso de un nombre completo como sujeto de un certificado SCEP <!--2221763 eeready-->
+Cuando se crea un perfil de certificado SCEP, hay que indicar el nombre del sujeto. Podrá usar el nombre completo como sujeto. En **Nombre del sujeto**, seleccione **Personalizado** y, después, escriba `CN={{OnPrem_Distinguished_Name}}`. Para usar la variable `{{OnPrem_Distinguished_Name}}`, no olvide sincronizar el atributo de usuario `onpremisesdistingishedname` por medio de [Azure Active Directory (AD) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) con Azure AD. 
+
+### <a name="ios-devices-are-prompted-for-a-pin-every-15-minutes---1550837-eeready--"></a>Los dispositivos iOS solicitan un PIN cada 15 minutos <!--1550837 eeready-->
+Después de poner en marcha una directiva de configuración o cumplimiento en un dispositivo iOS, cada 15 minutos se pedirá al usuario que establezca un PIN, y se le seguirá pidiendo hasta que se establezca un PIN.
+
+### <a name="enable-bluetooth-contact-sharing---android-for-work---1098983-eeready--"></a>Permitir el uso compartido de contactos a través de Bluetooth: Android for Work <!--1098983 eeready-->
+Android impide de forma predeterminada que los contactos del perfil del trabajo se sincronicen con dispositivos Bluetooth. Como consecuencia, los contactos del perfil de trabajo no aparecen en la identificación de llamadas en los dispositivos Bluetooth.
+
+Habrá una nueva opción en **Android for Work** > **Restricciones de dispositivos** > **Configuración del perfil de trabajo**:
+- Uso compartido de contactos a través de Bluetooth
+
+El administrador de Intune puede configurar esta opción para permitir el uso compartido de contactos. Esto resulta útil para emparejar un dispositivo con el dispositivo Bluetooth de un coche que muestra el identificador de llamada cuando se usa el manos libres. Si se habilita, se mostrarán los contactos del perfil de trabajo. Si no, no se mostrarán.
+
+Se aplica a: dispositivos de perfil de trabajo Android con la versión de SO Android 6.0 y versiones más recientes.
+
+### <a name="schedule-your-automatic-updates---1805514---"></a>Programar las actualizaciones automáticas <!--1805514 -->
+
+Intune le permite controlar la instalación de las actualizaciones automáticas por medio de la opción [Anillo de actualización de Windows](windows-update-for-business-configure.md). Podrá programar las actualizaciones recurrentes, así como la semana, el día y la hora en que deben producirse. 
+
+### <a name="disable-checks-on-device-restart---1805490---"></a>Deshabilitar las comprobaciones cuando el dispositivo se reinicia <!--1805490 -->
+
+Intune le permite controlar la [administración de las actualizaciones de software](windows-update-for-business-configure.md). La propiedad **Comprobaciones de reinicio** estará agregada y habilitada de forma predeterminada. Para omitir las comprobaciones típicas que tienen lugar cuando un dispositivo se reinicia (por ejemplo, usuarios activos, niveles de batería, etc.), seleccione **Omitir**. 
 
 <!-- 1802 start -->
 
@@ -160,7 +187,7 @@ Podrá personalizar el color del tema en las aplicaciones del Portal de empresa 
 
 ### <a name="new-windows-defender-credential-guard-settings-added-to-endpoint-protection-settings---1102252---"></a>Nueva configuración de protección de credenciales de Windows Defender agregada a la configuración de endpoint protection<!--1102252 --> 
 
-Se agregará una nueva configuración [Credential Guard de Windows Defender] (https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard] a **Configuración del dispositivo** > **Perfiles** > **Endpoint protection**. Se agregará la configuración siguiente: 
+La nueva opción [Credential Guard de Windows Defender] (https://docs.microsoft.com/windows/access-protection/credential-guard/credential-guard) estará incluida en **Configuración de dispositivo** > **Perfiles** > **Endpoint Protection**. Se agregará la configuración siguiente: 
 
 - Nivel de seguridad de la plataforma: especifique si el nivel de seguridad de plataforma está habilitado en el siguiente reinicio. La seguridad basada en la virtualización requiere el arranque seguro. Opcionalmente, la seguridad basada en la virtualización se puede habilitar con el uso de protecciones de acceso directo a memoria (DMA). Las protecciones de DMA requieren compatibilidad con el hardware y solo se habilitarán en dispositivos configurados correctamente.
 - Seguridad basada en la virtualización: especifique si está habilitada la seguridad basada en la virtualización en el siguiente reinicio. 
@@ -185,29 +212,6 @@ Para los perfiles de educación, habrá nueva configuración disponible en la ca
 
 ### <a name="ios-app-provisioning-configuration----1581650---"></a>configuración de aprovisionamiento de aplicaciones de iOS <!-- 1581650 -->
 Podrá asignar perfiles de aprovisionamiento de aplicaciones de iOS para evitar que las aplicaciones expiren mediante la inclusión o exclusión de grupos de seguridad.
-
-### <a name="new-windows-defender-exploit-guard-settings----631893---"></a>Nueva configuración de protección contra vulnerabilidades de seguridad de Windows Defender <!-- 631893 -->
-
-Habrá disponibles seis nuevas opciones de **reducción de la superficie expuesta a ataques** y funcionalidades ampliadas de **acceso controlado a carpetas: protección de carpetas**. Puede encontrar estas opciones en: Configuración de dispositivo\Perfiles\
-Crear perfil\Endpoint protection\Protección contra vulnerabilidades de seguridad de Windows Defender.
-
-#### <a name="attack-surface-reduction"></a>Reducción de la superficie expuesta a ataques
-
-|Nombre de la configuración  |Opciones de configuración  |Descripción  |
-|---------|---------|---------|
-|Protección de ransomware avanzada|Habilitado, Auditoría, No configurado|Usar protección ransomware intensa.|
-|Marcar el robo de credenciales desde el subsistema de autoridad de seguridad local de Windows|Habilitado, Auditoría, No configurado|Marcar el robo de credenciales desde el subsistema de autoridad de seguridad local de Windows (lsass.exe).|
-|Creación del proceso desde comandos PSExec y WMI|Bloquear, Auditoría, No configurado|Bloquear creaciones del proceso que se originan desde comandos PSExec y WMI.|
-|Procesos que no son de confianza y sin firma que se ejecutan desde una unidad USB|Bloquear, Auditoría, No configurado|Bloquear los procesos que no son de confianza y sin firma que se ejecutan desde una unidad USB.|
-|Archivos ejecutables que no cumplen unos criterios de uso habitual, edad o lista de confianza|Bloquear, Auditoría, No configurado|Bloquear la ejecución de los archivos ejecutables a menos que cumplan unos criterios de uso habitual, edad o lista de confianza.|
-
-#### <a name="controlled-folder-access"></a>Acceso controlado a carpetas
-
-|Nombre de la configuración  |Opciones de configuración  |Descripción  |
-|---------|---------|---------|
-|Protección de carpetas (ya implementado)|No configurado, Habilitar, Solo auditoría (ya implementado)<br><br> **Nuevo**<br>Impedir la modificación del disco, Auditar la modificación del disco|
-Proteger los archivos y carpetas frente a cambios no autorizados de aplicaciones hostiles.<br><br>**Habilitar**: impedir que las aplicaciones que no son de confianza modifiquen o eliminen archivos en carpetas protegidas y que escriban en los sectores de disco.<br><br>
-**Solo impedir la modificación del disco**:<br>Impedir que las aplicaciones que no son de confianza escriban en los sectores de disco. Las aplicaciones que no son de confianza todavía podrán modificar o eliminar archivos en las carpetas protegidas.|
 
 ### <a name="new-windows-defender-application-guard-settings----1631890---"></a>Nueva configuración de Protección de aplicaciones de Windows Defender <!-- 1631890 -->
 

@@ -1,24 +1,24 @@
 ---
-title: "Registro para obtener una evaluación gratuita de 30 días de Microsoft Intune"
-titleSuffix: Azure portal
-description: "Registro para obtener una evaluación gratuita de 30 días de Intune.\""
-keywords: 
-author: arob98
-ms.author: angrobe
+title: Registro para obtener una evaluación gratuita de 30 días de Microsoft Intune
+titleSuffix: Microsoft Intune
+description: Sepa cómo registrarse para obtener una evaluación gratuita de 30 días de Microsoft Intune.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
 ms.date: 03/04/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.suite: ems
-ms.custom: 
-ms.openlocfilehash: 08fa759515d437e40a751ce39b3ef617dd92e83f
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.custom: ''
+ms.openlocfilehash: 389981fc207371d64064872235fc9babde6b3f6a
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="sign-up-for-a-microsoft-intune-free-trial"></a>Suscríbase para disfrutar de una prueba gratuita de Microsoft Intune
 
@@ -30,11 +30,15 @@ Este artículo le guía por los pasos para registrarse en una versión de prueba
 
 * Si la configuración regional de la mayoría de las operaciones de TI y de los usuarios es diferente a la suya, puede que quiera seleccionar esa configuración regional en **Where's your company located?** (¿Dónde se encuentra su empresa?).
 
-2. Al final del proceso de registro, recibe un mensaje con la información de la nueva cuenta. <br/> ![Imagen de la información de cuenta](./media/2-end-of-sign-up-process.png) <br/>En este punto, si hace clic en **You're ready to go** (Está listo para comenzar), se le dirige al Centro de administración de Office 365, donde puede agregar usuarios al entorno de prueba. <br/><br/>Sin embargo, si quiere ir directamente al portal de Intune Azure, abra una nueva ventana de explorador y escriba **https://portal.azure.com** en la barra de direcciones. Se le dirige a la página de inicio de sesión de Azure donde puede usar las credenciales que se le asignaron para iniciar sesión. Use esta dirección siempre que quiera iniciar sesión en la versión de prueba de Intune. <br/> ![Imagen de la página de inicio de sesión del portal Azure](./media/azure-portal-signin.png)
+2. Al final del proceso de registro, recibe un mensaje con la información de la nueva cuenta. <br/> 
+
+![Imagen de la información de la cuenta](./media/2-end-of-sign-up-process.png) <br/>
+
+En este punto, si hace clic en **You're ready to go** (Está listo para comenzar), se le dirige al Centro de administración de Office 365, donde puede agregar usuarios al entorno de prueba. <br/><br/>Con todo, si quiere ir directamente a Azure Portal de Intune, abra una nueva ventana de explorador y escriba **https://portal.azure.com** en la barra de direcciones. Se le dirige a la página de inicio de sesión de Azure donde puede usar las credenciales que se le asignaron para iniciar sesión. Use esta dirección siempre que quiera iniciar sesión en la versión de prueba de Intune. <br/> ![Imagen de la página de inicio de sesión de Azure Portal](./media/azure-portal-signin.png)
 
 La primera vez que inicie sesión en [Azure Portal](https://portal.azure.com) de Intune, puede que no vea Intune en el panel de Azure. Para agregar el servicio de Intune a su panel de Azure:
 1. Elija **Todos los servicios >** en la lista de servicios de Azure situada a la izquierda del panel y escriba **Intune** en el cuadro de búsqueda.
-2. Pulse **Intune** en la lista y seleccione la estrella para agregar el servicio a la lista de servicios.<br/> ![Imagen de la selección de Intune de la lista de servicios](./media/azure-add-intune1.png)
+2. Pulse **Intune** en la lista y seleccione la estrella para agregar el servicio a la lista de servicios.<br/> ![Imagen de selección de Microsoft Intune en Azure Portal](./media/azure-add-intune1.png)
 3. Pulse **Intune** en la lista de servicios para abrir el panel de Intune.
 
 Si se registra en una versión de prueba, recibirá también un mensaje de correo electrónico con la información de la cuenta en la dirección que haya proporcionado durante el proceso de registro. Este mensaje confirma que la versión de prueba está activa.

@@ -1,24 +1,25 @@
 ---
-title: API de Almacenamiento de datos de Intune | Microsoft Docs
-description: "Puede usar la API para generar informes que proporcionen una visión general del entorno móvil de la empresa."
+title: API de almacenamiento de datos de Intune
+titlesuffix: Microsoft Intune
+description: La API de almacenamiento de datos de Intune se puede usar para generar informes que proporcionen una visión general del entorno móvil de la empresa.
 keywords: Almacenamiento de datos de Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/31/2017
+ms.date: 03/14/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 701D6CE9-43F6-4A29-8E84-E2B59931C635
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e5c12ea4212bf7276b2cb0a4b09ecff648d67583
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7291e6f0d6094801383ba7fd606c0238e85ba01f
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
 #  <a name="intune-data-warehouse-api"></a>API de Almacenamiento de datos de Intune
 
@@ -65,4 +66,4 @@ Para obtener más información sobre cómo trabajar con Azure AD, lea [Escenario
 
 Puede acceder a recursos de OData en [odata.org](http://www.odata.org).
   
-Revise la versión de OData 4.0 estándar en [OData versión 4.0] (http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html).  
+Revise el estándar de la versión 4.0 de OData en [Versión 4.0 de OData] (http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)).  

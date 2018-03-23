@@ -1,23 +1,24 @@
 ---
-title: "Inicio de una campaña de migración de Intune"
-description: "En este artículo se proporcionan instrucciones sobre cómo iniciar una campaña de migración."
-keywords: 
-author: andredm7
-ms.author: andredm
+title: Inicio de una campaña de migración de Intune
+titlesuffix: Microsoft Intune
+description: En este artículo se proporcionan instrucciones sobre cómo iniciar una campaña de migración de Microsoft Intune.
+keywords: ''
+author: dougeby
+ms.author: dougeby
 manager: dougeby
-ms.date: 07/12/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f781b029-50f2-46ee-8ff7-03b4a6719e80
 ms.reviewer: dagerrit
 ms.suite: ems
-ms.openlocfilehash: ae5e050c5222981ed7608bbf15a87a23c0bf6b04
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 0cea6d9f1ad4f962fcb2fbca910a737f6330bf30
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
 # <a name="phase-2-migration-campaign"></a>Fase 2: Campaña de migración
 

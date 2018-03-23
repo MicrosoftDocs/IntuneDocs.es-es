@@ -1,24 +1,24 @@
 ---
 title: Reinicio remoto de los dispositivos con Intune
-titlesuffix: Azure portal
-description: "Aprenda a reiniciar los dispositivos de forma remota mediante la acción de reinicio del dispositivo."
-keywords: 
-author: arob98
-ms.author: angrobe
+titlesuffix: Microsoft Intune
+description: Aprenda a reiniciar dispositivos de forma remota usando la acción de reinicio de dispositivos de Microsoft Intune.
+keywords: ''
+author: vhorne
+ms.author: victorh
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8ab2bf622211c1a81ca9732aabebea43b5b0dcc4
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 1bd5a01b8aac91c3bd6ea033d62d41e19aab65f8
+ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/17/2018
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Reinicio remoto de los dispositivos con Intune
 
@@ -41,7 +41,7 @@ La acción de dispositivo **Reiniciar** permite que se reinicie el dispositivo e
 ## <a name="how-to-restart-a-device"></a>Cómo reiniciar un dispositivo
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En la hoja **Intune**, elija **Dispositivos**.
 4. En la hoja **Dispositivos**, pulse **Todos los dispositivos**.
 5. En la lista de dispositivos que administra, elija un dispositivo, **…Más** y la acción de dispositivo remoto **Reiniciar**.

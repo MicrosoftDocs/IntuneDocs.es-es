@@ -1,34 +1,35 @@
 ---
-title: Escala de tiempo de la entidad de usuario de Almacenamiento de datos | Microsoft Docs
-description: Almacenamiento de datos de Intune representa los usuarios en una escala de tiempo.
+title: Escala de tiempo de la entidad de usuario de Almacenamiento de datos
+titlesuffix: Microsoft Intune
+description: Sepa cómo el almacenamiento de datos de Intune representa los usuarios en una escala de tiempo.
 keywords: Almacenamiento de datos de Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 363D148E-688F-4830-B6DE-AB4FE3648817
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e72f60b9ad604f756f74b1ba7cbbde7e5c2ab9f8
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7448954fce2b81c5783845c9fbdaaebf43fdf326
+ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 03/16/2018
 ---
-# <a name="user-lifetime-representation-in-the-intune-data-warehouse"></a>Representación de la duración del usuario en el Almacenamiento de datos de Intune
+# <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>Representación de la duración del usuario en el Almacenamiento de datos de Microsoft Intune
 
 Puede usar el mes de las instantáneas de datos almacenadas en Almacenamiento de datos de Intune para responder las preguntas sobre las tendencias basadas en el tiempo. Por ejemplo, puede consultar el número de usuarios que se agregan durante un mes. También podría preguntar el número de usuarios que se quitó del sistema.
 
-Para proporcionar esta información, el almacenamiento de datos almacena información histórica. Esto significa que puede hacer seguimiento de la duración de una entidad. El almacenamiento registra cuando se creó una entidad, cuando cambia el estado de la entidad y cuándo se elimina la entidad. Con el historial que se capturó con instantáneas diarias de medidas cuantitativas, puede comparar un día con el día anterior, y así sucesivamente.
+Para proporcionar esta información de tipo, el almacenamiento de datos almacena información histórica. El almacenamiento de datos puede hacer seguimiento de la duración de una entidad. Este almacenamiento registra cuándo se creó una entidad, cuándo cambia el estado de la entidad y cuándo se elimina la entidad. Con el historial que se capturó con instantáneas diarias de medidas cuantitativas, puede comparar un día con el día anterior, y así sucesivamente.
 
 Trabajar con las duraciones de las entidades puede resultar confuso, porque las entidades cambian de estado. Esto significa que si observa una instantánea el día 30, es posible que un registro de usuario no exista con un estado activo en los datos, mientras que el día 29 y 28, el registro de la entidad puede existir como activo. Y, antes del día 28, el usuario no existía en absoluto.
 
-Esto puede ser más claro si se recorre la duración de una entidad.
+Este escenario puede ser más claro si se recorre la duración de una entidad.
 
 Imaginemos que el 01/06/2017 se asigna una licencia al usuario **John Smith**. La tabla **Usuario** tendría entonces la entrada siguiente: 
  
@@ -75,5 +76,5 @@ Toda persona que quiera ver solo las entidades de dimensiones que existen actual
 
 ## <a name="next-steps"></a>Pasos siguientes
 
- - Para más información sobre la entidad **Usuario actual**, consulte [Referencia de la entidad de usuario actual](reports-ref-current-user.md).
- - Para más información sobre la entidad **Usuario**, consulte [Referencia de la entidad de usuario](reports-ref-user.md).
+ - Para más información sobre la entidad **Usuario actual**, vea [Referencia de la entidad de usuario actual](reports-ref-current-user.md).
+ - Para más información sobre la entidad **Usuario**, vea [Referencia de la entidad de usuario](reports-ref-user.md).
