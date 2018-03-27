@@ -1,25 +1,25 @@
 ---
 title: Opciones de directivas de Android for Work
-description: "Cree directivas que controlen la configuración y las características en los dispositivos Android for Work que administra con Intune."
-keywords: 
+description: Cree directivas que controlen la configuración y las características en los dispositivos Android for Work que administra con Intune.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 02/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 35a53076-74d6-486d-b201-e0da2e170008
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0938e4b788ef11a773854531f570e63809389fad
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: e42d33b4cc69e6b2cc836e2236c508d97c2245fe
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="android-for-work-policy-settings-in-microsoft-intune"></a>Opciones de directivas de Android for Work en Microsoft Intune
 
@@ -63,8 +63,8 @@ Si el valor que busca no aparece en este tema, puede crearlo mediante una direct
 ## <a name="custom-policy-settings"></a>Configuración de directivas personalizadas
 Use la **directiva de configuración personalizada de Android for Work** de Microsoft Intune para implementar las opciones de configuración de OMA-URI, que sirve para controlar características en dispositivos Android for Work. Se trata de una configuración estándar que muchos fabricantes de dispositivos móviles usan para controlar las características del dispositivo.
 
-Esta capacidad está pensada para que se puedan implementar las opciones de configuración de Android que no se pueden definir con directivas de Intune.
-Intune admite un número limitado de directivas personalizadas de Android en este momento. Vea los ejemplos de este tema para averiguar qué directivas puede configurar.
+Esta funcionalidad está pensada para que se puedan implementar las opciones de configuración de Android que no se pueden definir con directivas de Intune.
+Actualmente, Intune admite un número limitado de directivas personalizadas de Android. Vea los ejemplos de este tema para averiguar qué directivas puede configurar.
 
 ### <a name="general-settings"></a>Configuración general
 
@@ -79,7 +79,7 @@ Intune admite un número limitado de directivas personalizadas de Android en est
     |--------|--------------------|
     |**Nombre de la configuración**|Escriba un nombre único para el valor OMA-URI que le ayude a identificarlo en la lista de valores de configuración.|
     |**Descripción del valor**|Proporcione una descripción que ofrezca una visión general del valor y otra información relevante que le ayude a encontrarlo.|
-    |**Tipo de datos**|Seleccione el tipo de fecha en que especificará este valor OMA-URI. Elija entre las siguientes opciones **Cadena, Cadena (XML), Fecha y hora, Entero, Punto flotante** o **Booleano**.|
+    |**Tipo de datos**|Seleccione el tipo de fecha en que especificará este valor OMA-URI. Elija entre las siguientes las opciones **Cadena, Cadena (XML), Fecha y hora, Entero, Punto flotante** o **Booleano**.|
     |**OMA-URI (distingue mayúsculas de minúsculas)**|Especifique el OMA-URI para el que desee suministrar un valor.|
     |**Valor**|Especifique el valor asociado con el OMA-URI especificado anteriormente.|
 
@@ -88,5 +88,5 @@ Intune admite un número limitado de directivas personalizadas de Android en est
 - [Crear un perfil de Wi-Fi con una clave precompartida](pre-shared-key-wi-fi-profile.md)
 - [Uso de una directiva personalizada para crear un perfil de VPN por aplicación para dispositivos Android](per-app-vpn-for-android-pulse-secure.md)
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

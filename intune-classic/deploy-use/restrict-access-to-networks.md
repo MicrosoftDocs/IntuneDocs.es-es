@@ -1,25 +1,25 @@
 ---
 title: Proteger el acceso a redes con Cisco ISE
 description: Use Cisco ISE con Intune de forma que los dispositivos se inscriban y cumplan la directiva de Intune antes de que tengan acceso al Wi-Fi y a la VPN controlados por Cisco ISE.
-keywords: 
-author: arob98
+keywords: ''
+author: dougeby
 ms.author: angrobe
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5631bac3-921d-438e-a320-d9061d88726c
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 51b3763faa95adcbfe76580e32f5a42bb615c9d9
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e455f291d9bfdb655f6c66cad7bf859a864e756d
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="using-cisco-ise-with-microsoft-intune"></a>Usar Cisco ISE con Microsoft Intune
 
@@ -100,7 +100,7 @@ Asegúrese de que todo el texto está en una única línea.
 
 |Valor del Portal de Azure AD|Campo correspondiente del Portal de ISE|
 |-------------------|---------------------------------|
-|Extremo de API de Microsoft Azure AD Graph|Dirección URL de detección automática|
+|Punto de conexión de la API de Microsoft Azure AD Graph|Dirección URL de detección automática|
 |Punto de conexión de token de OAuth 2.0|Dirección URL de emisión de token|
 |Actualizar el código con el identificador de cliente|Identificador de cliente|
 
@@ -187,6 +187,6 @@ Cuando un usuario decide inscribirlo, se le redirige al proceso de inscripción 
 Existe también un [conjunto descargable de instrucciones de inscripción](https://gallery.technet.microsoft.com/End-user-Intune-enrollment-55dfd64a) que puede usar para crear instrucciones personalizadas para su experiencia de usuario.
 
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 
 [Guía del administrador del motor de los servicios de identidad de Cisco, versión 2.1](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html#task_820C9C2A1A6647E995CA5AAB01E1CDEF)

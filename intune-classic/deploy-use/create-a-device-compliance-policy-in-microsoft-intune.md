@@ -1,25 +1,25 @@
 ---
 title: Crear una directiva de cumplimiento de dispositivos
-description: "Cree una directiva de cumplimiento normativo para ayudar a proteger los dispositivos móviles y equipos utilizados para acceder a los datos de su compañía."
-keywords: 
+description: Cree una directiva de cumplimiento normativo para ayudar a proteger los dispositivos móviles y equipos utilizados para acceder a los datos de su compañía.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 10/12/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5336dac0-a2cc-4cd4-8511-67e4f95bd700
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1e37e5f490254efedf56a383e612f934925be75e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 03719051179a30b0cc543098861f1b480c66082a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-a-device-compliance-policy-in-microsoft-intune"></a>Crear una directiva de cumplimiento normativo de dispositivos en Microsoft Intune
 
@@ -56,7 +56,7 @@ Para especificar el tiempo del que dispone el dispositivo para protegerse antes 
 En la siguiente tabla se muestran las opciones de configuración de directiva de cumplimiento normativo y las plataformas en las que se admiten.
 
 -------------
-|Configuración|iOS|Android|Windows|
+|Setting|iOS|Android|Windows|
 |-----|----|-----|-----|
 |Requerir una contraseña para desbloquear dispositivos móviles|iOS 6 y versiones posteriores|Android 4.0 y versiones posteriores <br>Samsung KNOX Standard 4.0 y posterior|Windows Phone 8.1 y versiones posteriores|
 |Permitir contraseñas sencillas|iOS 6 y versiones posteriores|No compatible|Windows Phone 8.1 y versiones posteriores|
@@ -65,11 +65,11 @@ En la siguiente tabla se muestran las opciones de configuración de directiva de
 |Número mínimo de conjuntos de caracteres|iOS 6 y versiones posteriores|No disponible|Windows Phone 8.1 y versiones posteriores <br>Windows RT<br> Windows RT 8.1 <br>Windows 8.1|
 |Calidad de contraseña|No disponible|Android 4.0 y versiones posteriores <br>Samsung KNOX Standard 4.0 y posterior|No disponible|
 |Minutos de inactividad antes de que se pida la contraseña|iOS 6 y versiones posteriores|Android 4.0 y versiones posteriores<br>Samsung KNOX Standard 4.0 y posterior|Windows Phone 8.1 y versiones posteriores<br>Windows RT y Windows RT 8.1<br>Windows 8.1|
-|Caducidad de contraseña (días)|iOS 6 y versiones posteriores|Android 4.0 y versiones posteriores<br>Samsung KNOX Standard 4.0 y posterior|Windows Phone 8.1 y versiones posteriores<br>Windows RT y Windows RT 8.1<br>Windows 8.1|
+|Expiración de contraseña (días)|iOS 6 y versiones posteriores|Android 4.0 y versiones posteriores<br>Samsung KNOX Standard 4.0 y posterior|Windows Phone 8.1 y versiones posteriores<br>Windows RT y Windows RT 8.1<br>Windows 8.1|
 |Recordar el historial de contraseñas|iOS 6 y versiones posteriores|Android 4.0 y versiones posteriores<br>Samsung KNOX Standard 4.0 y posterior|Windows Phone 8.1 y versiones posteriores<br>Windows RT y Windows RT 8.1<br>Windows 8.1|
 |Impedir la reutilización de contraseñas anteriores|iOS 6 y versiones posteriores|Android 4.0 y versiones posteriores<br>Samsung KNOX Standard 4.0 y posterior|Windows Phone 8.1 y versiones posteriores<br>Windows RT y Windows RT 8.1<br>Windows 8.1|
 |Requerir una contraseña cuando el dispositivo vuelva de un estado de inactividad| No disponible| No disponible|Windows 10 Mobile|
-|Requerir cifrado en dispositivo móvil|No aplicable|Android 4.0 y versiones posteriores<br>Samsung KNOX Standard 4.0 y posterior|Windows Phone 8.1 y versiones posteriores<br> Windows 8.1|
+|Requerir cifrado en dispositivo móvil|No disponible|Android 4.0 y versiones posteriores<br>Samsung KNOX Standard 4.0 y posterior|Windows Phone 8.1 y versiones posteriores<br> Windows 8.1|
 |Requerir que se informe del mantenimiento correcto de los dispositivos| No disponible| No disponible|Windows <br>Windows 10 Mobile|
 |El dispositivo no debe estar descodificado o descifrado|iOS 6 y versiones posteriores|Android 4.0 y versiones posteriores<br>Samsung KNOX Standard 4.0 y posterior|No disponible|
 |La cuenta de correo electrónico debe administrarse mediante Intune|iOS 6 y versiones posteriores|No disponible| No disponible|
@@ -80,12 +80,12 @@ En la siguiente tabla se muestran las opciones de configuración de directiva de
 Seleccione una de las siguientes opciones para obtener más información sobre la configuración de cumplimiento normativo que se admite en cada plataforma:
 > [!div class="op_single_selector"]
 - [Configuración de directivas de cumplimiento normativo para dispositivos iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [Opciones de configuración de directivas de cumplimiento para dispositivos Android](android-compliance-policy-settings-in-microsoft-intune.md)
+- [Configuración de directivas de cumplimiento para dispositivos Android](android-compliance-policy-settings-in-microsoft-intune.md)
 - [Configuración de directivas de cumplimiento para dispositivos Windows y Windows Phone](windows-compliance-policy-settings-in-microsoft-intune.md)
 
 
 ## <a name="next-steps"></a>Pasos siguientes
 [Implementar y supervisar una directiva de cumplimiento](deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune.md)
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 [Introducción a las directivas de cumplimiento de dispositivos](introduction-to-device-compliance-policies-in-microsoft-intune.md)

@@ -1,25 +1,25 @@
 ---
 title: Agregar aplicaciones
 description: Antes de empezar a implementar aplicaciones con Intune, dedique algo de tiempo a familiarizarse con los conceptos presentados en este tema.
-keywords: 
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 07/13/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 2b770f4f-6d36-41e4-b535-514b46e29aaa
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 788e8a7f15566c4b15fec09f3e861d9380278e3f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 69c3f671fdf1ac0d281e484f9090356a3ce246a8
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="add-apps-with-microsoft-intune"></a>Agregar aplicaciones con Microsoft Intune
 
@@ -62,11 +62,11 @@ El editor de software de Microsoft Intune se inicia al agregar o modificar aplic
 Antes de empezar a utilizar el editor de software, debe instalar la versión completa de [Microsoft .NET Framework 4.0](https://www.microsoft.com/download/details.aspx?id=17851). Tras instalarlo, puede que tenga que reiniciar el equipo para que el editor de software se abra correctamente.
 
 ## <a name="cloud-storage-space"></a>Espacio de almacenamiento en nube
-Todas las aplicaciones que cree con el tipo de instalación del instalador de software se cargan en el almacenamiento en nube de Microsoft Intune. Una suscripción de prueba de Intune incluye 2 gigabytes (GB) de almacenamiento en nube destinados a almacenar actualizaciones y aplicaciones administradas. Una suscripción completa incluye 20 GB de espacio de almacenamiento.
+Todas las aplicaciones que cree con el tipo de instalación del instalador de software se cargan en el almacenamiento en nube de Microsoft Intune. Una suscripción de prueba de Intune incluye 2 gigabytes (GB) de almacenamiento en nube que sirve para almacenar actualizaciones y aplicaciones administradas. Una suscripción completa incluye 20 GB de espacio de almacenamiento.
 
-En el nodo **Uso del almacenamiento** del área de trabajo **Administración** puede ver la cantidad de espacio que está usando. Puede adquirir almacenamiento adicional para Intune usando el método de compra original.  Si el importe se le ha facturado o lo ha abonado con tarjeta de crédito, visite el [portal de administración de suscripciones](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions).  De lo contrario, póngase en contacto con su asociado o agente de ventas.
+En el nodo **Uso del almacenamiento** del área de trabajo **Administración** puede ver la cantidad de espacio que está usando. Puede adquirir almacenamiento adicional para Intune mediante el método de compra original.  Si el importe se le ha facturado o lo ha abonado con tarjeta de crédito, visite el [portal de administración de suscripciones](https://portal.office.com/adminportal/home?switchtomodern=true#/subscriptions).  De lo contrario, póngase en contacto con su asociado o agente de ventas.
 
-Los requisitos de espacio de almacenamiento en nube son los siguientes:
+Estos son los requisitos de espacio de almacenamiento en la nube:
 
 -   Todos los archivos de instalación deben encontrarse en la misma carpeta.
 -   El tamaño máximo de archivo de cualquier archivo que se cargue es de 2 GB.

@@ -1,25 +1,25 @@
 ---
-title: "Adición de aplicaciones de línea de negocio de Android a Microsoft Intune"
-titlesuffix: 
-description: "Obtenga información sobre cómo agregar aplicaciones de línea de negocio (LOB) de Android a Microsoft Intune."
-keywords: 
+title: Adición de aplicaciones de línea de negocio de Android a Microsoft Intune
+titlesuffix: ''
+description: Obtenga información sobre cómo agregar aplicaciones de línea de negocio (LOB) de Android a Microsoft Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/09/2018
+ms.date: 03/19/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3f336fb295dba396dad3a399aafc17435edb70b3
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: a5b09f855b6da65edf3c560725b339528f2bcfaa
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-add-android-line-of-business-lob-apps-to-microsoft-intune"></a>Adición de aplicaciones de línea de negocio (LOB) de Android a Microsoft Intune
 
@@ -33,7 +33,7 @@ Una aplicación de línea de negocio (LOB) es aquella que se agrega a Intune des
 ## <a name="step-1---specify-the-software-setup-file"></a>Paso 1: Especificación del archivo de instalación de software
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En el panel **Intune**, elija **Aplicaciones móviles**.
 4. En la carga de trabajo **Mobile Apps**, elija **Administrar** > **Aplicaciones**.
 5. Encima de la lista de aplicaciones, elija **Agregar**.
@@ -48,13 +48,13 @@ Una aplicación de línea de negocio (LOB) es aquella que se agrega a Intune des
 
 ## <a name="step-3---configure-app-information"></a>Paso 3: Configuración de la información de la aplicación
 
-1. En el panel **Agregar aplicación**, elija **Archivo del paquete de aplicaciones**.
-2. En el panel **Información de la aplicación**, agregue los datos de su aplicación. En función de la aplicación que haya elegido, algunos de los valores de este panel pueden haberse rellenado automáticamente:
+1. En el panel **Agregar aplicación**, elija el archivo **Paquete de la aplicación**.
+2. En el panel **Información de la aplicación**, agregue los datos de su aplicación. Dependiendo de la aplicación que haya elegido, algunos de los valores de este panel pueden haberse rellenado automáticamente:
     - **Nombre**: Escriba el nombre de la aplicación que se mostrará en el Portal de empresa. Asegúrese de que todos los nombres de aplicación que usa son únicos. Si el mismo nombre de aplicación existe dos veces, solo se mostrará a los usuarios una de las aplicaciones en el portal de empresa.
     - **Descripción**: Escriba la descripción de la aplicación que se mostrará a los usuarios en el Portal de empresa.
     - **Editor:** escriba el nombre del editor de la aplicación.
     - **Sistema operativo mínimo**: en la lista, elija la versión mínima del sistema operativo en la que se puede instalar la aplicación. Si la aplicación se asigna a un dispositivo con un sistema operativo anterior, no se instalará.
-    - **Omitir la versión de la aplicación**: establezca esta opción en **Sí** si el desarrollador de la aplicación la actualiza automáticamente.
+    - **Ignorar la versión de la aplicación:** seleccione **Sí**, si el desarrollador de la aplicación se actualiza automáticamente.
     - **Categoría**: seleccione una o más de las categorías de aplicaciones integradas, o una categoría que haya creado. Esto facilita que los usuarios puedan encontrar la aplicación cuando exploren el portal de empresa.
     - **Mostrar como aplicación destacada en el Portal de empresa**: la aplicación se muestra de forma destacada en la página principal del Portal de empresa cuando los usuarios buscan aplicaciones.
     - **Dirección URL de información**: opcionalmente, escriba la dirección URL de un sitio web que contenga información sobre esta aplicación. La dirección URL se muestra a los usuarios en el portal de empresa.

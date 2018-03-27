@@ -1,25 +1,25 @@
 ---
-title: "Implementación de aplicaciones"
+title: Implementación de aplicaciones
 description: En este tema se explican los conceptos que es preciso conocer para empezar a implementar aplicaciones con Intune.
-keywords: 
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ad5ea85c-aa2e-4110-a184-172cd0b8f270
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6e3761ad892ff17abdfb8b61516ef56b1fb8318d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 9762c20abb9e4eedded50c92fb10ffb6119be63e
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="deploy-apps-with-microsoft-intune"></a>Implementar aplicaciones con Microsoft Intune
 
@@ -46,7 +46,7 @@ Al implementar aplicaciones, puede elegir una de las siguientes acciones de impl
 
 #### <a name="understand-which-deployment-actions-are-available-for-each-installer-type"></a>Saber qué acciones de implementación están disponibles para cada tipo de instalador
 
-|Tipo de instalador|Instalación requerida|Instalación disponible|Desinstalar|No aplicable|
+|Tipo de instalador|Instalación requerida|Instalación disponible|Desinstalar|No disponible|
 |------------------|--------------------|---------------------|-------------|------------------|
 |Paquete de aplicación de Windows (implementado para un grupo de usuarios)|Sí|Sí|Sí|Sí|
 |Paquete de aplicación de Windows (se implementa en un grupo de dispositivos)|Sí|No|Sí|Sí|

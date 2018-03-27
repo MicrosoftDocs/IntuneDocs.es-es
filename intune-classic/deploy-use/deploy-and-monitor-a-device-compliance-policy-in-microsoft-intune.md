@@ -1,25 +1,25 @@
 ---
 title: Implementar y supervisar una directiva de cumplimiento normativo
 description: Siga las instrucciones paso a paso de este tema para implementar y supervisar una directiva de cumplimiento normativo del dispositivo.
-keywords: 
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d8f246d4-0d86-4c8b-a1bf-9977985506d8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae914e755b809eda55abc5dc069c9ee2897d9ff4
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e24c969206d3e1f34bfee0af46c4398c9d2739a8
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="deploy-and-monitor-a-device-compliance-policy-in-microsoft-intune"></a>Implementar y supervisar una directiva de cumplimiento normativo en Microsoft Intune
 
@@ -69,5 +69,5 @@ Pueden producirse conflictos entre directivas de Intune cuando se aplican varias
 Para obtener información sobre cómo usar la directiva de cumplimiento con directivas de acceso condicional para controlar el acceso a los servicios de su organización, consulte [Restringir el acceso al correo electrónico y los servicios de O365](restrict-access-to-email-and-o365-services-with-microsoft-intune.md).
 
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 [Introducción a las directivas de cumplimiento de dispositivos en Intune](introduction-to-device-compliance-policies-in-microsoft-intune.md)

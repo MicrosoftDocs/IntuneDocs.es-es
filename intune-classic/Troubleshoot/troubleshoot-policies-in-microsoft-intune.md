@@ -1,25 +1,25 @@
 ---
 title: Solucionar problemas de directivas
-description: "Solucionar problemas de configuración de directivas."
-keywords: 
+description: Solucionar problemas de configuración de directivas.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 01/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2e97c47dc2d1744f539f569de4c20ee994d05ffd
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 7f9632a8b769fae5c3ae0fdf7041b968a9707d24
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-policies-in-microsoft-intune"></a>Directivas de solución de problemas en Microsoft Intune
 
@@ -64,31 +64,31 @@ Una vez establecidas las directivas de seguridad a través de MSM o EAS, los dis
 
 Dependiendo de la plataforma del dispositivo, si desea cambiar la directiva a un valor de menos seguro debe restablecer las directivas de seguridad.
 Por ejemplo, en el escritorio de Windows, deslice el dedo desde la derecha para abrir la barra de **Botones de acceso** y seleccione **Configuración** &gt; **Panel de Control**.  Seleccione el applet **Cuentas de usuario** .
-En el menú de navegación izquierdo, hay un vínculo denominado **Restablecer las directivas de seguridad** en la parte inferior. Selecciónelo y luego elija el botón **Restablecer directivas**.
+En el menú de navegación izquierdo, hay un vínculo denominado **Restablecer las directivas de seguridad** en la parte inferior. Elíjalo y, después, elija el botón **Restablecer directivas**.
 En otros dispositivos MDM como Android, Windows Phone 8.1 y posteriores e iOS, es posible que tenga que eliminar la inscripción y volver a hacerla para que pueda aplicar una directiva menos restrictiva.
 
 ## <a name="issues-with-pcs-that-run-the-intune-software-client"></a>Problemas con equipos que ejecutan el cliente de software de Intune
 
-### <a name="microsoft-intune-policy-related-errors-in-policyplatformlog"></a>Errores relacionados con las directivas de Microsoft Intune en policyplatform.log
+### <a name="microsoft-intune-policy-related-errors-in-policyplatformlog"></a>Errores relacionados con la directiva de Microsoft Intune en policyplatform.log
 Para los equipos Windows con el cliente de software de Intune, los errores de directivas del archivo policyplatform.log pueden ser el resultado de opciones de configuración no predeterminadas en el Control de cuentas de usuario (UAC) de Windows en el dispositivo. Algunas opciones de configuración de UAC no predeterminadas pueden afectar a las instalaciones de cliente de Microsoft Intune y a la ejecución de directivas.
 
-#### <a name="to-resolve-uac-issues"></a>Para resolver problemas de UAC
+#### <a name="to-resolve-uac-issues"></a>Para resolver los problemas de UAC
 
 1.  Retire el equipo, como se describe en [Retire devices from Microsoft Intune management (Retirar dispositivos de la administración de Microsoft Intune)](/intune-classic/deploy-use/retire-devices-from-microsoft-intune-management).
 
-2.  Espere 20 minutos a que se quite el software de cliente.
+2.  Espere 20 minutos para que se quite el software de cliente.
 
     > [!NOTE]
     > No intente quitar el cliente desde Programas y características.
 
 3.  En el menú Inicio, escriba **UAC** para abrir Configuración del Control de cuentas de usuario.
 
-4.  Mueva el control deslizante de la notificación a la opción de configuración predeterminada.
+4.  Mueva el control deslizante de las notificaciones a la opción de configuración predeterminada.
 
 ### <a name="error-cannot-obtain-the-value-from-the-computer-0x80041013"></a>ERROR: No se puede obtener el valor del equipo, 0x80041013
 Esto puede ocurrir si la hora del sistema local está desfasada cinco minutos o más. Si el tiempo en el equipo local no está sincronizado, no se podrán llevar a cabo transacciones seguras porque las marcas de tiempo no serán válidas.
 
-Para resolver este problema, establezca la hora del sistema local lo más cercana posible a la hora de Internet o la hora establecida en los controladores de dominio en la red.
+Para resolver este problema, establezca la hora del sistema local de modo que sea lo más parecida posible a la hora de Internet o a la hora establecida en los controladores de dominio de la red.
 
 
 
