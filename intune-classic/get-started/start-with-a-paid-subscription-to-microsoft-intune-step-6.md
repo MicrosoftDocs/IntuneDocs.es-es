@@ -1,25 +1,25 @@
 ---
-title: "Implementación de directivas y aplicaciones"
-description: "Tan pronto como los dispositivos se inscriban en la administración, puede habilitar la configuración de directivas e implementar las aplicaciones a las que se aplicarán."
-keywords: 
+title: Implementación de directivas y aplicaciones
+description: Tan pronto como los dispositivos se inscriban en la administración, puede habilitar la configuración de directivas e implementar las aplicaciones a las que se aplicarán.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 02/14/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e0d8e98f-7dd8-4cbf-887c-a9af63ffe970
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e34079899650307d295130fcbf456eb4ea1f993f
-ms.sourcegitcommit: 22ab1c6a6bfeb4fef9850d12b29829c3fecbbeed
+ms.openlocfilehash: 3da91a23a3aaa7da4f914bb04eda9a2f640db733
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="create-policies-and-publish-apps"></a>Crear directivas y publicar aplicaciones
 

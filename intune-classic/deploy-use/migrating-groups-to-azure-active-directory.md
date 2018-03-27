@@ -1,23 +1,23 @@
 ---
-title: "Migración a grupos de Azure Active Directory"
-description: "Migración de grupos de Intune a Azure AD"
-keywords: 
-author: arob98
+title: Migración a grupos de Azure Active Directory
+description: Migración de grupos de Intune a Azure AD
+keywords: ''
+author: dougeby
 ms.author: angrobe
 manager: angerobe
 ms.date: 12/22/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 03b69afa-3548-4033-9039-191528f3fd99
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: 5eb6a72abd28b566b7588e56647787dc669706bc
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: aac152f26ac3d91536c294dd1f62480fcc8f7db6
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="a-new-way-of-using-groups-in-intune"></a>Una nueva manera de usar grupos en Intune
 
@@ -26,7 +26,7 @@ ms.lasthandoff: 10/10/2017
 Hemos escuchado sus comentarios y estamos realizando algunos cambios sobre cómo trabaja con los grupos en Microsoft Intune.
 Estamos en el proceso de migrar todos nuestros grupos de Intune de clientes a los grupos de seguridad de Azure Active Directory.
 
-La ventaja es que ahora usará la misma experiencia de grupos en Enterprise Mobility + Security y en las aplicaciones de Azure AD. Además, podrá usar PowerShell y API Graph para extender y personalizar esta nueva función.
+La ventaja es que ahora usará la misma experiencia de grupos en Enterprise Mobility + Security y en las aplicaciones de Azure AD. Además, podrá usar PowerShell y Graph API para extender y personalizar esta nueva función.
 
 Los grupos de seguridad de Azure AD admiten todos los tipos de implementaciones de Intune para los usuarios y los dispositivos. Además, puede usar los grupos dinámicos de Azure AD que se actualizan automáticamente basándose en los atributos que proporcione. Por ejemplo, puede crear un grupo de dispositivos que ejecute iOS 9. Cuando un nuevo dispositivo que ejecute iOS 9 se inscriba, se agregará automáticamente al grupo dinámico.
 

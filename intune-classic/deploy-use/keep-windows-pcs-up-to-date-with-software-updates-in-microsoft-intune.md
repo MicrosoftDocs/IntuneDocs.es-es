@@ -1,24 +1,24 @@
 ---
 title: Actualizaciones de software para equipos Windows
-description: "Intune ayuda a mantener actualizados los equipos administrados garantizando la rápida instalación de las revisiones y actualizaciones de software más recientes."
-keywords: 
-author: arob98
-ms.author: angrobe
-manager: angrobe
+description: Intune ayuda a mantener actualizados los equipos administrados garantizando la rápida instalación de las revisiones y actualizaciones de software más recientes.
+keywords: ''
+author: dougeby
+ms.author: dougeby
+manager: dougeby
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c31d1e44b4b96995223f4294655d8e0730170f47
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 39037298fdec43051bd9486154f82979ed57af4a
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Mantener los equipos Windows al día con las actualizaciones de software de Microsoft Intune
 

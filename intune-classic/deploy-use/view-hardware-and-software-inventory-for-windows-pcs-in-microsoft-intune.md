@@ -1,24 +1,24 @@
 ---
-title: "Visualización del inventario de software y hardware para equipos Windows"
-description: "Cómo ver información de hardware y software sobre escritorios de Windows que administra como PC con el cliente de software de Intune."
-keywords: 
-author: arob98
+title: Vea el inventario de software y hardware para equipos Windows
+description: Cómo ver información de hardware y software sobre escritorios de Windows que administra como PC con el cliente de software de Intune.
+keywords: ''
+author: dougeby
 ms.author: angrobe
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3c10f4c9-520b-4864-92fc-a45a9f640ad4
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d985da553637e684f4773848fa8832e4aadd1775
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 3d6ac1e0460681b315916327cdfeb2b6b1499d23
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>Visualización del inventario de software y hardware para equipos Windows
 
@@ -54,7 +54,7 @@ Intune recopila información detallada sobre el hardware y software de los escri
 
 ## <a name="to-refresh-computer-inventory-to-ensure-it-is-current"></a>Para actualizar el inventario de equipos a fin de asegurarse de que está al día
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), seleccione **Grupos** &gt; **Todos los dispositivos** (u otro grupo que contenga el PC para el que quiera actualizar el inventario).
+1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), seleccione **Grupos** &gt; **Todos los dispositivos**  (u otro grupo que contenga el PC para el que quiera actualizar el inventario).
 
 2.  Seleccione un PC o mantenga presionada la tecla **Ctrl** para seleccionar varios PC.
 
@@ -64,6 +64,6 @@ Intune recopila información detallada sobre el hardware y software de los escri
 
     Se abre el cuadro de diálogo **Estado de la tarea** , que muestra las tareas remotas actuales, el estado de la tarea, el nombre del dispositivo y los errores notificados, y proporciona un vínculo a información de solución de problemas, si es necesario.
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 
 [Tareas comunes de administración de equipos Windows con el cliente de software de Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

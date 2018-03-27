@@ -1,25 +1,25 @@
 ---
 title: Inscribir dispositivos
-description: "La administración de dispositivos móviles (MDM) hace uso de la inscripción para incluir dispositivos en la administración y permitir el acceso a los recursos."
-keywords: 
+description: La administración de dispositivos móviles (MDM) hace uso de la inscripción para incluir dispositivos en la administración y permitir el acceso a los recursos.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 09/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8fc415f7-0053-4aa5-8d2b-03202eca4b87
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b28ea0220425c3def2594fa9ddf795b33aaafc3d
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 99a4273a5f3ef2e1696d2fdc1c2a9b9f251b5b87
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Inscribir dispositivos para administrarlos en Intune
 
@@ -43,38 +43,38 @@ En la tabla siguiente se muestran los métodos de inscripción de Intune, así c
 
 | **Método** |  **¿Se requiere borrado?** |    **Afinidad**    |   **Bloqueo** | **Detalles** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | No|    Sí |   No | [Más información](prerequisites-for-enrollment.md).|
-|**[DEM](#dem)**|   No |No |No  | [Más información](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).|
+|**[BYOD](#byod)** | No|    Sí |   No | [Más información](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|   No |No |No  | [Más información](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 |**[DEP](#dep)**|   Sí |   Opcional |  Opcional|[Más información](ios-device-enrollment-program-in-microsoft-intune.md)|
-|**[USB-SA](#usb-sa)**| Sí |   Opcional |  No| [Más información](ios-setup-assistant-enrollment-in-microsoft-intune.md).|
-|**[USB-Direct](#usb-direct)**| No |    No  | No|[Más información](ios-direct-enrollment-in-microsoft-intune.md).|
+|**[USB-SA](#usb-sa)**| Sí |   Opcional |  No| [Más información](ios-setup-assistant-enrollment-in-microsoft-intune.md)|
+|**[USB-Direct](#usb-direct)**| No |    No  | No|[Más información](ios-direct-enrollment-in-microsoft-intune.md)|
 
 **Métodos de inscripción de Windows**
 
 | **Método** |  **¿Se requiere borrado?** |    **Afinidad**    |   **Bloqueo** | **Detalles**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | No|    Sí |   No | [Más información](prerequisites-for-enrollment.md).|
-|**[DEM](#dem)**|   No |No |No  |[Más información](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).|
+|**[BYOD](#byod)** | No|    Sí |   No | [Más información](prerequisites-for-enrollment.md)|
+|**[DEM](#dem)**|   No |No |No  |[Más información](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Métodos de inscripción de Android**
 
 | **Método** |  **¿Se requiere borrado?** |    **Afinidad**    |   **Bloqueo** | **Detalles**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | No|    Sí |   No | [Más información](prerequisites-for-enrollment.md).|
+|**[BYOD](#byod)** | No|    Sí |   No | [Más información](prerequisites-for-enrollment.md)|
 |**[DEM](#dem)**|   No |No |No  |[Más información](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Métodos de inscripción de Android for Work**
 
 | **Método** |  **¿Se requiere borrado?** |    **Afinidad**    |   **Bloqueo** | **Detalles**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | No|    Sí |   No | [Más información](prerequisites-for-enrollment.md).|
+|**[BYOD](#byod)** | No|    Sí |   No | [Más información](prerequisites-for-enrollment.md)|
 |**[DEM](#dem)**|   No |No |No  |[Más información](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md)|
 
 **Métodos de inscripción de macOS**
 
 | **Método** |  **¿Se requiere borrado?** |    **Afinidad**    |   **Bloqueo** | **Detalles**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | No|    Sí |   No | [Más información](prerequisites-for-enrollment.md).|
+|**[BYOD](#byod)** | No|    Sí |   No | [Más información](prerequisites-for-enrollment.md)|
 
 
 Para ver una serie de preguntas que pueden ayudarle a decidir el método adecuado, vea [Elegir cómo inscribir dispositivos móviles](/intune-classic/get-started/choose-how-to-enroll-devices1).

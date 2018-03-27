@@ -1,25 +1,25 @@
 ---
 title: Administrar aplicaciones iOS adquiridas por volumen
-description: "Use Intune para administrar las aplicaciones que compra por volumen a Apple importando la información de licencia desde la App Store, realizando el seguimiento de la cantidad de licencias usadas y evitando instalar más copias de la aplicación de las que posee."
-keywords: 
+description: Use Intune para administrar las aplicaciones que compra por volumen a Apple importando la información de licencia desde la App Store, realizando el seguimiento de la cantidad de licencias usadas y evitando instalar más copias de la aplicación de las que posee.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 10/11/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1dafc28a-7f8b-4fe0-8619-f977c93d1140
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5140d2fa04a229dda0896a74333801899f5946e2
-ms.sourcegitcommit: f3b8fb8c47fd2c9941ebbe2c047b7d0a093e5a83
+ms.openlocfilehash: 2b05007a7c2d6fa1719b0f298f0e7981e735042e
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Administrar aplicaciones de iOS compradas a través de un programa de compras por volumen con Microsoft Intune
 
@@ -42,8 +42,8 @@ Antes de empezar, es necesario obtener un token de PCV de Apple y cargarlo en la
 * Si usó anteriormente un token de PCV con otro producto, debe generar uno nuevo para usarlo con Intune.
 * La validez de cada token es de un año.
 * De forma predeterminada, Intune se sincroniza con el servicio PCV de Apple dos veces al día. Puede iniciar una sincronización manual en cualquier momento.
-* Después de importar el token de PCV en Intune, no importe el mismo token en otra solución de administración de dispositivos. Si lo hace, podría perder la asignación de licencias y los registros de usuario.
-* Antes de empezar a usar el PCV de iOS con Intune, quite todas las cuentas de usuario de PCV existentes creadas con otros proveedores de administración de dispositivos móviles (MDM). Intune no sincronizará esas cuentas de usuario en Intune como medida de seguridad. Intune solo sincronizará los datos del servicio PCV de Apple que se creó mediante Intune.
+* Después de importar el token de PCV en Intune, no importe el mismo token en otra solución de administración de dispositivos. Si lo hace, se podría producir la pérdida de registros de usuario y asignación de licencias.
+* Antes de empezar a usar el PCV de iOS con Intune, quite todas las cuentas de usuario de PCV existentes creadas con otros proveedores de administración de dispositivos móviles (MDM). Como medida de seguridad, Intune no sincronizará esas cuentas de usuario en Intune. Intune solo sincronizará los datos del servicio PCV de Apple que se creó mediante Intune.
 * Solo se pueden implementar aplicaciones de PCV para iOS en dispositivos de usuarios que se han inscrito con el protocolo de inscripción de dispositivos (DEP) si está configurada la afinidad del usuario con el dispositivo.
 
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Para obtener y cargar un token de PCV de Apple
@@ -85,5 +85,5 @@ Puede supervisar qué aplicaciones de PCV están implementadas y el número de l
 > [!TIP]
 > También puede usar **Filtros** de aplicación para examinar el estado de la instalación de cada aplicación.
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 [Implementar aplicaciones en Microsoft Intune](deploy-apps-in-microsoft-intune.md)

@@ -1,25 +1,25 @@
 ---
 title: Aplicaciones bloqueadas y permitidas para KNOX
 description: Perfil personalizado para crear una lista de aplicaciones permitidas y bloqueadas para KNOX
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 11/02/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bbc8e0df-7bf3-494e-8bc4-dac59a98ab41
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ee5279c91eeaa2d75044a156ebe9c4b100bd8047
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: a47e1388f640f96c2650e284ae0a5311fd816ba7
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="use-custom-policies-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Uso de directivas personalizadas para permitir y bloquear aplicaciones para dispositivos Samsung KNOX Standard
 
@@ -70,5 +70,5 @@ La próxima vez que se registre cada dispositivo de destino, se aplicará la con
  
 Cuando se selecciona una directiva implementada, puede ver más información acerca de la implementación en la parte inferior de la lista de directivas.
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 [Configuración de directivas de Android y Samsung KNOX en Microsoft Intune](android-policy-settings-in-microsoft-intune.md)

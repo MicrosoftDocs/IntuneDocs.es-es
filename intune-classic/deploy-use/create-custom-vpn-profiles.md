@@ -1,27 +1,27 @@
 ---
 title: Configuraciones personalizadas para perfiles de VPN de Microsoft Intune
 description: Utilice las configuraciones personalizadas para crear perfiles de VPN en Intune.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4c0bd439-3b58-420b-9a9a-282886986786
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab235f10c8c91e707c623eca5168ff75de234f32
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 6139b656c69b58bdbdd02e296f8a061dd598a1c6
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
-# <a name="custom-configurations-for-microsoft-intune-vpn-profiles"></a>Configuraciones personalizadas para perfiles de VPN de Microsoft Intune
+# <a name="custom-configurations-for-microsoft-intune-vpn-profiles"></a>Configuraciones personalizadas para perfiles de VPN en Microsoft Intune
 
 [!INCLUDE[classic-portal](../includes/classic-portal.md)]
 
@@ -32,7 +32,7 @@ Puede usar directivas de configuración personalizadas de Intune para crear perf
 * Dispositivos Android for Work
 * Dispositivos inscritos que ejecutan Windows 8.1 y versiones posteriores
 * Dispositivos que ejecutan Windows Phone 8,1 y versiones posteriores
-* Dispositivos inscritos que ejecutan Windows 10 Escritorio
+* Dispositivos inscritos que ejecutan Windows 10 Desktop
 * Dispositivos que ejecutan Windows 10 Mobile
 
 Este tipo de directiva puede ser útil cuando las directivas estándar de VPN de Intune no contienen la configuración que quiere usar.
@@ -45,11 +45,11 @@ Este tipo de directiva puede ser útil cuando las directivas estándar de VPN de
 
    ![Cuadro de diálogo de configuración personalizada de perfil de VPN](./media/Intune_Add_VPN_URI.png)
 
-   4.  Una vez que haya escrito todas las opciones de configuración del URI, elija **Guardar directiva** y, después, impleméntela.
+   4.  Una vez que haya escrito todas las opciones de configuración del identificador URI, elija **Guardar directiva** y, después, impleméntela.
 
 Después, [implemente la directiva](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#deploy-a-configuration-policy) de manera normal.
 
-## <a name="example-uri-settings"></a>Ejemplo de la configuración de URI
+## <a name="example-uri-settings"></a>Configuración de identificador URI de ejemplo
 
 Estas opciones de configuración pueden usarse para crear una configuración personalizada para una VPN en una empresa ficticia denominada Contoso.
 Para ver los detalles completos de todas las opciones que puede usar, vea [VPNv2 CSP](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx).
@@ -163,5 +163,5 @@ Ejemplos:
 > - El valor predeterminado es *WHITELIST* si se proporciona un valor de PackageList
 
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 [Conexiones VPN en Microsoft Intune](vpn-connections-in-microsoft-intune.md)

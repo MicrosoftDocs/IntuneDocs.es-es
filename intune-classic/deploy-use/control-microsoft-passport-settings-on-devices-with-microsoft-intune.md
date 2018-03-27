@@ -1,25 +1,25 @@
 ---
-title: "Control de la configuración de Windows Hello para empresas en los dispositivos"
-description: "Obtenga información sobre cómo se integra Intune en Windows Hello para empresas, un método alternativo de inicio de sesión que usa Active Directory o una cuenta de Azure Active Directory para reemplazar una contraseña, una tarjeta inteligente o una tarjeta inteligente virtual."
-keywords: 
+title: Control de la configuración de Windows Hello para empresas en los dispositivos
+description: Obtenga información sobre cómo se integra Intune en Windows Hello para empresas, un método alternativo de inicio de sesión que usa Active Directory o una cuenta de Azure Active Directory para reemplazar una contraseña, una tarjeta inteligente o una tarjeta inteligente virtual.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 09/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 402bc5a1-ada3-4c4c-a0de-292d026b4444
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b7b3ab8b266ed4699b6982c26aca173244dc19d0
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 63532456edbaf3579b9b6da8c0f376e7f4409c88
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="control-windows-hello-for-business-settings-on-devices-with-microsoft-intune"></a>Controlar la configuración de Windows Hello para empresas en dispositivos que tienen Microsoft Intune
 
@@ -31,7 +31,7 @@ Hello para empresas permite usar un *gesto de usuario* para iniciar sesión en l
 
 Intune se integra con Hello para empresas de dos maneras:
 
--   Puede usar una directiva de Intune para controlar los gestos que se pueden y no se pueden usar para iniciar sesión.
+-   Puede usar una directiva de Intune para controlar qué gestos pueden usar los usuarios para iniciar sesión.
 
 -   Puede almacenar certificados de autenticación en el proveedor de almacenamiento de claves (KSP) de Windows Hello para empresas. Para obtener más información, consulte [Secure resource access with certificate profiles in Microsoft Intune (Proteger el acceso a los recursos con perfiles de certificado en Microsoft Intune)](secure-resource-access-with-certificate-profiles.md).
 
@@ -54,9 +54,9 @@ Para garantizar que se resuelven los conflictos de directivas y que la directiva
     ![Página de Windows Hello para empresas](../media/passport.png)
 
 2.  Elija una de las siguientes opciones:
-    - **Deshabilitar Windows Hello para empresas en los dispositivos inscritos**. Si no quiere usar Windows Hello para empresas, seleccione esta opción. De esta manera, todas las demás configuraciones en pantalla se deshabilitan.
+    - **Deshabilitar Windows Hello para empresas en los dispositivos inscritos**. Si no quiere usar Windows Hello para empresas, seleccione esta opción. A partir de ese momento, las demás opciones de la pantalla no estarán disponibles.
     - **Habilitar Windows Hello para empresas en los dispositivos inscritos**. Seleccione esta opción si quiere configurar Windows Hello para empresas.
-    - **No configurado**. Seleccione esta opción si no quiere usar Intune para controlar la configuración de Windows Hello para empresas. No se cambiará ninguna de las opciones de configuración de Windows Hello para empresas en los dispositivos Windows 10. Todas las demás configuraciones en pantalla se deshabilitan.
+    - **No configurado**. Seleccione esta opción si no quiere usar Intune para controlar la configuración de Windows Hello para empresas. Las opciones de configuración de Windows Hello para empresas existentes en dispositivos Windows 10 no se cambiarán. Las demás opciones de la pantalla no están disponibles.
 3.  Si ha seleccionado **Habilitar Windows Hello para empresas en los dispositivos inscritos**, configure las opciones necesarias que se deben aplicar a todos los dispositivos Windows 10 y Windows 10 Mobile inscritos.
 4.  Cuando termine, elija **Guardar**.
 
@@ -66,7 +66,7 @@ Para garantizar que se resuelven los conflictos de directivas y que la directiva
 - **Usar un Módulo de plataforma segura (TPM)**. Un chip de TPM ofrece una capa adicional de seguridad de datos.<br>Elija uno de los siguientes valores:
     - **Requerido** (valor predeterminado). Solo los dispositivos que tengan un TPM accesible pueden aprovisionar Windows Hello para empresas.
     - **Preferido**. Los dispositivos intentan primero usar un TPM. Si no está disponible, pueden usar el cifrado de software.
-- **Requerir longitud mínima de PIN**/**Requerir longitud máxima de PIN**. Configura los dispositivos para que usen las longitudes de PIN mínima y máxima que se especifiquen, lo cual garantiza un inicio de sesión seguro. La longitud de PIN predeterminada es de 6 caracteres, pero se puede aplicar una longitud mínima de 4 caracteres. La longitud de PIN máxima es de 127 caracteres.
+- **Requerir longitud mínima de PIN**/**Requerir longitud máxima de PIN**. Configura los dispositivos para que usen las longitudes de PIN mínima y máxima que se especifiquen, lo cual garantiza un inicio de sesión seguro. La longitud de PIN predeterminada es de 6 caracteres, pero puede aplicar una longitud mínima de 4 caracteres. La longitud de PIN máxima es de 127 caracteres.
 - **Requerir minúsculas en el PIN**/**Requerir mayúsculas en el PIN**/**Requerir caracteres especiales en el PIN**. Si quiere aplicar un PIN más seguro, puede requerir el uso de letras mayúsculas, letras minúsculas y caracteres especiales en el PIN. Elija de entre las siguientes opciones:
     - **Permitido**. Los usuarios pueden usar el tipo de carácter en el PIN, pero no es obligatorio.
     - **Requerido**. Los usuarios deben incluir al menos uno de los tipos de carácter en el PIN. Por ejemplo, una práctica habitual consiste en obligar a usar como mínimo una mayúscula y un carácter especial.

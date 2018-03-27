@@ -1,27 +1,27 @@
 ### YamlMime:YamlDocument
 documentType: LandingData
-title: "Documentación de Microsoft Intune"
+title: Documentación de Microsoft Intune
 metadata:
   document_id: 99e91b60-d6a5-44a8-908f-442161fbb077
-  title: "Documentación de Microsoft Intune"
-  description: "Obtenga una introducción rápida a Microsoft Intune. Use el servicio de administración de movilidad empresarial basado en la nube que permite a los empleados ser productivos mientras mantiene protegidos los datos corporativos."
+  title: Documentación de Microsoft Intune
+  description: Obtenga una introducción rápida a Microsoft Intune. Use el servicio de administración de movilidad empresarial basado en la nube que permite a los empleados ser productivos mientras mantiene protegidos los datos corporativos.
   keywords: protect, company, data, Azure, Intune, EMM, device, app, management
-  author: arob98
-  ms.author: angrobe
+  author: dougeby
+  ms.author: dougeby
   manager: dougeby
   ms.date: 10/31/2017
   ms.topic: landing-page
   ms.devlang: na
   ms.service: microsoft-intune
-  ms.openlocfilehash: 134f4053e22797c547f56b2db7876b3d1a56b15c
-  ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+  ms.openlocfilehash: f359e36b07334866a1913e5eebd37a0960fc677d
+  ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
   ms.translationtype: HT
   ms.contentlocale: es-ES
-  ms.lasthandoff: 03/08/2018
+  ms.lasthandoff: 03/22/2018
 sections:
 - items:
   - type: markdown
-    text: "Obtenga una introducción rápida a Microsoft Intune. Use el servicio de administración de movilidad empresarial basado en la nube que permite a los empleados ser productivos mientras mantiene protegidos los datos corporativos. Intune se integra con Azure Active Directory para la identidad y el control de acceso y con Azure Information Protection para la protección de datos."
+    text: Obtenga una introducción rápida a Microsoft Intune. Use el servicio de administración de movilidad empresarial basado en la nube que permite a los empleados ser productivos mientras mantiene protegidos los datos corporativos. Intune se integra con Azure Active Directory para la identidad y el control de acceso y con Azure Information Protection para la protección de datos.
 - items:
   - type: list
     style: cards
@@ -29,40 +29,40 @@ sections:
     columns: 2
     items:
     - href: introduction-intune.md
-      html: "<p>Obtenga información acerca de qué hace Intune y cómo funciona.</p>"
+      html: <p>Obtenga información acerca de qué hace Intune y cómo funciona.</p>
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_overview.svg
-      title: "¿Qué es Intune?"
+      title: ¿Qué es Intune?
     - href: get-started-evaluation.md
-      html: "<p>Vea cómo funciona Intune con este sencillo tutorial.</p>"
+      html: <p>Vea cómo funciona Intune con este sencillo tutorial.</p>
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_get-started.svg
-      title: "Introducción"
+      title: Introducción
     - href: get-support.md
-      html: "<p>Obtenga información acerca de cómo crear una incidencia de soporte técnico y obtener ayuda cuando lo necesite.</p>"
+      html: <p>Obtenga información acerca de cómo crear una incidencia de soporte técnico y obtener ayuda cuando lo necesite.</p>
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_support.svg
-      title: "Obtención de soporte técnico"
+      title: Obtención de soporte técnico
     - href: whats-new.md
       html: <p>Vea las novedades de Intune de esta semana.</p>
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_whats-new.svg
       title: Novedades
-- title: "Nuevos artículos y entradas de blog"
+- title: Nuevos artículos y entradas de blog
   items:
   - type: paragraph
-    text: "Obtenga la información más actualizada y pertinente que necesita conocer."
+    text: Obtenga la información más actualizada y pertinente que necesita conocer.
   - type: list
     style: cards
     className: cardsM
     columns: 3
     items:
     - href: what-is-intune.md
-      title: "Obtenga información sobre Intune en Azure Portal"
+      title: Obtenga información sobre Intune en Azure Portal
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_portal.svg
     - href: ui-changes.md
-      title: "Vea dónde se encuentran sus características de Intune en Azure Portal"
+      title: Vea dónde se encuentran sus características de Intune en Azure Portal
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_guide.svg
     - href: high-level-architecture.md
@@ -78,54 +78,54 @@ sections:
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_blog.svg
     - href: https://cloudblogs.microsoft.com/enterprisemobility/2017/10/26/intunes-new-troubleshooting-portal-makes-diagnosing-and-resolving-end-user-issues-easier/
-      title: "[Blog] El Portal de solución de problemas facilita el diagnóstico y la resolución de problemas"
+      title: '[Blog] El Portal de solución de problemas facilita el diagnóstico y la resolución de problemas'
       image:
         src: https://docs.microsoft.com/en-us/media/common/i_blog.svg
-- title: "Vídeos"
+- title: Vídeos
   items:
   - type: markdown
     text: '>[!VIDEO https://www.youtube.com/embed/FpkCI6xmsE4]'
   - type: markdown
     text: '>[!VIDEO https://www.youtube.com/embed/Cn29dmgDcIw]'
-- title: "Artículos de planeación"
+- title: Artículos de planeación
   items:
   - type: list
     style: unordered
     items:
-    - html: "<a href=\"/intune/planning-guide\">Guía de implementación, diseño y planeación de Intune</a>"
-    - html: "<a href=\"/intune/migration-guide\">Guía de migración de Intune</a>"
-- title: "Artículos de procedimientos"
+    - html: <a href="/intune/planning-guide">Guía de implementación, diseño y planeación de Intune</a>
+    - html: <a href="/intune/migration-guide">Guía de migración de Intune</a>
+- title: Artículos de procedimientos
   items:
   - type: list
     style: unordered
     items:
-    - html: "<a href=\"/intune/device-enrollment\">Inscripción de dispositivos</a>"
+    - html: <a href="/intune/device-enrollment">Inscripción de dispositivos</a>
     - html: <a href="/intune/device-management">Administrar dispositivos</a>
-    - html: "<a href=\"/intune/app-management\">Administración de aplicaciones</a>"
-    - html: "<a href=\"/intune/device-profiles\">Configuración de dispositivos</a>"
+    - html: <a href="/intune/app-management">Administración de aplicaciones</a>
+    - html: <a href="/intune/device-profiles">Configuración de dispositivos</a>
     - html: <a href="/intune/device-compliance-get-started">Establecimiento del cumplimiento de los dispositivos</a>
-    - html: "<a href=\"/intune/conditional-access\">Configuración del acceso condicional</a>"
+    - html: <a href="/intune/conditional-access">Configuración del acceso condicional</a>
     - html: <a href="/intune/app-protection-policy">Proteger aplicaciones</a>
-    - html: "<a href=\"/intune/mobile-threat-defense\">Configuración de Mobile Threat Defense</a>"
-    - html: "<a href=\"/intune/network-access-control-integrate\">Integración del control de acceso de red</a>"
-    - html: "<a href=\"/intune/role-based-access-control\">Administración de roles</a>"
-    - html: "<a href=\"/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json\">Administración de PC con Windows con el software de cliente de PC de Intune</a>"
-- title: "Artículos de solución de problemas"
+    - html: <a href="/intune/mobile-threat-defense">Configuración de Mobile Threat Defense</a>
+    - html: <a href="/intune/network-access-control-integrate">Integración del control de acceso de red</a>
+    - html: <a href="/intune/role-based-access-control">Administración de roles</a>
+    - html: <a href="/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune?toc=/intune/toc.json">Administración de PC con Windows con el software de cliente de PC de Intune</a>
+- title: Artículos de solución de problemas
   items:
   - type: list
     style: unordered
     items:
-    - html: "<a href=\"/intune/help-desk-operators\">Uso del portal de solución de problemas para ayudar a los usuarios</a>"
+    - html: <a href="/intune/help-desk-operators">Uso del portal de solución de problemas para ayudar a los usuarios</a>
     - html: <a href="/intune/known-issues">Problemas conocidos de Microsoft Intune</a>
-    - html: "<a href=\"/intune/get-support\">Obtener soporte técnico</a>"
-- title: "Artículos de desarrollo y personalización"
+    - html: <a href="/intune/get-support">Obtener soporte técnico</a>
+- title: Artículos de desarrollo y personalización
   items:
   - type: list
     style: unordered
     items:
-    - html: "<a href=\"/intune/custom-settings-configure\">Configuración de los valores personalizados del dispositivo</a>"
-    - html: "<a href=\"/intune/apps-prepare-mobile-application-management\">Preparar aplicaciones de línea de negocio para las directivas de protección de aplicaciones</a>"
-    - html: "<a href=\"/intune/app-sdk\">Preparar aplicaciones de línea de negocio con Intune App SDK</a>"
+    - html: <a href="/intune/custom-settings-configure">Configuración de los valores personalizados del dispositivo</a>
+    - html: <a href="/intune/apps-prepare-mobile-application-management">Preparar aplicaciones de línea de negocio para las directivas de protección de aplicaciones</a>
+    - html: <a href="/intune/app-sdk">Preparar aplicaciones de línea de negocio con Intune App SDK</a>
     - html: <a href="https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview">Trabajar con Intune en Microsoft Graph</a>
     - html: <a href="/intune/reports-nav-intune-data-warehouse">API de Almacenamiento de datos de Intune</a>
 - title: Otros recursos
@@ -133,8 +133,8 @@ sections:
   - type: list
     style: unordered
     items:
-    - html: "<a href=\"https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program\">¿Más de 150 licencias? Aproveche las ventajas de FastTrack</a>"
+    - html: <a href="https://docs.microsoft.com/enterprise-mobility-security/solutions/enterprise-mobility-fasttrack-program">¿Más de 150 licencias? Aproveche las ventajas de FastTrack</a>
     - html: <a href="https://blogs.technet.microsoft.com/enterprisemobility/">Leer el blog del equipo de Enterprise Mobility and Security</a>
-    - html: "<a href=\"https://blogs.technet.microsoft.com/intunesupport/\">Obtener ayuda en el blog de soporte técnico de Intune</a>"
+    - html: <a href="https://blogs.technet.microsoft.com/intunesupport/">Obtener ayuda en el blog de soporte técnico de Intune</a>
     - html: <a href="https://microsoftintune.uservoice.com/forums/291681-ideas">Enviar comentarios sobre Intune en UserVoice</a>
-    - html: "<a href=\"https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc\">Plantear o responder preguntas en el foro de discusión de Intune</a>"
+    - html: <a href="https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune&filter=alltypes&sort=lastpostdesc">Plantear o responder preguntas en el foro de discusión de Intune</a>
