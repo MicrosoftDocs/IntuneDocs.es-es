@@ -1,25 +1,25 @@
 ---
-title: "Solucionar problemas de configuración del cliente"
-description: "Solucione los problemas comunes de configuración de cliente."
-keywords: 
+title: Solucionar problemas de configuración del cliente
+description: Solucione los problemas comunes de configuración de cliente.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 02/22/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e46d292b-1d16-46db-a87f-d53eefa4d22a
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5c9ac6ecc75c25f910a8aecd1632c947c95b26d6
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: f9cb68fcac7abc895f51cf2c8758c2cf59b32759
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-client-setup-in-microsoft-intune"></a>Solucionar los problemas de configuración del cliente en Microsoft Intune
 
@@ -29,7 +29,7 @@ Use la información siguiente como ayuda para solucionar problemas comunes de co
 
 ## <a name="client-installation-fails"></a>Error en la instalación de cliente
 
--   Si no se muestra ninguna alerta de implementación del software cliente para el equipo en la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), compruebe la conectividad a Internet y la configuración proxy del equipo y asegúrese de que el equipo se puede comunicar con la dirección URL del servicio [https://manage.microsoft.com](https://manage.microsoft.com/). Posteriormente vuelva a intentar la instalación del software cliente.
+-   Si no se muestra ninguna alerta de implementación del software cliente para el equipo en la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), compruebe la conectividad a Internet y la configuración proxy del equipo y asegúrese de que el equipo se puede comunicar con la dirección URL del servicio, [https://manage.microsoft.com](https://manage.microsoft.com/). Posteriormente vuelva a intentar la instalación del software cliente.
 
 -   Mediante la configuración de una regla de notificación en el área de trabajo **Administración** , puede enviar un correo electrónico a los destinatarios seleccionados cuando se produzca una alerta de error de implementación del software cliente. Para más información, consulte [Recibir notificaciones mediante alertas de Microsoft Intune](/intune-classic/deploy-use/get-notified-by-alerts).
 

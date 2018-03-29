@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bb7c3bdffb19e26f2f2178c1750d1ef31a02556
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 8f19320df9a9728cdd77e608fc0ad219272a731f
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Configurar Microsoft Intune para el inicio de sesión único para dispositivos iOS
 
@@ -34,7 +34,7 @@ Para aprovechar el inicio de sesión único para dispositivos iOS, debe cumplir 
 
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En el panel **Intune**, elija **Configuración del dispositivo**.
 4. En el panel **Configuración del dispositivo**, en la sección **Administrar**, elija **Perfiles**.
 5. En el panel Perfiles, elija **Crear perfil**.
@@ -90,7 +90,7 @@ Los patrones `http://.com` y `https://.com` coinciden con todas las direcciones 
 
 Indique qué aplicaciones del dispositivo de un usuario final pueden usar la carga de inicio de sesión único.
 
-La matriz `AppIdentifierMatches` debe contener cadenas que coincidan con los identificadores del lote de aplicaciones. Estas cadenas pueden ser coincidencias exactas (por ejemplo: `com.contoso.myapp`) o pueden especificar una coincidencia de prefijo en el identificador del lote mediante el carácter comodín *\. El carácter comodín debe aparecer después de un carácter de punto (.) y solo puede hacerlo una vez, al final de la cadena (por ejemplo: `com.contoso.*`). Cuando se incluye un carácter comodín, se concede acceso a la cuenta a cualquier aplicación cuyo identificador de lote empiece por el prefijo.
+La matriz `AppIdentifierMatches` debe contener cadenas que coincidan con los identificadores del lote de aplicaciones. Estas cadenas pueden ser coincidencias exactas (por ejemplo, `com.contoso.myapp`) o pueden especificar una coincidencia de prefijo en el identificador del lote mediante el carácter comodín \*. El carácter comodín debe aparecer después de un carácter de punto (.) y solo puede hacerlo una vez, al final de la cadena (por ejemplo: `com.contoso.*`). Cuando se incluye un carácter comodín, se concede acceso a la cuenta a cualquier aplicación cuyo identificador de lote empiece por el prefijo.
 
 El campo **Nombre de la aplicación** se usa para agregar un nombre descriptivo que ayude a identificar el identificador de lote.
 

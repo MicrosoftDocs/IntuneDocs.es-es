@@ -1,6 +1,6 @@
 ---
 title: Creación de perfiles de dispositivos iOS o Mac OS con Microsoft Intune - Azure |Microsoft Docs
-description: Agregue o cree un perfil de dispositivo para iOS o Mac OS y después configure los valores de AirPrint, AirPlay, diseño de la pantalla principal, notificaciones de aplicaciones, dispositivo compartido, inicio de sesión único y configuración de filtro de contenido web en Microsoft Intune.
+description: Agregue o cree un perfil de dispositivo para iOS o macOS y después configure los valores de AirPrint, AirPlay, diseño de la pantalla principal, notificaciones de aplicaciones, dispositivo compartido, inicio de sesión único y configuración de filtro de contenido web en Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e3de7d1bccd57da1290987a714416373cbdd2b0d
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: 291ad9cb8b07893f538171c365110618ea376388
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Agregar la configuración de características de dispositivos iOS o Mac OS en Intune
 
@@ -29,7 +29,7 @@ Las características del dispositivo le permiten controlar una serie de opciones
 - Diseño de la pantalla principal
 - Notificaciones de aplicaciones
 - Configuración de un dispositivo compartido
-- Configurar el inicio de sesión único
+- Configuración del inicio de sesión único
 - Filtrar el contenido web
 
 En este artículo se muestran los conceptos básicos para configurar perfiles de características de dispositivos iOS. A continuación, puede consultar otros artículos para configurar valores específicos de la plataforma para los dispositivos.
@@ -38,24 +38,24 @@ En este artículo se muestran los conceptos básicos para configurar perfiles de
 
 1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
 2. Seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
-3. En **Microsoft Intune**, seleccione **Perfiles** y luego **Crear perfil**.
+3. Seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
 4. Introduzca las siguientes propiedades:
 
-  - **Nombre**: escriba un nombre descriptivo para el nuevo perfil.
-  - **Descripción** (opcional pero recomendado): escriba una descripción del perfil.
-  - **Plataforma**: seleccione el tipo de plataforma.
-    - **iOS**
-    - **macOS**
-  - **Tipo de perfil**: seleccione **Características del dispositivo**
-  - **Configuración**: los valores dependen de la plataforma que seleccione. En los siguientes temas se describen los valores de cada tipo de perfil:
+   - **Nombre**: escriba un nombre descriptivo para el nuevo perfil.
+   - **Descripción**: escriba una descripción para el perfil (es opcional, pero se recomienda hacerlo).
+   - **Plataforma**: seleccione el tipo de plataforma:
+     - **iOS**
+     - **macOS**
+   - **Tipo de perfil**: seleccione **Características del dispositivo**.
+   - **Configuración**: los valores dependen de la plataforma que seleccione. En los siguientes temas se describen los valores de cada tipo de perfil:
 
-    - [Configuración de AirPrint para iOS y MacOS](air-print-settings-ios-macos.md)
-    - [Configuración de AirPlay para iOS](airplay-settings-ios.md)
-    - [Configuración de diseño de pantalla principal para iOS](home-screen-settings-ios.md)
-    - [Configuración de notificaciones de aplicación para iOS](app-notification-settings-ios.md)
-    - [Valores de configuración de dispositivo compartido para iOS](shared-device-settings-ios.md)
-    - [Configuración del inicio de sesión único de Intune para dispositivos iOS](sso-ios.md)
-    - [Configuración de filtro de contenido web para iOS](web-content-filter-settings-ios.md)
+     - [Configuración de AirPrint para iOS y MacOS](air-print-settings-ios-macos.md)
+     - [Configuración de AirPlay para iOS](airplay-settings-ios.md)
+     - [Configuración de diseño de pantalla principal para iOS](home-screen-settings-ios.md)
+     - [Configuración de notificaciones de aplicación para iOS](app-notification-settings-ios.md)
+     - [Valores de configuración de dispositivo compartido para iOS](shared-device-settings-ios.md)
+     - [Configuración del inicio de sesión único de Intune para dispositivos iOS](sso-ios.md)
+     - [Configuración de filtro de contenido web para iOS](web-content-filter-settings-ios.md)
 
 5. Cuando haya terminado, seleccione **Aceptar**y elija **Crear** para guardar los cambios.
 

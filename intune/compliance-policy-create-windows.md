@@ -1,23 +1,22 @@
 ---
-title: "Creación de una directiva de cumplimiento de dispositivos Windows en Microsoft Intune"
-titleSuffix: 
+title: Creación de una directiva de cumplimiento de dispositivos Windows en Microsoft Intune - Azure | Microsoft Docs
 description: Cree una directiva de cumplimiento de dispositivos de Microsoft Intune para dispositivos Windows para poder especificar los requisitos que debe cumplir un dispositivo para que sea compatible.
-keywords: 
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 32af54e3e753e7ded3c86d9d44b793da7fe2e9c0
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 211b3c94dd7172d1755e3c12bb4d90dbcf28750d
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-windows-devices-in-intune"></a>Creación de una directiva de cumplimiento de dispositivos para dispositivos Windows en Intune
 
@@ -52,7 +51,7 @@ En la tabla siguiente se describe cómo administrar la configuración de no conf
 ## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Creación de una directiva de cumplimiento en el portal de Azure
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 1. En el panel **Intune**, elija **Cumplimiento del dispositivo**. En **Administrar**, elija **Directivas** y después **Crear directiva**.
 2. Escriba un nombre y una descripción y elija la plataforma a la que quiere que se aplique esta directiva.
 3. Elija **Configuración de valores** para especificar aquí las opciones de **Seguridad del sistema**, **Estado de dispositivos** y **Propiedades del dispositivo**. Cuando termine, elija **Aceptar**.
@@ -177,7 +176,7 @@ Para obtener información sobre cómo funciona el servicio HAS, consulte [Health
 
 - **Minimum OS required:** (Versión mínima de sistema operativo): se admite en Windows 8.1 y Windows 10.
 
-Especifique aquí el número de major.minor.build. El número de versión debe coincidir con la versión devuelta por el comando ```winver```.
+Especifique aquí el número de major.minor.build.CU. El número de versión debe coincidir con la versión devuelta por el comando ```winver```.
 
 Cuando un dispositivo tiene una versión anterior a la versión de sistema operativo especificada, se notifica como no conforme. Además, se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario final puede optar por actualizar el dispositivo, tras lo cual podrá tener acceso a los recursos de la empresa.
 

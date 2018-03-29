@@ -1,25 +1,25 @@
 ---
 title: Solucionar problemas de acceso condicional
-description: "Qué hacer cuando los usuarios no pueden obtener acceso a los recursos a través del acceso condicional de Intune."
-keywords: 
+description: Qué hacer cuando los usuarios no pueden obtener acceso a los recursos a través del acceso condicional de Intune.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 10/24/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 433fc32c-ca9c-4bad-9616-852c72faf996
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5f16e14b32508adf1fc4f3f448f53a7dcad8e137
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 67a2891e4c7a6adcd7bd132c5663c9a78426ea07
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="troubleshoot-conditional-access"></a>Solucionar problemas de acceso condicional
 
@@ -118,7 +118,7 @@ Si estos procedimientos de solución de problemas no resuelven el problema, hay 
 ### <a name="exchange-connector-logs"></a>Registros de Exchange Connector
 
 #### <a name="general-log-information"></a>Información del registro general
-Para ver registros de Exchange Connector, use la [herramienta del visor de seguimiento del servidor]\(herramienta del visor de seguimiento del servidor) (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx'). Esta herramienta requiere que descargue el SDK de Windows Server.
+Para ver registros de Exchange Connector, use la [herramienta del visor de seguimiento del servidor] (herramienta del visor de seguimiento del servidor) (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx'). Esta herramienta requiere que descargue el SDK de Windows Server.
 
 >[!NOTE]
 >Los registros se encuentran en C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs. Los registros se encuentran en una serie de 30 archivos de registro a partir de *Connector0.log* y que acaba en *Connector29.log*. Registra la sustitución de uno a otro después de 10 MB de datos acumulados en un registro. Una vez que los registros lleguen a Connector29, volverán a comenzar en Connector0 de nuevo y sobrescribirán los archivos de registro anteriores.

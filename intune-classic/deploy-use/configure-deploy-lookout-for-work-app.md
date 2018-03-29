@@ -1,24 +1,24 @@
 ---
-title: "Implementación de la aplicación Lookout for Work"
+title: Implementación de la aplicación Lookout for Work
 description: Configure e implemente aplicaciones Lookout for Work para Android.
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 03/21/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 524c4209-ad57-4d35-955e-a00d796bf858
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: sandera
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fd0ad36f40463ab56f1a5ab0a11fa9eeb0c35db4
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 5d56dcf54c4f087dbea0dfcd95a2eebbdf384c00
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="configure-and-deploy-lookout-for-work-app"></a>Configuración e implementación de aplicaciones Lookout for Work
 
@@ -29,7 +29,7 @@ En este artículo se explica cómo configurar e implementar la aplicación Looko
 ## <a name="android-google-play-store-app"></a>Android (aplicación Google Play Store)
 
 1.  En la [Consola de administrador de Microsoft Intune](https://manage.microsoft.com), vaya a **Aplicaciones** y seleccione **Agregar aplicaciones**.
-2.  En la página **Instalación de software** del publicador, seleccione **Vínculo externo** y especifique la dirección URL siguiente: https://play.google.com/store/apps/details?id=com.lookout.enterprise.
+2.  En la página **Instalación de software** del publicador, elija **Vínculo externo** y especifique la siguiente dirección URL: https://play.google.com/store/apps/details?id=com.lookout.enterprise
   >[!NOTE]
   >No haga clic en el cuadro para exigir un explorador administrado.
 
@@ -60,7 +60,7 @@ En este artículo se explica cómo configurar e implementar la aplicación Looko
 
 3. Habilite la autenticación de Azure Active Directory para los usuarios de iOS haciendo lo siguiente:
   1.  Inicie sesión en el [portal de administración de Azure Active Directory](https://manage.windowsazure.com) y vaya a la página de aplicación.
-  2.  Agregue la **aplicación Lookout for Work de iOS** como una **aplicación de cliente nativ**.
+  2.  Agregue la **aplicación Lookout for Work de iOS** como una **aplicación de cliente nativo**.
   ![captura de pantalla del cuadro de diálogo Agregar aplicaciones que muestra la opción de aplicación de cliente nativo](../media/mtp/aad-add-app.png)
   3. Reemplace **com.lookout.enterprise.yourcompanyname** por el ID de agrupación del cliente que ha seleccionado cuando se registró el IPA.
   4.  Agregue un URI de redirección adicional: **&lt;companyportal://code/>** seguido de una versión codificada por URL del URI de redirección original.
@@ -88,7 +88,7 @@ En este artículo se explica cómo configurar e implementar la aplicación Looko
 ## <a name="what-happens-when-the-deployed-app-is-opened-on-the-device"></a>¿Qué ocurre cuando se abre la aplicación implementada en el dispositivo?
 https://github.com/Microsoft/Docs/blob/master/ContributorGuide/index.md Cuando el usuario abre Lookout for Work en el dispositivo, se le pide que active la aplicación y que seleccione la opción Iniciar sesión con Azure Active Directory. En los temas siguientes encontrará un tutorial detallado con el flujo para el usuario final:
 
-* [Se le pide instalar Lookout for Work en un dispositivo Android](https://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
+* [Se le pide que instale Lookout for Work en un dispositivo Android](https://docs.microsoft.com/intune-user-help/you-are-prompted-to-install-lookout-for-work-android)
 
 * [Debe solucionar una amenaza detectada por Lookout for Work en el dispositivo Android](https://docs.microsoft.com/intune-user-help/you-need-to-resolve-a-threat-found-by-lookout-for-work-android)
 

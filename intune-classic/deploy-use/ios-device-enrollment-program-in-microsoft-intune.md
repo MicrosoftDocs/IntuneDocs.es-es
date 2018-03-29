@@ -1,25 +1,25 @@
 ---
-title: "Administración de DEP de Apple para dispositivos iOS"
-description: "Implemente un perfil de inscripción que inscriba dispositivos iOS adquiridos a través del Programa de inscripción de dispositivos (DEP) iOS de forma inalámbrica para administrar dispositivos Apple."
-keywords: 
+title: Administración de DEP de Apple para dispositivos iOS
+description: Implemente un perfil de inscripción que inscriba dispositivos iOS adquiridos a través del Programa de inscripción de dispositivos (DEP) iOS de forma inalámbrica para administrar dispositivos Apple.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
-manager: angrobe
+manager: dougeby
 ms.date: 03/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8ff9d9e7-eed8-416c-8508-efc20fca8578
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 885e3f0608cd367cb23658c342451a4a56e5474d
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: bf47c802291d802ac890aa4ba00cf79d9d2d10f0
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>Inscribir dispositivos iOS de la empresa mediante el Programa de inscripción de dispositivos
 
@@ -30,12 +30,13 @@ Microsoft Intune puede implementar un perfil de inscripción que inscriba dispos
 >[!NOTE]
 >La inscripción DEP no se puede usar con el método del [administrador de inscripción de dispositivos](enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune.md).
 >Además, si los usuarios inscriben dispositivos iOS (por ejemplo, con la aplicación Portal de empresa) y los números de serie de dichos dispositivos se importan y se les asigna un perfil de DEP, se anulará la inscripción de los dispositivos en Intune.
+> Además, macOS no admite actualmente el uso de DEP.
 
 ## <a name="prerequisites-for-enrolling-ios-devices-by-using-apple-dep-management"></a>Requisitos previos para la inscripción de dispositivos iOS mediante la administración de DEP de Apple
 
 - [Instalar un certificado de APNs](set-up-ios-and-mac-management-with-microsoft-intune.md)
 
-- Su organización debe unirse al DEP de Apple y obtener los dispositivos a través de ese programa. Puede consultar los detalles de este proceso en:  [https://deploy.apple.com](https://deploy.apple.com). Las ventajas del programa incluyen dispositivos configurados con manos libres sin necesidad de usar un cable USB para conectar cada dispositivo a un equipo.
+- Su organización debe unirse al DEP de Apple y obtener los dispositivos a través de ese programa. Los detalles de dicho proceso están disponibles en [https://deploy.apple.com](https://deploy.apple.com). Las ventajas del programa incluyen dispositivos configurados con manos libres sin necesidad de usar un cable USB para conectar cada dispositivo a un equipo.
 
 - Antes de poder inscribir dispositivos iOS corporativos con DEP, necesita un token de DEP de Apple. Este token permite a Intune sincronizar información sobre dispositivos corporativos que participan en DEP. También permite a Intune realizar cargas de perfiles de inscripción a Apple y asignar dispositivos a esos perfiles.
 
@@ -130,7 +131,7 @@ En los siguientes pasos, se explica cómo inscribir dispositivos iOS en “día 
 
 ### <a name="assign-dep-devices-for-management"></a>Asignar dispositivos DEP para la administración
 
-1. Vaya al [Portal del programa de inscripción de dispositivos](https://deploy.apple.com) (https://deploy.apple.com) e inicie sesión con su identificador de Apple de empresa.
+1. Vaya al [portal del Programa de inscripción de dispositivos](https://deploy.apple.com) (https://deploy.apple.com) e inicie sesión con su identificador de Apple de empresa.
 
 2. Vaya a **Programa de implementación** &gt; **Programa de inscripción de dispositivos** &gt; **Administrar dispositivos**.
 

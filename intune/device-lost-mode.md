@@ -1,6 +1,6 @@
 ---
 title: Activación del modo perdido de iOS con Microsoft Intune - Azure | Microsoft Docs
-description: Active o inicie el modo perdido para personalizar mediante Microsoft Intune un mensaje que se mostrará en la pantalla de bloqueo de un dispositivo iOS perdido o robado. Además, puede obtener detalles sobre la información de privacidad y seguridad al utilizar la acción de modo perdido.
+description: Active o inicie el modo perdido para personalizar un mensaje que se mostrará en la pantalla de bloqueo de un dispositivo iOS perdido o robado usando Microsoft Intune. Además, puede obtener detalles sobre la información de privacidad y seguridad al usar la acción de modo perdido.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 126a7489-fe3e-43fd-a681-defb2fe0bb66
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 47d6314dfaed546e5b4cff7f93a5540ba512bde9
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 2da88a6146080014b79fbdc1b8c553eae5705195
+ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/20/2018
 ---
 # <a name="enable-lost-mode-on-ios-devices-with-intune"></a>Habilitar el modo perdido en dispositivos iOS con Intune
 
@@ -29,7 +29,7 @@ La acción de dispositivo **Modo perdido** le ayuda a habilitar el modo perdido 
 
 - iOS 9.3 y versiones posteriores
 
-Esta característica **no** se admite en los siguientes sistemas operativos: 
+Esta característica no se admite en los siguientes sistemas operativos: 
 - Windows
 - Windows Phone
 - macOS
@@ -37,11 +37,11 @@ Esta característica **no** se admite en los siguientes sistemas operativos:
 
 ## <a name="enable-lost-mode"></a>Habilitar el modo perdido
 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com).
+1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
 2. Seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
 3. Seleccione **Dispositivos** y, después, **Todos los dispositivos**.
-4. En la lista de dispositivos que administra, elija un dispositivo iOS, **Más** y luego la acción remota **Modo Perdido**.
-5. En **Modo perdido**, habilite esta característica. A continuación, escriba el mensaje que quiere que se muestre y un número de teléfono de contacto.
+4. En la lista de dispositivos que administra, seleccione un dispositivo iOS y seleccione **...Más**. Luego, elija la acción remota **Modo Perdido**.
+5. En **Modo perdido**, habilite esta característica. Luego, escriba el mensaje que se mostrará y un número de teléfono de contacto.
 6. Haga clic en **Aceptar** para guardar los cambios.
 
 Al habilitar el modo perdido, se bloquea totalmente el uso del dispositivo. El usuario final no puede acceder al dispositivo hasta que deshabilite Modo Perdido. Mientras el modo perdido está habilitado, use la acción [Buscar dispositivo](device-locate.md) para encontrar el dispositivo.

@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b0523a514eb9d6a5c0429f1a2e2fa84d1ca00de4
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 436be436991ea4f2f295291fb95122cddf4e7ac5
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Configuración de restricciones de dispositivos iOS de Microsoft Intune
 
@@ -40,7 +40,6 @@ Esto también se aplica a valores accesibles desde la aplicación de configuraci
 - **Uso de la opción de borrar todo el contenido y la configuración del dispositivo (solo supervisado)**: permite que el usuario use la opción de borrar todo el contenido y la configuración del dispositivo.
 - **Modificación del nombre del dispositivo (solo supervisado)**: permite que el usuario cambie el nombre del dispositivo.
 - **Modificación de la configuración de notificaciones (solo supervisado)**: permitir al usuario cambiar la configuración de notificación del dispositivo.
-- **Modificación del fondo de pantalla (solo supervisado)**: permite al usuario cambiar el fondo de pantalla del dispositivo.
 - **Modificación de la configuración de confianza de aplicaciones empresariales (solo supervisado)**: permite que el usuario confíe en aplicaciones que no se descargaron de la tienda de aplicaciones.
 - **Cambios en el perfil de configuración (solo supervisado)**: permite al usuario instalar perfiles de configuración.
 - **Bloqueo de activación (solo supervisado)**: permite el bloqueo de activación en dispositivos iOS supervisados.
@@ -51,7 +50,7 @@ El modo supervisado de iOS solo se puede habilitar durante la configuración ini
 
 - Bloqueo de aplicaciones (modo de aplicación única) 
 - Proxy HTTP global 
-- Superación del bloqueo de activación 
+- Bypass del bloqueo de activación 
 - Modo de aplicación única autónoma 
 - Filtro de contenido web 
 - Establecer la pantalla de fondo y la pantalla de bloqueo 
@@ -60,7 +59,7 @@ El modo supervisado de iOS solo se puede habilitar durante la configuración ini
 - Permitir la instalación de aplicaciones administradas de forma exclusiva 
 - iBookstore 
 - iMessages 
-- Game Center 
+- Centro de juegos 
 - AirDrop 
 - AirPlay 
 - Emparejamiento de host 
@@ -74,7 +73,6 @@ El modo supervisado de iOS solo se puede habilitar durante la configuración ini
 - Métodos abreviados de teclado 
 - Modificaciones de código de acceso 
 - Cambios en los nombres de dispositivos 
-- Cambios en los fondos de escritorio 
 - Descargas de aplicaciones automáticas 
 - Cambios en la confianza de las aplicaciones empresariales 
 - Apple Music 
@@ -91,7 +89,7 @@ El modo supervisado de iOS solo se puede habilitar durante la configuración ini
 > - Contenido explícito
 > - Documentos y datos de iCloud
 > - Juego multijugador
-> - Agregar amigos de Game Center
+> - Agregar amigos del centro de juegos
 
 ## <a name="password"></a>Contraseña
 -   **Contraseña**: exige que el usuario final escriba una contraseña para acceder al dispositivo.
@@ -170,7 +168,7 @@ Con la ayuda de un motor de búsqueda, busque la aplicación que quiere usar en 
 Copie la dirección URL de la página y úsela para configurar la lista de aplicaciones permitidas y prohibidas o una aplicación que quiera ejecutar en pantalla completa.
 Se deben asignar perfiles de dispositivo que contengan configuración de aplicaciones restringidas para grupos de usuarios.
 
-Ejemplo: busque Microsoft Word para iPad. La dirección URL que debe usar es https://itunes.apple.com/es/app/microsoft-word-for-ipad/id586447913?mt=8.
+Ejemplo: busque Microsoft Word para iPad. La dirección URL usada es https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
 > También puede usar iTunes para encontrar la aplicación y, a continuación, emplear el comando **Copiar vínculo** para obtener la dirección URL de la aplicación.
@@ -195,7 +193,7 @@ Para especificar una dirección URL en la lista de aplicaciones, use el siguient
 Con la ayuda de un motor de búsqueda, busque la aplicación que quiere usar en iTunes App Store y abra la página de la aplicación.
 Copie la dirección URL de la página y úsela para configurar la lista de aplicaciones permitidas y prohibidas o una aplicación que quiera ejecutar en pantalla completa.
 
-Ejemplo: busque Microsoft Word para iPad. La dirección URL que debe usar es https://itunes.apple.com/es/app/microsoft-word-for-ipad/id586447913?mt=8.
+Ejemplo: busque Microsoft Word para iPad. La dirección URL usada es https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8.
 
 > [!Note]
 > También puede utilizar el software de iTunes para encontrar la aplicación y, a continuación, utilizar el comando **Copiar vínculo** para obtener la dirección URL de la aplicación.

@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88109f1dc4543a5c71f36378fddb110c03afa08f
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: df77b63cbf953df030e5d0e597c0940f083ffb79
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/23/2018
 ---
 # <a name="configure-and-manage-scep-certificates-with-microsoft-intune"></a>Configuración y administración de certificados SCEP con Microsoft Intune
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -153,7 +153,13 @@ Para configurar la CA para permitir que el solicitante especifique el período d
 #### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>Paso 3: configurar los requisitos previos en el servidor NDES
 En esta tarea tendrá que hacer lo siguiente:
 
+<<<<<<< HEAD
+
+- Agregar NDES a un servidor con Windows Server y configurar IIS para que admita NDES
+- Agregar la cuenta de servicio NDES al grupo IIS_IUSRS
+- Establecer el SPN para la cuenta de servicio NDES =======
 -   Agregar NDES a un servidor con Windows Server y configurar IIS para que admita NDES
+>>>>>>> parent of 3365d47d4... Merge branch 'release-intune-1803' into master
 
 -   Agregar la cuenta de servicio NDES al grupo IIS_IUSRS
 

@@ -1,24 +1,24 @@
 ---
-title: "Cambio de la entidad de MDM a Configuration Manager (MDM híbrido)"
-description: "Obtenga información sobre cómo cambiar la entidad de MDM de Intune independiente a Configuration Manager (MDM híbrido)."
-keywords: 
+title: Cambio de la entidad de MDM a Configuration Manager (MDM híbrido)
+description: Obtenga información sobre cómo cambiar la entidad de MDM de Intune independiente a Configuration Manager (MDM híbrido).
+keywords: ''
 author: dougeby
-manager: angrobe
+manager: dougeby
 ms.date: 10/04/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f1b4bce3-7932-4a0d-aa92-6dacc7060f42
 ROBOTS: NOINDEX,NOFOLLOW
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 64e79da53aec646fc65285e41f86541ecdf6d804
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: b5494e4b2b6a7983d05ac83d9bc495677ee1a1ab
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="change-the-mdm-authority"></a>Cambio de la entidad de MDM
 A partir de la versión 1610 de Configuration Manager, puede cambiar la entidad de MDM sin tener que ponerse en contacto con el Soporte técnico de Microsoft y sin necesidad de anular y volver a crear la inscripción de sus dispositivos administrados existentes. En este tema se proporcionan los pasos para cambiar un inquilino de Microsoft Intune configurado desde Intune y con la entidad de MDM configurada en **Microsoft Intune** (independiente) a **Configuration Manager** (MDM híbrido) sin tener que anular y volver a crear la inscripción de los dispositivos administrados existentes.
