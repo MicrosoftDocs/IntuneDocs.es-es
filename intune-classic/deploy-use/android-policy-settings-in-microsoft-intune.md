@@ -1,25 +1,25 @@
 ---
-title: "Opciones de configuración de directivas de Android y Samsung KNOX"
-description: "Cree directivas que controlen la configuración y las características en los dispositivos Android que administra con Intune."
-keywords: 
+title: Opciones de configuración de directivas de Android y Samsung KNOX
+description: Cree directivas que controlen la configuración y las características en los dispositivos Android que administra con Intune.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 10/20/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 71cc39cf-e726-40fd-8d08-78776e099a4b
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8978194dfed956550a6417d4bfbedf3f2c547539
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: a75380f578eeea57b8f6e694923d84b42b844045
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="android-and-samsung-knox-standard-policy-settings-in-microsoft-intune"></a>Configuración de directivas de Android y Samsung KNOX Standard en Microsoft Intune
 
@@ -175,13 +175,13 @@ En la [sección Aplicaciones de Google Play](https://play.google.com/store/apps)
 
 Abra la página de instalación de la aplicación y, a continuación, copie la dirección URL en el Portapapeles. Ya puede utilizarla como dirección URL en una la lista de aplicaciones conformes o no conformes.
 
-Ejemplo: Busque Microsoft Office Mobile en Google Play. Usará la dirección URL **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
+Ejemplo: Busque Microsoft Office Mobile en Google Play. La dirección URL que use será **https://play.google.com/store/apps/details?id=com.microsoft.office.officehub**.
 
 ## <a name="custom-policy-settings"></a>Configuración de directivas personalizadas
 Use la **directiva de configuración personalizada de Android** de Microsoft Intune para implementar las opciones de configuración de OMA-URI, que sirve para controlar características en dispositivos Android. Se trata de una configuración estándar que muchos fabricantes de dispositivos móviles usan para controlar las características del dispositivo.
 
-Esta capacidad está pensada para que se puedan implementar las opciones de configuración de Android que no se pueden definir con directivas de Intune.
-Intune admite un número limitado de directivas personalizadas de Android en este momento. Vea los ejemplos de este tema para averiguar qué directivas puede configurar.
+Esta funcionalidad está pensada para que se puedan implementar las opciones de configuración de Android que no se pueden definir con directivas de Intune.
+Actualmente, Intune admite un número limitado de directivas personalizadas de Android. Vea los ejemplos de este tema para averiguar qué directivas puede configurar.
 
 ### <a name="general-settings"></a>Configuración general
 
@@ -196,7 +196,7 @@ Intune admite un número limitado de directivas personalizadas de Android en est
     |--------|--------------------|
     | **Nombre de la configuración** |Escriba un nombre único para el valor OMA-URI que le ayude a identificarlo en la lista de valores de configuración.|
     | **Descripción del valor** |Proporcione una descripción que ofrezca una visión general del valor y otra información relevante que le ayude a encontrarlo.|
-    | **Tipo de datos** |Seleccione el tipo de fecha en que especificará este valor OMA-URI. Elija entre las siguientes opciones **Cadena, Cadena (XML), Fecha y hora, Entero, Punto flotante** o **Booleano**.|
+    | **Tipo de datos** |Seleccione el tipo de fecha en que especificará este valor OMA-URI. Elija entre las siguientes las opciones **Cadena, Cadena (XML), Fecha y hora, Entero, Punto flotante** o **Booleano**.|
     | **OMA-URI (distingue mayúsculas de minúsculas)** |Especifique el OMA-URI para el que desee suministrar un valor.|
     | **Valor** |Especifique el valor asociado con el OMA-URI especificado anteriormente.|
 
@@ -212,5 +212,5 @@ La aplicación Portal de empresa solo intenta llevar a cabo la activación de Sa
 
 Puede consultar una lista de dispositivos de Samsung KNOX compatibles junto con la lista de [dispositivos compatibles con Intune](/intune/supported-devices-browsers.md#intune-supported-devices).
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

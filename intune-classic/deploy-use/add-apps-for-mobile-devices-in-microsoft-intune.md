@@ -1,25 +1,25 @@
 ---
 title: Agregar aplicaciones a los dispositivos inscritos
-description: "Antes de que pueda implementar una aplicación, debe agregarla a Intune. Después, esta se encuentra disponible en la consola de Intune donde puede implementarla y administrarla."
-keywords: 
+description: Antes de que pueda implementar una aplicación, debe agregarla a Intune. Después, esta se encuentra disponible en la consola de Intune donde puede implementarla y administrarla.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 01/11/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f5b1f1ae-f177-450a-9af9-936a02d052e3
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c688bf0912ec1150924743a9211a1268427fb13a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 9f5fec22a17eef39819b38567793a2f579815e59
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="add-apps-for-enrolled-devices-to-intune"></a>Agregar aplicaciones a los dispositivos inscritos en Intune
 
@@ -48,7 +48,7 @@ Use el Editor de software de Intune para configurar las propiedades de la aplica
   -   **Vínculo externo**, para aplicaciones que quiere crear indicando un vínculo a una tienda de aplicaciones:
 
         - **Especificar la dirección URL**. Especifique la dirección URL de una de las opciones siguientes:
-            - La dirección URL de la tienda de aplicaciones de la aplicación que quiere implementar. Por ejemplo, si quiere implementar la aplicación Escritorio remoto de Microsoft para Android, especifique **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android**.<br>Para buscar la dirección URL de la aplicación, use un motor de búsqueda para encontrar la página de almacenamiento que contiene la aplicación. Por ejemplo, para encontrar la aplicación Escritorio remoto, puede buscar **Escritorio remoto de Microsoft Android**.
+            - La dirección URL de la tienda de aplicaciones de la aplicación que quiere implementar. Por ejemplo, si quiere implementar la aplicación de Escritorio remoto de Microsoft para Android, especifique **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android**.<br>Para buscar la dirección URL de la aplicación, use un motor de búsqueda para encontrar la página de almacenamiento que contiene la aplicación. Por ejemplo, para encontrar la aplicación Escritorio remoto, puede buscar **Escritorio remoto de Microsoft Android**.
             - Un sitio web. Intune implementará un icono de acceso directo al sitio del dispositivo (conocido como un clip de web).
             - Una aplicación en la web. Intune implementará un icono de acceso directo a la aplicación del dispositivo.
         - **Se necesita Managed Browser para abrir este vínculo (solo iOS y Android)**. Al implementar un vínculo a un sitio web o aplicación web para los usuarios, estos solo podrán abrirlo en el explorador administrado de Intune. Este explorador debe instalarse en su dispositivo.<br>Para obtener más detalles sobre el explorador administrado, vea [Administrar el acceso a Internet mediante directivas de explorador administrado con Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).<br>Este tipo de instalación no usa el espacio de almacenamiento en la nube.

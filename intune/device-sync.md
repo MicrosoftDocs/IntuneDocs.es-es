@@ -1,6 +1,6 @@
 ---
 title: Sincronización de dispositivos con Microsoft Intune - Azure | Microsoft Docs
-description: Sincronización de dispositivos registrados o administrados con Microsoft Intune para obtener las últimas directivas y acciones. Incluye los pasos necesarios para sincronizar utilizando Azure Portal y se enumeran los códigos de error que se pueden recuperar.
+description: Sincronice los dispositivos registrados o administrados con Microsoft Intune para obtener las directivas y acciones más recientes. Incluye los pasos necesarios para efectuar la sincronización con Azure Portal y se enumeran los códigos de error que se pueden recuperar.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -13,13 +13,13 @@ ms.technology: ''
 ms.assetid: 02ad249e-f098-421f-861f-6b2ff733ac7c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d2d13ce2ed06549a6cd09fd766a0072b15fcd067
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 7af71a2d5c3ad871e69424cf6afbf7c364bb888d
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 ---
-# <a name="sync-devices-to-get-the-latest-policies-and-actions---intune"></a>Sincronización de dispositivos para obtener las directivas y las acciones más recientes - Intune
+# <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>Sincronización de dispositivos para obtener las directivas y las acciones más recientes con Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
@@ -36,11 +36,11 @@ La acción de dispositivo **Sincronizar** fuerza al dispositivo seleccionado a r
 
 ## <a name="sync-a-device"></a>Sincronizar un dispositivo
 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**. 
-3. En **Intune**, seleccione **Dispositivos** y seleccione **Todos los dispositivos**.
-4. En la lista de dispositivos que administra, elija un dispositivo, elija **Más** y, luego, seleccione la acción **Sincronizar**.
-5. Seleccione **Sí** para confirmar.
+1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
+2. Seleccione **Todos los servicios**, filtre por **Intune** y, luego, seleccione **Microsoft Intune**. 
+3. En **Intune**, seleccione **Dispositivos** > **Todos los dispositivos**.
+4. En la lista de dispositivos que administra, seleccione un dispositivo, seleccione **Más** y, luego, seleccione **Sincronizar**.
+5. Para confirmar, seleccione **Sí**.
 
 
 ## <a name="retryable-error-codes"></a>Códigos de error que admiten reintentos
@@ -48,7 +48,7 @@ La acción de dispositivo **Sincronizar** fuerza al dispositivo seleccionado a r
 Cuando un administrador ejecute la acción de dispositivo **Sincronizar**, las aplicaciones de iOS y Android que han generado un código de error que admite reintentos siguen estando disponibles para el dispositivo. En cambio, las aplicaciones que han generado un código de error que no admite reintentos deberán esperar siete días antes de estar disponibles en el dispositivo.
 
 
-| Código de error  | Sugerencia de descripción | Admite reintentos |
+| Código de error  | Descripción sugerida | Admite reintentos |
 |---|---|---|
 | 2016330898 | Se produjo un error desconocido. | No |
 | 2016330897 | La conexión a Intune ha agotado el tiempo de espera. Restablezca la conexión. | Sí |
@@ -62,6 +62,6 @@ Cuando un administrador ejecute la acción de dispositivo **Sincronizar**, las a
 | 2016330889 | Error de conexión segura. Restablezca la conexión. | Sí|
 | 2016330888 | Error en la evaluación de confianza del servidor. | No|
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-steps"></a>Pasos siguientes
 
-Seleccione **Acciones de dispositivo** para ver el estado de la acción de sincronización. 
+- Seleccione **Acciones de dispositivo** para ver el estado de la acción de sincronización. 

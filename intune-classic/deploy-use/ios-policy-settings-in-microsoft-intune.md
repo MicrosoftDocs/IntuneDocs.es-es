@@ -1,25 +1,25 @@
 ---
-title: "Configuración de directivas de iOS"
-description: "Cree directivas que controlen la configuración y las características en los dispositivos iOS que administra con Intune."
-keywords: 
+title: Configuración de directivas de iOS
+description: Cree directivas que controlen la configuración y las características en los dispositivos iOS que administra con Intune.
+keywords: ''
 author: vhorne
 ms.author: victorh
-manager: angrobe
+manager: dougeby
 ms.date: 11/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ab46be6c-ab73-4c99-8492-66d1dd418293
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e9d014eb504098ff4361add7a0f3715f33be9083
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ff426feff58de8b06fed7be9a0e6a52e9cc40ae3
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="ios-policy-settings-in-microsoft-intune"></a>Configuración de directivas de iOS en Microsoft Intune
 
@@ -222,7 +222,7 @@ Para especificar una dirección URL de aplicación en la lista de aplicaciones c
 
 2. Copie la dirección URL de la página y úsela como dirección URL para configurar la lista de aplicaciones conformes y no conformes o la aplicación que quiere ejecutar en pantalla completa.
 
-**Ejemplo:** Busque **Microsoft Word para iPad**. La dirección URL que debe usar es **https://itunes.apple.com/es/app/microsoft-word-for-ipad/id586447913?mt=8**.
+**Ejemplo:** Busque **Microsoft Word para iPad**. La dirección URL que use será **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**.
 
 > [!NOTE]
 > También puede utilizar el software de iTunes para encontrar la aplicación y, a continuación, utilizar el comando **Copiar vínculo** para obtener la dirección URL de la aplicación.
@@ -383,5 +383,5 @@ Antes de empezar, debe tener instalado Apple Configurator y haber creado un arch
 |**Archivo del perfil de configuración**|Elija **Importar** y, luego, examine el perfil de configuración que ha creado con Apple Configurator. **Nota:** Asegúrese de que la configuración que exporta de la herramienta Apple Configurator sea compatible con la versión de iOS en los dispositivos en los que implementa la directiva personalizada de iOS. Para obtener información sobre la resolución de las opciones de configuración incompatibles, busque la **Referencia de perfiles de configuración** y la **Referencia del protocolo de administración de dispositivos móviles** en el sitio web de [Apple Developer](https://developer.apple.com/).|
     |**Detalles del perfil de configuración**|Mostrar el código XML del perfil de configuración que ha importado.|
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

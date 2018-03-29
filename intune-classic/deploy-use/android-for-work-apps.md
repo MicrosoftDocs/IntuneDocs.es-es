@@ -1,25 +1,25 @@
 ---
-title: "Implementación de aplicaciones para dispositivos Android for Work"
-description: "Utilice este tema para sincronizar y después implementar aplicaciones para dispositivos Android for Work desde Google Play for Work Store."
-keywords: 
+title: Implementación de aplicaciones para dispositivos Android for Work
+description: Utilice este tema para sincronizar y después implementar aplicaciones para dispositivos Android for Work desde Google Play for Work Store.
+keywords: ''
 author: mattbriggs
 ms.author: mabrigg
-manager: angrobe
+manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: cd0bbd90-d3fe-4efc-83fd-d1f3f86800d4
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 22b842f2745073f0476162278c8b209a3e251f9f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 20d43882895e299b26a4130b1551b17f054c52d6
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="how-to-deploy-apps-to-android-for-work-devices-with-intune"></a>Implementación de aplicaciones para dispositivos Android for Work con Intune
 
@@ -44,7 +44,7 @@ Asegúrese de que ha configurado Intune y Android for Work para que trabajen jun
 3. En la página de la aplicación elegida, seleccione **Aprobar**. En este ejemplo, ha elegido la aplicación Microsoft Excel.<br>
   ![Ejemplo de aprobación de la aplicación](media/approve.png)
 4. Se abre una ventana de la aplicación que le pide que conceda permisos a la aplicación para realizar diversas operaciones. Elija **Aprobar** para continuar.<br>
-  ![Ejemplo de permisos para aprobar la aplicación](media/approve-app-permissions.png)
+  ![Ejemplo de permisos de aprobación de la aplicación](media/approve-app-permissions.png)
 5. La aplicación se aprueba y se muestra en la consola de administración de TI.
 
 ## <a name="publish-then-synchronize-a-line-of-business-app-from-the-google-play-for-work-store"></a>Publicación y posterior sincronización de una aplicación de línea de negocio desde Google Play for Work Store
@@ -82,7 +82,7 @@ Cuando un desarrollador de la aplicación publica una nueva versión con permiso
 
 Visite periódicamente la consola de Google Play administrada para buscar nuevos permisos. Puede configurar Google Play para que le envíe a usted o a otros usuarios un correo electrónico cuando se requieren nuevos permisos para una aplicación aprobada. Si asigna una aplicación y observa que no está instalado en los dispositivos, busque nuevos permisos con los siguientes pasos:
 
-1. Visite http://play.google.com/work
+1. Visite http://play.google.com/work.
 2. Inicie sesión con la cuenta de Google que usó para publicar y aprobar las aplicaciones.
 3. Visite la pestaña **Actualizaciones** para ver si alguna aplicación requiere una actualización.  Las aplicaciones de la lista requieren permisos nuevos y no se asignarán hasta que se apliquen.  
 

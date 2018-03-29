@@ -1,49 +1,42 @@
 ---
-title: "Creación de una directiva de cumplimiento de dispositivos iOS en Microsoft Intune"
-titleSuffix: 
-description: Cree una directiva de cumplimiento de dispositivos de Microsoft Intune para dispositivos iOS para poder especificar los requisitos que debe cumplir un dispositivo para que sea compatible.
-keywords: 
-author: msmimart
-ms.author: mimart
+title: Creación de una directiva de cumplimiento de dispositivos iOS en Microsoft Intune - Azure | Microsoft Docs
+description: Cree una directiva de cumplimiento de dispositivos de Microsoft Intune para dispositivos iOS para especificar una cuenta de correo electrónico, comprobar dispositivos con Jailbreak, comprobar el sistema operativo mínimo y máximo, así como establecer las restricciones de contraseñas, incluida la longitud de las contraseñas y la inactividad de los dispositivos.
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/20/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
-ms.reviewer: muhosabe
+ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b024c846f9fc79fe214e3e90b094384455f2b086
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: b05eb725adb61ae47a24ca884d0e73ffe0dd269f
+ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/23/2018
 ---
-# <a name="how-to-create-a-device-compliance-policy-for-ios-devices-in-intune"></a>Creación de una directiva de cumplimiento para dispositivos iOS en Intune
-
+# <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Agregación de una directiva de cumplimiento para dispositivos iOS en Intune
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-Una directiva de cumplimiento de dispositivos de Intune para iOS especifica las reglas y la configuración que los dispositivos iOS deben cumplir para que se consideren compatibles. Al usar directivas de cumplimiento de dispositivos con acceso condicional, puede permitir o bloquear el acceso a los recursos de la empresa. También puede obtener informes de dispositivos y realizar acciones en caso de incumplimiento. Las directivas de cumplimiento de dispositivos para cada plataforma se pueden crear en Azure Portal de Intune. Para obtener más información sobre las directivas de cumplimiento y los requisitos previos que deben satisfacerse antes de crear una directiva de cumplimiento, consulte el tema [Introducción a las directivas de cumplimiento de dispositivos](device-compliance-get-started.md).
+Las directivas de cumplimiento de dispositivos iOS para Intune determinan las reglas y la configuración que deben cumplir los dispositivos iOS para que sean compatibles. Al usar directivas de cumplimiento de dispositivos con acceso condicional, puede permitir o bloquear el acceso a los recursos de la empresa. También puede obtener informes de dispositivos y realizar acciones en caso de incumplimiento. Las directivas de cumplimiento de dispositivos para cada plataforma se pueden crear en Azure Portal de Intune. Para obtener más información sobre las directivas de cumplimiento y los requisitos previos que se deben cumplir para poder crear una, vea [Introducción a las directivas de cumplimiento de dispositivos](device-compliance-get-started.md).
 
 En la tabla siguiente se describe cómo administrar la configuración de no conformidad cuando se usa una directiva de cumplimiento con una directiva de acceso condicional.
 
--------------------------------
-
-
 | **Configuración de directiva** | **iOS 8.0 y versiones posteriores** |
 | --- | --- |
-| **Configuración de PIN o contraseña** | Corregido |   
+| **Configuración de PIN o contraseña** | Corregido |
 | **Cifrado del dispositivo** | Corregido (estableciendo PIN) |
 | **Dispositivo liberado o modificado** | En cuarentena (no es una configuración)
 | **Perfil de correo electrónico** | En cuarentena |
 |**Versión de SO mínima** | En cuarentena |
-| **Versión de SO máxima** | En cuarentena |  
-| **Atestación de estado de Windows** | No disponible |  
-----------------------------
-
+| **Versión de SO máxima** | En cuarentena |
+| **Atestación de estado de Windows** | No disponible |
 
 **Corregido** = el sistema operativo del dispositivo exige compatibilidad. (Por ejemplo, se obliga al usuario a configurar un PIN).
 
@@ -54,11 +47,11 @@ En la tabla siguiente se describe cómo administrar la configuración de no conf
 
 ## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Creación de una directiva de cumplimiento en el portal de Azure
 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
-1. En el panel **Intune**, elija **Cumplimiento del dispositivo**. En **Administrar**, elija **Directivas** y después **Crear directiva**.
-2. Escriba un nombre y una descripción y elija la plataforma a la que quiere que se aplique esta directiva.
-3. Elija **Requisitos de cumplimiento** para especificar los valores de **Seguridad del sistema**, **Mantenimiento de dispositivos** y **Propiedades del dispositivo**. Cuando haya terminado, elija **Aceptar**.
+1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
+2. Seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
+3. Seleccione **Cumplimiento de dispositivos** > **Directivas** > **Crear directiva**.
+4. Escriba un nombre y una descripción y, después, elija la plataforma a la que quiere que se aplique esta directiva.
+5. Seleccione **Configuración** para especificar las opciones **Correo electrónico**, **Estado de dispositivos**, **Propiedades de dispositivo** y **Seguridad del sistema**. Cuando haya terminado, seleccione **Aceptar**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -78,31 +71,7 @@ Ya ha aplicado la directiva a los usuarios.  Se evalúa el cumplimiento por part
 
 <!---## Compliance policy settings--->
 
-## <a name="system-security-settings"></a>Configuración de seguridad del sistema
-
-### <a name="password"></a>Contraseña
-
-- **Requerir una contraseña para desbloquear dispositivos móviles:** establezca esta opción en **Sí** para exigir que los usuarios escriban una contraseña para poder tener acceso a sus dispositivos. Los dispositivos iOS que usan una contraseña están cifrados.
-- **Permitir contraseñas sencillas**: establezca esta opción en **Sí** para permitir al usuario crear una contraseña como **1234** o **1111**.
-- **Longitud mínima de la contraseña**: especifique el número mínimo de dígitos o caracteres que debe tener la contraseña.
-- **Tipo de contraseña obligatoria:** especifique si el usuario debe crear una contraseña **Alfanumérica** o **Numérica**.
-- **Número mínimo de conjuntos de caracteres:** si establece la opción **Tipo de contraseña requerida** en **Alfanumérica**, use esta configuración para especificar el número mínimo de conjuntos de caracteres que debe contener la contraseña. Los conjuntos de cuatro caracteres son los siguientes:
-  - Letras minúsculas
-  - Letras mayúsculas
-  - Símbolos
-  - Números
-
-Para establecer un número mayor, es necesario que el usuario cree una contraseña más compleja.
-
-En dispositivos iOS, esta configuración hace referencia al número de caracteres especiales (por ejemplo, **!** **#** , **&amp;**) que deben incluirse en la contraseña.
-
-- **Minutos de inactividad antes de que sea necesaria la contraseña**: especifique el tiempo de inactividad que transcurre antes de que el usuario deba volver a escribir su contraseña.
-- **Caducidad de contraseña (días)**: seleccione el número de días que faltan para que la contraseña expire y se deba crear una nueva.
-- **Recordar historial de contraseñas:** use esta opción junto con **Impedir la reutilización de contraseñas anteriores** para impedir que el usuario cree contraseñas que se han usado anteriormente.
-- **Impedir la reutilización de contraseñas anteriores**: si ha seleccionado **Recordar historial de contraseñas**, especifique el número de contraseñas que se han usado previamente que no se pueden volver a usar.
-- **Requerir una contraseña cuando el dispositivo vuelva de un estado de inactividad**: use este valor junto con el de la opción **Minutos de inactividad antes de que sea necesaria la contraseña**. Se pedirá al usuario que escriba una contraseña para obtener acceso a un dispositivo que haya estado inactivo durante el tiempo especificado en la opción **Minutos de inactividad antes de que sea necesaria la contraseña**.
-
-### <a name="email-profile"></a>Perfil de correo electrónico
+## <a name="email"></a>Correo electrónico
 
 - **Intune debe administrar la cuenta de correo electrónico:** cuando esta opción se establece en **Sí**, el dispositivo debe utilizar el perfil de correo electrónico que tenga implementado. El dispositivo se considera no conforme en las situaciones siguientes:
   - El perfil de correo electrónico se implementa en un grupo de usuarios distinto del grupo de usuarios al que se dirige la directiva de cumplimiento.
@@ -111,14 +80,34 @@ En dispositivos iOS, esta configuración hace referencia al número de caractere
 
 Para más información sobre los perfiles de correo electrónico, consulte [Configurar el acceso al correo electrónico corporativo mediante perfiles de correo electrónico con Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune).
 
-## <a name="device-health-settings"></a>Configuración de estado del dispositivo
+## <a name="device-health"></a>Device health
 
-- **El dispositivo no debe estar modificado por los métodos de acceso jailbreak o root:** si habilita esta opción, los dispositivos descodificados no serán compatibles.
+- **Dispositivos con Jailbreak**: si habilita esta configuración, los dispositivos con Jailbreak no serán compatibles.
+- **Require the device to be at or under the Device Threat Level** (Requerir que el dispositivo tenga el mismo o un nivel de amenaza de dispositivo inferior): seleccione el nivel de amenaza máximo para marcar los dispositivos como no compatibles. Por ejemplo, si establece el nivel de amenaza en **Medio**, los dispositivos que tengan un nivel de amenaza medio o bajo y los dispositivos protegidos serán compatibles. Los dispositivos que tienen un nivel de amenaza alto no serán compatibles.
 
 ## <a name="device-properties"></a>Propiedades del dispositivo
 
-- **SO mínimo requerido:** cuando un dispositivo no cumpla el requisito de versión de SO mínima, se notificará como no compatible. Se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario puede elegir actualizar su dispositivo. Después de eso, puede acceder a los recursos de la empresa.
-- **Versión de SO máxima permitida**: cuando un dispositivo usa una versión de SO posterior a la especificada en la regla, se bloquea el acceso a los recursos de la empresa y se solicita al usuario que se ponga en contacto con el administrador de TI. Mientras no se cambie la regla para permitir la versión de SO, este dispositivo no podrá usarse para acceder a los recursos de la empresa.
+- **SO mínimo requerido:** cuando un dispositivo no cumpla el requisito de versión de SO mínima, se notificará como no compatible. Además, se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario puede elegir actualizar su dispositivo. Después de eso, puede acceder a los recursos de la empresa.
+- **Maximum OS version allowed** (Versión de SO máxima permitida): cuando un dispositivo usa una versión de SO posterior a la especificada en la regla, se bloquea el acceso a los recursos de la empresa y se solicita al usuario que se ponga en contacto con el administrador de TI. Mientras no se cambie la regla para permitir la versión de SO, este dispositivo no podrá obtener acceso a los recursos de la empresa.
+
+## <a name="system-security"></a>Seguridad del sistema
+
+### <a name="password"></a>Contraseña
+
+> [!NOTE]
+> Después de poner en marcha una directiva de configuración o cumplimiento en un dispositivo iOS, cada 15 minutos se pedirá al usuario que establezca un código de acceso y se le seguirá pidiendo hasta que se establezca un código de acceso.
+
+- **Requerir una contraseña para desbloquear dispositivos móviles:** establezca esta opción en **Sí** para exigir que los usuarios escriban una contraseña para poder tener acceso a sus dispositivos. Los dispositivos iOS que usan una contraseña están cifrados.
+- **Contraseñas sencillas**: establezca esta opción en **Sí** para permitir al usuario crear una contraseña como **1234** o **1111**.
+- **Longitud mínima de la contraseña**: indique el número mínimo de dígitos o caracteres que debe tener la contraseña.
+- **Tipo de contraseña obligatoria:** indique si el usuario debe crear una contraseña **Alfanumérica** o **Numérica**.
+- **Number of non-alphanumeric characters in password** (Número de caracteres no alfanuméricos de la contraseña): indique el número mínimo de caracteres especiales (&, #, %, !, etc.) que se deben incluir en la contraseña.
+
+    Para establecer un número mayor, es necesario que el usuario cree una contraseña más compleja.
+
+- **Máximo de minutos de inactividad antes de solicitar la contraseña**: indique el tiempo de inactividad que transcurre antes de que el usuario deba volver a escribir la contraseña.
+- **Caducidad de contraseña (días)**: seleccione el número de días que faltan para que la contraseña expire y se deba crear una nueva.
+- **Número de contraseñas anteriores que no se pueden reutilizar**: indique el número de contraseñas usadas anteriormente que no se pueden usar.
 
 <!--- ## Next steps
 

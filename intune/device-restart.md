@@ -1,12 +1,11 @@
 ---
-title: Reinicio remoto de los dispositivos con Intune
-titlesuffix: Microsoft Intune
-description: Aprenda a reiniciar dispositivos de forma remota usando la acción de reinicio de dispositivos de Microsoft Intune.
+title: Reiniciar dispositivos con Microsoft Intune - Azure | Microsoft Docs
+description: Reinicie dispositivos Windows e iOS con Microsoft Intune en Azure Portal con la acción de reinicio remoto.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 03/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,18 +13,18 @@ ms.technology: ''
 ms.assetid: c707e0c4-391a-4bad-9dfd-9a7799c48dd5
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1bd5a01b8aac91c3bd6ea033d62d41e19aab65f8
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 98b3403e3f45e1aa7169937a05692686d97d7362
+ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="remotely-restart-devices-with-intune"></a>Reinicio remoto de los dispositivos con Intune
 
 
 [!INCLUDE[azure_portal](./includes/azure_portal.md)]
 
-La acción de dispositivo **Reiniciar** permite que se reinicie el dispositivo elegido. Como al propietario del dispositivo no se le informa automáticamente del reinicio, podría perder trabajo.
+La acción de dispositivo **Reiniciar** permite que se reinicie el dispositivo elegido. Como al propietario del dispositivo no se le notifica automáticamente del reinicio, podría perder trabajo.
 
 ## <a name="supported-platforms"></a>Plataformas compatibles
 
@@ -34,18 +33,17 @@ La acción de dispositivo **Reiniciar** permite que se reinicie el dispositivo e
 - iOS: compatible
 
     > [!Note]  
-    > Para usar este comando es necesario que el dispositivo esté supervisado y disponer del derecho de acceso **Bloqueo del dispositivo**. El dispositivo se reinicia inmediatamente. Después de un reinicio, los dispositivos iOS bloqueados mediante código de acceso no volverán a unirse a una red Wi-Fi y es posible que no puedan comunicarse con el servidor.
+    > Para usar este comando es necesario que el dispositivo esté supervisado y disponer del derecho de acceso **Bloqueo del dispositivo**. El dispositivo se reinicia inmediatamente. Los dispositivos iOS bloqueados con un código de acceso no se vuelven a unir a una red Wi-Fi después del reinicio. Después del reinicio, el dispositivo podría no comunicarse con el servidor.
 - macOS: no compatible
 - Android: no compatible
 
-## <a name="how-to-restart-a-device"></a>Cómo reiniciar un dispositivo
+## <a name="restart-a-device"></a>Reiniciar un dispositivo
 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
-3. En la hoja **Intune**, elija **Dispositivos**.
-4. En la hoja **Dispositivos**, pulse **Todos los dispositivos**.
-5. En la lista de dispositivos que administra, elija un dispositivo, **…Más** y la acción de dispositivo remoto **Reiniciar**.
+1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
+2. Seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
+3. Seleccione **Dispositivos** > **Todos los dispositivos**.
+4. En la lista de dispositivos que administra, seleccione un dispositivo, seleccione **Más** y, luego, seleccione la acción remota de dispositivo **Reiniciar**.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Para ver el estado de la acción que acaba de realizar, en la hoja **Dispositivos**, elija **Acciones de dispositivo**.
+- Para ver el estado de la acción de dispositivo **Reiniciar**, seleccione **Dispositivos** > **Acciones de dispositivo**.

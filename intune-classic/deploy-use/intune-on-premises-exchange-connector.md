@@ -1,25 +1,25 @@
 ---
 title: Exchange Connector para EAS local
-description: "Use la herramienta Connector para permitir la comunicación entre la consola de administración de Intune y Exchange Server local para Exchange ActiveSync MDM."
-keywords: 
+description: Use la herramienta Connector para permitir la comunicación entre la consola de administración de Intune y Exchange Server local para Exchange ActiveSync MDM.
+keywords: ''
 author: andredm7
 ms.author: andredm
-manager: angrobe
+manager: dougeby
 ms.date: 07/29/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 41ff4212-a6f5-4374-8731-631f7560cff1
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cb627843879a784eb4f597839058f54f9744542f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 96d61ccae4e70a3e99da70a0ef19218ddbd218f3
+ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 03/22/2018
 ---
 # <a name="install-the-intune-on-premises-exchange-connector"></a>Instalación de Intune On-Premises Exchange Connector
 
@@ -39,7 +39,7 @@ En la siguiente tabla se indican los requisitos del equipo en el que se instala 
 |Hardware|El equipo donde se instala el conector debe requiere una CPU de 1,6 GHz con 2 GB de RAM y 10 GB de espacio libre en disco.|/intune/users-permissions-add
 |Sincronización de Active Directory|Para poder usar cualquiera el conector para conectar Intune a su instancia de Exchange Server, debe [configurar la sincronización de Active Directory](/intune/users-permissions-add) de forma que los usuarios locales y los grupos de seguridad estén sincronizados con su instancia de Azure Active Directory.|
 |Software adicional|El equipo que hospede el conector debe tener una instalación completa de Microsoft .NET Framework 4.5 y Windows PowerShell 2.0.|
-|Red|El equipo en el que se instala el conector debe estar en un dominio que tenga una relación de confianza con el dominio que hospeda Exchange Server.<br /><br />El equipo requiere configuraciones que le permitan obtener acceso al servicio de Intune a través de firewalls y servidores proxy mediante los puertos 80 y 443. Entre los dominios usados por Intune están manage.microsoft.com, &#42;manage.microsoft.com y &#42;.manage.microsoft.com.|
+|Network (Red)|El equipo en el que se instala el conector debe estar en un dominio que tenga una relación de confianza con el dominio que hospeda Exchange Server.<br /><br />El equipo requiere configuraciones que le permitan obtener acceso al servicio de Intune a través de firewalls y servidores proxy mediante los puertos 80 y 443. Entre los dominios usados por Intune están manage.microsoft.com, &#42;manage.microsoft.com y &#42;.manage.microsoft.com.|
 
 
 ### <a name="exchange-cmdlet-requirements"></a>Requisitos del cmdlet de Exchange
@@ -62,7 +62,7 @@ Debe crear una cuenta de usuario de Active Directory que sea utilizada por Intun
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>Descarga del paquete de instalación de software de On-Premises Exchange Connector
 
-1. En un sistema operativo Windows Server compatible con el conector de Exchange local, abra la [consola de administración de Microsoft Intune](https://manage.microsoft.com) (https://manage.microsoft.com) con una cuenta de usuario que sea administrador en el inquilino de Exchange y que tenga una licencia para usar Exchange Server.
+1. En un sistema operativo Windows Server compatible con On-Premises Exchange Connector, abra la [consola de administración de Microsoft Intune](https://manage.microsoft.com) (https://manage.microsoft.com) con una cuenta de usuario que sea administrador en el inquilino de Exchange y que tenga una licencia para usar Exchange Server.
 ![Apertura de Configurar conexión de Exchange](../media/ExchangeConnector.gif)
 
 2.  En el panel de accesos directos del área de trabajo, elija **Administración**>**Administración de dispositivos móviles** > **Microsoft Exchange**>**Configurar conexión de Exchange**.
