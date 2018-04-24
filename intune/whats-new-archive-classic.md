@@ -1,28 +1,28 @@
 ---
-title: "Archivo de novedades del portal clásico de Microsoft Intune"
+title: Archivo de novedades del portal clásico de Microsoft Intune
 description: Anuncios de novedades archivados de Microsoft Intune
-keywords: 
+keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
 ms.date: 06/08/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ed2db991-4729-49a7-a1e6-be2ffa0d03d1
 ROBOTS: noindex,nofollow
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: edbb76e0eb4a1157e70a24c47b960ef138a0f876
-ms.sourcegitcommit: 54fc806036f84a8667cf8f74086358bccd30aa7d
+ms.openlocfilehash: 5ba8d7940f9c02a1f01a115e16be331bb4fc2fcd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Novedades del portal clásico de Intune: meses anteriores
 
-[!INCLUDE[classic-portal](./includes/classic-portal.md)]
+[!INCLUDE [classic-portal](./includes/classic-portal.md)]
 
 En esta página aparecen las nuevas características y las notificaciones anunciadas anteriormente en la [página de novedades](whats-new.md) del portal clásico de Intune.
 
@@ -359,7 +359,7 @@ __El componente Xamarin del SDK para aplicaciones de Intune ahora admite MAM sin
 
 __El certificado de firma de Symantec ya no requiere el portal de empresa firmado de Windows Phone 8 para la carga__ La carga del certificado de firma de Symantec ya no requiere una aplicación firmada del portal de empresa de Windows Phone 8. El certificado se puede cargar de forma independiente.
 
-###<a name="deprecations"></a>Elementos obsoletos
+### <a name="deprecations"></a>Elementos obsoletos
 
 __Compatibilidad con el portal de empresa de Windows Phone 8__ La compatibilidad con el portal de empresa de Windows Phone 8 ahora está en desuso. La compatibilidad con las plataformas Windows Phone 8 y WinRT ha quedado en desuso en octubre de 2016. La compatibilidad con el portal de empresa de Windows 8 ha quedado en desuso en octubre de 2016.
 

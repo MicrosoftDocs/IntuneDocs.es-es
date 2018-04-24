@@ -1,27 +1,27 @@
 ---
 title: Cambiar el nombre de un dispositivo desde el sitio web del Portal de empresa | Microsoft Docs
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 35a34ef8-efbb-4edf-88eb-a03c1b27a026
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2a61f7f78c284166b1476774983c8d813792cbe3
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: bf111b6c95a61e0c244b8d3254abc08c1d85c598
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="rename-your-device-from-the-company-portal-website"></a>Cambiar el nombre de un dispositivo desde el sitio web del Portal de empresa
 
@@ -29,16 +29,16 @@ Puede decidir cambiar el nombre de su dispositivo para que resulte más fácil d
 
 Para cambiar el nombre del dispositivo:
 
-1.  En el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog), pulse el botón __menú__ ![Pequeña imagen del botón menú, tres barras horizontales apiladas en paralelo.](/Intune/whats-new/media/CP_hamburger_menu.png), luego seleccione __Mis dispositivos__.
+1. En el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog), pulse el botón __menú__ ![Pequeña imagen del botón menú, tres barras horizontales apiladas en paralelo.](/Intune/whats-new/media/CP_hamburger_menu.png), luego seleccione __Mis dispositivos__.
 
 2. En la página __Mis dispositivos__, seleccione el dispositivo cuyo nombre quiere cambiar.
 
-  ![Captura de pantalla de la página Mis dispositivos con un par de dispositivos sin identificar sobre el mensaje emergente para inscribir los dispositivos que no figuran en la lista o para identificar los no identificados.](./media/macOS_enroll_002_tap_here_banner.png)
+   ![Captura de pantalla de la página Mis dispositivos con un par de dispositivos sin identificar sobre el mensaje emergente para inscribir los dispositivos que no figuran en la lista o para identificar los no identificados.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.  El dispositivo se abrirá en una ventana emergente. Pulse el botón **Cambiar nombre**.
+3. El dispositivo se abrirá en una ventana emergente. Pulse el botón **Cambiar nombre**.
 
-    ![Todas las opciones de un dispositivo seleccionado en el sitio web del Portal de empresa, incluidas Cambiar nombre, Quitar, Restablecer dispositivo, Restablecer código de acceso y Bloqueo remoto. ](./media/iwp-screen-with-all-options.png)
+   ![Todas las opciones de un dispositivo seleccionado en el sitio web del Portal de empresa, incluidas Cambiar nombre, Quitar, Restablecer dispositivo, Restablecer código de acceso y Bloqueo remoto. ](./media/iwp-screen-with-all-options.png)
 
-4.  En el cuadro donde aparece el nombre del dispositivo, escriba el nuevo nombre y puntee en el botón **Cambiar nombre**. El dispositivo aparece ahora con el nuevo nombre.
+4. En el cuadro donde aparece el nombre del dispositivo, escriba el nuevo nombre y puntee en el botón **Cambiar nombre**. El dispositivo aparece ahora con el nuevo nombre.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

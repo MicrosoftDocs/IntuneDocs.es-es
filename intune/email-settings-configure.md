@@ -13,19 +13,19 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 83d508f0ce33becb9abcef7434845836d8dd2bca
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: f51854bfb198ca65cc5fc82bad0e3b3befbb173a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-email-settings-in-microsoft-intune"></a>Configuración del correo electrónico en Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Se pueden usar perfiles de correo electrónico para configurar dispositivos administrados con los valores necesarios para conectarse al correo electrónico de la empresa y sincronizarlo. Esto ayuda a garantizar que la configuración es estándar en todos los dispositivos y también ayuda a reducir las llamadas al soporte técnico por usuarios finales que no conocen la configuración correcta del correo electrónico.
 
-El cliente de correo integrado se admite en la mayoría de las plataformas. Actualmente no se admiten la mayoría de las aplicaciones de correo electrónico de terceros.
+El cliente de correo integrado se admite en la mayoría de las plataformas. Actualmente no se admiten la mayoría de aplicaciones de correo electrónico de terceros.
 
 Puede usar perfiles de correo electrónico para configurar el cliente de correo nativo en los siguientes tipos de dispositivo:
 
@@ -40,7 +40,7 @@ Use la información de este artículo para conocer los aspectos básicos de la c
 ## <a name="create-a-device-profile-containing-email-settings"></a>Creación de un perfil de dispositivo que contenga la configuración de correo electrónico
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En el panel **Intune**, elija **Configuración del dispositivo**.
 2. En el panel **Configuración del dispositivo**, en la sección **Administrar**, elija **Perfiles**.
 3. En el panel Perfiles, elija **Crear perfil**.

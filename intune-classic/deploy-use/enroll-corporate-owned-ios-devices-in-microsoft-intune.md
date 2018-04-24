@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e07bc0eb78145d508085120e9ef764cc4b02ae4d
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 93ff84d263c2fe8825d2cf5a86249bbf19cb9173
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-corporate-owned-ios-devices-in-microsoft-intune"></a>Inscribir dispositivos iOS de empresa en Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune permite inscribir dispositivos iOS de propiedad corporativa con el Programa de inscripción de dispositivos (DEP) de Apple o la herramienta [Apple Configurator](https://go.microsoft.com/fwlink/?LinkId=518017) que se ejecuta en un equipo Mac.
 
@@ -71,11 +71,11 @@ La afinidad de usuario es necesaria para admitir lo siguiente:
 
 5. Después de iniciar sesión, se pide al usuario que inscriba el dispositivo. El primer paso es identificar su dispositivo. La aplicación presenta una lista de dispositivos iOS que ya se han inscrito en la empresa y que se han asignado a la cuenta de Intune del usuario. Debe elegir el dispositivo que corresponda.
 
-  Si este dispositivo no está inscrito en la empresa, debe elegir **nuevo dispositivo** para continuar con el flujo de inscripción estándar.
+   Si este dispositivo no está inscrito en la empresa, debe elegir **nuevo dispositivo** para continuar con el flujo de inscripción estándar.
 
 6. En la siguiente pantalla, el usuario debe confirmar el número de serie del nuevo dispositivo. El usuario puede pulsar el vínculo **Confirme el número de serie** que iniciará las instrucciones para usar la aplicación de configuración para comprobar el número de serie. El usuario debe especificar los últimos cuatro caracteres del número de serie en la aplicación del portal de empresa.
 
-  Este paso comprueba que el dispositivo es el dispositivo de empresa inscrito en Intune. Si el número de serie del dispositivo no coincide, significa que se ha seleccionado el dispositivo equivocado. El usuario debe volver a la pantalla anterior y seleccionar un dispositivo diferente.
+   Este paso comprueba que el dispositivo es el dispositivo de empresa inscrito en Intune. Si el número de serie del dispositivo no coincide, significa que se ha seleccionado el dispositivo equivocado. El usuario debe volver a la pantalla anterior y seleccionar un dispositivo diferente.
 
 7. Después de comprobar el número de serie, la aplicación del portal de empresa redirige al sitio web del portal de empresa para finalizar la inscripción Luego, el sitio web le pide al usuario que vuelva a la aplicación.
 

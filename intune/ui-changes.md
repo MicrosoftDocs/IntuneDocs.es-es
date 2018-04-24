@@ -15,15 +15,16 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 00f45d9a126e76c45712c6483b458f935e6d0021
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: e9c89098b9cb775e287cbe4c4ae4c56b9566b9fd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>¿Dónde está mi característica de Intune en Azure?
 Hemos aprovechado la oportunidad para organizar algunas tareas de forma más lógica durante el traslado de Intune a Azure Portal. Pero, como ocurre con todas las mejoras, deberá aprender la nueva organización. Por ello, hemos creado esta guía de referencia para aquellos que están familiarizados con Intune en el portal clásico y se preguntan dónde se encuentra una determinada función en Intune en Azure Portal. Si en este artículo no se incluye una característica que intenta encontrar, deje un comentario al final para que podamos actualizarlo.
 ## <a name="quick-reference-guide"></a>Guía de referencia rápida
+
 |Característica |Ruta de acceso del portal clásico|Ruta de acceso en Intune en Azure Portal|
 |------------|---------------|---------------|
 |Programa de inscripción de dispositivos (DEP) [solo iOS]|Administración > Administración de dispositivos móviles > iOS > Programa de inscripción de dispositivos|[Inscripción de dispositivos > Inscripción de Apple > Token del Programa de inscripción](#where-did-apple-dep-go) |

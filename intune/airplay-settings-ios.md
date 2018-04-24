@@ -15,15 +15,15 @@ ms.assetid: 712a79fb-14ef-4f6b-aba5-1dfca900afd2
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5f941d6c6d3e1aec9e53b97ad0700d3ad3070d56
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 94252815f0da8042a97aed7d807f022d9c166983
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-airplay-settings-for-ios-devices"></a>Configuración de Intune AirPlay para dispositivos iOS
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Use esta configuración para conectar los dispositivos iOS que administra con dispositivos AirPlay compatibles (como Apple TV) en la red.
 Con esta funcionalidad, puede:

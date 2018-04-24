@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8e023035dabea653b289b767ff08801b13068a9e
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: f8590fc524e770536a66c604add2ce82d0c28afc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-groups-to-organize-users-and-devices"></a>Creación de grupos para organizar usuarios y dispositivos
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 En este tema se explica a los administradores cómo crear grupos de usuarios en Intune.
 
@@ -83,5 +83,5 @@ Use grupos de usuarios para implementar las directivas de software y dispositivo
 
 Encontrará el grupo recién creado en la lista **Grupos** del área de trabajo **Grupos** en **Todos los usuarios**. Aquí también puede editar o eliminar el grupo.
 
->[!div class="step-by-step"]
-/intune/licenses-assign [&larr; **Administrar licencias de Intune**](/intune/licenses-assign)       [**Crear directivas y aplicaciones** &rarr;](.\start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  
+> [!div class="step-by-step"]
+> /intune/licenses-assign [&larr; **Administrar licencias de Intune**](/intune/licenses-assign)       [**Crear directivas y aplicaciones** &rarr;](./start-with-a-paid-subscription-to-microsoft-intune-step-6.md)  

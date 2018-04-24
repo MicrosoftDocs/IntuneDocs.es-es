@@ -2,8 +2,8 @@
 title: Versiones anteriores
 description: ''
 keywords: ''
-author: barlanmsft
-ms.author: barlan
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/13/2017
 ms.topic: article
@@ -14,17 +14,17 @@ ms.assetid: 45dad14a-d412-488d-bb1e-ad990ea503df
 ROBOTS: NOINDEX,NOFOLLOW
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 76e53cabba9b684170d659ae5b8ef884bfe9abaa
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 57b2ab83f356eac27f668908a9a14b4f9310da19
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="previous-intune-releases"></a>Versiones anteriores de Intune
 
 Esta página es una lista de los anuncios hechos en [Novedades de Microsoft Intune](whats-new-in-microsoft-intune.md).
 
-[!INCLUDE[wit_nextref](../includes/whats-new-last-six-months.md)]
+[!INCLUDE [wit_nextref](../includes/whats-new-last-six-months.md)]
 
 ## <a name="july-2016"></a>Julio de 2016
 
@@ -94,12 +94,12 @@ La información de mantenimiento del servicio de Intune se ha movido a una ubica
     * Deben administrarse mediante Intune
     * Deben cumplir todas las directivas de cumplimiento de Intune implementadas
 
- A los usuarios finales de los dispositivos no conformes se les solicitará que se inscriban y que solucionen cualquier problema de cumplimiento para obtener acceso.
+  A los usuarios finales de los dispositivos no conformes se les solicitará que se inscriban y que solucionen cualquier problema de cumplimiento para obtener acceso.
 - **Acceso condicional para el explorador.** Puede establecer una directiva de acceso condicional para [Exchange Online](/intune-classic/deploy-use/restrict-access-to-sharepoint-online-with-microsoft-intune) de modo que solo se pueda obtener acceso a ellos desde exploradores web compatibles en dispositivos administrados y compatibles con iOS y Android. A los usuarios finales que intenten iniciar sesión en Outlook Web Access (OWA) y en los sitios de SharePoint con dispositivos iOS y Android, se les solicitará que inscriban su dispositivo con Intune, así como que solucionen cualquier problema de cumplimiento antes de completar el inicio de sesión.
-<!---TFS 1175844--->
+  <!---TFS 1175844--->
 
 - **Dynamics CRM Online admite el acceso condicional.** Puede establecer una directiva de acceso condicional para [Dynamics CRM Online](/intune-classic/deploy-use/restrict-access-to-dynamics-crm-online-with-microsoft-intune) de modo que solo se pueda tener acceso a este con dispositivos administrados y compatibles con iOS y Android. Los usuarios finales que intenten iniciar sesión en la aplicación móvil de Dynamics CRM en iOS y Android tendrán que inscribirse en Intune y corregir cualquier problema de cumplimiento para poder iniciar sesión.
-<!---TFS1295358--->
+  <!---TFS1295358--->
 
 ### <a name="intune-company-portal-updates"></a>Actualizaciones del portal de empresa de Intune
 
@@ -180,19 +180,19 @@ Todas estas características también son compatibles con los clientes híbridos
 
 ### <a name="app-management"></a>Administración de aplicaciones
 - **Compatibilidad de usuario de MAM.**
-Ahora puede ver el [estado](/intune-classic/deploy-use/monitor-mobile-app-management-policies-with-Microsoft-Intune) de sus directivas de administración de aplicaciones para cualquier usuario en el inquilino de Azure Active Directory (AAD). Esto incluye:
-   - Dispositivos
-   - Aplicaciones del dispositivo
+  Ahora puede ver el [estado](/intune-classic/deploy-use/monitor-mobile-app-management-policies-with-Microsoft-Intune) de sus directivas de administración de aplicaciones para cualquier usuario en el inquilino de Azure Active Directory (AAD). Esto incluye:
+  - Dispositivos
+  - Aplicaciones del dispositivo
 
-   Valores de estado:
+    Valores de estado:
 
-   **Checked in (Comprobado)**: indica que la directiva se implementó para el usuario, y la aplicación se usó en un contexto profesional y recibió correctamente la directiva.
+    **Checked in (Comprobado)**: indica que la directiva se implementó para el usuario, y la aplicación se usó en un contexto profesional y recibió correctamente la directiva.
 
     **Not checked in (No comprobado)**: indica que la directiva se implementó para el usuario, pero la aplicación no se ha usado en un contexto profesional desde entonces.
 
 
 - **Controles de MAM para evitar la sincronización de contactos de Outlook (Android).**
-Hay una nueva configuración disponible para la [administración de aplicaciones móviles](/intune-classic/deploy-use/wipe-managed-company-app-data-with-Microsoft-Intune); los contactos que ya se hayan guardado en la libreta de direcciones nativa se eliminarán. Esta nueva opción es compatible inicialmente con la aplicación Outlook en dispositivos Android.
+  Hay una nueva configuración disponible para la [administración de aplicaciones móviles](/intune-classic/deploy-use/wipe-managed-company-app-data-with-Microsoft-Intune); los contactos que ya se hayan guardado en la libreta de direcciones nativa se eliminarán. Esta nueva opción es compatible inicialmente con la aplicación Outlook en dispositivos Android.
 
 ### <a name="device-management"></a>Administración de dispositivos
 - **Identificación de número de teléfono para dispositivos propiedad de la empresa.** Los teléfonos que están clasificados como "Corporativos" se identifican ahora con el número de teléfono completo, por ejemplo, al ejecutar un informe de inventario de dispositivos móviles. Los números de teléfono BYOD se seguirán enmascarando con ****; y solo se mostrarán los últimos 4 dígitos.
@@ -212,6 +212,6 @@ Hay una nueva configuración disponible para la [administración de aplicaciones
 
 Antes de que se agregaran estos estados, los usuarios se confundían si una instalación de aplicación tardaba mucho, porque solo veían el estando "Instalando", que puede permanecer en la pantalla durante horas. Al agregar los nuevos estados, en vez de llamar al soporte técnico, los usuarios ahora pueden pulsar el vínculo "Esperando a que se sincronice el dispositivo" y seguir las instrucciones para forzar que se reanude el proceso de sincronización.
 
->[!div class="step-by-step"]
-
->[&larr; **Novedades de Intune**](whats-new-in-microsoft-intune.md)    
+> [!div class="step-by-step"]
+> 
+> [&larr; **Novedades de Intune**](whats-new-in-microsoft-intune.md)    

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b0117ef734a8549593992108105192ce1c4de5b0
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 85233c06d9cbbc697aecabc75ba538612c0fa5fa
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quick-start-guide-prevent-company-data-leaks-from-office-365-mobile-apps"></a>Guía de inicio rápido: Evitar pérdidas de datos de empresa desde aplicaciones móviles de Office 365
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune puede ayudarle a proteger los datos de su organización mediante directivas de administración de aplicaciones móviles (MAM) que ayudan a evitar pérdidas de datos de empresa desde aplicaciones móviles de Office 365 u otras aplicaciones de línea de negocio (LOB). Las directivas de Intune MAM pueden utilizarse sin necesidad de que los usuarios finales inscriban sus dispositivos en la administración de dispositivos móviles de Intune (MDM). Por lo tanto, si tiene usuarios que no desean inscribir sus dispositivos móviles Android o iOS BYOD en una solución de Microsoft MDM (Intune, Configuration Manager o EAS), y desea proteger los datos corporativos sin administrar los dispositivos de los usuarios finales o si ya está utilizando una solución que no es una solución MDM de Microsoft, Intune puede ayudar a aumentar la seguridad de los datos de su empresa.   
 

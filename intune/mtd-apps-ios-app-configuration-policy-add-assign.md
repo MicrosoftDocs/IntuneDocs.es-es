@@ -1,25 +1,25 @@
 ---
 title: Agregar y asignar aplicaciones MTD a Microsoft Intune
-titleSuffix: 
-description: "Use Intune para agregar aplicaciones de Mobile Threat Defense (MTD), la aplicación de Microsoft Authenticator y la directiva de configuración de iOS en Azure Portal."
-keywords: 
+titleSuffix: ''
+description: Use Intune para agregar aplicaciones de Mobile Threat Defense (MTD), la aplicación de Microsoft Authenticator y la directiva de configuración de iOS en Azure Portal.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 07/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 00356258-76a8-4a84-9cf5-64ceedb58e72
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3fc71620fee1b1df907a4027c1c57cd91b53032e
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 08cebf84443e65ded5f7884218fbe17d722bddf2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Agregar y asignar aplicaciones de Mobile Threat Defense (MTD) con Intune
 
@@ -75,7 +75,7 @@ Para obtener información sobre cómo volver a firmar las aplicaciones Lookout f
 Habilite la autenticación de Azure Active Directory para los usuarios de iOS haciendo lo siguiente:
 
 1. Vaya a [Azure Portal](https://portal.azure.com), inicie sesión con sus credenciales y, después, vaya a la página de la aplicación.
-  
+
 2. Agregue la **aplicación Lookout for Work de iOS** como una **aplicación de cliente nativ**.
 
 3. Reemplace **com.lookout.enterprise.yourcompanyname** por el ID de agrupación del cliente que ha seleccionado cuando se registró el IPA.
@@ -133,13 +133,13 @@ Habilite la autenticación de Azure Active Directory para los usuarios de iOS ha
 
 -   Debe **descargar** el archivo de directiva de configuración de aplicaciones para iOS: 
     -   Vaya a la [consola de administración de Skycure](https://aad.skycure.com) e inicie sesión con sus credenciales de administrador.
-    
+
     -   Vaya a **Configuración** &gt; **Device Management Integrations** (Integraciones de administración de dispositivos)&gt; **EMM Integration Selection** (Selección de integración de EMM), elija **Microsoft Intune** y, a continuación, guarde la selección.
-    
+
     -   Haga clic en el vínculo **Archivos de configuración de integración** y guarde el archivo \*.zip generado. El archivo .zip contiene el archivo **skycure\_configuration.plist**, que se utilizará para crear la directiva de configuración de aplicaciones para iOS en Intune.
-    
+
     -   Vea las instrucciones para [usar las directivas de configuración de aplicaciones de Microsoft Intune para iOS](app-configuration-policies-use-ios.md) para agregar la directiva de configuración de aplicaciones de Skycure para iOS.
-    
+
     - En el **paso 8**, use la opción **Especificar datos XML**, copie el contenido del archivo **skycure_configuration.plist** y péguelo en el cuerpo de la directiva de configuración.
 
 También puede copiar el contenido de **skycure_configuration.plist** desde aquí:
@@ -151,7 +151,6 @@ También puede copiar el contenido de **skycure_configuration.plist** desde aqu�
     <key>UserEmail</key>
     <string>{{userprincipalname}}</string>
 </dict>
-
 ```
 ### <a name="for-check-point-sandblast-mobile"></a>Para SandBlast Mobile de Check Point
 
@@ -160,7 +159,6 @@ También puede copiar el contenido de **skycure_configuration.plist** desde aqu�
 
 ```
 <dict><key>MDM</key><string>INTUNE</string></dict>
-
 ```
 
 ### <a name="for-zimperium"></a>Para Zimperium
@@ -179,7 +177,6 @@ También puede copiar el contenido de **skycure_configuration.plist** desde aqu�
 <key>udidlast4digits</key>
 <string>{{udidlast4digits}}</string>
 </dict>
-
 ```
 
 ## <a name="to-assign-apps-all-mtd-partners"></a>Para asignar aplicaciones (todos los asociados de MTD)

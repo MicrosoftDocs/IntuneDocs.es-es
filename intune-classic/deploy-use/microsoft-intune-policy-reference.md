@@ -1,29 +1,29 @@
 ---
-title: "Referencia de la directiva de configuración"
-description: "Use la información de este tema para ayudarle a decidir qué directiva de Microsoft Intune debe usar para administrar los dispositivos."
-keywords: 
+title: Referencia de la directiva de configuración
+description: Use la información de este tema para ayudarle a decidir qué directiva de Microsoft Intune debe usar para administrar los dispositivos.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d27f2739-9791-4aae-a9db-01a4e59ccfe5
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bf92e34c5bb94fe0cb3c0cc9dabd687a0f2710b9
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 46bc3408f861bcd249ca5071abf1ee80733af10d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-configuration-policy-reference"></a>Referencia de directivas de configuración de Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Use la información de este tema para ayudarle a decidir qué directiva de configuración de Microsoft Intune debe usar para administrar los dispositivos.
 
@@ -102,12 +102,13 @@ Se aplica únicamente a dispositivos Windows Phone y Windows inscritos.
 
 ## <a name="common-mobile-device-settings"></a>Configuración de dispositivo móvil común
 
-|Nombre de la directiva|Usar en los siguientes casos|
-|---------------|------------------------|
-|**Directiva de Exchange ActiveSync**|Configurar la seguridad en dispositivos móviles y la configuración funcional en dispositivos administrados con Exchange ActiveSync.<br /><br />Para obtener más información, vea [Configuración de directivas de Exchange ActiveSync en Microsoft Intune](exchange-activesync-policy-settings-in-microsoft-intune.md).|
-|**Directiva de seguridad de dispositivos móviles**|<ul><li>Configura las opciones para dispositivos móviles (todas las plataformas), incluyendo:<br /><br /><ul><li>Seguridad</li><li>Cifrado</li><li>System</li><li>Correo electrónico</li><li>Aplicaciones</li></ul></li></ul>
+|                  Nombre de la directiva                   |                                                                                                                       Usar en los siguientes casos                                                                                                                       |
+|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <strong>Directiva de Exchange ActiveSync</strong>   | Configurar la seguridad en dispositivos móviles y la configuración funcional en dispositivos administrados con Exchange ActiveSync.<br /><br />Para obtener más información, vea [Configuración de directivas de Exchange ActiveSync en Microsoft Intune](exchange-activesync-policy-settings-in-microsoft-intune.md). |
+| <strong>Directiva de seguridad de dispositivos móviles</strong> |                                  <ul><li>Configura las opciones para dispositivos móviles (todas las plataformas), incluyendo:<br /><br /><ul><li>Seguridad</li><li>Cifrado</li><li>System</li><li>Correo electrónico</li><li>Aplicaciones</li></ul></li></ul>                                  |
+
 > [!IMPORTANT]
-Microsoft Intune ofrece ahora **directivas de configuración** independientes para cada plataforma de dispositivo. Estas directivas contienen la configuración más actualizada que se puede usar. Aún puede usar la directiva de seguridad de dispositivos móviles y las implementaciones existentes seguirán funcionando, pero debe planear la migración a las nuevas directivas de configuración tan pronto como sea posible.<br />Para obtener más información, vea [Configuración de directivas de seguridad de dispositivos móviles en Microsoft Intune](mobile-device-security-policy-settings-in-microsoft-intune.md).
+> Microsoft Intune ofrece ahora **directivas de configuración** independientes para cada plataforma de dispositivo. Estas directivas contienen la configuración más actualizada que se puede usar. Aún puede usar la directiva de seguridad de dispositivos móviles y las implementaciones existentes seguirán funcionando, pero debe planear la migración a las nuevas directivas de configuración tan pronto como sea posible.<br />Para obtener más información, vea [Configuración de directivas de seguridad de dispositivos móviles en Microsoft Intune](mobile-device-security-policy-settings-in-microsoft-intune.md).
 
 ## <a name="policies-for-windows-pcs-managed-by-the-intune-software-client"></a>Directivas para equipos con Windows administrados con el cliente de software de Intune
 

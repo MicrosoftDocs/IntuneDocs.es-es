@@ -1,30 +1,30 @@
 ---
-title: "Creación de una directiva de cumplimiento de Android for Work"
+title: Creación de una directiva de cumplimiento de Android for Work
 titleSuffix: Microsoft Intune
 description: Cree una directiva de cumplimiento de dispositivos de Intune para dispositivos Android for Work para poder especificar los requisitos que debe cumplir un dispositivo para que sea compatible.
-keywords: 
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8ca31d4c83ccc6b786933080b96f66953cf1a108
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 00fa4508cdd4e74a20205ce46025b414cc0bb4cf
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Creación de una directiva de cumplimiento para dispositivos Android for Work en Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Una directiva de cumplimiento de dispositivos de Intune para Android for Work especifica las reglas y la configuración que los dispositivos Android for Work deben cumplir para que se consideren compatibles. Estas directivas se pueden usar con el acceso condicional para permitir o bloquear el acceso a recursos de la empresa, y se pueden obtener informes de dispositivos y realizar acciones en caso de incumplimiento. Las directivas de cumplimiento de dispositivos para cada plataforma se crean en Azure Portal de Intune. Para obtener más información sobre las directivas de cumplimiento y los requisitos previos que deben satisfacerse antes de crear una directiva de cumplimiento, consulte [Introducción a las directivas de cumplimiento de dispositivos](device-compliance-get-started.md).
 
@@ -52,7 +52,7 @@ En la tabla siguiente se describe cómo administrar la configuración de no conf
 ## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Creación de una directiva de cumplimiento en el portal de Azure
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 1. En el panel **Intune**, elija **Cumplimiento del dispositivo**. En **Administrar**, elija **Directivas** y después **Crear directiva**.
 2. Escriba un nombre y una descripción y elija la plataforma a la que quiere que se aplique esta directiva.
 3. Elija **Configuración de valores** para especificar aquí las opciones de **Seguridad del sistema**, **Estado de dispositivos** y **Propiedades del dispositivo**. Cuando termine, elija **Aceptar**.

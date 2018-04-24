@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9f5fec22a17eef39819b38567793a2f579815e59
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4e53acad9fb2cf1e6c18b71900c6b671dd031e98
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-apps-for-enrolled-devices-to-intune"></a>Agregar aplicaciones a los dispositivos inscritos en Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Antes de que pueda implementar o administrar una aplicación, debe agregarla a Microsoft Intune. En este tema se muestra cómo agregar aplicaciones a los dispositivos inscritos.
 
@@ -34,32 +34,32 @@ Antes de que pueda implementar o administrar una aplicación, debe agregarla a M
 ## <a name="add-the-app"></a>Agregar la aplicación
 Use el Editor de software de Intune para configurar las propiedades de la aplicación y, si procede, cargarla en su espacio de almacenamiento en la nube. Utilice el procedimiento siguiente:
 
-1.  En la [consola de administrador de Microsoft Intune](https://manage.microsoft.com), elija **Aplicaciones** &gt; **Agregar aplicaciones** para iniciar el Editor de software de Intune.
+1. En la [consola de administrador de Microsoft Intune](https://manage.microsoft.com), elija **Aplicaciones** &gt; **Agregar aplicaciones** para iniciar el Editor de software de Intune.
 
-    > [!TIP]
-    > Deberá escribir su nombre de usuario y contraseña de Intune para que se inicie el editor.
+   > [!TIP]
+   > Deberá escribir su nombre de usuario y contraseña de Intune para que se inicie el editor.
 
-2.  En la página **Instalación de software** del editor, elija una de las siguientes opciones en **Seleccione cómo debe ponerse a disposición de los dispositivos este software**:
-    - **Instalador de software** para aplicaciones con la extensión **.msi**:
-        - **Seleccionar el tipo de archivo instalador de software**. Indica el tipo de software que desea implementar. Por ejemplo, si quiere instalar una aplicación iOS, elija **Paquete de aplicación para iOS (archivo &#42;.ipa)**.
-        - **Especificar la ubicación de los archivos de instalación del software**. Escriba la ubicación de los archivos de instalación o elija **Examinar** para seleccionar la ubicación en una lista.
-        - **Incluir archivos y subcarpetas adicionales de la misma carpeta**. Esta opción es únicamente para el tipo de archivo **Windows Installer**.<br>Cierto software que usa Windows Installer necesita los archivos auxiliares que normalmente se encuentran en la misma carpeta que los archivos de instalación. Seleccione esta opción si también desea implementar estos archivos.<br>Este tipo de instalación usa parte del espacio de almacenamiento en la nube.
+2. En la página **Instalación de software** del editor, elija una de las siguientes opciones en **Seleccione cómo debe ponerse a disposición de los dispositivos este software**:
+   - **Instalador de software** para aplicaciones con la extensión **.msi**:
+       - **Seleccionar el tipo de archivo instalador de software**. Indica el tipo de software que desea implementar. Por ejemplo, si quiere instalar una aplicación iOS, elija **Paquete de aplicación para iOS (archivo &#42;.ipa)**.
+       - **Especificar la ubicación de los archivos de instalación del software**. Escriba la ubicación de los archivos de instalación o elija **Examinar** para seleccionar la ubicación en una lista.
+       - **Incluir archivos y subcarpetas adicionales de la misma carpeta**. Esta opción es únicamente para el tipo de archivo **Windows Installer**.<br>Cierto software que usa Windows Installer necesita los archivos auxiliares que normalmente se encuentran en la misma carpeta que los archivos de instalación. Seleccione esta opción si también desea implementar estos archivos.<br>Este tipo de instalación usa parte del espacio de almacenamiento en la nube.
 
-  -   **Vínculo externo**, para aplicaciones que quiere crear indicando un vínculo a una tienda de aplicaciones:
+   -   **Vínculo externo**, para aplicaciones que quiere crear indicando un vínculo a una tienda de aplicaciones:
 
-        - **Especificar la dirección URL**. Especifique la dirección URL de una de las opciones siguientes:
-            - La dirección URL de la tienda de aplicaciones de la aplicación que quiere implementar. Por ejemplo, si quiere implementar la aplicación de Escritorio remoto de Microsoft para Android, especifique **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android**.<br>Para buscar la dirección URL de la aplicación, use un motor de búsqueda para encontrar la página de almacenamiento que contiene la aplicación. Por ejemplo, para encontrar la aplicación Escritorio remoto, puede buscar **Escritorio remoto de Microsoft Android**.
-            - Un sitio web. Intune implementará un icono de acceso directo al sitio del dispositivo (conocido como un clip de web).
-            - Una aplicación en la web. Intune implementará un icono de acceso directo a la aplicación del dispositivo.
-        - **Se necesita Managed Browser para abrir este vínculo (solo iOS y Android)**. Al implementar un vínculo a un sitio web o aplicación web para los usuarios, estos solo podrán abrirlo en el explorador administrado de Intune. Este explorador debe instalarse en su dispositivo.<br>Para obtener más detalles sobre el explorador administrado, vea [Administrar el acceso a Internet mediante directivas de explorador administrado con Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).<br>Este tipo de instalación no usa el espacio de almacenamiento en la nube.
+       - **Especificar la dirección URL**. Especifique la dirección URL de una de las opciones siguientes:
+           - La dirección URL de la tienda de aplicaciones de la aplicación que quiere implementar. Por ejemplo, si quiere implementar la aplicación de Escritorio remoto de Microsoft para Android, especifique **https://play.google.com/store/apps/details?id=com.microsoft.rdc.android**.<br>Para buscar la dirección URL de la aplicación, use un motor de búsqueda para encontrar la página de almacenamiento que contiene la aplicación. Por ejemplo, para encontrar la aplicación Escritorio remoto, puede buscar **Escritorio remoto de Microsoft Android**.
+           - Un sitio web. Intune implementará un icono de acceso directo al sitio del dispositivo (conocido como un clip de web).
+           - Una aplicación en la web. Intune implementará un icono de acceso directo a la aplicación del dispositivo.
+       - **Se necesita Managed Browser para abrir este vínculo (solo iOS y Android)**. Al implementar un vínculo a un sitio web o aplicación web para los usuarios, estos solo podrán abrirlo en el explorador administrado de Intune. Este explorador debe instalarse en su dispositivo.<br>Para obtener más detalles sobre el explorador administrado, vea [Administrar el acceso a Internet mediante directivas de explorador administrado con Microsoft Intune](manage-internet-access-using-managed-browser-policies.md).<br>Este tipo de instalación no usa el espacio de almacenamiento en la nube.
 
-  -   **Aplicación iOS administrada de la App Store**, para aplicaciones gratuitas de iTunes Store que quiera administrar con directivas de administración de aplicaciones móviles (MAM):
+   -   **Aplicación iOS administrada de la App Store**, para aplicaciones gratuitas de iTunes Store que quiera administrar con directivas de administración de aplicaciones móviles (MAM):
 
-        - **Especificar la dirección URL**. Especifique la dirección URL de la tienda de aplicaciones de la aplicación que quiere implementar. Por ejemplo, si quiere implementar la aplicación Carpetas de trabajo de Microsoft para iOS, especifique **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8**.<br>Este tipo de instalación no usa el espacio de almacenamiento en la nube.
+       - **Especificar la dirección URL**. Especifique la dirección URL de la tienda de aplicaciones de la aplicación que quiere implementar. Por ejemplo, si quiere implementar la aplicación Carpetas de trabajo de Microsoft para iOS, especifique **https://itunes.apple.com/us/app/work-folders/id950878067?mt=8**.<br>Este tipo de instalación no usa el espacio de almacenamiento en la nube.
 
-        Por ejemplo, si quiere implementar la aplicación Microsoft Word desde iTunes Store en los dispositivos, la página sería similar a esta:
+       Por ejemplo, si quiere implementar la aplicación Microsoft Word desde iTunes Store en los dispositivos, la página sería similar a esta:
 
-        ![editor de software de Intune](./media/publisher-for-mobile.png)
+       ![editor de software de Intune](./media/publisher-for-mobile.png)
 
 > [!NOTE]
 > Al agregar e implementar una aplicación desde un almacén, los usuarios finales deben tener una cuenta con el almacén para poder instalar la aplicación.

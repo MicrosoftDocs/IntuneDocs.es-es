@@ -1,43 +1,43 @@
 ---
 title: Wi-Fi con una clave precompartida
-description: "Use la configuración personalizada de Intune para crear un perfil de Wi-Fi con una clave precompartida."
-keywords: 
+description: Use la configuración personalizada de Intune para crear un perfil de Wi-Fi con una clave precompartida.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/25/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e977c7c7-e204-47a6-b851-7ad7673ceaab
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0e2dff26e6dcbe1db6a9cef58af10901178e432b
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: a023b6829b33c3b3bff94021ecd3c90d8b41f30f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-a-custom-policy-to-create-a-wi-fi-profile-with-a-pre-shared-key"></a>Uso de una directiva personalizada para crear un perfil Wi-Fi con una clave precompartida
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 En este tema se explica cómo usar la **configuración personalizada** de Intune para crear un perfil de Wi-Fi con una clave precompartida. Además, se incluye un ejemplo de cómo crear un perfil de Wi-Fi basado en EAP.
 
 > [!NOTE]
--   Le resultará más fácil copiar el código desde un equipo que esté conectado a esa red, tal como se describe a continuación.
-- En Android también tiene la opción de usar la herramienta [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) proporcionado por Johnathon Biersack.
--   Puede agregar varias redes y claves si agrega más configuraciones de OMA-URI.
--  En iOS, use Apple Configurator en una estación Mac para configurar el perfil. También puede usar la herramienta [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) proporcionado por Johnathon Biersack.
+> -   Le resultará más fácil copiar el código desde un equipo que esté conectado a esa red, tal como se describe a continuación.
+> - En Android también tiene la opción de usar la herramienta [Android PSK Generator](http://johnathonb.com/2015/05/intune-android-pre-shared-key-generator/) proporcionado por Johnathon Biersack.
+> -   Puede agregar varias redes y claves si agrega más configuraciones de OMA-URI.
+> -  En iOS, use Apple Configurator en una estación Mac para configurar el perfil. También puede usar la herramienta [iOS PSK Mobile Config Generator](http://johnathonb.com/2015/05/intune-ios-psk-mobile-config-generator/) proporcionado por Johnathon Biersack.
 
 
-1.  Si quiere crear un perfil de Wi-Fi con una clave precompartida para Android o Windows o un perfil de Wi-Fi basado en EAP, cuando cree una directiva, seleccione **Configuración personalizada** para esa plataforma de dispositivo, en lugar de seleccionar un perfil de Wi-Fi.
+1. Si quiere crear un perfil de Wi-Fi con una clave precompartida para Android o Windows o un perfil de Wi-Fi basado en EAP, cuando cree una directiva, seleccione **Configuración personalizada** para esa plataforma de dispositivo, en lugar de seleccionar un perfil de Wi-Fi.
 
-2.  Proporcione un nombre y una descripción.
-3.  Agregue una nueva configuración OMA-URI:
+2. Proporcione un nombre y una descripción.
+3. Agregue una nueva configuración OMA-URI:
 
    a.   Escriba un nombre para esta configuración de red Wi-Fi.
 
@@ -47,15 +47,15 @@ En este tema se explica cómo usar la **configuración personalizada** de Intune
 
    d.   **OMA-URI**:
 
-    - **Para Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
-    - **Para Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
+   - **Para Android**: ./Vendor/MSFT/WiFi/Profile/<SSID>/Settings
+   - **Para Windows**: ./Vendor/MSFT/WiFi/Profile/MyNetwork/WlanXml
 
-    > [!NOTE]
-Asegúrese de incluir el carácter de punto al principio.
+   > [!NOTE]
+   > Asegúrese de incluir el carácter de punto al principio.
 
-    SSID es el SSID para el que va a crear la directiva. Por ejemplo, `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
+   SSID es el SSID para el que va a crear la directiva. Por ejemplo, `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`
 
-  e. **Campo de valor** es donde se pega el código XML. A continuación se muestra un ejemplo. Cada valor debe adaptarse a la configuración de red. En la sección de comentarios del código puede consultar información útil.
+   e. **Campo de valor** es donde se pega el código XML. A continuación se muestra un ejemplo. Cada valor debe adaptarse a la configuración de red. En la sección de comentarios del código puede consultar información útil.
 4. Elija **Aceptar**, guarde y, luego, implemente la directiva.
 
     > [!NOTE]
@@ -202,8 +202,8 @@ También puede crear un archivo XML desde una conexión Wi-Fi existente:
 1. En un equipo que esté conectado a la red inalámbrica o que recientemente se haya conectado a ella, abra la carpeta siguiente: C:\ProgramData\Microsoft\Wlansvc\Profiles\Interfaces\{guid}.
 
     Es mejor usar un equipo que no esté conectado a muchas redes inalámbricas, ya que tendrá que examinar todos los perfiles para encontrar el adecuado.
-3.     Busque el archivo XML que tenga el nombre correcto.
-4.     Cuando haya encontrado el archivo XML correcto, copie y pegue el código XML en el campo de datos de la página de configuración de OMA-URI.
+2. Busque el archivo XML que tenga el nombre correcto.
+3. Cuando haya encontrado el archivo XML correcto, copie y pegue el código XML en el campo de datos de la página de configuración de OMA-URI.
 
 ## <a name="deploy-the-policy"></a>Implementar la directiva
 
@@ -217,5 +217,5 @@ También puede crear un archivo XML desde una conexión Wi-Fi existente:
 
 Al seleccionar una directiva implementada, puede ver más información sobre la implementación en la parte inferior de la lista de directivas.
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 [Wi-Fi connections in Microsoft Intune](wi-fi-connections-in-microsoft-intune.md) (Conexiones Wi-Fi en Microsoft Intune)

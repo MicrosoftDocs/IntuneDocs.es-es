@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6139b656c69b58bdbdd02e296f8a061dd598a1c6
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 512bd38802dbb97a74d3d19d74a7d5086784d327
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-configurations-for-microsoft-intune-vpn-profiles"></a>Configuraciones personalizadas para perfiles de VPN en Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="create-a-custom-configuration"></a>Crear una configuración personalizada
 Puede usar directivas de configuración personalizadas de Intune para crear perfiles de VPN para:
@@ -39,13 +39,13 @@ Este tipo de directiva puede ser útil cuando las directivas estándar de VPN de
 
 ## <a name="to-create-a-custom-configuration-policy"></a>Para crear una directiva de configuración personalizada:
 
-   1. En la [Consola de administración de Intune](https://manage.microsoft.com), seleccione **Directiva** > **Agregar directiva** > *Expandir plataforma* > **Configuración personalizada** > **Crear directiva**.
-   2. Especifique un nombre para la directiva.
-   3. En cada opción de configuración del URI que quiere especificar, pulse **Agregar** y proporcione la información que se le solicite. Este podría ser un ejemplo:
+1. En la [Consola de administración de Intune](https://manage.microsoft.com), seleccione **Directiva** > **Agregar directiva** > *Expandir plataforma* > **Configuración personalizada** > **Crear directiva**.
+2. Especifique un nombre para la directiva.
+3. En cada opción de configuración del URI que quiere especificar, pulse **Agregar** y proporcione la información que se le solicite. Este podría ser un ejemplo:
 
    ![Cuadro de diálogo de configuración personalizada de perfil de VPN](./media/Intune_Add_VPN_URI.png)
 
-   4.  Una vez que haya escrito todas las opciones de configuración del identificador URI, elija **Guardar directiva** y, después, impleméntela.
+4. Una vez que haya escrito todas las opciones de configuración del identificador URI, elija **Guardar directiva** y, después, impleméntela.
 
 Después, [implemente la directiva](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies#deploy-a-configuration-policy) de manera normal.
 

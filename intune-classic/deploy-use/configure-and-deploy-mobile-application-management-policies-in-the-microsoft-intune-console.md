@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 94c6a46d2213ba3d1389b52f7684ec531e40228a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: e1b4903eedaec53015a01a7711f87401dc02d24e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console"></a>Configure and deploy mobile application management policies in the Microsoft Intune console
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Las directivas de administración de aplicaciones móviles (MAM) de Microsoft Intune permiten modificar la función de las aplicaciones que se implementan para que, de este modo, estén en consonancia con las directivas de seguridad y cumplimiento de la compañía. Por ejemplo, puede limitar las operaciones de cortar, copiar y pegar dentro de una aplicación administrada, o configurar una aplicación para abrir todos los vínculos web dentro de un explorador administrado.
 
@@ -180,7 +180,7 @@ Cuando haya creado e implementado una aplicación asociada a una directiva de ad
 
 4.  Seleccione la directiva de administración de aplicaciones móviles cuyo estado desea ver. Puede ver los detalles de la directiva en el panel inferior y expandir el nodo para mostrar su configuración.
 
-5.  En la columna **Estado** de cada una de las directivas de administración de aplicaciones móviles, aparecerá **Cumple**, **Cumplimiento (pendiente)**o **Error** . Si la directiva seleccionada tiene una o más configuraciones en conflicto, aparecerá **Error** en este campo.
+5.  En la columna **Estado** de cada una de las directivas de administración de aplicaciones móviles, aparecerá **Cumple**, **Cumplimiento (pendiente)** o **Error** . Si la directiva seleccionada tiene una o más configuraciones en conflicto, aparecerá **Error** en este campo.
 
 6.  Cuando haya identificado un conflicto, puede modificar las configuraciones de directivas en conflicto para que usen la misma configuración o implementar una sola directiva para la aplicación y el usuario.
 

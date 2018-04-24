@@ -1,29 +1,29 @@
 ---
-title: "Configuración de directiva de seguridad de dispositivos móviles"
-description: "Use Intune para configurar una amplia variedad de opciones que puede implementar en los dispositivos administrados de su organización."
-keywords: 
+title: Configuración de directiva de seguridad de dispositivos móviles
+description: Use Intune para configurar una amplia variedad de opciones que puede implementar en los dispositivos administrados de su organización.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 11/02/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e5ab3b76-08af-4893-b294-fb6627fdc4c6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fa86e50ebf7e65be0ce8ace65e2cb0bc7e38658e
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 83536a4d9858454505a84a2e394ace1119255049
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="mobile-device-security-policy-settings-in-microsoft-intune"></a>Configuración de directivas de seguridad de dispositivos móviles en Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 > [!IMPORTANT]
 > Ahora Microsoft Intune presenta directivas de configuración independientes para cada plataforma de dispositivos. Estas directivas contienen la configuración más actualizada que puede usar. Puede seguir usando la directiva de seguridad de dispositivos móviles, ya que las implementaciones existentes seguirán funcionando. En cambio, debe planear la migración a las nuevas directivas de configuración tan pronto como sea posible, ya que la directiva de seguridad de dispositivos móviles se eliminará en el futuro.
@@ -48,32 +48,34 @@ Puede crear e implementar directivas de seguridad de dispositivos móviles para 
 
 ## <a name="security-settings"></a>Configuración de seguridad
 
-|Nombre de la configuración|Windows 8.1 y Windows RT 8.1|Windows RT|Windows Phone 8 y Windows Phone 8.1|iOS|Android y Samsung KNOX Standard|
-|----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Requerir una contraseña para desbloquear dispositivos móviles**|No|No|Sí|Sí|Sí|
-|**Tipo de contraseña obligatoria**<br /><br />Esta opción especifica el tipo de contraseña que será necesario, como solo numérica o alfanumérica.|Sí|Sí|Sí|Sí|No|
-|**Tipo de contraseña requerida: número mínimo de conjuntos de caracteres**<br /><br />Hay cuatro juegos de caracteres: letras minúsculas, letras mayúsculas, símbolos y números. Esta configuración especifica cuántos conjuntos de caracteres diferentes deben incluirse en la contraseña. En cambio, para dispositivos iOS, especifica el número de caracteres de símbolos que deben incluirse en la contraseña.|Sí|Sí|Sí|Sí|No|
-|**Longitud mínima de contraseña**|Sí|Sí|Sí|Sí|Sí|
-|**Permitir contraseñas sencillas**<br /><br />Las contraseñas sencillas incluyen “0000” y “1234”.|No|No|Sí|Sí|No|
-|**Número de errores de inicio de sesión repetidos que se permiten antes de que se borre el dispositivo**|Sí|Sí|Sí|Sí|Sí|
-|**Minutos de inactividad antes de que se apague la pantalla**<sup>1</sup>|Sí|Sí|Sí|Sí|Sí|
-|**Expiración de contraseña (días)**|Sí|Sí|Sí|Sí|Sí|
-|**Recordar el historial de contraseñas**|Sí|Sí|Sí|Sí|Sí|
-|**Recordar historial de la contraseña** : **Impedir la reutilización de contraseñas anteriores**|Sí|Sí|Sí|Sí|Sí|
-|**Calidad de contraseña**|No|No|No|No|Sí|
-|**Permitir contraseña de imagen y PIN**|Sí|Sí|No|No|No|
-|**Minutos de inactividad antes de que se pida la contraseña**|No|No|No|Sí|No|
-|**Permitir desbloqueo mediante huellas digitales**|No|No|No|iOS 7 y versiones posteriores|No|
+|                                                                                                                                                                                        Nombre de la configuración                                                                                                                                                                                         | Windows 8.1 y Windows RT 8.1 | Windows RT | Windows Phone 8 y Windows Phone 8.1 |       iOS       | Android y Samsung KNOX Standard |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|------------|---------------------------------------|-----------------|-----------------------------------|
+|                                                                                                                                                                <strong>Requerir una contraseña para desbloquear dispositivos móviles</strong>                                                                                                                                                                 |               No               |     No     |                  Sí                  |       Sí       |                Sí                |
+|                                                                                                                 <strong>Tipo de contraseña obligatoria</strong><br /><br />Esta opción especifica el tipo de contraseña que será necesario, como solo numérica o alfanumérica.                                                                                                                 |              Sí               |    Sí     |                  Sí                  |       Sí       |                No                 |
+| <strong>Tipo de contraseña requerida: número mínimo de conjuntos de caracteres</strong><br /><br />Hay cuatro juegos de caracteres: letras minúsculas, letras mayúsculas, símbolos y números. Esta configuración especifica cuántos conjuntos de caracteres diferentes deben incluirse en la contraseña. En cambio, para dispositivos iOS, especifica el número de caracteres de símbolos que deben incluirse en la contraseña. |              Sí               |    Sí     |                  Sí                  |       Sí       |                No                 |
+|                                                                                                                                                                          <strong>Longitud mínima de contraseña</strong>                                                                                                                                                                           |              Sí               |    Sí     |                  Sí                  |       Sí       |                Sí                |
+|                                                                                                                                               <strong>Permitir contraseñas sencillas</strong><br /><br />Las contraseñas sencillas incluyen “0000” y “1234”.                                                                                                                                                |               No               |     No     |                  Sí                  |       Sí       |                No                 |
+|                                                                                                                                                  <strong>Número de errores de inicio de sesión repetidos que se permiten antes de que se borre el dispositivo</strong>                                                                                                                                                   |              Sí               |    Sí     |                  Sí                  |       Sí       |                Sí                |
+|                                                                                                                                                         <strong>Minutos de inactividad antes de que se apague la pantalla</strong><sup>1</sup>                                                                                                                                                          |              Sí               |    Sí     |                  Sí                  |       Sí       |                Sí                |
+|                                                                                                                                                                         <strong>Expiración de contraseña (días)</strong>                                                                                                                                                                         |              Sí               |    Sí     |                  Sí                  |       Sí       |                Sí                |
+|                                                                                                                                                                         <strong>Recordar el historial de contraseñas</strong>                                                                                                                                                                          |              Sí               |    Sí     |                  Sí                  |       Sí       |                Sí                |
+|                                                                                                                                              <strong>Recordar historial de la contraseña</strong> : <strong>Impedir la reutilización de contraseñas anteriores</strong>                                                                                                                                              |              Sí               |    Sí     |                  Sí                  |       Sí       |                Sí                |
+|                                                                                                                                                                              <strong>Calidad de contraseña</strong>                                                                                                                                                                              |               No               |     No     |                  No                   |       No        |                Sí                |
+|                                                                                                                                                                       <strong>Permitir contraseña de imagen y PIN</strong>                                                                                                                                                                       |              Sí               |    Sí     |                  No                   |       No        |                No                 |
+|                                                                                                                                                             <strong>Minutos de inactividad antes de que se pida la contraseña</strong>                                                                                                                                                              |               No               |     No     |                  No                   |       Sí       |                No                 |
+|                                                                                                                                                                          <strong>Permitir desbloqueo mediante huellas digitales</strong>                                                                                                                                                                          |               No               |     No     |                  No                   | iOS 7 y versiones posteriores |                No                 |
+
 <sup>1</sup>En los dispositivos iOS, cuando configura las opciones **Minutos de inactividad antes de que se apague la pantalla** y **Minutos de inactividad antes de que sea necesaria la contraseña**, se aplican en secuencia. Por ejemplo, si establece el valor para ambas opciones en **5** minutos, la pantalla se apagará automáticamente transcurridos 5 minutos y el dispositivo se bloqueará pasados 5 minutos más. Sin embargo, si el usuario apaga la pantalla manualmente, la segunda opción se aplica inmediatamente. En el mismo ejemplo, una vez que el usuario apague la pantalla, el dispositivo se bloqueará 5 minutos más tarde.
 
 Cuando implementa una directiva de longitud de contraseña para dispositivos que ejecutan Windows RT, los usuarios se verán obligados a restablecer la contraseña, aunque la contraseña actual cumpla los requisitos de la directiva.
 
 ## <a name="encryption-settings"></a>Configuración de cifrado
 
-|Nombre de la configuración|Windows 8.1 y Windows RT 8.1|Windows RT|Windows Phone 8 y Windows Phone 8.1|iOS|Android y Samsung KNOX Standard|
-|----------------|----------------------------------|--------------|-----------------------------------------|-------|----------------------------|
-|**Requerir cifrado en dispositivo móvil**<sup>1</sup><br /><br />Para dispositivos de Windows Phone 8, debe establecerse en **Sí**.<br /><br />Para habilitar el cifrado en dispositivos iOS, habilite la opción **Requerir una contraseña para desbloquear dispositivos móviles**.|Sí|No|Sí|No|Sí|
-|**Requerir cifrado en tarjetas de almacenamiento**<br /><br />Esta opción también se aplica a dispositivos administrados por Exchange ActiveSync.|n/a|n/a|n/a <br />Las aplicaciones y los datos asociados se cifran automáticamente.|n/a|Sí|
+|                                                                                                                                     Nombre de la configuración                                                                                                                                     | Windows 8.1 y Windows RT 8.1 | Windows RT |              Windows Phone 8 y Windows Phone 8.1              | iOS | Android y Samsung KNOX Standard |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|------------|-----------------------------------------------------------------|-----|-----------------------------------|
+| <strong>Requerir cifrado en dispositivo móvil</strong><sup>1</sup><br /><br />Para dispositivos de Windows Phone 8, debe establecerse en <strong>Sí</strong>.<br /><br />Para habilitar el cifrado en dispositivos iOS, habilite la opción <strong>Requerir una contraseña para desbloquear dispositivos móviles</strong>. |              Sí               |     No     |                               Sí                               | No  |                Sí                |
+|                                                                    <strong>Requerir cifrado en tarjetas de almacenamiento</strong><br /><br />Esta opción también se aplica a dispositivos administrados por Exchange ActiveSync.                                                                     |              n/a               |    n/a     | n/a <br />Las aplicaciones y los datos asociados se cifran automáticamente. | n/a |                Sí                |
+
 <sup>1</sup>Aquí se muestra información adicional para los dispositivos que ejecutan Windows 8.1:
 
 -   Para forzar el cifrado en los dispositivos que ejecutan Windows 8.1, debe instalar la [Actualización de cliente de diciembre de 2014 MDM en Windows](http://support.microsoft.com/kb/3013816) en cada dispositivo.
@@ -168,7 +170,7 @@ Cuando implementa una directiva de longitud de contraseña para dispositivos que
 |**Permitir documentos no administrados en otras aplicaciones administradas**|No|No|No|iOS 7 y versiones posteriores|No|
 |**Permitir videoconferencias**|No|No|No|Sí|No|
 |**Permitir contenido para adultos en el almacén multimedia**|No|No|No|Sí|No|
-|**Permitir la instalación de aplicaciones**|No|No|No|iOS 6 y versiones posteriores|No|
+|**Permitir la instalación de aplicaciones**|No|No|No|iOS 6 y versiones posteriores|No|
 
 ## <a name="application-settings---gaming"></a>Configuración de la aplicación: juegos
 
@@ -212,5 +214,5 @@ Cuando implementa una directiva de longitud de contraseña para dispositivos que
 |**Permitir el uso compartido del Portapapeles entre aplicaciones**|No|No|No|No|Sí (solo Samsung KNOX Standard)|
 |**Permitir YouTube**|No|No|No|No|Sí (solo Samsung KNOX Standard)|
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

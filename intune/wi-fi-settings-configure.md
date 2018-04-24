@@ -13,15 +13,15 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 90d2df028d5a61bb134b6a2b76efa570eed80f20
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 9a550e2963fa60a91db3ef63f7771bc4ca352d98
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-wi-fi-settings-in-microsoft-intune"></a>Configuración de Wi-Fi en Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Use perfiles de Wi-Fi de Microsoft Intune para asignar la configuración de red inalámbrica a los usuarios y los dispositivos de la organización. Al asignar un perfil de Wi-Fi, los usuarios tendrán acceso a su red Wi-Fi corporativa sin tener que configurarla ellos mismos.
 
@@ -47,7 +47,7 @@ Use la información de este tema para conocer los aspectos básicos de la config
 ## <a name="create-a-device-profile-containing-wi-fi-settings"></a>Creación de un perfil de dispositivo que contenga la configuración de Wi-Fi
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En el panel **Intune**, elija **Configuración del dispositivo**.
 2. En el panel **Configuración del dispositivo**, en la sección **Administrar**, elija **Perfiles**.
 3. En el panel Perfiles, elija **Crear perfil**.

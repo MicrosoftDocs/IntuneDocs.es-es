@@ -1,28 +1,28 @@
 ---
-title: "Configurar una directiva de acceso condicional basado en aplicación con Intune"
-description: "Obtenga información sobre cómo crear una directiva de acceso condicional basado en aplicación con Intune."
-keywords: 
+title: Configurar una directiva de acceso condicional basado en aplicación con Intune
+description: Obtenga información sobre cómo crear una directiva de acceso condicional basado en aplicación con Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5ab442f49e0eabc4162bd2f56865ed42d96ae5db
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: b7e3654021935495189b62da5257793383586137
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>Configurar directivas de acceso condicional basado en aplicación con Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 En este artículo, se describe cómo configurar directivas de acceso condicional basado en aplicación para aplicaciones que forman parte de la lista de aplicaciones aprobadas. La lista de aplicaciones aprobadas consta de aplicaciones que Microsoft ha probado.
 

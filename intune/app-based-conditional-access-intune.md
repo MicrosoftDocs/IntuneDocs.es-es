@@ -1,28 +1,28 @@
 ---
-title: "Acceso condicional basado en aplicación con Intune"
-description: "Obtenga información sobre el funcionamiento del acceso condicional basado en aplicaciones en Intune."
-keywords: 
+title: Acceso condicional basado en aplicación con Intune
+description: Obtenga información sobre el funcionamiento del acceso condicional basado en aplicaciones en Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 05/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 604eb86e6ae712bac360ecf45dd8f20e611bc52a
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 35d7be91201f8cf4fc3016363770b65bcea9ed72
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Acceso condicional basado en aplicación con Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Las [directivas de protección de aplicaciones de Intune](app-protection-policy.md) ayudan a proteger los datos de la empresa en dispositivos inscritos en Intune. También puede usar directivas de protección de aplicaciones en dispositivos que poseen los empleados que no están inscritos para administración en Intune. En este caso, aunque la empresa no administre el dispositivo, deberá asegurarse de que los datos y los recursos de la empresa están protegidos.
 
@@ -56,29 +56,29 @@ En este ejemplo, el administrador ha aplicado directivas de protección de aplic
 
 ![Proceso del acceso condicional basado en aplicaciones ilustrado en un gráfico de flujo](./media/ca-intune-common-ways-3.png)
 
-1.  El usuario intenta autenticarse en Azure AD desde la aplicación Outlook.
+1. El usuario intenta autenticarse en Azure AD desde la aplicación Outlook.
 
-2.  Al usuario se le redirige a la tienda de aplicaciones para instalar una aplicación de agente al intentar autenticarse por primera vez. La aplicación de agente puede ser Microsoft Authenticator para iOS o el Portal de empresa de Microsoft para dispositivos Android.
+2. Al usuario se le redirige a la tienda de aplicaciones para instalar una aplicación de agente al intentar autenticarse por primera vez. La aplicación de agente puede ser Microsoft Authenticator para iOS o el Portal de empresa de Microsoft para dispositivos Android.
 
- Si los usuarios intentan usar una aplicación nativa de correo electrónico, se les redirige a la tienda de aplicaciones para instalar la aplicación Outlook.
+   Si los usuarios intentan usar una aplicación nativa de correo electrónico, se les redirige a la tienda de aplicaciones para instalar la aplicación Outlook.
 
-3.  La aplicación de agente se instala en el dispositivo.
+3. La aplicación de agente se instala en el dispositivo.
 
-4.  La aplicación de agente inicia el proceso de registro de Azure AD que crea un registro de dispositivo en Azure AD. No se trata del mismo proceso que para la inscripción de administración de dispositivos móviles (MDM), pero este registro resulta necesario para que las directivas de acceso condicional se puedan aplicar en el dispositivo.
+4. La aplicación de agente inicia el proceso de registro de Azure AD que crea un registro de dispositivo en Azure AD. No se trata del mismo proceso que para la inscripción de administración de dispositivos móviles (MDM), pero este registro resulta necesario para que las directivas de acceso condicional se puedan aplicar en el dispositivo.
 
-5.  La aplicación de agente verifica la identidad de la aplicación. Hay un nivel de seguridad para que la aplicación de agente pueda validar si la aplicación está autorizada para que el usuario la utilice.
+5. La aplicación de agente verifica la identidad de la aplicación. Hay un nivel de seguridad para que la aplicación de agente pueda validar si la aplicación está autorizada para que el usuario la utilice.
 
-6.  La aplicación de agente envía el identificador de cliente de la aplicación a Azure AD como parte del proceso de autenticación de usuario para comprobar si se encuentra en la lista aprobada de directivas.
+6. La aplicación de agente envía el identificador de cliente de la aplicación a Azure AD como parte del proceso de autenticación de usuario para comprobar si se encuentra en la lista aprobada de directivas.
 
-7.  Azure AD permite al usuario autenticarse y usar la aplicación en función de la lista aprobada de directivas. Si la aplicación no se encuentra en la lista, Azure AD deniega el acceso a la aplicación.
+7. Azure AD permite al usuario autenticarse y usar la aplicación en función de la lista aprobada de directivas. Si la aplicación no se encuentra en la lista, Azure AD deniega el acceso a la aplicación.
 
-8.  La aplicación Outlook se comunica con el servicio en la nube de Outlook para iniciar la comunicación con Exchange Online.
+8. La aplicación Outlook se comunica con el servicio en la nube de Outlook para iniciar la comunicación con Exchange Online.
 
-9.  El servicio en la nube de Outlook se comunica con Azure AD para recuperar el token de acceso al servicio Exchange Online para el usuario.
+9. El servicio en la nube de Outlook se comunica con Azure AD para recuperar el token de acceso al servicio Exchange Online para el usuario.
 
-10.  La aplicación Outlook se comunica con Exchange Online para recuperar el correo electrónico corporativo del usuario.
+10. La aplicación Outlook se comunica con Exchange Online para recuperar el correo electrónico corporativo del usuario.
 
-11.  El correo electrónico corporativo se entrega en el buzón de correo del usuario.
+11. El correo electrónico corporativo se entrega en el buzón de correo del usuario.
 
 ## <a name="next-steps"></a>Pasos siguientes
 [Crear una directiva de acceso condicional basado en aplicación](app-based-conditional-access-intune-create.md)

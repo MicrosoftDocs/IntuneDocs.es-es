@@ -1,37 +1,37 @@
 ---
 title: Inscribir el dispositivo Windows 10 en Intune | Microsoft Docs
-description: "Inscribir un dispositivo Windows 10 versión 1511 en Intune"
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: Inscribir un dispositivo Windows 10 versión 1511 en Intune
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 05/24/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 43b738b7-6a56-498a-a433-112da5104876
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ba0535e388ac730ad04cda898c2299f98686ff1d
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: bc9a351b24e35359f628a9af9ac906ed0c41a6ff
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-windows-10-device-in-intune"></a>Inscribir un dispositivo Windows 10 en Intune
 
   > [!NOTE]
   > Windows 10 funciona en dispositivos de todo tipo. Tanto si usa un dispositivo de escritorio como un teléfono o una tableta, los pasos que debe seguir son los mismos, aunque puede que presenten pequeñas diferencias respecto a las imágenes que se muestran en esta página.
 
-1.  Vaya a **Inicio**.
+1. Vaya a **Inicio**.
 
-  - Si está usando un dispositivo con **una versión de escritorio de Windows 10**, vaya al **menú Inicio**.
-  - Si está usando un dispositivo con **Windows 10 Mobile**, vaya al **menú Inicio** y, después, deslice el dedo para ir a la lista **Todas las aplicaciones**.
+   - Si está usando un dispositivo con **una versión de escritorio de Windows 10**, vaya al **menú Inicio**.
+   - Si está usando un dispositivo con **Windows 10 Mobile**, vaya al **menú Inicio** y, después, deslice el dedo para ir a la lista **Todas las aplicaciones**.
 
 2. Abra la aplicación **Configuración** de Windows buscando "configuración" en la barra de búsqueda.
 

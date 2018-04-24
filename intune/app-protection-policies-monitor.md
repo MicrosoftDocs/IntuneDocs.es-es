@@ -1,28 +1,28 @@
 ---
-title: "Supervisión de las directivas de protección de aplicaciones"
+title: Supervisión de las directivas de protección de aplicaciones
 titleSuffix: Microsoft Intune
-description: "Supervise el estado de cumplimiento de las directivas de administración de aplicaciones móviles en Intune."
-keywords: 
+description: Supervise el estado de cumplimiento de las directivas de administración de aplicaciones móviles en Intune.
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2017
+ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb777bb8f04adb708f8c01c6f0bfcd08f7c663f5
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 7db5a9dfe7a7da21a9b59dafb4f95cdb54a59735
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Supervisión de las directivas de protección de aplicaciones
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 **Si no tiene acceso a Azure Portal**, en este tema se explica [cómo crear directivas de protección de aplicaciones](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) en el portal clásico de Intune.
 
@@ -40,7 +40,7 @@ Hay tres lugares diferentes para supervisar el estado de cumplimiento:
 ## <a name="summary-view"></a>Vista Resumen
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **All services (Todos los servicios)** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En el panel **Intune**, elija **Aplicaciones móviles**.
 4. En la carga de trabajo **Aplicaciones móviles**, elija **Supervisar** > **Estado de protección de la aplicación** para ver la vista de resumen:
 

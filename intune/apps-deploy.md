@@ -15,15 +15,15 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eba329be463fbf0593638bd4cf41c404a17f9cc0
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: de95f5516298e8ade9e394fab8b05fc056651b0c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-assign-apps-to-groups-with-microsoft-intune"></a>Asignación de aplicaciones a grupos con Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Cuando haya agregado una aplicación a Microsoft Intune, podrá asignarla a los usuarios y dispositivos.
 
@@ -49,28 +49,28 @@ Se pueden asignar aplicaciones a dispositivos aunque no estén administrados en 
 ## <a name="how-to-assign-an-app"></a>Asignación de una aplicación
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En la hoja **Intune**, elija **Aplicaciones móviles**.
-1. En la carga de trabajo **Aplicaciones móviles**, elija **Aplicaciones** en la sección **Administrar**.
-2. En la hoja de lista de aplicaciones, haga clic en la aplicación que quiere asignar.
-3. En la hoja **Introducción** específica de la aplicación, elija **Asignaciones** en la sección **Administrar**.
-4. Elija **Agregar grupo** para mostrar la hoja **Agregar grupo** relacionada con la aplicación.
-5. En la aplicación en cuestión, elija un **tipo de asignación** para la aplicación en:
-    - **Disponible para dispositivos inscritos**: los usuarios instalan la aplicación desde el sitio web o la aplicación del Portal de empresa.
-    - **Available with or without enrollment** (Disponible con o sin inscripción): asignar esta aplicación a grupos de usuarios cuyos dispositivos no se hayan inscrito en Intune. Tenga en cuenta que el tipo de aplicación **Android for Work** no admite esta opción. 
-    - **Requerida**: la aplicación se instala en dispositivos de los grupos seleccionados.
-    - **Desinstalar**: la aplicación se ha desinstalado de dispositivos de los grupos seleccionados.
+4. En la carga de trabajo **Aplicaciones móviles**, elija **Aplicaciones** en la sección **Administrar**.
+5. En la hoja de lista de aplicaciones, haga clic en la aplicación que quiere asignar.
+6. En la hoja **Introducción** específica de la aplicación, elija **Asignaciones** en la sección **Administrar**.
+7. Elija **Agregar grupo** para mostrar la hoja **Agregar grupo** relacionada con la aplicación.
+8. En la aplicación en cuestión, elija un **tipo de asignación** para la aplicación en:
+   - **Disponible para dispositivos inscritos**: los usuarios instalan la aplicación desde el sitio web o la aplicación del Portal de empresa.
+   - **Available with or without enrollment** (Disponible con o sin inscripción): asignar esta aplicación a grupos de usuarios cuyos dispositivos no se hayan inscrito en Intune. Tenga en cuenta que el tipo de aplicación **Android for Work** no admite esta opción. 
+   - **Requerida**: la aplicación se instala en dispositivos de los grupos seleccionados.
+   - **Desinstalar**: la aplicación se ha desinstalado de dispositivos de los grupos seleccionados.
 
-    > [!NOTE]
-    > **Solo para aplicaciones iOS**: si ha creado un perfil de VPN para iOS que contiene la configuración de VPN por aplicación, puede seleccionarlo en **VPN**. Cuando se ejecuta la aplicación, se abre la conexión VPN. Para obtener más información, vea [Configuración de VPN para dispositivos iOS](vpn-settings-ios.md).
+     > [!NOTE]
+     > **Solo para aplicaciones iOS**: si ha creado un perfil de VPN para iOS que contiene la configuración de VPN por aplicación, puede seleccionarlo en **VPN**. Cuando se ejecuta la aplicación, se abre la conexión VPN. Para obtener más información, vea [Configuración de VPN para dispositivos iOS](vpn-settings-ios.md).
 
-6. Seleccione **Grupos incluidos** para elegir los grupos de usuarios que se verán afectados por esta asignación de aplicaciones.
-7. Haga clic en **Seleccionar** cuando haya seleccionado uno o más grupos para incluir.
-8. Haga clic en **Aceptar** en la hoja **Asignar** para completar la selección del grupo incluido.
-9. Haga clic en **Excluir grupos** si desea excluir cualquier grupo de usuario para que no se vea afectado por esta asignación de aplicaciones.
-10. Si ha elegido excluir todos los grupos, haga clic en **Seleccionar** en la hoja **Seleccionar grupos**.
-11. Haga clic en **Aceptar** en la hoja **Agregar grupo**.
-12. Haga clic en **Guardar** en la hoja **Asignaciones** de la aplicación para guardar sus asignaciones.
+9. Seleccione **Grupos incluidos** para elegir los grupos de usuarios que se verán afectados por esta asignación de aplicaciones.
+10. Haga clic en **Seleccionar** cuando haya seleccionado uno o más grupos para incluir.
+11. Haga clic en **Aceptar** en la hoja **Asignar** para completar la selección del grupo incluido.
+12. Haga clic en **Excluir grupos** si desea excluir cualquier grupo de usuario para que no se vea afectado por esta asignación de aplicaciones.
+13. Si ha elegido excluir todos los grupos, haga clic en **Seleccionar** en la hoja **Seleccionar grupos**.
+14. Haga clic en **Aceptar** en la hoja **Agregar grupo**.
+15. Haga clic en **Guardar** en la hoja **Asignaciones** de la aplicación para guardar sus asignaciones.
 
 La aplicación ahora se asigna a los grupos que ha seleccionado. Para obtener más información sobre cómo incluir y excluir asignaciones de aplicaciones, vea [Inclusión y exclusión de asignaciones de aplicaciones](apps-inc-exl-assignments.md).
 

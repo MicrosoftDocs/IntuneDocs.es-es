@@ -15,11 +15,11 @@ ms.assetid: 22a232de-ab93-44ab-b0b5-d2b3ccb007fe
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 53b5be6e5cdf8f60304126e133a727123bfef58d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 6ed6b95a11eddfeb748b21d6df55f3a5668d9e1d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-started-managing-users"></a>Introducción a la administración de usuarios
 
@@ -28,7 +28,7 @@ Tenga en cuenta a todas las personas de su organización. Cada una de ellas que 
 ## <a name="how-do-i-create-a-user"></a>¿Cómo se crea un usuario?
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. Después de abrir el panel **Microsoft Intune**, seleccione **Usuarios**. En la página **Todos los usuarios**, seleccione **+ Usuario nuevo**.
 4. Escriba la información del usuario, como el **nombre** y el **nombre de usuario**. La parte del nombre de dominio del nombre de usuario debe ser el nombre de dominio predeterminado inicial "contoso.onmicrosoft.com" o un nombre de dominio no federado comprobado como "contoso.com".
 5. En **Grupos**, elija el grupo de prueba al que agregar el usuario.
@@ -44,8 +44,8 @@ Después de que haya creado un usuario, necesita usar el [Portal de Office 365](
 3. Puede que necesite esperar un momento a que se cargue toda la información del usuario. Una vez que se cargue, seleccione **Editar** para las **Licencias de productos** del usuario.
 4. Asigne al usuario una **Ubicación** y, después, cambie Intune a **Activado**.
 
- > [!NOTE]
- > Esto usa una de las licencias de este usuario. Si está usando un entorno dinámico, puede desactivarlo usando esta licencia más tarde para volver a asignarla a un usuario real.
+   > [!NOTE]
+   > Esto usa una de las licencias de este usuario. Si está usando un entorno dinámico, puede desactivarlo usando esta licencia más tarde para volver a asignarla a un usuario real.
 
 5. Seleccione **Guardar**.
 

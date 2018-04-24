@@ -1,27 +1,27 @@
 ---
-title: "Cómo presentar Microsoft Intune a los usuarios finales | Microsoft Intune"
-description: "Comparta información con sus usuarios finales para que la implementación de Intune se realice correctamente."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Cómo presentar Microsoft Intune a los usuarios finales | Microsoft Intune
+description: Comparta información con sus usuarios finales para que la implementación de Intune se realice correctamente.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 04/10/2017
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 48914533-f138-4dc0-8b93-4cea3ac61f7b
 ms.reviewer: robstack
 ms.suite: ems
-ms.openlocfilehash: 7fc524fe3f31d886427e5ebff56d3f2cb7b14693
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: a8b5f44482a55a6bb9e9da9e2aa9a8fb67f0a713
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-educate-your-end-users-about-microsoft-intune"></a>Cómo presentar Microsoft Intune a los usuarios finales
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Microsoft Intune permite capacitar a los empleados con dispositivos móviles manteniendo protegidos los datos corporativos. Hay muchos pasos para garantizar una implementación correcta, incluidos la evaluación de Intune por medio de una [prueba gratuita](app-sdk.md).
 

@@ -1,29 +1,29 @@
 ---
-title: "Aplicaciones iOS con directivas de protección de aplicaciones"
+title: Aplicaciones iOS con directivas de protección de aplicaciones
 titlesuffix: Microsoft Intune
-description: "Obtenga información sobre las aplicaciones para iOS con políticas de protección."
-keywords: 
+description: Obtenga información sobre las aplicaciones para iOS con políticas de protección.
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 13833d41603e24e4471f0bb5fdda40d000f29a34
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 2804003a0f1acac56ecaae5e24dcf34b4eb0c256
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Obtenga información sobre la experiencia del usuario para las aplicaciones de iOS con directivas de protección de aplicaciones. Las directivas de protección de aplicaciones solo se aplican cuando se usan aplicaciones en el ámbito profesional. Por ejemplo, al acceder a una aplicación con una cuenta profesional o a archivos almacenados en la ubicación de OneDrive de su empresa.
 ##  <a name="accessing-apps"></a>Acceso a aplicaciones

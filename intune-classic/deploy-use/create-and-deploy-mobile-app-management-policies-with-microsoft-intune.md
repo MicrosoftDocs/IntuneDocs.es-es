@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e751934549490885c1ebf2445ec8f112f640f5bd
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: cc133071f4d6c0d1a3bbb3acc7c0bd5cb45b6cef
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-and-deploy-app-protection-policies-with-microsoft-intune"></a>Creación e implementación de directivas de protección de aplicaciones con Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 En este tema se describe el proceso de creación de directivas de protección de aplicaciones en **Azure Portal**. Azure Portal es la nueva consola de administración para crear directivas de protección de aplicaciones. Recomendamos utilizar este portal para crear este tipo de directivas. El portal de Azure admite los siguientes escenarios de MAM:
 
@@ -31,23 +31,23 @@ En este tema se describe el proceso de creación de directivas de protección de
 - Dispositivos administrados por una solución de MDM de terceros.
 - Dispositivos que no están administrados por ninguna solución de MDM (BYOD).
 
->[!IMPORTANT]
-Si está usando la **consola de administración de Intune** para administrar los dispositivos, estos son algunos aspectos que debe tener en cuenta:
-
+> [!IMPORTANT]
+> Si está usando la **consola de administración de Intune** para administrar los dispositivos, estos son algunos aspectos que debe tener en cuenta:
+> 
 > * Puede crear una directiva de protección de aplicaciones que admita aplicaciones para los dispositivos inscritos en Intune mediante la [consola de administración de Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md).
 > * Las directivas de protección de aplicaciones creadas con la consola de administración de Intune no pueden importarse en Azure Portal.  Las directivas de protección de aplicaciones deben volver a crearse en Azure Portal.
-
+> 
 > * Es posible que no vea todas las opciones de configuración de las directivas de protección de aplicaciones en la consola de administración de Intune. Azure Portal es la nueva consola de administración para crear directivas de protección de aplicaciones.
-
+> 
 > * Para implementar aplicaciones administradas, debe crear una directiva de protección de aplicaciones en la consola de administración de Intune. En este caso, puede que quiera crear directivas de protección de aplicaciones tanto en la consola de administración de Intune como en Azure Portal: en la consola de administración de Intune para asegurarse de tener la capacidad de implementar aplicaciones administradas, y en Azure Portal porque es la nueva consola de administración que tiene todas las opciones de configuración de las directivas de protección de aplicaciones.
-
+> 
 > * Si crea directivas de protección de aplicaciones en la consola de administración de Intune y en Azure Portal, la directiva creada en el segundo se aplicará a las aplicaciones.
 
 Para ver una lista de las configuraciones de directiva compatibles en plataformas iOS y Android, seleccione uno de los siguientes:
 
 > [!div class="op_single_selector"]
-- [Directivas de iOS](ios-mam-policy-settings.md)
-- [Directivas de Android](android-mam-policy-settings.md)
+> - [Directivas de iOS](ios-mam-policy-settings.md)
+> - [Directivas de Android](android-mam-policy-settings.md)
 
 - Para obtener una descripción más detallada de cómo funcionan las directivas de protección de aplicaciones y los escenarios admitidos por las directivas de protección de aplicaciones de Intune, consulte [Proteger datos de aplicaciones mediante directivas de protección de aplicaciones](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md).
 
@@ -129,13 +129,13 @@ A partir de la versión 1703 de Intune, tiene la opción de agregar de forma gen
 > [!IMPORTANT]
 > Debe seleccionar Windows 10 en la lista desplegable de la plataforma al crear una nueva directiva de protección de aplicaciones.
 
-1.  En la hoja Agregar directiva, elija **Aplicaciones permitidas** o **Aplicaciones exentas** para abrir la hoja Aplicaciones permitidas o Aplicaciones exentas.
+1. En la hoja Agregar directiva, elija **Aplicaciones permitidas** o **Aplicaciones exentas** para abrir la hoja Aplicaciones permitidas o Aplicaciones exentas.
 
-    > [!NOTE]
-    >
-    - **Aplicaciones permitidas**: estas son las aplicaciones que deben cumplir esta directiva.
-    - **Aplicaciones exentas**: estas aplicaciones están exentas del cumplimiento de esta directiva y pueden acceder a los datos corporativos sin restricciones.
-<br></br>
+   > [!NOTE]
+   > 
+   > - **Aplicaciones permitidas**: estas son las aplicaciones que deben cumplir esta directiva.
+   > - **Aplicaciones exentas**: estas aplicaciones están exentas del cumplimiento de esta directiva y pueden acceder a los datos corporativos sin restricciones.
+   > <br></br>
 2. En la hoja Aplicaciones permitidas o Aplicaciones exentas, haga clic en **Agregar aplicaciones**. Puede agregar aplicaciones recomendadas de Microsoft, o aplicaciones de escritorio o de la Tienda.
 
     a.  **Aplicaciones recomendadas**: una lista rellenada previamente de aplicaciones (en su mayoría de Office) que permitimos que los administradores importen fácilmente a la directiva.
@@ -210,8 +210,8 @@ Para ver el efecto de los cambios inmediatamente, el usuario final tendrá que s
 Para ver una lista completa de las configuraciones de directiva para iOS y Android, seleccione una opción a continuación:
 
 > [!div class="op_single_selector"]
-- [Directivas de iOS](ios-mam-policy-settings.md)
-- [Directivas de Android](android-mam-policy-settings.md)
+> - [Directivas de iOS](ios-mam-policy-settings.md)
+> - [Directivas de Android](android-mam-policy-settings.md)
 
 ## <a name="next-steps"></a>Pasos siguientes
 [Supervisar el estado del cumplimiento y del usuario](monitor-mobile-app-management-policies-with-microsoft-intune.md)

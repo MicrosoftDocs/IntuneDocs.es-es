@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9762c20abb9e4eedded50c92fb10ffb6119be63e
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: dc2a8cb8fc07f87dd0a4e9d8f3935c04a73fe8fd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="deploy-apps-with-microsoft-intune"></a>Implementar aplicaciones con Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 En este tema se explican algunos de los conceptos que es preciso conocer para empezar a implementar aplicaciones con Microsoft Intune.
 
@@ -46,18 +46,19 @@ Al implementar aplicaciones, puede elegir una de las siguientes acciones de impl
 
 #### <a name="understand-which-deployment-actions-are-available-for-each-installer-type"></a>Saber qué acciones de implementación están disponibles para cada tipo de instalador
 
-|Tipo de instalador|Instalación requerida|Instalación disponible|Desinstalar|No disponible|
-|------------------|--------------------|---------------------|-------------|------------------|
-|Paquete de aplicación de Windows (implementado para un grupo de usuarios)|Sí|Sí|Sí|Sí|
-|Paquete de aplicación de Windows (se implementa en un grupo de dispositivos)|Sí|No|Sí|Sí|
-|Paquete de aplicación para dispositivos móviles (se implementa para un grupo de usuarios)|Sí|Sí|Sí|Sí|
-|Paquete de aplicación para dispositivos móviles (se implementa para un grupo de dispositivos)|Sí|No|Sí|Sí|
-|Windows Installer (se implementa para un grupo de usuarios)|No|Sí|No|Sí|
-|Windows Installer (se implementa para un grupo de dispositivos)|Sí|No|Sí|Sí|
-|Vínculo externo (se implementa para un grupo de usuarios)|No|Sí|No|Sí|
-|Vínculo externo (se implementa para un grupo de dispositivos)|No|No|No|No|
-|Aplicación iOS administrada desde la tienda de aplicaciones (se implementa para un grupo de usuarios)|Sí|Sí|Sí|Sí|
-|Aplicación iOS administrada desde la tienda de aplicaciones (se implementa para un grupo de dispositivos)|Sí|No|Sí|Sí|
+|                         Tipo de instalador                          | Instalación requerida | Instalación disponible | Desinstalar | No disponible |
+|-----------------------------------------------------------------|------------------|-------------------|-----------|----------------|
+|         Paquete de aplicación de Windows (implementado para un grupo de usuarios)          |       Sí        |        Sí        |    Sí    |      Sí       |
+|        Paquete de aplicación de Windows (se implementa en un grupo de dispositivos)         |       Sí        |        No         |    Sí    |      Sí       |
+|    Paquete de aplicación para dispositivos móviles (se implementa para un grupo de usuarios)    |       Sí        |        Sí        |    Sí    |      Sí       |
+|   Paquete de aplicación para dispositivos móviles (se implementa para un grupo de dispositivos)   |       Sí        |        No         |    Sí    |      Sí       |
+|          Windows Installer (se implementa para un grupo de usuarios)           |        No        |        Sí        |    No     |      Sí       |
+|         Windows Installer (se implementa para un grupo de dispositivos)          |       Sí        |        No         |    Sí    |      Sí       |
+|            Vínculo externo (se implementa para un grupo de usuarios)             |        No        |        Sí        |    No     |      Sí       |
+|           Vínculo externo (se implementa para un grupo de dispositivos)            |        No        |        No         |    No     |       No       |
+|  Aplicación iOS administrada desde la tienda de aplicaciones (se implementa para un grupo de usuarios)  |       Sí        |        Sí        |    Sí    |      Sí       |
+| Aplicación iOS administrada desde la tienda de aplicaciones (se implementa para un grupo de dispositivos) |       Sí        |        No         |    Sí    |      Sí       |
+
 > [!TIP]
 > Si, al implementar aplicaciones, selecciona grupos tanto de usuarios como de dispositivos, la aplicación solo se puede implementar como una **instalación disponible**.
 

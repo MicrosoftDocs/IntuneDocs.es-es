@@ -14,15 +14,15 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9c34e6e2891769d64885d364f05dbedaa1fb7d57
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 2d147bc5ee22718ecce102cc549b29faa17a617e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>¿Cuáles son las formas habituales de usar el acceso condicional con Intune?
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Hay dos tipos de acceso condicional con Intune: acceso condicional basado en el dispositivo y acceso condicional basado en la aplicación. Debe configurar las directivas de cumplimiento relacionadas para aplicar el cumplimiento del acceso condicional en su organización. Normalmente, el acceso condicional se utiliza para, por ejemplo, permitir o bloquear el acceso a Exchange local, controlar el acceso a la red o integrarse con una solución de Mobile Threat Defense.
 
@@ -60,7 +60,7 @@ Cuando los dispositivos no cumplen las condiciones establecidas, se guía al usu
 
 Intune Exchange Connector extrae todos los registros de Exchange Active Sync (EAS) que existen en el servidor de Exchange de forma que Intune pueda tomar estos registros y asignarlos a registros de dispositivos de Intune. Estos registros son de dispositivos inscritos y reconocidos por Intune. El proceso permite o bloquea el acceso al correo electrónico.
 
-Si el registro de EAS es completamente nuevo e Intune no lo sabe, emite un cmdlet que bloquea el acceso al correo electrónico. A continuación, encontrará más detalles sobre cómo funciona este proceso:
+Si el registro de EAS es completamente nuevo e Intune no lo sabe, emite un cmdlet que bloquea el acceso al correo electrónico. A continuación encontrará más detalles sobre cómo funciona este proceso:
 
 ![Exchange local con diagrama de flujo de la entidad de certificación](./media/ca-intune-common-ways-1.png)
 

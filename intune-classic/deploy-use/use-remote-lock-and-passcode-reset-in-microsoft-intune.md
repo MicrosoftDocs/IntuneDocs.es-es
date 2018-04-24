@@ -1,28 +1,28 @@
 ---
-title: "Restablecimiento del bloqueo remoto y el código de acceso"
-description: "Intune proporciona funcionalidades de restablecimiento de código de acceso y de bloqueo remoto."
-keywords: 
+title: Restablecimiento del bloqueo remoto y el código de acceso
+description: Intune proporciona funcionalidades de restablecimiento de código de acceso y de bloqueo remoto.
+keywords: ''
 author: NathBarn
 ms.author: NathBarn
 manager: angrobe
 ms.date: 03/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 970f8c81-7c7f-4789-9ed4-2133d50b9db6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.custom: intune-classic
-ms.openlocfilehash: 0fb7014392655eef44f94cf095717616732ebfd0
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: fc1cad418904de335b434a3726e2772d0558b303
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="help-protect-your-devices-with-remote-lock-and-passcode-reset"></a>Ayudar a proteger los dispositivos con el restablecimiento de código de acceso y el bloqueo remoto
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune proporciona funcionalidades de restablecimiento de código de acceso y de bloqueo remoto.
 
@@ -85,5 +85,5 @@ No se admite el restablecimiento de código de acceso para equipos Windows inscr
 3.  En la lista, elija el dispositivo o los dispositivos que quiere bloquear. En la barra de tareas, seleccione **Tareas remotas** y luego **Restablecimiento de código de acceso**.
 
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 [Retirar dispositivos](retire-devices-from-microsoft-intune-management.md) y [Windows Selective Wipe for Device Data Management](http://technet.microsoft.com/library/dn486874.aspx) (Eliminación selectiva de Windows para la administración de datos del dispositivo)

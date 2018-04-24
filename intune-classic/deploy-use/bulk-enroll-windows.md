@@ -14,15 +14,15 @@ ms.assetid: 0053e37a-f26e-452f-9524-5039a635b52e
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.custom: intune-classic
-ms.openlocfilehash: 3660255503c0dc7faa8d41b698f3d5fd9e4c330f
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: e2e168fec9796f1038080afdf79b0e847f65e40b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Inscripción masiva para dispositivos Windows
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Como administrador, puede unir una gran cantidad de dispositivos Windows nuevos a Azure Active Directory e Intune. Para inscribir de forma masiva dispositivos para el inquilino de Azure AD, debe crear un paquete de aprovisionamiento con la aplicación Windows Configuration Designer (WC). Aplicar el paquete de aprovisionamiento en dispositivos corporativos une estos dispositivos al inquilino de Azure AD y los inscribe para la administración de Intune. Una vez que se aplica el paquete, está listo para que los usuarios de Azure AD inicien sesión.
 
@@ -38,47 +38,47 @@ La inscripción masiva de dispositivos Windows requiere lo siguiente:
 ## <a name="create-a-provisioning-package"></a>Creación de un paquete de aprovisionamiento
 
 1. Descargue el [Diseñador de configuración de Windows (WCD)](https://www.microsoft.com/store/apps/9nblggh4tx22) de la Microsoft Store.
-![Captura de pantalla de la descripción y capturas de pantalla de la aplicación Windows Configuration Designer](../media/bulk-enroll-store.png)
+   ![Captura de pantalla de la descripción y capturas de pantalla de la aplicación Windows Configuration Designer](../media/bulk-enroll-store.png)
 
 2. Abra la aplicación **Windows Configuration Designer** y seleccione **Provision desktop devices** (Aprovisionar dispositivos de escritorio).
-![Captura de pantalla con la opción Provision desktop devices seleccionada en la aplicación Windows Configuration Designer](../media/bulk-enroll-select.png)
+   ![Captura de pantalla con la opción Provision desktop devices seleccionada en la aplicación Windows Configuration Designer](../media/bulk-enroll-select.png)
 
 3. Se abre una ventana de **nuevo proyecto** cuando especifica lo siguiente:
-  - **Name**: nombre para el proyecto
-  - **Project folder**: carpeta en la que se guardará el proyecto nuevo
-  - **Description**: descripción opcional del proyecto ![Captura de pantalla de la especificación de nombre, carpeta de proyecto y descripción en la aplicación Windows Configuration Designer](../media/bulk-enroll-name.png)
+   - **Name**: nombre para el proyecto
+   - **Project folder**: carpeta en la que se guardará el proyecto nuevo
+   - **Description**: descripción opcional del proyecto ![Captura de pantalla de la especificación de nombre, carpeta de proyecto y descripción en la aplicación Windows Configuration Designer](../media/bulk-enroll-name.png)
 
-4.  Escriba un nombre único para los dispositivos. Los nombres pueden incluir un número de serie (%%SERIAL%%) o un conjunto aleatorio de caracteres. De manera opcional, también puede escribir una clave de producto si actualiza la edición de Windows, configura el dispositivo para su uso compartido y quita software instalado previamente.<BR>
-![Captura de pantalla de la especificación de nombre, carpeta de proyecto y descripción en la aplicación Windows Configuration Designer](../media/bulk-enroll-device.png)
+4. Escriba un nombre único para los dispositivos. Los nombres pueden incluir un número de serie (%%SERIAL%%) o un conjunto aleatorio de caracteres. De manera opcional, también puede escribir una clave de producto si actualiza la edición de Windows, configura el dispositivo para su uso compartido y quita software instalado previamente.<BR>
+   ![Captura de pantalla de la especificación de nombre, carpeta de proyecto y descripción en la aplicación Windows Configuration Designer](../media/bulk-enroll-device.png)
 
-5.  De manera opcional, puede configurar la red Wi-Fi a la que se conectan los dispositivos cuando se inician por primera vez.  Si no se configura, se requiere una conexión de red con cable cuando se inicia por primera vez el dispositivo.
-![Captura de pantalla de la habilitación de la red Wi-Fi, incluidas opciones de tipo de red y SSID de red en la aplicación Windows Configuration Designer](../media/bulk-enroll-network.png)
+5. De manera opcional, puede configurar la red Wi-Fi a la que se conectan los dispositivos cuando se inician por primera vez.  Si no se configura, se requiere una conexión de red con cable cuando se inicia por primera vez el dispositivo.
+   ![Captura de pantalla de la habilitación de la red Wi-Fi, incluidas opciones de tipo de red y SSID de red en la aplicación Windows Configuration Designer](../media/bulk-enroll-network.png)
 
-6.  Seleccione **Enroll in Azure AD** (Inscribirse en Azure AD), escriba una fecha de expiración en **Bulk Token Expiry** (Expiración de token de operación masiva) y, luego, seleccione **Get Bulk Token** (Obtener token de operación masiva).
-![Captura de pantalla de la especificación de nombre, carpeta de proyecto y descripción en la aplicación Windows Configuration Designer](../media/bulk-enroll-account.png)
+6. Seleccione **Enroll in Azure AD** (Inscribirse en Azure AD), escriba una fecha de expiración en **Bulk Token Expiry** (Expiración de token de operación masiva) y, luego, seleccione **Get Bulk Token** (Obtener token de operación masiva).
+   ![Captura de pantalla de la especificación de nombre, carpeta de proyecto y descripción en la aplicación Windows Configuration Designer](../media/bulk-enroll-account.png)
 
 7. Proporcione sus credenciales de Azure AD para obtener un token de operación masiva.
-![Captura de pantalla de la especificación de nombre, carpeta de proyecto y descripción en la aplicación Windows Configuration Designer](../media/bulk-enroll-cred.png)
+   ![Captura de pantalla de la especificación de nombre, carpeta de proyecto y descripción en la aplicación Windows Configuration Designer](../media/bulk-enroll-cred.png)
 
-8.  Haga clic en **Siguiente** cuando el **Bulk Token** (Token de operación masiva) se recupere correctamente.
+8. Haga clic en **Siguiente** cuando el **Bulk Token** (Token de operación masiva) se recupere correctamente.
 
 9. De manera opcional, puede **agregar aplicaciones** y **agregar certificados**. Estas aplicaciones y certificados se aprovisionan en el dispositivo.
 
 10. De manera opcional, puede proteger el paquete de aprovisionamiento con contraseña.  Haga clic en **Crear**.
-![Captura de pantalla de la especificación de nombre, carpeta de proyecto y descripción en la aplicación Windows Configuration Designer](../media/bulk-enroll-create.png)
+    ![Captura de pantalla de la especificación de nombre, carpeta de proyecto y descripción en la aplicación Windows Configuration Designer](../media/bulk-enroll-create.png)
 
 ## <a name="provision-devices"></a>Aprovisionamiento de dispositivos
 
 1. Obtenga acceso al paquete de aprovisionamiento en la ubicación especificada en la **carpeta de proyecto** que se especificó en la aplicación.
 
 2. Elija cómo se aplicará el paquete de aprovisionamiento en el dispositivo.  Un paquete de aprovisionamiento se puede aplicar en un dispositivo de una de las siguientes maneras:
- - Coloque el paquete de aprovisionamiento en una unidad USB, inserte esta unidad en el dispositivo que desea inscribir de forma masiva y aplíquelo durante la configuración inicial
- - Coloque el paquete de aprovisionamiento en una carpeta de red y aplíquelo en el dispositivo que desee inscribir de forma masiva después de la configuración inicial
+   - Coloque el paquete de aprovisionamiento en una unidad USB, inserte esta unidad en el dispositivo que desea inscribir de forma masiva y aplíquelo durante la configuración inicial
+   - Coloque el paquete de aprovisionamiento en una carpeta de red y aplíquelo en el dispositivo que desee inscribir de forma masiva después de la configuración inicial
 
- Si desea obtener instrucciones paso a paso sobre cómo aplicar un paquete de aprovisionamiento, consulte [Apply a provisioning package](https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package) (Aplicación de un paquete de aprovisionamiento).
+   Si desea obtener instrucciones paso a paso sobre cómo aplicar un paquete de aprovisionamiento, consulte [Apply a provisioning package](https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package) (Aplicación de un paquete de aprovisionamiento).
 
 3. Una vez que aplique el paquete, el dispositivo se reiniciará automáticamente en 1 minuto.
- ![Captura de pantalla de la especificación de nombre, carpeta de proyecto y descripción en la aplicación Windows Configuration Designer](../media/bulk-enroll-add.png)
+   ![Captura de pantalla de la especificación de nombre, carpeta de proyecto y descripción en la aplicación Windows Configuration Designer](../media/bulk-enroll-add.png)
 
 4. Cuando el dispositivo se reinicia, se conecta a Azure Active Directory y se inscribe en Microsoft Intune.
 

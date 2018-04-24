@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a18136a6b7aa26391a38aa071699dc60dc024c21
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 9b91d3740ead5815974d7ffee67c15b7769b0210
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>Preparativos para configurar directivas de protección de aplicaciones para Windows 10
 
-[!INCLUDE[note for both-portals](../includes/note-for-both-portals.md)]
+[!INCLUDE [note for both-portals](../includes/note-for-both-portals.md)]
 
 Antes de crear una directiva de protección de aplicaciones para Windows 10, debe habilitar la administración de aplicaciones móviles (MAM) para Windows 10 configurando el proveedor de MAM en Azure AD. Esta configuración le permite definir el estado de la inscripción al crear una nueva directiva de Windows Information Protection (WIP) con Intune.
 

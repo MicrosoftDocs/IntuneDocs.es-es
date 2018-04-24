@@ -14,15 +14,15 @@ ms.assetid: eb912c73-54d2-4d78-ac34-3cbe825804c7
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a550595f18dac8f74cafc1c3ac118c39198c568f
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 25b2548a831e14427fc4dcaded4b222c56eb2284
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="common-windows-pc-management-tasks-with-the-intune-software-client"></a>Tareas comunes de administración de equipos Windows con el cliente de software de Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 En este tema se enumeran las tareas que puede realizar para administrar escritorios que administra como PC mediante la instalación del cliente de software de Intune. En este tema no se trata la administración de equipos PC como dispositivos móviles. Si aún no tiene instalado el cliente en los equipos, vea [Instalar el cliente de software de Intune en equipos con Windows](install-the-windows-pc-client-with-microsoft-intune.md).
 

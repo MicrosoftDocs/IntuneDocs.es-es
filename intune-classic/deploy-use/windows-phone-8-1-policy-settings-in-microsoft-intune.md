@@ -1,29 +1,29 @@
 ---
-title: "Configuración de directivas de Windows Phone 8.1"
-description: "Intune proporciona una variedad de opciones generales integradas que puede configurar en los dispositivos Windows Phone 8.1. Además, puede especificar valores OMA-URI para crear una configuración personalizada que no esté disponible en Intune."
-keywords: 
+title: Configuración de directivas de Windows Phone 8.1
+description: Intune proporciona una variedad de opciones generales integradas que puede configurar en los dispositivos Windows Phone 8.1. Además, puede especificar valores OMA-URI para crear una configuración personalizada que no esté disponible en Intune.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 83f7469c-272e-43f2-8139-b0d7bc34f43f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 083ac6c4bbab6cdad9fd07ac68cdd7447f14fe5e
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: b44215e301bb712cc4d27722515d2e51b124101b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="windows-phone-81-policy-settings-in-microsoft-intune"></a>Configuración de directivas de Windows 8.1 en Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune proporciona una variedad de opciones generales integradas que puede configurar en los dispositivos Windows Phone 8.1. Además, puede especificar valores Open Mobile Alliance Uniform Resource Identifier (OMA-URI, identificador uniforme de recursos de Open Mobile Alliance) para crear una configuración personalizada que no esté disponible en Intune.
 
@@ -43,18 +43,18 @@ Use la **directiva de configuración general de Windows Phone (Windows Phone 8.1
 
 ### <a name="password-settings"></a>Configuración de contraseña
 
-|Nombre de la configuración|Detalles|
-|----------------|------|
-|**Requerir una contraseña para desbloquear dispositivos móviles**|Especifica si los usuarios deben escribir una contraseña para obtener acceso a los dispositivos.|
-|**Tipo de contraseña obligatoria**|Especifica el tipo de contraseña que será necesario, como solo numérica o alfanumérica.|
-|**Tipo de contraseña requerida: número mínimo de conjuntos de caracteres**|Especifica cuántos juegos de caracteres diferentes deben incluirse en la contraseña. Hay cuatro juegos de caracteres: letras minúsculas, letras mayúsculas, símbolos y números. En cambio, para dispositivos iOS, especifica el número de símbolos que deben incluirse en la contraseña.|
-|**Longitud mínima de contraseña**|Especifica el número mínimo de caracteres que son necesarios en la contraseña.|
-|**Permitir contraseñas sencillas**|Especifica que pueden usarse contraseñas sencillas como "0000" y "1234".|
-|**Número de errores de inicio de sesión repetidos que se permiten antes de que se borre el dispositivo**|Especifica el número de veces que se puede escribir una contraseña incorrecta antes de que se borre el dispositivo.|
-|**Minutos de inactividad antes de que se apague la pantalla**|Especifica la cantidad de tiempo que un dispositivo debe permanecer inactivo antes de que se bloquee automáticamente la pantalla.|
-|**Expiración de contraseña (días)**|Especifica el número de días antes de que se deba cambiar la contraseña del dispositivo.|Sí|Sí|
-|**Recordar el historial de contraseñas**|Especifica si se recuerdan las contraseñas usadas anteriormente para impedir que el usuario vuelva a usarlas.|
-|**Recordar historial de la contraseña** : **Impedir la reutilización de contraseñas anteriores**|Especifica cuántas contraseñas usadas anteriormente se recuerdan.|
+|                                           Nombre de la configuración                                            |                                                                                                                                    Detalles                                                                                                                                     |
+|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                   <strong>Requerir una contraseña para desbloquear dispositivos móviles</strong>                    |                                                                                                     Especifica si los usuarios deben escribir una contraseña para obtener acceso a los dispositivos.                                                                                                     |
+|                              <strong>Tipo de contraseña obligatoria</strong>                              |                                                                                          Especifica el tipo de contraseña que será necesario, como solo numérica o alfanumérica.                                                                                           |
+|            <strong>Tipo de contraseña requerida: número mínimo de conjuntos de caracteres</strong>             | Especifica cuántos juegos de caracteres diferentes deben incluirse en la contraseña. Hay cuatro juegos de caracteres: letras minúsculas, letras mayúsculas, símbolos y números. En cambio, para dispositivos iOS, especifica el número de símbolos que deben incluirse en la contraseña. |
+|                             <strong>Longitud mínima de contraseña</strong>                              |                                                                                                 Especifica el número mínimo de caracteres que son necesarios en la contraseña.                                                                                                  |
+|                              <strong>Permitir contraseñas sencillas</strong>                              |                                                                                                     Especifica que pueden usarse contraseñas sencillas como "0000" y "1234".                                                                                                     |
+|     <strong>Número de errores de inicio de sesión repetidos que se permiten antes de que se borre el dispositivo</strong>      |                                                                                         Especifica el número de veces que se puede escribir una contraseña incorrecta antes de que se borre el dispositivo.                                                                                         |
+|                <strong>Minutos de inactividad antes de que se apague la pantalla</strong>                 |                                                                                       Especifica la cantidad de tiempo que un dispositivo debe permanecer inactivo antes de que se bloquee automáticamente la pantalla.                                                                                        |
+|                            <strong>Expiración de contraseña (días)</strong>                            |                                                                                                    Especifica el número de días antes de que se deba cambiar la contraseña del dispositivo.                                                                                                    |
+|                            <strong>Recordar el historial de contraseñas</strong>                             |                                                                                     Especifica si se recuerdan las contraseñas usadas anteriormente para impedir que el usuario vuelva a usarlas.                                                                                      |
+| <strong>Recordar historial de la contraseña</strong> : <strong>Impedir la reutilización de contraseñas anteriores</strong> |                                                                                                          Especifica cuántas contraseñas usadas anteriormente se recuerdan.                                                                                                          |
 
 ### <a name="encryption-settings"></a>Configuración de cifrado
 
@@ -119,14 +119,15 @@ En la lista **Aplicaciones permitidas y bloqueadas**, especifique una lista de a
 > [!NOTE]
 > Una sola directiva únicamente puede contener una lista de aplicaciones permitidas o bloqueadas. No se pueden especificar ambas en la misma directiva.
 
-|Nombre de la configuración|Detalles|
-|----------------|--------------------|
-|**Bloquear dispositivos para que no abran las aplicaciones de la lista**|Enumera las aplicaciones que no se administran mediante Intune y que los usuarios no pueden instalar ni ejecutar.|
-|**Permitir que los dispositivos instalen solo las aplicaciones de la lista**|Enumera las aplicaciones que los usuarios pueden instalar. Los usuarios no pueden instalar ninguna otra aplicación. Las aplicaciones que se administran mediante Intune están permitidas automáticamente.|
-|**Agregar**|Agrega una aplicación a la lista seleccionada. Especifique un nombre de su elección, la dirección URL de la aplicación en la tienda de aplicaciones y el publicador de la aplicación (opcional). Consulte Cómo especificar las direcciones URL de tiendas de aplicaciones más adelante en este tema para obtener más ayuda.
-|**Importar aplicaciones**|Importa la lista de las aplicaciones que ha especificado en un archivo de valores separados por comas. Utilice el formato, nombre de la aplicación, editor, dirección URL de la aplicación en el archivo.|
-|**Editarar**|Permite editar el nombre, el editor y la dirección URL de la aplicación seleccionada.|
-|**Eliminar**|Elimina la aplicación seleccionada de la lista.|
+|                          Nombre de la configuración                          |                                                                                                      Detalles                                                                                                      |
+|----------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <strong>Bloquear dispositivos para que no abran las aplicaciones de la lista</strong>   |                                                        Enumera las aplicaciones que no se administran mediante Intune y que los usuarios no pueden instalar ni ejecutar.                                                         |
+| <strong>Permitir que los dispositivos instalen solo las aplicaciones de la lista</strong> |                                 Enumera las aplicaciones que los usuarios pueden instalar. Los usuarios no pueden instalar ninguna otra aplicación. Las aplicaciones que se administran mediante Intune están permitidas automáticamente.                                 |
+|                      <strong>Agregar</strong>                      | Agrega una aplicación a la lista seleccionada. Especifique un nombre de su elección, la dirección URL de la aplicación en la tienda de aplicaciones y el publicador de la aplicación (opcional). Consulte Cómo especificar las direcciones URL de tiendas de aplicaciones más adelante en este tema para obtener más ayuda. |
+|                  <strong>Importar aplicaciones</strong>                  |                              Importa la lista de las aplicaciones que ha especificado en un archivo de valores separados por comas. Utilice el formato, nombre de la aplicación, editor, dirección URL de la aplicación en el archivo.                               |
+|                     <strong>Editarar</strong>                      |                                                                          Permite editar el nombre, el editor y la dirección URL de la aplicación seleccionada.                                                                          |
+|                    <strong>Eliminar</strong>                     |                                                                                      Elimina la aplicación seleccionada de la lista.                                                                                      |
+
 > [!IMPORTANT]
 > Si especifica una lista de aplicaciones permitidas para dispositivos de Windows Phone 8.1, debe agregar la aplicación Portal de empresa a esta lista o se bloqueará.
 
@@ -140,7 +141,7 @@ Desde la página de [aplicaciones y juegos para Windows Phone](http://www.window
 
 Abra la página de la aplicación y copie la dirección URL en el Portapapeles. Ya puede usarla como dirección URL en una la lista de aplicaciones permitidas o bloqueadas.
 
-**Ejemplo:** Busque la aplicación Skype en la Tienda. La dirección URL que use será **http://www.windowsphone.com/es-es/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
+**Ejemplo:** Busque la aplicación Skype en la Tienda. La dirección URL que use será **http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51**.
 
 ## <a name="custom-policy-settings"></a>Configuración de directivas personalizadas
 Use la **directiva de configuración personalizada de Windows Phone** de Microsoft Intune para implementar las opciones de configuración de OMA-URI, que pueden usarse para controlar características en **dispositivos Windows Phone 8.1**. Se trata de una configuración estándar que muchos fabricantes de dispositivos móviles usan para controlar las características del dispositivo.
@@ -170,5 +171,5 @@ En el cuadro de diálogo **Agregar o editar configuración OMA-URI**, especifiqu
     |**OMA-URI (distingue mayúsculas de minúsculas)**|Especifique el OMA-URI para el que quiere proporcionar un valor.|
     |**Valor**|Especifique el valor asociado con el OMA-URI especificado anteriormente.|
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

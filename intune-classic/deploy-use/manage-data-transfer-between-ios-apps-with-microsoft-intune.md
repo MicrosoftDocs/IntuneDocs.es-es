@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6b83e5fa37f9a9844e3011cded3c3cd58f268521
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: c27b191f8a0f9fbd298b820114f27acb4c31f966
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-data-transfer-between-ios-apps-with-microsoft-intune"></a>Administrar la transferencia de datos entre aplicaciones iOS con Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="manage-ios-apps"></a>Administrar aplicaciones iOS
 Como parte de la protección de los datos de la empresa es necesario asegurarse de que las transferencias de archivos se limiten a las aplicaciones que usted administra.  Puede administrar aplicaciones iOS de la siguiente manera:
@@ -51,17 +51,17 @@ Para asegurarse de que las aplicaciones que se implementan mediante la solución
 La configuración del valor de UPN de usuario es **necesaria** para los dispositivos administrados por una solución EMM de terceros. El procedimiento que se describe a continuación es un flujo general para la configuración del valor de UPN y la experiencia del usuario final resultante:
 
 
-1.  En Azure Portal, [configure una directiva de protección de aplicaciones](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) para la plataforma iOS. Configure las directivas según los requisitos de su empresa y seleccione las aplicaciones que deben tener esta directiva.
+1. En Azure Portal, [configure una directiva de protección de aplicaciones](create-and-deploy-mobile-app-management-policies-with-microsoft-intune.md) para la plataforma iOS. Configure las directivas según los requisitos de su empresa y seleccione las aplicaciones que deben tener esta directiva.
 
-2.  Implemente las aplicaciones y el perfil de correo electrónico que quiera administrar **a través de la solución MDM de terceros** siguiendo los pasos generalizados que se indican a continuación. Esto también se aborda en el Ejemplo 1.
+2. Implemente las aplicaciones y el perfil de correo electrónico que quiera administrar **a través de la solución MDM de terceros** siguiendo los pasos generalizados que se indican a continuación. Esto también se aborda en el Ejemplo 1.
 
-  1.  Implemente la aplicación con las siguientes opciones de configuración de la aplicación:
+   1. Implemente la aplicación con las siguientes opciones de configuración de la aplicación:
 
       **clave** = IntuneMAMUPN, **valor** = <username@company.com>
 
       Ejemplo: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
 
-  2.  Implemente la directiva de administración Open In mediante su proveedor de MDM externo en los dispositivos inscritos.
+   2. Implemente la directiva de administración Open In mediante su proveedor de MDM externo en los dispositivos inscritos.
 
 
 ### <a name="example-1-admin-experience-in-third-party-mdm-console"></a>Ejemplo 1: Experiencia de administración en la consola MDM de terceros
@@ -70,9 +70,9 @@ La configuración del valor de UPN de usuario es **necesaria** para los disposit
 
 2. En la sección Configuración de la aplicación, escriba lo siguiente:
 
-  **clave** = IntuneMAMUPN, **valor** = <username@company.com>
+   **clave** = IntuneMAMUPN, **valor** = <username@company.com>
 
-  La sintaxis exacta del par clave-valor puede diferir en función del proveedor de MDM externo. En la siguiente tabla se incluyen ejemplos de proveedores de MDM externos y los valores exactos que debe escribir para el par clave-valor.
+   La sintaxis exacta del par clave-valor puede diferir en función del proveedor de MDM externo. En la siguiente tabla se incluyen ejemplos de proveedores de MDM externos y los valores exactos que debe escribir para el par clave-valor.
 
 |Proveedor de MDM externo| Configuration Key | Tipo de valor | Valor de configuración|
 | ------- | ---- | ---- | ---- |

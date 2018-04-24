@@ -13,15 +13,15 @@ ms.technology: ''
 ms.assetid: 86d00901-fac7-4471-aac2-f1d13a4879b6
 ROBOTS: NOINDEX,NOFOLLOW
 ms.custom: intune-classic
-ms.openlocfilehash: b4415b7b4b1cd48accae3f0d0d39caedd9cf6b3c
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 9ddf972795d9ced6aff6dd01da4469d49f11c951
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-glossary"></a>Glosario de Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="a"></a>A
 
@@ -40,11 +40,13 @@ ms.lasthandoff: 03/22/2018
 |Portal de Azure|La nueva consola de Intune que se presentará próximamente. [Obtenga más información sobre el nuevo portal](/intune/what-is-intune).|
 
 ## <a name="b"></a>B
+
 |||
 |-|-|
 |BYOD|[Bring Your Own Device](/intune-classic/get-started/choose-how-to-enroll-devices1). Los usuarios pueden instalar la aplicación de portal de empresa de Intune en sus dispositivos y, luego, inscribirlos para acceder a recursos de la empresa, como el correo electrónico, aplicaciones de empresa, datos de la compañía y soporte técnico.|
 
 ## <a name="c"></a>C
+
 |||
 |-|-|
 |Perfil de certificado|Use este tipo de directiva para [proteger el acceso a los recursos corporativos](/intune-classic/deploy-use/secure-resource-access-with-certificate-profiles) con certificados cuando se usan perfiles de Wi-Fi, correo electrónico o VPN.|
@@ -57,6 +59,7 @@ ms.lasthandoff: 03/22/2018
 |Directiva personalizada|[Use estas directivas](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) cuando una directiva de configuración general no tiene una configuración integrada que satisfaga sus necesidades. Puede usar una directiva personalizada para crear una configuración usando otros medios, como OMA-URI o Apple Configurator.|
 
 ## <a name="d"></a>D
+
 |||
 |-|-|
 |Implementación|Acto de enviar una aplicación o una directiva a un dispositivo o un usuario que usted administra.|
@@ -65,6 +68,7 @@ ms.lasthandoff: 03/22/2018
 |Asignación de grupos de dispositivos|Ayuda a [agregar automáticamente dispositivos a grupos](/intune-classic/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune) en función de una categoría de dispositivo (por ejemplo, "Personal" o "Ventas") que usted o el usuario final pueden asignar al dispositivo.|
 
 ## <a name="e"></a>E
+
 |||
 |-|-|
 |Perfil de correo electrónico|Esta directiva se puede usar para configurar las [opciones de acceso a correo electrónico](/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune) para clientes de correo electrónico específicos en dispositivos móviles reduciendo al mínimo la configuración que debe llevar a cabo el usuario final.|
@@ -73,21 +77,25 @@ ms.lasthandoff: 03/22/2018
 |Inscribir|Microsoft Intune usa la [inscripción](/intune-classic/deploy-use/enroll-devices-in-microsoft-intune) para incluir dispositivos en la administración y permitir el acceso a los recursos.|
 
 ## <a name="f"></a>F
+
 |||
 |-|-|
 |FastTrack|[Servicio de Microsoft](https://technet.microsoft.com/library/mt228265.aspx) para usuarios de Intune con 150 licencias en un plan válido. Con este servicio, los especialistas de Microsoft colaborarán con usted para ayudarle a empezar a trabajar con Intune.|
 
 ## <a name="g"></a>G
+
 |||
 |-|-|
 |Grupos|Los grupos permiten [reunir de forma lógica usuarios o dispositivos](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune). Por ejemplo, puede crear un grupo con todos los equipos Windows. Después, puede implementar aplicaciones y directivas en los grupos.|
 
 ## <a name="h"></a>H
+
 |||
 |-|-|
 |Híbrida|Configuración en la que puede administrar dispositivos inscritos con Intune [a través de la consola de System Center Configuration Manager](/intune-classic/get-started/integration-with-cloud-services).|
 
 ## <a name="i"></a>I
+
 |||
 |-|-|
 |Consola de administración de Intune|Consola actual que se usa para la mayoría de las operaciones de administración de Intune.|
@@ -96,11 +104,13 @@ ms.lasthandoff: 03/22/2018
 |Tema de|Se usa para ver el [hardware y el software instalado](/intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-intune) de los dispositivos administrados.|
 
 ## <a name="k"></a>K
+
 |||
 |-|-|
 |Modo de quiosco|Este modo, configurado como parte de una [directiva de configuración general](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies), permite bloquear dispositivos. Por ejemplo, podría configurar un dispositivo comercial de modo que solo ejecute una aplicación.|
 
 ## <a name="m"></a>M
+
 |||
 |-|-|
 |Explorador administrado|[Aplicación de exploración web](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies) que se puede implementar en la organización mediante Microsoft Intune. Una directiva de explorador administrado configura una lista de permitidos o una lista de bloqueados que restringe los sitios web que pueden visitar los usuarios del explorador administrado.|
@@ -111,18 +121,21 @@ ms.lasthandoff: 03/22/2018
 |Directiva de configuración de aplicaciones móviles|Directiva de iOS que se usa para [proporcionar la configuración a aplicaciones iOS compatibles](/intune-classic/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune) cuando se ejecutan, por ejemplo, el nombre de la empresa o la dirección del servidor.|
 
 ## <a name="o"></a>O
+
 |||
 |-|-|
 |OMA-DM|Open Mobile Alliance Device Management. Protocolo de administración de dispositivos estándar del sector que usan muchos fabricantes de hardware para habilitar el control de las características de dispositivos móviles y equipos.|
 |OMA-URI|Open Mobile Alliance Uniform Resource Identifier. Identifica los ajustes de dispositivos individuales que cumplen el estándar OMA-DM. Puede usar un conjunto de estos en [directivas personalizadas de Intune](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies) cuando no haya ninguna configuración integrada que satisfaga sus necesidades.|
 
 ## <a name="p"></a>P
+
 |||
 |-|-|
 |Directiva|[Paquete de información](/intune-classic/deploy-use/microsoft-intune-policy-reference) que se envía de Intune a un dispositivo. Por ejemplo, podría implementar en el dispositivo una configuración de seguridad o información de conformidad de dispositivos.|
 |Restablecimiento de la contraseña|Característica de Intune que le permite obligar al usuario final a [restablecer el código de acceso](/intune-classic/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune) en dispositivos compatibles.|
 
 ## <a name="r"></a>R
+
 |||
 |-|-|
 |Bloqueo remoto|Característica de Intune que le permite [bloquear dispositivos compatibles](/intune-classic/deploy-use/use-remote-lock-and-passcode-reset-in-microsoft-intune), incluso si no es el propietario del dispositivo.|
@@ -131,12 +144,14 @@ ms.lasthandoff: 03/22/2018
 |Requisitos|[Operación de implementación de aplicación](/intune-classic/deploy-use/add-apps) que permite seleccionar los requisitos que se deben cumplir en un dispositivo antes de instalar la aplicación. Por ejemplo, puede especificar la versión del sistema operativo de iOS que debe estar instalada para que se pueda instalar la aplicación.|
 
 ## <a name="s"></a>S
+
 |||
 |-|-|
 |La eliminación de datos selectiva|El [borrado selectivo](/intune-classic/deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune) solo quita los datos de la empresa, incluidos los datos de administración de aplicaciones móviles (MAM) si procede, las configuraciones y los perfiles de correo electrónico de un dispositivo. El borrado selectivo deja los datos personales del usuario en el dispositivo.|
 |Suscripción|El contrato que especifica que permite tener acceso a un inquilino de Intune.|
 
 ## <a name="t"></a>T
+
 |||
 |-|-|
 |TeamViewer|Aplicación de terceros que funciona con Intune para proporcionar [funcionalidades de asistencia remota](/intune-classic/deploy-use/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client#request-and-provide-remote-assistance-for-windows-pcs) para equipos Windows administrados con el cliente de software de Intune.|
@@ -144,12 +159,15 @@ ms.lasthandoff: 03/22/2018
 |términos y condiciones|Tipo de directiva que se implementa en los usuarios con información que estos deben [leer y aceptar](/intune-classic/deploy-use/terms-and-condition-policy-settings-in-microsoft-intune) a fin de poder usar el portal de empresa para inscribirse y acceder a su trabajo.|
 
 ## <a name="v"></a>V
+
 |||
 |-|-|
 |Aplicación comprada por volumen|Algunas tiendas de aplicaciones permiten comprar varias licencias de una aplicación que se quiere ejecutar en la compañía. Intune ayuda a administrar las aplicaciones que [se compran a través de este tipo de programa](/intune-classic/deploy-use/manage-volume-purchased-apps-in-microsoft-intune). Para ello, importa la información de licencia desde la tienda de aplicaciones, realiza el seguimiento de la cantidad de licencias usadas y le impide instalar más copias de la aplicación de las que posee.|
 |Perfil de VPN|Directiva que implementa la [configuración de VPN](/intune-classic/deploy-use/vpn-connections-in-microsoft-intune) en los dispositivos administrados, reduciendo al mínimo la configuración que deben llevar a cabo los usuarios finales.|
 
 ## <a name="w"></a>W
-|||
-|-|-|
-|Perfil de Wi-Fi|Directiva que implementa la [configuración de red inalámbrica](/intune-classic/deploy-use/wi-fi-connections-in-microsoft-intune) en los dispositivos para permitir que los usuarios se conecten a la red de la empresa sin necesidad de que conozcan o configuren las opciones.
+
+|               |                                                                                                                                                                                                                                 |
+|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Perfil de Wi-Fi | Directiva que implementa la [configuración de red inalámbrica](/intune-classic/deploy-use/wi-fi-connections-in-microsoft-intune) en los dispositivos para permitir que los usuarios se conecten a la red de la empresa sin necesidad de que conozcan o configuren las opciones. |
+

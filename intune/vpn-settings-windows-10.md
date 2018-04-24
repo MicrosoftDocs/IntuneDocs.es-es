@@ -1,27 +1,27 @@
 ---
-title: "Visualización de la configuración de VPN en Microsoft Intune: Azure | Microsoft Docs"
-description: "Obtenga información sobre la configuración de VPN disponible en Microsoft Intune, para qué se usa y qué hace, incluidas las reglas de tráfico, el acceso condicional y la configuración de DNS y proxy para dispositivos Windows 10 y Windows Holographic for Business."
-keywords: 
+title: 'Visualización de la configuración de VPN en Microsoft Intune: Azure | Microsoft Docs'
+description: Obtenga información sobre la configuración de VPN disponible en Microsoft Intune, para qué se usa y qué hace, incluidas las reglas de tráfico, el acceso condicional y la configuración de DNS y proxy para dispositivos Windows 10 y Windows Holographic for Business.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 3/8/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.reviewer: tycast
 ms.custom: intune-azure
-ms.openlocfilehash: 1c1ed2946782f92313aacec05a65a80b2704ddaa
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 9464b73acc43b9625560156617359c374d7100fb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="read-about-the-vpn-settings-in-intune"></a>Más información sobre la configuración de VPN en Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Puede configurar conexiones VPN mediante Intune. En este artículo se describen estas opciones, las reglas de tráfico, el acceso condicional y la configuración de DNS y proxy.
 

@@ -15,11 +15,11 @@ ms.assetid: 39a93fb5-d318-4997-a409-b64549a00e7a
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4fc4ee80b1cf5a8422d135d13a9fb498980500b5
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d039cfe5509990ff15fe8a1cb476ad44037d60df
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-group-to-manage-your-users-and-data-access"></a>Crear un grupo para administrar los usuarios y el acceso a datos
 
@@ -30,7 +30,7 @@ Microsoft Intune usa Azure Active Directory (Azure AD) para administrar el acces
 ## <a name="how-do-i-create-a-group"></a>¿Cómo se crea un grupo?
 
 1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. Después de abrir el panel **Microsoft Intune**, seleccione **Grupos**.
 4. En el panel **Usuarios y grupos: todos los grupos**, seleccione el comando **Nuevo grupo**.
 5. En el panel **Grupo**, elija un **Tipo de grupo**.

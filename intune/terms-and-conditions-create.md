@@ -1,29 +1,29 @@
 ---
-title: "Definir los términos y condiciones en Microsoft Intune"
-titlesuffix: 
-description: "Establezca los términos y condiciones que los usuarios ven en el Portal de empresa de Intune."
-keywords: 
+title: Definir los términos y condiciones en Microsoft Intune
+titlesuffix: ''
+description: Establezca los términos y condiciones que los usuarios ven en el Portal de empresa de Intune.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8fb386948d14fcbd26cffcd1b531b6ae61e9d669
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 550d9c457335f212f0b60c16249e45f22f5baaf5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-your-companys-terms-and-conditions-for-user-access"></a>Administrar los términos y condiciones de acceso de los usuarios de su empresa
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Como administrador de Intune, puede requerir que los usuarios acepten los términos y condiciones de la empresa antes de que puedan usar Portal de empresa para inscribir sus dispositivos y tener acceso a recursos, como correo electrónico y aplicaciones de la empresa. La configuración de términos y condiciones es opcional.
 
@@ -33,7 +33,7 @@ Puede crear varios conjuntos de términos y asignarlos a grupos distintos, como 
 Complete estos pasos para crear los términos y condiciones. El nombre para mostrar y la descripción son para uso administrativo mientras las propiedades de términos se muestran a los usuarios en el Portal de empresa.
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En el panel **Intune**, elija **Inscripción de dispositivos** y, luego, **Términos y condiciones**.
 2. Seleccione **Crear**.
 ![Captura de pantalla de Azure Portal que muestra el botón Crear para los términos y condiciones](media/terms-create-terms.png)

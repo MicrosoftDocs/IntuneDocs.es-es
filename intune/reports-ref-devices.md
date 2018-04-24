@@ -15,11 +15,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d8a7aeba4170bf6640083b95562d644299693f31
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 185cf1061ff4d577fd14af59bbe5fbc38365c3d1
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reference-for-devices-entities"></a>Referencia de las entidades Devices
 
@@ -413,10 +413,12 @@ La entidad **MdmDeviceInventoryHistories** contiene instantáneas diarias de los
 
 La entidad **ApplicationInventory** muestra las aplicaciones que se encuentran en el dispositivo en el momento de recopilación del inventario.
 
-| Propiedad  | Descripción |
-|---------|------------|
-| DeviceKey |Referencia a la tabla de dispositivos. |
-| ApplicationKey |? (copiado de ExchangeDeviceService\DeviceApplication). |
-| ApplicationName |? (copiado de ExchangeDeviceService\DeviceApplication). |
-| ApplicationVersion |? (copiado de ExchangeDeviceService\DeviceApplication). |
-| BundleSize |? (copiado de ExchangeDeviceService\DeviceApplication). |
+
+|      Propiedad      |                       Descripción                        |
+|--------------------|----------------------------------------------------------|
+|     DeviceKey      |              Referencia a la tabla de dispositivos.               |
+|   ApplicationKey   | ? (copiado de ExchangeDeviceService\DeviceApplication). |
+|  ApplicationName   | ? (copiado de ExchangeDeviceService\DeviceApplication). |
+| ApplicationVersion | ? (copiado de ExchangeDeviceService\DeviceApplication). |
+|     BundleSize     | ? (copiado de ExchangeDeviceService\DeviceApplication). |
+

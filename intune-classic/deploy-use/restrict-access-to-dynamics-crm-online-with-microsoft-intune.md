@@ -1,29 +1,29 @@
 ---
 title: Proteger Dynamics CRM Online
-description: "Proteja y controle el acceso a Dynamics CRM en línea con el acceso condicional."
-keywords: 
+description: Proteja y controle el acceso a Dynamics CRM en línea con el acceso condicional.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f1c4522b-5a34-4f5a-89d2-7809c4352af7
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bae29ed7eba164ce19ea5db7d003ab38b4683454
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e2f720c8a6613884397111c2a421fa1cfdc0eb53
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-dynamics-crm-online-with-intune"></a>Proteger el acceso a Dynamics CRM Online con Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Puede controlar el acceso a Microsoft Dynamics CRM Online desde los dispositivos de iOS y Android con el acceso condicional de Microsoft Intune.  El acceso condicional de Intune tiene dos componentes:
 * La [directiva de cumplimiento del dispositivo](introduction-to-device-compliance-policies-in-microsoft-intune.md), con la que debe cumplir el dispositivo para que se considere conforme.
@@ -73,17 +73,17 @@ Cuando esté listo, continúe en el paso 3.
 ### <a name="step-3-configure-the-dynamics-crm-policy"></a>Paso 3: Configurar la directiva de Dynamics CRM
 A continuación, configure la directiva para requerir que solo los dispositivos administrados y compatibles puedan tener acceso a Dynamics CRM. Esta directiva se almacenará en Azure Active Directory.
 
-1.  En la consola de administración de Intune, elija **Directiva > Acceso condicional > Directiva de Dynamics CRM Online**.
+1. En la consola de administración de Intune, elija **Directiva > Acceso condicional > Directiva de Dynamics CRM Online**.
 
-  ![Captura de pantalla de la página de la directiva de acceso condicional de Dynamics CRM Online](../media/mdm-ca-dynamics-crm-policy-configuration.png)
+   ![Captura de pantalla de la página de la directiva de acceso condicional de Dynamics CRM Online](../media/mdm-ca-dynamics-crm-policy-configuration.png)
 
-2.  Elija **Habilitar la directiva de acceso condicional**.
-3.  En **Acceso a la aplicación**, puede elegir aplicar la directiva de acceso condicional a:
-  * **iOS**
-  * **Android**
-4.  En **Grupos de destino**, seleccione **Modificar** para seleccionar los grupos de seguridad de Azure Active Directory a los que se aplicará la directiva. Puede elegir aplicarla a todos los usuarios o solo a un grupo específico de usuarios.
-5.  En **Grupos exentos**, opcionalmente, elija **Modificar** para seleccionar los grupos de seguridad de Azure Active Directory exentos de esta directiva.
-6.  Cuando termine, elija **Guardar**.
+2. Elija **Habilitar la directiva de acceso condicional**.
+3. En **Acceso a la aplicación**, puede elegir aplicar la directiva de acceso condicional a:
+   * **iOS**
+   * **Android**
+4. En **Grupos de destino**, seleccione **Modificar** para seleccionar los grupos de seguridad de Azure Active Directory a los que se aplicará la directiva. Puede elegir aplicarla a todos los usuarios o solo a un grupo específico de usuarios.
+5. En **Grupos exentos**, opcionalmente, elija **Modificar** para seleccionar los grupos de seguridad de Azure Active Directory exentos de esta directiva.
+6. Cuando termine, elija **Guardar**.
 
 Acaba de configurar el acceso condicional para Dynamics CRM. No es necesario implementar la directiva de acceso condicional, ya que surte efecto inmediatamente.
 ##  <a name="monitor-the-compliance-and-conditional-access-policies"></a>Supervisar el cumplimiento y las directivas de acceso condicional

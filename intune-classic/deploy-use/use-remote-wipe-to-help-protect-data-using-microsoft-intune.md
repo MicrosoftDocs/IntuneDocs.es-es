@@ -1,29 +1,29 @@
 ---
 title: Uso del borrado remoto para ayudar a proteger los datos
 description: Intune ofrece capacidades de borrado completo y selectivo para quitar los datos corporativos confidenciales y el acceso a muchos recursos corporativos.
-keywords: 
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 07/21/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 8519e411-3d48-44eb-9b41-3e4fd6a93112
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: lancecra
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 85907167305e822ddf6a29475f032b2eb5f97a74
-ms.sourcegitcommit: 468480b61110ca81f737582ebbefd4efda6fd667
+ms.openlocfilehash: 82c50be9a8def23fadd8d24fc7654312d5c7ca5c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/30/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="help-protect-your-data-with-full-or-selective-wipe-using-microsoft-intune"></a>Ayudar a proteger los datos con el borrado selectivo o completo mediante Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Puede borrar las aplicaciones y datos de los dispositivos administrados por Intune que ya no son necesarios, se van a reutilizar o han desaparecido. Para hacer esto, Intune proporciona funcionalidades de borrado completo y de borrado selectivo. Los usuarios también pueden emitir un comando de borrado remoto de dispositivos desde el portal de empresa de Intune en dispositivos de propiedad privada inscritos en Intune.
 
@@ -40,31 +40,31 @@ La opción **Borrar todos los datos** restaura la configuración predeterminada 
 
 ### <a name="remotely-wipe-a-device-from-the-intune-administrator-console"></a>Cómo borrar de forma remota un dispositivo desde la consola de administrador de Intune
 
-1.  Seleccione los dispositivos que se borrarán. Puede encontrarlos por usuario o por dispositivo.
+1. Seleccione los dispositivos que se borrarán. Puede encontrarlos por usuario o por dispositivo.
 
-    -   **Por usuario:**
+   - **Por usuario:**
 
-        1.  En la [consola de administrador de Intune](https://manage.microsoft.com/), elija **Grupos** &gt; **Todos los usuarios**.
+     1.  En la [consola de administrador de Intune](https://manage.microsoft.com/), elija **Grupos** &gt; **Todos los usuarios**.
 
-        2.  Elija el nombre del usuario cuyo dispositivo móvil quiere borrar. Elija **Ver propiedades**.
+     2.  Elija el nombre del usuario cuyo dispositivo móvil quiere borrar. Elija **Ver propiedades**.
 
-        3.  En la página **Propiedades** del usuario, elija **Dispositivos** y luego elija el nombre del dispositivo móvil que quiere borrar. Para seleccionar varios dispositivos, utilice Ctrl + clic.
+     3.  En la página **Propiedades** del usuario, elija **Dispositivos** y luego elija el nombre del dispositivo móvil que quiere borrar. Para seleccionar varios dispositivos, utilice Ctrl + clic.
 
-    -   **Por dispositivo:**
+   - **Por dispositivo:**
 
-        1.  En la [consola de administrador de Intune](https://manage.microsoft.com/), elija **Grupos** &gt; **Todos los dispositivos móviles**.
+     1. En la [consola de administrador de Intune](https://manage.microsoft.com/), elija **Grupos** &gt; **Todos los dispositivos móviles**.
 
-         ![Iniciar una operación de borrado o retirada](../media/dev-sa-wipe.png)
+        ![Iniciar una operación de borrado o retirada](../media/dev-sa-wipe.png)
 
-        2.  Elija **Dispositivos** y después elija el nombre del dispositivo móvil que quiere borrar. Para seleccionar varios dispositivos, utilice Ctrl + clic.
+     2. Elija **Dispositivos** y después elija el nombre del dispositivo móvil que quiere borrar. Para seleccionar varios dispositivos, utilice Ctrl + clic.
 
-2.  Elija **Retirar/Eliminar datos**.
+2. Elija **Retirar/Eliminar datos**.
 
-3.  Aparece un mensaje de confirmación, preguntándole si desea retirar el dispositivo.
+3. Aparece un mensaje de confirmación, preguntándole si desea retirar el dispositivo.
 
-    -   Para realizar una **eliminación selectiva** que solo quite las aplicaciones y los datos de la empresa, elija **Sí**.
+   -   Para realizar una **eliminación selectiva** que solo quite las aplicaciones y los datos de la empresa, elija **Sí**.
 
-    -   Para realizar una **eliminación completa** que borre todas las aplicaciones y datos y restablezca el dispositivo a la configuración predeterminada de fábrica, seleccione **Eliminar datos del dispositivo antes de retirarlo**. Esta acción se aplica a todas las plataformas excepto Windows 8.1. **No se pueden recuperar los datos quitados mediante un borrado completo**.
+   -   Para realizar una **eliminación completa** que borre todas las aplicaciones y datos y restablezca el dispositivo a la configuración predeterminada de fábrica, seleccione **Eliminar datos del dispositivo antes de retirarlo**. Esta acción se aplica a todas las plataformas excepto Windows 8.1. **No se pueden recuperar los datos quitados mediante un borrado completo**.
 
 Si el dispositivo está encendido y conectado, un comando de borrado tarda menos de 15 minutos en propagarse por cualquier tipo de dispositivo.
 

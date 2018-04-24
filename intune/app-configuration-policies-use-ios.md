@@ -1,29 +1,29 @@
 ---
-title: "Agregar directivas de configuración de aplicaciones para dispositivos iOS administrados"
+title: Agregar directivas de configuración de aplicaciones para dispositivos iOS administrados
 titlesuffix: Microsoft Intune
-description: "Obtenga más información sobre cómo usar directivas de configuración de aplicaciones para proporcionar datos de configuración a una aplicación de iOS cuando esta se ejecuta."
-keywords: 
+description: Obtenga más información sobre cómo usar directivas de configuración de aplicaciones para proporcionar datos de configuración a una aplicación de iOS cuando esta se ejecuta.
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/30/2018
+ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bdaec3150062dce5da5566fa9534425e11f3cdec
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 0b71b52ffa58f847fc0efcd2924fd04a7a16a099
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Agregar directivas de configuración de aplicaciones para dispositivos iOS administrados
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Use las directivas de configuración de aplicaciones de Microsoft Intune para proporcionar valores de configuración que se emplearán cuando los usuarios ejecuten una aplicación para iOS. No asigne estas directivas directamente a usuarios y dispositivos. Asocie la directiva con una aplicación y, a continuación, asigne la aplicación. La configuración de directivas se usa cada vez que la aplicación la comprueba, que suele ser la primera vez que se ejecuta.
 

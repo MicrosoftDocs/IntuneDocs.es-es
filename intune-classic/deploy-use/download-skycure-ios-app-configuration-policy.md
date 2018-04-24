@@ -15,17 +15,17 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0f8197146d8b4f42bcf199070551ba13aed92626
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 2f3cf3b2b18eeadf6779b7a8e96d75e569e6e3be
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="download-skycure-ios-app-configuration-policy"></a>Descarga de la directiva de configuración de la aplicación de iOS de Skycure
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
-##<a name="before-you-begin"></a>Antes de comenzar
+## <a name="before-you-begin"></a>Antes de comenzar
 
 Debe iniciar sesión en la consola de administración de Skycure para llevar a cabo los siguientes pasos.
 

@@ -13,15 +13,15 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f989f9fafa4766ab71843c9dddef2bf3e18c5134
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 10bea7ace3fe03db66fa6f8a83a94679dfdc071c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-android-and-android-for-work"></a>Configuración de perfiles de correo electrónico en Microsoft Intune para dispositivos que ejecutan Android y Android for Work
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 En este artículo se muestran las opciones de configuración de perfiles de correo electrónico que puede configurar para los dispositivos que ejecutan Android.
 
@@ -52,7 +52,7 @@ Como administrador de Intune, puede crear y asignar configuraciones de correo el
 
 - **Tipo de contenido para sincronizar**: seleccione los tipos de contenido que quiere sincronizar con los dispositivos:
     - **Contactos**
-    - **Calendario**
+    - **Calendarioio**
     - **Tareas**
 
 ## <a name="android-for-work-email-settings"></a>Configuración del correo electrónico de Android for Work
@@ -67,5 +67,5 @@ Como administrador de Intune, puede crear y asignar configuraciones de correo el
 - **Cantidad de correo electrónico para sincronizar**: elija el número de días de correo electrónico que quiere sincronizar, o seleccione **Unlimited** (Sin límite) para sincronizar todos el correo electrónico disponible.
 - **Tipo de contenido para sincronizar** (solo Nine Work): seleccione los tipos de contenido que quiere sincronizar con los dispositivos:
     - **Contactos**
-    - **Calendario**
+    - **Calendarioio**
     - **Tareas**

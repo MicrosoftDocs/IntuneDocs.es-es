@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 20d43882895e299b26a4130b1551b17f054c52d6
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 54e4355a1253af4338bdcc3e34b651fadfb569dd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-deploy-apps-to-android-for-work-devices-with-intune"></a>Implementación de aplicaciones para dispositivos Android for Work con Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Puede implementar aplicaciones para dispositivos Android for Work de forma diferente a cuando las implementa en dispositivos Android estándar. Todas las aplicaciones que instale en Android for Work proceden de Google Play for Work Store. Inicie sesión en la tienda, busque las aplicaciones que desee y apruébelas.
 La aplicación aparecerá en el nodo **Aplicaciones compradas por volumen** de la consola de Intune. Desde aquí, puede administrar la implementación de la aplicación de la misma manera que implementaría cualquier otra aplicación.

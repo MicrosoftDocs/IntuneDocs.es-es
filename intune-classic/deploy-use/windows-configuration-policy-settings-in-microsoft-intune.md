@@ -1,29 +1,29 @@
 ---
-title: "Configuración de directivas de Windows"
-description: "Use la directiva de configuración general de Windows de Intune (Windows 8.1 y posterior) para configurar las opciones de los dispositivos Windows 8.1 y Windows 8 inscritos."
-keywords: 
+title: Configuración de directivas de Windows
+description: Use la directiva de configuración general de Windows de Intune (Windows 8.1 y posterior) para configurar las opciones de los dispositivos Windows 8.1 y Windows 8 inscritos.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 10/11/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 6982a2bc-aafa-475a-9236-4840b709e5a1
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9fa8d8454e9d22b2d3c36cd6449805d709c34ffa
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: ccd5bd201de59537dbf99ea9e19d84dbf80c1a20
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="windows-policy-settings-in-microsoft-intune"></a>Configuración de directivas de Windows en Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Use la **directiva de configuración general de Windows (Windows 8.1 y posterior)** de Microsoft Intune para configurar las siguientes opciones de los dispositivos Windows 8, Windows 8.1 y Windows RT 8.1 inscritos:
 
@@ -49,9 +49,10 @@ Use la **directiva de configuración general de Windows (Windows 8.1 y posterior
 
 ## <a name="encryption-settings"></a>Configuración de cifrado
 
-|Nombre de la configuración|Detalles|
-|----------------|-----|
-|**Requerir cifrado en dispositivo móvil**<sup>1</sup>|Requiere el cifrado de los archivos en el dispositivo.|
+|                           Nombre de la configuración                           |                     Detalles                      |
+|------------------------------------------------------------------|--------------------------------------------------|
+| <strong>Requerir cifrado en dispositivo móvil</strong><sup>1</sup> | Requiere el cifrado de los archivos en el dispositivo. |
+
 <sup>1</sup> Información adicional para los dispositivos que ejecutan Windows 8.1
 
 -   Para forzar el cifrado en los dispositivos que ejecutan Windows 8.1, debe instalar la [Actualización de cliente de diciembre de 2014 MDM en Windows](http://support.microsoft.com/kb/3013816) en cada dispositivo.
@@ -118,5 +119,5 @@ Use la **directiva de configuración general de Windows (Windows 8.1 y posterior
 
 
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

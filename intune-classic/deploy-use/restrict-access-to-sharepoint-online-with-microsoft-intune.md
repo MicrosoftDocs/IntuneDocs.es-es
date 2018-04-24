@@ -1,29 +1,29 @@
 ---
-title: "Protección de SharePoint Online"
+title: Protección de SharePoint Online
 description: Proteja y controle el acceso a los datos de la empresa en SharePoint Online mediante el uso del acceso condicional.
-keywords: 
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b088e5a0-fd4a-4fe7-aa49-cb9c8cfb1585
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f86508d9b187e0026a74c4e82e94cdd5a4d29c3a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 2b7285c272efac8eab406393b0b896795fa5d8ed
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-sharepoint-online-with-microsoft-intune"></a>Proteger el acceso a SharePoint Online con Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Use el acceso condicional de Microsoft Intune para controlar el acceso a los archivos que se encuentran en SharePoint Online.
 El acceso condicional tiene dos componentes:
@@ -81,16 +81,16 @@ Puede proteger el acceso a SharePoint Online cuando dispositivos **iOS** y **And
 No se admite lo siguiente:
 - Windows 8.1 y versiones posteriores (cuando los equipos están inscritos en Intune).
 - Windows 7.0, Windows 8.1 o Windows 10 (cuando los equipos están unidos a un dominio).
-> [!NOTE]
->Para usar el acceso condicional con equipos Windows 10, debe actualizarlos con la Actualización de aniversario de Windows 10.
+  > [!NOTE]
+  >Para usar el acceso condicional con equipos Windows 10, debe actualizarlos con la Actualización de aniversario de Windows 10.
 
   - Debe configurar los equipos unidos a un dominio para que [se registren automáticamente](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-automatic-device-registration/) con Azure Active Directory. El servicio Registro de dispositivos de Azure AD se activará automáticamente para los clientes de Intune y Office 365. Los clientes que ya hayan implementado el servicio Registro de dispositivos de ADFS no podrán ver los dispositivos registrados en la instancia local de Active Directory.
 
   - Si la directiva está establecida para requerir la unión a un dominio y el equipo no está unido a ningún dominio, se muestra un mensaje que indica que es necesario ponerse en contacto con el administrador de TI.
 
   - Si la directiva está establecida para requerir la unión a un dominio o el cumplimiento y el equipo no cumple estos requisitos, se muestra un mensaje con instrucciones sobre cómo instalar la aplicación Portal de empresa e inscribirse.
-  >[!NOTE]
-  >No se admite el acceso condicional en los equipos que ejecutan el cliente del equipo de Intune.
+    >[!NOTE]
+    >No se admite el acceso condicional en los equipos que ejecutan el cliente del equipo de Intune.
 
 [La autenticación moderna de Office 365 debe estar habilitada](https://support.office.com/article/Using-Office-365-modern-authentication-with-Office-clients-776c0036-66fd-41cb-8928-5495c0f9168a) y tener las actualizaciones más recientes de Office.
 
@@ -132,24 +132,24 @@ A continuación, configure la directiva para requerir que solo los dispositivos 
 > También puede crear una directiva de acceso condicional para dispositivos Intune en la consola de administración de Azure AD (la directiva se conoce como la **directiva de acceso condicional basado en dispositivo** en Azure AD). Además, puede crear otras directivas de acceso condicional, como la autenticación multifactor. También puede establecer directivas de acceso condicional para aplicaciones empresariales de terceros compatibles con Azure AD, como Salesforce y Box. Para obtener más información, consulte [Establecimiento de una directiva de acceso condicional basado en dispositivos de Azure Active Directory para el control de acceso a aplicaciones conectadas a Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-conditional-access-policy-connected-applications/).
 
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), seleccione **Directiva** > **Acceso condicional** > **Directiva de SharePoint Online**.
-![Captura de pantalla de la página de la directiva de SharePoint Online](../media/mdm-ca-spo-policy-configuration.png)
+1. En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), seleccione **Directiva** > **Acceso condicional** > **Directiva de SharePoint Online**.
+   ![Captura de pantalla de la página de la directiva de SharePoint Online](../media/mdm-ca-spo-policy-configuration.png)
 
-2.  Seleccione **Habilitar directiva de acceso condicional para SharePoint Online**.
+2. Seleccione **Habilitar directiva de acceso condicional para SharePoint Online**.
 
-3.  En **Acceso a la aplicación**, puede elegir aplicar la directiva de acceso condicional a:
+3. En **Acceso a la aplicación**, puede elegir aplicar la directiva de acceso condicional a:
 
-    -   **Todas las plataformas**
+   - **Todas las plataformas**
 
-        Esto requiere que cualquier dispositivo usado para obtener acceso a **SharePoint Online** se inscriba en Intune y cumpla las directivas. Cualquier aplicación cliente que use la **autenticación moderna** estará sujeta a la directiva de acceso condicional. Si la plataforma no es compatible actualmente con Intune, el acceso a **SharePoint Online** se bloqueará.
+     Esto requiere que cualquier dispositivo usado para obtener acceso a **SharePoint Online** se inscriba en Intune y cumpla las directivas. Cualquier aplicación cliente que use la **autenticación moderna** estará sujeta a la directiva de acceso condicional. Si la plataforma no es compatible actualmente con Intune, el acceso a **SharePoint Online** se bloqueará.
 
-        Seleccionar la opción **Todas las plataformas** significa que Azure Active Directory aplica esta directiva a todas las solicitudes de autenticación, independientemente de la plataforma notificada por la aplicación cliente. Todas las plataformas tienen que inscribirse y ser compatibles, excepto:
-        *   Los dispositivos Windows, que deben estar inscritos y ser compatibles, estar unidos a dominio con Active Directory local, o ambos.
-        * Plataformas no compatibles como Mac. Por el contrario, las aplicaciones que usan autenticación moderna que proceden de estas plataformas seguirán bloqueadas.
+     Seleccionar la opción **Todas las plataformas** significa que Azure Active Directory aplica esta directiva a todas las solicitudes de autenticación, independientemente de la plataforma notificada por la aplicación cliente. Todas las plataformas tienen que inscribirse y ser compatibles, excepto:
+     *   Los dispositivos Windows, que deben estar inscritos y ser compatibles, estar unidos a dominio con Active Directory local, o ambos.
+     * Plataformas no compatibles como Mac. Por el contrario, las aplicaciones que usan autenticación moderna que proceden de estas plataformas seguirán bloqueadas.
 
-    -   **Plataformas específicas**
+   - **Plataformas específicas**
 
-         La directiva de acceso condicional se aplica a cualquier aplicación cliente que use la autenticación moderna en las plataformas que especifique.
+      La directiva de acceso condicional se aplica a cualquier aplicación cliente que use la autenticación moderna en las plataformas que especifique.
 
      Para los equipos con Windows, el equipo debe estar unido a un dominio o inscrito con Intune y ser conforme. Puede establecer los requisitos siguientes:
 
@@ -157,28 +157,28 @@ A continuación, configure la directiva para requerir que solo los dispositivos 
 
      -   **Los dispositivos deben ser conformes.** Elija esta opción para requerir que los equipos estén inscritos en Intune y sean conformes. Si el equipo no está inscrito, se muestra un mensaje con instrucciones sobre cómo inscribirse.
 
-4.   En **Acceso al explorador** en SharePoint Online y OneDrive para la Empresa, puede permitir el acceso a Exchange Online solo a través de los exploradores admitidos: Safari (iOS) y Chrome (Android). El acceso desde otros exploradores está bloqueado. Las mismas restricciones de plataforma que seleccionó para el acceso a la aplicación OneDrive también se aplican aquí.
+4. En **Acceso al explorador** en SharePoint Online y OneDrive para la Empresa, puede permitir el acceso a Exchange Online solo a través de los exploradores admitidos: Safari (iOS) y Chrome (Android). El acceso desde otros exploradores está bloqueado. Las mismas restricciones de plataforma que seleccionó para el acceso a la aplicación OneDrive también se aplican aquí.
 
-  En los dispositivos **Android**, los usuarios deben habilitar el acceso al explorador. Para ello, un usuario debe elegir la opción **Habilitar acceso al explorador** en el dispositivo inscrito de este modo:
-  1.    Abra la aplicación **Portal de empresa**.
-  2.    Vaya a la página **Configuración** desde los tres puntos (...) o desde el botón del menú de hardware.
-  3.    Pulse el botón **Habilitar acceso al explorador**.
-  4.    En el explorador Chrome, cierre la sesión de Office 365 y reinicie Chrome.
+   En los dispositivos **Android**, los usuarios deben habilitar el acceso al explorador. Para ello, un usuario debe elegir la opción **Habilitar acceso al explorador** en el dispositivo inscrito de este modo:
+   1.    Abra la aplicación **Portal de empresa**.
+   2.    Vaya a la página **Configuración** desde los tres puntos (...) o desde el botón del menú de hardware.
+   3.    Pulse el botón **Habilitar acceso al explorador**.
+   4.    En el explorador Chrome, cierre la sesión de Office 365 y reinicie Chrome.
 
-  En las plataformas **iOS** y **Android**, para identificar el dispositivo que se usa para obtener acceso al servicio, Azure Active Directory emite un certificado de seguridad de la capa de transporte (TLS) para el dispositivo. El dispositivo muestra el certificado en una petición para que el usuario final lo seleccione, como se muestra en las capturas de pantalla siguientes. El usuario debe seleccionar este certificado para poder usar el explorador.
+   En las plataformas **iOS** y **Android**, para identificar el dispositivo que se usa para obtener acceso al servicio, Azure Active Directory emite un certificado de seguridad de la capa de transporte (TLS) para el dispositivo. El dispositivo muestra el certificado en una petición para que el usuario final lo seleccione, como se muestra en las capturas de pantalla siguientes. El usuario debe seleccionar este certificado para poder usar el explorador.
 
-  **iOS**
+   **iOS**
 
-  ![Captura de pantalla de la solicitud de certificado en un iPad](../media/mdm-browser-ca-ios-cert-prompt.png)
+   ![Captura de pantalla de la solicitud de certificado en un iPad](../media/mdm-browser-ca-ios-cert-prompt.png)
 
-  **Android**
+   **Android**
 
-  ![Captura de pantalla de la petición de certificado en un dispositivo Android](../media/mdm-browser-ca-android-cert-prompt.png)
-5.  En **Grupos de destino**, elija **Modificar** para seleccionar los grupos de seguridad de Azure Active Directory a los que se aplica la directiva. Puede elegir aplicarla a todos los usuarios o solo a un grupo específico de usuarios.
+   ![Captura de pantalla de la petición de certificado en un dispositivo Android](../media/mdm-browser-ca-android-cert-prompt.png)
+5. En **Grupos de destino**, elija **Modificar** para seleccionar los grupos de seguridad de Azure Active Directory a los que se aplica la directiva. Puede elegir aplicarla a todos los usuarios o solo a un grupo específico de usuarios.
 
-6.  En **Grupos exentos**, opcionalmente, elija **Modificar** para seleccionar los grupos de seguridad de Azure Active Directory exentos de esta directiva.
+6. En **Grupos exentos**, opcionalmente, elija **Modificar** para seleccionar los grupos de seguridad de Azure Active Directory exentos de esta directiva.
 
-7.  Cuando termine, elija **Guardar**.
+7. Cuando termine, elija **Guardar**.
 
 No es necesario implementar la directiva de acceso condicional, ya que surte efecto inmediatamente.
 
@@ -193,5 +193,5 @@ Seleccione cualquier grupo de dispositivos móviles. Luego, en la pestaña **Dis
 
 -   **Dispositivos registrados en AAD y conformes**. Estos dispositivos pueden tener acceso a SharePoint Online.
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 [Proteger el acceso al correo electrónico y a los servicios de O365 con Microsoft Intune](restrict-access-to-email-and-o365-services-with-microsoft-intune.md)

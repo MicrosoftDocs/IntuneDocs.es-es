@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 99a4273a5f3ef2e1696d2fdc1c2a9b9f251b5b87
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 3cae9bc1b76dba3b896957f60ca08cca53423267
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-devices-for-management-in-intune"></a>Inscribir dispositivos para administrarlos en Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Puede inscribir dispositivos, incluidos equipos Windows, para habilitar la administración de dispositivos móviles (MDM) con Microsoft Intune. En este tema se describen diferentes maneras de inscribir dispositivos móviles en la administración de Intune. La forma en que inscriba los dispositivos depende del tipo de dispositivo, de la propiedad de los mismos y del nivel de administración que sea necesario. La inscripción BYOD ("Bring your own device") permite a los usuarios inscribir sus teléfonos, tabletas o equipos personales. La inscripción de dispositivos corporativos (COD) permite escenarios de administración como la inscripción automática, los dispositivos compartidos o los requisitos de inscripción previamente autorizada.
 
@@ -124,7 +124,7 @@ Los equipos que se administran con el software cliente de Intune no pueden borra
 
 Intune puede administrar las siguientes plataformas de dispositivo:
 
-[!INCLUDE[mdm-supported-devices](../includes/mdm-supported-devices.md)]
+[!INCLUDE [mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
 ## <a name="next-steps"></a>Pasos siguientes
 - [Requisitos previos para la inscripción de dispositivos](prerequisites-for-enrollment.md)

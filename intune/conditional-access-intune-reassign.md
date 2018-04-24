@@ -1,25 +1,25 @@
 ---
-title: "Migración del acceso condicional a Azure Portal"
+title: Migración del acceso condicional a Azure Portal
 titlesuffix: Microsoft Intune
-description: "Reasigne las directivas de acceso condicional que se han creado anteriormente en el Portal de Intune clásico a Azure Portal."
-keywords: 
+description: Reasigne las directivas de acceso condicional que se han creado anteriormente en el Portal de Intune clásico a Azure Portal.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 06/28/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 80c8c994486dd340c9037817854eb35b32ab3a9e
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d295ade29522a5593993b5541311eadd9e4c9528
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Reasignar directivas de acceso condicional desde el Portal de Intune clásico a Azure Portal
 
@@ -183,8 +183,8 @@ Si ha configurado las opciones de Exchange Active Sync como parte de una directi
 
 Después de que haya reasignado las directivas de acceso condicional en Azure Portal, es importante deshabilitar de manera gradual las directivas de acceso condicional que se han creado anteriormente en el Portal de Intune clásico. Además, puede que necesite usar el mismo grupo de seguridad para aplicar las directivas de acceso condicional que se han creado en Azure Portal.
 
-> [!NOTE] 
-    > Vea la sección [Antes de empezar](#before-you-begin) al principio de este tema antes de deshabilitar sus directivas de acceso condicional en el Portal de Intune clásico.
+> [!NOTE]
+> Vea la sección [Antes de empezar](#before-you-begin) al principio de este tema antes de deshabilitar sus directivas de acceso condicional en el Portal de Intune clásico.
 
 ### <a name="to-disable-the-conditional-access-policies"></a>Para deshabilitar las directivas de acceso condicional
 

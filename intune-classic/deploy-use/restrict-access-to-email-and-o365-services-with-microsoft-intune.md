@@ -1,29 +1,29 @@
 ---
-title: "Proteger el correo electrónico y Office 365"
-description: "En este tema se describe cómo puede utilizar acceso condicional para permitir que únicamente los dispositivos que cumplan los requisitos puedan tener acceso al correo electrónico y los datos de la empresa en SharePoint Online y otros servicios."
-keywords: 
+title: Proteger el correo electrónico y Office 365
+description: En este tema se describe cómo puede utilizar acceso condicional para permitir que únicamente los dispositivos que cumplan los requisitos puedan tener acceso al correo electrónico y los datos de la empresa en SharePoint Online y otros servicios.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c564d292-b83b-440d-bf08-3f5b299b7a5e
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab45292734c39d3eaf4a5f0403cbff6e77d9d7e6
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: e121a3aaf4988bd92c36eb79131b2205263fb309
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-email-office-365-and-other-services-with-microsoft-intune"></a>Proteger el acceso al correo electrónico, a Office 365 y a otros servicios con Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Puede proteger el acceso a su correo electrónico de empresa, a servicios de Office 365 como **Exchange local**, **Exchange Online**, **Exchange Online dedicado**, **SharePoint Online**, **Skype Empresarial Online**, y a otros servicios mediante el acceso condicional de Enterprise Mobility + Security (EMS). Esta característica le permite asegurarse de que el acceso al correo electrónico de la empresa y a los servicios de Office 365 está restringido a los dispositivos compatibles con las reglas de acceso condicional que establece en la consola de administración de Intune o en el Portal de Azure clásico.
 ## <a name="how-does-conditional-access-work"></a>¿Cómo funciona el acceso condicional?
@@ -72,12 +72,12 @@ A diferencia de otras directivas de Intune, no se implementan directivas de acce
 
 2. [Crear una directiva de cumplimiento de dispositivos](create-a-device-compliance-policy-in-microsoft-intune.md).
 
-2.  Crear una directiva de acceso condicional para uno de los siguientes productos o servicios de la nube de Microsoft:
+3. Crear una directiva de acceso condicional para uno de los siguientes productos o servicios de la nube de Microsoft:
 
-  - [Crear una directiva de acceso condicional para Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
-  - [Crear una directiva de acceso condicional para Exchange local](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-  - [Crear una directiva de acceso condicional para el nuevo entorno de Exchange Online dedicado](restrict-access-to-exchange-online-with-microsoft-intune.md)
-  - [Crear una directiva de acceso condicional para Exchange Online dedicado heredado](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
-  - [Crear una directiva de acceso condicional para SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
-  - [Crear una directiva de acceso condicional para Skype Empresarial Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
-  - [Crear una directiva de acceso condicional para Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)
+   - [Crear una directiva de acceso condicional para Exchange Online](restrict-access-to-exchange-online-with-microsoft-intune.md)
+   - [Crear una directiva de acceso condicional para Exchange local](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+   - [Crear una directiva de acceso condicional para el nuevo entorno de Exchange Online dedicado](restrict-access-to-exchange-online-with-microsoft-intune.md)
+   - [Crear una directiva de acceso condicional para Exchange Online dedicado heredado](restrict-access-to-exchange-onpremises-with-microsoft-intune.md)
+   - [Crear una directiva de acceso condicional para SharePoint Online](restrict-access-to-sharepoint-online-with-microsoft-intune.md)
+   - [Crear una directiva de acceso condicional para Skype Empresarial Online](restrict-access-to-skype-for-business-online-with-microsoft-intune.md)
+   - [Crear una directiva de acceso condicional para Dynamics CRM Online](restrict-access-to-dynamics-crm-online-with-microsoft-intune.md)

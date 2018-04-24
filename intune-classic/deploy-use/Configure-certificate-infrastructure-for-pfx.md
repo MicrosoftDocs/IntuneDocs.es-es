@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: vinaybha
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a19dbd6ad2b65e7d2d090b543f3e2200180c660a
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 819c314b2fe69077fb545afa670587c85d4fa7ef
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-certificate-infrastructure"></a>Configurar la infraestructura de certificados
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 En este tema se describe qué se necesita para crear e implementar perfiles de certificado .PFX.
 
@@ -38,21 +38,21 @@ Para usar perfiles de certificado .PFX, aparte de la entidad de certificación e
 ## <a name="on-premises-infrastructure-description"></a>Descripción de infraestructura local
 
 
--    **Dominio de Active Directory:** todos los servidores mencionados en esta sección (salvo el servidor Proxy de aplicación web) deben estar unidos al dominio de Active Directory.
+- **Dominio de Active Directory:** todos los servidores mencionados en esta sección (salvo el servidor Proxy de aplicación web) deben estar unidos al dominio de Active Directory.
 
--  **Entidad de certificación**: también llamada CA emisora, es necesario disponer de una entidad de certificación (CA) empresarial que se ejecute en una edición Enterprise de Windows Server 2008 R2 o versión posterior. No se admiten CA independientes. Para obtener instrucciones sobre cómo configurar una entidad de certificación, consulte [Instalar la entidad de certificación](http://technet.microsoft.com/library/jj125375.aspx).
-    Si la CA ejecuta Windows Server 2008 R2, se debe [instalar la revisión de KB2483564](http://support.microsoft.com/kb/2483564/).
+- **Entidad de certificación**: también llamada CA emisora, es necesario disponer de una entidad de certificación (CA) empresarial que se ejecute en una edición Enterprise de Windows Server 2008 R2 o versión posterior. No se admiten CA independientes. Para obtener instrucciones sobre cómo configurar una entidad de certificación, consulte [Instalar la entidad de certificación](http://technet.microsoft.com/library/jj125375.aspx).
+   Si la CA ejecuta Windows Server 2008 R2, se debe [instalar la revisión de KB2483564](http://support.microsoft.com/kb/2483564/).
 
--  **Equipo que pueda comunicarse con la entidad de certificación:** también puede usar el propio equipo de la entidad de certificación.
--  **Microsoft Intune Certificate Connector:** la consola de administración de Intune se puede usar para descargar el instalador de **Certificate Connector** (**ndesconnectorssetup.exe**). Después, puede ejecutar **ndesconnectorssetup.exe** en el equipo donde desee instalar el conector de certificado. Para perfiles de certificado .PFX, instale el conector de certificado en el equipo que se comunica con la entidad de certificación.
--  **Servidor Proxy de aplicación web** (opcional): puede usar un servidor con Windows Server 2012 R2 o versión posterior como servidor Proxy de aplicación web (WAP). Esta configuración:
-    -  Permite a los dispositivos recibir certificados mediante una conexión a Internet.
-    -  Es una recomendación de seguridad cuando los dispositivos se conectan a través de Internet para recibir y renovar certificados.
+- **Equipo que pueda comunicarse con la entidad de certificación:** también puede usar el propio equipo de la entidad de certificación.
+- **Microsoft Intune Certificate Connector:** la consola de administración de Intune se puede usar para descargar el instalador de **Certificate Connector** (**ndesconnectorssetup.exe**). Después, puede ejecutar **ndesconnectorssetup.exe** en el equipo donde desee instalar el conector de certificado. Para perfiles de certificado .PFX, instale el conector de certificado en el equipo que se comunica con la entidad de certificación.
+- **Servidor Proxy de aplicación web** (opcional): puede usar un servidor con Windows Server 2012 R2 o versión posterior como servidor Proxy de aplicación web (WAP). Esta configuración:
+   -  Permite a los dispositivos recibir certificados mediante una conexión a Internet.
+   -  Es una recomendación de seguridad cuando los dispositivos se conectan a través de Internet para recibir y renovar certificados.
 
- > [!NOTE]           
-> -    El servidor que hospeda WAP [debe instalar una actualización](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) que habilite la compatibilidad con las direcciones URL largas que usa el Servicio de inscripción de dispositivos de red (NDES). Esta actualización está incluida en el [paquete acumulativo de actualizaciones de diciembre de 2014](http://support.microsoft.com/kb/3013769)o está disponible por separado, en [KB3011135](http://support.microsoft.com/kb/3011135).
->-  Además, el servidor que hospeda WAP debe tener un certificado SSL que coincida con el nombre que se publica para los clientes externos, así como confiar en el certificado SSL que se usa en el servidor NDES. Estos certificados habilitan al servidor WAP para terminar la conexión SSL entre clientes y crear una nueva conexión SSL hacia el servidor NDES.
-    Para obtener más información sobre los certificados de WAP, vea la sección sobre cómo **planear certificados** de [Planeamiento de publicación de aplicaciones mediante el Proxy de aplicación web](https://technet.microsoft.com/library/dn383650.aspx). Para obtener información general sobre los servidores WAP, vea [Trabajar con el Proxy de aplicación Web](http://technet.microsoft.com/library/dn584113.aspx).|
+  > [!NOTE]           
+  > -    El servidor que hospeda WAP [debe instalar una actualización](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) que habilite la compatibilidad con las direcciones URL largas que usa el Servicio de inscripción de dispositivos de red (NDES). Esta actualización está incluida en el [paquete acumulativo de actualizaciones de diciembre de 2014](http://support.microsoft.com/kb/3013769)o está disponible por separado, en [KB3011135](http://support.microsoft.com/kb/3011135).
+  >-  Además, el servidor que hospeda WAP debe tener un certificado SSL que coincida con el nombre que se publica para los clientes externos, así como confiar en el certificado SSL que se usa en el servidor NDES. Estos certificados habilitan al servidor WAP para terminar la conexión SSL entre clientes y crear una nueva conexión SSL hacia el servidor NDES.
+   Para obtener más información sobre los certificados de WAP, vea la sección sobre cómo **planear certificados** de [Planeamiento de publicación de aplicaciones mediante el Proxy de aplicación web](https://technet.microsoft.com/library/dn383650.aspx). Para obtener información general sobre los servidores WAP, vea [Trabajar con el Proxy de aplicación Web](http://technet.microsoft.com/library/dn584113.aspx).|
 
 
 ### <a name="certificates-and-templates"></a>Certificados y plantillas
@@ -123,36 +123,36 @@ Descargar, instalar y configurar Certificate Connector.
 
 ##### <a name="to-download-install-and-configure-the-certificate-connector"></a>Para descargar, instalar y configurar Certificate Connector
 
-1.  Abra la [consola de administración de Intune](https://manage.microsoft.com) y elija **Administración** &gt; **Administración de dispositivos móviles** &gt; **Certificate Connector** &gt; **Descargar Certificate Connector**.
+1. Abra la [consola de administración de Intune](https://manage.microsoft.com) y elija **Administración** &gt; **Administración de dispositivos móviles** &gt; **Certificate Connector** &gt; **Descargar Certificate Connector**.
 
-2.  Una vez finalizada la descarga, ejecute el instalador descargado (**ndesconnectorssetup.exe**).
+2. Una vez finalizada la descarga, ejecute el instalador descargado (**ndesconnectorssetup.exe**).
 
-  Ejecute el instalador en el equipo que puede conectarse con la entidad de certificación. Elija la opción de distribución .PFX y elija **Instalar**. Cuando haya finalizado la instalación, siga creando un perfil de certificado según se indica en [Configure certificate profiles (Configurar perfiles de certificado)](configure-intune-certificate-profiles.md).
+   Ejecute el instalador en el equipo que puede conectarse con la entidad de certificación. Elija la opción de distribución .PFX y elija **Instalar**. Cuando haya finalizado la instalación, siga creando un perfil de certificado según se indica en [Configure certificate profiles (Configurar perfiles de certificado)](configure-intune-certificate-profiles.md).
 
    <!-- Not sure about step 3 below -->
 
-3.  Cuando se le solicite el certificado de cliente para Certificate Connector, elija **Seleccionar** y seleccione el certificado de **autenticación del cliente** instalado en la tarea 3.
+3. Cuando se le solicite el certificado de cliente para Certificate Connector, elija **Seleccionar** y seleccione el certificado de **autenticación del cliente** instalado en la tarea 3.
 
-    Después de seleccionar el certificado de autenticación del cliente, volverá a la superficie del **Certificado de cliente para el conector de certificado para Microsoft Intune** . Aunque no se muestre el certificado seleccionado, elija **Siguiente** para ver las propiedades de dicho certificado. Luego, elija **Siguiente** e **Instalar**.
+   Después de seleccionar el certificado de autenticación del cliente, volverá a la superficie del **Certificado de cliente para el conector de certificado para Microsoft Intune** . Aunque no se muestre el certificado seleccionado, elija **Siguiente** para ver las propiedades de dicho certificado. Luego, elija **Siguiente** e **Instalar**.
 
-4.  Cuando se complete el asistente, pero antes de cerrarlo, haga clic en **Iniciar la UI del conector de certificado**.
+4. Cuando se complete el asistente, pero antes de cerrarlo, haga clic en **Iniciar la UI del conector de certificado**.
 
-    > [!TIP]
-    > Si cierra al asistente antes de iniciar la IU del conector de certificado, puede volver a abrirlo ejecutando el comando siguiente:
-    >
-    > **&lt;install_Path&gt;\NDESConnectorUI\NDESConnectorUI.exe**
+   > [!TIP]
+   > Si cierra al asistente antes de iniciar la IU del conector de certificado, puede volver a abrirlo ejecutando el comando siguiente:
+   >
+   > **&lt;install_Path&gt;\NDESConnectorUI\NDESConnectorUI.exe**
 
-5.  En la interfaz de usuario **Conector de certificado**:
+5. En la interfaz de usuario **Conector de certificado**:
 
-    a. Elija **Iniciar sesión** y escriba sus credenciales de administrador de servicio de Intune o las credenciales de un administrador de inquilinos con permiso de administración global.
+   a. Elija **Iniciar sesión** y escriba sus credenciales de administrador de servicio de Intune o las credenciales de un administrador de inquilinos con permiso de administración global.
 
-    b. Seleccione la pestaña **Avanzadas**y proporcione las credenciales de una cuenta que tenga el permiso **Emitir y administrar certificados** en la entidad de certificación emisora.
+   b. Seleccione la pestaña **Avanzadas**y proporcione las credenciales de una cuenta que tenga el permiso **Emitir y administrar certificados** en la entidad de certificación emisora.
 
-    c. Elija **Aplicar**.
+   c. Elija **Aplicar**.
 
-    Ahora puede cerrar la IU del conector de certificado.
+   Ahora puede cerrar la IU del conector de certificado.
 
-6.  Abra un símbolo del sistema y escriba **services.msc**. Después, pulse **ENTRAR**, haga clic con el botón derecho en **Servicio del conector de Intune** y elija **Reiniciar**.
+6. Abra un símbolo del sistema y escriba **services.msc**. Después, pulse **ENTRAR**, haga clic con el botón derecho en **Servicio del conector de Intune** y elija **Reiniciar**.
 
 
 ### <a name="next-steps"></a>Pasos siguientes

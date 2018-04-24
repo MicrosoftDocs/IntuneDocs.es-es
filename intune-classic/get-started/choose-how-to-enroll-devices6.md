@@ -14,26 +14,26 @@ ms.assetid: 40262e47-1ab4-437d-8ca5-c89b5022f91f
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.custom: intune-classic EXPIERIMENT
-ms.openlocfilehash: fd09126b8226828ccb60f30e0daa6135643303e2
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: b730aae4e3e8f576824ac61811018293cc07e080
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choose-how-to-enroll-mobile-devices"></a>Elegir cómo inscribir dispositivos móviles
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Las respuestas a la siguiente serie de preguntas le servirán para saber cuál es el mejor método de inscripción de los dispositivos bajo su administración.
 
 ## <a name="how-will-you-manage-dedicated-corporate-owned-devices"></a>**¿Cómo se administran los dispositivos de empresa dedicados?**
 
-  > [!div class="button"]
-[iOS DEP >](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)  
 > [!div class="button"]
-[Asistente de configuración de iOS >](/intune-classic/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
+> [iOS DEP >](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)  
 > [!div class="button"]
-[Etiquetar con IMEI >](/intune-classic/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
+> [Asistente de configuración de iOS >](/intune-classic/deploy-use/ios-setup-assistant-enrollment-in-microsoft-intune)
+> [!div class="button"]
+> [Etiquetar con IMEI >](/intune-classic/deploy-use/specify-corporate-owned-devices-with-international-mobile-equipment-identity-imei-numbers)
 
   Puede inscribir dispositivos corporativos con usuarios dedicados de las maneras siguientes:
 
@@ -44,4 +44,4 @@ Las respuestas a la siguiente serie de preguntas le servirán para saber cuál e
   - **Etiquetar con número IMEI:** si se importan los números de identidad de equipo móvil internacional (IMEI) de los dispositivos de la empresa, estos se pueden etiquetar como dispositivos de la empresa en Intune. Esta es la única manera de identificar dispositivos dedicados ("usuario único") de Windows y Android de la empresa. Los dispositivos iOS que no tienen que estar inscritos con el programa de inscripción de dispositivos de Apple o de Apple Configurator también se pueden etiquetar con un número IMEI. Después de la declaración previa del dispositivo, por lo que se etiquetarán como "empresa", puede distribuir los dispositivos a los usuarios. De este modo, los usuarios podrán inscribir sus dispositivos como dispositivos dedicados instalando el portal de empresa para tener acceso a recursos de la empresa como el correo electrónico, las aplicaciones y los datos.
 
 > [!div class="button"]
-[< Atrás](choose-how-to-enroll-devices3.md)
+> [< Atrás](choose-how-to-enroll-devices3.md)

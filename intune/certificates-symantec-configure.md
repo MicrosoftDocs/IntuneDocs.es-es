@@ -15,15 +15,15 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1fbb0ccd21ff15cf86656d7badf08002f1e42bb3
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: ff642c7d8d836979fadebc799e2e7373cd299f4e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>Configuración de Intune Certificate Connector para el servicio web del administrador de PKI de Symantec
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 En este artículo se muestra cómo instalar y configurar Intune Certificate Connector para emitir certificados PKCS desde un servicio web del administrador de PKI de Symantec a los dispositivos administrados por Intune.
 
@@ -164,7 +164,7 @@ Use estos pasos para obtener el certificado de autorización de registro (RA) de
 
 ## <a name="install-intune-certificate-connector"></a>Instalación de Intune Certificate Connector
 
-Si ya usa la versión más reciente de Intune Certificate Connector para una CA de Microsoft existente y desea agregar la compatibilidad de la CA de Symantec, omita este paso. En caso contrario, descargue la versión más reciente de Intune Certificate Connector del portal de administración de Intune y siga estas instrucciones.
+Si ya usa la versión más reciente de Intune Certificate Connector para una CA de Microsoft existente y desea agregar la compatibilidad de la CA de Symantec, omita este paso. En caso contrario, descargue la versión más recientes de Intune Certificate Connector del portal de administración de Intune y siga estas instrucciones.
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
 2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.

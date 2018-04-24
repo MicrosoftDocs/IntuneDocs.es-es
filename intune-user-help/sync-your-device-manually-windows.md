@@ -1,27 +1,27 @@
 ---
 title: Sincronizar manualmente el dispositivo Windows | Microsoft Docs
-description: 
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: ''
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 05/19/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6d3b0fb8ea462656602ee9b4e58200d3c2e755a9
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: e8b8b1e4ffd4e58b5f3cc1b9acfc004f4b97b40b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="sync-your-windows-device-manually"></a>Sincronización manual del dispositivo Windows
 
@@ -65,10 +65,10 @@ Hay más de una versión de Windows 10, así que hay dos conjuntos de pasos. Par
 
 2. Elija la cuenta profesional o educativa. Según la configuración que haya definido el equipo de soporte técnico de su empresa, podría ver dos cuentas con un aspecto similar al ejemplo siguiente. Una tiene un maletín al lado y la otra tiene el logotipo de Microsoft.
 
-    - Si ve la cuenta con el maletín, selecciónela y busque un botón **Información** debajo de ella.
-    - Si solo ve la cuenta con el logotipo de Microsoft, selecciónela y busque un botón **Información** debajo de ella.
+   - Si ve la cuenta con el maletín, selecciónela y busque un botón **Información** debajo de ella.
+   - Si solo ve la cuenta con el logotipo de Microsoft, selecciónela y busque un botón **Información** debajo de ella.
 
-    ![Elija el nombre de la cuenta junto al maletín o el logotipo de Microsoft](./media/win10pc-rs1-sync-info-button.png)
+     ![Elija el nombre de la cuenta junto al maletín o el logotipo de Microsoft](./media/win10pc-rs1-sync-info-button.png)
 
 3. Elija el botón **Información**. Se abre un cuadro de diálogo parecido al siguiente ejemplo.
 

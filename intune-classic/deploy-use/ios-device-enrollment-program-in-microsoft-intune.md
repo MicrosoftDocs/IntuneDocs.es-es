@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bf47c802291d802ac890aa4ba00cf79d9d2d10f0
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 383309944bd185ea2abc79b3bcc3488ad3377b50
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-corporate-owned-device-enrollment-program-ios-devices"></a>Inscribir dispositivos iOS de la empresa mediante el Programa de inscripción de dispositivos
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune puede implementar un perfil de inscripción que inscriba dispositivos iOS que se han adquirido a través del Programa de inscripción de dispositivos (DEP) "por aire". El paquete de inscripción puede incluir opciones de asistente de instalación para el dispositivo.
 
@@ -56,13 +56,13 @@ En los siguientes pasos, se explica cómo inscribir dispositivos iOS en “día 
 
 1. Vaya al [portal del Programa de inscripción de dispositivos](https://deploy.apple.com) (https://deploy.apple.com) e inicie sesión con su identificador de Apple de empresa. Este identificador de Apple debe usarse posteriormente para renovar el token de DEP.
 
-2.  En el portal del Programa de inscripción de dispositivos, vaya a **Programa de inscripción de dispositivos** &gt; **Administrar servidores** y después elija **Add MDM Server** (Agregar servidor MDM).
+2. En el portal del Programa de inscripción de dispositivos, vaya a **Programa de inscripción de dispositivos** &gt; **Administrar servidores** y después elija **Add MDM Server** (Agregar servidor MDM).
 
-3.  Escriba el **nombre del servidor MDM** y, después, elija **Siguiente**. El nombre del servidor es su referencia para identificar el servidor de administración de dispositivos móviles (MDM). No es el nombre ni la dirección URL del servidor de Microsoft Intune.
+3. Escriba el **nombre del servidor MDM** y, después, elija **Siguiente**. El nombre del servidor es su referencia para identificar el servidor de administración de dispositivos móviles (MDM). No es el nombre ni la dirección URL del servidor de Microsoft Intune.
 
-4.  Se abre el cuadro de diálogo **Agregar &lt;NombreDeServidor&gt;**. Elija **Elegir archivo...** para cargar el archivo .pem y, después, elija **Siguiente**.
+4. Se abre el cuadro de diálogo **Agregar &lt;NombreDeServidor&gt;**. Elija **Elegir archivo...** para cargar el archivo .pem y, después, elija **Siguiente**.
 
-5.  El cuadro de diálogo **Agregar &lt;NombreDeServidor&gt;** muestra un vínculo **Your Server Token (Su token de servidor)**. Descargue el archivo de token de servidor (.p7m) en el equipo y, después, elija **Listo**.
+5. El cuadro de diálogo **Agregar &lt;NombreDeServidor&gt;** muestra un vínculo **Your Server Token (Su token de servidor)**. Descargue el archivo de token de servidor (.p7m) en el equipo y, después, elija **Listo**.
 
    Este archivo de certificado (.p7m) se usa para establecer una relación de confianza entre los servidores de Intune y los del programa de inscripción de dispositivos de Apple.
 
@@ -80,8 +80,8 @@ En los siguientes pasos, se explica cómo inscribir dispositivos iOS en “día 
 
    - **Solicitar afinidad de usuario**: el dispositivo se debe afiliar a un usuario durante la configuración inicial antes de que se le permita el acceso a los datos y al correo electrónico de la empresa como dicho usuario. La opción **Afinidad de usuario** debe configurarse para dispositivos administrados por DEP que pertenezcan a usuarios y necesiten usar el portal de empresa (es decir, para instalar aplicaciones). La autenticación multifactor (MFA) no funciona durante la inscripción en dispositivos DEP con afinidad de usuario. Después de la inscripción, MFA funciona según lo previsto en estos dispositivos. No se puede pedir a los nuevos usuarios que cambien la contraseña al iniciar sesión por primera vez durante la inscripción en dispositivos DEP. Además, no se puede pedir a los usuarios cuyas contraseñas hayan expirado que las restablezcan durante la inscripción de DEP y tienen que hacerlo desde otro dispositivo.
 
-    >[!NOTE]
-    >DEP con afinidad de usuario precisa que el [punto de conexión WS-Trust 1.3 Username/Mixed](https://technet.microsoft.com/library/adfs2-help-endpoints) esté habilitado para solicitar el token de usuario. [Obtenga más información sobre WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
+     >[!NOTE]
+     >DEP con afinidad de usuario precisa que el [punto de conexión WS-Trust 1.3 Username/Mixed](https://technet.microsoft.com/library/adfs2-help-endpoints) esté habilitado para solicitar el token de usuario. [Obtenga más información sobre WS-Trust 1.3](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
    - **Sin afinidad de usuario**: el dispositivo no está afiliado a ningún usuario. Use esta afiliación para dispositivos que realizan tareas sin tener acceso a datos de usuario local. Las aplicaciones que requieren la afiliación de usuario, incluida la aplicación de portal de empresa que se usa para instalar aplicaciones de línea de negocio, no funcionarán.
 
@@ -105,7 +105,7 @@ En los siguientes pasos, se explica cómo inscribir dispositivos iOS en “día 
        - **Deshabilitar**: permite quitar el perfil de administración del menú **Configuración**.
        - **Habilitar** (requiere **Modo de preparación** = **Supervisado**): deshabilita la opción del menú Configuración de iOS para quitar el perfil de administración.
    - **Opciones del Asistente de configuración**: estas opciones opcionales se pueden configurar más adelante en el menú **Configuración** de iOS.
-        - **Código de acceso**: solicitar el código de acceso durante la activación. Solicite siempre un código de acceso, a menos que el dispositivo esté protegido o tenga el acceso controlado de otra manera (es decir, modo de quiosco que restringe el dispositivo a una aplicación).
+     - **Código de acceso**: solicitar el código de acceso durante la activación. Solicite siempre un código de acceso, a menos que el dispositivo esté protegido o tenga el acceso controlado de otra manera (es decir, modo de quiosco que restringe el dispositivo a una aplicación).
        - **Servicios de ubicación**: si está habilitado, el Ayudante para la configuración solicitará el servicio durante la activación.
        - **Restauración**: si está habilitado, el Ayudante para la configuración solicitará una copia de seguridad de iCloud durante la activación.
        - **ID de Apple**: si está habilitado, iOS solicitará a los usuarios un identificador de Apple cuando Intune intente instalar una aplicación sin un identificador. Se requiere un identificador de Apple para descargar aplicaciones del App Store de iOS, incluidas las que instala Intune.
@@ -115,10 +115,10 @@ En los siguientes pasos, se explica cómo inscribir dispositivos iOS en “día 
        - **Zoom**: si está habilitado, el Ayudante para la configuración solicitará este servicio durante la activación.
        - **Siri**: si está habilitado, el Ayudante para la configuración solicitará este servicio durante la activación.
        - **Enviar datos de diagnóstico a Apple**: si está habilitado, el Ayudante para la configuración solicitará este servicio durante la activación.
-   -  **Habilitar administración adicional de Apple Configurator**: establézcalo en **No permitir** para impedir la sincronización de archivos con iTunes o con la administración a través de Apple Configurator. Es una buena decisión elegir **No permitir**, exportar la configuración adicional de Apple Configurator y, después, implementarla como un perfil de configuración de iOS personalizado mediante Intune, en lugar de usar esta opción para permitir la implementación manual con o sin certificado.
-       - **No permitir**: impide que el dispositivo se comunique a través de USB (deshabilita el emparejamiento).
-       - **Permitir**: permite que un dispositivo se comunique a través de la conexión USB para cualquier equipo PC o Mac.
-       - **Requerir certificado**: permite el emparejamiento con un Mac con un certificado importado en el perfil de inscripción
+   - **Habilitar administración adicional de Apple Configurator**: establézcalo en **No permitir** para impedir la sincronización de archivos con iTunes o con la administración a través de Apple Configurator. Es una buena decisión elegir **No permitir**, exportar la configuración adicional de Apple Configurator y, después, implementarla como un perfil de configuración de iOS personalizado mediante Intune, en lugar de usar esta opción para permitir la implementación manual con o sin certificado.
+      - **No permitir**: impide que el dispositivo se comunique a través de USB (deshabilita el emparejamiento).
+      - **Permitir**: permite que un dispositivo se comunique a través de la conexión USB para cualquier equipo PC o Mac.
+      - **Requerir certificado**: permite el emparejamiento con un Mac con un certificado importado en el perfil de inscripción
 
 ### <a name="assign-the-profile-to-devices"></a>Asignar el perfil a los dispositivos
 

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 67a2891e4c7a6adcd7bd132c5663c9a78426ea07
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: eb27605108feb3a2db3072d4a8b7a296f0f74cfc
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-conditional-access"></a>Solucionar problemas de acceso condicional
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Normalmente, cuando un usuario intenta acceder al correo o a SharePoint recibe una solicitud de inscripción. Esa solicitud llevará al usuario al portal de empresa.
 
@@ -49,20 +49,20 @@ Es posible ver si estas condiciones se cumplen en un dispositivo en el Portal de
 
 ## <a name="compliance-issues"></a>Problemas de cumplimiento
 
- -  El dispositivo no cumple la directiva de Intune. Algunos problemas comunes son los requisitos de cifrado y contraseña. Se redirigirá al usuario al portal de empresa, donde podrá configurar el dispositivo para que sea compatible.
- -  El registro de la información de cumplimiento de un dispositivo puede llevar un tiempo. Espere unos minutos y vuelva a intentarlo .
- -  Para dispositivos iOS:
-     -   Un perfil de correo electrónico existente creado por el usuario bloqueará la implementación de un perfil de Intune creado por el administrador. Este es un problema común, ya que los usuarios de iOS suelen crear un perfil de correo y luego inscribirse. El portal de empresa informará al usuario de que no son compatibles debido a su perfil de correo configurado manualmente y le pedirá que quite ese perfil. El usuario debe quitar su perfil de correo para que se pueda implementar el perfil de Intune. Para evitar el problema, indique a los usuarios que se inscriban sin instalar un perfil de correo y que permitan que Intune implemente el perfil.
-     -   Un dispositivo iOS puede quedarse atascado en un estado de comprobación de cumplimiento e impedir que el usuario inicie otra comprobación. Esto puede solucionarse reiniciando el portal de empresa y el estado de cumplimiento reflejará el estado del dispositivo en Intune. Después de que se recopilen todos los datos desde una sincronización de dispositivos, la comprobación del cumplimiento es rápida, menos de medio segundo de media.
+- El dispositivo no cumple la directiva de Intune. Algunos problemas comunes son los requisitos de cifrado y contraseña. Se redirigirá al usuario al portal de empresa, donde podrá configurar el dispositivo para que sea compatible.
+- El registro de la información de cumplimiento de un dispositivo puede llevar un tiempo. Espere unos minutos y vuelva a intentarlo .
+- Para dispositivos iOS:
+  - Un perfil de correo electrónico existente creado por el usuario bloqueará la implementación de un perfil de Intune creado por el administrador. Este es un problema común, ya que los usuarios de iOS suelen crear un perfil de correo y luego inscribirse. El portal de empresa informará al usuario de que no son compatibles debido a su perfil de correo configurado manualmente y le pedirá que quite ese perfil. El usuario debe quitar su perfil de correo para que se pueda implementar el perfil de Intune. Para evitar el problema, indique a los usuarios que se inscriban sin instalar un perfil de correo y que permitan que Intune implemente el perfil.
+  - Un dispositivo iOS puede quedarse atascado en un estado de comprobación de cumplimiento e impedir que el usuario inicie otra comprobación. Esto puede solucionarse reiniciando el portal de empresa y el estado de cumplimiento reflejará el estado del dispositivo en Intune. Después de que se recopilen todos los datos desde una sincronización de dispositivos, la comprobación del cumplimiento es rápida, menos de medio segundo de media.
 
-        Normalmente, los dispositivos de motivo permanecen en este estado porque están teniendo problemas al conectarse con el servicio o la sincronización tarda mucho tiempo.  Si el problema persiste en diferentes configuraciones de red (red de telefonía móvil, Wi-Fi y VPN), a través de reinicios del dispositivo y después de comprobar que el SSP está actualizado en el dispositivo, póngase en contacto con el soporte técnico de Microsoft, tal y como se describe en [Cómo obtener soporte técnico de Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+    Normalmente, los dispositivos de motivo permanecen en este estado porque están teniendo problemas al conectarse con el servicio o la sincronización tarda mucho tiempo.  Si el problema persiste en diferentes configuraciones de red (red de telefonía móvil, Wi-Fi y VPN), a través de reinicios del dispositivo y después de comprobar que el SSP está actualizado en el dispositivo, póngase en contacto con el soporte técnico de Microsoft, tal y como se describe en [Cómo obtener soporte técnico de Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
- - Para dispositivos Android:
-    - Algunos dispositivos Android podrían parecer cifrados, pero la aplicación de portal de empresa reconoce estos dispositivos como no cifrados. 
+- Para dispositivos Android:
+   - Algunos dispositivos Android podrían parecer cifrados, pero la aplicación de portal de empresa reconoce estos dispositivos como no cifrados. 
     
-        -   Los dispositivos que se encuentran en este estado requieren que el usuario establezca un código de acceso de inicio seguro. El usuario verá una notificación de dispositivo de la aplicación de portal de empresa que le pedirá que establezca un código de acceso de inicio para el dispositivo. Después de pulsar la notificación de dispositivo y confirmar el PIN o el código de acceso existente, seleccione la opción **Require PIN to start device** (Solicitar PIN para iniciar el dispositivo) en la pantalla **Secure start-up** (Inicio seguro). Después, pulse el botón **Comprobar cumplimiento** para el dispositivo en la aplicación de portal de empresa. El dispositivo debería detectarse ahora como cifrado.
+       -   Los dispositivos que se encuentran en este estado requieren que el usuario establezca un código de acceso de inicio seguro. El usuario verá una notificación de dispositivo de la aplicación de portal de empresa que le pedirá que establezca un código de acceso de inicio para el dispositivo. Después de pulsar la notificación de dispositivo y confirmar el PIN o el código de acceso existente, seleccione la opción **Require PIN to start device** (Solicitar PIN para iniciar el dispositivo) en la pantalla **Secure start-up** (Inicio seguro). Después, pulse el botón **Comprobar cumplimiento** para el dispositivo en la aplicación de portal de empresa. El dispositivo debería detectarse ahora como cifrado.
     
-        -   Algunos fabricantes de dispositivos cifran sus dispositivos con un PIN predeterminado, en vez de con el PIN secreto establecido por el usuario. Intune reconoce el cifrado con el PIN predeterminado como no seguro, ya que este método de cifrado puede poner en peligro los datos del dispositivo si un usuario malintencionado tiene acceso físico al dispositivo. Si este es el caso, considere la posibilidad de usar [directivas de protección de aplicaciones](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
+       -   Algunos fabricantes de dispositivos cifran sus dispositivos con un PIN predeterminado, en vez de con el PIN secreto establecido por el usuario. Intune reconoce el cifrado con el PIN predeterminado como no seguro, ya que este método de cifrado puede poner en peligro los datos del dispositivo si un usuario malintencionado tiene acceso físico al dispositivo. Si este es el caso, considere la posibilidad de usar [directivas de protección de aplicaciones](/intune-classic/deploy-use/azure-portal-for-microsoft-intune-mam-policies).
 
 ## <a name="policy-issues"></a>Problemas de directivas
 
@@ -118,22 +118,22 @@ Si estos procedimientos de solución de problemas no resuelven el problema, hay 
 ### <a name="exchange-connector-logs"></a>Registros de Exchange Connector
 
 #### <a name="general-log-information"></a>Información del registro general
-Para ver registros de Exchange Connector, use la [herramienta del visor de seguimiento del servidor] (herramienta del visor de seguimiento del servidor) (https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx'). Esta herramienta requiere que descargue el SDK de Windows Server.
+Para ver registros de Exchange Connector, use la [herramienta del visor de seguimiento del servidor] (herramienta del visor de seguimiento del servidor) (<https://msdn.microsoft.com/library/ms732023(v=vs.110).aspx>'). Esta herramienta requiere que descargue el SDK de Windows Server.
 
 >[!NOTE]
 >Los registros se encuentran en C:\ProgramData\Microsoft\Windows Intune Exchange Connector\Logs. Los registros se encuentran en una serie de 30 archivos de registro a partir de *Connector0.log* y que acaba en *Connector29.log*. Registra la sustitución de uno a otro después de 10 MB de datos acumulados en un registro. Una vez que los registros lleguen a Connector29, volverán a comenzar en Connector0 de nuevo y sobrescribirán los archivos de registro anteriores.
 
 #### <a name="locating-sync-logs"></a>Localizar registros de sincronización
 
--    Localice una sincronización completa en los registros buscando **full sync**. Este texto marcará el principio de una sincronización completa:
+- Localice una sincronización completa en los registros buscando **full sync**. Este texto marcará el principio de una sincronización completa:
 
-    'Comando de control: obtener la lista de dispositivos móviles sin un filtro de tiempo (sincronización completa) para los usuarios de <number>'
+  'Comando de control: obtener la lista de dispositivos móviles sin un filtro de tiempo (sincronización completa) para los usuarios de <number>'
 
-    El final del registro de una sincronización completa tiene este aspecto:
+  El final del registro de una sincronización completa tiene este aspecto:
 
-    La obtención de la lista de dispositivos móviles sin un filtro de tiempo (sincronización completa) para 4 usuarios se completó correctamente. Detalles: resultado del comando de inventario - Dispositivos sincronizados 0 Identificador de comando: commandIDGUID' Estado de Exchange: 'Server health 'Nombre: 'PowerShellExchangeServer: <Name=mymailservername>' Estado: Conectado','
+  La obtención de la lista de dispositivos móviles sin un filtro de tiempo (sincronización completa) para 4 usuarios se completó correctamente. Detalles: resultado del comando de inventario - Dispositivos sincronizados 0 Identificador de comando: commandIDGUID' Estado de Exchange: 'Server health 'Nombre: 'PowerShellExchangeServer: <Name=mymailservername>' Estado: Conectado','
 
--   Localice una sincronización rápida (diferencial) en los registros buscando **quick sync**.
+- Localice una sincronización rápida (diferencial) en los registros buscando **quick sync**.
 
 ##### <a name="exceptions-in-get-next-command"></a>Excepciones en el siguiente comando de Get
 Compruebe los registros de Exchange Connector para ver las excepciones en **Obtener el siguiente comando**, y proporciónelos al soporte técnico de Microsoft.
