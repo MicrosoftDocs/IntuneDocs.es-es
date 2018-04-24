@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ce43f43e2d5522d947f0db244023b93635f1d19f
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 25bdc7da543cdc38ccbe70651c145750ba96c082
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exchange-activesync-policy-settings-in-microsoft-intune"></a>Configuración de directivas de Exchange ActiveSync en Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Use la directiva de **Exchange ActiveSync** de Microsoft Intune para configurar las opciones que controlan diversas características y funcionalidades en los dispositivos que Exchange ActiveSync administra.
 
@@ -44,10 +44,11 @@ Use la directiva de **Exchange ActiveSync** de Microsoft Intune para configurar 
 
 ## <a name="encryption-settings"></a>Configuración de cifrado
 
-|Nombre de la configuración|Detalles|
-|----------------|---|
-|**Requerir cifrado en dispositivo móvil**<sup>1</sup>|Cuando se admite esta característica, requiere que los datos de un dispositivo se cifren.<br><br>Para dispositivos de Windows Phone 8, debe establecerse en **Sí**.<br /><br />Para habilitar el cifrado en dispositivos iOS, habilite la configuración **Requerir una contraseña para desbloquear dispositivos móviles**.|
-|**Requerir cifrado en tarjetas de almacenamiento**|Requiere que se cifren los datos almacenados en un almacenamiento externo, como una tarjeta SD (en dispositivos compatibles).
+|                           Nombre de la configuración                           |                                                                                                                                    Detalles                                                                                                                                    |
+|------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <strong>Requerir cifrado en dispositivo móvil</strong><sup>1</sup> | Cuando se admite esta característica, requiere que los datos de un dispositivo se cifren.<br><br>Para dispositivos de Windows Phone 8, debe establecerse en <strong>Sí</strong>.<br /><br />Para habilitar el cifrado en dispositivos iOS, habilite la configuración <strong>Requerir una contraseña para desbloquear dispositivos móviles</strong>. |
+|       <strong>Requerir cifrado en tarjetas de almacenamiento</strong>       |                                                                                  Requiere que se cifren los datos almacenados en un almacenamiento externo, como una tarjeta SD (en dispositivos compatibles).                                                                                  |
+
 <sup>1</sup> Información adicional para los dispositivos que ejecutan Windows 8.1
 
 -   Para forzar el cifrado en los dispositivos que ejecutan Windows 8.1, debe instalar en cada dispositivo la [Actualización de cliente MDM de diciembre de 2014 para Windows](https://support.microsoft.com/kb/3013816).

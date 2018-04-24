@@ -1,31 +1,29 @@
 ---
 title: Resolver amenazas encontradas por Lookout for Work en iOS | Microsoft Docs
 description: Aprenda a resolver una amenaza detectada por Lookout for Work en iOS.
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 03/17/2017
+ms.date: 04/03/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: dd6aec3a-4063-4054-8d0f-d2f2034f0d3d
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: f317c8ddf89510e695b727548d5abafdf9319c25
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: be7d54cdde7e82cd0e0d4820ecfddff171e5984a
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>Resolver una amenaza detectada por Lookout for Work
 
-Lookout for Work ha detectado una amenaza potencial en el dispositivo que es necesario solucionar para recuperar el acceso al correo electrónico profesional o educativo, a las aplicaciones y a los archivos. El mensaje que ve podría ser similar a este:
-
-![Mensaje de incumplimiento de los requisitos de Lookout for Work](./media/ios-lfw-noncompliant-in-ssp.png)
+Lookout for Work ha detectado una amenaza potencial en el dispositivo que es necesario solucionar para recuperar el acceso al correo electrónico profesional o educativo, a las aplicaciones y a los archivos.
 
 Para resolver el problema, abra la aplicación de Lookout for Work y siga las instrucciones que se muestran en la aplicación.
 

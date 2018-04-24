@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3da91a23a3aaa7da4f914bb04eda9a2f640db733
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 5283d040c7b4c39c495a13a71643b6569eed09bd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-policies-and-publish-apps"></a>Crear directivas y publicar aplicaciones
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 En este tema se explica a los administradores de Intune cómo crear directivas y publicar aplicaciones que luego pueden implementar en dispositivos administrados.
 
@@ -63,12 +63,12 @@ En primer lugar debe hacer que las aplicaciones estén disponibles en Intune med
 Ahora que la aplicación está disponible en Intune, puede implementarla en dispositivos administrados:
 - [Implementar aplicaciones en dispositivos](/intune-classic/deploy-use/deploy-use/deploy-apps-in-microsoft-intune)
 - Implementar aplicaciones adquiridas por volumen:
-    - [iOS: programa de adquisición por volumen](/intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
-    - [Tienda Microsoft para Empresas](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
-    - [Android for Work](/intune-classic/deploy-use/android-for-work-apps)
+  - [iOS: programa de adquisición por volumen](/intune-classic/deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune)
+  - [Tienda Microsoft para Empresas](/intune-classic/deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune)
+  - [Android for Work](/intune-classic/deploy-use/android-for-work-apps)
 
     Una vez configuradas las aplicaciones para la implementación, puede [configurar aplicaciones](/intune-classic/deploy-use/monitor-apps-in-microsoft-intune).
 
->[!div class="step-by-step"]
-
->[&larr; **Organizar usuarios y dispositivos**](.\start-with-a-paid-subscription-to-microsoft-intune-step-5.md)      [**Personalizar el portal de empresa** &rarr;](/intune/company-portal-customize)  
+> [!div class="step-by-step"]
+> 
+> [&larr; **Organizar usuarios y dispositivos**](./start-with-a-paid-subscription-to-microsoft-intune-step-5.md)      [**Personalizar el portal de empresa** &rarr;](/intune/company-portal-customize)  

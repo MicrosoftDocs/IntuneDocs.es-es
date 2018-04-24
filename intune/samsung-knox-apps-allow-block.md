@@ -1,27 +1,27 @@
 ---
 title: Directiva de Microsoft Intune para permitir o bloquear aplicaciones para Samsung Knox
-titlesuffix: 
+titlesuffix: ''
 description: Cree un perfil personalizado para permitir y bloquear aplicaciones para dispositivos Samsung Knox Standard.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/5/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 95f35cfd869975a43fd54a1e6a9ff6ae35ffa6af
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 61a4d059eb771e22075796def5e1a273b02d932e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-custom-policies-in-microsoft-intune-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Uso de directivas personalizadas en Microsoft Intune para permitir y bloquear aplicaciones para dispositivos Samsung Knox Standard 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Use los procedimientos de este artículo para crear una directiva personalizada de Microsoft Intune que cree una de las siguientes opciones:
 
@@ -33,7 +33,7 @@ Esta configuración solo se puede usar en dispositivos que ejecutan Samsung Knox
 ## <a name="create-an-allowed-or-blocked-app-list"></a>Creación de una lista de aplicaciones permitidas o bloqueadas
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En el panel **Intune**, elija **Configuración del dispositivo**.
 2. En el panel **Configuración del dispositivo**, elija **Administrar** > **Perfiles**.
 2. En la hoja de lista de perfiles, elija **Crear perfil**.

@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c55d8965d566074bddd23ea3973d22333fcc0980
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: caa6e57fbaeefbdcdbdf118f2f97985e26fc7724
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune"></a>Configurar el acceso al correo electrónico corporativo mediante perfiles de correo electrónico con Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Muchas plataformas móviles incluyen un cliente de correo electrónico nativo que se suministra como parte del sistema operativo. Algunos de estos clientes se pueden configurar con perfiles de correo electrónico, como se describe en este tema.
 

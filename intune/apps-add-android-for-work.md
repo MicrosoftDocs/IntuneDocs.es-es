@@ -15,15 +15,15 @@ ms.assetid: 2f6c06bf-e29a-4715-937b-1d2c7cf663d4
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e3b5a742fb480cf9c4c77106b849eebb95ad2439
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 4168f78bff8937ca403cdb75b1028954cbbebd6f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-assign-apps-to-android-for-work-devices-with-intune"></a>Asignación de aplicaciones para dispositivos Android for Work con Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Android for Work es un programa para dispositivos Android. Todas las aplicaciones que se instalan en dispositivos Android for Work proceden de Google Play for Work Store. Puede asignar aplicaciones para dispositivos Android for Work de forma diferente a cuando las asigna en dispositivos Android estándar. Inicie sesión en la tienda, busque las aplicaciones que desee y apruébelas. La aplicación aparecerá en el nodo **Aplicaciones con licencia** de Azure Portal. Desde aquí, puede administrar la asignación de la aplicación de la misma manera que asignaría cualquier otra aplicación.
 
@@ -43,7 +43,7 @@ Asegúrese de que ha configurado Intune y Android for Work para que trabajen jun
 
     ![Ejemplo: Aprobar la aplicación en el almacén de Google Play for Work](media/approve.png)</br>
     
-  Se abre una ventana de la aplicación que le pide que conceda permisos a la aplicación para realizar diversas operaciones. 
+   Se abre una ventana de la aplicación que le pide que conceda permisos a la aplicación para realizar diversas operaciones. 
 
 4. Seleccione **Aprobar** para aceptar los permisos de la aplicación y continuar.</br>
 
@@ -60,7 +60,7 @@ Asegúrese de que ha configurado Intune y Android for Work para que trabajen jun
 Si se ha aprobado una aplicación desde la tienda y todavía no la ve en el nodo **Aplicaciones con licencia** de la carga de trabajo **Mobile Apps**, fuerce una sincronización inmediata como sigue:
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En el panel **Intune**, elija **Aplicaciones móviles**.
 4. En la carga de trabajo **Aplicaciones móviles**, elija **Android for Work** en la sección **Configuración**.
 5. En el panel Android for Work, elija **Sincronizar**. En la página se mostrará la hora y el estado de la última sincronización.
@@ -79,7 +79,7 @@ Cuando un desarrollador de la aplicación publica una nueva versión con permiso
 
 Visite periódicamente la consola de Google Play administrada para buscar nuevos permisos. Puede configurar Google Play para que le envíe a usted o a otros usuarios un correo electrónico cuando se requieren nuevos permisos para una aplicación aprobada. Si asigna una aplicación y observa que no está instalado en los dispositivos, busque nuevos permisos con los siguientes pasos:
 
-1. Visite http://play.google.com/work
+1. Visite http://play.google.com/work.
 2. Inicie sesión con la cuenta de Google que usó para publicar y aprobar las aplicaciones.
 3. Visite la pestaña **Actualizaciones** para ver si alguna aplicación requiere una actualización.  Las aplicaciones de la lista requieren permisos nuevos y no se asignarán hasta que se apliquen.  
 

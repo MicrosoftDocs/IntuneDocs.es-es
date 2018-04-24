@@ -1,29 +1,28 @@
 ---
 title: Solicitar y proporcionar asistencia remota para equipos con Windows
-description: "Describe los pasos de administración de TI y usuario final para proporcionar asistencia remota para equipos de escritorio de Windows que están administrándose como PC y para iniciar un PC de forma remota."
-keywords: 
+description: Describe los pasos de administración de TI y usuario final para proporcionar asistencia remota para equipos de escritorio de Windows que están administrándose como PC y para iniciar un PC de forma remota.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c2654491-5144-408a-a45a-644eb91ac1bb
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1bfa7f1dedecd47aeb30a12c5627a137b775d12a
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 245d18b89be9b9884df6c7ee41436e747c0557fe
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Solicitar y proporcionar asistencia remota para equipos con Windows
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
-
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 La información de este tema se aplica solo a equipos de escritorio de Windows que está administrando como PC mediante el cliente de software de Intune.
 
@@ -60,7 +59,7 @@ Antes de empezar a establecer las solicitudes de asistencia remota y responderla
 ## <a name="respond-to-a-remote-assistance-request"></a>Responder a una solicitud de asistencia remota
 
 1. Cuando un usuario envía una solicitud de asistencia remota, usted puede verlo en el área de trabajo **Alertas**, en **Supervisión** > **Asistencia remota**. Por ejemplo:
-> ![Captura de pantalla de una solicitud de asistencia remota](./media/team-viewer.png)
+   > ![Captura de pantalla de una solicitud de asistencia remota](./media/team-viewer.png)
 
 <br>Si no contesta a una solicitud pasadas 4 horas, se quita.
 2. Para aceptar la solicitud, elija **Aprobar solicitud e iniciar asistencia remota**.
@@ -84,6 +83,6 @@ Cuando ayuda a los usuarios con problemas, debe reiniciar su PC de forma remota 
 
 4.  En el cuadro de diálogo **Estado de la tarea** , revise las tareas remotas actuales, el estado de la tarea, el nombre del dispositivo y los errores notificados.
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 
 [Tareas comunes de administración de equipos Windows con el cliente de software de Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

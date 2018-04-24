@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b5d2ec278d182f3d9dbe03fbdf86791b59debf79
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 52cba4de7d19744e1a011071ac6c9bbb168ffb30
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="get-ready-to-configure-app-protection-policies-in-the-azure-portal"></a>Preparativos para la configuración de directivas de protección de aplicaciones en Azure Portal
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 En este tema se describen los requisitos previos y los pasos que debe completar **antes** de crear directivas de protección de aplicaciones en Azure Portal.
 
@@ -74,18 +74,18 @@ Para ver la lista completa de las aplicaciones de Microsoft compatibles, vaya a 
 
 ## <a name="prerequisites"></a>Requisitos previos
 
--   **Una suscripción a Microsoft Intune**. Los usuarios necesitan licencias de Intune para obtener aplicaciones que tienen directivas de protección de aplicaciones.
-Ya tiene una suscripción de Intune si lo usa actualmente para administrar los dispositivos. También tiene una suscripción de Intune si ha adquirido una licencia de Enterprise Mobility Suite (EMS). Si está probando Intune para comprobar las funcionalidades de MAM, puede obtener una cuenta de prueba en la [página de Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/).
+- **Una suscripción a Microsoft Intune**. Los usuarios necesitan licencias de Intune para obtener aplicaciones que tienen directivas de protección de aplicaciones.
+  Ya tiene una suscripción de Intune si lo usa actualmente para administrar los dispositivos. También tiene una suscripción de Intune si ha adquirido una licencia de Enterprise Mobility Suite (EMS). Si está probando Intune para comprobar las funcionalidades de MAM, puede obtener una cuenta de prueba en la [página de Microsoft Intune](https://www.microsoft.com/server-cloud/products/microsoft-intune/).
 
-    Para comprobar si tiene una suscripción de Intune, en el portal de Office, vaya a la página de **facturación**.  Si tiene una suscripción, debe ver Intune como **Activo** en las suscripciones.
+  Para comprobar si tiene una suscripción de Intune, en el portal de Office, vaya a la página de **facturación**.  Si tiene una suscripción, debe ver Intune como **Activo** en las suscripciones.
 
--   **Una suscripción de Office 365**, que se necesita para lo siguiente:
+- **Una suscripción de Office 365**, que se necesita para lo siguiente:
 
   - Para aplicar las directivas de protección de aplicaciones a las aplicaciones que admiten varias identidades.
 
   - Para crear cuentas profesionales de SharePoint Online y Exchange Online. Exchange local y SharePoint local no se admiten.
 
--   **Configuración de Skype Empresarial Online para la autenticación moderna**. Para más información, consulte [Habilitar la autenticación moderna](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
+- **Configuración de Skype Empresarial Online para la autenticación moderna**. Para más información, consulte [Habilitar la autenticación moderna](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx).
 
 
 - Azure Active Directory (Azure AD) para crear usuarios. Azure AD autentica a los usuarios cuando estos abre la aplicación y escriban sus credenciales de trabajo.

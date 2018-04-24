@@ -1,25 +1,25 @@
 ---
-title: "Configuración de Exchange Connector local de Microsoft Intune"
-titleSuffix: 
-description: "Use Exchange Connector local para administrar el acceso del dispositivo a los buzones de Exchange en función de la inscripción de Intune y Exchange Active Sync (EAS)."
-keywords: 
+title: Configuración de Exchange Connector local de Microsoft Intune
+titleSuffix: ''
+description: Use Exchange Connector local para administrar el acceso del dispositivo a los buzones de Exchange en función de la inscripción de Intune y Exchange Active Sync (EAS).
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 03/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a0376ea1-eb13-4f13-84da-7fd92d8cd63c
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0caea2e8b7704fe2dfcbec937b59000ac2a12ae5
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 6319f6d805746e152c1f1b08231600099542ed4f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Configuración de Exchange Connector local de Intune en Microsoft Intune Azure
 
@@ -37,16 +37,16 @@ Para configurar una conexión que permite a Microsoft Intune comunicarse con Exc
 ## <a name="on-premises-exchange-connector-requirements"></a>Requisitos de On-Premises Exchange Connector
 En la siguiente tabla se indican los requisitos del equipo en el que se instala On-Premises Exchange Connector.
 
-|Requisito|Más información|
-|---------------|--------------------|
-|Sistemas operativos|Intune admite On-Premises Exchange Connector en equipos que ejecuten las ediciones Windows Server 2008 SP2 de 64 bits, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 o Windows Server 2016.<br /><br />El conector no es compatible con instalaciones de Server Core.|
-|Microsoft Exchange|On-Premises Connector requiere Microsoft Exchange 2010 SP1 o una versión posterior o Exchange Online dedicado heredado. Para determinar si la configuración de su entorno Exchange Online dedicado es **nueva** o **heredada**, póngase en contacto con su administrador de cuentas.|
-|Entidad de administración de dispositivos móviles| [Establecer la entidad de administración de dispositivos móviles en Intune](https://docs.microsoft.com/intune-classic/deploy-use/prerequisites-for-enrollment#step-2-mdm-authority-set).|
-|Hardware|El equipo donde se instala el conector debe requiere una CPU de 1,6 GHz con 2 GB de RAM y 10 GB de espacio libre en disco.|users-add.md
-|Sincronización de Active Directory|Para poder usar cualquiera el conector para conectar Intune a su instancia de Exchange Server, debe [configurar la sincronización de Active Directory](users-add.md) de forma que los usuarios locales y los grupos de seguridad estén sincronizados con su instancia de Azure Active Directory.|
-|Software adicional|El equipo que hospede el conector debe tener una instalación completa de Microsoft .NET Framework 4.5 y Windows PowerShell 2.0.|
-|Network (Red)|El equipo en el que se instala el conector debe estar en un dominio que tenga una relación de confianza con el dominio que hospeda Exchange Server.<br /><br />El equipo requiere configuraciones que le permitan obtener acceso al servicio de Intune a través de firewalls y servidores proxy mediante los puertos 80 y 443. Entre los dominios usados por Intune están manage.microsoft.com, &#42;manage.microsoft.com y &#42;.manage.microsoft.com.|
 
+|            Requisito             |                                                                                                                                                                                                        Más información                                                                                                                                                                                                        |
+|------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         Sistemas operativos          |                                                               Intune admite On-Premises Exchange Connector en equipos que ejecuten las ediciones Windows Server 2008 SP2 de 64 bits, Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 o Windows Server 2016.<br /><br />El conector no es compatible con instalaciones de Server Core.                                                                |
+|         Microsoft Exchange         |                                                                           On-Premises Connector requiere Microsoft Exchange 2010 SP1 o una versión posterior o Exchange Online dedicado heredado. Para determinar si la configuración de su entorno Exchange Online dedicado es <strong>nueva</strong> o <strong>heredada</strong>, póngase en contacto con su administrador de cuentas.                                                                           |
+| Entidad de administración de dispositivos móviles |                                                                                                                              [Establecer la entidad de administración de dispositivos móviles en Intune](https://docs.microsoft.com/intune-classic/deploy-use/prerequisites-for-enrollment#step-2-mdm-authority-set).                                                                                                                               |
+|              Hardware              |                                                                                                                                                     El equipo donde se instala el conector debe requiere una CPU de 1,6 GHz con 2 GB de RAM y 10 GB de espacio libre en disco.                                                                                                                                                      |
+|  Sincronización de Active Directory  |                                                                                      Para poder usar cualquiera el conector para conectar Intune a su instancia de Exchange Server, debe [configurar la sincronización de Active Directory](users-add.md) de forma que los usuarios locales y los grupos de seguridad estén sincronizados con su instancia de Azure Active Directory.                                                                                      |
+|        Software adicional         |                                                                                                                                           El equipo que hospede el conector debe tener una instalación completa de Microsoft .NET Framework 4.5 y Windows PowerShell 2.0.                                                                                                                                           |
+|              Network (Red)               | El equipo en el que se instala el conector debe estar en un dominio que tenga una relación de confianza con el dominio que hospeda Exchange Server.<br /><br />El equipo requiere configuraciones que le permitan obtener acceso al servicio de Intune a través de firewalls y servidores proxy mediante los puertos 80 y 443. Entre los dominios usados por Intune están manage.microsoft.com, &#42;manage.microsoft.com y &#42;.manage.microsoft.com. |
 
 ### <a name="exchange-cmdlet-requirements"></a>Requisitos del cmdlet de Exchange
 
@@ -84,48 +84,48 @@ Debe crear una cuenta de usuario de Active Directory que sea utilizada por Intun
 ## <a name="install-and-configure-the-intune-on-premises-exchange-connector"></a>Instalación y configuración de Intune On-Premises Exchange Connector
 Siga estos pasos para instalar Intune On-Premises Exchange Connector. On-Premises Exchange Connector solo puede instalarse una vez y en un solo equipo por cada suscripción de Intune. Si intenta configurar otra instancia de On-Premises Exchange Connector, se reemplazará la conexión original por la nueva.
 
-1.  En un sistema operativo compatible con On-Premises Connector, extraiga los archivos de **Exchange_Connector_Setup.zip** en una ubicación segura.
+1. En un sistema operativo compatible con On-Premises Connector, extraiga los archivos de **Exchange_Connector_Setup.zip** en una ubicación segura.
 
-2.  Una vez extraídos los archivos, abra la carpeta extraída y haga doble clic en **Exchange_Connector_Setup.exe** para instalar On-Premises Exchange Connector.
+2. Una vez extraídos los archivos, abra la carpeta extraída y haga doble clic en **Exchange_Connector_Setup.exe** para instalar On-Premises Exchange Connector.
 
-    > [!IMPORTANT]
-    > Si la carpeta de destino no es una ubicación segura, debe eliminar el archivo de certificado **WindowsIntune.accountcert** después de instalar On-Premises Connector.
+   > [!IMPORTANT]
+   > Si la carpeta de destino no es una ubicación segura, debe eliminar el archivo de certificado **WindowsIntune.accountcert** después de instalar On-Premises Connector.
 
-3.  En el cuadro de diálogo de **Microsoft Intune Exchange Connector**, seleccione **Microsoft Exchange Server local** o **Microsoft Exchange Server hospedado**.
+3. En el cuadro de diálogo de **Microsoft Intune Exchange Connector**, seleccione **Microsoft Exchange Server local** o **Microsoft Exchange Server hospedado**.
 
-  ![Imagen que muestra dónde debe elegir el tipo de Exchange Server](./media/intune-sa-exchange-connector-config.png)
+   ![Imagen que muestra dónde debe elegir el tipo de Exchange Server](./media/intune-sa-exchange-connector-config.png)
 
-  Para un servidor Exchange local, proporcione el nombre del servidor o el nombre de dominio completo del servidor Exchange que hospeda el rol de **servidor de acceso de cliente**.
+   Para un servidor Exchange local, proporcione el nombre del servidor o el nombre de dominio completo del servidor Exchange que hospeda el rol de **servidor de acceso de cliente**.
 
-  Para un servidor de Exchange hospedado, proporcione la dirección del servidor Exchange. Para buscar la dirección URL del servidor Exchange hospedado:
+   Para un servidor de Exchange hospedado, proporcione la dirección del servidor Exchange. Para buscar la dirección URL del servidor Exchange hospedado:
 
-    1. Abra Outlook Web App para Office 365.
+   1. Abra Outlook Web App para Office 365.
 
-    2. Elija el icono **?** de la esquina superior izquierda y luego seleccione **Acerca de**.
+   2. Elija el icono **?** de la esquina superior izquierda y luego seleccione **Acerca de**.
 
-    3. Busque el valor **Servidor externo POP** .
+   3. Busque el valor **Servidor externo POP** .
 
-    4. Elija **Servidor proxy** para especificar la configuración del servidor proxy para el servidor Exchange hospedado.
-        1. Seleccione **Usar un servidor proxy al sincronizar información de dispositivos móviles**.
+   4. Elija **Servidor proxy** para especificar la configuración del servidor proxy para el servidor Exchange hospedado.
+       1. Seleccione **Usar un servidor proxy al sincronizar información de dispositivos móviles**.
 
-        2. Escriba el **nombre del servidor proxy** y el **número de puerto** que se utilizará para tener acceso al servidor.
+       2. Escriba el **nombre del servidor proxy** y el **número de puerto** que se utilizará para tener acceso al servidor.
 
-        3. Si es necesario proporcionar credenciales de usuario para acceder al servidor proxy, seleccione **Usar credenciales para conectarse al servidor proxy**. A continuación, escriba el **dominio\usuario** y la **contraseña**.
+       3. Si es necesario proporcionar credenciales de usuario para acceder al servidor proxy, seleccione **Usar credenciales para conectarse al servidor proxy**. A continuación, escriba el **dominio\usuario** y la **contraseña**.
 
-        4. Elija **Aceptar**.
+       4. Elija **Aceptar**.
 
-    5. En los campos **Usuario (Dominio\usuario)** y **Contraseña**, escriba las credenciales que son necesarias para conectarse a su servidor de Exchange.
+   5. En los campos **Usuario (Dominio\usuario)** y **Contraseña**, escriba las credenciales que son necesarias para conectarse a su servidor de Exchange.
 
-    6.  Proporcione las credenciales necesarias para enviar notificaciones al buzón de Exchange Server de un usuario. Este usuario se puede destinar solo a las notificaciones. El usuario de notificaciones necesita un buzón de Exchange para poder enviar notificaciones por correo electrónico. Puede configurar estas notificaciones con directivas de acceso condicional en Intune.  
+   6.  Proporcione las credenciales necesarias para enviar notificaciones al buzón de Exchange Server de un usuario. Este usuario se puede destinar solo a las notificaciones. El usuario de notificaciones necesita un buzón de Exchange para poder enviar notificaciones por correo electrónico. Puede configurar estas notificaciones con directivas de acceso condicional en Intune.  
 
-        Asegúrese de que el servicio de detección automática y servicios Web Exchange están configurados en el servidor de acceso de cliente de Exchange. Para obtener más información, consulte [Client Access server](https://technet.microsoft.com/library/dd298114.aspx) (Servidor de acceso de cliente).
+       Asegúrese de que el servicio de detección automática y servicios Web Exchange están configurados en el servidor de acceso de cliente de Exchange. Para obtener más información, consulte [Client Access server](https://technet.microsoft.com/library/dd298114.aspx) (Servidor de acceso de cliente).
 
-    7.  En el campo **Contraseña**, indique la contraseña de la cuenta para permitir que Intune obtenga acceso al servidor Exchange.
+   7.  En el campo **Contraseña**, indique la contraseña de la cuenta para permitir que Intune obtenga acceso al servidor Exchange.
 
-    8. Elija **Conectar**.
+   8. Elija **Conectar**.
 
-    > [!NOTE]
-    > La conexión puede tardar unos minutos en configurarse.
+   > [!NOTE]
+   > La conexión puede tardar unos minutos en configurarse.
 
 Durante la configuración, Exchange Connector guarda la configuración de proxy para permitir el acceso a Internet. Si cambia la configuración de proxy, tendrá que volver a configurar Exchange Connector para aplicarle la configuración de proxy actualizada.
 

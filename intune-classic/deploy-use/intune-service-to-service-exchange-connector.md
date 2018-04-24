@@ -15,27 +15,28 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 78b4e91fd61bb79c2a3a6d86d5a79c39b320cc5e
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 8af8d79d6f8ea9037c6bef532ad45185830c358d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-the-intune-service-to-service-connector-for-exchange-online"></a>Configurar Intune Service to Service Connector para Exchange Online
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Use esta información para conectar Microsoft Intune y Exchange Online o el nuevo servicio Exchange Online dedicado. Para determinar si su entorno Exchange Online dedicado es una versión **nueva** o **heredada**, póngase en contacto con su administrador de cuentas. Intune solo admite una conexión de Exchange Connector de cualquier tipo por suscripción.
 
 ## <a name="service-to-service-connector-requirements"></a>Requisitos de Service to Service Connector
 **Service to Service Connector** solo admite Exchange Online o Exchange Online dedicado y no requiere infraestructura local.
 
-|Requisito|Más información|
-|---------------|--------------------|
-|Exchange Online configurado y en ejecución|[Exchange Online](https://technet.microsoft.com/library/jj200580.aspx) |
-|Entidad de administración de dispositivos móviles| [Configurar Microsoft Intune como la entidad de administración de dispositivos móviles](prerequisites-for-enrollment.md#step-2-set-mdm-authority)|
-|Versión de Microsoft Exchange|Exchange Online o el nuevo servicio Exchange Online dedicado|/intune/users-permissions-add
-|Sincronización de Active Directory|Para poder usar Intune Connector, debe [configurar la sincronización de Active Directory](/intune/users-permissions-add) de forma que los usuarios locales y los grupos de seguridad estén sincronizados con su instancia de Azure Active Directory.|
+
+|              Requisito               |                                                                                                            Más información                                                                                                            |
+|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Exchange Online configurado y en ejecución |                                                                                 [Exchange Online](https://technet.microsoft.com/library/jj200580.aspx)                                                                                 |
+|   Entidad de administración de dispositivos móviles   |                                                       [Configurar Microsoft Intune como la entidad de administración de dispositivos móviles](prerequisites-for-enrollment.md#step-2-set-mdm-authority)                                                       |
+|       Versión de Microsoft Exchange       |                                                                                      Exchange Online o el nuevo servicio Exchange Online dedicado                                                                                      |
+|    Sincronización de Active Directory    | Para poder usar Intune Connector, debe [configurar la sincronización de Active Directory](/intune/users-permissions-add) de forma que los usuarios locales y los grupos de seguridad estén sincronizados con su instancia de Azure Active Directory. |
 
 ### <a name="exchange-cmdlet-requirements"></a>Requisitos del cmdlet de Exchange
 

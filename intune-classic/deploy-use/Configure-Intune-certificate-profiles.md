@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d6230fbc50ae79702cfd938f158d2961b5d720c9
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 51da197b9b805fbac22b6a46453617b7703a37e8
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-intune-certificate-profiles"></a>Configurar perfiles de certificado de Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Después de configurar la infraestructura y los certificados tal como se describe en [Configurar la infraestructura de certificados para SCEP](configure-certificate-infrastructure-for-scep.md) o [Configurar la infraestructura de certificados para PFX](configure-certificate-infrastructure-for-pfx.md), puede pasar a crear los perfiles de certificado. Este es el proceso:
 
@@ -92,39 +92,39 @@ Después de haber creado un perfil de certificado de CA de confianza, cree perfi
 
 -  Windows Phone 8.1 y versiones posteriores
 
-2.  Agregue una directiva **Perfil de certificado SCEP**.
+2. Agregue una directiva **Perfil de certificado SCEP**.
 
-    Más información: [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+   Más información: [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
 
-3.  Siga las instrucciones en la página de configuración de perfil para configurar las opciones del perfil de certificado SCEP.
-    > [!NOTE]
-    >
-    > En **Formato de nombre de sujeto**, seleccione **Personalizado** para especificar un formato de nombre de sujeto personalizado (solo en perfiles iOS).
-    >
-    > Las dos variables que se admiten actualmente para el formato personalizado son `Common Name (CN)` y `Email (E)`. Mediante una combinación de estas variables y cadenas estáticas, puede crear un formato de nombre de sujeto personalizado, como el siguiente:
+3. Siga las instrucciones en la página de configuración de perfil para configurar las opciones del perfil de certificado SCEP.
+   > [!NOTE]
+   > 
+   > En **Formato de nombre de sujeto**, seleccione **Personalizado** para especificar un formato de nombre de sujeto personalizado (solo en perfiles iOS).
+   > 
+   > Las dos variables que se admiten actualmente para el formato personalizado son `Common Name (CN)` y `Email (E)`. Mediante una combinación de estas variables y cadenas estáticas, puede crear un formato de nombre de sujeto personalizado, como el siguiente:
+   > 
+   >     CN={{nombreDeUsuario}},E={{direcciónDeCorreoElectrónico}},OU=Móvil,O=Departamento financiero,L=Redmond,ST=Washington,C=US
+   > 
+   > En este ejemplo, el administrador crea un formato de nombre de sujeto que, además de las variables `CN` y `E`, usa cadenas para los valores Unidad organizativa, Organización, Ubicación, Estado y País. [La función CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) muestra las cadenas admitidas.
 
-    >     CN={{nombreDeUsuario}},E={{direcciónDeCorreoElectrónico}},OU=Móvil,O=Departamento financiero,L=Redmond,ST=Washington,C=US
-
-    > En este ejemplo, el administrador crea un formato de nombre de sujeto que, además de las variables `CN` y `E`, usa cadenas para los valores Unidad organizativa, Organización, Ubicación, Estado y País. [La función CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) muestra las cadenas admitidas.
-
-4.  Seleccione **Guardar directiva**.
+4. Seleccione **Guardar directiva**.
 
 La nueva directiva aparece en el área de trabajo **Directiva**. Ya puede implementarla.
 
 ### <a name="to-create-a-pfx-certificate-profile"></a>Para crear un perfil de certificado .PFX
 
-1.  En la [consola de administración de Intune](https://manage.microsoft.com), seleccione **Directiva** &gt; **Agregar directiva** y elija una plataforma de dispositivo. Se permiten los certificados .PFX para:
-  - Android 4 y versiones posteriores
-  - Android for Work
-  - Windows 10 y versiones posteriores
-  - Windows Phone 10 y versiones posteriores
-  - iOS 8.0 y versiones posteriores    
+1. En la [consola de administración de Intune](https://manage.microsoft.com), seleccione **Directiva** &gt; **Agregar directiva** y elija una plataforma de dispositivo. Se permiten los certificados .PFX para:
+   - Android 4 y versiones posteriores
+   - Android for Work
+   - Windows 10 y versiones posteriores
+   - Windows Phone 10 y versiones posteriores
+   - iOS 8.0 y versiones posteriores    
 
 
-2.  Agregue una directiva **Perfil de certificado .PFX**.
-      Más información: [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
-3.  Escriba la información solicitada en el formulario de directiva.
-4.  Elija **Guardar directiva**.
+2. Agregue una directiva **Perfil de certificado .PFX**.
+     Más información: [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md).
+3. Escriba la información solicitada en el formulario de directiva.
+4. Elija **Guardar directiva**.
 
 La nueva directiva aparece en el área de trabajo **Directiva**. Ya puede implementarla.
 

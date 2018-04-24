@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1f53796e08ee962a23ab02929c4451478480e281
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4c69dec5903f25b9e7f09f6a20fc35068f3329d4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Solución de problemas con la inscripción de dispositivos en Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 En este tema se proporcionan sugerencias para solucionar problemas de inscripción de dispositivos. Si esta información no soluciona el problema, vea [How to get support for Microsoft Intune](how-to-get-support-for-microsoft-intune.md) (Cómo obtener soporte técnico para Microsoft Intune) para conocer otras formas de obtener ayuda.
 
@@ -87,9 +87,9 @@ Los administradores pueden eliminar dispositivos en el portal de Azure Active Di
 8.  Quite los dispositivos que crea oportunos, como por ejemplo aquellos que ya no estén en uso o que tienen definiciones inexactas.
 
 > [!NOTE]
-
+> 
 > Puede evitar llegar al límite de inscripciones de dispositivos mediante el uso de l cuenta de administradores de inscripción de dispositivos, tal como se describe en [Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) (Inscribir dispositivos propiedad de la empresa con el administrador de inscripción de dispositivos de Microsoft Intune).
->
+> 
 > Si agrega una cuenta de usuario a la cuenta de administradores de inscripción de dispositivos, esta no podrá realizar la inscripción al aplicarse la directiva de acceso condicional cuando ese usuario en cuestión inicie sesión.
 
 ### <a name="company-portal-temporarily-unavailable"></a>El Portal de empresa no está disponible temporalmente
@@ -154,7 +154,7 @@ Los administradores pueden eliminar dispositivos en el portal de Azure Active Di
 **Problema:** es posible que, al agregar un segundo dominio comprobado a AD FS, los usuarios con el sufijo del nombre principal de usuario (UPN) del segundo dominio no puedan iniciar sesión en los portales o inscribir dispositivos.
 
 
-**Solución:** los clientes de Microsoft Office 365 que usan el inicio de sesión único (SSO) a través de AD FS 2.0 y que tienen varios dominios de nivel superior para los sufijos UPN de los usuarios de su organización (por ejemplo, @contoso.com o @fabrikam.com) deben implementar una instancia independiente del servicio de federación de AD FS 2.0 para cada sufijo. Ahora hay una [acumulación para AD FS 2.0](http://support.microsoft.com/kb/2607496) que funciona con el conmutador **SupportMultipleDomain** para permitir que el servidor de AD FS admita este escenario sin necesidad de servidores de AD FS 2.0 adicionales. Vea [este blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) para más información.
+<strong>Solución:</strong> los clientes de Microsoft Office 365 que usan el inicio de sesión único (SSO) a través de AD FS 2.0 y que tienen varios dominios de nivel superior para los sufijos UPN de los usuarios de su organización (por ejemplo, @contoso.com o @fabrikam.com) deben implementar una instancia independiente del servicio de federación de AD FS 2.0 para cada sufijo. Ahora hay una [acumulación para AD FS 2.0](http://support.microsoft.com/kb/2607496) que funciona con el conmutador <strong>SupportMultipleDomain</strong> para permitir que el servidor de AD FS admita este escenario sin necesidad de servidores de AD FS 2.0 adicionales. Vea [este blog](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/) para más información.
 
 
 ## <a name="android-issues"></a>Problemas de Android
@@ -195,27 +195,27 @@ Si no funciona la solución 2, pida a los usuarios que sigan estos pasos para qu
 
 1. Inicie la aplicación Smart Manager en el dispositivo.
 
-  ![Selección del icono de Smart Manager en el dispositivo](./media/smart-manager-app-icon.png)
+   ![Selección del icono de Smart Manager en el dispositivo](./media/smart-manager-app-icon.png)
 
 2. Elija el icono **Battery** (Batería).
 
-  ![Selección del icono de batería](./media/smart-manager-battery-tile.png)
+   ![Selección del icono de batería](./media/smart-manager-battery-tile.png)
 
 3. En **App power saving** (Ahorro de energía de aplicaciones) o **App optimization** (Optimización de aplicaciones), seleccione **Detail** (Detalle).
 
-  ![Selección de Detalles en la opción de ahorro de energía u optimización de aplicaciones](./media/smart-manager-app-power-saving-detail.png)
+   ![Selección de Detalles en la opción de ahorro de energía u optimización de aplicaciones](./media/smart-manager-app-power-saving-detail.png)
 
 4. Elija **Company Portal** (Portal de empresa) en la lista de aplicaciones.
 
-  ![Selección del Portal de empresa en la lista de aplicaciones](./media/smart-manager-company-portal.png)
+   ![Selección del Portal de empresa en la lista de aplicaciones](./media/smart-manager-company-portal.png)
 
 5. Elija **Turned off** (Desactivado).
 
-  ![Selección de Desactivado en el cuadro de diálogo de optimización de aplicaciones](./media/smart-manager-app-optimization-turned-off.png)
+   ![Selección de Desactivado en el cuadro de diálogo de optimización de aplicaciones](./media/smart-manager-app-optimization-turned-off.png)
 
 6. En **App power saving** (Ahorro de energía de aplicaciones) o **App optimization** (Optimización de aplicaciones), confirme que el Portal de empresa está desactivado.
 
-  ![Comprobación de que el Portal de empresa está desactivado](./media/smart-manager-verify-comp-portal-turned-off.png)
+   ![Comprobación de que el Portal de empresa está desactivado](./media/smart-manager-verify-comp-portal-turned-off.png)
 
 
 ### <a name="profile-installation-failed"></a>Error de instalación de perfil

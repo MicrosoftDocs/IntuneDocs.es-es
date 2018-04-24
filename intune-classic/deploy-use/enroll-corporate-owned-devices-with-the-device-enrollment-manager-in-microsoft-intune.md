@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 0f9ecb8cf16d8c344ea595c53ab91c9b1f00c90e
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 4973e896109589a91891545bbf6db6ca6df45aad
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune"></a>Inscripción de dispositivos propiedad de la empresa con el Administrador de inscripción de dispositivos de Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Las organizaciones pueden usar Intune para administrar un gran número de dispositivos móviles con una sola cuenta de usuario. La cuenta del *administrador de inscripción de dispositivos (DEM)* es una cuenta de usuario especial de Intune con permisos para inscribir hasta 1000 dispositivos. Agregue usuarios existentes a la cuenta del DEM para proporcionarles capacidades de DEM especiales. Cada dispositivo inscrito usa una sola licencia. Recomendamos que use dispositivos inscritos mediante esta cuenta como dispositivos compartidos (es decir, sin afinidad de usuario) en lugar de dispositivos personales (“BYOD”).  
 
@@ -67,22 +67,22 @@ Los dispositivos inscritos con una cuenta de administrador de inscripción de di
 
 ## <a name="add-a-device-enrollment-manager"></a>Agregar un administrador de inscripción de dispositivos
 
-1.  Asegúrese de que el usuario que desea agregar a la cuenta DEM ya existe. Si necesita agregar el usuario, inicie sesión en el [Portal de Office 365](https://go.microsoft.com/fwlink/p/?LinkId=698854) y siga los pasos de [Agregar usuarios individualmente o en masa en el Portal de Office 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
+1. Asegúrese de que el usuario que desea agregar a la cuenta DEM ya existe. Si necesita agregar el usuario, inicie sesión en el [Portal de Office 365](https://go.microsoft.com/fwlink/p/?LinkId=698854) y siga los pasos de [Agregar usuarios individualmente o en masa en el Portal de Office 365](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec).
 
-2.  Inicie sesión en la [consola de administración de Microsoft Intune](https://manage.microsoft.com) con sus credenciales de administrador.
+2. Inicie sesión en la [consola de administración de Microsoft Intune](https://manage.microsoft.com) con sus credenciales de administrador.
 
-3.  En el panel de navegación, elija **Administración**, vaya a **Administración de administradores** y seleccione **Administrador de inscripción de dispositivos**. Se abre la página **Administradores de inscripción de dispositivos**.
+3. En el panel de navegación, elija **Administración**, vaya a **Administración de administradores** y seleccione **Administrador de inscripción de dispositivos**. Se abre la página **Administradores de inscripción de dispositivos**.
 
-4.  Elija **Agregar...**. Se abre el cuadro de diálogo **Agregar administrador de inscripción de dispositivos** .
+4. Elija **Agregar...**. Se abre el cuadro de diálogo **Agregar administrador de inscripción de dispositivos** .
 
-5.  Escriba el **Id. de usuario** de la cuenta de Intune y, después, elija **Aceptar**.
+5. Escriba el **Id. de usuario** de la cuenta de Intune y, después, elija **Aceptar**.
 
-    El usuario DEM puede ahora inscribir dispositivos móviles mediante el mismo procedimiento que un usuario final usa para un escenario de BYOD en el portal de empresa. El usuario final de administrador puede instalar la aplicación de Portal de empresa e inscribir el dispositivo utilizando sus credenciales DEM en hasta 1000 dispositivos. Para los pasos de inscripción del usuario final para cada plataforma, consulte:
+   El usuario DEM puede ahora inscribir dispositivos móviles mediante el mismo procedimiento que un usuario final usa para un escenario de BYOD en el portal de empresa. El usuario final de administrador puede instalar la aplicación de Portal de empresa e inscribir el dispositivo utilizando sus credenciales DEM en hasta 1000 dispositivos. Para los pasos de inscripción del usuario final para cada plataforma, consulte:
 
-  - [Inscribir el dispositivo iOS en Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)
-  - [Inscribir el dispositivo macOS en Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)
-  - [Inscribir el dispositivo Android en Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)
-  - [Inscribir el dispositivo Windows en Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)
+   - [Inscribir el dispositivo iOS en Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios)
+   - [Inscribir el dispositivo macOS en Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)
+   - [Inscribir el dispositivo Android en Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-android)
+   - [Inscribir el dispositivo Windows en Intune](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows)
 
 ## <a name="delete-a-device-enrollment-manager-from-intune"></a>Eliminar un administrador de inscripción de dispositivos de Intune
 

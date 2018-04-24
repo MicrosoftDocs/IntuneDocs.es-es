@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9c3da7d517bd26bf694ea7bfa658ec1a4688d8f8
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 93dece592ce5280b1650303484bd24169814465c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="exchange-access-rules-for-mobile-devices"></a>Reglas de acceso a Exchange para dispositivos móviles
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Las reglas de acceso a Exchange para dispositivos móviles determinan el nivel de acceso que dichos dispositivos tienen a Exchange ActiveSync. Esta configuración afecta a todos los dispositivos móviles, incluidos los que no están inscritos en Microsoft Intune. Puede empezar por definir una **Regla predeterminada** que se aplique a cualquier dispositivo móvil al que no se le aplique una regla personalizada.
 
@@ -37,11 +37,13 @@ La tabla siguiente contiene los niveles de acceso administrados por Exchange Act
 
 Una estrategia de acceso es una combinación de una **Regla predeterminada** y de **Excepciones de plataforma** que se aplican a todos los dispositivos móviles conectados a Exchange. En la tabla siguiente se enumeran algunas estrategias de acceso de ejemplo.
 
-|Estrategia de acceso|Descripción|
-|-------------------|---------------|
-|Lista de admisión|Puede usar una *lista de permitidos* para conceder acceso a una lista de dispositivos conocidos y restringir el acceso a los demás dispositivos. Para ello, debe crear reglas personalizadas para las plataformas de dispositivos que pueden tener acceso al buzón de correo de un usuario. Tan pronto como cree dicha regla, debe establecer la regla de acceso predeterminada para bloquear o poner en cuarentena el resto de dispositivos. Para agregar un dispositivo nuevo a la lista de permitidos, cree una regla personalizada.|
-|Lista de bloqueo|Puede usar una *lista de bloqueados* para conceder acceso de forma predeterminada a todos los dispositivos y bloquear un conjunto de dispositivos que no quiere que accedan a su organización. Para crear una lista de bloqueados, debe crear reglas personalizadas para bloquear las plataformas de dispositivos que no quiere sincronizar con los buzones de la organización. Se recomienda que establezca la regla predeterminada de forma que permita el acceso a todos los dispositivos que no estén explícitamente bloqueados por las reglas existentes. Para agregar un nuevo dispositivo o un conjunto de dispositivos a la lista de bloqueo, cree una nueva regla personalizada.|
-|Admisión y bloqueo mixto|Además de crear listas de admisión y bloqueo, puede poner en cuarentena nuevos dispositivos móviles a medida que se introducen en la organización en el momento de la evaluación. Por ejemplo, si tiene una lista de bloqueo de dispositivos móviles no permitidos en su organización y una lista de admisión de dispositivos móviles permitidos en su organización, puede establecer la regla predeterminada en cuarentena. El resto de los dispositivos se pone en cuarentena automáticamente, lo que le permitirá detectar los dispositivos nuevos a medida que se introducen en la organización y decidir si los agrega a la lista de permitidos o de bloqueados.|
+
+|    Estrategia de acceso    |                                                                                                                                                                                                                                                                                       Descripción                                                                                                                                                                                                                                                                                        |
+|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|      Lista de admisión       |                                                                                  Puede usar una <em>lista de permitidos</em> para conceder acceso a una lista de dispositivos conocidos y restringir el acceso a los demás dispositivos. Para ello, debe crear reglas personalizadas para las plataformas de dispositivos que pueden tener acceso al buzón de correo de un usuario. Tan pronto como cree dicha regla, debe establecer la regla de acceso predeterminada para bloquear o poner en cuarentena el resto de dispositivos. Para agregar un dispositivo nuevo a la lista de permitidos, cree una regla personalizada.                                                                                  |
+|      Lista de bloqueo       |                              Puede usar una <em>lista de bloqueados</em> para conceder acceso de forma predeterminada a todos los dispositivos y bloquear un conjunto de dispositivos que no quiere que accedan a su organización. Para crear una lista de bloqueados, debe crear reglas personalizadas para bloquear las plataformas de dispositivos que no quiere sincronizar con los buzones de la organización. Se recomienda que establezca la regla predeterminada de forma que permita el acceso a todos los dispositivos que no estén explícitamente bloqueados por las reglas existentes. Para agregar un nuevo dispositivo o un conjunto de dispositivos a la lista de bloqueo, cree una nueva regla personalizada.                               |
+| Admisión y bloqueo mixto | Además de crear listas de admisión y bloqueo, puede poner en cuarentena nuevos dispositivos móviles a medida que se introducen en la organización en el momento de la evaluación. Por ejemplo, si tiene una lista de bloqueo de dispositivos móviles no permitidos en su organización y una lista de admisión de dispositivos móviles permitidos en su organización, puede establecer la regla predeterminada en cuarentena. El resto de los dispositivos se pone en cuarentena automáticamente, lo que le permitirá detectar los dispositivos nuevos a medida que se introducen en la organización y decidir si los agrega a la lista de permitidos o de bloqueados. |
+
 El siguiente procedimiento describe cómo crear una regla personalizada.
 
 ## <a name="create-a-default-access-rule"></a>Crear una regla de acceso predeterminada

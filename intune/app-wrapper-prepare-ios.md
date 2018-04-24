@@ -1,28 +1,28 @@
 ---
 title: Ajuste de aplicaciones iOS con la herramienta de ajuste de aplicaciones de Intune
-description: "Obtenga información sobre cómo ajustar las aplicaciones iOS sin modificar el código de la propia aplicación. Prepare las aplicaciones de modo que pueda aplicar las directivas de administración de aplicaciones móviles."
-keywords: 
+description: Obtenga información sobre cómo ajustar las aplicaciones iOS sin modificar el código de la propia aplicación. Prepare las aplicaciones de modo que pueda aplicar las directivas de administración de aplicaciones móviles.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c9329c25d6211149102c06b44fdb6d6222b13550
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: e8e2783be3c515aa742a3adc149304e0a2ae3b99
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicaciones iOS para directivas de protección de aplicaciones con la herramienta de ajuste de aplicaciones de Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Use la herramienta de ajuste de aplicaciones de Microsoft Intune para iOS para habilitar las directivas de protección de aplicaciones de Intune para aplicaciones iOS internas sin cambiar el código de la propia aplicación.
 
@@ -98,48 +98,48 @@ Necesitará lo siguiente para distribuir aplicaciones ajustadas con Intune:
 
 4. Haga clic en **Certificates, IDs & Profiles (Certificados, identificadores y perfiles)**.
 
-  ![Portal de Apple Developer](./media/iOS-signing-cert-1.png)
+   ![Portal de Apple Developer](./media/iOS-signing-cert-1.png)
 
 5. Haga clic en la pestaña ![Signo más del Portal de Apple Developer](./media/iOS-signing-cert-2.png) en la esquina superior derecha para agregar un certificado iOS.
 
 6. Pulse para crear un certificado **interno y ad hoc** en **Producción**.
 
-  ![Seleccionar certificado interno y ad hoc](./media/iOS-signing-cert-3.png)
+   ![Seleccionar certificado interno y ad hoc](./media/iOS-signing-cert-3.png)
 
-  >[!NOTE]
-  >Si no planea distribuir la aplicación y solo quiere probarla internamente, puede usar un certificado de desarrollo de aplicaciones de iOS en lugar de un certificado para producción. Si usa un certificado de desarrollo, asegúrese de que el perfil móvil de aprovisionamiento haga referencia a los dispositivos en los que se instalará la aplicación.
+   >[!NOTE]
+   >Si no planea distribuir la aplicación y solo quiere probarla internamente, puede usar un certificado de desarrollo de aplicaciones de iOS en lugar de un certificado para producción. Si usa un certificado de desarrollo, asegúrese de que el perfil móvil de aprovisionamiento haga referencia a los dispositivos en los que se instalará la aplicación.
 
 7. Haga clic en **Siguiente** en la parte inferior de la página.
 
 8. Lea las instrucciones sobre la creación de una **solicitud de firma de certificado (CSR)** con la aplicación Acceso a llaves en su equipo macOS.
 
-  ![Leer instrucciones para crear una CSR](./media/iOS-signing-cert-4.png)
+   ![Leer instrucciones para crear una CSR](./media/iOS-signing-cert-4.png)
 
 9. Siga las instrucciones anteriores para crear una solicitud de firma de certificado. En su equipo macOS, inicie la aplicación **Acceso a llaves**.
 
 10. En el menú de macOS en la parte superior de la pantalla, vaya a **Acceso a llaves > Asistente de certificado > Request a Certificate From a Certificate Authority (Solicitar un certificado de una entidad de certificación)**.  
 
-  ![Solicitar un certificado de una entidad de certificación en Acceso a llaves](./media/iOS-signing-cert-5.png)
+    ![Solicitar un certificado de una entidad de certificación en Acceso a llaves](./media/iOS-signing-cert-5.png)
 
 11. Siga las instrucciones del sitio de Apple Developer anterior sobre cómo crear un archivo CSR. Guarde el archivo CSR en su equipo macOS.
 
-  ![Solicitar un certificado de una entidad de certificación en Acceso a llaves](./media/iOS-signing-cert-6.png)
+    ![Solicitar un certificado de una entidad de certificación en Acceso a llaves](./media/iOS-signing-cert-6.png)
 
 12. Vuelva al sitio de Apple Developer. Haga clic en **Continue**. Después, cargue el archivo CSR.
 
 13. Apple genera su certificado de firma. Descargue y guárdelo en una ubicación fácil de recordar en su equipo macOS.
 
-  ![Descargar su certificado de firma](./media/iOS-signing-cert-7.png)
+    ![Descargar su certificado de firma](./media/iOS-signing-cert-7.png)
 
 14. Haga doble clic en el archivo de certificado que acaba de descargar para agregar el certificado a una cadena de claves.
 
 15. Abra **Acceso a llaves** de nuevo. Busque su certificado al escribir su nombre en la barra de búsqueda de la parte superior derecha. Haga doble clic en el elemento para que aparezca el menú y haga clic en **Obtener información**. En las pantallas de ejemplo se está usando un certificado de desarrollo en lugar de un certificado de producción.
 
-  ![Agregar su certificado a una cadena de claves](./media/iOS-signing-cert-8.png)
+    ![Agregar su certificado a una cadena de claves](./media/iOS-signing-cert-8.png)
 
 16. Aparece una ventana informativa. Desplácese a la parte inferior y busque en la etiqueta **Huellas digitales**. Copie la cadena **SHA1** (borrosa) para usarla como argumento para "-c" para la herramienta de ajuste de aplicaciones.
 
-  ![Agregar su certificado a una cadena de claves](./media/iOS-signing-cert-9.png)
+    ![Agregar su certificado a una cadena de claves](./media/iOS-signing-cert-9.png)
 
 
 
@@ -153,7 +153,7 @@ Necesitará lo siguiente para distribuir aplicaciones ajustadas con Intune:
 
 4. Pulse para crear un perfil de aprovisionamiento **interno** en **Distribución**.
 
-  ![Seleccionar el perfil de aprovisionamiento interno](./media/iOS-provisioning-profile-1.png)
+   ![Seleccionar el perfil de aprovisionamiento interno](./media/iOS-provisioning-profile-1.png)
 
 5. Haga clic en **Continue**. Asegúrese de vincular el certificado de firma que se generó anteriormente al perfil de aprovisionamiento.
 
@@ -414,8 +414,8 @@ Siga estos pasos para obtener registros para las aplicaciones ajustadas durante 
 4. Haga clic en el vínculo "Comenzar".
 5. Ahora puede copiar los registros a través del correo electrónico o copiarlos en una ubicación de OneDrive.
 
->[!NOTE]
-La funcionalidad de registro está habilitada para las aplicaciones ajustadas con la versión de Intune App Wrapping Tool 7.1.13 o una posterior.
+> [!NOTE]
+> La funcionalidad de registro está habilitada para las aplicaciones ajustadas con la versión de Intune App Wrapping Tool 7.1.13 o una posterior.
 
 ### <a name="see-also"></a>Vea también
 - [Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles mediante Microsoft Intune](apps-prepare-mobile-application-management.md)</br>

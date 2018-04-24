@@ -1,28 +1,28 @@
 ---
 title: Retirar un PC de Windows
-description: "Cómo retirar un PC de Windows administrado por Intune."
-keywords: 
+description: Cómo retirar un PC de Windows administrado por Intune.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5c916182-d99c-44c5-a779-3f596f261c40
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: f842c983dd06c00574ec660a11bdaef6f41c5aa8
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 99dc86bf20a50710cf1661702d46a3124861a619
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="retire-a-windows-pc"></a>Retirar un PC de Windows
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Use los siguientes pasos para retirar equipos de escritorio que está administrando como PC ejecutando el cliente de software de Intune en ellos. Cuando retira un PC, este se quita de la administración de Intune. No puede restablecer la configuración de fábrica de un PC desde Intune para establecerlo de nuevo con la configuración de fábrica original.
 
@@ -55,6 +55,6 @@ Cuando retira un PC:
 
     Si el cliente de Endpoint Protection no se puede desinstalar, lea [Solucionar problemas de Endpoint Protection](/intune-classic/troubleshoot/troubleshoot-endpoint-protection-in-microsoft-intune) para obtener más ayuda.
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 
 [Tareas comunes de administración de equipos Windows con el cliente de software de Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

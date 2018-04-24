@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8e11ae063bc2cc302af238ab9062da82c6b6c30c
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 058a44d6ef97cbc35786312461c6077bc2feaf3b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="quick-start-guide-simplify-email-configuration-on-mobile-devices"></a>Guía de inicio rápido: Simplificar la configuración de correo electrónico en dispositivos móviles
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune ahorra recursos y tiempo a la empresa, por lo que permite implementar perfiles de correo electrónico (así como de VPN y Wi-Fi) para dispositivos móviles de Windows, iOS y Android administrados por el servicio Intune. Configurar perfiles de correo electrónico automáticamente puede mejorar considerablemente la experiencia del usuario final y mejorar los niveles de satisfacción al mismo tiempo que se reducen los costos de soporte técnico.
 

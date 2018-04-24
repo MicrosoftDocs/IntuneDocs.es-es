@@ -1,27 +1,27 @@
 ---
 title: Uso de un dispositivo iOS con Intune | Microsoft Docs
-description: "Lista de vínculos a tareas que puede realizar en el dispositivo iOS cuando este está inscrito en Intune."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: Lista de vínculos a tareas que puede realizar en el dispositivo iOS cuando este está inscrito en Intune.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 11/06/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 3d648819-b866-412b-bd19-ac4505eb5eaf
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8e6eb579968fe8499b176e58ff50b9d7635aa3c0
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 51bca0c2aa10f15511e1644eda9ca6dd11c36f8b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="using-your-ios-device-with-intune"></a>Usar un dispositivo iOS con Intune
 
@@ -41,7 +41,7 @@ Intune actualmente admite iOS 9.0 y versiones posteriores.
 
 - [Usar aplicaciones administradas en el dispositivo](use-managed-apps-on-your-device-ios.md)
 - [Establecer o cambiar el código de acceso](set-or-change-your-passcode-ios.md)
-<!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
+  <!--- [Reset (erase) your lost or stolen device](reset-erase-your-lost-or-stolen-device-ios.md) -->
 - [Restablecer (borrar) el dispositivo perdido o robado](reset-erase-your-device-cpwebsite.md)
 - [Desactivar la recopilación de datos de uso de Microsoft](turn-off-microsoft-usage-data-collection-ios.md)
 - [Anulación de la inscripción del dispositivo en Intune](unenroll-your-device-from-intune-ios.md)

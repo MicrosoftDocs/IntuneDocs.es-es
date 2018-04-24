@@ -1,25 +1,25 @@
 ---
 title: Tiene que instalar Zimperium zIPS en el dispositivo Android | Microsoft Docs
-description: "Obtenga información sobre cómo instalar Zimperium zIPS en el dispositivo Android."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: Obtenga información sobre cómo instalar Zimperium zIPS en el dispositivo Android.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 09/25/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: eb1884b2-d760-4a14-800b-378a33774a41
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 51db23458ceb3fdb2bb98057255158e045a93170
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: bf6b674750eeaf857fdb7595963d399662893c4d
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
 # <a name="install-zimperium-zips-on-your-android-device"></a>Instalación de Zimperium zIPS en su dispositivo Android
 

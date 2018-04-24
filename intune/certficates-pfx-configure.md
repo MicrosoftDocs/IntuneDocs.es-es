@@ -1,28 +1,28 @@
 ---
 title: 'Uso de certificados PKCS con Microsoft Intune: Azure | Microsoft Docs'
-description: "Agregue o cree certificados de Public Key Cryptography Standards con Microsoft Intune, incluidos los pasos para exportar un certificado raíz, configurar la plantilla de certificado, descargar e instalar Microsoft Intune Certificate Connector, crear un perfil de configuración de dispositivo, crear un perfil de certificado PKCS en Azure y la entidad de certificación"
-keywords: 
+description: Agregue o cree certificados de Public Key Cryptography Standards con Microsoft Intune, incluidos los pasos para exportar un certificado raíz, configurar la plantilla de certificado, descargar e instalar Microsoft Intune Certificate Connector, crear un perfil de configuración de dispositivo, crear un perfil de certificado PKCS en Azure y la entidad de certificación
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
-ms.assetid: 
-ms.reviewer: 
+ms.technology: ''
+ms.assetid: ''
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c0668921f03b24b319c2c37837dbd2cc053370ca
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 0dfcaa2e37fecc4c5a075931489c106b78c17b7e
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>Configuración y uso de certificados PKCS con Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Los certificados se usan para autenticar y proteger el acceso a los recursos corporativos, por ejemplo, una VPN o la red Wi-Fi. En este artículo, se muestra cómo exportar un certificado PKCS y, después, agregarlo a un perfil de Intune. 
 
@@ -56,7 +56,7 @@ Para autenticarse con VPN, Wi-Fi y otros recursos, necesita un certificado de en
 
    Por ejemplo:
 
-4.  Cuando se complete el asistente, pero antes de cerrarlo, haga clic en **Iniciar la UI del conector de certificado**.
+4. Cuando se complete el asistente, pero antes de cerrarlo, haga clic en **Iniciar la UI del conector de certificado**.
 
    `certutil -ca.cert certnew.cer`
 

@@ -14,11 +14,11 @@ ms.assetid: bb940cb9-d43f-45ca-b065-ac0adc61dc6f
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 84ff217361108ac3518567f31af8943d0b3032fe
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: d32c024d6cd526062c373b56dd18bca9480c32fa
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-app-sdk-cordova-plugin"></a>Complemento Cordova del SDK para aplicaciones de Microsoft Intune
 
@@ -72,16 +72,16 @@ Ahora, las aplicaciones Cordova compiladas con el complemento Cordova del SDK pu
 
 1. Actualice su versión de ADAL:
 
-  ```shell
-  cordova plugin remove cordova-plugin-ms-adal
-  cordova plugin add cordova-plugin-ms-adal@0.8.x
-  ```
+   ```shell
+   cordova plugin remove cordova-plugin-ms-adal
+   cordova plugin add cordova-plugin-ms-adal@0.8.x
+   ```
 
 2. Agregue el complemento Cordova del SDK para aplicaciones de Intune:
 
-  ```shell
-  cordova plugin add cordova-plugin-ms-intune-mam
-  ```
+   ```shell
+   cordova plugin add cordova-plugin-ms-intune-mam
+   ```
 
 ## <a name="build-the-plugin-into-your-ios-app"></a>Integrar el complemento en la aplicación iOS
 
@@ -131,7 +131,7 @@ Después de iniciar la aplicación por primera vez, debería ver un cuadro de di
 * La compatibilidad con Multi-Dex está incompleta.
 * La aplicación debe tener `minSdkVersion` de 14 y `targetSdkVersion` de 24 o lo siguiente. Actualmente, Intune no admite aplicaciones destinadas a API 25.
 * Intune no puede volver a firmar aplicaciones firmadas con el esquema de firma V2. Cuando las aplicaciones firmadas V2 se ajustan mediante el complemento, el .apk de salida ajustado estará sin firmar.
-*
+  *
   * Puede deshabilitar la firma V2 predeterminada de Cordova agregando lo siguiente al archivo `build-extras.gradle`:
 
   ```gradle

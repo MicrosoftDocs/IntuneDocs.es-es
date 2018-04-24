@@ -1,30 +1,29 @@
 ---
-title: "Validación de la configuración de la directiva de protección de aplicaciones"
+title: Validación de la configuración de la directiva de protección de aplicaciones
 titleSuffix: Microsoft Intune
-description: "Obtenga información sobre cómo probar si su directiva de protección de aplicaciones está configurada y funciona correctamente."
-keywords: 
+description: Obtenga información sobre cómo probar si su directiva de protección de aplicaciones está configurada y funciona correctamente.
+keywords: ''
 author: erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 980773eb59553c492ac338808476cfb55f2ddfb8
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: ddafe6037cce73c1eca82f2bc78c6197aff9acad
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>Validación de la configuración de la directiva de protección de aplicaciones
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Compruebe que su directiva de protección de aplicaciones esté configurada y funcione correctamente. Esta guía se aplica a las directivas de protección de aplicaciones de Azure Portal.
 
@@ -42,7 +41,7 @@ Si las pruebas muestran que el comportamiento de la directiva de protección de 
 
 #### <a name="user-app-protection-status"></a>Estado de protección de las aplicaciones de los usuarios
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 1. Elija **Administrar aplicaciones** > **Supervisar** >  **Estado de protección de aplicaciones** > **Usuarios asignados**.
 
 2. Elija a un usuario de la lista o bien busque y seleccione a un usuario y elija **Seleccionar usuario**. En la parte superior de la columna **Informes de aplicaciones**, verá si el usuario tiene licencia para la protección de aplicaciones. También puede consultar si el usuario tiene licencia para Office 365, así como el estado de la aplicación para todos los dispositivos del usuario.

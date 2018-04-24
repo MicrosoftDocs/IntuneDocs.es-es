@@ -1,37 +1,37 @@
 ---
-title: "Configuración de directivas de cumplimiento normativo para dispositivos Windows"
+title: Configuración de directivas de cumplimiento normativo para dispositivos Windows
 description: En este tema se describen las reglas y opciones que se pueden configurar para las directivas de cumplimiento de dispositivos Windows.
-keywords: 
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 12/15/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f996842c-e9a4-4819-acb4-ee66e8fb35b8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1c9a59fa97c11794ff8ad0a0eaa41630bfdf847e
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 6a54943873a6af158badb92cef4610e54fc8889b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="compliance-policy-settings-for-windows-devices-in-microsoft-intune"></a>Configuración de directivas de cumplimiento para dispositivos Windows en Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 La configuración de directiva que se describe en este tema se aplica a los dispositivos que ejecuten el sistema operativo Windows. En las secciones siguientes se describen las versiones de Windows compatibles.
 
 Si quiere obtener información sobre otras plataformas, seleccione uno de los siguientes temas:
 > [!div class="op_single_selector"]
-- [Configuración de directivas de cumplimiento normativo para dispositivos iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
-- [Configuración de directivas de cumplimiento para dispositivos Android](android-compliance-policy-settings-in-microsoft-intune.md)
-- [Configuración de directivas de cumplimiento para Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
+> - [Configuración de directivas de cumplimiento normativo para dispositivos iOS](ios-compliance-policy-settings-in-microsoft-intune.md)
+> - [Configuración de directivas de cumplimiento para dispositivos Android](android-compliance-policy-settings-in-microsoft-intune.md)
+> - [Configuración de directivas de cumplimiento para Android for Work](afw-compliance-policy-settings-in-microsoft-intune.md)
 
 ## <a name="compliance-policy-settings-for-windows-phone-devices"></a>Configuración de directivas de cumplimiento para dispositivos Windows Phone
 La configuración que se indica en esta sección se admite en Windows Phone 8.1 y versiones posteriores.
@@ -80,7 +80,7 @@ La configuración que se indica en esta sección se admite en Windows Phone 8.1 
   > Los dispositivos de Windows no admiten software de terceros de **antimalware de inicio temprano** (ELAM) instalado como parte de la atestación de estado del dispositivo.
 
   Para obtener información sobre cómo funciona el servicio HAS, consulte [HealthAttestation CSP](https://msdn.microsoft.com/library/dn934876.aspx).
-###  <a name="device-property-settings"></a>Configuración de propiedades de dispositivo
+  ###  <a name="device-property-settings"></a>Configuración de propiedades de dispositivo
 - **SO mínimo requerido:** cuando un dispositivo no cumpla el requisito de versión de SO mínima, se notificará como no compatible.
     Además, se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario puede optar por actualizar el dispositivo, tras lo cual podrá tener acceso a los recursos de la empresa.
 
@@ -153,4 +153,4 @@ Para buscar la versión de sistema operativo que se usará para las opciones **M
 - Los equipos con Windows 8.1 devuelven la versión **6.3**. Si la regla de la versión de sistema operativo se establece en Windows 8.1 para Windows, el dispositivo se notificará como no conforme aunque tenga Windows 8.1.
 
 - En los equipos que ejecutan Windows 10, la versión debe establecerse en **10.0** más el número de compilación del sistema operativo devuelto por el comando **winver**. Por ejemplo, podría ser similar a 10.0.10586.
-> ![Versión de compilación del sistema operativo resaltada en el cuadro de diálogo "Acerca de Windows"](./media/ca_win10-os-version.png)
+  > ![Versión de compilación del sistema operativo resaltada en el cuadro de diálogo "Acerca de Windows"](./media/ca_win10-os-version.png)

@@ -1,28 +1,28 @@
 ---
-title: "Información general sobre el ciclo de vida de la aplicación para Microsoft Intune"
-description: "Obtenga información sobre el ciclo de vida de las aplicaciones administradas en Microsoft Intune. El ciclo de vida de la aplicación implica agregar, implementar, configurar, proteger y retirar aplicaciones."
-keywords: 
+title: Información general sobre el ciclo de vida de la aplicación para Microsoft Intune
+description: Obtenga información sobre el ciclo de vida de las aplicaciones administradas en Microsoft Intune. El ciclo de vida de la aplicación implica agregar, implementar, configurar, proteger y retirar aplicaciones.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/02/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 60347012-bc3f-4b9a-a4f4-6d3c5021a6e6
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: apps
-ms.openlocfilehash: 732323d1d882a256128ae731cab68656126583b2
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 853873480beb5e95a195e04e251cea9975ce03b4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="overview-of-the-app-lifecycle-in-microsoft-intune"></a>Información general sobre el ciclo de vida de la aplicación en Microsoft Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 El ciclo de vida de la aplicación de Microsoft Intune empieza cuando se agrega una aplicación, se extiende a través de otras fases y termina cuando se quita. Al comprender estas fases, tendrá los detalles que necesita para empezar a trabajar con la administración de aplicaciones de Intune.
 

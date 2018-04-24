@@ -1,27 +1,27 @@
 ---
 title: Quitar un dispositivo del Portal de empresa | Microsoft Docs
 description: Quitar un dispositivo del portal de empresa
-keywords: 
-author: barlanmsft
-ms.author: barlan
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e240419a-a836-4be3-8fd9-39a4ec890226
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4064b18a9553c3818008c0641b9428a03733f7c2
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: c7cd6380cbb596779a3094b18eef4e91b6161871
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>Quitar un dispositivo del Portal de empresa
 
@@ -29,17 +29,17 @@ Si decide que ya no quiere que la empresa o la organización administren el disp
 
 Para quitar el dispositivo:
 
-1.  En el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog), pulse el botón __menú__ ![Pequeña imagen del botón menú, tres barras horizontales apiladas en paralelo.](/Intune/whats-new/media/CP_hamburger_menu.png), luego seleccione __Mis dispositivos__.
+1. En el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog), pulse el botón __menú__ ![Pequeña imagen del botón menú, tres barras horizontales apiladas en paralelo.](/Intune/whats-new/media/CP_hamburger_menu.png), luego seleccione __Mis dispositivos__.
 
-  ![Imagen del sitio web del Portal de empresa con un menú lateral expandido en el lado izquierdo de la pantalla con botones Inicio, Todas las aplicaciones, Mis dispositivos, Departamento de soporte técnico y Cerrar sesión.](/media/iwp-expanded-sidebar.png)
+   ![Imagen del sitio web del Portal de empresa con un menú lateral expandido en el lado izquierdo de la pantalla con botones Inicio, Todas las aplicaciones, Mis dispositivos, Departamento de soporte técnico y Cerrar sesión.](/media/iwp-expanded-sidebar.png)
 
 2. En la página __Mis dispositivos__, seleccione el nombre del dispositivo que quiere quitar.
 
     ![Captura de pantalla de la página Mis dispositivos con un par de dispositivos sin identificar sobre el mensaje emergente para inscribir los dispositivos que no figuran en la lista o para identificar los no identificados.](./media/macOS_enroll_002_tap_here_banner.png)
 
-3.  El dispositivo se abrirá en una ventana emergente. Pulse el botón **Quitar**.
+3. El dispositivo se abrirá en una ventana emergente. Pulse el botón **Quitar**.
 
-    ![Todas las opciones de un dispositivo seleccionado en el sitio web del Portal de empresa, incluidas Cambiar nombre, Quitar, Restablecer dispositivo, Restablecer código de acceso y Bloqueo remoto. ](./media/iwp-screen-with-all-options.png)
+   ![Todas las opciones de un dispositivo seleccionado en el sitio web del Portal de empresa, incluidas Cambiar nombre, Quitar, Restablecer dispositivo, Restablecer código de acceso y Bloqueo remoto. ](./media/iwp-screen-with-all-options.png)
 
 4. Lea el mensaje de advertencia y después pulse **Quitar** para quitar el dispositivo del portal de empresa.
 

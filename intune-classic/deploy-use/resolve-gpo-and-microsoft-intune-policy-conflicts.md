@@ -1,28 +1,28 @@
 ---
 title: Resolver conflictos de directivas de Intune y GPO
-description: "Obtenga información acerca de cómo resolver los conflictos entre las directivas de configuración de directiva de grupo e Intune."
-keywords: 
+description: Obtenga información acerca de cómo resolver los conflictos entre las directivas de configuración de directiva de grupo e Intune.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: e76af5b7-e933-442c-a9d3-3b42c5f5868b
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9764a1fec44ff5aae7ebcf63b3ebde252bb687f9
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: f6d12dd886fe475161e767e63177313a729e170d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>Resolver conflictos de directivas de Microsoft Intune y objetos de directiva de grupo (GPO)
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Intune usa directivas que le ayudan a administrar la configuración en equipos Windows. Por ejemplo, puede usar una directiva para controlar la configuración de Firewall de Windows en los equipos. Muchas de las opciones de Intune son similares a las opciones que se pueden configurar con la directiva de grupo de Windows. Pero es posible que, en ocasiones, los dos métodos entren en conflicto.
 
@@ -116,5 +116,5 @@ Puede aplicar los GPO únicamente a los grupos de seguridad especificados en el 
 
 El nuevo grupo de seguridad debe mantenerse inscrito en los cambios del servicio de Intune.
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 [Administrar equipos Windows con Microsoft Intune](manage-windows-pcs-with-microsoft-intune.md)

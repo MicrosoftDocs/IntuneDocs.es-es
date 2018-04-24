@@ -14,26 +14,26 @@ ms.assetid: ed9250aa-e894-4eac-92b8-5f1a3748e255
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: dagerrit
 ms.custom: intune-classic EXPIERIMENT
-ms.openlocfilehash: c9744358afca288978e14b4ec9967a52100076f1
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: c7e750d308c4167dd6e99f503ed52d3a96ea630b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="choose-how-to-enroll-mobile-devices"></a>Elegir cómo inscribir dispositivos móviles
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Las respuestas a la siguiente serie de preguntas le servirán para saber cuál es el mejor método de inscripción de los dispositivos bajo su administración.
 
 ## <a name="how-will-you-manage-shared-ios-devices"></a>**¿Cómo se administran los dispositivos iOS compartidos?**
 
 > [!div class="button"]
-[Inscripción de DEP de iOS >](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
+> [Inscripción de DEP de iOS >](/intune-classic/deploy-use/ios-device-enrollment-program-in-microsoft-intune)
 > [!div class="button"]
-[Inscripción directa de iOS >](/intune-classic/deploy-use/ios-direct-enrollment-in-microsoft-intune)
+> [Inscripción directa de iOS >](/intune-classic/deploy-use/ios-direct-enrollment-in-microsoft-intune)
 > [!div class="button"]
-[Inscripción de DEM >](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
+> [Inscripción de DEM >](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune)
 
   - **Programa de inscripción de dispositivos (DEP) de Apple:** los dispositivos iOS adquiridos o administrados con DEP se pueden inscribir con un perfil de inscripción. Cuando esos dispositivos se encienden por primera vez, descargan el perfil de DEP y se inscriben con ese perfil de DEP.
 
@@ -42,4 +42,4 @@ Las respuestas a la siguiente serie de preguntas le servirán para saber cuál e
   - **Administrador de inscripción de dispositivos:** el administrador de inscripción de dispositivos (DEM) de Intune permite a un administrador inscribir varios dispositivos móviles con una sola cuenta de usuario. Estos dispositivos no pueden tener afinidad de usuario (es decir, usuarios dedicados) y, para inscribirlos, la instalación y el inicio de sesión deben realizarse en la aplicación Portal de empresa.
 
 > [!div class="button"]
-[< Atrás](choose-how-to-enroll-devices3.md)
+> [< Atrás](choose-how-to-enroll-devices3.md)

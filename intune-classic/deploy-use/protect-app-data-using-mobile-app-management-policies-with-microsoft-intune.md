@@ -1,29 +1,29 @@
 ---
-title: "Protección de datos de aplicaciones mediante directivas de MAM"
-description: "En este tema se explica cómo pueden ayudar las directivas de administración de aplicaciones móviles a proteger los datos de su empresa, evitar la pérdida de datos y separar la información personal y profesional."
-keywords: 
+title: Protección de datos de aplicaciones mediante directivas de MAM
+description: En este tema se explica cómo pueden ayudar las directivas de administración de aplicaciones móviles a proteger los datos de su empresa, evitar la pérdida de datos y separar la información personal y profesional.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 11/14/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: ab6cd622-b738-4a63-9c91-56044aaafa6d
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e5f9eb33ca877fba0d59cfd9ddbc23f5eb2cd05c
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: dcdee874e42aa9511c09fda43a8cc662afaea38a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-app-data-using-app-protection-policies-with-microsoft-intune"></a>Proteger datos de aplicaciones mediante directivas de protección de aplicaciones con Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="how-you-can-protect-app-data"></a>Cómo puede proteger los datos de la aplicación
 Los empleados usan dispositivos móviles para tareas personales y de trabajo. Mientras se asegura de que los empleados pueden ser productivos, también puede evitar la pérdida de datos, ya sea intencional o involuntaria.  Además, desea tener la capacidad de proteger datos de la compañía a los que los empleados obtienen acceso mediante el uso de dispositivos que no administra.
@@ -57,7 +57,7 @@ Hay otras ventajas derivadas del uso de MDM con directivas de protección de apl
 - **Las directivas de protección de aplicaciones garantizan que las protecciones de la capa de aplicaciones estén establecidas.** Por ejemplo, puede tener una directiva que requiera un PIN para abrir una aplicación en un contexto de trabajo, evitar que los datos se compartan entre aplicaciones o evitar que los datos de la aplicación de la compañía se guarden en una ubicación de almacenamiento personal.
 
 ## <a name="devices-that-support-mam"></a>Dispositivos que admiten MAM
-La compatibilidad de plataformas de directivas de protección de aplicaciones de Intune está alineada con la compatibilidad de plataformas de aplicaciones de Office. Para más información, vea [Requisitos del sistema de Office](https://products.office.com/en-US/office-system-requirements).
+La compatibilidad de plataformas de directivas de Intune App Protection está alineada con la compatibilidad de plataformas de aplicaciones de Office. Para más información, vea [Requisitos del sistema de Office](https://products.office.com/en-US/office-system-requirements).
 
 >[!NOTE]
 >Los dispositivos de Windows no se admiten en MAM sin el escenario de inscripción. En cambio, cuando inscribe los dispositivos Windows 10 en Intune, puede usar Windows Information Protection, ya que ofrece una funcionalidad similar. Para obtener más información, vea [Protege los datos de su empresa con Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).

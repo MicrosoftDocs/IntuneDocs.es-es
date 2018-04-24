@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ae0acf53a4987dac21e576826477d32da1f56155
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 2e3e71f52979f6285a14c5cc4fe26ea912cb3a42
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="azure-portal-for-intune-app-protection-policies"></a>Azure Portal para directivas de protección de aplicaciones de Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Azure Portal se utiliza para crear y administrar directivas de protección de aplicaciones para:
 
@@ -32,9 +32,9 @@ Azure Portal se utiliza para crear y administrar directivas de protección de ap
 - Aplicaciones que se ejecutan en dispositivos **no inscritos** en ninguna solución de MDM
 - Aplicaciones que se ejecutan en dispositivos **inscritos en una solución de MDM de terceros**.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Azure Portal es la nueva consola de administración para crear directivas de protección de aplicaciones, pero también puede crear una directiva de protección de aplicaciones que admita aplicaciones para dispositivos inscritos en Intune mediante el uso de la [consola de administración de Intune](configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md) para escenarios MDM.
-
+> 
 > Es posible que no vea todas las opciones de configuración de las directivas de protección de aplicaciones disponibles en la consola de administración de Intune. Además, si crea directivas de protección de aplicaciones en la consola de administración de Intune y en Azure Portal, las directivas creadas en Azure Portal invalidarán aquellas creadas en la consola de administración de Intune. En este caso, las directivas de protección de aplicaciones de Azure Portal se aplicarán a las aplicaciones y se implementarán para los usuarios.
 
 

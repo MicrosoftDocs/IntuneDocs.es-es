@@ -1,28 +1,28 @@
 ---
-title: "Aplicaciones Android con directivas de protección de aplicaciones"
-description: "En este tema se describe qué esperar cuando la aplicación está administrada por directivas de protección de aplicaciones."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Aplicaciones Android con directivas de protección de aplicaciones
+description: En este tema se describe qué esperar cuando la aplicación está administrada por directivas de protección de aplicaciones.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 02/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 53c8e2ad-f627-425b-9adc-39ca69dbb460
 ms.reviewer: tisilver
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 738f747c06f8ad7e6deb90908c2b4b653bad63e3
-ms.sourcegitcommit: 6d69403266dbcb31c879432719798935c94917fa
+ms.openlocfilehash: 88fa0d58bc982148b44233e7486a4ce0a2e8598a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-to-expect-when-your-android-app-is-managed-by-app-protection-policies"></a>Qué esperar cuando la aplicación Android está administrada por directivas de protección de aplicaciones
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 En este artículo se describe la experiencia del usuario con aplicaciones con directivas de protección de aplicaciones. Las directivas de protección de aplicaciones solo se aplican cuando se usan aplicaciones en el contexto laboral, por ejemplo, cuando el usuario accede a las aplicaciones con una cuenta profesional o a archivos que están almacenados en una ubicación de OneDrive para la Empresa.
 

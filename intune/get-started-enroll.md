@@ -1,25 +1,25 @@
 ---
-title: "Comprender la experiencia de inscripción de dispositivos iOS"
+title: Comprender la experiencia de inscripción de dispositivos iOS
 titlesuffix: Microsoft Intune
-description: "Obtenga información sobre la inscripción mediante esta experiencia de inscripción completa para un dispositivo iOS."
-keywords: 
+description: Obtenga información sobre la inscripción mediante esta experiencia de inscripción completa para un dispositivo iOS.
+keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 10/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b595848d-c451-43ab-812d-b22e0170fb7a
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 18a3225ef81d7f13b8656326540e30cf5ee07f1e
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: a31722bbaf43b099c42673e4a807a8e896bf1fd2
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="understand-the-users-experience-enrolling-an-ios-device"></a>Comprender la experiencia del usuario al inscribir un dispositivo iOS
 

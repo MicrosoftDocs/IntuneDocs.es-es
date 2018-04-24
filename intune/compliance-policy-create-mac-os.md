@@ -1,31 +1,31 @@
 ---
-title: "Creación de una directiva de cumplimiento para dispositivos macOS en Microsoft Intune"
-titleSuffix: 
+title: Creación de una directiva de cumplimiento para dispositivos macOS en Microsoft Intune
+titleSuffix: ''
 description: Cree una directiva de cumplimiento de dispositivos de Microsoft Intune para dispositivos macOS para poder especificar los requisitos que debe cumplir un dispositivo para que sea compatible.
-keywords: 
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e7703b8ea26d6ce53b82e806a78c788d14ae05b4
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d6252680e64067e6d12530e0226632a1c5db7d28
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-device-compliance-policy-for-macos-devices-with-intune"></a>Creación de una directiva de cumplimiento para dispositivos macOS con Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Una directiva de cumplimiento de dispositivos de Intune para macOS especifica las reglas y la configuración que los dispositivos macOS deben cumplir para que se consideren compatibles. Estas directivas se pueden usar con el acceso condicional para permitir o bloquear el acceso a recursos de la empresa, y se pueden obtener informes de dispositivos y realizar acciones en caso de incumplimiento. Las directivas de cumplimiento de dispositivos para cada plataforma se crean en el portal de Azure de Intune.
+Una directiva de cumplimiento de dispositivos de Intune para macOS especifica las reglas y la configuración que los dispositivos macOS deben cumplir para que se consideren compatibles. Estas directivas se pueden usar con el acceso condicional para permitir o bloquear el acceso a recursos de la empresa, y se pueden obtener informes de dispositivos y realizar acciones en caso de incumplimiento. Las directivas de cumplimiento de dispositivos para cada plataforma se crean en Azure Portal de Intune.
 
 ## <a name="before-you-begin"></a>Antes de comenzar
 

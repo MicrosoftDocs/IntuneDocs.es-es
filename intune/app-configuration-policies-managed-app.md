@@ -1,29 +1,29 @@
 ---
-title: "Directivas de configuración para aplicaciones administradas sin inscripción de dispositivos"
+title: Directivas de configuración para aplicaciones administradas sin inscripción de dispositivos
 titlesuffix: Microsoft Intune
-description: "Obtenga información sobre cómo configurar directivas para aplicaciones administradas sin inscripción de dispositivos."
-keywords: 
+description: Obtenga información sobre cómo configurar directivas para aplicaciones administradas sin inscripción de dispositivos.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/05/2018
+ms.date: 02/22/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 384804029ecbf403f526144136dc187212e6cf4a
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 398cd85b6f1dd238aa591ab0d5bb1b0d065a21ae
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Agregar directivas de configuración para aplicaciones administradas sin inscripción de dispositivos
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Puede usar directivas de configuración de aplicaciones con aplicaciones administradas que admiten Intune App SDK incluso en los dispositivos que no están inscritos. 
 

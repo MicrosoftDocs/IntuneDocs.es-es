@@ -1,26 +1,26 @@
 ---
-title: "Uso de una configuración de dispositivo personalizada en Microsoft Intune: Azure | Microsoft Docs"
-description: "Agregue o cree un perfil para usar una configuración personalizada para dispositivos iOS, Android y Windows mediante Microsoft Intune"
-keywords: 
+title: 'Uso de una configuración de dispositivo personalizada en Microsoft Intune: Azure | Microsoft Docs'
+description: Agregue o cree un perfil para usar una configuración personalizada para dispositivos iOS, Android y Windows mediante Microsoft Intune
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: adecb332c91f17cf92362295b6b0c81445f5acaf
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: ce7c263435f92a041b93dc5d34ffa912c6fa87fb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-profile-with-custom-settings-in-intune"></a>Crear un perfil con una configuración personalizada en Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Es posible que Intune no tenga toda la configuración integrada que necesita o quiere. O bien, puede que quiera usar un valor disponible en otros perfiles de dispositivo. Para agregar estos valores, cree un perfil de dispositivo y configúrelo con los valores personalizados del dispositivo.
 

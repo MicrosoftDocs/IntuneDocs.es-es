@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 944c5771e00d8e256944fe5767217f138797bde2
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: d5d55f6c3efabdde51b5627d5ddd409c2b282f6c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="general-troubleshooting-tips-for-microsoft-intune"></a>General troubleshooting tips for Microsoft Intune (Sugerencias de solución de problemas generales para Microsoft Intune)
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Después de implementar Microsoft Intune puede encontrar problemas con la configuración o con los dispositivos cliente. Use los recursos siguientes para detectar la causa del problema y poder solucionarlo.
 
@@ -50,13 +50,13 @@ Después de implementar Microsoft Intune puede encontrar problemas con la config
 
 ## <a name="collect-available-data"></a>Recopilar datos disponibles
 
--   Los recursos siguientes pueden ayudarle a obtener información sobre cómo recopilar registros de dispositivo:
+- Los recursos siguientes pueden ayudarle a obtener información sobre cómo recopilar registros de dispositivo:
   - [Enviar registros de datos de diagnóstico al administrador de TI mediante un cable USB](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
   - [Enviar registros de datos de diagnóstico al administrador de TI mediante correo electrónico](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-email-android)
   - [Enviar errores de inscripción de Android al administrador de TI](/intune-user-help/send-enrollment-errors-to-your-it-administrator-android)
   - [Enviar errores de inscripción de iOS al administrador de TI](/intune-user-help/send-errors-to-your-it-admin-ios)
 
--   Con los datos de la consola de administración (por ejemplo, en caso de problemas de implementación de directivas), examine la directiva que quiera y su estado, tal como se describe en [Usar grupos para administrar usuarios y dispositivos en Microsoft Intune](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
+- Con los datos de la consola de administración (por ejemplo, en caso de problemas de implementación de directivas), examine la directiva que quiera y su estado, tal como se describe en [Usar grupos para administrar usuarios y dispositivos en Microsoft Intune](/intune-classic/deploy-use/use-groups-to-manage-users-and-devices-with-microsoft-intune).
 
 ## <a name="research-the-solution"></a>Investigar la solución
 

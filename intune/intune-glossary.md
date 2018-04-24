@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: bd7b5613-ee9f-4dc3-990c-ab4c1d40720d
 ms.custom: intune-azure
-ms.openlocfilehash: f5f413ed050bd5f5620d0e15d5584a7db06eaaff
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 2b59ed38329462ad8d8db604979c8eb725f7973a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-glossary"></a>Glosario de Microsoft Intune
 Descubra las definiciones de los términos habituales que se usan en Microsoft Intune.
@@ -39,11 +39,13 @@ Descubra las definiciones de los términos habituales que se usan en Microsoft I
 |Portal de Azure|Nueva consola de Intune [Más información](/intune/what-is-intune).|
 
 ## <a name="b"></a>B
+
 |||
 |-|-|
 |BYOD|[Bring Your Own Device](/intune/device-enrollment). Los usuarios pueden instalar la aplicación de portal de empresa de Intune en sus dispositivos y, luego, inscribirlos para acceder a recursos de la empresa, como el correo electrónico, aplicaciones de empresa, datos de la compañía y soporte técnico.|
 
 ## <a name="c"></a>C
+
 |||
 |-|-|
 |Perfil de certificado|Use este tipo de directiva para [proteger el acceso a los recursos corporativos](/intune/certificates-configure) con certificados cuando se usan perfiles de Wi-Fi, correo electrónico o VPN.|
@@ -55,6 +57,7 @@ Descubra las definiciones de los términos habituales que se usan en Microsoft I
 |Directiva personalizada|[Use estas directivas](/intune/custom-settings-configure) cuando una directiva de configuración general no tiene una configuración integrada que satisfaga sus necesidades. Puede usar una directiva personalizada para crear una configuración usando otros medios, como OMA-URI o Apple Configurator.|
 
 ## <a name="d"></a>D
+
 |||
 |-|-|
 |Implementación|Acto de enviar una aplicación o una directiva a un dispositivo o un usuario que usted administra. Esta acción se denomina ahora *asignar*.|
@@ -62,6 +65,7 @@ Descubra las definiciones de los términos habituales que se usan en Microsoft I
 |Perfiles de dispositivo|[Estos perfiles](/intune/device-profile-create) le permiten configurar diversos ajustes de seguridad, de características y de acceso en los dispositivos que administra.|
 
 ## <a name="e"></a>E
+
 |||
 |-|-|
 |Perfil de correo electrónico|Esta directiva se puede usar para configurar las [opciones de acceso a correo electrónico](/intune/email-settings-configure) en dispositivos móviles, con lo que se reduce al mínimo la configuración que debe llevar a cabo el usuario final.|
@@ -70,21 +74,25 @@ Descubra las definiciones de los términos habituales que se usan en Microsoft I
 |Inscribir|Microsoft Intune usa la [inscripción](/intune/device-enrollment) para incluir dispositivos en la administración y permitir el acceso a los recursos.|
 
 ## <a name="f"></a>F
+
 |||
 |-|-|
 |FastTrack|[Servicio de Microsoft](https://technet.microsoft.com/library/mt228265.aspx) para usuarios de Intune con 150 licencias en un plan válido. Con este servicio, los especialistas de Microsoft colaboran con los usuarios para ayudarles a empezar a trabajar con Intune.|
 
 ## <a name="g"></a>G
+
 |||
 |-|-|
 |Grupos|Los grupos permiten [reunir de forma lógica usuarios o dispositivos](/intune/groups-get-started). Por ejemplo, puede crear un grupo con todos los equipos Windows. Después, puede asignar perfiles y aplicaciones a estos grupos.|
 
 ## <a name="h"></a>H
+
 |||
 |-|-|
 |Híbrida|Configuración en la que puede administrar dispositivos inscritos con Intune a través de la consola de System Center Configuration Manager.|
 
 ## <a name="i"></a>I
+
 |||
 |-|-|
 |Portal de Azure|Portal de Azure que se usa para la mayoría de las operaciones de administración de Intune.|
@@ -93,11 +101,13 @@ Descubra las definiciones de los términos habituales que se usan en Microsoft I
 |Tema de|Se usa para ver el [hardware y el software instalado](/intune/device-inventory) de los dispositivos administrados.|
 
 ## <a name="k"></a>K
+
 |||
 |-|-|
 |Modo de quiosco|Este modo, configurado como parte de un [perfil de restricción de dispositivos](/intune/device-restrictions-configure), permite bloquear dispositivos. Por ejemplo, podría configurar un dispositivo comercial de modo que solo ejecute algunas aplicaciones.|
 
 ## <a name="m"></a>M
+
 |||
 |-|-|
 |Explorador administrado|[Aplicación de exploración web](/intune/app-configuration-managed-browser) que se puede asignar en la organización mediante Intune. Una directiva de explorador administrado configura una lista de permitidos o una lista de bloqueados que restringe los sitios web que pueden visitar los usuarios del explorador administrado.|
@@ -110,17 +120,20 @@ Descubra las definiciones de los términos habituales que se usan en Microsoft I
 
 
 ## <a name="o"></a>O
+
 |||
 |-|-|
 |OMA-DM|Open Mobile Alliance Device Management. Protocolo de administración de dispositivos estándar del sector que usan muchos fabricantes de hardware para habilitar el control de las características de dispositivos móviles y equipos.|
 |OMA-URI|Open Mobile Alliance Uniform Resource Identifier. Estos elementos identifican los ajustes de dispositivos individuales que cumplen el estándar OMA-DM. La configuración se puede usar en [perfiles personalizados de Intune](/intune/custom-settings-configure) cuando no haya ninguna configuración integrada que satisfaga sus necesidades.|
 
 ## <a name="p"></a>P
+
 |||
 |-|-|
 |Restablecimiento de la contraseña|Característica de Intune que le permite obligar al usuario final a [restablecer el código de acceso](/intune/device-passcode-reset) en dispositivos compatibles.|
 
 ## <a name="r"></a>R
+
 |||
 |-|-|
 |Bloqueo remoto|Característica de Intune que le permite [bloquear dispositivos compatibles](/intune/device-remote-lock), incluso si no es el propietario del dispositivo.|
@@ -128,6 +141,7 @@ Descubra las definiciones de los términos habituales que se usan en Microsoft I
 
 
 ## <a name="s"></a>S
+
 |||
 |-|-|
 |La eliminación de datos selectiva|Un [borrado selectivo](/intune/device-company-data-remove) solo quita los datos de la empresa protegidos por la directiva de protección de aplicaciones incluidas las configuraciones y los perfiles de correo electrónico de un dispositivo. El borrado selectivo deja los datos personales del usuario en el dispositivo.|
@@ -135,6 +149,7 @@ Descubra las definiciones de los términos habituales que se usan en Microsoft I
 |Suscripción|El contrato que especifica que permite tener acceso a un inquilino de Intune.|
 
 ## <a name="t"></a>T
+
 |||
 |-|-|
 |TeamViewer|Aplicación de terceros que funciona con Intune para proporcionar [funcionalidades de asistencia remota](/intune/device-profile-android-teamviewer) para dispositivos Android que gestiona con Intune.|
@@ -142,12 +157,15 @@ Descubra las definiciones de los términos habituales que se usan en Microsoft I
 |términos y condiciones|Tipo de directiva que se asigna en los usuarios con información que estos deben [leer y aceptar](/intune/terms-and-conditions-create) a fin de poder usar el portal de empresa para inscribirse y acceder a su trabajo.|
 
 ## <a name="v"></a>V
+
 |||
 |-|-|
 |Aplicaciones y libros comprados por volumen|Algunas tiendas de aplicaciones permiten comprar varias licencias para una aplicación o reservar las que se quieren usar en la compañía. Intune le ayuda a administrar las aplicaciones y a reservar las que [ha adquirido a través de este tipo de programa](/intune/vpp-apps). Puede importar la información de las licencias del almacén de aplicaciones, realizar el seguimiento del número de licencias que se han utilizado y evitar que los usuarios instalen más copias de la aplicación de las propias.|
 |Perfil de VPN|Directiva que asigna la [configuración de VPN](/intune/vpn-settings-configure) en los dispositivos administrados, reduciendo al mínimo la configuración que deben llevar a cabo los usuarios finales.|
 
 ## <a name="w"></a>W
-|||
-|-|-|
-|Perfil de Wi-Fi|Directiva que asigna la [configuración de red inalámbrica](/intune/wi-fi-settings-configure) en los dispositivos para permitir que los usuarios se conecten a la red de la empresa sin necesidad de que conozcan o configuren las opciones.
+
+|               |                                                                                                                                                                                                 |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Perfil de Wi-Fi | Directiva que asigna la [configuración de red inalámbrica](/intune/wi-fi-settings-configure) en los dispositivos para permitir que los usuarios se conecten a la red de la empresa sin necesidad de que conozcan o configuren las opciones. |
+

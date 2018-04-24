@@ -15,15 +15,15 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d014ae02f3db2ea9175e74f2a867bd12f1d4f22
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: d9557c5f962390a9893109bc6f5175b1e709f7cd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identificar dispositivos como corporativos
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Como administrador de Intune, puede identificar dispositivos como propiedad de la empresa para restringir la identificación y administración. Intune puede realizar tareas de administración adicionales y recopilar información adicional, como el número de teléfono completo y un inventario de las aplicaciones de dispositivos propiedad de la empresa. También puede establecer restricciones de dispositivos para bloquear la inscripción de dispositivos que no sean propiedad de la empresa.
 
@@ -72,7 +72,7 @@ Este archivo .csv, cuando se ve en un editor de texto, aparece como:
 
 1. En [Azure Portal, en Intune](https://portal.azure.com), elija **Inscripción de dispositivos** > **Identificadores de dispositivo corporativos** y, luego, haga clic en **Agregar**.
 
- ![Área de trabajo del identificador de dispositivo corporativo con el botón Agregar resaltado](./media/add-corp-id.png)
+   ![Área de trabajo del identificador de dispositivo corporativo con el botón Agregar resaltado](./media/add-corp-id.png)
 
 2. En la hoja **Agregar identificadores**, especifique el tipo de identificador **IMEI** o **Serie**. Puede especificar la opción **Sobrescribir detalles de identificadores existentes** para los números importados previamente.
 
@@ -97,7 +97,7 @@ Las propiedades del dispositivo muestran **Propiedad** en los registros de Intun
 
 **Para cambiar la propiedad del dispositivo:**
 1. En [Azure Portal, en Intune](https://portal.azure.com), vaya a **Dispositivos** y elija el dispositivo.
-3. Seleccione **Propiedades**.
-4. Establezca **Propiedad del dispositivo** como **Personal** o **Corporativo**.
+2. Seleccione **Propiedades**.
+3. Establezca **Propiedad del dispositivo** como **Personal** o **Corporativo**.
 
-  ![Propiedades del dispositivo con las opciones Categoría de dispositivo y Propiedad del dispositivo](./media/device-properties.png)
+   ![Propiedades del dispositivo con las opciones Categoría de dispositivo y Propiedad del dispositivo](./media/device-properties.png)

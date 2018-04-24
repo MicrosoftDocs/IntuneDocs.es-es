@@ -14,15 +14,15 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: de63fe9476e4fa0f3f85343659538856f2f841d8
-ms.sourcegitcommit: 820f950d1fc80b1eb5db1b0cf77f44d92a969951
+ms.openlocfilehash: 593907c4e57abce1a05d22d9ad8a07a044579285
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicaciones Android para directivas de protección de aplicaciones con la herramienta de ajuste de aplicaciones de Intune
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Use la herramienta de ajuste de aplicaciones de Microsoft Intune para Android para modificar el comportamiento de las aplicaciones Android internas mediante la restricción de características de la aplicación sin modificar el código de la propia aplicación.
 
@@ -62,21 +62,21 @@ Tome nota de la carpeta donde instala la herramienta. La ubicación predetermina
 
 ## <a name="run-the-app-wrapping-tool"></a>Ejecutar la herramienta de ajuste de aplicaciones
 
-1.  En el equipo de Windows donde instaló la herramienta de ajuste de aplicaciones, abra una ventana de PowerShell.
+1. En el equipo de Windows donde instaló la herramienta de ajuste de aplicaciones, abra una ventana de PowerShell.
 
-2.  Desde la carpeta donde instaló la herramienta, importe el módulo de PowerShell de la aplicación de ajuste de aplicaciones:
+2. Desde la carpeta donde instaló la herramienta, importe el módulo de PowerShell de la aplicación de ajuste de aplicaciones:
 
-    ```
-    Import-Module .\IntuneAppWrappingTool.psm1
-    ```
+   ```
+   Import-Module .\IntuneAppWrappingTool.psm1
+   ```
 
-3.  Ejecute la herramienta mediante el comando **invoke-AppWrappingTool**, que tiene la sintaxis siguiente:
-    ```
-    Invoke-AppWrappingTool [-InputPath] <String> [-OutputPath] <String> -KeyStorePath <String> -KeyStorePassword <SecureString>
-    -KeyAlias <String> -KeyPassword <SecureString> [-SigAlg <String>] [<CommonParameters>]
-    ```
+3. Ejecute la herramienta mediante el comando **invoke-AppWrappingTool**, que tiene la sintaxis siguiente:
+   ```
+   Invoke-AppWrappingTool [-InputPath] <String> [-OutputPath] <String> -KeyStorePath <String> -KeyStorePassword <SecureString>
+   -KeyAlias <String> -KeyPassword <SecureString> [-SigAlg <String>] [<CommonParameters>]
+   ```
 
- En la siguiente tabla se detallan las propiedades del comando **invoke-AppWrappingTool**:
+   En la siguiente tabla se detallan las propiedades del comando **invoke-AppWrappingTool**:
 
 |Propiedad|Información de|Ejemplo|
 |-------------|--------------------|---------|
@@ -160,17 +160,17 @@ Estas instrucciones son específicas para todas las aplicaciones de Android y Xa
 
 1. Configure ADAL siguiendo los pasos definidos en la [Guía para desarrolladores de Android acerca del SDK para aplicaciones de Microsoft Intune](https://docs.microsoft.com/intune/app-sdk-android#configure-azure-active-directory-authentication-library-adal).
 
-> [!NOTE] 
+> [!NOTE]
 > El término "Id. de cliente" vinculado a la aplicación es el mismo que el término "Id. de aplicación" de Azure Portal vinculado a la aplicación. 
-* Para habilitar el SSO, necesita el punto n.º 2 de la "Configuración de ADAL común".
+> * Para habilitar el SSO, necesita el punto n.º 2 de la "Configuración de ADAL común".
 
 2. Habilite la inscripción predeterminada indicando el siguiente valor en el manifiesto:```xml <meta-data android:name="com.microsoft.intune.mam.DefaultMAMServiceEnrollment" android:value="true" />```
-> [!NOTE] 
-> Esta debe ser la única integración de MAM-WE en la aplicación. Podrían surgir conflictos si hay cualquier otro intento de llamada a las API de MAMEnrollmentManager.
+   > [!NOTE] 
+   > Esta debe ser la única integración de MAM-WE en la aplicación. Podrían surgir conflictos si hay cualquier otro intento de llamada a las API de MAMEnrollmentManager.
 
 3. Habilite la directiva de MAM necesaria indicando el siguiente valor en el manifiesto:```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
-> [!NOTE] 
-> Esto obliga al usuario a descargar el Portal de empresa en el dispositivo y completar el flujo de inscripción predeterminada antes de usarlo.
+   > [!NOTE] 
+   > Esto obliga al usuario a descargar el Portal de empresa en el dispositivo y completar el flujo de inscripción predeterminada antes de usarlo.
 
 ### <a name="see-also"></a>Vea también
 - [Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles mediante Microsoft Intune](apps-prepare-mobile-application-management.md)

@@ -15,17 +15,16 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 737c2900b2cdd57cb4dfc8373d06111a52e772b2
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 86cb0dfb67e81a7abbdc8f38dcbf5539b9855adb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>¿Qué es la administración de aplicaciones de Microsoft Intune?
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
-
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune le permite, como administrador de TI, administrar las aplicaciones móviles que usan los trabajadores de su empresa. Esta funcionalidad se suma a la administración de dispositivos y la protección de datos. Como parte de ella, una de sus prioridades consistirá en garantizar que los usuarios finales tengan acceso a las aplicaciones que necesitan para realizar su trabajo. Esto puede ser difícil por las siguientes causas:
 - La amplia variedad de plataformas de dispositivo y tipos de aplicaciones.
@@ -65,7 +64,7 @@ Intune ofrece diversas funcionalidades para ayudarle a conseguir las aplicacione
 Puede encontrar la mayoría de las tareas relacionadas con las aplicaciones en la carga de trabajo **Mobile Apps** a la que puede acceder de la manera siguiente:
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En la hoja **Intune**, elija **Aplicaciones móviles**.
 
     ![La carga de trabajo Mobile Apps](./media/apps-workload.png)
@@ -73,11 +72,11 @@ Puede encontrar la mayoría de las tareas relacionadas con las aplicaciones en l
 La siguiente información se corresponde con las opciones disponibles en la hoja **Aplicaciones móviles**.
 
 ### <a name="manage"></a>Administrar
-- **Aplicaciones**: seleccione esta opción para agregar, ver, asignar y supervisar las aplicaciones que usan los trabajadores. Para obtener más información, vea los siguientes artículos:
+- **Aplicaciones**: seleccione esta opción para agregar, ver, asignar y supervisar las aplicaciones que usan los trabajadores. Vea los siguientes artículos para más información:
     - [Agregar aplicaciones](apps-add.md)
     - [Asignar aplicaciones](apps-deploy.md)
     - [Supervisión de aplicaciones](apps-monitor.md)
-- **Directivas de configuración de aplicaciones**: estas directivas le permiten suministrar valores de configuración que podrían ser necesarios cuando un usuario ejecuta una aplicación. Para obtener más información, vea los siguientes artículos:
+- **Directivas de configuración de aplicaciones**: estas directivas le permiten suministrar valores de configuración que podrían ser necesarios cuando un usuario ejecuta una aplicación. Vea los siguientes artículos para más información:
     - [Directivas de configuración de aplicaciones para Intune](app-configuration-policies-overview.md)
         - [Directivas de configuración de aplicaciones iOS](app-configuration-policies-use-ios.md)
         - [Directivas de configuración de aplicaciones Android](app-configuration-policies-use-android.md)
@@ -91,9 +90,9 @@ La siguiente información se corresponde con las opciones disponibles en la hoja
 Para obtener más información, consulte [Administrar aplicaciones](app-management.md).
 
 ### <a name="monitor"></a>Supervisión
-- **Licencias de aplicaciones**: vea, asigne y supervise las aplicaciones compradas por volumen de las tiendas de aplicaciones. Para obtener más información, vea los siguientes artículos:
+- **Licencias de aplicaciones**: vea, asigne y supervise las aplicaciones compradas por volumen de las tiendas de aplicaciones. Vea los siguientes artículos para más información:
     - [Aplicaciones de programa compradas por volumen de iOS](vpp-apps-ios.md)
-    - [Aplicaciones adquiridas por volumen de Microsoft Store para Empresas](windows-store-for-business.md)
+    - [Aplicaciones adquiridas por volumen de la Tienda Microsoft para Empresas](windows-store-for-business.md)
 - **Aplicaciones detectadas**: muestra todas las aplicaciones que asignó Intune y que están instaladas en un dispositivo.
 - **App Install Status** (Estado de instalación de aplicación): muestra el estado de una asignación de aplicación que ha creado.
 - **App protection status** (Estado de protección de aplicación): muestra el estado de una directiva de protección de aplicaciones de un usuario seleccionado.
@@ -106,8 +105,8 @@ Para más información, consulte [Supervisión de aplicaciones](apps-monitor.md)
     - [Aplicaciones de iOS adquiridas por volumen](vpp-apps-ios.md)
 - **Certificado de empresa de Windows**: aplique o vea el estado de un certificado de firma de código utilizado para distribuir aplicaciones de línea de negocio en los dispositivos de Windows administrados.
 - **Certificado de Windows Symantec**: aplique o vea el estado de un certificado de firma de código de Symantec que se necesita para distribuir archivos appx de XAP y WP8.x a dispositivos Windows 10 Mobile.
-- **Microsoft Store para Empresas**: configure la integración con Microsoft Store para Empresas. Luego, puede sincronizar las aplicaciones adquiridas en Intune, asignarlas y realizar el seguimiento de su uso de licencias. Para obtener más información, vea el siguiente artículo:
-    - [Aplicaciones adquiridas por volumen de Microsoft Store para Empresas](windows-store-for-business.md)
+- **Tienda Microsoft para Empresas**: configure la integración con la Tienda Microsoft para Empresas. Luego, puede sincronizar las aplicaciones adquiridas en Intune, asignarlas y realizar el seguimiento de su uso de licencias. Para obtener más información, vea el siguiente artículo:
+    - [Aplicaciones adquiridas por volumen de la Tienda Microsoft para Empresas](windows-store-for-business.md)
 - **Claves de instalación de prueba de Windows**: puede agregar una clave de instalación de prueba de Windows que puede usarse para instalar una aplicación directamente en dispositivos en lugar de publicar y descargar la aplicación desde la tienda Windows. Para obtener más información, vea el siguiente artículo:
     - [Instalación de prueba de una aplicación de Windows](app-sideload-windows.md)
 - **Company Portal branding** (Personalización de marca del Portal de empresa): personalice el Portal de empresa para adaptarlo a su empresa. Para obtener más información, vea el siguiente artículo:

@@ -331,6 +331,6 @@ __El componente Xamarin del SDK para aplicaciones de Intune ahora admite MAM sin
 
 __El certificado de firma de Symantec ya no requiere el portal de empresa firmado de Windows Phone 8 para la carga__ La carga del certificado de firma de Symantec ya no requiere una aplicación firmada del portal de empresa de Windows Phone 8. El certificado se puede cargar de forma independiente.
 
-###<a name="deprecations"></a>Elementos obsoletos
+### <a name="deprecations"></a>Elementos obsoletos
 
 __Compatibilidad con el portal de empresa de Windows Phone 8__ La compatibilidad con el portal de empresa de Windows Phone 8 ahora está en desuso. La compatibilidad con las plataformas Windows Phone 8 y WinRT ha quedado en desuso en octubre de 2016. La compatibilidad con el portal de empresa de Windows 8 ha quedado en desuso en octubre de 2016.

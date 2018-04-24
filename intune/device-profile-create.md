@@ -14,15 +14,15 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e5070052c0d4cce3cfd81a7bae259bc7dfb22e7f
-ms.sourcegitcommit: e6319ff186d969da34bd19c9730ba003d6cce353
+ms.openlocfilehash: 3d46960e6ea7e2ae9bed6c0016ddc309bd15f572
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Creación de un perfil de dispositivo en Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="create-the-profile"></a>Creación del perfil
 1. En [Azure Portal](https://portal.azure.com), seleccione **All services** (Todos los servicios) y busque **Microsoft Intune**.
@@ -31,33 +31,33 @@ ms.lasthandoff: 03/20/2018
 
 3. Introduzca las siguientes propiedades:
 
-    - **Nombre**: escriba un nombre descriptivo para el nuevo perfil.
-    - **Descripción**: escriba una descripción para el perfil (es opcional, pero se recomienda hacerlo).
-    - **Plataforma**: seleccione el tipo de plataforma:  
+   - **Nombre**: escriba un nombre descriptivo para el nuevo perfil.
+   - **Descripción**: escriba una descripción para el perfil (es opcional, pero se recomienda hacerlo).
+   - **Plataforma**: seleccione el tipo de plataforma:  
 
-        - **Android**
-        - **Android for Work**
-        - **iOS**
-        - **macOS**
-        - **Windows Phone 8.1**
-        - **Windows 8.1 y versiones posteriores**
-        - **Windows 10 y versiones posteriores**
+       - **Android**
+       - **Android for Work**
+       - **iOS**
+       - **macOS**
+       - **Windows Phone 8.1**
+       - **Windows 8.1 y versiones posteriores**
+       - **Windows 10 y versiones posteriores**
 
-    - **Tipo de perfil**: seleccione el tipo de perfil que quiere crear. La lista dependerá de la plataforma que seleccione.
-    - **Configuración**: en los siguientes temas se describen los valores para cada tipo de perfil:
+   - **Tipo de perfil**: seleccione el tipo de perfil que quiere crear. La lista dependerá de la plataforma que seleccione.
+   - **Configuración**: en los siguientes temas se describen los valores para cada tipo de perfil:
 
-        -  [Configuración de características de dispositivo](device-features-configure.md)
-        -  [Configuración de restricciones de dispositivo](device-restrictions-configure.md)
-        -  [Configuración de correo electrónico](email-settings-configure.md)
-        -  [Configuración de VPN](vpn-settings-configure.md)
-        -  [Configuración de Wi-Fi](wi-fi-settings-configure.md)
-        -  [Configuración de actualización de la edición de Windows 10](edition-upgrade-configure-windows-10.md)
-        -  [Configuración de certificados](certificates-configure.md)
-        -  [Configuración de Windows Information Protection](windows-information-protection-configure.md)
-        -  [Configuración de educación](education-settings-configure.md)
-        -  [Configuración personalizada](custom-settings-configure.md)
+       -  [Configuración de características de dispositivo](device-features-configure.md)
+       -  [Configuración de restricciones de dispositivo](device-restrictions-configure.md)
+       -  [Configuración de correo electrónico](email-settings-configure.md)
+       -  [Configuración de VPN](vpn-settings-configure.md)
+       -  [Configuración de Wi-Fi](wi-fi-settings-configure.md)
+       -  [Configuración de actualización de la edición de Windows 10](edition-upgrade-configure-windows-10.md)
+       -  [Configuración de certificados](certificates-configure.md)
+       -  [Configuración de Windows Information Protection](windows-information-protection-configure.md)
+       -  [Configuración de educación](education-settings-configure.md)
+       -  [Configuración personalizada](custom-settings-configure.md)
 
-    ![Captura de pantalla de Crear perfil](./media/create-device-profile.png)
+     ![Captura de pantalla de Crear perfil](./media/create-device-profile.png)
 
 4. Seleccione **Crear** cuando termine.
 

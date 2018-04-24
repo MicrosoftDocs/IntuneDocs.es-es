@@ -15,11 +15,11 @@ ms.assetid: D9958CBF-34BF-41C2-A86C-28F832F87C94
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d2839a11f95614add0691813a9fdf89dba0a2d5d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 1b28f809c924ec2699647a3cc377b3bdde86afe5
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-in-intune-for-ios-devices"></a>Configuración de la red privada virtual (VPN) por aplicación en Intune para dispositivos iOS
 
@@ -42,7 +42,7 @@ Exporte el certificado y agregue la entidad de certificación.
 Cree o elija un grupo existente en Azure Active Directory (Azure AD) para incluir los miembros que tengan acceso a la VPN por aplicación.
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 2. Elija **Grupos** y haga clic en **Nuevo grupo**.
 3. Seleccione un **Tipo de grupo** para el grupo. 
 3. Escriba el **Nombre de grupo** del grupo. 
@@ -57,7 +57,7 @@ Cree o elija un grupo existente en Azure Active Directory (Azure AD) para inclui
 Importe el certificado raíz del servidor VPN emitido por la entidad de certificación en un perfil creado en Intune. El perfil de certificado de confianza indicará al dispositivo iOS que puede confiar automáticamente en la entidad de certificación del servidor VPN.
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 2. Elija **Configuración del dispositivo** y haga clic en **Perfiles**.
 3. Haga clic en **Crear perfil**. En **Crear perfil**:
     1. Escriba el **nombre**.
@@ -67,14 +67,14 @@ Importe el certificado raíz del servidor VPN emitido por la entidad de certific
 4. Haga clic en el icono de carpeta y localice el certificado VPN (archivo .cer) que ha exportado de la consola de administración de la VPN. Haga clic en **Aceptar**.
 5. Haga clic en **Crear**.
 
-    ![Creación de un perfil de certificado de confianza](media\vpn-per-app-create-trusted-cert.png)
+    ![Creación de un perfil de certificado de confianza](./media/vpn-per-app-create-trusted-cert.png)
 
 ## <a name="create-a-scep-certificate-profile"></a>Creación de un perfil de certificado SCEP
 
 El perfil de certificado raíz de confianza permite al dispositivo iOS confiar de forma automática en el servidor VPN. El certificado SCEP proporciona las credenciales del cliente VPN de iOS para el servidor VPN. El certificado permite al dispositivo realizar la autenticación de forma silenciosa, sin solicitar al usuario del dispositivo iOS un nombre de usuario ni la contraseña. 
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 2. Elija **Configuración del dispositivo** y haga clic en **Perfiles**.
 3. Haga clic en **Crear perfil**. En **Crear perfil**:
     1. Escriba el **nombre**.
@@ -94,14 +94,14 @@ El perfil de certificado raíz de confianza permite al dispositivo iOS confiar d
 14. Haga clic en **Aceptar**.
 15. Haga clic en **Crear**.
 
-    ![Creación de un perfil de certificado SCEP](media\vpn-per-app-create-scep-cert.png)
+    ![Creación de un perfil de certificado SCEP](./media/vpn-per-app-create-scep-cert.png)
 
 ## <a name="create-a-per-app-vpn-profile"></a>Creación de un perfil de VPN por aplicación
 
 El perfil de VPN contiene el certificado SCEP con las credenciales del cliente, la información de la conexión a la VPN y la marca de VPN por aplicación para habilitar dicha característica y que la aplicación iOS la pueda usar.
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 2. Elija **Configuración del dispositivo** y haga clic en **Perfiles**.
 3. Haga clic en **Crear perfil**. En **Crear perfil**:
     1. Escriba el **nombre**.
@@ -123,7 +123,7 @@ El perfil de VPN contiene el certificado SCEP con las credenciales del cliente, 
 6. Haga clic en **Aceptar**.
 7. Haga clic en **Crear**.
 
-    ![Creación de un perfil de VPN por aplicación](media\vpn-per-app-create-vpn-profile.png)
+    ![Creación de un perfil de VPN por aplicación](./media/vpn-per-app-create-vpn-profile.png)
 
 
 ## <a name="associate-an-app-with-the-vpn-profile"></a>Asociación de una aplicación al perfil de VPN
@@ -131,7 +131,7 @@ El perfil de VPN contiene el certificado SCEP con las credenciales del cliente, 
 Tras agregar el perfil de VPN, asocie la aplicación y el grupo de Azure AD al perfil.
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 2. Elija **Aplicaciones móviles**.
 3. Haga clic en **Aplicaciones**.
 4. Seleccione la aplicación de la lista.
@@ -146,7 +146,7 @@ Tras agregar el perfil de VPN, asocie la aplicación y el grupo de Azure AD al p
 
 9. Haga clic en **Aceptar** y en **Guardar**.
 
-    ![Asociación de una aplicación a la VPN](media\vpn-per-app-app-to-vpn.png)
+    ![Asociación de una aplicación a la VPN](./media/vpn-per-app-app-to-vpn.png)
 
 ## <a name="verify-the-connection-on-the-ios-device"></a>Comprobación de la conexión en el dispositivo iOS
 

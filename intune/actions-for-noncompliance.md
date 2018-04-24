@@ -1,22 +1,22 @@
 ---
 title: 'Acciones y mensajes en caso de incumplimiento con Microsoft Intune: Azure | Microsoft Docs'
-description: "Cree un correo electrónico de notificación para enviar a los dispositivos no compatibles. Agregue acciones después de que un dispositivo se marque como no compatible (como agregar un período de gracia hasta que lo sea) o bien cree una programación para bloquear el acceso hasta que el dispositivo sea compatible. Haga esto mediante Microsoft Intune en Azure."
-keywords: 
+description: Cree un correo electrónico de notificación para enviar a los dispositivos no compatibles. Agregue acciones después de que un dispositivo se marque como no compatible (como agregar un período de gracia hasta que lo sea) o bien cree una programación para bloquear el acceso hasta que el dispositivo sea compatible. Haga esto mediante Microsoft Intune en Azure.
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 37a8deca147bbad1e706b814f366a2c3f1247869
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: a4b5e55b404da907d8f17a658483b4802af8226d
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>Automatización del correo electrónico y adición de acciones para dispositivos no compatibles: Intune
 
@@ -54,14 +54,14 @@ Existen dos tipos de acciones:
 3. Seleccione **Cumplimiento del dispositivo** y, después, **Notificaciones**. 
 4. Haga clic en **Crear notificación** y después escriba la siguiente información:
 
-  - Nombre
-  - Firmante
-  - Mensaje
-  - Encabezado de correo electrónico: incluir el logotipo de la empresa
-  - Pie de página de correo electrónico: incluir nombre de la empresa
-  - Pie de página de correo electrónico: incluir información de contacto
+   - Nombre
+   - Firmante
+   - Mensaje
+   - Encabezado de correo electrónico: incluir el logotipo de la empresa
+   - Pie de página de correo electrónico: incluir nombre de la empresa
+   - Pie de página de correo electrónico: incluir información de contacto
 
-  ![Ejemplo de un mensaje de notificación compatible en Intune](./media/actionsfornoncompliance-1.PNG)
+   ![Ejemplo de un mensaje de notificación compatible en Intune](./media/actionsfornoncompliance-1.PNG)
 
 Cuando haya terminado de agregar la información, elija **Crear**. La plantilla de mensaje de notificación está lista para usar.
 
@@ -77,7 +77,7 @@ Puede agregar una acción al crear una directiva de cumplimiento, o bien actuali
 1. En [Azure Portal](https://portal.azure.com), abra **Microsoft Intune** y seleccione **Cumplimiento del dispositivo**.
 2. Seleccione **Directivas**, elija una de las directivas y, después, seleccione **Propiedades**. 
 
-  ¿Aún no tiene una directiva? Cree una directiva de [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) o de otra plataforma.
+   ¿Aún no tiene una directiva? Cree una directiva de [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) o de otra plataforma.
 
 3. Seleccione **Acciones en caso de incumplimiento** y, después, haga clic en **Agregar** para escribir los parámetros de acción. Puede elegir la plantilla de mensaje creada anteriormente, agregar destinatarios adicionales y actualizar la programación del período de gracia. En la programación, puede escribir el número de días (de 0 a 365) para aplicar las directivas de acceso condicional. Si escribe **0** número de días, el acceso condicional bloquea **inmediatamente** el acceso a los recursos corporativos.
 

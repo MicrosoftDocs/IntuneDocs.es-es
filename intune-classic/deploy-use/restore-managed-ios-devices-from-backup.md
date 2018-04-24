@@ -1,29 +1,29 @@
 ---
-title: "Restauración de dispositivos iOS administrados en Intune desde una copia de seguridad"
-description: "Proporcione instrucciones a los usuarios finales acerca de cómo volver a inscribir sus dispositivos después de restaurar desde una copia de seguridad."
-keywords: "restauración, administrados, iOS"
-author: barlanmsft
-ms.author: barlan
+title: Restauración de dispositivos iOS administrados en Intune desde una copia de seguridad
+description: Proporcione instrucciones a los usuarios finales acerca de cómo volver a inscribir sus dispositivos después de restaurar desde una copia de seguridad.
+keywords: restauración, administrados, iOS
+author: lenewsad
+ms.author: lanewsad
 manager: angrobe
 ms.date: 10/18/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a19e5612-8805-4bd7-a86a-b734bde293ae
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2270e19ab2f45d7f3636226709b8a0fbea075ed0
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 2c2a35a7faa022ab2b9b095d4a08075e1c338c70
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="restore-intune-managed-ios-devices-from-backup"></a>Restauración de dispositivos iOS administrados en Intune desde una copia de seguridad
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Habrá casos cuando en los que usted o sus usuarios necesiten restaurar un dispositivo iOS desde una copia de seguridad, como cuando un usuario obtiene un nuevo dispositivo. En este tema se explican los pasos adicionales que debe realizar para configurar la administración de Intune después de restaurar el dispositivo.
 

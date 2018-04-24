@@ -13,15 +13,15 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e8dc2042d7f88cf626d7420d4760255e1e9a3469
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 66a935b96b802a05831118cd9dc0adbc62bb4bae
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-custom-device-settings-for-devices-running-macos"></a>Configuración de dispositivo personalizada de Microsoft Intune para dispositivos que ejecutan macOS
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Use el perfil personalizado de macOS de Microsoft Intune para asignar la configuración que ha creado mediante la herramienta [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344?mt=12) en dispositivos macOS. Esta herramienta permite crear muchas configuraciones para controlar el funcionamiento de estos dispositivos y exportarlas a un perfil de configuración. Luego, puede importar este perfil de configuración en un perfil personalizado de macOS de Intune y asignar la configuración a los usuarios y dispositivos de su organización.
 

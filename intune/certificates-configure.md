@@ -14,15 +14,15 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b1691e3474b021754e0ee6a1a1977efecc82eac
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 867a846b43edb3392db2be11e7ea544fa9317b6c
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Configuración de un perfil de certificado para sus dispositivos en Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Si proporciona a los usuarios acceso a los recursos corporativos a través de VPN, Wi-Fi o perfiles de correo electrónico, puede autenticar estas conexiones mediante certificados. Cuando se usan certificados, no resulta necesario escribir nombres de usuario ni contraseñas para autenticar las conexiones.
 
@@ -33,7 +33,7 @@ Puede usar Intune para asignar estos certificados a los dispositivos que adminis
 
 Cada uno de estos tipos de certificado tiene sus propios requisitos previos y de infraestructura.
 
-## <a name="overview"></a>Información general
+## <a name="overview"></a>Introducción
 
 1. Asegúrese de que dispone de la infraestructura de certificados correcta. Puede usar [certificados SCEP](certificates-scep-configure.md) y [certificados PKCS](certficates-pfx-configure.md).
 
@@ -86,7 +86,7 @@ Este certificado se importa al configurar un perfil de certificado de confianza.
 Cree un perfil de certificado de confianza para poder crear un perfil de certificado SCEP o PKCS. Necesitará un perfil de certificado de confianza y un perfil SCEP o PKCS para cada plataforma de dispositivo. Los pasos para crear certificados de confianza son similares en todas las plataformas de dispositivos.
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En el panel **Intune**, elija **Configuración del dispositivo**.
 2. En el panel **Configuración del dispositivo**, elija **Administrar** > **Perfiles**.
 3. En el panel Perfiles, elija **Crear perfil**.

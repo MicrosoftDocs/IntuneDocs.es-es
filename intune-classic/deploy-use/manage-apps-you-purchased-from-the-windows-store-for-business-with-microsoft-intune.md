@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: coryfe
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 50fc27efc34ab6c13fad714e41be0d87c5ab0df9
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: b32f9c6be910156c26b446b7bf70a7975b4afaff
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Administrar las aplicaciones adquiridas a través de la Tienda Microsoft para Empresas con Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 En la [Tienda Microsoft para Empresas](https://www.microsoft.com/business-store), puede buscar y comprar aplicaciones para su organización, tanto sueltas como por volumen. Si conecta la tienda a Microsoft Intune, puede administrar aplicaciones compradas por volumen desde la consola de Intune. Por ejemplo:
 * Puede sincronizar la lista de aplicaciones que ha adquirido en la tienda con Intune.
@@ -57,8 +57,8 @@ Ya puede continuar y configurar la sincronización en la consola de Intune.
 1. En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), seleccione **Administración**.
 2. En el área de trabajo **Administración**, expanda **Administración de dispositivos móviles** > **Windows** y, luego, elija **Tienda para empresas**.
 3. En la página **Tienda Microsoft para Empresas**, haga lo siguiente:
- * Si aún no lo ha hecho, haga clic en el vínculo para registrarse en la Tienda Microsoft para Empresas.
- * Cuando se haya registrado, elija **Configurar sincronización**.
+   * Si aún no lo ha hecho, haga clic en el vínculo para registrarse en la Tienda Microsoft para Empresas.
+   * Cuando se haya registrado, elija **Configurar sincronización**.
 4. En el cuadro de diálogo **Configurar la sincronización de aplicaciones de la Tienda Windows para empresas**, seleccione **Habilitar la sincronización de la Tienda Windows para empresas**.
 5. En la lista desplegable **Idioma**, elija el idioma en el que las aplicaciones de la Tienda Microsoft para Empresas se mostrarán en la consola de Intune. Independientemente del idioma en el que se muestren, se instalarán en el idioma del usuario final si esa versión está disponible.
 6. Haga clic en **Aceptar**.

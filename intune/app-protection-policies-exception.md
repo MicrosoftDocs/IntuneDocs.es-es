@@ -1,29 +1,29 @@
 ---
 title: Excepciones de la directiva de transferencia de datos para aplicaciones
 titleSuffix: Microsoft Intune
-description: "Cree excepciones a la directiva de transferencia de datos de la administración de aplicaciones móviles (MAM) de Intune."
-keywords: 
+description: Cree excepciones a la directiva de transferencia de datos de la administración de aplicaciones móviles (MAM) de Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/20/2018
+ms.date: 03/26/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1e37e78f7272b0f53f974eccb20c7e02574a9a9
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 1910334093a416933912c9cdeedac85e36d66e92
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Cómo crear excepciones a la directiva de transferencia de datos de la administración de aplicaciones móviles (MAM) de Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Como administrador, puede crear excepciones a la directiva de transferencia de datos de la administración de aplicaciones móviles (MAM) de Intune. Una excepción le permite elegir de manera específica qué aplicaciones no administradas pueden transferir datos hacia y desde aplicaciones administradas. Las aplicaciones no administradas que incluya en la lista de excepciones deben ser de confianza para el departamento de TI. 
 
@@ -39,6 +39,10 @@ Para una directiva que tenga iOS como destino, puede configurar excepciones de t
 
 ## <a name="android-data-transfer-exceptions"></a>Excepciones de transferencia de datos de Android
 Para una directiva que tenga Android como destino, puede configurar excepciones de transferencia de datos mediante el nombre del paquete de aplicación. Puede comprobar la página de **Google Play Store** de la aplicación para la que quiera agregar una excepción a fin de encontrar el nombre del paquete de la aplicación. Para obtener más información sobre las excepciones de transferencia de datos de Android, consulte la sección [Exenciones de transferencia de datos del artículo Configuración de directivas de protección de aplicaciones de Android](app-protection-policy-settings-android.md#data-transfer-exemptions).
+
+
+>[!TIP]
+> Puede encontrar el identificador del paquete de una aplicación dirigiéndose a la aplicación en Google Play Store. El identificador del paquete se incluye en la dirección URL de la página de la aplicación. Por ejemplo, el identificador del paquete de la aplicación Microsoft Word es **com.microsoft.office.word**.
 
 ### <a name="example"></a>Ejemplo
 Si agrega el paquete **Webex** como una excepción a la directiva de transferencia de datos de MAM, los vínculos de Webex de un mensaje de correo electrónico administrado de Outlook pueden abrirse directamente en la aplicación de Webex. Se sigue restringiendo la transferencia de datos en otras aplicaciones no administradas.

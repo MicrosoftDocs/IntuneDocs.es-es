@@ -1,28 +1,28 @@
 ---
 title: Acceso condicional con Microsoft Intune
-titlesuffix: 
-description: "Obtenga más información sobre cómo definir las condiciones que deben cumplir los usuarios, los dispositivos y las aplicaciones para acceder a los recursos de la empresa en Microsoft Intune."
-keywords: 
+titlesuffix: ''
+description: Obtenga más información sobre cómo definir las condiciones que deben cumplir los usuarios, los dispositivos y las aplicaciones para acceder a los recursos de la empresa en Microsoft Intune.
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: get-started-article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 08589f3d9186699ce5241579cc1879be2d442e3d
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: a62166792570c5bb81391d05d1cbc3f8486543a4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="whats-conditional-access"></a>¿Qué es el acceso condicional?
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 El acceso condicional hace referencia a las formas en que puede controlar los dispositivos y las aplicaciones que pueden conectarse a los recursos del correo electrónico y la empresa. En este tema, obtendrá información sobre el acceso condicional basado en dispositivos y aplicaciones, y encontrará escenarios comunes para usar el acceso condicional con Intune.
 

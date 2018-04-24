@@ -1,24 +1,24 @@
 ---
 title: Directiva
 titlesuffix: Microsoft Intune
-description: "Tema de referencia sobre la categoría Directiva de las colecciones de entidades de la API de Almacenamiento de datos de Intune."
+description: Tema de referencia sobre la categoría Directiva de las colecciones de entidades de la API de Almacenamiento de datos de Intune.
 keywords: Almacenamiento de datos de Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 02/12/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c5546c686a51170c8c854252cddb048685c6b2d2
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 0cfeffd4cb466d8bcfc2da072e7e6c028a4e0c8a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="reference-for-policy-entities"></a>Referencia de entidades de directivas
 
@@ -157,10 +157,12 @@ PolicyKey|Clave de la directiva, que puede combinarse con la directiva para obte
 
 La tabla siguiente muestra el número de usuarios en estado correcto, pendiente, con errores o de error al día. El número refleja los datos por perfiles de tipo de directiva. Por ejemplo, si un usuario muestra el estado correcto para todas las directivas que tiene asignadas, aumenta en uno el contador de éxitos de ese día. Si un usuario tiene dos perfiles asignados, uno en estado correcto y otro en estado de error, se cuenta el usuario en el estado de error. La entidad PolicyUserActivity muestra cuántos usuarios hay en cada estado en un día determinado de los últimos 30 días.
 
-|Propiedad  |Descripción  |Ejemplo  |
-|---------|---------|---------|
-|DateKey|Clave de fecha en la que se ha anotado en el almacenamiento de datos el registro del perfil de configuración de dispositivos.|20160703|
-|Pending|Número de dispositivos únicos en estado pendiente.|123|
-|Correcto|Número de dispositivos únicos en estado correcto.|12|
-PolicyKey|Clave de la directiva, que puede combinarse con la directiva para obtener el nombre de la directiva.|Línea base de Windows 10|
-|Error|Número de dispositivos únicos en estado de error.|10|
+
+| Propiedad  |                                         Descripción                                         |       Ejemplo       |
+|-----------|---------------------------------------------------------------------------------------------|---------------------|
+|  DateKey  | Clave de fecha en la que se ha anotado en el almacenamiento de datos el registro del perfil de configuración de dispositivos. |      20160703       |
+|  Pending  |                         Número de dispositivos únicos en estado pendiente.                          |         123         |
+| Correcto |                         Número de dispositivos únicos en estado correcto.                          |         12          |
+| PolicyKey |                Clave de la directiva, que puede combinarse con la directiva para obtener el nombre de la directiva.                 | Línea base de Windows 10 |
+|   Error   |                          Número de dispositivos únicos en estado de error.                           |         10          |
+

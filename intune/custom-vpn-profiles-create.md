@@ -1,23 +1,23 @@
 ---
-title: "Creación de perfiles de VPN personalizados con Microsoft Intune"
-titleSuffix: 
+title: Creación de perfiles de VPN personalizados con Microsoft Intune
+titleSuffix: ''
 description: Utilice las configuraciones personalizadas para crear perfiles de VPN en Intune.
-keywords: 
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.openlocfilehash: ec9b959d086051985287a62f7d10fe8d4cbad7e9
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.sourcegitcommit: 28ed8902a11500b195fff839d59b90c16af6e743
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/29/2018
 ---
 # <a name="how-to-create-custom-vpn-profiles-in-microsoft-intune"></a>Creación de perfiles de VPN personalizados en Microsoft Intune
 
@@ -34,7 +34,7 @@ Este tipo de directiva puede ser útil cuando las directivas estándar de VPN de
 ## <a name="to-create-a-custom-configuration-policy"></a>Para crear una directiva de configuración personalizada:
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En el panel **Intune**, elija **Configuración del dispositivo**.
 2. En el panel **Configuración del dispositivo**, en la sección **Administrar**, elija **Perfiles**.
 5. En el panel Perfiles, elija **Crear perfil**.

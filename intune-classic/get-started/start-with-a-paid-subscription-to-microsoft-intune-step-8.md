@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: jeffgilb
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e9572181fb15ec97e7ae4c11a8ab2e4fe4cc9b30
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 1b09545e99f18815e690ad224e11e772e8911c8a
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enable-enrollment-for-mobile-devices"></a>Habilitar la inscripción de dispositivos móviles
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 En este tema se describe el procedimiento que deben seguir los administradores de Intune para habilitar la inscripción de dispositivos móviles. Para obtener ayuda sobre el uso de Intune en el teléfono, consulte el [uso de dispositivos administrados para realizar el trabajo](https://docs.microsoft.com/intune-user-help/company-portal-frequently-asked-questions).
 
@@ -66,4 +66,4 @@ También puede habilitar diversos escenarios de [inscripción de dispositivos co
 Enhorabuena. Acaba de completar el último paso de la *Guía de inicio rápido de Intune*. Ahora que ha finalizado la configuración inicial, puede habilitar funciones de MDM adicionales.
 
 >[!div class="step-by-step"]
->[&larr;**Inscribir dispositivos**](.\start-with-a-paid-subscription-to-microsoft-intune-step-8.md)      [**Tareas posteriores a la configuración** &rarr;](.\post-configuration-tasks.md)  
+>[&larr;**Inscribir dispositivos**](./start-with-a-paid-subscription-to-microsoft-intune-step-8.md)      [**Tareas posteriores a la configuración** &rarr;](./post-configuration-tasks.md)  

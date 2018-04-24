@@ -1,29 +1,29 @@
 ---
-title: "Configuración de directivas de Windows 10"
-description: "Use la configuración de directiva indicada en este tema para configurar las opciones integradas y personalizadas de los dispositivos Windows 10 Escritorio y Windows 10 Mobile inscritos."
-keywords: 
+title: Configuración de directivas de Windows 10
+description: Use la configuración de directiva indicada en este tema para configurar las opciones integradas y personalizadas de los dispositivos Windows 10 Escritorio y Windows 10 Mobile inscritos.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 09/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 00a602d9-b339-4fd8-ab70-defbf6686855
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: fff34b145660e1d0e78e05de467629f9421fcf7a
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 202f15766aa740755669ab246739a5331ea328a4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-policy-settings-for-windows-10-devices-in-microsoft-intune"></a>Configuración de directivas de Intune para dispositivos Windows 10 en Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Este tema contiene información que le ayudará a entender la configuración de directivas de Intune que puede usar para administrar dispositivos Windows 10. Lea este tema y los procedimientos que se describen en [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](/intune-classic/get-started/windows-pc-management-capabilities-in-microsoft-intune).
 
@@ -192,7 +192,7 @@ Todos los valores son solo válidos para Windows 10 Escritorio.
 |**Examinar archivos de almacenamiento**|Permite que Defender examine archivos almacenados, como archivos .zip o .cab.|
 |**Analizar mensajes de correo electrónico**|Permite que Defender analice los mensajes de correo electrónico cuando llegan al dispositivo|
 |**Examinar unidades extraíbles**|Permite que Defender analice unidades extraíbles, como sticks USB|
-|**Examinar unidades de red asignadas**|Permite que Defender examine archivos en unidades de red asignadas.<br>Si los archivos de la unidad son de solo lectura, Defender no podrá quitar el malware que se encuentre en ellos.|
+|**Examinar unidades de red asignadas**|Permite que Defender examine archivos en unidades de red asignadas.<br>Si los archivos de la unidad son de solo lectura, Defender no podrá quitar ningún malware que encuentre en ellos.|
 |**Examinar archivos abiertos desde carpetas compartidas de red**|Permite que Defender examine archivos en unidades de red compartidas (por ejemplo, aquellas a las que se tiene acceso desde una ruta de acceso UNC).<br>Si los archivos de la unidad son de solo lectura, Defender no podrá quitar el malware que se encuentre en ellos.|
 |**Intervalo de actualización de firma**|Especifica el intervalo en el que Defender buscará nuevos archivos de firma.|
 |**Permitir la protección en la nube**|Permite o bloquea la recepción por parte de Microsoft Active Protection Service de información relativa a la actividad de malware de los dispositivos que administra. Esta información se usa para mejorar el servicio en el futuro.|
@@ -210,5 +210,5 @@ Todos los valores son solo válidos para Windows 10 Escritorio.
 |**Permitir actualizaciones automáticas**|Permite las actualizaciones automáticas. Configure una de las opciones siguientes para controlar el comportamiento de las actualizaciones:<br />**Notificar descarga**<br />**Instalar automáticamente en tiempo de mantenimiento**<br />**Instalar y reiniciar automáticamente en tiempo de mantenimiento**<br />**Instalar y reiniciar automáticamente a la hora programada**: tenga en cuenta que, cuando esta opción está seleccionada, también puede configurar los valores **Suprimir la notificación para el usuario final** y **Definir el día de instalación para las actualizaciones programadas**.<br>(Windows 10 Escritorio solo)|
 |**Permitir características de evaluación**|Permite a Microsoft implementar características y configuraciones de la versión preliminar en dispositivos Windows 10. Puede seleccionar permitir que se instale únicamente la configuración o todas las configuraciones y características de la versión preliminar.|
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

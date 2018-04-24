@@ -15,15 +15,15 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 407a332e170497dbb618a2915bba6b794c4a720f
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 6b4e87c36c3aa0aaeae1e1bf265902100612db15
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-add-an-app-to-microsoft-intune"></a>Agregar una aplicación a Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Para poder asignar, supervisar, configurar o proteger las aplicaciones, debe agregarlas a Microsoft Intune.
 
@@ -100,7 +100,7 @@ Al determinar las aplicaciones necesarias para su organización, tenga en cuenta
 Para obtener más información sobre cómo determinar qué tipo de aplicaciones necesita la organización, consulte **Aplicaciones** dentro de la sección **Requisitos de características** de [Crear un diseño](planning-guide-design.md#feature-requirements).
 
 ### <a name="understanding-app-management-and-protection-policies"></a>Información de las directivas de protección y administración de aplicaciones
-Intune le permite modificar la funcionalidad de las aplicaciones que implementa para ayudarle a que se ajusten a los requisitos de cumplimiento y las directivas de seguridad de su empresa. Este control le permite determinar cómo se protegen los datos de su compañía. Las aplicaciones administradas de Intune están habilitadas con un amplio conjunto de directivas de protección de aplicaciones móviles, como, por ejemplo:
+Intune le permite modificar la funcionalidad de las aplicaciones que implementa para ayudarle a que se ajusten a los requisitos de cumplimiento y las directivas de seguridad de su empresa. Este control le permite determinar cómo se protegen los datos de su compañía. Las aplicaciones administradas de Intune están habilitadas con un amplio conjunto de directivas de protección de aplicaciones móviles, como por ejemplo:
 
 - Restricción de las funciones Copiar y pegar y Guardar como
 - Configuración de vínculos web para que se abran dentro de la aplicación Intune Managed Browser
@@ -136,7 +136,7 @@ Se pueden usar categorías de aplicaciones para ordenar las aplicaciones de form
 Al agregar una aplicación a Intune, tiene la opción de seleccionar la categoría que quiera. Use los temas específicos de la plataforma para agregar una aplicación y asignar categorías. Para crear y editar sus propias categorías, use el procedimiento siguiente:
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En la hoja **Intune**, elija **Aplicaciones móviles**.
 4. En la carga de trabajo **Aplicaciones móviles**, elija **Categorías de aplicaciones** en la sección **Configuración**. 
 5. En la hoja **Categorías de aplicaciones**, se muestra una lista de las categorías actuales. Elija una de las acciones siguientes:

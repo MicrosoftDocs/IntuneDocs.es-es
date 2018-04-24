@@ -1,27 +1,27 @@
 ---
 title: Inscribir un dispositivo Android en Intune | Microsoft Docs
-description: "Describe cómo inscribir un dispositivo Android en Intune."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+description: Describe cómo inscribir un dispositivo Android en Intune.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
 ms.date: 10/05/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 0ed3a002-7533-4001-ae24-e10b64b66620
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 89262f4fecba6aa8d76efd7fd5bbe415d9048204
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 7230f14ae9481555f457a8a8700d588c4170b39b
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Inscriba el dispositivo Android en Intune
 
@@ -35,57 +35,57 @@ Antes o después de la inscripción, se le pedirá que elija una categoría que 
 
 **Para inscribir su dispositivo Android:**
 
-1.  Instale la aplicación gratuita de portal de empresa de Intune desde [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
+1. Instale la aplicación gratuita de portal de empresa de Intune desde [Google Play](http://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal).
 
-2.  Abra la aplicación del portal de empresa.
+2. Abra la aplicación del portal de empresa.
 
-3.  En la pantalla de **inicio de sesión** del Portal de empresa, pulse **Iniciar sesión** y luego inicie sesión con su cuenta profesional o educativa.
+3. En la pantalla de **inicio de sesión** del Portal de empresa, pulse **Iniciar sesión** y luego inicie sesión con su cuenta profesional o educativa.
 
-    ![La pantalla de inicio de sesión de la aplicación del Portal de empresa para Android, que pide al usuario que inicie sesión con su cuenta profesional o educativa. También se advierte de que no se aceptan cuentas Microsoft ni otras cuentas personales.](./media/and-enroll-0-welcome-screen.png)   
+   ![La pantalla de inicio de sesión de la aplicación del Portal de empresa para Android, que pide al usuario que inicie sesión con su cuenta profesional o educativa. También se advierte de que no se aceptan cuentas Microsoft ni otras cuentas personales.](./media/and-enroll-0-welcome-screen.png)   
 
-4.  Si el equipo de soporte técnico de su empresa configuró los términos y condiciones, pulse **ACEPTAR** para aceptar los términos. Esta pantalla puede diferir ligeramente de la imagen siguiente según la versión de Android que use actualmente.
+4. Si el equipo de soporte técnico de su empresa configuró los términos y condiciones, pulse **ACEPTAR** para aceptar los términos. Esta pantalla puede diferir ligeramente de la imagen siguiente según la versión de Android que use actualmente.
 
-    ![android-company-portal-sign-in](./media/and-enroll-3-accept-terms.png)
+   ![android-company-portal-sign-in](./media/and-enroll-3-accept-terms.png)
 
-5.  Inicie sesión en la aplicación de portal de empresa con su cuenta profesional o educativa y contraseña correspondiente y, luego, pulse en **Iniciar sesión**.
+5. Inicie sesión en la aplicación de portal de empresa con su cuenta profesional o educativa y contraseña correspondiente y, luego, pulse en **Iniciar sesión**.
 
-    ![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
+   ![android-company-portal-sign-in](./media/and-enroll-2-cp-sign-in.png)
 
-6.  En la pantalla **Configuración de acceso a la empresa**, pulse **CONTINUAR**.
+6. En la pantalla **Configuración de acceso a la empresa**, pulse **CONTINUAR**.
 
-    ![Pantalla Configuración de acceso de la compañía](/intune/media/android_cp_enroll_01_1709_new.png)
+   ![Pantalla Configuración de acceso de la compañía](/intune/media/android_cp_enroll_01_1709_new.png)
 
-    > [!NOTE]
-    > Los triángulos amarillos no significan que ya haya un error. Estos iconos indican que todavía hay pasos del proceso de inscripción que deben completarse.
+   > [!NOTE]
+   > Los triángulos amarillos no significan que ya haya un error. Estos iconos indican que todavía hay pasos del proceso de inscripción que deben completarse.
 
-7.  Revise una lista sobre lo que el equipo de soporte técnico de su empresa puede y no puede ver en el dispositivo y, después, pulse **CONTINUAR**.
+7. Revise una lista sobre lo que el equipo de soporte técnico de su empresa puede y no puede ver en el dispositivo y, después, pulse **CONTINUAR**.
 
-    ![Configuración de privacidad](/intune/media/android_cp_enroll_02_after_1710.png)
+   ![Configuración de privacidad](/intune/media/android_cp_enroll_02_after_1710.png)
 
-9.  En la pantalla **What's next?** (¿Qué ocurre después?), lea lo que ocurre durante la inscripción y, luego, pulse **ENROLL** (INSCRIBIR).
+8. En la pantalla **What's next?** (¿Qué ocurre después?), lea lo que ocurre durante la inscripción y, luego, pulse **ENROLL** (INSCRIBIR).
 
-    ![Pantalla ¿Qué ocurre después?](/intune/media/android_cp_enroll_03_after_1710.png)
+   ![Pantalla ¿Qué ocurre después?](/intune/media/android_cp_enroll_03_after_1710.png)
 
-10.  Si usa Android 6.0 o posterior, realice este paso. De lo contrario, vaya al próximo paso.
+9. Si usa Android 6.0 o posterior, realice este paso. De lo contrario, vaya al próximo paso.
 
-    Si el equipo de soporte técnico de su empresa ha configurado algunas directivas, puede que aparezcan los siguientes mensajes:
-    -   **¿Permitir que el Portal de empresa realice y administre llamadas telefónicas?**
+   Si el equipo de soporte técnico de su empresa ha configurado algunas directivas, puede que aparezcan los siguientes mensajes:
+   - **¿Permitir que el Portal de empresa realice y administre llamadas telefónicas?**
 
-        ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
+     ![android-company-portal-sign-in](./media/and-enroll-3a-allow-phone-access.png)
 
-    Si ve este mensaje, pulse en **PERMITIR**. Pulsar PERMITIR no entraña riesgos, puesto que **Microsoft nunca realiza ni controla sus llamadas de teléfono**. Google es responsable del texto del mensaje, que Microsoft no puede modificar. Al permitir el acceso, lo que está haciendo es dejar que el dispositivo envíe el número de identidad de equipos de estación móvil internacional (IMEI) del dispositivo a Intune. El IMEI es un número similar a un número de serie que identifica de forma exclusiva a un dispositivo móvil.
+   Si ve este mensaje, pulse en **PERMITIR**. Pulsar PERMITIR no entraña riesgos, puesto que **Microsoft nunca realiza ni controla sus llamadas de teléfono**. Google es responsable del texto del mensaje, que Microsoft no puede modificar. Al permitir el acceso, lo que está haciendo es dejar que el dispositivo envíe el número de identidad de equipos de estación móvil internacional (IMEI) del dispositivo a Intune. El IMEI es un número similar a un número de serie que identifica de forma exclusiva a un dispositivo móvil.
 
-    Si se deniega el acceso, el mensaje aparecerá de nuevo la próxima vez que inicie sesión en el Portal de empresa, pero puede desactivar los mensajes futuros si pulsa en la casilla **No volver a preguntar**. Si más adelante decide permitir el acceso, vaya a **Configuración** &gt; **Aplicaciones** &gt; **Portal de empresa** &gt; **Permisos** &gt; **Teléfono**y active el permiso.
+   Si se deniega el acceso, el mensaje aparecerá de nuevo la próxima vez que inicie sesión en el Portal de empresa, pero puede desactivar los mensajes futuros si pulsa en la casilla **No volver a preguntar**. Si más adelante decide permitir el acceso, vaya a **Configuración** &gt; **Aplicaciones** &gt; **Portal de empresa** &gt; **Permisos** &gt; **Teléfono**y active el permiso.
 
-    -   **Allow Company Portal to access your contacts?** (¿Permitir que el Portal de empresa tenga acceso a los contactos?)
+   - **Allow Company Portal to access your contacts?** (¿Permitir que el Portal de empresa tenga acceso a los contactos?)
 
-        ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
+     ![android-company-portal-sign-in](./media/and-enroll-3b-allow-contacts-access.png)
 
-        Si ve este mensaje, pulse en **PERMITIR**. Pulsar PERMITIR no entraña riesgos, puesto que **Microsoft nunca tiene acceso a sus contactos**. Google es responsable del texto del mensaje, que Microsoft no puede modificar. Cuando permite el acceso, solo permite que la aplicación del Portal de empresa cree, use y administre su cuenta profesional.
+     Si ve este mensaje, pulse en **PERMITIR**. Pulsar PERMITIR no entraña riesgos, puesto que **Microsoft nunca tiene acceso a sus contactos**. Google es responsable del texto del mensaje, que Microsoft no puede modificar. Cuando permite el acceso, solo permite que la aplicación del Portal de empresa cree, use y administre su cuenta profesional.
 
-        Si se deniega el acceso, el mensaje aparecerá de nuevo la próxima vez que inicie sesión en el Portal de empresa, pero puede desactivar los mensajes futuros si pulsa en la casilla **No volver a preguntar**. Si más adelante decide permitir el acceso, vaya a **Configuración** &gt; **Aplicaciones** &gt; **Portal de empresa** &gt; **Permisos** &gt; **Teléfono**y active el permiso.
+     Si se deniega el acceso, el mensaje aparecerá de nuevo la próxima vez que inicie sesión en el Portal de empresa, pero puede desactivar los mensajes futuros si pulsa en la casilla **No volver a preguntar**. Si más adelante decide permitir el acceso, vaya a **Configuración** &gt; **Aplicaciones** &gt; **Portal de empresa** &gt; **Permisos** &gt; **Teléfono**y active el permiso.
 
-11.  En la pantalla **Activar administrador del dispositivo**, pulse **Activar**.
+10. En la pantalla **Activar administrador del dispositivo**, pulse **Activar**.
 
     ![Pantalla Activate device administrator (Activar administrador del dispositivo)](./media/and-enroll-5-activate.png)
 
@@ -95,11 +95,11 @@ Antes o después de la inscripción, se le pedirá que elija una categoría que 
 
     Microsoft no controla este mensaje, y somos conscientes de que su redacción puede parecer un poco drástica. No hay una forma de que el Portal de empresa muestre solo las restricciones y el acceso que son relevantes para su organización. Todos ellos aparecen a la vez en esta pantalla. Póngase en contacto con el equipo de soporte técnico de su empresa para obtener más información, usando la información de contacto que aparece en el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog), si tiene preguntas específicas sobre el uso de su organización.
 
-12.  Siga las instrucciones para escribir un PIN o contraseña. Si ya ha configurado un PIN o una contraseña en este dispositivo, no verá esta pantalla y no deberá escribir un PIN o contraseña nueva.
+11. Siga las instrucciones para escribir un PIN o contraseña. Si ya ha configurado un PIN o una contraseña en este dispositivo, no verá esta pantalla y no deberá escribir un PIN o contraseña nueva.
 
     ![Escriba el PIN o la contraseña](./media/and-enroll-6-PIN-native.png)
 
-13.  Si usa un dispositivo Samsung Knox, pulse **Confirmar** y verá un mensaje que indica que el dispositivo se está inscribiendo. Si usa un dispositivo Android nativo, solo verá la pantalla siguiente, que muestra que el dispositivo se está inscribiendo.
+12. Si usa un dispositivo Samsung Knox, pulse **Confirmar** y verá un mensaje que indica que el dispositivo se está inscribiendo. Si usa un dispositivo Android nativo, solo verá la pantalla siguiente, que muestra que el dispositivo se está inscribiendo.
 
     ![Directiva de privacidad de Samsung Knox](./media/and-enroll-7-knox-privacy-policy.png)
 
@@ -107,7 +107,7 @@ Antes o después de la inscripción, se le pedirá que elija una categoría que 
 
     ![Pantalla Inscribiendo el dispositivo...](./media/and-enroll-8-device-enrolling.png)
 
-14. Cuando aparezca la pantalla **Configuración de acceso de la compañía**, pulse **CONTINUAR**. Si un mensaje indica que el dispositivo es incompatible, siga las instrucciones para solucionar el problema y luego pulse **CONTINUAR**.
+13. Cuando aparezca la pantalla **Configuración de acceso de la compañía**, pulse **CONTINUAR**. Si un mensaje indica que el dispositivo es incompatible, siga las instrucciones para solucionar el problema y luego pulse **CONTINUAR**.
 
     ![El dispositivo no cumple las directivas, pero está inscrito.](/intune/media/android_cp_enroll_05_post_1709.png)
 
@@ -119,7 +119,7 @@ Antes o después de la inscripción, se le pedirá que elija una categoría que 
 
     ![Pantalla Configuración de acceso de la compañía](./media/and-enroll-9d-comp-access-setup.png)  
 
-15. En la pantalla **Configuración de acceso de la compañía completada**, pulse **LISTO**. El dispositivo ya está inscrito.
+14. En la pantalla **Configuración de acceso de la compañía completada**, pulse **LISTO**. El dispositivo ya está inscrito.
 
     ![Pantalla Configuración de acceso a la empresa completada](./media/and-enroll-10-comp-access-setup-complete.png)
 

@@ -1,28 +1,28 @@
 ---
-title: "Agregar una configuración personalizada para dispositivos Android en Microsoft Intune: Azure | Microsoft Docs"
-description: "Agregue o cree un perfil personalizado para dispositivos Android para crear un perfil de Wi-Fi con una clave precompartida, cree un perfil de VPN por aplicación o bien permita o bloquee aplicaciones para dispositivos Samsung Knox Standard en Microsoft Intune"
-keywords: 
+title: 'Agregar una configuración personalizada para dispositivos Android en Microsoft Intune: Azure | Microsoft Docs'
+description: Agregue o cree un perfil personalizado para dispositivos Android para crear un perfil de Wi-Fi con una clave precompartida, cree un perfil de VPN por aplicación o bien permita o bloquee aplicaciones para dispositivos Samsung Knox Standard en Microsoft Intune
+keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 494b3892-916e-4b40-9b67-61adec889bdf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: aa105cc96cd0fa7d8c6beb32cdb80b7782d9828c
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: 0195e138b59fae019fa2bc02aadf211257a65cac
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="custom-settings-for-android-devices---intune"></a>Configuración personalizada para dispositivos Android: Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Los perfiles personalizados usan la configuración OMA-URI (identificador uniforme de recursos de Open Mobile Alliance) para configurar diferentes características en dispositivos Android. Esta configuración la suelen usar los fabricantes de dispositivos móviles para controlar las características en el dispositivo.
 
@@ -43,13 +43,13 @@ Si usa un perfil personalizado, puede configurar y asignar los siguientes valore
 4. En **Configuración OMA-URI personalizada**, seleccione **Agregar** y, luego, **Agregar fila**.
 5. Introduzca las siguientes propiedades:
 
-  - **Nombre**: escriba un nombre único para la configuración OMA-URI para que pueda encontrarla fácilmente.
-  - **Descripción**: escriba una descripción que ofrezca información general sobre la configuración y otros detalles importantes.
-  - **Tipo de datos**: especifique el tipo de datos que se usará para esta configuración OMA-URI. Elija entre **Cadena**, **Cadena (XML)**, **Fecha y hora**, **Entero**, **Punto flotante** o **Booleano**.
-  - **OMA-URI**: especifique el OMA-URI que quiera.
-  - **Valor**: escriba el valor que quiere asociar con la configuración OMA-URI especificada.
+   - **Nombre**: escriba un nombre único para la configuración OMA-URI para que pueda encontrarla fácilmente.
+   - **Descripción**: escriba una descripción que ofrezca información general sobre la configuración y otros detalles importantes.
+   - **Tipo de datos**: especifique el tipo de datos que se usará para esta configuración OMA-URI. Elija entre **Cadena**, **Cadena (XML)**, **Fecha y hora**, **Entero**, **Punto flotante** o **Booleano**.
+   - **OMA-URI**: especifique el OMA-URI que quiera.
+   - **Valor**: escriba el valor que quiere asociar con la configuración OMA-URI especificada.
 
-6. Seleccione **Aceptar** para guardar los cambios. Continúe agregando más valores según sea necesario.
+6. Haga clic en **Aceptar** para guardar los cambios. Continúe agregando más valores según sea necesario.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

@@ -1,28 +1,28 @@
 ---
 title: Directivas para proteger equipos de Windows
-description: "Use estas directivas para ayudar a garantizar la seguridad de los PC de Windows cuando estén administrados por el software cliente de Intune."
-keywords: 
+description: Use estas directivas para ayudar a garantizar la seguridad de los PC de Windows cuando estén administrados por el software cliente de Intune.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: angrobe
 ms.date: 12/27/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: d081f466-45dd-41d1-ab25-6d974c72a52a
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: cf12d6c96371cc1f9b79c83586879ab25dbe98ff
-ms.sourcegitcommit: 3b397b1dcb780e2f82a3d8fba693773f1a9fcde1
+ms.openlocfilehash: 8f372d2e8b770e536da08c7b89a760c78ea38fb4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="use-policies-to-help-protect-windows-pcs-that-run-the-intune-client-software"></a>Usar directivas para ayudar a proteger los equipos Windows que ejecutan el software cliente de Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Microsoft Intune ofrece tres directivas que se pueden usar para garantizar la seguridad de los equipos Windows que administra el [software cliente de Intune](manage-windows-pcs-with-microsoft-intune.md).
 
@@ -41,5 +41,5 @@ Como administrador de TI, una de sus principales prioridades es [proteger los eq
 
 
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)

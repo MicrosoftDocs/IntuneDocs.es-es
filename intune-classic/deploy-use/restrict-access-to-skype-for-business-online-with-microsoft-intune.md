@@ -1,29 +1,29 @@
 ---
-title: "Protección de Skype Empresarial Online"
+title: Protección de Skype Empresarial Online
 description: Proteja y controle el acceso a Skype Empresarial Online con el acceso condicional.
-keywords: 
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 1b2d7125-f63f-43cf-ac1e-94fbedf2a7e8
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 30d1abb3e7411cae73a98be51489cffdfc738e7f
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: d9d912cc0a2d8f815e046d888fc8878a8703c514
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-skype-for-business-online-with-microsoft-intune"></a>Proteger el acceso a Skype Empresarial Online con Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Puede usar una directiva de acceso condicional para **Skype Empresarial Online** a fin de controlar el acceso a Skype Empresarial Online.
 El acceso condicional tiene dos componentes:
@@ -87,23 +87,23 @@ Cuando esté listo, continúe en el **paso 3**.
 ### <a name="step-3-configure-the-skype-for-business-online-policy"></a>Paso 3: Configurar la directiva de Skype Empresarial Online
 Después, configure la directiva para requerir que solo los dispositivos administrados y conformes puedan tener acceso a Skype Empresarial Online. Esta directiva se almacenará en Azure Active Directory.
 
-1.  En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), elija **Directiva** > **Acceso condicional** > **Directiva de Skype Empresarial Online**.
+1. En la [consola de administración de Microsoft Intune](https://manage.microsoft.com), elija **Directiva** > **Acceso condicional** > **Directiva de Skype Empresarial Online**.
 
-  ![Captura de pantalla de la página de la directiva de acceso condicional de Skype Empresarial Online](./media/conditional_access_SFBPolicy.png)
+   ![Captura de pantalla de la página de la directiva de acceso condicional de Skype Empresarial Online](./media/conditional_access_SFBPolicy.png)
 
-2.  Elija **Habilitar la directiva de acceso condicional**.
+2. Elija **Habilitar la directiva de acceso condicional**.
 
-3.  En **Acceso a la aplicación**, puede elegir aplicar la directiva de acceso condicional a:
+3. En **Acceso a la aplicación**, puede elegir aplicar la directiva de acceso condicional a:
 
-    -   **iOS**
+   -   **iOS**
 
-    -   **Android**
+   -   **Android**
 
-4.  En **Grupos de destino**, seleccione **Modificar** para seleccionar los grupos de seguridad de Azure Active Directory a los que se aplicará la directiva. Puede elegir aplicarla a todos los usuarios o solo a un grupo específico de usuarios.
+4. En **Grupos de destino**, seleccione **Modificar** para seleccionar los grupos de seguridad de Azure Active Directory a los que se aplicará la directiva. Puede elegir aplicarla a todos los usuarios o solo a un grupo específico de usuarios.
 
-5.  En **Grupos exentos**, opcionalmente, elija **Modificar** para seleccionar los grupos de seguridad de Azure Active Directory exentos de esta directiva.
+5. En **Grupos exentos**, opcionalmente, elija **Modificar** para seleccionar los grupos de seguridad de Azure Active Directory exentos de esta directiva.
 
-6.  Cuando termine, elija **Guardar**.
+6. Cuando termine, elija **Guardar**.
 
 Acaba de configurar el acceso condicional para Skype Empresarial Online. No es necesario implementar la directiva de acceso condicional, ya que surte efecto inmediatamente.
 

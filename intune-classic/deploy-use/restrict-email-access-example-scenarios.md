@@ -1,29 +1,29 @@
 ---
-title: "Escenarios de protección de correo electrónico"
-description: "Algunos escenarios de ejemplo y cómo se pueden implementar con el acceso condicional."
-keywords: 
+title: Escenarios de protección de correo electrónico
+description: Algunos escenarios de ejemplo y cómo se pueden implementar con el acceso condicional.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 01/03/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 454eab79-b620-42c9-b8e6-fada6e719fcd
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 1ca486ca9eab1ebb8a446b560ff5e265eb4d2712
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 3116cfdb6b1ea153d914630a23e0db82a8c31d85
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="protect-access-to-email-with-microsoft-intune-example-scenarios"></a>Proteger el acceso al correo electrónico con Microsoft Intune: escenarios de ejemplo
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 ## <a name="scenario-1-block-users-from-using-noncompliant-devices-to-access-exchange-online"></a>Escenario 1: Impida que los usuarios usen dispositivos no conformes para tener acceso a Exchange Online
 ### <a name="scenario-requirements"></a>Requisitos del escenario
@@ -53,9 +53,9 @@ El siguiente flujo se usa en el escenario para decidir los dispositivos que pued
 
 Para ello, configure la siguiente directiva de acceso condicional para Exchange local con las siguientes opciones:
 
--   Elija la opción **Bloquear el acceso a Exchange local a las aplicaciones de correo electrónico si el dispositivo no cumple los requisitos no está inscrito en Microsoft Intune**. Si elige esta opción, habilita la directiva de acceso condicional, que requiere que todos los dispositivos se inscriban en Microsoft Intune y cumplan las reglas de la directiva de cumplimiento para poder tener acceso a Exchange.
+- Elija la opción **Bloquear el acceso a Exchange local a las aplicaciones de correo electrónico si el dispositivo no cumple los requisitos no está inscrito en Microsoft Intune**. Si elige esta opción, habilita la directiva de acceso condicional, que requiere que todos los dispositivos se inscriban en Microsoft Intune y cumplan las reglas de la directiva de cumplimiento para poder tener acceso a Exchange.
 
--   Para la configuración avanzada de Exchange Active Sync, cree:
+- Para la configuración avanzada de Exchange Active Sync, cree:
 
   -   Una excepción de plataforma que permite que los dispositivos que ejecutan iOS tengan acceso a Exchange.   
 
