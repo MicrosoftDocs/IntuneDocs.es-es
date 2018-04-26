@@ -15,17 +15,17 @@ ms.assetid: A7A174EC-109D-4BB8-B460-F53AA2D033E6
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b09622db88288ccc5b4866cb71ba902d969c0487
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: 2b25140cb5c3c8c70ff42186352362c57dcf6ee7
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Punto de conexión de la API de Almacenamiento de datos de Intune
 
 Puede usar la API de Almacenamiento de datos de Intune con una cuenta con controles de acceso basados en roles específicos y credenciales de Azure AD. Después, autorizará al cliente REST con Azure AD mediante OAuth 2.0 y, por último, formará una dirección URL significativa para llamar a un recurso de almacenamiento de datos.
 
-[!INCLUDE[reports-credential-reqs](./includes/reports-credential-reqs.md)]
+[!INCLUDE [reports-credential-reqs](./includes/reports-credential-reqs.md)]
 
 ## <a name="authorization"></a>Autorización
 
@@ -38,7 +38,7 @@ Para obtener más información, vea [Autorización del acceso a aplicaciones web
 Los puntos de conexión de la API de Almacenamiento de datos leen las entidades de cada conjunto. La API admite un verbo HTTP **GET** y un subconjunto de opciones de consulta.
 
 La dirección URL de Intune usa el formato siguiente:  
-https://fef.{***location***}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{***entity-collection***}?api-version={***api-version***}
+https://fef.{<strong><em>location</em></strong>}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{<strong><em>entity-collection</em></strong>}?api-version={<strong><em>api-version</em></strong>}
 
 La dirección URL contiene los elementos siguientes:
 

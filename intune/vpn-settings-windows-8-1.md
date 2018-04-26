@@ -1,27 +1,27 @@
 ---
-title: "Configuración de VPN de Microsoft Intune para dispositivos Windows 8.1"
-titleSuffix: 
-description: "Obtenga información sobre la configuración de Intune que puede usar para configurar conexiones VPN en dispositivos que ejecutan Windows 8.1."
-keywords: 
+title: Configuración de VPN de Microsoft Intune para dispositivos Windows 8.1
+titleSuffix: ''
+description: Obtenga información sobre la configuración de Intune que puede usar para configurar conexiones VPN en dispositivos que ejecutan Windows 8.1.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8ced3e03fa337034076af75c7984a30cd75105bb
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: cbcc3be31a6d9de7ce87ea5b25b8c1a2c42b47cd
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-81"></a>Configuración de VPN en Microsoft Intune para dispositivos que ejecutan Windows 8.1
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 En este artículo, se muestra la configuración de Intune que puede usar para configurar conexiones VPN en dispositivos que ejecutan Windows 8.1.
 
@@ -61,26 +61,22 @@ Según la configuración que elija, no todos los valores de la lista siguiente s
 
 ```
     <pulse-schema><isSingleSignOnCredential>true</isSingleSignOnCredential></pulse-schema>
-
 ```
 
 **Ejemplo para CheckPoint Mobile VPN:**
 ```
     <CheckPointVPN port="443" name="CheckPointSelfhost" sso="true" debug="3" />
-
 ```
 
 **Ejemplo de SonicWall Mobile Connect:**
 ```
     <MobileConnect><Compression>false</Compression><debugLogging>True</debugLogging><packetCapture>False</packetCapture></MobileConnect>
-
 ```
 
 **Ejemplo para F5 Edge Client:**
 
 ```
     <f5-vpn-conf><single-sign-on-credential /></f5-vpn-conf>
-
 ```
 
 Para obtener más información, consulte la documentación de VPN de cada fabricante sobre cómo escribir comandos XML personalizados.
@@ -89,7 +85,7 @@ Para obtener más información, consulte la documentación de VPN de cada fabric
 ## <a name="proxy-settings"></a>Configuración del proxy
 
 - **Detectar automáticamente configuración de proxy**: si el servidor VPN requiere un servidor proxy para la conexión, especifique si quiere que los dispositivos detecten automáticamente la configuración de la conexión. Para más información, vea la documentación de Windows Server.
-- **Script de configuración automática**: use un archivo para configurar el servidor proxy. Escriba la **dirección URL del servidor proxy** (por ejemplo **http://proxy.contoso.com**) que contiene el archivo de configuración.
+- **Script de configuración automática**: use un archivo para configurar el servidor proxy. Escriba la **URL del servidor proxy** (por ejemplo, **http://proxy.contoso.com**) que contiene el archivo de configuración.
 - **Usar servidor proxy**: habilite esta opción si quiere especificar manualmente la configuración del servidor proxy.
     - **Dirección**: escriba la dirección del servidor proxy (como una dirección IP).
     - **Número de puerto**: especifique el número de puerto asociado con el servidor proxy.

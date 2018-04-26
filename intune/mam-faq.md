@@ -14,11 +14,11 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0ab616c373482109ccd402199f7b0de69fe27348
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 74f5a7b2e4aab1758922902c1af9c385a7bff69f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Preguntas más frecuentes sobre MAM y la protección de la aplicación
 
@@ -63,7 +63,7 @@ Este artículo proporciona respuestas a algunas preguntas frecuentes sobre la ad
 - El usuario final debe tener una licencia y buzón de correo de [Office 365 Exchange Online](https://products.office.com/exchange/exchange-online) vinculados a su cuenta de Azure Active Directory.
 
   >[!NOTE]
-  > Actualmente, la aplicación móvil de Outlook solo es compatible con Microsoft Exchange Online y no admite Exchange local o Exchange en Office 365 dedicado.
+  > Actualmente, la aplicación móvil de Outlook solo es compatible con Intune App Protection para Microsoft Exchange Online y [Exchange Server con autenticación moderna híbrida](https://technet.microsoft.com/en-us/library/mt846639(v=exchg.160).aspx) y no admite Exchange en Office 365 dedicado.
 
 **¿Cuáles son los requisitos adicionales para usar las aplicaciones [Word, Excel y PowerPoint](https://products.office.com/business/office)?**
 

@@ -1,29 +1,29 @@
 ---
 title: Uso de aplicaciones con CA MAM
-description: "Comprenda los conceptos de cómo el acceso condicional para MAM puede ayudar a controlar qué aplicaciones tienen acceso a los servicios de Office 365."
-keywords: 
+description: Comprenda los conceptos de cómo el acceso condicional para MAM puede ayudar a controlar qué aplicaciones tienen acceso a los servicios de Office 365.
+keywords: ''
 author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.date: 10/24/2016
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 71dcf9bc-bfd1-4e06-b7ad-14b33a2288d0
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 725783751c13b2301e7fbef4dea1a47bc339c8b7
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 2f313fcbfa26c8f82708f8f830404da97a3eca25
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="what-to-expect-when-using-an-app-with-app-based-ca"></a>¿Qué se puede esperar al usar una aplicación con acceso condicional basado en la aplicación?
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 El acceso condicional basado en la aplicación comprueba la identidad de la aplicación aprobada por medio de una aplicación de agente que debe estar presente en el dispositivo:
 *  En **iOS**, la **aplicación Azure Authenticator** es la aplicación de agente.
@@ -40,8 +40,8 @@ La siguiente es una lista de propiedades que se obtienen directamente del dispos
 
 > [!NOTE]
 > En dispositivos Android:
-  * Es necesario que la aplicación Portal de empresa esté instalada en el dispositivo, pero no es necesario que el usuario final inicie sesión en esa aplicación.
-  * El registro de dispositivos se debe hacer mediante OneDrive o la aplicación Outlook.
+>   * Es necesario que la aplicación Portal de empresa esté instalada en el dispositivo, pero no es necesario que el usuario final inicie sesión en esa aplicación.
+>   * El registro de dispositivos se debe hacer mediante OneDrive o la aplicación Outlook.
 
 ## <a name="to-remove-a-device-from-azure-ad-registration"></a>Para quitar un dispositivo del registro de Azure AD
 Es posible quitar el registro del dispositivo a través de la consola de administración de Azure AD, lo que suele llevar a cabo el administrador de TI.  También puede hacerlo el usuario final en el propio dispositivo.
@@ -52,7 +52,7 @@ Es posible quitar el registro del dispositivo a través de la consola de adminis
 
 ## <a name="app-based-ca-with-device-based-ca"></a>Entidad de certificación basada en la aplicación con entidad de certificación basada en dispositivos  
 
-Puede configurar el [acceso condicional basado en el cumplimiento del dispositivo](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (**acceso condicional del dispositivo**) en la [consola de administrador de Intune](https://manage.microsoft.com) o en la [consola de administración de Azure AD Premium] (https://manage.windowsazure.com). El acceso condicional del dispositivo requiere que los usuarios se conecten a Exchange Online solo a través de los dispositivos administrados por Intune que sean compatibles con la directiva de cumplimiento del dispositivo de Intune o equipos unidos a un dominio.  Si un usuario pertenece a uno o varios grupos de seguridad que tienen como destino las directivas del acceso condicional basado en la aplicación y del acceso condicional del dispositivo, este debe cumplir uno de los dos requisitos siguientes:
+Puede configurar el [acceso condicional basado en el cumplimiento del dispositivo](restrict-access-to-email-and-o365-services-with-microsoft-intune.md) (<strong>acceso condicional del dispositivo</strong>) en la [consola de administrador de Intune](https://manage.microsoft.com) o en la [consola de administración de Azure AD Premium](https://manage.windowsazure.com). El acceso condicional del dispositivo requiere que los usuarios se conecten a Exchange Online solo a través de los dispositivos administrados por Intune que sean compatibles con la directiva de cumplimiento del dispositivo de Intune o equipos unidos a un dominio.  Si un usuario pertenece a uno o varios grupos de seguridad que tienen como destino las directivas del acceso condicional basado en la aplicación y del acceso condicional del dispositivo, este debe cumplir uno de los dos requisitos siguientes:
 * La aplicación que se utiliza para acceder al servicio es una aplicación móvil compatible. 
 * El dispositivo en el que se está ejecutando la aplicación tiene el **autenticador de iOS (para dispositivos iOS)** o la **aplicación del Portal de empresa (para dispositivos Android)** instalados.
 * El dispositivo utilizado para acceder al servicio está **administrado y es conforme con Intune** con la directiva de cumplimiento del dispositivo de Intune o es un **equipo unido al dominio**.  Estos son algunos ejemplos para ayudar a ilustrar esto:
@@ -64,6 +64,6 @@ Puede configurar el [acceso condicional basado en el cumplimiento del dispositiv
 
 [Bloqueo de aplicaciones que no usan la autenticación moderna](block-apps-with-no-modern-authentication.md)
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 
 [Protección de datos de aplicaciones con directivas de protección de aplicaciones](protect-app-data-using-mobile-app-management-policies-with-microsoft-intune.md)

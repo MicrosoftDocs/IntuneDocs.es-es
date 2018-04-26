@@ -1,27 +1,26 @@
 ---
-title: Configuración de restricción de dispositivos de Microsoft Intune para Windows Holographic for Business
-titleSuffix: ''
-description: Obtenga información sobre la configuración de Intune que se puede usar para controlar los valores de configuración y la funcionalidad en dispositivos que ejecutan Windows Holographic for Business.
+title: 'Restricciones de dispositivos de Windows Holographic for Business en Microsoft Intune: Azure | Microsoft Docs'
+description: Conozca y configure las opciones de restricción de dispositivos de Microsoft Intune para Windows Holographic for Business, incluidas la cancelación de la suscripción, la geolocalización, las contraseñas, la instalación de aplicaciones desde App Store, las cookies y los elementos emergentes de Edge, Windows Defender, la búsqueda, la nube y el almacenamiento, la conectividad de Bluetooth, la hora del sistema y los datos de uso de Azure.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 4/9/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 694b81434a95f48abc98f5012460523420df58cc
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 5b0784aeb1dc1022b4be824c2f858f9525d03918
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="microsoft-intune-windows-holographic-for-business-device-restriction-settings"></a>Configuración de restricciones de dispositivos Windows Holographic for Business de Microsoft Intune
+# <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Configuración de restricción de dispositivos de Windows Holographic for Business en Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Se admiten las siguientes configuraciones de restricciones de dispositivos en dispositivos que ejecutan Windows Holographic for Business, como Microsoft HoloLens.
 
@@ -31,13 +30,9 @@ Se admiten las siguientes configuraciones de restricciones de dispositivos en di
 - **Cortana**: habilita o deshabilita el asistente de voz de Cortana.
 - **Geolocation** (Geolocalización): especifica si el dispositivo puede usar la información de servicios de ubicación.
 
-
-
 ## <a name="password"></a>Contraseña
 -   **Contraseña**: exige que el usuario final escriba una contraseña para acceder al dispositivo.
     -   **Requerir contraseña cuando el dispositivo vuelve de un estado de inactividad**: especifica que el usuario debe escribir una contraseña para desbloquear el dispositivo.
-
-
 
 ## <a name="app-store"></a>Tienda de aplicaciones
 
@@ -47,7 +42,6 @@ Se admiten las siguientes configuraciones de restricciones de dispositivos en di
 
 ## <a name="edge-browser"></a>Explorador Microsoft Edge
 
--   **Explorador de Microsoft Edge**: permite el uso del explorador web Edge en el dispositivo.
 -   **Cookies**: permite que el explorador guarde cookies de Internet en el dispositivo.
 -   **Ventanas emergentes**: bloquea las ventanas emergentes en el explorador (solo se aplica a Windows 10 Escritorio).
 -   **Search suggestions** (Sugerencias de búsqueda): permite que el motor de búsqueda sugiera sitios a medida que se escriben las frases de búsqueda.
@@ -61,7 +55,6 @@ Se admiten las siguientes configuraciones de restricciones de dispositivos en di
 ## <a name="search"></a>Buscar
 - **Ubicación de búsqueda**: especifica si la búsqueda puede usar la ubicación. Información de
 
-
 ## <a name="cloud-and-storage"></a>Nube y almacenamiento
 -   **Cuenta Microsoft**: permite al usuario asociar una cuenta de Microsoft con el dispositivo.
 
@@ -74,6 +67,24 @@ Se admiten las siguientes configuraciones de restricciones de dispositivos en di
 ## <a name="control-panel-and-settings"></a>Panel de control y configuración
 
 - **Modificación de la hora del sistema**: evita que el usuario final cambie la fecha y hora del dispositivo.
+
+## <a name="kiosk-preview"></a>Quiosco (versión preliminar)
+
+Normalmente, un dispositivo de pantalla completa ejecuta una aplicación específica. A los usuarios no se les permite el acceso a características o funciones del dispositivo que está fuera de la aplicación de pantalla completa.
+
+- **Pantalla completa**: identifica el tipo de pantalla completa admitido por la directiva. Las opciones son:
+
+  - **No configurado** (valor predeterminado): la directiva no habilita una pantalla completa. 
+  - **Pantalla completa con una sola aplicación**: el perfil permite que el dispositivo solo ejecute una aplicación. Cuando el usuario inicia sesión, se inicia una aplicación concreta. Este modo también evita que el usuario abra nuevas aplicaciones o modifique la aplicación en ejecución.
+
+#### <a name="single-app-kiosks"></a>Pantallas completas con una sola aplicación
+Escriba los valores siguientes:
+
+- **Cuenta de usuario**: especifique la cuenta de usuario local (en el dispositivo) o el inicio de sesión de cuenta de Azure AD asociado a la aplicación de pantalla completa. En el caso de las cuentas unidas a dominios de Azure AD, especifique la cuenta con el formato `domain\username@tenant.org`. 
+
+    En el caso de las pantallas completas en entornos de uso público con inicio de sesión automático habilitado, se debe usar un tipo de usuario con los privilegios mínimos (por ejemplo, la cuenta de usuario estándar local). Para configurar una cuenta de Azure Active Directory (AD) para el modo de pantalla completa, use el formato `AzureAD\user@contoso.com`.
+
+- **Identificador de modelo de usuario de la aplicación (AUMID)**: especifique el AUMID de la aplicación de pantalla completa. Para más información, vea [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Buscar el identificador de modelo de usuario de aplicación de una aplicación instalada).
 
 ## <a name="reporting-and-telemetry"></a>Informes y telemetría
 

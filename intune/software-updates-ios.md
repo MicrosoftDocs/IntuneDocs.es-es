@@ -11,11 +11,11 @@ ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: 39432d09bea822c25ca9e11181a11a1e2298dfef
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 58727a501d6a8ec14e964094eac9fcd6eb3868da
+ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="configure-ios-update-policies-in-microsoft-intune"></a>Configurar directivas de actualización de iOS en Microsoft Intune
 
@@ -55,3 +55,4 @@ Ya ha aplicado la directiva a los usuarios o dispositivos. Se evalúa la comprob
 ## <a name="monitor-ios-device-installation-failures"></a>Supervisión de errores de instalación de dispositivos iOS
 <!-- 1352223 -->
 El informe **Errores de instalación de dispositivos iOS** está disponible en el panel **Actualizaciones de software**. En el informe puede ver una lista de dispositivos iOS supervisados que fueron objetivo de una directiva de actualización de iOS y que han intentado llevar a cabo una actualización, pero que no la completaron. Para cada dispositivo, puede ver un estado por el que el dispositivo no se ha actualizado automáticamente. Los dispositivos actualizados y que estén en buen estado no figurarán en la lista. Por "actualizados" entendemos la actualización más reciente que puede admitir el propio dispositivo.
+

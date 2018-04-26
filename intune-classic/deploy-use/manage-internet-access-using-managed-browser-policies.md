@@ -15,15 +15,15 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 559866fff63b0ad77a43ce337adede5cd8b27302
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 9781af943dbfb782cf367257127021473e35c168
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Administrar el acceso a Internet mediante directivas de explorador administrado con Microsoft Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 El explorador administrado es una aplicación de exploración web que puede implementar en su organización mediante Microsoft Intune. Una directiva de explorador administrado configura una lista de permitidos o una lista de bloqueados que restringe los sitios web que pueden visitar los usuarios del explorador administrado.
 
@@ -99,52 +99,52 @@ Microsoft recopila automáticamente datos anónimos sobre el rendimiento y el us
 ### <a name="url-format-for-allowed-and-blocked-urls"></a>Formato de dirección URL para las direcciones URL permitidas y bloqueadas
 Use la siguiente información para conocer los formatos permitidos y los caracteres comodín que puede usar al especificar direcciones URL en las listas de permitidos y bloqueados:
 
--   Puede usar el carácter comodín (**&#42;**) según las reglas de la siguiente lista de patrones permitidos.
+- Puede usar el carácter comodín (**&#42;**) según las reglas de la siguiente lista de patrones permitidos.
 
--   Asegúrese de anteponer **http** o **https** a todas las direcciones URL al introducirlas en la lista.
+- Asegúrese de anteponer **http** o **https** a todas las direcciones URL al introducirlas en la lista.
 
--   Puede especificar números de puerto en la dirección. Si no especifica un número de puerto, los valores usados serán:
+- Puede especificar números de puerto en la dirección. Si no especifica un número de puerto, los valores usados serán:
 
-    -   Puerto 80 para http
+  -   Puerto 80 para http
 
-    -   Puerto 443 para https
+  -   Puerto 443 para https
 
-    No se admite el uso de caracteres comodín para el número de puerto. Por ejemplo, **http&colon;//www&period;contoso&period;com:*;** y **http&colon;//www&period;contoso&period;com: /*;** no son compatibles.
+  No se admite el uso de caracteres comodín para el número de puerto. Por ejemplo, <strong>http&colon;//www&period;contoso&period;com:*;</strong> y <strong>http&colon;//www&period;contoso&period;com: /*;</strong> no se admiten.
 
--   Use la siguiente tabla para obtener información sobre los patrones permitidos que puede usar al especificar direcciones URL:
+- Use la siguiente tabla para obtener información sobre los patrones permitidos que puede usar al especificar direcciones URL:
 
-|Dirección URL|Detalles|Coincide|No coincide|
-    |-------|---------------|-----------|------------------|
-    |http://www.contoso.com|Coincide con una sola página|www.contoso.com|host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/|
-    |http://contoso.com|Coincide con una sola página|contoso.com/|host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com|
-    |http://www.contoso.com/&#42;|Coincide con todas las direcciones URL que comienzan con www.contoso.com|www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows|host.contoso.com<br /><br />host.contoso.com/images|
-    |http://&#42;.contoso.com/&#42;|Coincide con todos los subdominios en contoso.com|developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/images|contoso.host.com|
-    |http://www.contoso.com/images|Coincide con una sola carpeta|www.contoso.com/images|www.contoso.com/images/dogs|
-    |http://www.contoso.com:80|Coincide con una sola página, con un número de puerto|http://www.contoso.com:80||
-    |https://www.contoso.com|Coincide con una sola página segura|https://www.contoso.com|http://www.contoso.com|
-    |http://www.contoso.com/images/&#42;|Coincide con una sola carpeta y todas sus subcarpetas|www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats|www.contoso.com/videos|
+|                  Dirección URL                  |                     Detalles                      |                                                Coincide                                                |                                No coincide                                 |
+|---------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
+|        http://www.contoso.com         |              Coincide con una sola página               |                                            www.contoso.com                                            |  host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/   |
+|          http://contoso.com           |              Coincide con una sola página               |                                             contoso.com/                                              | host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com |
+|    <http://www.contoso.com/&#42>;     | Coincide con todas las direcciones URL que comienzan con www.contoso.com |      www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
+|    http://&#42;.contoso.com/&#42;     |     Coincide con todos los subdominios en contoso.com     | developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/images |                               contoso.host.com                                |
+|     http://www.contoso.com/images     |             Coincide con una sola carpeta              |                                        www.contoso.com/images                                         |                          www.contoso.com/images/dogs                          |
+|       http://www.contoso.com:80       |  Coincide con una sola página, con un número de puerto   |                                       http://www.contoso.com:80                                       |                                                                               |
+|        https://www.contoso.com        |          Coincide con una sola página segura           |                                        https://www.contoso.com                                        |                            http://www.contoso.com                             |
+| <http://www.contoso.com/images/&#42>; |    Coincide con una sola carpeta y todas sus subcarpetas    |                  www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats                   |                            www.contoso.com/videos                             |
 
--   Los siguientes son ejemplos de algunas de las entradas que no se pueden especificar:
+- Los siguientes son ejemplos de algunas de las entradas que no se pueden especificar:
 
-    -   &#42;.com
+  - &#42;.com
 
-    -   &#42;.contoso/&#42;
+  - &#42;.contoso/&#42;
 
-    -   www.contoso.com/&#42;images
+  - www.contoso.com/&#42;images
 
-    -   www.contoso.com/&#42;images&#42;pigs
+  - www.contoso.com/&#42;images&#42;pigs
 
-    -   www.contoso.com/page&#42;
+  - www.contoso.com/page&#42;
 
-    -   Direcciones IP
+  - Direcciones IP
 
-    -   https://&#42;
+  - https://&#42;
 
-    -   http://&#42;
+  - http://&#42;
 
-    -   http://www.contoso.com:&#42;
+  - http://www.contoso.com:&#42;
 
-    -   http://www.contoso.com: /&#42;
+  - http://www.contoso.com: /&#42;
 
 ### <a name="how-conflicts-between-the-allow-and-block-list-are-resolved"></a>Cómo se resuelven los conflictos entre las listas de permitidos y bloqueados
 Si se implementan varias directivas de explorador administrado en un dispositivo y la configuración presenta conflictos, tanto el modo (permitir o bloquear) como las listas de direcciones URL se evalúan para detectar conflictos. En caso de conflicto, se aplica el comportamiento siguiente:

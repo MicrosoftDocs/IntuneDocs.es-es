@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/01/2018
+ms.date: 03/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,15 +15,15 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 186f6c1749d94a995ad145ca535bb59c6f02875c
-ms.sourcegitcommit: a22309174e617e59ab0cdd0a55abde38711a5f35
+ms.openlocfilehash: aed2bec6e6fea40fdbd78bc487896d167d036f06
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Configuración de la aplicación Portal de empresa de Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 El Portal de empresa de Intune es el lugar donde los usuarios tienen acceso a los datos de la compañía y pueden realizar tareas habituales como, por ejemplo, inscribir dispositivos, instalar aplicaciones y buscar información de ayuda del departamento de TI.        
 
@@ -36,14 +36,14 @@ Con la personalización del portal de empresa, es más fácil ofrecer una experi
 El nombre de la empresa se muestra como título del portal de empresa. La información y los datos de contacto se muestran a los usuarios en la pantalla **Contacto de TI** del Portal de empresa. La declaración de privacidad se muestra cuando el usuario hace clic en el vínculo de privacidad.        
 
 
-|Nombre de campo|Longitud máxima|Más información|        
-|-|-|-|     
-|**Nombre de la empresa**|40|Es el nombre que se muestra como título del portal de empresa.|        
-|**Nombre del contacto del departamento de TI**|40|Es el nombre que se muestra en la página **Contacto de TI**.|      
-|**Número de teléfono del departamento de TI**|20|Es el número de contacto que se muestra en la página **Contacto de TI**.|        
-|**Dirección de correo electrónico del departamento de TI**|40|Es la dirección de contacto que se muestra en la página **Contacto de TI**. Debe especificar una dirección de correo electrónico válida en el formato **alias@domainname.com**.|     
-|**Información adicional**|120|Se muestra en la página **Contacto de TI**.|      
-|**Dirección URL de la declaración de privacidad de la empresa**|79|Puede especificar su propia declaración de privacidad de la empresa, que aparece cuando los usuarios hacen clic en los vínculos de privacidad del portal de empresa. Debe escribir una dirección URL válida con el formato **https://www.contoso.com**.|        
+|                   Nombre de campo                   | Longitud máxima |                                                                                                 Más información                                                                                                 |
+|------------------------------------------------|------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         <strong>Nombre de la empresa</strong>          |     40     |                                                                            Es el nombre que se muestra como título del portal de empresa.                                                                            |
+|  <strong>Nombre del contacto del departamento de TI</strong>   |     40     |                                                                         Es el nombre que se muestra en la página <strong>Contacto de TI</strong>.                                                                          |
+|  <strong>Número de teléfono del departamento de TI</strong>   |     20     |                                                                    Es el número de contacto que se muestra en la página <strong>Contacto de TI</strong>.                                                                     |
+|  <strong>Dirección de correo electrónico del departamento de TI</strong>  |     40     |                       Es la dirección de contacto que se muestra en la página <strong>Contacto de TI</strong>. Debe especificar una dirección de correo electrónico válida en el formato <strong>alias@domainname.com</strong>.                       |
+|    <strong>Información adicional</strong>     |    120     |                                                                                Se muestra en la página <strong>Contacto de TI</strong>.                                                                                |
+| <strong>Dirección URL de la declaración de privacidad de la empresa</strong> |     79     | Puede especificar su propia declaración de privacidad de la empresa, que aparece cuando los usuarios hacen clic en los vínculos de privacidad del portal de empresa. Debe escribir una dirección URL válida con el formato <strong><https://www.contoso.com></strong>. |
 
 ## <a name="support-contacts"></a>Contactos de soporte técnico     
 El sitio web de soporte se muestra a los usuarios en el portal de empresa para que puedan tener acceso al soporte en línea.        
@@ -62,7 +62,7 @@ Puede personalizar su portal de empresa con su logotipo de empresa, nombre de em
 
 |Nombre del campo|Más información|       
 |-|-|       
-|**Color del tema**|Seleccione el color del tema que se aplicará al portal de empresa.|      
+|**Color del tema**|Seleccione el color del tema que se aplicará al portal de empresa. Puede elegir en el selector de colores o escribir un código hexadecimal concreto.|      
 |**Mostrar logotipo de la empresa**|Si habilita esta opción, puede cargar el logotipo de su empresa para que se muestre en el portal de empresa. Puede cargar dos logotipos: uno que se mostrará cuando el fondo del portal de empresa sea de color blanco y otro que se mostrará cuando el fondo del portal de empresa use el color de tema seleccionado. El tipo de archivo del logotipo debe ser .png o .jpg, con una resolución máxima de 400 x 100 píxeles y un tamaño de 750 KB o menos.<br>También puede mostrar el nombre de la empresa que escribió junto al logotipo cargado.|      
 
 Después de guardar los cambios, puede elegir **Obtenga una vista previa de la configuración en el portal web de Intune.** para ver el aspecto de las configuraciones.

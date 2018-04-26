@@ -1,7 +1,7 @@
 ---
 title: Proceso de la incorporación de Intune
 titlesuffix: Microsoft Intune
-description: Este artículo le ayuda con todos los detalles que necesita tener en cuenta a la hora de incorporar la solución solo en la nube de Microsoft Intune en su entorno.
+description: Este artículo ayuda con todos los detalles que se deben tener en cuenta a la hora de incorporar una solución solo en la nube de Microsoft Intune al entorno.
 keywords: ''
 author: dougeby
 ms.author: dougeby
@@ -15,11 +15,11 @@ ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c0c88ddf84e7dfd3eed83f846ccfc3ff9c4da2d5
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 871e091af1f2046206dbc94fdc7d199435645190
+ms.sourcegitcommit: e04e1652e121b4b9dbed05d0bbaa569e6d5d09bd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Implementar el plan de Microsoft Intune
 

@@ -1,27 +1,26 @@
 ---
-title: "Configuración de restricciones de dispositivos en Microsoft Intune"
-titleSuffix: 
-description: "Aprenda a usar Microsoft Intune para configurar los valores y las características en los dispositivos que administra."
-keywords: 
-author: vhorne
-ms.author: victorh
+title: Configuración de restricciones de dispositivos en Microsoft Intune - Azure | Microsoft Docs
+description: Agregue un perfil de dispositivo para restringir características en dispositivos Android, macOS, iOS, Windows Phone y Windows 10 en Microsoft Intune
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 3/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 62c12cde5ca128a26b10e0e4516e0bbf7e0f0bbb
-ms.sourcegitcommit: aafed032492c1b5861d7097a335f9bbb29ce3221
+ms.openlocfilehash: 13f93f9fcf813c2e86809d2cc20991d2fd635187
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="how-to-configure-device-restriction-settings-in-microsoft-intune"></a>Configuración de restricciones de dispositivos en Microsoft Intune
+# <a name="configure-device-restriction-settings-in-microsoft-intune"></a>Configurar restricciones de dispositivos en Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Las restricciones de dispositivos permiten controlar una amplia gran de opciones y características que se distribuyen en diversas categorías, por ejemplo:
 - Seguridad
@@ -35,12 +34,10 @@ Descubra los conceptos básicos sobre los perfiles de restricción de dispositiv
 
 ## <a name="create-a-device-profile-containing-device-restriction-settings"></a>Creación de un perfil de dispositivo que contenga la configuración de restricciones de dispositivos
 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **All services (Todos los servicios)** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
-3. En la página **Intune**, elija **Configuración del dispositivo**.
-2. En la página **Configuración del dispositivo**, en la sección **Administrar**, elija **Perfiles**.
-3. En la página **Perfiles**, elija **Crear perfil**.
-4. En la página **Crear perfil**, escriba un **Nombre** y una **Descripción** para el perfil de restricción de dispositivos.
+1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
+2. Seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
+3. Seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
+4. Escriba un **nombre** y una **descripción** para el perfil de restricción de dispositivos.
 5. En la lista desplegable **Plataforma**, seleccione la plataforma del dispositivo a la que quiere aplicar configuración personalizada. Actualmente, puede elegir una de las siguientes plataformas para la configuración de restricciones de dispositivos:
     - **Android**
     - **iOS**

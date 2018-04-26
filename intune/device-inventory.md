@@ -1,11 +1,11 @@
 ---
-title: Ver los dispositivos con Microsoft Intune - Azure |Microsoft Docs
+title: Ver los detalles de un dispositivo con Microsoft Intune - Azure | Microsoft Docs
 description: Vea los detalles del dispositivo, incluidos los sistemas operativos, el espacio de almacenamiento, el fabricante y el modelo. Obtenga una lista de las aplicaciones instaladas, compruebe las directivas de cumplimiento y configure TeamViewer con Microsoft Intune en Azure. El procedimiento es similar a ver el inventario de los dispositivos que administra.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 04/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,36 +13,37 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eaaf3e9807a8eab66c24f4d1bb3c3c5ea9f4cfe0
-ms.sourcegitcommit: df60d03a0ed54964e91879f56c4ef0a7507c17d4
+ms.openlocfilehash: 404fb301d9ab749f887840208e12388e12d79db4
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="see-device-details-in-intune"></a>Ver detalles del dispositivo en Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-La característica **Dispositivos** proporciona detalles adicionales sobre los dispositivos que administra, incluido el hardware, y sobre las aplicaciones instaladas. 
+La característica **Dispositivos** proporciona detalles adicionales sobre los dispositivos que administra, incluido el hardware, y sobre las aplicaciones instaladas.
 
 En este artículo se explica cómo se pueden ver todos los dispositivos y sus propiedades en el portal de Azure.
 
-## <a name="view-your-device-details"></a>Ver los detalles del dispositivo
+## <a name="view-the-device-details"></a>Ver los detalles del dispositivo
 
 1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
 2. Seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
-3. Seleccione **Dispositivos**. En dispositivos, tiene varias opciones:
+3. Seleccione **Dispositivos** > **Todos los dispositivos** > seleccione uno de los dispositivos que aparecen para que se muestren los detalles correspondientes:
 
-   - **Información general**: obtenga información sobre los dispositivos que ha inscrito y el sistema operativo en el que se ejecuta cada dispositivo.
-   - **Administrar**: para ver una lista de todos los dispositivos que administra, seleccione **Todos los dispositivos** o **Dispositivos Azure AD**.
-    Seleccione uno de los dispositivos de la lista. Con este paso se abre la <*Información general de*> **nombre del dispositivo**, donde puede seleccionar lo siguiente:
-     - **Información general**: consulte el nombre del dispositivo, el propietario, si es un dispositivo "Bring Your Own Device" (BYOD), cuándo se registró por última vez y más detalles.
-     - **Hardware**: vea el espacio de almacenamiento libre, el modelo y fabricante, y más detalles sobre el dispositivo.
-     - **Aplicaciones detectadas**: vea una lista de todas las aplicaciones instaladas en el dispositivo que encuentra Intune.
-     - **Cumplimiento del dispositivo**: muestra el estado de todas las directivas de cumplimiento que se han asignado al dispositivo.
-     - **Configuración de dispositivo**: muestra el estado de cumplimiento de todas las directivas de configuración de dispositivo que se han asignado al dispositivo.
-   - **Supervisión**: seleccione **Acciones de dispositivo** para ver una lista de las acciones que se realizan en dispositivo que administra y su estado actual. **Registros de auditoría** muestra el estado de diferentes tareas.
-   - **Configuración** > **Conector de TeamViewer**: configure la administración remota en dispositivos con el software TeamViewer. Para obtener detalles, vea [Asistencia remota para dispositivos Android administrados con Intune](device-profile-android-teamviewer.md).
+   - En **Información general** se muestra el nombre del dispositivo y algunas propiedades clave del dispositivo. También se indica si es un dispositivo Bring Your Own Device (BYOD), cuándo se registró, etc. Seleccione **Más** para llevar a cabo las siguientes acciones:
+     - Eliminar datos de la compañía
+     - Eliminar el dispositivo
+     - Bloquear el dispositivo de forma remota
+     - Borrar
+     - Iniciar una sesión de asistencia remota
+   - Use **Propiedades** para asignar una [categoría de dispositivo que cree](device-group-mapping.md) y cambie la propiedad del dispositivo a un dispositivo personal o a un dispositivo de empresa.
+   - En **Hardware** se incluye mucha información sobre el dispositivo (identificador del dispositivo, sistema operativo y versión, espacio de almacenamiento, modelo y fabricante, opciones de acceso condicional, etc.).
+   - **Aplicaciones detectadas**: muestra todas las aplicaciones que Intune encuentra instaladas en el dispositivo, así como las versiones de las aplicaciones. También puede **exportar** la lista de aplicaciones a un archivo .csv.
+   - En **Conformidad de dispositivos** figuran todas las directivas de cumplimiento asignadas y se indica si el dispositivo es compatible o no.
+   - En **Configuración del dispositivo** se muestran todas las directivas de configuración de dispositivos asignadas al dispositivo. También se indica si la directiva se ha aplicado correctamente o no.
 
 Intune solo recopila listas de aplicaciones en dispositivos corporativos. Las aplicaciones no se comprueban en los dispositivos personales. En equipos con Windows 10, solo se muestran las aplicaciones modernas en los dispositivos corporativos. Intune no recopila información sobre las aplicaciones Win32 del dispositivo. En función del operador que usen los dispositivos, puede que no se recopilen todas las aplicaciones.
 

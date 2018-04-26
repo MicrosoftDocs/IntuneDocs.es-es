@@ -14,15 +14,15 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f938967951045d24ae65315b3b4d40749c1bc20f
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 77942ef6a5f25708ce43910cde94133e174b4731
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="microsoft-intune-android-and-samsung-knox-standard-device-restriction-settings"></a>Configuración de restricciones de dispositivos Android y Samsung Knox de Microsoft Intune 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 En este artículo, se muestran todas las opciones de configuración de restricciones de dispositivos de Microsoft Intune que puede configurar para los dispositivos que ejecutan Android.
 
@@ -93,7 +93,7 @@ En la [sección Aplicaciones de Google Play](https://play.google.com/store/apps)
 
 Abra la página de instalación de la aplicación y, a continuación, copie la dirección URL en el Portapapeles. Ahora puede usar esta dirección URL en la lista de aplicaciones conformes o no conformes.
 
-Por ejemplo, busque **Microsoft Planner** en la [sección Aplicaciones de Google Play](https://play.google.com/store/apps). Use la URL **https://play.google.com/store/apps/details?id=com.microsoft.planner**.
+Por ejemplo, busque **Microsoft Planner** en la [sección Aplicaciones de Google Play](https://play.google.com/store/apps). Use la dirección URL: **https://play.google.com/store/apps/details?id=com.microsoft.planner**.
 
 ### <a name="additional-options"></a>Opciones adicionales
 

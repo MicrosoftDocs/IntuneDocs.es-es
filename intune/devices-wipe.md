@@ -13,15 +13,15 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e4581b59de68c2877b122887fa1ffe86eaa2b92c
-ms.sourcegitcommit: 390a4be5aa36007c36fb6a5abcfe8d20bc862a4b
+ms.openlocfilehash: bb191f33133b85613f491220c970947b9e55b79f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="remove-devices-by-using-factory-reset-or-remove-company-data"></a>Eliminación de dispositivos mediante el restablecimiento de fábrica o de los datos de la compañía
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Puede eliminar de Intune los dispositivos que ya no son necesarios, que se van a reutilizar o que han desaparecido. Para ello, use las acciones **Eliminar datos de la compañía** o **Restablecimiento de fábrica**. Los usuarios también pueden emitir un comando remoto desde el Portal de empresa de Intune para los dispositivos de propiedad privada que están inscritos en Intune.
 
@@ -72,7 +72,7 @@ En las tablas siguientes se describen los datos que se eliminan y el efecto de l
 |Configuración de perfil de certificado|Certificados eliminados y revocados.|
 |Agente de administración|Se quitará el perfil de administración.|
 |Correo electrónico|Se borran los perfiles de correo electrónico que se aprovisionan mediante Intune. Se elimina el correo electrónico almacenado en caché en el dispositivo.|
-|Outlook|Se quita el correo electrónico recibido en la aplicación de Microsoft Outlook para iOS.|
+|Outlook|Se quita el correo electrónico recibido en la aplicación de Microsoft Outlook para iOS. Esto exige que la aplicación móvil de Outlook primero se implemente como una aplicación Requerida para los usuarios de iOS.|
 |Separación de Azure AD|Se quita el registro de Azure AD.|
 |Contactos |Se quitan los contactos sincronizados directamente desde la aplicación en la libreta de direcciones nativa. No se pueden quitar los contactos sincronizados desde la libreta de direcciones nativa a otro origen externo. <br /> <br />En este momento solo se admite la aplicación Outlook.
 

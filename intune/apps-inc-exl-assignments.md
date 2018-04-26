@@ -1,25 +1,25 @@
 ---
-title: "Inclusión y exclusión de asignaciones de aplicaciones en Microsoft Intune"
-titlesuffix: 
-description: "Obtenga información sobre cómo usar Microsoft Intune para incluir y excluir asignaciones de aplicaciones."
-keywords: 
+title: Inclusión y exclusión de asignaciones de aplicaciones en Microsoft Intune
+titlesuffix: ''
+description: Obtenga información sobre cómo usar Microsoft Intune para incluir y excluir asignaciones de aplicaciones.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/08/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c59f6df5-3317-4dff-8f19-fdeec33faedf
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dbe8669dc2bf448e0738147758d90ba6d2d69b06
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 93fd626d580917a3dd5bb20e7696c09c109dcc0b
+ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Inclusión y exclusión de asignaciones de aplicaciones en Microsoft Intune
 
@@ -33,11 +33,13 @@ Al excluir grupos de una asignación de aplicaciones, solo se deben excluir grup
 >Al establecer una asignación de grupo para una aplicación, el tipo **No es aplicable** queda en desuso y se reemplazan por la funcionalidad de grupo de exclusión. 
 >
 >Intune ofrece los grupos creados previamente **Todos los usuarios** y **Todos los dispositivos** en la consola con las optimizaciones integradas para su comodidad. Es muy recomendable utilizar estos grupos para segmentar todos los usuarios y todos los dispositivos en lugar de usar cualquier grupo "Todos los usuarios" o "Todos los dispositivos" que haya podido crear.  
+>
+>Android Enterprise (anteriormente conocido como Android for Work) admite la inclusión y exclusión de grupos, pero no los grupos integrados creados previamente **Todos los usuarios** y **Todos los dispositivos**.
 
 ## <a name="including-and-excluding-groups-when-assigning-apps"></a>Incluir y excluir grupos al asignar aplicaciones 
 Para asignar una aplicación a grupos mediante la asignación de inclusión y exclusión, siga estos pasos:
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. Seleccione **Aplicaciones móviles** en la hoja Microsoft Intune.
 4. Seleccione **Aplicaciones** en la hoja **Aplicaciones móviles**. Se muestra la lista de aplicaciones agregadas.
 5. Seleccione la aplicación que quiera asignar. Se muestra un panel relacionado con la aplicación. 

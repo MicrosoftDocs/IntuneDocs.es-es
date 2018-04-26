@@ -1,29 +1,29 @@
 ---
-title: "Adición manual de la aplicación Portal de empresa para Windows 10"
+title: Adición manual de la aplicación Portal de empresa para Windows 10
 titleSuffix: Microsoft Intune
-description: "Obtenga información sobre cómo agregar manualmente la aplicación Portal de empresa de Windows 10."
-keywords: 
+description: Obtenga información sobre cómo agregar manualmente la aplicación Portal de empresa de Windows 10.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 03/06/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: bfe1a2d3-f611-4dbb-adef-c0dff4d7b810
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 06ed9395d06e2d64edcedcaadfe819ad03f1d495
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: f2c7e449e9931bccd5e736bd09c33e0b42c623e9
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-using-microsoft-intune"></a>Adición manual de la aplicación Portal de empresa para Windows 10 con Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Los usuarios finales pueden instalar la aplicación del Portal de empresa desde la Microsoft Store para administrar dispositivos e instalar aplicaciones. Pero si sus necesidades empresariales requieren que asigne la aplicación del Portal de empresa, puede asignar manualmente dicha aplicación para Windows 10 directamente desde Intune, aunque no haya integrado Intune con la Tienda Microsoft para Empresas.
 
@@ -48,11 +48,11 @@ Los usuarios finales pueden instalar la aplicación del Portal de empresa desde 
 
 7. Descargue todos los paquetes en "Marcos necesarios". Debe hacerse para las arquitecturas x86, x64 y ARM, lo que produce un total de 12 paquetes.
 8. Antes de cargar la aplicación Portal de empresa en Intune, cree una carpeta (por ejemplo, C:&#92;Portal de empresa) con los paquetes estructurados de la manera siguiente:
-  - Colocar el paquete del Portal de empresa en C:\Company Portal. Cree también una subcarpeta Dependencias en esta ubicación.  
+   - Colocar el paquete del Portal de empresa en C:\Company Portal. Cree también una subcarpeta Dependencias en esta ubicación.  
 
-    ![Imagen de la carpeta Dependencias guardada con el archivo APPXBUN](./media/Win10CP-Dependencies-save.png)
+     ![Imagen de la carpeta Dependencias guardada con el archivo APPXBUN](./media/Win10CP-Dependencies-save.png)
 
-  - Coloque los paquetes de dependencias en la carpeta *Dependencias*. 
+   - Coloque los paquetes de dependencias en la carpeta *Dependencias*. 
 
      > [!NOTE]
      > Si las dependencias no se colocan en el formato correcto, Intune no podrá reconocer ni cargar los archivos durante la carga de los paquetes, lo que producirá un error en la carga que se mostrará en pantalla.
@@ -81,18 +81,19 @@ Si la aplicación del Portal de empresa para Windows 10 está firmada y asignada
 
 Así es cómo tiene que firmar y asignar la aplicación:
 
-1. Descargue el script de firma de la aplicación del Portal de empresa para Windows 10 con Microsoft Intune en [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript).  Este script requiere instalar Windows SDK para Windows 10 en el equipo host. Si quiere descargar Windows SDK para Windows 10, visite [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296).
+1. Descargue el script de firma de la aplicación Portal de empresa para Windows 10 con Microsoft Intune en [https://aka.ms/win10cpscript](https://aka.ms/win10cpscript).  Este script requiere instalar Windows SDK para Windows 10 en el equipo host. Para descargar Windows SDK para Windows 10, visite [https://go.microsoft.com/fwlink/?LinkId=619296](https://go.microsoft.com/fwlink/?LinkId=619296).
 2. Descargue la aplicación del Portal de empresa para Windows 10 desde la Tienda Microsoft para Empresas, tal como se describe anteriormente.  
 3. Ejecute el script con los parámetros de entrada que se detallan en el encabezado del script para firmar la aplicación del Portal de empresa para Windows 10 (que detalla abajo). Las dependencias no tienen que pasarse al script. Solo se necesitan cuando la aplicación va a cargarse en la consola de administración de Intune.
 
-|Parámetro | Descripción|
-| ------------- | ------------- |
-|InputWin10AppxBundle |La ruta de acceso donde se encuentra el archivo de origen appxbundle. |
-|OutputWin10AppxBundle |La ruta de acceso de salida del archivo firmado appxbundle.  Win81Appx La ruta de acceso a la ubicación del archivo del Portal de empresa para Windows Phone 8.1 o Windows 8.1 (.APPX).|
-|PfxFilePath |La ruta de acceso al archivo de certificado de firma de código móvil de empresa de Symantec (.PFX). |
-|PfxPassword| La contraseña del certificado de firma de código móvil de empresa de Symantec. |
-|PublisherId |El identificador del publicador de la empresa. Si está ausente, se usa el campo 'Asunto' del certificado de firma de código móvil empresarial de Symantec.|
-|SdkPath | La ruta de acceso a la carpeta raíz de Windows SDK para Windows 10. Este argumento es opcional y está establecido de forma predeterminada en ${env:ProgramFiles(x86)}\Windows Kits\10.|
+|       Parámetro       |                                                                        Descripción                                                                        |
+|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| InputWin10AppxBundle  |                                                  La ruta de acceso donde se encuentra el archivo de origen appxbundle.                                                  |
+| OutputWin10AppxBundle | La ruta de acceso de salida del archivo firmado appxbundle.  Win81Appx La ruta de acceso a la ubicación del archivo del Portal de empresa para Windows Phone 8.1 o Windows 8.1 (.APPX). |
+|      PfxFilePath      |                                       La ruta de acceso al archivo de certificado de firma de código móvil de empresa de Symantec (.PFX).                                        |
+|      PfxPassword      |                                         La contraseña del certificado de firma de código móvil de empresa de Symantec.                                          |
+|      PublisherId      |          El identificador del publicador de la empresa. Si está ausente, se usa el campo 'Asunto' del certificado de firma de código móvil empresarial de Symantec.           |
+|        SdkPath        |     La ruta de acceso a la carpeta raíz de Windows SDK para Windows 10. Este argumento es opcional y está establecido de forma predeterminada en ${env:ProgramFiles(x86)}\Windows Kits\10.     |
+
 El script generará la versión firmada de la aplicación del Portal de empresa para Windows 10 cuando haya terminado de ejecutarse. Después, puede asignar la versión firmada de la aplicación como una aplicación LOB mediante Intune, que actualizará las versiones asignadas actualmente a esta nueva aplicación.  
 
 ## <a name="next-steps"></a>Pasos siguientes

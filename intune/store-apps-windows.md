@@ -1,7 +1,7 @@
 ---
-title: Adición de aplicaciones de la tienda de Windows a Microsoft Intune
+title: Adición de aplicaciones de Microsoft Store a Microsoft Intune
 titleSuffix: ''
-description: Obtenga información sobre cómo agregar aplicaciones de la Tienda Windows a Microsoft Intune.
+description: Obtenga información sobre cómo agregar aplicaciones de Microsoft Store (Tienda Windows) a Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -15,20 +15,20 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2e2280ad72bbd353d80af316cde436e8ffc79d1f
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 511cf2e01a2f5db93f0e0db9dbe2a32326c17723
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="how-to-add-windows-store-apps-to-microsoft-intune"></a>Adición de aplicaciones de la tienda de Windows a Microsoft Intune
+# <a name="add-microsoft-store-apps-to-microsoft-intune"></a>Agregar aplicaciones de Microsoft Store a Microsoft Intune
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Para poder asignar, supervisar, configurar o proteger las aplicaciones, debe agregarlas a Intune. Los pasos siguientes permiten agregar una aplicación de la Tienda Windows a Microsoft Intune.
+Para poder asignar, supervisar, configurar o proteger las aplicaciones, debe agregarlas a Intune. Los pasos siguientes permiten agregar una aplicación de Microsoft Store a Microsoft Intune.
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En el panel **Intune**, elija **Aplicaciones móviles**.
 4. En la carga de trabajo **Mobile Apps**, elija **Administrar** > **Aplicaciones**.
 5. Encima de la lista de aplicaciones, elija **Agregar**.
@@ -43,7 +43,7 @@ Para poder asignar, supervisar, configurar o proteger las aplicaciones, debe agr
     - **Dirección URL de información**: opcionalmente, escriba la dirección URL de un sitio web que contenga información sobre esta aplicación. La dirección URL se mostrará a los usuarios en el portal de empresa.
     - **Dirección URL de privacidad**: opcionalmente, escriba la dirección URL de un sitio web que contenga información de privacidad sobre esta aplicación. La dirección URL se mostrará a los usuarios en el portal de empresa.
     - **Desarrollador**: opcionalmente, escriba el nombre del desarrollador de la aplicación.
-    - **Propietario**: opcionalmente, escriba un nombre para el propietario de esta aplicación, por ejemplo, **departamento de Recursos Humanos**.
+    - **Propietario**: opcionalmente,, escriba un nombre para el propietario de esta aplicación, por ejemplo, **departamento de Recursos Humanos**.
     - **Notas**: escriba notas que le gustaría asociar a esta aplicación.
     - **Logotipo**: cargue un icono que esté asociado a la aplicación. Este icono se muestra junto a la aplicación cuando los usuarios examinan el portal de empresa.
 8. Cuando haya terminado, en el panel **Agregar aplicación**, elija **Agregar**.
@@ -51,5 +51,4 @@ Para poder asignar, supervisar, configurar o proteger las aplicaciones, debe agr
 La aplicación que ha creado se muestra en la lista de aplicaciones donde puede asignarla a los grupos que elija. 
 
 ## <a name="next-steps"></a>Pasos siguientes
-
 - [Asignación de aplicaciones a grupos](apps-deploy.md)

@@ -1,28 +1,28 @@
 ---
-title: "Configuración de filtro de contenido web de Microsoft Intune para dispositivos iOS"
-titlesuffix: 
-description: "Obtenga información sobre la configuración de Microsoft Intune que puede usar para permitir y bloquear el acceso a sitios web desde dispositivos que ejecutan iOS."
-keywords: 
+title: Configuración de filtro de contenido web de Microsoft Intune para dispositivos iOS
+titlesuffix: ''
+description: Obtenga información sobre la configuración de Microsoft Intune que puede usar para permitir y bloquear el acceso a sitios web desde dispositivos que ejecutan iOS.
+keywords: ''
 author: vhorne
 ms.author: victorh
 manager: dougeby
 ms.date: 03/05/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a401a3a04d10587606b8ec4862a62e551e7aadf0
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: c5e3dbdc339fd25289e1aed526bc03e4691c3812
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>Configuración de filtro de contenido web para dispositivos iOS
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 En este artículo, se muestra la configuración de Microsoft Intune que puede usar para controlar el acceso a direcciones URL del explorador desde dispositivos que ejecutan iOS.
 
@@ -57,13 +57,13 @@ Si no especifica ninguna dirección URL, los usuarios finales no pueden acceder 
 ## <a name="specific-websites-only"></a>Solo sitios web específicos
 
 1. En el panel **Filtro de contenido web**, configure las siguientes opciones para cada sitio web que quiera permitir:
-    - **Dirección URL**: escriba la dirección URL del sitio web que desea permitir, por ejemplo, **http://www.contoso.com**.
+    - **Dirección URL**: escriba la dirección URL del sitio web que quiere permitir, por ejemplo, **http://www.contoso.com**.
     - **Ruta de acceso de marcador**: escriba la ruta de acceso al lugar donde desea almacenar el marcador, por ejemplo, **/Contoso/Business Apps**. Si no agrega una ruta de acceso, el marcador se agregará a la carpeta predeterminada de marcadores del dispositivo.
     - **Título**: escriba un título descriptivo para el marcador.
 2. Haga clic en **Agregar** después de escribir la información de cada sitio web.
 3. Cuando haya terminado, haga clic en **Aceptar**.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Intune permite automáticamente las siguientes direcciones URL.
 > - www.microsoft.com
 > - www.microsoft.net

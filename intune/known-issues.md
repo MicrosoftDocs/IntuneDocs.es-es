@@ -1,37 +1,35 @@
 ---
-title: Problemas conocidos de Microsoft Intune
-titlesuffix: Microsoft Intune
-description: "Obtenga información sobre problemas conocidos de Microsoft Intune."
-keywords: 
+title: Problemas conocidos de Microsoft Intune - Azure | Microsoft Docs
+description: Obtenga información sobre problemas conocidos de Microsoft Intune.
+keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/11/2018
+ms.date: 03/27/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9933e6ed7f8ee636cb0a9416ff2409e2054e3aa0
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: d0a8a189e708ed140c3cda987a20cebb562fdb34
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problemas conocidos de Microsoft Intune
 
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-
-Use este tema para aprender sobre los problemas conocidos de Microsoft Intune.
+Consulte este artículo para obtener información sobre los problemas conocidos de Microsoft Intune.
 
 Si quiere notificar un error que no aparece aquí, [abra una solicitud de soporte técnico](get-support.md).
 
-Si quiere solicitar una nueva característica para Intune, considere la posibilidad de presentar un informe en nuestro sitio [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console).
+Si quiere solicitar una nueva característica para Intune, considere la posibilidad de presentar un informe en el sitio [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console).
 
 ## <a name="migration"></a>Migración
 
@@ -45,12 +43,12 @@ Al migrar de Intune a Azure Portal, es posible que vea un nuevo grupo denominado
 
 ### <a name="status-blades-for-migrated-policies-do-not-work"></a>Las hojas de estado para directivas migradas no funcionan.
 
-No se puede ver la información de estado de las directivas que se migraron desde el portal clásico en Azure Portal. En cambio, aún puede ver informes de estas directivas en el portal clásico. Para ver la información de estado de las directivas de configuración migradas, vuelva a crearlas en Azure Portal.
+No se puede ver la información de estado de las directivas que se migraron del portal clásico de Azure a Azure Portal. En cambio, aún puede ver informes de estas directivas en el portal clásico. Para ver la información de estado de las directivas de configuración migradas, vuelva a crearlas en Azure Portal.
 
 ## <a name="apps"></a>Aplicaciones
 
 ### <a name="ios-volume-purchased-apps-only-available-in-default-intune-tenant-language"></a>Las aplicaciones compradas por volumen de iOS solo están disponibles en el idioma predeterminado del inquilino de Intune
-Las aplicaciones compradas por volumen de iOS se muestran y solo pueden asignarse para el mismo código de país que su cuenta de Intune. Intune solo sincroniza aplicaciones desde la misma configuración regional de iTunes que el código de país de la cuenta de inquilino de Intune. Por ejemplo, si compra una aplicación que solo está disponible en la tienda de Estados Unidos, pero su cuenta de Intune es alemana, Intune no mostrará esa aplicación.
+Las aplicaciones compradas por volumen de iOS se muestran y solo pueden asignarse para el mismo código de país que su cuenta de Intune. Intune solo sincroniza aplicaciones desde la misma configuración regional de iTunes que el código de país de la cuenta de inquilino de Intune. Por ejemplo, si compra una aplicación que solo está disponible en una tienda de los Estados Unidos, pero su cuenta de Intune es alemana, Intune no mostrará esa aplicación.
 
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>Se cargan varias copias del mismo programa de compra por volumen de iOS
 No haga clic en el botón **Cargar** varias veces desde el mismo token de PCV. Esto provocará que se carguen tokens de PCV duplicados y que las aplicaciones se sincronicen varias veces para el mismo token de PCV.
@@ -66,9 +64,8 @@ Para dispositivos no inscritos con Intune, solo se puede especificar un dominio 
 Si se agregan dominios adicionales (mediante **Configuración avanzada** > **Perímetro de red** > **Agregar un dominio protegido**), no se puede guardar la directiva. El mensaje de error que se ve cambiará pronto para ser más preciso.
 
 ### <a name="cisco-anyconnect-vpn-client-support"></a>Compatibilidad con Cisco AnyConnect VPN Client
+La última versión de Cisco AnyConnect VPN Client (4.0.07072) no es compatible en estos momentos con Intune. Una actualización de Intune futura incluirá compatibilidad con esta versión de cliente de VPN. Hasta ese momento, le recomendamos que no actualice Cisco AnyConnect VPN Client y que siga usando la versión existente.
 
-La última versión de Cisco AnyConnect VPN Client (4.0.07072) no es compatible en estos momentos con Intune.
-Una actualización de Intune futura incluirá compatibilidad con esta versión de cliente de VPN. Hasta ese momento, le recomendamos que no actualice Cisco AnyConnect VPN Client y que siga usando la versión existente.
 
 ### <a name="using-the-numeric-password-type-with-macos-sierra-devices"></a>Uso del tipo de contraseña numérica con los dispositivos macOS Sierra
 

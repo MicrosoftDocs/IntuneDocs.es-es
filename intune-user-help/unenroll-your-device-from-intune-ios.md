@@ -1,56 +1,74 @@
 ---
-title: "Anular la inscripción del dispositivo iOS de Intune | Microsoft Docs"
-description: "Describe cómo anular la inscripción de un dispositivo iOS de Intune."
-keywords: 
-author: barlanmsft
-ms.author: barlan
+title: Quitar un dispositivo iOS de Intune | Microsoft Docs
+description: Describe cómo anular la inscripción de un dispositivo iOS de Intune.
+keywords: ''
+author: lenewsad
+ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 04/02/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 28914db1-3e62-45f5-9632-b0d2a808a44d
 searchScope:
 - User help
-ROBOTS: 
+ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 95258e2b2ef912b0d9c9549306559c6f91099642
-ms.sourcegitcommit: a41ad9988a8c14e6b15123a9ea9bc29ac437a4ce
+ms.openlocfilehash: 2df474e8b0a5af2ac294715135804ef0713a3015
+ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 04/04/2018
 ---
-# <a name="unenroll-your-ios-device-from-intune"></a>Anular la inscripción del dispositivo iOS de Intune
+# <a name="remove-your-ios-device-from-intune"></a>Quitar un dispositivo iOS de Intune
 
-Una vez anulada la inscripción del dispositivo iOS de Intune, este ya no podrá acceder a los recursos de la empresa ni será administrado por Intune.
+Una vez quitado el dispositivo iOS de Intune, este ya no podrá acceder a los recursos de la empresa ni será administrado por Intune.
 
-Para anular la inscripción del dispositivo de Intune, siga estos pasos o vea este vídeo:
 
-> [!VIDEO https://www.youtube.com/embed/6UFtBrBWUUI]
+## <a name="removing-the-device-from-my-devices"></a>Quitar el dispositivo de Mis dispositivos
 
-1.  En la aplicación Portal de empresa, en **Mis dispositivos**, seleccione el dispositivo cuya inscripción quiere anular.
+Para quitar el dispositivo de Intune, siga estos pasos o vea este vídeo:
 
-2.  Pulse **Quitar** > **Quitar**.
 
-Cuando se anula la inscripción de un dispositivo de Intune, ocurre lo siguiente:
+1.  En la aplicación Portal de empresa, pulse **Dispositivos** y seleccione el dispositivo cuya inscripción desee anular. Si solo tiene un dispositivo, cuando pulse **Dispositivos** irá directamente a la pantalla de detalles del dispositivo.
 
--   El dispositivo deja de aparecer en el portal de empresa.
+2.  Junto a **CAMBIAR NOMBRE**, pulse el botón de puntos suspensivos y luego seleccione **Quitar dispositivo** > **Quitar**.  
 
--   No se podrán instalar aplicaciones desde el Portal de empresa.
+    |![Captura de la pantalla Dispositivos de la aplicación Portal de empresa en la que se muestran las opciones disponibles después de que el usuario haya hecho clic en Quitar. Muestra los botones "Quitar dispositivo", "Restablecimiento de fábrica" y "Cancelar".](/intune-user-help/media/cp_ios_unenroll_after_1804_001.png)|
 
--   Dejará de aplicarse cualquier configuración que se haya modificado en el dispositivo cuando se agregó, por ejemplo, la opción para deshabilitar la cámara o exigir una determinada longitud de contraseña.
+    |![Captura de la pantalla Dispositivos de la aplicación Portal de empresa en la que se muestran las opciones disponibles después de que el usuario haya hecho clic en el botón Quitar dispositivo. Muestra el botón "Quitar" resaltado en rojo y los botones "Más información" y "Cancelar" resaltados en azul.](/intune-user-help/media/cp_ios_unenroll_after_1804_002.png)|
 
--   Es posible que deje de tener acceso en su dispositivo a algunos recursos de la empresa, como recursos compartidos de archivos o sitios web internos.
 
--   No se podrán utilizar las aplicaciones y los datos de la empresa.
+  Cuando se anula la inscripción de un dispositivo de Intune, ocurre lo siguiente:
 
--   No se podrá conectar a la red de su empresa mediante Wi-Fi o una red privada virtual (VPN).
+  -   El dispositivo deja de aparecer en el portal de empresa.
 
--   Los perfiles de correo electrónico de empresa se quitan del dispositivo.
+  -   No se podrán instalar aplicaciones desde el Portal de empresa.
 
--   Los dispositivos que están configurados para el correo electrónico no aparecerán en el sitio web o en la aplicación Portal de empresa.
+  -   Dejará de aplicarse cualquier configuración que se haya modificado en el dispositivo cuando se agregó, por ejemplo, la opción para deshabilitar la cámara o exigir una determinada longitud de contraseña.
+
+  -   Es posible que deje de tener acceso en su dispositivo a algunos recursos de la empresa, como recursos compartidos de archivos o sitios web internos.
+
+  -   No se podrán utilizar las aplicaciones y los datos de la empresa.
+
+  -   No se podrá conectar a la red de su empresa mediante Wi-Fi o una red privada virtual (VPN).
+
+  -   Los perfiles de correo electrónico de empresa se quitan del dispositivo.
+
+  -   Los dispositivos que están configurados para el correo electrónico no aparecerán en el sitio web o en la aplicación Portal de empresa.
+
+## <a name="removing-data-collected-by-the-company-portal-app"></a>Eliminación de datos recopilados por la aplicación Portal de empresa
+
+El Portal de empresa almacena los datos locales en tres ubicaciones del dispositivo.
+
+-   **Registros de información**: los datos estándar recopilados por Microsoft acerca de la actividad de la aplicación (por ejemplo, cuánto tiempo estuvo abierta la aplicación o si se ha bloqueado) se borran automáticamente cuando el dispositivo se quita del Portal de empresa.
+
+-   **Análisis de Apple**: datos estándar recopilados por Apple sobre el bloqueo de la aplicación. La única manera de quitar esta información es restablecer el dispositivo a la configuración de fábrica. Esto borrará toda la información personal en el dispositivo. Para ello, abra **Ajustes** > **General** > **Restablecer** > **Borrar contenidos y ajustes**.
+
+-   **Cadena de claves**: el dispositivo almacena en la cadena de claves las contraseñas y otra información que se usa para inicios de sesión. Las aplicaciones de Microsoft comparten la información de inicio de sesión con todas las aplicaciones desarrolladas por Microsoft que haya en el dispositivo, como Microsoft Outlook y Microsoft Authenticator. Al igual que con el análisis de Apple, la única manera de quitar esta información es restablecer el dispositivo a la configuración de fábrica. Esto borrará toda la información personal en el dispositivo. Para ello, abra **Ajustes** > **General** > **Restablecer** > **Borrar contenidos y ajustes**.
+
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
