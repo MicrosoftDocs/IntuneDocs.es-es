@@ -1,23 +1,23 @@
 ---
-title: "Restablecimiento del código de acceso en dispositivos Windows con Microsoft Intune: Azure | Microsoft Docs"
-description: "Para restablecer el código de acceso en los dispositivos Windows, instale el Servicio de restablecimiento del PIN de Microsoft y el Cliente de restablecimiento del PIN de Microsoft, cree una directiva de dispositivo mediante el identificador de directorio de Azure Active Directory y, después, restablezca el código de acceso en Azure Portal con Microsoft Intune."
-keywords: 
-author: MandiOhlinger
-ms.author: mandia
+title: 'Restablecimiento del código de acceso en dispositivos Windows con Microsoft Intune: Azure | Microsoft Docs'
+description: Para restablecer el código de acceso en los dispositivos Windows, instale el Servicio de restablecimiento del PIN de Microsoft y el Cliente de restablecimiento del PIN de Microsoft, cree una directiva de dispositivo mediante el identificador de directorio de Azure Active Directory y, después, restablezca el código de acceso en Azure Portal con Microsoft Intune.
+keywords: ''
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 5027d012-d6c2-4971-a9ac-217f91d67d87
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 14a5654e72352b9dc8ebd51e6c926ea963e7432d
-ms.sourcegitcommit: 9cf05d3cb8099e4a238dae9b561920801ad5cdc6
+ms.openlocfilehash: d3ceaaa1cce79483c446342b12d9918bb6beac42
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>Restablecimiento del código de acceso en dispositivos Windows con Intune
 
@@ -60,7 +60,7 @@ Establezca el valor de este CSP en **True**.
 
 ## <a name="reset-the-passcode"></a>Restablecimiento del código de acceso
 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com). 
+1. Inicie sesión en el [Portal de Azure](https://portal.azure.com). 
 2. Seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
 3. Seleccione **Dispositivos** y, después, **Todos los dispositivos**.
 4. Seleccione el dispositivo en el que quiere restablecer el código de acceso. En las propiedades del dispositivo, seleccione **Nuevo código de acceso**.

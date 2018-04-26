@@ -3,8 +3,8 @@ title: Aplicaciones iOS con directivas de protección de aplicaciones
 titlesuffix: Microsoft Intune
 description: Obtenga información sobre las aplicaciones para iOS con políticas de protección.
 keywords: ''
-author: erikre
-ms.author: erikre
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 12/07/2016
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2804003a0f1acac56ecaae5e24dcf34b4eb0c256
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 172e99a38e3aef500fca8563079e3656e372089b
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones
 

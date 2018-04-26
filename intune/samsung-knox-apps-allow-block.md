@@ -3,8 +3,8 @@ title: Directiva de Microsoft Intune para permitir o bloquear aplicaciones para 
 titlesuffix: ''
 description: Cree un perfil personalizado para permitir y bloquear aplicaciones para dispositivos Samsung Knox Standard.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/5/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61a4d059eb771e22075796def5e1a273b02d932e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 28aab246778610691ee78c447fd08f2a923ec6c0
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="use-custom-policies-in-microsoft-intune-to-allow-and-block-apps-for-samsung-knox-standard-devices"></a>Uso de directivas personalizadas en Microsoft Intune para permitir y bloquear aplicaciones para dispositivos Samsung Knox Standard 
 

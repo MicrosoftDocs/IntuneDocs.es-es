@@ -1,25 +1,25 @@
 ---
-title: "Revisar los registros de la directiva de protección de aplicaciones"
+title: Revisar los registros de la directiva de protección de aplicaciones
 titlesuffix: Microsoft Intune
-description: "Obtenga información sobre la configuración que puede revisar en los registros de protección de aplicaciones."
-keywords: 
-author: erikre
-ms.author: erikre
+description: Obtenga información sobre la configuración que puede revisar en los registros de protección de aplicaciones.
+keywords: ''
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 11/15/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f91328561f0dd4dc669844c0398a89f1abf15bf8
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: e3a3d0686eca435ff8caf914afecef08c73318c3
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="review-client-app-protection-logs"></a>Revisión de los registros de protección de aplicaciones cliente
 

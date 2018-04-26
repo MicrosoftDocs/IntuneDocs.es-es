@@ -2,8 +2,8 @@
 title: 'Integración del control de acceso de red con Microsoft Intune: Azure | Microsoft Docs'
 description: Las soluciones de control de acceso de red (NAC) comprueban la inscripción y el cumplimiento de los dispositivos con Intune. NAC incluye determinados comportamientos y funciona con acceso condicional. Vea los pasos necesarios para la integración y obtenga una lista de soluciones de socios.
 keywords: ''
-author: ErikjeMS
-ms.author: erikje
+author: msmimart
+ms.author: mimart
 manager: dougeby
 ms.date: 12/18/2017
 ms.topic: article
@@ -14,11 +14,11 @@ ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bdf6b5b71c71dd8b1a9a5c9154953d1ebc07d0dc
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: cf796afcfc42f2cdf778713f4dceadb2597a12e2
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Integración del control de acceso de red (NAC) con Intune
 

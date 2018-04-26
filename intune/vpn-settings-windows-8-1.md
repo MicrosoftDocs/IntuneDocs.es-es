@@ -3,8 +3,8 @@ title: Configuración de VPN de Microsoft Intune para dispositivos Windows 8.1
 titleSuffix: ''
 description: Obtenga información sobre la configuración de Intune que puede usar para configurar conexiones VPN en dispositivos que ejecutan Windows 8.1.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cbcc3be31a6d9de7ce87ea5b25b8c1a2c42b47cd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 30aa56913cc3bda2d1c8b8b67e982c565c44a2a8
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-81"></a>Configuración de VPN en Microsoft Intune para dispositivos que ejecutan Windows 8.1
 

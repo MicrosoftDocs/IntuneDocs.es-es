@@ -3,8 +3,8 @@ title: Configuración del correo electrónico de Microsoft Intune para dispositi
 titleSuffix: ''
 description: Obtenga información sobre las opciones de configuración de Microsoft Intune que puede usar para configurar el correo electrónico en dispositivos que ejecutan Android y Android for Work.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 10bea7ace3fe03db66fa6f8a83a94679dfdc071c
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d492e107fffe730d36c662b9187fc9c6faced907
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-android-and-android-for-work"></a>Configuración de perfiles de correo electrónico en Microsoft Intune para dispositivos que ejecutan Android y Android for Work
 

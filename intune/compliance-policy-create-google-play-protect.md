@@ -3,8 +3,8 @@ title: Habilitar la conformidad de Google Play Protect con Microsoft Intune
 titleSuffix: ''
 description: Obtenga información sobre cómo crear una directiva de cumplimiento para dispositivos Android, a fin de habilitar Google Play Protect.
 keywords: ''
-author: Erikre
-ms.author: erikre
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 02/22/2018
 ms.topic: article
@@ -15,11 +15,11 @@ ms.assetid: E9810BEB-000A-4DFB-B5C7-A22A92082B22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 89f5d85b89a1d7da74769fe92268a054bb762961
-ms.sourcegitcommit: 21db583d6a9d3c15a8a8ee5579309dff1cfe1f8b
+ms.openlocfilehash: e99671c6c82a7652ba3489d5cc217dfedac72788
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-create-a-device-compliance-policy-to-enable-google-play-protect"></a>Creación de una directiva de cumplimiento de dispositivos para habilitar Google Play Protect
 

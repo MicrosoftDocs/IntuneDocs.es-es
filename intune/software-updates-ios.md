@@ -3,19 +3,19 @@ title: Configurar directivas de actualización de software de iOS en Microsoft I
 titlesuffix: ''
 description: Configure directivas de actualización de iOS para forzar a dispositivos iOS supervisados a instalar automáticamente la última actualización de software disponible.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 03/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: 58727a501d6a8ec14e964094eac9fcd6eb3868da
-ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
+ms.openlocfilehash: 1d4223ae4feb417f77909b320cd0295347b44461
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="configure-ios-update-policies-in-microsoft-intune"></a>Configurar directivas de actualización de iOS en Microsoft Intune
 
