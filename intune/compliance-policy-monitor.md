@@ -13,15 +13,18 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 146b8034022ed5f5a50de9910d28baf27f7482ac
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 557018264da5c21459e47e3e139ddd327a4a5ea6
+ms.sourcegitcommit: c3ae3c3dc46b62d9191813d25a196874ba4927be
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/28/2018
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Supervisión de las directivas de cumplimiento de dispositivos Intune
 
 Los informes de cumplimiento ayudan a los administradores a analizar el estado de cumplimiento de los dispositivos de su organización, así como a solucionar rápidamente problemas de este tipo que detecten los usuarios de su organización. Puede ver información sobre el estado de cumplimiento general de los dispositivos, y el estado de cumplimiento de configuraciones y directivas concretas, así como profundizar en los dispositivos con el objetivo de ver las directivas y opciones específicas que afectan a los dispositivos.
+
+> [!NOTE]
+> En marzo introduciremos algunas mejoras de seguridad (gracias a sus comentarios) en el servicio de Intune. En función de cómo estén configuradas sus directivas de cumplimiento, puede que deba tomar medidas para evitar la pérdida de acceso al correo electrónico de sus usuarios finales. Para obtener información detallada, vea [Upcoming security enhancements](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/) (Próximas mejoras de seguridad).
 
 ## <a name="before-you-begin"></a>Antes de comenzar
 
@@ -113,7 +116,7 @@ Si hace clic en **botón Filtrar**, se abre el filtro emergente con las siguient
 
     -   En período de gracia
 
-    -   Desconocido
+    -   Unknown
 
     -   Error
 
@@ -124,6 +127,19 @@ Si hace clic en el **botón Actualizar**, se debería cerrar el menú emergente 
 Al hacer clic en un dispositivo, se abre el **panel de dispositivos** con el dispositivo seleccionado, que proporciona información detallada sobre la configuración de la directiva de cumplimiento del dispositivo aplicada a dicho dispositivo.
 
 Al hacer clic en la propia configuración de directivas de dispositivos, puede ver el que nombre de la directiva de cumplimiento de dispositivos originó dicha configuración de cumplimiento de dispositivos seleccionada como destino por el administrador.
+
+### <a name="devices-without-compliance-policy"></a>Dispositivos sin directiva de cumplimiento
+En este informe se identifican los dispositivos que no tienen asignada ninguna directiva de cumplimiento. Con la introducción de la opción de seguridad que marca como "No compatible" todos los dispositivos que no tienen directivas de cumplimiento, es importante poder identificar estos dispositivos. Posteriormente podrá asignarles al menos una directiva de cumplimiento.
+
+> [!NOTE]
+> La nueva configuración de seguridad se puede configurar en el portal de Intune. Seleccione **Conformidad de dispositivos** y, en **Configuración**, elija **Configuración de directivas de cumplimiento**. Después, use el botón de alternancia para establecer **Marcar los dispositivos que no tienen asignada una directiva de cumplimiento como** en **Compatible** o **No compatible**. Obtenga más información sobre esta [mejora de la seguridad en el servicio de Intune](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/).
+
+![Imagen en la que se muestra el informe Dispositivos sin directiva de cumplimiento](./media/idc-12.png)
+
+El mosaico **Dispositivos sin directiva de cumplimiento** está disponible en el panel Conformidad de dispositivos. En él se muestran todos los dispositivos que no tienen ninguna directiva de cumplimiento, el usuario del dispositivo, el estado de cumplimiento y el modelo del dispositivo.
+
+> [!NOTE]
+> Los usuarios a los que se asigna una directiva de cumplimiento de cualquier tipo no aparecerán en el informe, sea cual sea la plataforma del dispositivo. Por ejemplo, si ha asignado por error una directiva de cumplimiento de Windows a un usuario que tiene un dispositivo Android, el dispositivo no aparecerá en el informe, aunque Intune considerará ese dispositivo como no compatible. Para evitar problemas, le recomendamos que cree directivas para cada plataforma de dispositivo y que las implemente para todos los usuarios.
 
 ### <a name="per-policy-device-compliance-report"></a>Informe de cumplimiento de dispositivos por directiva
 

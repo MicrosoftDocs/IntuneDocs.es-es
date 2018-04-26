@@ -1,29 +1,29 @@
 ---
-title: "Requisitos previos para la inscripción de dispositivos móviles"
-description: "Configure los requisitos previos de administración de dispositivos móviles (MDM) y prepárese para inscribir distintos sistemas operativos."
-keywords: 
+title: Requisitos previos para la inscripción de dispositivos móviles
+description: Configure los requisitos previos de administración de dispositivos móviles (MDM) y prepárese para inscribir distintos sistemas operativos.
+keywords: ''
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.date: 05/31/2017
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 44fd4af0-f9b0-493a-b590-7825139d9d40
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9d02a822dc9a403806657f36ae0ac4bfad8246d0
-ms.sourcegitcommit: 1a54bdf22786aea1cf1b497d54024470e1024aeb
+ms.openlocfilehash: 57dfc1bf2765de6c2e02352caca58f3859742fd6
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prerequisites-for-mobile-device-management-in-intune"></a>Requisitos previos para la administración de dispositivos móviles en Intune
 
-[!INCLUDE[classic-portal](../includes/classic-portal.md)]
+[!INCLUDE [classic-portal](../includes/classic-portal.md)]
 
 Para permitir que los empleados inscriban sus dispositivos móviles con Intune, debe llevar a cabo los pasos siguientes. Estos mismos pasos son necesarios para administrar dispositivos de empresa.
 
@@ -39,7 +39,7 @@ Para permitir que los empleados inscriban sus dispositivos móviles con Intune, 
 
 ¿Busca Intune con Configuration Manager?
 > [!div class="button"]
-[Consulte los documentos SCCM >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
+> [Consulte los documentos SCCM >](https://docs.microsoft.com/sccm/mdm/deploy-use/setup-hybrid-mdm)
 
 ## <a name="step-1-enable-connections"></a>Paso 1: Habilitar conexiones
 
@@ -80,19 +80,20 @@ Con la personalización del Portal de empresa, es más fácil ofrecer una experi
 
 El nombre de la empresa se muestra como título del portal de empresa. La información y los datos de contacto se muestran a los usuarios en la pantalla Contacto de TI del portal de empresa. La declaración de privacidad se muestra cuando el usuario hace clic en el vínculo de privacidad.
 
-|Nombre de campo|Longitud máxima|Más información|
-    |----------|------------------------|----------------|
-    |Nombre de la empresa|40|Es el nombre que se muestra como título del portal de empresa. **Nota**: Solo caracteres alfanuméricos. Este campo no admite caracteres especiales.|
-    |Nombre del contacto del departamento de TI|40|Es el nombre que se muestra en la página **Contacto de TI**.|
-    |Número de teléfono del departamento de TI|20|Es el número de contacto que se muestra en la página **Contacto de TI**.|
-    |Dirección de correo electrónico del departamento de TI|40|Es la dirección de contacto que se muestra en la página **Contacto de TI**. Debe especificar una dirección de correo electrónico válida en el formato **alias@domainname.com**.|
-    |Información adicional|120|Esta información se muestra en la página **Contact IT** (Contacto de TI).|
-    |Dirección URL de la declaración de privacidad de la empresa|79|Puede especificar su propia declaración de privacidad de la empresa, que aparece cuando los usuarios hacen clic en los vínculos de privacidad del portal de empresa. Debe escribir una dirección URL válida con el formato https://www.contoso.com.|
+
+|          Nombre de campo           | Longitud máxima |                                                                                       Más información                                                                                        |
+|-------------------------------|------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         Nombre de la empresa          |     40     |                Es el nombre que se muestra como título del portal de empresa. <strong>Nota</strong>: Solo caracteres alfanuméricos. Este campo no admite caracteres especiales.                |
+|  Nombre del contacto del departamento de TI   |     40     |                                                                Es el nombre que se muestra en la página <strong>Contacto de TI</strong>.                                                                |
+|  Número de teléfono del departamento de TI   |     20     |                                                           Es el número de contacto que se muestra en la página <strong>Contacto de TI</strong>.                                                           |
+|  Dirección de correo electrónico del departamento de TI  |     40     |             Es la dirección de contacto que se muestra en la página <strong>Contacto de TI</strong>. Debe especificar una dirección de correo electrónico válida en el formato <strong>alias@domainname.com</strong>.              |
+|    Información adicional     |    120     |                                                            Esta información se muestra en la página <strong>Contact IT</strong> (Contacto de TI).                                                             |
+| Dirección URL de la declaración de privacidad de la empresa |     79     | Puede especificar su propia declaración de privacidad de la empresa, que aparece cuando los usuarios hacen clic en los vínculos de privacidad del portal de empresa. Debe especificar una dirección URL válida en el formato https://www.contoso.com. |
 
 ### <a name="support-contacts"></a>Contactos de soporte técnico
 El sitio web de soporte se muestra a los usuarios en el portal de empresa para que puedan tener acceso al soporte en línea.
 
-|Nombre del campo|Longitud máxima|Más información|
+|Nombre de campo|Longitud máxima|Más información|
     |----------|------------------------|----------------|
     |Dirección URL del sitio web de soporte:|150|Si tiene un sitio web de soporte que desea que utilicen los usuarios finales, especifique la dirección URL aquí. La dirección URL debe tener el formato https://www.contoso.com. Si no especifica una dirección URL, no se mostrará ningún sitio web de soporte en la página **Contacto de TI** del portal de empresa.|
     |Nombre del sitio web|40|Este nombre es el nombre descriptivo que se muestra para la dirección URL del sitio web de soporte. Si solo especifica una dirección URL de sitio web de soporte sin nombre descriptivo, se mostrará **Ir a sitio web de TI** en la página **Contacto de TI** del portal de empresa.|
@@ -199,7 +200,7 @@ Realice estos pasos antes de ponerse en contacto con Soporte técnico de Microso
 
 #### <a name="reset-mdm-authority-from-office-365-to-configuration-manager"></a>Restablecer la entidad de MDM de Office 365 a Configuration Manager
 
-1. Vaya a [https://protection.office.com](https://protection.office.com).
+1. Navegue a [https://protection.office.com](https://protection.office.com).
 2. Seleccione la pestaña **Directivas de seguridad** y luego **Administración de dispositivos**.
 3. Quite todos los dispositivos al elegir **Borrado selectivo**. No intente quitar un dispositivo desde el propio dispositivo. Si el borrado selectivo está deshabilitado, no hay que hacer nada más.
 4. Seleccione la pestaña **Directivas de seguridad** y luego **Directivas de seguridad de dispositivos**.

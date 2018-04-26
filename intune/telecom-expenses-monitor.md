@@ -1,28 +1,28 @@
 ---
-title: "Configurar un servicio de administración de gastos de telecomunicaciones"
+title: Configurar un servicio de administración de gastos de telecomunicaciones
 titleSuffix: Microsoft Intune
-description: "Integre Intune con el servicio de administración de gastos de telecomunicaciones de Saaswedo."
+description: Integre Intune con el servicio de administración de gastos de telecomunicaciones de Saaswedo.
 keywords: Saaswedo
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 02/28/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
 ms.reviewer: sumitp
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ef755a1fd5f94342f551ac168136217dbc82b244
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: af81b4cca369cae69cff6ea52bb5df9ce369cd7f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>Configuración de un servicio de administración de gastos de telecomunicaciones en Intune
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune permite administrar los gastos de telecomunicaciones derivados del uso de datos en dispositivos móviles empresariales. Para ello, Intune se ha integrado con la solución de administración de gastos de telecomunicaciones Datalert del desarrollador de software externo Saaswedo. Datalert es un software de administración de gastos de telecomunicaciones en tiempo real que le permite administrar el uso de datos de telecomunicaciones. Le ayuda a evitar datos costosos e inesperados y usos de itinerancia por encima del límite de los dispositivos administrados por Intune.
 
@@ -72,7 +72,7 @@ Antes de empezar, asegúrese de tener una suscripción al servicio de administra
 
     En la siguiente captura de pantalla se muestran las marcas de verificación verdes que aparecen cuando la conexión se realiza correctamente.
 
-  ![Página de Datalert en la que se muestra una conexión correcta](./media/tem-mdm-configuration-mdm-server-page.png)
+   ![Página de Datalert en la que se muestra una conexión correcta](./media/tem-mdm-configuration-mdm-server-page.png)
 
 ### <a name="step-2-check-that-the-telecom-expense-management-feature-is-active-in-intune"></a>Paso 2: Comprobar que la característica de administración de gastos de telecomunicaciones está activa en Intune
 
@@ -80,7 +80,7 @@ Tras completar el paso 1, la conexión debe haberse habilitado automáticamente 
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
 
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 
 3. En el panel **Intune**, elija **Configuración del dispositivo**.
 
@@ -88,7 +88,7 @@ Tras completar el paso 1, la conexión debe haberse habilitado automáticamente 
 
    Busque el estado de conexión **Activo** en la parte superior de la página.
 
-  ![Página de Intune en la que se muestra el estado de conexión Activo de Datalert](./media/tem-azure-portal-enable-service.png)
+   ![Página de Intune en la que se muestra el estado de conexión Activo de Datalert](./media/tem-azure-portal-enable-service.png)
 
 ### <a name="step-3-deploy-the-datalert-app-to-corporate-enrolled-devices"></a>Paso 3: Implementar la aplicación Datalert en dispositivos empresariales inscritos
 
@@ -96,7 +96,7 @@ Para asegurarse de que solo se recopila el uso de datos de las líneas empresari
 - Crear categorías de dispositivos en Intune.
 - Establecer los teléfonos empresariales como el único destino de la aplicación Datalert.
 
-#### <a name="define-device-categories-and-device-groups-mapped-to-the-categories"></a>Definir categorías de dispositivos y grupos de dispositivos asignados a las categorías.
+#### <a name="define-device-categories-and-device-groups-mapped-to-the-categories"></a>Definir categorías de dispositivos y grupos de dispositivos asignados a las categorías
 
 En función de las necesidades de su organización, cree al menos dos categorías de dispositivos (por ejemplo, Empresarial y Personal). Después, cree grupos de dispositivos dinámicos para cada categoría. Puede crear más categorías para su organización, según resulte necesario.
 
@@ -136,7 +136,7 @@ Siga estos pasos para crear la aplicación Datalert en Intune para cada platafor
 
 4. Elija si quiere que sea obligatorio u opcional instalar la aplicación para el grupo. En la siguiente captura de pantalla de ejemplo se muestra la instalación como un paso obligatorio, lo que implica que los usuarios deben instalar la aplicación Datalert después de inscribir sus dispositivos.
 
-  ![Captura de pantalla del panel Agregar directiva](./media/tem-assign-datalert-app-to-device-group.png)
+   ![Captura de pantalla del panel Agregar directiva](./media/tem-assign-datalert-app-to-device-group.png)
 
 ### <a name="step-4-add-corporate-paid-phone-lines-to-the-datalert-console"></a>Paso 4: Agregar líneas de teléfono empresariales de pago a la consola de Datalert
 

@@ -1,29 +1,29 @@
 ---
-title: "Preparar aplicaciones de línea de negocio para las directivas de protección de aplicaciones"
+title: Preparar aplicaciones de línea de negocio para las directivas de protección de aplicaciones
 titlesuffix: Microsoft Intune
-description: "Use la herramienta de ajuste de aplicaciones y el SDK de aplicaciones para permitir que sus aplicaciones de línea de negocio personalizadas usen las directivas de protección de aplicaciones en Microsoft Intune."
-keywords: 
+description: Use la herramienta de ajuste de aplicaciones y el SDK de aplicaciones para permitir que sus aplicaciones de línea de negocio personalizadas usen las directivas de protección de aplicaciones en Microsoft Intune.
+keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/24/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 76330c926ecac9ae8b071837465d800f48f925fb
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: d61ba21ba465037fbf2ef4e1c7423f6649fc810f
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicaciones de línea de negocio para las directivas de protección de aplicaciones
 
-[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
 Puede habilitar las aplicaciones para que usen directivas de protección de aplicaciones mediante la herramienta de ajuste de aplicaciones de Intune o el SDK para aplicaciones de Intune. Use esta información para conocer sobre estos dos métodos y cuándo usarlos.
 
@@ -70,8 +70,8 @@ Para obtener más información sobre el SDK, consulte la [Introducción](app-sdk
 
 |**SDK de aplicaciones de Intune** |**Xamarin** |**Cordova**
 |------|----|----|
-|**iOS**|Sí: usar el [componente Xamarin del SDK de aplicaciones de Intune](app-sdk-xamarin.md).|Sí: usar el [complemento Cordova del SDK de aplicaciones de Intune](app-sdk-cordova.md).|
-|**Android**| Sí: usar el [componente Xamarin del SDK de aplicaciones de Intune](app-sdk-xamarin.md).|Sí: usar el [complemento Cordova del SDK de aplicaciones de Intune](app-sdk-cordova.md).|
+|**iOS**|Sí: usar [Xamarin Bindings del SDK de aplicaciones de Intune](app-sdk-xamarin.md).|Sí: usar el [complemento Cordova del SDK de aplicaciones de Intune](app-sdk-cordova.md).|
+|**Android**| Sí: usar [Xamarin Bindings del SDK de aplicaciones de Intune](app-sdk-xamarin.md).|Sí: usar el [complemento Cordova del SDK de aplicaciones de Intune](app-sdk-cordova.md).|
 
 ## <a name="feature-comparison"></a>Comparación de características
 En la siguiente tabla se enumeran los valores que puede usarse para el SDK para aplicaciones y la herramienta de ajuste de aplicaciones.
@@ -79,30 +79,30 @@ En la siguiente tabla se enumeran los valores que puede usarse para el SDK para 
 > [!NOTE]
 > La herramienta de ajuste de aplicaciones se puede usar con Intune independiente o con Intune con Configuration Manager.
 
-|Característica|SDK para aplicaciones|Herramienta de ajuste de aplicaciones|
-|-----------|---------------------|-----------|
-|Restringir contenido web para mostrar en un explorador administrado corporativo|X|X|
-|Impedir copias de seguridad de Android, iTunes o iCloud|X|X|
-|Permitir que la aplicación transfiera datos a otras aplicaciones|X|X|
-|Permitir que la aplicación reciba datos de otras aplicaciones|X|X|
-|Restringir cortar, copiar y pegar con otras aplicaciones|X|X|
-|Requerir PIN simple en acceso|X|X|
-|Reemplazar el PIN de aplicación integrado con PIN de Intune|X||
-|Especificar el número de intentos antes de restablecer el PIN|X|X|
-|Permitir desbloqueo mediante huellas digitales en lugar de mediante PIN |X|X|
-|Requerir credenciales corporativas en acceso|X|X|
-|Bloquear la ejecución de aplicaciones administradas en dispositivos liberados o modificados|X|X|
-|Cifrar datos de aplicación|X|X|
-|Volver a comprobar los requisitos de acceso tras un número especificado de minutos|X|X|
-|Especificar el período de gracia sin conexión|X|X|
-|Bloquear captura de pantalla (solo Android)|X|X|
-|Compatibilidad con MAM sin la inscripción de dispositivos|X|X|
-|Eliminación completa|X|X|
-|Eliminación selectiva <br></br>**Nota**: Para iOS, cuando se quita el perfil de administración, también se quita la aplicación.|X||
-|Impedir "Guardar como" |X||
-|Configuración de aplicaciones de destino |X||
-|Compatibilidad con aplicaciones de identidades múltiples|X||
-|Estilo personalizable |X|||
+|                                                         Característica                                                          | SDK para aplicaciones | Herramienta de ajuste de aplicaciones |
+|--------------------------------------------------------------------------------------------------------------------------|---------|-------------------|
+|                              Restringir contenido web para mostrar en un explorador administrado corporativo                              |    X    |         X         |
+|                                        Impedir copias de seguridad de Android, iTunes o iCloud                                        |    X    |         X         |
+|                                         Permitir que la aplicación transfiera datos a otras aplicaciones                                         |    X    |         X         |
+|                                        Permitir que la aplicación reciba datos de otras aplicaciones                                         |    X    |         X         |
+|                                      Restringir cortar, copiar y pegar con otras aplicaciones                                       |    X    |         X         |
+|                                              Requerir PIN simple en acceso                                               |    X    |         X         |
+|                                         Reemplazar el PIN de aplicación integrado con PIN de Intune                                         |    X    |                   |
+|                                     Especificar el número de intentos antes de restablecer el PIN                                      |    X    |         X         |
+|                                             Permitir desbloqueo mediante huellas digitales en lugar de mediante PIN                                             |    X    |         X         |
+|                                         Requerir credenciales corporativas en acceso                                         |    X    |         X         |
+|                             Bloquear la ejecución de aplicaciones administradas en dispositivos liberados o modificados                              |    X    |         X         |
+|                                                     Cifrar datos de aplicación                                                     |    X    |         X         |
+|                           Volver a comprobar los requisitos de acceso tras un número especificado de minutos                            |    X    |         X         |
+|                                             Especificar el período de gracia sin conexión                                             |    X    |         X         |
+|                                           Bloquear captura de pantalla (solo Android)                                            |    X    |         X         |
+|                                        Compatibilidad con MAM sin la inscripción de dispositivos                                         |    X    |         X         |
+|                                                        Eliminación completa                                                         |    X    |         X         |
+| Eliminación selectiva <br></br><strong>Nota</strong>: Para iOS, cuando se quita el perfil de administración, también se quita la aplicación. |    X    |                   |
+|                                                    Impedir "Guardar como"                                                     |    X    |                   |
+|                                            Configuración de aplicaciones de destino                                            |    X    |                   |
+|                                                Compatibilidad con aplicaciones de identidades múltiples                                                |    X    |                   |
+|                                                    Estilo personalizable                                                    |    X    |                   |
 
 ## <a name="next-steps"></a>Pasos siguientes
 

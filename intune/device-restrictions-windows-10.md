@@ -1,28 +1,27 @@
 ---
-title: Configuración de restricciones de dispositivos de Microsoft Intune para Windows 10
-titlesuffix: ''
+title: 'Configuración de restricciones de dispositivos para Windows 10 en Microsoft Intune: Azure | Microsoft Docs'
 description: Descubra las opciones de configuración de Microsoft Intune que puede usar para controlar la funcionalidad y la configuración de los dispositivos que ejecutan Windows 10.
 keywords: ''
-author: vhorne
-ms.author: victorh
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 4/9/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: eee23afb4e2398358dc2c6b19b7d85be6b4f9edb
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: 83027a95edca04f4461cecab341deb3ec10680fb
+ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/16/2018
 ---
-#<a name="microsoft-intune-windows-10-and-later-device-restriction-settings"></a>Configuración de restricciones de Microsoft Intune de dispositivos Windows 10 y versiones posteriores
+# <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Restricciones de dispositivos para la configuración de Windows 10 (y versiones posteriores) en Intune
 En este artículo, se muestran todas las opciones de configuración de restricciones de dispositivos de Microsoft Intune que puede configurar para los dispositivos que ejecutan Windows 10.
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="general"></a>General
 - **Captura de pantalla (solo móviles)**: permite que el usuario capture la pantalla del dispositivo como imagen.
@@ -48,9 +47,8 @@ En este artículo, se muestran todas las opciones de configuración de restricci
 - **Detección de dispositivos**: bloquea la detección de un dispositivo por parte de otros dispositivos.
 - **Conmutador de tareas (solo móviles)**: bloquea el conmutador de tareas en el dispositivo.
 - **Cuadro de diálogo de error de tarjeta SIM (solo móviles)**: impide que un mensaje de error se muestre en el dispositivo si no se detecta una tarjeta SIM.
-- **Área de trabajo de entrada de lápiz**: impida que los usuarios accedan al área de trabajo de entrada de lápiz. Cuando este valor no está configurado, se habilita el área de trabajo de entrada de lápiz (se activa la característica) y el usuario puede usarla más allá de la pantalla de bloqueo.
+- **Área de trabajo de Ink**: impida que los usuarios accedan al área de trabajo de Ink. Cuando este valor no está configurado, se habilita el área de trabajo de Ink (se activa la característica) y el usuario puede usarla más allá de la pantalla de bloqueo.
 - **Reimplementación automática**: permite a los usuarios con derechos administrativos eliminar todos los datos de usuario y las opciones de configuración con **Ctrl + Win + R** en la pantalla de bloqueo del dispositivo. En este caso, el dispositivo se vuelve a configurar e inscribir automáticamente para la administración.
-
 
 ## <a name="password"></a>Contraseña
 -   **Contraseña**: exige que el usuario final escriba una contraseña para acceder al dispositivo.
@@ -65,7 +63,7 @@ Para los dispositivos que ejecutan Windows 10 Mobile: si el inicio de sesión fa
     -   **Contraseñas sencillas**: le permite el uso de contraseñas sencillas, como 1111 y 1234. Esta configuración también permite o bloquea el uso de contraseñas de imagen de Windows.
 -   **Cifrado**: habilita el cifrado en dispositivos de destino.
 
-## <a name="personalization"></a>Personalización
+## <a name="personalization"></a>Personalization
 
 - **Dirección URL de imagen de fondo de escritorio (solo escritorio)**: especifica la dirección URL de una imagen en formato JPEG que quiere usar como fondo de escritorio de Windows. Los usuarios no pueden cambiar esto.
 
@@ -75,7 +73,6 @@ Para los dispositivos que ejecutan Windows 10 Mobile: si el inicio de sesión fa
 -   **Aceptación automática de los mensajes de consentimiento del usuario sobre emparejamiento y privacidad**: permite que Windows acepte automáticamente los mensajes de consentimiento sobre emparejamiento y privacidad al ejecutar las aplicaciones.
 - **Publicar las actividades del usuario**: establezca esta propiedad en **Bloquear** para evitar experiencias compartidas y la detección de recursos usados recientemente en el selector de tareas.
 - **Solo actividades locales**: establezca esta propiedad en **Bloquear** para evitar experiencias compartidas y la detección de recursos usados recientemente en el selector de tareas según la actividad local únicamente.
-
 
 Puede definir la información a la que pueden tener acceso todas las aplicaciones del dispositivo. Puede definir excepciones para cada aplicación mediante **excepciones de privacidad de cada aplicación**.
 
@@ -137,9 +134,7 @@ Puede agregar aplicaciones que deben tener un comportamiento de privacidad difer
 -   **Notificaciones del sistema en pantalla bloqueada**: impide que los mensajes de alerta se muestren en la pantalla de bloqueo del dispositivo.
 -   **Tiempo de espera de la pantalla (solo dispositivos móviles)**: especifica el tiempo en segundos después de que se bloquee la pantalla, cuando se apagará.
 
-
-
-## <a name="app-store"></a>App Store
+## <a name="app-store"></a>Tienda de aplicaciones
 
 -   **Tienda de aplicaciones (solo móvil)**: permitir o bloquear el uso de la tienda de aplicaciones en dispositivos Windows 10 Mobile.
 -   **Actualizar automáticamente las aplicaciones de la tienda**: permite que las aplicaciones instaladas de Microsoft Store se actualicen automáticamente.
@@ -152,8 +147,6 @@ Puede agregar aplicaciones que deben tener un comportamiento de privacidad difer
 -   **Instalar las aplicaciones en la unidad del sistema**: esta opción hace que las aplicaciones dejen de almacenar datos en la unidad del sistema del dispositivo.
 -   **Game DVR (solo escritorio)**: configura si se permite la grabación y difusión de los juegos.
 -   **Aplicaciones solo de la tienda**: configura si los usuarios pueden instalar aplicaciones de otros lugares distintos de la tienda de aplicaciones.
-
-
 
 ## <a name="edge-browser"></a>Explorador Microsoft Edge
 
@@ -192,6 +185,7 @@ Puede agregar aplicaciones que deben tener un comportamiento de privacidad difer
 
 ## <a name="search"></a>Buscar
 - **Búsqueda segura (solo móviles)**: controla cómo Cortana filtra contenido para adultos en los resultados de la búsqueda. Puede seleccionar **Strict** (Estricto), **Moderate** (Moderado) o permitir que el usuario final elija su propia configuración.
+- **Mostrar resultados web en la búsqueda**: permita o no que aparezcan resultados web en las búsquedas realizadas en el dispositivo.
 
 ## <a name="cloud-and-storage"></a>Nube y almacenamiento
 -   **Cuenta Microsoft**: permite al usuario asociar una cuenta de Microsoft con el dispositivo.
@@ -216,7 +210,6 @@ Puede agregar aplicaciones que deben tener un comportamiento de privacidad difer
 -   **Intervalo de detección de Wi-Fi**: especifica con qué frecuencia los dispositivos detectan redes Wi-Fi. Especifique un valor de 1 (más frecuente) a 500 (menos frecuente).
 -   **Servicios Bluetooth permitidos**: especifica como cadenas hexadecimales una lista de perfiles y servicios Bluetooth permitidos.
 
-
 ## <a name="control-panel-and-settings"></a>Panel de control y configuración
 
 -   **Aplicación de configuración**: bloquea el acceso a la aplicación de configuración de Windows.
@@ -235,7 +228,7 @@ Puede agregar aplicaciones que deben tener un comportamiento de privacidad difer
     -   **Privacidad**: bloquea el acceso al área de privacidad de la aplicación de configuración.
     -   **Actualización y seguridad**: bloquea el acceso al área de actualizaciones y seguridad de la aplicación de configuración.
 
-## <a name="start"></a>Inicio
+## <a name="start"></a>Start
 
 - **Desanclar aplicaciones de la barra de tareas**: impide que el usuario desancle aplicaciones del menú Inicio.
 - **Documentos en Inicio**: oculta o muestra la carpeta Documentos en el menú Inicio de Windows.
@@ -258,41 +251,48 @@ Puede agregar aplicaciones que deben tener un comportamiento de privacidad difer
 
 ## <a name="kiosk-preview"></a>Quiosco (versión preliminar)
 
--   **Pantalla completa**: identifica el tipo de [pantalla completa](https://docs.microsoft.com/windows/configuration/kiosk-shared-pc) que la directiva admite. Las opciones son:
+Un dispositivo de pantalla completa normalmente ejecuta una aplicación o un conjunto determinado de aplicaciones. A los usuarios no se les permite el acceso a características o funciones del dispositivo que está fuera de la aplicación de pantalla completa.
 
-      - **No configurado** (valor predeterminado): la directiva no habilita una pantalla completa. 
-      - **Quiosco con aplicación única**: el perfil habilita el dispositivo como un quiosco con aplicación única.
-      - **Quiosco con varias aplicaciones**: el perfil habilita el dispositivo como un quiosco con varias aplicaciones.
+- **Pantalla completa**: identifica el tipo de pantalla completa admitido por la directiva. Las opciones son:
 
-    Los quioscos con aplicación única necesitan la siguiente configuración:
+  - **No configurado** (valor predeterminado): la directiva no habilita una pantalla completa. 
+  - **Pantalla completa con una sola aplicación**: el perfil permite que el dispositivo solo ejecute una aplicación. Cuando el usuario inicia sesión, se inicia una aplicación concreta. Este modo también evita que el usuario abra nuevas aplicaciones o modifique la aplicación en ejecución.
+  - **Pantalla completa con varias aplicaciones**: el perfil permite que el dispositivo ejecute varias aplicaciones. Solo las aplicaciones que agregue están disponibles para el usuario. La ventaja de una pantalla completa con varias aplicaciones, o un dispositivo de propósito fijo, es proporcionar una experiencia fácil de entender para los usuarios gracias al acceso únicamente a las aplicaciones que necesitan y la retirada de la vista de las aplicaciones que no necesitan.
 
-      - **Cuenta de usuario**: especifica la cuenta de usuario local (en el dispositivo) o el inicio de sesión de cuenta de Azure AD asociada a la aplicación de pantalla completa. En el caso de las cuentas unidas a dominios de Azure AD, especifique la cuenta con el formato `domain\\username@tenant.org`.
+#### <a name="single-app-kiosks"></a>Pantallas completas con una sola aplicación
+Escriba los valores siguientes:
 
-         En el caso de los dispositivos en entornos públicos, use cuentas con privilegios mínimos para evitar actividades no autorizadas.  
+- **Cuenta de usuario**: especifique la cuenta de usuario local (en el dispositivo) o el inicio de sesión de cuenta de Azure AD asociado a la aplicación de pantalla completa. En el caso de las cuentas unidas a dominios de Azure AD, especifique la cuenta con el formato `domain\username@tenant.org`. 
 
-      - **Identificador de modelo de usuario de la aplicación (AUMID)**: especifica el AUMID de la aplicación de pantalla completa. Para más información, vea [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Buscar el identificador de modelo de usuario de aplicación de una aplicación instalada).
+    En el caso de las pantallas completas en entornos de uso público con inicio de sesión automático habilitado, se debe usar un tipo de usuario con los privilegios mínimos (por ejemplo, la cuenta de usuario estándar local). Para configurar una cuenta de Azure Active Directory (AD) para el modo de pantalla completa, use el formato `AzureAD\user@contoso.com`.
 
-    Los [quioscos con varias aplicaciones](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) requieren una configuración específica. Use el botón **Agregar** para crear una configuración de pantalla completa o seleccionar una ya existente.
+- **Identificador de modelo de usuario de la aplicación (AUMID)**: especifique el AUMID de la aplicación de pantalla completa. Para más información, vea [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Buscar el identificador de modelo de usuario de aplicación de una aplicación instalada).
 
-    Las configuraciones de quiosco con varias aplicaciones incluyen las siguientes opciones:
+#### <a name="multi-app-kiosks"></a>Pantallas completas con varias aplicaciones
+Las [pantallas completas con varias aplicaciones](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#configure-a-kiosk-in-microsoft-intune) usan una configuración de pantalla completa que muestra las aplicaciones permitidas y otras opciones. 
 
-    - **Nombre de la configuración de quiosco**: nombre descriptivo que se usa para identificar una configuración determinada.
+Use el botón **Agregar** para crear una configuración de pantalla completa (o seleccionar una existente). Luego, escriba los valores siguientes:
 
-    - Una o varias **aplicaciones de pantalla completa** que constan de lo siguiente:
+- **Nombre de la configuración de quiosco**: escriba un nombre descriptivo que se use para identificar la configuración.
 
-        - **Tipo de aplicación**, que especifica el tipo de la aplicación de quiosco.  Entre los valores compatibles se incluyen:   
+- **Aplicaciones de quiosco**: especifique las aplicaciones disponibles en el menú Inicio. Las aplicaciones que agregue son las únicas que el usuario puede abrir.
 
-            - **Aplicación Win32**: una aplicación de escritorio tradicional (necesita el nombre/ruta de acceso completa del archivo ejecutable correspondiente al dispositivo).
+  - **Tipo de aplicación**: elija el tipo de la aplicación de pantalla completa:
+    - **Aplicación Win32**: una aplicación de escritorio tradicional Necesita el nombre/ruta de acceso completo del archivo ejecutable correspondiente al dispositivo.
+    - **Aplicación para UWP**: una aplicación Windows universal. Necesita el [AUMID de la aplicación](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
-            - **Aplicación para UWP**: una aplicación Windows universal. Necesita el [AUMID de la aplicación](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+  - **Identificador**: especifique el nombre o ruta de acceso completo del archivo ejecutable (aplicaciones Win32) o el [AUMID de aplicación](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (aplicaciones para UWP).
 
-        - **Identificador de la aplicación**: especifica bien el nombre o ruta de acceso completa del archivo ejecutable (aplicaciones Win32), bien el [AUMID de aplicación](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (aplicaciones para UWP).
+- **Barra de tareas**: elija **Habilitar** (mostrar) la barra de tareas o mantenerla **No configurada** (oculta) en la pantalla completa.
 
-    - **Barra de tareas** indica si la barra de tareas se muestra (**Habilitada**) o se oculta (**No configurada**) en la pantalla completa.
+- **Diseño del menú Inicio**: especifique un archivo XML que describa el modo en que las aplicaciones aparecen en el menú Inicio. [Personalizar y exportar el diseño de la pantalla Inicio](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) proporciona algunas instrucciones y XML de ejemplo.
 
-    - **Diseño del menú Inicio**: especifica un archivo XML que describe el modo en que las aplicaciones [aparecen en el menú Inicio](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file).
 
-    - **Usuarios asignados**: especifica una o varias cuentas de usuario asociadas a la configuración de pantalla completa. La cuenta de usuario puede ser local en el dispositivo o un inicio de sesión de cuenta de Azure AD asociada a la aplicación de pantalla completa. Especifique cuentas unidas a dominio con el formato `domain\\username@tenant.org`.
+  [Crear un quiosco de Windows 10 que ejecute varias aplicaciones](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) proporciona más detalles sobre cómo usar y crear archivos XML.
+
+- **Usuarios asignados**: agregue una o varias cuentas de usuario que puedan usar las aplicaciones agregadas. Cuando la cuenta inicia sesión, solo están disponibles las aplicaciones definidas en la configuración. La cuenta de usuario puede ser local en el dispositivo o un inicio de sesión de cuenta de Azure AD asociada a la aplicación de pantalla completa.
+
+    En el caso de las pantallas completas en entornos de uso público con inicio de sesión automático habilitado, se debe usar un tipo de usuario con los privilegios mínimos (por ejemplo, la cuenta de usuario estándar local). Para configurar una cuenta de Azure Active Directory (AD) para el modo de pantalla completa, use el formato `domain\user@tenant.com`.
 
 ## <a name="windows-defender-antivirus"></a>Antivirus de Windows Defender
 
@@ -328,14 +328,11 @@ Si los archivos de la unidad son de solo lectura, Defender no puede quitar el ma
     -   **Definido por el usuario**
     -   **Bloquear**
 
-
-
 ### <a name="windows-defender-antivirus-exclusions"></a>Exclusiones del antivirus de Windows Defender
 
 -   **Archivos y carpetas para excluir de exámenes y protección en tiempo real**: agrega uno o varios archivos y carpetas, como **C:\Path** o **%ProgramFiles%\Path\filename.exe** a la lista de exclusiones. Estos archivos y carpetas no se incluyen en los exámenes en tiempo real ni programados.
 -   **Extensiones de archivo para excluir de exámenes y protección en tiempo real**: agrega una o varias extensiones de archivo, como **jpg** o **txt** a la lista de exclusiones. Los archivos con estas extensiones no se incluyen en los exámenes en tiempo real ni programados.
 -   **Procesos para excluir de exámenes y protección en tiempo real**: agregar uno o varios procesos del tipo **.exe**, **.com** o **.scr** a la lista de exclusiones. Estos procesos no se incluyen en los exámenes en tiempo real ni programados.
-
 
 ## <a name="network-proxy"></a>Proxy de red
 
@@ -348,9 +345,7 @@ Si los archivos de la unidad son de solo lectura, Defender no puede quitar el ma
     -   **Excepciones de proxy**: escriba las direcciones URL que no deben usar el servidor proxy. Use un punto y coma para separar cada elemento.
     -   **Omitir el servidor proxy para direcciones locales**: si no quiere usar el servidor proxy para direcciones locales de la intranet, habilite esta opción.
 
-
 ## <a name="windows-spotlight"></a>Contenido destacado de Windows
-
 
 - **Contenido destacado de Windows**: use esta opción para bloquear todas las funciones de Contenido destacado de Windows en los dispositivos de Windows 10. Si bloquea esta configuración, las siguientes opciones no estarán disponibles.
     - **Contenido destacado de Windows en la pantalla de bloqueo**: impide que Contenido destacado de Windows muestre información en la pantalla de bloqueo del dispositivo.
@@ -360,7 +355,6 @@ Si los archivos de la unidad son de solo lectura, Defender no puede quitar el ma
     - **Contenido destacado de Windows en el centro de actividades**: impide que las sugerencias de Contenido destacado de Windows como una nueva aplicación o contenido de seguridad aparezcan en el centro de actividades de Windows.
     - **Personalización de Contenido destacado de Windows**: impide que Contenido destacado de Windows personalice los resultados basándose en el uso de un dispositivo.
     - **Experiencia de bienvenida de Windows**: bloquea la experiencia de bienvenida de Windows que muestra la información de usuario sobre características nuevas o actualizadas.
-
 
 ## <a name="projection"></a>Proyección
 
@@ -394,15 +388,3 @@ Si los archivos de la unidad son de solo lectura, Defender no puede quitar el ma
 - **Sincronización de mensajes (solo móvil)**: deshabilita Mensajes en cualquier dispositivo y la copia de seguridad y restauración de los mensajes de texto.
 - **MMS (solo móvil)**: deshabilita la funcionalidad de envío y recepción de MMS en el dispositivo.
 - **RCS (solo móvil)**: deshabilita la funcionalidad de envío o recepción de Rich Communication Services en el dispositivo.
-
-
-
-
-
-
-
-
-
-
-
-
