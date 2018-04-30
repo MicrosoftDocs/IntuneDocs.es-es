@@ -1,27 +1,27 @@
 ---
-title: "Configuración de VPN de Microsoft Intune para dispositivos macOS"
-titlesuffix: 
-description: "Obtenga información sobre la configuración de Intune que puede usar para configurar conexiones VPN en dispositivos macOS."
-keywords: 
-author: vhorne
-ms.author: victorh
+title: Configuración de VPN de Microsoft Intune para dispositivos macOS
+titlesuffix: ''
+description: Obtenga información sobre la configuración de Intune que puede usar para configurar conexiones VPN en dispositivos macOS.
+keywords: ''
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b7df56b0f15b9fd346dc786ab265d772135795a8
-ms.sourcegitcommit: 8a235b7af6ec3932c29a76d0b1aa481d983054bc
+ms.openlocfilehash: d1224c00a1f7e8cf303304b3a0f038ade79b9633
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-macos"></a>Configuración de VPN en Microsoft Intune para dispositivos que ejecutan macOS
 
-[!INCLUDE[azure_portal](./includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 En este artículo, se muestra la configuración de Intune que puede usar para configurar conexiones VPN en dispositivos que ejecutan macOS.
 
@@ -55,6 +55,6 @@ Si seleccionó **VPN personalizado**, configure estas opciones adicionales:
 
 ## <a name="proxy-settings"></a>Configuración del proxy
 
-- **Script de configuración automática**: use un archivo para configurar el servidor proxy. Escriba la **dirección URL del servidor proxy** (por ejemplo **http://proxy.contoso.com**) que contiene el archivo de configuración.
+- **Script de configuración automática**: use un archivo para configurar el servidor proxy. Escriba la **URL del servidor proxy** (por ejemplo, **http://proxy.contoso.com**) que contiene el archivo de configuración.
 - **Dirección**: escriba la dirección del servidor proxy (como una dirección IP).
 - **Número de puerto**: especifique el número de puerto asociado con el servidor proxy.
