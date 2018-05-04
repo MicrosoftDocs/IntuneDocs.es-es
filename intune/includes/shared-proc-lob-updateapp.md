@@ -1,9 +1,9 @@
 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com).  
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.  
-3. Elija **Aplicaciones móviles** > **Aplicaciones**.
+1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).  
+2. Seleccione **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.  
+3. Seleccione **Aplicaciones móviles** > **Aplicaciones**.
 4. Busque y seleccione su aplicación en la lista de aplicaciones.  
-5. Elija **Propiedades** en la hoja **Información general**.  
+5. En la hoja **Información general**, seleccione **Propiedades**.  
 6. Seleccione **Archivo del paquete de aplicaciones**.  
-7. Haga clic en el icono de la carpeta y busque la ubicación del archivo de aplicación actualizado. Haga clic en **Abrir**. La información de la aplicación se actualizará con la información del paquete.  
+7. Seleccione el icono de la carpeta y busque la ubicación del archivo de aplicación actualizado. Seleccione **Abrir**. La información de la aplicación se actualiza con la información del paquete.  
 8. Compruebe que en **Versión de la aplicación** se refleja el paquete de aplicación actualizado.  

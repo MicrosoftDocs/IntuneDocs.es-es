@@ -15,17 +15,25 @@ ms.assetid: E85DBB2D-67BB-4E10-82D6-E43046B9C43C
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 8e11585adf570ba9155861f89688c33ac6cecbeb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1a44ac33542675457864eead5915a3150e592b1b
+ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Registro de cambios en la API Almacenamiento de datos de Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Manténgase al día de los cambios producidos en el Almacén de datos de Intune.
+
+## <a name="1805"></a>1805
+_Fecha de publicación: mayo de 2018_
+
+### <a name="correction-to-device-count-in-devices-collection"></a>Corrección al número de dispositivos en la colección **Dispositivos**. 
+
+Se ha realizado una corrección a la colección **Dispositivos** que puede reducir el número total de dispositivos que se filtran por el atributo `isDeleted`. Esta disminución no es un error, sino que es el resultado de la corrección. Para más información sobre la colección **Dispositivos**, consulte [Referencia de las entidades Devices](reports-ref-devices.md). 
+
 
 ## <a name="1801"></a>1801
 _Publicado en enero de 2018_

@@ -15,18 +15,18 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 63284a1dd5c1d5a6c588775f1c282bfcfef5de67
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c5820d058479bbf37c5dffdb930792f4f84afa69
+ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/26/2018
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>Configuración de Intune para la aplicación Classroom para iOS
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="introduction"></a>Introducción
-[Classroom](https://itunes.apple.com/app/id1085319084) es una aplicación que ayuda a los profesores a guiar el aprendizaje y controlar los dispositivos de los estudiantes en el aula. Por ejemplo, mediante la aplicación, el profesor puede hacer lo siguiente:
+[Classroom](https://itunes.apple.com/app/id1085319084) es una aplicación que ayuda a los profesores a guiar el aprendizaje y controlar los dispositivos de los estudiantes en el aula. Por ejemplo, la aplicación permite a los profesores:
 
 - Abrir aplicaciones en los dispositivos de los estudiantes
 - Bloquear y desbloquear la pantalla de un iPad
@@ -34,7 +34,7 @@ ms.lasthandoff: 04/16/2018
 - Navegar por los iPad de los estudiantes hasta un marcador o el capítulo de un libro
 - Mostrar la pantalla del iPad de un estudiante en un televisor Apple
 
-Use el perfil **Educación** del dispositivo iOS de Intune y la información de este tema para configurar la aplicación Classroom y los dispositivos en los que la usa.
+Para configurar el aula en el dispositivo, debe crear y configurar un perfil de dispositivo de educación de iOS para Intune.
 
 ## <a name="before-you-start"></a>Antes de empezar
 
@@ -42,7 +42,7 @@ Tenga en cuenta lo siguiente antes de comenzar a configurar estas opciones:
 
 - Tanto los iPad de los profesores como de los estudiantes deben estar inscritos en Intune.
 - Asegúrese de que haya instalado la aplicación [Classroom de Apple](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) en el dispositivo del profesor. Puede instalar la aplicación manualmente o usar la [administración de aplicaciones de Intune](app-management.md).
-- Debe configurar los certificados para autenticar las conexiones entre los dispositivos de profesores y estudiantes (consulte el paso 2).
+- Debe configurar los certificados para autenticar las conexiones entre los dispositivos de profesores y estudiantes (consulte el paso 2, Crear y asignar un perfil Educación de iOS en Intune).
 - Los iPad de los profesores y estudiantes deben estar en la misma red Wi-Fi y también tener habilitado Bluetooth.
 - La aplicación Classroom se ejecuta en iPad supervisados con iOS 9.3 o una versión posterior.
 - En esta versión, Intune admite la administración de un escenario 1:1, donde cada estudiante tiene su propio iPad exclusivo.
@@ -82,14 +82,14 @@ Puede importar información a SDS mediante uno de los siguientes métodos:
 9.  Elija **Configuración** > **Configurar**.
 
 
-A continuación, necesita certificados para establecer una relación de confianza entre los iPad de profesores y estudiantes. Se utilizan certificados para autenticar sin problemas y de forma silenciosa las conexiones entre los dispositivos sin tener que escribir nombres de usuario ni contraseñas.
+En la siguiente sección, creará certificados para establecer una relación de confianza entre los iPad de profesores y estudiantes. Se utilizan certificados para autenticar sin problemas y de forma silenciosa las conexiones entre los dispositivos sin tener que escribir nombres de usuario ni contraseñas.
 
 >[!IMPORTANT]
 >Los certificados de profesores y estudiantes que utilice deben ser emitidos por diferentes entidades de certificación (CA). Debe crear dos nuevas CA subordinadas conectadas a la infraestructura de certificados existente; una para los profesores y otra para los estudiantes.
 
 Los perfiles de educación de iOS solo admiten certificados PFX. No se admiten certificados SCEP.
 
-Los certificados que crea deben admitir la autenticación de servidor además de la autenticación de usuario.
+Los certificados creados deben admitir la autenticación de servidor y autenticación de usuario.
 
 ### <a name="configure-teacher-certificates"></a>Configuración de certificados de profesores
 
@@ -97,13 +97,15 @@ En el panel **Educación**, elija **Certificados de profesor**.
 
 #### <a name="configure-teacher-root-certificate"></a>Configuración de certificado raíz de profesor
 
-En **Teacher root certificate** (Certificado raíz de profesor), elija el botón Examinar para seleccionar el certificado raíz del profesor con la extensión .cer (DER o Base64 codificado) o .P7B (con o sin la cadena completa).
+En **Certificado de raíz de profesor**, elija el botón Examinar. Seleccione el certificado de raíz con una de las siguientes extensiones:
+- Extensión .cer (DER o con codificación Base64) 
+- Extensión. P7B (con o sin cadena completa)
 
 #### <a name="configure-teacher-pkcs12-certificate"></a>Configuración de certificados de profesores PKCS#12
 
 En **Teacher PKCS#12 certificate** (Certificado de profesor PKCS#12), configure los siguientes valores:
 
-- **Formato de nombre de sujeto**: Intune agrega automáticamente el prefijo **líder**, para el certificado del profesor, y **miembro**, para el certificado de los estudiantes, a los nombres comunes del certificado.
+- **Formato de nombre de sujeto**: Intune pone automáticamente el prefijo **leader** a los nombres comunes de los certificados de profesor. Los nombres comunes de los certificados de estudiantes tienen el prefijo **member**.
 - **Entidad de certificación**: entidad de certificación (CA) empresarial que se ejecuta en una edición Enterprise de Windows Server 2008 R2 o versión posterior. No se admiten CA independientes. 
 - **Nombre de la entidad de certificación**: escriba el nombre de la entidad de certificación.
 - **Nombre de plantilla de certificado**: escriba el nombre de una plantilla de certificado que se haya agregado a una CA emisora. 
@@ -120,13 +122,15 @@ Cuando haya terminado la configuración de los certificados, haga clic en **Acep
 
 #### <a name="configure-student-root-certificate"></a>Configuración de certificado raíz de estudiantes
 
-En **Student root certificate** (Certificado raíz de estudiante), elija el botón Examinar para seleccionar el certificado raíz del estudiante con la extensión .cer (DER o Base64 codificado) o .P7B (con o sin la cadena completa).
+En **Certificado de raíz de alumno**, elija el botón Examinar. Seleccione el certificado de raíz con una de las siguientes extensiones:
+- Extensión .cer (DER o con codificación Base64) 
+- Extensión. P7B (con o sin cadena completa)
 
 #### <a name="configure-student-pkcs12-certificate"></a>Configuración de certificados de estudiantes PKCS#12
 
 En **Student PKCS#12 certificate** (Certificado de estudiante PKCS#12), configure los siguientes valores:
 
-- **Formato de nombre de sujeto**: Intune agrega automáticamente el prefijo **líder**, para el certificado del profesor, y **miembro**, para el certificado de los estudiantes, a los nombres comunes del certificado.
+- **Formato de nombre de sujeto**: Intune pone automáticamente el prefijo **leader** a los nombres comunes de los certificados de profesor. Los nombres comunes de los certificados de estudiantes tienen el prefijo **member**.
 - **Entidad de certificación**: entidad de certificación (CA) empresarial que se ejecuta en una edición Enterprise de Windows Server 2008 R2 o versión posterior. No se admiten CA independientes. 
 - **Nombre de la entidad de certificación**: escriba el nombre de la entidad de certificación.
 - **Nombre de plantilla de certificado**: escriba el nombre de una plantilla de certificado que se haya agregado a una CA emisora. 
@@ -147,7 +151,7 @@ Asigne el perfil a los dispositivos de estudiante en los grupos de aula que se c
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Ahora cuando un profesor utilice la aplicación Classroom, tendrá el control total sobre los dispositivos de los estudiantes.
+Ahora cuando los profesores utilicen la aplicación Classroom, tendrán el control total sobre los dispositivos de los estudiantes.
 
 Para obtener más información sobre la aplicación Classroom, vea [Ayuda de Classroom](https://help.apple.com/classroom/ipad/2.0/) en el sitio web de Apple.
 

@@ -1,12 +1,11 @@
 ---
-title: Creación de una directiva de cumplimiento de Android for Work
-titleSuffix: Microsoft Intune
-description: Cree una directiva de cumplimiento de dispositivos de Intune para dispositivos Android for Work para poder especificar los requisitos que debe cumplir un dispositivo para que sea compatible.
+title: Creación de una directiva de cumplimiento de Android for Work en Microsoft Intune - Azure | Microsoft Docs
+description: Cree o configure una directiva de cumplimiento de dispositivos Microsoft Intune para dispositivos Android for Work. Opte por permitir dispositivos con Jailbroken, establecer el nivel de amenaza aceptable, buscar Google Play, especificar la versión de sistema operativo mínima y máxima, elegir los requisitos de contraseña y permitir aplicaciones de instalación de prueba.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 04/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +14,17 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 00fa4508cdd4e74a20205ce46025b414cc0bb4cf
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 74fe0897764957e84e5a13944305221cc85bd8c7
+ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/18/2018
 ---
-# <a name="how-to-create-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Creación de una directiva de cumplimiento para dispositivos Android for Work en Intune
-
+# <a name="add-a-device-compliance-policy-for-android-for-work-devices-in-intune"></a>Incorporación de una directiva de cumplimiento de dispositivos Android for Work en Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Una directiva de cumplimiento de dispositivos de Intune para Android for Work especifica las reglas y la configuración que los dispositivos Android for Work deben cumplir para que se consideren compatibles. Estas directivas se pueden usar con el acceso condicional para permitir o bloquear el acceso a recursos de la empresa, y se pueden obtener informes de dispositivos y realizar acciones en caso de incumplimiento. Las directivas de cumplimiento de dispositivos para cada plataforma se crean en Azure Portal de Intune. Para obtener más información sobre las directivas de cumplimiento y los requisitos previos que deben satisfacerse antes de crear una directiva de cumplimiento, consulte [Introducción a las directivas de cumplimiento de dispositivos](device-compliance-get-started.md).
+Una directiva de cumplimiento de dispositivos de Intune para Android for Work especifica las reglas y la configuración que estos dispositivos deben cumplir para que se consideren compatibles. Puede usar estas directivas con acceso condicional para permitir o bloquear el acceso a los recursos de la empresa. También puede obtener informes de dispositivos y realizar acciones en caso de incumplimiento. Las directivas de cumplimiento de dispositivos para las distintas plataformas se crean en Azure Portal de Intune. Para más información sobre las directivas de cumplimiento, consulte [Introducción a las directivas de cumplimiento de dispositivos de Intune](device-compliance-get-started.md).
 
 En la tabla siguiente se describe cómo administrar la configuración de no conformidad cuando se usa una directiva de cumplimiento con una directiva de acceso condicional.
 
@@ -49,13 +47,10 @@ En la tabla siguiente se describe cómo administrar la configuración de no conf
 - El dispositivo se bloquea si se aplica una directiva de acceso condicional al usuario.
 - El portal de empresa notifica al usuario acerca de los problemas de cumplimiento.
 
-## <a name="create-a-compliance-policy-in-the-azure-portal"></a>Creación de una directiva de cumplimiento en el portal de Azure
+## <a name="create-a-device-compliance-policy"></a>Crear una directiva de cumplimiento de dispositivos
 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
-1. En el panel **Intune**, elija **Cumplimiento del dispositivo**. En **Administrar**, elija **Directivas** y después **Crear directiva**.
-2. Escriba un nombre y una descripción y elija la plataforma a la que quiere que se aplique esta directiva.
-3. Elija **Configuración de valores** para especificar aquí las opciones de **Seguridad del sistema**, **Estado de dispositivos** y **Propiedades del dispositivo**. Cuando termine, elija **Aceptar**.
+[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
+5. Para **Plataforma**, seleccione **Android for Work**. Seleccione **Definir configuración** y especifique las opciones **Estado de dispositivos**, **Propiedades de dispositivo** y **Seguridad del sistema**. Cuando haya terminado, seleccione **Aceptar** y **Crear**.
 
 <!--- 4. Choose **Actions for noncompliance** to say what actions should happen when a device is determined as noncompliant with this policy.
 5. In the **Actions for noncompliance** pane, choose **Add** to create a new action.  The action parameters pane allows you to specify the action, email recipients that should receive the notification in addition to the user of the device, and the content of the notification that you want to send.
@@ -64,59 +59,69 @@ En la tabla siguiente se describe cómo administrar la configuración de no conf
 8. Choose **Add** to finish creating the action.
 9. You can create multiple actions and the sequence in which they should occur. Choose **Ok** when you are finished creating all the actions.--->
 
-## <a name="assign-user-groups"></a>Asignación de grupos de usuarios
+## <a name="device-health"></a>Device health
 
-Para asignar una directiva de cumplimiento a los usuarios, elija una directiva que haya configurado. Las directivas existentes se pueden encontrar en el panel **Conformidad del dispositivo: directivas**.
+- **Dispositivos raíz**: si habilita esta configuración, los dispositivos con Jailbreak se evaluarán como no compatibles.
+- **Requerir que el dispositivo tenga el nivel de amenaza del dispositivo**: use esta opción para hacer que la evaluación del riesgo de la solución Lookout MTP sea una condición para el cumplimiento. Elija máximo nivel de amenaza permitido:
+  - **Protegido**: esta opción es la más segura y significa que el dispositivo no puede tener ninguna amenaza. Si se detecta cualquier nivel de amenaza en el dispositivo, se evaluará como no conforme.
+  - **Bajo**: el dispositivo se evalúa como conforme si solo hay amenazas de nivel bajo. Cualquier valor por encima coloca al dispositivo en un estado de no conformidad.
+  - **Medio**: el dispositivo se evalúa como conforme si las amenazas presentes en él son de nivel bajo o medio. Si se detecta que el dispositivo tiene amenazas de nivel alto, se determina como no conforme.
+  - **Alto**: esta opción es la menos segura, ya que permite que todos los niveles de amenaza. Quizás sea útil si utiliza esta solución solo con fines informativos.
+- **Google Play Services está configurado**: se requiere que la aplicación Google Play Services esté instalada y habilitada. Google Play Services permite actualizaciones de seguridad y es una dependencia de nivel base para muchas características de seguridad en los dispositivos de Google certificados.
+- **Proveedor de seguridad actualizado**: se requiere que un proveedor de seguridad actualizado pueda proteger un dispositivo frente a vulnerabilidades conocidas.
+- **Atestación de dispositivo SafetyNet**: especifique el nivel de [atestación de SafetyNet](https://developer.android.com/training/safetynet/attestation.html) que se debe cumplir. Las opciones son:
+  - **No configurado**.
+  - **Comprobar integridad básica**
+  - **Comprobar integridad básica y dispositivos certificados**
 
-1. Seleccione la directiva que quiere asignar a los usuarios y elija **Asignaciones**. Se abre el panel donde puede seleccionar **grupos de seguridad de Azure Active Directory** y asignarlos a la directiva.
-2. Elija **Grupos seleccionados** para abrir el panel en el que se muestran los grupos de seguridad de Azure AD.  Al elegir **Guardar** la directiva se implementa para los usuarios.
+#### <a name="threat-scan-on-apps"></a>Examen de amenazas en las aplicaciones
 
-Ya ha aplicado la directiva a los usuarios.  Ahora se evaluará el cumplimiento de los dispositivos usados por los usuarios a los que se aplique la directiva.
+En los dispositivos con perfiles de trabajo (Android for Work), la configuración **Examen de amenazas en las aplicaciones** puede encontrarse como un ajuste de la directiva de configuración. Los administradores pueden habilitar la configuración para un dispositivo.
 
-<!--- ##  Compliance policy settings--->
+Si su empresa utiliza perfiles de trabajo Android, puede habilitar **Examen de amenazas en las aplicaciones** en los dispositivos inscritos. Establezca un perfil de dispositivo y requiera la configuración de seguridad del sistema. Para más información, consulte [Configuración de las restricciones de dispositivos de trabajo en Intune](device-restrictions-android-for-work.md).
+
+## <a name="device-property-settings"></a>Configuración de propiedades de dispositivo
+
+- **Versión mínima del sistema operativo**: cuando un dispositivo no cumple el requisito de versión mínima del sistema operativo, se notifica como no conforme. Además, se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario final puede optar por actualizar el dispositivo y luego acceder a los recursos de la empresa.
+- **Versión máxima de SO**: cuando un dispositivo usa una versión de SO posterior a la de la regla, se bloquea el acceso a los recursos de la empresa. Además, se solicita al usuario que se ponga en contacto con el administrador de TI. Mientras no se cambie la regla para permitir la versión de SO, este dispositivo no podrá acceder a los recursos de la empresa.
 
 ## <a name="system-security-settings"></a>Configuración de seguridad del sistema
 
 ### <a name="password"></a>Contraseña
 
-- **Requerir una contraseña para desbloquear dispositivos móviles**: establezca esta opción en **Sí** para exigir que los usuarios escriban una contraseña antes de poder tener acceso a sus dispositivos.
-- **Longitud mínima de la contraseña**: especifique el número mínimo de dígitos o caracteres que debe contener la contraseña del usuario.
-- **Calidad de contraseña**: esta opción detecta si los requisitos de contraseña que especifique están configurados en el dispositivo. Habilite esta opción para requerir a los usuarios configurar determinados requisitos de contraseña para dispositivos Android. Elija de entre las siguientes opciones:
+- **Requerir una contraseña para desbloquear dispositivos móviles**: **requiere** que los usuarios escriban una contraseña antes de poder tener acceso a sus dispositivos.
+- **Longitud mínima de la contraseña**: indique el número mínimo de dígitos o caracteres que debe tener la contraseña del usuario.
+- **Tipo de contraseña requerida**: elija si una contraseña debe tener solo caracteres numéricos o si es necesario combinar números y otros caracteres. Elija de entre las siguientes opciones:
+  - **Valor predeterminado del dispositivo**
   - **Biométrico de seguridad baja**
-  - **Requerido**
   - **Al menos numérica**
+  - **Numérica compleja**
   - **Al menos alfabética**
   - **Al menos alfanumérica**
-  - **Alfanumérica con símbolos**
-- **Minutos de inactividad antes de que sea necesaria la contraseña**: especifica el tiempo de inactividad que transcurre antes de que el usuario deba volver a escribir su contraseña.
-- **Caducidad de contraseña (días)**: seleccione el número de días que faltan para que la contraseña expire y se deba crear una nueva.
-- **Recordar historial de contraseñas:** use esta opción junto con **Impedir la reutilización de contraseñas anteriores** para impedir que el usuario cree contraseñas que se han usado anteriormente.
-- **Impedir la reutilización de contraseñas anteriores:** si la opción **Recordar historial de contraseñas** está seleccionada, especifique el número de contraseñas usadas previamente que no se pueden volver a usar.
-- **Requerir una contraseña cuando el dispositivo vuelva de un estado de inactividad:** este valor debe usarse con el de la opción **Minutos de inactividad antes de que sea necesaria la contraseña**. Se pedirá a los usuarios finales que escriban una contraseña para obtener acceso a un dispositivo que haya estado inactivo durante el tiempo especificado en la opción **Minutos de inactividad antes de que sea necesaria la contraseña**.
-
+  - **Al menos alfanumérica con símbolos**
+- **Máximo de minutos de inactividad antes de solicitar la contraseña**: indique el tiempo de inactividad que transcurre antes de que el usuario deba volver a escribir la contraseña.
+- **Expiración de la contraseña (días)**: seleccione el número de días que faltan para que la contraseña expire y se deba crear una nueva.
+- **Número de contraseñas anteriores que no se pueden reutilizar**: indique el número de contraseñas recientes que no se pueden volver a usar. Utilice esta configuración para impedir que el usuario cree contraseñas usadas anteriormente.
 
 ### <a name="encryption"></a>Cifrado
 
 - **Requerir cifrado en el dispositivo móvil**: no tiene que configurar este valor ya que los dispositivos Android for Work fuerzan el cifrado.
 
+### <a name="device-security"></a>Seguridad de dispositivos
 
-## <a name="device-health-and-security-settings"></a>Configuración de estado y la seguridad de dispositivos
+- **Bloquear aplicaciones de orígenes desconocidos**: no es necesario configurar este valor, ya que los dispositivos Android for Work siempre restringen la instalación de orígenes desconocidos.
+- **Integridad en tiempo de ejecución de la aplicación Portal de empresa**: comprueba si la aplicación Portal de empresa tiene el entorno de tiempo de ejecución predeterminado instalado, está firmada correctamente, no está en modo de depuración y se instala desde un origen conocido.
+- **Bloquear depuración USB en el dispositivo**: no es necesario configurar este parámetro porque la depuración USB ya está deshabilitada en los dispositivos Android for Work.
+- **Nivel mínimo de revisión de seguridad**: seleccione el nivel de revisión de seguridad más antiguo que puede tener un dispositivo. No son compatibles los dispositivos que no están al menos en este nivel de revisión. La fecha debe especificarse en el formato `YYYY-MM-DD`.
 
-- **El dispositivo no debe estar descodificado o liberado**: si habilita esta opción, los dispositivos descodificados se consideran no conformes.
-- **Los dispositivos deben impedir la instalación de aplicaciones de orígenes desconocidos**: no es necesario configurar este valor ya que los dispositivos Android for Work siempre restringen la instalación de orígenes desconocidos.
-- **La depuración USB debe estar deshabilitada**: no es necesario configurar esta opción, dado que la depuración USB ya está deshabilitada en los dispositivos Android for Work.
-- **Nivel mínimo de revisión de seguridad de Android**: use esta opción para especificar el nivel mínimo de revisión de Android. No serán compatibles los dispositivos que no están al menos en este nivel de revisión. La fecha debe estar especificada en el formato: aaaa-MM-DD.
-- **Requerir la habilitación de la protección frente a amenazas de dispositivo**: utilice esta opción para hacer que la evaluación del riesgo de la solución Lookout MTP sea una condición para el cumplimiento. Seleccione el nivel de amenaza máximo permitido, que es uno de los siguientes:
-  - **Ninguno (protegido)** es la más segura. Esto significa que el dispositivo no puede tener ninguna amenaza. Si se detecta cualquier nivel de amenaza en el dispositivo, se evaluará como no conforme.
-  - **Bajo**: el dispositivo se evalúa como conforme si solo hay amenazas de nivel bajo. Cualquier valor por encima coloca al dispositivo en un estado de no conformidad.
-  - **Medio**: el dispositivo se evalúa como conforme si las amenazas presentes en él son de nivel bajo o medio. Si se detecta que el dispositivo presenta amenazas de nivel alto, se clasificará como no conforme.
-  - **Alto**: esta opción es la menos segura. Básicamente, permite todos los niveles de amenaza y quizás solo sea útil si usa esta solución únicamente para fines informativos.
+## <a name="assign-user-groups"></a>Asignación de grupos de usuarios
 
-## <a name="device-property-settings"></a>Configuración de propiedades de dispositivo
+1. Elija una directiva que haya configurado. Las directivas existentes están en **Conformidad de dispositivos** > **Directivas**.
+2. Elija la directiva y luego **Asignaciones**. Puede incluir o excluir grupos de seguridad de Azure Active Directory (AD).
+3. Elija **Grupos seleccionados** para ver los grupos de seguridad de Azure AD. Seleccione los grupos de usuarios a los que quiera aplicar esta directiva y elija **Guardar** para implementar la directiva a los usuarios.
 
-- **SO mínimo requerido:** cuando un dispositivo no cumpla el requisito de versión de SO mínima, se notificará como no compatible. Además, se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario final puede optar por actualizar el dispositivo, tras lo cual podrá tener acceso a los recursos de la empresa.
-- **Versión de SO máxima permitida**: cuando un dispositivo usa una versión de SO posterior a la especificada en la regla, se bloquea el acceso a los recursos de la empresa y se solicita al usuario que se ponga en contacto con el administrador de TI. Mientras no se cambie la regla para permitir la versión de SO, este dispositivo no podrá usarse para acceder a los recursos de la empresa.
+Ya ha aplicado la directiva a los usuarios. Se evalúa el cumplimiento por parte de los dispositivos usados por los usuarios a los que se aplique la directiva.
 
-<!--- ## Next steps
-
-[How to monitor device compliance](device-compliance-monitor.md)--->
+## <a name="next-steps"></a>Pasos siguientes
+[Automatización del correo electrónico y adición de acciones para dispositivos no compatibles](actions-for-noncompliance.md)  
+[Supervisión de las directivas de cumplimiento de dispositivos de Intune](compliance-policy-monitor.md)
