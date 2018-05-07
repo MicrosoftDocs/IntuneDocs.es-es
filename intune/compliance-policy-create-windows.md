@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 04/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bb79a6c18ff8b6eec20f4ce8813d8dea188215e7
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 2a4bd083027905d00dc317a0103754748bf0236e
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Incorporación de una directiva de cumplimiento de dispositivos para dispositivos Windows en Intune
 
@@ -94,7 +94,7 @@ Los equipos con Windows 8.1 devuelven la versión **3**. Si la regla de la versi
     - Símbolos
     - Números
 
-    Para establecer un número mayor, es necesario que el usuario cree una contraseña más compleja. En los dispositivos a los que se obtiene acceso con una cuenta de Microsoft y que ejecutan Windows, la directiva de cumplimiento no puede evaluarse correctamente si la longitud mínima de la contraseña es superior a 8 caracteres o si el número mínimo de conjuntos de caracteres es superior a 2.
+    Para establecer un número mayor, es necesario que el usuario cree una contraseña más compleja. En los dispositivos a los que se accede con una cuenta de Microsoft y que ejecutan Windows, la directiva de cumplimiento no puede evaluarse correctamente si la longitud mínima de la contraseña es superior a ocho caracteres o si el número mínimo de conjuntos de caracteres es superior a dos.
 
 - **Máximo de minutos de inactividad antes de solicitar la contraseña**: indique el tiempo de inactividad que transcurre antes de que el usuario deba volver a escribir la contraseña.
 - **Expiración de la contraseña (días)**: seleccione el número de días que faltan para que la contraseña expire y se deba crear una nueva.
@@ -121,23 +121,23 @@ Consulte [Health Attestation CSP](https://docs.microsoft.com/windows/client-mana
 
 ### <a name="device-properties"></a>Propiedades del dispositivo
 
-- **Minimum OS required** (SO mínimo requerido): escriba el número major.minor.build.CU. El número de build.CU debe coincidir con la versión devuelta por el comando `ver` o `winver`.
+- **Versión mínima del sistema operativo**: escriba la versión mínima permitida, con el formato numérico major.minor.build.CU. El número de build.CU debe coincidir con la versión devuelta por el comando `ver` o `winver`.
 
   Cuando un dispositivo tiene una versión anterior a la versión de sistema operativo especificada, se notifica como no conforme. Además, se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario final puede optar por actualizar el dispositivo, tras lo cual podrá tener acceso a los recursos de la empresa.
 
-- **Versión de SO máxima permitida**: escriba el número major.minor.build.CU. El número de build.CU debe coincidir con la versión devuelta por el comando `ver` o `winver`.
+- **Versión máxima del sistema operativo**: escriba la versión máxima permitida, con el formato numérico major.minor.build.CU. El número de build.CU debe coincidir con la versión devuelta por el comando `ver` o `winver`.
 
   Cuando un dispositivo usa una versión de SO posterior a la especificada en la regla, se bloquea el acceso a los recursos de la empresa y se solicita al usuario que se ponga en contacto con el administrador de TI. Mientras no se cambie la regla para permitir la versión de SO, este dispositivo no podrá usarse para acceder a los recursos de la empresa.
 
-- **Versión mínima del SO para dispositivos móviles**: escriba el número major.minor.build.CU.
+- **Versión mínima del sistema operativo para dispositivos móviles**: escriba la versión mínima permitida, con el formato numérico major.minor.build.
 
   Cuando un dispositivo tiene una versión anterior a la versión de sistema operativo especificada, se notifica como no conforme. Además, se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario final puede optar por actualizar el dispositivo, tras lo cual podrá tener acceso a los recursos de la empresa.
 
-- **Versión máxima del SO para dispositivos móviles**: escriba el número major.minor.build.CU.
+- **Versión máxima del sistema operativo para dispositivos móviles**: escriba la versión máxima permitida, con el formato numérico major.minor.build.
 
   Cuando un dispositivo usa una versión de SO posterior a la especificada en la regla, se bloquea el acceso a los recursos de la empresa y se solicita al usuario que se ponga en contacto con el administrador de TI. Mientras no se cambie la regla para permitir la versión de SO, este dispositivo no podrá usarse para acceder a los recursos de la empresa.
 
-- **Compilaciones válidas del sistema operativo**: escriba un intervalo para las versiones de sistema operativo aceptables, incluida la mínima y la máxima.
+- **Compilaciones válidas del sistema operativo**: escriba un intervalo para las versiones de sistema operativo aceptables, incluida la mínima y la máxima. También puede **exportar** una lista de archivos de valores separados por comas (CSV) de estos números de compilación aceptables del sistema operativo.
 
 ### <a name="system-security-settings"></a>Configuración de seguridad del sistema
 
