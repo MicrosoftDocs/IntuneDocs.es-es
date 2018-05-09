@@ -149,6 +149,6 @@
 #### [Tengo que habilitar UAC](you-need-to-enable-uac-windows.md)
 #### [Tengo que actualizar Windows](you-need-to-update-os-build-version-windows.md)
 #### [Tengo que activar Windows Defender](turn-on-defender-windows.md)
-
+## [Bloquear un dispositivo de forma remota desde la aplicación Portal de empresa para Windows](remote-lock-your-device-cp-app.md) 
 ## [Usar el sitio web del Portal de empresa de Intune](using-the-intune-company-portal-website.md)
 ### [Bloqueo remoto de dispositivos](remote-lock-your-device-cpwebsite.md)
