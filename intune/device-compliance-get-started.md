@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3326ecccd0d20602d6a9445b62c39f582354f238
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 2f599f168c1b4ae9aa94324b69ed11e6d426c86d
+ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/27/2018
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Introducción a las directivas de cumplimiento de dispositivos de Intune
 
@@ -80,6 +80,8 @@ Para usar las directivas de cumplimiento de dispositivos se requiere lo siguient
   - Windows 10
 
 - Para notificar su estado de cumplimiento, los dispositivos deben estar inscritos en Intune
+
+- No se admiten dispositivos inscritos en un usuario ni los que carecen de un usuario primario. Tampoco se admiten varios contextos de usuario.
 
 ## <a name="how-intune-device-compliance-policies-work-with-azure-ad"></a>Funcionamiento de las directivas de cumplimiento de dispositivos Intune con Azure AD
 
@@ -148,9 +150,9 @@ Para los dispositivos que cumplan las reglas de directiva, puede concederles acc
 También puede usar las directivas de cumplimiento de dispositivos sin ningún acceso condicional. Cuando se usan directivas de cumplimiento de forma independiente, los dispositivos de destino se evalúan y su estado se cumplimiento se notifica. Por ejemplo, puede obtener un informe sobre cuántos dispositivos no están cifrados o qué dispositivos están liberados. Cuando se usan directivas de cumplimiento sin acceso condicional, no hay ninguna restricción de acceso a los recursos de empresa.
 
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Formas de implementar las directivas de cumplimiento de dispositivos
-Puede implementar directivas de cumplimiento en los usuarios de grupos de usuarios o en dispositivos de grupos de dispositivos. Cuando se implementa una directiva de cumplimiento para un usuario, se comprueba el cumplimiento de todos los dispositivos del usuario.
+Puede implementar directivas de cumplimiento en los usuarios de grupos de usuarios o en dispositivos de grupos de dispositivos. Cuando se implementa una directiva de cumplimiento en un usuario, se comprueba el cumplimiento de todos los dispositivos del usuario.
 
-Para los dispositivos de grupos de dispositivos, la **configuración de directivas de cumplimiento** (Azure Portal > Conformidad de dispositivos) incluye:
+La **configuración de directiva de cumplimiento** (Azure Portal > Device compliance [Cumplimiento del dispositivo]) incluye:
 
 - **Marcar los dispositivos que no tienen asignada una directiva de cumplimiento como**: esta propiedad tiene dos valores:
 
