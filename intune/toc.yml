@@ -170,10 +170,12 @@
               href: windows-bulk-enroll.md
             - name: Programa Windows AutoPilot Deployment
               href: enrollment-autopilot.md
-            - name: Pantalla de estado de inscripción
-              href: windows-enrollment-status.md
         - name: Configuración de la inscripción de Android
-          href: android-enroll.md
+          items:
+            - name: Configuración de la inscripción de Android
+              href: android-enroll.md
+            - name: Samsung Knox Mobile Enrollment
+              href: android-samsung-knox-mobile-enroll.md
         - name: Configuración de la inscripción en iOS
           href: ios-enroll.md
           items:
@@ -462,6 +464,8 @@
           href: conditional-access-intune-common-ways-use.md
         - name: Instalación del conector local de Exchange
           href: exchange-connector-install.md
+        - name: Instalación del conector de servicios de Exchange
+          href: exchange-service-connector-configure.md
         - name: Creación y asignación de la directiva de acceso condicional
           href: conditional-access-exchange-create.md
         - name: Reasignación de directivas de acceso condicional desde el Portal de Intune clásico
@@ -511,7 +515,7 @@
                   href: mtd-device-compliance-policy-create.md
                 - name: Habilitación de MTD en Intune
                   href: mtd-connector-enable.md
-        - name: Protección contra amenazas avanzada
+        - name: ATP de Windows Defender
           href: advanced-threat-protection.md
         - name: Control de acceso a la red
           href: network-access-control-integrate.md
@@ -655,8 +659,6 @@
           href: app-wrapper-prepare-android.md
         - name: SDK de aplicaciones de Intune para Android
           href: app-sdk-android.md
-        - name: Complemento de Intune App SDK Cordova
-          href: app-sdk-cordova.md
         - name: Componente Xamarin de Intune App SDK
           href: app-sdk-xamarin.md
     - name: Usar el Almacenamiento de datos de Intune
