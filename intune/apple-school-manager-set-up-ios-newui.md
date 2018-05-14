@@ -15,11 +15,11 @@ ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7d9a51cb4e76f5aa0f89f9160af6f5fe62f0bbbd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 58a1db63c3fef3b288c42d43ce7ffc5164d81845
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Habilitación de la inscripción de dispositivos iOS con Apple School Manager
 
@@ -28,7 +28,7 @@ ms.lasthandoff: 04/16/2018
 > [!NOTE]
 > ### <a name="temporary-user-interface-differences"></a>Diferencias temporales de la interfaz de usuario
 >
->La actualización de las interfaces de usuario para las características descritas en esta página está en proceso. Estas actualizaciones se implementarán en todas las cuentas de usuario hasta final de abril.
+>La actualización de las interfaces de usuario para las características descritas en esta página está en proceso. Estas actualizaciones se van a implementar en todas las cuentas de usuario a lo largo de la primera semana de mayo.
 >
 >Si la página **Inscripción de dispositivos** es similar a la imagen siguiente, significa que tiene las interfaces de usuario actualizadas y puede usar esta página de ayuda.
 >

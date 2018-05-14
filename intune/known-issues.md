@@ -14,11 +14,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 388c9f69b6cbee1353b0e21121a47576b58b3ba6
-ms.sourcegitcommit: 407191a92ef356a3d196b6f9959b9b033190ca2c
+ms.openlocfilehash: b8ef4688a5d1a98a27a2fcb6fc5b6ce456b5fd25
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problemas conocidos de Microsoft Intune
 
@@ -46,6 +46,14 @@ Al migrar de Intune a Azure Portal, es posible que vea un nuevo grupo denominado
 No se puede ver la información de estado de las directivas que se migraron del portal clásico de Azure a Azure Portal. En cambio, aún puede ver informes de estas directivas en el portal clásico. Para ver la información de estado de las directivas de configuración migradas, vuelva a crearlas en Azure Portal.
 
 ## <a name="apps"></a>Aplicaciones
+
+
+### <a name="multiple-app-install-prompts-for-certain-vpp-apps"></a>Varios mensajes de instalación de aplicación para determinadas aplicaciones de VPP
+Es posible que vea varios mensajes de instalación de aplicación para determinadas aplicaciones de VPP que ya están instaladas en dispositivos de usuario final. Este problema se produce si tiene la opción **Actualizaciones automáticas de la aplicación** establecida en **Activado** para el token de VPP que ha cargado en Intune Azure Portal.    
+
+Para solucionar este problema, puede deshabilitar la opción **Actualizaciones automáticas de la aplicación** para el token de VPP. Para ello, en Azure Portal, abra Microsoft Intune. En Intune, seleccione **Aplicaciones móviles** > **Tokens de VPP de iOS**. Luego seleccione el token de VPP que ha implementado la aplicación afectada y seleccione **Editar** > **Actualizaciones automáticas de la aplicación** > **Desactivado** > **Guardar**. También puede detener la implementación de la aplicación afectada como aplicación de VPP, lo que detiene los mensajes.    
+
+Se trata de un problema conocido de la versión actual. En una próxima corrección se resolverá este problema. Una vez implementada la corrección, los usuarios ya no verán varios mensajes de instalación de aplicación.
 
 ### <a name="ios-volume-purchased-apps-only-available-in-default-intune-tenant-language"></a>Las aplicaciones compradas por volumen de iOS solo están disponibles en el idioma predeterminado del inquilino de Intune
 Las aplicaciones compradas por volumen de iOS se muestran y solo pueden asignarse para el mismo código de país que su cuenta de Intune. Intune solo sincroniza aplicaciones desde la misma configuración regional de iTunes que el código de país de la cuenta de inquilino de Intune. Por ejemplo, si compra una aplicación que solo está disponible en una tienda de los Estados Unidos, pero su cuenta de Intune es alemana, Intune no mostrará esa aplicación.

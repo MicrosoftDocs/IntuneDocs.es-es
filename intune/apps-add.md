@@ -15,11 +15,11 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 88b8d9aa8e65e0238ab634b23836ee9c02234dd3
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 8c54dd0180788a83ee01607e0e6d895fdb9a85ab
+ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Incorporación de aplicaciones a Microsoft Intune
 
@@ -155,6 +155,16 @@ Al agregar una aplicación a Intune, tiene la opción de seleccionar la categor�
 ## <a name="apps-that-are-added-automatically-by-intune"></a>Aplicaciones que Intune agrega automáticamente
 
 Anteriormente, Intune tenía numerosas aplicaciones integradas que se podían asignar rápidamente. Según los comentarios de los clientes de Intune, hemos quitado esta lista y las aplicaciones integradas ya no se muestran. Sin embargo, si las aplicaciones integradas ya están asignadas, seguirán mostrándose en la lista de aplicaciones. Las aplicaciones podrán seguir asignándose según se necesite.
+
+## <a name="installing-updating-or-removing-required-apps"></a>Instalación, actualización o eliminación de aplicaciones necesarias
+
+Intune reinstala, actualiza o quita automáticamente una aplicación necesaria en 24 horas, en lugar de esperar al ciclo de reevaluación de siete días.
+
+Intune reinstala, actualiza o quita automáticamente una aplicación necesaria en función de las condiciones siguientes:
+- Si un usuario final desinstala una aplicación cuya instalación en el dispositivo del usuario final se ha exigido, Intune reinstala automáticamente la aplicación cuando transcurre este periodo.
+- Si se produce un error de instalación de una aplicación necesaria o de algún modo la aplicación no está presente en el dispositivo, Intune evalúa el cumplimiento y reinstala la aplicación cuando transcurre este periodo.  
+- Un administrador destina una aplicación como disponible para un grupo de usuarios y un usuario final instala la aplicación desde el Portal de empresa en el dispositivo. Más adelante, el administrador actualiza la aplicación de v1 a v2. Intune actualiza la aplicación cuando transcurre este periodo, siempre que haya cualquier versión anterior de la aplicación en el dispositivo.
+- Si el administrador realiza un intento de desinstalación y la aplicación está presente en el dispositivo y no se desinstala, Intune evalúa el cumplimiento y desinstala la aplicación cuando transcurre este periodo.   
 
 ## <a name="next-steps"></a>Pasos siguientes
 

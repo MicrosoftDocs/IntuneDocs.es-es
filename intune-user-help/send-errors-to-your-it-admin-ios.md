@@ -17,19 +17,22 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: b9bbd44fcace579803fc4e5c24324d70b8831645
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 449413a87c79645240bc18be41fb6e88d4c071f8
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>Envío de errores al equipo de soporte técnico de su empresa por problemas con dispositivos iOS
+A veces se pueden producir errores mientras se usa la aplicación Portal de empresa en el dispositivo iOS. Cuando esto ocurre, puede enviar por correo electrónico los detalles del error al personal de soporte técnico de su empresa. Estos detalles proporcionarán el contexto necesario para solucionar el problema.
+
+Al cargar los registros en la aplicación Portal de empresa, primero se envían a los desarrolladores de Microsoft que trabajan en la aplicación, quienes los utilizan para mejorar la funcionalidad de la aplicación y evitar errores en el futuro. Luego se le facilita un identificador de incidente específico del error para que lo comparta con el personal de soporte técnico de la empresa, para su uso en los casos de Soporte técnico de Microsoft.
 
 Si se producen errores en el dispositivo iOS mientras usa la aplicación de Portal de empresa, puede enviar información para que le sea más fácil al equipo de soporte técnico de su empresa solucionar el problema. Puede enviar información de errores de maneras diferentes:
 
 -   En los mensajes de alerta de error, pulse **Informe**.
 
--   En la pantalla **Acerca de** de la aplicación Portal de empresa, pulse **Enviar informe de diagnóstico**.
+-   En la pestaña **Más** de la aplicación Portal de empresa, pulse en **Obtener ayuda**.
 
 -   En la aplicación Portal de empresa, agite su dispositivo y, luego, pulse **Enviar informe de diagnóstico** cuando aparezca la alerta de diagnóstico. Si la alerta no aparece cuando agita el dispositivo, abra **Configuración** > **Portal de empresa** y asegúrese de que la opción **Gesto de sacudida** está activada.
 

@@ -17,17 +17,17 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5e37ab05889a1141464b75a36b4f156f897799ae
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f924ece24fe38346c1abab8964270e4abe5abf76
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="email-logs-to-your-company-support"></a>Enviar registros al equipo de soporte técnico de su empresa por correo electrónico
 
 A veces se pueden producir errores mientras se usa la aplicación Portal de empresa en el dispositivo Android. Cuando esto ocurre, puede enviar por correo electrónico los detalles del error al personal de soporte técnico de su empresa. Estos detalles proporcionarán el contexto necesario para solucionar el problema.  
 
-La información se conserva en su dispositivo en un documento especial denominado _registro de diagnóstico_. Al cargar los registros en la aplicación Portal de empresa, primero se envían a los desarrolladores de Microsoft que trabajan en la aplicación, quienes los utilizan para mejorar la funcionalidad de la aplicación y evitar errores en el futuro. A continuación, se le facilita un identificador de incidente específico del error para que lo comparta con el personal de soporte técnico de la empresa.  
+La información se conserva en su dispositivo en un documento especial denominado _registro de diagnóstico_. Al cargar los registros en la aplicación Portal de empresa, primero se envían a los desarrolladores de Microsoft que trabajan en la aplicación, quienes los utilizan para mejorar la funcionalidad de la aplicación y evitar errores en el futuro. Luego se le facilita un identificador de incidente específico del error para que lo comparta con el personal de soporte técnico de la empresa, para su uso en los casos de Soporte técnico de Microsoft.
 
 > [!Note]
 > Para que el equipo de soporte técnico de la empresa pueda averiguar la causa del problema más fácilmente, active el _registro detallado_. El registro detallado recopila todos los detalles sobre un error e incluye esos detalles en el informe. Obtenga información sobre cómo [activar el registro detallado aquí](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md).  

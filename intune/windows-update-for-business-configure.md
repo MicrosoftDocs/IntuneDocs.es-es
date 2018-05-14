@@ -5,18 +5,18 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 03/20/2018
+ms.date: 5/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 58a55c9162076af1e2e763a9799c7c1f756d80ce
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c8751572ec2c072504b2442cb7e76496e969e0a2
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="manage-software-updates-in-intune"></a>Administrar las actualizaciones de software en Intune
 
@@ -173,4 +173,4 @@ Windows Holographic for Business es compatible con las siguientes opciones de co
 
 - **Comportamiento de las actualizaciones automáticas**
 - **Actualizaciones de productos de Microsoft**
-- **Canal de servicio**
+- **Canal de servicio**: admite las opciones **Canal semianual** y **Canal semianual (dirigido)**

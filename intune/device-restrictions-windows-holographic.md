@@ -5,18 +5,18 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/9/2018
+ms.date: 5/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5b0784aeb1dc1022b4be824c2f858f9525d03918
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: e8a1abb4229b3e6b4c91cfd49b4f66dbe739ea7d
+ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Configuración de restricción de dispositivos de Windows Holographic for Business en Intune
 
@@ -68,7 +68,7 @@ Se admiten las siguientes configuraciones de restricciones de dispositivos en di
 
 - **Modificación de la hora del sistema**: evita que el usuario final cambie la fecha y hora del dispositivo.
 
-## <a name="kiosk-preview"></a>Quiosco (versión preliminar)
+## <a name="kiosk"></a>Pantalla completa
 
 Normalmente, un dispositivo de pantalla completa ejecuta una aplicación específica. A los usuarios no se les permite el acceso a características o funciones del dispositivo que está fuera de la aplicación de pantalla completa.
 
@@ -76,6 +76,9 @@ Normalmente, un dispositivo de pantalla completa ejecuta una aplicación especí
 
   - **No configurado** (valor predeterminado): la directiva no habilita una pantalla completa. 
   - **Pantalla completa con una sola aplicación**: el perfil permite que el dispositivo solo ejecute una aplicación. Cuando el usuario inicia sesión, se inicia una aplicación concreta. Este modo también evita que el usuario abra nuevas aplicaciones o modifique la aplicación en ejecución.
+  - **Pantalla completa con varias aplicaciones**: el perfil permite que el dispositivo ejecute varias aplicaciones. Solo las aplicaciones que agregue están disponibles para el usuario. La ventaja de una pantalla completa con varias aplicaciones, o de un dispositivo de propósito fijo, es proporcionar una experiencia fácil de entender para los usuarios, que solo tienen que acceder a las aplicaciones que necesitan. Además, se quitan de la vista las aplicaciones que no necesitan. 
+  
+    Al agregar aplicaciones para una experiencia de pantalla completa con varias aplicaciones, también se agrega un archivo de diseño de menú Inicio. El [archivo de diseño de menú Inicio](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-file-for-intune) incluye XML de ejemplo que se puede usar en Intune. 
 
 #### <a name="single-app-kiosks"></a>Pantallas completas con una sola aplicación
 Escriba los valores siguientes:
