@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/26/2018
+ms.date: 04/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dabf8d67b4d0bd7252f306d6b21949cf501eca8d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 834eb66e21820880f644c33d7e5d6aedad6bd502
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar y usar certificados SCEP con Intune
 
@@ -40,13 +40,11 @@ El servidor SCEP debe estar unido a dominio al dominio que hospeda la entidad de
   -  Permite a los dispositivos recibir certificados mediante una conexión a Internet.
   -  Es una recomendación de seguridad cuando los dispositivos se conectan a través de Internet para recibir y renovar certificados.
 
-> [!NOTE]
-> - El servidor que hospeda WAP [debe instalar una actualización](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) que habilite la compatibilidad con las direcciones URL largas que usa el Servicio de inscripción de dispositivos de red. Esta actualización está incluida en el [paquete acumulativo de actualizaciones de diciembre de 2014](http://support.microsoft.com/kb/3013769)o está disponible por separado, en [KB3011135](http://support.microsoft.com/kb/3011135).
-> - El servidor WAP debe tener un certificado SSL que coincida con el nombre que se publica para los clientes externos, así como confiar en el certificado SSL que se usa en el servidor NDES. Estos certificados habilitan al servidor WAP para terminar la conexión SSL entre clientes y crear una nueva conexión SSL hacia el servidor NDES.
-> 
->   Para obtener información sobre los certificados para WAP, vea [Plan certificates](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn383650(v=ws.11)#plan-certificates) (Planear certificados).
-> 
->   Para obtener información general sobre los servidores WAP, vea [Working with Web Application Proxy](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn584113(v=ws.11)) (Trabajar con el Proxy de aplicación web).
+#### <a name="additional"></a>Adicional
+- El servidor que hospeda WAP [debe instalar una actualización](http://blogs.technet.com/b/ems/archive/2014/12/11/hotfix-large-uri-request-in-web-application-proxy-on-windows-server-2012-r2.aspx) que habilite la compatibilidad con las direcciones URL largas que usa el Servicio de inscripción de dispositivos de red. Esta actualización está incluida en el [paquete acumulativo de actualizaciones de diciembre de 2014](http://support.microsoft.com/kb/3013769)o está disponible por separado, en [KB3011135](http://support.microsoft.com/kb/3011135).
+- El servidor WAP debe tener un certificado SSL que coincida con el nombre que se publica para los clientes externos, así como confiar en el certificado SSL que se usa en el servidor NDES. Estos certificados habilitan al servidor WAP para terminar la conexión SSL entre clientes y crear una nueva conexión SSL hacia el servidor NDES.
+
+Para más información, consulte [Planeamiento de certificados para WAP](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn383650(v=ws.11)#plan-certificates) e [Información general sobre los servidores WAP](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn584113(v=ws.11)).
 
 ### <a name="network-requirements"></a>Requisitos de red
 
@@ -369,13 +367,13 @@ Para validar que el servicio se ejecuta, abra un explorador y escriba la siguien
        - **CN={{IMEINumber}}**: número exclusivo de identidad de equipo móvil internacional (IMEI) usado para identificar un teléfono móvil
        - **CN={{OnPrem_Distinguished_Name}}**: secuencia de nombres distintivos relativos separados por comas, como `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
 
-       > [!TIP]
-       > Para usar la variable `{{OnPrem_Distinguished_Name}}`, no olvide sincronizar el atributo de usuario `onpremisesdistingishedname` por medio de [Azure Active Directory (AD) Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) con Azure AD.
+          Para usar la variable `{{OnPrem_Distinguished_Name}}`, asegúrese de sincronizar el atributo de usuario `onpremisesdistingishedname` mediante [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) con su instancia de Azure AD.
+
+       - **CN={{onPremisesSamAccountName}}**: los administradores pueden sincronizar el atributo samAccountName de Active Directory con Azure AD mediante Azure AD Connect en un atributo llamado `onPremisesSamAccountName`. Intune puede sustituir esa variable como parte de una solicitud de emisión de certificado en el asunto de un certificado SCEP.  El atributo samAccountName es el nombre de inicio de sesión del usuario usado para admitir clientes y servidores de una versión anterior de Windows (anterior a Windows 2000). El formato del nombre de inicio de sesión del usuario es: `DomainName\testUser`, o solo `testUser`.
+
+          Para usar la variable `{{onPremisesSamAccountName}}`, asegúrese de sincronizar el atributo de usuario `onPremisesSamAccountName` mediante [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) con su instancia de Azure AD.
 
        Con una combinación de una o varias de estas variables y cadenas estáticas, se puede crear un formato de nombre de firmante personalizado, como: **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**. <br/> En este ejemplo, se ha creado un formato de nombre de firmante que, además de las variables CN y E, usa cadenas para los valores Unidad organizativa, Organización, Ubicación, Estado y País. [CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) describe esta función y sus cadenas admitidas.
-
-
-
 
 - **Nombre alternativo del firmante**: especifique cómo crea Intune automáticamente los valores del nombre alternativo del firmante (SAN) en la solicitud de certificado. Por ejemplo, si selecciona un tipo de certificado de usuario, puede incluir el nombre principal de usuario (UPN) en el nombre alternativo del firmante. Si el certificado de cliente se usa para autenticar un servidor de directivas de redes, debe establecer el nombre alternativo del sujeto en el UPN.
 - **Uso de la clave**: especifique las opciones de uso de claves del certificado. Las opciones son:

@@ -6,7 +6,7 @@ keywords: Almacenamiento de datos de Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/14/2018
+ms.date: 04/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +15,11 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 185cf1061ff4d577fd14af59bbe5fbc38365c3d1
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c73b745915f1dcb32269059907b1cec1078d4b39
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="reference-for-devices-entities"></a>Referencia de las entidades Devices
 
@@ -266,6 +266,7 @@ La entidad **Devices** muestra todos los dispositivos inscritos en administraci�
 | LastPolicyUpdateUtc | Hora más reciente en la que se ha actualizado la directiva del dispositivo. |
 | LastExchangeStatusUtc | Hora más reciente en la que se ha sincronizado el dispositivo con Exchange. |
 | IsDeleted | Establecido en True si el dispositivo ya no se administra mediante Intune. Conserva el último estado conocido. |
+| AndroidSecurityPatchLevel |La fecha de la revisión de seguridad más reciente del dispositivo. |
 
 ## <a name="devicepropertyhistory"></a>DevicePropertyHistory
 

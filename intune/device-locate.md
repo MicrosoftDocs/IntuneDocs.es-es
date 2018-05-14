@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: da8bb19db8c2da2d5854c3f991ccce4d124d594c
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 735b3323527487e231d190ffd45e9083c4f524a2
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Búsqueda de dispositivos iOS perdidos o robados con Intune
 
@@ -46,6 +46,15 @@ Esta característica no se admite en los siguientes sistemas:
 
 >[!NOTE]
 >Por motivos de privacidad se limita la distancia con la que puede hacer zoom en el mapa.
+
+## <a name="activate-lost-mode-sound-alert-on-an-ios-device"></a>Activación de la alerta sonora de modo perdido en un dispositivo iOS
+
+Si alguien ha perdido su dispositivo iOS 9.3 o posterior, puede desencadenar de forma remota una alerta sonora en el dispositivo para que el usuario pueda encontrarlo. El dispositivo debe estar en [modo perdido](device-lost-mode.md).
+
+En [Intune en Azure Portal](https://aka.ms/intuneportal), elija **Dispositivos** > **Todos los dispositivos** > seleccione un dispositivo iOS > **Información general** > **Más** > **Play Lost mode sound (supervise only)** (Reproducir sonido de modo perdido [solo supervisar]).
+
+El sonido sigue reproduciéndose hasta que el usuario lo deshabilita en el dispositivo o este se quita del modo perdido.
+
 
 ## <a name="security-and-privacy-information-for-lost-mode-and-locate-device-actions"></a>Información de seguridad y privacidad de las acciones de modo perdido y buscar dispositivo
 - No se envía ningún dato relacionado con la ubicación del dispositivo a Intune hasta que active esta acción.

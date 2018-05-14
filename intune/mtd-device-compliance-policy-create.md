@@ -15,11 +15,11 @@ ms.assetid: 5d12254f-ffab-4792-b19c-ab37f5e02f35
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b719bb1841cfc1aa98808b9c09db43d9c654d63f
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 1152473206826aa2e3f63c7196a3d0538101a948
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Creación de directiva de cumplimiento de dispositivos de Mobile Threat Defense (MTD) con Intune
 
@@ -36,7 +36,7 @@ Requisitos previos de la directiva de cumplimiento de dispositivos con MTD:
 
 -   Configuración de la integración de MTD con Intune
 
-## <a name="to-create-a-mtd-device-compliance-policy"></a>Para crear una directiva de cumplimiento de dispositivos de MTD
+## <a name="to-create-an-mtd-device-compliance-policy"></a>Creación de una directiva de cumplimiento de dispositivos de MTD
 
 1.  Vaya a [Azure Portal](https://portal.azure.com/) e inicie sesión con sus credenciales de Intune.
 
@@ -65,7 +65,7 @@ Requisitos previos de la directiva de cumplimiento de dispositivos con MTD:
 > [!IMPORTANT]
 > Si crea directivas de acceso condicional para Office 365 u otros servicios, se efectuará esta evaluación de cumplimiento de dispositivo y se bloqueará el acceso de los dispositivos no conformes a los recursos corporativos hasta que se resuelva la amenaza en el dispositivo.
 
-## <a name="to-assign-a-mtd-device-compliance-policy"></a>Para asignar una directiva de cumplimiento de dispositivos de MTD
+## <a name="to-assign-an-mtd-device-compliance-policy"></a>Asignación de una directiva de cumplimiento de dispositivos de MTD
 
 Para asignar una directiva de cumplimiento de dispositivos a los usuarios, seleccione una directiva que haya configurado anteriormente. Las directivas existentes se pueden encontrar en el panel **Device compliance - Policies** (Conformidad de dispositivos: directivas).
 

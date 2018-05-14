@@ -15,11 +15,11 @@ ms.assetid: 7981a9c0-168e-4c54-9afd-ac51e895042c
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 32e61f95a1e6c197b8d732019a19222d437292bc
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1dd9fff04ff479844910328d274d6cc4cbe2c14a
+ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="automatically-enroll-ios-devices-by-using-apples-device-enrollment-program"></a>Inscribir dispositivos iOS automáticamente mediante el Programa de inscripción de dispositivos de Apple
 
@@ -74,7 +74,7 @@ Use el portal de DEP de Apple para crear un token de DEP. También puede usar el
 
 **Paso 1. Descargue un certificado de clave pública de Intune necesario para crear un token de DEP de Apple.**<br>
 
-1. En [Intune en Azure Portal](https://aka.ms/intuneportal), elija **Inscripción de dispositivos** > **Inscripción de Apple** > **Token del Programa de inscripción**.
+1. En [Intune, en Azure Portal](https://aka.ms/intuneportal), elija **Inscripción de dispositivos** > **Inscripción de Apple** > **Tokens del programa de inscripción**.
 
    ![Panel Token del Programa de inscripción en el área de trabajo Certificados de Apple](./media/enrollment-program-token-add.png)
 
