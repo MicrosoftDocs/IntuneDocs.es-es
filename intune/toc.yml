@@ -308,6 +308,8 @@
                       href: app-protection-policy-settings-android.md
                     - name: Configuración de iOS
                       href: app-protection-policy-settings-ios.md
+                    - name: Excepciones de transferencia de datos
+                      href: app-protection-policies-exception.md
                 - name: Validación de directivas de protección de aplicaciones
                   href: app-protection-policies-validate.md
                 - name: Supervisión del estado de usuario de protección de aplicaciones
