@@ -5,129 +5,138 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/19/2017
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.assetid: 443c6de7-5187-4dc4-b844-6085a0c659bd
+ms.assetid: ''
 searchScope:
 - User help
 ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e8b8b1e4ffd4e58b5f3cc1b9acfc004f4b97b40b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: aa556b2939986759aa92e63750fd161c05afbc38
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="sync-your-windows-device-manually"></a>Sincronización manual del dispositivo Windows
 
-A veces, intentar instalar una aplicación en su dispositivo Windows puede tardar más de lo que esperaba. Si esto sucede, puede intentar sincronizar manualmente su dispositivo Windows. La sincronización puede ayudar a acelerar la instalación.
+Cuando la velocidad de la instalación de las aplicaciones no sea la ideal, inicie una sincronización manual del dispositivo. Las sincronizaciones manuales obligan al dispositivo a conectarse con Intune para recibir las actualizaciones y comunicaciones más recientes. La velocidad de instalación puede aumentar una vez que se completa la sincronización del dispositivo.
 
-> [!Note]
-> Las aplicaciones pueden tardar un tiempo en instalarse si está en una red con velocidades más lentas o grandes cantidades de dispositivos descargando contenido a la vez.
+Intune admite la sincronización manual desde la aplicación Portal de empresa y desde la aplicación de configuración del dispositivo. 
 
-Las siguientes versiones de Windows pueden sincronizarse manualmente. Si su dispositivo está usando una versión diferente de Windows, no puede iniciar una sincronización manual.
+La funcionalidad de la aplicación Portal de empresa es compatible con dispositivos Windows 10 que ejecutan Creator's Update (1703) o una versión posterior. 
+* [Sincronización desde la aplicación Portal de empresa](#Sync-from-Company-Portal-app-for-Windows)  
 
-* [Sincronizar Windows 10 Escritorio](#windows-10-desktop)
-* [Sincronizar Windows 10 Mobile](#windows-10-mobile)
-* [Sincronizar Windows Phone 8.1](#windows-phone-81)
+Todos los dispositivos Windows se pueden sincronizar desde la aplicación de configuración del dispositivo, incluidos:
 
-## <a name="windows-10-desktop"></a>Windows 10 Escritorio
-Hay más de una versión de Windows 10, así que hay dos conjuntos de pasos. Para averiguar qué pasos debe seguir, vea las capturas de pantalla y siga los pasos que se parezcan a lo que ve en el dispositivo.
+* [Windows 10 desktop](#windows-10-desktop)  
+* [Microsoft HoloLens](#microsoft-hololens)   
+* [Windows 10 Mobile](#windows-10-mobile)  
+* [Windows Phone 8.1](#windows-phone-81)    
 
-1. Elija el botón **Iniciar** y, después, elija **Configuración**.
+## <a name="sync-from-company-portal-app-for-windows"></a>Sincronización desde la aplicación Portal de empresa para Windows
+Complete estos pasos para sincronizar manualmente cualquier dispositivo Windows 10 que ejecute Creator's Update (versión 1703) o posterior.
 
-    ![El botón Iniciar](./media/win10pc-sync-1-start-button.png)
+1.  Abra la aplicación Portal de empresa en el dispositivo.
 
-2. En la página **Configuración**, seleccione **Cuentas**.
+2.  Seleccione **Configuración** > **Sincronizar**.
 
-    ![Elección de cuentas en la página de configuración](./media/win10pc-sync-2-settings-accounts.png)
+    ![Captura de pantalla de la página principal de la aplicación Portal de empresa, con la opción Configuración resaltada](./media/RS1_homePage_settings_04.png)  
+    
+    ![Captura de pantalla de la página de configuración de la aplicación Portal de empresa, con el botón Sincronizar resaltado](./media/RS1_settingspage_sync05.png)    
 
-3. Examine las dos pantallas siguientes y elija la que se parezca más a lo que ve en el dispositivo. Siga los pasos que tienen que ver con la pantalla que verá en el dispositivo.
+## <a name="sync-from-settings-app"></a>Sincronización desde la aplicación de configuración 
+Complete estos pasos para sincronizar manualmente los dispositivos Microsoft HoloLens, Windows 10 Escritorio, Windows 10 Mobile o Windows Phone 8.1 desde la aplicación de configuración.
 
-    Si aparece esta pantalla, que muestra "Obtener acceso a trabajo o escuela", siga las instrucciones de [Pasos a seguir si ve acceso profesional o educativo](#steps-to-follow-if-you-see-access-work-or-school).
+### <a name="windows-10-desktop"></a>Windows 10 Escritorio
+1. En el dispositivo, seleccione **Inicio** > **Configuración**.
 
-    ![Sincronizar los pasos que debe seguir si ve acceso profesional o educativo](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+2. Seleccione **Cuentas**.
 
-    Si aparece esta pantalla, que muestra "Acceso al trabajo", siga los pasos de [Pasos que debe seguir si ve acceso profesional](#steps-to-follow-if-you-see-work-access).
+    ![Elección de cuentas en la página de configuración](./media/win10pc-sync-2-settings-accounts.png)  
+
+3. Existen varias versiones de Windows 10 para equipos de escritorio. Compare su pantalla con las capturas de pantalla que aparecen a continuación para determinar los pasos que debe seguir. 
+
+    * Si su pantalla indica **Acceso profesional o educativo**, vaya a los pasos que aparecen en [Acceso profesional o educativo](#access-work-or-school).
+
+    ![Opción Acceso profesional o educativo en la aplicación de configuración](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
+
+    * Si la pantalla indica **Acceso al trabajo**, vaya a los pasos que aparecen en [Acceso al trabajo](#work-access).  
 
     ![Elección del acceso al trabajo como tipo de cuenta](./media/win10pc-sync-3-work-access.png)
 
-### <a name="steps-to-follow-if-you-see-access-work-or-school"></a>Pasos a seguir si ve acceso profesional o educativo
+#### <a name="access-work-or-school-steps"></a>Pasos de Acceso profesional o educativo
 
-1. En la página **Cuentas**, elija **Obtener acceso a trabajo o escuela**.
+1. Haga clic en **Acceso profesional o educativo**.
 
-    ![Elegir acceso profesional o educativo](./media/w10-enroll-rs1-connect-to-work-or-school.png)
+    ![Captura de pantalla que muestra la opción Acceso al trabajo o educativo](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-2. Elija la cuenta profesional o educativa. Según la configuración que haya definido el equipo de soporte técnico de su empresa, podría ver dos cuentas con un aspecto similar al ejemplo siguiente. Una tiene un maletín al lado y la otra tiene el logotipo de Microsoft.
-
-   - Si ve la cuenta con el maletín, selecciónela y busque un botón **Información** debajo de ella.
-   - Si solo ve la cuenta con el logotipo de Microsoft, selecciónela y busque un botón **Información** debajo de ella.
+2. Seleccione la cuenta con el icono de maletín. Si no ve esta cuenta, es posible que la empresa haya aplicado una configuración distinta. En su lugar, haga clic en la cuenta con el logotipo de Microsoft.
 
      ![Elija el nombre de la cuenta junto al maletín o el logotipo de Microsoft](./media/win10pc-rs1-sync-info-button.png)
 
-3. Elija el botón **Información**. Se abre un cuadro de diálogo parecido al siguiente ejemplo.
+3. Haga clic en **Información**. 
 
-    ![Elija el nombre de la cuenta junto al maletín o el logotipo de Microsoft](./media/win10pc-rs1-sync-button.png)
+4. Haga clic en **Sincronizar**. 
 
-4. Elija el botón **Sincronizar**. El dispositivo se sincronizará con Intune.
+#### <a name="work-access-steps"></a>Pasos de Acceso al trabajo
 
-### <a name="steps-to-follow-if-you-see-work-access"></a>Pasos que debe seguir si ve acceso profesional
-
-1. En la página **Cuentas**, seleccione **Acceso al trabajo**.
+1.  Haga clic en **Acceso al trabajo**.
 
     ![Elección del acceso al trabajo como tipo de cuenta](./media/win10pc-sync-3-work-access.png)
 
-2. En la sección **Enroll in to device management** (Inscribirse en la administración de dispositivos), elija el nombre de su compañía.
+2. En **Enroll in to device management** (Inscribirse en la administración de dispositivos), seleccione el nombre de la empresa.
 
     ![Elección del nombre de la empresa para la administración de dispositivos](./media/win10pc-sync-4-tap-com-name.png)
 
-3. Elija el botón **Sincronizar**.
+3. Haga clic en **Sincronizar**. El botón queda deshabilitado hasta que se completa la sincronización.
 
-    ![Elección del botón Sincronizar](./media/win10pc-sync-5-tap-sync.png)
+    ![Elección del botón Sincronizar](./media/win10pc-sync-5-tap-sync.png)  
 
-   El botón se atenúa hasta que se finaliza la sincronización.
 
 ### <a name="windows-10-mobile"></a>Windows 10 Mobile
-Para sincronizar manualmente el dispositivo de Windows 10 Mobile de modo que se acelere la instalación de una aplicación lenta:
 
-   1. Vaya a **Todas las aplicaciones** > **Configuración** > **Cuentas**.
+   1. En el dispositivo, vaya a **Todas las aplicaciones** > **Configuración** > **Cuentas**.
 
        ![Elección de cuentas en la pantalla de configuración](./media/win10m-sync-1-settings-accounts.png)
 
-   2. Elija **Acceso al trabajo**.
+   2. Seleccione **Acceso al trabajo**.
 
        ![Elección del acceso al trabajo como tipo de cuenta](./media/win10m-sync-2-work-access.png)
 
-   3. En **Enroll in to device management** (Inscribirse en la administración de dispositivos), elija el nombre de su empresa.
+   3. En **Enroll in to device management** (Inscribirse en la administración de dispositivos), seleccione el nombre de la empresa.
 
        ![Elección del nombre de la empresa para la administración de dispositivos](./media/win10m-sync-3-tap-comp-name.png)
 
-   4. Elija el icono **Sincronizar**.
+   4. Seleccione el icono **Sincronizar**. El botón queda deshabilitado hasta que se completa la sincronización.
 
-       ![Elección del icono Sincronizar](./media/win10m-sync-4-tap-sync.png)
+       ![Elección del icono Sincronizar](./media/win10m-sync-4-tap-sync.png)  
+### <a name="microsoft-hololens"></a>Microsoft HoloLens  
+Estas instrucciones se aplican a los dispositivos HoloLens que ejecutan la Actualización de aniversario de Windows 10 (también conocida como RS1). 
+1.  Abra la aplicación de configuración del dispositivo.  
 
-       Aparece el mensaje "We’re synching your account" (Estamos sincronizando su cuenta) en la parte superior de la pantalla. El botón **Sincronizar** aparecerá atenuado hasta que el dispositivo finalice la sincronización.
+2.  Seleccione **Cuentas** > **Acceso al trabajo**.  
+    ![Captura de pantalla de la aplicación de configuración de HoloLens, con el vínculo de cuentas resaltado](./media/RS1_holoLens_SettingsRS1_Accounts_06.png)  
 
-## <a name="windows-phone-81"></a>Windows Phone 8,1
-Para sincronizar manualmente el dispositivo de Windows Phone 8.1 de modo que se acelere la instalación de una aplicación lenta:
+3.  Seleccione la cuenta conectada > **Sincronizar**. ![Captura de pantalla de la aplicación de configuración de HoloLens, con el botón de sincronización resaltado](./media/RS1_holoLens_SyncRS1_Sync_08.png)  
+
+### <a name="windows-phone-81"></a>Windows Phone 8,1
 
 1. Vaya a **Todas las aplicaciones** > **Configuración** > **Área de trabajo**.
 
     ![Lista de configuración](./media/wp81-1-sync-settings-workplace.png)
 
-2. Elija el nombre de su compañía.
+2. Seleccione el nombre de la empresa.
 
     ![Elección del nombre de la empresa para la cuenta de trabajo](./media/wp81-2-sync-tap-compname.png)
 
-3. Elija el icono **Sincronizar**.
+3. Seleccione el icono **Sincronizar**.
 
     ![Elección del icono Sincronizar](./media/wp81-3-sync-tap-sync-button.png)
-
-   Aparece el mensaje "We’re synching your account" (Estamos sincronizando su cuenta) en la parte superior de la pantalla hasta que el dispositivo acabe de sincronizarse.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

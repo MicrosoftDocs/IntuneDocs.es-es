@@ -14,11 +14,11 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b8ef4688a5d1a98a27a2fcb6fc5b6ce456b5fd25
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: f49b5050f4ce182699f0955bed6224309a4d7c7c
+ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problemas conocidos de Microsoft Intune
 
@@ -61,6 +61,8 @@ Las aplicaciones compradas por volumen de iOS se muestran y solo pueden asignars
 ### <a name="multiple-copies-of-the-same-ios-volume-purchase-program-are-uploaded"></a>Se cargan varias copias del mismo programa de compra por volumen de iOS
 No haga clic en el botón **Cargar** varias veces desde el mismo token de PCV. Esto provocará que se carguen tokens de PCV duplicados y que las aplicaciones se sincronicen varias veces para el mismo token de PCV.
 
+### <a name="some-managed-browser-traffic-not-routed-through-azure-app-proxy----2463492---"></a>Parte del tráfico de Managed Browser no se enruta a través de Azure App Proxy <!-- 2463492 -->
+Hay un problema conocido con la integración de Managed Browser y App Proxy en el que cierto tráfico terciario (como llamadas AJAX o JavaScript) no se enrutan a través de Azure App Proxy. Se trata de un problema conocido de la versión actual.  
 
 <!-- ## Groups -->
 

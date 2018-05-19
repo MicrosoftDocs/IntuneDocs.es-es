@@ -17,15 +17,18 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f3948ca1dd68e34997a21444f271ae31407d6508
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: ea17263ebd6e836cad154ff2b67229c1c3ae0ed6
+ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/09/2018
 ---
 # <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>Envío de registros al equipo de soporte técnico de su empresa desde la aplicación Portal de empresa para Windows 10
 
 Si se produce un error mientras usa la aplicación de Portal de empresa en el dispositivo Windows 10, puede ayudar al equipo de soporte técnico de su empresa a solucionar el problema enviándole información por correo electrónico. Esta información se conserva en su dispositivo en un documento especial denominado "_registro de diagnóstico_".
+
+> [!Note]       
+> Portal de empresa para Windows 10 enviará registros de aplicaciones directamente a Microsoft cuando el usuario inicie el flujo de trabajo para obtener ayuda con un problema. Esto permitirá que sea más fácil solucionar los problemas que se envían a Microsoft.
 
 1. Abra la aplicación **Portal de empresa**.
 2. Seleccione el engranaje de **Configuración** y después **Enviar registros**.

@@ -1,6 +1,6 @@
 ---
-title: Tiene que activar el examen de amenazas de seguridad | Microsoft Docs
-description: ''
+title: Debe activar el examen de amenazas de seguridad
+description: Obtenga información sobre cómo habilitar los exámenes de amenazas de seguridad en el dispositivo
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -15,16 +15,20 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 403b3b50cd8fba7d8d0c8ee6fd6f20d0d5561b76
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: cf2413ee879cf4a6cb2742d34f452105057ccf59
+ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/12/2018
 ---
-# <a name="you-need-to-make-your-device-able-to-scan-for-security-threats"></a>Es necesario que el dispositivo pueda analizar las amenazas de seguridad
+# <a name="enable-security-threat-scans-on-your-device"></a>Habilite los exámenes de amenazas de seguridad en el dispositivo 
+Si instala una aplicación no segura sin saberlo, los datos del dispositivo podrían estar en riesgo. Para proteger los datos del dispositivo, se recomienda que: 
 
-El dispositivo Android puede descargar e instalar aplicaciones que cumplan una gran variedad de tareas. No todas las aplicaciones son iguales y algunas aplicaciones pueden provocar problemas. Una recomendación general es descargar aplicaciones solo a partir de fuentes comprobadas, como Google Play Store. Una forma en la que el equipo de soporte técnico de su empresa ha decidido proteger de forma adicional los datos en el dispositivo es que Google analice las aplicaciones que está instalando para asegurarse de que son seguras.
+* Solo descargue aplicaciones de orígenes comprobados, como Google Play Store.  
+* Habilite los exámenes de amenazas de seguridad en el dispositivo. Google realiza estos exámenes, los que comprueban si es seguro instalar las aplicaciones.  
 
-Puede activar este análisis dirigiéndose a **Configuración** > **Google** > **Seguridad** y activando **Buscar amenazas de seguridad en el dispositivo**.
+Para habilitar los exámenes en el dispositivo, vaya a **Configuración** > **Google** > **Seguridad**. Active **Scan device for security threats** (Examinar dispositivo para detectar amenazas de seguridad).  
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+En algunos dispositivos Samsung, puede encontrar la configuración en **Configuración** > **Google** > **Seguridad** > **Google Play Protect**.
+
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog). 

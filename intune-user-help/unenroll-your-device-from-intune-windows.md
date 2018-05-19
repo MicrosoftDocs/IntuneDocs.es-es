@@ -1,11 +1,11 @@
 ---
-title: Quitar el dispositivo Windows de Intune | Microsoft Docs
+title: Quitar el dispositivo Windows de Intune
 description: Describe cómo quitar un dispositivo Windows de Intune.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/28/2018
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,61 +17,68 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 89a69f7d5cda31658cc9faf068a2a37698fdd93c
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 1dd64250c1996c6b13c62f80572282d639112ba6
+ms.sourcegitcommit: 8ee543c864097dc195b6f440471dca713fc21ed2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/09/2018
 ---
-# <a name="remove-your-windows-device-from-intune"></a>Quitar el dispositivo Windows de Intune
+# <a name="remove-your-windows-device-from-intune-management"></a>Quitar el dispositivo Windows de la administración de Intune
 
-Si su dispositivo Windows está registrado en Intune, pero ya no quiere usarlo para acceder al correo electrónico, a las aplicaciones o a otros recursos del trabajo o la escuela, debe dejar de administrarlo. Una vez que quite el dispositivo de Intune, ya no podrá acceder a estos recursos. Para obtener más información sobre lo que ocurre cuando se deja de administrar un dispositivo, vea [¿Qué ocurre cuando se anula la inscripción de un dispositivo de Intune?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
+Quite un dispositivo Windows registrado de Intune cuando ya no quiera ni necesite:  
+* Usar el dispositivo para el trabajo o la escuela. 
+* Acceder al correo, las aplicaciones u otros recursos profesionales o educativos.
+
+Después de quitarlo, no podrá acceder a los recursos profesionales ni educativo desde el dispositivo. Entre los dispositivos de Windows que se pueden quitar de Intune se incluyen:  
+* Dispositivos Windows 10 
+* Equipos Windows 8.1
+* Dispositivos móviles Windows 8.1
+ 
+Para más información sobre lo que sucede cuando Intune deja de administrar el dispositivo, consulte [¿Qué ocurre si anula la inscripción del dispositivo Windows de Intune?](what-happens-if-you-unenroll-your-device-from-intune-windows.md)
 
 ## <a name="remove-your-windows-10-device"></a>Quitar un dispositivo con Windows 10
+Complete estos pasos para quitar un dispositivo Windows 10 de Intune.
 
-1.  Desde la lista de aplicaciones, pulse en la aplicación **Portal de empresa** .
+### <a name="via-the-company-portal-app"></a>A través de la aplicación Portal de empresa
 
-2.  Inicie sesión con las credenciales de su trabajo o escuela.
+1. Abra la aplicación del portal de empresa.
+2. Inicie sesión con las credenciales de su trabajo o escuela.
+3. En **Mis dispositivos**, seleccione el dispositivo que desea quitar.
+4. En la esquina superior de la derecha de la aplicación, seleccione el icono **Más información**.
+5. Seleccione **Quitar**. 
+6. Para confirmar la eliminación del dispositivo, seleccione **Quitar dispositivo**.
 
-3.  En **Mis dispositivos**, seleccione el dispositivo cuya inscripción desee anular.
-
-4.  Pulse en **Quitar** &gt; **Quitar**.
+### <a name="via-device-settings-app"></a>A través de la aplicación de configuración del dispositivo
+1. Abra la aplicación de configuración. 
+2. Vaya a **Cuentas** > **Obtener acceso a trabajo o escuela**.
+3. Seleccione la cuenta conectada que desea quitar > **Desconectar**.
+4. Para confirmar la eliminación del dispositivo, seleccione **Sí**.
 
 ## <a name="remove-your-windows-81-computer"></a>Quitar un equipo con Windows 8.1
+Complete estos pasos para quitar un equipo Windows 8.1 de Intune.
 
-1.  Vaya a **Configuración de PC** &gt; **Red** &gt; **Área de trabajo**.
-
+1.  Vaya a **Configuración de PC** > **Red** > **Área de trabajo**.
 2.  En **Workplace Join**, seleccione **Salir**.
-
 3.  En **Activar la administración de dispositivos**, seleccione **Desactivar**.
-
 4.  En la ventana emergente que se abre, seleccione **Desactivar**.
 
-## <a name="remove-your-windows-phone-81-mobile-device"></a>Quitar un dispositivo móvil con Windows Phone 8.1
+## <a name="remove-your-windows-81-mobile-device"></a>Quitar un dispositivo móvil Windows Phone 8.1
+Complete estos pasos para quitar un dispositivo móvil Windows 8.1 de Intune.
 
-1.  Pulse en **Configuración** &gt; **Área de trabajo**.
-
+1.  Vaya a **Configuración** > **Área de trabajo**.
 2.  Pulse la cuenta de trabajo cuya inscripción quiere anular.
-
 3.  Pulse en **Eliminar** en la parte inferior de la pantalla.
-
-4.  En el cuadro de diálogo **Eliminar cuenta**, pulse en **Eliminar**.
-
+4.  En el cuadro de diálogo **Eliminar cuenta**, pulse en **Eliminar**.  
 ## <a name="removing-your-personal-information-after-removing-the-company-portal"></a>Eliminar la información personal después de quitar el Portal de empresa
-
 Hay dos tipos de datos que el Portal de empresa almacena en el dispositivo Windows:
 
--   **Registros de diagnóstico**: los datos estándar recopilados por Microsoft sobre la actividad de la aplicación (por ejemplo, cuánto tiempo ha estado abierta o si se ha bloqueado) se borran automáticamente cuando se desinstala la aplicación Portal de empresa.
--   **Caché de la aplicación**: almacenamiento de determinados archivos auxiliares necesarios para el funcionamiento de la aplicación, como iconos y valores de configuración.
+-   **Registros de diagnóstico**: los datos estándar recopilados por Microsoft acerca de la actividad de la aplicación se borran automáticamente cuando el dispositivo se quita del Portal de empresa. Los datos de actividad de la aplicación son, por ejemplo, los que indican cuánto tiempo estuvo abierta la aplicación o si se bloqueó.
+-   **Caché de la aplicación**: archivos auxiliares necesarios para el funcionamiento de la aplicación, como iconos y valores de configuración.
 
 Para eliminar por completo esta información, deben seguirse una serie de pasos.
 
-### <a name="uninstall-the-company-portal"></a>Desinstalar el Portal de empresa  
+1. Desinstale el Portal de empresa. La [desinstalación de la aplicación Portal de empresa](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) quitará algunos de los datos de la aplicación almacenados en el dispositivo.  
 
-La [desinstalación de la aplicación Portal de empresa](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) quitará algunos de los datos de la aplicación almacenados en el dispositivo.  
-
-### <a name="reset-the-company-portal"></a>Restablecer el Portal de empresa
-
-Para restablecer el resto de los datos de la aplicación Portal de empresa, se puede restablecer la aplicación en Configuración. Abra **Configuración** > **Aplicaciones y características** > **Portal de empresa** > **Opciones avanzadas** > **Restablecer**.
+2. Restablezca el Portal de empresa para restablecer los datos de aplicación almacenados. Abra la aplicación **Configuración** y seleccione > **Aplicaciones** > **Portal de empresa** > **Opciones avanzadas** > **Restablecer**. 
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

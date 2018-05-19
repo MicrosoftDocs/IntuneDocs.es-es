@@ -15,15 +15,15 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: f2622a173b33fd28c55a9a63321a9f2faa16a5d7
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c4a1ce01cf5d65b0bb0d6230972e5358dbe41854
+ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="you-need-to-update-your-android-devices-operating-system"></a>Necesita actualizar el sistema operativo del dispositivo Android
 
-Si ha visto un mensaje que indica que la "no se ha configurado el nivel de revisión de seguridad de Android mínimo", debe instalar una actualización para asegurarse de que el dispositivo sigue siendo seguro. Se publica una _revisión_ para que el software siga ejecutándose sin problemas y esté actualizado. El equipo de soporte técnico de su empresa requiere que instale esta revisión para asegurarse de que los datos corporativos se mantengan con la máxima protección posible en el dispositivo. La ubicación de la revisión de seguridad que necesita variará dependiendo del tipo de dispositivo Android que tenga.
+Si ha visto un mensaje que indica que el nivel de revisión de seguridad de Android es demasiado bajo, debe instalar una actualización para asegurarse de que el dispositivo sigue siendo seguro. Se publica una _revisión_ para que el software siga ejecutándose sin problemas y esté actualizado. El equipo de soporte técnico de su empresa requiere que instale esta revisión para asegurarse de que los datos corporativos se mantengan con la máxima protección posible en el dispositivo. La ubicación de la revisión de seguridad que necesita variará dependiendo del tipo de dispositivo Android que tenga.
 
 Si tiene un dispositivo Samsung, vaya a **Configuración** > **Sobre el teléfono** y compruebe si la palabra "Knox" aparece en cualquier parte de la pantalla. Si es así, siga las instrucciones de Samsung Knox.
 

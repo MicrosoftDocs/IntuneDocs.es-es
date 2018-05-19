@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 834eb66e21820880f644c33d7e5d6aedad6bd502
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: f67ccf1c2fb3b708916ef4ed4209bd3be07d9a5e
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar y usar certificados SCEP con Intune
 
@@ -304,6 +304,9 @@ En esta tarea tendrá que hacer lo siguiente:
 6. Cuando se le solicite el certificado de cliente para el conector de certificado, haga clic en **Seleccionar** y seleccione el certificado de **autenticación del cliente** instalado en el servidor NDES en la tarea 3.
 
     Después de seleccionar el certificado de autenticación del cliente, volverá a la superficie del **Certificado de cliente para el conector de certificado para Microsoft Intune** . Aunque no se muestra el certificado seleccionado, seleccione **Siguiente** para ver las propiedades de dicho certificado. Seleccione **Siguiente** y luego **Instalar**.
+    
+    > [!IMPORTANT]
+    > Intune Certificate Connector no se puede inscribir en un dispositivo que tiene habilitada la configuración de seguridad mejorada de Internet Explorer. Para usar Intune Certificate Connector, [deshabilite la configuración de seguridad mejorada de IE](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx).
 
 7. Cuando se complete el asistente, pero antes de cerrarlo, haga clic en **Iniciar la UI del conector de certificado**.
 

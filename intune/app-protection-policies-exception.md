@@ -15,11 +15,11 @@ ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d33768206c53550ec1cb34d5c1ad5e2f33e4f8c8
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 812f73cb0857298f01967cebbb36f0b8220fb9c6
+ms.sourcegitcommit: 179bea63fe52a8cce236b6ca8d82a6bd51bf17a5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Cómo crear excepciones a la directiva de transferencia de datos de la administración de aplicaciones móviles (MAM) de Intune
 
@@ -30,9 +30,7 @@ Como administrador, puede crear excepciones a la directiva de transferencia de d
 >[!WARNING] 
 > Usted es el responsable de realizar cambios en la directiva de excepciones de transferencia de datos. Las adiciones a esta directiva permiten que las aplicaciones no administradas (aplicaciones que no administra Intune) accedan a datos protegidos por las aplicaciones administradas. Este acceso a datos protegidos puede dar lugar a pérdidas de seguridad de datos. Agregue excepciones de transferencia de datos únicamente a las aplicaciones que su organización deba usar, pero que no admitan APP (directivas de protección de aplicaciones) de Intune. Además, agregue solo excepciones a las aplicaciones que no considere que sean riesgos de pérdida de datos.
 
-Esta característica se aplica al crear una directiva de protección de aplicaciones de Intune con la transferencia de datos establecida en **Managed apps only** (Solo aplicaciones administradas). Aparte de las excepciones que cree, si la directiva de transferencia de datos se establece en **Managed apps only** (Solo aplicaciones administradas), la transferencia de datos seguirá estando limitada a las aplicaciones que se administran mediante Intune. Puede crear las restricciones mediante protocolos (iOS) o paquetes (Android).
-
-Puede configurar esta característica para habilitar excepciones a la **restricción de transferencia de datos** de la directiva de protección de aplicaciones MAM de Intune. Esta directiva solo es necesaria si quiere permitir que los datos se transfieran a una aplicación que no admita las directivas de protección de aplicaciones de Intune. Esta directiva permite que las aplicaciones administradas por Intune, con la configuración de transferencia de datos establecida en **Managed apps only** (Solo aplicaciones administradas), invoquen aplicaciones no administradas en función del protocolo de URL (iOS) o el nombre de paquete (Android). Intune agrega aplicaciones nativas fundamentales a la lista predeterminada de excepciones. 
+Dentro de una directiva de protección de aplicaciones de Intune, establecer **Permitir que la aplicación transfiera datos a otras aplicaciones** en **Aplicaciones administradas por directivas** significa que la aplicación puede transferir datos solo a las aplicaciones administradas por Intune. Si necesita permitir la transferencia de datos a aplicaciones específicas que no son compatibles con la directiva de Intune App Protection, puede crear excepciones a esta directiva mediante el uso de **Select apps to exempt** (Seleccionar aplicaciones exentas). Las exenciones permiten que las aplicaciones administradas por Intune invoquen aplicaciones no administradas basadas en el protocolo de dirección URL (iOS) o el nombre del paquete (Android). De manera predeterminada, Intune agrega aplicaciones nativas fundamentales a esta lista de excepciones. 
 
 ## <a name="ios-data-transfer-exceptions"></a>Excepciones de transferencia de datos de iOS
 Para una directiva que tenga iOS como destino, puede configurar excepciones de transferencia de datos mediante el protocolo de URL. Para agregar una excepción, compruebe la documentación proporcionada por el desarrollador de la aplicación para buscar información sobre los protocolos de URL admitidos. Para obtener más información sobre las excepciones de transferencia de datos de iOS, consulte la sección [Exenciones de transferencia de datos del artículo Configuración de directivas de protección de aplicaciones de iOS](app-protection-policy-settings-ios.md#data-transfer-exemptions).

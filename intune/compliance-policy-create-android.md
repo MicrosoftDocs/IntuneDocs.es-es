@@ -14,11 +14,11 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: afc8edb38b667d744bb586d1ed5c82df8ab10f49
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 559fd83d83c7312e0efe0d2c3f6bb7e5ec596a1b
+ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Incorporación de una directiva de cumplimiento de dispositivos para dispositivos Android en Intune
 
@@ -87,7 +87,7 @@ En la tabla siguiente se describe cómo administrar la configuración de no conf
 
 ## <a name="device-property-settings"></a>Configuración de propiedades de dispositivo
 
-- **Versión mínima del sistema operativo**: cuando un dispositivo no cumple el requisito de versión mínima del sistema operativo, se notifica como no conforme. Además, se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario final puede optar por actualizar el dispositivo y luego acceder a los recursos de la empresa.
+- **Versión mínima del sistema operativo**: cuando un dispositivo no cumple el requisito de versión mínima del sistema operativo, se notifica como no conforme. Se muestra un vínculo con información sobre cómo actualizar el sistema. El usuario final puede optar por actualizar el dispositivo y luego acceder a los recursos de la empresa.
 - **Versión máxima de SO**: cuando un dispositivo usa una versión de SO posterior a la especificada en la regla, se bloquea el acceso a los recursos de la empresa. Se solicita al usuario que se ponga en contacto con el administrador de TI. Mientras no se cambie la regla para permitir la versión de SO, el dispositivo no podrá acceder a los recursos de la empresa.
 
 ## <a name="system-security-settings"></a>Configuración de seguridad del sistema
@@ -96,16 +96,16 @@ En la tabla siguiente se describe cómo administrar la configuración de no conf
 
 - **Requerir una contraseña para desbloquear dispositivos móviles**: **requiere** que los usuarios escriban una contraseña antes de poder tener acceso a sus dispositivos.
 - **Longitud mínima de la contraseña**: indique el número mínimo de dígitos o caracteres que debe tener la contraseña del usuario.
-- **Tipo de contraseña requerida**: elija si una contraseña debe tener solo caracteres numéricos o si es necesario combinar números y otros caracteres. Elija de entre las siguientes opciones:
+- **Tipo de contraseña requerida**: seleccione si una contraseña debe tener solo caracteres numéricos o es necesario combinar números y otros caracteres. Elija de entre las siguientes opciones:
   - **Valor predeterminado del dispositivo**
   - **Biométrico de seguridad baja**
   - **Al menos numérica**
-  - **Numérica compleja**
+  - **Complejo numérico**: no se permiten números consecutivos ni repetidos(como "1111" o "1234").
   - **Al menos alfabética**
   - **Al menos alfanumérica**
   - **Al menos alfanumérica con símbolos**
 - **Máximo de minutos de inactividad antes de solicitar la contraseña**: indique el tiempo de inactividad que transcurre antes de que el usuario deba volver a escribir la contraseña.
-- **Expiración de la contraseña (días)**: seleccione el número de días que faltan para que la contraseña expire y se deba crear una nueva.
+- **Expiración de la contraseña (días)**: seleccione el número de días que faltan para que expire la contraseña y durante los cuales el usuario debe crear otra.
 - **Número de contraseñas anteriores que no se pueden reutilizar**: indique el número de contraseñas recientes que no se pueden volver a usar. Utilice esta configuración para impedir que el usuario cree contraseñas usadas anteriormente.
 
 ### <a name="encryption"></a>Cifrado
@@ -132,5 +132,5 @@ En la tabla siguiente se describe cómo administrar la configuración de no conf
 Ya ha aplicado la directiva a los usuarios. Se evalúa el cumplimiento por parte de los dispositivos usados por los usuarios a los que se aplique la directiva.
 
 ## <a name="next-steps"></a>Pasos siguientes
-[Automatización del correo electrónico y adición de acciones para dispositivos no compatibles](actions-for-noncompliance.md)  
+[Automatización del correo electrónico y adición de acciones para dispositivos no compatibles: Intune](actions-for-noncompliance.md)  
 [Supervisión de las directivas de cumplimiento de dispositivos de Intune](compliance-policy-monitor.md)

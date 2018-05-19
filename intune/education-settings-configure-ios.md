@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/23/2018
+ms.date: 05/9/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,15 +15,17 @@ ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: derriw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c5820d058479bbf37c5dffdb930792f4f84afa69
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 7ff30ef609cf2ad742b55d80f418919bf4ab144a
+ms.sourcegitcommit: d40bfb6af66f2ce7026c0151ace98ec23f1cf76e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>Configuración de Intune para la aplicación Classroom para iOS
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
+>[!NOTE]
+>La configuración de Intune para la aplicación Classroom quedó obsoleta en Intune. Este artículo solo se aplica a los usuarios que tienen perfiles educativos existentes en Intune.
 
 ## <a name="introduction"></a>Introducción
 [Classroom](https://itunes.apple.com/app/id1085319084) es una aplicación que ayuda a los profesores a guiar el aprendizaje y controlar los dispositivos de los estudiantes en el aula. Por ejemplo, la aplicación permite a los profesores:
