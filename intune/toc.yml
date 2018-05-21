@@ -168,6 +168,8 @@
               href: windows-enroll.md
             - name: Inscripción masiva
               href: windows-bulk-enroll.md
+            - name: Página de estado de inscripción
+              href: windows-enrollment-status.md
             - name: Programa Windows AutoPilot Deployment
               href: enrollment-autopilot.md
         - name: Configuración de la inscripción de Android
