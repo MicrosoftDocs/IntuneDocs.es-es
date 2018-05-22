@@ -1,25 +1,25 @@
 ---
-title: "Creación de un informe desde la fuente de OData con Power BI"
+title: Creación de un informe desde la fuente de OData con Power BI
 titlesuffix: Microsoft Intune
-description: "Cree una vista de gráfico de rectángulos mediante Power BI Desktop con un filtro interactivo de la API de Almacenamiento de datos de Intune."
+description: Cree una vista de gráfico de rectángulos mediante Power BI Desktop con un filtro interactivo de la API de Almacenamiento de datos de Intune.
 keywords: Almacenamiento de datos de Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 05/15/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 850218c33a37738c591be36c778dfe5941bea51b
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 12725f567cf84d1d7e9110da747470984bc28c01
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Creación de un informe desde la fuente de OData con Power BI
 
@@ -51,7 +51,7 @@ Instale la versión más reciente de Power BI Desktop. Puede descargar Power BI 
 > Necesita permiso para acceder a los **Informes** en Intune. Para obtener más información, vea la [Autorización](reports-api-url.md).
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. Abra el panel **Almacenamiento de datos de Intune**.
 4. Copie la dirección URL de la fuente personalizada. Por ejemplo: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 5. Abra Power BI Desktop.

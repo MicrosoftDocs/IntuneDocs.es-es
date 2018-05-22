@@ -15,11 +15,11 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d973ca86a9adcbe3c7c18b2018c29006ba54ae9e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 9132000f5fcf43251bcc1e9b903ea03551e0b85e
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Creación y asignación de directivas de protección de aplicaciones
 
@@ -127,7 +127,7 @@ Dado que las directivas de protección de aplicaciones de Intune están destinad
 Para crear estas directivas, vaya a **Aplicaciones móviles** > **Directivas de protección de aplicaciones** en la consola de Intune y haga clic en **Agregar una directiva**. También puede editar una directiva de protección de aplicaciones existente. Si quiere que la directiva de protección de aplicaciones se aplique a los dispositivos administrados y a los no administrados, confirme que la opción **Destinar a todos los tipos de aplicaciones** esté establecida en **Sí**, que es el valor predeterminado. Si quiere efectuar una asignación granular según el estado de administración, establezca la opción **Destinar a todos los tipos de aplicaciones** en **No**. 
 
 > [!NOTE]
-> Para obtener información específica de compatibilidad con iOS sobre las directivas de protección de aplicaciones según el estado de administración de los dispositivos, vea [MAM protection policies targeted based on management state](whats-new.md#mam-protection-policies-targeted-based-on-management-state----1665993---) (Directivas de protección MAM destinadas según el estado de administración).
+> Para obtener información específica de compatibilidad con iOS sobre las directivas de protección de aplicaciones según el estado de administración de los dispositivos, vea [MAM protection policies targeted based on management state](whats-new.md#mam-protection-policies-targeted-based-on-management-state-) (Directivas de protección MAM destinadas según el estado de administración).
 
 ## <a name="policy-settings"></a>Configuraciones de directiva
 Para ver una lista completa de las configuraciones de directivas para iOS y Android, seleccione uno de los siguientes vínculos:
