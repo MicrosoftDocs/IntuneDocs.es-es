@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/09/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,23 +15,26 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0408ce3a4c2d4224780b4b23b0fb1b7d690471fe
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 0cd9db9399eb08c3ed04ff1d8920082aa0c04f06
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Supervisión de información y asignaciones de aplicaciones con Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune ofrece varias formas de supervisar las propiedades de las aplicaciones que el usuario administra, y de administrar el estado de asignación de estas.
+Intune ofrece varias formas de supervisar las propiedades de las aplicaciones administra y de administrar el estado de asignación de estas.
 
 1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
 2. Seleccione **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En el menú **Intune**, seleccione **Aplicaciones móviles**.
 4. En la sección **Administrar** del menú, seleccione **Aplicaciones**.
-5. En la lista de aplicaciones, seleccione una aplicación para supervisar. Verá el panel de la aplicación con información general sobre el estado del dispositivo y del usuario.
+5. En la lista de aplicaciones, seleccione una aplicación para supervisar. Verá el panel de la aplicación, que incluye información general sobre el estado del dispositivo y del usuario.
+
+> [!NOTE]
+> Las aplicaciones de la tienda Android que se implementan como **Disponible** no informan de su estado de instalación.
 
 ## <a name="app-overview-pane"></a>Panel de información general de la aplicación
 

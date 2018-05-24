@@ -1,12 +1,11 @@
 ---
-title: Preparar aplicaciones de línea de negocio para las directivas de protección de aplicaciones
-titlesuffix: Microsoft Intune
-description: Use la herramienta de ajuste de aplicaciones y el SDK de aplicaciones para permitir que sus aplicaciones de línea de negocio personalizadas usen las directivas de protección de aplicaciones en Microsoft Intune.
+title: Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles mediante Microsoft Intune
+description: La información de este tema le ayuda a decidir cuándo se debe usar la herramienta de ajuste de aplicaciones y el SDK de aplicaciones para permitir que las aplicaciones personalizadas de línea de negocio usen las directivas de administración de aplicaciones móviles.
 keywords: ''
-author: Erikre
+author: erikre
 ms.author: erikre
-manager: dougeby
-ms.date: 05/07/2018
+manager: angrobe
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,15 +14,15 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5ae3b19cfe57c48ac262a376c778d7d593456991
-ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
+ms.openlocfilehash: 89a8f29e2e31cf59ed237cbfae5c557f60bd8dfa
+ms.sourcegitcommit: 698bd1488be3a269bb88c077eb8d99df6e552a9a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicaciones de línea de negocio para las directivas de protección de aplicaciones
 
-[!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
+[!INCLUDE[both-portals](./includes/note-for-both-portals.md)]
 
 Puede habilitar las aplicaciones para que usen directivas de protección de aplicaciones mediante la herramienta de ajuste de aplicaciones de Intune o el SDK para aplicaciones de Intune. Use esta información para conocer sobre estos dos métodos y cuándo usarlos.
 
@@ -34,7 +33,6 @@ No se necesita el código fuente para usar la herramienta, pero se necesitan cre
 
 La herramienta de ajuste de aplicaciones **no** admite aplicaciones de App Store de Apple ni de Google Play Store. Tampoco admite ciertas características que requieren la integración del desarrollador (consulte la siguiente tabla de comparación de características).
 
-
 Para obtener más información sobre la herramienta de ajuste de aplicaciones para directivas de protección de aplicaciones en dispositivos que no están inscritos en Intune, consulte [Proteger aplicaciones y datos de línea de negocio en dispositivos no inscritos en Microsoft Intune](/intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune).
 
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>Razones para usar la herramienta de ajuste de aplicaciones
@@ -44,7 +42,6 @@ Para obtener más información sobre la herramienta de ajuste de aplicaciones pa
 * No tiene acceso al código fuente de la aplicación
 * No ha desarrollado la aplicación.
 * La aplicación tiene experiencias de autenticación de usuario mínimas.
-
 
 ### <a name="supported-app-development-platforms"></a>Plataformas de desarrollo de aplicaciones compatibles
 
@@ -79,35 +76,43 @@ En la siguiente tabla se enumeran los valores que puede usarse para el SDK para 
 > [!NOTE]
 > La herramienta de ajuste de aplicaciones se puede usar con Intune independiente o con Intune con Configuration Manager.
 
-|                                                         Característica                                                          | SDK para aplicaciones | Herramienta de ajuste de aplicaciones |
-|--------------------------------------------------------------------------------------------------------------------------|---------|-------------------|
-|                              Restringir contenido web para mostrar en un explorador administrado corporativo                              |    X    |         X         |
-|                                        Impedir copias de seguridad de Android, iTunes o iCloud                                        |    X    |         X         |
-|                                         Permitir que la aplicación transfiera datos a otras aplicaciones                                         |    X    |         X         |
-|                                        Permitir que la aplicación reciba datos de otras aplicaciones                                         |    X    |         X         |
-|                                      Restringir cortar, copiar y pegar con otras aplicaciones                                       |    X    |         X         |
-|                                              Requerir PIN simple en acceso                                               |    X    |         X         |
-|                                         Reemplazar el PIN de aplicación integrado con PIN de Intune                                         |    X    |                   |
-|                                     Especificar el número de intentos antes de restablecer el PIN                                      |    X    |         X         |
-|                                             Permitir desbloqueo mediante huellas digitales en lugar de mediante PIN                                             |    X    |         X         |
-|                                         Requerir credenciales corporativas en acceso                                         |    X    |         X         |
-|                             Bloquear la ejecución de aplicaciones administradas en dispositivos liberados o modificados                              |    X    |         X         |
-|                                                     Cifrar datos de aplicación                                                     |    X    |         X         |
-|                           Volver a comprobar los requisitos de acceso tras un número especificado de minutos                            |    X    |         X         |
-|                                             Especificar el período de gracia sin conexión                                             |    X    |         X         |
-|                                           Bloquear captura de pantalla (solo Android)                                            |    X    |         X         |
-|                                        Compatibilidad con MAM sin la inscripción de dispositivos                                         |    X    |         X         |
-|                                                        Eliminación completa                                                         |    X    |         X         |
-| Eliminación selectiva <br></br><strong>Nota</strong>: Para iOS, cuando se quita el perfil de administración, también se quita la aplicación. |    X    |                   |
-|                                                    Impedir "Guardar como"                                                     |    X    |                   |
-|                                            Configuración de aplicaciones de destino                                            |    X    |                   |
-|                                                Compatibilidad con aplicaciones de identidades múltiples                                                |    X    |                   |
-|                                                    Estilo personalizable                                                    |    X    |                   |
+|Característica|SDK para aplicaciones|Herramienta de ajuste de aplicaciones|
+|-----------|---------------------|-----------|
+|Restringir contenido web para mostrar en un explorador administrado corporativo|X|X|
+|Impedir copias de seguridad de Android, iTunes o iCloud|X|X|
+|Permitir que la aplicación transfiera datos a otras aplicaciones|X|X|
+|Permitir que la aplicación reciba datos de otras aplicaciones|X|X|
+|Restringir cortar, copiar y pegar con otras aplicaciones|X|X|
+|Requerir PIN simple en acceso|X|X|
+|Reemplazar el PIN de aplicación integrado con PIN de Intune|X||
+|Especificar el número de intentos antes de restablecer el PIN|X|X|
+|Permitir desbloqueo mediante huellas digitales en lugar de mediante PIN|X|X|
+|Permitir el reconocimiento facial en lugar de PIN (solo iOS)|X|X|
+|Requerir credenciales corporativas en acceso|X|X|
+|Bloquear la ejecución de aplicaciones administradas en dispositivos liberados o modificados|X|X|
+|Cifrar datos de aplicación|X|X|
+|Volver a comprobar los requisitos de acceso tras un número especificado de minutos|X|X|
+|Especificar el período de gracia sin conexión|X|X|
+|Bloquear captura de pantalla (solo Android)|X|X|
+|Compatibilidad con MAM sin la inscripción de dispositivos|X|X|
+|Eliminación completa|X|X|
+|Eliminación selectiva <br></br>**Nota**: Para iOS, cuando se quita el perfil de administración, también se quita la aplicación.|X||
+|Impedir "Guardar como"|X||
+|Configuración de aplicaciones de destino|X||
+|Compatibilidad con aplicaciones de identidades múltiples|X||
+|Estilo personalizable |X|||
+|Conexiones VPN de aplicación a petición con Citrix mVPN|X|X| 
+|Deshabilitar la sincronización de contactos|X|X|
+|Deshabilitar la impresión|X|X|
+|Requerir la versión mínima de la aplicación|X|X|
+|Requerir el sistema operativo mínimo (iOS y Android)|X|X|
+|Requerir la versión mínima de la revisión de seguridad de Android (solo Android)|X|X|
+|Requerir el SDK de Intune mínimo para iOS (solo iOS)|X|X|
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 Para obtener más información sobre las directivas de protección de aplicaciones y Intune, consulte los temas siguientes:
 
-  -  [Herramienta de ajuste de aplicaciones para Android](app-wrapper-prepare-android.md)</br>
+  - [Herramienta de ajuste de aplicaciones para Android](app-wrapper-prepare-android.md)</br>
   - [Herramienta de ajuste de aplicaciones para iOS](app-wrapper-prepare-ios.md)</br>
   - [Usar el SDK para habilitar aplicaciones para la administración de aplicaciones móviles)](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)

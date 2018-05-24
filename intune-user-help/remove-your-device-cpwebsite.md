@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/23/2017
+ms.date: 05/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,21 +17,21 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c7cd6380cbb596779a3094b18eef4e91b6161871
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f22509d780ec4d877e7e780109b34776b269c8b3
+ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="remove-your-device-from-the-company-portal"></a>Quitar un dispositivo del Portal de empresa
 
-Si decide que ya no quiere que la empresa o la organización administren el dispositivo, puede quitarlo del Portal de empresa mediante el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog). El sitio web del portal de empresa es una página web que puede usar para administrar equipos y dispositivos que haya inscrito en la administración con el departamento de TI. Si quita un dispositivo, ya no aparecerá en el Portal de empresa y es posible que también pierda el acceso a los datos, las aplicaciones y el correo electrónico de la empresa o la escuela.
+Si decide que ya no quiere que la empresa o la organización administren el dispositivo, puede quitarlo del Portal de empresa mediante el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog). Si quita su dispositivo, ya no se mostrará en el Portal de empresa. También puede perder el acceso a datos, aplicaciones y correos electrónicos de su organización.
 
 Para quitar el dispositivo:
 
 1. En el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog), pulse el botón __menú__ ![Pequeña imagen del botón menú, tres barras horizontales apiladas en paralelo.](/Intune/whats-new/media/CP_hamburger_menu.png), luego seleccione __Mis dispositivos__.
 
-   ![Imagen del sitio web del Portal de empresa con un menú lateral expandido en el lado izquierdo de la pantalla con botones Inicio, Todas las aplicaciones, Mis dispositivos, Departamento de soporte técnico y Cerrar sesión.](/media/iwp-expanded-sidebar.png)
+   ![Imagen del sitio web del Portal de empresa con un menú lateral expandido en el lado izquierdo de la pantalla, con los botones Inicio, Todas las aplicaciones, Mis dispositivos, Departamento de soporte técnico y Cerrar sesión.](/media/iwp-expanded-sidebar.png)
 
 2. En la página __Mis dispositivos__, seleccione el nombre del dispositivo que quiere quitar.
 

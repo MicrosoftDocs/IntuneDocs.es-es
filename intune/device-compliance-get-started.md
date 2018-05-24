@@ -13,11 +13,11 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f599f168c1b4ae9aa94324b69ed11e6d426c86d
-ms.sourcegitcommit: 4c18352d5b3b30080f7c7257fa63d852b1894850
+ms.openlocfilehash: 777cfa7d387c2bd19d529dbfc6d1aeab5dbad67e
+ms.sourcegitcommit: af0cc27b05bf0743f7d0970f5f3822f0aab346af
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/27/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Introducción a las directivas de cumplimiento de dispositivos de Intune
 
@@ -159,7 +159,7 @@ La **configuración de directiva de cumplimiento** (Azure Portal > Device compli
   - **Compatible**: característica de seguridad desactivada
   - **No compatible** (valor predeterminado): característica de seguridad activada
 
-  Si un dispositivo no tiene asignada una directiva de cumplimiento, se considerará no compatible. De forma predeterminada, los dispositivos están marcados como **No compatible**. Si usa el acceso condicional, le recomendamos que deje la opción predeterminada **No compatible**. Si un usuario final no es compatible porque no se ha asignado una directiva, en el Portal de empresa aparecerá `No compliance policies have been assigned`.
+  Si un dispositivo no tiene asignada una directiva de cumplimiento, se considerará no compatible. De forma predeterminada, los dispositivos están marcados como **Compatible**. Si usa el acceso condicional, se recomienda cambiar la configuración a **No compatible**. Si un usuario final no es compatible porque no se ha asignado una directiva, en el Portal de empresa aparecerá `No compliance policies have been assigned`.
 
 - **Detección de jailbreak mejorada**: cuando se habilita esta opción, hace que los dispositivos iOS se registren en Intune con mayor frecuencia. Para habilitar esta propiedad se usan los servicios de ubicación del dispositivo, que afectan al uso de la batería. Intune no almacena los datos de ubicación del usuario.
 

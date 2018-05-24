@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1dd64250c1996c6b13c62f80572282d639112ba6
-ms.sourcegitcommit: 8ee543c864097dc195b6f440471dca713fc21ed2
+ms.openlocfilehash: a3cad6a73b3455790441c594933d599b2c6e89f9
+ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="remove-your-windows-device-from-intune-management"></a>Quitar el dispositivo Windows de la administración de Intune
 
@@ -72,13 +72,13 @@ Complete estos pasos para quitar un dispositivo móvil Windows 8.1 de Intune.
 ## <a name="removing-your-personal-information-after-removing-the-company-portal"></a>Eliminar la información personal después de quitar el Portal de empresa
 Hay dos tipos de datos que el Portal de empresa almacena en el dispositivo Windows:
 
--   **Registros de diagnóstico**: los datos estándar recopilados por Microsoft acerca de la actividad de la aplicación se borran automáticamente cuando el dispositivo se quita del Portal de empresa. Los datos de actividad de la aplicación son, por ejemplo, los que indican cuánto tiempo estuvo abierta la aplicación o si se bloqueó.
+-   **Registros de diagnóstico**: datos de actividad de la aplicación estándar que recopila Microsoft. Se borran automáticamente cuando desinstala la aplicación Portal de empresa. Los datos de actividad de la aplicación son, por ejemplo, los que indican cuánto tiempo estuvo abierta la aplicación o si se bloqueó.
 -   **Caché de la aplicación**: archivos auxiliares necesarios para el funcionamiento de la aplicación, como iconos y valores de configuración.
 
-Para eliminar por completo esta información, deben seguirse una serie de pasos.
+Para eliminar los registros almacenados y la memoria caché, siga uno de esos pasos:
 
-1. Desinstale el Portal de empresa. La [desinstalación de la aplicación Portal de empresa](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) quitará algunos de los datos de la aplicación almacenados en el dispositivo.  
+* [Desinstale la aplicación Portal de empresa](https://support.microsoft.com/help/4028003/windows-10-uninstall-apps-and-programs) 
 
-2. Restablezca el Portal de empresa para restablecer los datos de aplicación almacenados. Abra la aplicación **Configuración** y seleccione > **Aplicaciones** > **Portal de empresa** > **Opciones avanzadas** > **Restablecer**. 
+* Restablezca la aplicación Portal de empresa. Abra la aplicación **Configuración** y seleccione > **Aplicaciones** > **Portal de empresa** > **Opciones avanzadas** > **Restablecer**. 
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).

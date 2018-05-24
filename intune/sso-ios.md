@@ -13,11 +13,11 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c1aaffb2da1f4ec081b59ff6ca1922d983008f77
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 010ed8511b042d6f764ba947f616d76521588f42
+ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Configurar Microsoft Intune para el inicio de sesión único para dispositivos iOS
 
@@ -59,13 +59,13 @@ En las secciones siguientes se proporcionan más detalles sobre cada uno de los 
 
 ### <a name="username-attribute-from-aad-and-realm"></a>Atributo de nombre de usuario de AAD y Dominio kerberos
 
-- Si se selecciona **Nombre principal del usuario** en este campo, se analiza de la siguiente forma:
+- Si se selecciona **Nombre principal de usuario** en este campo, se analiza de la siguiente forma:
 
    ![Atributo de nombre de usuario](media/User-name-attribute.png)
 
    También tiene la opción de sobrescribir el dominio kerberos con el texto que escriba en el cuadro de texto **Dominio kerberos**.
 
-   Por ejemplo, Contoso podría tener varias subregiones como Europa, Asia y Norteamérica. Podría querer que los usuarios de Asia usaran la carga de SSO y que la aplicación exigiera el UPN con el formato *username@asia.contoso.com*. En este caso, si selecciona **Nombre principal del usuario**, de forma predeterminada, el dominio kerberos de cada usuario se toma de AAD, que puede ser simplemente *contoso.com*. Así, especialmente para los usuarios de Asia, puede crear esta carga y sobrescribir el dominio kerberos con el valor *asia.contoso.com*. Ahora el UPN del usuario final se convierte en *username@asia.contoso.com* y no en *username@contoso.com*.
+   Por ejemplo, Contoso podría tener varias subregiones como Europa, Asia y Norteamérica. Podría querer que los usuarios de Asia usaran la carga de SSO y que la aplicación exigiera el UPN con el formato *username@asia.contoso.com*. En este caso, si selecciona **Nombre principal de usuario**, de forma predeterminada, el dominio kerberos de cada usuario se toma de AAD, que puede ser simplemente *contoso.com*. Así, especialmente para los usuarios de Asia, puede crear esta carga y sobrescribir el dominio kerberos con el valor *asia.contoso.com*. Ahora el UPN del usuario final se convierte en *username@asia.contoso.com* y no en *username@contoso.com*.
 
 - Si selecciona **Id. de dispositivo**, Intune selecciona automáticamente el identificador de dispositivo de Intune.
 

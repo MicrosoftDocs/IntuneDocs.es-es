@@ -1,11 +1,11 @@
 ---
-title: ¿Qué ocurre si anula la inscripción del dispositivo iOS o macOS? | Microsoft Docs
-description: ''
+title: ¿Qué ocurre si anula la inscripción del dispositivo iOS o macOS?
+description: Describe lo que sucede después de quitar el dispositivo de Intune
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/03/2017
+ms.date: 05/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,11 +17,11 @@ ROBOTS: ''
 ms.reviewer: esmich, elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5b3af226fa1b92a3e9e3f29f35c1b80ca253568f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8afec4c83e52693aa5789ba3e0ed89cb4d0eea38
+ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="what-happens-if-you-unenroll-your-ios-or-macos-device-from-intune"></a>¿Qué ocurre si anula la inscripción del dispositivo iOS o macOS de Intune?
 

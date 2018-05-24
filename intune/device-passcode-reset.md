@@ -13,11 +13,11 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 905c51dcbc5b7731be207c25ffd368b339dbec57
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 5783558a768e1d58087168f81ad27e5acf9aae09
+ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/16/2018
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Restablecimiento o eliminación del código de acceso de un dispositivo en Intune
 
@@ -47,7 +47,7 @@ Para crear un código de acceso para un dispositivo, use la acción **Quitar có
 
 ## <a name="resetting-android-for-work-passcodes"></a>Restablecer códigos de acceso de Android for Work
 
-Los dispositivos compatibles de Android for Work reciben una contraseña nueva de desbloqueo del dispositivo o un desafío de perfil administrado para el usuario final. Para dispositivos Android 7.0 o posteriores con perfiles de trabajo, los usuarios finales reciben una notificación para activar su token de restablecimiento de código de acceso inmediatamente después de completar la inscripción. La notificación se muestra si hay establecida y se requiere una contraseña de perfil de trabajo. Una vez introducido el código de acceso, la notificación desaparece.
+Los dispositivos compatibles con Android for Work reciben una nueva contraseña de desbloqueo de perfil o un desafío de perfil administrado para el usuario final. Para dispositivos Android 7.0 o posteriores con perfiles de trabajo, los usuarios finales reciben una notificación para activar su token de restablecimiento de código de acceso inmediatamente después de completar la inscripción. La notificación se muestra si hay establecida y se requiere una contraseña de perfil de trabajo. Una vez introducido el código de acceso, la notificación desaparece.
 
 ## <a name="resetting-ios-passcodes"></a>Restablecer códigos de acceso de iOS
 

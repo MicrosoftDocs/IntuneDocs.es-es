@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 05/17/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,11 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 98355ec1cf54597f488bd2426ac77f35809070fd
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 8cce5da762c119ec04553d80d717fb586c962566
+ms.sourcegitcommit: 698bd1488be3a269bb88c077eb8d99df6e552a9a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Control de administración basada en roles (RBAC) con Microsoft Intune
 
@@ -78,20 +78,18 @@ Los siguientes roles están integrados en Intune y puede asignarlos a grupos sin
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
 2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En el panel **Intune**, elija **Roles de Intune** y, luego, seleccione **Todos los roles**.
-1. En el panel **Roles de Intune: todos los roles**, elija el rol integrado que quiera asignar.
+4. En el panel **Roles de Intune: todos los roles**, elija el rol integrado que quiera asignar.
 
-2. En el panel <*nombre del rol*> - **Introducción**, elija **Administrar** y luego **Asignaciones**.
+5. En el panel <*nombre de rol*> - **Información general**, elija **Asignaciones** > **Asignar**.
 
     > [!NOTE]
     > No se pueden eliminar ni editar los roles integrados
 
-3. En el panel de roles personalizados, elija **Asignar**.
-
-4. En el panel **Asignaciones de roles**, escriba un **Nombre** y una **Descripción** opcional para la asignación y luego elija lo siguiente:
+6. En el panel **Asignaciones de roles**, escriba un **Nombre de asignación** y una **Descripción de la asignación** opcional y luego elija lo siguiente:
     - **Miembros**: seleccione un grupo que contenga el usuario al que quiere conceder los permisos.
-    - **Ámbito** seleccione un grupo que contenga los usuarios que tendrá permiso para administrar el miembro anterior.
+    - **Ámbito** seleccione un grupo que contenga los usuarios que tendrá permiso para administrar el miembro anterior. También puede establecer el ámbito como **All Users** (Todos los usuarios), **All Devices** (Todos los dispositivos) o **All Users & Devices** (Todos los usuarios y dispositivos).
 <br></br>
-5. Cuando haya terminado, haga clic en **Aceptar**. La nueva asignación se muestra en la lista de asignaciones.
+7. Cuando haya terminado, haga clic en **Aceptar**. La nueva asignación se muestra en la lista de asignaciones.
 
 ### <a name="intune-rbac-table"></a>Tabla de RBAC en Intune
 
@@ -128,13 +126,13 @@ Puede crear un rol personalizado que incluye los permisos necesarios para una fu
 
 1. En el panel **Roles de Intune: todos los roles**, elija el rol personalizado que quiera asignar.
 
-2. En el panel <*nombre del rol*> - **Introducción**, elija **Administrar** y luego **Asignaciones**. En este panel, también puede editar o eliminar roles existentes.
+2. En el panel <*nombre del rol*> - **Información general**, elija **Asignaciones**. En este panel, también puede editar o eliminar roles existentes.
 
 3. En el panel de roles personalizados, elija **Asignar**.
 
 4. En el panel **Asignaciones de roles**, escriba un **Nombre** y una **Descripción** opcional para la asignación y luego elija lo siguiente:
     - **Miembros**: seleccione un grupo que contenga el usuario al que quiere conceder los permisos.
-    - **Ámbito** seleccione un grupo que contenga los usuarios que tendrá permiso para administrar el miembro anterior.
+    - **Ámbito** seleccione un grupo que contenga los usuarios que tendrá permiso para administrar el miembro anterior. También puede establecer el ámbito como **All Users** (Todos los usuarios), **All Devices** (Todos los dispositivos) o **All Users & Devices** (Todos los usuarios y dispositivos).
 <br></br>
 5. Cuando haya terminado, haga clic en **Aceptar**. La nueva asignación se muestra en la lista de asignaciones.
 
@@ -145,3 +143,5 @@ Puede crear un rol personalizado que incluye los permisos necesarios para una fu
 ## <a name="see-also"></a>Vea también
 
 [Asignación de roles mediante Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)
+
+
