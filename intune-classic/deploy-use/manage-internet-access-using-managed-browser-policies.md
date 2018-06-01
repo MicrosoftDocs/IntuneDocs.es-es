@@ -15,11 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9781af943dbfb782cf367257127021473e35c168
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1722defcb29c9cd5a15c68e01114f4ffb80e3859
+ms.sourcegitcommit: f21287c66dd5559688f08bd98b6c976a0dea055d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 05/31/2018
+ms.locfileid: "34456374"
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Administrar el acceso a Internet mediante directivas de explorador administrado con Microsoft Intune
 
@@ -67,7 +68,7 @@ Para obtener más información acerca de los formatos de dirección URL que pued
 
 4.  Cuando termine, seleccione **Guardar directiva**.
 
-La nueva directiva aparece en el nodo **Directivas de configuración** del área de trabajo **Directiva** .
+La nueva directiva aparece en el nodo **Directivas de configuración** del área de trabajo **Directiva**.
 
 ## <a name="create-a-deployment-for-the-managed-browser-app"></a>Crear una implementación para la aplicación de explorador administrado
 Después de crear la directiva de explorador administrado, puede crear una implementación de software para la aplicación de explorador administrado y asociarla a la directiva de explorador administrado que ha creado.
@@ -115,14 +116,14 @@ Use la siguiente información para conocer los formatos permitidos y los caracte
 
 |                  Dirección URL                  |                     Detalles                      |                                                Coincide                                                |                                No coincide                                 |
 |---------------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-|        http://www.contoso.com         |              Coincide con una sola página               |                                            www.contoso.com                                            |  host.contoso.com<br /><br />www.contoso.com/images<br /><br />contoso.com/   |
-|          http://contoso.com           |              Coincide con una sola página               |                                             contoso.com/                                              | host.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com |
-|    <http://www.contoso.com/&#42>;     | Coincide con todas las direcciones URL que comienzan con www.contoso.com |      www.contoso.com<br /><br />www.contoso.com/images<br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
+|        http://www.contoso.com         |              Coincide con una sola página               |                                            <www.contoso.com>                                           |  host.contoso.com<br /><br /><www.contoso.com/images><br /><br />contoso.com/   |
+|          http://contoso.com           |              Coincide con una sola página               |                                             contoso.com/                                              | host.contoso.com<br /><br /><www.contoso.com/images><br /><br /><www.contoso.com>  |
+|    <http://www.contoso.com/&#42>;     | Coincide con todas las direcciones URL que comienzan con www.contoso.com  |      <www.contoso.com> <br /><br /><www.contoso.com/images><br /><br />www.contoso.com/videos/tvshows      |              host.contoso.com<br /><br />host.contoso.com/images              |
 |    http://&#42;.contoso.com/&#42;     |     Coincide con todos los subdominios en contoso.com     | developer.contoso.com/resources<br /><br />news.contoso.com/images<br /><br />news.contoso.com/images |                               contoso.host.com                                |
-|     http://www.contoso.com/images     |             Coincide con una sola carpeta              |                                        www.contoso.com/images                                         |                          www.contoso.com/images/dogs                          |
+|     http://www.contoso.com/images     |             Coincide con una sola carpeta              |                                        <www.contoso.com/images>                                         |                          <www.contoso.com/images/dogs>                          |
 |       http://www.contoso.com:80       |  Coincide con una sola página, con un número de puerto   |                                       http://www.contoso.com:80                                       |                                                                               |
 |        https://www.contoso.com        |          Coincide con una sola página segura           |                                        https://www.contoso.com                                        |                            http://www.contoso.com                             |
-| <http://www.contoso.com/images/&#42>; |    Coincide con una sola carpeta y todas sus subcarpetas    |                  www.contoso.com/images/dogs<br /><br />www.contoso.com/images/cats                   |                            www.contoso.com/videos                             |
+| <http://www.contoso.com/images/&#42>; |    Coincide con una sola carpeta y todas sus subcarpetas    |                 <www.contoso.com/images/dogs><br /><br /><www.contoso.com/images/cats>                   |                            <www.contoso.com/videos>                             |
 
 - Los siguientes son ejemplos de algunas de las entradas que no se pueden especificar:
 
@@ -130,11 +131,11 @@ Use la siguiente información para conocer los formatos permitidos y los caracte
 
   - &#42;.contoso/&#42;
 
-  - www.contoso.com/&#42;images
+  - <www.contoso.com/>&#42;images
 
-  - www.contoso.com/&#42;images&#42;pigs
+  - <www.contoso.com/>&#42;images&#42;pigs
 
-  - www.contoso.com/page&#42;
+  - <www.contoso.com/page>&#42;
 
   - Direcciones IP
 
