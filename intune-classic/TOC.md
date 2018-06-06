@@ -17,7 +17,6 @@
 ### [Organizar usuarios y dispositivos](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-5.md)
 ### [Implementar directivas y aplicaciones](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-6.md)
 ### [Personalizar Portal de empresa](/intune/company-portal-customize?toc=/intune-classic/toc.json)
-### [Inscripción de dispositivos](get-started/start-with-a-paid-subscription-to-microsoft-intune-step-8.md)
 ### [Tareas posteriores a la configuración](get-started/post-configuration-tasks.md)
 ## Pasos siguientes
 ### [Evitar pérdidas de datos de empresa desde aplicaciones móviles de Office 365](get-started/prevent-company-data-leaks-from-Office-365-mobile-apps.md)
@@ -102,7 +101,6 @@
 #### [Restaurar dispositivos iOS administrados](deploy-use/restore-managed-ios-devices-from-backup.md)
 #### [Configuración de Android y Samsung KNOX](deploy-use/android-policy-settings-in-microsoft-intune.md)
 ##### [Uso de una directiva personalizada para crear un perfil Wi-Fi con una clave precompartida](deploy-use/pre-shared-key-wi-fi-profile.md)
-##### [Uso de una directiva personalizada para crear un perfil de VPN por aplicación para dispositivos Android](deploy-use/per-app-vpn-for-android-pulse-secure.md)
 ##### [Uso de directivas personalizadas para permitir y bloquear aplicaciones en los dispositivos Samsung KNOX](deploy-use/custom-policy-to-allow-and-block-samsung-knox-apps.md)
 #### [Configuración de Android for Work](deploy-use/android-for-work-policy-settings-in-microsoft-intune.md)
 #### [Configuración de Windows 8 y Windows 8.1](deploy-use/windows-configuration-policy-settings-in-microsoft-intune.md)
@@ -137,15 +135,8 @@
 ## [Retirar dispositivos](deploy-use/retire-devices-from-microsoft-intune-management.md)
 
 ## [Agregar aplicaciones](deploy-use/add-apps.md)
-### [Agregar aplicaciones a los dispositivos inscritos](deploy-use/add-apps-for-mobile-devices-in-microsoft-intune.md)
 ### [Transferencia local de aplicaciones de Windows](/intune/app-sideload-windows?toc=/intune-classic/toc.json)
 ## [Implementación de aplicaciones](deploy-use/deploy-apps.md)
-### [Implementar aplicaciones en dispositivos y equipos](deploy-use/deploy-apps-in-microsoft-intune.md)
-### [Implementación de aplicaciones para dispositivos Android for Work](deploy-use/android-for-work-apps.md)
-### [Supervisión de aplicaciones](deploy-use/monitor-apps-in-microsoft-intune.md)
-### [Administrar aplicaciones adquiridas por volumen](deploy-use/manage-volume-purchased-apps-in-microsoft-intune.md)
-#### [Administrar aplicaciones iOS adquiridas por volumen](deploy-use/manage-ios-apps-you-purchased-through-a-volume-purchase-program-with-microsoft-intune.md)
-#### [Administrar aplicaciones Windows adquiridas por volumen](deploy-use/manage-apps-you-purchased-from-the-windows-store-for-business-with-microsoft-intune.md)
 
 ## Configurar aplicaciones
 ### [Actualizar aplicaciones](deploy-use/update-apps-using-microsoft-intune.md)
@@ -175,7 +166,6 @@
 #### [Usar aplicaciones con acceso condicional basado en la aplicación](deploy-use/use-apps-with-mam-ca.md)
 #### [Exchange Online](deploy-use/mam-ca-for-exchange-online.md)
 #### [SharePoint Online](deploy-use/mam-ca-for-sharepoint-online.md)
-#### [Bloquear las aplicaciones sin ADAL](deploy-use/block-apps-with-no-modern-authentication.md)
 ### [Proteger el acceso a redes (Cisco ISE)](deploy-use/restrict-access-to-networks.md)
 ### [Proteger el acceso basándose en el riesgo del dispositivo, de la red y de la aplicación](deploy-use/mobile-threat-defense.md)
 #### [Conector Mobile Threat Defense de Lookout](deploy-use/lookout-mobile-threat-defense-connector.md)
@@ -203,8 +193,6 @@
 #### [Validar las directivas de protección de aplicaciones](deploy-use/validate-mobile-application-management.md)
 #### [Supervisar el cumplimiento de directivas de protección de aplicaciones](deploy-use/monitor-mobile-app-management-policies-with-microsoft-intune.md)
 
-#### [Administrar la transferencia de datos entre aplicaciones iOS](deploy-use/manage-data-transfer-between-ios-apps-with-microsoft-intune.md)
-
 #### [Consola de administración de Intune para directivas MAM](deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console.md)
 
 ### [Preparación de aplicaciones de línea de negocio para MAM](/intune/apps-prepare-mobile-application-management?toc=/intune-classic/toc.json)
@@ -216,7 +204,6 @@
 
 ## Retirar aplicaciones y datos
 ### [Usar el borrado selectivo o completo](deploy-use/use-remote-wipe-to-help-protect-data-using-microsoft-intune.md)
-### [Retirar aplicaciones](deploy-use/retire-apps-using-microsoft-intune.md)
 ### [Borrar los datos administrados de la aplicación de la empresa](deploy-use/Wipe-managed-company-app-data-with-microsoft-intune.md)
 
 ## [Cambio de la autoridad de MDM](deploy-use/change-mdm-authority.md)
