@@ -15,11 +15,12 @@ ms.assetid: 586d9440-3813-4dec-b865-8bd319befde0
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 172e99a38e3aef500fca8563079e3656e372089b
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e1b2789c8f3b57bbc97e06e8793a96656f74a54d
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34703288"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones
 
@@ -39,7 +40,7 @@ En cambio, en los dispositivos que **están inscritos para la administración en
 
 ##  <a name="using-apps-with-multi-identity-support"></a>Uso de aplicaciones con compatibilidad con varias identidades
 
-Las directivas de protección de aplicaciones solo se aplicarán cuando un usuario intente acceder a datos relacionados con la empresa.  Si el usuario accede a la aplicación para su uso personal, puede que observe distintos comportamientos. 
+Las directivas de protección de aplicaciones solo se aplican cuando un usuario intenta acceder a datos relacionados con la empresa. Si el usuario intenta acceder a la aplicación para su uso personal, puede que observe distintos comportamientos. Las directivas no se aplican a nuevo contenido que aún no se ha guardado. El nuevo contenido se considera información corporativa solamente después de haberlo guardado en una ubicación corporativa, como SharePoint o OneDrive para la Empresa.
 
 Para las aplicaciones que admiten varias identidades, Intune solo aplica las directivas de protección de aplicaciones si un usuario accede a datos relacionados con la empresa.  Por ejemplo, puede que un usuario reciba una solicitud de PIN.  En la **aplicación Outlook**, se genera una solicitud cuando un usuario inicia la aplicación. En la **aplicación OneDrive**, se genera una solicitud cuando un usuario escribe su cuenta profesional.  En Microsoft **Word**, **PowerPoint** y **Excel**, se genera una solicitud cuando un usuario accede a documentos de la empresa en OneDrive.
 ##  <a name="managing-user-accounts-on-the-device"></a>Administración de cuentas de usuario en el dispositivo

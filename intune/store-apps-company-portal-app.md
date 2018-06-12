@@ -15,11 +15,12 @@ ms.assetid: bfe1a2d3-f611-4dbb-adef-c0dff4d7b810
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 169d0a32fdc86b5cd3f36421e6057cdeae1a078f
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: edd0ec0d717d4303ad2a452c5d60009ac09aa05f
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34703322"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Adición manual de la aplicación Portal de empresa para Windows 10 con Microsoft Intune
 
@@ -73,7 +74,7 @@ La ruta de migración recomendada es eliminar la asignación de la aplicación P
 
 Si necesita transferir localmente la aplicación y ha asignado el Portal de empresa de Windows 8.1 sin firmarlo con el certificado de Symantec, realice la actualización mediante los pasos de las secciones anteriores de este artículo.
 
-Si necesita transferir localmente la aplicación y ha firmado y asignado el Portal de empresa de Windows 8.1 con el certificado de firma de código de Symantec, siga los pasos de la sección siguiente.  
+Si necesita transferir localmente la aplicación y ha firmado y asignado la aplicación Portal de empresa de Windows 8.1 con el certificado de firma de código de Symantec, siga los pasos de la siguiente sección.
 
 ### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>¿Cómo puedo actualizar mi aplicación transferida localmente y firmada del Portal de empresa para Windows Phone 8.1 o del Portal de empresa para Windows 8.1 a la versión para Windows 10?
 La ruta de migración recomendada es eliminar la asignación existente de la aplicación Portal de empresa de Windows Phone 8.1 o la aplicación Portal de empresa de Windows 8.1 al establecer la acción de asignación en **Desinstalar**. Después de seleccionar esta opción, puede asignar la aplicación Portal de empresa de Windows 10 con normalidad.  

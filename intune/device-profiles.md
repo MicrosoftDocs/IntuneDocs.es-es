@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/22/2018
+ms.date: 05/24/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0b942f794136ce1a1d7851b0b04d6df70ea7174c
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f52c0dfc955406fa237d43632cd10c09ca0b798f
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744761"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>¿Qué son los perfiles de dispositivo de Microsoft Intune?
 
@@ -29,7 +30,7 @@ Microsoft Intune incluye valores de configuración y características que puede 
 - Un perfil de Wi-Fi que proporciona a distintos dispositivos acceso a su Wi-Fi corporativa
 - Un perfil de VPN que proporciona a distintos dispositivos acceso a su servidor VPN dentro de su red corporativa
 
-En este tema se proporciona una introducción a los distintos perfiles que puede crear para los dispositivos. Use estos perfiles para habilitar o deshabilitar algunas características en los dispositivos.
+En este artículo se proporciona una introducción a los distintos perfiles que puede crear para los dispositivos. Use estos perfiles para habilitar o deshabilitar algunas características en los dispositivos.
 
 ## <a name="before-you-begin"></a>Antes de comenzar
 Para ver las características disponibles, abra [Azure Portal](https://portal.azure.com) y el recurso de Intune. 
@@ -45,18 +46,18 @@ En la **Configuración del dispositivo** se incluyen las siguientes opciones:
 
 En [Creación de perfiles de dispositivo](device-profile-create.md) se proporciona una guía paso a paso para crear un perfil. 
 
-## <a name="device-features-profile"></a>Perfil de características de dispositivos
+## <a name="device-features---ios-and-macos"></a>Características de dispositivos: iOS y Mac OS
 
 Las [características del dispositivo](device-features-configure.md) controlan las características de dispositivos iOS y macOS, como configuraciones de AirPrint, notificaciones y dispositivos compartidos.
 
-Esta característica es compatible con:  
+Esta característica es compatible con:
 - iOS 
 - macOS
 
-## <a name="device-restrictions-profile"></a>Perfil de restricciones de dispositivos
+## <a name="device-restrictions"></a>Restricciones de dispositivos
 Las [restricciones de dispositivos](device-restrictions-configure.md) controlan la seguridad, el hardware, el uso compartido de datos y otras opciones de configuración de los dispositivos. Por ejemplo, cree un perfil de restricción de dispositivos que impida que los usuarios de dispositivos iOS usen la cámara del dispositivo. 
 
-Esta característica es compatible con: 
+Esta característica es compatible con:
 
 - Android
 - iOS
@@ -64,7 +65,22 @@ Esta característica es compatible con:
 - Windows 10
 - Windows 10 Team
 
-## <a name="email-profile"></a>Perfil de correo electrónico
+## <a name="endpoint-protection"></a>Endpoint Protection
+La [configuración de Endpoint Protection para Windows 10](endpoint-protection-windows-10.md) configura los valores de BitLocker y Windows Defender para dispositivos Windows 10.
+
+Para incorporar Protección contra amenazas avanzada de Windows Defender (WDATP) a Microsoft Intune, vea [Configure endpoints using Mobile Device Management (MDM) tools](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-mdm-windows-defender-advanced-threat-protection) (Configuración de los puntos de conexión mediante las herramientas de Administración de dispositivos móviles (MDM)).
+
+Esta característica es compatible con:
+- Windows 10 y versiones posteriores
+
+## <a name="kiosk"></a>Pantalla completa
+
+En el perfil de [configuración de quiosco](kiosk-settings.md) se configura un dispositivo para ejecutar una o varias aplicaciones. También puede personalizar otras características en el quiosco, como un menú de inicio y un explorador web.
+
+Esta característica es compatible con:
+- Windows 10 y versiones posteriores
+
+## <a name="email"></a>Correo electrónico
 El perfil de [configuración de correo electrónico](email-settings-configure.md) crea, asigna y supervisa la configuración de correo electrónico de Exchange ActiveSync en los dispositivos. Los perfiles de correo electrónico ayudan a garantizar la coherencia, reducen las llamadas al soporte técnico y permiten a los usuarios finales acceder al correo electrónico de la empresa en sus dispositivos personales sin necesidad de ninguna configuración por su parte. 
 
 Esta característica es compatible con: 
@@ -74,20 +90,10 @@ Esta característica es compatible con:
 - Windows Phone 8,1
 - Windows 10
 
-## <a name="wi-fi-profile"></a>Perfil de Wi-Fi
-La [configuración de Wi-Fi](wi-fi-settings-configure.md) asigna valores de configuración de red inalámbrica a los usuarios y los dispositivos. Al asignar un perfil de Wi-Fi, los usuarios obtienen acceso a su red Wi-Fi corporativa sin tener que configurarla ellos mismos. 
-
-Esta característica es compatible con: 
-
-- Android
-- iOS
-- macOS
-- Windows 8.1 (solo importación)
-
-## <a name="vpn-profile"></a>Perfil de VPN
+## <a name="vpn"></a>VPN
 La [configuración de VPN](vpn-settings-configure.md) asigna perfiles de VPN a usuarios y dispositivos de la organización para que puedan conectarse a la red de forma fácil y segura. 
 
-Las redes privadas virtuales (VPN) ofrecen a los usuarios un acceso remoto seguro a la red de la empresa. Los dispositivos utilizan un perfil de conexión VPN para iniciar una conexión con el servidor VPN. 
+Las redes privadas virtuales (VPN) ofrecen a los usuarios un acceso remoto seguro a la red de la empresa. Dispositivos que usan un perfil de conexión VPN para iniciar una conexión con el servidor VPN. 
 
 Esta característica es compatible con: 
 
@@ -98,10 +104,34 @@ Esta característica es compatible con:
 - Windows 8.1
 - Windows 10
 
-## <a name="education-profile"></a>Perfil educativo
-Los [ajustes de educación](education-settings-configure.md) configuran opciones para la [aplicación Take a Test de Windows](https://education.microsoft.com/gettrained/win10takeatest). Al configurar estas opciones, no puede ejecutar ninguna otra aplicación en el dispositivo hasta que se complete la prueba.
+## <a name="wi-fi"></a>Wi-Fi
+La [configuración de Wi-Fi](wi-fi-settings-configure.md) asigna valores de configuración de red inalámbrica a los usuarios y los dispositivos. Al asignar un perfil de Wi-Fi, los usuarios obtienen acceso a su red Wi-Fi corporativa sin tener que configurarla ellos mismos. 
 
-## <a name="certificates-profile"></a>Perfil de certificados
+Esta característica es compatible con: 
+
+- Android
+- iOS
+- macOS
+- Windows 8.1 (solo importación)
+
+## <a name="education"></a>Education
+En [Configuración de los ajustes de educación de Windows 10 en Microsoft Intune](education-settings-configure.md) se configuran opciones para la [aplicación Take a Test de Windows](https://education.microsoft.com/gettrained/win10takeatest). Al configurar estas opciones, no puede ejecutar ninguna otra aplicación en el dispositivo hasta que se complete la prueba.
+
+En [Configuración del entorno educativo de Intune para dispositivos iPad compartidos](education-settings-configure-ios-shared.md) se usa la aplicación Classroom de iOS para ayudar a los profesores a guiar el aprendizaje y controlar los dispositivos de los alumnos en el aula. Puede configurar dispositivos iPad para que varios alumnos puedan compartir un solo dispositivo.
+
+## <a name="edition-upgrade"></a>Actualización de la edición
+Las [actualizaciones de la edición de Windows 10](edition-upgrade-configure-windows-10.md) actualizan automáticamente dispositivos que ejecutan algunas versiones de Windows 10 a una edición más reciente.
+
+Esta característica es compatible con: 
+- Windows 10 y versiones posteriores
+
+## <a name="update-policies"></a>Directivas de actualización
+En [Configurar directivas de actualización de iOS en Microsoft Intune](software-updates-ios.md) se muestra cómo crear y asignar directivas de iOS para instalar actualizaciones de software en dispositivos iOS. También puede revisar el estado de la instalación.
+
+Esta característica es compatible con:
+- iOS
+
+## <a name="certificates"></a>Certificados
 El perfil de [certificados](certificates-configure.md) configura certificados SCEP y PKCS de confianza que se pueden asignar a dispositivos y usarse para la autenticación de perfiles de Wi-Fi, VPN y correo electrónico.
 
 Esta característica es compatible con: 
@@ -112,22 +142,11 @@ Esta característica es compatible con:
 - Windows 8.1
 - Windows 10
 
-## <a name="edition-upgrade-profile"></a>Perfil de actualización de edición
-Las [actualizaciones de la edición de Windows 10](edition-upgrade-configure-windows-10.md) actualizan automáticamente dispositivos que ejecutan algunas versiones de Windows 10 a una edición más reciente.
-
-Esta característica solo es compatible con Windows 10.
-
-## <a name="endpoint-protection-profile"></a>Perfil de Endpoint Protection
-La [configuración de Endpoint Protection para Windows 10](endpoint-protection-windows-10.md) configura los valores de BitLocker y Windows Defender para dispositivos Windows 10.
-
-Para incorporar Protección contra amenazas avanzada de Windows Defender (WDATP) a Microsoft Intune, vea [Configure endpoints using Mobile Device Management (MDM) tools](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-endpoints-mdm-windows-defender-advanced-threat-protection) (Configuración de los puntos de conexión mediante las herramientas de Administración de dispositivos móviles (MDM)).
-
-Esta característica solo es compatible con Windows 10.
-
 ## <a name="windows-information-protection-profile"></a>Perfil de Windows Information Protection
 [Windows Information Protection](windows-information-protection-configure.md) contribuye a la protección contra la pérdida de datos sin interferir en la experiencia del empleado. También ayuda a proteger los datos y las aplicaciones empresariales contra las pérdidas accidentales de datos en dispositivos propiedad de la empresa y dispositivos personales que los empleados usan en el trabajo. Esto consigue sin necesidad de realizar cambios en su entorno o en otras aplicaciones.
 
-Esta característica solo es compatible con Windows 10.
+Esta característica es compatible con:
+- Windows 10 y versiones posteriores
 
 ## <a name="custom-profile"></a>Perfil personalizado
 La [configuración personalizada](custom-settings-configure.md) incluye la capacidad para asignar valores de configuración del dispositivo que no están integrados en Intune. Por ejemplo, en dispositivos Android, puede escribir valores de OMA-URI. Para dispositivos iOS, puede importar un archivo de configuración creado Apple Configurator. 

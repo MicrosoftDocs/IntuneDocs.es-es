@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/24/2018
+ms.date: 5/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,11 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2e99ed0bd1eb5bae90913aedba5973e5e1282f70
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: 99d848fb1efea2ea2d557ab8d4f19881705ec991
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/02/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744676"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Habilitación de ATP de Windows Defender con acceso condicional en Intune
 
@@ -51,19 +52,19 @@ Para usar ATP con Intune, asegúrese de que tiene lo siguientes configurado y li
 
 1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
 2. Seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
-3. Seleccione **Cumplimiento del dispositivo** > **ATP de Windows Defender** > **Open the Windows Defender Advanced Threat Protection admin console** (Abrir la consola de administración de Protección contra amenazas avanzada de Windows Defender).
+3. Seleccione **Cumplimiento del dispositivo** > **ATP de Windows Defender** > **Abrir el Centro de seguridad de Windows Defender**.
 
-    ![Texto alternativo](./media/atp-device-compliance-open-windows-defender.png)
+    ![Seleccionar para abrir el Centro de seguridad de Windows Defender](./media/atp-device-compliance-open-windows-defender.png)
 
 4. En el **Centro de seguridad de Windows Defender**:
     1. Seleccione **Configuración** > **Características avanzadas**.
     2. Para **Microsoft Intune connection** (Conexión con Intune), elija **Activado**:
 
-        ![Texto alternativo](./media/atp-security-center-intune-toggle.png)
+        ![Habilitar la conexión a Intune](./media/atp-security-center-intune-toggle.png)
 
     3. Seleccione **Guardar preferencias**.
 
-5. Vuelva a Intune, **Cumplimiento del dispositivo** > **ATP de Windows Defender**. Establezca **Connect Windows 10.0.15063+ devices to Windows Defender Advanced Threat Protection** (Conectar dispositivos Windows 10.0.15063+ a Protección contra amenazas avanzada de Windows Defender) en **Activado**.
+5. Vuelva a Intune, **Cumplimiento del dispositivo** > **ATP de Windows Defender**. Establezca **Conectar dispositivos Windows de la versión 10.0.15063 y posteriores a ATP de Windows Defender** en **Activado**.
 6. Seleccione **Guardar**.
 
 Por lo general, esta tarea se realiza una vez. Por tanto, si ATP ya se ha habilitado en el recurso de Intune, no necesita hacerlo de nuevo.
@@ -115,9 +116,9 @@ La directiva de cumplimiento determina un nivel de riesgo aceptable en un dispos
 2. Seleccione **Cumplimiento del dispositivo** > **Directivas** > **Crear directiva**.
 3. Escriba la información que desee en **Nombre** y **Descripción**.
 4. En **Plataforma**, seleccione **Windows 10 y versiones posteriores**.
-5. En **Estado de dispositivos**, establezca **Requerir que el dispositivo tenga el nivel de amenaza del dispositivo** en el nivel que prefiera:
+5. En la configuración de **ATP de Windows Defender**, establezca **Require the device to be at or under the machine risk score** (Requerir que el dispositivo tenga la puntuación de riesgo de máquina o esté por debajo de ella) en el nivel que prefiera:
 
-  - **Protegido**: este nivel es el más seguro. El dispositivo no puede tener ninguna amenaza existente y aún puede acceder a los recursos de la empresa. Si se encuentra alguna amenaza, el dispositivo se clasificará como no conforme.
+  - **Despejado**: este nivel es el más seguro. El dispositivo no puede tener ninguna amenaza existente y aún puede acceder a los recursos de la empresa. Si se encuentra alguna amenaza, el dispositivo se clasificará como no conforme.
   - **Bajo**: el dispositivo se evalúa como compatible si solo hay amenazas de nivel bajo. Los dispositivos con niveles de amenaza medio o alto no son compatibles.
   - **Medio**: el dispositivo se evalúa como compatible si las amenazas que se encuentran en él son de nivel bajo o medio. Si se detectan amenazas de nivel alto, se determinará que el dispositivo no es compatible.
   - **Alto**: este nivel es el menos seguro, ya que permite que todos los niveles de amenaza. Por tanto, los dispositivos con niveles de amenaza alto, medio o bajo se consideran compatibles.

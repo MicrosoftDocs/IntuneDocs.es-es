@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/23/2018
+ms.date: 05/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: 3af7c91b-8292-4c7e-8d25-8834fcf3517a
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 069f71d75c0a9c7cec083a929f89a2b39bb4aac5
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 0831f374b9c6da417d8159dce1b58e40f0d3643c
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744948"
 ---
 # <a name="endpoint-protection-settings-for-windows-10-and-later-in-intune"></a>Configuración de Endpoint Protection para Windows 10 (y versiones posteriores) en Intune
 
@@ -300,15 +301,21 @@ Use estas opciones para configurar la seguridad local en dispositivos Windows 10
 
 - **Minutes of lock screen inactivity until screen saver activates** (Minutos de inactividad de pantalla de bloqueo hasta que se activa el protector de pantalla): defina los minutos máximos de inactividad en la pantalla de inicio de sesión del escritorio interactivo hasta que se activa el protector de pantalla.
 - **Require CTRL+ALT+DEL to log on** (Requerir CTRL+ALT+SUPR para iniciar sesión): exige que se presione CTRL+ALT+SUPR para que un usuario pueda iniciar sesión.
-- **Comportamiento de extracción de tarjeta inteligente**: determina lo que sucede cuando la tarjeta inteligente de un usuario conectado se extrae del lector de tarjetas inteligentes.
-En [LocalPoliciesSecurity options](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior) (Opciones de LocalPoliciesSecurity) se proporciona más información.
+- **Comportamiento de extracción de tarjeta inteligente**: determina lo que sucede cuando la tarjeta inteligente de un usuario conectado se extrae del lector de tarjetas inteligentes. Las opciones son:
+
+  - **Bloquear estación de trabajo**: la estación de trabajo se bloquea cuando se quita la tarjeta inteligente. Esta opción permite a los usuarios abandonar el área, llevarse consigo su tarjeta inteligente y seguir manteniendo una sesión protegida.
+  - **Forzar cierre de sesión**: el usuario se desconecta automáticamente cuando se quita la tarjeta inteligente.
+  - **Desconectar si es una sesión de Servicios de Escritorio remoto**: al quitar la tarjeta inteligente se desconecta la sesión sin cerrar la sesión del usuario. Esta opción permite al usuario insertar la tarjeta inteligente y reanudar la sesión más tarde o en otro equipo equipado con lector de tarjeta inteligente, sin necesidad de volver a iniciar la sesión. Si la sesión es local, esta directiva funciona de forma idéntica a Bloquear estación de trabajo.
+
+    En [LocalPoliciesSecurity options](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-smartcardremovalbehavior) (Opciones de LocalPoliciesSecurity) se proporciona más información.
 
 #### <a name="display"></a>Pantalla
 
 - **User information on lock screen** (Información del usuario en la pantalla de bloqueo): configure la información del usuario que se muestra cuando la sesión se bloquea. Si no se configura, se muestran el nombre de usuario, el dominio y el nombre para mostrar del usuario.
+  - **No configurado**: nombre de usuario, dominio y nombre para mostrar del usuario.
+  - **Nombre para mostrar de usuario, dominio y nombre de usuario**
   - **User display name only** (Solo nombre para mostrar del usuario)
   - **Do not display user information** (No mostrar información del usuario)
-  - **No configurado**: nombre de usuario, dominio y nombre para mostrar del usuario.
 - **Ocultar el último usuario que inició sesión**: no se muestra el nombre de usuario de la última persona que inició sesión en este dispositivo.
 - **Hide username at sign-in** (Ocultar nombre de usuario al inicio de la sesión): no se muestra el nombre de usuario de la persona que inicia sesión en este dispositivo después de escribir las credenciales y antes de que se muestre el escritorio del dispositivo.
 - **Logon message title** (Título del mensaje de inicio de sesión): defina el título del mensaje para los usuarios que intentan iniciar sesión.
@@ -316,13 +323,13 @@ En [LocalPoliciesSecurity options](https://docs.microsoft.com/windows/client-man
 
 ### <a name="network-access-and-security"></a>Seguridad y acceso a la red
 
-- **Anonymous access to Named Pipes and Shares** (Acceso anónimo a las canalizaciones con nombre y los recursos compartidos): restringe el acceso anónimo a la configuración de canalizaciones con nombre y recursos compartidos. Se aplica a la configuración a la que se puede acceder de forma anónima.
-- **Anonymous enumeration of SAM accounts** (Enumeración anónima de cuentas de SAM): permite que los usuarios anónimos enumeren las cuentas de SAM. Windows permite a los usuarios anónimos enumerar los nombres de las cuentas de dominio y de los recursos compartidos de red.
-- **Anonymous enumeration of SAM accounts and shares** (Enumeración anónima de cuentas de SAM y recursos compartidos): es posible bloquear la enumeración anónima de cuentas de SAM y recursos compartidos. Windows permite a los usuarios anónimos enumerar los nombres de las cuentas de dominio y de los recursos compartidos de red.
-- **LAN Manager hash value stored on password change** (Valor de hash de LAN Manager almacenado en el cambio de contraseña): en el siguiente cambio de contraseña, elija si se almacena el valor de hash de LAN Manager (LM) de la nueva contraseña. De forma predeterminada, no se almacena.
-- **Solicitudes de autenticación PKU2U**: impide que las solicitudes de autenticación PKU2U a este dispositivo usen identidades en línea.
-- **Restrict remote RPC connections to SAM** (Restringir conexiones RPC remotas a SAM): edite la cadena predeterminada de lenguaje de definición de descriptor de seguridad para permitir o impedir que usuarios y grupos realicen llamadas remotas a SAM.
-- **Descriptor de seguridad**
+- **Anonymous access to Named Pipes and Shares** (Acceso anónimo a las canalizaciones con nombre y los recursos compartidos): la opción predeterminada **No configurado** restringe el acceso anónimo a los recursos compartidos y la configuración de la canalización con nombre. Se aplica a la configuración a la que se puede acceder de forma anónima.
+- **Anonymous enumeration of SAM accounts** (Enumeración anónima de cuentas de SAM): **permite** que los usuarios anónimos enumeren las cuentas de SAM. Windows permite a los usuarios anónimos enumerar los nombres de las cuentas de dominio y de los recursos compartidos de red.
+- **Anonymous enumeration of SAM accounts and shares** (Enumeración anónima de cuentas de SAM y recursos compartidos): la opción predeterminada **No configurado** permite que los usuarios anónimos puedan enumerar los nombres de cuentas de dominio y recursos compartidos de red. Para impedir la enumeración anónima de cuentas y recursos compartidos de SAM, ajuste esta opción en **Bloquear**.
+- **LAN Manager hash value stored on password change** (Valor de hash de LAN Manager almacenado en el cambio de contraseña): en el siguiente cambio de contraseña, elija **Permitir** al administrador de LAN que almacene el valor hash de la nueva contraseña. Cuando se establece en **No configurado** (valor predeterminado), no se almacena el valor hash.
+- **Solicitudes de autenticación PKU2U**: elija **Bloquear** solicitudes de autenticación PKU2U a este dispositivo para usar identidades en línea. **No configurado**: esta opción predeterminada permite estas solicitudes.
+- **Restrict remote RPC connections to SAM** (Restringir conexiones RPC remotas a SAM): elija **Permitir** la cadena predeterminada de lenguaje de definición de descriptor de seguridad para impedir que usuarios y grupos realicen llamadas remotas a SAM. **No configurado**: esta opción predeterminada permite que la cadena predeterminada de lenguaje de definición de descriptor de seguridad permita a los usuarios y grupos realizar llamadas remotas a SAM.
+  - **Descriptor de seguridad**
 
 ### <a name="recovery-console-and-shutdown"></a>Cierre y consola de recuperación
 
@@ -359,13 +366,13 @@ En [LocalPoliciesSecurity options](https://docs.microsoft.com/windows/client-man
 
 ### <a name="microsoft-network-client"></a>Cliente de redes de Microsoft
 
-- **Firmar digitalmente las comunicaciones (si el servidor lo permite)**: determina si el cliente SMB intenta negociar la firma de paquetes SMB. Cuando está habilitada (valor predeterminado), el cliente de redes de Microsoft solicita al servidor que realice la firma de paquetes SMB tras la configuración de la sesión. Si se ha habilitado la firma de paquetes en el servidor, esta se negocia. Si esta directiva está deshabilitada, el cliente SMB no negocia nunca la firma de paquetes SMB.
+- **Firmar digitalmente las comunicaciones (si el servidor lo permite)**: determina si el cliente SMB intenta negociar la firma de paquetes SMB. Cuando está habilitada (No configurado), el cliente de redes de Microsoft solicita al servidor que realice la firma de paquetes SMB tras la configuración de la sesión. Si la firma de paquetes está habilitada en el servidor, esta se negocia. Si esta directiva está deshabilitada, el cliente SMB no negocia nunca la firma de paquetes SMB.
 - **Send unencrypted password to third-party SMB servers** (Enviar contraseña no cifrada a servidores de SMB de terceros): cuando está habilitada, se permite al redirector de Bloque de mensajes de servidor (SMB) enviar contraseñas sin cifrar a servidores SMB que no son de Microsoft que no admiten el cifrado de contraseñas durante la autenticación.
 
 ### <a name="microsoft-network-server"></a>Servidor de red de Microsoft
 
-- **Firmar digitalmente las comunicaciones (si el cliente lo permite)**: determina si el servidor SMB negocia la firma de paquetes SMB con los clientes que lo solicitan. Cuando está habilitada, el servidor de red de Microsoft negocia la firma de paquetes SMB a petición del cliente. Es decir, si está habilitada la firma de paquetes en el cliente, esta se negocia. Cuando está deshabilitada (valor predeterminado), el cliente SMB nunca negocia la firma de paquetes SMB.
-- **Firmar digitalmente las comunicaciones (siempre)**: determina si el componente de servidor SMB requiere la firma de paquetes. Cuando está habilitada, el servidor de red de Microsoft no se comunicará con un cliente de red de Microsoft a menos que este acepte realizar la firma de paquetes SMB. Cuando está deshabilitada (valor predeterminado), la firma de paquetes SMB se negocia entre el cliente y el servidor.
+- **Firmar digitalmente las comunicaciones (si el cliente lo permite)**: determina si el servidor SMB negocia la firma de paquetes SMB con los clientes que lo solicitan. Cuando está habilitada, el servidor de red de Microsoft negocia la firma de paquetes SMB a petición del cliente. Es decir, si está habilitada la firma de paquetes en el cliente, esta se negocia. Cuando la opción es **No configurado** o está deshabilitada (valor predeterminado), el cliente SMB nunca negocia la firma de paquetes SMB.
+- **Firmar digitalmente las comunicaciones (siempre)**: determina si el componente de servidor SMB requiere la firma de paquetes. Cuando está habilitada, el servidor de red de Microsoft no se comunicará con un cliente de red de Microsoft a menos que este acepte realizar la firma de paquetes SMB. Cuando la opción es **No configurado** está deshabilitada (valor predeterminado), la firma de paquetes SMB se negocia entre el cliente y el servidor.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

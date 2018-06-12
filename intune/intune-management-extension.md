@@ -1,12 +1,11 @@
 ---
-title: Administrar scripts de PowerShell en Microsoft Intune para dispositivos Windows 10
-titlesuffix: ''
-description: Obtenga información sobre cómo cargar scripts de PowerShell en Microsoft Intune para ejecutarse en dispositivos Windows 10.
+title: 'Adición de scripts de PowerShell en Microsoft Intune para dispositivos con Windows 10: Azure | Microsoft Docs'
+description: Agregue scripts de PowerShell, asigne la directiva de script a grupos de Active Directory de Azure, use informes para supervisar los scripts y vea los pasos para eliminar scripts que se agregan en dispositivos con Windows 10 en Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 05/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,11 +14,12 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3de7af01ffa64293e420913258919eff118b4abc
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 2046a928525e974eee5f63d772d46864b21f0267
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34583679"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Administrar scripts de PowerShell en Intune para dispositivos Windows 10
 La extensión de administración de Intune permite cargar los scripts de PowerShell en Intune para ejecutarse en dispositivos Windows 10. La extensión de administración complementa las capacidades de administración de dispositivos móviles (MDM) de Windows 10 y facilita la transición a una administración moderna.
@@ -35,39 +35,33 @@ La extensión de administración de Intune complementa las capacidades de admini
 La extensión de administración de Intune tiene los siguientes requisitos previos:
 - Los dispositivos deben estar unidos a Azure AD. Esto no incluye los dispositivos unidos a AD híbrido.
 - Los dispositivos deben ejecutar Windows 10, versión 1607 o posterior.
+- La inscripción automática de MDM debe estar [habilitada en Azure AD](https://docs.microsoft.com/intune/windows-enroll#enable-windows-10-automatic-enrollment) y los dispositivos deben inscribirse automáticamente en Intune.
 
 ## <a name="create-a-powershell-script-policy"></a>Crear una directiva de un script de PowerShell 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
-3. En el panel **Intune**, elija **Configuración del dispositivo**.
-4. En el panel **Configuración del dispositivo**, elija **Administrar** > **Scripts de PowerShell**.
-5. En el panel **Scripts de PowerShell**, haga clic en **Agregar**.
-6. En el panel **Agregar script de PowerShell**, escriba un **Nombre** y una **Descripción** para el script de PowerShell.
-7. Para **Ubicación del script**, busque el script de PowerShell. El script debe tener un tamaño inferior a 200 KB.
-8. Seleccione **Configurar** y luego elija si desea ejecutar el script con las credenciales del usuario en el dispositivo (**Sí**) o en el contexto del sistema (**No**). De forma predeterminada, el script se ejecuta en el contexto del sistema. Seleccione **Sí** a menos que el script se deba ejecutar en el contexto del sistema. 
+1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
+2. Seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
+3. Seleccione **Configuración del dispositivo** > **Scripts de PowerShell** > **Agregar**.
+4. Escriba un valor para **Nombre** y **Descripción** para el script de PowerShell. Para **Ubicación del script**, busque el script de PowerShell. El script debe tener menos de 200 KB (ASCII) o 100 KB (Unicode).
+5. Elija **Configurar**. Después, decida si quiere ejecutar el script con las credenciales del usuario en el dispositivo (**Sí**) o en el contexto del sistema (**No**). De forma predeterminada, el script se ejecuta en el contexto del sistema. Seleccione **Sí** a menos que el script se deba ejecutar en el contexto del sistema. 
   ![Panel Agregar script de PowerShell](./media/mgmt-extension-add-script.png)
-9. Elija si el script debe estar firmado por un editor de confianza (**Sí**). De forma predeterminada, no se exige que el script esté firmado. 
-10. Haga clic en **Aceptar** y después en **Crear** para guardar el script.
+6. Elija si el script debe estar firmado por un editor de confianza (**Sí**). De forma predeterminada, no se exige que el script esté firmado. 
+7. Seleccione **Aceptar** y, luego, **Crear** para guardar el script.
 
 ## <a name="assign-a-powershell-script-policy"></a>Asignar una directiva de script de PowerShell
-1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
-3. En el panel **Intune**, elija **Configuración del dispositivo**.
-4. En el panel **Configuración del dispositivo**, elija **Administrar** > **Scripts de PowerShell**.
-5. En el panel **Scripts de PowerShell**, seleccione el script que se va a asignar y luego elija **Administrar** > **Asignaciones**.
+1. En **Scripts de PowerShell**, seleccione el script que se va a asignar y luego elija **Administrar** > **Asignaciones**.
   ![Panel Agregar script de PowerShell](./media/mgmt-extension-assignments.png)
  
-6. Elija **Seleccionar grupos** para obtener una lista de los grupos de Azure AD disponibles. 
-7. Seleccione uno o más grupos que contienen los usuarios cuyos dispositivos recibirán el script y, a continuación, haga clic en **Seleccionar** para asignar la directiva a los grupos seleccionados.
+2. Elija **Seleccionar grupos** para obtener una lista de los grupos de Azure AD disponibles. 
+3. Seleccione uno o varios grupos que contienen los usuarios cuyos dispositivos reciben el script. Haga clic en **Seleccionar** para asignar la directiva a los grupos seleccionados.
 
 La extensión de administración de Intune se sincroniza con Intune una vez cada hora. Después de asignar la directiva a los grupos de Azure AD, se ejecuta el script de PowerShell y se notifican los resultados de la ejecución. 
  
 ## <a name="monitor-run-status-for-powershell-scripts"></a>Supervisar el estado de ejecución de scripts de PowerShell
 Puede supervisar el estado de ejecución de scripts de PowerShell para usuarios y dispositivos en Azure Portal.
-1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
-3. En el panel **Intune**, elija **Configuración del dispositivo**.
-4. En el panel **Configuración del dispositivo**, elija **Administrar** > **Scripts de PowerShell**.
-5. En el panel **Scripts de PowerShell**, seleccione el script que quiere supervisar y, después, elija **Supervisar** y uno de los informes siguientes:
+
+En **Scripts de PowerShell**, seleccione el script que quiere supervisar y, después, elija **Supervisar** y uno de estos informes:
    - **Estado del dispositivo**
    - **Estado del usuario**
+
+## <a name="delete-a-powershell-script"></a>Eliminar un script de PowerShell
+En **Scripts de PowerShell**, haga clic con el botón derecho en el script y seleccione **Eliminar**.

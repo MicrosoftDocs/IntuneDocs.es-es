@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/5/2018
+ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 792e2ae45e6331b91b1727af113604186c9bb72a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 233b61018ad521f44ffea96f991f24649e174e3e
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744608"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>Crear perfiles de VPN en Intune
 
@@ -41,18 +42,19 @@ Puede crear perfiles de VPN mediante los siguientes tipos de conexión:
 
 |Tipo de conexión|Android<br>Android for Work|iOS|macOS|Windows Phone 8,1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
-|Pulse Secure|Sí|Sí|Sí|Sí|Sí|Sí|
-|Cisco (IPSec)|No|Sí|No|No|No|No|
-|Citrix|Sí|Sí|No|No|No|Sí|
-|F5 Edge Client|Sí|Sí|Sí|Sí|Sí|Sí|
-|SonicWall Mobile Connect|Sí|Sí|Sí|Sí|Sí|Sí|
+|Automático|No|No|No|No|No|Sí|
 |Check Point Capsule VPN|Sí|Sí|Sí|Sí|Sí|Sí|
 |Cisco AnyConnect|Sí|Sí|Sí|No|No|No|
-|Automático|No|No|No|No|No|Sí|
+|SonicWall Mobile Connect|Sí|Sí|Sí|Sí|Sí|Sí|
+|F5 Edge Client|Sí|Sí|Sí|Sí|Sí|Sí|
+|Palo Alto Networks GlobalProtect|No|Sí|No|No|No|Sí|
+|Pulse Secure|Sí|Sí|Sí|Sí|Sí|Sí|
+|Cisco (IPSec)|No|Sí|No|No|No|No|
+|Citrix|Sí (solo Android)|Sí|No|No|No|Sí|
 |IKEv2|No|No|No|No|No|Sí|
 |L2TP|No|No|No|No|No|Sí|
 |PPTP|No|No|No|No|No|Sí|
-|Personalizada|No|Sí|Sí|No|No|No|
+|VPN personalizada|No|Sí|Sí|No|No|No|
 
 > [!IMPORTANT]
 > Para poder usar perfiles de VPN asignados a un dispositivo, debe instalar la aplicación VPN aplicable al perfil. Puede usar la información del artículo [¿Qué es la administración de aplicaciones de Microsoft Intune?](app-management.md) para obtener ayuda sobre cómo asignar la aplicación con Intune.  

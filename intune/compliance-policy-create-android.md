@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 05/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: e1258fe4-0b5c-4485-8bd1-152090df6345
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 559fd83d83c7312e0efe0d2c3f6bb7e5ec596a1b
-ms.sourcegitcommit: 6a9830de768dd97a0e95b366fd5d2f93980cee05
+ms.openlocfilehash: 2277da45ad1404269571f36dec0c16443409b39f
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/10/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744710"
 ---
 # <a name="add-a-device-compliance-policy-for-android-devices-in-intune"></a>Incorporación de una directiva de cumplimiento de dispositivos para dispositivos Android en Intune
 
@@ -122,6 +123,17 @@ En la tabla siguiente se describe cómo administrar la configuración de no conf
 - **Integridad en tiempo de ejecución de la aplicación Portal de empresa**: comprueba si la aplicación Portal de empresa tiene el entorno de tiempo de ejecución predeterminado instalado, está firmada correctamente, no está en modo de depuración y se instala desde un origen conocido.
 - **Bloquear depuración USB en el dispositivo** (Android 4.2 o posterior): elija evitar que los dispositivos usen la característica de depuración USB.
 - **Nivel mínimo de revisión de seguridad** (Android 6.0 o posterior): seleccione el nivel de revisión de seguridad más antiguo que puede tener un dispositivo. No son compatibles los dispositivos que no están al menos en este nivel de revisión. La fecha debe especificarse en el formato `YYYY-MM-DD`.
+
+## <a name="locations"></a>Ubicaciones
+
+En la directiva, realice una elección entre las ubicaciones existentes. ¿Aún no tiene una ubicación? En el apartado [Usar ubicaciones (límite de red) en Intune](use-network-locations.md) se proporcionan algunas instrucciones.
+
+1. Elija **Seleccionar ubicaciones**.
+2. En la lista, compruebe la ubicación y elija **Seleccionar**.
+3. Haga clic en **Guardar** la directiva.
+4. Seleccione **Actions for noncompliance** (Acciones en caso no conformidad). La acción predeterminada marca inmediatamente el dispositivo como no conforme. Esta acción se aplica cuando se selecciona al menos una ubicación y si el dispositivo no está conectado a las ubicaciones seleccionadas.
+
+  Puede cambiar esta acción para actualizar la programación cuando el dispositivo esté marcado como no conforme, por ejemplo, después de un día. También puede configurar una segunda acción que envía un correo electrónico al usuario cuando el dispositivo ya no cumple con los requisitos de ubicación.
 
 ## <a name="assign-user-groups"></a>Asignación de grupos de usuarios
 

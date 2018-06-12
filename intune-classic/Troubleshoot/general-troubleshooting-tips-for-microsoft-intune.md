@@ -15,11 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: tscott
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: d5d55f6c3efabdde51b5627d5ddd409c2b282f6c
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: bbcfa2de4b2d6ef7bff481817a289f56e746ee7f
+ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34718036"
 ---
 # <a name="general-troubleshooting-tips-for-microsoft-intune"></a>General troubleshooting tips for Microsoft Intune (Sugerencias de solución de problemas generales para Microsoft Intune)
 
@@ -28,7 +29,7 @@ ms.lasthandoff: 04/16/2018
 Después de implementar Microsoft Intune puede encontrar problemas con la configuración o con los dispositivos cliente. Use los recursos siguientes para detectar la causa del problema y poder solucionarlo.
 
 > [!NOTE]
-> Para crear una solicitud de soporte técnico o para ver una solicitud existente, [visite el Centro de administración de Office 365](https://portal.office.com/admin/default.aspx). Para obtener más información sobre las opciones de soporte técnico, vea [Cómo obtener asistencia para Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
+> Para crear una solicitud de soporte técnico o para ver una solicitud existente, [visite la página de soporte técnico y ayuda de Azure Help](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview). Para obtener más información sobre las opciones de soporte técnico, vea [Cómo obtener asistencia para Microsoft Intune](how-to-get-support-for-microsoft-intune.md).
 
 ## <a name="define-the-problem"></a>Definir el problema
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/17/2018
+ms.date: 05/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,11 +14,12 @@ ms.assetid: 9deaed87-fb4b-4689-ba88-067bc61686d7
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e1c2eb08db58940ed575b3dea011395edd6711fc
-ms.sourcegitcommit: 401cedcd7acc6cb3a6f18d4679bdadb0e0cdf443
+ms.openlocfilehash: bffb6832200379fca0221d8718afdebe06163980
+ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34744795"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>Supervisar perfiles de dispositivo en Microsoft Intune
 
@@ -41,19 +42,27 @@ Después de crear el perfil de dispositivo, Intune proporciona gráficos. Estos 
 1. Seleccione un perfil existente. Por ejemplo, seleccione un perfil de macOS.
 2. Seleccione la pestaña **Información general**.
 
-    El gráfico muestra el número de dispositivos asignados al perfil de dispositivo específico. Por ejemplo, si el perfil de dispositivo de configuración se aplica a dispositivos macOS, el gráfico muestra el número de dispositivos macOS.
+    El gráfico superior muestra el número de dispositivos asignados al perfil de dispositivo específico. Por ejemplo, si el perfil de dispositivo de configuración se aplica a dispositivos macOS, el gráfico muestra el número de dispositivos macOS.
 
     También muestra el número de dispositivos de otras plataformas que se asignan al mismo perfil de dispositivo. Por ejemplo, muestra el número de dispositivos no macOS.
 
     ![Ver el número de dispositivos asignados al perfil de dispositivo](./media/device-configuration-profile-graphical-chart.png)
 
-3. Seleccione el círculo en el gráfico. Se abre la opción **Estado del dispositivo**.
+    El gráfico inferior muestra el número de usuarios asignados al perfil de dispositivo específico. Por ejemplo, si el perfil de dispositivo de configuración se aplica a usuarios de macOS, el gráfico muestra el número de usuarios de macOS.
+
+3. Seleccione el círculo en el gráfico superior. Se abre la opción **Estado del dispositivo**.
 
     Se muestran los dispositivos asignados al perfil y si el perfil se implementó correctamente. Tenga en cuenta también que solo se muestran los dispositivos con la plataforma concreta (por ejemplo, macOS).
 
-    Cierre los detalles de estado del dispositivo.
+    Cierre los detalles de **Estado del dispositivo**.
 
-4. En las propiedades del perfil (**Perfiles** > seleccione un perfil específico), también puede cambiar las propiedades existentes:
+4. Seleccione el círculo en el gráfico inferior. Se abre **Estado del usuario**. 
+
+    Se muestran los usuarios asignados al perfil y si el perfil se implementó correctamente. Tenga en cuenta también que solo se muestran los usuarios con la plataforma concreta (por ejemplo, macOS).
+
+    Cierre los detalles de **Estado del usuario**.
+
+5. De nuevo en la lista **Perfiles**, seleccione un perfil específico. También puede cambiar las propiedades existentes:
   - **Propiedades**: cambie el nombre o actualice cualquier configuración existente.
   - **Asignaciones**: incluya o excluya los dispositivos a los que se debe aplicar la directiva. Elija **Grupos seleccionados** para elegir grupos específicos.
   - **Estado del dispositivo**: se muestran los dispositivos asignados al perfil y si el perfil se implementó correctamente. Puede seleccionar un dispositivo específico para obtener incluso más detalles, incluidas las aplicaciones instaladas.
