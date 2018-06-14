@@ -137,6 +137,7 @@
 ### [Sincronizar el dispositivo manualmente](sync-your-device-manually-windows.md)
 
 ### [Solución de problemas comunes con Windows](troubleshoot-your-device-windows.md)
+### [Resolver restricciones de punto de acceso](resolve-access-point-restrictions.md)
 #### [El dispositivo Windows 10 no se inscribe](troubleshoot-your-windows-10-device-windows.md)
 #### [Actualización de dispositivos Windows](you-need-to-update-your-windows-device.md)
 #### [Envío de registros con la aplicación Portal de empresa como origen y destino](send-logs-to-your-it-admin-cp-windows.md)
@@ -158,4 +159,3 @@
 ### [Quitar el dispositivo](remove-your-device-cpwebsite.md)
 ### [Restablecer el código de acceso del dispositivo](reset-your-passcode-cpwebsite.md)
 ### [Restablecimiento y borrado del dispositivo](reset-erase-your-device-cpwebsite.md)
-### [Sincronizar el dispositivo manualmente](sync-your-device-manually-cpwebsite.md)

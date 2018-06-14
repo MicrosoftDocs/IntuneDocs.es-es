@@ -270,6 +270,8 @@
           items:
             - name: Incluir y excluir aplicaciones
               href: apps-inc-exl-assignments.md
+            - name: Implementar aplicaciones de Windows 10
+              href: apps-windows-10-app-deploy.md
         - name: Supervisión de aplicaciones
           href: apps-monitor.md
         - name: Configurar aplicaciones
@@ -644,6 +646,8 @@
       items:
         - name: Ayuda para los usuarios para solucionar problemas
           href: help-desk-operators.md
+        - name: Solucionar problemas de acceso a recursos de empresa
+          href: troubleshoot-company-resource-access-problems.md
         - name: Registros de auditoría para actividades de Intune
           href: monitor-audit-logs.md
         - name: Revisión de los registros de protección de aplicaciones
@@ -693,7 +697,9 @@
           href: app-wrapper-prepare-android.md
         - name: SDK de aplicaciones de Intune para Android
           href: app-sdk-android.md
-        - name: Componente Xamarin de Intune App SDK
+        - name: Complemento de Intune App SDK Cordova
+          href: app-sdk-cordova.md
+        - name: Xamarin Bindings del SDK para aplicaciones de Intune
           href: app-sdk-xamarin.md
     - name: Usar el Almacenamiento de datos de Intune
       href: reports-nav-create-intune-reports.md
