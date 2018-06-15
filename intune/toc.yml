@@ -189,6 +189,10 @@
               href: apple-configurator-enroll-ios.md
         - name: Configuración de la inscripción de macOS
           href: macos-enroll.md
+        - name: Instalar el cliente de software de Intune en equipos con Windows
+          href: install-the-windows-pc-client-with-microsoft-intune.md
+        - name: Solucionar problemas de inscripción de dispositivos
+          href: troubleshoot-device-enrollment-in-intune.md
     - name: Administrar los dispositivos
       href: device-management.md
       items:
@@ -259,6 +263,8 @@
                   href: lob-apps-windows-phone.md
                 - name: Aplicaciones de LOB de Windows
                   href: lob-apps-windows.md
+                - name: Transferencia local de aplicaciones de LOB de Windows
+                  href: app-sideload-windows.md
                 - name: Aplicaciones de LOB para macOS
                   href: lob-apps-macos.md
             - name: Aplicaciones web
@@ -678,8 +684,6 @@
               href: custom-settings-windows-holographic.md
             - name: Android for Work
               href: custom-settings-android-for-work.md
-        - name: Transferencia local de aplicaciones de línea de negocio de Windows
-          href: app-sideload-windows.md
 - name: Instrucciones para desarrolladores
   items:
     - name: Protección de aplicaciones con Intune App SDK
