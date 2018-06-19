@@ -20,6 +20,7 @@ ms.sourcegitcommit: 49dc405bb26270392ac010d4729ec88dfe1b68e4
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/21/2018
+ms.locfileid: "34224235"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Punto de conexión de la API de Almacenamiento de datos de Intune
 

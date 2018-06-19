@@ -19,6 +19,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31834445"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Novedades del portal clásico de Intune: meses anteriores
 

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31015615"
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>Enviar registros al equipo de soporte técnico de su empresa mediante un cable USB
 

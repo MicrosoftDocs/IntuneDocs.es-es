@@ -22,6 +22,7 @@ ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/09/2018
+ms.locfileid: "33915835"
 ---
 # <a name="rename-device-from-the-company-portal-app-for-windows"></a>Cambio de nombre del dispositivo desde la aplicación Portal de empresa para Windows
 Cambie el nombre de un dispositivo para que sea más fácil de reconocer entre otros dispositivos. La aplicación Portal de empresa para Windows permite cambiar el nombre de dispositivos Windows, iOS y Android conectados. 

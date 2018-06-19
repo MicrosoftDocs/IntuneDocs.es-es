@@ -22,6 +22,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30755239"
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Usar dispositivos administrados para realizar el trabajo
 Microsoft Intune es una aplicación de software que permite a las organizaciones administrar dispositivos (como smartphones, tabletas y equipos), aplicaciones y otros recursos corporativos como el correo electrónico. Así, los empleados tienen acceso a su información de trabajo desde prácticamente cualquier parte en casi cualquier dispositivo, y además mantienen la información corporativa segura.

@@ -22,6 +22,7 @@ ms.sourcegitcommit: d40bfb6af66f2ce7026c0151ace98ec23f1cf76e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 05/10/2018
+ms.locfileid: "33927328"
 ---
 # <a name="install-apps-on-your-device"></a>Instalación de aplicaciones en el dispositivo
 Instale aplicaciones en el dispositivo desde la aplicación Portal de empresa para Windows.

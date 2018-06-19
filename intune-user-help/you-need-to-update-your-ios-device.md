@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31030516"
 ---
 # <a name="your-ios-device-doesnt-have-the-required-minimum-operating-system-version"></a>El dispositivo iOS no tiene la versión necesaria mínima del sistema operativo
 

@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31014901"
 ---
 # <a name="how-do-i-find-the-serial-number-on-my-device"></a>¿Cómo se puede encontrar el número de serie de un dispositivo?
 
