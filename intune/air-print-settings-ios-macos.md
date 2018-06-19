@@ -20,6 +20,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31831051"
 ---
 # <a name="airprint-settings-for-ios-and-macos-devices"></a>Configuración de AirPrint para dispositivos iOS y macOS
 

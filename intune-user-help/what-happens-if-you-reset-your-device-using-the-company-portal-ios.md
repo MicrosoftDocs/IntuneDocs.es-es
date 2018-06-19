@@ -22,6 +22,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31015377"
 ---
 # <a name="what-happens-if-you-reset-your-ios-device-using-the-company-portal"></a>¿Qué ocurre si restablece el dispositivo iOS mediante el Portal de empresa?
 

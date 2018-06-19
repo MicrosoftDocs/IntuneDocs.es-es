@@ -19,6 +19,7 @@ ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/18/2018
+ms.locfileid: "31442651"
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Agregación de una directiva de cumplimiento para dispositivos iOS en Intune
 

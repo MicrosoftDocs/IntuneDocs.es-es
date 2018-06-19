@@ -11,6 +11,8 @@
       items:
         - name: Cambios en grupos
           href: groups-get-started.md
+        - name: Cliente heredado de PC de Intune
+          href: intune-legacy-pc-client.md
     - name: Suscríbase para disfrutar de una prueba gratuita
       href: free-trial-sign-up.md
     - name: Novedades
@@ -70,6 +72,8 @@
       href: common-scenarios.md
     - name: PREGUNTAS MÁS FRECUENTES DE MAM
       href: mam-faq.md
+    - name: Preguntas más frecuentes de directiva y perfil
+      href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
 - name: Planeamiento de la implementación
   items:
     - name: Planning guide (Guía de planificación)
@@ -176,6 +180,8 @@
           items:
             - name: Configuración de la inscripción de Android
               href: android-enroll.md
+            - name: Administración de dispositivos Android for Work
+              href: android-enterprise-overview.md
             - name: Samsung Knox Mobile Enrollment
               href: android-samsung-knox-mobile-enroll.md
         - name: Configuración de la inscripción en iOS
@@ -196,6 +202,8 @@
     - name: Administrar los dispositivos
       href: device-management.md
       items:
+        - name: Capacidades de administración de dispositivos
+          href: device-management-capabilities.md
         - name: Omitir el bloqueo de activación
           href: device-activation-lock-bypass.md
         - name: Administración del inicio desde cero de Windows
@@ -658,6 +666,14 @@
           href: monitor-audit-logs.md
         - name: Revisión de los registros de protección de aplicaciones
           href: app-protection-policy-settings-log.md
+        - name: Solucionar problemas de perfiles de correo electrónico
+          href: troubleshoot-email-profiles-in-microsoft-intune.md
+        - name: Solucionar problemas de actualizaciones de software
+          href: troubleshoot-software-updates-in-microsoft-intune.md
+        - name: Solucionar problemas de Endpoint Protection
+          href: troubleshoot-endpoint-protection-in-microsoft-intune.md
+        - name: Solucionar problemas de directivas
+          href: troubleshoot-policies-in-microsoft-intune.md
     - name: Automatización y personalización
       items:
         - name: Configuración de los valores personalizados del dispositivo

@@ -21,6 +21,7 @@ ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/04/2018
+ms.locfileid: "30751686"
 ---
 # <a name="fix-common-issues-with-your-windows-device"></a>Solucionar problemas habituales en el dispositivo Windows
 

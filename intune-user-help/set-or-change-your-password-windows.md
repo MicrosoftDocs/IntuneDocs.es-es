@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31018777"
 ---
 # <a name="make-your-device-safer-with-the-right-password"></a>Hacer que el dispositivo esté más seguro con la contraseña correcta
 

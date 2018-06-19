@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31016448"
 ---
 # <a name="how-to-update-the-company-portal-app"></a>Cómo actualizar la aplicación de portal de empresa
 

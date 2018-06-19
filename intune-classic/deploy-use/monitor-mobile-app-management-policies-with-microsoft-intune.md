@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31021531"
 ---
 # <a name="monitor-app-protection-policies-with-microsoft-intune"></a>Supervisión de directivas de protección de aplicaciones con Microsoft Intune
 Puede supervisar el estado de cumplimiento de las directivas de protección de aplicaciones que haya aplicado a los usuarios. Podrá encontrar información sobre los usuarios afectados por las directivas de protección de aplicaciones, el estado de cumplimiento y cualquier problema que puedan estar experimentando sus usuarios.

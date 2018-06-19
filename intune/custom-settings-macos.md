@@ -18,6 +18,7 @@ ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/26/2018
+ms.locfileid: "31832426"
 ---
 # <a name="microsoft-intune-custom-device-settings-for-devices-running-macos"></a>Configuración de dispositivo personalizada de Microsoft Intune para dispositivos que ejecutan macOS
 

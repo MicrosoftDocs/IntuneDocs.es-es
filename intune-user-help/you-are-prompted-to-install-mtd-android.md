@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31017893"
 ---
 # <a name="install-mobile-threat-defense-on-your-android-device"></a>Instalación de Mobile Threat Defense en su dispositivo Android
 

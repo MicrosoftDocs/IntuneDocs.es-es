@@ -20,6 +20,7 @@ ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 04/16/2018
+ms.locfileid: "31020527"
 ---
 # <a name="prevent-unauthorized-access-to-company-data-using-microsoft-intune"></a>Evitar el acceso no autorizado a los datos de la empresa con Microsoft Intune
 
