@@ -141,7 +141,7 @@ Habilite la autenticación de Azure Active Directory para los usuarios de iOS ha
 
     -   Para agregar la directiva de configuración de aplicaciones de SEP Mobile, consulte las instrucciones para [usar directivas de configuración de aplicaciones de Microsoft Intune para iOS](app-configuration-policies-use-ios.md).
 
-    - En el **paso 8**, use la opción **Especificar datos XML**, copie el contenido del archivo **.plist** y péguelo en el cuerpo de la directiva de configuración.
+    - En el **paso 8**, use la opción **Especificar datos XML**, copie el contenido del archivo ***.plist** y péguelo en el cuerpo de la directiva de configuración.
 
 > [!NOTE]
 > Si no puede recuperar los archivos, póngase en contacto con el [soporte técnico de Symantec Endpoint Protection Mobile Enterprise](https://support.symantec.com/en_US/contact-support.html).
