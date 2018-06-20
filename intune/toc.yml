@@ -674,6 +674,10 @@
           href: troubleshoot-endpoint-protection-in-microsoft-intune.md
         - name: Solucionar problemas de directivas
           href: troubleshoot-policies-in-microsoft-intune.md
+        - name: Solucionar problemas de acceso condicional
+          href: troubleshoot-conditional-access.md
+        - name: Solucionar problemas de Exchange Connector
+          href: troubleshoot-exchange-connector.md
     - name: Automatización y personalización
       items:
         - name: Configuración de los valores personalizados del dispositivo
