@@ -1,1 +1,1 @@
-Servicio de atención a clientes con problemas auditivos
+Servicio al cliente para personas con dificultades auditivas

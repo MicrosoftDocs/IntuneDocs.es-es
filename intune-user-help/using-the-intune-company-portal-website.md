@@ -17,11 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: eca19c189a48e8173232cfe6fde9e33eb6fb1090
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 83dd6265d4d34ea46a7299e3a6bdf8a06baa30c1
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34762236"
 ---
 # <a name="using-the-intune-company-portal-website"></a>Usar el sitio web del Portal de empresa de Intune
 El [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog) es una página web que pueden usar los usuarios finales para administrar equipos y dispositivos que hayan inscrito en Intune.
@@ -37,8 +38,6 @@ Pueden llevar a cabo las siguientes tareas desde el sitio web del Portal de empr
 -   [Restablecer el código de acceso del dispositivo](reset-your-passcode-cpwebsite.md)
 
 -   [Bloquear un dispositivo de forma remota](remote-lock-your-device-cpwebsite.md)
-
--   [Sincronizar el dispositivo manualmente para que las aplicaciones se instalen más rápido](sync-your-device-manually-cpwebsite.md)
 
 -   Buscar información de contacto del equipo de soporte técnico de su empresa, si está configurado
 
