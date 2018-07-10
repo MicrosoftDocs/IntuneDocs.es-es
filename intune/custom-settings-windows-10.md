@@ -1,62 +1,62 @@
 ---
-title: Configuración personalizada de Microsoft Intune para dispositivos que ejecutan Windows 10
-titlesuffix: ''
-description: Obtenga información sobre los valores personalizados que puede configurar en un perfil personalizado de Windows 10.
+title: Configuración personalizada para dispositivos Windows 10 en Microsoft Intune - Azure | Microsoft Docs
+description: Configure las opciones personalizadas de OMA-URI en dispositivos que ejecutan Windows 10 mediante un perfil personalizado en Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 6/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36705c49a55c88c41470feaad14520e900dcb3dd
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: bdbb6643a4ee8aace0db22cd7f9189f7ac6445f0
+ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31837020"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36232833"
 ---
-# <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-10"></a>Configuración de dispositivo personalizada de Microsoft Intune para dispositivos que ejecutan Windows 10
+# <a name="custom-oma-uri-settings-for-windows-10-devices---intune"></a>Configuración personalizada de OMA-URI para dispositivos de Windows 10 - Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
- Use el perfil **personalizado** de Microsoft Intune para Windows 10 y Windows 10 Mobile para implementar la configuración de OMA-URI (identificador uniforme de recursos de Open Mobile Alliance), que se puede usar para controlar las características en los dispositivos. Windows 10 tiene disponibles muchos valores de proveedores de servicios de configuración (CSP), por ejemplo, el [proveedor de servicios de configuración de directivas (CSP de directivas)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
-Si busca una configuración determinada, recuerde que el [perfil de restricción de dispositivos de Windows 10](device-restrictions-windows-10.md) incluye muchas configuraciones que están integradas en Intune y no requiere que especifique valores personalizados.
+Use el perfil **personalizado** de Microsoft Intune para Windows 10 y Windows 10 Mobile para implementar la configuración de OMA-URI (identificador uniforme de recursos de Open Mobile Alliance). Estos valores se usan para controlar las características en los dispositivos. Windows 10 tiene disponibles muchos valores de proveedores de servicios de configuración (CSP), como el [proveedor de servicios de configuración de directivas (CSP de directivas)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
+
+Si busca una configuración determinada, recuerde que el [perfil de restricción de dispositivos de Windows 10](device-restrictions-windows-10.md) incluye muchas configuraciones que están integradas en Intune y no requiere valores personalizados.
 
 ## <a name="configure-custom-settings"></a>Configuración de opciones personalizadas
 
-1. Siga las instrucciones que se indican en [Configuración personalizada de dispositivos de Intune](custom-settings-configure.md) para comenzar.
-1. En el panel **Configuración OMA-URI personalizada**, haga clic en **Agregar** para agregar un nuevo valor. También puede hacer clic en **Exportar** para crear una lista de todos los valores configurados en un archivo de valores separados por comas (.csv).
-1. Para cada configuración de OMA-URI que quiera agregar, escriba la siguiente información. Use la lista de este artículo para obtener información sobre las opciones de configuración que puede usar:
-    - **Nombre**: escriba un nombre único para el valor OMA-URI que le ayude a identificarlo en la lista de valores de configuración.
-    - **Descripción**: si lo desea, escriba una descripción para la configuración.
-    - **OMA-URI (distingue mayúsculas de minúsculas)**: especifique el OMA-URI para el que quiere proporcionar un valor de configuración.
-    - **Tipo de datos**: elija una de estas opciones:
-        - **Cadena**
-        - **Cadena (XML)**
-        - **Fecha y hora**
-        - **Entero**
-        - **Punto flotante**
-        - **Booleano**
-        - **Base64**
-    - **Valor**: especifique el valor o el archivo que quiera asociar al OMA-URI especificado.
-1. Cuando haya terminado, seleccione **Aceptar**, vuelva al panel **Crear perfil** y seleccione **Crear**.
-Se creará el perfil y aparecerá en el panel con la lista de perfiles.
+1. Cree un nuevo perfil de configuración mediante el tipo de perfil **Personalizado**. En [Configuración personalizada del dispositivo](custom-settings-configure.md) se indican los pasos.
+2. En **Configuración OMA-URI personalizada**, seleccione **Agregar** para crear una nueva configuración. También puede hacer clic en **Exportar** para crear una lista de todos los valores configurados en un archivo de valores separados por comas (.csv).
+3. Para cada configuración de OMA-URI que quiera agregar, escriba la siguiente información:
+
+- **Nombre**: escriba un nombre único para el valor OMA-URI que le ayude a identificarlo en la lista de valores de configuración.
+- **Descripción**: si quiere, escriba una descripción para la configuración.
+- **OMA-URI (distingue mayúsculas de minúsculas)**: escriba el OMA-URI para el que quiere proporcionar un valor de configuración.
+- **Tipo de datos**: elija una de estas opciones:
+  - **Cadena**
+  - **Cadena (XML)**
+  - **Fecha y hora**
+  - **Entero**
+  - **Punto flotante**
+  - **Booleano**
+  - **Base64**
+- **Valor**: escriba el valor o el archivo que quiere asociar con la configuración OMA-URI especificada.
+
+4. Cuando termine, seleccione **Aceptar**. En **Crear perfil**, seleccione **Crear**. El perfil se crea y se muestra en la lista de perfiles.
 
 ## <a name="example"></a>Ejemplo
-En la siguiente captura de pantalla, se ha habilitado el valor **Connectivity/AllowVPNOverCellular**. De esta forma, un dispositivo Windows 10 puede abrir una conexión VPN cuando se encuentra en una red de telefonía móvil.
+En el ejemplo siguiente, la configuración **Connectivity/AllowVPNOverCellular** está habilitada. Este valor permite que un dispositivo Windows 10 abra una conexión VPN cuando se encuentre en una red de telefonía móvil.
 
-> ![Ejemplo de una directiva personalizada que contiene opciones de VPN](./media/custom-policy-example.png)
+![Ejemplo de una directiva personalizada que contiene opciones de VPN](./media/custom-policy-example.png)
 
+## <a name="find-the-policies-you-can-configure"></a>Buscar las directivas que se pueden configurar
 
-## <a name="how-to-find-the-policies-you-can-configure"></a>Búsqueda de las directivas que puede configurar
+Encontrará una lista completa de todos los proveedores de servicio de configuración (CSP) que Windows 10 admite en la [referencia del proveedor de servicios de configuración](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference).
 
-Encontrará una lista completa de todos los proveedores de servicio de configuración (CSP) que Windows 10 admite en la [referencia del proveedor de servicios de configuración](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference) en la biblioteca de documentación de Windows.
+No todas las configuraciones son compatibles con todas las versiones de Windows 10. En la [referencia del proveedor de servicios de configuración](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference) se indica qué versiones son compatibles con cada CSP.
 
-No todas las configuraciones son compatibles con todas las versiones de Windows 10. La tabla del artículo sobre Windows indica las versiones compatibles con cada CSP.
-
-Además, Intune no admite todas las configuraciones que aparecen en el artículo. Para saber si Intune admite la configuración que quiere, abra el artículo correspondiente a dicha configuración. La página de cada configuración muestra una operación compatible. Para trabajar con Intune, la configuración debe ser compatible con las operaciones **Add** o **Replace**.
+Además, Intune no admite todas las configuraciones mostradas. Para saber si Intune admite la configuración que quiere, abra el artículo correspondiente a dicha configuración. La página de cada configuración muestra una operación compatible. Para trabajar con Intune, la configuración debe ser compatible con las operaciones **Add** o **Replace**.

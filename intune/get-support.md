@@ -15,11 +15,12 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 5a823cfb602b4847e702d54e0d8775700b01c8e9
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 08d5e94155586140ac087b9ad9d24bdbd078f59b
+ms.sourcegitcommit: 445fcf9e2a185e5c987334cad398bce71383be03
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843147"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Cómo obtener asistencia para Microsoft Intune
 
@@ -33,7 +34,8 @@ Microsoft proporciona servicios globales de soporte técnico, preventa, facturac
 ## <a name="create-an-online-support-ticket"></a>Creación de un vale de soporte en línea
 
 Como administrador de TI, puede presentar un vale de soporte desde Azure Portal mediante los pasos siguientes:
-
+>[!NOTE]
+>Debe ser un administrador de servicios de Intune o un administrador global para crear una incidencia de soporte técnico en línea. Para obtener información detallada, vea [Asignar roles de administrador](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal).
 1. Inicie sesión en Azure Portal (<https://portal.azure.com>) con sus credenciales de administrador de Intune, elija el icono <strong>?</strong> situado en la esquina superior derecha del portal y, después, seleccione <strong>Ayuda y soporte técnico</strong> para ir a la página [Ayuda y soporte técnico de Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
 
     ![Captura de pantalla del vínculo del signo de interrogación de Ayuda y soporte técnico de Azure Portal con el vínculo de Ayuda y soporte técnico resaltado](./media/azure-get-support.png)

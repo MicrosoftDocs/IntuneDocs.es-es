@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ayesham
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b6ab5e4de2d3a888d6b3372b75b9a95af54a591a
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 988407d6d736b669854ef8420b71a092765162b7
+ms.sourcegitcommit: 445fcf9e2a185e5c987334cad398bce71383be03
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745169"
+ms.lasthandoff: 06/07/2018
+ms.locfileid: "34843130"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Usar ubicaciones (límite de red) en Intune
 
@@ -35,7 +35,7 @@ En su centro de fabricación, algunos empleados usan dispositivos Android. Un em
 2. Crear una directiva de cumplimiento que requiera estos dispositivos se conecten a la red corporativa y asígneles esta directiva.
 3. Si el dispositivo sale fuera de la nave de la fábrica, se considera que el dispositivo no es conforme y no tiene acceso a los recursos corporativos.
 
-Con las directivas de Intune, puede enviar una notificación de no conformidad y, además, bloquear el dispositivo. Cuando el dispositivo vuelva a entrar en las instalaciones y en la ubicación de red, podrá desbloquearse y volver a acceder a los recursos corporativos.
+Además, puede agregar [acciones de no cumplimiento](#configure-the-actions-for-noncompliance). Cuando el dispositivo vuelva a entrar en las instalaciones y en la ubicación de red, podrá volver a acceder a los recursos corporativos.
 
 ## <a name="prerequisites"></a>Requisitos previos
 

@@ -15,11 +15,12 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 122f0b70392df65076622354722b6d546f4fe7b7
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 3afe1ed48a21c26927b3686ae9a455ed8484e282
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34547410"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Administrar aplicaciones de iOS compradas a través de un programa de compras por volumen con Microsoft Intune
 
@@ -162,7 +163,7 @@ La licencia debe actualizarse en unas horas tras la instalación o desinstalaci�
 Sí. El administrador de Intune puede saturar una aplicación. Por ejemplo, si el administrador adquiere 100 licencias de la aplicación XYZ y luego la destina a un grupo con 500 miembros. A los 100 primeros miembros (usuarios o dispositivos) se les asigna la licencia, mientras que el resto de los miembros ven un error al asignarse la licencia.
 
 #### <a name="i-understand-intune-automatically-syncs-app-licenses-each-day-with-apple-is-that-correct"></a>Entiendo que Intune sincroniza automáticamente las licencias de aplicación cada día con Apple, ¿es correcto?
-Intune sincroniza las licencias de aplicación cada 15 horas con Apple.
+Intune sincroniza las licencias de aplicación dos veces al día con Apple.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

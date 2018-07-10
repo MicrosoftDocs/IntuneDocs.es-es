@@ -5,19 +5,19 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 5/20/2018
+ms.date: 6/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: fd63fb2023b4712a3ad49838f87f5b7cc8320954
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 216c83d4158fe65b7aeb52f5477362eb57ec4242
+ms.sourcegitcommit: a52e81ab4fe24ae6410d1a1e63b4b073abc416a4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744897"
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34822728"
 ---
 # <a name="manage-software-updates-in-intune"></a>Administrar las actualizaciones de software en Intune
 
@@ -169,10 +169,13 @@ Puede pausar un dispositivo para que deje de recibir actualizaciones de caracter
 > Además, si un dispositivo de destino está apagado cuando se emite el comando de pausa, al encenderse, podría descargar e instalar actualizaciones programadas antes de que se registre con Intune.
 
 ### <a name="uninstall-the-latest-from-windows-10-software-updates"></a>Desinstalar las últimas actualizaciones de software de Windows 10 
-En caso de que detecte un problema importante en las máquinas con Windows 10, puede optar por desinstalar (revertir) la última actualización de características o la última actualización de calidad. La desinstalación de una actualización de característica o de calidad solo está disponible para el canal de servicio en el que se encuentra el dispositivo. La desinstalación desencadenará una directiva para restaurar la actualización anterior en las máquinas con Windows 10. Para las actualizaciones de características concretamente, puede limitar el tiempo de 2 a 60 días durante el cual se puede aplicar una desinstalación de la versión más reciente. Para configurar las opciones de desinstalación de actualización de software, seleccione **Actualizaciones de software** en la hoja **Microsoft Intune** en el portal de Azure. Después, seleccione **Anillos de actualización de Windows 10** en la hoja **Actualizaciones de software**. Elija después la opción **Desinstalar** en la sección **Información general**.
+En caso de que detecte un problema importante en las máquinas con Windows 10, puede optar por desinstalar (revertir) la última actualización de características o la última actualización de calidad. La desinstalación de una actualización de característica o de calidad solo está disponible para el canal de servicio en el que se encuentra el dispositivo. La desinstalación desencadena una directiva para restaurar la actualización anterior en las máquinas con Windows 10. Para las actualizaciones de características concretamente, puede limitar el tiempo de 2 a 60 días durante el cual se puede aplicar una desinstalación de la versión más reciente. Para establecer las opciones de desinstalación de actualización de software:
+
+1. En Intune, seleccione **Actualizaciones de software**.
+2. Seleccione **Anillos de actualización de Windows 10** > seleccione un anillo de actualización existente > **Desinstalar**.
 
 > [!NOTE]
-> En máquinas con Windows 10, después de revertir correctamente la actualización de calidad, los usuarios finales podrán seguir viendo la actualización revertida correctamente si seleccionan **Configuración de Windows** > **Actualizaciones** > **Actualizar historial**.
+> En equipos con Windows 10, después de que se haya revertido correctamente la actualización de calidad, los usuarios finales seguirán viendo la actualización en **Configuración de Windows** > **Actualizaciones** >  **Historial de actualizaciones**.
 
 ## <a name="windows-holographic-for-business-support"></a>Compatibilidad con Windows Holographic for Business
 

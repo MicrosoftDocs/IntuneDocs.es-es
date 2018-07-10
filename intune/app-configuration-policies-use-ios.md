@@ -3,10 +3,10 @@ title: Agregar directivas de configuración de aplicaciones para dispositivos iO
 titlesuffix: Microsoft Intune
 description: Obtenga más información sobre cómo usar directivas de configuración de aplicaciones para proporcionar datos de configuración a una aplicación de iOS cuando esta se ejecuta.
 keywords: ''
-author: erikre
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 06/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,24 +15,25 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0b71b52ffa58f847fc0efcd2924fd04a7a16a099
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: e3e81b52f10bb94d90d5f66ca5aee13daaf4941e
+ms.sourcegitcommit: cefa84efd3003fa5a0ef0c2dce6206a6a411a1ec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
+ms.lasthandoff: 06/08/2018
+ms.locfileid: "35232240"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Agregar directivas de configuración de aplicaciones para dispositivos iOS administrados
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Use las directivas de configuración de aplicaciones de Microsoft Intune para proporcionar valores de configuración que se emplearán cuando los usuarios ejecuten una aplicación para iOS. No asigne estas directivas directamente a usuarios y dispositivos. Asocie la directiva con una aplicación y, a continuación, asigne la aplicación. La configuración de directivas se usa cada vez que la aplicación la comprueba, que suele ser la primera vez que se ejecuta.
+Use las directivas de configuración de aplicaciones de Microsoft Intune para proporcionar valores de configuración personalizados para una aplicación para iOS. Estos valores de configuración permiten que una aplicación se personalice según la dirección de los proveedores. Debe obtener estos valores de configuración (claves y valores) del proveedor de la aplicación. Para configurar la aplicación, especifique la configuración, como claves y valores, o como XML que contiene las claves y valores. Además, no asigne estas directivas de configuración directamente a usuarios y dispositivos. En su lugar, asocie la directiva de configuración a una aplicación y, después, asigne la aplicación. La configuración de directivas de configuración se usa cada vez que la aplicación comprueba dichas directivas, que suele ser la primera vez que se ejecuta.
 
-Puede asignar una directiva de configuración de aplicación a un grupo de usuarios y dispositivos mediante una combinación de asignaciones de inclusión y exclusión. Tras agregar una directiva de configuración de aplicación, podrá establecer las asignaciones de la directiva de configuración de aplicación. Al establecer las asignaciones de la directiva, puede elegir si quiere incluir o excluir los grupos de usuarios a los que se aplica la directiva. Si decide incluir uno o varios grupos, puede optar por seleccionar grupos específicos para incluir o seleccionar los grupos integrados. Los grupos integrados incluyen **Todos los usuarios**, **Todos los dispositivos** y **Todos los usuarios + todos los dispositivos**. 
+Tras agregar una directiva de configuración de aplicación, podrá establecer las asignaciones de la directiva de configuración de aplicación. Al establecer las asignaciones de la directiva, puede elegir si quiere incluir o excluir los grupos de usuarios a los que se aplica la directiva. Si decide incluir uno o varios grupos, puede optar por seleccionar grupos específicos para incluir o seleccionar los grupos integrados. Los grupos integrados incluyen **Todos los usuarios**, **Todos los dispositivos** y **Todos los usuarios + todos los dispositivos**. 
 
 >[!NOTE]
 >Intune ofrece los grupos creados previamente **Todos los usuarios** y **Todos los dispositivos** en la consola con las optimizaciones integradas para su comodidad. Es muy recomendable utilizar estos grupos para segmentar todos los usuarios y todos los dispositivos en lugar de usar cualquier grupo "Todos los usuarios" o "Todos los dispositivos" que haya podido crear.
 
-Una vez haya seleccionado los grupos incluidos para la directiva de configuración de la aplicación, también puede elegir los grupos específicos que quiera excluir.
+Una vez haya seleccionado los grupos incluidos para la directiva de configuración de la aplicación, también puede elegir los grupos específicos que quiera excluir. Para obtener más información, vea [Inclusión y exclusión de asignaciones de aplicaciones en Microsoft Intune](apps-inc-exl-assignments.md).
 
 > [!TIP]
 > Este tipo de directiva está disponible solo para dispositivos con iOS 8.0 y versiones posteriores. Admite los siguientes tipos de instalación de la aplicación:
@@ -49,18 +50,16 @@ Una vez haya seleccionado los grupos incluidos para la directiva de configuraci�
 3. Elija la carga de trabajo **Aplicaciones móviles**.
 4. En el grupo **Administrar**, elija **Directivas de configuración de aplicaciones** y **Agregar**.
 5. Especifique los siguientes detalles:
-    - **Nombre**<br>
-      Nombre del perfil que aparece en Azure Portal.
-    - **Descripción**<br>
-      Descripción del perfil que aparece en Azure Portal.
-    - **Tipo de inscripción del dispositivo**<br>
-      Elija **Dispositivos administrados**.
+    - **Nombre**: nombre del perfil que aparece en Azure Portal.
+    - **Descripción**: descripción del perfil que aparece en Azure Portal.
+    - **Tipo de inscripción del dispositivo**: elija **Dispositivos administrados**.
 6. En **Plataforma**, seleccione **iOS**.
 7.  Elija **Aplicación asociada**. Luego, en el panel **Aplicación asociada**, elija la aplicación administrada a la que quiera aplicar la configuración y seleccione **Aceptar**.
 8.  En el panel **Agregar directiva de configuración**, elija **Opciones de configuración**.
-9. Seleccione **Formato de opciones de configuración**. Seleccione una de las acciones siguientes:
-    - **[Usar diseñador de configuraciones](#use-configuration-designer)**
-    - **[Especificar datos XML](#enter-xml-data)**
+9. Seleccione **Formato de opciones de configuración**. Seleccione una de las siguientes opciones para agregar información de XML:
+    - **Uso del Diseñador de configuración**
+    - **Especificar datos XML**<br></br>
+    Para obtener más detalles sobre cómo usar el diseñador de configuraciones, vea [Uso del Diseñador de configuración](#use-configuration-designer). Para obtener más detalles sobre cómo escribir datos XML, vea [Especificar datos XML](#enter-xml-data). 
 10. Cuando haya agregado la información XML, elija **Aceptar**y elija **Agregar** para agregar la directiva de configuración. Se muestra el panel de introducción de la directiva de configuración.
 11. Seleccione **Asignaciones** para mostrar las opciones de inclusión y exclusión. 
 
@@ -80,17 +79,14 @@ Una vez haya seleccionado los grupos incluidos para la directiva de configuraci�
 
 ## <a name="use-configuration-designer"></a>Uso del Diseñador de configuración
 
-El diseñador de configuración se puede usar con las aplicaciones de dispositivos inscritos o no en Intune. El diseñador permite configurar valores y las claves de configuración específicos. También se debe especificar el tipo de datos para cada valor. La configuración se proporciona a las aplicaciones de forma automática cuando se instalan.
+Microsoft Intune proporciona opciones de configuración que son únicas para una aplicación. El diseñador de configuración se puede usar con las aplicaciones de dispositivos inscritos o no en Microsoft Intune. El diseñador permite configurar valores y las claves de configuración específicos que le ayuda a crear el XML subyacente. También se debe especificar el tipo de datos para cada valor. Esta configuración se proporciona a las aplicaciones de forma automática cuando se instalan.
 
 ### <a name="add-a-setting"></a>Agregar una opción de configuración
 
 1. Para cada clave y valor de la configuración, establezca lo siguiente:
-   - **Clave de configuración**<br>
-     Clave con la que se identifica de manera única la configuración específica.
-   - **Tipo de valor**<br>
-     Tipo de datos del valor de configuración. Los tipos pueden ser entero, real, cadena o booleano.
-   - **Valor de configuración**<br>
-     Se trata del valor de la configuración.
+   - **Clave de configuración**: clave con la que se identifica de manera única la configuración específica.
+   - **Tipo de valor**: tipo de datos del valor de configuración. Los tipos pueden ser entero, real, cadena o booleano.
+   - **Valor de configuración**: valor de la configuración.
 2. Elija **Aceptar** para establecer las opciones de configuración.
 
 ### <a name="delete-a-setting"></a>Eliminar una opción de configuración
@@ -165,4 +161,4 @@ Además, Intune admite los siguientes tipos de token en la lista de propiedades:
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Siga [asignando](apps-deploy.md) y [supervisando](apps-monitor.md) la aplicación como de costumbre.
+Siga [asignando](apps-deploy.md) y [supervisando](apps-monitor.md) la aplicación.

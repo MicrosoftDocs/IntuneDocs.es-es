@@ -13,11 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b810a9dd783f59e778f3ffcb40da8fa52acf70ff
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 2987ca7ce3a9b99249fc62fc7de5c9cca22b0b26
+ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34803829"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Configuración de restricciones de dispositivos iOS de Microsoft Intune
 
@@ -97,7 +98,7 @@ El modo supervisado de iOS solo se puede habilitar durante la configuración ini
     -   **Tipo de contraseña obligatoria**: especifica el tipo de contraseña que es necesaria, como solo numérica o alfanumérica.
     -   **Número de caracteres no alfanuméricos en la contraseña**: especifica el número de caracteres de símbolos (como **#** o **@**) que se deben incluir en la contraseña.
     -   **Minimum password length** (Longitud mínima de contraseña): especifica el número mínimo de caracteres en la contraseña.
-    -   **Número de errores de inicio de sesión antes de borrar el dispositivo**: especifique el número de intentos de inicios de sesión erróneos antes de que esta configuración borre el dispositivo.
+    -   **Número de errores de inicio de sesión antes de borrar el dispositivo**: especifique el número de intentos de contraseñas únicas erróneas antes de que esta configuración borre el dispositivo.
     -   **Máximo de minutos tras bloqueo de pantalla antes de solicitar la contraseña**<sup>1</sup>: especifique cuánto tiempo puede permanecer inactivo el dispositivo antes de que el usuario deba volver a escribir su contraseña.
     -   **Máximo de minutos de inactividad hasta que se bloquea la pantalla**<sup>1</sup>: especifique el número de minutos antes de que la pantalla del dispositivo se apague.
     -   **Caducidad de la contraseña (días)**: especifique el número de días antes de que deba cambiarse la contraseña del dispositivo.

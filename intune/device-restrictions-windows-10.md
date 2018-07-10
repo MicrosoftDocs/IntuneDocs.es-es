@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/9/2018
+ms.date: 5/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 611ec516b87f42b41a80de605d0d511ed2c58309
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: a4bbc89f66b49fe6a5c4ff8595c5913583288e0f
+ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/06/2018
+ms.locfileid: "34803846"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Restricciones de dispositivos para la configuración de Windows 10 (y versiones posteriores) en Intune
 En este artículo, se muestran todas las opciones de configuración de restricciones de dispositivos de Microsoft Intune que puede configurar para los dispositivos que ejecutan Windows 10.
@@ -249,7 +250,9 @@ Puede agregar aplicaciones que deben tener un comportamiento de privacidad difer
 
   El ajuste de escala de PPP de GDI permite a las aplicaciones que no tienen en cuenta los PPP empezar a tenerlos en cuenta para cada monitor. Especifique las aplicaciones heredadas que tienen activado el ajuste de escala de PPP de GDI. Si el ajuste de escala de PPP de GDI está configurado para activarse y desactivarse en una aplicación, el ajuste de escala estará desactivado para la aplicación.
 
-## <a name="kiosk-preview"></a>Quiosco (versión preliminar)
+## <a name="kiosk-preview---obsolete"></a>Quiosco (versión preliminar): obsoleto
+
+Esta configuración se está moviendo y se quitará en una próxima versión. Para usar la nueva configuración, consulte [Configuración de quiosco para Windows 10 (y versiones posteriores) en Intune](kiosk-settings.md).
 
 Un dispositivo de pantalla completa normalmente ejecuta una aplicación o un conjunto determinado de aplicaciones. A los usuarios no se les permite el acceso a características o funciones del dispositivo que está fuera de la aplicación de pantalla completa.
 
@@ -262,9 +265,12 @@ Un dispositivo de pantalla completa normalmente ejecuta una aplicación o un con
 #### <a name="single-app-kiosks"></a>Pantallas completas con una sola aplicación
 Escriba los valores siguientes:
 
-- **Cuenta de usuario**: especifique la cuenta de usuario local (en el dispositivo) o el inicio de sesión de cuenta de Azure AD asociado a la aplicación de pantalla completa. En el caso de las cuentas unidas a dominios de Azure AD, especifique la cuenta con el formato `domain\username@tenant.org`. 
+- **Cuenta de usuario**: especifique la cuenta de usuario local (en el dispositivo), una cuenta de dominio de AD o el inicio de sesión de cuenta de Azure AD asociado a la aplicación de pantalla completa.
+  - Cuenta local: escríbala como `devicename\accountname`, `.\accountname` o `accountname`.
+  - Cuenta de dominio: escríbala como `domain\accountname`.
+  - Cuenta de Azure AD: escríbala como `AzureAD\emailaddress`. Asegúrese de escribir "AzureAD", ya que es un nombre de dominio fijo. Después, siga con la dirección de correo electrónico de Azure AD. Por ejemplo, escriba `AzureAD\user@contoso.onmicrosoft.com`.
 
-    En el caso de las pantallas completas en entornos de uso público con inicio de sesión automático habilitado, se debe usar un tipo de usuario con los privilegios mínimos (por ejemplo, la cuenta de usuario estándar local). Para configurar una cuenta de Azure Active Directory (AD) para el modo de pantalla completa, use el formato `AzureAD\user@contoso.com`.
+    En el caso de las pantallas completas en entornos de uso público con inicio de sesión automático habilitado, se debe usar un tipo de usuario con los privilegios mínimos (por ejemplo, la cuenta de usuario estándar local). Si usa una cuenta de Azure AD para el modo de pantalla completa, asegúrese de especificar `AzureAD\user@yourorganization.com`.
 
 - **Identificador de modelo de usuario de la aplicación (AUMID)**: especifique el AUMID de la aplicación de pantalla completa. Para más información, vea [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Buscar el identificador de modelo de usuario de aplicación de una aplicación instalada).
 

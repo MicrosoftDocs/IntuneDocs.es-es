@@ -15,15 +15,15 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e9c89098b9cb775e287cbe4c4ae4c56b9566b9fd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 861be39feab15c453fd102593b0501202faa3684
+ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31032598"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36232943"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>¿Dónde está mi característica de Intune en Azure?
-Hemos aprovechado la oportunidad para organizar algunas tareas de forma más lógica durante el traslado de Intune a Azure Portal. Pero, como ocurre con todas las mejoras, deberá aprender la nueva organización. Por ello, hemos creado esta guía de referencia para aquellos que están familiarizados con Intune en el portal clásico y se preguntan dónde se encuentra una determinada función en Intune en Azure Portal. Si en este artículo no se incluye una característica que intenta encontrar, deje un comentario al final para que podamos actualizarlo.
+Hemos aprovechado la oportunidad para organizar algunas tareas de forma más lógica durante el traslado de Intune a Azure Portal. Pero, como ocurre con todas las mejoras, deberá aprender la nueva organización. Esta guía de referencia está dirigida a aquellos que están familiarizados con Intune en el portal clásico y se preguntan dónde se encuentra una determinada función en Intune en Azure Portal. Si en este artículo no se incluye una característica que intenta encontrar, deje un comentario al final para que podamos actualizarlo.
 ## <a name="quick-reference-guide"></a>Guía de referencia rápida
 
 |Característica |Ruta de acceso del portal clásico|Ruta de acceso en Intune en Azure Portal|
@@ -45,27 +45,37 @@ Configuración del Portal de empresa|Admin > Portal de empresa|**Administrar** >
 Intune en Azure Portal usa [Azure Active Directory (AD)](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal) para administrar grupos.
 
 ## <a name="where-did-enrollment-rules-go"></a>¿Dónde están las reglas de inscripción?
-En el portal clásico, podía establecer reglas que controlaran la inscripción de MDM de dispositivos macOS y Windows móviles y modernos:
+En el portal clásico, podía establecer reglas que controlaran la inscripción de MDM de dispositivos macOS y Windows móviles y modernos.
 
 ![Imagen de reglas de inscripción de dispositivos móviles clásicas](./media/01-classic-rules.png)
 
-Estas reglas se aplicaban a todos los usuarios de su cuenta de Intune sin excepciones. En Azure Portal estas reglas aparecen ahora en dos tipos de directivas distintas: Restricciones de tipo de dispositivo y Restricciones de límite de dispositivos:
+Estas reglas se aplicaban a todos los usuarios de su cuenta de Intune sin excepciones. En Azure Portal estas reglas aparecen ahora en dos tipos de directivas distintas: Restricciones de tipo de dispositivo y Restricciones de límite de dispositivos.
 
 ![Imagen de restricciones de inscripción de dispositivos móviles de Azure](./media/02-azure-enroll-restrictions.png)
 
-El valor predeterminado de Restricción de límite de dispositivos corresponde al Límite de inscripción de dispositivos del portal clásico:
+El valor predeterminado de Restricción de límite de dispositivos corresponde al Límite de inscripción de dispositivos del portal clásico.
 
 ![Imagen de restricciones de límite de dispositivos de Azure](./media/03-azure-device-limit.png)
 
-El valor predeterminado de Restricciones de tipo de dispositivo corresponde a las Restricciones de la plataforma del portal clásico:
+El valor predeterminado de Restricciones de tipo de dispositivo corresponde a las Restricciones de la plataforma del portal clásico.
 
 ![Imagen de restricciones de tipo de dispositivo de Azure](./media/04-azure-platform-restrictions.png)
 
-La capacidad de permitir o bloquear dispositivos de propiedad personal se administra ahora en las Configuraciones de plataforma de Restricciones de tipo de dispositivo:
+La capacidad de permitir o bloquear dispositivos de propiedad personal se administra ahora en las Configuraciones de plataforma de Restricciones de tipo de dispositivo.
 
 ![Imagen de la configuración de bloqueo de dispositivos personales de Azure](./media/05-azure-personal-block.png)
 
 Se agregarán nuevas capacidades de restricción únicamente a Azure Portal.
+
+## <a name="where-did-my-conditional-access-policies-go"></a>¿Dónde puedo encontrar mis directivas de acceso condicional?
+Las directivas de acceso condicional del inquilino se seguirán aplicando cuando el inquilino se haya migrado a Azure Portal. Sin embargo, no podrá ver o modificarlas desde Intune en Azure Portal.
+
+Si quiere ver y modificar las directivas de acceso condicional desde Azure Portal, deberá quitar del portal clásico las directivas anteriores. Después, deberá volver a crearlas en Azure Portal. Para obtener más información sobre la migración de directivas de acceso condicional, vea [Migración de directivas clásicas en Azure Portal](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-conditional-access-migration). 
+
+## <a name="where-did-my-compliance-policies-go"></a>¿Dónde puedo encontrar mis directivas de cumplimiento?
+Las directivas de cumplimiento del inquilino se seguirán aplicando cuando el inquilino se haya migrado a Azure Portal. Sin embargo, no podrá ver o modificarlas desde Intune en Azure Portal.
+
+Si quiere ver y modificar las directivas de cumplimiento desde Azure Portal, deberá quitar del portal clásico las directivas anteriores. Después, deberá volver a crearlas en Azure Portal. Para obtener más información sobre las directivas de cumplimiento de dispositivos, consulte la [introducción a las directivas de cumplimiento de dispositivos en Intune](https://docs.microsoft.com/en-us/intune/known-issues#compliance). 
 
 ## <a name="where-did-apple-dep-go"></a>¿Dónde está el servicio DEP de Apple?
 En el portal clásico, podía configurar Intune para que se integrara con el Programa de inscripción de dispositivos de Apple y solicitar manualmente la sincronización con el servicio de Apple:

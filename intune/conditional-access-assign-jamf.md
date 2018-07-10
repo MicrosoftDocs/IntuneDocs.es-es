@@ -2,24 +2,25 @@
 title: Directiva de cumplimiento de dispositivos para dispositivos Jamf
 titlesuffix: Microsoft Intune
 description: Use directivas de cumplimiento de Microsoft Intune con acceso condicional de Azure Active Directory para ayudar a proteger los dispositivos administrados por Jamf.
-keywords: 
+keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 02/16/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: c87fd2bd-7f53-4f1b-b985-c34f2d85a7bc
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5320f160efde054586b1e37722a67db375511049
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 990c17dcb7a25e5ea6676326f785d49ac6ca3320
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34482342"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Aplicación del cumplimiento en equipos Mac administrados con Jamf Pro
 
@@ -34,6 +35,9 @@ Puede usar Azure Active Directory y las directivas de acceso condicional de Micr
 
 1. Abra Microsoft Azure y, luego, navegue a **Intune** > **Cumplimiento de dispositivos** > **Directivas**. Puede crear directivas para macOS, incluida la elección de una serie de acciones (por ejemplo, el envío de correos electrónicos de advertencia) a usuarios y grupos no compatibles.
 2. Busque los grupos deseados y, luego, aplíqueles las directivas.
+
+> [!Note]
+> Intune requiere que el cifrado de disco completo sea compatible.
 
 ## <a name="deploy-the-company-portal-app-for-macos-in-jamf-pro"></a>Implementar la aplicación Portal de empresa para macOS en Jamf Pro
 

@@ -13,11 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 124c44a18daa2c8967b40b5d535d2b7002bce1dd
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: c251a45f8c319bdebbc6904c10fbf423bb1c1128
+ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34562167"
 ---
 # <a name="microsoft-intune-windows-10-team-device-restriction-settings"></a>Configuración de restricciones de dispositivos Windows 10 Team de Microsoft Intune
 

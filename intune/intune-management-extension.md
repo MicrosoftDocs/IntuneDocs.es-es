@@ -14,12 +14,12 @@ ms.assetid: 768b6f08-3eff-4551-b139-095b3cfd1f89
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2046a928525e974eee5f63d772d46864b21f0267
-ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
+ms.openlocfilehash: eb7d8b35cb88223a3fbfa45e0ad8e2f8d2852a96
+ms.sourcegitcommit: ab801d715aa26f6d97f1a0c42a07e55146a14e6f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34583679"
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35289030"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Administrar scripts de PowerShell en Intune para dispositivos Windows 10
 La extensión de administración de Intune permite cargar los scripts de PowerShell en Intune para ejecutarse en dispositivos Windows 10. La extensión de administración complementa las capacidades de administración de dispositivos móviles (MDM) de Windows 10 y facilita la transición a una administración moderna.
@@ -53,6 +53,10 @@ La extensión de administración de Intune tiene los siguientes requisitos previ
  
 2. Elija **Seleccionar grupos** para obtener una lista de los grupos de Azure AD disponibles. 
 3. Seleccione uno o varios grupos que contienen los usuarios cuyos dispositivos reciben el script. Haga clic en **Seleccionar** para asignar la directiva a los grupos seleccionados.
+
+> [!NOTE]
+> - No se pueden aplicar scripts de PowerShell a grupos de equipos.
+> - Los scripts de PowerShell se ejecutan en los dispositivos solo cuando un usuario de Azure Active Directory (AD) ha iniciado sesión en él.
 
 La extensión de administración de Intune se sincroniza con Intune una vez cada hora. Después de asignar la directiva a los grupos de Azure AD, se ejecuta el script de PowerShell y se notifican los resultados de la ejecución. 
  

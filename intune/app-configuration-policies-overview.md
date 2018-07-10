@@ -1,52 +1,55 @@
 ---
-title: "Directivas de configuración de aplicaciones para Intune"
-titlesuffix: Microsoft Intune
-description: "Obtenga información sobre cómo usar las directivas de configuración de aplicaciones en un dispositivo iOS o Android en Intune."
-keywords: 
-author: erikre
+title: Directivas de configuración de aplicaciones para Microsoft Intune
+titlesuffix: ''
+description: Obtenga información sobre cómo usar las directivas de configuración de aplicaciones en un dispositivo iOS o Android en Microsoft Intune.
+keywords: ''
+author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 06/11/2018
 ms.topic: article
-ms.prod: 
+ms.prod: ''
 ms.service: microsoft-intune
-ms.technology: 
+ms.technology: ''
 ms.assetid: 834B4557-80A9-48C0-A72C-C98F6AF79708
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 52e0906b58680fa0b5628b2b5fc7445f8135658a
-ms.sourcegitcommit: 7e5c4d43cbd757342cb731bf691ef3891b0792b5
+ms.openlocfilehash: 6c04d2d8fa2e302c4d11760d3660a0a67e8b3695
+ms.sourcegitcommit: b47fad133ef8ef1eb65484463431c6c53f6a638a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 06/11/2018
+ms.locfileid: "35291553"
 ---
-# <a name="app-configuration-policies-for-intune"></a>Directivas de configuración de aplicaciones para Intune
+# <a name="app-configuration-policies-for-microsoft-intune"></a>Directivas de configuración de aplicaciones para Microsoft Intune
 
-Proporcione valores de configuración cuando los usuarios ejecuten una aplicación para iOS o Android con directivas de configuración de aplicaciones en Microsoft Intune. Por ejemplo, una aplicación puede requerir a los usuarios que especifiquen:
+Use las directivas de configuración de aplicaciones de Microsoft Intune para proporcionar valores de configuración para una aplicación para iOS o Android. Estos valores de configuración permiten que se personalice una aplicación. No asigne estas directivas de configuración directamente a usuarios y dispositivos. En su lugar, asocie la directiva de configuración a una aplicación y, después, asigne la aplicación. La configuración de directivas de configuración se usa cada vez que la aplicación comprueba dichas directivas, que suele ser la primera vez que se ejecuta.
 
-- Un número de puerto personalizado.
-- Configuración de idioma.
-- Configuración de seguridad.
-- Configuración de marca, como un logotipo de empresa.
+Puede asignar una directiva de configuración de aplicación a un grupo de usuarios y dispositivos mediante una combinación de asignaciones de inclusión y exclusión. Tras agregar una directiva de configuración de aplicación, podrá establecer las asignaciones de la directiva de configuración de aplicación. Al establecer las asignaciones de la directiva, puede elegir si quiere incluir o excluir los grupos de usuarios a los que se aplica la directiva. Si decide incluir uno o varios grupos, puede optar por seleccionar grupos específicos para incluir o seleccionar los grupos integrados. Los grupos integrados incluyen **Todos los usuarios**, **Todos los dispositivos** y **Todos los usuarios + todos los dispositivos**.
+
+Por ejemplo, una aplicación podría requerir que especifique uno de los detalles siguientes:
+
+- Un número de puerto personalizado
+- Configuración de idioma
+- Configuración de seguridad
+- Configuración de marca, como un logotipo de empresa
 
 Si los usuarios han especificado esta configuración incorrectamente, puede aumentar la carga del departamento de soporte técnico y ralentizar la adopción de nuevas aplicaciones.
 
 Las directivas de configuración de aplicaciones pueden ayudarle a eliminar estos problemas al permitirle asignar esta configuración a los usuarios en una directiva antes de ejecutar la aplicación. A continuación, la configuración se proporciona de forma automática y los usuarios no tienen que realizar ninguna acción.
 
-No asigne estas directivas directamente a usuarios y dispositivos. Asocie la directiva con una aplicación y, a continuación, asigne la aplicación. La configuración de directiva se usará cada vez que la aplicación la compruebe (normalmente, la primera vez que se ejecuta).
+Los valores de configuración se usan cada vez que la aplicación los busca. Normalmente, una aplicación busca opciones de configuración la primera vez que el usuario ejecuta la aplicación.
 
 Tiene dos opciones sobre cómo usar las configuraciones de aplicación con Intune:
- - **Dispositivos administrados**  
-   El dispositivo se administra mediante Intune como el proveedor de administración de dispositivos móviles (MDM).
- - **Aplicaciones administradas**  
-   Una aplicación se administra sin la inscripción de dispositivos.
+ - **Dispositivos administrados**: el dispositivo se administra mediante Intune como el proveedor de administración de dispositivos móviles (MDM).
+ - **Aplicaciones administradas**: una aplicación se administra sin la inscripción de dispositivos.
 
 ## <a name="apps-that-support-app-configuration"></a>Aplicaciones que admiten la configuración de aplicaciones
 
 Puede usar las directivas de configuración de aplicaciones en las aplicaciones que lo admitan. Para admitir la configuración de aplicaciones en Intune, las aplicaciones deben haberse escrito con ese fin. Consulte con el proveedor de su aplicación para obtener más información.
 
-Puede preparar las aplicaciones de línea de negocio incorporando Intune App SDK en la aplicación o encapsulando la aplicación después de que haberla desarrollado. El SDK de aplicaciones de Intune, disponible para iOS y Android, habilita su aplicación para las directivas de protección de aplicaciones de Intune. Su objetivo es minimizar la cantidad de cambios de código que debe realizar el desarrollador de la aplicación. Para obtener más información, vea [Información general del SDK para aplicaciones de Intune](app-sdk.md).
+Puede preparar las aplicaciones de línea de negocio incorporando Intune App SDK en la aplicación o encapsulando la aplicación después de que haberla desarrollado. El SDK de aplicaciones de Intune, disponible para iOS y Android, habilita su aplicación para las directivas de configuración de aplicaciones de Intune. Su objetivo es minimizar la cantidad de cambios de código que debe realizar el desarrollador de la aplicación. Para obtener más información, vea [Información general del SDK para aplicaciones de Intune](app-sdk.md).
 
 ## <a name="graph-api-support-for-app-configuration"></a>Compatibilidad de Graph API para la configuración de aplicaciones
 
