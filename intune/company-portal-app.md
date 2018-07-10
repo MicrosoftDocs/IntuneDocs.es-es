@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c63e632036d38fb1fde2e4b26313b4447b9db25e
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 4535bdfa9b801c605c70c0a9dad900d76044eab4
+ms.sourcegitcommit: c78923b0d5b320322c828b1bbea2deb9062e30d2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744591"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37844987"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Configuración de la aplicación Portal de empresa de Microsoft Intune
 
@@ -56,7 +56,7 @@ Escriba la información de soporte técnico de su empresa para que los empleados
 |**Número de teléfono** | 20 | Este número de contacto se muestra en la página **Contact IT** (Contactar con TI) para que los empleados puedan ponerse en contacto con usted para cuestiones de soporte técnico. |
 |**Dirección de correo electrónico**| 40 | Es la dirección de contacto que se muestra en la página **Contacto de TI**. Debe especificar una dirección de correo electrónico válida en el formato `alias@domainname.com`. |
 |**Nombre del sitio web**| 40 | Este nombre es el nombre descriptivo que se muestra para la dirección URL del sitio web de soporte. Si especifica una dirección URL de sitio web de soporte sin nombre descriptivo, se mostrará Ir a sitio web de TI en la página **Contacto de TI** del Portal de empresa. |
-|**URL del sitio web**| 150 | Si tiene un sitio web de soporte que desea que utilicen los usuarios finales, especifique la dirección URL aquí. La dirección URL debe tener el formato **https://www.contoso.com**. Si no especifica una dirección URL, no se mostrará ningún sitio web de soporte en la página **Contacto de TI** del portal de empresa. |
+|**URL del sitio web**| 150 | Si tiene un sitio web de soporte que desea que utilicen los usuarios finales, especifique la dirección URL aquí. La dirección URL debe tener el formato `https://www.contoso.com`. Si no especifica una dirección URL, no se mostrará ningún sitio web de soporte en la página **Contacto de TI** del portal de empresa. |
 | **Información adicional**| 120 | Se muestra en la página **Contacto de TI**. |
 
 
