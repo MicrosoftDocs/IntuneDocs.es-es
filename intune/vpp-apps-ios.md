@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3afe1ed48a21c26927b3686ae9a455ed8484e282
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 574880ae1ff7f734edcb02ebc89d7a0270064d4e
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34547410"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905978"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Administrar aplicaciones de iOS compradas a través de un programa de compras por volumen con Microsoft Intune
 
@@ -135,8 +135,7 @@ El usuario final recibirá solicitudes para que instale la aplicación de VPP en
 
 ## <a name="revoking-app-licenses-and-deleting-tokens"></a>Revocar licencias de aplicaciones y eliminar tokens 
 
-<!-- 820863 -->  
-En el caso de un dispositivo determinado con una o varias aplicaciones del Programa de Compras por Volumen (VPP) de iOS, revoque todas las licencias de aplicación basadas en dispositivos asociadas con el dispositivo. Revocar una licencia de aplicación no desinstalará la aplicación VPP desde el dispositivo. Para desinstalar una aplicación de VPP y reclamar una licencia, debe cambiar el tipo de asignación de la aplicación de VPP a **Desinstalar**. Si quita una aplicación que estaba asignada a un usuario, Intune reclama la licencia de usuario o dispositivo y desinstala la aplicación del dispositivo.
+Puede revocar todas las licencias de aplicaciones del Programa de Compras por Volumen (VPP) de iOS asociadas según un dispositivo, usuario o aplicación determinado. Puede notificar a los usuarios cuando una aplicación ya no esté asignada a ellos. Revocar una licencia de aplicación no desinstalará la aplicación VPP desde el dispositivo. Para desinstalar una aplicación de VPP y reclamar una licencia de aplicación asignada a un usuario o a un dispositivo, debe cambiar la acción de asignación a **Desinstalar**. Si quita una aplicación que estaba asignada a un usuario, Intune reclama la licencia de usuario o dispositivo y desinstala la aplicación del dispositivo. El número de licencias reclamadas se indicará en el nodo **Aplicaciones con licencia** en la carga de trabajo **Aplicación** de Intune. Una vez que se ha desinstalado una aplicación de VPP y se ha reclamado la licencia de aplicación, puede decidir asignar esa licencia de aplicación a otro usuario o dispositivo. 
 
 >[!NOTE]
 >Cuando un empleado abandona la empresa y deja de formar parte de los grupos de AAD, Intune recupera todas las licencias de aplicaciones de VPP de iOS con licencia de usuario.

@@ -15,12 +15,12 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4c1902e319a862c9ffcda5068753f917bf8f4c3f
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 0f4687b3a2b1064fbfe3a9c8aa9da6cc7d336d78
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232925"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906046"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Establecer la entidad de administración de dispositivos móviles
 
@@ -41,9 +41,11 @@ Las configuraciones posibles son:
 
 ## <a name="set-mdm-authority-to-intune"></a>Establecimiento de la entidad de MDM en Intune
 
+Haga lo siguiente si aún no ha establecido la entidad de MDM. Para cambiar de una entidad de MDM a otra, vea la sección [Cambio de la entidad de MDM](#prepare-to-change-the-mdm-authority-to-configuration-manager) más adelante.
+
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
 2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
-3. Seleccione el banner de color naranja para abrir el ajuste **Entidad de administración de dispositivos móviles**.
+3. Seleccione el banner de color naranja para abrir el ajuste **Entidad de administración de dispositivos móviles**. El banner naranja aparece únicamente si aún no ha establecido la entidad de MDM.
 4. En **Entidad de administración de dispositivos móviles**, elija la entidad de MDM entre las opciones siguientes:
    - **Entidad de MDM de Intune**
    - **Entidad de MDM Configuration Manager**
@@ -57,7 +59,7 @@ Las configuraciones posibles son:
 Cuando se habilita la administración de dispositivos Android o Apple, Intune envía información del usuario y dispositivo para integrar con estos servicios de terceros a fin de administrar sus dispositivos correspondientes.
 
 Los escenarios que agregan un consentimiento para compartir datos se incluyen cuando:
-- Se habilita Android for Work.
+- Se habilitan perfiles de trabajo Android.
 - Se habilitan y cargan certificados push MDM de Apple.
 - Se habilita cualquiera de los servicios de Apple, por ejemplo, el Programa de inscripción de dispositivos, School Manager o el Programa de Compras por Volumen.
 

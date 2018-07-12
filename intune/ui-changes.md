@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 861be39feab15c453fd102593b0501202faa3684
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 54050fd7afc58a101d956b4aee68e9b5e4011a3d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232943"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905383"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>¿Dónde está mi característica de Intune en Azure?
 Hemos aprovechado la oportunidad para organizar algunas tareas de forma más lógica durante el traslado de Intune a Azure Portal. Pero, como ocurre con todas las mejoras, deberá aprender la nueva organización. Esta guía de referencia está dirigida a aquellos que están familiarizados con Intune en el portal clásico y se preguntan dónde se encuentra una determinada función en Intune en Azure Portal. Si en este artículo no se incluye una característica que intenta encontrar, deje un comentario al final para que podamos actualizarlo.
@@ -36,7 +36,7 @@ Hemos aprovechado la oportunidad para organizar algunas tareas de forma más ló
 |Grupos mediante IMEI (todas las plataformas)| Grupos > Todos los dispositivos > Dispositivos corporativos inscritos previamente > Mediante IMEI (todas las plataformas) | [Inscripción de dispositivos > Identificadores de dispositivo corporativos](#by-imei-all-platforms)|
 | Perfil de inscripción de dispositivos corporativos| Directiva > Inscripción de dispositivos corporativos | [Inscripción de dispositivos > Inscripción de Apple > Perfiles del Programa de inscripción](#where-did-corporate-pre-enrolled-devices-go) |
 | Perfil de inscripción de dispositivos corporativos | Directiva > Inscripción de dispositivos corporativos | [Inscripción de dispositivos > Inscripción de Apple > Perfiles de AC](#where-did-corporate-pre-enrolled-devices-go) |
-| Android for Work | Administración > Administración de dispositivos móviles > Android for Work | Inscripción de dispositivos > Inscripción en Android for Work |
+| Android for Work | Administración > Administración de dispositivos móviles > Android for Work | Inscripción de dispositivos > Inscripción en Android |
 | Términos y condiciones | Directiva > Términos y condiciones | Inscripción de dispositivos > Términos y condiciones |
 Configuración del Portal de empresa|Admin > Portal de empresa|**Administrar** > Aplicaciones móviles<br> **Configurar** > Personalización de marca del Portal de empresa
 

@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/18/2018
+ms.date: 6/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 33e42c821881a5cc7eb9e4be65f6f7e56263480e
-ms.sourcegitcommit: ada99fefe9a612ed753420116f8c801ac4bf0934
+ms.openlocfilehash: 5e9de6f1ac8bca1d65a94294d3b049dfccbe44c7
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36232977"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905366"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Supervisión de las directivas de cumplimiento de dispositivos Intune
 
@@ -158,9 +158,27 @@ Este informe permite ver, por configuración de cumplimiento, el número total d
 
 Al hacer clic en el mosaico Configuración de cumplimiento, seleccione una de las configuraciones de directivas de cumplimiento de dispositivos para ver el **estado de cumplimiento**, el **alias de correo electrónico del usuario**, el **modelo de dispositivo** y la **ubicación** de cada dispositivo al que se aplique esa configuración de directivas de cumplimiento de dispositivos.
 
+## <a name="view-status-of-device-policies"></a>Ver el estado de las directivas de dispositivo
+
+Puede comprobar los diferentes estados de las directivas de cada plataforma. Por ejemplo, tenemos una directiva de cumplimiento de macOS. Queremos ver los dispositivos afectados por esta directiva y saber si hay conflictos o errores.
+
+Esta característica aparece reflejada en el informe de estado del dispositivo:
+
+1. Seleccione **Cumplimiento de dispositivos** > **Directivas**. Se muestra una lista de directivas (plataforma incluida), si la directiva está asignada y otros detalles.
+2. Seleccione una directiva > **Información general**. En esta vista, la asignación de directiva engloba los siguientes estados:
+
+  - Correcto
+  - Error
+  - Conflicto
+  - Pending
+  - No disponible
+
+3. Para ver detalles sobre los dispositivos que usan esta directiva, seleccione uno de los estados. Por ejemplo, seleccione **Correcto**. En la siguiente ventana se muestran detalles concretos del dispositivo, como el nombre del dispositivo y el estado de la implementación.
+
 ## <a name="how-intune-resolves-policy-conflicts"></a>Cómo Intune resuelve los conflictos de directivas
 Pueden producirse conflictos entre directivas de Intune cuando se aplican varias de ellas a un dispositivo. Si las configuraciones de directivas se solapan, Intune resuelve los conflictos siguiendo estas reglas:
 
 - Si las configuraciones en conflicto proceden de una directiva de configuración de Intune y una directiva de cumplimiento, la configuración de la directiva de cumplimiento tiene preferencia sobre la configuración de la directiva de configuración. Esto es así incluso si la configuración de la directiva de configuración es más segura.
 
-- Si ha implementado varias directivas de cumplimiento, Intune utilizará la más segura de ellas.
+- Si ha implementado varias directivas de cumplimiento, Intune usa la más segura de ellas.
+

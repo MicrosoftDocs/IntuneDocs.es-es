@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: caed42642a87d38076f755cd356cc7ab7c6a3d8a
-ms.sourcegitcommit: 95ffcd5ddd3e5df7d68ae75218c5ff2ea076133e
+ms.openlocfilehash: 6a5abf774b6cb46b37d42ea1b73f653a02057528
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36263411"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905995"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Incorporación de aplicaciones a Microsoft Intune
 
@@ -51,13 +51,13 @@ En la tabla siguiente se enumeran los tipos de aplicaciones específicas y cómo
 | Aplicaciones de App Store  | Aplicación de la tienda  | Seleccione **iOS** como el **tipo de aplicación**, busque la aplicación y selecciónela en Intune. |
 | Aplicaciones de la Tienda Windows Phone 8.1  | Aplicación de la tienda  | Seleccione **Windows Phone 8.1** como el **tipo de aplicación** y escriba la dirección URL de Microsoft Store de la aplicación. |
 | Aplicaciones de Microsoft Store  | Aplicación de la tienda  | Seleccione **Windows** como el **tipo de aplicación** y escriba la dirección URL de Microsoft Store de la aplicación. |
-| Aplicaciones de Android for Work | Aplicación de la tienda  | Busque y apruebe la aplicación Android for Work desde la tienda de Google Play for Work.  |
+| Aplicaciones de trabajo Android | Aplicación de la tienda  | Busque y apruebe la aplicación de trabajo Android en Google Play Store administrado.  |
 | Aplicaciones de Office 365 para Windows 10  | Aplicación de la tienda (Office 365) | Seleccione **Windows 10** en el **conjunto de aplicaciones de Office 365** como el **tipo de aplicación** y después seleccione la aplicación de Office 365 que quiera instalar.  |
 | Aplicaciones de Office 365 para macOS | Aplicación de la tienda (Office 365) | Seleccione **macOS** en el **conjunto de aplicaciones de Office 365** como el **tipo de aplicación** y después seleccione el paquete de aplicación de Office 365. |
 | Aplicaciones de línea de negocio (LOB) Android | Aplicación LOB | Seleccione la aplicación de **línea de negocio** como **tipo de aplicación**, seleccione el **archivo de paquete de aplicación** y después introduzca un archivo de instalación de Android con la extensión **.apk** .  |
 | Aplicaciones de LOB para iOS | Aplicación LOB | Seleccione la aplicación de **línea de negocio** como **tipo de aplicación**, seleccione el **archivo de paquete de aplicación** y después introduzca un archivo de instalación de iOS con la extensión **.ipa**.  |
-| Aplicaciones de LOB para Windows Phone | Aplicación LOB | Seleccione la aplicación de **línea de negocio** como **tipo de aplicación**, seleccione el **archivo de paquete de aplicación** y, después, indique un archivo de instalación de Windows Phone con la extensión **.xap**.  |
-| Aplicaciones de LOB de Windows | Aplicación LOB | Seleccione la **aplicación de línea de negocio** como el tipo de aplicación, seleccione el **archivo de paquete de aplicación** y, después, indique un archivo de instalación de Windows con la extensión **.msi**, **.appx** o **.appxbundle**. |
+| Aplicaciones de LOB para Windows Phone | Aplicación LOB | Seleccione la aplicación de **línea de negocio** como **tipo de aplicación**, seleccione el **archivo del paquete de aplicaciones** y, después, indique un archivo de instalación de Windows Phone con la extensión **.xap**.  |
+| Aplicaciones de LOB de Windows | Aplicación LOB | Seleccione la aplicación de **línea de negocio** como el tipo de aplicación, seleccione el **archivo del paquete de aplicaciones** y, después, indique un archivo de instalación de Windows con la extensión **.msi**, **.appx** o **.appxbundle**. |
 | Aplicación de iOS integrada  | Aplicación integrada | Seleccione **Aplicación integrada** como el **tipo de aplicación** y después seleccione la aplicación integrada en la lista de aplicaciones proporcionadas.  |
 | Aplicación de Android integrada  | Aplicación integrada | Seleccione **Aplicación integrada** como el **tipo de aplicación** y después seleccione la aplicación integrada en la lista de aplicaciones proporcionadas.  |
 | Aplicaciones web  | Aplicación web  | Seleccione **Vínculo web** como el **tipo de aplicación** y escriba una dirección URL válida que apunte a la aplicación web.  |
@@ -117,7 +117,7 @@ Las aplicaciones administradas de Intune también pueden habilitar la protecció
 ### <a name="understanding-licensed-apps"></a>Información sobre el uso de aplicaciones con licencia
 Además de comprender las aplicaciones web, las aplicaciones de la tienda y las aplicaciones LOB, también debe conocer las diferencias de las aplicaciones del programa de compras por volumen y las aplicaciones con licencia, como, por ejemplo: 
 - **Programa de Compras por Volumen de Apple para empresas (iOS y MacOS)**: la App Store de iOS permite comprar varias licencias de una aplicación que quiera ejecutar en la empresa. Comprar varias copias permite administrar de manera eficaz las aplicaciones de la empresa. Para obtener más información, consulte [Administrar aplicaciones de iOS compradas a través de un programa de compras por volumen con Microsoft Intune](vpp-apps-ios.md).
-- **Android for Work (Android)**: la forma de asignar aplicaciones a dispositivos Android for Work es diferente a cómo las asigna a dispositivos Android estándar. Todas las aplicaciones que instale en Android for Work proceden de Google Play for Work Store. Inicie sesión en la tienda, busque las aplicaciones que desee y apruébelas. La aplicación, a continuación, aparece en el nodo **Aplicaciones con licencia** de Azure Portal y puede administrar la asignación de las aplicaciones como lo haría con cualquier otra aplicación.
+- **Perfil de trabajo Android**: la forma en que se asignan aplicaciones a dispositivos de perfil de trabajo Android es diferente a cómo se asignan a dispositivos Android estándar. Todas las aplicaciones que se instalen para perfiles de trabajo Android proceden de Google Play Store administrado. Inicie sesión en la tienda, busque las aplicaciones que desee y apruébelas. La aplicación, a continuación, aparece en el nodo **Aplicaciones con licencia** de Azure Portal y puede administrar la asignación de las aplicaciones como lo haría con cualquier otra aplicación.
 - **Microsoft Store para Empresas (Windows 10)**: en Microsoft Store para Empresas puede buscar y comprar aplicaciones para su organización, tanto individuales como por volumen. Si conecta la tienda a Microsoft Intune, puede administrar las aplicaciones adquiridas por volumen en Azure Portal. Para más información, vea [Administrar las aplicaciones de Microsoft Store para Empresas](windows-store-for-business.md).
 
 ## <a name="before-you-add-apps"></a>Antes de agregar aplicaciones

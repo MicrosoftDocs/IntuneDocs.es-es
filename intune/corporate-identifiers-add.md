@@ -15,12 +15,12 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f8517e9a9dd698e875214fe363d8e1246129b96a
-ms.sourcegitcommit: 81721ad672096298bf281dcbf21e8ce9c44cafaa
+ms.openlocfilehash: 6bf9eaef010879835abb7cec57c2fbdce6aa1e0a
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "37042718"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905876"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identificar dispositivos como corporativos
 
@@ -47,7 +47,7 @@ Los administradores de Intune pueden crear e importar un archivo de valores sepa
 [Obtenga información sobre cómo buscar el número de serie de un dispositivo de Apple](https://support.apple.com/HT204308).<br>
 [Obtenga información sobre cómo buscar el número de serie del dispositivo de Android](https://support.google.com/store/answer/3333000).
 
-## <a name="add-corporate-identifiers"></a>Adición de identificadores corporativos
+## <a name="add-corporate-identifiers-by-using-a-csv-file"></a>Agregar identificadores corporativos usando un archivo .csv
 Para crear la lista, cree una lista de dos columnas de valores separados por comas (.csv) sin un encabezado. Agregue el número IMEI o de serie en la columna izquierda y los detalles en la columna derecha. Solo puede importarse un tipo de identificador, número IMEI o de serie en un único archivo .csv. Los detalles están limitados a 128 caracteres y son solo de uso administrativo. Los detalles no se muestran en el dispositivo. El límite actual es 5000 filas por archivo. csv.
 
 **Cargar un archivo .csv con números de serie**: cree una lista de valores separados por comas (.csv) de dos columnas sin encabezado y limítela a 5000 dispositivos o a 5 MB por archivo .csv.
@@ -70,19 +70,33 @@ Este archivo .csv, cuando se ve en un editor de texto, aparece como:
 >Los números de serie que el dispositivo notifica a Intune podrían no coincidir con el identificador que aparece en los menús del dispositivo Configuración de Android/Acerca de. Compruebe el tipo de número de serie que ha notificado el fabricante del dispositivo.
 >Al intentar cargar un archivo con números de serie que contengan puntos (.), se producirán errores de carga. Los números de serie con puntos no se admiten.
 
-### <a name="add-a-csv-list-of-corporate-identifiers"></a>Agregar una lista en formato .csv de identificadores corporativos
+### <a name="upload-a-csv-list-of-corporate-identifiers"></a>Actualizar una lista en formato .csv de identificadores corporativos
 
-1. En [Azure Portal, en Intune](https://portal.azure.com), elija **Inscripción de dispositivos** > **Identificadores de dispositivo corporativos** y, luego, haga clic en **Agregar**.
+1. En [Azure Portal, en Intune](https://portal.azure.com), elija **Inscripción de dispositivos** > **Identificadores de dispositivo corporativos** > **Agregar** > **Cargar un archivo CSV**.
 
    ![Área de trabajo del identificador de dispositivo corporativo con el botón Agregar resaltado](./media/add-corp-id.png)
 
-2. En la hoja **Agregar identificadores**, especifique el tipo de identificador **IMEI** o **Serie**. Puede especificar la opción **Sobrescribir detalles de identificadores existentes** para los números importados previamente.
+2. En la hoja **Agregar identificadores**, especifique el tipo de identificador **IMEI** o **Serie**.
 
-3. Haga clic en el icono de la carpeta y especifique la ruta de acceso de la lista que quiera importar. Vaya al archivo .csv y seleccione **Agregar**. Puede hacer clic en **Actualizar** para ver los nuevos identificadores de dispositivo.
+3. Haga clic en el icono de la carpeta y especifique la ruta de acceso de la lista que quiera importar. Vaya al archivo .csv y elija **Agregar**. 
+
+4. Si el archivo .csv contiene identificadores corporativos que ya están en Intune, pero con detalles distintos, aparece el menú emergente **Revisar los identificadores duplicados**. Seleccione los identificadores que quiera sobrescribir en Intune y elija **Aceptar** para agregarlos. En cada identificador solo se comparará el primer duplicado.
+
+## <a name="manually-enter-corporate-identifiers"></a>Especificar identificadores corporativos manualmente
+
+1. En [Azure Portal, en Intune](https://portal.azure.com), elija **Inscripción de dispositivos** > **Identificadores de dispositivo corporativos** > **Agregar** > **Escribir manualmente**.
+
+2. En la hoja **Agregar identificadores**, especifique el tipo de identificador **IMEI** o **Serie**.
+
+3. Escriba el **identificador** y los **detalles** de cada identificador que quiera agregar. Cuando haya terminado de especificar los identificadores, elija **Agregar**.
+
+5. Si ha especificado identificadores corporativos que ya están en Intune, pero con detalles distintos, aparece el menú emergente **Revisar los identificadores duplicados**. Seleccione los identificadores que quiera sobrescribir en Intune y elija **Aceptar** para agregarlos. En cada identificador solo se comparará el primer duplicado.
+
+Puede hacer clic en **Actualizar** para ver los nuevos identificadores de dispositivo.
 
 Los dispositivos importados no tienen por qué inscribirse. Además, pueden tener un estado **Inscrito** o **Sin contacto**. **No contactado** significa que el dispositivo nunca se ha comunicado con el servicio Intune.
 
-### <a name="delete-corporate-identifiers"></a>Eliminación de identificadores corporativos
+## <a name="delete-corporate-identifiers"></a>Eliminación de identificadores corporativos
 
 1. En [Azure Portal, en Intune](https://portal.azure.com), elija **Inscripción de dispositivos** > **Identificadores de dispositivo corporativos**.
 2. Seleccione los identificadores de dispositivo que quiera eliminar y elija **Eliminar**.
@@ -90,7 +104,7 @@ Los dispositivos importados no tienen por qué inscribirse. Además, pueden tene
 
 Eliminar un identificador corporativo de un dispositivo inscrito no modifica su propiedad. Para modificar la propiedad de un dispositivo, vaya a **Dispositivos**, seleccione el dispositivo, elija **Propiedades** y cambie **Propiedad del dispositivo**.
 
-### <a name="imei-specifications"></a>Especificaciones de IMEI
+## <a name="imei-specifications"></a>Especificaciones de IMEI
 Para obtener especificaciones detalladas sobre identificadores internacionales de equipos móviles, consulte [3GGPP TS 23.003](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=729).
 
 ## <a name="change-device-ownership"></a>Cambiar la propiedad del dispositivo

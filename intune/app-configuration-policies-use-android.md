@@ -1,7 +1,7 @@
 ---
 title: Agregar directivas de configuración de aplicaciones para dispositivos Android administrados
 titlesuffix: Microsoft Intune
-description: Use las directivas de configuración de aplicaciones de Microsoft Intune para proporcionar los valores de configuración cuando los usuarios ejecutan una aplicación Android for Work.
+description: Use directivas de configuración de aplicaciones de Microsoft Intune para facilitar los valores de configuración cuando los usuarios ejecutan una aplicación de perfil de trabajo Android.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -15,18 +15,18 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3011d98b73ef95d1c5a527798ab004f788c9eee9
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: c837f9a5a2cb1a6f267f85f888453725da6acb66
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34470872"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905757"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Agregar directivas de configuración de aplicaciones para dispositivos Android administrados
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Use las directivas de configuración de aplicaciones de Microsoft Intune para proporcionar valores de configuración a las aplicaciones Android for Work. El desarrollador de aplicaciones debe exponer las opciones de configuración de las aplicaciones administradas de Android para poder especificar valores de configuración para la aplicación. Asigne la directiva de configuración de aplicaciones al grupo de usuarios al que quiere que se aplique la configuración.  La configuración de directivas se usa cada vez que la aplicación la comprueba, que suele ser la primera vez que se ejecuta.
+Use directivas de configuración de aplicaciones de Microsoft Intune para facilitar los valores de configuración de las aplicaciones de perfil de trabajo Android. El desarrollador de aplicaciones debe exponer las opciones de configuración de las aplicaciones administradas de Android para poder especificar valores de configuración para la aplicación. Asigne la directiva de configuración de aplicaciones al grupo de usuarios al que quiere que se aplique la configuración.  La configuración de directivas se usa cada vez que la aplicación la comprueba, que suele ser la primera vez que se ejecuta.
 
 > [!Note]  
 > No todas las aplicaciones admiten la configuración de aplicaciones. Póngase en contacto con el desarrollador de la aplicación para comprobar si la aplicación admite directivas de configuración de aplicaciones.
@@ -39,8 +39,8 @@ Use las directivas de configuración de aplicaciones de Microsoft Intune para pr
     - **Nombre**: nombre del perfil que aparecerá en Azure Portal.
     - **Descripción**: descripción del perfil que aparecerá en Azure Portal.
     - **Tipo de inscripción del dispositivo**: elija **Dispositivos administrados**.
-6. Seleccione **Android for Work** para **Plataforma**.
-7. Seleccione **Aplicación asociada** para elegir la aplicación para la que quiera definir una directiva de configuración. Seleccione en la lista de Android for Work las aplicaciones que ha aprobado y sincronizado con Intune.
+6. En **Plataforma**, seleccione **Android**.
+7. Seleccione **Aplicación asociada** para elegir la aplicación para la que quiera definir una directiva de configuración. Seleccione una de la lista de aplicaciones de perfil de trabajo Android que ha aprobado y sincronizado con Intune.
 8. Seleccione **Permisos**. Las configuraciones se pueden establecer con lo siguiente:
     - [Diseñador de configuraciones](#Use-the-configuration-designer)
     - [Editor JSON](#Enter-the-JSON-editor)
@@ -94,8 +94,8 @@ También puede preconfigurar permisos para que las aplicaciones accedan a las ca
     - **Nombre**. Nombre del perfil que aparecerá en Azure Portal.
     - **Descripción**. Descripción del perfil que aparecerá en Azure Portal.
     - **Tipo de inscripción del dispositivo**. Seleccione **Dispositivos administrados**.
-    - **Plataforma**. Seleccione **Android for Work**.
-5. Seleccione **Aplicación asociada** para elegir la aplicación para la que desea definir una directiva de configuración. Seleccione en la lista de Android for Work las aplicaciones que ha aprobado y sincronizado con Intune.
+    - **Plataforma**. Seleccione **Android**.
+5. Seleccione **Aplicación asociada** para elegir la aplicación para la que desea definir una directiva de configuración. Seleccione una de la lista de aplicaciones de perfil de trabajo Android que ha aprobado y sincronizado con Intune.
 6. Seleccione **Permisos** y después elija **Agregar**.
 7. Seleccione en la lista de permisos de aplicación disponibles y después elija **Aceptar**.
 8. Seleccione una opción para cada permiso que se concede con esta directiva:
