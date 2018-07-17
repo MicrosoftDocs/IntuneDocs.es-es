@@ -14,12 +14,12 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3f62e306574606ffa1eb1e6f242c3cb30b1a9c1b
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: a9fb84fd15eb68f007e820e473dd9edf55b37777
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34744659"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905026"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Creación de un perfil de dispositivo en Microsoft Intune
 
@@ -30,14 +30,14 @@ ms.locfileid: "34744659"
 
 2. En **Microsoft Intune**, seleccione **Configuración del dispositivo** y **Perfiles**. Luego, seleccione **Crear perfil**.
 
-3. Introduzca las siguientes propiedades:
+3. Indique las siguientes propiedades:
 
    - **Nombre**: escriba un nombre descriptivo para el nuevo perfil.
    - **Descripción**: escriba una descripción para el perfil (es opcional, pero se recomienda hacerlo).
    - **Plataforma**: seleccione el tipo de plataforma:  
 
        - **Android**
-       - **Android for Work**
+       - **Perfiles de trabajo de Android**
        - **iOS**
        - **macOS**
        - **Windows Phone 8.1**

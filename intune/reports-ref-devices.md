@@ -15,12 +15,12 @@ ms.assetid: 6955E12D-70D7-4802-AE3B-8B276F01FA4F
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 9d0725240840e93522fe80668fdb96cbe4de1236
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 05c99d2431e89f96e293bbd9edbee0753c6a26ad
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224388"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37906131"
 ---
 # <a name="reference-for-devices-entities"></a>Referencia de las entidades Devices
 
@@ -65,7 +65,7 @@ La entidad **DeviceTypes** representa el tipo de dispositivo al que hacen refere
 | 14 |MacMDM |Dispositivo Mac OS X administrado con el agente MDM integrado |
 | 15 |HoloLens |Dispositivo HoloLens |
 | 16 |SurfaceHub |Dispositivo Surface Hub |
-| 17 |AndroidForWork |Dispositivo Android administrado mediante el propietario con perfil Android for Work |
+| 17 |AndroidForWork |Dispositivo Android administrado mediante el propietario con perfil Android |
 | 100 |BlackBerry |Dispositivo BlackBerry |
 | 101 |Palm |Dispositivo Palm |
 | 255 |Unknown |Tipo de dispositivo desconocido |
@@ -147,7 +147,7 @@ La entidad **MdmStatuses** indica el estado de cumplimiento del dispositivo.
 | 1 |Conforme |El dispositivo cumple las normas. |
 | 2 |No conforme |El dispositivo no es compatible. |
 | 3 |Conflicto |El cumplimiento del dispositivo resultó en un conflicto. |
-| 4 |Error |Error al leer el estado de cumplimiento del dispositivo. |
+| 4 |Error |Se ha producido un error al leer el estado de cumplimiento del dispositivo. |
 
 
 ## <a name="managementstates"></a>ManagementStates

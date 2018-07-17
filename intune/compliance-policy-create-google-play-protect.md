@@ -15,12 +15,12 @@ ms.assetid: E9810BEB-000A-4DFB-B5C7-A22A92082B22
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e99671c6c82a7652ba3489d5cc217dfedac72788
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 346e69b56d9ee690e2bc3f3970e47d6d25ddcff7
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31835374"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905179"
 ---
 # <a name="how-to-create-a-device-compliance-policy-to-enable-google-play-protect"></a>Creación de una directiva de cumplimiento de dispositivos para habilitar Google Play Protect
 
@@ -49,9 +49,9 @@ La directiva de cumplimiento que requiere esta configuración se puede destinar 
  - **Examen de amenazas en las aplicaciones**  
    Se requiere que la característica **Verificar aplicaciones** de Android esté habilitada.
     > [!Note]  
-    > En la plataforma Android heredada, esta característica es una configuración de cumplimiento. Intune solo puede comprobar si esta configuración está habilitada en el nivel de dispositivo. En los dispositivos con perfiles de trabajo, anteriormente Android for Work, esta configuración puede encontrarse como un ajuste de la directiva de configuración. Esto permite a los administradores habilitar la configuración para un dispositivo.
+    > En la plataforma Android heredada, esta característica es una configuración de cumplimiento. Intune solo puede comprobar si esta configuración está habilitada en el nivel de dispositivo. En los dispositivos con perfiles de trabajo Android, esta configuración puede encontrarse como un ajuste de la directiva de configuración. Esto permite a los administradores habilitar la configuración para un dispositivo.
 
-    Si su empresa utiliza perfiles de trabajo Android, puede habilitar **Examen de amenazas en las aplicaciones** en los dispositivos inscritos. Establezca un perfil de dispositivo y requiera la configuración de seguridad del sistema. Para más información, consulte [Configuración de restricciones de dispositivos Android for Work en Microsoft Intune](device-restrictions-android-for-work.md).
+    Si su empresa utiliza perfiles de trabajo Android, puede habilitar **Examen de amenazas en las aplicaciones** en los dispositivos inscritos. Establezca un perfil de dispositivo y requiera la configuración de seguridad del sistema. Para obtener más información, consulte [Configuración de las restricciones de dispositivos de perfil de trabajo Android en Microsoft Intune](device-restrictions-android-for-work.md).
 
  - **Atestación de dispositivo SafetyNet**  
    Defina el nivel de integridad de atestación de dispositivo SafetyNet que se debe cumplir. Los niveles incluyen **No configurado**, **Comprobar integridad básica** y **Comprobar integridad básica y dispositivos certificados**.

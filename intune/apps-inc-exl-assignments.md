@@ -15,12 +15,12 @@ ms.assetid: c59f6df5-3317-4dff-8f19-fdeec33faedf
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4a2afba3eafb32a06ff19e2cbbf3b87d27edccf0
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 1ec9a45ca09ddff5aa10cc7283444cf96c8153f6
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224670"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905417"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Inclusión y exclusión de asignaciones de aplicaciones en Microsoft Intune
 
@@ -37,7 +37,7 @@ Intune no tiene en cuenta la asociación de usuarios y dispositivos al excluir g
 >
 > Intune proporciona grupos **Todos los usuarios** y **Todos los dispositivos** ya creados en la consola. De forma práctica, los grupos llevan incorporadas optimizaciones. Es muy recomendable usar estos grupos para dirigirse a todos los usuarios y todos los dispositivos en lugar de a cualquier grupo "todos los usuarios" o "todos los dispositivos" que haya podido crear usted mismo.  
 >
-> Android Enterprise (antes conocido como Android for Work) admite grupos de inclusión y de exclusión. Puede aprovechar los grupos integrados **Todos los usuarios** y **Todos los dispositivos** para la asignación de aplicaciones de Android Enterprise. 
+> Android Enterprise admite grupos incluidos y excluidos. Puede aprovechar los grupos integrados **Todos los usuarios** y **Todos los dispositivos** para la asignación de aplicaciones de Android Enterprise. 
 
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>Inclusión y exclusión de grupos al asignar aplicaciones 

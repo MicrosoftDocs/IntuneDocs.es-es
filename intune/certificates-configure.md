@@ -14,12 +14,12 @@ ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 89f8ddc105787bc7ff4f7cfc1e226d28589ecbbf
-ms.sourcegitcommit: 9536300a6211bac4bdc733593a40c1ae47611de3
+ms.openlocfilehash: 9329a57ee7d47cb99a7c87326bb043c0a04c6313
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
-ms.locfileid: "31771812"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905213"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Configuración de un perfil de certificado para sus dispositivos en Microsoft Intune
 
@@ -43,7 +43,7 @@ Cada uno de estos tipos de certificado tiene sus propios requisitos previos y de
     - iOS 8.0 y versiones posteriores
     - macOS 10.11 y versiones posteriores
     - Android 4.0 y versiones posteriores
-    - Android for Work
+    - Perfil de trabajo Android
     - Windows 8.1 y posterior
     - Windows Phone 8.1 y versiones posteriores
     - Windows 10 y versiones posteriores
@@ -52,7 +52,7 @@ Cada uno de estos tipos de certificado tiene sus propios requisitos previos y de
 
    - iOS 8.0 y versiones posteriores
    - Android 4.0 y versiones posteriores
-   - Android for Work
+   - Perfil de trabajo Android
    - Windows 10 para escritorios y Windows 10 Mobile y versiones posteriores
 
    Solo puede usar un perfil de certificado **SCEP** para dispositivos que ejecutan las siguientes plataformas:
@@ -95,7 +95,7 @@ Cree un perfil de certificado de confianza para poder crear un perfil de certifi
 5. En la lista desplegable **Plataforma**, seleccione la plataforma de dispositivo para este certificado de confianza. Actualmente, puede elegir una de las siguientes plataformas para la configuración del certificado:
 
     - **Android**
-    - **Android for Work**
+    - **Android Enterprise**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**

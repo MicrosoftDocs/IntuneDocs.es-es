@@ -1,52 +1,61 @@
 ---
-title: Configuración del correo electrónico de Microsoft Intune para dispositivos que ejecutan Windows 10
-titleSuffix: ''
-description: Obtenga información sobre las opciones de configuración de Microsoft Intune que puede usar para configurar el correo electrónico en dispositivos que ejecutan Windows 10.
+title: Configuración de correo electrónico para dispositivos Windows 10 en Microsoft Intune - Azure | Microsoft Docs
+description: Cree un perfil de correo electrónico de configuración de dispositivos que use servidores de Exchange y recupere los atributos de Azure Active Directory. También puede habilitar SSL y sincronizar el correo electrónico y los programas en dispositivos Windows 10 con Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 6/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a04f2267bd4a232fb687f7f77f66e439e6804099
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 04834f21e5fd2f6ed0f7454988936397d3249987
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831165"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37904975"
 ---
-# <a name="email-profile-settings-in-microsoft-intune-for-devices-running-windows-10"></a>Configuración de perfiles de correo electrónico en Microsoft Intune para dispositivos que ejecutan Windows 10
+# <a name="email-profile-settings-for-devices-running-windows-10---intune"></a>Configuración del perfil de correo electrónico para dispositivos que ejecuten Windows 10 Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+Use la configuración del perfil de correo electrónico para configurar los dispositivos que funcionan con Windows 10.
 
-En este artículo, se muestran las opciones de configuración de perfiles de correo electrónico que puede configurar para los dispositivos que ejecutan Windows 10.
+- **Servidor de correo electrónico**: indique el nombre de host del servidor Exchange.
+- **Nombre de la cuenta**: indique el nombre para mostrar en la cuenta de correo electrónico. Este nombre se muestra en los dispositivos de los usuarios.
+- **Atributo de nombre de usuario de AAD**: este nombre es el atributo que Intune obtiene de Azure Active Directory (AAD). Intune genera dinámicamente el nombre de usuario que usa este perfil. Las opciones son:
+  - **Nombre principal de usuario**: obtiene el nombre, como `user1` o `user1@contoso.com`.
+  - **Dirección SMTP principal**: obtiene el nombre en formato de dirección de correo electrónico, como `user1@contoso.com`.
+  - **Nombre de la cuenta sAM**: requiere el dominio, como `domain\user1`.
 
+    Indique también:  
+    - **Origen del nombre de dominio de usuario**: elija **AAD** (Azure Active Directory) o **Personalizar**.
 
-- **Servidor de correo electrónico**: el nombre de host del servidor de Exchange.
-- **Nombre de la cuenta**: el nombre para mostrar de la cuenta de correo electrónico tal y como aparecerá para los usuarios en sus dispositivos.
-- **Atributo de nombre de usuario de AAD**: es el atributo de Active Directory (AD) o Azure AD que se usa para generar el nombre de usuario de este perfil de correo electrónico. Seleccione la **dirección SMTP principal**, como **user1@contoso.com**, o el **nombre principal de usuario**, como **usuario1** o **user1@contoso.com**.
-- **Atributo de dirección de correo electrónico de AAD**: cómo se genera la dirección de correo electrónico para el usuario en cada dispositivo. Seleccione **Dirección SMTP primaria** para usar la dirección SMTP primaria para iniciar sesión en Exchange o **Nombre principal de usuario** para usar el nombre principal completo como dirección de correo electrónico.
+      Si quiere obtener los atributos de **AAD**, escriba:
+      - **Atributo de nombre de dominio de usuario de AAD**: elija si quiere obtener el atributo **Nombre de dominio completo** o **Nombre de NetBIOS** del usuario
 
+      Si quiere usar los atributos **Personalizados**, escriba:
+      - **Nombre de dominio personalizado que quiere usar**: escriba un valor que Intune use como nombre de dominio, como `contoso.com` o `contoso`.
+
+- **Atributo Dirección de correo electrónico de AAD**: elija cómo se genera la dirección de correo electrónico para el usuario. Seleccione **Nombre principal de usuario** (`user1@contoso.com` o `user1`) para usar el nombre principal completo como dirección de correo electrónico o **Dirección SMTP principal** (`user1@contoso.com`) para usar la dirección SMTP principal para iniciar sesión en Exchange.
 
 ## <a name="security-settings"></a>Configuración de seguridad
 
 - **SSL**: use la comunicación de Capa de sockets seguros (SSL) al enviar correos electrónicos, recibir correos electrónicos y comunicarse con el servidor Exchange.
 
-
-
 ## <a name="synchronization-settings"></a>Configuración de sincronización
 
-- **Cantidad de correo electrónico para sincronizar**: elija el número de días de correo electrónico que quiere sincronizar, o seleccione **Unlimited** (Sin límite) para sincronizar todos el correo electrónico disponible.
-- **Programación de sincronización**: seleccione la programación según la cual los dispositivos sincronizarán datos de Exchange Server. También puede seleccionar **Cuando llegan los mensajes** (los datos se sincronizan tan pronto como llegan) o **Manual** (el usuario del dispositivo debe iniciar la sincronización).
+- **Cantidad de correo electrónico para sincronizar**: elija el número de días de correo electrónico que quiere sincronizar. También puede seleccionar **Ilimitado** para sincronizar todo el correo electrónico disponible.
+- **Programación de la sincronización**: seleccione la programación para que los dispositivos sincronicen datos del servidor de Exchange También puede seleccionar **Cuando llegan los mensajes** (los datos se sincronizan tan pronto como llegan) o **Manual** (el usuario del dispositivo debe iniciar la sincronización).
 
 ## <a name="content-sync-settings"></a>Configuración de la sincronización de contenido
 
 - **Tipo de contenido para sincronizar**: seleccione los tipos de contenido que quiere sincronizar con los dispositivos:
-    - **Contactos**
-    - **Calendarioio**
-    - **Tareas**
+  - **Contactos**
+  - **Calendarioio**
+  - **Tareas**
+
+## <a name="next-steps"></a>Pasos siguientes
+[Configuración de las opciones de correo electrónico en Intune](email-settings-configure.md)

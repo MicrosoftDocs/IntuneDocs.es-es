@@ -15,12 +15,12 @@ ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9b17cb50ead094962196bb030c3a18e4119c6904
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7eee5baebb8373488999a5e75db5288e483379e5
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31026336"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905825"
 ---
 # <a name="set-enrollment-restrictions"></a>Establecer restricciones de inscripción
 
@@ -39,14 +39,14 @@ Las restricciones de inscripción específicas que se pueden crear son:
 - Número máximo de dispositivos inscritos.
 - Plataformas de dispositivo que se pueden inscribir:
   - Android.
-  - Android for Work.
+  - Perfil de trabajo Android.
   - iOS.
   - macOS.
   - Windows.
-- Versión del sistema operativo de la plataforma para iOS, Android, Android for Work y Windows (solo se pueden usar las versiones de Windows 10; déjelo en blanco si se admite Windows 8.1).
+- Versión del sistema operativo de la plataforma para iOS, Android, perfil de trabajo Android y Windows (solo se pueden usar las versiones de Windows 10; déjelo en blanco si se admite Windows 8.1).
   - Versión mínima.
   - Versión máxima.
-- Restricción de los dispositivos de propiedad personal (solo iOS, Android, Android for Work y macOS).
+- Restricción de los dispositivos de propiedad personal (solo iOS, Android, perfil de trabajo Android y macOS).
 
 ## <a name="default-restrictions"></a>Restricciones predeterminadas
 
@@ -78,7 +78,7 @@ Puede cambiar la configuración de una restricción de tipo de dispositivo media
 5. Bajo el nombre de la restricción (**Todos los usuarios** para la restricción predeterminada), seleccione **Plataformas**. Pulse **Permitir** o **Bloquear** para cada plataforma de la lista.
 6. Seleccione **Guardar**.
 7. Bajo el nombre de la restricción (**Todos los usuarios** para la restricción predeterminada), seleccione **Configuraciones de plataforma**. Después, seleccione las **versiones** mínima y máxima de las plataformas especificadas. Entre las versiones admitidas se incluyen:
-    - Android y Android for Work admiten major.minor.rev.build.
+    - El perfil de trabajo Android admite major.minor.rev.build.
     - iOS admite major.minor.rev.
     - Windows admite major.minor.rev.build únicamente para Windows 10.
   Las versiones de sistema operativo no son relevantes en dispositivos Apple que se inscriban en el Programa de inscripción de dispositivos, Apple School Manager ni la aplicación Apple Configurator.
@@ -88,9 +88,9 @@ Puede cambiar la configuración de una restricción de tipo de dispositivo media
 
 
 >[!NOTE]
->- Si bloquea los dispositivos Android de propiedad personal de la inscripción, los dispositivos Android for Work de propiedad personal todavía pueden inscribirse.
->- De forma predeterminada, la configuración de los dispositivos Android for Work es igual que la configuración de los dispositivos Android. Dejará de ser así después de modificar la configuración de Android for Work.
->- Si bloquea la inscripción de Android for Work personal, tan solo los dispositivos Android corporativos podrán inscribirse como Android for Work.
+>- Si bloquea los dispositivos Android de propiedad personal de la inscripción, los dispositivos de perfil de trabajo Android de propiedad personal todavía pueden inscribirse.
+>- De forma predeterminada, la configuración de los dispositivos de perfil de trabajo Android es igual que la configuración de los dispositivos Android. Dejará de ser así después de modificar la configuración del perfil de trabajo Android.
+>- Si bloquea la inscripción del perfil de trabajo Android personal, tan solo los dispositivos Android corporativos podrán inscribirse como perfil de trabajo Android.
 
 ## <a name="set-device-limit-restrictions"></a>Establecer restricciones de límite de dispositivos
 

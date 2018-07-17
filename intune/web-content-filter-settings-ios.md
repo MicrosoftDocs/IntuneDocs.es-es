@@ -14,12 +14,12 @@ ms.technology: ''
 ms.reviewer: karanda
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c8eb121b3db52f0fdfc30d7d8dff7ef0f7bf97b
-ms.sourcegitcommit: f21287c66dd5559688f08bd98b6c976a0dea055d
+ms.openlocfilehash: 24be76637257a3252d6660e8912d7fd2e214dccf
+ms.sourcegitcommit: 4ef14cc543b73191862201c1e0bae44dddd7d9f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/31/2018
-ms.locfileid: "34456357"
+ms.lasthandoff: 07/09/2018
+ms.locfileid: "37921355"
 ---
 # <a name="web-content-filter-settings-for-ios-devices"></a>Configuración de filtro de contenido web para dispositivos iOS
 
@@ -58,7 +58,7 @@ Si no especifica ninguna dirección URL, los usuarios finales no pueden acceder 
 ## <a name="specific-websites-only"></a>Solo sitios web específicos
 
 1. En el panel **Filtro de contenido web**, configure las siguientes opciones para cada sitio web que quiera permitir:
-    - **Dirección URL**: escriba la dirección URL del sitio web que quiere permitir, por ejemplo, **http://www.contoso.com**.
+    - **Dirección URL**: escriba la dirección URL del sitio web que quiere permitir, por ejemplo, `https://www.contoso.com`.
     - **Ruta de acceso de marcador**: escriba la ruta de acceso al lugar donde desea almacenar el marcador, por ejemplo, **/Contoso/Business Apps**. Si no agrega una ruta de acceso, el marcador se agregará a la carpeta predeterminada de marcadores del dispositivo.
     - **Título**: escriba un título descriptivo para el marcador.
 2. Haga clic en **Agregar** después de escribir la información de cada sitio web.

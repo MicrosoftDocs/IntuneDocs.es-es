@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11f1a48b5b2dcff421603dd4538ff054d174fe66
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 09c4fdc6de0368e7ba7d4bebbc3ebfbf2c5ec378
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223414"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869379"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Asignación de aplicaciones de Office 365 a dispositivos Windows 10 con Microsoft Intune
 
@@ -47,7 +47,7 @@ Este tipo de aplicación facilita la asignación de aplicaciones de Office 365 a
 3. En el panel **Intune**, seleccione **Aplicaciones móviles**.
 4. En el panel de carga de trabajo **Aplicaciones móviles**, en **Administrar**, seleccione **Aplicaciones**.
 5. Seleccione **Agregar**.
-6. En el panel **Agregar aplicaciones**, en la lista **Tipo de aplicación**, vaya a **Office 365** y seleccione **Windows 10**.
+6. En el panel **Agregar aplicaciones**, en la lista **Tipo de aplicación**, vaya a **Office 365 Suite** y seleccione **Windows 10**.
 
 Ahora puede configurar el conjunto de aplicaciones.
 
@@ -71,15 +71,15 @@ En este paso, proporcionará información sobre el conjunto de aplicaciones. Est
 2. En el panel **App Suite Information** (Información del conjunto de aplicaciones), haga lo siguiente:
     - **Nombre del conjunto**: escriba el nombre del conjunto tal como se muestra en el Portal de empresa. Asegúrese de que todos los nombres de conjuntos de aplicaciones que use sean únicos. Si el mismo nombre del conjunto ya existe, solo se muestra una de las aplicaciones a los usuarios en el portal de empresa.
     - **Descripción del conjunto**: escriba una descripción del conjunto de aplicaciones. Por ejemplo, podría mostrar las aplicaciones que seleccionó para incluir.
-    - **Editor**: escriba el nombre del editor de la aplicación.
+    - **Publicador**: Microsoft aparece como publicador.
     - **Categoría**: de manera opcional, seleccione una o más categorías de aplicaciones integradas o una categoría que haya creado. Este valor facilita que los usuarios encuentren el conjunto de aplicaciones cuando exploren el portal de empresa.
     - **Mostrar como aplicación destacada en el Portal de empresa**: seleccione esta opción para mostrar el conjunto de aplicaciones de forma destacada en la página principal del Portal de empresa cuando los usuarios busquen aplicaciones.
     - **Dirección URL de información**: opcionalmente, escriba la dirección URL de un sitio web que contenga información sobre esta aplicación. La dirección URL se muestra a los usuarios en el portal de empresa.
     - **Dirección URL de privacidad**: opcionalmente, escriba la dirección URL de un sitio web que contenga información de privacidad sobre esta aplicación. La dirección URL se muestra a los usuarios en el portal de empresa.
-    - **Desarrollador**: opcionalmente, escriba el nombre del desarrollador de la aplicación.
-    - **Propietario**: opcionalmente, escriba un nombre para el propietario de esta aplicación (por ejemplo, *Departamento de Recursos Humanos*).
+    - **Desarrollador**: Microsoft aparece como desarrollador.
+    - **Propietario**: Microsoft aparece como propietario.
     - **Notas**: escriba las notas que desea asociar a esta aplicación.
-    - **Logotipo**: cargue un icono que se muestre con la aplicación cuando los usuarios examinen el Portal de empresa.
+    - **Logotipo**: el logotipo de Office 365 se muestra con la aplicación cuando los usuarios buscan en el Portal de empresa.
 3. Seleccione **Aceptar**.
 
 ## <a name="configure-app-settings"></a>Configuración de aplicaciones

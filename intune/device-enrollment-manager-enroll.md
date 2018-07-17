@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0a32eb1d65710bf09d61c0846a8d949d5cd99ed2
-ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
+ms.openlocfilehash: b18a55d7bd37ab32f6b2f64eee00489389ea323d
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34216333"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905230"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Inscripción de dispositivos mediante una cuenta de administrador de inscripción de dispositivos
 
@@ -35,7 +35,7 @@ Los usuarios deben existir en [Azure Portal](https://portal.azure.com) para pode
 
 ## <a name="example-of-a-device-enrollment-manager-scenario"></a>Ejemplo de escenario de administrador de inscripción de dispositivos
 
-Un restaurante quiere proporcionar 50 tabletas de punto de venta para los camareros y monitores de pedidos para el personal de cocina. Los empleados nunca necesitan acceder a los datos de la empresa ni iniciar sesión como usuarios. El administrador de Intune crea una cuenta de administrador de inscripción de dispositivos y agrega un supervisor restaurante a la cuenta DEM. Ahora, el supervisor tiene capacidades DEM. El supervisor puede inscribir ahora los 50 dispositivos de tabletas mediante las credenciales DEM.
+Un restaurante quiere proporcionar 50 tabletas de punto de venta para los camareros y monitores de pedidos para el personal de cocina. Los empleados nunca necesitan acceder a los datos de la empresa ni iniciar sesión como usuarios. El administrador de Intune crea una cuenta de administrador de inscripción de dispositivos para el supervisor restaurante.  Esta cuenta es independiente de la cuenta principal del supervisor y solo se usa con la finalidad de inscribir dispositivos compartidos con Intune. El supervisor puede inscribir ahora los 50 dispositivos de tabletas mediante las credenciales DEM.
 
 Solo los usuarios de [Azure Portal](https://portal.azure.com) pueden ser administradores de inscripción de dispositivos. El usuario administrador de inscripción de dispositivos no puede ser un administrador de Intune.
 
@@ -54,7 +54,7 @@ Los dispositivos inscritos con una cuenta de administrador de inscripción de di
   - Solo el dispositivo local aparece en el sitio web o en la aplicación de Portal de empresa.
   - Los usuarios no pueden usar aplicaciones del Programa de Compras por Volumen de Apple (PCV) con las licencias de usuario debido a los requisitos de identificador de Apple por usuario para la administración de aplicaciones.
   - (Solo iOS) Si usa DEM para inscribir dispositivos iOS, no podrá usar Apple Configurator, el Programa de inscripción de dispositivos de Apple (DEP) o Apple School Manager (ASM) para inscribir dispositivos.
-  - (Solo Android) Existe un límite en cuanto a número de dispositivos Android for Work que se pueden inscribir con una sola cuenta DEM. Se puede inscribir un máximo de 10 dispositivos Android for Work por cada cuenta DEM. Esta limitación no engloba los dispositivos Android heredados.
+  - (Solo Android) Existe un límite en cuanto a número de dispositivos de perfil de trabajo Android que se pueden inscribir con una sola cuenta DEM. Se puede inscribir un máximo de 10 dispositivos Android for Work por cada cuenta DEM. Esta limitación no engloba los dispositivos Android heredados.
   - Los dispositivos pueden instalar aplicaciones de PCV si disponen de licencias de dispositivo.
   - Cada dispositivo requiere una licencia. Más información sobre [licencias de usuario y dispositivo](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).
 

@@ -1,5 +1,5 @@
 ---
-title: 'Uso de una configuración de dispositivo personalizada en Microsoft Intune: Azure | Microsoft Docs'
+title: Uso de una configuración de dispositivo personalizada en Microsoft Intune - Azure | Microsoft Docs
 description: Agregue o cree un perfil para usar una configuración personalizada para dispositivos iOS, Android y Windows mediante Microsoft Intune
 keywords: ''
 author: MandiOhlinger
@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce7c263435f92a041b93dc5d34ffa912c6fa87fb
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d917d2449e75b89db00d453b72940a93efb03321
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021887"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905009"
 ---
 # <a name="create-a-profile-with-custom-settings-in-intune"></a>Crear un perfil con una configuración personalizada en Intune
 
@@ -39,7 +39,7 @@ La configuración personalizada se puede realizar de forma diferente en cada pla
 5. En la lista desplegable **Plataforma**, seleccione la plataforma del dispositivo a la que quiere aplicar la configuración personalizada. Puede usar cualquiera de las plataformas siguientes:
 
     - **Android**
-    - **Android for Work**
+    - **Android Enterprise**
     - **iOS**
     - **macOS**
     - **Windows Phone 8.1**
@@ -55,7 +55,7 @@ La configuración personalizada se puede realizar de forma diferente en cada pla
     - [Configuración de Windows Phone 8.1](custom-settings-windows-phone-8-1.md)
     - [Configuración de Windows 10](custom-settings-windows-10.md)
     - [Configuración de Windows Holographic for Business](custom-settings-windows-holographic.md)
-    - [Configuración de Android for Work](custom-settings-android-for-work.md)
+    - [Configuración de perfil de trabajo de Android](custom-settings-android-for-work.md)
 
 8. Cuando termine, seleccione **Crear**.
 

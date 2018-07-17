@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
-ms.openlocfilehash: 7fb86ae8d3163e14581ee495004b74f684d30cec
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 0a080660fcc1b285e0ed00b76a94c2f0cc1ba40a
+ms.sourcegitcommit: c78923b0d5b320322c828b1bbea2deb9062e30d2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31832774"
+ms.lasthandoff: 07/05/2018
+ms.locfileid: "37844970"
 ---
 # <a name="technology-decisions-for-enabling-byod-with-microsoft-enterprise-mobility--security-ems"></a>Decisiones de tecnología para habilitar BYOD con Microsoft Enterprise Mobility + Security (EMS)
 
@@ -39,7 +39,7 @@ Puede impulsar fácilmente a los usuarios a inscribir sus dispositivos en la adm
 **Cumplimiento**: algunas organizaciones deben cumplir directivas reglamentarias u otras que exijan controles de MDM concretos. Por ejemplo, necesita que MDM cifre todo el dispositivo o elabore un informe de todas las aplicaciones del dispositivo.
 
 ## <a name="common-reasons-to-only-manage-the-apps-mam"></a>Razones habituales para administrar solo las aplicaciones (MAM)
-MAM sin MDM es muy popular en organizaciones que admiten BYOD. Puede impulsar a los usuarios a acceder al correo electrónico desde Outlook Mobile (que admite las protecciones de MAM) si implementa una directiva de acceso condicional en Exchange Online. Estos son los motivos por los que es posible que quiera administrar únicamente las aplicaciones de los dispositivos personales:
+MAM sin MDM es muy popular en organizaciones que admiten BYOD. Puede sugerir a los usuarios que accedan al correo electrónico desde Outlook Mobile (compatible con las protecciones de MAM) implementando una directiva de acceso condicional en Exchange Online. Estos son los motivos por los que es posible que quiera administrar únicamente las aplicaciones de los dispositivos personales:
 
 **Experiencia de usuario**: la inscripción de MDM incluye muchos mensajes de advertencia (aplicados por la plataforma) que suelen dar lugar a que el usuario desista de acceder al correo electrónico en el dispositivo personal después de todo. MAM es mucho menos alarmante para los usuarios, ya que simplemente aparece un mensaje emergente una vez para informar de que se han aplicado las protecciones de MAM.
 

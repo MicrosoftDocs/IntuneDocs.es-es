@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,16 +15,16 @@ ms.assetid: 2372332a-7e3a-4a9c-91a9-86654e0fabe2
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 78158afeb9c12e8056f42066be78c37f962b4462
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: bffd53030c23f38f0548cb5bccf82f6dd5e85779
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223618"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869512"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>Asignación de Office 365 a dispositivos macOS con Microsoft Intune
 
-El tipo *Aplicación de la Tienda* facilita la asignación de aplicaciones de Office 365 a los dispositivos macOS. Con este tipo de aplicación, puede instalar Word, Excel, PowerPoint, Outlook y OneNote. Para ayudar a mantener las aplicaciones más seguras y actualizadas, las aplicaciones incluyen Microsoft AutoUpdate (MAU). Las aplicaciones que desea se muestran como una aplicación en la lista de aplicaciones de la consola de Intune.
+Este tipo de aplicación facilita la asignación de aplicaciones de Office 365 2016 a los dispositivos macOS. Con este tipo de aplicación, puede instalar Word, Excel, PowerPoint, Outlook y OneNote. Para ayudar a mantener las aplicaciones más seguras y actualizadas, las aplicaciones incluyen Microsoft AutoUpdate (MAU). Las aplicaciones que desea se muestran como una aplicación en la lista de aplicaciones de la consola de Intune.
 
 
 ## <a name="before-you-start"></a>Antes de empezar
@@ -70,7 +70,7 @@ En este paso, configure las asignaciones para el conjunto de aplicaciones.
 2. En el panel **Office 365**, seleccione **Asignaciones**.
 3. Para agregar un grupo que usará el conjunto de aplicaciones, seleccione **Agregar grupo**.  
     Aparece el panel **Agregar grupo**.
-4. Establezca **Tipo de asignación** en **Obligatoria**.
+4. Establezca **Tipo de asignación** en **Obligatoria** o **Disponible**.
 5. Asigne el conjunto de aplicaciones a los grupos seleccionados. Para más información, consulte [Asignación de aplicaciones a grupos con Microsoft Intune](apps-deploy.md).
 
     >[!Note]

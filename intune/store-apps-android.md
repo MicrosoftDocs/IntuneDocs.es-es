@@ -15,12 +15,12 @@ ms.assetid: 4433000a-23e9-4cad-a818-48c28eedc1f5
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f62cb3a99a9cfd328cc041f095b0980eacc99852
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 4fc64f672a5c488848303f8d5ea5ea1467b0b195
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224704"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869513"
 ---
 # <a name="add-android-store-apps-to-microsoft-intune"></a>Agregar aplicaciones de la Tienda Android a Microsoft Intune
 
@@ -31,12 +31,11 @@ Antes de asignar una aplicación a un dispositivo o a un grupo de usuarios, prim
 1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
 2. Seleccione **Todos los servicios** > **Intune**.  
     Intune se encuentra en la sección **Supervisión y administración**.
-1. En el panel **Intune**, seleccione **Aplicaciones móviles**.
-2. En el panel de carga de trabajo **Aplicaciones móviles**, en **Administrar**, seleccione **Aplicaciones**.
-3. Seleccione **Agregar**.
-4. En el panel **Agregar aplicación**, en los tipos de **Aplicaciones de la Tienda** disponibles, seleccione **Android**.
-5. Para configurar la información de la aplicación, seleccione **Configurar** y luego proporcione la siguiente información.  
-    Según la aplicación que haya elegido, algunos de los valores pueden haberse rellenado automáticamente.
+3. En el panel **Intune**, seleccione **Aplicaciones móviles**.
+4. En el panel de carga de trabajo **Aplicaciones móviles**, en **Administrar**, seleccione **Aplicaciones**.
+5. Seleccione **Agregar**.
+6. En el panel **Agregar aplicación**, en los tipos de **Aplicaciones de la Tienda** disponibles, seleccione **Android**.
+7. Para configurar la información de la aplicación, seleccione **Configurar** y luego proporcione la siguiente información. Para aplicaciones Android, vaya a [Google Play](https://play.google.com/store) y busque la aplicación que quiera implementar. Seleccione la aplicación y anote los detalles de la aplicación. Según la aplicación que haya elegido, algunos de los valores pueden haberse rellenado automáticamente.
     - **Nombre**: escriba el nombre de la aplicación como se va a mostrar en el Portal de empresa. Asegúrese de que cualquier nombre de aplicación que use sea exclusivo. Si hay un nombre de aplicación duplicado, solo se muestra uno a los usuarios del Portal de empresa.
     - **Descripción:** escriba una descripción de la aplicación. Esta descripción se muestra a los usuarios del Portal de empresa.
     - **Editor**: escriba el nombre del editor de la aplicación.

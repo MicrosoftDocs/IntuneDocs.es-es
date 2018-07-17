@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1542fc3-672e-47c1-a21f-82826a2f8ac4
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5d99812c57596e10d0cdfa2c0f4504f8a6ac583c
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 767402326c2b87043eea776a83d58a08072cd301
+ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223805"
+ms.lasthandoff: 07/06/2018
+ms.locfileid: "37869345"
 ---
 # <a name="get-started-with-adding-apps-in-microsoft-intune"></a>Introducción a la adición de aplicaciones en Microsoft Intune
 
@@ -31,6 +31,9 @@ Intune le permite agregar y asignar estos tipos de aplicación a los dispositivo
 - **Aplicaciones escritas internamente (línea de negocio)**: donde carga un archivo que se descarga en los dispositivos de los usuarios.
 - **Aplicaciones integradas**: donde asigna aplicaciones administradas y seleccionadas, como aplicaciones de Office 365, a dispositivos iOS y Android.
 - **Aplicaciones en la web**: donde Intune crea un acceso directo a la aplicación web en la pantalla principal del dispositivo.
+
+> [!NOTE]
+> Las nuevas directivas aplicadas a un grupo dinámico de dispositivos pueden tardar hasta ocho horas en propagarse a todos los dispositivos del grupo.
 
 ## <a name="how-do-i-assign-a-public-store-app"></a>¿Cómo asigno una aplicación de almacén público?
 

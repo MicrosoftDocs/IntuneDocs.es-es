@@ -1,27 +1,20 @@
----
-title: Ventajas del SDK para aplicaciones de Intune
-titlesuffix: Microsoft Intune
-description: El SDK para aplicaciones de Intune está disponible para las plataformas iOS y Android y, gracias a él, podrá habilitar las características de administración de aplicaciones móviles con Microsoft Intune.
-keywords: ''
-author: Erikre
-ms.author: erikre
-manager: dougeby
-ms.date: 05/15/2018
-ms.topic: article
-ms.prod: ''
-ms.service: microsoft-intune
-ms.technology: ''
-ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
-ms.reviewer: aanavath
-ms.suite: ems
+--
+# <a name="required-metadata"></a>metadatos necesarios
+
+title: Ventajas del SDK para aplicaciones de Intune titlesuffix: Descripción de Microsoft Intune: El SDK para aplicaciones de Microsoft Intune está disponible para las plataformas iOS y Android y, gracias a él, podrá habilitar las características de administración de aplicaciones móviles con Microsoft Intune.
+keywords: author: Erikre ms.author: erikre manager: dougeby ms.date: 15/05/2018 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
+
+# <a name="optional-metadata"></a>metadatos opcionales
+
+#<a name="robots"></a>ROBOTS:
+#<a name="audience"></a>destinatarios:
+#<a name="msdevlang"></a>ms.devlang:
+ms.reviewer: aanavath ms.suite: ems
+#<a name="mstgtpltfrm"></a>ms.tgt_pltfrm:
 ms.custom: intune-classic
-ms.openlocfilehash: 33e1cb6953891fa6d62841d10bc8011768938ee1
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223584"
+
 ---
+
 # <a name="intune-app-sdk-overview"></a>Información general del SDK para aplicaciones de Intune
 El SDK de aplicaciones de Intune, disponible para iOS y Android, habilita su aplicación para las directivas de protección de aplicaciones de Intune. Su objetivo es minimizar la cantidad de cambios de código que debe realizar el desarrollador de la aplicación. Verá que puede habilitar la mayoría de las características del SDK sin necesidad de cambiar el comportamiento de la aplicación. Para obtener una experiencia de administrador de TI y de usuario final mejorada, puede usar nuestras API con el objetivo de personalizar el comportamiento de la aplicación para aquellas características que requieren la participación de esta.
 
@@ -50,7 +43,7 @@ Los administradores de TI pueden forzar los vínculos web de la aplicación para
 Los administradores de TI pueden solicitar al usuario final que escriba un PIN antes de tener acceso a los datos corporativos de la aplicación. Esto garantiza que el usuario que usa la aplicación sea el mismo que en un principio inició sesión con su cuenta profesional o educativa. Cuando los usuarios finales configuran su PIN, el SDK de aplicaciones de Intune usa Azure Active Directory para comprobar las credenciales de los usuarios finales con la cuenta de Intune inscrita.
 
 ### <a name="require-users-to-sign-in-with-work-or-school-account-for-app-access"></a>Requerir que los usuarios inicien sesión con su cuenta profesional o educativa para el acceso a la aplicación
-Los administradores de TI pueden solicitar a los usuarios que inicien sesión con su cuenta profesional o educativa para tener acceso a la aplicación. El SDK de la aplicación de Intune usa Azure Active Directory para proporcionar una experiencia de inicio de sesión única, en la que las credenciales, una vez introducidas, se vuelven a usar para los inicios de sesión posteriores. Además, se admite la autenticación de las soluciones de administración de identidades federadas con Azure Active Directory.
+Los administradores de TI pueden solicitar a los usuarios que inicien sesión con su cuenta profesional o educativa para tener acceso a la aplicación. El SDK de la aplicación de Intune usa Azure Active Directory para proporcionar una experiencia de inicio de sesión única, en la que las credenciales, una vez indicadas, se vuelven a usar para los inicios de sesión posteriores. Además, se admite la autenticación de las soluciones de administración de identidades federadas con Azure Active Directory.
 
 ### <a name="check-device-health-and-compliance"></a>Comprobar el cumplimiento y el estado del dispositivo
 Los administradores de TI pueden comprobar el estado del dispositivo y su cumplimiento de las directivas de Intune antes de que los usuarios finales accedan a la aplicación. En iOS, esta directiva comprueba si se ha descodificado el dispositivo. En Android, esta directiva comprueba si se ha descifrado el dispositivo.
@@ -70,3 +63,8 @@ Esta característica de varias identidades ayuda a solucionar el problema de la 
 Muchos usuarios con dispositivos personales quieren tener acceso a los datos corporativos sin inscribir sus dispositivos personales con un proveedor de administración de dispositivos móviles (MDM). Debido a que la inscripción en MDM requiere el control global del dispositivo, los usuarios dudan a menudo a la hora de conceder ese control de sus dispositivos personales a su empresa.
 
 La protección de aplicaciones sin la inscripción de dispositivos permite al servicio de Microsoft Intune implementar la directiva de protección de aplicaciones en una aplicación directamente, sin tener que depender de que un canal de administración de dispositivos que implemente la directiva.
+
+### <a name="on-demand-application-vpn-connections-with-citrix-mvpn"></a>Conexiones VPN de aplicación a petición con Citrix mVPN 
+Puede administrar dispositivos y aplicaciones con una combinación de Citrix XenMobile MDX y Microsoft Intune. Esta combinación le permite administrar aplicaciones con la directiva de protección de aplicaciones de Intune mientras usa tecnología mVPN de Citrix. La integración con Citrix está disponible para el SDK para aplicaciones de Intune para iOS y Android y con la Herramienta de ajuste de aplicaciones de Intune para iOS y Android (con la marca -citrix).
+ 
+Para obtener más información sobre Citrix MDX, vea [Acerca de MDX Toolkit](http://docs.citrix.com/en-us/mdx-toolkit/10/about-mdx-toolkit.html), [Empaquetado de aplicaciones móviles iOS](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html) y [Empaquetado de aplicaciones móviles Android](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-android.html).

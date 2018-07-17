@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 06/01/2018
+ms.date: 07/02/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dc349e22-9e1c-42ba-9e70-fb2ef980ef7a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bc7f827f121ad93498d22f6b9b246abf15dc76e3
-ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
+ms.openlocfilehash: 581d3c9762145a4681b421ededaaf9099e8ceb80
+ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34717985"
+ms.lasthandoff: 07/07/2018
+ms.locfileid: "37905893"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Asignación de aplicaciones a grupos con Microsoft Intune
 
@@ -59,7 +59,7 @@ En esta tabla se muestran las diversas opciones para asignar aplicaciones a usua
 7. Seleccione **Agregar grupo** para abrir el panel **Agregar grupo** que está relacionado con la aplicación.
 8. Para la aplicación específica, seleccione un **tipo de asignación**:
    - **Available for enrolled devices** (Disponible para dispositivos inscritos): los usuarios instalan la aplicación desde la aplicación o el sitio web del Portal de empresa.
-   - **Available with or without enrollment** (Disponible con o sin inscripción): se asigna esta aplicación a grupos de usuarios cuyos dispositivos no se han inscrito en Intune. Tenga en cuenta que el tipo **Android for Work** no admite esta opción. 
+   - **Available with or without enrollment** (Disponible con o sin inscripción): se asigna esta aplicación a grupos de usuarios cuyos dispositivos no se han inscrito en Intune. Las aplicaciones de Google Play administrado y de línea de negocio macOS no admiten esta opción. 
    - **Requerida**: la aplicación se instala en los dispositivos de los grupos seleccionados.
    - **Desinstalar**: la aplicación se desinstala de dispositivos de los grupos seleccionados.
 
