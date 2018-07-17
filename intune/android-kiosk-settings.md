@@ -2,8 +2,8 @@
 title: Configuración del quiosco multimedia para Android en Microsoft Intune - Azure | Microsoft Docs
 description: Configure dispositivos de quiosco multimedia en Android con una aplicación o con varias aplicaciones.
 keywords: ''
-author: ErikjeMS
-ms.author: erikje
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
 ms.date: 7/5/2018
 ms.topic: article
@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9158893b3ae2c2f70b08682a61cbba4d55b43710
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: f1aa88264ef277863f58d21baaa136c140c5c287
+ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909157"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37949550"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Configuración del quiosco multimedia para Android en Intune
 
@@ -32,7 +32,7 @@ Si el perfil de restricción de un dispositivo de quiosco multimedia se establec
 3. En la hoja **Crear perfil**, rellene los campos siguientes:
      - **Nombre**
      - **Plataforma**: Android Enterprise
-     - **Tipo de perfil**: Solo el propietario del dispositivo > Restricciones de dispositivos
+     - **Tipo de perfil**: Solo el propietario del dispositivo > Restricciones del dispositivo
 4. Elija **Configuración** > **Quiosco multimedia**.
 5. En **Modo de quiosco multimedia**, elija **Quiosco multimedia con una sola aplicación**.
 6. Elija **Seleccionar una aplicación administrada** y después seleccione en Google Play administrado la aplicación que quiera que sea la única disponible para los dispositivos que usen este perfil.

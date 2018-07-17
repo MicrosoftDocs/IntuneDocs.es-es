@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fb81e070542248f585717564f0a609a512389ae2
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 30f2bea4589e31f3012df1bd06e6327b923ec5d1
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905077"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38225449"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Introducción a las directivas de cumplimiento de dispositivos de Intune
 
@@ -88,7 +88,7 @@ Para usar las directivas de cumplimiento de dispositivos se requiere lo siguient
 
 Cuando un dispositivo se inscribe en Intune, se inicia el proceso de registro de Azure AD y se actualizan los atributos del dispositivo en Azure AD. Una parte clave de la información es el estado de cumplimiento del dispositivo. Este estado de cumplimiento lo usan las directivas de acceso condicional para bloquear o permitir el acceso al correo electrónico y otros recursos corporativos.
 
-En [Proceso de registro de Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/device-management-introduction) se proporciona más información.
+En [Proceso de registro de Azure AD](https://docs.microsoft.com/azure/active-directory/device-management-introduction) se proporciona más información.
 
 ### <a name="assign-a-resulting-device-configuration-profile-status"></a>Asignar un estado del perfil de configuración del dispositivo resultante
 
