@@ -14,12 +14,12 @@ ms.assetid: 4a94440c-11cb-11e8-b642-0ed5f89f718b
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: de71b0b542836be6c7d1e4a0c4483bb65a9cb9a3
-ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
+ms.openlocfilehash: 6e2da4fb0f32a5753e886f18987d6c2c299c9e65
+ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34216282"
+ms.lasthandoff: 07/11/2018
+ms.locfileid: "38224796"
 ---
 # <a name="licenses-that-include-intune"></a>Licencias que incluyen Intune
 
@@ -41,7 +41,7 @@ La siguiente tabla muestra qué versión de Intune está disponible en cada lice
 | Office 365 F1 | Ninguno | [Más información](https://www.microsoft.com/en-us/microsoft-365/enterprise/firstline) |
 | Microsoft 365 Empresa | Intune | [Más información](https://www.microsoft.com/en-us/microsoft-365/business) |
 | Office 365 Empresa Premium | Ninguno | [Más información](https://www.microsoft.com/en-us/microsoft-365/business) |
-| Azure Active Directory Free, Basic, Premium P1, Premium P2 | Ninguno | [Más información](https://azure.microsoft.com/en-us/pricing/details/active-directory/) |
+| Azure Active Directory Free, Basic, Premium P1, Premium P2 | Ninguno | [Más información](https://azure.microsoft.com/pricing/details/active-directory/) |
 
 Si un usuario se beneficia directa o indirectamente de cualquier característica cubierta por una licencia, se necesitará una licencia correcta.
 
