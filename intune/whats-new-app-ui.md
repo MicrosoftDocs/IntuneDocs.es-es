@@ -15,12 +15,12 @@ ms.assetid: b782e382-8deb-48a7-a437-d7c5a17163f1
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a7c961be9789309fdea57d1a97073c4292b20149
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 998df5181b553b33b570cd78d7f0e490336d7e95
+ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906080"
+ms.lasthandoff: 07/14/2018
+ms.locfileid: "39039393"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Actualizaciones de la interfaz de usuario para las aplicaciones de usuario final de Intune
 Obtenga más información sobre las actualizaciones que se han realizado en la interfaz de usuario para las aplicaciones que verán los usuarios finales en esta versión de Microsoft Intune. Entender estas actualizaciones puede ayudarle con las comunicaciones de usuario y cualquier documentación de actualización personalizada que haya creado para admitir su implementación. También puede ayudarle a comprender cómo solucionar mejor los posibles problemas a los que se enfrenten en caso de que sea necesario llamar al departamento de soporte técnico mediante el Portal de empresa.
@@ -29,7 +29,7 @@ Obtenga más información sobre las actualizaciones que se han realizado en la i
 
 ## <a name="week-of-april-23-2018"></a>Semana del 23 de abril de 2018
 #### <a name="updated-navigation-view-in-the-company-portal-app-for-windows-10----1195010---"></a>Vista de navegación actualizada en la aplicación Portal de empresa para Windows 10 <!-- 1195010 -->
-La aplicación Portal de empresa de Windows 10 se ha actualizado con la [vista de navegación del sistema de diseño fluido](https://docs.microsoft.com/en-us/windows/uwp/design/basics/navigation-basics). En la parte lateral de la aplicación, verá una lista estática vertical de todas las páginas de nivel superior. Haga clic en cualquier vínculo para ver y cambiar entre páginas rápidamente. Esta es la primera de varias actualizaciones que verá como parte de nuestros esfuerzos para crear una experiencia más adaptable, empática y familiar en Intune. 
+La aplicación Portal de empresa de Windows 10 se ha actualizado con la [vista de navegación del sistema de diseño fluido](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics). En la parte lateral de la aplicación, verá una lista estática vertical de todas las páginas de nivel superior. Haga clic en cualquier vínculo para ver y cambiar entre páginas rápidamente. Esta es la primera de varias actualizaciones que verá como parte de nuestros esfuerzos para crear una experiencia más adaptable, empática y familiar en Intune. 
 
 ![Captura de pantalla del panel de la aplicación Portal de empresa con la vista de navegación de diseño fluido](./media/1804_WindowsCP_Fluent_01.png)
 
@@ -429,7 +429,7 @@ Estos son los planes para mejorar la experiencia del usuario mediante la actuali
 
 ### <a name="ui-iwp"></a>Actualización de la experiencia de usuario en el sitio web de Portal de empresa <!--2000968-->
 
-Para abril habremos incluido una nueva experiencia de sitio web de Portal de empresa con actualizaciones de la interfaz de usuario, mejores flujos de trabajo mejorados y mejoras en cuanto a la accesibilidad. Esto abarca mejoras orientadas al cliente, como el uso compartido de aplicaciones y un mejor rendimiento global, para proporcionarle una experiencia más sencilla.
+A partir de agosto se va a presentar una nueva experiencia de sitio web de Portal de empresa con actualizaciones de la interfaz de usuario, flujos de trabajo mejorados y mejoras de accesibilidad. Esto abarca mejoras orientadas al cliente, como el uso compartido de aplicaciones y un mejor rendimiento global, para proporcionarle una experiencia más sencilla.
 
 Hemos incorporado algunas características nuevas (a raíz de comentarios de clientes como usted) que supondrán una tremenda mejora con respecto a la funcionalidad y facilidad de uso actuales:
 
