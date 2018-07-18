@@ -13,22 +13,22 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dd743bdb0eaf2e00c50aab85c497dd00aac773ed
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: a233c62b76901d9bad00aa6d8b2a8a4dd45dea96
+ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905162"
+ms.lasthandoff: 07/14/2018
+ms.locfileid: "39039308"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Restablecimiento o eliminación del código de acceso de un dispositivo en Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Para crear un código de acceso para un dispositivo, use la acción **Quitar código de acceso**.
+Para crear un código de acceso para un dispositivo, use la acción **Quitar código de acceso**. Esta acción le pide restablecer el PIN solo del perfil de trabajo. No se admite el restablecimiento del PIN del dispositivo en perfiles de trabajo de Android.
 
-## <a name="supported-platforms"></a>Plataformas compatibles
+## <a name="work-profile-pin-reset-supported-platforms"></a>Plataformas compatibles con el restablecimiento del PIN del perfil de trabajo
 
-- Dispositivos Android inscritos con un perfil de trabajo, versión 8.0 y posteriores
+- Dispositivos Android inscritos con un perfil de trabajo, versión 8.0 y posteriores 
 - Dispositivos Android en la versión 6.0 o anteriores
 - Dispositivos de quiosco de Android Enterprise
 - iOS 
@@ -49,11 +49,13 @@ Para crear un código de acceso para un dispositivo, use la acción **Quitar có
 
 ## <a name="resetting-android-work-profile-passcodes"></a>Restablecer códigos de acceso de perfil de trabajo Android
 
-Los dispositivos compatibles con perfiles de trabajo Android reciben una nueva contraseña de desbloqueo de perfil o un desafío de perfil administrado para el usuario final. En dispositivos de perfil de trabajo Android 8.0, los usuarios finales reciben una notificación para activar su token de restablecimiento de código de acceso justo después de que la inscripción finalice. La notificación se muestra si hay establecida y se requiere una contraseña de perfil de trabajo. Una vez introducido el código de acceso, la notificación desaparece.
+Los dispositivos compatibles con perfiles de trabajo Android reciben una nueva contraseña de desbloqueo de perfil o un desafío de perfil administrado para el usuario final. 
+
+En dispositivos de perfil de trabajo Android 8.0, los usuarios finales reciben una notificación para activar su token de restablecimiento de código de acceso justo después de que la inscripción finalice. La notificación se muestra si hay establecida y se requiere una contraseña de perfil de trabajo. Una vez introducido el código de acceso, la notificación desaparece.
 
 ## <a name="resetting-ios-passcodes"></a>Restablecer códigos de acceso de iOS
 
-Los códigos de acceso se quitan de los dispositivos iOS. Si hay establecida una directiva de cumplimiento de código de acceso, el dispositivo solicita al usuario que establezca un código de acceso nuevo en los ajustes. 
+Los códigos de acceso se quitan de los dispositivos iOS. Si hay establecida una directiva de cumplimiento de código de acceso, el dispositivo solicita al usuario que establezca un código de acceso nuevo en Configuración. 
 
 ## <a name="next-steps"></a>Pasos siguientes
 

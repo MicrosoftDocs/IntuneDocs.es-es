@@ -15,12 +15,12 @@ ms.assetid: f9015e3a-c22c-42eb-90e6-ba48dee3a41d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b860b68bbf8940a89533159885f471f5337ca0e8
-ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
+ms.openlocfilehash: 34174568570700e0b15d5bce1bb0bf239251b577
+ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34216146"
+ms.lasthandoff: 07/14/2018
+ms.locfileid: "39039161"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>Cómo crear excepciones a la directiva de transferencia de datos de la administración de aplicaciones móviles (MAM) de Intune
 
@@ -38,6 +38,9 @@ Dentro de una directiva de protección de aplicaciones de Intune, establecer **P
 
 ## <a name="ios-data-transfer-exceptions"></a>Excepciones de transferencia de datos de iOS
 Para una directiva que tenga iOS como destino, puede configurar excepciones de transferencia de datos mediante el protocolo de URL. Para agregar una excepción, compruebe la documentación proporcionada por el desarrollador de la aplicación para buscar información sobre los protocolos de URL admitidos. Para obtener más información sobre las excepciones de transferencia de datos de iOS, consulte la sección [Exenciones de transferencia de datos del artículo Configuración de directivas de protección de aplicaciones de iOS](app-protection-policy-settings-ios.md#data-transfer-exemptions).
+
+> [!NOTE]
+> Microsoft no tiene un método para buscar manualmente el protocolo URL para crear excepciones de aplicación para aplicaciones de terceros. 
 
 ## <a name="android-data-transfer-exceptions"></a>Excepciones de transferencia de datos de Android
 Para una directiva que tenga Android como destino, puede configurar excepciones de transferencia de datos mediante el nombre del paquete de aplicación. Puede comprobar la página de **Google Play Store** de la aplicación para la que quiera agregar una excepción a fin de encontrar el nombre del paquete de la aplicación. Para obtener más información sobre las excepciones de transferencia de datos de Android, consulte la sección [Exenciones de transferencia de datos del artículo Configuración de directivas de protección de aplicaciones de Android](app-protection-policy-settings-android.md#data-transfer-exemptions).

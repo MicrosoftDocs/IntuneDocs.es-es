@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 326622c324f75e216db69bd850b707e0fc1c0679
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 41d8f70dd72e845663f39e151c393f5edc0ad394
+ms.sourcegitcommit: 391755a4c8a38e3a22744516fd27d75e40438899
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906063"
+ms.lasthandoff: 07/13/2018
+ms.locfileid: "39028752"
 ---
 # <a name="remove-devices-by-using-factory-reset-removing-company-data-or-manually-unenrolling-the-device"></a>Eliminación de dispositivos mediante el restablecimiento de fábrica, la eliminación de los datos de empresa o la anulación manual de la inscripción del dispositivo
 
@@ -175,3 +175,24 @@ Es posible que deba eliminar dispositivos de Azure AD si se producen problemas d
 5. Seleccione el usuario que está asociado al dispositivo que quiere eliminar.
 6.  Seleccione **Dispositivos**.
 7.  Quite los dispositivos según corresponda. Por ejemplo, puede quitar los dispositivos que ya no están en uso o los dispositivos que tienen definiciones inexactas.
+
+## <a name="retire-an-apple-dep-device-from-intune"></a>Retirar un dispositivo DEP de Apple de Intune
+
+Si quiere quitar completamente un dispositivo DEP de Apple de la administración mediante Intune, siga estos pasos:
+
+1. Inicie sesión en [Intune en Azure Portal](https://aka.ms/intuneportal).
+2. Elija **Dispositivos** > **Todos los dispositivos** > elija el dispositivo > **Eliminar datos de la compañía**.
+![Captura de pantalla de Eliminar datos de la compañía](./media/devices-wipe/remove-company-data.png)
+3. Elija **Inscripción de dispositivos** > **Inscripción de Apple** > **Tokens del programa de inscripción** > elija el token > **Dispositivos** > active la casilla del dispositivo > **Eliminar** > **Sí**.
+![Captura de pantalla de eliminación de dispositivo](./media/devices-wipe/delete-device.png)
+4. Visite [deploy.apple.com](http://deploy.apple.com) y busque el dispositivo por su número de serie.
+5. En el menú **Asignado a**, elija **Sin asignar**.
+
+6. Elija **Reasignar**.
+
+    ![Captura de pantalla de reasignación de Apple](./media/devices-wipe/apple-reassign.png)
+
+## <a name="next-steps"></a>Pasos siguientes
+
+Si quiere volver a inscribir un dispositivo eliminado, vea [Opciones de inscripción](enrollment-options.md).
+
