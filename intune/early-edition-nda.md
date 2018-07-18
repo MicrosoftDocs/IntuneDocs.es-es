@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 609e142551344a1ce39761280031463c8e34f1f0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: e97d7639a73fb2d5fd13d4b893ace8eebf597e05
+ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906029"
+ms.lasthandoff: 07/10/2018
+ms.locfileid: "37949499"
 ---
 # <a name="the-early-edition-for-microsoft-intune---july-2018"></a>Edición anticipada de Microsoft Intune: julio de 2018
 
@@ -40,6 +40,9 @@ Esta página se actualiza periódicamente. Compruebe si hay actualizaciones adic
 ## <a name="intune-in-the-azure-portal"></a>Intune en el portal de Azure
 
 <!-- 1807 start -->
+
+### <a name="more-sync-opportunities-in-the-company-portal-app-for-windows----2683177---"></a>Más oportunidades de sincronización en la aplicación Portal de empresa para Windows <!-- 2683177 -->
+La aplicación Portal de empresa para Windows agrega una acción de sincronización de dispositivo a la barra de tareas de Windows y listas de salto al menú Inicio. Haga clic en cualquier ubicación para sincronizar rápidamente los dispositivos y obtener acceso a recursos corporativos.  
 
 ### <a name="reset-device-passcodes-from-company-portal-app-for-windows-10----2101282---"></a>Códigos de acceso para restablecer el dispositivo desde la aplicación Portal de empresa para Windows 10 <!-- 2101282 --> 
 Los empleados pronto podrán restablecer el PIN o el código de acceso de su dispositivo directamente desde la aplicación Portal de empresa para Windows 10. Esta funcionalidad estará disponible en los dispositivos remotos y locales administrados por Intune que admiten el restablecimiento de la contraseña. Según el tipo de dispositivo, una solicitud realizada para un dispositivo remoto eliminará el código de acceso actual del dispositivo o creará una contraseña temporal. Si un usuario solicita el restablecimiento para un dispositivo local, se le redirigirá a la aplicación de configuración del dispositivo.  

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/03/2018
+ms.date: 07/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2cfd426a0ae7165a7aae60a90d104852fd834db6
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 084200f5773e5f92288d64e0fea23f022d93f3a0
+ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909123"
+ms.lasthandoff: 07/12/2018
+ms.locfileid: "38993741"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Borrar los datos de forma selectiva mediante acciones de acceso de la directiva de protección de aplicaciones en Intune
 
@@ -36,7 +36,7 @@ Puede elegir explícitamente borrar los datos corporativos de su empresa desde e
 3. En el panel **Intune**, seleccione **Aplicaciones móviles** > **Directivas de protección de aplicaciones**.
 4. Haga clic en **Agregar una directiva** (también puede editar una directiva existente). 
 5. Haga clic en **Configurar los valores obligatorios** para ver la lista de valores que se pueden configurar para la directiva. 
-6. Si se desplaza hacia abajo en el panel **Configuración**, verá una sección titulada **Acciones de acceso** con una tabla editable.
+6. Si se desplaza hacia abajo en el panel Configuración, verá una sección titulada **Acciones de acceso** con una tabla editable.
 
     ![Captura de pantalla de las acciones de acceso de protección de aplicaciones de Intune](./media/apps-selective-wipe-access-actions01.png)
 
@@ -50,6 +50,7 @@ Puede elegir explícitamente borrar los datos corporativos de su empresa desde e
 
 La tabla de configuración de la directiva de protección de aplicaciones tiene las columnas **Configuración**, **Valor** y **Acción**.
 
+### <a name="ios-policy-settings"></a>Configuración de directivas de iOS
 Para iOS, podrá configurar las acciones de las siguientes opciones desde el menú desplegable **Configuración**:
 -  Intentos máximos de PIN
 -  Período de gracia sin conexión
@@ -58,6 +59,19 @@ Para iOS, podrá configurar las acciones de las siguientes opciones desde el men
 -  Versión mínima de la aplicación
 -  Versión mínima del SDK
 -  Modelos de dispositivos
+
+Para usar el valor de configuración **Modelos de dispositivo**, indique una lista de identificadores de modelos de iOS separados por punto y coma. Puede encontrar un identificador de modelo de iOS en la columna Tipo de dispositivo en la [documentación de soporte técnico de HockeyApp](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types).<br>
+Entrada de ejemplo: *iPhone5,2; iPhone5,3*
+
+En los dispositivos del usuario final, el cliente de Intune tomaría medidas en función de una coincidencia simple de las cadenas de modelo de dispositivo que se especifican en Intune para las directivas de protección de aplicaciones. La coincidencia depende por completo de lo que informa el dispositivo. A usted (administrador de TI) se le anima a garantizar que se produzca el comportamiento deseado mediante la comprobación de esta configuración en función de una variedad de modelos y fabricantes de dispositivos, y destinado a un grupo de usuarios pequeño. El valor predeterminado es **Sin configurar**.<br>
+Establezca una de las acciones siguientes: 
+- Permitir especificados (bloquear no especificados)
+- Permitir especificados (borrar no especificados)
+
+**¿Qué ocurre si el administrador de TI introduce una lista diferente de identificadores de modelo de iOS entre directivas destinadas a las mismas aplicaciones para el mismo usuario de Intune?**<br>
+Cuando surgen conflictos entre dos directivas de protección para los valores configurados, Intune suele tomar el enfoque más restrictivo. Por lo tanto, la directiva resultante que se manda a la aplicación de destino que el usuario de Intune de destino está abriendo sería una intersección de los identificadores de modelo de iOS enumerados en *Directiva A* y *Directiva B* con destino a la misma combinación de aplicación y usuario. Por ejemplo, si *Directiva A* especifica "iPhone5,2; iPhone5,3", mientras que *Directiva B* especifica "iPhone5,3", la directiva resultante que el usuario de Intune utilizará según *Directiva A* y *Directiva B* será "iPhone5,3". 
+
+### <a name="android-policy-settings"></a>Configuración de directivas de Android
 
 Para Android, podrá configurar las acciones de las siguientes opciones desde el menú desplegable **Configuración**:
 -  Intentos máximos de PIN
@@ -68,6 +82,19 @@ Para Android, podrá configurar las acciones de las siguientes opciones desde el
 -  Versión mínima del parche
 -  Fabricantes de dispositivos
 
+Para usar el valor de configuración **Fabricantes de dispositivos**, indique una lista de fabricantes de Android separados por punto y coma. Puede encontrar el fabricante de Android de un dispositivo en la configuración del dispositivo.<br>
+Entrada de ejemplo: *Fabricante A; Fabricante B; Google* 
+
+En los dispositivos del usuario final, el cliente de Intune tomaría medidas en función de una coincidencia simple de las cadenas de modelo de dispositivo que se especifican en Intune para las directivas de protección de aplicaciones. La coincidencia depende por completo de lo que informa el dispositivo. A usted (administrador de TI) se le anima a garantizar que se produzca el comportamiento deseado mediante la comprobación de esta configuración en función de una variedad de modelos y fabricantes de dispositivos, y destinado a un grupo de usuarios pequeño. El valor predeterminado es **Sin configurar**.<br>
+Establezca una de las acciones siguientes: 
+- Permitir especificados (bloquear no especificados)
+- Permitir especificados (bloquear no especificados)
+
+**¿Qué ocurre si el administrador de TI introduce una lista diferente de fabricantes de Android entre directivas destinadas a las mismas aplicaciones para el mismo usuario de Intune?**<br>
+Cuando surgen conflictos entre dos directivas de protección para los valores configurados, Intune suele tomar el enfoque más restrictivo. Por lo tanto, la directiva resultante que se manda a la aplicación de destino que el usuario de Intune de destino está abriendo sería una intersección de los fabricantes de Android enumerados en *Directiva A* y *Directiva B* con destino a la misma combinación de aplicación y usuario. Por ejemplo, si *Directiva A* especifica "Google, Samsung", mientras que *Directiva B* especifica "Google", la directiva resultante que el usuario de Intune utilizará según *Directiva A* y *Directiva B* será "Google". 
+
+### <a name="additional-settings-and-actions"></a>Configuración y acciones adicionales 
+
 De forma predeterminada, la tabla tendrá filas rellenadas como valores configurados para **Período de gracia sin conexión** e **Intentos máximos de PIN**, siempre que el valor **Requerir PIN para acceder** esté establecido en **Sí**.
  
 Para llevar a cabo la configuración, seleccione una opción de la lista desplegable en la columna **Configuración**. Cuando la opción esté seleccionada, se habilitará el cuadro de texto editable en la columna **Valor** de la misma fila, si es necesario establecer un valor. Además, se habilitará la lista desplegable en la columna **Acción** con el conjunto de acciones de inicio condicional aplicables a la configuración. 
@@ -76,8 +103,6 @@ En la siguiente lista aparece la lista de acciones más comunes:
 -  **Bloquear el acceso**: impide que el usuario final acceda a la aplicación corporativa.
 -  **Borrar datos**: borra los datos corporativos del dispositivo del usuario final.
 -  **Advertir**: muestra un cuadro de diálogo al usuario final como mensaje de advertencia.
-
-### <a name="additional-settings-and-actions"></a>Configuración y acciones adicionales 
 
 En algunos casos, como el valor **Versión mínima del sistema operativo**, puede configurar la opción para realizar todas las acciones aplicables en función de los diferentes números de versión. 
 
