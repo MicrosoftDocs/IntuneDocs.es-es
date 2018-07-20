@@ -521,6 +521,7 @@
         - name: Aplicación del cumplimiento en equipos Mac administrados con Jamf Pro
           href: conditional-access-assign-jamf.md
     - name: Protección de datos de dispositivos
+      href: device-protect.md
       items:
         - name: Privacidad y datos personales
           href: privacy-personal-data.md
