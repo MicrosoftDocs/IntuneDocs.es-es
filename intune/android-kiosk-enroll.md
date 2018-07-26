@@ -15,18 +15,18 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cd6aee30a88906c3f6ae078e338732589d88a5f0
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: d5a223834eed1b0174c56b5e33ad2140203073d0
+ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909140"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39212042"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Configurar la inscripción de dispositivos Android Enterprise en modo de quiosco multimedia
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android admite dispositivos en modo de quiosco multimedia con la Corporate-Owned, Single-Use (COSU) establecida. Estos dispositivos tienen un solo fin, que puede ser la señalización digital, la impresión de vales o la administración de inventario, por nombrar solo algunos. Los administradores bloquean el uso de un dispositivo para un conjunto limitado de aplicaciones y vínculos web. También impide que los usuarios agreguen otras aplicaciones o lleven a cabo otras acciones en el dispositivo.
+Android admite dispositivos en modo de quiosco multimedia con su solución de un solo uso y propiedad corporativa. Estos dispositivos tienen un solo fin, que puede ser la señalización digital, la impresión de vales o la administración de inventario, por nombrar solo algunos. Los administradores bloquean el uso de un dispositivo para un conjunto limitado de aplicaciones y vínculos web. También impide que los usuarios agreguen otras aplicaciones o lleven a cabo otras acciones en el dispositivo.
 
 Intune le ayuda a implementar aplicaciones y configuraciones en dispositivos Android de quiosco multimedia. Para obtener detalles específicos sobre Android Enterprise, consulte [Requisitos para usar dispositivos Android en una empresa](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012).
 

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f66c0695c7e3d1f4bb7a5ca3abceeb13f6af41f2
-ms.sourcegitcommit: 3c4ea8d6809a63042705b5ed4f25ba80f522070e
+ms.openlocfilehash: 16b8067610e21652a40cb87302d8f1f3d05de342
+ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/11/2018
-ms.locfileid: "34051613"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39117929"
 ---
 # <a name="see-device-details-in-intune"></a>Ver detalles del dispositivo en Intune
 
@@ -57,6 +57,49 @@ Intune solo recopila listas de aplicaciones en dispositivos corporativos. Las ap
 |iOS|Solo aplicaciones administradas|Todas las aplicaciones instaladas en el dispositivo|
 |macOS|Todas las aplicaciones instaladas en el dispositivo|Todas las aplicaciones instaladas en el dispositivo|  
 |Android|Solo aplicaciones administradas|Todas las aplicaciones instaladas en el dispositivo|  
+
+## <a name="hardware-device-details"></a>Estado del dispositivo de hardware
+
+### <a name="windows-and-ios-device-details"></a>Detalles del dispositivo iOS y Windows:
+|Detalle|Descripción|  
+|--------------|----------------------|  
+|Nombre|Nombre del dispositivo.|
+|Nombre de administración|Nombre de dispositivo usado solo en la consola. Si se cambia, el nombre del dispositivo permanece inalterado.|
+|UDID|Identificador de dispositivo único del dispositivo.|
+|Identificador de dispositivo de Intune|GUID que identifica el dispositivo de forma única.|
+|Número de serie|Número de serie del dispositivo del fabricante.|
+|Dispositivo compartido|Si se establece en **Sí**, el dispositivo se comparte con más de un usuario.|
+|Inscripción de usuario aprobada|Si se establece en **Sí**, el dispositivo dispondrá de una inscripción de usuario aprobada, lo que permite a los administradores administrar determinadas opciones de seguridad en el dispositivo.|
+|Sistema operativo|Sistema operativo usado en el dispositivo.|
+|Versión del sistema operativo|Versión del sistema operativo del dispositivo.|
+|Idioma del sistema operativo|Idioma configurado en el sistema operativo del dispositivo.|
+|Espacio de almacenamiento total|Espacio de almacenamiento total del dispositivo (en gigabytes).|
+|Espacio de almacenamiento libre|Espacio de almacenamiento sin usar en el dispositivo (en gigabytes).|
+
+
+### <a name="windows-ios-and-macos-device-details"></a>Detalles del dispositivo Windows, iOS y macOS
+|Detalle|Descripción|  
+|--------------|----------------------|  
+|IMEI|Identidad de equipo móvil internacional del dispositivo.|
+|MEID|Identificador de equipo móvil del dispositivo.|
+|Fabricante|Fabricante del dispositivo.|
+|Modelo|Modelo del dispositivo.|
+|Número de teléfono|Número de teléfono asignado al perfil.|
+|Operador del suscriptor|Operador de red inalámbrica del dispositivo.|
+|Tecnología de datos móviles|Sistema de radio usado en el dispositivo.|
+|MAC Wi-Fi|Dirección de Media Access Control del dispositivo.|
+|ICCID|Identificador de tarjeta de circuitos integrados, que es el número de identificación único de una tarjeta SIM.|
+|Fecha de inscripción|Fecha y hora en que el dispositivo se inscribió en Intune.|
+|Último contacto|Fecha y hora en que el dispositivo se conectó a Intune por última vez.|
+|Código de omisión del bloqueo de activación|Código que se puede usar para omitir el bloqueo de activación.|
+|Registrado en Azure AD|Si se establece en **Sí**, el dispositivo se registra en Azure Directory.|
+|Cumplimiento|Estado de cumplimiento del dispositivo.|
+|EAS activada|Si se establece en **Sí**, el dispositivo se sincroniza con un buzón de Exchange.|
+|Id. de activación de EAS|Identificador de Exchange ActiveSync del dispositivo.|
+|Supervisado|Si se establece en **Sí**, los administradores han mejorado el control sobre el dispositivo.|
+|Cifrado|Si se establece en **Sí**, los datos almacenados en el dispositivo se cifran.|
+
+
 
 ## <a name="next-steps"></a>Pasos siguientes
 Vea qué más puede hacer para [administrar sus dispositivos](device-management.md) con Intune.

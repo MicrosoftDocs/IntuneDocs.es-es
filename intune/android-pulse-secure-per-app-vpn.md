@@ -15,12 +15,12 @@ ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 75a4d6f91323992cf7aa2c8bae6db419b14d1942
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 5d8357a63f80552ff4b6ebd6d1da2998e675dd00
+ms.sourcegitcommit: 08e1b0d45c84eb9525a0a59f5540d41434da2814
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31831233"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39146686"
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>Use un perfil personalizado de Microsoft Intune para crear un perfil de VPN por aplicación para dispositivos Android
 
@@ -63,7 +63,7 @@ Anote el **nombre de la conexión**, que es el valor que debe especificar al cre
 7. Elija **Configuración** > **Configurar**.
 3. En el panel **Configuración OMA-URI personalizada**, elija **Agregar**.
     - Proporcione un nombre de configuración.
-    - Para **OMA-URI**, especifique esta cadena: **./Vendor/MSFT/VPN/Profile/*Nombre*/PackageList**, donde *Nombre* es el nombre del perfil de VPN que anotó en el paso 1. En nuestro ejemplo, la cadena sería **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
+    - En **OMA-URI**, escriba esta cadena: **./Vendor/MSFT/VPN/Profile/*Nombre*/PackageList**, donde *Nombre* es el nombre de la conexión que anotó en el paso 1. En nuestro ejemplo, la cadena sería **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**.
     - Para **Tipo de datos**, especifique **Cadena**.
     - En **Valor**, cree una lista de los paquetes que se van a asociar con el perfil separados por punto y coma. Por ejemplo, si quiere que Excel y el explorador Google Chrome usen la conexión VPN, escriba: **com.microsoft.office.excel;com.android.chrome**.
 

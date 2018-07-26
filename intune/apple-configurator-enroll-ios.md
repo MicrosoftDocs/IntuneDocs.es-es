@@ -15,12 +15,12 @@ ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 180988f296894c285b078f6906c4e77b832006f9
-ms.sourcegitcommit: 0f1a5d6e577915d2d748d681840ca04a0a2604dd
+ms.openlocfilehash: 2b3965c651bb6fcc38d61a55208fc8b199223891
+ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33840281"
+ms.lasthandoff: 07/23/2018
+ms.locfileid: "39212127"
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Inscribir dispositivos iOS con Apple Configurator
 
@@ -135,7 +135,7 @@ Las aplicaciones que requieren la afiliación de un usuario no se pueden instala
 ### <a name="export-the-profile-as-mobileconfig-to-ios-devices"></a>Exportación del perfil como .mobileconfig a dispositivos iOS
 
 1. En [Intune](https://aka.ms/intuneportal), seleccione **Inscripción de dispositivos** > **Inscripción de Apple** > **Apple Configurator** > **Perfiles** > Elija el perfil que desea exportar > **Exportar perfil**.
-2. En **Inscripción directa**, elija **Descargar perfil** y guarde el archivo.
+2. En **Inscripción directa**, elija **Descargar perfil** y guarde el archivo. Un archivo de perfil de inscripción solo es válido durante dos semanas, momento en el que se debe volver a crear.
 3. Transfiera el archivo a un equipo Mac en el que se ejecute [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) para poder transferir archivos directamente como un perfil de administración a dispositivos iOS.
 4. Prepare el dispositivo con Apple Configurator mediante los pasos siguientes:
     1. En un equipo Mac, abra Apple Configurator 2.0.
