@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/25/2018
+ms.date: 7/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5e9de6f1ac8bca1d65a94294d3b049dfccbe44c7
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 557bdbace1752b8680cd15d7ba190577bec23e24
+ms.sourcegitcommit: 2e849eea920dcd6ef1b78e5aee26434bb7b01bff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905366"
+ms.lasthandoff: 07/18/2018
+ms.locfileid: "39132466"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Supervisión de las directivas de cumplimiento de dispositivos Intune
 
@@ -167,11 +167,11 @@ Esta característica aparece reflejada en el informe de estado del dispositivo:
 1. Seleccione **Cumplimiento de dispositivos** > **Directivas**. Se muestra una lista de directivas (plataforma incluida), si la directiva está asignada y otros detalles.
 2. Seleccione una directiva > **Información general**. En esta vista, la asignación de directiva engloba los siguientes estados:
 
-  - Correcto
-  - Error
-  - Conflicto
-  - Pending
-  - No disponible
+  - Correcto: se aplica la directiva.
+  - Error: no se ha podido aplicar la directiva. Esto suele mostrarse con un código de error vinculado a una explicación. 
+  - Conflicto: se aplican dos configuraciones al mismo dispositivo, e Intune no puede solucionar el conflicto. Un administrador debe encargarse de revisar.
+  - Pendiente: el dispositivo no se ha registrado aún con Intune para recibir la directiva. 
+  - No aplicable: el dispositivo no puede recibir la directiva. Por ejemplo, la directiva actualiza una configuración específica de iOS 11.1, pero el dispositivo usa iOS 10. 
 
 3. Para ver detalles sobre los dispositivos que usan esta directiva, seleccione uno de los estados. Por ejemplo, seleccione **Correcto**. En la siguiente ventana se muestran detalles concretos del dispositivo, como el nombre del dispositivo y el estado de la implementación.
 
@@ -181,4 +181,3 @@ Pueden producirse conflictos entre directivas de Intune cuando se aplican varias
 - Si las configuraciones en conflicto proceden de una directiva de configuración de Intune y una directiva de cumplimiento, la configuración de la directiva de cumplimiento tiene preferencia sobre la configuración de la directiva de configuración. Esto es así incluso si la configuración de la directiva de configuración es más segura.
 
 - Si ha implementado varias directivas de cumplimiento, Intune usa la más segura de ellas.
-

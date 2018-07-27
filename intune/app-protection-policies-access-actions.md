@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/10/2018
+ms.date: 07/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 084200f5773e5f92288d64e0fea23f022d93f3a0
-ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
+ms.openlocfilehash: 00f422b5619115b44b8d39c2d735f2163c22167f
+ms.sourcegitcommit: dc8b6f802cca7895a19ec38bec283d4b3150d213
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993741"
+ms.lasthandoff: 07/19/2018
+ms.locfileid: "39138703"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Borrar los datos de forma selectiva mediante acciones de acceso de la directiva de protección de aplicaciones en Intune
 
@@ -91,7 +91,7 @@ Establezca una de las acciones siguientes:
 - Permitir especificados (bloquear no especificados)
 
 **¿Qué ocurre si el administrador de TI introduce una lista diferente de fabricantes de Android entre directivas destinadas a las mismas aplicaciones para el mismo usuario de Intune?**<br>
-Cuando surgen conflictos entre dos directivas de protección para los valores configurados, Intune suele tomar el enfoque más restrictivo. Por lo tanto, la directiva resultante que se manda a la aplicación de destino que el usuario de Intune de destino está abriendo sería una intersección de los fabricantes de Android enumerados en *Directiva A* y *Directiva B* con destino a la misma combinación de aplicación y usuario. Por ejemplo, si *Directiva A* especifica "Google, Samsung", mientras que *Directiva B* especifica "Google", la directiva resultante que el usuario de Intune utilizará según *Directiva A* y *Directiva B* será "Google". 
+Cuando surgen conflictos entre dos directivas de protección para los valores configurados, Intune suele tomar el enfoque más restrictivo. Por lo tanto, la directiva resultante que se manda a la aplicación de destino que el usuario de Intune de destino está abriendo sería una intersección de los fabricantes de Android enumerados en *Directiva A* y *Directiva B* con destino a la misma combinación de aplicación y usuario. Por ejemplo, si *Directiva A* especifica "Google; Samsung", mientras que *Directiva B* especifica "Google", la directiva resultante que el usuario de Intune utilizará según *Directiva A* y *Directiva B* será "Google". 
 
 ### <a name="additional-settings-and-actions"></a>Configuración y acciones adicionales 
 
