@@ -443,6 +443,8 @@
               href: wi-fi-settings-windows.md
             - name: Windows 8.1
               href: wi-fi-settings-import-windows-8-1.md
+        - name: Configurar perfiles móviles de eSIM
+          href: esim-device-configuration.md
         - name: Education
           items:
             - name: Dispositivos compartidos de iOS
