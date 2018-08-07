@@ -6,19 +6,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/1/2018
+ms.date: 7/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2987ca7ce3a9b99249fc62fc7de5c9cca22b0b26
-ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
+ms.openlocfilehash: cee92ff36e2a199cd6cb8cf3cd5e0e839bc81584
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34803829"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321499"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Configuración de restricciones de dispositivos iOS de Microsoft Intune
 
@@ -182,8 +182,8 @@ También puede hacer clic en **Importar** para rellenar la lista a partir de un 
 
 En la lista de aplicaciones visibles u ocultas, puede configurar una de las siguientes listas (requiere dispositivos supervisados que ejecuten iOS 9.3 o posterior).
 
-Lista **Aplicaciones ocultas**: especifique una lista de aplicaciones que están ocultas para los usuarios. Los usuarios no pueden ver ni iniciar estas aplicaciones.
-Lista **Aplicaciones visibles**: especifique una lista de aplicaciones que los usuarios puedan ver e iniciar. No se puede ver ni iniciar ninguna otra aplicación.
+- Lista **Aplicaciones ocultas**: especifique una lista de aplicaciones que están ocultas para los usuarios. Los usuarios no pueden ver ni iniciar estas aplicaciones.
+- Lista **Aplicaciones visibles**: especifique una lista de aplicaciones que los usuarios puedan ver e iniciar. No se puede ver ni iniciar ninguna otra aplicación.
 
 Para configurar la lista, haga clic en **Agregar** y especifique un nombre de su elección. Opcionalmente, puede indicar el editor de la aplicación y la dirección URL de la aplicación en la tienda de aplicaciones.
 
@@ -259,54 +259,8 @@ Una vez que especifique el nombre de cada aplicación y cada identificador de pa
 - **Importar**: importe un archivo de valores separados por comas (.csv) que contiene una lista de nombres de aplicación y los identificadores de paquete asociados.
 - **Exportar**: exporte los nombres de aplicaciones y los identificadores de paquetes asociados que configuró a un archivo de valores separados por coma (.csv).
 
-### <a name="bundle-id-reference-for-built-in-ios-apps"></a>Referencia de identificador de lote para aplicaciones iOS integradas
-
-En esta lista se muestra el identificador de lote de algunas aplicaciones iOS comunes integradas. Póngase en contacto con el proveedor de software para encontrar el identificador de lote de otras aplicaciones.
-
-```
-,com.apple.AppStore,App Store,Apple
-,com.apple.calculator,Calculator,Apple
-,com.apple.mobilecal,Calendar,Apple
-,com.apple.camera,Camera,Apple
-,com.apple.mobiletimer,Clock,Apple
-,com.apple.compass,Compass,Apple
-,com.apple.MobileAddressBook,Contacts,Apple
-,com.apple.facetime,FaceTime,Apple
-,com.apple.mobileme.fmf1,Find Friends,Apple
-,com.apple.mobileme.fmip1,Find iPhone,Apple
-,com.apple.gamecenter,Game Center,Apple
-,com.apple.mobilegarageband,GarageBand,Apple
-,com.apple.Health,Health,Apple
-,com.apple.iBooks,iBooks,Apple
-,com.apple.MobileStore,iTunes Store,Apple
-,com.apple.itunesu,iTunes U,Apple
-,com.apple.Keynote,Keynote,Apple
-,com.apple.mobilemail,Mail,Apple
-,com.apple.MapsMaps,Apple
-,com.apple.MobileSMS,Messages,Apple
-,com.apple.Music,Music,Apple
-,com.apple.news,News,Apple
-,com.apple.mobilenotes,Notes,Apple
-,com.apple.Numbers,Numbers,Apple
-,com.apple.Pages,Pages,Apple
-,com.apple.Photo-Booth,Photo Booth,Apple
-,com.apple.mobileslideshow,Photos,Apple
-,com.apple.podcasts,Podcasts,Apple
-,com.apple.reminders,Reminders,Apple
-,com.apple.MobileSafari,Safari,Apple
-,com.apple.Preferences,Settings,Apple
-,com.apple.stocks,Stocks,Apple
-,com.apple.tips,Tips,Apple
-,com.apple.videos,Videos,Apple
-,com.apple.VoiceMemos,VoiceMemos,Apple
-,com.apple.Passbook,Wallet,Apple
-,com.apple.Bridge,Watch,Apple
-,com.apple.weather,Weather,Apple
-```
-
-
 ## <a name="kiosk-supervised-only"></a>Pantalla completa (solo supervisado)
--   **Aplicación que se ejecuta en modo de pantalla completa**: elija **Aplicación administrada** para seleccionar una aplicación que haya agregado a Intune, o **Aplicación de la Tienda** para especificar la dirección URL a una aplicación de la tienda. Ninguna otra aplicación puede ejecutarse en el dispositivo. Lea "Cómo especificar las direcciones URL de tiendas de aplicaciones" más adelante en este tema para obtener más ayuda.
+-   **Aplicación que se ejecuta en modo de pantalla completa**: elija **Aplicación administrada** para seleccionar una aplicación que haya agregado a Intune, **Aplicación de la Tienda** para especificar la dirección URL a una aplicación de la tienda, o bien **Aplicación integrada** para especificar el identificador de lote de la aplicación integrada. Para obtener más información, vea [Referencia de identificador de lote para aplicaciones iOS integradas](device-restrictions-ios.md#bundle-id-reference-for-built-in-ios-apps) y [Especificación de la dirección URL para una aplicación de la tienda](device-restrictions-ios.md#how-to-specify-the-url-to-an-app-in-the-store-1).
     -   **Assistive touch**: habilita o deshabilita la configuración de accesibilidad **Assistive Touch**, que ayuda al usuario a realizar gestos en pantalla que podrían resultarle difíciles.
     -   **Invertir colores**: habilita o deshabilita la configuración de accesibilidad Invertir colores, que ajusta la pantalla para ayudar a los usuarios con discapacidades visuales.
     -   **Audio mono**: habilita o deshabilita la configuración de accesibilidad Audio mono.
@@ -327,6 +281,51 @@ En esta lista se muestra el identificador de lote de algunas aplicaciones iOS co
 >[!NOTE]
 > Antes de configurar un dispositivo iOS para pantalla completa, debe usar la herramienta Apple Configurator o el Programa de inscripción de dispositivos de Apple para pasar el dispositivo al modo supervisado. Para obtener más información sobre la herramienta Apple Configurator, consulte la documentación de Apple.
 >Si la aplicación de iOS que especifique se instala después de asignar el perfil, el dispositivo no pasará a pantalla completa hasta que se reinicie.
+
+## <a name="bundle-id-reference-for-built-in-ios-apps"></a>Referencia de identificador de lote para aplicaciones iOS integradas
+
+En esta lista se muestra el identificador de lote de algunas aplicaciones iOS comunes integradas. Póngase en contacto con el proveedor de software para encontrar el identificador de lote de otras aplicaciones.
+
+| Identificador de lote                   | Nombre de la aplicación     | Publicador |
+|-----------------------------|--------------|-----------|
+| com.apple.AppStore          | Tienda de aplicaciones    | Apple     |
+| com.apple.calculator        | Calculadora   | Apple     |
+| com.apple.mobilecal         | Calendario     | Apple     |
+| com.apple.camera            | Cámara       | Apple     |
+| com.apple.mobiletimer       | Reloj        | Apple     |
+| com.apple.compass           | Compass      | Apple     |
+| com.apple.MobileAddressBook | Contactos     | Apple     |
+| com.apple.facetime          | FaceTime     | Apple     |
+| com.apple.mobileme.fmf1     | Buscar amigos | Apple     |
+| com.apple.mobileme.fmip1    | Buscar mi iPhone  | Apple     |
+| com.apple.gamecenter        | Centro de juegos  | Apple     |
+| com.apple.mobilegarageband  | GarageBand   | Apple     |
+| com.apple.Health            | Mantenimiento       | Apple     |
+| com.apple.iBooks            | iBooks       | Apple     |
+| com.apple.MobileStore       | iTunes Store | Apple     |
+| com.apple.itunesu           | iTunes U     | Apple     |
+| com.apple.Keynote           | Keynote      | Apple     |
+| com.apple.mobilemail        | Mail         | Apple     |
+| com.apple.MapsMaps          |              | Apple     |
+| com.apple.MobileSMS         | Mensajes     | Apple     |
+| com.apple.Music             | Música        | Apple     |
+| com.apple.news              | Noticias         | Apple     |
+| com.apple.mobilenotes       | Notas        | Apple     |
+| com.apple.Numbers           | Números      | Apple     |
+| com.apple.Pages             | Páginas        | Apple     |
+| com.apple.Photo-Booth       | Photo Booth  | Apple     |
+| com.apple.mobileslideshow   | Fotos       | Apple     |
+| com.apple.podcasts          | Podcasts     | Apple     |
+| com.apple.reminders         | Recordatorios    | Apple     |
+| com.apple.MobileSafari      | Safari       | Apple     |
+| com.apple.Preferences       | Configuración     | Apple     |
+| com.apple.stocks            | Acciones       | Apple     |
+| com.apple.tips              | Sugerencias         | Apple     |
+| com.apple.videos            | Vídeos       | Apple     |
+| com.apple.VoiceMemos        | VoiceMemos   | Apple     |
+| com.apple.Passbook          | Wallet       | Apple     |
+| com.apple.Bridge            | Inspección        | Apple     |
+| com.apple.weather           | Clima      | Apple     |
 
 ## <a name="safari"></a>Safari
 -   **Safari (solo supervisado)**: especifique si el explorador Safari se puede usar en el dispositivo.

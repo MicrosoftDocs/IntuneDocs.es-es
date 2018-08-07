@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/23/2018
+ms.date: 6/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a4bbc89f66b49fe6a5c4ff8595c5913583288e0f
-ms.sourcegitcommit: d1420a5d2d2c1da40cc4dac165ca9173c22323d3
+ms.openlocfilehash: 42e0798b0c2941d9ea45e75b367b69bc7dab548f
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34803846"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321227"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Restricciones de dispositivos para la configuración de Windows 10 (y versiones posteriores) en Intune
 En este artículo, se muestran todas las opciones de configuración de restricciones de dispositivos de Microsoft Intune que puede configurar para los dispositivos que ejecutan Windows 10.
@@ -252,7 +252,7 @@ Puede agregar aplicaciones que deben tener un comportamiento de privacidad difer
 
 ## <a name="kiosk-preview---obsolete"></a>Quiosco (versión preliminar): obsoleto
 
-Esta configuración se está moviendo y se quitará en una próxima versión. Para usar la nueva configuración, consulte [Configuración de quiosco para Windows 10 (y versiones posteriores) en Intune](kiosk-settings.md).
+Estos valores son de solo lectura y no se pueden cambiar. Para habilitar la pantalla completa, vea [Configuración de quiosco para Windows 10 (y versiones posteriores) en Intune](kiosk-settings.md).
 
 Un dispositivo de pantalla completa normalmente ejecuta una aplicación o un conjunto determinado de aplicaciones. A los usuarios no se les permite el acceso a características o funciones del dispositivo que está fuera de la aplicación de pantalla completa.
 

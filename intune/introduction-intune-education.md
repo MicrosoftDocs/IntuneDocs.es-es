@@ -14,12 +14,12 @@ ms.assetid: ca36589b-804d-40b8-b112-9195d8897800
 ms.reviewer: travisj
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6d8335f1bac26b1a70c4e9aeaf7c8c6d1b34fc12
-ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
+ms.openlocfilehash: 776cb1e03730bbac1d6e7ed36f411eba0ab94cff
+ms.sourcegitcommit: 47b55d211534f2e52e50d6b936c9a349e99fd222
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34718019"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39236045"
 ---
 # <a name="how-is-intune-for-education-different-from-the-full-device-management-experience-in-intune"></a>¿En qué se diferencia Intune for Education de la experiencia completa de administración de dispositivos en Intune?
 
@@ -27,9 +27,9 @@ Intune for Education permite a profesores y estudiantes trabajar de forma produc
 
 ![Consola de Intune for Education en comparación con la consola de Intune.](./media/intune-azure-vs-intuneEDU.png)
 
-Intune for Education le permite administrar dispositivos de Windows 10 con las funcionalidades de MDM completas que están disponibles en Intune. Intune también puede administrar plataformas adicionales, como iOS y Android, y está diseñado para permitirle acceder a todo el conjunto de directivas en la misma consola.
+Intune for Education permite administrar dispositivos iOS y Windows 10 mediante las funcionalidades de MDM completas disponibles en Intune. La experiencia de administración de dispositivos completa permite administrar dispositivos Android, iOS y Windows.  
 
-Intune for Education puede utilizarse por sí mismo o en armonía con la [experiencia completa de administración de dispositivos disponible en Intune](introduction-intune.md). También se puede utilizar junto con el resto de las herramientas disponibles en [Microsoft Education](https://microsoft.com/education), lo que facilita usar Intune for Education con otras herramientas educativas útiles de Microsoft.
+Intune for Education puede utilizarse por sí mismo o en armonía con la [experiencia completa de administración de dispositivos disponible en Intune](introduction-intune.md). También se puede utilizar junto con el resto de las herramientas disponibles en [Microsoft Education](https://microsoft.com/education), lo que facilita usar Intune for Education con otras herramientas educativas útiles de Microsoft.  
 
 > [!VIDEO https://www.youtube.com/embed/ukrnCwcLvV8]
 

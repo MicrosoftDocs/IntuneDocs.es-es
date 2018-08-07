@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2a8c14e523d33c9e0994134ff1ef468b290b3992
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: f973bd36faef14232d6449c8ce9d1dc92bf32170
+ms.sourcegitcommit: 0bddd8a76201746e8835c4b792f34377b45fad60
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31022516"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39356580"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Omisión del bloqueo de activación en dispositivos iOS supervisados con Intune
 
@@ -66,15 +66,23 @@ Para omitir el Bloqueo de activación en los dispositivos, primero debe habilita
 ## <a name="how-to-use-activation-lock-bypass"></a>Uso de la omisión del bloqueo de activación
 
 >[!IMPORTANT]
->Después de omitir el Bloqueo de activación en un dispositivo, si se abre la aplicación Buscar mi iPhone, se aplicará automáticamente un nuevo Bloqueo de activación. Por este motivo, **para realizar este procedimiento, debe tener el dispositivo físicamente**.
+>Después de omitir el Bloqueo de activación en un dispositivo, si se inicia la aplicación Buscar mi iPhone, se aplica automáticamente un nuevo Bloqueo de activación. Por este motivo, **para realizar este procedimiento, debe tener el dispositivo físicamente**.
 
-La acción de dispositivo remoto **Omitir bloqueo de activación** quita el bloqueo de activación de un dispositivo iOS sin el id. de Apple y la contraseña del usuario. Cuando se omite el bloqueo de activación, el dispositivo activa de nuevo el bloqueo de activación cuando se inicia la aplicación Buscar mi iPhone. Omita el bloqueo de activación solo si tiene acceso físico al dispositivo.
+La acción de dispositivo remoto **Bypass del bloqueo de activación** de Intune quita el bloqueo de activación de un dispositivo iOS sin requerir el ID de Apple y la contraseña del usuario. Después de omitir el bloqueo de activación, el dispositivo lo vuelve a activar cuando se inicia la aplicación Buscar mi iPhone. Omita el bloqueo de activación solo si tiene acceso físico al dispositivo.
 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
-3. En la hoja **Intune**, elija **Dispositivos**.
-4. En la hoja **Dispositivos**, pulse **Todos los dispositivos**.
-5. En la lista de dispositivos que administra, elija un dispositivo iOS supervisado, **Más** y, luego, la acción remota de dispositivo **Omisión del bloqueo de activación**.
+1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
+2. Seleccione **Todos los servicios** > **Intune**.
+3. En la hoja **Intune**, haga clic en **Dispositivos**.
+4. En la hoja **Dispositivos**, haga clic en **Todos los dispositivos**.
+5. En la lista de dispositivos que administra, seleccione la acción de dispositivo remoto **Bypass del bloqueo de activación**.
+6. Vaya a la sección "Hardware" del dispositivo y, después, copie el valor **Código de omisión del bloqueo de activación** bajo **Acceso condicional**.
+
+    >[!NOTE]
+    >Copie el código de omisión antes de realizar un restablecimiento de fábrica en el dispositivo. Si restablece la configuración del dispositivo antes de copiar el código, el código se quita de Azure.
+
+7.  Vaya a la hoja **Información general** del dispositivo y, después, haga clic en **Restablecimiento de fábrica**.
+8.  Después de restablecer el dispositivo, se le solicitará el *ID de Apple* y la *contraseña*. Deje el campo *ID* en blanco y, después, escriba el **código de omisión** para la *contraseña*. Esto quita la cuenta del dispositivo. 
+
 
 ## <a name="next-steps"></a>Pasos siguientes
 

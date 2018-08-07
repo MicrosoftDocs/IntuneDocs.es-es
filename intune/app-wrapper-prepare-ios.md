@@ -14,12 +14,12 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: edbd802b5f0482fc5dbaa801308447e2f8061189
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 050660b4da609d8e6c0dbf969eb71aa79945262a
+ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38224942"
+ms.lasthandoff: 07/25/2018
+ms.locfileid: "39254542"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicaciones iOS para directivas de protección de aplicaciones con la herramienta de ajuste de aplicaciones de Intune
 
@@ -339,7 +339,7 @@ Antes de ajustar la aplicación, puede concederle *derechos* para que tenga perm
 
     b.  Active las capacidades adecuadas. Para obtener información detallada sobre cada funcionalidad y sobre cómo determinar los valores correctos, consulte [Adding Capabilities](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html) (Agregar funcionalidades) en la biblioteca para desarrolladores de iOS.
 
-    c.  Tenga en cuenta los identificadores que haya creado durante el proceso.
+    c.  Tenga en cuenta los identificadores que haya creado durante el proceso. Es posible que también se haga referencia a ellos como los valores `AppIdentifierPrefix`.
 
     d.  Compile y firme la aplicación para que se realicen los ajustes oportunos.
 
@@ -349,7 +349,7 @@ Antes de ajustar la aplicación, puede concederle *derechos* para que tenga perm
 
     b.  Cree un perfil de aprovisionamiento para la aplicación. Para obtener instrucciones, consulte [How to Obtain the Prerequisites for the Intune App Wrapping Tool for iOS](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/) (Cómo obtener los requisitos previos para la Herramienta de ajuste de aplicaciones de Intune para iOS).
 
-    c.  En el perfil de aprovisionamiento, habilite los mismos derechos que tiene en su aplicación. Debe proporcionar los mismos identificadores que especificó durante el desarrollo de la aplicación.
+    c.  En el perfil de aprovisionamiento, habilite los mismos derechos que tiene en su aplicación. Debe proporcionar los mismos identificadores (los valores `AppIdentifierPrefix`) que especificó durante el desarrollo de la aplicación. 
 
     d.  Finalice el Asistente para perfiles de aprovisionamiento y descargue el archivo.
 

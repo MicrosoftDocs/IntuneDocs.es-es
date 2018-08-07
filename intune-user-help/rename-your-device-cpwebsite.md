@@ -1,11 +1,11 @@
 ---
-title: Cambiar el nombre de un dispositivo desde el sitio web del Portal de empresa | Microsoft Docs
-description: ''
+title: Cambiar el nombre de un dispositivo desde el sitio web del Portal de empresa
+description: Obtenga información sobre cómo cambiar el nombre del dispositivo desde el sitio web del Portal de empresa.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 02/23/2017
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,29 +17,28 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: bf111b6c95a61e0c244b8d3254abc08c1d85c598
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: e31451abd79c17618377598d29c455c4c0637348
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017145"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321380"
 ---
 # <a name="rename-your-device-from-the-company-portal-website"></a>Cambiar el nombre de un dispositivo desde el sitio web del Portal de empresa
 
-Puede decidir cambiar el nombre de su dispositivo para que resulte más fácil de identificar. Puede llevar a cabo las siguientes tareas desde el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog). El sitio web del portal de empresa es una página web que puede usar para administrar equipos y dispositivos que haya inscrito en la administración con el departamento de TI.
+Obtenga información sobre cómo cambiar el nombre del dispositivo administrado inscrito desde el sitio web del Portal de empresa. Cambie el nombre de modelo predeterminado o genérico de un dispositivo por otro que permita identificarlo rápidamente.  
 
-Para cambiar el nombre del dispositivo:
+1. En el [sitio web del Portal de empresa](https://portal.manage.microsoft.com/HelpDeskDialog), haga clic en el botón __Menú__ > __Mis dispositivos__.
 
-1. En el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog), pulse el botón __menú__ ![Pequeña imagen del botón menú, tres barras horizontales apiladas en paralelo.](/Intune/whats-new/media/CP_hamburger_menu.png), luego seleccione __Mis dispositivos__.
+2. Seleccione el dispositivo que quiera cambiar de nombre.
 
-2. En la página __Mis dispositivos__, seleccione el dispositivo cuyo nombre quiere cambiar.
+![Captura de pantalla de la página Mis dispositivos con un par de dispositivos sin identificar sobre el mensaje emergente para inscribir los dispositivos que no figuran en la lista o para identificar los no identificados.](./media/macOS_enroll_002_tap_here_banner.png)  
 
-   ![Captura de pantalla de la página Mis dispositivos con un par de dispositivos sin identificar sobre el mensaje emergente para inscribir los dispositivos que no figuran en la lista o para identificar los no identificados.](./media/macOS_enroll_002_tap_here_banner.png)
+3. Haga clic en **Cambiar nombre**.  
 
-3. El dispositivo se abrirá en una ventana emergente. Pulse el botón **Cambiar nombre**.
+   ![Todas las opciones de un dispositivo seleccionado en el sitio web del Portal de empresa, incluidas Cambiar nombre, Quitar, Restablecer dispositivo, Restablecer código de acceso y Bloqueo remoto. ](./media/iwp-screen-with-all-options.png)  
+    
 
-   ![Todas las opciones de un dispositivo seleccionado en el sitio web del Portal de empresa, incluidas Cambiar nombre, Quitar, Restablecer dispositivo, Restablecer código de acceso y Bloqueo remoto. ](./media/iwp-screen-with-all-options.png)
+4. En el cuadro donde aparece el nombre del dispositivo, escriba el nombre nuevo. Después, pulse el botón **Cambiar nombre**. El dispositivo aparece ahora con el nuevo nombre.
 
-4. En el cuadro donde aparece el nombre del dispositivo, escriba el nuevo nombre y puntee en el botón **Cambiar nombre**. El dispositivo aparece ahora con el nuevo nombre.
-
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com/HelpDeskDialog).

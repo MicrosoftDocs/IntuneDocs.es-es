@@ -5,18 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/1/2018
+ms.date: 6/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e8a1abb4229b3e6b4c91cfd49b4f66dbe739ea7d
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: 9d7f54ce0e288025a4a7f0f45bf5b10de5323021
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321761"
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Configuración de restricción de dispositivos de Windows Holographic for Business en Intune
 
@@ -68,7 +69,9 @@ Se admiten las siguientes configuraciones de restricciones de dispositivos en di
 
 - **Modificación de la hora del sistema**: evita que el usuario final cambie la fecha y hora del dispositivo.
 
-## <a name="kiosk"></a>Pantalla completa
+## <a name="kiosk---obsolete"></a>Quiosco (obsoleto)
+
+Estos valores son de solo lectura y no se pueden cambiar. Para configurar la pantalla completa, vea [Configuración de quiosco](kiosk-settings.md#windows-holographic-for-business).
 
 Normalmente, un dispositivo de pantalla completa ejecuta una aplicación específica. A los usuarios no se les permite el acceso a características o funciones del dispositivo que está fuera de la aplicación de pantalla completa.
 

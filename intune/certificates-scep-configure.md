@@ -13,14 +13,14 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0d42500b9476e0b6c7bc9aaaba1ea4333fd136c6
-ms.sourcegitcommit: 29914cc467e69711483b9e2ccef887196e1314ef
+ms.openlocfilehash: ce017f323ebbe4095f5aa31990878afce0116573
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36297912"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321244"
 ---
-# <a name="configure-and-use-scep-certificates-with-intune"></a>Configuración y uso de certificados SCEP con Intune
+# <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar y usar certificados SCEP con Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -462,4 +462,6 @@ A partir de la versión 6.1806.x.x, el servicio de conector de Intune registra l
 | 0x0FFFFFFFF | Unknown_Error  | No se puede completar la solicitud porque se produjo un error del lado servidor. Inténtelo de nuevo. |
 
 ## <a name="next-steps"></a>Pasos siguientes
-[Configuración y uso de certificados PKCS con Intune](certficates-pfx-configure.md) o [Configuración de Intune Certificate Connector para el servicio web del administrador de PKI de Symantec](certificates-symantec-configure.md).
+
+- [Configuración y uso de certificados PKCS con Intune](certficates-pfx-configure.md) o [Configuración de Intune Certificate Connector para el servicio web del administrador de PKI de Symantec](certificates-symantec-configure.md).
+- [Add a 3rd party CA to use SCEP with Intune](certificate-authority-add-scep-overview.md) (Adición de una entidad de certificación de terceros para usar SCEP con Intune)

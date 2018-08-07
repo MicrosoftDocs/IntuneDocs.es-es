@@ -15,12 +15,12 @@ ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f907272f74886612eba9b5b28118f298caa2f36d
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 644d5966f653e4b98e6a5e8c507dd5e7399ff9cd
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223912"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321125"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Incorporación de una aplicación de línea de negocio de Windows a Microsoft Intune
 
@@ -40,7 +40,11 @@ Una aplicación de línea de negocio (LOB) es aquella que se agrega desde un arc
 ## <a name="step-2-configure-the-app-package-file"></a>Paso 2: Configuración del archivo de paquete de aplicaciones
 
 1. En el panel **Agregar aplicación**, seleccione **Archivo del paquete de aplicaciones**.
-2. En el panel **Archivo del paquete de aplicaciones**, seleccione el botón Examinar. A continuación, seleccione un archivo de instalación de Windows con la extensión **.msi**, **.appx** o **.appxbundle**.
+2. En el panel **Archivo del paquete de aplicaciones**, seleccione el botón Examinar. Después, seleccione un archivo de instalación de Windows con la extensión **.msi**, **.appx**, **.appxbundle**, **.msix** o **.msixbundle**.
+
+    > [!NOTE]
+    > Las extensiones de archivo de las aplicaciones de Windows incluyen **.msi**, **.appx**, **.appxbundle**, **.msix** y **.msixbundle**.  
+
 3. Cuando haya terminado, seleccione **Aceptar**.
 
 

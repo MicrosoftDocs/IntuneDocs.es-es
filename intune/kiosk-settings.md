@@ -1,27 +1,27 @@
 ---
 title: 'Configuración de quiosco para Windows 10 en Microsoft Intune: Azure | Microsoft Docs'
-description: Descubra las opciones de configuración de Microsoft Intune que puede usar para controlar la funcionalidad y la configuración de los dispositivos que ejecutan Windows 10.
+description: Configure los dispositivos con Windows 10 (y versiones posteriores) como pantallas completas con una aplicación y con varias, incluida la personalización del menú Inicio, la adición de aplicaciones, la barra de tareas y la configuración de un explorador web. Configure también dispositivos con Windows Holographic for Business como pantallas completas con varias aplicaciones en Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/24/2018
+ms.date: 7/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 897ff48253961d6e1aa83bf36113c362d4548fbf
-ms.sourcegitcommit: 97b9f966f23895495b4c8a685f1397b78cc01d57
+ms.openlocfilehash: 6f10e7bb7a2e7c5e1d0e8b27517a62454e8bd630
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34745182"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321809"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Configuración de quiosco para Windows 10 (y versiones posteriores) en Intune
 
-Los perfiles de quiosco se pueden usar para configurar dispositivos de Windows 10 para ejecutar una aplicación varias aplicaciones. Cuando configura un perfil de quiosco, también elige si habrá un menú Inicio, si hay instalado un explorador web, además de otras opciones.
+Los perfiles de quiosco se usan para configurar dispositivos Windows 10 para que ejecuten una aplicación o varias. Al crear un perfil de quiosco, también se elige si se muestra un menú Inicio, si se instala un explorador web y mucho más.
 
 ## <a name="kiosk-settings"></a>Configuración de quiosco
 
@@ -29,9 +29,9 @@ Los perfiles de quiosco se pueden usar para configurar dispositivos de Windows 1
 2. Escriba un **Nombre de la configuración de quiosco** para el quiosco. Este nombre identifica un grupo de aplicaciones, la distribución de estas aplicaciones en el menú Inicio y los usuarios que están asignados a esta configuración de quiosco.
 3. Seleccione el **Modo de quiosco**. **Modo de quiosco**: identifica el tipo de modo de quiosco admitido por la directiva. Las opciones son:
 
-  - **No configurado** (valor predeterminado): la directiva no habilita un modo de quiosco.
-  - **Quiosco a pantalla completa con una sola aplicación**: el perfil habilita el dispositivo para que se ejecute como una cuenta de usuario único y lo bloquea en una única Plataforma universal de Windows (UWP). Así que cuando el usuario inicia sesión, se inicia una aplicación concreta. Este modo también evita que el usuario abra nuevas aplicaciones o modifique la aplicación en ejecución.
-  - **Quiosco con varias aplicaciones**: el perfil permite que el dispositivo ejecute varias aplicaciones de Plataforma universal de Windows (UWP) o aplicaciones de Win32. También puede asignar diferentes aplicaciones para distintas cuentas de usuario. Solo estarán disponibles para el usuario las aplicaciones que agregue. La ventaja de un quiosco con varias aplicaciones, o un dispositivo para un propósito fijo, es que proporciona una experiencia fácil de entender para los usuarios, ya que solo acceden a las aplicaciones que necesitan. Además, se quitan de la vista las aplicaciones que no necesitan.
+    - **No configurado** (valor predeterminado): la directiva no habilita la pantalla completa.
+    - **Quiosco a pantalla completa con una sola aplicación**: el perfil habilita el dispositivo para que se ejecute como una cuenta de usuario único y lo bloquea en una única Plataforma universal de Windows (UWP). Así que cuando el usuario inicia sesión, se inicia una aplicación concreta. Este modo también evita que el usuario abra nuevas aplicaciones o modifique la aplicación en ejecución.
+    - **Quiosco con varias aplicaciones**: el perfil permite que el dispositivo ejecute varias aplicaciones de Plataforma universal de Windows (UWP) o aplicaciones de Win32. También puede asignar diferentes aplicaciones para distintas cuentas de usuario. Solo estarán disponibles para el usuario las aplicaciones que agregue. La ventaja de un quiosco con varias aplicaciones, o un dispositivo para un propósito fijo, es que proporciona una experiencia fácil de entender para los usuarios, ya que solo acceden a las aplicaciones que necesitan. Además, se quitan de la vista las aplicaciones que no necesitan.
 
 #### <a name="single-full-screen-app-kiosks"></a>Quioscos a pantalla completa con una sola aplicación
 Escriba los valores siguientes:
@@ -70,21 +70,51 @@ Esta configuración controla una aplicación de explorador web en el quiosco. As
 
 1. Escriba los valores siguientes:
 
-  - **Dirección URL de la página principal predeterminada**: escriba la dirección URL predeterminada que abre el explorador del quiosco cuando se abre o se reinicia el explorador.
+    - **Dirección URL de la página principal predeterminada**: escriba la dirección URL predeterminada que abre el explorador del quiosco cuando se abre o se reinicia el explorador.
 
-  - **Mostrar botón Inicio**: muestre (**Requerir**) u oculte (**No configurado**) el botón Inicio del explorador del quiosco. De forma predeterminada, el botón está definido como No configurado.
+    - **Botón Inicio**: muestre (**Permitir**) u oculte (**No configurado**) el botón Inicio del explorador del quiosco. De forma predeterminada, el botón está definido como No configurado.
 
-  - **Mostrar botón de navegación**: muestre (**Requerir**) u oculte (**No configurado**) los botones de adelante y atrás. De forma predeterminada, los botones de navegación están definidos como No configurados.
+    - **Botón de navegación**: muestre (**Permitir**) u oculte (**No configurado**) los botones Adelante y Atrás. De forma predeterminada, los botones de navegación están definidos como No configurados.
 
-  - **Actualizar el explorador cuando el usuario supera el límite de tiempo de inactividad**: escriba la cantidad de tiempo de inactividad de sesión en minutos hasta que el explorador del quiosco se reinicie con un nuevo estado. El valor es un entero entre 1 y 1440 minutos. De forma predeterminada, el valor está vacío o en blanco, lo que significa que no hay ningún tiempo de espera de inactividad.
+    - **Botón Finalizar sesión**: muestre (**Permitir**) u oculte (**No configurado**) el botón Finalizar sesión. Cuando se muestra, el usuario hace clic en el botón y la aplicación solicita que finalice la sesión. Cuando se confirma, el explorador borra todos los datos de exploración (las cookies, la caché, etc.) y vuelve a la dirección URL predeterminada. De forma predeterminada, el botón está definido como No configurado. 
 
-  - **Sitios web bloqueados**: lista de direcciones URL de sitios web bloqueados (con compatibilidad con caracteres comodín). Use esta opción para impedir que el explorador abra determinados sitios. También puede **Importar** un archivo .csv que contiene una lista. O bien, crear un archivo .csv (**Exportar**) que contiene los sitios que agregue.
+    - **Actualizar el explorador cuando el usuario supera el límite de tiempo de inactividad**: escriba la cantidad de tiempo de inactividad de sesión en minutos hasta que el explorador del quiosco se reinicie con un nuevo estado. El valor es un entero entre 1 y 1440 minutos. De forma predeterminada, el valor está vacío o en blanco, lo que significa que no hay ningún tiempo de espera de inactividad.
 
-  - **Excepciones de sitios web**: lista de excepciones para las direcciones URL de sitios web bloqueados (con compatibilidad con caracteres comodín). Use esta opción para permitir al explorador abrir sitios específicos. Estas excepciones son un subconjunto de las direcciones URL bloqueadas. Si una dirección URL se encuentra en la lista de sitios web bloqueados y la lista de excepciones de sitios web, la excepción surte efecto.
+    - **Sitios web bloqueados**: lista de direcciones URL de sitios web bloqueados (con compatibilidad con caracteres comodín). Use esta opción para impedir que el explorador abra determinados sitios. También puede **Importar** un archivo .csv que contiene una lista. O bien, crear un archivo .csv (**Exportar**) que contiene los sitios que agregue.
+
+    - **Excepciones de sitios web**: lista de excepciones para las direcciones URL de sitios web bloqueados (con compatibilidad con caracteres comodín). Use esta opción para permitir al explorador abrir sitios específicos. Estas excepciones son un subconjunto de las direcciones URL bloqueadas. Si una dirección URL se encuentra en la lista de sitios web bloqueados y la lista de excepciones de sitios web, la excepción surte efecto.
 
     También puede **Importar** un archivo .csv que contiene una lista. O bien, crear un archivo .csv (**Exportar**) que contiene los sitios que agregue.
 
 2. Haga clic en **Aceptar** para guardar los cambios.
+
+## <a name="windows-holographic-for-business"></a>Windows Holographic for Business
+
+En los dispositivos con Windows Holographic for Business, puede configurar estos dispositivos para que se ejecuten en modo de pantalla completa con una sola aplicación o con varias. 
+
+#### <a name="single-full-screen-app-kiosks"></a>Quioscos a pantalla completa con una sola aplicación
+Escriba los valores siguientes:
+
+- **Identificador de la aplicación para Plataforma universal de Windows (UWP)**: escriba el  **identificador de modelo de usuario de aplicación (AUMID)** de la aplicación de quiosco. O seleccione una aplicación administrada existente que haya agregado mediante [Aplicaciones móviles](apps-add.md).
+
+    Para obtener el identificador, vea [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Buscar el identificador de modelo de usuario de aplicación de una aplicación instalada).
+
+- **Tipo de cuenta de usuario**: seleccione **Cuenta de usuario local** para escribir la cuenta de usuario local (en el dispositivo), o bien el inicio de sesión de cuenta de Microsoft (MSA) asociado a la aplicación de quiosco. Los tipos de cuenta de usuario **Inicio de sesión automático** no se admiten en Windows Holographic for Business.
+
+#### <a name="multi-app-kiosks"></a>Pantallas completas con varias aplicaciones
+Las aplicaciones en este modo están disponibles en el menú Inicio. Estas aplicaciones son las únicas que el usuario puede abrir.
+
+Escriba los valores siguientes:
+
+- [Agregar aplicaciones administradas](apps-add.md): seleccione una aplicación administrada existente que haya agregado mediante **Aplicaciones móviles en Intune**.
+- **Agregar aplicación por AUMID**: escriba el [AUMID de la aplicación](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (aplicaciones UWP).
+- **Diseño del menú Inicio**: especifique un archivo XML que describa el modo en que las aplicaciones aparecen en el menú Inicio, incluido el orden de las aplicaciones. En [Personalizar y exportar el diseño de la pantalla Inicio](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) se proporcionan algunas instrucciones y se incluye un archivo XML específico para dispositivos con Windows Holographic for Business.
+- **Tipo de cuenta de usuario**: agregue una o varias cuentas de usuario que puedan usar las aplicaciones que agregue. Las opciones admitidas incluyen: 
+  - **Visitante de HoloLens**: la cuenta de visitante es una cuenta de invitado que no requiere ninguna credencial de usuario ni autenticación, como se describe en [Conceptos del modo de equipo compartido](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
+  - **Usuarios de Azure AD**: requiere credenciales de usuario para iniciar sesión en el dispositivo. Use el formato `domain\user@tenant.com`.
+  - **Cuentas de usuario local**: requiere credenciales de usuario para iniciar sesión en el dispositivo. 
+
+Cuando la cuenta inicia sesión, solo están disponibles las aplicaciones definidas en la configuración.
 
 ## <a name="next-steps"></a>Pasos siguientes
 [Asigne el perfil](device-profile-assign.md) y [supervise el estado](device-profile-monitor.md).

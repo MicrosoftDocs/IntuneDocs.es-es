@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 06/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a797c68ca43a6173a4bac70e914d3f763ce5e6d0
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 6bbb09944db602b4b5a70c89e8089b1692c45223
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31442583"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321448"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Incorporación de una directiva de cumplimiento de dispositivos macOS con Intune
 
@@ -84,6 +84,13 @@ En la tabla siguiente se explica cómo se administran las configuraciones no con
 
 - **Cifrado de almacenamiento de datos en un dispositivo**: elija **Requerir** para cifrar el almacenamiento de datos en los dispositivos.
 
+### <a name="device-security"></a>Seguridad de dispositivos
+Firewall protege los dispositivos frente al acceso de red no autorizado. Puede usar Firewall para controlar las conexiones por cada aplicación. 
+
+- **Firewall**: **Habilitar** para ayudar a proteger los dispositivos frente al acceso no autorizado. Habilitar esta característica permite controlar las conexiones entrantes de Internet y usar el modo sigiloso. **No configurado** (el valor predeterminado) deja el firewall desactivado y se permite el tráfico de red (no se bloquea).
+- **Conexiones entrantes**: **bloquee** todas las conexiones de red entrantes excepto las necesarias para los servicios básicos de Internet, como DHCP, Bonjour e IPSec. Esta configuración también bloquea todos los servicios de uso compartido, incluido el uso compartido de pantalla, acceso remoto, uso compartido de música de iTunes y mucho más. **No configurado** (el valor predeterminado) permite las conexiones entrantes y los servicios de uso compartido. 
+- **Modo sigiloso**: **habilite** el modo sigiloso para evitar que el dispositivo responda a solicitudes de sondeo, que pueden provenir de usuarios malintencionados. Cuando se habilita, el dispositivo sigue respondiendo a las solicitudes entrantes de las aplicaciones autorizadas. **No configurado** (el valor predeterminado) deja el modo sigiloso desactivado.
+
 ## <a name="assign-user-groups"></a>Asignación de grupos de usuarios
 
 1. Elija una directiva que haya configurado. Las directivas existentes están en **Conformidad de dispositivos** > **Directivas**.
@@ -96,5 +103,5 @@ En la tabla siguiente se explica cómo se administran las configuraciones no con
 Ya ha aplicado la directiva a los usuarios. Se evalúa el cumplimiento por parte de los dispositivos usados por los usuarios a los que se aplique la directiva.
 
 ## <a name="next-steps"></a>Pasos siguientes
-[Automatización del correo electrónico y adición de acciones para dispositivos no compatibles](actions-for-noncompliance.md)  
+[Automatización del correo electrónico y adición de acciones para dispositivos no compatibles: Intune](actions-for-noncompliance.md)  
 [Supervisión de las directivas de cumplimiento de dispositivos de Intune](compliance-policy-monitor.md)

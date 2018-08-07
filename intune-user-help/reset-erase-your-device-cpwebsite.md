@@ -1,11 +1,11 @@
 ---
 title: Restablecer un dispositivo desde el sitio web del Portal de empresa | Microsoft Docs
-description: ''
+description: Obtenga información sobre cómo restablecer el dispositivo a los valores de fábrica desde el sitio web del Portal de empresa.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/02/2017
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,36 +17,32 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: edb5f8306d728abb62b806f287a31b6a75d25cbd
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3f9c59b1bfccabd8489cd466c645dc4a0051e97c
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016992"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321584"
 ---
 # <a name="reset-your-device-from-the-company-portal-website"></a>Restablecer un dispositivo desde el sitio web del Portal de empresa
 
-Si pierde o le roban un dispositivo, es posible que quiera restablecerlo a los valores predeterminados de fábrica para evitar el acceso no autorizado a los datos. Puede restablecer el dispositivo de forma remota mediante el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog). El sitio web del portal de empresa es una página web que puede usar para administrar equipos y dispositivos que haya inscrito en Intune. Puede utilizar este sitio web para realizar la mayoría de las mismas tareas que se pueden realizar con la aplicación de Portal de empresa.
+Obtenga información sobre cómo restablecer un dispositivo usado, perdido o robado a los valores de fábrica desde el sitio web del Portal de empresa.  
 
-Si restablece el dispositivo, dejará de aparecer en el Portal de empresa y se restablecerá a los valores predeterminados de fábrica.
+Después de restablecer un dispositivo, ya no aparece en el Portal de empresa. Los archivos y las aplicaciones que existían previamente se borran y el dispositivo se restaura a la configuración predeterminada de fábrica.
 
 > [!Note]
-> También puede realizar los siguientes pasos desde otro dispositivo que haya inscrito si abre la aplicación Portal de empresa en ese dispositivo y realiza pasos similares para completar el restablecimiento. 
+> También puede seguir los pasos siguientes desde otro dispositivo que haya inscrito. Abra la aplicación Portal de empresa en ese dispositivo y siga los mismos pasos para completar el restablecimiento.  
 
-Para restablecer el dispositivo:
+1. Abra el [sitio web del Portal de empresa](https://portal.manage.microsoft.com/#helpdeskDeskDialog) y haga clic en el botón __Menú__ > __Mis dispositivos__.
 
-1. En el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog), pulse el botón __Menú__ y seleccione __Mis dispositivos__.
+2. Seleccione el dispositivo que quiera restablecer.
 
-2. En la página __Mis dispositivos__, seleccione el dispositivo cuyo nombre quiere cambiar.
+    ![Captura de pantalla de la página Mis dispositivos, con dos iconos en los que se muestran dispositivos no identificados con nombres genéricos. Directamente debajo de los dispositivos hay un banner de color gris en el que se solicita al usuario que identifique el dispositivo que está usando o que agregue uno nuevo.](./media/macOS_enroll_002_tap_here_banner.png)
 
-   ![Captura de pantalla de la página Mis dispositivos con un par de dispositivos sin identificar sobre el mensaje emergente para inscribir los dispositivos que no figuran en la lista o para identificar los no identificados.](./media/macOS_enroll_002_tap_here_banner.png)
+3. El dispositivo se abrirá en una ventana emergente. Haga clic en **Restablecer**.  
 
-3. El dispositivo se abrirá en una ventana emergente. Pulse el botón **Restablecer**.
+ ![Captura de pantalla de la página Mis dispositivos con un par de dispositivos sin identificar sobre el mensaje emergente para inscribir los dispositivos que no figuran en la lista o para identificar los no identificados.](./media/macOS_enroll_002_tap_here_banner.png)
 
-   ![Todas las opciones de un dispositivo seleccionado en el sitio web del Portal de empresa, incluidas Cambiar nombre, Quitar, Restablecer dispositivo, Restablecer código de acceso y Bloqueo remoto. ](./media/iwp-screen-with-all-options.png)
+4. Aparece un mensaje para advertir que se va a borrar todo el contenido en el dispositivo. Pulse **Restablecer** para confirmar.  
 
-4. Aparecerá un mensaje de advertencia para indicarle que está a punto de borrar todo el contenido del dispositivo al restablecer la configuración predeterminada de fábrica. Pulse **Restablecer** para confirmar que eso es lo que quiere hacer.
-
-Se ha restablecido el dispositivo.
-
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com/#helpdeskDeskDialog).

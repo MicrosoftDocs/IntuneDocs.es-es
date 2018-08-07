@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 09c4fdc6de0368e7ba7d4bebbc3ebfbf2c5ec378
-ms.sourcegitcommit: 399f34cd169e2e352b49aad1dcb7e88294a4a9f1
+ms.openlocfilehash: 4455a3c26296faba8bf01cf43d8555aebc13afc6
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/06/2018
-ms.locfileid: "37869379"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321482"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Asignación de aplicaciones de Office 365 a dispositivos Windows 10 con Microsoft Intune
 
@@ -60,9 +60,6 @@ Seleccione las aplicaciones de Office que quiere asignar a los dispositivos.
     Además, puede instalar aplicaciones para el cliente de escritorio de Microsoft Project Online y Microsoft Visio para Office 365, si posee sus licencias.
 3. Seleccione **Aceptar**.
 
->[!IMPORTANT]
-> Después de crear el conjunto de aplicaciones, no puede editar sus propiedades. Si desea configurar otras propiedades, elimine el conjunto de aplicaciones y cree otro.
-
 ## <a name="configure-app-information"></a>Configuración de información de la aplicación
 
 En este paso, proporcionará información sobre el conjunto de aplicaciones. Esta información le ayuda a identificar el conjunto de aplicaciones en Intune y, además, ayuda a los usuarios finales a encontrarlo en el Portal de empresa.
@@ -95,11 +92,8 @@ En este paso, configure las opciones de instalación para el conjunto de aplicac
         - **Semianual**
         - **Semianual (dirigido)**
     - **Automatically accept the app end user license agreement** (Aceptar automáticamente el contrato de licencia del usuario final de la aplicación): seleccione esta opción si no exige que los usuarios finales acepten el contrato de licencia. De ese modo, Intune aceptará automáticamente el contrato.
-    - **Use shared computer activation** (Usar activación de equipos compartidos): seleccione esta opción cuando varios usuarios compartan un equipo. Para obtener más información, consulte la introducción a la activación de equipos compartidos para Office 365.
+    - **Use shared computer activation** (Usar activación de equipos compartidos): seleccione esta opción cuando varios usuarios compartan un equipo. Para obtener más información, vea [Introducción a la activación de equipos compartidos para Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
     - **Idiomas**: Office se instala automáticamente en cualquier idioma compatible que se instale con Windows en el dispositivo de los usuarios finales. Seleccione esta opción si desea instalar más idiomas con el conjunto de aplicaciones.
-
->[!IMPORTANT]
-> Después de crear el conjunto de aplicaciones, no puede editar sus propiedades. Si desea configurar otras propiedades, elimine el conjunto de aplicaciones y cree otro.
 
 ## <a name="finish-up"></a>Finalizar
 
@@ -120,7 +114,7 @@ En la tabla siguiente se muestran los códigos de error comunes que podría enco
 |997|WIP|Instalación|
 |0|Después de la instalación|La instalación se realizó correctamente|    
 |1603 (ERROR_INSTALL_FAILURE)|-|No se pudo realizar ninguna comprobación de requisitos previos, por ejemplo:<ul><li>SxS (se intentó instalar con MSI 2016 instalado)</li><li>Versión no coincidente</li><li>Otros</li></ul>|  
-|0x8000ffff (E_UNEXPECTED)|-|Se intentó instalar sin Office Hacer clic y ejecutar en la máquina.|     
+|0x8000ffff (E_UNEXPECTED)|-|Se intentó desinstalar sin Hacer clic y ejecutar de Office en el equipo.|     
 |17002|-|No se pudo completar el escenario (instalación). Posibles razones:<ul><li>Operación cancelada por el usuario</li><li>Otra instalación canceló la instalación</li><li>Sin espacio en disco durante la instalación</li><li>Identificación de idioma desconocido</li></ul>|
 |17004|-|SKU desconocidas|   
 

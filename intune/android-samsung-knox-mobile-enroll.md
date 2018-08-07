@@ -15,12 +15,12 @@ ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d5ac976e07c98fae0941168cc94b5afc5ca09616
-ms.sourcegitcommit: 8be5f29107d882c3ecf3dc0ce718a2423f91ce9a
+ms.openlocfilehash: 0ada3be91c3b2c15e33e51449678212286362dbf
+ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/27/2018
-ms.locfileid: "36964715"
+ms.lasthandoff: 07/27/2018
+ms.locfileid: "39321193"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Inscripción automática de dispositivos Android mediante Knox Mobile Enrollment de Samsung
 
@@ -32,9 +32,8 @@ Para habilitar la inscripción de Intune mediante Samsung KME, use los portales 
     1. [Cree un perfil de MDM](#create-mdm-profile)
     2. [Agregue los dispositivos](#add-devices)
     3. [Asigne un perfil de MDM a los dispositivos](#assign-an-mdm-profile-to-devices)
-2. En Azure Portal, [identifique los dispositivos como corporativos](#identify-devices-as-corporate-owned).
-3. En el portal de Knox, [configure el inicio de sesión del usuario final](#configure-how-end-users-sign-in).
-4. [Distribuya los dispositivos](#distribute-devices).
+2. En el portal de Knox, [configure el inicio de sesión del usuario final](#configure-how-end-users-sign-in).
+3. [Distribuya los dispositivos](#distribute-devices).
 
 
 Una lista de identificadores de dispositivos (números de serie e IME) se agregan automáticamente al portal de Knox cuando se compran dispositivos de revendedores autorizados que participan en el programa de implementación de Knox.
@@ -79,22 +78,6 @@ Para asignar perfiles de MDM a los dispositivos, se deben agregar dispositivos c
 ## <a name="assign-an-mdm-profile-to-devices"></a>Asignación de un perfil de MDM a los dispositivos
 Debe asignar un perfil de MDM a los dispositivos agregados en el portal de Knox antes de poder inscribirlos. [Consulte la guía Samsung Knox Enrollment User Guide para información sobre la configuración de dispositivos](https://docs.samsungknox.com/KME-Getting-Started/Content/configure-devices.htm).
 
-## <a name="identify-devices-as-corporate-owned"></a>Identificar dispositivos como corporativos
-Puede identificar los dispositivos inscritos mediante KME como corporativos. Debe hacerlo antes de inscribir los dispositivos. Esto le permite realizar tareas de administración adicionales y recopilar información adicional, como el número de teléfono completo y un inventario de las aplicaciones.
-
-Siga estos pasos para identificar dispositivos como corporativos:
-
-1. Exporte la lista de dispositivos del portal de Knox como un archivo CSV.
-
-2. Dé formato al archivo CSV con IMEI o un número de serie, como se indica [aquí](https://docs.microsoft.com/en-us/intune/corporate-identifiers-add#identify-corporate-owned-devices-with-imei-or-serial-number).
-
-3. En Azure Portal, cargue el archivo CSV a **Inscripción de dispositivos** > **Identificadores de dispositivos corporativos** > **Agregar**.
-
-Los dispositivos identificados que inscriba ahora estarán marcados como corporativos.
-
-> [!NOTE]
->Intune asigna de manera automática el estado de corporativo a los dispositivos que se inscriban con la cuenta [Administrador de inscripción de dispositivos](https://docs.microsoft.com/en-us/intune/device-enrollment-manager-enroll).
-
 ## <a name="configure-how-end-users-sign-in"></a>Configure el inicio de sesión de los usuarios finales
 
 En el caso de los dispositivos inscritos en Intune mediante KME, puede configurar cómo un usuario final inicia sesión de la siguiente manera:
@@ -121,7 +104,7 @@ Después de crear y asignar un perfil de MDM, asociar un nombre de usuario e ide
 
 - **No se considera el campo "Password" (Contraseña):** si el campo **Password** (Contraseña) se completa en **Device details** (Detalles del dispositivo) en el portal de Knox, la aplicación Portal de empresa de Intune no lo tomará en cuenta. El usuario final debe escribir una contraseña en el dispositivo para completar la inscripción del mismo.
 
-- **Inscripción Enterprise de Android** KME no admite la inscripción Enterprise de Android.
+- **Inscripción de Android Enterprise:** KME no admite la inscripción de Android Enterprise.
 
 ## <a name="getting-support"></a>Ayuda
 Obtenga más información sobre cómo [recibir soporte técnico para Samsung KME](https://docs.samsungknox.com/KME-Getting-Started/Content/to-get-kme-support.htm).
