@@ -15,12 +15,12 @@ ms.assetid: f276d98c-b077-452a-8835-41919d674db5
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f03c60c12bfd759c738de50d320787bf4b85f99d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 3b7652c8c4f471a0a0c32da23d8ac1859e84eb13
+ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909191"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39400358"
 ---
 # <a name="enroll-android-devices"></a>Inscripción de dispositivos Android
 
@@ -38,7 +38,7 @@ Para prepararse para administrar dispositivos móviles, debe establecer la entid
 
 ## <a name="set-up-android-enrollment"></a>Configuración de la inscripción de Android
 
-De manera predeterminada, Intune permite la inscripción de dispositivos Android y Samsung KNOX Standard. Después de cumplir los requisitos previos, los administradores simplemente deben [indicar a sus usuarios cómo inscribir sus dispositivos](/intune-user-help/enroll-your-device-in-intune-android.md).
+De manera predeterminada, Intune permite la inscripción de dispositivos Android y Samsung KNOX Standard. Tras cumplir los requisitos previos, los administradores simplemente deben [indicar a sus usuarios cómo inscribir sus dispositivos](/intune-user-help/enroll-your-device-in-intune-android).
 
 Después de que un usuario se haya inscrito, puede empezar a administrar sus dispositivos en Intune, que incluye la [asignación de directivas de cumplimiento de normas](compliance-policy-create-android.md), la [administración de aplicaciones](app-management.md) y mucho más.
 
