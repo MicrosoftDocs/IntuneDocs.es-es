@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/23/2018
+ms.date: 8/2/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f10e7bb7a2e7c5e1d0e8b27517a62454e8bd630
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 6db58b1b1f19f789a2163f497c1f0da4c7c034a5
+ms.sourcegitcommit: 5f6117b83f96f7d93dde3685c2ff2b67ae53740b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321809"
+ms.lasthandoff: 08/03/2018
+ms.locfileid: "39481128"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Configuración de quiosco para Windows 10 (y versiones posteriores) en Intune
 
@@ -25,9 +25,18 @@ Los perfiles de quiosco se usan para configurar dispositivos Windows 10 para que
 
 ## <a name="kiosk-settings"></a>Configuración de quiosco
 
-1. Seleccione **Agregar** para crear un entorno de quiosco.
-2. Escriba un **Nombre de la configuración de quiosco** para el quiosco. Este nombre identifica un grupo de aplicaciones, la distribución de estas aplicaciones en el menú Inicio y los usuarios que están asignados a esta configuración de quiosco.
-3. Seleccione el **Modo de quiosco**. **Modo de quiosco**: identifica el tipo de modo de quiosco admitido por la directiva. Las opciones son:
+1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
+2. Seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
+3. Introduzca las siguientes propiedades:
+
+   - **Nombre**: escriba un nombre descriptivo para el nuevo perfil.
+   - **Descripción**: escriba una descripción para el perfil Es opcional, pero se recomienda hacerlo.
+   - **Plataforma**: seleccione **Windows 10 y versiones posteriores**.
+   - **Tipo de perfil**: seleccione **Quiosco (versión preliminar)**.
+   
+4. Seleccione **Quiosco** > **Agregar**.
+5. Escriba un **Nombre de la configuración de quiosco** para el quiosco. Este nombre identifica un grupo de aplicaciones, la distribución de estas aplicaciones en el menú Inicio y los usuarios que están asignados a esta configuración de quiosco.
+6. Seleccione el **Modo de quiosco**. **Modo de quiosco**: identifica el tipo de modo de quiosco admitido por la directiva. Las opciones son:
 
     - **No configurado** (valor predeterminado): la directiva no habilita la pantalla completa.
     - **Quiosco a pantalla completa con una sola aplicación**: el perfil habilita el dispositivo para que se ejecute como una cuenta de usuario único y lo bloquea en una única Plataforma universal de Windows (UWP). Así que cuando el usuario inicia sesión, se inicia una aplicación concreta. Este modo también evita que el usuario abra nuevas aplicaciones o modifique la aplicación en ejecución.
@@ -36,7 +45,7 @@ Los perfiles de quiosco se usan para configurar dispositivos Windows 10 para que
 #### <a name="single-full-screen-app-kiosks"></a>Quioscos a pantalla completa con una sola aplicación
 Escriba los valores siguientes:
 
-- **Identificador de la aplicación para Plataforma universal de Windows (UWP)**: escriba el  **identificador de modelo de usuario de aplicación (AUMID)** de la aplicación de quiosco. O seleccione una aplicación administrada existente que haya agregado mediante [Aplicaciones móviles](apps-add.md).
+- **Identificador de la aplicación para Plataforma universal de Windows (UWP)**: escriba el ** identificador de modelo de usuario de aplicación (AUMID)** de la aplicación de quiosco. O seleccione una aplicación administrada existente que haya agregado mediante [Aplicaciones móviles](apps-add.md).
 
     Vea [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Buscar el identificador de modelo de usuario de aplicación de una aplicación instalada).
 
@@ -95,7 +104,7 @@ En los dispositivos con Windows Holographic for Business, puede configurar estos
 #### <a name="single-full-screen-app-kiosks"></a>Quioscos a pantalla completa con una sola aplicación
 Escriba los valores siguientes:
 
-- **Identificador de la aplicación para Plataforma universal de Windows (UWP)**: escriba el  **identificador de modelo de usuario de aplicación (AUMID)** de la aplicación de quiosco. O seleccione una aplicación administrada existente que haya agregado mediante [Aplicaciones móviles](apps-add.md).
+- **Identificador de la aplicación para Plataforma universal de Windows (UWP)**: escriba el ** identificador de modelo de usuario de aplicación (AUMID)** de la aplicación de quiosco. O seleccione una aplicación administrada existente que haya agregado mediante [Aplicaciones móviles](apps-add.md).
 
     Para obtener el identificador, vea [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Buscar el identificador de modelo de usuario de aplicación de una aplicación instalada).
 

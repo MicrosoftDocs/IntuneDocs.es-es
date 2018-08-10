@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/25/2018
+ms.date: 7/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ac3bbb4a32e86d756835d136cd3923676f022a7b
-ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
+ms.openlocfilehash: 45d41f02fdfff7179dbd43f4d2afdac3337f8b7f
+ms.sourcegitcommit: e8aaa0955d13fa6c9d5f35a730ad06509ce88d0b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39336084"
+ms.lasthandoff: 08/01/2018
+ms.locfileid: "39400290"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Configurar perfiles de telefonía móvil eSIM en Intune: versión preliminar pública
 
@@ -26,7 +26,7 @@ ms.locfileid: "39336084"
 
 ## <a name="introduction"></a>Introducción
 
-eSIM es un chip SIM incrustado y permite conectarse a Internet a través de una conexión de datos móviles en un dispositivo compatible con eSIM, como [LTE Surface Pro](https://www.microsoft.com/surface/business/surface-pro). Con eSIM, no es necesario obtener una tarjeta SIM del operador de telefonía móvil, y puede cambiar rápidamente entre operadores de telefonía móvil y planes de datos.
+eSIM es un chip SIM incrustado y permite conectarse a Internet a través de una conexión de datos móviles en un dispositivo compatible con eSIM, como [LTE Surface Pro](https://www.microsoft.com/surface/business/surface-pro). Con un eSIM, no es necesario obtener una tarjeta SIM del operador de telefonía móvil. Como viajero global, también puede cambiar entre los operadores de telefonía móviles y los planes de datos para estar siempre conectado.
 
 Por ejemplo, tiene un plan de datos móviles para el trabajo y otro con un operador de telefonía móvil distinto para uso personal. Cuando viaja, puede obtener acceso a Internet mediante la búsqueda de operadores de telefonía móvil con planes de datos en esa zona.
 
@@ -35,7 +35,7 @@ En Intune, puede importar códigos de activación de un solo uso proporcionados 
 Para implementar eSIM en los dispositivos mediante Intune, se necesita lo siguiente:
 
 - **Dispositivos compatibles con eSIM**, como Surface LTE: vea [si el dispositivo admite eSIM](https://support.microsoft.com/help/4020763/windows-10-use-esim-for-cellular-data). O bien, vea una lista de [algunos de los dispositivos compatibles con eSIM conocidos](#esim-capable-devices) (en este artículo).
-- **PC con Windows 10 Fall Creators Update**  (1709 o posterior) inscrito y administrado mediante MDM por Intune.
+- **PC con Windows 10 Fall Creators Update ** (1709 o posterior) inscrito y administrado mediante MDM por Intune.
 - **Códigos de activación** proporcionados por el operador de telefonía móvil. Estos códigos de activación de un solo uso se agregan a Intune y se implementan en los dispositivos compatibles con eSIM. Póngase en contacto con su operador de telefonía móvil para obtener los códigos de activación de eSIM.
 
 ## <a name="deploy-esim-to-devices---overview"></a>Implementar eSIM en dispositivos: Introducción

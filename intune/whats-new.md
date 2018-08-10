@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 07/30/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: 53be8456b09c7775a4de827eb09680f47e8d62d7
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 2a3c4484eb80fd753d00c851d3e5dc6b5f48347a
+ms.sourcegitcommit: d3375505a5869c0392d2bc0f48b975c10366f586
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321567"
+ms.lasthandoff: 07/31/2018
+ms.locfileid: "39362065"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novedades de Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -174,7 +174,7 @@ Como administrador de Microsoft Intune, puede revocar todas las licencias de una
 Hemos revisado los mensajes que ven los usuarios cuando un dispositivo no es conforme. Estos mensajes conservan su significado original, pero se han actualizado con un lenguaje más descriptivo y menos jerga técnica. También se han actualizado los vínculos a la documentación y los pasos de corrección para mantenerlos actualizados.
 Los textos siguientes son un ejemplo de las mejoras que verá en los mensajes:
 - **Antes**: *Este dispositivo no ha contactado con el servicio de Intune en el período de tiempo especificado que requiere el administrador de TI. Para resolver este problema, abra la aplicación de Portal de empresa en el dispositivo y haga clic en el botón Comprobar cumplimiento.*
-- **Después**:  *Hace tiempo que el dispositivo no se registra en la organización. Para volver a establecer una conexión, abra la aplicación de Portal de empresa en el dispositivo y pulse en Comprobar configuración del dispositivo.*
+- **Después**: * Hace tiempo que el dispositivo no se registra en la organización. Para volver a establecer una conexión, abra la aplicación de Portal de empresa en el dispositivo y pulse en Comprobar configuración del dispositivo.*
 
 #### <a name="revoke-ios-vpp-app-license----1863797---"></a>Revocar licencias de aplicaciones iOS de PCV<!-- 1863797 -->
 Como administrador, puede recuperar la licencia de una aplicación iOS de VPP asignada a un usuario o un dispositivo. Al desinstalar una aplicación iOS de PCV, también podrá recuperar la licencia de la aplicación. Antes de desinstalar la aplicación, hay que quitar el usuario o el dispositivo del grupo al que se destina la aplicación. Al quitarlos, se evita que la aplicación vuelva a instalarse. Tras completar estos pasos, puede optar por asignar la licencia de la aplicación a otro usuario o dispositivo. Para más información sobre las licencias de aplicaciones iOS de PCV, vea [Manage iOS volume-purchased apps in Microsoft Intune](vpp-apps-ios.md) (Administración de aplicaciones iOS compradas por volumen en Microsoft Intune).
@@ -343,10 +343,10 @@ Con un conector de Exchange local de Intune, se puede controlar el acceso de los
 La información de dispositivo de interfaz de tarjeta de chip (CCID) ya se incluye para cada dispositivo. Para verla, elija **Dispositivos** > **Todos los dispositivos** > elija un dispositivo > **Hardware**> compruebe en **Detalles de red**>
 
 #### <a name="assign-all-users-and-all-devices-as-scope-groups----2196803---"></a>Asignación de todos los usuarios y dispositivos como grupos de ámbito <!-- 2196803 -->
-Podrá asignar todos los usuarios, todos los dispositivos y todos los usuarios y dispositivos en los grupos de ámbito. Para ello, elija **Roles de Intune** > **Todos los roles** > **Policy and profile manager (Administrador de directivas y perfiles)** > **Asignaciones**  > elija una asignación > **Ámbito (grupos)**.
+Podrá asignar todos los usuarios, todos los dispositivos y todos los usuarios y dispositivos en los grupos de ámbito. Para ello, elija **Roles de Intune** > **Todos los roles** > **Policy and profile manager (Administrador de directivas y perfiles)** > **Asignaciones** > elija una asignación > **Ámbito (grupos)**.
 
 #### <a name="udid-information-now-included-for-ios-and-macos-devices----2219806-wnready--"></a>La información de UDID ahora se incluye para dispositivos iOS y macOS <!-- 2219806 wnready-->
-Para ver el identificador único de dispositivo (UDID) para dispositivos iOS y macOS, vaya a **Dispositivos** > **Todos los dispositivos** > elija un dispositivo > **Hardware**. UDID solo está disponible para dispositivos corporativos, tal y como se configura en **Dispositivos** > **Todos los dispositivos** > dispositivo > **Propiedades** >  **Propiedad del dispositivo**.
+Para ver el identificador único de dispositivo (UDID) para dispositivos iOS y macOS, vaya a **Dispositivos** > **Todos los dispositivos** > elija un dispositivo > **Hardware**. UDID solo está disponible para dispositivos corporativos, tal y como se configura en **Dispositivos** > **Todos los dispositivos** > dispositivo > **Propiedades** > **Propiedad del dispositivo**.
 
 ### <a name="intune-apps"></a>Aplicaciones de Intune
 
@@ -1123,6 +1123,16 @@ En Intune puede especificar aplicaciones denegadas. Si una aplicación queda den
 
 
 ## <a name="notices"></a>Notificaciones
+
+### <a name="plan-for-change-change-password-at-next-auth-added-to-intune---1873216---"></a>Plan de cambio: opción Change Password at Next Auth (Cambiar contraseña en la siguiente autenticación) agregada a Intune<!-- 1873216 -->
+En la versión de servicio de septiembre, Intune planea integrar la opción **Change Password at Next Auth** (Cambiar la contraseña en la siguiente autenticación) que Apple lanzó recientemente para dispositivos que ejecutan la versión 10.13 de macOS y versiones más recientes de este sistema operativo. Antes de esta opción de configuración, los proveedores de MDM no podían comprobar que el código de paso del dispositivo se cambiaba para que fuera compatible. Las directivas de configuración y cumplimiento de Intune solo validan eso la siguiente vez que se cambia una contraseña del dispositivo, que está marcada como compatible. Cuando se agregue esta nueva característica de Apple, los usuarios de macOS recibirán una solicitud para actualizar su contraseña, aunque esta fuera compatible.
+
+#### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
+Esto afecta a los entornos con una directiva de dispositivos macOS que usan Intune o MDM híbrida. Ahora que Apple tiene la opción **Change Password at New Auth** (Cambiar contraseña en la siguiente autenticación), Intune puede exigir a los usuarios que actualicen su contraseña cuando se inserta una directiva de contraseña. Si bloquea los recursos de la empresa hasta que el dispositivo se marca como compatible, se puede bloquear a los usuarios finales para que no puedan acceder a los recursos de la empresa, como pueden ser el correo electrónico o los sitios de SharePoint, hasta que restablezcan su contraseña. En el futuro, todas las actualizaciones a las directivas de contraseña de configuración y cumplimiento exigirán a los usuarios de destino que actualicen sus contraseñas.
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué necesito hacer para prepararme para este cambio?
+Hágaselo saber a su departamento de soporte técnico. Si no desea aplicar esta directiva de dispositivo de macOS, se recomienda anular la asignación de la directiva de macOS existente o eliminar dicha directiva. La investigación en los clientes sugiere que la mayoría de los clientes no se ven afectados por este cambio. La mayoría de los usuarios finales actualizan su contraseña después de recibir una solicitud para inscribirse con una contraseña o restablecen su contraseña para que siga siendo compatible.
+
 
 ### <a name="plan-for-change-intune-moving-to-support-ios-10-and-later-in-september----2454656---"></a>Plan de cambio: Intune admitirá iOS 10 y versiones posteriores a partir de septiembre <!-- 2454656 -->
 En septiembre, se espera que Apple lance la versión iOS 12. Poco después de este lanzamiento, la inscripción de Intune, el Portal de empresa y el explorador administrado admitirán iOS 10 y versiones posteriores.  

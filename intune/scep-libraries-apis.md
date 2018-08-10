@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/26/2018
+ms.date: 07/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5278b631d581c892f68e8ba08c2bc7893cd3782a
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 423bfc02edb9260adadf0a6dc67e6299639c7fbb
+ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321747"
+ms.lasthandoff: 08/06/2018
+ms.locfileid: "39575056"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>Uso de API para agregar entidades de certificación de terceros para SCEP en Intune
 
@@ -41,11 +41,18 @@ Con Intune, los administradores crean perfiles SCEP y, después, los asignan a d
 - El Certificado raíz de confianza de la entidad de certificación.
 - Atributos de certificado y más.
 
-El perfil SCEP se asigna a los dispositivos que se registran en Intune, y se configuran con estos parámetros. Intune crea una contraseña de SCEP generada de forma dinámica y, después, la asigna al dispositivo.
+El perfil SCEP se asigna a los dispositivos que se registran en Intune, y se configuran con estos parámetros. Intune crea una contraseña de comprobación de SCEP generada de forma dinámica y, después, la asigna al dispositivo.
 
-Esta contraseña contiene detalles sobre los parámetros que se esperan en la solicitud de firma de certificado (CSR) que el dispositivo emite al servidor SCEP. La contraseña también incluye la hora de expiración del desafío. Intune cifra la información, firma el blob cifrado y, después, empaqueta estos detalles en la contraseña de SCEP.
+Esta comprobación contiene:
 
-Los dispositivos que se ponen en contacto con el servidor SCEP para solicitar un certificado proporcionan después esta contraseña de SCEP. Esta contraseña debe pasar la validación para que el servidor SCEP emita un certificado para el dispositivo. Cuando se valida una contraseña de SCEP, se producen las comprobaciones siguientes:
+- La contraseña de comprobación generada de forma dinámica
+- Los detalles sobre los parámetros que se esperan en la solicitud de firma de certificado (CSR) que el dispositivo emite al servidor SCEP
+- La hora de expiración de la comprobación
+
+Intune cifra esta información, firma el blob cifrado y, después, empaqueta estos detalles en la contraseña de comprobación de SCEP.
+
+Los dispositivos que se ponen en contacto con el servidor SCEP para solicitar un certificado proporcionan después esta contraseña de comprobación de SCEP. El servidor SCEP envía la CSR y la contraseña de comprobación de SCEP cifrada a Intune para la validación.  Esta contraseña de comprobación y CSR deben superar la validación para que el servidor SCEP emita un certificado para el dispositivo. Cuando se valida una contraseña de comprobación de SCEP, se producen las comprobaciones siguientes:
+
 
 - Se valida la firma del blob cifrado.
 - Se valida que el desafío no haya expirado.
@@ -145,13 +152,13 @@ Valida una solicitud de certificado SCEP.
 
 Parámetros:
 
-    - transactionId         El Id. de transacción de SCEP
+    - transactionId         Id. de transacción de SCEP
     - certificateRequest    Cadena codificada en Base64 de solicitud de certificado PKCS #10 con codificación DER
 
 Inicia:
 
-    - IllegalArgumentException      Se inicia si se llama con un parámetro que no es válido
-    - IntuneScepServiceException    Se inicia si se comprueba que la solicitud de certificado no es válida
+    - IllegalArgumentException      Se inicia si se llama con un parámetro que no es válido.
+    - IntuneScepServiceException    Se inicia si se comprueba que la solicitud de certificado no es válida.
     - Exception                     Se inicia si se produce un error inesperado.
 
 > [!IMPORTANT]
