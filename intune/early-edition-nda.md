@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ab6c808fc860491ddece5751983071d40864c8dd
-ms.sourcegitcommit: 8f68cd3112a71d1cd386da6ecdae3cb014d570f2
+ms.openlocfilehash: 2f9849b2c327397c0b8945ee42d9fca7f9f46250
+ms.sourcegitcommit: 58cddb08b64bd60f041eff46ff215e83e13db4e6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/06/2018
-ms.locfileid: "39575090"
+ms.lasthandoff: 08/09/2018
+ms.locfileid: "40001917"
 ---
 # <a name="the-early-edition-for-microsoft-intune---august-2018"></a>La edición anticipada de Microsoft Intune: agosto de 2018
 
@@ -99,18 +99,17 @@ Para ver esta característica, elija **Inscripción del dispositivo** > **Restri
 La activación de esta restricción no tiene ningún efecto en los dispositivos ya inscritos.
 Una vez activada una restricción, Intune realiza comprobaciones para asegurarse de que se ha autorizado cada nueva solicitud de inscripción de Windows como una inscripción corporativa. Los métodos siguientes se consideran como autorizados como una inscripción corporativa:
 - El usuario que se inscribe usa una [cuenta de administrador de inscripción de dispositivos]( device-enrollment-manager-enroll.md).
-
 - El dispositivo se inscribe a través de [Windows AutoPilot](enrollment-autopilot.md).
 - Número IMEI del dispositivo aparece en **Inscripción del dispositivo** > **[Identificadores de dispositivo corporativos]( corporate-identifiers-add.md)**.
 - El dispositivo se inscribe a través de un [paquete de aprovisionamiento en masa](windows-bulk-enroll.md).
 - El dispositivo se inscribe a través de la [inscripción automática de SCCM para la administración conjunta](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview#how-to-configure-co-management).
-Las inscripciones no autorizadas se bloquearán.
-Intune marca las inscripciones siguientes como corporativas, pero dado que no ofrecen control por dispositivo del administrador de Intune, se bloquearán:
+
+Las inscripciones no autorizadas se bloquearán. Intune marca las inscripciones siguientes como corporativas, pero dado que no ofrecen control por dispositivo del administrador de Intune, se bloquearán:
 - [Inscripción automática de MDM](windows-enroll.md#enable-windows-10-automatic-enrollment) con [combinación de Azure Active Directory durante la instalación de Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md).
 - [Inscripción automática de MDM](windows-enroll.md#enable-windows-10-automatic-enrollment) con [combinación de Azure Active Directory desde la instalación de Windows](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx.md).
+
 También se bloquearán los siguientes métodos de inscripción personal:
 - [Inscripción automática de MDM](windows-enroll.md#enable-windows-10-automatic-enrollment) con [incorporación de cuenta profesional desde la instalación de Windows](https://docs.microsoft.com/azure/active-directory/user-help/device-management-azuread-registered-devices-windows10-setup).
-
 - Opción de [solo inscripción de MDM]( https://docs.microsoft.com/windows/client-management/mdm/mdm-enrollment-of-windows-devices#connecting-personally-owned-devices-bring-your-own-device) desde la instalación de Windows.
 
 ### <a name="specify-machine-name-patterns-in-an-autopilot-profile---1849855--"></a>Especificación de patrones de nombre de equipo en un perfil de AutoPilot <!--1849855-->
@@ -167,6 +166,13 @@ Se aplica a:
 Las directivas de cumplimiento creadas en el Portal de Azure clásico dejarán de utilizarse.  Cuando esto suceda, podrá revisar y eliminar todas las directivas existentes, pero no podrá actualizarlas. Puede exportar las directivas como un archivo separado por comas (archivo .csv). Después, utilice los detalles del archivo para volver a crear estas directivas en Intune en Azure Portal.
 > [!IMPORTANT]
 > Cuando el Portal de Azure clásico se retire, no podrá acceder a sus directivas ni tampoco verlas. Por lo tanto, asegúrese de exportarlas y volverlas a crear en Azure Portal antes de la retirada del Portal de Azure clásico.
+
+### <a name="change-terminology-to-retire-and-wipe----2175759---"></a>Cambio de terminología a "retirar" y "borrar" <!-- 2175759 -->
+Para mantener la coherencia con Graph API, la documentación y la interfaz de usuario de Intune cambiarán los términos siguientes:
+- **Eliminar datos de la compañía** cambiará a **retirar**
+- **Restablecimiento de fábrica** cambiará a **borrar**
+
+
 
 <!-- 1807 start -->
 
