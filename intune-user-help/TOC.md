@@ -4,8 +4,6 @@
 
 ## [¿Qué información puede ver mi empresa con Intune?](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)
 
-## [Restablecer mi dispositivo](what-happens-if-you-reset-your-device-cpwebsite.md)
-
 ## [Actualizar mi contraseña](password-does-not-meet-it-administrator-requirements.md)
 
 ## [Iniciar sesión en el Portal de empresa](sign-in-to-the-company-portal.md)
@@ -105,8 +103,8 @@
 ## [Uso de dispositivos macOS](using-your-macos-device-with-intune.md)
 ### [¿Qué ocurre al inscribir un dispositivo macOS?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-macos.md)
 ### [Inscripción de dispositivos macOS](enroll-your-device-in-intune-macos-cp.md)
-### [Anular la inscripción del dispositivo macOS](unenroll-your-device-from-intune-macos.md)
-
+### [Inscribir un dispositivo macOS proporcionado por la empresa](enroll-company-device-macos.md)  
+### [Anular la inscripción del dispositivo macOS](unenroll-your-device-from-intune-macos.md)  
 ### [Solucionar problemas habituales en macOS](troubleshoot-your-device-macos.md)
 #### [La versión de macOS aún no es compatible](your-macos-version-isnt-yet-supported.md)
 #### [Actualización de dispositivos macOS](you-need-to-update-your-macos-device.md)
