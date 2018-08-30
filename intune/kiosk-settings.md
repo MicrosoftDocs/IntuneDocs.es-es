@@ -45,7 +45,7 @@ Los perfiles de quiosco se usan para configurar dispositivos Windows 10 para que
 #### <a name="single-full-screen-app-kiosks"></a>Quioscos a pantalla completa con una sola aplicación
 Escriba los valores siguientes:
 
-- **Identificador de la aplicación para Plataforma universal de Windows (UWP)**: escriba el ** identificador de modelo de usuario de aplicación (AUMID)** de la aplicación de quiosco. O seleccione una aplicación administrada existente que haya agregado mediante [Aplicaciones móviles](apps-add.md).
+- **Identificador de la aplicación para Plataforma universal de Windows (UWP)**: escriba el **identificador de modelo de usuario de aplicación (AUMID)** de la aplicación de quiosco. O seleccione una aplicación administrada existente que haya agregado mediante [Aplicaciones móviles](apps-add.md).
 
     Vea [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Buscar el identificador de modelo de usuario de aplicación de una aplicación instalada).
 
@@ -104,7 +104,7 @@ En los dispositivos con Windows Holographic for Business, puede configurar estos
 #### <a name="single-full-screen-app-kiosks"></a>Quioscos a pantalla completa con una sola aplicación
 Escriba los valores siguientes:
 
-- **Identificador de la aplicación para Plataforma universal de Windows (UWP)**: escriba el ** identificador de modelo de usuario de aplicación (AUMID)** de la aplicación de quiosco. O seleccione una aplicación administrada existente que haya agregado mediante [Aplicaciones móviles](apps-add.md).
+- **Identificador de la aplicación para Plataforma universal de Windows (UWP)**: escriba el **identificador de modelo de usuario de aplicación (AUMID)** de la aplicación de quiosco. O seleccione una aplicación administrada existente que haya agregado mediante [Aplicaciones móviles](apps-add.md).
 
     Para obtener el identificador, vea [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Buscar el identificador de modelo de usuario de aplicación de una aplicación instalada).
 
