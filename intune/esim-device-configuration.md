@@ -35,7 +35,7 @@ En Intune, puede importar códigos de activación de un solo uso proporcionados 
 Para implementar eSIM en los dispositivos mediante Intune, se necesita lo siguiente:
 
 - **Dispositivos compatibles con eSIM**, como Surface LTE: vea [si el dispositivo admite eSIM](https://support.microsoft.com/help/4020763/windows-10-use-esim-for-cellular-data). O bien, vea una lista de [algunos de los dispositivos compatibles con eSIM conocidos](#esim-capable-devices) (en este artículo).
-- **PC con Windows 10 Fall Creators Update ** (1709 o posterior) inscrito y administrado mediante MDM por Intune.
+- **PC con Windows 10 Fall Creators Update** (1709 o posterior) inscrito y administrado mediante MDM por Intune.
 - **Códigos de activación** proporcionados por el operador de telefonía móvil. Estos códigos de activación de un solo uso se agregan a Intune y se implementan en los dispositivos compatibles con eSIM. Póngase en contacto con su operador de telefonía móvil para obtener los códigos de activación de eSIM.
 
 ## <a name="deploy-esim-to-devices---overview"></a>Implementar eSIM en dispositivos: Introducción
