@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/06/2018
+ms.date: 08/27/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2f9849b2c327397c0b8945ee42d9fca7f9f46250
-ms.sourcegitcommit: 58cddb08b64bd60f041eff46ff215e83e13db4e6
+ms.openlocfilehash: e24414d28b8adeae7dfbedb606ca1a7d21497a3f
+ms.sourcegitcommit: 698af815f6de2c4f003f6da428bbfb0680daafa0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40001917"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43093204"
 ---
 # <a name="the-early-edition-for-microsoft-intune---august-2018"></a>La edición anticipada de Microsoft Intune: agosto de 2018
 
@@ -172,7 +172,8 @@ Para mantener la coherencia con Graph API, la documentación y la interfaz de us
 - **Eliminar datos de la compañía** cambiará a **retirar**
 - **Restablecimiento de fábrica** cambiará a **borrar**
 
-
+### <a name="delete-jamf-devices----2653306---"></a>Eliminación de dispositivos Jamf <!-- 2653306 -->
+Podrá eliminar los dispositivos administrados por Jamf en **Dispositivos** > Dispositivo de Jamf > **Eliminar**.
 
 <!-- 1807 start -->
 
@@ -189,12 +190,6 @@ La página **Aplicaciones** presentará una vista **Instaladas** que le permite 
 
 ### <a name="improved-company-portal-app-experience-for-device-enrollment-manager-users----675800---"></a>Mejora de la experiencia en la aplicación Portal de empresa para usuarios administradores de inscripciones de dispositivos <!-- 675800 -->
 Cuando un administrador de inscripciones de dispositivos (DEM) inicia sesión en la aplicación Portal de empresa para Windows, la aplicación solo mostrará el dispositivo actual en ejecución de DEM. Esta mejora reduce los tiempos de espera que se han producido anteriormente cuando la aplicación ha intentado cargar todos los dispositivos inscritos en DEM.  
-
-### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>Use licencias de dispositivo de VPP para tener en servicio el Portal de empresa durante la inscripción de DEP <!-- 1608345 -->
-Podrá usar licencias de dispositivo del Programa de Compras por Volumen (VPP) para tener en servicio el Portal de empresa durante las inscripciones en el Programa de inscripción de dispositivos (DEP). Para ello, al crear o editar un perfil de inscripción, especifique el token de VPP que quiera usar para instalar el Portal de empresa. Asegúrese de que el token no expire y que dispone de suficientes licencias para la aplicación de Portal de empresa. En los casos en los que el token expire o se agoten las licencias, Intune instalará el Portal de empresa del App Store (se solicitará un identificador de Apple).
-
-###  <a name="windows-line-of-business-lob-apps-file-extensions----1884873---"></a>Extensiones de los archivos de aplicaciones de línea de negocio (LOB) de Windows <!-- 1884873 -->
-Ahora, las extensiones de archivo de las aplicaciones de LOB de Windows incluirán las extensiones *.msi*, *.appx*, *.appxbundle*, *.msix* y *.msixbundle*. Puede agregar una aplicación en Microsoft Intune seleccionando **Aplicaciones móviles** > **Aplicaciones** > **Agregar**. Se mostrará el panel **Agregar aplicación**, que permite seleccionar el **tipo de aplicación**. En el caso de las aplicaciones de LOB de Windows, seleccione la aplicación de **línea de negocio** como el tipo de aplicación, elija el **archivo de paquete de aplicación** y, después, especifique un archivo de instalación con la extensión adecuada.
 
 ### <a name="windows-defender-atp-configuration-package-automatically-added-to-configuration-profile----2144658---"></a>Paquete de configuración de ATP de Windows Defender agregado automáticamente al perfil de configuración <!-- 2144658 -->
 Cuando se usa la [Protección contra amenazas avanzada y la incorporación](advanced-threat-protection.md#onboard-devices-using-a-configuration-profile) de dispositivos en Intune, se descarga un paquete de configuración y se agrega al perfil de configuración. En una actualización futura, Intune obtendrá automáticamente el paquete del Centro de seguridad avanzada de Windows Defender y lo agregará al perfil.

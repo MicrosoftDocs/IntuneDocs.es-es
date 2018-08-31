@@ -15,12 +15,12 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d3b835f9fb2c1f7695919fa7d7f237c3989bd470
-ms.sourcegitcommit: 58cddb08b64bd60f041eff46ff215e83e13db4e6
+ms.openlocfilehash: cf1b47b578c5abe0051b94c9f4c2127cd48f0e76
+ms.sourcegitcommit: 698af815f6de2c4f003f6da428bbfb0680daafa0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/09/2018
-ms.locfileid: "40001934"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43092284"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Inscribir dispositivos iOS automáticamente con el Programa de inscripción de dispositivos de Apple
 
@@ -129,9 +129,17 @@ Ahora que ha instalado el token, puede crear un perfil de inscripción para disp
     > Si quiere realizar alguna de las acciones siguientes, establezca **Authenticate with Company Portal instead of Apple Setup Assistant** (Autenticar con el Portal de empresa en lugar del Asistente de configuración) en **Sí**.
     >    - usar la autenticación multifactor
     >    - pedir a los usuarios que cambien su contraseña cuando inician sesión por primera vez
-    >    - pedir a los usuarios que restablezcan las contraseñas expiradas durante la inscripción. Estas acciones no se admiten cuando la autenticación se realiza con el Asistente de configuración de Apple.
+    >    - pedir a los usuarios que restablezcan las contraseñas expiradas durante la inscripción
+    >
+    > Estas operaciones no se admiten durante la autenticación con el asistente de configuración de Apple.
 
-6. Elija **Configuración de administración de dispositivos** y seleccione si desea o no que se supervisen los dispositivos con este perfil.
+
+6. Si ha elegido **Sí** para **Autenticar con el Portal de empresa en lugar del Asistente para configuración de Apple**, tiene la opción para usar un token del Programa de compras por volumen (VPP) para instalar automáticamente Portal de empresa en el dispositivo sin que el usuario tenga que proporcionar un identificador de Apple. Para instalar Portal de empresa con un token de VPP, elija un token en **Instalar Portal de empresa con VPP**. Asegúrese de que el token no expire y de que disponga de suficientes licencias de dispositivos para la aplicación Portal de empresa. Si el token expira o se agotan las licencias, Intune instalará Portal de empresa del App Store y solicitará un identificador de Apple.
+
+    ![Captura de pantalla de la instalación de Portal de empresa con VPP.](./media/device-enrollment-program-enroll-ios/install-cp-with-vpp.png)
+
+
+7. Elija **Configuración de administración de dispositivos** y seleccione si desea o no que se supervisen los dispositivos con este perfil.
 
     ![Captura de pantalla de Configuración de administración de dispositivos.](./media/device-enrollment-program-enroll-ios/devicemanagementsettingsblade.png)
 
@@ -145,37 +153,42 @@ Ahora que ha instalado el token, puede crear un perfil de inscripción para disp
      > [!NOTE]
      > Un dispositivo inscrito sin supervisión solo puede restablecerse a supervisado con Apple Configurator. Para restablecer el dispositivo de esta forma, es necesario conectar un dispositivo iOS a un Mac con un cable USB. Obtenga más información en los documentos de [Apple Configurator](http://help.apple.com/configurator/mac/2.3).
 
-7. Elija si desea o no que la inscripción de dispositivos esté bloqueada con este perfil. **Inscripción bloqueada** deshabilita la configuración de iOS que permite que el perfil de administración se quite del menú **Configuración**. Tras la inscripción de los dispositivos, no se puede cambiar esta configuración sin restablecer el dispositivo a los valores de fábrica. Estos dispositivos deben tener el modo de administración **supervisado** definido en *Sí*. 
+8. Elija si desea o no que la inscripción de dispositivos esté bloqueada con este perfil. **Inscripción bloqueada** deshabilita la configuración de iOS que permite que el perfil de administración se quite del menú **Configuración**. Tras la inscripción de los dispositivos, no se puede cambiar esta configuración sin restablecer el dispositivo a los valores de fábrica. Estos dispositivos deben tener el modo de administración **supervisado** definido en *Sí*. 
 
-8. Elija si desea o no que los dispositivos que usan este perfil se puedan **sincronizar con equipos**. Si elige **Permitir Apple Configurator mediante certificado**, debe seleccionar un certificado en **Certificado de Apple Configurator**.
+9. Elija si desea o no que los dispositivos que usan este perfil se puedan **sincronizar con equipos**. Si elige **Permitir Apple Configurator mediante certificado**, debe seleccionar un certificado en **Certificado de Apple Configurator**.
 
-9. Si selecciona **Permitir Apple Configurator mediante certificado** en el paso anterior, elija un certificado de Apple Configurator para importarlo.
+10. Si selecciona **Permitir Apple Configurator mediante certificado** en el paso anterior, elija un certificado de Apple Configurator para importarlo.
 
-10. Elija **Aceptar**.
+11. Elija **Aceptar**.
 
-11. Seleccione **Valores del Asistente de configuración** para configurar las siguientes opciones de perfil: ![Personalización del Asistente para configuración](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png).
+12. Seleccione **Valores del Asistente de configuración** para configurar las siguientes opciones de perfil: ![Personalización del Asistente para configuración](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png).
 
-
-    |                 Setting                  |                                                                                               Descripción                                                                                               |
+    | Configuración de departamento | Descripción |
     |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    |     <strong>Nombre de departamento</strong>     |                                                             Aparece cuando los usuarios pulsan <strong>Acerca de la configuración</strong> durante la activación.                                                              |
-    |    <strong>Teléfono del departamento</strong>     |                                                          Aparece cuando el usuario hace clic en el botón <strong>Necesito ayuda</strong> durante la activación.                                                          |
-    | <strong>Opciones del Asistente para la configuración</strong> |                                                     Estas opciones opcionales se pueden configurar más adelante en el menú <strong>Configuración</strong> de iOS.                                                      |
-    |        <strong>Código de acceso</strong>         | Solicita el código de acceso durante la activación. Solicite siempre un código de acceso, a menos que el dispositivo esté protegido o tenga el acceso controlado de otra manera (es decir, modo de quiosco que restringe el dispositivo a una aplicación). |
-    |    <strong>Servicios de ubicación</strong>    |                                                                 Si está habilitado, el Asistente para la configuración solicitará este servicio durante la activación.                                                                  |
-    |         <strong>Restaurar</strong>         |                                                                Si está habilitado, el Asistente para la configuración solicitará una copia de seguridad de iCloud durante la activación.                                                                 |
-    |   <strong>iCloud e identificador de Apple</strong>   |                         Si está habilitado, el Asistente para la configuración solicita al usuario que inicie sesión con un identificador de Apple y en la pantalla Aplicaciones y datos se permitirá restaurar el dispositivo a partir de la copia de seguridad de iCloud.                         |
-    |  <strong>Términos y condiciones</strong>   |                                                   Si está habilitado, el Asistente para la configuración solicita a los usuarios que acepten los términos y condiciones de Apple durante la activación.                                                   |
-    |        <strong>Touch ID</strong>         |                                                                 Si está habilitado, el Asistente para la configuración solicitará este servicio durante la activación.                                                                 |
-    |        <strong>Apple Pay</strong>        |                                                                 Si está habilitado, el Asistente para la configuración solicitará este servicio durante la activación.                                                                 |
-    |          <strong>Zoom</strong>           |                                                                 Si está habilitado, el Asistente para la configuración solicitará este servicio durante la activación.                                                                 |
-    |          <strong>Siri</strong>           |                                                                 Si está habilitado, el Asistente para la configuración solicitará este servicio durante la activación.                                                                 |
-    |     <strong>Datos de diagnóstico</strong>     |                                                                 Si está habilitado, el Asistente para la configuración solicitará este servicio durante la activación.                                                                 |
+    | <strong>Nombre de departamento</strong> | Aparece cuando los usuarios pulsan <strong>Acerca de la configuración</strong> durante la activación. |
+    |    <strong>Teléfono del departamento</strong>     |                                                          Aparece cuando el usuario hace clic en el botón <strong>Necesito ayuda</strong> durante la activación. |
+
+  Cuando el usuario configura el dispositivo, es posible mostrar u ocultar varias pantallas del asistente de configuración.
+  - Si elige **Ocultar**, la pantalla no se mostrará durante la configuración. Después de configurar el dispositivo, el usuario seguirá teniendo la posibilidad de ir al menú **Ajustes** para configurar la característica.
+  - Si elige **Mostrar**, la pantalla se mostrará durante la configuración. A veces, el usuario puede omitir la pantalla sin realizar ninguna acción. Sin embargo, posteriormente podrá ir al menú **Ajustes** del dispositivo para configurar la característica. 
+
+| Configuración de pantallas del asistente | Si elige **Mostrar**, durante la configuración se producirá lo siguiente en el dispositivo: |
+    |------------------------------------------|------------------------------------------|
+    | <strong>Código de acceso</strong> | Se solicitará un código de acceso al usuario. Solicite siempre un código de acceso, a menos que el dispositivo esté protegido o tenga el acceso controlado de otra manera (es decir, modo de quiosco que restringe el dispositivo a una aplicación). |
+    | <strong>Servicios de ubicación</strong> | Se solicitará la ubicación del usuario. |
+    | <strong>Restaurar</strong> | Se mostrará la pantalla **Aplicaciones y datos**. En esta pantalla el usuario tendrá la opción de restaurar o transferir datos de una copia de seguridad de iCloud al configurar el dispositivo. |
+    | <strong>iCloud e identificador de Apple</strong> | El usuario tendrá la opción de iniciar sesión con su **ID de Apple** y usar **iCloud**.                         |
+    | <strong>Términos y condiciones</strong> | El usuario deberá aceptar los términos y condiciones de Apple. |
+    | <strong>Touch ID</strong> | El usuario tendrá la opción de configurar una identificación con huella digital para el dispositivo. |
+    | <strong>Apple Pay</strong> | El usuario tendrá la opción de configurar Apple Pay en el dispositivo. |
+    | <strong>Zoom</strong> | El usuario tendrá la opción de ampliar el contenido de la pantalla al configurar el dispositivo. |
+    | <strong>Siri</strong> | El usuario tendrá la opción de configurar Siri. |
+    | <strong>Datos de diagnóstico</strong> | Se mostrará la pantalla **Diagnóstico** al usuario. En esta pantalla el usuario podrá enviar datos de diagnóstico a Apple. |
 
 
-12. Elija **Aceptar**.
+13. Elija **Aceptar**.
 
-13. Para guardar el perfil, elija **Crear**.
+14. Para guardar el perfil, elija **Crear**.
 
 ## <a name="sync-managed-devices"></a>Sincronizar dispositivos administrados
 Ahora que Intune tiene permiso para administrar los dispositivos, puede sincronizar Intune con Apple para ver los dispositivos administrados en Intune en Azure Portal.
@@ -195,7 +208,7 @@ Debe asignar un perfil del Programa de inscripción a los dispositivos para pode
 
 1. En Intune en Azure Portal, seleccione **Inscripción de dispositivos** > **Inscripción de Apple** > **Tokens del programa de inscripción** > Elija un token de la lista.
 2. Elija **Dispositivos** > Elija los dispositivos de la lista > **Asignar perfil**.
-3. En **Asignar perfil**, elija un perfil para los dispositivos y después seleccione **Asignar**.
+3. En **Asignar perfil**, elija un perfil para los dispositivos y seleccione **Asignar**.
 
 ### <a name="assign-a-default-profile"></a>Asignación de un perfil predeterminado
 

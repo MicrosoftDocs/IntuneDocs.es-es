@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/21/2018
+ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,18 +13,18 @@ ms.technology: ''
 ms.assetid: 3e544286-12ad-4a3a-86f8-d2cf16940b1f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 259cc7653f97cbb9e07ba681e142c62e42c5a124
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: dc5d9f47a8d950c6c5de9f362bd618d1724055f4
+ms.sourcegitcommit: 3e3e2af98dd92f7ba710f393841cfdb3dbcc4867
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34444921"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42912158"
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>Búsqueda de dispositivos iOS perdidos o robados con Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Para descubrir la ubicación de un dispositivo iOS robado o perdido en un mapa, use la acción **Buscar dispositivo**. El dispositivo debe ser un dispositivo iOS de empresa, debe estar inscrito mediante el programa de inscripción de dispositivos y debe estar en modo supervisado. Antes de realizar esta acción, asegúrese de que el dispositivo esté en [modo perdido](device-lost-mode.md).
+Para descubrir la ubicación de un dispositivo iOS robado o perdido en un mapa, use la acción **Buscar dispositivo**. El dispositivo debe estar en modo supervisado. Antes de realizar esta acción, asegúrese de que el dispositivo esté en [modo perdido](device-lost-mode.md).
 
 ## <a name="supported-platforms"></a>Plataformas compatibles
 
