@@ -675,30 +675,6 @@ items:
       href: data-apple-sends-to-intune.md
     - name: Datos que Google manda a Intune
       href: data-google-sends-to-intune.md
-  - name: Supervisión y solución de problemas
-    items:
-    - name: Ayuda para los usuarios para solucionar problemas
-      href: help-desk-operators.md
-    - name: Solucionar problemas de acceso a recursos de empresa
-      href: troubleshoot-company-resource-access-problems.md
-    - name: Solucionar problemas de instalación de aplicaciones
-      href: troubleshoot-app-install.md
-    - name: Registros de auditoría para actividades de Intune
-      href: monitor-audit-logs.md
-    - name: Revisión de los registros de protección de aplicaciones
-      href: app-protection-policy-settings-log.md
-    - name: Solucionar problemas de perfiles de correo electrónico
-      href: troubleshoot-email-profiles-in-microsoft-intune.md
-    - name: Solucionar problemas de actualizaciones de software
-      href: troubleshoot-software-updates-in-microsoft-intune.md
-    - name: Solucionar problemas de Endpoint Protection
-      href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-    - name: Solucionar problemas de directivas
-      href: troubleshoot-policies-in-microsoft-intune.md
-    - name: Solucionar problemas de acceso condicional
-      href: troubleshoot-conditional-access.md
-    - name: Solucionar problemas de Exchange Connector
-      href: troubleshoot-exchange-connector.md
   - name: Automatización y personalización
     items:
     - name: Configuración de los valores personalizados del dispositivo
@@ -796,11 +772,35 @@ items:
       href: https://developer.microsoft.com/en-us/graph/docs/api-reference/beta/resources/intune_graph_overview
 - name: Recursos
   items:
+  - name: Solución de problemas
+    items:
+    - name: Ayuda para los usuarios para solucionar problemas
+      href: help-desk-operators.md
+    - name: Solucionar problemas de acceso a recursos de empresa
+      href: troubleshoot-company-resource-access-problems.md
+    - name: Solucionar problemas de instalación de aplicaciones
+      href: troubleshoot-app-install.md
+    - name: Registros de auditoría para actividades de Intune
+      href: monitor-audit-logs.md
+    - name: Revisión de los registros de protección de aplicaciones
+      href: app-protection-policy-settings-log.md
+    - name: Solucionar problemas de perfiles de correo electrónico
+      href: troubleshoot-email-profiles-in-microsoft-intune.md
+    - name: Solucionar problemas de actualizaciones de software
+      href: troubleshoot-software-updates-in-microsoft-intune.md
+    - name: Solucionar problemas de Endpoint Protection
+      href: troubleshoot-endpoint-protection-in-microsoft-intune.md
+    - name: Solucionar problemas de directivas
+      href: troubleshoot-policies-in-microsoft-intune.md
+    - name: Solucionar problemas de acceso condicional
+      href: troubleshoot-conditional-access.md
+    - name: Solucionar problemas de Exchange Connector
+      href: troubleshoot-exchange-connector.md
   - name: Glosario
     href: intune-glossary.md
-ms.openlocfilehash: ab5b79b56ff430575cf3c9021ce33b573b4d0f22
-ms.sourcegitcommit: 973a06f4a35b74314fece2bae17dd6885b4211c3
+ms.openlocfilehash: 696173c0e1ecc8121637139ce4ada0b497ab7506
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42822957"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241769"

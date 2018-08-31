@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 095985bad8f7e35a953383fcce8296716723b8bc
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: fc1943781dcf95209b575cdb6e36d5065275626f
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909072"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255058"
 ---
 # <a name="set-up-enrollment-of-android-work-profile-devices"></a>Configure la inscripción de dispositivos de perfil de trabajo Android
 
@@ -34,7 +34,7 @@ Para configurar la administración de perfiles de trabajo Android, siga estos pa
 2. Especifique la configuración de inscripción del perfil de trabajo Android. Los perfiles de trabajo Android [solo se admiten en determinados dispositivos Android](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012%20style=%22target=new_window%22). Cualquier dispositivo que admita perfiles de trabajo Android también admite la administración Android convencional. Intune permite especificar cómo se deben administrar los dispositivos que admiten los perfiles de trabajo Android en [Restricciones de inscripción](enrollment-restrictions-set.md).
     - **Bloquear (opción predeterminada)**: todos los dispositivos Android se inscribirán como dispositivos Android convencionales, incluidos los dispositivos que admiten perfiles de trabajo Android.
     - **Permitir**: todos los dispositivos que admiten perfiles de trabajo Android se inscribirán como dispositivos de trabajo Android. Los dispositivos Android que no admitan perfiles de trabajo Android se inscriben como dispositivos Android convencionales.
-3. [Indique a los usuarios cómo deben inscribir sus dispositivos](/intune-user-help/enroll-your-device-in-intune-android.md).
+3. [Indique a los usuarios cómo deben inscribir sus dispositivos](/intune-user-help/enroll-your-device-in-intune-android).
 
 
 Si quiere inscribir dispositivos en perfiles de trabajo Android, pero esos dispositivos ya se han inscrito anteriormente como dispositivos Android normales, debe anular su inscripción y volver a inscribirlos.
