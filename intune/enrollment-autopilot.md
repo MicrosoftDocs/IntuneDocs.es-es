@@ -12,12 +12,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
-ms.openlocfilehash: c96f211f18168c8ae55f0ca2391c6c140caef649
-ms.sourcegitcommit: dc8b6f802cca7895a19ec38bec283d4b3150d213
+ms.openlocfilehash: b3c374e4ce6baeab8cc6fde3f6c45c63c48e34dd
+ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39138727"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42903082"
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>Inscribir dispositivos Windows con Windows AutoPilot
 Windows AutoPilot simplifica el aprovisionamiento de dispositivos. Crear y mantener imágenes personalizadas de sistemas operativos es un proceso que conlleva mucho tiempo. También se requiere tiempo para aplicar estas imágenes en dispositivos nuevos a la hora de prepararlos para que los puedan usar los usuarios finales. Con Microsoft Intune y AutoPilot, puede proporcionar nuevos dispositivos a los usuarios finales sin necesidad de crear, mantener y aplicar imágenes personalizadas del sistema operativo a los dispositivos. Al usar Intune para administrar dispositivos AutoPilot, puede administrar directivas, perfiles y aplicaciones (entre otros) después de inscribirlos. Para obtener información general sobre las ventajas, los escenarios y los requisitos previos, consulte [Información general sobre Windows AutoPilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
@@ -72,8 +72,8 @@ Los perfiles de AutoPilot Deployment sirven para configurar los dispositivos Aut
     - **Implementación automática (versión preliminar)**: (Windows 10 Insider Preview, compilación 17672 o posterior) los dispositivos con este perfil no están asociados al usuario que inscribe el dispositivo. No se necesitan credenciales de usuario para aprovisionar el dispositivo.
 4. En el cuadro **Unirse a Azure AD como**, elija **Unidos a Azure AD**.
 5. Elija **Configuración rápida**, configure las siguientes opciones y elija **Guardar**:
-    - **Idioma (región)***: elija el idioma que se usará en el dispositivo. Esta opción solo está disponible si ha elegido **Implementación automática** como **Modo de implementación**.
-    - **Configurar el teclado automáticamente***: si se selecciona un **Idioma (región)**, omita la página de selección de teclado. Esta opción solo está disponible si ha elegido **Implementación automática** como **Modo de implementación**.
+    - **Idioma (región)**\*: elija el idioma que se usará en el dispositivo. Esta opción solo está disponible si ha elegido **Implementación automática** como **Modo de implementación**.
+    - **Configurar el teclado automáticamente**\*: si se selecciona un **Idioma (región)**, omita la página de selección de teclado. Esta opción solo está disponible si ha elegido **Implementación automática** como **Modo de implementación**.
     - **Contrato de licencia para el usuario final (CLUF)**: (Windows 10, versión 1709 o posterior) elija si quiere mostrar o no los términos de licencia a los usuarios.
     - **Configuración de privacidad**: elija si quiere mostrar o no la configuración de privacidad a los usuarios.
     - **Tipo de cuenta de usuario**: elija si el tipo de cuenta de usuario es de **Administrador** o de usuario **Estándar**. 

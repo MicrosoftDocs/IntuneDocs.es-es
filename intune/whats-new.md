@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/30/2018
+ms.date: 08/14/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
 ms.reviewer: dougeby
 ms.suite: ems
 /ms.custom: intune-azure
-ms.openlocfilehash: ff2774b76bceeeeaecec7a4dc74876b11706d574
-ms.sourcegitcommit: 56a8a3c8974f54f0f9ecc1e5b43581502ecc348e
+ms.openlocfilehash: 41c5af504bb65a661e55d09d735a78df780deb84
+ms.sourcegitcommit: 698af815f6de2c4f003f6da428bbfb0680daafa0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39614520"
+ms.lasthandoff: 08/27/2018
+ms.locfileid: "43092182"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novedades de Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,12 +42,21 @@ Conozca las novedades semanales de Microsoft Intune. También podrá obtener inf
 
 -->   
 
+
+## <a name="week-of-august-27-2018"></a>Semana del 27 de agosto de 2018
+
+### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>Use licencias de dispositivo de VPP para tener en servicio el Portal de empresa durante la inscripción de DEP <!-- 1608345 -->
+Ahora puede usar licencias de dispositivo del Programa de compras por volumen (VPP) para aprovisionar previamente Portal de empresa durante las inscripciones en el Programa de inscripción de dispositivos (DEP). Para ello, al [crear o editar un perfil de inscripción](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile), especifique el token de VPP que quiera usar para instalar Portal de empresa. Asegúrese de que el token no expire y que dispone de suficientes licencias para la aplicación de Portal de empresa. En los casos en los que el token expire o se agoten las licencias, Intune instalará el Portal de empresa del App Store (se solicitará un identificador de Apple).
+
+
+## <a name="week-of-august-14-2018"></a>Semana del 14 de agosto de 2018
+
+### <a name="macos-support-for-apple-device-enrollment-program----747651---"></a>Compatibilidad de macOS para el Programa de inscripción de dispositivos de Apple <!-- 747651 -->
+Intune ahora admite la inscripción de dispositivos macOS el Programa de inscripción de dispositivos de Apple (DEP). Para obtener más información, vea [Inscripción automática de dispositivos macOS con el Programa de inscripción de dispositivos de Apple](device-enrollment-program-enroll-macos.md).
+
 ## <a name="week-of-july-23-2018"></a>Semana del 23 de julio de 2018
 
 ### <a name="app-management"></a>Administración de aplicaciones
-
-####  <a name="windows-apps-file-extensions----1884873---"></a>Extensiones de archivo de aplicaciones de Windows <!-- 1884873 -->
-Ahora, las extensiones de archivo de las aplicaciones de Windows incluirán *.msi*, *.appx*, *.appxbundle*, *.msix* y *.msixbundle*. Puede agregar una aplicación en Microsoft Intune seleccionando **Aplicaciones móviles** > **Aplicaciones** > **Agregar**. Se mostrará el panel **Agregar aplicación**, que permite seleccionar el **tipo de aplicación**. Seleccione un tipo de aplicación que permita cargar un archivo de paquete de aplicación, elija el **archivo de paquete de aplicación** y, después, escriba un archivo de instalación con la extensión adecuada.
 
 #### <a name="line-of-business-lob-app-support-for-macos----1895847---"></a>Compatibilidad con aplicaciones de línea de negocio (LOB) para macOS <!-- 1895847 -->
 Microsoft Intune permite implementar aplicaciones de LOB macOS como **Required** (Obligatoria) o como **Available with enrollment** (Disponible con inscripción). Los usuarios finales pueden obtener las aplicaciones implementadas como **Available** (Disponible) a través del Portal de empresa para macOS o del [sitio web del Portal de empresa](https://portal.manage.microsoft.com).
@@ -1129,6 +1138,16 @@ En Intune puede especificar aplicaciones denegadas. Si una aplicación queda den
 
 ## <a name="notices"></a>Notificaciones
 
+### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>Acción necesaria: actualización de la restricción de dispositivos Android o configuración de contraseña de directiva de cumplimiento en Intune
+Intune ya no dispondrá del tipo de contraseña "predeterminada del dispositivo" para dispositivos Android 4.4 y versiones superiores. Debido a las diferencias entre las plataformas de Android y la configuración predeterminada del dispositivo, este suele tratar esta directiva como opcional. Para que no se produzcan confusiones al aplicar esta configuración en Android, se eliminará de la interfaz de usuario en una versión posterior. 
+#### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
+- Si quiere que sea obligatorio indicar una contraseña en los dispositivos, le recomendamos que edite los perfiles de plataforma de Android para definir el tipo de contraseña necesario, en vez de usar la opción predeterminada del dispositivo.
+- Si quiere que el usuario final decida si crear una contraseña o no, seleccione el botón "Sin configurar". Cuando se quite esta opción de la interfaz de usuario, si todavía está activada, recibirá una solicitud para elegir una opción distinta a la predeterminada del dispositivo al editar el perfil.
+¿Qué necesito hacer para prepararme para este cambio?
+Revise la configuración de contraseña en las directivas de cumplimiento y restricción de dispositivos Android y dispositivos empresariales Android. Figuran en las directivas Seguridad del sistema para cumplimiento y en las restricciones Contraseña de dispositivo o Configuración de perfil de trabajo para el dispositivo. En la información adicional encontrará un vínculo para obtener más información y capturas de pantalla sobre cómo configurar dichas opciones.
+####<a name="additional-information"></a>Información adicional
+https://aka.ms/PasswordSettings 
+
 ### <a name="plan-for-change-change-password-at-next-auth-added-to-intune---1873216---"></a>Plan de cambio: opción Change Password at Next Auth (Cambiar contraseña en la siguiente autenticación) agregada a Intune<!-- 1873216 -->
 En la versión de servicio de septiembre, Intune planea integrar la opción **Change Password at Next Auth** (Cambiar la contraseña en la siguiente autenticación) que Apple lanzó recientemente para dispositivos que ejecutan la versión 10.13 de macOS y versiones más recientes de este sistema operativo. Antes de esta opción de configuración, los proveedores de MDM no podían comprobar que el código de paso del dispositivo se cambiaba para que fuera compatible. Las directivas de configuración y cumplimiento de Intune solo validan eso la siguiente vez que se cambia una contraseña del dispositivo, que está marcada como compatible. Cuando se agregue esta nueva característica de Apple, los usuarios de macOS recibirán una solicitud para actualizar su contraseña, aunque esta fuera compatible.
 
@@ -1171,22 +1190,6 @@ Se recomienda que quite las dependencias de TLS 1.0 y 1.1 de manera anticipada e
 
 **Información adicional**: [Intune moving to TLS 1.2 for encryption](https://blogs.technet.microsoft.com/intunesupport/2018/06/05/intune-moving-to-tls-1-2-for-encryption/) (Traspaso de Intune a TLS 1.2 para el cifrado)
 
-### <a name="plan-for-change-new-windows-10-setting-for-kiosk-configuration-in-intune----1560072---"></a>Plan de cambio: nueva opción de Windows 10 para la configuración de pantalla completa en Intune <!-- 1560072 -->
-Se va a cambiar cómo y dónde configurar equipos de escritorio de Windows 10 1709 y versiones posteriores (RS3 y posterior), en Azure Portal de Intune.
-
-#### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto? 
-Los registros indican que usa la opción Windows 10 > Restricciones de dispositivos > Quiosco (versión preliminar). En mayo, su nombre se cambia a Windows 10 > Restricciones de dispositivos > Quiosco (obsoleto) en la interfaz de usuario para indicar que su uso ya no se recomienda. Pero seguirá funcionando hasta la actualización de julio para Intune. Luego quedará obsoleta en el back-end y dejará de funcionar. Como alternativa, en mayo se va a lanzar un nuevo perfil de configuración de dispositivos: Windows 10 > Quiosco, que contiene las opciones para configurar pantallas completas en Windows 10 RS4 y versiones posteriores.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué necesito hacer para prepararme para este cambio?  
-Cuando Intune lance la actualización de servicio de mayo en torno a finales de mayo, se compartirán instrucciones para probar y verificar que se puede migrar la configuración de pantalla completa de Windows 10 RS3 a Windows 10 RS4. Siga estas instrucciones para configurar los dispositivos como pantallas completas mediante el nuevo perfil de configuración de dispositivos para pantallas completas.
-
-#### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
-Este cambio afectará tanto a los clientes de la versión independiente de Intune como a los de la versión híbrida (Intune con Configuration Manager). Esta integración le permitirá simplificar la administración en la nube. De esta forma, solo tendrá que acceder a una hoja en Azure, la de Intune, para administrar grupos, directivas, aplicaciones y dispositivos móviles.
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>¿Qué necesito hacer para prepararme para este cambio?
-Etiquete Intune como favorito en lugar de la hoja de servicio de Intune App Protection y familiarícese con el flujo de trabajo de directivas de protección de aplicaciones de la hoja de aplicación móvil que hay en Intune. Proporcionaremos el redireccionamiento durante un breve período de tiempo y, después, eliminaremos la hoja de protección de aplicaciones. Recuerde que todas las directivas de protección de aplicaciones se han quitado de Intune y que puede modificar las directivas de acceso condicional mediante la documentación que encontrará aquí: [https://aka.ms/azuread_ca](https://aka.ms/azuread_ca).
-
-**Información adicional**: [https://aka.ms/intuneapppolicy](https://aka.ms/intuneapppolicy)
 
 ### <a name="plan-for-change-change-in-support-for-the-microsoft-intune-app-sdk-for-cordova-plugin"></a>Plan de cambio: cambio en la compatibilidad con el complemento de Microsoft Intune App SDK Cordova
 La compatibilidad de Intune con el [complemento de Microsoft Intune App SDK Cordova](app-sdk-cordova.md) finalizará el 1 de mayo de 2018. Le recomendamos que utilice la herramienta de ajuste de aplicaciones de Intune para preparar sus aplicaciones basadas en Cordova para que estén disponibles y sean más fáciles de utilizar en Intune. Cuando este cambio surta efecto, ya no se ofrecerán actualizaciones ni soporte técnico para el complemento de Microsoft Intune App SDK Cordova. Los desarrolladores de aplicaciones no podrán usar este complemento. Está previsto que Intune siga admitiendo aplicaciones creadas con Cordova. Sin embargo, las aplicaciones creadas con el complemento de Microsoft Intune App SDK Cordova verán reducida su funcionalidad en Intune. Después de ajustar las aplicaciones con la herramienta de ajuste de aplicaciones de Intune, las aplicaciones se pueden implementar para los usuarios finales como lo haría normalmente. En el caso de aplicaciones Android basadas en Cordova que se publiquen en Google Play Store:
