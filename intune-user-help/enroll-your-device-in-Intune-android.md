@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a48e43a024358b35c88014d2b4a05f2245f13a3f
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 5eb00734c8095202b5b633f1db105a42d40e4567
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34449843"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149042"
 ---
 # <a name="enroll-your-android-device-in-intune"></a>Inscriba el dispositivo Android en Intune
 
@@ -94,7 +94,7 @@ Antes o después de la inscripción, se le pedirá que elija una categoría que 
 
     Lo que debe recordar es que se trata de acciones que se realizan en el nombre de la seguridad. El equipo de soporte técnico de su empresa no está intentando invadir su privacidad o borrar la información sin motivo, sino que quiere asegurarse de que los datos corporativos se mantengan a salvo.
 
-    Microsoft no controla este mensaje, y somos conscientes de que su redacción puede parecer un poco drástica. No hay una forma de que el Portal de empresa muestre solo las restricciones y el acceso que son relevantes para su organización. Todos ellos aparecen a la vez en esta pantalla. Póngase en contacto con el equipo de soporte técnico de su empresa para obtener más información, usando la información de contacto que aparece en el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog), si tiene preguntas específicas sobre el uso de su organización.
+    Microsoft no controla este mensaje, y somos conscientes de que su redacción puede parecer un poco drástica. No hay una forma de que el Portal de empresa muestre solo las restricciones y el acceso que son relevantes para su organización. Todos ellos aparecen a la vez en esta pantalla. Póngase en contacto con el equipo de soporte técnico de su empresa para obtener más información, usando la información de contacto que aparece en el [sitio web del Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980), si tiene preguntas específicas sobre el uso de su organización.
 
 11. Siga las instrucciones para escribir un PIN o contraseña. Si ya ha configurado un PIN o una contraseña en este dispositivo, no verá esta pantalla y no deberá escribir un PIN o contraseña nueva.
 
@@ -131,4 +131,4 @@ Antes de intentar instalar aplicaciones de empresa, vaya a **Ajustes** &gt; **Se
 
 Si recibe un error al intentar inscribir el dispositivo en Intune, puede [enviar errores de inscripción al equipo de soporte técnico de su empresa](send-enrollment-errors-to-your-it-admin-android.md).
 
-¿Sigue necesitando ayuda? Póngase en contacto con el equipo de soporte técnico de su empresa (visite el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog) para obtener la información de contacto), o escriba al <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">equipo de Microsoft Android</a>.
+¿Sigue necesitando ayuda? Póngase en contacto con el equipo de soporte técnico de su empresa (visite el [sitio web del Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980) para obtener la información de contacto), o escriba al <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with enrolling my Android device&body=Describe the issue you're experiencing here.">equipo de Microsoft Android</a>.

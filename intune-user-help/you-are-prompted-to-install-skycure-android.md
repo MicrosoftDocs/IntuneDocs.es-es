@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 7194f63a3d9b34be00753a66b9929c033bd10b86
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 40e022fceecff0c12be9e7112af77b5d830ff94a
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019660"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148191"
 ---
 # <a name="install-symantec-endpoint-protection-mobile-on-your-android-device"></a>Instalación de Symantec Endpoint Protection Mobile en su dispositivo Android
 
@@ -58,4 +58,4 @@ Si tiene problemas con la instalación, pruebe los pasos de solución de problem
 
 A veces, las instalaciones pueden producir errores debido a problemas técnicos fuera de su control. Si esto sucede, intente instalar SEP Mobile [manualmente desde Play Store](https://play.google.com/store/apps/details?id=com.skycure.skycure).
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

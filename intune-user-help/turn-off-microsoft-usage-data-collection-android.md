@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 71d90baeb34f7bb0a60bb4ce4f08d2bddf5edcd2
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d08dba92060fdf1dd72e34201dd88674d26f42ef
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015768"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147291"
 ---
 # <a name="turn-off-microsoft-usage-data-collection"></a>Desactivar la recopilación de datos de uso de Microsoft
 
@@ -30,4 +30,4 @@ Microsoft recopila automáticamente determinados datos sobre nuestros productos 
 
 Si quiere desactivar la recopilación de datos en el dispositivo Android, abra la opción de configuración **Datos de uso** en la aplicación de portal de empresa.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

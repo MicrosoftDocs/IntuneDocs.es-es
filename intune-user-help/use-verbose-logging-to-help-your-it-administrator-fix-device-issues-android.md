@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 390a236cf8eebae209c81b53d629cbd3f83899f8
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8c1806d8d35dd2a6e16f1041e2c9f844f637a046
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016771"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149878"
 ---
 # <a name="help-your-company-support-fix-device-issues-with-verbose-logging"></a>Ayudar al equipo de soporte técnico de su empresa a solucionar los problemas del dispositivo mediante el registro detallado
 
@@ -30,4 +30,4 @@ Cuando el dispositivo Android esté inscrito en Intune, puede usar la opción *R
 
 Para activar o desactivar el registro detallado, inicie sesión en la aplicación Portal de empresa con sus credenciales profesionales o educativas, pulse **Configuración** y pulse el botón de encendido/apagado que se encuentra junto a la opción **Registro detallado**.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

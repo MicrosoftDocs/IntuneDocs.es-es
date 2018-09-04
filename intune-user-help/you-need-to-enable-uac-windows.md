@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8b433a20aaa2ca25f54d051e3bed58989ef9dec7
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9c9532cc58b392aecb821ae38e8e4d284d971b7d
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017043"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146306"
 ---
 # <a name="how-to-enable-user-access-control"></a>Cómo habilitar el Control de cuentas de usuario
 
@@ -34,4 +34,4 @@ La configuración del Control de cuentas de usuario se cambia así:
 2. Abra **Seguridad y mantenimiento** > **Cambiar configuración de Control de cuentas de usuario**.
 3. En la página **Elija cuándo desea recibir notificaciones acerca de cambios en el equipo**, mueva el control deslizante a una de las dos muescas de arriba más cercanas a **Notificarme siempre**.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para ver la información de contacto, consulte el [sitio web de Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para ver la información de contacto, consulte el [sitio web de Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

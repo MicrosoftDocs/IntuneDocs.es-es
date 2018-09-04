@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2342970765e909af1bfa21653e82bebd79fe5f7a
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 413c5e2b1201b5ead1af1cd112e5a1320262778e
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31030601"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150112"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-device-in-intune"></a>¿Qué ocurre si instala la aplicación Portal de empresa e inscribe su dispositivo iOS en Intune?
 
@@ -64,4 +64,4 @@ Cuando el dispositivo esté inscrito, el equipo de soporte técnico de su empres
 
 -   Habilitar o deshabilitar en el dispositivo la sincronización automática de archivos en modo de movilidad. Si se permite la sincronización automática de archivos, podrían aplicarse cargos por movilidad.
 
-Si tiene alguna pregunta, póngase en contacto con el equipo de soporte técnico de su empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Si tiene alguna pregunta, póngase en contacto con el equipo de soporte técnico de su empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

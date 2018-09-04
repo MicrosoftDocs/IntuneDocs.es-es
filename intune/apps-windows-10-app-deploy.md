@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2018
+ms.date: 08/31/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: abebfb5e-054b-435a-903d-d1c31767bcf2
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0bffb0ab4003cc02ceddcd0199b951113ff1e4fd
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 7508f2c2eca06ceacf203103ab2cad53abc39a65
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321748"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347439"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Implementación de aplicaciones Windows 10 con Microsoft Intune 
 
 En la actualidad, Microsoft Intune admite una variedad de tipos de aplicaciones y escenarios de implementación en dispositivos Windows 10. Después de agregar una aplicación a Intune, puede asignarla a usuarios y dispositivos. En la información siguiente se proporcionan más detalles relacionados con los escenarios de Windows 10 admitidos. Además, en la información siguiente se proporcionan detalles clave para tener en cuenta al implementar aplicaciones en Windows. 
 
-Las aplicaciones de línea de negocio (LOB) y las de Microsoft Store para Empresas son los tipos de aplicaciones que se admiten en los dispositivos Windows 10. Las extensiones de archivo de las aplicaciones de Windows incluyen **.msi**, **.appx**, **.appxbundle**, **.msix** y **.msixbundle**.  
+Las aplicaciones de línea de negocio (LOB) y las de Microsoft Store para Empresas son los tipos de aplicaciones que se admiten en los dispositivos Windows 10.
 
 > [!Note]
 > La actualización mínima de Windows 10 necesaria para implementar aplicaciones en el contexto de dispositivo es [23 de mayo de 2018: KB4100403 (compilación del SO 17134.81)](https://support.microsoft.com/en-us/help/4100403/windows-10-update-kb4100403).

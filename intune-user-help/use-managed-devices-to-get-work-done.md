@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ecb0729a2c6911fa15dd99ad4abe990859c912ad
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 2a5f383eef6f380711578cb79dfd8006ca6f96e1
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30755239"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150673"
 ---
 # <a name="use-managed-devices-to-get-work-done"></a>Usar dispositivos administrados para realizar el trabajo
 Microsoft Intune es una aplicación de software que permite a las organizaciones administrar dispositivos (como smartphones, tabletas y equipos), aplicaciones y otros recursos corporativos como el correo electrónico. Así, los empleados tienen acceso a su información de trabajo desde prácticamente cualquier parte en casi cualquier dispositivo, y además mantienen la información corporativa segura.
@@ -36,7 +36,7 @@ El departamento de asistencia técnica de la empresa puede ver aquella informaci
 El portal de empresa se obtiene de dos maneras distintas:
 
 - Instalando la aplicación de portal de empresa en su dispositivo. Normalmente, la aplicación del Portal de empresa se suele obtener en la tienda de aplicaciones de su dispositivo, pero el equipo de soporte técnico de su empresa también puede instalar dicha aplicación por usted.
-- También puede ir al [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog) que ha configurado el equipo de soporte técnico de su empresa.
+- También puede ir al [sitio web del Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980) que ha configurado el equipo de soporte técnico de su empresa.
 
 ## <a name="whats-the-difference-between-the-app-and-the-website"></a>¿Cuál es la diferencia entre la aplicación y el sitio web?
 Existen algunas diferencias mínimas entre la aplicación Portal de empresa y el sitio web de Portal de empresa, pero puede realizar prácticamente las mismas tareas en ambos. Algunas tareas que puede realizar:
@@ -102,4 +102,4 @@ Microsoft recomienda que primero se intente probar a corregir el problema por un
 - [Solucionar problemas habituales en el dispositivo macOS](troubleshoot-your-device-macos.md)
 - [Solucionar problemas habituales en el dispositivo Windows](troubleshoot-your-device-windows.md)
 
-Puede publicar un comentario a continuación para pedir ayuda, pero cada organización tiene requisitos diferentes, por lo que no siempre se podrá responder a las preguntas. Es probable que, si se pone en contacto con el equipo de soporte técnico de su empresa para pedir ayuda, obtenga una respuesta más rápida y más relevante. La información de contacto de TI debería estar disponible en el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Puede publicar un comentario a continuación para pedir ayuda, pero cada organización tiene requisitos diferentes, por lo que no siempre se podrá responder a las preguntas. Es probable que, si se pone en contacto con el equipo de soporte técnico de su empresa para pedir ayuda, obtenga una respuesta más rápida y más relevante. La información de contacto de TI debería estar disponible en el [sitio web del Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

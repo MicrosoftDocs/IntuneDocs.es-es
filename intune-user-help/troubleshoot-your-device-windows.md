@@ -16,16 +16,16 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
-ms.openlocfilehash: 727889a2e3946372414151593e8433315e82e76b
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 269ee4f0d3a82fffb75b507240950af73e149847
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30751686"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149653"
 ---
 # <a name="fix-common-issues-with-your-windows-device"></a>Solucionar problemas habituales en el dispositivo Windows
 
-A veces pueden producirse problemas en el dispositivo Windows que se pueden corregir mediante la solución de problemas. A continuación se enumeran algunos problemas comunes que puede intentar resolver primero por su cuenta. En el caso de problemas más complejos, le recomendamos que se ponga en contacto con el equipo de soporte técnico de su empresa mediante sus datos de contacto en el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+A veces pueden producirse problemas en el dispositivo Windows que se pueden corregir mediante la solución de problemas. A continuación se enumeran algunos problemas comunes que puede intentar resolver primero por su cuenta. En el caso de problemas más complejos, le recomendamos que se ponga en contacto con el equipo de soporte técnico de su empresa mediante sus datos de contacto en el [sitio web del Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
 
 - [El dispositivo Windows 10 no se inscribe](troubleshoot-your-windows-10-device-windows.md)
 - [Tengo que actualizar el dispositivo Windows](you-need-to-update-your-windows-device.md)

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ebb79bc3405e9ea0dd38c24b86a4c9020760c895
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 1c57c8bfa9f2727ec201acb506f5a41327fddc75
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31442482"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146660"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Usar aplicaciones administradas en el dispositivo Android
 
@@ -70,4 +70,4 @@ Estas son algunas de las aplicaciones comunes que puede administrar el departame
 
 -   Microsoft Word, Excel y PowerPoint
 
-Para más información sobre las aplicaciones administradas en el dispositivo, póngase en contacto con el equipo de soporte técnico de su empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Para más información sobre las aplicaciones administradas en el dispositivo, póngase en contacto con el equipo de soporte técnico de su empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

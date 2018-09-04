@@ -16,16 +16,16 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
-ms.openlocfilehash: eb20e5c4099d51fd5afb0fbb6700fc33da53557a
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: de0afc8babe692663af9528da313cb31a9d3ff57
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30752162"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148456"
 ---
 # <a name="fix-common-issues-with-your-android-device"></a>Solucionar problemas habituales en el dispositivo Android
 
-A veces pueden producirse problemas en el dispositivo Android que se pueden corregir mediante la solución de problemas. A continuación se enumeran algunos problemas comunes que puede intentar resolver primero por su cuenta. En el caso de problemas más complejos, le recomendamos que se ponga en contacto con el equipo de soporte técnico de su empresa mediante sus datos de contacto en el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+A veces pueden producirse problemas en el dispositivo Android que se pueden corregir mediante la solución de problemas. A continuación se enumeran algunos problemas comunes que puede intentar resolver primero por su cuenta. En el caso de problemas más complejos, le recomendamos que se ponga en contacto con el equipo de soporte técnico de su empresa mediante sus datos de contacto en el [sitio web del Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
 
 - [Comprobar el cumplimiento en el dispositivo Android](check-compliance-on-your-device-android.md)
 - [Usar el registro detallado para ayudar al equipo de soporte técnico de su empresa a solucionar los problemas del dispositivo](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md)

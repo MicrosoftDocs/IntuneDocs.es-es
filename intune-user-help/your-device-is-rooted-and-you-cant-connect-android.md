@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 522a300760fe4446fc6e1ff211763279ba4fc7bf
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: c4cce70abac079ab1761994ba91040c16375e013
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021190"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149762"
 ---
 # <a name="your-android-device-is-rooted-so-you-cant-connect"></a>El dispositivo Android se ha modificado y no se puede conectar
 
@@ -34,6 +34,6 @@ Hay un par de formas comunes en las que se pudo haber modificado el dispositivo:
 
 - Es posible que haya instalado una aplicación en el dispositivo que el software de detección de modificaciones considere que supone un riesgo para la seguridad. Si ve este mensaje inmediatamente después de instalar una aplicación, intente desinstalarla.
 
-- El fabricante del dispositivo instaló software en el dispositivo que el software de detección de modificaciones considera que supone un riesgo para la seguridad. En este caso, póngase en contacto con el equipo de soporte técnico de su empresa para obtener ayuda. Para averiguar su información de contacto, vaya al [sitio web Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+- El fabricante del dispositivo instaló software en el dispositivo que el software de detección de modificaciones considera que supone un riesgo para la seguridad. En este caso, póngase en contacto con el equipo de soporte técnico de su empresa para obtener ayuda. Para averiguar su información de contacto, vaya al [sitio web Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
 
 Si usted mismo modificó el dispositivo, deberá revertir el proceso y restaurar el dispositivo.

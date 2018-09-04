@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: cf2413ee879cf4a6cb2742d34f452105057ccf59
-ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
+ms.openlocfilehash: c98980cca305bef01dd91e69d00a471b10e741a8
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2018
-ms.locfileid: "34073825"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147492"
 ---
 # <a name="enable-security-threat-scans-on-your-device"></a>Habilite los exámenes de amenazas de seguridad en el dispositivo 
 Si instala una aplicación no segura sin saberlo, los datos del dispositivo podrían estar en riesgo. Para proteger los datos del dispositivo, se recomienda que: 
@@ -32,4 +32,4 @@ Para habilitar los exámenes en el dispositivo, vaya a **Configuración** > **Go
 
 En algunos dispositivos Samsung, puede encontrar la configuración en **Configuración** > **Google** > **Seguridad** > **Google Play Protect**.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog). 
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980). 

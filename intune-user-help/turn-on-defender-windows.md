@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: shburbid
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9190282edb8d356d7d43a634d10991a4b4c19c16
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 3e305848ca77aef49050df382151db75c5b03e2a
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018505"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147988"
 ---
 # <a name="turn-on-windows-defender-to-access-company-resources"></a>Activar Windows Defender para tener acceso a los recursos de la empresa
 
@@ -50,4 +50,4 @@ Asegúrese de que Protección en tiempo real está activada; para ello, vaya a *
 
 Asegúrese de que las definiciones de antivirus están actualizadas; para ello, vaya a **Inicio** y busque **Centro de seguridad de Windows Defender**. Seleccione **Actualizaciones de protección** y **Buscar actualizaciones** para asegurarse de que la protección frente a virus del dispositivo está actualizada. Si esta opción no aparece, siga los pasos de [Activar Protección en tiempo real](turn-on-defender-windows.md#turn-on-real-time-protection).
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

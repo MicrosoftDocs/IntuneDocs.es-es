@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: eb62b7fb16b14fd723d71d2e7044fc9603f86ed1
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 8f4cec690431ded00e7645e7ca76bd156453fb62
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31020187"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148208"
 ---
 # <a name="your-device-is-noncompliant"></a>Su dispositivo no es compatible
 
@@ -30,4 +30,4 @@ Su dispositivo no es compatible con al menos una de las directivas de seguridad 
 
 En la aplicación de portal de empresa, pulse **Comprobar cumplimiento**. La aplicación de portal de empresa le indicará lo que está provocando que su dispositivo no sea compatible.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

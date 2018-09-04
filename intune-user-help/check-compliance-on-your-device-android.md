@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 51ef4e1e89c54587535f3ede7e8f406f54763bc9
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 88caf56a2483690f9130818191b04f412a7ed641
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015071"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146844"
 ---
 # <a name="check-compliance-on-your-android-device"></a>Comprobar el cumplimiento normativo en el dispositivo Android
 
@@ -32,4 +32,4 @@ Si el dispositivo no se ha activado en Intune durante un tiempo, es posible que 
 
 2. Toque **Comprobar el cumplimiento normativo**.
 
-Si no puede restablecer el dispositivo perdido o robado, pida al equipo de soporte técnico de su empresa que lo haga. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Si no puede restablecer el dispositivo perdido o robado, pida al equipo de soporte técnico de su empresa que lo haga. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

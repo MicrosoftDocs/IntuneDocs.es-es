@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c26a3bbb168904fe39c6c0ff7dd0698eece56596
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: de8fb99a201590c9ea68e5a2ec6714de9ae0d0f4
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30754933"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146884"
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>El dispositivo Android parece estar cifrado, pero el Portal de empresa indica lo contrario
 
@@ -49,7 +49,7 @@ Algunos dispositivos le ofrecerán la opción de cifrar todo el dispositivo o si
 
 ### <a name="downgrade-your-version-of-android"></a>Cambiar a la versión anterior de Android
 
-Si el dispositivo ofrece la opción de cambiar a la versión Android 6.0+, hágalo. Si intenta cambiar el dispositivo a una versión anterior, existe riesgo de pérdida de datos. Si no, se recomienda que se ponga en contacto con el equipo de soporte técnico de su empresa para resolver este problema. Puede obtener información de contacto del equipo de soporte técnico de su empresa en el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Si el dispositivo ofrece la opción de cambiar a la versión Android 6.0+, hágalo. Si intenta cambiar el dispositivo a una versión anterior, existe riesgo de pérdida de datos. Si no, se recomienda que se ponga en contacto con el equipo de soporte técnico de su empresa para resolver este problema. Puede obtener información de contacto del equipo de soporte técnico de su empresa en el [sitio web del Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
 
 ## <a name="specific-manufacturer-issues"></a>Problemas específicos del fabricante
 

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: d2412418-d91a-4767-a3d6-bc88bb29caa2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9e24f9aca0c06f69c61af6a7fab4f69afe381b6d
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: e2e81bdb3431ac8a2e0fdae6a7f3099512319aee
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31836934"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313265"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>¿Qué es la administración de dispositivos de Microsoft Intune?
 
@@ -55,8 +55,8 @@ Las acciones disponibles dependen de la plataforma y la configuración del dispo
 
 - [Visualización del inventario de dispositivos](device-inventory.md)
 - Ejecute las acciones de dispositivo remoto:
-    - [Eliminar datos de la compañía](devices-wipe.md#remove-company-data)
-    - [Restablecimiento de la configuración de fábrica](devices-wipe.md#factory-reset)
+    - [Retirar](devices-wipe.md#retire)
+    - [Eliminación de datos](devices-wipe.md#wipe)
     - [Bloqueo remoto](device-remote-lock.md)
     - [Restablecer el código de acceso](device-passcode-reset.md)
     - [Omitir Bloqueo de activación](device-activation-lock-bypass.md) (solo para iOS)

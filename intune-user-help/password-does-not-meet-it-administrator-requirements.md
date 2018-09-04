@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 6011e46a3176d55f35310292b55f4786d131f269
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: bb565cdaf200e8bf7d3836fd921b0b5893734955
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38219836"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150928"
 ---
 # <a name="your-password-does-not-meet-your-company-supports-requirements"></a>La contraseña no cumple los requisitos del equipo de soporte técnico de su empresa
 
@@ -33,7 +33,7 @@ Para obtener los pasos necesarios para establecer el PIN o la contraseña, use e
 - [Establecer o cambiar la contraseña del dispositivo Windows](set-or-change-your-password-windows.md)
 
 > [!NOTE]
-> Si no sabe cómo hacer que la contraseña cumpla los requisitos del equipo de soporte técnico de la empresa, póngase en contacto con él. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+> Si no sabe cómo hacer que la contraseña cumpla los requisitos del equipo de soporte técnico de la empresa, póngase en contacto con él. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
 
 ## <a name="pin-or-password-issue-descriptions"></a>Descripciones de problemas de PIN o contraseña
 

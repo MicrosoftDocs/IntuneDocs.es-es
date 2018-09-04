@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c81600b3a01017d18cd0ac9d17e1e03cca0ca783
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: af19ff602322dc74d16608c2a01620e2dbfaa414
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31014901"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149519"
 ---
 # <a name="how-do-i-find-the-serial-number-on-my-device"></a>¿Cómo se puede encontrar el número de serie de un dispositivo?
 
@@ -32,4 +32,4 @@ El número de serie de su dispositivo lo identifica de manera exclusiva y puede 
 2. Pulse la aplicación __Configuración__ y, después, __General__.
 3. Pulse __Acerca de__ y desplácese hasta __Número de serie__.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 97f23594a5c7b047caf37dbaa39c481585a96d76
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 55d77ff939f597a9d6fc5e6986df21ce6fbef9d3
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018182"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150703"
 ---
 # <a name="troubleshoot-your-windows-10-device-enrollment"></a>Solución de problemas con la inscripción de dispositivos de Windows 10
 Si ha seguido los pasos descritos en [Inscribir un dispositivo de escritorio de Windows 10 Mobile o Windows 10 en Intune](enroll-your-w10-phone-or-w10-pc-windows.md), pero todavía no se puede obtener acceso a su correo electrónico profesional o educativo, pruebe estos pasos para solucionar problemas.
@@ -61,4 +61,4 @@ Si después de seguir los pasos anteriores, no consigue tener acceso al correo, 
 
 Si ve un mensaje que dice <strong>No pudimos detectar automáticamente un punto de conexión de administración que coincida con el nombre de usuario escrito. Compruebe su nombre de usuario y vuelva a intentarlo. Si conoce la dirección URL para el punto de conexión de administración, escríbala.</strong>, entonces debe intentar volver a escribir su nombre de usuario y contraseña. Si todavía no funciona, debe consultar con el equipo de soporte técnico de su empresa el sitio web que necesita proporcionar en el cuadro de texto <strong>Punto de conexión de administración</strong>. Este es un sitio web que probablemente tenga este aspecto <strong>www.yourcompany.onmicrosoft.com</strong>.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

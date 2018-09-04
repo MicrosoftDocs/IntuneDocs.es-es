@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: c61b0d62ea2b12712e47e0e83b21cc40b7d1e9ef
-ms.sourcegitcommit: 7f46e9990797bdfa669ccba2077721f1bc70c07e
+ms.openlocfilehash: 9cc2cc35a29949e78e723026865c057fec548bc3
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/04/2018
-ms.locfileid: "30752961"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150739"
 ---
 # <a name="unenroll-your-macos-device-from-intune"></a>Anular la inscripción del dispositivo macOS de Intune
 
@@ -50,4 +50,4 @@ Cuando se anula la inscripción de un dispositivo de Intune, ocurre lo siguiente
 
 -   El acceso al correo electrónico de empresa se puede quitarse del dispositivo.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

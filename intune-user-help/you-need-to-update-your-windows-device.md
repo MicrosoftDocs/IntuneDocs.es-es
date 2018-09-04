@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ab5e424469f0fd83e063db5361fa843b2c6f1e76
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 1f9bb0fc434b1cba2d9b48f6f8cef4cf6b06e932
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016210"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147325"
 ---
 # <a name="you-need-to-update-your-windows-device"></a>Necesita actualizar el dispositivo Windows
 
@@ -37,4 +37,4 @@ Para equipos que ejecutan Windows, busque el **sistema operativo** y siga las in
 
 Para Windows 10 y Windows 8.1, escriba __Versión de Windows__ en la __barra de búsqueda__. En __¿Puedo ayudar?__, seleccione __Versión de Windows__. Aparecerá el número de versión. Este número tendrá un aspecto similar a __10.0.14393.447__.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

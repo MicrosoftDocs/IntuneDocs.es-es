@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ea17263ebd6e836cad154ff2b67229c1c3ae0ed6
-ms.sourcegitcommit: b0ad42fe5b5627e5555b2f9e5bb81bb44dbff078
+ms.openlocfilehash: e1bf702dcc8f4f1163c26d25e42edf0a00825c81
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/09/2018
-ms.locfileid: "33915501"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146526"
 ---
 # <a name="send-logs-to-your-company-support-from-the-company-portal-app-for-windows-10"></a>Envío de registros al equipo de soporte técnico de su empresa desde la aplicación Portal de empresa para Windows 10
 
@@ -39,4 +39,4 @@ Si se produce un error mientras usa la aplicación de Portal de empresa en el di
 
 También debe enviar [registros desde la aplicación de configuración](send-logs-to-your-it-admin-settings-windows.md) para proporcionar al equipo de soporte técnico de su empresa más ayuda para intentar solucionar los problemas que puede encontrar.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

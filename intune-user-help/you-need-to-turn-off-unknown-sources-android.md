@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 5f2d1359d82b00357a037ef5f96f95ae55cf8ab6
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 74fccc0e34f0aa4466359fef5ef0ef91326c5829
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016142"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150368"
 ---
 # <a name="you-need-to-turn-off-unknown-sources"></a>Tiene que desactivar Orígenes desconocidos
 
@@ -30,4 +30,4 @@ Si ve el mensaje “Debe deshabilitarse la instalación desde orígenes desconoc
 
 Después de que **Orígenes desconocidos** se desactiva, pueden pasar unos minutos antes de poder seguir usando el dispositivo Android para tener acceso a los datos de la empresa o la escuela.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

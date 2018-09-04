@@ -17,19 +17,19 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 8eaaf103802ad2cf51d18d9fab3947622e9c96c3
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: dacadd92ebb29bb2295d94aebb7922bb62226e2f
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31020017"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149403"
 ---
 # <a name="send-logs-to-the-company-portal-developers-for-android-devices"></a>Envío de registros a los desarrolladores del Portal de empresa para dispositivos Android
 
 A veces, la aplicación del Portal de empresa se puede cerrar inesperadamente. Los desarrolladores de aplicaciones quieren saber cuando se produce un comportamiento inesperado, ya que eso les permite localizar la causa raíz y evitar futuras repeticiones. Estos errores se detallan en el dispositivo en un documento especial denominado _registro de diagnósticos_. El equipo del Portal de empresa necesita los registros específicos del Portal de empresa para diagnosticar el problema.
 
 > [!Note]
-> Para que el equipo de soporte técnico de la empresa pueda averiguar la causa del problema más fácilmente, active el _registro detallado_. El registro detallado registra todos los detalles sobre un error e incluye estos detalles en el informe. Obtenga información sobre cómo [activar el registro detallado aquí](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md). 
+> Para que el equipo de soporte técnico de la empresa pueda averiguar la causa del problema más fácilmente, active el _registro detallado_. El registro detallado recopila todos los detalles sobre un error e incluye esos detalles en el informe. Obtenga información sobre cómo [activar el registro detallado aquí](use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android.md). 
 
 Para enviar los registros a Microsoft, haga lo siguiente:
 
@@ -46,4 +46,4 @@ Para enviar los registros a Microsoft, haga lo siguiente:
 
 Para ponerse en contacto directamente con el equipo del Portal de empresa para Android, envíe un mensaje de correo electrónico a <a href="mailto:wintunedroidfbk@microsoft.com?subject=Send logs to Microsoft&body=Describe the issue you are having.">wintunedroidfbk@microsoft.com</a>. 
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

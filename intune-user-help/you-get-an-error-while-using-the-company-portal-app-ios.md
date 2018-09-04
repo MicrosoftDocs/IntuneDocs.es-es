@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a3e0ffd583d1709a9127dc346d0271578820a10e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 874007e161f4271fc4faed9d939046c17e52ac7b
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31014867"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147308"
 ---
 # <a name="you-get-an-error-while-using-the-company-portal-app"></a>Obtiene un error mientras usa la aplicación Portal de empresa
 
@@ -34,4 +34,4 @@ Si se produce un error mientras usa la aplicación de Portal de empresa en el di
 
 -   Mientras se encuentra en la aplicación de portal de empresa, agite el dispositivo y, después, pulse **Correo electrónico** cuando aparezca la alerta de diagnóstico. Si la alerta no aparece cuando agita el dispositivo, abra **Configuración** > **Portal de empresa** y asegúrese de que la opción **Gesto de sacudida** está activada.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

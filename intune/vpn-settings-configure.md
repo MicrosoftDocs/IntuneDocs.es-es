@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 78f50bc49f9d7a1261759ec5fb9a1cd7628c998c
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 97bddc1a183e3a546e76b346f53f80aba6a81c50
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905111"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312880"
 ---
 # <a name="create-vpn-profiles-in-intune"></a>Crear perfiles de VPN en Intune
 
@@ -40,7 +40,7 @@ Puede usar directivas de configuración personalizadas de Intune para crear perf
 
 Puede crear perfiles de VPN mediante los siguientes tipos de conexión:
 
-|Tipo de conexión|Android<br>Perfiles de trabajo de Android|iOS|macOS|Windows Phone 8,1|Windows 8.1|Windows 10|
+|Tipo de conexión|Android<br>Perfiles de trabajo Android|iOS|macOS|Windows Phone 8,1|Windows 8.1|Windows 10|
 |-|-|-|-|-|-|-|
 |Automático|No|No|No|No|No|Sí|
 |Check Point Capsule VPN|Sí|Sí|Sí|Sí|Sí|Sí|
@@ -54,6 +54,7 @@ Puede crear perfiles de VPN mediante los siguientes tipos de conexión:
 |IKEv2|No|No|No|No|No|Sí|
 |L2TP|No|No|No|No|No|Sí|
 |PPTP|No|No|No|No|No|Sí|
+|Zscaler|No|Sí|No|No|No|No|
 |VPN personalizada|No|Sí|Sí|No|No|No|
 
 > [!IMPORTANT]

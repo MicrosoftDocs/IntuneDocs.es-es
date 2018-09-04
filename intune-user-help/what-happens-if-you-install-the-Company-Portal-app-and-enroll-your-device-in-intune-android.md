@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 50e78b3e7986526bc9da4e965133d62cfc73273f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 6167dbfd497ad2cfddecae2a25516b3d1bdd2c74
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016941"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43146903"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo Android en Intune?
 
@@ -58,4 +58,4 @@ Una vez agregado el dispositivo al Portal de empresa, este hará lo siguiente ca
 
 -   Enviar actualizaciones de inventario de aplicaciones de empresa. (Estas actualizaciones no tienen información personal).
 
-¿Necesita ayuda? Póngase en contacto con el equipo de soporte técnico de su empresa (visite el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog) para obtener la información de contacto), o escriba al <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">equipo de Microsoft Android</a>.
+¿Necesita ayuda? Póngase en contacto con el equipo de soporte técnico de su empresa (visite el [sitio web del Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980) para obtener la información de contacto), o escriba al <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble installing the Company Portal app on my Android device&body=Describe the issue you're experiencing here.">equipo de Microsoft Android</a>.

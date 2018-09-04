@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 22d23751aaa3416fb13c7b08451ea91c3ee308e2
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 6395dc0d14b8947093d53865eb1d97f6ef56db25
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31017298"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147119"
 ---
 # <a name="enroll-your-windows-10-devices-in-intune"></a>Inscribir dispositivos Windows 10 en Intune
 
@@ -51,4 +51,4 @@ La inscripción de dispositivos en Microsoft Intune permite que los dispositivos
 3.  En __Información del dispositivo__, pulse __Más información__. Verá una lista con información sobre el dispositivo. En esta lista, busque la __versión__.        
 4.  Si su versión es __1607 o superior__, continúe con [estos pasos](enroll-your-w10-device-access-work-or-school.md). Si su versión es __1511 o inferior__, continúe con [estos pasos](enroll-your-w10-device-your-account.md).
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

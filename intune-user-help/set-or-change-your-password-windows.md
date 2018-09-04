@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: fb2f225d47d1589e7bccbafc4a23f3cecec12897
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 2bd36a0327472f24a3a99b7975e736c9fa5385eb
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31018777"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149070"
 ---
 # <a name="make-your-device-safer-with-the-right-password"></a>Hacer que el dispositivo esté más seguro con la contraseña correcta
 
@@ -46,4 +46,4 @@ Si el dispositivo Windows no se ajusta a la directiva de contraseñas del equipo
 3. Escriba la nueva contraseña en el cuadro **Nueva contraseña** y luego vuelva a escribirla en el cuadro **Confirmar contraseña**.
 4. Elija **Listo**.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

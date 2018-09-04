@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: e5e44f563e0ebfc3685c07fc7792df72dcf32a5b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7d7c6b4f0634fdb2d4c28b897dc5782111ebdec9
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015428"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148247"
 ---
 # <a name="an-existing-company-email-account-was-found"></a>Se ha encontrado una cuenta de correo electrónico de empresa existente encontrado
 
@@ -36,4 +36,4 @@ Ya tiene una cuenta de correo electrónico con su organización o empresa y dese
 
 3.  Espere un momento para la nueva configuración de correo electrónico que se aplicará automáticamente a su dispositivo.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

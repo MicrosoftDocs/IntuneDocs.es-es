@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 738cc313eca4c98e7cdee3dfe40f705630244a9f
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 443234bea9623ccbf5ac916d179a8fe202a392dd
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31015751"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147785"
 ---
 # <a name="installing-office-365-on-your-windows-10-device"></a>Instalación de Office 365 en dispositivos Windows 10
 
@@ -32,4 +32,4 @@ Hay muchas maneras de instalar el conjunto de aplicaciones Office en dispositivo
 
 Cuando la empresa ponga Office a disposición de los usuarios, solo se debe instalar una versión de Office. Si intenta instalar varias, se quitará la que se haya instalado primero.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

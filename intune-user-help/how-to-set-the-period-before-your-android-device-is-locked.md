@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: ea3c05092df16ca840eccbbe64fba1e5e2829e4d
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: de7815ac56a34ab81d61b7db69fdedbb7fd44177
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31014850"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148271"
 ---
 # <a name="how-to-set-the-amount-of-time-before-your-android-device-locks-its-screen"></a>Cómo establecer el período de tiempo antes de que el dispositivo Android bloquee la pantalla
 
@@ -44,4 +44,4 @@ Para volver a conectar con su trabajo, deberá establecer el tiempo de espera de
 
 2.  Seleccione un valor de tiempo de espera de la contraseña.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

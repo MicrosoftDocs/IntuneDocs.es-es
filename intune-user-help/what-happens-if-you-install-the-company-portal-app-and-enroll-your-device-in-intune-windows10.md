@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: a268602833d9164d33a8d86c1b4c6d4485e2abe8
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: d649a05527f8c273c71b9e2b791d5959a937e43b
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021360"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148902"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-10-device-in-intune"></a>¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo Windows 10 en Intune?
 
@@ -54,4 +54,4 @@ Cuando agrega un equipo:
 
 -   El equipo de soporte técnico de su empresa podría aplicar directivas en el equipo. Por ejemplo, podría exigírsele establecer un código de acceso o un PIN en el equipo. El equipo de soporte técnico de su empresa también podría limitar cuántas veces puede especificar una contraseña incorrecta y podría bloquearle el acceso al dispositivo o eliminar todos los datos de la unidad de disco duro si se equivoca demasiadas veces.
 
-Si tiene alguna pregunta, póngase en contacto con el equipo de soporte técnico de su empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+Si tiene alguna pregunta, póngase en contacto con el equipo de soporte técnico de su empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

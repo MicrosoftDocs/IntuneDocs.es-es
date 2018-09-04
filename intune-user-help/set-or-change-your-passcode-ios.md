@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 6f81cab429f531f6839dc952d6ea6fb2977130ab
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 0a7f961036eab3b1bf72cc68a44e62f07bdbff6e
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31019201"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147908"
 ---
 # <a name="set-or-change-your-passcode"></a>Establecer o cambiar el código de acceso
 
@@ -43,4 +43,4 @@ Si tiene problemas para establecer un código de acceso que cumpla los requisito
 2. Pulse en **Change Passcode** (Cambiar código de acceso) y escriba el código de acceso anterior.
 3. Escriba un nuevo código de acceso que cumpla los requisitos del equipo de soporte técnico de su empresa y, luego, vuelva a escribirlo para confirmarlo.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

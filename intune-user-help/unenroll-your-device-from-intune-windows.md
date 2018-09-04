@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 980b7d9f221fd1a1ae12f27743757d5b3bd53492
-ms.sourcegitcommit: 5f6117b83f96f7d93dde3685c2ff2b67ae53740b
+ms.openlocfilehash: 6090ea3509c1f355c21e02ae155bdb9035f6c508
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/03/2018
-ms.locfileid: "39481196"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148785"
 ---
 # <a name="remove-your-windows-device-from-intune-management"></a>Quitar el dispositivo Windows de la administración de Intune
 
@@ -82,4 +82,4 @@ Para eliminar los registros almacenados y la memoria caché, siga uno de esos pa
 
 * Restablezca la aplicación Portal de empresa. Abra la aplicación **Configuración** y seleccione > **Aplicaciones** > **Portal de empresa** > **Opciones avanzadas** > **Restablecer**. 
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

@@ -17,19 +17,19 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 2a2c5c60f22aca6a9c989281ef2c5cc9e0c66911
-ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
+ms.openlocfilehash: 89be04405f76c290c252c382fbee207176e7180d
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39117861"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150314"
 ---
 # <a name="send-logs-to-your-company-support-using-a-usb-cable"></a>Enviar registros al equipo de soporte técnico de su empresa mediante un cable USB
 
 Si se produce un error mientras usa la aplicación de Portal de empresa en el dispositivo Android, puede ayudar al equipo de soporte técnico de su empresa a solucionar el problema enviándole información por correo electrónico. Esta información se conserva en su dispositivo en un documento especial denominado "_registro de diagnóstico_".
 
 > [!Note]
-> Antes de comenzar, asegúrese de que tiene a mano la dirección de correo electrónico del equipo de soporte técnico de su empresa. Puede encontrarla en el [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog) o en la aplicación de portal de empresa.
+> Antes de comenzar, asegúrese de que tiene a mano la dirección de correo electrónico del equipo de soporte técnico de su empresa. Puede encontrarla en el [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980) o en la aplicación de portal de empresa.
 
 1. En la pantalla de error, puntee **Enviar información**. Cuando aparezca un mensaje preguntando qué método desea utilizar para enviar los registros, elija la opción que guardará los archivos en el dispositivo.
 
@@ -39,4 +39,4 @@ Si se produce un error mientras usa la aplicación de Portal de empresa en el di
 
 4. Seleccione los archivos y adjúntelos a un correo electrónico. Envíe este correo electrónico al equipo de soporte técnico de su empresa.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

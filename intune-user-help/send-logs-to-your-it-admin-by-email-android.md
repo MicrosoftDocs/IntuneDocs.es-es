@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f924ece24fe38346c1abab8964270e4abe5abf76
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: efe251a9a347a179e56d496d761b0ea7f28ab66f
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32327694"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43149607"
 ---
 # <a name="email-logs-to-your-company-support"></a>Enviar registros al equipo de soporte técnico de su empresa por correo electrónico
 
@@ -45,4 +45,4 @@ Para enviar registros al equipo de soporte técnico de su empresa por correo ele
 3.  Pulse en **Enviar correo electrónico y Cargar registros**.
 4.  Una vez finalizada la carga, pulse en la aplicación de correo electrónico. Se abrirá un mensaje de correo con el identificador del incidente rellenado previamente en el campo de asunto. En el cuerpo del correo electrónico, describa el problema que se produjo.  
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

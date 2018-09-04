@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 449413a87c79645240bc18be41fb6e88d4c071f8
-ms.sourcegitcommit: 4c06fa8e9932575e546ef2e880d96e96a0618673
+ms.openlocfilehash: ddf075828ca9b9a7d8030a88a2d7f58efbc0e980
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
-ms.locfileid: "32327711"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43150129"
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>Envío de errores al equipo de soporte técnico de su empresa por problemas con dispositivos iOS
 A veces se pueden producir errores mientras se usa la aplicación Portal de empresa en el dispositivo iOS. Cuando esto ocurre, puede enviar por correo electrónico los detalles del error al personal de soporte técnico de su empresa. Estos detalles proporcionarán el contexto necesario para solucionar el problema.
@@ -37,4 +37,4 @@ Si se producen errores en el dispositivo iOS mientras usa la aplicación de Port
 
 -   En la aplicación Portal de empresa, agite su dispositivo y, luego, pulse **Enviar informe de diagnóstico** cuando aparezca la alerta de diagnóstico. Si la alerta no aparece cuando agita el dispositivo, abra **Configuración** > **Portal de empresa** y asegúrese de que la opción **Gesto de sacudida** está activada.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
