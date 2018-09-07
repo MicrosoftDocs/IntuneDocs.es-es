@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 ms.custom: intune-azure
-ms.openlocfilehash: 4150a513e909ccfd44db23eee9b5990d97d8d670
-ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
+ms.openlocfilehash: 108382a04095330745ca82dc1d70ab48e70362e5
+ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2018
-ms.locfileid: "36329882"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40251529"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Uso del portal de solución de problemas para ayudar a los usuarios de su empresa
 
@@ -65,7 +65,7 @@ Puede usar el panel **Solución de problemas** para consultar la información de
 | 2.   | Selección de usuarios  | El nombre del usuario seleccionado actualmente. Haga clic en **Cambiar usuario** para elegir un usuario nuevo.       |
 | 3.   | Estado del usuario  | Muestra el estado de la licencia de Intune del usuario, el número de dispositivos, la compatibilidad de cada dispositivo, el número de aplicaciones y la compatibilidad de las aplicaciones.       |
 | 4.   | Información de usuario  | Use la lista para seleccionar los detalles que vaya a consultar en el panel. <br>Puede seleccionar: <ul><li>Aplicaciones móviles<li>Directivas de protección de aplicaciones<li>Directivas de cumplimiento<li> Directivas de configuración</ul>      |
-| 5.   | Pertenencia a grupos  | Yadda       |
+| 5.   | Pertenencia a grupos  | Muestra los grupos actuales de los que es miembro el usuario seleccionado.       |
 
 ## <a name="mobile-apps-reference"></a>Referencia de aplicaciones móviles
 
@@ -95,7 +95,7 @@ Dispositivos administrados por Intune o por usuarios administrados por Intune o 
 | Compatibilidad con Intune   | El nombre del tipo de dispositivo.                                                                                                     |
 | Compatibilidad con Azure AD | El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**. |
 | Sistema operativo                 | El sistema operativo instalado en el dispositivo.                                                                                       |
-| Versión del sistema operativo         | El número de versión del sistema operativo del dispositivo.                                                                                  |
+| Versión de SO         | El número de versión del sistema operativo del dispositivo.                                                                                  |
 | Última inserción en el repositorio      | El nombre del tipo de dispositivo.                                                                                                     |
 
 ### <a name="app-protection-status"></a>Estado de protección de la aplicación
@@ -133,7 +133,7 @@ Dispositivos administrados por Intune o por usuarios administrados por Intune o 
 
 | Propiedad           | Texto                                                                                                                                |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Nombre del dispositivo        | El nombre del tipo de dispositivo.                                                                                                     |
+| Nombre de dispositivo        | El nombre del tipo de dispositivo.                                                                                                     |
 | Administrado por         | La marca de tiempo en que se modificó la directiva.                                                                                              |
 | Tipo de combinación de Azure AD | El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**. |
 | Propiedad          | El tipo de propiedad del dispositivo. Puede ser **Empresa**, **Personal** o **Desconocido**.                                               |
@@ -141,7 +141,7 @@ Dispositivos administrados por Intune o por usuarios administrados por Intune o 
 | Compatibilidad con Azure AD | El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**. |
 | Compatibilidad con Azure AD | El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**. |
 | Sistema operativo                 | El sistema operativo instalado en el dispositivo.                                                                                       |
-| Versión del sistema operativo         | El número de versión del sistema operativo del dispositivo.                                                                                  |
+| Versión de SO         | El número de versión del sistema operativo del dispositivo.                                                                                  |
 | Última inserción en el repositorio      | El nombre del tipo de dispositivo.                                                                                                     |
 
 ## <a name="compliance-policies-reference"></a>Referencia de las directivas de cumplimiento
@@ -173,7 +173,7 @@ Dispositivos administrados por Intune o por usuarios administrados por Intune o 
 | Compatibilidad con Intune   | El nombre del tipo de dispositivo.                                                                                                     |
 | Compatibilidad con Azure AD | El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**. |
 | Sistema operativo                 | El sistema operativo instalado en el dispositivo.                                                                                       |
-| Versión del sistema operativo         | El número de versión del sistema operativo del dispositivo.                                                                                  |
+| Versión de SO         | El número de versión del sistema operativo del dispositivo.                                                                                  |
 | Última inserción en el repositorio      | El nombre del tipo de dispositivo.                                                                                                     |
 
 ### <a name="app-protection-policies"></a>Directivas de protección de aplicaciones
@@ -218,7 +218,7 @@ Dispositivos administrados por Intune o por usuarios administrados por Intune o 
 | Compatibilidad con Intune   | El nombre del tipo de dispositivo.                                                                                                     |
 | Compatibilidad con Azure AD | El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**. |
 | Sistema operativo                 | El sistema operativo instalado en el dispositivo.                                                                                       |
-| Versión del sistema operativo         | El número de versión del sistema operativo del dispositivo.                                                                                  |
+| Versión de SO         | El número de versión del sistema operativo del dispositivo.                                                                                  |
 | Última inserción en el repositorio      | El nombre del tipo de dispositivo.                                                                                                     |
 
 

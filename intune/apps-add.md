@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2018
+ms.date: 08/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 69887fb0a9b2e447d6c6101b26ce50f733053337
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 5964ebdbac251468e3bc35c2c35f0bd2e7fddbff
+ms.sourcegitcommit: 1a8b34c7854a575bf6ce59f475c7b718fa038d66
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321295"
+ms.lasthandoff: 08/18/2018
+ms.locfileid: "40251884"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Incorporación de aplicaciones a Microsoft Intune
 
@@ -34,7 +34,7 @@ Los usuarios de aplicaciones y dispositivos de su empresa (empleados de su empre
 
 Intune admite una gran variedad de tipos de aplicaciones. Las opciones disponibles varían para cada tipo de aplicación. Intune permite agregar y asignar los siguientes tipos de aplicación:
 
-| Tipos de aplicación | Instalación | Updates |
+| Tipos de aplicación | Instalación | Actualizaciones |
 |---|---|---|
 | Aplicaciones de la tienda (aplicaciones de la tienda) | Intune instala la aplicación en el dispositivo.  | Las actualizaciones de aplicaciones son automáticas.   |
 | Aplicaciones escritas internamente (línea de negocio)  | Intune instala la aplicación en el dispositivo (el usuario proporciona el archivo de instalación).     | Debe actualizar la aplicación.  |
@@ -129,6 +129,9 @@ Antes de empezar a agregar y asignar aplicaciones, considere los puntos siguient
 - Al agregar y asignar una aplicación desde una tienda, los usuarios finales deben tener una cuenta con la tienda para poder instalar la aplicación.
 - Algunas aplicaciones o elementos que asigna podrían depender de aplicaciones iOS integradas. Por ejemplo, si asigna un libro de App Store, la aplicación iBooks debe existir en el dispositivo. Si quitó la aplicación integrada iBooks, no puede usar Intune para restablecerla.
 
+> [!IMPORTANT]
+> Si cambia el nombre de la aplicación a través de Azure Portal de Intune una vez que ha implementado e instalado la aplicación, ya no se podrá llegar a la aplicación mediante comandos.
+
 ## <a name="cloud-storage-space"></a>Espacio de almacenamiento en nube
 Todas las aplicaciones que cree mediante el tipo de instalación del instalador de software (por ejemplo, una aplicación de línea de negocio) se empaquetan y cargan en el almacenamiento en la nube de Intune. Una suscripción de prueba de Intune incluye 2 gigabytes (GB) de almacenamiento en nube que sirve para almacenar actualizaciones y aplicaciones administradas. Una suscripción completa no limita la cantidad total de espacio de almacenamiento.
 
@@ -148,7 +151,7 @@ Al agregar una aplicación a Intune, tiene la opción de seleccionar la categor�
 3. En el panel **Intune**, seleccione **Aplicaciones móviles**.
 4. En el panel de la carga de trabajo **Aplicaciones móviles**, en **Configuración**, elija **Categorías de aplicaciones**.  
     El panel **Categorías de aplicaciones** muestra una lista de las categorías actuales. 
-5. Realice alguna de las acciones siguientes:
+5. Realice cualquiera de las siguientes acciones:
     - Para agregar una categoría, en el panel **Crear categoría**, seleccione **Agregar** y escriba un nombre para la categoría.  
     Los nombres solo pueden escribirse en un solo idioma e Intune no los traduce.
     - Para editar una categoría, seleccione los puntos suspensivos (**...** ) situados junto a la categoría y luego seleccione **Anclar al panel** o **Eliminar**.
@@ -170,6 +173,10 @@ Intune reinstala, actualiza o quita automáticamente una aplicación necesaria e
 - Si se produce un error de instalación de una aplicación necesaria o de algún modo la aplicación no está presente en el dispositivo, Intune evalúa el cumplimiento y reinstala la aplicación cuando transcurre este periodo.  
 - Un administrador destina una aplicación como disponible para un grupo de usuarios y un usuario final instala la aplicación desde el Portal de empresa en el dispositivo. Más adelante, el administrador actualiza la aplicación de v1 a v2. Intune actualiza la aplicación cuando transcurre este periodo, siempre que haya cualquier versión anterior de la aplicación en el dispositivo.
 - Si el administrador realiza un intento de desinstalación y la aplicación está presente en el dispositivo y no se desinstala, Intune evalúa el cumplimiento y desinstala la aplicación cuando transcurre este periodo.   
+
+## <a name="app-installation-errors"></a>Errores de instalación de la aplicación
+
+Para obtener más información acerca de errores de instalación de aplicaciones de Intune, consulte [App installation errors](troubleshoot-app-install.md#app-installation-errors) (Errores de instalación de aplicaciones).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

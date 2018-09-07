@@ -15,12 +15,12 @@ ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 31d09c8c97da823ec40785a6db42df64056277fb
-ms.sourcegitcommit: a8b544975156dd45c2bf215b57ac994415b568bc
+ms.openlocfilehash: 59449efd592f3c47bdf2350b495f81c23f442999
+ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/20/2018
-ms.locfileid: "39164559"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42751809"
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Habilitación de la inscripción de dispositivos iOS con Apple School Manager
 
@@ -66,7 +66,7 @@ Antes de poder inscribir dispositivos iOS corporativos en Apple School Manager, 
 8. Especifique cómo **Elegir dispositivos**, después proporcione información de los dispositivos y detalles.
 9. Elija **Assign to Server** (Asignar al servidor), elija el &lt;NombreDeServidor&gt; especificado para Microsoft Intune y después elija **Aceptar**.
 
-### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Paso 3: Guarde el identificador de Apple usado para crear este token
+### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Paso 3. Guarde el identificador de Apple usado para crear este token
 
 En Intune en Azure Portal, proporcione el id. de Apple para futuras referencias.
 
@@ -94,8 +94,13 @@ Ahora que ha instalado el token, puede crear un perfil de inscripción para disp
 
     ![Autenticación con el portal de empresa.](./media/device-enrollment-program-enroll-ios/authenticatewithcompanyportal.png)
 
-    >[!NOTE]
-    >Multi-Factor Authentication (MFA) no funciona durante la inscripción en dispositivos de Apple School Manager si las propiedades del perfil están establecidas en **Use with User Affinity** (Usar con afinidad de usuario) y no usa un portal de empresa. Después de la inscripción, MFA funciona según lo previsto en estos dispositivos. Los dispositivos no pueden pedir a los usuarios que cambien su contraseña cuando inician sesión por primera vez. Además, no se puede pedir a los usuarios cuyas contraseñas hayan expirado que las restablezcan durante la inscripción. Los usuarios deben usar un dispositivo diferente para restablecer la contraseña.
+    > [!NOTE]
+    > Si quiere realizar alguna de las acciones siguientes, establezca **Authenticate with Company Portal instead of Apple Setup Assistant** (Autenticar con el Portal de empresa en lugar del Asistente de configuración) en **Sí**.
+    >    - usar la autenticación multifactor
+    >    - pedir a los usuarios que cambien su contraseña cuando inician sesión por primera vez
+    >    - pedir a los usuarios que restablezcan las contraseñas expiradas durante la inscripción
+    >
+    > Estas operaciones no se admiten durante la autenticación con el asistente de configuración de Apple.
 
 6. Elija **Configuración de administración de dispositivos** y seleccione si desea o no que se supervisen los dispositivos con este perfil.
     Los dispositivos **supervisados** ofrecen más opciones de administración y, en este caso, el bloqueo de activación está deshabilitado de forma predeterminada. Microsoft recomienda usar el DEP como mecanismo para habilitar el modo de supervisión, sobre todo para las organizaciones que implementan un gran número de dispositivos iOS.
@@ -121,7 +126,7 @@ Ahora que ha instalado el token, puede crear un perfil de inscripción para disp
 12. Seleccione **Valores del Asistente de configuración** para configurar las siguientes opciones de perfil: ![Personalización del Asistente para configuración](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png).
 
 
-    |                 Setting                  |                                                                                               Descripción                                                                                               |
+    |                 Configuración                  |                                                                                               Descripción                                                                                               |
     |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     |     <strong>Nombre de departamento</strong>     |                                                             Aparece cuando los usuarios pulsan <strong>Acerca de la configuración</strong> durante la activación.                                                              |
     |    <strong>Teléfono del departamento</strong>     |                                                          Aparece cuando el usuario hace clic en el botón <strong>Necesito ayuda</strong> durante la activación.                                                          |

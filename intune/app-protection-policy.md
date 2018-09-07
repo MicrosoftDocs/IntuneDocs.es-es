@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 01/19/2018
+ms.date: 08/16/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f59bd4e0f795b73d830e41d47262c10c24d9398b
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 4e9dbda4c768bf9963a4ec168d6a613dca197995
+ms.sourcegitcommit: c5cba0f4bf01eb9a9492e4e3fb6cd756f0737057
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834285"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "40251855"
 ---
 # <a name="what-are-app-protection-policies"></a>¿Qué son las directivas de protección de aplicaciones?
 
@@ -32,7 +32,7 @@ Las directivas de protección de aplicaciones de Microsoft Intune ayudan a prote
 ## <a name="how-you-can-protect-app-data"></a>Cómo puede proteger los datos de la aplicación
 Los empleados usan dispositivos móviles para tareas personales y de trabajo.  Mientras se asegura de que los empleados pueden ser productivos, también puede evitar la pérdida de datos, ya sea intencional o involuntaria.  Además, quiere tener la capacidad de proteger los datos de la empresa a los que se accede mediante dispositivos (incluso aquellos datos que usted no administre).
 
-Puede usar directivas de protección de aplicaciones de Intune para ayudar a proteger los datos de su empresa. Dado que las directivas de protección de aplicaciones se pueden usar **independientemente de cualquier solución de administración de dispositivos móviles (MDM)**, puede usarlas para proteger los datos de la empresa con o sin inscripción de los dispositivos en una solución de administración de dispositivos. Mediante la implementación de **directivas de nivel de aplicación**, puede restringir el acceso a los recursos de la empresa y mantener los datos dentro del ámbito del departamento de TI.
+Puede usar las directivas de protección de aplicaciones de Intune para ayudar a proteger los datos de su empresa. Dado que las directivas de protección de aplicaciones se pueden usar **independientemente de cualquier solución de administración de dispositivos móviles (MDM)**, puede usarlas para proteger los datos de la empresa con o sin inscripción de los dispositivos en una solución de administración de dispositivos. Mediante la implementación de **directivas de nivel de aplicación**, puede restringir el acceso a los recursos de la empresa y mantener los datos dentro del ámbito del departamento de TI.
 
 Se pueden configurar directivas de protección de aplicaciones para aplicaciones que se ejecutan en dispositivos que están:
 
@@ -46,7 +46,7 @@ Se pueden configurar directivas de protección de aplicaciones para aplicaciones
 - **No inscritos en ninguna solución de administración de dispositivos móviles:** los dispositivos de esta categoría normalmente son dispositivos de empleados no administrados ni inscritos en Intune ni en ninguna otra solución MDM.
 
 > [!IMPORTANT]
-> Puede crear directivas de administración de aplicaciones móviles para aplicaciones móviles de Office que se conectan a servicios de Office 365. Las directivas de protección de aplicaciones no son compatibles con las aplicaciones que se conectan a los servicios de Exchange o SharePoint locales.
+> Puede crear directivas de administración de aplicaciones móviles para aplicaciones móviles de Office que se conectan a servicios de Office 365. También puede proteger el acceso a los buzones locales de Exchange mediante la creación de directivas de protección de aplicaciones de Intune para Outlook para iOS y Android habilitadas con autenticación moderna híbrida. Antes de usar esta característica, asegúrese de cumplir los [requisitos de Outlook para iOS y Android](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx). Las directivas de protección de aplicaciones no son compatibles con otras aplicaciones que se conectan a los servicios de Exchange o SharePoint locales.
 
 **Las ventajas más importantes del uso de directivas de protección de aplicaciones son:**
 
@@ -136,5 +136,5 @@ Por ejemplo, cuando el usuario inicia la aplicación OneDrive con su cuenta prof
 
 [Creación e implementación de directivas de protección de aplicaciones con Microsoft Intune](app-protection-policies.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 Las aplicaciones de terceros, como la aplicación móvil de Salesforce, funcionan con Intune de formas específicas para proteger los datos corporativos. Para más información sobre cómo la aplicación de Salesforce funciona con Intune en particular (incluida la configuración de la aplicación de MDM), vea [Salesforce App and Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf) (Aplicación de Salesforce y Microsoft Intune).

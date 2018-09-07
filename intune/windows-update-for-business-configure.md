@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: 216c83d4158fe65b7aeb52f5477362eb57ec4242
-ms.sourcegitcommit: a52e81ab4fe24ae6410d1a1e63b4b073abc416a4
+ms.openlocfilehash: df7e14b485fae0a70b8f0f487229b9e31ace4077
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/06/2018
-ms.locfileid: "34822728"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255247"
 ---
 # <a name="manage-software-updates-in-intune"></a>Administrar las actualizaciones de software en Intune
 
@@ -115,11 +115,10 @@ El nuevo anillo de actualización se muestra en la lista de anillos de actualiza
 3. Una vez que haya terminado, elija **Seleccionar** para completar la asignación.
 
 ## <a name="update-compliance-reporting"></a>Informes de comprobación de actualizaciones
-Puede consultar la comprobación de actualizaciones en Intune o mediante una solución gratuita en la instancia de Operations Management Suite (OMS) llamada Update Compliance.
+Puede consultar la comprobación de actualizaciones en Intune o mediante una solución gratuita llamada Update Compliance.
 
 ### <a name="review-update-compliance-in-intune"></a>Revisar la comprobación de actualizaciones en Intune 
-<!-- 1352223 -->
-Consulte un informe de directiva para conocer el estado de implementación para los círculos de actualizaciones de Windows 10 que ha configurado.
+<!-- 1352223 --> Consulte un informe de directiva para conocer el estado de implementación para los círculos de actualizaciones de Windows 10 que ha configurado.
 
 1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
 2. Elija **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
@@ -137,7 +136,7 @@ Consulte un informe de directiva para conocer el estado de implementación para 
       - **Estado del usuario**
 
 ### <a name="review-update-compliance-using-oms"></a>Revisar la comprobación de actualizaciones con OMS
-Puede supervisar las implementaciones de actualización de Windows 10 utilizando una solución gratuita en la instancia de Operations Management Suite (OMS) llamada "Comprobación de actualizaciones". Para obtener más información, consulte [Monitor Windows Updates with Update Compliance](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor) (Supervisión de actualizaciones de Windows con Comprobación de actualizaciones). Cuando se utiliza esta solución, puede implementar un identificador comercial en cualquiera de sus dispositivos Windows 10 administrados con Intune para el que desea que se informe de la comprobación de actualizaciones.
+Puede supervisar las implementaciones de actualización de Windows 10 utilizando una solución gratuita llamada Update Compliance. Para obtener más información, consulte [Monitor Windows Updates with Update Compliance](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor) (Supervisión de actualizaciones de Windows con Comprobación de actualizaciones). Cuando se utiliza esta solución, puede implementar un identificador comercial en cualquiera de sus dispositivos Windows 10 administrados con Intune para el que desea que se informe de la comprobación de actualizaciones.
 
 En la consola de Intune, puede usar la configuración OMA-URI de una directiva personalizada para configurar el identificador comercial. Para obtener más información, consulte [Configuración de directivas de Intune para dispositivos Windows 10 en Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).   
 

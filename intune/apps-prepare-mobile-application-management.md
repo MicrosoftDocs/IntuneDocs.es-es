@@ -14,12 +14,12 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 351282634d6c6e087456e61e9fd967b70f9cf515
-ms.sourcegitcommit: c109ea6e9b7104630cd767aa27c5f7789286a906
+ms.openlocfilehash: 9d4dbdb3aa07020aa027dc1a4a1b2edcefefb4ca
+ms.sourcegitcommit: 77ed48ab52b55e92ceaa89e9edf53b892fc62adb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/02/2018
-ms.locfileid: "39450797"
+ms.lasthandoff: 08/17/2018
+ms.locfileid: "40251768"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicaciones de línea de negocio para las directivas de protección de aplicaciones
 
@@ -28,7 +28,7 @@ ms.locfileid: "39450797"
 Puede habilitar las aplicaciones para que usen directivas de protección de aplicaciones mediante la herramienta de ajuste de aplicaciones de Intune o el SDK para aplicaciones de Intune. Use esta información para conocer sobre estos dos métodos y cuándo usarlos.
 
 ## <a name="intune-app-wrapping-tool"></a>Herramienta de ajuste de aplicaciones de Intune
-La herramienta de ajuste de aplicaciones se usa principalmente para aplicaciones internas línea de negocio (LOB). Esta herramienta es una aplicación de línea de comandos que crea un contenedor en torno a la aplicación que luego permite administrarla mediante una directiva de protección de aplicaciones de Intune.
+La Herramienta de ajuste de aplicaciones se usa principalmente para aplicaciones **internas** de línea de negocio (LOB). Esta herramienta es una aplicación de línea de comandos que crea un contenedor en torno a la aplicación que luego permite administrarla mediante una directiva de protección de aplicaciones de Intune. Al proteger una aplicación proporcionada por un fabricante de software independiente, es importante aclarar si este proveedor seguirá admitiendo la aplicación ajustada.
 
 No se necesita el código fuente para usar la herramienta, pero se necesitan credenciales de firma. Para obtener más información sobre las credenciales de firma, vea el [blog de Intune](https://blogs.technet.microsoft.com/enterprisemobility/2015/02/25/how-to-obtain-the-prerequisites-for-the-intune-app-wrapping-tool-for-ios/). Para obtener documentación sobre la herramienta de ajuste de aplicaciones, consulte [Android App Wrapping Tool (Herramienta de ajuste de aplicaciones para Android)](app-wrapper-prepare-android.md) e [iOS App Wrapping Tool (Herramienta de ajuste de aplicaciones para iOS)](app-wrapper-prepare-ios.md).
 
@@ -48,7 +48,7 @@ Para obtener más información sobre la herramienta de ajuste de aplicaciones pa
 
 |**Herramienta de ajuste de aplicaciones** | **Xamarin** |**Cordova** |
 |------|----|----|
-|**iOS** |No: usar [Xamarin Bindings del SDK de aplicaciones de Intune](app-sdk-xamarin.md).|Sí|
+|**iOS** |Sí|Sí|
 |**Android**|No: usar [Xamarin Bindings del SDK de aplicaciones de Intune](app-sdk-xamarin.md).|Sí|
 
 ## <a name="intune-app-sdk"></a>SDK para aplicaciones de Intune

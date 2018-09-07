@@ -15,12 +15,12 @@ ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2b3965c651bb6fcc38d61a55208fc8b199223891
-ms.sourcegitcommit: 5251a630fb2c7a2e6f86abd84ab887f8eabc1481
+ms.openlocfilehash: b7cff6c777de4a35aa6825d1d37fdd0c2f2d0b72
+ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/23/2018
-ms.locfileid: "39212127"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42751724"
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Inscribir dispositivos iOS con Apple Configurator
 
@@ -57,12 +57,18 @@ Un perfil de inscripción de dispositivo define la configuración que se aplica 
 
     - **Inscribir con afinidad de usuario**: seleccione esta opción para dispositivos que pertenezcan a usuarios y necesiten usar el portal de empresa para hacer uso de servicios, como instalar aplicaciones. El dispositivo se debe afiliar a un usuario con el Asistente de configuración y, después, se le puede permitir el acceso a los datos y al correo electrónico de la empresa. Solo se admite para la inscripción con el asistente para la configuración. Se necesita una afinidad de usuario [Punto de conexión mixto/nombre de usuario de WS-Trust 1.3](https://technet.microsoft.com/library/adfs2-help-endpoints). [Más información](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 
-   > [!NOTE]
-   > Multi-Factor Authentication (MFA) no funciona durante la configuración de la inscripción con afinidad de usuario. Después de la inscripción, MFA funciona según lo previsto en los dispositivos. Los dispositivos no pueden pedir a los usuarios que cambien su contraseña cuando inician sesión por primera vez. Además, no se puede pedir a los usuarios cuyas contraseñas hayan expirado que las restablezcan durante la inscripción. Los usuarios deben usar un dispositivo diferente para restablecer la contraseña.
-
     - **Inscribir sin afinidad de usuario**: seleccione esta opción para dispositivos no afiliados con un usuario único. Use esta opción para dispositivos que realizan tareas sin tener acceso a datos de usuario local. Las aplicaciones que requieren la afiliación de un usuario no funcionarán, incluida la aplicación Portal de empresa cuando se usa para instalar aplicaciones de línea de negocio. Se requiere para la inscripción directa.
 
 4. Si elige **Inscribir con afinidad de usuario**, tiene la opción de permitir que los usuarios se autentiquen en el portal de empresa en lugar de con el Asistente para configuración de Apple.
+
+    > [!NOTE]
+    > Si quiere realizar alguna de las acciones siguientes, establezca **Authenticate with Company Portal instead of Apple Setup Assistant** (Autenticar con el Portal de empresa en lugar del Asistente de configuración) en **Sí**.
+    >    - usar la autenticación multifactor
+    >    - pedir a los usuarios que cambien su contraseña cuando inician sesión por primera vez
+    >    - pedir a los usuarios que restablezcan las contraseñas expiradas durante la inscripción
+    >
+    > Estas operaciones no se admiten durante la autenticación con el asistente de configuración de Apple.
+
 
 6. Elija **Crear** para guardar el perfil.
 

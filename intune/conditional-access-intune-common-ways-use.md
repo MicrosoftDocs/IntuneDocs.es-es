@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2d147bc5ee22718ecce102cc549b29faa17a617e
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 49fd06d4f0f75f1aeff434ce3b271284ec1a0340
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31025919"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40251947"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>¿Cuáles son las formas habituales de usar el acceso condicional con Intune?
 
@@ -28,6 +28,9 @@ ms.locfileid: "31025919"
 Hay dos tipos de acceso condicional con Intune: acceso condicional basado en el dispositivo y acceso condicional basado en la aplicación. Debe configurar las directivas de cumplimiento relacionadas para aplicar el cumplimiento del acceso condicional en su organización. Normalmente, el acceso condicional se utiliza para, por ejemplo, permitir o bloquear el acceso a Exchange local, controlar el acceso a la red o integrarse con una solución de Mobile Threat Defense.
 
 La siguiente información le ayudará a comprender cómo usar las capacidades de cumplimiento de *dispositivos* móviles de Intune y las capacidades de administración de *aplicaciones* móviles (MAM) de Intune. 
+
+> [!NOTE]
+> El acceso condicional es una función de Azure Active Directory que se incluye con una licencia Premium de Azure Active Directory. Intune mejora esta función al agregar el cumplimiento de dispositivos móviles y la administración de aplicaciones móviles a la solución.
 
 ## <a name="device-based-conditional-access"></a>Acceso condicional basado en dispositivos
 
@@ -122,7 +125,7 @@ El acceso condicional para equipos proporciona funcionalidades similares a las d
 
 #### <a name="corporate-owned"></a>Propiedad corporativa
 
--   **Unidos a un dominio de AD local:** esta ha sido la opción de implementación más común de acceso condicional para las organizaciones, quienes están razonablemente cómodas con el hecho de que ya se están administrando sus equipos mediante directivas de grupo de AD o con System Center Configuration Manager.
+-   **Unidos a un dominio de AD local:** esta opción se usa habitualmente por las organizaciones que están razonablemente cómodas con la manera en que ya se están administrando sus equipos mediante directivas de grupo de AD o con System Center Configuration Manager.
 
 -   **Unidos a un dominio de Azure AD y administración de Intune:** este escenario va encaminado principalmente a elegir su propio dispositivo (CYOD) y a situaciones de itinerancia de equipos portátiles en las que estos dispositivos raramente se conectan a la red corporativa. El dispositivo se une a Azure AD y se inscribe en Intune, lo que elimina las dependencias del entorno local de AD y de los controladores de dominio. Esta opción puede usarse como criterio de acceso condicional al acceder a los recursos corporativos.
 

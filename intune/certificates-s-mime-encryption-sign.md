@@ -5,21 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/19/2018
+ms.date: 08/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e0eac3c1d6739ca70e485b0327e3257ba8d32d2b
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 3a31a43cfe45060891c30a7f159123a30b43173d
+ms.sourcegitcommit: 488be75cbee88455b33c68a3ec2acb864d461bf8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321720"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "41910673"
 ---
 # <a name="smime-email-signing-and-encryption-in-intune"></a>Firma y cifrado de correo electrónico S/MIME en Intune
+
+> [!IMPORTANT]
+> Hemos aplicado algunas mejoras a la característica S/MIME descrita en este artículo. Como resultado, la característica S/MIME se ha quitado temporalmente en Intune. Cuando esta característica se publique, quitaremos esta nota.
 
 S/MIME proporciona un nivel adicional de seguridad para las comunicaciones de correo electrónico mediante el cifrado y el descifrado. Microsoft Intune puede usar S/MIME para firmar y cifrar mensajes de correo electrónico para dispositivos móviles que ejecutan iOS, Windows, Windows Phone, Android y macOS.
 

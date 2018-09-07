@@ -5,23 +5,26 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/20/2018
+ms.date: 8/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2d2fc7f697d03c1ffcb952cd30e29f4959f2b7e9
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 2d27e90655e54051d73989202d2bc849a66208f5
+ms.sourcegitcommit: 488be75cbee88455b33c68a3ec2acb864d461bf8
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321176"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "41910809"
 ---
 # <a name="email-profile-settings-for-ios-devices---intune"></a>Configuración del perfil de correo electrónico para dispositivos iOS - Intune
 
 Use la configuración del perfil de correo electrónico para configurar los dispositivos que funcionan con iOS.
+
+> [!IMPORTANT]
+> Hemos aplicado algunas mejoras a la característica S/MIME descrita en este artículo. Como resultado, la característica S/MIME se ha quitado temporalmente en Intune. Cuando esta característica se publique, quitaremos esta nota.
 
 ## <a name="email-settings"></a>Configuración de correo electrónico
 

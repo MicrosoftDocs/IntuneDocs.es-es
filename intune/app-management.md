@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/20/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5aa03cad0785e0d9b3d64df97a3ba6d344f0c7b5
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 2c5203256a17065331f9d75c9315471e41508454
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906114"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255377"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>¿Qué es la administración de aplicaciones de Microsoft Intune?
 
@@ -38,23 +38,22 @@ Intune ofrece diversas funcionalidades para ayudarle a conseguir las aplicacione
 
 ## <a name="app-management-capabilities-by-platform"></a>Funcionalidades de administración de aplicaciones por plataforma
 
-||||||
-|-|-|-|-|-|
-| |Android|iOS|Windows Phone 8,1|Windows 10|
-|Agregar y asignar aplicaciones a dispositivos y usuarios|Sí|Sí|Sí|Sí|
-|Asignar aplicaciones a dispositivos no inscritos en Intune|Sí|Sí|No|No|
-|Usar directivas de configuración de aplicaciones para controlar el comportamiento de inicio de las aplicaciones|No|Sí|No|No|
-|Usar directivas de aprovisionamiento de aplicaciones móviles para renovar aplicaciones caducadas|No|Sí|No|No|
-|Proteger los datos de empresa de las aplicaciones con directivas de protección de aplicaciones|Sí|Sí|No|No<sup>1</sup>|
-|Quitar solo los datos corporativos de una aplicación instalada (eliminación selectiva de aplicaciones)|Sí|Sí|Sí|Sí|
-|Supervisar las asignaciones de aplicaciones|Sí|Sí|Sí|Sí|
-|Asignar y realizar el seguimiento de aplicaciones compradas por volumen desde una tienda de aplicaciones|No|No|No|Sí|
-|Instalación obligatoria de aplicaciones en dispositivos (requerido)<sup>2</sup>|Sí|Sí|Sí|Sí|
-|Instalación opcional en dispositivos desde el Portal de empresa (instalación disponible)|Sí|Sí|Sí|Sí|
-|Instalación de un acceso directo a una aplicación en Web (vínculo web)|Sí|Sí|Sí|Sí|
-|Aplicaciones internas (línea de negocio)|Sí|Sí|No|Sí|
-|Aplicaciones de una tienda|Sí|Sí|Sí|Sí|
-|Actualizar aplicaciones|Sí|Sí|Sí|Sí|
+|  | Android | iOS | macOS | Windows 10 | Windows Phone 8,1 |
+|-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
+| Agregar y asignar aplicaciones a dispositivos y usuarios | Sí | Sí | Sí | Sí | Sí |
+| Asignar aplicaciones a dispositivos no inscritos en Intune | Sí | Sí | No | No | No |
+| Usar directivas de configuración de aplicaciones para controlar el comportamiento de inicio de las aplicaciones | No | Sí | No | No | No |
+| Usar directivas de aprovisionamiento de aplicaciones móviles para renovar aplicaciones caducadas | No | Sí | No | No | No |
+| Proteger los datos de empresa de las aplicaciones con directivas de protección de aplicaciones | Sí | Sí | No | No1 | No |
+| Quitar solo los datos corporativos de una aplicación instalada (eliminación selectiva de aplicaciones) | Sí | Sí | No | Sí | Sí |
+| Supervisar las asignaciones de aplicaciones | Sí | Sí | Sí | Sí | Sí |
+| Asignar y realizar el seguimiento de aplicaciones compradas por volumen desde una tienda de aplicaciones | No | No | No | Sí | No |
+| Instalación obligatoria de aplicaciones en dispositivos (requerido)2 | Sí | Sí | Sí | Sí | Sí |
+| Instalación opcional en dispositivos desde el Portal de empresa (instalación disponible) | Sí | Sí | Sí | Sí | Sí |
+| Instalación de un acceso directo a una aplicación en Web (vínculo web) | Sí | Sí | Sí | Sí | Sí |
+| Aplicaciones internas (línea de negocio) | Sí | Sí | Sí | Sí | No |
+| Aplicaciones de una tienda | Sí | Sí | No | Sí | Sí |
+| Actualizar aplicaciones | Sí | Sí | No | Sí | Sí |
 
 <sup>1</sup> Considere el uso de [Windows Information Protection](windows-information-protection-configure.md) para proteger aplicaciones en dispositivos que ejecutan Windows 10.
 
@@ -73,7 +72,7 @@ Puede encontrar la mayoría de la información relacionada con las aplicaciones 
 
 Las cuatro secciones siguientes describen las opciones disponibles en el panel **Aplicaciones móviles**.
 
-### <a name="manage"></a>Administrar
+### <a name="manage"></a>Administración
 - **Aplicaciones**: seleccione esta opción para agregar, ver, asignar y supervisar las aplicaciones que usan los trabajadores. Para obtener más información, vea:
     - [Agregar aplicaciones](apps-add.md).
     - [Asignar aplicaciones](apps-deploy.md).
@@ -91,12 +90,12 @@ Las cuatro secciones siguientes describen las opciones disponibles en el panel *
 
 Para más información sobre esta sección, vea [Administración de aplicaciones](app-management.md).
 
-### <a name="monitor"></a>Supervisión
+### <a name="monitor"></a>Monitor
 - **Licencias de aplicaciones**: vea, asigne y supervise las aplicaciones compradas por volumen de las tiendas de aplicaciones. Para obtener más información, vea:
     - [Aplicaciones de programa compradas por volumen de iOS](vpp-apps-ios.md).
     - [Aplicaciones adquiridas por volumen de la Microsoft Store para Empresas](windows-store-for-business.md).
-- **Aplicaciones detectadas**: vea todas las aplicaciones que asignó Intune y que están instaladas en un dispositivo.
-- **Estado de instalación de la aplicación**: vea el estado de una asignación de aplicación que ha creado.
+- **Aplicaciones detectadas**: vea todas las aplicaciones que asignó Intune y que están instaladas en un dispositivo. Para obtener más información, consulte [Monitor app information and assignments with Microsoft Intune](apps-monitor.md#device-and-user-status-graphs) (Supervisión de información de aplicación y asignaciones con Microsoft Intune).
+- **Estado de instalación de la aplicación**: vea el estado de una asignación de aplicación que ha creado. Para obtener más información, consulte [Monitor app information and assignments with Microsoft Intune](apps-monitor.md#device-and-user-status-graphs) (Supervisión de información de aplicación y asignaciones con Microsoft Intune).
 - **Estado de protección de la aplicación**: vea el estado de una directiva de protección de aplicaciones de un usuario que haya seleccionado.
 - **Registros de auditoría**: vea la actividad relacionada con la aplicación de Intune desarrollada de todos los administradores de TI.
 

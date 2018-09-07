@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/07/2018
+ms.date: 08/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,32 +13,29 @@ ms.technology: ''
 ms.assetid: 5aa5cfa3-c483-4099-b40f-578ff8dca425
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5658bf2e1ee250ef9fd405b3f7ec1772b166f338
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 6b66cd00f734cab3ca85f6d87f056f8c482a377d
+ms.sourcegitcommit: 2811df0f851ca6b08f6ae8c926fb2e6971c41690
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31021003"
+ms.lasthandoff: 08/13/2018
+ms.locfileid: "40252746"
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>Uso de Empezar de cero para restablecer dispositivos Windows 10 con Intune
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-La acción de dispositivo **Empezar de cero** permite quitar las aplicaciones que están instaladas en un equipo Windows 10 que ejecuta Creators Update. Después, actualiza automáticamente el equipo a la versión más reciente de Windows.
+La acción de dispositivo **Comienzo de cero** quita las aplicaciones que están instaladas en un equipo que ejecuta Windows 10, versión 1703 o posterior. Comienzo de cero ayuda a eliminar las aplicaciones preinstaladas (OEM) que normalmente se instalan con un nuevo equipo.  
 
-Esta acción ayuda a eliminar aplicaciones preinstaladas (OEM) que normalmente se instalan con un nuevo equipo. Para mantener el contenido de la carpeta Inicio del usuario y quitar solo las aplicaciones y la configuración, use el valor `if user data is retained`.
-
-> [!IMPORTANT]
-> La característica Empezar de cero anula la inscripción del dispositivo de Intune, pero este sigue unido en Azure Active Directory.
-
-## <a name="use-fresh-start"></a>Uso de Empezar de cero
-
-1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
-2. Elija **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
-3. Seleccione **Dispositivos** y, después, **Todos los dispositivos**.
-4. En la lista de dispositivos que administra, elija un dispositivo de Windows 10 Desktop y, luego, seleccione **Empezar de cero**.
-
-## <a name="next-steps"></a>Pasos siguientes
-
-Para ver el estado de esta acción, seleccione **Acciones de dispositivo** (**Microsoft Intune** > **Dispositivos**).
+1. Inicie sesión en [Azure Portal](https://portal.azure.com) y vaya a > **Microsoft Intune** > **Dispositivos** > **Todos los dispositivos**.
+2. En la lista de dispositivos que administra, elija un dispositivo de escritorio de Windows 10.
+3. Haga clic en **Comienzo de cero**. 
+4. Seleccione **Conservar los datos de usuario en este dispositivo** para:
+   * Mantener el dispositivo unido a Azure AD
+    * Mantener el dispositivo inscrito en la administración de dispositivos móviles 
+    * Mantener el contenido de la carpeta Inicio del usuario del dispositivo y quitar las aplicaciones y la configuración  
+  > [!IMPORTANT]
+ > Si no se conservan los datos de usuario, se restaurará el dispositivo a su estado de fábrica. Se quitará su suscripción de Azure AD y la administración de dispositivos móviles. 
+ 
+5. Haga clic en **Aceptar**.   
+6. Para ver el estado de esta acción, vuelva a **Dispositivos** y haga clic en **Acciones de dispositivo**.  

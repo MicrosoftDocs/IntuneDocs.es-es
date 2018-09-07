@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/23/2018
+ms.date: 08/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4455a3c26296faba8bf01cf43d8555aebc13afc6
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 9db79e9d0dc82cd823663274aa02dbe097db74d4
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321482"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40251591"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Asignación de aplicaciones de Office 365 a dispositivos Windows 10 con Microsoft Intune
 
@@ -29,8 +29,8 @@ Este tipo de aplicación facilita la asignación de aplicaciones de Office 365 a
 
 ## <a name="before-you-start"></a>Antes de empezar
 
->[!IMPORTANT]
->Este método de instalación de Office solo se admite si no hay otras versiones de Microsoft Office instaladas en el dispositivo.
+> [!IMPORTANT]
+> Si hay aplicaciones de Office .msi en el dispositivo del usuario final, debe usar la característica **Remove MSI** (Quitar MSI) para desinstalar estas aplicaciones de forma segura. En caso contrario, no se podrán instalar las aplicaciones de Office 365 entregadas por Intune.
 
 - Los dispositivos en los que implementa estas aplicaciones deben ejecutar Windows 10 Creator Update o una versión posterior.
 - Intune solo admite agregar aplicaciones de Office desde el conjunto de aplicaciones de Office 365.
@@ -91,6 +91,7 @@ En este paso, configure las opciones de instalación para el conjunto de aplicac
         - **Mensual (dirigido)**
         - **Semianual**
         - **Semianual (dirigido)**
+    - **Remove other versions of Office (MSI) from ened user devices** (Quitar otras versiones de Office (MSI) de los dispositivos de usuario final): esta característica le permitirá quitar todo lo que haya previamente de Office (MSI) de las máquinas del usuario final. Esto no se limita a las aplicaciones seleccionadas para la instalación en **Configure App Suite** (Configurar App Suite), ya que quitará todas las aplicaciones de Office (MSI) del dispositivo del usuario final.
     - **Automatically accept the app end user license agreement** (Aceptar automáticamente el contrato de licencia del usuario final de la aplicación): seleccione esta opción si no exige que los usuarios finales acepten el contrato de licencia. De ese modo, Intune aceptará automáticamente el contrato.
     - **Use shared computer activation** (Usar activación de equipos compartidos): seleccione esta opción cuando varios usuarios compartan un equipo. Para obtener más información, vea [Introducción a la activación de equipos compartidos para Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
     - **Idiomas**: Office se instala automáticamente en cualquier idioma compatible que se instale con Windows en el dispositivo de los usuarios finales. Seleccione esta opción si desea instalar más idiomas con el conjunto de aplicaciones.
@@ -108,7 +109,7 @@ En la tabla siguiente se muestran los códigos de error comunes que podría enco
 ||||
 |-|-|-|
 |Estado|Fase|Descripción|
-|1460 (ERROR_TIMEOUT)|Descarga|No se pudo descargar la Herramienta de implementación de Office|    
+|1460 (ERROR_TIMEOUT)|Descargar|No se pudo descargar la Herramienta de implementación de Office|    
 |13 (ERROR_INVALID_DATA)|-|No se puede comprobar la firma de la Herramienta de implementación de Office descargada|
 |Código de error de CertVerifyCertificateChainPolicy|-|No se pudo comprobar la certificación de la Herramienta de implementación de Office descargada|    
 |997|WIP|Instalación|

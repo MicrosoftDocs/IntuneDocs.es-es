@@ -15,12 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 606c173c1723d526436b9ae75d9a4085883f071b
-ms.sourcegitcommit: 29eaf27323763a5a200ec64b8679397c4b988f33
+ms.openlocfilehash: 3a66ed41442e89ed40850f5b9cd56cbc004a43d0
+ms.sourcegitcommit: 8b4f5685dc7f41f5e967a8f9d0627707a36dbe93
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36305440"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251673"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Creación y asignación de directivas de protección de aplicaciones
 
@@ -30,11 +30,11 @@ Descubra cómo crear directivas de protección de aplicaciones de Microsoft Intu
 
 ## <a name="before-you-begin"></a>Antes de comenzar
 
-Si desea obtener instrucciones en el portal clásico de Intune, vea [cómo crear directivas de protección de aplicaciones](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune).
-
 Las directivas de protección de aplicaciones se pueden aplicar a aplicaciones que se ejecutan en dispositivos que podrían estar o no administrados por Intune. Para obtener una descripción más detallada de cómo funcionan las directivas de protección de aplicaciones y los escenarios admitidos por las directivas de protección de aplicaciones de Intune, consulte [What is Microsoft Intune app protection policies](app-protection-policy.md) (¿Qué son las directivas de protección de aplicaciones de Microsoft Intune?).
 
 Si desea acceder a una lista de aplicaciones compatibles con MAM, vea la [lista de aplicaciones de MAM](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
+
+Para obtener información acerca de cómo agregar aplicaciones de línea de negocio (LOB) de su organización a Microsoft Intune para prepararse para las directivas de protección de aplicaciones, consulte [Incorporación de aplicaciones a Microsoft Intune](apps-add.md).
 
 ##  <a name="create-an-app-protection-policy"></a>Crear directivas de protección de aplicaciones
 1. En la carga de trabajo **Aplicaciones móviles**, seleccione **Directivas de protección de aplicaciones** en la sección **Administrar**. Al seleccionar esa opción, se abrirán los detalles de **Directivas de protección de aplicaciones**, donde creará nuevas directivas y editará las existentes.
@@ -62,7 +62,7 @@ Si desea acceder a una lista de aplicaciones compatibles con MAM, vea la [lista 
 8. Seleccione **Aceptar** para guardar esta configuración. De esta forma, volverá a la hoja **Agregar directiva**.
 9. Seleccione **Crear** para crear la directiva y guardar la configuración.
 
-Cuando termine de crear una directiva como se describe en el procedimiento anterior, no se implementará en ningún usuario. Para implementar una directiva, consulte [Implementar una directiva para los usuarios](app-protection-policies.md#deploy-a-policy-to-users).
+Cuando termine de crear una directiva como se describe en el procedimiento anterior, esta no se implementará en ningún usuario. Para implementar una directiva, consulte [Implementar una directiva para los usuarios](app-protection-policies.md#deploy-a-policy-to-users).
 
 ## <a name="deploy-a-policy-to-users"></a>Implementar una directiva para los usuarios
 
@@ -141,6 +141,6 @@ Para ver una lista completa de las configuraciones de directivas para iOS y Andr
 ## <a name="next-steps"></a>Pasos siguientes
 [Supervisar el estado del cumplimiento y del usuario](app-protection-policies-monitor.md)
 
-### <a name="see-also"></a>Vea también
+### <a name="see-also"></a>Consulte también
 * [What to expect when your Android app is managed by app protection policies](app-protection-enabled-apps-android.md) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)
 * [What to expect when your iOS app is managed by app protection policies](app-protection-enabled-apps-ios.md) (Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones)

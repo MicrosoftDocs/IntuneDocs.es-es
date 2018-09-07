@@ -14,12 +14,12 @@ ms.assetid: bb4314ea-88b5-44d3-92ce-4c6aff0587a4
 ms.reviewer: amyro
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: a6a5bbdd5c8cd155dad99b3a8fcceabb2ff1f6f8
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 8b132c0853bf9d591f16610f1e7a714b6288491b
+ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225415"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42751657"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>Asignar licencias a los usuarios para que puedan inscribir dispositivos en Intune
 
@@ -61,7 +61,7 @@ Vea la [información general de School Data Sync](https://support.office.com/art
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>Cómo las licencias de usuario y dispositivo afectan el acceso a los servicios
 * Cada **usuario** al que asigna una licencia de software de usuario puede acceder a los servicios en línea y al software relacionado (incluido software de System Center) y usarlos para administrar las aplicaciones y hasta 15 dispositivos.
-* Cada **dispositivo** al que asigna una licencia de software de dispositivo puede acceder a los servicios en línea y al software relacionado (incluido software de System Center) y usarlos para que los use cualquier número de usuarios.
+* Puede comprar licencias para cualquier dispositivo por separado de las licencias de usuario. No es necesario que las licencias de dispositivo se asignen a los dispositivos. Cada dispositivo que accede y utiliza los servicios en línea y el software relacionado (incluido el software System Center) debe tener una licencia de dispositivo.
 * Si más de un usuario usa un dispositivo, cada uno de ellos debe tener una licencia de software de dispositivos, o bien todos los usuarios deben tener una licencia de software de usuario.
 
 ## <a name="understanding-the-type-of-licenses-you-have-purchased"></a>Descripción del tipo de licencias adquiridas

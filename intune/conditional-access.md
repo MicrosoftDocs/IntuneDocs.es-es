@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a62166792570c5bb81391d05d1cbc3f8486543a4
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 7faba9a0bfb6f07a80c4c0af947efbca9b33ae03
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31022346"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40251562"
 ---
 # <a name="whats-conditional-access"></a>¿Qué es el acceso condicional?
 
@@ -38,7 +38,7 @@ Puede definir las condiciones que regulan el acceso a los datos corporativos en 
 
 ## <a name="conditional-access-with-intune"></a>Acceso condicional con Intune
 
-Intune incorpora directivas de cumplimiento de dispositivos móviles y administración de aplicaciones para admitir la solución de acceso condicional de EMS.
+El acceso condicional es una función de Azure Active Directory que se incluye con una licencia Premium de Azure Active Directory. Intune mejora esta función al agregar el cumplimiento de dispositivos móviles y la administración de aplicaciones móviles a la solución. 
 
 ![Intune y el acceso condicional cuando se usa EMS](./media/intune-with-ca-1.png)
 

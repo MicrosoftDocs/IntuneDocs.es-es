@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/16/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 64e5133d-1e23-4ee6-b556-f5d32c0e95da
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0cd9db9399eb08c3ed04ff1d8920082aa0c04f06
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: bedd1108ce0c9e173e6e9519a29d3948f1320c3a
+ms.sourcegitcommit: 1a8b34c7854a575bf6ce59f475c7b718fa038d66
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224320"
+ms.lasthandoff: 08/18/2018
+ms.locfileid: "40251857"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Supervisión de información y asignaciones de aplicaciones con Microsoft Intune
 
@@ -62,6 +62,12 @@ El gráfico muestra el número de elementos con el siguiente estado:
 | **Instalación pendiente**   | El número de aplicaciones en proceso de ser instaladas. |
 | **No aplicable**           | El número de aplicaciones en las que el estado no es aplicable.            |
 
+> [!NOTE]
+> El número de aplicaciones detectadas puede no coincidir con el recuento del estado de instalación de la aplicación. Estas son las posibles incoherencias:
+>    - Un cambio de orientación de una aplicación administrada instalada puede hacer que el recuento de instalación en la hoja de estado disminuya, pero se mantenga presente en las aplicaciones detectadas.
+>    - Dirigir varias instancias de la misma aplicación a un inquilino dará lugar a recuentos diferentes debido a la posible superposición de usuarios o dispositivos. Cada instancia de la aplicación contará los usuarios que se superponen, pero las aplicaciones detectadas tendrán recuentos duplicados.
+>    - Las aplicaciones detectadas y los estados de la aplicación se recopilan en intervalos de tiempo diferentes, lo que podría provocar una discrepancia en los recuentos de la aplicación.
+ 
 ### <a name="device-install-status"></a>Estado de instalación del dispositivo
 
 Si selecciona **Estado de instalación del dispositivo** en la sección **Supervisión** del menú, se muestra una lista de estados de dispositivo. En la tabla de detalles se incluyen las columnas siguientes:
@@ -69,7 +75,7 @@ Si selecciona **Estado de instalación del dispositivo** en la sección **Superv
 | **Columna de dispositivo**      | **Descripción**                                                                                                                                                                                                                                            |
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Nombre del dispositivo**      | El nombre del dispositivo en plataformas que permiten asignar nombre a un dispositivo. En otras plataformas, Intune crea un nombre a partir de otras propiedades. Este atributo no está disponible para ningún otro dispositivo.                                                                       |
-| **Nombre de usuario**        | Nombre del usuario.                                                                                                                                                                                                                                      |
+| **Nombre de usuario**        | El nombre del usuario.                                                                                                                                                                                                                                      |
 | **Plataforma**         | El sistema operativo del dispositivo (Windows, iOS, Android, etc.)                                                                                                                                                                                           |
 | **Versión**          | El número de versión de la aplicación. En el caso de las aplicaciones de línea de negocio, se muestra el número de versión completo de la aplicación. El número de versión completo identifica una versión específica de la aplicación. El número aparece como _versión_(_compilación_). Por ejemplo, 2.2(2.2.17560800). |
 | **Estado**           | El estado de la aplicación.                                                                                                                                                                                                                                     |

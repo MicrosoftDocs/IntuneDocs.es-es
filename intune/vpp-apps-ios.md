@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/02/2018
+ms.date: 08/23/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 574880ae1ff7f734edcb02ebc89d7a0270064d4e
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 115486f02a86616fdf2c340fa7e0e2ff6e505afa
+ms.sourcegitcommit: 973a06f4a35b74314fece2bae17dd6885b4211c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905978"
+ms.lasthandoff: 08/24/2018
+ms.locfileid: "42823076"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Administrar aplicaciones de iOS compradas a través de un programa de compras por volumen con Microsoft Intune
 
@@ -121,13 +121,13 @@ El usuario final recibirá solicitudes para que instale la aplicación de VPP en
 
 | # | Escenario                                | Invitar al programa VPP de Apple                              | Solicitud de instalación de la aplicación | Solicitud del ID de Apple |
 |---|--------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------|-----------------------------------|
-| 1 | BYOD: usuario con licencia                             | esté                                                                                               | esté                                           | esté                                 |
-| 2 | Corp: usuario con licencia (dispositivo no supervisado)     | esté                                                                                               | esté                                           | esté                                 |
-| 3 | Corp: usuario con licencia (dispositivo supervisado)         | esté                                                                                               | N                                           | esté                                 |
-| 4 | BYOD: dispositivo con licencia                           | N                                                                                               | esté                                           | N                                 |
-| 5 | Corp: dispositivo con licencia (dispositivo no supervisado)                           | N                                                                                               | esté                                           | N                                 |
-| 6 | Corp: dispositivo con licencia (dispositivo supervisado)                           | N                                                                                               | N                                           | N                                 |
-| 7 | Pantalla completa (dispositivo supervisado): dispositivo con licencia | N                                                                                               | N                                           | N                                 |
+| 1 | BYOD: usuario con licencia                             | S                                                                                               | S                                           | S                                 |
+| 2 | Corp: usuario con licencia (dispositivo no supervisado)     | S                                                                                               | S                                           | S                                 |
+| 3 | Corp: usuario con licencia (dispositivo supervisado)         | S                                                                                               | No                                           | S                                 |
+| 4 | BYOD: dispositivo con licencia                           | No                                                                                               | S                                           | No                                 |
+| 5 | Corp: dispositivo con licencia (dispositivo no supervisado)                           | No                                                                                               | S                                           | No                                 |
+| 6 | Corp: dispositivo con licencia (dispositivo supervisado)                           | No                                                                                               | No                                           | No                                 |
+| 7 | Pantalla completa (dispositivo supervisado): dispositivo con licencia | No                                                                                               | No                                           | No                                 |
 | 8 | Pantalla completa (dispositivo supervisado): usuario con licencia   | --- | ---                                          | ---                                |
 
 > [!Note]  
@@ -148,6 +148,10 @@ Puede eliminar un token del programa de compras por volumen (VPP) de iOS con la 
 
 <!-- 820870 -->  
 Para revocar la licencia de todas las aplicaciones de VPP de un token de VPP determinado, primero debe revocar todas las licencias de aplicación asociadas con el token y, después, eliminar el token.
+
+## <a name="renewing-app-licenses"></a>Renovación de licencias de aplicación
+
+Puede renovar un token de PCV de Apple mediante la descarga de un nuevo token desde el portal del Programa de Compras por Volumen de Apple y la actualización del token existente en Intune.
 
 ## <a name="further-information"></a>Más información
 

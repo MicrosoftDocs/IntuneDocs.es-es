@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 08/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 050660b4da609d8e6c0dbf969eb71aa79945262a
-ms.sourcegitcommit: e6013abd9669ddd0d6449f5c129d5b8850ea88f3
+ms.openlocfilehash: daaed6ded0c20551567a63890d324abcbaaf41d7
+ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39254542"
+ms.lasthandoff: 08/14/2018
+ms.locfileid: "40251798"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicaciones iOS para directivas de protección de aplicaciones con la herramienta de ajuste de aplicaciones de Intune
 
@@ -101,7 +101,7 @@ Necesitará lo siguiente para distribuir aplicaciones ajustadas con Intune:
 
    ![Portal de Apple Developer](./media/iOS-signing-cert-1.png)
 
-5. Haga clic en la pestaña ![Signo más del Portal de Apple Developer](./media/iOS-signing-cert-2.png) en la esquina superior derecha para agregar un certificado iOS.
+5. Haga clic en la ficha ![Signo más del Portal de Apple Developer](./media/iOS-signing-cert-2.png) en la esquina superior derecha para agregar un certificado iOS.
 
 6. Pulse para crear un certificado **interno y ad hoc** en **Producción**.
 
@@ -126,7 +126,7 @@ Necesitará lo siguiente para distribuir aplicaciones ajustadas con Intune:
 
     ![Solicitar un certificado de una entidad de certificación en Acceso a llaves](./media/iOS-signing-cert-6.png)
 
-12. Vuelva al sitio de Apple Developer. Haga clic en **Continue**. Después, cargue el archivo CSR.
+12. Vuelva al sitio de Apple Developer. Haga clic en **Continuar**. Después, cargue el archivo CSR.
 
 13. Apple genera su certificado de firma. Descargue y guárdelo en una ubicación fácil de recordar en su equipo macOS.
 
@@ -150,13 +150,13 @@ Necesitará lo siguiente para distribuir aplicaciones ajustadas con Intune:
 
 2. Haga clic en **Certificates, IDs & Profiles (Certificados, identificadores y perfiles)**.
 
-3. Haga clic en la pestaña ![Signo más del Portal de Apple Developer](./media/iOS-signing-cert-2.png) en la esquina superior derecha para agregar un perfil de aprovisionamiento de iOS.
+3. Haga clic en la ficha ![Signo más del Portal de Apple Developer](./media/iOS-signing-cert-2.png) en la esquina superior derecha para agregar un perfil de aprovisionamiento de iOS.
 
 4. Pulse para crear un perfil de aprovisionamiento **interno** en **Distribución**.
 
    ![Seleccionar el perfil de aprovisionamiento interno](./media/iOS-provisioning-profile-1.png)
 
-5. Haga clic en **Continue**. Asegúrese de vincular el certificado de firma que se generó anteriormente al perfil de aprovisionamiento.
+5. Haga clic en **Continuar**. Asegúrese de vincular el certificado de firma que se generó anteriormente al perfil de aprovisionamiento.
 
 6. Siga los pasos para descargar el perfil (con la extensión .mobileprovision) en su equipo macOS.
 
@@ -172,19 +172,14 @@ Necesitará lo siguiente para distribuir aplicaciones ajustadas con Intune:
 
 3. Elija **Acepto** para aceptar los términos de licencia, con lo que se monta el paquete en el equipo.
 
-4.  Abra la carpeta **IntuneMAMPackager** y guarde su contenido en el equipo macOS. Ahora está preparado para ejecutar la Herramienta de ajuste de aplicaciones.
-
-> [!NOTE]
-> El empaquetador de MAM de Intune podría montarse por separado en el equipo macOS y producir un error de "archivo no encontrado" cuando se ejecutan los comandos de ajuste. Por lo tanto, si se mueve el contenido de la carpeta IntuneMAMPackager permitirá que se encuentre la ruta de acceso del empaquetador durante el ajuste.
-
 ## <a name="run-the-app-wrapping-tool"></a>Ejecutar la herramienta de ajuste de aplicaciones
 
 ### <a name="use-terminal"></a>Usar Terminal
 
-Abra el programa Terminal de macOS y vaya a la carpeta donde guardó los archivos de la herramienta de ajuste de aplicaciones. La herramienta ejecutable se denomina IntuneMAMPackager y se encuentra en IntuneMAMPackager/Contents/MacOS. Ejecute el comando siguiente:
+Abra el Terminal de macOS y ejecute el siguiente comando:
 
 ```
-./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
+/Volumes/IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
 ```
 
 > [!NOTE]
@@ -224,9 +219,9 @@ En la carpeta IntuneMAMPackager/Contents/MacOS, abra `Parameters.plist`, que es 
 | Ruta de acceso del paquete de aplicación de salida |vacío| Igual que -o|
 | Ruta de acceso del perfil de aprovisionamiento |vacío| Igual que -p|
 | Hash del certificado SHA-1 |vacío| Igual que -c|
-| Modo detallado habilitado |false| Igual que -v|
-| Quitar los derechos que faltan | false| Igual que -c|
-| Impedir la compilación predeterminada |false | Equivale a usar -b sin argumentos|
+| Modo detallado habilitado |falso| Igual que -v|
+| Quitar los derechos que faltan | falso| Igual que -c|
+| Impedir la compilación predeterminada |falso | Equivale a usar -b sin argumentos|
 |Invalidación de la cadena de compilación | vacío| Valor de CFBundleVersion personalizado de la aplicación de salida ajustada. |
 |Rutas de acceso del perfil de aprovisionamiento de extensión | vacío| Matriz de perfiles de aprovisionamiento de extensión para la aplicación.
 
@@ -406,6 +401,29 @@ Use los procedimientos recomendados de seguridad y privacidad siguientes al usar
 
 -   Cuando supervisa la carpeta de documentos en su dispositivo desde dentro de una aplicación ajustada, puede que vea una carpeta llamada .msftintuneapplauncher. Si cambia o elimina este archivo, podría afectar al funcionamiento correcto de las aplicaciones restringidas.
 
+## <a name="intune-app-wrapping-tool-for-ios-with-citrix-mdx-mvpn"></a>Herramienta de ajuste de aplicaciones de Intune para iOS con mVPN de Citrix MDX
+Esta característica es una integración con el contenedor de aplicaciones de Citrix MDX para iOS. La integración es simplemente una marca adicional y opcional de línea de comandos, `-citrix` para la Herramienta de ajuste de aplicaciones de Intune general.
+
+### <a name="requirements"></a>Requisitos
+
+Para usar la marca `-citrix`, también deberá instalar el [contenedor de aplicaciones de Citrix MDX para iOS](https://docs.citrix.com/en-us/mdx-toolkit/10/xmob-mdx-kit-app-wrap-ios.html) en el mismo equipo macOS. Las descargas se encuentran en [descargas de Citrix XenMobile](https://www.citrix.com/downloads/xenmobile/) y solo pueden acceder a ellas los clientes de Citrix una vez que inician sesión. Asegúrese de que se instala en la ubicación predeterminada: `/Applications/Citrix/MDXToolkit`. 
+
+> [!NOTE] 
+> La integración de Intune y Citrix solo es compatible en dispositivos iOS 10 o superiores.
+
+### <a name="use-the--citrix-flag"></a>Uso de la marca `-citrix`
+Simplemente ejecute el comando de ajuste de aplicaciones general con la marca `-citrix` adjunta. La marca `-citrix` actualmente no toma ningún argumento.
+
+**Formato de uso**:
+```
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioing profile paths>] [-citrix]
+```
+
+**Comando de ejemplo**:
+```
+./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
+```
+
 ## <a name="getting-logs-for-your-wrapped-applications"></a>Obtención de registros para las aplicaciones ajustadas
 Siga estos pasos para obtener registros para las aplicaciones ajustadas durante la solución de problemas.
 
@@ -418,7 +436,7 @@ Siga estos pasos para obtener registros para las aplicaciones ajustadas durante 
 > [!NOTE]
 > La funcionalidad de registro está habilitada para las aplicaciones ajustadas con la versión de Intune App Wrapping Tool 7.1.13 o una posterior.
 
-### <a name="see-also"></a>Vea también
+### <a name="see-also"></a>Consulte también
 - [Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles mediante Microsoft Intune](apps-prepare-mobile-application-management.md)</br>
 - [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)</br>
 - [Use the SDK to enable apps for mobile application management (Usar el SDK para habilitar aplicaciones para la administración de aplicaciones móviles)](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)

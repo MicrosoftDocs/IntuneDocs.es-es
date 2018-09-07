@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d6f9035b5a31d04e7d6ec6c5ec5b8f69a7c0943f
-ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
+ms.openlocfilehash: 7b913cc2f667cb2bb16d6f810d7449ce8ee752e8
+ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "40090162"
+ms.lasthandoff: 08/23/2018
+ms.locfileid: "42751741"
 ---
 # <a name="automatically-enroll-macos-devices-with-apples-device-enrollment-program"></a>Inscripción automática de dispositivos macOS con el Programa de inscripción de dispositivos de Apple
 
@@ -90,7 +90,7 @@ Use el portal de DEP de Apple para crear un token de DEP. También puede usar el
 
    En el portal de Apple, vaya a **Programas de implementación** &gt; **Programa de inscripción de dispositivos** &gt; **View Assignment History** (Ver historial de asignaciones) para ver una lista de dispositivos y su asignación de servidor MDM.
 
-### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Paso 3: Guarde el identificador de Apple usado para crear este token.
+### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Paso 3. Guarde el identificador de Apple usado para crear este token.
 
 En Intune en Azure Portal, proporcione el id. de Apple para futuras referencias.
 
@@ -127,25 +127,30 @@ Ahora que ha instalado el token, puede crear un perfil de inscripción para disp
 
 8. Seleccione **Valores del Asistente de configuración** para configurar las siguientes opciones de perfil: ![Personalización del Asistente para configuración](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png).
 
-
-    |                 Setting                  |                                                                                               Descripción                                                                                               |
+    | Configuración de departamento | Descripción |
     |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    |     <strong>Nombre de departamento</strong>     |                                                             Aparece cuando los usuarios pulsan <strong>Acerca de la configuración</strong> durante la activación.                                                              |
-    |    <strong>Teléfono del departamento</strong>     |                                                          Aparece cuando el usuario hace clic en el botón <strong>Necesito ayuda</strong> durante la activación.                                                          |
-    | <strong>Opciones del Asistente para la configuración</strong> |                                                     Esta configuración opcional se puede configurar más adelante en el menú <strong>Configuración</strong> de macOS.                                                      |
-    |        <strong>Código de acceso</strong>         | Solicita el código de acceso durante la activación. Solicite siempre un código de acceso, a menos que el dispositivo esté protegido o tenga el acceso controlado de otra manera (es decir, modo de quiosco que restringe el dispositivo a una aplicación). |
-    |    <strong>Servicios de ubicación</strong>    |                                                                 Si está habilitado, el Asistente para la configuración solicitará este servicio durante la activación.                                                                  |
-    |         <strong>Restaurar</strong>         |                                                                Si está habilitado, el Asistente para la configuración solicitará una copia de seguridad de iCloud durante la activación.                                                                 |
-    |   <strong>iCloud e identificador de Apple</strong>   |                         Si está habilitado, el Asistente para la configuración solicita al usuario que inicie sesión con un identificador de Apple y en la pantalla Aplicaciones y datos se permitirá restaurar el dispositivo a partir de la copia de seguridad de iCloud.                         |
-    |  <strong>Términos y condiciones</strong>   |                                                   Si está habilitado, el Asistente para la configuración solicita a los usuarios que acepten los términos y condiciones de Apple durante la activación.                                                   |
-    |        <strong>Touch ID</strong>         |                                                                 Si está habilitado, el Asistente para la configuración solicitará este servicio durante la activación.                                                                 |
-    |        <strong>Apple Pay</strong>        |                                                                 Si está habilitado, el Asistente para la configuración solicitará este servicio durante la activación.                                                                 |
-    |          <strong>Zoom</strong>           |                                                                 Si está habilitado, el Asistente para la configuración solicitará este servicio durante la activación.                                                                 |
-    |          <strong>Siri</strong>           |                                                                 Si está habilitado, el Asistente para la configuración solicitará este servicio durante la activación.                                                                 |
-    |     <strong>Datos de diagnóstico</strong>     |                                                                 Si está habilitado, el Asistente para la configuración solicitará este servicio durante la activación.                                                                 |
-    |     <strong>FileVault</strong>           |  |
-    |     <strong>Diagnósticos de iCloud</strong>  |  |
-    |     <strong>Registro</strong>        |  |
+    | <strong>Nombre de departamento</strong> | Aparece cuando los usuarios pulsan <strong>Acerca de la configuración</strong> durante la activación. |
+    |    <strong>Teléfono del departamento</strong>     |                                                          Aparece cuando el usuario hace clic en el botón <strong>Necesito ayuda</strong> durante la activación. |
+
+    Cuando el usuario configura el dispositivo, es posible mostrar u ocultar varias pantallas del asistente de configuración.
+    - Si elige **Ocultar**, la pantalla no se mostrará durante la configuración. Después de configurar el dispositivo, el usuario seguirá teniendo la posibilidad de ir al menú **Ajustes** para configurar la característica.
+    - Si elige **Mostrar**, la pantalla se mostrará durante la configuración. A veces, el usuario puede omitir la pantalla sin realizar ninguna acción. Sin embargo, posteriormente podrá ir al menú **Ajustes** del dispositivo para configurar la característica. 
+
+    | Configuración de pantallas del asistente | Si elige **Mostrar**, durante la configuración se producirá lo siguiente en el dispositivo: |
+    |------------------------------------------|------------------------------------------|
+    | <strong>Código de acceso</strong> | Se solicitará un código de acceso al usuario. Solicite siempre un código de acceso, a menos que el dispositivo esté protegido o tenga el acceso controlado de otra manera (es decir, modo de quiosco que restringe el dispositivo a una aplicación). |
+    | <strong>Servicios de ubicación</strong> | Se solicitará la ubicación del usuario. |
+    | <strong>Restaurar</strong> | Se mostrará la pantalla **Aplicaciones y datos**. En esta pantalla el usuario tendrá la opción de restaurar o transferir datos de una copia de seguridad de iCloud al configurar el dispositivo. |
+    | <strong>iCloud e identificador de Apple</strong> | El usuario tendrá la opción de iniciar sesión con su **ID de Apple** y usar **iCloud**.                         |
+    | <strong>Términos y condiciones</strong> | El usuario deberá aceptar los términos y condiciones de Apple. |
+    | <strong>Touch ID</strong> | El usuario tendrá la opción de configurar una identificación con huella digital para el dispositivo. |
+    | <strong>Apple Pay</strong> | El usuario tendrá la opción de configurar Apple Pay en el dispositivo. |
+    | <strong>Zoom</strong> | El usuario tendrá la opción de ampliar el contenido de la pantalla al configurar el dispositivo. |
+    | <strong>Siri</strong> | El usuario tendrá la opción de configurar Siri. |
+    | <strong>Datos de diagnóstico</strong> | Se mostrará la pantalla **Diagnóstico** al usuario. En esta pantalla el usuario podrá enviar datos de diagnóstico a Apple. |
+    | <strong>FileVault</strong> | Conceda al usuario la opción de configurar el cifrado de FileVault. |
+    | <strong>Diagnósticos de iCloud</strong> | Conceda al usuario la opción de enviar datos de diagnóstico de iCloud a Apple. |
+    | <strong>Registro</strong>| Establezca que el usuario registre el dispositivo de manera obligatoria. |
 
 
 10. Elija **Aceptar**.

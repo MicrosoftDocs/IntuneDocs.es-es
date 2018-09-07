@@ -15,23 +15,23 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8b647e7b2a4d252041e60792b6fc49df8b961066
-ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
+ms.openlocfilehash: d39dca2a464886ae6752450636fe25a5f5701858
+ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37967245"
+ms.lasthandoff: 08/21/2018
+ms.locfileid: "40251512"
 ---
-# <a name="manage-internet-access-using-managed-browser-policies-with-microsoft-intune"></a>Administrar el acceso a Internet mediante directivas de Managed Browser con Microsoft Intune
+# <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Administración del acceso a Internet mediante directivas de explorador protegido con Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Managed Browser es una aplicación de exploración web que se puede descargar en tiendas de aplicaciones públicas para su uso en una organización. Cuando se configura con Intune, Managed Browser se puede:
+Entre los exploradores protegidos están Microsoft Edge e Intune Managed Browser. Edge y Managed Browser son aplicaciones de exploración web que se puede descargar en tiendas de aplicaciones públicas para su uso en una organización. Cuando se configuran con Intune, los exploradores protegidos se pueden:
 - Usar para acceder a sitios corporativos y aplicaciones SaaS con inicio de sesión único a través del servicio MyApps, al tiempo que se mantienen los datos web protegidos.
 - Preconfigurar con una lista de direcciones URL y dominios para restringir los sitios a los que el usuario puede ir en el contexto corporativo.
 - Preconfigurar con una página principal y los marcadores que especifique.
 
-Como esta aplicación cuenta con integración con el SDK de Intune, también puede aplicarle directivas de protección de aplicaciones, lo que incluye:
+Como Edge y Managed Browser cuentan con integración con el SDK de Intune, también puede aplicarles directivas de protección de aplicaciones, lo que incluye:
 - Controlar el uso de cortar, copiar y pegar
 - Evitar las capturas de pantalla
 - Asegurarse de que los vínculos a contenido que los usuarios seleccionan se abran solo en otras aplicaciones administradas.
@@ -45,11 +45,11 @@ Puede aplicar esta configuración a:
 - Dispositivos no administrados
 
 Si los usuarios instalan Managed Browser desde la tienda de aplicaciones y no lo administra Intune, se puede utilizar como un explorador web básico, con compatibilidad para el inicio de sesión único a través del sitio de Microsoft MyApps. A los usuarios se les remite directamente al sitio de MyApps, donde pueden ver todas las aplicaciones SaaS aprovisionadas.
-Si Intune no administra Managed Browser, no puede acceder a los datos de otras aplicaciones administradas por Intune. 
+Si Intune no administra Managed Browser o Edge, no puede acceder a los datos de otras aplicaciones administradas por Intune. 
 
 Managed Browser no es compatible con el protocolo de cifrado de Capa de sockets seguros versión 3 (SSLv3).
 
-Puede crear directivas de Managed Browser para los siguientes tipos de dispositivo:
+Puede crear directivas de explorador protegido para los siguientes tipos de dispositivo:
 
 -   Dispositivos que ejecutan Android 4 y versiones posteriores
 
@@ -60,9 +60,9 @@ Puede crear directivas de Managed Browser para los siguientes tipos de dispositi
 >Las versiones anteriores de iOS y Android podrán seguir usando Intune Managed Browser, pero no podrán instalar nuevas versiones de la aplicación y es posible que no puedan tener acceso a todas las funcionalidades de la aplicación. Le recomendamos que actualice la versión del sistema operativo de estos dispositivos a una que sea compatible.
 
 
-Intune Managed Browser admite la apertura de contenido web de [partners de aplicaciones de Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
+Microsoft Edge y Intune Managed Browser admiten la apertura de contenido web de [asociados de aplicaciones de Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
-## <a name="conditional-access-for-the-intune-managed-browser"></a>Acceso condicional de Intune Managed Browser
+## <a name="conditional-access-for-protected-browsers"></a>Acceso condicional para exploradores protegidos
 
 Ahora, Managed Browser es una aplicación de cliente aprobada para el acceso condicional. Esto significa que se puede restringir el acceso de explorador móvil a únicamente las aplicaciones web conectadas a Azure AD donde solo se puede usar Managed Browser, e impedir el acceso desde cualquier otro explorador no protegido, como Safari o Chrome. Esta protección se puede aplicar a recursos de Azure como Exchange Online y SharePoint Online, al Portal de Office e, incluso, a sitios locales que estén expuestos a usuarios externos a través del [proxy de aplicación de Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started). 
 
@@ -104,7 +104,7 @@ El inicio de sesión único en Intune Managed Browser requiere que el dispositiv
 > [!NOTE]
 > El registro de dispositivos consiste en un sencillo registro en el servicio de Azure AD. No se requiere una inscripción de dispositivo completa ni se otorga a TI ningún tipo de privilegio extra en el dispositivo.
 
-## <a name="create-a-managed-browser-app-configuration"></a>Establecimiento de una configuración de aplicaciones en Managed Browser
+## <a name="create-a-protected-browser-app-configuration"></a>Establecimiento de una configuración de aplicaciones de explorador protegido
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
 2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
@@ -112,7 +112,7 @@ El inicio de sesión único en Intune Managed Browser requiere que el dispositiv
 4.  En la hoja **Directivas de configuración de aplicaciones**, elija **Agregar**.
 5.  En la hoja **Agregar directiva de configuración**, escriba un **nombre** y una **descripción** opcional para las opciones de configuración de aplicaciones.
 6.  En **Tipo de inscripción del dispositivo**, elija **Aplicaciones administradas**.
-7.  Elija **Seleccionar la aplicación requerida** y, después, en la hoja **Aplicaciones de destino**, elija **Managed Browser** para iOS, para Android o para ambos.
+7.  Elija **Seleccionar la aplicación requerida** y, después, en la hoja **Aplicaciones de destino**, elija **Managed Browser** o **Edge** para iOS, para Android o para ambos.
 8.  Elija **Aceptar** para volver a la hoja **Agregar directiva de configuración**.
 9.  Elija **Opciones de configuración**. En la hoja **Configuración**, defina los pares de clave y valor para proporcionar configuraciones para Managed Browser. Use las secciones posteriores de este artículo para obtener información sobre los diferentes pares de clave y valor que puede definir.
 10. Cuando termine, elija **Aceptar**.
@@ -124,7 +124,7 @@ El inicio de sesión único en Intune Managed Browser requiere que el dispositiv
 
 ## <a name="assign-the-configuration-settings-you-created"></a>Asignación de las opciones de configuración creadas
 
-Debe asignar la configuración a los grupos de usuarios de Azure AD. Si ese usuario tiene instalada la aplicación Managed Browser, esta se administra mediante la configuración especificada.
+Debe asignar la configuración a los grupos de usuarios de Azure AD. Si ese usuario tiene instalada la aplicación de explorador protegido, esta se administra mediante la configuración especificada.
 
 1. En la hoja **Aplicaciones móviles** del panel de administración de aplicaciones móviles de Intune, elija **Directivas de configuración de aplicaciones**.
 2. En la lista de configuraciones de aplicación, seleccione la que desea asignar.
@@ -132,63 +132,66 @@ Debe asignar la configuración a los grupos de usuarios de Azure AD. Si ese usua
 4. En la hoja **Asignaciones**, seleccione el grupo de Azure AD al que quiere asignar la configuración de aplicación y después elija **Aceptar**.
 
 
-## <a name="how-to-configure-application-proxy-settings-for-the-managed-browser"></a>Cómo configurar el proxy de aplicación para Managed Browser
+## <a name="how-to-configure-application-proxy-settings-for-protected-browsers"></a>Configuración del proxy de aplicación para exploradores protegidos
 
-Intune Managed Browser y el [proxy de aplicación de Azure AD]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) pueden usarse conjuntamente para admitir los siguientes casos de usuarios de dispositivos iOS y Android:
+Microsoft Edge e Intune Managed Browser y [Azure Active Directory Application Proxy]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) pueden usarse conjuntamente para admitir los siguientes casos de usuarios de dispositivos iOS y Android:
 
-- Un usuario descarga e inicia sesión en la aplicación Microsoft Outlook. Las directivas de protección de aplicaciones de Intune se aplican automáticamente. Cifran los datos guardados e impiden que el usuario transfiera archivos corporativos a ubicaciones o aplicaciones no administradas en el dispositivo. Cuando el usuario hace clic en un vínculo a un sitio de intranet en Outlook, puede especificar que el vínculo se abra en la aplicación Managed Browser en lugar de en otro explorador. Managed Browser reconoce que este sitio de intranet se ha expuesto al usuario a través del proxy de aplicación. El usuario se enruta automáticamente a través del proxy de aplicación, para la autenticación con cualquier autenticación multifactor aplicable, y el acceso condicional antes de llegar al sitio de intranet. Este sitio, que anteriormente no se podía encontrar mientras el usuario fuera remoto, ahora es accesible y el vínculo en Outlook funciona según lo previsto.
-- Un usuario remoto abre la aplicación Managed Browser y se desplaza a un sitio de intranet con la dirección URL interna. Managed Browser reconoce que este sitio de intranet se ha expuesto al usuario a través del proxy de aplicación. El usuario se enruta automáticamente a través del proxy de aplicación, para la autenticación con cualquier autenticación multifactor aplicable, y el acceso condicional antes de llegar al sitio de intranet. Este sitio, que anteriormente no se podía encontrar mientras el usuario fuera remoto, ahora es accesible.
+- Un usuario descarga e inicia sesión en la aplicación Microsoft Outlook. Las directivas de protección de aplicaciones de Intune se aplican automáticamente. Cifran los datos guardados e impiden que el usuario transfiera archivos corporativos a ubicaciones o aplicaciones no administradas en el dispositivo. Cuando el usuario hace clic en un vínculo a un sitio de intranet en Outlook, puede especificar que el vínculo se abra en la aplicación de explorador protegido en lugar de en otro explorador. El explorador protegido reconoce que este sitio de intranet se ha expuesto al usuario a través del proxy de aplicación. El usuario se enruta automáticamente a través del proxy de aplicación, para la autenticación con cualquier autenticación multifactor aplicable, y el acceso condicional antes de llegar al sitio de intranet. Este sitio, que anteriormente no se podía encontrar mientras el usuario fuera remoto, ahora es accesible y el vínculo en Outlook funciona según lo previsto.
+- Un usuario remoto abre la aplicación de explorador protegido y se desplaza a un sitio de intranet con la dirección URL interna. El explorador protegido reconoce que este sitio de intranet se ha expuesto al usuario a través del proxy de aplicación. El usuario se enruta automáticamente a través del proxy de aplicación, para la autenticación con cualquier autenticación multifactor aplicable, y el acceso condicional antes de llegar al sitio de intranet. Este sitio, que anteriormente no se podía encontrar mientras el usuario fuera remoto, ahora es accesible.
 
 ### <a name="before-you-start"></a>Antes de empezar
 
 - Configure las aplicaciones internas a través del proxy de aplicación de Azure AD.
     - Para configurar el proxy de aplicación y publicar aplicaciones, vea la [documentación de configuración](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started#how-to-get-started). 
 - Debe usar como mínimo la versión 1.2.0 de la aplicación Managed Browser.
-- Los usuarios de la aplicación Managed Browser tienen una [directiva de protección de aplicaciones de Intune]( app-protection-policy.md) asignada a la aplicación.
+- Los usuarios de la aplicación Managed Browser o Edge tienen una [directiva de protección de aplicaciones de Intune]( app-protection-policy.md) asignada a la aplicación.
 
     > [!NOTE]
-    > Los datos de redireccionamiento actualizados del proxy de la aplicación pueden tardar hasta 24 horas en aplicarse en Managed Browser.
+    > Los datos de redireccionamiento actualizados del proxy de la aplicación pueden tardar hasta 24 horas en aplicarse a Managed Browser y Edge.
 
 
-#### <a name="step-1-enable-automatic-redirection-to-the-managed-browser-from-outlook"></a>Paso 1: Habilitar el redireccionamiento automático de Managed Browser desde Outlook
+#### <a name="step-1-enable-automatic-redirection-to-a-protected-browser-from-outlook"></a>Paso 1: Habilitar el redireccionamiento automático a un explorador protegido desde Outlook
 Outlook debe configurarse con una directiva de protección de aplicaciones que habilite el valor **Restringir contenido web para mostrar en Managed Browser**.
 
-#### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-managed-browser"></a>Paso 2: Asignar una directiva de configuración de aplicaciones para Managed Browser.
-Este procedimiento configura la aplicación Managed Browser para usar el redireccionamiento del proxy de aplicación. Mediante el procedimiento para establecer una configuración de aplicaciones de Managed Browser, proporcione el siguiente par de clave y valor:
+#### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>Paso 2: Asignar una directiva de configuración de aplicaciones para el explorador protegido
+Este procedimiento configura la aplicación Managed Browser o Edge para usar el redireccionamiento del proxy de aplicación. Mediante el procedimiento para establecer una configuración de aplicaciones de Managed Browser o Edge, proporcione el siguiente par de clave y valor:
 
-| Key                                                             | Valor    |
+| Clave                                                             | Valor    |
 |-----------------------------------------------------------------|----------|
 | **com.microsoft.intune.mam.managedbrowser.AppProxyRedirection** | **true** |
 
-Para más información sobre cómo se puede usar Managed Browser y el proxy de aplicación de Azure AD conjuntamente para tener un acceso fluido (y protegido) a las aplicaciones web locales, vea la entrada de blog de Enterprise Mobility + Security [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access) (Juntos mejor: Intune y Azure Active Directory unen fuerzas para mejorar el acceso de usuario).
+Para más información sobre cómo se puede usar Managed Browser, Edge y Azure AD Application Proxy conjuntamente para tener un acceso fluido (y protegido) a las aplicaciones web locales, vea la entrada de blog de Enterprise Mobility + Security [Better together: Intune and Azure Active Directory team up to improve user access](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access) (Juntos mejor: Intune y Azure Active Directory unen fuerzas para mejorar el acceso de usuario).
 
-## <a name="how-to-configure-the-homepage-for-the-managed-browser"></a>Cómo configurar la página principal de Managed Browser
+> [!NOTE]
+> Edge usa los mismos pares de clave y valor que Managed Browser. 
 
-Este valor permite configurar la página principal que ven los usuarios cuando inician Managed Browser o crean una nueva pestaña. Mediante el procedimiento para establecer una configuración de aplicaciones de Managed Browser, proporcione el siguiente par de clave y valor:
+## <a name="how-to-configure-the-homepage-for-a-protected-browser"></a>Configuración de la página principal del explorador protegido
 
-|                                Key                                |                                                           Valor                                                            |
+Este valor permite configurar la página principal que ven los usuarios cuando inician un explorador protegido o crean una pestaña nueva. Mediante el procedimiento para establecer una configuración de aplicaciones de Managed Browser o Edge, proporcione el siguiente par de clave y valor:
+
+|                                Clave                                |                                                           Valor                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | Especifique una dirección URL válida. Las direcciones URL incorrectas se bloquean como medida de seguridad.<br>Ejemplo: `<https://www.bing.com>` |
 
-## <a name="how-to-configure-bookmarks-for-the-managed-browser"></a>Cómo configurar marcadores de Managed Browser
+## <a name="how-to-configure-bookmarks-for-a-protected-browser"></a>Configuración de marcadores para un explorador protegido
 
-Este valor permite configurar un conjunto de marcadores disponible para los usuarios de Managed Browser.
+Este valor permite configurar un conjunto de marcadores disponible para los usuarios de Edge o Managed Browser.
 
 - Los usuarios no pueden eliminar ni modificar estos marcadores
 - Se muestran en la parte superior de la lista. Los marcadores creados por los usuarios aparecen debajo de estos marcadores.
 - Si ha habilitado el redireccionamiento del proxy de aplicación, puede agregar aplicaciones web de proxy de aplicación mediante su dirección URL interna o externa.
 
-Mediante el procedimiento para establecer una configuración de aplicaciones de Managed Browser, proporcione el siguiente par de clave y valor:
+Mediante el procedimiento para establecer una configuración de aplicaciones de Managed Browser o Edge, proporcione el siguiente par de clave y valor:
 
-|                                Key                                 |                                                                                                                                                                                                                                                         Valor                                                                                                                                                                                                                                                          |
+|                                Clave                                 |                                                                                                                                                                                                                                                         Valor                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | El valor de esta configuración es una lista de marcadores. Cada marcador consta del título y de la dirección URL del marcador. Separe el título y la dirección URL con el carácter <strong>&#124;</strong>.<br><br>Ejemplo:<br> `Microsoft Bing|https://www.bing.com`<br><br>To configure multiple bookmarks, separate each pair with the double character, <strong>&#124;&#124;</strong><br><br>Example:<br> `Bing|https://www.bing.com||Contoso|https://www.contoso.com` |
 
-## <a name="how-to-specify-allowed-and-blocked-urls-for-the-managed-browser"></a>Especificación de direcciones URL permitidas y bloqueadas para Managed Browser
+## <a name="how-to-specify-allowed-and-blocked-urls-for-a-protected-browser"></a>Especificación de direcciones URL permitidas y bloqueadas para un explorador protegido
 
-Mediante el procedimiento para establecer una configuración de aplicaciones de Managed Browser, proporcione el siguiente par de clave y valor:
+Mediante el procedimiento para establecer una configuración de aplicaciones de Managed Browser o Edge, proporcione el siguiente par de clave y valor:
 
-|Key|Valor|
+|Clave|Valor|
 |-|-|
 |Elija de entre las siguientes opciones:<br><ul><li>Especifique direcciones URL permitidas (solo se permiten estas direcciones URL; no se puede acceder a ningún otro sitio):<br> **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br></li><li>Especifique direcciones URL bloqueadas (se puede acceder a todos los demás sitios):<br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**</li></ul>|El valor correspondiente de la clave es una lista de direcciones URL. Escriba todas las direcciones URL que quiera permitir o bloquear como un valor único, separadas por un carácter de barra vertical **&#124;**.<br><br>Ejemplos:<br><br>`URL1|URL2|URL3`<br>`http://*.contoso.com/*|https://*.bing.com/*|https://expenses.contoso.com`|
 

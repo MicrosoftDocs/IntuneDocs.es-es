@@ -15,12 +15,12 @@ ms.assetid: ef8008ac-8b85-4bfc-86ac-1f9fcbd3db76
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c871d32fbcdfa089de88ae649c2926d2c839cce2
-ms.sourcegitcommit: 413d271b42a6d4396adc2f749e31eed782aaa9da
+ms.openlocfilehash: d527b36876adf29c12d3577f7dcd09416b4d5a37
+ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/12/2018
-ms.locfileid: "38993724"
+ms.lasthandoff: 08/22/2018
+ms.locfileid: "40255467"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>Adición de aplicaciones de línea de negocio (LOB) de macOS a Microsoft Intune
 
@@ -28,14 +28,15 @@ ms.locfileid: "38993724"
 
 Use la información de este artículo para agregar aplicaciones de línea de negocio de macOS a Microsoft Intune. Debe descargar una herramienta externa para procesar previamente los archivos *.pkg* antes de poder cargar el archivo de línea de negocio en Microsoft Intune. El procesamiento previo de los archivos *.pkg* debe realizarse en un dispositivo macOS.
 
->[!NOTE]
->Si bien los usuarios de dispositivos macOS pueden quitar algunas de las aplicaciones macOS integradas, como Bolsa y Mapas, no pueden usar Intune para volver a implementar esas aplicaciones. Si los usuarios finales eliminan estas aplicaciones, deben ir a la tienda de aplicaciones y reinstalarlas manualmente.
->
->Solo los archivos *.pkg* se pueden usar para cargar aplicaciones de línea de negocio de macOS en Microsoft Intune. No se admite la conversión de otros formatos, como convertir de *.dmg* a *.pkg*.
+> [!NOTE]
+> Si bien los usuarios de dispositivos macOS pueden quitar algunas de las aplicaciones macOS integradas, como Bolsa y Mapas, no pueden usar Intune para volver a implementar esas aplicaciones. Si los usuarios finales eliminan estas aplicaciones, deben ir a la tienda de aplicaciones y reinstalarlas manualmente.
 
-## <a name="step-1---pre-process-your-software-setup-file"></a>Paso 1: Procesamiento previo del archivo de instalación de software
+## <a name="before-your-start"></a>Antes de empezar
 
-Use la herramienta de ajuste de aplicaciones de Intune para Mac para permitir que Microsoft Intune administre las aplicaciones Mac.
+Debe descargar una herramienta externa para procesar previamente los archivos *.pkg* antes de poder cargar el archivo de línea de negocio en Microsoft Intune. El procesamiento previo de los archivos *.pkg* debe realizarse en un dispositivo macOS. Use la herramienta de ajuste de aplicaciones de Intune para Mac para permitir que Microsoft Intune administre las aplicaciones Mac.
+
+> [!IMPORTANT]
+> Solo los archivos *.pkg* se pueden usar para cargar aplicaciones de línea de negocio de macOS en Microsoft Intune. No se admite la conversión de otros formatos, como convertir de *.dmg* a *.pkg*.
 
 1. Descargue y ejecute la [herramienta de ajuste de aplicaciones de Intune para Mac](https://github.com/msintuneappsdk/intune-app-wrapping-tool-mac).
 
@@ -55,7 +56,7 @@ Use la herramienta de ajuste de aplicaciones de Intune para Mac para permitir qu
     - `IntuneAppUtil -r <filename.intunemac> [-v]`<br>
     Este comando extrae los parámetros detectados y la versión del archivo *.intunemac* creado.
 
-## <a name="step-2---specify-the-software-setup-file"></a>Paso 2: Especificación del archivo de instalación de software
+## <a name="step-1---specify-the-software-setup-file"></a>Paso 1: Especificación del archivo de instalación de software
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
 2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
@@ -64,14 +65,14 @@ Use la herramienta de ajuste de aplicaciones de Intune para Mac para permitir qu
 5. Encima de la lista de aplicaciones, elija **Agregar**.
 6. En el panel **Agregar aplicación**, elija **Aplicación de línea de negocio**.
 
-## <a name="step-3---configure-the-app-package-file"></a>Paso 3: Configuración del archivo de paquete de aplicaciones
+## <a name="step-2---configure-the-app-package-file"></a>Paso 2: Configuración del archivo de paquete de aplicaciones
 
 1. En el panel **Agregar aplicación**, elija **Archivo del paquete de aplicaciones**.
 2. En el panel **Archivo del paquete de aplicaciones**, elija el botón Examinar y seleccione un archivo de instalación de macOS con la extensión *.intunemac*.
 3. Cuando termine, elija **Aceptar**.
 
 
-## <a name="step-4---configure-app-information"></a>Paso 4: Configuración de la información de aplicación
+## <a name="step-3---configure-app-information"></a>Paso 3: Configuración de la información de la aplicación
 
 1. En el panel **Agregar aplicación**, elija **Información de la aplicación**.
 2. En el panel **Información de la aplicación**, agregue los datos de su aplicación. Dependiendo de la aplicación que haya elegido, algunos de los valores de este panel pueden haberse rellenado automáticamente:
@@ -89,7 +90,7 @@ Use la herramienta de ajuste de aplicaciones de Intune para Mac para permitir qu
     - **Logotipo**: cargue un icono que esté asociado a la aplicación. Es el icono que se muestra con la aplicación cuando los usuarios examinan el portal de empresa.
 3. Cuando termine, elija **Aceptar**.
 
-## <a name="step-5---finish-up"></a>Paso 5: Finalización
+## <a name="step-4---finish-up"></a>Paso 4: Finalización
 
 1. En el panel **Agregar aplicación**, compruebe que los detalles de la aplicación son correctos.
 2. Elija **Agregar** para cargar la aplicación en Intune.
@@ -99,7 +100,7 @@ La aplicación que ha creado aparece en la lista de aplicaciones, donde puede as
 > [!NOTE]
 > Si el archivo *.pkg* contiene varias aplicaciones o instaladores de aplicaciones, Microsoft Intune solo notifica que la *aplicación* se instaló correctamente cuando todas las aplicaciones instaladas se detectan en el dispositivo.
 
-## <a name="step-6---update-a-line-of-business-app"></a>Paso 6: Actualización de una aplicación de línea de negocio
+## <a name="step-5---update-a-line-of-business-app"></a>Paso 5: Actualización de una aplicación de línea de negocio
 
 [!INCLUDE [shared-proc-lob-updateapp](./includes/shared-proc-lob-updateapp.md)]
 
