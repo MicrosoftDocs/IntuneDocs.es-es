@@ -7,20 +7,20 @@ author: msmimart
 ms.author: mimart
 manager: dougeby
 ms.date: 08/16/2018
-ms.topic: get-started-article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: 4e9dbda4c768bf9963a4ec168d6a613dca197995
-ms.sourcegitcommit: c5cba0f4bf01eb9a9492e4e3fb6cd756f0737057
+ms.custom: intune-azure; get-started
+ms.openlocfilehash: 4189e9357c7ed135ab219b38f22d34a09ebb5318
+ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/17/2018
-ms.locfileid: "40251855"
+ms.lasthandoff: 09/09/2018
+ms.locfileid: "44253687"
 ---
 # <a name="what-are-app-protection-policies"></a>¿Qué son las directivas de protección de aplicaciones?
 
@@ -136,5 +136,5 @@ Por ejemplo, cuando el usuario inicia la aplicación OneDrive con su cuenta prof
 
 [Creación e implementación de directivas de protección de aplicaciones con Microsoft Intune](app-protection-policies.md)
 
-## <a name="see-also"></a>Consulte también
+## <a name="see-also"></a>Vea también
 Las aplicaciones de terceros, como la aplicación móvil de Salesforce, funcionan con Intune de formas específicas para proteger los datos corporativos. Para más información sobre cómo la aplicación de Salesforce funciona con Intune en particular (incluida la configuración de la aplicación de MDM), vea [Salesforce App and Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf) (Aplicación de Salesforce y Microsoft Intune).
