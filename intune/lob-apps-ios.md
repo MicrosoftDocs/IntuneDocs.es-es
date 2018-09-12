@@ -15,12 +15,12 @@ ms.assetid: 099101e8-4b22-40ac-ba19-82ba5c71944c
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9ee132a1b1c79e9829e5d28dc33b5cac2e52c8ac
-ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
+ms.openlocfilehash: 1461089beafd6501d6ebc87ab1a89963fa4aac57
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "40251981"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347780"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>Incorporación de una aplicación de línea de negocio de iOS a Microsoft Intune
 
@@ -35,8 +35,8 @@ Use la información de este artículo para agregar una aplicación de línea de 
 
 1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
 2. Seleccione **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
-3. En el panel **Intune**, seleccione **Aplicaciones móviles**.
-4. En la carga de trabajo **Aplicaciones móviles**, seleccione **Administrar** > **Aplicaciones**.
+3. En el panel **Intune**, seleccione **Aplicaciones cliente**.
+4. En la carga de trabajo **Aplicaciones cliente**, seleccione **Administrar** > **Aplicaciones**.
 5. Encima de la lista de aplicaciones, elija **Agregar**.
 6. En el panel **Agregar aplicación**, seleccione **Aplicación de línea de negocio**.
 

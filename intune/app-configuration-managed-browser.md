@@ -15,12 +15,12 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d39dca2a464886ae6752450636fe25a5f5701858
-ms.sourcegitcommit: 27f365f5e67e83562883e0c1fc9fdfae8fd60ce4
+ms.openlocfilehash: d11356c16965e3ba7631275368c9723a2db0ecc9
+ms.sourcegitcommit: 443b4cb3390da47bf1e497b1f0c0137a5ddda7bd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/21/2018
-ms.locfileid: "40251512"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43675022"
 ---
 # <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Administración del acceso a Internet mediante directivas de explorador protegido con Microsoft Intune
 
@@ -108,7 +108,7 @@ El inicio de sesión único en Intune Managed Browser requiere que el dispositiv
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
 2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
-3.  En la hoja **Aplicaciones móviles** de la lista Administrar, elija **Directivas de configuración de aplicaciones**.
+3.  En la hoja **Aplicaciones cliente** de la lista Administrar, elija **Directivas de configuración de aplicaciones**.
 4.  En la hoja **Directivas de configuración de aplicaciones**, elija **Agregar**.
 5.  En la hoja **Agregar directiva de configuración**, escriba un **nombre** y una **descripción** opcional para las opciones de configuración de aplicaciones.
 6.  En **Tipo de inscripción del dispositivo**, elija **Aplicaciones administradas**.
@@ -126,7 +126,7 @@ El inicio de sesión único en Intune Managed Browser requiere que el dispositiv
 
 Debe asignar la configuración a los grupos de usuarios de Azure AD. Si ese usuario tiene instalada la aplicación de explorador protegido, esta se administra mediante la configuración especificada.
 
-1. En la hoja **Aplicaciones móviles** del panel de administración de aplicaciones móviles de Intune, elija **Directivas de configuración de aplicaciones**.
+1. En la hoja **Aplicaciones cliente** del panel de administración de aplicaciones móviles de Intune, elija **Directivas de configuración de aplicaciones**.
 2. En la lista de configuraciones de aplicación, seleccione la que desea asignar.
 3. En la siguiente hoja, elija **Asignaciones**.
 4. En la hoja **Asignaciones**, seleccione el grupo de Azure AD al que quiere asignar la configuración de aplicación y después elija **Aceptar**.
@@ -156,7 +156,7 @@ Outlook debe configurarse con una directiva de protección de aplicaciones que h
 #### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>Paso 2: Asignar una directiva de configuración de aplicaciones para el explorador protegido
 Este procedimiento configura la aplicación Managed Browser o Edge para usar el redireccionamiento del proxy de aplicación. Mediante el procedimiento para establecer una configuración de aplicaciones de Managed Browser o Edge, proporcione el siguiente par de clave y valor:
 
-| Clave                                                             | Valor    |
+| Key                                                             | Valor    |
 |-----------------------------------------------------------------|----------|
 | **com.microsoft.intune.mam.managedbrowser.AppProxyRedirection** | **true** |
 
@@ -169,7 +169,7 @@ Para más información sobre cómo se puede usar Managed Browser, Edge y Azure A
 
 Este valor permite configurar la página principal que ven los usuarios cuando inician un explorador protegido o crean una pestaña nueva. Mediante el procedimiento para establecer una configuración de aplicaciones de Managed Browser o Edge, proporcione el siguiente par de clave y valor:
 
-|                                Clave                                |                                                           Valor                                                            |
+|                                Key                                |                                                           Valor                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | Especifique una dirección URL válida. Las direcciones URL incorrectas se bloquean como medida de seguridad.<br>Ejemplo: `<https://www.bing.com>` |
 
@@ -183,17 +183,17 @@ Este valor permite configurar un conjunto de marcadores disponible para los usua
 
 Mediante el procedimiento para establecer una configuración de aplicaciones de Managed Browser o Edge, proporcione el siguiente par de clave y valor:
 
-|                                Clave                                 |                                                                                                                                                                                                                                                         Valor                                                                                                                                                                                                                                                          |
+|                                Key                                 |                                                                                                                                                                                                                                                         Valor                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | El valor de esta configuración es una lista de marcadores. Cada marcador consta del título y de la dirección URL del marcador. Separe el título y la dirección URL con el carácter <strong>&#124;</strong>.<br><br>Ejemplo:<br> `Microsoft Bing|https://www.bing.com`<br><br>To configure multiple bookmarks, separate each pair with the double character, <strong>&#124;&#124;</strong><br><br>Example:<br> `Bing|https://www.bing.com||Contoso|https://www.contoso.com` |
+| <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | El valor de esta configuración es una lista de marcadores. Cada marcador consta del título y de la dirección URL del marcador. Separe el título y la dirección URL con el carácter <strong>&#124;</strong>.<br><br>Ejemplo:<br> <code>Microsoft Bing&#124;https://www.bing.com</code><br><br>Para configurar varios marcadores, separe cada par con el carácter doble <strong>&#124;&#124;</strong><br><br>Ejemplo:<br> <code>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com</code> |
 
 ## <a name="how-to-specify-allowed-and-blocked-urls-for-a-protected-browser"></a>Especificación de direcciones URL permitidas y bloqueadas para un explorador protegido
 
 Mediante el procedimiento para establecer una configuración de aplicaciones de Managed Browser o Edge, proporcione el siguiente par de clave y valor:
 
-|Clave|Valor|
+|Key|Valor|
 |-|-|
-|Elija de entre las siguientes opciones:<br><ul><li>Especifique direcciones URL permitidas (solo se permiten estas direcciones URL; no se puede acceder a ningún otro sitio):<br> **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br></li><li>Especifique direcciones URL bloqueadas (se puede acceder a todos los demás sitios):<br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**</li></ul>|El valor correspondiente de la clave es una lista de direcciones URL. Escriba todas las direcciones URL que quiera permitir o bloquear como un valor único, separadas por un carácter de barra vertical **&#124;**.<br><br>Ejemplos:<br><br>`URL1|URL2|URL3`<br>`http://*.contoso.com/*|https://*.bing.com/*|https://expenses.contoso.com`|
+|Elija de entre las siguientes opciones:<br><ul><li>Especifique direcciones URL permitidas (solo se permiten estas direcciones URL; no se puede acceder a ningún otro sitio):<br> **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br></li><li>Especifique direcciones URL bloqueadas (se puede acceder a todos los demás sitios):<br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**</li></ul>|El valor correspondiente de la clave es una lista de direcciones URL. Escriba todas las direcciones URL que quiera permitir o bloquear como un valor único, separadas por un carácter de barra vertical **&#124;**.<br><br>Ejemplos:<br><br><code>URL1&#124;URL2&#124;URL3</code><br><code>http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com</code>|
 
 >[!IMPORTANT]
 >No especifique ambas claves. Si las dos claves están destinadas al mismo usuario, se usa la clave permitida, ya que se trata de la opción más restrictiva.

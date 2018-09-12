@@ -15,12 +15,12 @@ ms.assetid: 4c35a23e-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 59449efd592f3c47bdf2350b495f81c23f442999
-ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
+ms.openlocfilehash: 2d099d049892d71c36e4b01fb1a8af6f7ad25df1
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42751809"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313416"
 ---
 # <a name="enable-ios-device-enrollment-with-apple-school-manager"></a>Habilitación de la inscripción de dispositivos iOS con Apple School Manager
 
@@ -66,7 +66,7 @@ Antes de poder inscribir dispositivos iOS corporativos en Apple School Manager, 
 8. Especifique cómo **Elegir dispositivos**, después proporcione información de los dispositivos y detalles.
 9. Elija **Assign to Server** (Asignar al servidor), elija el &lt;NombreDeServidor&gt; especificado para Microsoft Intune y después elija **Aceptar**.
 
-### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Paso 3. Guarde el identificador de Apple usado para crear este token
+### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Paso 3: Guarde el identificador de Apple usado para crear este token
 
 En Intune en Azure Portal, proporcione el id. de Apple para futuras referencias.
 
@@ -113,7 +113,7 @@ Ahora que ha instalado el token, puede crear un perfil de inscripción para disp
      > [!NOTE]
      > Un dispositivo inscrito sin supervisión solo puede restablecerse a supervisado con Apple Configurator. Para restablecer el dispositivo de esta forma, es necesario conectar un dispositivo iOS a un Mac con un cable USB. Obtenga más información en los documentos de [Apple Configurator](http://help.apple.com/configurator/mac/2.3).
 
-7. Elija si desea o no que la inscripción de dispositivos esté bloqueada con este perfil. **Inscripción bloqueada** deshabilita la configuración de iOS que permite que el perfil de administración se quite del menú **Configuración**. Tras la inscripción de los dispositivos, no se puede cambiar esta configuración sin restablecer el dispositivo a los valores de fábrica. Estos dispositivos deben tener el modo de administración **supervisado** definido en *Sí*. 
+7. Elija si desea o no que la inscripción de dispositivos esté bloqueada con este perfil. **Inscripción bloqueada** deshabilita la configuración de iOS que permite que el perfil de administración se quite del menú **Configuración**. Tras la inscripción del dispositivo, no se puede cambiar esta configuración sin borrar el dispositivo. Estos dispositivos deben tener el modo de administración **supervisado** definido en *Sí*. 
 
 8. Si desea permitir que varios usuarios inicien sesión en iPads inscritos mediante un identificador de Apple administrado, elija **Sí** en **Shared iPad** (esta opción requiere que los modos **Inscribir sin afinidad de usuario** y **Supervisado** se establezcan en **Sí**). Los identificadores de Apple administrados se crean en el portal de Apple School Manager. Obtenga más información sobre [Shared iPad](education-settings-configure-ios-shared.md) y los [requisitos de Shared iPad de Apple](https://help.apple.com/classroom/ipad/2.0/#/cad7e2e0cf56).
 
@@ -126,7 +126,7 @@ Ahora que ha instalado el token, puede crear un perfil de inscripción para disp
 12. Seleccione **Valores del Asistente de configuración** para configurar las siguientes opciones de perfil: ![Personalización del Asistente para configuración](./media/device-enrollment-program-enroll-ios/setupassistantcustom.png).
 
 
-    |                 Configuración                  |                                                                                               Descripción                                                                                               |
+    |                 Setting                  |                                                                                               Descripción                                                                                               |
     |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
     |     <strong>Nombre de departamento</strong>     |                                                             Aparece cuando los usuarios pulsan <strong>Acerca de la configuración</strong> durante la activación.                                                              |
     |    <strong>Teléfono del departamento</strong>     |                                                          Aparece cuando el usuario hace clic en el botón <strong>Necesito ayuda</strong> durante la activación.                                                          |
@@ -179,4 +179,4 @@ Los dispositivos de Apple School Manager administrados por Intune deben tener un
 
 ## <a name="distribute-devices-to-users"></a>Distribuir los dispositivos a los usuarios
 
-Ha habilitado la administración y sincronización entre Apple e Intune, y ha asignado un perfil para permitir que sus dispositivos de Apple School se inscriban. Ahora puede distribuir los dispositivos a los usuarios. Cuando se activa un dispositivo iOS en Apple School Manager, se inscribe para que Intune lo administre. Si el dispositivo se ha activado y está en uso, el perfil no se aplicará hasta que el dispositivo se restablezca a sus valores de fábrica.
+Ha habilitado la administración y sincronización entre Apple e Intune, y ha asignado un perfil para permitir que sus dispositivos de Apple School se inscriban. Ahora puede distribuir los dispositivos a los usuarios. Cuando se activa un dispositivo iOS en Apple School Manager, se inscribe para que Intune lo administre. Si el dispositivo se ha activado y está en uso, el perfil no se aplicará hasta que el dispositivo se borre.

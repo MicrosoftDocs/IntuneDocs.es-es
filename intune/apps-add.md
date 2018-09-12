@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5964ebdbac251468e3bc35c2c35f0bd2e7fddbff
-ms.sourcegitcommit: 1a8b34c7854a575bf6ce59f475c7b718fa038d66
+ms.openlocfilehash: cf6e7098462931000ce4cd5546390d27d68677f1
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/18/2018
-ms.locfileid: "40251884"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330167"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Incorporación de aplicaciones a Microsoft Intune
 
@@ -34,7 +34,7 @@ Los usuarios de aplicaciones y dispositivos de su empresa (empleados de su empre
 
 Intune admite una gran variedad de tipos de aplicaciones. Las opciones disponibles varían para cada tipo de aplicación. Intune permite agregar y asignar los siguientes tipos de aplicación:
 
-| Tipos de aplicación | Instalación | Actualizaciones |
+| Tipos de aplicación | Instalación | Updates |
 |---|---|---|
 | Aplicaciones de la tienda (aplicaciones de la tienda) | Intune instala la aplicación en el dispositivo.  | Las actualizaciones de aplicaciones son automáticas.   |
 | Aplicaciones escritas internamente (línea de negocio)  | Intune instala la aplicación en el dispositivo (el usuario proporciona el archivo de instalación).     | Debe actualizar la aplicación.  |
@@ -62,7 +62,7 @@ En la tabla siguiente se enumeran los tipos de aplicaciones específicas y cómo
 | Aplicación de Android integrada  | Aplicación integrada | Seleccione **Aplicación integrada** como el **tipo de aplicación** y después seleccione la aplicación integrada en la lista de aplicaciones proporcionadas.  |
 | Aplicaciones web  | Aplicación web  | Seleccione **Vínculo web** como el **tipo de aplicación** y escriba una dirección URL válida que apunte a la aplicación web.  |
 
-Puede agregar una aplicación en Microsoft Intune seleccionando **Aplicaciones móviles** > **Aplicaciones** > **Agregar**. Se mostrará el panel **Agregar aplicación** y podrá seleccionar el **tipo de aplicación**. 
+Puede agregar una aplicación en Microsoft Intune seleccionando **Aplicaciones cliente** > **Aplicaciones** > **Agregar**. Se mostrará el panel **Agregar aplicación** y podrá seleccionar el **tipo de aplicación**. 
 
 >[!TIP]
 > Una aplicación de línea de negocio es aquella que se agrega desde un archivo de instalación de la aplicación. Por ejemplo, para instalar una aplicación de línea de negocio de iOS, agregue la aplicación seleccionando **Aplicación de línea de negocio** como el **Tipo de aplicación** en el panel **Agregar aplicación**. Después, seleccione el archivo de paquete de aplicación (extensión .ipa). Estos tipos de aplicaciones normalmente se han escrito internamente.
@@ -148,10 +148,10 @@ Al agregar una aplicación a Intune, tiene la opción de seleccionar la categor�
 
 1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
 2. Seleccione **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
-3. En el panel **Intune**, seleccione **Aplicaciones móviles**.
-4. En el panel de la carga de trabajo **Aplicaciones móviles**, en **Configuración**, elija **Categorías de aplicaciones**.  
+3. En el panel **Intune**, seleccione **Aplicaciones cliente**.
+4. En el panel de la carga de trabajo **Aplicaciones cliente**, en **Configuración**, elija **Categorías de aplicaciones**.  
     El panel **Categorías de aplicaciones** muestra una lista de las categorías actuales. 
-5. Realice cualquiera de las siguientes acciones:
+5. Realice alguna de las acciones siguientes:
     - Para agregar una categoría, en el panel **Crear categoría**, seleccione **Agregar** y escriba un nombre para la categoría.  
     Los nombres solo pueden escribirse en un solo idioma e Intune no los traduce.
     - Para editar una categoría, seleccione los puntos suspensivos (**...** ) situados junto a la categoría y luego seleccione **Anclar al panel** o **Eliminar**.

@@ -15,12 +15,12 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 26117a07e0769033dda573882c3853eb0e3921ff
-ms.sourcegitcommit: 0ac196d1d06f4f52f01610eb26060419d248168b
+ms.openlocfilehash: ec483218cb86426b237c40c8831a2f0880847ade
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "40251795"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347464"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Agregar aplicaciones web a Microsoft Intune
 
@@ -39,8 +39,8 @@ Para agregar una aplicación a Intune como acceso directo a una aplicación de I
 1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
 2. Seleccione **Todos los servicios** > **Intune**.  
     Intune se encuentra en la sección **Supervisión y administración**.
-3. En el panel **Intune**, seleccione **Aplicaciones móviles**.
-4. En el panel de carga de trabajo **Aplicaciones móviles**, en **Administrar**, seleccione **Aplicaciones**.
+3. En el panel **Intune**, seleccione **Aplicaciones cliente**.
+4. En el panel de la carga de trabajo **Aplicaciones cliente**, en **Administrar**, seleccione **Aplicaciones**.
 5. En el panel **Aplicaciones**, seleccione **Agregar**.
 6. En el panel **Agregar aplicación**, en la lista desplegable **Tipo de aplicación**, seleccione el tipo **Vínculo web**.
 7. Seleccione **Configurar**.

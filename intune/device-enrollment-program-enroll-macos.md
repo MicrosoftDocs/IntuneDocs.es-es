@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7b913cc2f667cb2bb16d6f810d7449ce8ee752e8
-ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
+ms.openlocfilehash: 18b4ab35627e1ccb694104f3f5800e5fb07dd1c7
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42751741"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313433"
 ---
 # <a name="automatically-enroll-macos-devices-with-apples-device-enrollment-program"></a>Inscripción automática de dispositivos macOS con el Programa de inscripción de dispositivos de Apple
 
@@ -90,7 +90,7 @@ Use el portal de DEP de Apple para crear un token de DEP. También puede usar el
 
    En el portal de Apple, vaya a **Programas de implementación** &gt; **Programa de inscripción de dispositivos** &gt; **View Assignment History** (Ver historial de asignaciones) para ver una lista de dispositivos y su asignación de servidor MDM.
 
-### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Paso 3. Guarde el identificador de Apple usado para crear este token.
+### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>Paso 3: Guarde el identificador de Apple usado para crear este token.
 
 En Intune en Azure Portal, proporcione el id. de Apple para futuras referencias.
 
@@ -119,7 +119,7 @@ Ahora que ha instalado el token, puede crear un perfil de inscripción para disp
 
     - **Inscribir sin afinidad de usuario**: seleccione esta opción para dispositivos no afiliados con un usuario único. Use esta opción para dispositivos que realizan tareas sin tener acceso a datos de usuario local. Las aplicaciones como la aplicación de portal de empresa no funcionan.
 
-6. Elija **Configuración de administración de dispositivos** y elija si desea o no que la inscripción de dispositivos esté bloqueada con este perfil. **Inscripción bloqueada** deshabilita la configuración de macOS que permite que el perfil de administración se quite del menú **Preferencias del sistema** o a través del **Terminal**. Tras la inscripción de los dispositivos, no se puede cambiar esta configuración sin restablecer el dispositivo a los valores de fábrica.
+6. Elija **Configuración de administración de dispositivos** y elija si desea o no que la inscripción de dispositivos esté bloqueada con este perfil. **Inscripción bloqueada** deshabilita la configuración de macOS que permite que el perfil de administración se quite del menú **Preferencias del sistema** o a través del **Terminal**. Tras la inscripción del dispositivo, no se puede cambiar esta configuración sin borrar el dispositivo.
 
     ![Captura de pantalla de Configuración de administración de dispositivos.](./media/device-enrollment-program-enroll-macos/devicemanagementsettingsblade-macos.png)
  
@@ -128,13 +128,14 @@ Ahora que ha instalado el token, puede crear un perfil de inscripción para disp
 8. Seleccione **Valores del Asistente de configuración** para configurar las siguientes opciones de perfil: ![Personalización del Asistente para configuración](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png).
 
     | Configuración de departamento | Descripción |
-    |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+    |---|---|
     | <strong>Nombre de departamento</strong> | Aparece cuando los usuarios pulsan <strong>Acerca de la configuración</strong> durante la activación. |
-    |    <strong>Teléfono del departamento</strong>     |                                                          Aparece cuando el usuario hace clic en el botón <strong>Necesito ayuda</strong> durante la activación. |
+    | <strong>Teléfono del departamento</strong> | Aparece cuando el usuario hace clic en el botón <strong>Necesito ayuda</strong> durante la activación. |
 
-    Cuando el usuario configura el dispositivo, es posible mostrar u ocultar varias pantallas del asistente de configuración.
-    - Si elige **Ocultar**, la pantalla no se mostrará durante la configuración. Después de configurar el dispositivo, el usuario seguirá teniendo la posibilidad de ir al menú **Ajustes** para configurar la característica.
-    - Si elige **Mostrar**, la pantalla se mostrará durante la configuración. A veces, el usuario puede omitir la pantalla sin realizar ninguna acción. Sin embargo, posteriormente podrá ir al menú **Ajustes** del dispositivo para configurar la característica. 
+  Cuando el usuario configura el dispositivo, es posible mostrar u ocultar varias pantallas del asistente de configuración.
+  - Si elige **Ocultar**, la pantalla no se mostrará durante la configuración. Después de configurar el dispositivo, el usuario seguirá teniendo la posibilidad de ir al menú **Ajustes** para configurar la característica.
+  - Si elige **Mostrar**, la pantalla se mostrará durante la configuración. A veces, el usuario puede omitir la pantalla sin realizar ninguna acción. Sin embargo, posteriormente podrá ir al menú **Ajustes** del dispositivo para configurar la característica. 
+
 
     | Configuración de pantallas del asistente | Si elige **Mostrar**, durante la configuración se producirá lo siguiente en el dispositivo: |
     |------------------------------------------|------------------------------------------|
@@ -152,6 +153,7 @@ Ahora que ha instalado el token, puede crear un perfil de inscripción para disp
     | <strong>Diagnósticos de iCloud</strong> | Conceda al usuario la opción de enviar datos de diagnóstico de iCloud a Apple. |
     | <strong>Registro</strong>| Establezca que el usuario registre el dispositivo de manera obligatoria. |
 
+   
 
 10. Elija **Aceptar**.
 
@@ -172,7 +174,7 @@ Debe asignar un perfil del Programa de inscripción a los dispositivos para pode
 
 1. En Intune en Azure Portal, seleccione **Inscripción de dispositivos** > **Inscripción de Apple** > **Tokens del programa de inscripción** > Elija un token de la lista.
 2. Elija **Dispositivos** > Elija los dispositivos de la lista > **Asignar perfil**.
-3. En **Asignar perfil**, elija un perfil para los dispositivos y después seleccione **Asignar**.
+3. En **Asignar perfil**, elija un perfil para los dispositivos y seleccione **Asignar**.
 
 ### <a name="assign-a-default-profile"></a>Asignación de un perfil predeterminado
 
@@ -182,7 +184,7 @@ Puede elegir un perfil de iOS o macOS predeterminado para aplicarlo a todos los 
 2. Elija **Establecer perfil predeterminado**, seleccione un perfil en la lista desplegable y después seleccione **Guardar**. Este perfil se aplicará a todos los dispositivos que se inscriben en el token.
 
 ## <a name="distribute-devices"></a>Distribuir los dispositivos
-Ha habilitado la administración y sincronización entre Apple e Intune, y ha asignado un perfil para permitir que sus dispositivos de DEP se inscriban. Ahora puede distribuir los dispositivos a los usuarios. Los dispositivos con afinidad de usuario necesitan que a cada usuario se le asigne una licencia de Intune. Los dispositivos sin afinidad de usuario necesitan una licencia de dispositivo. Un dispositivo activado no puede aplicar un perfil de inscripción hasta que el dispositivo se haya restablecido a la configuración de fábrica.
+Ha habilitado la administración y sincronización entre Apple e Intune, y ha asignado un perfil para permitir que sus dispositivos de DEP se inscriban. Ahora puede distribuir los dispositivos a los usuarios. Los dispositivos con afinidad de usuario necesitan que a cada usuario se le asigne una licencia de Intune. Los dispositivos sin afinidad de usuario necesitan una licencia de dispositivo. Un dispositivo activado no puede aplicar un perfil de inscripción hasta que se haya borrado.
 
 ## <a name="renew-a-dep-token"></a>Renovación del token de DEP  
 1. Vaya a deploy.apple.com.  

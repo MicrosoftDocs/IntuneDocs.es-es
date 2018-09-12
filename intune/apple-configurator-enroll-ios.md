@@ -15,20 +15,20 @@ ms.assetid: 671e4d76-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b7cff6c777de4a35aa6825d1d37fdd0c2f2d0b72
-ms.sourcegitcommit: 165c1e48891e386f9f75b0ef7a6826b67695dbb7
+ms.openlocfilehash: 5653e5fda04295041ebc549977007e7060b5508b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/23/2018
-ms.locfileid: "42751724"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312687"
 ---
 # <a name="enroll-ios-devices-with-apple-configurator"></a>Inscribir dispositivos iOS con Apple Configurator
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune permite la inscripción de dispositivos iOS con la herramienta [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344) desde un equipo Mac. La inscripción con Apple Configurator requiere que conecte mediante USB cada dispositivo iOS a un equipo Mac para configurar la inscripción corporativa. Puede inscribir dispositivos en Intune con Apple Configurator de dos maneras:
-- **Inscripción con el Asistente de configuración**: restablece la configuración de fábrica del dispositivo y lo prepara para la inscripción mediante el Asistente de configuración.
-- **Inscripción directa**: no restablece la configuración de fábrica del dispositivo y lo inscribe mediante la configuración de iOS. Este método solo admite dispositivos **sin afinidad de usuario**.
+- **Inscripción con el Asistente de configuración**: borra el dispositivo y lo prepara para la inscripción mediante el Asistente de configuración.
+- **Inscripción directa**: no borra el dispositivo y lo inscribe mediante la configuración de iOS. Este método solo admite dispositivos **sin afinidad de usuario**.
 
 No se pueden usar los métodos de inscripción de Apple Configurator con el [administrador de inscripción de dispositivos](device-enrollment-manager-enroll.md).
 
@@ -134,7 +134,7 @@ Los dispositivos ya están listos para la inscripción corporativa. Apague los d
 Una vez que los usuarios reciban sus dispositivos, deberán completar el Asistente de configuración. Los dispositivos configurados con afinidad de usuario pueden instalar y ejecutar la aplicación del Portal de empresa para descargar aplicaciones y administrar dispositivos.
 
 ## <a name="direct-enrollment"></a>Inscripción directa
-Cuando inscribe dispositivos iOS directamente con Apple Configurator, puede inscribir un dispositivo sin adquirir su número de serie. También puede nombrar el dispositivo con fines de identificación antes de que Intune capture el nombre del dispositivo durante la inscripción. No se admite la aplicación de portal de empresa para dispositivos inscritos directamente. Este método no realiza un restablecimiento de fábrica del dispositivo.
+Cuando inscribe dispositivos iOS directamente con Apple Configurator, puede inscribir un dispositivo sin adquirir su número de serie. También puede nombrar el dispositivo con fines de identificación antes de que Intune capture el nombre del dispositivo durante la inscripción. No se admite la aplicación de portal de empresa para dispositivos inscritos directamente. Con este método no se borra el dispositivo.
 
 Las aplicaciones que requieren la afiliación de un usuario no se pueden instalar, incluida la aplicación del Portal de empresa cuando se usa para instalar aplicaciones de línea de negocio.
 

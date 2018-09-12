@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2c5203256a17065331f9d75c9315471e41508454
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: aebfea2f52540b4193811121334e3cebf916175b
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255377"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330150"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>¿Qué es la administración de aplicaciones de Microsoft Intune?
 
@@ -38,7 +38,7 @@ Intune ofrece diversas funcionalidades para ayudarle a conseguir las aplicacione
 
 ## <a name="app-management-capabilities-by-platform"></a>Funcionalidades de administración de aplicaciones por plataforma
 
-|  | Android | iOS | macOS | Windows 10 | Windows Phone 8,1 |
+|  | Android | iOS | macOS | Windows 10 | Windows Phone 8,1 |
 |-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
 | Agregar y asignar aplicaciones a dispositivos y usuarios | Sí | Sí | Sí | Sí | Sí |
 | Asignar aplicaciones a dispositivos no inscritos en Intune | Sí | Sí | No | No | No |
@@ -61,18 +61,18 @@ Intune ofrece diversas funcionalidades para ayudarle a conseguir las aplicacione
 
 ## <a name="get-started"></a>Introducción
 
-Puede encontrar la mayoría de la información relacionada con las aplicaciones en la carga de trabajo **Mobile Apps**, a la que puede acceder haciendo lo siguiente:
+Puede encontrar la mayoría de la información relacionada con las aplicaciones en la carga de trabajo **Aplicaciones cliente**, a la que puede acceder haciendo lo siguiente:
 
 1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
 2. Seleccione **Todos los servicios** > **Intune**.  
     Intune se encuentra en la sección **Supervisión y administración**.
-3. En el panel **Microsoft Intune**, seleccione **Aplicaciones móviles**.
+3. En el panel **Microsoft Intune**, seleccione **Aplicaciones cliente**.
 
     ![Panel de carga de trabajo "Mobile apps"](./media/apps-workload.png)
 
-Las cuatro secciones siguientes describen las opciones disponibles en el panel **Aplicaciones móviles**.
+Las cuatro secciones siguientes describen las opciones disponibles en el panel **Aplicaciones cliente**.
 
-### <a name="manage"></a>Administración
+### <a name="manage"></a>Administrar
 - **Aplicaciones**: seleccione esta opción para agregar, ver, asignar y supervisar las aplicaciones que usan los trabajadores. Para obtener más información, vea:
     - [Agregar aplicaciones](apps-add.md).
     - [Asignar aplicaciones](apps-deploy.md).
@@ -90,7 +90,7 @@ Las cuatro secciones siguientes describen las opciones disponibles en el panel *
 
 Para más información sobre esta sección, vea [Administración de aplicaciones](app-management.md).
 
-### <a name="monitor"></a>Monitor
+### <a name="monitor"></a>Supervisión
 - **Licencias de aplicaciones**: vea, asigne y supervise las aplicaciones compradas por volumen de las tiendas de aplicaciones. Para obtener más información, vea:
     - [Aplicaciones de programa compradas por volumen de iOS](vpp-apps-ios.md).
     - [Aplicaciones adquiridas por volumen de la Microsoft Store para Empresas](windows-store-for-business.md).

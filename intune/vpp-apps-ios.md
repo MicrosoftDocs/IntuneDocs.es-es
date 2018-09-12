@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2018
+ms.date: 08/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 115486f02a86616fdf2c340fa7e0e2ff6e505afa
-ms.sourcegitcommit: 973a06f4a35b74314fece2bae17dd6885b4211c3
+ms.openlocfilehash: cbe9f28b66031f6eddef4804c157f01ca79ad81d
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42823076"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347525"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Administrar aplicaciones de iOS compradas a través de un programa de compras por volumen con Microsoft Intune
 
@@ -83,9 +83,9 @@ Asegúrese de que cuando configure un dispositivo para un nuevo usuario de Intun
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
 2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
-1.  En el panel **Intune**, elija **Aplicaciones móviles** > **Tokens de VPP de iOS** en **Configuración**.
-2.  En la lista del panel de tokens del VPP, seleccione **Crear**.
-4. En el panel **Crear token de VPP**, especifique la información siguiente:
+3.  En el panel **Intune**, elija **Aplicaciones cliente** > **Tokens de VPP de iOS** en **Configuración**.
+4.  En la lista del panel de tokens del VPP, seleccione **Crear**.
+5. En el panel **Crear token de VPP**, especifique la información siguiente:
     - **Archivo de token de VPP**: si aún no lo ha hecho, regístrese en el Programa de compras por volumen para empresas o el Programa para educación. Después de registrarse, descargue el token de VPP de Apple para la cuenta y selecciónelo aquí.
     - **Id. de Apple**: escriba el identificador de Apple de la cuenta asociada con el programa de compras por volumen.
     - **País o región**: seleccione el país de la tienda del VPP.  Intune sincroniza las aplicaciones de VPP para todas las configuraciones regionales desde la instancia de App Store del país de VPP especificada.
@@ -93,9 +93,10 @@ Asegúrese de que cuando configure un dispositivo para un nuevo usuario de Intun
         > Al cambiar el país, los metadatos de las aplicaciones se actualizarán y almacenarán la dirección URL en la siguiente sincronización con el servicio de Apple para las aplicaciones creadas con ese token. La aplicación no se actualizará si no existe en la tienda del nuevo país.
 
     - **Tipo de cuenta de VPP**: elija **Empresa** o **Educación**.
-    - **Actualizaciones automáticas de la aplicación**: Active la opción para habilitar las actualizaciones automáticas. Si está habilitada, Intune actualiza todas las aplicaciones compradas para el token especificado a través del servicio de Intune cuando se registra el dispositivo.
-Se detectarán las actualizaciones de la aplicación de VPP dentro del App Store y se insertarán automáticamente en el dispositivo cuando este se registre.
-4. Cuando haya terminado, seleccione **Crear**.
+    - **Actualizaciones automáticas de la aplicación**: Active la opción para habilitar las actualizaciones automáticas. Cuando se habilite, Intune detectará las actualizaciones de la aplicación de VPP dentro de la App Store y las insertará automáticamente en el dispositivo cuando este se registre.
+        > [!NOTE]
+        > Las actualizaciones de aplicaciones automáticas funcionan para las aplicaciones con licencia de dispositivo y usuario para iOS versión 11.0 y versiones posteriores.
+6. Cuando haya terminado, seleccione **Crear**.
 
 El token se muestra en el panel de la lista de tokens.
 
@@ -103,7 +104,7 @@ Puede sincronizar los datos que tiene Apple con Intune en cualquier momento al e
 
 ## <a name="to-assign-a-volume-purchased-app"></a>Para asignar una aplicación comprada por volumen
 
-1.  En el panel **Intune**, elija **Aplicaciones móviles** > **Aplicaciones** en **Administrar**.
+1.  En el panel **Intune**, elija **Aplicaciones cliente** > **Aplicaciones** en **Administrar**.
 2.  En el panel de la lista de aplicaciones, elija la aplicación que quiera asignar y elija **Asignaciones**.
 3.  En el panel ***Nombre de la aplicación*** - **Asignaciones**, elija **Agregar grupo** y, en el panel **Agregar grupo**, elija un **Tipo de asignación** y los grupos de dispositivos o de usuarios de Azure AD a los que quiera asignar la aplicación.
 5.  Para cada grupo que ha seleccionado, pulse las opciones siguientes:
@@ -121,13 +122,13 @@ El usuario final recibirá solicitudes para que instale la aplicación de VPP en
 
 | # | Escenario                                | Invitar al programa VPP de Apple                              | Solicitud de instalación de la aplicación | Solicitud del ID de Apple |
 |---|--------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------|-----------------------------------|
-| 1 | BYOD: usuario con licencia                             | S                                                                                               | S                                           | S                                 |
-| 2 | Corp: usuario con licencia (dispositivo no supervisado)     | S                                                                                               | S                                           | S                                 |
-| 3 | Corp: usuario con licencia (dispositivo supervisado)         | S                                                                                               | No                                           | S                                 |
-| 4 | BYOD: dispositivo con licencia                           | No                                                                                               | S                                           | No                                 |
-| 5 | Corp: dispositivo con licencia (dispositivo no supervisado)                           | No                                                                                               | S                                           | No                                 |
-| 6 | Corp: dispositivo con licencia (dispositivo supervisado)                           | No                                                                                               | No                                           | No                                 |
-| 7 | Pantalla completa (dispositivo supervisado): dispositivo con licencia | No                                                                                               | No                                           | No                                 |
+| 1 | BYOD: usuario con licencia                             | esté                                                                                               | esté                                           | esté                                 |
+| 2 | Corp: usuario con licencia (dispositivo no supervisado)     | esté                                                                                               | esté                                           | esté                                 |
+| 3 | Corp: usuario con licencia (dispositivo supervisado)         | esté                                                                                               | N                                           | esté                                 |
+| 4 | BYOD: dispositivo con licencia                           | N                                                                                               | esté                                           | N                                 |
+| 5 | Corp: dispositivo con licencia (dispositivo no supervisado)                           | N                                                                                               | esté                                           | N                                 |
+| 6 | Corp: dispositivo con licencia (dispositivo supervisado)                           | N                                                                                               | N                                           | N                                 |
+| 7 | Pantalla completa (dispositivo supervisado): dispositivo con licencia | N                                                                                               | N                                           | N                                 |
 | 8 | Pantalla completa (dispositivo supervisado): usuario con licencia   | --- | ---                                          | ---                                |
 
 > [!Note]  
@@ -153,9 +154,17 @@ Para revocar la licencia de todas las aplicaciones de VPP de un token de VPP det
 
 Puede renovar un token de PCV de Apple mediante la descarga de un nuevo token desde el portal del Programa de Compras por Volumen de Apple y la actualización del token existente en Intune.
 
-## <a name="further-information"></a>Más información
+## <a name="deleting-an-ios-vpp-app"></a>Eliminación de una aplicación VPP de iOS
+
+En estos momentos, no se puede eliminar una aplicación VPP de iOS de Microsoft Intune.
+
+## <a name="additional-information"></a>Información adicional
 
 Si un usuario con un dispositivo válido intenta primero instalar una aplicación de VPP en un dispositivo, se le pedirá que se una al Programa de Compras por Volumen de Apple. Debe unirse para poder continuar con la instalación de la aplicación. La invitación para unirse al Programa de Compras por Volumen de Apple requiere que el usuario pueda usar la aplicación iTunes en el dispositivo iOS. Si ha configurado una directiva para deshabilitar la aplicación iTunes Store, las licencias de aplicaciones VPP basadas en usuario no funcionan. La solución es quitar la directiva para permitir la aplicación iTunes o usar licencias basadas en dispositivos.
+
+Apple proporciona asistencia directa para crear y renovar tokens de VPP. Para obtener más información, vea el artículo [Distribuir contenidos a usuarios con el Programa de Compras por Volumen (PCV)](https://go.microsoft.com/fwlink/?linkid=2014661) de la documentación de Apple. 
+
+Si en el portal de Intune se indica **Assigned to external MDM** (Asignado a una MDM externa), usted (el administrador) debe quitar el token de VPP de la MDM externa antes de usar el token de VPP en Intune.
 
 ## <a name="frequently-asked-questions"></a>Preguntas más frecuentes
 

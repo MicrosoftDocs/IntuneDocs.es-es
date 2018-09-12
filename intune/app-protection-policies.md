@@ -15,12 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a66ed41442e89ed40850f5b9cd56cbc004a43d0
-ms.sourcegitcommit: 8b4f5685dc7f41f5e967a8f9d0627707a36dbe93
+ms.openlocfilehash: 83320c78d461981f1bfff52d2fddf4f121a88b8c
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40251673"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329672"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Creación y asignación de directivas de protección de aplicaciones
 
@@ -37,7 +37,7 @@ Si desea acceder a una lista de aplicaciones compatibles con MAM, vea la [lista 
 Para obtener información acerca de cómo agregar aplicaciones de línea de negocio (LOB) de su organización a Microsoft Intune para prepararse para las directivas de protección de aplicaciones, consulte [Incorporación de aplicaciones a Microsoft Intune](apps-add.md).
 
 ##  <a name="create-an-app-protection-policy"></a>Crear directivas de protección de aplicaciones
-1. En la carga de trabajo **Aplicaciones móviles**, seleccione **Directivas de protección de aplicaciones** en la sección **Administrar**. Al seleccionar esa opción, se abrirán los detalles de **Directivas de protección de aplicaciones**, donde creará nuevas directivas y editará las existentes.
+1. En la carga de trabajo **Aplicaciones cliente**, seleccione **Directivas de protección de aplicaciones** en la sección **Administrar**. Al seleccionar esa opción, se abrirán los detalles de **Directivas de protección de aplicaciones**, donde creará nuevas directivas y editará las existentes.
 2. Elija **Agregar una directiva**.
 
    ![Captura de pantalla de la hoja "Agregar directiva"](./media/app-protection-add-policy.png)
@@ -62,7 +62,7 @@ Para obtener información acerca de cómo agregar aplicaciones de línea de nego
 8. Seleccione **Aceptar** para guardar esta configuración. De esta forma, volverá a la hoja **Agregar directiva**.
 9. Seleccione **Crear** para crear la directiva y guardar la configuración.
 
-Cuando termine de crear una directiva como se describe en el procedimiento anterior, esta no se implementará en ningún usuario. Para implementar una directiva, consulte [Implementar una directiva para los usuarios](app-protection-policies.md#deploy-a-policy-to-users).
+Cuando termine de crear una directiva como se describe en el procedimiento anterior, no se implementará en ningún usuario. Para implementar una directiva, consulte [Implementar una directiva para los usuarios](app-protection-policies.md#deploy-a-policy-to-users).
 
 ## <a name="deploy-a-policy-to-users"></a>Implementar una directiva para los usuarios
 
@@ -125,7 +125,7 @@ En muchas organizaciones es habitual permitir que los usuarios finales puedan us
 
 Dado que las directivas de protección de aplicaciones de Intune están destinadas a la identidad de un usuario, la configuración de protección de un usuario suele aplicarse tanto a los dispositivos inscritos (administrados con MDM) como a los dispositivos no inscritos (sin MDM). Por lo tanto, puede destinar una directiva de protección de aplicaciones de Intune a dispositivos iOS y Android inscritos y no inscritos de Intune. Puede tener una directiva de protección para los dispositivos no administrados a la que se apliquen unos controles de prevención de pérdida de datos (DLP) estrictos y una directiva de protección independiente para los dispositivos administrados con MDM en la que los controles DLP pueden ser un poco menos restrictivos. 
 
-Para crear estas directivas, vaya a **Aplicaciones móviles** > **Directivas de protección de aplicaciones** en la consola de Intune y haga clic en **Agregar una directiva**. También puede editar una directiva de protección de aplicaciones existente. Si quiere que la directiva de protección de aplicaciones se aplique a los dispositivos administrados y a los no administrados, confirme que la opción **Destinar a todos los tipos de aplicaciones** esté establecida en **Sí**, que es el valor predeterminado. Si quiere efectuar una asignación granular según el estado de administración, establezca la opción **Destinar a todos los tipos de aplicaciones** en **No**. 
+Para crear estas directivas, vaya a **Aplicaciones cliente** > **Directivas de protección de aplicaciones** en la consola de Intune y haga clic en **Agregar una directiva**. También puede editar una directiva de protección de aplicaciones existente. Si quiere que la directiva de protección de aplicaciones se aplique a los dispositivos administrados y a los no administrados, confirme que la opción **Destinar a todos los tipos de aplicaciones** esté establecida en **Sí**, que es el valor predeterminado. Si quiere efectuar una asignación granular según el estado de administración, establezca la opción **Destinar a todos los tipos de aplicaciones** en **No**. 
 
 Para que las aplicaciones de iOS se consideren "Administradas", debe implementarse el valor de la directiva de configuración **IntuneMAMUPN** en cada aplicación. Para más información, vea [Administración de transferencias de datos entre aplicaciones iOS en Microsoft Intune](https://docs.microsoft.com/en-us/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
 
@@ -141,6 +141,6 @@ Para ver una lista completa de las configuraciones de directivas para iOS y Andr
 ## <a name="next-steps"></a>Pasos siguientes
 [Supervisar el estado del cumplimiento y del usuario](app-protection-policies-monitor.md)
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 * [What to expect when your Android app is managed by app protection policies](app-protection-enabled-apps-android.md) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)
 * [What to expect when your iOS app is managed by app protection policies](app-protection-enabled-apps-ios.md) (Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones)
