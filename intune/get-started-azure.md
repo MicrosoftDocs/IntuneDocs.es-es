@@ -15,12 +15,12 @@ ms.assetid: 917c0eed-96d0-49d8-8db8-a6ba13ad0e1f
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 859194b364a64854922993d2d798f318b260fc80
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 4e070e80bb9575154aded12f0992d04bd7a4718f
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31836343"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329961"
 ---
 # <a name="getting-started-with-microsoft-intune-in-the-azure-portal"></a>Introducción a Microsoft Intune en Azure Portal
 
@@ -53,7 +53,7 @@ Esta funcionalidad será más importante después de agregar más contenido a In
 
 ## <a name="using-services"></a>Usar servicios
 
-Cuando abra Intune o cualquier otro servicio en Azure, dicho servicio se mostrará en un **panel**. Algunas de las primeras cargas de trabajo que usa en Intune, como **Usuarios**, **Grupos** y **Aplicaciones móviles** se mostrarán en un panel de pantalla completa. Al seleccionar la carga de trabajo, el panel se abre ocupando toda la página. Los demás paneles emergen del lado izquierdo del panel al abrirlos y vuelven a quedar por debajo del panel principal al contraerlos.
+Cuando abra Intune o cualquier otro servicio en Azure, dicho servicio se mostrará en un **panel**. Algunas de las primeras cargas de trabajo que se usan en Intune, como **Usuarios**, **Grupos** y **Aplicaciones cliente**, se muestran en un panel de pantalla completa. Al seleccionar la carga de trabajo, el panel se abre ocupando toda la página. Los demás paneles emergen del lado izquierdo del panel al abrirlos y vuelven a quedar por debajo del panel principal al contraerlos.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

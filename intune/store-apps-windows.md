@@ -15,12 +15,12 @@ ms.assetid: 07241b6d-86d8-4abb-83a2-3fc5feae5788
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c7a47063631ef3d5195dec2e91523772adb4e34c
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 990226cba088585021db691753c6a3a8063927d3
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224269"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347260"
 ---
 # <a name="add-microsoft-store-apps-to-microsoft-intune"></a>Agregar aplicaciones de Microsoft Store a Microsoft Intune
 
@@ -34,8 +34,8 @@ Puede agregar una aplicación de Microsoft Store a Intune si hace lo siguiente:
 1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
 2. Seleccione **Todos los servicios** > **Intune**.  
     Intune se encuentra en la sección **Supervisión y administración**.
-3. En el panel **Intune**, seleccione **Aplicaciones móviles**.
-4. En el panel de carga de trabajo **Aplicaciones móviles**, en **Administrar**, seleccione **Aplicaciones**.
+3. En el panel **Intune**, seleccione **Aplicaciones cliente**.
+4. En el panel de la carga de trabajo **Aplicaciones cliente**, en **Administrar**, seleccione **Aplicaciones**.
 5. En el panel **Aplicaciones**, seleccione **Agregar**.
 6. En el panel **Agregar aplicación**, seleccione un **Tipo de aplicación** **Windows** y luego seleccione **Información de la aplicación**.
 7. En el panel **Información de la aplicación**, agregue la información de la aplicación. Según la aplicación que haya elegido, algunos de los valores de este panel pueden haberse rellenado automáticamente:

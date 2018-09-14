@@ -5,24 +5,25 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 5/1/2018
+ms.date: 6/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 18f86580fc4c80fade7aeaa9678e9d8edac9a53e
-ms.sourcegitcommit: b57be56524ddb5026fab94f7638dc516ed118325
+ms.openlocfilehash: 825ceb1eee8f6fdd38f8a203324ce3cad7291918
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43317986"
 ---
 # <a name="customize-devices-running-windows-holographic-with-intune"></a>Personalizar dispositivos que ejecutan Windows Holographic con Intune
 
 Microsoft Intune es compatible con dispositivos que ejecutan Windows Holographic for Business, como [Microsoft HoloLens](https://docs.microsoft.com/en-us/hololens/).
 
-Para administrar dispositivos que ejecutan Windows Holographic con Microsoft Intune, debe crear un perfil de actualización de edición. Este perfil de actualización actualiza los dispositivos de Windows Holographic a Windows Holographic for Business. Para Microsoft HoloLens, puede adquirir Commercial Suite para obtener la licencia necesaria para la actualización. Para obtener más información, consulte [Upgrade devices running Windows Holographic to Windows Holographic for Business](holographic-upgrade.md) (Actualizar dispositivos que ejecutan Windows Holographic a Windows Holographic for Business).
+Para administrar dispositivos que ejecutan Windows Holographic con Microsoft Intune, debe crear un perfil de actualización de edición. Este perfil de actualización actualiza los dispositivos de Windows Holographic a Windows Holographic for Business. Para Microsoft HoloLens, puede comprar Commercial Suite para obtener la licencia necesaria para la actualización. Para obtener más información, consulte [Upgrade devices running Windows Holographic to Windows Holographic for Business](holographic-upgrade.md) (Actualizar dispositivos que ejecutan Windows Holographic a Windows Holographic for Business).
 
 Para ayudar a administrar y personalizar los dispositivos con Windows Holographic for Business, puede usar las tareas de este artículo. Por ejemplo, puede administrar actualizaciones de software, configurar opciones de VPN, etc.
 
@@ -30,7 +31,7 @@ Para ayudar a administrar y personalizar los dispositivos con Windows Holographi
 
 Azure Active Directory (AD) es un excelente recurso para ayudar a administrar y controlar los dispositivos que ejecutan Windows Holographic for Business. Con Intune y Azure AD, puede: 
 
-- **[Configurar dispositivos unidos a Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup)**: en Azure Active Directory (AD), puede agregar los dispositivos de Windows 10 de trabajo, incluidos aquellos que ejecutan Windows Holographic for Business. Esta característica permite a Azure AD controlar el dispositivo. Ayuda a garantizar que los usuarios accedan a los recursos de empresa desde dispositivos que cumplen los estándares de seguridad y cumplimiento.
+- **[Configurar dispositivos unidos a Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup)**: en Azure Active Directory (AD), puede agregar los dispositivos de Windows 10 de trabajo, incluidos aquellos que ejecutan Windows Holographic for Business. Esta característica permite a Azure AD controlar el dispositivo. Ayuda a confirmar que los usuarios acceden a los recursos de la empresa desde dispositivos que cumplen los estándares de seguridad y cumplimiento.
 
   [Introducción a la administración de dispositivos en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction) proporciona más detalles.
 
@@ -39,12 +40,20 @@ Azure Active Directory (AD) es un excelente recurso para ayudar a administrar y 
 ## <a name="company-portal"></a>Portal de empresa
 **[Configurar la aplicación Portal de empresa](company-portal-app.md)**
 
-Intune incluye el Portal de empresa, que es donde los usuarios acceden a los datos de la empresa, inscriben dispositivos, instalan aplicaciones, se ponen en contacto con el departamento de TI, etc. Puede personalizar la aplicación Portal de empresa para los dispositivos con Windows Holographic for Business.
+Intune incluye la aplicación Portal de empresa para que los usuarios accedan a los datos de la empresa, inscriban dispositivos, instalen aplicaciones, se pongan en contacto con el departamento de TI y mucho más. Puede personalizar la aplicación Portal de empresa para los dispositivos con Windows Holographic for Business.
+
+En la aplicación Portal de empresa, también puede realizar las acciones siguientes:
+
+- [Quitar un dispositivo de Intune](/intune-user-help/unenroll-your-device-from-intune-windows) mediante la aplicación Configuración o la aplicación Portal de empresa
+- [Cambiar el nombre de un dispositivo](/intune-user-help/rename-your-device-cpapp)
+- [Instalar aplicaciones](/intune-user-help/install-apps-cpapp-windows) en un dispositivo
+- [Sincronizar dispositivos manualmente](/intune-user-help/sync-your-device-manually-windows) desde la aplicación Configuración o la aplicación Portal de empresa
+
 
 ## <a name="compliance-policy"></a>Directiva de cumplimiento
 **[Crear una directiva de cumplimiento de dispositivos](compliance-policy-create-windows.md)**
 
-Las directivas de cumplimiento son las reglas y la configuración que deben cumplir los dispositivos para ser conformes. Puede usar estas directivas con acceso condicional para bloquear el acceso a los recursos de la empresa a dispositivos no conformes. En Intune, puede crear directivas de cumplimiento para permitir o bloquear el acceso a dispositivos con Windows Holographic for Business. Por ejemplo, puede crear una directiva que exija la habilitación de Bitlocker.
+Las directivas de cumplimiento son las reglas y la configuración que deben cumplir los dispositivos para ser conformes. Use estas directivas con el acceso condicional para bloquear el acceso a los recursos de la empresa a los dispositivos no conformes. En Intune, se crean directivas de cumplimiento para permitir o bloquear el acceso a dispositivos que ejecutan Windows Holographic for Business. Por ejemplo, puede crear una directiva que exija la habilitación de Bitlocker.
 
 Vea también **[Introducción a las directivas de cumplimiento de dispositivos de Microsoft Intune](device-compliance-get-started.md)**.
 
@@ -57,7 +66,7 @@ Con Intune, puede agregar aplicaciones a los dispositivos con Windows Holographi
 - [Agregar aplicaciones que cree](lob-apps-windows.md)
 - [Asignar aplicaciones a grupos](apps-deploy.md)
 
-Microsoft Intune puede implementar aplicaciones universales de Windows en dispositivos con Microsoft HoloLens que ejecutan Windows Holographic for Business. Puede cargar directamente los paquetes de aplicaciones en Azure Portal de Intune o implementarlos desde Microsoft Store para Empresas. Para más información sobre las áreas relacionadas, vea lo siguiente:
+Microsoft Intune puede implementar aplicaciones universales de Windows en dispositivos con Microsoft HoloLens que ejecutan Windows Holographic for Business. Puede cargar directamente los paquetes de aplicaciones en Intune en Azure Portal, o bien implementarlos desde Microsoft Store para Empresas. Para obtener más información sobre las áreas relacionadas, vea los artículos siguientes:
 - Para implementar aplicaciones de línea de negocio (LOB) mediante Azure Portal de Intune, consulte [Adición de aplicaciones de línea de negocio (LOB) de Windows a Microsoft Intune](lob-apps-windows.md).
 - Para implementar aplicaciones con Microsoft Store para Empresas, consulte [Cómo administrar las aplicaciones adquiridas a través de la Microsoft Store para Empresas con Microsoft Intune](windows-store-for-business.md). 
 - Para obtener información sobre la administración de aplicaciones con Microsoft Intune, consulte [¿Qué es la administración de aplicaciones de Microsoft Intune?](app-management.md).
@@ -71,9 +80,9 @@ Intune tiene algunas acciones integradas que permiten a los administradores de T
 
 Cuando se usan dispositivos que ejecutan Windows Holographic for Business, se pueden emplear las siguientes acciones: 
 
-- **[Restablecimiento de fábrica](devices-wipe.md#factory-reset)**: la acción **Restablecimiento de fábrica** quita el dispositivo de Intune y lo restaura a la configuración predeterminada de fábrica. Use esta acción antes de entregar el dispositivo a un nuevo usuario o si se pierde o es robado.
+- **[Borrar](devices-wipe.md#wipe)**: la acción **Borrar** quita el dispositivo de Intune y lo restaura a la configuración predeterminada de fábrica. Use esta acción antes de entregar el dispositivo a un nuevo usuario o si se pierde o es robado.
 
-- **[Eliminar datos de la compañía](devices-wipe.md#remove-company-data)**: la acción **Eliminar datos de la compañía** quita el dispositivo de Intune y elimina los datos de aplicaciones administradas, la configuración y los perfiles de correo electrónico asignados mediante Intune. Los datos personales del usuario permanecen en el dispositivo.
+- **[Retirar](devices-wipe.md#retire)**: la acción **Retirar** quita el dispositivo de Intune. También quita los datos de las aplicaciones administradas, la configuración y los perfiles de correo electrónico asignados por Intune. Los datos personales del usuario permanecen en el dispositivo.
 
 - **[Sincronizar dispositivos para obtener las últimas directivas y acciones](device-sync.md)**: la acción **Sincronizar** fuerza al dispositivo a registrarse inmediatamente en Intune. Cuando un dispositivo se registra, recibe de inmediato las acciones o las directivas pendientes que se le han asignado. Esta característica ayuda a validar y a solucionar problemas de directivas que se le han asignado, sin tener que esperar al siguiente registro programado.
 
@@ -95,6 +104,10 @@ En los perfiles, puede usar OMA-URI para personalizar algunas opciones, crear re
 
 Para configurar las opciones de OMA-URI (Open Mobile Alliance Uniform Resource Identifier), puede crear un perfil personalizado en Intune. Use las opciones de OMA-URI para controlar diversas características de los dispositivos de Windows Holographic for Business, como habilitar una VPN o comprobar si hay actualizaciones en Microsoft Update.
 
+#### <a name="configure-kiosk-modekiosk-settingsmdwindows-holographic-for-business"></a>[Configuración del modo de pantalla completa](kiosk-settings.md#windows-holographic-for-business)
+
+Mediante las características de PC compartidas o de invitado disponibles en Intune, puede configurar los dispositivos Windows Holographic for Business para que se ejecuten como un quiosco. Estos dispositivos pueden ejecutar una aplicación (modo de pantalla completa con una sola aplicación) o varias (modo de pantalla completa con varias aplicaciones).
+
 #### <a name="device-restrictionsdevice-restrictions-windows-holographicmd"></a>[Restricciones de dispositivos](device-restrictions-windows-holographic.md)
 
 Las restricciones de dispositivos permiten controlar distintas opciones y características de los dispositivos, como la exigencia de una contraseña, la instalación de aplicaciones desde [Microsoft Store](https://www.microsoft.com/store/apps/windows?icid=CNavAppsWindowsApps), la habilitación de Bluetooth, etc. Estas restricciones se crean en un perfil de Intune. Este perfil se puede aplicar a varios dispositivos con Windows Holographic for Business.
@@ -115,7 +128,7 @@ Intune incluye una característica denominada anillos de actualización para dis
 ## <a name="terms-and-conditions"></a>términos y condiciones
 **[Establecer los términos y condiciones de la empresa para el acceso de los usuarios](terms-and-conditions-create.md)**
 
-Para que los usuarios puedan inscribir dispositivos y acceder a las aplicaciones de la empresa, incluido el correo electrónico, puede exigirles que acepten los términos y condiciones de la empresa. En Intune, puede definir cómo se muestran en el Portal de empresa los términos y condiciones, además de asignarlos a dispositivos que ejecutan Windows Holographic for Business.
+Antes de que los usuarios inscriban dispositivos y accedan a las aplicaciones de la empresa, incluido el correo electrónico, puede exigirles que acepten los términos y condiciones de la empresa. En Intune, se define cómo se muestran en el Portal de empresa los términos y condiciones, además de asignarlos a los dispositivos que ejecutan Windows Holographic for Business.
 
 ## <a name="windows-hello-for-business"></a>Windows Hello para empresas
 **[Usar Windows Hello para empresas](windows-hello.md)**

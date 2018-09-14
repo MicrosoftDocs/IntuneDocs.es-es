@@ -1,7 +1,7 @@
 
 1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).  
 2. Seleccione **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.  
-3. Seleccione **Aplicaciones móviles** > **Aplicaciones**.
+3. Seleccione **Aplicaciones cliente** > **Aplicaciones**.
 4. Busque y seleccione su aplicación en la lista de aplicaciones.  
 5. En la hoja **Información general**, seleccione **Propiedades**.  
 6. Seleccione **Archivo del paquete de aplicaciones**.  

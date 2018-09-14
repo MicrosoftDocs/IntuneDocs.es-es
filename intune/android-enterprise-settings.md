@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 15ac6adbcf262fd14edf11107b032aeda106a15b
-ms.sourcegitcommit: 024cce10a99b12a13f32d3995b69c290743cafb8
+ms.openlocfilehash: 4e43ab0d088edc87e814ad2c4317d7b7336d34d5
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/14/2018
-ms.locfileid: "39039342"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312903"
 ---
 # <a name="android-enterprise-kiosk-settings-in-intune"></a>Configuración de quiosco de Android Enterprise en Intune
 
@@ -33,14 +33,14 @@ Los perfiles de quiosco de Android admiten las siguientes opciones de configurac
     - **Concesión automática**: los permisos se conceden automáticamente.
     - **Denegación automática**: los permisos se deniegan automáticamente.
 - **Cambios de volumen**: elija **Bloquear** para impedir que los usuarios cambien el volumen del dispositivo.
-- **Restablecimiento de fábrica**: elija **Bloquear** para impedir que los usuarios lleven a cabo un restablecimiento de fábrica del dispositivo.
+- **Borrado**: elija **Bloquear** para impedir que los usuarios borren el dispositivo.
 - **Arranque seguro**: elija **Bloquear** para impedir que los usuarios reinicien el dispositivo en modo seguro.
 - **Barra de estado**: elija **Bloquear** para impedir que los usuarios accedan a la barra de estado, incluidas las notificaciones y las opciones de configuración rápida.
 - **Cambios de configuración de la Wi-Fi**: elija **Bloquear** para impedir que los usuarios cambien las configuraciones de Wi-Fi creadas por el propietario del dispositivo. Los usuarios pueden crear sus propias configuraciones de Wi-Fi.
 - **Configuración del punto de acceso Wi-Fi**: elija **Bloquear** para impedir que los usuarios creen o editen las configuraciones de Wi-Fi.
 - **Características de depuración**: elija **Permitir** para permitir que los usuarios usen las características de depuración.
 - **Ajuste del micrófono**: elija **Bloquear** para impedir que los usuarios ajusten el volumen del micrófono o lo silencien.
-- **Correos electrónicos de protección ante el restablecimiento de fábrica**: elija **Direcciones de correo electrónico de la cuenta de Google** para definir las direcciones de correo electrónico (separadas por punto y coma) que pueden desbloquear el dispositivo después de un restablecimiento de fábrica. Si no se especifica ningún correo electrónico, cualquier persona podrá desbloquear el dispositivo después de un restablecimiento de fábrica.
+- **Correos electrónicos de protección ante el borrado**: elija **Direcciones de correo electrónico de la cuenta de Google** para definir las direcciones de correo electrónico (separadas por punto y coma) que pueden desbloquear el dispositivo después de un borrado. Si no se especifica ningún correo electrónico, cualquier usuario podrá desbloquear el dispositivo después de un borrado.
 - **Sombreado de escape de red**: elija **Habilitar** para permitir la activación de la característica de sombreado de escape de red. Si no se puede realizar una conexión de red en el momento de arranque, el sombreado de escape solicita al usuario que se conecte temporalmente a una red con el fin de actualizar la directiva del dispositivo. Después de aplicar la directiva, la red temporal se olvida y el dispositivo sigue arrancando. Esto impide que no se pueda conectar a una red si no hay ninguna red adecuada en la última directiva y el dispositivo arranca en una aplicación en modo de bloqueo de tareas o el usuario no puede llegar a la configuración del dispositivo.
 - **Permitir la instalación desde orígenes desconocidos**: elija **Permitir** para permitir que los usuarios instalen desde orígenes desconocidos.
 - **Actualización del sistema**: elija una opción para definir de qué forma funciona el dispositivo a través de las actualizaciones inalámbricas:

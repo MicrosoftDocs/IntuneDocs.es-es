@@ -14,12 +14,12 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1c3d0e31520aa2f73eabfce5ebc1d55d4df73946
-ms.sourcegitcommit: 91dc50d38be13c65e5d144d237d7c4358089f215
+ms.openlocfilehash: d7207b84dacc47b567c0fc86c3215605965fda6d
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/23/2018
-ms.locfileid: "36329933"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312805"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Preguntas más frecuentes sobre MAM y la protección de la aplicación
 
@@ -112,10 +112,12 @@ El número de identificación personal (PIN) es un código de acceso que se util
 
     - **El PIN es compartido entre las aplicaciones del mismo publicador para mejorar la facilidad de uso**. En iOS, el PIN de una aplicación es compartido entre todas las aplicaciones **del mismo publicador de la aplicación**. En el caso de Android, este es compartido entre todas las aplicaciones.
     - **El comportamiento de "Volver a comprobar los requisitos de acceso tras (minutos)" tras un reinicio del dispositivo:** un "temporizador de PIN" realiza un seguimiento del número de minutos de inactividad que determinan cuándo se debe mostrar el PIN de aplicación de Intune a continuación. En iOS, el temporizador de PIN no se ve afectado por el reinicio del dispositivo. Por lo tanto, reiniciar el dispositivo no tiene ningún efecto en el número de minutos que el usuario ha estado inactivo desde una aplicación de iOS con la directiva de PIN de Intune. En Android, el temporizador de PIN se restablece con el reinicio del dispositivo. Por lo tanto, las aplicaciones de Android con una directiva de PIN de Intune probablemente soliciten un PIN de aplicación, independientemente del valor de configuración "Volver a comprobar los requisitos de acceso después de (minutos)" **tras un reinicio del dispositivo**.  
-    - **La naturaleza gradual del temporizador está asociada al PIN**. Al escribir el PIN para acceder a una aplicación (aplicación A), cuando esta deja de estar en segundo plano (foco de entrada principal) en el dispositivo, se restablece el temporizador del PIN. En el caso de cualquier otra aplicación (aplicación B) que use el mismo PIN, no se solicitará al usuario que lo vuelva a escribir, ya que el temporizador se habrá restablecido. La solicitud se volverá a mostrar una vez que se haya alcanzado el valor establecido en "Volver a comprobar los requisitos de acceso tras (minutos)". 
+    - **La naturaleza gradual del temporizador está asociada al PIN**. Al escribir el PIN para acceder a una aplicación (aplicación A), cuando esta deja de estar en segundo plano (foco de entrada principal) en el dispositivo, se restablece el temporizador del PIN. En el caso de cualquier otra aplicación (aplicación B) que use el mismo PIN, no se solicitará al usuario que lo vuelva a escribir, ya que el temporizador se habrá restablecido. La solicitud se volverá a mostrar una vez que se haya alcanzado el valor establecido en "Volver a comprobar los requisitos de acceso tras (minutos)".
+
+Para los dispositivos iOS, incluso si el PIN se comparte entre aplicaciones de diferentes publicadores, se mostrará nuevamente el símbolo del sistema cuando se vuelva a alcanzar el valor **Volver a comprobar los requisitos de acceso después de (minutos)** de la aplicación que no es el foco de entrada principal. Por tanto, por ejemplo, un usuario tiene la aplicación _A_ del publicador _X_ y la aplicación _B_ del publicador _Y_, y esas dos aplicaciones comparten el mismo PIN. El usuario se centra en la aplicación _A_ (en primer plano) y la aplicación _B_ está minimizada. Después de que se alcance el valor **Volver a comprobar los requisitos de acceso después de (minutos)** y el usuario cambie a la aplicación _B_, se requeriría el PIN.
 
       >[!NOTE] 
-      > Para comprobar los requisitos de acceso del usuario más a menudo, por ejemplo, la solicitud del PIN, en particular en el caso de las aplicaciones utilizadas más a menudo, se recomienda reducir el valor de la opción "Volver a comprobar los requisitos de acceso tras (minutos)". 
+      > In order to verify the user's access requirements more often (i.e. PIN prompt), especially for a frequently used app, it is recommended to reduce the value of the 'Recheck the access requirements after (minutes)' setting. 
       
 - **¿Cómo funciona el PIN de Intune con los PIN de aplicación integrados para Outlook y OneDrive?**<br></br>
 El PIN de Intune funciona en base a un temporizador basado en inactividad (también conocido como el valor de "Volver a comprobar los requisitos de acceso después de (minutos)"). Por lo tanto, las solicitudes del PIN de Intune se muestran independientemente de las solicitudes de PIN de aplicación integrado para Outlook y OneDrive, que a menudo están vinculados al inicio de la aplicación de forma predeterminada. Si el usuario recibe ambas solicitudes de PIN al mismo tiempo, el comportamiento esperado debería ser que el PIN de Intune tiene prioridad. 
@@ -137,13 +139,13 @@ Los administradores de TI pueden implementar una directiva de protección de apl
 - **¿Qué se cifra?**<br></br> Solo se cifran los datos marcados como "corporativos" según la directiva de protección de la aplicación del administrador de TI. Los datos se consideran "corporativos" cuando se originan desde una ubicación de la empresa. Para las aplicaciones de Office, Intune considera las siguientes ubicaciones de la empresa: correo electrónico (Exchange) o almacenamiento en la nube (aplicación OneDrive con una cuenta de OneDrive para la Empresa). Para las aplicaciones de línea de negocio administradas por la herramienta de ajuste de aplicaciones de Intune, todos los datos de aplicaciones se consideran "corporativos".
 
 **¿Cómo Intune borra los datos de forma remota?**<br></br>
-Intune puede borrar los datos de la aplicación de tres maneras diferentes: borrado completo del dispositivo, borrado selectivo para MDM y borrado selectivo de MAM. Para obtener más información sobre el borrado remoto de MDM, vea [Eliminación de dispositivos mediante el restablecimiento de fábrica o de los datos de la compañía](devices-wipe.md#factory-reset). Para más información sobre el borrado selectivo mediante MAM, vea [Eliminar datos de la compañía](devices-wipe.md#remove-company-data) y [Borrado solo de datos corporativos de aplicaciones administradas por Intune](apps-selective-wipe.md).
+Intune puede borrar los datos de la aplicación de tres maneras diferentes: borrado completo del dispositivo, borrado selectivo para MDM y borrado selectivo de MAM. Para obtener más información sobre el borrado remoto de MDM, vea [Eliminación de dispositivos mediante Borrar o Retirar](devices-wipe.md). Para obtener más información sobre el borrado selectivo mediante MAM, vea [la acción Retirar](devices-wipe.md#retire) y [Borrado solo de datos corporativos de aplicaciones administradas por Intune](apps-selective-wipe.md).
 
-- **¿Qué es el restablecimiento de fábrica?**<br></br> El [restablecimiento de fábrica](devices-wipe.md) quita todos los datos de usuario y la configuración del **dispositivo** restaurando el dispositivo a la configuración predeterminada de fábrica. El dispositivo se quita de Intune.
+- **¿Qué es el borrado?**<br></br> El [borrado](devices-wipe.md) quita todos los datos de usuario y la configuración del **dispositivo** mediante su restauración a la configuración predeterminada de fábrica. El dispositivo se quita de Intune.
   >[!NOTE]
-  > El restablecimiento de fábrica solo se puede lograr en dispositivos inscritos con la administración de dispositivos móviles de Intune (MDM).
+  > El borrado solo se puede lograr en los dispositivos inscritos con la administración de dispositivos móviles de Intune (MDM).
 
-- **¿Qué es el borrado selectivo para MDM?**<br></br> Vea [Eliminación de dispositivos: Eliminar datos de la compañía](devices-wipe.md#remove-company-data) para obtener información sobre cómo eliminar datos de la empresa.
+- **¿Qué es el borrado selectivo para MDM?**<br></br> Vea [Eliminación de dispositivos: retirar](devices-wipe.md#retire) para obtener información sobre cómo eliminar datos de la empresa.
 
 - **¿Qué es el borrado selectivo para MAM?**<br></br> El borrado selectivo de MAM simplemente quita los datos de la aplicación de empresa de la aplicación. La solicitud se inicia mediante el Portal de Intune Azure. Para obtener información sobre cómo iniciar una solicitud de borrado, vea [Borrado solo de datos corporativos de aplicaciones](apps-selective-wipe.md).
 

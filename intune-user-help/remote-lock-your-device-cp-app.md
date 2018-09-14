@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/02/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,16 +16,16 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 4774cdc54a526f25b006c0c3d1a745ab96005c3a
-ms.sourcegitcommit: 2b5d88c434bda7f1cdc32d1ccacc6b341a9a399b
+ms.openlocfilehash: 5b3fbd677eea9143bf5cb297253303330129ef25
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33676637"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43148585"
 ---
-# <a name="lock-your-device-from-company-portal-app-for-windows-10"></a>Bloquear el dispositivo desde la aplicación Portal de empresa para Windows 10
+# <a name="lock-your-device-from-the-company-portal-app-for-windows-10"></a>Bloquear el dispositivo desde la aplicación Portal de empresa para Windows 10
 
-Bloquee de forma remota un dispositivo perdido o robado desde la aplicación Portal de empresa para Windows 10. Si el dispositivo lo permite, la aplicación Portal de empresa bloquea la pantalla, independientemente de su ubicación. Para desbloquearla se necesita una contraseña.
+Bloquee de forma remota un dispositivo perdido o robado desde la aplicación Portal de empresa para Windows 10. Si el dispositivo lo permite, esta configuración bloquea la pantalla del dispositivo, con independencia de su ubicación. Una persona debe escribir el código de acceso correcto antes de que el dispositivo se pueda desbloquear y volver a usar.
 
 El bloqueo remoto está admitido en los dispositivos que ejecutan:
 
@@ -43,4 +43,4 @@ El bloqueo remoto está admitido en los dispositivos que ejecutan:
    ![Captura de pantalla de la aplicación Portal de empresa, página Detalles del dispositivo, mensaje de confirmación de bloqueo remoto.](./media/1804_remote_lock_Windows_CPapp_06.png)  
 4. Si encuentra el dispositivo, escriba el código de acceso para desbloquearlo.  
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

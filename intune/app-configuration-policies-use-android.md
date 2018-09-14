@@ -15,12 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0ee53dd02fa008a2e885b789439e88c766205d13
-ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
+ms.openlocfilehash: 3596d539319a5a91a1647555a89004683874aa06
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39268879"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329469"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Agregar directivas de configuración de aplicaciones para dispositivos Android administrados
 
@@ -33,7 +33,7 @@ Use directivas de configuración de aplicaciones de Microsoft Intune para facili
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
 2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
-3. Elija la carga de trabajo **Aplicaciones móviles**.
+3. Elija la carga de trabajo **Aplicaciones cliente**.
 4. En el grupo **Administrar**, elija **Directivas de configuración de aplicaciones** y **Agregar**.
 5. Especifique los siguientes detalles:
     - **Nombre**: nombre del perfil que aparecerá en Azure Portal.
@@ -88,7 +88,7 @@ También puede preconfigurar permisos para que las aplicaciones accedan a las ca
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
 2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
-3. Elija **Aplicaciones móviles**.
+3. Seleccione **Aplicaciones cliente**.
 3. En **Administrar**, elija **Directivas de configuración de aplicaciones** y, después, **Agregar**.
 4. Especifique los siguientes detalles:
     - **Nombre**. Nombre del perfil que aparecerá en Azure Portal.

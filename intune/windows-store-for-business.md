@@ -15,12 +15,12 @@ ms.assetid: 2ed5d3f0-2749-45cd-b6bf-fd8c7c08bc1b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0fb7d432edf62de48e81f65b1ac2f67c6dbad70a
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 143b4f3390d3058177f4bfde4cbfe0d210f57e86
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34224960"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347923"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Cómo administrar las aplicaciones adquiridas a través de la Tienda Microsoft para Empresas con Microsoft Intune
 
@@ -47,7 +47,7 @@ Revise la información siguiente antes de iniciar la sincronización y la asigna
 - Para usar esta función, los dispositivos deben estar unidos a Active Directory Domain Services o al área de trabajo.
 - Los dispositivos inscritos deben usar la versión 1511 de Windows 10 o versiones posteriores.
 
-Además, los conjuntos relacionados y las aplicaciones con licencia sin conexión de la Microsoft Store para Empresas se consolidarán ahora en una única entrada de aplicación en la interfaz de usuario. Los detalles de implementación de los paquetes individuales se migrarán a la entrada única. Para ver los conjuntos relacionados en Azure Portal, seleccione **Licencias de aplicaciones** desde la hoja **Aplicaciones móviles**.
+Además, los conjuntos relacionados y las aplicaciones con licencia sin conexión de la Microsoft Store para Empresas se consolidarán ahora en una única entrada de aplicación en la interfaz de usuario. Los detalles de implementación de los paquetes individuales se migrarán a la entrada única. Para ver los conjuntos relacionados en Azure Portal, seleccione **Licencias de aplicación** en la hoja **Aplicaciones cliente**.
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>Asociar su cuenta de la Tienda Microsoft para Empresas con Intune
 Antes de habilitar la sincronización en la consola de Intune, debe configurar la cuenta de la tienda para usar Intune como herramienta de administración:
@@ -64,8 +64,8 @@ Ya puede continuar y configurar la sincronización en la consola de Intune.
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
 2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
-3. En el panel **Intune**, elija **Aplicaciones móviles**.
-1. En el panel **Aplicaciones móviles**, seleccione **Configuración** > **Microsoft Store para Empresas**.
+3. En el panel **Intune**, seleccione **Aplicaciones cliente**.
+1. En el panel **Aplicaciones cliente**, seleccione **Configuración** > **Microsoft Store para Empresas**.
 2. Haga clic en **Habilitar**.
 3. Si aún no lo ha hecho, haga clic en el vínculo para registrarse en la Tienda Microsoft para Empresas y asocie la cuenta como se ha descrito anteriormente.
 5. En la lista desplegable **Idioma**, seleccione el idioma en el que las aplicaciones de Microsoft Store para Empresas se muestran en Azure Portal. Independientemente del idioma en el que se muestren, se instalan en el idioma del usuario final si esa versión está disponible.
@@ -73,7 +73,7 @@ Ya puede continuar y configurar la sincronización en la consola de Intune.
 
 ## <a name="synchronize-apps"></a>Sincronizar aplicaciones
 
-1. En la carga de trabajo **Aplicaciones móviles**, seleccione **Configuración** > **Tienda Microsoft para Empresas**.
+1. En la carga de trabajo **Aplicaciones cliente**, seleccione **Configuración** > **Microsoft Store para Empresas**.
 2. Haga clic en **Sincronizar** para que las aplicaciones que ha adquirido en la Microsoft Store aparezcan en Intune.
 
 ## <a name="assign-apps"></a>Asignación de aplicaciones

@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: f0c35caf841729aae8ce6ccdbf1c9709258a8f5b
-ms.sourcegitcommit: 2e08887c07d29979300e80e6a40372aec6287103
+ms.openlocfilehash: ab88c99694df95eeaf4b5529faec73dacd1a208c
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/25/2018
-ms.locfileid: "39249733"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241888"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guía para desarrolladores acerca del SDK de aplicaciones de Microsoft Intune para iOS
 
@@ -241,7 +241,7 @@ AccentColor | String| Especifica el color de énfasis de la pantalla de PIN, com
 MAMTelemetryDisabled| Boolean| Especifica si el SDK no enviará los datos de telemetría a su back-end.| Opcional. El valor predeterminado es No. |
 MAMTelemetryUsePPE | Boolean | Especifica si el SDK de MAM va a enviar datos al back-end de telemetría de PPE. Úselo cuando pruebe las aplicaciones con la directiva de Intune para que los datos de telemetría de prueba no se mezclen con los datos del cliente. | Opcional. El valor predeterminado es No. |
 MaxFileProtectionLevel | String | Opcional. Permite que la aplicación especifique el `NSFileProtectionType` máximo que puede admitir. Este valor invalida la directiva enviada por el servicio si el nivel es mayor que el que la aplicación puede admitir. Valores posibles: `NSFileProtectionComplete`, `NSFileProtectionCompleteUnlessOpen`, `NSFileProtectionCompleteUntilFirstUserAuthentication`, `NSFileProtectionNone`.|
-OpenInActionExtension | Boolean | Se establece en SÍ para las extensiones de acción Open-In. Vea la sección Uso compartido de datos a través de UIActivityViewController para obtener más información. |
+OpenInActionExtension | Boolean | Se establece en SÍ para las extensiones de acción Abrir en. Vea la sección Uso compartido de datos a través de UIActivityViewController para obtener más información. |
 WebViewHandledURLSchemes | Matriz de cadenas | Especifica los esquemas de dirección URL que controla WebView de la aplicación. | Se requiere si la aplicación usa WebView para controlar direcciones URL a través de vínculos o JavaScript. |
 
 ## <a name="receive-app-protection-policy"></a>Recibir la directiva de protección de aplicaciones
@@ -465,7 +465,7 @@ A partir de la versión 8.0.2, Intune App SDK puede filtrar las acciones `UIActi
 
 ### <a name="copy-to-actions"></a>Acciones "Copiar a"
 
-Al compartir documentos a través de `UIActivityViewController` y `UIDocumentInteractionController`, en iOS se muestran acciones "Copiar en" para cada aplicación que admita la apertura del documento que se comparte. Las aplicaciones declaran los tipos de documento que admiten a través de la configuración `CFBundleDocumentTypes` en su archivo Info.plist. Este tipo de uso compartido ya no estará disponible si la directiva no permite el uso compartido con aplicaciones no administradas. Como reemplazo, las aplicaciones tendrán que agregar una extensión de acción que no sea de interfaz de usuario a su aplicación y vincularla a Intune APP SDK. La extensión de acción es un simple código auxiliar. El SDK implementará el comportamiento del uso compartido de archivos. Siga estos pasos:
+Al compartir documentos a través de `UIActivityViewController` y `UIDocumentInteractionController`, en iOS se muestran acciones "Copiar en" para cada aplicación que admita la apertura del documento que se comparte. Las aplicaciones declaran los tipos de documento que admiten a través de la configuración `CFBundleDocumentTypes` en su archivo Info.plist. Este tipo de uso compartido ya no estará disponible si la directiva no permite el uso compartido con aplicaciones no administradas. Como reemplazo, los usuarios tendrán que agregar una extensión de acción que no sea de interfaz de usuario a la aplicación y vincularla a Intune App SDK. La extensión de acción es un simple código auxiliar. El SDK implementará el comportamiento del uso compartido de archivos. Siga estos pasos:
 
 1. La aplicación debe tener al menos un schemeURL definido en su `CFBundleURLTypes` de Info.plist.
 

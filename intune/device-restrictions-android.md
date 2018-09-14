@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 952845ba19c52aa44a9e82ee92909b8c4f32aed6
-ms.sourcegitcommit: 0132b59e484c220338b1efcd35d03c83c285361e
+ms.openlocfilehash: 731f6f5baaa150210765313ffc60133623e52923
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/07/2018
-ms.locfileid: "39587030"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313706"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Configuración de restricciones de dispositivos Android y Samsung Knox: Intune
 
@@ -35,7 +35,7 @@ En este artículo, se muestran todas las opciones de configuración de restricci
 - **Copiar y pegar (solo Samsung Knox)**: permite funciones de copiar y pegar en el dispositivo.
 - **Uso compartido del Portapapeles entre aplicaciones (solo Samsung Knox)**: permite el uso del Portapapeles para copiar y pegar entre aplicaciones.
 - **Envío de datos de diagnóstico (solo Samsung Knox)**: impide que el usuario envíe datos de diagnóstico desde el dispositivo.
-- **Restablecimiento de fábrica (solo Samsung Knox)**: permite que el usuario realice un restablecimiento de la configuración de fábrica en el dispositivo.
+- **Borrado (solo Samsung Knox)**: permite que el usuario realice un [borrado](devices-wipe.md) en el dispositivo.
 - **Geolocalización (solo Samsung Knox)**: permite que el dispositivo use información de ubicación.
 - **Desconectar (solo Samsung Knox)**: permite que el usuario desconecte el dispositivo.<br>Si se deshabilita, no se puede establecer la opción **Número de errores de inicio de sesión antes de borrar el dispositivo**.
 - **Captura de pantalla (solo Samsung Knox)**: permite al usuario capturar el contenido de la pantalla como una imagen.

@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 9ca3b0ba-e41c-45fb-af28-119dff47c59f
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f973bd36faef14232d6449c8ce9d1dc92bf32170
-ms.sourcegitcommit: 0bddd8a76201746e8835c4b792f34377b45fad60
+ms.openlocfilehash: b37c210425fd5abf8fd0b0501966fef8196b451b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/31/2018
-ms.locfileid: "39356580"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312628"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>Omisión del bloqueo de activación en dispositivos iOS supervisados con Intune
 
@@ -78,9 +78,9 @@ La acción de dispositivo remoto **Bypass del bloqueo de activación** de Intune
 6. Vaya a la sección "Hardware" del dispositivo y, después, copie el valor **Código de omisión del bloqueo de activación** bajo **Acceso condicional**.
 
     >[!NOTE]
-    >Copie el código de omisión antes de realizar un restablecimiento de fábrica en el dispositivo. Si restablece la configuración del dispositivo antes de copiar el código, el código se quita de Azure.
+    >Copie el código de omisión antes de borrar el dispositivo. Si restablece la configuración del dispositivo antes de copiar el código, el código se quita de Azure.
 
-7.  Vaya a la hoja **Información general** del dispositivo y, después, haga clic en **Restablecimiento de fábrica**.
+7.  Vaya a la hoja **Información general** del dispositivo y, después, haga clic en **Borrar**.
 8.  Después de restablecer el dispositivo, se le solicitará el *ID de Apple* y la *contraseña*. Deje el campo *ID* en blanco y, después, escriba el **código de omisión** para la *contraseña*. Esto quita la cuenta del dispositivo. 
 
 

@@ -15,12 +15,12 @@ ms.assetid: 439c33a6-e80c-4da9-ba09-a51fc36f62ad
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 545c5b26b6c908f4a9e7066d3f76cbf774c8fbea
-ms.sourcegitcommit: 08e1b0d45c84eb9525a0a59f5540d41434da2814
+ms.openlocfilehash: 6c92b1b660856fb52f6259514ad9075ab96fb2fc
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/19/2018
-ms.locfileid: "39146703"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313299"
 ---
 # <a name="enroll-ios-devices-in-intune"></a>Inscripción de dispositivos iOS en Intune
 
@@ -55,8 +55,8 @@ Apple School Manager es un programa de compra e inscripción de dispositivos par
 
 ## <a name="apple-configurator"></a>Apple Configurator
 Puede inscribir dispositivos iOS con Apple Configuration en un equipo Mac. Para preparar los dispositivos, se conectan mediante USB y se instala un perfil de inscripción. Puede inscribir dispositivos con Apple Configuration de dos maneras:
-- Inscripción con el Asistente de configuración: este proceso restablece el dispositivo a la configuración de fábrica, lo prepara para ejecutar el Asistente de configuración e instala las directivas de la empresa para el nuevo usuario del dispositivo.
-- Inscripción directa: este proceso no restablece los valores de fábrica del dispositivo e inscribe el dispositivo con una directiva predefinida. Este método está destinado a los dispositivos sin afinidad de usuario.
+- Inscripción con el Asistente de configuración: borra el dispositivo, lo prepara para ejecutar el Asistente de configuración e instala las directivas de la empresa para el nuevo usuario del dispositivo.
+- Inscripción directa: no borra el dispositivo y lo inscribe con una directiva predefinida. Este método está destinado a los dispositivos sin afinidad de usuario.
 
 Más información sobre [Inscripción de Apple Configurator](apple-configurator-setup-assistant-enroll-ios.md).
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 08/28/2018
 ms.topic: get-started-article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8bb03becae1f28a3f5490a53576d5183c0b3ffaa
-ms.sourcegitcommit: 0d08daa162212e6cdd8a6ee3ad7ed42c6e6824e4
+ms.openlocfilehash: da220e1f82c59f3181d64dc01d071867d62df397
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/30/2018
-ms.locfileid: "39335833"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313979"
 ---
 # <a name="what-are-microsoft-intune-device-profiles"></a>¿Qué son los perfiles de dispositivo de Microsoft Intune?
 
@@ -54,6 +54,7 @@ Esta característica es compatible con:
 - iOS 
 - macOS
 
+
 ## <a name="device-restrictions"></a>Restricciones de dispositivos
 Las [restricciones de dispositivos](device-restrictions-configure.md) controlan la seguridad, el hardware, el uso compartido de datos y otras opciones de configuración de los dispositivos. Por ejemplo, cree un perfil de restricción de dispositivos que impida que los usuarios de dispositivos iOS usen la cámara del dispositivo. 
 
@@ -72,6 +73,13 @@ Para incorporar Protección contra amenazas avanzada de Windows Defender (WDATP)
 
 Esta característica es compatible con:
 - Windows 10 y versiones posteriores
+
+## <a name="identity-protection"></a>Protección de identidad
+[Protección de identidad](identity-protection-configure.md) controla la experiencia de Windows Hello para empresas en dispositivos Windows 10 y Windows 10 Mobile. Configure estas opciones para que Windows Hello para empresas esté disponible para los usuarios y dispositivos, y para especificar los requisitos de PIN y gestos para los dispositivos.  
+
+Esta característica es compatible con:  
+- Windows 10 y versiones posteriores
+- Windows Holographic for Business  
 
 ## <a name="kiosk"></a>Pantalla completa
 

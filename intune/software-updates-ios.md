@@ -5,17 +5,17 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/26/2018
+ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: b9cc34b2fa45ae447a015f1b3105081041bd0afe
-ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
+ms.openlocfilehash: 1fe0258d3b6d9092c032184fca5fc0f8dc3f12df
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39268845"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313503"
 ---
 # <a name="configure-ios-update-policies-in-intune"></a>Configuración de directivas de actualización de iOS en Intune
 
@@ -32,7 +32,7 @@ Esta característica es compatible con dispositivos que ejecutan iOS 10.3 y vers
 4. Escriba un nombre y una descripción para la directiva.
 5. Haga clic en **Configuración**. 
 
-    Escriba los detalles para cuándo los dispositivos iOS no están obligados a instalar las actualizaciones más recientes. Esta configuración crea un período de tiempo restringido. Puede configurar los días de la semana, la zona horaria, la hora de inicio y la hora de finalización.
+    Escriba los detalles para cuándo los dispositivos iOS no están obligados a instalar las actualizaciones más recientes. Esta configuración crea un período de tiempo restringido. Puede configurar los **días** de la semana, la **zona horaria**, la **hora de inicio**, la **hora de finalización**  y si se **retrasa la visibilidad de actualizaciones de software (días)** para escribir usuarios. Puede seleccionar un intervalo de retraso de actualizaciones de software de 1 a 90 días. Para no participar en la configuración de un retraso de la actualización de software, escriba 0. Estas actualizaciones de configuración solo se aplicarán a los dispositivos iOS supervisados.
 
 6. Haga clic en **Aceptar** para guardar los cambios. Haga clic en **Crear** para crear la directiva.
 

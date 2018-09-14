@@ -5,7 +5,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 04/18/2018
+ms.date: 08/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: f33a6645-a57e-4424-a1e9-0ce932ea83c5
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f49b5050f4ce182699f0955bed6224309a4d7c7c
-ms.sourcegitcommit: c1631ad8feba6c6fd03698ab20836b2e5d8a78d2
+ms.openlocfilehash: 421eea460ee7c00b79a63a014291a8abb88ddaea
+ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/12/2018
-ms.locfileid: "34073842"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43347804"
 ---
 # <a name="known-issues-in-microsoft-intune"></a>Problemas conocidos de Microsoft Intune
 
@@ -33,6 +33,13 @@ Si quiere notificar un error que no aparece aquí, [abra una solicitud de soport
 Si quiere solicitar una nueva característica para Intune, considere la posibilidad de presentar un informe en el sitio [Uservoice](https://microsoftintune.uservoice.com/forums/291681-ideas/category/189016-azure-admin-console).
 
 ## <a name="migration"></a>Migración
+
+### <a name="export-azure-classic-portal-compliance-policies-to-recreate-these-policies-in-the-intune-azure-portal"></a>Exportación de las directivas de cumplimiento del Portal de Azure clásico para volver a crearlas en Intune en Azure Portal
+
+Las directivas de cumplimiento creadas en el Portal de Azure clásico dejarán de utilizarse. Puede revisar y eliminar todas las directivas de cumplimiento existentes, pero no podrá actualizarlas. Si tiene que migrar las directivas de cumplimiento a Intune en Azure Portal, puede exportarlas como un archivo separado por comas (archivo .csv). Después, use los detalles del archivo para volver a crear estas directivas en Intune en Azure Portal.
+
+> [!IMPORTANT]
+> Cuando se retire el Portal de Azure clásico, ya no podrá acceder ni ver las directivas de cumplimiento. Por tanto, asegúrese de exportar las directivas y volverlas a crear en Azure Portal antes de la retirada del Portal de Azure clásico.
 
 ### <a name="intune-legacy-pc-client-features-are-only-available-in-the-silverlight-console"></a>Las características del cliente de equipo heredado de Intune solo están disponibles en la consola de Silverlight
 
@@ -52,7 +59,7 @@ No se puede ver la información de estado de las directivas que se migraron del 
 ### <a name="multiple-app-install-prompts-for-certain-vpp-apps"></a>Varios mensajes de instalación de aplicación para determinadas aplicaciones de VPP
 Es posible que vea varios mensajes de instalación de aplicación para determinadas aplicaciones de VPP que ya están instaladas en dispositivos de usuario final. Este problema se produce si tiene la opción **Actualizaciones automáticas de la aplicación** establecida en **Activado** para el token de VPP que ha cargado en Intune Azure Portal.    
 
-Para solucionar este problema, puede deshabilitar la opción **Actualizaciones automáticas de la aplicación** para el token de VPP. Para ello, en Azure Portal, abra Microsoft Intune. En Intune, seleccione **Aplicaciones móviles** > **Tokens de VPP de iOS**. Luego seleccione el token de VPP que ha implementado la aplicación afectada y seleccione **Editar** > **Actualizaciones automáticas de la aplicación** > **Desactivado** > **Guardar**. También puede detener la implementación de la aplicación afectada como aplicación de VPP, lo que detiene los mensajes.    
+Para solucionar este problema, puede deshabilitar la opción **Actualizaciones automáticas de la aplicación** para el token de VPP. Para ello, en Azure Portal, abra Microsoft Intune. En Intune, seleccione **Aplicaciones cliente** > **Tokens de VPP de iOS**. Luego seleccione el token de VPP que ha implementado la aplicación afectada y seleccione **Editar** > **Actualizaciones automáticas de la aplicación** > **Desactivado** > **Guardar**. También puede detener la implementación de la aplicación afectada como aplicación de VPP, lo que detiene los mensajes.    
 
 Se trata de un problema conocido de la versión actual. En una próxima corrección se resolverá este problema. Una vez implementada la corrección, los usuarios ya no verán varios mensajes de instalación de aplicación.
 

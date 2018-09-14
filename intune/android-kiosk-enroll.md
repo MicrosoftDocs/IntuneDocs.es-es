@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 90cd71383e8f2f82bf9fd6a3dc579c1c0a954227
-ms.sourcegitcommit: d99def6e4ceb44f3e7ca10fe7cdd7f222cf814c8
+ms.openlocfilehash: 515853864236638bc2732f6539d087bd125e3c56
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/24/2018
-ms.locfileid: "42903150"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313468"
 ---
 # <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Configurar la inscripción de dispositivos Android Enterprise en modo de quiosco multimedia
 
@@ -112,7 +112,7 @@ En Android 5.1 y dispositivos posteriores que admitan NFC, puede aprovisionar lo
 
 En Android 6 y dispositivos posteriores, puede usar el token para inscribir el dispositivo. En Android 6.1 y versiones posteriores, también se puede digitalizar el código QR al usar el método de inscripción **aft#setup**.
 
-1. Active el restablecimiento de fábrica en el dispositivo.
+1. Encienda el dispositivo borrado.
 2. En la pantalla **Bienvenida**, seleccione su idioma.
 3. Conéctese a la **Wi-Fi** y después elija **SIGUIENTE**.
 4. Acepte los términos y condiciones de Google, y después elija **SIGUIENTE**.
@@ -129,7 +129,7 @@ En Android 7 y versiones posteriores, puede examinar el código QR desde el perf
 > [!Note]
 > El zoom del navegador puede impedir la digitalización del código QR en algunos dispositivos. Este problema puede solucionarse aumentando el zoom del navegador.
 
-1. Para iniciar una lectura de código QR en el dispositivo Android, toque varias veces la primera pantalla que aparece después de realizar un restablecimiento de fábrica.
+1. Para iniciar una lectura de código QR en el dispositivo Android, toque varias veces la primera pantalla que aparece después de un borrado.
 2. En dispositivos Android 7 y 8, se le pedirá que instale a un lector de códigos QR. Los dispositivos Android 9 y posteriores ya llevan instalado un lector de códigos QR.
 3. Use el lector de códigos QR para examinar el código QR del perfil de inscripción y siga las indicaciones en pantalla para inscribirse.
 

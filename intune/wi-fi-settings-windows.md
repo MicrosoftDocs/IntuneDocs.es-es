@@ -5,21 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 08/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.reviewer: tycast
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8f6532c63612b806f9824f5b9ca98f1ebbbc943f
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: e15a7b034c9277fcd960e8c704f4318f0f5c1da2
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321734"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329654"
 ---
-## <a name="wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Configuración de Wi-Fi para dispositivos Windows 10 y versiones posteriores en Intune
+# <a name="wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Configuración de Wi-Fi para dispositivos Windows 10 y versiones posteriores en Intune
 
 La configuración de Wi-Fi se usa en un perfil de configuración que se aplica a los dispositivos que ejecutan Windows 10 y versiones posteriores. Existen varias opciones:
 
@@ -54,7 +55,7 @@ La configuración de Wi-Fi se usa en un perfil de configuración que se aplica a
 
 ## <a name="settings-for-enterprise-profiles-only"></a>Configuración solo para perfiles de empresa
 
-- **Inicio de sesión único (SSO)**: permite configurar el inicio de sesión único (SSO), donde se comparten las credenciales para el equipo y el inicio sesión de red Wi-Fi. Las opciones son:
+- **Inicio de sesión único (SSO)**: permite configurar el inicio de sesión único (SSO), donde se comparten las credenciales para el equipo y el inicio de sesión de red Wi-Fi. Las opciones son:
   - **Deshabilitar**: se deshabilita el comportamiento de SSO. El usuario debe autenticarse en la red por separado.
   - **Enable before user signs into device** (Habilitar antes de que el usuario inicie sesión en el dispositivo): use SSO para autenticarse en la red justo antes del proceso de inicio de sesión del usuario.
   - **Enable after user signs into device** (Habilitar después de que el usuario inicie sesión en el dispositivo): use SSO para autenticarse en la red justo después de que finalice el proceso de inicio de sesión del usuario.
@@ -77,25 +78,36 @@ La configuración de Wi-Fi se usa en un perfil de configuración que se aplica a
   - **EAP-TTLS**
   - **EAP protegido** (PEAP)
 
-### <a name="more-options-when-you-choose-the-eap-type"></a>Más opciones al elegir el tipo de EAP
+    **Configuración adicional de EAP-TLS, EAP-TTLS y PEAP**:
+    
+    > [!NOTE]
+    > Actualmente, solo se admiten los perfiles de certificado SCEP cuando se usa un tipo de EAP. No se admiten los perfiles de certificado PKCS. Cada vez que se le pida a un usuario que escriba un certificado, asegúrese de que se elige un certificado SCEP.
 
-> [!NOTE]
-> Actualmente, solo se admiten los perfiles de certificado SCEP cuando se usa un tipo de EAP. No se admiten los perfiles de certificado PKCS. Cada vez que se le pida a un usuario que escriba un certificado, asegúrese de que se elige un certificado SCEP.
+      - **Confianza del servidor**  
 
-#### <a name="server-trust"></a>Confianza del servidor
+        **Nombres de servidor de certificados**: se usan con los tipos de EAP **EAP-TLS**, **EAP-TTLS** o **PEAP**. Escriba uno o más nombres comunes usados en los certificados emitidos por la entidad de certificación (CA) de confianza. Si escribe esta información, puede omitir el cuadro de diálogo de confianza dinámica que se muestra en los dispositivos de los usuarios cuando se conectan a esta red Wi-Fi.  
 
-|Nombre de la configuración|Más información|Se debe usar cuando:|
-|--------------|-------------|----------|
-|**Nombres de servidor de certificados**|Escriba uno o más nombres comunes usados en los certificados emitidos por la entidad de certificación (CA) de confianza. Si escribe esta información, puede omitir el cuadro de diálogo de confianza dinámica que se muestra en los dispositivos de los usuarios cuando se conectan a esta red Wi-Fi.|El tipo de EAP es **EAP-TLS**, **EAP-TTLS** o **PEAP**|
-|**Certificado raíz para validación del servidor**|Seleccione el perfil de certificado raíz de confianza que se usa para autenticar la conexión. |El tipo de EAP es **EAP-TLS**, **EAP-TTLS** o **PEAP**|
-|**Privacidad de identidad (identidad externa)**|Escriba el texto que se envía como respuesta a una solicitud de identidad EAP. Este texto puede ser cualquier valor. Durante la autenticación, esta identidad anónima se envía inicialmente, seguida de la identificación real enviada en un túnel seguro.|El tipo de EAP es **PEAP**.|
+        **Certificado raíz para validación del servidor**: se usa con los tipos de EAP **EAP-TLS**, **EAP-TTLS** o **PEAP**. Seleccione el perfil de certificado raíz de confianza que se usa para autenticar la conexión.  
 
-#### <a name="client-authentication"></a>Autenticación de cliente
+        **Privacidad de identidad (identidad externa)**: se usa con el tipo de EAP **PEAP**. Escriba el texto que se envía como respuesta a una solicitud de identidad EAP. Este texto puede ser cualquier valor. Durante la autenticación, esta identidad anónima se envía inicialmente, seguida de la identificación real enviada en un túnel seguro.  
 
-| Nombre de la configuración | Más información | Se debe usar cuando: |
-|---|---|---|
-| **Certificado cliente para la autenticación del cliente (certificado de identidad)** |  Seleccione el perfil de certificado SCEP que se usa para autenticar la conexión. | El tipo de EAP es **EAP-TLS**. |
-| **Método de autenticación** | Seleccione el método de autenticación para la conexión:<br><br>- **Certificados**: seleccione el certificado de cliente SCEP que es el certificado de identidad presentado al servidor.<br><br>- **Nombre de usuario y contraseña**: escriba un **Método que no es EAP (identidad interna)** para la autenticación. Las opciones son:<br><br>- **Contraseña no cifrada (PAP)**<br>- **Desafío mutuo (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP versión 2 (MS-CHAP v2)**<br><br>- **Privacidad de identidad (identidad interna)**: escriba el texto que se envía como respuesta a una solicitud de identidad EAP. Este texto puede ser cualquier valor. Durante la autenticación, esta identidad anónima se envía inicialmente, seguida de la identificación real enviada en un túnel seguro. | El tipo de EAP es **EAP-TTLS**. |
+      - **Autenticación de cliente**
+
+        **Certificado cliente para la autenticación del cliente (certificado de identidad)**: se usa con el tipo de EAP **EAP-TLS**. Seleccione el perfil de certificado que se usa para autenticar la conexión.
+
+        **Método de autenticación**: se usa con el tipo de EAP **EAP-TTLS**. Seleccione el método de autenticación para la conexión:  
+
+          - **Certificados**: seleccione el certificado de cliente que es el certificado de identidad presentado al servidor.
+          - **Nombre de usuario y contraseña**: escriba un **Método que no es EAP (identidad interna)** para la autenticación. Las opciones son:
+
+            - **Contraseña no cifrada (PAP)**
+            - **Desafío mutuo (CHAP)**
+            - **Microsoft CHAP (MS-CHAP)**
+            - **Microsoft CHAP versión 2 (MS-CHAP v2)**
+
+        **Privacidad de identidad (identidad externa)**: se usa con el tipo de EAP **EAP-TTLS**. Escriba el texto que se envía como respuesta a una solicitud de identidad EAP. Este texto puede ser cualquier valor. Durante la autenticación, esta identidad anónima se envía inicialmente, seguida de la identificación real enviada en un túnel seguro.
+
+- **Exigir que el perfil de Wi-Fi sea compatible con el Estándar federal de procesamiento de información (FIPS)**: haga clic en **Sí** al validarlo con el estándar FIPS 140-2. Este estándar es necesario para todas las agencias del gobierno federal de Estados Unidos que usan sistemas de seguridad basados en criptografía para proteger la información confidencial pero sin clasificar que se almacena digitalmente. Haga clic en **No** para que no sea compatible con FIPS.
 
 ## <a name="use-an-imported-settings-file"></a>Usar un archivo de configuración importado
 

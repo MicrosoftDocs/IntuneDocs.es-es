@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 16b8067610e21652a40cb87302d8f1f3d05de342
-ms.sourcegitcommit: f5998019bbb4769fb50a7ea9bf424199516eb9ee
+ms.openlocfilehash: a658182800f480f27097e078f28adc95c35aa3ea
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39117929"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313185"
 ---
 # <a name="see-device-details-in-intune"></a>Ver detalles del dispositivo en Intune
 
@@ -34,11 +34,14 @@ En este artículo se explica cómo se pueden ver todos los dispositivos y sus pr
 2. Seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
 3. Seleccione **Dispositivos** > **Todos los dispositivos** > seleccione uno de los dispositivos que aparecen para que se muestren los detalles correspondientes:
 
-   - En **Información general** se muestra el nombre del dispositivo y algunas propiedades clave del dispositivo. También se indica si es un dispositivo Bring Your Own Device (BYOD), cuándo se registró, etc. Seleccione **Más** para llevar a cabo las siguientes acciones:
-     - Eliminar datos de la compañía
-     - Eliminar el dispositivo
-     - Bloquear el dispositivo de forma remota
-     - Borrar
+   - En **Información general** se muestra el nombre del dispositivo y algunas propiedades clave del dispositivo. También se indica si es un dispositivo Bring Your Own Device (BYOD), cuándo se registró, etc. Puede realizar las siguientes acciones en el dispositivo:
+      - [Retirar](devices-wipe.md#retire)
+        - [Eliminación de datos](devices-wipe.md#wipe)
+        - [Bloqueo remoto](device-remote-lock.md)
+        - [Sincronización del dispositivo](device-sync.md)
+        - [Restablecer el código de acceso](device-passcode-reset.md)
+        - [Reiniciar](device-restart.md) (solo para Windows)
+        - [Comienzo de cero](device-fresh-start.md) (solo para Windows)
      - Iniciar una sesión de asistencia remota
    - Use **Propiedades** para asignar una [categoría de dispositivo que cree](device-group-mapping.md) y cambie la propiedad del dispositivo a un dispositivo personal o a un dispositivo de empresa.
    - En **Hardware** se incluye mucha información sobre el dispositivo (identificador del dispositivo, sistema operativo y versión, espacio de almacenamiento, modelo y fabricante, opciones de acceso condicional, etc.).

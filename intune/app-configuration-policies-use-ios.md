@@ -15,12 +15,12 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 65f249f05f389d8f05395cb46677d5f5fa53835e
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 8abaef622fcf633eecde3a2bb2ee261cb7c8fc9e
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905842"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43330269"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Agregar directivas de configuración de aplicaciones para dispositivos iOS administrados
 
@@ -47,7 +47,7 @@ Una vez haya seleccionado los grupos incluidos para la directiva de configuraci�
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
 2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
-3. Elija la carga de trabajo **Aplicaciones móviles**.
+3. Elija la carga de trabajo **Aplicaciones cliente**.
 4. En el grupo **Administrar**, elija **Directivas de configuración de aplicaciones** y **Agregar**.
 5. Especifique los siguientes detalles:
     - **Nombre**: nombre del perfil que aparece en Azure Portal.
@@ -133,6 +133,8 @@ Cuando crea un archivo de configuración de aplicaciones, puede especificar uno 
   <string>{{serialnumberlast4digits}}</string>
   <key>udidlast4digits</key>
   <string>{{udidlast4digits}}</string>
+  <key>aaddeviceid</key>
+  <string>{{aaddeviceid}}</string>
 </dict>
 ```
 ### <a name="supported-xml-plist-data-types"></a>Tipos de datos XML PList admitidos
@@ -158,6 +160,7 @@ Además, Intune admite los siguientes tipos de token en la lista de propiedades:
 - \{\{username\}\}. Por ejemplo, **John Doe**
 - \{\{serialnumber\}\}. Por ejemplo, **F4KN99ZUG5V2** (en dispositivos iOS)
 - \{\{serialnumberlast4digits\}\}. Por ejemplo, **G5V2** (en dispositivos iOS)
+- \{\{aaddeviceid\}\}: por ejemplo, **ab0dc123-45d6-7e89-aabb-cde0a1234b56**
 
 ## <a name="monitor-ios--app-configuration-status-per-device"></a>Supervisar el estado de configuración de aplicaciones iOS por dispositivo 
 Una vez que se ha asignado una directiva de configuración, puede supervisar el estado de configuración de aplicaciones iOS de cada dispositivo administrado. Desde **Microsoft Intune** en Azure Portal, seleccione **Dispositivos** > **Todos los dispositivos**. En la lista de dispositivos administrados, seleccione un dispositivo específico para mostrar una hoja para el dispositivo. En la hoja del dispositivo, seleccione **Configuración de aplicaciones**.  

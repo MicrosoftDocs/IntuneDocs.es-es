@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 42e0798b0c2941d9ea45e75b367b69bc7dab548f
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 6aa2ade550a01a9e4758024213a67e6a7ddd8f03
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321227"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313860"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Restricciones de dispositivos para la configuración de Windows 10 (y versiones posteriores) en Intune
 En este artículo, se muestran todas las opciones de configuración de restricciones de dispositivos de Microsoft Intune que puede configurar para los dispositivos que ejecutan Windows 10.
@@ -37,7 +37,7 @@ En este artículo, se muestran todas las opciones de configuración de restricci
 - **Almacenamiento extraíble**: especifica si se pueden usar dispositivos de almacenamiento externo, como tarjetas SD, con el dispositivo.
 - **Geolocation** (Geolocalización): especifica si el dispositivo puede usar la información de servicios de ubicación.
 - **Conexión compartida**: permite el uso compartido de una conexión a Internet en el dispositivo.
-- **Restablecimiento del teléfono**: controla si el usuario puede restablecer su dispositivo a la configuración de fábrica.
+- **Restablecimiento del teléfono**: controla si el usuario puede realizar un borrado en el dispositivo.
 - **Conexión USB (solo móviles)**: controla si los dispositivos pueden tener acceso a dispositivos de almacenamiento externo a mediante una conexión USB.
 - **Modo antirrobo (solo móviles)**: permite habilitar el modo antirrobo de Windows.
 - **Cortana**: habilita o deshabilita el asistente de voz de Cortana.
@@ -50,6 +50,7 @@ En este artículo, se muestran todas las opciones de configuración de restricci
 - **Cuadro de diálogo de error de tarjeta SIM (solo móviles)**: impide que un mensaje de error se muestre en el dispositivo si no se detecta una tarjeta SIM.
 - **Área de trabajo de Ink**: impida que los usuarios accedan al área de trabajo de Ink. Cuando este valor no está configurado, se habilita el área de trabajo de Ink (se activa la característica) y el usuario puede usarla más allá de la pantalla de bloqueo.
 - **Reimplementación automática**: permite a los usuarios con derechos administrativos eliminar todos los datos de usuario y las opciones de configuración con **Ctrl + Win + R** en la pantalla de bloqueo del dispositivo. En este caso, el dispositivo se vuelve a configurar e inscribir automáticamente para la administración.
+- **Require users to connect to network during device setup (Windows Insider only)** (Requerir que los usuarios se conecten a la red durante la instalación de dispositivos (solo Windows Insider)): elija **Requerir** para exigir que el dispositivo se conecte a una red antes de continuar más allá de la página Red durante la instalación de Windows 10. Aunque esta característica está en versión preliminar, se requiere una compilación 1809 de Windows Insider o una versión posterior para usar esta configuración.
 
 ## <a name="password"></a>Contraseña
 -   **Contraseña**: exige que el usuario final escriba una contraseña para acceder al dispositivo.

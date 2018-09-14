@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: damionw
 ms.custom: intune-azure
-ms.openlocfilehash: a1d0c445c2e6e5f2e4227d1b04ead416bf73d737
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 937fdd2130a0ae85421a4310fe6a0dc70986d2de
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34444887"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313245"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Inscripción masiva para dispositivos Windows
 
@@ -85,10 +85,10 @@ Los usuarios de Azure AD son usuarios estándar en estos dispositivos y reciben 
 ## <a name="troubleshooting-windows-bulk-enrollment"></a>Solución de problemas con la inscripción masiva de Windows
 
 ### <a name="provisioning-issues"></a>Problemas de aprovisionamiento
-El aprovisionamiento está diseñado para usarlo en dispositivos Windows nuevos. Los errores de aprovisionamiento pueden requerir un restablecimiento de fábrica del dispositivo o recuperar el dispositivo a partir de una imagen de arranque. En estos ejemplos se describen algunas de las razones para los errores de aprovisionamiento:
+El aprovisionamiento está diseñado para usarlo en dispositivos Windows nuevos. Es posible que los errores de aprovisionamiento requieran que se borre el dispositivo o que se recupere a partir de una imagen de arranque. En estos ejemplos se describen algunas de las razones para los errores de aprovisionamiento:
 
 - Un paquete de aprovisionamiento que intenta unirse a un dominio de Active Directory o a un inquilino de Azure Active Directory que no crea una cuenta local podría generar que el dispositivo no sea accesible si el proceso de unión al dominio presenta un error debido a la falta de conectividad de red.
-- Los scripts ejecutados por el paquete de aprovisionamiento se ejecutan en el contexto del sistema. Los scripts pueden realizar cambios arbitrarios en el sistema de archivos del dispositivo y las configuraciones. Un script incorrecto o malintencionado podría poner el dispositivo en un estado que solo se podría recuperar si se restablece la imagen inicial o se realiza un restablecimiento de fábrica del dispositivo.
+- Los scripts ejecutados por el paquete de aprovisionamiento se ejecutan en el contexto del sistema. Los scripts pueden realizar cambios arbitrarios en el sistema de archivos del dispositivo y las configuraciones. Un script incorrecto o malintencionado podría poner el dispositivo en un estado que solo se podría recuperar si se restablece la imagen inicial o se borra el dispositivo.
 
 ### <a name="problems-with-bulk-enrollment-and-company-portal"></a>Problemas con la inscripción masiva y el portal de empresa
 Si un usuario intenta inscribir un dispositivo inscrito de manera masiva anteriormente con el portal de empresa, recibirá una advertencia de que su dispositivo necesita más acciones, de configuración o de inscripción. El dispositivo está inscrito, pero el sitio web o la aplicación del portal de empresa no reconocen la inscripción.

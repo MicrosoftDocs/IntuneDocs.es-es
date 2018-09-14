@@ -1,11 +1,11 @@
 ---
-title: Inscribir el dispositivo iOS en el Programa de inscripción de dispositivos | Microsoft Docs
-description: Describe cómo inscribir un dispositivo iOS en Intune con el DEP.
+title: Inscriba el dispositivo iOS proporcionado por la organización en la administración. | Microsoft Docs
+description: En este artículo se describe cómo inscribir un dispositivo iOS en Intune comprado o proporcionado por la organización.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/12/2018
+ms.date: 08/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,16 +17,26 @@ ROBOTS: ''
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 9d1154d942069ad69294d4235c894f88513dd848
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: b93f02011b0900b1a64ae6cb10a84a52cd40187a
+ms.sourcegitcommit: 11cad61c565c474a8d653181675cc1109d562626
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31016414"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43241803"
 ---
-# <a name="enroll-your-ios-device-in-intune-with-the-device-enrollment-program"></a>Inscribir el dispositivo iOS en Intune con el Programa de inscripción de dispositivos
+# <a name="enroll-your-organization-provided-ios-device-in-management"></a>Inscripción de dispositivos iOS proporcionados por la organización en la administración
 
-El Programa de inscripción de dispositivos se ofrece a través de Apple para que las empresas encuentren más fácil administrar un gran número de dispositivos iOS. Si su empresa le permite traer su propio dispositivo, siga los [pasos de inscripción de iOS normales](enroll-your-device-in-intune-ios.md) en lugar de seguir los pasos descritos en esta página. Si su empresa le proporcionó un dispositivo iOS y le indicó que forma parte del Programa de inscripción de dispositivos, siga leyendo.
+Obtenga información sobre cómo administrar un dispositivo iOS nuevo en Intune.  
+
+Los dispositivos iOS proporcionados por su empresa o centro educativo a menudo están preconfigurados antes de recibirlos. La organización enviará estas opciones configuradas previamente al dispositivo después de encenderlo e iniciar sesión por primera vez. Una vez configurado el dispositivo, recibirá acceso a los recursos profesionales o educativos.  
+
+Para comenzar con la configuración, encienda el dispositivo e inicie sesión con sus credenciales profesionales o educativas. A continuación, en este artículo se describirán los pasos y las pantallas que verá en el asistente de configuración. 
+
+## <a name="what-is-apple-dep"></a>¿Qué es DEP de Apple?
+Es posible que la organización haya comprado los dispositivos a través de lo que se denomina *Programa de inscripción de dispositivos de Apple* (DEP). DEP de Apple permite a las organizaciones comprar una gran cantidad de dispositivos iOS o macOS. De este modo, pueden configurar y administrar esos dispositivos con su proveedor de administración de dispositivos móviles preferido, como Intune. Si es un administrador y quiere obtener más información sobre DEP de Apple, vea [Inscripción automática de dispositivos iOS con el Programa de inscripción de dispositivos de Apple](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios).  
+
+## <a name="set-up-your-ios-device"></a>Configuración de un dispositivo iOS  
+Si usa un dispositivo iOS propio, que la organización no le haya proporcionado, siga los pasos para los [dispositivos personales y Bring Your Own Device](enroll-your-device-in-intune-ios.md).  
 
 1. Encienda el dispositivo iOS. 
 2. Una vez seleccionado el **idioma**, conecte el dispositivo a la red Wi-Fi.
@@ -46,4 +56,4 @@ El Programa de inscripción de dispositivos se ofrece a través de Apple para qu
 6. Acepte los **términos y condiciones** y decida si desea enviar información de diagnóstico a Apple.
 7. Cuando haya concluido la inscripción, puede que el dispositivo le pida que lleve a cabo más acciones, Algunos de estos pasos pueden consistir en escribir la contraseña de acceso al correo electrónico o en configurar un código de acceso.
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

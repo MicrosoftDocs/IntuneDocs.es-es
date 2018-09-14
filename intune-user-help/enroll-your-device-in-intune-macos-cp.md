@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/11/2018
+ms.date: 08/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,50 +17,71 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3dac9446d7a1097f5be4d0851cd78e8cbb86cc4e
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: af5c7492563c8df0168eff3250ae1bbad2cc323e
+ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38224774"
+ms.lasthandoff: 08/29/2018
+ms.locfileid: "43147724"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Inscribir un dispositivo macOS en Intune con la aplicación Portal de empresa
 
-Puede acceder a las aplicaciones, los datos y los recursos de su organización que necesita para hacer su trabajo con mayor facilidad. Su organización usa Intune para [administrar el acceso a esos recursos](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md), lo que requiere que descargue la aplicación Portal de empresa para macOS. Estas instrucciones funcionarán para los dispositivos macOS en OS X El Capitan 10.11 y versiones posteriores.
+Inscriba un dispositivo macOS con la aplicación Portal de empresa de Intune para obtener acceso seguro a las aplicaciones, los archivos y el correo electrónico de su organización.
+
+A menudo, las organizaciones requieren que se administre el dispositivo antes de poder acceder a datos confidenciales desde él. Después de que un dispositivo se convierta en administrado, las organizaciones pueden insertar directivas y aplicaciones en él a través de su proveedor de administración de dispositivos móviles. Para obtener acceso continuo a la información profesional o educativa desde el dispositivo, debe configurarlo para que coincida con la configuración de directiva.  
+
+En este artículo se describe cómo la aplicación Portal de empresa de Intune para macOS le ayuda a inscribir, configurar y mantener su dispositivo para que cumpla los requisitos de su organización.
+
+## <a name="what-to-expect-from-the-company-portal-app"></a>Qué esperar de la aplicación Portal de empresa
+
+Durante la instalación inicial, la aplicación requiere que se autentique con la organización. Después, le informa de cualquier configuración del dispositivo que tenga que realizar. Por ejemplo, las organizaciones suelen definir requisitos de caracteres mínimos o máximos para las contraseñas que tendrá que cumplir.    
+
+Una vez inscrito el dispositivo, la aplicación Portal de empresa continuará para asegurarse de que el dispositivo esté protegido. Por ejemplo, si instala una aplicación desde un origen que no sea de confianza, la aplicación le avisará y, en ocasiones, revocará el acceso a los datos de la empresa. Las directivas de protección de aplicaciones como esta son comunes en las organizaciones y suelen requerirle que desinstale las aplicaciones que no sean de confianza antes de recuperar el acceso.
+
+Si después de la inscripción, la organización exige un nuevo requisito de seguridad, como la autenticación multifactor, la aplicación Portal de empresa se lo notificará. Tendrá la oportunidad de ajustar la configuración para poder seguir trabajando desde su dispositivo.  
+
+Para obtener más información sobre la inscripción, vea [¿Qué ocurre si instalo la aplicación de Portal de empresa e inscribo el dispositivo?](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md).  
+
+## <a name="get-your-device-managed"></a>Conversión del dispositivo en administrado  
+Siga estos pasos para inscribir dispositivos macOS con OS X El Capitan 10.11 y versiones posteriores.   
 
 
-1. En el __Dock__, busque __Safari__ y abra una nueva ventana; a continuación, abra el [sitio web del Portal de empresa](https://portal.manage.microsoft.com).
+1. Para acceder al sitio web de Portal de empresa, abra una ventana nueva en __Safari__ y vaya a https://portal.manage.microsoft.com.  
 
 2. Inicie sesión en el sitio web del Portal de empresa con su cuenta profesional o educativa.
 
    [!INCLUDE [wit_nextref](includes/end-user-password-guidance.md)]
 
 
-3. Después de iniciar sesión, haga clic en el **menú** en la esquina superior izquierda de la página y seleccione **Mis dispositivos**.
+3. Vaya a la esquina superior izquierda de la página y haga clic en **Menú** > **Dispositivos**.  
 
-   ![Captura de pantalla de la página de inicio del portal web en la que se muestra que aún no se puede instalar ninguna aplicación, con un botón Mis dispositivos debajo.](./media/macOS_enroll_001_landing_page.png)
+4. En la página __Dispositivos__ se mostrará una lista de los dispositivos administrados o un banner. Lo que vea dependerá de si ya tiene un dispositivo administrado. 
+    * Para agregar un dispositivo que no aparece en la lista, seleccione el banner en el que se lee **Tap here to tell us which device you're using or add a new device.** (Pulse aquí para indicarnos el dispositivo que está usando o agregar un dispositivo nuevo).
+    * Si no tiene ningún dispositivo, en el banner se indicará: **You don't have any managed devices. Add this one by tapping here.** (No tiene dispositivos inscritos. Agregue este pulsando aquí). Haga clic en el banner para agregar el dispositivo.  
 
-4. En la página __Mis dispositivos__, verá una lista de dispositivos inscritos o simplemente un mensaje emergente. Esto depende de si ya tiene un dispositivo inscrito, macOS o de otro tipo. Para inscribir un dispositivo que no aparece, seleccione el mensaje emergente que indica __Si aparece el dispositivo, pulse aquí para identificarlo. También se puede pulsar para inscribir el dispositivo si no aparece__. Si no tiene ningún dispositivo inscrito, en el banner se indicará lo siguiente: **No tiene dispositivos inscritos. Inscriba este pulsando aquí.**
+     ![Captura de pantalla de la página Dispositivos, con un cuadrado de color rojo alrededor de la opción de banner para resaltar dónde hacer clic.](./media/CP-enroll-MACOS-1808.png)  
+5.  Complete el paso siguiente que coincida con el mensaje que aparece actualmente en el Portal de empresa.  
+    * Si es la primera vez que va a agregar un dispositivo, se le pedirá que descargue la aplicación Portal de empresa en el dispositivo. Haga clic en **Descargar** para continuar.  
 
-    ![Captura de pantalla de la página Mis dispositivos con un par de dispositivos sin identificar sobre el mensaje emergente para inscribir los dispositivos que no figuran en la lista o para identificar los no identificados.](./media/macOS_enroll_002_tap_here_banner.png)
+         ![Captura de pantalla de ejemplo de la pantalla de mensaje para descargar la aplicación de Portal de empresa para macOS. El usuario tiene la opción de hacer clic en el botón Descargar de color azul en la parte inferior izquierda del mensaje, o bien en el botón Cancelar de color gris en la parte inferior derecha.](./media/CP-enroll-download-macOS-1808.png)  
 
-5. Descargue la aplicación de Portal de empresa en el dispositivo macOS para proseguir con la inscripción.
+    * Si ya tiene un dispositivo macOS administrado, recibirá un mensaje con una lista de los dispositivos macOS administrados en ese momento. Seleccione **Mi dispositivo no aparece aquí** > **Descargar** para descargar la aplicación Portal de empresa en el dispositivo que va a agregar.  
 
-    ![Mensaje en el que se pide al usuario que descargue la aplicación de Portal de empresa de macOS. En este mensaje, el texto del paso anterior aparece encima de un botón "Descargar" situado en la esquina inferior derecha.](./media/macOS_enroll_IWP_CP_app_notice.png)
+         ![Captura de pantalla de ejemplo de la pantalla de mensaje para descargar la aplicación de Portal de empresa para macOS. El usuario tiene la opción de seleccionar *Mi dispositivo no aparece aquí* o un dispositivo específico en la parte central de la página. Aparecerá un botón Descargar de color azul en la parte inferior izquierda del mensaje y un botón Cancelar de color gris en la parte inferior derecha](./media/cp-mac-os-device-isnt-here-1808.png)  
 
-6. El equipo Mac comprobará la descarga para asegurarse de que **CompanyPortal.pkg** se puede abrir con seguridad. Abra el instalador y siga el proceso de instalación.
+6. El dispositivo comprobará para asegurarse de que **CompanyPortal.pkg** se puede abrir con seguridad. Cuando termine, abra el programa de instalación y complete la instalación.  
 
-7. Cuando el instalador finalice, abra la carpeta **Aplicaciones** o **Launchpad** y, después, **Portal de empresa**.
+7. Cuando haya finalizado el programa de instalación, vaya a **Launchpad** y abra **Portal de empresa**.  
 
-8. El equipo Mac mostrará un mensaje: **"Portal de empresa" es una aplicación que se ha descargado de Internet. ¿Seguro que quiere continuar?** Haga clic en **Abrir**.
+8. El dispositivo macOS le pedirá que confirme que quiere abrir la aplicación Portal de empresa. Haga clic en **Abrir**.  
 
-   > [!NOTE]
-   > Intune necesita acceder a su equipo para asegurarse de que es lo suficientemente seguro como para acceder a los recursos de su organización. Si el equipo se niega a abrir la aplicación Portal de empresa, intente [desactivar Gatekeeper](https://support.apple.com/HT202491) y abra la aplicación.
+   > [!TIP]
+   > Intune necesita acceder a su equipo para asegurarse de que es lo suficientemente seguro como para acceder a los recursos de su organización. Si el equipo se niega a abrir la aplicación Portal de empresa, [desactive Gatekeeper](https://support.apple.com/HT202491). Después, abra la aplicación.
 
-9. La primera pantalla que verá en la aplicación Portal de empresa le pedirá que **inicie sesión** con la misma cuenta profesional o educativa que usa para iniciar sesión en el sitio web de Portal de empresa.
+9. La primera pantalla que verá en la aplicación Portal de empresa le pedirá que **inicie sesión**. Use la misma cuenta profesional o educativa que ha usado para iniciar sesión en el sitio web del Portal de empresa.
 
-10. Portal de empresa confirmará la información de su cuenta y mostrará sus estados de **inscripción de dispositivos** y **cumplimiento de dispositivos**. Verá triángulos amarillos que le informarán de que dispone de las acciones que debe realizar para asegurarse de que el equipo Mac se pueda usar en el trabajo con seguridad. Haga clic en **Comenzar** para iniciar la [inscripción del dispositivo en el sistema de administración](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+10. El Portal de empresa confirma la información de la cuenta y muestra los estados de **inscripción de dispositivos** y **cumplimiento de dispositivos**. Con triángulos de color amarillo se resaltan las acciones que debe emprender para proteger su dispositivo macOS para la escuela o el trabajo. Haga clic en **Comenzar** para iniciar la inscripción. Obtenga información sobre [lo que la organización puede ver](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) cuando se inscribe un dispositivo.
 
-11. El equipo Mac iniciará la inscripción en el sistema de administración. Puede que deba proporcionar información de inicio de sesión del equipo. El proceso de inscripción puede tardar unos minutos. Durante este tiempo, puede seguir usando el equipo. Una vez haya completado la configuración de acceso de la empresa, se mostrará un mensaje para informarle de que ya ha terminado.
+11. Es posible que se le solicite proporcionar la información de inicio de sesión del equipo. Puede tardar unos minutos en inscribir el dispositivo en la administración. Durante este tiempo, puede realizar otras acciones en el dispositivo. Una vez haya completado la configuración de acceso de la empresa, recibirá un mensaje para informarle de que ya ha terminado.  
 
-¿Sigue necesitando ayuda? Póngase en contacto con el equipo de soporte técnico de su empresa. Puede encontrar su información de contacto en el [sitio web del Portal de empresa](https://portal.manage.microsoft.com#HelpDeskDialog).
+¿Sigue necesitando ayuda? Póngase en contacto con el equipo de soporte técnico de su empresa. Puede encontrar su información de contacto en el [sitio web del Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

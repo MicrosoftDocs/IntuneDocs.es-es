@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f1aa88264ef277863f58d21baaa136c140c5c287
-ms.sourcegitcommit: e01945bff19157fa7acaa4f7975b0f2a8b3a73f0
+ms.openlocfilehash: cef98527ee2c281547f8046f3c6f08275d8f0807
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/10/2018
-ms.locfileid: "37949550"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329390"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Configuración del quiosco multimedia para Android en Intune
 
@@ -55,7 +55,7 @@ Para configurar un dispositivo Android como quiosco multimedia para varias aplic
 
 1. Vaya a la [página Managed Home Screen desde Google Play](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) e inicie sesión con la misma cuenta que usa para otras aplicaciones de Google Play administrado.
 2. Elija **Aprobar**.
-3. Vaya al [portal Intune](https://portal.azure.com) y elija **Aplicaciones móviles** > **Google Play administrado** > **Sincronización**.
+3. Vaya al [portal de Intune](https://portal.azure.com) y elija **Aplicaciones cliente** > **Google Play administrado** > **Sincronización**.
 4. Elija **Aplicaciones** > **Managed Home Screen** > **Asignaciones** > **Agregar grupo**.
 5. En **Tipo de asignación**, elija **Obligatoria**.
 6. Elija **Grupos para incluir** > **Seleccionar grupos para incluir** > elija el grupo de dispositivos que ha creado para los dispositivos de quiosco multimedia > **seleccione** > **Aceptar** > **Aceptar** > **Guardar**.
@@ -65,13 +65,13 @@ Para configurar un dispositivo Android como quiosco multimedia para varias aplic
 Para cada aplicación que quiera que esté disponible en los dispositivos de quiosco multimedia, siga estos pasos:
 
 1. [Agregue la aplicación a Intune](store-apps-android.md).
-2. Elija **Aplicaciones móviles** > **Aplicaciones** > elija la aplicación > **Asignaciones** > **Agregar grupo**.
+2. Elija **Aplicaciones cliente** > **Aplicaciones** > elija la aplicación > **Asignaciones** > **Agregar grupo**.
 3. En **Tipo de asignación**, elija **Obligatoria**.
 4. Elija **Grupos para incluir** > **Seleccionar grupos para incluir** > elija el grupo de dispositivos que ha creado para los dispositivos de quiosco multimedia > **seleccione** > **Aceptar** > **Aceptar** > **Guardar**.
 
 ### <a name="add-web-links-that-can-be-used-in-kiosk-mode"></a>Agregar vínculos web que se puedan usar en el quiosco multimedia
 
-1. Vaya al [portal Intune](https://portal.azure.com) y elija **Aplicaciones móviles** > **Aplicaciones** > **Agregar**.
+1. Vaya al [portal de Intune](https://portal.azure.com) y elija **Aplicaciones cliente** > **Aplicaciones** > **Agregar**.
 2. En **Tipo de aplicación**, elija **Vínculo web**.
 3. Elija **Configurar** y proporcione la información necesaria. No es necesario agregar una imagen de logotipo, puesto que se obtendrá automáticamente del favicon.ico del sitio web.
 4. Seleccione **Aceptar** > **Agregar**.

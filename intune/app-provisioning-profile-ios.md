@@ -15,12 +15,12 @@ ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5d3cc718c0bfd0bba68480b4cd4003cd52489a50
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 5ed39a13c8866786ac044d77ca61d91becd5b89f
+ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34225045"
+ms.lasthandoff: 08/31/2018
+ms.locfileid: "43329571"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>Uso de perfiles de aprovisionamiento de aplicaciones para iOS para evitar que las aplicaciones expiren
 
@@ -43,8 +43,8 @@ Como administrador, puede incluir y excluir grupos de seguridad para asignar la 
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
 2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
-3. En el panel **Intune**, elija **Aplicaciones móviles**.
-1.  En la carga de trabajo **Aplicaciones móviles**, elija **Administrar** > **Perfiles de aprovisionamiento de aplicaciones para iOS**.
+3. En el panel **Intune**, seleccione **Aplicaciones cliente**.
+1.  En la carga de trabajo **Aplicaciones cliente**, elija **Administrar** > **Perfiles de aprovisionamiento de aplicaciones para iOS**.
 2.  En la hoja de lista de perfiles, elija **Crear perfil**.
 3. En el panel **Crear perfil**, configure los siguientes valores:
     - **Nombre**: proporcione un nombre para este perfil de aprovisionamiento móvil.

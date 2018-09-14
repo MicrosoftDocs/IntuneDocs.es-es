@@ -5,66 +5,69 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/18/2018
+ms.date: 8/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 557bdbace1752b8680cd15d7ba190577bec23e24
-ms.sourcegitcommit: 2e849eea920dcd6ef1b78e5aee26434bb7b01bff
+ms.openlocfilehash: 0af5fb071c6abb01a2819a5d9c73f4e01bf7cb7a
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/18/2018
-ms.locfileid: "39132466"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43312839"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Supervisión de las directivas de cumplimiento de dispositivos Intune
 
-Los informes de cumplimiento ayudan a los administradores a analizar el estado de cumplimiento de los dispositivos de su organización, así como a solucionar rápidamente problemas de este tipo que detecten los usuarios de su organización. Puede ver información sobre el estado de cumplimiento general de los dispositivos, y el estado de cumplimiento de configuraciones y directivas concretas, así como profundizar en los dispositivos con el objetivo de ver las directivas y opciones específicas que afectan a los dispositivos.
+Los informes de cumplimiento ayudan a revisar el cumplimiento de los dispositivos y solucionar problemas relacionados con el cumplimiento en la organización. Con estos informes, puede ver información sobre:
 
-## <a name="before-you-begin"></a>Antes de comenzar
+- Los estados de cumplimiento general de los dispositivos
+- El estado de cumplimiento de una configuración individual
+- El estado de cumplimiento de una directiva individual
+- Explorar en profundidad los dispositivos individuales para ver los valores específicos y las directivas que afectan a los dispositivos
 
-Siga los pasos de abajo para encontrar el **panel de cumplimiento de dispositivos Intune** en el portal de Azure:
+## <a name="open-the-compliance-dashboard"></a>Apertura del panel de cumplimiento
 
-1. En [Azure Portal](https://portal.azure.com), inicie sesión con sus credenciales de Intune.
+Abra el **panel de Cumplimiento de dispositivos de Intune**:
 
-2. Seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
+1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
 
-3. Seleccione **Cumplimiento del dispositivo** > **Información general**. Se abre el **panel de cumplimiento de dispositivos**.
+2. Seleccione **Cumplimiento del dispositivo** > **Información general**. Se abre el **panel de cumplimiento de dispositivos**.
 
 > [!IMPORTANT]
 > Los dispositivos deben inscribirse en Intune para recibir las directivas de cumplimiento de dispositivos.
 
-## <a name="device-compliance-dashboard"></a>Panel de cumplimiento de dispositivos
+## <a name="dashboard-overview"></a>Visión general del panel
 
-En el **panel de cumplimiento de dispositivos**, puede supervisar el cumplimiento de diferentes dispositivos, su estado de protección y mucho más. Puede ver los siguientes informes:
+Cuando el panel se abre, se obtiene una visión general con todos los informes de cumplimiento. En estos informes, puede ver y comprobar lo siguiente:
 
-- Agregado de cumplimiento general de dispositivos
-
+- Cumplimiento general del dispositivo
 - Cumplimiento de dispositivos por directiva
-
 - Cumplimiento de dispositivos por configuración
-
 - Estado de protección del dispositivo
-
 - Estado del agente de amenazas
 
-![Imagen en que se muestra el panel de cumplimiento del dispositivo](./media/idc-1.png)
+![Imagen del panel en la que se muestra el panel de cumplimiento de dispositivos y los distintos informes](./media/compliance-policy-monitor/idc-1.png)
 
-También puede ver la configuración y las directivas de cumplimiento específicas que se aplican a un dispositivo concreto, y el estado final de cumplimiento de cada una de estas opciones del dispositivo.
+Al profundizar en este informe, también se pueden ver las directivas de cumplimiento específicas y las configuraciones que se aplican a un dispositivo concreto, incluido el estado de cumplimiento de cada configuración.
 
-### <a name="overall-device-compliance-aggregate-report"></a>Informe agregado de cumplimiento general de dispositivos
+### <a name="device-compliance-status-report"></a>Informe de estado de cumplimiento del dispositivo
 
-Se trata de un gráfico de anillos que muestra el estado de cumplimiento agregado de todos los dispositivos inscritos en Intune. Los estados de cumplimiento de dispositivos se mantienen en dos bases de datos: Intune y Azure Active Directory. A continuación, se muestran más detalles sobre los estados de cumplimiento de directivas de dispositivos:
+En el gráfico se muestran los estados de cumplimiento para todos los dispositivos inscritos en Intune. Los estados de cumplimiento de dispositivos se mantienen en dos bases de datos diferentes: Intune y Azure Active Directory. 
 
-- **Conforme**: el dispositivo aplicó correctamente una o varias configuraciones de directivas de cumplimiento de dispositivos que el administrador seleccionó como destino.
+Descripciones de los estados de directiva de cumplimiento de dispositivos:
 
-- **No conforme**: el dispositivo no pudo aplicar una o varias configuraciones de directivas de cumplimiento de dispositivos que el administrador seleccionó como destino, o bien el usuario no ha cumplido las directivas que el administrador seleccionó como destino.
+- **Conforme**: el dispositivo aplicó correctamente una o varias configuraciones de directivas de cumplimiento de dispositivos.
 
-- **En período de gracia**: el administrador seleccionó como destino el dispositivo con una o varias configuraciones de directivas de cumplimiento de dispositivos, pero el usuario no ha aplicado las directivas aún, lo que significa que el dispositivo tiene el estado No conforme, pero se encuentra en el período de gracia definido por el administrador.
+- **En período de gracia**: el dispositivo se selecciona como destino con una o varias configuraciones de directivas de cumplimiento de dispositivos. Pero el usuario todavía no ha aplicado las directivas. Esto significa que el dispositivo es no conforme, pero se encuentra en el período de gracia definido por el administrador.
 
-  - Obtenga más información sobre las acciones disponibles para los dispositivos que no cumplen las directivas.
+  - Obtenga más información sobre las [acciones disponibles para los dispositivos que no cumplen las directivas](actions-for-noncompliance.md).
+
+- **Sin evaluar**: un estado inicial para los dispositivos recién inscritos. O bien, los dispositivos que no tienen asignada la directiva de cumplimiento y no tienen un desencadenador para comprobar su cumplimiento.
+
+- **No conforme**: el dispositivo no pudo aplicar una o varias configuraciones de directivas de cumplimiento de dispositivos. O bien, el usuario no ha cumplido las directivas.
 
 - **Dispositivo no sincronizado**: el dispositivo no pudo informar del estado de las directivas de cumplimiento de dispositivos por uno de los siguientes motivos:
 
@@ -75,88 +78,68 @@ Se trata de un gráfico de anillos que muestra el estado de cumplimiento agregad
 > [!IMPORTANT]
 > Los dispositivos que están inscritos en Intune, pero no seleccionados como destino de ninguna directiva de cumplimiento de dispositivos, se incluyen en este informe, en el depósito **Conforme**.
 
-#### <a name="drill-down-option"></a>Opción de obtención de detalles
+#### <a name="drill-down-for-more-details"></a>Exploración en profundidad para obtener más detalles
 
-En el **panel de cumplimiento de dispositivos**, seleccione un elemento de cumplimiento de dispositivos para explorar en profundidad los **estados de cumplimiento**, los **alias de correo electrónico del usuario**, los **modelos de dispositivo** y las **ubicaciones** específicas de cada dispositivo objetivo de las directivas de cumplimiento de dispositivos.
+En el gráfico **Estado de cumplimiento del dispositivo**, seleccione un estado. Por ejemplo, seleccione el estado **No conforme**:
 
-![Imagen en que se muestra una exploración en profundidad del panel de cumplimiento de dispositivos](./media/idc-2.png)
+![Selección del estado No conforme](./media/compliance-policy-monitor/select-not-compliant-status.png)
 
-Si necesita más información sobre un usuario específico, puede filtrar el informe de gráfico de cumplimiento de dispositivos escribiendo el alias de correo electrónico del usuario.
+Muestra más detalles sobre los dispositivos que tienen ese estado, incluida la plataforma del sistema operativo, la fecha de la última inserción en el repositorio y mucho más. 
 
-![Imagen en que se muestra el usuario específico del panel de cumplimiento de dispositivos](./media/idc-3.png)
+![Imagen del panel en la que se muestran más detalles sobre el dispositivo en ese estado específico](./media/compliance-policy-monitor/drill-down-details.png)
 
-También puede hacer clic en los diferentes estados de cumplimiento diferentes del gráfico de cumplimiento de dispositivos para ver más detalles de los estados de las directivas de cumplimiento de dispositivos del usuario.
+Si quiere ver todos los dispositivos de un usuario específico, puede filtrar el informe de gráfico escribiendo el correo electrónico del usuario:
 
-![Imagen en que se muestran diferentes estados del panel de cumplimiento de dispositivos](./media/idc-4.png)
+![Filtrado por la dirección de correo electrónico para mostrar todos los dispositivos para ese usuario concreto](./media/compliance-policy-monitor/idc-3.png)
 
-#### <a name="filter"></a>Filtro
+#### <a name="filter-and-columns"></a>Filtrar y columnas
 
-Al hacer clic en el **botón Filtrar**, se abre el filtro emergente con las siguientes opciones:
+![Haga clic en Filtrar y Columnas para cambiar los resultados en el gráfico](./media/compliance-policy-monitor/filter-columns.png)
 
-- Modelo
+Cuando se hace clic en el botón **Filtrar**, se abre el menú emergente de filtro con más opciones, como el estado de cumplimiento, los dispositivos con Jailbreak y más. **Aplique** el filtro para actualizar los resultados.
 
-  - Cuadro de texto que acepta cadenas de búsqueda libre
+Use la propiedad **Columnas** para agregar o quitar columnas del resultado del gráfico. Por ejemplo, **Nombre principal de usuario** puede mostrar la dirección de correo electrónico registrada en el dispositivo. **Aplique** las columnas para actualizar los resultados.
 
-- Plataforma
+#### <a name="device-details"></a>Detalles del dispositivo
 
-  - Android
+En el gráfico, seleccione un dispositivo específico y, después, seleccione **Conformidad de dispositivos**:
 
-  - iOS
+![Selección de un dispositivo específico y, después, de Conformidad de dispositivos para ver las directivas de cumplimiento aplicadas](./media/compliance-policy-monitor/see-policies-applied-specific-device.png)
 
-  - macOS
-
-  - Windows
-
-  - Windows Phone
-
-- Estado
-
-  - Conforme
-
-  - No conforme
-
-  - En período de gracia
-
-  - Unknown
-
-  - Error
-
-Al hacer clic en el **botón Actualizar**, se cierra el menú emergente y los resultados se actualizan con los criterios del filtro seleccionado.
-
-##### <a name="device-details"></a>Detalles del dispositivo
-
-Al seleccionar un dispositivo, se abre **Dispositivos** con el dispositivo seleccionado. Así, se proporciona información detallada sobre la configuración de directivas de cumplimiento de dispositivos aplicada a ese dispositivo.
-
-Al seleccionar la propia configuración de directivas de dispositivos, puede ver el que nombre de la directiva de cumplimiento de dispositivos originó dicha configuración de cumplimiento de dispositivos seleccionada como destino por el administrador.
+Proporciona información detallada sobre la configuración de directivas de cumplimiento de dispositivos aplicada a ese dispositivo. Al seleccionar la directiva específica, se muestran todas las configuraciones de la directiva.
 
 ### <a name="devices-without-compliance-policy"></a>Dispositivos sin directiva de cumplimiento
-En este informe se identifican los dispositivos que no tienen asignada ninguna directiva de cumplimiento. Con la introducción de la opción de seguridad que marca como "No compatible" todos los dispositivos que no tienen directivas de cumplimiento, es importante poder identificar estos dispositivos. Posteriormente podrá asignarles al menos una directiva de cumplimiento.
+En **Conformidad de dispositivos** > **Información general**, el informe también identifica los dispositivos que no tienen asignada ninguna directiva de cumplimiento:
 
-> [!NOTE]
-> La nueva configuración de seguridad se puede configurar en el portal de Intune. Seleccione **Conformidad de dispositivos** y, en **Configuración**, elija **Configuración de directivas de cumplimiento**. Después, use el botón de alternancia para establecer **Marcar los dispositivos que no tienen asignada una directiva de cumplimiento como** en **Compatible** o **No compatible**. Obtenga más información sobre esta [mejora de la seguridad en el servicio de Intune](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/).
+![Visualización de los dispositivos sin directivas de cumplimiento](./media/compliance-policy-monitor/devices-without-policies.png)
 
-![Imagen en la que se muestra el informe Dispositivos sin directiva de cumplimiento](./media/idc-12.png)
+Al hacer clic en el icono, se muestran todos los dispositivos sin una directiva de cumplimiento. También se muestra el usuario del dispositivo, el estado de implementación de la directiva y el modelo del dispositivo.
 
-El mosaico **Dispositivos sin directiva de cumplimiento** está disponible en el panel Conformidad de dispositivos. En él se muestran todos los dispositivos que no tienen ninguna directiva de cumplimiento, el usuario del dispositivo, el estado de cumplimiento y el modelo del dispositivo.
+#### <a name="what-you-need-to-know"></a>Lo que se debe saber
 
-> [!NOTE]
-> Los usuarios a los que se asigna una directiva de cumplimiento de cualquier tipo no aparecerán en el informe, sea cual sea la plataforma del dispositivo. Por ejemplo, si ha asignado por error una directiva de cumplimiento de Windows a un usuario que tiene un dispositivo Android, el dispositivo no aparecerá en el informe, aunque Intune considerará ese dispositivo como no compatible. Para evitar problemas, le recomendamos que cree directivas para cada plataforma de dispositivo y que las implemente para todos los usuarios.
+- Con la opción de seguridad **Marcar los dispositivos que no tienen asignada una directiva de cumplimiento como**, es importante identificar los dispositivos sin una directiva de cumplimiento. Posteriormente podrá asignarles al menos una directiva de cumplimiento.
+
+  La opción de seguridad se puede configurar en el portal de Intune. Seleccione **Conformidad de dispositivos** > **Configuración de directivas de cumplimiento**. Después, establezca **Marcar los dispositivos que no tienen asignada una directiva de cumplimiento como** en **Compatible** o **No compatible**. 
+
+  Obtenga más información sobre esta [mejora de la seguridad en el servicio de Intune](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/).
+
+- Los usuarios a los que se asigna una directiva de cumplimiento de cualquier tipo no se muestran en el informe, con independencia de la plataforma del dispositivo. Por ejemplo, si ha asignado una directiva de cumplimiento de Windows a un usuario que tiene un dispositivo Android, el dispositivo no se muestra en el informe. Pero Intune considera ese dispositivo Android como no conforme. Para evitar problemas, le recomendamos que cree directivas para cada plataforma de dispositivo y que las implemente para todos los usuarios.
 
 ### <a name="per-policy-device-compliance-report"></a>Informe de cumplimiento de dispositivos por directiva
 
-Este informe proporciona una vista por directiva de cumplimiento y el número total de dispositivos en cada estado de cumplimiento. El título **Cumplimiento de directivas** está disponible en el **panel Cumplimiento de dispositivos**. En él se muestran todas las directivas que ha creado el administrador previamente, las plataformas en las que se aplica la directiva y el número de dispositivos conformes y no conformes.
+En el informe **Conformidad de dispositivos** > **Cumplimiento de directivas** se muestran las directivas y cuántos dispositivos son compatibles y no compatibles. 
 
-![Imagen en que se muestra el informe de cumplimiento de dispositivos por directiva](./media/idc-8.png)
+![Visualización de una lista de la directiva y la diferencia entre dispositivos conformes y no conformes para esa directiva](./media/compliance-policy-monitor/idc-8.png)
 
-Al hacer clic en el mosaico de cumplimiento de directivas, seleccione una de las directivas de cumplimiento de dispositivos para ver el **estado de cumplimiento**, el **alias de correo electrónico del usuario**, el **modelo de dispositivo** y la **ubicación** de cada dispositivo al que se aplique esa directiva de cumplimiento de dispositivos.
+Cuando se selecciona una directiva específica, puede ver el **estado de cumplimiento**, **alias de correo electrónico del usuario**, **modelo del dispositivo** y **ubicación** de cada dispositivo seleccionado como destino por esa directiva de cumplimiento.
 
 ## <a name="setting-compliance-report"></a>Informe de configuración de cumplimiento
 
-Este informe permite ver, por configuración de cumplimiento, el número total de dispositivos en cada estado de cumplimiento. El título **Cumplimiento de configuración** está disponible en el **panel Cumplimiento de dispositivos**. En él se muestran todas las opciones de las directivas de cumplimiento de dispositivos creadas por el administrador, las plataformas en las que se han aplicado y el número de dispositivos no conformes.
+En el informe **Conformidad de dispositivos** > **Configuración de cumplimiento** se muestra, por configuración de cumplimiento, el número total de dispositivos en cada estado de cumplimiento. Muestra toda la configuración de directivas de cumplimiento de todas las directivas de cumplimiento, las plataformas a las que se aplica la configuración de directivas y el número de dispositivos no conformes.
 
-![Imagen en que se muestra el informe de cumplimiento de dispositivos por configuración](./media/idc-10.png)
+![Visualización de una lista de todas las configuraciones de las distintas directivas](./media/compliance-policy-monitor/idc-10.png)
 
-Al hacer clic en el mosaico Configuración de cumplimiento, seleccione una de las configuraciones de directivas de cumplimiento de dispositivos para ver el **estado de cumplimiento**, el **alias de correo electrónico del usuario**, el **modelo de dispositivo** y la **ubicación** de cada dispositivo al que se aplique esa configuración de directivas de cumplimiento de dispositivos.
+Cuando se selecciona una configuración específica, puede ver el **estado de cumplimiento**, **alias de correo electrónico del usuario**, **modelo del dispositivo** y **ubicación** de cada dispositivo seleccionado como destino por esa configuración.
 
 ## <a name="view-status-of-device-policies"></a>Ver el estado de las directivas de dispositivo
 
@@ -167,11 +150,11 @@ Esta característica aparece reflejada en el informe de estado del dispositivo:
 1. Seleccione **Cumplimiento de dispositivos** > **Directivas**. Se muestra una lista de directivas (plataforma incluida), si la directiva está asignada y otros detalles.
 2. Seleccione una directiva > **Información general**. En esta vista, la asignación de directiva engloba los siguientes estados:
 
-  - Correcto: se aplica la directiva.
-  - Error: no se ha podido aplicar la directiva. Esto suele mostrarse con un código de error vinculado a una explicación. 
-  - Conflicto: se aplican dos configuraciones al mismo dispositivo, e Intune no puede solucionar el conflicto. Un administrador debe encargarse de revisar.
-  - Pendiente: el dispositivo no se ha registrado aún con Intune para recibir la directiva. 
-  - No aplicable: el dispositivo no puede recibir la directiva. Por ejemplo, la directiva actualiza una configuración específica de iOS 11.1, pero el dispositivo usa iOS 10. 
+    - Correcto: se aplica la directiva.
+    - Error: no se ha podido aplicar la directiva. El mensaje se suele mostrar con un código de error vinculado a una explicación. 
+    - Conflicto: se aplican dos configuraciones al mismo dispositivo, e Intune no puede solucionar el conflicto. Un administrador debe encargarse de revisar.
+    - Pendiente: el dispositivo no se ha registrado aún con Intune para recibir la directiva. 
+    - No aplicable: el dispositivo no puede recibir la directiva. Por ejemplo, la directiva actualiza una configuración específica de iOS 11.1, pero el dispositivo usa iOS 10. 
 
 3. Para ver detalles sobre los dispositivos que usan esta directiva, seleccione uno de los estados. Por ejemplo, seleccione **Correcto**. En la siguiente ventana se muestran detalles concretos del dispositivo, como el nombre del dispositivo y el estado de la implementación.
 

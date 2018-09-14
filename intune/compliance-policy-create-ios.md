@@ -14,12 +14,12 @@ ms.assetid: 3cfb8222-d05b-49e3-ae6f-36ce1a16c61d
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6f711a6bec9be0ac1fd94183931070f9988d49e3
-ms.sourcegitcommit: 2773f388f50654366197a95a6838306f70fc18b8
+ms.openlocfilehash: 1ee08c77fe085ad0f238d63481dd682ea15aa5ce
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2018
-ms.locfileid: "31442651"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313092"
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Agregación de una directiva de cumplimiento para dispositivos iOS en Intune
 
@@ -107,6 +107,11 @@ Para más información sobre los perfiles de correo electrónico, consulte [Conf
 - **Expiración de la contraseña (días)**: seleccione el número de días que faltan para que la contraseña expire y se deba crear una nueva.
 - **Número de contraseñas anteriores que no se pueden reutilizar**: indique el número de contraseñas usadas anteriormente que no se pueden usar.
 
+### <a name="restricted-applications"></a>Aplicaciones restringidas 
+Puede restringir aplicaciones si agrega sus identificadores de lote a la directiva. Después, si un dispositivo tiene instalada la aplicación, el dispositivo se marcará como no conforme. 
+- **Nombre de la aplicación**: escriba un nombre descriptivo que ayude a identificar el identificador de lote. 
+- **Identificador de lote de aplicaciones**: escriba el identificador de lote único asignado por el proveedor de la aplicación. Para buscar el identificador de lote, vea [Cómo buscar el identificador de lote para una aplicación iOS](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app).  
+
 ## <a name="assign-user-groups"></a>Asignación de grupos de usuarios
 
 1. Elija una directiva que haya configurado. Las directivas existentes están en **Conformidad de dispositivos** > **Directivas**.
@@ -116,5 +121,5 @@ Para más información sobre los perfiles de correo electrónico, consulte [Conf
 Ya ha aplicado la directiva a los usuarios. Se evalúa el cumplimiento por parte de los dispositivos usados por los usuarios a los que se aplique la directiva.
 
 ## <a name="next-steps"></a>Pasos siguientes
-[Automatización del correo electrónico y adición de acciones para dispositivos no compatibles](actions-for-noncompliance.md)  
+[Automatización del correo electrónico y adición de acciones para dispositivos no compatibles: Intune](actions-for-noncompliance.md)  
 [Supervisión de las directivas de cumplimiento de dispositivos de Intune](compliance-policy-monitor.md)

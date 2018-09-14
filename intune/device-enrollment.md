@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7aabb010baa4a5e53ad5e4264edc43e3ca111c70
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 1bd9cff2148857ab6b0ea6d6e3c940e1e731c44b
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909208"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313168"
 ---
 # <a name="what-is-device-enrollment"></a>¿Qué es la inscripción de dispositivos?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -34,7 +34,7 @@ De manera predeterminada, los dispositivos de todas las plataformas pueden inscr
 
 | **Método** |  **Se requiere reinicio** |    [**Afinidad de usuario**](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) |   **Bloqueado** | **Detalles** |
 |:---:|:---:|:---:|:---:|:---:|
-| | Los dispositivos se restablecen de fábrica durante la inscripción. |  Se asocia cada dispositivo a un usuario.| Los usuarios no pueden anular la inscripción de los dispositivos.  | |
+| | Durante la inscripción, los dispositivos se borran. |  Se asocia cada dispositivo a un usuario.| Los usuarios no pueden anular la inscripción de los dispositivos.  | |
 |**[BYOD](#bring-your-own-device)** | No|   Sí |   No | [Más información](./apple-mdm-push-certificate-get.md)|
 |**[DEM](#device-enrollment-manager)**| No |No |No  | [Más información](./device-enrollment-program-enroll-ios.md)|
 |**[DEP](#apple-device-enrollment-program)**|   Sí |   Opcional |  Opcional|[Más información](./device-enrollment-program-enroll-ios.md)|
@@ -95,7 +95,7 @@ Más información sobre la inscripción de iOS con Apple Configurator con el Asi
 - [Enroll iOS devices with Configurator and Setup Assistant](apple-configurator-setup-assistant-enroll-ios.md) (Inscripción de dispositivos iOS con el Asistente de configuración y Apple Configurator)
 
 ### <a name="usb-direct"></a>USB-Direct
-Para realizar una inscripción directa, el administrador debe inscribir cada dispositivo manualmente creando una directiva de inscripción y exportándola a Apple Configurator. Los dispositivos corporativos conectados por USB se inscriben directamente, sin necesidad de un restablecimiento de fábrica. Los dispositivos se administran como dispositivos sin usuario. No se bloquean ni se supervisan y no son compatibles con el acceso condicional, la detección de jailbreak ni la administración de aplicaciones móviles.
+Para realizar una inscripción directa, el administrador debe inscribir cada dispositivo manualmente creando una directiva de inscripción y exportándola a Apple Configurator. Los dispositivos corporativos conectados por USB se inscriben directamente y no requieren un borrado. Los dispositivos se administran como dispositivos sin usuario. No se bloquean ni se supervisan y no son compatibles con el acceso condicional, la detección de jailbreak ni la administración de aplicaciones móviles.
 
 Para más información sobre la inscripción de dispositivos iOS, consulte:
 

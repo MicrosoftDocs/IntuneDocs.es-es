@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/24/2018
+ms.date: 08/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a9fb84fd15eb68f007e820e473dd9edf55b37777
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 7195b9d2d64c2282f2380624a209ad45220d3a4f
+ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905026"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43313945"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Creación de un perfil de dispositivo en Microsoft Intune
 
@@ -30,14 +30,14 @@ ms.locfileid: "37905026"
 
 2. En **Microsoft Intune**, seleccione **Configuración del dispositivo** y **Perfiles**. Luego, seleccione **Crear perfil**.
 
-3. Indique las siguientes propiedades:
+3. Introduzca las siguientes propiedades:
 
    - **Nombre**: escriba un nombre descriptivo para el nuevo perfil.
    - **Descripción**: escriba una descripción para el perfil (es opcional, pero se recomienda hacerlo).
    - **Plataforma**: seleccione el tipo de plataforma:  
 
        - **Android**
-       - **Perfiles de trabajo de Android**
+       - **Perfiles de trabajo Android**
        - **iOS**
        - **macOS**
        - **Windows Phone 8.1**
@@ -50,6 +50,7 @@ ms.locfileid: "37905026"
        -  [Características del dispositivo](device-features-configure.md)
        -  [Restricciones de dispositivos](device-restrictions-configure.md)
        -  [Endpoint Protection](endpoint-protection-configure.md)
+       -  [Protección de identidad](identity-protection-configure.md)  
        -  [Quiosco](kiosk-settings.md)
        -  [Correo electrónico](email-settings-configure.md)
        -  [VPN](vpn-settings-configure.md)
