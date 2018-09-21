@@ -15,12 +15,12 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce785ad7898f9e792feeadcd1623bd0989f0d6d0
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: 8e0d8d6aba74a37d1c07fa8445aa98adf5943be2
+ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255549"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44141616"
 ---
 # <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Inscripción de dispositivos mediante una cuenta de administrador de inscripción de dispositivos
 
@@ -53,7 +53,7 @@ Los dispositivos inscritos con una cuenta de administrador de inscripción de di
   - El usuario DEM no puede anular la inscripción de dispositivos inscritos de DEM en el propio dispositivo mediante el Portal de empresa. El administrador de Intune puede anular la inscripción.
   - Solo el dispositivo local aparece en el sitio web o en la aplicación de Portal de empresa.
   - Los usuarios no pueden usar aplicaciones del Programa de Compras por Volumen de Apple (PCV) con las licencias de usuario debido a los requisitos de identificador de Apple por usuario para la administración de aplicaciones.
-  - (Solo iOS) Si usa DEM para inscribir dispositivos iOS, no podrá usar Apple Configurator, el Programa de inscripción de dispositivos de Apple (DEP) o Apple School Manager (ASM) para inscribir dispositivos.
+  - (Solo iOS) Si usa DEM para inscribir dispositivos iOS, no podrá usar Apple Configurator, el Programa de inscripción de dispositivos de Apple (DEP) o Apple School Manager (ASM) para inscribir dispositivos. Esto significa que no se puede poner el dispositivo en modo supervisado y, por tanto, no tendrá acceso a algunas opciones de configuración.
   - (Solo Android) Existe un límite en cuanto a número de dispositivos de perfil de trabajo Android que se pueden inscribir con una sola cuenta DEM. Se puede inscribir un máximo de 10 dispositivos Android for Work por cada cuenta DEM. Esta limitación no engloba los dispositivos Android heredados.
   - Los dispositivos pueden instalar aplicaciones de PCV si disponen de licencias de dispositivo.
   - No se necesita una licencia de dispositivo de Intune para usar DEM. Más información sobre [licencias de usuario y dispositivo](licenses-assign.md#how-user-and-device-licenses-affect-access-to-services).

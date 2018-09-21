@@ -6,7 +6,7 @@ keywords: Almacenamiento de datos de Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 07/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,30 @@ ms.assetid: E85DBB2D-67BB-4E10-82D6-E43046B9C43C
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: dd9fb36bb1b8c5e66d104f530690c5d236ea25e4
-ms.sourcegitcommit: 34e96e57af6b861ecdfea085acf3c44cff1f3d43
+ms.openlocfilehash: 08f5437141cc98161af740d7b8cad7c6cc1ff61c
+ms.sourcegitcommit: 443b4cb3390da47bf1e497b1f0c0137a5ddda7bd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/17/2018
-ms.locfileid: "34223703"
+ms.lasthandoff: 09/06/2018
+ms.locfileid: "43821195"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Registro de cambios en la API Almacenamiento de datos de Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Manténgase al día de los cambios producidos en el Almacén de datos de Intune.
+
+## <a name="1808"></a>1808
+_Publicado en agosto de 2018_
+
+### <a name="v10-collections"></a>Colecciones de v1.0  
+
+Ahora puede usar la versión v1.0 del almacenamiento de datos de Intune mediante la configuración del parámetro de consulta `api-version=v1.0`. Las actualizaciones de las colecciones en el almacenamiento de datos son aditivas por naturaleza y no interrumpen los escenarios existentes.
+
+### <a name="enrollment-failure-collection-released-to-beta"></a>Versión beta de la colección de errores de inscripción
+
+La nueva colección `Enrollment Failure` se ha lanzado en versión beta. Puede usar esta colección para ver los errores más comunes y así comprender cómo evoluciona su suscripción. 
+
 
 ## <a name="1805"></a>1805
 _Fecha de publicación: mayo de 2018_

@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cf6e7098462931000ce4cd5546390d27d68677f1
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 5b5395ed4095280230c9cf678395df03bbce41ea
+ms.sourcegitcommit: 8fdddb684ecf5eabf071907168413bcd89a2f702
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330167"
+ms.lasthandoff: 09/07/2018
+ms.locfileid: "44141684"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Incorporación de aplicaciones a Microsoft Intune
 
@@ -116,7 +116,7 @@ Las aplicaciones administradas de Intune también pueden habilitar la protecció
 
 ### <a name="understanding-licensed-apps"></a>Información sobre el uso de aplicaciones con licencia
 Además de comprender las aplicaciones web, las aplicaciones de la tienda y las aplicaciones LOB, también debe conocer las diferencias de las aplicaciones del programa de compras por volumen y las aplicaciones con licencia, como, por ejemplo: 
-- **Programa de Compras por Volumen de Apple para empresas (iOS y MacOS)**: la App Store de iOS permite comprar varias licencias de una aplicación que quiera ejecutar en la empresa. Comprar varias copias permite administrar de manera eficaz las aplicaciones de la empresa. Para obtener más información, consulte [Administrar aplicaciones de iOS compradas a través de un programa de compras por volumen con Microsoft Intune](vpp-apps-ios.md).
+- **Programa de Compras por Volumen de Apple para empresas (iOS)**: la App Store de iOS permite comprar varias licencias de una aplicación que quiera ejecutar en la empresa. Comprar varias copias permite administrar de manera eficaz las aplicaciones de la empresa. Para obtener más información, consulte [Administrar aplicaciones de iOS compradas a través de un programa de compras por volumen con Microsoft Intune](vpp-apps-ios.md).
 - **Perfil de trabajo Android**: la forma en que se asignan aplicaciones a dispositivos de perfil de trabajo Android es diferente a cómo se asignan a dispositivos Android estándar. Todas las aplicaciones que se instalen para perfiles de trabajo Android proceden de Google Play Store administrado. Inicie sesión en la tienda, busque las aplicaciones que desee y apruébelas. La aplicación, a continuación, aparece en el nodo **Aplicaciones con licencia** de Azure Portal y puede administrar la asignación de las aplicaciones como lo haría con cualquier otra aplicación.
 - **Microsoft Store para Empresas (Windows 10)**: en Microsoft Store para Empresas puede buscar y comprar aplicaciones para su organización, tanto individuales como por volumen. Si conecta la tienda a Microsoft Intune, puede administrar las aplicaciones adquiridas por volumen en Azure Portal. Para más información, vea [Administrar las aplicaciones de Microsoft Store para Empresas](windows-store-for-business.md).
 

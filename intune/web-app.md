@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 05/15/2018
+ms.date: 09/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 5f08752f-0e87-4ad9-a34c-4991b3150775
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ec483218cb86426b237c40c8831a2f0880847ade
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 7e974a17506be36c725dddfa21329269c8fcebc8
+ms.sourcegitcommit: 572287c3bb0020b6b75e4e2ac27019c20c699159
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347464"
+ms.lasthandoff: 09/10/2018
+ms.locfileid: "44340276"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>Agregar aplicaciones web a Microsoft Intune
 
@@ -62,6 +62,8 @@ Para agregar una aplicación a Intune como acceso directo a una aplicación de I
 
 > [!Note]
 > Los usuarios deben agregar el widget de Intune a su pantalla de inicio para mostrar las aplicaciones web asignadas a dispositivos Android.
+>
+> Actualmente, la implementación de aplicaciones web de Intune para dispositivos iOS está asociada al perfil de administración y no se puede quitar manualmente. Puede cambiar el tipo de implementación a **Desinstalar** en el portal de Intune; en este momento, puede quitar automáticamente la aplicación web. Sin embargo, si quita la implementación antes de cambiar la intención de asignación de aplicaciones a **Desinstalar**, la aplicación web estará de forma permanente en su sitio en el dispositivo hasta que se cancele la suscripción de este desde Intune.
 
 ## <a name="next-steps"></a>Pasos siguientes
 
