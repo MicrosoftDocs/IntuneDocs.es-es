@@ -14,12 +14,12 @@ ms.assetid: 1ba77bc7-505e-4eca-a49e-dcdaa75d0043
 ms.reviewer: angerobe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9bead87f80cf8d1f102f396bdd6c9573786c1b9e
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: b9efb60d169ba6f88b4765d3fc651f3a0596b230
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34474639"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028586"
 ---
 # <a name="view-and-correct-personal-data"></a>Visualización y corrección de datos personales
 
@@ -33,7 +33,7 @@ Los administradores de Intune pueden ver algunos datos personales en función de
 Los administradores pueden ver la información personal del usuario final en varias hojas en la interfaz de usuario de Intune. En los siguientes artículos se explica a qué información tienen o no acceso los administradores:
 - En la sección [Ver detalles del dispositivo](device-inventory.md) en Intune se explica cómo puede revisar los detalles del dispositivo de un usuario final.
 - En [Supervisión de información y asignaciones de aplicaciones](apps-monitor.md) se explica cómo ver los detalles de las aplicaciones instaladas en el dispositivo de un usuario final.
-- El artículo [¿Qué información puede ver mi empresa cuando inscribo mi dispositivo?](https://docs.microsoft.com/en-us/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune) proporciona a los usuarios finales una lista con los datos que su empresa puede y no puede ver. Es mejor decir claramente a los usuarios qué tipo de datos se van a recopilar y por qué. Este artículo puede ser el primer paso para hacerlo.
+- El artículo [¿Qué información puede ver mi empresa cuando inscribo mi dispositivo?](https://docs.microsoft.com/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune) proporciona a los usuarios finales una lista con los datos que su empresa puede y no puede ver. Es mejor decir claramente a los usuarios qué tipo de datos se van a recopilar y por qué. Este artículo puede ser el primer paso para hacerlo.
 
 ### <a name="who-can-view-the-data"></a>¿Quién puede ver los datos?
 
