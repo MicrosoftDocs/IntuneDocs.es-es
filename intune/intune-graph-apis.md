@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3ca5b09d415466d2ab6ce2f70a53f7fd8444d28f
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: 07c07caa7d64e18aae8b44810a4fdcb2b645b9fa
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31835557"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562942"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Cómo usar Azure AD para acceder a las API de Intune en Microsoft Graph
 
@@ -162,7 +162,7 @@ En este momento, todos los ámbitos de permiso de Intune requieren acceso de adm
 - Configuración **Habilitar acceso**: __Leer en aplicaciones de Microsoft Intune__
 
 - Permite el acceso de lectura a las siguientes propiedades de entidades y estado:
-    - Aplicaciones móviles
+    - Aplicaciones de cliente
     - Categorías de aplicaciones móviles
     - Directivas de protección de aplicaciones
     - Configuraciones de aplicaciones
@@ -175,7 +175,7 @@ En este momento, todos los ámbitos de permiso de Intune requieren acceso de adm
 
 - También permite cambios en las siguientes entidades:
 
-    - Aplicaciones móviles
+    - Aplicaciones de cliente
     - Categorías de aplicaciones móviles
     - Directivas de protección de aplicaciones
     - Configuraciones de aplicaciones
