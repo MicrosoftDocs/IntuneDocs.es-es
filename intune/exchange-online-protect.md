@@ -3,8 +3,8 @@ title: Exchange sin administración de dispositivos
 titleSuffix: Microsoft Intune
 description: Use Microsoft Intune para permitir que los empleados tengan acceso al correo electrónico de Office 365 Exchange Online sin necesidad de configurar un sistema de administración de dispositivos.
 keywords: Acceso al correo electrónico de Office 365 Exchange
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 10/31/2017
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.assetid: 88a0d3b9-2622-403b-8374-1396afd8066e
 ms.reviewer: pchacon
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 940d64cccad93a8198e091b48a4c50d101ad7977
-ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
+ms.openlocfilehash: 482939ac72899704e8e3696be4f0321ff977630f
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403483"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231974"
 ---
 # <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>Proteger Office 365 Exchange Online sin requerir la administración de dispositivos
 

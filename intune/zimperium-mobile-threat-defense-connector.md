@@ -3,8 +3,8 @@ title: Conector MTD de Zimperium con Intune
 titleSuffix: Intune on Azure
 description: Obtenga información sobre cómo integrar Intune con Zimperium Mobile Threat Defense para controlar el acceso de los dispositivos móviles a los recursos corporativos.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 12/29/2017
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: 975d8d84-792a-41ad-925a-4a7f1ae4dcaf
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 513db12094b5f58ccf743b68101b820afbcdff48
-ms.sourcegitcommit: 4db0498342364f8a7c28995b15ce32759e920b99
+ms.openlocfilehash: 6deed5de94b72ec3dfb5e8336cc2a58678b4748f
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/08/2018
-ms.locfileid: "29780074"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231481"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>Conector Mobile Threat Defense de Zimperium con Intune
 
@@ -78,7 +78,7 @@ Detecte amenazas para la red, como **ataques de tipo Man-in-the-middle**, y evit
 
 **Acceso concedido tras la corrección:**
 
-![Ejemplo de acceso concedido tras la solución para SharePoint](./media/network_spo_unblocked_Zimperium.png)
+![Acceso concedido tras la solución](./media/network_spo_unblocked_Zimperium.png)
 
 ## <a name="supported-platforms"></a>Plataformas compatibles
 

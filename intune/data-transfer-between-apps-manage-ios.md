@@ -3,8 +3,8 @@ title: Administración de la transferencia de datos entre aplicaciones iOS
 titlesuffix: Microsoft Intune
 description: Descubra cómo usar directivas de administración de aplicaciones móviles en Microsoft Intune para administrar transferencias de datos entre aplicaciones.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 01/02/2018
 ms.topic: article
@@ -15,12 +15,12 @@ ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2991aa947a693d2eb71a355047ed266838dd92a4
-ms.sourcegitcommit: be67f8293b47cc08a46d328a44a50a7ab67c2052
+ms.openlocfilehash: 23e18ef2d7870a22699d898ad937febf9e61b804
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/13/2018
-ms.locfileid: "40251555"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231679"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Administración de transferencias de datos entre aplicaciones iOS en Microsoft Intune
 ## <a name="manage-ios-apps"></a>Administrar aplicaciones iOS
@@ -102,5 +102,5 @@ Por ejemplo, la configuración de directivas **Require app PIN** (Requerir el PI
 Primero, [cree y asigne una directiva de protección de aplicaciones](app-protection-policies.md) para la aplicación iOS. Consulte [Validate app protection policies](app-protection-policies-validate.md) (Validar directivas de protección de aplicaciones) para obtener más información sobre cómo probar la directiva de protección de aplicaciones.
 
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 [¿Qué es la directiva de protección de aplicaciones de Intune?](app-protection-policy.md)
