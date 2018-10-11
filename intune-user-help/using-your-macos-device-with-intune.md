@@ -1,11 +1,11 @@
 ---
-title: Uso de un dispositivo iOS o macOS con Intune | Microsoft Docs
-description: Lista de vínculos a tareas que puede realizar en el dispositivo móvil iOS o macOS cuando este está inscrito en Intune
+title: Usar un dispositivo macOS con Intune | Microsoft Docs
+description: Encuentre vínculos para solucionar problemas o administrar su dispositivo móvil macOS desde la aplicación Portal de empresa
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 4/20/2018
+ms.date: 09/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,20 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 02ccde8299e4ad5d6aacb2abd120c094f752c5e6
-ms.sourcegitcommit: 9536300a6211bac4bdc733593a40c1ae47611de3
+ms.openlocfilehash: 887b9355bc68edca314a49743b8d11728ca2361a
+ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2018
-ms.locfileid: "31771863"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168920"
 ---
-# <a name="using-your-macos-device-with-intune"></a>Usar un dispositivo macOS con Intune
+# <a name="using-your-macos-device-with-intune-company-portal"></a>Use su dispositivo macOS con Portal de empresa de Intune
 
-Intune tiene varias características que facilitan la vida laboral. Esta es una lista de las tareas más habituales que la empresa puede pedirle.
+En este artículo se enumeran tareas e información específica para el Portal de empresa para macOS. Le puede ser útil para solucionar problemas y administrar un dispositivo macOS. Haga clic en cualquier vínculo para ver más detalles, pasos y capturas de pantalla. 
 
 ## <a name="supported-versions"></a>Versiones compatibles
 
-Intune actualmente admite OS X El capitán 10.11 y versiones posteriores para dispositivos macOS.
+Actualmente el Portal de empresa para macOS admite OS X El capitán 10.11 y versiones posteriores para dispositivos macOS.
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Inscripción en Intune e instalación del Portal de empresa
 

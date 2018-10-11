@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2018
+ms.date: 09/21/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,17 +15,19 @@ ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
 ms.reviewer: aiwang
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c8c87b5a76a69809e46fe3f4c5d74019546a819d
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: b4905e637f7ef709c88371a41ec9275115d571e1
+ms.sourcegitcommit: ddf90877d1ea9da70fd0ef228560f455625e35ba
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330235"
+ms.lasthandoff: 09/21/2018
+ms.locfileid: "46563252"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Asignación de aplicaciones de Office 365 a dispositivos Windows 10 con Microsoft Intune
 
 Este tipo de aplicación facilita la asignación de aplicaciones de Office 365 a dispositivos que administre y que ejecuten Windows 10. También puede instalar aplicaciones para el cliente de escritorio de Microsoft Project Online y Microsoft Visio Pro para Office 365, si posee sus licencias. Las aplicaciones que desea se muestran como una única entrada en la lista de aplicaciones de la consola de Intune.
 
+> [!NOTE]
+> Debe usar las licencias de Office 365 ProPlus para activar las aplicaciones de Office 365 ProPlus implementadas a través de Microsoft Intune. Actualmente, la edición para empresas de Office 365 no es compatible con Intune.
 
 ## <a name="before-you-start"></a>Antes de empezar
 

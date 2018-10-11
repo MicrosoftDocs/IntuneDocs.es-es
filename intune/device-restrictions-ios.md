@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 71ed2458e35934de9da297140d49d6d4128b0784
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 677b3853d1923a52572d8088c885f794175c4d52
+ms.sourcegitcommit: a13d1eafc979a9cfeb4adbdea861e2784c2b1068
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329825"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46330004"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Configuración de restricciones de dispositivos iOS de Microsoft Intune
 
@@ -114,7 +114,7 @@ El modo supervisado de iOS solo se puede habilitar durante la configuración ini
 
 -   **Acceso al centro de control con dispositivo bloqueado**: permite al usuario acceder a la aplicación del centro de control cuando el dispositivo está bloqueado.
 -   **Notificaciones con dispositivo bloqueado**: permite al usuario acceder a la vista de notificaciones sin desbloquear el dispositivo.
--   **Permitir libreta con dispositivo bloqueado**: permite al usuario acceder a la aplicación Libreta mientras el dispositivo está bloqueado.
+-   **Notificaciones de Cartera con dispositivo bloqueado**: permite al usuario acceder a la aplicación Cartera mientras el dispositivo está bloqueado.
 -   **Vista de hoy con dispositivo bloqueado**: permite al usuario ver la vista del día de hoy cuando el dispositivo está bloqueado.
 
 ## <a name="app-store-doc-viewing-gaming"></a>Tienda de aplicaciones, presentación de documentos, juegos

@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/5/2018
+ms.date: 9/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cef98527ee2c281547f8046f3c6f08275d8f0807
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 0b2a31a90dc0d88386a829756116edebd28990f9
+ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329390"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45602187"
 ---
 # <a name="kiosk-settings-for-android-devices-in-intune"></a>Configuración del quiosco multimedia para Android en Intune
 
@@ -27,7 +27,7 @@ Puede configurar un dispositivo de quiosco multimedia para una sola aplicación 
 
 Si el perfil de restricción de un dispositivo de quiosco multimedia se establece en **Modo de quiosco multimedia** = **Quiosco multimedia con una sola aplicación**, los usuarios solo podrán acceder a una sola aplicación. Al iniciar un dispositivo configurado en este modo, se inicia la aplicación específica; los usuarios no pueden abrir nuevas aplicaciones ni modificar la aplicación en ejecución.
 
-1. Asegúrese de que la aplicación que quiere usar en el dispositivo de quiosco multimedia se ha [implementado en el dispositivo](apps-deploy.md) y que ha asignado la aplicación al grupo de dispositivos que creó para los dispositivos de quiosco multimedia.
+1. Asegúrese de que la aplicación que quiere en el dispositivo de quiosco multimedia se ha [implementado en el dispositivo](apps-deploy.md) y que ha asignado la aplicación al grupo de dispositivos que creó para los dispositivos de quiosco multimedia.
 2. Vaya al [Portal de Intune](https://portal.azure.com) y elija **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
 3. En la hoja **Crear perfil**, rellene los campos siguientes:
      - **Nombre**
@@ -51,7 +51,7 @@ Para configurar un dispositivo Android como quiosco multimedia para varias aplic
 2. [Agregue y asigne aplicaciones que se puedan utilizar en el quiosco multimedia](#add-and-assign-apps-that-can-be-used-in-kiosk-mode).
 3. (Opcional) [Agregue vínculos web que se puedan usar en el quiosco multimedia](#add-web-links-that-can-be-used-in-kiosk-mode).
 
-### <a name="import-and-deply-the-managed-home-screen-app"></a>Importar e implementar la aplicación Managed Home Screen
+### <a name="import-and-deploy-the-managed-home-screen-app"></a>Importar e implementar la aplicación Managed Home Screen
 
 1. Vaya a la [página Managed Home Screen desde Google Play](https://play.google.com/work/apps/details?id=com.microsoft.launcher.enterprise) e inicie sesión con la misma cuenta que usa para otras aplicaciones de Google Play administrado.
 2. Elija **Aprobar**.
@@ -59,6 +59,9 @@ Para configurar un dispositivo Android como quiosco multimedia para varias aplic
 4. Elija **Aplicaciones** > **Managed Home Screen** > **Asignaciones** > **Agregar grupo**.
 5. En **Tipo de asignación**, elija **Obligatoria**.
 6. Elija **Grupos para incluir** > **Seleccionar grupos para incluir** > elija el grupo de dispositivos que ha creado para los dispositivos de quiosco multimedia > **seleccione** > **Aceptar** > **Aceptar** > **Guardar**.
+
+> [!NOTE]
+> Se agregará un icono cuando agregue la aplicación Managed Home Screen al perfil de quiosco con varias aplicaciones. No obstante, no ocurrirá nada al seleccionar el icono. Por tanto, no tiene que agregar la aplicación Managed Home Screen al perfil de quiosco con varias aplicaciones.
 
 ### <a name="add-and-assign-apps-that-can-be-used-in-kiosk-mode"></a>Agregar y asignar aplicaciones que se puedan usar en el quiosco multimedia
 
@@ -76,7 +79,7 @@ Para cada aplicación que quiera que esté disponible en los dispositivos de qui
 3. Elija **Configurar** y proporcione la información necesaria. No es necesario agregar una imagen de logotipo, puesto que se obtendrá automáticamente del favicon.ico del sitio web.
 4. Seleccione **Aceptar** > **Agregar**.
 
-Asegúrese de implementar una aplicación de explorador web en los dispositivos del quiosco mediante [Aplicaciones móviles](apps-add.md).
+Asegúrese de implementar una aplicación web en los dispositivos de quiosco. Para más información, vea [Agregar aplicaciones web a Microsoft Intune](web-app.md).
 
 ### <a name="create-a-multi-app-kiosk-profile"></a>Crear un perfil de quiosco multimedia con varias aplicaciones
 

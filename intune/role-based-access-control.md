@@ -2,8 +2,8 @@
 title: RBAC con Microsoft Intune
 description: Sepa cómo el control de acceso basado en roles (RBAC) le permite controlar quién puede realizar acciones y efectuar cambios en Microsoft Intune.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 02/27/2018
 ms.topic: conceptual
@@ -14,12 +14,12 @@ ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: ad5bf36eeb81c5deabc2c3efd73cddcc3db8a70c
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 5c75bd80e848bbd309051a9c6f3e149abd7a46ed
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253704"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028705"
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Control de administración basada en roles (RBAC) con Microsoft Intune
 
@@ -42,6 +42,7 @@ Con la nueva versión de Azure Portal, **Azure Active Directory (Azure AD)** ofr
 
     > [!IMPORTANT]
     > El rol de administrador del servicio de Intune no proporciona la capacidad para administrar la configuración de acceso condicional de Azure AD.
+    > Los miembros de roles de Intune requieren una licencia de Intune.
 
     > [!TIP]
     > Intune también muestra tres extensiones de Azure AD: **usuarios**, **grupos** y **acceso condicional** que se controlan mediante RBAC en Azure AD. Además, el **administrador de cuentas de usuario** solo realiza actividades de usuario o grupo de AAD y no tiene permisos completos para realizar todas las actividades en Intune. Consulte [RBAC con Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles) para obtener información más detallada.

@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/21/2018
+ms.date: 09/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8d06b5120bc3ff3e3e14d1c5b089bbebc7b53558
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 11ccace4ca8e43e09b8aebeb92530629cf50a472
+ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37909344"
+ms.lasthandoff: 09/14/2018
+ms.locfileid: "45602323"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Incorporación de una directiva de cumplimiento de dispositivos para dispositivos Windows en Intune
 
@@ -111,6 +111,10 @@ Los equipos con Windows 8.1 devuelven la versión **3**. Si la regla de la versi
 
 - **Requerir BitLocker**: cuando BitLocker está activado, el dispositivo puede proteger los datos almacenados en la unidad contra el acceso no autorizado cuando el sistema está apagado o pasa a hibernación. La característica Cifrado de unidad BitLocker de Windows cifra todos los datos almacenados en el volumen del sistema operativo Windows. BitLocker usa el TPM para ayudar a proteger el sistema operativo Windows y los datos de usuario. También ayuda a garantizar que un equipo no se manipule, incluso si se deja desatendido, se pierde o se lo roban. Si el equipo incluye un TPM compatible, BitLocker lo usa para bloquear las claves de cifrado que protegen los datos. Como resultado, las claves no son accesibles hasta que TPM termina la comprobación del estado del equipo.
 - **Debe estar habilitado el arranque seguro en el dispositivo**: si el arranque seguro está habilitado, el sistema debe arrancar en un estado de confianza de fábrica. Además, si el arranque seguro está habilitado, los componentes principales que se usan para arrancar el equipo deben tener las firmas de cifrado correctas que son de confianza para la organización que fabricó el dispositivo. El firmware UEFI comprueba la firma antes de permitir iniciar el equipo. Si los archivos se han manipulado e interrumpido su firma, el sistema no arrancará.
+
+  > [!NOTE]
+  > La configuración de **Debe estar habilitado el arranque seguro en el dispositivo** es compatible con dispositivos TPM 1.2 y 2.0. Para los dispositivos que no son compatibles con TPM 2.0 o versiones posteriores, el estado de la directiva en Intune se muestra como **No conforme**. Esta es una limitación del servicio [Atestación de estado de dispositivo](https://docs.microsoft.com/windows/security/information-protection/tpm/trusted-platform-module-overview#device-health-attestation) en Windows 10.
+
 - **Requiere integridad de código**: la integridad de código es una característica que valida la integridad de un archivo del sistema o controlador cada vez que se carga en la memoria. La integridad de código detecta si se está cargando en el kernel un archivo del sistema o controlador sin firmar. O si se ha modificado un archivo del sistema mediante software malintencionado ejecutado por usuario con privilegios de administrador.
 
 Consulte [Health Attestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) (CSP de atestación de mantenimiento) para detalles sobre cómo funciona el servicio HAS.

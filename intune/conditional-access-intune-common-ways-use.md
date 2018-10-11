@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 09/25/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: a0b8e55e-c3d8-4599-be25-dc10c1027b62
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 59cba4ead614fe0b5deac535efb9bcb303d5810d
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: ee14a7983451ae37113462e1c8f0aac5785f2f09
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253616"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187876"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>¿Cuáles son las formas habituales de usar el acceso condicional con Intune?
 
@@ -45,6 +45,13 @@ Las directivas de acceso condicional basado en dispositivos para Exchange en lí
 -   Más información sobre las [directivas de cumplimiento de dispositivos de Intune](device-compliance.md).
 
 -   Más información sobre la [protección del correo electrónico, Office 365 y otros servicios mediante el acceso condicional con Intune](https://docs.microsoft.com/intune-classic/deploy-use/restrict-access-to-email-and-o365-services-with-microsoft-intune).
+
+> [!NOTE]
+> En los dispositivos Android, cuando habilita el acceso basado en dispositivos para SharePoint Online, los usuarios deben activar la opción **Habilitar acceso al explorador** en el dispositivo inscrito como se indica aquí:
+> 1. Inicie la **aplicación de portal de empresa**.
+> 2. Vaya a la página **Configuración** desde los tres puntos (...) o el botón de menú de hardware.
+> 3. Presione el botón **Habilitar acceso al explorador** . 
+> 4. En el explorador Chrome, cierre la sesión de Office 365 y reinicie Chrome.
 
 ### <a name="conditional-access-for-exchange-on-premises"></a>Acceso condicional para Exchange local
 

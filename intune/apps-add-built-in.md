@@ -15,12 +15,12 @@ ms.assetid: 0ec8de66-5a0f-4c8d-afbf-c2becc7d6eec
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 908135e93fd3980af9d9e80d9c5cf3b4a8abddc3
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.openlocfilehash: 62a7f2f45ccd98612e56e253945974a8eb193f25
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058758"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562721"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>Incorporación de aplicaciones integradas a Microsoft Intune
 
@@ -48,7 +48,7 @@ Para agregar una aplicación integrada a las aplicaciones que tiene disponibles 
 ## <a name="configure-app-information"></a>Configuración de información de la aplicación
 
 Puede modificar la información sobre la aplicación integrada. Esta información le ayuda a identificar la aplicación en Intune y ayuda a los usuarios a encontrar la aplicación en el portal de empresa.
-1. En el panel **Aplicaciones móviles - Aplicaciones**, seleccione la aplicación integrada que quiera modificar.  
+1. En el panel **Aplicaciones cliente - Aplicaciones**, seleccione la aplicación integrada que quiera modificar.  
     Se muestra un panel de la aplicación integrada.
 2. En **Administrar**, seleccione la opción **Propiedades**.
 3. Para modificar la información de la aplicación integrada, seleccione la opción **Configurar**.

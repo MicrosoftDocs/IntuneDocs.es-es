@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce017f323ebbe4095f5aa31990878afce0116573
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 80b860810800ca887ac55de6fbfc41b2fded3b12
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321244"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028739"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar y usar certificados SCEP con Intune
 
@@ -82,7 +82,7 @@ Para poder configurar perfiles de certificado, lleve a cabo los siguientes pasos
 Cree una cuenta de usuario de dominio que vaya a usar como cuenta de servicio NDES. Esta cuenta se especifica al configurar las plantillas en la CA emisora antes de instalar y configurar NDES. Asegúrese de que el usuario tenga los derechos predeterminados, los derechos **Iniciar sesión localmente**, **Iniciar sesión como un servicio** e **Iniciar sesión como trabajo por lotes**. Algunas organizaciones tienen directivas de protección que deshabilitan estos derechos.
 
 #### <a name="step-2---configure-certificate-templates-on-the-certification-authority"></a>Paso 2: configurar plantillas de certificado en la entidad de certificación
-En esta tarea tendrá que hacer lo siguiente:
+En este paso, hará lo siguiente:
 
 - Configurar una plantilla de certificado para NDES
 - Publicar la plantilla de certificado para NDES
@@ -145,7 +145,7 @@ Configure la CA para permitir que el solicitante especifique el período de vali
 3. Valide que la plantilla se publicó visualizándola en la carpeta **Plantillas de certificado** .
 
 #### <a name="step-3---configure-prerequisites-on-the-ndes-server"></a>Paso 3: configurar los requisitos previos en el servidor NDES
-En esta tarea tendrá que hacer lo siguiente:
+En este paso, hará lo siguiente:
 
 - Agregar NDES a un servidor con Windows Server y configurar IIS para que admita NDES
 - Agregar la cuenta de servicio NDES al grupo IIS_IUSRS
@@ -156,7 +156,7 @@ En esta tarea tendrá que hacer lo siguiente:
    1. En el asistente, seleccione **Servicios de certificados de Active Directory** para obtener acceso a los servicios de rol de AD CS. Seleccione el **Servicio de inscripción de dispositivos de red**, desactive **Entidad de certificación**y complete el asistente.
 
       > [!TIP]
-      > En **Progreso de la instalación**, no marque **Cerrar**. En su lugar, seleccione el vínculo **Configurar Servicios de certificados de Active Directory en el servidor de destino**. Se abre el asistente para **Configuración de AD CS**, que se usa en la siguiente tarea. Una vez abierta la configuración de AD CS, puede cerrar al Asistente para agregar roles y características.
+      > En **Progreso de la instalación**, no marque **Cerrar**. En su lugar, seleccione el vínculo **Configurar Servicios de certificados de Active Directory en el servidor de destino**. Se abre el asistente para **Configuración de AD CS**, que se usa en el siguiente paso. Una vez abierta la configuración de AD CS, puede cerrar al Asistente para agregar roles y características.
 
    2. Cuando NDES se agrega al servidor, el asistente instala también IIS. Asegúrese de que IIS tenga las siguientes configuraciones:
 
@@ -181,7 +181,7 @@ En esta tarea tendrá que hacer lo siguiente:
     `setspn –s http/Server01.contoso.com contoso\NDESService`
 
 #### <a name="step-4---configure-ndes-for-use-with-intune"></a>Paso 4: configurar NDES para su uso con Intune
-En esta tarea tendrá que hacer lo siguiente:
+En este paso, hará lo siguiente:
 
 - Configurar NDES para su uso con la CA emisora
 - Enlazar el certificado de autenticación (SSL) de servidor en IIS
@@ -190,7 +190,7 @@ En esta tarea tendrá que hacer lo siguiente:
 1. En el servidor NDES, abra el asistente para Configuración de AD CS y realice las actualizaciones siguientes:
 
     > [!TIP]
-    > Si hizo clic en el vínculo de la tarea anterior, este asistente ya está abierto. De lo contrario, abra el Administrador del servidor para obtener acceso a la configuración posterior a la implementación de Servicios de certificados de Active Directory.
+    > Si hizo clic en el vínculo del paso anterior, este asistente ya está abierto. De lo contrario, abra el Administrador del servidor para obtener acceso a la configuración posterior a la implementación de Servicios de certificados de Active Directory.
 
    - En **Servicios de rol**, seleccione el **Servicio de inscripción de dispositivos de red**.
    - En **Cuenta de servicio para NDES**, especifique la cuenta de servicio NDES.
@@ -202,7 +202,7 @@ En esta tarea tendrá que hacer lo siguiente:
 
     `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\MSCEP\`
 
-    Para actualizar esta clave, identifique el **Propósito** de la plantilla de certificado (se encuentra en la pestaña **Administración de solicitudes**). Luego actualice la entrada del Registro correspondiente al sustituir los datos existentes por el nombre de la plantilla de certificado (no el nombre para mostrar de la plantilla) que ha especificado en la tarea 1. La tabla siguiente asigna el propósito de la plantilla de certificado a los valores del registro:
+    Para actualizar esta clave, identifique el **Propósito** de la plantilla de certificado (se encuentra en la pestaña **Administración de solicitudes**). Luego actualice la entrada correspondiente del Registro mediante la sustitución de los datos existentes por el nombre de la plantilla de certificado (no el nombre para mostrar de la plantilla) que ha especificado en el paso 2. La tabla siguiente asigna el propósito de la plantilla de certificado a los valores del registro:
 
     |Plantilla de certificado Propósito (en la pestaña Tratamiento de la solicitud)|Valor del registro que se va a editar|Valor que se ve en la consola de administración de Intune para el perfil de SCEP|
     |---|---|---|
@@ -229,7 +229,7 @@ En esta tarea tendrá que hacer lo siguiente:
 
     ![Probar SCEP](./media/SCEP_NDES_URL.png)
 
-    Si aparece **503 Servicio no disponible**, compruebe el Visor de eventos. Es probable que el grupo de aplicaciones se haya detenido debido a la falta de un derecho para el usuario SCEP. Esos derechos se describen en la tarea 1.
+    Si aparece **503 Servicio no disponible**, compruebe el Visor de eventos. Es probable que el grupo de aplicaciones se haya detenido debido a la falta de un derecho para el usuario SCEP. Esos derechos se describen en el paso 1.
 
 ##### <a name="install-and-bind-certificates-on-the-ndes-server"></a>Instalar y enlazar certificados en el servidor NDES
 
@@ -278,7 +278,7 @@ En esta tarea tendrá que hacer lo siguiente:
 4. Reinicie el servidor de NDES. El servidor está ya preparado para admitir el conector certificado.
 
 #### <a name="step-5---enable-install-and-configure-the-intune-certificate-connector"></a>Paso 5: habilitar, instalar y configurar Intune Certificate Connector
-En esta tarea tendrá que hacer lo siguiente:
+En este paso, hará lo siguiente:
 
 - Habilitar la compatibilidad con SCEP en Intune.
 - Descargue, instale y configure Certificate Connector en el servidor que hospede el rol Servicio de inscripción de dispositivos de red (NDES) de su entorno. Para aumentar la escala de la implementación de NDES en la organización, puede instalar varios servidores NDES con Microsoft Intune Certificate Connector en cada uno de ellos.
@@ -299,7 +299,7 @@ En esta tarea tendrá que hacer lo siguiente:
     > [!NOTE]
     > Cuando instala NDES para Intune independiente, el servicio de CRP se instala automáticamente con Certificate Connector. Al usar Intune con Configuration Manager, instale el punto de registro de certificados como un rol de sistema de sitio independiente.
 
-6. Cuando se le solicite el certificado de cliente para el conector de certificado, haga clic en **Seleccionar** y seleccione el certificado de **autenticación del cliente** instalado en el servidor NDES en la tarea 3.
+6. Cuando se le solicite el certificado de cliente para el conector de certificado, haga clic en **Seleccionar** y seleccione el certificado de **autenticación del cliente** instalado en el servidor NDES en el paso 4.
 
     Después de seleccionar el certificado de autenticación del cliente, volverá a la superficie del **Certificado de cliente para el conector de certificado para Microsoft Intune** . Aunque no se muestra el certificado seleccionado, seleccione **Siguiente** para ver las propiedades de dicho certificado. Seleccione **Siguiente** y luego **Instalar**.
 
@@ -450,7 +450,7 @@ A partir de la versión 6.1806.x.x, el servicio de conector de Intune registra l
 | -------------   | -------------   | -------------      |
 | 0x00000000 | Correcto  | Correcto |
 | 0x00000400 | PKCS_Issue_CA_Unavailable  | La entidad de certificación no es válida o no está disponible. Compruebe que la entidad de certificación está disponible y que el servidor puede comunicarse con él. |
-| 0x00000401 | Symantec_ClientAuthCertNotFound  | No se encontró el certificado de autenticación de cliente de Symantec en el almacén de certificados local. Vea el artículo [Instalación del certificado de autorización de registro de Symantec](https://docs.microsoft.com/en-us/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate) para más información.  |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | No se encontró el certificado de autenticación de cliente de Symantec en el almacén de certificados local. Vea el artículo [Instalación del certificado de autorización de registro de Symantec](https://docs.microsoft.com/intune/certificates-symantec-configure#install-the-symantec-registration-authorization-certificate) para más información.  |
 | 0x00000402 | RevokeCert_AccessDenied  | La cuenta especificada no tiene permisos para revocar un certificado de una entidad de certificación. Vea el campo Nombre de CA en los detalles del mensaje del evento para determinar la entidad de certificación emisora.  |
 | 0x00000403 | CertThumbprint_NotFound  | No se pudo encontrar un certificado que coincida con los datos especificados. Inscriba el conector de certificado e inténtelo de nuevo. |
 | 0x00000404 | Certificate_NotFound  | No se pudo encontrar un certificado que coincida con la entrada proporcionada. Vuelva a inscribir el conector de certificado e inténtelo de nuevo. |

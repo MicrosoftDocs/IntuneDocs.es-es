@@ -14,18 +14,18 @@ ms.assetid: 40fa5a2e-6c0f-4150-9740-d5ddc0cdbda0
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: 48f15493d25ba431cedc76533c35c7307fd0f848
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 9cba874c9288b86f5676b38e587a68c227913200
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44254146"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562823"
 ---
 # <a name="microsoft-intune-service-description"></a>Descripción del servicio Microsoft Intune
 
 Intune es un servicio de administración de movilidad empresarial (EMM) basado en nube que ayuda a los empleados a ser productivos mientras mantiene protegidos los datos corporativos. Intune permite:
 * Administrar los dispositivos móviles que los empleados usan para tener acceso a datos de la empresa.
-* Administrar las aplicaciones móviles que usa la plantilla.
+* Administrar las aplicaciones cliente que usa la plantilla.
 * Proteger la información de la empresa al ayudar a controlar la manera en que los empleados tienen acceso a ella y la comparten.
 * Garantizar que los dispositivos y las aplicaciones sean compatibles con los requisitos de seguridad de la empresa.
 

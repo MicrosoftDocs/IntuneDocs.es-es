@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 08/16/2018
+ms.date: 09/14/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 4189e9357c7ed135ab219b38f22d34a09ebb5318
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 5acdcd0a8c2fcb906f0b40e2c1ab937559c7ae01
+ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253687"
+ms.lasthandoff: 09/17/2018
+ms.locfileid: "45727584"
 ---
 # <a name="what-are-app-protection-policies"></a>¿Qué son las directivas de protección de aplicaciones?
 
@@ -103,7 +103,7 @@ La solución MDM:
 
 -   Ayudando a evitar la fuga de datos de la compañía a aplicaciones y servicios de consumidor
 
--   Aplicando restricciones (Guardar como, Portapapeles, PIN, etc.) a las aplicaciones móviles
+-   Aplicando restricciones (Guardar como, Portapapeles, PIN, etc.) a las aplicaciones cliente
 
 -   Borrar datos de compañía de las aplicaciones sin borrar esas aplicaciones del dispositivo
 
@@ -122,6 +122,18 @@ Sin embargo, existen algunas limitaciones que se deben tener en cuenta, como:
 -   No se puede proporcionar perfiles de certificados en estos dispositivos.
 
 -   No se puede proporcionar configuraciones de Wi-Fi y VPN de compañía en estos dispositivos.
+
+## <a name="app-protection-global-policy"></a>Directiva global de protección de aplicaciones
+
+Si un administrador de OneDrive navega a **admin.office.com** y selecciona el acceso **Dispositivo**, tendrá la capacidad de establecer los controles **Administración de aplicaciones móviles** en las aplicaciones cliente de OneDrive y SharePoint. 
+
+La configuración, disponible en la consola de administración de OneDrive, establece una directiva de protección de aplicaciones de Intune especial llamada **Global**. Esta directiva global es aplicable a todos los usuarios de su inquilino y no tiene forma de controlar los destinos de la directiva. 
+
+Una vez habilitada, las aplicaciones de OneDrive y SharePoint para iOS y Android estarán protegidas con la configuración seleccionada de forma predeterminada. Una vez creada, un profesional de TI puede editar esta directiva en la consola de Intune y agregar más aplicaciones de destino y modificar cualquier configuración de directiva. 
+
+De forma predeterminada, solo puede haber una directiva **Global** por inquilino, aunque puede usarse una [Graph API de Intune](intune-graph-apis.md) para crear otras directivas globales por inquilino. Sin embargo, no es lo recomendable, dado que puede ser complicado solucionar problemas en la implementación de esta directiva.
+
+Si bien la directiva **Global** se aplica a todos los usuarios del inquilino, cualquier directiva estándar de protección de aplicaciones de Intune anulará esta configuración.
 
 
 ## <a name="multi-identity"></a>Varias identidades

@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 7/5/2018
+ms.date: 9/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4e43ab0d088edc87e814ad2c4317d7b7336d34d5
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: f49e0bc496f176434577d42d3a372fc4e8bc22d3
+ms.sourcegitcommit: 7063072c94e43aefc6be0072780622a1da8485d5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312903"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "46119110"
 ---
 # <a name="android-enterprise-kiosk-settings-in-intune"></a>Configuración de quiosco de Android Enterprise en Intune
 
@@ -45,9 +45,9 @@ Los perfiles de quiosco de Android admiten las siguientes opciones de configurac
 - **Permitir la instalación desde orígenes desconocidos**: elija **Permitir** para permitir que los usuarios instalen desde orígenes desconocidos.
 - **Actualización del sistema**: elija una opción para definir de qué forma funciona el dispositivo a través de las actualizaciones inalámbricas:
     - **Valor predeterminado del dispositivo**: use la configuración predeterminada del dispositivo.
-    - **Automática**: las actualizaciones se instalan automáticamente.
-    - **Pospuesta**: las actualizaciones se posponen hasta una fecha posterior.
-    - **Ventana de mantenimiento**: en una ventana de mantenimiento se solicita a los usuarios que aprueben la actualización.
+    - **Automática**: las actualizaciones se instalan automáticamente sin intervención del usuario. Si se configura esta directiva se instalarán inmediatamente las actualizaciones pendientes.
+    - **Pospuesta**: las actualizaciones se posponen durante 30 días. Al final de los 30 días, Android solicita al usuario que instale la actualización. Es posible que los fabricantes de dispositivos o los transportistas impidan que se pospongan actualizaciones de seguridad importantes (es decir, que las declaren como exentas). Una actualización exenta muestra al usuario una notificación en el dispositivo. 
+    - **Ventana de mantenimiento**: instala las actualizaciones automáticamente durante una ventana de mantenimiento diaria configurada en Intune. La instalación se intenta diariamente durante 30 días y pueden producirse errores debido a niveles de batería o espacio insuficientes. Después de 30 días, Android solicita al usuario que instale la actualización. La ventana también se usa para instalar actualizaciones de aplicaciones de Google Play. Se recomienda esta opción para dispositivos dedicados, como quioscos, ya que se pueden actualizar las aplicaciones de primer plano de quioscos de una única aplicación. 
 
 ## <a name="kiosk-settings"></a>Configuración de quiosco
 

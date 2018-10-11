@@ -15,19 +15,19 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 20e9d4799b9ea4329c8286f0b75ea2a7d555e07b
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 9529560fca1fcd30fc479c0eac8bd7bc967fa952
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253772"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562857"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>¿Qué es la administración de aplicaciones de Microsoft Intune?
 
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Como administrador de TI, puede usar Microsoft Intune para administrar las aplicaciones móviles que usan los trabajadores de su empresa. Esta funcionalidad se suma a la administración de dispositivos y la protección de datos. Una de las prioridades de un administrador es garantizar que los usuarios finales tengan acceso a las aplicaciones que necesitan para hacer su trabajo. Este objetivo puede ser difícil por las siguientes causas:
+Como administrador de TI, puede usar Microsoft Intune para administrar las aplicaciones cliente que usan los trabajadores de su empresa. Esta funcionalidad se suma a la administración de dispositivos y la protección de datos. Una de las prioridades de un administrador es garantizar que los usuarios finales tengan acceso a las aplicaciones que necesitan para hacer su trabajo. Este objetivo puede ser difícil por las siguientes causas:
 - La amplia variedad de plataformas de dispositivo y tipos de aplicaciones.
 - La necesidad de administrar aplicaciones de los dispositivos de la empresa y de los dispositivos personales de los usuarios.
 - Debe asegurarse de que la red y los datos permanecen seguros.
@@ -68,7 +68,7 @@ Puede encontrar la mayoría de la información relacionada con las aplicaciones 
     Intune se encuentra en la sección **Supervisión y administración**.
 3. En el panel **Microsoft Intune**, seleccione **Aplicaciones cliente**.
 
-    ![Panel de carga de trabajo "Mobile apps"](./media/apps-workload.png)
+    ![Panel de carga de trabajo "Aplicaciones cliente"](./media/apps-workload.png)
 
 Las cuatro secciones siguientes describen las opciones disponibles en el panel **Aplicaciones cliente**.
 

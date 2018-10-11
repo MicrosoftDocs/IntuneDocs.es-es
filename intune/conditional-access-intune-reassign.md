@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 09/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 301159ad-5f7e-4fcc-86c7-f72a71701ff4
 ms.reviewer: chrisgree
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d295ade29522a5593993b5541311eadd9e4c9528
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 4714b0bbe566589d970a5d959f1f361940e5701b
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31027475"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187842"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Reasignar directivas de acceso condicional desde el Portal de Intune clásico a Azure Portal
 
@@ -179,6 +179,9 @@ Si ha configurado las opciones de Exchange Active Sync como parte de una directi
 12. Active la alternancia **Habilitar directiva** en la hoja de la directiva de acceso condicional **Nueva** y, después, haga clic en **Crear**.
 
     ![Imagen en la que se muestra Habilitar la comparación de la interfaz de usuario de directivas de acceso condicional entre el Portal de Intune y Azure Portal](./media/reassign-ca-17.png)
+
+> [!NOTE]
+> Si configura **Plataformas de dispositivos**, al guardar la directiva se producirá el error “No se admite la configuración de la directiva”. Exchange ActiveSync no puede identificar la plataforma que usa el dispositivo que se está conectando. Por lo tanto, no se admite la configuración de plataformas de dispositivos específicas al crear una directiva para dispositivos de Exchange ActiveSync.
 
 ## <a name="disable-conditional-access-policies-in-the-intune-classic-portal"></a>Deshabilitar directivas de acceso condicional en el Portal de Intune clásico
 

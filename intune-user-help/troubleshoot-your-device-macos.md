@@ -1,11 +1,11 @@
 ---
-title: Solucionar problemas habituales en el dispositivo iOS | Microsoft Docs
-description: Descubra formas de solucionar problemas habituales en el dispositivo iOS.
+title: Solucionar problemas habituales en el dispositivo macOS | Microsoft Docs
+description: Solucionar problemas habituales en dispositivos macOS en Intune
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/06/2017
+ms.date: 09/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,19 +17,19 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: eeb9b04a3e8d7a5d1f96e58e3df7310d53817090
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 003bf4046a997e3633105e4dc41c93a82e16ee40
+ms.sourcegitcommit: 77540295381a59918eb638ce9c1870209cf8af02
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146785"
+ms.lasthandoff: 09/20/2018
+ms.locfileid: "46505723"
 ---
 # <a name="fix-common-issues-with-your-macos-device"></a>Solucionar problemas habituales en el dispositivo macOS
 
-A veces pueden producirse problemas con el dispositivo macOS que pueden corregirse mediante la solución de problemas. A continuación se enumeran algunos problemas comunes que puede intentar resolver primero por su cuenta. En el caso de problemas más complejos, le recomendamos que se ponga en contacto con el equipo de soporte técnico de su empresa mediante sus datos de contacto en el [sitio web del Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+Solucionar problemas habituales en dispositivos macOS que surgen durante y después de la inscripción. Si después no encuentra el problema que está experimentando, contacte con soporte técnico de su empresa. Puede encontrar su información de contacto en el [sitio web del Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
 
 - [La versión de macOS aún no es compatible](your-macos-version-isnt-yet-supported.md)
-- [Actualización de dispositivos macOS](you-need-to-update-your-macos-device.md)
-- [Errores que pueden aparecer con Jamf Self Service](device-little-different-jamf.md)
-- [Búsqueda de números de serie](how-do-i-find-the-serial-number-on-my-device-macos.md)
-- [Identificación de dispositivos](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)
+- [Tengo que actualizar el dispositivo macOS](you-need-to-update-your-macos-device.md)
+- [El dispositivo administrado por Jamf no es compatible](device-little-different-jamf.md)
+- [No encuentro el número de serie](how-do-i-find-the-serial-number-on-my-device-macos.md)
+- [Tengo que identificar el dispositivo](you-are-asked-to-identify-your-device-when-trying-to-enroll-macos.md)

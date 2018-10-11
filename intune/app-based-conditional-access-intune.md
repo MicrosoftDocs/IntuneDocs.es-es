@@ -14,12 +14,12 @@ ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5c467d20a3bf4f2cfb94db5cecfae78b1717993d
-ms.sourcegitcommit: 07528df71460589522a2e1b3e5f9ed63eb773eea
+ms.openlocfilehash: 317a1fa5fd83cbfe95afa51894466f93131bd278
+ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34561980"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45562772"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>Acceso condicional basado en aplicación con Intune
 
@@ -27,7 +27,7 @@ ms.locfileid: "34561980"
 
 Las [directivas de protección de aplicaciones de Intune](app-protection-policy.md) ayudan a proteger los datos de la empresa en dispositivos inscritos en Intune. También puede usar directivas de protección de aplicaciones en dispositivos que poseen los empleados que no están inscritos para administración en Intune. En este caso, aunque la empresa no administre el dispositivo, deberá asegurarse de que los datos y los recursos de la empresa están protegidos.
 
-El acceso condicional basado en aplicación y la administración de aplicaciones móviles agregan una capa de seguridad al garantizar que solo las aplicaciones móviles que admiten las directivas de protección de aplicaciones de Intune pueden tener acceso a Exchange Online y a otros servicios de Office 365.
+El acceso condicional basado en aplicación y la administración de aplicaciones cliente agregan una capa de seguridad al garantizar que solo las aplicaciones cliente que admiten las directivas de protección de aplicaciones de Intune pueden tener acceso a Exchange Online y a otros servicios de Office 365.
 
 > [!NOTE]
 > Una aplicación administrada es aquella que tiene las directivas de protección de aplicaciones aplicadas y puede administrarse mediante Intune.

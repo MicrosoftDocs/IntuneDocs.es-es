@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a658182800f480f27097e078f28adc95c35aa3ea
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: a01bbf8e65c72b303d1474a92b93796051bfc02e
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313185"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187808"
 ---
 # <a name="see-device-details-in-intune"></a>Ver detalles del dispositivo en Intune
 
@@ -63,44 +63,38 @@ Intune solo recopila listas de aplicaciones en dispositivos corporativos. Las ap
 
 ## <a name="hardware-device-details"></a>Estado del dispositivo de hardware
 
-### <a name="windows-and-ios-device-details"></a>Detalles del dispositivo iOS y Windows:
-|Detalle|Descripción|  
-|--------------|----------------------|  
-|Nombre|Nombre del dispositivo.|
-|Nombre de administración|Nombre de dispositivo usado solo en la consola. Si se cambia, el nombre del dispositivo permanece inalterado.|
-|UDID|Identificador de dispositivo único del dispositivo.|
-|Identificador de dispositivo de Intune|GUID que identifica el dispositivo de forma única.|
-|Número de serie|Número de serie del dispositivo del fabricante.|
-|Dispositivo compartido|Si se establece en **Sí**, el dispositivo se comparte con más de un usuario.|
-|Inscripción de usuario aprobada|Si se establece en **Sí**, el dispositivo dispondrá de una inscripción de usuario aprobada, lo que permite a los administradores administrar determinadas opciones de seguridad en el dispositivo.|
-|Sistema operativo|Sistema operativo usado en el dispositivo.|
-|Versión del sistema operativo|Versión del sistema operativo del dispositivo.|
-|Idioma del sistema operativo|Idioma configurado en el sistema operativo del dispositivo.|
-|Espacio de almacenamiento total|Espacio de almacenamiento total del dispositivo (en gigabytes).|
-|Espacio de almacenamiento libre|Espacio de almacenamiento sin usar en el dispositivo (en gigabytes).|
-
-
-### <a name="windows-ios-and-macos-device-details"></a>Detalles del dispositivo Windows, iOS y macOS
-|Detalle|Descripción|  
-|--------------|----------------------|  
-|IMEI|Identidad de equipo móvil internacional del dispositivo.|
-|MEID|Identificador de equipo móvil del dispositivo.|
-|Fabricante|Fabricante del dispositivo.|
-|Modelo|Modelo del dispositivo.|
-|Número de teléfono|Número de teléfono asignado al perfil.|
-|Operador del suscriptor|Operador de red inalámbrica del dispositivo.|
-|Tecnología de datos móviles|Sistema de radio usado en el dispositivo.|
-|MAC Wi-Fi|Dirección de Media Access Control del dispositivo.|
-|ICCID|Identificador de tarjeta de circuitos integrados, que es el número de identificación único de una tarjeta SIM.|
-|Fecha de inscripción|Fecha y hora en que el dispositivo se inscribió en Intune.|
-|Último contacto|Fecha y hora en que el dispositivo se conectó a Intune por última vez.|
-|Código de omisión del bloqueo de activación|Código que se puede usar para omitir el bloqueo de activación.|
-|Registrado en Azure AD|Si se establece en **Sí**, el dispositivo se registra en Azure Directory.|
-|Cumplimiento|Estado de cumplimiento del dispositivo.|
-|EAS activada|Si se establece en **Sí**, el dispositivo se sincroniza con un buzón de Exchange.|
-|Id. de activación de EAS|Identificador de Exchange ActiveSync del dispositivo.|
-|Supervisado|Si se establece en **Sí**, los administradores han mejorado el control sobre el dispositivo.|
-|Cifrado|Si se establece en **Sí**, los datos almacenados en el dispositivo se cifran.|
+|Detalle|Descripción|Plataforma| 
+|--------------|----------------------|----|  
+|Nombre|Nombre del dispositivo.|Windows, iOS|
+|Nombre de administración|Nombre de dispositivo usado solo en la consola. Si se cambia, el nombre del dispositivo permanece inalterado.|Windows, iOS|
+|UDID|Identificador de dispositivo único del dispositivo.|Windows, iOS|
+|Identificador de dispositivo de Intune|GUID que identifica el dispositivo de forma única.|Windows, iOS|
+|Número de serie|Número de serie del dispositivo del fabricante.|Windows, iOS|
+|Dispositivo compartido|Si se establece en **Sí**, el dispositivo se comparte con más de un usuario.|Windows, iOS|
+|Inscripción de usuario aprobada|Si se establece en **Sí**, el dispositivo dispondrá de una inscripción de usuario aprobada, lo que permite a los administradores administrar determinadas opciones de seguridad en el dispositivo.|Windows, iOS|
+|Sistema operativo|Sistema operativo usado en el dispositivo.|Windows, iOS|
+|Versión del sistema operativo|Versión del sistema operativo del dispositivo.|Windows, iOS|
+|Idioma del sistema operativo|Idioma configurado en el sistema operativo del dispositivo.|Windows, iOS|
+|Espacio de almacenamiento total|Espacio de almacenamiento total del dispositivo (en gigabytes).|Windows, iOS|
+|Espacio de almacenamiento libre|Espacio de almacenamiento sin usar en el dispositivo (en gigabytes).|Windows, iOS|
+|IMEI|Identidad de equipo móvil internacional del dispositivo.|Windows, iOS, Android|
+|MEID|Identificador de equipo móvil del dispositivo.|Windows, iOS, Android|
+|Fabricante|Fabricante del dispositivo.|Windows, iOS, Android|
+|Modelo|Modelo del dispositivo.|Windows, iOS, Android|
+|Número de teléfono|Número de teléfono asignado al perfil.|Windows, iOS, Android|
+|Operador del suscriptor|Operador de red inalámbrica del dispositivo.|Windows, iOS, Android|
+|Tecnología de datos móviles|Sistema de radio usado en el dispositivo.|Windows, iOS, Android|
+|MAC Wi-Fi|Dirección de Media Access Control del dispositivo.|Windows, iOS, Android|
+|ICCID|Identificador de tarjeta de circuitos integrados, que es el número de identificación único de una tarjeta SIM.|Windows, iOS, Android|
+|Fecha de inscripción|Fecha y hora en que el dispositivo se inscribió en Intune.|Windows, iOS, Android|
+|Último contacto|Fecha y hora en que el dispositivo se conectó a Intune por última vez.|Windows, iOS, Android|
+|Código de omisión del bloqueo de activación|Código que se puede usar para omitir el bloqueo de activación.|Windows, iOS, Android|
+|Registrado en Azure AD|Si se establece en **Sí**, el dispositivo se registra en Azure Directory.|Windows, iOS, Android|
+|Cumplimiento|Estado de cumplimiento del dispositivo.|Windows, iOS, Android|
+|EAS activada|Si se establece en **Sí**, el dispositivo se sincroniza con un buzón de Exchange.|Windows, iOS, Android|
+|Id. de activación de EAS|Identificador de Exchange ActiveSync del dispositivo.|Windows, iOS, Android|
+|Supervisado|Si se establece en **Sí**, los administradores han mejorado el control sobre el dispositivo.|Windows, iOS, Android|
+|Cifrado|Si se establece en **Sí**, los datos almacenados en el dispositivo se cifran.|Windows, iOS, Android|
 
 
 

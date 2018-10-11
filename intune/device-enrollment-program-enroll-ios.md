@@ -15,12 +15,12 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 27995fb643e4373e2fa6a34c7147c69905f9ccc0
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 841cfdeea1d33876c1b678a531c88663aea3759e
+ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312651"
+ms.lasthandoff: 09/27/2018
+ms.locfileid: "47403602"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Inscribir dispositivos iOS automáticamente con el Programa de inscripción de dispositivos de Apple
 
@@ -61,7 +61,7 @@ Use el portal de DEP de Apple para crear un token de DEP. También puede usar el
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>Paso 1. Descargue el certificado de clave pública de Intune necesario para crear el token.
 
-1. En [Intune, en Azure portal](https://aka.ms/intuneportal), elija **Inscripción de dispositivos** > **Inscripción de Apple** > **Tokens del programa de inscripción** > **Agregar**.
+1. En [Intune en Azure Portal](https://aka.ms/intuneportal), elija **Inscripción de dispositivos** > **Inscripción de Apple** > **Tokens del programa de inscripción** > **Agregar**.
 
     ![Obtenga un token del programa de inscripción.](./media/device-enrollment-program-enroll-ios/image01.png)
 
@@ -170,8 +170,8 @@ Ahora que ha instalado el token, puede crear un perfil de inscripción para disp
     |    <strong>Teléfono del departamento</strong>     | Aparece cuando el usuario hace clic en el botón <strong>Necesito ayuda</strong> durante la activación. |
 
   Cuando el usuario configura el dispositivo, es posible mostrar u ocultar varias pantallas del asistente de configuración.
-  - Si hace clic en **Ocultar**, la pantalla no se mostrará durante la configuración. Después de configurar el dispositivo, el usuario seguirá teniendo la posibilidad de ir al menú **Ajustes** para configurar la característica.
-  - Si hace clic en **Mostrar**, la pantalla se mostrará durante la configuración. A veces, el usuario puede omitir la pantalla sin realizar ninguna acción. Sin embargo, posteriormente podrá ir al menú **Ajustes** del dispositivo para configurar la característica. 
+  - Si elige **Ocultar**, la pantalla no se mostrará durante la configuración. Después de configurar el dispositivo, el usuario seguirá teniendo la posibilidad de ir al menú **Ajustes** para configurar la característica.
+  - Si elige **Mostrar**, la pantalla se mostrará durante la configuración. A veces, el usuario puede omitir la pantalla sin realizar ninguna acción. Sin embargo, posteriormente podrá ir al menú **Ajustes** del dispositivo para configurar la característica. 
 
 
     | Configuración de pantallas del asistente | Si hace clic en **Mostrar**, durante la configuración se producirá lo siguiente en el dispositivo... |

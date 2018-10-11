@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 18b4ab35627e1ccb694104f3f5800e5fb07dd1c7
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: e71f49c6a336efa5c15d8f10e664ddbf9b0579d0
+ms.sourcegitcommit: 5bfc7a1375fdb2992b9b5d4f6d1b34eec12457ae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313433"
+ms.lasthandoff: 09/13/2018
+ms.locfileid: "45533666"
 ---
 # <a name="automatically-enroll-macos-devices-with-apples-device-enrollment-program"></a>Inscripción automática de dispositivos macOS con el Programa de inscripción de dispositivos de Apple
 
@@ -30,7 +30,7 @@ Este artículo le ayuda a configurar la inscripción de dispositivos macOS adqui
 
 Para configurar la inscripción de DEP, use los portales de DEP de Apple y de Intune. Puede crear perfiles de inscripción de DEP que contengan opciones que se apliquen a los dispositivos durante la inscripción.
 
-Además, la inscripción de DEP no funciona con el [administrador de inscripción de dispositivos](device-enrollment-manager-enroll.md).
+La inscripción de DEP no funciona con el [administrador de inscripción de dispositivos](device-enrollment-manager-enroll.md) o [Apple School Manager](apple-school-manager-set-up-ios.md).
 
 <!--
 **Steps to enable enrollment programs from Apple**
@@ -137,7 +137,7 @@ Ahora que ha instalado el token, puede crear un perfil de inscripción para disp
   - Si elige **Mostrar**, la pantalla se mostrará durante la configuración. A veces, el usuario puede omitir la pantalla sin realizar ninguna acción. Sin embargo, posteriormente podrá ir al menú **Ajustes** del dispositivo para configurar la característica. 
 
 
-    | Configuración de pantallas del asistente | Si elige **Mostrar**, durante la configuración se producirá lo siguiente en el dispositivo: |
+    | Configuración de pantallas del asistente | Si hace clic en **Mostrar**, durante la configuración se producirá lo siguiente en el dispositivo... |
     |------------------------------------------|------------------------------------------|
     | <strong>Código de acceso</strong> | Se solicitará un código de acceso al usuario. Solicite siempre un código de acceso, a menos que el dispositivo esté protegido o tenga el acceso controlado de otra manera (es decir, modo de quiosco que restringe el dispositivo a una aplicación). |
     | <strong>Servicios de ubicación</strong> | Se solicitará la ubicación del usuario. |

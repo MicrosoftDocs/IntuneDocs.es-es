@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ee5a39ee8a146fbc6a85a9f4438b8e14a408a735
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: 772c800e75f52d9826992bf0adfbfdcf3faba107
+ms.sourcegitcommit: a13d1eafc979a9cfeb4adbdea861e2784c2b1068
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321733"
+ms.lasthandoff: 09/19/2018
+ms.locfileid: "46329987"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>Adición de entidades de certificación de asociado en Intune mediante SCEP
 
@@ -123,6 +123,7 @@ Al anular la inscripción o borrar el dispositivo, se quitan los certificados. L
 Las entidades de certificación de terceros siguientes son compatibles con Intune:
 
 - [Entrust Datacard](http://www.entrustdatacard.com/resource-center/documents/documentation)
+- [Versión de código abierto de GitHub EJBCA](https://github.com/agerbergt/intune-ejbca-connector)
 
 Si es una entidad de certificación de terceros interesada en la integración de su producto con Intune, revise las instrucciones de la API:
 

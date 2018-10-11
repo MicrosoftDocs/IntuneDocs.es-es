@@ -1,12 +1,11 @@
 ---
-title: Administración de equipos con software cliente
-titlesuffix: Microsoft Intune
+title: 'Administrar PC con software cliente en Microsoft Intune: Azure | Microsoft Docs'
 description: Administre equipos Windows instalando el software cliente de Intune.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: MandiOhlinger
+ms.author: mandia
 manager: dougeby
-ms.date: 01/01/2018
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +14,12 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 5a248345a40cd7cfcff3883643562923f9535d3b
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: ef21f22a4808518ce8557b761e4181f8f6a655c3
+ms.sourcegitcommit: ed97b68f08c1a8469f0b45bc1c839a0b5f5c71e0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "41910657"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45978253"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Administración de PC con Windows con el software de cliente de PC de Intune
 
@@ -45,7 +44,7 @@ Intune admite la administración de PC con Windows como equipos con el cliente d
 
 |Requisito|Más información|
 |---------------|--------------------|
-|Red|El cliente requiere que el equipo tenga conectividad a Internet.|
+|Network (Red)|El cliente requiere que el equipo tenga conectividad a Internet.|
 |Procesador y memoria|Consulte los requisitos de RAM y procesador para el sistema operativo del equipo.|
 |Espacio en disco|200 MB de espacio disponible en el disco antes de que se instale el software cliente.|
 
@@ -57,6 +56,9 @@ Intune admite la administración de PC con Windows como equipos con el cliente d
 |Permisos administrativos|La cuenta que instala el software cliente debe tener permisos de administrador local en ese dispositivo.|
 |Windows Installer 3.1|El equipo debe tener, como mínimo, Windows Installer 3.1.<br /><br />Para ver la versión de Windows Installer de un equipo:<br /><br />  En el PC, haga clic con el botón derecho en **%windir%\System32\msiexec.exe** y, luego, haga clic en **Propiedades**.<br /><br />Puede descargar la última versión de Windows Installer desde [Windows Installer Redistributables (Paquetes redistribuibles de Windows Installer)](http://go.microsoft.com/fwlink/?LinkID=234258) en el sitio web de Microsoft Developer Network.|
 |Quitar software cliente incompatible|Antes de instalar el software cliente de Intune, desinstale cualquier software cliente de Configuration Manager, Operations Manager y Service Manager desde ese equipo.|
+
+> [!WARNING]
+> Microsoft anunció que el [soporte técnico para Windows 7 terminará el 14 de enero de 2020](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020). En esta fecha, Intune también retirará la compatibilidad con dispositivos que ejecutan Windows 7. Microsoft recomienda encarecidamente que cambie a Windows 10 para evitar las interrupciones de servicio o soporte técnico. 
 
 ## <a name="deploying-the-intune-software-client"></a>Implementación del cliente de software de Intune
 Como administrador de Intune, puede hacer que el cliente de software de Intune esté disponible para los usuarios de diversas formas. Para obtener una guía, vea [Instalar el cliente de software de Intune en equipos con Windows](install-the-windows-pc-client-with-microsoft-intune.md).

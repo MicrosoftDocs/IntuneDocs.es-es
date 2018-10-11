@@ -15,12 +15,12 @@ ms.assetid: dbb6a37e-ba47-4b69-922c-d25e66c279f6
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6fccfcbceecc9aa0667aa9fd6656c2fcc524d363
-ms.sourcegitcommit: 2061f7a442efc96c8afd5db764d11531563c7e39
+ms.openlocfilehash: 370b02d06276cefa21339d3617068d5777cb8668
+ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/04/2018
-ms.locfileid: "34569364"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47168937"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>Habilitar el conector Mobile Threat Defense en Intune
 
@@ -31,13 +31,13 @@ Durante la configuración de Mobile Threat Defense (MTD), ha configurado una dir
 
 ## <a name="to-enable-the-mtd-connector"></a>Para habilitar el conector de MTD
 
-1. Vaya a [Azure Portal](https://portal.azure.com) e inicie sesión con sus credenciales de Intune. Después de iniciar sesión correctamente, verá el **Panel de Azure**.
+1. Vaya a [Azure Portal](https://portal.azure.com) e inicie sesión con sus credenciales de Intune. Una vez que haya iniciado sesión correctamente, verá el **panel de Azure**.
 
-2. En el **panel de Azure**, elija **Todos los servicios** en el menú de la izquierda y, luego, escriba **Intune** en el filtro del cuadro de texto.
+2. En el menú izquierdo del **panel de Azure**, seleccione **Todos los servicios** y, a continuación, escriba **Intune** en el filtro de cuadro de texto.
 
-3. Elija **Intune** y se abrirá el **panel de Intune**.
+3. Seleccione **Intune**; se abrirá el **panel de Intune**.
 
-4. En el **panel de Intune**, elija **Cumplimiento de dispositivos** y, luego, elija **Mobile Threat Defense** en la sección **Configuración**.
+4. En el **panel de Intune**, seleccione **Conformidad de dispositivos**. Después, en la sección **Configurar**, seleccione **Mobile Threat Defense**.
 
 5. En el panel **Mobile Threat Defense**, elija **Agregar**.
 
@@ -45,11 +45,11 @@ Durante la configuración de Mobile Threat Defense (MTD), ha configurado una dir
 
     ![Configuración de MTD en Azure Portal de Intune](./media/enable-mtd-connector-1.png)
 
-7. Habilite las opciones de alternancia según los requisitos de su organización.
+7. Habilite las opciones de alternancia según los requisitos de su organización. Las opciones de alternancia visibles variarán en función del asociado de MTD.
 
 ## <a name="mtd-toggle-options"></a>Opciones de alternancia de MTD
 
-Puede decidir qué opciones de alternancia de MTD necesita habilitar según los requisitos de su organización. A continuación, puede ver más detalles:
+Las opciones de alternancia de MTD que habilite dependerán de los requisitos de su organización. A continuación, puede ver más detalles:
 
 - **Connect Android 4.1+ devices to [MTD partner name] for Work MTD** (Conectar dispositivos Android 4.1+ con MTD de [nombre del partner de MTD] for Work): cuando habilita esta opción, puede hacer que los dispositivos Android 4.1+ informen un riesgo de seguridad a Intune.
     - **Mark as non compliant if no data is received** (Marcar como no conforme si no se reciben datos): si Intune no recibe datos sobre un dispositivo en esta plataforma por parte del asociado de MTD, considere que el dispositivo no es conforme.

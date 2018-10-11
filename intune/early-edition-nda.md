@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/29/2018
+ms.date: 09/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,14 +15,14 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 6cc33bc6e03d2e0370c9e2c2dd9d3462296710e6
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 0f6447f4a5cfb2638278a59414e83f744adb8c81
+ms.sourcegitcommit: ed97b68f08c1a8469f0b45bc1c839a0b5f5c71e0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329691"
+ms.lasthandoff: 09/18/2018
+ms.locfileid: "45978270"
 ---
-# <a name="the-early-edition-for-microsoft-intune---august-2018"></a>La edición anticipada de Microsoft Intune: agosto de 2018
+# <a name="the-early-edition-for-microsoft-intune---september-2018"></a>La edición anticipada de Microsoft Intune: septiembre de 2018
 
 > [!Note]
 > Notificación del acuerdo de confidencialidad: Los siguientes cambios están en fase de desarrollo para Intune. Esta información se comparte en el acuerdo de confidencialidad de forma muy limitada. No publique esta información en redes sociales ni sitios web públicos, como Twitter, UserVoice, Reddit, etc. 
@@ -39,9 +39,95 @@ Esta página se actualiza periódicamente. Compruebe si hay actualizaciones adic
  
 ## <a name="intune-in-the-azure-portal"></a>Intune en el portal de Azure
 
+<!-- 1809 start -->
+
+### <a name="user-account-access-of-intune-apps-on-managed-android-and-ios-devices-----1248496----"></a>Acceso a la cuenta de usuario de aplicaciones de Intune en dispositivos iOS y Android administrados <!-- ! 1248496  -->
+
+Como administrador de Microsoft Intune, podrá controlar qué cuentas de usuario se agregan a las aplicaciones de Microsoft Office en dispositivos administrados. Podrá limitar el acceso solo a las cuentas de usuario de la organización permitidas y bloquear cuentas personales en los dispositivos inscritos. 
+
+### <a name="create-dns-suffixes-in-vpn-configuration-profiles-on-devices-running-windows-10----1333668---"></a>Creación de sufijos DNS en los perfiles de configuración de VPN en dispositivos que ejecutan Windows 10 <!-- 1333668 -->
+Cuando se crea un perfil de configuración del dispositivo VPN (**Configuración del dispositivo** > **Perfiles** > **Crear perfil** > **Windows 10 y versiones posteriores** para plataforma > **VPN** para tipo de perfil), se escriben algunos valores de DNS. También se pueden escribir varios **sufijos DNS** en Intune. Al usar los sufijos DNS, puede buscar un recurso de red mediante su nombre corto, en lugar del nombre de dominio completo (FQDN). Esta actualización también le permite cambiar el orden de los sufijos DNS en Intune.
+[Configuración de VPN de Windows 10](vpn-settings-windows-10.md#dns-settings) muestra la configuración de DNS actual.
+Se aplica a dispositivos Windows 10
+
+### <a name="support-for-always-on-vpn-for-android-enterprise-work-profiles----1333705---"></a>Compatibilidad con VPN siempre activa para perfiles de trabajo empresarial de Android <!-- 1333705 -->
+Podrá usar conexiones VPN siempre activas en dispositivos empresariales Android con perfiles de trabajo administrados. Las conexiones VPN siempre activas permanecen conectadas o se vuelven a conectar inmediatamente cuando el usuario desbloquea el dispositivo, cuando se reinicia el dispositivo o cuando cambia la red inalámbrica. También puede poner la conexión en modo “bloqueo”, que bloquea todo el tráfico de red hasta que la conexión VPN esté activa.
+La configuración de VPN siempre activa estará en **Configuración del dispositivo** > **Perfiles** > **Crear perfil** > **Android empresarial** para plataforma > **Restricciones de dispositivo** en **Solo perfiles de trabajo** para Tipo de perfil > configuración de **Conectividad**. 
+
+### <a name="outlook-for-ios-and-android-app-configuration-policy---1828527---"></a>Directiva de configuración de aplicación de Outlook para iOS y Android <!--1828527 -->
+Podrá crear una directiva de configuración de Outlook para iOS y Android. Se agregarán opciones de configuración adicionales a medida que se habiliten para Outlook para iOS y Android.
+
+###  <a name="windows-line-of-business-lob-app-file-extensions----1884873---"></a>Extensiones de los archivos de aplicaciones de línea de negocio (LOB) de Windows <!-- 1884873 -->
+Las extensiones de archivo de las aplicaciones de LOB de Windows incluirán las extensiones *.msi*, *.appx*, *.appxbundle*, *.msix* y *.msixbundle*. Podrá agregar una aplicación en Microsoft Intune seleccionando **Aplicaciones cliente** > **Aplicaciones** > **Agregar**. Se mostrará el panel **Agregar aplicación** que le permitirá seleccionar el **Tipo de aplicación**. En el caso de las aplicaciones de LOB de Windows, seleccione la aplicación de **Línea de negocio** como el tipo de aplicación, elija el **Archivo de paquete de aplicación** y después especifique un archivo de instalación con la extensión adecuada.
+
+### <a name="remotely-lock-noncompliant-devices----2064495---"></a>Bloquear dispositivos no compatibles de forma remota <!-- 2064495 -->
+Cuando un dispositivo no cumple los requisitos, podrá crear una acción en la directiva de cumplimiento que bloquea el dispositivo de forma remota. En Intune > **Cumplimiento del dispositivo** cree una nueva directiva o seleccione una directiva existente. Seleccione **Acciones en caso de incumplimiento** > **Agregar** y elija bloquear de forma remota el dispositivo.
+Compatible con: 
+- Android
+- iOS
+- macOS
+- Windows 10 Mobile 
+- Windows Phone 8.1 y versiones posteriores 
+
+### <a name="intune-app-data-transfer-settings-on-ios-mdm-enrolled-devices----2244713---"></a>Configuración de transferencia de datos de la aplicación de Intune en dispositivos iOS inscritos en MDM <!-- 2244713 -->
+Podrá controlar por separado la configuración de transferencia de datos de la aplicación de Intune en dispositivos iOS inscritos en MDM y la especificación de la identidad del usuario inscrito. Los administradores que no usen el IntuneMAMUPN no observarán un cambio de comportamiento. Cuando esta función esté disponible, los administradores que usan el IntuneMAMUPN para controlar el comportamiento de la transferencia de datos en los dispositivos inscritos deben revisar la nueva configuración y actualizar la configuración de APP según sea necesario.
+
+### <a name="use-a-pre-shared-key-in-a-windows-10-wi-fi-profile----2662938---"></a>Usar una clave precompartida en un perfil de Wi-Fi de Windows 10 <!-- 2662938 -->
+Podrá usar una clave precompartida (PSK) con el protocolo de seguridad WPA o WPA2-Personal para autenticar un perfil de configuración de Wi-Fi para Windows 10.
+Actualmente, debe importar un perfil de Wi-Fi o crear un perfil personalizado para usar una clave precompartida. [Configuración de Wi-Fi para Windows 10](wi-fi-settings-windows.md) muestra la configuración actual. 
+
+### <a name="app-protection-policy-app-settings-for-web-data----2662995-eeready---"></a>Configuración de directiva de protección de la aplicación (APP) de datos web <!-- 2662995 eeready -->
+La configuración de directiva APP de contenido web en dispositivos iOS y Android se actualizará para controlar mejor los vínculos web http y https, así como la transferencia de datos a través de vínculos universales de iOS y vínculos de aplicación de Android.  
+
+### <a name="autopilot-device-sync-frequency-increasing-to-every-12-hours----2753673---"></a>La frecuencia de sincronización de dispositivos Autopilot se aumenta a cada 12 horas <!-- 2753673 -->
+Los dispositivos Autopilot se sincronizarán cada 12 horas en lugar de cada 24 horas.
+
+### <a name="apply-autopilot-profile-to-enrolled-win-10-devices-not-already-registered-for-autopilot----1558983---"></a>Aplicar perfil de Autopilot para dispositivos Windows 10 inscritos que aún no están registrados para Autopilot <!-- 1558983 -->
+Puede aplicar perfiles de Autopilot para dispositivos Windows 10 inscritos que aún no se han registrado para Autopilot. En el perfil de Autopilot, elija la opción **Convertir todos los dispositivos de destino a Autopilot** para registrar automáticamente los dispositivos que no se han registrado para Autopilot con los servicios de implementación de Autopilot. Permita un plazo de 48 horas para que se procese el registro. Cuando se anule la inscripción del dispositivo y este se restablezca, Autopilot lo aprovisionará. 
+
+### <a name="create-and-assign-multiple-enrollment-status--page-profiles-to-azure-ad-groups----2526564--"></a>Crear y asignar varios perfiles de la página Estado de inscripción a grupos de Azure AD <!-- 2526564-->
+Podrá crear y asignar varios perfiles de la página Estado de inscripción a grupos de usuarios de Azure AD.
+
+### <a name="intune-landing-page-updates-and-node-rename---2867309---"></a>Actualizaciones de la página de aterrizaje de Intune y cambio del nombre del nodo <!--2867309 -->
+Las actualizaciones a la página de aterrizaje de Intune incluirán iconos de supervisión nuevos y modificados y gráficos para una mejor visualización de datos. El nodo **Aplicaciones móviles** cambiará a **Aplicaciones cliente**.
+
+### <a name="increased-end-user-access-using-the-company-portal-app----772203---"></a>Aumento de acceso de usuario final mediante la aplicación Portal de empresa <!-- 772203 -->
+Los usuarios finales podrán acceder a las acciones de cuenta clave, como restablecer la contraseña y su perfil de Azure AD, desde la aplicación Portal de empresa.
+
+### <a name="issue-scep-certificates-to-user-less-devices----1744554---"></a>Emitir certificados SCEP para los dispositivos sin usuario <!-- 1744554 -->
+Actualmente, los certificados se emiten a los usuarios. Podrá emitir certificados SCEP a los dispositivos, incluidos los dispositivos sin usuario como quioscos (**Configuración del dispositivo** > **Perfiles** > **Crear perfil** > **Windows 10 y versiones posteriores** para plataforma > **Certificado SCEP** para perfil). Otras actualizaciones incluyen:
+- La propiedad **Asunto** en un perfil SCEP pasará a ser un cuadro de texto personalizado y puede incluir nuevas variables. 
+- La propiedad **Nombre alternativo del firmante (SAN)** en un perfil SCEP ahora es un formato de tabla y puede incluir nuevas variables. En la tabla un administrador puede agregar un atributo y rellenar el valor en un cuadro de texto personalizado. La SAN será compatible con los siguientes atributos: 
+  - DNS
+  - Dirección de correo electrónico
+  - UPN Estas nuevas variables se pueden agregar con texto estático en un cuadro de texto de valor personalizado. Por ejemplo, el atributo DNS puede agregarse como `DNS = {{AzureADDeviceId}}.domain.com`.
+  > [!NOTE]
+  > Las llaves, los puntos y coma y los símbolos de barra vertical “ { } ; | ” no funcionará en el texto estático de la SAN. Las llaves solo deben rodear una de las nuevas variables de certificado de dispositivo que debe aceptar `Subject` o `Subject alternative name`. Nuevas variables de certificado de dispositivo:  
+```
+"{{AAD_Device_ID}}",
+"{{Device_Serial}}",
+"{{Device_IMEI}}",
+"{{SerialNumber}}",
+"{{IMEINumber}}",
+"{{AzureADDeviceId}}",
+"{{WiFiMacAddress}}",
+"{{IMEI}}",
+"{{DeviceName}}",
+"{{FullyQualifiedDomainName}}",
+"{{MEID}}",
+```
+
+> [!NOTE]
+>  - `{{FullyQualifiedDomainName}}` solo funciona para Windows y dispositivos unidos a dominios. 
+>  -  Al especificar las propiedades del dispositivo como el IMEI, el número de serie y el nombre de dominio completo en el asunto o SAN para un certificado de dispositivo, tenga en cuenta que una persona con acceso al dispositivo podría suplantar estas propiedades. 
+
+[Crear un perfil de certificado SCEP](certificates-scep-configure.md#create-a-scep-certificate-profile) enumera las variables actuales al crear un perfil de configuración de SCEP. 
+
+Se aplica a: Windows 10 y versiones posteriores y iOS, compatible con Wi-Fi
+
+
+
 <!-- 1808 start -->
-
-
 
 ### <a name="apple-vpp-token-used-by-another-mdm----1488946---"></a>Token VPP de Apple usado por otro MDM <!-- 1488946 -->
 Intune detectará y mostrará los detalles si un token de programa de compras por volumen (VPP) de Apple lo está usando Intune y otro MDM.
@@ -53,61 +139,33 @@ Cuando se publican las actualizaciones de seguridad, Apple normalmente deja el n
 ### <a name="retired-devices-in-the-device-compliance-dashboard----1981119---"></a>Dispositivos retirados en el panel de cumplimiento del dispositivos <!-- 1981119 -->
 En una actualización futura, los dispositivos retirados se quitarán del panel de cumplimiento del dispositivo. Esto cambiará los números de cumplimiento.
 
-### <a name="new-user-experience-update-for-the-company-portal-website---2000968---"></a>Actualización de la experiencia de usuario en el sitio web de Portal de empresa <!--2000968 -->
-Tras escuchar los comentarios de los clientes, se agregarán nuevas características al sitio web de Portal de empresa. Podrá comprobar una mejora considerable en las funciones y la facilidad de uso actual de los dispositivos Android, iOS y Windows. Se aplicará un diseño moderno y receptivo a las áreas del sitio, como los detalles del dispositivo, los comentarios, el soporte técnico y la descripción general del dispositivo. También verá:
-- Flujos de trabajo simplificados en todas las plataformas del dispositivo
-- Flujos mejorados para la identificación y la inscripción de dispositivos
-- Mensajes de error más útiles
-- Lenguaje más descriptivo con menos jerga técnica
-- Posibilidad de compartir vínculos directos a aplicaciones
-- Mejor rendimiento de los catálogos de aplicaciones de gran tamaño
-- Mayor accesibilidad para todos los usuarios
-
-### <a name="configure-profile-to-skip-some-screens-during-setup-assistant----2276470---"></a>Configuración del perfil para omitir algunas pantallas durante el Asistente para configuración <!-- 2276470 -->
-Cuando cree un perfil de inscripción de macOS, podrá configurarlo para omitir cualquiera de las siguientes pantallas cuando un usuario recorra el Asistente para configuración:
-- Migración de Android
-- Tono de visualización
-- Privacidad
-- iCloudStorage
 
 ### <a name="change-in-the-update-process-for-on-premises-connectors----2277554---"></a>Cambio en el proceso de actualización para conectores locales <!-- 2277554 -->
 Según los comentarios de clientes, se cambiará la manera en que se realizan las actualizaciones en los conectores locales. Después de instalar inicialmente un conector local, las actualizaciones se producirán automáticamente. Este cambio se iniciará con el nuevo conector de certificado PFX para Microsoft Intune y posteriormente se implementará en otros tipos de conectores locales. 
 
-
+### <a name="windows-10-and-later-kiosk-profile-improvements-in-the-azure-portal----2748224-eeready---"></a>Mejoras de perfil de quiosco multimedia de Windows 10 y versiones posteriores en Azure Portal <!-- 2748224 eeready -->
+Se mejorará el perfil de configuración de dispositivo de quiosco multimedia de Windows 10 (**Configuración del dispositivo** > **Perfiles** > **Crear perfil** > **Windows 10 y versiones posteriores** para plataforma > **Versión preliminar de quiosco** para tipo de perfil): 
+- Actualmente, puede crear varios perfiles de quiosco multimedia en el mismo dispositivo. Con esta actualización, Intune admitirá un solo perfil de quiosco multimedia por dispositivo. Si necesita varios perfiles de quiosco multimedia en un único dispositivo, puede usar un URI personalizado.
+-En un perfil de **Quiosco con varias aplicaciones**, puede seleccionar el tamaño del icono de la aplicación y el orden del **Diseño del menú inicio** en la cuadrícula de la aplicación. Si prefiere una mayor personalización, puede cargar un archivo XML.
+- La configuración del explorador de quiosco multimedia pasará a estar en la configuración de **Quiosco**. Actualmente, la configuración **Explorador web del quiosco** tiene su propia categoría en Azure Portal.
+Se aplica a: Windows 10 y versiones posteriores
 
 <!-- 1807 start -->
-
-### <a name="more-sync-opportunities-in-the-company-portal-app-for-windows----2683177---"></a>Más oportunidades de sincronización en la aplicación Portal de empresa para Windows <!-- 2683177 -->
-La aplicación Portal de empresa para Windows agrega una acción de sincronización de dispositivo a la barra de tareas de Windows y listas de salto al menú Inicio. Haga clic en cualquier ubicación para sincronizar rápidamente los dispositivos y obtener acceso a recursos corporativos.  
-
-### <a name="reset-device-passcodes-from-company-portal-app-for-windows-10----2101282---"></a>Códigos de acceso para restablecer el dispositivo desde la aplicación Portal de empresa para Windows 10 <!-- 2101282 --> 
-Los empleados pronto podrán restablecer el PIN o el código de acceso de su dispositivo directamente desde la aplicación Portal de empresa para Windows 10. Esta funcionalidad estará disponible en los dispositivos remotos y locales administrados por Intune que admiten el restablecimiento de la contraseña. Según el tipo de dispositivo, una solicitud realizada para un dispositivo remoto eliminará el código de acceso actual del dispositivo o creará una contraseña temporal. Si un usuario solicita el restablecimiento para un dispositivo local, se le redirigirá a la aplicación de configuración del dispositivo.  
-
-### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows----2317227---"></a>Nuevas experiencias de navegación en la aplicación Portal de empresa para Windows <!-- 2317227 -->  
-Al examinar o buscar aplicaciones en la aplicación Portal de empresa para Windows, podrá alternar entre la vista **Elementos** existente y la vista recién añadida **Detalles**. En la nueva vista se muestran detalles de la aplicación, como el nombre, el editor, la fecha de publicación y el estado de la instalación.  
-
-La página **Aplicaciones** presentará una vista **Instaladas** que le permite ver detalles sobre las instalaciones de aplicaciones completadas y en curso. ¿Quiere compartir comentarios y opiniones sobre los nuevos cambios? Envíenos sus comentarios en la aplicación Portal de empresa.
 
 ### <a name="improved-company-portal-app-experience-for-device-enrollment-manager-users----675800---"></a>Mejora de la experiencia en la aplicación Portal de empresa para usuarios administradores de inscripciones de dispositivos <!-- 675800 -->
 Cuando un administrador de inscripciones de dispositivos (DEM) inicia sesión en la aplicación Portal de empresa para Windows, la aplicación solo mostrará el dispositivo actual en ejecución de DEM. Esta mejora reduce los tiempos de espera que se han producido anteriormente cuando la aplicación ha intentado cargar todos los dispositivos inscritos en DEM.  
 
-### <a name="use-vpp-device-licenses-to-pre-provision-the-company-portal-during-dep-enrollment----1608345---"></a>Use licencias de dispositivo de VPP para tener en servicio el Portal de empresa durante la inscripción de DEP <!-- 1608345 -->
-Podrá usar licencias de dispositivo del Programa de Compras por Volumen (VPP) para tener en servicio el Portal de empresa durante las inscripciones en el Programa de inscripción de dispositivos (DEP). Para ello, al crear o editar un perfil de inscripción, especifique el token de VPP que quiera usar para instalar el Portal de empresa. Asegúrese de que el token no expire y que dispone de suficientes licencias para la aplicación de Portal de empresa. En los casos en los que el token expire o se agoten las licencias, Intune instalará el Portal de empresa del App Store (se solicitará un identificador de Apple).
+### <a name="check-for-configuration-manager-compliance----2192052---"></a>Comprobar cumplimiento de Configuration Manager <!-- 2192052 -->
+Una actualización futura incluirá una nueva configuración de conformidad de System Center Configuration Manager (**Conformidad de dispositivos** > **Directivas** > **Crear directiva** > **Windows 10**). Configuration Manager envía señales a la conformidad de Intune. Mediante la configuración de Intune, puede exigir que todas las señales de Configuration Manager devuelvan “conforme”.
 
-### <a name="check-for-sccm-compliance----2192052---"></a>Comprobación de la conformidad de SCCM <!-- 2192052 -->
-Una actualización futura incluirá una nueva configuración de conformidad de System Center Configuration Manager (SCCM) (**Conformidad de dispositivos** > **Directivas** > **Crear directiva** > **Windows 10**). SCCM envía señales a la conformidad de Intune. Mediante la configuración de Intune, puede exigir que todas las señales de SCCM devuelvan "conforme".
-
-Por ejemplo, exige que todas las actualizaciones de software se instalen en los dispositivos. En SCCM, este requisito tiene el estado "Instalado". Si algún programa del dispositivo se encuentra en estado desconocido, el dispositivo no será conforme en Intune.
+Por ejemplo, exige que todas las actualizaciones de software se instalen en los dispositivos. En Configuration Manager, este requisito tiene el estado “Instalado”. Si algún programa del dispositivo se encuentra en estado desconocido, el dispositivo no será conforme en Intune.
 
 Se aplica a Windows 10 y versiones posteriores
 
 ### <a name="alerts-for-expiring-vpp-token-or-company-portal-license-running-low----2237572---"></a>Alertas sobre tokens de VPP que expiran próximamente o licencias del Portal de empresa a punto de agotarse <!-- 2237572 -->
 Si usa el Programa de Compras por Volumen (VPP) para tener en servicio el Portal de empresa durante la inscripción de DEP, Intune le avisará cuando el token de VPP esté a punto de expirar y las licencias del Portal de empresa se estén agotando.
 
-### <a name="confirmation-required-to-delete-vpp-token-that-is-being-used-for-company-portal-pre-provisioning----2237634---"></a>Confirmación requerida para eliminar el token de VPP que se usa para tener en servicio el Portal de empresa <!-- 2237634 -->
-Se solicitará confirmación para eliminar un token del Programa de Compras por Volumen (VPP) si se usa para tener en servicio el Portal de empresa durante la inscripción de DEP.
-
-#### <a name="additional-security-settings-for-windows-installer----2282430---"></a>Configuración de seguridad adicional de Windows Installer <!-- 2282430 -->
+### <a name="additional-security-settings-for-windows-installer----2282430---"></a>Configuración de seguridad adicional de Windows Installer <!-- 2282430 -->
 Podrá dejar que los usuarios controlen las instalaciones de aplicaciones. Si lo permite, las instalaciones que antes se detendrían debido a una infracción de seguridad podrán seguir funcionando. Podrá indicar a Windows Installer que use permisos elevados cuando instale un programa en un sistema. Además, podrá habilitar elementos protegidos por WIP (Windows Information Protection) para indexarlos y almacenar los metadatos relativos a estos elementos en una ubicación sin cifrar. Cuando la directiva está deshabilitada, los elementos protegidos por WIP no se indexarán ni se mostrarán en los resultados de Cortana o del explorador de archivos. La funcionalidad de estas opciones estará deshabilitada de forma predeterminada. 
 
 <!-- 1806 start -->
@@ -115,45 +173,22 @@ Podrá dejar que los usuarios controlen las instalaciones de aplicaciones. Si lo
 ### <a name="3rd-party-keyboards-can-be-blocked-by-app-settings-on-ios----1248481---"></a>Configuración de la directiva de protección de aplicaciones para el bloqueo de teclados de terceros en iOS <!-- 1248481 -->
 En dispositivos iOS, los administradores de Intune podrán bloquear el uso de teclados de terceros al acceder a datos de la organización en aplicaciones protegidas mediante directiva. Cuando la directiva de protección de aplicación (APP) esté configurada para bloquear teclados de terceros, el usuario del dispositivo recibirá un mensaje la primera vez que interactúe con datos corporativos usando un teclado de terceros. Se bloquearán todas las demás opciones, que no afecten al teclado nativo, y los usuarios de los dispositivos no podrán verlas. Los usuarios de los dispositivos verán el mensaje del cuadro de diálogo una vez. 
 
-### <a name="require-non-biometric-passcode-on-app-launch-and-timeout----1506985---"></a>Exigir código de acceso no biométrico al transcurrir tiempo de espera y al iniciar la aplicación <!-- 1506985 -->
-
-Al exigir un código de acceso no biométrico al iniciar la aplicación y después de transcurrir un tiempo de espera especificado por el administrador, Intune proporcionará una mayor seguridad para las aplicaciones compatibles con Administración de aplicaciones de móviles (MAM), ya que restringe el uso de identificación biométrica para el acceso a datos corporativos. La configuración afectará a los usuarios que dependen de Touch ID (iOS), Face ID (iOS), Android Biometric u otros métodos de autenticación biométrica futuros para tener acceso a aplicaciones compatibles con APP/MAM. Con esta configuración, los administradores de Intune tendrán un control más detallado sobre el acceso de los usuarios. De este modo, se evitan situaciones en las que un dispositivo con varias huellas digitales u otros métodos de acceso biométrico pueda revelar datos corporativos a un usuario incorrecto. En Azure Portal, abra **Microsoft Intune**. Seleccione **Aplicaciones cliente** > **Directivas de protección de aplicaciones** > **Agregar una directiva** > **Configuración**. En la **Acceso** encontrará ajustes específicos.
-
 ### <a name="office-365-pro-plus-language-packs----1833450---"></a>Paquetes de idioma de Office 365 Pro Plus <!-- 1833450 -->
-Como administrador de Intune, podrá implementar idiomas adicionales para las aplicaciones Office 365 Pro Plus administradas mediante Intune. La lista de idiomas disponibles incluye el **Tipo** de paquete de idioma (núcleo, parcial y corrección). En Azure Portal, seleccione **Microsoft Intune** > **Aplicaciones cliente** > **Aplicaciones** > **Agregar**. En la lista **Tipo de aplicación** de la hoja **Agregar aplicación**, seleccione **Windows 10** en **Conjunto de aplicaciones de Office 365**. Seleccione **Idiomas** en la hoja **Configuración del conjunto de aplicaciones**.
-
-### <a name="preview-a-new-user-experience-update-for-the-company-portal-website---2000968---"></a>Obtener una versión preliminar de una actualización de la experiencia de usuario en el sitio web de Portal de empresa <!--2000968 -->
-Tras escuchar las opiniones de los clientes, estamos agregando nuevas características al sitio web de Portal de empresa y al catálogo de aplicaciones de iOS. Podrá comprobar una mejora considerable en las funciones y la facilidad de uso actual de los dispositivos Android, iOS y Windows. Se aplicará un diseño moderno y receptivo a las áreas del sitio, como los detalles del dispositivo, los comentarios, el soporte técnico y la descripción general del dispositivo. También verá:
-
-- Flujos de trabajo simplificados en todas las plataformas del dispositivo
-- Flujos mejorados para la identificación y la inscripción de dispositivos
-- Mensajes de error más útiles
-- Lenguaje más descriptivo con menos jerga técnica
-- Posibilidad de compartir vínculos directos a aplicaciones
-- Mejor rendimiento de los catálogos de aplicaciones de gran tamaño
-- Mayor accesibilidad para todos los usuarios
-
-Actualmente, la actualización está disponible en versión preliminar. Puede registrarse para unirse a la versión preliminar en http://aka.ms/webcpflighting.
+Como administrador de Intune, podrá implementar idiomas adicionales para las aplicaciones Office 365 Pro Plus administradas mediante Intune. La lista de idiomas disponibles incluye el **Tipo** de paquete de idioma (núcleo, parcial y corrección). En el portal de Azure, seleccione **Microsoft Intune** > **Aplicaciones móviles** > **Aplicaciones** > **Agregar**. En la lista **Tipo de aplicación** de la hoja **Agregar aplicación**, seleccione **Windows 10** en **Conjunto de aplicaciones de Office 365**. Seleccione **Idiomas** en la hoja **Configuración del conjunto de aplicaciones**.
 
 <!-- 1805 start -->
 
-### <a name="require-non-biometric-passcode-on-cold-app-launch-and-timeout----1506985---"></a>Exigir código de acceso no biométrico al transcurrir tiempo de espera y al iniciar la aplicación en frío<!-- 1506985 --> 
+### <a name="require-non-biometric-after-specified-timeout----1506985---"></a>Requerir identificación que no sea biométrica después de tiempo de espera especificado <!-- 1506985 --> 
 
-Al exigir un código de acceso no biométrico al iniciar la aplicación en frío y después de transcurrir un tiempo de espera especificado por el administrador, Intune proporcionará una mayor seguridad para las aplicaciones compatibles con Administración de aplicaciones de móviles (MAM), ya que restringe el uso de identificación biométrica para el acceso a datos corporativos. La configuración afectará a los usuarios que dependen de Touch ID (iOS), Face ID (iOS), Android Biometric u otros métodos de autenticación biométrica futuros para tener acceso a aplicaciones compatibles con APP/MAM. Con esta configuración, los administradores de Intune tendrán un control más detallado sobre el acceso de los usuarios. De este modo, se evitan situaciones en las que un dispositivo con varias huellas digitales u otros métodos de acceso biométrico pueda revelar datos corporativos a un usuario incorrecto. En Azure Portal, abra **Microsoft Intune**. Seleccione **Aplicaciones cliente** > **Directivas de protección de aplicaciones** > **Agregar una directiva** > **Configuración**. En la **Acceso** encontrará ajustes específicos.
+Al exigir un número de identificación personal no biométrico después de transcurrir un tiempo de espera especificado por el administrador, Intune proporcionará una mayor seguridad para las aplicaciones compatibles con Administración de aplicaciones de móviles (MAM), ya que restringe el uso de identificación biométrica para el acceso a datos corporativos. La configuración afectará a los usuarios que dependen de Touch ID (iOS), Face ID (iOS), Android Biometric u otros métodos de autenticación biométrica futuros para tener acceso a aplicaciones compatibles con APP/MAM. Con esta configuración, los administradores de Intune tendrán un control más detallado sobre el acceso de los usuarios. De este modo, se evitan situaciones en las que un dispositivo con varias huellas digitales u otros métodos de acceso biométrico pueda revelar datos corporativos a un usuario incorrecto. En Azure Portal, abra **Microsoft Intune**. Seleccione **Aplicaciones móviles** > **Directivas de protección de aplicaciones** > **Agregar una directiva** > **Configuración**. En la **Acceso** encontrará ajustes específicos.
 
 <!-- 1803 start -->
-
-### <a name="ability-to-deploy-required-line-of-business-lob-apps-to-all-users-on-windows-10-desktop-devices----1627835-rs4---"></a>Capacidad de implementar aplicaciones de línea de negocio (LOB) requeridas en todos los usuarios en dispositivos Windows 10 Escritorio <!-- 1627835 RS4 -->
-Los clientes podrán implementar aplicaciones de Windows 10 de línea de negocio requeridas para instalarlas en contextos de dispositivo. Esto permitirá que estas aplicaciones estén disponibles para todos los usuarios del dispositivo. Esto solo es aplicable a dispositivos Windows 10 Escritorio.
 
 ### <a name="updating-the-help-and-feedback-experience-on-company-portal-app-for-android---1631531---"></a>Actualización de la experiencia de ayuda y comentarios en la aplicación Portal de empresa para Android <!--1631531 -->
 
 La experiencia de ayuda y comentarios en la aplicación Portal de empresa para Android se actualizará de acuerdo con los procedimientos recomendados para las aplicaciones Android. En los próximos meses actualizaremos la aplicación Portal de empresa para Android para dividir el elemento de menú **Ayuda y comentarios** en los elementos de menú independientes **Ayuda** y **Enviar comentarios**. En la página **Ayuda** se incluirá una sección **Preguntas más frecuentes** y un botón **Soporte por correo electrónico** para permitir a los usuarios finales cargar registros a Microsoft y enviar al equipo de soporte técnico de la empresa un correo electrónico en el que se describa el problema. **Enviar comentarios** llevará al usuario a través de un proceso estándar de envío de comentarios de Microsoft, en el que se le pedirá elegir entre "Me gusta algo", "No me gusta algo" o "Tengo una idea".
 
-<!-- the following are present prior to 1801 -->
 
-### <a name="app-protection-policies-----679615---"></a>Directivas de protección de aplicaciones  <!-- 679615 -->
-Las directivas de Intune App Protection ofrecerán la capacidad de crear directivas predeterminadas globales para habilitar rápidamente la protección en todos los usuarios de todo el inquilino.
 
 <!-- the following are present prior to 1711 -->
 

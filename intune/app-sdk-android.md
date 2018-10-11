@@ -14,12 +14,12 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 4c26d9914173c07096caad428afcbd9174625ef7
-ms.sourcegitcommit: a474a6496209ff3b60e014a91526f3d163a45438
+ms.openlocfilehash: ca1f34f6a0db6db26f03f62dba69c4cd708b9d65
+ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/06/2018
-ms.locfileid: "44031310"
+ms.lasthandoff: 09/24/2018
+ms.locfileid: "47028773"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guía para desarrolladores de Android acerca del SDK para aplicaciones de Microsoft Intune
 
@@ -475,8 +475,9 @@ En Azure Portal:
 7.  Seleccione **Administración de aplicaciones móviles de Microsoft** en la lista de API y haga clic en Seleccionar.
 8.  Seleccione **Read and Write the User’s App Management Data** (Leer y escribir datos de administración de aplicaciones del usuario).
 9.  Haga clic en **Listo**.
+10. Haga clic en **Conceder permisos** y después haga clic en **Sí**. 
 
-Consulte [este artículo](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-integrating-applications) para obtener información sobre cómo registrar una aplicación con Azure AD. 
+Consulte [este artículo](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) para obtener información sobre cómo registrar una aplicación con Azure AD. 
 
 Consulte también más adelante los requisitos para el [acceso condicional](#conditional-access).
 
@@ -1431,7 +1432,7 @@ La siguiente es una guía para el mensaje de Requerir usuario al iniciar la apli
 > Las ventajas de la **inscripción predeterminada** incluyen un método simplificado de obtención de la directiva del servicio APP-WE para una aplicación en el dispositivo.
 
 ### <a name="general-requirements"></a>Requisitos generales
-* Asegúrese de que la aplicación se registra con el servicio Administración de aplicaciones móviles de Intune siguiendo los pasos descritos en el [punto n.º 2 de Configuración de ADAL común](https://docs.microsoft.com/en-us/intune/app-sdk-android#common-adal-configurations).
+* Asegúrese de que la aplicación se registra con el servicio Administración de aplicaciones móviles de Intune siguiendo los pasos descritos en el [punto n.º 2 de Configuración de ADAL común](https://docs.microsoft.com/intune/app-sdk-android#common-adal-configurations).
 
 ### <a name="working-with-the-intune-sdk"></a>Trabajar con el SDK de Intune
 Estas instrucciones son específicas para todos los desarrolladores de aplicaciones de Android y Xamarin que quieren solicitar directivas de protección de aplicaciones de Intune para el uso de aplicaciones en dispositivos de usuario final.
@@ -1483,7 +1484,7 @@ Algunas de las clases base de MAM (como MAMActivity y MAMDocumentsProvider) cont
 ### <a name="roboelectric"></a>Robolectric
 No se admiten pruebas del comportamiento del SDK de MAM en Robolectric. Existen problemas conocidos relacionados con la ejecución del SDK de MAM en Robolectric debido a comportamientos en Robolectric que no imitan de forma precisa aquellos de emuladores o dispositivos reales.
 
-Si necesita probar la aplicación en Robolectric, se recomienda mover la lógica de clase de la aplicación a una aplicación auxiliar para producir el apk de pruebas unitarias con una clase de aplicación que no se herede de MAMApplication.
+Si necesita probar la aplicación en Robolectric, se recomienda mover la lógica de clase de la aplicación a un asistente para producir el apk de pruebas unitarias con una clase de aplicación que no se herede de MAMApplication.
 ## <a name="expectations-of-the-sdk-consumer"></a>Expectativas del consumidor del SDK
 
 El SDK de Intune mantiene el contrato proporcionado por la API de Android, aunque se pueden desencadenar condiciones de error con más frecuencia como resultado de la aplicación de directivas. Gracias a estas prácticas recomendadas, Android reducirá la probabilidad de que se produzcan errores:

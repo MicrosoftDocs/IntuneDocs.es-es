@@ -6,7 +6,7 @@ keywords: ''
 author: msmimart
 ms.author: mimart
 manager: dougeby
-ms.date: 02/20/2018
+ms.date: 09/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 83320c78d461981f1bfff52d2fddf4f121a88b8c
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 45c394f3aadde63299b8397974f4547c4968c192
+ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329672"
+ms.lasthandoff: 09/25/2018
+ms.locfileid: "47169039"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Creación y asignación de directivas de protección de aplicaciones
 
@@ -56,24 +56,22 @@ Para obtener información acerca de cómo agregar aplicaciones de línea de nego
    Para comenzar, la configuración de directiva tiene valores predeterminados. Si los valores predeterminados cumplen sus requisitos, no resulta necesario realizar ningún cambio.
 
    > [!TIP]
-   > Esta configuración de directiva se aplica solo al usar aplicaciones en el contexto de trabajo. Cuando los usuarios finales usen la aplicación para realizar una tarea personal, no se verán afectados por estas directivas.
+   > Esta configuración de directiva se aplica solo al usar aplicaciones en el contexto de trabajo. Cuando los usuarios finales usen la aplicación para realizar una tarea personal, no se verán afectados por estas directivas. Tenga en cuenta que cuando se crea un nuevo archivo se considera un archivo personal. 
 
-7. Seleccione **Aceptar** para guardar esta configuración. Esto le devolverá al panel **Agregar directiva**. Seleccione **Crear** para crear la directiva y guardar la configuración.
-8. Seleccione **Aceptar** para guardar esta configuración. De esta forma, volverá a la hoja **Agregar directiva**.
-9. Seleccione **Crear** para crear la directiva y guardar la configuración.
+7. Seleccione **Aceptar** para guardar esta configuración. De esta forma, volverá a la hoja **Agregar directiva**.
+8. Seleccione **Crear** para crear la directiva y guardar la configuración.
 
 Cuando termine de crear una directiva como se describe en el procedimiento anterior, no se implementará en ningún usuario. Para implementar una directiva, consulte [Implementar una directiva para los usuarios](app-protection-policies.md#deploy-a-policy-to-users).
 
 ## <a name="deploy-a-policy-to-users"></a>Implementar una directiva para los usuarios
 
-
 1. En el panel **Directivas de protección de aplicaciones**, seleccione una directiva.
 
-1. En el panel **Directiva**, elija **Asignaciones**, lo que abrirá el panel **Protección de aplicaciones de Intune - Asignaciones**. Elija **Seleccionar grupos para incluir** en el panel **Asignaciones** para abrir el panel **Seleccionar grupos para incluir**.
+2. En el panel **Directiva**, elija **Asignaciones**, lo que abrirá el panel **Protección de aplicaciones de Intune - Asignaciones**. Elija **Seleccionar grupos para incluir** en el panel **Asignaciones** para abrir el panel **Seleccionar grupos para incluir**.
 
    ![Captura de pantalla del panel Asignaciones con la opción Seleccionar grupos para incluir resaltada](./media/app-protection-policy-add-users.png)
 
-2.  Se mostrará una lista de grupos de usuarios en el panel **Add user group** (Agregar grupo de usuarios). En esta aparecen todos los grupos de seguridad de su **Azure Active Directory**. Seleccione los grupos de usuarios a los que quiera aplicar esta directiva y, después, elija **Seleccionar**. Al elegir **Seleccionar**, la directiva se implementa para los usuarios.
+3.  Se mostrará una lista de grupos de usuarios en el panel **Add user group** (Agregar grupo de usuarios). En esta aparecen todos los grupos de seguridad de su **Azure Active Directory**. Seleccione los grupos de usuarios a los que quiera aplicar esta directiva y, después, elija **Seleccionar**. Al elegir **Seleccionar**, la directiva se implementa para los usuarios.
 
     ![Captura de pantalla del panel Add user group (Agregar grupo de usuarios) que muestra la lista de usuarios de Azure Active Directory](./media/azure-ad-user-group-list.png)
 
@@ -127,10 +125,12 @@ Dado que las directivas de protección de aplicaciones de Intune están destinad
 
 Para crear estas directivas, vaya a **Aplicaciones cliente** > **Directivas de protección de aplicaciones** en la consola de Intune y haga clic en **Agregar una directiva**. También puede editar una directiva de protección de aplicaciones existente. Si quiere que la directiva de protección de aplicaciones se aplique a los dispositivos administrados y a los no administrados, confirme que la opción **Destinar a todos los tipos de aplicaciones** esté establecida en **Sí**, que es el valor predeterminado. Si quiere efectuar una asignación granular según el estado de administración, establezca la opción **Destinar a todos los tipos de aplicaciones** en **No**. 
 
-Para que las aplicaciones de iOS se consideren "Administradas", debe implementarse el valor de la directiva de configuración **IntuneMAMUPN** en cada aplicación. Para más información, vea [Administración de transferencias de datos entre aplicaciones iOS en Microsoft Intune](https://docs.microsoft.com/en-us/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
+![Captura de pantalla de la hoja Agregar una directiva con destino a todos los tipos de aplicaciones seleccionadas](./media/app-protection-policies-target-all.png)
+
+Para que las aplicaciones de iOS se consideren "Administradas", debe implementarse el valor de la directiva de configuración **IntuneMAMUPN** en cada aplicación. Para más información, vea [Administración de transferencias de datos entre aplicaciones iOS en Microsoft Intune](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
 
 > [!NOTE]
-> Para obtener información específica de compatibilidad con iOS sobre las directivas de protección de aplicaciones según el estado de administración de los dispositivos, vea [MAM protection policies targeted based on management state](whats-new.md#mam-protection-policies-targeted-based-on-management-state-) (Directivas de protección MAM destinadas según el estado de administración).
+> Para obtener información específica de compatibilidad con iOS sobre las directivas de protección de aplicaciones según el estado de administración de los dispositivos, vea [MAM protection policies targeted based on management state](whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state-) (Directivas de protección MAM destinadas según el estado de administración).
 
 ## <a name="policy-settings"></a>Configuraciones de directiva
 Para ver una lista completa de las configuraciones de directivas para iOS y Android, seleccione uno de los siguientes vínculos:

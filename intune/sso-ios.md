@@ -6,19 +6,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/2/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 010ed8511b042d6f764ba947f616d76521588f42
-ms.sourcegitcommit: 91802e78cd5014d20a828ca25a54a381d452f0f8
+ms.openlocfilehash: bdc7f4f8f796d04f5c709298cd654bc2cdc32d0e
+ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 05/16/2018
-ms.locfileid: "34216265"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47864615"
 ---
 # <a name="configure-microsoft-intune-for-ios-device-single-sign-on"></a>Configurar Microsoft Intune para el inicio de sesión único para dispositivos iOS
 
@@ -84,7 +84,7 @@ Por ejemplo, cuando un usuario se conecta a alguno de estos sitios, el dispositi
 > [!NOTE]
 > Estas direcciones URL deben tener el formato FQDN correcto. Apple exige que tengan el formato `http://<yourURL.domain>`.
 
-Los patrones de coincidencia de la dirección URL deben comenzar por `http://` o `https://`. Se realiza una coincidencia de cadena simple, así que el prefijo de URL `http://www.contoso.com/` no coincide con `http://www.contoso.com:80/`. Pero con iOS 9.0 o posterior, se puede usar un único carácter comodín \* para especificar todos los valores coincidentes. Por ejemplo, `http://*.contoso.com/` coincide con `http://store.contoso.com/` y con `http://www.contoso.com`.
+Los patrones de coincidencia de la dirección URL deben comenzar por `http://` o `https://`. Se realiza una coincidencia de cadena simple, así que el prefijo de URL `http://www.contoso.com/` no coincide con `http://www.contoso.com:80/`. Pero con iOS 10.0 o posterior, se puede usar un único carácter comodín \* para especificar todos los valores coincidentes. Por ejemplo, `http://*.contoso.com/` coincide con `http://store.contoso.com/` y con `http://www.contoso.com`.
 Los patrones `http://.com` y `https://.com` coinciden con todas las direcciones URL HTTP y HTTPS, respectivamente.
 
 ### <a name="apps-that-will-use-single-sign-on"></a>Aplicaciones que usarán el inicio de sesión único
