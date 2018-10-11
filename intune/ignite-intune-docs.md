@@ -5,7 +5,7 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 9/21/2018
+ms.date: 10/08/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: ''
 ROBOTS: NOINDEX,NOFOLLOW
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 56c98f1cf310632e91845b5a3e852df1f1ca8366
-ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
+ms.openlocfilehash: 600c6a00910647983cc2329f9256b613560aaf14
+ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47864462"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48866327"
 ---
 # <a name="microsoft-intune-documentation-40ignite-special-edition41"></a>Documentación de Microsoft Intune &#40;edición especial de Ignite&#41;
 Le damos la bienvenida a Microsoft Ignite 2018. Nos alegra que se haya acercado hasta aquí. Aproveche su visita a Microsoft Ignite 2018 para echar un vistazo a los recursos de Intune que hemos reunido para usted.
@@ -37,7 +37,7 @@ Hemos actualizado y creado algunos inicios rápidos. Siga estos inicios rápidos
 - [Asignar directivas](get-started-policies.md): Cree una directiva de cumplimiento de dispositivos para un dispositivo Windows 10 y asígnele un grupo.
 - [Configurar la inscripción automática](quickstart-setup-auto-enrollment.md): Configure Microsoft Intune para inscribir automáticamente los dispositivos cuando determinados usuarios inicien sesión en dispositivos Windows 10.
 - [Crear y asignar un rol personalizado](quickstart-create-custom-role.md): Cree y asigne un rol personalizado con permisos específicos para un departamento de operaciones de seguridad. 
-- [Crear un perfil de dispositivo de correo para iOS](quickstart-email-profile.md): Cree un perfil de dispositivo de correo para dispositivos iOS.
+- [Crear un perfil de dispositivo de correo para iOS](quickstart-email-profile.md): cree un perfil de dispositivo de correo para dispositivos iOS.
 
 ## <a name="learn"></a>Aprendizaje
 - [Novedades de Intune](whats-new.md)
@@ -45,7 +45,7 @@ Hemos actualizado y creado algunos inicios rápidos. Siga estos inicios rápidos
 
 ## <a name="contribute-to-docs"></a>Colaborar en documentación
 - [Convertirse en un colaborador de documentación de Intune](https://github.com/MicrosoftDocs/IntuneDocs/blob/master/README.md)  
-- [Principales colaboradores de documentación de Intune de este mes](https://github.com/MicrosoftDocs/IntuneDocs/graphs/contributors?from=2018-10-01&to=2018-10-31&type=c)  
+- [Principales colaboradores de documentación de Intune de este mes](https://github.com/MicrosoftDocs/IntuneDocs/graphs/contributors?from=2018-09-01&to=2018-11-30&type=c)  
 
 ## <a name="start-using-intune"></a>Introducción al uso de Intune
 - [Licencias que incluyen Intune](licenses.md)

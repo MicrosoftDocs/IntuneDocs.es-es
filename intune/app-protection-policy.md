@@ -3,8 +3,8 @@ title: ¿Qué son las directivas de protección de aplicaciones?
 titleSuffix: Microsoft Intune
 description: Obtenga información sobre cómo las directivas de protección de aplicaciones de Microsoft Intune ayudan a proteger los datos de su empresa y evitan la pérdida de datos.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 09/14/2018
 ms.topic: conceptual
@@ -15,12 +15,12 @@ ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 5acdcd0a8c2fcb906f0b40e2c1ab937559c7ae01
-ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
+ms.openlocfilehash: 64e58ef4d27d2f967eff8c503842345879799168
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45727584"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48232212"
 ---
 # <a name="what-are-app-protection-policies"></a>¿Qué son las directivas de protección de aplicaciones?
 

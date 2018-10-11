@@ -3,8 +3,8 @@ title: Configuración de la integración de Better Mobile con Intune
 titleSuffix: Intune on Azure
 description: Integración del conector de Better Mobile con Intune
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 7/25/2018
 ms.topic: article
@@ -12,18 +12,18 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: ''
-ms.openlocfilehash: 000a84ac6167b238520ea2ff88aadf9e8aa0a929
-ms.sourcegitcommit: 23adbc50191f68c4b66ea845a044da19c659ac84
+ms.openlocfilehash: a677bab1f18fc0d0e0d159f2b40fae314b292e0f
+ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/13/2018
-ms.locfileid: "45562704"
+ms.lasthandoff: 10/02/2018
+ms.locfileid: "48231147"
 ---
 # <a name="integrate-better-mobile-with-intune"></a>Integración de Better Mobile con Intune
 
 Complete estos pasos para integrar la solución Better Mobile Threat Defense con Intune.
 
-## <a name="before-you-begin"></a>Antes de comenzar
+## <a name="before-you-begin"></a>Antes de empezar
 
 > [!NOTE]
 > Los pasos siguientes debe completarlos en la [consola de administración de Better Mobile](https://aad.bmobi.net).
