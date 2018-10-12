@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/06/2017
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,19 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 51bca0c2aa10f15511e1644eda9ca6dd11c36f8b
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 99570a30130d35a651701749628cd918acf858e0
+ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31031590"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47864565"
 ---
-# <a name="using-your-ios-device-with-intune"></a>Usar un dispositivo iOS con Intune
-
-Intune tiene varias características que facilitan la vida laboral. Esta es una lista de las tareas más habituales que la empresa puede pedirle.
+# <a name="using-your-ios-device-with-intune-company-portal"></a>Use su dispositivo iOS con Portal de empresa de Intune
+En este artículo se enumeran tareas e información específica para el Portal de empresa para iOS. Le puede ser útil para solucionar problemas y administrar un dispositivo iOS. Haga clic en cualquier vínculo para ver más detalles, pasos y capturas de pantalla.
 
 ## <a name="supported-versions"></a>Versiones compatibles
 
-Intune actualmente admite iOS 9.0 y versiones posteriores.
+Actualmente, el Portal de empresa para iOS es compatible con iOS 10.0 y versiones posteriores.
 
 ## <a name="enrolling-into-intune-and-installing-the-company-portal"></a>Inscripción en Intune e instalación del Portal de empresa
 
