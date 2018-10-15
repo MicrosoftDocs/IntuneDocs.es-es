@@ -3,10 +3,10 @@ title: Cómo obtener asistencia para Microsoft Intune
 titlesuffix: Microsoft Intune
 description: Obtenga soporte técnico en línea y telefónico para las suscripciones de prueba y de pago de Microsoft Intune.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 06/28/2017
+ms.date: 09/25/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 08d5e94155586140ac087b9ad9d24bdbd078f59b
-ms.sourcegitcommit: 445fcf9e2a185e5c987334cad398bce71383be03
+ms.openlocfilehash: c9a413e0aaf13b2dab7b211a568fbd15ce43df3a
+ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843147"
+ms.lasthandoff: 09/26/2018
+ms.locfileid: "47187791"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Cómo obtener asistencia para Microsoft Intune
 
@@ -30,17 +30,27 @@ Microsoft proporciona servicios globales de soporte técnico, preventa, facturac
 
 >[!IMPORTANT]
 > Para obtener soporte técnico para productos de terceros que funcionan con Intune (por ejemplo, Saaswedo, Cisco o Lookout), póngase en contacto con el proveedor de ese producto en primer lugar. Asegúrese de que ha configurado el otro producto correctamente antes de abrir una solicitud con el soporte técnico de Intune.
+> 
+> Para obtener información sobre cómo solucionar problemas relacionados con Microsoft Intune, consulte la [sección de solución de problemas](help-desk-operators.md) de la documentación de Intune.
+
+Como administrador de TI, puede usar la opción **Ayuda y soporte técnico** para registrar una incidencia de soporte técnico en línea sobre Intune desde Azure Portal. Para crear una incidencia de soporte técnico, su cuenta debe tener asignado uno de los siguientes [roles de administrador en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal): 
+
+- Administrador de Intune 
+- Administrador global 
+- Administrador de servicios  
+
+
+## <a name="get-context-sensitive-help"></a>Obtener ayuda contextual 
+Después de iniciar sesión en Azure Portal y abrir Intune, puede seleccionar **Ayuda y soporte técnico** desde cualquier hoja de Intune para ver soluciones a problemas comunes relacionados con esa área de Intune. 
+
+Si con las soluciones comunes no logra corregir el problema, puede seleccionar **Solicitud de soporte técnico** para crear una nueva solicitud que se abre en la hoja **Básico** de la página *Ayuda y soporte técnico* de Azure. Para continuar y crear una incidencia de soporte técnico, vaya al *paso 3* del procedimiento siguiente, [Creación de un vale de soporte en línea](#create-an-online-support-ticket). 
 
 ## <a name="create-an-online-support-ticket"></a>Creación de un vale de soporte en línea
 
-Como administrador de TI, puede presentar un vale de soporte desde Azure Portal mediante los pasos siguientes:
->[!NOTE]
->Debe ser un administrador de servicios de Intune o un administrador global para crear una incidencia de soporte técnico en línea. Para obtener información detallada, vea [Asignar roles de administrador](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal).
-1. Inicie sesión en Azure Portal (<https://portal.azure.com>) con sus credenciales de administrador de Intune, elija el icono <strong>?</strong> situado en la esquina superior derecha del portal y, después, seleccione <strong>Ayuda y soporte técnico</strong> para ir a la página [Ayuda y soporte técnico de Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
-
+1. Inicie sesión en Azure Portal (<https://portal.azure.com>) con sus credenciales de administrador de Intune y haga clic en el icono <strong>?</strong> situado en la esquina superior derecha del portal y, después, seleccione <strong>Ayuda y soporte técnico</strong> para ir a la página [Ayuda y soporte técnico de Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
     ![Captura de pantalla del vínculo del signo de interrogación de Ayuda y soporte técnico de Azure Portal con el vínculo de Ayuda y soporte técnico resaltado](./media/azure-get-support.png)
 
-2. En la página de Ayuda y soporte técnico de Azure, seleccione **Nueva solicitud de soporte técnico**.
+2. En la página de *Ayuda y soporte técnico de Azure*, seleccione **Nueva solicitud de soporte técnico**.
 
     ![Captura de pantalla de la página de Ayuda y soporte técnico de Azure con el vínculo Nueva solicitud de soporte técnico resaltado](./media/azure-support-ticket-link.png)
 
@@ -72,7 +82,7 @@ Como administrador de TI, puede presentar un vale de soporte desde Azure Portal 
    - **Hora**
    - **Datos complementarios**
 
-     Seleccione **Siguiente**.
+   Seleccione **Siguiente**.
 
 5. Proporcione **Información de contacto** para esta solicitud de soporte técnico. El soporte técnico de Microsoft usa esta información para ponerse en contacto con usted.
 6. Pulse **Crear** para enviar la solicitud de soporte técnico.
@@ -80,7 +90,15 @@ Como administrador de TI, puede presentar un vale de soporte desde Azure Portal 
 >[!IMPORTANT]
 >Si tiene una pregunta sobre suscripciones o facturación, puede abrir un caso para obtener asistencia mediante el [Centro de administración de Office](https://portal.office.com/Support/SupportEntry.aspx).
 
+## <a name="view-support-requests"></a>Ver las solicitudes de soporte técnico
+Puede ver una solicitud de soporte técnico desde Azure Portal. Para ello:
+
+1. Inicie sesión en Azure (<https://portal.azure.com>) con sus credenciales de administrador de Intune y haga clic en el icono <strong>?</strong> situado en la esquina superior derecha del portal y, después, seleccione <strong>Ayuda y soporte técnico</strong> para ir a la página [Ayuda y soporte técnico de Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
+
+2. En la página **Ayuda y soporte técnico** puede ver la lista **Solicitudes de soporte técnico recientes** y seleccionarlas para ver detalles adicionales.
+
 ## <a name="additional-resources"></a>Recursos adicionales
 - [Asistencia telefónica para Microsoft Intune](phone-support-contact.md)
 - [Soporte de facturación y administración de suscripciones](https://support.office.com/article/Contact-Office-365-for-business-support-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 - [Licencias por volumen](http://go.microsoft.com/fwlink/p/?LinkID=282015)
+- [Solución de problemas de Intune](help-desk-operators.md)
