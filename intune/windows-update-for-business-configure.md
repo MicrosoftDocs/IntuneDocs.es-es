@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: df7e14b485fae0a70b8f0f487229b9e31ace4077
-ms.sourcegitcommit: 40b1d82df99f09a75a17065cdd0e84d8038f460a
+ms.openlocfilehash: d709681519f2e68d38958d6ec2082b762e22cf60
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/22/2018
-ms.locfileid: "40255247"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425162"
 ---
 # <a name="manage-software-updates-in-intune"></a>Administrar las actualizaciones de software en Intune
 
@@ -34,7 +34,7 @@ Con Windows Update para empresas puede simplificar la experiencia de administrac
   - Windows Insider: Lenta
   - Lanzamiento de Windows Insider 
       
-  Para obtener información detallada sobre los canales de servicio disponibles, vea [Información general de Windows como servicio](https://docs.microsoft.com/en-us/windows/deployment/update/waas-overview#servicing-channels).
+  Para obtener información detallada sobre los canales de servicio disponibles, vea [Información general de Windows como servicio](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels).
 - **Configuración de aplazamiento**: configure las opciones de aplazamiento de actualizaciones con el fin de retrasar la instalación de las actualizaciones para grupos de dispositivos. Puede usar esta configuración para organizar su implementación de actualización para poder revisar el progreso sobre la marcha.
 - **Pausa**: posponga la instalación de actualizaciones si detecta un problema en cualquier momento durante la implementación.
 - **Período de mantenimiento**: configure las horas en que se pueden instalar las actualizaciones.

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3bb891b2a602cde4510953ce00c4e206d1135fce
-ms.sourcegitcommit: a89af1f0dad61320ab3e31cb64708f14514a5081
+ms.openlocfilehash: 83a231f41f5cf9d4488e86040c2d7e141f71d0a7
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/19/2018
-ms.locfileid: "46300466"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49424924"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Restablecimiento o eliminación del código de acceso de un dispositivo en Intune
 
@@ -49,7 +49,6 @@ Para dispositivos Android, esto significa que el restablecimiento del código de
 | Dispositivos Android que ejecutan la versión 7.x y anteriores | No |
 | iOS | No |
 | macOS | No |
-| iOS | No |
 
 Para crear un nuevo código de acceso del perfil de trabajo, use la acción Restablecer el código de acceso. Esta acción solicita un restablecimiento del código de acceso y crea uno nuevo y provisional, únicamente para el perfil de trabajo. 
 

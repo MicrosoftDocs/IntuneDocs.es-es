@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: cd9f05e7-26e6-45e0-8d38-67d8232b1cae
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 55df1b152ee32456d577afacedd034583e591e3e
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.openlocfilehash: fc49d7ba7cdc5b986c06f8a84ececc8339a812a2
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058731"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425111"
 ---
 # <a name="intune-app-sdk-overview"></a>Información general del SDK para aplicaciones de Intune
 El SDK de aplicaciones de Intune, disponible para iOS y Android, habilita su aplicación para las directivas de protección de aplicaciones de Intune. Su objetivo es minimizar la cantidad de cambios de código que debe realizar el desarrollador de la aplicación. Verá que puede habilitar la mayoría de las características del SDK sin necesidad de cambiar el comportamiento de la aplicación. Para obtener una experiencia de administrador de TI y de usuario final mejorada, puede usar nuestras API con el objetivo de personalizar el comportamiento de la aplicación para aquellas características que requieren la participación de esta.
@@ -44,7 +44,7 @@ Los administradores de TI pueden aplicar una directiva que garantice el cifrado 
 Los administradores de TI pueden borrar remotamente datos corporativos desde una aplicación administrada por Intune. Esta característica está basada en identidades y eliminará tan solo los archivos asociados con la identidad corporativa del usuario final. Para ello, la característica requiere la participación de la aplicación. La aplicación puede especificar la identidad para la que debe producirse el borrado en función de la configuración de usuario. Si esta configuración especificada por el usuario no se encuentra en la aplicación, el comportamiento predeterminado será borrar el directorio de la aplicación y notificar al usuario final que se ha quitado el acceso.
 
 ### <a name="enforce-the-use-of-a-managed-browser"></a>Exigir el uso de un explorador administrado
-Los administradores de TI pueden forzar los vínculos web de la aplicación para que se abran con la [aplicación Managed Browser de Intune](/intune-classic/deploy-use/manage-internet-access-using-managed-browser-policies). Esta funcionalidad garantiza que los vínculos que aparecen en un entorno corporativo se mantengan dentro del dominio de las aplicaciones administradas por Intune.
+Los administradores de TI pueden forzar los vínculos web de la aplicación para que se abran con la [aplicación Managed Browser de Intune](app-configuration-managed-browser.md). Esta funcionalidad garantiza que los vínculos que aparecen en un entorno corporativo se mantengan dentro del dominio de las aplicaciones administradas por Intune.
 
 ### <a name="enforce-a-pin-policy"></a>Aplicar una directiva de PIN
 Los administradores de TI pueden solicitar al usuario final que escriba un PIN antes de tener acceso a los datos corporativos de la aplicación. Esto garantiza que el usuario que usa la aplicación sea el mismo que en un principio inició sesión con su cuenta profesional o educativa. Cuando los usuarios finales configuran su PIN, el SDK de aplicaciones de Intune usa Azure Active Directory para comprobar las credenciales de los usuarios finales con la cuenta de Intune inscrita.
