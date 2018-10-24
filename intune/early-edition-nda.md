@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: e37a45122ab4950e2a85cc1c6f6696759d429a3f
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 72585982cd27962981f581a99f0ea361642df0ee
+ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828285"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49652145"
 ---
 # <a name="the-early-edition-for-microsoft-intune---october-2018"></a>La edición anticipada para Microsoft Intune: octubre de 2018
 
@@ -44,9 +44,6 @@ Esta página se actualiza periódicamente. Compruebe si hay actualizaciones adic
 ### <a name="use-microsoft-recommended-settings-with-security-baselines----2055484---"></a>Uso de la configuración recomendada por Microsoft con líneas de base de seguridad <!-- 2055484 -->
 Intune se integra con otros servicios centrados en la seguridad, incluidos ATP de Windows Defender y Office 365 ATP. Los clientes solicitan una estrategia común y un conjunto coherente de flujos de trabajo de seguridad integrales entre los servicios de Microsoft 365. Nuestro objetivo es alinear las estrategias para crear soluciones que actúen de puente entre las operaciones de seguridad y las tareas de administración comunes. En Intune, este objetivo se pretende lograr mediante la publicación de un conjunto de "Líneas de base de seguridad" recomendadas de Microsoft (**Intune** > **Líneas de base de seguridad**).  Un administrador podrá crear directivas de seguridad directamente a partir de estas líneas de base y, después, implementarlas en sus usuarios. También se pueden personalizar los procedimientos recomendados para satisfacer las necesidades de la organización. Intune garantiza que los dispositivos cumplan estas líneas de base y notifica a los administradores los usuarios o dispositivos que no están en cumplimiento.
 
-### <a name="remove-ability-for-admins-to-wipe-personal-devices-and-reset-passcodes----2934699---"></a>Eliminación de la capacidad de los administradores de borrar los dispositivos personales y restablecer las contraseñas <!-- 2934699 -->
-Para reducir el temor de los usuarios de que los administradores de la empresa puedan borrar sus dispositivos personales, las acciones remotas [Borrar](devices-wipe.md#wipe) y [Restablecer contraseña](device-passcode-reset.md) dejarán de aplicarse a los dispositivos personales. Cambie el tipo de propiedad de dispositivo a corporativo para habilitar estas acciones para los dispositivos propiedad de la organización.
-
 ### <a name="autopilot-support-for-hybrid-azure-active-directory-joined-devices----1048100---"></a>Compatibilidad con AutoPilot para dispositivos híbridos unidos a Azure Active Directory <!-- 1048100 -->
 Podrá configurar dispositivos híbridos unidos a Azure Active Directory mediante AutoPilot. Los dispositivos deben estar unidos a la red de la organización para usar la característica de AutoPilot híbrida.
 
@@ -56,7 +53,7 @@ Para crear una etiqueta de ámbito, elija **Roles de Intune** > **Ámbito (etiqu
 Para agregar una etiqueta de ámbito a una asignación de rol, elija **Roles de Intune** > **Todos los roles** > **Policy and profile manager (Administrador de directivas y perfiles)** > **Asignaciones** > **Ámbito (etiquetas)**.
 Para agregar una etiqueta de ámbito a un perfil de configuración, elija **Configuración del dispositivo** > **Perfiles** > elija un perfil > **Propiedades** > **Ámbito (etiquetas)**.
 
-## <a name="tenant-health-dashboard----1124854---"></a>Panel de estado del inquilino <!-- 1124854 -->
+### <a name="tenant-health-dashboard----1124854---"></a>Panel de estado del inquilino <!-- 1124854 -->
 En la página Estado del inquilino de Intune se proporciona información de estado del inquilino en un solo lugar. La página se divide en cuatro secciones:  
 - **Detalles del inquilino**: contiene información como la autoridad de MDM, el total de los dispositivos inscritos en el inquilino y el número de licencias. En esta sección también se proporciona la versión actual del servicio para el inquilino.
 - **Estado del conector**: contiene información de los conectores configurados, como PCV de Apple, Microsoft Store para Empresas y los conectores de certificados. En función de su estado actual, los conectores se marcan como *Correcto*, *Advertencia* o *Incorrecto*.

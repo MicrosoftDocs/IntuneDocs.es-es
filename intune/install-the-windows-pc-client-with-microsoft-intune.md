@@ -13,12 +13,12 @@ ms.assetid: ''
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: ce977e295df3b5fa48c38b3c2e0d23035cc2f2d1
-ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
+ms.openlocfilehash: 322a60101132d5ef435752079bb5c52a7a4b3a78
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863134"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425026"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Instalar el cliente de software de Intune en equipos con Windows
 
@@ -46,7 +46,7 @@ Todos los métodos, excepto aquellos en los que los usuarios instalan el softwar
 
 1. En la [consola de administración de Microsoft Intune](https://manage.microsoft.com/), haga clic en **Administración** &gt; **Descargar software cliente**.
 
-   ![Descargar el cliente de equipo de Intune](./media/https://docs.microsoft.com/en-us/intune/media/install-the-windows-pc-client/pc-sa-client-download.png)
+   ![Descargar el cliente de equipo de Intune](./media/https://docs.microsoft.com/intune/media/install-the-windows-pc-client/pc-sa-client-download.png)
 
 2. En la página **Descarga de software cliente**, haga clic en **Descargar software cliente**. A continuación, guarde el paquete **Microsoft_Intune_Setup.zip** que contiene el software en una ubicación segura de la red.
 
