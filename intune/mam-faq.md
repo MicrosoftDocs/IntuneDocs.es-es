@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d42133d8a2e52300a2414de9105db2ef26bae445
-ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
+ms.openlocfilehash: 635853cb744395e6ae519985eaed62b53e88578e
+ms.sourcegitcommit: 38afcff149f9c86e92e5f1eccaa927859c395926
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799683"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307430"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Preguntas más frecuentes sobre MAM y la protección de la aplicación
 
@@ -88,11 +88,9 @@ Cualquier aplicación integrada con el [SDK para aplicaciones de Intune](/intune
 Intune marca todos los datos de la aplicación como "empresa" o "personal". Los datos se consideran "corporativos" cuando se originan desde una ubicación de la empresa. Para las aplicaciones de Office, Intune considera las siguientes ubicaciones de la empresa: correo electrónico (Exchange) o almacenamiento en la nube (aplicación OneDrive con una cuenta de OneDrive para la Empresa).
 
 **¿Cuáles son los requisitos adicionales para usar Skype Empresarial?**<br></br>
-Consulte los requisitos de licencias de [Skype Empresarial](https://products.office.com/skype-for-business/it-pros).
-  >[!NOTE]
-  > La aplicación móviles Skype Empresarial admite actualmente solo Skype Empresarial Online.
+Consulte los requisitos de licencias de [Skype Empresarial](https://products.office.com/skype-for-business/it-pros). Para configuraciones híbridas y locales de Skype Empresarial, consulte [Hybrid Modern Auth for SfB and Exchange goes GA](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Hybrid-Modern-Auth-for-SfB-and-Exchange-goes-GA/ba-p/134756) (La autenticación moderna híbrida para Skype Empresarial y Exchange está disponible con carácter general) y [Modern Auth for SfB OnPrem with AAD](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Modern-Auth-for-SfB-OnPrem-with-AAD/ba-p/180910) (Autenticación moderna para Skype Empresarial local con AAD), respectivamente.
 
-## <a name="app-protection-features"></a>Funciones de protección de aplicaciones
+## <a name="app-protection-features"></a>Características de protección de aplicaciones
 
 **¿Qué es la compatibilidad con varias identidades?**<br></br>
 La compatibilidad con varias identidades es la capacidad para Intune App SDK de solo aplicar las directivas de protección de aplicaciones a la cuenta profesional o educativa con la que se ha iniciado sesión en la aplicación. Si se ha iniciado sesión en la aplicación con una cuenta personal, los datos no se modifican.

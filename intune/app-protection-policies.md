@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/12/2018
+ms.date: 10/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 368c804fa044dc303b22e2ae9cf8d273d6cd051a
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 3478308e8e2c219631d0df864ca2add6cc57cda2
+ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231821"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49075870"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Creación y asignación de directivas de protección de aplicaciones
 
@@ -127,7 +127,10 @@ Para crear estas directivas, vaya a **Aplicaciones cliente** > **Directivas de p
 
 ![Captura de pantalla de la hoja Agregar una directiva con destino a todos los tipos de aplicaciones seleccionadas](./media/app-protection-policies-target-all.png)
 
-Para que las aplicaciones de iOS se consideren "Administradas", debe implementarse el valor de la directiva de configuración **IntuneMAMUPN** en cada aplicación. Para más información, vea [Administración de transferencias de datos entre aplicaciones iOS en Microsoft Intune](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
+Para iOS, se requieren ajustes adicionales de configuración de la aplicación para dirigir la configuración de la aplicación a las aplicaciones en dispositivos inscritos en Intune:
+- **IntuneMAMUPN** debe configurarse para todas las aplicaciones administradas de MDM.  Para más información, vea [Administración de transferencias de datos entre aplicaciones iOS en Microsoft Intune](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
+- **IntuneMAMDeviceID** debe configurarse para todas las aplicaciones administradas de MDM de LOB y de terceros. **IntuneMAMDeviceID** debe configurarse en el token de identificador de dispositivo. Por ejemplo, `key=IntuneMAMDeviceID, value={{deviceID}}`. Para obtener más información, vea [Agregar directivas de configuración de aplicaciones para dispositivos iOS administrados](https://docs.microsoft.com/intune/app-configuration-policies-use-ios).
+- Si solo está configurado **IntuneMAMDeviceID**, la aplicación Intune considerará el dispositivo como no administrado.  
 
 > [!NOTE]
 > Para obtener información específica de compatibilidad con iOS sobre las directivas de protección de aplicaciones según el estado de administración de los dispositivos, vea [MAM protection policies targeted based on management state](whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state-) (Directivas de protección MAM destinadas según el estado de administración).

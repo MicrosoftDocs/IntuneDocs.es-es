@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: d0b6f3fe-2bd4-4518-a6fe-b9fd115ed5e0
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: bdf927eff77b6a97e4c763ec0d75c7e44e4c6840
-ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
+ms.openlocfilehash: e7e740d03453a437572f8f960ed21927f4fcbace
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799591"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102045"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-devices"></a>Agregar directivas de configuración de aplicaciones para dispositivos Android administrados
 
@@ -29,7 +29,9 @@ ms.locfileid: "48799591"
 Use directivas de configuración de aplicaciones de Microsoft Intune para facilitar los valores de configuración de las aplicaciones de perfil de trabajo Android. El desarrollador de aplicaciones debe exponer las opciones de configuración de las aplicaciones administradas de Android para poder especificar valores de configuración para la aplicación. Asigne la directiva de configuración de aplicaciones al grupo de usuarios al que quiere que se aplique la configuración.  La configuración de directivas se usa cada vez que la aplicación la comprueba, que suele ser la primera vez que se ejecuta.
 
 > [!Note]  
-> No todas las aplicaciones admiten la configuración de aplicaciones. Póngase en contacto con el desarrollador de la aplicación para comprobar si la aplicación admite directivas de configuración de aplicaciones.
+> No todas las aplicaciones admiten la configuración de aplicaciones. Póngase en contacto con el desarrollador de la aplicación para comprobar si la aplicación admite directivas de configuración de aplicaciones.<p></p>
+> Como administrador de Microsoft Intune, puede controlar qué cuentas de usuario se agregan a las aplicaciones de Microsoft Office en dispositivos administrados. Puede limitar el acceso solo a las cuentas de usuario de la organización permitidas y bloquear las cuentas personales en los dispositivos inscritos. Las aplicaciones auxiliares procesan la configuración de la aplicación y quitan y bloquean las cuentas no aprobadas.<p></p>
+> Para Microsoft Word, Microsoft Excel y Microsoft PowerPoint, debe usar Android 16.0.9327.1000 y versiones posteriores.
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
 2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
@@ -69,6 +71,16 @@ Puede elegir las opciones siguientes si elige una variable como tipo de valor:
 - Identificador de usuario (por ejemplo, **3ec2c00f-b125-4519-acf0-302ac3761822**)
 - Nombre de usuario (por ejemplo, **John Doe**)
 
+### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Permitir solo cuentas de organización configuradas en aplicaciones de varias identidades 
+
+Para dispositivos Android, use los siguientes pares de clave/valor:
+
+| **Clave** | com.microsoft.intune.mam.AllowedAccountUPNs |
+|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Valores** | <ul><li>Uno o varios UPN delimitados por <code>;</code>.</li><li>Las cuentas permitidas son las únicas cuentas de usuario administradas que define esta clave.</li><li> Para los dispositivos inscritos en Intune, el token <code>{{userprincipalname}}</code> se puede usar para representar la cuenta de usuario inscrito.</li></ul> |
+
+   > [!NOTE]
+   > Debe usar Outlook para Android 2.2.222 o posterior al permitir solo cuentas de organización configuradas con varias identidades. 
 
 ## <a name="enter-the-json-editor"></a>Editor de JSON
 

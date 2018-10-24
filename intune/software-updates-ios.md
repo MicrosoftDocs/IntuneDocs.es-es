@@ -5,17 +5,17 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/24/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.openlocfilehash: 1fe0258d3b6d9092c032184fca5fc0f8dc3f12df
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: fdd33ea0b5d8189712c6390861131c684cfaa67d
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313503"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49101960"
 ---
 # <a name="configure-ios-update-policies-in-intune"></a>Configuración de directivas de actualización de iOS en Intune
 
@@ -23,7 +23,7 @@ Las directivas de actualización de software permiten forzar a los dispositivos 
 
 El dispositivo se registra con Intune aproximadamente cada ocho horas. Si hay una actualización disponible, fuera de un período restringido, el dispositivo descarga e instala la actualización de sistema operativo más reciente. No se necesita ninguna interacción del usuario para actualizar el dispositivo. La directiva no impide que un usuario actualice el sistema operativo de forma manual.
 
-Esta característica es compatible con dispositivos que ejecutan iOS 10.3 y versiones posteriores.
+Esta característica es compatible con dispositivos que ejecutan iOS 10.3 y versiones posteriores. La configuración del retardo está disponible en iOS 11.3 y versiones posteriores.
 
 ## <a name="configure-the-policy"></a>Configurar la directiva
 1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).

@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3da8a3f13e592483513daf81bc5ff1ad8af0f7e6
-ms.sourcegitcommit: 0a2e737c5520c1a1dec5d732e5df52b5614b27e1
+ms.openlocfilehash: 151a445bf7c5c17f8ff1b5ee403df8744f2d8ba6
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "39268913"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102062"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Introducción a las directivas de cumplimiento de dispositivos de Intune
 
@@ -153,7 +153,7 @@ También puede usar las directivas de cumplimiento de dispositivos sin ningún a
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Formas de implementar las directivas de cumplimiento de dispositivos
 Puede implementar directivas de cumplimiento en los usuarios de grupos de usuarios o en dispositivos de grupos de dispositivos. Cuando se implementa una directiva de cumplimiento en un usuario, se comprueba el cumplimiento de todos los dispositivos del usuario.
 
-La **configuración de directiva de cumplimiento** (Azure Portal > Device compliance [Cumplimiento del dispositivo]) incluye:
+La **configuración de directiva de cumplimiento** predeterminada (Azure Portal > Device compliance [Cumplimiento del dispositivo]) incluye:
 
 - **Marcar los dispositivos que no tienen asignada una directiva de cumplimiento como**: esta propiedad tiene dos valores:
 

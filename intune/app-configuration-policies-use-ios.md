@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/02/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: c9163693-d748-46e0-842a-d9ba113ae5a8
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 8abaef622fcf633eecde3a2bb2ee261cb7c8fc9e
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: b39afeaf6daf8b08c58becd0b4af07299bd79e7a
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43330269"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102005"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>Agregar directivas de configuración de aplicaciones para dispositivos iOS administrados
 
@@ -31,7 +31,8 @@ Use las directivas de configuración de aplicaciones de Microsoft Intune para pr
 Tras agregar una directiva de configuración de aplicación, podrá establecer las asignaciones de la directiva de configuración de aplicación. Al establecer las asignaciones de la directiva, puede elegir si quiere incluir o excluir los grupos de usuarios a los que se aplica la directiva. Si decide incluir uno o varios grupos, puede optar por seleccionar grupos específicos para incluir o seleccionar los grupos integrados. Los grupos integrados incluyen **Todos los usuarios**, **Todos los dispositivos** y **Todos los usuarios + todos los dispositivos**. 
 
 >[!NOTE]
->Intune ofrece los grupos creados previamente **Todos los usuarios** y **Todos los dispositivos** en la consola con las optimizaciones integradas para su comodidad. Es muy recomendable utilizar estos grupos para segmentar todos los usuarios y todos los dispositivos en lugar de usar cualquier grupo "Todos los usuarios" o "Todos los dispositivos" que haya podido crear.
+>Intune ofrece los grupos creados previamente **Todos los usuarios** y **Todos los dispositivos** en la consola con las optimizaciones integradas para su comodidad. Es muy recomendable utilizar estos grupos para segmentar todos los usuarios y todos los dispositivos en lugar de usar cualquier grupo "Todos los usuarios" o "Todos los dispositivos" que haya podido crear.<p></p>
+>Como administrador de Microsoft Intune, puede controlar qué cuentas de usuario se agregan a las aplicaciones de Microsoft Office en dispositivos administrados. Puede limitar el acceso solo a las cuentas de usuario de la organización permitidas y bloquear las cuentas personales en los dispositivos inscritos. Las aplicaciones auxiliares procesan la configuración de la aplicación y quitan y bloquean las cuentas no aprobadas.
 
 Una vez haya seleccionado los grupos incluidos para la directiva de configuración de la aplicación, también puede elegir los grupos específicos que quiera excluir. Para obtener más información, vea [Inclusión y exclusión de asignaciones de aplicaciones en Microsoft Intune](apps-inc-exl-assignments.md).
 
@@ -58,7 +59,7 @@ Una vez haya seleccionado los grupos incluidos para la directiva de configuraci�
 8.  En el panel **Agregar directiva de configuración**, elija **Opciones de configuración**.
 9. Seleccione **Formato de opciones de configuración**. Seleccione una de las siguientes opciones para agregar información de XML:
     - **Uso del Diseñador de configuración**
-    - **Especificar datos XML**<br></br>
+    - **Especificar datos XML**<br><br>
     Para obtener más detalles sobre cómo usar el diseñador de configuraciones, vea [Uso del Diseñador de configuración](#use-configuration-designer). Para obtener más detalles sobre cómo escribir datos XML, vea [Especificar datos XML](#enter-xml-data). 
 10. Cuando haya agregado la información XML, elija **Aceptar**y elija **Agregar** para agregar la directiva de configuración. Se muestra el panel de introducción de la directiva de configuración.
 11. Seleccione **Asignaciones** para mostrar las opciones de inclusión y exclusión. 
@@ -95,6 +96,17 @@ Microsoft Intune proporciona opciones de configuración que son únicas para una
 2. Seleccione **Eliminar**.
 
 Los caracteres \{\{ y \}\} solo se usan para los tipos de token y no deben usarse para otros fines.
+
+### <a name="allow-only-configured-organization-accounts-in-multi-identity-apps"></a>Permitir solo cuentas de organización configuradas en aplicaciones de varias identidades 
+
+Para dispositivos Android, use los siguientes pares de clave/valor:
+
+| **Clave** | IntuneMAMAllowedAccountsOnly |
+|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Valores** | <ul><li>**Habilitado**: la única cuenta permitida es la cuenta de usuario administrado definida por la clave [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).</li><li>**Deshabilitado** (o cualquier valor que no sea una coincidencia con **Habilitado**, sin distinguir mayúsculas de minúsculas): se permite cualquier cuenta.</li></ul> |
+
+   > [!NOTE]
+   > Debe usar OneDrive para iOS 10.34 o posterior y Outlook para iOS 2.99.0 o posterior al permitir solo cuentas de organización configuradas con varias identidades.
 
 ## <a name="enter-xml-data"></a>Especificar datos XML
 

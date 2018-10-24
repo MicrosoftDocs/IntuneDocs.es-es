@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 834B4557-80A9-48C0-A72C-C98F6AF79708
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 66258a79e0a73a60dc7e4c1b0c67ab4761bc37ec
-ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
+ms.openlocfilehash: f0d9a4ab46aa8f4086c30fc7d93d7d1335b3d9ba
+ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/04/2018
-ms.locfileid: "48799547"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49102079"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Directivas de configuración de aplicaciones para Microsoft Intune
 
@@ -44,6 +44,9 @@ Los valores de configuración se usan cada vez que la aplicación los busca. Nor
 Tiene dos opciones sobre cómo usar las configuraciones de aplicación con Intune:
  - **Dispositivos administrados**: el dispositivo se administra mediante Intune como el proveedor de administración de dispositivos móviles (MDM).
  - **Aplicaciones administradas**: una aplicación se administra sin la inscripción de dispositivos.
+
+> [!NOTE]
+> Como administrador de Microsoft Intune, puede controlar qué cuentas de usuario se agregan a las aplicaciones de Microsoft Office en dispositivos administrados. Puede limitar el acceso solo a las cuentas de usuario de la organización permitidas y bloquear las cuentas personales en los dispositivos inscritos. Las aplicaciones auxiliares procesan la configuración de la aplicación y quitan y bloquean las cuentas no aprobadas.
 
 ## <a name="apps-that-support-app-configuration"></a>Aplicaciones que admiten la configuración de aplicaciones
 

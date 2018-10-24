@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/30/2018
+ms.date: 10/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cbe9f28b66031f6eddef4804c157f01ca79ad81d
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 4a5333f4e94db0b41b81dcb2589133956c040725
+ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347525"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48903512"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Administrar aplicaciones de iOS compradas a través de un programa de compras por volumen con Microsoft Intune
 
@@ -93,9 +93,10 @@ Asegúrese de que cuando configure un dispositivo para un nuevo usuario de Intun
         > Al cambiar el país, los metadatos de las aplicaciones se actualizarán y almacenarán la dirección URL en la siguiente sincronización con el servicio de Apple para las aplicaciones creadas con ese token. La aplicación no se actualizará si no existe en la tienda del nuevo país.
 
     - **Tipo de cuenta de VPP**: elija **Empresa** o **Educación**.
-    - **Actualizaciones automáticas de la aplicación**: Active la opción para habilitar las actualizaciones automáticas. Cuando se habilite, Intune detectará las actualizaciones de la aplicación de VPP dentro de la App Store y las insertará automáticamente en el dispositivo cuando este se registre.
+    - **Actualizaciones automáticas de la aplicación**: Active la opción para habilitar las actualizaciones automáticas. Cuando se habilite, Intune detectará las actualizaciones de la aplicación de VPP dentro de la App Store y las insertará automáticamente en el dispositivo cuando este se registre. Las actualizaciones automáticas de la aplicación para aplicaciones del PCV de Apple actualizarán automáticamente solo las aplicaciones implementadas con la intención de instalación **Obligatorio**. En el caso de las aplicaciones implementadas con la intención de instalación **Disponible**, la actualización automática genera una notificación automáticamente (dirigida al administrador) en la que le informa de que hay disponible una versión nueva de la aplicación. El usuario debe hacer clic en Instalar para instalar la versión más reciente de la aplicación. Además, el usuario verá la aplicación como no instalada en el Portal de empresa, incluso si se instala una versión anterior de la aplicación. En este caso, el usuario puede volver a instalar la aplicación.
+    
         > [!NOTE]
-        > Las actualizaciones de aplicaciones automáticas funcionan para las aplicaciones con licencia de dispositivo y usuario para iOS versión 11.0 y versiones posteriores.
+        > Las actualizaciones de aplicaciones automáticas funcionan para las aplicaciones con licencia de dispositivo y usuario para la versión 11.0 de iOS y versiones posteriores.
 6. Cuando haya terminado, seleccione **Crear**.
 
 El token se muestra en el panel de la lista de tokens.

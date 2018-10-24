@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/13/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 99ab0369-5115-4dc8-83ea-db7239b0de97
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: daaed6ded0c20551567a63890d324abcbaaf41d7
-ms.sourcegitcommit: 9f99b4a7f20ab4175d6fa5735d9f4fd6a03e0d3a
+ms.openlocfilehash: 652157f41f0fbefa14e9f22fea01c918cb7704a1
+ms.sourcegitcommit: ae27c04a68ee893a5a6be4c56fe143263749a0d7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/14/2018
-ms.locfileid: "40251798"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49169505"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicaciones iOS para directivas de protección de aplicaciones con la herramienta de ajuste de aplicaciones de Intune
 
@@ -39,13 +39,13 @@ Antes de ejecutar la herramienta de ajuste de aplicaciones, necesita cumplir alg
 
 * Descargue la [Herramienta de ajuste de aplicaciones de Microsoft Intune para iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) de GitHub.
 
-* Un equipo macOS que ejecute OS X 10.8.5 o posterior y que tenga instalada la versión 5 o posterior del conjunto de herramientas Xcode.
+* Un equipo macOS que ejecute OS X 10.8.5 o posterior y que tenga instalada la versión 9 o posterior del conjunto de herramientas Xcode.
 
 * La aplicación iOS de entrada debe estar desarrollada y firmada por la empresa o por un proveedor de software independiente (ISV).
 
   * El archivo de aplicación de entrada debe tener la extensión **.ipa** o **.app**.
 
-  * La aplicación de entrada debe compilarse para iOS 8.0. o versiones posteriores.
+  * La aplicación de entrada debe compilarse para iOS 10 o posterior.
 
   * La aplicación de entrada no puede cifrarse.
 
@@ -101,7 +101,7 @@ Necesitará lo siguiente para distribuir aplicaciones ajustadas con Intune:
 
    ![Portal de Apple Developer](./media/iOS-signing-cert-1.png)
 
-5. Haga clic en la ficha ![Signo más del Portal de Apple Developer](./media/iOS-signing-cert-2.png) en la esquina superior derecha para agregar un certificado iOS.
+5. Haga clic en la pestaña ![Signo más del Portal de Apple Developer](./media/iOS-signing-cert-2.png) en la esquina superior derecha para agregar un certificado iOS.
 
 6. Pulse para crear un certificado **interno y ad hoc** en **Producción**.
 
@@ -126,7 +126,7 @@ Necesitará lo siguiente para distribuir aplicaciones ajustadas con Intune:
 
     ![Solicitar un certificado de una entidad de certificación en Acceso a llaves](./media/iOS-signing-cert-6.png)
 
-12. Vuelva al sitio de Apple Developer. Haga clic en **Continuar**. Después, cargue el archivo CSR.
+12. Vuelva al sitio de Apple Developer. Haga clic en **Continue**. Después, cargue el archivo CSR.
 
 13. Apple genera su certificado de firma. Descargue y guárdelo en una ubicación fácil de recordar en su equipo macOS.
 
@@ -150,13 +150,13 @@ Necesitará lo siguiente para distribuir aplicaciones ajustadas con Intune:
 
 2. Haga clic en **Certificates, IDs & Profiles (Certificados, identificadores y perfiles)**.
 
-3. Haga clic en la ficha ![Signo más del Portal de Apple Developer](./media/iOS-signing-cert-2.png) en la esquina superior derecha para agregar un perfil de aprovisionamiento de iOS.
+3. Haga clic en la pestaña ![Signo más del Portal de Apple Developer](./media/iOS-signing-cert-2.png) en la esquina superior derecha para agregar un perfil de aprovisionamiento de iOS.
 
 4. Pulse para crear un perfil de aprovisionamiento **interno** en **Distribución**.
 
    ![Seleccionar el perfil de aprovisionamiento interno](./media/iOS-provisioning-profile-1.png)
 
-5. Haga clic en **Continuar**. Asegúrese de vincular el certificado de firma que se generó anteriormente al perfil de aprovisionamiento.
+5. Haga clic en **Continue**. Asegúrese de vincular el certificado de firma que se generó anteriormente al perfil de aprovisionamiento.
 
 6. Siga los pasos para descargar el perfil (con la extensión .mobileprovision) en su equipo macOS.
 
@@ -219,9 +219,9 @@ En la carpeta IntuneMAMPackager/Contents/MacOS, abra `Parameters.plist`, que es 
 | Ruta de acceso del paquete de aplicación de salida |vacío| Igual que -o|
 | Ruta de acceso del perfil de aprovisionamiento |vacío| Igual que -p|
 | Hash del certificado SHA-1 |vacío| Igual que -c|
-| Modo detallado habilitado |falso| Igual que -v|
-| Quitar los derechos que faltan | falso| Igual que -c|
-| Impedir la compilación predeterminada |falso | Equivale a usar -b sin argumentos|
+| Modo detallado habilitado |false| Igual que -v|
+| Quitar los derechos que faltan | false| Igual que -c|
+| Impedir la compilación predeterminada |false | Equivale a usar -b sin argumentos|
 |Invalidación de la cadena de compilación | vacío| Valor de CFBundleVersion personalizado de la aplicación de salida ajustada. |
 |Rutas de acceso del perfil de aprovisionamiento de extensión | vacío| Matriz de perfiles de aprovisionamiento de extensión para la aplicación.
 
@@ -436,7 +436,7 @@ Siga estos pasos para obtener registros para las aplicaciones ajustadas durante 
 > [!NOTE]
 > La funcionalidad de registro está habilitada para las aplicaciones ajustadas con la versión de Intune App Wrapping Tool 7.1.13 o una posterior.
 
-### <a name="see-also"></a>Consulte también
+### <a name="see-also"></a>Vea también
 - [Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles mediante Microsoft Intune](apps-prepare-mobile-application-management.md)</br>
 - [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)</br>
 - [Use the SDK to enable apps for mobile application management (Usar el SDK para habilitar aplicaciones para la administración de aplicaciones móviles)](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
