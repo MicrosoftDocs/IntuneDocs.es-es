@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/20/2018
+ms.date: 10/1/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,16 +13,14 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 80b860810800ca887ac55de6fbfc41b2fded3b12
-ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
+ms.openlocfilehash: 48bf2e6daf05dba6baebbd49be45a17a5a56e820
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028739"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828302"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar y usar certificados SCEP con Intune
-
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 En este artículo se muestra cómo configurar la estructura y, luego, crear y asignar perfiles de certificados de Protocolo de inscripción de certificados simple (SCEP) con Intune.
 
@@ -350,6 +348,113 @@ Para validar que el servicio se ejecuta, abra un explorador y escriba la siguien
 5. En la lista desplegable de los **tipos de perfil**, seleccione **Certificado SCEP**.
 6. En el panel **Certificado SCEP**, configure los siguientes valores:
 
+   - **Tipo de certificado**: elija **Usuario** para certificados de usuario. Elija **Dispositivo** para dispositivos sin usuario, como quioscos multimedia. Los certificados de **Dispositivo** están disponibles para estas plataformas:  
+     - iOS
+     - Windows 8.1 y posterior
+     - Windows 10 y versiones posteriores
+
+   - **Formato de nombre del firmante**: seleccione cómo Intune crea automáticamente el nombre del firmante en la solicitud de certificado. Las opciones cambian en función de si elige un tipo de certificado **Usuario** o un tipo de certificado **Dispositivo**. 
+
+        **Tipo de certificado de usuario**  
+
+        Puede incluir la dirección de correo electrónico del usuario en el nombre del firmante. Elija de entre las siguientes opciones:
+
+        - **No configurado**.
+        - **Nombre común**
+        - **Nombre común, incluyendo la dirección de correo electrónico**
+        - **Nombre común como correo electrónico**
+        - **IMEI (Identidad de equipo móvil internacional)**
+        - **Número de serie**
+        - **Personalizado**: cuando se selecciona esta opción, se muestra también un cuadro de texto **Personalizado**. Use este campo para escribir un formato de nombre del firmante personalizado, incluidas las variables. El formato personalizado admite dos variables: **Nombre común (CN)** y **Correo electrónico (E)**. **Nombre común (CN)** se puede establecer en cualquiera de las siguientes variables:
+
+            - **CN={{UserName}}**: nombre principal del usuario, como janedoe@contoso.com
+            - **CN={{AAD_Device_ID}}**: identificador asignado al registrar un dispositivo en Azure Active Directory (AD). Este identificador normalmente se usa para autenticarse en Azure AD.
+            - **CN={{SERIALNUMBER}}**: número de serie (SN) único que normalmente usa el fabricante para identificar un dispositivo
+            - **CN={{IMEINumber}}**: número exclusivo de identidad de equipo móvil internacional (IMEI) usado para identificar un teléfono móvil
+            - **CN={{OnPrem_Distinguished_Name}}**: secuencia de nombres distintivos relativos separados por comas, como `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
+
+                Para usar la variable `{{OnPrem_Distinguished_Name}}`, asegúrese de sincronizar el atributo de usuario `onpremisesdistingishedname` mediante [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) con su instancia de Azure AD.
+
+            - **CN={{onPremisesSamAccountName}}**: los administradores pueden sincronizar el atributo samAccountName de Active Directory con Azure AD mediante Azure AD Connect en un atributo llamado `onPremisesSamAccountName`. Intune puede sustituir esa variable como parte de una solicitud de emisión de certificado en el asunto de un certificado SCEP.  El atributo samAccountName es el nombre de inicio de sesión del usuario usado para admitir clientes y servidores de una versión anterior de Windows (anterior a Windows 2000). El formato del nombre de inicio de sesión del usuario es: `DomainName\testUser`, o solo `testUser`.
+
+                Para usar la variable `{{onPremisesSamAccountName}}`, asegúrese de sincronizar el atributo de usuario `onPremisesSamAccountName` mediante [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) con su instancia de Azure AD.
+
+            Mediante una combinación de una o muchas de estas variables y cadenas estáticas, puede crear un formato de nombre de firmante personalizado como este:  
+
+            **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**
+
+            En este ejemplo, se ha creado un formato de nombre de firmante que, además de las variables CN y E, usa cadenas para los valores Unidad organizativa, Organización, Ubicación, Estado y País. [CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) describe esta función y sus cadenas admitidas.
+
+        **Tipo de certificado de dispositivo**  
+
+        Cuando se usa el tipo de certificado **Dispositivo**, también puede usar estas variables de certificado de dispositivo para el valor:  
+
+        ```
+        "{{AAD_Device_ID}}",
+        "{{Device_Serial}}",
+        "{{Device_IMEI}}",
+        "{{SerialNumber}}",
+        "{{IMEINumber}}",
+        "{{AzureADDeviceId}}",
+        "{{WiFiMacAddress}}",
+        "{{IMEI}}",
+        "{{DeviceName}}",
+        "{{FullyQualifiedDomainName}}",
+        "{{MEID}}",
+        ```
+
+        Estas variables se pueden agregar con texto estático en un cuadro de texto de valor personalizado. Por ejemplo, el atributo DNS puede agregarse como `DNS = {{AzureADDeviceId}}.domain.com`.
+
+        > [!IMPORTANT]
+        >  - En el texto estático de SAN, no sirven las llaves **{ }**, los símbolos de barra vertical **|** y los signos de punto y coma **;**. 
+        >  - Cuando use una variable de certificado de dispositivo, incluya la variable entre llaves **{ }**.
+        >  - `{{FullyQualifiedDomainName}}` solo funciona para Windows y dispositivos unidos a dominios. 
+        >  -  Al usar las propiedades del dispositivo como el IMEI, el número de serie y el nombre de dominio completo en el asunto o SAN para un certificado de dispositivo, tenga en cuenta que una persona con acceso al dispositivo podría suplantar estas propiedades.
+
+
+   - **Nombre alternativo del firmante**: especifique cómo crea Intune automáticamente los valores del nombre alternativo del firmante (SAN) en la solicitud de certificado. Las opciones cambian en función de si elige un tipo de certificado **Usuario** o un tipo de certificado **Dispositivo**. 
+
+        **Tipo de certificado de usuario**  
+
+        Los siguientes atributos están disponibles:
+
+        - dirección de correo electrónico
+        - Nombre principal de usuario (UPN)
+
+            Por ejemplo, si selecciona un tipo de certificado de usuario, puede incluir el nombre principal de usuario (UPN) en el nombre alternativo del firmante. Si un certificado de cliente se usa para autenticar un servidor de directivas de redes, establezca el nombre alternativo del firmante en el UPN. 
+
+        **Tipo de certificado de dispositivo**  
+
+        Un cuadro de texto de formato de tabla que se puede personalizar. Los siguientes atributos están disponibles:
+
+        - DNS
+        - dirección de correo electrónico
+        - Nombre principal de usuario (UPN)
+
+        Con el tipo de certificado **Dispositivo**, puede usar estas variables de certificado de dispositivo para el valor:  
+
+        ```
+        "{{AAD_Device_ID}}",
+        "{{Device_Serial}}",
+        "{{Device_IMEI}}",
+        "{{SerialNumber}}",
+        "{{IMEINumber}}",
+        "{{AzureADDeviceId}}",
+        "{{WiFiMacAddress}}",
+        "{{IMEI}}",
+        "{{DeviceName}}",
+        "{{FullyQualifiedDomainName}}",
+        "{{MEID}}",
+        ```
+
+        Estas variables se pueden agregar con texto estático en el cuadro de texto de valor personalizado. Por ejemplo, el atributo DNS puede agregarse como `DNS = {{AzureADDeviceId}}.domain.com`.
+
+        > [!IMPORTANT]
+        >  - En el texto estático de SAN, no sirven las llaves **{ }**, los símbolos de barra vertical **|** y los signos de punto y coma **;**. 
+        >  - Cuando use una variable de certificado de dispositivo, incluya la variable entre llaves **{ }**.
+        >  - `{{FullyQualifiedDomainName}}` solo funciona para Windows y dispositivos unidos a dominios. 
+        >  -  Al usar las propiedades del dispositivo como el IMEI, el número de serie y el nombre de dominio completo en el asunto o SAN para un certificado de dispositivo, tenga en cuenta que una persona con acceso al dispositivo podría suplantar estas propiedades.
+
    - **Período de validez del certificado**: si ha ejecutado el comando `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE` en la CA emisora, que permite un período de validez personalizado, puede especificar el tiempo restante hasta la expiración del certificado.<br>Puede especificar un valor inferior al período de validez de la plantilla de certificado, pero no uno superior. Por ejemplo, si el período de validez del certificado en la plantilla de certificado es de dos años, puede especificar un valor de un año, pero no un valor de cinco años. El valor también debe ser menor que el período de validez restante del certificado de la CA emisora. 
    - **Proveedor de almacenamiento de claves (KSP)** (Windows Phone 8.1, Windows 8.1, Windows 10): especifique dónde se almacena la clave del certificado. Elija uno de los siguientes valores:
      - **Inscribirse en KSP Módulo de plataforma segura (TPM) si está presente, si no en KSP Software**
@@ -357,40 +462,17 @@ Para validar que el servicio se ejecuta, abra un explorador y escriba la siguien
      - **Inscribirse en Passport o se producirá un error (Windows 10 y versiones posteriores)**
      - **Inscribirse en el KSP Software**
 
-   - **Formato de nombre del firmante**: en la lista, seleccione cómo crea Intune automáticamente el nombre del firmante en la solicitud de certificado. Si el certificado es para un usuario, también puede incluir la dirección de correo electrónico del usuario en el nombre del sujeto. Elija de entre las siguientes opciones:
-     - **No configurado**.
-     - **Nombre común**
-     - **Nombre común, incluyendo la dirección de correo electrónico**
-     - **Nombre común como correo electrónico**
-     - **IMEI (Identidad de equipo móvil internacional)**
-     - **Número de serie**
-     - **Personalizado**: cuando se selecciona esta opción, se muestra otro campo de lista desplegable. Use este campo para escribir un formato de nombre de firmante personalizado. El formato personalizado admite dos variables: **Nombre común (CN)** y **Correo electrónico (E)**. **Nombre común (CN)** se puede establecer en cualquiera de las siguientes variables:
-       - **CN={{UserName}}**: nombre principal del usuario, como janedoe@contoso.com
-       - **CN={{AAD_Device_ID}}**: identificador asignado al registrar un dispositivo en Azure Active Directory (AD). Este identificador normalmente se usa para autenticarse en Azure AD.
-       - **CN={{SERIALNUMBER}}**: número de serie (SN) único que normalmente usa el fabricante para identificar un dispositivo
-       - **CN={{IMEINumber}}**: número exclusivo de identidad de equipo móvil internacional (IMEI) usado para identificar un teléfono móvil
-       - **CN={{OnPrem_Distinguished_Name}}**: secuencia de nombres distintivos relativos separados por comas, como `CN=Jane Doe,OU=UserAccounts,DC=corp,DC=contoso,DC=com`
-
-          Para usar la variable `{{OnPrem_Distinguished_Name}}`, asegúrese de sincronizar el atributo de usuario `onpremisesdistingishedname` mediante [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) con su instancia de Azure AD.
-
-       - **CN={{onPremisesSamAccountName}}**: los administradores pueden sincronizar el atributo samAccountName de Active Directory con Azure AD mediante Azure AD Connect en un atributo llamado `onPremisesSamAccountName`. Intune puede sustituir esa variable como parte de una solicitud de emisión de certificado en el asunto de un certificado SCEP.  El atributo samAccountName es el nombre de inicio de sesión del usuario usado para admitir clientes y servidores de una versión anterior de Windows (anterior a Windows 2000). El formato del nombre de inicio de sesión del usuario es: `DomainName\testUser`, o solo `testUser`.
-
-          Para usar la variable `{{onPremisesSamAccountName}}`, asegúrese de sincronizar el atributo de usuario `onPremisesSamAccountName` mediante [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) con su instancia de Azure AD.
-
-       Con una combinación de una o varias de estas variables y cadenas estáticas, se puede crear un formato de nombre de firmante personalizado, como: **CN={{UserName}},E={{EmailAddress}},OU=Mobile,O=Finance Group,L=Redmond,ST=Washington,C=US**. <br/> En este ejemplo, se ha creado un formato de nombre de firmante que, además de las variables CN y E, usa cadenas para los valores Unidad organizativa, Organización, Ubicación, Estado y País. [CertStrToName](https://msdn.microsoft.com/library/windows/desktop/aa377160.aspx) describe esta función y sus cadenas admitidas.
-
-- **Nombre alternativo del firmante**: especifique cómo crea Intune automáticamente los valores del nombre alternativo del firmante (SAN) en la solicitud de certificado. Por ejemplo, si selecciona un tipo de certificado de usuario, puede incluir el nombre principal de usuario (UPN) en el nombre alternativo del firmante. Si el certificado de cliente se usa para autenticar un servidor de directivas de redes, debe establecer el nombre alternativo del sujeto en el UPN.
-- **Uso de la clave**: especifique las opciones de uso de claves del certificado. Las opciones son:
-  - **Cifrado de clave**: permite el intercambio de claves solo si la clave está cifrada
-  - **Firma digital**: permite el intercambio de claves solo cuando una firma digital ayuda a proteger la clave
-- **Tamaño de la clave (bits)**: seleccione el número de bits que contiene la clave
-- **Algoritmo hash** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): seleccione uno de los tipos de algoritmos hash disponibles para usarlo con este certificado. Seleccione el nivel máximo de seguridad que admiten los dispositivos de conexión.
-- **Certificado raíz**: elija un perfil de certificado de CA raíz que previamente haya configurado y asignado al usuario o dispositivo. Este certificado de CA debe ser el certificado raíz para la entidad de certificación que emite el certificado que va a configurar en este perfil de certificado.
-- **Uso mejorado de clave**: elija **Agregar** para agregar valores para la finalidad prevista del certificado. En la mayoría de los casos, el certificado requiere **Autenticación de cliente** para que el usuario o dispositivo pueda autenticarse en un servidor. Sin embargo, puede agregar otros usos de clave según sea necesario.
-- **Configuración de la inscripción**
-  - **Umbral de renovación (%)**: especifique qué porcentaje de la duración del certificado tiene que quedar para que el dispositivo solicite la renovación del certificado.
-  - **Direcciones URL de servidor SCEP**: especifique una o varias direcciones URL para los servidores NDES que emiten certificados mediante SCEP.
-  - Seleccione **Aceptar** y **Crear** el perfil.
+   - **Uso de la clave**: especifique las opciones de uso de claves del certificado. Las opciones son:
+     - **Cifrado de clave**: permite el intercambio de claves solo si la clave está cifrada
+     - **Firma digital**: permite el intercambio de claves solo cuando una firma digital ayuda a proteger la clave
+   - **Tamaño de la clave (bits)**: seleccione el número de bits que contiene la clave
+   - **Algoritmo hash** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): seleccione uno de los tipos de algoritmos hash disponibles para usarlo con este certificado. Seleccione el nivel máximo de seguridad que admiten los dispositivos de conexión.
+   - **Certificado raíz**: elija un perfil de certificado de CA raíz que previamente haya configurado y asignado al usuario o dispositivo. Este certificado de CA debe ser el certificado raíz para la entidad de certificación que emite el certificado que va a configurar en este perfil de certificado.
+   - **Uso mejorado de clave**: elija **Agregar** para agregar valores para la finalidad prevista del certificado. En la mayoría de los casos, el certificado requiere **Autenticación de cliente** para que el usuario o dispositivo pueda autenticarse en un servidor. Sin embargo, puede agregar otros usos de clave según sea necesario.
+   - **Configuración de la inscripción**
+     - **Umbral de renovación (%)**: especifique qué porcentaje de la duración del certificado tiene que quedar para que el dispositivo solicite la renovación del certificado.
+     - **Direcciones URL de servidor SCEP**: especifique una o varias direcciones URL para los servidores NDES que emiten certificados mediante SCEP.
+     - Seleccione **Aceptar** y **Crear** el perfil.
 
 Se creará el perfil y aparecerá en el panel con la lista de perfiles.
 
@@ -422,7 +504,7 @@ A partir de la versión 6.1806.x.x, el servicio de conector de Intune registra l
 > [!NOTE]
 > Para más información sobre los códigos de diagnóstico relacionados para cada evento, use la tabla **Códigos de diagnóstico** (en este artículo).
 
-| Identificador de evento      | Nombre del evento    | Descripción del evento | Códigos de diagnóstico relacionados |
+| Id. de evento      | Nombre del evento    | Descripción del evento | Códigos de diagnóstico relacionados |
 | ------------- | ------------- | -------------     | -------------            |
 | 10010 | StartedConnectorService  | Se inició el servicio de conector | 0x00000000, 0x0FFFFFFF |
 | 10020 | StoppedConnectorService  | Se detuvo el servicio de conector | 0x00000000, 0x0FFFFFFF |

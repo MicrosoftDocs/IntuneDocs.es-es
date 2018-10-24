@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 81a11ce35cbf0f256f59bf26d317933977750d6e
-ms.sourcegitcommit: b33ff64514abdc5e939ff59ea722b3704cd56c78
+ms.openlocfilehash: 87ae986e1f7a2b00c1a29208a163ee449e114f17
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49065771"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425298"
 ---
 # <a name="manage-and-use-windows-holographic-and-hololens-devices-with-intune"></a>Administración y uso de los dispositivos Windows Holographic y HoloLens con Intune
 
@@ -73,7 +73,7 @@ Microsoft Intune puede implementar aplicaciones universales de Windows en dispos
 - Para más información sobre el desarrollo de aplicaciones para Microsoft HoloLens, consulte [Mixed reality apps for Microsoft HoloLens](https://www.microsoft.com/hololens/apps) (Aplicaciones de realidad mixta para Microsoft HoloLens). 
 
 > [!NOTE]
-> Los dispositivos HoloLens que ejecutan Windows 10 Holographic for Business 1607 no son compatibles con las aplicaciones con licencia en línea de Microsoft Store para Empresas. Para más información, consulte [Instalación de aplicaciones en HoloLens](https://docs.microsoft.com/en-us/hololens/hololens-install-apps).
+> Los dispositivos HoloLens que ejecutan Windows 10 Holographic for Business 1607 no son compatibles con las aplicaciones con licencia en línea de Microsoft Store para Empresas. Para más información, consulte [Instalación de aplicaciones en HoloLens](https://docs.microsoft.com/hololens/hololens-install-apps).
 
 ## <a name="device-actions"></a>Acciones de dispositivo
 Intune tiene algunas acciones integradas que permiten a los administradores de TI realizar diferentes tareas, en local en el dispositivo o de forma remota con Intune en Azure Portal. Los usuarios también pueden emitir un comando remoto desde el Portal de empresa de Intune para los dispositivos de propiedad privada que están inscritos en Intune.

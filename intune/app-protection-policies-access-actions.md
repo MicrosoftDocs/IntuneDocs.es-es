@@ -6,21 +6,21 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2018
+ms.date: 10/3/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: f5ca557e-a8e1-4720-b06e-837c4f0bc3ca
-ms.reviewer: mghadial
+ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a7822e9e5a0e2bc5b054ccc3e93b9aa51bca5b79
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: f96ca3075bab5c8bacaea62bb4fc04bd957cf01e
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329417"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863185"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Borrar los datos de forma selectiva mediante acciones de acceso de la directiva de protección de aplicaciones en Intune
 
@@ -61,7 +61,7 @@ Para iOS, podrá configurar las acciones de las siguientes opciones desde el men
 -  Modelos de dispositivos
 
 Para usar el valor de configuración **Modelos de dispositivo**, indique una lista de identificadores de modelos de iOS separados por punto y coma. Puede encontrar un identificador de modelo de iOS en la columna Tipo de dispositivo en la [documentación de soporte técnico de HockeyApp](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types).<br>
-Entrada de ejemplo: *iPhone5,2; iPhone5,3*
+Entrada de ejemplo: *iPhone5,2;iPhone5,3*
 
 En los dispositivos del usuario final, el cliente de Intune tomaría medidas en función de una coincidencia simple de las cadenas de modelo de dispositivo que se especifican en Intune para las directivas de protección de aplicaciones. La coincidencia depende por completo de lo que informa el dispositivo. A usted (administrador de TI) se le anima a garantizar que se produzca el comportamiento deseado mediante la comprobación de esta configuración en función de una variedad de modelos y fabricantes de dispositivos, y destinado a un grupo de usuarios pequeño. El valor predeterminado es **Sin configurar**.<br>
 Establezca una de las acciones siguientes: 
@@ -69,7 +69,7 @@ Establezca una de las acciones siguientes:
 - Permitir especificados (borrar no especificados)
 
 **¿Qué ocurre si el administrador de TI introduce una lista diferente de identificadores de modelo de iOS entre directivas destinadas a las mismas aplicaciones para el mismo usuario de Intune?**<br>
-Cuando surgen conflictos entre dos directivas de protección para los valores configurados, Intune suele tomar el enfoque más restrictivo. Por lo tanto, la directiva resultante que se manda a la aplicación de destino que el usuario de Intune de destino está abriendo sería una intersección de los identificadores de modelo de iOS enumerados en *Directiva A* y *Directiva B* con destino a la misma combinación de aplicación y usuario. Por ejemplo, si *Directiva A* especifica "iPhone5,2; iPhone5,3", mientras que *Directiva B* especifica "iPhone5,3", la directiva resultante que el usuario de Intune utilizará según *Directiva A* y *Directiva B* será "iPhone5,3". 
+Cuando surgen conflictos entre dos directivas de protección para los valores configurados, Intune suele tomar el enfoque más restrictivo. Por lo tanto, la directiva resultante que se manda a la aplicación de destino que el usuario de Intune de destino está abriendo sería una intersección de los identificadores de modelo de iOS enumerados en *Directiva A* y *Directiva B* con destino a la misma combinación de aplicación y usuario. Por ejemplo, si *Directiva A* especifica "iPhone5,2;iPhone5,3", mientras que *Directiva B* especifica "iPhone5,3", la directiva resultante que el usuario de Intune usará según *Directiva A* y *Directiva B* será "iPhone5,3". 
 
 ### <a name="android-policy-settings"></a>Configuración de directivas de Android
 
@@ -83,10 +83,10 @@ Para Android, podrá configurar las acciones de las siguientes opciones desde el
 -  Fabricantes de dispositivos
 
 Para usar el valor de configuración **Fabricantes de dispositivos**, indique una lista de fabricantes de Android separados por punto y coma. Puede encontrar el fabricante de Android de un dispositivo en la configuración del dispositivo.<br>
-Entrada de ejemplo: *Fabricante A; Fabricante B* 
+Entrada de ejemplo: *Fabricante A;Fabricante B* 
 
 >[!NOTE]
-> Estos son algunos fabricantes comunes notificados por dispositivos en los que se usa Intune, y que se pueden utilizar como entrada: Asus; Blackberry; Bq; Gionee; Google; Hmd global; Htc; Huawei; Infinix; Kyocera; Lemobile; Lenovo; Lge; Motorola; Oneplus; Oppo; Samsung; Sharp; Sony; Tecno; Vivo; Vodafone; Xiaomi; Zte; Zuk.
+> Estos son algunos fabricantes comunes notificados por dispositivos en los que se usa Intune, y que se pueden usar como entrada: Asus; Blackberry; Bq; Gionee; Google; Hmd global; Htc; Huawei; Infinix; Kyocera; Lemobile; Lenovo; Lge; Motorola; Oneplus; Oppo; Samsung; Sharp; Sony; Tecno; Vivo; Vodafone; Xiaomi; Zte; Zuk.
 
 En los dispositivos del usuario final, el cliente de Intune tomaría medidas en función de una coincidencia simple de las cadenas de modelo de dispositivo que se especifican en Intune para las directivas de protección de aplicaciones. La coincidencia depende por completo de lo que informa el dispositivo. A usted (administrador de TI) se le anima a garantizar que se produzca el comportamiento deseado mediante la comprobación de esta configuración en función de una variedad de modelos y fabricantes de dispositivos, y destinado a un grupo de usuarios pequeño. El valor predeterminado es **Sin configurar**.<br>
 Establezca una de las acciones siguientes: 
@@ -94,7 +94,7 @@ Establezca una de las acciones siguientes:
 - Permitir especificados (bloquear no especificados)
 
 **¿Qué ocurre si el administrador de TI introduce una lista diferente de fabricantes de Android entre directivas destinadas a las mismas aplicaciones para el mismo usuario de Intune?**<br>
-Cuando surgen conflictos entre dos directivas de protección para los valores configurados, Intune suele tomar el enfoque más restrictivo. Por lo tanto, la directiva resultante que se manda a la aplicación de destino que el usuario de Intune de destino está abriendo sería una intersección de los fabricantes de Android enumerados en *Directiva A* y *Directiva B* con destino a la misma combinación de aplicación y usuario. Por ejemplo, si *Directiva A* especifica "Google; Samsung", mientras que *Directiva B* especifica "Google", la directiva resultante que el usuario de Intune utilizará según *Directiva A* y *Directiva B* será "Google". 
+Cuando surgen conflictos entre dos directivas de protección para los valores configurados, Intune suele tomar el enfoque más restrictivo. Por lo tanto, la directiva resultante que se manda a la aplicación de destino que el usuario de Intune de destino está abriendo sería una intersección de los fabricantes de Android enumerados en *Directiva A* y *Directiva B* con destino a la misma combinación de aplicación y usuario. Por ejemplo, si *Directiva A* especifica "Google;Samsung", mientras que *Directiva B* especifica "Google", la directiva resultante que el usuario de Intune usará según *Directiva A* y *Directiva B* será "Google". 
 
 ### <a name="additional-settings-and-actions"></a>Configuración y acciones adicionales 
 
@@ -119,5 +119,3 @@ Para obtener más información sobre las directivas de protección de aplicacion
 - [Creación y asignación de directivas de protección de aplicaciones](app-protection-policies.md)
 - [Configuración de directivas de protección de aplicaciones de iOS](app-protection-policy-settings-ios.md)
 - [Configuración de directivas de protección de aplicaciones Android en Microsoft Intune](app-protection-policy-settings-android.md) 
-
-

@@ -2,10 +2,10 @@
 title: Creación de una directiva de cumplimiento del perfil de trabajo Android en Microsoft Intune - Azure | Microsoft Docs
 description: Cree o configure una directiva de cumplimiento de dispositivos Microsoft Intune para dispositivos de perfil de trabajo Android. Opte por permitir dispositivos con Jailbroken, establecer el nivel de amenaza aceptable, buscar Google Play, especificar la versión de sistema operativo mínima y máxima, elegir los requisitos de contraseña y permitir aplicaciones de instalación de prueba.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 04/16/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: dcd5dcc05470d8052e49354fe5d6516386ea4214
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 0c7f1c7c47f2fa4c950cbffeaf8fe274fe239a63
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905094"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828166"
 ---
 # <a name="add-a-device-compliance-policy-for-android-work-profile-devices-in-intune"></a>Incorporación de una directiva de cumplimiento de dispositivos de perfil de trabajo Android en Intune
 
@@ -113,7 +113,11 @@ Si su empresa utiliza perfiles de trabajo Android, puede habilitar **Examen de a
 - **Bloquear aplicaciones de orígenes desconocidos**: no es necesario configurar este valor, ya que los dispositivos de perfil de trabajo Android siempre restringen la instalación de orígenes desconocidos.
 - **Integridad en tiempo de ejecución de la aplicación Portal de empresa**: comprueba si la aplicación Portal de empresa tiene el entorno de tiempo de ejecución predeterminado instalado, está firmada correctamente, no está en modo de depuración y se instala desde un origen conocido.
 - **Bloquear depuración USB en el dispositivo**: no es necesario configurar este parámetro porque la depuración USB ya está deshabilitada en los dispositivos de perfil de trabajo Android.
-- **Nivel mínimo de revisión de seguridad**: seleccione el nivel de revisión de seguridad más antiguo que puede tener un dispositivo. No son compatibles los dispositivos que no están al menos en este nivel de revisión. La fecha debe especificarse en el formato `YYYY-MM-DD`.
+- **Nivel mínimo de revisión de seguridad**: seleccione el nivel de revisión de seguridad más antiguo que puede tener un dispositivo. No son compatibles los dispositivos que no están al menos en este nivel de revisión. La fecha debe especificarse en el formato *AAAA-MM-DD*.
+- **Aplicaciones restringidas**: puede restringir aplicaciones si agrega sus identificadores de lote a la directiva. Después, si un dispositivo tiene instalada la aplicación, el dispositivo se marcará como no conforme. 
+   - **Nombre de la aplicación**: escriba un nombre descriptivo que ayude a identificar el identificador de lote. 
+   - **Identificador de lote de aplicaciones**: escriba el identificador de lote único para el proveedor de la aplicación. Para Android, se toma el identificador de lote de aplicaciones de la dirección URL de la tienda para la aplicación. Por ejemplo, si la URL a la aplicación en la tienda es *https://play.google.com/store/apps/details?id=com.Slack*, el identificador de lote de aplicaciones es *com.Slack*.
+
 
 ## <a name="assign-user-groups"></a>Asignación de grupos de usuarios
 

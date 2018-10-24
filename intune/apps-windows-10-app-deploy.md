@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/31/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,18 +15,18 @@ ms.assetid: abebfb5e-054b-435a-903d-d1c31767bcf2
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7508f2c2eca06ceacf203103ab2cad53abc39a65
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: 61e2ec9def6ecba265521cf801322d592dd4dac9
+ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347439"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48866361"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Implementación de aplicaciones Windows 10 con Microsoft Intune 
 
 En la actualidad, Microsoft Intune admite una variedad de tipos de aplicaciones y escenarios de implementación en dispositivos Windows 10. Después de agregar una aplicación a Intune, puede asignarla a usuarios y dispositivos. En la información siguiente se proporcionan más detalles relacionados con los escenarios de Windows 10 admitidos. Además, en la información siguiente se proporcionan detalles clave para tener en cuenta al implementar aplicaciones en Windows. 
 
-Las aplicaciones de línea de negocio (LOB) y las de Microsoft Store para Empresas son los tipos de aplicaciones que se admiten en los dispositivos Windows 10.
+Las aplicaciones de línea de negocio (LOB) y las de Microsoft Store para Empresas son los tipos de aplicaciones que se admiten en los dispositivos Windows 10. Las extensiones de archivo de las aplicaciones Windows incluyen **.msi**, **.appx**, **.appxbundle**, **.msix** y **.msixbundle**.  
 
 > [!Note]
 > La actualización mínima de Windows 10 necesaria para implementar aplicaciones en el contexto de dispositivo es [23 de mayo de 2018: KB4100403 (compilación del SO 17134.81)](https://support.microsoft.com/en-us/help/4100403/windows-10-update-kb4100403).
@@ -46,9 +46,6 @@ Según el tipo de aplicación, se puede instalar en un dispositivo Windows 10 de
     - Las aplicaciones de línea de negocio modernas y las de Microsoft Store para Empresas (en línea y sin conexión) se pueden implementar en el contexto de usuario y serán compatibles con las intenciones Requerido y Disponible.
 - **Contexto de dispositivo**: cuando se implementa una aplicación en el contexto de dispositivo, la aplicación administrada se instalará directamente en el dispositivo de Intune.
     - Solo las aplicaciones de línea de negocio modernas y las de Microsoft Store para Empresas con licencia en línea se pueden implementar en el contexto de dispositivo y solo admitirán la intención Requerido.
-
-> [!Note]
-> La implementación de MSI a través de MDM en el contexto de dispositivo todavía no se admite en los dispositivos Windows 10.
 
 Cuando una aplicación se implementa en el contexto de dispositivo, solo se realizará correctamente la instalación cuando el destino sea un dispositivo que admite el contexto de dispositivo. Además, la implementación en el contexto de dispositivo admite las condiciones siguientes:
 - Si una aplicación se implementa en el contexto de dispositivo y está destinada a un usuario, se producirá un error en la instalación y se mostrarán el estado y el error siguientes en la consola de administración:

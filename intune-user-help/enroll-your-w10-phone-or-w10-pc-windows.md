@@ -1,11 +1,11 @@
 ---
-title: Inscribir el dispositivo Windows 10 en Intune | Microsoft Docs
-description: Describe cómo inscribir un dispositivo móvil o de escritorio Windows 10 en Intune.
+title: Inscripción del dispositivo Windows 10 en administración de Intune | Microsoft Docs
+description: Describe cómo conseguir administrar un dispositivo móvil o de escritorio Windows 10 en Intune
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/10/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 6395dc0d14b8947093d53865eb1d97f6ef56db25
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 35a345cd70c9c7e8e0e6d482d933d91f9a6f5f18
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147119"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828234"
 ---
 # <a name="enroll-your-windows-10-devices-in-intune"></a>Inscribir dispositivos Windows 10 en Intune
 

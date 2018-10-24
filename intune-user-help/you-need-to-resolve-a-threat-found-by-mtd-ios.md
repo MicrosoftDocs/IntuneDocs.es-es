@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 10/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: f209fa315d5d5c36e661a931c32c70ba5ba93d81
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 40d4b2d316320f23b29f1a7a67c529a158a0f7d6
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150057"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48827843"
 ---
 # <a name="resolve-a-threat-found-by-a-mobile-threat-defense-app"></a>Resolver una amenaza detectada por una aplicación de Mobile Threat Defense
 
@@ -34,7 +34,7 @@ Las amenazas aparecen en el Portal de empresa como problemas de no conformidad s
 * Sincronizar los archivos corporativos con OneDrive
 * Acceder a las aplicaciones de la empresa
 
-A continuación se muestran los servicios de Mobile Threat Defense específicos para iOS que es posible que la organización haya configurado. Seleccione una aplicación para obtener más información sobre su comportamiento. 
+Estos son los servicios de Mobile Threat Defense específicos para iOS que puede que se hayan configurado en su empresa. Seleccione una aplicación para obtener más información sobre su comportamiento. 
 
 
 * [Lookout for Work](you-need-to-resolve-a-threat-found-by-lookout-for-work-ios.md)
@@ -42,5 +42,5 @@ A continuación se muestran los servicios de Mobile Threat Defense específicos 
 * [SandBlast Mobile Protect](you-need-to-resolve-a-threat-found-by-checkpoint-ios.md)
 * [Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-ios.md)
 
-¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).
+¿Sigue necesitando ayuda? Póngase en contacto con el equipo de soporte técnico de su empresa. Puede encontrar su información de contacto en el [sitio web del Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
 

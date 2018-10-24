@@ -15,12 +15,12 @@ ms.assetid: 7ddbf360-0c61-11e8-ba89-0ed5f89f718b
 ms.reviewer: dagerrit
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 841cfdeea1d33876c1b678a531c88663aea3759e
-ms.sourcegitcommit: 2795255e89cbe97d0b17383d446cca57c7335016
+ms.openlocfilehash: af1804f657041055467e302c4dc8913e1035749d
+ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/27/2018
-ms.locfileid: "47403602"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48799666"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Inscribir dispositivos iOS automáticamente con el Programa de inscripción de dispositivos de Apple
 
@@ -138,6 +138,7 @@ Ahora que ha instalado el token, puede crear un perfil de inscripción para disp
     ![Captura de pantalla de la instalación de Portal de empresa con VPP.](./media/device-enrollment-program-enroll-ios/install-cp-with-vpp.png)
 
 7. Si ha elegido un token para **Instalar Portal de empresa con VPP**, tiene la opción de bloquear el dispositivo en Modo de aplicación única (en concreto la aplicación Portal de empresa) inmediatamente después de que finalice el Asistente de configuración. Haga clic en **Sí** en **Run Company Portal in Single App Mode until authentication** (Ejecutar el Portal de empresa en el modo de aplicación única hasta la autenticación) para establecer esta opción. Para usar el dispositivo, primero el usuario debe autenticarse iniciando sesión con el Portal de empresa.
+    Esta característica se ejecuta mejor con iOS 11.3.1 y versiones posteriores. Con versiones anteriores, puede tardar mucho tiempo en instalarse.
 
 8. Elija **Configuración de administración de dispositivos** y seleccione si desea o no que se supervisen los dispositivos con este perfil.
 

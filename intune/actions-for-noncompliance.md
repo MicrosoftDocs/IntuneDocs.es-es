@@ -1,23 +1,23 @@
 ---
-title: Acciones y mensajes en caso de incumplimiento con Microsoft Intune - Azure | Microsoft Docs
+title: 'Acciones y mensajes en caso de incumplimiento con Microsoft Intune: Azure | Microsoft Docs'
 description: Cree un correo electrónico de notificación para enviar a los dispositivos no compatibles. Agregue acciones después de que un dispositivo se marque como no compatible (como agregar un período de gracia hasta que lo sea) o bien cree una programación para bloquear el acceso hasta que el dispositivo sea compatible. Haga esto mediante Microsoft Intune en Azure.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/07/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3c8bc523f2796f8af7cb4801cdb13a60b7e2eb5d
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: fae8faf54c7b41bb547912853285cf09ec9c46d5
+ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905740"
+ms.lasthandoff: 10/06/2018
+ms.locfileid: "48828115"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices---intune"></a>Automatización del correo electrónico y adición de acciones para dispositivos no compatibles: Intune
 
@@ -26,13 +26,21 @@ Hay una característica **Acciones en caso de incumplimiento** que configura una
 ## <a name="overview"></a>Introducción
 De forma predeterminada, cuando Intune detecta un dispositivo que no es compatible, lo marca inmediatamente como tal. Después, el [acceso condicional](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) de Azure Active Directory (AD) bloquea el dispositivo. Cuando un dispositivo no es compatible, las **acciones en caso de incumplimiento** también proporcionan flexibilidad para decidir qué hacer. Por ejemplo, no bloquear el dispositivo inmediatamente y conceder al usuario un período de gracia para que sea compatible.
 
-Existen dos tipos de acciones:
+Hay varios tipos de acciones:
 
-- **Notificar a los usuarios finales por correo electrónico**: personalice la notificación por correo electrónico antes de enviarla al usuario final. Puede personalizar los destinatarios, el asunto, el cuerpo del mensaje, incluido el logotipo de la empresa, y la información de contacto.
+- **Enviar correo electrónico al usuario final**: personalice la notificación por correo electrónico antes de enviarla al usuario final. Puede personalizar los destinatarios, el asunto, el cuerpo del mensaje, incluido el logotipo de la empresa, y la información de contacto.
 
     Además, Intune incluye información sobre los dispositivos no compatibles en la notificación por correo electrónico.
 
+- **Bloquear de forma remota los dispositivos no compatibles**: para los dispositivos que no son compatibles se puede emitir un bloqueo remoto. Después se pide al usuario un PIN o una contraseña para desbloquear el dispositivo. Más información sobre la característica [Bloqueo remoto](device-remote-lock.md). 
+
 - **Marcar el dispositivo como no conforme**: cree una programación en la que se indique el número de días pasados los cuales el dispositivo se marcará como no compatible. Puede configurar la acción para que surta efecto de inmediato, o bien conceder al usuario un período de gracia para que el dispositivo sea conforme.
+
+En este artículo se muestra cómo:
+
+- Crear una plantilla de notificación de mensaje
+- Creación de una acción en caso de incumplimiento, como enviar un correo electrónico o bloquear de forma remota un dispositivo
+
 
 ## <a name="before-you-begin"></a>Antes de comenzar
 
@@ -44,48 +52,57 @@ Existen dos tipos de acciones:
   - [macOS](compliance-policy-create-mac-os.md)
   - [Windows](compliance-policy-create-windows.md)
 
-- Al usar las directivas de cumplimiento de dispositivos para bloquear los dispositivos para evitar que usen los recursos corporativos, se debe configurar el acceso condicional de Azure AD. Para obtener instrucciones, vea [Acceso condicional en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal).
-
-- Se debe crear una plantilla de mensaje de notificación. Para enviar el correo electrónico a los usuarios, se usa esta plantilla para crear acciones en caso de incumplimiento.
+- Al usar las directivas de cumplimiento de dispositivos para bloquear los dispositivos para evitar que usen los recursos corporativos, se debe configurar el acceso condicional de Azure AD. Vea [¿Qué es el acceso condicional en Azure Active Directory?](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) o [¿Cuáles son las formas habituales de usar el acceso condicional con Intune?](conditional-access-intune-common-ways-use.md) para obtener instrucciones.
 
 ## <a name="create-a-notification-message-template"></a>Creación de una plantilla de mensaje de notificación
 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com) con las credenciales de Intune. 
-2. Seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
-3. Seleccione **Cumplimiento del dispositivo** y, después, **Notificaciones**. 
-4. Haga clic en **Crear notificación** y después escriba la siguiente información:
+Para enviar correo electrónico a los usuarios, cree una plantilla de mensaje de notificación. Cuando un dispositivo no es compatible, los detalles que especifica en la plantilla se muestran en el correo electrónico enviado a los usuarios.
 
-   - Nombre
-   - Firmante
-   - Mensaje
-   - Encabezado de correo electrónico: incluir el logotipo de la empresa
-   - Pie de página de correo electrónico: incluir nombre de la empresa
-   - Pie de página de correo electrónico: incluir información de contacto
+1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
+2. Seleccione **Cumplimiento del dispositivo** > **Notificaciones**.
+3. Seleccione **Crear notificación**. Escriba la información siguiente:
+
+   - **Nombre**
+   - **Asunto**
+   - **Message**
+   - **Encabezado de correo electrónico: incluir logotipo de la empresa**
+   - **Pie de página de correo electrónico: incluir nombre de la empresa**
+   - **Pie de página de correo electrónico: incluir información de contacto**
 
    ![Ejemplo de un mensaje de notificación compatible en Intune](./media/actionsfornoncompliance-1.PNG)
 
-Cuando haya terminado de agregar la información, elija **Crear**. La plantilla de mensaje de notificación está lista para usar.
+4. Cuando haya terminado de agregar la información, elija **Crear**. La plantilla de mensaje de notificación está lista para usar.
 
 > [!NOTE]
 > También puede editar una plantilla de notificación que creara anteriormente.
 
 ## <a name="add-actions-for-noncompliance"></a>Adición de acciones en caso de incumplimiento
 
-De forma predeterminada, Intune crea automáticamente una acción en caso de incumplimiento. Cuando un dispositivo no cumple la directiva de cumplimiento, esta acción marca el dispositivo como no conforme. Puede personalizar cuánto tiempo se marca el dispositivo como no conforme. Esta acción no se puede suprimir.
+Cuando se crea una directiva de cumplimiento de dispositivos, Intune crea automáticamente una acción en caso de incumplimiento. Cuando un dispositivo no cumple la directiva de cumplimiento, esta acción marca el dispositivo como no conforme. Puede personalizar cuánto tiempo se marca el dispositivo como no conforme. Esta acción no se puede suprimir.
 
-Puede agregar una acción al crear una directiva de cumplimiento, o bien actualizar una directiva de cumplimiento existente. 
+Puede agregar otra acción al crear una directiva de cumplimiento, o bien actualizar una directiva existente. 
 
-1. En [Azure Portal](https://portal.azure.com), abra **Microsoft Intune** y seleccione **Cumplimiento del dispositivo**.
+1. En [Azure Portal](https://portal.azure.com), abra **Microsoft Intune** > **Cumplimiento del dispositivo**.
 2. Seleccione **Directivas**, elija una de las directivas y, después, seleccione **Propiedades**. 
 
-  ¿Aún no tiene una directiva? Cree una directiva de [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) o de otra plataforma.
+    ¿Aún no tiene una directiva? Cree una directiva de [Android](compliance-policy-create-android.md), [iOS](compliance-policy-create-ios.md), [Windows](compliance-policy-create-windows.md) o de otra plataforma.
   
-  > [!NOTE]
-  > Los dispositivos JAMF y los dispositivos dirigidos con grupos de dispositivos no pueden recibir acciones de cumplimiento por el momento.
+    > [!NOTE]
+    > Los dispositivos JAMF y los dispositivos dirigidos con grupos de dispositivos no pueden recibir acciones de cumplimiento por el momento.
 
-3. Seleccione **Acciones en caso de incumplimiento** y, después, haga clic en **Agregar** para escribir los parámetros de acción. Puede elegir la plantilla de mensaje creada anteriormente, agregar destinatarios adicionales y actualizar la programación del período de gracia. En la programación, puede escribir el número de días (de 0 a 365) para aplicar las directivas de acceso condicional. Si escribe **0** número de días, el acceso condicional bloquea **inmediatamente** el acceso a los recursos corporativos.
+3. Seleccione **Actions for noncompliance** (Acciones en caso no conformidad) > **Agregar**.
+4. Seleccione la **Acción**: 
 
-4. Cuando termine, haga clic en **Agregar** > **Aceptar** para guardar los cambios.
+    - **Enviar correo electrónico a los usuarios finales**: cuando el dispositivo no es compatible, elija que se envíe un correo electrónico al usuario. Además: 
+    
+         - Elija la **Plantilla de mensaje** que ha creado antes
+         - Escriba los **Destinatarios adicionales** mediante la selección de grupos
+    
+    - **Bloquear de forma remota los dispositivos no compatibles**: cuando el dispositivo no es compatible, se bloquea el dispositivo. Esto obliga al usuario a escribir un PIN o una contraseña para desbloquear el dispositivo. 
+    
+    - **Programación**: escriba el número de días (de 0 a 365) después del incumplimiento para desencadenar la acción en los dispositivos de los usuarios. Después de este período de gracia, puede aplicar una directiva de acceso condicional. Si escribe **0** para el número de días, el acceso condicional surte efecto **inmediatamente**. Por ejemplo, puede bloquear inmediatamente el acceso a los recursos corporativos si un dispositivo no es compatible.
+
+5. Cuando termine, haga clic en **Agregar** > **Aceptar** para guardar los cambios.
 
 ## <a name="next-steps"></a>Pasos siguientes
-Supervise la actividad de cumplimiento de los dispositivos mediante la ejecución de los informes. En [Supervisión del cumplimiento de dispositivos](device-compliance-monitor.md) se proporcionan algunas instrucciones.
+[Supervisión del cumplimiento de dispositivos en Intune](device-compliance-monitor.md).

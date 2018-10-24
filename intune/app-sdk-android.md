@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/18/2018
+ms.date: 10/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: ca1f34f6a0db6db26f03f62dba69c4cd708b9d65
-ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
+ms.openlocfilehash: 4a588af375ef690d45e067dfc4261fbeb551755c
+ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028773"
+ms.lasthandoff: 10/08/2018
+ms.locfileid: "48863219"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guía para desarrolladores de Android acerca del SDK para aplicaciones de Microsoft Intune
 
@@ -31,18 +31,21 @@ El SDK para aplicaciones de Microsoft Intune para Android permite incorporar dir
 
 ## <a name="whats-in-the-sdk"></a>Qué hay en el SDK
 
-El SDK para aplicaciones de Intune consta de los siguientes archivos:  
+El SDK para aplicaciones de Intune consta de los siguientes archivos:
 
-* **Microsoft.Intune.MAM.SDK.aar**: los componentes del SDK, excepto los archivos JAR Support.V4 y Support.V7.
-* **Microsoft.Intune.MAM.SDK.Support.v4.jar**: las interfaces necesarias para habilitar MAM en aplicaciones que usan la biblioteca de compatibilidad de Android v4. Las aplicaciones que necesiten este tipo de compatibilidad deben hacer referencia al archivo JAR directamente.
-* **Microsoft.Intune.MAM.SDK.Support.v7.jar**: las interfaces necesarias para habilitar MAM en aplicaciones que usan la biblioteca de compatibilidad de Android v7. Las aplicaciones que necesiten este tipo de compatibilidad deben hacer referencia al archivo JAR directamente.
-* **Microsoft.Intune.MDM.SDK.DownlevelStubs.jar**: este archivo jar contiene códigos auxiliares para las clases del sistema de Android que solo están presentes en dispositivos más recientes, pero a las que se hace referencia mediante métodos en MAMActivity. Los dispositivos más recientes ignorarán estas clases de código auxiliar. Este archivo jar solo es necesario si la aplicación realiza la reflexión en clases derivadas de MAMActivity y en la mayoría de las aplicaciones no es necesario incluirlo. Si usa este archivo jar, debe excluir todas las clases de ProGuard. Todas estarán en el paquete de raíz "android"
+* **Microsoft.Intune.MAM.SDK.aar**: los componentes del SDK, excepto los archivos JAR de la biblioteca de compatibilidad.
+* **Microsoft.Intune.MAM.SDK.Support.v4.jar**: las clases necesarias para habilitar MAM en aplicaciones que usan la biblioteca de compatibilidad de Android v4.
+* **Microsoft.Intune.MAM.SDK.Support.v7.jar**: las clases necesarias para habilitar MAM en aplicaciones que usan la biblioteca de compatibilidad de Android v7.
+* **Microsoft.Intune.MAM.SDK.Support.v17.jar**: las clases necesarias para habilitar MAM en aplicaciones que usan la biblioteca de compatibilidad de Android v17. 
+* **Microsoft.Intune.MAM.SDK.Support.Text.jar**: las clases necesarias para habilitar MAM en aplicaciones que usan clases de la biblioteca de compatibilidad de Android en el paquete `android.support.text`.
+* **Microsoft.Intune.MDM.SDK.DownlevelStubs.jar**: este archivo jar contiene códigos auxiliares para las clases del sistema de Android que solo están presentes en los dispositivos nuevos, pero a las que se hace referencia mediante métodos en MAMActivity. Los dispositivos más recientes ignorarán estas clases de código auxiliar. Este archivo jar solo es necesario si la aplicación realiza la reflexión en clases derivadas de MAMActivity y en la mayoría de las aplicaciones no es necesario incluirlo. Si usa este archivo jar, debe excluir todas las clases de ProGuard. Todas estarán en el paquete de raíz "android"
+* **com.microsoft.intune.mam.build.jar**: un complemento de Gradle que [ayuda a integrar el SDK](#build-tooling).
 * **CHANGELOG.txt**: proporciona un registro de los cambios hechos en cada versión del SDK.
 * **THIRDPARTYNOTICES. TXT**: es un aviso de atribución que reconoce el código de terceros o de OSS que se compilará en la aplicación.
 
 ## <a name="requirements"></a>Requisitos
 
-El SDK para aplicaciones de Intune es un proyecto de Android compilado. Como resultado, no se ve para nada afectado por la versión de Android que usa la aplicación para sus versiones de API mínima o de destino. El SDK admite desde la API 19 (Android 4.4 y posteriores) a la API 26 (Android 8.0) de Android.
+El SDK admite desde la API 19 (Android 4.4 y posteriores) a la API 28 (Android 8.0) de Android.
 
 
 ### <a name="company-portal-app"></a>Aplicación de portal de empresa
@@ -55,32 +58,168 @@ Para la protección de aplicaciones sin inscripción de dispositivo, _**no**_ es
 
 ## <a name="sdk-integration"></a>Integración del SDK
 
-### <a name="build-integration"></a>Integración de compilación
+### <a name="referencing-intune-app-libraries"></a>Referencia a bibliotecas de aplicaciones de Intune
 
 El SDK para aplicaciones de Intune es una biblioteca de Android estándar que no tiene dependencias externas. **Microsoft.Intune.MAM.SDK.aar** contiene tanto las interfaces necesarias para la habilitación de una directiva de protección de aplicaciones como el código necesario para interoperar con la aplicación Portal de empresa de Microsoft Intune.
 
-**Microsoft.Intune.MAM.SDK.aar** se debe especificar como una referencia a la biblioteca de Android. Para especificar **Microsoft.Intune.MAM.SDK.aar** como una referencia de biblioteca de Android, abra el proyecto de aplicación en Android Studio y vaya a **File > New > New module** (Archivo > Nuevo > Nuevo módulo) y seleccione **Import .JAR/.AAR Package** (Importar paquete .JAR/.AAR). Luego, seleccione el paquete de archivos de Android **Microsoft.Intune.MAM.SDK.aar** para crear un módulo para el paquete *.AAR*. Haga clic con el botón derecho en el módulo o los módulos que contienen el código de la aplicación y vaya a **Module Settings** >  (Configuración del módulo) **pestaña Dependencies (Dependencias)** > **icono +** > **Module dependency** (Dependencia del módulo) > Seleccione el módulo MAM SDK AAR que acaba de crear > **OK** (Aceptar). Esto garantizará que el módulo se compila con el SDK de MAM al crear el proyecto.
+**Microsoft.Intune.MAM.SDK.aar** se debe especificar como una referencia a la biblioteca de Android. Para hacerlo, abra el proyecto de aplicación en Android Studio y vaya a **Archivo > Nuevo > Nuevo módulo** y seleccione **Importar paquete .JAR/.AAR**. Luego, seleccione nuestro paquete de archivos de Android Microsoft.Intune.MAM.SDK.aar para crear un módulo para nuestro .AAR. Haga clic con el botón derecho en el módulo o los módulos que contienen el código de la aplicación y vaya a **Configuración de módulo** > **pestaña Dependencias** > **icono +** > **Module dependency** (Dependencia de módulo) > seleccione el módulo AAR de SDK de MAM que acaba de crear > **Aceptar**. Esto garantizará que el módulo se compila con el SDK de MAM al crear el proyecto.
 
-Además, **Microsoft.Intune.MAM.SDK.Support.v4** y **Microsoft.Intune.MAM.SDK.Support.v7** contienen variantes de Intune de `android.support.v4` y `android.support.v7`, respectivamente. No están integradas en Microsoft.Intune.MAM.SDK.aar en caso de que una aplicación no desee incluir las bibliotecas de compatibilidad. Son archivos JAR estándar en lugar de proyecto de biblioteca Android.
+Además, las bibliotecas de **Microsoft.Intune.MAM.SDK.Support.XXX.jar** contienen variantes de Intune de las bibliotecas `android.support.XXX` correspondientes. No están integradas en Microsoft.Intune.MAM.SDK.aar en caso de que una aplicación no tenga que depender de las bibliotecas de compatibilidad.
 
 #### <a name="proguard"></a>ProGuard
 
-Si [ProGuard](http://proguard.sourceforge.net/) (o cualquier otro mecanismo de reducción u ofuscación) se usa como paso de compilación, se deben excluir las clases del SDK de Intune. Cuando se incluye el paquete *.AAR* en la compilación, nuestras reglas se integran automáticamente en el paso de ProGuard y se mantienen los archivos de clase necesarios. 
+Si se usa [ProGuard](http://proguard.sourceforge.net/) (o cualquier otro mecanismo de reducción u ofuscación) como paso de compilación, el SDK tiene reglas de configuración adicionales que se deben incluirse. Cuando se incluye el paquete .aar en la compilación, nuestras reglas se integran automáticamente en el paso de ProGuard y se mantienen los archivos de clase necesarios.
 
 Las bibliotecas de autenticación de Azure Active Directory (ADAL) pueden tener sus propias restricciones de ProGuard. Si la aplicación integra ADAL, debe seguir la documentación de ADAL sobre estas restricciones.
 
-### <a name="entry-points"></a>Puntos de entrada
+### <a name="build-tooling"></a>Herramientas de compilación
+Intune App SDK es una biblioteca de Android que permite a la aplicación admitir el cumplimiento de directivas de Intune y participar en él. Algunas directivas exigen que [la aplicación participe de forma explícita para poder aplicarlas](#enable-features-that-require-app-participation), pero la mayoría se aplican casi automáticamente. Para que se apliquen automáticamente hace falta que las aplicaciones reemplacen la herencia de varias clases base de Android con la herencia de equivalentes de MAM y, del mismo modo, reemplacen llamadas a ciertas clases de servicio de sistema de Android con llamadas a equivalentes de MAM. Estos reemplazos específicos que se necesitan se detallan más [abajo](#class-and-method-replacements).
 
-Para que el SDK para aplicaciones de Intune pueda habilitar las directivas de protección de aplicaciones de Intune, es necesario realizar algunos cambios en el código fuente de una aplicación. Para ello, se reemplazan las clases base de Android por las clases base de Intune equivalentes, cuyos nombres tienen el prefijo **MAM**. Las clases del SDK son un término medio entre las clases base de Android y la versión derivada que la propia aplicación tiene de esas clases. Si usamos una actividad a modo de ejemplo, terminará con una jerarquía de herencia que tendrá el siguiente aspecto: `Activity` > `MAMActivity` > `AppSpecificActivity`.
+Realizar manualmente estos reemplazos puede ser un proceso largo. Es mejor usar las herramientas de compilación que ofrece el SDK (un complemento para compilaciones de Gradle y una herramienta de línea de comandos para compilaciones que no son de Gradle) que realizan los reemplazos automáticamente. Estas herramientas transforman los archivos de clase generados por la compilación de Java y no modifican el código fuente original.
 
-Por ejemplo, cuando `AppSpecificActivity` interactúa con su elemento primario (por ejemplo, al llamar a `super.onCreate()`), `MAMActivity` es la superclase.
+Las herramientas realizan solamente [reemplazos directos](#class-and-method-replacements). No realizan integraciones de SDK más complejas, como [guardar como directiva](#enable-features-that-require-app-participation), [trabajar con varias identidades](#multi-identity-optional), [registrar con APP-WE](#app-protection-policy-without-device-enrollment), [realizar modificaciones en AndroidManifest](#manifest-replacements) o [configurar ADAL](#configure-azure-active-directory-authentication-library-adal) por lo que estas deberán hacerse antes de que la aplicación esté totalmente habilitada para Intune. Revise detenidamente el resto de esta documentación para los puntos de integración correspondiente a la aplicación.
 
-Las aplicaciones Android habituales tienen un modo único y pueden acceder al sistema mediante su objeto [**Context**](https://developer.android.com/reference/android/content/Context.html). Por otro lado, las aplicaciones que han integrado el SDK para aplicaciones de Intune tienen dos modos. Estas aplicaciones siguen teniendo acceso al sistema a través del objeto `Context`. En función de la `Activity` usada, es Android quien proporciona el objeto `Context` o este se dividirá de manera inteligente entre una vista restringida del sistema y el `Context` proporcionado por Android. Una vez que hace una derivación desde uno de los puntos de entrada de MAM, es seguro usar `Context` como lo haría habitualmente; por ejemplo, iniciando las clases `Activity` y usando `PackageManager`.
+> [!NOTE]
+> Se pueden ejecutar las herramientas en un proyecto donde ya se ha realizado la integración de origen completa o parcial del SDK de MAM a través de reemplazos manuales. El proyecto debe seguir enumerando el SDK de MAM como una dependencia.
+
+### <a name="gradle-build-plugin"></a>Complemento de compilación de Gradle
+Si la aplicación no se compila con Gradle, vaya directamente a la [integración con la herramienta de línea de comandos](#command-line-build-tool). 
+
+El complemento de SDK de aplicaciones que se distribuye como parte del SDK como **GradlePlugin/com.microsoft.intune.mam.build.jar**. Para que Gradle pueda encontrar el complemento, debe agregarse a la ruta de clase buildscript. El complemento depende [Javassist](http://jboss-javassist.github.io/javassist/), que también se debe agregar. Para agregarlos a la ruta de clase, agregue lo siguiente a la raíz `build.gradle`
+
+```groovy
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "org.javassist:javassist:3.22.0-GA"
+        classpath files("$PATH_TO_MAM_SDK/GradlePlugin/com.microsoft.intune.mam.build.jar")
+    }
+}
+```
+
+Después, en el archivo `build.gradle` del proyecto APK, basta con aplicar el complemento como
+```groovy
+apply plugin: 'com.microsoft.intune.mam'
+```
+
+De forma predeterminada, el complemento funcionará **solo** en dependencias `project`.
+La compilación de prueba no se ve afectada. Puede que se proporcione configuración a la lista
+*  Proyectos que se excluyen
+*  [Dependencias externas que se incluyen](#usage-of-includeexternallibraries) 
+*  Clases específicas que se excluyen del procesamiento
+*  Variantes que se excluyen del procesamiento. Pueden hacer referencia a un nombre de variante completo o un sabor único. Por ejemplo,
+     * si la aplicación tiene los tipos de compilación `debug` y `release` con sabores {`savory`, `sweet`} y {`vanilla`, `chocolate`}, puede especificar
+     * `savory` para excluir todas las variantes con el sabor savory o `savoryVanillaRelease` para excluir solo esa variante exacta.
+
+#### <a name="example-partial-buildgradle"></a>Ejemplo de build.gradle parcial
+
+```groovy
+
+apply plugin: 'com.microsoft.intune.mam'
+
+dependencies {
+    implementation project(':product:FooLib')
+    implementation project(':product:foo-project')
+    implementation fileTree(dir: "libs", include: ["bar.jar"])
+    implementation fileTree(dir: "libs", include: ["zap.jar"])
+    implementation "com.contoso.foo:zap-artifact:1.0.0"
+    implementation "com.microsoft.bar:baz:1.0.0"
+
+    // Include the MAM SDK
+    implementation files("$PATH_TO_MAM_SDK/Microsoft.Intune.MAM.SDK.aar")
+}
+intunemam {
+    excludeProjects = [':product:FooLib']
+    includeExternalLibraries = ['bar.jar', "com.contoso.foo:zap-artifact", "com.microsoft.*"]
+    excludeClasses = ['com.contoso.SplashActivity']
+    excludeVariants=['savory']
+}
+
+```
+Esto tendría los siguientes efectos:
+* `:product:FooLib` no se reescribe porque está incluido en `excludeProjects`
+* `:product:foo-project` se reescribe, excepto para `com.contoso.SplashActivity`, que se omite porque se encuentra en `excludeClasses`
+* `bar.jar` se reescribe porque está incluido en `includeExternalLibraries`
+* `zap.jar` **no** se reescribe porque no es un proyecto y no se incluye en `includeExternalLibraries`
+* `com.contoso.foo:zap-artifact:1.0.0` se reescribe porque está incluido en `includeExternalLibraries`
+* `com.microsoft.bar:baz:1.0.0` se reescribe porque está incluido en `includeExternalLibraries` mediante un carácter comodín (`com.microsoft.*`).
+
+#### <a name="usage-of-includeexternallibraries"></a>Uso de includeExternalLibraries
+
+Puesto que el complemento solo funciona en dependencias del proyecto (normalmente proporcionado por la función `project()`) de forma predeterminada, todas las dependencias especificadas por `fileTree(...)` u obtenidas de maven u otros orígenes de paquetes (por ejemplo, "`com.contoso.bar:baz:1.2.0`") deben proporcionarse a la propiedad `includeExternalLibraries` si se necesita que MAM las procese según los criterios que se explican más abajo. Se admiten caracteres comodín ("*").
+
+Al especificar las dependencias externas con notación de artefacto, se recomienda omitir el componente de versión en el valor `includeExternalLibraries`. Si incluye la versión, debe ser una versión exacta. Las especificaciones de la versión dinámica (por ejemplo, `1.+`) no se admiten.
+
+La regla general que debe usar para determinar si necesita incluir bibliotecas en `includeExternalLibraries` se basa en dos preguntas:
+1. ¿La biblioteca tiene clases para los que hay equivalentes de MAM? Ejemplos: `Activity`, `Fragment`, `ContentProvider`, `Service`, etcétera.
+2. ¿En caso afirmativo, la aplicación usa esas clases?
+
+Si la respuesta es "Sí" a ambas preguntas, debe incluir esa biblioteca en `includeExternalLibraries`. 
+
+| Escenario | ¿Debe incluirse? |
+|--|--|
+| Se incluye una biblioteca de visor PDF en la aplicación y se usa `Activity` del visor en la aplicación cuando los usuarios intentan ver archivos PDF | Sí |
+| Se incluye una biblioteca HTTP en la aplicación para obtener un rendimiento web mejorado | No |
+| Se incluye una biblioteca como React Native que contiene clases derivadas de `Activity`, `Application` y `Fragment`, las cuales se usan o se derivan aún más en la aplicación | Sí |
+| Se incluye una biblioteca como React Native que contiene clases derivadas de `Activity`, `Application` y `Fragment`, pero solo se usan clases auxiliares estáticas o clases de utilidades | No |
+| Se incluye que contiene clases de vista derivadas de `TextView` y se usan esas clases o se derivan aún más en la aplicación | Sí |
 
 
-## <a name="replace-classes-methods-and-activities-with-their-mam-equivalent"></a>Reemplazo de las clases, los métodos y las actividades por su equivalente MAM
+#### <a name="dependencies"></a>Dependencias
 
-Las clases base de Android se deben reemplazar por sus equivalentes MAM. Para ello, busque todas las instancias de las clases enumeradas en la tabla siguiente y reemplácelas por el SDK para aplicaciones de Intune equivalente. La mayoría son clases que heredan las clases de aplicación, pero algunas (por ejemplo, MediaPlayer) serán clases que la aplicación usa sin necesidad de derivarlas.
+El complemento Gradle tiene una dependencia en [Javassist](http://jboss-javassist.github.io/javassist/), que debe estar disponible para la resolución de dependencias de Gradle (como se describió antes). Javassist se usa únicamente en tiempo de compilación cuando se ejecuta el complemento. No se agregará ningún código Javassist a la aplicación.
+
+> [!NOTE]
+> Debe usar la versión 3.0 o posterior del complemento Gradle de Android y Gradle 4.1 o posterior.
+
+### <a name="command-line-build-tool"></a>Herramienta de compilación de línea de comandos
+Si la compilación usa Gradle, vaya directamente a la [siguiente sección](#class-and-method-replacements).
+
+La herramienta de compilación de línea de comandos está disponible en la carpeta `BuildTool` del SDK. Realiza la misma función que el complemento de Gradle explicado anteriormente, pero se puede integrar en sistemas de compilación personalizada o que no sean de Gradle. Como es más genérico, es más complejo de invocar, por lo que debe usarse el complemento de Gradle cuando sea posible.
+
+#### <a name="using-the-command-line-tool"></a>Mediante la herramienta de línea de comandos
+
+La herramienta de línea de comandos se puede invocar mediante los scripts auxiliares que se encuentran en el directorio `BuildTool\bin`.
+
+La herramienta espera estos parámetros:
+| Parámetro | Descripción |
+| -- | -- |
+| `--input` | Una lista delimitada por puntos y coma de archivos jar y directorios de archivos de clase que se van a modificar. Debe incluir todos los directorios y archivos jar que quiere escribir. |
+| `--output` | Una lista delimitada por puntos y coma de archivos jar y directorios donde se van a almacenar las clases modificadas. Debe haber una entrada de salida por cada entrada de entrada y deben aparecer en orden. |
+| `--classpath` | La ruta de clase de la compilación. Puede contener tanto archivos jar como directorios de clase. |
+| `--excludeClasses`| Una lista delimitada por puntos y coma que contiene los nombres de las clases que se deben excluir de la reescritura. |
+
+Todos los parámetros son necesarios, excepto `--excludeClasses` que es opcional.
+
+#### <a name="example-command-line-tool-invocation"></a>Ejemplo de invocación de la herramienta de línea de comandos
+
+``` batch
+> BuildTool\bin\BuildTool.bat --input build\product-foo-project;libs\bar.jar --output mam-build\product-foo-project;mam-build\libs\bar.jar --classpath build\zap.jar;libs\Microsoft.Intune.MAM.SDK\classes.jar;%ANDROID_SDK_ROOT%\platforms\android-27\android.jar --excludeClasses com.contoso.SplashActivity
+```
+
+Esto tendría los siguientes efectos:
+
+* el directorio `product-foo-project` se reescribe como `mam-build\product-foo-project`
+* `bar.jar` se reescribe como `mam-build\libs\bar.jar`
+* `zap.jar` **no** se reescribe porque solo está incluido en `--classpath`
+* La clase `com.contoso.SplashActivity` **no** se reescribe aunque esté en `--input`
+
+> [!NOTE] 
+> La herramienta de compilación no admite archivos aar actualmente. Si el sistema de compilación ya no extrae `classes.jar` cuando trabaja con archivos aar, deberá hacerlo antes de invocar la herramienta de compilación.
+
+
+## <a name="class-and-method-replacements"></a>Reemplazos de clases y métodos
+
+Las clases base de Android se deben reemplazar por sus equivalentes MAM respectivos para permitir la administración de Intune. Las clases del SDK son un término medio entre las clases base de Android y la versión derivada que la propia aplicación tiene de esas clases. Por ejemplo, una actividad de aplicación podría terminar con una jerarquía de herencia que tendrá este aspecto: `Activity` > `MAMActivity` >
+`AppSpecificActivity`. La capa MAM filtra las llamadas a las operaciones del sistema a fin de proporcionar una vista administrada sin complicaciones para la aplicación.
+
+Además de las clases base, algunas clases que la aplicación podría usar sin tener que derivar (por ejemplo, `MediaPlayer`) también tienen los equivalentes de MAM necesarios y [también se deben reemplazar algunas llamadas a métodos](#wrapped-system-services). Los detalles concretos se proporcionan más abajo.
+
+Todos los reemplazos que se detallan en esta sección pueden realizarse automáticamente mediante las [herramientas de compilación](#build-tooling) del SDK. 
+
+
 
 | Clase base Android | Sustitución del SDK para aplicaciones de Intune |
 |--|--|
@@ -112,6 +251,12 @@ Las clases base de Android se deben reemplazar por sus equivalentes MAM. Para el
 | android.provider.DocumentsProvider | MAMDocumentsProvider |
 | android.preference.PreferenceActivity | MAMPreferenceActivity |
 | android.support.multidex.MultiDexApplication | MAMMultiDexApplication |
+| android.widget.TextView | MAMTextView |
+| android.widget.AutoCompleteTextView | MAMAutoCompleteTextView |
+| android.widget.CheckedTextView | MAMCheckedTextView |
+| android.widget.EditText | MAMEditText |
+| android.inputmethodservice.ExtractEditText | MAMExtractEditText |
+| android.widget.MultiAutoCompleteTextView | MAMMultiAutoCompleteTextView |
 
 > [!NOTE]
 > Incluso si la aplicación no necesita su propia clase `Application` derivada, [vea `MAMApplication` a continuación](#mamapplication)
@@ -133,6 +278,24 @@ Las clases base de Android se deben reemplazar por sus equivalentes MAM. Para el
 |Clase de Android | Sustitución del SDK para aplicaciones de Intune |
 |--|--|
 |android.support.v7.app.AppCompatActivity | MAMAppCompatActivity |
+| android.support.v7.widget.AppCompatAutoCompleteTextView | MAMAppCompatAutoCompleteTextView |
+| android.support.v7.widget.AppCompatCheckedTextView | MAMAppCompatCheckedTextView |
+| android.support.v7.widget.AppCompatEditText | MAMAppCompatEditText |
+| android.support.v7.widget.AppCompatMultiAutoCompleteTextView | MAMAppCompatMultiAutoCompleteTextView |
+| android.support.v7.widget.AppCompatTextView | MAMAppCompatTextView |
+
+### <a name="microsoftintunemamsdksupportv17jar"></a>Microsoft.Intune.MAM.SDK.Support.v17.jar:
+|Clase de Android | Sustitución del SDK para aplicaciones de Intune |
+|--|--|
+| android.support.v17.leanback.widget.SearchEditText | MAMSearchEditText |
+
+### <a name="microsoftintunemamsdksupporttextjar"></a>Microsoft.Intune.MAM.SDK.Support.Text.jar:
+|Clase de Android | Sustitución del SDK para aplicaciones de Intune |
+|--|--|
+| android.support.text.emoji.widget.EmojiAppCompatEditText | MAMEmojiAppCompatEditText |
+| android.support.text.emoji.widget.EmojiAppCompatTextView | MAMEmojiAppCompatTextView |
+| android.support.text.emoji.widget.EmojiEditText | MAMEmojiEditText |
+| android.support.text.emoji.widget.EmojiTextView | MAMEmojiTextView |
 
 ### <a name="renamed-methods"></a>Métodos renombrados
 En muchos casos, un método que se encuentra en la clase Android se marca como final de la clase de reemplazo MAM. En este caso, la clase de reemplazo MAM proporciona un método con un nombre similar (generalmente lleva el sufijo `MAM`) que es el que se debe reemplazar. Por ejemplo, al derivar desde `MAMActivity`, en lugar de reemplazar `onCreate()` y llamar a `super.onCreate()`, `Activity` debe reemplazar a `onMAMCreate()` y llamar a `super.onMAMCreate()`. El compilador de Java debe encargarse de aplicar las restricciones necesarias para evitar que se reemplace por accidente el método original en lugar del equivalente MAM.
@@ -142,10 +305,22 @@ Si la aplicación crea una subclase de `android.app.Application`, **debe** crear
 ### <a name="pendingintent"></a>PendingIntent
 En lugar de `PendingIntent.get*`, debe usar el método `MAMPendingIntent.get*`. Después de esto, puede usar la clase `PendingIntent` del modo habitual.
 
+### <a name="wrapped-system-services"></a>Servicios del sistema encapsulados
+Para algunas clases de servicios del sistema, es necesario llamar a un método estático en una clase contenedora de MAM en lugar de invocar directamente el método que quiera en la instancia de servicio. Por ejemplo, una llamada a `getSystemService(ClipboardManager.class).getPrimaryClip()` debe convertirse en una llamada a `MAMClipboardManager.getPrimaryClip(getSystemService(ClipboardManager.class)`. No se recomienda realizar estos reemplazos manualmente. En su lugar, deje que BuildPlugin lo haga.
+
+| Clase de Android | Sustitución del SDK para aplicaciones de Intune |
+|--|--|
+| android.content.ClipboardManager | MAMClipboard |
+| android.content.pm.PackageManager | MAMPackageManagement |
+| android.app.DownloadManager | MAMDownloadManagement |
 ### <a name="manifest-replacements"></a>Reemplazos de manifiestos
 Puede que sea necesario realizar algunos de los reemplazos de clase anteriores en el manifiesto así como también en el código Java. De especial interés:
 * Las referencias de manifiesto a `android.support.v4.content.FileProvider` se deben reemplazar por `com.microsoft.intune.mam.client.support.v4.content.MAMFileProvider`.
 
+## <a name="androidx-libraries"></a>Bibliotecas de AndroidX
+Con Android P, Google anunció un nuevo conjunto (cuyo nombre ha cambiado) de bibliotecas de compatibilidad llamado AndroidX, y la versión 28 es la última versión principal de las bibliotecas de compatibilidad de Android existentes.
+
+A diferencia de las bibliotecas de compatibilidad de Android, no se proporciona variantes de MAM de las bibliotecas de AndroidX. En su lugar, AndroidX debe tratar como cualquier otra biblioteca externa y debe estar configurada para el complemento o la herramienta de compilación la reescriba. Para las compilaciones de Gradle, esto puede hacerse si se incluye `androidx.*` en el campo `includeExternalLibraries` de la configuración del complemento. Las invocaciones de la herramienta de línea de comandos deben incluir explícitamente todos los archivos jar.
 ## <a name="sdk-permissions"></a>Permisos de SDK
 
 El SDK para aplicaciones de Intune requiere tres [permisos del sistema de Android](https://developer.android.com/guide/topics/security/permissions.html) sobre las aplicaciones que lo integran:
@@ -206,7 +381,7 @@ public interface AppPolicy {
 
 /**
  * Restrict where an app can save personal data.
- * This function is now deprecated. Use getIsSaveToLocationAllowed(SaveLocation, String) instead
+ * This function is now deprecated. Please use getIsSaveToLocationAllowed(SaveLocation, String) instead
  * @return True if the app is allowed to save to personal data stores; false otherwise.
  */
 @Deprecated
@@ -410,7 +585,7 @@ Las siguientes notificaciones se envían a la aplicación y es posible que algun
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>Configurar Azure Active Directory Authentication Library (ADAL)
 
-En primer lugar, lea las instrucciones de integración de ADAL que se encuentran en el [repositorio de ADAL en GitHub](https://github.com/AzureAD/azure-activedirectory-library-for-android).
+Primero, lea las guías de integración de ADAL que se encuentran en el [repositorio de ADAL en GitHub](https://github.com/AzureAD/azure-activedirectory-library-for-android).
 
 El SDK se basa en [ADAL](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) para sus escenarios de inicio condicional y [autenticación](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/), que requieren que las aplicaciones se configuren con [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/). Los valores de configuración se comunican con el SDK mediante los metadatos de AndroidManifest.
 
@@ -448,7 +623,7 @@ Para configurar la aplicación y habilitar la autenticación correcta, agregue l
 
 ### <a name="common-adal-configurations"></a>Opciones de configuración comunes de ADAL
 
-A continuación se describen las maneras comunes en que se puede configurar una aplicación con ADAL. Busque la configuración de la aplicación y asegúrese de establecer los parámetros de metadatos de ADAL (que se explicaron anteriormente) en los valores necesarios. En todos los casos, la autoridad se puede especificar si se desea para entornos no predeterminados, pero no es necesario.
+A continuación se describen las maneras comunes en que se puede configurar una aplicación con ADAL. Busque la configuración de la aplicación y asegúrese de establecer los parámetros de metadatos de ADAL (que se explicaron anteriormente) en los valores necesarios. En todos los casos, la autoridad se puede especificar si se desea para entornos no predeterminados, pero generalmente no resulta necesario.
 
 1. **La aplicación no integra ADAL:**
 
@@ -458,7 +633,7 @@ No se tienen que configurar valores de manifiesto adicionales.
 
     |Parámetro obligatorio de ADAL| Valor |
     |--|--|
-    | ClientID | ClientID de la aplicación (que Azure AD genera cuando se registra la aplicación) |
+    | ClientID: | ClientID de la aplicación (que Azure AD genera cuando se registra la aplicación) |
     | SkipBroker | False |
 
 Se pueden especificar los valores de Authority y NonBrokerRedirectURI si resulta necesario.
@@ -485,16 +660,14 @@ Consulte también más adelante los requisitos para el [acceso condicional](#con
 
     |Parámetro obligatorio de ADAL| Valor |
     |--|--|
-    | ClientID | ClientID de la aplicación (que Azure AD genera cuando se registra la aplicación) |
+    | ClientID: | ClientID de la aplicación (que Azure AD genera cuando se registra la aplicación) |
     | SkipBroker | **True** |
     
     Se pueden especificar los valores de Authority y NonBrokerRedirectURI si resulta necesario.
 
 
 ### <a name="conditional-access"></a>Acceso condicional
-
-El acceso condicional (CA) es una [característica](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) de Azure Active Directory que puede usarse para controlar el acceso a recursos de AAD. [Los administradores de Intune pueden definir reglas de CA](https://docs.microsoft.com/intune/conditional-access) que permiten el acceso a los recursos únicamente desde dispositivos o aplicaciones administrados por Intune. Para asegurarse de que la aplicación sea capaz de acceder a los recursos cuando proceda, debe seguir los pasos que se incluyen más adelante. Si la aplicación no adquiere ningún token de acceso de AAD o accede solo a recursos que no se pueden proteger con CA, puede saltarse estos pasos.
-
+El acceso condicional (CA) es una [característica](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer) de Azure Active Directory que puede usarse para controlar el acceso a recursos de AAD.  [Los administradores de Intune pueden definir reglas de CA](https://docs.microsoft.com/intune/conditional-access) que permiten el acceso a los recursos únicamente desde dispositivos o aplicaciones administrados por Intune. Para asegurarse de que la aplicación sea capaz de acceder a los recursos cuando proceda, debe seguir los pasos que se incluyen más adelante. Si la aplicación no adquiere ningún token de acceso de AAD o accede solo a recursos que no se pueden proteger con CA, puede saltarse estos pasos.
 1. Siga las [directrices de integración de ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-android#how-to-use-this-library). 
    Vea especialmente el paso 11 para el uso del agente.
 
@@ -538,7 +711,7 @@ Para implementar la integración de APP-WE, la aplicación debe registrar la cue
 
 2. Cuando se crea una cuenta de usuario y el usuario inicia sesión correctamente con ADAL, la aplicación _debe_ llamar a `registerAccountForMAM()`.
 
-3. Cuando una cuenta de usuario se quita, la aplicación debe llamar a `unregisterAccountForMAM()` para quitar la cuenta de la administración de Intune.
+3. Cuando una cuenta de usuario se quita completamente, la aplicación debe llamar a `unregisterAccountForMAM()` para quitar la cuenta de la administración de Intune.
 
     > [!NOTE]
     > Si un usuario cierra temporalmente la sesión de la aplicación, esta no necesita llamar a `unregisterAccountForMAM()`. La llamada puede iniciar una eliminación para quitar completamente los datos corporativos del usuario.
@@ -585,7 +758,7 @@ public interface MAMEnrollmentManager {
 
     //Registration methods
     void registerAccountForMAM(String upn, String aadId, String tenantId);
-  void registerAccountForMAM(String upn, String aadId, String tenantId, String authority);
+    void registerAccountForMAM(String upn, String aadId, String tenantId, String authority);
     void unregisterAccountForMAM(String upn);
     Result getRegisteredAccountStatus(String upn);
 }
@@ -709,7 +882,9 @@ La primera vez que se registra una cuenta, comienza con el estado `PENDING`, lo 
 
 Si se recibe el resultado `COMPANY_PORTAL_REQUIRED`, el SDK bloqueará el uso de las actividades que usan la identidad para la que se solicitó la inscripción. En su lugar, el SDK hará que esas actividades muestren un aviso para descargar Portal de empresa. Si desea evitar este comportamiento en la aplicación, las actividades pueden implementar `MAMActivity.onMAMCompanyPortalRequired`.
 
-Se llama a este método antes de que el SDK muestre la interfaz de usuario de bloqueo predeterminada. Si la aplicación cambia la identidad de la actividad o anula el registro del usuario que intentó la inscripción, el SDK no bloqueará la actividad. En esta situación, es tarea de la aplicación evitar la pérdida de los datos corporativos. Solo las aplicaciones de varias identidades (que se describirán más adelante) podrán cambiar la identidad de la actividad.
+Se llama a este método antes de que el SDK muestre la interfaz de usuario de bloqueo predeterminada. Si la aplicación cambia la identidad de la actividad o anula el registro del usuario que intentó la inscripción, el SDK no bloqueará la actividad. En esta situación, es tarea de la aplicación evitar la pérdida de los datos corporativos. Tenga en cuenta que solo las aplicaciones de varias identidades (que se describirán más adelante) podrán cambiar la identidad de la actividad.
+
+Si no se hereda explícitamente `MAMActivity` (porque las herramientas de compilación harán ese cambio), pero aun así necesita controlar esta notificación, puede implementar `MAMActivityBlockingListener` en su lugar.
 
 ### <a name="notifications"></a>Notificaciones
 
@@ -723,7 +898,7 @@ public interface MAMEnrollmentNotification extends MAMUserNotification {
 
 El método `getEnrollmentResult()` devuelve el resultado de la solicitud de inscripción.  Como `MAMEnrollmentNotification` extiende `MAMUserNotification`, también está disponible la identidad del usuario para quien se intentó la inscripción. La aplicación debe implementar la interfaz `MAMNotificationReceiver` para recibir estas notificaciones, lo que se detalla en la sección [Registrarse para recibir notificaciones del SDK](#register-for-notifications-from-the-sdk).
 
-El estado de la cuenta de usuario registrada puede cambiar cuando se recibe una notificación de inscripción, pero no se modificará en algunos casos (por ejemplo, si la notificación `AUTHORIZATION_NEEDED` se recibe después de un resultado mucho más informativo como `WRONG_USER`, el resultado más informativo se conservará como estado de la cuenta).
+El estado de la cuenta de usuario registrada puede cambiar cuando se recibe una notificación de inscripción, pero no se modificará en algunos casos (por ejemplo, si la notificación `AUTHORIZATION_NEEDED` se recibe después de un resultado mucho más informativo como `WRONG_USER`, el resultado más informativo se conservará como el estado de la cuenta)
 
 
 ## <a name="protecting-backup-data"></a>Proteger los datos de copia de seguridad
@@ -823,15 +998,12 @@ La guía sobre la copia de seguridad de datos especifica un algoritmo general pa
 
 3. Evite la devolución cuando se están usando las entidades de copia de seguridad en la construcción `while(data.readNextHeader())`*, puesto que se perderán las entidades que se escriben automáticamente.
 
-* Donde `data` es el nombre de variable local para **BackupDataInput** que se transmite a la aplicación una vez que se restaura.
+* Donde `data` es el nombre de variable local para **BackupDataInput** que se pasa a la aplicación tras la restauración.
 
 ## <a name="multi-identity-optional"></a>Varias identidades (opcional)
 
 ### <a name="overview"></a>Introducción
-De forma predeterminada, el SDK para aplicaciones de Intune aplicará la directiva a la aplicación en su conjunto. Varias identidades es una característica de protección de aplicaciones de Intune opcional que se puede habilitar para permitir que se aplique una directiva en un nivel por identidad. Para ello se necesita más participación de la aplicación que otras características de protección de aplicaciones.
-
-La aplicación *debe* informar al SDK cuando intente cambiar la identidad activa. En algunos casos, el SDK también notificará a la aplicación cuando se requiera un cambio de identidad. Sin embargo, en la mayoría de los casos, MAM no puede saber cuáles son los datos que se muestran en la UI ni los que se usan en un subproceso en un momento determinado y confía en que la aplicación establezca la identidad correcta a fin de evitar fugas de datos. En las secciones siguientes se detallarán algunos escenarios determinados que requieren acción de la aplicación.
-
+De forma predeterminada, el SDK para aplicaciones de Intune aplicará la directiva a la aplicación en su conjunto. La característica Varias identidades es una característica de protección de aplicación de Intune opcional que se puede habilitar para permitir que se aplique una directiva en un nivel por identidad. Para ello es necesaria más participación en la aplicación que otras características de la protección de la aplicación.
 > [!NOTE]
 >  Si la participación de la aplicación correcta no se da, puede haber fugas de datos y otros problemas de seguridad.
 
@@ -840,8 +1012,9 @@ Una vez que el usuario inscriba el dispositivo o la aplicación, el SDK registra
 > [!NOTE]
 > Actualmente, solo se admite una identidad administrada de Intune por dispositivo.
 
-Una identidad se define como una cadena. Las identidades **no distinguen mayúsculas de minúsculas** y las solicitudes de identidades que se realizan al SDK podrían no devolverse con el mismo uso de mayúsculas y minúsculas que se empleó originalmente al establecer la identidad.
+Una identidad se define simplemente como una cadena. Las identidades **no distinguen mayúsculas de minúsculas** y las solicitudes de identidades que se realizan al SDK podrían no devolverse con el mismo uso de mayúsculas y minúsculas que se empleó originalmente al establecer la identidad.
 
+La aplicación *debe* informar al SDK cuando intente cambiar la identidad activa. En algunos casos, el SDK también notificará a la aplicación cuando se requiera un cambio de identidad. Sin embargo, en la mayoría de los casos, MAM no puede saber cuáles son los datos que se muestran en la UI ni los que se usan en un subproceso en un momento determinado y confía en que la aplicación establezca la identidad correcta a fin de evitar fugas de datos. En las secciones siguientes se detallarán algunos escenarios determinados que requieren acción de la aplicación.
 ### <a name="enabling-multi-identity"></a>Habilitación de varias identidades
 
 De forma predeterminada, se considera que todas las aplicaciones son de una única identidad. Puede declarar que una aplicación es compatible con varias identidades si coloca los metadatos siguientes en AndroidManifest.xml.
@@ -1006,6 +1179,11 @@ Al método `onMAMIdentitySwitchRequired` se le llama para todos los cambios de i
     > Una aplicación de varias identidades siempre recibirá datos de entrada de aplicaciones tanto administradas como sin administrar. Es responsabilidad de la aplicación tratar los datos de identidades administradas de forma administrada.
 
   Si una identidad solicitada es administrada (use `MAMPolicyManager.getIsIdentityManaged` para comprobarlo), pero la aplicación no puede usar esa cuenta (por ejemplo, porque las cuentas, como las de correo electrónico, deben configurarse primero en la aplicación), el cambio de identidad se debe rechazar.
+#### <a name="build-plugin--tool-considerations"></a>Consideraciones sobre las herramientas o el complemento de compilación
+Si no hereda explícitamente de `MAMActivity`, `MAMService` o `MAMContentProvider` (porque permite que las herramientas de compilación realicen ese cambio), pero aun así necesita procesar cambios de identidad, puede implementar en su lugar `MAMActivityIdentityRequirementListener` (para las actividades) o `MAMIdentityRequirementListener` (para los servicios y ContentProviders). Se puede acceder al comportamiento predeterminado para `MAMActivity.onMAMIdentitySwitchRequired` mediante una llamada al método estático `MAMActivity.defaultOnMAMIdentitySwitchRequired(activity, identity,
+reason, callback)`.
+
+De forma similar, si tiene que invalidar `MAMActivity.onSwitchMAMIdentityComplete`, puede implementar `MAMActivityIdentitySwitchListener` sin heredar explícitamente de `MAMActivity`.
 
 ### <a name="preserving-identity-in-async-operations"></a>Conservar la identidad en operaciones asincrónicas
 Es habitual que las operaciones en el subproceso de interfaz de usuario envíen tareas en segundo plano a otro subproceso. Una aplicación de varias identidades querrá asegurarse de que estas tareas en segundo plano funcionen con la identidad adecuada, que suele ser la misma que usa la actividad que las envió. El SDK de MAM proporciona `MAMAsyncTask` y `MAMIdentityExecutors` como una forma cómoda de conservar la identidad.
@@ -1136,7 +1314,7 @@ Los directorios se pueden proteger con el mismo método `protect` que se usa par
 
 No es posible etiquetar un archivo como perteneciente a varias identidades. Las aplicaciones que deben almacenar datos que pertenecen a distintos usuarios en el mismo archivo pueden hacerlo manualmente mediante las características proporcionadas por `MAMDataProtectionManager`. Esto permite que la aplicación cifre los datos y los asocie a un usuario determinado. Los datos cifrados son adecuados para almacenarse en disco en un archivo. Puede consultar los datos asociados con la identidad y descifrarlos más tarde.
 
-Las aplicaciones que usan `MAMDataProtectionManager` deben implementar un receptor para la notificación `MANAGEMENT_REMOVED`. Una vez que se complete esta notificación, los búferes que se protegieron con esta clase ya no serán legibles si se habilitó el cifrado de archivos cuando los búferes estaban protegidos. Una aplicación puede corregir esta situación con una llamada a MAMDataProtectionManager.unprotect en todos los búferes durante esta notificación. También es seguro llamar a la protección durante esta notificación si se quiere conservar la información de identidad; se garantiza que el cifrado estará deshabilitado durante la notificación.
+Las aplicaciones que usan `MAMDataProtectionManager` deben implementar un receptor para la notificación `MANAGEMENT_REMOVED`. Una vez que se complete esta notificación, los búferes que se protegieron con esta clase ya no serán legibles si se habilitó el cifrado de archivos cuando los búferes estaban protegidos. Una aplicación puede corregir esta situación con una llamada a MAMDataProtectionManager.unprotect en todos los búferes durante esta notificación. Tenga en cuenta que también es seguro llamar a la protección durante esta notificación si se quiere conservar la información de identidad; se garantiza que el cifrado estará deshabilitado durante la notificación.
 
 ```java
 
@@ -1243,7 +1421,7 @@ Las aplicaciones que se registren para `WIPE_USER_DATA` no recibirán la ventaja
 
 
 ## <a name="enabling-mam-targeted-configuration-for-your-android-applications-optional"></a>Habilitación de la configuración de destino de MAM para las aplicaciones Android (opcional)
-Los pares clave-valor específicos de la aplicación se pueden configurar en la consola de Intune. Intune no interpreta en absoluto los pares clave-valor, sino que se pasan a la aplicación. Las aplicaciones que desean recibir dicha configuración pueden usar las clases `MAMAppConfigManager` y `MAMAppConfig` para hacerlo. Si hay varias directivas dirigidas a la misma aplicación, puede haber varios valores en conflicto disponibles para la misma clave.
+Los pares clave-valor específicos de la aplicación se pueden configurar en la consola de Intune. Intune no interpreta en absoluto los pares clave-valor, sino que simplemente se pasan a la aplicación. Las aplicaciones que desean recibir dicha configuración pueden usar las clases `MAMAppConfigManager` y `MAMAppConfig` para hacerlo. Si hay varias directivas dirigidas a la misma aplicación, puede haber varios valores en conflicto disponibles para la misma clave.
 
 ### <a name="example"></a>Ejemplo
 ```
@@ -1450,6 +1628,17 @@ Estas instrucciones son específicas para todos los desarrolladores de aplicacio
    > [!NOTE] 
    > Esto obliga al usuario a descargar el Portal de empresa en el dispositivo y completar el flujo de inscripción predeterminada antes de usarlo.
 
+> [!NOTE]
+    > Esta debe ser la única integración de MAM-WE en la aplicación. Surgirán conflictos si hay cualquier otro intento de llamada a las API de MAMEnrollmentManager.
+
+3. Habilite la directiva de MAM necesaria indicando el siguiente valor en el manifiesto:
+```xml
+<meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />
+```
+
+> [!NOTE] 
+> Esto obliga al usuario a descargar el Portal de empresa en el dispositivo y completar el flujo de inscripción predeterminada antes de usarlo.
+
 ## <a name="limitations"></a>Limitaciones
 
 ### <a name="file-size-limitations"></a>Limitaciones del tamaño de archivo
@@ -1481,8 +1670,9 @@ En el caso de las bases de código de gran tamaño que se ejecutan sin [ProGuard
 
 ### <a name="reflection-limitations"></a>Limitaciones de la reflexión
 Algunas de las clases base de MAM (como MAMActivity y MAMDocumentsProvider) contienen métodos (basados en las clases base de Android originales) que usan tipos de parámetro o de valor devuelto que solo están presentes por encima de determinados niveles de API. Por esta razón, es posible que no siempre se pueda usar la reflexión para enumerar todos los métodos de los componentes de la aplicación. Esta restricción no se limita a MAM; es la misma que se aplicaría si la propia aplicación implementara estos métodos desde las clases base de Android.
-### <a name="roboelectric"></a>Robolectric
-No se admiten pruebas del comportamiento del SDK de MAM en Robolectric. Existen problemas conocidos relacionados con la ejecución del SDK de MAM en Robolectric debido a comportamientos en Robolectric que no imitan de forma precisa aquellos de emuladores o dispositivos reales.
+
+### <a name="robolectric"></a>Robolectric
+No se admiten pruebas del comportamiento del SDK de MAM en Robolectric. Hay problemas conocidos relacionados con la ejecución del SDK de MAM en Robolectric debido a comportamientos presentes en Robolectric que no imitan de forma precisa aquellos de emuladores o dispositivos reales.
 
 Si necesita probar la aplicación en Robolectric, se recomienda mover la lógica de clase de la aplicación a un asistente para producir el apk de pruebas unitarias con una clase de aplicación que no se herede de MAMApplication.
 ## <a name="expectations-of-the-sdk-consumer"></a>Expectativas del consumidor del SDK

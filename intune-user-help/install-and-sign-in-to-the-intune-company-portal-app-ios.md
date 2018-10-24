@@ -1,11 +1,11 @@
 ---
-title: Instalar e iniciar sesión en la aplicación de portal de empresa | Microsoft Docs
+title: Instalación e inicio de sesión en la aplicación Portal de empresa para iOS | Microsoft Docs
 description: ''
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/02/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,16 +17,16 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 984c9212a4aa3221a4de5e02d96f912d800e9490
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: f8ca89168e46e038b57fba9cc2e159416795e112
+ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146382"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48260205"
 ---
 # <a name="install-and-sign-in-to-the-company-portal-app"></a>Instalar e iniciar sesión en la aplicación de portal de empresa
 
-El Portal de empresa es una aplicación que se instala en el dispositivo iOS y que le proporciona acceso a las aplicaciones, al correo electrónico y a la red de su empresa o centro educativo. Antes de acceder, debe instalar la aplicación Portal de empresa y, a continuación, usar la aplicación para inscribir el dispositivo en Microsoft Intune. Para más información, vea [¿Qué ocurrirá cuando instale la aplicación Portal de empresa e inscriba el dispositivo en Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
+Instale la aplicación Portal de empresa en el dispositivo iOS para acceder a las aplicaciones, el correo electrónico y la red de la empresa o la escuela. Use la aplicación para inscribir el dispositivo en Microsoft Intune y proteger el acceso a los recursos de la empresa o la escuela. Para más información, vea [¿Qué ocurrirá cuando instale la aplicación Portal de empresa e inscriba el dispositivo en Intune?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md).
 
 1.  Abra el **App Store** y busque el **Portal de empresa de Intune**.
 

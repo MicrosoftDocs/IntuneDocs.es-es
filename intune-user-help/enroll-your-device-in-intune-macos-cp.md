@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/08/2018
+ms.date: 10/03/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: af5c7492563c8df0168eff3250ae1bbad2cc323e
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 7d45ea6d2a33db2de1d640a554b6a07ad8825109
+ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147724"
+ms.lasthandoff: 10/03/2018
+ms.locfileid: "48260256"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Inscribir un dispositivo macOS en Intune con la aplicación Portal de empresa
 
@@ -80,8 +80,17 @@ Siga estos pasos para inscribir dispositivos macOS con OS X El Capitan 10.11 y v
 
 9. La primera pantalla que verá en la aplicación Portal de empresa le pedirá que **inicie sesión**. Use la misma cuenta profesional o educativa que ha usado para iniciar sesión en el sitio web del Portal de empresa.
 
-10. El Portal de empresa confirma la información de la cuenta y muestra los estados de **inscripción de dispositivos** y **cumplimiento de dispositivos**. Con triángulos de color amarillo se resaltan las acciones que debe emprender para proteger su dispositivo macOS para la escuela o el trabajo. Haga clic en **Comenzar** para iniciar la inscripción. Obtenga información sobre [lo que la organización puede ver](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md) cuando se inscribe un dispositivo.
+10. La aplicación Portal de empresa confirma la información de la cuenta y muestra los estados de **Inscripción de dispositivos** y **Cumplimiento de dispositivos**. Con triángulos de color amarillo se resaltan las acciones que debe emprender para proteger su dispositivo macOS para la escuela o el trabajo. Haga clic en **Comenzar** para iniciar la inscripción. 
 
-11. Es posible que se le solicite proporcionar la información de inicio de sesión del equipo. Puede tardar unos minutos en inscribir el dispositivo en la administración. Durante este tiempo, puede realizar otras acciones en el dispositivo. Una vez haya completado la configuración de acceso de la empresa, recibirá un mensaje para informarle de que ya ha terminado.  
+11. Si se le pide, escriba la información de inicio de sesión del equipo.  
+
+Puede que tarde unos minutos en inscribir el dispositivo en la administración. Durante este tiempo, puede realizar otras acciones en el dispositivo. Una vez haya completado la configuración de acceso de la empresa, recibirá un mensaje para informarle de que ya ha terminado.  
+
+## <a name="unverified-profiles"></a>Perfiles sin comprobar
+Cuando se consultan los perfiles de administración de dispositivos móviles (MDM) instalados para el dispositivo macOS, algunos perfiles podrían mostrar un estado **Sin comprobar**. Mientras el **Perfil de administración** muestre un estado **Comprobado**, no tiene por qué preocuparse.  
+
+El perfil de administración es lo que define la conexión del canal de MDM. Mientras se compruebe el perfil de administración, cualquier otro perfil entregado a la máquina a través de ese canal, hereda las características de seguridad del perfil de administración.
+
+Además, como los otros perfiles no necesitan comprobaciones individuales, se generan y se entregan más rápidamente a los dispositivos. 
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el equipo de soporte técnico de su empresa. Puede encontrar su información de contacto en el [sitio web del Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

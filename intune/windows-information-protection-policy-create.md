@@ -3,10 +3,10 @@ title: Creación e implementación de una directiva de protección de aplicacion
 titlesuffix: Microsoft Intune
 description: Creación e implementación de una directiva de protección de aplicaciones de Windows Information Protection (WIP) con Microsoft Intune
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 05/04/2018
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 425dce514d9cf0288a5e84ef5fa89790e6cee8be
-ms.sourcegitcommit: 2d1e89fa5fa721e79648e41fde147a035e7b047d
+ms.openlocfilehash: c1d530059d7c5b5f759516e86d4ee3dbf8512aa5
+ms.sourcegitcommit: 28262384ec94e43970cc7a33e5d9063972bdf468
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43347314"
+ms.lasthandoff: 10/04/2018
+ms.locfileid: "48799632"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Creación e implementación de una directiva de protección de aplicaciones de Windows Information Protection (WIP) con Intune
 
@@ -46,19 +46,27 @@ Antes de agregar una directiva de trabajo en curso, debe tener claros algunos co
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-Debe configurar el proveedor de MAM para poder crear una directiva de protección de la aplicación de WIP. Obtenga más información sobre [cómo configurar el proveedor de MAM con Intune](app-protection-policies-configure-windows-10.md).
+Debe configurar el proveedor de MAM para poder crear una directiva de protección de la aplicación de WIP. Obtenga más información sobre [cómo configurar el proveedor de MAM con Intune](app-protection-policies-configure-windows-10.md).  
+
+> [!IMPORTANT]
+> WIP no admite varias identidades, solo puede existir una identidad administrada al mismo tiempo.
 
 Además, necesita la siguiente licencia y actualización:
 
 -   Licencia de [Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium)
 -   [Windows Creators Update](https://blogs.windows.com/windowsexperience/2017/04/11/how-to-get-the-windows-10-creators-update/#o61bC2PdrHslHG5J.97)
 
-> [!IMPORTANT]
-> WIP no admite varias identidades, solo puede existir una identidad administrada al mismo tiempo.
+
+
+
 
 ## <a name="to-add-a-wip-app-protection-policy"></a>Para agregar una directiva de protección de aplicaciones de WIP
 
 Una vez configurado Intune en su organización, puede crear una directiva específica de WIP.
+
+> [!TIP]  
+> Si quiere saber más sobre cómo crear directivas de WIP para Intune, incluidos los valores disponibles y cómo configurarlos, vea [Crear una directiva Windows Information Protection (WIP) con MAM usando Azure Portal de Microsoft Intune](https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/create-wip-policy-using-mam-intune-azure) en la biblioteca de documentación de Seguridad de Windows. 
+
 
 1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
 2. Elija **Todos los servicios** > **Intune**.
@@ -92,7 +100,7 @@ Una vez configurado Intune en su organización, puede crear una directiva espec�
 4. Elija **Aplicaciones protegidas** en la hoja **Intune App Protection**. Se abre la hoja **Aplicaciones protegidas**, que muestra todas las aplicaciones que ya están incluidas en la lista para esta directiva de protección de la aplicación.
 5. Seleccione **Agregar aplicaciones**. La información **Agregar aplicaciones** muestra una lista filtrada de aplicaciones. La lista de la parte superior de la hoja le permite cambiar el filtro de la lista.
 6. En la lista, seleccione **Aplicaciones de la Tienda**.
-7. Especifique los valores de **Nombre**, **Editor**, **Nombre de producto** y **Acción**. Asegúrese de establecer el valor **Acción** en **Permitir** para que la aplicación tenga acceso a los datos corporativos.
+7. Especifique los valores para **Nombre**, **Editor**, **Nombre de producto** y **Acción**. Asegúrese de establecer el valor **Acción** en **Permitir** para que la aplicación tenga acceso a los datos corporativos.
 9. Haga clic en **Aceptar**. La hoja **Aplicaciones protegidas** se actualiza y muestra todas las aplicaciones seleccionadas.
 10. Haga clic en **Guardar**.
 
@@ -105,7 +113,7 @@ Una vez configurado Intune en su organización, puede crear una directiva espec�
 4. Elija **Aplicaciones protegidas** en la hoja **Intune App Protection**. Se abre la hoja **Aplicaciones protegidas**, que muestra todas las aplicaciones que ya están incluidas en la lista para esta directiva de protección de la aplicación.
 5. Seleccione **Agregar aplicaciones**. La información **Agregar aplicaciones** muestra una lista filtrada de aplicaciones. La lista de la parte superior de la hoja le permite cambiar el filtro de la lista.
 6. En la lista, seleccione **Aplicaciones de escritorio**.
-7. Introduzca los valores de **Nombre**, **Editor**, **Nombre de producto**, **Archivo**, **Versión mínima**, **Versión máxima** y **Acción**. Asegúrese de establecer el valor **Acción** en **Permitir** para que la aplicación tenga acceso a los datos corporativos.
+7. Escriba valores para **Nombre**, **Editor**, **Nombre de producto**, **Archivo**, **Versión mínima**, **Versión máxima** y **Acción**. Asegúrese de establecer el valor **Acción** en **Permitir** para que la aplicación tenga acceso a los datos corporativos.
 9. Haga clic en **Aceptar**. La hoja **Aplicaciones protegidas** se actualiza y muestra todas las aplicaciones seleccionadas.
 10. Haga clic en **Guardar**.
 
@@ -123,7 +131,7 @@ Al trabajar con aplicaciones que tengan WIP habilitado o que sean desconocidas p
 ### <a name="what-are-the-protection-modes"></a>¿Cuáles son los modos de protección?
 
 #### <a name="block"></a>Bloquear
-WIP busca prácticas de uso compartido de datos inapropiadas y no permite al usuario completar la acción. Esto puede incluir el uso compartido de información entre aplicaciones protegidas no corporativas y el uso compartido de datos corporativos entre otras personas y dispositivos no pertenecientes a su organización.
+WIP busca prácticas de uso compartido de datos inapropiadas y no permite al usuario completar la acción. Las acciones bloqueadas pueden incluir el uso compartido de información entre aplicaciones protegidas no corporativas y el uso compartido de datos corporativos entre otras personas y dispositivos no pertenecientes a su organización.
 
 #### <a name="allow-overrides"></a>Permitir invalidaciones
 WIP busca el uso compartido de datos inadecuado, avisando a los usuarios si hacen algo que se considera potencialmente no seguro. Sin embargo, este modo permite al usuario reemplazar la directiva y compartir los datos, registrando la acción en el registro de auditoría.
