@@ -31,12 +31,20 @@ items:
     href: quickstart-create-group.md
   - name: Crear una directiva
     href: quickstart-create-policy.md
+  - name: Establecer la longitud de la contraseña del dispositivo
+    href: quickstart-set-password-length-android.md
   - name: Configurar inscripción automática
     href: quickstart-setup-auto-enrollment.md
   - name: Crear y asignar un rol personalizado
     href: quickstart-create-custom-role.md
   - name: Crear un perfil de dispositivo de correo
     href: quickstart-email-profile.md
+- name: Tutoriales
+  items:
+  - name: Protección del correo electrónico en dispositivos administrados
+    href: tutorial-protect-email-on-enrolled-devices.md
+  - name: Uso de Autopilot para la inscripción de dispositivos Windows
+    href: tutorial-use-autopilot-enroll-devices.md
 - name: Guías de implementación de escenarios
   items:
   - name: Protección de Exchange Online
@@ -237,6 +245,8 @@ items:
       href: device-profile-android-teamviewer.md
     - name: Restablecimiento del PIN de Windows 10
       href: device-windows-pin-reset.md
+    - name: Instalación del conector de servicios de Exchange
+      href: exchange-service-connector-configure.md
     - name: Sincronización del dispositivo
       href: device-sync.md
     - name: Examen del inventario de dispositivos
@@ -442,6 +452,8 @@ items:
       items:
       - name: Android
         href: wi-fi-settings-android.md
+      - name: Quiosco de Android y Android Enterprise
+        href: wi-fi-settings-android-enterprise.md
       - name: iOS
         href: wi-fi-settings-ios.md
       - name: macOS
@@ -517,8 +529,6 @@ items:
       href: conditional-access-intune-common-ways-use.md
     - name: Instalación del conector local de Exchange
       href: exchange-connector-install.md
-    - name: Instalación del conector de servicios de Exchange
-      href: exchange-service-connector-configure.md
     - name: Creación y asignación de la directiva de acceso condicional
       href: conditional-access-exchange-create.md
     - name: Reasignación de directivas de acceso condicional desde el Portal de Intune clásico
@@ -823,9 +833,9 @@ items:
       href: intune-legacy-pc-client.md
   - name: Glosario
     href: intune-glossary.md
-ms.openlocfilehash: a2820903d6a3609df50290af18843200ef076158
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: ad9fe7c9c344cbbd244515cb9c2025b46e74eddd
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828064"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49643083"
