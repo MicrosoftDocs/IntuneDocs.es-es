@@ -14,12 +14,12 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: 5cb90b7f1dc72a67f48ba40db8a6ab4ffe598243
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: f807bd479ddbbc4ca6e83072c352bb8bd60cf5a9
+ms.sourcegitcommit: 3d44c06045fa986fc9b9eb43b667caf8928dbaf0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425043"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50225427"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introducción al SDK para aplicaciones de Microsoft Intune
 
@@ -140,7 +140,7 @@ Número de compilación|CFBundleVersion|PackageVersionCode |Este número se usa 
 
 - **CFBundleShortVersionString**  
     Especifica el número de versión de lanzamiento del conjunto. Este número identifica una versión publicada de la aplicación y lo utilizan los usuarios finales para hacer referencia a ella.
-  - **CFBundleVersion**  
+- **CFBundleVersion**  
     Se trata de la versión de compilación del conjunto que identifica una iteración de dicho conjunto. El número permite identificar una versión o un conjunto sin publicar y se usa para fines de detección de la aplicación.
 
 #### <a name="android"></a>Android
