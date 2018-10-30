@@ -4,6 +4,7 @@ description: Cree una directiva de configuración para establecer la configuraci
 keywords: ''
 author: Erikre
 ms.author: erikre
+ms.reviewer: smithre4
 manager: dougeby
 ms.date: 10/04/2018
 ms.topic: article
@@ -12,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 7fc9f34bbd3d14ac4291582247b1e45169c2cccc
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 24ed1a895dd3e4cad6111b40913b43fa9c6a3cec
+ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828938"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "48903529"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Opciones de configuración de Microsoft Outlook 
 
@@ -29,27 +30,15 @@ Para crear una directiva de configuración de aplicaciones para dispositivos iOS
 
 Al agregar una directiva de configuración de Intune, puede establecer una configuración específica para configurar Microsoft Outlook. En el panel **Configuración** puede establecer la configuración de la cuenta de correo electrónico.
 
-### <a name="email-account-settings"></a>Configuración de la cuenta de correo electrónico
+### <a name="basic-authentication-email-account-settings"></a>Configuración de la cuenta de correo electrónico de autenticación básica
+Outlook para iOS y Android ofrece a los administradores de Exchange la posibilidad de "insertar" configuraciones de cuenta en sus usuarios locales que usan autenticación básica con el protocolo ActiveSync. Para más información, consulte [Programa de instalación de cuenta en Outlook para iOS y Android mediante la autenticación básica](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/account-setup). Para habilitar la configuración del programa de instalación de la cuenta, puede configurar las siguientes opciones:
 
-Las siguientes opciones de configuración son específicas de Microsoft Outlook.
-
-- **Servidor de correo electrónico**: indique el nombre de host del servidor Exchange.
+- **Servidor de correo electrónico**: escriba el nombre de host del servidor de Exchange local (por ejemplo, mail.contoso.com).
 - **Nombre de la cuenta de correo electrónico**: indique el nombre para mostrar en la cuenta de correo electrónico. Este nombre se muestra en los dispositivos de los usuarios.
-- **Atributo de nombre de usuario de AAD**: este nombre es el atributo que Intune obtiene de Azure Active Directory (AAD). Intune genera dinámicamente el nombre de usuario que usa este perfil. Las opciones son:
+- **Atributo de nombre de usuario de AAD**: este nombre es el atributo que Intune obtiene de Azure Active Directory (Azure AD). Intune genera dinámicamente el nombre de usuario que usa este perfil. Existen varias opciones:
   - **Nombre principal de usuario**: obtiene el nombre, como `user1` o `user1@contoso.com`.
   - **Dirección SMTP principal**: obtiene el nombre en formato de dirección de correo electrónico, como `user1@contoso.com`.
-  - **Nombre de la cuenta sAM**: requiere el dominio, como `domain\user1`.
-
-    Indique también:  
-    - **Origen del nombre de dominio de usuario**: elija **AAD** (Azure Active Directory) o **Personalizar**.
-
-      Si quiere obtener los atributos de **AAD**, escriba:
-      - **Atributo de nombre de dominio de usuario de AAD**: elija si quiere obtener el atributo **Nombre de dominio completo** o **Nombre de NetBIOS** del usuario
-
-      Si quiere usar los atributos **Personalizados**, escriba:
-      - **Nombre de dominio personalizado que quiere usar**: escriba un valor que Intune use como nombre de dominio, como `contoso.com` o `contoso`.
-
-- **Atributo Dirección de correo electrónico de AAD**: elija cómo se genera la dirección de correo electrónico para el usuario. Seleccione **Nombre principal de usuario** (`user1@contoso.com` o `user1`) para usar el nombre principal completo como dirección de correo electrónico o **Dirección SMTP principal** (`user1@contoso.com`) para usar la dirección SMTP principal para iniciar sesión en Exchange.
+- **Atributo Dirección de correo electrónico de AAD**: elija cómo se genera la dirección de correo electrónico para el usuario. Seleccione **Nombre principal de usuario** (`user1@contoso.com` o `user1`) para usar el nombre principal completo como dirección de correo electrónico o **Dirección SMTP principal** (`user1@contoso.com`) para usar la dirección SMTP principal para iniciar sesión en Exchange. La recomendación es seleccionar **Dirección SMTP principal**.
 - **Dominio de la cuenta** (opcional): el dominio de la cuenta.
 
 ## <a name="next-steps"></a>Pasos siguientes

@@ -14,12 +14,12 @@ ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: ''
-ms.openlocfilehash: b707fcae4af332b13d10e343a84ace801c88c2fd
-ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
+ms.openlocfilehash: 4b7a759b574b44a07499597e89627f70b99e5496
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866429"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49643100"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guía para desarrolladores acerca del SDK de aplicaciones de Microsoft Intune para iOS
 
@@ -144,7 +144,9 @@ Para habilitar el SDK para aplicaciones de Intune, siga estos pasos:
 
 5. Incluya cada protocolo que la aplicación pasa a `UIApplication canOpenURL` en la matriz `LSApplicationQueriesSchemes` del archivo Info.plist de la aplicación. Asegúrese de guardar los cambios antes de continuar con el paso siguiente.
 
-6. Use la herramienta IntuneMAMConfigurator que se incluye en el [repositorio de SDK](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios) para finalizar la configuración de Info.plist de la aplicación. La herramienta tiene 3 parámetros:
+6. Si su aplicación no usa aún FaceID, asegúrese de que la [clave NSFaceIDUsageDescription Info.plist](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/uid/TP40009251-SW75) esté configurada con un mensaje predeterminado. Este es un requisito para que iOS pueda informar al usuario de cómo la aplicación pretende usar FaceID. La configuración de una directiva de protección de la aplicación de Intune permite usar FaceID como método para acceder a la aplicación cuando este lo ha configurado el administrador de TI.
+
+7. Use la herramienta IntuneMAMConfigurator que se incluye en el [repositorio de SDK](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios) para finalizar la configuración de Info.plist de la aplicación. La herramienta tiene tres parámetros:
 
    |Propiedad|Cómo usarla|
    |---------------|--------------------------------|
@@ -153,9 +155,6 @@ Para habilitar el SDK para aplicaciones de Intune, siga estos pasos:
    |- o |  (Opcional) `<Path to the output plist>`. |
 
 Si el parámetro "-o" no se especifica, el archivo de entrada se modificará en contexto. La herramienta es idempotente y debe volver a ejecutarse cada vez que se realicen cambios en Info.plist o los derechos de la aplicación. También debe descargar y ejecutar la versión más reciente de la herramienta al actualizar el SDK de Intune, en caso de que los requisitos de configuración de Info.plist hayan cambiado en la versión más reciente.
-
-> [!NOTE]
-> Si su aplicación todavía no usa FaceID, asegúrese de que la clave info.plist de `NSFaceIDUsageDescription` esté configurada con un mensaje predeterminado. Este es un requisito para que iOS pueda informar al usuario de cómo la aplicación pretende usar FaceID. La configuración de una directiva de protección de la aplicación de Intune permite usar FaceID como método para acceder a la aplicación cuando este lo ha configurado el administrador de TI.
 
 ## <a name="configure-azure-active-directory-authentication-library-adal"></a>Configurar Azure Active Directory Authentication Library (ADAL)
 
@@ -219,29 +218,29 @@ Es posible que se hayan tratado algunos de estos valores en las secciones anteri
 
 Setting  | Tipo  | Definición | ¿Necesario?
 --       |  --   |   --       |  --
-ADALClientId  | Cadena  | Identificador de cliente de Azure AD de la aplicación. | Se requiere si la aplicación usa ADAL. |
-ADALAuthority | Cadena | Entidad de Azure AD de la aplicación en uso. Debe usar su propio entorno donde se hayan configurado cuentas de AAD. | Se requiere si la aplicación usa ADAL. Si este valor está ausente, se usa un valor predeterminado de Intune.|
-ADALRedirectUri  | Cadena  | URI de redireccionamiento de Azure AD de la aplicación. | ADALRedirectUri o ADALRedirectScheme es necesario si la aplicación usa ADAL.  |
-ADALRedirectScheme  | Cadena  | Esquema de redireccionamiento de Azure AD de la aplicación. Puede usarse en lugar de ADALRedirectUri si el URI de redireccionamiento de la aplicación está en el formato `scheme://bundle_id`. | Se requiere ADALRedirectUri o ADALRedirectScheme si la aplicación usa ADAL. |
-ADALLogOverrideDisabled | Booleano  | Especifica si el SDK enrutará todos los registros de ADAL (incluidas las llamadas de ADAL desde la aplicación de haberlas) a su propio archivo de registro. El valor predeterminado es NO. Establezca la opción en SÍ si la aplicación establecerá su propia devolución de llamada de registros ADAL. | Opcional. |
-ADALCacheKeychainGroupOverride | Cadena  | Especifica el grupo de cadena de claves que se usará para la caché de ADAL en lugar de "com.microsoft.adalcache". Tenga en cuenta que no contiene el prefijo de identificador de la aplicación. Ese se anexará a la cadena proporcionada en tiempo de ejecución. | Opcional. |
+ADALClientId  | String  | Identificador de cliente de Azure AD de la aplicación. | Se requiere si la aplicación usa ADAL. |
+ADALAuthority | String | Entidad de Azure AD de la aplicación en uso. Debe usar su propio entorno donde se hayan configurado cuentas de AAD. | Se requiere si la aplicación usa ADAL. Si este valor está ausente, se usa un valor predeterminado de Intune.|
+ADALRedirectUri  | String  | URI de redireccionamiento de Azure AD de la aplicación. | ADALRedirectUri o ADALRedirectScheme es necesario si la aplicación usa ADAL.  |
+ADALRedirectScheme  | String  | Esquema de redireccionamiento de Azure AD de la aplicación. Puede usarse en lugar de ADALRedirectUri si el URI de redireccionamiento de la aplicación está en el formato `scheme://bundle_id`. | Se requiere ADALRedirectUri o ADALRedirectScheme si la aplicación usa ADAL. |
+ADALLogOverrideDisabled | Boolean  | Especifica si el SDK enrutará todos los registros de ADAL (incluidas las llamadas de ADAL desde la aplicación de haberlas) a su propio archivo de registro. El valor predeterminado es NO. Establezca la opción en SÍ si la aplicación establecerá su propia devolución de llamada de registros ADAL. | Opcional. |
+ADALCacheKeychainGroupOverride | String  | Especifica el grupo de cadena de claves que se usará para la caché de ADAL en lugar de "com.microsoft.adalcache". Tenga en cuenta que no contiene el prefijo de identificador de la aplicación. Ese se anexará a la cadena proporcionada en tiempo de ejecución. | Opcional. |
 AppGroupIdentifiers | Matriz de cadenas  | Matriz de grupos de aplicación de la sección de grupos de com.apple.security.application-groups de derechos de la aplicación. | Se requiere si la aplicación usa grupos de aplicaciones. |
-ContainingAppBundleId | Cadena | Especifica el id. del lote de la aplicación contenedora de la extensión. | Se requiere para las extensiones de iOS. |
-DebugSettingsEnabled| Booleano | Si se establece en Sí, se pueden aplicar directivas de prueba en el lote de configuración. Las aplicaciones *no* se deben proporcionar con esta opción habilitada. | Opcional. El valor predeterminado es No.|
-MainNibFile <br> MainNibFile~ipad  | Cadena  | Esta configuración debe contener el nombre de archivo nib principal de la aplicación.  | Obligatorio si la aplicación define MainNibFile en Info.plist. |
-MainStoryboardFile <br> MainStoryboardFile~ipad  | Cadena  | Esta configuración debe contener el nombre de archivo de guion gráfico principal de la aplicación. | Se requiere si la aplicación define UIMainStoryboardFile en Info.plist. |
-MAMPolicyRequired| Booleano| Especifica si el inicio de la aplicación se va a bloquear en caso de que no tenga una directiva de Intune APP. El valor predeterminado es NO. <br><br> Nota: Las aplicaciones no se pueden enviar a la Tienda de aplicaciones con MAMPolicyRequired establecido en SÍ. | Opcional. El valor predeterminado es No.|
-MAMPolicyWarnAbsent | Booleano| Especifica si la aplicación va a avisar al usuario durante el inicio en caso de que no tenga una directiva de Intune APP. <br><br> Nota: Los usuarios podrán seguir usando la aplicación sin directiva después de descartar la advertencia. | Opcional. El valor predeterminado es No. |
-MultiIdentity | Booleano| Especifica si la aplicación es compatible con varias identidades. | Opcional. El valor predeterminado es No. |
-SplashIconFile <br> SplashIconFile~ipad | Cadena  | Especifica el archivo del icono de la pantalla de presentación (inicio) de Intune. | Opcional. |
+ContainingAppBundleId | String | Especifica el id. del lote de la aplicación contenedora de la extensión. | Se requiere para las extensiones de iOS. |
+DebugSettingsEnabled| Boolean | Si se establece en Sí, se pueden aplicar directivas de prueba en el lote de configuración. Las aplicaciones *no* se deben proporcionar con esta opción habilitada. | Opcional. El valor predeterminado es No.|
+MainNibFile <br> MainNibFile~ipad  | String  | Esta configuración debe contener el nombre de archivo nib principal de la aplicación.  | Obligatorio si la aplicación define MainNibFile en Info.plist. |
+MainStoryboardFile <br> MainStoryboardFile~ipad  | String  | Esta configuración debe contener el nombre de archivo de guion gráfico principal de la aplicación. | Se requiere si la aplicación define UIMainStoryboardFile en Info.plist. |
+MAMPolicyRequired| Boolean| Especifica si el inicio de la aplicación se va a bloquear en caso de que no tenga una directiva de Intune APP. El valor predeterminado es NO. <br><br> Nota: Las aplicaciones no se pueden enviar a la Tienda de aplicaciones con MAMPolicyRequired establecido en SÍ. | Opcional. El valor predeterminado es No.|
+MAMPolicyWarnAbsent | Boolean| Especifica si la aplicación va a avisar al usuario durante el inicio en caso de que no tenga una directiva de Intune APP. <br><br> Nota: Los usuarios podrán seguir usando la aplicación sin directiva después de descartar la advertencia. | Opcional. El valor predeterminado es No. |
+MultiIdentity | Boolean| Especifica si la aplicación es compatible con varias identidades. | Opcional. El valor predeterminado es No. |
+SplashIconFile <br> SplashIconFile~ipad | String  | Especifica el archivo del icono de la pantalla de presentación (inicio) de Intune. | Opcional. |
 SplashDuration | Número | Cantidad mínima de tiempo en segundos en que se mostrará la pantalla de presentación de Intune al iniciar la aplicación. El valor predeterminado es 1,5. | Opcional. |
-BackgroundColor| Cadena| Especifica el color de fondo para los paneles de PIN e inicio. Acepta una cadena RGB hexadecimal con el formato #XXXXXX, donde las X pueden ir de 0 a 9 o de A a F. Se puede omitir la almohadilla.   | Opcional. El valor predeterminado es gris claro. |
-ForegroundColor| Cadena| Especifica el color de primer plano para los paneles de PIN e inicio, como el color del texto. Acepta una cadena RGB hexadecimal en formato #XXXXXX, donde X puede estar comprendido entre 0 y 9 o A y F. Se puede omitir la almohadilla.  | Opcional. El valor predeterminado es negro. |
-AccentColor | Cadena| Especifica el color de énfasis de la pantalla de PIN, como el color del texto de botón y el color de resaltado del cuadro. Acepta una cadena RGB hexadecimal con el formato #XXXXXX, donde las X pueden ir de 0 a 9 o de A a F. Se puede omitir la almohadilla.| Opcional. El valor predeterminado es el azul del sistema. |
+BackgroundColor| String| Especifica el color de fondo para los paneles de PIN e inicio. Acepta una cadena RGB hexadecimal con el formato #XXXXXX, donde las X pueden ir de 0 a 9 o de A a F. Se puede omitir la almohadilla.   | Opcional. El valor predeterminado es gris claro. |
+ForegroundColor| String| Especifica el color de primer plano para los paneles de PIN e inicio, como el color del texto. Acepta una cadena RGB hexadecimal en formato #XXXXXX, donde X puede estar comprendido entre 0 y 9 o A y F. Se puede omitir la almohadilla.  | Opcional. El valor predeterminado es negro. |
+AccentColor | String| Especifica el color de énfasis de la pantalla de PIN, como el color del texto de botón y el color de resaltado del cuadro. Acepta una cadena RGB hexadecimal con el formato #XXXXXX, donde las X pueden ir de 0 a 9 o de A a F. Se puede omitir la almohadilla.| Opcional. El valor predeterminado es el azul del sistema. |
 MAMTelemetryDisabled| Boolean| Especifica si el SDK no enviará los datos de telemetría a su back-end.| Opcional. El valor predeterminado es No. |
-MAMTelemetryUsePPE | Booleano | Especifica si el SDK de MAM va a enviar datos al back-end de telemetría de PPE. Úselo cuando pruebe las aplicaciones con la directiva de Intune para que los datos de telemetría de prueba no se mezclen con los datos del cliente. | Opcional. El valor predeterminado es No. |
-MaxFileProtectionLevel | Cadena | Opcional. Permite que la aplicación especifique el `NSFileProtectionType` máximo que puede admitir. Este valor invalida la directiva enviada por el servicio si el nivel es mayor que el que la aplicación puede admitir. Valores posibles: `NSFileProtectionComplete`, `NSFileProtectionCompleteUnlessOpen`, `NSFileProtectionCompleteUntilFirstUserAuthentication`, `NSFileProtectionNone`.|
-OpenInActionExtension | Booleano | Se establece en SÍ para las extensiones de acción Abrir en. Vea la sección Uso compartido de datos a través de UIActivityViewController para obtener más información. |
+MAMTelemetryUsePPE | Boolean | Especifica si el SDK de MAM va a enviar datos al back-end de telemetría de PPE. Úselo cuando pruebe las aplicaciones con la directiva de Intune para que los datos de telemetría de prueba no se mezclen con los datos del cliente. | Opcional. El valor predeterminado es No. |
+MaxFileProtectionLevel | String | Opcional. Permite que la aplicación especifique el `NSFileProtectionType` máximo que puede admitir. Este valor invalida la directiva enviada por el servicio si el nivel es mayor que el que la aplicación puede admitir. Valores posibles: `NSFileProtectionComplete`, `NSFileProtectionCompleteUnlessOpen`, `NSFileProtectionCompleteUntilFirstUserAuthentication`, `NSFileProtectionNone`.|
+OpenInActionExtension | Boolean | Se establece en SÍ para las extensiones de acción Abrir en. Vea la sección Uso compartido de datos a través de UIActivityViewController para obtener más información. |
 WebViewHandledURLSchemes | Matriz de cadenas | Especifica los esquemas de dirección URL que controla WebView de la aplicación. | Se requiere si la aplicación usa WebView para controlar direcciones URL a través de vínculos o JavaScript. |
 
 ## <a name="receive-app-protection-policy"></a>Recibir la directiva de protección de aplicaciones
@@ -303,8 +302,8 @@ Si quiere que el SDK de Intune controle toda la autenticación mediante ADAL y l
 
 Setting  | Tipo  | Definición |
 --       |  --   |   --       |  
-AutoEnrollOnLaunch| Booleano| Especifica si la aplicación debe intentar inscribir automáticamente al ejecutarse, o en caso de que se haya detectado una identidad administrada existente que aún no lo haya hecho. El valor predeterminado es NO. <br><br> Nota: Si no se encuentra ninguna identidad administrada, o bien si no hay ningún token válido disponible en la caché de ADAL para la identidad, el intento de inscripción devolverá un error en modo silencioso sin solicitar las credenciales, a menos que en la aplicación también se establezca MAMPolicyRequired en SÍ. |
-MAMPolicyRequired| Booleano| Especifica si se bloqueará el inicio de la aplicación en caso de que no tenga una directiva de protección de aplicaciones de Intune. El valor predeterminado es NO. <br><br> Nota: Las aplicaciones no se pueden enviar a la Tienda de aplicaciones con MAMPolicyRequired establecido en SÍ. Al establecer MAMPolicyRequired en SÍ, AutoEnrollOnLaunch también debe establecerse en SÍ. |
+AutoEnrollOnLaunch| Boolean| Especifica si la aplicación debe intentar inscribir automáticamente al ejecutarse, o en caso de que se haya detectado una identidad administrada existente que aún no lo haya hecho. El valor predeterminado es NO. <br><br> Nota: Si no se encuentra ninguna identidad administrada, o bien si no hay ningún token válido disponible en la caché de ADAL para la identidad, el intento de inscripción devolverá un error en modo silencioso sin solicitar las credenciales, a menos que en la aplicación también se establezca MAMPolicyRequired en SÍ. |
+MAMPolicyRequired| Boolean| Especifica si se bloqueará el inicio de la aplicación en caso de que no tenga una directiva de protección de aplicaciones de Intune. El valor predeterminado es NO. <br><br> Nota: Las aplicaciones no se pueden enviar a la Tienda de aplicaciones con MAMPolicyRequired establecido en SÍ. Al establecer MAMPolicyRequired en SÍ, AutoEnrollOnLaunch también debe establecerse en SÍ. |
 
 Si elige esta opción para la aplicación, no es necesario que controle el reinicio de la aplicación después de la inscripción.
 

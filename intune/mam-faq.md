@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/12/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 635853cb744395e6ae519985eaed62b53e88578e
-ms.sourcegitcommit: 38afcff149f9c86e92e5f1eccaa927859c395926
+ms.openlocfilehash: f27baf7d40a6eb4d89769eeab7a6e035e3468825
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307430"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49643032"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Preguntas más frecuentes sobre MAM y la protección de la aplicación
 
@@ -169,7 +169,11 @@ Las directivas de protección de aplicaciones de Intune para el acceso se aplica
 Cuando se trabaja con diferentes tipos de configuraciones, un requisito de versión de la aplicación tendría prioridad, seguido por el requisito de versión de sistema operativo de Android y el requisito de versión de revisión de Android. Después, se comprueban en el mismo orden las advertencias para todos los tipos de configuración.
 
 ## <a name="app-experience-on-ios"></a>Experiencia de aplicación en iOS
-
+**¿Qué ocurre si se agrega o quita una huella digital o una cara en el dispositivo?**
+Las directivas de protección de aplicaciones de Intune permiten limitar el acceso a solo los usuarios con licencia de Intune. Una de las maneras de controlar el acceso a la aplicación es exigir Touch ID o Face ID de Apple en dispositivos admitidos. Intune implementa un comportamiento donde si hay algún cambio en la base de datos biométrica del dispositivo, Intune solicita al usuario un PIN cuando se alcanza el siguiente valor de tiempo de espera de inactividad. Los cambios realizados en los datos biométricos incluyen la incorporación o eliminación de una cara o una huella digital. Si el usuario de Intune no tiene establecido un PIN, se le lleva por los pasos para configurar uno.
+ 
+La finalidad de esto es seguir manteniendo los datos de la organización dentro de la aplicación seguros y protegidos en el nivel de aplicación. Esta característica solo está disponible para iOS y requiere la participación de aplicaciones que integran Intune APP SDK para iOS, versión 9.0.1 o posterior. La integración del SDK es necesaria para que se pueda aplicar el comportamiento en las aplicaciones de destino. Esta integración se produce de manera gradual y depende de los equipos de la aplicación específica. Algunas de las aplicaciones que participan son WXP, Outlook, Managed Browser y Yammer. 
+  
 **Puedo usar la extensión de recursos compartidos de iOS para abrir los datos profesionales o educativos en aplicaciones no administradas, incluso con la directiva de transferencia de datos establecida en "Solo aplicaciones administradas" o "Ninguna aplicación". ¿No es esto una pérdida de datos?**<br></br>
 La directiva de protección de aplicaciones de Intune no puede controlar la extensión de recursos compartidos de iOS sin administrar el dispositivo. Por lo tanto, Intune _**cifra los datos "corporativos" antes de compartirlos fuera de la aplicación**_. Puede validar esto intentando abrir el archivo "corporativo" fuera de la aplicación administrada. El archivo debe estar cifrado y no debe poder abrirse fuera de la aplicación administrada.
 

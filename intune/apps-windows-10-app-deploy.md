@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,21 +15,23 @@ ms.assetid: abebfb5e-054b-435a-903d-d1c31767bcf2
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 61e2ec9def6ecba265521cf801322d592dd4dac9
-ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
+ms.openlocfilehash: 61bb874fd914c69669197110ee5901ccfbc3f594
+ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866361"
+ms.lasthandoff: 10/10/2018
+ms.locfileid: "49075617"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Implementación de aplicaciones Windows 10 con Microsoft Intune 
 
 En la actualidad, Microsoft Intune admite una variedad de tipos de aplicaciones y escenarios de implementación en dispositivos Windows 10. Después de agregar una aplicación a Intune, puede asignarla a usuarios y dispositivos. En la información siguiente se proporcionan más detalles relacionados con los escenarios de Windows 10 admitidos. Además, en la información siguiente se proporcionan detalles clave para tener en cuenta al implementar aplicaciones en Windows. 
 
-Las aplicaciones de línea de negocio (LOB) y las de Microsoft Store para Empresas son los tipos de aplicaciones que se admiten en los dispositivos Windows 10. Las extensiones de archivo de las aplicaciones Windows incluyen **.msi**, **.appx**, **.appxbundle**, **.msix** y **.msixbundle**.  
+Las aplicaciones de línea de negocio (LOB) y las de Microsoft Store para Empresas son los tipos de aplicaciones que se admiten en los dispositivos Windows 10. Las extensiones de archivo de las aplicaciones Windows incluyen **.msi**, **.appx** y **.appxbundle**.  
 
 > [!Note]
-> La actualización mínima de Windows 10 necesaria para implementar aplicaciones en el contexto de dispositivo es [23 de mayo de 2018: KB4100403 (compilación del SO 17134.81)](https://support.microsoft.com/en-us/help/4100403/windows-10-update-kb4100403).
+> Las actualizaciones de Windows 10 mínimas necesarias para implementar aplicaciones modernas son los siguientes:
+> - Para Windows 10 1803, [23 de mayo de 2018: KB4100403 (compilación del SO 17134.81)](https://support.microsoft.com/help/4100403/windows-10-update-kb4100403).
+> - Para Windows 10 1709, [21 de junio de 2018: KB4284822 (compilación del SO 16299.522)](https://support.microsoft.com/help/4284822).
 
 ## <a name="windows-10-line-of-business-apps"></a>Aplicaciones de línea de negocio de Windows 10
 
@@ -44,8 +46,13 @@ Según el tipo de aplicación, se puede instalar en un dispositivo Windows 10 de
 
 - **Contexto de usuario**: cuando se implementa una aplicación en el contexto de usuario, la aplicación administrada se instalará para ese usuario en el dispositivo cuando inicie sesión en el dispositivo. Tenga en cuenta que la instalación de la aplicación no surtirá efecto hasta que el usuario inicie sesión en el dispositivo. 
     - Las aplicaciones de línea de negocio modernas y las de Microsoft Store para Empresas (en línea y sin conexión) se pueden implementar en el contexto de usuario y serán compatibles con las intenciones Requerido y Disponible.
+    - Las aplicaciones Win32 compiladas en **modo de usuario** o **modo dual** pueden implementarse en el contexto del usuario y admitir tanto intenciones **obligatorias** como **disponibles**. 
 - **Contexto de dispositivo**: cuando se implementa una aplicación en el contexto de dispositivo, la aplicación administrada se instalará directamente en el dispositivo de Intune.
     - Solo las aplicaciones de línea de negocio modernas y las de Microsoft Store para Empresas con licencia en línea se pueden implementar en el contexto de dispositivo y solo admitirán la intención Requerido.
+    - Las aplicaciones Win32 compiladas en **modo máquina** o **modo dual** pueden implementarse en el contexto del usuario y solo admitirán la intención **obligatoria**.
+
+> [!NOTE]
+> En las aplicaciones Win32 compiladas en **modo dual**, el administrador debe seleccionar si la aplicación funcionará en **modo de usuario** o **modo máquina** en todas las asignaciones asociadas con esa instancia. No se puede cambiar el contexto de implementación por asignación.  
 
 Cuando una aplicación se implementa en el contexto de dispositivo, solo se realizará correctamente la instalación cuando el destino sea un dispositivo que admite el contexto de dispositivo. Además, la implementación en el contexto de dispositivo admite las condiciones siguientes:
 - Si una aplicación se implementa en el contexto de dispositivo y está destinada a un usuario, se producirá un error en la instalación y se mostrarán el estado y el error siguientes en la consola de administración:

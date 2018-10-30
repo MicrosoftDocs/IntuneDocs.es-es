@@ -15,14 +15,14 @@ ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
 ms.reviewer: ilwu
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cb7eb4b3845b8b5f0eafed95fa081955b99f1af7
-ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
+ms.openlocfilehash: c3edbf3663d3226f806bf36af97b97cdf4d169c1
+ms.sourcegitcommit: ca33179b8bef98092eedcc22b0e709a862e31dce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863168"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49357094"
 ---
-# <a name="manage-internet-access-using-protected-browser-policies-with-microsoft-intune"></a>Administración del acceso a Internet mediante directivas de explorador protegido con Microsoft Intune  
+# <a name="manage-internet-access-using-an-microsoft-intune-policy-protected-browser"></a>Administración del acceso a Internet mediante un explorador protegido por directivas de Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -36,26 +36,37 @@ Mediante un explorador protegido por una directiva de Intune (Microsoft Edge o I
 
 ## <a name="getting-started"></a>Introducción
 
+Microsoft Edge e Intune Managed Browser son aplicaciones de explorador web que usted y sus usuarios finales pueden descargar desde las tiendas de aplicaciones públicas para usarlas en la organización. 
+
+Requisitos del sistema operativo para las directivas de explorador:
+- Android 4 y versiones posteriores
+- iOS 8.0 y versiones posteriores.
+
+Las versiones anteriores de iOS y Android podrán seguir usando Intune Managed Browser, pero no podrán instalar nuevas versiones de la aplicación y es posible que no puedan tener acceso a todas las funcionalidades de la aplicación. Le recomendamos que actualice la versión del sistema operativo de estos dispositivos a una que sea compatible.
+
+>[!NOTE]
+>Managed Browser no es compatible con el protocolo de cifrado de Capa de sockets seguros versión 3 (SSLv3).
+
+
+## <a name="application-protection-policies-for-protected-browsers"></a>Directivas de protección de aplicaciones para exploradores protegidos
+
+Como Edge y Managed Browser cuentan con integración con el SDK de Intune, también puede aplicarles directivas de protección de aplicaciones, lo que incluye:
+- Controlar el uso de cortar, copiar y pegar
+- Evitar las capturas de pantalla
+- Garantizar que los vínculos corporativas se abren solo en aplicaciones y exploradores administrados
+
+Para obtener detalles, vea [¿Qué son las directivas de protección de aplicaciones?](app-protection-policy.md)
+
 Puede aplicar esta configuración a:
 
 - Dispositivos móviles inscritos con Intune
 - Inscritos con otro producto de MDM
 - Dispositivos no administrados
 
-Si los usuarios instalan Managed Browser desde la tienda de aplicaciones y no lo administra Intune, se puede utilizar como un explorador web básico, con compatibilidad para el inicio de sesión único a través del sitio de Microsoft MyApps. A los usuarios se les remite directamente al sitio de MyApps, donde pueden ver todas las aplicaciones SaaS aprovisionadas.
+>[!NOTE]
+>Si los usuarios instalan Managed Browser desde la tienda de aplicaciones y no lo administra Intune, se puede utilizar como un explorador web básico, con compatibilidad para el inicio de sesión único a través del sitio de Microsoft MyApps. A los usuarios se les remite directamente al sitio de MyApps, donde pueden ver todas las aplicaciones SaaS aprovisionadas.
 Si Intune no administra Managed Browser o Edge, no puede acceder a los datos de otras aplicaciones administradas por Intune. 
 
-Managed Browser no es compatible con el protocolo de cifrado de Capa de sockets seguros versión 3 (SSLv3).
-
-Puede crear directivas de explorador protegido para los siguientes tipos de dispositivo:
-
--   Dispositivos que ejecutan Android 4 y versiones posteriores
-
--   Dispositivos que ejecutan iOS 10.0 y versiones posteriores
-
->[!IMPORTANT]
->Las versiones anteriores de iOS y Android podrán seguir usando Intune Managed Browser, pero no podrán instalar nuevas versiones de la aplicación y es posible que no puedan tener acceso a todas las funcionalidades de la aplicación. Le recomendamos que actualice la versión del sistema operativo de estos dispositivos a una que sea compatible.
-    
 
 ## <a name="conditional-access-for-protected-browsers"></a>Acceso condicional para exploradores protegidos
 
@@ -82,7 +93,7 @@ Para limitar las aplicaciones web conectadas a Azure AD al uso de Intune Managed
 8. En la sección **Asignaciones**, seleccione **Usuarios y grupos** y, después, elija los usuarios o grupos a los que quiera asignar esta directiva. 
 
     > [!NOTE]
-    > Los usuarios también deben estar dentro del ámbito de destino de la directiva de Intune App Protection. Para obtener más información sobre cómo crear directivas de Intune App Protection, vea [¿Qué son las directivas de protección de aplicaciones?](app-protection-policy.md)
+    > A los usuarios también se les deben asignar directivas de Intune App Protection para recibir directivas de configuración de aplicaciones. Para obtener más información sobre cómo crear directivas de Intune App Protection, vea [¿Qué son las directivas de protección de aplicaciones?](app-protection-policy.md)
 
 9. En la sección **Asignaciones**, seleccione **Aplicaciones en la nube** para elegir las aplicaciones que se van a proteger con esta directiva.
 
@@ -101,6 +112,9 @@ Para el inicio de sesión único hace falta que el dispositivo esté registrado 
 
 ## <a name="create-a-protected-browser-app-configuration"></a>Establecimiento de una configuración de aplicaciones de explorador protegido
 
+>[!IMPORTANT]
+>Para que se apliquen las configuraciones de aplicaciones, el explorador protegido del usuario u otra aplicación del dispositivo ya deben estar administrados mediante [directivas de aplicación de Intune]( app-protection-policy.md)
+
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
 2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3.  En la hoja **Aplicaciones cliente** de la lista Administrar, elija **Directivas de configuración de aplicaciones**.
@@ -114,8 +128,6 @@ Para el inicio de sesión único hace falta que el dispositivo esté registrado 
 11. En la hoja **Agregar directiva de configuración**, elija **Agregar**.
 12. Se crea la nueva configuración y se muestra en la hoja **Configuración de aplicación**.
 
->[!IMPORTANT]
->Actualmente, Managed Browser se basa en la inscripción automática. Para que las configuraciones de aplicación se apliquen, ya debe haber otra aplicación administrada mediante directivas de protección de aplicaciones de Intune en el dispositivo.
 
 ## <a name="assign-the-configuration-settings-you-created"></a>Asignación de las opciones de configuración creadas
 
@@ -275,18 +287,7 @@ Para obtener una lista de las opciones de configuración almacenadas en los regi
 ### <a name="turn-off-usage-data"></a>Desactivar los datos de uso
 Microsoft recopila automáticamente datos anónimos sobre el rendimiento y el uso de Managed Browser para mejorar sus productos y servicios. Los usuarios pueden usar en sus dispositivos la configuración de **Datos de uso** para desactivar la recopilación de datos. No tiene ningún control sobre la recopilación de estos datos.
 
-
 -   En dispositivos iOS, no se pueden abrir los sitios web que visitan los usuarios y que tienen un certificado expirado o que no es de confianza.
--   Managed Browser no usa la configuración que realizan los usuarios para el explorador integrado en sus dispositivos. Managed Browser no puede acceder a esta configuración.
-
--   Si configura las opciones **Requerir PIN sencillo para el acceso** o **Requerir credenciales corporativas para el acceso** en una directiva de protección de aplicaciones asociada a Managed Browser, cuando un usuario seleccione el vínculo de ayuda en la página de autenticación, podrá ir a cualquier sitio de Internet independientemente de si se ha agregado a una lista de bloqueados de la directiva.
-
--   Managed Browser puede bloquear el acceso a sitios solo cuando se accede a estos directamente. No bloquea el acceso cuando se usan servicios intermedios (por ejemplo, un servicio de traducción) para acceder al sitio.
-
--   Para permitir la autenticación y acceder a la documentación de Intune, **&#42;.microsoft.com** está exento de la configuración de permitidos o bloqueados. Siempre está permitida.
-
-### <a name="turn-off-usage-data"></a>Desactivar los datos de uso
-Microsoft recopila automáticamente datos anónimos sobre el rendimiento y el uso de Managed Browser para mejorar sus productos y servicios. Los usuarios pueden usar en sus dispositivos la configuración de **Datos de uso** para desactivar la recopilación de datos. No tiene ningún control sobre la recopilación de estos datos.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

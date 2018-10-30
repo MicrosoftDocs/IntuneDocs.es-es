@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2defc433ef39562750c4579f302a9c5367c6464a
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 01de402a48362f04680c569c40a812b6a4b83cc6
+ms.sourcegitcommit: 38afcff149f9c86e92e5f1eccaa927859c395926
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828251"
+ms.lasthandoff: 10/12/2018
+ms.locfileid: "49307413"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Configuración de la aplicación Portal de empresa de Microsoft Intune
 
@@ -61,7 +61,7 @@ Escriba la información de soporte técnico de su empresa para que los empleados
 
 
 ## <a name="company-branding-customization"></a>Personalización de la marca de empresa       
-Puede personalizar su portal de empresa con su logotipo de empresa, nombre de empresa, color de tema y fondo.     
+Puede personalizar su portal de empresa con su logotipo de empresa, nombre de empresa, color de tema y fondo. Para obtener rápidamente una vista previa de la configuración de personalización de marca sin un dispositivo de prueba, puede ir a [portal.manage.microsoft.com](https://portal.manage.microsoft.com). Tenga en cuenta que el logotipo que cargue se usará en las plantillas de correo electrónico.      
 
 ### <a name="theme-color"></a>Color del tema
 Aplique un color de tema al Portal de empresa. Seleccione un color estándar o escriba un código hexadecimal de seis dígitos de un color personalizado.
@@ -82,3 +82,30 @@ Cargue el logotipo de la empresa para que esté visible en toda la experiencia d
 |**Show company name next to logo** (Mostrar el nombre de la empresa junto al logotipo)| Seleccione esta opción para mostrar el nombre de la empresa que escribió junto al logotipo cargado. |
 
 Después de guardar los cambios, puede elegir **Preview your settings in the Intune Web Portal** (Vista previa de la configuración en el portal web de Intune).
+
+## <a name="windows-company-portal-keyboard-shortcuts"></a>Métodos abreviados de teclado del Portal de empresa de Windows
+
+Los usuarios finales pueden desencadenar acciones de navegación, aplicación y dispositivo en el Portal de empresa de Windows mediante métodos abreviados de teclado (aceleradores).
+
+Los siguientes métodos abreviados de teclado están disponibles en la aplicación del Portal de empresa de Windows.
+
+| Área | Descripción | Método abreviado de teclado |
+|:------------------:|:--------------:|:-----------------:|
+| Menú de navegación | Navegación | Alt+M |
+|  | Inicio | Alt+H |
+|  | Todas las aplicaciones | Alt+A |
+|  | Aplicaciones instaladas | Alt+I |
+|  | Enviar comentarios | Alt+F |
+|  | Mi perfil | Alt+U |
+|  | Configuración | Alt+T |
+| Página principal, icono de dispositivo | Cambiar nombre | F2 |
+|  | Quitar | Ctrl+D o Eliminar |
+|  | Comprobar acceso | Ctrl+M o F9 |
+| Detalles del dispositivo | Cambiar nombre | F2 |
+|  | Quitar | Ctrl+D o Eliminar |
+|  | Comprobar acceso | Ctrl+M o F9 |
+| Detalles de la aplicación | Instalar | Ctrl+I |
+
+## <a name="next-steps"></a>Pasos siguientes
+
+- [Adición manual de la aplicación Portal de empresa para Windows 10 con Microsoft Intune](store-apps-company-portal-app.md)

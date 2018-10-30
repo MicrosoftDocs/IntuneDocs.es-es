@@ -15,12 +15,12 @@ ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: c2774a8172eb389742a3fdbf805717b6bc134b43
-ms.sourcegitcommit: ca132d509e3c978d18e50eac89e1a1ed7ddb25c1
+ms.openlocfilehash: f11d1a0f51935e1bcb7318c7b0c7ba674ba2d54b
+ms.sourcegitcommit: ca33179b8bef98092eedcc22b0e709a862e31dce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48866378"
+ms.lasthandoff: 10/16/2018
+ms.locfileid: "49357111"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune independiente: administración de aplicaciones Win32 (versión preliminar pública)
 
@@ -32,7 +32,7 @@ Intune independiente admite capacidades increíbles de administración de aplica
 - El cliente de Windows 10 debe: 
     - haberse unido a Azure Active Directory (AAD) o Azure Active Directory híbrido, y
     - haberse inscrito en Intune (administrado por MDM)
-- El tamaño de la aplicación Windows está limitado a 8 GB por aplicación en la versión preliminar pública 
+- El tamaño de la aplicación Windows está limitado a 2 GB por aplicación en la versión preliminar pública 
 
 > [!NOTE]
 > Actualmente estamos probando las ediciones Pro y Education de Windows 10 versión 1607 y estamos deseosos de recibir sus comentarios.
@@ -51,7 +51,7 @@ Puede descargar la [herramienta de preparación de la carga de aplicaciones Win3
 |    `-h`     |    Ayuda    |
 |    `-c <setup_folder>`     |    Carpeta de configuración para todos los archivos de instalación.    |
 |   ` -s <setup_file>`     |    Archivo de instalación (como *setup.exe* o *setup.msi*).    |
-|    `-o <output_file>`     |    Carpeta de salida del archivo *.intunewin* generado.    |
+|    `-o <output_folder>`     |    Carpeta de salida del archivo *.intunewin* generado.    |
 |    `-q`       |    Modo silencioso    |
 
 ### <a name="example-commands"></a>Comandos de ejemplo

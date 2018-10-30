@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/28/2018
+ms.date: 10/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 151a445bf7c5c17f8ff1b5ee403df8744f2d8ba6
-ms.sourcegitcommit: ab08dd841f16ae11f958c43b6262a9f6a0cabdd4
+ms.openlocfilehash: 1a70b6369bab130918bad472172995e6296ee4a6
+ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49102062"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49391576"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Introducción a las directivas de cumplimiento de dispositivos de Intune
 
@@ -151,7 +151,7 @@ Para los dispositivos que cumplan las reglas de directiva, puede concederles acc
 También puede usar las directivas de cumplimiento de dispositivos sin ningún acceso condicional. Cuando se usan directivas de cumplimiento de forma independiente, los dispositivos de destino se evalúan y su estado se cumplimiento se notifica. Por ejemplo, puede obtener un informe sobre cuántos dispositivos no están cifrados o qué dispositivos están liberados. Cuando se usan directivas de cumplimiento sin acceso condicional, no hay ninguna restricción de acceso a los recursos de empresa.
 
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Formas de implementar las directivas de cumplimiento de dispositivos
-Puede implementar directivas de cumplimiento en los usuarios de grupos de usuarios o en dispositivos de grupos de dispositivos. Cuando se implementa una directiva de cumplimiento en un usuario, se comprueba el cumplimiento de todos los dispositivos del usuario.
+Puede implementar directivas de cumplimiento en los usuarios de grupos de usuarios o en dispositivos de grupos de dispositivos. Cuando se implementa una directiva de cumplimiento en un usuario, se comprueba el cumplimiento de todos los dispositivos del usuario. En Windows 10 versión 1803 y dispositivos más recientes, se recomienda realizar la implementación en grupos de dispositivos *si* el usuario primario no ha inscrito el dispositivo. El uso de grupos de dispositivos en este escenario ayuda con los informes de cumplimiento.
 
 La **configuración de directiva de cumplimiento** predeterminada (Azure Portal > Device compliance [Cumplimiento del dispositivo]) incluye:
 
