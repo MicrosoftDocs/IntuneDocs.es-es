@@ -13,13 +13,13 @@ ms.technology: ''
 ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
-ms.custom: intune-classic
-ms.openlocfilehash: 8e22c0caf7b99bcb7a81259829369b7671056abe
-ms.sourcegitcommit: d047a692c798e1fb61ee43a487d6332bce344610
+ms.custom: intune
+ms.openlocfilehash: 5cb90b7f1dc72a67f48ba40db8a6ab4ffe598243
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/07/2018
-ms.locfileid: "44058955"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425043"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introducción al SDK para aplicaciones de Microsoft Intune
 
@@ -161,9 +161,9 @@ Cuando haya completado los pasos necesarios para integrar la aplicación iOS o A
 
     * Si está desarrollando una línea de aplicaciones empresariales que no se enviarán a la tienda, se espera que tenga acceso a Microsoft Intune a través de la empresa. También puede registrarse en [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) para obtener la versión de prueba gratuita de un mes.
 
-* **Directivas de protección de aplicaciones de Intune**: para probar la aplicación con todas las directivas de protección de aplicaciones de Intune, debe saber que el comportamiento esperado es para cada configuración de directiva. Vea las descripciones para las [directivas de protección de aplicaciones iOS](/intune-classic/deploy-use/ios-mam-policy-settings) y las [directivas de protección de aplicaciones Android](/intune-classic/deploy-use/android-mam-policy-settings).
+* **Directivas de protección de aplicaciones de Intune**: para probar la aplicación con todas las directivas de protección de aplicaciones de Intune, debe saber que el comportamiento esperado es para cada configuración de directiva. Vea las descripciones para las [directivas de protección de aplicaciones iOS](app-protection-policy-settings-ios.md) y las [directivas de protección de aplicaciones Android](app-protection-policy-settings-android.md).
 
-* **Solución de problemas**: si encuentra algún problema al probar manualmente la experiencia de usuario de la aplicación, vea la [Solución de problemas de MAM](/intune-classic/troubleshoot/troubleshoot-mam). En este artículo se ofrece ayuda para los problemas comunes, cuadros de diálogo y mensajes de error que pueden experimentarse en las aplicaciones administradas por Intune. 
+* **Solución de problemas**: si encuentra algún problema al probar manualmente la experiencia de usuario de instalación de la aplicación, vea la [solución de problemas de instalación de aplicaciones](troubleshoot-app-install.md). 
 
 ### <a name="badge-your-app-optional"></a>Identificar la aplicación (opcional)
 

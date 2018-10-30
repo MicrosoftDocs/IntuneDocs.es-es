@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 85d0df026e49b36e148620ce2d06b4afaaf98ace
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 50fc19410b280e984c8dc3abe620baad7c3267de
+ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48827894"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49959543"
 ---
 # <a name="set-up-ios-device-access-to-your-company-resources"></a>Configuración del acceso de dispositivos iOS a los recursos de la empresa
 
@@ -60,34 +60,34 @@ Para obtener más información sobre la inscripción, vea [¿Qué ocurre si inst
 
 |Lo que verá|Explicación|
 |---|---|
-|![Pantalla de inicio de sesión de Portal de empresa, con el botón "Iniciar sesión" en la parte inferior.](./media/ios-01-cp-enroll-1802.png)|Abra la aplicación Portal de empresa y pulse **Iniciar sesión**.|
-|![Solicitud de inicio de sesión de Azure AD.](./media/ios-02-cp-enroll-1802.png)|Escriba su dirección de correo electrónico de la empresa y, luego, pulse **Siguiente**.|
-|![Solicitud de contraseña de Azure AD.](./media/ios-03-cp-enroll-1802.png)|Escriba la contraseña y pulse **Iniciar sesión**.|
-|![Carga de la pantalla de presentación de los recursos de empresa.](./media/ios-04-cp-enroll-1802.png)|Espere a que se cargue esta pantalla.|
-|![Página de términos y condiciones.](./media/ios-05-cp-enroll-1802.png)|Debe leer y **aceptar todos** los términos y condiciones.|
-|![Pantalla de configuración del acceso a la empresa. En estos momentos debe solucionar tanto la administración como la configuración.](./media/ios-06-cp-enroll-1802.png)|Pulse **Empezar** para comenzar el proceso que permitirá al dispositivo acceder a los recursos de la empresa. Si no puede hacerlo ahora mismo, puede **Posponer** el proceso, pero eso significa que no podrá recibir correo electrónico, documentos, etc.|
-|![Pantalla Qué puede ver mi empresa.](./media/ios-07-cp-enroll-1802.png)|Puede **obtener más información** sobre el contenido que puede ver la empresa si pulsa en el vínculo que aparece en la parte inferior. De lo contrario, pulse **Continuar**.|
-|![Pantalla ¿Qué viene a continuación?](./media/ios-08-cp-enroll-1802.png)|Esta pantalla le guía por lo que sucede en el programa de instalación. Pasará por Safari, la aplicación Ajustes y la aplicación Portal de empresa. Pulse **Continuar**.|
-|![Carga de la pantalla después de pulsar Siguiente en ¿Qué viene a continuación?.](./media/ios-09-cp-enroll-1802.png)|Espere a que se cargue esta pantalla.|
+|![Pantalla de inicio de sesión de Portal de empresa, con el botón "Iniciar sesión" en la parte inferior.](./media/ios-01-cp-enroll-1802.PNG)|Abra la aplicación Portal de empresa y pulse **Iniciar sesión**.|
+|![Solicitud de inicio de sesión de Azure AD.](./media/ios-02-cp-enroll-1802.PNG)|Escriba su dirección de correo electrónico de la empresa y, luego, pulse **Siguiente**.|
+|![Solicitud de contraseña de Azure AD.](./media/ios-03-cp-enroll-1802.PNG)|Escriba la contraseña y pulse **Iniciar sesión**.|
+|![Carga de la pantalla de presentación de los recursos de empresa.](./media/ios-04-cp-enroll-1802.PNG)|Espere a que se cargue esta pantalla.|
+|![Página de términos y condiciones.](./media/ios-05-cp-enroll-1802.PNG)|Debe leer y **aceptar todos** los términos y condiciones.|
+|![Pantalla de configuración del acceso a la empresa. En estos momentos debe solucionar tanto la administración como la configuración.](./media/ios-06-cp-enroll-1802.PNG)|Pulse **Empezar** para comenzar el proceso que permitirá al dispositivo acceder a los recursos de la empresa. Si no puede hacerlo ahora mismo, puede **Posponer** el proceso, pero eso significa que no podrá recibir correo electrónico, documentos, etc.|
+|![Pantalla Qué puede ver mi empresa.](./media/ios-07-cp-enroll-1802.PNG)|Puede **obtener más información** sobre el contenido que puede ver la empresa si pulsa en el vínculo que aparece en la parte inferior. De lo contrario, pulse **Continuar**.|
+|![Pantalla ¿Qué viene a continuación?](./media/ios-08-cp-enroll-1802.PNG)|Esta pantalla le guía por lo que sucede en el programa de instalación. Pasará por Safari, la aplicación Ajustes y la aplicación Portal de empresa. Pulse **Continuar**.|
+|![Carga de la pantalla después de pulsar Siguiente en ¿Qué viene a continuación?.](./media/ios-09-cp-enroll-1802.PNG)|Espere a que se cargue esta pantalla.|
 |![Dirigido a Safari para la inscripción.](./media/ios-cp-sent-to-safari-1808.png)|Se le envía a Safari para administrar la información de administración para el dispositivo.|
-|![Aviso del sistema para pedir que se abra la aplicación Configuración.](./media/ios-8-cp-enroll-1711.png)|Pulse **Permitir** para abrir la aplicación Configuración para descargar el perfil de configuración. Instálelo para permitir que la empresa administre la información corporativa en el dispositivo.|
-|![Captura de la pantalla Instalar perfil en la configuración del dispositivo.](./media/ios-9-cp-enroll-1711.png)|Pulse **Instalar**.|
-|![Diálogo modal de instalación del perfil en la parte inferior de la pantalla.](./media/ios-10-cp-enroll-1711.png)|Pulse **Instalar**.|
-|![Carga de la pantalla de instalación del perfil.](./media/ios-11-cp-enroll-1711.png)|Espere a que se cargue esta pantalla.|
-|![Pantalla de advertencia de administración de perfil.](./media/ios-12-cp-enroll-1711.png)|Esta advertencia escrita por Apple le permite obtener más información sobre qué tipos de acciones se pueden realizar en un dispositivo bajo administración. Obtenga más información sobre la [información que puede ver la empresa](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).|
-|![Aviso del sistema que pregunta sobre la confianza en la administración remota.](./media/ios-13-cp-enroll-1711.png)|Pulse **Confiar** para permitir que la empresa administre la información corporativa y la configuración del dispositivo.|
-|![Pantalla de carga de finalización de la instalación del perfil.](./media/ios-14-cp-enroll-1711.png)|Espere a que se cargue esta pantalla.|
-|![Pantalla de perfil instalado.](./media/ios-15-cp-enroll-1711.png)|El perfil se instaló y la configuración y la información corporativa del dispositivo están a punto de ser administradas.|
-|![Dirigido a Safari para la inscripción.](./media/ios-16-cp-enroll-1711.png)|Se le envía nuevamente a Safari para finalizar la obtención de la información de administración para el dispositivo. |
-|![Aviso del sistema para abrir el portal de empresa.](./media/ios-17-cp-enroll-1711.png)|Pulse **Abrir**.|
-|![Carga de la pantalla de los recursos de empresa.](./media/ios-21-cp-enroll-1802.png)|Espere a que se cargue esta pantalla.|
-|![Seleccione la categoría de dispositivo en la aplicación de portal de empresa.](./media/ios-22-cp-enroll-1802.png)|Seleccione la mejor categoría para el dispositivo. Habitualmente, esto tiene relación con el propietario del dispositivo o su ubicación la mayoría del tiempo.|
-|![Categoría seleccionada.](./media/ios-23-cp-enroll-1802.png)||
-|![Administración de dispositivos correcta, ahora necesita actualizar la configuración.](./media/ios-24-cp-enroll-1802.png)|Logró que se administre el dispositivo. Es probable que su empresa todavía tenga que actualizar algunas configuraciones, como la longitud de la contraseña. Para proceder, haga clic en **Continuar**.|
-|![Confirmación de la configuración del dispositivo.](./media/ios-25-cp-enroll-1802.png)|Portal de empresa comprobará si es necesario actualizar parte de la configuración.|
-|![Comprobación de la configuración finalizada, con una versión de SO incorrecta](./media/ios-26-cp-enroll-1802.png)|Portal de empresa proporcionará instrucciones sobre cómo puede corregir cualquier problema de configuración. Cuando termine de corregir los problemas, pulse **Comprobar la configuración**.|
-|![Pantalla de carga de confirmación de la configuración de dispositivo](./media/ios-27-cp-enroll-1802.png)|El dispositivo comprobará si la configuración es suficientemente segura para acceder a los recursos de empresa.|
-|![La configuración se inscribió y actualizó correctamente](./media/ios-28-cp-enroll-1802.png)|Enhorabuena. El dispositivo ya está inscrito en Intune.|
+|![Aviso del sistema para pedir que se abra la aplicación Configuración.](./media/ios-8-cp-enroll-1711.PNG)|Pulse **Permitir** para abrir la aplicación Configuración para descargar el perfil de configuración. Instálelo para permitir que la empresa administre la información corporativa en el dispositivo.|
+|![Captura de la pantalla Instalar perfil en la configuración del dispositivo.](./media/ios-9-cp-enroll-1711.PNG)|Pulse **Instalar**.|
+|![Diálogo modal de instalación del perfil en la parte inferior de la pantalla.](./media/ios-10-cp-enroll-1711.PNG)|Pulse **Instalar**.|
+|![Carga de la pantalla de instalación del perfil.](./media/ios-11-cp-enroll-1711.PNG)|Espere a que se cargue esta pantalla.|
+|![Pantalla de advertencia de administración de perfil.](./media/ios-12-cp-enroll-1711.PNG)|Esta advertencia escrita por Apple le permite obtener más información sobre qué tipos de acciones se pueden realizar en un dispositivo bajo administración. Obtenga más información sobre la [información que puede ver la empresa](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).|
+|![Aviso del sistema que pregunta sobre la confianza en la administración remota.](./media/ios-13-cp-enroll-1711.PNG)|Pulse **Confiar** para permitir que la empresa administre la información corporativa y la configuración del dispositivo.|
+|![Pantalla de carga de finalización de la instalación del perfil.](./media/ios-14-cp-enroll-1711.PNG)|Espere a que se cargue esta pantalla.|
+|![Pantalla de perfil instalado.](./media/ios-15-cp-enroll-1711.PNG)|El perfil se instaló y la configuración y la información corporativa del dispositivo están a punto de ser administradas.|
+|![Dirigido a Safari para la inscripción.](./media/ios-16-cp-enroll-1711.PNG)|Se le envía nuevamente a Safari para finalizar la obtención de la información de administración para el dispositivo. |
+|![Aviso del sistema para abrir el portal de empresa.](./media/ios-17-cp-enroll-1711.PNG)|Pulse **Abrir**.|
+|![Carga de la pantalla de los recursos de empresa.](./media/ios-21-cp-enroll-1802.PNG)|Espere a que se cargue esta pantalla.|
+|![Seleccione la categoría de dispositivo en la aplicación de portal de empresa.](./media/ios-22-cp-enroll-1802.PNG)|Seleccione la mejor categoría para el dispositivo. Habitualmente, esto tiene relación con el propietario del dispositivo o su ubicación la mayoría del tiempo.|
+|![Categoría seleccionada.](./media/ios-23-cp-enroll-1802.PNG)||
+|![Administración de dispositivos correcta, ahora necesita actualizar la configuración.](./media/ios-24-cp-enroll-1802.PNG)|Logró que se administre el dispositivo. Es probable que su empresa todavía tenga que actualizar algunas configuraciones, como la longitud de la contraseña. Para proceder, haga clic en **Continuar**.|
+|![Confirmación de la configuración del dispositivo.](./media/ios-25-cp-enroll-1802.PNG)|Portal de empresa comprobará si es necesario actualizar parte de la configuración.|
+|![Comprobación de la configuración finalizada, con una versión de SO incorrecta](./media/ios-26-cp-enroll-1802.PNG)|Portal de empresa proporcionará instrucciones sobre cómo puede corregir cualquier problema de configuración. Cuando termine de corregir los problemas, pulse **Comprobar la configuración**.|
+|![Pantalla de carga de confirmación de la configuración de dispositivo](./media/ios-27-cp-enroll-1802.PNG)|El dispositivo comprobará si la configuración es suficientemente segura para acceder a los recursos de empresa.|
+|![La configuración se inscribió y actualizó correctamente](./media/ios-28-cp-enroll-1802.PNG)|Enhorabuena. El dispositivo ya está inscrito en Intune.|
 
 > [!Note]
 > Es posible que deba seguir unos pocos pasos más para que el dispositivo esté totalmente administrado. Obtenga más información sobre cómo [inscribir el dispositivo mediante la administración de gastos de telecomunicaciones](enroll-your-device-with-telecom-expense-management-ios.md). Si su organización usa el Programa de inscripción de dispositivos de Apple, obtenga más información [aquí](enroll-your-device-dep-ios.md).

@@ -15,12 +15,12 @@ ms.assetid: 8deff871-5dff-4767-9484-647428998d82
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 0f4687b3a2b1064fbfe3a9c8aa9da6cc7d336d78
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 41296e2c5fd1bddfc65bb343d86f4891fff9452d
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37906046"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425196"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Establecer la entidad de administración de dispositivos móviles
 
@@ -32,7 +32,10 @@ Las configuraciones posibles son:
 
 - **Intune independiente**: administración solo en la nube, que se configura mediante el portal de Azure. Incluye el conjunto completo de funcionalidades que ofrece Intune. [Establecer la entidad de MDM en la consola de Intune](#set-mdm-authority-to-intune).
 
-- **Intune híbrido**: integración de la solución de nube de Intune con System Center Configuration Manager. Intune se configura mediante la consola de Configuration Manager. [Establecer la entidad de MDM en Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-intune-subscription).
+- **Intune híbrido**: integración de la solución de nube de Intune con System Center Configuration Manager. Intune se configura mediante la consola de Configuration Manager. [Establecer la entidad de MDM en Configuration Manager](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-intune-subscription). 
+
+    > [!Important]
+    >La incorporación de nuevos clientes de la administración de dispositivos móviles (MDM) híbrida se desactivará en una próxima versión. Para más información, vea el [blog sobre el plan de cambios MC146431](https://blogs.technet.microsoft.com/intunesupport/2018/08/14/move-from-hybrid-mobile-device-management-to-intune-on-azure/).
 
 - **Administración de dispositivos móviles para Office 365**: integración de Office 365 con la solución de nube de Intune. Intune se configura desde el Centro de administración de Office 365. Incluye un subconjunto de las funcionalidades que están disponibles con la versión independiente de Intune. Establecer la entidad de MDM en el Centro de administración de Office 365.
 
@@ -63,7 +66,7 @@ Los escenarios que agregan un consentimiento para compartir datos se incluyen cu
 - Se habilitan y cargan certificados push MDM de Apple.
 - Se habilita cualquiera de los servicios de Apple, por ejemplo, el Programa de inscripción de dispositivos, School Manager o el Programa de Compras por Volumen.
 
-En cada caso, el consentimiento está estrictamente relacionado con la ejecución de un servicio de administración de dispositivos móviles, por ejemplo, confirmar que un administrador de TI ha autorizado la inscripción de dispositivos Google o Apple. La documentación para tratar qué información se comparte cuando los nuevos flujos de trabajo se publican está disponible en las siguientes ubicaciones:
+En cada caso, el consentimiento está estrictamente relacionado con la ejecución de un servicio de administración de dispositivos móviles. Por ejemplo, confirmar que un administrador de TI ha autorizado a dispositivos Google o Apple para que se inscriban. La documentación para tratar qué información se comparte cuando los nuevos flujos de trabajo se publican está disponible en las siguientes ubicaciones:
 - [Datos que Intune manda a Google](https://aka.ms/Data-intune-sends-to-google)
 - [Data que Intune manda a Apple](https://aka.ms/data-intune-sends-to-apple)
 
@@ -79,7 +82,7 @@ Después de cambiar a la nueva entidad de MDM, habrá probablemente un tiempo de
 Revise la información siguiente para preparar el cambio de la entidad de MDM:
 - Debe tener la versión 1610 de Configuration Manager o una posterior para que la opción para cambiar la entidad de MDM esté disponible.
 - Un dispositivo puede tardar hasta ocho horas en conectarse al servicio después de cambiar a la nueva entidad de MDM.
-- Cree una recopilación de usuarios de Configuration Manager con todos los usuarios que están administrados por Intune independiente que usará al configurar la suscripción de Intune en la consola de Configuration Manager. De esta manera se asegurará de que el usuario y sus dispositivos tienen una licencia de Configuration Manager asignada y administrada en el entorno híbrido después del cambio a la entidad de MDM.
+- Cree una recopilación de usuarios de Configuration Manager con todos los usuarios que están administrados por Intune independiente que usará al configurar la suscripción de Intune en la consola de Configuration Manager. Esta colección ayuda a garantizar que el usuario y sus dispositivos tienen una licencia de Configuration Manager asignada y administrada en el entorno híbrido después del cambio a la entidad de MDM.
 - Asegúrese de que el usuario Administrador de TI se encuentra también en la recopilación de usuarios.  
 - Antes del cambio, la entidad de MDM aparecerá como **Establecer en Microsoft Intune** (independiente) en la consola de administración de Intune.
 - La entidad de MDM debe mostrar **Establecer en Microsoft Intune** (inquilino independiente) en la consola de administración de Microsoft Intune antes del cambio en la entidad de MDM.
@@ -88,7 +91,7 @@ Revise la información siguiente para preparar el cambio de la entidad de MDM:
 
 - En la [consola de administración de Microsoft Intune](http://manage.microsoft.com), vaya al rol Administrador de inscripción de dispositivos. Para ver más información, consulte [Eliminar un administrador de inscripción de dispositivos de Intune](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune#delete-a-device-enrollment-manager-from-intune).
 - Desactive las asignaciones de grupos de dispositivos que estén configuradas. Para obtener más información, consulte [Clasificar los dispositivos con la asignación de grupos de dispositivos en Microsoft Intune](/intune-classic/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune).
-- No debería haber ningún impacto perceptible en los usuarios finales durante el cambio de entidad de MDM. Sin embargo, puede comunicar este cambio a los usuarios para asegurarse de que sus dispositivos están encendidos y de que se conectan al servicio pronto después del cambio. De este modo, se asegura de que se conectan tantos dispositivos como sea posible al servicio y de que se registran en la nueva entidad lo antes posible.
+- No debería haber ningún impacto perceptible en los usuarios finales durante el cambio de entidad de MDM. Sin embargo, puede comunicar este cambio a los usuarios para asegurarse de que sus dispositivos están encendidos y de que se conectan al servicio pronto después del cambio. Esta precaución garantiza que se conectan tantos dispositivos como sea posible al servicio y que se registran en la nueva entidad lo antes posible.
 - Si usa Intune independiente para administrar dispositivos iOS antes del cambio de la entidad de MDM, debe asegurarse de que el mismo certificado de servicio de Apple Push Notification Service que se había utilizado previamente en Intune se renueva y se utiliza para configurar el inquilino de nuevo en Configuration Manager (híbrido).    
 
     > [!IMPORTANT]  
@@ -102,7 +105,7 @@ Revise la información siguiente para preparar el cambio de la entidad de MDM:
 4. Seleccione la recopilación de usuarios que va a contener todos los usuarios que siguen administrados por la nueva entidad de MDM híbrida.
 5. Haga clic en **Siguiente** y complete el asistente. La entidad de MDM ahora se ha cambiado a **Configuration Manager**.
 6. Inicie sesión en la [consola de administración de Microsoft Intune](http://manage.microsoft.com) con el mismo inquilino de Intune y confirme que la entidad de MDM se ha cambiado a **Configurar como Configuration Manager**.
-7. Después de cambiar la entidad de MDM a Configuration Manager, puede configurar la [inscripción de iOS](https://docs.microsoft.com/en-us/sccm/mdm/deploy-use/enroll-hybrid-ios-mac) y la [inscripción de Android](https://docs.microsoft.com/en-us/sccm/mdm/deploy-use/enroll-hybrid-android).
+7. Después de cambiar la entidad de MDM a Configuration Manager, puede configurar la [inscripción de iOS](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-ios-mac) y la [inscripción de Android](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-android).
 8. En la consola de Configuration Manager, configure e implemente las nuevas opciones de configuración y aplicaciones desde la nueva entidad de MDM (híbrido).
 
 La próxima vez que los dispositivos se conecten al servicio, se sincronizan y reciben la nueva configuración de la entidad de MDM.
@@ -125,13 +128,13 @@ No se puede cambiar la entidad de MDM a Desconocido. Los servidores de Microsoft
 
 ## <a name="what-to-expect-after-changing-the-mdm-authority"></a>Qué esperar después de cambiar la entidad de MDM
 
-- Cuando el servicio de Intune detecta que ha cambiado la entidad de MDM de un inquilino, envía un mensaje de notificación a todos los dispositivos inscritos para que inicien el proceso de comprobación y se sincronicen en el servicio (esto no forma parte de la comprobación programada regularmente). Por lo tanto, una vez que cambie la entidad de MDM para el inquilino de Intune independiente a híbrido, todos los dispositivos que estén encendidos y en línea se conectarán en el servicio, recibirán la nueva entidad de MDM y serán administrados por el inquilino híbrido. No hay ninguna interrupción en el proceso de administración y protección de estos dispositivos.
+- Cuando el servicio de Intune detecta que ha cambiado la entidad de MDM de un inquilino, envía un mensaje de notificación a todos los dispositivos inscritos para que inicien el proceso de comprobación y se sincronicen en el servicio (esta notificación no forma parte de la comprobación programada regularmente). Por lo tanto, una vez que cambie la entidad de MDM para el inquilino de Intune independiente a híbrido, todos los dispositivos que estén encendidos y en línea se conectarán en el servicio, recibirán la nueva entidad de MDM y serán administrados por el inquilino híbrido. No hay ninguna interrupción en el proceso de administración y protección de estos dispositivos.
 - Incluso para los dispositivos que están encendidos y en línea durante el cambio en la entidad de MDM (o poco tiempo después), pasarán hasta ocho horas (según el tiempo de la siguiente comprobación periódica programada) hasta que los dispositivos se registren en el servicio bajo la nueva entidad de MDM.    
 
   > [!IMPORTANT]    
   > Entre el momento en que cambie la entidad MDM y se cargue el certificado de Apple Push Notification Service renovado en la nueva entidad, las inscripciones de nuevos dispositivos y las comprobaciones de dispositivos iOS darán error. Por lo tanto, es importante revisar y cargar el certificado de Apple Push Notification Service en la nueva entidad tan pronto como sea posible después del cambio de entidad de MDM.
 
-- Los usuarios pueden cambiar rápidamente a la nueva entidad de MDM iniciando manualmente una comprobación desde el dispositivo en el servicio. Pueden hacerlo fácilmente mediante la aplicación Portal de empresa e iniciando una comprobación de cumplimiento del dispositivo.
+- Los usuarios pueden cambiar rápidamente a la nueva entidad de MDM iniciando manualmente una comprobación desde el dispositivo en el servicio. Los usuarios pueden realizar este cambio con facilidad mediante la aplicación Portal de empresa e iniciando una comprobación de cumplimiento del dispositivo.
 - Para validar que todo funciona correctamente después de que los dispositivos se hayan comprobado y sincronizado con el servicio tras el cambio de entidad de MDM, busque los dispositivos en la consola de Configuration Manager. Los dispositivos administrados anteriormente por Intune ahora aparecen como dispositivos administrados en la consola de Configuration Manager.    
 - Existe un período transitorio entre el momento en que un dispositivo está sin conexión durante el cambio de entidad de MDM y el momento en que se comprueba la idoneidad de ese dispositivo para su registro en el servicio. Para garantizar que el dispositivo permanece protegido y funcional durante este período transitorio, los siguientes perfiles permanecen en el dispositivo hasta siete días (o hasta que el dispositivo se conecte con la nueva entidad de MDM y reciba la nueva configuración que sobrescribirá la actual):
     - Perfil de correo electrónico

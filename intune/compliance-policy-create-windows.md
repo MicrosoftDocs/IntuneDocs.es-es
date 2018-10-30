@@ -1,6 +1,6 @@
 ---
 title: Creación de una directiva de cumplimiento de dispositivos Windows en Microsoft Intune - Azure | Microsoft Docs
-description: Cree o configure una directiva de cumplimiento de dispositivos de Microsoft Intune para Windows Phone 8.1, Windows 8.1 y versiones posteriores, y dispositivos con Windows 10 y versiones posteriores. Compruebe el cumplimiento respecto a la versión mínima y máxima del sistema operativo, establezca las restricciones y la longitud de las contraseñas, requiera bitlocker, busque soluciones de antivirus de terceros, establezca el nivel de amenaza aceptable y habilite el cifrado en el almacenamiento de datos, incluidos Surface Hub y Windows Holographic for Business.
+description: Cree o configure una directiva de cumplimiento de dispositivos de Microsoft Intune para Windows Phone 8.1, Windows 8.1 y versiones posteriores, y dispositivos con Windows 10 y versiones posteriores. Compruebe el cumplimiento respecto a la versión mínima y máxima del sistema operativo, establezca las restricciones y la longitud de las contraseñas, requiera BitLocker, busque soluciones de antivirus de terceros, establezca el nivel de amenaza aceptable y habilite el cifrado en el almacenamiento de datos, incluidos Surface Hub y Windows Holographic for Business.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 11ccace4ca8e43e09b8aebeb92530629cf50a472
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: e38e6f615220135e9c4c9c786ab260f5921890ea
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602323"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642919"
 ---
 # <a name="add-a-device-compliance-policy-for-windows-devices-in-intune"></a>Incorporación de una directiva de cumplimiento de dispositivos para dispositivos Windows en Intune
 
@@ -119,8 +119,6 @@ Los equipos con Windows 8.1 devuelven la versión **3**. Si la regla de la versi
 
 Consulte [Health Attestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp) (CSP de atestación de mantenimiento) para detalles sobre cómo funciona el servicio HAS.
 
-Para configurar ATP (protección contra amenazas avanzada) de Windows Defender como servicio de defensa contra amenazas, consulte [Habilitación de ATP de Windows Defender con acceso condicional](advanced-threat-protection.md).
-
 ### <a name="device-properties"></a>Propiedades del dispositivo
 
 - **Versión mínima del sistema operativo**: escriba la versión mínima permitida, con el formato numérico **major.minor.build.CU**. Para obtener el valor correcto, abra un símbolo del sistema y escriba `ver`. El comando `ver` devuelve la versión en este formato:
@@ -183,6 +181,8 @@ Para configurar ATP (protección contra amenazas avanzada) de Windows Defender c
   - **Bajo**: el dispositivo se evalúa como conforme si solo hay amenazas de nivel bajo. Cualquier valor por encima coloca al dispositivo en un estado de no conformidad.
   - **Medio:** el dispositivo se evalúa como compatible si las amenazas existentes en él son de nivel bajo o medio. Si se detecta que el dispositivo tiene amenazas de nivel alto, se determina como no conforme.
   - **Alto**: esta opción es la menos segura, ya que permite que todos los niveles de amenaza. Quizás sea útil si utiliza esta solución solo con fines informativos.
+  
+  Para configurar ATP (protección contra amenazas avanzada) de Windows Defender como servicio de defensa contra amenazas, consulte [Habilitación de ATP de Windows Defender con acceso condicional](advanced-threat-protection.md).
 
 ## <a name="windows-holographic-for-business"></a>Windows Holographic for Business
 

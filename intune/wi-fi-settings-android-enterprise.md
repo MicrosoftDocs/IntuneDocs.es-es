@@ -1,7 +1,7 @@
 ---
-title: Configuración de Wi-Fi en Microsoft Intune para dispositivos Android - Azure | Microsoft Docs
+title: Configuración de Wi-Fi en Microsoft Intune para dispositivos que ejecutan Android Enterprise y el Quiosco de Android - Azure | Microsoft Docs
 titleSuffix: ''
-description: Cree o agregue un perfil de configuración de dispositivos Wi-Fi para Android. Vea las diferentes configuraciones, como la adición de certificados, la elección de un tipo EAP y la selección de un método de autenticación en Microsoft Intune.
+description: Cree o agregue un perfil de configuración de dispositivos Wi-Fi para Android Enterprise y el Quiosco de Android. Vea las diferentes configuraciones, como la adición de certificados, la elección de un tipo EAP y la selección de un método de autenticación en Microsoft Intune. Para dispositivos del quiosco, escriba también la clave precompartida de la red.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -13,18 +13,16 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b7c0d11e7670134c6a2cd9ce2eb72714ba64aa03
+ms.openlocfilehash: c2983f2f7b7079f73c857bf7caafe4236373c5dc
 ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 10/18/2018
-ms.locfileid: "49424992"
+ms.locfileid: "49431944"
 ---
-# <a name="add-wi-fi-settings-for-devices-running-android-in-microsoft-intune"></a>Adición de la configuración de Wi-Fi en Microsoft Intune para dispositivos que ejecutan Android
+# <a name="add-wi-fi-settings-for-devices-running-android-enterprise-and-android-kiosk-in-microsoft-intune"></a>Incorporación de la configuración de Wi-Fi en Microsoft Intune para dispositivos que ejecutan Android Enterprise y el Quiosco de Android
 
-Puede crear un perfil con una configuración específica de Wi-Fi y después implementar este perfil en los dispositivos Android. Microsoft Intune ofrece muchas características, incluidas la autenticación en la red, agregar un certificado PKS o SCEP y muchas más.
-
-Estas configuraciones de Wi-Fi se dividen en dos categorías: configuración básica y a nivel de empresa.
+Puede crear un perfil con una configuración específica de Wi-Fi y después implementar este perfil en los dispositivos Android Enterprise y del Quiosco de Android. Microsoft Intune ofrece muchas características, incluidas la autenticación en la red, con el uso de una clave precompartida, y mucho más.
 
 Ambas se describen en este artículo.
 
@@ -32,7 +30,25 @@ Ambas se describen en este artículo.
 
 [Creación de un perfil de dispositivo en Microsoft Intune](device-profile-create.md).
 
-## <a name="basic-profile"></a>Perfil básico
+## <a name="device-owner-only---kiosk"></a>Solo el propietario del dispositivo: quiosco
+
+Seleccione esta opción si usa un dispositivo Android Enterprise como un quiosco.
+
+- **Nombre de red**: escriba un nombre para esta conexión Wi-Fi. Este valor es el nombre que ven los usuarios cuando exploran la lista de conexiones disponibles en sus dispositivos.
+- **SSID**: abreviatura de **identificador de conjunto de servicios**. Esta configuración es el nombre real de la red inalámbrica a la que se conectan los dispositivos. Sin embargo, los usuarios solo ven el **nombre de red** que ha configurado al elegir la conexión.
+- **Conectar automáticamente**: elija **Habilitar** para conectarse automáticamente a esta red cuando el dispositivo está en el intervalo. Elija **Deshabilitar** para impedir que los dispositivos se conecten automáticamente.
+- **Red oculta**: elija **Habilitar** para ocultar esta red en la lista de redes disponibles en el dispositivo. No se difunde el SSID. Elija **Deshabilitar** para mostrar esta red en la lista de redes disponibles en el dispositivo.
+- **Tipo de Wi-Fi**: seleccione el protocolo de seguridad para autenticarse en la red Wi-Fi. Las opciones son:
+
+  - **Abierta (sin autenticación)**: use esta opción solo si la red no es segura.
+  - **Clave precompartida WEP**: escriba la contraseña en **Clave precompartida**. Una vez configurada la red de su organización, también se configuran una contraseña o una clave de red. Escriba esta contraseña o clave de red para el valor PSK.
+  - **Clave precompartida WPA**: escriba la contraseña en **Clave precompartida**. Una vez configurada la red de su organización, también se configuran una contraseña o una clave de red. Escriba esta contraseña o clave de red para el valor PSK.
+
+Haga clic en **Aceptar** para guardar los cambios.
+
+## <a name="work-profile-only"></a>Solo perfil de trabajo
+
+### <a name="basic-settings"></a>Configuración básica
 
 - **Tipo de Wi-Fi**: elija **Básico**.
 - **SSID**: abreviatura de **identificador de conjunto de servicios**. Esta configuración es el nombre real de la red inalámbrica a la que se conectan los dispositivos.
@@ -103,6 +119,5 @@ Se crea el perfil, pero no hacen nada. A continuación, [asigne este perfil](dev
 
 ## <a name="more-resources"></a>Más recursos
 
+- Vea las opciones disponibles para dispositivos Android en [Configuración de Wi-Fi para dispositivos que ejecutan Android](wi-fi-settings-android.md).
 - [Introducción a la configuración de Wi-Fi](wi-fi-settings-configure.md), incluidas otras plataformas.
-
-- ¿Usa dispositivos Android Enterprise o del Quiosco de Android? En caso afirmativo, consulte [Configuración de Wi-Fi para dispositivos que ejecutan Android Enterprise y el Quiosco de Android](wi-fi-settings-android-enterprise.md).

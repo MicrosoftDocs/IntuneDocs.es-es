@@ -1,82 +1,133 @@
 ---
-title: Configuración de Wi-Fi de Microsoft Intune para dispositivos que ejecutan iOS
+title: Configuración de Wi-Fi para dispositivos iOS en Microsoft Intune - Azure | Microsoft Docs
 titleSuffix: ''
-description: Aprenda a configurar la Wi-Fi de Intune en dispositivos que ejecutan iOS
+description: Cree o agregue un perfil de configuración de dispositivos Wi-Fi para dispositivos iOS. Vea las diferentes configuraciones, como la adición de certificados, la elección de un tipo EAP y la selección de un método de autenticación en Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/5/2018
+ms.date: 10/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 4b723bd23681d98463adae83be5f74b556dc779e
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: fa81e8979f48a0b027f4860cfc5d2a88e3b30772
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321159"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49425247"
 ---
-# <a name="wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Configuración de Wi-Fi para dispositivos iOS en Microsoft Intune
+# <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>Adición de la configuración de Wi-Fi para dispositivos iOS en Microsoft Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+Puede crear un perfil con una configuración específica de Wi-Fi y después implementar este perfil en los dispositivos iOS. Microsoft Intune ofrece muchas características, incluidas la autenticación en la red, agregar un certificado PKS o SCEP y muchas más.
 
-En este artículo, se muestra la configuración de Wi-Fi que puede configurar en Microsoft Intune para dispositivos que ejecutan iOS.
+Estas configuraciones de Wi-Fi se dividen en dos categorías: configuración básica y a nivel de empresa.
 
-## <a name="wi-fi-settings-for-basic-and-enterprise-profiles"></a>Configuración de Wi-Fi para perfiles básico y de empresa
+Ambas se describen en este artículo.
 
-- **Nombre de red**: escriba un nombre para esta conexión Wi-Fi. Este es el nombre que ven los usuarios cuando exploran la lista de conexiones disponibles en sus dispositivos.
-- **SSID**: abreviatura de identificador de conjunto de servicios. Este es el nombre real de la red inalámbrica a la que se conectan los dispositivos. Con todo, los usuarios solo ven el nombre de red que ha configurado al elegir la conexión.
-- **Conectar automáticamente**: el dispositivo se conecta siempre que está dentro del rango de alcance de esta red.
-- **Red oculta**: impide que esta red se muestre en la lista de redes disponibles en el dispositivo.
-- **Clave compartida previamente** - 
-- **Configuración de proxy**: elija entre:
-    - **Ninguna**: no se configura ningún valor de proxy.
-    - **Manual**: especifique la **dirección del servidor proxy** (como una dirección IP) y su **número de puerto** asociado.
-    - **Automática**: use un archivo para configurar el servidor proxy. Escriba la **URL del servidor proxy** (por ejemplo, **http://proxy.contoso.com**) que contiene el archivo de configuración.
+## <a name="before-you-begin"></a>Antes de comenzar
 
-## <a name="wi-fi-settings-for-basic-profiles-only"></a>Configuración de Wi-Fi solo para perfiles básicos
+[Creación de un perfil de dispositivo en Microsoft Intune](device-profile-create.md).
 
-- **Tipo de seguridad**: seleccione el protocolo de seguridad que se usará para autenticarse en la red Wi-Fi. Las opciones son:
-    - **Open (sin autenticación)**: use esta opción solo si la red es segura.
-    - **WPA o WPA2 - Personal**
-    - **WEP**
+## <a name="basic-profiles"></a>Perfiles básicos
 
-## <a name="wi-fi-settings-for-enterprise-profiles-only"></a>Configuración de Wi-Fi solo para perfiles de empresa
+- **Tipo de Wi-Fi**: elija **Básico**.
+- **Nombre de red**: escriba un nombre para esta conexión Wi-Fi. Este valor es el nombre que ven los usuarios cuando exploran la lista de conexiones disponibles en sus dispositivos.
+- **SSID**: abreviatura de **identificador de conjunto de servicios**. Esta propiedad es el nombre real de la red inalámbrica a la que se conectan los dispositivos. Con todo, los usuarios solo ven el nombre de red que ha configurado al elegir la conexión.
+- **Conectar automáticamente**: elija **Habilitar** para conectarse automáticamente a esta red cuando el dispositivo está en el intervalo. Elija **Deshabilitar** para impedir que los dispositivos se conecten automáticamente.
+- **Red oculta**: elija **Habilitar** para ocultar esta red en la lista de redes disponibles en el dispositivo. No se difunde el SSID. Elija **Deshabilitar** para mostrar esta red en la lista de redes disponibles en el dispositivo.
+- **Tipo de seguridad**: seleccione el protocolo de seguridad para autenticarse en la red Wi-Fi. Las opciones son:
 
-- **Tipo de EAP**: elija el tipo Protocolo de autenticación extensible (EAP) que se usa para autenticar conexiones inalámbricas seguras:
-    - **EAP-FAST**
-    - **EAP-SIM**
-    - **EAP-TLS**
-    - **EAP-TTLS**
-    - **LEAP**
-    - **PEAP**
+  - **Abierta (sin autenticación)**: use esta opción solo si la red no es segura.
+  - **WPA o WPA2 - Personal**: escriba la contraseña en **Clave precompartida**. Una vez configurada la red de su organización, también se configuran una contraseña o una clave de red. Escriba esta contraseña o clave de red para el valor PSK.
+  - **WEP**
 
-### <a name="further-options-when-you-choose-an-eap-type"></a>Opciones adicionales cuando elige un tipo de EAP
+- **Configuración de proxy**: las opciones son:
+  - **Ninguno**: no se configura ningún valor de proxy.
+  - **Manual**: especifique la **dirección del servidor proxy** como una dirección IP y su **número de puerto**.
+  - **Automática**: use un archivo para configurar el servidor proxy. Escriba la **URL del servidor proxy** (por ejemplo, `http://proxy.contoso.com`) que contiene el archivo de configuración.
 
+## <a name="enterprise-profiles"></a>Perfiles de empresa
 
-|Nombre de la configuración|Más información|Se debe usar cuando:|
-|--------------|-------------|----------|
-|**Configuración de las credenciales de acceso protegido (PAC)**|Seleccione esta opción para usar credenciales de acceso protegido para establecer un túnel autenticado entre el cliente y el servidor de autenticación. Seleccione una de las siguientes opciones:<br>- **Usar (PAC)**: usa un archivo PAC existente si está presente.<br>- **Usar y aprovisionar PAC**: aprovisiona el archivo PAC en los dispositivos.<br>- **Usar y aprovisionar PAC anónimamente**: aprovisiona el archivo PAC para sus dispositivos y garantiza que lo hace sin autenticar el servidor.|El tipo de EAP es **EAP-FAST**.|
+- **Tipo de Wi-Fi**: elija **Empresa**.
+- **SSID**: abreviatura de **identificador de conjunto de servicios**. Esta propiedad es el nombre real de la red inalámbrica a la que se conectan los dispositivos. Con todo, los usuarios solo ven el nombre de red que ha configurado al elegir la conexión.
+- **Conectar automáticamente**: elija **Habilitar** para conectarse automáticamente a esta red cuando el dispositivo está en el intervalo. Elija **Deshabilitar** para impedir que los dispositivos se conecten automáticamente.
+- **Red oculta**: elija **Habilitar** para ocultar esta red en la lista de redes disponibles en el dispositivo. No se difunde el SSID. Elija **Deshabilitar** para mostrar esta red en la lista de redes disponibles en el dispositivo.
 
-#### <a name="server-trust"></a>Confianza del servidor
+- **Tipo de EAP**: elija el tipo Protocolo de autenticación extensible (EAP) que se usa para autenticar conexiones inalámbricas seguras. Las opciones son:
 
+  - **EAP-FAST**: escriba la **Configuración de las credenciales de acceso protegido (PAC)**. Esta opción usa credenciales de acceso protegido para crear un túnel autenticado entre el cliente y el servidor de autenticación. Las opciones son:
+    - **No usar (PAC)**
+    - **Usar (PAC)**: si existe un archivo PAC, úselo.
+    - **Usar y aprovisionar PAC**: cree y agregue el archivo PAC a los dispositivos.
+    - **Usar y aprovisionar PAC anónimamente**: cree y agregue el archivo PAC a los dispositivos sin autenticación en el servidor.
 
-|Nombre de la configuración|Más información|Se debe usar cuando:|
-|--------------|-------------|----------|
-|**Nombres de servidor de certificados**|Especifique uno o más nombres comunes usados en los certificados emitidos por su entidad de certificación de confianza (CA). Si proporciona esta información, puede omitir el cuadro de diálogo de confianza dinámica que se muestra en los dispositivos de los usuarios cuando se conectan a esta red Wi-Fi.|El tipo de EAP es **EAP-TLS**, **EAP-TTLS** o **PEAP**.|
-|**Certificado raíz para validación del servidor**|Seleccione el perfil de certificado raíz de confianza que se usa para autenticar la conexión. |El tipo de EAP es **EAP-TLS**, **EAP-TTLS** o **PEAP**|
-|**Privacidad de identidad (identidad externa)**|Especifique el texto que se envía como respuesta a una solicitud de identidad EAP. Este texto puede ser cualquier valor. Durante la autenticación, esta identidad anónima se envía inicialmente, seguida de la identificación real enviada en un túnel seguro.|El tipo de EAP es **PEAP**.|
+  - **EAP-SIM**
 
+  - **EAP-TLS**: especifique también:
 
-#### <a name="client-authentication"></a>Autenticación de cliente
+    - **Confianza del servidor** - **Nombres de servidor de certificados**: **agregue** uno o más nombres comunes usados en los certificados emitidos por la entidad de certificación (CA) de confianza. Si escribe esta información, puede omitir la ventana de confianza dinámica que se muestra en los dispositivos de los usuarios cuando se conectan a esta red Wi-Fi.
+    - **Certificado raíz para validación del servidor**: elija el perfil de certificado raíz de confianza existente. Este certificado se presenta al servidor cuando el cliente se conecta a la red y se usa para autenticar la conexión.
 
+      Haga clic en **Aceptar** para guardar los cambios.
 
-| Nombre de la configuración | Más información | Se debe usar cuando: |
-|---|---|---|
-| **Certificado cliente para la autenticación del cliente (certificado de identidad)**** |  Seleccione el perfil de certificado SCEP o PKCS que se usa para autenticar la conexión.  |    El tipo de EAP es **EAP-TLS**.    |
-| **Método de autenticación** | Seleccione el método de autenticación para la conexión:<br>- **Certificados**: para seleccionar el certificado de cliente SCEP o PKCS que es el certificado de identidad presentado al servidor.<br><br>- **Nombre de usuario y contraseña** para especificar un método de autenticación diferente. <br><br>Si seleccionó **Nombre de usuario y contraseña**, configure:<br><br>-  **Método que no es EAP (identidad interna)** y, luego, seleccione cómo se autentica la conexión desde:<br>- **Ninguno**<br>- **Contraseña no cifrada (PAP)**<br>- **Protocolo de autenticación por desafío mutuo (CHAP)**<br>- **Microsoft CHAP (MS-CHAP)**<br>- **Microsoft CHAP versión 2 (MS-CHAP v2)**<br>Las opciones disponibles dependen del tipo de EAP seleccionado.<br><br>**y**<br><br>- **Método que no es EAP (identidad interna)**: especifique el texto que se envía como respuesta a una solicitud de identidad EAP. Este texto puede ser cualquier valor. Durante la autenticación, esta identidad anónima se envía inicialmente, seguida de la identificación real enviada en un túnel seguro. | El tipo de EAP es **EAP-TTLS** o *. |
+    - **Autenticación de cliente** - **Certificado para la autenticación de cliente (certificado de identidad)**: elija el perfil de certificado de cliente SCEP o PKCS que también se implementa en el dispositivo. Este certificado es la identidad presentada por el dispositivo al servidor para autenticar la conexión.
 
+      Haga clic en **Aceptar** para guardar los cambios.
+
+  - **EAP-TTLS**: especifique también:
+
+    - **Confianza del servidor** - **Nombres de servidor de certificados**: **agregue** uno o más nombres comunes usados en los certificados emitidos por la entidad de certificación (CA) de confianza. Si escribe esta información, puede omitir la ventana de confianza dinámica que se muestra en los dispositivos de los usuarios cuando se conectan a esta red Wi-Fi.
+    - **Certificado raíz para validación del servidor**: elija el perfil de certificado raíz de confianza existente. Este certificado se presenta al servidor cuando el cliente se conecta a la red y se usa para autenticar la conexión.
+
+      Haga clic en **Aceptar** para guardar los cambios.
+
+    - **Autenticación de cliente**: elija un **método de autenticación**. Las opciones son:
+
+      - **Nombre de usuario y contraseña**: pida al usuario un nombre de usuario y una contraseña para autenticar la conexión. Indique también:
+        - **Método que no es EAP (identidad interna)**: seleccione cómo se autentica la conexión. Asegúrese de elegir el mismo protocolo que está configurado en su red Wi-Fi.
+
+          Opciones: **Contraseña no cifrada (PAP)**, **Protocolo de autenticación por desafío mutuo (CHAP)**, **Microsoft CHAP (MS-CHAP** o **Microsoft CHAP versión 2 (MS-CHAP v2)**.
+
+      - **Certificados**: elija el perfil de certificado de cliente SCEP o PKCS que también se implementa en el dispositivo. Este certificado es la identidad presentada por el dispositivo al servidor para autenticar la conexión.
+
+        Haga clic en **Aceptar** para guardar los cambios.
+
+      - **Privacidad de identidad (identidad interna)**: escriba el texto que se envía como respuesta a una solicitud de identidad EAP. Este texto puede ser cualquier valor, como `anonymous`. Durante la autenticación, esta identidad anónima se envía inicialmente, seguida de la identificación real enviada en un túnel seguro.
+
+  - **LEAP**
+
+  - **PEAP**: especifique también:
+
+    - **Confianza del servidor** - **Nombres de servidor de certificados**: **agregue** uno o más nombres comunes usados en los certificados emitidos por la entidad de certificación (CA) de confianza. Si escribe esta información, puede omitir la ventana de confianza dinámica que se muestra en los dispositivos de los usuarios cuando se conectan a esta red Wi-Fi.
+    - **Certificado raíz para validación del servidor**: elija el perfil de certificado raíz de confianza existente. Este certificado se presenta al servidor cuando el cliente se conecta a la red y se usa para autenticar la conexión.
+
+      Haga clic en **Aceptar** para guardar los cambios.
+
+    - **Autenticación de cliente**: elija un **método de autenticación**. Las opciones son:
+
+      - **Nombre de usuario y contraseña**: pida al usuario un nombre de usuario y una contraseña para autenticar la conexión. 
+
+      - **Certificados**: elija el perfil de certificado de cliente SCEP o PKCS que también se implementa en el dispositivo. Este certificado es la identidad presentada por el dispositivo al servidor para autenticar la conexión.
+
+        Haga clic en **Aceptar** para guardar los cambios.
+
+      - **Privacidad de identidad (identidad interna)**: escriba el texto que se envía como respuesta a una solicitud de identidad EAP. Este texto puede ser cualquier valor, como `anonymous`. Durante la autenticación, esta identidad anónima se envía inicialmente, seguida de la identificación real enviada en un túnel seguro.
+
+- **Configuración de proxy**: las opciones son:
+  - **Ninguno**: no se configura ningún valor de proxy.
+  - **Manual**: especifique la **dirección del servidor proxy** como una dirección IP y su **número de puerto**.
+  - **Automática**: use un archivo para configurar el servidor proxy. Escriba la **URL del servidor proxy** (por ejemplo, `http://proxy.contoso.com`) que contiene el archivo de configuración.
+
+Seleccione **Aceptar** > **Crear** para guardar los cambios. El perfil se crea y se muestra en la lista de perfiles.
+
+## <a name="next-steps"></a>Pasos siguientes
+
+Se crea el perfil, pero no hacen nada. A continuación, [asigne este perfil](device-profile-assign.md).
+
+## <a name="more-resources"></a>Más recursos
+
+[Introducción a la configuración de Wi-Fi](wi-fi-settings-configure.md), incluidas otras plataformas disponibles.

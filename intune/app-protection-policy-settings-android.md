@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
 ms.reviewer: andcerat
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3778675366a19eb6ba1774f26bbb3523cdcdf92f
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: ae031f601792251f1dcf7b93fb914a740bc36300
+ms.sourcegitcommit: 46f6f3d4e1c7c0a5a716503f759ea5cf03c1a02b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48828336"
+ms.lasthandoff: 10/26/2018
+ms.locfileid: "50136988"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Configuración de directivas de protección de aplicaciones Android en Microsoft Intune
 En este artículo se describe la configuración de directivas de protección de aplicaciones para dispositivos Android. La configuración de directivas que se describe puede [realizarse](app-protection-policies.md) para una directiva de protección de aplicaciones en la hoja **Configuración** de Azure Portal.
@@ -61,6 +61,7 @@ Existen dos categorías de configuración de directiva: configuración de acceso
   | com.android.webview |[WebView](https://developer.android.com/reference/android/webkit/WebView.html), necesario para muchas aplicaciones, incluido Outlook|
   | com.google.android.tts | Texto a voz de Google |
   | com.android.providers.settings | Configuración del sistema Android |
+  | com.android.settings | Configuración del sistema Android |
   | com.azure.authenticator | Aplicación Azure Authenticator, necesaria para una autenticación correcta en muchos escenarios |
   | com.microsoft.windowsintune.companyportal | Intune Portal de empresa|
 

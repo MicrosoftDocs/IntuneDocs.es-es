@@ -15,18 +15,15 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9486bb6d0d9747101535cef9f45931fa1b2cefe6
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 2f3b28a7a5c1f97871a40f108a5fae6cc6b93424
+ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231451"
+ms.lasthandoff: 10/18/2018
+ms.locfileid: "49424890"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Supervisión de las directivas de protección de aplicaciones
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
-
-**Si no tiene acceso a Azure Portal**, en este tema se explica [cómo crear directivas de protección de aplicaciones](https://docs.microsoft.com/intune-classic/deploy-use/create-and-deploy-mobile-app-management-policies-with-microsoft-intune) en el portal clásico de Intune.
-
 
 Supervise el estado de cumplimiento de las directivas de administración de aplicaciones móviles (MAM) que haya aplicado a los usuarios en el panel de protección de aplicaciones de Intune en [Azure Portal](https://portal.azure.com). Obtenga información sobre los usuarios afectados por las directivas MAM, el estado de cumplimiento y cualquier problema que puedan estar experimentando los usuarios.
 
@@ -37,6 +34,9 @@ Hay tres lugares diferentes para supervisar el estado de cumplimiento:
 -   Vista detallada
 
 -   Generación de informes
+
+> [!NOTE]
+> Para obtener información sobre cómo crear directivas de protección de aplicaciones, vea [Creación y asignación de directivas de protección de aplicaciones](app-protection-policies.md).
 
 ## <a name="summary-view"></a>Vista Resumen
 

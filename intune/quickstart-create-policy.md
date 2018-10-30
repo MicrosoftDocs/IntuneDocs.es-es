@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 10/17/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 1ac74ba5-7441-44ac-98b5-9d8bb8899747
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 73e1e0a27d128d567a924e6f2b343026b11f1a44
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: 9d9169ab353da30e0f7b292cea4f5b9c93e316aa
+ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581785"
+ms.lasthandoff: 10/17/2018
+ms.locfileid: "49391559"
 ---
 # <a name="quickstart-add-a-device-compliance-policy-for-a-windows-10-device"></a>Inicio rápido: Agregar una directiva de cumplimiento de dispositivos para dispositivos Windows 10
 Una directiva de cumplimiento de dispositivos de Intune para Windows especifica las reglas y la configuración que los dispositivos Windows deben cumplir para que se consideren compatibles. Puede usar estas directivas con [acceso condicional](https://docs.microsoft.com/intune/conditional-access) para permitir o bloquear el acceso a los recursos de la empresa. También puede obtener informes de dispositivos y realizar acciones en caso de incumplimiento.
@@ -53,4 +53,4 @@ Cuando ya no necesite la directiva, elimínela. Para ello, seleccione la directi
 En este inicio rápido, ha creado y asignado una directiva de cumplimiento sencilla. Para inscribir un dispositivo Windows 10 que va a recibir la directiva, continúe con el inicio rápido para configurar la inscripción automática. 
  
 > [!div class="nextstepaction"]
-> [Configurar inscripción automática](quickstart-setup-auto-enrollment.md)
+> [Establecer la longitud de la contraseña del dispositivo](quickstart-set-password-length-android.md)

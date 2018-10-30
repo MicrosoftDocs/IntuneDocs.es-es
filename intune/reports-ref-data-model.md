@@ -15,12 +15,12 @@ ms.assetid: 4D04D3D9-4B6C-41CD-AAF8-466AF8FA6032
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 3ba8caa74b673127a17a431d5b821d52f9767c49
-ms.sourcegitcommit: 445a54dc6826a549d770a9953549ae2191d391c2
+ms.openlocfilehash: 5680e0c53a9decfa5b172e08c04fbfe4025f2d7c
+ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2018
-ms.locfileid: "45727465"
+ms.lasthandoff: 10/22/2018
+ms.locfileid: "49642895"
 ---
 # <a name="data-warehouse-data-model"></a>Modelo de datos de Almacenamiento de datos
 
@@ -61,6 +61,6 @@ El almacén de datos es descendiente en relación con los datos de Intune. Todos
 
 ## <a name="next-steps"></a>Pasos siguientes
 
- - Para más información sobre cómo el almacén de datos realiza un seguimiento de la duración de un usuario en Intune, consulte [Representación de la duración del usuario en el Almacenamiento de datos de Intune](reports-ref-user-timeline.md).
- - Para obtener más información sobre cómo trabajar con almacenes de datos, consulte [Create First Data WareHouse](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse) (Creación del primer almacén de datos).
+ - Para más información sobre cómo el almacenamiento de datos realiza un seguimiento de la duración de un usuario en Intune, vea [Representación de la duración del usuario en el Almacenamiento de datos de Intune](reports-ref-user-timeline.md).
+ - Para más información sobre cómo trabajar con almacenamientos de datos, vea [Create First Data WareHouse](https://www.codeproject.com/Articles/652108/Create-First-Data-WareHouse) (Creación del primer almacenamiento de datos).
  - Para obtener más información sobre cómo trabajar con Power BI y un almacén de datos, consulte [Creación de un informe de Power BI nuevo mediante la importación de un conjunto de datos](https://powerbi.microsoft.com/documentation/powerbi-service-create-a-new-report/). 
