@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 1a70b6369bab130918bad472172995e6296ee4a6
-ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
+ms.openlocfilehash: 226713d893e05c2c2aeea49cde2ce92591d06391
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49391576"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915706"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Introducción a las directivas de cumplimiento de dispositivos de Intune
 
@@ -153,7 +153,7 @@ También puede usar las directivas de cumplimiento de dispositivos sin ningún a
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Formas de implementar las directivas de cumplimiento de dispositivos
 Puede implementar directivas de cumplimiento en los usuarios de grupos de usuarios o en dispositivos de grupos de dispositivos. Cuando se implementa una directiva de cumplimiento en un usuario, se comprueba el cumplimiento de todos los dispositivos del usuario. En Windows 10 versión 1803 y dispositivos más recientes, se recomienda realizar la implementación en grupos de dispositivos *si* el usuario primario no ha inscrito el dispositivo. El uso de grupos de dispositivos en este escenario ayuda con los informes de cumplimiento.
 
-La **configuración de directiva de cumplimiento** predeterminada (Azure Portal > Device compliance [Cumplimiento del dispositivo]) incluye:
+Un conjunto de **Configuración de directivas de cumplimiento** integrada (Azure Portal > Conformidad de dispositivos) se evalúa en todos los dispositivos inscritos en Intune. Entre ellos se incluyen los siguientes:
 
 - **Marcar los dispositivos que no tienen asignada una directiva de cumplimiento como**: esta propiedad tiene dos valores:
 
@@ -171,7 +171,7 @@ La **configuración de directiva de cumplimiento** predeterminada (Azure Portal 
 
 - **Período de validez de estado de cumplimiento (días)**: especifique el período en el que los dispositivos notifican el estado de todas las directivas de cumplimiento recibidas. Los dispositivos que no proporcionen el estado dentro de este período se tratarán como no conformes. El valor predeterminado es 30 días.
 
-Todos los dispositivos tienen una **directiva de cumplimiento de dispositivos predeterminada** (Azure Portal > Conformidad de dispositivos > Cumplimiento de directiva). Use esta directiva predeterminada para supervisar estas opciones.
+Todos los dispositivos tienen una **Directiva de cumplimiento de dispositivos integrada** (Azure Portal > Conformidad de dispositivos > Cumplimiento de directiva). Use esta directiva integrada para supervisar estas opciones.
 
 Para obtener información sobre el tiempo que tardan los dispositivos móviles en obtener una directiva una vez que esta se ha implementado, vea [Solución de problemas de perfiles de dispositivo](device-profile-troubleshoot.md#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
 

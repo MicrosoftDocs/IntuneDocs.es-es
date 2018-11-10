@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/30/2018
+ms.date: 10/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,28 +13,66 @@ ms.reviewer: tycast
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e15a7b034c9277fcd960e8c704f4318f0f5c1da2
-ms.sourcegitcommit: e814cfbbefe818be3254ef6f859a7bf5f5b99123
+ms.openlocfilehash: 58a6681c22672b5aa2c8337708456b30361f741f
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/31/2018
-ms.locfileid: "43329654"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236482"
 ---
-# <a name="wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Configuración de Wi-Fi para dispositivos Windows 10 y versiones posteriores en Intune
+# <a name="add-wi-fi-settings-for-windows-10-and-later-devices-in-intune"></a>Agregar Wi-Fi para dispositivos Windows 10 y versiones posteriores en Intune
 
-La configuración de Wi-Fi se usa en un perfil de configuración que se aplica a los dispositivos que ejecutan Windows 10 y versiones posteriores. Existen varias opciones:
+Puede crear un perfil con una configuración específica de Wi-Fi y después implementar este perfil en dispositivos Windows 10 y versiones posteriores. Microsoft Intune ofrece muchas características, incluidas la autenticación en la red, con el uso de una clave precompartida, y mucho más.
 
-- Básica
-- Enterprise
+Ambas se describen en este artículo.
 
 ## <a name="before-you-begin"></a>Antes de comenzar
 
 [Creación de un perfil de dispositivo en Microsoft Intune](device-profile-create.md).
 
-## <a name="settings-for-basic-and-enterprise-profiles"></a>Configuración para perfiles básico y de empresa
+## <a name="basic-profile"></a>Perfil básico
+
+- **Tipo de Wi-Fi**: elija **Básico**. 
 
 - **Nombre de Wi-Fi (SSID)**: abreviatura de identificador de conjunto de servicios. Este valor es el nombre real de la red inalámbrica a la que se conectan los dispositivos. Pero cuando los usuarios eligen la conexión, solo ven el **Nombre de conexión** que configure.
+
 - **Nombre de conexión**: escriba un nombre descriptivo para esta conexión Wi-Fi. El texto que escriba es el nombre que ven los usuarios cuando exploran las conexiones disponibles en sus dispositivos.
+
+- **Conectar automáticamente cuando se encuentre dentro del alcance**: cuando es **Sí**, los dispositivos conectan automáticamente cuando están en el alcance de esta red. Cuando es **No**, los dispositivos no se conectan automáticamente.
+
+  - **Conectarse a una red con mayor preferencia si está disponible**: si los dispositivos están en el alcance de una red preferida, haga clic en **Sí** para usarla. Haga clic en **No** para usar la red Wi-Fi de este perfil de configuración.
+
+    Por ejemplo, crea una red Wi-Fi **ContosoCorp** y usa **ContosoCorp** dentro de este perfil de configuración. También tiene una red Wi-Fi **ContosoGuest** dentro del alcance. Cuando los dispositivos corporativos estén dentro del alcance, quiere que se conecten automáticamente a **ContosoCorp**. En este escenario, establezca la propiedad **Conectarse a una red con mayor preferencia si está disponible** en **No**.
+
+  - **Connect to this network, even when it is not broadcasting its SSID** (Conectarse a esta red, aunque no difunda su SSID): haga clic en **Sí** para que el perfil de configuración se conecte automáticamente a la red, incluso cuando está oculta (es decir, su SSID no se difunde públicamente). Haga clic en **No** si no quiere que este perfil de configuración se conecte a la red oculta.
+
+- **Límite de conexión de uso medido**: un administrador puede elegir cómo se mide el tráfico de red. Las aplicaciones pueden luego ajustar su comportamiento de tráfico de red según este valor. Las opciones son:
+
+  - **No restringido**: valor predeterminado. No se mide la conexión y no existen restricciones en el tráfico.
+  - **Fijo**: use esta opción si la red está configurada con un límite fijo para el tráfico de red. Cuando se alcanza este límite, se prohíbe el acceso a la red.
+  - **Variable**: use esta opción si el tráfico de red se cobra por byte (costo por byte).
+
+- **Tipo de seguridad inalámbrica**: escriba el protocolo de seguridad que se usa para autenticar los dispositivos de la red. Las opciones son:
+  - **Abierta (sin autenticación)**: use esta opción solo si la red no es segura.
+  - **WPA o WPA2-Personal**: una opción más segura y suele usarse para conectividad mediante Wi-Fi. Para mayor seguridad, también puede escribir una contraseña de clave precompartida o una clave de red. 
+
+    - **Clave precompartida** (PSK): opcional. Se muestra cuando se elige **WPA o WPA2-Personal** como tipo de seguridad. Una vez configurada la red de su organización, también se configuran una contraseña o una clave de red. Escriba esta contraseña o clave de red para el valor PSK. Escriba una cadena de entre 8 y 64 caracteres. Si la contraseña o la clave de red es de 64 caracteres, escriba caracteres hexadecimales.
+
+- **Configuración del proxy de la empresa**: elija la configuración de proxy que se va a usar en la organización. Las opciones son:
+  - **Ninguno**: no se configura ningún valor de proxy.
+  - **Configurar manualmente**: escriba la **Dirección IP del servidor proxy** y su **Número de puerto**.
+  - **Configurar automáticamente**: escriba la dirección URL que apunta a un script de configuración automática de proxy (PAC). Por ejemplo, escriba `http://proxy.contoso.com/proxy.pac`.
+
+Seleccione **Aceptar** > **Crear** para guardar los cambios. El perfil se crea y se muestra en la lista de perfiles.
+
+## <a name="enterprise-profile"></a>Perfil de empresa
+
+- **Tipo de Wi-Fi**: elija **Empresa**. 
+
+- **Nombre de Wi-Fi (SSID)**: abreviatura de identificador de conjunto de servicios. Este valor es el nombre real de la red inalámbrica a la que se conectan los dispositivos. Pero cuando los usuarios eligen la conexión, solo ven el **Nombre de conexión** que configure.
+
+- **Nombre de conexión**: escriba un nombre descriptivo para esta conexión Wi-Fi. El texto que escriba es el nombre que ven los usuarios cuando exploran las conexiones disponibles en sus dispositivos.
+
 - **Conectar automáticamente cuando se encuentre dentro del alcance**: cuando es **Sí**, los dispositivos conectan automáticamente cuando están en el alcance de esta red. Cuando es **No**, los dispositivos no se conectan automáticamente.
   - **Conectarse a una red con mayor preferencia si está disponible**: si los dispositivos están en el alcance de una red preferida, haga clic en **Sí** para usarla. Haga clic en **No** para usar la red Wi-Fi de este perfil de configuración.
 
@@ -42,18 +80,11 @@ La configuración de Wi-Fi se usa en un perfil de configuración que se aplica a
 
   - **Connect to this network, even when it is not broadcasting its SSID** (Conectarse a esta red, aunque no difunda su SSID): haga clic en **Sí** para que el perfil de configuración se conecte automáticamente a la red, incluso cuando está oculta (es decir, su SSID no se difunde públicamente). Haga clic en **No** si no quiere que este perfil de configuración se conecte a la red oculta.
 
-- **Configuración del proxy de la empresa**: elija la configuración de proxy que se va a usar en la organización. Las opciones son:
-  - **Ninguno**: no se configura ningún valor de proxy.
-  - **Configurar manualmente**: escriba la **Dirección IP del servidor proxy** y su **Número de puerto**.
-  - **Configurar automáticamente**: escriba la dirección URL que apunta a un script de configuración automática de proxy (PAC). Por ejemplo, escriba `http://proxy.contoso.com/proxy.pac`.
+- **Límite de conexión de uso medido**: un administrador puede elegir cómo se mide el tráfico de red. Las aplicaciones pueden luego ajustar su comportamiento de tráfico de red según este valor. Las opciones son:
 
-## <a name="settings-for-basic-profiles-only"></a>Configuración solo para perfiles básicos
-
-- **Tipo de seguridad inalámbrica**: escriba el protocolo de seguridad que se usa para autenticar los dispositivos de la red. Las opciones son:
-  - **Abierta (sin autenticación)**: use esta opción solo si la red no es segura.
-  - **WPA/WPA2-Personal**
-
-## <a name="settings-for-enterprise-profiles-only"></a>Configuración solo para perfiles de empresa
+  - **No restringido**: valor predeterminado. No se mide la conexión y no existen restricciones en el tráfico.
+  - **Fijo**: use esta opción si la red está configurada con un límite fijo para el tráfico de red. Cuando se alcanza este límite, se prohíbe el acceso a la red.
+  - **Variable**: use esta opción si el tráfico de red se cobra por byte.
 
 - **Inicio de sesión único (SSO)**: permite configurar el inicio de sesión único (SSO), donde se comparten las credenciales para el equipo y el inicio de sesión de red Wi-Fi. Las opciones son:
   - **Deshabilitar**: se deshabilita el comportamiento de SSO. El usuario debe autenticarse en la red por separado.
@@ -107,11 +138,24 @@ La configuración de Wi-Fi se usa en un perfil de configuración que se aplica a
 
         **Privacidad de identidad (identidad externa)**: se usa con el tipo de EAP **EAP-TTLS**. Escriba el texto que se envía como respuesta a una solicitud de identidad EAP. Este texto puede ser cualquier valor. Durante la autenticación, esta identidad anónima se envía inicialmente, seguida de la identificación real enviada en un túnel seguro.
 
+- **Configuración del proxy de la empresa**: elija la configuración de proxy que se va a usar en la organización. Las opciones son:
+  - **Ninguno**: no se configura ningún valor de proxy.
+  - **Configurar manualmente**: escriba la **Dirección IP del servidor proxy** y su **Número de puerto**.
+  - **Configurar automáticamente**: escriba la dirección URL que apunta a un script de configuración automática de proxy (PAC). Por ejemplo, escriba `http://proxy.contoso.com/proxy.pac`.
+
 - **Exigir que el perfil de Wi-Fi sea compatible con el Estándar federal de procesamiento de información (FIPS)**: haga clic en **Sí** al validarlo con el estándar FIPS 140-2. Este estándar es necesario para todas las agencias del gobierno federal de Estados Unidos que usan sistemas de seguridad basados en criptografía para proteger la información confidencial pero sin clasificar que se almacena digitalmente. Haga clic en **No** para que no sea compatible con FIPS.
+
+Seleccione **Aceptar** > **Crear** para guardar los cambios. El perfil se crea y se muestra en la lista de perfiles.
 
 ## <a name="use-an-imported-settings-file"></a>Usar un archivo de configuración importado
 
 Para cualquier configuración que no esté disponible en Intune, puede exportar la configuración de Wi-Fi desde otro dispositivo Windows. Esta exportación crea un archivo XML con toda la configuración. Después, importe este archivo en Intune y úselo como el perfil de Wi-Fi. Vea [Exportación e importación de la configuración de Wi-Fi para dispositivos Windows](wi-fi-settings-import-windows-8-1.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
-[Configuración de Wi-Fi en Microsoft Intune](wi-fi-settings-configure.md)
+
+Se crea el perfil, pero no hacen nada. A continuación, [asigne este perfil](device-profile-assign.md).
+
+## <a name="more-resources"></a>Más recursos
+
+- Vea las opciones disponibles para [Windows 8.1](wi-fi-settings-import-windows-8-1.md).
+- [Introducción a la configuración de Wi-Fi](wi-fi-settings-configure.md), incluidas otras plataformas

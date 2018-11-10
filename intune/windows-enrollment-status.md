@@ -15,36 +15,50 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f5460db2d646d8bd417baa50d8188acbf69a251d
-ms.sourcegitcommit: d92caead1d96151fea529c155bdd7b554a2ca5ac
+ms.openlocfilehash: 08d76d6b76ee7838633435ae095c171e0a3cdf8e
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/06/2018
-ms.locfileid: "48827996"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236499"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configurar una página de estado de inscripción
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
-Durante la configuración del dispositivo, la página de estado de inscripción muestra información sobre la instalación en el dispositivo. Algunas aplicaciones, perfiles y certificados podrían no estar completamente instalados en el momento en el que se inscribe un usuario. Una página de estado puede ayudar a los usuarios a comprender el estado de su dispositivo durante y después de la inscripción. Puede activar la página de estado para todos los usuarios o crear perfiles para dirigirse a grupos de usuarios específicos.  Puede definir perfiles para mostrar el progreso de la instalación, bloquear el uso hasta que finalice la instalación, permitir restablecimientos, etcétera.
+Durante la configuración del dispositivo, la página Estado de inscripción muestra información sobre la instalación en el dispositivo. Es posible que algunas aplicaciones, perfiles y certificados no estén instalados cuando un usuario complete el proceso de inscripción rápida e inicie sesión en el dispositivo. Una página de estado de inscripción permite que los usuarios comprendan el estado de su dispositivo durante la instalación del dispositivo. Puede crear varios perfiles de la página de estado de inscripción y aplicarlos a diferentes grupos. Los perfiles se pueden establecer en:
+- Mostrar progreso de la instalación.
+- Bloquear el uso hasta que finalice la instalación.
+- Especificar lo que puede hacer un usuario si se produce un error en la configuración del dispositivo.
+
+También puede establecer el orden de prioridad para cada perfil para tener en cuenta las asignaciones de perfil en conflicto del mismo usuario o dispositivo.
+
  
 ## <a name="turn-on-default-enrollment-status-page-for-all-users"></a>Activar la página de estado de inscripción predeterminada para todos los usuarios
 
-Para activar la página de estado de inscripción para todos los usuarios finales, siga estos pasos.
+Para activar la página de estado de inscripción, siga estos pasos.
  
-1.  En [Intune](https://aka.ms/intuneportal), elija **Inscripción de dispositivos** > **Inscripción de Windows** > **Página de estado de inscripción (vista previa)**.
-2.  En la hoja **Página de estado de inscripción**, elija **Predeterminado** > **Configuración**.
-3.  Para **Show app and profile installation progress** (Mostrar progreso de instalación de la aplicación y el perfil), elija **Sí**.
-4.  Elija las demás opciones de configuración que desee activar y seleccione **Guardar**.
+1. En [Intune](https://aka.ms/intuneportal), elija **Inscripción de dispositivos** > **Inscripción de Windows** > **Página de estado de inscripción (vista previa)**.
+2. En la hoja **Página de estado de inscripción**, elija **Predeterminado** > **Configuración**.
+3. Para **Show app and profile installation progress** (Mostrar progreso de instalación de la aplicación y el perfil), elija **Sí**.
+4. Elija las demás opciones de configuración que desee activar y seleccione **Guardar**.
 
-## <a name="create-enrollment-status-page-profile-to-target-specific-users"></a>Crear perfil de página de estado de inscripción para dirigirse a usuarios específicos
+## <a name="create-enrollment-status-page-profile-and-assign-to-a-group"></a>Creación de un perfil de página de estado de inscripción y asignación a un grupo
 
-1.  En [Intune](https://aka.ms/intuneportal), elija **Inscripción de dispositivos** > **Inscripción de Windows** > **Página de estado de la inscripción (versión preliminar)** > **Crear perfil**.
+1. En [Intune](https://aka.ms/intuneportal), elija **Inscripción de dispositivos** > **Inscripción de Windows** > **Página de estado de la inscripción (versión preliminar)** > **Crear perfil**.
 2. Proporcione un **Nombre** y una **Descripción**.
 3. Elija **Crear**.
 4. Elija el nuevo perfil en la lista **Página de estado de inscripción**.
 5. Elija **Asignaciones** > **Seleccionar grupos** > elija los grupos que quiera que adopten este perfil > **Seleccionar** > **Guardar**.
 6. Elija **Configuración** > elija la configuración que quiera aplicar a este perfil > **Guardar**.
+
+## <a name="set-the-enrollment-status-page-priority"></a>Establecimiento de la prioridad de la página de estado de inscripción
+
+Un dispositivo o un usuario podrían estar en varios grupos y tener varios perfiles de página de estado de inscripción. Para resolver estos conflictos, puede establecer las prioridades para cada perfil. Si alguien tiene más de un perfil de página de estado de inscripción, se aplicará solamente el perfil con la prioridad más alta.
+
+1. En [Intune](https://aka.ms/intuneportal), elija **Inscripción de dispositivos** > **Inscripción de Windows** > **Página de estado de inscripción (vista previa)**.
+2. Mantenga el mouse sobre el perfil en la lista.
+3. Use los tres puntos verticales para arrastrar el perfil a la posición que quiera en la lista.
 
 
 ## <a name="enrollment-status-page-tracking-information"></a>Información de seguimiento de la página de estado de inscripción
@@ -65,8 +79,9 @@ Para la configuración del dispositivo, la página de estado de inscripción rea
     - Aplicaciones MSI de línea de negocio (LoB) por equipo.
     - Aplicaciones de almacén de LoB con contexto de instalación = Dispositivo.
     - Aplicaciones de almacén de LoB y almacén sin conexión con contexto de instalación = Dispositivo.
-- Aún no se realiza un seguimiento de los perfiles de conectividad (VPN y Wi-Fi), por lo que siempre aparece "0 de 0".
-- Aún no se realiza el seguimiento de los certificados, por lo que siempre decimos "0 de 0".
+- Perfiles de conectividad
+    - Perfiles de Wi-Fi o VPN que están asignados a **Todos los dispositivos** o a un grupo de dispositivos en el que el dispositivo de inscripción es un miembro, pero solo para dispositivos Autopilot
+- Perfiles de certificado que están asignados a **Todos los dispositivos** o a un grupo de dispositivos en el que el dispositivo de inscripción es un miembro, pero solo para dispositivos Autopilot
 
 ### <a name="account-setup"></a>Configuración de la cuenta
 Para la configuración de la cuenta, la página de estado de inscripción realiza el seguimiento de los siguientes elementos:

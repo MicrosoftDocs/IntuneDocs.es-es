@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/27/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,16 +13,14 @@ ms.technology: ''
 ms.reviewer: muhosabe
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 6bbb09944db602b4b5a70c89e8089b1692c45223
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: a0d9d0ac3c0cd8804ffc401cd3041d5b9a17e64f
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321448"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236414"
 ---
 # <a name="add-a-device-compliance-policy-for-macos-devices-with-intune"></a>Incorporación de una directiva de cumplimiento de dispositivos macOS con Intune
-
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Una directivas de cumplimiento de dispositivos macOS para Intune determina las reglas y la configuración que deben cumplir los dispositivos macOS para que sean compatibles. Al usar directivas de cumplimiento de dispositivos con acceso condicional, puede permitir o bloquear el acceso a los recursos de la empresa. También puede obtener informes de dispositivos y realizar acciones en caso de incumplimiento. Las directivas de cumplimiento de dispositivos para cada plataforma se pueden crear en Azure Portal de Intune. Para más información sobre las directivas de cumplimiento, consulte [Introducción a las directivas de cumplimiento de dispositivos de Intune](device-compliance-get-started.md).
 
@@ -90,6 +88,17 @@ Firewall protege los dispositivos frente al acceso de red no autorizado. Puede u
 - **Firewall**: **Habilitar** para ayudar a proteger los dispositivos frente al acceso no autorizado. Habilitar esta característica permite controlar las conexiones entrantes de Internet y usar el modo sigiloso. **No configurado** (el valor predeterminado) deja el firewall desactivado y se permite el tráfico de red (no se bloquea).
 - **Conexiones entrantes**: **bloquee** todas las conexiones de red entrantes excepto las necesarias para los servicios básicos de Internet, como DHCP, Bonjour e IPSec. Esta configuración también bloquea todos los servicios de uso compartido, incluido el uso compartido de pantalla, acceso remoto, uso compartido de música de iTunes y mucho más. **No configurado** (el valor predeterminado) permite las conexiones entrantes y los servicios de uso compartido. 
 - **Modo sigiloso**: **habilite** el modo sigiloso para evitar que el dispositivo responda a solicitudes de sondeo, que pueden provenir de usuarios malintencionados. Cuando se habilita, el dispositivo sigue respondiendo a las solicitudes entrantes de las aplicaciones autorizadas. **No configurado** (el valor predeterminado) deja el modo sigiloso desactivado.
+
+### <a name="gatekeeper"></a>Equipo selector
+
+**Permitir aplicaciones descargadas desde estas ubicaciones**: permite que las aplicaciones admitidas se instalen en los dispositivos desde diferentes ubicaciones. Opciones de ubicación:
+
+- **Sin configurar**: valor predeterminado. La opción de Gatekeeper no influye en el cumplimiento o el incumplimiento. 
+- **Mac App Store**: solo instala aplicaciones para Mac App Store. No se pueden instalar aplicaciones de terceros ni de desarrolladores identificados. Si un usuario selecciona Gatekeeper para instalar aplicaciones fuera de Mac App Store, el dispositivo se considera no compatible.
+- **Mac App Store y desarrolladores identificados**: instala aplicaciones para Mac App Store y desarrolladores identificados. macOS comprueba la identidad de los desarrolladores y realiza otras comprobaciones relacionadas con la integridad de la aplicación. Si un usuario selecciona Gatekeeper para instalar aplicaciones fuera de estas opciones, el dispositivo se considera no compatible.
+- **Cualquier ubicación**: las aplicaciones pueden instalarse desde cualquier lugar y por parte de cualquier desarrollador. Esta opción es la menos segura.
+
+Para más detalles en la documentación de Apple, vea [Gatekeeper en macOS](https://support.apple.com/HT202491).
 
 ## <a name="assign-user-groups"></a>Asignación de grupos de usuarios
 

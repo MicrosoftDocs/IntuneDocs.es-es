@@ -1,30 +1,13 @@
 ---
-title: Agregar aplicaciones Win32 a Microsoft Intune
-titlesuffix: ''
-description: Obtenga información sobre cómo agregar y administrar aplicaciones Win32 en Microsoft Intune.
-keywords: ''
-author: Erikre
-ms.author: erikre
-manager: dougeby
-ms.date: 10/08/2018
-ms.topic: article
-ms.prod: ''
-ms.service: microsoft-intune
-ms.technology: ''
-ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
-ms.reviewer: mghadial
-ms.suite: ems
-ms.custom: intune-azure
-ms.openlocfilehash: f11d1a0f51935e1bcb7318c7b0c7ba674ba2d54b
-ms.sourcegitcommit: ca33179b8bef98092eedcc22b0e709a862e31dce
-ms.translationtype: HT
-ms.contentlocale: es-ES
-ms.lasthandoff: 10/16/2018
-ms.locfileid: "49357111"
+title: Agregar aplicaciones Win32 a Microsoft Intune titlesuffix: description: Obtenga información sobre cómo agregar, entregar y administrar aplicaciones Win32 con Microsoft Intune. En este tema se proporciona información general sobre las funciones de entrega y de administración de aplicaciones Win32 de Intune e información sobre la solución de problemas de aplicaciones Win32. keywords: autor: Erikre ms.author: erikre administrador: dougeby <<<<<<< HEAD ms.date: 23/10/2018 ======= ms.date: 19/10/2018
+>>>>>>> 14fdd9aac5e66324acfe83ae31b126d8216d7da4 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
+
+ms.reviewer: mghadial ms.suite: ems ms.custom: intune-azure
 ---
+
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune independiente: administración de aplicaciones Win32 (versión preliminar pública)
 
-Intune independiente admite capacidades increíbles de administración de aplicaciones Win32. Aunque es posible que los clientes conectados a la nube usen Configuration Manager para la administración de aplicaciones Win32, los clientes que solo utilicen Intune tendrán mayores capacidades de administración para sus aplicaciones Win32 de línea de negocio (LOB). En este documento se proporciona información general sobre la característica de administración de aplicaciones Win32 de Intune e información sobre la solución de problemas.
+Intune independiente admite capacidades increíbles de administración de aplicaciones Win32. Aunque es posible que los clientes conectados a la nube usen Configuration Manager para la administración de aplicaciones Win32, los clientes que solo utilicen Intune tendrán mayores capacidades de administración para sus aplicaciones Win32 de línea de negocio (LOB). En este tema se proporciona información general sobre la característica de administración de aplicaciones Win32 de Intune e información sobre la solución de problemas.
 
 ## <a name="prerequisites-for-public-preview"></a>Requisitos previos para la versión preliminar pública
 
@@ -32,7 +15,7 @@ Intune independiente admite capacidades increíbles de administración de aplica
 - El cliente de Windows 10 debe: 
     - haberse unido a Azure Active Directory (AAD) o Azure Active Directory híbrido, y
     - haberse inscrito en Intune (administrado por MDM)
-- El tamaño de la aplicación Windows está limitado a 2 GB por aplicación en la versión preliminar pública 
+- El tamaño de la aplicación Windows está limitado a 8 GB por aplicación en la versión preliminar pública 
 
 > [!NOTE]
 > Actualmente estamos probando las ediciones Pro y Education de Windows 10 versión 1607 y estamos deseosos de recibir sus comentarios.
@@ -109,6 +92,11 @@ De forma bastante similar a una aplicación de línea de negocio (LOB), puede ag
 3.  Agregar la línea de comandos de desinstalación completa para desinstalar la aplicación a partir del GUID de la aplicación. 
 
     Por ejemplo: `msiexec /x “{12345A67-89B0-1234-5678-000001000000}”`
+
+    > [!NOTE]
+    > Puede configurar una aplicación Win32 para instalarla en un contexto de **usuario** o **sistema**. El contexto de **usuario** hace referencia a un único usuario determinado. El contexto de **sistema** hace referencia a todos los usuarios de un dispositivo Windows 10.
+    >
+    > Los usuarios finales no tienen que iniciar sesión en el dispositivo para instalar las aplicaciones Win32.
 
 4.  Cuando haya terminado, seleccione **Aceptar**.
 
@@ -233,7 +221,6 @@ Normalmente los registros de agente en el equipo cliente se encuentran en `C:\Pr
 ### <a name="troubleshooting-areas-to-consider"></a>Áreas de la solución de problemas para tener en cuenta
 - Compruebe la orientación para asegurarse de que el agente está instalado en el dispositivo. Si una aplicación Win32 o PowerShell se orientan a un grupo, se creará una directiva de instalación del agente para el grupo de seguridad.
 - Compruebe la versión del sistema operativo: Windows 10 1607 y versiones posteriores.  
-- ¿El usuario de AAD ha iniciado sesión en el equipo cliente?
 - Compruebe que Windows 10 SKU, Windows 10 S o las versiones de Windows que se ejecutan con el modo S habilitado no admiten la instalación de MSI.
 
 ## <a name="next-steps"></a>Pasos siguientes

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/18/2017
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: aa7ecff7-8579-4009-8fd6-e17074df67de
 ms.reviewer: davidra
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a2d2d7eb609db07d4f41254f2937120412f2f4b1
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: e1adfdba49ab8ac5ae55f792e71a99f4aef4c8a6
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49643049"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236159"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>Integración del control de acceso de red (NAC) con Intune
 
@@ -37,7 +37,7 @@ Si el dispositivo está inscrito y es compatible con Intune, la solución de NAC
 
 Los dispositivos que se están sincronizando activamente a Intune no pueden pasar de **Compatible** / **No compatible** a **No sincronizado** (o **Desconocido**). El estado **Desconocido** está reservado a los dispositivos recién inscritos cuyo cumplimiento aún no se ha evaluado.
 
-En el caso de los dispositivos cuyo acceso a los recursos está bloqueado, el servicio de bloqueo debe redirigir a todos los usuarios al [portal de administración](https://portal.manage.microsoft.com) para determinar por qué el dispositivo está bloqueado.  Si los usuarios visitan esta página, la compatibilidad de sus dispositivos se vuelve a evaluar sincrónicamente.
+En el caso de los dispositivos cuyo acceso a los recursos está bloqueado, el servicio de bloqueo debe redirigir a todos los usuarios al [portal de administración](https://portal.manage.microsoft.com) para determinar por qué el dispositivo está bloqueado.  Si los usuarios visitan esta página, la compatibilidad de sus dispositivos se vuelve a evaluar sincrónicamente.
 
 ## <a name="nac-and-conditional-access"></a>NAC y acceso condicional
 
@@ -54,14 +54,24 @@ La siguiente lista presenta información general sobre cómo funciona la integra
 3. Configure la solución de partner de NAC para la autenticación de certificados.
 4. El usuario se conecta al punto de acceso de Wi-Fi de la empresa o realiza una solicitud de conexión VPN.
 5. La solución de partner de NAC reenvía la información del dispositivo a Intune y pregunta a Intune sobre el estado de cumplimiento y la inscripción de dispositivos.
-6. Si el dispositivo no es compatible o no está inscrito, la solución de partner de NAC indica al usuario que inscriba o corrija el cumplimiento del dispositivo.
-7. El dispositivo intenta volver a comprobar su cumplimiento o su estado de inscripción.
+6. Si el dispositivo no es compatible o no está inscrito, la solución del asociado de NAC indica al usuario que inscriba o corrija el cumplimiento del dispositivo.
+7. El dispositivo intenta volver a comprobar su cumplimiento y su estado de inscripción, cuando procede.
 8. Una vez que el dispositivo está inscrito y es compatible, la solución de partner de NAC obtiene el estado de Intune.
 9. La conexión se establece correctamente lo que permite al dispositivo tener acceso a los recursos de empresa.
+
+## <a name="use-nac-on-your-ios-devices"></a>Usar NAC en dispositivos iOS
+
+El control de acceso de red no se admite actualmente para los siguientes clientes de VPN en iOS:
+-   Cisco AnyConnect
+-   F5 Access
+-   SSO de Citrix  
+
+Estamos trabajando con nuestros asociados para lanzar una solución de NAC para estos clientes más recientes. Cuando haya una solución lista, se actualizará este artículo con información adicional. 
+
 
 ## <a name="next-steps"></a>Pasos siguientes
 
 - [Integrar Cisco ISE con Intune](http://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)
 - [Integrar Citrix NetScaler con Intune](http://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html)
-- [Integrar HP Aruba Clear Pass con Intune](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=23757)
+- [Integrar HP Aruba Clear Pass con Intune](https://support.arubanetworks.com/Documentation/tabid/77/DMXModule/512/Command/Core_Download/Default.aspx?EntryId=31271)
 - [Integrar Squadra Security Removable Media Manager (secRMM) con Intune](http://www.squadratechnologies.com/StaticContent/ProductDownload/secRMM/9.9.0.0/secRMMIntuneAccessControlSetupGuide.pdf)

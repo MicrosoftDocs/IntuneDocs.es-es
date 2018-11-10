@@ -7,12 +7,12 @@ ms.service: microsoft-intune
 ms.topic: quickstart
 ms.date: 09/21/2018
 ms.author: erikje
-ms.openlocfilehash: 66426e9e22c2624b9828440906e3b1b947f4b60a
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: 33c0d4f3ee3b29be47540c92425f76a3f1dcc044
+ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581802"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50410776"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>Inicio rápido: Crear y asignar un rol personalizado
 
@@ -47,7 +47,7 @@ Cuando se crea un rol personalizado, se pueden establecer permisos para una ampl
 
 Para que el operador de seguridad pueda usar los nuevos permisos, debe asignar el rol a un grupo que contenga el usuario de seguridad.
 
-1. En Intune, elija **Roles** > **Todos los roles** > **Remote device helpdesk** (Departamento de soporte técnico del dispositivo remoto).
+1. En Intune, elija **Roles** > **Todos los roles** > **Security operations** (Operaciones de seguridad).
 2. En **Roles de Intune**, elija **Asignaciones** > **Asignar**.
 3. En el cuadro **Nombre de asignación**, escriba *Oper. seg.*
 4. Elija **Miembros (grupos)** > **Agregar**.

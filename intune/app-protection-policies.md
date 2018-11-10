@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 10/30/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: f31b2964-e932-4cee-95c4-8d5506966c85
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3478308e8e2c219631d0df864ca2add6cc57cda2
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: 3a7285edfa2dcb50cc5fd28e4fefc1be4c3b9e10
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075870"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679280"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Creación y asignación de directivas de protección de aplicaciones
 
@@ -30,29 +30,31 @@ Descubra cómo crear directivas de protección de aplicaciones de Microsoft Intu
 
 ## <a name="before-you-begin"></a>Antes de comenzar
 
-Las directivas de protección de aplicaciones se pueden aplicar a aplicaciones que se ejecutan en dispositivos que podrían estar o no administrados por Intune. Para obtener una descripción más detallada de cómo funcionan las directivas de protección de aplicaciones y los escenarios admitidos por las directivas de protección de aplicaciones de Intune, consulte [What is Microsoft Intune app protection policies](app-protection-policy.md) (¿Qué son las directivas de protección de aplicaciones de Microsoft Intune?).
+Las directivas de protección de aplicaciones se pueden aplicar a aplicaciones que se ejecutan en dispositivos que podrían estar o no administrados por Intune. Para obtener una descripción más detallada de cómo funcionan las directivas de protección de aplicaciones y los escenarios admitidos por las directivas de protección de aplicaciones de Intune, vea [¿Qué son las directivas de protección de aplicaciones?](app-protection-policy.md)
 
 Si desea acceder a una lista de aplicaciones compatibles con MAM, vea la [lista de aplicaciones de MAM](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
 Para obtener información acerca de cómo agregar aplicaciones de línea de negocio (LOB) de su organización a Microsoft Intune para prepararse para las directivas de protección de aplicaciones, consulte [Incorporación de aplicaciones a Microsoft Intune](apps-add.md).
 
 ##  <a name="create-an-app-protection-policy"></a>Crear directivas de protección de aplicaciones
-1. En la carga de trabajo **Aplicaciones cliente**, seleccione **Directivas de protección de aplicaciones** en la sección **Administrar**. Al seleccionar esa opción, se abrirán los detalles de **Directivas de protección de aplicaciones**, donde creará nuevas directivas y editará las existentes.
-2. Elija **Agregar una directiva**.
+1. En el portal de Intune, vaya a **Aplicaciones cliente** > **Directivas de protección de aplicaciones**. Al seleccionar esa opción, se abrirán los detalles de **Directivas de protección de aplicaciones**, donde creará nuevas directivas y editará las existentes.
+2. Seleccione **Crear directiva**.
 
    ![Captura de pantalla de la hoja "Agregar directiva"](./media/app-protection-add-policy.png)
 
-3. Escriba un nombre para la directiva, agregue una descripción breve y seleccione el tipo de plataforma para la directiva. Si resulta necesario, puede crear más de una directiva para cada plataforma.
+3. Especifique un nombre para la directiva, agregue una descripción breve y seleccione el tipo de plataforma para la directiva. Puede crear más de una directiva para cada plataforma.
 
-4. Seleccione **Aplicaciones** para abrir la hoja **Aplicaciones**, donde se muestra una lista de las aplicaciones disponibles. Seleccione una o varias aplicaciones de la lista que quiera asociar a la directiva que está creando.
+4. Seleccione **Aplicaciones** para abrir la hoja **Aplicaciones**, donde se muestra una lista de las aplicaciones disponibles. Seleccione una o varias aplicaciones de la lista que quiera asociar a la directiva que está creando. Seleccione al menos una aplicación para crear una directiva.  
+
 5. Una vez que haya seleccionado las aplicaciones, elija **Seleccionar** para guardar la selección.
 
-    > [!IMPORTANT]
-    > Debe seleccionar al menos una aplicación para crear una directiva.
+6. En la hoja **Agregar una directiva**, seleccione **Configurar los valores obligatorios** para abrir **Configuración**.
 
-6. Elija **Configurar los valores obligatorios** en la hoja **Agregar directiva** para abrir **Configuración**.
+   Hay tres categorías de configuraciones de directiva:
+   - **Reubicación de datos** : este grupo incluye los controles de prevención de pérdida de datos (DLP), como restricciones para cortar, copiar, pegar y guardar como. Esta configuración determina cómo los usuarios interactúan con los datos en las aplicaciones.
+   - **Requisitos de acceso**: este grupo contiene las opciones de PIN por aplicación que determinan cómo el usuario final tiene acceso a las aplicaciones en un contexto de trabajo.  
+   - **Inicio condicional** : este grupo contiene configuraciones como la configuración mínima del sistema operativo, la detección de dispositivos liberados o modificados y períodos de gracia sin conexión.
 
-   Existen dos categorías de configuración de directivas: **Reubicación de datos** y **Acceso**.  Las directivas de reubicación de datos se aplican al movimiento de datos dentro y fuera de las aplicaciones. Las directivas de acceso determinan cómo accede el usuario final a las aplicaciones en un contexto de trabajo.
    Para comenzar, la configuración de directiva tiene valores predeterminados. Si los valores predeterminados cumplen sus requisitos, no resulta necesario realizar ningún cambio.
 
    > [!TIP]
@@ -61,17 +63,17 @@ Para obtener información acerca de cómo agregar aplicaciones de línea de nego
 7. Seleccione **Aceptar** para guardar esta configuración. De esta forma, volverá a la hoja **Agregar directiva**.
 8. Seleccione **Crear** para crear la directiva y guardar la configuración.
 
-Cuando termine de crear una directiva como se describe en el procedimiento anterior, no se implementará en ningún usuario. Para implementar una directiva, consulte [Implementar una directiva para los usuarios](app-protection-policies.md#deploy-a-policy-to-users).
+Las directivas creadas no se implementan para los usuarios hasta que no se haga de forma explícita. Para implementar una directiva, consulte [Implementar una directiva para los usuarios](app-protection-policies.md#deploy-a-policy-to-users).
 
 ## <a name="deploy-a-policy-to-users"></a>Implementar una directiva para los usuarios
 
 1. En el panel **Directivas de protección de aplicaciones**, seleccione una directiva.
 
-2. En el panel **Directiva**, elija **Asignaciones**, lo que abrirá el panel **Protección de aplicaciones de Intune - Asignaciones**. Elija **Seleccionar grupos para incluir** en el panel **Asignaciones** para abrir el panel **Seleccionar grupos para incluir**.
+2. En el panel ***Intune App Protection**, seleccione **Asignaciones** para abrir el panel **Intune App Protection: Asignaciones**. En la pestaña *Incluir*, seleccione **Seleccionar grupos para incluir**. 
 
    ![Captura de pantalla del panel Asignaciones con la opción Seleccionar grupos para incluir resaltada](./media/app-protection-policy-add-users.png)
 
-3.  Se mostrará una lista de grupos de usuarios en el panel **Add user group** (Agregar grupo de usuarios). En esta aparecen todos los grupos de seguridad de su **Azure Active Directory**. Seleccione los grupos de usuarios a los que quiera aplicar esta directiva y, después, elija **Seleccionar**. Al elegir **Seleccionar**, la directiva se implementa para los usuarios.
+3.  Se muestra una lista de todos los grupos de seguridad en su entorno de **Azure Active Directory**. Seleccione los grupos de usuarios a los que quiera aplicar esta directiva y, después, elija **Seleccionar**. Al elegir **Seleccionar**, la directiva se implementa para los usuarios.
 
     ![Captura de pantalla del panel Add user group (Agregar grupo de usuarios) que muestra la lista de usuarios de Azure Active Directory](./media/azure-ad-user-group-list.png)
 
@@ -87,24 +89,24 @@ Los usuarios finales pueden descargar las aplicaciones desde App Store o Google 
 * [What to expect when your iOS app is managed by app protection policies](app-protection-enabled-apps-ios.md) (Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones)
 
 ##  <a name="change-existing-policies"></a>Cambiar las directivas existentes
-Puede editar una directiva existente y aplicarla a los usuarios objetivo. Sin embargo, al cambiar las directivas existentes, los usuarios que ya han iniciado sesión en las aplicaciones no verán los cambios durante un período de 8 horas.
+Puede editar una directiva existente y aplicarla a los usuarios objetivo. Sin embargo, al cambiar las directivas existentes, los usuarios que ya han iniciado sesión en las aplicaciones no verán los cambios durante un período de ocho horas.
 
-Para ver el efecto de los cambios inmediatamente, el usuario final tendrá que salir de la aplicación y volver a iniciar sesión.
+Para ver el efecto de los cambios inmediatamente, el usuario final debe cerrar sesión en la aplicación y volver a iniciarla.
 
 ### <a name="to-change-the-list-of-apps-associated-with-the-policy"></a>Para cambiar la lista de aplicaciones asociadas con la directiva
 
-1.  En el panel **Directivas de protección de aplicaciones**, elija la directiva que quiera cambiar para abrir un panel específico para dicha directiva seleccionada.
+1.  En el panel **Directivas de protección de aplicaciones**, seleccione la directiva que desea modificar.
 
-2.  En el panel de la directiva, elija **Aplicaciones destinatarias** para abrir la lista de aplicaciones.
+2.  En el panel *Intune App Protection*, seleccione **Aplicaciones de destino** para abrir la lista de aplicaciones.
 
-3.  Quite o agregue aplicaciones de la lista y seleccione el icono **Guardar** para guardar los cambios.
+3.  Quite o agregue aplicaciones de la lista y luego seleccione el icono **Guardar** para guardar los cambios.
 
 ### <a name="to-change-the-list-of-user-groups"></a>Para cambiar la lista de grupos de usuarios
 
 
-1.  En el panel **Directivas de protección de aplicaciones**, elija la directiva que quiera cambiar para abrir el panel específico para dicha directiva seleccionada.
+1.  En el panel **Directivas de protección de aplicaciones**, seleccione la directiva que desea modificar.
 
-2.  En el panel de la directiva, elija **Asignaciones** para abrir el panel **Protección de aplicaciones de Intune - Asignaciones**, que muestra la lista de los grupos de usuarios actuales que tienen esta directiva.
+2.  En el panel *Intune App Protection*, seleccione **Asignaciones** para abrir el panel **Intune App Protection: Asignaciones** que muestra la lista de los grupos de usuarios actuales que tienen esta directiva.
 
 3.  Para agregar un nuevo grupo de usuarios a la directiva, en la pestaña **Incluir**, elija **Seleccionar grupos para incluir** y seleccione el grupo de usuarios. Elija **Seleccionar** para implementar la directiva en el grupo seleccionado.
 
@@ -112,23 +114,25 @@ Para ver el efecto de los cambios inmediatamente, el usuario final tendrá que s
 
 ### <a name="to-change-policy-settings"></a>Para cambiar la configuración de directiva
 
-1.  En el panel **Directivas de protección de aplicaciones**, elija la directiva que quiera cambiar para abrir un panel específico para dicha directiva seleccionada.
+1.  En el panel **Directivas de protección de aplicaciones**, seleccione la directiva que desea modificar.
 
-2.  Seleccione **Configuración de directiva** para abrir el panel **Configuración de directiva**.
+2.  En el panel *Intune App Protection*, seleccione **Propiedades** para abrir la lista de áreas de configuración que puede modificar. 
 
-3.  Cambie la configuración y elija el icono **Guardar** para guardar los cambios.
+3.  Seleccione el área de configuración con el valor que desea modificar, como **Reubicación de datos** o **Requisitos de acceso**. A continuación, cambie la configuración con los nuevos valores.
+
+4.  Seleccione el icono **Guardar** para guardar los cambios. Repita el proceso para seleccionar un área de configuración y modificarla y, a continuación, guarde los cambios, hasta que se completen todos los cambios. A continuación, puede cerrar el panel *Intune App Protection: Propiedades*. 
 
 ## <a name="target-app-protection-policies-based-on-device-management-state"></a>Destinar directivas de protección de aplicaciones en función del estado de administración del dispositivo
-En muchas organizaciones es habitual permitir que los usuarios finales puedan usar los dispositivos administrados de administración de dispositivos móviles (MDM) de Intune (como los dispositivos propiedad de las empresas) y los dispositivos no administrados que únicamente están protegidos con directivas de protección de aplicaciones de Intune (como los dispositivos BYOD).
+En muchas organizaciones es habitual permitir que los usuarios finales puedan usar los dispositivos administrados de administración de dispositivos móviles (MDM) de Intune (como los dispositivos propiedad de las empresas) y los dispositivos no administrados que únicamente están protegidos con directivas de protección de aplicaciones de Intune. Los dispositivos no administrados a menudo se conocen como Bring Your Own Devices (BYOD).
 
-Dado que las directivas de protección de aplicaciones de Intune están destinadas a la identidad de un usuario, la configuración de protección de un usuario suele aplicarse tanto a los dispositivos inscritos (administrados con MDM) como a los dispositivos no inscritos (sin MDM). Por lo tanto, puede destinar una directiva de protección de aplicaciones de Intune a dispositivos iOS y Android inscritos y no inscritos de Intune. Puede tener una directiva de protección para los dispositivos no administrados a la que se apliquen unos controles de prevención de pérdida de datos (DLP) estrictos y una directiva de protección independiente para los dispositivos administrados con MDM en la que los controles DLP pueden ser un poco menos restrictivos. 
+Dado que las directivas de protección de aplicaciones de Intune están destinadas a la identidad de un usuario, la configuración de protección de un usuario puede aplicarse tanto a los dispositivos inscritos (administrados con MDM) como a los dispositivos no inscritos (sin MDM). Por lo tanto, puede destinar una directiva de protección de aplicaciones de Intune a dispositivos iOS y Android inscritos y no inscritos de Intune. Puede tener una directiva de protección para los dispositivos no administrados a la que se apliquen unos controles de prevención de pérdida de datos (DLP) estrictos y una directiva de protección independiente para los dispositivos administrados con MDM en la que los controles DLP pueden ser un poco menos restrictivos. 
 
-Para crear estas directivas, vaya a **Aplicaciones cliente** > **Directivas de protección de aplicaciones** en la consola de Intune y haga clic en **Agregar una directiva**. También puede editar una directiva de protección de aplicaciones existente. Si quiere que la directiva de protección de aplicaciones se aplique a los dispositivos administrados y a los no administrados, confirme que la opción **Destinar a todos los tipos de aplicaciones** esté establecida en **Sí**, que es el valor predeterminado. Si quiere efectuar una asignación granular según el estado de administración, establezca la opción **Destinar a todos los tipos de aplicaciones** en **No**. 
+Para crear estas directivas, vaya a **Aplicaciones cliente** > **Directivas de protección de aplicaciones** en la consola de Intune y haga clic en **Crear directiva**. También puede editar una directiva de protección de aplicaciones existente. Para que la directiva de protección de aplicaciones se aplique a los dispositivos administrados y a los no administrados, confirme que la opción **Destinar a todos los tipos de aplicaciones** esté establecida en **Sí**, que es el valor predeterminado. Si quiere efectuar una asignación granular según el estado de administración, establezca **Destinar a todos los tipos de aplicaciones** en **No**. 
 
-![Captura de pantalla de la hoja Agregar una directiva con destino a todos los tipos de aplicaciones seleccionadas](./media/app-protection-policies-target-all.png)
+![Captura de pantalla de la hoja Agregar una directiva con la opción Destinar a todos los tipos de aplicaciones seleccionada](./media/app-protection-policies-target-all.png)
 
 Para iOS, se requieren ajustes adicionales de configuración de la aplicación para dirigir la configuración de la aplicación a las aplicaciones en dispositivos inscritos en Intune:
-- **IntuneMAMUPN** debe configurarse para todas las aplicaciones administradas de MDM.  Para más información, vea [Administración de transferencias de datos entre aplicaciones iOS en Microsoft Intune](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
+- **IntuneMAMUPN** debe configurarse para todas las aplicaciones administradas de MDM. Para más información, vea [Administración de transferencias de datos entre aplicaciones iOS en Microsoft Intune](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
 - **IntuneMAMDeviceID** debe configurarse para todas las aplicaciones administradas de MDM de LOB y de terceros. **IntuneMAMDeviceID** debe configurarse en el token de identificador de dispositivo. Por ejemplo, `key=IntuneMAMDeviceID, value={{deviceID}}`. Para obtener más información, vea [Agregar directivas de configuración de aplicaciones para dispositivos iOS administrados](https://docs.microsoft.com/intune/app-configuration-policies-use-ios).
 - Si solo está configurado **IntuneMAMDeviceID**, la aplicación Intune considerará el dispositivo como no administrado.  
 

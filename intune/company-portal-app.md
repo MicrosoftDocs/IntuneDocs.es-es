@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/11/2018
+ms.date: 10/22/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 01de402a48362f04680c569c40a812b6a4b83cc6
-ms.sourcegitcommit: 38afcff149f9c86e92e5f1eccaa927859c395926
+ms.openlocfilehash: ce31832421ece9008e1526e54ba3e9aa2780c666
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49307413"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236295"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Configuración de la aplicación Portal de empresa de Microsoft Intune
 
@@ -60,28 +60,48 @@ Escriba la información de soporte técnico de su empresa para que los empleados
 | **Información adicional**| 120 | Se muestra en la página **Contacto de TI**. |
 
 
-## <a name="company-branding-customization"></a>Personalización de la marca de empresa       
-Puede personalizar su portal de empresa con su logotipo de empresa, nombre de empresa, color de tema y fondo. Para obtener rápidamente una vista previa de la configuración de personalización de marca sin un dispositivo de prueba, puede ir a [portal.manage.microsoft.com](https://portal.manage.microsoft.com). Tenga en cuenta que el logotipo que cargue se usará en las plantillas de correo electrónico.      
+## <a name="company-identity-branding-customization"></a>Personalización de la marca de identidad de la empresa      
+Puede personalizar su portal de empresa con su logotipo de empresa, nombre de empresa, color de tema y fondo.     
 
-### <a name="theme-color"></a>Color del tema
+### <a name="theme-color-and-logo-in-the-company-portal"></a>Color de tema y logotipo en el Portal de empresa
 Aplique un color de tema al Portal de empresa. Seleccione un color estándar o escriba un código hexadecimal de seis dígitos de un color personalizado.
 
 |Nombre de campo|Más información|
 |---|---|
-|**Tipo de color**| Seleccione el color del tema que se aplicará al portal de empresa. Puede elegir un color estándar o escribir un código hexadecimal concreto. |
-|**Elegir color** o **Código de color hexadecimal**| Seleccione el color del tema que se aplicará al portal de empresa. Puede elegir un color estándar o escribir un código hexadecimal concreto. Estas opciones se proporcionan en función del **Tipo de color** que seleccione.  |
+|**Seleccionar un color estándar o escribir un código hexadecimal de seis dígitos**| Elija **Estándar** para seleccionar visualmente un color. Elija **Personalizado** para seleccionar un color específico según un valor de código hexadecimal.|
+|**Elegir color de tema**| Seleccione el color del tema que se aplicará al portal de empresa. Puede elegir un color estándar o escribir un código hexadecimal concreto. |
+|**Mostrar**| Seleccione si se mostrará **Nombre y logotipo de empresa**, **Company logo only** (Solo logotipo de empresa) o **Company name only** (Solo nombre de empresa). |
+|**Cargar el logotipo de empresa**|Puede cargar el logotipo de la empresa para que se muestre en el Portal de empresa. Tenga en cuenta que el color del texto se selecciona automáticamente para proporcionar el nivel más alto de contraste. Para obtener la mejor apariencia, cargue un logotipo con un fondo transparente.<p><ul><li>Tamaño máximo de imagen: 400 x 400 px</li><li>Tamaño máximo de archivo: 750 KB</li><li>Tipo de archivo: PNG, JPG o JPEG</li></ul>|
 
-### <a name="company-logo"></a>Logotipo de la empresa
-Cargue el logotipo de la empresa para que esté visible en toda la experiencia de usuario de Intune.
+Después de cargar el logotipo, en el área de vista previa se mostrará el logotipo de con el color del tema. Si decide mostrar el nombre de la empresa, se mostrará en blanco o negro en el Portal de empresa y se seleccionará automáticamente para proporcionar el nivel más alto de contraste según el color del tema. En el área de vista previa de la pantalla no se mostrará el nombre de la empresa. 
+
+### <a name="logo-to-use-on-white-or-light-backgrounds"></a>Logotipo para usar en fondos claros o blancos
+Elija un logotipo que encaje mejor en fondos blancos o claros.
 
 |Nombre de campo|Más información|
 |---|---|
-|**Mostrar logotipo de la empresa**|Si habilita esta opción, puede cargar el logotipo de su empresa para que se muestre en el portal de empresa. Puede cargar dos logotipos: uno que se mostrará cuando el fondo del portal de empresa sea de color blanco y otro que se mostrará cuando el fondo del portal de empresa use el color de tema seleccionado. |
-|**Upload a logo to use on theme color backgrounds** (Cargar un logotipo para usarlo en fondos de color de tema)| Esta opción está disponible si ha elegido mostrar el logotipo de la empresa. El logotipo debe ser un archivo .png o .jpg, con una resolución máxima de 400 x 400 píxeles y un tamaño de 750 KB o menos. |
-|**Upload logo to use on light backgrounds** (Cargar un logotipo para usarlo en fondos de color claro)| Esta opción está disponible si ha elegido mostrar el logotipo de la empresa. El logotipo debe ser un archivo .png o .jpg, con una resolución máxima de 400 x 400 píxeles y un tamaño de 750 KB o menos. |
-|**Show company name next to logo** (Mostrar el nombre de la empresa junto al logotipo)| Seleccione esta opción para mostrar el nombre de la empresa que escribió junto al logotipo cargado. |
+|**Cargar el logotipo**| Esta opción está disponible si ha elegido mostrar el logotipo de la empresa. Para obtener la mejor apariencia, cargue un logotipo con un fondo transparente.<p><ul><li>Tamaño máximo de imagen: 400 x 400 px</li><li>Tamaño máximo de archivo: 750 KB</li><li>Tipo de archivo: PNG, JPG o JPEG</li></ul>|
 
-Después de guardar los cambios, puede elegir **Preview your settings in the Intune Web Portal** (Vista previa de la configuración en el portal web de Intune).
+### <a name="brand-image-for-company-portal"></a>Imagen de marca del Portal de empresa
+
+Muestra una imagen de marca que refleja la marca de la empresa. Se está agregando compatibilidad con imágenes de marca en las aplicaciones de Portal de empresa, pero puede que no estén visibles en todas las plataformas.
+
+|Nombre de campo|Más información|
+|---|---|
+|**Upload your brand image** (Cargar imagen de marca)| Esta opción está disponible para que pueda mostrar una imagen de fondo en la página de perfil del usuario en la aplicación Portal de empresa.<p><ul><li>Ancho de imagen recomendado: mayor que 1125 px, pero no inferior a 640 px</li><li>Tamaño máximo de imagen: 1,3 MB</li><li>Tipo de archivo: PNG, JPG o JPEG</li></ul>|
+
+La imagen de marca adecuada puede mejorar la confianza del usuario en el Portal de empresa, ya que presenta un fuerte sentido de marca de la empresa. Estas son algunas sugerencias que puede tener en cuenta para adquirir, elegir y optimizar la imagen para el Portal de empresa. 
+
+- Póngase en contacto con el departamento de marketing o imágenes de la empresa. Es posible que ya tengan un conjunto aprobado de imágenes de marca. Es posible que también le ayuden a optimizar las imágenes según sea necesario. 
+
+- Considere tanto la composición horizontal como la vertical. La imagen debe tener suficiente espacio de fondo rodeando el punto focal. La imagen se puede recortar de forma distinta según el tamaño y la orientación del dispositivo. 
+
+- Evite usar una imagen estándar genérica. La imagen debe reflejar la marca de la empresa y resultar familiar a los usuarios. Si no tiene una, es mejor no usar ninguna que usar una imagen genérica que no aporte ningún significado para el usuario. 
+
+- Quite los metadatos que sean innecesarios. El archivo de imagen puede incluir metadatos, como el perfil de la cámara, la ubicación geográfica, el título, la leyenda, etc. Use una herramienta de optimización de imágenes para eliminar esta información y mantener la calidad al tiempo que cumple los límites de tamaño de archivo. 
+
+Después de guardar los cambios, puede elegir **Preview your settings** (Vista previa de la configuración) en el portal web de Intune, en la parte superior de la hoja para ver qué aspecto tendrá la configuración. Tenga en cuenta que solo podrá obtener una vista previa de la imagen de marca en un dispositivo iOS y no el portal web de Intune. 
+
 
 ## <a name="windows-company-portal-keyboard-shortcuts"></a>Métodos abreviados de teclado del Portal de empresa de Windows
 

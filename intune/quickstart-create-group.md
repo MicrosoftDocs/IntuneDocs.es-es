@@ -15,12 +15,12 @@ ms.assetid: 723f4b4e-3090-4811-84ff-6af652abea5a
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3a4468f2e6919349095d934790740afc8c347282
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: 2b52265bb9b3df800c0e13450a2154e46098a933
+ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581797"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50410827"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>Inicio rápido: Crear un grupo para administrar usuarios
 
@@ -37,21 +37,23 @@ Si no tiene una suscripción a Intune, [regístrese para obtener una cuenta de p
 
 ## <a name="sign-in-to-intune"></a>Iniciar sesión en Intune
 
-Inicie sesión en [Intune](https://aka.ms/intuneportal) como administrador global o administrador de servicios de Intune. Intune se encuentra en Azure Portal, si selecciona **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+Inicie sesión en [Intune](https://aka.ms/intuneportal) como [administrador global o administrador de servicios de Intune](users-add.md#types-of-administrators). Si ha creado una suscripción de prueba de Intune, la cuenta con la que creó la suscripción es el administrador global.
 
 ## <a name="create-a-group"></a>Crear un grupo
+
+Creará un grupo que se usará más adelante en esta serie de inicio rápido.
+
 1. Después de abrir el panel **Microsoft Intune**, seleccione **Grupos** > **Nuevo grupo**.
-2. En el panel **Grupo**, seleccione **Tipo de grupo** > **Seguridad**.
+2. En el cuadro desplegable **Tipo de grupo**, seleccione **Seguridad**.
 3. Establezca el **Nombre** en "Contoso Testers" (Evaluadores de Contoso) y agregue una **Descripción** al grupo.
-4. Establezca el **Tipo de pertenencia** como **Asignado**. 
-5. Haga clic en **Miembros** y seleccione **Miembros** para el grupo en la lista existente.
+4. Establezca **Tipo de miembro** en **Asignado**. 
+5. Haga clic en **Miembros** y seleccione uno o varios miembros para el grupo a partir de la lista existente.
 
     ![Captura de pantalla de creación de un grupo en Microsoft Intune](./media/quickstart-use-groups-01.png)
 
-6. Haga clic en **Seleccionar**.
-7. Haga clic en **Crear**.
+6. Haga clic en **Seleccionar** > **Crear**.
 
-Si ha creado correctamente el grupo, aparecerá en la lista **Todos los grupos**. 
+Cuando haya creado correctamente el grupo, aparecerá en la lista **Todos los grupos**. 
 
 ## <a name="next-steps"></a>Pasos siguientes
 

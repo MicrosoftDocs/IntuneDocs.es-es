@@ -15,12 +15,12 @@ ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 99d217c2d1960a1ca163bf697bfbd28e5406b58f
-ms.sourcegitcommit: f69f2663ebdd9c1def68423e8eadf30f86575f7e
+ms.openlocfilehash: 25236453f0440978eda34e3a1a8b1b93daf4c6e1
+ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "49075853"
+ms.lasthandoff: 11/05/2018
+ms.locfileid: "51025175"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>¿Qué es la administración de aplicaciones de Microsoft Intune?
 
@@ -94,7 +94,7 @@ Para más información sobre esta sección, vea [Administración de aplicaciones
 - **Licencias de aplicaciones**: vea, asigne y supervise las aplicaciones compradas por volumen de las tiendas de aplicaciones. Para obtener más información, vea:
     - [Aplicaciones de programa compradas por volumen de iOS](vpp-apps-ios.md).
     - [Aplicaciones adquiridas por volumen de la Microsoft Store para Empresas](windows-store-for-business.md).
-- **Aplicaciones detectadas**: vea todas las aplicaciones que asignó Intune y que están instaladas en un dispositivo. Para obtener más información, consulte [Monitor app information and assignments with Microsoft Intune](apps-monitor.md#device-and-user-status-graphs) (Supervisión de información de aplicación y asignaciones con Microsoft Intune).
+- **Aplicaciones detectadas**: vea las aplicaciones que ha asignado Intune o que están instaladas en un dispositivo. Para obtener más información, vea [Ver detalles del dispositivo en Intune](device-inventory.md).
 - **Estado de instalación de la aplicación**: vea el estado de una asignación de aplicación que ha creado. Para obtener más información, consulte [Monitor app information and assignments with Microsoft Intune](apps-monitor.md#device-and-user-status-graphs) (Supervisión de información de aplicación y asignaciones con Microsoft Intune).
 - **Estado de protección de la aplicación**: vea el estado de una directiva de protección de aplicaciones de un usuario que haya seleccionado.
 - **Registros de auditoría**: vea la actividad relacionada con la aplicación de Intune desarrollada de todos los administradores de TI.

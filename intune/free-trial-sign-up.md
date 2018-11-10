@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 11/01/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 37445cb2536e02937cf3002dc1cb56ab4b78f12f
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: 2f150db2e1d5fbc8e08bb7f7fcee50f0eda23ca7
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581400"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915689"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Inicio rápido: Prueba gratuita de Microsoft Intune 
 
@@ -70,20 +70,27 @@ Probar Intune es gratis durante 30 días. Si ya dispone de una cuenta profesiona
 
 Si se registra en una versión de prueba, recibirá también un mensaje de correo electrónico con la información de la cuenta en la dirección que haya proporcionado durante el proceso de registro. Este mensaje confirma que la versión de prueba está activa.
 
+> [!TIP]
+> Al trabajar con Azure Portal, puede que obtenga mejores resultados si trabaja con un explorador en modo normal en lugar de en modo privado.
+
 ## <a name="set-the-mdm-authority-to-intune"></a>Establecer la entidad de MDM en Intune
 
-La configuración de la entidad de administración de dispositivos móviles (MDM) determina cómo se administran los dispositivos. Como administrador de TI, debe establecer una entidad de MDM antes de que los usuarios puedan inscribir dispositivos para la administración.
+Después de iniciar sesión en Azure Portal y seleccionar Intune, puede ver un banner naranja que indica que aún no ha establecido la entidad de MDM. La configuración de la entidad de administración de dispositivos móviles (MDM) determina cómo se administran los dispositivos. La entidad de MDM debe establecerse antes de que los usuarios puedan inscribir dispositivos para la administración.
 
 Para establecer la entidad de MDM en Intune, siga estos pasos.
 
 1. Abra una nueva ventana del explorador y escriba **https://portal.azure.com** en la barra de direcciones. 
 2. Elija **Todos los servicios** > **Microsoft Intune**.
-3. Seleccione el banner de color naranja para abrir el ajuste **Entidad de administración de dispositivos móviles**. 
+3. Seleccione el banner que indica que no ha habilitado la administración de dispositivos o, si no ve el banner de inmediato, seleccione **Inscripción de dispositivos**. Se mostrará la hoja **Elegir entidad de MDM** si aún no ha habilitado la administración de dispositivos.
 
     > [!NOTE]
     > El banner naranja aparece únicamente si aún no ha establecido la entidad de MDM.
 
-4. En **Entidad de administración de dispositivos móviles**, establezca la entidad de MDM en **Entidad de Intune MDM**.
+    ![Imagen de la hoja Elegir entidad de MDM](./media/choose-mdm-authority.png) 
+
+4. En **Elegir entidad de MDM**, establezca la entidad de MDM en **Entidad de MDM de Intune**.
+
+Para obtener más información sobre la entidad de MDM, vea [Establecer la entidad de administración de dispositivos móviles](mdm-authority-set.md).
 
 ## <a name="configure-your-custom-domain-name-optional"></a>Configurar el nombre de dominio personalizado (opcional)
 
@@ -120,4 +127,4 @@ Puede usar dos portales:
 En este tutorial de inicio rápido, ha creado una suscripción gratuita para probar Intune en un entorno de prueba y, opcionalmente, ha configurado un nombre de dominio personalizado. Para obtener más información sobre Microsoft Intune, pase al siguiente tutorial en el que se explica cómo agregar usuarios y asignar licencias.
 
 > [!div class="nextstepaction"]
-> [Crear un usuario](get-started-users.md)
+> [Crear un usuario](quickstart-create-user.md)

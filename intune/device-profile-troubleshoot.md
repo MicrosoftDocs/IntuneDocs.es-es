@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d013ad2aefbfee5eea8f240277b0f84c2c6bf05a
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 05dfd1e756a7c05d29116cd9077182225f3b9fa5
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312956"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679311"
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Problemas comunes y resoluciones con perfiles de dispositivo en Microsoft Intune
 
@@ -130,9 +130,9 @@ Al eliminar un perfil o quitar un dispositivo de un grupo que tiene el perfil, s
 ## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>He cambiado un perfil de restricción de dispositivos, pero los cambios no han surtido efecto
 Una vez establecidas las directivas de seguridad a través de MDM o EAS, los dispositivos Windows Phone no permiten que se reduzca el nivel de seguridad de estas. Por ejemplo, si establece una **contraseña con un número mínimo de 8 caracteres**, no podrá reducirla a 4. Esto se debe a que ya se ha aplicado el perfil más restrictivo en el dispositivo.
 
-En función de la plataforma del dispositivo, si quiere cambiar el perfil a un valor menos seguro, debe restablecer las directivas de seguridad. Por ejemplo, en el escritorio de Windows, deslice el dedo desde la derecha y seleccione **Configuración** > **Panel de control**. Seleccione el applet **Cuentas de usuario** .
+Si quiere cambiar el perfil a un valor menos seguro, debe restablecer las directivas de seguridad. Por ejemplo, en el escritorio de Windows 8.1, deslice el dedo desde la derecha y seleccione **Configuración** > **Panel de control**. Seleccione el applet **Cuentas de usuario** . En el menú de navegación izquierdo, hay un vínculo denominado **Restablecer las directivas de seguridad** (hacia la parte inferior). Selecciónelo y, después, elija **Restablecer directivas**.
 
-En el menú de navegación izquierdo, hay un vínculo denominado **Restablecer las directivas de seguridad** (hacia la parte inferior). Selecciónelo y, después, elija **Restablecer directivas**. En otros dispositivos MDM, como Android, Windows Phone 8.1 y versiones posteriores, e iOS, es posible que tenga que eliminar la inscripción y volver a hacerla para poder aplicar un perfil menos restrictivo.
+En otros dispositivos MDM, como Android, Windows Phone 8.1 y versiones posteriores, iOS y Windows 10, es posible que tenga que eliminar la inscripción al servicio y volver a hacerla para poder aplicar un perfil menos restrictivo.
 
 ## <a name="next-steps"></a>Pasos siguientes
 ¿Necesita más ayuda? Consulte [Cómo obtener asistencia para Microsoft Intune](get-support.md).

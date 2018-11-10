@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/05/2018
+ms.date: 10/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 5bcaabd66a2a9a24c3ee3f7c49cf7689d1f60eed
-ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
+ms.openlocfilehash: e0039223176afb3bed3a9ac2d2ada76b82096c26
+ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863151"
+ms.lasthandoff: 10/30/2018
+ms.locfileid: "50236635"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Incorporación de aplicaciones a Microsoft Intune
 
@@ -34,7 +34,7 @@ Los usuarios de aplicaciones y dispositivos de su empresa (empleados de su empre
 
 Intune admite una gran variedad de tipos de aplicaciones. Las opciones disponibles varían para cada tipo de aplicación. Intune permite agregar y asignar los siguientes tipos de aplicación:
 
-| Tipos de aplicación | Instalación | Actualizaciones |
+| Tipos de aplicación | Instalación | Updates |
 |---|---|---|
 | Aplicaciones de la tienda (aplicaciones de la tienda) | Intune instala la aplicación en el dispositivo.  | Las actualizaciones de aplicaciones son automáticas.   |
 | Aplicaciones escritas internamente (línea de negocio)  | Intune instala la aplicación en el dispositivo (el usuario proporciona el archivo de instalación).     | Debe actualizar la aplicación.  |
@@ -139,7 +139,7 @@ Todas las aplicaciones que cree mediante el tipo de instalación del instalador 
 Los requisitos de espacio de almacenamiento en nube son los siguientes:
 
 - Todos los archivos de instalación deben encontrarse en la misma carpeta.
-- El tamaño máximo de archivo de cualquier archivo que se cargue es de 2 GB.
+- El tamaño máximo de archivo de cualquier archivo que se cargue es de 8 GB.
 
 ## <a name="create-and-edit-categories-for-apps"></a>Creación y edición de categorías de aplicaciones
 
@@ -152,7 +152,7 @@ Al agregar una aplicación a Intune, tiene la opción de seleccionar la categor�
 3. En el panel **Intune**, seleccione **Aplicaciones cliente**.
 4. En el panel de la carga de trabajo **Aplicaciones cliente**, en **Configuración**, elija **Categorías de aplicaciones**.  
     El panel **Categorías de aplicaciones** muestra una lista de las categorías actuales. 
-5. Realice cualquiera de las siguientes acciones:
+5. Realice alguna de las acciones siguientes:
     - Para agregar una categoría, en el panel **Crear categoría**, seleccione **Agregar** y escriba un nombre para la categoría.  
     Los nombres solo pueden escribirse en un solo idioma e Intune no los traduce.
     - Para editar una categoría, seleccione los puntos suspensivos (**...** ) situados junto a la categoría y luego seleccione **Anclar al panel** o **Eliminar**.

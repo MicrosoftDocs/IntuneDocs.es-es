@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 05/17/2018
+ms.date: 10/26/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,25 +14,25 @@ ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2d6d67454409cf8a8749d28cba6ac76f591da9e3
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: ba5035dfcbab4b938b1ed31786ad0f70dceb2d8c
+ms.sourcegitcommit: b165a38b5d6de396f2edab6411742cb50a9b8816
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231294"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50253477"
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>Configurar directivas de acceso condicional basado en aplicación con Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-En este artículo, se describe cómo configurar directivas de acceso condicional basado en aplicación para aplicaciones que forman parte de la lista de aplicaciones aprobadas. La lista de aplicaciones aprobadas consta de aplicaciones que Microsoft ha probado.
+Configure directivas de acceso condicional basado en aplicación para aplicaciones que forman parte de la lista de aplicaciones aprobadas. La lista de aplicaciones aprobadas consta de aplicaciones que Microsoft ha probado.
 
 > [!IMPORTANT]
-> En este artículo se indican los pasos necesarios para agregar una directiva de acceso condicional basado en aplicación. Tenga en cuenta que puede usar los mismos pasos al agregar aplicaciones como SharePoint Online, Microsoft Teams y Microsoft Exchange Online desde la lista de aplicaciones aprobadas.
+> En este artículo se indican los pasos necesarios para agregar una directiva de acceso condicional basado en aplicación. Puede usar los mismos pasos al agregar aplicaciones como SharePoint Online, Microsoft Teams y Microsoft Exchange Online desde la lista de aplicaciones aprobadas.
 
 ## <a name="create-app-based-conditional-access-policies-in-azure-ad-workload"></a>Crear directivas de acceso condicional basado en la aplicación en la carga de trabajo de Azure AD
 
-Los administradores de TI pueden crear directivas de acceso condicional basado en aplicación a partir de la carga de trabajo de Azure AD. Esto resulta más cómodo, ya que no es necesario cambiar entre Azure y las cargas de trabajo de Intune.
+Los administradores de TI pueden crear directivas de acceso condicional basado en aplicación a partir de la carga de trabajo de Azure AD. Este acceso implica que no tiene que cambiar entre Azure y las cargas de trabajo de Intune.
 
 > [!IMPORTANT]
 > Para crear directivas de acceso condicional de Azure AD desde el portal de Azure de Intune, debe disponer de una licencia de Azure AD Premium.

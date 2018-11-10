@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: ayesham, chrisbal
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 731f6f5baaa150210765313ffc60133623e52923
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: 2e3b356cc7c09b00916c24340dbbe1923540889b
+ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43313706"
+ms.lasthandoff: 11/02/2018
+ms.locfileid: "50915740"
 ---
 # <a name="android-and-samsung-knox-standard-device-restriction-settings---intune"></a>Configuración de restricciones de dispositivos Android y Samsung Knox: Intune
 
@@ -39,7 +39,7 @@ En este artículo, se muestran todas las opciones de configuración de restricci
 - **Geolocalización (solo Samsung Knox)**: permite que el dispositivo use información de ubicación.
 - **Desconectar (solo Samsung Knox)**: permite que el usuario desconecte el dispositivo.<br>Si se deshabilita, no se puede establecer la opción **Número de errores de inicio de sesión antes de borrar el dispositivo**.
 - **Captura de pantalla (solo Samsung Knox)**: permite al usuario capturar el contenido de la pantalla como una imagen.
-- **Asistente de voz (solo Samsung Knox)**: permite el uso de software del asistente de voz en el dispositivo.
+- **Asistente de voz (solo Samsung KNOX)**: permite el uso de la aplicación y el servicio S Voice en el dispositivo. Esto no se aplica a Bixby ni al asistente de voz de accesibilidad que lee el contenido de la pantalla en voz alta.
 - **YouTube (solo Samsung Knox)**: permite el uso de la aplicación YouTube en el dispositivo.
 - **Dispositivos compartidos (solo Samsung Knox)**: configure un dispositivo Samsung Knox Standard administrado como compartido. En este modo, los usuarios finales pueden iniciar y cerrar sesión en el dispositivo con sus credenciales de Azure AD. El dispositivo permanece administrado tanto si se usa como si no.<br>Cuando se usa junto con un perfil de certificado SCEP, esta característica permite a los usuarios finales compartir un dispositivo con el mismo conjunto de aplicaciones para todos los usuarios, pero con su propio certificado de usuario SCEP.  Cuando los usuarios cierran sesión, se borran todos los datos de la aplicación.  Esta característica se limita a las aplicaciones LOB.
 - **Bloquear los cambios de fecha y hora (Samsung Knox)**: evite que el usuario cambie la fecha y hora de configuración del dispositivo. 
