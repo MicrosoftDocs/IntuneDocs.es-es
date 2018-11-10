@@ -1,42 +1,68 @@
 ---
-title: Configuración personalizada de Microsoft Intune para dispositivos que ejecutan Windows Phone 8.1
+title: 'Agregar una configuración personalizada para dispositivos Windows Phone 8.1 en Microsoft Intune: Azure | Microsoft Docs'
 titleSuffix: ''
-description: Conozca la configuración que puede usar en un perfil personalizado de Windows Phone 8.1.
+description: Agregue o cree un perfil personalizado para usar la configuración OMA-URI para dispositivos con Windows Phone 8.1 en Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b21464016dff3396b25861af568fa90d8b7a260f
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: f2202d7abf80c6a78fd365a4629e970bc9ec36ce
+ms.sourcegitcommit: c969b596ec0fec227484c50f210ba4e159e2e533
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31834760"
+ms.lasthandoff: 10/24/2018
+ms.locfileid: "49983098"
 ---
-# <a name="microsoft-intune-custom-device-settings-for-devices-running-windows-phone-81"></a>Configuración de dispositivo personalizada de Microsoft Intune para dispositivos que ejecutan Windows Phone 8.1
+# <a name="use-custom-settings-for-windows-phone-81-devices-in-intune"></a>Usar una configuración personalizada para dispositivos Windows Phone 8.1 en Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+Con Microsoft Intune, puede agregar o crear una configuración personalizada para los dispositivos Windows Phone 8.1 mediante "perfiles personalizados". Los perfiles personalizados son una característica de Intune diseñada para agregar una configuración de dispositivo y características que no están integradas Intune.
 
-Use el perfil **Personalizado** de Windows Phone 8.1 para Microsoft Intune para asignar la configuración OMA-URI que se puede usar para controlar características de dispositivos Windows Phone 8.1. Se trata de una configuración estándar que muchos fabricantes de dispositivos móviles usan para controlar las características del dispositivo.
+Los perfiles personalizados de Windows Phone 8.1 usan la configuración OMA-URI (identificador uniforme de recursos de Open Mobile Alliance) para configurar diferentes características. Esta configuración la suelen usar los fabricantes de dispositivos móviles para controlar las características en el dispositivo.
 
-Esta funcionalidad tiene como fin permitirle asignar opciones de configuración que no se pueden definir con otras directivas de Intune.
+En este artículo se muestra cómo crear un perfil personalizado para dispositivos Windows Phone 8.1. 
 
-## <a name="custom-policy-settings-for-windows-phone-81-devices"></a>Configuración de directiva personalizada para dispositivos Windows Phone 8.1
+## <a name="create-the-profile"></a>Creación del perfil
 
-1. Siga las instrucciones que se indican en [Configuración personalizada de dispositivos de Intune](custom-settings-configure.md) para comenzar.
-2. En el panel **Configuración OMA-URI personalizada**, elija **Agregar** para agregar uno o varios valores de OMA-URI.
-3. En el panel **Agregar fila**, configure los siguientes valores para cada opción:
+1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
+2. Seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
+3. Escriba los valores siguientes:
+
+    - **Nombre**: escriba un nombre para el perfil, como `windows phone custom profile`.
+    - **Descripción**: escriba una descripción para el perfil
+    - **Plataforma**: elija **Windows Phone 8.1**.
+    - **Tipo de perfil**: elija **Personalizado**.
+
+4. En **Configuración OMA-URI personalizada**, seleccione **Agregar**. Escriba los valores siguientes:
+
     - **Nombre**: escriba un nombre único para el valor OMA-URI que le ayude a identificarlo en la lista de valores de configuración.
-    - **Descripción**: proporcione una descripción que ofrezca información general del valor y otra información relacionada que le ayude a encontrarlo.
-    - **OMA-URI**: especifique la configuración OMA-URI para la que quiere suministrar un valor.
-    - **Tipo de datos**: seleccione el tipo de datos en el que especificar este valor OMA-URI. Elija entre **Cadena**, **Cadena (XML)**, **Fecha y hora**, **Entero**, **Punto flotante**, **Booleano** o **Base64**.
-    - **Valor**: escriba el valor o el archivo que quiere asociar con la configuración OMA-URI especificada.
+    - **Descripción**: escriba una descripción con información general sobre la configuración e información relacionada que le ayude a encontrarla.
+    - **OMA-URI** (distingue mayúsculas de minúsculas): escriba la configuración OMA-URI que quiere usar.
+    - **Tipo de datos**: elija el tipo de datos que se usará para esta configuración OMA-URI. Las opciones son:
 
-4. Haga clic en **Aceptar** cuando haya terminado y luego siga agregando más valores según sea necesario.
+        - String
+        - Cadena (archivo XML)
+        - Fecha y hora
+        - Integer
+        - Punto flotante
+        - Boolean
+        - Base64 (archivo)
+
+    - **Valor**: escriba el valor de datos que quiere asociar con la configuración OMA-URI especificada. El valor depende del tipo de datos que ha seleccionado. Por ejemplo, si elige **Fecha y hora**, debe seleccionar el valor en un selector de fecha.
+
+    Después de agregar algunos valores de configuración, puede seleccionar **Exportar**. Haga clic en **Exportar** para crear una lista de todos los valores agregados en un archivo de valores separados por comas (.csv).
+
+5. Haga clic en **Aceptar** para guardar los cambios. Continúe agregando más valores según sea necesario.
+6. Cuando termine, seleccione **Aceptar** > **Crear** para crear el perfil de Intune. Una vez que se haya completado, el perfil se mostrará en la lista **Configuración del dispositivo - Perfiles**.
+
+## <a name="next-steps"></a>Pasos siguientes
+
+Se crea el perfil, pero todavía no hace nada. Después, [asigne el perfil](device-profile-assign.md).
+
+Vea cómo crear un perfil personalizado en [Dispositivos Windows 10](custom-settings-windows-10.md).
