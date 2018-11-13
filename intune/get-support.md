@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/25/2018
+ms.date: 10/29/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
 ms.reviewer: cacamp
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: c9a413e0aaf13b2dab7b211a568fbd15ce43df3a
-ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
+ms.openlocfilehash: 47917943188b2b3d0448845b1e356d181ec8f3af
+ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187791"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50410844"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>Cómo obtener asistencia para Microsoft Intune
 
@@ -96,6 +96,64 @@ Puede ver una solicitud de soporte técnico desde Azure Portal. Para ello:
 1. Inicie sesión en Azure (<https://portal.azure.com>) con sus credenciales de administrador de Intune y haga clic en el icono <strong>?</strong> situado en la esquina superior derecha del portal y, después, seleccione <strong>Ayuda y soporte técnico</strong> para ir a la página [Ayuda y soporte técnico de Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
 
 2. En la página **Ayuda y soporte técnico** puede ver la lista **Solicitudes de soporte técnico recientes** y seleccionarlas para ver detalles adicionales.
+
+
+## <a name="new-help-and-support-experience"></a>Nueva experiencia de Ayuda y soporte técnico 
+*La siguiente información se aplica solo al usar el portal Administración de dispositivos y forma parte del lanzamiento de la nueva experiencia de Ayuda y soporte técnico. Los participantes en este lanzamiento se seleccionan aleatoriamente entre los inquilinos de Intune disponibles.*  
+
+La actualización a Ayuda y soporte técnico para Intune es una nueva experiencia que está disponible en el [portal de administración de dispositivos de Microsoft 365](http://devicemanagement.microsoft.com) para algunos inquilinos, pero no todos. Esta nueva experiencia es similar a la que se muestra en el [centro de administración de Microsoft 365](https://portal.office.com/AdminPortal/Home) y reemplaza la anterior experiencia de Ayuda y soporte técnico al acceder desde algunas ubicaciones de la consola de administración de dispositivos.  
+
+En el portal de administración de dispositivos, para acceder a la nueva experiencia hay que seleccionar **Ayuda y soporte técnico** desde cualquier hoja en **Todos los servicios** > **Administración de dispositivos**, excepto para la hoja **Solución de problemas**. Al acceder a Ayuda y soporte técnico desde otras ubicaciones, como **Solución de problemas**, al usar la opción **?** de la esquina superior derecha del banner de la consola, o cuando se selecciona **Ayuda y soporte técnico** en la lista de servicios del panel izquierdo, se accede a la experiencia original.  
+
+En la nueva experiencia, se accede a la vista **¿Necesita ayuda?**, tal como se muestra aquí:  
+![Panel de administración de dispositivos y página ¿Necesita ayuda?](./media/get-support/help-support-dashboard.png)
+
+En esta vista se pueden realizar estas acciones:
+
+1. [Especificar detalles](#specify-details-about-an-issue) sobre el problema específico para que necesita ayuda.  
+2. [Ver ayuda contextual](#view-context-sensitive-help) y soluciones relacionadas que estén basadas en los detalles especificados.  
+3. [Obtener soporte técnico](#get-support) por correo electrónico o teléfono.  
+4. [Ver casos de soporte técnico](#view-support-cases) que se hayan abierto antes mediante con este nuevo flujo de trabajo.  
+
+### <a name="specify-details-about-an-issue"></a>Especificación de los detalles sobre un problema
+Cuando se abren Ayuda y soporte técnico desde una ubicación que es compatible con la nueva experiencia, la página **¿Necesita ayuda?**  se abre. En esta página, puede especificar los detalles sobre un problema. A medida que escribe los detalles, la consola ofrece consultas comunes en función de las palabras clave que usa. Puede elegir entre una descripción ofrecida o rellenar su propia descripción del problema. Si escribe su propia descripción, seleccione **Obtener ayuda** para enviarlo. Después de enviar una consulta, la consola devuelve información contextual que puede ser útil para solucionar el problema.
+
+Los siguientes son ejemplos de consultas que podría enviar:
+  
+- *No se puede restaurar el dispositivo iOS*  
+- *No se puede crear una directiva de acceso condicional*  
+
+![Especificar el problema en la página ¿Necesita ayuda?](./media/get-support/describe-the-issue.png)
+
+
+### <a name="view-context-sensitive-help"></a>Consulta de ayuda contextual
+Después de seleccionar una descripción ofrecida o enviar su propia consulta, los resultados contextuales aparecen debajo de **Ver soluciones**. Estos resultados incluyen instrucciones de autoayuda específicos de Intune y resultados adicionales devueltos de una búsqueda web según los criterios de la consulta.  
+![Ver resultados](./media/get-support/view-results.png)
+
+### <a name="get-support"></a>Obtención de soporte técnico  
+Si no consigue resolver el problema con la autoayuda o las instrucciones basadas en web, puede usar la consola para abrir una incidencia de soporte técnico por correo electrónico o por teléfono.  
+En la página **¿Necesita ayuda?**, seleccione la opción que quiere usar.  
+
+- Para una solicitud por correo electrónico, indique su dirección de correo y, opcionalmente, puede agregar datos adjuntos al envío. Seleccione **Enviar** para abrir la solicitud.  
+
+  ![Solicitud por correo electrónico](./media/get-support/email-support.png)
+  
+- Para una solicitud por teléfono, indique su número de teléfono. Si quiere, puede incluir su dirección de correo electrónico y agregar datos adjuntos al envío. Seleccione Llamarme para enviar la solicitud.  
+
+   ![Solicitud por teléfono](./media/get-support/phone-support.png)
+
+### <a name="view-support-cases"></a>Consulta de casos de soporte técnico
+Seleccione el botón del historial para ver los incidentes de soporte técnico que ha creado.  
+
+![Consulta de casos de soporte técnico](./media/get-support/view-support-tickets.png)
+
+- Solo los casos de soporte técnico que se abren mediante el nuevo flujo de trabajo son visibles desde este flujo de trabajo. Para verlos, use la vista Ayuda y soporte técnico de la consola de administración de dispositivos que forma parte de la nueva experiencia. Estos casos tienen números de ocho dígitos. También puede ver estos casos desde el centro de administración de Microsoft 365.  
+
+- Los casos que haya abierto antes de agregar su cuenta a la nueva experiencia Ayuda y soporte técnico no se modifican. Para verlos, debe usar una vista de ayuda y soporte técnico que no forma parte del lanzamiento de la nueva experiencia. Estos casos tienen números que empiezan por **117** o **118** y tienen 15 dígitos.  Para ver un caso de soporte técnico que se haya abierto antes de que se le agregara a la nueva experiencia, use Azure Portal. Para ello:
+
+    1. Inicie sesión en Azure (<https://portal.azure.com>) con sus credenciales de administrador de Intune y haga clic en el icono *?* situado en la esquina superior derecha del portal y, después, seleccione *Ayuda y soporte técnico* para ir a la página [Ayuda y soporte técnico de Azure](https://ms.portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/overview).
+
+    2. En la página **Ayuda y soporte técnico** puede ver la lista **Solicitudes de soporte técnico recientes** y seleccionarlas para ver detalles adicionales.
 
 ## <a name="additional-resources"></a>Recursos adicionales
 - [Asistencia telefónica para Microsoft Intune](phone-support-contact.md)
