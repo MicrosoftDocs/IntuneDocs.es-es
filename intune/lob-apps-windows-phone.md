@@ -15,12 +15,12 @@ ms.assetid: a097b7b2-d01d-454b-954c-da4f3cd0ae86
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: e86db15fb4c69b57a1dc572d5a7e4f06eee3b760
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: ff63e3cdf670156c66c156e3defe6d67e7c04044
+ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602119"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51212366"
 ---
 # <a name="add-a-windows-phone-line-of-business-app-to-microsoft-intune"></a>Incorporación de una aplicación de línea de negocio de Windows Phone a Microsoft Intune
 
@@ -50,8 +50,7 @@ Use la información de este artículo para agregar un aplicación de línea de n
 2. En el panel **Información de la aplicación**, configure la información de la aplicación. Dependiendo de la aplicación que haya elegido, algunos de los valores de este panel podrían rellenarse automáticamente.
     - **Nombre**: escriba el nombre de la aplicación tal como aparece en el portal de empresa. Asegúrese de que todos los nombres de aplicación que usa son únicos. Si el mismo nombre de aplicación existe dos veces, solo aparece una de las aplicaciones en el portal de empresa.
     - **Descripción:** escriba una descripción de la aplicación. La descripción aparece en el portal de empresa.
-    - **Editor:** escriba el nombre del editor de la aplicación.
-    - **Omitir la versión de la aplicación:** establezca esta opción en **Sí** en el caso de que el desarrollador de la aplicación actualice automáticamente esta.
+    - **Editor**: escriba el nombre del editor de la aplicación.
     - **Categoría**: seleccione una o varias de las categorías de aplicaciones integradas, o seleccione una categoría que haya creado. Las categorías facilitan a los usuarios encontrar la aplicación cuando exploran el portal de empresa.
     - **Mostrar como aplicación destacada en el Portal de empresa**: la aplicación se muestra de forma destacada en la página principal del portal de empresa cuando los usuarios buscan aplicaciones.
     - **Dirección URL de información**: opcionalmente, escriba la dirección URL de un sitio web que contenga información sobre esta aplicación. La dirección URL aparece en el portal de empresa.

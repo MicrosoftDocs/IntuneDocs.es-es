@@ -100,7 +100,7 @@ En este paso, hará lo siguiente:
 
    - En **General**:
    
-       - Confirme que la propiedad **Publicar certificado en Active Directory****no** está activada.
+       - Confirme que la propiedad **Publicar certificado en Active Directory** **no** está activada.
        - Especifique un **Nombre para mostrar de plantilla** descriptivo para la plantilla.
 
    - En **Nombre del firmante**, seleccione **Proporcionado por el solicitante**. (La seguridad la aplica el módulo de directivas de Intune para NDES).

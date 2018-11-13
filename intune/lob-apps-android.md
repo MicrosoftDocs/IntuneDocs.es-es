@@ -15,12 +15,12 @@ ms.assetid: 061d793c-c724-4cd9-9240-adb0cbda5661
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: f01ff78ed833e8c621783363a7d6ad1405df6f14
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: a57ae54787069f85798519a3a6bc051842db6c2b
+ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602238"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51212332"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>Incorporación de una aplicación de línea de negocio de Android a Microsoft Intune
 
@@ -55,7 +55,6 @@ Una aplicación de línea de negocio (LOB) es aquella que se agrega a Intune des
     - **Descripción**: escriba una descripción de la aplicación. La descripción aparece en el portal de empresa.
     - **Editor**: escriba el nombre del editor de la aplicación.
     - **Versión mínima del sistema operativo**: en la lista, elija la versión mínima del sistema operativo en la que se puede instalar la aplicación. Si la aplicación se asigna a un dispositivo con un sistema operativo anterior, no se instalará.
-    - **Omitir la versión de la aplicación**: establezca esta opción en **Sí** en el caso de que el desarrollador de la aplicación actualice automáticamente esta.
     - **Categoría**: seleccione una o varias de las categorías de aplicaciones integradas, o seleccione una categoría que haya creado. Las categorías facilitan a los usuarios encontrar la aplicación cuando exploran el portal de empresa.
     - **Mostrar como aplicación destacada en el Portal de empresa**: la aplicación se muestra de forma destacada en la página principal del portal de empresa cuando los usuarios buscan aplicaciones.
     - **Dirección URL de información**: opcionalmente, escriba la dirección URL de un sitio web que contenga información sobre esta aplicación. La dirección URL aparece en el portal de empresa.

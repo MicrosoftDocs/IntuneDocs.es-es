@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 3397c10ae572a248507f15e5145fef68898d30c4
-ms.sourcegitcommit: b47fad133ef8ef1eb65484463431c6c53f6a638a
+ms.openlocfilehash: 822be56db10f4659ba9cd027c2612d7960e40e5b
+ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/11/2018
-ms.locfileid: "35291451"
+ms.lasthandoff: 10/31/2018
+ms.locfileid: "50679209"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>Configuración de VPN en Microsoft Intune para dispositivos que ejecutan Windows Phone 8.1
 
@@ -93,7 +93,7 @@ Consulte la documentación de VPN de cada fabricante para más información sobr
 ## <a name="proxy-settings"></a>Configuración del proxy
 
 - **Detectar automáticamente configuración de proxy**: si el servidor VPN requiere un servidor proxy para la conexión, especifique si quiere que los dispositivos detecten automáticamente la configuración de la conexión. Para más información, vea la documentación de Windows Server.
-- **Script de configuración automática**: use un archivo para configurar el servidor proxy. Escriba la **URL del servidor proxy** (por ejemplo, **http://proxy.contoso.com**) que contiene el archivo de configuración.
+- **Script de configuración automática**: use un archivo para configurar el servidor proxy. Escriba la **URL del servidor proxy** (por ejemplo, `** http://proxy.contoso.com**`) que contiene el archivo de configuración.
 - **Usar servidor proxy**: habilite esta opción si quiere especificar manualmente la configuración del servidor proxy.
     - **Dirección**: escriba la dirección del servidor proxy (como una dirección IP).
     - **Número de puerto**: especifique el número de puerto asociado con el servidor proxy.

@@ -14,12 +14,12 @@ ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
 ms.reviewer: heenamac
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: fa1a1b1085d196411a03a6228eefa808399397ea
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 439c89f7b0158111f63d2d8327291c2b5a5c1e38
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31024811"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298078"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>Asignación de perfiles de dispositivo en Microsoft Intune
 
@@ -48,9 +48,6 @@ Por ejemplo, quiere asignar un perfil de dispositivo a todos los dispositivos de
 La exclusión solo busca los miembros directos de los grupos y no incluye los dispositivos que están asociados a un usuario. En cambio, los dispositivos que no tienen un usuario no obtienen la directiva. Esto ocurre porque esos dispositivos no tienen ninguna relación con el grupo **Todos los usuarios**.
 
 Si incluye **Todos los dispositivos** y excluye **Todos los usuarios**, todos los dispositivos reciben la directiva. En este escenario, la intención es excluir aquellos dispositivos que tienen un usuario asociado de esta directiva. En cambio, no se excluyen los dispositivos porque la exclusión solo compara miembros de grupo directos.
-
->[!TIP]
->Las exclusiones no están disponibles para las directivas de cumplimiento ni la asignación de aplicaciones. Para excluir miembros de una asignación, puede usar las asignaciones **Disponible** y **No aplicable**. Por ejemplo, asigne una aplicación a **Todos los usuarios corporativos** con la opción **Disponible** y asigne la aplicación a **Personal de administración sénior** con la opción **No aplicable**. La aplicación se asigna a todos los usuarios *excepto* a los del grupo **Personal de administración sénior**. Si asigna la aplicación a **Todos los usuarios corporativos** con la opción **Obligatorio**, los usuarios del grupo **Personal de administración sénior** también se incluyen.
 
 ## <a name="next-steps"></a>Pasos siguientes
 Consulte [Cómo supervisar perfiles de dispositivo](device-profile-monitor.md) para obtener instrucciones a fin de supervisar las asignaciones de perfil de dispositivo.
