@@ -5,19 +5,19 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 6/06/2018
+ms.date: 11/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
-ms.openlocfilehash: d709681519f2e68d38958d6ec2082b762e22cf60
-ms.sourcegitcommit: cff65435df070940da390609d6376af6ccdf0140
+ms.openlocfilehash: 0e82a63cfbbb0780566f9dc1f4ddf0b914e4ca2c
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/18/2018
-ms.locfileid: "49425162"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576841"
 ---
 # <a name="manage-software-updates-in-intune"></a>Administrar las actualizaciones de software en Intune
 
@@ -36,7 +36,7 @@ Con Windows Update para empresas puede simplificar la experiencia de administrac
       
   Para obtener información detallada sobre los canales de servicio disponibles, vea [Información general de Windows como servicio](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels).
 - **Configuración de aplazamiento**: configure las opciones de aplazamiento de actualizaciones con el fin de retrasar la instalación de las actualizaciones para grupos de dispositivos. Puede usar esta configuración para organizar su implementación de actualización para poder revisar el progreso sobre la marcha.
-- **Pausa**: posponga la instalación de actualizaciones si detecta un problema en cualquier momento durante la implementación.
+- **Pausar**: si hay algún problema durante la implementación de la actualización, puede posponer la instalación de la actualización. 
 - **Período de mantenimiento**: configure las horas en que se pueden instalar las actualizaciones.
 - **Tipo de actualización**: elija los tipos de actualizaciones que se instalarán. Por ejemplo, de calidad, de características o de controladores.
 - **Comportamiento de instalación**: esta opción configura cómo se instalan las actualizaciones. Por ejemplo, si quiere que el dispositivo se reinicie automáticamente después de la instalación.
@@ -59,30 +59,23 @@ Después de crear anillos de actualización, debe asignarnos a grupos de disposi
 
     ![Configuración de Windows para Datos de diagnóstico y uso](./media/telemetry-basic.png)
 
-    Puede configurar esta opción manualmente, o bien utilizar un perfil de restricción de dispositivos Intune para Windows 10 y versiones posteriores. Para ello, configure la opción **General** > **Envío de datos de diagnóstico** con, al menos, el valor **Básico**. Para obtener más información sobre los perfiles de dispositivo, vea [Configuración de restricciones de dispositivos en Microsoft Intune](device-restrictions-configure.md).
+    Puede configurar esta opción manualmente o bien puede usar un perfil de Intune para Windows 10 o versiones posteriores (**Restricciones de dispositivos** > **Informes y telemetría** > establezca **Compartir datos de uso** como mínimo en **Básico**). Para obtener más información sobre los perfiles de dispositivo, vea [Configuración de restricciones de dispositivos en Microsoft Intune](device-restrictions-configure.md).
 
-- En la consola de administración de Intune, hay cuatro opciones que controlan el comportamiento de las actualizaciones de software. Estos forman parte de la directiva de configuración general para dispositivos móviles y equipos con Windows 10:
-  - **Permitir actualizaciones automáticas**
-  - **Permitir características de evaluación**
-  - **Día de instalación programado**
-  - **Hora de instalación programada**
+- El portal clásico de Azure también tiene un número limitado de otras opciones de actualizaciones de Windows 10 en el perfil de configuración de dispositivo. Si tiene alguna de estas opciones configuradas al migrar a Azure Portal, le recomendamos encarecidamente que haga lo siguiente:
 
-  El portal clásico de Azure también tiene un número limitado de otras opciones de actualizaciones de Windows 10 en el perfil de configuración de dispositivo. Si tiene alguna de estas opciones configuradas al migrar a Azure Portal, le recomendamos encarecidamente que haga lo siguiente:
-
-1. Cree anillos de actualización de Windows 10 en Azure Portal con la configuración que necesite. La opción **Permitir características de versión preliminar** no es compatible con Azure Portal porque ya no se puede emplear en las compilaciones más recientes de Windows 10. Al crear los anillos de configuración, puede configurar las otras tres opciones, así como otras opciones de actualizaciones de Windows 10.
+  1. Cree anillos de actualización de Windows 10 en Azure Portal con la configuración que necesite. La opción **Permitir características de versión preliminar** no es compatible con Azure Portal porque ya no se puede emplear en las compilaciones más recientes de Windows 10. Al crear los anillos de configuración, puede configurar las otras opciones, así como otras opciones de actualizaciones de Windows 10.
 
    > [!NOTE]
    > La configuración de actualizaciones de Windows 10 creada en el portal clásico no se muestra en Azure Portal después de la migración. Pero se aplica esta configuración. Si migra cualquiera de estas opciones y edita la directiva migrada desde Azure Portal, esta configuración se quitará de la directiva.
 
-2. Elimine la configuración de actualización en el portal clásico. Después de migrar a Azure Portal y agregar la misma configuración a un anillo de actualización, debe eliminar la configuración en el portal clásico para evitar posibles conflictos entre directivas. Por ejemplo, si una misma opción está configurada con distintos valores, se produce un conflicto. No hay ninguna manera fácil de saberlo porque la configuración establecida en el portal clásico no se muestra en Azure Portal.
+  2. Elimine la configuración de actualización en el portal clásico. Después de migrar a Azure Portal y agregar la misma configuración a un anillo de actualización, deberá eliminar la configuración en el portal clásico para evitar posibles conflictos entre directivas. Por ejemplo, si una misma opción está configurada con distintos valores, se produce un conflicto. No hay ninguna manera fácil de saberlo porque la configuración establecida en el portal clásico no está en Azure Portal.
 
 ## <a name="create-and-assign-update-rings"></a>Crear y asignar anillos de actualización
 
-1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
-2. Seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
-3. Seleccione **Actualizaciones de software** > **Anillos de actualización de Windows 10** > **Crear**.
-4. Escriba un nombre, una descripción (opcional) y, después, elija **Configurar**.
-5. En **Configuración**, especifique la siguiente información:
+1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los servicios**, filtre por **Intune** y, después, seleccione **Microsoft Intune**.
+2. Seleccione **Actualizaciones de software** > **Anillos de actualización de Windows 10** > **Crear**.
+3. Escriba un nombre, una descripción (opcional) y, después, elija **Configurar**.
+4. En **Configuración**, especifique la siguiente información:
 
    - **Canal de servicio**: establezca el canal desde el que el dispositivo recibe las actualizaciones de Windows.
    - **Actualizaciones de productos de Microsoft**: elija si quiere buscar actualizaciones de aplicaciones de Microsoft Update.
@@ -94,7 +87,7 @@ Después de crear anillos de actualización, debe asignarnos a grupos de disposi
 
    - **Período de aplazamiento de actualizaciones de calidad (días)**: indique el número de días que se aplazarán las actualizaciones de calidad. Puede aplazar la recepción de estas actualizaciones de calidad un máximo de 30 días a partir de su publicación.
 
-     Las actualizaciones de calidad suelen ser correcciones y mejoras de la funcionalidad de Windows y se publican el primer martes de cada mes, aunque Microsoft puede publicarlas en cualquier momento. Puede definir si quiere aplazar la recepción de actualizaciones de calidad cuando estén disponibles en Windows Update, así como el tiempo que quiere aplazarla.
+     Las actualizaciones de calidad suelen ser correcciones y mejoras de la funcionalidad de Windows y se publican el segundo martes de cada mes. Las actualizaciones de calidad mediante Windows Update para empresas solo reciben estas actualizaciones (la versión "B"), aunque Microsoft podría liberar otras actualizaciones en cualquier momento. Puede definir si quiere aplazar la recepción de actualizaciones de calidad cuando estén disponibles en Windows Update, así como el tiempo que quiere aplazarla. Para obtener más información, consulte [Implementar actualizaciones con Windows Update para empresas](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb).
 
    - **Período de aplazamiento de actualizaciones de características (días)**: indique el número de días que se aplazarán las actualizaciones de características. Puede aplazar la recepción de las actualizaciones de características un máximo de 180 días a partir de su publicación.
 
@@ -106,13 +99,13 @@ Después de crear anillos de actualización, debe asignarnos a grupos de disposi
 
    - **Modo de descarga de optimización de distribución**: elija el método por el que los dispositivos descargarán las actualizaciones de Windows. Para obtener más información, consulte [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
 
-6. Cuando haya terminado, seleccione **Aceptar**. En **Crear anillo de actualización**, seleccione **Crear**.
+5. Cuando haya terminado, seleccione **Aceptar**. En **Crear anillo de actualización**, seleccione **Crear**.
 
 El nuevo anillo de actualización se muestra en la lista de anillos de actualización.
 
 1. Para asignar el anillo, en la lista de anillos de actualización, seleccione un anillo y, luego, en la pestaña <*nombre del anillo*>, elija **Asignaciones**.
 2. En la pestaña siguiente, elija **Seleccionar grupos para incluir** y, luego, seleccione los grupos a los que quiere asignar este anillo.
-3. Una vez que haya terminado, elija **Seleccionar** para completar la asignación.
+3. Cuando haya terminado, elija **Seleccionar** para completar la asignación.
 
 ## <a name="update-compliance-reporting"></a>Informes de comprobación de actualizaciones
 Puede consultar la comprobación de actualizaciones en Intune o mediante una solución gratuita llamada Update Compliance.
@@ -120,10 +113,9 @@ Puede consultar la comprobación de actualizaciones en Intune o mediante una sol
 ### <a name="review-update-compliance-in-intune"></a>Revisar la comprobación de actualizaciones en Intune 
 <!-- 1352223 --> Consulte un informe de directiva para conocer el estado de implementación para los círculos de actualizaciones de Windows 10 que ha configurado.
 
-1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
-2. Elija **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
-3. Seleccione **Actualizaciones de software** > **Información general**. Puede ver información general sobre el estado de los círculos de actualizaciones que tenga asignados.
-4. Abra uno de los informes siguientes:
+1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los servicios**, filtre por **Intune** y, después, seleccione **Microsoft Intune**.
+2. Seleccione **Actualizaciones de software** > **Información general**. Puede ver información general sobre el estado de los círculos de actualizaciones que tenga asignados.
+3. Abra uno de los informes siguientes:
 
    **Para todos los anillos de implementación**:  
    1. En **Actualizaciones de software** > **Anillos de actualización de Windows 10**
@@ -138,7 +130,7 @@ Puede consultar la comprobación de actualizaciones en Intune o mediante una sol
 ### <a name="review-update-compliance-using-oms"></a>Revisar la comprobación de actualizaciones con OMS
 Puede supervisar las implementaciones de actualización de Windows 10 utilizando una solución gratuita llamada Update Compliance. Para obtener más información, consulte [Monitor Windows Updates with Update Compliance](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor) (Supervisión de actualizaciones de Windows con Comprobación de actualizaciones). Cuando se utiliza esta solución, puede implementar un identificador comercial en cualquiera de sus dispositivos Windows 10 administrados con Intune para el que desea que se informe de la comprobación de actualizaciones.
 
-En la consola de Intune, puede usar la configuración OMA-URI de una directiva personalizada para configurar el identificador comercial. Para obtener más información, consulte [Configuración de directivas de Intune para dispositivos Windows 10 en Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).   
+En Intune puede usar la configuración OMA-URI de una directiva personalizada para configurar el identificador comercial. Para obtener más información, consulte [Configuración de directivas de Intune para dispositivos Windows 10 en Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).   
 
 La ruta OMA-URI (distingue mayúsculas de minúsculas) para configurar el identificador comercial es: ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
 
@@ -158,17 +150,16 @@ Por ejemplo, puede usar los siguientes valores en **Agregar o editar configuraci
 ## <a name="pause-updates"></a>Pausar las actualizaciones
 Puede pausar un dispositivo para que deje de recibir actualizaciones de características o de calidad durante un período máximo de 35 días desde el momento en que se pausa las actualizaciones. Después de que haya superado el número máximo de días, la funcionalidad de pausa expirará automáticamente y el dispositivo buscará en Windows Update las actualizaciones pertinentes. Después de este análisis, puede pausar las actualizaciones de nuevo.
 
-1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
-2. Seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
-3. Seleccione **Actualizaciones de software** > **Anillos de actualización de Windows 10**.
-4. En la lista de anillos de actualización, elija el anillo que quiere pausar y, después, seleccione **...** > **Pausar actualizaciones de calidad** > o **Pausar actualizaciones de características**, según el tipo de actualizaciones que quiera pausar.
+1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los servicios**, filtre por **Intune** y, después, seleccione **Microsoft Intune**.
+2. Seleccione **Actualizaciones de software** > **Anillos de actualización de Windows 10**.
+3. En la lista de anillos de actualización, elija el anillo que quiere pausar y, después, seleccione **...** > **Pausar actualizaciones de calidad** > o **Pausar actualizaciones de características**, según el tipo de actualizaciones que quiera pausar.
 
 > [!IMPORTANT]
 > Al emitir un comando de pausa, los dispositivos reciben este comando la próxima vez que se registren en el servicio. Es posible que antes de que se registren, instalen una actualización programada.
 > Además, si un dispositivo de destino está apagado cuando se emite el comando de pausa, al encenderse, podría descargar e instalar actualizaciones programadas antes de que se registre con Intune.
 
 ### <a name="uninstall-the-latest-from-windows-10-software-updates"></a>Desinstalar las últimas actualizaciones de software de Windows 10 
-En caso de que detecte un problema importante en las máquinas con Windows 10, puede optar por desinstalar (revertir) la última actualización de características o la última actualización de calidad. La desinstalación de una actualización de característica o de calidad solo está disponible para el canal de servicio en el que se encuentra el dispositivo. La desinstalación desencadena una directiva para restaurar la actualización anterior en las máquinas con Windows 10. Para las actualizaciones de características concretamente, puede limitar el tiempo de 2 a 60 días durante el cual se puede aplicar una desinstalación de la versión más reciente. Para establecer las opciones de desinstalación de actualización de software:
+Si detecta un problema importante en las máquinas con Windows 10, puede optar por desinstalar (revertir) la última actualización de características o la última actualización de calidad. La desinstalación de una actualización de característica o de calidad solo está disponible para el canal de servicio en el que se encuentra el dispositivo. La desinstalación desencadena una directiva para restaurar la actualización anterior en las máquinas con Windows 10. Para las actualizaciones de características concretamente, puede limitar el tiempo de 2 a 60 días durante el cual se puede aplicar una desinstalación de la versión más reciente. Para establecer las opciones de desinstalación de actualización de software:
 
 1. En Intune, seleccione **Actualizaciones de software**.
 2. Seleccione **Anillos de actualización de Windows 10** > seleccione un anillo de actualización existente > **Desinstalar**.

@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/14/2018
+ms.date: 11/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: 2a4b4a4b2b0df706504e76b418c5b87eb66b1111
-ms.sourcegitcommit: 23997b701365bb514347d75edc2357eff1f1443f
+ms.openlocfilehash: 87f49c9aafa8b6f9f281a00e4d7bd297c354f90b
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47237670"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51511048"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Solución de problemas con la inscripción de dispositivos en Intune
 
@@ -391,6 +391,28 @@ Después de corregir los problemas con el token VPP, debe borrar los dispositivo
 
 #### <a name="tell-the-users-to-restart-the-enrollment-process"></a>Indicar a los usuarios que deben reiniciar el proceso de inscripción
 Una vez que haya borrado los dispositivos bloqueados, puede indicar a los usuarios que deben reiniciar el proceso de inscripción.
+
+## <a name="macos-issues"></a>Problemas de macOS
+
+### <a name="macos-enrollment-errors"></a>Errores de inscripción de macOS
+**Mensaje de error 1:** *Parece que está usando una máquina virtual. Asegúrese de haber configurado por completo la máquina virtual, así como el número de serie y el modelo de hardware. Si no es una máquina virtual, póngase en contacto con el equipo de soporte técnico.*  
+
+**Mensaje de error 2:** *Estamos teniendo problemas para administrar su dispositivo. Este problema puede deberse a que usa una máquina virtual, tiene un número de serie limitado o este dispositivo ya está asignado a otra persona. Averigüe cómo resolver estos problemas o póngase en contacto con el equipo de soporte técnico de su empresa.*
+
+**Problema:** este mensaje podría ser el resultado de cualquiera de los siguientes motivos:  
+* Hay una máquina virtual de macOS que no está bien configurada  
+* Ha habilitado restricciones de dispositivos que exigen que el dispositivo sea de propiedad corporativa o tiene un número de serie de dispositivo registrado en Intune  
+* El dispositivo ya se ha inscrito y todavía está asignado a otra persona en Intune  
+
+**Solución:** en primer lugar, póngase en contacto con el usuario para determinar cuál de los problemas afecta a su dispositivo. Luego, aplique la más relevante de las siguientes soluciones:
+* Si el usuario inscribe una máquina virtual para efectuar pruebas, asegúrese de que esté totalmente configurada para que Intune pueda reconocer su número de serie y el modelo de hardware. Obtenga más información sobre cómo [configurar máquinas virtuales](macos-enroll.md#enroll-virtual-macos-machines-for-testing) en Intune.  
+* Si su organización ha activado las restricciones de inscripción que bloquean los dispositivos macOS personales, deberá [agregar el número de serie del dispositivo personal](corporate-identifiers-add.md#manually-enter-corporate-identifiers) a Intune de forma manual.  
+* Si el dispositivo todavía está asignado a otro usuario en Intune, el propietario anterior no ha usado la aplicación Portal de empresa para quitarlo o restablecerlo. Para limpiar el registro de dispositivos obsoletos de Intune:  
+
+    1. Vaya a [Intune en Azure Portal](https://portal.manage.microsoft.com) e inicie sesión con sus credenciales administrativas.
+    2. Vaya a Intune > **Dispositivos** > **Todos los dispositivos**.  
+    3. Busque el dispositivo que presenta el problema de inscripción. Búsquelo por nombre de dispositivo o por dirección MAC/HW para restringir los resultados.
+    4. Seleccione el dispositivo > **Eliminar**. Elimine las demás entradas asociadas al dispositivo.  
 
 ## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>Problemas al usar System Center Configuration Manager con Intune
 ### <a name="mobile-devices-disappear"></a>Los dispositivos móviles desaparecen

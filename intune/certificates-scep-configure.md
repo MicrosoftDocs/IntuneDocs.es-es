@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 11/6/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b6ee53d0c5801a80319e33637ee68fb7b701a127
-ms.sourcegitcommit: 2e88ec7a412a2db35034d30a70d20a5014ddddee
+ms.openlocfilehash: dfe8d8d7c7a534dd4a21104b0c7076c039d9f504
+ms.sourcegitcommit: 5d5448f6c365aeb01d6f2488bf122024b9616bec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/17/2018
-ms.locfileid: "49391695"
+ms.lasthandoff: 11/06/2018
+ms.locfileid: "51212536"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar y usar certificados SCEP con Intune
 
@@ -28,13 +28,13 @@ En este artículo se muestra cómo configurar la estructura y, luego, crear y as
 
 - **Dominio de Active Directory:** todos los servidores mencionados en esta sección (salvo el servidor Proxy de aplicación web) deben estar unidos al dominio de Active Directory.
 
-- **Entidad de certificación (CA):** también llamada CA emisora, es necesario disponer de una entidad de certificación (CA) empresarial que se ejecute en una edición Enterprise de Windows Server 2008 R2 o posterior. No se admiten CA independientes. Para detalles, consulte [Instalación de la entidad de certificación](http://technet.microsoft.com/library/jj125375.aspx).
+- **Entidad de certificación** (CA): Debe ser una entidad de certificación (CA) empresarial de Microsoft que se ejecute en una edición Enterprise de Windows Server 2008 R2 o posterior. No se admiten CA independientes. Para detalles, consulte [Instalación de la entidad de certificación](http://technet.microsoft.com/library/jj125375.aspx).
     Si la CA ejecuta Windows Server 2008 R2, se debe [instalar la revisión de KB2483564](http://support.microsoft.com/kb/2483564/).
 
-- **Servidor SCEP:** en un servidor con Windows Server 2012 R2 o posterior, hay que configurar el Servicio de inscripción de dispositivos de red (SCEP). En Intune no se puede usar el Servicio de inscripción de dispositivos de red cuando se ejecuta en un servidor que también ejecuta la entidad de certificación empresarial. Vea [Orientación para el Servicio de inscripción de dispositivos de red](http://technet.microsoft.com/library/hh831498.aspx) para obtener instrucciones sobre cómo configurar Windows Server 2012 R2 para hospedar el Servicio de inscripción de dispositivos de red.
-El servidor SCEP debe estar unido a dominio al dominio que hospeda la entidad de certificación y no estar en el mismo servidor que ella. Puede encontrar más información sobre cómo implementar el servidor NDES en un bosque independiente, una red aislada o un dominio interno en [Uso de un módulo de directivas con el servicio de inscripción de dispositivos de red](https://technet.microsoft.com/library/dn473016.aspx).
+- **Servidor SCEP**: en Windows Server 2012 R2 o posterior, configure el rol de servidor Servicio de inscripción de dispositivos de red (SCEP). En Intune no se puede usar el Servicio de inscripción de dispositivos de red en un servidor que también ejecuta la entidad de certificación empresarial. Consulte [Orientación para el Servicio de inscripción de dispositivos de red](http://technet.microsoft.com/library/hh831498.aspx) para obtener instrucciones sobre cómo configurar Windows Server 2012 R2 para hospedar NDES.
+El servidor NDES debe estar unido a un dominio dentro del mismo bosque que la CA de empresa. Puede encontrar más información sobre cómo implementar el servidor NDES en un bosque independiente, una red aislada o un dominio interno en [Uso de un módulo de directivas con el servicio de inscripción de dispositivos de red](https://technet.microsoft.com/library/dn473016.aspx).
 
-- **Microsoft Intune Certificate Connector**: use Azure Portal para descargar el instalador de **Certificate Connector** (**NDESConnectorSetup.exe**). Luego, ejecute **NDESConnectorSetup.exe** en el servidor que hospede el rol Servicio de inscripción de dispositivos de red (NDES) en el que quiera instalar Certificate Connector.
+- **Microsoft Intune Certificate Connector**: descargue el instalador de **Certificate Connector** (**NDESConnectorSetup.exe**) en el portal de administración de Intune. Deberá ejecutar este instalador en el servidor con el rol NDES.  
 
   - El conector de certificado de NDES también admite el modo Estándar federal de procesamiento de información (FIPS). FIPS no es necesario, pero puede emitir y revocar certificados cuando está habilitado.
 
@@ -53,29 +53,29 @@ Para más información, consulte [Planeamiento de certificados para WAP](https:/
 
 ### <a name="network-requirements"></a>Requisitos de red
 
-Desde Internet a la red perimetral, permita el puerto 443 desde todos los hosts o direcciones IP de Internet al servidor NDES.
+Si no usa ningún proxy inverso (por ejemplo, WAP o el proxy de aplicación de Azure AD), deberá permitir el tráfico TCP en el puerto 443 desde todos los hosts o direcciones IP de Internet al servidor NDES.
 
-Desde la red perimetral a la red de confianza, permita todos los puertos y protocolos necesarios para el acceso a dominios en el servidor SCEP unido a dominio. El servidor NDES necesita acceso a los servidores de certificados, los servidores DNS, los servidores de Configuration Manager y los controladores de dominio.
+Permita todos los puertos y protocolos necesarios entre el servidor NDES y cualquier infraestructura de soporte. Por ejemplo, el servidor NDES necesita comunicarse con la entidad de certificación, los servidores DNS, los servidores de Configuration Manager, los controladores de dominio y posiblemente con otros servicios de su entorno.
 
-Se recomienda publicar el servidor NDES a través de un proxy, como el [proxy de aplicación de Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-application-proxy-publish/), [el proxy de acceso web](https://technet.microsoft.com/library/dn584107.aspx) o un proxy de terceros.
+Se recomienda encarecidamente publicar el servidor NDES a través de un proxy inverso, como el [proxy de aplicación de Azure AD](https://azure.microsoft.com/documentation/articles/active-directory-application-proxy-publish/), [el proxy de acceso web](https://technet.microsoft.com/library/dn584107.aspx) o un proxy de terceros.
 
-### <a name="certificates-and-templates"></a>Certificados y plantillas
+### <a name="certificates-and-templates"></a>Certificados y plantillas  
 
 |Objeto|Detalles|
 |----------|-----------|
 |**Plantilla de certificado**|Configure esta plantilla en la CA emisora.|
 |**Certificado de autenticación del cliente**|Solicitado desde la CA emisora o la CA pública; instale este certificado en el servidor NDES.|
-|**Certificado de autenticación de servidor**|Solicitado desde la CA emisora o la CA pública, este certificado SSL se instala y se enlaza en IIS, en el servidor NDES.|
+|**Certificado de autenticación de servidor**|Solicitado desde la CA emisora o la CA pública, este certificado SSL se instala y se enlaza en IIS, en el servidor NDES. Si el certificado tiene el conjunto de usos de claves de autenticación de cliente y servidor (**Usos mejorados de clave**), puede usar el mismo certificado.|
 |**Certificado de CA raíz de confianza**|Exportará este certificado como un archivo **.cer** desde la entidad de certificación raíz o cualquier dispositivo que confíe en ella. Luego, lo asignará a los dispositivos que usan el perfil de certificado de CA de confianza.<br /><br />Use un único certificado de CA raíz de confianza por cada plataforma de sistema operativo y asócielo a cada perfil de certificado raíz de confianza que cree.<br /><br />Puede usar certificados de CA raíz de confianza adicionales cuando sea necesario. Por ejemplo, podría hacerlo para proporcionar una relación de confianza con una CA que firme los certificados de autenticación de servidor para los puntos de acceso Wi-Fi.|
 
 ### <a name="accounts"></a>Cuentas
 
 |Nombre|Detalles|
 |--------|-----------|
-|**Cuenta de servicio NDES**|Especifique una cuenta de usuario de dominio que vaya a usar como cuenta de servicio NDES.|
+|**Cuenta de servicio NDES**|Especifique una cuenta de usuario de dominio que vaya a usar como cuenta de servicio NDES. |
 
 ## <a name="configure-your-infrastructure"></a>Configurar la infraestructura
-Para poder configurar perfiles de certificado, lleve a cabo los siguientes pasos. Estos pasos requieren conocimientos de Windows Server 2012 R2 y versiones posteriores, y de Servicios de certificados de Active Directory (ADCS):
+Para poder configurar perfiles de certificado, lleve a cabo los siguientes pasos. Estos pasos requieren conocimientos de Windows Server 2012 R2 o versiones posteriores y de Servicios de certificados de Active Directory (ADCS):
 
 #### <a name="step-1---create-an-ndes-service-account"></a>Paso 1: crear una cuenta de servicio NDES
 
@@ -152,7 +152,7 @@ En este paso, hará lo siguiente:
 
 - Agregar NDES a un servidor con Windows Server y configurar IIS para que admita NDES
 - Agregar la cuenta de servicio NDES al grupo IIS_IUSRS
-- Establecer el SPN para la cuenta de servicio NDES
+- Establecer el nombre de entidad de seguridad de servicio (SPN) para la cuenta de servicio de NDES
 
 1. En el servidor en el que se hospeda NDES, inicie sesión como **Administrador de organización** y, luego, use el [Asistente para agregar roles y características](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831809(v=ws.11)) para instalar NDES:
 
@@ -177,7 +177,7 @@ En este paso, hará lo siguiente:
 
        - **Herramientas de administración** > **Compatibilidad con la administración de IIS 6** > **Compatibilidad con WMI de IIS 6**
 
-       - En el servidor, agregue la cuenta de servicio NDES como miembro del grupo **IIS_IUSR**.
+       - En el servidor, agregue la cuenta de servicio NDES como miembro del grupo local **IIS_IUSR**.
 
 2. En un símbolo del sistema con privilegios elevados, ejecute el siguiente comando para establecer el SPN de la cuenta de servicio SCEP:
 
@@ -243,7 +243,7 @@ En este paso, hará lo siguiente:
 1. En el servidor NDES, solicite e instale un certificado de **autenticación de servidor** de la CA interna o de una CA pública. Después, este certificado SSL se enlaza en IIS.
 
     > [!TIP]
-    > Después de enlazar el certificado SSL en IIS, instale un certificado de autenticación del cliente. Este certificado puede estar emitido por una CA de confianza para el servidor NDES. Aunque no es un procedimiento recomendado, puede usar el mismo certificado para la autenticación del servidor y del cliente, siempre y cuando el certificado tenga dos usos mejorados de clave (EKU). Revise los siguientes pasos para obtener información sobre estos certificados de autenticación.
+    > Después de enlazar el certificado SSL en IIS, instale un certificado de autenticación del cliente. Este certificado puede estar emitido por una CA de confianza para el servidor NDES. Se puede usar el mismo certificado si este tiene el conjunto de usos de claves de autenticación de cliente y servidor (**Usos mejorados de clave**). Revise los siguientes pasos para obtener información sobre estos certificados de autenticación.
 
    1. Después de obtener el certificado de autenticación de servidor, abra el **Administrador de IIS** y seleccione el **Sitio web predeterminado**. En el panel **Acciones**, seleccione **Enlaces**.
 
@@ -296,7 +296,7 @@ En este paso, hará lo siguiente:
 > Microsoft Intune Certificate Connector **debe** instalarse en un servidor Windows independiente. No se puede instalar en la entidad de certificación (CA) emisora. También se **debe** instalar en el mismo servidor que el rol de Servicio de inscripción de dispositivos de red (NDES).
 
 1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
-2. Seleccione **Configuración de dispositivos** > **Entidad de certificación** > **Agregar**
+2. Seleccione **Configuración de dispositivos** > **Entidad de certificación** > **Agregar**.
 3. Descargue y guarde el archivo del conector. Guárdelo en una ubicación accesible desde el servidor donde va a instalar el conector.
 
     ![ConnectorDownload](./media/certificates-download-connector.png)
@@ -314,7 +314,7 @@ En este paso, hará lo siguiente:
     Después de seleccionar el certificado de autenticación del cliente, volverá a la superficie del **Certificado de cliente para el conector de certificado para Microsoft Intune** . Aunque no se muestra el certificado seleccionado, seleccione **Siguiente** para ver las propiedades de dicho certificado. Seleccione **Siguiente** y luego **Instalar**.
 
     > [!IMPORTANT]
-    > Intune Certificate Connector no se puede inscribir en un dispositivo que tiene habilitada la configuración de seguridad mejorada de Internet Explorer. Para usar Intune Certificate Connector, [deshabilite la configuración de seguridad mejorada de IE](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx).
+    > La configuración de seguridad mejorada de Internet Explorer [debe estar deshabilitada en el servidor NDES](https://technet.microsoft.com/library/cc775800(v=WS.10).aspx) que hospeda Intune Certificate Connector.
 
 6. Cuando se complete el asistente, pero antes de cerrarlo, haga clic en **Iniciar la UI del conector de certificado**.
 
@@ -325,7 +325,7 @@ En este paso, hará lo siguiente:
 
 7. En la IU **Conector de certificado** :
 
-    Seleccione **Iniciar sesión** y escriba sus credenciales de administrador de servicio de Intune o las credenciales de un administrador de inquilinos con permiso de administración global.
+    Seleccione **Iniciar sesión** y escriba sus credenciales de administrador de servicio de Intune o las credenciales de un administrador de inquilinos con permiso de administración global. Después de iniciar sesión, Intune Certificate Connector descargará un certificado de Intune. Este certificado sirve para la autenticación entre el conector e Intune.
 
     > [!IMPORTANT]
     > La cuenta de usuario debe tener una licencia válida de Intune asignada. Si la cuenta de usuario no tiene una licencia válida de Intune, NDESConnectorUI.exe produce un error.

@@ -1,6 +1,6 @@
 ---
 title: 'Restricciones de dispositivos de Windows Holographic for Business en Microsoft Intune: Azure | Microsoft Docs'
-description: Conozca y configure las opciones de restricción de dispositivos de Microsoft Intune para Windows Holographic for Business, incluidas la cancelación de la suscripción, la geolocalización, las contraseñas, la instalación de aplicaciones desde App Store, las cookies y los elementos emergentes de Edge, Windows Defender, la búsqueda, la nube y el almacenamiento, la conectividad de Bluetooth, la hora del sistema y los datos de uso de Azure.
+description: Conozca y configure las opciones de restricción de dispositivos de Microsoft Intune para Windows Holographic for Business, incluidas la cancelación de la suscripción, la geolocalización, las contraseñas, la instalación de aplicaciones desde App Store, las cookies y los elementos emergentes de Microsoft Edge, Windows Defender, la búsqueda, la nube y el almacenamiento, la conectividad de Bluetooth, la hora del sistema y los datos de uso de Azure.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 9d7f54ce0e288025a4a7f0f45bf5b10de5323021
-ms.sourcegitcommit: e8e8164586508f94704a09c2e27950fe6ff184c3
+ms.openlocfilehash: f79985c9854af462fa9a456304a3184128283b9c
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39321761"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576807"
 ---
 # <a name="device-restriction-settings-for-windows-holographic-for-business-in-intune"></a>Configuración de restricción de dispositivos de Windows Holographic for Business en Intune
 
@@ -41,17 +41,17 @@ Se admiten las siguientes configuraciones de restricciones de dispositivos en di
 -   **Instalación de aplicaciones de confianza**: permite realizar una instalación de prueba de las aplicaciones firmadas con un certificado de confianza.
 -   **Desbloqueo de desarrollador**: permite que un usuario final modifique la configuración de desarrollador de Windows, como permitir las aplicaciones con instalación de prueba.
 
-## <a name="edge-browser"></a>Explorador Microsoft Edge
+## <a name="microsoft-edge-browser"></a>Explorador Microsoft Edge
 
 -   **Cookies**: permite que el explorador guarde cookies de Internet en el dispositivo.
 -   **Ventanas emergentes**: bloquea las ventanas emergentes en el explorador (solo se aplica a Windows 10 Escritorio).
 -   **Search suggestions** (Sugerencias de búsqueda): permite que el motor de búsqueda sugiera sitios a medida que se escriben las frases de búsqueda.
--   **Administrador de contraseñas**: habilita o deshabilita la característica de Administrador de contraseñas de Microsoft Edge.
-- **Enviar encabezados de no seguimiento**: configura el explorador Microsoft Edge para que envíe encabezados de no seguimiento a sitios web que visitan los usuarios.
+-   **Administrador de contraseñas**: habilita o deshabilita la característica Administrador de contraseñas de Microsoft Edge.
+- **Enviar encabezados de no seguimiento**: configura el explorador Microsoft Edge para que envíe encabezados de no seguimiento a sitios web que los usuarios visitan.
 
 ## <a name="windows-defender-smart-screen"></a>SmartScreen de Windows Defender
 
-- **SmartScreen para Microsoft Edge**: permite a SmartScreen de Edge el acceso al sitio y las descargas de archivos.
+- **SmartScreen para Microsoft Edge**: permite a SmartScreen de Microsoft Edge el acceso al sitio y las descargas de archivos.
 
 ## <a name="search"></a>Buscar
 - **Ubicación de búsqueda**: especifica si la búsqueda puede usar la ubicación. Información de

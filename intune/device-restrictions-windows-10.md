@@ -5,19 +5,19 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 6/26/2018
+ms.date: 11/12/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a95f68f0a9794047b8adb7f9ab729bb4905f2379
-ms.sourcegitcommit: cac71802b2782700f0d52ea114089d73620cd1ed
+ms.openlocfilehash: ac0348736e5975633776c86dee88555dfceb6919
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50679396"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576892"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Restricciones de dispositivos para la configuración de Windows 10 (y versiones posteriores) en Intune
 En este artículo, se muestran todas las opciones de configuración de restricciones de dispositivos de Microsoft Intune que puede configurar para los dispositivos que ejecutan Windows 10.
@@ -31,7 +31,7 @@ En este artículo, se muestran todas las opciones de configuración de restricci
 - **Captura de pantalla (solo móviles)**: permite que el usuario capture la pantalla del dispositivo como imagen.
 - **Copiar y pegar (solo móviles)**: permite acciones de copiar y pegar entre aplicaciones del dispositivo.
 - **Cancelación manual de la suscripción**: permite al usuario eliminar manualmente la cuenta del área de trabajo desde el dispositivo.
-   - Esta configuración de directiva no se aplica si el equipo está unido a Azure Active Directory y la inscripción automática está habilitada. 
+   - Esta configuración de directiva no se aplica si el equipo está unido a Azure AD y la inscripción automática está habilitada. 
    - Esta configuración de directiva no se aplica a equipos que ejecuten Windows 10 Home.
 - **Instalación manual del certificado raíz (solo móviles)**: impide que el usuario instale manualmente certificados raíz y certificados CAP intermedios.
 
@@ -51,9 +51,9 @@ En este artículo, se muestran todas las opciones de configuración de restricci
 - **Detección de dispositivos**: bloquea la detección de un dispositivo por parte de otros dispositivos.
 - **Conmutador de tareas (solo móviles)**: bloquea el conmutador de tareas en el dispositivo.
 - **Cuadro de diálogo de error de tarjeta SIM (solo móviles)**: impide que un mensaje de error se muestre en el dispositivo si no se detecta una tarjeta SIM.
-- **Área de trabajo de Ink**: impida que los usuarios accedan al área de trabajo de Ink. Cuando este valor no está configurado, se habilita el área de trabajo de Ink (se activa la característica) y el usuario puede usarla más allá de la pantalla de bloqueo.
+- **Área de trabajo de Ink**: impida que los usuarios accedan al área de trabajo de Ink. Si se establece en **No configurado**, se habilita el área de trabajo de Ink (se activa la característica) y el usuario puede usarla más allá de la pantalla de bloqueo.
 - **Reimplementación automática**: permite a los usuarios con derechos administrativos eliminar todos los datos de usuario y las opciones de configuración con **Ctrl + Win + R** en la pantalla de bloqueo del dispositivo. En este caso, el dispositivo se vuelve a configurar e inscribir automáticamente para la administración.
-- **Require users to connect to network during device setup (Windows Insider only)** (Requerir que los usuarios se conecten a la red durante la instalación de dispositivos (solo Windows Insider)): elija **Requerir** para exigir que el dispositivo se conecte a una red antes de continuar más allá de la página Red durante la instalación de Windows 10. Aunque esta característica está en versión preliminar, se requiere una compilación 1809 de Windows Insider o una versión posterior para usar esta configuración.
+- **Require users to connect to network during device setup (Windows Insider only)** (Requerir que los usuarios se conecten a la red durante la instalación de dispositivos (solo Windows Insider)): elija **Requerir** para que el dispositivo se conecte a una red antes de continuar más allá de la página Red durante la instalación de Windows 10. Aunque esta característica está en versión preliminar, se requiere una compilación 1809 de Windows Insider o una versión posterior para usar esta configuración.
 
 ## <a name="password"></a>Contraseña
 -   **Contraseña**: exige que el usuario final escriba una contraseña para acceder al dispositivo.
@@ -70,14 +70,14 @@ Para los dispositivos que ejecutan Windows 10 Mobile: si el inicio de sesión fa
 
 ## <a name="personalization"></a>Personalization
 
-- **Dirección URL de imagen de fondo de escritorio (solo escritorio)**: especifica la dirección URL de una imagen en formato JPEG que quiere usar como fondo de escritorio de Windows. Los usuarios no pueden cambiar esto.
+- **Dirección URL de imagen de fondo de escritorio (solo escritorio)**: indique la dirección URL de una imagen en formato JPEG que quiere usar como fondo de escritorio de Windows. Los usuarios no pueden cambiar la imagen.
 
 ## <a name="privacy"></a>Privacidad
 
 -   **Personalización de entrada**: no permite el uso de servicios de voz basados en la nube para Cortana, Dictado o aplicaciones de Microsoft Store. Si permite estos servicios, Microsoft puede recopilar datos de voz para mejorar el servicio.
 -   **Aceptación automática de los mensajes de consentimiento del usuario sobre emparejamiento y privacidad**: permite que Windows acepte automáticamente los mensajes de consentimiento sobre emparejamiento y privacidad al ejecutar las aplicaciones.
-- **Publicar las actividades del usuario**: establezca esta propiedad en **Bloquear** para evitar experiencias compartidas y la detección de recursos usados recientemente en el selector de tareas.
-- **Solo actividades locales**: establezca esta propiedad en **Bloquear** para evitar experiencias compartidas y la detección de recursos usados recientemente en el selector de tareas según la actividad local únicamente.
+- **Publicar las actividades del usuario**: seleccione **Bloquear** para evitar experiencias compartidas y la detección de recursos usados recientemente en el selector de tareas.
+- **Solo actividades locales**: seleccione **Bloquear** para evitar experiencias compartidas y la detección de recursos usados recientemente en el selector de tareas según la actividad local únicamente.
 
 Puede definir la información a la que pueden tener acceso todas las aplicaciones del dispositivo. Puede definir excepciones para cada aplicación mediante **excepciones de privacidad de cada aplicación**.
 
@@ -98,8 +98,8 @@ Puede definir la información a la que pueden tener acceso todas las aplicacione
 - **Teléfono**: define si esta aplicación puede tener acceso al teléfono.
 - **Radios**: algunas aplicaciones usan radios (por ejemplo, Bluetooth) en el dispositivo para enviar y recibir datos y necesitan activar o desactivar estas radios. Define si esta aplicación puede controlar estas radios.
 - **Tareas**: define si esta aplicación puede tener acceso a las tareas.
-- **Dispositivos de confianza**: define si esta aplicación puede usar dispositivos de confianza (hardware ya conectado o que se proporciona con este PC, tableta o teléfono). Por ejemplo: televisores, proyectores, etc.
-- **Comentarios y diagnóstico**: define si esta aplicación puede tener acceso a la información de diagnóstico.
+- **Dispositivos de confianza**: elija si esta aplicación puede usar dispositivos de confianza (hardware ya conectado o que se proporciona con este PC, tableta o teléfono). Por ejemplo: televisores, proyectores, etc.
+- **Comentarios y diagnóstico**: elija si esta aplicación puede tener acceso a la información de diagnóstico.
 - **Sincronización con dispositivos**: define si esta aplicación puede compartir y sincronizar información automáticamente con dispositivos inalámbricos que no se emparejan explícitamente con este PC, tableta o teléfono.
 
 ## <a name="per-app-privacy-exceptions"></a>Excepciones de privacidad para cada aplicación
@@ -153,38 +153,38 @@ Puede agregar aplicaciones que deben tener un comportamiento de privacidad difer
 -   **Game DVR (solo escritorio)**: configura si se permite la grabación y difusión de los juegos.
 -   **Aplicaciones solo de la tienda**: configura si los usuarios pueden instalar aplicaciones de otros lugares distintos de la tienda de aplicaciones.
 
-## <a name="edge-browser"></a>Explorador Microsoft Edge
+## <a name="microsoft-edge-browser"></a>Explorador Microsoft Edge
 
--   **Explorador de Microsoft Edge (solo móvil)**: permite el uso del explorador web Edge en el dispositivo.
--   **Lista desplegable de la barra de direcciones (solo escritorio)**: use esto para impedir que Edge muestre una lista de sugerencias en una lista desplegable cuando escriba. Esto ayuda a minimizar el uso del ancho de banda de red entre Microsoft Edge y servicios Microsoft.
+-   **Explorador de Microsoft Edge (solo móvil)**: permite el uso del explorador web Microsoft Edge en el dispositivo.
+-   **Lista desplegable de la barra de direcciones (solo escritorio)**: impide que Microsoft Edge muestre una lista de sugerencias en una lista desplegable cuando escriba. Esta opción ayuda a minimizar el uso del ancho de banda de red entre Microsoft Edge y servicios Microsoft.
 -   **Sincronizar favoritos entre exploradores de Microsoft (solo escritorio)**: permite que Windows sincronice los favoritos entre Internet Explorer y Microsoft Edge.
--   **Enviar encabezados de no seguimiento**: configura el explorador Edge para que envíe encabezados de no seguimiento a sitios web que visitan los usuarios.
+-   **Enviar encabezados de no seguimiento**: configura el explorador Microsoft Edge para que envíe encabezados de no seguimiento a sitios web que los usuarios visitan.
 -   **Cookies**: permite que el explorador guarde cookies de Internet en el dispositivo.
--   **JavaScript**: permite la ejecución de scripts, como JavaScript, en el explorador Edge.
+-   **JavaScript**: permite la ejecución de scripts, como JavaScript, en el explorador Microsoft Edge.
 -   **Ventanas emergentes**: bloquea las ventanas emergentes en el explorador (solo se aplica a Windows 10 Escritorio).
 -   **Search suggestions** (Sugerencias de búsqueda): permite que el motor de búsqueda sugiera sitios a medida que se escriben las frases de búsqueda.
 -   **Enviar el tráfico de la intranet a Internet Explorer**: permite a los usuarios abrir sitios web de intranet en Internet Explorer (solo Windows 10 Escritorio).
 -   **Rellenar automáticamente**: permite a los usuarios cambiar la configuración de Autocompletar en el explorador (solo Windows 10 Escritorio).
--   **Administrador de contraseñas**: habilita o deshabilita la característica de Administrador de contraseñas de Microsoft Edge.
+-   **Administrador de contraseñas**: habilita o deshabilita la característica Administrador de contraseñas de Microsoft Edge.
 -   **Ubicación de la lista de sitios del modo de empresa**: especifica dónde encontrar la lista de sitios web que se abren en modo de empresa. Los usuarios no pueden editar esta lista.<br>(Solo Windows 10 Escritorio)
 -   **Herramientas de desarrollo**: impiden que el usuario final abra las herramientas de desarrollo de Microsoft Edge.
 -   **Extensiones**: permiten que el usuario final instale extensiones de Microsoft Edge en el dispositivo.
 -   **Exploración de InPrivate**: impide que el usuario final abra sesiones de exploración de InPrivate.
--   **Mostrar la página de la primera ejecución**: impide que la página de introducción aparezca la primera vez que ejecuta Edge.
-    -   **URL de primera ejecución**: especifica la URL de una página que se muestra la primera vez que un usuario ejecuta Microsoft Edge (solo Windows 10 Mobile).
+-   **Mostrar la página de la primera ejecución**: impide que la página de introducción aparezca la primera vez que ejecuta Microsoft Edge.
+    -   **URL de primera ejecución**: especifica la dirección URL de una página que se muestra la primera vez que un usuario ejecuta Microsoft Edge (solo Windows 10 Mobile).
 -   **Páginas principales**: agrega una lista de sitios que quiere usar como páginas principales en el explorador Microsoft Edge (solo escritorio).
 -   **Cambia a la página de inicio**: permite que los usuarios cambien las páginas de inicio que se muestran cuando se abre Microsoft Edge. Use la configuración de páginas principales para crear la página o enumerar las páginas que se abren cuando se inicia Microsoft Edge.
 -   **Bloquear acceso a about:flags**: impide que el usuario final tenga acceso a la página about:flags de Microsoft Edge que contiene la configuración experimental y de desarrollador.
 -   **Dirección IP de localhost para WebRtc**: impide que la dirección IP de localhost de los usuarios se muestre cuando se hacen llamadas telefónicas a través del protocolo WebRtc.
 -   **Motor de búsqueda predeterminado**: especifica el motor de búsqueda predeterminado que se usará. Los usuarios finales pueden cambiar este valor en cualquier momento.
--   **Borrar datos de navegación al salir**: borra el historial y los datos de navegación cuando el usuario sale de Edge.
+-   **Borrar datos de navegación al salir**: borra el historial y los datos de navegación cuando el usuario sale de Microsoft Edge.
 -   **Recopilación de datos para iconos dinámicos**: impide que Windows recopile información de iconos dinámicos cuando los usuarios anclan un sitio al menú de inicio de Microsoft Edge.
 -  **Lista de favoritos**: define la ruta de acceso al archivo de favoritos. Por ejemplo, http://contoso.com/favorites.html.
--  **Restringir los cambios a Favoritos**: establezca este valor en **Bloquear** para impedir que los usuarios agreguen, importen, ordenen o modifiquen la lista de favoritos. 
+-  **Restringir los cambios a Favoritos**: elija **Bloquear** para impedir que los usuarios agreguen, importen, ordenen o modifiquen la lista de favoritos. 
 
 ## <a name="windows-defender-smart-screen"></a>SmartScreen de Windows Defender
 
-- **SmartScreen para Microsoft Edge**: permite a SmartScreen de Edge el acceso al sitio y las descargas de archivos.
+- **SmartScreen para Microsoft Edge**: permite a SmartScreen de Microsoft Edge el acceso al sitio y las descargas de archivos.
 - **Acceso a sitio malintencionado**: impide que los usuarios omitan las advertencias del filtro SmartScreen de Windows Defender y no permite que vayan al sitio.
 - **Descarga de archivos no comprobados**: impide que los usuarios omitan las advertencias del filtro SmartScreen de Windows Defender y no permite que descarguen los archivos no comprobados.
 
@@ -235,7 +235,27 @@ Puede agregar aplicaciones que deben tener un comportamiento de privacidad difer
 
 ## <a name="start"></a>Start
 
-- **Desanclar aplicaciones de la barra de tareas**: impide que el usuario desancle aplicaciones del menú Inicio.
+- **Diseño del menú Inicio**: para personalizar el menú Inicio en los dispositivos de escritorio, puede cargar un archivo XML que incluya sus personalizaciones, así como el orden en que aparecen las aplicaciones, entre otras cosas. Los usuarios no pueden cambiar el diseño del menú Inicio que especifique usted.
+- **Anclar los sitios web a iconos del menú Inicio**: puede importar imágenes desde Microsoft Edge que se muestran como vínculos en el menú Inicio de Windows de los dispositivos de escritorio.
+- **Desanclar aplicaciones de la barra de tareas**: seleccione **Bloquear** para impedir que el usuario desancle aplicaciones del menú Inicio.
+- **Cambio rápido de usuario**: seleccione **Bloquear** para impedir el cambio de usuarios que han iniciado sesión al mismo tiempo sin cerrar la sesión.
+- **Aplicaciones más usadas**: seleccione **Bloquear** para que las aplicaciones más usadas no se muestren en el menú Inicio. También deshabilita la alternancia correspondiente en la aplicación Configuración.
+- **Aplicaciones agregadas recientemente**: seleccione **Bloquear** para que las aplicaciones agregadas recientemente no se muestren en el menú Inicio. También deshabilita la alternancia correspondiente en la aplicación Configuración.
+- **Modo de pantalla de inicio**: elija cómo quiere que se muestre la pantalla de inicio. Puede elegir **Pantalla completa** o **Pantalla parcial**.
+- **Elementos abiertos recientemente en listas de accesos directos**: seleccione **Bloquear** para que las listas de accesos directos recientes no se muestren en el menú Inicio ni en la barra de tareas. También deshabilita la alternancia correspondiente en la aplicación Configuración.
+- **Lista de aplicaciones**: elija cómo quiere que se muestre la aplicación Configuración. Las opciones son: 
+  - Contraer
+  - Contraer y deshabilitar la aplicación Configuración 
+  - Quitar y deshabilitar la aplicación Configuración
+- **Botón de encendido**: seleccione **Bloquear** para que el botón de encendido no se muestre en el menú Inicio.
+- **Icono del usuario**: seleccione **Bloquear** para que el icono del usuario no se muestre en el menú Inicio.
+  - **Bloquear**: seleccione **Bloquear** para que la opción `Lock` no se muestre en el icono del usuario del menú Inicio.
+  - **Cerrar sesión**: seleccione **Bloquear** para que la opción `Sign out` no se muestre en el icono del usuario del menú Inicio.
+- **Apagar**: seleccione **Bloquear** para que las opciones `Update and shut down` y `Shut down` no se muestren en el botón de encendido del menú Inicio.
+- **Suspender**: seleccione **Bloquear** para que la opción `Sleep` no se muestre en el botón de encendido del menú Inicio.
+- **Hibernar**: seleccione **Bloquear** para que la opción `Hibernate` no se muestre en el botón de encendido del menú Inicio.
+- **Cambiar cuenta**: seleccione **Bloquear** para que la opción `Switch account` no se muestre en el icono del usuario del menú Inicio.
+- **Opciones de reinicio**: seleccione **Bloquear** para que las opciones `Update and restart` y `Restart` no se muestren en el botón de encendido del menú Inicio.
 - **Documentos en Inicio**: oculta o muestra la carpeta Documentos en el menú Inicio de Windows.
 - **Descargas en Inicio**: oculta o muestra la carpeta Descargas en el menú Inicio de Windows.
 - **Explorador de archivos en Inicio**: oculta o muestra la aplicación Explorador de archivos en el menú Inicio de Windows.
@@ -269,7 +289,7 @@ Un dispositivo de pantalla completa normalmente ejecuta una aplicación o un con
 #### <a name="single-app-kiosks"></a>Pantallas completas con una sola aplicación
 Escriba los valores siguientes:
 
-- **Cuenta de usuario**: especifique la cuenta de usuario local (en el dispositivo), una cuenta de dominio de AD o el inicio de sesión de cuenta de Azure AD asociado a la aplicación de pantalla completa.
+- **Cuenta de usuario**: especifique la cuenta de usuario local (en el dispositivo), una cuenta de dominio de AD o una cuenta de Azure AD asociada a la aplicación de pantalla completa.
   - Cuenta local: escríbala como `devicename\accountname`, `.\accountname` o `accountname`.
   - Cuenta de dominio: escríbala como `domain\accountname`.
   - Cuenta de Azure AD: escríbala como `AzureAD\emailaddress`. Asegúrese de escribir "AzureAD", ya que es un nombre de dominio fijo. Después, siga con la dirección de correo electrónico de Azure AD. Por ejemplo, escriba `AzureAD\user@contoso.onmicrosoft.com`.
@@ -300,7 +320,7 @@ Use el botón **Agregar** para crear una configuración de pantalla completa (o 
 
   [Crear un quiosco de Windows 10 que ejecute varias aplicaciones](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps#create-xml-file) proporciona más detalles sobre cómo usar y crear archivos XML.
 
-- **Usuarios asignados**: agregue una o varias cuentas de usuario que puedan usar las aplicaciones agregadas. Cuando la cuenta inicia sesión, solo están disponibles las aplicaciones definidas en la configuración. La cuenta de usuario puede ser local en el dispositivo o un inicio de sesión de cuenta de Azure AD asociada a la aplicación de pantalla completa.
+- **Usuarios asignados**: agregue una o varias cuentas de usuario que puedan usar las aplicaciones agregadas. Cuando la cuenta inicia sesión, solo están disponibles las aplicaciones definidas en la configuración. La cuenta de usuario puede ser local en el dispositivo o una cuenta de Azure AD asociada a la aplicación de pantalla completa.
 
     En el caso de las pantallas completas en entornos de uso público con inicio de sesión automático habilitado, se debe usar un tipo de usuario con los privilegios mínimos (por ejemplo, la cuenta de usuario estándar local). Para configurar una cuenta de Azure Active Directory (AD) para el modo de pantalla completa, use el formato `domain\user@tenant.com`.
 
@@ -347,9 +367,9 @@ Si los archivos de la unidad son de solo lectura, Defender no puede quitar el ma
 ## <a name="network-proxy"></a>Proxy de red
 
 -   **Detectar automáticamente configuración de proxy**: cuando esta opción está habilitada, el dispositivo intenta encontrar la ruta de acceso a un script de configuración automática del proxy.
--   **Usar script de proxy**: seleccione esta opción si desea especificar una ruta de acceso a un script de configuración automática para configurar el servidor proxy.
+-   **Usar script de proxy**: seleccione esta opción para especificar una ruta de acceso a un script de configuración automática para configurar el servidor proxy.
     -   **URL del script de configuración**: escriba la dirección URL de un script de configuración automática que desee usar para configurar el servidor proxy.
--   **Usar servidor proxy manual**: seleccione esta opción si desea proporcionar manualmente información sobre el servidor proxy.
+-   **Usar servidor proxy manual**: seleccione esta opción si desea especificar manualmente información del servidor proxy.
     -   **Dirección**: escriba el nombre o la dirección IP del servidor proxy.
     -   **Número de puerto**: escriba el número de puerto del servidor proxy.
     -   **Excepciones de proxy**: escriba las direcciones URL que no deben usar el servidor proxy. Use un punto y coma para separar cada elemento.
@@ -374,12 +394,15 @@ Si los archivos de la unidad son de solo lectura, Defender no puede quitar el ma
 
 ## <a name="cloud-printer"></a>Impresora en la nube
 
-- **Dirección URL de detección de la impresora**: punto de conexión para detectar impresoras en la nube.
-- **Dirección URL de autoridad de acceso a la impresora**: punto de conexión de autenticación para la adquisición de tokens de OAuth.
-- **GUID de aplicación cliente nativa de Azure**: una GUID de una aplicación cliente autorizada para recuperar los tokens de OAuth desde OAuthAuthority.
-- **URI de recurso de servicio de impresión**: URI de recurso de OAuth para el servicio de impresión tal y como está configurado en Azure Portal.
-- **Máximo de impresoras para consultar (solo móvil)**: número máximo de impresoras que se deben consultar desde un punto de conexión de detección.
-- **URI de recurso de servicio de detección de impresora**: URI de recurso de OAuth para el servicio de detección de impresora tal y como está configurado en Azure Portal.
+- **Dirección URL de detección de la impresora**: especifique la dirección URL para detectar impresoras en la nube.
+- **Dirección URL de autoridad de acceso a la impresora**: especifique la dirección URL del punto de conexión de autenticación para obtener tokens de OAuth. Por ejemplo, escriba algo parecido a `https://login.microsoftonline.com/your Azure AD Tenant ID`.
+- **GUID de aplicación cliente nativa de Azure**: especifique el GUID de una aplicación cliente autorizada para obtener tokens de OAuth desde OAuthAuthority.
+- **URI de recurso de servicio de impresión**: indique el URI de recurso de OAuth para el servicio de impresión configurado en Azure Portal. Por ejemplo, escriba algo parecido a `http://MicrosoftEnterpriseCloudPrint/CloudPrint`.
+- **Máximo de impresoras para consultar (solo móvil)**: indique el número máximo de impresoras que quiere que se consulten. Por ejemplo, escriba `10`.
+- **URI de recurso de servicio de detección de impresora**: indique el URI de recurso de OAuth para el servicio de detección de impresora configurado en Azure Portal. Por ejemplo, escriba algo parecido a `http://MopriaDiscoveryService/CloudPrint`.
+
+> [!TIP]
+> Después de configurar la solución [Hybrid Cloud Print de Windows Server](https://docs.microsoft.com/windows-server/administration/hybrid-cloud-print/hybrid-cloud-print-overview), puede configurar estas opciones e implementarlas en dispositivos Windows.
 
 ## <a name="local-printer"></a>Impresora local
 - **Impresoras**: lista de impresoras locales que se han agregado.
@@ -405,4 +428,4 @@ Si los archivos de la unidad son de solo lectura, Defender no puede quitar el ma
 - **RCS (solo móvil)**: deshabilita la funcionalidad de envío o recepción de Rich Communication Services en el dispositivo.
 
 ## <a name="more-information"></a>Más información
-Para obtener detalles técnicos adicionales sobre cada configuración y qué ediciones de Windows son compatibles, vea [Windows 10 Policy CSP Reference](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider) (Referencia sobre el CSP de directivas de Windows 10).
+Para obtener detalles técnicos adicionales sobre cada configuración y sobre las ediciones de Windows compatibles, consulte [Windows 10 Policy CSP Reference](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-configuration-service-provider) (Referencia sobre el CSP de directivas de Windows 10).

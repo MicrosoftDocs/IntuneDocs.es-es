@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 94280c73-c05c-4e72-b0dd-a7cb997782f9
 ROBOTS: ''
 ms.custom: intune-azure
-ms.openlocfilehash: 5b2c2bb6e76bd6b2da7ee7c12282c0ff22d7d3e3
-ms.sourcegitcommit: 2162ed46d939b4a9b85fa4e7e9943f2fb5948f1e
+ms.openlocfilehash: 270f19b6f0babb347b04731ca270a3c5bea18217
+ms.sourcegitcommit: 5e5004a31207e75e54504d74548735c048676a03
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/20/2018
-ms.locfileid: "31617216"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51225682"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>Requerir la autenticación multifactor para las inscripciones de dispositivos de Intune
 
@@ -48,24 +48,18 @@ Para requerir MFA cuando se inscribe un dispositivo, siga estos pasos:
 >No configure **reglas de acceso basadas en dispositivos** para la inscripción a Microsoft Intune.
 
 1. Inicie sesión en [Microsoft Azure Portal](https://portal.azure.com) con sus credenciales.
-2. En el portal, elija **Azure Active Directory**.
-2. En **Azure Active Directory**, seleccione **Administrar** > **Aplicaciones empresariales**.
-3. En **Aplicaciones empresariales**, elija **Administrar** > **Todas las aplicaciones**. Verá una lista de todas las aplicaciones de Azure que administre.
-3. En la lista, seleccione **Inscripción a Microsoft Intune**.
-4. En **Inscripción a Microsoft Intune**, elija **Seguridad** > **Acceso condicional**.
-5. Pulse **Nueva directiva**.
-6. En **Directiva nueva**, escriba un nombre descriptivo para la directiva.
-7. En la sección **Asignaciones**, seleccione **Usuarios y grupos**.
-8. En **Usuarios y grupos**, elija los usuarios o los grupos a los que se aplicará esta directiva y, luego, seleccione **Listo**.
-9. En la sección **Asignaciones**, elija **Aplicaciones en la nube**.
-10. En la pestaña **Incluir** de **Aplicaciones en la nube**, elija **Seleccionar aplicaciones**, **Seleccionar** > **Inscripción a Microsoft Intune** y, luego, **Listo**.
-11. En la sección **Asignaciones**, seleccione **Condiciones**.
-12. En **Condiciones**, no es necesario configurar ninguna configuración para MFA.
-13. En la sección **Controles de acceso**, elija **Conceder**.
-14. En **Conceder**, seleccione **Conceder acceso** y, luego, **Requerir autenticación multifactor**.
-    No seleccione **Requerir que el dispositivo esté marcado como compatible**, puesto que el cumplimiento normativo de un dispositivo no puede evaluarse hasta que esté inscrito.
-15. Elija **Seleccionar**.
-16. En **Directiva nueva**, elija **Habilitar directiva** > **Activado** y después elija **Crear**.
+2. En el portal, vaya a **[Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)**.
+3. En **Azure Active Directory**, en Seguridad, seleccione **[Acceso condicional](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies)**.
+4. Pulse **Nueva directiva**.
+5. En **Directiva nueva**, escriba un nombre descriptivo para la directiva.
+6. En la sección **Asignaciones**, seleccione **Usuarios y grupos**.
+7. En **Usuarios y grupos**, elija **Seleccionar usuarios o grupos** y marque **Usuarios y grupos**. Después, seleccione los usuarios o grupos que recibirán esta directiva y seleccione **Listo**.
+8. En la sección **Asignaciones**, elija **Aplicaciones en la nube**.
+9. En la pestaña **Incluir** de **Aplicaciones en la nube**, elija **Seleccionar aplicaciones**, **Seleccionar** > **Inscripción a Microsoft Intune** y, luego, **Listo**.
+10. En la sección **Asignaciones**, en **Condiciones** no es necesario configurar ninguna opción para MFA.
+11. En la sección **Controles de acceso**, elija **Conceder**.
+12. En **Conceder**, seleccione **Conceder acceso** y, luego, **Requerir autenticación multifactor**. No seleccione **Requerir que el dispositivo esté marcado como compatible**, puesto que el cumplimiento normativo de un dispositivo no puede evaluarse hasta que esté inscrito. Luego, elija **Seleccionar**.
+13. En **Directiva nueva**, elija **Habilitar directiva** > **Activado** y después elija **Crear**.
 
 
 

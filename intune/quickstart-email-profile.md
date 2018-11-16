@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 10/29/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b797951c878dd90cbb7bb716b5108f94f48921c5
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 21dda51d2ddde74f07fcc173c5a4dd2a13c9c8b8
+ms.sourcegitcommit: 5e5004a31207e75e54504d74548735c048676a03
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231957"
+ms.lasthandoff: 11/07/2018
+ms.locfileid: "51225754"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>Inicio rápido: Crear un perfil de dispositivo de correo para iOS
 
@@ -69,7 +69,7 @@ Si no piensa usar el perfil que creó para otros tutoriales o pruebas, puede eli
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-En este inicio rápido, ha creado un perfil de correo electrónico para dispositivos iOS. Ya puede usar este perfil para determinar si un dispositivo iOS es compatible; para ello, solo tiene que crear una directiva de cumplimiento que marque como no compatibles aquellos dispositivos iOS que no coincidan con el perfil. Para lograr una mayor protección, puede crear una directiva de acceso condicional que bloquee el acceso al correo electrónico para todos aquellos dispositivos iOS que no sean compatibles.
+En este inicio rápido, ha creado un perfil de correo electrónico para dispositivos iOS. Ya puede usar este perfil para determinar si un dispositivo iOS es compatible; para ello, solo tiene que crear una directiva de cumplimiento que marque como no compatibles aquellos dispositivos iOS que no coincidan con el perfil. Para lograr una mayor protección, puede crear una directiva de acceso condicional que bloquee el acceso al correo electrónico para todos aquellos dispositivos iOS que no sean compatibles. Para obtener más información sobre las directivas de cumplimiento de dispositivos, consulte la [introducción a las directivas de cumplimiento de dispositivos en Intune](device-compliance-get-started.md).
 
 > [!div class="nextstepaction"]
-> [Introducción a las directivas de cumplimiento de dispositivos de Intune](device-compliance-get-started.md)
+> [Tutorial: Protección del correo electrónico de Exchange Online en dispositivos administrados](tutorial-protect-email-on-enrolled-devices.md)

@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2018
+ms.date: 11/5/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: bacaf8ff4119d4cd40483b65ea45e283d98a51f1
-ms.sourcegitcommit: 814d1d473de2de2e735efab826b1091de2b093f5
+ms.openlocfilehash: 2f21df636ab429969429c6dbdf540daaa67a8f88
+ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/05/2018
-ms.locfileid: "51025209"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51576773"
 ---
 # <a name="the-early-edition-for-microsoft-intune---november-2018"></a>Edición anticipada para Microsoft Intune: noviembre de 2018
 
@@ -44,11 +44,6 @@ Esta página se actualiza periódicamente. Compruebe si hay actualizaciones adic
 ### <a name="uninstalling-apps-on-corporate-owned-supervised-ios-devices----1281677---"></a>Desinstalación de aplicaciones en dispositivos iOS supervisados corporativos <!-- 1281677 -->
 Podrá eliminar cualquier aplicación en dispositivos iOS corporativos supervisados. Puede quitar cualquier aplicación estableciendo como destino grupos de usuarios o dispositivos con un tipo de asignación **Desinstalar**. Para dispositivos iOS personales o no supervisados, podrá quitar solo las aplicaciones que se instalaron mediante Intune.
 
-### <a name="support-for-ios-12-oauth-in-ios-email-profiles---2155106---"></a>Compatibilidad con OAuth de iOS 12 en perfiles de correo electrónico de iOS <!--2155106 -->
-Los perfiles de correo electrónico de iOS de Intune serán compatible con OAuth de iOS 12. Para ver esta característica, seleccione **Intune** > **Configuración del dispositivo** > **Perfiles** > **Crear perfil**. En la hoja Crear perfil, puede habilitar o deshabilitar **OAuth**. Si esta opción está activada, sucederán dos cosas:
-1. Se emitirá un perfil nuevo para los dispositivos que ya estén seleccionados como destino.
-2. A los usuarios finales se les volverá a solicitar sus credenciales.
-
 ### <a name="track-installation-of-office-proplus---2620217--"></a>Seguimiento de la instalación de Office ProPlus <!--2620217-->
 Podrá realizar un seguimiento del progreso de instalación de [Office ProPlus](apps-add-office365.md) en la [página de estado de la inscripción](windows-enrollment-status.md).
 
@@ -69,7 +64,7 @@ Una nueva configuración permitirá a los usuarios pulsar un botón de tecla pro
 Podrá controlar mejor las asignaciones de la directiva de protección de la aplicación. Al guardar y aplicar las asignaciones de la directiva de protección de la aplicación, esta directiva solo afectará directamente a los usuarios previstos.
 
 ### <a name="new-microsoft-edge-browser-settings-for-windows-10-and-later----3174639---"></a>Nueva configuración del explorador Microsoft Edge en Windows 10 y versiones posteriores <!-- 3174639 -->
-Se agregará una nueva opción para ayudar a controlar y administrar el explorador Microsoft Edge en los dispositivos. Para obtener una lista de las configuraciones actuales, vea la [restricción de dispositivos para Windows 10 y versiones posteriores](device-restrictions-windows-10.md#edge-browser).
+Se agregará una nueva opción para ayudar a controlar y administrar el explorador Microsoft Edge en los dispositivos. Para obtener una lista de las configuraciones actuales, vea la [restricción de dispositivos para Windows 10 y versiones posteriores](device-restrictions-windows-10.md#microsoft-edge-browser).
 
 ### <a name="select-apps-tracked-on-the-enrollment-status-page---2531007---"></a>Seleccionar las aplicaciones de las que se realiza un seguimiento en la página de estado de la inscripción <!-- 2531007 -->
 Podrá elegir de qué aplicaciones se realizará un seguimiento en la página de estado de la inscripción.
@@ -113,10 +108,10 @@ La configuración de directiva APP de contenido web en dispositivos iOS y Androi
 ### <a name="apple-vpp-token-used-by-another-mdm----1488946---"></a>Token VPP de Apple usado por otro MDM <!-- 1488946 -->
 Intune detectará y mostrará los detalles si un token de programa de compras por volumen (VPP) de Apple lo está usando Intune y otro MDM.
 
-### <a name="ios-and-macos-version-numbers-and-build-numbers-are-shown----1892471---"></a>Se muestran los números de versión y los números de compilación de iOS y macOS <!-- 1892471 -->
-En **Conformidad de dispositivos** > **Conformidad de dispositivos**, se muestran las versiones del sistema operativo iOS y macOS. En una actualización futura, también se mostrará el número de compilación en ambas plataformas.
+### <a name="ios-and-macos-version-numbers-and-build-numbers-are-available-in-compliance-policies----1892471---"></a>Los números de versión y los números de compilación de iOS y macOS están disponibles en las directivas de cumplimiento <!-- 1892471 -->
+En **Conformidad de dispositivos** > **Conformidad de dispositivos** se muestran las versiones de los sistemas operativos iOS y macOS, que se pueden usar en las directivas de cumplimiento. En una actualización futura también se podrá configurar el número de compilación en ambas plataformas.
 
-Cuando se publican las actualizaciones de seguridad, Apple normalmente deja el número de versión como está, pero actualiza el número de compilación. Al mostrar el número de compilación, puede comprobar fácilmente si se instala una actualización de vulnerabilidad.
+Cuando se publican las actualizaciones de seguridad, Apple normalmente deja el número de versión como está, pero actualiza el número de compilación. Si usa el número de compilación en una directiva de cumplimiento, puede comprobar fácilmente si hay instalada una actualización de vulnerabilidad.
 
 ### <a name="retired-devices-in-the-device-compliance-dashboard----1981119---"></a>Dispositivos retirados en el panel de cumplimiento del dispositivos <!-- 1981119 -->
 En una actualización futura, los dispositivos retirados se quitarán del panel de cumplimiento del dispositivo. Esto cambiará los números de cumplimiento.

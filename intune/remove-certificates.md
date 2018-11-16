@@ -13,12 +13,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d4287322fd494c97cf24feb8cc16435a4405f2af
-ms.sourcegitcommit: 7a649a5995600fb91817643e20a5565caedbb8f2
+ms.openlocfilehash: a823ea2f04d8e3a8f1ca5a2f1364060840686501
+ms.sourcegitcommit: 2e6851a5c1f934dcdb3f854d8462a4d23cc0453b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/26/2018
-ms.locfileid: "50150114"
+ms.lasthandoff: 11/12/2018
+ms.locfileid: "51561948"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>Eliminación de certificados SCEP y PKCS en Microsoft Intune
 
@@ -131,7 +131,7 @@ En este artículo se muestran algunos casos comunes y el impacto en los certific
   - El administrador elimina el usuario o el grupo de Azure AD
   - El administrador cambia o actualiza el perfil PKCS
 
-## <a name="android--android-enterprise-devices"></a>Dispositivos Android y Android Enterprise
+## <a name="android-knox-devices"></a>Dispositivos Android KNOX
 
 #### <a name="scep-certificates"></a>Certificados SCEP
 
@@ -177,6 +177,10 @@ En este artículo se muestran algunos casos comunes y el impacto en los certific
   - El administrador cambia o actualiza el perfil PKCS
   - El perfil de configuración se quita de la asignación de grupo
   - La directiva de cumplimiento se quita de la asignación de grupo 
+  
+  
+> [!NOTE]
+> Los dispositivos Android for Work no están validados para los escenarios anteriores. Los dispositivos heredados de Android (todos los dispositivos de perfiles que no sean de trabajo ni de Samsung) no están habilitados para la eliminación de certificados. 
 
 ## <a name="macos-certificates"></a>Certificados macOS
 

@@ -5,14 +5,14 @@ services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
 ms.topic: quickstart
-ms.date: 09/21/2018
+ms.date: 11/05/2018
 ms.author: erikje
-ms.openlocfilehash: 3b713f090fb6ada884a269e286f55f6e1b1087c4
-ms.sourcegitcommit: 27eed5aba5c8bfafb079171081b68f75a6cbffaf
+ms.openlocfilehash: c219629968fbd66ee14abf61786a791bf7f5e2e0
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/22/2018
-ms.locfileid: "46581778"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51510795"
 ---
 # <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>Inicio rápido: Configurar la inscripción automática para dispositivos Windows 10
 
@@ -22,6 +22,7 @@ Si no tiene una suscripción a Intune, [regístrese para obtener una cuenta de p
 
 ## <a name="prerequisites"></a>Requisitos previos
 
+- Suscripción a Microsoft Intune: [regístrese para obtener una cuenta de prueba gratuita](free-trial-sign-up.md).
 - Para completar este inicio rápido, primero debe [crear un usuario](quickstart-create-user.md) y [crear un grupo](quickstart-create-group.md).
 
 ## <a name="sign-in-to-intune"></a>Iniciar sesión en Intune
@@ -30,17 +31,33 @@ Inicie sesión en [Intune](https://aka.ms/intuneportal) como administrador globa
 
 ## <a name="set-up-windows-10-automatic-enrollment"></a>Configurar la inscripción automática de Windows 10
 
-En este ejemplo, usará la inscripción de MDM para que se puedan inscribir automáticamente tanto los dispositivos corporativos como los dispositivos personales que traen los empleados.
+En este ejemplo, usará la inscripción de MDM para que se puedan inscribir automáticamente tanto los dispositivos corporativos como los dispositivos personales que traen los empleados. Tendrá que registrarse para obtener una suscripción gratuita a Azure Active Directory Premium.
 
-1. En Azure, elija **Azure Active Directory** > **Movilidad (MDM y MAM)** > **Microsoft Intune** > **Algunos**.
-![Explorador](media/quickstart-setup-auto-enrollment/setup-automatic-enrollment-win10.png)
-2. Elija **Seleccionar grupos** > **Contoso Testers (Evaluadores de Contoso)** > **Seleccionar**.
-3. Use los valores predeterminados para las siguientes direcciones URL:
-    - URL de términos de uso de MDM
-    - URL de detección de MDM
-    - URL de cumplimiento de MDM
-4. Elija **Guardar**.
-5. Inicie sesión como un usuario en el grupo en un dispositivo Windows 10 y siga las indicaciones.
+1. En Azure, seleccione **Azure Active Directory** > **Movilidad (MDM y MAM)**.
+2. Seleccione **Obtener una prueba gratuita Premium para usar esta característica**. Si selecciona esta opción, se permitirá la inscripción automática con la versión de prueba gratuita Premium de Azure Active Directory. 
+
+    ![Selección de la versión de prueba gratuita Premium de Azure Active Directory](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-01.png)
+
+    Seleccione la opción de la versión de prueba gratuita de **Enterprise Mobility + Security E5**. Además, debe seleccionar **Activar** para activar la versión de prueba gratuita.
+
+    ![Selección de la versión de prueba gratuita de Enterprise Mobility + Security E5](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-02.png)
+
+3. Seleccione **Microsoft Intune**. 
+
+    ![Selección de Microsoft Intune en la lista](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-03.png)
+
+4. Seleccione **Algunos** en **Ámbito de usuario de MAM** para usar la inscripción automática de MDM para administrar los datos de la empresa en los dispositivos Windows de sus empleados. La inscripción automática de MDM se configurará para los dispositivos unidos a AAD y los escenarios Bring Your Own Device.
+
+    ![Selección de "Algunos" en la lista de configuración](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-04.png)
+
+5. Elija **Seleccionar grupos** > **Contoso Testers (Evaluadores de Contoso)** > **Seleccionar** como grupo asignado.
+
+    ![Selección del grupo que se va a inscribir](media/quickstart-setup-auto-enrollment/quickstart-setup-auto-enrollment-05.png)
+
+6. Seleccione **Algunos** en **Ámbito de usuario de MAM** para administrar los datos en los dispositivos de su personal.
+7. Elija **Seleccionar grupos** > **Contoso Testers (Evaluadores de Contoso)** > **Seleccionar** como grupo asignado. 
+8. Use los valores predeterminados para los demás valores de configuración.
+9. Elija **Guardar**.
 
 ## <a name="clean-up-resources"></a>Limpieza de recursos
 
@@ -48,7 +65,9 @@ Para volver a configurar la inscripción automática de Intune, eche un vistazo 
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-En este inicio rápido, aprendió a configurar la inscripción automática para dispositivos Windows 10. Puede conocer otras maneras de inscribir dispositivos en las distintas plataformas.
+En este inicio rápido, aprendió a configurar la inscripción automática para dispositivos Windows 10. Para obtener más información sobre la inscripción de dispositivos, consulte [¿Qué es la inscripción de dispositivos?](device-enrollment.md)
+
+Para seguir esta serie de tutoriales de inicio rápido de Intune, pase al siguiente tutorial de inicio rápido.
 
 > [!div class="nextstepaction"]
-> [Artículo ¿Qué es la inscripción de dispositivos?](device-enrollment.md)
+> [Inicio rápido: Inscripción de dispositivos Windows 10](quickstart-enroll-windows-device.md)

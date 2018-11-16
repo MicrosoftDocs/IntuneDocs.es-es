@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/21/2018
+ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 723f4b4e-3090-4811-84ff-6af652abea5a
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2b52265bb9b3df800c0e13450a2154e46098a933
-ms.sourcegitcommit: 9d08545727543b434dd270371fa50233470f2bce
+ms.openlocfilehash: e85a88b984aaa05423a35f222de9c56d7366d15a
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50410827"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51511016"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>Inicio rápido: Crear un grupo para administrar usuarios
 
@@ -57,7 +57,9 @@ Cuando haya creado correctamente el grupo, aparecerá en la lista **Todos los gr
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-En este inicio rápido, usó Intune para crear un grupo basado en un usuario existente.
+En este inicio rápido, usó Intune para crear un grupo basado en un usuario existente. Para obtener más información sobre cómo agregar grupos a Intune, consulte [Agregar grupos para organizar usuarios y dispositivos](groups-add.md).
+
+Para seguir esta serie de tutoriales de inicio rápido de Intune, pase al siguiente tutorial de inicio rápido.
 
 > [!div class="nextstepaction"]
-> [Crear una directiva de cumplimiento de dispositivos](quickstart-create-policy.md)
+> [Inicio rápido: Configurar la inscripción automática para dispositivos Windows 10](quickstart-setup-auto-enrollment.md)

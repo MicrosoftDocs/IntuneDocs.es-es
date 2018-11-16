@@ -12,12 +12,12 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: b3de4d79e6121505718a75ffe64102bb1bc18347
-ms.sourcegitcommit: 244456907e3ab4a4389d32d06060606a9591cfba
+ms.openlocfilehash: 0d749d51f0ae146b68be8abb3a59a0504aea1180
+ms.sourcegitcommit: cfce9318b5b5a3005929be6eab632038a12379c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/01/2018
-ms.locfileid: "50751650"
+ms.lasthandoff: 11/09/2018
+ms.locfileid: "51298146"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Configuración de quiosco para Windows 10 (y versiones posteriores) en Intune
 
@@ -77,8 +77,15 @@ Si elige el modo de pantalla completa de aplicación única, escriba la siguient
   - **Actualizar el explorador después del tiempo de inactividad**: escriba la cantidad de tiempo de inactividad (1-1440 minutos) hasta que el explorador del quiosco se reinicie con un nuevo estado. El tiempo de inactividad es el número de minutos desde la última interacción del usuario. De forma predeterminada, el valor está vacío o en blanco, lo que significa que no hay ningún tiempo de espera de inactividad.
 
   - **Sitios web permitidos**: use esta opción para permitir que sitios web específicos se abran. En otras palabras, puede usar esta característica para restringir o impedir sitios web en el dispositivo. Por ejemplo, puede permitir que todos los sitios web de `http://contoso.com*` se abran. De forma predeterminada, se permiten todos los sitios web.
+ 
+      Para permitir sitios web específicos, cargue un archivo que incluya una lista de los sitios web permitidos en líneas independientes. Si no agrega ningún archivo, se permitirán todos los sitios web. Intune admite * (asterisco) como un carácter comodín.
 
-    Para permitir sitios web específicos, cargue un archivo .csv que incluye una lista de los sitios web permitidos. Si no agrega un archivo .csv, se permitirán todos los sitios web. Intune admite * (asterisco) como un carácter comodín.
+      El archivo de ejemplo debería ser parecido a esta lista:
+
+      `http://bing.com`  
+      `https://bing.com`  
+      `http://contoso.com/*`  
+      `https://contoso.com/*`  
 
   Haga clic en **Aceptar** para guardar los cambios.
 

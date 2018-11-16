@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/01/2018
+ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: 195931c0-8208-43bd-b0af-b1f8e469a32c
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 2f150db2e1d5fbc8e08bb7f7fcee50f0eda23ca7
-ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
+ms.openlocfilehash: 6b6e270e01102ae05f04253ec57759aad35c26cf
+ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50915689"
+ms.lasthandoff: 11/10/2018
+ms.locfileid: "51510999"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Inicio rápido: Prueba gratuita de Microsoft Intune 
 
@@ -124,7 +124,9 @@ Puede usar dos portales:
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-En este tutorial de inicio rápido, ha creado una suscripción gratuita para probar Intune en un entorno de prueba y, opcionalmente, ha configurado un nombre de dominio personalizado. Para obtener más información sobre Microsoft Intune, pase al siguiente tutorial en el que se explica cómo agregar usuarios y asignar licencias.
+En este tutorial de inicio rápido ha creado una suscripción gratuita para probar Intune en un entorno de prueba. Para obtener más información sobre cómo configurar Intune, vea [Configurar Intune](setup-steps.md).
+
+Para seguir esta serie de tutoriales de inicio rápido de Intune, pase al siguiente tutorial de inicio rápido.
 
 > [!div class="nextstepaction"]
-> [Crear un usuario](quickstart-create-user.md)
+> [Inicio rápido: Crear un usuario y asignarle una licencia](quickstart-create-user.md)
