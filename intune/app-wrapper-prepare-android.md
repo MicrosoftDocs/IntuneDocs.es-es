@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/04/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune-classic
-ms.openlocfilehash: b4b10d3dfa83e3fcfda6ba34bebc1257b19d83ac
-ms.sourcegitcommit: 24d9ae0396ca410f72cc061a3c4c402835ef32a1
+ms.openlocfilehash: 32ce1a71911c7a902f2790fef584ab1c3b86a293
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/22/2018
-ms.locfileid: "49643001"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167457"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicaciones Android para directivas de protección de aplicaciones con la herramienta de ajuste de aplicaciones de Intune
 
@@ -128,7 +128,7 @@ Entre los procedimientos recomendados para el reajuste destacan los siguientes:
 ## <a name="reusing-signing-certificates-and-wrapping-apps"></a>Reutilización de certificados de firma y aplicaciones de encapsulado
 Android requiere que todas las aplicaciones estén firmadas mediante un certificado válido para instalarlo en dispositivos Android.
 
-Las aplicaciones encapsuladas se pueden firmar ya sea como parte del proceso de encapsulado o *después* del encapsulado con las herramientas de firma existentes (se descarta cualquier información de firma en la aplicación antes del encapsulado). Si es posible, ya información de firma que ya se usó durante el proceso de compilación se debe usar durante el encapsulado. En ciertas organizaciones, esto podría requerir trabajar con la persona propietaria de la información del almacén de claves (es decir, el equipo de compilación de aplicaciones). 
+Las aplicaciones encapsuladas se pueden firmar ya sea como parte del proceso de encapsulado o *después* del encapsulado con las herramientas de firma existentes (se descarta cualquier información de firma en la aplicación antes del encapsulado). Si es posible, ya información de firma que ya se usó durante el proceso de compilación se debe usar durante el encapsulado. En ciertas organizaciones, esto podría requerir trabajar con la persona propietaria de la información del almacén de claves (es decir, el equipo de compilación de aplicaciones). 
 
 Si no se puede usar el certificado de firma anterior o si la aplicación no se implementó antes, puede crear un certificado de firma nuevo con las instrucciones que aparecen en la [Guía para desarrolladores de Android](https://developer.android.com/studio/publish/app-signing.html#signing-manually).
 
