@@ -14,12 +14,12 @@ ms.technology: ''
 ms.assetid: 6f67fcd2-5682-4f9c-8d74-d4ab69dc978c
 ms.suite: ems
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: a9761c57b15700e147bc092b7577fe1b32c78c18
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: c46a90d36ba8b50703e62fc663b1d090ac1bcfc7
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44254163"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610131"
 ---
 # <a name="what-is-device-enrollment"></a>¿Qué es la inscripción de dispositivos?
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,7 +42,6 @@ De manera predeterminada, los dispositivos de todas las plataformas pueden inscr
 |**[USB-Direct](#usb-direct)**| No |    No  | No|[Más información](./apple-configurator-direct-enroll-ios.md)|
 
 ## <a name="macos-enrollment-methods"></a>Métodos de inscripción de macOS
-
 | **Método** |  **Se requiere reinicio** |  **Afinidad de usuario** | **Bloqueado** | **Detalles**|
 |:---:|:---:|:---:|:---:|:---:|
 |**[BYOD](#bring-your-own-device)** | No| Sí | No | [Más información](./macos-enroll.md)|
@@ -56,7 +55,11 @@ De manera predeterminada, los dispositivos de todas las plataformas pueden inscr
 |**[BYOD](#bring-your-own-device)** | No |  Sí |   No | [Más información](windows-enroll.md)|
 |**[DEM](#device-enrollment-manager)**| No |No |No  |[Más información](device-enrollment-manager-enroll.md)|
 |**Inscripción automática** | No |Sí |No | [Más información](./windows-enroll.md#enable-windows-10-automatic-enrollment)|
+|**Autopilot** |Sí |Sí |No | [Más información](enrollment-autopilot.md)]
 |**Inscripción masiva** |No |No |No | [Más información](./windows-bulk-enroll.md) |
+|**Administración conjunta** |No |Sí |No | [Más información](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)]
+|**GPO** |No |Sí |No | [Más información](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)]
+
 
 ## <a name="android-enrollment-methods"></a>Métodos de inscripción de Android
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/17/2018
+ms.date: 11/13/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,19 +14,19 @@ ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
 ms.custom: intune-classic-keep
-ms.openlocfilehash: ef21f22a4808518ce8557b761e4181f8f6a655c3
-ms.sourcegitcommit: ed97b68f08c1a8469f0b45bc1c839a0b5f5c71e0
+ms.openlocfilehash: f311d8a389d551ed834d955c5d1c59dbc9c3c4a2
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/18/2018
-ms.locfileid: "45978253"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610029"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Administración de PC con Windows con el software de cliente de PC de Intune
 
 [!INCLUDE [classic-portal](includes/classic-portal.md)]
 
 > [!NOTE]
-> Puede usar Microsoft Intune para administrar equipos con Windows [como dispositivos móviles con la administración de dispositivos móviles (MDM)](windows-enroll.md) o como equipos con el software cliente de Intune, tal y como se describe a continuación. Sin embargo, Microsoft recomienda que los clientes [usen la solución de administración de MDM](windows-enroll.md) siempre que sea posible.
+> Puede usar Microsoft Intune para administrar equipos con Windows [como dispositivos móviles con la administración de dispositivos móviles (MDM)](windows-enroll.md) o como equipos con el software cliente de Intune, tal y como se describe a continuación. Sin embargo, Microsoft recomienda que los clientes [usen la solución de administración de MDM](windows-enroll.md) siempre que sea posible. Para obtener más información, vea [Comparación de la administración de equipos con Windows como dispositivos móviles o equipos](pc-management-comparison.md). 
 
 Intune proporciona una solución completa para que las organizaciones administren dispositivos móviles. Intune puede administrar PC con Windows como dispositivos móviles mediante las funcionalidades de administración de dispositivos modernos integradas en el sistema operativo de Windows 10. Para satisfacer las necesidades de administración de su organización, Intune también puede administrar PC con Windows como equipos con el cliente de software de Intune. Este método de administración utiliza las funcionalidades de administración de equipos tradicionales en el sistema operativo de Windows heredado.
 
@@ -40,15 +40,17 @@ Intune admite la administración de PC con Windows como equipos con el cliente d
 
 ## <a name="requirements-for-intune-pc-client-management"></a>Requisitos para la administración de clientes de PC de Intune
 
-**Hardware**: los siguientes son los requisitos mínimos de hardware para instalar el software cliente de Intune:
+**Hardware**:  
+Estos son los requisitos mínimos de hardware para instalar el software cliente de Intune:
 
 |Requisito|Más información|
 |---------------|--------------------|
 |Network (Red)|El cliente requiere que el equipo tenga conectividad a Internet.|
 |Procesador y memoria|Consulte los requisitos de RAM y procesador para el sistema operativo del equipo.|
-|Espacio en disco|200 MB de espacio disponible en el disco antes de que se instale el software cliente.|
+|Espacio en disco|200 MB de espacio disponible en el disco antes de que se instale el software cliente.|
 
-**Software**: los siguientes son los requisitos de software para instalar el software cliente:
+**Software**:  
+Estos son los requisitos de software para instalar el software cliente:
 
 |Requisito|Más información|
 |---------------|--------------------|

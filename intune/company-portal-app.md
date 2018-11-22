@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 11/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
 ms.reviewer: mghadial
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: ce31832421ece9008e1526e54ba3e9aa2780c666
-ms.sourcegitcommit: 5c2a70180cb69049c73c9e55d36a51e9d6619049
+ms.openlocfilehash: 6a249962c4ac75e51be082112b884a5825d4ef2a
+ms.sourcegitcommit: 490f68479af814fbea1d9bd222011736fcbb1dd6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/30/2018
-ms.locfileid: "50236295"
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51811519"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Configuración de la aplicación Portal de empresa de Microsoft Intune
 
@@ -29,7 +29,7 @@ ms.locfileid: "50236295"
 El Portal de empresa de Intune es el lugar donde los usuarios tienen acceso a los datos de la compañía y pueden realizar tareas habituales como, por ejemplo, inscribir dispositivos, instalar aplicaciones y buscar información de ayuda del departamento de TI.        
 
 > [!Tip]        
-> Al personalizar el portal de empresa, los valores de configuración se aplicarán tanto al sitio web como a las aplicaciones del portal de empresa.       
+> Al personalizar el portal de empresa, los valores de configuración se aplicarán tanto al sitio web como a las aplicaciones del portal de empresa. Tenga en cuenta que los usuarios deben tener una licencia de Intune asignada para tener acceso al sitio web Portal de empresa.
 
 Con la personalización del portal de empresa, es más fácil ofrecer una experiencia conocida y útil a los usuarios finales. Para ello, desde la carga de trabajo **Aplicaciones cliente**, elija **Configuración** > **Personalización de marca del Portal de empresa** y luego configure los valores necesarios.  
 
@@ -48,7 +48,7 @@ Los campos marcados con un asterisco (*) son obligatorios.
 | **URL de la declaración de privacidad** |     79     | Puede especificar su propia declaración de privacidad de la empresa, que aparece cuando los usuarios hacen clic en los vínculos de privacidad del portal de empresa. Debe especificar una dirección URL válida en el formato `<https://www.contoso.com>`. |
 
 ## <a name="support-information"></a>Información de soporte técnico      
-Escriba la información de soporte técnico de su empresa para que los empleados dispongan de un contacto para preguntas relacionadas con Intune.       
+Escriba la información de soporte técnico de la compañía para que los empleados dispongan de un contacto para preguntas relacionadas con Intune.          
 
 |Nombre de campo|Longitud máxima|Más información|
 |---|---|---|
@@ -84,24 +84,33 @@ Elija un logotipo que encaje mejor en fondos blancos o claros.
 
 ### <a name="brand-image-for-company-portal"></a>Imagen de marca del Portal de empresa
 
-Muestra una imagen de marca que refleja la marca de la empresa. Se está agregando compatibilidad con imágenes de marca en las aplicaciones de Portal de empresa, pero puede que no estén visibles en todas las plataformas.
+Muestra una imagen de marca que refleja la marca de la empresa. Después de guardar los cambios, puede elegir **Preview your settings** (Vista previa de la configuración) en el portal web de Intune, en la parte superior de la hoja para ver qué aspecto tendrá la configuración. Tenga en cuenta que solo podrá obtener una vista previa de la imagen de marca en un dispositivo iOS y no el portal web de Intune. 
 
 |Nombre de campo|Más información|
 |---|---|
-|**Upload your brand image** (Cargar imagen de marca)| Esta opción está disponible para que pueda mostrar una imagen de fondo en la página de perfil del usuario en la aplicación Portal de empresa.<p><ul><li>Ancho de imagen recomendado: mayor que 1125 px, pero no inferior a 640 px</li><li>Tamaño máximo de imagen: 1,3 MB</li><li>Tipo de archivo: PNG, JPG o JPEG</li></ul>|
+|**Upload your brand image** (Cargar imagen de marca)| Esta opción está disponible para que pueda mostrar una imagen de fondo en la página de perfil del usuario en la aplicación Portal de empresa.<p>*Nota*: Puede que la imagen tenga distinto aspecto en distintas plataformas.<p><ul><li>Ancho de imagen recomendado: mayor que 1125 px, pero no inferior a 640 px</li><li>Tamaño máximo de imagen: 1,3 MB</li><li>Tipo de archivo: PNG, JPG o JPEG</li></ul>|
 
 La imagen de marca adecuada puede mejorar la confianza del usuario en el Portal de empresa, ya que presenta un fuerte sentido de marca de la empresa. Estas son algunas sugerencias que puede tener en cuenta para adquirir, elegir y optimizar la imagen para el Portal de empresa. 
 
 - Póngase en contacto con el departamento de marketing o imágenes de la empresa. Es posible que ya tengan un conjunto aprobado de imágenes de marca. Es posible que también le ayuden a optimizar las imágenes según sea necesario. 
 
-- Considere tanto la composición horizontal como la vertical. La imagen debe tener suficiente espacio de fondo rodeando el punto focal. La imagen se puede recortar de forma distinta según el tamaño y la orientación del dispositivo. 
+- Considere tanto la composición horizontal como la vertical. La imagen debe tener suficiente espacio de fondo rodeando el punto focal. La imagen puede recortarse de forma diferente según el tamaño, la orientación y la plataforma del dispositivo. 
 
 - Evite usar una imagen estándar genérica. La imagen debe reflejar la marca de la empresa y resultar familiar a los usuarios. Si no tiene una, es mejor no usar ninguna que usar una imagen genérica que no aporte ningún significado para el usuario. 
 
 - Quite los metadatos que sean innecesarios. El archivo de imagen puede incluir metadatos, como el perfil de la cámara, la ubicación geográfica, el título, la leyenda, etc. Use una herramienta de optimización de imágenes para eliminar esta información y mantener la calidad al tiempo que cumple los límites de tamaño de archivo. 
 
-Después de guardar los cambios, puede elegir **Preview your settings** (Vista previa de la configuración) en el portal web de Intune, en la parte superior de la hoja para ver qué aspecto tendrá la configuración. Tenga en cuenta que solo podrá obtener una vista previa de la imagen de marca en un dispositivo iOS y no el portal web de Intune. 
+Después de agregar o cambiar una imagen de marca en Intune, es posible que el usuario final no vea el cambio en los dispositivos iOS hasta que el Portal de empresa haya reconocido el cambio durante el inicio y se haya reiniciado luego para mostrar la imagen de marca. 
 
+### <a name="brand-image-examples"></a>Ejemplos de imagen de marca
+
+En la siguiente imagen se muestra un ejemplo de imagen de personalización de marca de iPad:
+
+![Captura de pantalla de la imagen de personalización de marca de iPhone de ejemplo](media/company-portal-app/company-portal-app-03.png)
+
+En la siguiente imagen se muestra un ejemplo de imagen de personalización de marca de iPhone:
+
+![Captura de pantalla de la imagen de personalización de marca de iPad de ejemplo](media/company-portal-app/company-portal-app-02.png)
 
 ## <a name="windows-company-portal-keyboard-shortcuts"></a>Métodos abreviados de teclado del Portal de empresa de Windows
 
@@ -125,6 +134,10 @@ Los siguientes métodos abreviados de teclado están disponibles en la aplicaci�
 |  | Quitar | Ctrl+D o Eliminar |
 |  | Comprobar acceso | Ctrl+M o F9 |
 | Detalles de la aplicación | Instalar | Ctrl+I |
+
+Los usuarios finales también podrán ver los accesos directos disponibles en la aplicación Portal de empresa de Windows.
+
+![Captura de pantalla de los accesos directos disponibles en la aplicación Portal de empresa de Windows](media/company-portal-app/company-portal-app-01.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
 

@@ -6,8 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/23/2017
-ms.topic: article
+ms.date: 11/13/2018
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: cac03f35cdec3c1a4815559abc83108bd27d3472
-ms.sourcegitcommit: fffa64f28278573dc83a846b647315def2108781
+ms.openlocfilehash: 5e0a207d3e845e3983dfe6ce3abbb70fcbbe65cf
+ms.sourcegitcommit: 4d5e811d451aeb6307e0f64818e182e471ae1ed4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48231155"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51618980"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>Validación de la configuración de la directiva de protección de aplicaciones
 
@@ -34,7 +33,7 @@ Los usuarios no suelen notificar problemas, ya que la protección de aplicacione
 
 ### <a name="what-to-check"></a>Elementos que se deben comprobar
 
-Si las pruebas muestran que el comportamiento de la directiva de protección de aplicaciones no es el previsto, le recomendamos que compruebe lo siguiente:
+Si las pruebas muestran que el comportamiento de la directiva de protección de aplicaciones no es el previsto, compruebe lo siguiente:
 
 - ¿Tienen licencia los usuarios para la protección de aplicaciones?
 - ¿Los usuarios tienen licencia para O365?
@@ -42,10 +41,10 @@ Si las pruebas muestran que el comportamiento de la directiva de protección de 
 
 #### <a name="user-app-protection-status"></a>Estado de protección de las aplicaciones de los usuarios
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
-1. Elija **Administrar aplicaciones** > **Supervisar** >  **Estado de protección de aplicaciones** > **Usuarios asignados**.
-
-2. Elija a un usuario de la lista o bien busque y seleccione a un usuario y elija **Seleccionar usuario**. En la parte superior de la columna **Informes de aplicaciones**, verá si el usuario tiene licencia para la protección de aplicaciones. También puede consultar si el usuario tiene licencia para Office 365, así como el estado de la aplicación para todos los dispositivos del usuario.
+2. Seleccione **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+3. Seleccione **Aplicaciones cliente** > **Supervisar** >  **Estado de protección de la aplicación** y luego seleccione el icono **Usuarios asignados**. 
+4. En la página **Informes de aplicaciones**, seleccione **Seleccionar usuario** para abrir una lista de usuarios y grupos. 
+5. Busque y seleccione un usuario de la lista y luego elija **Seleccionar usuario**. En la parte superior del panel **Informes de aplicaciones**, verá si el usuario tiene licencia para la protección de aplicaciones. También puede consultar si el usuario tiene licencia para Office 365, así como el estado de la aplicación para todos los dispositivos del usuario.
 
 
 

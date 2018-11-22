@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/06/2018
+ms.date: 11/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.assetid: 38ebd3f5-cfcc-4204-8a75-6e2f162cd7c1
 ms.reviewer: aanavath
 ms.suite: ems
 ms.custom: intune
-ms.openlocfilehash: a8cbe80154e5eac6a48c86101c76faed4602288a
-ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
+ms.openlocfilehash: 3362de6231aa8b045d064d1f3764cb2b13f5be3c
+ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50915723"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52167440"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introducción al SDK para aplicaciones de Microsoft Intune
 
@@ -106,9 +106,6 @@ Microsoft Intune recopila datos sobre las estadísticas de uso de la aplicación
 
     * Si los usuarios finales deciden no enviar estos datos, deberán desactivar la telemetría en la sección Configuración de la aplicación Portal de empresa. Para obtener más información, consulte [Desactivar la recopilación de datos de uso de Microsoft](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
 
-
- El número de versión de la aplicación de línea de negocio de Android y iOS es visible <!-- 1380712 -->
-
 ## <a name="line-of-business-app-version-numbers"></a>Números de versión de las aplicaciones de línea de negocio
 
 Las aplicaciones de línea de negocio de Intune ahora muestran el número de versión para iOS y Android. El número se muestra en la lista de aplicaciones de Azure Portal y en la hoja de información general de la aplicación. Los usuarios finales pueden ver este número en la aplicación Portal de empresa y en el portal web.
@@ -164,6 +161,23 @@ Cuando haya completado los pasos necesarios para integrar la aplicación iOS o A
 * **Directivas de protección de aplicaciones de Intune**: para probar la aplicación con todas las directivas de protección de aplicaciones de Intune, debe saber que el comportamiento esperado es para cada configuración de directiva. Vea las descripciones para las [directivas de protección de aplicaciones iOS](app-protection-policy-settings-ios.md) y las [directivas de protección de aplicaciones Android](app-protection-policy-settings-android.md).
 
 * **Solución de problemas**: si encuentra algún problema al probar manualmente la experiencia de usuario de instalación de la aplicación, vea la [solución de problemas de instalación de aplicaciones](troubleshoot-app-install.md). 
+
+### <a name="give-your-app-access-to-the-intune-app-protection-service-optional"></a>Proporcione a la aplicación acceso al servicio Intune App Protection (opcional)
+
+Si la aplicación usa su propia configuración personalizada de Azure Active Directory (AAD) para la autenticación, se deben realizar los siguientes pasos tanto para aplicaciones de la tienda pública como para aplicaciones de línea de negocio. **No es necesario realizar los pasos si la aplicación usa el identificador de cliente predeterminado del SDK de Intune**. 
+
+Una vez que haya registrado la aplicación dentro de un inquilino de Azure y se muestre en **Todas las aplicaciones**, debe asignar a la aplicación acceso al servicio Intune App Protection (anteriormente conocido como servicio MAM). En Azure Portal:
+
+1.  Vaya a la hoja **Azure Active Directory**.
+2.  Seleccione la configuración **Registros de aplicaciones** para la aplicación.
+3.  En **Configuración**, bajo el encabezado **Acceso de API**, seleccione **Permiso necesario**. 
+4.  Haga clic en **+ Agregar**.
+5.  Haga clic en **Seleccionar una API**. 
+6.  En el cuadro de búsqueda, escriba **Microsoft Mobile Application Management**.
+7.  Seleccione **Administración de aplicaciones móviles de Microsoft** en la lista de API y haga clic en Seleccionar.
+8.  Seleccione **Read and Write the User’s App Management Data** (Leer y escribir datos de administración de aplicaciones del usuario).
+9.  Haga clic en **Listo**.
+10. Haga clic en **Conceder permisos** y después haga clic en **Sí**. 
 
 ### <a name="badge-your-app-optional"></a>Identificar la aplicación (opcional)
 

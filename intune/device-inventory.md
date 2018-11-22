@@ -13,12 +13,12 @@ ms.technology: ''
 ms.assetid: e71c6bdb-d75c-404f-8e38-24a663be81c2
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: a01bbf8e65c72b303d1474a92b93796051bfc02e
-ms.sourcegitcommit: 503d76e0b066d0db77bcc48e5116c861f6a6fb57
+ms.openlocfilehash: 2c47cd8ea136bcead14e70769f63df7b9b8f0e20
+ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/26/2018
-ms.locfileid: "47187808"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51610097"
 ---
 # <a name="see-device-details-in-intune"></a>Ver detalles del dispositivo en Intune
 
@@ -45,7 +45,7 @@ En este artículo se explica cómo se pueden ver todos los dispositivos y sus pr
      - Iniciar una sesión de asistencia remota
    - Use **Propiedades** para asignar una [categoría de dispositivo que cree](device-group-mapping.md) y cambie la propiedad del dispositivo a un dispositivo personal o a un dispositivo de empresa.
    - En **Hardware** se incluye mucha información sobre el dispositivo (identificador del dispositivo, sistema operativo y versión, espacio de almacenamiento, modelo y fabricante, opciones de acceso condicional, etc.).
-   - **Aplicaciones detectadas**: muestra todas las aplicaciones que Intune encuentra instaladas en el dispositivo, así como las versiones de las aplicaciones. También puede **exportar** la lista de aplicaciones a un archivo .csv.
+   - **Aplicaciones detectadas**: muestra todas las aplicaciones que Intune encuentra instaladas en el dispositivo, así como las versiones de las aplicaciones. También puede **exportar** la lista de aplicaciones a un archivo .csv. Esta lista se actualiza cada siete días.
    - En **Conformidad de dispositivos** figuran todas las directivas de cumplimiento asignadas y se indica si el dispositivo es compatible o no.
    - En **Configuración del dispositivo** se muestran todas las directivas de configuración de dispositivos asignadas al dispositivo. También se indica si la directiva se ha aplicado correctamente o no.
 
@@ -60,8 +60,10 @@ Intune solo recopila listas de aplicaciones en dispositivos corporativos. Las ap
 |iOS|Solo aplicaciones administradas|Todas las aplicaciones instaladas en el dispositivo|
 |macOS|Todas las aplicaciones instaladas en el dispositivo|Todas las aplicaciones instaladas en el dispositivo|  
 |Android|Solo aplicaciones administradas|Todas las aplicaciones instaladas en el dispositivo|  
+|Android Enterprise|Solo aplicaciones administradas|Solo aplicaciones instaladas en el perfil de trabajo|  
 
 ## <a name="hardware-device-details"></a>Estado del dispositivo de hardware
+En función del operador que usen los dispositivos, puede que no se recopilen todos los detalles.
 
 |Detalle|Descripción|Plataforma| 
 |--------------|----------------------|----|  

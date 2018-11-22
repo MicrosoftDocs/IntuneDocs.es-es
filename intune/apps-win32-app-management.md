@@ -1,10 +1,27 @@
 ---
-title: Agregar aplicaciones Win32 a Microsoft Intune titlesuffix: description: Obtenga información sobre cómo agregar, entregar y administrar aplicaciones Win32 con Microsoft Intune. En este tema se proporciona información general sobre las funciones de entrega y de administración de aplicaciones Win32 de Intune e información sobre la solución de problemas de aplicaciones Win32. keywords: autor: Erikre ms.author: erikre administrador: dougeby <<<<<<< HEAD ms.date: 23/10/2018 ======= ms.date: 19/10/2018
->>>>>>> 14fdd9aac5e66324acfe83ae31b126d8216d7da4 ms.topic: article ms.prod: ms.service: microsoft-intune ms.technology: ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
-
-ms.reviewer: mghadial ms.suite: ems ms.custom: intune-azure
+title: Agregar aplicaciones Win32 a Microsoft Intune
+titlesuffix: ''
+description: Obtenga información sobre cómo agregar, entregar y administrar aplicaciones Win32 con Microsoft Intune. En este tema se proporciona información general sobre las funciones de entrega y de administración de aplicaciones Win32 de Intune e información sobre la solución de problemas de aplicaciones Win32.
+keywords: ''
+author: Erikre
+ms.author: erikre
+manager: dougeby
+ms.date: 11/15/2018
+ms.topic: article
+ms.prod: ''
+ms.service: microsoft-intune
+ms.technology: ''
+ms.assetid: efdc196b-38f3-4678-ae16-cdec4303f8d2
+ms.reviewer: mghadial
+ms.suite: ems
+ms.custom: intune-azure
+ms.openlocfilehash: 8e152e3dc5bc42545bf8bee8595b7bbca2fab0eb
+ms.sourcegitcommit: 618c3076a7973b3b54ce3038ee007a33aa82efeb
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 11/16/2018
+ms.locfileid: "51830124"
 ---
-
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune independiente: administración de aplicaciones Win32 (versión preliminar pública)
 
 Intune independiente admite capacidades increíbles de administración de aplicaciones Win32. Aunque es posible que los clientes conectados a la nube usen Configuration Manager para la administración de aplicaciones Win32, los clientes que solo utilicen Intune tendrán mayores capacidades de administración para sus aplicaciones Win32 de línea de negocio (LOB). En este tema se proporciona información general sobre la característica de administración de aplicaciones Win32 de Intune e información sobre la solución de problemas.
@@ -43,6 +60,13 @@ Puede descargar la [herramienta de preparación de la carga de aplicaciones Win3
 |:-----------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |    `IntuneWinAppUtil -h`    |    Este comando muestra información de uso de la herramienta.    |
 |    `IntuneWinAppUtil -c <setup_folder> -s <source_setup_file> -o <output_folder> <-q>`    |    Este comando generará el archivo `.intunewin` desde la carpeta de origen especificada y el archivo de instalación. En el archivo de instalación MSI, esta herramienta recupera la información necesaria para Intune. Si se especifica `-q`, el comando se ejecuta en modo silencioso y si el archivo de salida ya existe, se sobrescribe. Además, si la carpeta de salida no existe, se creará automáticamente.    |
+
+Al generar un archivo *.intunewin* archivo, coloque los archivos a los que tenga que hacer referencia en una subcarpeta de la carpeta de instalación. Después, utilice una ruta de acceso relativa para hacer referencia al archivo específico que necesita. Por ejemplo:
+
+**Carpeta de origen de la instalación:** *c:\testapp\v1.0*<br>
+**Archivo de licencia:** *c:\testapp\v1.0\licenses\license.txt*
+
+Haga referencia al archivo *license.txt* mediante la ruta de acceso relativa *licenses\license.txt*.
 
 ## <a name="create-assign-and-monitor-a-win32-app"></a>Crear, asignar y supervisar una aplicación Win32
 
