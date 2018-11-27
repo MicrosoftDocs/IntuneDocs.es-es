@@ -14,19 +14,20 @@ ms.technology: ''
 ms.assetid: d7166563-6bb5-4624-b8c8-6b300a997c3a
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a8e386e2d9b161debf65d3e639a90cb8de313ad2
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: b72a0bf1a5f5c996ad299bd84ff6f927ef780059
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602289"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185209"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Autenticación de solo aplicación de Almacenamiento de datos de Intune
 
 Puede configurar una aplicación con Azure Active Directory (Azure AD) y autenticarla en el Almacenamiento de datos de Intune. Este proceso resulta útil para sitios web, aplicaciones y procesos en segundo plano en que la aplicación no debe tener acceso a las credenciales de usuario. Con los pasos siguientes, autoriza a la aplicación con Azure AD mediante OAuth 2.0.
 
-## <a name="authorization"></a>Autorización
+## <a name="authorization"></a>Authorization
 
 Azure Active Directory (Azure AD) usa OAuth 2.0 para permitir autorizar el acceso a aplicaciones web y API web en el inquilino de Azure AD. En esta guía se explica cómo autenticar la aplicación con C#. El flujo del código de autorización de OAuth 2.0 se describe en la sección 4.1 de la especificación de OAuth 2.0. Para obtener más información, vea [Autorización del acceso a aplicaciones web mediante OAuth 2.0 y Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code).
 
@@ -159,6 +160,6 @@ Con Visual Studio, cree un proyecto de aplicación de consola (.NET Framework) q
     >[!NOTE] 
     > Para ver código de implementación adicional, vea el [ejemplo de código Intune-Data-Warehouse](https://github.com/Microsoft/Intune-Data-Warehouse/tree/master/Samples/CSharp ).
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Pasos a seguir
 Para obtener más información sobre Azure Key Vault, revise [¿Qué es Azure Key Vault?](https://docs.microsoft.com/azure/key-vault/key-vault-whatis)
 

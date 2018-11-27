@@ -14,12 +14,13 @@ ms.technology: ''
 ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: aanavath
 ms.suite: ems
-ms.openlocfilehash: 3ed729e437fcdbc4352bf5fa8ceada4ddf336708
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+search.appverid: MET150
+ms.openlocfilehash: 44e7307997df67ad1c1ae6170da3bcc13e99070d
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38224925"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52185056"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Ayudar a que los usuarios finales comprendan los mensajes de la aplicación Portal de empresa
 
@@ -109,5 +110,5 @@ Si no ha agregado la aplicación Portal de empresa a las listas **Aplicaciones p
 
 Agregue Portal de empresa a las listas **Aplicaciones permitidas** o **Aplicaciones exentas** en la directiva de protección de la aplicación Windows Information Protection (WIP). Para obtener más información, consulte [Creación e implementación de una directiva de protección de aplicaciones de Windows Information Protection (WIP) con Intune](/intune-classic/deploy-use/create-windows-information-protection-policy-with-intune).
 
-### <a name="see-also"></a>Vea también
+### <a name="see-also"></a>Consulta también
 [Qué decirles a los usuarios finales sobre el uso de Intune](end-user-educate.md)

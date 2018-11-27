@@ -15,13 +15,14 @@ ms.assetid: 9ba01d60-4a03-4e3e-9aba-8be905c0054c
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3348f5e9673de410516cb2e2b774e20a4f17b036
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.openlocfilehash: 09cd1177157897886631f804cd335ae78562a233
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51577011"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52182149"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Novedades de Microsoft Intune: meses anteriores
 
@@ -131,7 +132,7 @@ Una vez que habilite la opción Firewall, puede configurar el firewall con dos e
 
 En la configuración del dispositivo, se pueden ver mensajes y códigos de error más detallados. Este informe detallado muestra la configuración, el estado de esta configuración y los detalles sobre cómo solucionar problemas.
 
-##### <a name="more-information"></a>Más información
+##### <a name="more-information"></a>Información adicional
 
 - Bloqueo de todas las conexiones entrantes
 
@@ -165,7 +166,7 @@ Crear perfil\Endpoint protection\Protección contra vulnerabilidades de segurida
 
 #### <a name="attack-surface-reduction"></a>Reducción de la superficie expuesta a ataques
 
-|Nombre de la configuración  |Opciones de configuración  |Descripción  |
+|Nombre del valor de configuración  |Opciones de configuración  |Descripción  |
 |---------|---------|---------|
 |Protección de ransomware avanzada|Habilitado, Auditoría, No configurado|Usar protección ransomware intensa.|
 |Marcar el robo de credenciales desde el subsistema de autoridad de seguridad local de Windows|Habilitado, Auditoría, No configurado|Marcar el robo de credenciales desde el subsistema de autoridad de seguridad local de Windows (lsass.exe).|
@@ -175,7 +176,7 @@ Crear perfil\Endpoint protection\Protección contra vulnerabilidades de segurida
 
 #### <a name="controlled-folder-access"></a>Acceso controlado a carpetas
 
-|              Nombre de la configuración               |                                                              Opciones de configuración                                                              | Descripción |
+|              Nombre del valor de configuración               |                                                              Opciones de configuración                                                              | Descripción |
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | Protección de carpetas (ya implementado) | No configurado, Habilitar, Solo auditoría (ya implementado)<br><br> <strong>Nuevo</strong><br>Impedir la modificación del disco, Auditar la modificación del disco |             |
 
@@ -337,7 +338,7 @@ Por ejemplo, una cuenta del recurso como **Sala de conferencias B41/6233**.
 
 ##### <a name="attack-surface-reduction"></a>Reducción de la superficie expuesta a ataques
 
-|Nombre de la configuración  |Opciones de configuración  |Descripción  |
+|Nombre del valor de configuración  |Opciones de configuración  |Descripción  |
 |---------|---------|---------|
 |Ejecución de contenido ejecutable protegido por contraseña del correo electrónico|Bloquear, Auditoría, No configurado|Evitar que se ejecuten los archivos ejecutables protegidos por contraseña descargados a través del correo electrónico.|
 |Protección de ransomware avanzada|Habilitado, Auditoría, No configurado|Usar protección ransomware intensa.|
@@ -348,7 +349,7 @@ Por ejemplo, una cuenta del recurso como **Sala de conferencias B41/6233**.
 
 ##### <a name="controlled-folder-access"></a>Acceso controlado a carpetas
 
-|              Nombre de la configuración               |                                                              Opciones de configuración                                                              | Descripción |
+|              Nombre del valor de configuración               |                                                              Opciones de configuración                                                              | Descripción |
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | Protección de carpetas (ya implementado) | No configurado, Habilitar, Solo auditoría (ya implementado)<br><br> <strong>Nuevo</strong><br>Impedir la modificación del disco, Auditar la modificación del disco |             |
 
@@ -595,10 +596,10 @@ La nueva plataforma Android for Work está bloqueada de manera predeterminada en
 
 Si no es la primera que realiza una incorporación, su situación depende de la configuración elegida:
 
-| Setting | Estado de Android for Work en el valor predeterminado de Restricción de tipo de dispositivo | Notas |
+| Valor | Estado de Android for Work en el valor predeterminado de Restricción de tipo de dispositivo | Notas |
 | --- | --- | --- |
 | **Administrar todos los dispositivos como Android** | Bloqueado | Todos los dispositivos Android deben inscribirse sin Android for Work. |
-| **Administrar los dispositivos compatibles como Android for Work** | Permitido | Todos los dispositivos que admiten Android for Work deben inscribirse con Android for Work. |
+| **Administrar los dispositivos compatibles como Android for Work** | Se permite | Todos los dispositivos que admiten Android for Work deben inscribirse con Android for Work. |
 | **Administrar los dispositivos compatibles para usuarios solo en estos grupos como Android for Work** | Bloqueado | Para invalidar el valor predeterminado, se creó una directiva de restricción de tipo de dispositivo independiente. Esta directiva define los grupos que se seleccionaron previamente para permitir la inscripción de Android for Work. Los usuarios de los grupos seleccionados seguirán teniendo permiso para inscribir sus dispositivos Android for Work. Todos los demás usuarios tienen restringida la inscripción con Android for Work. |
 
 En todos los casos, se conserva la normativa que haya previsto. No se requiere ninguna acción por su parte para seguir permitiendo Android for Work en su entorno, tanto de forma global como por grupo.

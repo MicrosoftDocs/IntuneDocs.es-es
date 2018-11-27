@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 24cf9d97-db39-4b95-a664-4aa2e33edb87
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: f76e227037efd6ea8ee7ea95d61f3358698af1d9
-ms.sourcegitcommit: e30fb2375fb79f67e5c1e4ed7b2c21fb9ca80c59
+ms.openlocfilehash: 10598f4868a42b9736b6b33a6d9b5c4b4b308967
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/17/2018
-ms.locfileid: "29961489"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189357"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>Determinación de los desafíos, los objetivos y las metas de implementación
 
@@ -78,7 +79,7 @@ Los objetivos de la implementación son las acciones que una organización puede
 
 Los desafíos de la implementación son problemas de alta prioridad para una organización y que pueden tener un impacto negativo sobre dicho proceso. En ocasiones pueden estar relacionados con problemas anteriores de proyectos anteriores que le gustaría evitar, o con nuevos problemas relacionados con el esfuerzo de implementación actual. A continuación se muestran algunos ejemplos de desafíos de implementación de Intune junto con sus posibles remedios.
 
--   La preparación del soporte técnico y la experiencia del usuario final no se incluyen en el ámbito inicial del proyecto. Como consecuencia, los usuarios finales experimentan problemas de adopción y la organización de soporte técnico se encuentra con dificultades.
+-   La preparación del soporte técnico y la experiencia del usuario final no se incluyen en el ámbito inicial del proyecto. Como consecuencia, los usuarios finales experimentan problemas de adopción y la organización de soporte técnico se encuentra con dificultades.
 
     -   **Mitigación:** incorporar cursos de aprendizaje para el personal de soporte técnico. Validar la experiencia del usuario final con métricas de éxito en el plan de implementación.
 

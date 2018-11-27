@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ac0348736e5975633776c86dee88555dfceb6919
-ms.sourcegitcommit: d8edd1c3d24123762dd6d14776836df4ff2a31dd
+ms.openlocfilehash: c49da9c323e1c4124ad76ae64e63a177edfcaa71
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51576892"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189986"
 ---
 # <a name="device-restriction-for-windows-10-and-newer-settings-in-intune"></a>Restricciones de dispositivos para la configuración de Windows 10 (y versiones posteriores) en Intune
 En este artículo, se muestran todas las opciones de configuración de restricciones de dispositivos de Microsoft Intune que puede configurar para los dispositivos que ejecutan Windows 10.
@@ -233,7 +234,7 @@ Puede agregar aplicaciones que deben tener un comportamiento de privacidad difer
     -   **Privacidad**: bloquea el acceso al área de privacidad de la aplicación de configuración.
     -   **Actualización y seguridad**: bloquea el acceso al área de actualizaciones y seguridad de la aplicación de configuración.
 
-## <a name="start"></a>Start
+## <a name="start"></a>Inicie
 
 - **Diseño del menú Inicio**: para personalizar el menú Inicio en los dispositivos de escritorio, puede cargar un archivo XML que incluya sus personalizaciones, así como el orden en que aparecen las aplicaciones, entre otras cosas. Los usuarios no pueden cambiar el diseño del menú Inicio que especifique usted.
 - **Anclar los sitios web a iconos del menú Inicio**: puede importar imágenes desde Microsoft Edge que se muestran como vínculos en el menú Inicio de Windows de los dispositivos de escritorio.
@@ -280,7 +281,7 @@ Estos valores son de solo lectura y no se pueden cambiar. Para habilitar la pant
 
 Un dispositivo de pantalla completa normalmente ejecuta una aplicación o un conjunto determinado de aplicaciones. A los usuarios no se les permite el acceso a características o funciones del dispositivo que está fuera de la aplicación de pantalla completa.
 
-- **Pantalla completa**: identifica el tipo de pantalla completa admitido por la directiva. Las opciones son:
+- **Pantalla completa**: identifica el tipo de pantalla completa admitido por la directiva. Las opciones incluyen:
 
   - **No configurado** (valor predeterminado): la directiva no habilita una pantalla completa. 
   - **Pantalla completa con una sola aplicación**: el perfil permite que el dispositivo solo ejecute una aplicación. Cuando el usuario inicia sesión, se inicia una aplicación concreta. Este modo también evita que el usuario abra nuevas aplicaciones o modifique la aplicación en ejecución.

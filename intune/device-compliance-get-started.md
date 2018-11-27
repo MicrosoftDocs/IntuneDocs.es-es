@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 226713d893e05c2c2aeea49cde2ce92591d06391
-ms.sourcegitcommit: 1134ecd733356277b40eb1c7f2b318b36d387e00
+ms.openlocfilehash: 470c3b7ac273e051af047eba95012b36a8ea1deb
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/02/2018
-ms.locfileid: "50915706"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186008"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Introducción a las directivas de cumplimiento de dispositivos de Intune
 
@@ -153,7 +154,7 @@ También puede usar las directivas de cumplimiento de dispositivos sin ningún a
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Formas de implementar las directivas de cumplimiento de dispositivos
 Puede implementar directivas de cumplimiento en los usuarios de grupos de usuarios o en dispositivos de grupos de dispositivos. Cuando se implementa una directiva de cumplimiento en un usuario, se comprueba el cumplimiento de todos los dispositivos del usuario. En Windows 10 versión 1803 y dispositivos más recientes, se recomienda realizar la implementación en grupos de dispositivos *si* el usuario primario no ha inscrito el dispositivo. El uso de grupos de dispositivos en este escenario ayuda con los informes de cumplimiento.
 
-Un conjunto de **Configuración de directivas de cumplimiento** integrada (Azure Portal > Conformidad de dispositivos) se evalúa en todos los dispositivos inscritos en Intune. Entre ellos se incluyen los siguientes:
+Un conjunto de **Configuración de directivas de cumplimiento** integrada (Azure Portal > Conformidad de dispositivos) se evalúa en todos los dispositivos inscritos en Intune. Entre ellas se incluyen:
 
 - **Marcar los dispositivos que no tienen asignada una directiva de cumplimiento como**: esta propiedad tiene dos valores:
 

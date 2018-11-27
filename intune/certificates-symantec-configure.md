@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d9c9027964648ad83c552f7dd7067598cacf560e
-ms.sourcegitcommit: dbea918d2c0c335b2251fea18d7341340eafd673
+ms.openlocfilehash: cf5146946fef464d2d74271e0ad801dabbdce13e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/26/2018
-ms.locfileid: "31836532"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186875"
 ---
 # <a name="set-up-intune-certificate-connector-for-symantec-pki-manager-web-service"></a>Configuración de Intune Certificate Connector para el servicio web del administrador de PKI de Symantec
 
@@ -41,7 +42,7 @@ Si desea usar Intune Certificate Connector para una CA de Microsoft y una CA de 
 Si ya usa Intune Certificate Connector para una CA de Microsoft existente y desea agregar compatibilidad con una CA de Symantec, omita este paso y siga los pasos restantes después de instalar la versión más reciente de Intune Certificate Connector del portal de administración de Intune. Este paso solo es necesario cuando desea usar Intune Certificate Connector para una CA de Symantec independiente.
 
 1. Elija una de las versiones del sistema operativo Windows en la lista siguiente e instálela en un equipo:
-   * Windows Server 2012 R2 Datacenter
+   * Windows Server 2012 R2 Datacenter
    * Windows Server 2012 R2 Standard
    * Windows Server 2016 Datacenter
    * Windows Server 2016 Standard
@@ -113,7 +114,7 @@ Use estos pasos para obtener el certificado de autorización de registro (RA) de
 
    b. Proporcione el nombre descriptivo del certificado en el cuadro de texto designado.
 
-   c. Haga clic en **Continue**.
+   c. Haga clic en **Continuar**.
 
       Se muestra un vínculo descargable para el certificado de RA.
 
@@ -281,7 +282,7 @@ El OID del perfil de certificado está asociado con una plantilla de perfil de c
    > [!IMPORTANT]
    > Los parámetros siguientes del perfil de certificado PKCS se deben configurar con los valores especificados en la siguiente tabla, tal como se muestra en la captura de pantalla para emitir los certificados PKCS mediante Intune Certificate Connector desde la CA de Symantec. 
 
-    |Parámetro de certificado PKCS | Valor | Descripción |
+    |Parámetro de certificado PKCS | Value | Descripción |
     | --- | --- | --- |
     | Entidad de certificación | pki-ws.symauth.com | Este valor debe ser el FQDN del servicio de base de la CA de Symantec sin las barras diagonales finales.  Si no está seguro de si se trata del FQDN del servicio de base correcto de la suscripción de la CA de Symantec, póngase en contacto con la asistencia al cliente de Symantec. <br><br> Si este FQDN no es correcto, Intune Certificate Connector no emitirá los certificados PKCS desde la CA de Symantec.| 
     | Nombre de la entidad de certificación | Symantec | Este valor debe ser la cadena **Symantec**. <br><br> Si hay algún cambio en este valor, Intune Certificate Connector no emitirá los certificados PKCS desde la CA de Symantec.|
@@ -296,7 +297,7 @@ Después de completar los pasos anteriores, Intune Certificate Connector emitir�
 
 ### <a name="pkcs-certificate-profile-supported-attributes"></a>Atributos compatibles con el perfil de certificado PKCS
 
-|Atributo | Formatos compatibles con Intune | Formatos compatibles con la CA en la nube de Symantec | Result |
+|Atributo | Formatos compatibles con Intune | Formatos compatibles con la CA en la nube de Symantec | Resultado |
 | --- | --- | --- | --- |
 | Nombre del firmante |Intune admite el nombre del firmante solo en los tres formatos siguientes: <br><br> 1. Nombre común <br> 2. Nombre común, incluido correo electrónico <br> 3. Nombre común como correo electrónico <br><br> Observe el siguiente ejemplo: <br><br> `CN = IWUser0 <br><br> E = IWUser0@samplendes.onmicrosoft.com` | La CA de Symantec admite atributos adicionales.  Si desea seleccionar atributos adicionales, se deben definir con valores fijos en la plantilla de perfil de certificado de Symantec.| Usamos el nombre común o el correo electrónico de la solicitud de certificado PKCS. <br><br> Cualquier error de coincidencia en la selección de los atributos entre el perfil de certificado de Intune y la plantilla de perfil de certificado de Symantec generará que no se emita ningún certificado desde la CA de Symantec.|
 | SAN | Intune solo admite los valores de campo de SAN siguientes: <br><br> AltNameTypeEmail <br><br> AltNameTypeUpn <br><br> AltNameTypeOtherName (valor codificado) | La CA en la nube de Symantec también admite estos parámetros. Si desea seleccionar atributos adicionales, se deben definir con valores fijos en la plantilla de perfil de certificado de Symantec. <br><br> AltNameTypeEmail: si este tipo no se encuentra en SAN, usa el valor de AltNameTypeUpn.  Si tampoco se encuentra AltNameTypeUpn en SAN, usa el valor del nombre del firmante si tiene el formato de correo electrónico.  Si todavía no se encuentra, Intune Certificate Connector no puede emitir los certificados. <br><br> Ejemplo: `RFC822 Name=IWUser0@ndesvenkatb.onmicrosoft.com`  <br><br> AltNameTypeUpn: si este tipo no se encuentra en SAN, usa el valor de AltNameTypeEmail. Si tampoco se encuentra AltNameTypeEmail en SAN, usa el valor del nombre del firmante si tiene el formato de correo electrónico.  Si todavía no se encuentra, Intune Certificate Connector no puede emitir los certificados.  <br><br> Ejemplo: `Other Name: Principal Name=IWUser0@ndesvenkatb.onmicrosoft.com` <br><br> AltNameTypeOtherName: si este tipo no se encuentra en SAN, Intune Certificate Connector no puede emitir los certificados. <br><br> Ejemplo: `Other Name: DS Object Guid=04 12 b8 ba 65 41 f2 d4 07 41 a9 f7 47 08 f3 e4 28 5c ef 2c` <br><br>  **Nota importante:** La CA de Symantec solo admite el valor de este campo en formato codificado (valor hexadecimal). Por lo tanto, para cualquier valor de este campo, Intune Certificate Connector lo codifica en Base 64 antes de enviar la solicitud de certificado. **Intune Certificate Connector no valida si este valor ya está codificado o no.** | Ninguno |
@@ -307,7 +308,7 @@ Los registros de servicio de Intune Certificate Connector están disponibles en 
 
 | Mensaje de emisión o error | Pasos de resolución |
 | --- | --- |
-| No se puede iniciar sesión con la cuenta de administración del inquilino de Intune en la interfaz de usuario del conector NDES | Esto puede ocurrir cuando la instancia de Certificate Connector local no está habilitada en el portal de administración de Intune. Para resolver este problema, use los siguientes pasos: <br><br> Desde la interfaz de usuario de Silverlight: <br> 1. Inicie sesión en el [portal de administración de Intune](https://admin.manage.microsoft.com) <br> 2. Haga clic en ADMIN <br> 3. Seleccione Administración de dispositivos móviles > Certificate Connector <br> 4. Haga clic en **Configurar Certificate Connector local** <br> 5. Active la casilla **Habilitar Certificate Connector** <br> 6. Haga clic en **Aceptar**. <br><br>O bien, <br><br> Desde la interfaz de usuario de Azure Portal: <br> 1. Inicie sesión en [Azure Portal](https://portal.azure.com) <br> 2. Vaya a Microsoft Intune <br> 3. Seleccione **Configuración de dispositivos** > **Entidad de certificación** <br> 4. Haga clic en **Habilitar**. <br><br> Después de completar los pasos anteriores desde la interfaz de usuario de Silverlight o en Azure Portal, intente iniciar sesión con la misma cuenta de administrador del inquilino de Intune en la interfaz de usuario del conector NDES. |
+| No se puede iniciar sesión con la cuenta de administración del inquilino de Intune en la interfaz de usuario del conector NDES | Esto puede ocurrir cuando la instancia de Certificate Connector local no está habilitada en el portal de administración de Intune. Para resolver este problema, use los siguientes pasos: <br><br> Desde la interfaz de usuario de Silverlight: <br> 1. Inicie sesión en el [portal de administración de Intune](https://admin.manage.microsoft.com) <br> 2. Haga clic en ADMIN <br> 3. Seleccione Administración de dispositivos móviles > Certificate Connector <br> 4. Haga clic en **Configurar Certificate Connector local** <br> 5. Active la casilla **Habilitar Certificate Connector** <br> 6. Haga clic en **Aceptar**. <br><br>O bien <br><br> Desde la interfaz de usuario de Azure Portal: <br> 1. Inicie sesión en [Azure Portal](https://portal.azure.com) <br> 2. Vaya a Microsoft Intune <br> 3. Seleccione **Configuración de dispositivos** > **Entidad de certificación** <br> 4. Haga clic en **Habilitar**. <br><br> Después de completar los pasos anteriores desde la interfaz de usuario de Silverlight o en Azure Portal, intente iniciar sesión con la misma cuenta de administrador del inquilino de Intune en la interfaz de usuario del conector NDES. |
 | No se encontró el certificado del conector NDES. <br><br> System.ArgumentNullException: el valor no puede ser nulo. | Intune Certificate Connector muestra este error si la cuenta de administrador del inquilino de Intune nunca inició sesión en la interfaz de usuario del conector NDES. <br><br> Si este error persiste, reinicie Intune Service Connector. <br><br> 1. Abra services.msc <br> 2. Seleccione **Intune Connector Service**. <br> 3. Haga clic con el botón derecho y seleccione **Reiniciar**.|
 | Conector NDES: IssuePfx - Excepción genérica: <br> System.NullReferenceException: referencia de objeto no definida a una instancia de un objeto. | Este error es transitorio. Reinicie Intune Service Connector. <br><br> 1. Abra services.msc <br> 2. Seleccione **Intune Connector Service** <br> 3. Haga clic con el botón derecho y seleccione **Reiniciar**. |
 | Proveedor de Symantec: No se pudo obtener la directiva de Symantec "Se agotó el tiempo de espera de la operación" | Intune Certificate Connector recibió un error de tiempo de espera agotado de la operación al comunicarse con la CA de Symantec. Si este error persiste, aumente el valor de tiempo de espera de la conexión y vuelva a intentarlo. <br><br> Para aumentar el tiempo de espera de la conexión: <br> 1. Vaya al equipo del conector NDES. <br>2. Abra el archivo `%ProgramFiles%\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config` en el Bloc de notas. <br> 3. Aumente el valor de tiempo de espera para el parámetro siguiente: <br><br> `CloudCAConnTimeoutInMilliseconds` <br><br> 4. Reinicie Intune Connector Service. <br><br> Si el problema persiste, póngase en contacto con la asistencia al cliente de Symantec. |

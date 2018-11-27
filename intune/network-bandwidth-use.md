@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 0f737d48-24bc-44cd-aadd-f0a1d59f6893
 ms.reviewer: angerobe
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: 6eb6e07b3bb9da2723e57d9203288bebd8c7ab70
-ms.sourcegitcommit: 18f51ae8291b57562921e40fc364a5a60a59b139
+ms.openlocfilehash: 243e9602a253fecf2eda1dd73dfb49a488db0974
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/09/2018
-ms.locfileid: "44253636"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190258"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Ancho de banda y requisitos de configuración de red de Intune
 
@@ -60,7 +61,7 @@ Un servidor proxy de almacenamiento en caché que recibe solicitudes de contenid
 A continuación, se indica la configuración típica que se utiliza para un servidor proxy que almacena en caché contenido para clientes de Intune.
 
 
-|          Setting           |           Valor recomendado           |                                                                                                  Detalles                                                                                                  |
+|          Valor           |           Valor recomendado           |                                                                                                  Detalles                                                                                                  |
 |----------------------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |         Tamaño de caché         |             De 5 a 30 GB             | El valor varía según el número de equipos cliente en la red y las configuraciones que se utilizan. Para evitar que los archivos se eliminen demasiado pronto, ajuste el tamaño de la caché para su entorno. |
 | Tamaño de archivo de caché individual |                950 MB                 |                                                                     Es posible que esta opción no esté disponible en todos los servidores proxy de almacenamiento en caché.                                                                     |
@@ -164,7 +165,7 @@ En las siguientes tablas se enumeran los puertos y los servicios a los que acced
 
 ### <a name="apple-device-network-information"></a>Información de red de dispositivos de Apple
 
-|         Nombre de host         |                                        Dirección URL (dirección IP/subred)                                        |  Protocol  |     Puerto     |                          Dispositivo                           |
+|         Nombre de host         |                                        Dirección URL (dirección IP/subred)                                        |  Protocolo  |     Puerto     |                          Dispositivo                           |
 |--------------------------|-------------------------------------------------------------------------------------------------------|------------|--------------|-----------------------------------------------------------|
 |      Consola de administración       |                                  gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |                    Apple iOS y macOS                    |
 |      Consola de administración       |                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |                    Apple iOS y macOS                    |

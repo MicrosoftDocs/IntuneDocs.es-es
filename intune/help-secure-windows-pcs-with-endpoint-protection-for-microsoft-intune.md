@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 002241bf-6cd0-4c75-a4f0-891ac7e6721a
 ms.reviewer: damionw
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: dd0ce8cd25739113349663de989546dfa9d73d36
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
+ms.openlocfilehash: 05cc1971f107c7bc3da371de0a916149c879aae0
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310647"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187130"
 ---
 # <a name="help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune"></a>Ayudar a proteger los equipos de Windows con Endpoint Protection para Microsoft Intune
 
@@ -36,7 +37,7 @@ Use la información de las secciones siguientes como ayuda para configurar, impl
 Una de las principales prioridades de un administrador de TI es proteger los equipos administrados contra virus y malware. Antes de implementar Intune en los equipos Windows de su organización, debe decidir la manera de proteger los equipos seleccionando una de las siguientes opciones y configurando las opciones de la directiva asociada:
 
 
-|                                                                                                                                                                       Quiere:                                                                                                                                                                        |                                                                                                       Configuración de directivas de Endpoint Protection                                                                                                        |                                                                                                                                                  Más información                                                                                                                                                  |
+|                                                                                                                                                                       Quiere:                                                                                                                                                                        |                                                                                                       Configuración de directivas de Endpoint Protection                                                                                                        |                                                                                                                                                  Información adicional                                                                                                                                                  |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |                                             Usar Microsoft Intune Endpoint Protection únicamente si no hay ninguna aplicación de protección de extremos de otro fabricante instalada.<br /><br />Puede usar Microsoft Intune Endpoint Protection en todos los equipos en los que no haya instalada una aplicación de protección de puntos de conexión de terceros.                                              | Instalar Endpoint Protection = <strong>Sí</strong><br /><br />Habilitar Endpoint Protection = <strong>Sí</strong><br /><br />Instalar Endpoint Protection incluso si hay una aplicación de protección de puntos de conexión de terceros instalada = <strong>No</strong>  |                                                                      Si se detecta una aplicación de protección de puntos de conexión de terceros, Microsoft Intune Endpoint Protection no se instala y se desinstala si ya estaba instalado.                                                                       |
 | Usar Microsoft Intune Endpoint Protection incluso si hay una aplicación de protección de puntos de conexión de otro fabricante instalada.<br /><br />Con este enfoque, se ejecutarán simultáneamente Microsoft Intune Endpoint Protection y la aplicación de protección de puntos de conexión de otro fabricante. No se recomienda esta configuración porque puede provocar problemas de rendimiento. | Instalar Endpoint Protection = <strong>Sí</strong><br /><br />Habilitar Endpoint Protection = <strong>Sí</strong><br /><br />Instalar Endpoint Protection incluso si hay una aplicación de protección de puntos de conexión de terceros instalada = <strong>Sí</strong> |                        Se debe usar cuando:<br /><br />– Desea pasar a usar Microsoft Intune Endpoint Protection.<br />- Se implementa un cliente nuevo que va a usar Microsoft Intune Endpoint Protection.<br />– Se actualiza un cliente que va a usar Microsoft Intune Endpoint Protection.                         |
@@ -101,7 +102,7 @@ Si ha establecido los valores de directivas de **Instalar Endpoint Protection** 
 
 ### <a name="specify-scan-schedule-settings"></a>Especificar la configuración de programación de examen
 
-|Configuración de directiva|Más información|
+|Configuración de directiva|Información adicional|
 |------------------|--------------------|
 |**Programar un examen rápido diario**|Programa un examen rápido diario de los archivos de uso frecuente y los archivos importantes del sistema en los equipos. Este examen rápido tiene un efecto mínimo sobre el rendimiento.<br /><br />Valor recomendado: **Sí**|
 |**Ejecutar un examen rápido si no se han ejecutado dos exámenes rápidos consecutivos**|Configura Endpoint Protection para que ejecute automáticamente un examen rápido en los equipos en caso de que no se hayan realizado dos exámenes rápidos consecutivos.<br /><br />Valor recomendado: **Sí**|

@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2a521eadea2bcf118b4b0c643802fd8478f7ace2
-ms.sourcegitcommit: ba0699cc351954960b222223c60c4ecd50edc829
+ms.openlocfilehash: f0270818a03c68afd24e32d86a9c1f847e2f2ee2
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49652111"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181996"
 ---
 # <a name="work-device-restriction-settings-in-intune"></a>Configuración de las restricciones de dispositivos de trabajo en Intune
 
@@ -118,7 +119,7 @@ En este artículo se enumeran las opciones de configuración de restricciones de
   - F5 Access
   - Palo Alto Networks GlobalProtect
   - Pulse Secure
-  - Personalizada
+  - Personalizado
     - **Id. de paquete**: escriba el identificador de paquete de la aplicación en Google Play Store. Por ejemplo, si la dirección URL de la aplicación en Play Store es `https://play.google.com/store/details?id=com.contosovpn.android.prod`, el identificador del paquete es `com.contosovpn.android.prod`.
 
     > [!IMPORTANT]

@@ -12,19 +12,20 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 3b67f285-229d-4a0f-ae34-0402a20b4518
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ae114b9aec2794556a8162604a533c24c11bafba
-ms.sourcegitcommit: 98b444468df3fb2a6e8977ce5eb9d238610d4398
+ms.openlocfilehash: 68ffaf8788a392fcf592b426fc04da1351685e05
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/07/2018
-ms.locfileid: "37905145"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189340"
 ---
 # <a name="remotely-lock-devices-with-intune"></a>Bloqueo remoto de dispositivos con Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-La acción de dispositivo **Bloqueo remoto** bloquea el dispositivo. Para desbloquear el dispositivo, el propietario debe indicar su código de acceso. Puede bloquear de forma remota los dispositivos que dispongan de PIN o contraseña. Los dispositivos que no tienen PIN o contraseña no se pueden bloquear de forma remota.
+La acción de dispositivo **Bloqueo remoto** bloquea el dispositivo. Para desbloquear el dispositivo, el propietario debe introducir su código de acceso. Puede bloquear de forma remota los dispositivos que dispongan de PIN o contraseña. Los dispositivos que no tienen PIN o contraseña no se pueden bloquear de forma remota.
 
 ## <a name="supported-platforms"></a>Plataformas compatibles
 

@@ -11,13 +11,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d1add113222c2aa7eaea10679c329e877b1a136f
-ms.sourcegitcommit: 437eaf364c3b8a38d294397310c770ea4d8a8015
+ms.openlocfilehash: c4d19807ecfcc33b957d5f6582f095427dbf978e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49992016"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190207"
 ---
 # <a name="use-single-sign-on-ios-device-in-microsoft-intune"></a>Usar el inicio de sesión único para dispositivos iOS en Microsoft Intune
 

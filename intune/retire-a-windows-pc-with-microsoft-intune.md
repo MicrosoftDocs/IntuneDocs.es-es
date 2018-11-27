@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 5c916182-d99c-44c5-a779-3f596f261c40
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 95525e66cce1e9691c60799df3da184954d6bf4b
-ms.sourcegitcommit: 4d314df59747800169090b3a870ffbacfab1f5ed
+ms.openlocfilehash: bfb7186d7dcd764237ba4dd00fc12bd9e666f67e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43312668"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52187419"
 ---
 # <a name="retire-a-windows-pc"></a>Retirar un PC de Windows
 
@@ -57,6 +58,6 @@ Cuando retira un PC:
 
     Si el cliente de Endpoint Protection no se puede desinstalar, lea [Solucionar problemas de Endpoint Protection](/intune/troubleshoot-endpoint-protection-in-microsoft-intune) para obtener más ayuda.
 
-### <a name="see-also"></a>Vea también
+### <a name="see-also"></a>Consulta también
 
 [Tareas comunes de administración de equipos Windows con el cliente de software de Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

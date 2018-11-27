@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 3b8d22fe-c318-4796-b760-44f1ccf34312
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: f311d8a389d551ed834d955c5d1c59dbc9c3c4a2
-ms.sourcegitcommit: b96568a77d3cb6f602e7577446996fe7dde169bd
+ms.openlocfilehash: daeb85543138a46df296564d2372b6b441011cdf
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51610029"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183425"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>Administración de PC con Windows con el software de cliente de PC de Intune
 
@@ -43,16 +44,16 @@ Intune admite la administración de PC con Windows como equipos con el cliente d
 **Hardware**:  
 Estos son los requisitos mínimos de hardware para instalar el software cliente de Intune:
 
-|Requisito|Más información|
+|Requisitos|Información adicional|
 |---------------|--------------------|
-|Network (Red)|El cliente requiere que el equipo tenga conectividad a Internet.|
+|Red|El cliente requiere que el equipo tenga conectividad a Internet.|
 |Procesador y memoria|Consulte los requisitos de RAM y procesador para el sistema operativo del equipo.|
 |Espacio en disco|200 MB de espacio disponible en el disco antes de que se instale el software cliente.|
 
 **Software**:  
 Estos son los requisitos de software para instalar el software cliente:
 
-|Requisito|Más información|
+|Requisitos|Información adicional|
 |---------------|--------------------|
 |Sistema operativo | Dispositivo Windows con Windows 7 SP1 y Windows 8.1 o posterior. </br></br>**No se admiten las versiones Home Edition.**|
 |Permisos administrativos|La cuenta que instala el software cliente debe tener permisos de administrador local en ese dispositivo.|

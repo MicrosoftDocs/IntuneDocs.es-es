@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 1381a5ce-c743-40e9-8a10-4c218085bb5f
 ms.reviewer: heenamac
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 932feb064552e05536821d0e75e27059387bcf56
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: 9a15c84ded066a26254737f75293b0d743fe5eab
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31029815"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181231"
 ---
 # <a name="how-to-configure-intune-education-settings-for-shared-ipad-devices"></a>Configuración del entorno educativo de Intune para dispositivos iPad compartidos
 
@@ -183,7 +184,7 @@ Ahora el dispositivo está asociado a la categoría de dispositivo. Repita este 
 5. En el panel Perfiles, elija **Crear perfil**.
 6. En el panel **Crear asociación**, escriba un **Nombre** y una **Descripción**.
 7. Pulse **Seleccionar clases** > **Configurar** para asociar grupos al perfil de carro.
-8. Seleccione las clases que se van a incluir en el perfil de carro y, después, pulse **Seleccionar**. 
+8. Seleccione las clases que se van a incluir en el perfil de carro y, después, pulse **Seleccionar**. 
 9. Pulse **Seleccionar carros** > **Configurar** para asociar grupos al perfil de carro.
 10. Seleccione los grupos que se van a incluir en el perfil de carro y, después, pulse **Seleccionar**.
 11. En el panel **Crear asociación**, seleccione **Guardar** para guardar el perfil de carro.
@@ -198,11 +199,11 @@ Se creará el perfil y aparecerá en el panel con la lista de perfiles.
 4. En el panel **Configuración del dispositivo**, elija **Supervisar** > **Estado de la asignación**.
 5. En el panel **Estado de la asignación**, seleccione el **Perfil de carro** que ha creado.
 6. En el panel **Perfil de carro**, elija **Asignaciones** y, después, en **Incluir**, elija **Seleccionar grupos para incluir**.
-7. Seleccione las clases que quiere que se dirijan al perfil de carro (no seleccione un grupo) y, después, pulse **Seleccionar**. 
+7. Seleccione las clases que quiere que se dirijan al perfil de carro (no seleccione un grupo) y, después, pulse **Seleccionar**. 
 8. Cuando termine, elija **Guardar**.
 
 La asignación se completa e Intune implementa el perfil de Classroom a los dispositivos de destino basándose en la asignación del aula.
 
-## <a name="next-steps"></a>Pasos siguientes
+## <a name="next-steps"></a>Pasos a seguir
 
 Ahora los estudiantes pueden compartir dispositivos entre ellos y pueden seleccionar cualquier iPad del aula, iniciar sesión con un PIN y personalizarlo con su contenido. Para obtener más información sobre los dispositivos iPad compartidos, vea el [sitio web de Apple](https://www.apple.com/education/it/).

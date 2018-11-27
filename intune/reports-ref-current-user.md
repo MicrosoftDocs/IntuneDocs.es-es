@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: C10E6752-E925-40AD-ABBF-6B621FB7AFC4
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: da149ea2870880a35352e9d37a91c5c39f7a7438
-ms.sourcegitcommit: bea4a81d262607c6e9dd1e26f5cd1a2faf7d051b
+ms.openlocfilehash: b58f6f360cf034be11153a57227da42ed1e29388
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/14/2018
-ms.locfileid: "45602085"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189782"
 ---
 # <a name="reference-for-current-user-entity"></a>Referencia de la entidad de usuario actual
 
@@ -38,7 +39,7 @@ La entidad **Usuario actual** muestra todos los usuarios de Azure Active Directo
 | UserEmail |Dirección de correo electrónico del usuario. |John@constoso.com |
 | UPN | Nombre principal del usuario. | John@constoso.com |
 | DisplayName |Nombre para mostrar del usuario. |Juan |
-| IntuneLicensed |Especifica si este usuario tiene licencia de Intune o no. |Verdadero/Falso |
+| IntuneLicensed |Especifica si este usuario tiene licencia de Intune o no. |Verdadero o falso |
 | StartDateInclusiveUTC |Fecha y hora en formato UTC en que se ha creado este usuario en el almacenamiento de datos. |23/11/2016 12:00:00 AM |
 | RowLastModifiedDateTimeUTC |Fecha y hora en formato UTC en que se ha modificado por última vez este usuario en el almacenamiento de datos. |23/11/2016 12:00:00 AM |
 

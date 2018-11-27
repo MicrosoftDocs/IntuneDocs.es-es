@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
+search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: 8e73a9cf189ba44a9f093559b9175dfa947a38e1
-ms.sourcegitcommit: a30cfdb3d3f97b6d5943db2d842011a6f60115f0
+ms.openlocfilehash: 1d8ccd4e432623cf7d0ce4ce66651a95e13b8473
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47864598"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186501"
 ---
 # <a name="create-a-design"></a>Creación de un diseño
 
@@ -34,11 +35,11 @@ El diseño de Intune se basa en la información que recopile y en las decisiones
 
 -   Consideraciones de la plataforma de dispositivos
 
--   Requisitos que se van a proporcionar  
+-   Requisitos que se van a proporcionar  
 
 Aunque existen requisitos mínimos de infraestructura local, es útil que disponga de un plan de diseño para asegurarse de que va a tener la solución de administración de dispositivos móviles correcta que cumpla sus metas, objetivos y requisitos.
 
-Revisemos cada una de estas áreas con más detalle. 
+Revisemos cada una de estas áreas con más detalle. 
 
 ## <a name="record-your-current-environment"></a>Registro del entorno actual
 Además, es habitual realizar cambios de diseño durante las fases de implementación y prueba. Use el plan de diseño para documentar estos cambios y la lógica subyacente a medida que se produzcan.
@@ -376,8 +377,8 @@ Las directivas de protección de aplicaciones minimizan la pérdida de datos def
 
 | **Aplicación** | **Finalidad** | **Plataformas** | **Caso de uso** | **Directiva de protección de aplicaciones** |
 |:---:|:---:|:---:|:---:|:---:|
-| Outlook Mobile  | Available | iOS | Corporativo: ejecutivos | No puede descodificarse, archivos cifrados |                                                         
-| Word | Available | iOS, Android - Samsung Knox, no-Knox, Windows 10 Mobile | Corporativo, BYOD | No puede descodificarse, archivos cifrados |                                                         
+| Outlook Mobile  | Disponible | iOS | Corporativo: ejecutivos | No puede descodificarse, archivos cifrados |                                                         
+| Word | Disponible | iOS, Android - Samsung Knox, no-Knox, Windows 10 Mobile | Corporativo, BYOD | No puede descodificarse, archivos cifrados |                                                         
 
 
 Puede [descargar una plantilla de la tabla anterior](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar los requisitos de la directiva de protección de aplicaciones.

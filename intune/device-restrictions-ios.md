@@ -12,13 +12,14 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 67a1eba8208140306c697b7fe7dddb987e4b75c9
-ms.sourcegitcommit: 7c80833b74a7203edc23c550d0d0b63229cda452
+ms.openlocfilehash: 8f9e9533793a8792e9ad354392b9d8e911cd07f4
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/25/2018
-ms.locfileid: "50001616"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52188711"
 ---
 # <a name="microsoft-intune-ios-device-restriction-settings"></a>Configuración de restricciones de dispositivos iOS de Microsoft Intune
 
@@ -308,7 +309,7 @@ En esta lista se muestra el identificador de lote de algunas aplicaciones iOS co
 | com.apple.Keynote           | Keynote      | Apple     |
 | com.apple.mobilemail        | Mail         | Apple     |
 | com.apple.MapsMaps          |              | Apple     |
-| com.apple.MobileSMS         | Mensajes     | Apple     |
+| com.apple.MobileSMS         | Messages     | Apple     |
 | com.apple.Music             | Música        | Apple     |
 | com.apple.news              | Noticias         | Apple     |
 | com.apple.mobilenotes       | Notas        | Apple     |

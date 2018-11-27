@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
 ms.reviewer: chrisgre
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ba5035dfcbab4b938b1ed31786ad0f70dceb2d8c
-ms.sourcegitcommit: b165a38b5d6de396f2edab6411742cb50a9b8816
+ms.openlocfilehash: 32044422943282d9cf813192405a335ee756e44e
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/31/2018
-ms.locfileid: "50253477"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52177939"
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>Configurar directivas de acceso condicional basado en aplicación con Intune
 
@@ -53,7 +54,7 @@ Los administradores de TI pueden crear directivas de acceso condicional basado e
 ## <a name="next-steps"></a>Pasos siguientes
 [Bloqueo de aplicaciones que no usan la autenticación moderna](app-modern-authentication-block.md)
 
-### <a name="see-also"></a>Vea también
+### <a name="see-also"></a>Consulta también
 
 [Proteger datos de aplicaciones mediante directivas de protección de aplicaciones](app-protection-policies.md)
 [Acceso condicional en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)

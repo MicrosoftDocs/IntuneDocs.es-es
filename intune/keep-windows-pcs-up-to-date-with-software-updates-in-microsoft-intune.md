@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 48e9c41a-d2de-424e-9610-cfd1ad514210
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 6c20a54be851bba4343c383b722ca3e034e76a1c
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
+ms.openlocfilehash: 7c6bdbde87f6438696b5a262ba1890532dcfccdd
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310630"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180874"
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>Mantener los equipos Windows al día con las actualizaciones de software de Microsoft Intune
 
@@ -255,5 +256,5 @@ Al seleccionar una actualización de la lista estarán disponibles otros comando
 6.  Puede comprobar los mensajes recordatorios acerca de la actualización en el panel de detalles de la parte inferior de la página **Todas las actualizaciones** .
 
 
-### <a name="see-also"></a>Vea también
+### <a name="see-also"></a>Consulta también
 [Directivas para proteger equipos de Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)

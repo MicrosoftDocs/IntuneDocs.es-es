@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 0100e1b5-5edd-4541-95f1-aec301fb96af
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 4a588af375ef690d45e067dfc4261fbeb551755c
-ms.sourcegitcommit: 2d30ec70b85f49a7563adcab864c1be5a63b9947
+ms.openlocfilehash: 12c48a00e4b755409b698d5f2ee6182403802f23
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/08/2018
-ms.locfileid: "48863219"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52190411"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guía para desarrolladores de Android acerca del SDK para aplicaciones de Microsoft Intune
 
@@ -631,9 +632,9 @@ No se tienen que configurar valores de manifiesto adicionales.
 
 2. **La aplicación integra ADAL:**
 
-    |Parámetro obligatorio de ADAL| Valor |
+    |Parámetro obligatorio de ADAL| Value |
     |--|--|
-    | ClientID: | ClientID de la aplicación (que Azure AD genera cuando se registra la aplicación) |
+    | ClientID | ClientID de la aplicación (que Azure AD genera cuando se registra la aplicación) |
     | SkipBroker | False |
 
 Se pueden especificar los valores de Authority y NonBrokerRedirectURI si resulta necesario.
@@ -658,9 +659,9 @@ Consulte también más adelante los requisitos para el [acceso condicional](#con
 
 3. **La aplicación integra ADAL pero no admite la autenticación intermediada/SSO en todo el dispositivo:**
 
-    |Parámetro obligatorio de ADAL| Valor |
+    |Parámetro obligatorio de ADAL| Value |
     |--|--|
-    | ClientID: | ClientID de la aplicación (que Azure AD genera cuando se registra la aplicación) |
+    | ClientID | ClientID de la aplicación (que Azure AD genera cuando se registra la aplicación) |
     | SkipBroker | **True** |
     
     Se pueden especificar los valores de Authority y NonBrokerRedirectURI si resulta necesario.

@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: 15f8a838-0b69-412b-a42e-c6edb61f0cae
 ms.reviewer: joglocke
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5e0a207d3e845e3983dfe6ce3abbb70fcbbe65cf
-ms.sourcegitcommit: 4d5e811d451aeb6307e0f64818e182e471ae1ed4
+ms.openlocfilehash: 9f6d5bc8c124e3ba26b7e3fc110510c7d5e0e6a3
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51618980"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183169"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>Validación de la configuración de la directiva de protección de aplicaciones
 
@@ -56,6 +57,6 @@ Aquí se muestran las acciones que se deben tomar en función del estado del usu
 - Si la aplicación de un usuario aparece como **No protegida**, compruebe si ha configurado correctamente una directiva de protección de aplicaciones para esa aplicación.
 - Asegúrese de que estas condiciones se aplican a todos los usuarios a los que quiera aplicar directivas de protección de aplicaciones.
 
-### <a name="see-also"></a>Vea también
+### <a name="see-also"></a>Consulta también
 
 [¿Qué es la directiva de protección de aplicaciones de Intune?](app-protection-policies.md)

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 29f09230-dc56-43db-b599-d961967bda49
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 89be4d6940910df4166ec9a485b78e066f94b755
-ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
+ms.openlocfilehash: d290fadf92ee112a1f663c6894861b393b81f74d
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 11/20/2018
-ms.locfileid: "52167576"
+ms.locfileid: "52190326"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Colecciones de almacenamiento de datos de Intune
 
@@ -34,7 +35,7 @@ La entidad **appRevision** muestra todas las versiones de las aplicaciones.
 | AppKey                     | Identificador único de la aplicación.                                                         | 123                                  |
 | ApplicationId              | Identificador único de la aplicación. Se parece a AppKey, pero es una clave natural.        | b66bc706-ffff-7437-0340-032819502773 |
 | Revisión                   | Versión tal como la indicó el administrador durante la carga del archivo binario.                   | 2                                    |
-| Título                      | Título de la aplicación.                                                                     | Excel                                |
+| Title                      | Título de la aplicación.                                                                     | Excel                                |
 | Publicador                  | Editor de la aplicación.                                                                 | Microsoft                            |
 | UploadState                | Estado de carga de la aplicación.                                                              | 1                                    |
 | AppTypeKey                 | Referencia a AppType descrita en la sección siguiente.                            | 1                                    |
@@ -44,7 +45,7 @@ La entidad **appRevision** muestra todas las versiones de las aplicaciones.
 | Tamaño                       | Tamaño del archivo binario en bytes.                                                          | 120,392,000                          |
 | StartDateInclusiveUTC      | Fecha y hora en formato UTC en que se ha creado esta revisión de la aplicación en el almacenamiento de datos.      | 23/11/2016 0:00                      |
 | EndDateExclusiveUTC        | Fecha y hora en formato UTC en que ha quedado obsoleta esta revisión de la aplicación.                        | 23/11/2016 0:00                      |
-| IsCurrent                  | Indica si esta versión de la aplicación está actualizada o no en el almacenamiento de datos.         | Verdadero/Falso                           |
+| IsCurrent                  | Indica si esta versión de la aplicación está actualizada o no en el almacenamiento de datos.         | Verdadero o falso                           |
 | RowLastModifiedDateTimeUTC | Fecha y hora en formato UTC en que se ha modificado por última vez esta versión de la aplicación en el almacenamiento de datos. | 23/11/2016 0:00                      |
 
 ## <a name="apptypes"></a>appTypes
@@ -429,7 +430,7 @@ La entidad **Policy** muestra los perfiles de configuración de dispositivos, lo
 | PolicyId                   | Identificador único de la directiva en el almacenamiento de datos.                                                                                                 | b66bc706-ffff-7437-0340-032819502773 |
 | PolicyName                 | Nombre de la directiva.                                                                                                                                    | "Línea base de Windows 10"                |
 | PolicyVersion              | Versión de la directiva. Cuando la directiva se modifica o se cambia, se crea una versión más reciente.                                                             | 1, 2, 3                              |
-| IsDeleted                  | Indica si se ha actualizado el registro de la directiva.  True: la directiva tiene un nuevo registro con campos actualizados.  False: registro más reciente de la directiva. | Verdadero/Falso                           |
+| IsDeleted                  | Indica si se ha actualizado el registro de la directiva.  True: la directiva tiene un nuevo registro con campos actualizados.  False: registro más reciente de la directiva. | Verdadero o falso                           |
 | StartDateInclusiveUTC      | Fecha y hora en formato UTC en que se ha creado la directiva en el almacenamiento de datos.                                                                              | 23/11/2016 0:00                      |
 | DeletedDateUTC             | Fecha y hora en formato UTC en que IsDeleted ha cambiado a True.                                                                                                   | 23/11/2016 0:00                      |
 | RowLastModifiedDateTimeUTC | Fecha y hora en formato UTC en que se ha modificado por última vez la directiva en el almacenamiento de datos.                                                                        | 23/11/2016 0:00                      |
@@ -512,7 +513,7 @@ La entidad **UserDeviceAssociation** contiene las asociaciones de dispositivos d
 | UserKey            | Identificador único del usuario en el almacenamiento de datos.   (Clave suplente).                            | 123             |
 | DeviceKey          | Identificador único del dispositivo en el almacenamiento de datos.                                             | 123             |
 | CreatedDateTimeUTC | Fecha y hora de creación de la asociación de dispositivos de usuario. Utiliza el formato UTC.                     | 23/11/2016 0:00 |
-| IsDeleted          | Indica que el usuario ha anulado la inscripción del dispositivo y que la asociación ya no está activa. | Verdadero/Falso      |
+| IsDeleted          | Indica que el usuario ha anulado la inscripción del dispositivo y que la asociación ya no está activa. | Verdadero o falso      |
 | EndedDateTimeUTC   | Fecha y hora en formato UTC en que IsDeleted ha cambiado a True.                                               | 23/6/2017 0:00  |
 
 ## <a name="users"></a>usuarios
@@ -528,7 +529,7 @@ La colección de entidades **user** contiene los datos de usuario. Dichos regist
 | UPN                        | Nombre principal del usuario.                                                                                                                                                                                               | John@constoso.com                    |
 | DisplayName                | Nombre para mostrar del usuario.                                                                                                                                                                                                      | Juan                                 |
 | IntuneLicensed             | Especifica si este usuario tiene licencia de Intune o no.                                                                                                                                                                              | Verdadero/Falso                           |
-| IsDeleted                  | Indica si todas las licencias del usuario expiraron y si, por lo tanto, el usuario se quitó de Intune. Esta marca no cambia si se trata de un solo registro. En su lugar, se crea un registro para un estado de usuario nuevo. | Verdadero/Falso                           |
+| IsDeleted                  | Indica si todas las licencias del usuario expiraron y si, por lo tanto, el usuario se quitó de Intune. Esta marca no cambia si se trata de un solo registro. En su lugar, se crea un registro para un estado de usuario nuevo. | Verdadero o falso                           |
 | RowLastModifiedDateTimeUTC | Fecha y hora en formato UTC en que se modificó por última vez el registro en el almacenamiento de datos                                                                                                                                                 | 23/11/2016 0:00                      |
 
 ## <a name="usertermsandconditionsacceptances"></a>userTermsAndConditionsAcceptances

@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: b204a956-18ec-11e8-accf-0ed5f89f718b
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e2829ffe4c8dfffd4d23f4c86b2985d41e983799
-ms.sourcegitcommit: 5eba4bad151be32346aedc7cbb0333d71934f8cf
+ms.openlocfilehash: ba9d4d779a0f609bf07e4d0d7d9aad83e5d415c5
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/16/2018
-ms.locfileid: "31023944"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181537"
 ---
 # <a name="data-intune-sends-to-apple"></a>Datos que Intune manda a Apple
 
@@ -37,7 +38,7 @@ Para que Microsoft Intune pueda establecer una conexión, debe crear una cuenta 
 
 En la tabla siguiente se muestran los datos que Microsoft Intune envía desde un dispositivo a los servicios habilitados de Apple. 
 
-| Servicio | Datos que se envían a Apple | Usada para |
+| Service | Datos que se envían a Apple | Usada para |
 |---|---| ---|
 | [APNS](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Token, PushMagic | Si el servidor acepta el dispositivo, este proporciona su token de dispositivo de notificación push al servidor. El servidor debe usar este token para enviar mensajes push al dispositivo. Este mensaje de registro también contiene una cadena de PushMagic. El servidor debe recordar esta cadena e incluirla en cualquier mensaje push que envíe al dispositivo. |
 | [ASM/DEP](https://developer.apple.com/library/content/documentation/Miscellaneous/Reference/MobileDeviceManagementProtocolRef/3-MDM_Protocol/MDM_Protocol.html#//apple_ref/doc/uid/TP40017387-CH3-SW2) | Token de servidor | Token de dispositivo de notificación push usado para autenticar el servicio de Apple. |

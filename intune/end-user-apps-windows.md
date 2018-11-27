@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: e471fed8-19f0-4b37-aaa2-65f28a6b4794
 ms.reviewer: aanavath
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5b322b9d2b6a7f0689df521ef1809c3616c02f3f
-ms.sourcegitcommit: 2198a39ae48beca5fc74316976bc3fc9db363659
+ms.openlocfilehash: 1fa409619d5c0fc0c0fc32573f9a7346350191e8
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/11/2018
-ms.locfileid: "38225330"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52188728"
 ---
 # <a name="how-your-windows-users-get-their-apps"></a>Cómo obtienen sus aplicaciones los usuarios de Windows
 
@@ -35,6 +36,6 @@ Las **aplicaciones administradas** se pueden administrar mediante directivas y q
 
 Las **aplicaciones no administradas** se pueden administrar mediante directivas y no se han encapsulado con Intune o no incorporan el SDK para aplicaciones de Intune. Las directivas de protección de aplicaciones no pueden aplicarse a estas aplicaciones.
 
-### <a name="see-also"></a>Vea también
+### <a name="see-also"></a>Consulta también
 [Cómo obtienen sus aplicaciones los usuarios de Android](end-user-apps-android.md)
 [Cómo obtienen sus aplicaciones los usuarios de iOS](end-user-apps-android.md)

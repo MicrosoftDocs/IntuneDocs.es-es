@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 30df0f9e-6e9e-4d75-a722-3819e33d480d
 ms.reviewer: arnab
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b722dad629006ac3ea12d59e02a87f359f02e485
-ms.sourcegitcommit: 222881461a81a93b3843c2ac86a7c24a180158d5
+ms.openlocfilehash: fdd99d7c3987eee852399c37108c890a827e1111
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/03/2018
-ms.locfileid: "50971421"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189748"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>Inscripción automática de dispositivos Android mediante Knox Mobile Enrollment de Samsung
 
@@ -58,7 +59,7 @@ Cuando la empresa esté registrada correctamente, puede crear su perfil de MDM p
 
 ### <a name="for-android-enterprise"></a>Para Android Enterprise
 
-| Campos del perfil de MDM| ¿Necesario? | Valores | 
+| Campos del perfil de MDM| ¿Requerido? | Valores | 
 |-------------------|-----------|-------| 
 |MDM Server URI     | No        |Déjelo en blanco. 
 |Nombre del perfil       | Sí       |Escriba el nombre de perfil que prefiera. 
@@ -74,7 +75,7 @@ Cuando la empresa esté registrada correctamente, puede crear su perfil de MDM p
 
 Para una guía detallada, consulte las instrucciones del [Asistente para crear perfiles de Samsung Knox](https://docs.samsungknox.com/KME-Getting-Started/Content/getting-started-wizard.htm).
 
-| Campos del perfil de MDM| ¿Necesario? | Valores |
+| Campos del perfil de MDM| ¿Requerido? | Valores |
 |-------------------|-----------|-------|
 |MDM Server URI     | No        |Déjelo en blanco.
 |Nombre del perfil       | Sí       |Escriba el nombre de perfil que prefiera.

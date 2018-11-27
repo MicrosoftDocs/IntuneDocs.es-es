@@ -13,13 +13,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b1e07bd67d4bf8b776500be01571deddb1e5e58f
-ms.sourcegitcommit: 630dfe1413c1819f35aa941ffc888a7084771a55
+ms.openlocfilehash: 0a539000153ad45b5256e4e63086fa72fee44947
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/15/2018
-ms.locfileid: "51709145"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52186110"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Cree una directiva de acceso condicional para Exchange local y en el entorno de Exchange Online dedicado heredado
 
@@ -124,6 +125,6 @@ A partir de la versión 1704 de Intune, los administradores pueden crear directi
 
 2. En el panel **Directivas**, elija **Nueva directiva** para crear la directiva de acceso condicional de Azure AD.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 [Acceso condicional en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)

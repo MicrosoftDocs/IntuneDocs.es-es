@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ayesham
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 988407d6d736b669854ef8420b71a092765162b7
-ms.sourcegitcommit: 445fcf9e2a185e5c987334cad398bce71383be03
+ms.openlocfilehash: 619976887a7c523933a9e74233779d188baa2cc1
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2018
-ms.locfileid: "34843130"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52183679"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Usar ubicaciones (límite de red) en Intune
 
@@ -27,7 +28,7 @@ Es preferible bloquear el acceso a una red corporativa si un dispositivo deja un
 
 Puede crear una directiva de cumplimiento basada en la ubicación de red, también conocida como límite de red. Con esta directiva se garantiza que los dispositivos deben estar conectados a una red de trabajo para ser conformes. Esta directiva se puede usar junto con directivas de acceso condicional para que los dispositivos tengan acceso a recursos de trabajo *solo* cuando el dispositivo esté conectado a la red de trabajo. Cuando el dispositivo no está conectado a la red de trabajo, pasa a ser no conforme y pierde el acceso a los recursos de trabajo.
 
-Considera el siguiente escenario:
+Considere el siguiente escenario:
 
 En su centro de fabricación, algunos empleados usan dispositivos Android. Un empleado saca el dispositivo Android fuera de las instalaciones o la planta. Para evitar un acceso no autorizado, puede hacer esto:
 
@@ -51,7 +52,7 @@ Para crear una directiva de cumplimiento basadas en ubicación:
 
 2. Introduzca las siguientes propiedades:  
 
-   - Obligatorio. Escriba un **Nombre** para la ubicación, como **Planta de fabricación** o **Nave 44-Protegida**.
+   - Necesario. Escriba un **Nombre** para la ubicación, como **Planta de fabricación** o **Nave 44-Protegida**.
    - Opcional. Escriba un **Rango IPv4** con notación CIDR (Enrutamiento entre dominios sin clase), como `aaa.bbb.ccc.ddd/n`.
    - Opcional. Escriba la dirección de **Puerta de enlace IPv4**, como `aaa.bbb.ccc.ddd`.
    - Opcional. Escriba la dirección de **Servidor DHCP IPv4**, como `aaa.bbb.ccc.ddd`.

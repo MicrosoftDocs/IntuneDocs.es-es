@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 2cc3c960-1fdd-47ca-a693-420d47b403de
 ms.reviewer: chrisbal
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ecbc15c4888ae42c34c5ff9f488d639fc321853e
-ms.sourcegitcommit: e4832ea81b9a707a6ad0699a18c8b3988413c283
+ms.openlocfilehash: 4082b845643aae47464e4df14ac6621fcf8f39cf
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/27/2018
-ms.locfileid: "39279413"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180258"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Administrar dispositivos de perfil de trabajo Android con Intune
 
@@ -62,7 +63,7 @@ Si va a usar el acceso condicional de Exchange ActiveSync en un dispositivo de p
 
 Las directivas de protección de aplicaciones que se aplican son totalmente compatibles con el perfil del trabajo y el perfil personal. Puede publicar aplicaciones de línea de negocio en la consola de publicación de aplicaciones de Android en https://play.google.com/apps/publish. Esta consola incluye una opción para convertir las aplicaciones en privadas para su organización. Para obtener más información, consulte [Incorporación de una directiva de cumplimiento de dispositivos de perfil de trabajo Android en Intune](compliance-policy-create-android-for-work.md). Para obtener información general sobre las directivas de protección de aplicaciones, consulte [¿Qué son las directivas de protección de aplicaciones?](app-protection-policy.md).
 
-## <a name="vpn-profiles"></a>Perfiles de VPN
+## <a name="vpn-profiles"></a>Perfiles VPN
 
 La compatibilidad con VPN es similar a los perfiles de VPN de Android. Android Enterprise dispone de las mismas opciones de configuración básicas y de los mismos proveedores de VPN, aunque con dos diferencias:
 

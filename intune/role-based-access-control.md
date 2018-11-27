@@ -13,13 +13,14 @@ ms.technology: ''
 ms.assetid: ca3de752-3caa-46a4-b4ed-ee9012ccae8e
 ms.reviewer: ''
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 5c75bd80e848bbd309051a9c6f3e149abd7a46ed
-ms.sourcegitcommit: 378474debffbc85010c54e20151d81b59b7a7828
+ms.openlocfilehash: 07a1c0a0825faafa85b3fb2904dcb517268617bf
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/24/2018
-ms.locfileid: "47028705"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52180058"
 ---
 # <a name="role-based-administration-control-rbac-with-microsoft-intune"></a>Control de administración basada en roles (RBAC) con Microsoft Intune
 
@@ -65,16 +66,16 @@ Los siguientes roles están integrados en Intune y puede asignarlos a grupos sin
 - **Administrador de roles de Intune**: permite administrar los roles de Intune personalizados y agregar las asignaciones de roles de Intune integrados. Esta es la única función de Intune que permite asignar permisos a los administradores.
 - **Administrador de la escuela**: administra dispositivos de Windows 10 en [Intune for Education](introduction-intune-education.md) y puede realizar las acciones siguientes: 
 
-|Permission|Operación|
+|Permiso|Operación|
 |---|---|
-|Datos de auditoría|Lectura|
+|Datos de auditoría|Leer|
 |DeviceConfigurations|Asignar, Crear, Eliminar, Leer, Actualizar|
 |Administradores de inscripción de dispositivos|Leer, Actualizar|
 |Dispositivos administrados|Leer, Actualizar<!--, Delete [To be added in 1803]-->|
 |Aplicaciones móviles|Asignar, Crear, Eliminar, Leer, Actualizar|
-|Reports|Lectura|
+|Informes|Leer|
 |Acciones remotas|Limpiar PC, Reiniciar, Bloqueo remoto, Retirar, Sincronizar dispositivos, Borrar|
-|Organización|Lectura|
+|Organización|Leer|
 
 ### <a name="to-assign-a-built-in-role"></a>Para asignar un rol integrado
 
@@ -143,6 +144,6 @@ Puede crear un rol personalizado que incluye los permisos necesarios para una fu
 
 [Use el rol Departamento de soporte técnico de Intune en el portal de solución de problemas](help-desk-operators.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulta también
 
 [Asignación de roles mediante Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-users-assign-role-azure-portal)

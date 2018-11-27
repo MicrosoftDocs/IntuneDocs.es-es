@@ -14,13 +14,14 @@ ms.assetid: 6982ba0e-90ff-4fc4-9594-55797e504b62
 ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: damionw
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 87f49c9aafa8b6f9f281a00e4d7bd297c354f90b
-ms.sourcegitcommit: 4c4e87cb0d8906085fcb7cdd170bd6b0cfeb23ff
+ms.openlocfilehash: df84438ca93e50c392b085eb439abe02f074e5c3
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/10/2018
-ms.locfileid: "51511048"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52189731"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Solución de problemas con la inscripción de dispositivos en Intune
 
@@ -355,7 +356,7 @@ Este problema puede ocurrir si:
 - hay una interrupción temporal de los servicios de Apple, o
 - la inscripción de iOS está configurada para usar tokens de VPP como se muestra en la tabla, pero hay algún problema con el token de VPP.
 
-| Configuración de la inscripción | Valor |
+| Configuración de la inscripción | Value |
 | ---- | ---- |
 | Plataforma | iOS |
 | Afinidad de usuario | Inscribir con afinidad de usuario |
