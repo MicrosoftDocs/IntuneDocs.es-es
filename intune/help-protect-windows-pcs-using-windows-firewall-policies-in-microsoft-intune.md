@@ -14,13 +14,14 @@ ms.technology: ''
 ms.assetid: 9549c072-ac3d-4d14-a931-a2eda8846217
 ms.reviewer: owenyen
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: a38ff69b878880ffa16e327eace0afe64d336f43
-ms.sourcegitcommit: 116be0eaa44fd5518ff34780d39569224ef4746b
+ms.openlocfilehash: db9cdf539f0cf80fb4640ba41929c67e643956c4
+ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/21/2018
-ms.locfileid: "36310579"
+ms.lasthandoff: 11/20/2018
+ms.locfileid: "52181129"
 ---
 # <a name="help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune"></a>Ayudar a proteger los equipos de Windows mediante directivas del Firewall de Windows en Microsoft Intune
 
@@ -95,7 +96,7 @@ El valor predeterminado para cada uno de estos valores es **Sí**.
 
 Puede configurar las excepciones que permiten determinados tipos de tráfico de red a través del firewall independientemente de los valores que haya configurado con anterioridad. De forma predeterminada, no se configura ninguna de estas opciones.
 
-|Nombre de la configuración|Detalles|
+|Nombre del valor de configuración|Detalles|
 |------------------|--------------------|
 |**BranchCache: recuperación de contenido**<br>(Windows 7 o posterior)|Permite a los clientes de BranchCache usar HTTP para recuperar contenido de otros clientes de BranchCache en el modo distribuido y desde la caché hospedada en el modo de caché hospedada. Esta configuración usa HTTP.|
 |**BranchCache: cliente de caché hospedada**<br>(Windows 7 o posterior)|Permite a los clientes de BranchCache usar una caché hospedada. Esta configuración usa HTTPS.|
@@ -135,5 +136,5 @@ Puede configurar las excepciones que permiten determinados tipos de tráfico de 
 |**Windows Virtual PC**<br>(Windows 7 o posterior)|Permite que las máquinas virtuales se comuniquen con otros equipos.|
 |**Dispositivos portátiles inalámbricos**|Permite la transferencia de archivos multimedia a equipos administrados desde cualquier cámara o dispositivo multimedia que se pueda conectar a la red, por medio de Protocolo de transferencia multimedia (MTP). Esta configuración usa los protocolos de red SSDP y UPnP.|
 
-### <a name="see-also"></a>Vea también
+### <a name="see-also"></a>Consulta también
 [Directivas para proteger equipos de Windows](policies-to-protect-windows-pcs-in-microsoft-intune.md)

@@ -12,13 +12,14 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.reviewer: kmyrup
 ms.suite: ems
+search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b0ee2b2ad8d25d1040577a7f8abff4377704d2d5
-ms.sourcegitcommit: 6ff5df63a2fff291d7ac5fed9c51417fe808650d
+ms.openlocfilehash: 73a3b26eb9a18475530e3b52ba9b91c4af5e685d
+ms.sourcegitcommit: 349ab913932547b4a7491181f0aff092f109b87b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52167542"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52303879"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar y usar certificados SCEP con Intune
 
@@ -66,7 +67,7 @@ Se recomienda encarecidamente publicar el servidor NDES a través de un proxy in
 |**Plantilla de certificado**|Configure esta plantilla en la CA emisora.|
 |**Certificado de autenticación del cliente**|Solicitado desde la CA emisora o la CA pública; instale este certificado en el servidor NDES.|
 |**Certificado de autenticación de servidor**|Solicitado desde la CA emisora o la CA pública, este certificado SSL se instala y se enlaza en IIS, en el servidor NDES. Si el certificado tiene el conjunto de usos de claves de autenticación de cliente y servidor (**Usos mejorados de clave**), puede usar el mismo certificado.|
-|**Certificado de CA raíz de confianza**|Exportará este certificado como un archivo **.cer** desde la entidad de certificación raíz o cualquier dispositivo que confíe en ella. Luego, lo asignará a los dispositivos que usan el perfil de certificado de CA de confianza.<br /><br />Use un único certificado de CA raíz de confianza por cada plataforma de sistema operativo y asócielo a cada perfil de certificado raíz de confianza que cree.<br /><br />Puede usar certificados de CA raíz de confianza adicionales cuando sea necesario. Por ejemplo, podría hacerlo para proporcionar una relación de confianza con una CA que firme los certificados de autenticación de servidor para los puntos de acceso Wi-Fi.|
+|**Certificado de CA raíz de confianza**|Exportará este certificado como un archivo **.cer** desde la entidad de certificación raíz o cualquier dispositivo que confíe en ella. Luego, asígnelos a los usuarios o dispositivos que usan el perfil de certificado de CA de confianza.<br /><b>NOTA:<b /> al asignar un perfil de certificado SCEP, asegúrese de asignar el perfil de certificado raíz de confianza al que se hace referencia en el perfil de su certificado SCEP al mismo grupo de usuarios o dispositivos.<br /><br />Use un único certificado de CA raíz de confianza por cada plataforma de sistema operativo y asócielo a cada perfil de certificado raíz de confianza que cree.<br /><br />Puede usar certificados de CA raíz de confianza adicionales cuando sea necesario. Por ejemplo, podría hacerlo para proporcionar una relación de confianza con una CA que firme los certificados de autenticación de servidor para los puntos de acceso Wi-Fi.|
 
 ### <a name="accounts"></a>Cuentas
 
@@ -481,7 +482,7 @@ Para validar que el servicio se ejecuta, abra un explorador y escriba la siguien
      - **Firma digital**: permite el intercambio de claves solo cuando una firma digital ayuda a proteger la clave
    - **Tamaño de la clave (bits)**: seleccione el número de bits que contiene la clave
    - **Algoritmo hash** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): seleccione uno de los tipos de algoritmos hash disponibles para usarlo con este certificado. Seleccione el nivel máximo de seguridad que admiten los dispositivos de conexión.
-   - **Certificado raíz**: elija un perfil de certificado de CA raíz que previamente haya configurado y asignado al usuario o dispositivo. Este certificado de CA debe ser el certificado raíz para la entidad de certificación que emite el certificado que va a configurar en este perfil de certificado.
+   - **Certificado raíz**: elija un perfil de certificado de CA raíz que previamente haya configurado y asignado al usuario o dispositivo. Este certificado de CA debe ser el certificado raíz para la entidad de certificación que emite el certificado que va a configurar en este perfil de certificado. Asegúrese de asignar este perfil de certificado raíz de confianza al mismo grupo asignado en el perfil de certificado SCEP.
    - **Uso mejorado de clave**: elija **Agregar** para agregar valores para la finalidad prevista del certificado. En la mayoría de los casos, el certificado requiere **Autenticación de cliente** para que el usuario o dispositivo pueda autenticarse en un servidor. Sin embargo, puede agregar otros usos de clave según sea necesario.
    - **Configuración de la inscripción**
      - **Umbral de renovación (%)**: especifique qué porcentaje de la duración del certificado tiene que quedar para que el dispositivo solicite la renovación del certificado.
