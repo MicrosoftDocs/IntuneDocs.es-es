@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/05/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: karanda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 59736ad188cf88c994ff93b4a505731afad8f550
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: a7250471e698d32a305755147943311d2150f0b2
+ms.sourcegitcommit: a27a9c4cae47be50807aa3c890f0d5c0c023f04a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186331"
+ms.lasthandoff: 11/29/2018
+ms.locfileid: "52618193"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>Uso de un perfil de dispositivo personalizado para crear un perfil de Wi-Fi con una clave precompartida - Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -34,9 +34,8 @@ Normalmente las claves precompartidas se utilizan para autenticar a los usuarios
 ## <a name="before-you-begin"></a>Antes de comenzar
 
 - Le resultará más fácil copiar el código de un equipo conectado a esa red, tal como se describe a continuación.
-- En Android, también puede usar la herramienta [Android PSK Generator](http://intunepskgenerator.johnathonb.com/).
 - Puede agregar varias redes y claves si agrega más configuraciones de OMA-URI.
-- En iOS, use Apple Configurator en una estación Mac para configurar el perfil. O bien, use [iOS PSK Mobile Config Generator](http://intunepskgenerator.johnathonb.com/).
+- En iOS, use Apple Configurator en una estación Mac para configurar el perfil.
 - La opción de PSK requiere una cadena de 64 dígitos hexadecimales o una frase de contraseña de entre 8 y 63 caracteres ASCII imprimibles. No se admiten algunos caracteres, como el asterisco (*).
 
 ## <a name="create-a-custom-profile"></a>Creación de un perfil personalizado
