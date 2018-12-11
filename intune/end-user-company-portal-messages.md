@@ -15,12 +15,12 @@ ms.assetid: 3df993aa-48c5-4799-b68d-c85fe4f7b02c
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 44e7307997df67ad1c1ae6170da3bcc13e99070d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 8c4e5e18c0b995ad84340cdbc07a8a11b09e4f3a
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185056"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112789"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>Ayudar a que los usuarios finales comprendan los mensajes de la aplicación Portal de empresa
 
@@ -108,7 +108,7 @@ Si no ha agregado la aplicación Portal de empresa a las listas **Aplicaciones p
 
 ### <a name="what-it-means"></a>Significado
 
-Agregue Portal de empresa a las listas **Aplicaciones permitidas** o **Aplicaciones exentas** en la directiva de protección de la aplicación Windows Information Protection (WIP). Para obtener más información, consulte [Creación e implementación de una directiva de protección de aplicaciones de Windows Information Protection (WIP) con Intune](/intune-classic/deploy-use/create-windows-information-protection-policy-with-intune).
+Agregue Portal de empresa a las listas **Aplicaciones permitidas** o **Aplicaciones exentas** en la directiva de protección de la aplicación Windows Information Protection (WIP). Para obtener más información, consulte [Creación e implementación de una directiva de protección de aplicaciones de Windows Information Protection (WIP) con Intune](windows-information-protection-policy-create.md).
 
-### <a name="see-also"></a>Consulta también
+### <a name="see-also"></a>Vea también
 [Qué decirles a los usuarios finales sobre el uso de Intune](end-user-educate.md)

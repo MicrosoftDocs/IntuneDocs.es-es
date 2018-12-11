@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 2782190f043a6d0c2d1af52d5a77fd3ce53b739f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 69c8b4a5b786768d315bfe6ec707b8c4b915c93a
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181458"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112942"
 ---
 # <a name="reference-for-devices-entities"></a>Referencia de las entidades Devices
 
@@ -316,7 +316,7 @@ La entidad **DevicePropertyHistory** tiene las mismas propiedades que las tablas
 
 ## <a name="mdmdeviceinventoryhistories"></a>MdmDeviceInventoryHistories
 
-La entidad **MdmDeviceInventoryHistories** contiene instantáneas diarias de los datos del inventario para dispositivos administrados por MDM durante los últimos 90 días. La columna DateKey indica el día de la fila. Es posible que algunas propiedades no se puedan aplicar o rellenar para todos los dispositivos, por lo que debe consultar esta página. Para obtener más información, vea [Comprender el funcionamiento de sus dispositivos mediante el inventario en Microsoft Intune](https://docs.microsoft.com/Intune-classic/deploy-use/understand-your-devices-with-inventory-in-microsoft-Intune).
+La entidad **MdmDeviceInventoryHistories** contiene instantáneas diarias de los datos del inventario para dispositivos administrados por MDM durante los últimos 90 días. La columna DateKey indica el día de la fila. Es posible que algunas propiedades no se puedan aplicar o rellenar para todos los dispositivos, por lo que debe consultar esta página. Para obtener más información, vea [Comprender el funcionamiento de sus dispositivos mediante el inventario en Microsoft Intune](device-inventory.md).
 
 | Propiedad  | Descripción |
 |---------|------------|
@@ -342,7 +342,7 @@ La entidad **MdmDeviceInventoryHistories** contiene instantáneas diarias de los
 | OSManufacturer |Fabricante del sistema operativo. |
 | OSProductSuite |Conjunto de productos del sistema operativo. |
 | OSProductType |Tipo de producto del sistema operativo. |
-| Locale |Configuración regional del sistema operativo. |
+| Configuración regional |Configuración regional del sistema operativo. |
 | PhysicalMemoryCapacity |Capacidad de memoria física (en bytes). |
 | PhysicalMemoryRemovable |Memoria física extraíble (en bytes). |
 | SystemEnclosureChassisTypesInnerText |Define el tipo de chasis del sistema para este dispositivo. Los números indican los valores siguientes:  <br>0 o vacío = desconocido   <br>1 = es un equipo de escritorio   <br>2 = es un portátil  <br>3 = es una estación de trabajo  <br>4 = es un servidor de empresa  <br>100 = es un teléfono  <br>101 = es una tableta  <br>102/103 = otro tipo desconocido de dispositivo móvil |
@@ -362,7 +362,7 @@ La entidad **MdmDeviceInventoryHistories** contiene instantáneas diarias de los
 | PlatformType |Tipo de plataforma. |
 | ProcessorLevel |Nivel de procesador. |
 | ProcessorRevision |Revisión del procesador. |
-| Producto |Producto. |
+| Product |Producto. |
 | ProductVersion |Versión del producto. |
 | OEM |Fabricante de equipo original. |
 | DeviceBuildVersion |Versión de compilación del dispositivo. |
@@ -386,7 +386,7 @@ La entidad **MdmDeviceInventoryHistories** contiene instantáneas diarias de los
 | RemovableStorageTotal |Almacenamiento extraíble total (en bytes). |
 | DeviceMemoryDeviceCapacity |Capacidad de memoria del dispositivo. |
 | DeviceMemoryAvailableDeviceCapacity |Capacidad disponible de memoria del dispositivo. |
-| DeviceOSVersion |Versión de SO |
+| DeviceOSVersion |Versión del SO |
 | DeviceOSPlatform |Plataforma del sistema operativo. |
 | DeviceOSLanguage |Idioma del sistema operativo. |
 | PasswordMaxAttemptsBeforeWipe |Número máximo de intentos de contraseña permitidos antes de que se produzca el borrado del dispositivo. |
