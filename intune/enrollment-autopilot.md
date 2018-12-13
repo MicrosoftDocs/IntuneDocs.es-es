@@ -16,12 +16,12 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 2ef7ebf495511e1d5c04aa8a9c459ba48f3dbb42
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 3a0f9a55fd3d5db8b36db09f4a83d5c09db29725
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180869"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829120"
 ---
 # <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>Inscribir dispositivos Windows con Windows Autopilot  
 Windows Autopilot simplifica el proceso de inscripción de dispositivos. Crear y mantener imágenes personalizadas de sistemas operativos es un proceso que conlleva mucho tiempo. También se requiere tiempo para aplicar estas imágenes en dispositivos nuevos a la hora de prepararlos para que los puedan usar los usuarios finales. Con Microsoft Intune y Autopilot, puede proporcionar nuevos dispositivos a los usuarios finales sin necesidad de crear, mantener y aplicar imágenes personalizadas del sistema operativo a los dispositivos. Al usar Intune para administrar dispositivos Autopilot, puede administrar directivas, perfiles y aplicaciones (entre otros) después de inscribirlos. Para obtener información general sobre las ventajas, los escenarios y los requisitos previos, vea [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) (Introducción a Windows Autopilot).
@@ -82,8 +82,8 @@ Los perfiles de implementación de Autopilot sirven para configurar los disposit
     - **Implementación automática (versión preliminar)**: (requiere la [compilación de Windows 10 Insider Preview](https://docs.microsoft.com/windows-insider/at-work-pro/) más reciente) los dispositivos con este perfil no están asociados al usuarios que inscribe el dispositivo. No se necesitan credenciales de usuario para inscribir el dispositivo.
 5. En el cuadro **Unirse a Azure AD como**, elija **Unidos a Azure AD**.
 6. Elija **Configuración rápida**, configure las siguientes opciones y elija **Guardar**:
-    - **Idioma (región)***: elija el idioma que se usará en el dispositivo. Esta opción solo está disponible si ha elegido **Implementación automática** como **Modo de implementación**.
-    - **Configurar el teclado automáticamente***: si se selecciona un **Idioma (región)**, elija **Sí** para omitir la página de selección de teclado. Esta opción solo está disponible si ha elegido **Implementación automática** como **Modo de implementación**.
+    - **Idioma (región)**\*: elija el idioma que se usará en el dispositivo. Esta opción solo está disponible si ha elegido **Implementación automática** como **Modo de implementación**.
+    - **Configurar el teclado automáticamente**\*: si se selecciona un **Idioma (región)**, elija **Sí** para omitir la página de selección de teclado. Esta opción solo está disponible si ha elegido **Implementación automática** como **Modo de implementación**.
     - **Contrato de licencia para el usuario final (CLUF)**: (Windows 10, versión 1709 o posterior) elija si quiere mostrar el CLUF a los usuarios.
     - **Configuración de privacidad**: elija si quiere mostrar la configuración de privacidad a los usuarios.
     - **Ocultar las opciones para cambiar la cuenta (solo Windows Insider)**: elija **Ocultar** para que no se muestren las opciones para cambiar la cuenta en las páginas de inicio de sesión de la empresa y de error del dominio. Esta opción requiere la [configuración de la personalización de marca de la empresa en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
@@ -92,7 +92,7 @@ Los perfiles de implementación de Autopilot sirven para configurar los disposit
 
 6. Elija **Crear** para crear el perfil. Ahora el perfil de implementación Autopilot se puede asignar a los dispositivos.
 
-*Tanto **Idioma (región)** como **Configurar el teclado automáticamente** estarán disponibles únicamente si ha elegido **Implementación automática (versión preliminar)** como **Modo de implementación**  (requiere la compilación de [Windows 10 Insider Preview](https://docs.microsoft.com/windows-insider/at-work-pro/) más reciente).
+*Tanto **Idioma (región)** como **Configurar el teclado automáticamente** estarán disponibles únicamente si ha elegido **Implementación automática (versión preliminar)** como **Modo de implementación** (requiere la compilación de [Windows 10 Insider Preview](https://docs.microsoft.com/windows-insider/at-work-pro/) más reciente).
 
 
 ## <a name="assign-an-autopilot-deployment-profile-to-a-device-group"></a>Asignar un perfil de implementación de Autopilot a un grupo de dispositivos

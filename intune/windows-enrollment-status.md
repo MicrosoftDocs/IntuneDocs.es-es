@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ada9fee575824d27a6bfdd8f14d4845d228467db
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: b953ea281ad785d8a0ce7bee4b0f6d420b785dd9
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186098"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52729048"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configurar una página de estado de inscripción
  
@@ -61,6 +61,16 @@ Un dispositivo o un usuario podrían estar en varios grupos y tener varios perfi
 2. Mantenga el mouse sobre el perfil en la lista.
 3. Use los tres puntos verticales para arrastrar el perfil a la posición que quiera en la lista.
 
+## <a name="block-access-to-a-device-until-a-specific-application-is-installed"></a>Bloqueo del acceso a un dispositivo a menos que haya instalada una aplicación específica
+
+Puede especificar qué aplicaciones deben estar instaladas antes de que el usuario pueda acceder al escritorio.
+
+1. En Intune, elija **Inscripción de dispositivos** > **Inscripción de Windows** > **Página de estado de inscripción (vista previa)**.
+2. Elija un perfil > **Configuración**.
+3. Elija **Sí** en **Show app and profile installation progress** (Mostrar progreso de instalación de la aplicación y el perfil).
+4. Elija **Sí** en **Block device use until all apps and profiles are installed** (Bloquear dispositivo hasta que todas estas aplicaciones y perfiles estén instalados).
+5. Elija **Seleccionado** en **Block device use until these required apps are installed if they are assigned to the user/device** (Bloquear dispositivo hasta que las aplicaciones necesarias estén instaladas si están asignadas al usuario o dispositivo).
+ 6. Elija **Seleccionar aplicaciones** > elija las aplicaciones > **Seleccionar** > **Guardar**.
 
 ## <a name="enrollment-status-page-tracking-information"></a>Información de seguimiento de la página de estado de inscripción
 

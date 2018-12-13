@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 09cd1177157897886631f804cd335ae78562a233
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 73be6facab5deb8a09462dc03c4683af3d34c027
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182149"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829239"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Novedades de Microsoft Intune: meses anteriores
 
@@ -132,7 +132,7 @@ Una vez que habilite la opción Firewall, puede configurar el firewall con dos e
 
 En la configuración del dispositivo, se pueden ver mensajes y códigos de error más detallados. Este informe detallado muestra la configuración, el estado de esta configuración y los detalles sobre cómo solucionar problemas.
 
-##### <a name="more-information"></a>Información adicional
+##### <a name="more-information"></a>Más información
 
 - Bloqueo de todas las conexiones entrantes
 
@@ -166,7 +166,7 @@ Crear perfil\Endpoint protection\Protección contra vulnerabilidades de segurida
 
 #### <a name="attack-surface-reduction"></a>Reducción de la superficie expuesta a ataques
 
-|Nombre del valor de configuración  |Opciones de configuración  |Descripción  |
+|Nombre de la configuración  |Opciones de configuración  |Descripción  |
 |---------|---------|---------|
 |Protección de ransomware avanzada|Habilitado, Auditoría, No configurado|Usar protección ransomware intensa.|
 |Marcar el robo de credenciales desde el subsistema de autoridad de seguridad local de Windows|Habilitado, Auditoría, No configurado|Marcar el robo de credenciales desde el subsistema de autoridad de seguridad local de Windows (lsass.exe).|
@@ -176,7 +176,7 @@ Crear perfil\Endpoint protection\Protección contra vulnerabilidades de segurida
 
 #### <a name="controlled-folder-access"></a>Acceso controlado a carpetas
 
-|              Nombre del valor de configuración               |                                                              Opciones de configuración                                                              | Descripción |
+|              Nombre de la configuración               |                                                              Opciones de configuración                                                              | Descripción |
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | Protección de carpetas (ya implementado) | No configurado, Habilitar, Solo auditoría (ya implementado)<br><br> <strong>Nuevo</strong><br>Impedir la modificación del disco, Auditar la modificación del disco |             |
 
@@ -338,7 +338,7 @@ Por ejemplo, una cuenta del recurso como **Sala de conferencias B41/6233**.
 
 ##### <a name="attack-surface-reduction"></a>Reducción de la superficie expuesta a ataques
 
-|Nombre del valor de configuración  |Opciones de configuración  |Descripción  |
+|Nombre de la configuración  |Opciones de configuración  |Descripción  |
 |---------|---------|---------|
 |Ejecución de contenido ejecutable protegido por contraseña del correo electrónico|Bloquear, Auditoría, No configurado|Evitar que se ejecuten los archivos ejecutables protegidos por contraseña descargados a través del correo electrónico.|
 |Protección de ransomware avanzada|Habilitado, Auditoría, No configurado|Usar protección ransomware intensa.|
@@ -349,7 +349,7 @@ Por ejemplo, una cuenta del recurso como **Sala de conferencias B41/6233**.
 
 ##### <a name="controlled-folder-access"></a>Acceso controlado a carpetas
 
-|              Nombre del valor de configuración               |                                                              Opciones de configuración                                                              | Descripción |
+|              Nombre de la configuración               |                                                              Opciones de configuración                                                              | Descripción |
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------|
 | Protección de carpetas (ya implementado) | No configurado, Habilitar, Solo auditoría (ya implementado)<br><br> <strong>Nuevo</strong><br>Impedir la modificación del disco, Auditar la modificación del disco |             |
 
@@ -596,10 +596,10 @@ La nueva plataforma Android for Work está bloqueada de manera predeterminada en
 
 Si no es la primera que realiza una incorporación, su situación depende de la configuración elegida:
 
-| Valor | Estado de Android for Work en el valor predeterminado de Restricción de tipo de dispositivo | Notas |
+| Setting | Estado de Android for Work en el valor predeterminado de Restricción de tipo de dispositivo | Notas |
 | --- | --- | --- |
 | **Administrar todos los dispositivos como Android** | Bloqueado | Todos los dispositivos Android deben inscribirse sin Android for Work. |
-| **Administrar los dispositivos compatibles como Android for Work** | Se permite | Todos los dispositivos que admiten Android for Work deben inscribirse con Android for Work. |
+| **Administrar los dispositivos compatibles como Android for Work** | Permitido | Todos los dispositivos que admiten Android for Work deben inscribirse con Android for Work. |
 | **Administrar los dispositivos compatibles para usuarios solo en estos grupos como Android for Work** | Bloqueado | Para invalidar el valor predeterminado, se creó una directiva de restricción de tipo de dispositivo independiente. Esta directiva define los grupos que se seleccionaron previamente para permitir la inscripción de Android for Work. Los usuarios de los grupos seleccionados seguirán teniendo permiso para inscribir sus dispositivos Android for Work. Todos los demás usuarios tienen restringida la inscripción con Android for Work. |
 
 En todos los casos, se conserva la normativa que haya previsto. No se requiere ninguna acción por su parte para seguir permitiendo Android for Work en su entorno, tanto de forma global como por grupo.
@@ -1060,7 +1060,7 @@ La aplicación de Portal de empresa para Windows 10 permite a los usuarios actua
 
 ### <a name="inform-end-users-what-device-information-can-be-seen-for-ios---739894--"></a>Informar a los usuarios finales de la información de dispositivo que puede verse para iOS <!--739894-->
 
-Hemos agregado   **Tipo de propiedad** a la pantalla Detalles del dispositivo en la aplicación del portal de empresa para iOS. Esto permitirá que los usuarios obtengan más información sobre privacidad directamente desde esta página de los documentos de usuario final de Intune. También podrán encontrar esta información en la pantalla Acerca de.
+Hemos agregado **Tipo de propiedad** a la pantalla Detalles del dispositivo en la aplicación Portal de empresa para iOS. Esto permitirá que los usuarios obtengan más información sobre privacidad directamente desde esta página de los documentos de usuario final de Intune. También podrán encontrar esta información en la pantalla Acerca de.
 
 ### <a name="allow-end-users-to-access-the-company-portal-app-for-android-without-enrollment----1169910---"></a>Permitir que los usuarios finales accedan a la aplicación Portal de empresa para Android sin inscripción <!---1169910--->
 
@@ -1154,7 +1154,7 @@ Intune ya permite restringir la inscripción de Android e iOS por número de ver
 ### <a name="restrict-android-ios-and-macos-device-personally-owned-device-enrollment-----1333272-1333275-1245709---"></a>Restricción de la inscripción de dispositivos de propiedad personal Android, iOS y macOS  <!--- 1333272,  1333275, 1245709 --->
 Intune puede restringir la inscripción de dispositivos personales al incluir los números IMEI de los dispositivos corporativos en la lista aprobada. Intune ha ampliado esta funcionalidad para iOS, Android y macOS con números de serie del dispositivo. Al cargar los números de serie en Intune, puede declarar los dispositivos como de propiedad corporativa. Con las restricciones de inscripción puede bloquear los dispositivos de propiedad personal (BYOD), lo que permitirá la inscripción de dispositivos de propiedad corporativa únicamente. Obtenga más información sobre las [restricciones de inscripción de dispositivos](enrollment-restrictions-set.md).
 
-Para importar números de serie, vaya a **Inscripción de dispositivos** > **Identificadores de dispositivo corporativos** y haga clic en **Agregar**; luego, cargue un archivo .CSV (sin encabezado, dos columnas para el número de serie y detalles como los números IMEI).  Para restringir dispositivos de propiedad personal, vaya a **Inscripción de dispositivos** > **Restricciones de inscripción**. En **Restricciones de tipo de dispositivo**, seleccione **Predeterminado** y luego **Configuraciones de plataforma**. Puede **Permitir** o **Bloquear** dispositivos de propiedad personal iOS, Android y macOS. 
+Para importar números de serie, vaya a **Inscripción de dispositivos** > **Identificadores de dispositivo corporativos** y haga clic en **Agregar**; luego, cargue un archivo .CSV (sin encabezado, dos columnas para el número de serie y detalles como los números IMEI). Para restringir dispositivos de propiedad personal, vaya a **Inscripción de dispositivos** > **Restricciones de inscripción**. En **Restricciones de tipo de dispositivo**, seleccione **Predeterminado** y luego **Configuraciones de plataforma**. Puede **Permitir** o **Bloquear** dispositivos de propiedad personal iOS, Android y macOS.
 
 
 ### <a name="new-device-action-to-force-devices-to-sync-with-intune----711369---"></a>Nueva acción de dispositivo para forzar la sincronización de los dispositivos con Intune <!-- 711369 -->

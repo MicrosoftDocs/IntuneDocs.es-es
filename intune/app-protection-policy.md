@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: d974e6db3543ef3ba0b11cf67989260e429dde4c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 785f4d1d81858fe5d4ebe4feab72880b408d8cd3
+ms.sourcegitcommit: 0499d16db961aaed4bd134ee924e40c5861121c7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179174"
+ms.lasthandoff: 11/27/2018
+ms.locfileid: "52389876"
 ---
 # <a name="what-are-app-protection-policies"></a>¿Qué son las directivas de protección de aplicaciones?
 
@@ -66,9 +66,9 @@ Hay otras ventajas derivadas del uso de MDM con directivas de protección de apl
 
 
 ### <a name="supported-platforms-for-app-protection-policies"></a>Plataformas admitidas para directivas de protección de aplicaciones
-La compatibilidad de plataformas de directivas de aplicaciones de Intune está alineada con la compatibilidad de plataformas de aplicaciones móviles de Office. Para obtener más información, consulte la sección **Aplicaciones móviles** de [Requisitos del sistema de Office](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg).
+La compatibilidad de plataformas de directivas de aplicaciones de Intune está alineada con la compatibilidad de plataformas de aplicaciones móviles de Office para dispositivos Android e iOS. Para obtener más información, consulte la sección **Aplicaciones móviles** de [Requisitos del sistema de Office](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg).
 
-Los dispositivos Windows no son compatibles actualmente. En cambio, cuando inscribe los dispositivos Windows 10 en Intune, puede usar Windows Information Protection, ya que ofrece una funcionalidad similar. Para obtener más información, vea [Protege los datos de su empresa con Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
+Los dispositivos Windows no son compatibles actualmente. Sin embargo, puede usar Windows Information Protection, que ofrece una funcionalidad similar. Para obtener más información, vea [Protege los datos de su empresa con Windows Information Protection (WIP)](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-wip).
 
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>Protección de datos de una aplicación con directivas de protección de aplicaciones
@@ -146,7 +146,9 @@ Si bien la directiva **Global** se aplica a todos los usuarios del inquilino, cu
 
 Las aplicaciones que admiten varias identidades permiten usar diferentes cuentas (profesionales y personales) para obtener acceso a las mismas aplicaciones, aunque las directivas de protección de aplicaciones se aplican solo cuando las aplicaciones se usen en el contexto laboral.
 
-Por ejemplo, piense en un usuario que inicia la aplicación OneDrive con su cuenta profesional. En el contexto de trabajo, no puede mover los archivos a una ubicación de almacenamiento personal. Más adelante, cuando usa OneDrive con su cuenta personal, puede copiar y mover los datos de su OneDrive personal sin restricciones.
+Como ejemplo de contexto personal, piense en un usuario que empieza un documento nuevo en Word: esto se considera contexto personal por lo que no se aplican las directivas Intune App Protection. Una vez que el documento se guarda en la cuenta corporativa de OneDrive, se le considerará como contexto corporativo y se aplicarán las directivas Intune App Protection.
+
+Como ejemplo de contexto de trabajo, piense en un usuario que inicia la aplicación OneDrive con su cuenta profesional. En el contexto de trabajo, no puede mover los archivos a una ubicación de almacenamiento personal. Más adelante, cuando usa OneDrive con su cuenta personal, puede copiar y mover los datos de su OneDrive personal sin restricciones.
 
 - Obtenga más información sobre las aplicaciones que admiten [MAM y varias identidades](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) con Intune.
 
@@ -154,5 +156,5 @@ Por ejemplo, piense en un usuario que inicia la aplicación OneDrive con su cuen
 
 [Creación e implementación de directivas de protección de aplicaciones con Microsoft Intune](app-protection-policies.md)
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 Las aplicaciones de terceros, como la aplicación móvil de Salesforce, funcionan con Intune de formas específicas para proteger los datos corporativos. Para más información sobre cómo la aplicación de Salesforce funciona con Intune en particular (incluida la configuración de la aplicación de MDM), vea [Salesforce App and Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf) (Aplicación de Salesforce y Microsoft Intune).

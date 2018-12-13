@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 12c48a00e4b755409b698d5f2ee6182403802f23
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c556bab6deadc0db0ea625ee3c26bba636ea497d
+ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190411"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52829188"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guía para desarrolladores de Android acerca del SDK para aplicaciones de Microsoft Intune
 
@@ -632,34 +632,22 @@ No se tienen que configurar valores de manifiesto adicionales.
 
 2. **La aplicación integra ADAL:**
 
-    |Parámetro obligatorio de ADAL| Value |
+    |Parámetro obligatorio de ADAL| Valor |
     |--|--|
     | ClientID | ClientID de la aplicación (que Azure AD genera cuando se registra la aplicación) |
     | SkipBroker | False |
 
 Se pueden especificar los valores de Authority y NonBrokerRedirectURI si resulta necesario.
 
-Registre la aplicación con Azure AD mediante los pasos siguientes.
-
-En Azure Portal:
-1.  Vaya a la hoja **Azure Active Directory**.
-2.  Seleccione la configuración **Registros de aplicaciones** para la aplicación.
-3.  En **Configuración**, bajo el encabezado **Acceso de API**, seleccione **Permiso necesario**. 
-4.  Haga clic en **+ Agregar**.
-5.  Haga clic en **Seleccionar una API**. 
-6.  En el cuadro de búsqueda, escriba **Microsoft Mobile Application Management**.
-7.  Seleccione **Administración de aplicaciones móviles de Microsoft** en la lista de API y haga clic en Seleccionar.
-8.  Seleccione **Read and Write the User’s App Management Data** (Leer y escribir datos de administración de aplicaciones del usuario).
-9.  Haga clic en **Listo**.
-10. Haga clic en **Conceder permisos** y después haga clic en **Sí**. 
-
-Consulte [este artículo](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) para obtener información sobre cómo registrar una aplicación con Azure AD. 
+Registre la aplicación con Azure AD mediante los pasos siguientes:
+* Consulte [este artículo](https://docs.microsoft.com/azure/active-directory/develop/active-directory-integrating-applications) para obtener información sobre cómo registrar una aplicación con Azure AD. 
+* Asegúrese de que se siguen los pasos para conceder los permisos de aplicación de Android para el servicio Directiva de protección de aplicaciones (APP). Siga las instrucciones de la [guía de introducción al SDK de Intune](https://docs.microsoft.com/intune/app-sdk-get-started#next-steps-after-integration) sobre cómo conceder acceso al servicio Intune App Protection (opcional). 
 
 Consulte también más adelante los requisitos para el [acceso condicional](#conditional-access).
 
 3. **La aplicación integra ADAL pero no admite la autenticación intermediada/SSO en todo el dispositivo:**
 
-    |Parámetro obligatorio de ADAL| Value |
+    |Parámetro obligatorio de ADAL| Valor |
     |--|--|
     | ClientID | ClientID de la aplicación (que Azure AD genera cuando se registra la aplicación) |
     | SkipBroker | **True** |

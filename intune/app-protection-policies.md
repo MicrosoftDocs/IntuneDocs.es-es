@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/30/2018
+ms.date: 11//28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2e0331210a10727ff5753e6c227777cd1ebb16d9
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2a5b16e828b1a2e680f41f50aa603b1bfe2ad9fa
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185978"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728827"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Creación y asignación de directivas de protección de aplicaciones
 
@@ -74,10 +74,14 @@ Las directivas creadas no se implementan para los usuarios hasta que no se haga 
 
    ![Captura de pantalla del panel Asignaciones con la opción Seleccionar grupos para incluir resaltada](./media/app-protection-policy-add-users.png)
 
-3.  Se muestra una lista de todos los grupos de seguridad en su entorno de **Azure Active Directory**. Seleccione los grupos de usuarios a los que quiera aplicar esta directiva y, después, elija **Seleccionar**. Al elegir **Seleccionar**, la directiva se implementa para los usuarios.
+3.  Se muestra una lista de todos los grupos de seguridad en su entorno de **Azure Active Directory**. Seleccione los grupos de usuarios a los que quiera aplicar esta directiva y, después, elija **Seleccionar**. 
 
     ![Captura de pantalla del panel Add user group (Agregar grupo de usuarios) que muestra la lista de usuarios de Azure Active Directory](./media/azure-ad-user-group-list.png)
 
+4.  Después de incluir y excluir grupos, seleccione **Guardar** para guardar la configuración e implementar la directiva en los usuarios. Si seleccione **Descartar** antes de guardar la configuración, se descartarán todos los cambios realizados en las pestañas *Incluir* y *Excluir*.   
+ 
+     ![Captura de pantalla que muestra las opciones Guardar y Descartar](./media/save-assignment.png)
+  
 De esta forma, habrá creado una directiva y la habrá implementado en los usuarios.
 
 La directiva solo afecta a los usuarios con licencias asignadas de Microsoft Intune. Los usuarios del grupo de seguridad seleccionado que no tengan asignada una licencia de Intune no se verán afectados.
@@ -85,7 +89,7 @@ La directiva solo afecta a los usuarios con licencias asignadas de Microsoft Int
 >[!IMPORTANT]
 > Si usa Intune con Administrador de configuración para administrar los dispositivos, la directiva solo se aplicará a los usuarios que estén directamente en el grupo seleccionado. Los miembros de grupos secundarios anidados en el grupo seleccionado no se verán afectados.
 
-Los usuarios finales pueden descargar las aplicaciones desde App Store o Google Play. Para obtener más información, consulte:
+Los usuarios finales pueden descargar las aplicaciones desde App Store o Google Play. Para obtener más información, vea:
 * [What to expect when your Android app is managed by app protection policies](app-protection-enabled-apps-android.md) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)
 * [What to expect when your iOS app is managed by app protection policies](app-protection-enabled-apps-ios.md) (Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones)
 
@@ -109,9 +113,13 @@ Para ver el efecto de los cambios inmediatamente, el usuario final debe cerrar s
 
 2.  En el panel *Intune App Protection*, seleccione **Asignaciones** para abrir el panel **Intune App Protection: Asignaciones** que muestra la lista de los grupos de usuarios actuales que tienen esta directiva.
 
-3.  Para agregar un nuevo grupo de usuarios a la directiva, en la pestaña **Incluir**, elija **Seleccionar grupos para incluir** y seleccione el grupo de usuarios. Elija **Seleccionar** para implementar la directiva en el grupo seleccionado.
+3.  Para agregar un nuevo grupo de usuarios a la directiva, en la pestaña *Incluir*, elija **Seleccionar grupos para incluir** y seleccione el grupo de usuarios. Elija **Seleccionar** para agregar el grupo. 
 
-4.  Para eliminar un grupo de usuarios, en la pestaña **Excluir**, elija **Seleccionar grupos para excluir** y seleccione el grupo de usuarios. Elija **Seleccionar** para quitar el grupo de usuarios.
+4.  Para excluir un grupo de usuarios, en la pestaña *Excluir*, elija **Seleccionar grupos para excluir** y seleccione el grupo de usuarios. Elija **Seleccionar** para quitar el grupo de usuarios.  
+
+5.  Para eliminar los grupos que se agregaron anteriormente, ya sea en la pestaña *Incluir* o en la pestaña *Excluir*, seleccione los puntos suspensivos (...) y seleccione **Eliminar**. 
+
+5.  Una vez que estén listos los cambios en las asignaciones, seleccione **Guardar** para guardar la configuración e implementar la directiva en el nuevo conjunto de usuarios. Si seleccione **Descartar** antes de guardar la configuración, se descartarán todos los cambios realizados en las pestañas *Incluir* y *Excluir*.
 
 ### <a name="to-change-policy-settings"></a>Para cambiar la configuración de directiva
 
@@ -149,6 +157,6 @@ Para ver una lista completa de las configuraciones de directivas para iOS y Andr
 ## <a name="next-steps"></a>Pasos siguientes
 [Supervisar el estado del cumplimiento y del usuario](app-protection-policies-monitor.md)
 
-### <a name="see-also"></a>Consulta también
+### <a name="see-also"></a>Vea también
 * [What to expect when your Android app is managed by app protection policies](app-protection-enabled-apps-android.md) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)
 * [What to expect when your iOS app is managed by app protection policies](app-protection-enabled-apps-ios.md) (Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones)

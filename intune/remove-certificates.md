@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: dabd5b6ca2f8bb01421c24cb7c16ab57cf59ef56
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 06b568ee7cc2dc55a8d44cf04b96078b47d8c4b3
+ms.sourcegitcommit: 77a1047f5d93c1924e5c9ea243454532881be031
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180993"
+ms.lasthandoff: 11/28/2018
+ms.locfileid: "52579173"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>Eliminación de certificados SCEP y PKCS en Microsoft Intune
 
@@ -43,8 +43,7 @@ En este artículo se muestran algunos casos comunes y el impacto en los certific
   - Un administrador ejecuta la acción de [borrar](devices-wipe.md#wipe)
   - Un administrador ejecuta la acción de [retirar](devices-wipe.md#retire)
   - El dispositivo se quita del grupo de Azure Active Directory (AD)
-  - La directiva de cumplimiento se quita de la asignación de grupo
-  - El perfil de configuración se quita de la asignación de grupo
+  - El perfil de certificación se quita de la asignación de grupo
 
 - Un certificado SCEP se revoca cuando:
   - El administrador cambia o actualiza el perfil SCEP
@@ -53,7 +52,6 @@ En este artículo se muestran algunos casos comunes y el impacto en los certific
   - Un usuario final anula su inscripción
   - Un administrador ejecuta la acción de [borrar](devices-wipe.md#wipe)
   - Un administrador ejecuta la acción de [retirar](devices-wipe.md#retire)
-  - La directiva de cumplimiento se quita de la asignación de grupo
 
 - Los certificados SCEP **permanecen** en el dispositivo (es decir, no se revocan ni se quitan) cuando:
   - Un usuario final pierde la licencia de Intune
@@ -78,8 +76,7 @@ En este artículo se muestran algunos casos comunes y el impacto en los certific
   - El administrador retira la licencia de Intune
   - El administrador elimina el usuario o el grupo de Azure AD
   - El administrador cambia o actualiza el perfil PKCS
-  - El perfil de configuración se quita de la asignación de grupo
-  - La directiva de cumplimiento se quita de la asignación de grupo 
+  - El perfil de certificación se quita de la asignación de grupo
 
 
 ## <a name="ios-devices"></a>Dispositivos iOS
@@ -92,8 +89,7 @@ En este artículo se muestran algunos casos comunes y el impacto en los certific
   - Un administrador ejecuta la acción de [borrar](devices-wipe.md#wipe)
   - Un administrador ejecuta la acción de [retirar](devices-wipe.md#retire)
   - El dispositivo se quita del grupo de Azure Active Directory (AD)
-  - La directiva de cumplimiento se quita de la asignación de grupo
-  - El perfil de configuración se quita de la asignación de grupo
+  - El perfil de certificación se quita de la asignación de grupo
 
 - Un certificado SCEP se revoca cuando:
   - El administrador cambia o actualiza el perfil SCEP
@@ -102,7 +98,6 @@ En este artículo se muestran algunos casos comunes y el impacto en los certific
   - Un usuario final anula su inscripción
   - Un administrador ejecuta la acción de [borrar](devices-wipe.md#wipe)
   - Un administrador ejecuta la acción de [retirar](devices-wipe.md#retire)
-  - La directiva de cumplimiento se quita de la asignación de grupo
 
 - Los certificados SCEP **permanecen** en el dispositivo (es decir, no se revocan ni se quitan) cuando:
   - Un usuario final pierde la licencia de Intune
@@ -118,8 +113,7 @@ En este artículo se muestran algunos casos comunes y el impacto en los certific
   - Un administrador ejecuta la acción de [retirar](devices-wipe.md#retire)
 
 - Un certificado PKCS se elimina cuando:
-  - La directiva de cumplimiento se quita de la asignación de grupo
-  - El perfil de configuración se quita de la asignación de grupo
+  - El perfil de certificación se quita de la asignación de grupo
   
 - Un certificado raíz se elimina cuando:
   - Un usuario final anula su inscripción
@@ -143,8 +137,7 @@ En este artículo se muestran algunos casos comunes y el impacto en los certific
 - Un certificado SCEP se revoca cuando:
   - Un administrador ejecuta la acción de [retirar](devices-wipe.md#retire)
   - El dispositivo se quita del grupo de Azure Active Directory (AD)
-  - La directiva de cumplimiento se quita de la asignación de grupo
-  - El perfil de configuración se quita de la asignación de grupo
+  - El perfil de certificación se quita de la asignación de grupo
   - El administrador elimina el usuario o el grupo de Azure Active Directory (AD)
   - El administrador cambia o actualiza el perfil SCEP
 
@@ -176,8 +169,7 @@ En este artículo se muestran algunos casos comunes y el impacto en los certific
   - El administrador retira la licencia de Intune
   - El administrador elimina el usuario o el grupo de Azure AD
   - El administrador cambia o actualiza el perfil PKCS
-  - El perfil de configuración se quita de la asignación de grupo
-  - La directiva de cumplimiento se quita de la asignación de grupo 
+  - El perfil de certificación se quita de la asignación de grupo
   
   
 > [!NOTE]
@@ -191,8 +183,7 @@ En este artículo se muestran algunos casos comunes y el impacto en los certific
   - Un usuario final anula su inscripción
   - Un administrador ejecuta la acción de [retirar](devices-wipe.md#retire)
   - El dispositivo se quita del grupo de Azure Active Directory (AD)
-  - La directiva de cumplimiento se quita de la asignación de grupo
-  - El perfil de configuración se quita de la asignación de grupo
+  - El perfil de certificación se quita de la asignación de grupo
 
 - Un certificado SCEP se revoca cuando:
   - El administrador cambia o actualiza el perfil SCEP

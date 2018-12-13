@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7552c9c1fa8e94560505a8971143886160cff6ce
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 574bc38fb9ce47d2b051a74f3f931139c0de7224
+ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185967"
+ms.lasthandoff: 12/01/2018
+ms.locfileid: "52728844"
 ---
 # <a name="kiosk-settings-for-windows-10-and-later-in-intune"></a>Configuración de quiosco para Windows 10 (y versiones posteriores) en Intune
 
@@ -39,7 +39,7 @@ Intune admite un perfil de quiosco por dispositivo. Si necesita varios perfiles 
    - **Plataforma**: seleccione **Windows 10 y versiones posteriores**.
    - **Tipo de perfil**: seleccione **Quiosco (versión preliminar)**.
 
-4. Seleccione un **modo de quiosco**. **Modo de quiosco**: identifica el tipo de modo de quiosco admitido por la directiva. Las opciones incluyen:
+4. Seleccione un **modo de quiosco**. **Modo de quiosco**: identifica el tipo de modo de quiosco admitido por la directiva. Las opciones son:
 
     - **No configurado** (valor predeterminado): la directiva no habilita la pantalla completa.
     - **Quiosco de pantalla completa de una única aplicación**: el dispositivo se ejecuta como una cuenta de usuario único y la bloquea para una única aplicación de la Tienda. Así que cuando el usuario inicia sesión, se inicia una aplicación concreta. Este modo también evita que el usuario abra nuevas aplicaciones o modifique la aplicación en ejecución.
@@ -200,3 +200,5 @@ Las aplicaciones en este modo están disponibles en el menú Inicio. Estas aplic
 
 ## <a name="next-steps"></a>Pasos siguientes
 [Asigne el perfil](device-profile-assign.md) y [supervise el estado](device-profile-monitor.md).
+
+También puede crear perfiles de pantalla completa para dispositivos [Android](device-restrictions-android.md#kiosk) y [Android Enterprise](device-restrictions-android-for-work.md#kiosk-settings).
