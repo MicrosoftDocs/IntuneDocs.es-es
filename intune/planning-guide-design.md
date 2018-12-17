@@ -1,5 +1,5 @@
 ---
-title: Creación de un diseño
+title: Crear el diseño de Microsoft Intune
 titlesuffix: Microsoft Intune
 description: Este artículo le ayuda a crear un diseño para una implementación y diseño solo en la nube de Microsoft Intune.
 keywords: ''
@@ -15,13 +15,13 @@ ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
-ms.custom: ''
-ms.openlocfilehash: 1d8ccd4e432623cf7d0ce4ce66651a95e13b8473
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: f0159b4d33112e507556ceb53505eedc57ec05f7
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186501"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112993"
 ---
 # <a name="create-a-design"></a>Creación de un diseño
 
@@ -211,7 +211,7 @@ Puede [descargar una plantilla de la tabla anterior](https://gallery.technet.mic
 
 Intune admite dispositivos de propiedad corporativa y personal. Un dispositivo se considera de propiedad corporativa si está inscrito por un administrador de inscripción de dispositivos o por un programa de inscripción de dispositivos. Por ejemplo, un dispositivo se inscribe mediante el Programa de Inscripción de Dispositivos (DEP) de Apple, se marca como corporativo y se coloca en un grupo de dispositivos que recibe aplicaciones y directivas corporativas de destino.
 
-Vea la [Sección 3: Determinación de los requisitos de los escenarios de casos de uso](planning-guide-requirements.md) para obtener más información sobre los casos de uso BYOD y de la empresa.
+Consulte la [Sección 3: Determinación de los requisitos de los escenarios de casos de uso](planning-guide-requirements.md) para obtener más información sobre los casos de uso BYOD y de la empresa.
 
 ### <a name="bulk-enrollment"></a>Inscripción masiva
 
@@ -257,8 +257,8 @@ Debe crear al menos una directiva de configuración por plataforma. Puede crear 
 
 | **Nombre de la directiva** | **Plataforma de dispositivo** | **Configuración** | **Grupo de destino** |   
 |:---:|:---:|:---:|:---:|
-| Corporativo: iOS | iOS | Se necesita PIN, longitud: 6, restringir copia de seguridad en la nube | Dispositivos corporativos |                                                           
-| Corporativo: Android | Android | Se necesita PIN, longitud: 6, restringir copia de seguridad en la nube | Dispositivos corporativos |                                                           
+| Corporativo: iOS | iOS | Se necesita PIN, longitud: 6, Restringir la copia de seguridad en la nube | Dispositivos corporativos |                                                           
+| Corporativo: Android | Android | Se necesita PIN, longitud: 6, Restringir la copia de seguridad en la nube | Dispositivos corporativos |                                                           
 | BYOD: iOS  | iOS | Se necesita PIN, longitud: 4 | Dispositivos BYOD |
 | BYOD: Android  | Android | Se necesita PIN, longitud: 4 | Dispositivos BYOD |
 
@@ -377,8 +377,8 @@ Las directivas de protección de aplicaciones minimizan la pérdida de datos def
 
 | **Aplicación** | **Finalidad** | **Plataformas** | **Caso de uso** | **Directiva de protección de aplicaciones** |
 |:---:|:---:|:---:|:---:|:---:|
-| Outlook Mobile  | Disponible | iOS | Corporativo: ejecutivos | No puede descodificarse, archivos cifrados |                                                         
-| Word | Disponible | iOS, Android - Samsung Knox, no-Knox, Windows 10 Mobile | Corporativo, BYOD | No puede descodificarse, archivos cifrados |                                                         
+| Outlook Mobile  | Available | iOS | Corporativo: ejecutivos | No puede descodificarse, archivos cifrados |                                                         
+| Word | Available | iOS, Android - Samsung Knox, no-Knox, Windows 10 Mobile | Corporativo, BYOD | No puede descodificarse, archivos cifrados |                                                         
 
 
 Puede [descargar una plantilla de la tabla anterior](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar los requisitos de la directiva de protección de aplicaciones.
@@ -402,7 +402,7 @@ El acceso condicional se usa para permitir que solo los dispositivos compatibles
 
 Para el acceso en línea, decida a qué plataformas y a qué grupos de usuarios se dirigirán las directivas de acceso condicional. Además, determine si necesita instalar o configurar el conector de servicio a servicio de Intune para Exchange Online o Exchange local. Obtenga más información sobre cómo instalar y configurar los conectores de servicio a servicio de Intune: <!---these links are correct--->
 
--   [Exchange Online](/intune-classic/deploy-use/intune-service-to-service-exchange-connector)
+-   [Exchange Online](exchange-service-connector-configure.md)
 
 -   [Exchange local](exchange-connector-install.md)
 

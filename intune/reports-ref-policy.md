@@ -1,12 +1,12 @@
 ---
-title: Directiva de
+title: Referencia de entidades de directivas
 titlesuffix: Microsoft Intune
 description: Tema de referencia sobre la categoría Directiva de las colecciones de entidades de la API de Almacenamiento de datos de Intune.
 keywords: Almacenamiento de datos de Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.technology: ''
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: 046dbe79dbaaee7de97fc83b80c40d5bf902c931
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 9fb05991b3e289d4a24cc2f3a5b2c398c12b1a15
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183509"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032442"
 ---
 # <a name="reference-for-policy-entities"></a>Referencia de entidades de directivas
 
@@ -31,7 +31,7 @@ La categoría **Directiva** contiene entidades para dispositivos móviles que re
   -  Número de usuarios con estado correcto, estado pendiente, estado con errores o estado de error por día  
   -  Número acumulado de dispositivos con estado correcto, estado pendiente, estado con errores o estado de error  
 
-## <a name="policy"></a>Directiva de
+## <a name="policy"></a>Directiva
 
 La entidad **Policy** muestra los perfiles de configuración de dispositivos, los perfiles de configuración de aplicaciones y las directivas de cumplimiento. Puede asignar las directivas con Administración de dispositivos móviles (MDM) a un grupo de la empresa.
 
@@ -41,7 +41,7 @@ La entidad **Policy** muestra los perfiles de configuración de dispositivos, lo
 | PolicyId |Identificador único de la directiva en el almacenamiento de datos. |b66bc706-ffff-7437-0340-032819502773 |
 | PolicyName |Nombre de la directiva. |"Línea base de Windows 10" |
 | PolicyVersion |Versión de la directiva. Cuando la directiva se modifica o se cambia, se crea una versión más reciente. |1, 2, 3 |
-| IsDeleted |Indica si se ha actualizado el registro de la directiva.  <br>True: la directiva tiene un nuevo registro con campos actualizados. <br>False: registro más reciente de la directiva. |Verdadero o falso |
+| IsDeleted |Indica si se ha actualizado el registro de la directiva.  <br>True: la directiva tiene un nuevo registro con campos actualizados. <br>False: registro más reciente de la directiva. |Verdadero/Falso |
 | StartDateInclusiveUTC |Fecha y hora en formato UTC en que se ha creado la directiva en el almacenamiento de datos. |23/11/2016 12:00:00 AM |
 | DeletedDateUTC |Fecha y hora en formato UTC en que IsDeleted ha cambiado a True. |23/11/2016 12:00:00 AM |
 | RowLastModifiedDateTimeUTC |Fecha y hora en formato UTC en que se ha modificado por última vez la directiva en el almacenamiento de datos. |23/11/2016 12:00:00 AM |

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/12/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f835f2bd2802454bbcdb27251524dfa4d2400f1a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e26de8691e78e4b35e8618c48f38c7972af233f8
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52178385"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977310"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Supervisión de las directivas de cumplimiento de dispositivos Intune
 
@@ -58,23 +58,26 @@ Al profundizar en este informe, también se pueden ver las directivas de cumplim
 
 En el gráfico se muestran los estados de cumplimiento para todos los dispositivos inscritos en Intune. Los estados de cumplimiento de dispositivos se mantienen en dos bases de datos diferentes: Intune y Azure Active Directory. 
 
+> [!IMPORTANT]
+> Intune sigue el programa de inserción en el repositorio del dispositivo para todas las evaluaciones de cumplimiento del dispositivo. [Obtenga más información sobre el programa de inserción en el repositorio del dispositivo](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
+
 Descripciones de los estados de directiva de cumplimiento de dispositivos:
 
 - **Conforme**: el dispositivo aplicó correctamente una o varias configuraciones de directivas de cumplimiento de dispositivos.
 
-- **En período de gracia**: el dispositivo se selecciona como destino con una o varias configuraciones de directivas de cumplimiento de dispositivos. Pero el usuario todavía no ha aplicado las directivas. Esto significa que el dispositivo es no conforme, pero se encuentra en el período de gracia definido por el administrador.
+- **En período de gracia:** el dispositivo se selecciona como destino con una o varias configuraciones de directivas de cumplimiento de dispositivos. Pero el usuario todavía no ha aplicado las directivas. Esto significa que el dispositivo es no conforme, pero se encuentra en el período de gracia definido por el administrador.
 
   - Obtenga más información sobre las [acciones disponibles para los dispositivos que no cumplen las directivas](actions-for-noncompliance.md).
 
 - **Sin evaluar**: un estado inicial para los dispositivos recién inscritos. O bien, los dispositivos que no tienen asignada la directiva de cumplimiento y no tienen un desencadenador para comprobar su cumplimiento.
 
-- **No conforme**: el dispositivo no pudo aplicar una o varias configuraciones de directivas de cumplimiento de dispositivos. O bien, el usuario no ha cumplido las directivas.
+- **No conforme:** el dispositivo no pudo aplicar una o varias configuraciones de directivas de cumplimiento de dispositivos. O bien, el usuario no ha cumplido las directivas.
 
-- **Dispositivo no sincronizado**: el dispositivo no pudo informar del estado de las directivas de cumplimiento de dispositivos por uno de los siguientes motivos:
+- **No se sincroniza el dispositivo:** el dispositivo no pudo informar del estado de las directivas de cumplimiento de dispositivos por uno de los siguientes motivos:
 
   - **Desconocido**: el dispositivo está sin conexión o no se pudo comunicar con Intune o Azure AD por otras razones.
 
-  - **Error**: el dispositivo no pudo comunicarse con Intune y Azure AD, y recibe un mensaje de error con el motivo.
+  - **Error**: el dispositivo no pudo comunicarse con Intune y Azure AD, y recibió un mensaje de error con el motivo.
 
 > [!IMPORTANT]
 > Los dispositivos que están inscritos en Intune, pero no seleccionados como destino de ninguna directiva de cumplimiento de dispositivos, se incluyen en este informe, en el depósito **Conforme**.

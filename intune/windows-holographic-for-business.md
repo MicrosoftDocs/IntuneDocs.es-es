@@ -5,22 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/19/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: fd99a168747bd4a0f5852404e767d658b8400ba2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-azure, seodec18
+ms.openlocfilehash: 062adf12f743fdbbe42c1f29e91f2a16414ca457
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180840"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032272"
 ---
-# <a name="manage-and-use-windows-holographic-and-hololens-devices-with-intune"></a>Administración y uso de los dispositivos Windows Holographic y HoloLens con Intune
+# <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Administre y use diferentes características de administración de dispositivos en los dispositivos Windows Holographic y HoloLens con Intune
 
 Microsoft Intune incluye muchas características que ayudan a administrar los dispositivos que ejecutan Windows Holographic for Business, como [Microsoft HoloLens](https://docs.microsoft.com/hololens/). Con Intune, puede confirmar que los dispositivos cumplen con las reglas de su organización, y puede personalizar el dispositivo mediante la adición de un perfil de VPN o Wi-Fi. Otra característica importante es el uso del dispositivo como un quiosco, y ejecutar una aplicación específica o un conjunto determinado de aplicaciones.
 
@@ -32,11 +32,11 @@ Para usar los dispositivos de Windows Holographic con Intune, cree un perfil de 
 
 Azure Active Directory (AD) es un excelente recurso para ayudar a administrar y controlar los dispositivos que ejecutan Windows Holographic for Business. Con Intune y Azure AD, puede: 
 
-- **[Configurar dispositivos unidos a Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-setup)**: en Azure Active Directory (AD), puede agregar los dispositivos de Windows 10 de trabajo, incluidos aquellos que ejecutan Windows Holographic for Business. Esta característica permite a Azure AD controlar el dispositivo. Ayuda a confirmar que los usuarios acceden a los recursos de la empresa desde dispositivos que cumplen los estándares de seguridad y cumplimiento.
+- **[Combinar dispositivos en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/azureadjoin-plan)**: en Azure Active Directory (AD), puede agregar los dispositivos de Windows 10 de trabajo, incluidos aquellos que ejecutan Windows Holographic for Business. Esta característica permite a Azure AD controlar el dispositivo. Ayuda a confirmar que los usuarios acceden a los recursos de la empresa desde dispositivos que cumplen los estándares de seguridad y cumplimiento.
 
-  [Introducción a la administración de dispositivos en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction) proporciona más detalles.
+  [Administración de dispositivos en Azure AD](https://docs.microsoft.com/azure/active-directory/devices/overview) proporciona más detalles.
 
-- **[Inscribir dispositivos Windows de forma masiva](windows-bulk-enroll.md)**: puede unir una gran cantidad de nuevos dispositivos Windows a Azure Active Directory (AD) e Intune. Esta característica se denomina inscripción masiva y usa paquetes de aprovisionamiento. Estos paquetes unen los dispositivos que ejecutan Windows Holographic for Business al inquilino de Azure AD y los inscriben en Intune.
+- **[Inscripción masiva para dispositivos Windows](windows-bulk-enroll.md)**: puede unir una gran cantidad de dispositivos Windows nuevos a Azure Active Directory (AD) e Intune. Esta característica se denomina inscripción masiva y usa paquetes de aprovisionamiento. Estos paquetes unen los dispositivos que ejecutan Windows Holographic for Business al inquilino de Azure AD y los inscriben en Intune.
 
 ## <a name="company-portal"></a>Portal de empresa
 **[Configurar la aplicación Portal de empresa](company-portal-app.md)**
@@ -49,7 +49,6 @@ En la aplicación Portal de empresa, también puede realizar las acciones siguie
 - [Cambiar el nombre de un dispositivo](/intune-user-help/rename-your-device-cpapp)
 - [Instalar aplicaciones](/intune-user-help/install-apps-cpapp-windows) en un dispositivo
 - [Sincronizar dispositivos manualmente](/intune-user-help/sync-your-device-manually-windows) desde la aplicación Configuración o la aplicación Portal de empresa
-
 
 ## <a name="compliance-policy"></a>Directiva de cumplimiento
 **[Crear una directiva de cumplimiento de dispositivos](compliance-policy-create-windows.md)**
@@ -89,7 +88,7 @@ Cuando se usan dispositivos que ejecutan Windows Holographic for Business, se pu
 
 - **[Retirar](devices-wipe.md#retire)**: la acción **Retirar** quita el dispositivo de Intune. También quita los datos de las aplicaciones administradas, la configuración y los perfiles de correo electrónico asignados por Intune. Los datos personales del usuario permanecen en el dispositivo.
 
-- **[Sincronizar dispositivos para obtener las últimas directivas y acciones](device-sync.md)**: la acción **Sincronizar** fuerza al dispositivo a registrarse inmediatamente en Intune. Cuando un dispositivo se registra, recibe de inmediato las acciones o las directivas pendientes que se le han asignado. Esta característica ayuda a validar y a solucionar problemas de directivas que se le han asignado, sin tener que esperar al siguiente registro programado.
+- **[Sincronización de dispositivos para obtener las directivas y las acciones más recientes](device-sync.md)**: la acción **Sincronizar** fuerza al dispositivo a registrarse inmediatamente en Intune. Cuando un dispositivo se registra, recibe de inmediato las acciones o las directivas pendientes que se le han asignado. Esta característica ayuda a validar y a solucionar problemas de directivas que se le han asignado, sin tener que esperar al siguiente registro programado.
 
 **[¿Qué es la administración de dispositivos de Microsoft Intune?](device-management.md)** es un buen recurso para obtener información sobre la administración de dispositivos mediante Azure Portal. 
 

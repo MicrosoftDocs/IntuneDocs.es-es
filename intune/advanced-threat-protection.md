@@ -14,18 +14,18 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: de80092647462f83fb92303080239fd30198bd3c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 1b8d08e60b9cd656eb9467fd5289b9dfc428d183
+ms.sourcegitcommit: 67666682935c44ff6ad003c0da220a79cc42c9c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180241"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53168001"
 ---
 # <a name="enable-windows-defender-atp-with-conditional-access-in-intune"></a>Habilitación de ATP de Windows Defender con acceso condicional en Intune
 
 La Protección contra amenazas avanzada (ATP) de Windows Defender y Microsoft Intune funcionan conjuntamente para ayudar a evitar infracciones de seguridad y limitar el impacto de dichas infracciones dentro de una organización.
 
-Esta característica se aplica a los dispositivos Windows 10.
+Esta característica se aplica a: Dispositivos Windows 10
 
 Por ejemplo, alguien envía datos adjuntos de Word con código malintencionado insertado a un usuario dentro de su organización. El usuario abre los datos adjuntos y habilita el contenido. Se inicia un ataque con privilegios elevados y un atacante desde una máquina remota tiene derechos de administrador al dispositivo de la víctima. Después, el atacante, accede remotamente a otros dispositivos del usuario.
 
@@ -89,10 +89,10 @@ Una vez incorporado un dispositivo mediante el paquete de configuración, no es 
 5. En **Tipo de perfil**, seleccione **ATP de Windows Defender (Windows 10 Desktop)**.
 6. Defina la configuración:
 
-  - **Tipo de paquete de configuración del cliente de ATP de Windows Defender**: seleccione **Incorporar** para agregar el paquete de configuración al perfil. Seleccione **Cesar** para quitar el paquete de configuración del perfil.
+  - **Tipo de paquete de configuración del cliente ATP de Windows Defender**: seleccione **Incorporar** para agregar el paquete de configuración al perfil. Seleccione **Cesar** para quitar el paquete de configuración del perfil.
   
     > [!NOTE] 
-    > Si ha establecido correctamente una conexión con ATP de Windows Defender, Intune **incorporará** automáticamente el perfil de configuración.
+    > Si ha establecido correctamente una conexión con ATP de Windows Defender, Intune **incorporará** automáticamente el perfil de configuración, mientras que la configuración **Tipo de paquete de configuración del cliente ATP de Windows Defender** no estará disponible.
   
   - **Uso compartido de muestras para todos los archivos**: la opción **Habilitar** permite recopilar muestras y compartirlas con ATP de Windows Defender. Por ejemplo, si ve un archivo sospechoso, puede enviarlo a ATP de Windows Defender para un análisis profundo. **No configurado**: no se comparte ninguna muestra con ATP de Windows Defender.
   - **Frecuencia de informes de telemetría urgentes**: para los dispositivos que presentan un riesgo alto, **habilite** esta opción para informar de la telemetría al servicio de ATP de Windows Defender con más frecuencia.
@@ -110,10 +110,10 @@ La directiva de cumplimiento determina un nivel de riesgo aceptable en un dispos
 4. En **Plataforma**, seleccione **Windows 10 y versiones posteriores**.
 5. En la configuración de **ATP de Windows Defender**, establezca **Require the device to be at or under the machine risk score** (Requerir que el dispositivo tenga la puntuación de riesgo de máquina o esté por debajo de ella) en el nivel que prefiera:
 
-  - **Despejado**: este nivel es el más seguro. El dispositivo no puede tener ninguna amenaza existente y aún puede acceder a los recursos de la empresa. Si se encuentra alguna amenaza, el dispositivo se clasificará como no conforme.
+  - **Borrar**: este nivel es el más seguro. El dispositivo no puede tener ninguna amenaza existente y aún puede acceder a los recursos de la empresa. Si se encuentra alguna amenaza, el dispositivo se clasificará como no conforme.
   - **Bajo**: el dispositivo se evalúa como compatible si solo hay amenazas de nivel bajo. Los dispositivos con niveles de amenaza medio o alto no son compatibles.
   - **Medio**: el dispositivo se evalúa como compatible si las amenazas que se encuentran en él son de nivel bajo o medio. Si se detectan amenazas de nivel alto, se determinará que el dispositivo no es compatible.
-  - **Alto**: este nivel es el menos seguro, ya que permite que todos los niveles de amenaza. Por tanto, los dispositivos con niveles de amenaza alto, medio o bajo se consideran compatibles.
+  - **Alto**: este nivel es el menos seguro, ya que permite todos los niveles de amenaza. Por tanto, los dispositivos con niveles de amenaza alto, medio o bajo se consideran compatibles.
 
 6. Seleccione **Aceptar** y **Crear** para guardar los cambios (y crear la directiva).
 

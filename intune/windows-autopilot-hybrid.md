@@ -1,12 +1,12 @@
 ---
-title: Configuración de la inscripción de Intune para dispositivos unidos a Active Directory híbrido mediante Windows Autopilot
-titleSuffix: Microsoft Intune
-description: Use Windows Autopilot para inscribir dispositivos unidos a Active Directory híbrido en Intune.
+title: 'Inscripción para dispositivos unidos a Active Directory híbrido: Windows Autopilot'
+titleSuffix: ''
+description: Use Windows Autopilot para inscribir dispositivos unidos a Active Directory híbrido en Microsoft Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/2/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 77a0c3f3a2e1ed0ee2dbc652049bb7057c736010
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: ced67b2dcdd5720a9708868808ec885938b8ddcd
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189969"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112449"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Implementación de dispositivos unidos a Azure AD híbrido mediante Intune y Windows Autopilot (versión preliminar)
 Puede usar Intune y Windows Autopilot para configurar dispositivos unidos a Azure Active Directory híbrido. Para ello, siga estos pasos.
@@ -68,7 +68,7 @@ Los dispositivos que se inscriban también deben:
 
 El conector de Intune para Active Directory crea equipos inscritos con Autopilot en el dominio local de Active Directory. El equipo que hospeda el conector de Intune debe tener los derechos para crear objetos de equipo dentro del dominio. 
 
-En algunos dominios, los equipos no tienen derechos para crear equipos. O quizás los administradores no quieren aumentar el límite de cuenta de equipo en todo el dominio. En estos casos, se pueden delegar derechos a la unidad organizativa donde se crearon los dispositivos unidos a Azure AD híbrido.
+En algunos dominios, los equipos no tienen derechos para crear equipos. Además, los dominios tienen un límite integrado (valor predeterminado de 10) que se aplica a todos los usuarios y equipos que no son derechos delegados para crear Objetos de equipo. Por tanto, los derechos deben delegarse en equipos que hospedan el conector de Intune en la unidad organizativa donde se crean los dispositivos unidos a Hybrid Azure AD.
 
 La unidad organizativa que concedió el derecho a crear equipos debe coincidir con:
 - la unidad organizativa especificada en el perfil Unión a dominio
@@ -122,7 +122,7 @@ Es necesario instalar el conector de Intune para Active Directory en un equipo e
 
 ### <a name="configure-web-proxy-settings"></a>Establecer la configuración del proxy web
 
-Si tiene un proxy web en el entorno de red, siga estas instrucciones para que el conector de Intune para Active Directory funcione correctamente: [Trabajo con servidores proxy locales existentes](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers).
+Si tiene un proxy web en el entorno de red, siga estas instrucciones para que el conector de Intune para Active Directory funcione correctamente: [Trabaje con servidores proxy locales existentes](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers).
 
 
 ## <a name="create-a-device-group"></a>Creación de un grupo de dispositivos
@@ -201,7 +201,7 @@ El proceso para cambiar el estado del perfil de dispositivo de **No asignado** a
 1. En [Intune](https://aka.ms/intuneportal), seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
 2. Introduzca las siguientes propiedades:
    - **Nombre**: escriba un nombre descriptivo para el nuevo perfil.
-   - **Descripción**: escriba una descripción para el perfil
+   - **Descripción**: escriba una descripción para el perfil.
    - **Plataforma**: seleccione **Windows 10 y versiones posteriores**.
    - **Tipo de perfil**: elija **Unión a un dominio (vista previa)**.
 3. Elija **Configuración** y proporcione un **Prefijo de nombre de equipo**, **Nombre de dominio** y **Unidad organizativa** (opcional). 

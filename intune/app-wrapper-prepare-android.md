@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 74ef09c8979e6867d49c119668ad329570cee424
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 42b554f025f80546a0a2dd93de92549f2f037b3f
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189833"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112888"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicaciones Android para directivas de protección de aplicaciones con la herramienta de ajuste de aplicaciones de Intune
 
@@ -28,7 +28,7 @@ ms.locfileid: "52189833"
 
 Use la herramienta de ajuste de aplicaciones de Microsoft Intune para Android para modificar el comportamiento de las aplicaciones Android internas mediante la restricción de características de la aplicación sin modificar el código de la propia aplicación.
 
-La herramienta es una aplicación de línea de comandos de Windows que se ejecuta en PowerShell y crea un "contenedor" alrededor de la aplicación Android. Una vez que se encapsula la aplicación, puede cambiar su funcionalidad configurando [directivas de administración de aplicaciones móviles](/intune-classic/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console) en Intune.
+La herramienta es una aplicación de línea de comandos de Windows que se ejecuta en PowerShell y crea un "contenedor" alrededor de la aplicación Android. Una vez que se encapsula la aplicación, puede cambiar su funcionalidad configurando [directivas de administración de aplicaciones móviles](app-protection-policies.md) en Intune.
 
 
 Antes de ejecutar la herramienta, lea [Consideraciones de seguridad para ejecutar la herramienta de ajuste de aplicaciones](#security-considerations-for-running-the-app-wrapping-tool). Para descargar la herramienta, vaya a [Microsoft Intune App Wrapping Tool for Android](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android) en GitHub.
@@ -63,7 +63,7 @@ Antes de ejecutar la herramienta, lea [Consideraciones de seguridad para ejecuta
 
 2.  Acepte el contrato de licencia y finalice la instalación.
 
-Tome nota de la carpeta donde instala la herramienta. La ubicación predeterminada es C:\Archivos de programa (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool.
+Tome nota de la carpeta donde instala la herramienta. La ubicación predeterminada es: C:\Archivos de programa (x86)\Microsoft Intune Mobile Application Management\Android\App Wrapping Tool.
 
 ## <a name="run-the-app-wrapping-tool"></a>Ejecutar la herramienta de ajuste de aplicaciones
 
@@ -175,7 +175,7 @@ Estas instrucciones son específicas para todas las aplicaciones de Android y Xa
    > [!NOTE] 
    > Esto obliga al usuario a descargar el Portal de empresa en el dispositivo y completar el flujo de inscripción predeterminada antes de usarlo.
 
-### <a name="see-also"></a>Consulta también
+### <a name="see-also"></a>Vea también
 - [Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles mediante Microsoft Intune](apps-prepare-mobile-application-management.md)
 
 - [Guía para desarrolladores sobre el SDK de aplicaciones de Microsoft Intune para Android](app-sdk-android.md)

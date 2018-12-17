@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: a715fe518331d20b9a47d8374a37ce66ec59055d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c39faf6bb6a22cb861eb655edd6358b345b87c7e
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189326"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112772"
 ---
 # <a name="manage-software-updates-in-intune"></a>Administrar las actualizaciones de software en Intune
 
@@ -28,7 +28,7 @@ Windows como servicio es el método para actualizar los dispositivos Windows 10.
 
 Con Windows Update para empresas puede simplificar la experiencia de administración de actualizaciones. No es necesario que apruebe actualizaciones concretas para grupos de dispositivos. Para administrar el riesgo en sus entornos, puede configurar una estrategia de implementación de actualizaciones y Windows Update se asegurará de que las actualizaciones se instalen en el momento oportuno. Microsoft Intune ofrece la posibilidad de configurar las actualizaciones en los dispositivos y de aplazar su instalación. Intune no almacena las actualizaciones, sino únicamente la asignación de las directivas de actualización. Los dispositivos acceden a Windows Update directamente para las actualizaciones. Use Intune para configurar y administrar **círculos de actualizaciones de Windows 10**. Un anillo de actualización incluye un grupo de opciones que configuran cuándo y cómo se instalan las actualizaciones de Windows 10. Por ejemplo, puede configurar las siguientes opciones:
 
-- **Canal de servicio de Windows 10**: elija el canal de servicio desde el que quiere que los grupos de dispositivos reciban actualizaciones. Están disponibles los siguientes canales: 
+- **Windows 10 Servicing Channel**: elija el canal de servicio desde el que quiere que los grupos de dispositivos reciban actualizaciones. Están disponibles los siguientes canales: 
   - Canal semianual
   - Canal semianual (destino)
   - Windows Insider: Rápida
@@ -36,12 +36,12 @@ Con Windows Update para empresas puede simplificar la experiencia de administrac
   - Lanzamiento de Windows Insider 
       
   Para obtener información detallada sobre los canales de servicio disponibles, vea [Información general de Windows como servicio](https://docs.microsoft.com/windows/deployment/update/waas-overview#servicing-channels).
-- **Configuración de aplazamiento**: configure las opciones de aplazamiento de actualizaciones con el fin de retrasar la instalación de las actualizaciones para grupos de dispositivos. Puede usar esta configuración para organizar su implementación de actualización para poder revisar el progreso sobre la marcha.
+- **Valores de aplazamiento**: configure las opciones de aplazamiento de actualizaciones con el fin de retrasar la instalación de las actualizaciones para grupos de dispositivos. Puede usar esta configuración para organizar su implementación de actualización para poder revisar el progreso sobre la marcha.
 - **Pausar**: si hay algún problema durante la implementación de la actualización, puede posponer la instalación de la actualización. 
-- **Período de mantenimiento**: configure las horas en que se pueden instalar las actualizaciones.
+- **Ventana de mantenimiento**: configure las horas en que se pueden instalar las actualizaciones.
 - **Tipo de actualización**: elija los tipos de actualizaciones que se instalarán. Por ejemplo, de calidad, de características o de controladores.
-- **Comportamiento de instalación**: esta opción configura cómo se instalan las actualizaciones. Por ejemplo, si quiere que el dispositivo se reinicie automáticamente después de la instalación.
-- **Peer downloading** (Descarga del mismo nivel): puede optar por configurar la descarga del mismo nivel. Si lo hace, cuando un dispositivo ha terminado de descargar una actualización, otros dispositivos pueden descargar la actualización desde ese dispositivo. Esta opción acelera el proceso de descarga.
+- **Comportamiento de instalación**: configura cómo se instala la actualización. Por ejemplo, si quiere que el dispositivo se reinicie automáticamente después de la instalación.
+- **Descarga del mismo nivel**: puede optar por configurar la descarga del mismo nivel. Si lo hace, cuando un dispositivo ha terminado de descargar una actualización, otros dispositivos pueden descargar la actualización desde ese dispositivo. Esta opción acelera el proceso de descarga.
 
 Después de crear anillos de actualización, debe asignarnos a grupos de dispositivos. Gracias a ellos, puede crear una estrategia de actualización que refleje sus necesidades empresariales. Para obtener más información, consulte [Administrar actualizaciones con Windows Update para empresas](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb).
 
@@ -81,10 +81,10 @@ Después de crear anillos de actualización, debe asignarnos a grupos de disposi
    - **Canal de servicio**: establezca el canal desde el que el dispositivo recibe las actualizaciones de Windows.
    - **Actualizaciones de productos de Microsoft**: elija si quiere buscar actualizaciones de aplicaciones de Microsoft Update.
    - **Controladores de Windows**: elija si desea excluir los controladores de Windows Update durante las actualizaciones.
-   - **Comportamiento de actualización automática**: elija cómo se deben instalar las actualizaciones automáticas y cuándo se deben reiniciar. Para obtener más información, consulte la sección [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate).
-     - **Frecuencia de comportamiento automático**: si selecciona **Auto install and restart at scheduled time** (Instalar y reiniciar automáticamente a la hora programada) para el comportamiento de las actualizaciones, se mostrará esta opción. Use esta opción para programar cuándo se instalarán las actualizaciones (semana, día y hora).
+   - **Comportamiento de las actualizaciones automáticas**: elija cómo se deben instalar las actualizaciones automáticas y cuándo se deben reiniciar. Para obtener más información, consulte la sección [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate).
+     - **Frecuencia de comportamiento automático**: si selecciona **Instalar y reiniciar automáticamente a la hora programada** para el comportamiento de las actualizaciones, se mostrará esta opción. Use esta opción para programar cuándo se instalarán las actualizaciones (semana, día y hora).
 
-   - **Comprobaciones de reinicio**: opción habilitada de forma predeterminada. Al reiniciar un dispositivo se efectúan algunas comprobaciones, como la comprobación de los usuarios activos, los niveles de batería, los juegos de ejecución, etc. Para omitir estas comprobaciones al reiniciar un dispositivo, seleccione **Omitir**.
+   - **Reiniciar las comprobaciones**: Opción habilitada de forma predeterminada. Al reiniciar un dispositivo se efectúan algunas comprobaciones, como la comprobación de los usuarios activos, los niveles de batería, los juegos de ejecución, etc. Para omitir estas comprobaciones al reiniciar un dispositivo, seleccione **Omitir**.
 
    - **Período de aplazamiento de actualizaciones de calidad (días)**: indique el número de días que se aplazarán las actualizaciones de calidad. Puede aplazar la recepción de estas actualizaciones de calidad un máximo de 30 días a partir de su publicación.
 
@@ -94,11 +94,11 @@ Después de crear anillos de actualización, debe asignarnos a grupos de disposi
 
      Las actualizaciones de características suelen ser características nuevas de Windows. Después de configurar la opción **Canal de servicio**, puede definir si quiere aplazar la recepción de actualizaciones de características cuando estén disponibles en Windows Update, así como el tiempo que quiere aplazarla.
 
-     Por ejemplo, **si el canal de servicio está establecido en Canal semianual (dirigido) y el período de aplazamiento es de 30 días**, supongamos que la actualización de características X se publica inicialmente en Windows Update como Canal semianual (dirigido) en enero. El dispositivo no recibirá la actualización hasta febrero: 30 días más tarde.
+     Por ejemplo: **Si el canal de servicio se establece en Canal semianual (dirigido) y el período de aplazamiento es de 30 días**: supongamos que la actualización de características X está primero disponible de forma pública en Windows Update como Canal semianual (dirigido) en enero. El dispositivo no recibirá la actualización hasta febrero: 30 días más tarde.
 
-     **Si el canal de servicio se establece en Canal semianual y el período de aplazamiento es de 30 días**: supongamos que la actualización de características X se publica inicialmente en Windows Update como Canal semianual (dirigido) en enero. Cuatro meses más tarde, en abril, la actualización de características X se publicará en el Canal semianual. El dispositivo recibe la actualización de características 30 días después de esta publicación en el Canal semianual y se actualizará en mayo.
+     **Si el canal de servicio se establece en Canal semianual (dirigido) y el período de aplazamiento es de 30 días**: supongamos que la actualización de características X está primero disponible de forma pública en Windows Update como Canal semianual (dirigido) en enero. Cuatro meses más tarde, en abril, la actualización de características X se publicará en el Canal semianual. El dispositivo recibe la actualización de características 30 días después de esta publicación en el Canal semianual y se actualizará en mayo.
 
-   - **Modo de descarga de optimización de distribución**: elija el método por el que los dispositivos descargarán las actualizaciones de Windows. Para obtener más información, consulte [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
+   - **Modo de descarga de optimización de distribución**: elija el método por el que los dispositivos descargan las actualizaciones de Windows. Para obtener más información, consulte [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
 
 5. Cuando haya terminado, seleccione **Aceptar**. En **Crear anillo de actualización**, seleccione **Crear**.
 
@@ -131,16 +131,16 @@ Puede consultar la comprobación de actualizaciones en Intune o mediante una sol
 ### <a name="review-update-compliance-using-oms"></a>Revisar la comprobación de actualizaciones con OMS
 Puede supervisar las implementaciones de actualización de Windows 10 utilizando una solución gratuita llamada Update Compliance. Para obtener más información, consulte [Monitor Windows Updates with Update Compliance](https://technet.microsoft.com/itpro/windows/manage/update-compliance-monitor) (Supervisión de actualizaciones de Windows con Comprobación de actualizaciones). Cuando se utiliza esta solución, puede implementar un identificador comercial en cualquiera de sus dispositivos Windows 10 administrados con Intune para el que desea que se informe de la comprobación de actualizaciones.
 
-En Intune puede usar la configuración OMA-URI de una directiva personalizada para configurar el identificador comercial. Para obtener más información, consulte [Configuración de directivas de Intune para dispositivos Windows 10 en Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune).   
+En Intune puede usar la configuración OMA-URI de una directiva personalizada para configurar el identificador comercial. Para obtener más información, consulte [Configuración de directivas de Intune para dispositivos Windows 10 en Microsoft Intune](custom-settings-windows-10.md).   
 
 La ruta OMA-URI (distingue mayúsculas de minúsculas) para configurar el identificador comercial es: ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
 
 Por ejemplo, puede usar los siguientes valores en **Agregar o editar configuración OMA-URI**:
 
-- **Nombre del valor de configuración**: identificador comercial de Windows Analytics
-- **Descripción del valor de configuración**: configuración del identificador comercial para soluciones de Windows Analytics
+- **Nombre de la configuración**: identificador comercial de Windows Analytics
+- **Descripción de la configuración**: configuración del identificador comercial para soluciones de Windows Analytics
 - **OMA-URI** (distingue mayúsculas de minúsculas): ./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID
-- **Tipo de datos:** Cadena
+- **Tipo de datos**: String
 - **Valor**: <*Utilizar el GUID que se muestra en la pestaña Telemetría de Windows del área de trabajo de OMS*>
 
 ![Configuración de OMA-URI - Editar fila](./media/commID-edit.png)

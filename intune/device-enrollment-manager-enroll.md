@@ -1,7 +1,7 @@
 ---
 title: Inscripción de dispositivos mediante una cuenta de administrador de inscripción de dispositivos
 titlesuffix: Microsoft Intune
-description: Use la cuenta del administrador de inscripciones de dispositivos para inscribir dispositivos en Intune. "
+description: Use la cuenta del administrador de inscripciones de dispositivos para inscribir dispositivos en Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,15 +15,15 @@ ms.assetid: 7196b33e-d303-4415-ad0b-2ecdb14230fd
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 1d3e01cdbc7c9e30034e83e9609c0df5f031c18a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: eb369d8e89ff41e75d5bd669819afbe98b6d1ba7
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184920"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031847"
 ---
-# <a name="enroll-devices-by-using-a-device-enrollment-manager-account"></a>Inscripción de dispositivos mediante una cuenta de administrador de inscripción de dispositivos
+# <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>Inscripción de dispositivos en Intune mediante una cuenta de administrador de inscripción de dispositivos
 
 Puede inscribir hasta 1000 dispositivos móviles con una sola cuenta de Azure Active Directory mediante una cuenta de administrador de inscripción de dispositivos (DEM). DEM es un permiso de Intune que puede aplicarse a una cuenta de usuario de AAD y que permite al usuario inscribir hasta 1000 dispositivos. Una cuenta de DEM es útil en escenarios donde los dispositivos están inscritos y preparados antes de entregarlos a los usuarios de los dispositivos.
 

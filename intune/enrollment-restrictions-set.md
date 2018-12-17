@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d9a7ad5d77f0c085fc1e91b6991657e6b848b3f3
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e6f816ae0eb025addfaa0c5f7ec7d16005f6b040
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187844"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112959"
 ---
 # <a name="set-enrollment-restrictions"></a>Establecer restricciones de inscripción
 
@@ -67,7 +67,7 @@ Las restricciones predeterminadas se proporcionan automáticamente para las rest
 
 ## <a name="set-device-type-restrictions"></a>Establecer restricciones de tipo de dispositivo
 
-Puede cambiar la configuración de una restricción de tipo de dispositivo mediante los pasos siguientes. Estas restricciones no afectan a los dispositivos que ya se han inscrito. Los dispositivos inscritos con el [agente de PC de Intune](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune) no se puede bloquear con esta característica.
+Puede cambiar la configuración de una restricción de tipo de dispositivo mediante los pasos siguientes. Estas restricciones no afectan a los dispositivos que ya se han inscrito. Los dispositivos inscritos con el [agente de PC de Intune](manage-windows-pcs-with-microsoft-intune.md) no se puede bloquear con esta característica.
 
 1. Inicie sesión en Azure Portal.
 2. Seleccione **Más servicios**, busque **Intune** y, después, seleccione **Intune**.
@@ -123,7 +123,7 @@ Para cambiar la configuración de una restricción de límite de dispositivos, s
 6. Seleccione **Guardar**.
 
 
-Cuando el usuario alcance el límite de dispositivos inscritos, recibirá una notificación en la que se le informará de ello. Por ejemplo, en iOS, tiene un aspecto similar al siguiente:
+Durante las inscripciones de BYOD, los usuarios recibirán una notificación en la que se les informará cuando hayan alcanzado el límite de dispositivos inscritos. Por ejemplo, en iOS, tiene un aspecto similar al siguiente:
 
 ![Notificación del límite en un dispositivo iOS](./media/enrollment-restrictions-ios-set-limit-notification.png)
 

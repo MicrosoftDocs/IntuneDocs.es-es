@@ -1,11 +1,12 @@
 ---
 title: El dispositivo no tiene un certificado necesario | Microsoft Docs
-description: ''
+titlesuffix: Microsoft Intune
+description: El dispositivo no tiene un certificado que necesita el equipo de soporte técnico de su empresa.
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,13 +17,13 @@ searchScope:
 ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
-ms.custom: intune-enduser
-ms.openlocfilehash: 043b04688630f345be625456fb9cfec586e2f790
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.custom: intune-enduser; seodec18
+ms.openlocfilehash: e40ac2fd81375b84084dd229f4cb5a6ab3e9915f
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43150759"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032221"
 ---
 # <a name="your-device-is-missing-a-required-certificate"></a>El dispositivo no tiene un certificado necesario
 
@@ -38,6 +39,6 @@ Si el dispositivo Android no está inscrito en Intune y no tiene un certificado 
 
 El primer paso que debe intentar es ver si en el dispositivo [falta un certificado que normalmente viene preinstalado en él](your-device-is-missing-a-preinstalled-certificate-android.md).
 
-Si esto no funciona, el equipo de soporte técnico de su empresa podría [requerir que instale un segundo certificado para obtener una mayor seguridad](your-device-is-missing-an-IT-required-certificate-android.md).
+Si la resolución de problemas de certificados no funciona, el equipo de soporte técnico de su empresa podría [requerir que instale un segundo certificado para obtener una mayor seguridad](your-device-is-missing-an-IT-required-certificate-android.md).
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

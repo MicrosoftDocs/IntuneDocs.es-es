@@ -1,5 +1,5 @@
 ---
-title: Configuración de directivas de administración de aplicaciones y cumplimiento de dispositivos durante una migración a Intune
+title: Configuración de cumplimiento de dispositivos y aplicaciones durante una migración a Intune
 titlesuffix: Microsoft Intune
 description: En este artículo se proporcionan los pasos necesarios para configurar directivas de aplicaciones y cumplimiento de dispositivos durante una migración de Microsoft Intune.
 keywords: ''
@@ -15,12 +15,13 @@ ms.assetid: 0062d08e-e5b3-4f73-8b64-5ad95adbe945
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 651612ac403db01ff2c5b7574216459c7ee2bd16
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 99f8f1eb297ac1530f9379dd4f033b72eee0b0f4
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183807"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53031830"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Configurar directivas administración de aplicaciones y cumplimiento de los dispositivos al migrar a Microsoft Intune
 
@@ -53,19 +54,19 @@ Si configura grupos de dispositivos antes de la inscripción de dispositivos, pu
 
 Los perfiles de acceso a recursos proporcionan configuraciones de acceso y certificados para dispositivos inscritos. Si está usando autenticación basada en certificados, [configure los certificados](certificates-configure.md).
 
-### <a name="task-3-create-and-deploy-device-configuration-profiles"></a>Tarea 3: Crear e implementar una directiva de configuración de dispositivos
+### <a name="task-3-create-and-deploy-device-configuration-profiles"></a>Tarea 3: Crear e implementar perfiles de configuración de dispositivos
 
 Tiene que crear un perfil de configuración de dispositivos para aplicar la configuración de nivel de dispositivo, como, por ejemplo: deshabilitar la cámara, la tienda de aplicaciones, configurar el modo de aplicación sencilla y la pantalla principal, entre otros. Aprenda sobre los [perfiles de dispositivo](device-profiles.md).
 
 ####  <a name="directly-import-ios-configuration-profiles-optional"></a>Importar directamente los perfiles de configuración de iOS (opcional)
 
--   **Perfiles de iOS de Apple Configurator (iOS 7.1 y versiones posteriores):** si la solución MDM existente usa perfiles de Apple Configurator (archivos .mobileconfig), Intune puede importarlos directamente como directivas de configuración personalizadas.
+-   **Perfiles de iOS de Apple Configurator (iOS 7.1 y posterior):** si la solución MDM existente usa perfiles de Apple Configurator (archivos .mobileconfig), Intune puede importarlos directamente como directivas de configuración personalizadas.
 
 -   **Directivas de configuración de aplicaciones móviles de iOS:** si la solución MDM existente usa directivas de configuración de aplicaciones móviles de iOS, Intune puede importarlas directamente siempre que cumplan con el formato XML especificado por Apple para listas de propiedades.
 
 - Obtenga información sobre cómo agregar una directiva personalizada de [iOS](custom-settings-ios.md).
 
-### <a name="task-4-create-and-deploy-device-compliance-policies-optional"></a>Tarea 4: Crear e implementar directivas de cumplimiento de dispositivos (opcional)
+### <a name="task-4-create-and-deploy-device-compliance-policies-optional"></a>Tarea 4: Crear e implementar directivas de cumplimiento de dispositivos (opcional)
 
 Las directivas de cumplimiento de dispositivos evalúan la configuración orientada a la seguridad y ofrecen informes que muestran si los dispositivos son compatibles con los estándares corporativos o no. Dicha configuración incluye:
 

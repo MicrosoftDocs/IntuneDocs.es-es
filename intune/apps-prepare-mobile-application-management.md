@@ -1,11 +1,11 @@
 ---
-title: Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles mediante Microsoft Intune
+title: Preparación de aplicaciones para la administración de aplicaciones móviles con Microsoft Intune
 description: La información de este tema le ayuda a decidir cuándo se debe usar la herramienta de ajuste de aplicaciones y el SDK de aplicaciones para permitir que las aplicaciones personalizadas de línea de negocio usen las directivas de administración de aplicaciones móviles.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,13 +14,13 @@ ms.assetid: 29e22121-8268-48b5-a671-f940a6be1d24
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: 8841354b268f70634a61040fb06ed857120e9cfc
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 84b36f6cae9dd16bde6bd380407a78aeb2478010
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181979"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112432"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicaciones de línea de negocio para las directivas de protección de aplicaciones
 
@@ -35,7 +35,7 @@ No se necesita el código fuente para usar la herramienta, pero se necesitan cre
 
 La herramienta de ajuste de aplicaciones **no** admite aplicaciones de App Store de Apple ni de Google Play Store. Tampoco admite ciertas características que requieren la integración del desarrollador (consulte la siguiente tabla de comparación de características).
 
-Para obtener más información sobre la herramienta de ajuste de aplicaciones para directivas de protección de aplicaciones en dispositivos que no están inscritos en Intune, consulte [Proteger aplicaciones y datos de línea de negocio en dispositivos no inscritos en Microsoft Intune](/intune-classic/deploy-use/protect-line-of-business-apps-and-data-on-devices-not-enrolled-in-microsoft-intune).
+Para obtener más información sobre la herramienta de ajuste de aplicaciones para directivas de protección de aplicaciones en dispositivos que no están inscritos en Intune, consulte [Proteger aplicaciones y datos de línea de negocio en dispositivos no inscritos en Microsoft Intune](apps-add.md).
 
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>Razones para usar la herramienta de ajuste de aplicaciones
 * La aplicación no tiene funciones de protección de datos integradas.
@@ -98,7 +98,7 @@ En la siguiente tabla se enumeran los valores que puede usarse para el SDK para 
 |Bloquear captura de pantalla (solo Android)|X|X|
 |Compatibilidad con MAM sin la inscripción de dispositivos|X|X|
 |Eliminación completa|X|X|
-|Eliminación selectiva <br></br>**Nota**: Para iOS, cuando se quita el perfil de administración, también se quita la aplicación.|X||
+|Eliminación selectiva <br></br>**Nota:** Para iOS, cuando se quita el perfil de administración, también se quita la aplicación.|X||
 |Impedir "Guardar como"|X||
 |Configuración de aplicaciones de destino|X||
 |Compatibilidad con aplicaciones de identidades múltiples|X||
@@ -117,4 +117,4 @@ Para obtener más información sobre las directivas de protección de aplicacion
 
   - [Herramienta de ajuste de aplicaciones para Android](app-wrapper-prepare-android.md)</br>
   - [Herramienta de ajuste de aplicaciones para iOS](app-wrapper-prepare-ios.md)</br>
-  - [Usar el SDK para habilitar aplicaciones para la administración de aplicaciones móviles)](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+  - [Usar el SDK para habilitar aplicaciones para la administración de aplicaciones móviles)](app-sdk.md)

@@ -14,12 +14,12 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 28c8863e8739563a6b6c9152a46abb6bf50f2db5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 44923d89647118268c7a55746599354ac88fbfd2
+ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189204"
+ms.lasthandoff: 12/04/2018
+ms.locfileid: "52861020"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Eliminación de dispositivos mediante el borrado, la retirada o la anulación manual de la inscripción del dispositivo
 
@@ -81,7 +81,7 @@ En las tablas siguientes se describen los datos que se eliminan y el efecto de l
 
 |Tipo de datos|iOS|
 |-------------|-------|
-|Aplicaciones de empresa y datos asociados instalados por Intune.|Las aplicaciones se desinstalarán. Se quitarán los datos de la aplicación de empresa.<br /><br />Se eliminan los datos de las aplicaciones de Microsoft que usan la administración de aplicaciones móviles. La aplicación no se elimina.|
+|Aplicaciones de empresa y datos asociados instalados por Intune.|**Aplicaciones instaladas mediante Portal de empresa:** se quitan todos los datos de aplicación y las aplicaciones. Entre estas aplicaciones se incluyen aquellas instaladas originalmente desde App Store y posteriormente administradas como aplicaciones de la empresa. <br /><br /> **Aplicaciones de Microsoft que usan la administración de aplicaciones móviles y se instalaron desde App Store:** Se quitarán los datos de la aplicación personal. No se quitarán las aplicaciones ni los datos de la aplicación de la empresa.|
 |Configuración|Las configuraciones que estableció la directiva de Intune ya no se aplican y los usuarios pueden cambiar la configuración.|
 |Configuración de perfil de Wi-Fi y VPN|Quitado.|
 |Configuración de perfil de certificado|Certificados eliminados y revocados.|

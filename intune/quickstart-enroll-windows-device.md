@@ -5,22 +5,22 @@ services: microsoft-intune
 author: ErikRe
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 12/05/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 658a7655-a6df-4dbe-b56c-22c7fc60e706
-ms.reviewer: angerobe
+ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 13ffb9e7091b484c59f44802de675b1ab45b1c77
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5876b0df6787640e465952cb1cca17f4f3105762
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183475"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977344"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>Inicio rápido: Inscripción de dispositivos Windows 10
 
@@ -29,7 +29,7 @@ En este tutorial de inicio rápido, primero asumirá el rol de usuario de Intune
 La inscripción de dispositivos en Microsoft Intune permite que los dispositivos Windows 10 tengan acceso a datos seguros de la organización, incluidos el correo electrónico, los archivos y otros recursos. Esto se aplica tanto a dispositivos Windows 10 Escritorio como a dispositivos Windows 10 Mobile. La inscripción de dispositivos ayuda a proteger este acceso para el usuario y la organización, y permite mantener separados los datos profesionales de los datos personales.
 
 > [!TIP]
-> Averigüe lo que sucede al [inscribir el dispositivo en Intune](/intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows.md) y lo que conlleva para la [información que contiene el dispositivo](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md).
+> Averigüe lo que sucede al [inscribir el dispositivo en Intune](/intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows) y lo que conlleva para la [información que contiene el dispositivo](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune).
 
 Si no tiene una suscripción a Intune, [regístrese para obtener una cuenta de prueba gratuita](free-trial-sign-up.md).
 
@@ -58,7 +58,7 @@ Antes de inscribir Windows 10 Escritorio, debe comprobar la versión de Windows 
 4. Compruebe que la **versión** de Windows 10 es la **1607 o una versión posterior**.
 
     > [!IMPORTANT]
-    > Los pasos que aparecen en este tutorial de inicio rápido son para la versión **1607 o una versión posterior** de Windows 10. Si tiene la versión **1511 o anterior**, continúe con [estos pasos](/intune-user-help/enroll-your-w10-device-your-account.md).
+    > Los pasos que aparecen en este tutorial de inicio rápido son para la versión **1607 o una versión posterior** de Windows 10. Si tiene la versión **1511 o anterior**, continúe con [estos pasos](/intune-user-help/enroll-your-w10-device-your-account).
 
 ## <a name="enroll-windows-10-desktop"></a>Inscribir Windows 10 Escritorio
 
@@ -85,7 +85,7 @@ Antes de inscribir Windows 10 Escritorio, debe comprobar la versión de Windows 
 
    ![Captura de pantalla de la cuenta recién agregada](media/quickstart-enroll-windows-device/quickstart-enroll-windows-device-06.png)
 
-    Si después de seguir los pasos anteriores, no consigue tener acceso a la cuenta de correo electrónico profesional o educativo y a los archivos, siga los pasos de [Pasos de solución de problemas a seguir si ve acceso profesional o educativo](/intune-user-help/troubleshoot-your-windows-10-device-windows.md#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).
+    Si después de seguir los pasos anteriores, no consigue tener acceso a la cuenta de correo electrónico profesional o educativo y a los archivos, siga los pasos de [Pasos de solución de problemas a seguir si ve acceso profesional o educativo](/intune-user-help/troubleshoot-your-windows-10-device-windows#troubleshooting-steps-to-follow-if-you-see-access-work-or-school).
 
 ## <a name="confirm-your-device-enrollment-in-intune"></a>Comprobar la inscripción de los dispositivos en Intune
 
@@ -97,13 +97,13 @@ Antes de inscribir Windows 10 Escritorio, debe comprobar la versión de Windows 
 
 ## <a name="clean-up-resources"></a>Limpieza de recursos
 
-Para anular la inscripción de su dispositivo Windows, consulte [Quitar el dispositivo Windows de la administración](/intune-user-help/unenroll-your-device-from-intune-windows.md).
+Para anular la inscripción de su dispositivo Windows, consulte [Quitar el dispositivo Windows de la administración](/intune-user-help/unenroll-your-device-from-intune-windows).
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-En este tutorial de inicio rápido ha aprendido a inscribir un dispositivo Windows 10 en Intune. Puede conocer otras maneras de inscribir dispositivos en las distintas plataformas. Para obtener más información sobre cómo usar los dispositivos con Intune, consulte [Usar dispositivos administrados para realizar el trabajo](/intune-user-help/use-managed-devices-to-get-work-done.md).
+En este tutorial de inicio rápido ha aprendido a inscribir un dispositivo Windows 10 en Intune. Puede conocer otras maneras de inscribir dispositivos en las distintas plataformas. Para obtener más información sobre cómo usar los dispositivos con Intune, consulte [Usar dispositivos administrados para realizar el trabajo](/intune-user-help/use-managed-devices-to-get-work-done).
 
 Para seguir esta serie de tutoriales de inicio rápido de Intune, pase al siguiente tutorial de inicio rápido.
 
 > [!div class="nextstepaction"]
-> [Inicio rápido: Establecer una longitud de contraseña necesaria para dispositivos Android](quickstart-set-password-length-android.md)
+> [Inicio rápido: establecer una longitud de contraseña necesaria para dispositivos Android](quickstart-set-password-length-android.md)

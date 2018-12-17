@@ -15,15 +15,15 @@ ms.assetid: 4a3a11a8-9c0c-4334-8c6b-6fea4d0a2efb
 ms.reviewer: amyro
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: e407b2059d986841541c969e387d77e71c5e5b4b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: ecc5228eef9e9d7be5ba567db6b32c84e95df1b6
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181367"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032306"
 ---
-# <a name="manage-your-companys-terms-and-conditions-for-user-access"></a>Administrar los términos y condiciones de acceso de los usuarios de su empresa
+# <a name="terms-and-conditions-for-user-access"></a>Términos y condiciones para el acceso de los usuarios
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -56,8 +56,8 @@ Complete estos pasos para crear los términos y condiciones. El nombre para most
 
    ![Captura de pantalla de la pantalla de aceptación de los Términos y condiciones por parte del usuario final, con un resumen de los términos](./media/terms-summary-create.png)
 
-   - **Título**: el nombre de los términos que los usuarios ven en Portal de empresa de Intune sobre el **resumen**.
-   - **Resumen de los términos**: texto que explica lo que significa que los usuarios acepten los términos. Por ejemplo, "Al inscribir el dispositivo, acepta los términos de uso establecidos por Contoso. Lea los términos detenidamente antes de continuar".
+   - **Título**: el nombre de los términos que los usuarios ven en Portal de empresa sobre el **resumen**.
+   - **Resumen de términos**: texto que explica lo que significa que los usuarios acepten los términos. Por ejemplo, "Al inscribir el dispositivo, acepta los términos de uso establecidos por Contoso. Lea los términos detenidamente antes de continuar".
    - **Términos y condiciones**: los términos y condiciones que los usuarios ven y deben aceptar o rechazar.
 
 5. Elija **Aceptar** > **Crear**.

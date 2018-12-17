@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 470c3b7ac273e051af047eba95012b36a8ea1deb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fd3a38b331507ddc50a7b5e4ce8794e71d0e5dc5
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186008"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977361"
 ---
 # <a name="get-started-with-device-compliance-policies-in-intune"></a>Introducción a las directivas de cumplimiento de dispositivos de Intune
 
@@ -40,6 +40,9 @@ Los requisitos de cumplimiento son básicamente reglas (por ejemplo, requerir un
 - Requerir que el dispositivo se encuentre en el nivel de Mobile Threat Defense o por debajo de él
 
 También puede usar directivas de cumplimiento de dispositivos para supervisar el estado de cumplimiento de los dispositivos.
+
+> [!IMPORTANT]
+> Intune sigue el programa de inserción en el repositorio del dispositivo para todas las evaluaciones de cumplimiento del dispositivo. [Obtenga más información sobre el programa de inserción en el repositorio del dispositivo](https://docs.microsoft.com/intune/device-profile-troubleshoot#how-long-does-it-take-for-mobile-devices-to-get-a-policy-or-apps-after-they-have-been-assigned).
 
 <!---### Actions for noncompliance
 
@@ -154,7 +157,7 @@ También puede usar las directivas de cumplimiento de dispositivos sin ningún a
 ## <a name="ways-to-deploy-device-compliance-policies"></a>Formas de implementar las directivas de cumplimiento de dispositivos
 Puede implementar directivas de cumplimiento en los usuarios de grupos de usuarios o en dispositivos de grupos de dispositivos. Cuando se implementa una directiva de cumplimiento en un usuario, se comprueba el cumplimiento de todos los dispositivos del usuario. En Windows 10 versión 1803 y dispositivos más recientes, se recomienda realizar la implementación en grupos de dispositivos *si* el usuario primario no ha inscrito el dispositivo. El uso de grupos de dispositivos en este escenario ayuda con los informes de cumplimiento.
 
-Un conjunto de **Configuración de directivas de cumplimiento** integrada (Azure Portal > Conformidad de dispositivos) se evalúa en todos los dispositivos inscritos en Intune. Entre ellas se incluyen:
+Un conjunto de **Configuración de directivas de cumplimiento** integrada (Azure Portal > Conformidad de dispositivos) se evalúa en todos los dispositivos inscritos en Intune. Entre ellos se incluyen los siguientes:
 
 - **Marcar los dispositivos que no tienen asignada una directiva de cumplimiento como**: esta propiedad tiene dos valores:
 
@@ -170,7 +173,7 @@ Un conjunto de **Configuración de directivas de cumplimiento** integrada (Azure
   - Permitir que el Portal de empresa use los servicios de ubicación
   - Evaluar y notificar su estado de jailbreak a Intune al menos una vez cada 72 horas. En caso contrario, el dispositivo se marcará como no compatible. La evaluación se desencadena al abrir la aplicación Portal de empresa o al mover físicamente los 500 medidores o más del dispositivo.
 
-- **Período de validez de estado de cumplimiento (días)**: especifique el período en el que los dispositivos notifican el estado de todas las directivas de cumplimiento recibidas. Los dispositivos que no proporcionen el estado dentro de este período se tratarán como no conformes. El valor predeterminado es 30 días.
+- **Período de validez del estado de cumplimiento (días)**: especifique el período en que los dispositivos informan del estado de todas las directivas de cumplimiento recibidas. Los dispositivos que no proporcionen el estado dentro de este período se tratarán como no conformes. El valor predeterminado es 30 días.
 
 Todos los dispositivos tienen una **Directiva de cumplimiento de dispositivos integrada** (Azure Portal > Conformidad de dispositivos > Cumplimiento de directiva). Use esta directiva integrada para supervisar estas opciones.
 

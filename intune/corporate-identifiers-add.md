@@ -1,6 +1,6 @@
 ---
 title: Agregar identificadores corporativos a Intune
-titlesuffix: Microsoft Intune
+titlesuffix: ''
 description: Aprenda a agregar identificadores corporativos (método de inscripción, números IMEI y de serie) a Microsoft Intune.
 keywords: ''
 author: ErikjeMS
@@ -15,13 +15,13 @@ ms.assetid: 566ed16d-8030-42ee-bac9-5f8252a83012
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: cc65cc3440d260adc3bd2c7de3a311374681327d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 38c1d982dc627ccddf2844bf7a6334157e1f0b92
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183458"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032255"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>Identificar dispositivos como corporativos
 
@@ -67,7 +67,7 @@ Este archivo .csv, cuando se ve en un editor de texto, aparece como:
 
 > [!IMPORTANT]
 > Algunos dispositivos Android tienen varios números IMEI. Intune solo lee un número IMEI por dispositivo inscrito. Si importa un número IMEI, pero no es el que ha inventariado Intune, el dispositivo se clasificará como dispositivo personal en lugar de como dispositivo propiedad de la empresa. Si importa varios números IMEI de un dispositivo, en el estado de inscripción de los números no inventariados se mostrará **Desconocido**.<br>
->Tenga en cuenta también que no se garantiza que los números de serie de Android sean únicos o estén presentes. Póngase en contacto con el proveedor del dispositivo para saber si el número de serie es un identificador de dispositivo de confianza.
+>Tenga en cuenta: No se garantiza que los números de serie de Android sean únicos o estén presentes. Póngase en contacto con el proveedor del dispositivo para saber si el número de serie es un identificador de dispositivo de confianza.
 >Los números de serie que el dispositivo notifica a Intune podrían no coincidir con el identificador que aparece en los menús del dispositivo Configuración de Android/Acerca de. Compruebe el tipo de número de serie que ha notificado el fabricante del dispositivo.
 >Al intentar cargar un archivo con números de serie que contengan puntos (.), se producirán errores de carga. Los números de serie con puntos no se admiten.
 
@@ -77,7 +77,7 @@ Este archivo .csv, cuando se ve en un editor de texto, aparece como:
 
    ![Área de trabajo del identificador de dispositivo corporativo con el botón Agregar resaltado](./media/add-corp-id.png)
 
-2. En la hoja **Agregar identificadores**, especifique el tipo de identificador **IMEI** o **Serie**.
+2. En la hoja **Agregar identificadores**, especifique el tipo de identificador: **IMEI** o **de serie**.
 
 3. Haga clic en el icono de la carpeta y especifique la ruta de acceso de la lista que quiera importar. Vaya al archivo .csv y elija **Agregar**. 
 
@@ -87,7 +87,7 @@ Este archivo .csv, cuando se ve en un editor de texto, aparece como:
 
 1. En [Azure Portal, en Intune](https://portal.azure.com), elija **Inscripción de dispositivos** > **Identificadores de dispositivo corporativos** > **Agregar** > **Escribir manualmente**.
 
-2. En la hoja **Agregar identificadores**, especifique el tipo de identificador **IMEI** o **Serie**.
+2. En la hoja **Agregar identificadores**, especifique el tipo de identificador: **IMEI** o **de serie**.
 
 3. Escriba el **identificador** y los **detalles** de cada identificador que quiera agregar. Cuando haya terminado de especificar los identificadores, elija **Agregar**.
 

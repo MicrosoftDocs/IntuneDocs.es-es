@@ -15,15 +15,15 @@ ms.assetid: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 5ea4d41477f2f0c6dc1314e47072d2c4cf862e23
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 637fe2d2c764cf78e67e728bfa77567cf12e88ce
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184835"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032000"
 ---
-# <a name="set-up-enrollment-of-android-enterprise-kiosk-devices"></a>Configurar la inscripción de dispositivos Android Enterprise en modo de quiosco multimedia
+# <a name="set-up-intune-enrollment-of-android-enterprise-kiosk-devices"></a>Configurar la inscripción de Intune de dispositivos Android Enterprise en modo de pantalla completa
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -57,7 +57,7 @@ Debe crear un perfil de inscripción para poder inscribir sus dispositivos de qu
 1. Vaya al [portal de Intune](https://portal.azure.com) y elija **Inscripción de dispositivos** > **Inscripción de Android** > **Inscripciones de dispositivos de tareas y quiosco multimedia**.
 2. Elija **Crear** y rellene los campos obligatorios.
     - **Nombre**: escriba el nombre que va a usar al asignar el perfil al grupo de dispositivos dinámicos.
-    - **Fecha de expiración del token**: la fecha en que expira el token. Google exige un máximo de 90 días.
+    - **Fecha de expiración del token**: la fecha en que caduca el token. Google exige un máximo de 90 días.
 3. Elija **Crear** para guardar el perfil.
 
 ### <a name="create-a-device-group"></a>Creación de un grupo de dispositivos
@@ -66,8 +66,8 @@ Puede dirigir las aplicaciones y directivas a grupos de dispositivos dinámicos 
 
 1. Vaya al [portal de Intune](https://portal.azure.com) y elija **Grupos** > **Todos los grupos** > **Grupo nuevo**.
 2. En la hoja **Grupo**, rellene los campos obligatorios, como se indica a continuación:
-    - **Tipo de grupo**: seguridad
-    - **Nombre del grupo**: escriba un nombre intuitivo (como Dispositivos de fábrica 1)
+    - **Tipo de grupo**: Seguridad
+    - **Nombre de grupo**: escriba un nombre intuitivo (como Dispositivos de fábrica 1)
     - **Tipo de pertenencia**: dispositivo dinámico
 3. Elija **Agregar una consulta dinámica**.
 4. En la hoja **Reglas de pertenencia dinámica**, rellene los campos del modo siguiente:

@@ -1,11 +1,12 @@
 ---
-title: Uso de API para incorporar entidades de certificación de terceros - Microsoft Intune - Azure | Microsoft Docs
+title: API para incorporar entidades de certificación de terceros
+titlesuffix: Microsoft Intune
 description: Agregue o integre la solución de GitHub de SCEP para que las entidades de certificación (CA) de terceros emitan certificados SCEP para dispositivos de Microsoft Intune. En esta solución se incluyen las API de Java y C# que validan, envían notificaciones correctas y de error a Intune, y usan el generador de sockets SSL al comunicarse con Intune. También se proporciona una introducción de los pasos para probar la configuración de la entidad de certificación SCEP.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/12/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,13 +14,13 @@ ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 054342994a75965b3e1bcb13884af07131ab0122
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 4109c437ae5a096c78c19aef489218cf7286eb01
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181928"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032340"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>Uso de API para agregar entidades de certificación de terceros para SCEP en Intune
 
@@ -297,7 +298,7 @@ Es obligatorio validar y comprobar que la solución se integra correctamente con
 12. Confirme que las propiedades de los certificados instalados coinciden con las propiedades establecidas en el perfil SCEP.
 13. Confirme que los certificados emitidos aparecen correctamente en la consola de Intune.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Vea también
 
 - [Información general para agregar entidades de certificación de terceros](certificate-authority-add-scep-overview.md)
 - [Configuración de Intune](setup-steps.md)

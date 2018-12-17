@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5482d84d22aa7be29a8030dc75a27ba793792e40
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 26bf759722b5cb92bda28b0e60c9365a7edc7710
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182115"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112889"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicaciones iOS para directivas de protección de aplicaciones con la herramienta de ajuste de aplicaciones de Intune
 
@@ -28,7 +28,7 @@ ms.locfileid: "52182115"
 
 Use la herramienta de ajuste de aplicaciones de Microsoft Intune para iOS para habilitar las directivas de protección de aplicaciones de Intune para aplicaciones iOS internas sin cambiar el código de la propia aplicación.
 
-La herramienta es una aplicación de línea de comandos de macOS que crea un contenedor alrededor de una aplicación. Una vez que se haya procesado la aplicación, puede cambiar su función implementando [directivas de protección de aplicaciones](/intune-classic/deploy-use/configure-and-deploy-mobile-application-management-policies-in-the-microsoft-intune-console) en esta.
+La herramienta es una aplicación de línea de comandos de macOS que crea un contenedor alrededor de una aplicación. Una vez que se haya procesado la aplicación, puede cambiar su función implementando [directivas de protección de aplicaciones](app-protection-policies.md) en esta.
 
 Para descargar la herramienta, consulte [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) (Herramienta de ajuste de aplicaciones de Microsoft Intune para iOS) en GitHub.
 
@@ -127,7 +127,7 @@ Necesitará lo siguiente para distribuir aplicaciones ajustadas con Intune:
 
     ![Solicitar un certificado de una entidad de certificación en Acceso a llaves](./media/iOS-signing-cert-6.png)
 
-12. Vuelva al sitio de Apple Developer. Haga clic en **Continuar**. Después, cargue el archivo CSR.
+12. Vuelva al sitio de Apple Developer. Haga clic en **Continue**. Después, cargue el archivo CSR.
 
 13. Apple genera su certificado de firma. Descargue y guárdelo en una ubicación fácil de recordar en su equipo macOS.
 
@@ -157,7 +157,7 @@ Necesitará lo siguiente para distribuir aplicaciones ajustadas con Intune:
 
    ![Seleccionar el perfil de aprovisionamiento interno](./media/iOS-provisioning-profile-1.png)
 
-5. Haga clic en **Continuar**. Asegúrese de vincular el certificado de firma que se generó anteriormente al perfil de aprovisionamiento.
+5. Haga clic en **Continue**. Asegúrese de vincular el certificado de firma que se generó anteriormente al perfil de aprovisionamiento.
 
 6. Siga los pasos para descargar el perfil (con la extensión .mobileprovision) en su equipo macOS.
 
@@ -260,7 +260,7 @@ Use la siguiente información para solucionar los problemas que tenga con la her
 ### <a name="error-messages"></a>Mensajes de error
 Si la herramienta de ajuste de aplicaciones no se completa correctamente, se mostrará uno de los siguientes mensajes de error en la consola:
 
-|Mensaje de error|Información adicional|
+|Mensaje de error|Más información|
 |-----------------|--------------------|
 |Debe especificar un perfil de aprovisionamiento de iOS válido.|Su perfil de aprovisionamiento podría no ser válido. Asegúrese de tener los permisos correctos para dispositivos y que su perfil se destine correctamente a desarrollo o a distribución. El perfil de aprovisionamiento también podría haber expirado.|
 |Especifique un nombre de aplicación de entrada válido.|Asegúrese de que el nombre de la aplicación de entrada especificado sea correcto.|
@@ -278,7 +278,7 @@ Si la herramienta de ajuste de aplicaciones no se completa correctamente, se mos
 |La aplicación de entrada especificada no está firmada. Especifique una aplicación firmada válida.|La herramienta de ajuste de aplicaciones requiere que las aplicaciones estén firmadas. Consulte la documentación para desarrolladores para aprender a firmar una aplicación ajustada.|
 |La aplicación de entrada especificada debe tener formato .ipa o .app.|La herramienta de ajuste de aplicaciones solo acepta aplicaciones con las extensiones .app e .ipa. Asegúrese de que el archivo de entrada tenga una extensión válida y se haya compilado como archivo .app o .ipa.|
 |La aplicación de entrada especificada ya se ajustó y se encuentra en la última versión de la plantilla de directiva.|La herramienta de ajuste de aplicaciones no ajustará una aplicación ajustada existente con la última versión de la plantilla de directiva.|
-|ADVERTENCIA: no ha especificado un hash de certificado SHA1. Asegúrese de que la aplicación ajustada se firme antes de implementarla.|Asegúrese de especificar un valor de hash SHA1 válido después de la marca de línea de comandos –c. |
+|ADVERTENCIA: no se ha especificado un hash de certificado SHA1. Asegúrese de que la aplicación ajustada se firme antes de implementarla.|Asegúrese de especificar un valor de hash SHA1 válido después de la marca de línea de comandos –c. |
 
 ### <a name="log-files-for-the-app-wrapping-tool"></a>Archivos de registro de la herramienta de ajuste de aplicaciones
 Las aplicaciones que se ajustaron mediante la herramienta de ajuste de aplicaciones generan los registros que se escriben en la consola del dispositivo cliente de iOS. Esta información resulta útil cuando se tienen problemas con la aplicación y es necesario determinar si el problema está relacionado con la herramienta de ajuste de aplicaciones. Para resolver este problema, use los siguientes pasos:
@@ -304,7 +304,7 @@ Las aplicaciones que se ajustaron mediante la herramienta de ajuste de aplicacio
 
 La herramienta de ajuste de aplicaciones para iOS tiene algunos requisitos que se deben cumplir para garantizar una funcionalidad completa.
 
-|Requisitos|Detalles|
+|Requisito|Detalles|
 |---------------|-----------|
 |Perfil de aprovisionamiento de iOS|Asegúrese de que el perfil de aprovisionamiento sea válido antes de incluirlo. La herramienta de ajuste de aplicaciones no comprueba si el perfil de aprovisionamiento ha expirado al procesar una aplicación iOS. Si se especifica un perfil de aprovisionamiento expirado, la herramienta de ajuste de aplicaciones incluirá el perfil de aprovisionamiento caducado y no sabrá que hay un problema hasta que la aplicación no se pueda instalar en un dispositivo iOS.|
 |Certificado de firma de iOS|Asegúrese de que el certificado de firma sea válido antes de especificarlo. La herramienta no comprueba si un certificado ha expirado al procesar aplicaciones iOS. Si se proporciona el valor hash de un certificado expirado, la herramienta procesará y firmará la aplicación, pero no se podrá instalar en dispositivos.<br /><br />Asegúrese de que el certificado proporcionado para firmar la aplicación ajustada tenga una coincidencia en el perfil de aprovisionamiento. La herramienta no valida si el perfil de aprovisionamiento tiene una coincidencia con el certificado proporcionado para firmar la aplicación ajustada.|
@@ -437,7 +437,7 @@ Siga estos pasos para obtener registros para las aplicaciones ajustadas durante 
 > [!NOTE]
 > La funcionalidad de registro está habilitada para las aplicaciones ajustadas con la versión de Intune App Wrapping Tool 7.1.13 o una posterior.
 
-### <a name="see-also"></a>Consulta también
+### <a name="see-also"></a>Vea también
 - [Decidir cómo preparar las aplicaciones para la administración de aplicaciones móviles mediante Microsoft Intune](apps-prepare-mobile-application-management.md)</br>
-- [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](/intune-classic/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies)</br>
-- [Use the SDK to enable apps for mobile application management (Usar el SDK para habilitar aplicaciones para la administración de aplicaciones móviles)](/intune-classic/deploy-use/use-the-sdk-to-enable-apps-for-mobile-application-management)
+- [Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)</br>
+- [Use the SDK to enable apps for mobile application management (Usar el SDK para habilitar aplicaciones para la administración de aplicaciones móviles)](app-sdk.md)

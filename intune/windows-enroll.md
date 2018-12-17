@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: efb850e0f08c94cfee7948f50411220216eb8418
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9562eb2c8fae49628ac042f28f172fb9f8fd5106
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188082"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112551"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>Configuración de la inscripción de dispositivos Windows
 
@@ -55,7 +55,7 @@ Intune admite administración de varios usuarios en dispositivos que ejecutan Wi
 ## <a name="simplify-windows-enrollment-without-azure-ad-premium"></a>Simplificación de la inscripción de Windows sin Azure AD Premium
 Para simplificar la inscripción, cree un alias de servidor de nombres de dominio (DNS, tipo de registro CNAME) que redirija las solicitudes de inscripción a los servidores de Intune. De lo contrario, los usuarios que intenten conectarse a Intune deberán escribir el nombre del servidor de Intune durante la inscripción.
 
-**Paso 1: Crear CNAME** (opcional)<br>
+**Paso 1: Creación de CNAME** (opcional)<br>
 Cree registros de recursos DNS CNAME para el dominio de su empresa. Por ejemplo, si el sitio web de la empresa es contoso.com, debe crear un registro CNAME en DNS que redirija EnterpriseEnrollment.contoso.com a EnterpriseEnrollment-s.manage.microsoft.com.
 
 Aunque la creación de entradas DNS CNAME es opcional, los registros CNAME facilitan la inscripción para los usuarios. Si no se encuentra ningún registro CNAME de inscripción, se pedirá a los usuarios que escriban de forma manual el nombre del servidor MDM (enrollment.manage.microsoft.com).
@@ -83,7 +83,7 @@ El administrador de DNS de Contoso debe crear los CNAME siguientes:
 
 Los cambios en los registros DNS pueden tardar hasta 72 horas en propagarse. No se puede comprobar el cambio de DNS en Intune hasta que el registro DNS se propague.
 
-**Paso 2: Comprobar CNAME** (opcional)<br>
+**Paso 2: Comprobación de CNAME** (opcional)<br>
 1. En [Intune en Azure Portal](https://aka.ms/intuneportal), elija **Inscripción de dispositivos** > **Inscripción de Windows** > **Validación de CNAME**.
 2. En el cuadro **Dominio**, escriba el sitio web de empresa y, a continuación, haga clic en **Probar**.
 
@@ -102,4 +102,4 @@ Para más información sobre las tareas del usuario final, vea [Recursos sobre l
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-- [Consideraciones al administrar dispositivos Windows con Intune en Azure](/intune-classic/deploy-use/intune-on-azure).
+- [Consideraciones al administrar dispositivos Windows con Intune en Azure](intune-legacy-pc-client.md).

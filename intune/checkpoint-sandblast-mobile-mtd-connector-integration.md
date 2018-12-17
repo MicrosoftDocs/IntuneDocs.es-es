@@ -1,6 +1,6 @@
 ---
-title: SandBlast MTD de CheckPoint con Microsoft Intune
-titlesuffix: ''
+title: Integrar SandBlast MTD de Check Point
+titlesuffix: Microsoft Intune
 description: Cómo configurar SandBlast Mobile Threat Defense (MTD) de CheckPoint con Intune para controlar el acceso de los dispositivos móviles a los recursos corporativos.
 keywords: ''
 author: brenduns
@@ -15,13 +15,13 @@ ms.assetid: 1e9b1576-b239-48cc-a672-da6b5fb7be0a
 ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 6c0c9db9955c8fbf08e5a17d3a1f9fb3fdba2cd5
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-azure; seodec18
+ms.openlocfilehash: c0774ed0fbc354750ad53eedc5df03536520bde8
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184529"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112398"
 ---
 # <a name="integrate-check-point-sandblast-mobile-with-intune"></a>Integrar SandBlast Mobile de Check Point con Intune
 

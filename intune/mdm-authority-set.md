@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0eb3ccf85c8851f16dcfe303603f65517fcf7312
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 6f0138da6e9ea427ad07ad3b41dd22b7319bb044
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183764"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112585"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>Establecer la entidad de administración de dispositivos móviles
 
@@ -41,7 +41,7 @@ Las configuraciones posibles son:
 - **Administración de dispositivos móviles para Office 365**: integración de Office 365 con la solución de nube de Intune. Intune se configura desde el Centro de administración de Office 365. Incluye un subconjunto de las funcionalidades que están disponibles con la versión independiente de Intune. Establecer la entidad de MDM en el Centro de administración de Office 365.
 
 > [!IMPORTANT]
-> En la versión 1610 o posterior de Configuration Manager y en la versión 1705 de Microsoft Intune, puede cambiar la entidad de MDM sin tener que ponerse en contacto con el soporte técnico de Microsoft y sin necesidad de anular la inscripción de los dispositivos administrados existentes e inscribirlos de nuevo. Para más información, consulte [Qué hacer si se elige la configuración incorrecta de la entidad de MDM](/intune-classic/deploy-use/prerequisites-for-enrollment#what-to-do-if-you-choose-the-wrong-mdm-authority-setting).
+> En la versión 1610 o posterior de Configuration Manager y en la versión 1705 de Microsoft Intune, puede cambiar la entidad de MDM sin tener que ponerse en contacto con el soporte técnico de Microsoft y sin necesidad de anular la inscripción de los dispositivos administrados existentes e inscribirlos de nuevo. Para obtener detalles, consulte [Preparación ante el cambio de la entidad MDM a Configuration Manager](mdm-authority-set.md#prepare-to-change-the-mdm-authority-to-configuration-manager).
 
 ## <a name="set-mdm-authority-to-intune"></a>Establecimiento de la entidad de MDM en Intune
 
@@ -90,8 +90,8 @@ Revise la información siguiente para preparar el cambio de la entidad de MDM:
     > [!NOTE]    
     > Si la entidad de MDM muestra **Managed by Intune and Office 365** (Administrado por Intune y Office 365), los dispositivos de MDM administrados por Office 365 dejarán de administrarse cuando cambie la entidad de MDM a **Configuration Manager** (híbrido). Se recomienda asignar licencias a esos usuarios para Intune o Enterprise Mobility Suite antes de cambiar la entidad de MDM.   
 
-- En la [consola de administración de Microsoft Intune](http://manage.microsoft.com), vaya al rol Administrador de inscripción de dispositivos. Para ver más información, consulte [Eliminar un administrador de inscripción de dispositivos de Intune](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune#delete-a-device-enrollment-manager-from-intune).
-- Desactive las asignaciones de grupos de dispositivos que estén configuradas. Para obtener más información, consulte [Clasificar los dispositivos con la asignación de grupos de dispositivos en Microsoft Intune](/intune-classic/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune).
+- En la [consola de administración de Microsoft Intune](http://manage.microsoft.com), vaya al rol Administrador de inscripción de dispositivos. Para ver más información, consulte [Eliminar un administrador de inscripción de dispositivos de Intune](device-enrollment-manager-enroll.md#remove-device-enrollment-manager-permissions).
+- Desactive las asignaciones de grupos de dispositivos que estén configuradas. Para obtener más información, consulte [Clasificar los dispositivos con la asignación de grupos de dispositivos en Microsoft Intune](device-group-mapping.md).
 - No debería haber ningún impacto perceptible en los usuarios finales durante el cambio de entidad de MDM. Sin embargo, puede comunicar este cambio a los usuarios para asegurarse de que sus dispositivos están encendidos y de que se conectan al servicio pronto después del cambio. Esta precaución garantiza que se conectan tantos dispositivos como sea posible al servicio y que se registran en la nueva entidad lo antes posible.
 - Si usa Intune independiente para administrar dispositivos iOS antes del cambio de la entidad de MDM, debe asegurarse de que el mismo certificado de servicio de Apple Push Notification Service que se había utilizado previamente en Intune se renueva y se utiliza para configurar el inquilino de nuevo en Configuration Manager (híbrido).    
 

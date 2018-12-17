@@ -16,12 +16,12 @@ ms.reviewer: priyar
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 034919a7ae7d223a30b11b4c3aa1f495e028e89c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 00e8b0e35514fe583027d15fdcc810295aa9fa9e
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184631"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977293"
 ---
 # <a name="windows-10-app-deployment-using-microsoft-intune"></a>Implementación de aplicaciones Windows 10 con Microsoft Intune 
 
@@ -48,8 +48,8 @@ Según el tipo de aplicación, se puede instalar en un dispositivo Windows 10 de
 - **Contexto de usuario**: cuando se implementa una aplicación en el contexto de usuario, la aplicación administrada se instalará para ese usuario en el dispositivo cuando inicie sesión en el dispositivo. Tenga en cuenta que la instalación de la aplicación no surtirá efecto hasta que el usuario inicie sesión en el dispositivo. 
     - Las aplicaciones de línea de negocio modernas y las de Microsoft Store para Empresas (en línea y sin conexión) se pueden implementar en el contexto de usuario y serán compatibles con las intenciones Requerido y Disponible.
     - Las aplicaciones Win32 compiladas en **modo de usuario** o **modo dual** pueden implementarse en el contexto del usuario y admitir tanto intenciones **obligatorias** como **disponibles**. 
-- **Contexto de dispositivo**: cuando se implementa una aplicación en el contexto de dispositivo, la aplicación administrada se instalará directamente en el dispositivo de Intune.
-    - Solo las aplicaciones de línea de negocio modernas y las de Microsoft Store para Empresas con licencia en línea se pueden implementar en el contexto de dispositivo y solo admitirán la intención Requerido.
+- **Contexto de dispositivo**: al implementarse una aplicación en el contexto de dispositivo, la aplicación administrada se instalará directamente en el dispositivo de Intune.
+    - Solo las aplicaciones de línea de negocio modernas y las de Microsoft Store para Empresas con licencia sin conexión se pueden implementar en el contexto de dispositivo y solo admitirán la intención Requerido.
     - Las aplicaciones Win32 compiladas en **modo máquina** o **modo dual** pueden implementarse en el contexto del usuario y solo admitirán la intención **obligatoria**.
 
 > [!NOTE]
@@ -57,11 +57,11 @@ Según el tipo de aplicación, se puede instalar en un dispositivo Windows 10 de
 
 Cuando una aplicación se implementa en el contexto de dispositivo, solo se realizará correctamente la instalación cuando el destino sea un dispositivo que admite el contexto de dispositivo. Además, la implementación en el contexto de dispositivo admite las condiciones siguientes:
 - Si una aplicación se implementa en el contexto de dispositivo y está destinada a un usuario, se producirá un error en la instalación y se mostrarán el estado y el error siguientes en la consola de administración:
-    - Estado: Error.
-    - Error: Un usuario no puede ser destino de una instalación de contexto de dispositivo.
+    - Estado: erróneo.
+    - Error: un usuario no puede ser destino de una instalación de contexto de dispositivo.
 - Si una aplicación se implementa en el contexto de dispositivo pero se destina a un dispositivo que no lo admite, se producirá un error en la instalación con el estado y el error siguientes en la consola de administración:
-    - Estado: Error.
-    - Error: Esta plataforma no admite la instalación de contexto de dispositivo. 
+    - Estado: erróneo.
+    - Error: esta plataforma no admite la instalación de contexto de dispositivo. 
 
 > [!Note]
 > Después de guardar una asignación de aplicación con una implementación específica, no se puede modificar el contexto de esa asignación, excepto para las aplicaciones modernas. En el caso de las aplicaciones modernas, el contexto se puede cambiar de contexto de usuario a contexto de dispositivo. 

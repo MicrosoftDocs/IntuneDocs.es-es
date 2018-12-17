@@ -1,11 +1,11 @@
 ---
-title: 'Configuración personalizada para dispositivos Windows Holographic for Business en Microsoft Intune: Azure | Microsoft Docs'
+title: 'Configuración personalizada: dispositivos Windows Holographic for Business: Microsoft Intune'
 description: Agregue o cree un perfil personalizado para usar la configuración OMA-URI para dispositivos con Windows Holographic for Business en Microsoft Intune, incluido Microsoft Hololens. Puede establecer las opciones de los proveedores de servicios de configuración (CSP) de directivas AllowFastReconnect, AllowVPN, AllowUpdateService, UpdateServiceURL, RequireUpdatesApproval, ApprovedUpdates y ApplicationLaunchRestrictions.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2018
+ms.date: 12/06/2018
 ms.article: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,13 +13,13 @@ ms.topic: article
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: b66adc535d51fdaf2e3fc7a4bb1b11d34433db98
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: seodec18
+ms.openlocfilehash: 2c4e6041f00ad55b18f8b20996da8002f5ce0247
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185583"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032204"
 ---
 # <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>Uso de la configuración personalizada para dispositivos Windows Holographic for Business en Intune
 
@@ -40,23 +40,23 @@ En este artículo se muestra cómo crear un perfil personalizado para dispositiv
 3. Escriba los valores siguientes:
 
     - **Nombre**: escriba un nombre para el perfil, como `hololens custom profile`.
-    - **Descripción**: escriba una descripción para el perfil
+    - **Descripción**: escriba una descripción para el perfil.
     - **Plataforma**: seleccione **Windows 10 y versiones posteriores**.
     - **Tipo de perfil**: elija **Personalizado**.
 
 4. En **Configuración OMA-URI personalizada**, seleccione **Agregar**. Escriba los valores siguientes:
 
-    - **Nombre**: escriba un nombre único para el valor OMA-URI que le ayude a identificarlo en la lista de valores de configuración.
+    - **Nombre**: Escriba un nombre único para el valor OMA-URI que le ayude a identificarlo en la lista de valores de configuración.
     - **Descripción**: escriba una descripción con información general sobre la configuración y otros detalles importantes.
     - **OMA-URI** (distingue mayúsculas de minúsculas): escriba la configuración OMA-URI que quiere usar.
     - **Tipo de datos**: elija el tipo de datos que se usará para esta configuración OMA-URI. Las opciones son:
 
-        - Cadena
+        - String
         - Cadena (archivo XML)
         - Fecha y hora
         - Integer
         - Punto flotante
-        - Booleano
+        - Boolean
         - Base64 (archivo)
 
     - **Valor**: escriba el valor de datos que quiere asociar con la configuración OMA-URI especificada. El valor depende del tipo de datos que ha seleccionado. Por ejemplo, si elige **Fecha y hora**, debe seleccionar el valor en un selector de fecha.
@@ -110,7 +110,7 @@ La siguiente configuración es útil para dispositivos que ejecuten Windows Holo
 > [!div class="mx-tableFixed"]
 > |OMA-URI|Tipo de datos|
 > |---|---|
-> |./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl|Cadena<br/>URL: el dispositivo busca actualizaciones desde el servidor de WSUS en la URL especificada.<br/>No configurado: el dispositivo busca actualizaciones desde Microsoft Update.|
+> |./Vendor/MSFT/Policy/Config/Update/UpdateServiceUrl|String<br/>URL: el dispositivo busca actualizaciones desde el servidor de WSUS en la URL especificada.<br/>No configurado: el dispositivo busca actualizaciones desde Microsoft Update.|
 
 ### <a name="approvedupdateshttpsdocsmicrosoftcomwindowsclient-managementmdmupdate-csp"></a>[ApprovedUpdates](https://docs.microsoft.com/windows/client-management/mdm/update-csp)
 
@@ -124,7 +124,7 @@ La siguiente configuración es útil para dispositivos que ejecuten Windows Holo
 > [!div class="mx-tableFixed"]
 > |OMA-URI|Tipo de datos|
 > |----|---|
-> |./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br/><br/>**Importante**<br/>El artículo de AppLocker CSP usa ejemplos XML con escape. Para configurar los valores con perfiles personalizados de Intune, debe usar XML sin formato.|Cadena<br/>Para más información, consulte [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp) (CSP de AppLocker).|
+> |./Vendor/MSFT/AppLocker/ApplicationLaunchRestrictions/*Grouping*/*ApplicationType*/Policy<br/><br/>**Importante**<br/>El artículo de AppLocker CSP usa ejemplos XML con escape. Para configurar los valores con perfiles personalizados de Intune, debe usar XML sin formato.|String<br/>Para más información, consulte [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp) (CSP de AppLocker).|
 
 ### <a name="deletionpolicyhttpsdocsmicrosoftcomwindowsclient-managementmdmaccountmanagement-csp"></a>[DeletionPolicy](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
 
@@ -138,7 +138,7 @@ La siguiente configuración es útil para dispositivos que ejecuten Windows Holo
 > [!div class="mx-tableFixed"]
 > |OMA-URI|Tipo de datos|
 > |----|---|
-> |./Vendor/MSFT/AccountManagement/UserProfileManagement/EnableProfileManager|Booleano<br/>True - habilitar<br/>False - deshabilitar (valor predeterminado)|
+> |./Vendor/MSFT/AccountManagement/UserProfileManagement/EnableProfileManager|Boolean<br/>True - habilitar<br/>False - deshabilitar (valor predeterminado)|
 
 ### <a name="profileinactivitythresholdhttpsdocsmicrosoftcomwindowsclient-managementmdmaccountmanagement-csp"></a>[ProfileInactivityThreshold](https://docs.microsoft.com/windows/client-management/mdm/accountmanagement-csp)
 

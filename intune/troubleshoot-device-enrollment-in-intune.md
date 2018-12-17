@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: df84438ca93e50c392b085eb439abe02f074e5c3
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: cd238a7b779dd5e52e3cf8fb06c8f89db1f76559
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189731"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112932"
 ---
 # <a name="troubleshoot-device-enrollment-in-intune"></a>Solución de problemas con la inscripción de dispositivos en Intune
 
@@ -73,7 +73,7 @@ Para evitar alcanzar los límites de dispositivos, asegúrese de quitar los regi
 
 > [!NOTE]
 > 
-> Puede evitar llegar al límite de inscripciones de dispositivos mediante el uso de l cuenta de administradores de inscripción de dispositivos, tal como se describe en [Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune) (Inscribir dispositivos propiedad de la empresa con el administrador de inscripción de dispositivos de Microsoft Intune).
+> Puede evitar llegar al límite de inscripciones de dispositivos mediante el uso de l cuenta de administradores de inscripción de dispositivos, tal como se describe en [Enroll corporate-owned devices with the Device Enrollment Manager in Microsoft Intune](device-enrollment-manager-enroll.md) (Inscribir dispositivos propiedad de la empresa con el administrador de inscripción de dispositivos de Microsoft Intune).
 > 
 > Si agrega una cuenta de usuario a la cuenta de administradores de inscripción de dispositivos, esta no podrá realizar la inscripción al aplicarse la directiva de acceso condicional cuando ese usuario en cuestión inicie sesión.
 
@@ -136,7 +136,7 @@ Para evitar alcanzar los límites de dispositivos, asegúrese de quitar los regi
 **Problema:** este problema puede producirse cuando se agrega un segundo dominio comprobado a ADFS. Los usuarios con el sufijo del nombre principal de usuario (UPN) del segundo dominio no puedan iniciar sesión en los portales o inscribir dispositivos.
 
 
-<strong>Solución:</strong> los clientes de Microsoft Office 365 deben implementar una instancia independiente del Servicio de federación de AD FS 2.0 para cada sufijo si éstos:
+<strong>Solución:</strong> los clientes de Microsoft Office 365 deben implementar una instancia independiente del Servicio de federación de AD FS 2.0 para cada sufijo si estos:
 - usan el inicio de sesión único (SSO) a través de AD FS 2.0, y
 - tienen varios dominios de nivel superior para los sufijos de UPN de los usuarios de su organización (por ejemplo, @contoso.com o @fabrikam.com).
 
@@ -220,7 +220,7 @@ Si no funciona la solución 2, pida a los usuarios que sigan estos pasos para qu
 
 ### <a name="android-certificate-issues"></a>Problemas de certificados Android
 
-**Problema**: los usuarios reciben el siguiente mensaje en su dispositivo: *No puede iniciar sesión porque falta un certificado necesario en su dispositivo*.
+**Problema**: los usuarios reciben el siguiente mensaje en su dispositivo: *No puede iniciar sesión porque el dispositivo no tiene un certificado necesario.*
 
 **Solución 1**:
 
@@ -266,12 +266,12 @@ En la siguiente tabla se muestran los errores que los usuarios finales pueden en
 |Mensaje de error|Problema|Solución|
 |-------------|-----|----------|
 |NoEnrollmentPolicy|No se encuentra ninguna directiva de inscripción|Compruebe que todos los requisitos previos de inscripción, como el certificado Apple Push Notification Service (APNs), se han configurado y que "iOS como plataforma" está habilitado. Para obtener instrucciones, consulte [Configurar la administración de dispositivos iOS y Mac](ios-enroll.md).|
-|DeviceCapReached|Ya hay inscritos demasiados dispositivos móviles.|El usuario debe quitar uno de los dispositivos móviles actualmente inscritos desde el Portal de empresa antes de inscribir otro. Consulte las instrucciones del tipo de dispositivo que usa: [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios), [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows).|
+|DeviceCapReached|Ya hay inscritos demasiados dispositivos móviles.|El usuario debe quitar uno de los dispositivos móviles actualmente inscritos desde el Portal de empresa antes de inscribir otro. Consulte las instrucciones del tipo de dispositivo que usa: [Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android), [iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios) y [Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows).|
 |APNSCertificateNotValid|Existe un problema con el certificado que permite al dispositivo móvil comunicarse con la red de empresa.<br /><br />|Apple Push Notification Service (APNs) proporciona un canal para ponerse en contacto con dispositivos iOS inscritos. Se producirá un error de inscripción y aparecerá este mensaje si:<ul><li>No se han completado los pasos necesarios para obtener un certificado de APNs, o</li><li>El certificado de APNs ha expirado.</li></ul>Consulte la información sobre cómo configurar usuarios en [Sincronizar Active Directory y agregar usuarios a Intune](users-add.md) y [Organizar usuarios y dispositivos](groups-add.md).|
 |AccountNotOnboarded|Existe un problema con el certificado que permite al dispositivo móvil comunicarse con la red de empresa.<br /><br />|Apple Push Notification Service (APNs) proporciona un canal para ponerse en contacto con dispositivos iOS inscritos. Se producirá un error de inscripción y aparecerá este mensaje si:<ul><li>No se han completado los pasos necesarios para obtener un certificado de APNs, o</li><li>El certificado de APNs ha expirado.</li></ul>Para más información, consulte [Configurar la administración de dispositivos iOS y Mac con Microsoft Intune](ios-enroll.md).|
 |DeviceTypeNotSupported|Es posible que el usuario haya intentado inscribirse con un dispositivo que no sea iOS. No se admite el tipo de dispositivo móvil que intenta inscribir.<br /><br />Confirme que el dispositivo ejecuta iOS versión 8.0 o posterior.<br /><br />|Compruebe que el dispositivo del usuario ejecute la versión 8.0 de iOS o una posterior.|
 |UserLicenseTypeInvalid|No se puede inscribir el dispositivo porque la cuenta del usuario todavía no es miembro de un grupo de usuarios requerido.<br /><br />|Antes de que los usuarios puedan inscribir los dispositivos, deben ser miembros del grupo de usuarios correcto. Este mensaje significa que tienen el tipo de licencia incorrecto para la entidad de administración de dispositivos móviles. Por ejemplo, verá este error si se cumplen las dos condiciones siguientes:<ol><li>Se ha establecido Intune como la entidad de administración de dispositivos móviles</li><li>usan una licencia de System Center 2012 R2 Configuration Manager.</li></ol>Vea los artículos siguientes para obtener más información:<br /><br />Consulte [Configurar la administración de iOS y Mac con Microsoft Intune](ios-enroll.md) y la información sobre cómo configurar usuarios en [Sincronizar Active Directory y agregar usuarios a Intune](users-add.md) y [Organizar usuarios y dispositivos](groups-add.md).|
-|MdmAuthorityNotDefined|La entidad de administración de dispositivos móviles no se ha definido.<br /><br />|La entidad de administración de dispositivos móviles no se ha configurado en Intune.<br /><br />Revise el primer elemento de la sección "Paso 6: inscribir dispositivos móviles e instalar una aplicación" en [Empezar a trabajar con una versión de prueba de 30 días de Microsoft Intune](free-trial-sign-up.md).|
+|MdmAuthorityNotDefined|La entidad de administración de dispositivos móviles no se ha definido.<br /><br />|La entidad de administración de dispositivos móviles no se ha configurado en Intune.<br /><br />Elemento de revisión #1 en el "Paso 6": Inscriba dispositivos móviles e instale una sección de la aplicación en [Empezar a trabajar con una versión de prueba de 30 días de Microsoft Intune](free-trial-sign-up.md).|
 
 ### <a name="devices-are-inactive-or-the-admin-console-cant-communicate-with-them"></a>Los dispositivos están inactivos o la consola de administración no puede comunicarse con ellos
 **Problema:** los dispositivos iOS no se están registrando con el servicio Intune. Los dispositivos deben registrarse periódicamente con el servicio para mantener el acceso a recursos corporativos protegidos. Si los servicios no se registran:
@@ -280,7 +280,7 @@ En la siguiente tabla se muestran los errores que los usuarios finales pueden en
 - Muestran un estado de administración de **Incorrecto** en la consola del administrador.
 - Los usuarios que están protegidos por directivas de acceso condicional pueden perder el acceso a los recursos corporativos.
 
-**Resolución:** comparta las soluciones siguientes con los usuarios finales para ayudarles a recuperar el acceso a recursos corporativos.
+**Solución:** comparta las resoluciones siguientes con los usuarios finales para ayudarles a recuperar el acceso a recursos corporativos.
 
 Cuando los usuarios inician la aplicación de Portal de empresa de iOS, puede indicar si el dispositivo ha perdido el contacto con Intune. Si detecta que no hay ningún contacto, intenta automáticamente sincronizar con Intune para volver a conectar (los usuarios verán el mensaje **Intentando sincronizar…** ).
 
@@ -337,7 +337,7 @@ Para obtener más información, consulte los [procedimientos recomendados para p
 - Puede que haya descargado el certificado MDM de una cuenta y que lo haya usado en otra cuenta.
 
 
-**Resolución:** revise los siguientes archivos de registro para ver si contienen errores:
+**Solución:** revise los siguientes archivos de registro para ver si contienen errores:
 
 - dmpdownloader.log
 - ddm.log
@@ -356,7 +356,7 @@ Este problema puede ocurrir si:
 - hay una interrupción temporal de los servicios de Apple, o
 - la inscripción de iOS está configurada para usar tokens de VPP como se muestra en la tabla, pero hay algún problema con el token de VPP.
 
-| Configuración de la inscripción | Value |
+| Configuración de la inscripción | Valor |
 | ---- | ---- |
 | Plataforma | iOS |
 | Afinidad de usuario | Inscribir con afinidad de usuario |
@@ -450,7 +450,7 @@ Encontrará una lista de errores de inscripción de iOS en nuestra documentació
 
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>El equipo ya está inscrito. Error hr 0x8007064c
-**Problema:** la inscripción produce un error con el mensaje **The machine is already enrolled** (El equipo ya está inscrito). El registro de inscripción muestra el error **hr 0x8007064c**.
+**Problema:** la inscripción produce un error con el mensaje **El equipo ya está inscrito**. El registro de inscripción muestra el error **hr 0x8007064c**.
 
 Este error puede deberse a que el equipo:
 - se inscribió anteriormente, o
@@ -464,9 +464,9 @@ El certificado de cuenta de la cuenta anterior sigue estando presente en el equi
 1. Haga doble clic en **Certificados**, seleccione **Cuenta de equipo** > **Siguiente** y, luego, **Equipo local**.
 1. Haga doble clic en **Certificados (equipo local)** y seleccione **Certificados personales**.
 1. Busque el certificado de Intune emitido por Sc_Online_Issuing y elimínelo si está presente.
-1. Elimine esta clave del Registro si existe:  **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** y todas las subclaves.
+1. Si existe la siguiente clave del Registro, elimínela: **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\OnlineManagement regkey** y todas las subclaves.
 1. Intente volver a realizar la inscripción.
-1. Si todavía no puede inscribir el equipo, busque y elimine esta clave, si existe: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**.
+1. Si todavía no se puede inscribir el equipo, busque y elimine esta clave, si existe: **KEY_CLASSES_ROOT\Installer\Products\6985F0077D3EEB44AB6849B5D7913E95**.
 1. Intente volver a realizar la inscripción.
 
     > [!IMPORTANT]
@@ -491,7 +491,7 @@ El certificado de cuenta de la cuenta anterior sigue estando presente en el equi
 |0x80043008, 0x80CF3008|No se pudo iniciar el servicio de actualización de Microsoft Online Management.|Póngase en contacto con el servicio de soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune](get-support.md) (Cómo obtener soporte técnico de Microsoft Intune).|
 |0x80043009, 0x80CF3009|El equipo cliente ya está inscrito en el servicio.|Debe retirar el equipo cliente para poder volver a inscribirlo en el servicio.|
 |0x8004300B, 0x80CF300B|No se puede ejecutar el paquete de instalación del software cliente porque no se admite la versión de Windows que se está ejecutando en el cliente.|Intune no es compatible con la versión de Windows que se está ejecutando en el equipo cliente.|
-|0xAB2|Windows Installer no pudo tener acceso al tiempo de ejecución de VBScript para una acción personalizada.|Este error está causado por una acción personalizada basada en Bibliotecas de vínculos dinámicos (DLL). Cuando solucione problemas de DLL, quizás deba usar las herramientas que se describen en [INFO: Herramientas útiles para el paquete y los problemas de implementación ](https://support.microsoft.com/kb/198038).|
+|0xAB2|Windows Installer no pudo tener acceso al tiempo de ejecución de VBScript para una acción personalizada.|Este error está causado por una acción personalizada basada en Bibliotecas de vínculos dinámicos (DLL). Para solucionar problemas de archivos DLL, es posible que deba utilizar las herramientas que se describen en el [KB198038 de Soporte Microsoft: Herramientas útiles para problemas de implementación y de paquete](https://support.microsoft.com/kb/198038).|
 |0x80cf0440|Se terminó la conexión al extremo de servicio.|La cuenta de prueba o de pago está suspendida. Cree una nueva cuenta de prueba o de pago y vuelva a realizar la inscripción.|
 
 
