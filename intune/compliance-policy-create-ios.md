@@ -15,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 35091139e3afaabac4fad0b22fc6096cf7ada7c3
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 41ae1ffc17eee93b45f00e4eef5590f6a5d0b7b4
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728878"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112517"
 ---
 # <a name="add-a-device-compliance-policy-for-ios-devices-in-intune"></a>Agregación de una directiva de cumplimiento para dispositivos iOS en Intune
 
@@ -66,31 +66,31 @@ En la tabla siguiente se describe cómo administrar la configuración de no conf
 
 ## <a name="email"></a>Correo electrónico
 
-- **Requerir que los dispositivos móviles tengan un perfil de correo electrónico administrado**: si establece esta opción en Requerir, los dispositivos que no tengan un perfil de correo electrónico administrado por Intune se considerarán no compatibles. Un dispositivo puede no tener un perfil de correo electrónico administrado cuando no tenga definido correctamente el destino, o si el usuario configura manualmente la cuenta de correo electrónico en el dispositivo.
+- **Requerir que los dispositivos móviles tengan un perfil de correo electrónico administrado**: si selecciona esta opción, los dispositivos que no tienen un perfil de correo electrónico administrado por Intune se considerarán no compatibles. Un dispositivo puede no tener un perfil de correo electrónico administrado cuando no tenga definido correctamente el destino, o si el usuario configura manualmente la cuenta de correo electrónico en el dispositivo.
 
   El dispositivo se considera no conforme en las situaciones siguientes:
   - El perfil de correo electrónico se implementa en un grupo de usuarios distinto del grupo de usuarios al que se dirige la directiva de cumplimiento.
   - El usuario ya tiene configurada una cuenta de correo electrónico en el dispositivo que coincide con el perfil de correo electrónico de Intune implementado en dicho dispositivo. Intune no puede sobrescribir el perfil implementado por el usuario y, por tanto, no puede administrarlo. Para garantizar el cumplimiento, el usuario debe quitar la configuración de correo electrónico existente. De este modo, Intune puede instalar el perfil de correo electrónico administrado.
 
-- **Seleccione el perfil de correo electrónico que Intune debe administrar**: si se selecciona la opción **Intune debe administrar la cuenta de correo electrónico**, elija **Seleccionar** para especificar el perfil de correo electrónico de Intune. El perfil de correo electrónico debe estar presente en el dispositivo.
+- **Seleccionar el perfil de correo electrónico que debe administrarse mediante Intune**: si se selecciona la opción **Intune debe administrar la cuenta de correo electrónico**, elija **Seleccionar** para especificar el perfil de correo electrónico de Intune. El perfil de correo electrónico debe estar presente en el dispositivo.
 
-Para más información sobre los perfiles de correo electrónico, consulte [Configurar el acceso al correo electrónico corporativo mediante perfiles de correo electrónico con Microsoft Intune](https://docs.microsoft.com/intune-classic/deploy-use/configure-access-to-corporate-email-using-email-profiles-with-microsoft-intune).
+Para más información sobre los perfiles de correo electrónico, consulte [Configurar el acceso al correo electrónico corporativo mediante perfiles de correo electrónico con Microsoft Intune](email-settings-configure.md).
 
 ## <a name="device-health"></a>Device health
 
-- **Dispositivos con Jailbreak**: si habilita esta configuración, los dispositivos con Jailbreak no serán compatibles.
-- **Requerir que el dispositivo tenga el nivel de amenaza del dispositivo** (iOS 8.0 y posterior): elija el nivel de amenaza máximo para marcar los dispositivos como no compatibles. Los dispositivos que superan este nivel de amenaza se marcan como no compatibles:
-  - **Protegido**: esta opción es la más segura y el dispositivo no puede tener ninguna amenaza. Si se detecta cualquier nivel de amenaza en el dispositivo, se evaluará como no conforme.
-  - **Bajo**: el dispositivo se evalúa como conforme si solo hay amenazas de nivel bajo. Cualquier valor por encima coloca al dispositivo en un estado de no conformidad.
-  - **Medio:** el dispositivo se evalúa como compatible si las amenazas existentes en él son de nivel bajo o medio. Si se detecta que el dispositivo tiene amenazas de nivel alto, se determina como no conforme.
-  - **Alto**: esta opción es la menos segura, ya que permite que todos los niveles de amenaza. Quizás sea útil si utiliza esta solución solo con fines informativos.
+- **Dispositivos con Jailbreak**: si habilita esta opción, los dispositivos con Jailbreak no son compatibles.
+- **Requerir que el dispositivo tenga el nivel de amenaza del dispositivo** (iOS 8.0 y posterior): elija el nivel de amenaza máximo para marcar los dispositivos como no conforme. Los dispositivos que superan este nivel de amenaza se marcan como no compatibles:
+  - **Protegido**: esta opción es la más segura, ya que el dispositivo no puede tener ninguna amenaza. Si se detecta cualquier nivel de amenaza en el dispositivo, se evaluará como no conforme.
+  - **Baja**: el dispositivo se evalúa como compatible si solo hay amenazas de nivel bajo. Cualquier valor por encima coloca al dispositivo en un estado de no conformidad.
+  - **Media**: el dispositivo se evalúa como compatible si las amenazas existentes en él son de nivel bajo o medio. Si se detecta que el dispositivo tiene amenazas de nivel alto, se determina como no conforme.
+  - **Alta**: esta opción es la menos segura y permite que todos los niveles de amenaza. Quizás sea útil si utiliza esta solución solo con fines informativos.
 
 ## <a name="device-properties"></a>Propiedades del dispositivo
 
-- **SO mínimo requerido:** cuando un dispositivo no cumpla el requisito de versión de SO mínima, se notificará como no compatible. Además, se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario puede elegir actualizar su dispositivo. Después de eso, puede acceder a los recursos de la empresa.
-- **Maximum OS version allowed** (Versión de SO máxima permitida): cuando un dispositivo usa una versión de SO posterior a la especificada en la regla, se bloquea el acceso a los recursos de la empresa y se solicita al usuario que se ponga en contacto con el administrador de TI. Mientras no se cambie la regla para permitir la versión de SO, este dispositivo no podrá obtener acceso a los recursos de la empresa.
-- **Minimum OS build version** (Versión mínima de compilación del sistema operativo): cuando Apple publica actualizaciones de seguridad, habitualmente se actualiza el número de compilación, no la versión del sistema operativo. Use esta característica para escribir un número de compilación mínimo permitido en el dispositivo. Esta comprobación de cumplimiento admite dispositivos que ejecutan iOS 8.0 y versiones posteriores. 
-- **Maximum OS build version** (Versión máxima de compilación del sistema operativo): cuando Apple publica actualizaciones de seguridad, habitualmente se actualiza el número de compilación, no la versión del sistema operativo. Use esta característica para escribir un número de compilación máximo permitido en el dispositivo. Esta comprobación de cumplimiento admite dispositivos que ejecutan iOS 8.0 y versiones posteriores.
+- **Sistema operativo mínimo requerido**: cuando un dispositivo no cumple el requisito de versión mínima del sistema operativo, se notifica como no compatible. Además, se mostrará un vínculo con información sobre cómo actualizar el sistema. El usuario puede elegir actualizar su dispositivo. Después de eso, puede acceder a los recursos de la empresa.
+- **Versión de sistema operativo máxima permitida**: cuando un dispositivo usa una versión de SO posterior a la especificada en la regla, se bloquea el acceso a los recursos de la empresa. y se solicita al usuario que se ponga en contacto con el administrador de TI. Mientras no se cambie la regla para permitir la versión de SO, este dispositivo no podrá obtener acceso a los recursos de la empresa.
+- **Versión de compilación mínima del sistema operativo**: cuando Apple publica actualizaciones de seguridad, habitualmente se actualiza el número de compilación, no la versión del sistema operativo. Use esta característica para escribir un número de compilación mínimo permitido en el dispositivo. Esta comprobación de cumplimiento admite dispositivos que ejecutan iOS 8.0 y versiones posteriores. 
+- **Versión de compilación máxima del sistema operativo**: cuando Apple publica actualizaciones de seguridad, habitualmente se actualiza el número de compilación, no la versión del sistema operativo. Use esta característica para escribir un número de compilación máximo permitido en el dispositivo. Esta comprobación de cumplimiento admite dispositivos que ejecutan iOS 8.0 y versiones posteriores.
 
 ## <a name="system-security"></a>Seguridad del sistema
 
@@ -99,17 +99,17 @@ Para más información sobre los perfiles de correo electrónico, consulte [Conf
 > [!NOTE]
 > Después de poner en marcha una directiva de configuración o cumplimiento en un dispositivo iOS, cada 15 minutos se pedirá al usuario que establezca un código de acceso y se le seguirá pidiendo hasta que se establezca un código de acceso.
 
-- **Requerir una contraseña para desbloquear dispositivos móviles**: **requiere** que los usuarios escriban una contraseña antes de poder tener acceso a sus dispositivos. Los dispositivos iOS que usan una contraseña están cifrados.
-- **Contraseñas sencillas**: establezca esta opción en **Bloquear** para que los usuarios no puedan crear contraseñas sencillas como **1234** o **1111**. Establézcala en **No configurado** para permitir a los usuarios crear contraseñas como **1234** o **1111**.
-- **Longitud mínima de la contraseña**: indique el número mínimo de dígitos o caracteres que debe tener la contraseña.
+- **Requerir una contraseña para desbloquear dispositivos móviles**: **exija** a los usuarios que escriban una contraseña para acceder al dispositivo. Los dispositivos iOS que usan una contraseña están cifrados.
+- **Contraseñas sencillas**: establezca esta opción en **Bloquear** para que los usuarios no puedan crear contraseñas sencillas, como **1234** o **1111**. Establézcala en **No configurado** para permitir a los usuarios crear contraseñas como **1234** o **1111**.
+- **Longitud mínima de la contraseña**: especifique el número mínimo de dígitos o caracteres que debe tener la contraseña.
 - **Tipo de contraseña requerida**: elija si una contraseña debe tener solo caracteres **numéricos** o si es necesario combinar números y otros caracteres (**alfanuméricos**).
-- **Number of non-alphanumeric characters in password** (Número de caracteres no alfanuméricos de la contraseña): indique el número mínimo de caracteres especiales (&, #, %, !, etc.) que se deben incluir en la contraseña.
+- **Número de caracteres no alfanuméricos en la contraseña**: escriba el número mínimo de caracteres especiales (&, #, %,!, etc.) que se deben incluida en la contraseña.
 
     Para establecer un número mayor, es necesario que el usuario cree una contraseña más compleja.
 
-- **Máximo de minutos de inactividad antes de solicitar la contraseña**: indique el tiempo de inactividad que transcurre antes de que el usuario deba volver a escribir la contraseña.
-- **Expiración de la contraseña (días)**: seleccione el número de días que faltan para que la contraseña expire y se deba crear una nueva.
-- **Número de contraseñas anteriores que no se pueden reutilizar**: indique el número de contraseñas usadas anteriormente que no se pueden usar.
+- **Máximo de minutos de inactividad antes de solicitar la contraseña**: especifique el tiempo de inactividad antes de que el usuario deba volver a escribir la contraseña.
+- **Expiración de la contraseña (días)**: seleccione el número de días que faltan para que expire la contraseña y se deba crear una nueva.
+- **Número de contraseñas anteriores que no se pueden reutilizar**: escriba el número de contraseñas usadas previamente que no se pueden volver a usar.
 
 ### <a name="restricted-applications"></a>Aplicaciones restringidas 
 Puede restringir aplicaciones si agrega sus identificadores de lote a la directiva. Después, si un dispositivo tiene instalada la aplicación, el dispositivo se marcará como no conforme. 

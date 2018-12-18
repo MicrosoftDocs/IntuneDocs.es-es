@@ -1,6 +1,7 @@
 ---
-title: Edición anticipada
-description: ''
+title: Edición anticipada - Microsoft Intune
+titlesuffix: ''
+description: Edición anticipada de Microsoft Intune
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,18 +16,18 @@ ROBOTS: NOINDEX,NOFOLLOW
 ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: d00c367cdcd0b8172d64c3ebbcd0dec2165407c9
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.custom: seodec18
+ms.openlocfilehash: 35298713738c666ca19d57e647412729a85bbc4a
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829137"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112840"
 ---
 # <a name="the-early-edition-for-microsoft-intune---december-2018"></a>La edición anticipada para Microsoft Intune, diciembre de 2018
 
 > [!Note]
-> Notificación del acuerdo de confidencialidad: Los siguientes cambios están en fase de desarrollo para Intune. Esta información se comparte en el acuerdo de confidencialidad de forma muy limitada. No publique esta información en redes sociales ni sitios web públicos, como Twitter, UserVoice, Reddit, etc. 
+> Notificación de acuerdo de confidencialidad: Los siguientes cambios están en fase de desarrollo de Intune. Esta información se comparte en el acuerdo de confidencialidad de forma muy limitada. No publique esta información en redes sociales ni sitios web públicos, como Twitter, UserVoice, Reddit, etc. 
 
 La **edición anticipada** proporciona una lista de características, compartidas en el acuerdo de confidencialidad, que se incluirán en las próximas versiones de Microsoft Intune. Esta información se proporciona conforme a una base limitada y está sujeta a cambios. No publique en un tweet, divulgue en UserVoice ni comparta de otra manera esta información fuera de su empresa. Algunas de las características enumeradas aquí corren el riesgo de no cumplir las fechas límite y pueden retrasarse hasta una versión futura. Otras características se están probando en una prueba piloto (distribución de paquetes piloto) para asegurarse de que están preparadas para el cliente. Si tiene alguna pregunta o problema, póngase en contacto con su contacto del grupo de productos de Microsoft.
 
@@ -48,10 +49,21 @@ Para los dispositivos Android en un escenario de implementación de directiva de
 ### <a name="new-options-to-automatically-connect-and-persist-rules-when-using-dns-settings-on-windows-10-and-later-devices----1333665-2999078---"></a>Nuevas opciones para conectarse automáticamente y conservar las reglas al usar la configuración DNS en dispositivos Windows 10 y posteriores <!-- 1333665, 2999078 -->
 En dispositivos Windows 10 y posteriores, podrá crear un perfil de configuración de VPN que incluya una lista de servidores DNS para resolver dominios, como contoso.com. Esto incluirá una nueva configuración para la resolución de nombres (**Configuración del dispositivo** > **Perfiles** > **Crear perfil** > Elegir **Windows 10 y versiones posteriores** para la plataforma > Elegir **VPN** para el tipo de perfil > **Configuración DNS** >**Agregar**): 
 
-- **Conectarse automáticamente**: si la opción está **habilitada**, el dispositivo se conecta automáticamente a la VPN cuando un dispositivo se conecta a un dominio especificado, como contoso.com.
-- **Persistente**: de manera predeterminada, todas las reglas de la tabla de directivas de resolución de nombres (NRPT) están activas siempre que el dispositivo esté conectado a través de este perfil de VPN. Si esta opción está **habilitada** en una regla de NRPT, la regla sigue activa en el dispositivo incluso si la VPN se desconecta o si se quita el perfil de VPN. La regla permanece hasta que se quita manualmente, lo que se puede hacer mediante PowerShell.
+- **Conectar automáticamente**: si esta opción está **Habilitada**, el dispositivo se conecta automáticamente a la VPN cuando se comunica con un dominio especificado, como contoso.com.
+- **Persistente**: de manera predeterminada, todas las reglas de la tabla de directivas de resolución de nombres (NRPT) están activas siempre que el dispositivo esté conectado mediante este perfil de VPN. Si esta opción está **habilitada** en una regla de NRPT, la regla sigue activa en el dispositivo incluso si la VPN se desconecta o si se quita el perfil de VPN. La regla permanece hasta que se quita manualmente, lo que se puede hacer mediante PowerShell.
 
 [Configuración de VPN de Windows 10](vpn-settings-windows-10.md) describe la lista actual de configuraciones. 
+
+### <a name="use-smime-to-encrypt-and-sign-a-users-multiple-devices-----1333642-eeready---"></a>Uso de S/MIME para cifrar y firmar varios dispositivos de un usuario <!-- 1333642 eeready -->
+Se admite el cifrado de correo electrónico S/MIME mediante un nuevo perfil de certificado importado (**Configuración del dispositivo** > **Perfiles** > **Crear perfil** > seleccione la plataforma > tipo de perfil **Certificado PKCS importado**). En Intune, puede importar los certificados en formato PFX. Después, Intune puede entregar esos mismos certificados a varios dispositivos inscritos por un solo usuario. Esto también incluye lo siguiente:
+
+- El perfil de correo electrónico de iOS nativo permite habilitar el cifrado S/MIME mediante certificados importados en formato PFX.
+- La aplicación de correo nativo de los dispositivos Windows Phone 10 usa automáticamente el certificado S/MIME.
+- Los certificados privados se pueden entregar en varias plataformas. Aun así, no todas las aplicaciones de correo electrónico son compatibles con S/MIME.
+- En otras plataformas, podría tener que configurar manualmente la aplicación de correo electrónico para habilitar S/MIME.  
+- Las aplicaciones de correo electrónico que admiten el cifrado S/MIME pueden controlar la recuperación de certificados para el cifrado de correo electrónico S/MIME de una manera que no es compatible con un servicio MDM, por ejemplo, si los lee desde el almacén de certificados del publicador.
+
+Compatible con: Windows, Windows Phone 10, macOS, iOS, Android
 
 ### <a name="help-and-support-page-in-the-windows-company-portal-app----1488939---"></a>Página de Ayuda y soporte técnico en la aplicación Portal de empresa de Windows <!-- 1488939 -->
 Se agregará una página nueva a la aplicación Portal de empresa de Windows. La página de ayuda y soporte técnico brindará la información de contacto del departamento de soporte técnico. Además, los usuarios finales podrán enviar registros de Portal de empresa en caso de tener errores. La página también proporciona una sección con las preguntas más frecuentes para ayudar a los usuarios finales.
@@ -59,9 +71,6 @@ Se agregará una página nueva a la aplicación Portal de empresa de Windows. La
 ### <a name="use-trusted-network-detection-for-vpn-profiles-on-windows-10-devices----1500165---"></a>Uso de la detección de redes de confianza para perfiles de VPN en dispositivos Windows 10 <!-- 1500165 -->
 Al usar la detección de redes de confianza, podrá impedir que los perfiles de VPN creen automáticamente una conexión VPN cuando el usuario ya está en una red de confianza. Podrá agregar sufijos DNS para habilitar la detección de redes de confianza en dispositivos que ejecutan Windows 10 y versiones posteriores (**Configuración del dispositivo** > **Perfiles** > **Crear perfil** > **Windows 10 y versiones posteriores** para la plataforma > **VPN** para el tipo de perfil).
 [Configuración de VPN de Windows 10](vpn-settings-windows-10.md) muestra la configuración de VPN actual.
-
-### <a name="support-for-android-corporate-owned-fully-managed-devices----574342---"></a>Compatibilidad con dispositivos Android totalmente administrados de propiedad corporativa <!-- 574342 -->
-Intune admitirá dispositivos Android totalmente administrados, un escenario de "propietario de dispositivo" de propiedad corporativa en el departamento de TI administra de manera rigurosa los dispositivos y estos están asociados a usuarios individuales. Esto permite que los administradores administren todo el dispositivo, apliquen una amplia variedad de controles de directivas no disponibles para los perfiles de trabajo y restrinjan las instalaciones de aplicaciones por parte de los usuarios solo a Google Play administrado. Para configurar dispositivos Android totalmente administrados, vaya a **Dispositivo administrado** > **Inscripción de Android** > **Corporate-owned, fully managed user devices** (Dispositivos de usuario totalmente administrados de propiedad corporativa).
 
 ### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>El SDK de aplicaciones de Intune admitirá claves de cifrado de 256 bits <!-- 1832174 -->
 El SDK de aplicaciones de Intune para iOS usará claves de cifrado de 256 bits cuando el cifrado esté habilitado mediante las directivas de protección de aplicaciones. El SDK seguirá siendo compatible con las claves de 128 bits para mantener la compatibilidad con el contenido y las aplicaciones que usen las versiones anteriores del SDK.
@@ -99,11 +108,14 @@ Podrá crear un perfil de correo electrónico que incluya otra configuración. E
 [Opciones de configuración de correo electrónico iOS](email-settings-ios.md) muestra la configuración actual.
 
 ### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509---"></a>Omisión de más pantallas del Asistente de configuración de un dispositivo DEP iOS <!-- 2687509 -->
-Además de las pantallas que actualmente puede omitir, podrá configurar los dispositivos DEP iOS para que omitan estas pantallas del Asistente de configuración cuando un usuario inscriba el dispositivo: Todo de visualización, Privacidad, Migración de Android, Botón Inicio, iMessage y FaceTime, Incorporación, Migración de Watch, Apariencia, Tiempo de uso, Actualización de software, Configuración de SIM.
+Además de las pantallas que actualmente se pueden omitir, podrá establecer dispositivos DEP de iOS para omitir las pantallas siguientes en el Asistente de configuración cuando un usuario inscribe el dispositivo: Tono de pantalla, Privacidad, Migración de Android, botón Inicio, iMessage y FaceTime, Incorporación, Migración de Watch, Apariencia, Tiempo de uso, Actualización de software, Configuración de SIM.
 Para elegir qué pantallas omitir, vaya a **Inscripción de dispositivos** > **Inscripción de Apple** > **Tokens del programa de inscripción** > elija un token > **Perfiles** > elija un perfil > **Propiedades** > **Personalización del Asistente de configuración** > elija **Ocultar** en todas las pantallas que quiera omitir > **Aceptar**.
 
 ### <a name="some-bitlocker-settings-support-windows-10-pro-edition---2727036---"></a>Algunas opciones de configuración de BitLocker admiten Windows 10 Pro Edition<!-- 2727036 -->
 Podrá crear un perfil de configuración que establezca los ajustes de Endpoint Protection en dispositivos Windows 10, incluido BitLocker. Esto agrega compatibilidad con Windows 10 Professional Edition en algunas configuraciones de BitLocker. Para ver la configuración de la edición de Windows 10 actual, consulte [Configuración de Endpoint Protection para Windows 10](endpoint-protection-windows-10.md#windows-encryption).
+Intune proporcionará campos adicionales con información sobre el dispositivo, incluido el fabricante de Android, el modelo, la versión de la revisión de seguridad y el modelo de iOS. En Intune, estos campos estarán disponibles si selecciona **Aplicaciones cliente** > **Estado de protección de aplicaciones** y elige **Informe de protección de aplicaciones: iOS, Android**. Además, estos parámetros lo ayudarán a configurar la lista de **admitidos** correspondiente al fabricante de dispositivo (Android), la lista de **admitidos** del modelo de dispositivo (iOS y Android) y la configuración de versión de la revisión de seguridad mínima de Android. 
+
+### <a name="intune-device-reporting-fields----2748738---"></a>Campos de informes de dispositivo de Intune <!-- 2748738 -->
 Intune proporcionará campos adicionales con información sobre el dispositivo, incluido el fabricante de Android, el modelo, la versión de la revisión de seguridad y el modelo de iOS. En Intune, estos campos estarán disponibles si selecciona **Aplicaciones cliente** > **Estado de protección de aplicaciones** y elige **Informe de protección de aplicaciones: iOS, Android**. Además, estos parámetros lo ayudarán a configurar la lista de **admitidos** correspondiente al fabricante de dispositivo (Android), la lista de **admitidos** del modelo de dispositivo (iOS y Android) y la configuración de versión de la revisión de seguridad mínima de Android. 
 
 ### <a name="shared-device-configuration-is-renamed-to-lock-screen-message-for-ios-devices-in-the-azure-portal----2809362---"></a>El nombre de Configuración de un dispositivo compartido se cambia a Mensaje de la pantalla de bloqueo para dispositivos iOS en Azure Portal <!-- 2809362 -->
@@ -136,9 +148,9 @@ Para ver la configuración actual, vaya a la [configuración de restricciones de
 Se aplica a: Windows 10 y versiones posteriores
 
 ### <a name="administrative-templates-are-in-public-preview-and-moved-to-their-own-configuration-profile----3322847---"></a>Las plantillas administrativas están en versión preliminar pública y se movieron a su propio perfil de configuración <!-- 3322847 -->
-Las plantillas administrativas de Intune (**Configuración del dispositivo** > **Plantillas administrativas**) están actualmente en versión preliminar privada. Con esta actualización, las plantillas administrativas incluyen cerca de 300 configuraciones que se pueden administrar en Intune. Anteriormente, estas configuraciones solo existían en el editor de directivas de grupo.
+Las plantillas administrativas de Intune (**Configuración del dispositivo** > **Plantillas administrativas**) están actualmente en versión preliminar privada. Con esta actualización: las plantillas administrativas incluyen cerca de 300 valores de configuración que se pueden administrar en Intune. Anteriormente, estas configuraciones solo existían en el editor de directivas de grupo.
 Las plantillas administrativas están disponibles en versión preliminar pública y se mueven desde **Configuración del dispositivo** > **Plantillas administrativas** a **Configuración del dispositivo** > **Perfiles** >**Crear perfil** > en **Plataforma**, elija **Windows 10 y versiones posteriores**, en **Tipo de perfil**, elija **Plantillas administrativas**.
-El envío de informes está habilitado. Se aplica a: Windows 10 y versiones posteriores
+Se habilita el informe; se aplica a: Windows 10 y versiones posteriores
 
 
 <!-- 1810 start -->
@@ -154,9 +166,9 @@ Para agregar una etiqueta de ámbito a un perfil de configuración, elija **Conf
 
 ### <a name="tenant-health-dashboard----1124854---"></a>Panel de estado del inquilino <!-- 1124854 -->
 En la página Estado del inquilino de Intune se proporciona información de estado del inquilino en un solo lugar. La página se divide en cuatro secciones:  
-- **Detalles del inquilino**: contiene información como la autoridad de MDM, el total de los dispositivos inscritos en el inquilino y el número de licencias. En esta sección también se proporciona la versión actual del servicio para el inquilino.
+- **Detalles del inquilino**: contiene información, como la autoridad de MDM, el número total de dispositivos inscritos en el inquilino y el recuento de licencias. En esta sección también se proporciona la versión actual del servicio para el inquilino.
 - **Estado del conector**: contiene información de los conectores configurados, como PCV de Apple, Microsoft Store para Empresas y los conectores de certificados. En función de su estado actual, los conectores se marcan como *Correcto*, *Advertencia* o *Incorrecto*.
-- **Service Health para Intune**: contiene los incidentes activos o las interrupciones para el inquilino. La información de esta sección se recupera directamente del Centro de mensajes de Office ([https://portal.office.com](https://portal.office.com)).
+- **Service Health para Intune**: contiene los incidentes activos o las interrupciones del inquilino. La información de esta sección se recupera directamente del Centro de mensajes de Office ([https://portal.office.com](https://portal.office.com)).
 - **Noticias de Intune**: contiene mensajes activos para el inquilino, que incluyen elementos como las notificaciones que el inquilino ha recibido sobre las características de Intune más recientes. La información de esta sección se recupera directamente del Centro de mensajes de Office ([https://portal.office.com](https://portal.office.com)).
 
 

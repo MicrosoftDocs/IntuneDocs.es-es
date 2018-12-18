@@ -5,7 +5,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2018
+ms.date: 12/09/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: c556bab6deadc0db0ea625ee3c26bba636ea497d
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.openlocfilehash: c073040275f63b4623ea28a25ad0940dea563b75
+ms.sourcegitcommit: 67666682935c44ff6ad003c0da220a79cc42c9c3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829188"
+ms.lasthandoff: 12/10/2018
+ms.locfileid: "53168035"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Guía para desarrolladores de Android acerca del SDK para aplicaciones de Microsoft Intune
 
@@ -35,14 +35,14 @@ El SDK para aplicaciones de Microsoft Intune para Android permite incorporar dir
 El SDK para aplicaciones de Intune consta de los siguientes archivos:
 
 * **Microsoft.Intune.MAM.SDK.aar**: los componentes del SDK, excepto los archivos JAR de la biblioteca de compatibilidad.
-* **Microsoft.Intune.MAM.SDK.Support.v4.jar**: las clases necesarias para habilitar MAM en aplicaciones que usan la biblioteca de compatibilidad de Android v4.
-* **Microsoft.Intune.MAM.SDK.Support.v7.jar**: las clases necesarias para habilitar MAM en aplicaciones que usan la biblioteca de compatibilidad de Android v7.
+* **Microsoft.Intune.MAM.SDK.Suppot.v4.jar**: interfaces necesarias para habilitar MAM en aplicaciones que aprovechan la biblioteca de compatibilidad de Android v4.
+* **Microsoft.Intune.MAM.SDK.Suppot.v7.jar**: las clases necesarias para habilitar MAM en aplicaciones que usan la biblioteca de compatibilidad de Android v7.
 * **Microsoft.Intune.MAM.SDK.Support.v17.jar**: las clases necesarias para habilitar MAM en aplicaciones que usan la biblioteca de compatibilidad de Android v17. 
 * **Microsoft.Intune.MAM.SDK.Support.Text.jar**: las clases necesarias para habilitar MAM en aplicaciones que usan clases de la biblioteca de compatibilidad de Android en el paquete `android.support.text`.
-* **Microsoft.Intune.MDM.SDK.DownlevelStubs.jar**: este archivo jar contiene códigos auxiliares para las clases del sistema de Android que solo están presentes en los dispositivos nuevos, pero a las que se hace referencia mediante métodos en MAMActivity. Los dispositivos más recientes ignorarán estas clases de código auxiliar. Este archivo jar solo es necesario si la aplicación realiza la reflexión en clases derivadas de MAMActivity y en la mayoría de las aplicaciones no es necesario incluirlo. Si usa este archivo jar, debe excluir todas las clases de ProGuard. Todas estarán en el paquete de raíz "android"
+* **Microsoft.Intune.MDM.SDK.DownlevelStubs.jar**: este archivo JAR contiene códigos auxiliares para las clases del sistema de Android que solo están presentes en dispositivos nuevos, pero a las que se hace referencia mediante métodos en MAMActivity. Los dispositivos más recientes ignorarán estas clases de código auxiliar. Este archivo jar solo es necesario si la aplicación realiza la reflexión en clases derivadas de MAMActivity y en la mayoría de las aplicaciones no es necesario incluirlo. Si usa este archivo jar, debe excluir todas las clases de ProGuard. Todas estarán en el paquete de raíz "android"
 * **com.microsoft.intune.mam.build.jar**: un complemento de Gradle que [ayuda a integrar el SDK](#build-tooling).
 * **CHANGELOG.txt**: proporciona un registro de los cambios hechos en cada versión del SDK.
-* **THIRDPARTYNOTICES. TXT**: es un aviso de atribución que reconoce el código de terceros o de OSS que se compilará en la aplicación.
+* **THIRDPARTYNOTICES.TXT**:  aviso de atribución que reconoce el código de terceros o de OSS que se compilará en la aplicación.
 
 ## <a name="requirements"></a>Requisitos
 
@@ -451,7 +451,7 @@ String toString();
 > [!NOTE]
 > `MAMPolicyManager.getPolicy` siempre devolverá una directiva de aplicaciones no nula, aunque el dispositivo o la aplicación no estén dentro de una directiva de administración de Intune.
 
-### <a name="example-determine-if-pin-is-required-for-the-app"></a>Ejemplo: determine si se requiere un PIN para la aplicación
+### <a name="example-determine-if-pin-is-required-for-the-app"></a>Ejemplo: Determinar si se requiere un PIN para la aplicación
 
 Si la aplicación tiene su propia experiencia de usuario de PIN, es posible que desee deshabilitarla si el administrador de TI configuró el SDK para solicitar un PIN de aplicación. Con el fin de determinar si el administrador de TI implementó la directiva de PIN de esta aplicación para el usuario final actual, llame al método siguiente:
 
@@ -460,7 +460,7 @@ Si la aplicación tiene su propia experiencia de usuario de PIN, es posible que 
 MAMPolicyManager.getPolicy(currentActivity).getIsPinRequired();
 ```
 
-### <a name="example-determine-the-primary-intune-user"></a>Ejemplo: determine el usuario primario de Intune
+### <a name="example-determine-the-primary-intune-user"></a>Ejemplo: Determinar el usuario primario de Intune
 
 Además de las API expuestas en AppPolicy, el nombre principal de usuario (**UPN**) también lo expone la API `getPrimaryUser()` definida dentro de la interfaz `MAMUserInfo`. Para obtener el UPN, llame a lo siguiente:
 
@@ -486,7 +486,7 @@ public interface MAMUserInfo {
 }
 ```
 
-### <a name="example-determine-if-saving-to-device-or-cloud-storage-is-permitted"></a>Ejemplo: determine si se permite guardar en un dispositivo o en almacenamiento en nube
+### <a name="example-determine-if-saving-to-device-or-cloud-storage-is-permitted"></a>Ejemplo: Determinar si se permite guardar en un dispositivo o en almacenamiento en la nube
 
 Muchas aplicaciones implementan características que permiten al usuario final guardar archivos de forma local o en un servicio de almacenamiento en la nube. El SDK para aplicaciones de Intune permite a los administradores de TI proteger contra la pérdida de datos mediante la aplicación de restricciones de directivas en su organización, según lo consideren oportuno.  Una de las directivas que pueden controlar es si el usuario final puede guardar en un almacén de datos personal no administrado. Esto incluye guardar datos en una ubicación local, en una tarjeta SD o en servicios de copia de seguridad de terceros.
 
@@ -575,7 +575,7 @@ Las siguientes notificaciones se envían a la aplicación y es posible que algun
 
 * **WIPE_USER_AUXILIARY_DATA**: las aplicaciones pueden registrarse para esta notificación si quieren que el SDK para aplicaciones de Intune realice el comportamiento predeterminado de eliminación selectiva, pero les gustaría quitar algunos datos auxiliares cuando se produzca la eliminación. Esta notificación no está disponible para aplicaciones de identidad única; solo se enviará a las aplicaciones de varias identidades.
 
-* **REFRESH_POLICY**: esta notificación se envía en `MAMUserNotification`. Cuando se recibe esta notificación, cualquier directiva de Intune en caché debe ser invalidada y actualizada. Para ello se usa el SDK; sin embargo, se debería encargar la aplicación si la directiva se utiliza de forma constante.
+* **REFRESH_POLICY**: esta notificación se envía en una clase `MAMUserNotification`. Cuando se recibe esta notificación, cualquier directiva de Intune en caché debe ser invalidada y actualizada. Para ello se usa el SDK; sin embargo, se debería encargar la aplicación si la directiva se utiliza de forma constante.
 
 * **MANAGEMENT_REMOVED**: esta notificación se envía en `MAMUserNotification` e informa a la aplicación que está a punto de dejar de estar administrada. Cuando deja de estar administrada, ya no podrá leer archivos cifrados, leer datos cifrados con MAMDataProtectionManager, interactuar con el portapapeles cifrado o participar de cualquier otro modo en el ecosistema de aplicaciones administradas.
 
@@ -844,7 +844,7 @@ mAuthContext.acquireToken(this, RESOURCE_ID, CLIENT_ID, REDIRECT_URI, PromptBeha
 * Para la compatibilidad con nubes soberanas, se debe proporcionar la autoridad.
 #### <a name="registration"></a>Registro
 
-* Para mayor comodidad, los métodos de registro son idempotentes; por ejemplo, `registerAccountForMAM()` solo registrará una cuenta e intentará inscribir la aplicación si la cuenta todavía no está registrada y `unregisterAccountForMAM()` solo anulará el registro de una cuenta si está registrada actualmente. Las llamadas subsiguientes no son operativas, por lo que no afecta llamar a estos métodos más de una vez. Adicionalmente, no se garantiza la correspondencia entre las llamadas a estos métodos y las notificaciones de los resultados; es decir, si se llama a `registerAccountForMAM` para una identidad que ya está registrada, es posible que no se envíe nuevamente la notificación para esa identidad. Es posible que las notificaciones que se envíen no correspondan a ninguna llamada a estos métodos, dado que el SDK puede intentar inscripciones de forma periódica en segundo plano, y las anulaciones de las inscripciones se puede desencadenar debido a las solicitudes de eliminación que se reciben desde el servicio Intune.
+* Para mayor comodidad, los métodos de registro son idempotentes; por ejemplo, `registerAccountForMAM()` solo registrará una cuenta e intentará inscribir la aplicación si la cuenta todavía no está registrada y `unregisterAccountForMAM()` solo anulará el registro de una cuenta si está registrada actualmente. Las llamadas subsiguientes no son operativas, por lo que no afecta llamar a estos métodos más de una vez. Además, no se garantiza la correspondencia entre las llamadas a estos métodos y las notificaciones de los resultados: es decir, si se llama a `registerAccountForMAM` para una identidad que ya está registrada, puede que la notificación no se envíe de nuevo para esa identidad. Es posible que las notificaciones que se envíen no correspondan a ninguna llamada a estos métodos, dado que el SDK puede intentar inscripciones de forma periódica en segundo plano, y las anulaciones de las inscripciones se puede desencadenar debido a las solicitudes de eliminación que se reciben desde el servicio Intune.
 
 * Los métodos de registro se pueden llamar para cualquier número de identidades distintas, pero actualmente solo se puede inscribir correctamente una cuenta de usuario. Si varias cuentas de usuario con licencia de Intune a las que se aplica la directiva de protección de aplicaciones se registran casi al mismo tiempo, no hay garantía de cuál será la primera.
 
@@ -924,7 +924,7 @@ Intune le permite utilizar todas las [características de copia de seguridad aut
     <meta-data android:name="com.microsoft.intune.mam.FullBackupContent" android:value="true" />  
     ```
 
-    **Ejemplo 2**: si desea que la aplicación use su propio BackupAgent personalizado y no haga copias de seguridad automáticas completas que sean compatibles con la directiva de Intune, debe establecer el atributo y la etiqueta de metadatos en **false**:
+    **Ejemplo 2:**: si desea que la aplicación use su propio BackupAgent personalizado y no haga copias de seguridad automáticas completas que sean compatibles con la directiva de Intune, debe establecer el atributo y la etiqueta de metadatos en **false**:
 
     ```xml
     android:fullBackupContent="false"
@@ -1114,7 +1114,7 @@ Además de la posibilidad de que la aplicación establezca la identidad, un subp
 
   Además, la interacción del usuario con una actividad puede provocar un cambio de identidad implícita.
 
-  **Ejemplo**: la cancelación por un usuario de un mensaje de autorización durante `Resume` dará como resultado un cambio implícito a una identidad vacía.
+  **Ejemplo:** la cancelación por un usuario de un mensaje de autorización durante `Resume` dará como resultado un cambio implícito a una identidad vacía.
 
   La aplicación tiene la oportunidad de enterarse de esos cambios y puede prohibirlos, si debe hacerlo. `MAMService` y `MAMContentProvider` exponen el siguiente método que las subclases pueden reemplazar:
 
@@ -1616,9 +1616,8 @@ Estas instrucciones son específicas para todos los desarrolladores de aplicacio
 4. Habilite la directiva de MAM necesaria indicando el siguiente valor en el manifiesto:```xml <meta-data android:name="com.microsoft.intune.mam.MAMPolicyRequired" android:value="true" />```
    > [!NOTE] 
    > Esto obliga al usuario a descargar el Portal de empresa en el dispositivo y completar el flujo de inscripción predeterminada antes de usarlo.
-
-> [!NOTE]
-    > Esta debe ser la única integración de MAM-WE en la aplicación. Surgirán conflictos si hay cualquier otro intento de llamada a las API de MAMEnrollmentManager.
+   >
+   > Esta debe ser la única integración de MAM-WE en la aplicación. Surgirán conflictos si hay cualquier otro intento de llamada a las API de MAMEnrollmentManager.
 
 3. Habilite la directiva de MAM necesaria indicando el siguiente valor en el manifiesto:
 ```xml

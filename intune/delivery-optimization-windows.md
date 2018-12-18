@@ -5,34 +5,36 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/05/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: 36cfb5ac05b2d69b5c7349f4ebc6054848a08fc8
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 1b83a380620704e9e3f616cee77b33d577c86c0d
+ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52730411"
+ms.lasthandoff: 12/06/2018
+ms.locfileid: "52977276"
 ---
 # <a name="windows-10-and-newer-delivery-optimization-settings-in-microsoft-intune"></a>Configuración de Optimización de distribución de Windows 10 (y versiones posteriores) en Microsoft Intune
 
-En este artículo se muestran y describen todas las opciones de Optimización de distribución que puede configurar para dispositivos Windows 10. Estos valores se agregan a un perfil de configuración de dispositivo y luego se asignan o implementan en los dispositivos mediante Microsoft Intune.
+En este artículo se muestran y describen todas las opciones de Optimización de distribución que puede configurar para dispositivos Windows 10. Estos valores se agregan a un perfil de configuración de dispositivo y luego se asignan o implementan en los dispositivos mediante Microsoft Intune. 
+
+[Optimización de distribución de actualizaciones](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) es un gran recurso para aprender más sobre la optimización de distribución en Windows 10.
 
 ## <a name="settings"></a>Configuración
 
-**Modo de descarga de Optimización de distribución**: elija cómo las actualizaciones se distribuyen a los dispositivos. Las opciones son:
+**Modo de descarga de optimización de distribución**: elija cómo las actualizaciones se distribuyen a los dispositivos. Las opciones son:
 
-- **No configurado**: los usuarios finales actualizan sus dispositivos con sus propios métodos, que pueden ser usar la configuración **Actualizaciones de Windows** o **Optimización de distribución** con el sistema operativo.
-- **HTTP only, no peering** (Solo HTTP, sin emparejamiento): obtenga actualizaciones solo desde Internet. No obtenga actualizaciones de otros equipos de la red (lo que se denomina emparejamiento o de punto a punto).
-- **HTTP blended with peering behind the same NAT HTTP blended with peering across a private group** (HTTP combinado con emparejamiento detrás del mismo HTTP de NAT combinado con emparejamiento en un grupo privado) : obtenga actualizaciones de Internet y desde otros equipos de la red. El emparejamiento se produce en dispositivos del mismo sitio de Active Directory (si existe) o en el mismo dominio. Cuando se selecciona esta opción, el emparejamiento cruza sus direcciones IP de Traducción de direcciones de red (NAT).
-- **HTTP blended with Internet peering** (HTTP combinado con emparejamiento de Internet): obtenga actualizaciones desde Internet y de otros equipos de la red.
-- **Simple download mode with no peering** (Modo de descarga sencillo sin emparejamiento): obtiene actualizaciones de Internet directamente desde el propietario de las actualizaciones, como Microsoft. No se pone en contacto con los servicios en la nube de Optimización de distribución.
-- **Bypass mode** (Modo de omisión): use el Servicio de transferencia inteligente en segundo plano (BITS) para obtener actualizaciones. No use la optimización de distribución.
+- **No configurado**: los usuarios finales actualizan sus dispositivos con sus propios métodos, que pueden ser usar los valores de configuración **Actualizaciones de Windows** o **Optimización de distribución** disponibles con el sistema operativo.
+- **HTTP solo, sin emparejamiento**: obtenga actualizaciones solo de internet. No obtenga actualizaciones de otros equipos de la red (lo que se denomina emparejamiento o de punto a punto).
+- **HTTP combinado con emparejamiento detrás del mismo HTTP de NAT combinado con emparejamiento en un grupo privado**: obtenga actualizaciones de Internet y de otros equipos de la red. El emparejamiento se produce en dispositivos del mismo sitio de Active Directory (si existe) o en el mismo dominio. Cuando se selecciona esta opción, el emparejamiento cruza sus direcciones IP de Traducción de direcciones de red (NAT).
+- **HTTP combinado con emparejamiento de Internet**: obtenga actualizaciones de Internet y de otros equipos de la red.
+- **Modo de descarga sencillo sin emparejamiento**: obtenga actualizaciones de Internet, directamente del propietario de la actualización, como Microsoft. No se pone en contacto con los servicios en la nube de Optimización de distribución.
+- **Modo de omisión**: use el Servicio de transferencia inteligente en segundo plano (BITS) para obtener actualizaciones. No use la optimización de distribución.
 
 ## <a name="move-from-existing-update-rings-to-delivery-optimization"></a>Pase de los círculos de actualizaciones existentes a la optimización de distribución.
 

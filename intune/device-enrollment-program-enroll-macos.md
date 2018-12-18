@@ -1,12 +1,12 @@
 ---
 title: 'Inscripción de dispositivos macOS: Programa de inscripción de dispositivos o Apple School Manager'
-titleSuffix: Microsoft Intune
+titleSuffix: ''
 description: Obtenga información sobre cómo inscribir dispositivos macOS corporativos con el Programa de inscripción de dispositivos.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/29/2018
+ms.date: 12/06/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,19 +15,19 @@ ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: 12a59165cd9ebe43826f8ec63ed5b045e5f3e991
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.custom: seodec18
+ms.openlocfilehash: 2bd9b244947f5f0b8fcb832682951c7a241f96a4
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728759"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032357"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>Inscripción automática de dispositivos macOS con el Programa de inscripción de dispositivos o Apple School Manager
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Este artículo lo ayuda a configurar la inscripción de dispositivos macOS adquiridos por medio del [Programa de inscripción de dispositivos (DEP)](https://deploy.apple.com) de Apple o [Apple School Manager](https://school.apple.com/). Puede usar cualquiera de estas inscripciones para un gran número de dispositivos sin siquiera tener que tocarlos. Puede enviar dispositivos macOS directamente a los usuarios. Cuando el usuario activa el dispositivo, se ejecuta el Asistente para la instalación con opciones preconfiguradas y el dispositivo se inscribe en la administración de Intune.
+Puede configurar la inscripción de Intune de los dispositivos macOS adquiridos mediante el [Programa de inscripción de dispositivos (DEP)](https://deploy.apple.com) de Apple o [Apple School Manager](https://school.apple.com/). Puede usar cualquiera de estas inscripciones para un gran número de dispositivos sin siquiera tener que tocarlos. Puede enviar dispositivos macOS directamente a los usuarios. Cuando el usuario activa el dispositivo, se ejecuta el Asistente para la instalación con opciones preconfiguradas y el dispositivo se inscribe en la administración de Intune.
 
 Para configurar la inscripción, use los portales de DEP de Apple y de Intune. Puede crear perfiles de inscripción que contengan opciones que se apliquen a los dispositivos durante la inscripción.
 
@@ -123,7 +123,7 @@ Ahora que ha instalado el token, puede crear un perfil de inscripción para disp
  
 7. Elija **Aceptar**.
 
-8. Seleccione **Valores del Asistente de configuración** para configurar las siguientes opciones de perfil: ![Personalización del Asistente para configuración](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png).
+8. Seleccione **Valores del Asistente de configuración** para configurar las siguientes opciones de perfil:  ![Personalización del Asistente de configuración.](./media/device-enrollment-program-enroll-macos/setupassistantcustom-macos.png)
 
     | Configuración de departamento | Descripción |
     |---|---|

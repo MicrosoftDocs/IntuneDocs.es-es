@@ -1,7 +1,7 @@
 ---
 title: Configurar una página de estado de inscripción
 titleSuffix: Microsoft Intune
-description: Dé la bienvenida a los usuarios que inscriben dispositivos Windows 10.
+description: Configure una página de saludo para los usuarios que inscriban dispositivos Windows 10.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -15,19 +15,19 @@ ms.assetid: 8518d8fa-a0de-449d-89b6-8a33fad7b3eb
 ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
-ms.openlocfilehash: b953ea281ad785d8a0ce7bee4b0f6d420b785dd9
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.custom: seodec18
+ms.openlocfilehash: b87e0d24c000e3083eaebeac1a4cf6026d495ccf
+ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52729048"
+ms.lasthandoff: 12/07/2018
+ms.locfileid: "53032102"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configurar una página de estado de inscripción
  
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
  
-Durante la configuración del dispositivo, la página Estado de inscripción muestra información sobre la instalación en el dispositivo. Es posible que algunas aplicaciones, perfiles y certificados no estén instalados cuando un usuario complete el proceso de inscripción rápida e inicie sesión en el dispositivo. Una página de estado de inscripción permite que los usuarios comprendan el estado de su dispositivo durante la instalación del dispositivo. Puede crear varios perfiles de la página de estado de inscripción y aplicarlos a diferentes grupos. Los perfiles se pueden establecer en:
+Durante la configuración del dispositivo mediante Intune, la página Estado de inscripción muestra información sobre la instalación en el dispositivo. Es posible que algunas aplicaciones, perfiles y certificados no estén instalados cuando un usuario complete el proceso de inscripción rápida e inicie sesión en el dispositivo. Una página de estado de inscripción permite que los usuarios comprendan el estado de su dispositivo durante la instalación del dispositivo. Puede crear varios perfiles de la página de estado de inscripción y aplicarlos a diferentes grupos. Los perfiles se pueden establecer en:
 - Mostrar progreso de la instalación.
 - Bloquear el uso hasta que finalice la instalación.
 - Especificar lo que puede hacer un usuario si se produce un error en la configuración del dispositivo.
