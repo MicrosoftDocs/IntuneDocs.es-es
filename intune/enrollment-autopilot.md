@@ -15,20 +15,20 @@ ms.assetid: a2dc5594-a373-48dc-ba3d-27aff0c3f944
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: 3a0f9a55fd3d5db8b36db09f4a83d5c09db29725
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.custom: seodec18
+ms.openlocfilehash: af767ce47b9382012f01de48ccd280c29ccfc27c
+ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829120"
+ms.lasthandoff: 12/08/2018
+ms.locfileid: "53112879"
 ---
-# <a name="enroll-windows-devices-by-using-the-windows-autopilot"></a>Inscribir dispositivos Windows con Windows Autopilot  
-Windows Autopilot simplifica el proceso de inscripción de dispositivos. Crear y mantener imágenes personalizadas de sistemas operativos es un proceso que conlleva mucho tiempo. También se requiere tiempo para aplicar estas imágenes en dispositivos nuevos a la hora de prepararlos para que los puedan usar los usuarios finales. Con Microsoft Intune y Autopilot, puede proporcionar nuevos dispositivos a los usuarios finales sin necesidad de crear, mantener y aplicar imágenes personalizadas del sistema operativo a los dispositivos. Al usar Intune para administrar dispositivos Autopilot, puede administrar directivas, perfiles y aplicaciones (entre otros) después de inscribirlos. Para obtener información general sobre las ventajas, los escenarios y los requisitos previos, vea [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) (Introducción a Windows Autopilot).
+# <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>Inscripción de dispositivos Windows en Intune con Windows Autopilot  
+Windows Autopilot simplifica el proceso de inscripción de dispositivos en Intune. Crear y mantener imágenes personalizadas de sistemas operativos es un proceso que conlleva mucho tiempo. También se requiere tiempo para aplicar estas imágenes en dispositivos nuevos a la hora de prepararlos para que los puedan usar los usuarios finales. Con Microsoft Intune y Autopilot, puede proporcionar nuevos dispositivos a los usuarios finales sin necesidad de crear, mantener y aplicar imágenes personalizadas del sistema operativo a los dispositivos. Al usar Intune para administrar dispositivos Autopilot, puede administrar directivas, perfiles y aplicaciones (entre otros) después de inscribirlos. Para obtener información general sobre las ventajas, los escenarios y los requisitos previos, vea [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot) (Introducción a Windows Autopilot).
 
 
 ## <a name="prerequisites"></a>Requisitos previos
-- [La inscripción automática de Windows 10 debe estar habilitada](https://docs.microsoft.com/intune-classic/deploy-use/set-up-windows-device-management-with-microsoft-intune#enable-windows-10-automatic-enrollment)
+- [La inscripción automática de Windows 10 debe estar habilitada](windows-enroll.md#enable-windows-10-automatic-enrollment)
 - [Se requiere una suscripción a Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
 
 ## <a name="how-to-get-the-csv-for-import-in-intune"></a>Cómo obtener el archivo CSV para importar en InTune
@@ -78,17 +78,17 @@ Los perfiles de implementación de Autopilot sirven para configurar los disposit
 2. Escriba un **Nombre** y una **Descripción** opcional.
 3. Si quiere que todos los dispositivos en los grupos asignados se conviertan automáticamente en Autopilot, establezca **Convertir todos los dispositivos de destino a Autopilot** en **Sí**. Todos los dispositivos que no sean Autopilot en grupos asignados se registrarán con el servicio de implementación de Autopilot. Permita un plazo de 48 horas para que se procese el registro. Cuando se anule la inscripción del dispositivo y este se restablezca, Autopilot lo inscribirá. Una vez registrado un dispositivo de este modo, si deshabilita esta opción o quitar la asignación de perfil, el dispositivo no se quitará desde el servicio de implementación de Autopilot, sino que deberá [quitar el dispositivo directamente](enrollment-autopilot.md#delete-autopilot-devices).
 4. En **Modo de implementación**, elija una de estas dos opciones:
-    - **Controlado por el usuario**: los dispositivos con este perfil están asociados al usuario que inscribe el dispositivo. Se necesitan credenciales de usuario para inscribir el dispositivo.
+    - **Controlado por el usuario**: Los dispositivos con este perfil están asociados al usuario que inscribe el dispositivo. Se necesitan credenciales de usuario para inscribir el dispositivo.
     - **Implementación automática (versión preliminar)**: (requiere la [compilación de Windows 10 Insider Preview](https://docs.microsoft.com/windows-insider/at-work-pro/) más reciente) los dispositivos con este perfil no están asociados al usuarios que inscribe el dispositivo. No se necesitan credenciales de usuario para inscribir el dispositivo.
 5. En el cuadro **Unirse a Azure AD como**, elija **Unidos a Azure AD**.
 6. Elija **Configuración rápida**, configure las siguientes opciones y elija **Guardar**:
     - **Idioma (región)**\*: elija el idioma que se usará en el dispositivo. Esta opción solo está disponible si ha elegido **Implementación automática** como **Modo de implementación**.
-    - **Configurar el teclado automáticamente**\*: si se selecciona un **Idioma (región)**, elija **Sí** para omitir la página de selección de teclado. Esta opción solo está disponible si ha elegido **Implementación automática** como **Modo de implementación**.
-    - **Contrato de licencia para el usuario final (CLUF)**: (Windows 10, versión 1709 o posterior) elija si quiere mostrar el CLUF a los usuarios.
+    - **Configurar el teclado automáticamente**\*: si se selecciona un valor de **Idioma (región)**, elija **Sí** para omitir la página de selección de teclado. Esta opción solo está disponible si ha elegido **Implementación automática** como **Modo de implementación**.
+    - **Contrato de licencia para el usuario final (CLUF)**: (Windows 10, versión 1709 o versiones posterior) elija si quiere mostrar el CLUF a los usuarios.
     - **Configuración de privacidad**: elija si quiere mostrar la configuración de privacidad a los usuarios.
-    - **Ocultar las opciones para cambiar la cuenta (solo Windows Insider)**: elija **Ocultar** para que no se muestren las opciones para cambiar la cuenta en las páginas de inicio de sesión de la empresa y de error del dominio. Esta opción requiere la [configuración de la personalización de marca de la empresa en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
-    - **Tipo de cuenta de usuario**: elija el tipo de cuenta de usuario (**Administrador** o usuario **Estándar**).
-    - **Aplicar la plantilla del nombre de equipo (solo Windows Insider)**: elija **Sí** para crear una plantilla y usarla al asignar un nombre a un dispositivo durante la inscripción. Los nombres deben tener 15 caracteres o menos y pueden contener letras, números y guiones. Los nombres no pueden estar formados solo por números. Use la [macro %SERIAL%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) para agregar el número de serie de hardware específico. O use la [macro %RAND:x%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) para agregar una cadena de números aleatoria, donde x equivale al número de dígitos para agregar. 
+    - **Ocultar opciones para cambiar la cuenta (solo Windows Insider)**: elija **Ocultar** para impedir que se muestren opciones para cambiar la cuenta en las páginas de error de inicio de sesión y dominio de empresa. Esta opción requiere la [configuración de la personalización de marca de la empresa en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding).
+    - **Tipo de cuenta de usuario**: elija el tipo de cuenta de usuario (**Administrador** o **Estándar**).
+    - **Apply computer name template (Windows Insider only)** (Aplicar plantilla de nombre de equipo [solo Windows Insider]): elija **Sí** para crear una plantilla que se usará al asignar nombres a dispositivos durante la inscripción. Los nombres deben tener 15 caracteres o menos y pueden contener letras, números y guiones. Los nombres no pueden estar formados solo por números. Use la [macro %SERIAL%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) para agregar el número de serie de hardware específico. O use la [macro %RAND:x%](https://docs.microsoft.com/windows/client-management/mdm/accounts-csp) para agregar una cadena de números aleatoria, donde x equivale al número de dígitos para agregar. 
 
 6. Elija **Crear** para crear el perfil. Ahora el perfil de implementación Autopilot se puede asignar a los dispositivos.
 
@@ -125,7 +125,7 @@ Para ver alertas sobre los dispositivos sin asignar, en [Intune en Azure Portal]
 
 Puede asignar un usuario a un dispositivo Autopilot específico. Esta asignación rellena previamente la página de inicio de sesión de [marca de la empresa](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding) con un usuario de Azure Active Directory durante la configuración de Windows. También permite establecer un nombre personalizado para el saludo. Esta operación no rellena previamente ni modifica el inicio de sesión de Windows. Solo los usuarios con licencia de Intune pueden asignarse de esta manera.
 
-Requisitos previos: se ha configurado el Portal de empresa de Azure Active Directory y la [compilación de Windows 10 Insider Preview](https://docs.microsoft.com/windows-insider/at-work-pro/) más reciente.
+Requisitos previos: Se ha configurado el Portal de empresa de Azure Active Directory y la [compilación de Windows 10 Insider Preview](https://docs.microsoft.com/windows-insider/at-work-pro/) más reciente.
 
 1. En [Intune en Azure Portal](https://aka.ms/intuneportal), elija **Inscripción de dispositivos** > **Inscripción de Windows** > **Dispositivos** > elija el dispositivo > **Asignar usuario**.
 
