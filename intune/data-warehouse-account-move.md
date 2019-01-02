@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: 470bafba548c38870e57a545c4514459dde219b4
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 76f155d84a3f447cf067970c614d2bd7fd4f1798
+ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189399"
+ms.lasthandoff: 12/12/2018
+ms.locfileid: "53305903"
 ---
 # <a name="move-your-intune-data-warehouse-account-data"></a>Mover los datos de la cuenta de almacenamiento de datos de Intune 
 
@@ -81,4 +81,4 @@ El cliente X solicita que un movimiento de cuenta se inicie el 06/01/2018. En re
 ## <a name="next-steps"></a>Pasos siguientes
 
  - Conozca las [novedades semanales de Intune](whats-new.md). También podrá obtener información sobre los próximos cambios, notificaciones importantes sobre el servicio e información sobre las versiones anteriores.
- - Lea el [Blog de Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882).
+ - Lea el [Blog de Microsoft Intune](https://go.microsoft.com/fwlink/?LinkID=273882).
