@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/15/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c98eb7795ca01db9a78b428faf433109928cff76
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: e2958b536aa6603fc9cde14e679a05e4a9d5f4dd
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182282"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266977"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Asignación de aplicaciones de Office 365 a dispositivos Windows 10 con Microsoft Intune
 
@@ -70,13 +70,13 @@ En este paso, proporcionará información sobre el conjunto de aplicaciones. Est
 
 1. En el panel **Agregar aplicación**, seleccione **App Suite Information** (Información del conjunto de aplicaciones).
 2. En el panel **App Suite Information** (Información del conjunto de aplicaciones), haga lo siguiente:
-    - **Nombre del conjunto**: escriba el nombre del conjunto tal como se muestra en el Portal de empresa. Asegúrese de que todos los nombres de conjuntos de aplicaciones que use sean únicos. Si el mismo nombre del conjunto ya existe, solo se muestra una de las aplicaciones a los usuarios en el portal de empresa.
-    - **Descripción del conjunto**: escriba una descripción del conjunto de aplicaciones. Por ejemplo, podría mostrar las aplicaciones que seleccionó para incluir.
+    - **Nombre del conjunto de aplicaciones**: escriba el nombre del conjunto tal como se muestra en el Portal de empresa. Asegúrese de que todos los nombres de conjuntos de aplicaciones que use sean únicos. Si el mismo nombre del conjunto ya existe, solo se muestra una de las aplicaciones a los usuarios en el portal de empresa.
+    - **Descripción del conjunto de aplicaciones** : escriba una descripción del conjunto de aplicaciones. Por ejemplo, podría mostrar las aplicaciones que seleccionó para incluir.
     - **Publicador**: Microsoft aparece como publicador.
-    - **Categoría**: de manera opcional, seleccione una o más categorías de aplicaciones integradas o una categoría que haya creado. Este valor facilita que los usuarios encuentren el conjunto de aplicaciones cuando exploren el portal de empresa.
-    - **Mostrar como aplicación destacada en el Portal de empresa**: seleccione esta opción para mostrar el conjunto de aplicaciones de forma destacada en la página principal del Portal de empresa cuando los usuarios busquen aplicaciones.
-    - **Dirección URL de información**: opcionalmente, escriba la dirección URL de un sitio web que contenga información sobre esta aplicación. La dirección URL se muestra a los usuarios en el portal de empresa.
-    - **Dirección URL de privacidad**: opcionalmente, escriba la dirección URL de un sitio web que contenga información de privacidad sobre esta aplicación. La dirección URL se muestra a los usuarios en el portal de empresa.
+    - **Categoría**: de manera opcional, seleccione una o varias de las categorías de aplicaciones integradas o una categoría que haya creado. Este valor facilita que los usuarios encuentren el conjunto de aplicaciones cuando exploren el portal de empresa.
+    - **Mostrar como aplicación destacada en el Portal de empresa** : seleccione esta opción para mostrar el conjunto de aplicaciones de forma destacada en la página principal del portal de empresa cuando los usuarios buscan aplicaciones.
+    - **Dirección URL de información**: Opcionalmente, escriba la dirección URL de un sitio web que contenga información sobre esta aplicación. La dirección URL se muestra a los usuarios en el portal de empresa.
+    - **Dirección URL de privacidad**: Opcionalmente, escriba la dirección URL de un sitio web que contenga información de privacidad sobre esta aplicación. La dirección URL se muestra a los usuarios en el portal de empresa.
     - **Desarrollador**: Microsoft aparece como desarrollador.
     - **Propietario**: Microsoft aparece como propietario.
     - **Notas**: escriba las notas que desea asociar a esta aplicación.
@@ -89,7 +89,7 @@ En este paso, configure las opciones de instalación para el conjunto de aplicac
 
 1. En el panel **Agregar aplicación**, seleccione **App Suite Settings** (Configuración del conjunto de aplicaciones).
 2. En el panel **App Suite Settings** (Configuración del conjunto de aplicaciones), haga lo siguiente:
-    - **Versión de Office**: elija si desea asignar la versión de 32 bits o de 64 bits de Office. Puede instalar la versión de 32 bits en dispositivos de 32 y 64 bits, pero en los dispositivos de 64 bits solo puede instalar la versión de 64 bits.
+    - **Versión de Office**: elija si quiere asignar la versión de 32 o 64 bits de Office. Puede instalar la versión de 32 bits en dispositivos de 32 y 64 bits, pero en los dispositivos de 64 bits solo puede instalar la versión de 64 bits.
     - **Canal de actualización**: elija cómo Office se actualiza en los dispositivos. Para más información sobre los distintos canales de actualización, consulte [Información general de los canales de actualización para Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus). Elija de entre las siguientes opciones:
         - **Mensual**
         - **Mensual (dirigido)**
@@ -105,8 +105,8 @@ En este paso, configure las opciones de instalación para el conjunto de aplicac
         Para más información, vea [Información general de los canales de actualización para Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus).
 
     - **Remove MSI from end-user devices** (Quitar MSI de los dispositivos de usuario final): elija si quiere quitar las aplicaciones .MSI preexistentes de Office de los dispositivos de usuario final. La instalación no funcionará si hay aplicaciones .MSI preexistentes en los dispositivos de usuario final. Las aplicaciones que se deben desinstalar no se limitan a las seleccionadas para la instalación en **Configure App Suite** (Configurar App Suite), ya que quitarán todas las aplicaciones de Office (MSI) del dispositivo del usuario final. Para obtener más información, vea [Remove existing MSI versions of Office when upgrading to Office 365 ProPlus](https://docs.microsoft.com/deployoffice/upgrade-from-msi-version) (Quitar las versiones de MSI de Office al actualizar a Office 365 ProPlus). Cuando Intune reinstala Office en los equipos de los usuarios finales, estos recibirán automáticamente los mismos paquetes de idioma que tenían con las instalaciones de Office .MSI anteriores. 
-    - **Automatically accept the app end user license agreement** (Aceptar automáticamente el contrato de licencia del usuario final de la aplicación): seleccione esta opción si no exige que los usuarios finales acepten el contrato de licencia. De ese modo, Intune aceptará automáticamente el contrato.
-    - **Use shared computer activation** (Usar activación de equipos compartidos): seleccione esta opción cuando varios usuarios compartan un equipo. Para obtener más información, vea [Introducción a la activación de equipos compartidos para Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
+    - **Aceptar automáticamente el contrato de licencia para el usuario final de la aplicación**: seleccione esta opción si no necesita que los usuarios finales acepten el contrato de licencia. De ese modo, Intune aceptará automáticamente el contrato.
+    - **Usar activación en equipos compartidos**: seleccione esta opción cuando varios usuarios compartan un equipo. Para obtener más información, vea [Introducción a la activación de equipos compartidos para Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
     - **Idiomas**: Office se instala automáticamente en cualquier idioma compatible que se instale con Windows en el dispositivo de los usuarios finales. Seleccione esta opción si desea instalar más idiomas con el conjunto de aplicaciones. <p></p>
     Puede implementar idiomas adicionales para las aplicaciones Office 365 Pro Plus administradas mediante Intune. La lista de idiomas disponibles incluye el **Tipo** de paquete de idioma (núcleo, parcial y corrección). En Azure Portal, seleccione **Microsoft Intune** > **Aplicaciones cliente** > **Aplicaciones** > **Agregar**. En la lista **Tipo de aplicación** de la hoja **Agregar aplicación**, seleccione **Windows 10** en **Conjunto de aplicaciones de Office 365**. Seleccione **Idiomas** en la hoja **Configuración del conjunto de aplicaciones**. Para más información, vea [Información general acerca de la implementación de idiomas en Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
 
@@ -120,33 +120,31 @@ En la tabla siguiente se muestran los códigos de error comunes que podría enco
 
 ### <a name="status-for-office-csp"></a>Estado de Office CSP
 
-||||
-|-|-|-|
-|Estado|Fase|Descripción|
-|1460 (ERROR_TIMEOUT)|Descarga|No se pudo descargar la Herramienta de implementación de Office|    
-|13 (ERROR_INVALID_DATA)|-|No se puede comprobar la firma de la Herramienta de implementación de Office descargada|
-|Código de error de CertVerifyCertificateChainPolicy|-|No se pudo comprobar la certificación de la Herramienta de implementación de Office descargada|    
-|997|WIP|Instalación|
-|0|Después de la instalación|La instalación se realizó correctamente|    
-|1603 (ERROR_INSTALL_FAILURE)|-|No se pudo realizar ninguna comprobación de requisitos previos, por ejemplo:<ul><li>SxS (se intentó instalar con MSI 2016 instalado)</li><li>Versión no coincidente</li><li>Otros</li></ul>|  
-|0x8000ffff (E_UNEXPECTED)|-|Se intentó desinstalar sin Hacer clic y ejecutar de Office en el equipo.|     
-|17002|-|No se pudo completar el escenario (instalación). Posibles razones:<ul><li>Operación cancelada por el usuario</li><li>Otra instalación canceló la instalación</li><li>Sin espacio en disco durante la instalación</li><li>Identificación de idioma desconocido</li></ul>|
-|17004|-|SKU desconocidas|   
+| Estado | Fase | Descripción |
+|--------------------------------------------------|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1460 (ERROR_TIMEOUT) | Descarga | No se pudo descargar la Herramienta de implementación de Office |
+| 13 (ERROR_INVALID_DATA) | - | No se puede comprobar la firma de la Herramienta de implementación de Office descargada |
+| Código de error de CertVerifyCertificateChainPolicy | - | No se pudo comprobar la certificación de la Herramienta de implementación de Office descargada |
+| 997 | WIP | Instalación |
+| 0 | Después de la instalación | La instalación se realizó correctamente |
+| 1603 (ERROR_INSTALL_FAILURE) | - | Error de cualquier comprobación de requisitos previos, como: SxS (se intentó instalar cuando MSI 2016 está instalado), versiones no coincidentes u otros |
+| 0x8000ffff (E_UNEXPECTED) | - | Se intentó desinstalar sin Hacer clic y ejecutar de Office en el equipo. |
+| 17002 | - | No se pudo completar el escenario (instalación). Posibles razones: instalación cancelada por el usuario, instalación cancelada por otra instalación, espacio en disco insuficiente durante la instalación o identificador de idioma desconocido |
+| 17004 | - | SKU desconocidas |
 
 
 ### <a name="office-deployment-tool-error-codes"></a>Códigos de error de la Herramienta de implementación de Office
 
-|||||
-|-|-|-|-|
-|Escenario|Código de retorno|UI|Nota|
-|Trabajo de desinstalación sin una instalación de Hacer clic y ejecutar activa|-2147418113, 0x8000ffff o 2147549183|Código de error: 30088-1008<br>Código de error: 30125-1011 (404)|Herramienta de implementación de Office|
-|Instalación cuando hay instalada una versión de MSI|1603|-|Herramienta de implementación de Office|
-|El usuario u otra instalación canceló la instalación|17002|-|Hacer clic y ejecutar|
-|Intentar instalar 64 bits en un dispositivo con 32 bits instalados.|1603|-|Código de devolución de la Herramienta de implementación de Office|
-|Intentar instalar una SKU desconocida (no es un caso de uso legítimo de Office CSP porque solo podemos pasar SKU válidas)|17004|-|Hacer clic y ejecutar|
-|Falta de espacio|17002|-|Hacer clic y ejecutar|
-|El cliente Hacer clic y ejecutar no se pudo iniciar (inesperado)|17000|-|Hacer clic y ejecutar|
-|El cliente Hacer clic y ejecutar no pudo poner el escenario en cola (inesperado)|17001|-|Hacer clic y ejecutar|
+| Escenario | Código de retorno | UI | Nota |
+|------------------------------------------------------------------------------------------------------------------|---------------------------------------|----------------------------------------------------|------------------------------------|
+| Trabajo de desinstalación sin una instalación de Hacer clic y ejecutar activa | -2147418113, 0x8000ffff o 2147549183 | Error Code: Código de error 30088 1008: 30125-1011 (404) | Herramienta de implementación de Office |
+| Instalación cuando hay instalada una versión de MSI | 1603 | - | Herramienta de implementación de Office |
+| El usuario u otra instalación canceló la instalación | 17002 | - | Hacer clic y ejecutar |
+| Intentar instalar 64 bits en un dispositivo con 32 bits instalados. | 1603 | - | Código de devolución de la Herramienta de implementación de Office |
+| Intentar instalar una SKU desconocida (no es un caso de uso legítimo de Office CSP porque solo podemos pasar SKU válidas) | 17004 | - | Hacer clic y ejecutar |
+| Falta de espacio | 17002 | - | Hacer clic y ejecutar |
+| El cliente Hacer clic y ejecutar no se pudo iniciar (inesperado) | 17000 | - | Hacer clic y ejecutar |
+| El cliente Hacer clic y ejecutar no pudo poner el escenario en cola (inesperado) | 17001 | - | Hacer clic y ejecutar |
 
 ## <a name="next-steps"></a>Pasos siguientes
 

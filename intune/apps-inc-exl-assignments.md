@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b4a45ac5a73d199ec883e3dda95a97a8f3c09d9a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: fee473cd6cb6fa7e8a092ebd70192f2b7f8a8b84
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181523"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737940"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Inclusión y exclusión de asignaciones de aplicaciones en Microsoft Intune
 
@@ -50,7 +50,7 @@ Para asignar una aplicación a grupos mediante la asignación de inclusión y ex
 5. Seleccione la aplicación que quiera asignar. Un panel muestra información sobre la aplicación. 
 6. En la sección **Administrar** del menú, seleccione **Asignaciones**. 
 
-    ![Asignaciones de aplicaciones de Intune](./media/apps-inc-exl-01.png)
+    ![Inclusión de las asignaciones de aplicaciones al asignar aplicaciones](./media/apps-inc-exl-01.png)
 7. Seleccione **Agregar grupo** para agregar los grupos de usuarios que están asignados a la aplicación. 
 8. Seleccione un **tipo de asignación** entre los disponibles en el panel **Agregar grupo**.
 9. Seleccione **Available with or without enrollment** (Disponible con o sin inscripción) como tipo de asignación.

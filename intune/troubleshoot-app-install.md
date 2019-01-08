@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.assetid: b613f364-0150-401f-b9b8-2b09470b34f4
 ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 86f0892fe855201b9bdb28d61301353f6588954a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: cd43bfda69b42fb81a72d520d169fe1785161f65
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188133"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53267018"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Solucionar problemas de instalación de aplicaciones
 
@@ -84,6 +84,19 @@ Los siguientes mensajes de error y descripciones proporcionan detalles sobre err
 |    El usuario rechazó la oferta para actualizar la aplicación. (0x87D13B63)    |    El usuario final hizo clic en Cancelar durante el proceso de actualización.     |
 |    Error desconocido   (0x87D103E8)    |    Se ha producido un error desconocido durante la instalación de la aplicación. Este es el error resultante cuando no se han producido los otros.    |
 
+### <a name="other-installation-errors"></a>Otros errores de instalación
+
+|    Mensaje o código de error    |    Descripción    |
+|-----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    0x80073CFF, 0x80CF201C (error del cliente)    |    Para instalar esta aplicación, debe tener un sistema habilitado para instalación de prueba. Asegúrese de que el paquete de la aplicación tenga una firma de confianza y se haya instalado en un dispositivo unido al dominio que tenga habilitada la directiva **AllowAllTrustedApps** o en un dispositivo que tenga una licencia de instalación de prueba de Windows con la directiva **AllowAllTrustedApps** habilitada. Para más información, consulte [Troubleshooting packaging, deployment, and query of Windows Store apps](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting) (Solución de problemas de empaquetado, implementación y consulta de aplicaciones de la Tienda Windows).     |
+|    0x80073CF0    |    No se pudo abrir el paquete. Posibles causas:<ul><li> El paquete no está firmado.</li><li> El nombre del publicador no coincide con el sujeto que firma el certificado.</li></ul> Compruebe el registro de eventos **AppxPackagingOM** para más información. Para más información, consulte [Troubleshooting packaging, deployment, and query of Windows Store apps](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting) (Solución de problemas de empaquetado, implementación y consulta de aplicaciones de la Tienda Windows).    |
+|    0x80073CF3    |    Error de actualización, dependencia o validación de conflicto en el paquete. Posibles causas:<ul><li> El paquete entrante entra en conflicto con un paquete instalado.</li><li> No se encuentra una dependencia del paquete especificado.</li><li> El paquete no es compatible con la arquitectura correcta del procesador.</li></ul> Compruebe el registro de eventos **AppXDeployment-Server** para información. Para más información, consulte [Troubleshooting packaging, deployment, and query of Windows Store apps](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting) (Solución de problemas de empaquetado, implementación y consulta de aplicaciones de la Tienda Windows).    |
+|    0x80073CFB    |    El paquete suministrado ya está instalado y se ha bloqueado la reinstalación del paquete. Podría recibir este error si está instalando un paquete que no es idéntico al paquete que ya está instalado. Confirme que la firma digital también forma parte del paquete. Cuando un paquete se vuelve a generar o a firmar, dicho paquete ya no es idéntico bit a bit al paquete instalado previamente. Dos opciones para corregir este error son:<ul><li> Incrementar el número de versión de la aplicación y, a continuación, volver a generar y a firmar el paquete.</li><li> Quitar el paquete antiguo para todos los usuarios del sistema antes de instalar el nuevo paquete.</li></ul> Para más información, consulte [Troubleshooting packaging, deployment, and query of Windows Store apps](https://docs.microsoft.com/windows/desktop/appxpkg/troubleshooting) (Solución de problemas de empaquetado, implementación y consulta de aplicaciones de la Tienda Windows).    |
+|    0x87D1041C    |    La instalación de la aplicación se realizó correctamente, pero esta no se detecta. La aplicación se implementó correctamente mediante Intune y luego se desinstaló. Las razones por las que la aplicación se va a desinstalar son:<ul><li> El usuario final desinstaló la aplicación.</li><li> La información de identidad en el paquete no coincide con lo que el dispositivo informa para las aplicaciones incorrectas.</li><li>Para los MSI de actualización automática, la versión del producto no coincide con la información de la aplicación después de que se actualiza fuera de Intune.</li></ul> Indique al usuario que vuelva a instalar la aplicación desde el portal de empresa. Tenga en cuenta que las aplicaciones necesarias se reinstalarán automáticamente cuando se vuelva a registrar el dispositivo.    |
+
+## <a name="troubleshooting-apps-from-the-microsoft-store"></a>Solucionar problemas de aplicaciones de la Microsoft Store
+
+La información contenida en el tema [Troubleshooting packaging, deployment, and query of Microsoft Store apps](https://msdn.microsoft.com/library/windows/desktop/hh973484.aspx) (Solucionar problemas de empaquetado, implementación y consulta de aplicaciones de la Microsoft Store) le ayuda a solucionar problemas comunes que pueden surgir al instalar aplicaciones desde la Microsoft Store, tanto si usa Intune como otros medios.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

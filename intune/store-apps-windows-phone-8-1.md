@@ -1,12 +1,12 @@
 ---
 title: Agregar aplicaciones de la Tienda de Windows Phone 8.1 a Microsoft Intune
 titleSuffix: ''
-description: Obtenga información sobre cómo agregar aplicaciones de la tienda de Windows Phone 8.1 a Microsoft Intune.
+description: En este tema se describe cómo agregar aplicaciones de la Tienda de Windows Phone 8.1 a Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 47861e95a016338447091e4fcaffdda3e199eee7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5892ffe0369ae7b43489c1ce5c327f88c0d857f3
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182761"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642530"
 ---
 # <a name="add-windows-phone-81-store-apps-to-microsoft-intune"></a>Agregar aplicaciones de la Tienda de Windows Phone 8.1 a Microsoft Intune
 
@@ -41,13 +41,13 @@ Puede agregar una aplicación de la Tienda de Windows Phone 8.1 a Intune desde A
 6. En el panel **Agregar aplicación**, seleccione un **Tipo de aplicación** **Windows Phone 8.1** y luego seleccione **Información de la aplicación**.
 7. En el panel **Información de la aplicación**, agregue la información de la aplicación. Según la aplicación que haya elegido, algunos de los valores de este panel pueden haberse rellenado automáticamente:
     - **Nombre**: escriba el nombre de la aplicación como se va a mostrar en el Portal de empresa. Asegúrese de que cualquier nombre de aplicación que use sea exclusivo. Si hay un nombre de aplicación duplicado, solo se muestra uno a los usuarios del Portal de empresa.
-    - **Descripción:** escriba una descripción de la aplicación. Esta descripción se muestra a los usuarios del Portal de empresa.
-    - **Editor**: escriba el nombre del editor de la aplicación.
-    - **Dirección URL de AppStore**: escriba la dirección URL de App Store de la aplicación que quiere crear.
+    - **Descripción**: Escriba una descripción de la aplicación. Esta descripción se muestra a los usuarios del Portal de empresa.
+    - **Publicador**: Escriba el nombre del publicador de la aplicación.
+    - **Dirección URL de Appstore**: escriba la dirección URL de App Store de la aplicación que quiere crear.
     - **Categoría**: de manera opcional, seleccione una o varias de las categorías de aplicaciones integradas o una categoría que haya creado. Esto facilita que los usuarios puedan encontrar la aplicación cuando exploran el Portal de empresa.
     - **Mostrar como aplicación destacada en el Portal de empresa**: seleccione esta opción para mostrar el conjunto de aplicaciones de forma destacada en la página principal del Portal de empresa cuando los usuarios busquen aplicaciones.
-    - **Dirección URL de información**: opcionalmente, escriba la dirección URL de un sitio web que contenga información sobre esta aplicación. La dirección URL se muestra a los usuarios en el portal de empresa.
-    - **Dirección URL de privacidad**: opcionalmente, escriba la dirección URL de un sitio web que contenga información de privacidad sobre esta aplicación. La dirección URL se muestra a los usuarios en el portal de empresa.
+    - **Dirección URL de información**: Opcionalmente, escriba la dirección URL de un sitio web que contenga información sobre esta aplicación. La dirección URL se muestra a los usuarios en el portal de empresa.
+    - **Dirección URL de privacidad**: Opcionalmente, escriba la dirección URL de un sitio web que contenga información de privacidad sobre esta aplicación. La dirección URL se muestra a los usuarios en el portal de empresa.
     - **Desarrollador**: opcionalmente, escriba el nombre del desarrollador de la aplicación.
     - **Propietario**: opcionalmente, escriba un nombre para el propietario de esta aplicación, por ejemplo, *Departamento de Recursos Humanos*.
     - **Notas**: opcionalmente, escriba las notas que desea asociar a esta aplicación.

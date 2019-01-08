@@ -14,12 +14,12 @@ ms.assetid: 4fdb787e-084f-4507-9c63-c96b13bfcdf9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 44923d89647118268c7a55746599354ac88fbfd2
-ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
+ms.openlocfilehash: 12d050bb7ef959b940e2b758284863319282f179
+ms.sourcegitcommit: 58ac1051faeb33dd29e59049d901761707486350
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52861020"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53553663"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>Eliminación de dispositivos mediante el borrado, la retirada o la anulación manual de la inscripción del dispositivo
 
@@ -81,7 +81,7 @@ En las tablas siguientes se describen los datos que se eliminan y el efecto de l
 
 |Tipo de datos|iOS|
 |-------------|-------|
-|Aplicaciones de empresa y datos asociados instalados por Intune.|**Aplicaciones instaladas mediante Portal de empresa:** se quitan todos los datos de aplicación y las aplicaciones. Entre estas aplicaciones se incluyen aquellas instaladas originalmente desde App Store y posteriormente administradas como aplicaciones de la empresa. <br /><br /> **Aplicaciones de Microsoft que usan la administración de aplicaciones móviles y se instalaron desde App Store:** Se quitarán los datos de la aplicación personal. No se quitarán las aplicaciones ni los datos de la aplicación de la empresa.|
+|Aplicaciones de empresa y datos asociados instalados por Intune.|**Aplicaciones instaladas mediante Portal de empresa:** se quitan todos los datos de aplicación y las aplicaciones. Entre estas aplicaciones se incluyen aquellas instaladas originalmente desde App Store y posteriormente administradas como aplicaciones de la empresa. <br /><br /> **Aplicaciones de Microsoft que usan la administración de aplicaciones móviles y se instalaron desde App Store:** Se quitarán los datos de la aplicación de empresa. No se quitarán las aplicaciones ni los datos de la aplicación personales.|
 |Configuración|Las configuraciones que estableció la directiva de Intune ya no se aplican y los usuarios pueden cambiar la configuración.|
 |Configuración de perfil de Wi-Fi y VPN|Quitado.|
 |Configuración de perfil de certificado|Certificados eliminados y revocados.|

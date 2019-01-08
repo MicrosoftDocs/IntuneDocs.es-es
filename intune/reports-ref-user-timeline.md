@@ -1,12 +1,12 @@
 ---
 title: Escala de tiempo de la entidad de usuario de Almacenamiento de datos
 titlesuffix: Microsoft Intune
-description: Sepa cómo el almacenamiento de datos de Intune representa los usuarios en una escala de tiempo.
+description: Obtenga información sobre cómo Data Warehouse de Microsoft Intune representa los usuarios en una escala de tiempo.
 keywords: Almacenamiento de datos de Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 10/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 4493ea8442642c09ee7a94b9b73fe0412c015649
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d270aef9bd7102148466006f4057f1c598b02b0e
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189918"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642708"
 ---
 # <a name="user-lifetime-representation-in-the-microsoft-intune-data-warehouse"></a>Representación de la duración del usuario en el Almacenamiento de datos de Microsoft Intune
 

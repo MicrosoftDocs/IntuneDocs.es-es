@@ -6,7 +6,7 @@ keywords: Almacenamiento de datos de Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: b08746965c23c8d247a53bcd0b0844a24581b4e6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 730195b200448d529d2a56ac8e8a45548264de2d
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179106"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429651"
 ---
-#  <a name="intune-data-warehouse-api"></a>API de Almacenamiento de datos de Intune
+#  <a name="microsoft-intune-data-warehouse-api"></a>API de Data Warehouse de Microsoft Intune
 
 La API de Almacenamiento de datos de Intune le permite obtener acceso a los datos de Intune en un formato legible para el equipo, de modo que pueda usarlos con la herramienta de análisis que prefiera. Puede usar la API para generar informes que proporcionen una visión general del entorno móvil de la empresa. La API usa el protocolo OData, que sigue patrones estándar para:
 
@@ -66,6 +66,6 @@ OData define un modelo de datos abstracto y un protocolo que permiten que todos 
 
 Para obtener más información sobre cómo trabajar con Azure AD, lea [Escenarios de autenticación para Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios).
 
-Puede acceder a recursos de OData en [odata.org](http://www.odata.org).
+Puede acceder a recursos de OData en [odata.org](https://www.odata.org).
   
-Revise el estándar de la versión 4.0 de OData en [Versión 4.0 de OData] (http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)).  
+Revise el estándar de la versión 4.0 de OData en [Versión 4.0 de OData] (https://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part1-protocol.html)).  

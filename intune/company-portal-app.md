@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e1d645de0dfa9c215a9670246f43375de5153286
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 72349a609485096b5abd6eaff3c252a510a978a7
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185430"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738025"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>Configuración de la aplicación Portal de empresa de Microsoft Intune
 
@@ -72,7 +72,7 @@ Aplique un color de tema al Portal de empresa. Seleccione un color estándar o e
 |**Seleccionar un color estándar o escribir un código hexadecimal de seis dígitos**| Elija **Estándar** para seleccionar visualmente un color. Elija **Personalizado** para seleccionar un color específico según un valor de código hexadecimal.|
 |**Elegir color de tema**| Seleccione el color del tema que se aplicará al portal de empresa. Puede elegir un color estándar o escribir un código hexadecimal concreto. |
 |**Mostrar**| Seleccione si se mostrará **Nombre y logotipo de empresa**, **Company logo only** (Solo logotipo de empresa) o **Company name only** (Solo nombre de empresa). |
-|**Cargar el logotipo de empresa**|Puede cargar el logotipo de la empresa para que se muestre en el Portal de empresa. Tenga en cuenta que el color del texto se selecciona automáticamente para proporcionar el nivel más alto de contraste. Para obtener la mejor apariencia, cargue un logotipo con un fondo transparente.<p><ul><li>Tamaño máximo de imagen: 400 x 400 px</li><li>Tamaño máximo de archivo: 750 KB</li><li>Tipo de archivo: PNG, JPG o JPEG</li></ul>|
+|**Cargar el logotipo de empresa**|Puede cargar el logotipo de la empresa para que se muestre en el Portal de empresa. Tenga en cuenta que el color del texto se selecciona automáticamente para proporcionar el nivel más alto de contraste. Para obtener la mejor apariencia, cargue un logotipo con un fondo transparente.<p><ul><li>Tamaño máximo de imagen: 400 px x 400 px</li><li>Tamaño máximo de archivo: 750 KB</li><li>Tipo de archivo: PNG, JPG o JPEG</li></ul>|
 
 Después de cargar el logotipo, en el área de vista previa se mostrará el logotipo de con el color del tema. Si decide mostrar el nombre de la empresa, se mostrará en blanco o negro en el Portal de empresa y se seleccionará automáticamente para proporcionar el nivel más alto de contraste según el color del tema. En el área de vista previa de la pantalla no se mostrará el nombre de la empresa. 
 
@@ -81,7 +81,7 @@ Elija un logotipo que encaje mejor en fondos blancos o claros.
 
 |Nombre de campo|Más información|
 |---|---|
-|**Cargar el logotipo**| Esta opción está disponible si ha elegido mostrar el logotipo de la empresa. Para obtener la mejor apariencia, cargue un logotipo con un fondo transparente.<p><ul><li>Tamaño máximo de imagen: 400 x 400 px</li><li>Tamaño máximo de archivo: 750 KB</li><li>Tipo de archivo: PNG, JPG o JPEG</li></ul>|
+|**Cargar el logotipo**| Esta opción está disponible si ha elegido mostrar el logotipo de la empresa. Para obtener la mejor apariencia, cargue un logotipo con un fondo transparente.<p><ul><li>Tamaño máximo de imagen: 400 px x 400 px</li><li>Tamaño máximo de archivo: 750 KB</li><li>Tipo de archivo: PNG, JPG o JPEG</li></ul>|
 
 ### <a name="brand-image-for-company-portal"></a>Imagen de marca del Portal de empresa
 
@@ -138,7 +138,7 @@ Los siguientes métodos abreviados de teclado están disponibles en la aplicaci�
 
 Los usuarios finales también podrán ver los accesos directos disponibles en la aplicación Portal de empresa de Windows.
 
-![Captura de pantalla de los accesos directos disponibles en la aplicación Portal de empresa de Windows](media/company-portal-app/company-portal-app-01.png)
+![Captura de pantalla de los accesos directos disponibles en el Portal de empresa de Windows](media/company-portal-app/company-portal-app-01.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
 

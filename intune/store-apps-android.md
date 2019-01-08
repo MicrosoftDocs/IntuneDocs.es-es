@@ -1,12 +1,12 @@
 ---
 title: Agregar aplicaciones de la Tienda Android a Microsoft Intune
 titleSuffix: ''
-description: Obtenga información sobre cómo agregar aplicaciones de la tienda de Android a Microsoft Intune.
+description: Obtenga información sobre cómo agregar aplicaciones de la tienda Android desde Google Play Store a Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,22 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5f191a8e03710d97842ad31083fe3c07008afb56
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2391f6ec7de5a9d1b4d544f1ca07fd9f4e58ace8
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190190"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642416"
 ---
 # <a name="add-android-store-apps-to-microsoft-intune"></a>Agregar aplicaciones de la Tienda Android a Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Antes de asignar una aplicación a un dispositivo o a un grupo de usuarios, primero debe agregar la aplicación a Microsoft Intune. Puede agregar una aplicación de la Tienda Android a Intune desde Azure Portal si hace lo siguiente:
+Antes de asignar una aplicación a un dispositivo o a un grupo de usuarios, primero debe agregar la aplicación a Microsoft Intune. 
+
+## <a name="add-an-app"></a>Agregar una aplicación
+
+Puede agregar una aplicación de la Tienda Android a Intune desde Azure Portal si hace lo siguiente:
 
 1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
 2. Seleccione **Todos los servicios** > **Intune**.  
@@ -38,14 +42,14 @@ Antes de asignar una aplicación a un dispositivo o a un grupo de usuarios, prim
 6. En el panel **Agregar aplicación**, en los tipos de **Aplicaciones de la Tienda** disponibles, seleccione **Android**.
 7. Para configurar la información de la aplicación, seleccione **Configurar** y luego proporcione la siguiente información. Para aplicaciones Android, vaya a [Google Play](https://play.google.com/store) y busque la aplicación que quiera implementar. Seleccione la aplicación y anote los detalles de la aplicación. Según la aplicación que haya elegido, algunos de los valores pueden haberse rellenado automáticamente.
     - **Nombre**: escriba el nombre de la aplicación como se va a mostrar en el Portal de empresa. Asegúrese de que cualquier nombre de aplicación que use sea exclusivo. Si hay un nombre de aplicación duplicado, solo se muestra uno a los usuarios del Portal de empresa.
-    - **Descripción:** escriba una descripción de la aplicación. Esta descripción se muestra a los usuarios del Portal de empresa.
-    - **Editor**: escriba el nombre del editor de la aplicación.
-    - **Dirección URL de AppStore**: escriba la dirección URL de App Store de la aplicación que quiere crear.
+    - **Descripción**: Escriba una descripción de la aplicación. Esta descripción se muestra a los usuarios del Portal de empresa.
+    - **Publicador**: Escriba el nombre del publicador de la aplicación.
+    - **Dirección URL de Appstore**: escriba la dirección URL de App Store de la aplicación que quiere crear.
     - **Versión mínima del sistema operativo**: en la lista, seleccione la versión mínima del sistema operativo en la que se puede instalar la aplicación. Si la aplicación se asigna a un dispositivo con un sistema operativo anterior, no se instalará.
     - **Categoría**: de manera opcional, seleccione una o varias de las categorías de aplicaciones integradas o una categoría que haya creado. Esto facilita que los usuarios puedan encontrar la aplicación cuando exploran el Portal de empresa.
     - **Mostrar como aplicación destacada en el Portal de empresa**: seleccione esta opción para mostrar el conjunto de aplicaciones de forma destacada en la página principal del Portal de empresa cuando los usuarios busquen aplicaciones.
-    - **Dirección URL de información**: opcionalmente, escriba la dirección URL de un sitio web que contenga información sobre esta aplicación. La dirección URL se muestra a los usuarios en el portal de empresa.
-    - **Dirección URL de privacidad**: opcionalmente, escriba la dirección URL de un sitio web que contenga información de privacidad sobre esta aplicación. La dirección URL se muestra a los usuarios en el portal de empresa.
+    - **Dirección URL de información**: Opcionalmente, escriba la dirección URL de un sitio web que contenga información sobre esta aplicación. La dirección URL se muestra a los usuarios en el portal de empresa.
+    - **Dirección URL de privacidad**: Opcionalmente, escriba la dirección URL de un sitio web que contenga información de privacidad sobre esta aplicación. La dirección URL se muestra a los usuarios en el portal de empresa.
     - **Desarrollador**: opcionalmente, escriba el nombre del desarrollador de la aplicación.
     - **Propietario**: opcionalmente, escriba un nombre para el propietario de esta aplicación, por ejemplo, *Departamento de Recursos Humanos*.
     - **Notas**: opcionalmente, escriba las notas que desea asociar a esta aplicación.

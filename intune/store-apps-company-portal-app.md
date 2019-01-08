@@ -1,12 +1,12 @@
 ---
 title: Adición manual de la aplicación Portal de empresa para Windows 10
 titleSuffix: Microsoft Intune
-description: Obtenga información sobre cómo agregar manualmente la aplicación Portal de empresa de Windows 10.
+description: Obtenga información sobre cómo los empleados pueden agregar manualmente la aplicación Portal de empresa de Windows 10 a sus PC desde Microsoft Store.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7808d9c189f429e15cdf916d18412ba951c7e696
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 755e836c5954b9cbbf3c7729755aaa25062710d8
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190275"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642598"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>Adición manual de la aplicación Portal de empresa para Windows 10 con Microsoft Intune
 
@@ -51,7 +51,7 @@ Para administrar dispositivos e instalar aplicaciones, los usuarios pueden insta
 
 7. Descargue todos los paquetes de "Marcos necesarios" al seleccionar **Descargar**.  
     Esta acción debe realizarse para las arquitecturas x86, x64 y ARM, un total de 12 paquetes.
-8. Antes de cargar la aplicación Portal de empresa en Intune, cree una carpeta (por ejemplo, C:\Company Portal) con los paquetes estructurados de la manera siguiente:
+8. Antes de cargar la aplicación Portal de empresa en Intune, cree una carpeta (por ejemplo: C:\Company Portal) con los paquetes estructurados de la manera siguiente:
    - Colocar el paquete del Portal de empresa en C:\Company Portal. Cree también una subcarpeta *Dependencias* en esta ubicación.  
 
      ![Carpeta Dependencias guardada con el archivo APPXBUN](./media/Win10CP-Dependencies-save.png)

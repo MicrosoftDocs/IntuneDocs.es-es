@@ -1,7 +1,7 @@
 ---
 title: Punto de conexión de la API de Almacenamiento de datos de Intune
 titlesuffix: Microsoft Intune
-description: En este tema de referencia se describe la estructura de la dirección URL de la API de almacenamiento de datos de Intune.
+description: En este tema de referencia se describe la estructura de la dirección URL de la API Data Warehouse de Microsoft Intune. Se proporcionan ejemplos de filtro.
 keywords: Almacenamiento de datos de Intune
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: d819656b59f1f1ceffa1e19645bddc0e8427ad8c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 58a78cee51a411c940d4510cd8498994c14129f0
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180602"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642751"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Punto de conexión de la API de Almacenamiento de datos de Intune
 
@@ -29,7 +29,7 @@ Puede usar la API de Almacenamiento de datos de Intune con una cuenta con contro
 
 [!INCLUDE [reports-credential-reqs](./includes/reports-credential-reqs.md)]
 
-## <a name="authorization"></a>Authorization
+## <a name="authorization"></a>Autorización
 
 Azure Active Directory (Azure AD) usa OAuth 2.0 para permitir autorizar el acceso a aplicaciones web y API web en el inquilino de Azure AD. En esta guía independiente del idioma se describe cómo enviar y recibir mensajes HTTP sin usar ninguna biblioteca de código abierto. El flujo del código de autorización de OAuth 2.0 se describe en la [sección 4.1](https://tools.ietf.org/html/rfc6749#section-4.1) de la especificación de OAuth 2.0.
 

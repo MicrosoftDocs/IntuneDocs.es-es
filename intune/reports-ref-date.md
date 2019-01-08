@@ -6,7 +6,7 @@ keywords: Almacenamiento de datos de Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/14/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 55d624f63c8563cc3dde561b98cd0894d5a9b65d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 521f33b0c4cfa0f1f4ba534acc2f3fec9a53f151
+ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189170"
+ms.lasthandoff: 12/15/2018
+ms.locfileid: "53429634"
 ---
 # <a name="reference-for-date-entity"></a>Referencia de la entidad Date
 
 La categoría **Fecha** contiene la entidad **Date**, que se usa para definir las referencias de fecha en el modelo de datos.
 
-**Fecha**
+## <a name="date"></a>Fecha
 
 La entidad **Date** representa fechas a las que se hace referencia en varias entidades de almacenamiento de datos.
 
@@ -53,3 +53,6 @@ La entidad **Date** representa fechas a las que se hace referencia en varias ent
 | CalendarQuarter |                    Trimestre natural.                    |          3           |
 |  CalendarYear   |                     Año natural.                      |         2016         |
 
+## <a name="next-steps"></a>Pasos siguientes
+
+- Obtenga más información sobre [Data Warehouse de Intune](reports-nav-create-intune-reports.md).

@@ -1,12 +1,12 @@
 ---
 title: Autenticación de solo aplicación de Almacenamiento de datos de Intune
 titleSuffix: Microsoft Intune
-description: En este tema se describe la autenticación de solo aplicación de Almacenamiento de datos.
+description: En este tema se describe la autenticación de solo aplicación de Data Warehouse para Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b72a0bf1a5f5c996ad299bd84ff6f927ef780059
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 096a6ee5d2f80600d800293ae9b5d4be6a07b027
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185209"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642802"
 ---
 # <a name="intune-data-warehouse-application-only-authentication"></a>Autenticación de solo aplicación de Almacenamiento de datos de Intune
 
 Puede configurar una aplicación con Azure Active Directory (Azure AD) y autenticarla en el Almacenamiento de datos de Intune. Este proceso resulta útil para sitios web, aplicaciones y procesos en segundo plano en que la aplicación no debe tener acceso a las credenciales de usuario. Con los pasos siguientes, autoriza a la aplicación con Azure AD mediante OAuth 2.0.
 
-## <a name="authorization"></a>Authorization
+## <a name="authorization"></a>Autorización
 
 Azure Active Directory (Azure AD) usa OAuth 2.0 para permitir autorizar el acceso a aplicaciones web y API web en el inquilino de Azure AD. En esta guía se explica cómo autenticar la aplicación con C#. El flujo del código de autorización de OAuth 2.0 se describe en la sección 4.1 de la especificación de OAuth 2.0. Para obtener más información, vea [Autorización del acceso a aplicaciones web mediante OAuth 2.0 y Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-protocols-oauth-code).
 
@@ -160,6 +160,6 @@ Con Visual Studio, cree un proyecto de aplicación de consola (.NET Framework) q
     >[!NOTE] 
     > Para ver código de implementación adicional, vea el [ejemplo de código Intune-Data-Warehouse](https://github.com/Microsoft/Intune-Data-Warehouse/tree/master/Samples/CSharp ).
 
-## <a name="next-steps"></a>Pasos a seguir
+## <a name="next-steps"></a>Pasos siguientes
 Para obtener más información sobre Azure Key Vault, revise [¿Qué es Azure Key Vault?](https://docs.microsoft.com/azure/key-vault/key-vault-whatis)
 

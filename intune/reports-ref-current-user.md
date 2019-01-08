@@ -1,12 +1,12 @@
 ---
 title: Usuario actual - Almacenamiento de datos de Intune
 titlesuffix: Microsoft Intune
-description: Tema de referencia sobre la categoría Usuario de las colecciones de entidades de la API de Almacenamiento de datos de Intune.
+description: Tema de referencia sobre la categoría Usuario actual de las colecciones de entidades de la API Data Warehouse de Intune.
 keywords: Almacenamiento de datos de Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,13 +15,13 @@ ms.assetid: C10E6752-E925-40AD-ABBF-6B621FB7AFC4
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-classic
-ms.openlocfilehash: b58f6f360cf034be11153a57227da42ed1e29388
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.custom: intune-classic; seodec18
+ms.openlocfilehash: a6329a44f1ccfa55025ad558fe2f277a41293538
+ms.sourcegitcommit: 0f19bc5c76b7c0835bfd180459f2bbd128eec1c2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189782"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53266909"
 ---
 # <a name="reference-for-current-user-entity"></a>Referencia de la entidad de usuario actual
 
@@ -39,7 +39,7 @@ La entidad **Usuario actual** muestra todos los usuarios de Azure Active Directo
 | UserEmail |Dirección de correo electrónico del usuario. |John@constoso.com |
 | UPN | Nombre principal del usuario. | John@constoso.com |
 | DisplayName |Nombre para mostrar del usuario. |Juan |
-| IntuneLicensed |Especifica si este usuario tiene licencia de Intune o no. |Verdadero o falso |
+| IntuneLicensed |Especifica si este usuario tiene licencia de Intune o no. |Verdadero/Falso |
 | StartDateInclusiveUTC |Fecha y hora en formato UTC en que se ha creado este usuario en el almacenamiento de datos. |23/11/2016 12:00:00 AM |
 | RowLastModifiedDateTimeUTC |Fecha y hora en formato UTC en que se ha modificado por última vez este usuario en el almacenamiento de datos. |23/11/2016 12:00:00 AM |
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/03/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6e8a74763f29707aa3e774be52f7b383b040ec1e
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.openlocfilehash: 11a698628e3ca1342f10f088045012523c8ac745
+ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829154"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53734296"
 ---
 # <a name="intune-standalone---win32-app-management-public-preview"></a>Intune independiente: administración de aplicaciones Win32 (versión preliminar pública)
 
@@ -76,26 +76,26 @@ De forma bastante similar a una aplicación de línea de negocio (LOB), puede ag
 3.  En el panel **Intune**, seleccione **Aplicaciones cliente** > **Aplicaciones** > **Agregar**.
 4.  En el panel de aplicaciones **Agregar**, seleccione **Vista previa de la aplicación Windows (Win32) -** en la lista desplegable.
 
-    ![Captura de pantalla del cuadro de diálogo desplegable Agregar aplicación - Tipo de aplicación](./media/apps-win32-app-01.png)
+    ![Captura de pantalla de la hoja Agregar aplicación - Cuadro de lista desplegable Agregar tipo](./media/apps-win32-app-01.png)
 
 ### <a name="step-2-upload-the-app-package-file"></a>Paso 2: Carga del archivo de paquete de aplicaciones
 
 1.  En el panel **Agregar aplicación**, seleccione **Archivo del paquete de aplicaciones** para seleccionar un archivo. Se mostrará el panel del archivo del paquete de aplicaciones.
 
-    ![Captura de pantalla del archivo del paquete de aplicaciones](./media/apps-win32-app-02.png)
+    ![Captura de pantalla de la hoja del archivo del paquete de aplicaciones](./media/apps-win32-app-02.png)
 
 2.  En el panel **Archivo del paquete de aplicaciones**, seleccione el botón Examinar. Después seleccione un archivo de instalación de Windows con la extensión *.intunewin*.
 3.  Cuando haya terminado, seleccione **Aceptar**.
 
-### <a name="step-3-configure-app-information"></a>Paso 3: Configuración de la información de la aplicación
+### <a name="step-3-configure-app-information"></a>Paso 3: Configuración de información de la aplicación
 
 1.  En el panel **Agregar aplicación**, seleccione **Información de la aplicación** para configurar la aplicación.
 2.  En el panel **Información de la aplicación**, configure la información siguiente. Algunos de los valores de este panel podrían rellenarse automáticamente.
     - **Nombre**: escriba el nombre de la aplicación tal como aparece en el portal de empresa. Si el mismo nombre de aplicación existe dos veces, se mostrarán las dos aplicaciones en el portal de empresa.
-    - **Descripción:** escriba una descripción de la aplicación. La descripción aparece en el portal de empresa.
-    - **Editor**: escriba el nombre del editor de la aplicación.
-    - **Categoría**: seleccione una o varias de las categorías de aplicaciones integradas, o seleccione una categoría que haya creado. Las categorías facilitan a los usuarios encontrar la aplicación cuando exploran el portal de empresa.
-    - **Mostrar como aplicación destacada en el Portal de empresa**: la aplicación se muestra de forma destacada en la página principal del portal de empresa cuando los usuarios buscan aplicaciones.
+    - **Descripción**: Escriba una descripción de la aplicación. La descripción aparece en el portal de empresa.
+    - **Publicador**: Escriba el nombre del publicador de la aplicación.
+    - **Categoría**: seleccione una o varias de las categorías de aplicaciones integradas o seleccione una categoría que haya creado. Las categorías facilitan a los usuarios encontrar la aplicación cuando exploran el portal de empresa.
+    - **Mostrar como aplicación destacada en el Portal de empresa**: Muestra la aplicación de forma destacada en la página principal del portal de empresa cuando los usuarios buscan aplicaciones.
     - **Dirección URL de información**: opcionalmente, escriba la dirección URL de un sitio web que contenga información sobre la aplicación. La dirección URL aparece en el portal de empresa.
     - **Dirección URL de privacidad**: opcionalmente, escriba la dirección URL de un sitio web que contenga información de privacidad sobre la aplicación. La dirección URL aparece en el portal de empresa.
     - **Desarrollador**: opcionalmente, escriba el nombre del desarrollador de la aplicación.
@@ -126,11 +126,11 @@ De forma bastante similar a una aplicación de línea de negocio (LOB), puede ag
 1.  En el panel **Agregar aplicación**, seleccione **Requisitos** para configurar los requisitos que deben cumplir los dispositivos para que se pueda instalar la aplicación.
 2.  En el panel **Requisitos**, configure la siguiente información. Algunos de los valores de este panel podrían rellenarse automáticamente.
     - **Arquitectura del sistema operativo**: elija las arquitecturas necesarias para instalar la aplicación.
-    - **Sistema operativo mínimo**: seleccione el sistema operativo necesario para instalar la aplicación.
+    - **Versión mínima del sistema operativo**: seleccione el sistema operativo necesario para instalar la aplicación.
     - **Espacio en disco necesario (MB)**: también puede agregar el espacio libre en disco necesario en la unidad del sistema para instalar la aplicación.
-    - **Memoria física necesaria (MB)**: también puede agregar la memoria física (RAM) necesaria para instalar la aplicación.
+    - **Memoria física requerida (MB)**: también puede agregar la memoria física (RAM) necesaria para instalar la aplicación.
     - **Número mínimo de procesadores lógicos necesarios**: también puede agregar el número mínimo de procesadores lógicos necesarios para instalar la aplicación.
-    - **Velocidad mínima de CPU necesaria (MHz)**: opcionalmente, puede agregar la velocidad de CPU mínima necesaria para instalar la aplicación.
+    - **Velocidad de CPU mínima requerida (MHz)**: opcionalmente, puede agregar la velocidad de CPU mínima necesaria para instalar la aplicación.
 3.  Cuando haya terminado, seleccione **Aceptar**.
 
 ### <a name="step-6-configure-app-detection-rules"></a>Paso 6: Configuración de reglas de detección de aplicaciones
@@ -182,15 +182,17 @@ De forma bastante similar a una aplicación de línea de negocio (LOB), puede ag
     - **Usar un script de detección personalizada**: especifique el script de PowerShell que se usará para detectar esta aplicación. 
     
         1.  **Archivo de script**: seleccione un script de PowerShell que detectará la presencia de la aplicación en el cliente. La aplicación se detectará cuando el script devuelva un código de salida del valor 0 y escriba un valor de cadena en STDOUT.
-        2.  **Ejecutar un script como proceso de 32 bits en clientes de 64 bits**: seleccione **Sí** para ejecutar el script con las credenciales del usuario final con la sesión iniciada. Seleccione **No** (valor predeterminado) para ejecutar el script en el contexto del sistema.
+
+        2.  **Ejecutar script como proceso de 32 bits en clientes de 64 bits**: seleccione **Sí** para ejecutar el script en un proceso de 32 bits en clientes de 64 bits. Seleccione **No** (valor predeterminado) para ejecutar el script en un proceso de 64 bits en clientes de 64 bits. Los clientes de 32 bits ejecutan el script en un proceso de 32 bits.
+
         3.  **Exigir la comprobación de firma del script**: seleccione **Sí** para comprobar si el script está firmado por un editor de confianza. Esto permitirá que el script se ejecute sin mostrar advertencias ni mensajes. El script se ejecutará desbloqueado. Seleccione **No** (valor predeterminado) para ejecutar el script con una confirmación del usuario final sin comprobación de firmas.
     
-        Intune sidecar comprueba los resultados del script. Lee los valores escritos por el script en la secuencia de salida estándar (STDOUT), la secuencia de error estándar (STDERR) y el código de salida. Si el script sale con un valor distinto de cero, se produce un error en el script y el estado de detección de la aplicación es no instalada. Si el código de salida es cero y STDOUT contiene datos, el estado de detección de la aplicación es Instalada. 
-    
-        > [!NOTE]
-        > Cuando el script existe con el valor de 0, significa que el script se ha ejecutado correctamente. El segundo canal de salida indica que se ha detectado la aplicación: los datos de STDOUT indican que la aplicación se encontró en el cliente. No buscamos una cadena concreta de STDOUT.
-    
-3.  Después de agregar las reglas, seleccione **Agregar** > **Aceptar**.
+            El agente de Intune comprueba los resultados del script. Lee los valores escritos por el script en la secuencia de salida estándar (STDOUT), la secuencia de error estándar (STDERR) y el código de salida. Si el script sale con un valor distinto de cero, se produce un error en el script y el estado de detección de la aplicación es no instalada. Si el código de salida es cero y STDOUT contiene datos, el estado de detección de la aplicación es Instalada. 
+
+            > [!NOTE]
+            > Cuando el script existe con el valor de 0, significa que el script se ha ejecutado correctamente. El segundo canal de salida indica que se ha detectado la aplicación: los datos de STDOUT indican que la aplicación se encontró en el cliente. No buscamos una cadena concreta de STDOUT.
+
+        4.  Después de agregar las reglas, seleccione **Agregar** > **Aceptar**.
 
 ### <a name="step-7-configure-app-return-codes"></a>Paso 7: Configuración de los códigos de retorno de la aplicación
 
@@ -208,13 +210,13 @@ De forma bastante similar a una aplicación de línea de negocio (LOB), puede ag
 1.  En el panel **Agregar aplicación**, compruebe que ha configurado correctamente la información de la aplicación.
 2.  Seleccione **Agregar** para cargar la aplicación en Intune.
 
-### <a name="step-9-assign-the-app"></a>Paso 9: Asignar la aplicación
+### <a name="step-9-assign-the-app"></a>Paso 9: Asignación de la aplicación
 
 1.  En el panel de la aplicación, seleccione **Asignaciones**.
 2.  Seleccione **Agregar grupo** para abrir el panel **Agregar grupo** que está relacionado con la aplicación.
 3.  Para la aplicación específica, seleccione un **tipo de asignación**:
     - **Disponible para dispositivos inscritos**: los usuarios instalan la aplicación desde la aplicación o el sitio web del Portal de empresa.
-    - **Requerida**: la aplicación se instala en los dispositivos de los grupos seleccionados.
+    - **Requerido**: la aplicación se instala en los dispositivos de los grupos seleccionados.
     - **Desinstalar**: la aplicación se desinstala de dispositivos de los grupos seleccionados.
 4.  Seleccione **Grupos incluidos** y asigne los grupos que usarán esta aplicación.
 5.  En el panel **Asignar**, seleccione **Aceptar** para completar la selección de grupos incluidos.
@@ -232,16 +234,16 @@ Los clientes Windows 10 RS3 y versiones posterior descargarán contenido de apli
 
 El usuario final verá las notificaciones del sistema de Windows en las instalaciones de aplicaciones obligatorias y disponibles. En la siguiente imagen se muestra una notificación del sistema de ejemplo donde la instalación de la aplicación no finaliza hasta que se reinicia el dispositivo. 
 
-![Captura de pantalla de ejemplo de notificaciones del sistema de Windows para la instalación de una aplicación](./media/apps-win32-app-08.png)    
+![Captura de pantalla de notificaciones del sistema de Windows para la instalación de una aplicación](./media/apps-win32-app-08.png)    
 
 La siguiente imagen notifica al usuario final que se están realizando cambios de la aplicación en el dispositivo.
 
-![Captura de pantalla de ejemplo de una notificación al usuario final de que se están realizando cambios de la aplicación en el dispositivo](./media/apps-win32-app-09.png)    
+![Captura de pantalla que notifica al usuario que se están realizando cambios en la aplicación](./media/apps-win32-app-09.png)    
 
 ## <a name="troubleshoot-win32-app-issues"></a>Solucionar los problemas de aplicaciones Win32
 Normalmente los registros de agente en el equipo cliente se encuentran en `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`. Puede aprovechar `CMTrace.exe` para ver estos archivos de registro. *CMTrace.exe* se puede descargar en las [herramientas de cliente de SCCM](https://docs.microsoft.com/sccm/core/support/tools). 
 
-![Captura de pantalla de los registros de agente](./media/apps-win32-app-10.png)    
+![Captura de pantalla de los registros del agente en el equipo cliente](./media/apps-win32-app-10.png)    
 
 ### <a name="troubleshooting-areas-to-consider"></a>Áreas de la solución de problemas para tener en cuenta
 - Compruebe la orientación para asegurarse de que el agente está instalado en el dispositivo. Si una aplicación Win32 o PowerShell se orientan a un grupo, se creará una directiva de instalación del agente para el grupo de seguridad.

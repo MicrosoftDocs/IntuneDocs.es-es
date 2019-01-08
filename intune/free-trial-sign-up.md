@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 12/20/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 827766d76a66ea7d69ebbd3ba77efe785689e7e2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2257253d023c97d14418b3566c0c493a3cd8f615
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189187"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53737923"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Inicio rápido: Prueba gratuita de Microsoft Intune 
 
@@ -50,7 +50,7 @@ Probar Intune es gratis durante 30 días. Si ya dispone de una cuenta profesiona
 
 2. Cree una cuenta con el nombre de su compañía seguido de **.onmicrosoft.com**. 
 
-    ![Captura de pantalla de la página web de registro de una cuenta de prueba de Microsoft Intune](./media/account-sign-up-site-user-id.png)
+    ![Captura de pantalla del nuevo proceso de credencial de la cuenta de prueba de Microsoft Intune](./media/account-sign-up-site-user-id.png)
 
     Si quiere usar el dominio personalizado de su organización sin **.onmicrosoft.com**, puede cambiarlo en el Portal de administración de Office 365, tal como se describe más adelante en este artículo.
 
@@ -106,13 +106,13 @@ Tal como se mencionó anteriormente, si quiere usar el dominio personalizado de 
 
 3. Escriba su nombre de dominio personalizado. A continuación, seleccione **Siguiente**.
 
-   ![Captura de pantalla del Centro de administración de Office 365 con la opción Configuración > Dominios seleccionada y un nombre de dominio nuevo agregado](./media/domain-custom-add.png)
+   ![Captura de pantalla del Centro de administración de Office 365: Agregar dominio](./media/domain-custom-add.png)
 
 4. Verifique que es el propietario del dominio que escribió antes. 
     
     Si selecciona **enviar el código por correo electrónico**, recibirá un correo electrónico en la dirección de contacto registrada para el dominio. Después de recibir el correo electrónico, copie el código e introdúzcalo en el campo **Escriba aquí su código de verificación**. Si el código de verificación es correcto, el dominio se agregará a su inquilino. El correo electrónico que se muestra puede no resultarle familiar. Algunos registradores ocultan la dirección de correo electrónico que se proporcionó cuando se registró el dominio.
 
-   ![Captura de pantalla del Centro de administración de Office 365: Verificar el nombre de dominio que se va a agregar](./media/domain-custom-verify.png)
+   ![Captura de pantalla del Centro de administración de Office 365: Comprobar dominio](./media/domain-custom-verify.png)
 
    > [!NOTE]
    > Para obtener detalles de la comprobación de registros TXT, consulte [Crear registros DNS en cualquier proveedor de hospedaje DNS para Office 365](https://support.office.com/article/Create-DNS-records-at-any-DNS-hosting-provider-for-Office-365-7B7B075D-79F9-4E37-8A9E-FB60C1D95166).

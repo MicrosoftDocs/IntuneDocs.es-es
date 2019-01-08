@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 5a28cdcf4d19aec62cd05808f4fb3cda68e083ea
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 3f53ce0b2afd214dec98082c23f7187b4e69317b
+ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032068"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53734245"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-access-actions-in-intune"></a>Borrar los datos de forma selectiva mediante acciones de acceso de la directiva de protección de aplicaciones en Intune
 
@@ -110,7 +110,7 @@ En la siguiente lista aparece la lista de acciones más comunes:
 
 En algunos casos, como el valor **Versión mínima del sistema operativo**, puede configurar la opción para realizar todas las acciones aplicables en función de los diferentes números de versión. 
 
-![Captura de pantalla de las acciones de acceso de protección de aplicaciones de Intune (versión mínima de sistema operativo)](./media/apps-selective-wipe-access-actions05.png)
+![Captura de pantalla de las acciones de acceso de protección de aplicaciones (versión mínima de sistema operativo)](./media/apps-selective-wipe-access-actions05.png)
 
 Cuando una opción está totalmente configurada, la fila aparecerá en la vista de solo lectura y estará disponible para editarse en cualquier momento. Además, la fila tendrá un menú desplegable para seleccionar en la columna **Configuración**. En el menú desplegable no podrá seleccionar las opciones que ya se hayan configurado y que no admitan varias acciones.
 

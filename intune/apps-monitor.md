@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 457b5b97bd13caddb5c60836940dd491eac752f8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: bff4e2b3afe684fe12243fa0f410728eb16eeaba
+ms.sourcegitcommit: 874d9a00cc4666920069d54f99c6c2e687fa34a6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181894"
+ms.lasthandoff: 12/13/2018
+ms.locfileid: "53325184"
 ---
 # <a name="monitor-app-information-and-assignments-with-microsoft-intune"></a>Supervisión de información y asignaciones de aplicaciones con Microsoft Intune
 
@@ -36,7 +36,7 @@ Intune ofrece varias formas de supervisar las propiedades de las aplicaciones ad
 5. En la lista de aplicaciones, seleccione una aplicación para supervisar. Verá el panel de la aplicación, que incluye información general sobre el estado del dispositivo y del usuario.
 
 > [!NOTE]
-> Las aplicaciones de la tienda Android que se implementan como **Disponible** no informan de su estado de instalación.
+> Las aplicaciones de Google Play Store que se implementan como **Disponible** y las aplicaciones de LOB de Android implementadas como **Disponible con o sin inscripción** no informan de su estado de instalación.
 
 ## <a name="app-overview-pane"></a>Panel de información general de la aplicación
 
@@ -78,7 +78,7 @@ Si selecciona **Estado de instalación del dispositivo** en la sección **Superv
 | **Columna de dispositivo**      | **Descripción**                                                                                                                                                                                                                                            |
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Nombre del dispositivo**      | El nombre del dispositivo en plataformas que permiten asignar nombre a un dispositivo. En otras plataformas, Intune crea un nombre a partir de otras propiedades. Este atributo no está disponible para ningún otro dispositivo.                                                                       |
-| **Nombre de usuario**        | El nombre del usuario.                                                                                                                                                                                                                                      |
+| **Nombre de usuario**        | Nombre del usuario.                                                                                                                                                                                                                                      |
 | **Plataforma**         | El sistema operativo del dispositivo (Windows, iOS, Android, etc.)                                                                                                                                                                                           |
 | **Versión**          | El número de versión de la aplicación. En el caso de las aplicaciones de línea de negocio, se muestra el número de versión completo de la aplicación. El número de versión completo identifica una versión específica de la aplicación. El número aparece como _versión_(_compilación_). Por ejemplo, 2.2(2.2.17560800). |
 | **Estado**           | El estado de la aplicación.                                                                                                                                                                                                                                     |

@@ -1,7 +1,7 @@
 ---
 title: Administración de datos en aplicaciones de Office 365 en Microsoft Intune
 titlesuffix: ''
-description: Obtenga información sobre cómo administrar datos en aplicaciones de Office 365 en Microsoft Intune.
+description: Obtenga información sobre la administración y protección de datos en aplicaciones de Office 365 en Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -17,12 +17,12 @@ ms.reviewer: ayesham
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a3eed03deb3f619f75502e8a9d1d66fefc38a081
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 05af4625c06975e4eb7b2566ce676c4610500bdf
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180078"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642480"
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>Se describe cómo sus usuarios experimentarán la protección básica en las aplicaciones administradas de Office 365 en Microsoft Intune.
 
@@ -95,8 +95,8 @@ Este artículo usa OneDrive para la Empresa como ejemplo para demostrar la exper
 | **Descripción**|Creado por el asistente para administrar aplicaciones de Office 365| |
 | |  | |
 | **Nombre de la configuración** |**Valor de la directiva de iOS** | **Valor de la directiva de Android** |
-|Impedir copias de seguridad de iTunes e iCloud| No | N/A |
-|Impedir copias de seguridad de Android |N/A | No|
+|Impedir copias de seguridad de iTunes e iCloud| No | No aplicable |
+|Impedir copias de seguridad de Android |No aplicable | No|
 |Permitir que la aplicación transfiera datos a otras aplicaciones | Todas las aplicaciones | Todas las aplicaciones|
 |Permitir que la aplicación reciba datos de otras aplicaciones| Todas las aplicaciones | Todas las aplicaciones|
 |Impedir "Guardar como" | No | No|
@@ -106,16 +106,16 @@ Este artículo usa OneDrive para la Empresa como ejemplo para demostrar la exper
 |Deshabilitar la sincronización de contactos | No| No|
 |Deshabilitar la impresión | No | No|
 |Requerir PIN para acceder | No | Sí|
-|Número de intentos antes de restablecimiento del PIN | N/A |5|
-|Permitir PIN sencillo | N/A |Sí|
-|Longitud del PIN | N/A | 4|
-|Permitir desbloqueo mediante huellas digitales en lugar de mediante PIN | N/A | Sí |
+|Número de intentos antes de restablecimiento del PIN | No aplicable |5|
+|Permitir PIN sencillo | No aplicable |Sí|
+|Longitud del PIN | No aplicable | 4|
+|Permitir desbloqueo mediante huellas digitales en lugar de mediante PIN | No aplicable | Sí |
 |Requerir credenciales corporativas en acceso | No | No|
 |Bloquear la ejecución de aplicaciones administradas en dispositivos liberados o modificados | No | No|
 |Volver a comprobar los requisitos de acceso después de (minutos): tiempo de espera | 30 | 30|
 |Volver a comprobar los requisitos de acceso después de (minutos): período de gracia sin conexión | 720 |720|
 |Intervalo sin conexión (días) antes de que se borren los datos de la aplicación | 90 | 90|
-|Bloquear captura de pantalla (solo en dispositivos Android) | N/A | No |
+|Bloquear captura de pantalla (solo en dispositivos Android) | No aplicable | No |
 
 ### <a name="why-is-an-app-pin-policy-only-configured-for-android-devices"></a>¿Por qué sólo se configura una directiva de PIN de aplicación para dispositivos Android?
 El cifrado funciona de forma diferente en iOS y Android.

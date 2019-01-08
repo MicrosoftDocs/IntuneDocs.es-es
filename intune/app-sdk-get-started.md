@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 4ccbdff5eac7fef8d28696d8340eb498bae95176
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 03840b0a4a7ce3f4735e22a227f5d2856d532b11
+ms.sourcegitcommit: 02f75d241b3cbb125cb235d16d447f8855b1806d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187861"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53657787"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introducción al SDK para aplicaciones de Microsoft Intune
 
@@ -79,11 +79,11 @@ Se recomienda que se suscriba a una cuenta de GitHub que pueda usar para bifurca
 
 Necesitará una de las siguientes guías para desarrolladores que le ayudará a integrar el SDK de aplicaciones de Intune en la aplicación:
 
-* **[Guía para desarrolladores sobre el SDK para aplicaciones de Intune para iOS](app-sdk-ios.md)**: este documento le guiará paso a paso para habilitar la aplicación iOS nativa con el SDK para aplicaciones de Intune.
+* **[Guía para desarrolladores acerca del SDK de aplicaciones de Microsoft Intune para iOS](app-sdk-ios.md)**: este documento le guiará paso a paso para habilitar la aplicación iOS nativa con el SDK para aplicaciones de Intune.
 
-* **[Guía para desarrolladores sobre el SDK para aplicaciones de Intune para Android](app-sdk-android.md)**: este documento le guiará paso a paso para habilitar la aplicación Android nativa con el SDK para aplicaciones de Intune.
+* **[Guía para desarrolladores de Android acerca del SDK para aplicaciones de Microsoft Intune](app-sdk-android.md)**: este documento le guiará paso a paso para habilitar la aplicación Android nativa con el SDK para aplicaciones de Intune.
 
-* **[Guía de Xamarin Bindings del SDK para aplicaciones de Intune](app-sdk-xamarin.md)**: este documento le ayudará a crear aplicaciones iOS y Android con Xamarin para las directivas de protección de aplicaciones de Intune.
+* **[Enlaces Xamarin del SDK para aplicaciones de Microsoft Intune](app-sdk-xamarin.md)**: este documento le ayudará a crear aplicaciones iOS y Android con Xamarin para las directivas de protección de aplicaciones de Intune.
 
 
 
@@ -99,11 +99,11 @@ Necesitará una de las siguientes guías para desarrolladores que le ayudará a 
 
 Microsoft Intune recopila datos sobre las estadísticas de uso de la aplicación.
 
-* **SDK para aplicaciones de Intune para iOS**: de forma predeterminada, el SDK registra los datos de telemetría del SDK en eventos de uso. Estos datos se envían a Microsoft Intune.
+* **SDK para aplicaciones de Intune para iOS**: de forma predeterminada, el SDK registra los datos de telemetría del SDK sobre eventos de uso. Estos datos se envían a Microsoft Intune.
 
     * Si decide no enviar datos de telemetría del SDK a Microsoft Intune desde su aplicación, debe deshabilitar la transmisión de telemetría estableciendo la propiedad `MAMTelemetryDisabled` en "Sí" en el diccionario IntuneMAMSettings.
 
-* **SDK de aplicaciones de Intune para Android**: el SDK para aplicaciones de Intune para Android no controla la recopilación de datos de su aplicación. La aplicación de Portal de empresa registra los datos de telemetría de manera predeterminada. Estos datos se envían a Microsoft Intune. Según las directivas de Microsoft, no se recopila información de identificación personal (PII por sus siglas en inglés). 
+* **SDK de aplicaciones de Intune para Android**: El SDK para aplicaciones de Intune para Android no controla la recopilación de datos de su aplicación. La aplicación de Portal de empresa registra los datos de telemetría de manera predeterminada. Estos datos se envían a Microsoft Intune. Según las directivas de Microsoft, no se recopila información de identificación personal (PII por sus siglas en inglés). 
 
     * Si los usuarios finales deciden no enviar estos datos, deberán desactivar la telemetría en la sección Configuración de la aplicación Portal de empresa. Para obtener más información, consulte [Desactivar la recopilación de datos de uso de Microsoft](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
 
@@ -161,7 +161,7 @@ Cuando haya completado los pasos necesarios para integrar la aplicación iOS o A
 
 * **Directivas de protección de aplicaciones de Intune**: para probar la aplicación con todas las directivas de protección de aplicaciones de Intune, debe saber que el comportamiento esperado es para cada configuración de directiva. Vea las descripciones para las [directivas de protección de aplicaciones iOS](app-protection-policy-settings-ios.md) y las [directivas de protección de aplicaciones Android](app-protection-policy-settings-android.md).
 
-* **Solución de problemas**: si encuentra algún problema al probar manualmente la experiencia de usuario de instalación de la aplicación, vea la [solución de problemas de instalación de aplicaciones](troubleshoot-app-install.md). 
+* **Solución de problemas**: si encuentra algún problema al probar manualmente la experiencia de usuario de instalación de la aplicación, vea [Solucionar problemas de instalación de aplicaciones](troubleshoot-app-install.md). 
 
 ### <a name="give-your-app-access-to-the-intune-app-protection-service-optional"></a>Proporcione a la aplicación acceso al servicio Intune App Protection (opcional)
 
@@ -188,7 +188,7 @@ Este distintivo indica a los administradores de TI, a los usuarios finales y a l
 
 Este distintivo es un icono de maletín y puede verse en los ejemplos siguientes:
 
-![Ejemplo de distintivo 1](./media/badge-example-1.png) ![Ejemplo de distintivo 2](./media/badge-example-2.png)
+![Directivas de protección de aplicaciones de Intune: ejemplo de distintivo 1](./media/badge-example-1.png) ![Directivas de protección de aplicaciones de Intune: ejemplo de distintivo 2](./media/badge-example-2.png)
 
 **Lo que necesitará para identificar su aplicación**:
 

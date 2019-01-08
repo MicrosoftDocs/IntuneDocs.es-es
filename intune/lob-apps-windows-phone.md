@@ -1,12 +1,12 @@
 ---
 title: Incorporación de una aplicación de línea de negocio de Windows Phone a Microsoft Intune
 titlesuffix: ''
-description: Obtenga información sobre cómo agregar un aplicación de línea de negocio de Windows Phone a Intune.
+description: Obtenga información sobre cómo agregar aplicaciones de línea de negocio (LOB) de Windows Phone mediante Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/13/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 9bce677f21967a79214a5cafbab4ce40b754b333
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9fa39f212c9979a9986bba5537f0c9a2b5e01c8c
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183033"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642649"
 ---
 # <a name="add-a-windows-phone-line-of-business-app-to-microsoft-intune"></a>Incorporación de una aplicación de línea de negocio de Windows Phone a Microsoft Intune
 
@@ -45,24 +45,24 @@ Use la información de este artículo para agregar un aplicación de línea de n
 3. Cuando haya terminado, seleccione **Aceptar**.
 
 
-## <a name="step-3-configure-app-information"></a>Paso 3: Configuración de la información de la aplicación
+## <a name="step-3-configure-app-information"></a>Paso 3: Configuración de información de la aplicación
 
 1. En el panel **Agregar aplicación**, seleccione **Información de la aplicación**.
 2. En el panel **Información de la aplicación**, configure la información de la aplicación. Dependiendo de la aplicación que haya elegido, algunos de los valores de este panel podrían rellenarse automáticamente.
     - **Nombre**: escriba el nombre de la aplicación tal como aparece en el portal de empresa. Asegúrese de que todos los nombres de aplicación que usa son únicos. Si el mismo nombre de aplicación existe dos veces, solo aparece una de las aplicaciones en el portal de empresa.
-    - **Descripción:** escriba una descripción de la aplicación. La descripción aparece en el portal de empresa.
-    - **Editor**: escriba el nombre del editor de la aplicación.
-    - **Categoría**: seleccione una o varias de las categorías de aplicaciones integradas, o seleccione una categoría que haya creado. Las categorías facilitan a los usuarios encontrar la aplicación cuando exploran el portal de empresa.
-    - **Mostrar como aplicación destacada en el Portal de empresa**: la aplicación se muestra de forma destacada en la página principal del portal de empresa cuando los usuarios buscan aplicaciones.
-    - **Dirección URL de información**: opcionalmente, escriba la dirección URL de un sitio web que contenga información sobre esta aplicación. La dirección URL aparece en el portal de empresa.
-    - **Dirección URL de privacidad**: opcionalmente, escriba la dirección URL de un sitio web que contenga información de privacidad sobre esta aplicación. La dirección URL aparece en el portal de empresa.
+    - **Descripción**: Escriba una descripción de la aplicación. La descripción aparece en el portal de empresa.
+    - **Publicador**: Escriba el nombre del publicador de la aplicación.
+    - **Categoría**: seleccione una o varias de las categorías de aplicaciones integradas o seleccione una categoría que haya creado. Las categorías facilitan a los usuarios encontrar la aplicación cuando exploran el portal de empresa.
+    - **Mostrar como aplicación destacada en el Portal de empresa**: Muestra la aplicación de forma destacada en la página principal del portal de empresa cuando los usuarios buscan aplicaciones.
+    - **Dirección URL de información**: Opcionalmente, escriba la dirección URL de un sitio web que contenga información sobre esta aplicación. La dirección URL aparece en el portal de empresa.
+    - **Dirección URL de privacidad**: Opcionalmente, escriba la dirección URL de un sitio web que contenga información de privacidad sobre esta aplicación. La dirección URL aparece en el portal de empresa.
     - **Desarrollador**: opcionalmente, escriba el nombre del desarrollador de la aplicación.
     - **Propietario**: opcionalmente, escriba un nombre para el propietario de esta aplicación. Un ejemplo es **Departamento de Recursos Humanos**.
     - **Notas**: escriba las notas que desea asociar a esta aplicación.
     - **Logotipo**: cargue un icono que esté asociado a la aplicación. Este icono se muestra con la aplicación cuando los usuarios examinan el portal de empresa.
 3. Cuando haya terminado, seleccione **Aceptar**.
 
-## <a name="step-4-finish-up"></a>Paso 4: Finalización
+## <a name="step-4-finish-up"></a>Paso 4: Finalizar
 
 1. En el panel **Agregar aplicación**, compruebe que ha configurado correctamente la información.
 2. Seleccione **Agregar** para cargar la aplicación en Intune.

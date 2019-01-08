@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2018
+ms.date: 12/14/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 26bf759722b5cb92bda28b0e60c9365a7edc7710
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 94e4f955a57f5a505bfbbdc84ae236bbfb85fe8b
+ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112889"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53738059"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>Preparar aplicaciones iOS para directivas de protección de aplicaciones con la herramienta de ajuste de aplicaciones de Intune
 
@@ -100,7 +100,7 @@ Necesitará lo siguiente para distribuir aplicaciones ajustadas con Intune:
 
 4. Haga clic en **Certificates, IDs & Profiles (Certificados, identificadores y perfiles)**.
 
-   ![Portal de Apple Developer](./media/iOS-signing-cert-1.png)
+   ![Portal para desarrolladores de Apple: certificados, identificadores y perfiles](./media/iOS-signing-cert-1.png)
 
 5. Haga clic en la pestaña ![Signo más del Portal de Apple Developer](./media/iOS-signing-cert-2.png) en la esquina superior derecha para agregar un certificado iOS.
 
@@ -125,7 +125,7 @@ Necesitará lo siguiente para distribuir aplicaciones ajustadas con Intune:
 
 11. Siga las instrucciones del sitio de Apple Developer anterior sobre cómo crear un archivo CSR. Guarde el archivo CSR en su equipo macOS.
 
-    ![Solicitar un certificado de una entidad de certificación en Acceso a llaves](./media/iOS-signing-cert-6.png)
+    ![Escritura de la información para el certificado que se solicita](./media/iOS-signing-cert-6.png)
 
 12. Vuelva al sitio de Apple Developer. Haga clic en **Continue**. Después, cargue el archivo CSR.
 
@@ -141,7 +141,7 @@ Necesitará lo siguiente para distribuir aplicaciones ajustadas con Intune:
 
 16. Aparece una ventana informativa. Desplácese a la parte inferior y busque en la etiqueta **Huellas digitales**. Copie la cadena **SHA1** (borrosa) para usarla como argumento para "-c" para la herramienta de ajuste de aplicaciones.
 
-    ![Agregar su certificado a una cadena de claves](./media/iOS-signing-cert-9.png)
+    ![Información de iPhone: cadena SHA1 de huellas digitales](./media/iOS-signing-cert-9.png)
 
 
 
@@ -179,7 +179,7 @@ Necesitará lo siguiente para distribuir aplicaciones ajustadas con Intune:
 
 Abra el Terminal de macOS y ejecute el siguiente comando:
 
-```
+```bash
 /Volumes/IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioning profile paths>]
 ```
 
@@ -188,7 +188,7 @@ Abra el Terminal de macOS y ejecute el siguiente comando:
 
 **Ejemplo:** el comando del ejemplo siguiente ejecuta la herramienta de ajuste de aplicaciones en una aplicación denominada MyApp.ipa. Para firmar la aplicación ajustada se usa un perfil de aprovisionamiento y un hash SHA-1 del certificado de firma. La aplicación de salida (MyApp_Wrapped.ipa) se crea y se almacena en la carpeta Escritorio.
 
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c "12 A3 BC 45 D6 7E F8 90 1A 2B 3C DE F4 AB C5 D6 E7 89 0F AB"  -v true
 ```
 
@@ -289,7 +289,7 @@ Las aplicaciones que se ajustaron mediante la herramienta de ajuste de aplicacio
 
 3.  Filtre los registros guardados para la salida de restricciones de la aplicación especificando el siguiente script en la consola:
 
-    ```
+    ```bash
     grep “IntuneAppRestrictions” <text file containing console output> > <required filtered log file name>
     ```
     Puede enviar los registros filtrados a Microsoft.
@@ -368,20 +368,20 @@ Para revisar los derechos existentes de una aplicación firmada y de un perfil d
 
 3.  Use la herramienta de firma de código para comprobar los derechos en el paquete de aplicaciones, donde `YourApp.app` es el nombre real del paquete de aplicaciones:
 
-    ```
+    ```bash
     $ codesign -d --entitlements :- "Payload/YourApp.app"
     ```
 
 4.  Use la herramienta de seguridad para comprobar los derechos del perfil de aprovisionamiento de la aplicación incrustada, donde `YourApp.app` es el nombre real del grupo de aplicaciones.
 
-    ```
+    ```bash
     $ security -D -i "Payload/YourApp.app/embedded.mobileprovision"
     ```
 
 ### <a name="remove-entitlements-from-an-app-by-using-the-e-parameter"></a>Eliminación de derecho de una aplicación mediante el parámetro – e
 Este comando quita cualquier funcionalidad habilitada en la aplicación que no esté en el archivo de derechos. Si quita funcionalidades que la aplicación esté usando, puede interrumpirla. Un ejemplo en el que podría quitar las funcionalidades que faltan es una aplicación producida por el proveedor que tenga todas las funcionalidades de forma predeterminada.
 
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager –i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> –p /<path to provisioning profile> –c <SHA1 hash of the certificate> -e
 ```
 
@@ -416,12 +416,12 @@ Para usar la marca `-citrix`, también deberá instalar el [contenedor de aplica
 Simplemente ejecute el comando de ajuste de aplicaciones general con la marca `-citrix` adjunta. La marca `-citrix` actualmente no toma ningún argumento.
 
 **Formato de uso**:
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i /<path of input app>/<app filename> -o /<path to output folder>/<app filename> -p /<path to provisioning profile> -c <SHA1 hash of the certificate> [-b [<output app build string>]] [-v] [-e] [-x /<array of extension provisioing profile paths>] [-citrix]
 ```
 
 **Comando de ejemplo**:
-```
+```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```
 

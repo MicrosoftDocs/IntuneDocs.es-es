@@ -1,7 +1,7 @@
 ---
 title: Registro de cambios del Almacenamiento de datos de Intune
 titlesuffix: Microsoft Intune
-description: Lista de cambios en la API Almacenamiento de datos de Intune.
+description: En este tema se proporciona una lista de cambios para la API Data Warehouse de Microsoft Intune.
 keywords: Almacenamiento de datos de Intune
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: dfdbaffeb8872e8b121d138ee0aca0315279e718
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 0f39b0cb758c8c62da2e76ef8eaff07264ff3f3a
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189952"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642768"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Registro de cambios en la API Almacenamiento de datos de Intune
 
@@ -95,4 +95,4 @@ Ahora puede generar informes y visualizaciones de datos con la información de a
 
 ## <a name="next-steps"></a>Pasos siguientes
  - Conozca las [novedades semanales de Intune](whats-new.md). También podrá obtener información sobre los próximos cambios, notificaciones importantes sobre el servicio e información sobre las versiones anteriores.
- - Lea el [Blog de Microsoft Intune](http://go.microsoft.com/fwlink/?LinkID=273882).
+ - Lea el [Blog de Microsoft Intune](https://go.microsoft.com/fwlink/?LinkID=273882).

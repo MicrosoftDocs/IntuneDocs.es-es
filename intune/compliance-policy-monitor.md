@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2018
+ms.date: 12/19/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e26de8691e78e4b35e8618c48f38c7972af233f8
-ms.sourcegitcommit: 88f760abcea7348a0c6d00b533b54a6ff68d3985
+ms.openlocfilehash: fd401875e1a98690d9673243b28b48347e4c6183
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/06/2018
-ms.locfileid: "52977310"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642819"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Supervisión de las directivas de cumplimiento de dispositivos Intune
 
@@ -69,7 +69,12 @@ Descripciones de los estados de directiva de cumplimiento de dispositivos:
 
   - Obtenga más información sobre las [acciones disponibles para los dispositivos que no cumplen las directivas](actions-for-noncompliance.md).
 
-- **Sin evaluar**: un estado inicial para los dispositivos recién inscritos. O bien, los dispositivos que no tienen asignada la directiva de cumplimiento y no tienen un desencadenador para comprobar su cumplimiento.
+- **Sin evaluar**: un estado inicial para los dispositivos recién inscritos. Otros posibles motivos de este estado incluyen:
+
+  - Dispositivos que no tienen asignada una directiva de cumplimiento y no tienen un desencadenador para comprobar su cumplimiento
+  - Dispositivos que no se han registrado desde la última vez que se actualizó la directiva de cumplimiento
+  - Dispositivos no asociados a un usuario específico
+  - Dispositivos inscritos con una cuenta del administrador de inscripciones de dispositivos (DEM)
 
 - **No conforme:** el dispositivo no pudo aplicar una o varias configuraciones de directivas de cumplimiento de dispositivos. O bien, el usuario no ha cumplido las directivas.
 

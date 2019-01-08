@@ -14,12 +14,12 @@ ms.reviewer: kmyrup
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 73a3b26eb9a18475530e3b52ba9b91c4af5e685d
-ms.sourcegitcommit: 349ab913932547b4a7491181f0aff092f109b87b
+ms.openlocfilehash: ee61063a36a486a0840446f82834bc37cc96bfc0
+ms.sourcegitcommit: a843bd081e9331838ade05a3c05b02d60b6bec4c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52303879"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53597382"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar y usar certificados SCEP con Intune
 
@@ -27,9 +27,9 @@ En este artículo se muestra cómo configurar la estructura y, luego, crear y as
 
 ## <a name="configure-on-premises-infrastructure"></a>Configuración de la infraestructura local
 
-- **Dominio de Active Directory:** todos los servidores mencionados en esta sección (salvo el servidor Proxy de aplicación web) deben estar unidos al dominio de Active Directory.
+- **Dominio de Active Directory**: Todos los servidores enumerados en esta sección (excepto el servidor proxy de aplicación web) deben estar unidos al dominio de Active Directory.
 
-- **Entidad de certificación** (CA): Debe ser una entidad de certificación (CA) empresarial de Microsoft que se ejecute en una edición Enterprise de Windows Server 2008 R2 o posterior. No se admiten CA independientes. Para detalles, consulte [Instalación de la entidad de certificación](http://technet.microsoft.com/library/jj125375.aspx).
+- **Entidad de certificación** (CA): debe ser una entidad de certificación (CA) empresarial de Microsoft que se ejecute en una edición Enterprise de Windows Server 2008 R2 o posterior. No se admiten CA independientes. Para detalles, consulte [Instalación de la entidad de certificación](http://technet.microsoft.com/library/jj125375.aspx).
     Si la CA ejecuta Windows Server 2008 R2, se debe [instalar la revisión de KB2483564](http://support.microsoft.com/kb/2483564/).
 
 - **Servidor SCEP**: en Windows Server 2012 R2 o posterior, configure el rol de servidor Servicio de inscripción de dispositivos de red (SCEP). En Intune no se puede usar el Servicio de inscripción de dispositivos de red en un servidor que también ejecuta la entidad de certificación empresarial. Consulte [Orientación para el Servicio de inscripción de dispositivos de red](http://technet.microsoft.com/library/hh831498.aspx) para obtener instrucciones sobre cómo configurar Windows Server 2012 R2 para hospedar NDES.
@@ -43,7 +43,7 @@ El servidor NDES debe estar unido a un dominio dentro del mismo bosque que la CA
   - Permite a los dispositivos recibir certificados mediante una conexión a Internet.
   - Es una recomendación de seguridad cuando los dispositivos se conectan a través de Internet para recibir y renovar certificados.
   
-- **AD Application Proxy** (opcional): AD Application Proxy se puede usar en lugar de un servidor proxy de aplicación web (WAP) dedicado para publicar el servidor NDES en Internet. Para más información, consulte [Provisión de acceso remoto seguro a aplicaciones locales](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
+- **Azure AD Application Proxy** (opcional): Azure AD Application Proxy se puede usar en lugar de un servidor proxy de aplicación web (WAP) dedicado para publicar el servidor SCEP en Internet. Para más información, consulte [Provisión de acceso remoto seguro a aplicaciones locales](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy).
 
 #### <a name="additional"></a>Adicional
 
@@ -263,7 +263,7 @@ En este paso, hará lo siguiente:
 
     - **Uso mejorado de clave**: este valor debe incluir **Autenticación del cliente**
 
-    - **Nombre del firmante**: este valor debe ser igual al nombre DNS del servidor donde se instala el certificado (el servidor NDES)
+    - **Nombre del firmante**: este valor debe ser igual al nombre DNS del servidor donde se instala el certificado (el servidor SCEP)
 
 ##### <a name="configure-iis-request-filtering"></a>Configurar el filtrado de solicitudes de IIS
 
@@ -368,7 +368,7 @@ Para validar que el servicio se ejecuta, abra un explorador y escriba la siguien
      - Windows 10 y versiones posteriores
      - Android Enterprise
 
-   - **Formato de nombre del firmante**: seleccione cómo Intune crea automáticamente el nombre del firmante en la solicitud de certificado. Las opciones cambian en función de si elige un tipo de certificado **Usuario** o un tipo de certificado **Dispositivo**. 
+   - **Formato de nombre del sujeto**: seleccione cómo Intune crea automáticamente el nombre del sujeto en la solicitud de certificado. Las opciones cambian en función de si elige un tipo de certificado **Usuario** o un tipo de certificado **Dispositivo**. 
 
         **Tipo de certificado de usuario**  
 
@@ -380,9 +380,9 @@ Para validar que el servicio se ejecuta, abra un explorador y escriba la siguien
         - **Nombre común como correo electrónico**
         - **IMEI (Identidad de equipo móvil internacional)**
         - **Número de serie**
-        - **Personalizado**: cuando se selecciona esta opción, se muestra también un cuadro de texto **Personalizado**. Use este campo para escribir un formato de nombre del firmante personalizado, incluidas las variables. El formato personalizado admite dos variables: **Nombre común (CN)** y **Correo electrónico (E)**. **Nombre común (CN)** se puede establecer en cualquiera de las siguientes variables:
+        - **Personalizado**: cuando se selecciona esta opción, se muestra también un cuadro de texto **Personalizado**. Use este campo para escribir un formato de nombre del firmante personalizado, incluidas las variables. El formato personalizado admite dos variables: **Nombre común (CN)** y **dirección de correo electrónico (E)**. **Nombre común (CN)** se puede establecer en cualquiera de las siguientes variables:
 
-            - **CN={{UserName}}**: nombre principal del usuario, como janedoe@contoso.com
+            - **CN={{UserName}}**: nombre principal de usuario, como janedoe@contoso.com
             - **CN={{AAD_Device_ID}}**: identificador asignado al registrar un dispositivo en Azure Active Directory (AD). Este identificador normalmente se usa para autenticarse en Azure AD.
             - **CN={{SERIALNUMBER}}**: número de serie (SN) único que normalmente usa el fabricante para identificar un dispositivo
             - **CN={{IMEINumber}}**: número exclusivo de identidad de equipo móvil internacional (IMEI) usado para identificar un teléfono móvil
@@ -428,7 +428,7 @@ Para validar que el servicio se ejecuta, abra un explorador y escriba la siguien
         >  - El perfil no se instalará en el dispositivo si no se admiten las variables de dispositivo especificadas. Por ejemplo, si {{IMEI}} se usa en el nombre del sujeto del perfil SCEP asignado a un dispositivo que no tiene un número IMEI, la instalación del perfil no se completará con éxito. 
 
 
-   - **Nombre alternativo del firmante**: especifique cómo crea Intune automáticamente los valores del nombre alternativo del firmante (SAN) en la solicitud de certificado. Las opciones cambian en función de si elige un tipo de certificado **Usuario** o un tipo de certificado **Dispositivo**. 
+   - **Nombre alternativo del firmante**: especifique cómo Intune crea automáticamente los valores del nombre alternativo del sujeto (SAN) en la solicitud de certificado. Las opciones cambian en función de si elige un tipo de certificado **Usuario** o un tipo de certificado **Dispositivo**. 
 
         **Tipo de certificado de usuario**  
 
@@ -470,7 +470,7 @@ Para validar que el servicio se ejecuta, abra un explorador y escriba la siguien
         >  -  Al usar las propiedades del dispositivo como el IMEI, el número de serie y el nombre de dominio completo en el asunto o SAN para un certificado de dispositivo, tenga en cuenta que una persona con acceso al dispositivo podría suplantar estas propiedades.
         >  - El perfil no se instalará en el dispositivo si no se admiten las variables de dispositivo especificadas. Por ejemplo, si se usa {{IMEI}} en el nombre alternativo del firmante del perfil SCEP asignado a un dispositivo que no tiene un número IMEI, la instalación del perfil no se completará con éxito.  
 
-   - **Período de validez del certificado**: si ha ejecutado el comando `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE` en la CA emisora, que permite un período de validez personalizado, puede especificar el tiempo restante hasta la expiración del certificado.<br>Puede especificar un valor inferior al período de validez de la plantilla de certificado, pero no uno superior. Por ejemplo, si el período de validez del certificado en la plantilla de certificado es de dos años, puede especificar un valor de un año, pero no un valor de cinco años. El valor también debe ser menor que el período de validez restante del certificado de la CA emisora. 
+   - **Período de validez del certificado**: si ejecutó el comando `certutil - setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE`, que permite un período de validez personalizado, en la CA emisora, puede especificar el tiempo restante hasta la expiración del certificado.<br>Puede especificar un valor inferior al período de validez de la plantilla de certificado, pero no uno superior. Por ejemplo, si el período de validez del certificado en la plantilla de certificado es de dos años, puede especificar un valor de un año, pero no un valor de cinco años. El valor también debe ser menor que el período de validez restante del certificado de la CA emisora. 
    - **Proveedor de almacenamiento de claves (KSP)** (Windows Phone 8.1, Windows 8.1, Windows 10): especifique dónde se almacena la clave del certificado. Elija uno de los siguientes valores:
      - **Inscribirse en KSP Módulo de plataforma segura (TPM) si está presente, si no en KSP Software**
      - **Inscribirse en KSP del Módulo de plataforma segura (TPM) o se producirá un error**
@@ -479,14 +479,14 @@ Para validar que el servicio se ejecuta, abra un explorador y escriba la siguien
 
    - **Uso de la clave**: especifique las opciones de uso de claves del certificado. Las opciones son:
      - **Cifrado de clave**: permite el intercambio de claves solo si la clave está cifrada
-     - **Firma digital**: permite el intercambio de claves solo cuando una firma digital ayuda a proteger la clave
+     - **Firma digital**: permite el intercambio de claves solo si una firma digital protege la clave
    - **Tamaño de la clave (bits)**: seleccione el número de bits que contiene la clave
-   - **Algoritmo hash** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): seleccione uno de los tipos de algoritmos hash disponibles para usarlo con este certificado. Seleccione el nivel máximo de seguridad que admiten los dispositivos de conexión.
+   - **Algoritmo hash** (Android, Windows Phone 8.1, Windows 8.1, Windows 10): Seleccione uno de los tipos de algoritmos hash disponibles para usar con este certificado. Seleccione el nivel máximo de seguridad que admiten los dispositivos de conexión.
    - **Certificado raíz**: elija un perfil de certificado de CA raíz que previamente haya configurado y asignado al usuario o dispositivo. Este certificado de CA debe ser el certificado raíz para la entidad de certificación que emite el certificado que va a configurar en este perfil de certificado. Asegúrese de asignar este perfil de certificado raíz de confianza al mismo grupo asignado en el perfil de certificado SCEP.
    - **Uso mejorado de clave**: elija **Agregar** para agregar valores para la finalidad prevista del certificado. En la mayoría de los casos, el certificado requiere **Autenticación de cliente** para que el usuario o dispositivo pueda autenticarse en un servidor. Sin embargo, puede agregar otros usos de clave según sea necesario.
    - **Configuración de la inscripción**
      - **Umbral de renovación (%)**: especifique qué porcentaje de la duración del certificado tiene que quedar para que el dispositivo solicite la renovación del certificado.
-     - **Direcciones URL de servidor SCEP**: especifique una o varias direcciones URL para los servidores NDES que emiten certificados mediante SCEP.
+     - **Direcciones URL de servidor SCEP**: especifique una o varias direcciones URL para los servidores SCEP que emiten certificados mediante SCEP. Por ejemplo, escriba algo parecido a `https://ndes.contoso.com/certsrv/mscep/mscep.dll`.
      - Seleccione **Aceptar** y **Crear** el perfil.
 
 Se creará el perfil y aparecerá en el panel con la lista de perfiles.

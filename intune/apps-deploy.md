@@ -1,12 +1,12 @@
 ---
 title: Asignación de aplicaciones a grupos en Microsoft Intune
 titlesuffix: ''
-description: Aprenda a asignar una aplicación de Intune a grupos de usuarios o dispositivos.
+description: Aprenda a asignar una aplicación de Intune a grupos de usuarios o dispositivos mediante Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 12/20/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a9afde942f2784cb2fb42b13d11a127e3c9811a1
-ms.sourcegitcommit: 3903f20cb5686532ccd8c36aa43c5150cee7cca2
+ms.openlocfilehash: bc31c793722f7073281c82da1fe4389fc214457b
+ms.sourcegitcommit: f114eeba1909c7d4e157003b1a9e2232dd1c99e3
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52267261"
+ms.lasthandoff: 12/21/2018
+ms.locfileid: "53734279"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Asignación de aplicaciones a grupos con Microsoft Intune
 
@@ -29,20 +29,22 @@ ms.locfileid: "52267261"
 
 Después de [agregar una aplicación](apps-add.md) a Microsoft Intune, puede asignarla a los usuarios y los dispositivos. Es importante que sepa que puede asignar una aplicación a un dispositivo tanto si el dispositivo está administrado por Intune como si no. 
 
+> [!NOTE]
+> No se admite el intento de implementación disponible para grupos de dispositivos; solo se admiten grupos de usuarios.
+
 En esta tabla se muestran las diversas opciones para asignar aplicaciones a usuarios y dispositivos:
 
-||||
-|-|-|-|-|
-|&nbsp;|**Dispositivos inscritos en Intune**|**Dispositivos no inscritos en Intune**|
-|Asignar a usuarios|Sí|Sí|
-|Asignar a dispositivos|Sí|No|
-|Asignar aplicaciones encapsuladas o aplicaciones que incorporan el SDK de Intune (para directivas de protección de aplicaciones)|Sí|Sí|
-|Asignar aplicaciones como disponibles|Sí|Sí|
-|Asignar aplicaciones como obligatorias|Sí|No|
-|Desinstalar aplicaciones|Sí|No|
-|Recibir actualizaciones de aplicaciones de Intune|Sí|No|
-|Los usuarios finales instalan las aplicaciones disponibles desde la aplicación Portal de empresa|Sí|No|
-|Los usuarios finales instalan las aplicaciones disponibles desde el Portal de empresa basado en web|Sí|Sí|
+|   | Dispositivos inscritos en Intune | Dispositivos no inscritos en Intune |
+|-------------------------------------------------------------------------------------------|------------------------------|----------------------------------|
+| Asignar a usuarios | Sí | Sí |
+| Asignar a dispositivos | Sí | No |
+| Asignar aplicaciones encapsuladas o aplicaciones que incorporan el SDK de Intune (para directivas de protección de aplicaciones) | Sí | Sí |
+| Asignar aplicaciones como disponibles | Sí | Sí |
+| Asignar aplicaciones como obligatorias | Sí | No |
+| Desinstalar aplicaciones | Sí | No |
+| Recibir actualizaciones de aplicaciones de Intune | Sí | No |
+| Los usuarios finales instalan las aplicaciones disponibles desde la aplicación Portal de empresa | Sí | No |
+| Los usuarios finales instalan las aplicaciones disponibles desde el Portal de empresa basado en web | Sí | Sí |
 
 > [!NOTE]
 > Actualmente, puede asignar aplicaciones iOS y Android (tanto de línea de negocio como compradas en la tienda) a dispositivos que no estén inscritos en Intune.
@@ -59,10 +61,10 @@ En esta tabla se muestran las diversas opciones para asignar aplicaciones a usua
 6. En la sección **Administrar** del menú, seleccione **Asignaciones**.
 7. Seleccione **Agregar grupo** para abrir el panel **Agregar grupo** que está relacionado con la aplicación.
 8. Para la aplicación específica, seleccione un **tipo de asignación**:
-   - **Available for enrolled devices** (Disponible para dispositivos inscritos): se asigna la aplicación a grupos de usuarios que pueden instalar la aplicación desde la aplicación o el sitio web Portal de empresa.
-   - **Available with or without enrollment** (Disponible con o sin inscripción): se asigna esta aplicación a grupos de usuarios cuyos dispositivos no se han inscrito en Intune. Las aplicaciones de Google Play administrado no admiten esta opción. 
-   - **Requerida**: la aplicación se instala en los dispositivos de los grupos seleccionados.
-   - **Desinstalar**: la aplicación se desinstala de dispositivos de los grupos seleccionados.
+   - **Disponible para dispositivos inscritos**: se asigna la aplicación a grupos de usuarios que pueden instalar la aplicación desde la aplicación o el sitio web Portal de empresa.
+   - **Disponible con o sin inscripción**: se asigna esta aplicación a grupos de usuarios cuyos dispositivos no se han inscrito en Intune. Las aplicaciones de Google Play administrado no admiten esta opción. Se debe asignar a los usuarios una licencia de Intune; consulte [Licencias que incluyen Intune](licenses.md).
+   - **Requerido**: la aplicación se instala en los dispositivos de los grupos seleccionados. Algunas plataformas pueden tener mensajes adicionales para el usuario final para confirmar antes de que comience la instalación de la aplicación.
+   - **Desinstalar**: La aplicación se desinstala de los dispositivos de los grupos seleccionados si Intune ha instalado la aplicación anteriormente en el dispositivo a través de una asignación "Disponible para dispositivos inscritos" o "Requerido" utilizando la misma implementación. Los vínculos web no se puede quitar después de la implementación.
 
      > [!NOTE]
      > **Solo para aplicaciones iOS**: si ha creado un perfil de VPN para iOS que contiene la configuración de VPN por aplicación, puede seleccionarlo en **VPN**. Cuando se ejecuta la aplicación, se abre la conexión VPN. Para obtener más información, vea [Configuración de VPN para dispositivos iOS](vpn-settings-ios.md).
@@ -83,9 +85,8 @@ La aplicación ahora se asigna a los grupos que ha seleccionado. Para obtener m�
 
 A veces, la misma aplicación se asigna a varios grupos, pero con diferentes intenciones. La información de la tabla siguiente puede ayudarle a comprender la intención resultante cuando esto sucede:
 
-||||
-|-|-|-|
-|**Intención del grupo 1**|**Intención del grupo 2**|**Intención resultante**|
+| Intención del grupo 1 | Intención del grupo 2 | Intención resultante |
+|-----------------------------------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |Usuario Requerido|Usuario disponible|Requerido y Disponible|
 |Usuario Requerido|Usuario no disponible|Requerido|
 |Usuario Requerido|Desinstalar usuario|Requerido|

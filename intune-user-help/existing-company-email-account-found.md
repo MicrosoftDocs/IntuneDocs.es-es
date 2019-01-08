@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/07/2018
+ms.date: 12/17/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,23 +17,32 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: f44b281bc8a0edd39e25bf966841a5f458c6677e
-ms.sourcegitcommit: 11bd3dbbc9dd762df7c6d20143f2171799712547
+ms.openlocfilehash: 3c06bb8efd0d6f7795094f36dcb513c5dca63e77
+ms.sourcegitcommit: baacdb2c5ee69d0055acad2d64f2bf1a3fc5e02d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/10/2018
-ms.locfileid: "48903478"
+ms.lasthandoff: 12/18/2018
+ms.locfileid: "53570798"
 ---
-# <a name="an-existing-company-email-account-was-found"></a>Se ha encontrado una cuenta de correo electrónico de empresa existente encontrado
+# <a name="an-existing-company-email-account-was-found"></a>Se ha encontrado una cuenta de correo electrónico de empresa existente
 
-Ya tiene una cuenta de correo electrónico con su organización o empresa y desea tener acceso a esa cuenta en su dispositivo móvil. El equipo de soporte técnico de su empresa necesita su ayuda para proteger el acceso al correo electrónico en su camino de la persona que realizó el envío al dispositivo. Puede que la dirección de correo electrónico actual haya funcionado, pero si realiza estos pasos, dispondrá de una información más segura.
+Podría haber tenido acceso con un dispositivo móvil a la cuenta de correo electrónico profesional o educativa *antes* de tener el dispositivo administrado. Si el dispositivo está ahora administrado, se recomienda que:
 
-1.  Busque **Configuración** en el dispositivo y quite la conexión que ha configurado previamente en el correo electrónico de la compañía.  Por ejemplo, en un dispositivo iOS, pulse **Configuración** > **Correo** > **Cuentas**. Seleccione la cuenta de correo electrónico profesional y pulse **Eliminar**.
+* Desconecte la cuenta de correo electrónico profesional existente desde el dispositivo.
+* Vuelva a sincronizar la configuración del dispositivo desde la aplicación Portal de empresa.  
 
-2.  Cierre **Configuración** y abra la aplicación Portal de empresa en el dispositivo.  
+Estos pasos garantizarán que el dispositivo cumple los requisitos de seguridad de la compañía, y que los correos electrónicos permanecen seguros.
 
-3. Vaya a **Dispositivo** y seleccione el dispositivo que desea actualizar.
+1.  En el dispositivo, vaya a **Configuración** y encuentre las cuentas conectadas. En un dispositivo iOS 11 +, por ejemplo, seleccione **Cuentas y contraseñas**.
+ 
+2. Seleccione y quite la cuenta de correo electrónico profesional.
 
-4. Seleccione **Comprobar configuración**. En unos instantes, el dispositivo se actualiza con la nueva configuración de correo electrónico.
+3. Abra la aplicación Portal de empresa en el dispositivo.  
+
+4. En la lista de dispositivos, seleccione el dispositivo que desee actualizar.
+
+5. Seleccione **Comprobar configuración**. En unos instantes, el dispositivo se sincronizará con la nueva configuración de correo electrónico.
+
+6. Inicie sesión con su cuenta de correo electrónico profesional o educativa.
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

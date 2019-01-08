@@ -1,7 +1,7 @@
 ---
 title: Incorporación de una aplicación de línea de negocio de Windows a Microsoft Intune
 titlesuffix: ''
-description: Aprenda a agregar una aplicación de línea de negocio de Windows a Microsoft Intune.
+description: Obtenga información sobre cómo agregar aplicaciones de línea de negocio (LOB) de Windows mediante Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 15e5eb80008e7365479bfd3a63224818d0c19a73
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 551fd188ef22b5bf9516e51604d20d43efca5608
+ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183203"
+ms.lasthandoff: 12/20/2018
+ms.locfileid: "53642683"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>Incorporación de una aplicación de línea de negocio de Windows a Microsoft Intune
 
@@ -49,16 +49,16 @@ Una aplicación de línea de negocio (LOB) es aquella que se agrega desde un arc
 1. Cuando haya terminado, seleccione **Aceptar**.
 
 
-## <a name="step-3-configure-app-information"></a>Paso 3: Configuración de la información de la aplicación
+## <a name="step-3-configure-app-information"></a>Paso 3: Configuración de información de la aplicación
 
 1. En el panel **Agregar aplicación**, seleccione **Información de la aplicación**.
 2. En el panel **Información de la aplicación**, configure la información siguiente. Algunos de los valores de este panel podrían rellenarse automáticamente.
     - **Nombre**: escriba el nombre de la aplicación tal como aparece en el portal de empresa. Asegúrese de que todos los nombres de aplicación que usa son únicos. Si el mismo nombre de aplicación existe dos veces, solo aparece una de las aplicaciones en el portal de empresa.
-    - **Descripción:** escriba una descripción de la aplicación. La descripción aparece en el portal de empresa.
-    - **Editor:** escriba el nombre del editor de la aplicación.
+    - **Descripción**: Escriba una descripción de la aplicación. La descripción aparece en el portal de empresa.
+    - **Publicador**: Escriba el nombre del publicador de la aplicación.
     - **Omitir la versión de la aplicación**: establezca esta opción en **Sí** en el caso de que el desarrollador de la aplicación actualice automáticamente esta. Esta opción se aplica solo a las aplicaciones para móviles .msi.
-    - **Categoría**: seleccione una o varias de las categorías de aplicaciones integradas, o seleccione una categoría que haya creado. Las categorías facilitan a los usuarios encontrar la aplicación cuando exploran el portal de empresa.
-    - **Mostrar como aplicación destacada en el Portal de empresa**: la aplicación se muestra de forma destacada en la página principal del portal de empresa cuando los usuarios buscan aplicaciones.
+    - **Categoría**: seleccione una o varias de las categorías de aplicaciones integradas o seleccione una categoría que haya creado. Las categorías facilitan a los usuarios encontrar la aplicación cuando exploran el portal de empresa.
+    - **Mostrar como aplicación destacada en el Portal de empresa**: Muestra la aplicación de forma destacada en la página principal del portal de empresa cuando los usuarios buscan aplicaciones.
     - **Dirección URL de información**: opcionalmente, escriba la dirección URL de un sitio web que contenga información sobre la aplicación. La dirección URL aparece en el portal de empresa.
     - **Dirección URL de privacidad**: opcionalmente, escriba la dirección URL de un sitio web que contenga información de privacidad sobre la aplicación. La dirección URL aparece en el portal de empresa.
     - **Argumentos de línea de comandos**: si lo desea, especifique los argumentos de línea de comandos que desea aplicar al archivo .msi cuando se ejecuta. Un ejemplo es **/q**.
@@ -68,7 +68,7 @@ Una aplicación de línea de negocio (LOB) es aquella que se agrega desde un arc
     - **Logotipo**: cargue un icono que esté asociado a la aplicación. El icono se muestra con la aplicación cuando los usuarios examinan el portal de empresa.
 3. Cuando haya terminado, seleccione **Aceptar**.
 
-## <a name="step-4-finish-up"></a>Paso 4: Finalización
+## <a name="step-4-finish-up"></a>Paso 4: Finalizar
 
 1. En el panel **Agregar aplicación**, compruebe que ha configurado correctamente la información de la aplicación.
 2. Seleccione **Agregar** para cargar la aplicación en Intune.
