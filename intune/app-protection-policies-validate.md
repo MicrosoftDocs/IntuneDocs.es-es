@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 3158d0531de4809bf654c030b8c1e0ef90185362
-ms.sourcegitcommit: 8019bdd8117806c6a3a73a8c6d40af1a3def6d90
+ms.openlocfilehash: 0201f9a33fcdf3e7f5780f8e65a3666e6eb5d7d1
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53247074"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816963"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup"></a>Validación de la configuración de la directiva de protección de aplicaciones
 
@@ -29,11 +29,11 @@ ms.locfileid: "53247074"
 
 Compruebe que su directiva de protección de aplicaciones esté configurada y funcione correctamente. Esta guía se aplica a las directivas de protección de aplicaciones de Azure Portal.
 
-### <a name="checking-for-symptoms"></a>Examinar los síntomas
+## <a name="checking-for-symptoms"></a>Examinar los síntomas
 Los usuarios no suelen notificar problemas, ya que la protección de aplicaciones es una herramienta de protección de datos. Si hay algún problema con la configuración de la protección de aplicaciones, el usuario tendrá acceso ilimitado, del mismo modo que si no tuviera protección de aplicaciones, y no podrá detectar que hay un problema. Por este motivo, se recomienda que valide la configuración de la protección de aplicaciones efectuando una prueba piloto de las directivas de protección de aplicaciones con un pequeño grupo de usuarios que puedan probar deliberadamente las restricciones de la protección de aplicaciones.
 
 
-### <a name="what-to-check"></a>Elementos que se deben comprobar
+## <a name="what-to-check"></a>Elementos que se deben comprobar
 
 Si las pruebas muestran que el comportamiento de la directiva de protección de aplicaciones no es el previsto, compruebe lo siguiente:
 
@@ -41,7 +41,7 @@ Si las pruebas muestran que el comportamiento de la directiva de protección de 
 - ¿Los usuarios tienen licencia para O365?
 - El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**.
 
-#### <a name="user-app-protection-status"></a>Estado de protección de las aplicaciones de los usuarios
+### <a name="user-app-protection-status"></a>Estado de protección de las aplicaciones de los usuarios
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
 2. Seleccione **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. Seleccione **Aplicaciones cliente** > **Supervisar** >  **Estado de protección de la aplicación** y luego seleccione el icono **Usuarios asignados**. 
@@ -50,7 +50,7 @@ Si las pruebas muestran que el comportamiento de la directiva de protección de 
 
 
 
-### <a name="what-to-do"></a>Qué hacer
+## <a name="what-to-do"></a>Qué hacer
 Aquí se muestran las acciones que se deben tomar en función del estado del usuario:
 
 - Si el usuario no tiene licencia para la protección de aplicaciones, asigne una licencia de Intune al usuario.
@@ -58,6 +58,6 @@ Aquí se muestran las acciones que se deben tomar en función del estado del usu
 - Si la aplicación de un usuario aparece como **No protegida**, compruebe si ha configurado correctamente una directiva de protección de aplicaciones para esa aplicación.
 - Asegúrese de que estas condiciones se aplican a todos los usuarios a los que quiera aplicar directivas de protección de aplicaciones.
 
-### <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 [¿Qué es la directiva de protección de aplicaciones de Intune?](app-protection-policies.md)
