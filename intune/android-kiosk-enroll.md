@@ -112,7 +112,7 @@ En Android 5.1 y dispositivos posteriores que admitan NFC, puede aprovisionar lo
 
 ### <a name="enroll-by-using-a-token"></a>Inscripción mediante token
 
-En Android 6 y dispositivos posteriores, puede usar el token para inscribir el dispositivo. En Android 6.1 y versiones posteriores, también se puede digitalizar el código QR al usar el método de inscripción **aft#setup**.
+En Android 6 y dispositivos posteriores, puede usar el token para inscribir el dispositivo. En Android 6.1 y versiones posteriores, también se puede digitalizar el código QR al usar el método de inscripción **afw#setup**.
 
 1. Encienda el dispositivo borrado.
 2. En la pantalla **Bienvenida**, seleccione su idioma.
