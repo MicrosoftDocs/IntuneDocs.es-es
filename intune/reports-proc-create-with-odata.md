@@ -6,7 +6,7 @@ keywords: Almacenamiento de datos de Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/14/2018
+ms.date: 01/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 9c93554fd6750459aacc154165e7a58e160534fb
-ms.sourcegitcommit: 1c9ef5cfac2fc024528d2cfc9d590fa68dd58080
+ms.openlocfilehash: 3599146aaebc2e3788fa96e8e04657ce4db41c4f
+ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/15/2018
-ms.locfileid: "53429719"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54067455"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Creación de un informe desde la fuente de OData con Power BI
 
@@ -61,7 +61,7 @@ Instale la versión más reciente de Power BI Desktop. Puede descargar Power BI 
 7. Pegue la dirección URL de la fuente personalizada en el cuadro para la URL de la ventana **Fuente OData**.
 8. Seleccione **Básica**.
 
-    ![Fuente OData](media/reports-create-01-odatafeed.png)
+    ![Fuente OData para el Almacén de datos de Intune para su inquilino](media/reports-create-01-odatafeed.png)
 
 9. Seleccione **Aceptar**.
 10. Seleccione **Cuenta de la organización** y después inicie sesión con sus credenciales de Intune.
@@ -70,7 +70,7 @@ Instale la versión más reciente de Power BI Desktop. Puede descargar Power BI 
 
 11. Seleccione **Conectar**. Se abrirá el navegador y mostrará la lista de tablas en el Almacén de datos de Intune.
 
-    ![Navegador](media/reports-create-02-loadentities.png)
+    ![Captura de pantalla del navegador: la lista de tablas de almacenamiento de datos](media/reports-create-02-loadentities.png)
 
 12. Seleccione las tablas **dispositivos** y **ownerTypes**.  Seleccione **Cargar**. Power BI cargará los datos en el modelo.
 
@@ -78,7 +78,7 @@ Instale la versión más reciente de Power BI Desktop. Puede descargar Power BI 
 
 Puede importar varias tablas para analizar no solo los datos en una sola tabla sino los datos relacionados en diferentes tablas.  Power BI tiene una característica denominada **detección automática**, que intenta buscar y crear relaciones automáticamente. Se han creado tablas en el Almacén de datos para trabajar con la característica de detección automática de Power BI. En cambio, aunque Power BI no encuentre automáticamente las relaciones, usted puede administrarlas.
 
-![Administrar relaciones](media/reports-create-03-managerelationships.png)
+![Administrar las relaciones de los datos relacionados en las tablas](media/reports-create-03-managerelationships.png)
 
 1. Seleccione **Administrar relaciones**.
 2. Si Power BI todavía no ha detectado las relaciones, seleccione**Detección automática...**
@@ -99,7 +99,7 @@ En un gráfico de rectángulos se muestran datos jerárquicos en forma de cuadro
 
 Ahora dispone de un objeto visual en el que se muestra la distribución de los fabricantes de dispositivos en la organización.
 
-![Gráfico de rectángulos con datos](media/reports-create-06-treemapwdata.png)
+![Gráfico de rectángulos con datos: la distribución de los fabricantes de dispositivos](media/reports-create-06-treemapwdata.png)
 
 ## <a name="add-a-filter"></a>Agregar un filtro
 
@@ -111,7 +111,7 @@ Puede agregar un filtro al gráfico de rectángulos para poder responder a pregu
 
    En la tabla de dispositivos, hay un campo de datos denominado **OwnerTypeKey** que contiene un código que indica si un dispositivo es propiedad de la empresa o personal. Puesto que le interesa que se muestren nombres descriptivos en este filtro, busque la tabla **ownerTypes** y arrastre el **ownerTypeName**. En este ejemplo se muestra cómo el modelo de datos es compatible con las relaciones entre tablas.
 
-![Gráfico de rectángulos con filtro](media/reports-create-08_ownertype.png)
+![Gráfico de rectángulos con filtro: compatible con las relaciones entre tablas](media/reports-create-08_ownertype.png)
 
 Ahora tiene un filtro interactivo que puede usar para alternar entre dispositivos que son propiedad de la empresa y dispositivos personales. Use este filtro para ver cómo cambia la distribución.
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
+ms.date: 01/06/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2257253d023c97d14418b3566c0c493a3cd8f615
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.openlocfilehash: 59e9af2449f384fce22acaef9a696f2944eabaa1
+ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53737923"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54067438"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>Inicio rápido: Prueba gratuita de Microsoft Intune 
 
@@ -50,7 +50,7 @@ Probar Intune es gratis durante 30 días. Si ya dispone de una cuenta profesiona
 
 2. Cree una cuenta con el nombre de su compañía seguido de **.onmicrosoft.com**. 
 
-    ![Captura de pantalla del nuevo proceso de credencial de la cuenta de prueba de Microsoft Intune](./media/account-sign-up-site-user-id.png)
+    ![Captura de pantalla del nuevo proceso de credenciales de la cuenta de prueba de Intune](./media/account-sign-up-site-user-id.png)
 
     Si quiere usar el dominio personalizado de su organización sin **.onmicrosoft.com**, puede cambiarlo en el Portal de administración de Office 365, tal como se describe más adelante en este artículo.
 

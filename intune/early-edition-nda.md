@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 12/3/2018
+ms.date: 01/07/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,14 +17,14 @@ ms.reviewer: cacampbell
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 21d89d97355430f071763391d69fe332cf3ef369
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: 94125ced318f304e5b2bdc8f09472280fc05b08a
+ms.sourcegitcommit: 662afec5e87639a7f541bb89700cc0fec5037bb0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642904"
+ms.lasthandoff: 01/07/2019
+ms.locfileid: "54069360"
 ---
-# <a name="the-early-edition-for-microsoft-intune---december-2018"></a>La edición anticipada para Microsoft Intune, diciembre de 2018
+# <a name="the-early-edition-for-microsoft-intune---january-2019"></a>La edición anticipada de Microsoft Intune: enero de 2019
 
 > [!Note]
 > Notificación de acuerdo de confidencialidad: Los siguientes cambios están en fase de desarrollo de Intune. Esta información se comparte en el acuerdo de confidencialidad de forma muy limitada. No publique esta información en redes sociales ni sitios web públicos, como Twitter, UserVoice, Reddit, etc. 
@@ -40,6 +40,45 @@ Esta página se actualiza periódicamente. Compruebe si hay actualizaciones adic
 -->
  
 ## <a name="intune-in-the-azure-portal"></a>Intune en el portal de Azure
+
+<!-- 1901 start -->
+
+### <a name="android-enterprise-apps----1352553----"></a>Aplicaciones de Android Enterprise <!-- 1352553  -->
+Podrá eliminar aplicaciones de Google Play administradas desde Microsoft Intune. Para eliminar una aplicación administrada de Google Play, abra Microsoft Intune en Azure Portal y seleccione **Aplicaciones cliente** > **Aplicaciones**. En la lista de aplicaciones, seleccione la elipse (...) a la derecha de la aplicación de Google Play administrada y luego seleccione **Eliminar** en la lista que aparece. Cuando se elimina una aplicación de Google Play administrada de la lista de aplicaciones, automáticamente se desactiva la aprobación de la aplicación administrada de Google Play.
+
+### <a name="managed-google-play-app-type----1352580---"></a>Aplicación administrada de Google Play tipo <!-- 1352580 -->
+El tipo de aplicación **administrada de Google Play** le permitirá agregar específicamente [aplicaciones de Google Play administradas](https://play.google.com/work/search?q=microsoft&c=apps) a Intune. Como administrador de Intune, ahora podrá examinar, buscar, aprobar, sincronizar y asignar aplicaciones de Google Play administradas aprobadas en Intune. Ya no necesitará ir a la consola de Google Play administrada por separado ni tendrá que volver a autenticarlas. En Intune, seleccione **Aplicaciones cliente** > **Aplicaciones** > **Agregar**. En la lista **Tipo de aplicación**, seleccione **Google Play administrada** como tipo de aplicación.
+
+### <a name="preview-of-support-for-android-corporate-owned-fully-managed-devices----1574342----"></a>Versión preliminar de la compatibilidad para dispositivos Android totalmente administrados de propiedad corporativa <!-- 1574342  -->
+Intune admitirá dispositivos Android totalmente administrados, un escenario de "propietario de dispositivo" de propiedad corporativa en el departamento de TI administra de manera rigurosa los dispositivos y estos están asociados a usuarios individuales. Esto permite que los administradores administren todo el dispositivo, apliquen una amplia variedad de controles de directivas no disponibles para los perfiles de trabajo y restrinjan las instalaciones de aplicaciones por parte de los usuarios solo a Google Play administrado. Para configurar dispositivos Android totalmente administrados, vaya a **Dispositivo administrado** > **Inscripción de Android** > **Corporate-owned, fully managed user devices** (Dispositivos de usuario totalmente administrados de propiedad corporativa). Tenga en cuenta que esta característica está en versión preliminar. Algunas funcionalidades de Intune, como certificados, cumplimiento y acceso condicional, no están disponibles actualmente con dispositivos Android totalmente administrados.
+
+### <a name="deployment-of-online-licensed-microsoft-store-for-business-apps----16726660----"></a>Implementación de aplicaciones de Microsoft Store para Empresas con licencias en línea <!-- 16726660  -->
+Podrá asignar las aplicaciones de Microsoft Store para Empresas con licencias en línea necesarias en el contexto del dispositivo. Implementar una aplicación de Microsoft Store para Empresas de esta forma permitirá que la aplicación se instale para todos los usuarios en el dispositivo. Esto solo es aplicable para dispositivos de escritorio de Windows 10 RS4+. La opción para instalar en el contexto del dispositivo está disponible en la página de asignación de aplicaciones del cliente para las aplicaciones con licencia en línea de MSFB.
+
+### <a name="configure-profile-to-skip-some-screens-during-setup-assistant----2276470----"></a>Configuración del perfil para omitir algunas pantallas durante el Asistente para configuración <!-- 2276470  -->
+Cuando cree un perfil de inscripción de macOS, podrá configurarlo para omitir cualquiera de las siguientes pantallas cuando un usuario utilice el Asistente para la configuración:
+- Migración de Android
+- Tono de visualización
+- Privacidad
+- iCloudStorage
+
+### <a name="assign-autopilot-profiles-to-the-all-devices-virtual-group---2715522----"></a>Asignación de perfiles de AutoPilot al grupo virtual Todos los dispositivos<!--2715522  -->
+Podrá asignar perfiles de AutoPilot al grupo virtual Todos los dispositivos. Para ello, elija **Inscripción de dispositivos** > **Inscripción Windows** > **Perfiles de implementación** > elija un perfil > **Tareas** > bajo **Asignar a** elija **Todos los dispositivos**. Para más información sobre los perfiles de Autopilot, vea [Inscribir dispositivos Windows con Windows Autopilot](enrollment-autopilot.md).
+
+### <a name="customize-wallpaper-on-supervised-ios-devices-using-a-device-configuration-profile----2809324----"></a>Personalice el papel tapiz en dispositivos iOS supervisados mediante un perfil de configuración de dispositivo <!-- 2809324  -->
+Cuando cree un perfil de configuración de dispositivos para dispositivos iOS, podrá permitir o restringir algunas opciones en **Configuración del dispositivo** > **Perfiles** > **Crear perfil** > **iOS** para plataforma > **Restricciones del dispositivo** para el tipo de perfil. Esta actualización incluye una nueva configuración de **Papel tapiz** que permite a un administrador usar una imagen .png, .jpg o .jpeg como fondo de pantalla, ver la versión preliminar de la imagen e impedir que los usuarios cambien el papel tapiz. Esta configuración de papel tapiz solo se aplicará a los dispositivos supervisados. Para obtener una lista de las configuraciones actuales, vea la [Configuración de restricción de dispositivos iOS](device-restrictions-ios.md).
+
+### <a name="toast-notifications-for-win32-apps----3136566-----"></a>Notificaciones del sistema para aplicaciones Win32 <!-- 3136566   -->
+Podrá suprimir notificaciones del sistema para el usuario final por asignación de aplicaciones. En Intune, seleccione **Aplicaciones cliente** > **Aplicaciones** > seleccione la aplicación > **Asignaciones** > **Incluir grupos**. 
+
+### <a name="contact-sharing-via-bluetooth-is-removed-in-device-restrictions--device-owner-for-android-enterprise----3598396---"></a>Se eliminó la opción para compartir contacto a través de Bluetooth en Restricciones del dispositivo > Propietario del dispositivo para Android Enterprise <!-- 3598396 -->
+Cuando se crea un perfil de restricciones de dispositivos para dispositivos de Android Enterprise, hay una configuración para **Compartir contacto a través de Bluetooth**. En esta actualización, se eliminará la configuración **Compartir contacto a través de Bluetooth** (**Configuración del dispositivo** > **Perfiles** > **Crear perfil** > **Android Enterprise** para la plataforma > **Restricciones de dispositivos > Propietario del dispositivo** para el tipo de perfil > **General**). 
+
+La configuración **Compartir contacto a través de Bluetooth** no es compatible con la administración de Propietario del dispositivo Android Enterprise. Por lo que cuando se quite esta configuración, no afectará a ningún dispositivo ni inquilino, incluso si esta opción está habilitada y configurada en su entorno.
+
+Para ver la lista actual de configuraciones, vaya a [Configuración de dispositivos Android Enterprise para permitir o restringir características](device-restrictions-android-for-work.md).
+
+Se aplica a: Propietario del dispositivo Android Enterprise
 
 <!-- 1812 start -->
 
@@ -75,8 +114,9 @@ Al usar la detección de redes de confianza, podrá impedir que los perfiles de 
 ### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys----1832174---"></a>El SDK de aplicaciones de Intune admitirá claves de cifrado de 256 bits <!-- 1832174 -->
 El SDK de aplicaciones de Intune para Android usará claves de cifrado de 256 bits cuando el cifrado esté habilitado mediante las directivas de protección de aplicaciones. El SDK seguirá siendo compatible con las claves de 128 bits para mantener la compatibilidad con el contenido y las aplicaciones que usen las versiones anteriores del SDK.
 
-### <a name="enabled-shared-pc-settings-in-intune-profile----1907917---"></a>Configuración PC compartido habilitada en el perfil de Intune <!-- 1907917 -->
+### <a name="enabled-shared-pc-settings-in-intune-profile----1907917-1063203---"></a>Configuración PC compartido habilitada en el perfil de Intune <!-- 1907917, 1063203 -->
 Actualmente, puede establecer la configuración PC compartido en dispositivos con Windows 10 Escritorio con una configuración de OMA-URI personalizada. Se agregará un nuevo perfil para ajustar la configuración PC compartido (**Configuración del dispositivo** > **Perfiles** > **Crear perfil** > **Windows 10 y versiones posteriores** > **Shared multi-user device** [Dispositivo multiusuario compartido]).
+
 Se aplica a: Windows 10 y versiones posteriores, Windows Holographic for Business
 
 ### <a name="intune-policies-update-authentication-method-and-company-portal-app-installation-----1927359---"></a>Método de autenticación de actualizaciones de directivas de Intune e instalación de aplicaciones de Portal de empresa <!-- 1927359 -->
@@ -113,10 +153,6 @@ Para elegir qué pantallas omitir, vaya a **Inscripción de dispositivos** > **I
 
 ### <a name="some-bitlocker-settings-support-windows-10-pro-edition---2727036---"></a>Algunas opciones de configuración de BitLocker admiten Windows 10 Pro Edition<!-- 2727036 -->
 Podrá crear un perfil de configuración que establezca los ajustes de Endpoint Protection en dispositivos Windows 10, incluido BitLocker. Esto agrega compatibilidad con Windows 10 Professional Edition en algunas configuraciones de BitLocker. Para ver la configuración de la edición de Windows 10 actual, consulte [Configuración de Endpoint Protection para Windows 10](endpoint-protection-windows-10.md#windows-encryption).
-
-
-### <a name="intune-device-reporting-fields----2748738---"></a>Campos de informes de dispositivo de Intune <!-- 2748738 -->
-Intune proporcionará campos adicionales con información sobre el dispositivo, incluido el fabricante de Android, el modelo, la versión de la revisión de seguridad y el modelo de iOS. En Intune, estos campos estarán disponibles si selecciona **Aplicaciones cliente** > **Estado de protección de aplicaciones** y elige **Informe de protección de aplicaciones: iOS, Android**. Además, estos parámetros lo ayudarán a configurar la lista de **admitidos** correspondiente al fabricante de dispositivo (Android), la lista de **admitidos** del modelo de dispositivo (iOS y Android) y la configuración de versión de la revisión de seguridad mínima de Android. 
 
 ### <a name="intune-device-reporting-fields----2748738---"></a>Campos de informes de dispositivo de Intune <!-- 2748738 -->
 Intune proporcionará campos adicionales con información sobre el dispositivo, incluido el fabricante de Android, el modelo, la versión de la revisión de seguridad y el modelo de iOS. En Intune, estos campos estarán disponibles si selecciona **Aplicaciones cliente** > **Estado de protección de aplicaciones** y elige **Informe de protección de aplicaciones: iOS, Android**. Además, estos parámetros lo ayudarán a configurar la lista de **admitidos** correspondiente al fabricante de dispositivo (Android), la lista de **admitidos** del modelo de dispositivo (iOS y Android) y la configuración de versión de la revisión de seguridad mínima de Android. 
@@ -155,6 +191,8 @@ Las plantillas administrativas de Intune (**Configuración del dispositivo** > *
 Las plantillas administrativas están disponibles en versión preliminar pública y se mueven desde **Configuración del dispositivo** > **Plantillas administrativas** a **Configuración del dispositivo** > **Perfiles** >**Crear perfil** > en **Plataforma**, elija **Windows 10 y versiones posteriores**, en **Tipo de perfil**, elija **Plantillas administrativas**.
 Se habilita el informe; se aplica a: Windows 10 y versiones posteriores
 
+### <a name="intune-macos-company-portal-dark-mode----3300524---"></a>Modo oscuro del Portal de empresa de macOS para Intune <!-- 3300524 -->
+El Portal de empresa de macOS para Intune ahora admite el Modo oscuro para macOS. Cuando habilita el Modo oscuro en un dispositivo macOS 10.14 o una versión posterior, el Portal de empresa ajustará su apariencia para que los colores reflejen ese modo.
 
 <!-- 1810 start -->
 
@@ -211,7 +249,7 @@ Se aplica a Windows 10 y versiones posteriores
 
 No hay ningún aviso activo en este momento.
 
-### <a name="see-also"></a>Vea también
+### <a name="see-also"></a>Consulte también
 Consulte [Novedades de Microsoft Intune](whats-new.md) para obtener más información sobre los desarrollos recientes.
 
 

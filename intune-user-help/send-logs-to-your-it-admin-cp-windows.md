@@ -1,6 +1,6 @@
 ---
 title: Envío de registros al equipo de soporte técnico de su empresa para dispositivos Windows 10 | Microsoft Docs
-description: Envío de registros de diagnóstico para ayudar al equipo de soporte técnico de la empresa a corregir los problemas de las aplicaciones
+description: Envío de detalles de errores para ayudar al equipo de soporte técnico de la empresa a corregir los problemas de las aplicaciones
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fa6018d4a226303c6ea097a9ee36a043a040038c
-ms.sourcegitcommit: 9a1924ba2372904eb4a8a1894973e6f2be84129d
+ms.openlocfilehash: cc1af3dee9dc8c591322c26b65a354130b05786a
+ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53626074"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54006325"
 ---
 # <a name="send-diagnostic-logs-to-your-company-support-from-company-portal-for-windows"></a>Envío de registros de diagnóstico al equipo de soporte técnico de su empresa el Portal de empresa para Windows
 
