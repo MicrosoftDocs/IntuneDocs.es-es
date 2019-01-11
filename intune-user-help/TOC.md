@@ -130,6 +130,7 @@
 ### [¿Qué ocurre al restablecer un dispositivo?](what-happens-if-you-reset-your-device-using-the-company-portal-windows.md)
 ### [Desactivar la recopilación de datos de uso de Microsoft](turn-off-microsoft-usage-data-collection-windows.md)
 ### [Sincronizar el dispositivo manualmente](sync-your-device-manually-windows.md)
+### [Obtener ayuda y soporte técnico](help-support-windows-cpapp.md)
 
 ### [Solucionar problemas comunes para Windows](troubleshoot-your-device-windows.md)
 #### [Resolver restricciones de punto de acceso](resolve-access-point-restrictions.md)
