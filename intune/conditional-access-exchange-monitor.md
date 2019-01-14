@@ -1,6 +1,5 @@
 ---
-title: Supervisar el acceso condicional de Exchange en Microsoft Intune
-titlesuffix: ''
+title: Supervisión del acceso condicional de Exchange en Microsoft Intune | Microsoft Intune
 description: Supervise el cumplimiento de acceso condicional de Exchange local y Exchange Online a través de Azure Portal de Intune.
 keywords: ''
 author: brenduns
@@ -15,12 +14,12 @@ ms.assetid: 5712682d-285b-43fd-9978-3dcfd95ec5f9
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 20a99290d2a84c22bc2bee823d7a3bb42e43aced
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 8c9602dbe183501cc779fcb9b5d5a1e6e4bf6154
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180585"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816777"
 ---
 # <a name="monitor-conditional-access-compliance-for-on-premises-exchange-and-exchange-online-in-intune"></a>Supervisión del cumplimiento del acceso condicional en Exchange local y Exchange Online en Intune
 
@@ -56,7 +55,7 @@ También puede explorar en profundidad en dispositivos específicos para ver má
 
 En el panel de detalles del dispositivo, puede ver más información:
 
--   **Información general:** puede ver propiedades del dispositivo como la versión del sistema operativo, el modelo de dispositivo, la propiedad, el número de serie, el fabricante del dispositivo, el número de teléfono y la última vez que se protegió.
+-   **Información general:** puede ver las propiedades del dispositivo, como la versión del sistema operativo, el modelo de dispositivo, la propiedad, el número de serie, el fabricante del dispositivo, el número de teléfono y la última vez que se protegió.
 
 -   **Propiedades:** puede establecer la propiedad del dispositivo (personal o corporativo).
 
@@ -64,8 +63,8 @@ En el panel de detalles del dispositivo, puede ver más información:
 
 -   **Aplicaciones detectadas:** muestra todas las aplicaciones instaladas en el dispositivo. También puede exportar la lista de aplicaciones instaladas en formato .CSV.
 
--   **Cumplimiento:** muestra detalles de la directiva de cumplimiento de todos los dispositivos.
+-   **Cumplimiento normativo**: muestra todos los detalles de la directiva de cumplimiento del dispositivo.
 
--   **Configuración del dispositivo:** muestra los detalles de configuración de todos los dispositivos.
+-   **Configuración de dispositivos:** muestra los detalles de configuración de todos los dispositivos.
 
 -   **Acceso de Exchange:** aquí puede obtener más información sobre el estado del dispositivo después de aplicar las directivas de acceso condicional.

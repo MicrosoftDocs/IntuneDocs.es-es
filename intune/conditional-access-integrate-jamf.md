@@ -1,6 +1,5 @@
 ---
-title: Integración de Jamf Pro con Microsoft Intune para cumplimiento
-titlesuffix: ''
+title: Integración de Jamf Pro con Microsoft Intune para cumplimiento | Microsoft Intune
 description: Use directivas de cumplimiento de Microsoft Intune con acceso condicional de Azure Active Directory para ayudar a proteger los dispositivos administrados por Jamf.
 keywords: ''
 author: brenduns
@@ -16,16 +15,16 @@ ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e936ecd4ce6a9b0fa447ecfe8e45e04a78999a2b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: cc547926d95e3fa1bec54b4ea55f764b5701b3b7
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52185022"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816827"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>Integración de Jamf Pro con Intune para cumplimiento
 
-Se aplica a: Intune en Azure Portal
+Se aplica a: Intune en el portal de Azure
 
 Si la organización usa [Jamf Pro](https://www.jamf.com) para administrar los equipos Mac de los usuarios finales, puede usar las directivas de cumplimiento de Microsoft Intune con acceso condicional de Azure Active Directory para garantizar que los dispositivos de la organización son compatibles.
 
@@ -93,7 +92,7 @@ Jamf Pro captura la información de inventario sobre los dispositivos macOS admi
 
 * Id. de Azure AD del dispositivo
 * Estado del inventario JAMF (el estado de inventario de un equipo registrado con Jamf Pro en las últimas 24 horas)
-* Versión de SO
+* Versión del SO
 * Id. de Azure AD del usuario
 * Cifrado (FileVault 2)
 * Estado del equipo selector

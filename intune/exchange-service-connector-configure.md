@@ -1,12 +1,11 @@
 ---
-title: Intune Exchange Connector para Exchange Online
-titleSuffix: ''
+title: Intune Exchange Connector para Exchange Online | Microsoft Intune
 description: Conecte Intune al servicio de Office 365 Exchange para admitir la administración de dispositivos móviles (MDM) de Exchange ActiveSync.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: muhosabe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 318bde24e42bfdf9bbcf15d83f42405fc06f7901
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9845ed1b809b611975c07c6c8335acd237d845c0
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184223"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816708"
 ---
 # <a name="configure-the-exchange-service-connector-for-intune-and-exchange-online"></a>Configuración de Exchange Service Connector para Intune y Exchange Online
 En este artículo se muestra cómo conectar el servicio Microsoft Intune y Exchange Online o el nuevo servicio Exchange Online dedicado. Para determinar si su entorno Exchange Online dedicado es una versión **nueva** o **heredada**, póngase en contacto con su administrador de cuentas.
@@ -32,7 +31,7 @@ Con **Service to Service Connector**, puede administrar los dispositivos adminis
 **Service to Service Connector** solo admite Exchange Online o Exchange Online dedicado y no requiere infraestructura local. 
 
 
-|              Requisitos               |                                                                                                            Información adicional                                                                                                            |
+|              Requisito               |                                                                                                            Más información                                                                                                            |
 |----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Exchange Online configurado y en ejecución |                                                                                 [Exchange Online](https://technet.microsoft.com/library/jj200580.aspx)                                                                                 |
 |   Entidad de administración de dispositivos móviles   |                                                       [Configurar Microsoft Intune como la entidad de administración de dispositivos móviles](mdm-authority-set.md)                                                       |
@@ -52,7 +51,7 @@ Cree una cuenta de usuario de Exchange Online que sea utilizada por Intune Excha
 
 ## <a name="set-up-the-service-to-service-connector"></a>Configurar Service to Service Connector
 
-1. Inicie sesión en [Azure Portal](http://portal.azure.com) con una cuenta de usuario con derechos de administración de Exchange y los permisos de los cmdlets [que se describieron anteriormente](#exchange-cmdlet-requirements), y el rol de Administrador global. Para establecer la conexión, Microsoft Intune usa la dirección de correo electrónico del usuario que actualmente ha iniciado sesión.
+1. Inicie sesión en [Azure Portal](https://portal.azure.com) con una cuenta de usuario con derechos de administración de Exchange y los permisos de los cmdlets [que se describieron anteriormente](#exchange-cmdlet-requirements), y el rol de Administrador global. Para establecer la conexión, Microsoft Intune usa la dirección de correo electrónico del usuario que actualmente ha iniciado sesión.
 
 2. Elija **Todos los servicios** en el menú de la izquierda y, luego, escriba **Intune** en el filtro del cuadro de texto.
 

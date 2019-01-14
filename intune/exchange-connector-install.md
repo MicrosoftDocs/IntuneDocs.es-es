@@ -1,12 +1,11 @@
 ---
-title: Configuración de Exchange Connector local de Microsoft Intune
-titleSuffix: ''
+title: Configuración de Exchange Connector local de Microsoft Intune | Microsoft Intune
 description: Use Exchange Connector local para administrar el acceso del dispositivo a los buzones de Exchange en función de la inscripción de Intune y Exchange Active Sync (EAS).
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/08/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: chrisgre
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0dc87c20b0da6fcfcc4e3ab304c61c5b264aaf38
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 28886382da00f5c07129f4e69e0bbadf97634420
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112568"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817269"
 ---
 # <a name="set-up-the-intune-on-premises-exchange-connector-in-microsoft-intune-azure"></a>Configuración de Exchange Connector local de Intune en Microsoft Intune Azure
 
@@ -71,7 +70,7 @@ Debe crear una cuenta de usuario de Active Directory para usarla en la instancia
 
 ## <a name="download-the-on-premises-exchange-connector-software-installation-package"></a>Descarga del paquete de instalación de software de la instancia local de Exchange Connector
 
-1. En un sistema operativo Windows Server compatible con la instancia local de Exchange Connector, abra [Azure Portal](http://portal.azure.com) e inicie sesión con una cuenta de usuario que sea administrador de la instancia local de Exchange Server y que disponga de una licencia para usar Exchange Server.
+1. En un sistema operativo Windows Server compatible con la instancia local de Exchange Connector, abra [Azure Portal](https://portal.azure.com) e inicie sesión con una cuenta de usuario que sea administrador de la instancia local de Exchange Server y que disponga de una licencia para usar Exchange Server.
 
 2. Elija **Todos los servicios** en el menú de la izquierda y, luego, escriba **Intune** en el filtro del cuadro de texto.
 

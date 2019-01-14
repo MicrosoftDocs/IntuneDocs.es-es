@@ -1,12 +1,11 @@
 ---
-title: Creación de una directiva de cumplimiento de dispositivos MTD con Microsoft Intune
-titlesuffix: ''
+title: Creación de una directiva de cumplimiento de dispositivos MTD con Microsoft Intune | Microsoft Intune
 description: Cree una directiva de cumplimiento de dispositivo de Intune que utilice sus niveles de amenazas de partners MTD asociados para determinar si un dispositivo móvil puede tener acceso a recursos de la empresa.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/27/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,19 +15,19 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: aaa02c397ca17011dd231c98018ca86c190f49ac
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 5962ff96b9c92bcf69a75221f1b7c5a5ab2f2634
+ms.sourcegitcommit: 6058c611d5a54076121af1d327a43ad861a43f8a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186187"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "53995987"
 ---
 # <a name="create-mobile-threat-defense-mtd-device-compliance-policy-with-intune"></a>Creación de directiva de cumplimiento de dispositivos de Mobile Threat Defense (MTD) con Intune
 
 > [!NOTE] 
 > Este tema se aplica a todos los partners de Mobile Threat Defense.
 
-Intune con MTD le ayuda a detectar amenazas y a evaluar el riesgo en dispositivos móviles. Puede crear una regla de directivas de cumplimiento de dispositivos de Intune que evalúe el riesgo para determinar si el dispositivo cumple con la directiva o no lo hace. Luego puede usar una directiva de acceso condicional para bloquear el acceso a servicios en función del cumplimiento del dispositivo.
+Intune con MTD le ayuda a detectar amenazas y a evaluar el riesgo en dispositivos móviles. Puede crear una regla de directivas de cumplimiento de dispositivos de Intune que evalúe el riesgo para determinar si el dispositivo cumple con la directiva o no lo hace. Luego puede usar una [directiva de acceso condicional](create-conditional-access-intune.md) para bloquear el acceso a servicios en función del cumplimiento del dispositivo.
 
 ## <a name="before-you-begin"></a>Antes de comenzar
 
@@ -56,11 +55,11 @@ Requisitos previos de la directiva de cumplimiento de dispositivos con MTD:
 
     a.  **Protegido**: este nivel es el más seguro. El dispositivo no puede tener ninguna amenaza presente y aún puede tener acceso a los recursos de la empresa. Si se encuentra alguna amenaza, el dispositivo se clasificará como no conforme.
 
-    b.  **Bajo**: el dispositivo se evalúa como compatible si solo hay amenazas de nivel bajo. Cualquier valor por encima coloca al dispositivo en un estado de no conformidad.
+    b.  **Baja**: el dispositivo se evalúa como compatible si solo hay amenazas de nivel bajo. Cualquier valor por encima coloca al dispositivo en un estado de no conformidad.
 
-    c.  **Medio**: el dispositivo se evalúa como compatible si las amenazas que se encuentran en él son de nivel bajo o medio. Si se detectan amenazas de nivel alto, se determinará que el dispositivo no es compatible.
+    c.  **Media**: el dispositivo se evalúa como compatible si las amenazas que se encuentran en él son de nivel bajo o medio. Si se detectan amenazas de nivel alto, se determinará que el dispositivo no es compatible.
 
-    d.  **Alto**: este nivel es el menos seguro. Permite todos los niveles de amenaza y usa Mobile Threat Defense solo con fines informativos. Los dispositivos deben tener activada la aplicación MTD con esta configuración.
+    d.  **Alta**: este nivel es el menos seguro. Permite todos los niveles de amenaza y usa Mobile Threat Defense solo con fines informativos. Los dispositivos deben tener activada la aplicación MTD con esta configuración.
 
 8.  Haga clic en **Aceptar** dos veces, después seleccione **Crear**.
 

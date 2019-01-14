@@ -1,6 +1,5 @@
 ---
-title: Conector de Lookout MTD con Microsoft Intune
-titlesuffix: ''
+title: Conector de Lookout MTD con Microsoft Intune | Microsoft Intune
 description: Obtenga información sobre cómo integrar Intune con Lookout Mobile Threat Defense (MTD) para controlar el acceso de los dispositivos móviles a los recursos corporativos.
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d7a545fe08acc9ab88086fa92be934c860ae4716
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: bd61b10ee60e1f9413c22d0d618bc5c270dc76a6
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179548"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817082"
 ---
 # <a name="lookout-mobile-threat-defense-connector-with-intune"></a>Conector Lookout Mobile Threat Defense con Intune
 
@@ -63,34 +62,34 @@ Cuando las aplicaciones malintencionadas como malware se detectan en dispositivo
 
 **Bloquear cuando se detectan aplicaciones malintencionadas:**
 
-![Diagrama en el que se muestra la directiva de acceso condicional bloqueando el acceso cuando se determina que el dispositivo no es conforme por contener aplicaciones malintencionadas.](./media/malicious-apps-blocked.png)
+![Imagen conceptual de directiva que bloquea el acceso por contener aplicaciones malintencionadas](./media/malicious-apps-blocked.png)
 
 **Acceso concedido tras la corrección:**
 
-![diagrama en el que se muestra la directiva de acceso condicional concediendo acceso cuando se determina que, tras la solución, el dispositivo es conforme](./media/malicious-apps-unblocked.png)
+![Imagen conceptual que muestra el acceso que se concede a los dispositivos después de la corrección](./media/malicious-apps-unblocked.png)
 
 ### <a name="control-access-based-on-threat-to-network"></a>Control del acceso basado en amenazas a la red
 Detecte amenazas para la red como ataques de tipo "Man in the middle" y proteja el acceso a las redes Wi-Fi según el riesgo del dispositivo.
 
 **Bloquear el acceso de red a través de Wi-Fi:**
 
-![Diagrama que muestra el acceso condicional bloqueando el acceso de Wi-Fi basándose en amenazas de red](./media/network-wifi-blocked.png)
+![Imagen que muestra el bloqueo de acceso de Wi-Fi basándose en amenazas de red](./media/network-wifi-blocked.png)
 
 **Acceso concedido tras la corrección:**
 
-![diagrama en el que se muestra el acceso condicional permitiendo el acceso tras la corrección de la amenaza](./media/network-wifi-unblocked.png)
+![Imagen conceptual de acceso condicional que permite el acceso después de la corrección](./media/network-wifi-unblocked.png)
 ### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>Control del acceso a SharePoint Online basado en amenazas a la red
 
 Detecte amenazas para la red como ataques de tipo Man-in-the-middle y evite la sincronización de archivos corporativos según el riesgo del dispositivo.
 
 **Bloqueo de SharePoint Online cuando se detectan amenazas a la red:**
 
-![diagrama en el que se muestra el acceso condicional bloqueando el acceso del dispositivo a SharePoint Online en función de la detección de amenazas](./media/network-spo-blocked.png)
+![Imagen conceptual de bloqueo del acceso a SharePoint Online](./media/network-spo-blocked.png)
 
 
 **Acceso concedido tras la corrección:**
 
-![diagrama en el que se muestra el acceso condicional permitiendo el acceso tras la corrección de la amenaza de red](./media/network-spo-unblocked.png)
+![Imagen conceptual que muestra cómo se permite el acceso tras la corrección de la amenaza de red](./media/network-spo-unblocked.png)
 
 ## <a name="next-steps"></a>Pasos siguientes
 Estos son los principales pasos para implementar esta solución:

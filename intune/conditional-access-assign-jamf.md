@@ -1,12 +1,12 @@
 ---
-title: Directiva de cumplimiento de dispositivos para dispositivos Jamf
+title: Directiva de cumplimiento de dispositivos para dispositivos Jamf | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: Use directivas de cumplimiento de Microsoft Intune con acceso condicional de Azure Active Directory para ayudar a proteger los dispositivos administrados por Jamf.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/16/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,16 +16,16 @@ ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6fa89e96b05e5344dec32fb452be8ebeaa58bc12
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d7d054b11a4abc969ad411169d0222be37fd6711
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182030"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817235"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>Aplicación del cumplimiento en equipos Mac administrados con Jamf Pro
 
-Se aplica a: Intune en Azure Portal
+Se aplica a: Intune en el portal de Azure
 
 Puede usar Azure Active Directory y las directivas de acceso condicional de Microsoft Intune garantizan que los usuarios finales son compatibles con los requisitos de la organización. Puede aplicar estas directivas en los equipos Mac que se [administran con Jamf Pro](conditional-access-integrate-jamf.md). Esto requiere acceso tanto a la consola de Intune como a la consola de Jamf Pro.
 
@@ -57,7 +57,7 @@ Debe implementar la aplicación Portal de empresa para macOS en Jamf Pro como un
 ## <a name="create-a-policy-in-jamf-pro-to-have-users-register-their-devices-with-azure-active-directory"></a>Crear una directiva en Jamf Pro para que los usuarios registren sus dispositivos con Azure Active Directory
 
 > [!NOTE]
-> Debe [implementar Portal de empresa](conditional-access-assign-jamf.md#require-the-company-portal-app-for-macos) para macOS antes de pasar por los pasos siguientes.  
+> Debe [implementar Portal de empresa](conditional-access-assign-jamf.md#deploy-the-company-portal-app-for-macos-in-jamf-pro) para macOS antes de pasar por los pasos siguientes.  
 
 Los usuarios finales deben iniciar la aplicación Portal de empresa a través del autoservicio de Jamf para registrar el dispositivo con Azure AD como un dispositivo administrado por Jamf Pro. Esto requerirá que los usuarios finales realicen una acción. Se recomienda [ponerse en contacto con el usuario final](end-user-educate.md) a través de correo electrónico, notificaciones de Jamf Pro o cualquier otro método para notificar a los usuarios finales que hagan clic en el botón de Jamf Self Service.
 

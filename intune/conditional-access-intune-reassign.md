@@ -1,12 +1,11 @@
 ---
-title: Migración del acceso condicional a Azure Portal
-titlesuffix: Microsoft Intune
+title: Migración del acceso condicional a Azure Portal | Microsoft Intune
 description: Reasigne las directivas de acceso condicional que se han creado anteriormente en el Portal de Intune clásico a Azure Portal.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/25/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +15,12 @@ ms.reviewer: chrisgree
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6dbd7d9079bdb826f83cce76650cacebee056b68
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d319ff39574565c3f326bd6b03b346e989bdc488
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184495"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817439"
 ---
 # <a name="reassign-conditional-access-policies-from-intune-classic-portal-to-the-azure-portal"></a>Reasignar directivas de acceso condicional desde el Portal de Intune clásico a Azure Portal
 
@@ -46,7 +45,7 @@ Si está listo para moverse a Azure Portal, siga los pasos de este tema para rea
             - Quite de manera gradual los usuarios de los grupos de seguridad que tienen como destino directivas de acceso condicional en el Portal de Intune clásico.
             - Después de que haya confirmado que la nueva directiva está funcionando para esos usuarios, puede deshabilitarla en el Portal de Intune clásico. 
 <br /><br />
-- Si ha configurado las opciones de la directiva de acceso condicional para que usen Exchange Active Sync (EAS) en el Portal de Intune clásico, vea las [instrucciones de este tema](#to-reassign-intune-device-based-conditional-access-policies-for-eas-clients) para **volver a asignar las opciones de la directiva de acceso condicional de EAS en Azure Portal**.
+- Si ha configurado las opciones de la directiva de acceso condicional para que usen Exchange Active Sync (EAS) en el Portal de Intune clásico, vea las [instrucciones de este tema](#reassign-intune-device-based-conditional-access-policies-for-eas-clients) para **volver a asignar las opciones de la directiva de acceso condicional de EAS en Azure Portal**.
 
 ### <a name="to-verify-your-device-based-conditional-access-policies-in-the-intune-classic-portal"></a>Para comprobar las directivas de acceso condicional basadas en el dispositivo en el Portal de Intune clásico
 
@@ -81,7 +80,7 @@ La hoja **Protección de aplicaciones de Intune** en Azure Portal permite a los 
 
 4. En la **sección Asignaciones**, pulse **Usuarios y grupos** para dirigirse a la nueva directiva de acceso condicional.
     
-    ![Imagen en la que se muestra una comparación de la interfaz de usuario de grupos de usuarios entre el Portal de Intune y Azure Portal](./media/reassign-ca-1.png)
+    ![Imagen que compara la interfaz de usuario de grupos de usuarios entre Intune y Azure Portal](./media/reassign-ca-1.png)
 
     > [!IMPORTANT] 
     > La selección que hace para Azure Portal debe corresponder a la selección que ha realizado para el portal clásico. Por ejemplo, si ha seleccionado todos los usuarios en el Portal de Intune clásico, seleccione **Todos los usuarios** en Azure Portal. Además, si ha seleccionado la opción **Grupos exentos** en el Portal de Intune clásico, excluya también esos grupos seleccionados en Azure Portal.
@@ -96,7 +95,7 @@ La hoja **Protección de aplicaciones de Intune** en Azure Portal permite a los 
 
 9. Haga clic en **Listo**.
 
-    ![Imagen en la que se muestra una comparación de la interfaz de usuario de una aplicación en la nube entre el Portal de Intune y Azure Portal](./media/reassign-ca-3.png)
+    ![Imagen de una comparación de la interfaz de usuario de aplicaciones en la nube entre los portales de Intune y Azure](./media/reassign-ca-3.png)
 
     > [!TIP] 
     > Si tiene varias aplicaciones con la misma directiva, considere la posibilidad de consolidarlas en una única directiva en Azure Portal.
@@ -107,7 +106,7 @@ La hoja **Protección de aplicaciones de Intune** en Azure Portal permite a los 
 
 12. Cuando haya terminado de seleccionar las plataformas de dispositivo, haga clic en **Listo** dos veces.
 
-    ![Imagen en la que se muestra una comparación de la interfaz de usuario de plataforma de dispositivo entre el Portal de Intune y Azure Portal](./media/reassign-ca-4.png)
+    ![Imagen que compara la interfaz de usuario de la plataforma de dispositivo de los portales de Intune y Azure](./media/reassign-ca-4.png)
 
     > [!TIP] 
     > Si ha seleccionado plataformas individuales en el Portal de Intune clásico, selecciónelas en Azure Portal.
@@ -121,7 +120,7 @@ La hoja **Protección de aplicaciones de Intune** en Azure Portal permite a los 
 
 15. Cuando haya terminado de seleccionar la aplicación cliente, haga clic en **Listo** dos veces.
 
-    ![Imagen en la que se muestra una comparación de la interfaz de usuario de aplicaciones cliente entre el Portal de Intune y Azure Portal](./media/reassign-ca-6.png)
+    ![Imagen que compara la interfaz de usuario de aplicaciones cliente entre los portales de Intune y Azure](./media/reassign-ca-6.png)
 
 16. Si ha seleccionado las opciones del explorador en el Portal de Intune clásico, seleccione **Explorador** y **Aplicaciones móviles y aplicaciones de escritorio** en Azure Portal. En caso de que no haya elegido las opciones del explorador en el Portal de Intune clásico, pulse solo **Aplicaciones móviles y aplicaciones de escritorio**. 
 
@@ -135,7 +134,7 @@ La hoja **Protección de aplicaciones de Intune** en Azure Portal permite a los 
 
 21. Active la alternancia **Habilitar directiva** en la hoja de la directiva de acceso condicional **Nueva** y, después, haga clic en **Crear**.
 
-    ![Imagen en la que se muestra cómo habilitar la comparación de la interfaz de usuario de directivas de acceso condicional entre el Portal de Intune y Azure Portal](./media/reassign-ca-11.png)
+    ![Comparar la interfaz de usuario para habilitar directivas de acceso condicional entre Intune y Azure Portal](./media/reassign-ca-11.png)
 
 ## <a name="reassign-intune-device-based-conditional-access-policies-for-eas-clients"></a>Reasignar las directivas de acceso condicional basadas en el dispositivo de Intune para clientes de EAS
 
@@ -160,7 +159,7 @@ Si ha configurado las opciones de Exchange Active Sync como parte de una directi
 
 7. En la hoja **Aplicaciones en la nube**, haga clic en **Seleccionar aplicaciones** y pulse **Exchange Online**. Después, haga clic en **Seleccionar** y **Listo**.
 
-    ![Imagen en la que se muestra una comparación de la interfaz de usuario de aplicaciones en la nube entre el Portal de Intune y Azure Portal](./media/reassign-ca-14.png)
+    ![Imagen de una comparación de la interfaz de usuario de aplicaciones en la nube entre los portales de Intune y Azure](./media/reassign-ca-14.png)
 
     > [!IMPORTANT] 
     > Las directivas de acceso condicional de clientes de EAS no pueden incluir ninguna otra aplicación en la nube.
@@ -175,11 +174,11 @@ Si ha configurado las opciones de Exchange Active Sync como parte de una directi
 
 11. En **Grant Access Controls** (Conceder controles de acceso), pulse **Requerir que el dispositivo esté marcado como compatible** y, después, haga clic en **Seleccionar**.
 
-    ![Imagen en la que se muestra una comparación de la interfaz de usuario de concesión de acceso entre el Portal de Intune y Azure Portal](./media/reassign-ca-16.png)
+    ![Imagen que compara la interfaz de usuario para conceder acceso entre los portales de Intune y Azure](./media/reassign-ca-16.png)
 
 12. Active la alternancia **Habilitar directiva** en la hoja de la directiva de acceso condicional **Nueva** y, después, haga clic en **Crear**.
 
-    ![Imagen en la que se muestra Habilitar la comparación de la interfaz de usuario de directivas de acceso condicional entre el Portal de Intune y Azure Portal](./media/reassign-ca-17.png)
+    ![Comparación de la interfaz de usuario para habilitar directivas de acceso condicional entre Intune y Azure](./media/reassign-ca-17.png)
 
 > [!NOTE]
 > Si configura **Plataformas de dispositivos**, al guardar la directiva se producirá el error “No se admite la configuración de la directiva”. Exchange ActiveSync no puede identificar la plataforma que usa el dispositivo que se está conectando. Por lo tanto, no se admite la configuración de plataformas de dispositivos específicas al crear una directiva para dispositivos de Exchange ActiveSync.
@@ -201,9 +200,9 @@ Después de que haya reasignado las directivas de acceso condicional en Azure Po
 
 4.  Desactive la opción **Habilitar directiva de acceso condicional** y, después, haga clic en **Guardar**.
 
-    ![Imagen en la que se muestra Deshabilitar directivas de acceso condicional en el Portal de Intune clásico](./media/reassign-ca-18.png)
+    ![Imagen de Deshabilitar directivas de acceso condicional en el Portal de Intune clásico](./media/reassign-ca-18.png)
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 
 - [Formas habituales de usar el acceso condicional con Intune](conditional-access-intune-common-ways-use.md)
 - [acceso condicional basado en aplicación con Intune](app-based-conditional-access-intune.md)

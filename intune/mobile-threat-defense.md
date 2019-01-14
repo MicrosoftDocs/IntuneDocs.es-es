@@ -1,6 +1,5 @@
 ---
-title: Mobile Threat Defense con Microsoft Intune
-titleSuffix: ''
+title: Mobile Threat Defense con Microsoft Intune | Microsoft Intune
 description: Use Mobile Threat Defense (MTD) con su asociado de defensa contra las amenazas móviles para proteger el acceso a recursos de empresa en función del riesgo del dispositivo.
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 65bbc207f96ae2b1670fa2ddc45cad56466580df
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 18161e8293ae92420f9437dab18e008e8e57b93a
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183645"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816606"
 ---
 # <a name="what-is-mobile-threat-defense-integration-with-intune"></a>¿Qué es la integración de Mobile Threat Defense con Intune?
 

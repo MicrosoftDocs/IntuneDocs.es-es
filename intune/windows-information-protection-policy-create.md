@@ -1,6 +1,5 @@
 ---
-title: Creación e implementación de una directiva de protección de aplicaciones de Windows Information Protection (WIP)
-titlesuffix: Microsoft Intune
+title: Creación e implementación de una directiva de protección de aplicaciones de Windows Information Protection (WIP) | Microsoft Intune
 description: Creación e implementación de una directiva de protección de aplicaciones de Windows Information Protection (WIP) con Microsoft Intune
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b5599e98b9712d30979c327167b19b159d3ff5dc
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 57d0aaebd0ed07a78b32eec64a6dc2817bf5e7f5
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181339"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817320"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Creación e implementación de una directiva de protección de aplicaciones de Windows Information Protection (WIP) con Intune
 
@@ -35,13 +34,13 @@ Antes de agregar una directiva de trabajo en curso, debe tener claros algunos co
 
 ### <a name="list-of-allowed-and-exempt-apps"></a>Lista de aplicaciones permitidas y exentas
 
--   **Aplicaciones protegidas**: estas son las aplicaciones que deben cumplir esta directiva.
+-   **Aplicaciones protegidas:** estas son las aplicaciones que deben cumplir esta directiva.
 
--   **Aplicaciones exentas**: estas aplicaciones están exentas del cumplimiento de esta directiva y pueden acceder a los datos corporativos sin restricciones.
+-   **Aplicaciones exentas:** estas aplicaciones están exentas del cumplimiento de esta directiva y pueden acceder a los datos corporativos sin restricciones.
 
 ### <a name="types-of-apps"></a>Tipos de aplicaciones
 
--   **Aplicaciones recomendadas**: lista rellenada previamente de aplicaciones (en su mayoría de Microsoft Office) que permite una importación sencilla en la directiva.
+-   **Aplicaciones recomendadas:** lista rellenada previamente de aplicaciones (en su mayoría de Microsoft Office) que permiten una importación sencilla en la directiva.
 -   **Aplicaciones de la Tienda**: puede agregar cualquier aplicación de la Tienda Windows a la directiva.
 -   **Aplicaciones de escritorio de Windows**: puede agregar cualquier aplicación de escritorio tradicional de Windows a la directiva (por ejemplo, .exe, .dll, etc.).
 
@@ -76,7 +75,7 @@ Una vez configurado Intune en su organización, puede crear una directiva espec�
 5. Seleccione **Agregar directiva** para que se muestre la hoja **Agregar directiva**.
 6. Agregue los siguientes valores:
     - **Nombre:** escriba un nombre (necesario) para la nueva directiva.
-    - **Descripción** (opcional): escriba una descripción.
+    - **Descripción:** (opcional) escriba una descripción.
     - **Plataforma:** elija **Windows 10** como plataforma admitida para la directiva de protección de aplicaciones.
     - **Estado de inscripción:** elija **Sin inscripción** como estado de inscripción para la directiva.
 7.  Elija **Crear**. La directiva se crea y aparece en la tabla de la hoja **Directivas de protección de aplicaciones**.
@@ -149,7 +148,7 @@ Una vez desactivado WIP, se realiza un intento de descifrar los archivos etiquet
 
 1.  En la hoja **Directiva de aplicaciones**, seleccione el nombre de la directiva y elija **Valores obligatorios**.
 
-    ![Captura de pantalla del modo de aprendizaje](./media/learning-mode-sc1.png)
+    ![Captura de pantalla del panel de modo de aprendizaje](./media/learning-mode-sc1.png)
 
 1.  Seleccione un valor y elija **Guardar**.
 

@@ -1,12 +1,11 @@
 ---
-title: Agregar y asignar aplicaciones MTD a Microsoft Intune
-titleSuffix: ''
+title: Agregar y asignar aplicaciones MTD a Microsoft Intune | Microsoft Intune
 description: Use Intune para agregar aplicaciones de Mobile Threat Defense (MTD), la aplicación de Microsoft Authenticator y la directiva de configuración de iOS en Azure Portal.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 01/02/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,19 +15,19 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: afc5028e4ed57757832844637298caf1656d610c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d08a7332ba96f552b488ad3f5d00004d0445d7ec
+ms.sourcegitcommit: 6058c611d5a54076121af1d327a43ad861a43f8a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181180"
+ms.lasthandoff: 01/03/2019
+ms.locfileid: "53996004"
 ---
 # <a name="add-and-assign-mobile-threat-defense-mtd-apps-with-intune"></a>Agregar y asignar aplicaciones de Mobile Threat Defense (MTD) con Intune
 
 > [!NOTE] 
 > La información de este tema se aplica a todos los asociados de Mobile Threat Defense.
 
-Puede usar Intune para agregar e implementar las aplicaciones de MTD para que los usuarios finales puedan recibir notificaciones al identificar una amenaza en sus dispositivos móviles y para recibir orientación con el objetivo de solucionarlas.
+Puede usar Intune para agregar e implementar las aplicaciones de Mobile Threat Defense (MTD) para que los usuarios finales puedan recibir notificaciones al identificar una amenaza en sus dispositivos móviles y para recibir orientación con el objetivo de solucionarlas.
 
 
 ## <a name="before-you-begin"></a>Antes de comenzar
@@ -38,13 +37,12 @@ Los pasos que se indican a continuación deben completarse en [Azure Portal](htt
   -   [Agregar una aplicación en Intune](apps-add.md)
   -   [Descargar una directiva de configuración de aplicación de iOS en Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune)
   -   [Asignar una aplicación con Intune](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune).
-  -   [Agregar una directiva de configuración de aplicaciones iOS](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
 
 > [!TIP]
-> El portal de empresa de Intune funciona como el agente de los dispositivos Android, de manera que los usuarios puedan comprobar sus identidades con Azure AD.
+> El Portal de empresa de Intune funciona como el agente de los dispositivos Android, de manera que los usuarios puedan comprobar sus identidades con Azure AD.
 
 ## <a name="configure-microsoft-authenticator-for-ios"></a>Configuración de Microsoft Authenticator para iOS
-Para los dispositivos iOS, necesita [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) de manera que los usuarios puedan comprobar sus identidades con Azure AD. Además, necesita la directiva de configuración de aplicaciones para iOS que indica la aplicación iOS de MTD para usarla con Intune.
+Para los dispositivos iOS, necesita [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) de manera que los usuarios puedan comprobar sus identidades con Azure AD. Además, necesita una directiva de configuración de aplicaciones para iOS que establezca la aplicación iOS de MTD para usarla con Intune.
 
 Vea las instrucciones para [agregar aplicaciones de la tienda iOS en Microsoft Intune](store-apps-ios.md). Use esta [dirección URL de la tienda de aplicaciones de Microsoft Authenticator](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8) en el **paso 12** en la sección **Configuración de información de la aplicación**.
 
@@ -145,7 +143,7 @@ Elija la sección que corresponda, según su proveedor MTD:
 
 ### <a name="lookout-for-work-app-configuration-policy"></a>Directiva de configuración de aplicaciones Lookout for Work
 
-- Cree la directiva de configuración de aplicaciones para iOS como se describe en el tema [Usar la directiva de configuración de aplicaciones para iOS](app-configuration-policies-use-ios.md).
+- Cree la directiva de configuración de aplicaciones para iOS como se describe en el artículo [Usar la directiva de configuración de aplicaciones para iOS](app-configuration-policies-use-ios.md).
 
 ### <a name="sep-mobile-app-configuration-policy"></a>Directiva de configuración de aplicaciones de SEP Mobile
 

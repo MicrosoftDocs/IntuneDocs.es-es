@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 765fae6f0e860935f5ceccadfdf1d9c3fe45d60e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: c0603b3cfd2b8fbe1d26e782118fb07526849cfa
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181911"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53816847"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Supervisión de las directivas de protección de aplicaciones
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -48,15 +48,15 @@ Hay tres lugares diferentes para supervisar el estado de cumplimiento:
 
 ![Mosaico de resumen en el panel de administración de aplicaciones móviles de Intune](./media/app-protection-user-status-summary.png)
 
--   **Usuarios**: el número total de usuarios en su empresa que está usando una aplicación que está asociada con una directiva en un contexto de trabajo.
+-   **Usuarios**: número total de usuarios en su empresa que usa una aplicación que está asociada con una directiva en un contexto de trabajo.
 
--   **ADMINISTRADO POR UNA DIRECTIVA**: el número de usuarios que ha usado una aplicación que tiene una directiva asignada a ellos en un contexto de trabajo.
+-   **ADMINISTRADO POR UNA DIRECTIVA**: número de usuarios que ha usado una aplicación que tiene una directiva asignada a ellos en un contexto de trabajo.
 
--   **SIN DIRECTIVA**: el número de usuarios que está usando una aplicación que no tiene como destino ninguna directiva en un contexto de trabajo. Considere la posibilidad de agregar estos usuarios a la directiva.
+-   **SIN DIRECTIVA**: número de usuarios que está usando una aplicación a la que no va dirigida ninguna directiva en un contexto de trabajo. Considere la posibilidad de agregar estos usuarios a la directiva.
     > [!NOTE]
     > Si tiene varias directivas por plataforma, se considerará que un usuario está administrado por una directiva cuando tenga al menos una directiva asignada.
 
-- **Usuarios marcados:** número de usuarios que experimentan problemas. Actualmente, solo los usuarios con dispositivos descodificados aparecen como **Usuarios marcados**.
+- **Usuarios marcados**: número de usuarios que experimentan problemas. Actualmente, solo los usuarios con dispositivos descodificados aparecen como **Usuarios marcados**.
 
 
 ## <a name="detailed-view"></a>Vista detallada
@@ -70,9 +70,9 @@ Puede buscar un solo usuario y examinar su estado de cumplimiento. En el panel *
 
 - Estado:
 
-  - **Protegido:** significa que la directiva se implementó para el usuario y que la aplicación se usó al menos una vez en el contexto de trabajo.
+  - **Protegido**: significa que la directiva se implementó para el usuario y que la aplicación se usó al menos una vez en el contexto de trabajo.
 
-  - **No protegido:** significa que la directiva se implementó para el usuario, pero la aplicación no se ha usado desde entonces en el contexto de trabajo.
+  - **No protegido**: significa que la directiva se implementó para el usuario, pero la aplicación no se ha usado desde entonces en el contexto de trabajo.
 
 >[!NOTE]
 > Si el usuario que ha buscado no tiene la directiva de MAM implementada, aparecerá un mensaje informándole de que el usuario no es objeto de ninguna directiva de MAM.
@@ -81,11 +81,11 @@ Para ver los informes sobre un usuario, siga estos pasos:
 
 1.  Para seleccionar un usuario, elija el icono **Resumen**.
 
-    ![Captura de pantalla en la que se resalta el mosaico Resumen en la hoja Configuración de Administración de aplicaciones móviles de Intune](./media/MAM-reporting-6.png)
+    ![Captura de pantalla del mosaico Resumen en la Administración de aplicaciones móviles de Intune](./media/MAM-reporting-6.png)
 
 2. En el panel **Informes de aplicaciones** que se abre, elija **Seleccionar usuario** para buscar un usuario de Azure Active Directory.
 
-    ![Captura de pantalla en la que se resalta la opción Seleccionar usuario en el panel Informes de aplicaciones](./media/MAM-reporting-2.png)
+    ![Captura de pantalla de la opción Seleccionar usuario en el panel Informes de aplicaciones](./media/MAM-reporting-2.png)
 
 3. Seleccione el usuario de la lista. Podrá ver los detalles del estado de cumplimiento de ese usuario.
 
@@ -98,7 +98,7 @@ Puede encontrar los mismos informes en la vista detallada e informes adicionales
 
 ![Captura de pantalla en la que se resaltan dos informes disponibles en el panel Configuración](./media/MAM-reporting-7.png)
 
--   **Informe de usuario de protección de aplicaciones:** describe la misma información que puede encontrar en el informe **Estado usuario** en la sección de vista detallada anterior.
+-   **Informe de usuarios de protección de aplicaciones:** describe la misma información que puede encontrar en el informe **Estado usuario** en la sección de vista detallada anterior.
 
 -   **Informe de aplicación de protección de aplicaciones:** ofrece dos estados de protección de aplicaciones diferentes que los administradores pueden seleccionar antes de generar el informe. Los estados pueden estar protegidos o desprotegidos.
 
@@ -112,7 +112,7 @@ Puede encontrar los mismos informes en la vista detallada e informes adicionales
 
         -   Todas las aplicaciones están registradas, pero no reciben ninguna directiva MAM.
 
-![Captura de pantalla en la que se muestra la hoja Informes de aplicaciones de un usuario con una tabla de detalles para tres aplicaciones registradas](./media/MAM-reporting-4.png)
+![Captura de pantalla de la hoja Informes de aplicaciones de un usuario con detalles de 3 aplicaciones](./media/MAM-reporting-4.png)
 
 ## <a name="table-grouping"></a>Agrupación de tablas
 
@@ -129,13 +129,13 @@ Siga estos pasos para generar el informe de protección de aplicaciones:
 
 1. En el panel Administración de aplicaciones móviles de Intune, elija **Informe de protección de la aplicación**.
 
-    ![Captura de pantalla en la que se resalta el vínculo de descarga Informe de protección de la aplicación en el panel Administración de aplicaciones móviles de Intune](./media/app-protection-report-csv-2.png)
+    ![Captura de pantalla del vínculo de descarga de Protección de aplicaciones](./media/app-protection-report-csv-2.png)
 
 2. Elija Sí para guardar el informe, elija Guardar como y seleccione la carpeta en la que quiere guardar el informe.
 
     ![Captura de pantalla del cuadro de diálogo de confirmación de Guardar informe](./media/app-protection-report-csv-1.png)
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 [Administrar la transferencia de datos entre aplicaciones iOS](data-transfer-between-apps-manage-ios.md)
 
 * [What to expect when your Android app is managed by app protection policies](app-protection-enabled-apps-android.md) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)

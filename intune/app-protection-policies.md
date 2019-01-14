@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11//28/2018
+ms.date: 11/28/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2a5b16e828b1a2e680f41f50aa603b1bfe2ad9fa
-ms.sourcegitcommit: ecd6aebe50b1440a282dfdda771e37fbb8750d42
+ms.openlocfilehash: 35fd4650d5508995f879f4d83030f70fe9c550b8
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/01/2018
-ms.locfileid: "52728827"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817371"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>Creación y asignación de directivas de protección de aplicaciones
 
@@ -72,11 +72,11 @@ Las directivas creadas no se implementan para los usuarios hasta que no se haga 
 
 2. En el panel ***Intune App Protection**, seleccione **Asignaciones** para abrir el panel **Intune App Protection: Asignaciones**. En la pestaña *Incluir*, seleccione **Seleccionar grupos para incluir**. 
 
-   ![Captura de pantalla del panel Asignaciones con la opción Seleccionar grupos para incluir resaltada](./media/app-protection-policy-add-users.png)
+   ![Captura de pantalla del panel Asignaciones con el menú Seleccionar grupos para incluir](./media/app-protection-policy-add-users.png)
 
 3.  Se muestra una lista de todos los grupos de seguridad en su entorno de **Azure Active Directory**. Seleccione los grupos de usuarios a los que quiera aplicar esta directiva y, después, elija **Seleccionar**. 
 
-    ![Captura de pantalla del panel Add user group (Agregar grupo de usuarios) que muestra la lista de usuarios de Azure Active Directory](./media/azure-ad-user-group-list.png)
+    ![Captura de pantalla del panel Agregar grupo de usuarios con la lista de usuarios de Azure AD](./media/azure-ad-user-group-list.png)
 
 4.  Después de incluir y excluir grupos, seleccione **Guardar** para guardar la configuración e implementar la directiva en los usuarios. Si seleccione **Descartar** antes de guardar la configuración, se descartarán todos los cambios realizados en las pestañas *Incluir* y *Excluir*.   
  
@@ -138,7 +138,7 @@ Dado que las directivas de protección de aplicaciones de Intune están destinad
 
 Para crear estas directivas, vaya a **Aplicaciones cliente** > **Directivas de protección de aplicaciones** en la consola de Intune y haga clic en **Crear directiva**. También puede editar una directiva de protección de aplicaciones existente. Para que la directiva de protección de aplicaciones se aplique a los dispositivos administrados y a los no administrados, confirme que la opción **Destinar a todos los tipos de aplicaciones** esté establecida en **Sí**, que es el valor predeterminado. Si quiere efectuar una asignación granular según el estado de administración, establezca **Destinar a todos los tipos de aplicaciones** en **No**. 
 
-![Captura de pantalla de la hoja Agregar una directiva con la opción Destinar a todos los tipos de aplicaciones seleccionada](./media/app-protection-policies-target-all.png)
+![Captura de pantalla de la hoja Agregar una directiva con la opción Destinar a todos los tipos de aplicaciones](./media/app-protection-policies-target-all.png)
 
 Para iOS, se requieren ajustes adicionales de configuración de la aplicación para dirigir la configuración de la aplicación a las aplicaciones en dispositivos inscritos en Intune:
 - **IntuneMAMUPN** debe configurarse para todas las aplicaciones administradas de MDM. Para más información, vea [Administración de transferencias de datos entre aplicaciones iOS en Microsoft Intune](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
@@ -157,6 +157,6 @@ Para ver una lista completa de las configuraciones de directivas para iOS y Andr
 ## <a name="next-steps"></a>Pasos siguientes
 [Supervisar el estado del cumplimiento y del usuario](app-protection-policies-monitor.md)
 
-### <a name="see-also"></a>Vea también
+### <a name="see-also"></a>Consulte también
 * [What to expect when your Android app is managed by app protection policies](app-protection-enabled-apps-android.md) (Qué esperar cuando la aplicación Android se administra con directivas de protección de aplicaciones)
 * [What to expect when your iOS app is managed by app protection policies](app-protection-enabled-apps-ios.md) (Qué esperar cuando la aplicación iOS se administra con directivas de protección de aplicaciones)

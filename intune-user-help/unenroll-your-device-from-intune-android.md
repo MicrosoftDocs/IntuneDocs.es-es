@@ -1,11 +1,11 @@
 ---
 title: Cómo quitar un dispositivo Android de Intune | Microsoft Docs
-description: Describe cómo anular la inscripción de un dispositivo Android de Intune.
+description: Quitar un dispositivo Android del Portal de empresa de Intune
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 01/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: d932005c955afed7f16e9766b559b77b2cd43182
-ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
+ms.openlocfilehash: 75b26e178badbaa7905199eb91490134d2b72ba9
+ms.sourcegitcommit: 61ed365f7f8826451c41bcab5e19bef97b5a3c72
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49959492"
+ms.lasthandoff: 01/05/2019
+ms.locfileid: "54057345"
 ---
 # <a name="unenroll-your-android-device-from-management"></a>Anular la inscripción del dispositivo Android de la administración  
 
@@ -51,8 +51,23 @@ Para quitar todos los datos que la aplicación Portal de empresa para Android al
 -   Elimine la carpeta "\storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal".
 
 ## <a name="uninstall-the-company-portal-app"></a>Desinstalación de la aplicación Portal de empresa  
-El Portal de empresa es una aplicación de administración de dispositivos, por lo que no se puede desinstalar mientras no se [anule la inscripción del dispositivo de la administración](unenroll-your-device-from-intune-android.md#unenroll-your-android-device-from-management). Una vez hecho esto, mantenga pulsado el icono de la aplicación Portal de empresa hasta que vea **Desinstalar**. Pulse **Desinstalar** para quitar la aplicación del dispositivo.  
+Portal de empresa es una aplicación de administración de dispositivos. No se puede desinstalar mientras no se [anule la inscripción del dispositivo de la administración](unenroll-your-device-from-intune-android.md#unenroll-your-android-device-from-management). Una vez hecho esto, mantenga pulsado el icono de la aplicación Portal de empresa hasta que vea **Desinstalar**. Pulse **Desinstalar** para quitar la aplicación del dispositivo.  
 
 También puede pulsar **Configuración** > **Aplicaciones** > **Portal de empresa** > **Desinstalar**.  
+
+### <a name="remove-company-portal-app-as-device-administrator"></a>Quitar la aplicación Portal de empresa como administrador de dispositivos  
+Como último recurso, puede desinstalar la aplicación del dispositivo usando para ello el rol de administrador del dispositivo.  
+
+Si tiene un dispositivo propiedad de su empresa, su organización puede requerir que el Portal de empresa esté instalado en el dispositivo en todo momento. Si lo desinstala, podría perder acceso a los recursos protegidos de la compañía, como correo electrónico, aplicaciones, Wi-Fi o VPN, hasta que se vuelve a instalar la aplicación. Para obtener más información sobre la instalación, la actualización o la eliminación de las aplicaciones necesarias, vea [Agregar aplicaciones a Microsoft Intune](https://docs.microsoft.com/intune/apps-add#apps-that-are-added-automatically-by-intune).  
+
+Complete los pasos siguientes para deshabilitar el Portal de empresa como administrador del dispositivo. Los nombres reales de cada configuración pueden variar en su dispositivo Android.  
+
+**Pasos de Android, opción 1**:  
+1. Seleccione **Configuración** > **Seguridad** > **Configuración de seguridad adicional** > **Administradores de dispositivos** .  
+2. Desactive la opción **Portal de empresa**.  
+
+**Pasos de Android, opción 2**:  
+1. Seleccione **Configuración** > **Pantalla de bloqueo y seguridad** > **Otras configuraciones de seguridad** > **Aplicaciones de administración de dispositivos**.  
+2. Desactive la opción **Portal de empresa**.    
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para obtener información de contacto, vaya al [sitio web del Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

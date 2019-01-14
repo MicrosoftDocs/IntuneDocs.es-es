@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 785f4d1d81858fe5d4ebe4feab72880b408d8cd3
-ms.sourcegitcommit: 0499d16db961aaed4bd134ee924e40c5861121c7
+ms.openlocfilehash: 49ecdebc2777112ce8c8c97af1f98b3c12b200e1
+ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/27/2018
-ms.locfileid: "52389876"
+ms.lasthandoff: 01/04/2019
+ms.locfileid: "54006291"
 ---
 # <a name="what-are-app-protection-policies"></a>¿Qué son las directivas de protección de aplicaciones?
 
@@ -37,14 +37,14 @@ Puede usar directivas de protección de aplicaciones de Intune **independienteme
 
 Se pueden configurar directivas de protección de aplicaciones para aplicaciones que se ejecutan en dispositivos:
 
-- **Inscritos en Microsoft Intune:** estos dispositivos son normalmente dispositivos corporativos.
+- **Inscritos en Microsoft Intune:** estos dispositivos suelen ser propiedad de la empresa.
 
-- **Inscritos en una solución de administración de dispositivos móviles (MDM) de otro fabricante:** estos dispositivos son normalmente dispositivos corporativos.
+- **Inscritos en una solución de administración de dispositivos móviles (MDM) de terceros:** estos dispositivos suelen ser propiedad de la empresa.
 
   > [!NOTE]
   > Las directivas de administración de la aplicaciones móviles no deben usarse con soluciones de contenedor seguro ni de administración de aplicaciones móviles de terceros.
 
-- **No inscritos en ninguna solución de administración de dispositivos móviles:** estos dispositivos normalmente son de empleados no administrados ni inscritos en Intune ni en ninguna otra solución MDM.
+- **No inscritos en ninguna solución de administración de dispositivos móviles:** los dispositivos normalmente son dispositivos de empleados que no están administrados ni inscritos en Intune ni en ninguna otra solución MDM.
 
 > [!IMPORTANT]
 > Puede crear directivas de administración de aplicaciones móviles para aplicaciones móviles de Office que se conectan a servicios de Office 365. También puede proteger el acceso a los buzones locales de Exchange mediante la creación de directivas de protección de aplicaciones de Intune para Outlook para iOS y Android habilitadas con autenticación moderna híbrida. Antes de usar esta característica, asegúrese de cumplir los [requisitos de Outlook para iOS y Android](https://technet.microsoft.com/library/mt846639(v=exchg.160).aspx). Las directivas de protección de aplicaciones no son compatibles con otras aplicaciones que se conectan a los servicios de Exchange o SharePoint locales.
@@ -75,14 +75,14 @@ Los dispositivos Windows no son compatibles actualmente. Sin embargo, puede usar
 
 #### <a name="apps-without-app-protection-policies"></a>Aplicaciones sin directivas de protección de aplicaciones
 
-![Imagen que muestra que los datos se pueden mover libremente entre aplicaciones cuando no hay ninguna directiva de protección de aplicaciones establecida.](./media/apps-without-protection-policies.png)
+![Imagen conceptual de movimiento de datos entre aplicaciones sin ninguna directiva en vigor](./media/apps-without-protection-policies.png)
 
 Cuando se usan aplicaciones sin restricciones, se pueden entremezclar los datos empresariales y personales. Los datos de la compañía pueden acabar en ubicaciones como el almacenamiento personal o transferirse a aplicaciones fuera de su ámbito y provocar una pérdida de datos. Las flechas del diagrama anterior muestran el movimiento sin restricciones de los datos entre aplicaciones (personales y corporativas) y hacia ubicaciones de almacenamiento.
 
 
 ### <a name="data-protection-with-app-protection-policies"></a>Protección de datos con directivas de protección de aplicaciones
 
-![Imagen que muestra cómo se protegen los datos de la empresa cuando se aplican directivas de protección de aplicaciones ](./media/apps-with-protection-policies.png)
+![Imagen conceptual que muestra la datos de la compañía protegidos por directivas](./media/apps-with-protection-policies.png)
 
 
 Puede usar directivas de protección de aplicaciones para evitar que los datos de empresa se guarden en el almacenamiento local del dispositivo. También puede restringir el movimiento de datos a otras aplicaciones que no estén protegidas por directivas de protección. La configuración de directivas de protección de aplicaciones incluyen:
@@ -156,5 +156,5 @@ Como ejemplo de contexto de trabajo, piense en un usuario que inicia la aplicaci
 
 [Creación e implementación de directivas de protección de aplicaciones con Microsoft Intune](app-protection-policies.md)
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 Las aplicaciones de terceros, como la aplicación móvil de Salesforce, funcionan con Intune de formas específicas para proteger los datos corporativos. Para más información sobre cómo la aplicación de Salesforce funciona con Intune en particular (incluida la configuración de la aplicación de MDM), vea [Salesforce App and Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf) (Aplicación de Salesforce y Microsoft Intune).

@@ -1,5 +1,5 @@
 ---
-title: Creación de una directiva de acceso condicional de Exchange
+title: Creación de una directiva de acceso condicional de Exchange | Microsoft Intune
 titlesuffix: Microsoft Intune
 description: Configure el acceso condicional en Exchange local y en el entorno de Exchange Online heredado dedicado en Intune.
 keywords: ''
@@ -15,12 +15,12 @@ ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0a539000153ad45b5256e4e63086fa72fee44947
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: ed996ec17ab0c8144286eeed0a87f07b35da2969
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186110"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817065"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>Cree una directiva de acceso condicional para Exchange local y en el entorno de Exchange Online dedicado heredado
 
@@ -64,7 +64,7 @@ Antes de configurar el acceso condicional, compruebe lo siguiente:
 - Windows Phone 8.1 y versiones posteriores
 - Aplicación de correo electrónico nativo de iOS.
 - Clientes de correo EAS como Gmail en Android 4 o versiones posteriores
-- **Dispositivos con perfil de trabajo Android** de clientes de correo EAS: solo se admiten las aplicaciones **Gmail** y **Nine Work for Android Enterprise** en el **perfil de trabajo** en los dispositivos de perfil de trabajo Android. Para que el acceso condicional funcione con perfiles de trabajo Android, debe implementar un perfil de correo electrónico para la aplicación Gmail o Nine Work for Android Enterprise, y también implementar esas aplicaciones como una instalación necesaria.
+- **Dispositivos del perfil de trabajo Android** de clientes de correo EAS: solo se admiten las aplicaciones **Gmail** y **Nine Work for Android Enterprise** en el **perfil de trabajo** en los dispositivos de perfil de trabajo Android. Para que el acceso condicional funcione con perfiles de trabajo Android, debe implementar un perfil de correo electrónico para la aplicación Gmail o Nine Work for Android Enterprise, y también implementar esas aplicaciones como una instalación necesaria.
 
 > [!NOTE]
 > No se admite Microsoft Outlook para iOS y Android a través del conector local de Exchange. Si desea aprovechar las directivas de acceso condicional de Azure Active Directory y las directivas de Intune App Protection con Outlook para iOS y Android en los buzones locales, vea la página sobre [uso de autenticación moderna híbrida con Outlook para iOS y Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth). 
@@ -125,6 +125,6 @@ A partir de la versión 1704 de Intune, los administradores pueden crear directi
 
 2. En el panel **Directivas**, elija **Nueva directiva** para crear la directiva de acceso condicional de Azure AD.
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 
 [Acceso condicional en Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access)

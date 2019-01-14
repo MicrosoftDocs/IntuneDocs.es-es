@@ -1,6 +1,5 @@
 ---
-title: Configuración de la integración de Symantec con Microsoft Intune
-titlesuffix: ''
+title: Configuración de la integración de Symantec con Microsoft Intune | Microsoft Intune
 description: Configuración de la solución Symantec Endpoint Protection Mobile con Microsoft Intune para controlar el acceso de los dispositivos móviles a los recursos corporativos.
 keywords: ''
 author: brenduns
@@ -16,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: accd8dea2b997a6eb1cfec22a6e822e984ef710d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 4b519c30f432a6d8584c2bd5bca94ead95a862b1
+ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180160"
+ms.lasthandoff: 01/02/2019
+ms.locfileid: "53817354"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>Configuración de la integración de Symantec Endpoint Protection Mobile con Intune
 
@@ -68,7 +67,7 @@ SEP Mobile admite dos modos de integración con Intune:
 
 4.  Junto a **iOS App** (Aplicación iOS), elija **Add to Active Directory** (Agregar a Active Directory).
 
-    ![Imagen de la aplicación de iOS en [consola de administración de Symantec Endpoint Protection Mobile]](./media/symantec-portal-basic-add.png)
+    ![Imagen de la consola de administración de Symantec Endpoint Protection Mobile](./media/symantec-portal-basic-add.png)
 
 5.  Cuando se abra la página de inicio de sesión, escriba sus credenciales de Intune y, a continuación, elija **Accept** (Aceptar).
 
@@ -90,7 +89,7 @@ Debe agregar un grupo de seguridad de Azure AD que contenga todos los dispositiv
 
 SEP Mobile sincroniza los dispositivos que ejecutan su servicio Mobile Threat Defense con los grupos de seguridad de Azure AD.
 
-![Imagen en la que se muestra la configuración del grupo de seguridad completada en la consola de administración de SEP Mobile](./media/symantec-portal-basic-status.png)
+![Imagen de la configuración del grupo de seguridad en la consola de administración de SEP Mobile](./media/symantec-portal-basic-status.png)
 
 ## <a name="to-set-up-the-full-integration-between-intune-and-sep-mobile"></a>Configuración de la integración completa entre Intune y SEP Mobile
 
