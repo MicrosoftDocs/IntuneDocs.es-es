@@ -3,8 +3,8 @@ title: Configuración de directivas de protección de aplicaciones Android | Mic
 titlesuffix: Microsoft Intune
 description: En este tema, se describe la configuración de directivas de protección de aplicaciones para dispositivos Android.
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 12/10/2018
 ms.topic: article
@@ -16,12 +16,12 @@ ms.reviewer: andcerat
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8505560527a8ea1b5d75eef5f7c3423d6a2d6a7d
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: 93c1165b8f385d82219be0882a66d601562385df
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53817405"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297458"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Configuración de directivas de protección de aplicaciones Android en Microsoft Intune
 En este artículo se describe la configuración de directivas de protección de aplicaciones para dispositivos Android. La configuración de directivas que se describe puede [realizarse](app-protection-policies.md) para una directiva de protección de aplicaciones en la hoja **Configuración** de Azure Portal.

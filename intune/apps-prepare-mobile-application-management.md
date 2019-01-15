@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 84b36f6cae9dd16bde6bd380407a78aeb2478010
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: 742b4892c4dbe9ee2dfa2bb03eebb2667803c6bf
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112432"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210761"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicaciones de línea de negocio para las directivas de protección de aplicaciones
 
@@ -98,7 +98,7 @@ En la siguiente tabla se enumeran los valores que puede usarse para el SDK para 
 |Bloquear captura de pantalla (solo Android)|X|X|
 |Compatibilidad con MAM sin la inscripción de dispositivos|X|X|
 |Eliminación completa|X|X|
-|Eliminación selectiva <br></br>**Nota:** Para iOS, cuando se quita el perfil de administración, también se quita la aplicación.|X||
+|Eliminación selectiva <br><br>**Nota:** Para iOS, cuando se quita el perfil de administración, también se quita la aplicación.|X||
 |Impedir "Guardar como"|X||
 |Configuración de aplicaciones de destino|X||
 |Compatibilidad con aplicaciones de identidades múltiples|X||
@@ -115,6 +115,6 @@ En la siguiente tabla se enumeran los valores que puede usarse para el SDK para 
 
 Para obtener más información sobre las directivas de protección de aplicaciones y Intune, consulte los temas siguientes:
 
-  - [Herramienta de ajuste de aplicaciones para Android](app-wrapper-prepare-android.md)</br>
-  - [Herramienta de ajuste de aplicaciones para iOS](app-wrapper-prepare-ios.md)</br>
+  - [Herramienta de ajuste de aplicaciones para Android](app-wrapper-prepare-android.md)<br>
+  - [Herramienta de ajuste de aplicaciones para iOS](app-wrapper-prepare-ios.md)<br>
   - [Usar el SDK para habilitar aplicaciones para la administración de aplicaciones móviles)](app-sdk.md)
