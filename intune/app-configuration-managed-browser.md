@@ -176,7 +176,7 @@ Para más información sobre cómo usar Managed Browser, Microsoft Edge y Azure 
 ## <a name="how-to-configure-the-homepage-for-a-protected-browser"></a>Configuración de la página principal del explorador protegido
 
 Este valor permite configurar la página principal que ven los usuarios cuando inician un explorador protegido o crean una pestaña nueva. 
-- Esta configuración mostrará la página web en Managed Browser.  En su lugar, Edge mostrará un acceso directo a la página principal.
+- Esta configuración mostrará la página web en Managed Browser.  En su lugar, Microsoft Edge mostrará un acceso directo a la página principal.
 - El icono del acceso directo a la página principal aparece como debajo del control de búsqueda.  No se puede editar ni eliminar.
 - El acceso directo a la página principal mostrará el nombre de la organización para distinguirla.  Siempre aparecerá como el primer icono.
 
