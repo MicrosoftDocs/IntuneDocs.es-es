@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 1/17/2018
+ms.date: 1/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 305799fa21ae7c3464caf8f7019dcf9e8170d3ac
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 32281ae37b7b36dfbf49503275a8a1e6c35d8f6d
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181486"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210795"
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Problemas comunes y resoluciones con perfiles de dispositivo en Microsoft Intune
 
@@ -48,17 +48,17 @@ Cuando se asigna una directiva o aplicación, Intune empieza inmediatamente a no
 
 Si un dispositivo no se conecta para recibir la directiva una vez enviada la primera notificación, Intune hace tres intentos más. Si el dispositivo está sin conexión (por ejemplo, está apagado o no está conectado a una red), puede que no reciba las notificaciones. En ese caso, el dispositivo obtiene la directiva en la próxima conexión programada con el servicio Intune, como se indica a continuación:
 
-- iOS y macOS: cada seis horas
-- Android: cada ocho horas
-- Windows Phone: cada ocho horas
-- Equipos con Windows 8.1 y Windows 10 inscritos como dispositivos: cada ocho horas
+- iOS y macOS: cada seis horas.
+- Android: cada ocho horas.
+- Windows Phone: cada ocho horas.
+- Equipos Windows 8.1 y Windows 10 inscritos como dispositivos: cada ocho horas.
 
 Si el dispositivo se ha inscrito recientemente, la frecuencia de conexión es más frecuente, como se indica a continuación:
 
-- iOS y macOS: cada 15 minutos durante seis horas y, después, cada seis horas
-- Android: cada tres minutos durante 15 minutos, luego cada 15 minutos durante dos horas y, después, cada ocho horas
-- Windows Phone: cada cinco minutos durante 15 minutos, luego cada 15 minutos durante dos horas y, después, cada ocho horas
-- Equipos con Windows inscritos como dispositivos: cada tres minutos durante 30 minutos y, después, cada ocho horas
+- iOS y macOS: cada 15 minutos durante seis horas y, después, cada seis horas.
+- Android: cada tres minutos durante 15 minutos, cada 15 minutos durante dos horas y, después, cada ocho horas.
+- Windows Phone: cada cinco minutos durante 15 minutos, cada 15 minutos durante dos horas y, después, cada ocho horas.
+- Equipos Windows inscritos como dispositivos: cada tres minutos durante 30 minutos y, después, cada ocho horas.
 
 Para buscar la directiva inmediatamente en cualquier momento, los usuarios pueden abrir la aplicación del Portal de empresa y sincronizar el dispositivo.
 
@@ -72,11 +72,11 @@ Otros cambios, como la revisión de la información de contacto del Portal de em
 ## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-gets-applied"></a>Si varias directivas se asignan al mismo usuario o dispositivo, ¿cómo puedo saber qué configuración se aplica?
 Si dos o más directivas se asignan al mismo usuario o dispositivo, la configuración que se aplica se produce a nivel individual del valor:
 
--   La configuración de directivas de cumplimiento siempre tiene prioridad respecto a la configuración de directivas de configuración
+- La configuración de directivas de cumplimiento siempre tiene prioridad respecto a la configuración de directivas de configuración
 
--   Si se evalúa una directiva de cumplimiento con el mismo valor en otra directiva de cumplimiento, se aplica el valor de directiva de cumplimiento más restrictivo.
+- Si se evalúa una directiva de cumplimiento con el mismo valor en otra directiva de cumplimiento, se aplica el valor de directiva de cumplimiento más restrictivo.
 
--   Si un valor de directiva de configuración entra en conflicto con un valor de otra directiva de configuración, este conflicto se muestra en Azure Portal. En este escenario, debe resolver estos conflictos de forma manual.
+- Si un valor de directiva de configuración entra en conflicto con un valor de otra directiva de configuración, este conflicto se muestra en Azure Portal. En este escenario, debe resolver estos conflictos de forma manual.
 
 ## <a name="what-happens-when-app-protection-policies-conflict-with-each-other-which-one-is-applied-to-the-app"></a>¿Qué sucede cuando las directivas de protección de aplicaciones entran en conflicto entre sí? ¿Cuál se aplica a la aplicación?
 Los valores en conflicto son la configuración más restrictiva disponible en una directiva de protección de aplicaciones, excepto para los campos de entrada de números (como intentos de PIN antes del restablecimiento). Los campos de entrada de números se definen con los mismos valores que si crease una directiva de MAM en la consola con la opción de configuración recomendada.
@@ -88,45 +88,48 @@ Si un perfil se asigna a la aplicación y se aplica, y después se asigna un seg
 ## <a name="what-happens-when-ios-custom-policies-conflict"></a>¿Qué sucede cuando hay un conflicto de directivas personalizadas de iOS?
 Intune no evalúa la carga de archivos de configuración de Apple ni perfiles personalizados de identificador uniforme de recursos de Open Mobile Alliance (OMA-URI). Sencillamente, se usa como mecanismo de entrega.
 
-Al asignar un perfil personalizado, asegúrese de que los valores configurados no entran en conflicto con las directivas de cumplimiento, de configuración o con directivas personalizadas de otro tipo. Si un perfil personalizado y su configuración entran en conflicto, la configuración se aplica de forma aleatoria.
+Al asignar un perfil personalizado, asegúrese de que los valores configurados no entran en conflicto con las directivas de cumplimiento, de configuración o con directivas personalizadas de otro tipo. Si un perfil personalizado y su configuración entran en conflicto, la configuración se aplicará de forma aleatoria.
 
 ## <a name="what-happens-when-a-profile-is-deleted-or-no-longer-applicable"></a>¿Qué ocurre cuando se elimina un perfil o deja de ser aplicable?
 Al eliminar un perfil o quitar un dispositivo de un grupo que tiene el perfil, se quitan el perfil y la configuración del dispositivo según las siguientes listas:
 
 - Perfiles de correo electrónico, certificado, VPN y Wi-Fi: estos perfiles se quitan de todos los dispositivos inscritos admitidos.
 - Todos los demás tipos de perfiles:  
-    - **Dispositivos Windows y Android**: la configuración no se quita del dispositivo.
-    - **Dispositivos Windows Phone 8.1**: se quitan las opciones siguientes:  
-        - Requerir una contraseña para desbloquear dispositivos móviles
-        - Permitir contraseñas sencillas
-        - Longitud mínima de la contraseña
-        - Tipo de contraseña obligatoria
-        - Expiración de contraseña (días)
-        - Recordar el historial de contraseñas
-        - Número de errores de inicio de sesión repetidos que se permiten antes de que se borre el dispositivo
-        - Minutos de inactividad antes de que se pida la contraseña
-        - Tipo de contraseña requerida: número mínimo de conjuntos de caracteres
-        - Permitir cámara
-        - Requerir cifrado en dispositivo móvil
-        - Permitir almacenamiento extraíble
-        - Permitir explorador web
-        - Permitir almacén de aplicaciones
-        - Permitir captura de pantalla
-        - Permitir geolocalización
-        - Permitir cuenta de Microsoft
-        - Permitir copiar y pegar
-        - Permitir Wi-Fi Tethering
-        - Permitir la conexión automática a zonas Wi-Fi gratuitas
-        - Permitir informar de zonas Wi-Fi
-        - Permitir borrado
-        - Permitir Bluetooth
-        - Permitir NFC
-        - Permitir Wi-Fi
 
-    - **iOS**: se quitan todas las configuraciones, excepto:
-        - Permitir itinerancia de voz
-        - Permitir itinerancia de datos
-        - Permitir la sincronización automática en itinerancia
+  - **Dispositivos Android y Windows**: la configuración no se quita del dispositivo.
+  - **Dispositivos Windows Phone 8.1**: Se quitan las siguientes configuraciones:  
+  
+    - Requerir una contraseña para desbloquear dispositivos móviles
+    - Permitir contraseñas sencillas
+    - Longitud mínima de la contraseña
+    - Tipo de contraseña obligatoria
+    - Expiración de contraseña (días)
+    - Recordar el historial de contraseñas
+    - Número de errores de inicio de sesión repetidos que se permiten antes de que se borre el dispositivo
+    - Minutos de inactividad antes de que se pida la contraseña
+    - Tipo de contraseña requerida: número mínimo de conjuntos de caracteres
+    - Permitir cámara
+    - Requerir cifrado en dispositivo móvil
+    - Permitir almacenamiento extraíble
+    - Permitir explorador web
+    - Permitir almacén de aplicaciones
+    - Permitir captura de pantalla
+    - Permitir geolocalización
+    - Permitir cuenta de Microsoft
+    - Permitir copiar y pegar
+    - Permitir Wi-Fi Tethering
+    - Permitir la conexión automática a zonas Wi-Fi gratuitas
+    - Permitir informar de zonas Wi-Fi
+    - Permitir borrado
+    - Permitir Bluetooth
+    - Permitir NFC
+    - Permitir Wi-Fi
+
+  - **iOS**: se quitan todas las opciones de configuración, excepto las siguientes:
+  
+    - Permitir itinerancia de voz
+    - Permitir itinerancia de datos
+    - Permitir la sincronización automática en itinerancia
 
 ## <a name="i-changed-a-device-restriction-profile-but-the-changes-havent-taken-effect"></a>He cambiado un perfil de restricción de dispositivos, pero los cambios no han surtido efecto
 Una vez establecidas las directivas de seguridad a través de MDM o EAS, los dispositivos Windows Phone no permiten que se reduzca el nivel de seguridad de estas. Por ejemplo, si establece una **contraseña con un número mínimo de 8 caracteres**, no podrá reducirla a 4. Esto se debe a que ya se ha aplicado el perfil más restrictivo en el dispositivo.
@@ -134,6 +137,14 @@ Una vez establecidas las directivas de seguridad a través de MDM o EAS, los dis
 Si quiere cambiar el perfil a un valor menos seguro, debe restablecer las directivas de seguridad. Por ejemplo, en el escritorio de Windows 8.1, deslice el dedo desde la derecha y seleccione **Configuración** > **Panel de control**. Seleccione el applet **Cuentas de usuario** . En el menú de navegación izquierdo, hay un vínculo denominado **Restablecer las directivas de seguridad** (hacia la parte inferior). Selecciónelo y, después, elija **Restablecer directivas**.
 
 En otros dispositivos MDM, como Android, Windows Phone 8.1 y versiones posteriores, iOS y Windows 10, es posible que tenga que eliminar la inscripción al servicio y volver a hacerla para poder aplicar un perfil menos restrictivo.
+
+## <a name="some-settings-in-a-windows-10-profile-return-not-applicable"></a>Algunas opciones de configuración de un perfil de Windows 10 devuelven "No aplicable"
+Algunas opciones de configuración de los dispositivos Windows 10 pueden mostrarse como "No aplicable". Esto indica que esa configuración concreta no se admite en la versión o edición de Windows que se esté ejecutando en el dispositivo. Este mensaje puede aparecer por las siguientes razones:
+
+- La configuración solo está disponible para versiones más recientes de Windows, pero no para la versión actual del sistema operativo (SO) del dispositivo.
+- La configuración solo está disponible para ediciones de Windows o SKU específicas, como Home, Professional, Enterprise o Education.
+
+Para obtener más información sobre los requisitos de versión y de SKU para las distintas opciones de configuración, vea [Configuration Service Provider (CSP) reference](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) (Referencia del proveedor de servicios de configuración).
 
 ## <a name="next-steps"></a>Pasos siguientes
 ¿Necesita más ayuda? Consulte [Cómo obtener asistencia para Microsoft Intune](get-support.md).

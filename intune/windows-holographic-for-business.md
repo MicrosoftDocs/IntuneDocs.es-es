@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 062adf12f743fdbbe42c1f29e91f2a16414ca457
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 721d3a26e25c14a2e4ccd20b179ae7d4611d3186
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032272"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203389"
 ---
 # <a name="manage-and-use-different-device-management-features-on-windows-holographic-and-hololens-devices-with-intune"></a>Administre y use diferentes características de administración de dispositivos en los dispositivos Windows Holographic y HoloLens con Intune
 
@@ -123,6 +123,11 @@ Las redes privadas virtuales (VPN) ofrecen a los usuarios un acceso remoto segur
 #### <a name="configure-wi-fiwi-fi-settings-configuremd"></a>[Configurar Wi-Fi](wi-fi-settings-configure.md)
 
 Además, puede crear un perfil de Wi-Fi en Intune para asignar la configuración de red inalámbrica a los dispositivos de Windows Holographic for Business. Cuando se asigna un perfil de Wi-Fi, los usuarios finales obtienen acceso de red corporativo sin ninguna configuración de red. Por ejemplo, puede crear una red Wi-Fi dedicada exclusivamente a los dispositivos de Windows Holographic for Business.
+
+## <a name="shared-multi-user-devices"></a>Dispositivos multiusuario compartidos
+[Dispositivos compartidos](shared-user-device-settings-windows-holographic.md)
+
+Los dispositivos que ejecutan Windows Holographic for Business, como Microsoft HoloLens, pueden tener varios usuarios. Intune incluye opciones de configuración para controlar distintas características en dichos dispositivos compartidos, como la administración de la energía, el uso del almacenamiento local y la administración de cuentas. Los perfiles de configuración también se pueden aplicar a dispositivos con distintos sistemas operativos. Por ejemplo, el grupo de dispositivos puede incluir dispositivos con RS2 y RS3 al mismo tiempo.
 
 ## <a name="software-updates"></a>Actualizaciones de software
 **[Administrar actualizaciones de software](windows-update-for-business-configure.md)**

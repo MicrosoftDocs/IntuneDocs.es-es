@@ -15,12 +15,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 03840b0a4a7ce3f4735e22a227f5d2856d532b11
-ms.sourcegitcommit: 02f75d241b3cbb125cb235d16d447f8855b1806d
+ms.openlocfilehash: e0bb198b078695b567756c6a7db832d00e7a8c5b
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53657787"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210846"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>Introducción al SDK para aplicaciones de Microsoft Intune
 
@@ -158,6 +158,8 @@ Cuando haya completado los pasos necesarios para integrar la aplicación iOS o A
     * Si es un ISV que quiere habilitar las aplicaciones de la tienda Android o iOS para la directiva de protección de aplicaciones de Intune, recibirá un código de promoción una vez completado el registro con Microsoft Intune, como se describe en el paso de registro. El código de promoción le permite registrarse para obtener una versión de prueba de un año de uso extendido de Microsoft Intune.
 
     * Si está desarrollando una línea de aplicaciones empresariales que no se enviarán a la tienda, se espera que tenga acceso a Microsoft Intune a través de la empresa. También puede registrarse en [Microsoft Intune](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0) para obtener la versión de prueba gratuita de un mes.
+    
+    * Si quiere probar la aplicación en un dispositivo móvil con una cuenta de usuario final, asegúrese de haber iniciado sesión con una cuenta de administrador y concedido a dicha cuenta una licencia de Intune en el sitio web del Portal de administración de Office. Puede obtener más información al respecto en [Asignar licencias a los usuarios para que puedan inscribir dispositivos en Intune](https://docs.microsoft.com/en-ca/intune/licenses-assign).
 
 * **Directivas de protección de aplicaciones de Intune**: para probar la aplicación con todas las directivas de protección de aplicaciones de Intune, debe saber que el comportamiento esperado es para cada configuración de directiva. Vea las descripciones para las [directivas de protección de aplicaciones iOS](app-protection-policy-settings-ios.md) y las [directivas de protección de aplicaciones Android](app-protection-policy-settings-android.md).
 

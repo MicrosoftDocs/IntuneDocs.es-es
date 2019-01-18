@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 1af474063ec7b6ccac2a36afbec421767f79444a
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: afddf57f93ef2308ce8e8fd8aab8d74c3419a3ea
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642853"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203423"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>Inscribir dispositivos iOS automáticamente con el Programa de inscripción de dispositivos de Apple
 
@@ -192,7 +192,15 @@ Ahora que ha instalado el token, puede crear un perfil de inscripción para disp
     | <strong>Zoom</strong> | El usuario tendrá la opción de ampliar el contenido de la pantalla al configurar el dispositivo. |
     | <strong>Siri</strong> | El usuario tendrá la opción de configurar Siri. |
     | <strong>Datos de diagnóstico</strong> | Se mostrará la pantalla **Diagnóstico** al usuario. En esta pantalla el usuario podrá enviar datos de diagnóstico a Apple. |
-
+    | <strong>Tono de visualización</strong> | El usuario tendrá la opción de configurar el tono de visualización. |
+    | <strong>Privacidad</strong> | Se mostrará la pantalla Privacidad al usuario. |
+    | <strong>Migración de Android</strong> | El usuario tendrá la opción de migrar datos de un dispositivo Android. |
+    | <strong>iMessage y FaceTime</strong> | El usuario tendrá la opción de configurar iMessage y FaceTime. |
+    | <strong>Incorporación</strong> | Se mostrarán las pantallas de información de incorporación, como la portada, la multitarea y el centro de control, para informar al usuario. |
+    | <strong>Migración de Watch</strong> | El usuario tendrá la opción de migrar los datos de un dispositivo Watch. |
+    | <strong>Tiempo de pantalla</strong> | Se mostrará la pantalla Tiempo de pantalla. |
+    | <strong>Actualización de software</strong> | Se mostrará la pantalla de actualización de software obligatoria. |
+    | <strong>Configuración de SIM</strong> | El usuario tendrá la opción de agregar un plan de datos móviles. |
 
 14. Elija **Aceptar**.
 

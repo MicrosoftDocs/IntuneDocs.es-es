@@ -16,18 +16,15 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 9de47f996706255c072926524860cfcc833e8b8b
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: f6a78c6612f98903fcbaa9d33b8037c5ea4a3960
+ms.sourcegitcommit: 2ff19c09a43c63556d082966727674120b516d10
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642564"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54149668"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Implementación de dispositivos unidos a Azure AD híbrido mediante Intune y Windows Autopilot (versión preliminar)
 Puede usar Intune y Windows Autopilot para configurar dispositivos unidos a Azure Active Directory híbrido. Para ello, siga estos pasos.
-
-> [!NOTE]
-> Esta característica se implementará en toda la base de usuarios durante los próximos días. Por tanto, es posible que no pueda seguir estos pasos hasta que se implemente en su cuenta.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
@@ -199,12 +196,12 @@ El proceso para cambiar el estado del perfil de dispositivo de **No asignado** a
 ## <a name="create-and-assign-a-domain-join-profile"></a>Creación y asignación de un perfil Unión a un dominio
 
 1. En [Intune](https://aka.ms/intuneportal), seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
-2. Introduzca las siguientes propiedades:
+2. Complete las siguientes propiedades:
    - **Nombre**: escriba un nombre descriptivo para el nuevo perfil.
    - **Descripción**: escriba una descripción para el perfil.
    - **Plataforma**: seleccione **Windows 10 y versiones posteriores**.
    - **Tipo de perfil**: elija **Unión a un dominio (vista previa)**.
-3. Elija **Configuración** y proporcione un **Prefijo de nombre de equipo**, **Nombre de dominio** y **Unidad organizativa** en formato DN (opcional). 
+3. Elija **Configuración** y proporcione un **Prefijo de nombre de equipo**, un **Nombre de dominio** y, opcionalmente, una **Unidad organizativa** en [formato DN](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name). 
 4. Elija **Aceptar** > **Crear**. Se creará el perfil y aparecerá en la lista.
 5. Para asignar el perfil, siga los pasos descritos en [Asignar un perfil de dispositivo](device-profile-assign.md#assign-a-device-profile). 
 

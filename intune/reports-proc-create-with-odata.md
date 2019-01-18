@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 3599146aaebc2e3788fa96e8e04657ce4db41c4f
-ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
+ms.openlocfilehash: cc7e61d7b5dd0d7ff16836602b8d959683a971e7
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54067455"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210727"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Creación de un informe desde la fuente de OData con Power BI
 
@@ -89,7 +89,7 @@ La relación se muestra en una columna Desde a una columna Hasta. En este ejempl
 
 En un gráfico de rectángulos se muestran datos jerárquicos en forma de cuadros dentro de cuadros. Cada rama de la jerarquía es un cuadro que contiene cuadros más pequeños que representan las subramas. Puede usar Power BI Desktop para crear un gráfico de rectángulos de los datos de Intune.
 
-![Visualizaciones > gráfico de rectángulos](media/reports-create-03-treemap.png)
+![Visualizaciones de gráfico de rectángulos de Power BI](media/reports-create-03-treemap.png)
 
 1. Seleccione un tipo de gráfico. Seleccione **Gráfico de rectángulos**.
 2. En el modelo de datos, busque la tabla **dispositivos**.

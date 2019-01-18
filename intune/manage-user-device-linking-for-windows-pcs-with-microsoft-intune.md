@@ -16,12 +16,12 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 81f84c2e645a9a6a20ff901239117b562a26b0aa
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 9d6c894e30b050ec6e824e1e77d0c476d4dc15bc
+ms.sourcegitcommit: 2ff19c09a43c63556d082966727674120b516d10
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186654"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54149634"
 ---
 # <a name="manage-user-device-linking-for-windows-pcs"></a>Administrar la vinculación de dispositivos de usuario en PC de Windows
 
@@ -43,13 +43,13 @@ Para vincular un usuario a un PC:
 
    - Para dejar el PC vinculado a su usuario actual (si lo hay), seleccione **Cancelar**.
 
-   - Para quitar el vínculo al usuario actual (si lo hubiera), seleccione <strong>Quitar vínculo **&gt; **Aceptar</strong>.
+   - Para quitar el vínculo al usuario actual, en el caso de que lo hubiera, seleccione <strong>Quitar vínculo **&gt;** Aceptar</strong>.
 
    - Para vincular el PC a un usuario nuevo, en la lista **Todos los usuarios**, seleccione un usuario. Confirme que los datos de usuario son correctos y, luego, seleccione **Aceptar**.
 
 > [!TIP]
 > Si quiere restringir la capacidad de los usuarios finales para vincularse a PC, habilite la opción **Restringir la capacidad de los usuarios de vincularse a equipos PC** en la directiva de **Configuración de agente de Microsoft Intune**.
 
-### <a name="see-also"></a>Consulta también
+### <a name="see-also"></a>Consulte también
 
 [Tareas comunes de administración de equipos Windows con el cliente de software de Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)
