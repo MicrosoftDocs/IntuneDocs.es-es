@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: e6f816ae0eb025addfaa0c5f7ec7d16005f6b040
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: a8ebe8f8cd84ef5eb38bf7e17f413bcc6a0791cd
+ms.sourcegitcommit: c84e1845b854704c4b048832e365dd381c7f3754
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112959"
+ms.lasthandoff: 01/09/2019
+ms.locfileid: "54122556"
 ---
 # <a name="set-enrollment-restrictions"></a>Establecer restricciones de inscripción
 
@@ -81,6 +81,8 @@ Puede cambiar la configuración de una restricción de tipo de dispositivo media
     - El perfil de trabajo Android admite major.minor.rev.build.
     - iOS admite major.minor.rev. Las versiones de sistema operativo no son relevantes en dispositivos Apple que se inscriban en el Programa de inscripción de dispositivos, Apple School Manager ni la aplicación Apple Configurator.
     - Windows admite major.minor.rev.build únicamente para Windows 10.
+> [!Note]
+> Windows 10 no proporciona el número de compilación durante la inscripción; por lo tanto, si, por ejemplo, escribe 10.0.17134.100 y el dispositivo coincide con 10.0.17134.174, durante la inscripción este se bloqueará.
 8. Elija si quiere **Permitir** o **Bloquear** los dispositivos de **propiedad personal** para las plataformas de la lista.
 9. Elija **Aceptar**.
 

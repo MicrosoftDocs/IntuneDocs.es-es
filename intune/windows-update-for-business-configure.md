@@ -2,10 +2,10 @@
 title: Configuración de Windows Update para empresas en Microsoft Intune - Azure | Microsoft Docs
 description: Actualizar la configuración de las actualizaciones de software en un perfil para crear un anillo de actualización, revisar el cumplimiento y pausar las actualizaciones en la configuración de Windows Update para empresas con Microsoft Intune en dispositivos Windows 10.
 keywords: ''
-author: dougeby
-ms.author: dougeby
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 11/12/2018
+ms.date: 01/15/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: c39faf6bb6a22cb861eb655edd6358b345b87c7e
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.openlocfilehash: ccb91082a3226ec4091a139d31796fd77bdf0616
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112772"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297390"
 ---
 # <a name="manage-software-updates-in-intune"></a>Administrar las actualizaciones de software en Intune
 
@@ -76,16 +76,12 @@ Después de crear anillos de actualización, debe asignarnos a grupos de disposi
 1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los servicios**, filtre por **Intune** y, después, seleccione **Microsoft Intune**.
 2. Seleccione **Actualizaciones de software** > **Anillos de actualización de Windows 10** > **Crear**.
 3. Escriba un nombre, una descripción (opcional) y, después, elija **Configurar**.
-4. En **Configuración**, especifique la siguiente información:
+4. En **Configuración**, especifique la siguiente información:  
 
+   **Actualizar configuración**  
    - **Canal de servicio**: establezca el canal desde el que el dispositivo recibe las actualizaciones de Windows.
    - **Actualizaciones de productos de Microsoft**: elija si quiere buscar actualizaciones de aplicaciones de Microsoft Update.
    - **Controladores de Windows**: elija si desea excluir los controladores de Windows Update durante las actualizaciones.
-   - **Comportamiento de las actualizaciones automáticas**: elija cómo se deben instalar las actualizaciones automáticas y cuándo se deben reiniciar. Para obtener más información, consulte la sección [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate).
-     - **Frecuencia de comportamiento automático**: si selecciona **Instalar y reiniciar automáticamente a la hora programada** para el comportamiento de las actualizaciones, se mostrará esta opción. Use esta opción para programar cuándo se instalarán las actualizaciones (semana, día y hora).
-
-   - **Reiniciar las comprobaciones**: Opción habilitada de forma predeterminada. Al reiniciar un dispositivo se efectúan algunas comprobaciones, como la comprobación de los usuarios activos, los niveles de batería, los juegos de ejecución, etc. Para omitir estas comprobaciones al reiniciar un dispositivo, seleccione **Omitir**.
-
    - **Período de aplazamiento de actualizaciones de calidad (días)**: indique el número de días que se aplazarán las actualizaciones de calidad. Puede aplazar la recepción de estas actualizaciones de calidad un máximo de 30 días a partir de su publicación.
 
      Las actualizaciones de calidad suelen ser correcciones y mejoras de la funcionalidad de Windows y se publican el segundo martes de cada mes. Las actualizaciones de calidad mediante Windows Update para empresas solo reciben estas actualizaciones (la versión "B"), aunque Microsoft podría liberar otras actualizaciones en cualquier momento. Puede definir si quiere aplazar la recepción de actualizaciones de calidad cuando estén disponibles en Windows Update, así como el tiempo que quiere aplazarla. Para obtener más información, consulte [Implementar actualizaciones con Windows Update para empresas](https://docs.microsoft.com/windows/deployment/update/waas-manage-updates-wufb).
@@ -96,9 +92,21 @@ Después de crear anillos de actualización, debe asignarnos a grupos de disposi
 
      Por ejemplo: **Si el canal de servicio se establece en Canal semianual (dirigido) y el período de aplazamiento es de 30 días**: supongamos que la actualización de características X está primero disponible de forma pública en Windows Update como Canal semianual (dirigido) en enero. El dispositivo no recibirá la actualización hasta febrero: 30 días más tarde.
 
-     **Si el canal de servicio se establece en Canal semianual (dirigido) y el período de aplazamiento es de 30 días**: supongamos que la actualización de características X está primero disponible de forma pública en Windows Update como Canal semianual (dirigido) en enero. Cuatro meses más tarde, en abril, la actualización de características X se publicará en el Canal semianual. El dispositivo recibe la actualización de características 30 días después de esta publicación en el Canal semianual y se actualizará en mayo.
+     **Si el canal de servicio se establece en Canal semianual (dirigido) y el período de aplazamiento es de 30 días**: supongamos que la actualización de características X está primero disponible de forma pública en Windows Update como Canal semianual (dirigido) en enero. Cuatro meses más tarde, en abril, la actualización de características X se publicará en el Canal semianual. El dispositivo recibe la actualización de características 30 días después de esta publicación en el Canal semianual y se actualizará en mayo.  
 
-   - **Modo de descarga de optimización de distribución**: elija el método por el que los dispositivos descargan las actualizaciones de Windows. Para obtener más información, consulte [DeliveryOptimization/DODownloadMode](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#download-mode).
+   **Configuración de la experiencia del usuario**
+   
+   - **Comportamiento de las actualizaciones automáticas**: elija cómo se deben instalar las actualizaciones automáticas y cuándo se deben reiniciar. Para obtener más información, consulte la sección [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate).
+
+     Si se usa la opción *Restablecer valores predeterminados*, se restaurará la configuración original de las actualizaciones automáticas en equipos Windows 10 que ejecuten la *actualización de octubre de 2018* o versiones posteriores.  
+
+     - **Frecuencia de comportamiento automático**: si selecciona **Instalar y reiniciar automáticamente a la hora programada** para el comportamiento de las actualizaciones, se mostrará esta opción. Use esta opción para programar cuándo se instalarán las actualizaciones (semana, día y hora).
+
+   - **Reiniciar las comprobaciones**: Opción habilitada de forma predeterminada. Al reiniciar un dispositivo se efectúan algunas comprobaciones, como la comprobación de los usuarios activos, los niveles de batería, los juegos de ejecución, etc. Para omitir estas comprobaciones al reiniciar un dispositivo, seleccione **Omitir**.
+
+   - **Impedir al usuario pausar las actualizaciones de Windows**: esta acción se permite de forma predeterminada. Use esta opción para impedir o permitir que los usuarios puedan pausar la instalación de actualizaciones desde *Configuración* en sus equipos. 
+      
+   - **Modo de descarga de optimización de distribución**: la optimización de entrega ya no se configura como parte del Círculo de actualizaciones de Windows 10 en Actualizaciones de software. Ahora, la optimización de entrega se establece mediante la configuración del dispositivo. Sin embargo, las opciones de configuración anteriores seguirán estando disponibles en la consola. Puede quitar estas opciones de configuración anteriores editándolas para que se muestren como *No configuradas*, pero no se podrán modificar de otra forma. Para evitar conflictos entre la directiva nueva y la anterior, vea [Cambiar desde círculos de actualizaciones existentes a la optimización de entrega](delivery-optimization-windows.md#move-from-existing-update-rings-to-delivery-optimization) y, después, migre su configuración a un perfil de optimización de entrega. 
 
 5. Cuando haya terminado, seleccione **Aceptar**. En **Crear anillo de actualización**, seleccione **Crear**.
 

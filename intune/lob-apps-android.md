@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2d1bc4762f46062cc80bb584da0a71423140c234
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: 8ed3bb57010535806d082f706b317839747fa881
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642785"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210829"
 ---
 # <a name="add-an-android-line-of-business-app-to-microsoft-intune"></a>Incorporación de una aplicación de línea de negocio de Android a Microsoft Intune
 
@@ -31,6 +31,9 @@ Una aplicación de línea de negocio (LOB) es aquella que se agrega a Intune des
 
 > [!Note]
 > Para obtener más información sobre las aplicaciones de línea de negocio desde una instancia administrada de Google Play Store, consulte [Trabajar con una aplicación de línea de negocio desde una instancia administrada de Google Play Store](apps-add-android-for-work.md?#working-with-a-line-of-business-app-from-the-managed-google-play-store). 
+
+> [!Note]
+> Para dispositivos Android for Work, siga las indicaciones de [este artículo](https://docs.microsoft.com/intune/apps-add-android-for-work). 
 
 ## <a name="step-1-specify-the-software-setup-file"></a>Paso 1: Especificación del archivo de instalación de software
 
