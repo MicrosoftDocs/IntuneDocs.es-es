@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/28/2018
+ms.date: 12/18/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,26 +15,27 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6bc6f5d2f32ff060eb2eec568b0048628ad0e09c
-ms.sourcegitcommit: 349ab913932547b4a7491181f0aff092f109b87b
+ms.openlocfilehash: cb6e3f0a9f62348d55b5dc2284c1007ea7faf088
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52303862"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203219"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Creación de un perfil de dispositivo en Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 ## <a name="create-the-profile"></a>Creación del perfil
-1. En [Azure Portal](https://portal.azure.com), seleccione **All services** (Todos los servicios) y busque **Microsoft Intune**.
 
-2. En **Microsoft Intune**, seleccione **Configuración del dispositivo** y **Perfiles**. Luego, seleccione **Crear perfil**.
+1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los dispositivos** > filtre por **Intune** > seleccione **Intune**.
 
-3. Introduzca las siguientes propiedades:
+2. Seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
+
+3. Escriba las siguientes propiedades:
 
    - **Nombre**: escriba un nombre descriptivo para el nuevo perfil.
-   - **Descripción**: escriba una descripción para el perfil (es opcional, pero se recomienda hacerlo).
+   - **Descripción**: escriba una descripción para el perfil. Esta configuración es opcional pero recomendada.
    - **Plataforma**: seleccione el tipo de plataforma:  
 
        - **Android**
@@ -45,8 +46,8 @@ ms.locfileid: "52303862"
        - **Windows 8.1 y versiones posteriores**
        - **Windows 10 y versiones posteriores**
 
-   - **Tipo de perfil**: seleccione el tipo de perfil que quiere crear. La lista dependerá de la plataforma que seleccione.
-   - **Configuración**: en los siguientes temas se describen los valores para cada tipo de perfil:
+   - **Tipo de perfil**: seleccione el tipo que quiere crear. La lista dependerá de la plataforma que seleccione.
+   - **Configuración**: En los siguientes temas se describen los valores de cada tipo de perfil:
 
        -  [Características del dispositivo](device-features-configure.md)
        -  [Restricciones de dispositivos](device-restrictions-configure.md)

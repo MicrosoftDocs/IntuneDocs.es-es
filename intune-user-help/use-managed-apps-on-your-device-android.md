@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/23/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 60df25542e69422e15a2a57473a3fbfa2cc413a5
-ms.sourcegitcommit: 604b29c480b24270b5debc3e5f3141c8149ee6ed
+ms.openlocfilehash: d5b07262dad3eaab76dd4854b82f0e45b3921b26
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/24/2018
-ms.locfileid: "49959509"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203508"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>Usar aplicaciones administradas en el dispositivo Android
 Las aplicaciones administradas están configuradas para cumplir los requisitos de seguridad de la organización y proteger los datos profesionales y educativos. Estas aplicaciones están disponibles en el dispositivo para instalarlas o usarlas automáticamente. 
@@ -56,7 +56,15 @@ En primer lugar, debe instalar el Portal de empresa y, si es necesario, administ
 * La organización pone las aplicaciones administradas a su disposición en el Portal de empresa. Vaya a la aplicación de Portal de empresa o al sitio web para buscar, ver e instalar estas aplicaciones. 
 * Usted instala una aplicación desde Google Play Store y, después, inicia sesión en la aplicación con su cuenta profesional o educativa.  
 
-## <a name="what-can-my-company-support-manage-in-an-app"></a>¿Qué puede administrar el equipo de soporte técnico de mi empresa en una aplicación?
+ ## <a name="available-apps"></a>Aplicaciones disponibles   
+ Una organización selecciona las aplicaciones que resultan útiles y adecuadas para los usuarios en el ámbito laboral o académico. Estas aplicaciones son las únicas que se encuentran en el Portal de empresa.   
+
+ Las aplicaciones también están disponibles para los usuarios según el tipo de dispositivo. Por ejemplo, si un usuario usa la aplicación Portal de empresa para Android, tiene acceso a aplicaciones de Android, pero no de iOS.   
+
+ ## <a name="request-an-app-for-work-or-school"></a>Solicitud de una aplicación para el ámbito laboral o académico   
+ Si necesita una aplicación, pero no la ve en el Portal de empresa, puede solicitarla. Vea los detalles de contacto del **departamento de soporte técnico** en la pestaña de **contacto con TI** de la aplicación Portal de empresa. La misma información de contacto aparece en el [sitio web de Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).   
+
+## <a name="what-can-my-company-support-manage-in-an-app"></a>¿Qué puede administrar el equipo de soporte técnico de mi empresa en una aplicación?  
 En la lista siguiente se indican las opciones de configuración que el soporte técnico de su empresa puede administrar dentro de una aplicación. Estas opciones afectan a la visualización, el acceso y el uso de los datos profesionales o educativos en el dispositivo:
 
 * Acceso a sitios Web específicos  

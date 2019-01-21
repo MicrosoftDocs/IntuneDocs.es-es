@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/06/2018
+ms.date: 12/11/2018
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: c9e2e0df79625329310171c509327395989f3a7c
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: 671c713be805038c7c2f2608dbadd9d8afdce344
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032544"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203610"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos Android Enterprise para permitir o restringir características mediante Intune
 
@@ -77,6 +77,10 @@ En este artículo se enumeran y describen los diferentes valores de configuraci�
   - **Solo Wi-Fi**
   - **Siempre**
 
+- **Ventanas de notificación**: Cuando se establecen en **Deshabilitar**, las ventanas de notificación, incluidas las notificaciones del sistema, las llamadas entrantes, las llamadas salientes, las alertas del sistema y los errores del sistema no se muestran en el dispositivo. Cuando se establecen en **Sin configurar**, se usa el valor predeterminado del sistema operativo, que puede ser mostrar las notificaciones.
+- **Skip first use hints** (Omitir sugerencias de primer uso): Elija **Habilitar** para ocultar u omitir las sugerencias de las aplicaciones de realizar los tutoriales o leer las sugerencias introductorias cuando se inicia la aplicación. Si se establece en **Sin configurar**, se usa el valor predeterminado del sistema operativo, que puede ser mostrar estas sugerencias cuando se inicia la aplicación.
+
+
 ### <a name="system-security-settings"></a>Configuración de seguridad del sistema
 
 - **Examen de amenazas en las aplicaciones**: **Requerir** exige que la configuración **Verificar aplicaciones** esté habilitada para los perfiles personales y profesionales.
@@ -126,6 +130,7 @@ Puede configurar un dispositivo para ejecutar una o muchas aplicaciones. Cuando 
 ### <a name="device-password-settings"></a>Configuración de la contraseña del dispositivo
 
 - **Bloqueo del teclado**: elija **Deshabilitar** para impedir que los usuarios usen la característica de bloqueo del teclado en el dispositivo. **No configurado** permite que el usuario utilice las características Keyguard.
+- **Características de KeyGuard deshabilitadas **: Si KeyGuard está habilitado en el dispositivo, elija las características que quiere deshabilitar. Por ejemplo, si **Secure Camera** está activado, la característica de cámara se deshabilita en el dispositivo. Las características no activadas están habilitadas en el dispositivo.
 - **Tipo de contraseña requerida**: defina el tipo de contraseña necesaria para el dispositivo. Las opciones son:
   - **Al menos numérica**
   - **Numérica compleja**: no se permiten números repetidos ni consecutivos, como "1111" o "1234".
@@ -145,6 +150,32 @@ Puede configurar un dispositivo para ejecutar una o muchas aplicaciones. Cuando 
 - **Agregar nuevos usuarios**: elija **Bloquear** para impedir que los usuarios agreguen nuevos usuarios. Cada usuario tiene un espacio personal en el dispositivo para pantallas principales, cuentas, aplicaciones y configuraciones personalizadas. **No configurado** permite que los usuarios agreguen a otros usuarios al dispositivo.
 - **Eliminación de usuario**: elija **Bloquear** para impedir que los usuarios quiten usuarios. **No configurado** permite que los usuarios quiten a otros usuarios del dispositivos.
 - **Cambios de la cuenta**: elija **Bloquear** para impedir que los usuarios modifiquen las cuentas. **No configurado** permite que los usuarios actualicen las cuentas de usuario del dispositivo.
+
+### <a name="connectivity"></a>Conectividad
+
+- **VPN siempre activa**: elija **Habilitar** para establecer que un cliente VPN se conecte automáticamente y vuelva a conectarse a la VPN. Las conexiones VPN siempre activas permanecen conectadas o se vuelven a conectar inmediatamente cuando el usuario desbloquea su dispositivo, se reinicia el dispositivo o cambia la red inalámbrica. 
+
+  Elija **No configurado** para deshabilitar la VPN siempre activa para todos los clientes VPN.
+
+  > [!IMPORTANT]
+  > Asegúrese de implementar una sola directiva de VPN siempre activa en un único dispositivo. No se admite la implementación de varias directivas de VPN siempre activa en un único dispositivo.
+
+- **Cliente VPN**: elija un cliente VPN que admita Always On. Las opciones son:
+  - Cisco AnyConnect
+  - F5 Access
+  - Palo Alto Networks GlobalProtect
+  - Pulse Secure
+  - Personalizada
+    - **Id. de paquete**: escriba el identificador de paquete de la aplicación en Google Play Store. Por ejemplo, si la dirección URL de la aplicación en Play Store es `https://play.google.com/store/details?id=com.contosovpn.android.prod`, el identificador del paquete es `com.contosovpn.android.prod`.
+
+  > [!IMPORTANT]
+  >  - El cliente VPN que elija debe instalarse en el dispositivo y debe admitir VPN por aplicación en los perfiles de trabajo. De lo contrario, se produce un error. 
+  >  - Necesita aprobar la aplicación de cliente VPN en **Google Play Store administrado**, sincronizar la aplicación en Intune e implementar la aplicación en el dispositivo. Una vez hecho esto, la aplicación queda instalada en el perfil de trabajo del usuario.
+  >  - Existen problemas conocidos al usar VPN por aplicación con F5 Access para Android 3.0.4. Para más información, consulte las [notas de la versión de F5 Access para Android 3.0.4](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android).
+
+- **Modo de bloqueo**: Elija **Habilitar** para obligar a todo el tráfico de red a usar el túnel VPN. Si no se establece una conexión a la VPN, el dispositivo no tendrá acceso a la red.
+
+  Elija **No configurado** para permitir que el tráfico fluya a través del túnel VPN o a través de la red móvil.
 
 ## <a name="work-profile-only"></a>Solo perfil de trabajo 
 
@@ -245,11 +276,11 @@ Esta configuración de contraseña se aplica a los perfiles personales de los di
     - **Id. de paquete**: escriba el identificador de paquete de la aplicación en Google Play Store. Por ejemplo, si la dirección URL de la aplicación en Play Store es `https://play.google.com/store/details?id=com.contosovpn.android.prod`, el identificador del paquete es `com.contosovpn.android.prod`.
 
   > [!IMPORTANT]
-  >  - El cliente VPN que elija debe instalarse en el dispositivo y debe admitir VPN por aplicación en los perfiles de trabajo. De lo contrario, se producirá un error. 
+  >  - El cliente VPN que elija debe instalarse en el dispositivo y debe admitir VPN por aplicación en los perfiles de trabajo. De lo contrario, se produce un error. 
   >  - Necesita aprobar la aplicación de cliente VPN en **Google Play Store administrado**, sincronizar la aplicación en Intune e implementar la aplicación en el dispositivo. Una vez hecho esto, la aplicación queda instalada en el perfil de trabajo del usuario.
   >  - Existen problemas conocidos al usar VPN por aplicación con F5 Access para Android 3.0.4. Para más información, consulte las [notas de la versión de F5 Access para Android 3.0.4](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android).
 
-- **Modo de bloqueo**: use **Habilitar** para forzar que todo el tráfico de red use el túnel VPN. Si no se establece una conexión a la VPN, el dispositivo no tendrá acceso a la red.
+- **Modo de bloqueo**: Elija **Habilitar** para obligar a todo el tráfico de red a usar el túnel VPN. Si no se establece una conexión a la VPN, el dispositivo no tendrá acceso a la red.
 
   Elija **No configurado** para permitir que el tráfico fluya a través del túnel VPN o a través de la red móvil.
 

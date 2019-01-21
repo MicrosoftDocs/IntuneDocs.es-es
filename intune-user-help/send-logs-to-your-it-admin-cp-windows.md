@@ -1,11 +1,11 @@
 ---
 title: Envío de registros al equipo de soporte técnico de su empresa para dispositivos Windows 10 | Microsoft Docs
-description: Envío de detalles de errores para ayudar al equipo de soporte técnico de la empresa a corregir los problemas de las aplicaciones
+description: Enviar detalles de errores y registros por correo electrónico para ayudar al equipo de soporte técnico de la empresa a solucionar problemas de las aplicaciones
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,32 +17,44 @@ ROBOTS: ''
 ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: cc1af3dee9dc8c591322c26b65a354130b05786a
-ms.sourcegitcommit: 0dc977795ff80abb6a3b989ca633cba410f06c64
+ms.openlocfilehash: 3c68f5f89098a5e294644973f23f57c038936d40
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/04/2019
-ms.locfileid: "54006325"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54202981"
 ---
-# <a name="send-diagnostic-logs-to-your-company-support-from-company-portal-for-windows"></a>Envío de registros de diagnóstico al equipo de soporte técnico de su empresa el Portal de empresa para Windows
+# <a name="email-your-company-support-about-problem-from-company-portal-for-windows"></a>Enviar al equipo de soporte técnico de la empresa información sobre problemas por correo electrónico desde el Portal de empresa para Windows
 
-Solucione problemas de aplicaciones en la aplicación Portal de empresa para Windows 10. Si experimenta un problema mientras usa la aplicación en su dispositivo Windows 10, puede pedir ayuda al equipo de soporte técnico enviando un correo electrónico. Los eventos y errores que se producen en la aplicación Portal de empresa se guardan en el dispositivo en un documento especial denominado _registro de diagnóstico_. Cuando solicita ayuda, la aplicación abre un correo electrónico rellenado previamente con el identificador de diagnóstico, por lo que puede obtener la ayuda que necesita rápidamente.
+Solucione problemas de las aplicaciones en la aplicación Portal de empresa para Windows 10. Si detecta un problema en el dispositivo Windows 10, puede enviar un correo electrónico para solicitar ayuda al equipo de soporte técnico. 
+
+Al solicitar ayuda, se abre un correo electrónico rellenado previamente donde puede describir el problema en detalle. También incluye un identificador de registro de diagnóstico. Si el equipo de soporte técnico no puede resolver el problema con la descripción, tiene que ponerse en contacto con Microsoft para obtener ayuda. Microsoft necesita el identificador de diagnóstico para consultar los registros de la aplicación.   
+
 
 > [!Note]       
-> Tras hacer clic en **Obtener ayuda**, el Portal de empresa enviará automáticamente los registros al equipo de soporte técnico de Microsoft. Este paso es proactivo y facilita la identificación y resolución de problemas relacionados con Microsoft.  
+> Tras hacer clic en **Obtener ayuda**, el Portal de empresa enviará automáticamente los registros al equipo de soporte técnico de Microsoft. Este paso es proactivo y facilita la resolución de problemas escalados al equipo de soporte técnico de Microsoft. Como se ha mencionado anteriormente, el equipo de soporte técnico de Microsoft puede extraer los registros mediante el identificador de diagnóstico del correo electrónico.  
+
+## <a name="what-is-a-diagnostic-log"></a>¿Qué es un registro de diagnóstico?
+
+Los eventos y errores que se producen en la aplicación Portal de empresa se guardan en el dispositivo en un documento especial denominado _registro de diagnóstico_. Los registros pueden revelar:  
+* Cuándo se ha producido un problema.  
+* Los pasos que han dado lugar al problema.  
+* El estado de la aplicación cuando se ha producido el problema.   
+
+## <a name="steps-to-get-help"></a>Pasos para obtener ayuda  
 
 1. Abra la aplicación **Portal de empresa**.
-2. Seleccione **Configuración** > **Obtener ayuda**.  
+2. Seleccione **Ayuda y soporte técnico** > **Obtener ayuda**.  
 
-   ![Captura de pantalla de la página Configuración, resaltando Configuración y la sección y el botón Obtener ayuda.](./media/1811_Get_Help_Windows_Cpapp.png)    
+   ![Captura de pantalla de la página Ayuda y soporte técnico con la barra de navegación izquierda y la sección Obtener ayuda resaltadas.](./media/1812_UCP_Help_Support_Get_Help_Logs.png)    
 
-3. Cuando aparezca la pantalla **Compartir**, seleccione **Correo**. La aplicación **Correo** creará un mensaje de correo electrónico automáticamente. Escriba una descripción del problema experimentado de forma que el equipo de soporte técnico tenga una idea de lo que debe buscar en los registros.
+3. Cuando aparezca la pantalla **Compartir**, seleccione **Correo**. La aplicación **Correo** creará un mensaje de correo electrónico automáticamente. Escriba una descripción del problema que ha experimentado para que el equipo de soporte técnico tenga una idea de lo que debe buscar.  
 
    ![Captura de pantalla de la pantalla Compartir, resaltando el icono de aplicación Correo.](./media/1811_Mail_Logs_Windows_CPapp.png)  
 
 
    ![Captura de pantalla del correo electrónico previamente rellenado que se abre en la aplicación Correo.](./media/1811_Get_Help_Email_Windows_CPapp.png)  
 
-Si la empresa necesita información adicional sobre la aplicación o la actividad del dispositivo, también podría ser necesario enviar [registros desde la aplicación Configuración](send-logs-to-your-it-admin-settings-windows.md).  
+Si la empresa necesita más información sobre la aplicación o la actividad del dispositivo, es posible que deba enviar [registros desde la aplicación Configuración](send-logs-to-your-it-admin-settings-windows.md).  
 
 ¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  

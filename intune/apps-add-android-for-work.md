@@ -1,12 +1,12 @@
 ---
-title: Asignar aplicaciones a dispositivos del perfil de trabajo Android
+title: Asignar aplicaciones de Google Play administrado a dispositivos de Android Enterprise
 titlesuffix: Microsoft Intune
-description: Descubra cómo sincronizar y asignar aplicaciones para dispositivos de perfil de trabajo Android desde Google Play Store administrado.
+description: Descubra cómo sincronizar y asignar aplicaciones a dispositivos de Android Enterprise desde Google Play Store administrado.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 01/11/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,18 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 5495addba30e8a958d2a49f2c04ee5af70d62712
-ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
+ms.openlocfilehash: 135aa120d8c0e441c59e9b9b3c5bb8ee6aa17229
+ms.sourcegitcommit: 8c1590db761cc411369cae26677f909d3a8ca297
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305937"
+ms.lasthandoff: 01/12/2019
+ms.locfileid: "54239581"
 ---
-# <a name="assign-apps-to-android-work-profile-devices-with-intune"></a>Asignar aplicaciones a dispositivos de perfil de trabajo Android con Intune
+# <a name="assign-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Asignar aplicaciones de Google Play administrado a dispositivos de Android Enterprise con Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Android Enterprise es un programa para dispositivos de perfil de trabajo y dispositivos de quiosco Android. Para los dispositivos de perfil de trabajo Android, Android Enterprise es un conjunto de características y servicios que permite separar las aplicaciones y los datos personales de aplicaciones y datos laborales. Android Enterprise proporciona opciones de administración adicionales y privacidad cuando las personas usan sus dispositivos Android para trabajar. Intune le ayuda a implementar aplicaciones y opciones de configuración en dispositivos de perfil de trabajo Android a fin de garantizar que la información laboral y la personal se mantengan aparte. Todas las aplicaciones que se instalen en dispositivos de perfiles de trabajo Android proceden de Google Play Store administrado. La forma de asignar aplicaciones a dispositivos de perfil de trabajo Android es diferente a cómo las asigna a dispositivos Android estándar. Inicie sesión en la tienda, busque las aplicaciones que desee y apruébelas. La aplicación, a continuación, aparece en el nodo **Aplicaciones con licencia** de Azure Portal y puede administrar la asignación de las aplicaciones como lo haría con cualquier otra aplicación.
+Android Enterprise es un programa para dispositivos de perfil de trabajo, dispositivos de quiosco o dedicados y dispositivos completamente administrados de Android. Para los dispositivos de perfil de trabajo Android, Android Enterprise es un conjunto de características y servicios que permite separar las aplicaciones y los datos personales de aplicaciones y datos laborales. Android Enterprise proporciona opciones de administración adicionales y privacidad cuando las personas usan sus dispositivos Android para trabajar. Intune le ayuda a implementar aplicaciones y opciones de configuración en dispositivos de perfil de trabajo Android a fin de garantizar que la información laboral y la personal se mantengan aparte. Todas las aplicaciones que se instalen en dispositivos de perfiles de trabajo Android proceden de Google Play Store administrado. La forma de asignar aplicaciones a dispositivos de perfil de trabajo Android es diferente a cómo las asigna a dispositivos Android estándar. Inicie sesión en la tienda, busque las aplicaciones que desee y apruébelas. La aplicación, a continuación, aparece en el nodo **Aplicaciones con licencia** de Azure Portal y puede administrar la asignación de las aplicaciones como lo haría con cualquier otra aplicación.
 
 Además, si ha creado sus propias aplicaciones de línea de negocio (LOB), puede asignarlas como sigue:
 - Suscríbase a una cuenta de Google Developer, que le permite publicar las aplicaciones en un área privada en Google Play Store.

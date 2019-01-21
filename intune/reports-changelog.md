@@ -6,7 +6,7 @@ keywords: Almacenamiento de datos de Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 01/11/2010
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,18 +16,25 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 0f39b0cb758c8c62da2e76ef8eaff07264ff3f3a
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: 3fce49decb7574d32d1923a77bb2cca28384ce11
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642768"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297237"
 ---
 # <a name="change-log-for-the-intune-data-warehouse-api"></a>Registro de cambios en la API Almacenamiento de datos de Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Manténgase al día de los cambios producidos en el Almacén de datos de Intune.
+
+## <a name="1812"></a>1812 
+_Fecha de publicación: diciembre de 2018_
+
+### <a name="enrollment-activities-collection-released-to-v10"></a>Colección de actividades de inscripción publicada para v1.0 
+
+La colección de actividades de inscripción ya está disponible en v1.0. Puede usar esta colección para entender el volumen y las tendencias de los errores de inscripción del entorno. Para obtener más información, vea [enrollmentActivities](intune-data-warehouse-collections.md#enrollmentactivities), [enrollmentEventStatuses](intune-data-warehouse-collections.md#enrollmenteventstatuses), [enrollmentFailureCategories](intune-data-warehouse-collections.md#enrollmentfailurecategories) y [enrollmentFailureReasons](intune-data-warehouse-collections.md#enrollmentfailurereasons).
 
 ## <a name="1808"></a>1808
 _Publicado en agosto de 2018_
@@ -36,9 +43,9 @@ _Publicado en agosto de 2018_
 
 Ahora puede usar la versión v1.0 del almacenamiento de datos de Intune mediante la configuración del parámetro de consulta `api-version=v1.0`. Las actualizaciones de las colecciones en el almacenamiento de datos son aditivas por naturaleza y no interrumpen los escenarios existentes.
 
-### <a name="enrollment-failure-collection-released-to-beta"></a>Versión beta de la colección de errores de inscripción
+### <a name="enrollment-activities-collection-released-to-beta"></a>Colección de actividades de inscripción publicada para la versión beta
 
-La nueva colección `Enrollment Failure` se ha lanzado en versión beta. Puede usar esta colección para ver los errores más comunes y así comprender cómo evoluciona su suscripción. 
+La nueva colección `Enrollment Activities` se ha lanzado en versión beta. Puede usar esta colección para ver los errores más comunes y así comprender cómo evoluciona su suscripción. 
 
 
 ## <a name="1805"></a>1805

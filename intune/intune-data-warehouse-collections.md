@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/19/2018
+ms.date: 01/11/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: d290fadf92ee112a1f663c6894861b393b81f74d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2eae4ea2bfabe1b41af88ae34b81fbf12ef5f9d9
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190326"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297509"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Colecciones de almacenamiento de datos de Intune
 
@@ -35,7 +35,7 @@ La entidad **appRevision** muestra todas las versiones de las aplicaciones.
 | AppKey                     | Identificador único de la aplicación.                                                         | 123                                  |
 | ApplicationId              | Identificador único de la aplicación. Se parece a AppKey, pero es una clave natural.        | b66bc706-ffff-7437-0340-032819502773 |
 | Revisión                   | Versión tal como la indicó el administrador durante la carga del archivo binario.                   | 2                                    |
-| Title                      | Título de la aplicación.                                                                     | Excel                                |
+| Título                      | Título de la aplicación.                                                                     | Excel                                |
 | Publicador                  | Editor de la aplicación.                                                                 | Microsoft                            |
 | UploadState                | Estado de carga de la aplicación.                                                              | 1                                    |
 | AppTypeKey                 | Referencia a AppType descrita en la sección siguiente.                            | 1                                    |
@@ -45,7 +45,7 @@ La entidad **appRevision** muestra todas las versiones de las aplicaciones.
 | Tamaño                       | Tamaño del archivo binario en bytes.                                                          | 120,392,000                          |
 | StartDateInclusiveUTC      | Fecha y hora en formato UTC en que se ha creado esta revisión de la aplicación en el almacenamiento de datos.      | 23/11/2016 0:00                      |
 | EndDateExclusiveUTC        | Fecha y hora en formato UTC en que ha quedado obsoleta esta revisión de la aplicación.                        | 23/11/2016 0:00                      |
-| IsCurrent                  | Indica si esta versión de la aplicación está actualizada o no en el almacenamiento de datos.         | Verdadero o falso                           |
+| IsCurrent                  | Indica si esta versión de la aplicación está actualizada o no en el almacenamiento de datos.         | Verdadero/Falso                           |
 | RowLastModifiedDateTimeUTC | Fecha y hora en formato UTC en que se ha modificado por última vez esta versión de la aplicación en el almacenamiento de datos. | 23/11/2016 0:00                      |
 
 ## <a name="apptypes"></a>appTypes
@@ -312,6 +312,92 @@ La entidad **deviceEnrollmentType** indica cómo se ha inscrito un dispositivo. 
 | 9                | WindowsCoManagement                | Administración conjunta de Windows 10 desencadenada por AutoPilot o directiva de grupo.                       |
 | 10               | WindowsAzureADJoinsUsingDeviceAuth | Unión a Azure AD de Windows 10 mediante autorización de dispositivos.                                            |
 
+## <a name="enrollmentactivities"></a>enrollmentActivities 
+La entidad **EnrollmentActivity** indica la actividad de una inscripción de dispositivos.
+
+| Propiedad                      | Descripción                                                               |
+|-------------------------------|---------------------------------------------------------------------------|
+| dateKey                       | Clave de la fecha en la que se ha registrado esta actividad de inscripción.               |
+| deviceEnrollmentTypeKey       | Clave del tipo de inscripción.                                        |
+| deviceTypeKey                 | Clave del tipo de dispositivo.                                                |
+| enrollmentEventStatusKey      | Clave del estado que indica si la inscripción se ha realizado correctamente o si se ha producido un error.    |
+| enrollmentFailureCategoryKey  | Clave de la categoría del error de la inscripción (si se ha producido un error en la inscripción).        |
+| enrollmentFailureReasonKey    | Clave del motivo del error de la inscripción (si se ha producido un error en la inscripción).          |
+| osVersion                     | Versión del sistema operativo del dispositivo.                               |
+| count                         | Recuento total de las actividades de inscripción que coinciden con las clasificaciones anteriores.  |
+
+## <a name="enrollmenteventstatuses"></a>enrollmentEventStatuses 
+La entidad **EnrollmentEventStatus** indica el resultado de una inscripción de dispositivos.
+
+| Propiedad                   | Descripción                                                                       |
+|----------------------------|-----------------------------------------------------------------------------------|
+| enrollmentEventStatusKey   | Identificador único del estado de la inscripción en el almacenamiento de datos (clave suplente).  |
+| enrollmentEventStatusName  | Nombre del estado de la inscripción. Vea los ejemplos siguientes.                            |
+
+### <a name="example"></a>Ejemplo
+
+| enrollmentEventStatusName  | Descripción                            |
+|----------------------------|----------------------------------------|
+| Correcto                    | Inscripción de dispositivo correcta.         |
+| Failed                     | Inscripción de dispositivo errónea.             |
+| No disponible              | El estado de la inscripción no está disponible.  |
+
+## <a name="enrollmentfailurecategories"></a>enrollmentFailureCategories 
+La entidad **EnrollmentFailureCategory** indica el motivo del error de una inscripción de dispositivos. 
+
+| Propiedad                       | Descripción                                                                                 |
+|--------------------------------|---------------------------------------------------------------------------------------------|
+| enrollmentFailureCategoryKey   | Identificador único de la categoría del error de la inscripción en el almacenamiento de datos (clave suplente).  |
+| enrollmentFailureCategoryName  | Nombre de la categoría del error de la inscripción. Vea los ejemplos siguientes.                            |
+
+### <a name="example"></a>Ejemplo
+
+| enrollmentFailureCategoryName   | Descripción                                                                                                   |
+|---------------------------------|---------------------------------------------------------------------------------------------------------------|
+| No aplicable                  | La categoría del error de la inscripción no es aplicable.                                                            |
+| No disponible                   | La categoría del error de la inscripción no está disponible.                                                             |
+| Unknown                         | Error desconocido.                                                                                                |
+| Autenticación                  | Error de autenticación.                                                                                        |
+| Autorización                   | La llamada se ha autenticado, pero no tiene autorización para inscribirse.                                                         |
+| AccountValidation               | Error al validar la cuenta para la inscripción. (Cuenta bloqueada, inscripción no habilitada)                      |
+| UserValidation                  | No se ha podido validar al usuario. (El usuario no existe, falta la licencia)                                           |
+| DeviceNotSupported              | El dispositivo no es compatible con la administración de dispositivos móviles.                                                         |
+| InMaintenance                   | La cuenta está en mantenimiento.                                                                                    |
+| BadRequest                      | El cliente ha enviado una solicitud que el servicio no entiende o no admite.                                        |
+| FeatureNotSupported             | Las características que usa esta inscripción no se admiten en esta cuenta.                                        |
+| EnrollmentRestrictionsEnforced  | Las restricciones de inscripción configuradas por el administrador han bloqueado esta inscripción.                                          |
+| ClientDisconnected              | El cliente ha agotado el tiempo de espera o el usuario final ha anulado la inscripción.                                                        |
+| UserAbandonment                 | El usuario final ha anulado la inscripción. (El usuario final ha iniciado la inscripción, pero no se ha completado de manera oportuna)  |
+
+## <a name="enrollmentfailurereasons"></a>enrollmentFailureReasons  
+La entidad **EnrollmentFailureReason** indica una razón más detallada para el error de inscripción de un dispositivo dentro de una categoría de error determinada.  
+
+| Propiedad                     | Descripción                                                                               |
+|------------------------------|-------------------------------------------------------------------------------------------|
+| enrollmentFailureReasonKey   | Identificador único de la razón del error de la inscripción en el almacenamiento de datos (clave suplente).  |
+| enrollmentFailureReasonName  | Nombre de la razón del error de la inscripción. Vea los ejemplos siguientes.                            |
+
+### <a name="example"></a>Ejemplo
+
+| enrollmentFailureReasonName      | Descripción                                                                                                                                                                                            |
+|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| No aplicable                   | La razón del error de la inscripción no es aplicable.                                                                                                                                                       |
+| No disponible                    | La razón del error de la inscripción no está disponible.                                                                                                                                                        |
+| Unknown                          | Error desconocido.                                                                                                                                                                                         |
+| UserNotLicensed                  | No se ha encontrado al usuario en Intune o no tiene una licencia válida.                                                                                                                                     |
+| UserUnknown                      | No se conoce al usuario en Intune.                                                                                                                                                                           |
+| BulkAlreadyEnrolledDevice        | Solo un usuario puede inscribir un dispositivo. Otro usuario ha inscrito este dispositivo anteriormente.                                                                                                                |
+| EnrollmentOnboardingIssue        | La entidad de administración de dispositivos móviles (MDM) de Intune aún no se ha configurado.                                                                                                                                 |
+| AppleChallengeIssue              | La instalación del perfil de administración de iOS se ha retrasado o se ha producido un error.                                                                                                                                         |
+| AppleOnboardingIssue             | Se necesita un certificado push MDM de Apple para inscribir en Intune.                                                                                                                                       |
+| DeviceCap                        | El usuario ha intentado inscribir más dispositivos del máximo permitido.                                                                                                                                        |
+| AuthenticationRequirementNotMet  | El servicio de inscripción de Intune no ha podido autorizar esta solicitud.                                                                                                                                            |
+| UnsupportedDeviceType            | El dispositivo no cumple los requisitos mínimos para la inscripción en Intune.                                                                                                                                  |
+| EnrollmentCriteriaNotMet         | No se ha podido inscribir este dispositivo debido a una regla de restricción de inscripción configurada.                                                                                                                          |
+| BulkDeviceNotPreregistered       | No se ha encontrado el identificador de equipo móvil internacional (IMEI) o el número de serie del dispositivo.  Sin este identificador, los dispositivos se reconocen como dispositivos personales que están bloqueados.  |
+| FeatureNotSupported              | El usuario ha intentado acceder a una característica que todavía no está disponible para todos los clientes o no es compatible con la configuración de Intune.                                                            |
+| UserAbandonment                  | El usuario final ha anulado la inscripción. (El usuario final ha iniciado la inscripción, pero no se ha completado de manera oportuna)                                                                                           |
+| APNSCertificateExpired           | No se pueden administrar dispositivos de Apple con un certificado push MDM de Apple expirado.                                                                                                                            |
 
 ## <a name="intunemanagementextensions"></a>intuneManagementExtensions
 **IntuneManagementExtension** muestra el mantenimiento de **intuneManagementExtension** de cada dispositivo Windows 10 cada día. Los datos se conservan durante 60 días.
@@ -419,7 +505,7 @@ La entidad **ownerType** indica si un dispositivo es corporativo, personal o des
 |:-------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|
 | ownerTypeID   | Identificador único del tipo de propietario.                                                                                                                                               |                            |
 | ownerTypeKey  | Identificador único del tipo de propietario en el almacenamiento de datos. Clave suplente.                                                                                                       |                            |
-| ownerTypeName | Representa el tipo de propietario de los dispositivos. Empresa: el dispositivo es propiedad de la empresa.  Personal: el dispositivo es de propiedad personal (BYOD).   Desconocido: no hay información sobre este dispositivo. | Empresa Personal Desconocido |
+| ownerTypeName | Representa el tipo de propietario de los dispositivos:  Empresa: el dispositivo es propiedad de una empresa.  Personal: el dispositivo es de propiedad personal (BYOD).   Desconocido: no hay información sobre este dispositivo. | Empresa Personal Desconocido |
 
 ## <a name="policies"></a>directivas
 La entidad **Policy** muestra los perfiles de configuración de dispositivos, los perfiles de configuración de aplicaciones y las directivas de cumplimiento. Puede asignar las directivas con Administración de dispositivos móviles (MDM) a un grupo de la empresa.
@@ -430,7 +516,7 @@ La entidad **Policy** muestra los perfiles de configuración de dispositivos, lo
 | PolicyId                   | Identificador único de la directiva en el almacenamiento de datos.                                                                                                 | b66bc706-ffff-7437-0340-032819502773 |
 | PolicyName                 | Nombre de la directiva.                                                                                                                                    | "Línea base de Windows 10"                |
 | PolicyVersion              | Versión de la directiva. Cuando la directiva se modifica o se cambia, se crea una versión más reciente.                                                             | 1, 2, 3                              |
-| IsDeleted                  | Indica si se ha actualizado el registro de la directiva.  True: la directiva tiene un nuevo registro con campos actualizados.  False: registro más reciente de la directiva. | Verdadero o falso                           |
+| IsDeleted                  | Indica si se ha actualizado el registro de la directiva.  True: la directiva tiene un nuevo registro con campos actualizados.  False: registro más reciente de la directiva. | Verdadero/Falso                           |
 | StartDateInclusiveUTC      | Fecha y hora en formato UTC en que se ha creado la directiva en el almacenamiento de datos.                                                                              | 23/11/2016 0:00                      |
 | DeletedDateUTC             | Fecha y hora en formato UTC en que IsDeleted ha cambiado a True.                                                                                                   | 23/11/2016 0:00                      |
 | RowLastModifiedDateTimeUTC | Fecha y hora en formato UTC en que se ha modificado por última vez la directiva en el almacenamiento de datos.                                                                        | 23/11/2016 0:00                      |
@@ -513,7 +599,7 @@ La entidad **UserDeviceAssociation** contiene las asociaciones de dispositivos d
 | UserKey            | Identificador único del usuario en el almacenamiento de datos.   (Clave suplente).                            | 123             |
 | DeviceKey          | Identificador único del dispositivo en el almacenamiento de datos.                                             | 123             |
 | CreatedDateTimeUTC | Fecha y hora de creación de la asociación de dispositivos de usuario. Utiliza el formato UTC.                     | 23/11/2016 0:00 |
-| IsDeleted          | Indica que el usuario ha anulado la inscripción del dispositivo y que la asociación ya no está activa. | Verdadero o falso      |
+| IsDeleted          | Indica que el usuario ha anulado la inscripción del dispositivo y que la asociación ya no está activa. | Verdadero/Falso      |
 | EndedDateTimeUTC   | Fecha y hora en formato UTC en que IsDeleted ha cambiado a True.                                               | 23/6/2017 0:00  |
 
 ## <a name="users"></a>usuarios
@@ -529,7 +615,7 @@ La colección de entidades **user** contiene los datos de usuario. Dichos regist
 | UPN                        | Nombre principal del usuario.                                                                                                                                                                                               | John@constoso.com                    |
 | DisplayName                | Nombre para mostrar del usuario.                                                                                                                                                                                                      | Juan                                 |
 | IntuneLicensed             | Especifica si este usuario tiene licencia de Intune o no.                                                                                                                                                                              | Verdadero/Falso                           |
-| IsDeleted                  | Indica si todas las licencias del usuario expiraron y si, por lo tanto, el usuario se quitó de Intune. Esta marca no cambia si se trata de un solo registro. En su lugar, se crea un registro para un estado de usuario nuevo. | Verdadero o falso                           |
+| IsDeleted                  | Indica si todas las licencias del usuario expiraron y si, por lo tanto, el usuario se quitó de Intune. Esta marca no cambia si se trata de un solo registro. En su lugar, se crea un registro para un estado de usuario nuevo. | Verdadero/Falso                           |
 | RowLastModifiedDateTimeUTC | Fecha y hora en formato UTC en que se modificó por última vez el registro en el almacenamiento de datos                                                                                                                                                 | 23/11/2016 0:00                      |
 
 ## <a name="usertermsandconditionsacceptances"></a>userTermsAndConditionsAcceptances

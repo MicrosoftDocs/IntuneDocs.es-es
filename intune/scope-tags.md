@@ -14,16 +14,16 @@ ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 080205e601b857d4765eb6b97eeeeeb8f4e6fc1b
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 0da6861b6c49fc37691b8c6e464a506670643fa3
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187164"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203338"
 ---
 # <a name="use-scope-tags-to-filter-policies"></a>Uso de etiquetas de ámbito para filtrar directivas
 
-Las etiquetas de ámbito permiten filtrar las directivas mediante etiquetas personalizadas que cree.
+Las etiquetas de ámbito permiten filtrar las directivas mediante etiquetas personalizadas que cree. Puede aplicar etiquetas de ámbito a roles y aplicaciones.
 
 Por ejemplo, cree una etiqueta de ámbito denominada "Departamento de ingeniería" y asígnela a los perfiles de configuración relacionados con el departamento de ingeniería. Asigne esa misma etiqueta a un rol de "Administradores de Ingeniería". Solo verán las directivas con la etiqueta "Departamento de ingeniería".
 
@@ -38,6 +38,11 @@ Elija **Configuración del dispositivo** > **Perfiles** > elija un perfil > **Pr
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>Para asignar una etiqueta de ámbito a un rol
 
 Elija **Roles** > **Todos los roles** > **Administrador de directivas y perfiles** > **Asignaciones** > **Ámbito (etiquetas)**.
+
+## <a name="to-assign-a-scope-tag-to-an-app"></a>Para asignar una etiqueta de ámbito a una aplicación
+
+Elija **Aplicaciones cliente** > **Aplicaciones** > elija la aplicación > **Propiedades** > **Ámbito (etiquetas)** > **Agregar** > elija las etiquetas > **Seleccionar** > **Aceptar** > **Guardar**.
+
 
 ## <a name="next-steps"></a>Pasos siguientes
 

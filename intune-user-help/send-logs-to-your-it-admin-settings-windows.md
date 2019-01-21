@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 05/25/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,20 +17,20 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 1e9b9908fcc48e9137c07f9a5397661d66e5be95
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: 88107a580eb72f647bb7c32d52ed5d3c848cd392
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43146746"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203321"
 ---
 # <a name="send-logs-to-your-company-support-from-the-settings-app-for-windows-10"></a>Envío de registros al equipo de soporte técnico de su empresa desde la aplicación Configuración para Windows 10
 
-Si se produce un error mientras usa el dispositivo Windows 10 administrado por su empresa, puede ayudar al equipo de soporte técnico de su empresa a solucionar el problema enviándole información por correo electrónico. Esta información se conserva en su dispositivo en un documento especial denominado "_registro de diagnóstico_".
+Use la aplicación Configuración para solucionar problemas de Portal de empresa para Windows 10. Si experimenta un problema mientras usa la aplicación en el dispositivo Windows 10, puede pedir ayuda al equipo de soporte técnico por correo electrónico. Los eventos y errores que se producen en la aplicación Portal de empresa se guardan en el dispositivo en un documento especial denominado _registro de diagnóstico_. Pueden contener información adicional sobre el error y, cuando se exportan, son útiles para los equipos de soporte técnico.
 
-1. Abra la aplicación **Configuración** de Windows al ir al **menú Inicio** y seleccionar el botón **Configuración**. También puede buscar "configuración" en la barra de búsqueda.
+1. Para abrir la aplicación **Configuración**, vaya al menú **Inicio** > **Configuración**. También puede buscar *configuración* en la barra de búsqueda.
 2. Vaya a **Cuentas** > **Obtener acceso a trabajo o escuela**.
-3. Seleccione "Exporta los archivos de registro de administración".
+3. Seleccione **Exporta los archivos de registro de administración**.
 
    ![La "pantalla de acceso a trabajo o escuela", que presenta la opción "Exportar" debajo del título "Configuración relacionada".](./media/w10-export-logs.png)
 

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 07/14/2017
+ms.date: 01/09/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: maxles
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 0f8139d5a17d1a6594354994fda6c0eef64a22f3
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.openlocfilehash: c3f1c28fb94823dd3370080c62c0d6f3d0da521e
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43147509"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203270"
 ---
 # <a name="use-managed-apps-on-your-ios-device"></a>Usar aplicaciones administradas en el dispositivo iOS
 
@@ -34,7 +34,7 @@ Cuando accede a datos de la empresa en una aplicación administrada, verá un me
 
 ![managed-apps-message-ios](./media/managed-apps-message.png)
 
-### <a name="how-do-i-get-managed-apps"></a>¿Cómo se pueden obtener aplicaciones administradas?
+## <a name="how-do-i-get-managed-apps"></a>¿Cómo se pueden obtener aplicaciones administradas?  
 Las aplicaciones administradas se obtienen de dos maneras distintas:
 
 -   Cuando el dispositivo está inscrito en Microsoft Intune, puede instalar la aplicación desde la aplicación Portal de empresa o un sitio web del Portal de empresa, o bien el equipo de soporte técnico de su empresa puede instalarla en el dispositivo. Para más información sobre la inscripción, consulte [Inscribir un dispositivo iOS en Intune](enroll-your-device-in-intune-ios.md) o [Inscribir un dispositivo macOS en Intune](enroll-your-device-in-intune-macos.md).
@@ -43,7 +43,16 @@ Las aplicaciones administradas se obtienen de dos maneras distintas:
 
 Es posible que el equipo de soporte técnico de su empresa a veces compre varias licencias de una aplicación que instale. Si aparece un mensaje donde se le pide aceptar el contrato de Programas de Compras por Volumen de Apple, es normal y puede aceptarlo. Si no lo hace, no podrá instalar la aplicación.
 
-### <a name="what-can-my-company-support-manage-in-an-app"></a>¿Qué puede administrar el equipo de soporte técnico de mi empresa en una aplicación?
+## <a name="available-apps"></a>Aplicaciones disponibles   
+ Una organización selecciona las aplicaciones que resultan útiles y adecuadas para los usuarios en el ámbito laboral o académico. Estas aplicaciones son las únicas que se encuentran en el Portal de empresa.   
+
+ Las aplicaciones también están disponibles para los usuarios según el tipo de dispositivo. Por ejemplo, si un usuario usa la aplicación Portal de empresa para iOS, tiene acceso a aplicaciones de iOS, pero no de Android.   
+
+## <a name="request-an-app-for-work-or-school"></a>Solicitud de una aplicación para el ámbito laboral o académico   
+ Si necesita una aplicación, pero no la ve en el Portal de empresa, puede solicitarla. Vea los detalles de contacto del **departamento de soporte técnico** en la pestaña **Soporte técnico** de la aplicación Portal de empresa. La misma información de contacto aparece en el [sitio web de Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).   
+ 
+
+## <a name="what-can-my-company-support-manage-in-an-app"></a>¿Qué puede administrar el equipo de soporte técnico de mi empresa en una aplicación?  
 Estos son algunos ejemplos de opciones que el equipo de soporte técnico de su empresa puede administrar en una aplicación y que pueden afectar a las interacciones con los datos de la empresa en el dispositivo:
 
 -   Acceso a sitios Web específicos

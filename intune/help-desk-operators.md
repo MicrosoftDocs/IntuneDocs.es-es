@@ -15,12 +15,12 @@ ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 0c09a80f97056f7cb08d69d6a8deedc4e421a556
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 37483f0fa33db109510ee537772a7bdead79e4f3
+ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190309"
+ms.lasthandoff: 01/10/2019
+ms.locfileid: "54203559"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Uso del portal de solución de problemas para ayudar a los usuarios de su empresa
 
@@ -271,6 +271,15 @@ Cuando se elige una fila de error, se proporcionan más detalles.
 | Error de autorización de inscripción | Se intentó realizar la inscripción con una versión antigua del portal de empresa. |
 | Dispositivo no compatible | El dispositivo no cumple los requisitos mínimos para la inscripción en Intune. |
 | Las restricciones de inscripción no se cumplen | Esta inscripción se ha bloqueado debido a una restricción de inscripciones configurada por el administrador. |
+| Versión de dispositivo demasiado baja | El administrador ha configurado una restricción de inscripción que exige una versión de dispositivo superior. |
+| Versión de dispositivo demasiado alta | El administrador ha configurado una restricción de inscripción que exige una versión de dispositivo inferior. |
+| El dispositivo no se puede inscribir como personal | El administrador ha configurado una restricción de inscripción para bloquear las inscripciones personales y el dispositivo con el error no se ha predefinido como corporativo. |
+| Plataforma de dispositivo bloqueada | El administrador ha configurado una restricción de inscripción que bloquea la plataforma de este dispositivo. |
+| El token en masa ha expirado | El token en masa del paquete de aprovisionamiento ha expirado. |
+| No se encontraron los detalles o el dispositivo Autopilot | No se ha encontrado el dispositivo Autopilot al intentar inscribir. |
+| El perfil de Autopilot no se ha encontrado o no se ha asignado | El dispositivo no tiene un perfil de Autopilot activo. |
+| Método de inscripción de Autopilot no esperado | El dispositivo ha intentado inscribirse mediante un método no permitido. |
+| El dispositivo Autopilot se ha eliminado | Se ha quitado de Autopilot el dispositivo que intentaba inscribirse para esta cuenta. |
 | Se alcanzó el límite de dispositivos | Esta inscripción se ha bloqueado debido a una restricción en el límite de dispositivos configurada por el administrador. |
 | Incorporación de Apple | Se ha bloqueado la inscripción de todos los dispositivos iOS debido a que falta o ha expirado el certificado de inserción de MDM de Apple en Intune. |
 | Dispositivo no registrado previamente | El dispositivo no se ha registrado previamente como corporativo y todas las inscripciones personales han sido bloqueadas por el administrador. |
