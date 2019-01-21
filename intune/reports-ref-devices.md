@@ -16,12 +16,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 44dc3f82b8d51007d3eaf1d71f1a416ebfe319b4
-ms.sourcegitcommit: 279f923b1802445e501324a262d14e8bfdddabde
+ms.openlocfilehash: 3993cb4e7ccbc04ccc1d341a9bd72594948f3262
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/21/2018
-ms.locfileid: "53738076"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297526"
 ---
 # <a name="reference-for-devices-entities"></a>Referencia de las entidades Devices
 
@@ -46,7 +46,7 @@ La entidad **DeviceTypes** representa el tipo de dispositivo al que hacen refere
 | DeviceTypeKey |Identificador único del tipo de dispositivo en el almacenamiento de datos. Clave suplente. |
 | DeviceTypeName |Tipo de dispositivo |
 
-## <a name="example"></a>Ejemplo
+### <a name="example"></a>Ejemplo
 
 | deviceTypeID  | Nombre | Descripción |
 |---------|------------|--------|
@@ -81,7 +81,7 @@ La entidad **ClientRegistrationStateTypes** representa el tipo de registro al qu
 | clientRegisterationStateKey |Identificador único del estado de registro en el almacenamiento de datos. Clave suplente. |
 | clientRegisterationStateName |Estado de registro. |
 
-## <a name="example"></a>Ejemplo
+### <a name="example"></a>Ejemplo
 
 | ClientRegisterationStateID  | Nombre | Descripción |
 |---------|------------|--------|
@@ -95,6 +95,93 @@ La entidad **ClientRegistrationStateTypes** representa el tipo de registro al qu
 | 7 |NotRegisteredPendingEnrollment |No registrado y pendiente de inscripción. |
 | 8 |Unknown |Estado desconocido. |
 
+## <a name="enrollmentactivities"></a>enrollmentActivities 
+La entidad **EnrollmentActivity** indica la actividad de una inscripción de dispositivos.
+
+| Propiedad                      | Descripción                                                               |
+|-------------------------------|---------------------------------------------------------------------------|
+| dateKey                       | Clave de la fecha en la que se ha registrado esta actividad de inscripción.               |
+| deviceEnrollmentTypeKey       | Clave del tipo de inscripción.                                        |
+| deviceTypeKey                 | Clave del tipo de dispositivo.                                                |
+| enrollmentEventStatusKey      | Clave del estado que indica si la inscripción se ha realizado correctamente o si se ha producido un error.    |
+| enrollmentFailureCategoryKey  | Clave de la categoría del error de la inscripción (si se ha producido un error en la inscripción).        |
+| enrollmentFailureReasonKey    | Clave del motivo del error de la inscripción (si se ha producido un error en la inscripción).          |
+| osVersion                     | Versión del sistema operativo del dispositivo.                               |
+| count                         | Recuento total de las actividades de inscripción que coinciden con las clasificaciones anteriores.  |
+
+## <a name="enrollmenteventstatuses"></a>enrollmentEventStatuses 
+La entidad **EnrollmentEventStatus** indica el resultado de una inscripción de dispositivos.
+
+| Propiedad                   | Descripción                                                                       |
+|----------------------------|-----------------------------------------------------------------------------------|
+| enrollmentEventStatusKey   | Identificador único del estado de la inscripción en el almacenamiento de datos (clave suplente).  |
+| enrollmentEventStatusName  | Nombre del estado de la inscripción. Vea los ejemplos siguientes.                            |
+
+### <a name="example"></a>Ejemplo
+
+| enrollmentEventStatusName  | Descripción                            |
+|----------------------------|----------------------------------------|
+| Correcto                    | Inscripción de dispositivo correcta.         |
+| Failed                     | Inscripción de dispositivo errónea.             |
+| No disponible              | El estado de la inscripción no está disponible.  |
+
+## <a name="enrollmentfailurecategories"></a>enrollmentFailureCategories 
+La entidad **EnrollmentFailureCategory** indica el motivo del error de una inscripción de dispositivos. 
+
+| Propiedad                       | Descripción                                                                                 |
+|--------------------------------|---------------------------------------------------------------------------------------------|
+| enrollmentFailureCategoryKey   | Identificador único de la categoría del error de la inscripción en el almacenamiento de datos (clave suplente).  |
+| enrollmentFailureCategoryName  | Nombre de la categoría del error de la inscripción. Vea los ejemplos siguientes.                            |
+
+### <a name="example"></a>Ejemplo
+
+| enrollmentFailureCategoryName   | Descripción                                                                                                   |
+|---------------------------------|---------------------------------------------------------------------------------------------------------------|
+| No aplicable                  | La categoría del error de la inscripción no es aplicable.                                                            |
+| No disponible                   | La categoría del error de la inscripción no está disponible.                                                             |
+| Unknown                         | Error desconocido.                                                                                                |
+| Autenticación                  | Error de autenticación.                                                                                        |
+| Autorización                   | La llamada se ha autenticado, pero no tiene autorización para inscribirse.                                                         |
+| AccountValidation               | Error al validar la cuenta para la inscripción. (Cuenta bloqueada, inscripción no habilitada).                      |
+| UserValidation                  | No se ha podido validar al usuario. (El usuario no existe, falta la licencia).                                           |
+| DeviceNotSupported              | El dispositivo no es compatible con la administración de dispositivos móviles.                                                         |
+| InMaintenance                   | La cuenta está en mantenimiento.                                                                                    |
+| BadRequest                      | El cliente ha enviado una solicitud que el servicio no entiende o no admite.                                        |
+| FeatureNotSupported             | Las características que usa esta inscripción no se admiten en esta cuenta.                                        |
+| EnrollmentRestrictionsEnforced  | Las restricciones de inscripción que ha configurado el administrador han bloqueado esta inscripción.                                          |
+| ClientDisconnected              | El cliente ha agotado el tiempo de espera o el usuario final ha anulado la inscripción.                                                        |
+| UserAbandonment                 | El usuario final ha anulado la inscripción. (El usuario final ha iniciado la inscripción, pero no se ha completado de manera oportuna).  |
+
+## <a name="enrollmentfailurereasons"></a>enrollmentFailureReasons  
+La entidad **EnrollmentFailureReason** indica un motivo más detallado para el error de inscripción de un dispositivo dentro de una categoría de error determinada.  
+
+| Propiedad                     | Descripción                                                                               |
+|------------------------------|-------------------------------------------------------------------------------------------|
+| enrollmentFailureReasonKey   | Identificador único del motivo del error de la inscripción en el almacenamiento de datos (clave suplente).  |
+| enrollmentFailureReasonName  | Nombre del motivo del error de la inscripción. Vea los ejemplos siguientes.                            |
+
+### <a name="example"></a>Ejemplo
+
+| enrollmentFailureReasonName      | Descripción                                                                                                                                                                                            |
+|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| No aplicable                   | El motivo del error de la inscripción no es aplicable.                                                                                                                                                       |
+| No disponible                    | El motivo del error de la inscripción no está disponible.                                                                                                                                                        |
+| Unknown                          | Error desconocido.                                                                                                                                                                                         |
+| UserNotLicensed                  | No se ha encontrado al usuario en Intune o no tiene una licencia válida.                                                                                                                                     |
+| UserUnknown                      | No se conoce al usuario en Intune.                                                                                                                                                                           |
+| BulkAlreadyEnrolledDevice        | Solo un usuario puede inscribir un dispositivo. Otro usuario ha inscrito este dispositivo anteriormente.                                                                                                                |
+| EnrollmentOnboardingIssue        | La entidad de administración de dispositivos móviles (MDM) de Intune aún no se ha configurado.                                                                                                                                 |
+| AppleChallengeIssue              | La instalación del perfil de administración de iOS se ha retrasado o se ha producido un error.                                                                                                                                         |
+| AppleOnboardingIssue             | Se necesita un certificado push MDM de Apple para inscribir en Intune.                                                                                                                                       |
+| DeviceCap                        | El usuario ha intentado inscribir más dispositivos que el máximo permitido.                                                                                                                                        |
+| AuthenticationRequirementNotMet  | El servicio de inscripción de Intune no pudo autorizar esta solicitud.                                                                                                                                            |
+| UnsupportedDeviceType            | El dispositivo no cumple los requisitos mínimos para la inscripción en Intune.                                                                                                                                  |
+| EnrollmentCriteriaNotMet         | No se pudo inscribir este dispositivo debido a una regla de restricción de inscripción configurada.                                                                                                                          |
+| BulkDeviceNotPreregistered       | No se han encontrado el identificador de equipo móvil internacional (IMEI) o el número de serie del dispositivo.  Sin este identificador, los dispositivos se reconocen como dispositivos personales que están bloqueados.  |
+| FeatureNotSupported              | El usuario ha intentado acceder a una característica que todavía no está disponible para todos los clientes o no es compatible con la configuración de Intune.                                                            |
+| UserAbandonment                  | El usuario final ha anulado la inscripción. (El usuario final ha iniciado la inscripción, pero no se ha completado de manera oportuna).                                                                                           |
+| APNSCertificateExpired           | No se pueden administrar dispositivos de Apple con un certificado push MDM de Apple expirado.                                                                                                                            |
+
 ## <a name="enrollmenttypes"></a>EnrollmentTypes
 
 La entidad **EnrollmentTypes** indica cómo se ha inscrito un dispositivo. El tipo de inscripción captura el método de inscripción. En los ejemplos se muestran los diferentes tipos de inscripción y su significado.
@@ -105,7 +192,7 @@ La entidad **EnrollmentTypes** indica cómo se ha inscrito un dispositivo. El ti
 | managementStateKey |Identificador único del estado de administración en el almacenamiento de datos. Clave suplente. |
 | managementStateName |Indica el estado de la acción remota aplicada a este dispositivo. |
 
-## <a name="example"></a>Ejemplo
+### <a name="example"></a>Ejemplo
 
 | enrollmentTypeID  | Nombre | Descripción |
 |---------|------------|--------|
@@ -140,7 +227,7 @@ La entidad **MdmStatuses** indica el estado de cumplimiento del dispositivo.
 | ComplianceStatus |Estado de cumplimiento del dispositivo. Debe tener uno de los valores de la tabla siguiente. | 
 
 
-## <a name="example"></a>Ejemplo
+### <a name="example"></a>Ejemplo
 
 | MdmStatusID  | ComplianceStatus | Descripción |
 |---------|------------|--------|
@@ -161,7 +248,7 @@ La entidad **ManagementStates** proporciona detalles sobre el estado del disposi
 | managementStateKey | Identificador único del estado de administración en el almacenamiento de datos. Clave suplente. |
 | managementStateName | Indica el estado de la acción remota aplicada a este dispositivo. |
 
-## <a name="example"></a>Ejemplo
+### <a name="example"></a>Ejemplo
 
 | managementStateID  | Nombre | Descripción |
 |---------|------------|--------|
@@ -188,7 +275,7 @@ La entidad **WorkPlaceJoinStateTypes** representa el estado de Workplace Join de
 | WorkPlaceJoinStateKey | Identificador único del estado de Workplace Join en el almacenamiento de datos. Clave suplente. |
 | WorkPlaceJoinStateName | Estado de Workplace Join. |
 
-## <a name="example"></a>Ejemplo
+### <a name="example"></a>Ejemplo
 
 | workPlaceJoinStateID  | Nombre | Descripción |
 |---------|------------|--------|
@@ -212,7 +299,7 @@ La entidad **ManagementAgentTypes** representa los agentes usados para administr
 | ManagementAgentTypeKey | Identificador único del tipo de agente de administración en el almacenamiento de datos. Clave suplente. |
 | ManagementAgentTypeName |Indica qué tipo de agente se usa para administrar el dispositivo. |
 
-## <a name="example"></a>Ejemplo
+### <a name="example"></a>Ejemplo
 
 | ManagementAgentTypeID  | Nombre | Descripción |
 |---------|------------|--------|

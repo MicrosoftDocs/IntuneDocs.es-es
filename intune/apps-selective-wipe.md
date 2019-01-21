@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2018
+ms.date: 01/10/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 57e22c7b999f2f672c67dc623a20bf643e739376
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.openlocfilehash: cd6ac0b1fdb64897a831c0111f7e0a611c85bede
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642581"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210710"
 ---
 # <a name="how-to-wipe-only-corporate-data-from-intune-managed-apps"></a>Borrado solo de datos corporativos de aplicaciones administradas por Intune
 
@@ -30,7 +30,7 @@ ms.locfileid: "53642581"
 Cuando un dispositivo se pierde o lo roban, o cuando un empleado deja la empresa, le interesa asegurarse de que se eliminan del dispositivo los datos de la aplicación de empresa. Pero es posible que no quiera quitar del dispositivo los datos personales, sobre todo si se trata de un dispositivo propiedad de un empleado.
 
 >[!NOTE]
-> Actualmente, solo se admiten las plataformas iOS y Android para borrar datos corporativos de aplicaciones administradas de Intune.
+> Actualmente, solo se admiten las plataformas iOS y Android para borrar datos corporativos de aplicaciones administradas de Intune. Las aplicaciones administradas de Intune incluyen Intune APP SDK y tienen una cuenta de usuario con licencia para su organización. No es necesaria la implementación de directivas de protección de aplicaciones para habilitar el borrado selectivo de aplicaciones.
 
 Para quitar de forma selectiva datos de la aplicación de empresa, siga los pasos de este tema para crear una solicitud de borrado. Una vez finalizada la solicitud, la próxima vez que la aplicación se ejecute en el dispositivo, los datos de la empresa se quitarán de la aplicación. Además de crear una solicitud de borrado, puede configurar un borrado selectivo de los datos de la organización como una nueva acción cuando no se cumplan las condiciones de Configuración de acceso de las Directivas de protección de aplicaciones (APP). Mediante esta característica, podrá proteger y eliminar automáticamente datos confidenciales de la organización en las aplicaciones, en función de criterios configurados previamente.
 
@@ -84,7 +84,7 @@ Los borrados con estado pendiente se muestran hasta que se eliminen manualmente.
 
 3.  Se le pedirá que confirme la eliminación. Elija **Sí** o **No** y luego haga clic en **Aceptar**.
 
-### <a name="see-also"></a>Vea también
+### <a name="see-also"></a>Consulte también
 [What's app protection policy](app-protection-policy.md) (¿Qué es la directiva de protección de aplicaciones?)
 
 [¿Qué es la administración de aplicaciones?](app-management.md)

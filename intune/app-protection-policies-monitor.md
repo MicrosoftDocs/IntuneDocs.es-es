@@ -3,10 +3,10 @@ title: Supervisión de las directivas de protección de aplicaciones
 titleSuffix: Microsoft Intune
 description: Supervise el estado de cumplimiento de las directivas de administración de aplicaciones móviles en Intune.
 keywords: ''
-author: brenduns
-ms.author: brenduns
+author: Erikre
+ms.author: erikre
 manager: dougeby
-ms.date: 02/22/2018
+ms.date: 01/08/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: c0603b3cfd2b8fbe1d26e782118fb07526849cfa
-ms.sourcegitcommit: bee072b61cf8a1b8ad8d736b5f5aa9bc526e07ec
+ms.openlocfilehash: f86ebd91125ec60d2ad0a28b47f5ac01fb62e8e2
+ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53816847"
+ms.lasthandoff: 01/15/2019
+ms.locfileid: "54297305"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Supervisión de las directivas de protección de aplicaciones
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -44,20 +44,16 @@ Hay tres lugares diferentes para supervisar el estado de cumplimiento:
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
 2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En el panel **Intune**, seleccione **Aplicaciones cliente**.
-4. En la carga de trabajo **Aplicaciones cliente**, elija **Supervisar** > **Estado de protección de la aplicación** para ver la vista de resumen:
+4. En la carga de trabajo **Aplicaciones cliente**, elija **Estado de protección de la aplicación** en la sección **Supervisar** para ver la vista de resumen:
 
 ![Mosaico de resumen en el panel de administración de aplicaciones móviles de Intune](./media/app-protection-user-status-summary.png)
 
--   **Usuarios**: número total de usuarios en su empresa que usa una aplicación que está asociada con una directiva en un contexto de trabajo.
+-   **Usuarios asignados**: número total de usuarios asignados en la empresa que usan una aplicación que está asociada a una directiva en un contexto profesional, que está protegida y que tiene una licencia, así como los usuarios asignados que están desprotegidos y que non tienen ninguna licencia.
+-   **Usuarios marcados**: número de usuarios que experimentan problemas. Los dispositivos con Jailbreak aparecen como **Usuarios marcados**.
+-   **Estado de usuario para iOS** y **Estado del usuario para Android**: número de usuarios que han usado una aplicación que tiene una directiva asignada a ellos en un contexto profesional en la plataforma relacionada. Esta información muestra el número de usuarios que administra la directiva, así como el número de usuarios que usan una aplicación que no es el destino de ninguna directiva en un contexto profesional. Considere la posibilidad de agregar estos usuarios a la directiva.
 
--   **ADMINISTRADO POR UNA DIRECTIVA**: número de usuarios que ha usado una aplicación que tiene una directiva asignada a ellos en un contexto de trabajo.
-
--   **SIN DIRECTIVA**: número de usuarios que está usando una aplicación a la que no va dirigida ninguna directiva en un contexto de trabajo. Considere la posibilidad de agregar estos usuarios a la directiva.
     > [!NOTE]
     > Si tiene varias directivas por plataforma, se considerará que un usuario está administrado por una directiva cuando tenga al menos una directiva asignada.
-
-- **Usuarios marcados**: número de usuarios que experimentan problemas. Actualmente, solo los usuarios con dispositivos descodificados aparecen como **Usuarios marcados**.
-
 
 ## <a name="detailed-view"></a>Vista detallada
 Puede obtener la vista detallada del resumen si selecciona las ventanas **Estado del usuario** (según la plataforma del sistema operativo del dispositivo) y **Usuarios marcados**.
@@ -79,7 +75,7 @@ Puede buscar un solo usuario y examinar su estado de cumplimiento. En el panel *
 
 Para ver los informes sobre un usuario, siga estos pasos:
 
-1.  Para seleccionar un usuario, elija el icono **Resumen**.
+1.  Para seleccionar un usuario, elija el icono de resumen **Estado del usuario**.
 
     ![Captura de pantalla del mosaico Resumen en la Administración de aplicaciones móviles de Intune](./media/MAM-reporting-6.png)
 
@@ -94,18 +90,24 @@ La vista detallada muestra el mensaje de error, la aplicación a la que se obtuv
 
 ## <a name="reporting-view"></a>Generación de informes
 
-Puede encontrar los mismos informes en la vista detallada e informes adicionales que le ayudarán en el estado de cumplimiento de la directiva MAM:
+Puede encontrar los mismos informes en la hoja **Estado de protección de la aplicación**.
 
-![Captura de pantalla en la que se resaltan dos informes disponibles en el panel Configuración](./media/MAM-reporting-7.png)
+> [!NOTE]
+> Intune proporciona campos adicionales con información sobre el dispositivo, incluidos el identificador de registro de la aplicación, el fabricante de Android, el modelo, la versión de la revisión de seguridad y el modelo de iOS. En Intune, estos campos están disponibles si selecciona **Aplicaciones cliente** > **Estado de protección de la aplicación** y elige **Informe de protección de aplicaciones: iOS, Android**. Además, estos parámetros lo ayudarán a configurar la lista de **admitidos** correspondiente al fabricante de dispositivo (Android), la lista de **admitidos** del modelo de dispositivo (iOS y Android) y la configuración de versión de la revisión de seguridad mínima de Android. 
 
--   **Informe de usuarios de protección de aplicaciones:** describe la misma información que puede encontrar en el informe **Estado usuario** en la sección de vista detallada anterior.
+Hay informes adicionales disponibles que le ayudarán con el estado de cumplimiento de directivas MAM. Para ver estos informes, seleccione **Aplicaciones cliente** > **Estado protección de la aplicación** > **Informes**. 
 
--   **Informe de aplicación de protección de aplicaciones:** ofrece dos estados de protección de aplicaciones diferentes que los administradores pueden seleccionar antes de generar el informe. Los estados pueden estar protegidos o desprotegidos.
+En la hoja **Informes** se proporcionan varios informes basados en el usuario y la aplicación, incluidos los siguientes:
+
+
+-   **Informe de usuario**: en este informe, se describe la misma información que puede encontrar en el informe **Estado del usuario** de la sección Vista detallada anterior.
+
+-   **Informe de aplicación**: en este informe, se ofrecen dos estados de protección de aplicaciones diferentes que los administradores pueden seleccionar antes de generar el informe. Los estados pueden estar protegidos o desprotegidos.
 
     -   Estado de usuario para la actividad de MAM administrada (protegido): este informe resume la actividad de cada aplicación MAM administrada por el usuario.
 
         -   Muestra todas las aplicaciones de destino de las directivas MAM para cada usuario y desglosa el estado de cada aplicación como registrado con directivas MAM, o destinadas a una directiva MAM, pero que la aplicación nunca se registró.
-<br></br>
+<br><br>
     -   Estado de usuario para la actividad de MAM sin administrar (sin proteger): este informe resume la actividad de las aplicaciones habilitadas por MAM que están sin administrar actualmente por el usuario. Esto puede ocurrir por los siguientes motivos:
 
         -   Estas aplicaciones están siendo utilizadas por un usuario o una aplicación que no está destinada actualmente mediante una directiva MAM.

@@ -17,12 +17,12 @@ ms.reviewer: ayesham
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ef84a77961dafc1a881bdb54208fae602857ae32
-ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
+ms.openlocfilehash: 807bc306848a731e63f7f854a9d4b451264e21a8
+ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54067472"
+ms.lasthandoff: 01/11/2019
+ms.locfileid: "54210812"
 ---
 # <a name="how-your-users-will-experience-basic-protection-on-managed-office-365-apps-in-microsoft-intune"></a>Se describe cómo sus usuarios experimentarán la protección básica en las aplicaciones administradas de Office 365 en Microsoft Intune.
 
@@ -89,33 +89,32 @@ Este artículo usa OneDrive para la Empresa como ejemplo para demostrar la exper
 
 ## <a name="what-policies-does-this-wizard-set"></a>¿Qué directivas establece este asistente?
 
-|     |       | |
-|----|--------|-|
-|**Nombre**|Administración de aplicaciones de Office 365| |
-| **Descripción**|Creado por el asistente para administrar aplicaciones de Office 365| |
-| |  | |
-| **Nombre de la configuración** |**Valor de la directiva de iOS** | **Valor de la directiva de Android** |
-|Impedir copias de seguridad de iTunes e iCloud| No | No aplicable |
-|Impedir copias de seguridad de Android |No aplicable | No|
-|Permitir que la aplicación transfiera datos a otras aplicaciones | Todas las aplicaciones | Todas las aplicaciones|
-|Permitir que la aplicación reciba datos de otras aplicaciones| Todas las aplicaciones | Todas las aplicaciones|
-|Impedir "Guardar como" | No | No|
-|Restringir cortar, copiar y pegar con otras aplicaciones | Cualquier aplicación | Cualquier aplicación |
-|Restringir contenido web para mostrar en un explorador administrado corporativo | No| No|
-|Cifrar datos de aplicación | Cuando el dispositivo está bloqueado | Sí|
-|Deshabilitar la sincronización de contactos | No| No|
-|Deshabilitar la impresión | No | No|
-|Requerir PIN para acceder | No | Sí|
-|Número de intentos antes de restablecimiento del PIN | No aplicable |5|
-|Permitir PIN sencillo | No aplicable |Sí|
-|Longitud del PIN | No aplicable | 4|
-|Permitir desbloqueo mediante huellas digitales en lugar de mediante PIN | No aplicable | Sí |
-|Requerir credenciales corporativas en acceso | No | No|
-|Bloquear la ejecución de aplicaciones administradas en dispositivos liberados o modificados | No | No|
-|Volver a comprobar los requisitos de acceso después de (minutos): tiempo de espera | 30 | 30|
-|Volver a comprobar los requisitos de acceso después de (minutos): período de gracia sin conexión | 720 |720|
-|Intervalo sin conexión (días) antes de que se borren los datos de la aplicación | 90 | 90|
-|Bloquear captura de pantalla (solo en dispositivos Android) | No aplicable | No |
+**Nombre**: Administración de aplicaciones de Office 365<br>
+**Descripción**: Creado por el asistente para administrar aplicaciones de Office 365
+
+| Nombre de la configuración | Valor de la directiva de iOS | Valor de la directiva de Android |
+|------------------------------------------------------------------------|-----------------------|----------------------|
+| Impedir copias de seguridad de iTunes e iCloud | No | No aplicable |
+| Impedir copias de seguridad de Android | No aplicable | No |
+| Permitir que la aplicación transfiera datos a otras aplicaciones | Todas las aplicaciones | Todas las aplicaciones |
+| Permitir que la aplicación reciba datos de otras aplicaciones | Todas las aplicaciones | Todas las aplicaciones |
+| Impedir "Guardar como" | No | No |
+| Restringir cortar, copiar y pegar con otras aplicaciones | Cualquier aplicación | Cualquier aplicación |
+| Restringir contenido web para mostrar en un explorador administrado corporativo | No | No |
+| Cifrar datos de aplicación | Cuando el dispositivo está bloqueado | Sí |
+| Deshabilitar la sincronización de contactos | No | No |
+| Deshabilitar la impresión | No | No |
+| Requerir PIN para acceder | No | Sí |
+| Número de intentos antes de restablecimiento del PIN | No aplicable | 5 |
+| Permitir PIN sencillo | No aplicable | Sí |
+| Longitud del PIN | No aplicable | 4 |
+| Permitir desbloqueo mediante huellas digitales en lugar de mediante PIN | No aplicable | Sí |
+| Requerir credenciales corporativas en acceso | No | No |
+| Bloquear la ejecución de aplicaciones administradas en dispositivos liberados o modificados | No | No |
+| Volver a comprobar los requisitos de acceso después de (minutos): tiempo de espera | 30 | 30 |
+| Volver a comprobar los requisitos de acceso después de (minutos): período de gracia sin conexión | 720 | 720 |
+| Intervalo sin conexión (días) antes de que se borren los datos de la aplicación | 90 | 90 |
+| Bloquear captura de pantalla (solo en dispositivos Android) | No aplicable | No |
 
 ### <a name="why-is-an-app-pin-policy-only-configured-for-android-devices"></a>¿Por qué sólo se configura una directiva de PIN de aplicación para dispositivos Android?
 El cifrado funciona de forma diferente en iOS y Android.
