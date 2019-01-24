@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d6fb1c65199b68f7492b1f397c4f6075e345d3e8
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 80eb088063522ba3acb293776064fd98846b9a3e
+ms.sourcegitcommit: 8e3a20b2ad59d3a6789ee81b9cbe6d2c711da11d
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203678"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54380503"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos iOS para permitir o restringir características mediante Intune
 
@@ -151,12 +151,12 @@ El modo supervisado de iOS solo se puede habilitar durante la configuración ini
 - **Música, podcasts o contenido de noticias explícitos de iTunes (solo con supervisión)**: Elija **Bloquear** para evitar el contenido de música, podcasts o noticias explícito de iTunes. **No configurado** permite que el dispositivo acceda a contenido clasificado para adultos en la tienda.
 - **Descargar contenido marcado como "Erótico" en iBooks Store**: Elija **Bloquear** para evitar que los usuarios descarguen archivos multimedia de iBooks Store marcados como eróticos. **No configurado** permite que el usuario descargue libros con la categoría "Erotismo".
 - **Visualización de documentos corporativos en aplicaciones no administradas**: **Bloquear** evita la visualización de documentos no corporativos en aplicaciones no administradas. **No configurado** permite ver los documentos corporativos en cualquier aplicación. Por ejemplo, se quiere evitar que los usuarios guarden archivos de la aplicación OneDrive en Dropbox. Configure este valor como **Bloquear**. Después de que el dispositivo recibe la directiva (por ejemplo, después de un reinicio), ya no le permite guardar.
-  - **Permitir que las aplicaciones administradas escriban contactos en cuentas de contactos no administradas (solo con supervisión)**: Cuando se establece en **Permitir**, los usuarios pueden agregar o sincronizar la información de contacto de Outlook de cualquier persona, incluidos contactos empresariales y corporativos, en la aplicación de contactos integrada en el dispositivo. Cuando se establece en **Sin configurar**, los usuarios no pueden agregar contactos de Outlook a la aplicación de contactos integrada en el dispositivo.
+  - **Permitir que las aplicaciones administradas escriban contactos en cuentas de contactos no administradas**: Cuando se establece en **Permitir**, los usuarios pueden agregar o sincronizar la información de contacto de Outlook de cualquier persona, incluidos contactos empresariales y corporativos, en la aplicación de contactos integrada en el dispositivo. Cuando se establece en **Sin configurar**, los usuarios no pueden agregar contactos de Outlook a la aplicación de contactos integrada en el dispositivo.
   
     Para usar este valor, establezca la opción **Visualización de documentos corporativos en aplicaciones no administradas** en **Bloquear**.
   
 - **Visualización de documentos no corporativos en aplicaciones corporativas**: **Bloquear** evita la visualización de documentos no corporativos en aplicaciones corporativas. **No configurado** permite ver cualquier documento en aplicaciones administradas corporativas.
-  - **Permitir que las aplicaciones no administradas lean en cuentas de contactos administradas (solo con supervisión)**: Cuando se establece en **Permitir**, los usuarios pueden agregar información de contacto de cualquier persona de la aplicación iContacts a Outlook. **Sin configurar** evita la lectura, incluso la eliminación de duplicados, en la aplicación de contactos integrada en el dispositivo.
+  - **Permitir que las aplicaciones no administradas lean en cuentas de contactos administradas**: Cuando se establece en **Permitir**, los usuarios pueden agregar información de contacto de cualquier persona de la aplicación iContacts a Outlook. **Sin configurar** evita la lectura, incluso la eliminación de duplicados, en la aplicación de contactos integrada en el dispositivo.
   
     Para usar este valor, establezca la opción **Visualización de documentos no corporativos en aplicaciones corporativas** en **Bloquear**.
   

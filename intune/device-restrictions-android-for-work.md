@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
-ms.openlocfilehash: 671c713be805038c7c2f2608dbadd9d8afdce344
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 62c44768f17ecc82dc748eb4dfda74da421ee3b5
+ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203610"
+ms.lasthandoff: 01/17/2019
+ms.locfileid: "54387011"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos Android Enterprise para permitir o restringir características mediante Intune
 
@@ -87,7 +87,7 @@ En este artículo se enumeran y describen los diferentes valores de configuraci�
 
 ### <a name="kiosk-settings"></a>Configuración de quiosco
 
-Puede configurar un dispositivo para ejecutar una o muchas aplicaciones. Cuando un dispositivo está en pantalla completa, solo están disponibles las aplicaciones que usted agregue.
+Puede configurar un dispositivo para ejecutar una o muchas aplicaciones. Cuando un dispositivo está en pantalla completa, solo están disponibles las aplicaciones que usted agregue. Esta configuración se aplica a dispositivos Android dedicados, pero no a dispositivos Android dedicados totalmente administrados.
 
 **Pantalla completa**: elija si el dispositivo ejecutará una o varias aplicaciones.
 
@@ -130,7 +130,7 @@ Puede configurar un dispositivo para ejecutar una o muchas aplicaciones. Cuando 
 ### <a name="device-password-settings"></a>Configuración de la contraseña del dispositivo
 
 - **Bloqueo del teclado**: elija **Deshabilitar** para impedir que los usuarios usen la característica de bloqueo del teclado en el dispositivo. **No configurado** permite que el usuario utilice las características Keyguard.
-- **Características de KeyGuard deshabilitadas **: Si KeyGuard está habilitado en el dispositivo, elija las características que quiere deshabilitar. Por ejemplo, si **Secure Camera** está activado, la característica de cámara se deshabilita en el dispositivo. Las características no activadas están habilitadas en el dispositivo.
+- **Características de KeyGuard deshabilitadas** : Si KeyGuard está habilitado en el dispositivo, elija las características que quiere deshabilitar. Por ejemplo, si **Secure Camera** está activado, la característica de cámara se deshabilita en el dispositivo. Las características no activadas están habilitadas en el dispositivo.
 - **Tipo de contraseña requerida**: defina el tipo de contraseña necesaria para el dispositivo. Las opciones son:
   - **Al menos numérica**
   - **Numérica compleja**: no se permiten números repetidos ni consecutivos, como "1111" o "1234".

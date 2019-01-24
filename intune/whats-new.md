@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 0cc94da03e1288de519d08acadbf3374bb76fcd7
-ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
+ms.openlocfilehash: 264b7f4b476b18695c6dd0282f34a9af33b6b27f
+ms.sourcegitcommit: 1f544172299f0990e1e13cebf3830b8c0511d6ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54210914"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54418217"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novedades de Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -42,7 +42,10 @@ Conozca las novedades semanales de Microsoft Intune. También podrá buscar pró
 ### Role-based access control
 
 -->     
+## <a name="week-of-january-14-2019"></a>Semana del 14 de enero de 2019
 
+### <a name="preview-of-support-for-android-corporate-owned-fully-managed-devices----1574342----"></a>Versión preliminar de la compatibilidad para dispositivos Android totalmente administrados de propiedad corporativa <!-- 1574342  -->
+Intune ya admite dispositivos Android totalmente administrados; un escenario de "propietario de dispositivo" de propiedad corporativa en el que el departamento de TI administra de manera rigurosa los dispositivos y estos se asocian a usuarios individuales. Esto permite que los administradores administren todo el dispositivo, apliquen una amplia variedad de controles de directivas no disponibles para los perfiles de trabajo y restrinjan las instalaciones de aplicaciones por parte de los usuarios solo a Google Play administrado. Para obtener más información, vea [Set up Intune enrollment of Android fully managed devices](android-fully-managed-enroll.md) (Configuración de la inscripción en Intune de dispositivos Android totalmente administrados) y [Enroll your dedicated devices or fully managed devices](android-dedicated-devices-fully-managed-enroll.md) (Inscripción de dispositivos dedicados o dispositivos totalmente administrados).  Tenga en cuenta que esta característica está en versión preliminar. Algunas funcionalidades de Intune, como certificados, cumplimiento y acceso condicional, no están disponibles actualmente con dispositivos Android totalmente administrados.
 
 ## <a name="week-of-january-7-2019"></a>Semana del 7 de enero de 2019
 
@@ -115,7 +118,7 @@ Al crear un perfil de configuración de dispositivos iOS, puede agregar la opci�
 En [Configuración para mostrar mensaje en la pantalla de bloqueo](shared-device-settings-ios.md), se muestra la configuración actual.
 
 #### <a name="new-app-store-doc-viewing-gaming-device-restriction-settings-added-to-ios-devices----2827760--"></a>Adición en dispositivos iOS de nuevo App Store, visualización de documentos y configuración de restricción de dispositivos de juego <!-- 2827760-->
-En **Configuración del dispositivo** > **Perfiles** > **Crear perfil** > **iOS** para la plataforma y **Restricciones de dispositivo** para el tipo de perfil, en **App Store, visualización de documentos y juegos**, se han agregado las siguientes opciones de configuración: Permitir a las aplicaciones administradas escribir contactos en cuentas de contactos no administradas (solo con supervisión) Permitir a las aplicaciones no administradas leer en cuentas de contactos administradas (solo con supervisión) Para ver estas opciones de configuración, vaya a [Restricciones de dispositivos iOS](device-restrictions-ios.md#app-store-doc-viewing-gaming).
+En **Configuración del dispositivo** > **Perfiles** > **Crear perfil** > **iOS** para la plataforma y **Restricciones de dispositivo** para el tipo de perfil, en **App Store, visualización de documentos y juegos**, se han agregado las siguientes opciones de configuración: Permitir a las aplicaciones administradas escribir contactos en cuentas de contactos no administradas y Permitir a las aplicaciones no administradas leer en cuentas de contactos administradas. Para ver estas opciones de configuración, vaya a [Restricciones de dispositivos iOS](device-restrictions-ios.md#app-store-doc-viewing-gaming).
 
 #### <a name="new-notification-hints-and-keyguard-settings-to-android-enterprise-device-owner-devices----3201839-3201843---"></a>Nueva configuración de notificaciones, sugerencias y bloqueo del teclado para dispositivos propietarios del dispositivo Android Enterprise <!-- 3201839 3201843 -->
 Esta actualización incluye varias características de los dispositivos Android Enterprise cuando se ejecutan como propietario del dispositivo. Para usar estas características, vaya a **Configuración del dispositivo** > **Perfiles** > **Crear perfil** > en **Plataforma**, elija **Android Enterprise** > en **Tipo de perfil**, elija **Solo el propietario del dispositivo** > **Restricciones de dispositivos**.
@@ -139,9 +142,6 @@ Se aplica a: Windows 10 y versiones posteriores
 #### <a name="more-detailed-enrollment-restriction-failure-messaging----3111564---"></a>Mensajes de error de restricción de inscripción más detallados <!-- 3111564 -->
 Los mensajes de error más detallados estarán disponibles cuando no se cumplan las restricciones de inscripción. Para ver estos mensajes, vaya a **Intune** > **Solucionar problemas** > y revise la tabla Errores de inscripción. Para obtener más información, vea la [lista de errores de inscripción](help-desk-operators.md#configuration-policies-reference).
 
-#### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device----2687509---"></a>Omisión de más pantallas del Asistente de configuración de un dispositivo DEP iOS <!-- 2687509 -->
-Además de las pantallas que actualmente se pueden omitir, podrá establecer dispositivos DEP de iOS para omitir las pantallas siguientes en el Asistente para la configuración cuando un usuario inscribe el dispositivo: Tono de pantalla, Privacidad, Migración de Android, botón Inicio, iMessage y FaceTime, Incorporación, Migración de Watch, Apariencia, Tiempo de uso, Actualización de software, Configuración de SIM.
-Para elegir qué pantallas omitir, vaya a **Inscripción de dispositivos** > **Inscripción de Apple** > **Tokens del programa de inscripción** > elija un token > **Perfiles** > elija un perfil > **Propiedades** > **Personalización del Asistente de configuración** > elija **Ocultar** en todas las pantallas que quiera omitir > **Aceptar**.
 
 
 ### <a name="monitor-and-troubleshoot"></a>Supervisión y solución de problemas
@@ -164,7 +164,7 @@ La nueva experiencia le permite describir el problema con sus propias palabras y
 ### <a name="role-based-access-control"></a>Control de acceso basado en roles
 
 #### <a name="scope-tags-for-apps----1081941---"></a>Etiquetas de ámbito para las aplicaciones <!-- 1081941 -->
-Puede crear etiquetas de ámbito para limitar el acceso a roles y aplicaciones. Puede agregar una etiqueta de ámbito a una aplicación para que solo los usuarios con roles que también tengan asignada esa etiqueta de ámbito puedan acceder a la aplicación. Para obtener más información, vea [Uso de etiquetas de ámbito para filtrar directivas](scope-tags.md).
+Puede crear etiquetas de ámbito para limitar el acceso a roles y aplicaciones. Puede agregar una etiqueta de ámbito a una aplicación para que solo los usuarios con roles que también tengan asignada esa etiqueta de ámbito puedan acceder a la aplicación. A las aplicaciones adquiridas mediante el Programa de Compras por Volumen de Apple (PCV) no se les pueden asignar las etiquetas de ámbito.  Para obtener más información, vea [Uso de etiquetas de ámbito para filtrar directivas](scope-tags.md).
 
 
 
@@ -1252,6 +1252,54 @@ Ahora puede usar directivas de protección de aplicaciones (APP) y acceso condic
 
 ## <a name="notices"></a>Notificaciones
 
+### <a name="upcoming-password-enforcement-change-for-macos-10142-in-intune---1873216--"></a>Próximo cambio de aplicación de contraseña para macOS 10.14.2 en Intune <!--1873216-->
+El pasado mes de julio compartimos en MC145129 la noticia de que Intune tiene previsto integrar la opción de configuración recién publicada “Cambiar contraseña en el siguiente Auth” de Apple para dispositivos que ejecutan macOS 10.13 y versiones posteriores. Actualmente tenemos previsto implementar esta opción de configuración en febrero para macOS 10.14.2 y versiones posteriores. 
+
+#### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
+Esto afecta a si tiene o va a tener dispositivos que ejecutan macOS 10.14.2 y versiones posteriores. Tras la introducción de Apple de la opción "Cambiar contraseña en el siguiente Auth", al insertar una directiva de contraseña, Intune puede exigir a los usuarios que actualicen su contraseña a una que sea compatible. Los usuarios de macOS recibirán una solicitud para actualizar su contraseña cuando se integre esta nueva característica de Apple, incluso si su contraseña ya es compatible. Tenga en cuenta que si la contraseña ya es compatible y no tiene un requisito para contraseñas de repetición, los usuarios finales podrán actualizar a su contraseña existente. Los usuarios finales solo verán una solicitud para actualizar su contraseña cuando intenten autenticar o iniciar sesión en su dispositivo. Si bloquea los recursos de la empresa hasta que el dispositivo se marque como compatible, debe tener en cuenta que los usuarios finales de dispositivos con macOS 10.14.2 podrían tener bloqueado el acceso a recursos de la empresa, como el correo electrónico o los sitios de SharePoint, hasta que restablezcan su contraseña. En el futuro, todas las actualizaciones de las directivas de contraseñas de configuración y cumplimiento obligarán a los usuarios de destino a actualizar sus contraseñas. Nuestro estudio de los clientes antes de implementar este cambio demostró que la mayoría de los clientes no se verán afectados por este cambio, puesto que los usuarios finales normalmente actualizarán su contraseña después de recibir una solicitud para inscribirse con una contraseña o restablecer su contraseña para seguir siendo compatible.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>¿Qué puedo hacer para prepararme para este cambio?
+Es posible que quiera informar a su departamento de soporte técnico. Actualizaremos esta página de novedades cuando se implante este cambio. Si no quiere que se aplique esta directiva de contraseña de dispositivos macOS, se recomienda eliminar o anular la asignación de la directiva de macOS existente.
+
+
+### <a name="reminder-intune-support-experience-for-premier-customers-now-in-azure-instead-of-mpo---2828727--"></a>Aviso: experiencia de soporte técnico de Intune para clientes Premier ya disponible en Azure en lugar de MPO <!--2828727-->
+El pasado mes de septiembre compartimos en MC147649 que en diciembre eliminaríamos la capacidad de crear solicitudes de soporte técnico de Intune desde el portal Microsoft Premier Online (MPO) (premier.microsoft.com). Tras un breve retraso y a partir de finales de enero, para crear solicitudes de soporte técnico se le redirigirá solo a Intune en Azure. 
+
+
+#### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
+A partir de finales de enero, para seguir mejorando la experiencia de soporte técnico Premier, ya no podrá crear solicitudes de soporte técnico en MPO.  Si lo intenta, verá un mensaje que no podrá descartar y se le redirigirá a Intune en Azure. En este caso, puede crear una solicitud que se enrutará al Soporte técnico de Microsoft especialista en Intune, para que diagnostiquen y resuelvan el problema de manera conveniente. Tenga en cuenta que las solicitudes de soporte técnico creadas en el portal MPO no pueden verse en Azure Portal. 
+
+Azure Portal tiene una nueva experiencia de soporte técnico, como se anunció recientemente en MC171941. Encontrará más información al respecto en [https://aka.ms/new_support_experience](https://aka.ms/new_support_experience) y en el vínculo de información adicional.
+
+Si usa administración de dispositivos móviles híbrida (MDM híbrida) o administración conjunta, puede seguir utilizando MPO para crear solicitudes de soporte técnico para Configuration Manager. No obstante, para crear solicitudes relacionadas con Intune, debe usar Azure Portal. Le recordamos que la MDM híbrida está en [desuso](https://docs.microsoft.com/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures) y que debe planear el cambio a Intune en Azure tan pronto como sea posible. Para más información, vea [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) (Pasar de la administración híbrida de dispositivos móviles (MDM) a Intune en Azure).
+
+Tenga en cuenta que solo los usuarios con roles de administrador global, administrador de servicios de Intune y administrador de soporte técnico de servicio pueden crear incidencias de soporte técnico en Azure Portal.
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>¿Qué puedo hacer para prepararme para este cambio?
+- Deje de usar MPO y utilice Intune en Azure para crear y administrar todas las solicitudes de soporte técnico de Intune.  
+- Avise al departamento de soporte técnico y actualice la documentación si es necesario.
+- Si tiene usuarios sin los roles de administrador global o administrador de servicios de Intune que están creando solicitudes de soporte técnico en MPO, asígneles el rol de administrador de soporte técnico de servicio en Azure Active Directory. De este modo podrán seguir creando incidencias de soporte técnico en Azure Portal.
+
+#### <a name="additional-information"></a>Información adicional
+[https://aka.ms/IntuneSupport_MPO_to_Azure](https://aka.ms/IntuneSupport_MPO_to_Azure)
+
+### <a name="plan-for-change-user-experience-update-to-intune-company-portal-app-for-ios"></a>Plan de cambio: Actualización de la experiencia del usuario a la aplicación de Portal de empresa de Intune para iOS
+Nos complace compartir que Intune pronto lanzará una actualización importante de la experiencia de usuario para la aplicación de Portal de empresa de iOS. La actualización contará con un cambio de diseño visual de la página principal con filtros avanzados y un acceso más rápido a las aplicaciones y los libros electrónicos.
+
+#### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
+Esta experiencia mantendrá las funciones actuales de Portal de empresa de iOS y también incluirá:
+- Una página principal con aspecto de iOS nativo 
+- Capacidades de filtrado en listas de contenido y búsqueda, incluida la capacidad de filtrar por tipo de contenido (aplicaciones o libros electrónicos) y disponibilidad (administración de dispositivos necesaria o disponible sin inscripción)
+- Capacidad de buscar libros electrónicos
+- Historial de búsquedas para aplicaciones y libros electrónicos si forma parte del programa TestFlight de Apple; se le notificará sobre la versión preliminar de la aplicación de Portal de empresa de Intune de iOS actualizada cuando esté disponible. Si no forma parte del programa TestFlight de Apple, aún está a tiempo de registrarse. Al registrarse podrá usar la aplicación de Portal de empresa actualizada antes de que esté disponible para los usuarios finales. También tendrá la oportunidad de proporcionar comentarios directamente al equipo de Intune.  
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>¿Qué puedo hacer para prepararme para este cambio?
+No es necesario realizar ninguna acción; estos cambios se publicarán en una próxima versión de la aplicación de Portal de empresa de iOS. 
+
+#### <a name="additional-information"></a>Información adicional
+[https://aka.ms/cp_update_iOS](https://aka.ms/cp_update_iOS)
+
+
 ### <a name="plan-for-change-exchange-online-to-intune-connector-will-not-be-available-in-intune----3105122---"></a>Plan de cambio: el conector de Exchange Online a Intune no estará disponible en Intune <!-- 3105122 -->
 Para simplificar su experiencia con Exchange Online y Acceso condicional, deshabilitaremos el conector de "servicio a servicio" Exchange Online a Intune. Este cambio empezará con la actualización del servicio de diciembre y se completará con la actualización del servicio de febrero de 2019.
 
@@ -1286,27 +1334,6 @@ Cuando se implementen las actualizaciones, ya no necesitará usar los grupos de 
 No es necesario hacer nada mientras trasladamos sus asignaciones de directivas. Si está asignando directivas en la consola de Intune for Education, siga haciéndolo.
 
 Si está asignando directivas a los grupos de Azure AD mencionados en Intune en Azure, empiece por asignarlas a los grupos "Todos los usuarios" y "Todos los dispositivos" en la consola de Intune for Education. Cuando vea en la consola que los grupos de Azure AD han quedado obsoletos, deje de asignar directivas en Azure AD. Si no está usando los grupos cuyo nombre ha cambiado para ningún otro fin, debería eliminarlos.
-
-### <a name="plan-for-change-new-intune-support-experience-for-premier-customers"></a>Plan de cambio: nueva experiencia de soporte técnico de Intune para clientes Premier 
-Actualización del 4 de diciembre de 2018: Estamos intentando mejorar este proceso para que la creación de una solicitud de soporte técnico en MPO no se deshabilite el 3 de diciembre, sino en una fecha posterior. En breve le informaremos al respecto en el Centro de mensajes y actualizaremos esta entrada con objeto de compartir las escalas de tiempo de este cambio.
-
-Como cliente Premier de Microsoft, puede usar actualmente el portal de Microsoft Premier Online (MPO, premier.microsoft.com) e Intune en Azure (portal.azure.com) para crear solicitudes de soporte técnico de Intune. A partir del 3 de diciembre de 2018, y para continuar mejorando la experiencia de soporte técnico Premier, podrá crear solicitudes de soporte técnico solo en Intune en Azure.
-
-#### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
-Después del 3 de diciembre, no se podrán crear solicitudes de soporte técnico en MPO.  Si lo intenta, verá un símbolo del sistema que le obligará a dirigirse a Intune en Azure. En este caso, puede crear una solicitud que se enrutará al Soporte técnico de Microsoft especialista en Intune, para que diagnostiquen y resuelvan el problema de manera conveniente. Las solicitudes de soporte técnico creadas en el portal MPO no pueden verse en Azure Portal. Por lo tanto, no cree más solicitudes de soporte técnico en MPO.  
-
-Si usa administración de dispositivos móviles híbrida (MDM híbrida) o administración conjunta, puede seguir utilizando MPO para crear solicitudes de soporte técnico para Configuration Manager. No obstante, para crear solicitudes relacionadas con Intune, debe usar Azure Portal. Le recordamos que la MDM híbrida está en desuso y que debe planear el cambio a Intune en Azure tan pronto como sea posible. Para más información, vea [Move from Hybrid Mobile Device Management to Intune on Azure](https://aka.ms/hybrid_notification) (Pasar de la administración híbrida de dispositivos móviles (MDM) a Intune en Azure).
-
-Tenga en cuenta que solo los usuarios con roles de administrador global, administrador de servicios de Intune y administrador de soporte técnico de servicio pueden crear incidencias de soporte técnico en Azure Portal.
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>¿Qué puedo hacer para prepararme para este cambio?
-- Deje de usar MPO y utilice Intune en Azure para crear y administrar todas las solicitudes de soporte técnico de Intune.  
-- Avise al departamento de soporte técnico y actualice la documentación si es necesario.
-- Si tiene usuarios sin los roles de administrador global o administrador de servicios de Intune que están creando solicitudes de soporte técnico en MPO, asígneles el rol de administrador de soporte técnico de servicio en Azure Active Directory. De este modo podrán seguir creando incidencias de soporte técnico en Azure Portal.
-- Haga clic en Información adicional para obtener más información y vínculos útiles.
-
-#### <a name="additional-information"></a>Información adicional
-Para más información, vea la [entrada de blog del equipo de soporte técnico de Microsoft Intune](https://aka.ms/IntuneSupport_MPO_to_Azure).
 
 
 ### <a name="take-action-please-update-your-android-device-restriction-or-compliance-policy-password-settings-in-intune"></a>Realizar acción: actualice la configuración de restricción o contraseña de directiva de cumplimiento de dispositivos Android en Intune.

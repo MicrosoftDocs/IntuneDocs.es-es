@@ -14,12 +14,12 @@ ms.assetid: 47181d19-4049-4c7a-a8de-422206c4027e
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8b5f86a8f0d9beaef9e55d2281e3500e0c298a16
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 2992dbfef4c51b8550e748bde453c85070b6910b
+ms.sourcegitcommit: 1f544172299f0990e1e13cebf3830b8c0511d6ed
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182405"
+ms.lasthandoff: 01/21/2019
+ms.locfileid: "54418183"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>Restablecimiento o eliminación del código de acceso de un dispositivo en Intune
 
@@ -55,7 +55,8 @@ Para crear un nuevo código de acceso del perfil de trabajo, use la acción Rest
 
 ## <a name="reset-a-passcode"></a>Restablecer un código de acceso
 
-1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
+
+1. Inicie sesión en [Azure Portal](https://portal.azure.com) con cualquiera de los siguientes roles: Administrador global de Azure Active Directory, administrador del servicio de Intune de Azure Active Directory, operador del departamento de soporte técnico o administrador de roles. Para obtener una lista completa de roles y permisos, vea la [Tabla de RBAC en Intune](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
 2. Seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
 3. Seleccione **Dispositivos** y, después, **Todos los dispositivos**.
 4. En la lista de dispositivos que administra, seleccione un dispositivo y seleccione **...Más**. Luego, elija la acción remota de dispositivo **Quitar código de acceso**.
