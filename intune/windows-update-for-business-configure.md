@@ -13,12 +13,12 @@ ms.technology: ''
 ms.reviewer: coryfe
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: ccb91082a3226ec4091a139d31796fd77bdf0616
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.openlocfilehash: d0fcb021545d96fe8f5bfdf742dd4d181c91fb1a
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297390"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831571"
 ---
 # <a name="manage-software-updates-in-intune"></a>Administrar las actualizaciones de software en Intune
 
@@ -106,7 +106,7 @@ Después de crear anillos de actualización, debe asignarnos a grupos de disposi
 
    - **Impedir al usuario pausar las actualizaciones de Windows**: esta acción se permite de forma predeterminada. Use esta opción para impedir o permitir que los usuarios puedan pausar la instalación de actualizaciones desde *Configuración* en sus equipos. 
       
-   - **Modo de descarga de optimización de distribución**: la optimización de entrega ya no se configura como parte del Círculo de actualizaciones de Windows 10 en Actualizaciones de software. Ahora, la optimización de entrega se establece mediante la configuración del dispositivo. Sin embargo, las opciones de configuración anteriores seguirán estando disponibles en la consola. Puede quitar estas opciones de configuración anteriores editándolas para que se muestren como *No configuradas*, pero no se podrán modificar de otra forma. Para evitar conflictos entre la directiva nueva y la anterior, vea [Cambiar desde círculos de actualizaciones existentes a la optimización de entrega](delivery-optimization-windows.md#move-from-existing-update-rings-to-delivery-optimization) y, después, migre su configuración a un perfil de optimización de entrega. 
+   - **Modo de descarga de optimización de distribución**: la optimización de entrega ya no se configura como parte del Círculo de actualizaciones de Windows 10 en Actualizaciones de software. Ahora, la optimización de entrega se establece mediante la configuración del dispositivo. Sin embargo, las opciones de configuración anteriores seguirán estando disponibles en la consola. Puede quitar estas opciones de configuración anteriores editándolas para que se muestren como *No configuradas*, pero no se podrán modificar de otra forma. Para evitar conflictos entre la directiva nueva y la anterior, vea [Cambiar desde círculos de actualizaciones existentes a la optimización de entrega](delivery-optimization-windows.md#move-existing-update-rings-to-delivery-optimization) y, después, migre su configuración a un perfil de optimización de entrega. 
 
 5. Cuando haya terminado, seleccione **Aceptar**. En **Crear anillo de actualización**, seleccione **Crear**.
 

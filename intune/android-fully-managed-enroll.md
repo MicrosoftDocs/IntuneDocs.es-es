@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 45c1d1f293454b32b97c8147f08809565714743a
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: d457ca413f3069e8528dc6f4951f834e3f1dac6a
+ms.sourcegitcommit: 2a1720184cec577684a64af85d0d731693d11d81
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54387210"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55146917"
 ---
 # <a name="set-up-intune-enrollment-of-android-fully-managed-devices-preview"></a>Configuración de la inscripción en Intune de dispositivos Android totalmente administrados (versión preliminar)
 
@@ -38,7 +38,7 @@ Debe tener un inquilino independiente de Intune para administrar dispositivos An
 
 Los dispositivos deben cumplir estos requisitos para administrarse como dispositivo Android totalmente administrados:
 
-- SO Android versión 6.0 y posteriores.
+- Android OS versión 5.1 y versiones posteriores.
 - Los dispositivos deben ejecutar una versión de Android que tenga conectividad con Servicios de Google para móviles (GMS). Los dispositivos deben tener GMS disponible y deben ser capaces de conectarse a GMS.
 
 No hay ninguna restricción en cuanto al fabricante u OEM del dispositivo si se cumplen los requisitos anteriores.

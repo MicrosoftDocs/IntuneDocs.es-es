@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/15/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4082b845643aae47464e4df14ac6621fcf8f39cf
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: f3bea9b1678669aa568c44e63f57aebd832cf203
+ms.sourcegitcommit: 9739a9aab032ebb2c4b52ccfb454a9e0f78b2ee4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180258"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54751185"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>Administrar dispositivos de perfil de trabajo Android con Intune
 
@@ -63,11 +63,11 @@ Si va a usar el acceso condicional de Exchange ActiveSync en un dispositivo de p
 
 Las directivas de protección de aplicaciones que se aplican son totalmente compatibles con el perfil del trabajo y el perfil personal. Puede publicar aplicaciones de línea de negocio en la consola de publicación de aplicaciones de Android en https://play.google.com/apps/publish. Esta consola incluye una opción para convertir las aplicaciones en privadas para su organización. Para obtener más información, consulte [Incorporación de una directiva de cumplimiento de dispositivos de perfil de trabajo Android en Intune](compliance-policy-create-android-for-work.md). Para obtener información general sobre las directivas de protección de aplicaciones, consulte [¿Qué son las directivas de protección de aplicaciones?](app-protection-policy.md).
 
-## <a name="vpn-profiles"></a>Perfiles VPN
+## <a name="vpn-profiles"></a>Perfiles de VPN
 
 La compatibilidad con VPN es similar a los perfiles de VPN de Android. Android Enterprise dispone de las mismas opciones de configuración básicas y de los mismos proveedores de VPN, aunque con dos diferencias:
 
--  **VPN con ámbito de perfiles de trabajo**: las conexiones VPN se limitan solo a las aplicaciones implementadas en el perfil de trabajo. Solo las aplicaciones administradas con Android Enterprise pueden usar la conexión VPN. Las aplicaciones personales del dispositivo no pueden usar una conexión VPN administrada. Para obtener más información, consulte [Configuración de VPN en Android Enterprise](vpn-settings-android.md#android-for-work-vpn-settings).
+-  **VPN con ámbito de perfiles de trabajo**: las conexiones VPN se limitan solo a las aplicaciones implementadas en el perfil de trabajo. Solo las aplicaciones administradas con Android Enterprise pueden usar la conexión VPN. Las aplicaciones personales del dispositivo no pueden usar una conexión VPN administrada. Para obtener más información, consulte [Configuración de VPN en Android Enterprise](vpn-settings-android.md#android-enterprise-vpn-settings).
 
 -  **VPN específica de la aplicación**: la VPN específica de la aplicación puede configurarse en Intune si el proveedor VPN admite:
     - la configuración para una VPN específica de la aplicación,
