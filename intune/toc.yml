@@ -39,12 +39,16 @@ items:
     href: quickstart-email-profile.md
 - name: Tutoriales
   items:
+  - name: Tutorial en Intune en Azure Portal
+    href: tutorial-walkthrough-intune-portal.md
   - name: Protección del correo electrónico en dispositivos administrados
     href: tutorial-protect-email-on-enrolled-devices.md
   - name: Protección del correo electrónico en dispositivos no administrados
     href: tutorial-protect-email-on-unmanaged-devices.md
   - name: Uso de Autopilot para la inscripción de dispositivos Windows
     href: tutorial-use-autopilot-enroll-devices.md
+  - name: Uso de DEP para inscribir dispositivos iOS
+    href: tutorial-use-device-enrollment-program-enroll-ios.md
 - name: Conceptos
   items:
   - name: ¿Qué es la administración de dispositivos?
@@ -945,9 +949,9 @@ items:
       href: data-outside-protect.md
     - name: Evitar fugas de datos en dispositivos no administrados
       href: data-leak-prevention.md
-ms.openlocfilehash: 70240d3c6969ffe86d3b32b14b50b390020b10b0
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: 9ba87d149285aea0e39e790f7e620bba52bb47bd
+ms.sourcegitcommit: 36e41b5164a72bf54c80a9f5ad054f77b0e8c07e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55072497"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55504551"
