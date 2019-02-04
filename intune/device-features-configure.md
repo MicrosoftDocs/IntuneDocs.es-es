@@ -1,68 +1,64 @@
 ---
 title: Creación de perfiles de dispositivos iOS o Mac OS con Microsoft Intune - Azure |Microsoft Docs
-description: Agregue o cree un perfil de dispositivo para iOS o macOS y después configure los valores de AirPrint, AirPlay, diseño de la pantalla principal, notificaciones de aplicaciones, dispositivo compartido, inicio de sesión único y configuración de filtro de contenido web en Microsoft Intune.
+description: Agregue o cree un perfil de dispositivo para iOS o macOS y después configure los valores de AirPrint, diseño de la pantalla principal, notificaciones de aplicaciones, dispositivo compartido, inicio de sesión único y configuración de filtro de contenido web en Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/07/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.reviewer: heenamac
+ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2282ba4dd3caf8c71c8624884bc124393ea52d2f
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: 4542a65afa87668702620a1b50443c9844692a87
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203100"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831282"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>Agregar la configuración de características de dispositivos iOS o Mac OS en Intune
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)]
+Intune incluye muchas características y configuraciones que ayudan a los administradores a controlar dispositivos iOS y macOS. Por ejemplo, los administradores pueden:
 
-Las características del dispositivo le permiten controlar una serie de opciones y características en los dispositivos iOS y Mac OS, como:
+- Permitir a los usuarios acceder a impresoras AirPrint en la red
+- Agregar aplicaciones y carpetas a la pantalla principal, incluida la incorporación de nuevas páginas
+- Elegir si se muestran las notificaciones de aplicación y cómo se muestran
+- Configurar la pantalla de bloqueo para mostrar un mensaje o la etiqueta de recurso, especialmente para los dispositivos compartidos
+- Proporcionar a los usuarios una experiencia de inicio de sesión único para compartir las credenciales entre aplicaciones
+- Filtrar los sitios web que usan el lenguaje para adultos y permitir o bloquear sitios web específicos
 
-- Configuración de AirPrint y AirPlay
-- Diseño de la pantalla principal
-- Notificaciones de aplicaciones
-- Mensaje de la pantalla de bloqueo
-- Configuración del inicio de sesión único
-- Filtrar el contenido web
+Estas características están disponibles en Intune y el administrador puede configurarlas. Intune usa "perfiles de configuración" para crear y personalizar estas configuraciones para las necesidades de su organización. Después de agregar estas características en un perfil, puede insertar o implementar el perfil en dispositivos iOS y macOS de su organización.
 
-En este artículo se muestran los conceptos básicos para configurar perfiles de características de dispositivos iOS. A continuación, puede consultar otros artículos para configurar valores específicos de la plataforma para los dispositivos.
+En este artículo se muestra cómo crear un perfil de configuración de dispositivo. También puede ver todas las configuraciones disponibles para dispositivos [iOS](ios-device-features-settings.md) y [macOS](macos-device-features-settings.md).
 
 ## <a name="create-a-device-profile"></a>Creación del perfil de un dispositivo
 
-1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
-2. Seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
-3. Seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
-4. Escriba las propiedades siguientes:
+1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los servicios**, filtre por **Intune** > seleccione **Intune**.
+2. Seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
+3. Escriba las propiedades siguientes:
 
-   - **Nombre**: escriba un nombre descriptivo para el nuevo perfil.
-   - **Descripción**: escriba una descripción para el perfil. (Esta configuración es opcional, pero se recomienda aplicarla).
-   - **Plataforma**: seleccione su tipo de plataforma:
-     - **iOS**
-     - **macOS**
-   - **Tipo de perfil**: seleccione **Características del dispositivo**.
-   - **Configuración**: los valores de configuración dependerán de la plataforma que seleccione. En los siguientes temas se describen los valores de cada tipo de perfil:
+    - **Nombre**: escriba un nombre descriptivo para el nuevo perfil.
+    - **Descripción**: escriba una descripción para el perfil. Esta configuración es opcional pero recomendada.
+    - **Plataforma**: seleccione la plataforma:
+        - **iOS**
+        - **macOS**
+    - **Tipo de perfil**: seleccione **Características del dispositivo**.
+    - **Configuración**: especifique la configuración que desee definir. Para una lista de todas las configuraciones, y lo que hacen, consulte:
 
-     - [Configuración de AirPrint para iOS y MacOS](air-print-settings-ios-macos.md)
-     - [Configuración de AirPlay para iOS](airplay-settings-ios.md)
-     - [Configuración de diseño de pantalla principal para iOS](home-screen-settings-ios.md)
-     - [Configuración de notificaciones de aplicación para iOS](app-notification-settings-ios.md)
-     - [Configuración del mensaje de la pantalla de bloqueo para iOS](shared-device-settings-ios.md)
-     - [Configuración del inicio de sesión único de Intune para dispositivos iOS](sso-ios.md)
-     - [Configuración de filtro de contenido web para iOS](web-content-filter-settings-ios.md)
+        - [iOS](ios-device-features-settings.md)
+        - [macOS](macos-device-features-settings.md)
 
-5. Cuando haya terminado, seleccione **Aceptar**y elija **Crear** para guardar los cambios.
+4. Cuando haya terminado, seleccione **Aceptar**y elija **Crear** para guardar los cambios.
 
-Se creará el perfil y aparecerá en la lista.
+El perfil se crea y se muestra en la lista. Asegúrese de [asignar el perfil](device-profile-assign.md) y [supervise su estado](device-profile-monitor.md).
 
-## <a name="next-step"></a>Paso siguiente
+## <a name="next-steps"></a>Pasos siguientes
 
-Para asignar este perfil a grupos, consulte [Asignación de perfiles de dispositivo](device-profile-assign.md).
+Una vez creado el perfil, está listo para asignarlo. Después, [asigne el perfil](device-profile-assign.md) y [supervise el estado](device-profile-monitor.md).
+
+Ver todas las configuraciones de características de dispositivo para dispositivos [iOS](ios-device-features-settings.md) y [macOS](macos-device-features-settings.md).

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2018
+ms.date: 01/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,24 +13,24 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a338cce6249cc7c5214a9d69a897cad3eaa09e93
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 54af9b1ef7872caddb972515d9c4765f8492bf00
+ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188405"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54831367"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>Adición y uso de la configuración de Wi-Fi en los dispositivos en Microsoft Intune
 
-Use perfiles de Wi-Fi de Microsoft Intune para asignar la configuración de red inalámbrica a los usuarios y los dispositivos de la organización. Al asignar un perfil de Wi-Fi, los usuarios pueden acceder a la red Wi-Fi de su organización sin tener que configurarla ellos mismos.
+Wi-Fi es una red inalámbrica que muchos dispositivos móviles utilizan para acceder a la red. Microsoft Intune incluye configuraciones Wi-Fi integradas que se pueden implementar en usuarios y dispositivos de su organización. Este grupo de configuración se conoce como un "perfil" y se puede asignar a distintos usuarios y grupos. Una vez asignado, los usuarios acceden a la red Wi-Fi de la organización sin tener que configurarla ellos mismos.
 
 Por ejemplo, instale una nueva red Wi-Fi denominada Contoso Wi-Fi. Desea configurar todos los dispositivos iOS para conectarse a esta red. Este es el proceso:
 
 1. Cree un perfil de Wi-Fi que contenga la configuración para conectarse a la red inalámbrica Contoso Wi-Fi.
-2. Asigne el perfil a un grupo que contenga todos los usuarios de dispositivos iOS.
+2. Asigne el perfil a un grupo que incluya todos los usuarios de dispositivos iOS.
 3. Los usuarios encuentran la nueva red Contoso Wi-Fi en la lista de redes inalámbricas de su dispositivo. Pueden conectarse a ella fácilmente con el método de autenticación de su elección.
 
-Use los pasos de este artículo para crear un perfil de Wi-Fi. A continuación, revise los temas sobre la configuración y los detalles específicos de la plataforma.
+En este artículo se enumeran los pasos para crear un perfil Wi-Fi. También incluye vínculos que describen las distintas configuraciones para cada plataforma.
 
 ## <a name="supported-device-platforms"></a>Plataformas de dispositivos compatibles
 
@@ -45,7 +45,7 @@ Los perfiles de Wi-Fi admiten las siguientes plataformas de dispositivo:
 > [!NOTE]
 > Para dispositivos que ejecutan Windows 8.1, puede importar una configuración de Wi-Fi que se haya exportado anteriormente desde otro dispositivo.
 
-## <a name="create-a-wi-fi-device-profile"></a>Creación de un perfil para dispositivos Wi-Fi
+## <a name="create-a-device-profile"></a>Creación del perfil de un dispositivo
 
 1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**. 
 2. Seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
@@ -56,7 +56,6 @@ Los perfiles de Wi-Fi admiten las siguientes plataformas de dispositivo:
     - **Android Enterprise**
     - **iOS**
     - **macOS**
-    - **Windows Phone 8.1**
     - **Windows 8.1 y versiones posteriores**
     - **Windows 10 y versiones posteriores**
 
@@ -80,4 +79,4 @@ Los perfiles de Wi-Fi admiten las siguientes plataformas de dispositivo:
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Se crea el perfil, pero no hacen nada. A continuación, [asigne este perfil](device-profile-assign.md).
+Se crea el perfil, pero no hacen nada. Después, [asigne este perfil](device-profile-assign.md) y [supervise su estado](device-profile-monitor.md).

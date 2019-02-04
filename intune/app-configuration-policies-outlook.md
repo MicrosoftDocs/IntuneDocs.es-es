@@ -6,7 +6,7 @@ author: Erikre
 ms.author: erikre
 ms.reviewer: smithre4
 manager: dougeby
-ms.date: 10/04/2018
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 691029cc7b9fd8880c5440a84b95bbf2462920d6
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: 433d15d91bc32ef409c9a89c4d71cacb7478e74d
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180330"
+ms.lasthandoff: 01/25/2019
+ms.locfileid: "55068312"
 ---
 # <a name="microsoft-outlook-configuration-settings"></a>Opciones de configuración de Microsoft Outlook 
 
@@ -29,18 +29,9 @@ Para crear una directiva de configuración de aplicaciones para dispositivos iOS
 
 ## <a name="configuration-settings"></a>Opciones de configuración
 
-Al agregar una directiva de configuración de Intune, puede establecer una configuración específica para configurar Microsoft Outlook. En el panel **Configuración** puede establecer la configuración de la cuenta de correo electrónico.
+Al agregar una directiva de configuración de Intune, puede especificar una configuración para configurar Microsoft Outlook en iOS y Android. En el panel Opciones de configuración puede especificar la configuración de la cuenta de correo electrónico y configurar opciones específicas de la aplicación. Además, puede configurar estas opciones y/o usar pares nombre/valor.
 
-### <a name="basic-authentication-email-account-settings"></a>Configuración de la cuenta de correo electrónico de autenticación básica
-Outlook para iOS y Android ofrece a los administradores de Exchange la posibilidad de "insertar" configuraciones de cuenta en sus usuarios locales que usan autenticación básica con el protocolo ActiveSync. Para más información, consulte [Programa de instalación de cuenta en Outlook para iOS y Android mediante la autenticación básica](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/account-setup). Para habilitar la configuración del programa de instalación de la cuenta, puede configurar las siguientes opciones:
-
-- **Servidor de correo electrónico**: escriba el nombre de host del servidor de Exchange local (por ejemplo, mail.contoso.com).
-- **Nombre de la cuenta de correo electrónico**: indique el nombre para mostrar en la cuenta de correo electrónico. Este nombre se muestra en los dispositivos de los usuarios.
-- **Atributo de nombre de usuario de AAD**: este nombre es el atributo que Intune obtiene de Azure Active Directory (Azure AD). Intune genera dinámicamente el nombre de usuario que usa este perfil. Existen varias opciones:
-  - **Nombre principal de usuario**: obtiene el nombre, como `user1` o `user1@contoso.com`.
-  - **Dirección SMTP principal**: obtiene el nombre en formato de dirección de correo electrónico, como `user1@contoso.com`.
-- **Atributo Dirección de correo electrónico de AAD**: elija cómo se genera la dirección de correo electrónico para el usuario. Seleccione **Nombre principal de usuario** (`user1@contoso.com` o `user1`) para usar el nombre principal completo como dirección de correo electrónico o **Dirección SMTP principal** (`user1@contoso.com`) para usar la dirección SMTP principal para iniciar sesión en Exchange. La recomendación es seleccionar **Dirección SMTP principal**.
-- **Dominio de la cuenta** (opcional): el dominio de la cuenta.
+Para información de configuración de la cuenta de Outlook y los pasos de procedimientos para dispositivos iOS y Android en Microsoft Intune, consulte [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) (Implementación de Outlook para opciones de configuración de aplicaciones iOS y Android).
 
 ## <a name="next-steps"></a>Pasos siguientes
 [Configuración de las opciones de correo electrónico en Intune](email-settings-configure.md)

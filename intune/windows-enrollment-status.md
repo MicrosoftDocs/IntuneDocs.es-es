@@ -16,12 +16,12 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: b87e0d24c000e3083eaebeac1a4cf6026d495ccf
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.openlocfilehash: f01009a0cb35f4270bdb1e768ee781172c8bfa2f
+ms.sourcegitcommit: 17f58d35a6bdff3e179662f3731fc74d39144470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032102"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55105194"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>Configurar una página de estado de inscripción
  
@@ -32,7 +32,7 @@ Durante la configuración del dispositivo mediante Intune, la página Estado de 
 - Bloquear el uso hasta que finalice la instalación.
 - Especificar lo que puede hacer un usuario si se produce un error en la configuración del dispositivo.
 
-También puede establecer el orden de prioridad para cada perfil para tener en cuenta las asignaciones de perfil en conflicto del mismo usuario o dispositivo.
+También puede establecer el orden de prioridad para cada perfil para tener en cuenta las asignaciones de perfil en conflicto con el mismo usuario o dispositivo.
 
  
 ## <a name="turn-on-default-enrollment-status-page-for-all-users"></a>Activar la página de estado de inscripción predeterminada para todos los usuarios

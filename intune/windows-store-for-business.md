@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/01/2018
+ms.date: 01/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1584344907df168a98f947e187d6f0f0ef4a492a
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d6ee36785c4134dd1c346bdc464096e832df3a9c
+ms.sourcegitcommit: f854ed8619ac66fe626198d8e4a8cac2e0c0710a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187929"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "54460062"
 ---
 # <a name="how-to-manage-apps-you-purchased-from-the-microsoft-store-for-business-with-microsoft-intune"></a>Cómo administrar las aplicaciones adquiridas a través de la Tienda Microsoft para Empresas con Microsoft Intune
 
@@ -52,12 +52,12 @@ Además, los conjuntos relacionados y las aplicaciones con licencia sin conexió
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>Asociar su cuenta de la Tienda Microsoft para Empresas con Intune
 Antes de habilitar la sincronización en la consola de Intune, debe configurar la cuenta de la tienda para usar Intune como herramienta de administración:
-1. Asegúrese de que inicia sesión en la Tienda para empresas con la misma cuenta de inquilino que usa para iniciar sesión en Intune.
-2. En la Tienda para empresas, seleccione **Configuración** > **Herramientas de administración**.
-3. En la página de Herramientas de administración, elija primero **Agregar una herramienta de administración** y, después, **Microsoft Intune**.
+1. Asegúrese de que inicia sesión en [Microsoft Store para Empresas](https://www.microsoft.com/business-store) con la misma cuenta de inquilino que usa para iniciar sesión en Intune.
+2. En Microsoft Store para Empresas, elija la pestaña **Administrar**, seleccione **Configuración** y elija la pestaña **Distribuir**.
+3. Si no tiene específicamente **Microsoft Intune** disponible como una herramienta de administración de dispositivos móviles, elija **Add management tool** (Agregar herramienta de administración) para agregar **Microsoft Intune**. Si no tiene **Microsoft Intune** activado como su herramienta de administración de dispositivos móviles, haga clic en **Activar** junto a **Microsoft Intune**. Tenga en cuenta que debe activar **Microsoft Intune** en lugar de **Microsoft Intune Enrollment** (Inscripción a Microsoft Intune).
 
 > [!NOTE]
-> Anteriormente solo podía asociar una herramienta de administración para asignar aplicaciones con la Tienda Microsoft para Empresas. Ahora puede asociar varias herramientas de administración con la tienda, por ejemplo, Intune y Configuration Manager.
+> Anteriormente solo podía asociar una herramienta de administración para asignar aplicaciones con la Tienda Microsoft para Empresas. Ahora puede asociar varias herramientas de administración con la tienda, por ejemplo, Intune y Configuration Manager. 
 
 Ya puede continuar y configurar la sincronización en la consola de Intune.
 
@@ -92,12 +92,12 @@ Al asignar una aplicación de la Tienda Microsoft para Empresas, cada usuario qu
 
 ## <a name="remove-apps"></a>Quitar aplicaciones
 
-Para quitar una aplicación que se sincroniza desde Microsoft Store para Empresas, debe iniciar sesión en Microsoft Store para Empresas y reembolsar la aplicación.
+Para quitar una aplicación que se sincroniza desde Microsoft Store para Empresas, debe iniciar sesión en Microsoft Store para Empresas y reembolsar la aplicación. El proceso es el mismo tanto si la aplicación es gratuita como si no lo es. Para una aplicación gratuita, la tienda reembolsará 0 $. En el ejemplo siguiente se muestra un reembolso por una aplicación gratuita. 
 
 ![Captura de pantalla de los detalles para quitar la aplicación](./media/microsoft-store-for-business-01.png)
 
 > [!NOTE]
-> Quitar la visibilidad de una aplicación en la tienda privada no impedirá que Intune la sincronice. Debe reembolsar la aplicación.
+> Quitar la visibilidad de una aplicación en la tienda privada no impedirá que Intune la sincronice. Debe reembolsar la aplicación para quitarla completamente.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

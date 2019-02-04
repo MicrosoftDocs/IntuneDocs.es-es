@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2019
+ms.date: 01/24/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 95f41985f11803e6e1a474b38a2af6a891ddafcb
-ms.sourcegitcommit: bf1549eb59adc31ead8601e40253a7024b22853c
+ms.openlocfilehash: c615dd2dda680cd106fd099d180f57ce2a5ebfef
+ms.sourcegitcommit: 17f58d35a6bdff3e179662f3731fc74d39144470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/07/2019
-ms.locfileid: "54067489"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55105228"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>Incorporación de aplicaciones a Microsoft Intune 
 
@@ -52,7 +52,7 @@ En la tabla siguiente se enumeran los tipos de aplicaciones específicas y cómo
 | Aplicaciones de App Store  | Aplicación de la tienda  | Seleccione **iOS** como el **tipo de aplicación**, busque la aplicación y selecciónela en Intune. |
 | Aplicaciones de la Tienda Windows Phone 8.1  | Aplicación de la tienda  | Seleccione **Windows Phone 8.1** como el **tipo de aplicación** y escriba la dirección URL de Microsoft Store de la aplicación. |
 | Aplicaciones de Microsoft Store  | Aplicación de la tienda  | Seleccione **Windows** como el **tipo de aplicación** y escriba la dirección URL de Microsoft Store de la aplicación. |
-| Aplicaciones del perfil del trabajo Android | Aplicación de la tienda  | Busque y apruebe la aplicación de trabajo Android en Google Play Store administrado.  |
+| Aplicaciones administradas de Google Play | Aplicación de la tienda  | Seleccione **Google Play administrado** para **Tipo de aplicación**, busque la aplicación y selecciónela en Intune. |
 | Aplicaciones de Office 365 para Windows 10  | Aplicación de la tienda (Office 365) | Seleccione **Windows 10** en el **conjunto de aplicaciones de Office 365** como el **tipo de aplicación** y después seleccione la aplicación de Office 365 que quiera instalar.  |
 | Aplicaciones de Office 365 para macOS | Aplicación de la tienda (Office 365) | Seleccione **macOS** en el **conjunto de aplicaciones de Office 365** como el **tipo de aplicación** y después seleccione el paquete de aplicación de Office 365. |
 | Aplicaciones de línea de negocio (LOB) Android | Aplicación LOB | Seleccione la aplicación de **línea de negocio** como **tipo de aplicación**, seleccione el **archivo de paquete de aplicación** y después introduzca un archivo de instalación de Android con la extensión **.apk** .  |
@@ -119,7 +119,7 @@ Las aplicaciones administradas de Intune también pueden habilitar la protecció
 ### <a name="understanding-licensed-apps"></a>Información sobre el uso de aplicaciones con licencia
 Además de comprender las aplicaciones web, las aplicaciones de la tienda y las aplicaciones LOB, también debe conocer las diferencias de las aplicaciones del programa de compras por volumen y las aplicaciones con licencia, como, por ejemplo: 
 - **Programa de Compras por Volumen (VPP) de Apple para empresas (iOS)**: la App Store de iOS permite comprar varias licencias de una aplicación que quiera ejecutar en la empresa. Comprar varias copias permite administrar de manera eficaz las aplicaciones de la empresa. Para obtener más información, consulte [Administrar aplicaciones de iOS compradas a través de un programa de compras por volumen con Microsoft Intune](vpp-apps-ios.md).
-- **Perfil de trabajo Android**: La forma de asignar aplicaciones a dispositivos de perfil de trabajo Android es diferente a cómo las asigna a dispositivos Android estándar. Todas las aplicaciones que se instalen para perfiles de trabajo Android proceden de Google Play Store administrado. Inicie sesión en la tienda, busque las aplicaciones que desee y apruébelas. La aplicación, a continuación, aparece en el nodo **Aplicaciones con licencia** de Azure Portal y puede administrar la asignación de las aplicaciones como lo haría con cualquier otra aplicación.
+- **Perfil de trabajo Android**: La forma de asignar aplicaciones a dispositivos de perfil de trabajo Android es diferente a cómo las asigna a dispositivos Android estándar. Todas las aplicaciones que se instalen para perfiles de trabajo Android proceden de Google Play Store administrado. Utilice Intune para buscar las aplicaciones que desee y apruébelas. La aplicación, a continuación, aparece en el nodo **Aplicaciones con licencia** de Azure Portal y puede administrar la asignación de las aplicaciones como lo haría con cualquier otra aplicación.
 - **Microsoft Store para Empresas (Windows 10)**: en Microsoft Store para Empresas puede buscar y comprar aplicaciones para su organización, tanto sueltas como por volumen. Si conecta la tienda a Microsoft Intune, puede administrar las aplicaciones adquiridas por volumen en Azure Portal. Para más información, vea [Administrar las aplicaciones de Microsoft Store para Empresas](windows-store-for-business.md).
 
     > [!NOTE]

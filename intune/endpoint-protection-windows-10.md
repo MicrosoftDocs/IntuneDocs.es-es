@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/26/2018
+ms.date: 01/23/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: ilwu
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 5981b3dbb74209fbd4d7f0ab03adb5a35a41954b
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: d9dfa25c2528ea2f929c3db6714bc68fee013a7b
+ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203542"
+ms.lasthandoff: 01/26/2019
+ms.locfileid: "55072582"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>Configuración de Windows 10 (y versiones posteriores) para proteger dispositivos mediante Intune
 
@@ -152,6 +152,9 @@ Compatible con las siguientes ediciones de Windows 10:
 La configuración base es la configuración de BitLocker universal para todos los tipos de unidades de datos. Esta configuración administra las tareas de cifrado o las opciones de configuración de unidades que el usuario final puede modificar en todos los tipos de unidades de datos.
 
 - **Advertencia para otro cifrado de disco**: establezca esta opción en **Bloquear** para deshabilitar el mensaje de advertencia si hay otro servicio de cifrado de disco activado en el dispositivo. **No configurado**: (valor predeterminado) permite que se muestren estos mensajes de advertencia.
+    - **Permitir a los usuarios estándar habilitar el cifrado durante la unión a Azure AD**: cuando se elige **Permitir**, los usuarios convencionales y lo que no son administradores puede habilitar el cifrado de BitLocker cuando el usuario ha iniciado sesión. Esta configuración solo se aplica a dispositivos unidos a Azure Active Directory (Azure ADJ). **No configurada** solo permite a los administradores habilitar el cifrado de BitLocker en el dispositivo.
+      
+      Esta configuración solo se aplica a dispositivos unidos a Azure Active Directory (Azure ADJ). También requiere que la opción **Advertencia para otro cifrado de disco** esté establecida en **Bloqueo**.
 - **Configurar métodos de cifrado**: **habilite** esta opción para configurar algoritmos de cifrado para el sistema operativo, los datos y las unidades extraíbles. Cuando está establecido en **No configurado** (valor predeterminado), BitLocker usa XTS-AES de 128 bits como método de cifrado predeterminado o el método de cifrado especificado por cualquier script de instalación.
   - **Cifrado para unidades de sistema operativo**: seleccione el método de cifrado para las unidades del sistema operativo. Se recomienda que use el algoritmo XTS-AES.
   - **Cifrado para unidades de datos fijas**: seleccione el método de cifrado para las unidades de datos fijas (integradas). Se recomienda que use el algoritmo XTS-AES.
