@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2019
+ms.date: 01/25/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,14 +16,14 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 135aa120d8c0e441c59e9b9b3c5bb8ee6aa17229
-ms.sourcegitcommit: 8c1590db761cc411369cae26677f909d3a8ca297
+ms.openlocfilehash: a2f339c9ecf79f3c2e4e87eccd9a5f3b80046aa0
+ms.sourcegitcommit: 17f58d35a6bdff3e179662f3731fc74d39144470
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/12/2019
-ms.locfileid: "54239581"
+ms.lasthandoff: 01/28/2019
+ms.locfileid: "55105211"
 ---
-# <a name="assign-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Asignar aplicaciones de Google Play administrado a dispositivos de Android Enterprise con Intune
+# <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>Incorporación de aplicaciones de Google Play administrado a dispositivos de Android Enterprise con Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
@@ -37,7 +37,36 @@ Además, si ha creado sus propias aplicaciones de línea de negocio (LOB), puede
 
 Asegúrese de que ha configurado Intune y perfiles de trabajo Android para que trabajen juntos en la carga de trabajo **Inscripción de dispositivo** de Azure Portal. Para obtener más información, vea [Inscripción de dispositivos Android](android-work-profile-enroll.md).
 
-## <a name="synchronize-an-app-from-the-managed-google-play-store"></a>Sincronización de una aplicación desde Google Play Store administrado
+>[!NOTE]
+>Cuando trabaja con Microsoft Intune, se recomienda usar el explorador Microsoft Edge o Google Chrome.
+
+## <a name="managed-google-play-app-type"></a>Tipo de aplicaicón de Google Play administrado 
+El tipo de aplicación de **Google Play administrado** le permitirá agregar específicamente [aplicaciones de Google Play administrado](https://play.google.com/work/search?q=microsoft&c=apps) a Intune. Como administrador de Intune, ahora podrá examinar, buscar, aprobar, sincronizar y asignar aplicaciones de Google Play administrado aprobadas dentro de Intune.  Ya no necesita ir a la consola de Google Play administrado por separado ni tiene que volver a autenticarse. 
+
+> [!NOTE]
+> Si prefiere sincronizar una aplicación de Google Play administrado con Intune, consulte [Sincronización de una aplicación de Google Play administrado con Intune](apps-add-android-for-work.md#synchronize-a-managed-google-play-app-with-intune-alternative)
+
+## <a name="add-a-managed-google-play-app-using-intune"></a>Incorporación de una aplicación de Google Play administrado mediante Intune
+
+1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
+2. Seleccione **Todos los servicios** > **Intune**.  
+    Intune se encuentra en la sección **Supervisión y administración**.
+3. En el panel **Intune**, seleccione **Aplicaciones cliente** > **Aplicaciones**.
+5. En el panel **Aplicaciones**, seleccione **Agregar**.
+6. En el cuadro de lista desplegable **Tipo de aplicación**, seleccione **Google Play administrado**.
+7. Seleccione **Google Play administrado - Aprobar aplicaciones** para buscar aplicaciones de Google Play administrado aprobadas.
+8. Haga clic en cada aplicación que desea incluir. A continuación, c
+9. Haga clic en **Aprobar** para aprobar la aplicación de Google Play administrado y haga clic en **Aprobar** para aceptar los permisos de aplicación. 
+10. Haga clic en **Aceptar** para incluir las aplicaciones.
+11. Haga clic en **Agregar** en el panel **Aprobar aplicación** para realizar la sincronización con el servicio de Google Play administrado.
+
+## <a name="synchronize-a-managed-google-play-app-with-intune-alternative"></a>Sincronización de una aplicación de Google Play administrado con Intune (alternativa)
+Si prefiere sincronizar una aplicación de Google Play administrado con Intune, en lugar de agregarla directamente mediante Intune, use los pasos siguientes.
+
+> [!IMPORTANT]
+> La información proporcionada a continuación es un método alternativo para agregar una aplicación de Google Play administrado mediante Intune, como se describió anteriormente.
+
+### <a name="synchronize-an-app-from-the-managed-google-play-store"></a>Sincronización de una aplicación desde Google Play Store administrado
 
 1. Vaya a [Google Play Store administrado](https://play.google.com/work). Inicie sesión con la misma cuenta que usó para configurar la conexión entre Intune y Android Enterprise.
 2. Busque en la tienda y seleccione la aplicación que desea asignar mediante Intune.
@@ -58,7 +87,7 @@ Asegúrese de que ha configurado Intune y perfiles de trabajo Android para que t
 
     La aplicación se aprueba y se muestra en la consola de administración de TI. Después, puede [sincronizar la aplicación de perfil de trabajo Android con Intune](apps-add-android-for-work.md#sync-a-managed-google-play-app-with-intune). 
 
-## <a name="sync-a-managed-google-play-app-with-intune"></a>Sincronizar una aplicación administrada en Google Play con Intune
+### <a name="sync-a-managed-google-play-app-with-intune"></a>Sincronizar una aplicación administrada en Google Play con Intune
 
 Si se ha aprobado una aplicación desde la tienda y todavía no se ve en el nodo **Aplicaciones con licencia** de la carga de trabajo **Aplicaciones cliente**, fuerce una sincronización inmediata como sigue:
 
@@ -71,7 +100,9 @@ Si se ha aprobado una aplicación desde la tienda y todavía no se ve en el nodo
 6. En el panel de la carga de trabajo **Aplicaciones cliente**, seleccione **Aplicaciones**.  
     Se muestra la aplicación Google Play administrado que se ha publicado recientemente.
 
-Cuando la aplicación se muestre en el nodo **Licencias de aplicación** del panel de la carga de trabajo **Aplicaciones cliente**, podrá [asignarla igual que haría con cualquier otra aplicación](/intune-azure/manage-apps/deploy-apps). Puede asignar la aplicación solo en grupos de usuarios.
+## <a name="assigning-the-managed-google-play-app"></a>Asignación de una aplicación de Google Play administrado
+
+Cuando la aplicación se muestre en el nodo **Licencias de aplicación** del panel de la carga de trabajo **Aplicaciones cliente**, podrá [asignarla igual que haría con cualquier otra aplicación](/intune-azure/manage-apps/deploy-apps) asignando la aplicación a grupos de usuarios.
 
 Después de asignar la aplicación, se instala en los dispositivos que ha especificado. Al usuario del dispositivo no se le pide que apruebe la instalación.
 
@@ -106,6 +137,9 @@ Como alternativa, puede configurar Google Play para que vuelva a aprobar automá
 4. Después de haber publicado la aplicación, inicie sesión en [Google Play Store administrado](https://play.google.com/work) con la misma cuenta que usó para configurar la conexión entre Intune y Android Enterprise.
 5. En el nodo **Aplicaciones** de la tienda, compruebe que se muestra la aplicación publicada.  
     La sincronización de la aplicación con Intune se ha aprobado automáticamente.
+
+## <a name="delete-managed-google-play-apps"></a>Eliminación de aplicaciones de Google Play administrado 
+Cuando sea necesario, podrá eliminar aplicaciones de Google Play administrado desde Microsoft Intune. Para eliminar una aplicación de Google Play administrado, abra Microsoft Intune en Azure Portal y seleccione **Aplicaciones cliente** > **Aplicaciones**. En la lista de aplicaciones, seleccione los puntos suspensivos (...) a la derecha de la aplicación de Google Play administrado y luego seleccione **Eliminar** en la lista que aparece. Cuando se elimina una aplicación de Google Play administrada de la lista de aplicaciones, automáticamente se desactiva la aprobación de la aplicación administrada de Google Play.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

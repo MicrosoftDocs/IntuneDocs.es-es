@@ -231,19 +231,19 @@ items:
       href: troubleshoot-device-enrollment-in-intune.md
   - name: Establecer el cumplimiento de los dispositivos
     items:
-    - name: Información general sobre el cumplimiento de los dispositivos
+    - name: Información general sobre el cumplimiento
       href: device-compliance-get-started.md
-    - name: Creación de una directiva de Android
+    - name: Cumplimiento de Android
       href: compliance-policy-create-android.md
-    - name: Crear directiva de perfil de trabajo de Android
+    - name: Cumplimiento de Android Enterprise
       href: compliance-policy-create-android-for-work.md
-    - name: Creación de una directiva para habilitar Google Play Protect
+    - name: Activación de Google Play Protect
       href: compliance-policy-create-google-play-protect.md
-    - name: Creación de una directiva de iOS
+    - name: Cumplimiento de iOS
       href: compliance-policy-create-ios.md
-    - name: Creación de una directiva de Windows
+    - name: Cumplimiento de Windows
       href: compliance-policy-create-windows.md
-    - name: Directiva basada en ubicación
+    - name: Cumplimiento basado en la ubicación
       href: use-network-locations.md
     - name: Evaluar una directiva
       href: policy-evaluate.md
@@ -251,39 +251,39 @@ items:
       href: actions-for-noncompliance.md
     - name: Supervisión del cumplimiento del dispositivo
       href: compliance-policy-monitor.md
-  - name: Configurar dispositivos
+  - name: Configuración de las opciones de dispositivo
     items:
-    - name: Configuración de dispositivos mediante perfiles
+    - name: Información general sobre la configuración de dispositivo
       href: device-profiles.md
     - name: Perfiles de dispositivo
       href: device-profile-create.md
     - name: Plantillas administrativas
       href: administrative-templates-windows.md
-    - name: Características de dispositivos (iOS y macOS)
+    - name: Características del dispositivo
       href: device-features-configure.md
-    - name: Restricciones de dispositivos
+    - name: Restricción de las características y la configuración de dispositivo
       href: device-restrictions-configure.md
-    - name: Optimización de entrega
+    - name: Publicación de actualizaciones
       href: delivery-optimization-windows.md
-    - name: Actualización de edición y conmutador de modo
+    - name: Actualización de ediciones y modo S
       href: edition-upgrade-configure-windows-10.md
-    - name: Configuración de correo electrónico
+    - name: Configuración del correo electrónico
       href: email-settings-configure.md
-    - name: Configuración de quiosco
+    - name: Activación del modo de pantalla completa
       href: kiosk-settings.md
-    - name: Configuración de VPN
+    - name: Adición de VPN
       href: vpn-settings-configure.md
       items:
       - name: VPN por aplicación para Android
         href: android-pulse-secure-per-app-vpn.md
       - name: VPN por aplicación para iOS
         href: vpn-setting-configure-per-app.md
-    - name: Configuración de Wi-Fi
+    - name: Adición de una red Wi-Fi
       href: wi-fi-settings-configure.md
       items:
       - name: Wi-Fi con una clave precompartida
         href: wi-fi-profile-shared-key.md
-    - name: Configuración de entornos educativos
+    - name: Aplicación educativa Hacer un examen
       href: education-settings-configure.md
     - name: Dispositivos multiusuario compartidos
       href: shared-user-device-settings.md
@@ -295,7 +295,7 @@ items:
       href: device-profile-assign.md
     - name: Supervisión de perfiles
       href: device-profile-monitor.md
-    - name: Solución de problemas de perfiles
+    - name: Preguntas y respuestas habituales
       href: device-profile-troubleshoot.md
   - name: Protección de datos de dispositivos
     items:
@@ -854,6 +854,8 @@ items:
       items:
       - name: Referencia de API de Intune
         href: https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview
+    - name: Graph APIs utilizadas para configurar dispositivos
+      href: graph-apis-used-by-intune-device-configuration-windows.md
 - name: Recursos
   items:
   - name: Guía de documentación de Microsoft Intune
@@ -949,9 +951,9 @@ items:
       href: data-outside-protect.md
     - name: Evitar fugas de datos en dispositivos no administrados
       href: data-leak-prevention.md
-ms.openlocfilehash: 9ba87d149285aea0e39e790f7e620bba52bb47bd
-ms.sourcegitcommit: 36e41b5164a72bf54c80a9f5ad054f77b0e8c07e
+ms.openlocfilehash: 456d3f4205ca9e24c4358c97a3a2f6a33d1a421f
+ms.sourcegitcommit: 4a1ac07efd66b45c1435649bcd7215adbd84898f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55504551"
+ms.lasthandoff: 02/01/2019
+ms.locfileid: "55645196"
