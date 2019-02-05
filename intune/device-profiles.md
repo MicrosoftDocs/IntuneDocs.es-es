@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 01/29/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: bc28bca31c43140a7bca528655825bab60c53be1
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: cf2bfbc992d4577e345b73f07ec465990feac317
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203525"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55229991"
 ---
 # <a name="apply-features-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>Aplicación de la configuración de características en dispositivos con perfiles de dispositivos Microsoft Intune
 
@@ -123,7 +123,7 @@ Esta característica es compatible con:
 - Android Enterprise
 - iOS
 - macOS
-- Windows 10
+- Windows 10 y versiones posteriores
 - Windows 10 Team
 
 ## <a name="delivery-optimization"></a>Optimización de entrega
@@ -174,7 +174,7 @@ Esta característica es compatible con:
 - Android
 - iOS
 - Windows Phone 8,1
-- Windows 10
+- Windows 10 y versiones posteriores
 
 ## <a name="vpn"></a>VPN
 
@@ -189,7 +189,7 @@ Esta característica es compatible con:
 - macOS
 - Windows Phone 8,1
 - Windows 8.1
-- Windows 10
+- Windows 10 y versiones posteriores
 
 ## <a name="wi-fi"></a>Wi-Fi
 
@@ -201,6 +201,7 @@ Esta característica es compatible con:
 - iOS
 - macOS
 - Windows 8.1 (solo importación)
+- Windows 10 y versiones posteriores
 
 ## <a name="esim-cellular---public-preview"></a>Telefonía móvil eSIM: versión preliminar pública
 
@@ -241,7 +242,7 @@ Esta característica es compatible con:
 - iOS
 - Windows Phone 8,1
 - Windows 8.1
-- Windows 10
+- Windows 10 y versiones posteriores
 
 ## <a name="windows-information-protection-profile"></a>Perfil de Windows Information Protection
 

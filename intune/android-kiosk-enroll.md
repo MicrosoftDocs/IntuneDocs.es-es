@@ -16,12 +16,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 4a6818f67ab4e3b04364b412fb8ecf71227328d4
-ms.sourcegitcommit: 911923e9fe0eed52b1c93e400f776956835e582f
+ms.openlocfilehash: b3ced7e52de05e98c2f4a7ec9a828972ab60cf71
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/17/2019
-ms.locfileid: "54386919"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290730"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>Configuración de la inscripción en Intune de dispositivos dedicados de Android Enterprise
 
@@ -101,7 +101,7 @@ Ya puede [inscribir los dispositivos dedicados](android-dedicated-devices-fully-
 
 ## <a name="managing-apps-on-android-dedicated-devices"></a>Administración de aplicaciones en dispositivos dedicados de Android
 
-Solo las aplicaciones que tienen como tipo de asignación [Establecer en obligatorio](apps-deploy.md#to-assign-an-app) se pueden instalar en dispositivos dedicados de Android. Las aplicaciones se instalan desde Google Play Store administrado del mismo modo que en los dispositivos de perfil de trabajo Android.
+Solo las aplicaciones que tienen como tipo de asignación [Establecer en obligatorio](apps-deploy.md#assign-an-app) se pueden instalar en dispositivos dedicados de Android. Las aplicaciones se instalan desde Google Play Store administrado del mismo modo que en los dispositivos de perfil de trabajo Android.
 
 Cuando el desarrollador de aplicaciones publica una actualización en Google Play, las aplicaciones se actualizan automáticamente en los dispositivos administrados.
 
