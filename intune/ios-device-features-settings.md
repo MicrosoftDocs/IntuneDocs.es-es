@@ -14,12 +14,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
-ms.openlocfilehash: 8656e480c292fc9ed1212f9d2c180b791cb4f94c
-ms.sourcegitcommit: ce76541ceb783eb2e242032ef8579041d2f61532
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4a2acd4e54329dbfd43e468a3a0f3b1fa62eee44
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/31/2019
-ms.locfileid: "55431497"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850112"
 ---
 # <a name="ios-device-feature-settings-in-intune"></a>Configuración de características de dispositivos iOS en Intune
 
@@ -222,7 +223,7 @@ Para usar el inicio de sesión único, asegúrese de que tiene:
 
         Por ejemplo, Contoso tiene varias regiones, incluidas Europa, Asia y Norteamérica. Contoso desea que los usuarios de Asia usen el inicio de sesión único y la aplicación requiere UPN con el formato `username@asia.contoso.com`. Si selecciona **Nombre principal de usuario**, el dominio kerberos de cada usuario se toma de Azure AD, que es `contoso.com`. Por tato, para los usuarios de Asia, seleccione **Nombre principal de usuario** y escriba `asia.contoso.com`. El UPN del usuario final se convierte en `username@asia.contoso.com` y no en `username@contoso.com`.
 
-      - **Identificador de dispositivo de Intune** : Intune selecciona automáticamente el identificador de dispositivo de Intune.
+      - **Identificador de dispositivo de Intune **: Intune selecciona automáticamente el identificador de dispositivo de Intune.
 
         De forma predeterminada, las aplicaciones solo tienen que usar el identificador de dispositivo. Pero si la aplicación usa el dominio kerberos y el identificador de dispositivo, puede escribir dicho dominio en el cuadro de texto Dominio kerberos.
 
