@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: robstack
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 360715881e3d6b2f61e7bf251045fc3356c44f6b
-ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 44aad280f0b8714adbb3c8a1e109b68a5af46d4d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55690689"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838842"
 ---
 # <a name="use-managed-devices-to-access-work-or-school-resources"></a>Uso de dispositivos administrados para acceder a recursos de trabajo o educativos
 Microsoft Intune es un sistema de administración de dispositivos que permite a las organizaciones administrar el acceso a los dispositivos, las aplicaciones y el correo electrónico. La administración de dispositivos le permite (así como a otros empleados y alumnos) acceder a su información de trabajo desde prácticamente cualquier lugar y con cualquier dispositivo. Incluso al trabajar de forma remota, su información privada y la de su organización permanecerán seguras.
