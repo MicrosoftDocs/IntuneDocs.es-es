@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/13/2018
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: f2b75eb5a87dbfd7a17aee83f173d3d472920428
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.openlocfilehash: e297169757f1bcc703ce698302ce6f7129104827
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203644"
+ms.lasthandoff: 01/29/2019
+ms.locfileid: "55230127"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos con Windows 10 y versiones posteriores para permitir o restringir características mediante Intune
 
@@ -420,7 +420,7 @@ Puede configurar la información a la que pueden tener acceso todas las aplicaci
 
 - **Diseño del menú Inicio**: para personalizar el menú Inicio en los dispositivos de escritorio, puede cargar un archivo XML que incluya sus personalizaciones, así como el orden en que aparecen las aplicaciones, entre otras opciones. Los usuarios no pueden cambiar el diseño del menú Inicio que especifique usted.
 - **Anclar los sitios web a iconos del menú Inicio**: importe imágenes desde Microsoft Edge que se muestran como vínculos en el menú Inicio de Windows de los dispositivos de escritorio.
-- **Desanclar aplicaciones de la barra de tareas**: elija **Bloquear** para impedir que el usuario desancle aplicaciones del menú Inicio.
+- **Desanclar aplicaciones de la barra de tareas**: elija **Bloquear** para impedir que el usuario desancle aplicaciones de la barra de tareas.
 - **Cambio rápido de usuario**: elija **Bloquear** para impedir el cambio de usuarios que han iniciado sesión al mismo tiempo sin cerrar la sesión.
 - **La mayoría de las aplicaciones usadas**: seleccione **Bloquear** para que las aplicaciones más usadas no se muestren en el menú Inicio. También deshabilita la alternancia correspondiente en la aplicación Configuración.
 - **Aplicaciones agregadas recientemente**: seleccione **Bloquear** para que las aplicaciones agregadas recientemente no se muestren en el menú Inicio. También deshabilita la alternancia correspondiente en la aplicación Configuración.

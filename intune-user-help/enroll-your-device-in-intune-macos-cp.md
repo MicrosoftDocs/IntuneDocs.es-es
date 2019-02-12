@@ -17,12 +17,12 @@ ROBOTS: ''
 ms.reviewer: elocholi
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 7d45ea6d2a33db2de1d640a554b6a07ad8825109
-ms.sourcegitcommit: 8117444cfdddf6d9bdbc4ac715af8d88e72f411d
+ms.openlocfilehash: d54c778923b0d217187f6e4c70e4bc8730788fbc
+ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 10/03/2018
-ms.locfileid: "48260256"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690808"
 ---
 # <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>Inscribir un dispositivo macOS en Intune con la aplicación Portal de empresa
 
@@ -57,7 +57,7 @@ Siga estos pasos para inscribir dispositivos macOS con OS X El Capitan 10.11 y v
 
 4. En la página __Dispositivos__ se mostrará una lista de los dispositivos administrados o un banner. Lo que vea dependerá de si ya tiene un dispositivo administrado. 
     * Para agregar un dispositivo que no aparece en la lista, seleccione el banner en el que se lee **Tap here to tell us which device you're using or add a new device.** (Pulse aquí para indicarnos el dispositivo que está usando o agregar un dispositivo nuevo).
-    * Si no tiene ningún dispositivo, en el banner se indicará: **You don't have any managed devices. Add this one by tapping here.** (No tiene dispositivos inscritos. Agregue este pulsando aquí). Haga clic en el banner para agregar el dispositivo.  
+    * Si no tiene ningún dispositivo, el banner indica lo siguiente: **You don't have any managed devices. Add this one by tapping here.** (No tiene dispositivos inscritos. Agregue este pulsando aquí). Haga clic en el banner para agregar el dispositivo.  
 
      ![Captura de pantalla de la página Dispositivos, con un cuadrado de color rojo alrededor de la opción de banner para resaltar dónde hacer clic.](./media/CP-enroll-MACOS-1808.png)  
 5.  Complete el paso siguiente que coincida con el mensaje que aparece actualmente en el Portal de empresa.  
@@ -93,4 +93,11 @@ El perfil de administración es lo que define la conexión del canal de MDM. Mie
 
 Además, como los otros perfiles no necesitan comprobaciones individuales, se generan y se entregan más rápidamente a los dispositivos. 
 
-¿Sigue necesitando ayuda? Póngase en contacto con el equipo de soporte técnico de su empresa. Puede encontrar su información de contacto en el [sitio web del Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+## <a name="updating-the-company-portal-app"></a>Actualización de la aplicación del Portal de empresa
+
+La actualización de la aplicación del Portal de empresa se realiza del mismo modo que la de cualquier otra aplicación de Office, a través de Microsoft AutoUpdate para Mac. Obtenga más información sobre cómo [actualizar aplicaciones de Microsoft para macOS aquí](https://support.office.com/article/Check-for-Office-for-Mac-updates-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1).  
+
+## <a name="next-steps"></a>Pasos siguientes  
+¿Necesita más ayuda? Póngase en contacto con el equipo de soporte técnico de su empresa. Puede encontrar su información de contacto en el [sitio web del Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).  
+
+

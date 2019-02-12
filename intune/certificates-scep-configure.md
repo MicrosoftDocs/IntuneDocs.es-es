@@ -2,24 +2,25 @@
 title: 'Usar certificados SCEP con Microsoft Intune: Azure | Microsoft Docs'
 description: Para usar certificados SCEP en Microsoft Intune, configure el dominio de AD local, cree una entidad de certificación, configure el servidor NDES e instale Intune Certificate Connector. Luego cree un perfil de certificado SCEP y asígnelo a grupos. Vea también los distintos identificadores de evento y sus descripciones, así como los códigos de diagnóstico para el servicio de conector de Intune.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 11/6/2018
+ms.date: 1/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
-ms.reviewer: kmyrup
+ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ee61063a36a486a0840446f82834bc37cc96bfc0
-ms.sourcegitcommit: a843bd081e9331838ade05a3c05b02d60b6bec4c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 50235e4e21e738081dc1b41d8e6a8b6210430064
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/19/2018
-ms.locfileid: "53597382"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838145"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar y usar certificados SCEP con Intune
 
@@ -67,7 +68,7 @@ Se recomienda encarecidamente publicar el servidor NDES a través de un proxy in
 |**Plantilla de certificado**|Configure esta plantilla en la CA emisora.|
 |**Certificado de autenticación del cliente**|Solicitado desde la CA emisora o la CA pública; instale este certificado en el servidor NDES.|
 |**Certificado de autenticación de servidor**|Solicitado desde la CA emisora o la CA pública, este certificado SSL se instala y se enlaza en IIS, en el servidor NDES. Si el certificado tiene el conjunto de usos de claves de autenticación de cliente y servidor (**Usos mejorados de clave**), puede usar el mismo certificado.|
-|**Certificado de CA raíz de confianza**|Exportará este certificado como un archivo **.cer** desde la entidad de certificación raíz o cualquier dispositivo que confíe en ella. Luego, asígnelos a los usuarios o dispositivos que usan el perfil de certificado de CA de confianza.<br /><b>NOTA:<b /> al asignar un perfil de certificado SCEP, asegúrese de asignar el perfil de certificado raíz de confianza al que se hace referencia en el perfil de su certificado SCEP al mismo grupo de usuarios o dispositivos.<br /><br />Use un único certificado de CA raíz de confianza por cada plataforma de sistema operativo y asócielo a cada perfil de certificado raíz de confianza que cree.<br /><br />Puede usar certificados de CA raíz de confianza adicionales cuando sea necesario. Por ejemplo, podría hacerlo para proporcionar una relación de confianza con una CA que firme los certificados de autenticación de servidor para los puntos de acceso Wi-Fi.|
+|**Certificado de CA raíz de confianza**|Exportará este certificado como un archivo **.cer** desde la entidad de certificación raíz o cualquier dispositivo que confíe en ella. Luego, asígnelo a los usuarios o dispositivos que usan el perfil de certificado de CA de confianza, o bien a ambos.<br /><b>NOTA:<b /> al asignar un perfil de certificado SCEP, asegúrese de asignar el perfil de certificado raíz de confianza al que se hace referencia en el perfil de su certificado SCEP al mismo grupo de usuarios o dispositivos.<br /><br />Use un único certificado de CA raíz de confianza por cada plataforma de sistema operativo y asócielo a cada perfil de certificado raíz de confianza que cree.<br /><br />Puede usar certificados de CA raíz de confianza adicionales cuando sea necesario. Por ejemplo, podría hacerlo para proporcionar una relación de confianza con una CA que firme los certificados de autenticación de servidor para los puntos de acceso Wi-Fi.|
 
 ### <a name="accounts"></a>Cuentas
 
@@ -519,7 +520,7 @@ A partir de la versión 6.1806.x.x, el servicio de conector de Intune registra l
 > [!NOTE]
 > Para más información sobre los códigos de diagnóstico relacionados para cada evento, use la tabla **Códigos de diagnóstico** (en este artículo).
 
-| Identificador de evento      | Nombre del evento    | Descripción del evento | Códigos de diagnóstico relacionados |
+| Id. de evento      | Nombre del evento    | Descripción del evento | Códigos de diagnóstico relacionados |
 | ------------- | ------------- | -------------     | -------------            |
 | 10010 | StartedConnectorService  | Se inició el servicio de conector | 0x00000000, 0x0FFFFFFF |
 | 10020 | StoppedConnectorService  | Se detuvo el servicio de conector | 0x00000000, 0x0FFFFFFF |
@@ -560,5 +561,6 @@ A partir de la versión 6.1806.x.x, el servicio de conector de Intune registra l
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-- [Configuración y uso de certificados PKCS con Intune](certficates-pfx-configure.md) o [Configuración de Intune Certificate Connector para el servicio web del administrador de PKI de Symantec](certificates-symantec-configure.md).
-- [Add a 3rd party CA to use SCEP with Intune](certificate-authority-add-scep-overview.md) (Adición de una entidad de certificación de terceros para usar SCEP con Intune)
+- [Uso de certificados PKCS](certficates-pfx-configure.md) o [Emitir certificados PKCS desde un servicio web de administración de PKI de Symantec](certificates-symantec-configure.md).
+- [Adición de entidades de certificación de terceros en Intune mediante SCEP](certificate-authority-add-scep-overview.md).
+- Para obtener más ayuda, use la guía [Solucionar problemas de implementación de perfil de certificado SCEP en Microsoft Intune](https://support.microsoft.com/help/4457481/troubleshooting-scep-certificate-profile-deployment-in-intune).

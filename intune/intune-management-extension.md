@@ -15,12 +15,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 063a5cbbe18efc5c406c9dc7f2fa40d614b2e48a
-ms.sourcegitcommit: d3b1e3fffd3e0229292768c7ef634be71e4736ae
+ms.openlocfilehash: 444fd63f8c582d35891dfa5aedb9eadd6626e541
+ms.sourcegitcommit: 4bd992da609b8bcc85edc2d64fe8128546aa4617
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52860969"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55303402"
 ---
 # <a name="manage-powershell-scripts-in-intune-for-windows-10-devices"></a>Administrar scripts de PowerShell en Intune para dispositivos Windows 10
 
@@ -38,7 +38,7 @@ La extensión de administración de Intune complementa las características de a
 
 La extensión de administración de Intune tiene los siguientes requisitos previos:
 
-- Los dispositivos deben estar unidos a Azure AD y se deben [inscribir automáticamente](windows-enroll.md#enable-windows-10-automatic-enrollment). La extensión de administración de Intune admite dispositivos Windows inscritos unidos a Azure AD, unidos a dominios híbridos y administrados conjuntamente. No se admiten dispositivos inscritos en GPO.
+- Los dispositivos deben estar unidos o registrados en Azure AD y Azure AD debe estar configurado para la [inscripción automática en Intune](windows-enroll.md#enable-windows-10-automatic-enrollment). La extensión de administración de Intune admite dispositivos Windows inscritos unidos a Azure AD, unidos a dominios híbridos y administrados conjuntamente.
 - Los dispositivos deben ejecutar Windows 10, versión 1607 o posterior.
 - El agente de la extensión de administración de Intune se instala cuando se implementa un script de PowerShell o una aplicación Win32 en un grupo de seguridad de dispositivos o usuarios.
 
@@ -62,9 +62,9 @@ La extensión de administración de Intune tiene los siguientes requisitos previ
 3. Seleccione uno o varios grupos que incluyan los usuarios cuyos dispositivos reciben el script. Haga clic en **Seleccionar** para asignar la directiva a los grupos seleccionados.
 
 > [!NOTE]
-> - No se pueden aplicar scripts de PowerShell a grupos de equipos.
 > - No es necesario que los usuarios finales inicien sesión en el dispositivo para ejecutar scripts de PowerShell.
 > - Los scripts de PowerShell en Intune pueden estar dirigidos a grupos de seguridad de dispositivos de Azure AD.
+> - Los scripts de PowerShell en Intune pueden estar dirigidos a grupos de seguridad de usuarios de Azure AD.
 
 El cliente de la extensión de administración de Intune consulta con Intune una vez cada hora. Después de asignar la directiva a los grupos de Azure AD, se ejecuta el script de PowerShell y se notifican los resultados de la ejecución.
 

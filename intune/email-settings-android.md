@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 4336be8d24ac4a81ec6fca09f22d594000bbd9a5
-ms.sourcegitcommit: e08a26558174be3ea8f3d20646e577f1493ea21a
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 5611fb75ebf8106e70c1735458ee8b33fec16f7d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54831401"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838400"
 ---
 # <a name="android-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Configuración del dispositivo Android para configurar el correo electrónico, la autenticación y la sincronización en Intune
 
@@ -73,7 +74,7 @@ Para más información sobre los perfiles de correo electrónico en Intune, cons
 - **Tipo de contenido para sincronizar**: Seleccione los tipos de contenido que quiere sincronizar en los dispositivos. **No configurado** deshabilita esta opción. Cuando se establece en **No configurado**, si un usuario final permite la sincronización en el dispositivo, la sincronización se deshabilitará de nuevo cuando el dispositivo se sincronice con Intune, como refuerza la directiva. 
 
   Puede sincronizar este contenido:  
-  - **Contactos**: Elija **Habilitar** para permitir que los usuarios finales sincronicen contactos con sus dispositivos.
+  - **Contactos**: elija **Habilitar** para permitir que los usuarios finales sincronicen contactos con sus dispositivos.
   - **Calendario**: elija **Habilitar** para permitir que los usuarios finales sincronicen el calendario con sus dispositivos.
   - **Tareas**: elija **Habilitar** para permitir que los usuarios finales sincronicen todas las tareas con sus dispositivos.
 

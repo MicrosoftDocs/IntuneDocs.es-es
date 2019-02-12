@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/25/2019
+ms.date: 02/04/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,19 +16,21 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 21fde80ec80492957b686a66dcfe4db55894c38e
-ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
+ms.openlocfilehash: 996b4d85da41b480d73d7a79011e2bbd732ea334
+ms.sourcegitcommit: dde9e1e1d15c412751a186410c2a04974ff1b102
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55199496"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55690842"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Novedades de Microsoft Intune
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Conozca las novedades semanales de Microsoft Intune. También podrá buscar próximos cambios, [notificaciones importantes](#notices) e información sobre [versiones anteriores](whats-new-archive.md). Algunas características pueden lanzarse a lo largo de varias semanas y pueden no estar disponibles para todos los clientes durante la primera semana.
+Conozca las novedades semanales de Microsoft Intune. También podrá buscar próximos cambios, [notificaciones importantes](#notices) e información sobre [versiones anteriores](whats-new-archive.md). 
 
 > [!Note]
+> Algunas características pueden lanzarse a lo largo de varias semanas y pueden no estar disponibles para todos los clientes durante la primera semana.
+>
 > Para obtener más información sobre la nueva funcionalidad de administración híbrida de dispositivos móviles (MDM), consulte la [página Novedades de MDM híbrida](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management).
 
 **Fuente RSS**: reciba notificaciones cuando esta página se actualice copiando y pegando la siguiente dirección URL en su lector de fuentes: `https://docs.microsoft.com/api/search/rss?search=%22What%27s+new+in+microsoft+intune%3F+-+Azure%22&locale=en-us`
@@ -43,6 +45,13 @@ Conozca las novedades semanales de Microsoft Intune. También podrá buscar pró
 ### Role-based access control
 
 -->     
+## <a name="week-of-february-4-2019"></a>Semana del 4 de febrero de 2019
+
+### <a name="app-management"></a>Administración de aplicaciones
+
+#### <a name="intune-macos-company-portal-dark-mode----3300524-eeready---"></a>Modo oscuro del Portal de empresa de macOS para Intune <!-- 3300524 eeready -->
+El Portal de empresa de macOS para Intune ahora admite el Modo oscuro para macOS. Cuando habilita el Modo oscuro en un dispositivo macOS 10.14 o una versión posterior, el Portal de empresa ajustará su apariencia para que los colores reflejen ese modo.
+
 ## <a name="week-of-january-21-2019"></a>Semana del 21 de enero de 2019
 
 ### <a name="app-management"></a>Administración de aplicaciones
@@ -52,15 +61,28 @@ Puede suprimir notificaciones del sistema para el usuario final por asignación 
 
 #### <a name="intune-app-protection-policies-ui-update----3251427----"></a>Actualización de la interfaz de usuario de las directivas de protección de aplicaciones de Intune <!-- 3251427  -->
 Hemos cambiado las etiquetas para las opciones y los botones de la protección de aplicaciones de Intune para que sean más fáciles de entender. Algunos de los cambios son:  
-- Los controles cambiaron de controles **yes** / **no** principalmente a controles **block** / **allow ** y **disable** / **enable**. Las etiquetas también se actualizaron.  
+- Los controles han cambiado de **sí** / **no** a principalmente **bloquear** / **permitir** y **deshabilitar** / **habilitar**. Las etiquetas también se actualizaron.  
 - Se cambió el formato de las opciones, de tal forma que la opción y su etiqueta aparezcan una al lado de la otra en el control, para así facilitar la navegación.   
 
 La configuración predeterminada y el número de opciones se conservan, pero este cambio permite al usuario entender, navegar y utilizar la configuración con más facilidad para aplicar las directivas de protección de aplicaciones seleccionadas. Para información, consulte la [configuración para iOS](app-protection-policy-settings-ios.md) y la [configuración para Android](app-protection-policy-settings-android.md).
 
 #### <a name="additional-settings-for-outlook----3301182----"></a>Configuración adicional para Outlook <!-- 3301182  -->
-Ahora puede cambiar más opciones de configuración para Outlook para iOS y Android con Intune.  Estas opciones de configuración incluyen las siguientes: Permitir que solo se utilicen cuentas profesionales o educativas en Outlook en iOS y Android Implementar la autenticación moderna para Office 365 y las cuentas locales de autenticación moderna híbrida Utilizar `SAMAccountName` para el campo del nombre de usuario en el perfil de correo electrónico cuando se selecciona la autenticación básica Permitir que los contactos se guarden Configurar Sugerencias de correo electrónico de destinatarios externos Configurar **Bandeja de entrada Prioritarios** Exigir biometría para acceder a Outlook para iOS Bloquear imágenes externas
+Ahora puede cambiar las siguientes opciones de configuración adicionales para Outlook para iOS y Android mediante Intune:
+- Permitir que solo se usen cuentas profesionales o educativas en iOS y Android.
+- Implementar la autenticación moderna para Office 365 y la autenticación moderna híbrida para cuentas locales.
+- Usar `SAMAccountName` para el campo de nombre de usuario en el perfil de correo electrónico al tener seleccionada la autenticación básica.
+
+Las siguientes opciones de configuración aún se están implantando gradualmente y pronto estarán disponibles en la consola:
+- Permitir que se guarden contactos.
+- Configurar información sobre el correo electrónico de destinatarios externos.
+- Configurar la **Bandeja de entrada Prioritarios**.
+- Requerir autenticación biométrica para acceder a Outlook para iOS.
+
+La siguiente configuración aparece en la consola de Intune, pero, si se configura, no funcionará según lo previsto. Este problema se corregirá pronto:
+- Bloquear las imágenes externas.
+
 > [!NOTE]
-> Si usa directivas de Intune App Protection para administrar el acceso de las identidades corporativas, le recomendamos que no habilite el **requisito de autenticación biométrica**. Para más información, vea **Requerir credenciales corporativas en acceso**, en los artículos relativos a la [configuración de acceso de iOS](app-protection-policy-settings-ios.md#access-settings) y la [configuración de acceso de Android](app-protection-policy-settings-android.md#access-settings), respectivamente.
+> Si usa directivas de Intune App Protection para administrar el acceso de las identidades corporativas, le recomendamos que no habilite el **requisito de autenticación biométrica**. Para más información, vea **Requerir credenciales corporativas en acceso**, en los artículos relativos a la [configuración de acceso de iOS](app-protection-policy-settings-ios.md#access-requirements) y la [configuración de acceso de Android](app-protection-policy-settings-android.md#access-requirements), respectivamente.
 
 #### <a name="delete-android-enterprise-apps----1352553---"></a>Eliminación de aplicaciones de Android Enterprise <!-- 1352553 -->
 Puede eliminar aplicaciones de Google Play administrado desde Microsoft Intune. Para eliminar una aplicación de Google Play administrado, abra Microsoft Intune en Azure Portal y seleccione **Aplicaciones cliente** > **Aplicaciones**. En la lista de aplicaciones, seleccione los puntos suspensivos (...) a la derecha de la aplicación de Google Play administrado y luego seleccione **Eliminar** en la lista que aparece. Cuando se elimina una aplicación de Google Play administrada de la lista de aplicaciones, automáticamente se desactiva la aprobación de la aplicación administrada de Google Play.
@@ -68,12 +90,16 @@ Puede eliminar aplicaciones de Google Play administrado desde Microsoft Intune. 
 #### <a name="managed-google-play-app-type----1352580---"></a>Aplicación administrada de Google Play tipo <!-- 1352580 -->
 El tipo de aplicación **administrada de Google Play** le permitirá agregar específicamente [aplicaciones de Google Play administradas](https://play.google.com/work/search?q=microsoft&c=apps) a Intune. Como administrador de Intune, ahora podrá examinar, buscar, aprobar, sincronizar y asignar aplicaciones de Google Play administrado aprobadas dentro de Intune.  Ya no necesita ir a la consola de Google Play administrado por separado ni tiene que volver a autenticarse.  En Intune, seleccione **Aplicaciones cliente** > **Aplicaciones** > **Agregar**. En la lista **Tipo de aplicación**, seleccione **Google Play administrada** como tipo de aplicación.
 
+### <a name="default-android-pin-keyboard----3802457---"></a>Teclado de PIN de Android predeterminado <!-- 3802457 -->
+Los usuarios finales que hayan establecido un PIN de directiva de Intune App Protection (APP) en sus dispositivos Android con el tipo de PIN “Numérico” ahora verán el teclado de Android predeterminado en lugar de la interfaz de usuario de teclado de Android que se había diseñado anteriormente. Este cambio se ha llevado a cabo para que sea coherente al usar los teclados predeterminados en Android e iOS, para ambos tipos de PIN “Numérico” o “Código de acceso”. Para obtener más información sobre la configuración de acceso de los usuarios finales en Android, como el PIN de APP, consulte [Requisitos de acceso de Android](app-protection-policy-settings-android.md#access-requirements).
+
 ### <a name="device-configuration"></a>Configuración de los dispositivos
 
 #### <a name="use-microsoft-recommended-settings-with-security-baselines-public-preview----2055484-----"></a>Uso de la configuración recomendada por Microsoft con líneas de base de seguridad (versión preliminar pública) <!-- 2055484   -->
-Nota: Esta característica todavía se está implementando y estará disponible en breve.
 
 Intune se integra con otros servicios centrados en la seguridad, incluidos ATP de Windows Defender y Office 365 ATP. Los clientes solicitan una estrategia común y un conjunto coherente de flujos de trabajo de seguridad integrales entre los servicios de Microsoft 365. Nuestro objetivo es alinear las estrategias para crear soluciones que actúen de puente entre las operaciones de seguridad y las tareas de administración comunes. En Intune, este objetivo se pretende lograr mediante la publicación de un conjunto de "Líneas de base de seguridad" recomendadas de Microsoft (**Intune** > **Líneas de base de seguridad**).  Un administrador puede crear directivas de seguridad directamente a partir de estas líneas de base y, después, implementarlas en sus usuarios. También puede personalizar los procedimientos recomendados para satisfacer las necesidades de su organización. Intune garantiza que los dispositivos cumplan estas líneas de base y notifica a los administradores los usuarios o dispositivos que no están en cumplimiento.
+
+Esta característica está en versión preliminar pública, por lo que los perfiles creados ahora no se moverán a las plantillas de líneas base de seguridad que están disponibles con carácter general (GA). No debería planear usar estas plantillas de versión preliminar en el entorno de producción.
 
 Para más información sobre las líneas de base de seguridad, vea [Create a Windows 10 security baseline in Intune](security-baselines-monitor.md) (Crear una línea de base de seguridad de Windows 10 en Intune).
 
@@ -112,13 +138,6 @@ Para ver la lista actual de configuraciones, vaya a [Configuración de dispositi
 
 Se aplica a: Propietario del dispositivo Android Enterprise
 
-#### <a name="intune-app-protection-policies-ui-update----3251427---"></a>Actualización de la interfaz de usuario de las directivas de protección de aplicaciones de Intune <!-- 3251427 -->
-Hemos cambiado las etiquetas para las opciones y los botones de la protección de aplicaciones de Intune para que sean más fáciles de entender. Algunos de los cambios son:  
-- Los controles cambiaron de controles **yes** / **no** principalmente a controles **block** / **allow ** y **disable** / **enable**. Las etiquetas también se actualizaron.  
-- Se cambió el formato de las opciones, de tal forma que la opción y su etiqueta aparezcan una al lado de la otra en el control, para así facilitar la navegación.   
-
-La configuración predeterminada y el número de opciones se conservan, pero este cambio permite al usuario entender, navegar y utilizar la configuración con más facilidad para aplicar las directivas de protección de aplicaciones seleccionadas. Para información, consulte la [configuración para iOS](app-protection-policy-settings-ios.md) y la [configuración para Android](app-protection-policy-settings-android.md).
-
 ### <a name="device-management"></a>Administración de dispositivos
 
 #### <a name="selective-wipe-support-for-wip-without-enrollment-devices----1434452---"></a>Compatibilidad con el borrado selectivo para dispositivos de WIP Without Enrollment <!-- 1434452 -->
@@ -137,7 +156,9 @@ En [Send log data to storage, event hubs, or log analytics in Intune](review-log
 Además de las pantallas que actualmente se pueden omitir, podrá establecer dispositivos DEP de iOS para omitir las pantallas siguientes en el Asistente para la configuración cuando un usuario inscribe el dispositivo: Tono de pantalla, Privacidad, Migración de Android, botón Inicio, iMessage y FaceTime, Incorporación, Migración de Watch, Apariencia, Tiempo de uso, Actualización de software, Configuración de SIM.
 Para elegir qué pantallas omitir, vaya a **Inscripción de dispositivos** > **Inscripción de Apple** > **Tokens del programa de inscripción** > elija un token > **Perfiles** > elija un perfil > **Propiedades** > **Personalización del Asistente de configuración** > elija **Ocultar** en todas las pantallas que quiera omitir > **Aceptar**.
 Si crea un nuevo perfil o edita uno, las pantallas de omisión seleccionadas deben sincronizarse con el servidor MDM de Apple. Los usuarios pueden emitir una sincronización manual de los dispositivos para que no haya ningún retraso en la recogida de los cambios de perfil.
-Esta característica está empezando a implementarse, pero tardará unos días en estar disponible para todos los clientes.
+
+#### <a name="android-enterprise-app-we-app-deployment----1171203---"></a>Implementación de aplicaciones APP-WE de Android Enterprise <!-- 1171203 -->
+En el caso de los dispositivos Android en un escenario de implementación de directiva de protección de aplicaciones sin inscripción (APP-WE) no inscrito, ahora puede usar Google Play administrado para implementar aplicaciones de la tienda y aplicaciones de LOB en los usuarios. En concreto, puede brindar a los usuarios finales un catálogo de aplicaciones y experiencia de instalación que ya no requiere que los usuarios finales flexibilicen la posición de seguridad de sus dispositivos al permitir instalaciones de orígenes desconocidos. Además, este escenario de implementación proporcionará una mejor experiencia del usuario final.
 
 ## <a name="week-of-january-14-2019"></a>Semana del 14 de enero de 2019
 
@@ -400,7 +421,7 @@ Esta característica se implementará en toda la base de usuarios durante los pr
 ### <a name="app-management"></a>Administración de aplicaciones
 
 #### <a name="require-non-biometric-pin-after-a-specified-timeout----1506985---"></a>Requerir PIN que no sea biométrico después de un tiempo de expiración especificado <!-- 1506985 -->
-Al exigir un número de identificación personal no biométrico después de transcurrir un tiempo de expiración especificado por el administrador, Intune proporcionará una mayor seguridad para las aplicaciones compatibles con Administración de aplicaciones de móviles (MAM), ya que restringe el uso de identificación biométrica para el acceso a datos corporativos. La configuración afectará a los usuarios que dependen de Touch ID (iOS), Face ID (iOS), Android Biometric u otros métodos de autenticación biométrica futuros para tener acceso a aplicaciones compatibles con APP/MAM. Con esta configuración, los administradores de Intune tendrán un control más exhaustivo del acceso de los usuarios. De este modo, se evitan situaciones en las que un dispositivo con varias huellas digitales u otros métodos de acceso biométrico pueda revelar datos corporativos a un usuario incorrecto. En Azure Portal, abra **Microsoft Intune**. Seleccione **Aplicaciones cliente** > **Directivas de protección de aplicaciones** > **Agregar una directiva** > **Configuración**. En la **Acceso** encontrará ajustes específicos. Para obtener información sobre la configuración del acceso, vea la [configuración para iOS](app-protection-policy-settings-ios.md#access-settings) y la [configuración para Android](app-protection-policy-settings-android.md#access-settings).
+Al exigir un número de identificación personal no biométrico después de transcurrir un tiempo de expiración especificado por el administrador, Intune proporcionará una mayor seguridad para las aplicaciones compatibles con Administración de aplicaciones de móviles (MAM), ya que restringe el uso de identificación biométrica para el acceso a datos corporativos. La configuración afectará a los usuarios que dependen de Touch ID (iOS), Face ID (iOS), Android Biometric u otros métodos de autenticación biométrica futuros para tener acceso a aplicaciones compatibles con APP/MAM. Con esta configuración, los administradores de Intune tendrán un control más exhaustivo del acceso de los usuarios. De este modo, se evitan situaciones en las que un dispositivo con varias huellas digitales u otros métodos de acceso biométrico pueda revelar datos corporativos a un usuario incorrecto. En Azure Portal, abra **Microsoft Intune**. Seleccione **Aplicaciones cliente** > **Directivas de protección de aplicaciones** > **Agregar una directiva** > **Configuración**. En la **Acceso** encontrará ajustes específicos. Para obtener información sobre la configuración del acceso, vea la [configuración para iOS](app-protection-policy-settings-ios.md#access-requirements) y la [configuración para Android](app-protection-policy-settings-android.md#access-requirements).
 
 #### <a name="intune-app-data-transfer-settings-on-ios-mdm-enrolled-devices----2244713---"></a>Configuración de transferencia de datos de la aplicación de Intune en dispositivos iOS inscritos en MDM <!-- 2244713 -->
 Podrá controlar por separado la configuración de la transferencia de datos de la aplicación de Intune en dispositivos iOS inscritos en MDM y la especificación de la identidad del usuario inscrito, que se conoce también como nombre principal de usuario (UPN). Los administradores que no usen el IntuneMAMUPN no observarán un cambio de comportamiento. Cuando esta función esté disponible, los administradores que usan el IntuneMAMUPN para controlar el comportamiento de la transferencia de datos en los dispositivos inscritos deben revisar la nueva configuración y actualizar la configuración de APP según sea necesario.
@@ -1358,27 +1379,37 @@ Esto afecta a si tiene o va a tener dispositivos que ejecutan macOS 10.14.2 y ve
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>¿Qué puedo hacer para prepararme para este cambio?
 Es posible que quiera informar a su departamento de soporte técnico. Actualizaremos esta página de novedades cuando se implante este cambio. Si no quiere que se aplique esta directiva de contraseña de dispositivos macOS, se recomienda eliminar o anular la asignación de la directiva de macOS existente.
 
+###<a name="plan-for-change-update-to-ios-setting-for-supervised-devices-in-the-intune-console"></a>Plan de cambio: actualización de la configuración de iOS en dispositivos supervisados en la consola de Intune  
+Con la actualización de febrero al servicio de Intune, se cambia el nombre de la configuración "Habilitación de restricciones en la configuración del dispositivo" para dispositivos iOS supervisados por "Tiempo de uso (solo con supervisión)". Después de este cambio, la experiencia del usuario final cambiará en función de la versión de iOS.
 
-### <a name="reminder-intune-support-experience-for-premier-customers-now-in-azure-instead-of-mpo---2828727--"></a>Aviso: experiencia de soporte técnico de Intune para clientes Premier ya disponible en Azure en lugar de MPO <!--2828727-->
-El pasado mes de septiembre compartimos en MC147649 que en diciembre eliminaríamos la capacidad de crear solicitudes de soporte técnico de Intune desde el portal Microsoft Premier Online (MPO) (premier.microsoft.com). Tras un breve retraso y a partir de finales de enero, para crear solicitudes de soporte técnico se le redirigirá solo a Intune en Azure. 
+####<a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
+Después de que la configuración "Habilitación de restricciones en la configuración del dispositivo (solo supervisado)" haya cambiado de nombre por "Tiempo de uso (solo con supervisión)", esta será la experiencia de los dispositivos supervisados (dispositivos inscritos en los programas de inscripción de Apple): 
+
+Para dispositivos con iOS 11.4 y versiones anteriores: esta configuración puede usarse para impedir que los usuarios modifiquen las restricciones de dispositivos como antes. Los usuarios finales no verán cambios en la experiencia.
+ 
+Para dispositivos con iOS 12 y versiones posteriores: los usuarios finales ya no verán la pestaña Restricciones en Ajustes > General > Administración de dispositivos > Management Profile (Perfil de administración) > Restricciones.
+En su lugar, este elemento formará parte de Ajustes > General > Tiempo de uso. Si configura este valor como "Bloquear", impedirá que los usuarios cambien la configuración de Tiempo de uso en sus dispositivos, lo que también incluye las restricciones de contenido y privacidad.
+
+####<a name="what-can-i-do-to-prepare-for-this-change"></a>¿Qué puedo hacer para prepararme para este cambio?
+Actualice la guía de usuario final para que tenga en cuenta el cambio en la experiencia para los dispositivos que se actualicen a iOS 12 y versiones posteriores.
 
 
-#### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
-A partir de finales de enero, para seguir mejorando la experiencia de soporte técnico Premier, ya no podrá crear solicitudes de soporte técnico en MPO.  Si lo intenta, verá un mensaje que no podrá descartar y se le redirigirá a Intune en Azure. En este caso, puede crear una solicitud que se enrutará al Soporte técnico de Microsoft especialista en Intune, para que diagnostiquen y resuelvan el problema de manera conveniente. Tenga en cuenta que las solicitudes de soporte técnico creadas en el portal MPO no pueden verse en Azure Portal. 
+###<a name="plan-for-change-workflow-changes-for-ios-12-enrollment-in-intune"></a>Plan de cambio: cambios de flujo de trabajo para la inscripción de iOS 12 en Intune
+Apple ha anunciado algunos cambios relacionados con los dispositivos iOS que se inscriben en los servicios de administración de dispositivos móviles (MDM). Es probable que este cambio se vea en la versión de iOS de primavera de 2019, así como en todas las futuras versiones de iOS.
 
-Azure Portal tiene una nueva experiencia de soporte técnico, como se anunció recientemente en MC171941. Encontrará más información al respecto en [https://aka.ms/new_support_experience](https://aka.ms/new_support_experience) y en el vínculo de información adicional.
+####<a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
+Si los usuarios finales actualizan sus dispositivos a esta nueva versión de iOS 12 en primavera, tienen que saber que hay un flujo de trabajo modificado y que tendrán que seguir pasos adicionales para completar la inscripción en Intune. Cuando Apple presente estos cambios, los usuarios finales tendrán que hacer lo siguiente: •            Empezar el proceso de inscripción en la aplicación Portal de empresa para descargar un perfil de administración. •            Ir a Ajustes > General > Perfiles. •            Seleccionar el perfil correcto y hacer clic en Instalar. •            Volver al Portal de empresa para completar la inscripción. 
 
-Si usa administración de dispositivos móviles híbrida (MDM híbrida) o administración conjunta, puede seguir utilizando MPO para crear solicitudes de soporte técnico para Configuration Manager. No obstante, para crear solicitudes relacionadas con Intune, debe usar Azure Portal. Le recordamos que la MDM híbrida está en [desuso](https://docs.microsoft.com/sccm/core/plan-design/changes/deprecated/removed-and-deprecated-cmfeatures) y que debe planear el cambio a Intune en Azure tan pronto como sea posible. Para más información, vea [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) (Pasar de la administración híbrida de dispositivos móviles (MDM) a Intune en Azure).
+Los dispositivos que ya estén inscritos y actualizados a la nueva versión de iOS no deberían verse afectados, salvo que se anule su inscripción y tengan que volver a inscribirse.
+La experiencia de inscripción en dispositivos que ejecuten iOS 12.1 o versiones anteriores no cambiará con esta nueva versión de Apple.
 
-Tenga en cuenta que solo los usuarios con roles de administrador global, administrador de servicios de Intune y administrador de soporte técnico de servicio pueden crear incidencias de soporte técnico en Azure Portal.
+####<a name="what-can-i-do-to-prepare-for-this-change"></a>¿Qué puedo hacer para prepararme para este cambio?
+Debe planear actualizar la documentación y la guía de usuario final. También puede que quiera informar a su departamento de soporte técnico sobre estos cambios. Le mantendremos informado a través del Centro de mensajes y nuestra página de novedades cuando se produzca este cambio.
 
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>¿Qué puedo hacer para prepararme para este cambio?
-- Deje de usar MPO y utilice Intune en Azure para crear y administrar todas las solicitudes de soporte técnico de Intune.  
-- Avise al departamento de soporte técnico y actualice la documentación si es necesario.
-- Si tiene usuarios sin los roles de administrador global o administrador de servicios de Intune que están creando solicitudes de soporte técnico en MPO, asígneles el rol de administrador de soporte técnico de servicio en Azure Active Directory. De este modo podrán seguir creando incidencias de soporte técnico en Azure Portal.
+Haga clic en el vínculo de Información adicional para consultar una entrada de blog de soporte técnico con capturas de pantalla y un vídeo del flujo de inscripción esperado.
 
-#### <a name="additional-information"></a>Información adicional
-[https://aka.ms/IntuneSupport_MPO_to_Azure](https://aka.ms/IntuneSupport_MPO_to_Azure)
+####<a name="additional-information"></a>Información adicional
+https://aka.ms/iOS_enrollment_changes
 
 ### <a name="plan-for-change-user-experience-update-to-intune-company-portal-app-for-ios"></a>Plan de cambio: Actualización de la experiencia del usuario a la aplicación de Portal de empresa de Intune para iOS
 Nos complace compartir que Intune pronto lanzará una actualización importante de la experiencia de usuario para la aplicación de Portal de empresa de iOS. La actualización contará con un cambio de diseño visual de la página principal con filtros avanzados y un acceso más rápido a las aplicaciones y los libros electrónicos.
@@ -1398,12 +1429,12 @@ No es necesario realizar ninguna acción; estos cambios se publicarán en una pr
 
 
 ### <a name="plan-for-change-exchange-online-to-intune-connector-will-not-be-available-in-intune----3105122---"></a>Plan de cambio: el conector de Exchange Online a Intune no estará disponible en Intune <!-- 3105122 -->
-Para simplificar su experiencia con Exchange Online y Acceso condicional, deshabilitaremos el conector de "servicio a servicio" Exchange Online a Intune. Este cambio empezará con la actualización del servicio de diciembre y se completará con la actualización del servicio de febrero de 2019.
+Para simplificar su experiencia con Exchange Online y Acceso condicional, deshabilitaremos el conector de "servicio a servicio" Exchange Online a Intune.
 
 #### <a name="how-does-this-affect-me"></a>¿Cómo me afecta esto?
-Ha recibido este mensaje porque en nuestros registros se indica que es posible que esté usando la funcionalidad del conector "Servicio a servicio" en el entorno. El conector "Servicio a servicio" admite la administración de Intune de los dispositivos de Exchange Active Sync Only para Exchange Online y no admite la infraestructura local. Este conector, debido a la manera en que se muestra en la consola, parece ser necesario para el Acceso condicional cuando, en realidad, no lo es. Con la actualización de diciembre del servicio de Intune, para dejar esto en claro en la consola, deshabilitaremos el botón para configurar conectores nuevos. Luego, en febrero de 2019, se deshabilitarán todos los conectores existentes de Exchange Online a Intune.
+Ha recibido este mensaje porque en nuestros registros se indica que es posible que esté usando la funcionalidad del conector "Servicio a servicio" en el entorno. El conector "Servicio a servicio" admite la administración de Intune de los dispositivos de Exchange Active Sync Only para Exchange Online y no admite la infraestructura local. Este conector, debido a la manera en que se muestra en la consola, parece ser necesario para el Acceso condicional cuando, en realidad, no lo es. Con la actualización de febrero del servicio de Intune, para dejar esto en claro en la consola, deshabilitaremos el botón para configurar conectores nuevos. Luego, en marzo de 2019, se deshabilitarán todos los conectores existentes de Exchange Online a Intune.
 
-Si usa estos conectores en el entorno, no podrá supervisar ni borrar los dispositivos Exchange Active Sync Only en Intune una vez que los conectores se deshabiliten en febrero. No se prevé ningún impacto en los usuarios finales durante este cambio.
+Si usa estos conectores en el entorno, no podrá supervisar ni borrar los dispositivos Exchange Active Sync Only en Intune una vez que los conectores se deshabiliten en marzo. No se prevé ningún impacto en los usuarios finales durante este cambio.
 
 #### <a name="what-can-i-do-to-prepare-for-this-change"></a>¿Qué puedo hacer para prepararme para este cambio?
 

@@ -2,8 +2,8 @@
 title: 'Configuración de directivas de actualización de software de iOS en Microsoft Intune: Azure | Microsoft Docs'
 description: En Microsoft Intune, cree o agregue una directiva de configuración para restringir cuándo se instalan automáticamente las actualizaciones de software en los dispositivos iOS administrados o supervisados por Intune. Puede elegir la fecha y hora en la que no se instalarán las actualizaciones. También puede asignar esta directiva a grupos, usuarios o dispositivos y comprobar si hay errores de instalación.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 10/11/2018
 ms.topic: article
@@ -11,12 +11,12 @@ ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
 search.appverid: MET150
-ms.openlocfilehash: 61bd7d5cf40355536aa7d5c361a771ce2b4f30ec
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.openlocfilehash: d73dc96c966b93f26269cc53527a787824c94d3b
+ms.sourcegitcommit: 00fe2b601e3becbe5d644fcbd35a706da3b43af2
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189884"
+ms.lasthandoff: 02/02/2019
+ms.locfileid: "55652636"
 ---
 # <a name="configure-ios-update-policies-in-intune"></a>Configuración de directivas de actualización de iOS en Intune
 
@@ -33,7 +33,10 @@ Esta característica es compatible con dispositivos que ejecutan iOS 10.3 y vers
 4. Escriba un nombre y una descripción para la directiva.
 5. Haga clic en **Configuración**. 
 
-    Escriba los detalles para cuándo los dispositivos iOS no están obligados a instalar las actualizaciones más recientes. Esta configuración crea un período de tiempo restringido. Puede configurar los **días** de la semana, la **zona horaria**, la **hora de inicio**, la **hora de finalización**  y si se **retrasa la visibilidad de actualizaciones de software (días)** para escribir usuarios. Puede seleccionar un intervalo de retraso de actualizaciones de software de 1 a 90 días. Para no participar en la configuración de un retraso de la actualización de software, escriba 0. Estas actualizaciones de configuración solo se aplicarán a los dispositivos iOS supervisados.
+    Escriba los detalles para cuándo los dispositivos iOS no están obligados a instalar las actualizaciones más recientes. Esta configuración crea un período de tiempo restringido. Puede configurar los **días** de la semana, la **zona horaria**, la **hora de inicio**, la **hora de finalización**  y si se **retrasa la visibilidad de actualizaciones de software (días)** para escribir usuarios. Puede seleccionar un intervalo de retraso de actualizaciones de software de 1 a 90 días. Cuando el retraso expire, los usuarios recibirán una notificación para actualizar a la versión más antigua del sistema operativo que estaba disponible cuando se desencadenó el retraso. Para no participar en la configuración de un retraso de la actualización de software, escriba 0. Estas actualizaciones de configuración solo se aplicarán a los dispositivos iOS supervisados.
+  
+    Por ejemplo, si iOS 12.a está disponible el **1 de enero** y tiene **Delay OS Updates** (Retrasar actualizaciones del SO) establecido en **5 días**, esa versión no aparecerá como una actualización disponible en el dispositivo de ningún usuario final asignado a ese perfil. El **sexto día** después de la publicación, esa actualización aparecerá como disponible y todos los usuarios finales podrán iniciarla.
+
 
 6. Haga clic en **Aceptar** para guardar los cambios. Haga clic en **Crear** para crear la directiva.
 
@@ -44,7 +47,7 @@ El perfil se crea y se muestra en la lista de directivas. MDM de Apple no permit
 1. En **Actualizaciones de Software**, seleccione **Directivas de actualización para iOS**.
 2. Elija una directiva existente > **Propiedades**.
 3. Actualice la hora restringida:
-
+    
     1. Seleccione los días de la semana.
     2. Elija la zona horaria en la que se aplica esta directiva.
     3. Escriba la hora de inicio y de finalización de las horas incluidas en la lista de bloqueados.
