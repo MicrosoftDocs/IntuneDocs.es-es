@@ -15,12 +15,13 @@ ROBOTS: noindex,nofollow
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 56d5d9c773a11b3884b4e72b55fab27e7044f1e9
-ms.sourcegitcommit: 5058dbfb0e224207dd4e7ca49712c6ad3434c83c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a5186af2e02363d74f2f046188168efd38eee363
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/08/2018
-ms.locfileid: "53112908"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843432"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Novedades del portal clásico de Intune: meses anteriores
 
@@ -366,5 +367,5 @@ __El certificado de firma de Symantec ya no requiere el portal de empresa firmad
 __Compatibilidad con el portal de empresa de Windows Phone 8__ La compatibilidad con el portal de empresa de Windows Phone 8 ahora está en desuso. La compatibilidad con las plataformas Windows Phone 8 y WinRT ha quedado en desuso en octubre de 2016. La compatibilidad con el portal de empresa de Windows 8 ha quedado en desuso en octubre de 2016.
 
 
-### <a name="see-also"></a>Vea también
+### <a name="see-also"></a>Consulte también
 Consulte [Novedades de Microsoft Intune](whats-new.md) para obtener más información sobre los desarrollos recientes.

@@ -16,12 +16,13 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 4808c30b1d69191d9082ce42fe38b10110d74922
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: f2bdb86913610f1d1317269a7778afc796db4fe8
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188227"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835527"
 ---
 # <a name="view-hardware-and-software-inventory-for-windows-pcs"></a>Visualización del inventario de software y hardware para equipos Windows
 
@@ -67,6 +68,6 @@ Intune recopila información detallada sobre el hardware y software de los escri
 
     Se abre el cuadro de diálogo **Estado de la tarea** , que muestra las tareas remotas actuales, el estado de la tarea, el nombre del dispositivo y los errores notificados, y proporciona un vínculo a información de solución de problemas, si es necesario.
 
-### <a name="see-also"></a>Consulta también
+### <a name="see-also"></a>Consulte también
 
 [Tareas comunes de administración de equipos Windows con el cliente de software de Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

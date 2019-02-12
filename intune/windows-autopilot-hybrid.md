@@ -1,7 +1,7 @@
 ---
-title: 'Inscripción para dispositivos unidos a Active Directory híbrido: Windows Autopilot'
+title: 'Inscripción para dispositivos unidos a Azure AD híbrido: Windows Autopilot'
 titleSuffix: ''
-description: Use Windows Autopilot para inscribir dispositivos unidos a Active Directory híbrido en Microsoft Intune.
+description: Use Windows Autopilot para inscribir dispositivos unidos a Azure AD híbrido en Microsoft Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,20 +16,20 @@ ms.reviewer: damionw
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 171e994be67a24e351b242967c8af934272da356
-ms.sourcegitcommit: 17f58d35a6bdff3e179662f3731fc74d39144470
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 35492b94e38d482f5ee59385453bac54f434223d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "55105177"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845336"
 ---
-# <a name="deploy-hybrid-azure-ad-joined-devices-using-intune-and-windows-autopilot-preview"></a>Implementación de dispositivos unidos a Azure AD híbrido mediante Intune y Windows Autopilot (versión preliminar)
-Puede usar Intune y Windows Autopilot para configurar dispositivos unidos a Azure Active Directory híbrido. Para ello, siga estos pasos.
+# <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot-preview"></a>Implementación de dispositivos unidos a Azure AD híbrido mediante Intune y Windows Autopilot (versión preliminar)
+Puede usar Intune y Windows Autopilot para configurar dispositivos unidos a Azure Active Directory (Azure AD) híbrido. Para ello, siga los pasos de este artículo.
 
 ## <a name="prerequisites"></a>Requisitos previos
 
-- Los [dispositivos unidos a Azure Active Directory híbrido](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) deben estar configurados correctamente.
-    - No olvide [comprobar el registro mediante el cmdlet Get-MsolDevice]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration).
+Configure correctamente los [dispositivos unidos a Azure AD híbrido](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan). Asegúrese de [comprobar el registro del dispositivo]( https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration) mediante el cmdlet Get-MsolDevice.
 
 Los dispositivos que se inscriban también deben:
 - Ejecutar Windows 10 con la [actualización de octubre de 2018](https://blogs.windows.com/windowsexperience/2018/10/02/how-to-get-the-windows-10-october-2018-update/).
@@ -39,114 +39,117 @@ Los dispositivos que se inscriban también deben:
 
 ## <a name="set-up-windows-10-automatic-enrollment"></a>Configurar la inscripción automática de Windows 10
 
-1. Inicie sesión en [Azure Portal](https://portal.azure.com) y seleccione **Azure Active Directory**.
+1. Inicie sesión en [Azure Portal](https://portal.azure.com) y, en el panel de la izquierda, haga clic en **Azure Active Directory**.
 
-   ![Captura de pantalla de Azure Portal](./media/auto-enroll-azure-main.png)
+   ![Azure Portal](./media/auto-enroll-azure-main.png)
 
-2. Seleccione **Movilidad (MDM y MAM)**.
+1. Seleccione **Movilidad (MDM y MAM)**.
 
-   ![Captura de pantalla de Azure Portal](./media/auto-enroll-mdm.png)
+   ![El panel Azure Active Directory](./media/auto-enroll-mdm.png)
 
-3. Seleccione **Microsoft Intune**.
+1. Seleccione **Microsoft Intune**.
 
-   ![Captura de pantalla de Azure Portal](./media/auto-enroll-intune.png)
+   ![El panel Movilidad (MDM y MAM)](./media/auto-enroll-intune.png)
 
-4. Asegúrese de que los usuarios que implementan dispositivos unidos a Azure Active Directory mediante Intune y Windows son miembros de un grupo incluido en el **ámbito de usuario de MDM**.
+1. Asegúrese de que los usuarios que implementan dispositivos unidos a Azure AD mediante Intune y Windows son miembros de un grupo incluido en el **ámbito de usuario de MDM**.
 
-   ![Captura de pantalla de Azure Portal](./media/auto-enroll-scope.png)
+   ![El panel de configuración de Movilidad (MDM y MAM)](./media/auto-enroll-scope.png)
 
-5. Use los valores predeterminados para las siguientes direcciones URL:
-    - **URL de los términos de uso de MDM**
-    - **URL de detección de MDM**
-    - **URL de cumplimiento de MDM**
-6. Elija **Guardar**.
+1. Use los valores predeterminados de los cuadros **URL de las condiciones de uso de MDM**, **Dirección URL de descubrimiento de MDM** y **Dirección URL de cumplimiento de MDM**, y después haga clic en **Guardar**.
 
 ## <a name="increase-the-computer-account-limit-in-the-organizational-unit"></a>Aumento del límite de la cuenta de equipo en la unidad organizativa
 
-El conector de Intune para Active Directory crea equipos inscritos con Autopilot en el dominio local de Active Directory. El equipo que hospeda el conector de Intune debe tener los derechos para crear objetos de equipo dentro del dominio. 
+El conector de Intune para Active Directory crea equipos inscritos con Autopilot en el dominio local de Active Directory. El equipo que hospeda el conector de Intune debe tener los derechos para crear los objetos de equipo dentro del dominio. 
 
-En algunos dominios, los equipos no tienen derechos para crear equipos. Además, los dominios tienen un límite integrado (valor predeterminado de 10) que se aplica a todos los usuarios y equipos que no son derechos delegados para crear Objetos de equipo. Por tanto, los derechos deben delegarse en equipos que hospedan el conector de Intune en la unidad organizativa donde se crean los dispositivos unidos a Hybrid Azure AD.
+En algunos dominios, no se concede a los equipos derechos para crear equipos. Además, los dominios tienen un límite integrado (valor predeterminado de 10) que se aplica a todos los usuarios y equipos en los que no se delegan derechos para crear objetos de equipo. Por tanto, los derechos se deben delegar en equipos que hospedan el conector de Intune en la unidad organizativa donde se crean los dispositivos unidos a Azure AD híbrido.
 
-La unidad organizativa que concedió el derecho a crear equipos debe coincidir con:
-- la unidad organizativa especificada en el perfil Unión a dominio
-- o bien, si no se ha seleccionado ningún perfil, el nombre del dominio del equipo para el dominio.
+La unidad organizativa a la que se conceden los derechos para crear equipos debe coincidir con:
+- la unidad organizativa especificada en el perfil Unión a dominio.
+- Si no se ha seleccionado ningún perfil, el nombre de dominio del equipo para el dominio.
 
-1. Abra **Usuarios y equipos de Active Directory** (DSA.msc).
+1. Abra **Usuarios y equipos de Active Directory (DSA.msc)**.
 
-2. Haga clic con el botón derecho en la unidad organizativa que se usará para crear equipos unidos a Azure AD híbrido > **Delegar control**.
+1. Haga clic con el botón derecho en la unidad organizativa que se va a usar para crear equipos unidos a Azure AD híbrido y, después, seleccione **Delegar control**.
 
-    ![Captura de pantalla de Delegar control](media/windows-autopilot-hybrid/delegate-control.png)
+    ![El comando Delegar control](media/windows-autopilot-hybrid/delegate-control.png)
 
-3. En el asistente **Delegación de control**, elija **Siguiente** > **Agregar...** > **Tipos de objeto**.
+1. En el asistente **Delegación de control**, haga clic en **Siguiente** > **Agregar** > **Tipos de objeto**.
 
-4. En el cuadro de diálogo **Tipos de objeto**, seleccione **Equipos** y, después, haga clic en **Aceptar**.
+1. En el cuadro de diálogo **Tipos de objeto**, active la casilla **Equipos** y, después, haga clic en **Aceptar**.
 
-    ![Captura de pantalla de Delegar control](media/windows-autopilot-hybrid/object-types-computers.png)
+    ![El panel Tipos de objeto](media/windows-autopilot-hybrid/object-types-computers.png)
 
-5. En el cuadro de diálogo **Select Users, Computers, or Groups** (Seleccionar usuarios, equipos o grupos), en el cuadro **Enter the object names to select** (Escriba los nombres de objeto que se van a seleccionar), escriba el nombre del equipo donde está instalado el conector.
+1. En el cuadro de diálogo **Seleccionar usuarios, equipos o grupos**, en el cuadro **Escriba los nombres de objeto que desea seleccionar**, escriba el nombre del equipo donde está instalado el conector.
 
-    ![Captura de pantalla de Delegar control](media/windows-autopilot-hybrid/enter-object-names.png)
+    ![El panel Seleccionar usuarios, equipos o grupos](media/windows-autopilot-hybrid/enter-object-names.png)
 
-6. Elija **Comprobar nombres** para validar la entrada y seleccione **Aceptar** > **Siguiente**.
+1. Haga clic en **Comprobar nombres** para validar la entrada, haga clic en **Aceptar** y después en **Siguiente**.
 
-7. Elija **Crear una tarea personalizada para delegar** > **Siguiente**.
+1. Haga clic en **Crear una tarea personalizada para delegar** > **Siguiente**.
 
-8. Elija **Solo los siguientes objetos en la carpeta** y, luego, compruebe las siguientes opciones:
-    - **Objetos de equipo**
-    - **Crear los objetos seleccionados en esta carpeta**
-    - **Eliminar los objetos seleccionados en esta carpeta**
+1. Active la casilla **Solo los siguientes objetos en la carpeta** y, después, active las casillas **Objetos de equipo**, **Crear los objetos seleccionados en esta carpeta** y  **Eliminar los objetos seleccionados en esta carpeta**.
 
-    ![Captura de pantalla de Delegar control](media/windows-autopilot-hybrid/only-following-objects.png)
+    ![El panel Tipo de objeto de Active Directory](media/windows-autopilot-hybrid/only-following-objects.png)
     
-9. Seleccione **Siguiente**.
+1. Seleccione **Siguiente**.
 
-10. En **Permisos**, active **Control total** (se activarán también las demás opciones) > **Siguiente** > **Finalizar**.
+1. En **Permisos**, active la casilla **Control total**.  
+    Esta acción selecciona todas las demás opciones.
 
-    ![Captura de pantalla de Delegar control](media/windows-autopilot-hybrid/full-control.png)
+    ![El panel Permisos](media/windows-autopilot-hybrid/full-control.png)
+
+1. Haga clic en **Siguiente** y después en **Finalizar**.
 
 ## <a name="install-the-intune-connector"></a>Instalación del conector de Intune
 
-Es necesario instalar el conector de Intune para Active Directory en un equipo en el que se ejecute Windows Server 2016 (o posterior) y que tenga acceso a Internet y a Active Directory. Para aumentar la escalabilidad y disponibilidad, o para admitir varios dominios de Active Directory, puede instalar varios conectores en el entorno. Se recomienda instalar el conector en un servidor en el que no se esté ejecutando ningún otro conector de Intune.
+El conector de Intune para Active Directory se debe instalar en un equipo que ejecute Windows Server 2016 o una versión posterior. El equipo también debe tener acceso a Internet y a Active Directory. Para aumentar la escalabilidad y disponibilidad, o para admitir varios dominios de Active Directory, puede instalar varios conectores en el entorno. Se recomienda instalar el conector en un servidor en el que no se ejecute ningún otro conector de Intune.
 
 1. Asegúrese de que tiene un paquete de idioma instalado y configurado tal y como se describe en [Requisitos de idioma del conector de Intune (versión preliminar)](https://docs.microsoft.com/windows/deployment/windows-autopilot/intune-connector).
 2. En [Intune](https://aka.ms/intuneportal), seleccione **Inscripción de dispositivos** > **Inscripción de Windows** > **Conector de Intune para Active Directory (versión preliminar)** > **Agregar conector**. 
 3. Siga las instrucciones para descargar el conector.
-4. Abra el archivo de instalación del conector que ha descargado para instalar el conector (ODJConnectorBootstrapper.exe).
-5. Al final del proceso de instalación, elija **Configurar**.
-6. Seleccione **Iniciar sesión**.
-7. Escriba las credenciales del rol de usuario Administrador global o Administrador de Intune. La cuenta de usuario debe tener una licencia de Intune asignada.
-8. Vaya a **Inscripción de dispositivos** > **Inscripción de Windows** > **Intune Connector para Active Directory (versión preliminar)** y confirme que el estado de conexión es **Activo**.
+4. Abra el archivo de instalación del conector que ha descargado, *ODJConnectorBootstrapper.exe*, para instalar el conector.
+5. Al final del programa de instalación, haga clic en **Configurar**.
+6. Haga clic en **Iniciar sesión**.
+7. Escriba las credenciales del rol de usuario Administrador global o Administrador de Intune.  
+   La cuenta de usuario debe tener una licencia de Intune asignada.
+8. Vaya a **Inscripción de dispositivos** > **Inscripción de Windows** > **Conector de Intune para Active Directory (versión preliminar)** y confirme que el estado de la conexión es **Activo**.
 
- > [!NOTE]
- > Después de **iniciar sesión** en el conector, puede tardar unos minutos en aparecer en [Intune](https://aka.ms/intuneportal). Tenga en cuenta que el conector solo mostrará si es capaz de comunicarse correctamente con el servicio de Intune.
+> [!NOTE]
+> Después de iniciar sesión en el conector, puede tardar unos minutos en aparecer en [Intune](https://aka.ms/intuneportal). Solo aparece si se puede comunicar correctamente con el servicio Intune.
 
 ### <a name="configure-web-proxy-settings"></a>Establecer la configuración del proxy web
 
-Si tiene un proxy web en el entorno de red, siga estas instrucciones para que el conector de Intune para Active Directory funcione correctamente: [Trabaje con servidores proxy locales existentes](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers).
+Si tiene un proxy web en el entorno de red, asegúrese de que el conector de Intune para Active Directory funcione correctamente; para ello, vea [Trabajo con servidores proxy locales existentes](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-connectors-with-proxy-servers).
 
 
 ## <a name="create-a-device-group"></a>Creación de un grupo de dispositivos
-1. En [Intune](https://aka.ms/intuneportal), elija **Grupos** > **Nuevo grupo**.
-2. En la hoja **Grupo**:
-    1. En **Tipo de grupo**, elija **Seguridad**.
-    2. Escriba un **Nombre de grupo** y una **Descripción del grupo**.
-    3. Elija **Tipo de pertenencia**.
-3. Si ha elegido **Dispositivos dinámicos** en **Tipo de pertenencia** anteriormente, elija **Miembros del dispositivo dinámico** en la hoja **Grupo** y escriba cualquiera de los siguientes códigos en el cuadro **Regla avanzada**.
-    - Si quiere crear un grupo que incluya todos los dispositivos Autopilot, escriba `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
-    - Si quiere crear un grupo que incluya todos los dispositivos Autopilot con un identificador de pedido específico, escriba `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881") `
-    - Si quiere crear un grupo que incluya todos los dispositivos Autopilot con un identificador de pedido de compra específico, escriba `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
+1. En [Intune](https://aka.ms/intuneportal), seleccione **Grupos** > **Nuevo grupo**.
+
+1. En el panel **Grupo**, siga estos pasos:
+
+    a. En **Tipo de grupo**, seleccione **Seguridad**.
+
+    b. Escriba un **Nombre de grupo** y una **Descripción del grupo**.
+
+    c. Seleccione un **Tipo de pertenencia**.
+
+1. Si ha seleccionado **Dispositivos dinámicos** para el tipo de pertenencia, seleccione **Miembros del dispositivo dinámico** en el panel **Grupo** y, después, en el cuadro **Regla avanzada**, siga estos pasos:
+    - Para crear un grupo que incluya todos los dispositivos Autopilot, escriba `(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`.
+    - Para crear un grupo que incluya todos los dispositivos Autopilot con un identificador de pedido específico, escriba `(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`.
+    - Para crear un grupo que incluya todos los dispositivos Autopilot con un identificador de pedido de compra específico, escriba `(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`.
     
-    Después de agregar el código de **Regla avanzada**, elija **Guardar**.
-5. Elija **Crear**.  
+1. Seleccione **Guardar**.
+
+1. Seleccione **Crear**.  
 
 ## <a name="register-your-autopilot-devices"></a>Registro de los dispositivos Autopilot
 
-Elija uno de los siguientes métodos para inscribir los dispositivos Autopilot:
+Seleccione una de las formas siguientes de inscribir los dispositivos Autopilot.
 
 ### <a name="register-autopilot-devices-that-are-already-enrolled"></a>Registro de dispositivos Autopilot ya inscritos
 
 1. Cree un perfil de implementación de Autopilot con **Convertir todos los dispositivos de destino a Autopilot** establecido en **Sí**. 
-2. Asigne el perfil a un grupo que contenga los miembros que quiere registrar automáticamente en Autopilot.
+2. Asigne el perfil a un grupo que contenga los miembros que quiere registrar de forma automática en Autopilot.
 
 Para más información, vea [Crear un perfil de implementación de Autopilot](enrollment-autopilot.md#create-an-autopilot-deployment-profile).
 
@@ -158,56 +161,56 @@ Si los dispositivos aún no están inscritos, puede registrarlos manualmente. Pa
 
 Si va a comprar nuevos dispositivos, algunos OEM pueden encargarse de registrar los dispositivos. Para más información, vea la [página de Windows Autopilot](http://aka.ms/WindowsAutopilot).
 
-Cuando los dispositivos Autopilot están registrados (y previamente están inscritos en Intune), podrá verlos en tres lugares (con nombres establecidos en sus números de serie):
-- Hoja Dispositivos Autopilot en Intune en Azure Portal (**Inscripción de dispositivos** > **Inscripción de Windows** > **Dispositivos**).
-- Hoja Dispositivos de Azure AD en Intune en Azure Portal (**Dispositivos** > **Dispositivos de Azure AD**).
-- Hoja Todos los dispositivos en Azure Active Directory en Azure Portal (**Dispositivos** > **Todos los dispositivos**).
+Cuando los dispositivos Autopilot están *registrados*, antes de que se inscriban en Intune, se muestran en tres lugares (con los nombres establecidos en sus números de serie):
+- El panel **Dispositivos Autopilot** de Intune en Azure Portal. Seleccione **Inscripción de dispositivos** > **Inscripción de Windows** > **Dispositivos**.
+- El panel **Dispositivos de Azure AD** de Intune en Azure Portal. Seleccione **Dispositivos** > **Dispositivos de Azure AD**.
+- El panel **Todos los dispositivos de Azure AD** en Azure Active Directory en Azure Portal al seleccionar **Dispositivos** > **Todos los dispositivos**.
 
-Una vez que se hayan inscrito los dispositivos Autopilot, los verá en cuatro lugares:
-- Hoja Dispositivos Autopilot en Intune en Azure Portal (**Inscripción de dispositivos** > **Inscripción de Windows** > **Dispositivos**).
-- Hoja Dispositivos de Azure AD en Intune en Azure Portal (**Dispositivos** > **Dispositivos de Azure AD**).
-- Hoja Todos los dispositivos en Azure Active Directory en Azure Portal (**Dispositivos** > **Todos los dispositivos**).
-- Hoja Todos los dispositivos en Intune en Azure Portal (**Dispositivos** > **Todos los dispositivos**).
+Después de *inscribir* los dispositivos Autopilot, se muestran en cuatro lugares:
+- El panel **Dispositivos Autopilot** de Intune en Azure Portal. Seleccione **Inscripción de dispositivos** > **Inscripción de Windows** > **Dispositivos**.
+- El panel **Dispositivos de Azure AD** de Intune en Azure Portal. Seleccione **Dispositivos** > **Dispositivos de Azure AD**.
+- El panel **Todos los dispositivos de Azure AD** en Azure Active Directory en Azure Portal. Seleccione **Dispositivos** > **Todos los dispositivos**.
+- El panel **Todos los dispositivos** de Intune en Azure Portal. Seleccione **Dispositivos** > **Todos los dispositivos**.
 
-Una vez que se hayan inscrito los dispositivos Autopilot, sus nombres de dispositivo cambiarán al nombre de host del dispositivo. De forma predeterminada, empieza por "DESKTOP-".
-
-
+Una vez que se hayan inscrito los dispositivos Autopilot, sus nombres se convierten en el nombre de host del dispositivo. De forma predeterminada, el nombre de host comienza con *DESKTOP-*.
 
 
 ## <a name="create-and-assign-an-autopilot-deployment-profile"></a>Creación y asignación de un perfil de implementación de Autopilot
 Los perfiles de implementación de Autopilot sirven para configurar los dispositivos Autopilot.
 
 1. En [Intune](https://aka.ms/intuneportal), seleccione **Inscripción de dispositivos** > **Inscripción de Windows** > **Perfiles de implementación** > **Crear perfil**.
-2. Escriba un **Nombre** y una **Descripción** opcional.
-3. En **Modo de implementación**, elija **Controlado por el usuario**.
-4. En el cuadro **Unirse a Azure AD como**, elija **Unidos a Azure AD híbrido (versión preliminar)**.
-5. Elija **Configuración rápida (OOBE)**, configure las opciones necesarias y elija **Guardar**.
-6. Elija **Crear** para crear el perfil. 
-7. En la hoja del perfil, elija **Asignaciones**.
-8. Elija **Seleccionar grupos** > en la hoja **Seleccionar grupos**, elija el grupo de dispositivos > **Seleccionar**.
+1. Escriba un **nombre** y, opcionalmente, una **descripción**.
+1. En **Modo de implementación**, seleccione **Controlado por el usuario**.
+1. En el cuadro **Unirse a Azure AD como**, seleccione **Unidos a Azure AD híbrido (versión preliminar)**.
+1. Seleccione **Configuración rápida (OOBE)**, configure las opciones necesarias y, después, haga clic en **Guardar**.
+1. Haga clic en **Crear** para crear el perfil. 
+1. En el panel del perfil, haga clic en **Asignaciones**.
+1. Elija **Seleccionar grupos**.
+1. En el panel **Seleccionar grupos**, seleccione el grupo de dispositivos y, después, haga clic en **Seleccionar**.
 
-El proceso para cambiar el estado del perfil de dispositivo de **No asignado** a **Asignando** y, por último, **Asignado**, tardará unos 15 minutos.
+El cambio de estado del perfil de dispositivo de *No asignado* a *Asignando* y, por último, a *Asignado*, tarda unos 15 minutos.
 
-## <a name="turn-on-the-enrollment-status-page-optional"></a>Activación de la página de estado de inscripción (opcional)
+## <a name="optional-turn-on-the-enrollment-status-page"></a>(Opcional) Activación de la página de estado de inscripción
 
-1. En [Intune](https://aka.ms/intuneportal), elija **Inscripción de dispositivos** > **Inscripción de Windows** > **Página de estado de inscripción (vista previa)**.
-2. En la hoja **Página de estado de inscripción**, elija **Predeterminado** > **Configuración**.
-3. Para **Show app and profile installation progress** (Mostrar progreso de instalación de la aplicación y el perfil), elija **Sí**.
-4. Configure las demás opciones según sea necesario.
-5. Elija **Guardar**.
+1. En [Intune](https://aka.ms/intuneportal), seleccione **Inscripción de dispositivos** > **Inscripción de Windows** > **Página de estado de inscripción (vista previa)**.
+1. En el panel **Página de estado de inscripción**, seleccione **Predeterminado** > **Configuración**.
+1. En el cuadro **Mostrar el progreso de la instalación de la aplicación y el perfil**, haga clic en **Sí**.
+1. Configure las demás opciones según sea necesario.
+1. Seleccione **Guardar**.
 
 ## <a name="create-and-assign-a-domain-join-profile"></a>Creación y asignación de un perfil Unión a un dominio
 
 1. En [Intune](https://aka.ms/intuneportal), seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
-2. Complete las siguientes propiedades:
+1. Escriba las propiedades siguientes:
    - **Nombre**: escriba un nombre descriptivo para el nuevo perfil.
    - **Descripción**: escriba una descripción para el perfil.
    - **Plataforma**: seleccione **Windows 10 y versiones posteriores**.
-   - **Tipo de perfil**: elija **Unión a un dominio (vista previa)**.
-3. Elija **Configuración** y proporcione un **Prefijo de nombre de equipo**, un **Nombre de dominio** y, opcionalmente, una **Unidad organizativa** en [formato DN](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name). 
-4. Elija **Aceptar** > **Crear**. Se creará el perfil y aparecerá en la lista.
-5. Para asignar el perfil, siga los pasos descritos en [Asignar un perfil de dispositivo](device-profile-assign.md#assign-a-device-profile). 
+   - **Tipo de perfil**: seleccione **Unión a un dominio (vista previa)**.
+1. Haga clic en **Configuración** y, después, proporcione un **Prefijo de nombre de equipo**, un **Nombre de dominio** y, opcionalmente, una **Unidad organizativa** en [Formato DN](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name). 
+1. Haga clic en **Aceptar** > **Crear**.  
+    El perfil se crea y se muestra en la lista.
+1. Para asignar el perfil, siga los pasos descritos en [Asignar un perfil de dispositivo](device-profile-assign.md#assign-a-device-profile). 
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Después de configurar Windows Autopilot, infórmese sobre cómo administrar esos dispositivos. Para obtener más información, consulte [¿Qué es la administración de dispositivos de Microsoft Intune?](device-management.md)
+Después de configurar Windows Autopilot, infórmese sobre cómo administrar esos dispositivos. Para más información, vea [¿Qué es la administración de dispositivos de Microsoft Intune?](device-management.md).

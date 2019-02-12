@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 5c57db351aae613d0213e4ef439084ad9577a3fc
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 39f19d347cb799a47d07ade4f8458fade68b1b99
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203236"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834660"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Instalar y compartir aplicaciones en el dispositivo
 Instale aplicaciones en el dispositivo desde la aplicación Portal de empresa para Windows.

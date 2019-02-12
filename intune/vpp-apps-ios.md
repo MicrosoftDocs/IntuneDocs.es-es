@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b2ec10ec1174e5e689802d2c4f17a21de8312a15
-ms.sourcegitcommit: a0db74934433226e28ffdf5d92930dafd2feceae
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0e8af65738e51d7c1a5d0b1a0779c210b09bc044
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/12/2018
-ms.locfileid: "53305971"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835442"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Administrar aplicaciones de iOS compradas a través de un programa de compras por volumen con Microsoft Intune
 
@@ -125,11 +126,11 @@ El usuario final recibirá solicitudes para que instale la aplicación de VPP en
 |---|--------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------|-----------------------------------|
 | 1 | BYOD: usuario con licencia                             | esté                                                                                               | esté                                           | esté                                 |
 | 2 | Corp: usuario con licencia (dispositivo no supervisado)     | esté                                                                                               | esté                                           | esté                                 |
-| 3 | Corp: usuario con licencia (dispositivo supervisado)         | esté                                                                                               | N                                           | esté                                 |
-| 4 | BYOD: dispositivo con licencia                           | N                                                                                               | esté                                           | N                                 |
-| 5 | Corp: dispositivo con licencia (dispositivo no supervisado)                           | N                                                                                               | esté                                           | N                                 |
-| 6 | Corp: dispositivo con licencia (dispositivo supervisado)                           | N                                                                                               | N                                           | N                                 |
-| 7 | Pantalla completa (dispositivo supervisado): dispositivo con licencia | N                                                                                               | N                                           | N                                 |
+| 3 | Corp: usuario con licencia (dispositivo supervisado)         | esté                                                                                               | No                                           | esté                                 |
+| 4 | BYOD: dispositivo con licencia                           | No                                                                                               | esté                                           | No                                 |
+| 5 | Corp: dispositivo con licencia (dispositivo no supervisado)                           | No                                                                                               | esté                                           | No                                 |
+| 6 | Corp: dispositivo con licencia (dispositivo supervisado)                           | No                                                                                               | No                                           | No                                 |
+| 7 | Pantalla completa (dispositivo supervisado): dispositivo con licencia | No                                                                                               | No                                           | No                                 |
 | 8 | Pantalla completa (dispositivo supervisado): usuario con licencia   | --- | ---                                          | ---                                |
 
 > [!Note]  

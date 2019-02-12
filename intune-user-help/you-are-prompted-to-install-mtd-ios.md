@@ -15,12 +15,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.openlocfilehash: 773b78b32e919b120ac8908b0b69c5514cbdadb2
-ms.sourcegitcommit: 490365fb8b5405f323b4358fb1ec9dfdd9ff2d58
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 582b4615941dae8c2fc696ce5dfc87e2bbe4b98b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43148768"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846254"
 ---
 # <a name="install-mobile-threat-defense-on-your-ios-device"></a>Instalación de Mobile Threat Defense en su dispositivo iOS
 

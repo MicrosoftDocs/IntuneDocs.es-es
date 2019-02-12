@@ -13,12 +13,12 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 61cb1a3c9de10020381d62a2a7795d5ff728db22
-ms.sourcegitcommit: 6f2f2fa70f4e47fa5ad2f3c536ba7116e1bd1d05
+ms.openlocfilehash: 31cfa617e0ca5d8d0848d1ecb781fda701589ccd
+ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
 ms.translationtype: HT
 ms.contentlocale: es-ES
 ms.lasthandoff: 01/29/2019
-ms.locfileid: "55199428"
+ms.locfileid: "55229957"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Configuración de dispositivos con Windows 10 y versiones posteriores para ejecutarse como una pantalla completa en Intune
 
@@ -101,7 +101,7 @@ Si elige la pantalla completa de aplicación única, escriba la siguiente config
 
     - **Nombre de la aplicación**: Obligatorio. Escriba un nombre para la aplicación.
     - **Ruta de acceso local**: Obligatorio. Escriba la ruta de acceso al archivo ejecutable, como `C:\Program Files (x86)\Microsoft VS Code\Code.exe` o `C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`.
-    - **Identificador de modelo del usuario de la aplicación (AUMID)**: Escriba el identificador de modelo de usuario de la aplicación (AUMID) de la aplicación Win32. Esta configuración determina el diseño de inicio del icono en el escritorio. Para obtener este identificador, vea [Find the Application User Model ID of an installed app](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps) (Buscar el identificador de modelo de usuario de aplicación de una aplicación instalada).
+    - **Identificador de modelo del usuario de la aplicación (AUMID)**: Escriba el identificador de modelo de usuario de la aplicación (AUMID) de la aplicación Win32. Esta configuración determina el diseño de inicio del icono en el escritorio. Para obtener este identificador, vea [Get-StartApps](https://docs.microsoft.com/powershell/module/startlayout/get-startapps?view=win10-ps).
     - **Tamaño de icono**: Obligatorio. Elija un tamaño de icono de la aplicación pequeño, mediano, ancho o grande.
   
   - **Agregar por AUMID**: use esta opción para agregar aplicaciones de Windows de bandeja de entrada, como el Bloc de notas o la Calculadora. Escriba las siguientes propiedades: 

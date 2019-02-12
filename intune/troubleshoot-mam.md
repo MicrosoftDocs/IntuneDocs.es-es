@@ -15,12 +15,13 @@ ms.assetid: cd5a0a3b-0013-4be3-a233-ce6e9083149f
 ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 58ff1bd91a5c95d66d75ad6546137dd2de9feac3
-ms.sourcegitcommit: a30d4b699df4bff17ef39d6c93b2a5c5432db5ae
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e827862510f24a2f133562c836d6c1b47186c330
+ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54899100"
+ms.lasthandoff: 02/12/2019
+ms.locfileid: "56086155"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Solucionar problemas de la administración de aplicaciones móviles
 
@@ -34,9 +35,9 @@ Se trata de problemas comunes que puede experimentar un administrador de TI al u
 
 | Problema | Descripción | Solución |
 | -- | -- | -- |
-| La directiva no se aplica a Skype Empresarial | La directiva de protección de aplicaciones sin inscripción de dispositivo, realizada en Azure Portal, no se aplica a la aplicación Skype Empresarial en dispositivos iOS y Android. | Debe configurar Skype Empresarial para la autenticación moderna.  Siga las instrucciones que se indican en [Enable your tenant for modern authentication](http://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) (Habilitar el inquilino para la autenticación moderna) para configurar la autenticación moderna de Skype. |
+| La directiva no se aplica a Skype Empresarial | La directiva de protección de aplicaciones sin inscripción de dispositivo, realizada en Azure Portal, no se aplica a la aplicación Skype Empresarial en dispositivos iOS y Android. | Debe configurar Skype Empresarial para la autenticación moderna.  Siga las instrucciones que se indican en [Enable your tenant for modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) (Habilitar el inquilino para la autenticación moderna) para configurar la autenticación moderna de Skype. |
 | La directiva de aplicaciones de Office no se aplica | Las directivas de protección de aplicaciones no se aplican a ninguna [aplicación de Office compatible](https://www.microsoft.com/cloud-platform/microsoft-intune-partners) para ningún usuario. | Confirme que el usuario tiene licencia para Intune y que hay una directiva de protección de aplicaciones implementada que apunta a las aplicaciones de Office. La aplicación de una directiva de protección de implementación recientemente implementada puede demorar hasta 8 horas. |
-| El administrador no puede configurar la directiva de protección de aplicaciones en Azure Portal | El usuario administrador de TI no puede configurar directivas de protección de aplicaciones en Azure Portal. | Los roles siguientes tienen acceso a Azure Portal: <ul><li>El administrador global, que puede configurar en el [Portal de Office](http://portal.office.com/).</li><li>El propietario, que puede configurar en [Azure Portal](https://portal.azure.com/).</li><li>El colaborador, que puede configurar en [Azure Portal](https://portal.azure.com/).</li></ul> Consulte [Control de administración basada en roles (RBAC) con Microsoft Intune](role-based-access-control.md) para obtener ayuda sobre cómo configurar estos roles.|
+| El administrador no puede configurar la directiva de protección de aplicaciones en Azure Portal | El usuario administrador de TI no puede configurar directivas de protección de aplicaciones en Azure Portal. | Los roles siguientes tienen acceso a Azure Portal: <ul><li>El administrador global, que puede configurar en el [Portal de Office](https://portal.office.com/).</li><li>El propietario, que puede configurar en [Azure Portal](https://portal.azure.com/).</li><li>El colaborador, que puede configurar en [Azure Portal](https://portal.azure.com/).</li></ul> Consulte [Control de administración basada en roles (RBAC) con Microsoft Intune](role-based-access-control.md) para obtener ayuda sobre cómo configurar estos roles.|
 |Cuentas de usuario que faltan en los informes de la directiva de protección de aplicaciones | Los informes de la consola de administración no muestran las cuentas de usuario en las que se implementó recientemente la directiva de protección de aplicaciones. | Si se acaba de aplicar a un usuario una directiva de protección de aplicaciones, dicho usuario puede tardar hasta 24 horas en aparecer en los informes como usuario de destino. |
 | Los cambios de directiva no funcionan | Los cambios y las actualizaciones de la directiva de protección de aplicaciones pueden tardar hasta 8 horas en aplicarse. | Si procede, el usuario final puede cerrar sesión en la aplicación y volver a iniciarla para forzar la sincronización con el servicio. |
 | La directiva de protección de aplicaciones no funciona con DEP | La directiva de protección de aplicaciones no se aplica a dispositivos DEP de Apple. | Asegúrese de que usa la afinidad de usuario con el Programa de inscripción de dispositivos (DEP) de Apple. La afinidad de usuario es necesaria para todas las aplicaciones que requieran la autenticación de usuario en DEP. <br><br>Para más información sobre la inscripción DEP para iOS, vea [Inscribir dispositivos iOS automáticamente con el Programa de inscripción de dispositivos de Apple](device-enrollment-program-enroll-ios.md).|

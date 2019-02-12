@@ -15,12 +15,13 @@ ms.reviewer: ayesham
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 619976887a7c523933a9e74233779d188baa2cc1
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: da29f4fcdbd694b2817bf4eca953c37d2d3c6b0e
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183679"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55848192"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>Usar ubicaciones (límite de red) en Intune
 
@@ -50,9 +51,9 @@ Para crear una directiva de cumplimiento basadas en ubicación:
 
 1. En Intune, seleccione **Conformidad de dispositivos** > **Ubicaciones** > **Crear**.
 
-2. Introduzca las siguientes propiedades:  
+2. Escriba las propiedades siguientes:  
 
-   - Necesario. Escriba un **Nombre** para la ubicación, como **Planta de fabricación** o **Nave 44-Protegida**.
+   - Obligatorio. Escriba un **Nombre** para la ubicación, como **Planta de fabricación** o **Nave 44-Protegida**.
    - Opcional. Escriba un **Rango IPv4** con notación CIDR (Enrutamiento entre dominios sin clase), como `aaa.bbb.ccc.ddd/n`.
    - Opcional. Escriba la dirección de **Puerta de enlace IPv4**, como `aaa.bbb.ccc.ddd`.
    - Opcional. Escriba la dirección de **Servidor DHCP IPv4**, como `aaa.bbb.ccc.ddd`.

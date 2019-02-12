@@ -15,12 +15,13 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 32281ae37b7b36dfbf49503275a8a1e6c35d8f6d
-ms.sourcegitcommit: 513c59a23ca5dfa80a3ba6fc84068503a4158757
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 528e26ddca1b3327fb0afa2f5cff6f2dbdca1660
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/11/2019
-ms.locfileid: "54210795"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55846492"
 ---
 # <a name="common-issues-and-resolutions-with-device-profiles-in-microsoft-intune"></a>Problemas comunes y resoluciones con perfiles de dispositivo en Microsoft Intune
 
@@ -97,7 +98,7 @@ Al eliminar un perfil o quitar un dispositivo de un grupo que tiene el perfil, s
 - Todos los demás tipos de perfiles:  
 
   - **Dispositivos Android y Windows**: la configuración no se quita del dispositivo.
-  - **Dispositivos Windows Phone 8.1**: Se quitan las siguientes configuraciones:  
+  - **Dispositivos Windows Phone 8.1**: Se han eliminado las siguientes configuraciones:  
   
     - Requerir una contraseña para desbloquear dispositivos móviles
     - Permitir contraseñas sencillas

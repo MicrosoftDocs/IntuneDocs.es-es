@@ -15,12 +15,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
-ms.openlocfilehash: 4109c437ae5a096c78c19aef489218cf7286eb01
-ms.sourcegitcommit: fff179f59bd542677cbd4bf3bacc24bb880e2cb6
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c7178ae7231586e781766adb1fea45b375a76920
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53032340"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842055"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>Uso de API para agregar entidades de certificación de terceros para SCEP en Intune
 
@@ -298,7 +299,7 @@ Es obligatorio validar y comprobar que la solución se integra correctamente con
 12. Confirme que las propiedades de los certificados instalados coinciden con las propiedades establecidas en el perfil SCEP.
 13. Confirme que los certificados emitidos aparecen correctamente en la consola de Intune.
 
-## <a name="see-also"></a>Vea también
+## <a name="see-also"></a>Consulte también
 
 - [Información general para agregar entidades de certificación de terceros](certificate-authority-add-scep-overview.md)
 - [Configuración de Intune](setup-steps.md)

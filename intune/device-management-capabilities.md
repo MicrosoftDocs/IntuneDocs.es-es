@@ -16,12 +16,13 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 22e184530dc0ae0e2bb636d3df8d5b45d8c4d0c7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 39fd7256b9db7590a3a6b601b8884494062fe897
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189512"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845302"
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Funcionalidades de administración de dispositivos inscritos en Microsoft Intune
 
@@ -45,7 +46,7 @@ Los usuarios obtienen acceso al Portal de empresa que les permite instalar aplic
 
 ## <a name="app-management"></a>Administración de aplicaciones
 
-|Capacidad|Detalles|Información adicional|
+|Capacidad|Detalles|Más información|
 |--------------|-----------|--------------------|
 |Administración e implementación de aplicaciones|Proporciona diversas herramientas que le ayudarán a administrar aplicaciones móviles durante todo su ciclo de vida, incluida la implementación de aplicaciones desde archivos de instalación y tiendas de aplicaciones, la supervisión detallada del estado de las aplicaciones y la eliminación de aplicaciones.|[Implementar aplicaciones en Microsoft Intune](apps-deploy.md)|
 |Aplicaciones conformes y no conformes|Le permite especificar listas de aplicaciones conformes (que los usuarios pueden instalar) y aplicaciones no conformes (que los usuarios no pueden instalar).|[Configuración de directivas de iOS en Microsoft Intune](device-restrictions-ios.md)|
@@ -58,12 +59,12 @@ Los usuarios obtienen acceso al Portal de empresa que les permite instalar aplic
 
 ## <a name="company-resource-access"></a>Acceso a los recursos de la empresa
 
-|Capacidad|Detalles|Información adicional|
+|Capacidad|Detalles|Más información|
 |--------------|-----------|--------------------|
 |Perfiles de certificado|Crea e implementa perfiles de certificado de confianza y certificados de protocolo de inscripción de certificados simple (SCEP) que pueden usarse para ayudar a proteger y autenticar los perfiles de Wi-Fi, VPN y correo electrónico.|[Proteger el acceso a recursos con perfiles de certificado en Microsoft Intune](certificates-configure.md)|
 |Perfiles de Wi-Fi|Implementa la configuración de red inalámbrica para los usuarios. Mediante la implementación de esta configuración, se minimiza la intervención del usuario necesaria para conectarse a la red corporativa.|[Wi-Fi connections in Microsoft Intune](wi-fi-settings-configure.md) (Conexiones Wi-Fi en Microsoft Intune)|
 |Perfiles de correo electrónico|Esto crea e implementa la configuración de correo electrónico en los dispositivos para que los usuarios puedan acceder al correo electrónico corporativo en sus dispositivos personales sin tener que realizar ninguna configuración.|[Configurar el acceso al correo electrónico corporativo mediante perfiles de correo electrónico con Microsoft Intune](email-settings-configure.md)|
-|Perfiles VPN|Implementa la configuración de VPN a los usuarios y dispositivos de su organización. Mediante la implementación de esta configuración, se minimiza la intervención del usuario necesaria para conectarse a los recursos de la red de la compañía.|[Conexiones VPN en Microsoft Intune](device-profiles.md#vpn)|
+|Perfiles de VPN|Implementa la configuración de VPN a los usuarios y dispositivos de su organización. Mediante la implementación de esta configuración, se minimiza la intervención del usuario necesaria para conectarse a los recursos de la red de la compañía.|[Conexiones VPN en Microsoft Intune](device-profiles.md#vpn)|
 |Directivas de acceso condicional|Administra el acceso al correo electrónico de Microsoft Exchange y SharePoint Online desde dispositivos que no se administran con Intune.|[Restringir el acceso al correo electrónico y SharePoint con Microsoft Intune](app-based-conditional-access-intune.md)|
 
 ## <a name="next-steps"></a>Pasos siguientes

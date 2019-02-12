@@ -16,12 +16,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
-ms.openlocfilehash: 243e9602a253fecf2eda1dd73dfb49a488db0974
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0ba4cf212f44742ca9feb077a945a1f500ca1a78
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190258"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55840950"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Ancho de banda y requisitos de configuración de red de Intune
 
@@ -61,7 +62,7 @@ Un servidor proxy de almacenamiento en caché que recibe solicitudes de contenid
 A continuación, se indica la configuración típica que se utiliza para un servidor proxy que almacena en caché contenido para clientes de Intune.
 
 
-|          Valor           |           Valor recomendado           |                                                                                                  Detalles                                                                                                  |
+|          Setting           |           Valor recomendado           |                                                                                                  Detalles                                                                                                  |
 |----------------------------|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |         Tamaño de caché         |             De 5 a 30 GB             | El valor varía según el número de equipos cliente en la red y las configuraciones que se utilizan. Para evitar que los archivos se eliminen demasiado pronto, ajuste el tamaño de la caché para su entorno. |
 | Tamaño de archivo de caché individual |                950 MB                 |                                                                     Es posible que esta opción no esté disponible en todos los servidores proxy de almacenamiento en caché.                                                                     |
@@ -165,7 +166,7 @@ En las siguientes tablas se enumeran los puertos y los servicios a los que acced
 
 ### <a name="apple-device-network-information"></a>Información de red de dispositivos de Apple
 
-|         Nombre de host         |                                        Dirección URL (dirección IP/subred)                                        |  Protocolo  |     Puerto     |                          Dispositivo                           |
+|         nombreDeHost         |                                        Dirección URL (dirección IP/subred)                                        |  Protocol  |     Puerto     |                          Dispositivo                           |
 |--------------------------|-------------------------------------------------------------------------------------------------------|------------|--------------|-----------------------------------------------------------|
 |      Consola de administración       |                                  gateway.push.apple.com (17.0.0.0/8)                                  |    TCP     |     2195     |                    Apple iOS y macOS                    |
 |      Consola de administración       |                                  feedback.push.apple.com(17.0.0.0/8)                                  |    TCP     |     2196     |                    Apple iOS y macOS                    |
@@ -175,5 +176,5 @@ En las siguientes tablas se enumeran los puertos y los servicios a los que acced
 |     Servicios de dispositivos      |                                        feedback.push.apple.com                                        |    TCP     |     2196     |                           Apple                           |
 |     Servicios de dispositivos      |   Apple iTunesitunes.apple.com, \*.mzstatic.com\*, .phobos.apple.com y \*.phobos.apple.com.edgesuite.net   |    HTTP    |      80      |                           Apple                           |
 | Dispositivos (Internet/Wi-Fi) |                                 #-courier.push.apple.com(17.0.0.0/8)                                  |    TCP     | 5223 y 443 | Solo Apple. &#39;#&#39; es un número aleatorio comprendido entre 0 y 200. |
-| Dispositivos (Internet/Wi-Fi) |                           phobos.apple.comocsp.apple.comax.itunes.apple.com                           | HTTP o HTTPS |  80 o 443   |                        Solo Apple                         |
+| Dispositivos (Internet/Wi-Fi) |                           phobos.apple.comocsp.apple.comax.itunes.apple.com                           | HTTP/HTTPS |  80 o 443   |                        Solo Apple                         |
 

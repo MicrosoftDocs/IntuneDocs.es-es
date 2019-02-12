@@ -15,12 +15,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: 8c783d182ec1a2a7ad29e65ee9eea3ccc99191c5
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 428025e5e56450fd859f6bf2c9a990cbdca4f263
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204965"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835119"
 ---
 # <a name="windows-holographic-for-business-settings-to-manage-shared-devices-using-intune"></a>Opciones de configuración de Windows Holographic for Business para administrar dispositivos compartidos con Intune
 
@@ -43,8 +44,8 @@ Para obtener más información sobre esta característica de Intune, vea [Contro
 
 - **Administración de cuentas**: establezca esta opción en **Habilitar** para eliminar automáticamente las cuentas locales creadas por invitados y las cuentas en AD y Azure AD. Cuando un usuario cierre sesión en el dispositivo, o cuando se ejecute el mantenimiento del sistema, estas cuentas se eliminarán. Al habilitar esta opción, también deberá establecer lo siguiente:
   - **Eliminación de cuenta**: elija cuándo se eliminarán las cuentas: **Umbral de espacio de almacenamiento**, **Umbral de espacio de almacenamiento y umbral de inactividad** o **Inmediatamente después de cerrar sesión**. Indique también:
-    - **Iniciar umbral de eliminación (%)**: indique un porcentaje entre 0 y 100 de espacio en disco. Cuando el espacio de almacenamiento o en disco sea inferior al valor indicado, las cuentas en caché se eliminarán. Así, las cuentas de eliminarán de forma continua para recuperar espacio en disco. Las cuentas que lleven más tiempo inactivas serán las primeras en eliminarse.
-    - **Detener umbral de eliminación (%)**: indique un porcentaje entre 0 y 100 de espacio en disco. Cuando el espacio de almacenamiento o en disco alcance el valor indicado, la eliminación se detendrá.
+    - **Iniciar umbral de eliminación (%)**: indique un porcentaje (de 0 a 100) de espacio en disco. Cuando el espacio de almacenamiento o en disco sea inferior al valor indicado, las cuentas en caché se eliminarán. Se eliminan las cuentas continuamente para recuperar espacio en disco. Las cuentas que lleven más tiempo inactivas serán las primeras en eliminarse.
+    - **Detener umbral de eliminación (%)**: indique un porcentaje (de 0 a 100) de espacio en disco. Cuando el espacio de almacenamiento o en disco alcance el valor indicado, la eliminación se detendrá.
 
   Establezca esta opción en **Deshabilitar** para mantener las cuentas locales, de AD y de Azure AD creadas por invitados.
 

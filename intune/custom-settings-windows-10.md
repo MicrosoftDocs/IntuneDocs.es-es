@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d87d8c8da5511f641b785f28bad7d7ef6739d888
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 86c822ba197851fe7e05d91ff8aa703fb9fe3811
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184461"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55842801"
 ---
 # <a name="use-custom-settings-for-windows-10-devices-in-intune"></a>Usar una configuración personalizada para dispositivos Windows 10 en Intune
 
@@ -43,23 +44,23 @@ En este artículo:
 3. Escriba los valores siguientes:
 
     - **Nombre**: escriba un nombre para el perfil, como `windows 10 custom profile`.
-    - **Descripción**: escriba una descripción para el perfil
+    - **Descripción**: escriba una descripción para el perfil.
     - **Plataforma**: seleccione **Windows 10 y versiones posteriores**.
     - **Tipo de perfil**: elija **Personalizado**.
 
 4. En **Configuración OMA-URI personalizada**, seleccione **Agregar**. Escriba los valores siguientes:
 
-    - **Nombre**: escriba un nombre único para el valor OMA-URI que le ayude a identificarlo en la lista de valores de configuración.
+    - **Nombre**: Escriba un nombre único para el valor OMA-URI que le ayude a identificarlo en la lista de valores de configuración.
     - **Descripción**: escriba una descripción con información general sobre la configuración y otros detalles importantes.
     - **OMA-URI** (distingue mayúsculas de minúsculas): escriba la configuración OMA-URI que quiere usar.
     - **Tipo de datos**: elija el tipo de datos que se usará para esta configuración OMA-URI. Las opciones son:
 
-        - Cadena
+        - String
         - Cadena (archivo XML)
         - Fecha y hora
         - Integer
         - Punto flotante
-        - Booleano
+        - Boolean
         - Base64 (archivo)
 
     - **Valor**: escriba el valor de datos que quiere asociar con la configuración OMA-URI especificada. El valor depende del tipo de datos que ha seleccionado. Por ejemplo, si elige **Fecha y hora**, debe seleccionar el valor en un selector de fecha.

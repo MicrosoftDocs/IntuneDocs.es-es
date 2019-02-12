@@ -14,12 +14,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d0426b63cb4601a73451ec9509ddea8e39271c29
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 36076aab02f16937066cb3d47d573f7c74dd6277
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204978"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55833623"
 ---
 # <a name="windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Plantillas de Windows 10 para configurar opciones de directiva de grupo en Microsoft Intune
 
@@ -38,7 +39,7 @@ En este artículo se enumeran los pasos para crear una plantilla para dispositiv
 
 1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los servicios**, filtre por **Intune** > seleccione **Intune**.
 2. Seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
-3. Escriba las siguientes propiedades:
+3. Escriba las propiedades siguientes:
 
     - **Nombre**: Escriba un nombre para el perfil.
     - **Descripción**: escriba una descripción para el perfil. Esta configuración es opcional pero recomendada.

@@ -16,12 +16,13 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 58a78cee51a411c940d4510cd8498994c14129f0
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: caf4401a2274a74050ec0eb404363cfc15b23e76
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642751"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851447"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Punto de conexión de la API de Almacenamiento de datos de Intune
 
@@ -76,11 +77,11 @@ Los filtros de intervalo de `DateKey` se pueden usar para limitar la cantidad de
 
 |                             Filtro                             |           Optimización del rendimiento           |                                          Descripción                                          |
 |:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|
-|    `maxhistorydays=7`                                            |    Todas                                      |    Devolver datos con `DateKey` entre 20180214 y 20180221.                                     |
-|    `$filter=DateKey eq 20180214`                                 |    Todas                                      |    Devolver datos con `DateKey` igual a 20180214.                                                    |
-|    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    Todas                                      |    Devolver datos con `DateKey` entre 20180214 y 20180220.                                     |
+|    `maxhistorydays=7`                                            |    Full                                      |    Devolver datos con `DateKey` entre 20180214 y 20180221.                                     |
+|    `$filter=DateKey eq 20180214`                                 |    Full                                      |    Devolver datos con `DateKey` igual a 20180214.                                                    |
+|    `$filter=DateKey ge 20180214 and DateKey lt 20180221`         |    Full                                      |    Devolver datos con `DateKey` entre 20180214 y 20180220.                                     |
 |    `maxhistorydays=7&$filter=Id gt 1`                            |    Parcial, el identificador gt 1 no se optimizará    |    Devolver datos con `DateKey` entre 20180214 y 20180221, y el identificador mayor que 1.             |
-|    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    Todas                                      |    Devolver datos con `DateKey` igual a 20180214. `maxhistorydays` se omite.                            |
+|    `maxhistorydays=7&$filter=DateKey eq 20180214`                |    Full                                      |    Devolver datos con `DateKey` igual a 20180214. `maxhistorydays` se omite.                            |
 |    `$filter=DateKey eq 20180214 and Id gt 1`                     |    Ninguno                                      |    No se trata como filtro de intervalo de `DateKey`, por lo que no hay aumento del rendimiento.                              |
 |    `$filter=DateKey ne 20180214`                                 |    Ninguno                                      |    No se trata como filtro de intervalo de `DateKey`, por lo que no hay aumento del rendimiento.                              |
 |    `maxhistorydays=7&$filter=DateKey eq 20180214 and Id gt 1`    |    Ninguno                                      |    No se trata como filtro de intervalo de `DateKey`, por lo que no hay aumento del rendimiento. `maxhistorydays` se omite.    |

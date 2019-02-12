@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 01/30/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,12 +14,12 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
-ms.openlocfilehash: a5a756cd3fd8b78893cee6a3c4629e49d6ac7c87
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: 8656e480c292fc9ed1212f9d2c180b791cb4f94c
+ms.sourcegitcommit: ce76541ceb783eb2e242032ef8579041d2f61532
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55072548"
+ms.lasthandoff: 01/31/2019
+ms.locfileid: "55431497"
 ---
 # <a name="ios-device-feature-settings-in-intune"></a>Configuración de características de dispositivos iOS en Intune
 
@@ -177,16 +177,23 @@ Elija cómo las aplicaciones instaladas en dispositivos iOS envían notificacion
 
 Use esta configuración para mostrar un mensaje o un texto personalizado en la ventana de inicio de sesión y la pantalla de bloqueo. Por ejemplo, puede escribir el mensaje "En caso de pérdida, devolver a..." y agregar información sobre la etiqueta de activo. 
 
-Esta configuración admite dispositivos supervisados que ejecuten iOS 9.3 y versiones posteriores.
+Esta característica es compatible con dispositivos que ejecutan:
 
-1. En **Configuración**, seleccione **Configuración de dispositivo compartido (solo supervisado)**.
+- iOS 9.3 y versiones posteriores
+
+1. En **Configuración**, seleccione **Mensaje de pantalla de bloqueo (solo supervisado)**.
 2. Escriba los valores siguientes:
 
-    - **Información de etiqueta de activo**: escriba información sobre la etiqueta de activo del dispositivo. Por ejemplo, escriba `Owned by Contoso Corp`. 
+    - **Información de etiqueta de activo**: escriba información sobre la etiqueta de activo del dispositivo. Por ejemplo, escriba `Owned by Contoso Corp` o `Serial Number: {{serialnumber}}`. 
 
       El texto que escriba se mostrará en la ventana de inicio de sesión y en la pantalla de bloqueo del dispositivo.
 
-    - **Nota al pie de pantalla de bloqueo**: si pierde el dispositivo o se lo roban, escriba una nota que pueda ayudar a que se lo devuelvan. Por ejemplo, escriba algo parecido a `If found, call Contoso at ...`.
+    - **Nota al pie de pantalla de bloqueo**: si pierde el dispositivo o se lo roban, escriba una nota que pueda ayudar a que se lo devuelvan. Puede escribir el texto que quiera. Por ejemplo, escriba algo parecido a `If found, call Contoso at ...`.
+
+    Los tokens de dispositivo también se pueden usar para agregar información específica sobre el dispositivo a estos campos. Por ejemplo, para que se muestre el número de serie, escriba `Serial Number: {{serialnumber}}`. En la pantalla de bloqueo, el texto tendrá un aspecto similar a este: `Serial Number 123456789ABC`. Al especificar variables, no olvide usar llaves: `{{ }}`. En los [tokens de configuración de aplicación](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) podrá ver una lista de las variables que puede usar. También puede usar `deviceName` o cualquier otro valor específico del dispositivo.
+
+    > [!NOTE]
+    > Las variables no se validan en la interfaz de usuario. Como resultado, es posible que vea perfiles guardados con entradas incorrectas. Por ejemplo, si escribe `{{Devicename}}` en lugar de `{{devicename}}`, se muestra la cadena literal en lugar del nombre único del dispositivo.
 
 3. Cuando termine, seleccione **Aceptar** para guardar los cambios.
 
@@ -279,6 +286,8 @@ Esta configuración controla el acceso de dirección URL del explorador en dispo
 ## <a name="wallpaper-settings"></a>Configuración del fondo de pantalla
 
 Agregue una imagen .png, .jpg o .jpeg personalizada a los dispositivos iOS supervisados. Por ejemplo, use un logotipo de empresa en la pantalla de bloqueo.
+
+Puede experimentar un comportamiento inesperado cuando un perfil sin imagen se asigna a dispositivos con una imagen existente. Por ejemplo, crea un perfil sin una imagen. Este perfil se asigna a dispositivos que ya tienen una imagen. En este escenario, la imagen puede cambiar a la predeterminada del dispositivo, o bien la imagen original puede permanecer en el dispositivo. Este comportamiento se controla y limita por medio de la plataforma MDM de Apple.
 
 - **Ubicación de presentación del fondo de pantalla**: elija una ubicación en el dispositivo para mostrar la imagen. Las opciones son:
   - **No configurado**: no se agrega una imagen personalizada al dispositivo. El dispositivo usa la configuración predeterminada del sistema operativo.

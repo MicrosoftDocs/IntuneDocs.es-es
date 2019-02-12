@@ -15,12 +15,13 @@ ms.reviewer: heenamac
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cb6e3f0a9f62348d55b5dc2284c1007ea7faf088
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: befffd3f3ae43531d8a5f541e6f7cd4e43f4a2b0
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203219"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55845803"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>Creación de un perfil de dispositivo en Microsoft Intune
 
@@ -28,11 +29,11 @@ ms.locfileid: "54203219"
 
 ## <a name="create-the-profile"></a>Creación del perfil
 
-1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los dispositivos** > filtre por **Intune** > seleccione **Intune**.
+1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Intune**.
 
 2. Seleccione **Configuración del dispositivo** > **Perfiles** > **Crear perfil**.
 
-3. Escriba las siguientes propiedades:
+3. Escriba las propiedades siguientes:
 
    - **Nombre**: escriba un nombre descriptivo para el nuevo perfil.
    - **Descripción**: escriba una descripción para el perfil. Esta configuración es opcional pero recomendada.

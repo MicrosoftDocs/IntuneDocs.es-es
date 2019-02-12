@@ -3,8 +3,8 @@ title: Proteger dispositivos con Microsoft Intune
 titleSuffix: Microsoft Intune
 description: Obtenga información acerca de algunas de las maneras en que Intune puede ayudarle a proteger los dispositivos contra accesos no autorizados y otras amenazas.
 keywords: ''
-author: ErikjeMS
-ms.author: erikje
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 07/19/2018
 ms.topic: article
@@ -16,12 +16,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 06f14b0ba1edcde28c7f2c732ab286e80f186bf2
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a5743e1d24e878a84413c23c8309cda2ab0dda90
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188269"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844486"
 ---
 # <a name="protect-devices-with-microsoft-intune"></a>Proteger dispositivos con Microsoft Intune
 

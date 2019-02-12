@@ -16,12 +16,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 24b64d4d7b2ccd376f666e9d7961706025b6eaad
-ms.sourcegitcommit: b93db06ba435555f5b126f97890931484372fcfb
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 4b15200ad5fc4f8fb272618925ee758100ebde72
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/04/2018
-ms.locfileid: "52829111"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55851532"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Agregar directivas de configuración para aplicaciones administradas sin inscripción de dispositivos
 

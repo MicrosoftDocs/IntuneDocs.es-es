@@ -16,12 +16,13 @@ ms.reviewer: amyros
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7a6fffaa0ae35675538d04b91980799d7d8aa80d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 1dd61edf02e8d5344494129715325250fbfdd7bc
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181299"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834422"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>Agregar grupos para organizar usuarios y dispositivos
 Intune usa grupos de Azure Active Directory (AD) para administrar dispositivos y usuarios. Como administrador de Intune, puede configurar los grupos de modo que satisfagan sus necesidades organizativas. Cree grupos para organizar a los usuarios o dispositivos por ubicación geográfica, departamento o características de hardware. Use los grupos para administrar tareas a escala. Por ejemplo, puede establecer directivas para muchos usuarios o implementar aplicaciones para un conjunto de dispositivos.
@@ -38,7 +39,7 @@ Use los siguientes pasos para crear un grupo.
 3. En el panel de **Intune**, vaya a **Grupos** y luego elija **Nuevo grupo** en el panel **Todos los grupos**.
    ![Captura de pantalla de Azure Portal con la opción Nuevo grupo seleccionada](./media/groups-add-new.png)
 4. En **Tipo de grupo**, elija una de las opciones siguientes:
-    - **Seguridad**: los grupos de seguridad son un buen recurso para rellenar grupos de usuarios. Puesto que los grupos de seguridad definen quién puede acceder a qué recursos, se pueden convertir perfectamente en grupos de usuarios de Intune. Los grupos de seguridad que se sincronizan desde Active Directory a Azure Active Directory, o que se crean directamente en Azure Active Directory a través del Centro de administración de Office 365 o el portal de Azure, están disponibles al crear grupos de usuarios en Intune.
+    - **Seguridad**: Los grupos de seguridad son un buen recurso para rellenar grupos de usuarios. Puesto que los grupos de seguridad definen quién puede acceder a qué recursos, se pueden convertir perfectamente en grupos de usuarios de Intune. Los grupos de seguridad que se sincronizan desde Active Directory a Azure Active Directory, o que se crean directamente en Azure Active Directory a través del Centro de administración de Office 365 o el portal de Azure, están disponibles al crear grupos de usuarios en Intune.
     - **Office 365**
 
 5. Escriba un **nombre** y una **descripción** para el grupo nuevo. Estas propiedades solo aparecen en el portal de administración y no se muestran a los usuarios.
@@ -63,6 +64,6 @@ Además, probablemente quiera crear una directiva predeterminada que se aplique 
 
 
 
-## <a name="see-also"></a>Consulta también
+## <a name="see-also"></a>Consulte también
 - [Administración del acceso a los recursos con grupos de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)
 - [Grupos clásicos de Intune en Azure Portal](groups-get-started.md)

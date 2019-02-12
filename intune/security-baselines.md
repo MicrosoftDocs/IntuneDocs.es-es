@@ -2,10 +2,10 @@
 title: 'Uso de líneas de base de seguridad en Microsoft Intune: Azure | Microsoft Docs'
 description: Agregue o defina configuraciones de seguridad de grupo recomendadas para proteger al usuario y los datos en dispositivos mediante Microsoft Intune para la administración de dispositivos móviles. Habilite bitlocker, configure Advanced Threat Protection para Windows Defender, controle Internet Explorer, use Smart Screen, establezca directivas de seguridad locales, requiera una contraseña, bloquee las descargas de Internet, etc.
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 02/01/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,23 +14,24 @@ ms.assetid: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
-ms.openlocfilehash: d78adf8e7d6d2ce05951171e6248dcc8c389945d
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c610371760413cc157bee84382280666f387432b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55070297"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55850835"
 ---
 # <a name="create-a-windows-10-security-baseline-in-intune"></a>Creación de una línea de base de seguridad de Windows 10 en Intune
 
-Las líneas de base de seguridad son una característica en versión preliminar que está disponible para dispositivos con Windows 10 y versiones posteriores. Esta característica incluye numerosas configuraciones de Intune para ayudar a proteger y los usuarios y dispositivos. Automáticamente establece estas configuración en los valores que los equipos de seguridad recomiendan. Por ejemplo, la línea de base habilita automáticamente BitLocker, requiere automáticamente una contraseña para desbloquear un dispositivo, deshabilita automáticamente la autenticación básica, etc.
+Las líneas de base de seguridad son una característica en versión preliminar que está disponible para dispositivos con Windows 10 y versiones posteriores. Esta característica incluye numerosas configuraciones admitidas por Intune que puede usar para proteger a los usuarios y dispositivos. Automáticamente establece estas configuración en los valores que los equipos de seguridad recomiendan. Por ejemplo, la línea de base habilita automáticamente BitLocker, requiere automáticamente una contraseña para desbloquear un dispositivo, deshabilita automáticamente la autenticación básica, etc.
 
 Esta característica se aplica a:
 
 - Windows 10, versión 1809 y posteriores
 
 > [!NOTE]
-> Mientras las líneas de base de seguridad se encuentren en versión preliminar, Microsoft no recomienda el uso de perfiles en un entorno de producción, ya que dichas líneas pueden cambiar en el transcurso de la versión preliminar.
+> Mientras las líneas de base de seguridad se encuentren en versión preliminar, Microsoft no recomienda el uso de perfiles en un entorno de producción, ya que dichas líneas pueden cambiar en el transcurso de la versión preliminar. Cuando las líneas de base de seguridad están disponibles con carácter general, los perfiles existentes no se convertirán a los perfiles compatibles más recientes.
 
 El objetivo de usar las líneas de base de seguridad es proporcionar un flujo de trabajo seguro de un extremo a otro cuando trabaja con Microsoft 365. Estas son algunas de las ventajas:
 
@@ -94,6 +95,12 @@ Una vez creado el perfil, está listo para asignarlo a los usuarios, dispositivo
 
 Tan pronto como guarde los cambios, el perfil se insertará en los dispositivos cuando se registren en Intune. Por lo tanto, puede ocurrir inmediatamente.
 
+## <a name="available-security-baselines"></a>Líneas de base de seguridad disponibles  
+
+Las líneas de base de seguridad siguientes están disponibles para su uso con Intune.
+- **Versión preliminar: línea de base de seguridad MDM**
+  - Versión: [Octubre de 2018](security-baseline-settings-windows.md)
+
 ## <a name="q--a"></a>Q & A
 
 #### <a name="why-these-settings"></a>¿Por qué esta configuración?
@@ -117,5 +124,5 @@ Estrictamente hablando, no. El equipo de seguridad de Microsoft consulta a las o
 - La migración de las directivas de grupo de Active Directory locales a una solución en la nube pura mediante Azure Active Directory (AD) con Microsoft Intune es una odisea. Para ayudar en este proceso, hay GPO complementarios publicados para AD híbrido y dispositivos unidos a Azure AD. Estos dispositivos pueden obtener configuraciones de MDM desde la nube (Intune) y configuraciones de directiva de grupo desde los controladores de dominio locales según sea necesario.
 
 ## <a name="next-steps"></a>Pasos siguientes
-
-Compruebe el estado y supervise la [línea de base y el perfil](security-baselines-monitor.md).
+- Vea la [configuración de línea de base de seguridad de Windows](security-baseline-settings-windows.md) compatible con Intune.  
+- Compruebe el estado y supervise la [línea de base y el perfil](security-baselines-monitor.md).

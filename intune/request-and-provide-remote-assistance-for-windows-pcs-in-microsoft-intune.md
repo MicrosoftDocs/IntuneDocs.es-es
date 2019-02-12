@@ -16,12 +16,13 @@ ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 21d9ad0b21b151d0131977a01e9d359735be4187
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: af9098a814d102765df1b1a5316cfeeedd4fbc4f
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181316"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838349"
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>Solicitar y proporcionar asistencia remota para equipos con Windows
 
@@ -86,6 +87,6 @@ Cuando ayuda a los usuarios con problemas, debe reiniciar su PC de forma remota 
 
 4.  En el cuadro de diálogo **Estado de la tarea** , revise las tareas remotas actuales, el estado de la tarea, el nombre del dispositivo y los errores notificados.
 
-### <a name="see-also"></a>Consulta también
+### <a name="see-also"></a>Consulte también
 
 [Tareas comunes de administración de equipos Windows con el cliente de software de Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

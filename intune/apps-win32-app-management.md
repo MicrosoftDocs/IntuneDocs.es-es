@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2019
+ms.date: 01/29/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,30 +16,30 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: cb52a9755dffd20e6d3d66419855cc4ee7fca293
-ms.sourcegitcommit: 06f62ae989da6c60bac4a52ccd41b429f7367d8c
+ms.openlocfilehash: ba77c14e470ed75a87f44adcaf0ba9b98cd06438
+ms.sourcegitcommit: e0d55bdda1a818ffe4cfc0ef0592833e22f65a89
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55068329"
+ms.lasthandoff: 01/30/2019
+ms.locfileid: "55290764"
 ---
-# <a name="intune-standalone---win32-app-management-public-preview"></a>Intune independiente: administración de aplicaciones Win32 (versión preliminar pública)
+# <a name="intune-standalone---win32-app-management"></a>Intune independiente: administración de aplicaciones Win32
 
 Intune independiente admite capacidades increíbles de administración de aplicaciones Win32. Aunque es posible que los clientes conectados a la nube usen Configuration Manager para la administración de aplicaciones Win32, los clientes que solo utilicen Intune tendrán mayores capacidades de administración para sus aplicaciones Win32 de línea de negocio (LOB). En este tema se proporciona información general sobre la característica de administración de aplicaciones Win32 de Intune e información sobre la solución de problemas.
 
-## <a name="prerequisites-for-public-preview"></a>Requisitos previos para la versión preliminar pública
+## <a name="prerequisites"></a>Requisitos previos
 
 - Windows 10 versión 1607 o posteriores (versiones Enterprise, Pro y Education)
 - El cliente de Windows 10 debe: 
     - haberse unido a Azure Active Directory (AAD) o Azure Active Directory híbrido, y
     - haberse inscrito en Intune (administrado por MDM)
-- El tamaño de la aplicación Windows está limitado a 8 GB por aplicación en la versión preliminar pública 
+- El tamaño de la aplicación Windows está limitado a 8 GB por aplicación
 
 ## <a name="prepare-the-win32-app-content-for-upload"></a>Preparar el contenido de la aplicación Win32 para la carga
 
-Use la [herramienta de preparación de la carga de aplicaciones Win32 en Microsoft Intune](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool) para procesar previamente las aplicaciones Win32. La herramienta de empaquetado convierte los archivos de instalación de aplicaciones al formato *.intunewin*. La herramienta de empaquetado también detecta algunos de los atributos requeridos por Intune para determinar el estado de instalación de la aplicación. Después de usar esta herramienta en la carpeta de instalación de aplicaciones, podrá crear una aplicación Win32 en la consola de Intune.
+Use la [herramienta de preparación de contenido de Win32 de Microsoft](https://go.microsoft.com/fwlink/?linkid=2065730) para procesar previamente las aplicaciones Win32. La herramienta convierte los archivos de instalación de la aplicación al formato *.intunewin*. La herramienta también detecta algunos de los atributos requeridos por Intune para determinar el estado de instalación de la aplicación. Después de usar esta herramienta en la carpeta de instalación de aplicaciones, podrá crear una aplicación Win32 en la consola de Intune.
 
-Puede descargar la [herramienta de preparación de la carga de aplicaciones Win32 en Microsoft Intune](https://github.com/Microsoft/Intune-Win32-App-Packaging-Tool) desde GitHub.
+Puede descargar la [herramienta de preparación de contenido de Win32 de Microsoft](https://go.microsoft.com/fwlink/?linkid=2065730) desde GitHub.
 
 ### <a name="available-command-line-parameters"></a>Parámetros de línea de comandos disponibles 
 
@@ -74,7 +74,7 @@ De forma bastante similar a una aplicación de línea de negocio (LOB), puede ag
 1.  Inicie sesión en el [Portal de Azure](https://portal.azure.com/).
 2.  Seleccione **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3.  En el panel **Intune**, seleccione **Aplicaciones cliente** > **Aplicaciones** > **Agregar**.
-4.  En el panel de aplicaciones **Agregar**, seleccione **Vista previa de la aplicación Windows (Win32) -** en la lista desplegable.
+4.  En el panel de aplicaciones **Agregar**, seleccione **Aplicación Windows (Win32)** en la lista desplegable.
 
     ![Captura de pantalla de la hoja Agregar aplicación - Cuadro de lista desplegable Agregar tipo](./media/apps-win32-app-01.png)
 
@@ -85,6 +85,10 @@ De forma bastante similar a una aplicación de línea de negocio (LOB), puede ag
     ![Captura de pantalla de la hoja del archivo del paquete de aplicaciones](./media/apps-win32-app-02.png)
 
 2.  En el panel **Archivo del paquete de aplicaciones**, seleccione el botón Examinar. Después seleccione un archivo de instalación de Windows con la extensión *.intunewin*.
+
+    > [!IMPORTANT]
+    > Asegúrese de usar la versión más reciente de la herramienta de preparación de contenido Win32 de Microsoft. Si no usa la versión más reciente, verá una advertencia en la que se indica que la aplicación se ha empaquetado con una versión anterior de la herramienta de preparación de contenido de Win32 de Microsoft. 
+
 3.  Cuando haya terminado, seleccione **Aceptar**.
 
 ### <a name="step-3-configure-app-information"></a>Paso 3: Configuración de información de la aplicación
@@ -171,7 +175,7 @@ De forma bastante similar a una aplicación de línea de negocio (LOB), puede ag
             
                 ![Captura de pantalla del panel Regla de detección - la clave del registro existe](./media/apps-win32-app-05.png)    
             
-            2.  Compruebe que el valor del registro existe (**no está disponible en versión preliminar**).
+            2.  Compruebe si existe el valor del Registro.
         
                 ![Captura de pantalla del panel Regla de detección - el valor del registro existe](./media/apps-win32-app-06.png)    
         

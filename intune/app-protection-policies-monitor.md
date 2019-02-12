@@ -16,12 +16,13 @@ ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: f86ebd91125ec60d2ad0a28b47f5ac01fb62e8e2
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7efa888344b91c74672563730bbdea6c7424214b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297305"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55835102"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>Supervisión de las directivas de protección de aplicaciones
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
@@ -93,7 +94,7 @@ La vista detallada muestra el mensaje de error, la aplicación a la que se obtuv
 Puede encontrar los mismos informes en la hoja **Estado de protección de la aplicación**.
 
 > [!NOTE]
-> Intune proporciona campos adicionales con información sobre el dispositivo, incluidos el identificador de registro de la aplicación, el fabricante de Android, el modelo, la versión de la revisión de seguridad y el modelo de iOS. En Intune, estos campos están disponibles si selecciona **Aplicaciones cliente** > **Estado de protección de la aplicación** y elige **Informe de protección de aplicaciones: iOS, Android**. Además, estos parámetros lo ayudarán a configurar la lista de **admitidos** correspondiente al fabricante de dispositivo (Android), la lista de **admitidos** del modelo de dispositivo (iOS y Android) y la configuración de versión de la revisión de seguridad mínima de Android. 
+> Intune proporciona campos adicionales con información sobre el dispositivo, incluidos el identificador de registro de la aplicación, el fabricante de Android, el modelo, la versión de la revisión de seguridad y el modelo de iOS. En Intune, estos campos estarán disponibles en **Aplicaciones cliente** > **Estado de protección de aplicaciones** y **Informe de protección de aplicaciones: iOS, Android**. Además, estos parámetros lo ayudarán a configurar la lista de **admitidos** correspondiente al fabricante de dispositivo (Android), la lista de **admitidos** del modelo de dispositivo (iOS y Android) y la configuración de versión de la revisión de seguridad mínima de Android. 
 
 Hay informes adicionales disponibles que le ayudarán con el estado de cumplimiento de directivas MAM. Para ver estos informes, seleccione **Aplicaciones cliente** > **Estado protección de la aplicación** > **Informes**. 
 

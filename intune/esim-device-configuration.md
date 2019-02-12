@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: ba60df2dcec51e1c45e6a84a8fc9831937f70aef
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0d5abe78389d58043b44ba6e7f31854407019c0d
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190087"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834150"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>Configurar perfiles de telefonía móvil eSIM en Intune: versión preliminar pública
 
@@ -35,7 +36,7 @@ En Intune, puede importar códigos de activación de un solo uso proporcionados 
 
 Para implementar eSIM en los dispositivos mediante Intune, se necesita lo siguiente:
 
-- **Dispositivos compatibles con eSIM**, como Surface LTE: vea [si el dispositivo admite eSIM](https://support.microsoft.com/help/4020763/windows-10-use-esim-for-cellular-data). O bien, vea una lista de [algunos de los dispositivos compatibles con eSIM conocidos](#esim-capable-devices) (en este artículo).
+- **Dispositivos compatibles con eSIM**, como Surface LTE: vea si [el dispositivo admite eSIM](https://support.microsoft.com/help/4020763/windows-10-use-esim-for-cellular-data). O bien, vea una lista de [algunos de los dispositivos compatibles con eSIM conocidos](#esim-capable-devices) (en este artículo).
 - **PC con Windows 10 Fall Creators Update** (1709 o posterior) inscrito y administrado mediante MDM por Intune.
 - **Códigos de activación** proporcionados por el operador de telefonía móvil. Estos códigos de activación de un solo uso se agregan a Intune y se implementan en los dispositivos compatibles con eSIM. Póngase en contacto con su operador de telefonía móvil para obtener los códigos de activación de eSIM.
 
@@ -65,6 +66,9 @@ Los dispositivos siguientes se han anunciado como compatibles con eSIM, o bien e
 - Lenovo T480
 - Samsung Galaxy Book
 - Surface Pro LTE
+- HP Spectre Folio 13
+- Lenovo Yoga C630
+- Samsung Galaxy Book 2
 
 ## <a name="step-1-add-cellular-activation-codes"></a>Paso 1: Agregar códigos de activación de telefonía móvil
 
@@ -145,7 +149,7 @@ Después de crear el perfil de dispositivo, Intune proporciona gráficos. Estos 
 
     Intune muestra el estado de entrega e instalación del código de activación destinado a los dispositivos.
 
-    - **Dispositivo no sincronizado**: el dispositivo de destino no ha contactado con Intune desde que se creó la directiva de implementación de eSIM.
+    - **Dispositivo no sincronizado:** el dispositivo de destino no ha contactado con Intune desde que se creó la directiva de implementación de eSIM.
     - **Activación pendiente**: un estado transitorio cuando Intune está instalando de forma activa el código de activación en el dispositivo.
     - **Activo**: instalación correcta del código de activación.
     - **Error de activación**: no se pudo instalar el código de activación: vea la guía de solución de problemas.
@@ -190,7 +194,7 @@ El perfil de eSIM también se quita cuando el usuario [retira](devices-wipe.md#r
 - Asegúrese de que el archivo .csv tiene el formato apropiado. Confirme que el archivo no incluye códigos duplicados, varios operadores de telefonía móvil ni otros planes de datos. Recuerde que cada archivo debe ser único para un operador de telefonía móvil y un plan de datos móviles.
 - Cree un grupo de dispositivos estáticos de Azure AD que solo incluya los dispositivos de eSIM de destino.
 - Si hay un problema con el estado de implementación, compruebe lo siguiente:
-  - **El archivo no tiene el formato adecuado**: vea **Paso 1: Agregar códigos de activación de telefonía móvil** (en este artículo) sobre cómo aplicar el formato correcto al archivo.
+  - **El archivo no tiene el formato adecuado**: Consulte **Paso 1: Agregar códigos de activación de telefonía móvil** (en este artículo) sobre cómo aplicar el formato correcto al archivo.
   - **Error de activación de telefonía móvil, póngase en contacto con el operador de telefonía móvil**: no se puede activar el código de activación dentro de su red. O bien, se ha producido un error en la descarga del perfil y la activación de telefonía móvil.
 
 ## <a name="next-steps"></a>Pasos siguientes

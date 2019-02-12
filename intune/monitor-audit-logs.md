@@ -12,12 +12,13 @@ ms.service: microsoft-intune
 ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
-ms.openlocfilehash: d9ecfa44e2619e5e123c9e8af169b6a8a95ee466
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9e7269eb6e396557a6bc19daa371a10be7154866
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183900"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55844639"
 ---
 # <a name="audit-logs-for-intune-activities"></a>Registros de auditoría para actividades de Intune
 Los registros de auditoría proporcionan un registro de las actividades que generan un cambio en Microsoft Intune. Las acciones relacionadas con crear, actualizar (editar), eliminar y asignar, o las tareas remotas, generan eventos de auditoría que puede revisar. Puede revisar registros de auditoría para la mayoría de las cargas de trabajo de Intune. La auditoría está habilitada de forma predeterminada para todos los clientes y no se puede deshabilitar. Los eventos de auditoría empiezan a registrarse en la fecha de lanzamiento de la característica de diciembre de 2017; los eventos anteriores no están disponibles.

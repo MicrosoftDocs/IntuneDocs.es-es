@@ -17,12 +17,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 88107a580eb72f647bb7c32d52ed5d3c848cd392
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3f8d1ff89f948715890eb9a31535e90b8787a856
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54203321"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55849867"
 ---
 # <a name="send-logs-to-your-company-support-from-the-settings-app-for-windows-10"></a>Envío de registros al equipo de soporte técnico de su empresa desde la aplicación Configuración para Windows 10
 

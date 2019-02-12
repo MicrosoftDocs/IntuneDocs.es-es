@@ -15,12 +15,13 @@ ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: fb51ba835491da284ddd304bc038d16862c6dfc1
-ms.sourcegitcommit: 4a7421470569ce4efe848633bd36d5946f44fc8d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 707bb84df55fa202e3dc5241e3d7212039b17b3b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54205108"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55841749"
 ---
 # <a name="windows-10-and-later-settings-to-manage-shared-devices-using-intune"></a>Configuración de Windows 10 y versiones posteriores para administrar dispositivos compartidos mediante Intune
 
@@ -43,9 +44,9 @@ Para obtener más información sobre esta característica de Intune, vea [Contro
   - **Invitado**: se crea una cuenta de invitado de forma local en el dispositivo.
   - **Dominio**: se crea una cuenta de invitado en Azure Active Directory (AD).
   - **Invitado y dominio**: se crea una cuenta de invitado de forma local en el dispositivo y en Azure Active Directory (AD).
-- **Administración de cuentas**: establézcala en **Habilitar** para eliminar automáticamente cuentas locales creadas por invitados y cuentas en AD y Azure AD. Cuando un usuario cierre sesión en el dispositivo, o cuando se ejecute el mantenimiento del sistema, estas cuentas se eliminarán. Al habilitar esta opción, también debe establecer lo siguiente:
+- **Administración de cuentas**: establezca esta opción en **Habilitar** para eliminar automáticamente las cuentas locales creadas por invitados y las cuentas en AD y Azure AD. Cuando un usuario cierre sesión en el dispositivo, o cuando se ejecute el mantenimiento del sistema, estas cuentas se eliminarán. Al habilitar esta opción, también deberá establecer lo siguiente:
   - **Eliminación de cuenta**: elija cuándo se eliminarán las cuentas: **Umbral de espacio de almacenamiento**, **Umbral de espacio de almacenamiento y umbral de inactividad** o **Inmediatamente después de cerrar sesión**. Indique también:
-    - **Iniciar umbral de eliminación (%)**: indique un porcentaje (de 0 a 100) de espacio en disco. Cuando el espacio de almacenamiento o en disco sea menor que el valor indicado, las cuentas en caché se eliminarán. Se eliminan las cuentas continuamente para recuperar espacio en disco. Las cuentas inactivas durante más tiempo serán las primeras en eliminarse.
+    - **Iniciar umbral de eliminación (%)**: indique un porcentaje (de 0 a 100) de espacio en disco. Cuando el espacio de almacenamiento o en disco sea inferior al valor indicado, las cuentas en caché se eliminarán. Se eliminan las cuentas continuamente para recuperar espacio en disco. Las cuentas que lleven más tiempo inactivas serán las primeras en eliminarse.
     - **Detener umbral de eliminación (%)**: indique un porcentaje (de 0 a 100) de espacio en disco. Cuando el espacio de almacenamiento o en disco alcance el valor indicado, la eliminación se detendrá.
 
   Establézcalo en **Deshabilitar** para mantener las cuentas locales, de AD y de Azure AD creadas por invitados.

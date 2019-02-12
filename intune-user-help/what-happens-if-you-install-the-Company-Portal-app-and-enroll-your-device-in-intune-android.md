@@ -17,14 +17,15 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: fa1b3b283fbf4941dd73ed4b5c6525901d41f8e3
-ms.sourcegitcommit: 534efa7c5033098233b2549c2d7fc6cf33330e79
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7d8af8b01de3b9782f487e29a9f993ceaf32aac6
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/25/2018
-ms.locfileid: "47169022"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55838162"
 ---
-# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>¿Qué ocurre si instala la aplicación Portal de empresa e inscribe el dispositivo Android en Intune?
+# <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-android-device-in-intune"></a>¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo Android en Intune?
 
 Si su organización le pide que instale la aplicación Portal de empresa de Intune en su dispositivo Android, tal vez se pregunte por qué. En este artículo se describen la finalidad y las características de la aplicación, incluida una explicación de cómo se protegen los datos profesionales y académicos a los que tiene acceso y que almacena en el dispositivo.
 
@@ -66,7 +67,7 @@ Al inscribir el dispositivo en la aplicación Portal de empresa, el departamento
 
 * Establecer requisitos para el dispositivo, como la necesidad de disponer de una contraseña de dispositivo o de un PIN. En este caso, recibirá una notificación de la aplicación indicando que el dispositivo no es compatible. El soporte de la empresa también podría limitar el número de veces que se puede introducir una contraseña incorrecta en el dispositivo. Si se producen demasiados intentos erróneos, el dispositivo podría quedar bloqueado.  
 
-* Requerirle que acepte los términos y condiciones.  
+* Debe aceptar los términos y condiciones.  
 
 * Deshabilitar la cámara. El propósito de esta directiva es evitar que se hagan fotografías de información privilegiada, así como evitar distracciones en el entorno educativo. Las escuelas podrían deshabilitar las cámaras de los dispositivos de la clase para que los estudiantes no puedan compartir los materiales de los exámenes.  
 

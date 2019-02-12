@@ -17,14 +17,15 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.openlocfilehash: 3c06bb8efd0d6f7795094f36dcb513c5dca63e77
-ms.sourcegitcommit: baacdb2c5ee69d0055acad2d64f2bf1a3fc5e02d
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: a02a7b69245b9b6e7b8f62fdb9be8acb83d42981
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/18/2018
-ms.locfileid: "53570798"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55834762"
 ---
-# <a name="an-existing-company-email-account-was-found"></a>Se ha encontrado una cuenta de correo electrónico de empresa existente
+# <a name="an-existing-company-email-account-was-found"></a>Se ha encontrado una cuenta de correo electrónico de empresa existente encontrado
 
 Podría haber tenido acceso con un dispositivo móvil a la cuenta de correo electrónico profesional o educativa *antes* de tener el dispositivo administrado. Si el dispositivo está ahora administrado, se recomienda que:
 

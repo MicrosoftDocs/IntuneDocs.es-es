@@ -15,12 +15,13 @@ ms.reviewer: tscott
 ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
-ms.openlocfilehash: f4ead71e626316b515646d474cc006be7cf2f774
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e600c2db57352eb2348ded9fe55295837223797b
+ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52190377"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55843092"
 ---
 # <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Solucionar problemas de acceso a los recursos de la empresa con Microsoft Intune
 
@@ -34,7 +35,7 @@ Si esta información no soluciona el problema, vea [How to get support for Micro
 |---------------|-----------------|--------------|
 |10 (APP_CI_ENFORCEMENT_IN_PROGRESS)|Instalación en curso||
 |20 (APP_CI_ENFORCEMENT_IN_PROGRESS_WAITING_CONTENT)|Esperando contenido||
-|30 (APP_CI_ENFORCEMENT_IN_PROGRESS_WAITING_CONTENT)|Recuperando contenido|Causa probable: el estado de trabajo 30 indica un error de descarga de aplicación de un usuario.<br /><br />Las causas probables pueden ser:<br /><br />El dispositivo había perdido la conectividad de Internet mientras la descarga estaba en curso.<br /><br />Puede haber expirado el certificado emitido para el dispositivo en el momento de la inscripción.<br /><br />Mitigación:<br /><br />Inicie la aplicación Aplicaciones de empresa desde el Panel de Control del dispositivo para confirmar que el certificado del dispositivo no ha expirado; en caso afirmativo, deberá volver a inscribirlo.<br /><br />Compruebe que el dispositivo está conectado a Internet y pruebe a solicitar la aplicación de nuevo.|
+|30 (APP_CI_ENFORCEMENT_IN_PROGRESS_WAITING_CONTENT)|Recuperando contenido|Causa probable: El estado del trabajo 30 indica un error de descarga de aplicación de un usuario.<br /><br />Las causas probables pueden ser:<br /><br />El dispositivo había perdido la conectividad de Internet mientras la descarga estaba en curso.<br /><br />Puede haber expirado el certificado emitido para el dispositivo en el momento de la inscripción.<br /><br />Mitigación:<br /><br />Inicie la aplicación Aplicaciones de empresa desde el Panel de Control del dispositivo para confirmar que el certificado del dispositivo no ha expirado; en caso afirmativo, deberá volver a inscribirlo.<br /><br />Compruebe que el dispositivo está conectado a Internet y pruebe a solicitar la aplicación de nuevo.|
 |40 (APP_CI_ENFORCEMENT_IN_PROGRESS_CONTENT_DOWNLOADED)|Descarga de contenido completa||
 |50 (APP_CI_ENFORCEMENT_IN_PROGRESS_INSTALLING)|Instalación en curso||
 |60 (APP_CI_ENFORCEMENT_ERROR_INSTALLING)|Error de instalación|Error en la instalación de la aplicación después de la descarga.<br /><br />El certificado de firma de código con el que se firmó la aplicación no está presente en el dispositivo.<br /><br />Una dependencia de marco de trabajo de la que depende la aplicación no se encuentra instalada en el dispositivo.<br /><br />Asegúrese de que el certificado de firma de código con el que se firmó la aplicación está presente en el dispositivo y confirme con el administrador que este certificado está destinado a todos los dispositivos de Windows RT inscritos de la empresa.<br /><br />Si el error de instalación se debe a la falta de una dependencia de marco de trabajo, el administrador tendrá que volver a publicar la aplicación y empaquetar el marco de trabajo junto con el paquete de aplicación.<br /><br />El paquete de aplicación descargado no es un paquete válido, puede estar dañado o no ser compatible con la versión del sistema operativo del dispositivo.|
@@ -304,7 +305,7 @@ Si esta información no soluciona el problema, vea [How to get support for Micro
 |---------------|--------------------------|-----------------|
 |-2016344008|0x87D10838|(1404): se ha denegado el acceso al certificado|
 |-2016344009|0x87D10837|(1403): no se encuentra el certificado|
-|-2016344010|0x87D10836|DCMO(1402): error de la operación|
+|-2016344010|0x87D10836|DCMO(1402): Error de la operación|
 |-2016344011|0x87D10835|DCMO(1401): el usuario eligió no aceptar la operación cuando se le solicitó|
 |-2016344012|0x87D10834|DCMO(1400): error de cliente|
 |-2016344108|0x87D107D4|DCMO(1204): la funcionalidad del dispositivo está deshabilitada y el usuario puede volver a habilitarla|
@@ -314,12 +315,12 @@ Si esta información no soluciona el problema, vea [How to get support for Micro
 |-2016344112|0x87D107D0|DCMO(1200): la operación finalizó correctamente|
 |-2016345595|0x87D10205|Syncml(517): la respuesta a un comando atómico fue demasiado grande para un único mensaje.|
 |-2016345596|0x87D10204|Syncml(516): el comando estaba dentro de un elemento atómico y se produjo un error del mismo. El comando no se revirtió correctamente.|
-|-2016345598|0x87D10202|Syncml(514): el comando SyncML no se completó correctamente porque la operación se canceló antes de procesar el comando.|
+|-2016345598|0x87D10202|Syncml(514):  el comando SyncML no se completó correctamente porque la operación se canceló antes de procesar el comando.|
 |-2016345599|0x87D10201|Syncml(513): el destinatario no admite o rechaza la versión especificada del protocolo de sincronización de SyncML que se usa en el mensaje de solicitud de SyncML.|
 |-2016345600|0x87D10200|Syncml(512): error de aplicación durante la sesión de sincronización.|
 |-2016345601|0x87D101FF|Syncml(511): error grave en el servidor al procesar la solicitud.|
 |-2016345602|0x87D101FE|Syncml(510): error al procesar la solicitud. El error está relacionado con un error en el almacén de datos del destinatario.|
-|-2016345603|0x87D101FD|Syncml(509): reservado para uso en el futuro.|
+|-2016345603|0x87D101FD|Syncml(509): Reservado para su uso en el futuro:|
 |-2016345604|0x87D101FC|Syncml(508): se produjo un error que necesita una actualización del estado de sincronización actual del cliente con el servidor.|
 |-2016345605|0x87D101FB|Syncml(507): el error hizo que todos los comandos de SyncML en un tipo de elemento atómico finalizaran incorrectamente.|
 |-2016345606|0x87D101FA|Syncml(506): error de aplicación al procesar la solicitud.|
@@ -331,7 +332,7 @@ Si esta información no soluciona el problema, vea [How to get support for Micro
 |-2016345612|0x87D101F4|Syncml(500): el destinatario detectó una condición inesperada que le impidió satisfacer la solicitud|
 |-2016345684|0x87D101AC|Syncml(428): no se pudo mover|
 |-2016345685|0x87D101AB|Syncml(427): el elemento primario no se puede eliminar porque contiene elementos secundarios.|
-|-2016345686|0x87D101AA|Syncml:(426) elemento parcial no aceptado.|
+|-2016345686|0x87D101AA|Syncml(426): elemento parcial no aceptado.|
 |-2016345687|0x87D101A9|Syncml(425): error del comando solicitado porque el remitente no tiene permisos de control de acceso (ACL) adecuados en el destinatario.|
 |-2016345688|0x87D101A8|Syncml(424): el objeto fragmentado se recibió, pero el tamaño del objeto recibido no coincidió con el tamaño declarado en el primer fragmento.|
 |-2016345689|0x87D101A7|Syncml(423): error del comando solicitado porque el elemento que se eliminó temporalmente se había eliminado permanentemente previamente en el servidor.|
@@ -352,7 +353,7 @@ Si esta información no soluciona el problema, vea [How to get support for Micro
 |-2016345704|0x87D10198|Syncml(408): no se recibió un mensaje previsto en el periodo de tiempo necesario.|
 |-2016345705|0x87D10197|Syncml(407): error del comando solicitado debido a que el originador debe proporcionar la autenticación correcta.|
 |-2016345706|0x87D10196|Syncml(406): error del comando solicitado porque una característica opcional en la solicitud no se admite.|
-|-2016345707|0x87D10195|Syncml(405): el comando solicitado no se admite en el destino.|
+|-2016345707|0x87D10195|Syncml(405): El comando solicitado no se admite en el destino.|
 |-2016345708|0x87D10194|Syncml(404): el destino solicitado no se encontró.|
 |-2016345709|0x87D10193|Syncml(403): error del comando solicitado, pero el destinatario entendió el comando solicitado.|
 |-2016345710|0x87D10192|Syncml(402): error del comando solicitado porque es preciso realizar el pago correspondiente.|
