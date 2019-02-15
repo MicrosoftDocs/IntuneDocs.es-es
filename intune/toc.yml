@@ -229,6 +229,45 @@ items:
       href: enrollment-report-company-portal-abandon.md
     - name: Solucionar problemas de inscripción de dispositivos
       href: troubleshoot-device-enrollment-in-intune.md
+  - name: Administrar los dispositivos
+    href: device-management.md
+    items:
+    - name: Capacidades de administración de dispositivos
+      href: device-management-capabilities.md
+    - name: Omitir el bloqueo de activación
+      href: device-activation-lock-bypass.md
+    - name: Administración del inicio desde cero de Windows
+      href: device-fresh-start.md
+    - name: Búsqueda de dispositivos perdidos de iOS
+      href: device-locate.md
+    - name: Habilitación del modo perdido de iOS
+      href: device-lost-mode.md
+    - name: Activación del modo supervisado de iOS
+      href: device-supervised-mode.md
+    - name: Bloqueo del dispositivo
+      href: device-remote-lock.md
+    - name: Restablecer código acceso
+      href: device-passcode-reset.md
+    - name: Reinicio del dispositivo
+      href: device-restart.md
+    - name: Cierre de sesión del usuario actual
+      href: device-logout-user.md
+    - name: Quitar usuario
+      href: device-remove-user.md
+    - name: Borrar dispositivo
+      href: device-erase.md
+    - name: Dispositivos móviles de control remoto
+      href: device-profile-android-teamviewer.md
+    - name: Restablecimiento del PIN de Windows 10
+      href: device-windows-pin-reset.md
+    - name: Instalación del conector de servicios de Exchange
+      href: exchange-service-connector-configure.md
+    - name: Sincronización del dispositivo
+      href: device-sync.md
+    - name: Examen del inventario de dispositivos
+      href: device-inventory.md
+    - name: Retirada de dispositivos
+      href: devices-wipe.md
   - name: Establecer el cumplimiento de los dispositivos
     items:
     - name: Información general sobre el cumplimiento
@@ -959,9 +998,9 @@ items:
       href: data-outside-protect.md
     - name: Evitar fugas de datos en dispositivos no administrados
       href: data-leak-prevention.md
-ms.openlocfilehash: 3b178658fad3e94d09dcd5979e155b8097753ffd
-ms.sourcegitcommit: 5708ec1d7ae50494be44ed5064f150b636188c84
+ms.openlocfilehash: 365777adf57d1f36577e2e6f20cce6b193a829f8
+ms.sourcegitcommit: 8e503c1b350f7b29a045b7daf3eece64be4ca3c4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56240051"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56302207"
