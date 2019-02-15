@@ -65,6 +65,8 @@ items:
     href: common-scenarios.md
   - name: Decisiones de tecnología para BYOD con EMS
     href: byod-technology-decisions.md
+  - name: Directivas de protección de aplicaciones y perfiles de trabajo (Android)
+    href: android-deployment-scenarios-app-protection-work-profiles.md
   - name: Administración de versiones de sistema operativo
     href: manage-os-versions.md
   - name: Administración de Windows Holographic
@@ -957,9 +959,9 @@ items:
       href: data-outside-protect.md
     - name: Evitar fugas de datos en dispositivos no administrados
       href: data-leak-prevention.md
-ms.openlocfilehash: ace0bec62318d846cdcc37330abb63b2a89fef14
-ms.sourcegitcommit: e262b0ad8df610e25eb9421b9ebc2673bcf1020e
+ms.openlocfilehash: 3b178658fad3e94d09dcd5979e155b8097753ffd
+ms.sourcegitcommit: 5708ec1d7ae50494be44ed5064f150b636188c84
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/11/2019
-ms.locfileid: "55986916"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56240051"
