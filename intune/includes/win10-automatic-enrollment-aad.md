@@ -32,6 +32,9 @@ La inscripción automática permite a los usuarios inscribir sus dispositivos Wi
       >
       > En el caso de los dispositivos corporativos, el ámbito de usuario MDM tiene prioridad si ambos ámbitos están habilitados. Los dispositivos se inscriben en MDM.
 
+   > [!NOTE]
+   > El ámbito de usuario de MAM debe establecerse en un grupo de usuarios o una colección.
+
    ![Captura de pantalla de Azure Portal](../media/auto-enroll-scope.png)
 
 5. Use los valores predeterminados para las siguientes direcciones URL:

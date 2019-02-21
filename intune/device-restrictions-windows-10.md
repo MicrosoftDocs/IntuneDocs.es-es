@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 02/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -13,12 +13,13 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
-ms.openlocfilehash: e297169757f1bcc703ce698302ce6f7129104827
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 943b5dc8c0fe1c9b55b9c4971be2087353b60428
+ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55230127"
+ms.lasthandoff: 02/15/2019
+ms.locfileid: "56307896"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos con Windows 10 y versiones posteriores para permitir o restringir características mediante Intune
 
@@ -70,6 +71,7 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 - **Cuenta Microsoft**: Permite al usuario asociar una cuenta de Microsoft con el dispositivo.
 - **Cuenta que no es Microsoft**: se permite que los usuarios agreguen al dispositivo cuentas de correo electrónico que no estén asociadas a una cuenta Microsoft.
 - **Sincronización de configuración de cuenta Microsoft**: se permite que la configuración de dispositivo y aplicación asociada a una cuenta Microsoft se sincronice entre los dispositivos.
+- **Ayudante para el inicio de sesión de cuentas Microsoft**: elija **Deshabilitar** para impedir que los usuarios finales controlen el servicio Ayudante para el inicio de sesión de Microsoft (wlidsvc), por ejemplo, que detengan o inicien manualmente el servicio. Cuando se establece en **No configurado**, el servicio wlidsvc NT usa el valor predeterminado del sistema operativo (SO), que puede permitir que los usuarios finales inicien y detengan el servicio. El sistema operativo usa este servicio para permitir que los usuarios inicien sesión en su cuenta Microsoft.
 
 ## <a name="cloud-printer"></a>Impresora en la nube
 
@@ -136,6 +138,10 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 - **Ink Workspace** (Área de trabajo de Ink): se impide que los usuarios accedan al área de trabajo de Ink. **No configurado** activa el área de trabajo de Ink y el usuario tiene permitido usarlo por encima de la pantalla de bloqueo.
 - **Reimplementación automática**: se permite que los usuarios con derechos administrativos eliminen todos los datos de usuario y las configuraciones con **CTRL + Win + R** en la pantalla de bloqueo del dispositivo. En este caso, el dispositivo se vuelve a configurar e inscribir automáticamente para la administración.
 - **Require users to connect to network during device setup (Windows Insider only)** [Exigir que los usuarios se conecten a la red durante la configuración del dispositivo (solo para Windows Insider)]: elija **Requerir** para que el dispositivo se conecte a una red antes de pasar de la página Red durante la configuración de Windows 10. Aunque esta característica está en versión preliminar, se requiere una compilación 1809 de Windows Insider o una versión posterior para usar esta configuración.
+- **Acceso directo a memoria**: **Bloquear** impide el acceso directo a memoria (DMA) a todos los puertos de bajada PCI de conexión instantánea hasta que un usuario inicia sesión en Windows. **Habilitado** (valor predeterminado) permite el acceso a DMA, incluso cuando un usuario no ha iniciado sesión.
+
+  CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
+
 - **Finalizar procesos desde el Administrador de tareas**: esta configuración determina si los usuarios que no son administradores pueden usar el Administrador de tareas para finalizar tareas. Si selecciona **Bloquear**, se impide que los usuarios estándar (no administradores) usen el Administrador de tareas para finalizar un proceso o una tarea en el dispositivo. Si selecciona **Sin configurar** (valor predeterminado), se permite que los usuarios estándar finalicen un proceso o una tarea mediante el Administrador de tareas.
 
 ## <a name="kiosk-preview---obsolete"></a>Quiosco (versión preliminar): obsoleto
@@ -192,7 +198,7 @@ Use el botón **Agregar** para crear una configuración de pantalla completa (o 
 ## <a name="locked-screen-experience"></a>Experiencia de pantalla bloqueada
 
 - **Notificaciones del centro de actividades (solo móviles)**: se permite que las notificaciones del centro de actividades aparezcan en la pantalla de bloqueo del dispositivo (solo Windows 10 Mobile).
-- **URL de imagen de pantalla de bloqueo (solo equipos de escritorio)**: escriba la URL de una imagen en formato JPEG que se usa como papel tapiz de la pantalla de bloqueo de Windows. Los usuarios no pueden cambiar esta configuración.
+- **URL de imagen de pantalla de bloqueo (solo equipos de escritorio)**: escriba la URL de una imagen en formato JPEG que se usa como papel tapiz de la pantalla de bloqueo de Windows. Esta configuración bloquea la imagen. La imagen no se puede cambiar posteriormente.
 - **Tiempo de espera de la pantalla configurable por el usuario (solo dispositivos móviles)**: se permite que los usuarios configuren el período de tiempo. 
 - **Cortana en pantalla bloqueada (solo escritorio)**: no se permite que el usuario interactúe con Cortana cuando el dispositivo está en la pantalla de bloqueo (solo Windows 10 Escritorio).
 - **Notificaciones del sistema en pantalla bloqueada**: se impide que los mensajes de alerta aparezcan en la pantalla de bloqueo del dispositivo.
@@ -313,7 +319,6 @@ Use el botón **Agregar** para crear una configuración de pantalla completa (o 
   - **Impedir la reutilización de contraseñas anteriores**: Especifica el número de contraseñas usadas anteriormente que recuerda el dispositivo.
   - **Requerir contraseña cuando el dispositivo vuelve de un estado de inactividad (solo móviles)**: Especifica que el usuario debe escribir una contraseña para desbloquear el dispositivo (solo Windows 10 Mobile).
   - **Contraseñas sencillas**: le permite el uso de contraseñas sencillas, como 1111 y 1234. Esta configuración también permite o bloquea el uso de contraseñas de imagen de Windows.
-- **Cifrado**: Habilita el cifrado en dispositivos de destino
 
 ## <a name="per-app-privacy-exceptions"></a>Excepciones de privacidad para cada aplicación
 

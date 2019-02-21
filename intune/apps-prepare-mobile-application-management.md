@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 74445c678455dc881f79fed20ed68be6f090fe78
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 10b2ef5844c2d8889fd1d5c377fcefb8330be9e2
+ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834779"
+ms.lasthandoff: 02/16/2019
+ms.locfileid: "56325442"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>Preparar aplicaciones de línea de negocio para las directivas de protección de aplicaciones
 
@@ -87,7 +87,6 @@ En la siguiente tabla se enumeran los valores que puede usarse para el SDK para 
 |Permitir que la aplicación reciba datos de otras aplicaciones|X|X|
 |Restringir cortar, copiar y pegar con otras aplicaciones|X|X|
 |Requerir PIN simple en acceso|X|X|
-|Reemplazar el PIN de aplicación integrado con PIN de Intune|X||
 |Especificar el número de intentos antes de restablecer el PIN|X|X|
 |Permitir desbloqueo mediante huellas digitales en lugar de mediante PIN|X|X|
 |Permitir el reconocimiento facial en lugar de PIN (solo iOS)|X|X|
@@ -98,8 +97,8 @@ En la siguiente tabla se enumeran los valores que puede usarse para el SDK para 
 |Especificar el período de gracia sin conexión|X|X|
 |Bloquear captura de pantalla (solo Android)|X|X|
 |Compatibilidad con MAM sin la inscripción de dispositivos|X|X|
-|Eliminación completa|X|X|
-|Eliminación selectiva <br><br>**Nota:** Para iOS, cuando se quita el perfil de administración, también se quita la aplicación.|X||
+|Borrado completo de datos de aplicaciones|X|X|
+|Borrado selectivo de datos profesionales y educativos en escenarios de identidades múltiples <br><br>**Nota:** Para iOS, cuando se quita el perfil de administración, también se quita la aplicación.|X||
 |Impedir "Guardar como"|X||
 |Configuración de aplicaciones de destino|X||
 |Compatibilidad con aplicaciones de identidades múltiples|X||

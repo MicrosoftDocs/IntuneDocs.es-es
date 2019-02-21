@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ff89d1776d71dc24ea675de167f3fd22d6bdf04
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 6b0c2bff4051a1adba1a68f38d8f0a9b80b914b4
+ms.sourcegitcommit: 5708ec1d7ae50494be44ed5064f150b636188c84
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55838774"
+ms.lasthandoff: 02/13/2019
+ms.locfileid: "56240068"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>Asignación de aplicaciones a grupos con Microsoft Intune
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Después de [agregar una aplicación](apps-add.md) a Microsoft Intune, puede asignarla a los usuarios y los dispositivos. Es importante que sepa que puede asignar una aplicación a un dispositivo tanto si el dispositivo está administrado por Intune como si no. 
+Después de [agregar una aplicación](apps-add.md) a Microsoft Intune, puede asignarla a los usuarios y los dispositivos. Es importante que sepa que puede asignar una aplicación a un dispositivo tanto si el dispositivo está administrado por Intune como si no.
 
 > [!NOTE]
 > No se admite el intento de implementación disponible para grupos de dispositivos; solo se admiten grupos de usuarios.
@@ -124,8 +124,19 @@ A veces, la misma aplicación se asigna a varios grupos, pero con diferentes int
 > Solo en el caso de aplicaciones administradas de la tienda de iOS, cuando agrega estas aplicaciones a Microsoft Intune y las asigna como **Requeridas**, se crean automáticamente con las intenciones **Requerida** y **Disponible**.<br><br>
 > Las aplicaciones de la tienda de iOS (distintas de las aplicaciones VPP de iOS) que se asignan como destino con intención necesaria se aplicarán en el dispositivo en el momento del registro del dispositivo en el repositorio y también se mostrarán en la aplicación Portal de empresa.
 
-## <a name="android-enterprise-app-we-app-deployment"></a>Implementación de aplicaciones APP-WE de Android Enterprise
-En el caso de los dispositivos Android en un escenario de implementación de directiva de protección de aplicaciones sin inscripción (APP-WE) no inscrito, ahora puede usar Google Play administrado para implementar aplicaciones de la tienda y aplicaciones de LOB en los usuarios. En concreto, puede brindar a los usuarios finales un catálogo de aplicaciones y experiencia de instalación que ya no requiere que los usuarios finales flexibilicen la posición de seguridad de sus dispositivos al permitir instalaciones de orígenes desconocidos. Además, este escenario de implementación proporcionará una mejor experiencia del usuario final. Para consultar los pasos que debe seguir para asignar una aplicación, vea [Asignación de una aplicación](apps-deploy.md#assign-an-app).
+## <a name="managed-google-play-app-deployment-to-unmanaged-devices"></a>Implementación de aplicaciones de Google Play administrado en dispositivos no administrados
+En dispositivos Android, en un escenario de implementación de directiva de protección de aplicaciones sin inscripción (APP-WE), ahora puede usar Google Play administrado para implementar aplicaciones de la tienda y de línea de negocio (LOB) en los usuarios. Las aplicaciones de Google Play administrado dirigidas como **Disponible con o sin inscripción** aparecerán en la aplicación Play Store en el dispositivo del usuario final y no en la aplicación del Portal de empresa. El usuario final examinará e instalará las aplicaciones implementadas de esta manera desde la aplicación Play. Como las aplicaciones se instalan desde Google Play administrado, el usuario final no tiene que modificar la configuración del dispositivo para permitir la instalación de aplicaciones desde orígenes desconocidos, lo que significa que los dispositivos serán más seguros. Si el desarrollador de aplicaciones publica una nueva versión de una aplicación en Play que se instaló en el dispositivo de un usuario, Play actualizará la aplicación automáticamente. 
+
+Pasos para asignar una aplicación de Google Play administrado a dispositivos no administrados:
+
+1. Conecte su inquilino de Intune a Google Play administrado. Si ya lo ha hecho para administrar perfiles de trabajo de Android Enterprise o dispositivos dedicados o completamente administrados, omita este paso.
+2. Agregue las aplicaciones de Google Play administrado a la consola de Intune.
+3. Dirija las aplicaciones de Google Play administrado como **Disponible con o sin inscripción** al grupo de usuarios deseado. Los destinos de aplicaciones **Requerido** y **Desinstalar** no se admiten en dispositivos no inscritos.
+4. Asigne una directiva de protección de aplicaciones al grupo de usuarios.
+5. La próxima vez que los usuarios finales abran la aplicación del Portal de empresa, verán un mensaje que indica que hay aplicaciones disponibles para ellos en la aplicación Play Store.  El usuario puede pulsar sobre esta notificación para ir directamente a la aplicación Play y ver las aplicaciones corporativas, o puede desplazarse a la aplicación Play Store de forma independiente.
+6. Los usuarios finales pueden expandir el menú contextual dentro de la aplicación Play Store y cambiar entre su cuenta personal de Google (donde verán sus aplicaciones personales) y su cuenta profesional (donde verán la tienda y las aplicaciones LOB dirigidas a ellos). Para instalar las aplicaciones, los usuarios finales pulsan Instalar en la aplicación Play Store.
+
+Cuando se emite un borrado selectivo de aplicaciones en la consola de Intune, la cuenta profesional se quita automáticamente de la aplicación Play Store y, desde ese momento, el usuario final deja de ver aplicaciones de trabajo en el catálogo de aplicaciones de Play Store. Cuando se quita la cuenta profesional de un dispositivo, las aplicaciones instaladas desde Play Store seguirán instaladas en el dispositivo y no se desinstalarán. 
 
 ## <a name="next-steps"></a>Pasos siguientes
 
