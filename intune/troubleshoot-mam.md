@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2019
+ms.date: 02/21/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e827862510f24a2f133562c836d6c1b47186c330
-ms.sourcegitcommit: c0b954c82cd732b5328f92b618947bf425bf0a91
+ms.openlocfilehash: ae8113a603ae4c091005f7c82045708f7e9e3e97
+ms.sourcegitcommit: 8943848d47d5d5d6e44c74d414c34c5e3457862b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/12/2019
-ms.locfileid: "56086155"
+ms.lasthandoff: 02/22/2019
+ms.locfileid: "56655398"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>Solucionar problemas de la administración de aplicaciones móviles
 
@@ -78,7 +78,7 @@ Cuadro de diálogo o mensaje de error | Causa | Corrección |
 **Aplicación no configurada**: esta aplicación no se configuró para uso. Póngase en contacto con el administrador de TI para obtener ayuda. | Error al detectar una directiva de protección de aplicación requerida para la aplicación. |Asegúrese de que haya una directiva de protección de aplicación iOS implementada en el grupo de seguridad del usuario y que se dirige a esta aplicación.
 **Bienvenido a Intune Managed Browser**: esta aplicación funciona mejor cuando se administra con Microsoft Intune. Puede usar la aplicación en cualquier momento para navegar por Internet. Además, si la administra Microsoft Intune, podrá tener acceso a más características de protección de datos. | Error al detectar una directiva de protección de aplicación requerida para la aplicación Intune Managed Browser. <br><br>El usuario todavía podrá usar la aplicación para navegar por Internet, pero Intune no administrará la aplicación. | Asegúrese de que haya una directiva de protección de aplicación iOS implementada en el grupo de seguridad del usuario y que se dirige a la aplicación Intune Managed Browser.
 **Error al iniciar sesión**: no podemos iniciar su sesión en este momento. Vuelva a intentarlo más tarde. | Error al inscribir al usuario con el servicio MAM después de que intenta iniciar sesión con su cuenta profesional o educativa. | Asegúrese de que haya una directiva de protección de aplicación iOS implementada en el grupo de seguridad del usuario y que se dirige a esta aplicación.
-**Cuenta no configurada**: la organización no ha configurado la cuenta para obtener acceso a datos profesionales o educativos. Póngase en contacto con el administrador de TI para obtener ayuda. | La cuenta de usuario no tiene una licencia de Intune A Direct. | Asegúrese de que la cuenta del usuario tiene asignada una licencia de Intune en el [portal de Office](http://portal.office.com).
+**Cuenta no configurada**: la organización no ha configurado la cuenta para obtener acceso a datos profesionales o educativos. Póngase en contacto con el administrador de TI para obtener ayuda. | La cuenta de usuario no tiene una licencia de Intune A Direct. | Asegúrese de que la cuenta del usuario tiene asignada una licencia de Intune en el [portal de Office](https://portal.office.com).
 **Dispositivo no compatible**: no se puede usar esta aplicación porque está usando un dispositivo con Jailbreak. Póngase en contacto con el administrador de TI para obtener ayuda. | Intune detectó que el usuario usa un dispositivo con Jailbreak. | Restablezca los valores de fábrica predeterminados del dispositivo. Siga [estas instrucciones](https://support.apple.com/HT201274) desde el sitio de soporte de Apple.
 **Se necesita conexión a Internet**: debe conectarse a Internet para comprobar si puede usar esta aplicación. | El dispositivo no está conectado a Internet. | Conecte el dispositivo a una red de datos o WiFi.
 **Error desconocido**: intente reiniciar esta aplicación. Si el problema persiste, póngase en contacto con el administrador de TI para obtener ayuda. | Error desconocido. | Espere un momento y vuelva a intentarlo. Si el error persiste, cree una [incidencia de soporte técnico](get-support.md#create-an-online-support-ticket) con Intune.
@@ -97,7 +97,7 @@ Cuadro de diálogo/mensaje de error | Causa | Corrección |
 **Error al iniciar sesión**: vuelva a iniciar sesión. Si este problema persiste, póngase en contacto con el administrador de TI para obtener ayuda. | Error al autenticar la cuenta con la que el usuario intentó iniciar sesión. | Asegúrese de que el usuario inicia sesión con la cuenta profesional o educativa que ya está inscrita con el servicio MAM de Intune (la primera cuenta profesional o educativa con que se inició sesión correctamente en esta aplicación). <br><br> Borre los datos de la aplicación. <br><br> Asegúrese de que la versión de la aplicación esté actualizada. <br><br> Asegúrese de que la versión de Portal de empresa está actualizada.
 **Se necesita conexión a Internet**: debe conectarse a Internet para comprobar si puede usar esta aplicación. | El dispositivo no está conectado a Internet. | Conecte el dispositivo a una red de datos o WiFi.
 **Dispositivo no compatible**: no se puede usar esta aplicación porque está usando un dispositivo raíz. Póngase en contacto con el administrador de TI para obtener ayuda. | Intune detectó que el usuario usa un dispositivo liberado. | Restablezca los valores de fábrica predeterminados del dispositivo.
-**Cuenta no configurada**: esta aplicación se debe administrar con Microsoft Intune, pero su cuenta no se configuró. Póngase en contacto con el administrador de TI para obtener ayuda. | La cuenta de usuario no tiene una licencia de Intune A Direct. | Asegúrese de que la cuenta del usuario tiene asignada una licencia de Intune en el [portal de Office](http://portal.office.com).
+**Cuenta no configurada**: esta aplicación se debe administrar con Microsoft Intune, pero su cuenta no se configuró. Póngase en contacto con el administrador de TI para obtener ayuda. | La cuenta de usuario no tiene una licencia de Intune A Direct. | Asegúrese de que la cuenta del usuario tiene asignada una licencia de Intune en el [portal de Office](https://portal.office.com).
 **No se puede registrar la aplicación**: esta aplicación se debe administrar con Microsoft Intune, pero no fue posible registrarla en este momento. Póngase en contacto con el administrador de TI para obtener ayuda. | Error al inscribir automáticamente la aplicación con el servicio MAM cuando se requiere la directiva de protección de aplicación. | Borre los datos de la aplicación. <br><br> Envíe registros a Intune a través de la aplicación Portal de empresa o presente una incidencia de soporte técnico. Para obtener más información, vea [Cómo obtener asistencia para Microsoft Intune](get-support.md).
 
 ## <a name="next-steps"></a>Pasos siguientes
