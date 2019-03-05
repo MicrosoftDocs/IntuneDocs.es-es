@@ -5,8 +5,8 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/16/2019
-ms.topic: article
+ms.date: 03/04/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98c3425c58b6039c8a1c3b5750f9473c74a78634
-ms.sourcegitcommit: 93de3423d2d8f0019e676a63784edeb3daf47cb7
+ms.openlocfilehash: 28e7109a82a5c083b4be26bc823bb0e06d97a7ca
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/16/2019
-ms.locfileid: "56325476"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57334993"
 ---
 # <a name="windows-update-settings-for-intune"></a>Configuración de actualizaciones de Windows para Intune  
 
@@ -236,6 +236,6 @@ Los siguientes valores de configuración se usan para controlar cuándo se produ
 
 la optimización de entrega ya no se configura como parte del Círculo de actualizaciones de Windows 10 en Actualizaciones de software. Ahora, la optimización de entrega se establece mediante la configuración del dispositivo. Sin embargo, las opciones de configuración anteriores seguirán estando disponibles en la consola. Puede quitar estas opciones de configuración anteriores editándolas para que se muestren como *No configuradas*, pero no se podrán modificar de otra forma. 
 
-Para evitar conflictos entre la directiva nueva y la anterior, vea [Cambiar desde círculos de actualizaciones existentes a la optimización de entrega](https://docs.microsoft.com/en-us/intune/delivery-optimization-windows#move-from-existing-update-rings-to-delivery-optimization) y, después, migre su configuración a un perfil de optimización de entrega.
+Para evitar conflictos entre la directiva nueva y la anterior, vea [Cambiar desde círculos de actualizaciones existentes a la optimización de entrega](delivery-optimization-windows.md#move-existing-update-rings-to-delivery-optimization) y, después, migre su configuración a un perfil de optimización de entrega.
 
 

@@ -7,7 +7,7 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/11/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9fdd1891f8a0e893d61ac3a0b40dac5a01f602c
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 08c837ea56276083851977fb4f1972961132296b
+ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55851345"
+ms.lasthandoff: 03/02/2019
+ms.locfileid: "57233056"
 ---
 # <a name="reference-for-current-user-entity"></a>Referencia de la entidad de usuario actual
 

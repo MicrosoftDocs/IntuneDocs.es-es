@@ -18,21 +18,18 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4666779620aa0404c12107a374280c403d66bec3
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 30135c69b95ba9731682af52ad0da3bb9df193e9
+ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55840219"
+ms.lasthandoff: 03/05/2019
+ms.locfileid: "57335078"
 ---
 # <a name="sync-your-windows-device-manually"></a>Sincronización manual del dispositivo Windows
 
 Cuando la velocidad de la instalación de las aplicaciones no sea la ideal, inicie una sincronización manual del dispositivo. Las sincronizaciones manuales obligan al dispositivo a conectarse con Intune para recibir las actualizaciones y comunicaciones más recientes. La velocidad de instalación puede aumentar una vez que se completa la sincronización del dispositivo.
 
-Intune admite la sincronización manual desde la aplicación Portal de empresa, desde la barra de tareas del escritorio o el menú Inicio y desde la aplicación de configuración del dispositivo. 
-
-La funcionalidad de la aplicación Portal de empresa es compatible con dispositivos Windows 10 que ejecutan Creator's Update (1703) o una versión posterior. 
-* [Sincronización desde la aplicación Portal de empresa](#Sync-from-Company-Portal-app-for-Windows)  
+Intune admite la sincronización manual desde la aplicación Portal de empresa, desde la barra de tareas del escritorio o el menú Inicio y desde la aplicación de configuración del dispositivo. La funcionalidad de la aplicación Portal de empresa es compatible con dispositivos Windows 10 que ejecutan Creator's Update (1703) o una versión posterior. 
 
 Todos los dispositivos Windows se pueden sincronizar desde la aplicación de configuración del dispositivo, incluidos:
 
@@ -75,11 +72,11 @@ Complete estos pasos para sincronizar manualmente los dispositivos Microsoft Hol
 
 3. Existen varias versiones de Windows 10 para equipos de escritorio. Compare su pantalla con las capturas de pantalla que aparecen a continuación para determinar los pasos que debe seguir. 
 
-    * Si su pantalla indica **Acceso profesional o educativo**, vaya a los pasos que aparecen en [Acceso profesional o educativo](#access-work-or-school).
+    * Si su pantalla indica **Acceso profesional o educativo**, vaya a los pasos que aparecen en [Acceso profesional o educativo](#access-work-or-school-steps).
 
     ![Opción Acceso profesional o educativo en la aplicación de configuración](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-    * Si la pantalla indica **Acceso al trabajo**, vaya a los pasos que aparecen en [Acceso al trabajo](#work-access).  
+    * Si la pantalla indica **Acceso al trabajo**, vaya a los pasos que aparecen en [Acceso al trabajo](#work-access-steps).  
 
     ![Elección del acceso al trabajo como tipo de cuenta](./media/win10pc-sync-3-work-access.png)
 
