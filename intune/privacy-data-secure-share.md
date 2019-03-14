@@ -28,7 +28,7 @@ ms.locfileid: "57228908"
 
 ## <a name="data-security"></a>Seguridad de los datos
 
-Microsoft Intune es un componente clave de la oferta de servicio en la nube de Microsoft Enterprise Mobility + Security Suite. Para admitir la [estrategia de gobierno de datos](https://www.microsoft.com/en-us/TrustCenter/Security/default.aspx), todos los servicios en la nube de Microsoft se desarrollan con metodologías de [Microsoft Privacy](https://www.microsoft.com/en-us/trustcenter/privacy) y [Microsoft Security](https://www.microsoft.com/en-us/trustcenter/security/).  
+Microsoft Intune es un componente clave de la oferta de servicio en la nube de Microsoft Enterprise Mobility + Security Suite. Para admitir la [estrategia de gobernanza de datos](https://www.microsoft.com/en-us/TrustCenter/Security/default.aspx), todos los servicios en la nube de Microsoft se desarrollan con metodologías de [Microsoft Privacy](https://www.microsoft.com/en-us/trustcenter/privacy) y [Microsoft Security](https://www.microsoft.com/en-us/trustcenter/security/).  
 
 Microsoft Intune sigue las mismas medidas técnicas y organizativas que toman los equipos de servicio de Microsoft Azure para protegerse contra los procesos de vulneración de datos.
 
