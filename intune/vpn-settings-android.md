@@ -6,20 +6,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aff0aad055aee08dfbf17622e3d9f9c3061165b8
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 666b61eec021fa6a2cdad5126f572234d97b6883
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57233974"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566104"
 ---
 # <a name="configure-vpn-settings-for-devices-running-android-in-intune"></a>Configuración de VPN en Intune para dispositivos que ejecutan Android
 
@@ -42,7 +43,7 @@ Según la configuración que elija, no se podrán configurar todos los valores q
   - **Método de autenticación**: elija cómo se autenticarán los dispositivos en el servidor VPN. Las opciones son:
 
     - **Certificados**: seleccione un perfil de certificado SCEP o PKCS existente para autenticar la conexión. [Configurar certificados](certificates-configure.md): se enumeran los pasos para crear un perfil de certificado.
-    - **Nombre de usuario y contraseña**: al iniciar sesión en el servidor VPN, se pedirá a los usuarios finales que escriban un nombre de usuario y una contraseña.
+    - **Nombre de usuario y contraseña**: al iniciar sesión en el servidor VPN, se le pedirá a los usuarios finales que escriban un nombre de usuario y una contraseña.
 
 - **Tipo de conexión**: seleccione el tipo de conexión VPN. Las opciones son:
 
@@ -64,7 +65,7 @@ Según la configuración que elija, no se podrán configurar todos los valores q
   - **Método de autenticación**: elija cómo se autenticarán los dispositivos en el servidor VPN. Las opciones son:
   
     - **Certificados**: seleccione un perfil de certificado SCEP o PKCS existente para autenticar la conexión. [Configurar certificados](certificates-configure.md): se enumeran los pasos para crear un perfil de certificado.
-    - **Nombre de usuario y contraseña**: al iniciar sesión en el servidor VPN, se pedirá a los usuarios finales que escriban un nombre de usuario y una contraseña.
+    - **Nombre de usuario y contraseña**: al iniciar sesión en el servidor VPN, se le pedirá a los usuarios finales que escriban un nombre de usuario y una contraseña.
 
 - **Tipo de conexión**: seleccione el tipo de conexión VPN. Las opciones son:
 
