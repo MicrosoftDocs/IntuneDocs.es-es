@@ -7,21 +7,23 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/01/2018
-ms.topic: article
+ms.topic: archived
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: f0afda7e-f4c3-4bcd-b4bf-4304103cf73e
 ms.reviewer: owenyen
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
-ms.openlocfilehash: 56c81c04c4ee6ae319cb54f513b80738f2fbe5fb
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: c49b6639f898b1328cefcbc9bb9af9208aeda63b
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188044"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460808"
 ---
 # <a name="use-policies-to-simplify-windows-pc-management"></a>Usar directivas para simplificar la administración de PC de Windows
 
@@ -62,6 +64,6 @@ Consulte los siguientes recursos para obtener información sobre las directivas 
 - [Ayudar a proteger los equipos de Windows mediante directivas del Firewall de Windows en Microsoft Intune](help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md): estas directivas simplifican la administración de la configuración de Firewall de Windows en los equipos administrados.
 
 
-### <a name="see-also"></a>Consulta también
+### <a name="see-also"></a>Consulte también
 
 [Tareas comunes de administración de equipos Windows con el cliente de software de Intune](common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md)

@@ -1,7 +1,7 @@
 ---
  title: include file description: include file services: azure-policy author: eross-msft
  
-ms.service: azure-policy ms.topic: include ms.date: 05/01/2018 ms.author: lizross ms.custom: include file
+MS.Service: azure-policy ms.topic: incluir ms.date: 05/01/2018 ms.author: lizross ms.custom: incluir archivo ms.collection: M365-identity-administración de dispositivos
 ---
 
 >[!Note]

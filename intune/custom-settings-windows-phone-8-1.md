@@ -7,19 +7,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 10/24/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a876cf430952aa99957af4bc9a66f4bc29d65df9
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 487115938ad334d1cefb2a6ecfc8d64ac6688a45
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52184682"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565900"
 ---
 # <a name="use-custom-settings-for-windows-phone-81-devices-in-intune"></a>Usar una configuración personalizada para dispositivos Windows Phone 8.1 en Intune
 
@@ -47,12 +49,12 @@ En este artículo se muestra cómo crear un perfil personalizado para dispositiv
     - **OMA-URI** (distingue mayúsculas de minúsculas): escriba la configuración OMA-URI que quiere usar.
     - **Tipo de datos**: elija el tipo de datos que se usará para esta configuración OMA-URI. Las opciones son:
 
-        - Cadena
+        - String
         - Cadena (archivo XML)
         - Fecha y hora
         - Integer
         - Punto flotante
-        - Booleano
+        - Boolean
         - Base64 (archivo)
 
     - **Valor**: escriba el valor de datos que quiere asociar con la configuración OMA-URI especificada. El valor depende del tipo de datos que ha seleccionado. Por ejemplo, si elige **Fecha y hora**, debe seleccionar el valor en un selector de fecha.

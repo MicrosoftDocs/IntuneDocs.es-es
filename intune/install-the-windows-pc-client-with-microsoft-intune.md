@@ -5,9 +5,10 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 ms.date: 07/13/2017
-ms.topic: conceptual
+ms.topic: archived
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: owenyen
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48079adfd8ff2f635ebf63370da62f7e428dcb40
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: d68f4151dc8b10ef716524f2422f532dec6693f9
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238513"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57461250"
 ---
 # <a name="install-the-intune-software-client-on-windows-pcs"></a>Instalar el cliente de software de Intune en equipos con Windows
 
@@ -125,7 +126,7 @@ Si a los usuarios se les ha asignado una licencia de Intune y la entidad de MDM 
 
 - A los usuarios de equipos con Windows 10 o Windows 8.1 se les muestran dos opciones de inscripción:
 
-  -  **Inscribir el equipo como un dispositivo móvil**: los usuarios eligen el botón **Vea cómo inscribir dispositivos** y se les dirige a las instrucciones sobre cómo inscribir sus equipos como un dispositivo móvil. Este botón se muestra claramente, ya que la inscripción de MDM se considera la opción de inscripción preferida y predeterminada. En cambio, la opción de MDM no se aplica a este tema, que trata solo la instalación del software cliente.
+  -  **Inscribir el equipo como un dispositivo móvil**: los usuarios pulsan el botón **Cómo inscribirse** y se les dirige a las instrucciones sobre cómo inscribir sus equipos como un dispositivo móvil. Este botón se muestra claramente, ya que la inscripción de MDM se considera la opción de inscripción preferida y predeterminada. En cambio, la opción de MDM no se aplica a este tema, que trata solo la instalación del software cliente.
   - **Inscribir el equipo con el software cliente de Intune**: necesitará indicar a los usuarios que seleccionen el vínculo **Haga clic aquí para descargar**, que les guía a través de la instalación del software cliente.
 
 En la siguiente tabla se resumen las opciones.

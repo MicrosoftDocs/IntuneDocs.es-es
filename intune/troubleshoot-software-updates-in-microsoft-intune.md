@@ -6,9 +6,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 6/14/2018
-ms.topic: article
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: d17b70f4-17b4-4d89-88fd-70fa4f34fbea
 ROBOTS: ''
@@ -16,12 +17,13 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 1354c789a6756a6ddf2d9c5d6400ece91c80d57c
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 0e7ec762e7e7299e400fefedbf7a8810e1da929f
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188641"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57461352"
 ---
 # <a name="troubleshoot-software-updates-in-microsoft-intune"></a>Solucionar problemas de actualizaciones de software en Microsoft Intune
 
@@ -33,7 +35,7 @@ Si esta información no le es de ayuda, también puede [obtener soporte técnico
 
 En la tabla siguiente se muestran los códigos de error del **Agente de actualización** de Intune. Si no encuentra un código de error específico en esta tabla, vea la [lista de códigos de error de Windows Update](https://support.microsoft.com/help/938205/windows-update-error-code-list).
 
-|Código de error|Nombre simbólico|Información adicional|
+|Código de error|Nombre simbólico|Más información|
 |--------------|-----------------|--------------------|
 |**0x00cf0001**|OM_S_SERVICE_STOP|El agente se detuvo correctamente.|
 |**0x00cf0003**|OM_S_UPDATE_ERROR|La operación se completó correctamente, pero se produjeron errores al aplicar las actualizaciones.|

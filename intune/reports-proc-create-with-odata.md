@@ -7,9 +7,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 01/06/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: A2C8A336-29D3-47DF-BB4A-62748339391D
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c38b3f0656f6b285c38da39971f9f124b5448c14
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 3cd0f8b5337ad562bddd65bc449a35ec0773f5ed
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229520"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565628"
 ---
 # <a name="create-a-report-from-the-odata-feed-with-power-bi"></a>Creación de un informe desde la fuente de OData con Power BI
 
@@ -46,7 +47,7 @@ El uso de los términos _entidad_ y _tabla_ puede llevar a confusión. Se puede 
 
 ## <a name="install-power-bi-desktop"></a>Instalar Power BI Desktop
 
-Instale la versión más reciente de Power BI Desktop. Puede descargar Power BI Desktop desde: [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop)
+Instale la versión más reciente de Power BI Desktop. Puede descargar Power BI Desktop desde [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop)
 
 ## <a name="connect-to-the-odata-feed-for-the-intune-data-warehouse-for-your-tenant"></a>Conectarse a la fuente OData para el Almacén de datos de Intune para su inquilino
 

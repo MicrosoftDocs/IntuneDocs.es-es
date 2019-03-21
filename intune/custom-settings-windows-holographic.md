@@ -9,18 +9,19 @@ ms.date: 12/06/2018
 ms.article: article
 ms.prod: ''
 ms.service: microsoft-intune
-ms.topic: conceptual
+ms.localizationpriority: medium
+ms.topic: reference
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c6ec55db072cd02fae2b4eef659f601b63bb850
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: ee2084cd7b5ba2d51311b675c3f31c41cc83fc4f
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231696"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566172"
 ---
 # <a name="use-custom-settings-for-windows-holographic-for-business-devices-in-intune"></a>Uso de la configuración personalizada para dispositivos Windows Holographic for Business en Intune
 
@@ -41,13 +42,13 @@ En este artículo se muestra cómo crear un perfil personalizado para dispositiv
 3. Escriba los valores siguientes:
 
     - **Nombre**: escriba un nombre para el perfil, como `hololens custom profile`.
-    - **Descripción**: escriba una descripción para el perfil.
+    - **Descripción**: escriba una descripción para el perfil
     - **Plataforma**: seleccione **Windows 10 y versiones posteriores**.
     - **Tipo de perfil**: elija **Personalizado**.
 
 4. En **Configuración OMA-URI personalizada**, seleccione **Agregar**. Escriba los valores siguientes:
 
-    - **Nombre**: Escriba un nombre único para el valor OMA-URI que le ayude a identificarlo en la lista de valores de configuración.
+    - **Nombre**: escriba un nombre único para el valor OMA-URI que le ayude a identificarlo en la lista de valores de configuración.
     - **Descripción**: escriba una descripción con información general sobre la configuración y otros detalles importantes.
     - **OMA-URI** (distingue mayúsculas de minúsculas): escriba la configuración OMA-URI que quiere usar.
     - **Tipo de datos**: elija el tipo de datos que se usará para esta configuración OMA-URI. Las opciones son:

@@ -6,20 +6,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/22/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38bc5ed233bf3368ae9b0ce21b8688966a1ffdef
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: f38803d3be05182639ac8eca2578e9ce121f7c2f
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232360"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566019"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-run-as-a-kiosk-in-intune"></a>Configuración de dispositivos con Windows Holographic for Business para ejecutarse como una pantalla completa en Intune
 
@@ -39,11 +40,11 @@ Para más información sobre la característica de pantalla completa de Windows 
 
 Si elige el modo de pantalla completa de aplicación única, escriba la siguiente configuración:
 
-- **Tipo de inicio de sesión de usuario**: seleccione **Cuenta de usuario local** para escribir la cuenta de usuario local (en el dispositivo), o bien una cuenta de Microsoft (MSA) asociada a la aplicación de pantalla completa. Los tipos de cuenta de usuario **Inicio de sesión automático** no se admiten en Windows Holographic for Business.
+- **Tipo de inicio de sesión de usuario**: seleccione **Cuenta de usuario local** para escribir la cuenta de usuario local (en el dispositivo), o bien una cuenta de Microsoft (MSA) asociada a la aplicación de quiosco. Los tipos de cuenta de usuario **Inicio de sesión automático** no se admiten en Windows Holographic for Business.
 
 - **Tipo de aplicación**: seleccione **Aplicación de la Tienda**.
 
-- **Aplicación para ejecutar en modo de pantalla completa**: elija **Agregar una aplicación de la tienda** y seleccione una aplicación de la lista.
+- **Aplicación para ejecutar en modo de pantalla completa**: elija **Agregar una aplicación de la tienda** y seleccione una aplicación en la lista.
 
     ¿No aparece ninguna aplicación? Agregue algunas siguiendo los pasos descritos en [Aplicaciones cliente](apps-add.md).
 
@@ -58,23 +59,23 @@ Las aplicaciones en este modo están disponibles en el menú Inicio. Estas aplic
 - **Tipo de inicio de sesión de usuario**: agregue una o varias cuentas de usuario que puedan usar las aplicaciones que agregue. Las opciones son: 
 
   - **Inicio de sesión automático**: no se admite en Windows Holographic for Business.
-  - **Cuentas de usuarios locales**: **añada** la cuenta de usuario local (en el dispositivo). La cuenta que especifique se usa para iniciar sesión en el quiosco.
-  - **Azure AD user or group (Windows 10, version 1803 and later)** [Usuario o grupo de Azure AD (Windows 10, versión 1803 y posteriores)]: se requieren credenciales de usuario para iniciar sesión en el dispositivo. Seleccione **Agregar** para elegir usuarios o grupos de Azure AD en la lista. Puede seleccionar varios usuarios y grupos. Elija **Seleccionar** para guardar los cambios.
+  - **Cuentas de usuarios locales**: **agregue** la cuenta de usuario local (en el dispositivo). La cuenta que especifique se usa para iniciar sesión en el quiosco.
+  - **Usuario o grupo de Azure AD (Windows 10 versión 1803 y posteriores)**: requiere credenciales de usuario para iniciar sesión en el dispositivo. Seleccione **Agregar** para elegir usuarios o grupos de Azure AD en la lista. Puede seleccionar varios usuarios y grupos. Elija **Seleccionar** para guardar los cambios.
   - **Visitante de HoloLens**: la cuenta de visitante es una cuenta de invitado que no requiere ninguna credencial de usuario ni autenticación, como se describe en [Conceptos del modo de equipo compartido](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc#shared-pc-mode-concepts).
 
-- **Aplicaciones**: agregue las aplicaciones que se van a ejecutar en el dispositivo de pantalla completa. Recuerde que puede agregar varias aplicaciones.
+- **Aplicaciones**: agregue las aplicaciones que se van a ejecutar en el dispositivo del quiosco. Recuerde que puede agregar varias aplicaciones.
 
-  - **Add Store apps** (Agregar aplicaciones de Store): seleccione una aplicación existente que haya agregado mediante [Aplicaciones cliente](apps-add.md). Si no aparece ninguna aplicación, puede obtenerlas y [agregarlas a Intune](store-apps-windows.md).
+  - **Agregar aplicaciones de la Tienda**: seleccione una aplicación existente que haya agregado mediante [Aplicaciones cliente](apps-add.md). Si no aparece ninguna aplicación, puede obtenerlas y [agregarlas a Intune](store-apps-windows.md).
   - **Agregar aplicación Win32**: no se admite en Windows Holographic for Business.
-  - **Agregar por AUMID**: use esta opción para agregar aplicaciones de Windows de bandeja de entrada. Escriba las siguientes propiedades: 
+  - **Agregar por AUMID**: use esta opción para agregar aplicaciones de Windows de bandeja de entrada. Escriba las propiedades siguientes: 
 
-    - **Nombre de la aplicación**: Obligatorio. Escriba un nombre para la aplicación.
-    - **Identificador de modelo del usuario de la aplicación (AUMID)**: Obligatorio. Escriba el identificador de modelo de usuario de aplicación (AUMID) de la aplicación de Windows. Para obtener este identificador, vea [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Buscar el identificador de modelo de usuario de aplicación de una aplicación instalada).
-    - **Tamaño de icono**: Obligatorio. Elija un tamaño de icono de la aplicación pequeño, mediano, ancho o grande.
+    - **Nombre de la aplicación**: requerido. Escriba un nombre para la aplicación.
+    - **Identificador de modelo de usuario de aplicación (AUMID)**: requerido. Escriba el identificador de modelo de usuario de aplicación (AUMID) de la aplicación de Windows. Para obtener este identificador, vea [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) (Buscar el identificador de modelo de usuario de aplicación de una aplicación instalada).
+    - **Tamaño de icono**: requerido. Elija un tamaño de icono de la aplicación pequeño, mediano, ancho o grande.
 
 - **Configuración del explorador del Quiosco**: no se admite en Windows Holographic for Business.
 
-- **Usar diseño de inicio alternativo**: elija **Sí** para especificar un archivo XML que describa el modo en que las aplicaciones aparecen en el menú Inicio, incluido el orden de estas. Use esta opción si necesita personalizar más el menú Inicio. En [Personalizar y exportar el diseño de la pantalla Inicio](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) se proporcionan algunas instrucciones y se incluye un archivo XML específico para dispositivos con Windows Holographic for Business.
+- **Usar diseño de inicio alternativo**: elija **Sí** para especificar un archivo XML que describa el modo en que las aplicaciones aparecen en el menú Inicio, incluido el orden de las aplicaciones. Use esta opción si necesita personalizar más el menú Inicio. En [Personalizar y exportar el diseño de la pantalla Inicio](https://docs.microsoft.com/hololens/hololens-kiosk#start-layout-for-hololens) se proporcionan algunas instrucciones y se incluye un archivo XML específico para dispositivos con Windows Holographic for Business.
 
 - **Barra de tareas de Windows**: no se admite en Windows Holographic for Business.
 

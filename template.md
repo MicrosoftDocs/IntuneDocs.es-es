@@ -14,11 +14,11 @@ ms.service: ''
 ms.technology: ''
 ms.assetid:
 - GET ONE FROM guidgenerator.com
-ms.openlocfilehash: 68090a038cec49009b6bd0ce0515a075f62483b8
-ms.sourcegitcommit: 34cfebfc1d8b81032f4d41869d74dda559e677e2
-ms.translationtype: HT
+ms.openlocfilehash: d05559a46cfd2bf9e092378e7cff779022e21792
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 07/01/2017
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "20283576"
 ---
 # <a name="metadata-and-markdown-template"></a>Metadatos y plantilla Markdown
@@ -37,7 +37,7 @@ El bloque de metadatos completo está arriba, dividido en campos obligatorios y 
 - Los dos puntos en un valor (por ejemplo, un título) interrumpen el analizador de metadatos. En su lugar, use la codificación HTML &#58; (por ejemplo, "title: Azure Rights Management&#58; conceptos básicos | Azure RMS").
 - **title**: este título aparecerá en los resultados del motor de búsqueda. El título debe finalizar con un carácter de línea vertical (|) seguido del nombre del servicio (vea el ejemplo de arriba). No es necesario (de hecho, probablemente no sea obligatorio) que el título sea idéntico al título del encabezado H1. Debe tener aproximadamente 65 caracteres (incluyendo la parte | NOMBRE DEL SERVICIO).
 - **author**, **manager**, **reviewer**: el campo author debe contener el **nombre de usuario de Github** del creador, no el alias.  Los campos "manager" y "reviewer", por su parte, deben contener alias. ms.reviewer especifica el nombre del PM asociado con el artículo o el servicio.
-- **ms.assetid**: este es el GUID del artículo desde CAPS. Al crear un archivo Markdown, obtenga un GUID de [https://www.guidgenerator.com](https://www.guidgenerator.com). 
+- **ms.assetid**: este es el GUID del artículo desde CAPS. Al crear un archivo de Markdown, obtenga un GUID en [https://www.guidgenerator.com](https://www.guidgenerator.com). 
 - **ms.prod**, **ms.service**, **ms.technology**, **ms.devlang**, **ms.topic**, **ms.tgt_pltfrm**: [aquí](https://microsoft.sharepoint.com/teams/STBCSI/Insights/_layouts/15/WopiFrame.aspx?sourcedoc=%7b7A321BF1-0611-4184-84DA-A0E964C435FA%7d&file=WEDCS_MasterList_CSIValues.xlsx&action=default) se pueden encontrar posibles valores para estos elementos.
 
 ## <a name="basic-markdown-and-gfm"></a>Markdown básico y GFM
@@ -167,7 +167,7 @@ Este es un ejemplo de `in-line code`.
 
 ## <a name="blockquotes"></a>Blockquotes
 
-> La sequía dura desde hace diez millones de años y el reino de los terribles lagartos había terminado hace ya mucho. Aquí en el ecuador, en el continente que un día se conocería como África, la batalla por la existencia había alcanzado un nuevo clímax de ferocidad y aún no se había definido el vencedor. En esta tierra seca y estéril, solo el pequeño, el rápido o el fiero podría salir adelante o incluso esperar sobrevivir.
+> La sequía había durado ya diez millones de años, y el reinado de los terribles saurios tiempo ha que había terminado. Aquí en el ecuador, en el continente que un día se conocería como África, la batalla por la existencia había alcanzado un nuevo clímax de ferocidad y aún no se había definido el vencedor. En esta tierra seca y estéril, solo el pequeño, el rápido o el fiero podría salir adelante o incluso esperar sobrevivir.
 
 ## <a name="images"></a>Imágenes
 

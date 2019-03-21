@@ -6,10 +6,11 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 01/01/2018
-ms.topic: article
+ms.date: 02/28/2019
+ms.topic: archived
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: d081f466-45dd-41d1-ab25-6d974c72a52a
 ms.reviewer: owenyen
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 784ad8366391c55a97ac58d9c1f7ab7707062aa8
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 16992d8a80ca42db84cfa071422a779606a99891
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845676"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460086"
 ---
 # <a name="use-policies-to-help-protect-windows-pcs-that-run-the-intune-client-software"></a>Usar directivas para ayudar a proteger los equipos Windows que ejecutan el software cliente de Intune
 
@@ -43,7 +44,6 @@ Firewall de Windows ayuda a mantener alejados de los equipos Windows a los hacke
 
 Como administrador de TI, una de sus principales prioridades es [proteger los equipos Windows administrados frente a virus y malware](help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md). Intune integra Endpoint Protection para proporcionar protección en tiempo real frente a las amenazas de malware, mantiene actualizadas las definiciones de malware y analiza automáticamente los equipos. Endpoint Protection también proporciona herramientas que ayudan a administrar y supervisar los ataques de malware.
 
+## <a name="see-also"></a>Consulte también
 
-
-### <a name="see-also"></a>Consulte también
-[Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md)
+[Preguntas comunes, problemas y resoluciones con perfiles y las directivas de dispositivos](device-profile-troubleshoot.md)

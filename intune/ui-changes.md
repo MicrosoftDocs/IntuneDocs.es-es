@@ -7,21 +7,23 @@ author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 1/4/2018
-ms.topic: article
+ms.topic: archived
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 4a1c5f2b400e73566db88fea8e06383e45b363a3
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: def09c1782db5b888257b7283074a997abbfa625
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187759"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460791"
 ---
 # <a name="where-did-my-intune-feature-go-in-azure"></a>¿Dónde está mi característica de Intune en Azure?
 Hemos aprovechado la oportunidad para organizar algunas tareas de forma más lógica durante el traslado de Intune a Azure Portal. Pero, como ocurre con todas las mejoras, deberá aprender la nueva organización. Esta guía de referencia está dirigida a aquellos que están familiarizados con Intune en el portal clásico y se preguntan dónde se encuentra una determinada función en Intune en Azure Portal. Si en este artículo no se incluye una característica que intenta encontrar, deje un comentario al final para que podamos actualizarlo.

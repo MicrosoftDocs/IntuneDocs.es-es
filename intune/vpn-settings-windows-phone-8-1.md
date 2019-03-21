@@ -7,19 +7,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 3/6/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: b0fe54d576a80f4f228de038d51ec3ae89a94926
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9c2deb36a77f34d2be3b1452d5fb4e8a88903016
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52182694"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565849"
 ---
 # <a name="configure-vpn-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>Configuración de VPN en Microsoft Intune para dispositivos que ejecutan Windows Phone 8.1
 
@@ -86,7 +88,7 @@ Según la configuración que elija, no todos los valores de la lista siguiente s
 
 Consulte la documentación de VPN de cada fabricante para más información sobre cómo escribir comandos XML personalizados.
 
-- **Tunelización dividida**: puede **Habilitar** o **Deshabilitar** esta opción, que permite que los dispositivos decidan qué conexión usar en función del tráfico. Por ejemplo, un usuario en un hotel usará la conexión VPN para acceder a los archivos de trabajo, pero usará la red normal del hotel para la exploración web habitual.
+- **Tunelización dividida** - : puede **Habilitar** o **Deshabilitar** esta opción, que permite que los dispositivos decidan qué conexión usar en función del tráfico. Por ejemplo, un usuario en un hotel usará la conexión VPN para acceder a los archivos de trabajo, pero usará la red normal del hotel para la exploración web habitual.
 
 
 

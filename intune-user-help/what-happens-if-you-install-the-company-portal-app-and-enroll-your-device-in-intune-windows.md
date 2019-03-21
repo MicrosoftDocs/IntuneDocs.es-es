@@ -18,16 +18,16 @@ ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8cace30f5120bb5c02d3569d9668d336a00f69ff
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 85ccfb526ada4d6851fb32b077d07d3538f90361
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
+ms.lasthandoff: 03/14/2019
 ms.locfileid: "55846849"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-windows-device-in-intune"></a>¿Qué ocurre si instala la aplicación de Portal de empresa e inscribe el dispositivo Windows en Intune?
 
-Al instalar la aplicación Portal de empresa y después usarla para inscribir un dispositivo Windows o Windows Phone, lo que hace es permitir que el equipo de soporte técnico de su empresa administre el dispositivo para ayudar a mantener los datos profesionales o académicos seguros. En este tema se explica lo que ocurre con los dispositivos anteriores a Windows 10. Para dispositivos Windows 10, vea el [tema relacionado](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows10.md).
+Al instalar la aplicación Portal de empresa y después usarla para inscribir un dispositivo Windows o Windows Phone, lo que hace es permitir que el equipo de soporte técnico de su empresa administre el dispositivo para ayudar a mantener los datos profesionales o académicos seguros. En este tema se explica lo que ocurre con los dispositivos anteriores a Windows 10. Para dispositivos Windows 10, vea el [tema relacionado](about-cp-app-for-windows-10.md).  
 
 ## <a name="what-happens-to-all-windows-devices-after-enrollment"></a>¿Qué ocurre con todos los dispositivos Windows después de la inscripción?
 Cuando inscribe un dispositivo Windows o Windows Phone en Intune, puede:

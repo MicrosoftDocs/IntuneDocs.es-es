@@ -6,19 +6,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 07/18/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: a5042c3b1c125a1699091a8a313df3a0058ecd7d
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 3452eb832f31377ddc9c55c5008405cb2235569b
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52188150"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57564846"
 ---
 # <a name="import-wi-fi-settings-for-windows-devices-in-intune"></a>Importar la configuración de Wi-Fi para dispositivos Windows en Intune
 
@@ -55,7 +57,7 @@ En un equipo de Windows que ya tenga instalado el perfil de Wi-Fi necesario, lle
 
 4. En **Plataforma**, seleccione **Windows 8.1 y posterior**.
 5. En **Tipo de perfil**, seleccione **Importación de Wi-Fi**.
-6. Configura los siguientes ajustes:
+6. Configure las siguientes opciones:
     - **Nombre de la conexión**: escriba un nombre para la conexión Wi-Fi. Este nombre se mostrará a los usuarios finales cuando exploren las redes Wi-Fi disponibles.
     - **XML de perfil**: seleccione el botón Examinar y elija el archivo XML que contiene la configuración del perfil de Wi-Fi que quiere importar.
     - **Contenido de archivo**: muestra el código XML del perfil de configuración seleccionado.

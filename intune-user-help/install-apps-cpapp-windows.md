@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 01/09/2019
+ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39f19d347cb799a47d07ade4f8458fade68b1b99
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 25f1bb6d2d78f5c4188d81bc8d9be2cc0c7de43e
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55834660"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "56742540"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>Instalar y compartir aplicaciones en el dispositivo
 Instale aplicaciones en el dispositivo desde la aplicación Portal de empresa para Windows.
@@ -35,11 +35,12 @@ Instale aplicaciones en el dispositivo desde la aplicación Portal de empresa pa
     ![Página principal de la aplicación Portal de empresa para Windows 10.](./media/RS1_AppDetailsPage_Installed_03.png)    
 2. Encuentre e instale aplicaciones de cualquiera de las secciones siguientes de la aplicación Portal de empresa:  
 
-    * **Inicio**: Seleccione de una lista de aplicaciones destacadas de la organización.  
-    * **Mostrar todo**: En la sección **Página Inicio** > **Aplicaciones**, haga clic en **Mostrar todo** para ver todas las aplicaciones disponibles.  
-    * **Todas las aplicaciones**: Seleccione esta página en el panel de navegación para ver todas las aplicaciones disponibles, incluidas las instaladas y las destacadas.  
-    * **Buscar aplicaciones**: Hay una barra de búsqueda estática en el panel de navegación de la aplicación.  Para buscar las aplicaciones disponibles, busque por el nombre de la aplicación o del publicador.  
-    * **Todas las aplicaciones**: Vea, ordene y filtre todas las aplicaciones disponibles. Los resultados de búsqueda se ordenan automáticamente por relevancia.  
+    * **Inicio**: seleccione de una lista de aplicaciones destacadas de la organización.  
+    * **Mostrar todo**: en la sección **página Inicio** > **Aplicaciones**, haga clic en **Mostrar todo** para ver todas las aplicaciones disponibles.  
+    * **Todas las aplicaciones**: seleccione esta página en el panel de navegación para ver todas las aplicaciones disponibles, incluyendo las instaladas y las destacadas.  
+    * **Categorías de aplicaciones**: seleccione esta página en el panel de navegación para elegir las aplicaciones basadas en el tipo o función. Las aplicaciones se clasifican en categorías como **destacado**, **Education**, y **productividad**.  
+    * **Buscar aplicaciones**: hay una barra de búsqueda estática en el panel de navegación de la aplicación.  Para buscar las aplicaciones disponibles, busque por el nombre de la aplicación o del publicador.  
+    * **Todas las aplicaciones**: vea, ordene y filtre todas las aplicaciones disponibles. Los resultados de búsqueda se ordenan automáticamente por relevancia.  
 
 3. Seleccione una aplicación.   
 4. En la página de detalles de las aplicaciones, haga clic en **Instalar**. Una vez que esté lista la instalación, verá un estado **Instalado**.  

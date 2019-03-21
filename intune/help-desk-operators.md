@@ -6,22 +6,23 @@ keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 10/23/2018
-ms.topic: conceptual
+ms.date: 03/11/2019
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
 ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba74c93e2ef7dc469ebd7f5086659181b72a0981
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 135e93bf3cfb93b5299dfd005a3ca70bbba84d77
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230030"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57787141"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>Uso del portal de solución de problemas para ayudar a los usuarios de su empresa
 
@@ -69,176 +70,180 @@ Puede usar el panel **Solución de problemas** para consultar la información de
 | 4.   | Información de usuario  | Use la lista para seleccionar los detalles que vaya a consultar en el panel. <br>Puede seleccionar: <ul><li>Aplicaciones cliente<li>Directivas de cumplimiento<li> Directivas de configuración<li>Directivas de protección de aplicaciones <li>Restricciones de inscripción</ul>      |
 | 5.   | Pertenencia a grupos  | Muestra los grupos actuales de los que es miembro el usuario seleccionado.       |
 
-## <a name="client-apps-reference"></a>Referencia de aplicaciones cliente
+<!-- this section needs to be updated
 
-Las aplicaciones que ejecutan los dispositivos:
-- administrados por Intune y Azure Active Directory; 
-- propiedad de usuarios administrados por Intune y Azure Active Directory (AD).
+## Client apps reference
 
-### <a name="properties"></a>Propiedades
+The apps that are running devices
+- managed by Intune and Azure Active Directory (AD) 
+- owned by users managed by Intune and Azure Active Directory (AD).
 
-Las propiedades de las aplicaciones cliente.
+### Properties
 
-| Propiedad      | Descripción                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+The properties of client apps.
+
+| Property      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Nombre          | El nombre de la aplicación.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| Sistema operativo            | El sistema operativo instalado en el dispositivo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| Tipo          | Puede elegir un tipo de asignación para cada aplicación.  <br> **Disponible**: los usuarios instalan la aplicación desde el sitio web o la aplicación del Portal de empresa.  <br> **No aplicable**: la aplicación no está instalada ni se muestra en el Portal de empresa. <br> **Desinstalar**: la aplicación se ha desinstalado de dispositivos de los grupos seleccionados.  <br> **Available with or without enrollment** (Disponible con o sin inscripción): asignar esta aplicación a grupos de usuarios cuyos dispositivos no se hayan inscrito en Intune. |
-| Última modificación | El nombre del tipo de dispositivo.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Name          | The name of the application.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| OS            | The operating system installed on the device.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Type          | You can choose an assignment type for each app.  <br> **Available** - Users install the app from the Company Portal app or website.  <br> **Not Applicable** - The app is not installed or shown in the Company Portal. <br> **Uninstall** - The app is uninstalled from devices in the selected groups.  <br> **Available with or without enrollment** - Assign this app to groups of users whose devices are not enrolled with Intune. |
+| Last Modified | The name of the type of device.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
-### <a name="devices"></a>Dispositivos
+### Devices
 
-Dispositivos administrados por Intune o por usuarios administrados por Intune o Azure AD.
+Devices managed by Intune or by users managed by Intune or Azure AD.
 
-| Propiedad           | Descripción                                                                                                                         |
+| Property           | Description                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Nombre del dispositivo        | El nombre del tipo de dispositivo.                                                                                                     |
-| Administrado por         | La marca de tiempo en que se modificó la directiva.                                                                                              |
-| Tipo de combinación de Azure AD | El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**. |
-| Propiedad          | El tipo de propiedad del dispositivo (**Empresa**, **Personal** o **Desconocido**).                                               |
-| Compatibilidad con Intune   | El nombre del tipo de dispositivo.                                                                                                     |
-| Compatibilidad con Azure AD | El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**. |
-| Instalación de la aplicación | Indica si una aplicación se ha instalado correcta o incorrectamente en el dispositivo. |
-| Sistema operativo                 | El sistema operativo instalado en el dispositivo.                                                                                       |
-| Versión del sistema operativo         | El número de versión del sistema operativo del dispositivo.                                                                                  |
-| Última inserción en el repositorio      | El nombre del tipo de dispositivo.                                                                                                     |
+| Device name        | The name of the type of device.                                                                                                     |
+| Managed by         | The timestamp the policy was modified.                                                                                              |
+| Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Ownership          | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Intune compliant   | The name of the type of device.                                                                                                     |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| App install | Denotes whether an app install failure or success has occurred on the individual device. |
+| OS                 | The operating system installed on the device.                                                                                       |
+| OS version         | The Operating System version number of the device.                                                                                  |
+| Last check-in      | The name of the type of device.                                                                                                     |
 
-### <a name="app-protection-status"></a>Estado de protección de la aplicación
+### App protection status
 
-Las aplicaciones móviles que se integran con tecnologías de Enterprise Mobility Solution (EMS) disponen de una directiva de protección de aplicaciones, Estas directivas proporcionan una protección básica para los datos corporativos al descargarse en aplicaciones móviles, incluidas las de Office. 
+An app protection policy is available to mobile apps that integrate with Enterprise Mobility Solution (EMS) technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
-| Propiedad    | Descripción                                                                           |
+| Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Estado      | El tipo de propiedad del dispositivo (**Empresa**, **Personal** o **Desconocido**). |
-| Nombre de la aplicación    | El nombre de la aplicación.                                                           |
-| Nombre del dispositivo | El nombre del tipo de dispositivo.                                                       |
-| Tipo de dispositivo | El nombre del tipo de dispositivo.                                                       |
-| Directivas    | El tipo de propiedad del dispositivo (**Empresa**, **Personal** o **Desconocido**). |
-| Última sincronización   | La marca de tiempo de la última vez que el dispositivo se sincronizó con Intune.                   |
+| Status      | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| App name    | The name of the application                                                           |
+| Device name | The name of the type of device.                                                       |
+| Device type | The name of the type of device.                                                       |
+| Policies    | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
 
-## <a name="app-protection-policies-reference"></a>Referencia de las directivas de protección de aplicaciones
+## App protection policies reference
 
-Las aplicaciones móviles que se integran con tecnologías de Enterprise Mobility Solution (EMS) disponen de una directiva de protección de aplicaciones. Estas directivas proporcionan una protección básica para los datos corporativos al descargarse en aplicaciones móviles, incluidas las de Office. 
+An app protection policy is available to mobile apps that integrate with EMS technologies.These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
-### <a name="properties"></a>Propiedades
+### Properties
 
-En la tabla se resume el estado de las directivas de protección de aplicaciones para dispositivos administrados por Intune.
+The table summarizes app protection policies status for devices managed by Intune.
 
-| Propiedad    | Descripción                                                                                                                                |
+| Property    | Description                                                                                                                                |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Nombre        | El nombre de la aplicación.                                                                                                        |
-| Implementado    | El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**. |
-| Plataforma    | El tipo de propiedad del dispositivo (**Empresa**, **Personal** o **Desconocido**).                                               |
-| Inscripción  | El nombre del tipo de dispositivo.                                                                                                     |
-| Última actualización | La marca de tiempo en que se modificó la directiva.                                                                                              |
+| Name        | The name of the application.                                                                                                        |
+| Deployed    | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Platform    | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Enrollment  | The name of the type of device.                                                                                                     |
+| Last Update | The timestamp the policy was modified.                                                                                              |
 
-### <a name="devices"></a>Dispositivos
+### Devices
 
-Dispositivos administrados por Intune o por usuarios administrados por Intune o Azure AD.
+Devices managed by Intune or by users managed by Intune or Azure AD.
 
-| Propiedad           | Texto                                                                                                                                |
+| Property           | Text                                                                                                                                |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Nombre del dispositivo        | El nombre del tipo de dispositivo.                                                                                                     |
-| Administrado por         | La marca de tiempo en que se modificó la directiva.                                                                                              |
-| Tipo de combinación de Azure AD | El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**. |
-| Propiedad          | El tipo de propiedad del dispositivo (**Empresa**, **Personal** o **Desconocido**).                                               |
-| Compatibilidad con Intune   | El nombre del tipo de dispositivo.                                                                                                     |
-| Compatibilidad con Azure AD | El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**. |
-| Compatibilidad con Azure AD | El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**. |
-| Sistema operativo                 | El sistema operativo instalado en el dispositivo.                                                                                       |
-| Versión del sistema operativo         | El número de versión del sistema operativo del dispositivo.                                                                                  |
-| Última inserción en el repositorio      | El nombre del tipo de dispositivo.                                                                                                     |
+| Device Name        | The name of the type of device.                                                                                                     |
+| Managed By         | The timestamp the policy was modified.                                                                                              |
+| Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Ownership          | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Intune compliant   | The name of the type of device.                                                                                                     |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| OS                 | The operating system installed on the device.                                                                                       |
+| OS version         | The Operating System version number of the device.                                                                                  |
+| Last Check in      | The name of the type of device.                                                                                                     |
 
-## <a name="compliance-policies-reference"></a>Referencia de las directivas de cumplimiento
+## Compliance policies reference
 
-Garantice que los dispositivos usados para acceder a las aplicaciones y a los datos de la empresa cumplan ciertas reglas, como el uso de un PIN para acceder al dispositivo y el cifrado de los datos almacenados en el dispositivo.
+Makes sure that the devices used to access company apps and data, comply with certain rules like using a PIN to access the device, and encryption of data stored on the device.
 
-### <a name="properties"></a>Propiedades
+### Properties
 
-Las propiedades de las directivas de cumplimiento.
+The properties of the compliance policies.
 
-| Propiedad      | Descripción                                                                                                                         |
+| Property      | Description                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Asignación    | El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**. |
-| Nombre          | El nombre de la aplicación.                                                                                                        |
-| Sistema operativo            | El sistema operativo instalado en el dispositivo.                                                                                       |
-| Tipo de directiva   | El tipo de propiedad del dispositivo (**Empresa**, **Personal** y **Desconocido**).                                               |
-| Última modificación | El nombre del tipo de dispositivo.                                                                                                     |
+| Assignment    | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Name          | The name of the application.                                                                                                        |
+| OS            | The operating system installed on the device.                                                                                       |
+| Policy Type   | The type of device ownership (**Company**, **Personal**, and **Unknown**).                                               |
+| Last Modified | The name of the type of device.                                                                                                     |
 
-### <a name="devices"></a>Dispositivos
+### Devices
 
-Dispositivos administrados por Intune o por usuarios administrados por Intune o Azure AD.
+Devices managed by Intune or by users managed by Intune or Azure AD.
 
-| Propiedad           | Descripción                                                                                                                         |
+| Property           | Description                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Nombre del dispositivo        | El nombre del tipo de dispositivo.                                                                                                     |
-| Administrado por         | La marca de tiempo en que se modificó la directiva.                                                                                              |
-| Tipo de combinación de Azure AD | El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**. |
-| Propiedad          | El tipo de propiedad del dispositivo (**Empresa**, **Personal** y **Desconocido**).                                               |
-| Compatibilidad con Intune   | El nombre del tipo de dispositivo.                                                                                                     |
-| Compatibilidad con Azure AD | El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**. |
-| Sistema operativo                 | El sistema operativo instalado en el dispositivo.                                                                                       |
-| Versión del sistema operativo         | El número de versión del sistema operativo del dispositivo.                                                                                  |
-| Última inserción en el repositorio      | El nombre del tipo de dispositivo.                                                                                                     |
+| Device name        | The name of the type of device.                                                                                                     |
+| Managed by         | The timestamp the policy was modified.                                                                                              |
+| Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Ownership          | The type of device ownership (**Company**, **Personal**, and **Unknown**).                                               |
+| Intune compliant   | The name of the type of device.                                                                                                     |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| OS                 | The operating system installed on the device.                                                                                       |
+| OS version         | The Operating System version number of the device.                                                                                  |
+| Last check-in      | The name of the type of device.                                                                                                     |
 
-### <a name="app-protection-policies"></a>Directivas de protección de aplicaciones
+### App protection policies
 
-Las aplicaciones móviles que se integran con tecnologías de EMS disponen de una directiva de protección de aplicaciones, Estas directivas proporcionan una protección básica para los datos corporativos al descargarse en aplicaciones móviles, incluidas las de Office. 
+An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
-| Propiedad    | Descripción                                                                           |
+| Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Estado      | El tipo de propiedad del dispositivo (**Empresa**, **Personal** o **Desconocido**). |
-| Nombre de la aplicación    | El nombre de la aplicación.                                                           |
-| Nombre del dispositivo | El nombre del tipo de dispositivo.                                                       |
-| Tipo de dispositivo | El nombre del tipo de dispositivo.                                                       |
-| Directivas    | El tipo de propiedad del dispositivo (**Empresa**, **Personal** o **Desconocido**). |
-| Última sincronización   | La marca de tiempo de la última vez que el dispositivo se sincronizó con Intune.                   |
+| Status      | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| App name    | The name of the application                                                           |
+| Device name | The name of the type of device.                                                       |
+| Device type | The name of the type of device.                                                       |
+| Policies    | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
 
-## <a name="configuration-policies-reference"></a>Referencia de las directivas de configuración
+## Configuration policies reference
 
-Las aplicaciones móviles con configuraciones específicas del proveedor disponen de una directiva de configuración de aplicaciones. 
+An app configuration policy is available to mobile apps with vendor-specific configuration. 
 
-### <a name="properties"></a>Propiedades
+### Properties
 
-Las propiedades de las directivas de configuración.
+The properties of the configuration policies.
 
-| Propiedad      | Descripción                                                                                                                         |
+| Property      | Description                                                                                                                         |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Asignación    | El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**. |
-| Nombre          | El nombre de la aplicación.                                                                                                        |
-| Sistema operativo            | El sistema operativo instalado en el dispositivo.                                                                                       |
-| Tipo de directiva   | El tipo de propiedad del dispositivo (**Empresa**, **Personal** o **Desconocido**).                                               |
-| Última modificación | El nombre del tipo de dispositivo.                                                                                                     |
+| Assignment    | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Name          | The name of the application.                                                                                                        |
+| OS            | The operating system installed on the device.                                                                                       |
+| Policy Type   | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Last Modified | The name of the type of device.                                                                                                     |
 
-### <a name="devices"></a>Dispositivos
+### Devices
 
-Dispositivos administrados por Intune o por usuarios administrados por Intune o Azure AD.
+Devices managed by Intune or by users managed by Intune or Azure AD.
 
-| Propiedad           | Descripción                                                                                                                         |
+| Property           | Description                                                                                                                         |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Nombre del dispositivo        | El nombre del tipo de dispositivo.                                                                                                     |
-| Administrado por         | La marca de tiempo en que se modificó la directiva.                                                                                              |
-| Tipo de combinación de Azure AD | El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**. |
-| Propiedad          | El tipo de propiedad del dispositivo (**Empresa**, **Personal** o **Desconocido**).                                               |
-| Compatibilidad con Intune   | El nombre del tipo de dispositivo.                                                                                                     |
-| Compatibilidad con Azure AD | El estado de protección de cada una de las aplicaciones de los usuarios. Los estados posibles de las aplicaciones son **Protegido** y **No protegido**. |
-| Sistema operativo                 | El sistema operativo instalado en el dispositivo.                                                                                       |
-| Versión del sistema operativo         | El número de versión del sistema operativo del dispositivo.                                                                                  |
-| Última inserción en el repositorio      | El nombre del tipo de dispositivo.                                                                                                     |
+| Device name        | The name of the type of device.                                                                                                     |
+| Managed by         | The timestamp the policy was modified.                                                                                              |
+| Azure AD join type | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| Ownership          | The type of device ownership (**Company**, **Personal**, or **Unknown**).                                               |
+| Intune compliant   | The name of the type of device.                                                                                                     |
+| Azure AD compliant | The status of each of the users' app protection apps. The possible statuses for the apps are **Checked in** and **Not checked in**. |
+| OS                 | The operating system installed on the device.                                                                                       |
+| OS version         | The Operating System version number of the device.                                                                                  |
+| Last check-in      | The name of the type of device.                                                                                                     |
 
 
-### <a name="app-protection-policies"></a>Directivas de protección de aplicaciones
+### App protection policies
 
-Las aplicaciones móviles que se integran con tecnologías de EMS disponen de una directiva de protección de aplicaciones, Estas directivas proporcionan una protección básica para los datos corporativos al descargarse en aplicaciones móviles, incluidas las de Office. 
+An app protection policy is available to mobile apps that integrate with EMS technologies. These policies give a baseline of protection for your corporate data when it is downloaded to mobile apps, including the Office mobile apps. 
 
-| Propiedad    | Descripción                                                                           |
+| Property    | Description                                                                           |
 |-------------|---------------------------------------------------------------------------------------|
-| Estado      | El tipo de propiedad del dispositivo (**Empresa**, **Personal** o **Desconocido**). |
-| Nombre de la aplicación    | El nombre de la aplicación.                                                           |
-| Nombre del dispositivo | El nombre del tipo de dispositivo.                                                       |
-| Tipo de dispositivo | El nombre del tipo de dispositivo.                                                       |
-| Directivas    | El tipo de propiedad del dispositivo (**Empresa**, **Personal** o **Desconocido**). |
-| Última sincronización   | La marca de tiempo de la última vez que el dispositivo se sincronizó con Intune.                   |
+| Status      | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| App name    | The name of the application                                                           |
+| Device name | The name of the type of device.                                                       |
+| Device type | The name of the type of device.                                                       |
+| Policies    | The type of device ownership (**Company**, **Personal**, or **Unknown**). |
+| Last sync   | The timestamp of the last time the device synchronized with Intune.                   |
+
+-->
 
 ## <a name="enrollment-failure-reference"></a>Referencia de errores de inscripción
 

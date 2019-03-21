@@ -6,9 +6,10 @@ author: Erikre
 ms.author: erikre
 manager: dougeby
 ms.date: 12/13/2018
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
 ms.reviewer: aanavath
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b2b19b1c2bf2916b44ffa4ca4aa31a85fa6b3b9
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 7b19a0100a53cebe66dae9805ac0cc5b5314e8ad
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57235793"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566784"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Guía para desarrolladores acerca del SDK de aplicaciones de Microsoft Intune para iOS
 
@@ -50,7 +51,7 @@ En esta guía se tratará el uso de los siguientes componentes del SDK de aplica
 
 * **IntuneMAM.framework**: marco del SDK de aplicaciones Intune. Vincule este marco al proyecto para habilitar la aplicación para la administración de aplicaciones clientes de Intune. Use el marco en lugar de la biblioteca estática si su aplicación usa extensiones, para que el proyecto no cree varias copias de la biblioteca estática.
 
-* **IntuneMAMResources.bundle**: lote de recursos que contiene los recursos en los que se basa el SDK.
+* **IntuneMAMResources.Bundle**: lote de recursos que contiene los recursos en los que se basa el SDK.
 
 * **Encabezados**: expone las API del SDK para aplicaciones de Intune. Si usa una API, deberá incluir el archivo de encabezado que contiene la API. Los siguientes archivos de encabezado incluyen las API, los tipos de datos y los protocolos que Intune App SDK pone a disposición de los desarrolladores:
 
@@ -80,9 +81,9 @@ El objetivo del SDK para aplicaciones de Intune para iOS es agregar capacidades 
 
 ## <a name="build-the-sdk-into-your-mobile-app"></a>Integrar el SDK en la aplicación móvil
 
-Para habilitar Intune App SDK, siga estos pasos:
+Para habilitar el SDK para aplicaciones de Intune, siga estos pasos:
 
-1. **Opción 1 (recomendada)**: vincular `IntuneMAM.framework` al proyecto. Arrastre `IntuneMAM.framework` a la lista **Embedded Binaries** (Binarios insertados) del destino del proyecto.
+1. **Opción 1 (recomendada)**: vínculo `IntuneMAM.framework` al proyecto. Arrastre `IntuneMAM.framework` a la lista **Embedded Binaries** (Binarios insertados) del destino del proyecto.
 
    > [!NOTE]
    > Si usa el marco, debe quitar manualmente las arquitecturas de simulador del marco universal antes de enviar la aplicación a la Tienda de aplicaciones. Vea [Enviar la aplicación a la Tienda de aplicaciones](#Submit-your-app-to-the-App-Store) para más información.
@@ -232,7 +233,7 @@ ContainingAppBundleId | String | Especifica el id. del lote de la aplicación co
 DebugSettingsEnabled| Boolean | Si se establece en Sí, se pueden aplicar directivas de prueba en el lote de configuración. Las aplicaciones *no* se deben proporcionar con esta opción habilitada. | Opcional. El valor predeterminado es No.|
 MainNibFile <br> MainNibFile~ipad  | String  | Esta configuración debe contener el nombre de archivo nib principal de la aplicación.  | Obligatorio si la aplicación define MainNibFile en Info.plist. |
 MainStoryboardFile <br> MainStoryboardFile~ipad  | String  | Esta configuración debe contener el nombre de archivo de guion gráfico principal de la aplicación. | Se requiere si la aplicación define UIMainStoryboardFile en Info.plist. |
-MAMPolicyRequired| Boolean| Especifica si el inicio de la aplicación se va a bloquear en caso de que no tenga una directiva de Intune APP. El valor predeterminado es NO. <br><br> Nota: Las aplicaciones no se pueden enviar a App Store con MAMPolicyRequired establecido en SÍ. | Opcional. El valor predeterminado es No.|
+MAMPolicyRequired| Boolean| Especifica si el inicio de la aplicación se va a bloquear en caso de que no tenga una directiva de Intune APP. El valor predeterminado es NO. <br><br> Nota: Las aplicaciones no se pueden enviar a la Tienda de aplicaciones con MAMPolicyRequired establecido en SÍ. | Opcional. El valor predeterminado es No.|
 MAMPolicyWarnAbsent | Boolean| Especifica si la aplicación va a avisar al usuario durante el inicio en caso de que no tenga una directiva de Intune APP. <br><br> Nota: Los usuarios podrán seguir usando la aplicación sin directiva después de descartar la advertencia. | Opcional. El valor predeterminado es No. |
 MultiIdentity | Boolean| Especifica si la aplicación es compatible con varias identidades. | Opcional. El valor predeterminado es No. |
 SplashIconFile <br> SplashIconFile~ipad | String  | Especifica el archivo del icono de la pantalla de presentación (inicio) de Intune. | Opcional. |
@@ -306,7 +307,7 @@ Si quiere que el SDK de Intune controle toda la autenticación mediante ADAL y l
 Setting  | Tipo  | Definición |
 --       |  --   |   --       |  
 AutoEnrollOnLaunch| Boolean| Especifica si la aplicación debe intentar inscribir automáticamente al ejecutarse, o en caso de que se haya detectado una identidad administrada existente que aún no lo haya hecho. El valor predeterminado es NO. <br><br> Nota: Si no se encuentra ninguna identidad administrada, o bien si no hay ningún token válido disponible en la caché de ADAL para la identidad, el intento de inscripción devolverá un error en modo silencioso sin solicitar las credenciales, a menos que en la aplicación también se establezca MAMPolicyRequired en SÍ. |
-MAMPolicyRequired| Boolean| Especifica si se bloqueará el inicio de la aplicación en caso de que no tenga una directiva de protección de aplicaciones de Intune. El valor predeterminado es NO. <br><br> Nota: Las aplicaciones no se pueden enviar a App Store con MAMPolicyRequired establecido en SÍ. Al establecer MAMPolicyRequired en SÍ, AutoEnrollOnLaunch también debe establecerse en SÍ. |
+MAMPolicyRequired| Boolean| Especifica si se bloqueará el inicio de la aplicación en caso de que no tenga una directiva de protección de aplicaciones de Intune. El valor predeterminado es NO. <br><br> Nota: Las aplicaciones no se pueden enviar a la Tienda de aplicaciones con MAMPolicyRequired establecido en SÍ. Al establecer MAMPolicyRequired en SÍ, AutoEnrollOnLaunch también debe establecerse en SÍ. |
 
 Si elige esta opción para la aplicación, no es necesario que controle el reinicio de la aplicación después de la inscripción.
 
@@ -591,7 +592,7 @@ Tenga en cuenta que una identidad se define simplemente como una cadena. Las ide
 
 ### <a name="identity-overview"></a>Información general sobre la identidad
 
-Una identidad es simplemente el nombre de usuario de una cuenta (por ejemplo, user@contoso.com). Los desarrolladores pueden establecer la identidad de la aplicación en los niveles siguientes:
+Una identidad es simplemente el nombre de usuario de una cuenta (por ejemplo, user@contoso.com). Los desarrolladores pueden establecer la identidad de la aplicación en los siguientes niveles:
 
 * **Identidad de proceso**: establece la identidad de todo el proceso y se usa principalmente para aplicaciones de una sola identidad. Esta identidad afecta a todas las tareas, los archivos y la interfaz de usuario.
 
@@ -603,7 +604,7 @@ La aplicación es responsable de establecer las identidades correctamente, tanto
 
 En todo momento, los subprocesos tienen una identidad eficaz para las tareas de la interfaz de usuario y las tareas de archivos. Esta es la identidad que se usa para comprobar qué directivas se deben aplicar, en caso de que las haya. Si la identidad es "Ninguna identidad" o si el usuario no está administrado, no se aplica ninguna directiva. Los diagramas siguientes muestran cómo se determinan las identidades reales.
 
-  ![SDK de aplicaciones de Intune para iOS: proceso de determinación de identidad](./media/ios-thread-identities.png)
+  ![Intune App SDK iOS: proceso de determinación de identidad](./media/ios-thread-identities.png)
 
 ### <a name="thread-queues"></a>Colas de subprocesos
 
