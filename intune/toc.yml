@@ -12,6 +12,8 @@ items:
     items:
     - name: Novedades de la interfaz de usuario de aplicaciones
       href: whats-new-app-ui.md
+    - name: Características en desarrollo
+      href: in-development.md
   expanded: true
 - name: Inicios rápidos
   items:
@@ -75,8 +77,6 @@ items:
     href: windows-information-protection-configure.md
   - name: PREGUNTAS MÁS FRECUENTES DE MAM
     href: mam-faq.md
-  - name: Preguntas más frecuentes de directiva y perfil
-    href: manage-settings-and-features-on-your-devices-with-microsoft-intune-policies.md
 - name: Guías paso a paso
   items:
   - name: Planeamiento de la implementación
@@ -225,9 +225,7 @@ items:
       items:
       - name: Programa de inscripción de dispositivos o Apple School Manager
         href: device-enrollment-program-enroll-macos.md
-    - name: Instalar el cliente de software de Intune en equipos con Windows
-      href: install-the-windows-pc-client-with-microsoft-intune.md
-    - name: Informe de abandono
+    - name: Informe de inscripción incompleta
       href: enrollment-report-company-portal-abandon.md
     - name: Solucionar problemas de inscripción de dispositivos
       href: troubleshoot-device-enrollment-in-intune.md
@@ -258,7 +256,7 @@ items:
       href: device-logout-user.md
     - name: Quitar usuario
       href: device-remove-user.md
-    - name: Borrar dispositivo
+    - name: Borrar el contenido de un dispositivo macOS
       href: device-erase.md
     - name: Dispositivos móviles de control remoto
       href: device-profile-android-teamviewer.md
@@ -307,6 +305,7 @@ items:
     - name: Restricción de las características y la configuración de dispositivo
       href: device-restrictions-configure.md
     - name: Publicación de actualizaciones
+      displayName: delivery optimization; updates
       href: delivery-optimization-windows.md
     - name: Actualización de ediciones y modo S
       href: edition-upgrade-configure-windows-10.md
@@ -363,7 +362,7 @@ items:
         - name: Datos que Intune manda a Google
           href: data-intune-sends-to-google.md
         - name: Información compartida de Jamf Pro a Intune
-          href: conditional-access-integrate-jamf.md
+          href: data-jamf-sends-to-intune.md
       - name: Visualización y corrección de datos personales
         href: privacy-data-view-correct.md
       - name: Auditoría, exportación y eliminación
@@ -376,6 +375,7 @@ items:
       - name: Instalación del conector local de Exchange
         href: exchange-connector-install.md
       - name: Creación y asignación de la directiva de acceso condicional
+        href: conditional-access-exchange-create.md
       - name: Directiva de acceso condicional basado en dispositivos
         href: create-conditional-access-intune.md
       - name: Reasignación de directivas de acceso condicional desde el Portal de Intune clásico
@@ -448,6 +448,8 @@ items:
       href: network-access-control-integrate.md
     - name: Windows Hello
       href: windows-hello.md
+    - name: Supervisión del cifrado de dispositivos
+      href: encryption-monitor.md
     - name: Certificados
       href: certificates-configure.md
       items:
@@ -532,6 +534,8 @@ items:
         href: apps-inc-exl-assignments.md
       - name: Implementar aplicaciones de Windows 10
         href: apps-windows-10-app-deploy.md
+      - name: Implementación de aplicaciones en entornos de administración pública
+        href: apps-deploy-gcc-dod.md
     - name: Supervisión de aplicaciones
       href: apps-monitor.md
     - name: Configurar aplicaciones
@@ -616,6 +620,8 @@ items:
       href: data-google-sends-to-intune.md
   - name: Obtener ayuda y soporte técnico
     items:
+    - name: Estado del inquilino
+      href: tenant-status.md
     - name: Solución de problemas
       items:
       - name: Ayuda para los usuarios para solucionar problemas
@@ -624,6 +630,8 @@ items:
         href: troubleshoot-company-resource-access-problems.md
       - name: Solucionar problemas de instalación de aplicaciones
         href: troubleshoot-app-install.md
+      - name: Solucionar problemas de la administración de aplicaciones móviles
+        href: troubleshoot-mam.md
       - name: Registros de auditoría para actividades de Intune
         href: monitor-audit-logs.md
       - name: Revisión de registros con Azure Monitor
@@ -636,14 +644,12 @@ items:
         href: troubleshoot-software-updates-in-microsoft-intune.md
       - name: Solucionar problemas de Endpoint Protection
         href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-      - name: Solucionar problemas de directivas
+      - name: Solución de problemas de directivas y perfiles
         href: troubleshoot-policies-in-microsoft-intune.md
       - name: Solucionar problemas de acceso condicional
         href: troubleshoot-conditional-access.md
       - name: Solucionar problemas de Exchange Connector
         href: troubleshoot-exchange-connector.md
-    - name: Problemas conocidos
-      href: known-issues.md
     - name: Obtención de soporte técnico
       href: get-support.md
 - name: Referencia
@@ -660,14 +666,6 @@ items:
           href: device-restrictions-android.md
         - name: Correo electrónico
           href: email-settings-android.md
-        - name: Certificado de confianza
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: Certificado SCEP
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: Certificado PKCS importado
-          href: certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile
-        - name: Certificado PKCS
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-android.md#android-vpn-settings
         - name: Wi-Fi
@@ -687,16 +685,8 @@ items:
           href: device-restrictions-android-for-work.md
         - name: Correo electrónico
           href: email-settings-android-enterprise.md
-        - name: Certificado de confianza
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: Certificado SCEP
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: Certificado PKCS importado
-          href: certficates-pfx-configure.md#create-a-pkcs-imported-certificate-profile
-        - name: Certificado PKCS
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
-          href: vpn-settings-android.md#android-for-work-vpn-settings
+          href: vpn-settings-android.md#android-enterprise-vpn-settings
         - name: Wi-Fi
           href: wi-fi-settings-android-enterprise.md
         - name: Personalizada
@@ -713,12 +703,6 @@ items:
           href: device-restrictions-ios.md
         - name: Correo electrónico
           href: email-settings-ios.md
-        - name: Certificado de confianza
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: Certificado SCEP
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: Certificado PKCS
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-ios.md
         - name: Wi-Fi
@@ -737,26 +721,20 @@ items:
           href: device-restrictions-macos.md
         - name: Endpoint Protection
           href: endpoint-protection-macos.md
-        - name: Certificado de confianza
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: Certificado SCEP
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
           href: vpn-settings-macos.md
         - name: Wi-Fi
           href: wi-fi-settings-macos.md
         - name: Personalizada
           href: custom-settings-macos.md
-    - name: Líneas base de seguridad
-      items:
-      - name: Configuración de línea de base de seguridad de Windows
-        href: security-baseline-settings-windows.md
     - name: Windows 10 y versiones posteriores
       items:
       - name: Configuración de directivas de cumplimiento
         href: compliance-policy-create-windows.md#windows-10-and-later-policy-settings
       - name: Ajustes de perfiles de configuración
         items:
+        - name: Configuración de la optimización de entrega
+          href: delivery-optimization-settings.md
         - name: Restricciones de dispositivos
           href: device-restrictions-windows-10.md
         - name: Restricciones de dispositivos (Windows 10 Team)
@@ -771,12 +749,6 @@ items:
           href: identity-protection-windows-settings.md
         - name: Pantalla completa
           href: kiosk-settings-windows.md
-        - name: Certificado de confianza
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: Certificado SCEP
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
-        - name: Certificado PKCS
-          href: certficates-pfx-configure.md#create-a-pkcs-certificate-profile
         - name: VPN
           href: vpn-settings-windows-10.md
         - name: Wi-Fi
@@ -787,6 +759,8 @@ items:
           href: shared-user-device-settings-windows.md
         - name: Personalizada
           href: custom-settings-windows-10.md
+      - name: Configuración de líneas de base de seguridad
+        href: security-baseline-settings-windows.md
       - name: Configuración de Windows Update
         href: windows-update-settings.md
     - name: Windows Holographic for Business
@@ -809,10 +783,6 @@ items:
         items:
         - name: Restricciones de dispositivos
           href: device-restrictions-windows-8-1.md
-        - name: Certificado de confianza
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: Certificado SCEP
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
           href: vpn-settings-windows-8-1.md
         - name: Importación de Wi-Fi
@@ -827,10 +797,6 @@ items:
           href: device-restrictions-windows-phone-8-1.md
         - name: Correo electrónico
           href: email-settings-windows-phone-8-1.md
-        - name: Certificado de confianza
-          href: certficates-pfx-configure.md#create-a-trusted-certificate-profile
-        - name: Certificado SCEP
-          href: certificates-scep-configure.md#create-a-scep-certificate-profile
         - name: VPN
           href: vpn-settings-windows-phone-8-1.md
         - name: Personalizada
@@ -854,6 +820,9 @@ items:
         href: app-wrapper-prepare-android.md
       - name: SDK de aplicaciones de Intune para Android
         href: app-sdk-android.md
+        items:
+        - name: Guía de pruebas de Android sobre el SDK para aplicaciones de Intune
+          href: app-sdk-android-testing-guide.md
       - name: Xamarin Bindings del SDK para aplicaciones de Intune
         href: app-sdk-xamarin.md
     - name: Usar el Almacenamiento de datos de Intune
@@ -912,34 +881,6 @@ items:
       href: graph-apis-used-by-intune-device-configuration-windows.md
 - name: Recursos
   items:
-  - name: Guía de documentación de Microsoft Intune
-    href: intune-documentation.md
-  - name: Solución de problemas
-    items:
-    - name: Ayuda para los usuarios para solucionar problemas
-      href: help-desk-operators.md
-    - name: Solucionar problemas de acceso a recursos de empresa
-      href: troubleshoot-company-resource-access-problems.md
-    - name: Solucionar problemas de instalación de aplicaciones
-      href: troubleshoot-app-install.md
-    - name: Solucionar problemas de la administración de aplicaciones móviles
-      href: troubleshoot-mam.md
-    - name: Registros de auditoría para actividades de Intune
-      href: monitor-audit-logs.md
-    - name: Revisión de los registros de protección de aplicaciones
-      href: app-protection-policy-settings-log.md
-    - name: Solucionar problemas de perfiles de correo electrónico
-      href: troubleshoot-email-profiles-in-microsoft-intune.md
-    - name: Solucionar problemas de actualizaciones de software
-      href: troubleshoot-software-updates-in-microsoft-intune.md
-    - name: Solucionar problemas de Endpoint Protection
-      href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-    - name: Solucionar problemas de directivas
-      href: troubleshoot-policies-in-microsoft-intune.md
-    - name: Solucionar problemas de acceso condicional
-      href: troubleshoot-conditional-access.md
-    - name: Solucionar problemas de Exchange Connector
-      href: troubleshoot-exchange-connector.md
   - name: Archivo
     items:
     - name: Archivo de novedades
@@ -1005,9 +946,9 @@ items:
       href: data-outside-protect.md
     - name: Evitar fugas de datos en dispositivos no administrados
       href: data-leak-prevention.md
-ms.openlocfilehash: 680ae510d7f3387b53ad6ae50c8e4d8ba194f8b9
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 2a7f7b7a1d1c56cf316362ef8dc2693343e64955
+ms.sourcegitcommit: 768430b5296573c6e007ae4e13d57aeda4be4b7e
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742829"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58306866"
