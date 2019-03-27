@@ -10,20 +10,22 @@ ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 2586fce0-5dca-4686-b9c4-791778838401
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2ae378550a75f756390053e44eb4fbd04f665612
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 7dee5407b39d9299081bf526b117c64b5883a106
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179099"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57393356"
 ---
-# <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Inicio rápido: Crear y asignar una directiva de protección de aplicaciones
+# <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Inicio rápido: Creación y asignación de una directiva de protección de aplicaciones
 
 En este tutorial de inicio rápido usará Intune para crear y asignar una directiva de protección de aplicaciones a una aplicación cliente en el dispositivo de un usuario final. Intune usa directivas de protección de aplicaciones para confirmar que sus aplicaciones cumplen los requisitos de protección de datos de su organización.
 
@@ -44,7 +46,7 @@ Use los siguientes pasos para crear una directiva de protección de aplicaciones
 1. En [Intune](https://aka.ms/intuneportal), seleccione **Aplicaciones cliente** > **Directivas de protección de aplicaciones** > **Crear directiva**. 
 2. Escriba la siguiente información: 
 
-    - **Nombre**: *Protección de contenido de Windows 10*
+    - **Nombre**: *Protección de contenido de Windows 10*
     - **Descripción**: *Los usuarios asociados a esta directiva no podrán cortar, copiar ni pegar contenido entre la aplicación asignada y otras aplicaciones no administradas en el dispositivo.*
     - **Plataforma**: *Windows 10*
     - **Estado de inscripción**: *Con inscripción*

@@ -10,18 +10,20 @@ ms.date: 11/09/2018
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a1b89f2d-7937-46bb-926b-b05f6fa9c749
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: af24e1c56e43fe2edfc6a9241c31600b7cfe61a7
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 757191515ca88cedf1a5edcdb243b1ecb730ec3c
+ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186263"
+ms.lasthandoff: 03/15/2019
+ms.locfileid: "57991123"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Inicio rápido: Enviar notificaciones a dispositivos no conformes
 
@@ -48,11 +50,11 @@ Para enviar correo electrónico a los usuarios, cree una plantilla de mensaje de
 2. Escriba la información siguiente:
 
    - **Nombre**: *Administrador de Contoso*
-   - **Asunto**: *Cumplimiento del dispositivo*
+   - **Asunto**: *Conformidad de dispositivos*
    - **Mensaje**: *Su dispositivo no cumple los requisitos de cumplimiento de nuestra organización.*
-   - **Encabezado de correo electrónico: incluir el logotipo de la empresa**: establezca la opción en **Habilitado** para mostrar el logotipo de su organización.
-   - **Pie de página de correo electrónico: incluir el nombre de la empresa**: establezca la opción en **Habilitado** para mostrar el nombre de su organización.
-   - **Pie de página de correo electrónico: incluir información de contacto**: establezca la opción en **Habilitado** para mostrar la información de contacto de su organización.
+   - **Encabezado de correo electrónico: incluir logotipo de la empresa**: establézcalo en **Habilitado** para mostrar el logotipo de la organización.
+   - **Pie de página de correo electrónico: incluir nombre de la empresa**: establézcalo en **Habilitado** para mostrar el nombre de la organización.
+   - **Pie de página de correo electrónico: incluir información de contacto**: establézcalo en **Habilitado** para mostrar la información de contacto de la organización.
 
    ![Ejemplo de un mensaje de notificación compatible en Intune](./media/quickstart-send-notification-01.png)
 
@@ -73,8 +75,8 @@ Con los pasos siguientes puede crear una directiva de cumplimiento para disposit
 2. Seleccione **Directivas** > **Crear directiva**.
 3. Escriba la información siguiente:
 
-   - **Nombre**: *Cumplimiento de Windows 10*
-   - **Descripción**: *Directiva de cumplimiento de Windows 10*
+   - **Nombre**: *Cumplimiento de Windows 10*
+   - **Descripción**: *Directiva de cumplimiento de Windows 10*
    - **Plataforma**: Windows 10 y versiones posteriores
 
 4. Seleccione **Configuración** > **Seguridad del sistema** para mostrar la configuración relativa a la seguridad del dispositivo.
@@ -84,7 +86,7 @@ Con los pasos siguientes puede crear una directiva de cumplimiento para disposit
     ![Configuración de la seguridad del sistema de una nueva directiva de cumplimiento](./media/quickstart-send-notification-02.png) 
 
 7. Haga clic en **Aceptar**, en **Aceptar** y en **Crear** para crear la directiva de cumplimiento.
-8. Seleccione el nombre de la nueva directiva: **Cumplimiento de Windows 10**.
+8. Seleccione el nombre de la nueva directiva: **Cumplimiento de Windows 10**.
 9. Seleccione **Propiedades** > **Action for noncompliance** (Acción de incumplimiento)  > **Agregar**.
 10. En el cuadro desplegable **Acción**, compruebe que la opción **Enviar correo electrónico a usuario final** está seleccionada.
 11. Seleccione **Plantilla de mensaje** > **Administrador de Contoso** > **Seleccionar** para seleccionar la plantilla de mensaje que ha creado en este tema.

@@ -1,6 +1,6 @@
 ---
 title: ¿Qué es Microsoft Intune?
-description: Obtenga información sobre cómo Intune es el componente de administración de dispositivos móviles (MDM) y de administración de aplicaciones móviles (MAM) de la solución Enterprise Mobility + Security y sobre cómo ayuda a proteger los datos de la empresa.
+description: Obtenga información sobre cómo Microsoft Intune es el componente de administración de dispositivos móviles (MDM) y de administración de aplicaciones móviles (MAM) de la solución Enterprise Mobility + Security y sobre cómo ayuda a proteger los datos de la empresa.
 keywords: ¿Qué es Intune?
 author: dougeby
 ms.author: dougeby
@@ -9,6 +9,7 @@ ms.date: 02/26/2019
 ms.topic: overview
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3b4e778d-ac13-4c23-974f-5122f74626bc
 ms.reviewer: pmay
@@ -16,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 92cd9a5a6c3ee49b2431b43b024c338e06b5dfe2
-ms.sourcegitcommit: 7d694e3cd01623513c2b163946e60a99ab9535d2
+ms.openlocfilehash: 511e672193ec609f817c10572c99ac73831c54ae
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56891613"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460587"
 ---
 # <a name="what-is-microsoft-intune"></a>¿Qué es Microsoft Intune?
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
-Intune es un servicio de administración de movilidad empresarial (EMM) basado en nube que ayuda a los empleados a ser productivos mientras mantiene protegidos los datos corporativos. Al igual que otros servicios de Azure, Microsoft Intune está disponible en Azure Portal. Intune permite:
+Microsoft Intune es un servicio de administración de movilidad empresarial (EMM) basado en nube que ayuda a los empleados a ser productivos mientras mantiene protegidos los datos corporativos. Al igual que otros servicios de Azure, Microsoft Intune está disponible en Azure Portal. Intune permite:
 * Administrar los dispositivos móviles y los equipos que los empleados usan para tener acceso a datos de la empresa.
 * Administrar las aplicaciones móviles que usa la plantilla.
 * Proteger la información de la empresa al ayudar a controlar la manera en que los empleados tienen acceso a ella y la comparten.
@@ -44,7 +45,7 @@ Intune es un servicio de administración de movilidad empresarial (EMM) basado e
 
 
 ## <a name="how-does-intune-work"></a>¿Cómo funciona Intune?
-Intune es el componente de Enterprise Mobility + Security (EMS) que administra aplicaciones y dispositivos móviles. Intune se integra perfectamente con otros componentes de EMS, como Azure Active Directory (Azure AD) para la identidad y el control de acceso y Azure Information Protection para la protección de datos. Al usarlo junto a Office 365, permite que los empleados sean productivos en todos sus dispositivos sin poner en peligro la información de la organización.
+Intune es el componente del conjunto Enterprise Mobility + Security (EMS) de Microsoft que administra aplicaciones y dispositivos móviles. Intune se integra perfectamente con otros componentes de EMS, como Azure Active Directory (Azure AD) para la identidad y el control de acceso y Azure Information Protection para la protección de datos. Al usarlo junto a Office 365, permite que los empleados sean productivos en todos sus dispositivos sin poner en peligro la información de la organización.
 
 ![Imagen de una arquitectura de Intune](./media/intunearch_sm.png)
 
@@ -108,7 +109,7 @@ La mayoría de las soluciones de administración de movilidad empresarial admite
 
 Las organizaciones diferirán en la medida en que adopten escenarios "sin inscripción". Para algunas organizaciones son estándar, otras los permiten en dispositivos complementarios, como una tableta personal, y otras no los admiten en absoluto. Incluso en este último caso, en el que se requiere que todos los dispositivos de los empleados se inscriban en MDM, suelen admitir escenarios "sin inscripción" para contratistas, proveedores y otros dispositivos con exenciones específicas.
 
-También se puede usar tecnología de "sin inscripción" de Intune en los dispositivos inscritos. Por ejemplo, un dispositivo inscrito en MDM puede tener protecciones de apertura proporcionadas por el sistema operativo móvil. La protección de apertura es una función de iOS que impide que se abra un documento desde una aplicación, como Outlook, en otra aplicación, como Word, a menos que el proveedor de MDM administre ambas aplicaciones. Además, el departamento de TI puede aplicar la directiva de protección de aplicaciones a las aplicaciones móviles administradas por EMS para controlar la opción de guardar como o proporcionar autenticación multifactor.
+También se puede usar tecnología de "sin inscripción" de Intune en los dispositivos inscritos. Por ejemplo, un dispositivo inscrito en MDM puede tener protecciones de apertura proporcionadas por el sistema operativo móvil. La protección de apertura es una función de iOS (Apple) que impide que se abra un documento desde una aplicación, como Outlook, en otra aplicación, como Word, a menos que el mismo proveedor de MDM administre ambas aplicaciones. Además, el departamento de TI puede aplicar la directiva de protección de aplicaciones a las aplicaciones móviles administradas por EMS para controlar la opción de guardar como o proporcionar autenticación multifactor.
 
 Sea cual sea la postura de su organización con respecto a los dispositivos y aplicaciones móviles inscritos y no inscritos, Intune, como parte de EMS, dispone de herramientas que le ayudarán a aumentar la productividad de sus empleados mientras protege los datos de la empresa.
 
@@ -133,7 +134,7 @@ Para leer una guía rápida para la personalización de la experiencia del porta
 
 ### <a name="before-you-start"></a>Antes de empezar
 
-Para usar Intune en el portal de Azure, debe tener una cuenta de administrador y de inquilino de Intune. [Regístrese para obtener una cuenta](https://portal.office.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) si todavía no tiene una.
+Para usar Intune en el portal de Azure, debe tener una cuenta de administrador y de inquilino de Intune. [Regístrese para obtener una cuenta](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20) si todavía no tiene una.
 
 ### <a name="supported-web-browsers-for-the-azure-portal"></a>Exploradores web admitidos en el portal de Azure
 

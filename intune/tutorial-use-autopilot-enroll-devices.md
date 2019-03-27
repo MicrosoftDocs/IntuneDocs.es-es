@@ -10,6 +10,7 @@ ms.date: 10/19/2018
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up Windows Autopilot so that users can enroll in Intune.
@@ -17,12 +18,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 087f890f84c9bc0ff0c46f129ef84b8a268c738e
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 36aa9ad733e2ae5e0f4a292b073fbebd5f5f5f8f
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187742"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57395979"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>Tutorial: Uso de Autopilot para inscribir dispositivos Windows en Intune
 Windows Autopilot simplifica el proceso de inscripción de dispositivos. Con Microsoft Intune y Autopilot, puede proporcionar nuevos dispositivos a los usuarios finales sin necesidad de crear, mantener y aplicar imágenes personalizadas del sistema operativo. 
@@ -42,14 +44,14 @@ Para obtener información general sobre las ventajas, los escenarios y los requi
 
 ## <a name="prerequisites"></a>Requisitos previos
 - [Configurar la inscripción automática para Windows](quickstart-setup-auto-enrollment.md)
-- [Se requiere una suscripción a Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
+- [Suscripción a las ediciones Azure Active Directory Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
 
 
 ## <a name="add-devices"></a>Agregar dispositivos
 
 El primer paso para configurar Windows Autopilot es agregar los dispositivos Windows a Intune. Lo único que debe hacer es crear un archivo CSV e importarlo en Intune.
 
-1. En cualquier editor de texto, cree una lista de valores separados por comas (CSV) que identifican los dispositivos Windows. Utilice el siguiente formato:
+1. En cualquier editor de texto, cree una lista de valores separados por comas (CSV) que identifican los dispositivos Windows. Use el formato siguiente:
     
     *número-de-serie*, *Id.-de-producto-de-windows*, *hash-del-hardware*, *Id.-de-pedido-opcional*
     
@@ -93,7 +95,7 @@ Después de crear un grupo de dispositivos, debe crear un perfil de implementaci
 4. En **Modo de implementación**, elija **Controlado por el usuario**. Los dispositivos con este perfil están asociados al usuario que inscribe el dispositivo. Se necesitan credenciales de usuario para inscribir el dispositivo.
 5. En el cuadro **Unirse a Azure AD como**, elija **Unidos a Azure AD**.
 6. Elija **Configuración rápida**, configure las siguientes opciones, deje el resto con los valores predeterminados y elija **Guardar**:
-    - **Contrato de licencia para el usuario final (EULA)**: **Ocultar**
+    - **Contrato de licencia para el usuario final (CLUF)**: **Ocultar**
     - **Configuración de privacidad**: **Mostrar**
     - **Tipo de cuenta de usuario**: **Estándar**
 

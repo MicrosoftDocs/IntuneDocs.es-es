@@ -4,6 +4,7 @@ description: 'Inicio rápido: Crear y asignar un rol personalizado para un admin
 services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 09/21/2018
 ms.author: erikje
@@ -11,12 +12,13 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 5de108835254d6a65546b8f1c9e8d0e9c32dbd26
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: be3ef61d3bdce2f1ad74a388a2ec50691313a1d1
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189935"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57400296"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>Inicio rápido: Crear y asignar un rol personalizado
 

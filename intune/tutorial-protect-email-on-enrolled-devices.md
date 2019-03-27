@@ -3,25 +3,27 @@ title: 'Tutorial: Protección del correo electrónico de Exchange Online en disp
 titlesuffix: Microsoft Intune
 description: Aprenda a proteger Exchange Online con las directivas de cumplimiento de Intune para iOS y el acceso condicional de Azure AD para exigir dispositivos administrados y la aplicación Outlook.
 keywords: ''
-author: msmimart
-ms.author: mimart
+author: brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 09/19/2018
-ms.topic: quickstart
+ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 2c23ad2c63fad8c74666e3c1ae9acc543e48f8e8
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6c76a22fec1342481a67029147c757347a06447c
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181877"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57528214"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Tutorial: Protección del correo electrónico de Exchange Online en dispositivos administrados
 Obtenga información sobre cómo usar las directivas de cumplimiento de dispositivos con acceso condicional para asegurarse de que los dispositivos iOS pueden acceder al correo electrónico de Exchange Online solo si se administran mediante Intune y con una aplicación de correo electrónico aprobada. 

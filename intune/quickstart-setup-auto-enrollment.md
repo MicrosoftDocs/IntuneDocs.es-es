@@ -4,6 +4,7 @@ description: 'Inicio rápido: Configurar la inscripción automática para dispos
 services: microsoft-intune
 author: ErikjeMS
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.topic: quickstart
 ms.date: 11/05/2018
 ms.author: erikje
@@ -11,14 +12,15 @@ ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 0d6f210d055d8395985b4fe64b5a061b2c8a0304
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 810adbf06ddcd0aabb5c758f6a71c898116a9cee
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179676"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57394311"
 ---
-# <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>Inicio rápido: Configurar la inscripción automática para dispositivos Windows 10
+# <a name="quickstart-set-up-automatic-enrollment-for-windows-10-devices"></a>Inicio rápido: Configurar la inscripción automática para dispositivos Windows 10
 
 En este inicio rápido, configurará Microsoft Intune para inscribir automáticamente los dispositivos cuando determinados usuarios inicien sesión en dispositivos Windows 10.
 
@@ -74,4 +76,4 @@ En este inicio rápido, aprendió a configurar la inscripción automática para 
 Para seguir esta serie de tutoriales de inicio rápido de Intune, pase al siguiente tutorial de inicio rápido.
 
 > [!div class="nextstepaction"]
-> [Inicio rápido: Inscripción de dispositivos Windows 10](quickstart-enroll-windows-device.md)
+> [Inicio rápido: Inscripción de dispositivos Windows 10](quickstart-enroll-windows-device.md)
