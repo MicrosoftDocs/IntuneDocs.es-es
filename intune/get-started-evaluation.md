@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34d1cbe969b8e186d9e067660237da9c4ca88fb8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 313e4ccf0e96536b3e99edb968298e4cc3343aa1
+ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396221"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58429740"
 ---
 # <a name="what-can-intune-do-for-my-company"></a>¿Cómo puede Intune ayudar a mi empresa?
 Microsoft Intune es un servicio de administración de movilidad empresarial (EMM) basado en nube que ayuda a los empleados a ser productivos mientras mantiene protegidos los datos corporativos.
@@ -46,15 +46,15 @@ Intune permite:
 
 ## <a name="quickstarts"></a>Inicios rápidos
 
-Somos conscientes de que la introducción a la administración de dispositivos móviles puede ser compleja, puesto que deberá tomar un gran número de decisiones en nombre de su empresa. Los siguientes tutoriales le ayudarán a empezar a trabajar con Intune y a realizar algunas tareas comunes en una cantidad mínima de tiempo.
+Somos conscientes de que puede ser difícil administrar dispositivos móviles. Hay muchas decisiones diferentes que deberá tomar en nombre de su empresa. Los siguientes tutoriales lo ayudarán a empezar a trabajar con Intune y a realizar algunas tareas comunes en una cantidad mínima de tiempo.
 
-Puede seguir el orden previsto de los tutoriales de **inicio rápido** usando la tabla de contenidos del lado izquierdo de esta página.
+Puede seguir el orden previsto de los **inicios rápidos** usando la tabla de contenidos del lado izquierdo de esta página.
 
 - [Probar Intune gratis](free-trial-sign-up.md): cree una suscripción gratuita para probar Intune en un entorno de prueba.    
 - [Crear un usuario](quickstart-create-user.md): agregue un usuario a Intune para que pueda acceder a los recursos de la empresa en dispositivos móviles.
 - [Crear un grupo](quickstart-create-group.md): organice los usuarios en grupos para administrar las directivas y las aplicaciones a las que pueden acceder con más facilidad.
-- [Configurar la inscripción automática](quickstart-setup-auto-enrollment.md): configure Microsoft Intune para inscribir automáticamente los dispositivos cuando determinados usuarios inicien sesión en dispositivos Windows 10.
-- [Inscribir el dispositivo](quickstart-enroll-windows-device.md): asuma el rol de un usuario de Intune e inscriba su dispositivo en Microsoft Intune. Luego, vuelva a Intune y confirme el dispositivo inscrito.
+- [Configurar la inscripción automática](quickstart-setup-auto-enrollment.md): configure Intune para inscribir automáticamente los dispositivos cuando determinados usuarios inicien sesión en dispositivos Windows 10.
+- [Inscribir el dispositivo](quickstart-enroll-windows-device.md): asuma el rol de un usuario de Intune e inscriba su dispositivo en Intune. Luego, vuelva a Intune y confirme que el dispositivo se ha inscrito correctamente.
 - [Crear una directiva de cumplimiento de dispositivos](quickstart-set-password-length-android.md): cree una directiva de cumplimiento de dispositivos y asígnele un grupo.
 - [Enviar notificaciones a dispositivos no conformes](quickstart-send-notification.md): envíe una notificación por correo electrónico a los miembros de su personal que tengan dispositivos no conformes. Para ello, cree y asigne una directiva de cumplimiento.
 - [Agregar y asignar una aplicación](quickstart-add-assign-app.md): agregue y asigne una aplicación cliente a los empleados de su empresa.
