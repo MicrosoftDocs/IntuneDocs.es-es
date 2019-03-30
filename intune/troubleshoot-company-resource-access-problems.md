@@ -1,11 +1,11 @@
 ---
-title: Solucionar problemas de acceso a los recursos de la empresa | Microsoft Docs
-description: Use los códigos de error y estado de Microsoft Intune para ayudarle a solucionar problemas de acceso a los recursos.
+title: Códigos de error y de estado en Microsoft Intune - Azure | Microsoft Docs
+description: Ver una lista de los errores, código de estado, descripciones y soluciones cuando use la MDM administran los dispositivos, obtener acceso a recursos de la empresa, los errores en los dispositivos iOS y errores de respuesta de OMA en Microsoft Intune.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/08/2018
+ms.date: 03/20/2019
 ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ebb311eab93abd66f6a23e58737573622b68f3e8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 2e4d2b940a0079794c5b17e8d1c1900f630d14cd
+ms.sourcegitcommit: 464cf677e3746eaba46836dedfb94572a75032f9
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461505"
+ms.lasthandoff: 03/21/2019
+ms.locfileid: "58330485"
 ---
-# <a name="troubleshoot-company-resource-access-problems-with-microsoft-intune"></a>Solucionar problemas de acceso a los recursos de la empresa con Microsoft Intune
+# <a name="common-error-codes-and-descriptions-in-microsoft-intune"></a>Códigos de error comunes y las descripciones en Microsoft Intune
 
-Use los códigos de error y de estado de este tema para que le resulte más fácil solucionar problemas cuando una acción de Microsoft Intune devuelva un código de error.
+En este artículo se enumera los errores comunes, los códigos de estado, descripciones y posibles soluciones al tener acceso a recursos de la organización. Utilice esta información para ayudar a solucionar problemas de acceso cuando se usa Microsoft Intune.
 
-Si esta información no soluciona el problema, vea [How to get support for Microsoft Intune](get-support.md) (Cómo obtener soporte técnico para Microsoft Intune) para conocer otras formas de obtener ayuda.
+Si necesita admitir ayuda, consulte [obtener soporte técnico de Microsoft Intune](get-support.md).
 
 ## <a name="status-codes-for-mdm-managed-windows-devices"></a>Códigos de estado de dispositivos de Windows administrados mediante MDM
 
@@ -385,5 +385,6 @@ Si esta información no soluciona el problema, vea [How to get support for Micro
 |-2016345912|0x87D100C8|el comando SyncML se realizó correctamente.|
 |-2016346011|0x87D10065|el comando SyncML se está realizando, pero todavía no ha finalizado.|
 
-### <a name="next-steps"></a>Pasos siguientes
-Si esta información para solucionar problemas no le ha ayudado, póngase en contacto con el servicio de soporte técnico de Microsoft como se indica en [How to get support for Microsoft Intune](get-support.md) (Cómo obtener soporte técnico de Microsoft Intune).
+## <a name="next-steps"></a>Pasos siguientes
+
+Póngase en contacto con Microsoft Support para [obtener soporte técnico de Microsoft Intune](get-support.md).
