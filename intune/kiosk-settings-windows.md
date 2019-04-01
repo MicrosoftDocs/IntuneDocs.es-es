@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/13/2019
+ms.date: 03/11/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78b47decc297c58feadb7cd507a3ff09070d46d4
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 55a0cb45cd3e3a8e367b0bff7bd8e856b02af953
+ms.sourcegitcommit: aab39bf86707ccaef45fd6527fff4f1c89336710
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565747"
+ms.lasthandoff: 03/25/2019
+ms.locfileid: "58429698"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>Configuración de dispositivos con Windows 10 y versiones posteriores para ejecutarse como una pantalla completa en Intune
 
@@ -176,6 +176,7 @@ Las aplicaciones en este modo están disponibles en el menú Inicio. Estas aplic
 
       Haga clic en **Aceptar** para guardar los cambios.
 
+    - **Ejecución automática de**: opcional. Elija una aplicación para inicio automático cuando el usuario inicia sesión. Solo una única aplicación puede ser AutoLaunched.
     - **Tamaño de icono**: requerido. Elija un tamaño de icono de la aplicación pequeño, mediano, ancho o grande.
 
   > [!TIP]
@@ -184,6 +185,8 @@ Las aplicaciones en este modo están disponibles en el menú Inicio. Estas aplic
 - **Usar diseño de inicio alternativo**: elija **Sí** para especificar un archivo XML que describa el modo en que las aplicaciones aparecen en el menú Inicio, incluido el orden de las aplicaciones. Use esta opción si necesita personalizar más el menú Inicio. [Personalizar y exportar el diseño de la pantalla Inicio](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout) proporciona algunas instrucciones y XML de ejemplo.
 
 - **Barra de tareas de Windows**: elija **Mostrar** u **Ocultar** la barra de tareas. De forma predeterminada, la barra de tareas no aparece. Se muestran iconos, por ejemplo, el icono de Wi-Fi, pero los usuarios finales no pueden cambiar la configuración.
+
+- **Permitir el acceso a la carpeta descargas**: elija **Sí** para permitir que los usuarios accedan a la carpeta descargas en el Explorador de Windows. De forma predeterminada, el acceso a la carpeta de descargas está deshabilitado. Esta característica se usa normalmente para los usuarios finales para tener acceso a elementos descargados desde un explorador.
 
 Haga clic en **Aceptar** para guardar los cambios.
 
