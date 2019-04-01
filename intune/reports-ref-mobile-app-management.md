@@ -6,10 +6,11 @@ keywords: Almacenamiento de datos de Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/20/2018
-ms.topic: conceptual
+ms.date: 03/05/2019
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 084F11AD-F7BA-45A4-8424-45E6E4564930
 ms.reviewer: aanavath
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a21194b218cc7df230bf1ef1969b8d4483940d75
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 7ea3e2c87055e4f111c8f12c47c468dff2c4e587
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238768"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565696"
 ---
 # <a name="reference-for-mobile-app-management-mam-entities"></a>Referencia de entidades de administración de aplicaciones móviles (MAM)
 
@@ -83,12 +84,12 @@ La entidad **MamCheckin** representa los datos recopilados cuando una instancia 
 | Propiedad | Descripción | Ejemplo |
 |---------|------------|--------|
 | DateKey |Clave de fecha en la que se ha anotado en el almacenamiento de datos el registro de la aplicación MAM. | 20160703 |
-| ApplicationInstanceKey |Clave de la instancia de la aplicación asociada a este registro de la aplicación MAM. |2/5/1900 12:00:00 AM |
-| UserKey |Clave del usuario asociado a este registro de la aplicación MAM. |12/1/1900 12:00:00 AM |
-| ApplicationKey |Clave de la aplicación MAM que ha registrado. |10/1/1900 12:00:00 AM |
-| DeviceHealthKey |Clave de DeviceHealth asociada a este registro de la aplicación MAM. |2/1/1900 12:00:00 AM |
-| PlatformKey |Representa la plataforma del dispositivo asociado a este registro de la aplicación MAM. |1/1/1900 12:00:00 AM |
-| EffectiveAppliedPolicyKey |Representa la directiva aplicada efectiva que está asociada a la aplicación MAM registrada. Una directiva aplicada efectiva es el resultado de la combinación de todas las directivas pertinentes para una aplicación y un usuario determinados. |2/5/1900 12:00:00 AM |
+| ApplicationInstanceKey |Clave de la instancia de la aplicación asociada a este registro de la aplicación MAM. | 123 |
+| UserKey |Clave del usuario asociado a este registro de la aplicación MAM. | 4323 |
+| ApplicationKey |Clave de la aplicación MAM que ha registrado. |234 |
+| DeviceHealthKey |Clave de DeviceHealth asociada a este registro de la aplicación MAM. | 321 |
+| PlatformKey |Representa la plataforma del dispositivo asociado a este registro de la aplicación MAM. |123 |
+| EffectiveAppliedPolicyKey |Representa la directiva aplicada efectiva que está asociada a la aplicación MAM registrada. Una directiva aplicada efectiva es el resultado de la combinación de todas las directivas pertinentes para una aplicación y un usuario determinados. | 322 |
 | LastCheckInDate |Fecha y hora en que se ha registrado por última vez esta aplicación MAM. El valor puede ser NULL. |23/11/2016 12:00:00 AM |
 
 ## <a name="mamdevicehealth"></a>MamDeviceHealth
@@ -97,8 +98,8 @@ La entidad **MamDeviceHealth** representa los dispositivos que tienen implementa
 
 | Propiedad | Descripción | Ejemplo |
 |---------|------------|--------|
-| DeviceHealthKey |Identificador único del dispositivo y su mantenimiento asociado en el almacenamiento de datos. Clave suplente. |1/1/1900 12:00:00 AM |
-| DeviceHealth |Identificador único del dispositivo y su mantenimiento asociado. Es parecido a DeviceHealthKey, pero el identificador es una clave natural. |1/1/1900 12:00:00 AM |
+| DeviceHealthKey |Identificador único del dispositivo y su mantenimiento asociado en el almacenamiento de datos. Clave suplente. |123 |
+| DeviceHealth |Identificador único del dispositivo y su mantenimiento asociado. Es parecido a DeviceHealthKey, pero el identificador es una clave natural. |b66bc706-ffff-7777-0340-032819502773 |
 | DeviceHealthName |Representa el estado del dispositivo. <br>No disponible: no hay información sobre este dispositivo. <br>Correcto: el dispositivo no está liberado. <br>Incorrecto: el dispositivo está liberado. |No disponible Correcto Incorrecto |
 | RowLastModifiedDateTimeUtc |Fecha y hora en formato UTC en que se ha modificado por última vez el estado del dispositivo MAM específico en el almacenamiento de datos. |23/11/2016 12:00:00 AM |
 

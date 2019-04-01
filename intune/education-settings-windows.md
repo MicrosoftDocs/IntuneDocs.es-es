@@ -6,9 +6,10 @@ author: lenewsad
 ms.author: lanewsad
 manager: dougeby
 ms.date: 01/22/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 6f4de4bd-3dde-4a8d-8e22-46c5d06c3eea
 ms.reviewer: heenamac
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 32c15037bad21ca90f81ed239ac24a9bac8d7499
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 206bc3276f3c175fe61852f235c722b835ad60b4
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57228330"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57564863"
 ---
 # <a name="configure-the-take-a-test-app-on-windows-10-devices-using-intune"></a>Configuración de la aplicación Hacer un examen en dispositivos Windows 10 con Microsoft Intune
 
@@ -37,18 +38,18 @@ Estos valores se agregan a un perfil de configuración de dispositivo y luego se
 
 ## <a name="take-a-test-settings"></a>Configuración de Hacer un examen
 
-- **Tipo de cuenta**: elija cómo los usuarios inician sesión en el examen. Las opciones son:
+- **Tipo de cuenta**: elija cómo los usuarios inician sesión en la prueba. Las opciones son:
   - Cuenta de Azure AD
   - Cuenta de dominio
   - Cuenta local
-- **Nombre de usuario de la cuenta**: especifique el nombre del usuario de la cuenta que utiliza con Hacer un examen. Puede especificar cuentas en el siguiente formato:
+- **Nombre de usuario de la cuenta**: escriba el nombre del usuario de la cuenta que se usa con la aplicación Take a Test. Puede especificar cuentas en el siguiente formato:
   - `user@contoso.com`
   - `domain\username`
   - `user@contoso.com`
   - `computerName\username`
-- **Dirección URL de evaluación**: especifique la dirección URL del examen que desea que los usuarios realicen. Para más información sobre cómo obtener la dirección URL, vea la [documentación de Hacer un examen](https://docs.microsoft.com/education/windows/take-tests-in-windows-10).
-- **Supervisión de pantalla**: elija **Permitir** para supervisar la actividad de la pantalla mientras los usuarios realizan una prueba. **No configurada** impide la supervisión de la pantalla durante el examen.
-- **Sugerencia de texto**: elija **Permitir** para que los que hacen el examen puedan ver sugerencias de texto. **No configurada** bloquea las sugerencias de texto mientras los usuarios realizan un examen.
+- **Dirección URL de evaluación**: escriba la dirección URL de la prueba que quiere que realicen los usuarios. Para más información sobre cómo obtener la dirección URL, vea la [documentación de Hacer un examen](https://docs.microsoft.com/education/windows/take-tests-in-windows-10).
+- **Supervisión de pantalla**: seleccione **Permitir** para supervisar la actividad de la pantalla mientras los usuarios realizan una prueba. **No configurada** impide la supervisión de la pantalla durante el examen.
+- **Sugerencia de texto**: elija **Permitir** para que los usuarios que realizan la prueba puedan ver sugerencias de texto. **No configurada** bloquea las sugerencias de texto mientras los usuarios realizan un examen.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

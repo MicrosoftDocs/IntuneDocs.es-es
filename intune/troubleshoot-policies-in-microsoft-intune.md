@@ -6,9 +6,10 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/29/2019
-ms.topic: conceptual
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 99fb6db6-21c5-46cd-980d-50f063ab8ab8
 ROBOTS: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 90c92eb7ea08fbe89464911c9f1eb5c6aea452db
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: 6d1f790aeedff1e13ecc220ed7a6d8f311e12585
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237510"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57460519"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>Solución de problemas de directivas y perfiles en Intune
 
@@ -55,19 +56,19 @@ En este artículo se enumeran algunas técnicas de solución de problemas comune
 
       - Las directivas de protección de aplicaciones (administración de aplicaciones móviles) no requieren que los dispositivos se inscriban. Para más información, vea [Creación y asignación de directivas de protección de aplicaciones](app-protection-policies.md).
 
-    - **Tipo de combinación de Azure AD**: se debe establecer en **Área de trabajo** o **AzureAD**.
+    - **El tipo de combinación de Azure AD**: debe establecerse en **Workplace** o **AzureAD**.
  
       - Si el valor de esta columna es **No registrado**, es posible que haya un problema con la inscripción. Normalmente, anular la inscripción y volver a inscribir el dispositivo resuelve este estado.
 
-    - **Conforme con Intune**: el valor debe ser **Sí**. Si se muestra **No**, es posible que haya un problema con las directivas de cumplimiento, o bien que el dispositivo no se conecte al servicio de Intune. Por ejemplo, es posible que el dispositivo esté apagado o que no tenga una conexión de red. Finalmente, el dispositivo pasa a ser no compatible, posiblemente después de 30 días.
+    - **Compatibles con Intune**: debe ser **Sí**. Si se muestra **No**, es posible que haya un problema con las directivas de cumplimiento, o bien que el dispositivo no se conecte al servicio de Intune. Por ejemplo, es posible que el dispositivo esté apagado o que no tenga una conexión de red. Finalmente, el dispositivo pasa a ser no compatible, posiblemente después de 30 días.
 
       Para más información, vea [Introducción a las directivas de cumplimiento de dispositivos](device-compliance-get-started.md).
 
-    - **Conforme con Azure AD**: el valor debe ser **Sí**. Si se muestra **No**, es posible que haya un problema con las directivas de cumplimiento, o bien que el dispositivo no se conecte al servicio de Intune. Por ejemplo, es posible que el dispositivo esté apagado o que no tenga una conexión de red. Finalmente, el dispositivo pasa a ser no compatible, posiblemente después de 30 días.
+    - **Conforme con Azure AD**: debe ser **Sí**. Si se muestra **No**, es posible que haya un problema con las directivas de cumplimiento, o bien que el dispositivo no se conecte al servicio de Intune. Por ejemplo, es posible que el dispositivo esté apagado o que no tenga una conexión de red. Finalmente, el dispositivo pasa a ser no compatible, posiblemente después de 30 días.
 
       Para más información, vea [Introducción a las directivas de cumplimiento de dispositivos](device-compliance-get-started.md).
 
-    - **Última conexión**: debe ser una fecha y hora recientes. De forma predeterminada, los servicios de Intune se conectan cada 8 horas.
+    - **Última**: debe ser una fecha y hora recientes. De forma predeterminada, los servicios de Intune se conectan cada 8 horas.
 
       - Si el valor de **Última conexión** es superior a 24 horas, es posible que haya un problema con el dispositivo. Un dispositivo que no se puede conectar no puede recibir las directivas de Intune.
 
@@ -88,7 +89,7 @@ En este artículo se enumeran algunas técnicas de solución de problemas comune
 
       - **No aplicable**: esta directiva no se admite en esta plataforma. Por ejemplo, las directivas de iOS no funcionan en Android. Las directivas de Samsung KNOX no funcionan en dispositivos Windows.
       - **Conflicto**: hay una configuración existente en el dispositivo que Intune no puede invalidar. O bien, ha implementado dos directivas con la misma configuración mediante valores diferentes.
-      - **Pendiente**: el dispositivo no se ha conectado a Intune para obtener la directiva. O bien, el dispositivo ha recibido la directiva, pero no ha informado del estado a Intune.
+      - **Pendiente**: el dispositivo no se ha registrado con Intune para recibir la directiva. O bien, el dispositivo ha recibido la directiva, pero no ha informado del estado a Intune.
       - **Errores**: busque los errores y las posibles resoluciones en [Solucionar problemas de acceso a los recursos de la empresa](troubleshoot-company-resource-access-problems.md).
 
       **Vínculos de ayuda**: 
@@ -109,14 +110,14 @@ En este artículo se enumeran algunas técnicas de solución de problemas comune
 
     - **Pendiente**: el perfil ha enviado al dispositivo, pero no ha informado del estado a Intune. Por ejemplo, el cifrado en Android requiere que el usuario final lo habilite y, por tanto, la directiva podría mostrarse como pendiente.
 
-**Vínculo de ayuda**: [Supervisar perfiles de dispositivo](device-profile-monitor.md)
+**Vínculos útiles**: [supervisar perfiles de configuración de dispositivo](device-profile-monitor.md)
 
 > [!NOTE]
 > Cuando dos directivas con distintos niveles de restricción se aplican al mismo dispositivo o usuario, la directiva más restrictiva es la que se aplica.
 
-## <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Alerta: Error al guardar las reglas de acceso en Exchange
+## <a name="alert-saving-of-access-rules-to-exchange-has-failed"></a>Alerta: error al guardar las reglas de acceso en Exchange
 
-**Problema**: recibe la alerta **Error al guardar las reglas de acceso en Exchange** en la consola de administración.
+**Problema**: recibe la alerta **Error al guardar las reglas de acceso en Exchange**  en la consola de administración.
 
 Si crea directivas en el área de trabajo Directiva de Exchange local (consola de administración) pero usa Office 365, Intune no aplica las opciones configuradas de la directiva. En la alerta, tenga en cuenta el origen de la directiva. En el área de trabajo Directiva de Exchange local, elimine las reglas heredadas. Las reglas heredadas son reglas de Exchange globales en Intune para Exchange local y no son pertinentes para Office 365. Después, cree una directiva para Office 365.
 

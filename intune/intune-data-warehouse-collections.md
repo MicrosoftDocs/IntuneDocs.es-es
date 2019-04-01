@@ -10,18 +10,20 @@ ms.date: 01/11/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 29f09230-dc56-43db-b599-d961967bda49
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
-ms.openlocfilehash: 2eae4ea2bfabe1b41af88ae34b81fbf12ef5f9d9
-ms.sourcegitcommit: e9ba1280b95565a5c5674b825881655d0303e688
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 2cdf7ea715a13809c860e77412914e3fd2b45a28
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/15/2019
-ms.locfileid: "54297509"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57400490"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Colecciones de almacenamiento de datos de Intune
 
@@ -359,30 +361,30 @@ La entidad **EnrollmentFailureCategory** indica el motivo del error de una inscr
 | Unknown                         | Error desconocido.                                                                                                |
 | Autenticación                  | Error de autenticación.                                                                                        |
 | Autorización                   | La llamada se ha autenticado, pero no tiene autorización para inscribirse.                                                         |
-| AccountValidation               | Error al validar la cuenta para la inscripción. (Cuenta bloqueada, inscripción no habilitada)                      |
-| UserValidation                  | No se ha podido validar al usuario. (El usuario no existe, falta la licencia)                                           |
+| AccountValidation               | Error al validar la cuenta para la inscripción. (Cuenta bloqueada, inscripción no habilitada).                      |
+| UserValidation                  | No se ha podido validar al usuario. (El usuario no existe, falta la licencia).                                           |
 | DeviceNotSupported              | El dispositivo no es compatible con la administración de dispositivos móviles.                                                         |
 | InMaintenance                   | La cuenta está en mantenimiento.                                                                                    |
 | BadRequest                      | El cliente ha enviado una solicitud que el servicio no entiende o no admite.                                        |
 | FeatureNotSupported             | Las características que usa esta inscripción no se admiten en esta cuenta.                                        |
-| EnrollmentRestrictionsEnforced  | Las restricciones de inscripción configuradas por el administrador han bloqueado esta inscripción.                                          |
+| EnrollmentRestrictionsEnforced  | Las restricciones de inscripción que ha configurado el administrador han bloqueado esta inscripción.                                          |
 | ClientDisconnected              | El cliente ha agotado el tiempo de espera o el usuario final ha anulado la inscripción.                                                        |
-| UserAbandonment                 | El usuario final ha anulado la inscripción. (El usuario final ha iniciado la inscripción, pero no se ha completado de manera oportuna)  |
+| UserAbandonment                 | El usuario final ha anulado la inscripción. (El usuario final ha iniciado la inscripción, pero no se ha completado de manera oportuna).  |
 
 ## <a name="enrollmentfailurereasons"></a>enrollmentFailureReasons  
-La entidad **EnrollmentFailureReason** indica una razón más detallada para el error de inscripción de un dispositivo dentro de una categoría de error determinada.  
+La entidad **EnrollmentFailureReason** indica un motivo más detallado para el error de inscripción de un dispositivo dentro de una categoría de error determinada.  
 
 | Propiedad                     | Descripción                                                                               |
 |------------------------------|-------------------------------------------------------------------------------------------|
-| enrollmentFailureReasonKey   | Identificador único de la razón del error de la inscripción en el almacenamiento de datos (clave suplente).  |
-| enrollmentFailureReasonName  | Nombre de la razón del error de la inscripción. Vea los ejemplos siguientes.                            |
+| enrollmentFailureReasonKey   | Identificador único del motivo del error de la inscripción en el almacenamiento de datos (clave suplente).  |
+| enrollmentFailureReasonName  | Nombre del motivo del error de la inscripción. Vea los ejemplos siguientes.                            |
 
 ### <a name="example"></a>Ejemplo
 
 | enrollmentFailureReasonName      | Descripción                                                                                                                                                                                            |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| No aplicable                   | La razón del error de la inscripción no es aplicable.                                                                                                                                                       |
-| No disponible                    | La razón del error de la inscripción no está disponible.                                                                                                                                                        |
+| No aplicable                   | El motivo del error de la inscripción no es aplicable.                                                                                                                                                       |
+| No disponible                    | El motivo del error de la inscripción no está disponible.                                                                                                                                                        |
 | Unknown                          | Error desconocido.                                                                                                                                                                                         |
 | UserNotLicensed                  | No se ha encontrado al usuario en Intune o no tiene una licencia válida.                                                                                                                                     |
 | UserUnknown                      | No se conoce al usuario en Intune.                                                                                                                                                                           |
@@ -390,13 +392,13 @@ La entidad **EnrollmentFailureReason** indica una razón más detallada para el 
 | EnrollmentOnboardingIssue        | La entidad de administración de dispositivos móviles (MDM) de Intune aún no se ha configurado.                                                                                                                                 |
 | AppleChallengeIssue              | La instalación del perfil de administración de iOS se ha retrasado o se ha producido un error.                                                                                                                                         |
 | AppleOnboardingIssue             | Se necesita un certificado push MDM de Apple para inscribir en Intune.                                                                                                                                       |
-| DeviceCap                        | El usuario ha intentado inscribir más dispositivos del máximo permitido.                                                                                                                                        |
-| AuthenticationRequirementNotMet  | El servicio de inscripción de Intune no ha podido autorizar esta solicitud.                                                                                                                                            |
+| DeviceCap                        | El usuario ha intentado inscribir más dispositivos que el máximo permitido.                                                                                                                                        |
+| AuthenticationRequirementNotMet  | El servicio de inscripción de Intune no pudo autorizar esta solicitud.                                                                                                                                            |
 | UnsupportedDeviceType            | El dispositivo no cumple los requisitos mínimos para la inscripción en Intune.                                                                                                                                  |
-| EnrollmentCriteriaNotMet         | No se ha podido inscribir este dispositivo debido a una regla de restricción de inscripción configurada.                                                                                                                          |
-| BulkDeviceNotPreregistered       | No se ha encontrado el identificador de equipo móvil internacional (IMEI) o el número de serie del dispositivo.  Sin este identificador, los dispositivos se reconocen como dispositivos personales que están bloqueados.  |
+| EnrollmentCriteriaNotMet         | No se pudo inscribir este dispositivo debido a una regla de restricción de inscripción configurada.                                                                                                                          |
+| BulkDeviceNotPreregistered       | No se han encontrado el identificador de equipo móvil internacional (IMEI) o el número de serie del dispositivo.  Sin este identificador, los dispositivos se reconocen como dispositivos personales que están bloqueados.  |
 | FeatureNotSupported              | El usuario ha intentado acceder a una característica que todavía no está disponible para todos los clientes o no es compatible con la configuración de Intune.                                                            |
-| UserAbandonment                  | El usuario final ha anulado la inscripción. (El usuario final ha iniciado la inscripción, pero no se ha completado de manera oportuna)                                                                                           |
+| UserAbandonment                  | El usuario final ha anulado la inscripción. (El usuario final ha iniciado la inscripción, pero no se ha completado de manera oportuna).                                                                                           |
 | APNSCertificateExpired           | No se pueden administrar dispositivos de Apple con un certificado push MDM de Apple expirado.                                                                                                                            |
 
 ## <a name="intunemanagementextensions"></a>intuneManagementExtensions
@@ -505,7 +507,10 @@ La entidad **ownerType** indica si un dispositivo es corporativo, personal o des
 |:-------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------------:|
 | ownerTypeID   | Identificador único del tipo de propietario.                                                                                                                                               |                            |
 | ownerTypeKey  | Identificador único del tipo de propietario en el almacenamiento de datos. Clave suplente.                                                                                                       |                            |
-| ownerTypeName | Representa el tipo de propietario de los dispositivos:  Empresa: el dispositivo es propiedad de una empresa.  Personal: el dispositivo es de propiedad personal (BYOD).   Desconocido: no hay información sobre este dispositivo. | Empresa Personal Desconocido |
+| ownerTypeName | Representa el tipo de propietario de los dispositivos: Corporativo: el dispositivo es propiedad de la empresa.  Personal: el dispositivo es de propiedad personal (BYOD).   Desconocido: no hay información sobre este dispositivo. | Empresa Personal desconocido |
+
+> [!Note]  
+> Para el `ownerTypeName` filtro en Azure AD al crear grupos dinámicos para los dispositivos, deberá establecer el valor `deviceOwnership` como `Company`. Para obtener más información, consulte [reglas para dispositivos](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices). 
 
 ## <a name="policies"></a>directivas
 La entidad **Policy** muestra los perfiles de configuración de dispositivos, los perfiles de configuración de aplicaciones y las directivas de cumplimiento. Puede asignar las directivas con Administración de dispositivos móviles (MDM) a un grupo de la empresa.

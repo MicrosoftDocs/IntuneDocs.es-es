@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 03/16/2017
+ms.date: 02/19/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -14,26 +14,27 @@ ms.assetid: 84892bbc-f888-417b-bbeb-978cc7e10028
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: chrisbal
+ms.reviewer: scottduf
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34bad76c3b6ff00b42eac70bcd870ef4d59ab017
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: d258fcb7f338e4177c31a5c77b92b5941b7db212
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839982"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "56426933"
 ---
-# <a name="you-need-to-enable-code-integrity"></a>Necesita habilitar la integridad de código
+# <a name="enable-code-integrity"></a>Habilitación de la integridad de código
 
-El mantenimiento de la información de la organización requiere diferentes tipos de seguridad para evitar varios tipos de problemas. Una manera de mantener la seguridad es usar la integridad de código de Windows, que garantiza que los archivos de sistema y los programas de nivel profundo (controladores) no se han modificado.
+Su organización puede requerir su PC esté habilitado con una característica de protección contra amenazas denominada *integridad de código*. Integridad de código comprueba los controladores y los archivos del sistema en el dispositivo en busca de indicios de daños o software malintencionado. Para que la integridad de código para que funcione en su dispositivo, otra característica de seguridad llamado [ *arranque seguro* ](https://docs.microsoft.com/windows/security/information-protection/secure-the-windows-10-boot-process#secure-boot) también debe estar habilitada. 
 
-La integridad de código se activa automáticamente cuando el sistema usa de manera activa el arranque seguro.
+Si su PC no es compatible porque la integridad de código está deshabilitada, debe ponerse en contacto con su organización TI equipo de soporte técnico. Le ayudaremos a habilitar el arranque seguro, lo que desencadenará la integridad de código la próxima vez que se inicia el dispositivo. 
 
-> [!Tip]
-> Habilitar el arranque seguro es una tarea avanzada. Le recomendamos que se ponga en contacto con el equipo de soporte técnico de su empresa para obtener ayuda con esta tarea.
+Si identificarse como un usuario del dispositivo avanzado y desea probar los pasos por su cuenta, consulte [volver a habilitar el arranque seguro](https://docs.microsoft.com/windows-hardware/manufacture/desktop/disabling-secure-boot#re-enable-secure-boot).
 
-Si se siente cómodo realizando el procedimiento, consulte la sección "Para volver a habilitar el arranque seguro" de la página [Deshabilitar el arranque seguro](https://msdn.microsoft.com/library/windows/hardware/dn898540(v=vs.85).aspx) para tratar de habilitarlo usted mismo.
+## <a name="additional-resources-for-it-administrators"></a>Recursos adicionales para los administradores de TI  
+Si es un administrador de Intune y desea obtener más información sobre la configuración de cumplimiento de estado de dispositivo de Intune, consulte [agregar una directiva de cumplimiento para dispositivos Windows 10 en Intune](https://docs.microsoft.com/intune/compliance-policy-create-windows#windows-10-and-later-policy-settings). Para una visión detallada de las acciones de cumplimiento que puede realizar en Intune, consulte el [HealthAttestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#a-href-idtake-policy-actionastep-8-take-appropriate-policy-action-based-on-evaluation-results).  
 
+## <a name="next-steps"></a>Pasos siguientes  
 ¿Sigue necesitando ayuda? Póngase en contacto con el departamento de soporte técnico de la empresa. Para averiguar su información de contacto, vaya al [sitio web del portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980).

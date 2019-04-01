@@ -7,20 +7,22 @@ author: dougeby
 manager: dougeby
 ms.author: dougeby
 ms.date: 03/08/2018
-ms.topic: article
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 79A67342-C06D-4D20-A447-678A6CB8D70A
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5129484a3cfea873be4009849b5989f9c2acd888
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
-ms.translationtype: HT
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 8625eddaa3c6223767c7c93022275b028b4a145b
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52187458"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57566563"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>Cómo usar Azure AD para acceder a las API de Intune en Microsoft Graph
 
@@ -146,13 +148,13 @@ __Realizar acciones remotas que influyen en el usuario en dispositivos de Micros
 __Leer y escribir en dispositivos de Microsoft Intune__ | [DeviceManagementManagedDevices.ReadWrite.All](#mgd-rw)
 __Leer en dispositivos de Microsoft Intune__ | [DeviceManagementManagedDevices.Read.All](#mgd-ro)
 __Leer y escribir en la configuración RBAC de Microsoft Intune__ | [DeviceManagementRBAC.ReadWrite.All](#rac-rw)
-__Leer en la configuración RBAC de Microsoft Intune__ | [DeviceManagementRBAC.Read.All](#rac=ro)
+__Leer en la configuración RBAC de Microsoft Intune__ | DeviceManagementRBAC.Read.All
 __Leer y escribir en aplicaciones de Microsoft Intune__ | [DeviceManagementApps.ReadWrite.All](#app-rw)
 __Leer en aplicaciones de Microsoft Intune__ | [DeviceManagementApps.Read.All](#app-ro)
-__Leer y escribir en la configuración de dispositivos y directivas de Microsoft Intune__ | [DeviceManagementConfiguration.ReadWrite.All](#cfg-rw)
+__Leer y escribir en la configuración de dispositivos y directivas de Microsoft Intune__ | DeviceManagementConfiguration.ReadWrite.All
 __Leer en la configuración de dispositivos y directivas de Microsoft Intune__ | [DeviceManagementConfiguration.Read.All](#cfg-ro)
 __Leer y escribir en la configuración de Microsoft Intune__ | [DeviceManagementServiceConfig.ReadWrite.All](#svc-rw)
-__Leer en la configuración de Microsoft Intune__ | [DeviceManagementServiceConfig.Read.All](#svc-ra)
+__Leer en la configuración de Microsoft Intune__ | DeviceManagementServiceConfig.Read.All
 
 En la tabla se muestra la configuración según aparece en Azure Portal. En las siguientes secciones se describen los ámbitos en orden alfabético.
 
@@ -588,7 +590,7 @@ No se olvide agregar el usuario a otros roles según sea necesario. Por ejemplo,
 
 Además:
 
-- Use https://portal.office.com para asignar una licencia de Intune a su cuenta de usuario.
+- Use https://admin.microsoft.com para asignar una licencia de Intune a su cuenta de usuario.
 
 - Actualice el código de aplicación para autenticarse en el dominio de inquilino de Azure AD del cliente, en lugar de al suyo propio.
 

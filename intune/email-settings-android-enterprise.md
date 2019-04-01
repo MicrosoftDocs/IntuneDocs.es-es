@@ -6,20 +6,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 01/10/2019
-ms.topic: conceptual
+ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6939ee44261215cf00805c975889d7d56c4e443
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
-ms.translationtype: HT
+ms.openlocfilehash: b6c6c6e3e999e44ad6a07b4d8bdc1ddf9c400cf7
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236490"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57565458"
 ---
 # <a name="android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>Configuración del dispositivo Android Enterprise para definir el correo electrónico, la autenticación y la sincronización en Intune
 
@@ -39,16 +40,16 @@ Para más información sobre los perfiles de correo electrónico en Intune, cons
 - **Servidor de correo electrónico**: el nombre de host del servidor de Exchange. Por ejemplo, escriba `outlook.office365.com`.
 - **Atributo de nombre de usuario de AAD**: este nombre es el atributo que Intune obtiene de Azure Active Directory (Azure AD). Intune genera dinámicamente el nombre de usuario que usa este perfil. Las opciones son:
 
-  - **Nombre principal de usuario**: obtiene el nombre, como `user1` o `user1@contoso.com`
+  - **Nombre principal de usuario**: obtiene el nombre, como `user1` o `user1@contoso.com`.
   - **Nombre de usuario**: obtiene solo el nombre, como `user1`.
 
-- **Atributo de dirección de correo electrónico de AAD**: este nombre es el atributo de correo electrónico que Intune obtiene de Azure AD. Intune genera dinámicamente la dirección de correo electrónico que este perfil usa. Las opciones son:
-  - **Nombre principal de usuario**:  usa el nombre principal completo, como `user1@contoso.com` o `user1`, como dirección de correo electrónico.
-  - **Dirección SMTP principal**: use la dirección SMTP principal, como `user1@contoso.com`, para iniciar sesión en Exchange.
+- **Atributo de dirección de correo electrónico de AAD**: este nombre es el atributo de correo electrónico que Intune toma de Azure AD. Intune genera dinámicamente la dirección de correo electrónico que este perfil usa. Las opciones son:
+  - **Nombre principal de usuario**: usa el nombre principal completo, como `user1@contoso.com` o `user1`, como dirección de correo electrónico.
+  - **Dirección SMTP principal**: usa la dirección SMTP principal, como `user1@contoso.com`, para iniciar sesión en Exchange.
 
-- **Método de autenticación**: Seleccione **Nombre de usuario y contraseña** o **Certificados** como método de autenticación que el perfil de correo electrónico usa.
+- **Método de autenticación**: seleccione **Nombre de usuario y contraseña** o **Certificados** como método de autenticación que usa el perfil de correo electrónico.
   - Si seleccionó **Certificado**, seleccione un SCEP cliente o un perfil de certificado PKCS que haya creado anteriormente para autenticar la conexión de Exchange.
-- **SSL**: elija **Habilitar** para usar la comunicación de Capa de sockets seguros (SSL) al enviar y recibir correos electrónicos y comunicarse con el servidor Exchange.
+- **SSL**: elija **Habilitar** para usar la comunicación de Capa de sockets seguros (SSL) al enviar y recibir correos electrónicos, y comunicarse con el servidor Exchange.
 - **Cantidad de correo electrónico para sincronizar**: elija la cantidad de tiempo de correo electrónico que desea sincronizar. También puede seleccionar **Ilimitado** para sincronizar todo el correo electrónico disponible.
 - **Tipo de contenido para sincronizar** (solo Nine Work): elija qué datos desea sincronizar en los dispositivos. Las opciones son:
   - **Contactos**: elija **Habilitar** para permitir que los usuarios finales sincronicen contactos con sus dispositivos.

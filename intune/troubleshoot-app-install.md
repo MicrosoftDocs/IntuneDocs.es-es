@@ -6,28 +6,29 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
-ms.topic: article
+ms.date: 02/19/2019
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: b613f364-0150-401f-b9b8-2b09470b34f4
 ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 65391ca620892dcd3b95719454dabc30eb35cb6f
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
-ms.translationtype: HT
+ms.openlocfilehash: 5a5e000a973932db0bbaa215ea94976219ff905c
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55839387"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57577853"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>Solucionar problemas de instalación de aplicaciones
 
 En algunas ocasiones, las instalaciones de aplicaciones en los dispositivos administrados por MDM de Microsoft Intune pueden presentar errores. Cuando esto ocurre, puede ser complicado entender el motivo del error o cómo solucionarlo. Microsoft Intune proporciona detalles del error de instalación de aplicaciones que permiten a los operadores del departamento de soporte técnico y a los administradores de Intune ver información de la aplicación para atender las solicitudes de ayuda al usuario. En el panel de solución de problemas de Intune se proporcionan detalles del error, incluidos aquellos sobre las aplicaciones administradas en el dispositivo de un usuario. Se proporcionan detalles sobre el ciclo de vida de un extremo a otro en cada dispositivo individual del panel **Aplicaciones administradas**. Puede ver problemas de instalación, por ejemplo, al crearse, modificarse, dirigirse y entregarse la aplicación a un dispositivo. 
 
-## <a name="to-review-app-troubleshooting-details"></a>Para ver los detalles de solución de problemas de la aplicación, siga estos pasos:
+## <a name="app-troubleshooting-details"></a>Información para solucionar errores de aplicación
 
 Intune proporciona los detalles de solución de problemas de la aplicación en función de las aplicaciones instaladas en el dispositivo de un usuario específico.
 
@@ -52,6 +53,47 @@ Los detalles del error de instalación de la aplicación indicarán el problema.
 > [!Note]  
 > También puede acceder al panel de **solución de problemas** visitando la página [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting) desde el explorador.
 
+## <a name="win32-app-installation-troubleshooting"></a>Solución de problemas de instalación aplicación Win32
+
+Seleccione la aplicación de Win32 que se implementó mediante la extensión de administración de Intune. Puede seleccionar la **recopilar registros** cuando se produce un error en la instalación de la aplicación de Win32. 
+
+> [!IMPORTANT]
+> El **recopilar registros** opción no se habilitará cuando se ha instalado correctamente la aplicación de Win32 en el dispositivo.<p>Para poder recopilar información de registro de aplicación de Win32, debe instalarse la extensión de administración de Intune en el cliente de Windows. La extensión de administración de Intune se instala cuando se implementa un script de PowerShell o una aplicación Win32 en un grupo de seguridad de dispositivos o usuarios. Para obtener más información, consulte [extensión Administración de Intune: requisitos previos](intune-management-extension.md#prerequisites).
+
+### <a name="collect-log-file"></a>Recopilar archivos de registro
+
+Para recopilar los registros de instalación de la aplicación de Win32, primero siga los pasos indicados en la sección [detalles de la solución de problemas de aplicación](troubleshoot-app-install.md#app-troubleshooting-details). A continuación, continúe con los pasos siguientes:
+
+1. Haga clic en el **recopilar registros** opción el **detalles de la instalación** hoja.
+
+    <image alt="Win32 app installation details - Collect log option" src="media/troubleshoot-app-install-04.png" width="500" />
+
+2. Proporcionar las rutas de acceso de archivo con el registro de nombres de archivo para iniciar el proceso de recopilación de archivos de registro y haga clic en **Aceptar**.
+    
+    > [!NOTE]
+    > Recopilación de registros tardará menos de dos horas. Tipos de archivo admitidos: *. log, .txt, .dmp, .cab, .zip, .xml, .evtx y .evtl*. Se permite un máximo de 25 rutas de acceso de archivo.
+
+3. Una vez que se han recopilado los archivos de registro, puede seleccionar la **registros** vínculo para descargar los archivos de registro.
+
+    <image alt="Win32 app log details - Download logs" src="media/troubleshoot-app-install-05.png" width="500" />
+
+    > [!NOTE]
+    > Se mostrará una notificación que indica el éxito de la recopilación de registros de aplicación.
+
+#### <a name="win32-log-collection-requirements"></a>Requisitos de recopilación del registro de Win32
+
+Hay requisitos específicos que se deben seguir para recopilar archivos de registro:
+
+- Debe especificar la ruta de acceso del archivo de registro completo. 
+- Puede especificar variables de entorno para la recopilación de registros, como las siguientes:<br>
+  *% PROGRAMFILES %, % PROGRAMDATA % PÚBLICA %, % WINDIR %, % TEMP %, % TMP %*
+- Extensiones de archivo exacto sólo se permiten, como:<br>
+  *.log, .txt, .dmp, .cab, .zip, .xml*
+- El archivo de registro máximo para cargar es 60 MB o 25 archivos, lo que ocurra primero. 
+- Recopilación de registros de instalación de aplicación Win32 está habilitada para las aplicaciones que cumplen el necesarios disponibles y desinstalar la intención de asignación de aplicación.
+- Los registros almacenados se cifran para proteger cualquier información PII contenido en los registros.
+- Mientras los vales de soporte técnico de apertura para errores de aplicaciones de Win32, adjunte los registros de error relacionados con los pasos indicados anteriormente.
+
 ## <a name="app-installation-errors"></a>Errores de instalación de la aplicación
 
 Los siguientes mensajes de error y descripciones proporcionan detalles sobre errores de instalación de iOS y Android. 
@@ -61,29 +103,39 @@ Los siguientes mensajes de error y descripciones proporcionan detalles sobre err
 |    Mensaje o código de error    |    Descripción    |
 |----------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    No se pudo instalar la aplicación. (0xC7D14FB5)    |    Este mensaje de error se muestra cuando Intune no puede determinar la causa del error de instalación de la aplicación de Android. Durante el error Android no proporciona ninguna información.       Este error se devuelve cuando la descarga de APK se realizó correctamente, pero no se pudo instalar la aplicación. Este error se puede producir con más frecuencia debido a un archivo APK incorrecto que no se puede instalar en el dispositivo. Una posible causa puede ser cuando Google Play Protect bloquea la instalación de la aplicación por motivos de seguridad. Otra causa posible de este error es cuando un dispositivo no es compatible con la aplicación. Por ejemplo, si la aplicación requiere la versión 21+ de la API y el dispositivo actualmente tiene la versión 19.         Intune devuelve este error para los dispositivos DA y KNOX, y aunque puede haber una notificación de que los usuarios pueden hacer clic para volverlo a intentar, si hay un problema con el APK, nunca seguirá generando un error. Si la aplicación es una aplicación disponible, la notificación se puede descartar. Pero si la aplicación es requerida, no se podrá descartar.        |
-|    La instalación de la aplicación se canceló porque el archivo de instalación (APK) se eliminó después de la descarga, pero antes de la instalación. (0xC7D14FBA)    |    La descarga del archivo APK se realizó correctamente pero, antes de que el usuario instalara la aplicación, el archivo se quitó del dispositivo. Esto podría ocurrir si se ha producido una diferencia de tiempo considerable entre la descarga y la instalación. Por ejemplo, el usuario canceló la instalación original, esperó y, después, hizo clic en la notificación para intentarlo de nuevo.         Este mensaje de error solo se devuelve para escenarios de DA. Los escenarios de KNOX se pueden realizar en modo silencioso. Se presenta una notificación de reintento para que el usuario pueda aceptar en lugar de cancelar. Si la aplicación es una aplicación disponible, la notificación se puede descartar. Pero si la aplicación es requerida, no se podrá descartar.    |
-|    La instalación de la aplicación se canceló porque el proceso se reinició durante la instalación. (0xC7D14FBB)    |    El dispositivo se reinició durante el proceso de instalación de APK, lo que resultó en una instalación cancelada.        Este mensaje de error se devuelve para los dispositivos DA y KNOX. Intune presenta una notificación en la que los usuarios pueden hacer clic para volver a intentarlo. Si la aplicación es una aplicación disponible, la notificación se puede descartar. Pero si la aplicación es requerida, no se podrá descartar.    |
+|    La instalación de la aplicación se ha cancelado porque el archivo de instalación (APK) se ha eliminado después de la descarga, pero antes de la instalación. (0xC7D14FBA)    |    La descarga del archivo APK se realizó correctamente pero, antes de que el usuario instalara la aplicación, el archivo se quitó del dispositivo. Esto podría ocurrir si se ha producido una diferencia de tiempo considerable entre la descarga y la instalación. Por ejemplo, el usuario canceló la instalación original, esperó y, después, hizo clic en la notificación para intentarlo de nuevo.         Este mensaje de error solo se devuelve para escenarios de DA. Los escenarios de KNOX se pueden realizar en modo silencioso. Se presenta una notificación de reintento para que el usuario pueda aceptar en lugar de cancelar. Si la aplicación es una aplicación disponible, la notificación se puede descartar. Pero si la aplicación es requerida, no se podrá descartar.    |
+|    La instalación de la aplicación se ha cancelado porque el proceso se ha reiniciado durante la instalación. (0xC7D14FBB)    |    El dispositivo se ha reiniciado durante el proceso de instalación de APK, lo que resultó en una instalación cancelada.        Este mensaje de error se devuelve para los dispositivos DA y KNOX. Intune presenta una notificación en la que los usuarios pueden hacer clic para volver a intentarlo. Si la aplicación es una aplicación disponible, la notificación se puede descartar. Pero si la aplicación es requerida, no se podrá descartar.    |
 |    La aplicación no se encontró después de que la instalación se completara correctamente. (0x87D1041C)    |    El usuario desinstaló la aplicación de forma explícita. Este error no se devuelve desde el cliente. Es un error que se produce cuando la aplicación estaba instalada en algún momento pero que después el usuario desinstaló. Este error solo debería producirse para las aplicaciones necesarias. Los usuarios pueden desinstalar las aplicaciones que no son requeridas. Este error solo puede ocurrir en DA. KNOX bloquea la desinstalación de las aplicaciones administradas.       En la sincronización siguiente se volverá a publicar la notificación en el dispositivo para que el usuario lo instale.   El usuario puede ignorar la notificación. Este error se seguirá notificando hasta que el usuario instale la aplicación.    |
 |    Error desconocido en la descarga. (0xC7D14FB2)    |    Este error aparece cuando se produce un error en la descarga. Normalmente, este error puede producirse debido a problemas de Wi-Fi o conexiones lentas.       Este error solo se devuelve para escenarios de DA. Para escenarios de KNOX, no se le pide al usuario que realice la instalación, esto se puede hacer de forma silenciosa. Intune presenta una notificación en la que los usuarios pueden hacer clic para volver a intentarlo. Si la aplicación es una aplicación disponible, la notificación se puede descartar. Pero si la aplicación es requerida, no se podrá descartar.    |
 |    Error desconocido en la descarga. La directiva se reintentará la próxima vez que el dispositivo se sincronice. (0xC7D15078)    |    Este error aparece cuando se produce un error en la descarga. Normalmente, este error puede producirse debido a problemas de Wi-Fi o conexiones lentas.       Este error solo se devuelve para escenarios de DA. Para escenarios de KNOX, no se le pide al usuario que realice la instalación, esto se puede hacer de forma silenciosa.    |
-|    El usuario final canceló la instalación de la aplicación. (0xC7D14FB1)    |    El usuario desinstaló la aplicación de forma explícita. Este error se devuelve cuando la actividad de instalación del sistema operativo Android es cancelada por el usuario. El usuario presionó el botón de cancelación cuando se presentó el mensaje de instalación del sistema operativo, o bien hizo clic fuera del mensaje.        Este error solo se devuelve para escenarios de DA. Para escenarios de KNOX, no se le pide al usuario que realice la instalación, esto se puede hacer de forma silenciosa. Intune presenta una notificación en la que los usuarios pueden hacer clic para volver a intentarlo. Si la aplicación es una aplicación disponible, la notificación se puede descartar. Pero si la aplicación es requerida, no se podrá descartar.    |
+|    El usuario final ha cancelado la instalación de la aplicación. (0xC7D14FB1)    |    El usuario desinstaló la aplicación de forma explícita. Este error se devuelve cuando la actividad de instalación del sistema operativo Android ha sido cancelada por el usuario. El usuario presionó el botón de cancelación cuando se presentó el mensaje de instalación del sistema operativo, o bien hizo clic fuera del mensaje.        Este error solo se devuelve para escenarios de DA. Para escenarios de KNOX, no se le pide al usuario que realice la instalación, esto se puede hacer de forma silenciosa. Intune presenta una notificación en la que los usuarios pueden hacer clic para volver a intentarlo. Si la aplicación es una aplicación disponible, la notificación se puede descartar. Pero si la aplicación es requerida, no se podrá descartar.    |
 |    El proceso de descarga de archivo se detuvo de manera inesperada. (0xC7D15015)    |    El sistema operativo detuvo el proceso de descarga antes de que se completara. Este error se puede producir cuando el dispositivo tiene poca batería o la descarga está tardando demasiado.       Este error solo se devuelve para escenarios de DA. Para escenarios de KNOX, no se le pide al usuario que realice la instalación, esto se puede hacer de forma silenciosa. Intune presenta una notificación en la que los usuarios pueden hacer clic para volver a intentarlo. Si la aplicación es una aplicación disponible, la notificación se puede descartar. Pero si la aplicación es requerida, no se podrá descartar.    |
 |    El servicio de descarga de archivo se detuvo de manera inesperada. La directiva se reintentará la próxima vez que el dispositivo se sincronice. (0xC7D1507C)    |    El sistema operativo detuvo el proceso de descarga antes de que se completara. Este error se puede producir cuando el dispositivo tiene poca batería o la descarga está tardando demasiado.       Este error solo se devuelve para escenarios de DA. Para escenarios de KNOX, no se le pide al usuario que realice la instalación, esto se puede hacer de forma silenciosa.    |
 
 ### <a name="ios-errors"></a>Errores de iOS
 
-|    Mensaje o código de error    |    Descripción    |
-|:----------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-|    (0x87D12906)    |    El agente MDM de Apple ha devuelto que no se puede ejecutar el comando de instalación.        |
-|    (0x87D1313C)    |    Se perdió la conexión de red mientras se enviaba la dirección URL del servicio de descarga actualizada al dispositivo. En concreto, no se encontró un servidor con el nombre de host especificado.    |
-|    El dispositivo iOS está ocupado actualmente. (0x87D11388)    |    El dispositivo iOS estaba ocupado, lo que provocó un error.    |
-|    Error al instalar la aplicación. (0x87D13B64)    |    Se ha producido un error de instalación de la aplicación. Para solucionar este error se necesitan los registros de XCODE.    |
-|    La aplicación está administrada, pero ha expirado o el usuario la ha quitado. (0x87D13B66)    |    El usuario desinstaló la aplicación de forma explícita. O bien, la aplicación ha expirado, pero no se pudo descargar o la detección de la aplicación no coincide con la respuesta del dispositivo.   Además, este error se puede producir debido a un error en la plataforma iOS 9.2.2.    |
-|    La aplicación está programada para la instalación, pero necesita un código de canje para completar la transacción.   (0x87D13B60)    |    Este error se suele producir con las aplicaciones de la tienda iOS que son de pago.     |
-|    La aplicación no se encontró después de que la instalación se completara correctamente. (0x87D1041C)    |    El proceso de detección de la aplicación no coincide con la respuesta del dispositivo.    |
-|    El usuario rechazó la oferta para instalar la aplicación. (0x87D13B62)    |    Durante la instalación de la aplicación inicial, el usuario hizo clic en Cancelar.    |
-|    El usuario rechazó la oferta para actualizar la aplicación. (0x87D13B63)    |    El usuario final hizo clic en Cancelar durante el proceso de actualización.     |
-|    Error desconocido   (0x87D103E8)    |    Se ha producido un error desconocido durante la instalación de la aplicación. Este es el error resultante cuando no se han producido los otros.    |
+| Mensaje o código de error | Sugerencias de descripción y solución de problemas |
+|------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| (0x87D12906) | El agente MDM de Apple ha devuelto que no se pudo ejecutar el comando de instalación. |
+| (0x87D1313C) | Se perdió la conexión de red mientras se enviaba la dirección URL del servicio de descarga actualizada al dispositivo. En concreto, no se encontró un servidor con el nombre de host especificado. |
+| El dispositivo iOS está ocupado actualmente. (0x87D11388) | El dispositivo iOS estaba ocupado, lo que provocó un error. |
+| Error al instalar la aplicación. (0x87D13B64) | Se ha producido un error de instalación de la aplicación. Para solucionar este error se necesitan los registros de XCODE. |
+| La aplicación está administrada, pero ha expirado o el usuario la ha quitado. (0x87D13B66) | El usuario ha desinstalado la aplicación de forma explícita. O bien, la aplicación ha expirado, pero no se pudo descargar o la detección de la aplicación no coincide con la respuesta del dispositivo.   Además, este error se puede producir debido a un error en la plataforma iOS 9.2.2. |
+| La aplicación está programada para la instalación, pero necesita un código de canje para completar la transacción. (0x87D13B60) | Este error se suele producir con las aplicaciones de la tienda iOS que son de pago. |
+| La aplicación no se encontró después de que la instalación se completara correctamente.   (0x87D1041C) | El proceso de detección de la aplicación no coincidía con la respuesta del dispositivo. |
+| El usuario ha rechazado la oferta para instalar la aplicación. (0x87D13B62) | Durante la instalación de la aplicación inicial, el usuario hizo clic en Cancelar. |
+| El usuario ha rechazado la oferta para actualizar la aplicación. (0x87D13B63) | El usuario final hizo clic en Cancelar durante el proceso de actualización. |
+| Error desconocido (0x87D103E8) | Se ha producido un error desconocido durante la instalación de la aplicación. Este es el error resultante cuando no se han producido los otros. |
+| Solo se puede instalar aplicaciones de PCV en iPad compartido (-2016330861). | Las aplicaciones deben obtenerse mediante el programa de compras por volumen de Apple para instalar en un iPad compartido. |
+| No se puede instalar las aplicaciones cuando se deshabilita App Store (-2016330860).  | Store de la aplicación debe estar habilitada para que el usuario que instale la aplicación. |
+| No se encuentra la licencia VPP para aplicación (-2016330859).  | Pruebe a revocar y reasignar la licencia de aplicación. |
+| No se puede instalar las aplicaciones del sistema con su proveedor de MDM (-2016330858). | Instalación de aplicaciones que se instalaron previamente por el sistema operativo iOS no es un escenario admitido. |
+| No se puede instalar las aplicaciones cuando el dispositivo está en modo perdido (-2016330857). | Todo el uso del dispositivo está bloqueado en el modo perdido.   Deshabilitar modo perdido para instalar aplicaciones. |
+| No se puede instalar las aplicaciones cuando el dispositivo está en modo de pantalla completa (-2016330856). | Pruebe a agregar este dispositivo a un grupo de exclusión para la directiva de configuración del modo de pantalla completa para instalar aplicaciones. |
+| No se puede instalar aplicaciones de 32 bits en este dispositivo (-2016330852). | El dispositivo no admite la instalación de aplicaciones de 32 bits. Intente implementar la versión de 64 bits de la aplicación. |
+| Usuario debe iniciar sesión en el Store de la aplicación (-2016330855). | El usuario debe iniciar sesión en el Store de la aplicación antes de que se puede instalar la aplicación. |
+| Problema desconocido. Inténtelo de nuevo (-2016330854). | No se pudo instalar la aplicación debido a un motivo desconocido.   Inténtelo de nuevo más tarde. |
+| No se pudo instalar la aplicación. Intune intentará la próxima vez que el dispositivo se sincronice (-2016330853). | Instalación de la aplicación detectó un error de dispositivo. Sincronice el dispositivo para intentar instalar de nuevo la aplicación. |
 
 ### <a name="other-installation-errors"></a>Otros errores de instalación
 

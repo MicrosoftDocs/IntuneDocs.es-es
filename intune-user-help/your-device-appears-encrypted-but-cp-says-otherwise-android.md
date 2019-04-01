@@ -18,12 +18,12 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9444a124b9b8a47633f544205940dadb3df0fd8f
-ms.sourcegitcommit: da9ee02de327f202b00be44c79bf7abd35b9929b
-ms.translationtype: HT
+ms.openlocfilehash: 55935b2f69f9573d8df5ea5ca32fb4587c652b26
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57335010"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57389460"
 ---
 # <a name="your-android-device-seems-to-be-encrypted-but-company-portal-says-otherwise"></a>El dispositivo Android parece estar cifrado, pero el Portal de empresa indica lo contrario
 
@@ -63,16 +63,15 @@ Algunos dispositivos Android de la versión 7.0+ cifran los datos de maneras inc
 
 ### <a name="known-devices-that-can-be-updated-to-fix-this-issue"></a>Dispositivos conocidos que se pueden actualizar para corregir este problema
 
-Si tiene uno de los dispositivos siguientes, puede experimentar este problema si no ha actualizado el dispositivo a la versión más reciente de Android. Puede instalar las actualizaciones de estos dispositivos en **Configuración** > **Actualizar**. 
+Si aún no ha actualizado el dispositivo a la versión más reciente de Android, vaya a su dispositivo **configuración** aplicación y seleccione **actualización**. Estos dispositivos podrían aparecer como no conformes hasta que actualice:  
 
-- [Huawei Honor 8](https://consumer.huawei.com/us/support/phones/honor-8/)
-- [Huawei P9](https://consumer.huawei.com/en/phones/p9/)
+- Huawei Honor 8
+- Huawei P9
 
 ### <a name="known-devices-that-currently-cannot-be-updated-to-fix-this-issue"></a>Dispositivos conocidos que actualmente no se puede actualizar para corregir este problema
+Los siguientes dispositivos siempre aparecerá cifrados y no se puede usar para tener acceso a recursos de la empresa. Para obtener acceso a recursos de la empresa, debe usar un dispositivo diferente.  
 
-Este problema no se puede resolver en los siguientes dispositivos. Es posible que deba usar otro dispositivo para obtener acceso a los recursos de la empresa. 
-
-- [Huawei Mate 8](https://consumer.huawei.com/en/mobile-phones/mate8/index.htm)
-- [Dispositivos OPPO](https://www.oppo.com/en/smartphones)
-- [Dispositivos Vivo](https://www.vivo.co.in)
-- [Smartphones Xiaomi Mi](https://xiaomi-mi.com/mi-smartphones/)
+- Huawei Mate 8
+- Dispositivos OPPO
+- Dispositivos Vivo
+- Smartphones Xiaomi Mi
