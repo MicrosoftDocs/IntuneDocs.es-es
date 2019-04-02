@@ -154,6 +154,10 @@ items:
       items:
       - name: Control de acceso basado en roles
         href: role-based-access-control.md
+      - name: Asignar un rol a un usuario
+        href: assign-role.md
+      - name: Crear un rol personalizado
+        href: create-custom-role.md
       - name: Uso de etiquetas de ámbito
         href: scope-tags.md
   - name: Inscribir dispositivos
@@ -945,9 +949,9 @@ items:
       href: data-outside-protect.md
     - name: Evitar fugas de datos en dispositivos no administrados
       href: data-leak-prevention.md
-ms.openlocfilehash: d273d9c300f49a2d78f8b9ed62031497b06a0060
-ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
+ms.openlocfilehash: c58e250d7aeb4913554874c8a1e931b2dc356dfd
+ms.sourcegitcommit: 0adb41c0640743d5cb726e66ad2427e3ad6faf20
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58514429"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58658581"

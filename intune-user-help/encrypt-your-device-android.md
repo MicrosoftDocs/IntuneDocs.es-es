@@ -1,11 +1,11 @@
 ---
-title: Cómo proteger el dispositivo Android con cifrado | Microsoft Docs
-description: Proteger su dispositivo Android
+title: Cifre el dispositivo Android para el Portal de empresa de Intune | Microsoft Docs
+description: Pasos para activar cifrado de dispositivo en un dispositivo Android
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 03/22/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,31 +18,47 @@ ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 115025d60038daea6f43c97cbdc03a20d5b0bf59
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: c9f1e7bbbad243e37f34cb298466adf886be9273
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55838179"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490594"
 ---
-# <a name="how-to-protect-your-android-device-using-encryption"></a>Cómo proteger el dispositivo Android mediante el cifrado
+# <a name="encrypting-your-android-device"></a>Cifrado del dispositivo Android
 
-Cuando cifra un dispositivo, está ajustando la información en una capa de código de protección que evita que los usuarios sin autorización tengan acceso a él. Para asegurarnos de que su información está protegida, la organización le pide que cifre su dispositivo Android antes de poder acceder a archivos, correos electrónicos o datos de la empresa.
+Cifrado de dispositivo protege los archivos y carpetas frente al acceso no autorizado si el dispositivo se pierde o lo roban. Después de activar el cifrado de dispositivo, solo los usuarios con la contraseña correcta o el pin podrán iniciar sesión en su dispositivo. 
+
+Antes de que puede tener acceso a los recursos de trabajo o educativos, su organización puede requerir que se cifre el dispositivo Android. Algunos dispositivos Android más reciente se cifran de forma predeterminada, del cuadro.  
+
+## <a name="turn-on-encryption"></a>Activar el cifrado
+
+Si recibe un mensaje en el Portal de empresa que necesita para cifrar el dispositivo, complete los pasos siguientes. 
 
 > [!Note]
-> No es posible cifrar ciertos dispositivos Android, como algunos de Huawei y los de Vivo y OPPO. Descubra más [aquí](your-device-appears-encrypted-but-cp-says-otherwise-android.md).
+> No se puede cifrar ciertos dispositivos Android desde Huawei Vivo y OPPO. Descubra más [aquí](your-device-appears-encrypted-but-cp-says-otherwise-android.md).  
 
-Si anula la inscripción del dispositivo, este permanecerá cifrado.
+1.  Establecer un bloqueo de pantalla del dispositivo.  
+    a. Vaya a **Configuración** > **Pantalla de bloqueo y seguridad** > **Tipo de bloqueo de pantalla**.  
+    b. Seleccione **PIN**, **contraseña**, o **patrón**.  
+    c. Siga las instrucciones en pantalla para configurar el bloqueo de pantalla.  
 
-1.  Asegúrese de que se ha establecido un PIN o una contraseña de bloqueo de pantalla para el dispositivo.
+2. Vuelva a **pantalla de bloqueo y seguridad** y seleccione **inicio seguro**.
+3. Elija **solicitar PIN al dispositivo se enciende** > **Aceptar**.
+4. Escriba su PIN para confirmar y cifrado del dispositivo.
+5. Abra la aplicación Portal de empresa de Intune, seleccione el dispositivo y pulse **Comprobar cumplimiento del dispositivo**.  
 
-2.  En **Configuración**, elija **Seguridad** > **Cifrar dispositivo**.
-    (En algunos teléfonos, tendrá que elegir **Almacenamiento** > **Cifrado de almacenamiento** o **Almacenamiento** > **Pantalla de bloqueo y seguridad** > **Otras opciones de seguridad** para poder encontrar la opción "Cifrar").
+Dispositivos que ejecutan Android 4.4 y versiones anteriores podrían no tener el **inicio seguro** opción. En ese caso, complete los pasos siguientes para cifrar el dispositivo.
 
-3.  Siga las instrucciones en pantalla. Durante el cifrado, el dispositivo podría reiniciarse varias veces.
+1. Vaya a **configuración** > **seguridad** > **cifrar dispositivo**. Etiquetas en la pantalla pueden variar entre los dispositivos Android. Si no ve el **cifrar dispositivo** opción, la protección:
+    * **Almacenamiento** > **cifrado de almacenamiento**
+    * **Almacenamiento** > **pantalla de bloqueo y seguridad** > **otras configuraciones de seguridad** 
 
-### <a name="what-to-do-if-you-have-issues"></a>Qué hacer si tiene problemas
-**Problema:** con el dispositivo ya cifrado, ocurre una de las siguientes cosas:
+2. Siga las instrucciones en pantalla. Durante el cifrado, es posible que el dispositivo se reinicie varias veces.
+3. Abra la aplicación Portal de empresa de Intune, seleccione el dispositivo y pulse **Comprobar cumplimiento del dispositivo**.  
+
+## <a name="troubleshoot"></a>Solución de problemas  
+**Problema**: el dispositivo ya se ha cifrado y
 
 - El botón de cifrado está deshabilitado.
 - Ve un mensaje en el que se indica que aún es necesario realizar el cifrado.
@@ -50,20 +66,7 @@ Si anula la inscripción del dispositivo, este permanecerá cifrado.
 
 **Opciones que puede probar**
 
-- Asegúrese de que el dispositivo está cargado y conectado.
-- Asegúrese de que ha establecido un PIN o una contraseña en el dispositivo.
-- Si ya ha configurado un PIN o una contraseña en el dispositivo, intente los pasos siguientes que podría requerir el equipo de soporte técnico de su empresa para hacer que el dispositivo sea más seguro. Los nombres de menú que verá pueden diferir ligeramente de los incluidos en los pasos, en función del tipo de dispositivo Android que tenga.
+- Asegúrese de que el dispositivo está cargado y conectado.  
+- Asegúrese de que ha establecido un PIN o una contraseña en el dispositivo.  
 
-    1. Vaya a **Configuración** > **Pantalla de bloqueo y seguridad** > **Bloqueo de pantalla**. Confirme su PIN o contraseña actual.
-
-    2. En la pantalla **Elige un bloqueo**, elija el tipo de bloqueo de pantalla que quiere usar. 
-
-    3. Después de elegir el bloqueo de pantalla, vuelva a **Pantalla de bloqueo y seguridad** y seleccione **Inicio seguro**. 
-    
-    4. En la pantalla **Inicio seguro**, pulse **Solicitar PIN para iniciar el dispositivo** y **Continuar**.
-
-    5. Elija un PIN (puede escribir el mismo que haya especificado anteriormente) y pulse **Confirma el número PIN**.
-
-    6. Abra la aplicación de Portal de empresa, seleccione el dispositivo y pulse **Comprobar cumplimiento**.
-
-¿Sigue necesitando ayuda? Póngase en contacto con el equipo de soporte técnico de su empresa (visite el [sitio web del Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980) para obtener la información de contacto), o escriba al <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">equipo de Microsoft Android</a>.
+¿Sigue necesitando ayuda? Póngase en contacto con el equipo de soporte técnico de su empresa (visite el [sitio web del Portal de empresa](https://go.microsoft.com/fwlink/?linkid=2010980) para obtener la información de contacto), o escriba al <a href="mailto:wintunedroidfbk@microsoft.com?subject=I'm having trouble with encryption on my Android device&body=Describe the issue you're experiencing here.">equipo de Microsoft Android</a>.  

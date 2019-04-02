@@ -18,12 +18,12 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e973e18a79c18af6b201194fc1a6534da5fa38a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: fd05c600553ec23085b03eb560e0e736c9d7a764
+ms.sourcegitcommit: 25e17a1d002ee1faa49bb89648eb59373528539f
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "55838043"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "58163435"
 ---
 # <a name="how-to-reset-your-device-passcode-from-the-company-portal-website"></a>Restablecer el código de acceso de un dispositivo desde el sitio web del portal de empresa
 
@@ -32,7 +32,7 @@ Si pierde el PIN o la contraseña del dispositivo, puede usar el [sitio web del 
 Si usa un dispositivo corporativo inscrito, es posible que no vea la opción para restablecer el código de acceso de dispositivo. Póngase en contacto con el equipo de soporte técnico de la empresa para que le restablezca el código de acceso.
 
    > [!NOTE]
-   > No puede restablecer el código de acceso para los dispositivos con Android 7.0 y versiones posteriores. Si olvida el código de acceso, tendrá que restablecer el dispositivo a la configuración de fábrica. 
+   > No puede restablecer el código de acceso para los dispositivos que ejecutan Android 7.0 y versiones posteriores. Si olvidó el código de acceso, debe restablecer el dispositivo a la configuración de fábrica. 
 
 ## <a name="reset-your-passcode"></a>Restablecimiento del código de acceso
 

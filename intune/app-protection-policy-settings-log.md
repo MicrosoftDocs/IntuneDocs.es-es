@@ -6,24 +6,24 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/20/2018
+ms.date: 03/19/2019
 ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 4CD5EE94-7BA6-4F59-8E28-1EBCA7CA6436
-ms.reviewer: andcerat
+ms.reviewer: demerson
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ff80a5911c4bb027cbe2f9289a415ed9797277a6
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 6c42003f53e5d4ff7afa8afe9c242ef2470b5ee3
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57460502"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58394800"
 ---
 # <a name="review-client-app-protection-logs"></a>Revisión de los registros de protección de aplicaciones cliente
 
@@ -43,6 +43,7 @@ En la tabla siguiente se incluye el nombre y una explicación de la configuraci�
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | AccessRecheckOfflineTimeout | x minutos                                                                                                                                                                                                                                                                                                   | [Acceso] Volver a comprobar los requisitos de acceso: período de gracia sin conexión<br>Nota: Es el período de tiempo antes de que se vuelvan a comprobar los requisitos de acceso de la aplicación si el dispositivo está sin conexión.             |
 | AccessRecheckOnlineTimeout  | _x_ minutos                                                                                                                                                                                                                                                                                                   | [Acceso] Volver a comprobar los requisitos de acceso: tiempo de expiración.<br>Nota: Es el período de tiempo antes de que se vuelvan a comprobar los requisitos de acceso de la aplicación después de iniciar la aplicación si el dispositivo está en línea. |
+| AllowedOutboundClipboardSharingExceptionLength               | x caracteres                                                                                                                                                                                                                                                                                           | [Acceso] Especifique el número de caracteres que pueden ser cortados o copiados desde una aplicación administrada.  Esta configuración invalida la `AllowedOutboundClipboardSharingLevel` restricción. Valor predeterminado de '0' significa que no se permite ninguna excepción. 
 | AppPinDisabled              | 0 = No<br>1 = Sí                                                                                                                                                                                                                                                                                           | [Acceso] Deshabilitar el PIN de aplicación cuando se administra el PIN del dispositivo.                                                                                                                                     |
 | AppSharingFromLevel         | 0 = Sin aplicaciones<br>1 = Aplicaciones administrada<br>2 = Cualquier aplicación                                                                                                                                                                                                                                                              | [Reubicación de datos] Permitir que esta aplicación reciban datos de otras aplicaciones.                                                                                                                        |
 | AppSharingToLevel           | 0 = Sin aplicaciones<br>1 = Aplicaciones administrada<br>2 = Cualquier aplicación                                                                                                                                                                                                                                                              | [Reubicación de datos] Permitir que esta aplicación transfiera datos a otras aplicaciones.                                                                                                                         |
