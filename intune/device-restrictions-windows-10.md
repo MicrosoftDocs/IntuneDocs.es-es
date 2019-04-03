@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 02/13/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8190365ad2b50dfa7369b8899e8984b6a52f1cba
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: 7ca34826f3a235fe620b5ac0dcb95d57dabf4c71
+ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566760"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58395007"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos con Windows 10 y versiones posteriores para permitir o restringir características mediante Intune
 
@@ -29,7 +29,7 @@ En este artículo se enumeran y describen todos los diferentes valores de config
 Estos valores se agregan a un perfil de configuración de dispositivo en Intune y luego se asignan o implementan en los dispositivos con Windows 10.
 
 > [!Note]
-> No todas las opciones están disponibles en todas las ediciones de Windows
+> No todas las opciones están disponibles en todas las ediciones de Windows. Para ver las ediciones admitidas, consulte el [directiva CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) (abre otro sitio web de Microsoft).
 
 ## <a name="before-you-begin"></a>Antes de comenzar
 
@@ -64,8 +64,8 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 - **Wi-Fi**: permite al usuario habilitar y configurar Wi-Fi en el dispositivo (solo Windows 10 Mobile).
 - **Conectar automáticamente a zonas Wi-Fi**: permite que el dispositivo se conecte automáticamente a zonas Wi-Fi gratuitas y acepte automáticamente los términos y condiciones para la conexión.
 - **Configuración manual de Wi-Fi**: controla si el usuario puede configurar sus propias conexiones Wi-Fi o si solo puede usar conexiones configuradas mediante un perfil Wi-Fi (solo Windows 10 Mobile).
-- **Intervalo de detección de Wi-Fi**: especifica con qué frecuencia los dispositivos detectan redes Wi-Fi. Especifique un valor de 1 (más frecuente) a 500 (menos frecuente).
-- **Servicios Bluetooth permitidos**: especifica como cadenas hexadecimales una lista de perfiles y servicios Bluetooth permitidos.
+- **Intervalo de detección de Wi-Fi**: permite especificar con qué frecuencia los dispositivos detectan redes Wi-Fi. Escriba un valor de 1 (más frecuente) a 500 (menos frecuente).
+- **Servicios Bluetooth permitidos**: se indican como cadenas hexadecimales una lista de perfiles y servicios Bluetooth permitidos.
 
 ## <a name="cloud-and-storage"></a>Nube y almacenamiento
 
@@ -145,7 +145,6 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 
 - **Finalizar los procesos del Administrador de tareas**: esta configuración determina si no sean administradores pueden utilizar el Administrador de tareas a las tareas de finalización. Si selecciona **Bloquear**, se impide que los usuarios estándar (no administradores) usen el Administrador de tareas para finalizar un proceso o una tarea en el dispositivo. Si selecciona **Sin configurar** (valor predeterminado), se permite que los usuarios estándar finalicen un proceso o una tarea mediante el Administrador de tareas.
 
-
 ## <a name="locked-screen-experience"></a>Experiencia de pantalla bloqueada
 
 - **Notificaciones del centro de actividades (solo dispositivos móviles)**: permite que las notificaciones del centro de actividades aparezcan en la pantalla de bloqueo del dispositivo (solo Windows 10 Mobile).
@@ -157,7 +156,7 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 
 ## <a name="messaging"></a>Mensajería
 
-- **Sincronización de mensajes (solo dispositivos móviles)**: deshabilita Mensajes en cualquier dispositivo y la copia de seguridad y restauración de los mensajes de texto.
+- **Sincronización de mensajes (solo móvil)**: deshabilita Mensajes en cualquier dispositivo y la copia de seguridad y restauración de los mensajes de texto.
 - **MMS (solo dispositivos móviles)**: deshabilita la funcionalidad de envío y recepción de MMS en el dispositivo.
 - **RCS (solo dispositivos móviles)**: deshabilita la funcionalidad de envío o recepción de Rich Communication Services en el dispositivo.
 
@@ -168,25 +167,25 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 Las opciones disponibles cambian en función de cuál sea su elección. Las opciones son:
 
 - **No** (valor predeterminado): Microsoft Edge no se está ejecutando en modo de quiosco. Todas las configuraciones de Microsoft Edge están disponibles para cambiar y configurar.
-- **Señalización digital/interactivo (quiosco con aplicación única)**: configuración de Edge de filtros que se aplica para el modo de quiosco de borde de señalización Digital/interactivo para su uso únicamente en quioscos de aplicación sencilla de Windows 10. Elija esta opción para abrir una pantalla completa de la dirección URL y mostrar solo el contenido en dicho sitio Web. [Configurar la firma digital](https://docs.microsoft.com/windows/configuration/setup-digital-signage) proporciona más información sobre esta característica.
-- **Pública la exploración de inPrivate (quiosco con aplicación única)**: configuración de Edge de filtros que se aplica para el modo InPrivate exploración Edge quiosco multimedia público para su uso en quioscos de aplicación sencilla de Windows 10. Ejecuta una versión de varias pestaña de Microsoft Edge.
-- **Modo normal (quiosco con varias aplicaciones)**: configuración de Edge de filtros que se aplica para el modo de quiosco de Edge Normal. Se ejecuta una versión completa de Microsoft Edge con todas las características de exploración.
-- **Exploración pública (quiosco con varias aplicaciones)**: configuración de Edge de filtros que se aplica para la exploración pública en un quiosco con varias aplicaciones de Windows 10.  Ejecuta una versión de varias pestaña de InPrivate de Microsoft Edge.
+- **Señalización digital/interactivo (quiosco con aplicación única)**: configuración de filtros de Microsoft Edge que se aplica para el modo de pantalla completa de Microsoft Edge de señalización Digital/interactivo para su uso únicamente en quioscos de aplicación sencilla de Windows 10. Elija esta opción para abrir una pantalla completa de la dirección URL y mostrar solo el contenido en dicho sitio Web. [Configurar la firma digital](https://docs.microsoft.com/windows/configuration/setup-digital-signage) proporciona más información sobre esta característica.
+- **Pública la exploración de inPrivate (quiosco con aplicación única)**: configuración de filtros de Microsoft Edge que se aplica para el modo InPrivate exploración Microsoft Edge quiosco multimedia público para su uso en quioscos de aplicación sencilla de Windows 10. Ejecuta una versión de varias pestaña de Microsoft Edge.
+- **Modo normal (quiosco con varias aplicaciones)**: configuración de filtros de Microsoft Edge que se aplica para el modo de quiosco de Normal Microsoft Edge. Se ejecuta una versión completa de Microsoft Edge con todas las características de exploración.
+- **Exploración pública (quiosco con varias aplicaciones)**: configuración de filtros de Microsoft Edge que se aplica para la exploración pública en un quiosco con varias aplicaciones de Windows 10.  Ejecuta una versión de varias pestaña de InPrivate de Microsoft Edge.
 
 > [!TIP]
 > Para obtener más información sobre qué hacer estas opciones, consulte [tipos de configuración de modo de pantalla completa de Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-configuration-types).
 
 Este perfil de restricciones de dispositivos está directamente relacionado con el perfil de quiosco que cree mediante el [configuración de pantalla de Windows](kiosk-settings-windows.md). En resumen:
 
-1. Crear el [configuración de pantalla de Windows](kiosk-settings-windows.md) perfil para ejecutar el dispositivo en modo de quiosco. Seleccione Microsoft Edge que la aplicación y establezca el modo de quiosco de borde en el perfil de quiosco.
-2. Crear el perfil de restricciones de dispositivo que se describe en este artículo y configurar características específicas y valores permitidos en Microsoft Edge. Asegúrese de elegir el mismo tipo de modo de quiosco borde seleccionado en el perfil de quiosco ([configuración de pantalla de Windows](kiosk-settings-windows.md)). 
+1. Crear el [configuración de pantalla de Windows](kiosk-settings-windows.md) perfil para ejecutar el dispositivo en modo de quiosco. Seleccione Microsoft Edge que la aplicación y establezca el modo de pantalla completa de Microsoft Edge en el perfil de quiosco.
+2. Crear el perfil de restricciones de dispositivo que se describe en este artículo y configurar características específicas y valores permitidos en Microsoft Edge. Asegúrese de elegir el mismo tipo de modo de pantalla completa de Microsoft Edge que seleccionado en el perfil de quiosco ([configuración de pantalla de Windows](kiosk-settings-windows.md)). 
 
     [Admite la configuración del modo de quiosco](https://docs.microsoft.com/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy#supported-policies-for-kiosk-mode) es un excelente recurso.
 
 > [!IMPORTANT] 
 > Asegúrese de asignar este perfil de Microsoft Edge a los mismos dispositivos de su perfil de quiosco ([configuración de pantalla de Windows](kiosk-settings-windows.md)).
 
-CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
+[ConfigureKioskMode CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-configurekioskmode)
 
 ### <a name="start-experience"></a>Inicio de la experiencia
 
@@ -204,7 +203,7 @@ CSP: [ConfigureKioskMode](https://docs.microsoft.com/windows/client-management/m
   - **Custom Home button URL** (Dirección URL del botón Inicio personalizado): se abre la opción que eligió en la configuración **Home button URL** (Dirección URL del botón Inicio)
   - **Hide Home button** (Ocultar el botón Inicio): oculta el botón Inicio
 - **User can change Home button** (El usuario puede cambiar el botón Inicio): **Permitir** deja que los usuarios cambien el botón Inicio. Los cambios del usuario reemplazan cualquier configuración del administrador en el botón Inicio. **No configurado** usa el comportamiento predeterminado del SO del dispositivo, que puede impedir que los usuarios cambien la forma en que el administrador configuró el botón Inicio.
-- **Show First Run Experience page** (Página Mostrar la primera experiencia de ejecución): **Bloquear** impide que la página de introducción muestre la primera vez que ejecutó Microsoft Edge. Esta característica permite que las empresas (por ejemplo, aquellas que utilizan configuraciones de cero emisiones) bloqueen esta página. **No configurado** muestra la página de introducción.
+- **Show First Run Experience page** (Página Mostrar la primera experiencia de ejecución): **Bloquear** impide que la página de introducción muestre la primera vez que ejecutó Microsoft Edge. Esta característica permite que las empresas (por ejemplo, aquellas organizaciones que utilizan configuraciones de cero emisiones) bloqueen esta página. **No configurado** muestra la página de introducción.
   - **First Run Experience URL** (Dirección URL de la primera experiencia de ejecución): escriba la dirección URL de la página para mostrar la primera vez que un usuario ejecuta Microsoft Edge (solo Windows 10 Mobile).
 - **Actualice el explorador después de tiempo de inactividad**: escriba el número de minutos de inactividad hasta que se actualiza el explorador, de 0 a 1440 minutos. El valor predeterminado es `5` minutos. Cuando se establece en `0` (cero), el explorador no se actualiza tras estar inactivo.
 
@@ -331,7 +330,7 @@ Puede agregar aplicaciones que deben tener un comportamiento de privacidad difer
 - **Teléfono**: define si esta aplicación puede tener acceso al teléfono.
 - **Radios**: algunas aplicaciones usan radios (por ejemplo, Bluetooth) en el dispositivo para enviar y recibir datos y necesitan activar o desactivar estas radios. Define si esta aplicación puede controlar estas radios.
 - **Tareas**: define si esta aplicación puede tener acceso a las tareas.
-- **Dispositivos de confianza**: elija si esta aplicación puede usar dispositivos de confianza (hardware ya conectado o que se proporciona con el dispositivo). Por ejemplo, use televisores, proyectores, etc. como dispositivos de confianza.
+- **Dispositivos de confianza**: elija si esta aplicación puede usar dispositivos de confianza. Es decir, hardware ya conectado o que se proporciona con el dispositivo. Por ejemplo, use televisores, proyectores, etc. como dispositivos de confianza.
 - **Comentarios y diagnóstico**: define si esta aplicación puede tener acceso a la información de diagnóstico.
 - **Sincronización con dispositivos**: defina si esta aplicación puede compartir y sincronizar automáticamente información con dispositivos inalámbricos que no se emparejan explícitamente con el dispositivo.
 
@@ -352,7 +351,7 @@ Puede agregar aplicaciones que deben tener un comportamiento de privacidad difer
 - **Publicar las actividades del usuario**: **Bloquear** evita las experiencias compartidas y la detección de recursos usados recientemente en el selector de tareas.
 - **Solo actividades locales**: **Bloquear** evita experiencias compartidas y la detección de recursos usados recientemente en el selector de tareas según la actividad local únicamente.
 
-Puede configurar la información a la que pueden tener acceso todas las aplicaciones del dispositivo. Puede definir excepciones para cada aplicación mediante **excepciones de privacidad de cada aplicación**.
+Puede configurar la información a la que pueden tener acceso todas las aplicaciones del dispositivo. También, puede definir excepciones para cada aplicación mediante **excepciones de privacidad de cada aplicación**.
 
 ### <a name="exceptions"></a>Excepciones
 
@@ -385,7 +384,7 @@ Puede configurar la información a la que pueden tener acceso todas las aplicaci
 
 - **Compartir datos de uso**: elija el nivel de datos de diagnóstico que se envía. Las opciones son:
   - Seguridad
-  - Basic
+  - Básica
   - Mejorado
   - Full
 - **Send Microsoft Edge browsing data to Microsoft 365 Analytics** (Enviar datos de exploración de Microsoft Edge a Microsoft 365 Analytics): para usar esta característica, establezca la configuración **Compartir datos de uso** en **Mejorado** o **Completo**. Esta característica controla los datos que Microsoft Edge envía a Microsoft 365 Analytics para los dispositivos empresariales que tienen configurado un identificador comercial. Las opciones son:
@@ -469,22 +468,44 @@ Puede configurar la información a la que pueden tener acceso todas las aplicaci
 - **Acceso de usuario final a Defender**: controla si la interfaz de usuario de Windows Defender se oculta a los usuarios finales. Cuando se cambia esta configuración, surtirá efecto la próxima vez que se reinicie el equipo del usuario final.
 - **Intervalo de actualización de firma (en horas)**: especifica el intervalo dentro del cual Defender comprobará nuevos archivos de firmas.
 - **Supervisar la actividad de archivos y programas**: permite que Defender supervise la actividad de archivos y programas en los dispositivos.
-- **Días antes de eliminar el malware en cuarentena**: permite que Defender continúe realizando el seguimiento de malware resuelto durante el número de días especificado para que pueda comprobar de forma manual los dispositivos previamente afectados. Si establece el número de días en **0**, el malware permanece en la carpeta de cuarentena y no se quita automáticamente.
-- **Límite de uso de la CPU durante un examen**: le permite limitar la cantidad de CPU que pueden usar los exámenes (de **1** a **100**).
+- **Días antes de eliminar malware en cuarentena**: continuar realizando el seguimiento de malware resuelto durante el número de días especificado para que pueda comprobar manualmente los dispositivos previamente afectados. Si establece el número de días en **0**, el malware permanece en la carpeta de cuarentena y no se quita automáticamente.
+- **Límite de uso de la CPU durante un examen**: limita la cantidad de CPU que pueden usar los exámenes (de **1** a **100**).
 - **Examinar archivos de almacenamiento**: permite que Defender examine archivos almacenados, como archivos .zip o .cab.
 - **Examinar mensajes de correo entrante**: permite que Defender examine mensajes de correo electrónico cuando llegan al dispositivo.
 - **Examinar unidades extraíbles durante un examen completo**: permite que Defender examine unidades extraíbles, como llaves USB.
 - **Examinar unidades de red asignadas durante un examen completo**: permite que Defender examine archivos en unidades de red asignadas.
   Si los archivos de la unidad son de solo lectura, Defender no puede quitar el malware que se encuentre en ellos.
 - **Examinar archivos abiertos desde carpetas de red**: permite que Defender examine archivos en unidades de red compartidas (por ejemplo, los archivos a los que se tiene acceso desde una ruta de acceso UNC). Si los archivos de la unidad son de solo lectura, Defender no puede quitar el malware que se encuentre en ellos.
-- **Protección de la nube**: permite o bloquea la recepción por parte de Microsoft Active Protection Service de información relativa a la actividad de malware de los dispositivos que administra. Esta información se usa para mejorar el servicio en el futuro.
+- **Protección de la nube**: permite o bloquea la recepción por parte de Microsoft Active Protection Service de información relativa a la actividad de malware de los dispositivos que administra. Esta información mejora el servicio en el futuro.
 - **Preguntar a los usuarios antes de enviar muestras**: controla si los archivos potencialmente malintencionados que podrían requerir un análisis posterior se envían automáticamente a Microsoft.
-- **Hora a la que se realizará un examen rápido diario**: permite programar un examen rápido que se produce diariamente en el momento seleccionado.
-- **Tipo de examen del sistema para realizar**: escriba el nivel de examen que se ejecuta cuando se programa un examen del sistema.
+- **Tiempo para realizar un examen rápido diario**: elija la hora para ejecutar un examen rápido diario. **No configurado** no se ejecuta un examen diario. Si desea personalizar aún más, configure el **tipo de examen del sistema para realizar** configuración.
+
+  [Defender/ScheduleQuickScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulequickscantime)
+- **Tipo de examen del sistema para realizar**: programar un examen del sistema, incluido el nivel de exploración y el día y hora para ejecutar el examen. Las opciones son:
+  - **No configurado**: no se programe un examen del sistema en el dispositivo. Los usuarios finales puede ejecutar manualmente exámenes según sea necesario o deseado en sus dispositivos.
+  - **Deshabilitar**: deshabilita cualquier sistema de análisis en el dispositivo. Elija esta opción si usa una solución de partner antivirus que examina los dispositivos.
+  - **Examen rápido**: examina ubicaciones comunes que podría haber malware registrado, como las claves del registro y conoce las carpetas de inicio de Windows.
+    - **Día programado**: elija el día para ejecutar el examen.
+    - **Hora programada**: elija la hora para ejecutar el examen.
+  - **Examen completo**: examina ubicaciones comunes que podría haber malware registrado y también examina todos los archivos y carpetas en el dispositivo.
+    - **Día programado**: elija el día para ejecutar el examen.
+    - **Hora programada**: elija la hora para ejecutar el examen.
+
+  Esta configuración podría entrar en conflicto con el **tiempo para realizar un examen rápido diario** configuración. Algunas recomendaciones:
+
+  - Para ejecutar un examen rápido diario, configure el **tiempo para realizar un examen rápido diario** configuración.
+  - Para ejecutar un examen rápido diario y un examen completo de cada semana, a continuación, configure el **tiempo para realizar un examen rápido diario**y establezca **tipo de examen del sistema para realizar** para un examen completo con el día y hora.
+  - No configure el **tiempo para realizar un examen rápido diario** establecer simultáneamente con el **tipo de examen del sistema para realizar** establecido en **examen rápido**. Esta configuración podría entrar en conflicto y no se puede ejecutar un examen.
+  - Para ejecutar un examen rápido todos los martes a las 6 A.M., configurar el **tipo de examen del sistema para realizar** configuración.
+
+  [Defender/ScanParameter CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-scanparameter)  
+  [Defender/ScheduleScanDay CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescanday)  
+  [Defender/ScheduleScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
+
 - **Detectar aplicaciones potencialmente no deseadas**: elija el nivel de protección cuando Windows detecte aplicaciones potencialmente no deseadas entre:
   - **Bloquear**
   - **Auditoría** Para más información sobre aplicaciones potencialmente no deseadas, consulte [Detectar y bloquear aplicaciones potencialmente no deseadas](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus).
-- **Acciones para amenazas de malware detectadas**: use esta opción para elegir las acciones que quiere que Defender realice para cada nivel de amenaza que detecte (Bajo, Moderado, Alto y Grave). Las opciones son:
+- **Acciones para amenazas de malware detectadas**: elija las acciones que quiere que Defender realice para cada nivel de amenaza que detecte: bajo, moderado, alto y grave. Las opciones son:
   - **Limpiar**
   - **Cuarentena**
   - **Quitar**

@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/13/2019
+ms.date: 03/26/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a92d18615f6be7c1e0ce931d443d2ac986db991e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5106a4f147828310fc1b4a41ef4065d10bdaeecf
+ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566716"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58490733"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos iOS para permitir o restringir características mediante Intune
 
@@ -43,7 +43,7 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
     Esta característica se aplica a:  
     - iOS 9.3.2 y versiones posteriores
 
-- **Captura de pantalla**: elija **Bloquear** para evitar que se hagan capturas de pantalla en el dispositivo. **No configurado** (valor predeterminado) permite que el usuario capture el contenido de la pantalla como imagen.
+- **Captura de pantalla**: elija **Bloquear** para evitar que se hagan capturas de pantalla en el dispositivo. En iOS 9.0 y versiones posteriores, esto también incluye las grabaciones de pantalla de bloqueo. **No configurado** (valor predeterminado) permite que el usuario capture el contenido de la pantalla como imagen o como vídeo.
   - **Observación de pantalla remota mediante la aplicación Aula (solo con supervisión)**: elija **Bloquear** para evitar que la aplicación Aula vea de manera remota la pantalla en el dispositivo. **No configurado** (valor predeterminado) permite que la aplicación Aula de Apple vea la pantalla.
 
     Esta característica se aplica a:  
@@ -158,7 +158,7 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 - **Compras desde la aplicación**: elija **Bloquear** para impedir las compras en la tienda desde la aplicación. **No configurado** permite las compras en la tienda dentro de una aplicación en ejecución.
 - **Música, podcasts o contenido de noticias explícitos de iTunes (solo con supervisión)**: elija **Bloquear** para evitar música, podcasts o contenido de noticias explícitos de iTunes. **No configurado** permite que el dispositivo acceda a contenido clasificado para adultos en la tienda.
 - **Descargar contenido marcado como "Erótico" en iBooks Store**: elija **Bloquear** para impedir que los usuarios descarguen archivos multimedia de iBooks Store marcados como eróticos. **No configurado** permite que el usuario descargue libros con la categoría "Erotismo".
-- **Visualización de documentos corporativos en aplicaciones no administradas**: **Bloquear** impide la visualización de documentos no corporativos en aplicaciones no administradas. **No configurado** permite ver los documentos corporativos en cualquier aplicación. Por ejemplo, se quiere evitar que los usuarios guarden archivos de la aplicación OneDrive en Dropbox. Configure este valor como **Bloquear**. Después de que el dispositivo recibe la directiva (por ejemplo, después de un reinicio), ya no le permite guardar.
+- **Visualización de documentos corporativos en aplicaciones no administradas**: **Bloquear** impide la visualización de documentos corporativos en aplicaciones no administradas. **No configurado** permite ver los documentos corporativos en cualquier aplicación. Por ejemplo, se quiere evitar que los usuarios guarden archivos de la aplicación OneDrive en Dropbox. Configure este valor como **Bloquear**. Después de que el dispositivo recibe la directiva (por ejemplo, después de un reinicio), ya no le permite guardar.
   - **Permitir que las aplicaciones administradas escribir contactos en cuentas de contactos no administrado**: cuando se establece en **permitir**, los usuarios pueden agregar o sincronizar la información de contacto de Outlook de cualquier persona, incluidos empresariales y contactos corporativos, a la aplicación contactos integrada en el dispositivo. Cuando se establece en **Sin configurar**, los usuarios no pueden agregar contactos de Outlook a la aplicación de contactos integrada en el dispositivo.
   
     Para usar este valor, establezca la opción **Visualización de documentos corporativos en aplicaciones no administradas** en **Bloquear**.
@@ -255,7 +255,7 @@ Para agregar aplicaciones a estas listas, puede:
   Esta característica se aplica a:  
   - iOS 11.0 y versiones posteriores
 
-- **Zona de cobertura personal**: **Bloquear** impide que el dispositivo se use como una zona de cobertura personal. Esta opción puede que no sea compatible con algunos operadores. **No configurado** (valor predeterminado) permite que esta característica.
+- **Punto de acceso personal**: **bloque** desactiva el punto de acceso personal en el dispositivo del usuario con la sincronización de cada dispositivo. Esta opción puede que no sea compatible con algunos operadores. **No configurado** (valor predeterminado), mantiene la configuración de punto de acceso personal como el valor predeterminado establecido por el usuario.
 - **Conexión a redes Wi-Fi con perfiles de configuración (solo con supervisión)**: **Requerir** obliga al dispositivo a usar solo redes Wi-Fi configuradas a través de perfiles de configuración de Intune. **No configurado** (valor predeterminado) permite que el dispositivo use otras redes Wi-Fi.
 - **Reglas de uso de datos móviles (solo aplicaciones )**: defina los tipos de datos que las aplicaciones administradas pueden usar cuando están en redes de telefonía móvil. Las opciones son:
   - **Bloquear el uso de datos móviles**: bloquee el uso de los datos móviles en **Todas las aplicaciones administradas** o **Elegir aplicaciones específicas**.
@@ -424,7 +424,7 @@ El modo supervisado de iOS solo se puede habilitar durante la configuración ini
 - Interfaz de usuario de restricciones 
 - Instalación de perfiles de configuración por interfaz de usuario 
 - Noticias 
-- Accesos directos del teclado 
+- Métodos abreviados de teclado 
 - Modificaciones de código de acceso 
 - Cambios en los nombres de dispositivos 
 - Descargas de aplicaciones automáticas 

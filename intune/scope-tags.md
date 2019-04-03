@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bca2d52bb47a149c6a36bc1b8cbc4d65e50c0f4c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: HT
+ms.openlocfilehash: fb57ea2ef5c99c58968ee25b3a75b2165ece787a
+ms.sourcegitcommit: 0adb41c0640743d5cb726e66ad2427e3ad6faf20
+ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57756809"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58658556"
 ---
-# <a name="use-rbac-and-scope-tags-for-distributed-it"></a>Usar etiquetas RBAC y el ámbito para la TI
+# <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>Utilice el control de acceso basado en roles (RBAC) y las etiquetas de ámbito para la TI
 
-Puede usar el control de acceso basado en roles (RBAC) y las etiquetas de ámbito para asegurarse de que los administradores de la derecha tienen el derecho de acceso y la visibilidad a los objetos de Intune adecuados. Los roles determinan qué acceso a los administradores tienen a los objetos. Las etiquetas de ámbito determinan qué objetos de los administradores pueden ver.
+Puede usar etiquetas de control y el ámbito de acceso basado en rol para asegurarse de que los administradores de la derecha tienen el derecho de acceso y la visibilidad a los objetos de Intune adecuados. Los roles determinan qué acceso a los administradores tienen a los objetos. Las etiquetas de ámbito determinan qué objetos de los administradores pueden ver.
 
 Por ejemplo, supongamos que un administrador de la oficina de Seattle se asigna el rol Administrador de perfiles y directivas. Desea que este administrador para ver y administrar solo los perfiles y las directivas que se aplican solo a dispositivos de Seattle. Para ello, lo siguiente:
 
@@ -83,6 +83,21 @@ Por ejemplo, supongamos que un administrador de la oficina de Seattle se asigna 
 3. En **seleccionar etiquetas**, elija las etiquetas que desea agregar al perfil.
 4. Elija **seleccione** > **Aceptar** > **guardar**.
 
+## <a name="to-assign-a-scope-tag-to-an-app-configuration-policy"></a>Para asignar una etiqueta de ámbito a una directiva de configuración de aplicación
+Para dispositivos con **tipo de inscripción del dispositivo** establecido en **dispositivos administrados**:
+1. Elija **las aplicaciones cliente** > **directivas de configuración** > elija una directiva de configuración de la aplicación.
+2. Elija **propiedades** > **ámbito (etiquetas)** > elija las etiquetas que desea asignar a la directiva.
+
+Para dispositivos con **tipo de inscripción del dispositivo** establecido en **aplicaciones administradas**:
+1. Elija **las aplicaciones cliente** > **directivas de configuración** > elija una directiva de configuración de la aplicación.
+2. Elija **ámbito (etiquetas)** > elija las etiquetas que desea asignar a la directiva.
+
+
+## <a name="to-assign-a-scope-tag-to-an-ios-app-provisioning-profile"></a>Para asignar una etiqueta de ámbito a un perfil de aprovisionamiento de aplicaciones de iOS
+1. En Intune, elija **las aplicaciones cliente** > **perfiles de aprovisionamiento de aplicaciones iOS** > elija un perfil.
+2. Elija **propiedades** > **ámbito (etiquetas)** > elija las etiquetas que desea asignar al perfil.
+3. Elija **seleccione** > **Aceptar** > **guardar**.
+
 ## <a name="scope-tag-details"></a>Detalles de la etiqueta de ámbito
 Cuando se trabaja con las etiquetas de ámbito, recuerde estos detalles:
 
@@ -96,20 +111,13 @@ Cuando se trabaja con las etiquetas de ámbito, recuerde estos detalles:
     - Directivas de configuración: los dispositivos administrados
     - Scripts de PowerShell
     - Token de DEP
+    - Perfil de aprovisionamiento de aplicaciones de iOS
 - Cuando un administrador crea un objeto en Intune, todas las etiquetas de ámbito asignadas a dicho administrador se asignará automáticamente al nuevo objeto.
 - RBAC en Intune no se aplica a los roles de Azure Active Directory. Por lo tanto, los roles de administradores de servicios de Intune y los administradores globales tienen acceso de administrador completo a Intune independientemente de qué etiquetas de ámbito que tienen.
 - Los administradores en una asignación de roles con las etiquetas de ámbito también pueden ver los objetos de Intune sin etiquetas de ámbito.
 - Solo se puede asignar una etiqueta de ámbito que tiene en las asignaciones de rol.
 - Puede que solo los grupos de destino que se muestran en el ámbito (grupos) de la asignación de roles.
 - Si tiene una etiqueta de ámbito asignada a su rol, no se puede eliminar todas las etiquetas de ámbito en un objeto de Intune. Etiqueta de al menos un ámbito es necesaria.
-- Si un usuario tiene varias asignaciones de roles, permisos en las asignaciones de roles amplían a diferentes objetos como sigue:
-    - Asignar permisos solo se aplican a los objetos (por ejemplo, las directivas o aplicaciones) en la asignación de ese rol ámbito (grupos). Asignar los permisos no se aplican a los objetos de otras asignaciones de roles a menos que la asignación de otra les otorgue específicamente.
-    - Otros permisos (por ejemplo, la creación y lectura), se aplican a todos los objetos del mismo tipo (por ejemplo, todas las directivas o todas las aplicaciones) en cualquiera de las asignaciones del usuario.
-    - Permisos para objetos de tipos diferentes (por ejemplo, directivas o aplicaciones), no se aplican a entre sí. Por ejemplo, un permiso de lectura para una directiva, no proporciona un permiso de lectura a las aplicaciones en las asignaciones del usuario.
-
-
-
-
 
 ## <a name="next-steps"></a>Pasos siguientes
 

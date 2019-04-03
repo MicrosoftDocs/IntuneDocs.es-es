@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/11/2019
+ms.date: 03/20/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cdf7ea715a13809c860e77412914e3fd2b45a28
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5f2a9f2512f4f6fb12a65d0e7c4982fd351f1770
+ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57400490"
+ms.lasthandoff: 03/22/2019
+ms.locfileid: "58358324"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Colecciones de almacenamiento de datos de Intune
 
@@ -281,7 +281,7 @@ La entidad **deviceType** representa el tipo de dispositivo al que hacen referen
 | 12           | ISocConsumer      | Dispositivo iSoc Consumer                                |
 | 13           | Unix              | Dispositivo UNIX                                         |
 | 14           | MacMDM            | Dispositivo Mac OS X administrado con el agente MDM integrado |
-| 15           | HoloLens          | Dispositivo HoloLens                                    |
+| 15           | HoloLens          | Dispositivo HoloLens                                       |
 | 16           | SurfaceHub        | Dispositivo Surface Hub                                  |
 | 17           | AndroidForWork    | Dispositivo Android administrado mediante el propietario con perfil Android  |
 | 18           | AndroidEnterprise | Dispositivo Android Enterprise                          |
@@ -369,7 +369,7 @@ La entidad **EnrollmentFailureCategory** indica el motivo del error de una inscr
 | FeatureNotSupported             | Las características que usa esta inscripción no se admiten en esta cuenta.                                        |
 | EnrollmentRestrictionsEnforced  | Las restricciones de inscripción que ha configurado el administrador han bloqueado esta inscripción.                                          |
 | ClientDisconnected              | El cliente ha agotado el tiempo de espera o el usuario final ha anulado la inscripción.                                                        |
-| UserAbandonment                 | El usuario final ha anulado la inscripción. (El usuario final ha iniciado la inscripción, pero no se ha completado de manera oportuna).  |
+| UserAbandonment                 | El usuario final ha abandonado la inscripción. (El usuario final ha iniciado la inscripción, pero no se ha completado de manera oportuna).  |
 
 ## <a name="enrollmentfailurereasons"></a>enrollmentFailureReasons  
 La entidad **EnrollmentFailureReason** indica un motivo más detallado para el error de inscripción de un dispositivo dentro de una categoría de error determinada.  
@@ -398,7 +398,7 @@ La entidad **EnrollmentFailureReason** indica un motivo más detallado para el e
 | EnrollmentCriteriaNotMet         | No se pudo inscribir este dispositivo debido a una regla de restricción de inscripción configurada.                                                                                                                          |
 | BulkDeviceNotPreregistered       | No se han encontrado el identificador de equipo móvil internacional (IMEI) o el número de serie del dispositivo.  Sin este identificador, los dispositivos se reconocen como dispositivos personales que están bloqueados.  |
 | FeatureNotSupported              | El usuario ha intentado acceder a una característica que todavía no está disponible para todos los clientes o no es compatible con la configuración de Intune.                                                            |
-| UserAbandonment                  | El usuario final ha anulado la inscripción. (El usuario final ha iniciado la inscripción, pero no se ha completado de manera oportuna).                                                                                           |
+| UserAbandonment                  | El usuario final ha abandonado la inscripción. (El usuario final ha iniciado la inscripción, pero no se ha completado de manera oportuna).                                                                                           |
 | APNSCertificateExpired           | No se pueden administrar dispositivos de Apple con un certificado push MDM de Apple expirado.                                                                                                                            |
 
 ## <a name="intunemanagementextensions"></a>intuneManagementExtensions
@@ -448,7 +448,7 @@ La entidad **managementAgentTypes** representa los agentes usados para administr
 | 5                     | EasIntuneClient                   | El dispositivo se administra mediante Exchange Active Sync y el agente del equipo de Intune |
 | 8                     | ConfigManagerClient               | El dispositivo se administra mediante el agente de System Center Configuration Manager     |
 | 10                    | ConfigurationManagerClientMdm     | El dispositivo se administra mediante Configuration Manager y MDM.                    |
-| 11                    | ConfigurationManagerCLientMdmEas  | El dispositivo se administra mediante Configuration Manager, MDM y Eas.               |
+| 11                    | ConfigurationManagerCLientMdmEas  | El dispositivo está administrado por Configuration Manager, MDM y Exchange Active Sync.               |
 | 16                    | Unknown                           | Tipo de agente de administración desconocido                                              |
 | 32                    | Jamf                              | Los atributos del dispositivo se capturan de Jamf.                               |
 | 64                    | GoogleCloudDevicePolicyController |  El dispositivo se administra mediante CloudDPC de Google.                                 |
@@ -617,7 +617,7 @@ La colección de entidades **user** contiene los datos de usuario. Dichos regist
 | UserKey                    | Identificador único del usuario en el almacenamiento de datos. Clave suplente.                                                                                                                                                         | 123                                  |
 | UserId                     | Identificador único del usuario. Se parece a UserKey, pero es una clave natural.                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
 | UserEmail                  | Dirección de correo electrónico del usuario.                                                                                                                                                                                                     | John@constoso.com                    |
-| UPN                        | Nombre principal del usuario.                                                                                                                                                                                               | John@constoso.com                    |
+| userPrincipalName                        | Nombre principal del usuario.                                                                                                                                                                                               | John@constoso.com                    |
 | DisplayName                | Nombre para mostrar del usuario.                                                                                                                                                                                                      | Juan                                 |
 | IntuneLicensed             | Especifica si este usuario tiene licencia de Intune o no.                                                                                                                                                                              | Verdadero/Falso                           |
 | IsDeleted                  | Indica si todas las licencias del usuario expiraron y si, por lo tanto, el usuario se quitó de Intune. Esta marca no cambia si se trata de un solo registro. En su lugar, se crea un registro para un estado de usuario nuevo. | Verdadero/Falso                           |
