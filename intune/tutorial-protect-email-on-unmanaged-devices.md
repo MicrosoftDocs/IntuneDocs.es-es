@@ -1,12 +1,12 @@
 ---
 title: 'Tutorial: Protección del correo electrónico de Exchange Online en dispositivos no administrados'
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Aprenda a proteger Office 365 Exchange Online con directivas de protección de aplicaciones de Intune y acceso condicional de Azure AD.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 03/26/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4692e19d657e19efe18a91273ce585eb59c6cb65
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: e6224a0dae7c0aa3d80d4e64331a668953220f65
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57528282"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798791"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-unmanaged-devices"></a>Tutorial: Protección del correo electrónico de Exchange Online en dispositivos no administrados
 
@@ -91,8 +91,8 @@ Ahora vamos a crear dos directivas de acceso condicional para cubrir todas las p
 5.  En **Asignaciones**, seleccione **Condiciones** > **Plataformas de dispositivo**.
      
     1. En **Configurar**, seleccione **Sí**.
-    2. En la pestaña **Incluir**, seleccione **Todas las plataformas (incluidas las no admitidas)**. 
-    3. Seleccione **Listo**.
+    2. En la pestaña **Incluir**, seleccione **Cualquier dispositivo**.
+    1. Seleccione **Listo**.
    
 6.  En el panel **Condiciones**, seleccione **Aplicaciones cliente**.
      
@@ -136,7 +136,7 @@ Se crea la directiva de acceso condicional para clientes de autenticación moder
 5.  En **Asignaciones**, seleccione **Condiciones** > **Plataformas de dispositivo**.
      
     1. En **Configurar**, seleccione **Sí**.
-    2. En la pestaña **Incluir**, seleccione **Todas las plataformas (incluidas las no admitidas)** y después seleccione **Listo**. 
+    2. En la pestaña **Incluir**, seleccione **Cualquier dispositivo** y luego seleccione **Listo**. 
     3. Vuelva a seleccionar **Listo**.
 
 6.  En el panel **Condiciones**, seleccione **Aplicaciones cliente**.

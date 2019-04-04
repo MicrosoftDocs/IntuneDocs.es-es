@@ -1,12 +1,12 @@
 ---
 title: 'Tutorial: Protección del correo electrónico de Exchange Online en dispositivos administrados por Intune'
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Aprenda a proteger Exchange Online con las directivas de cumplimiento de Intune para iOS y el acceso condicional de Azure AD para exigir dispositivos administrados y la aplicación Outlook.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2018
+ms.date: 03/26/2019
 ms.topic: tutorial
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6c76a22fec1342481a67029147c757347a06447c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: f4a8e873c48ceb59bfb8ac98fec9a29fa51d6cd3
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57528214"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799775"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>Tutorial: Protección del correo electrónico de Exchange Online en dispositivos administrados
 Obtenga información sobre cómo usar las directivas de cumplimiento de dispositivos con acceso condicional para asegurarse de que los dispositivos iOS pueden acceder al correo electrónico de Exchange Online solo si se administran mediante Intune y con una aplicación de correo electrónico aprobada. 
@@ -43,7 +43,7 @@ Si no tiene una suscripción a Intune, [regístrese para obtener una cuenta de p
 
 ## <a name="sign-in-to-intune"></a>Iniciar sesión en Intune
 
-Inicie sesión en [Intune](https://aka.ms/intuneportal) como administrador global o administrador de servicios de Intune. Intune se encuentra en Azure Portal, si selecciona **Todos los servicios** > **Intune**.
+Inicie sesión en [Intune](https://aka.ms/intuneportal) como administrador global o administrador de servicios de Intune. Si ha creado una suscripción de prueba de Intune, la cuenta con la que creó la suscripción es el administrador global.
 
 ## <a name="create-the-ios-device-compliance-policy"></a>Creación de una directiva de cumplimiento para dispositivos iOS
 Configure una directiva de cumplimiento para dispositivos Intune para establecer las condiciones que debe cumplir un dispositivo para que se considere compatible. Para este tutorial, se creará una directiva de cumplimiento para dispositivos iOS. Las directivas de cumplimiento son específicas de la plataforma, por lo que necesita una directiva de cumplimiento independiente para cada plataforma de dispositivo que va a evaluar.
@@ -75,7 +75,7 @@ Configure una directiva de cumplimiento para dispositivos Intune para establecer
 8.  Seleccione **Aceptar** y, luego, **Aceptar**.
 9.  Seleccione **Crear**.
 
-## <a name="create-the-conditional-access-policy"></a>Crear la directiva de acceso condicional
+## <a name="create-the-conditional-access-policy"></a>Creación de la directiva de acceso condicional
 Ahora se va a crear una directiva de acceso condicional que requiere que todas las plataformas de dispositivo se inscriban en Intune y cumplan la directiva de cumplimiento de Intune para que puedan acceder a Exchange Online. También se necesita la aplicación Outlook para el acceso al correo electrónico. Las directivas de acceso condicional se pueden configurar en el portal de Azure AD o en el portal de Intune. Como ya estamos en el portal de Intune, vamos a crear la directiva aquí.
 1.  En Intune, seleccione **Acceso condicional** > **Directivas** > **Nueva directiva**.
 1.  En **Nombre**, escriba **Probar directiva para el correo electrónico de Office 365**. 
@@ -93,7 +93,7 @@ Ahora se va a crear una directiva de acceso condicional que requiere que todas l
 5.  En **Asignaciones**, seleccione **Condiciones** > **Plataformas de dispositivo**.
      
     1. En **Configurar**, seleccione **Sí**.
-    2. En la pestaña **Incluir**, seleccione **Todas las plataformas (incluidas las no admitidas)** y después seleccione **Listo**. 
+    2. En la pestaña **Incluir**, seleccione **Cualquier dispositivo** y luego seleccione **Listo**. 
     3. Vuelva a seleccionar **Listo**.
    
     ![Seleccione la aplicación Office 365 Exchange Online](media/tutorial-protect-email-on-enrolled-devices/ios-ca-policy-cloud-device-platforms.png)

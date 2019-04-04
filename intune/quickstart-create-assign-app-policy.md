@@ -1,12 +1,12 @@
 ---
 title: 'Inicio rápido: Crear y asignar una directiva de protección de aplicaciones'
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: En este tutorial de inicio rápido usará Microsoft Intune para crear y asignar una directiva de protección de aplicaciones.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7dee5407b39d9299081bf526b117c64b5883a106
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5d7e63542563425606cf1f9a8509a7bf0c09b9a9
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57393356"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871368"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>Inicio rápido: Creación y asignación de una directiva de protección de aplicaciones
 
@@ -72,7 +72,7 @@ Use los siguientes pasos para asignar la directiva de protección de aplicacione
 3.  Seleccione **Asignaciones**.
 4.  Haga clic en **Seleccionar grupos para incluir** en la pestaña **Incluir**.
 5.  Seleccione **Contoso Testers** (Evaluadores de Contoso) como el grupo que se va a incluir.
-6.  Haga clic en **Seleccionar**. 
+6.  Haga clic en **Seleccionar** > **Guardar**. 
 
 Ya ha asignado la directiva de protección de aplicaciones.
 

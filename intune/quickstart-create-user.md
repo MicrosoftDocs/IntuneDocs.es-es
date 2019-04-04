@@ -6,23 +6,23 @@ author: ErikjeMS
 ms.service: microsoft-intune
 ms.localizationpriority: high
 ms.topic: quickstart
-ms.date: 10/30/2018
+ms.date: 03/25/2019
 ms.author: erikje
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98c71bd4c93e869b429b7677b4fb7c442aa58643
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: b49595493b5db3e5735e0a4717c27e91f058b8d8
+ms.sourcegitcommit: d38ca1bf44e17211097aea481e00b6c1e87effae
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57991077"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58514270"
 ---
-# <a name="quickstart-create-a-user-and-assign-a-license-to-it"></a>Inicio rápido: Crear un usuario y asignarle una licencia
+# <a name="quickstart-create-a-user-in-intune-and-assign-them-a-license"></a>Inicio rápido: Creación de un usuario en Intune y asignación de una licencia
 
-En este inicio rápido, creará un usuario y le asignará una licencia. Al usar Intune, toda persona que necesite tener acceso a los datos de la compañía deberá tener una cuenta de usuario. Los administradores de Intune pueden configurar estos usuarios más adelante para administrar el control de acceso.
+En este inicio rápido, creará un usuario y le asignará una licencia de Intune. Al usar Intune, toda persona que necesite tener acceso a los datos de la empresa deberá tener su propia cuenta de usuario. Los administradores de Intune pueden configurar a los usuarios más adelante para administrar el control de acceso.
 
 Si no tiene una suscripción a Intune, [regístrese para obtener una cuenta de prueba gratuita](free-trial-sign-up.md).
 
@@ -32,7 +32,7 @@ Inicie sesión en [Intune](https://aka.ms/intuneportal) como [administrador glob
 
 ## <a name="create-a-user"></a>Crear un usuario
 
-Los usuarios deben tener una cuenta de usuario para poder inscribirse en la administración de dispositivos de Intune.
+Los usuarios deben tener una cuenta de usuario para poder inscribirse en la administración de dispositivos de Intune. Para crear un usuario:
 
 1. En Intune, elija **Usuarios** > **Todos los usuarios** > **Nuevo usuario**.
 ![Explorador](media/quickstart-create-user/create-user.png)
@@ -47,10 +47,12 @@ Los usuarios deben tener una cuenta de usuario para poder inscribirse en la admi
 
 ## <a name="assign-a-license-to-the-user"></a>Asignar una licencia a un usuario
 
-Después de crear un usuario, debe usar el [Centro de administración de Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) para asignar una licencia de Intune a ese usuario. Si no le asigna una licencia, no podrá inscribir su dispositivo en Intune. 
+Después de crear un usuario, debe usar el [Centro de administración de Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) para asignarle una licencia de Intune. Si no se le asigna una licencia al usuario, no podrá inscribir su dispositivo en Intune. 
+
+Para asignar una licencia de Intune a un usuario:
 
 1. Inicie sesión en el [Centro de administración de Microsoft 365](http://go.microsoft.com/fwlink/p/?LinkId=698854) con las mismas credenciales que ha usado para iniciar sesión en Intune.
-2. Elija **Usuarios** > **Usuarios activos** > elija el usuario que acaba de crear.
+2. Elija **Usuarios** > **Usuarios activos** > y elija el usuario que acaba de crear.
 3. Junto a **Licencias de productos**, seleccione **Editar**.
 4. En **Ubicación**, elija una ubicación para el usuario.
 5. Haga clic en **Activar** junto a la licencia de Intune (o en otra licencia que tenga que incluya Intune). El [nombre de producto](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)** que se muestra se usa como plan de servicio en la administración de Azure 
@@ -67,7 +69,7 @@ Si ya no necesita este usuario, puede eliminarlo desde el [Centro de administrac
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-En este inicio rápido, ha creado un usuario y le ha asignado una licencia. Para obtener más información sobre cómo agregar usuarios a Intune, consulte [Adición de usuarios y concesión de permiso administrativo a Intune](users-add.md).
+En este inicio rápido, creó un usuario y le asignó una licencia de Intune. Para obtener más información sobre cómo agregar usuarios a Intune, consulte [Adición de usuarios y concesión de permiso administrativo a Intune](users-add.md).
 
 Para seguir esta serie de tutoriales de inicio rápido de Intune, pase al siguiente tutorial de inicio rápido.
 

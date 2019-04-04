@@ -1,12 +1,12 @@
 ---
 title: 'Inicio rápido: Enviar notificaciones a dispositivos no conformes'
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: En este tutorial de inicio rápido usará Microsoft Intune para enviar notificaciones por correo electrónico a dispositivos no conformes.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/09/2018
+ms.date: 03/26/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 757191515ca88cedf1a5edcdb243b1ecb730ec3c
-ms.sourcegitcommit: fdc6261f4ed695986e06d18353c10660a4735362
+ms.openlocfilehash: ba835eb76dae19a13985a6175b4eceee0bae7f12
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57991123"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871440"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Inicio rápido: Enviar notificaciones a dispositivos no conformes
 
@@ -40,7 +40,7 @@ Si no tiene una suscripción a Intune, [regístrese para obtener una cuenta de p
 
 ## <a name="sign-in-to-intune"></a>Iniciar sesión en Intune
 
-Inicie sesión en el portal de [Intune](https://aka.ms/intuneportal) como [administrador global](users-add.md#types-of-administrators) o como [administrador de servicios](users-add.md#types-of-administrators) de Intune. 
+Inicie sesión en el portal de [Intune](https://aka.ms/intuneportal) como [administrador global](users-add.md#types-of-administrators) o como [administrador de servicios](users-add.md#types-of-administrators) de Intune. Si ha creado una suscripción de prueba de Intune, la cuenta con la que creó la suscripción es el administrador global.
 
 ## <a name="create-a-notification-message-template"></a>Creación de una plantilla de mensaje de notificación
 
@@ -51,7 +51,7 @@ Para enviar correo electrónico a los usuarios, cree una plantilla de mensaje de
 
    - **Nombre**: *Administrador de Contoso*
    - **Asunto**: *Conformidad de dispositivos*
-   - **Mensaje**: *Su dispositivo no cumple los requisitos de cumplimiento de nuestra organización.*
+   - **Mensaje**: *Su dispositivo no cumple los requisitos de cumplimiento de nuestra organización*.
    - **Encabezado de correo electrónico: incluir logotipo de la empresa**: establézcalo en **Habilitado** para mostrar el logotipo de la organización.
    - **Pie de página de correo electrónico: incluir nombre de la empresa**: establézcalo en **Habilitado** para mostrar el nombre de la organización.
    - **Pie de página de correo electrónico: incluir información de contacto**: establézcalo en **Habilitado** para mostrar la información de contacto de la organización.
@@ -83,14 +83,13 @@ Con los pasos siguientes puede crear una directiva de cumplimiento para disposit
 5. Establezca **Requerir una contraseña para desbloquear dispositivos móviles** en **Requerir**. Esta configuración especifica si es preciso que los usuarios escriban una contraseña para poder obtener acceso a información en sus dispositivos móviles. 
 6. Establezca **Longitud mínima de la contraseña** en **6**. Esta configuración especifica el número mínimo de dígitos o caracteres de la contraseña.
 
-    ![Configuración de la seguridad del sistema de una nueva directiva de cumplimiento](./media/quickstart-send-notification-02.png) 
+    <img alt="System Security settings for a new compliance policy" src="./media/quickstart-send-notification-02.png" width="600">
 
 7. Haga clic en **Aceptar**, en **Aceptar** y en **Crear** para crear la directiva de cumplimiento.
-8. Seleccione el nombre de la nueva directiva: **Cumplimiento de Windows 10**.
-9. Seleccione **Propiedades** > **Action for noncompliance** (Acción de incumplimiento)  > **Agregar**.
-10. En el cuadro desplegable **Acción**, compruebe que la opción **Enviar correo electrónico a usuario final** está seleccionada.
-11. Seleccione **Plantilla de mensaje** > **Administrador de Contoso** > **Seleccionar** para seleccionar la plantilla de mensaje que ha creado en este tema.
-12. Seleccione **Aceptar** > **Aceptar** > **Guardar** para guardar los cambios.
+8. Seleccione **Propiedades** > **Action for noncompliance** (Acción de incumplimiento)  > **Agregar**.
+9. En el cuadro desplegable **Acción**, compruebe que la opción **Enviar correo electrónico a usuario final** está seleccionada.
+10. Seleccione **Plantilla de mensaje** > **Administrador de Contoso** > **Seleccionar** para seleccionar la plantilla de mensaje que ha creado en este tema.
+11. Seleccione **AGREGAR** > **Aceptar** > **Guardar** para guardar los cambios.
 
 ## <a name="assign-the-policy"></a>Asignación de la directiva
 
