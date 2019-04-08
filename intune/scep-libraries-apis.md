@@ -1,6 +1,6 @@
 ---
 title: API para incorporar entidades de certificación de terceros
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Agregue o integre la solución de GitHub de SCEP para que las entidades de certificación (CA) de terceros emitan certificados SCEP para dispositivos de Microsoft Intune. En esta solución se incluyen las API de Java y C# que validan, envían notificaciones correctas y de error a Intune, y usan el generador de sockets SSL al comunicarse con Intune. También se proporciona una introducción de los pasos para probar la configuración de la entidad de certificación SCEP.
 keywords: ''
 author: MandiOhlinger
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 274b512a8fa4b4026d26c8b5e6a704f51a0bef95
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: bf5a9d509bd390561614f59fdce208e8e9f10dde
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565798"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799627"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>Uso de API para agregar entidades de certificación de terceros para SCEP en Intune
 

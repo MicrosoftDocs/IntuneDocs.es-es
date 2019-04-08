@@ -1,12 +1,12 @@
 ---
 title: Obtener datos de la API de almacenamiento de datos con un cliente de REST
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: En este tema se describe cómo recuperar datos de Data Warehouse de Microsoft Intune mediante una API de RESTful.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/10/2019
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e57d197cadf2ba6586aa39fdc5dbb9cddba554c
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 5aa85ee044eae5fba9dcb7c380a29dda727c6492
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566580"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871457"
 ---
 # <a name="get-data-from-the-intune-data-warehouse-api-with-a-rest-client"></a>Obtener datos de la API de almacenamiento de datos de Intune con un cliente de REST
 
@@ -96,13 +96,13 @@ Necesita la información siguiente para realizar una llamada REST mediante Postm
 También se necesita el punto de conexión. Para obtener el punto de conexión de almacenamiento de datos, necesitará la dirección URL de fuente personalizada. Puede obtener el punto de conexión de OData del panel Almacenamiento de datos.
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. Seleccione **Configurar el almacenamiento de datos de Intune** en **Otras tareas**.
-4. Copie la dirección URL de fuente personalizada en **Usar servicios de informes de terceros**. Debería tener un aspecto parecido a este: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
+4. Copie la dirección URL de fuente personalizada en **Usar servicios de informes de terceros**. Debería tener un aspecto parecido a este: `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=v1.0`
 
 El punto de conexión sigue este formato: `https://fef.{yourtenant}.manage.microsoft.com/ReportingService/DataWarehouseFEService/{entity}?api-version={verson-number}`.
 
-Por ejemplo, la entidad **dates** tiene el siguiente aspecto:`https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+Por ejemplo, la entidad **dates** tiene el siguiente aspecto:`https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 
 Para obtener más información, vea [Punto de conexión de la API de Almacenamiento de datos de Intune](reports-api-url.md).
 
@@ -116,7 +116,7 @@ Para obtener un nuevo token de acceso de Postman, debe agregar la dirección URL
 2.  Abra Postman. Elija la operación HTTP **GET**.
 3.  Pegue la dirección URL del punto de conexión en la dirección. Debería tener un aspecto parecido a este:  
 
-    `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=beta`
+    `https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService/dates?api-version=v1.0`
 4.  Seleccione la pestaña **Autorización** y elija **OAuth 2.0** en la lista **Tipo**.
 5.  Seleccione **Obtener token de acceso nuevo**.
 6.  Compruebe que ya haya agregado la dirección URL de devolución de llamada a la aplicación en Azure. La dirección URL de devolución de llamada es `https://www.getpostman.com/oauth2/callback`.
@@ -197,7 +197,7 @@ El ejemplo siguiente contiene un cliente REST simple. El código usa la clase **
    var emailAddress = "intuneadmin@yourcompany.com";
    var password = "password_of(intuneadmin@yourcompany.com)";
    var applicationId = "<Application ID>";
-   var warehouseUrl = "https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta";
+   var warehouseUrl = "https://fef.{yourinfo}.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=v1.0";
    var collectionName = "dates";
 
    var adalContext = new AuthenticationContext("https://login.windows.net/common/oauth2/token");

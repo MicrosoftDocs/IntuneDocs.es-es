@@ -1,6 +1,6 @@
 ---
 title: Modelo de datos de Almacenamiento de datos
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: El almacenamiento de datos de Microsoft Intune muestrea los datos a diario para proporcionar una vista histórica del entorno móvil, en constante cambio.
 keywords: Almacenamiento de datos de Intune
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2cbf6e1bde3f8853f2e5c6c1919089bf0dc10126
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 43e555a27565de43d417adc473d48254d8b7d5a2
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57565527"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798180"
 ---
 # <a name="microsoft-intune-data-warehouse-data-model"></a>Modelo de datos de Data Warehouse de Microsoft Intune
 

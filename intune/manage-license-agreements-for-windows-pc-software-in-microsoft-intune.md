@@ -1,6 +1,6 @@
 ---
 title: Administración de contratos de licencia de software para equipos que ejecutan el software cliente de Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Use Intune para administrar contratos de licencia de software adquiridos a través de los contratos de licencias por volumen de Microsoft, así como de software que se adquirió por otros medios.
 keywords: ''
 author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d79cf2e8d61de1737d3a47533fbf25976c32d7a
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
+ms.openlocfilehash: 92262a9d1f07b8756ced8788feee586ffa30088a
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57461216"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798808"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>Administrar contratos de licencia de software de equipos Windows en Microsoft Intune
 
