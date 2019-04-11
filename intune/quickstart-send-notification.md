@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 03/27/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba835eb76dae19a13985a6175b4eceee0bae7f12
-ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
+ms.openlocfilehash: 4b5e6ac4683284dc71c9171f4367e72d5ec45c59
+ms.sourcegitcommit: 699427f36dbf31dc7921fb75da647b736eafd79b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58871440"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58899018"
 ---
 # <a name="quickstart-send-notifications-to-noncompliant-devices"></a>Inicio rápido: Enviar notificaciones a dispositivos no conformes
 
@@ -85,7 +85,7 @@ Con los pasos siguientes puede crear una directiva de cumplimiento para disposit
 
     <img alt="System Security settings for a new compliance policy" src="./media/quickstart-send-notification-02.png" width="600">
 
-7. Haga clic en **Aceptar**, en **Aceptar** y en **Crear** para crear la directiva de cumplimiento.
+7. Seleccione **Aceptar** > **Aceptar** > **Crear** para crear la directiva de cumplimiento.
 8. Seleccione **Propiedades** > **Action for noncompliance** (Acción de incumplimiento)  > **Agregar**.
 9. En el cuadro desplegable **Acción**, compruebe que la opción **Enviar correo electrónico a usuario final** está seleccionada.
 10. Seleccione **Plantilla de mensaje** > **Administrador de Contoso** > **Seleccionar** para seleccionar la plantilla de mensaje que ha creado en este tema.
