@@ -6,7 +6,7 @@ keywords: Almacenamiento de datos de Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/09/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16084e2cd33f6aac9313bb1f8e9fba0467a3ce73
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: 4e650f8cb713d76c44d3f3399612ee5fd6d02426
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: MTE75
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58797864"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59429151"
 ---
 # <a name="reference-for-user-entity"></a>Referencia de la entidad de usuario
 
@@ -33,18 +33,19 @@ La categoría **Usuario** contiene la entidad **Usuario**, que define las propie
 
 La entidad **User** muestra todos los usuarios de Azure Active Directory (Azure AD) con licencias asignadas en la empresa.
 
-La colección de entidades **Usuario** contiene los datos del usuario. Dichos registros incluyen los estados de los usuarios durante el período de recopilación de datos, incluso aunque se haya eliminado a alguno de ellos. Por ejemplo, es posible que durante el último mes se haya agregado a un usuario a Intune y, luego, se haya eliminado. A pesar de que no esté presente a la hora de generar el informe, el usuario en cuestión y su estado sí que figuran en los datos del mes anterior. Una opción podría ser crear un informe que incluya el historial relativo a la duración de la presencia del usuario en sus datos.
+La colección de entidades **Usuario** contiene los datos del usuario. Dichos registros incluyen los estados de los usuarios durante el período de recopilación de datos, incluso aunque se haya eliminado a alguno de ellos. Por ejemplo, es posible que durante el último mes se haya agregado a un usuario a Intune y, luego, se haya eliminado. A pesar de que este usuario no esté presente a la hora de generar el informe, el usuario en cuestión y su estado sí que figuran en los datos del mes anterior. Una opción podría ser crear un informe que incluya el historial relativo a la duración de la presencia del usuario en sus datos.
 
-| Propiedad  | Descripción | Ejemplo |
-|---------|------------|--------|
-| UserKey |Identificador único del usuario en el almacenamiento de datos. Clave suplente. |123 |
-| UserId |Identificador único del usuario. Se parece a UserKey, pero es una clave natural. |b66bc706-ffff-7437-0340-032819502773 |
-| UserEmail |Dirección de correo electrónico del usuario. |John@constoso.com |
-| userPrincipalName | Nombre principal del usuario. | John@constoso.com |
-| DisplayName |Nombre para mostrar del usuario. |Juan |
-| IntuneLicensed |Especifica si este usuario tiene licencia de Intune o no. |Verdadero/Falso |
-| IsDeleted | Indica si todas las licencias del usuario expiraron y si, por lo tanto, el usuario se quitó de Intune. Esta marca no cambia si se trata de un solo registro. En su lugar, se crea un registro para un estado de usuario nuevo. |Verdadero/Falso |
-| RowLastModifiedDateTimeUTC |Fecha y hora en formato UTC cuando se modificó por última vez el registro en el almacenamiento de datos  |23/11/2016 12:00:00 AM |
+|          Propiedad          |                                                                                                           Descripción                                                                                                          |                Ejemplo               |
+|:--------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------:|
+| UserKey                    | Identificador único del usuario en el almacenamiento de datos. Clave suplente.                                                                                                                                                         | 123                                  |
+| UserId                     | Identificador único del usuario. Se parece a UserKey, pero es una clave natural.                                                                                                                                                    | b66bc706-ffff-7437-0340-032819502773 |
+| UserEmail                  | Dirección de correo electrónico del usuario.                                                                                                                                                                                                     | John@constoso.com                    |
+| userPrincipalName                        | Nombre principal del usuario.                                                                                                                                                                                               | John@constoso.com                    |
+| DisplayName                | Nombre para mostrar del usuario.                                                                                                                                                                                                      | Juan                                 |
+| IntuneLicensed             | Especifica si este usuario tiene licencia de Intune o no.                                                                                                                                                                              | Verdadero/Falso                           |
+| IsDeleted                  | Indica si todas las licencias del usuario expiraron y si, por lo tanto, el usuario se quitó de Intune. Esta marca no cambia si se trata de un solo registro. En su lugar, se crea un registro para un estado de usuario nuevo. | Verdadero/Falso                           |
+| RowLastModifiedDateTimeUTC | Fecha y hora en formato UTC en que se modificó por última vez el registro en el almacenamiento de datos                                                                                                                                                 | 23/11/2016 0:00                      |
+
 
 ## <a name="next-steps"></a>Pasos siguientes
  - Puede usar la colección de entidades **Usuario actual** para limitar los datos de usuario a los usuarios actualmente activos. Para más información, consulte [Referencia de la entidad de usuario actual](reports-ref-current-user.md).
