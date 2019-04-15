@@ -1,15 +1,16 @@
 ---
 title: Adición de aplicaciones de línea de negocio de macOS a Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Obtenga información sobre cómo agregar aplicaciones de línea de negocio (LOB) de macOS a Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 04/09/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ef8008ac-8b85-4bfc-86ac-1f9fcbd3db76
 ms.reviewer: aiwang
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b87d20faccbe2b0ea58c085f9b2c40d8506fc677
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 90684c2994ccd3c90116a90e255ed6b9be1f6a76
+ms.sourcegitcommit: 617bd653c34c1e6a4e2ad61811c5912f8dab775c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231560"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59570616"
 ---
 # <a name="how-to-add-macos-line-of-business-lob-apps-to-microsoft-intune"></a>Adición de aplicaciones de línea de negocio (LOB) de macOS a Microsoft Intune
 
@@ -61,7 +62,7 @@ Debe descargar una herramienta externa para procesar previamente los archivos *.
 ## <a name="step-1---specify-the-software-setup-file"></a>Paso 1: Especificación del archivo de instalación de software
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En el panel **Intune**, seleccione **Aplicaciones cliente**.
 4. En la carga de trabajo **Aplicaciones cliente**, elija **Administrar** > **Aplicaciones**.
 5. Encima de la lista de aplicaciones, elija **Agregar**.

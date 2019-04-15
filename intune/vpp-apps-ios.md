@@ -1,15 +1,16 @@
 ---
 title: Administración de aplicaciones iOS compradas por volumen en Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: Obtenga información sobre cómo puede sincronizar aplicaciones compradas por volumen en la tienda de iOS en Microsoft Intune y luego administrar y realizar el seguimiento de su uso.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 04/09/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 606fe0dfe7160d6fe61366db98b7f22a45216bd0
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: dca219f1593265e0bf6447c054969548d5d79351
+ms.sourcegitcommit: 617bd653c34c1e6a4e2ad61811c5912f8dab775c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229843"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59570642"
 ---
 # <a name="how-to-manage-ios-apps-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Administrar aplicaciones de iOS compradas a través de un programa de compras por volumen con Microsoft Intune
 
@@ -83,7 +84,7 @@ Antes de empezar, necesita obtener un token de VPP de Apple y cargarlo en la cue
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Para obtener y cargar un token de PCV de Apple
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3.  En el panel **Intune**, elija **Aplicaciones cliente** > **Tokens de VPP de iOS** en **Configuración**.
 4.  En la lista del panel de tokens del VPP, seleccione **Crear**.
 5. En el panel **Crear token de VPP**, especifique la información siguiente:
@@ -124,11 +125,11 @@ El usuario final recibirá solicitudes para que instale la aplicación de VPP en
 
 | # | Escenario                                | Invitar al programa VPP de Apple                              | Solicitud de instalación de la aplicación | Solicitud del ID de Apple |
 |---|--------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------|-----------------------------------|
-| 1 | BYOD: usuario con licencia                             | esté                                                                                               | esté                                           | esté                                 |
-| 2 | Corp: usuario con licencia (dispositivo no supervisado)     | esté                                                                                               | esté                                           | esté                                 |
-| 3 | Corp: usuario con licencia (dispositivo supervisado)         | esté                                                                                               | No                                           | esté                                 |
-| 4 | BYOD: dispositivo con licencia                           | No                                                                                               | esté                                           | No                                 |
-| 5 | Corp: dispositivo con licencia (dispositivo no supervisado)                           | No                                                                                               | esté                                           | No                                 |
+| 1 | BYOD: usuario con licencia                             | S                                                                                               | S                                           | S                                 |
+| 2 | Corp: usuario con licencia (dispositivo no supervisado)     | S                                                                                               | S                                           | S                                 |
+| 3 | Corp: usuario con licencia (dispositivo supervisado)         | S                                                                                               | No                                           | S                                 |
+| 4 | BYOD: dispositivo con licencia                           | No                                                                                               | S                                           | No                                 |
+| 5 | Corp: dispositivo con licencia (dispositivo no supervisado)                           | No                                                                                               | S                                           | No                                 |
 | 6 | Corp: dispositivo con licencia (dispositivo supervisado)                           | No                                                                                               | No                                           | No                                 |
 | 7 | Pantalla completa (dispositivo supervisado): dispositivo con licencia | No                                                                                               | No                                           | No                                 |
 | 8 | Pantalla completa (dispositivo supervisado): usuario con licencia   | --- | ---                                          | ---                                |

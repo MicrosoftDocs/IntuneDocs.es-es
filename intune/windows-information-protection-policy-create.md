@@ -1,5 +1,6 @@
 ---
-title: Creación e implementación de una directiva de protección de aplicaciones de Windows Information Protection (WIP) | Microsoft Intune
+title: Creación e implementación de una directiva de protección de aplicaciones de Windows Information Protection (WIP)
+titleSuffix: Microsoft Intune
 description: Creación e implementación de una directiva de protección de aplicaciones de Windows Information Protection (WIP) con Microsoft Intune
 keywords: ''
 author: Erikre
@@ -9,6 +10,7 @@ ms.date: 01/02/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4e3627bd-a9fd-49bc-b95e-9b7532f0ed55
 ms.reviewer: joglocke
@@ -16,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6494bbff9ca1c9d46c4af03ff90340fcca36ec97
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 1b8257b315bc18b10e7c2c86e931af005e44730c
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231577"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569771"
 ---
 # <a name="create-and-deploy-windows-information-protection-wip-app-protection-policy-with-intune"></a>Creación e implementación de una directiva de protección de aplicaciones de Windows Information Protection (WIP) con Intune
 
@@ -125,7 +127,8 @@ Después de agregar las aplicaciones que desea proteger con WIP, debe aplicar un
 
 Aprendizaje de WIP es un informe que permite supervisar las aplicaciones que tengan WIP habilitado y las que sean desconocidas para WIP. Las aplicaciones desconocidas son las que no ha implementado el departamento de TI de su organización. Puede exportar estas aplicaciones desde el informe y agregarlas a sus directivas de WIP para evitar la interrupción de productividad antes de exigir WIP en modo "Bloquear".
 
-<!-- 1631908 --> Además de ver información sobre las aplicaciones habilitadas para WIP, puede ver un resumen de los dispositivos que han compartido datos de trabajo con sitios web. Con esta información, puede determinar qué sitios web se deben agregar a las directivas WIP de grupo y de usuario. En el resumen se muestra que las aplicaciones habilitadas para WIP han accedido a las direcciones URL del sitio web.
+<!-- 1631908 -->
+Además de ver información sobre las aplicaciones habilitadas para WIP, puede ver un resumen de los dispositivos que han compartido datos de trabajo con sitios web. Con esta información, puede determinar qué sitios web se deben agregar a las directivas WIP de grupo y de usuario. En el resumen se muestra que las aplicaciones habilitadas para WIP han accedido a las direcciones URL del sitio web.
 
 Al trabajar con aplicaciones que tengan WIP habilitado o que sean desconocidas para WIP, se recomienda empezar con **Silencioso** o **Permitir invalidaciones** al realizar comprobaciones con un pequeño grupo que tenga las aplicaciones adecuadas en la lista de aplicaciones protegidas. Cuando haya terminado, puede cambiar a la directiva de aplicación final, **Bloquear**.
 

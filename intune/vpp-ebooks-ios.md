@@ -1,15 +1,16 @@
 ---
 title: Administración de libros electrónicos de iOS comprados por volumen
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Obtenga información sobre cómo puede sincronizar libros comprados por volumen en la tienda de iOS en Intune y luego administrar y realizar el seguimiento de su uso.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 04/09/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f5617074-2384-4812-b913-dc94f64c0818
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: daed0da10a31d3429cf44bda8829369c741ba71a
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: f31c623196abd4ffcdfc4f5ccded088c12d5d992
+ms.sourcegitcommit: 617bd653c34c1e6a4e2ad61811c5912f8dab775c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57235555"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59570746"
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>Administración de libros electrónicos de iOS comprados a través de un programa de compras por volumen con Microsoft Intune
 
@@ -56,7 +57,7 @@ Antes de empezar, obtenga un token de VPP de Apple y cárguelo en la cuenta de I
 ## <a name="to-get-and-upload-an-apple-vpp-token"></a>Para obtener y cargar un token de PCV de Apple
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. En el panel **Intune**, seleccione **Aplicaciones cliente**.
 1.  En la carga de trabajo **Aplicaciones cliente**, seleccione **Configuración** > **Tokens de VPP de iOS**.
 2.  En la lista del panel de tokens del VPP, haga clic en **Crear**.

@@ -1,6 +1,6 @@
 ---
 title: Determinación de los requisitos de los escenarios de casos de uso
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Este artículo ayuda a determinar los requisitos de los escenarios de casos de subuso y de casos de uso de Intune para una implementación solo en la nube de Microsoft Intune.
 keywords: ''
 author: dougeby
@@ -10,6 +10,7 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: fd8cb5f7-19f0-4d80-8825-2bafa49624af
 ms.reviewer: jeffbu, cgerth
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca1e8bce92d089059ab2097095c6a32da4da0f2d
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 6cb081e16767abde4707e7a6c8719b773474fb95
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57237527"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59568666"
 ---
 # <a name="determine-use-case-scenario-requirements"></a>Determinación de los requisitos de los escenarios de casos de uso
 

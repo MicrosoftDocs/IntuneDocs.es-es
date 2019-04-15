@@ -1,6 +1,6 @@
 ---
 title: Identificación de escenarios de casos de uso
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Este artículo ayuda a identificar los escenarios de casos de subuso y de casos de uso de Intune para una implementación solo en la nube de Microsoft Intune.
 keywords: ''
 author: dougeby
@@ -10,6 +10,7 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4b3c9af9-78da-44d2-8bd2-3f0f8885952d
 ms.reviewer: jeffbu, cgerth
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 654b9c373d5abf351dc3156c12b365c1b1fd3423
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 69a4ee29a6d35623d6269a94a9c1b4fc7a1f956f
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238428"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567561"
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>Identificación de escenarios de casos de uso de administración de dispositivos móviles
 

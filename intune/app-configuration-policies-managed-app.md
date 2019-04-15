@@ -1,6 +1,6 @@
 ---
 title: Directivas de configuración para aplicaciones administradas sin inscripción de dispositivos
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Obtenga información sobre cómo configurar directivas para aplicaciones administradas sin inscripción de dispositivos.
 keywords: ''
 author: Erikre
@@ -10,6 +10,7 @@ ms.date: 01/02/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: E61C1618-79D0-41A1-B61F-4123FB6672FC
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cde71d7c4c23aeb91c1e43469e23a4764e62b5b
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 92aae318fd8ffb53b933ca8ddce21a6c6220f494
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238598"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "59567210"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>Agregar directivas de configuración para aplicaciones administradas sin inscripción de dispositivos
 
@@ -31,7 +32,7 @@ ms.locfileid: "57238598"
 Puede usar directivas de configuración de aplicaciones con aplicaciones administradas que admiten Intune App SDK incluso en los dispositivos que no están inscritos. 
 
 1. Inicie sesión en [Azure Portal](https://portal.azure.com).
-2. Elija **All services** (Todos los servicios)  > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
+2. Elija **Todos los servicios** > **Intune**. Intune se encuentra en la sección **Supervisión y administración**.
 3. Elija la carga de trabajo **Aplicaciones cliente**.
 4. En el grupo **Administrar**, elija **Directivas de configuración de aplicaciones** y **Agregar**.
 5. Especifique los siguientes detalles:

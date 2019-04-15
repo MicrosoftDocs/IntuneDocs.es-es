@@ -9,17 +9,18 @@ ms.date: 01/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5cab385b55022139b79ca4a749aba0fbe9e5ef3a
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: e80bbbb87df88acc24a64a1bb0d977c91c970bb3
+ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236796"
+ms.lasthandoff: 03/14/2019
+ms.locfileid: "57394426"
 ---
 # <a name="windows-10-and-windows-holographic-for-business-device-settings-to-run-as-a-dedicated-kiosk-using-intune"></a>Configuración de dispositivos con Windows 10 y Windows Holographic for Business para ejecutarse como una pantalla completa dedicada con Intune
 

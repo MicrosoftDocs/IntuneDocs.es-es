@@ -1,15 +1,16 @@
 ---
 title: ¿Qué es la administración de aplicaciones de Microsoft Intune?
-titlesuffix: ''
+titleSuffix: ''
 description: Obtenga información sobre funcionalidades de administración de aplicaciones cliente mediante la plataforma de Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 04/03/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1975a2dc-3a14-4cb9-9afb-e2ba01a1c51b
 ms.reviewer: mghadial
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f2c5da7772ff137e44fead66f00fe34004bb1f4
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 34807edabf99a107c259fdfae5e43db18084fb67
+ms.sourcegitcommit: 219bbbfb44eba70ac2b751970d8b4b778cd28416
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55850918"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59569069"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>¿Qué es la administración de aplicaciones de Microsoft Intune?
 
@@ -44,7 +45,7 @@ Intune ofrece diversas funcionalidades para ayudarle a conseguir las aplicacione
 |-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
 | Agregar y asignar aplicaciones a dispositivos y usuarios | Sí | Sí | Sí | Sí | Sí |
 | Asignar aplicaciones a dispositivos no inscritos en Intune | Sí | Sí | No | No | No |
-| Usar directivas de configuración de aplicaciones para controlar el comportamiento de inicio de las aplicaciones | No | Sí | No | No | No |
+| Usar directivas de configuración de aplicaciones para controlar el comportamiento de inicio de las aplicaciones | Sí | Sí | No | No | No |
 | Usar directivas de aprovisionamiento de aplicaciones móviles para renovar aplicaciones caducadas | No | Sí | No | No | No |
 | Proteger los datos de empresa de las aplicaciones con directivas de protección de aplicaciones | Sí | Sí | No | No1 | No |
 | Quitar solo los datos corporativos de una aplicación instalada (eliminación selectiva de aplicaciones) | Sí | Sí | No | Sí | Sí |

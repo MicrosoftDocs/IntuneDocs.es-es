@@ -1,5 +1,6 @@
 ---
-title: Acceso condicional con Microsoft Intune | Microsoft Intune
+title: Acceso condicional con Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Obtenga más información sobre cómo definir las condiciones que deben cumplir los usuarios, los dispositivos y las aplicaciones para acceder a los recursos de la empresa en Microsoft Intune.
 keywords: ''
 author: brenduns
@@ -9,18 +10,19 @@ ms.date: 03/06/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a1973f38-ea55-43eb-a151-505fb34a8afb
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a540d47d9b4418f7cf613fa401e92463d74a17fa
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 34ce3f34dbf3c060438a6b30abc9345687cdaf47
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55838570"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59569498"
 ---
 # <a name="whats-conditional-access"></a>¿Qué es el acceso condicional?
 
