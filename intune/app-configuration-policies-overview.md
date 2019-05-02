@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/03/2019
+ms.date: 04/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,29 +18,29 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 844342d0d21110f46ac9a344edbd7409f7d779cb
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: cc29e7bb56c5a5e21264e275cfecf0ea4b0e9273
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "59567223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61501381"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Directivas de configuración de aplicaciones para Microsoft Intune
 
-Use las directivas de configuración de aplicaciones de Microsoft Intune para proporcionar valores de configuración para una aplicación para iOS o Android. Estos valores de configuración permiten que se personalice una aplicación. No asigne estas directivas de configuración directamente a usuarios y dispositivos. En su lugar, asocie la directiva de configuración a una aplicación y, después, asigne la aplicación. La configuración de directivas de configuración se usa cada vez que la aplicación comprueba dichas directivas, que suele ser la primera vez que se ejecuta.
+Use las directivas de configuración de aplicaciones de Microsoft Intune para proporcionar valores de configuración para una aplicación para iOS o Android. Estos valores de configuración permiten que se personalice una aplicación. No asigne estas directivas de configuración directamente a usuarios o dispositivos. En su lugar, asocie la directiva de configuración a una aplicación y, después, asigne la aplicación. La configuración de directivas de configuración se usa cada vez que la aplicación comprueba dichas directivas, que suele ser la primera vez que se ejecuta.
 
 Puede asignar una directiva de configuración de aplicación a un grupo de usuarios y dispositivos mediante una combinación de asignaciones de inclusión y exclusión. Tras agregar una directiva de configuración de aplicación, podrá establecer las asignaciones de la directiva de configuración de aplicación. Al establecer las asignaciones de la directiva, puede elegir si quiere incluir o excluir los grupos de usuarios a los que se aplica la directiva. Si decide incluir uno o varios grupos, puede optar por seleccionar grupos específicos para incluir o seleccionar los grupos integrados. Los grupos integrados incluyen **Todos los usuarios**, **Todos los dispositivos** y **Todos los usuarios + todos los dispositivos**.
 
-Por ejemplo, una aplicación podría requerir que especifique uno de los detalles siguientes:
+Por ejemplo, para una aplicación podría ser necesario especificar uno de estos detalles:
 
 - Un número de puerto personalizado
 - Configuración de idioma
 - Configuración de seguridad
 - Configuración de marca, como un logotipo de empresa
 
-Si los usuarios han especificado esta configuración incorrectamente, puede aumentar la carga del departamento de soporte técnico y ralentizar la adopción de nuevas aplicaciones.
+Si los usuarios indicaran esta configuración, podrían hacerlo incorrectamente, lo que aumentaría la carga del departamento de soporte técnico y ralentizaría la adopción de nuevas aplicaciones.
 
-Las directivas de configuración de aplicaciones pueden ayudarle a eliminar estos problemas al permitirle asignar esta configuración a los usuarios en una directiva antes de ejecutar la aplicación. A continuación, la configuración se proporciona de forma automática y los usuarios no tienen que realizar ninguna acción.
+Las directivas de configuración de aplicaciones pueden ayudarle a eliminar los problemas de configuración de aplicaciones, ya que permiten asignar la configuración a una directiva que se asigna a los usuarios antes de ejecutar la aplicación. A continuación, la configuración se proporciona de forma automática y los usuarios no tienen que realizar ninguna acción.
 
 Los valores de configuración se usan cada vez que la aplicación los busca. Normalmente, una aplicación busca opciones de configuración la primera vez que el usuario ejecuta la aplicación.
 

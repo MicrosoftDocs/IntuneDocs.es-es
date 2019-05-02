@@ -6,21 +6,23 @@ author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 05/18/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d1171740-936d-46a5-af37-f418bd6fa63e
 ms.reviewer: angerobe
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 73cd8b4f0cf5bdfa02a301d476df31a01fc9691f
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: eede87fdca31e8e263d1dea78d766fec59f05f58
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61511309"
 ---
 # <a name="data-collection-in-intune"></a>Recopilación de datos en Intune
 
@@ -77,7 +79,7 @@ Los datos identificados recopilados por Intune pueden incluir lo siguiente, aunq
     - Clave de suscripción
 - Inventario de aplicaciones, como
     - nombre de la aplicación
-    - Versión de
+    - Versión
     - identificador de la aplicación
     - tamaño
     - ubicación de instalación
@@ -102,7 +104,7 @@ Los datos de formato anónimo recopilados por Intune pueden incluir lo siguiente
     - Identificador de dispositivo de Intune.
     - Id. de dispositivo de Azure Active Directory
     - Id. de administración de dispositivos de Intune
-    - Id. de inquilino
+    - Identificador de inquilino
     - Id. de cuenta
     - Id. del dispositivo EAS
     - Identificadores específicos de la plataforma
@@ -127,10 +129,10 @@ Los datos agregados recopilados por Intune pueden incluir lo siguiente, aunque n
     - Número de dispositivos o usuario inscritos
     - Número de plataformas de dispositivo identificadas  
     - Número de dispositivos instalados
-    - installedDeviceCount: número de dispositivos en los que está instalada la aplicación.
-    - notApplicableDeviceCount: número de dispositivos para los que la aplicación no está disponible.
-    - notInstalledDeviceCount: número de dispositivos para los que la aplicación está disponible, pero no está instalada.
-    - pendingInstallDeviceCount: número de dispositivos para los que la aplicación está disponible y la instalación está pendiente.
+    - installedDeviceCount: Número de dispositivos en los que está instalada la aplicación.
+    - notApplicableDeviceCount: Número de dispositivos para los que la aplicación no está disponible.
+    - notInstalledDeviceCount: Número de dispositivos para los que la aplicación está disponible, pero no está instalada.
+    - pendingInstallDeviceCount: Número de dispositivos para los que la aplicación está disponible y la instalación está pendiente.
     
 ## <a name="next-steps"></a>Pasos siguientes
 

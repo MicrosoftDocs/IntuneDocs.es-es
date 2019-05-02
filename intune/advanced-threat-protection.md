@@ -5,22 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 1/29/2019
-ms.topic: article
+ms.date: 02/22/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: afa2ef4cf1199597f61af99d631243e2d3b51e64
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 036f2ca8302f9b3c2d700a04918c4c49a4c6211a
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55845183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490575"
 ---
 # <a name="enforce-compliance-for-windows-defender-atp-with-conditional-access-in-intune"></a>Aplicación del cumplimiento de ATP de Windows Defender con acceso condicional en Intune
 
@@ -109,12 +110,12 @@ La directiva de cumplimiento determina un nivel de riesgo aceptable en un dispos
 2. Seleccione **Cumplimiento del dispositivo** > **Directivas** > **Crear directiva**.
 3. Escriba la información que desee en **Nombre** y **Descripción**.
 4. En **Plataforma**, seleccione **Windows 10 y versiones posteriores**.
-5. En la configuración de **ATP de Windows Defender**, establezca **Require the device to be at or under the machine risk score** (Requerir que el dispositivo tenga la puntuación de riesgo de máquina o esté por debajo de ella) en el nivel que prefiera:
+5. En la configuración de **ATP de Windows Defender**, establezca **Solicitar que el dispositivo tenga o esté por debajo de la puntuación de riesgo de la máquina** en el nivel que prefiera. Las clasificaciones de nivel de amenaza vienen [determinadas por ATP de Windows Defender](https://review.docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/alerts-queue-windows-defender-advanced-threat-protection?branch=atp-server2008#sort-filter-and-group-the-alerts-queue).
 
-  - **Borrar**: este nivel es el más seguro. El dispositivo no puede tener ninguna amenaza existente y aún puede acceder a los recursos de la empresa. Si se encuentra alguna amenaza, el dispositivo se clasificará como no conforme.
-  - **Bajo**: el dispositivo se evalúa como compatible si solo hay amenazas de nivel bajo. Los dispositivos con niveles de amenaza medio o alto no son compatibles.
-  - **Medio**: el dispositivo se evalúa como compatible si las amenazas que se encuentran en él son de nivel bajo o medio. Si se detectan amenazas de nivel alto, se determinará que el dispositivo no es compatible.
-  - **Alto**: este nivel es el menos seguro, ya que permite todos los niveles de amenaza. Por tanto, los dispositivos con niveles de amenaza alto, medio o bajo se consideran compatibles.
+   - **Borrar**: este nivel es el más seguro. El dispositivo no puede tener ninguna amenaza existente y aún puede acceder a los recursos de la empresa. Si se encuentra alguna amenaza, el dispositivo se clasificará como no conforme. (ATP de Windows Defender usa el valor *Seguro*).
+   - **Baja**: el dispositivo se evalúa como compatible si solo hay amenazas de nivel bajo. Los dispositivos con niveles de amenaza medio o alto no son compatibles.
+   - **Medio**: el dispositivo se evalúa como compatible si las amenazas que se encuentran en él son de nivel bajo o medio. Si se detectan amenazas de nivel alto, se determinará que el dispositivo no es compatible.
+   - **Alto**: este nivel es el menos seguro, ya que permite todos los niveles de amenaza. Por tanto, los dispositivos con niveles de amenaza alto, medio o bajo se consideran compatibles.
 
 6. Seleccione **Aceptar** y **Crear** para guardar los cambios (y crear la directiva).
 
@@ -126,10 +127,13 @@ La directiva de cumplimiento determina un nivel de riesgo aceptable en un dispos
 4. Incluya o excluya los grupos de Azure AD para asignarlos a la directiva.
 5. Para implementar la directiva a los grupos, seleccione **Guardar**. Se evalúa el cumplimiento por parte de los dispositivos de usuario a los que se aplique la directiva.
 
-## <a name="create-an-azure-ad-conditional-access-policy"></a>Crear una directiva de acceso condicional de Azure AD
-La directiva de acceso condicional bloquea el acceso a los recursos *s i* el dispositivo no es compatible. Por tanto, si un dispositivo supera el nivel de amenaza, puede bloquear el acceso a recursos corporativos, como SharePoint o Exchange Online.
+## <a name="create-a-conditional-access-policy"></a>Creación de una directiva de acceso condicional
+La directiva de acceso condicional bloquea el acceso a los recursos *s i* el dispositivo no es compatible. Por tanto, si un dispositivo supera el nivel de amenaza, puede bloquear el acceso a recursos corporativos, como SharePoint o Exchange Online.  
 
-1. En [Azure Portal](https://portal.azure.com), abra **Azure Active Directory** > **Acceso condicional** > **Nueva directiva**.
+> [!TIP]  
+> Acceso condicional es una tecnología de Azure Active Directory (Azure AD). El nodo de acceso condicional al que se accede desde *Intune* es el mismo nodo al que se accede desde *Azure AD*.  
+
+1. En [Azure Portal](https://portal.azure.com), elija **Intune** > **Acceso condicional** > **Nueva directiva**.
 2. En **Nombre**, escriba un nombre de directiva y seleccione **Usuarios y grupos**. Utilice las opciones Incluir o Excluir para agregar los grupos para la directiva y seleccione **Listo**.
 3. Seleccione **Aplicaciones en la nube** y elija las aplicaciones que desea proteger. Por ejemplo, elija **Seleccionar aplicaciones** y seleccione **Office 365 SharePoint Online** y **Office 365 Exchange Online**.
 

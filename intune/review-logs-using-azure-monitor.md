@@ -5,26 +5,27 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2019
-ms.topic: article
+ms.date: 03/18/2019
+ms.topic: troubleshooting
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4f93ab1cd2c662cb97dafd19684b353268087f6
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: fb33a1207e165323de2e82467c7a0dd5239d9713
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55842582"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61507371"
 ---
 # <a name="send-log-data-to-storage-event-hubs-or-log-analytics-in-intune-preview"></a>Envío de datos de registro al almacenamiento, a Event Hubs o a Log Analytics en Intune (versión preliminar)
 
-Microsoft Intune incluye los registros integrados que proporcionan información sobre el entorno. Los **registros de auditoría** muestran detalles sobre los distintos eventos o tareas que tienen lugar en Intune. Los **registros operativos (versión preliminar)** muestran detalles sobre los usuarios y dispositivos que se inscribieron correctamente o que no se pudieron inscribir.
+Microsoft Intune incluye los registros integrados que proporcionan información sobre el entorno. Los **registros de auditoría** muestran detalles sobre los distintos eventos o tareas que tienen lugar en Intune. Los **registros operativos (versión preliminar)** muestran detalles sobre los usuarios y los dispositivos que se inscribieron correctamente o que no se pudieron inscribir, así como detalles sobre los dispositivos no compatibles.
 
 Estos registros también se pueden enviar a los servicios de Azure Monitor, incluidas las cuentas de almacenamiento, Event Hubs y Log Analytics. En concreto, puede:
 
@@ -33,7 +34,7 @@ Estos registros también se pueden enviar a los servicios de Azure Monitor, incl
 * Integrar los registros de Intune con sus propias soluciones de registro personalizadas transmitiéndolos a un centro de eventos.
 * Enviar registros de Intune a Log Analytics para habilitar las visualizaciones enriquecidas, la supervisión y las alertas de los datos conectados.
 
-Estas características forman parte de la característica **Configuración de diagnóstico** en Intune. 
+Estas características forman parte de la característica **Configuración de diagnóstico** en Intune.
 
 En este artículo se muestra cómo usar la característica **Configuración de diagnóstico** para enviar datos de registro a distintos servicios, ofrece ejemplos y estimaciones de costos y responde a algunas preguntas comunes.
 
@@ -82,7 +83,7 @@ Dependiendo de dónde desea enrutar los datos de registro de auditoría, necesit
 
       Si decide usar una cuenta de almacenamiento, especifique también cuántos días desea conservar los datos (retención). Para conservar los datos indefinidamente, establezca **Retención (días)** en `0` (cero).
 
-    - **LOG** > **OperationalLogs**: los registros operativos (versión preliminar) muestran el éxito o fracaso de los usuarios y dispositivos que se inscriben en Intune. Elija esta opción para enviar los registros de inscripción a su cuenta de almacenamiento, al centro de eventos o a Log Analytics.
+    - **LOG** > **OperationalLogs**: los registros operativos (versión preliminar) muestran el éxito o el error de los usuarios y los dispositivos que se inscriben en Intune, así como detalles sobre los dispositivos no compatibles. Elija esta opción para enviar los registros de inscripción a su cuenta de almacenamiento, al centro de eventos o a Log Analytics.
 
       Si decide usar una cuenta de almacenamiento, especifique también cuántos días desea conservar los datos (retención). Para conservar los datos indefinidamente, establezca **Retención (días)** en `0` (cero).
 
@@ -94,6 +95,19 @@ Dependiendo de dónde desea enrutar los datos de registro de auditoría, necesit
     ![Imagen de ejemplo que envía los registros de auditoría de Intune a una cuenta de almacenamiento de Azure](media/diagnostics-settings-example.png)
 
 4. Guarde los cambios mediante **Guardar**. La configuración se mostrará en la lista. Cuando se haya creado, puede cambiar la configuración seleccionando **Editar configuración** > **Guardar**.
+
+## <a name="use-audit-logs-throughout-intune"></a>Uso de registros de auditoría en Intune
+
+También puede exportar los registros de auditoría en otras partes de Intune, incluida la inscripción, el cumplimiento, la configuración, los dispositivos, las aplicaciones cliente y mucho más.
+
+Por ejemplo, para exportar los registros de auditoría al usar el cumplimiento del dispositivo:
+
+1. En [Azure Portal](https://portal.azure.com/), seleccione **Todos los servicios**, filtre por **Intune** > seleccione **Intune**.
+2. Seleccione **Cumplimiento del dispositivo** > **Monitor** > **Registros de auditoría**:
+
+    ![Selección de registros de auditoría para enrutar datos de Intune al almacenamiento de Azure Monitor, centros de eventos o análisis](media/audit-logs-under-monitor-in-compliance.png)
+
+3. Seleccione **Exportar configuración de datos**. Si no está habilitada, puede activar la **Configuración de diagnóstico**. También puede elegir dónde enviar los registros, como se describe en [Envío de registros a Azure Monitor](#send-logs-to-azure-monitor) (en este artículo).
 
 ## <a name="cost-considerations"></a>Consideraciones sobre el costo
 

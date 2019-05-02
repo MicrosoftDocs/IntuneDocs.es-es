@@ -1,27 +1,29 @@
 ---
 title: Proceso de la incorporación de Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Este artículo ayuda con todos los detalles que se deben tener en cuenta a la hora de incorporar una solución solo en la nube de Microsoft Intune al entorno.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ac7bd764-5365-4920-8fd0-ea57d5ebe039
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: d5c1fb2b6b20c9687418e14f8e35543c04833a25
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 9cd9f14d48c86119acf862e2d335fe88fb2a9a1c
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513977"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>Implementar el plan de Microsoft Intune
 
@@ -58,13 +60,13 @@ Como se indica en la anterior sección de requisitos de Intune, se necesita una 
 
 -   Más información sobre [cómo comprar Microsoft Intune](https://www.microsoft.com/cloud-platform/microsoft-intune-pricing).
 
-### <a name="task-2-add-office-365-subscription"></a>Tarea 2: Agregar una suscripción de Office 365
+### <a name="task-2-add-office-365-subscription"></a>Tarea 2: Agregar una suscripción a Office 365
 
 Este paso es opcional. Necesita una suscripción a Office 365 si tiene pensado usar Exchange Online y administrar aplicaciones móviles de Office con las directivas de protección de aplicaciones. Si su organización no tiene ninguna suscripción a Office 365, póngase en contacto con Microsoft o con el equipo de cuentas de Microsoft con respecto a su interés en comprar Office 365.
 
 -   Más información sobre [cómo comprar Office 365](https://products.office.com/business/compare-office-365-for-business-plans).
 
-### <a name="task-3-add-users-groups-in-azure-ad"></a>Tarea 3: Agregar grupos de usuarios en Azure AD
+### <a name="task-3-add-users-groups-in-azure-ad"></a>Tarea 3: Agregar grupos de usuarios en Azure AD
 
 Puede que necesite agregar usuarios o grupos de seguridad en Active Directory o Azure Active Directory en función de sus requisitos y escenarios de casos de uso de implementación de Intune. Revise sus usuarios y grupos de seguridad actuales en Active Directory o Azure Active Directory y determine si cumplen completamente sus necesidades. Al agregar usuarios y grupos de seguridad nuevos, se recomienda agregarlos en Active Directory y sincronizarlos con Azure Active Directory mediante Azure AD Connect.
 
@@ -74,9 +76,9 @@ Puede que necesite agregar usuarios o grupos de seguridad en Active Directory o 
 
 
 
-### <a name="task-4-assign-intune-and-office-365-user-licenses"></a>Tarea 4: Asignar licencias de usuario de Office 365 e Intune
+### <a name="task-4-assign-intune-and-office-365-user-licenses"></a>Tarea 4: Asignar licencias de usuario de Office 365 e Intune
 
-Todos los usuarios destinados a la implementación de Office 365 y EMS o Intune necesitarán una licencia asignada. Puede asignar licencias de Office 365 y de EMS o Intune en el portal del Centro de administración de Office 365.
+Todos los usuarios destinados a la implementación de Office 365 y EMS o Intune necesitarán una licencia asignada. Puede asignar licencias de Office 365 y de EMS o Intune en el Centro de administración de Microsoft 365.
 
 -   Más información sobre [cómo asignar licencias de Intune](licenses-assign.md).
 
@@ -128,7 +130,7 @@ Intune admite el acceso condicional para Exchange Online, Exchange local, ShareP
 
 -   Más información sobre el [acceso condicional](conditional-access.md).
 
-### <a name="task-13-enroll-devices"></a>Tarea 13: Inscripción de dispositivos
+### <a name="task-13-enroll-devices"></a>Tarea 13: Inscribir dispositivos
 
 Intune admite iOS, Mac OS, Android, el escritorio de Windows y las plataformas de dispositivos móviles de Windows. Inscriba plataformas de dispositivos móviles según corresponda en función de los requisitos y los casos de uso de la implementación de Intune.
 

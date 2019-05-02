@@ -6,19 +6,21 @@ author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
 ms.date: 12/19/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: fd401875e1a98690d9673243b28b48347e4c6183
-ms.sourcegitcommit: 4e69a8664c289263490daa4c02bc6b81c33196e5
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 654d5b86a8a2df8eaddc8ea626b55390d2d32920
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 12/20/2018
-ms.locfileid: "53642819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509077"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>Supervisión de las directivas de cumplimiento de dispositivos Intune
 
@@ -122,7 +124,7 @@ En **Conformidad de dispositivos** > **Información general**, el informe tambi�
 
 Al hacer clic en el icono, se muestran todos los dispositivos sin una directiva de cumplimiento. También se muestra el usuario del dispositivo, el estado de implementación de la directiva y el modelo del dispositivo.
 
-#### <a name="what-you-need-to-know"></a>Lo que se debe saber
+#### <a name="what-you-need-to-know"></a>Aspectos que debe saber
 
 - Con la opción de seguridad **Marcar los dispositivos que no tienen asignada una directiva de cumplimiento como**, es importante identificar los dispositivos sin una directiva de cumplimiento. Posteriormente podrá asignarles al menos una directiva de cumplimiento.
 

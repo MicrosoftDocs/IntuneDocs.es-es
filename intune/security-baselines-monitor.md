@@ -1,71 +1,85 @@
 ---
 title: 'Comprobación del éxito o error de las líneas de base de seguridad en Microsoft Intune: Azure | Microsoft Docs'
-description: Compruebe el estado de error, conflicto y éxito al implementar líneas de base de seguridad en usuarios y dispositivos en MDM de Microsoft Intune. Vea cómo solucionar problemas mediante registros de cliente y las características de informes en Intune.
+description: Compruebe el estado de error, conflicto y éxito al implementar líneas base de seguridad para usuarios y dispositivos en MDM de Microsoft Intune. Vea cómo solucionar problemas mediante registros de cliente y las características de informes en Intune.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/24/2019
+ms.date: 04/19/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b853d42efc247f6080cc4ed6ad8b4943b85b3215
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: dc82653355ae57830684270fc8f7b9f1f3ae2491
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61507055"
 ---
-# <a name="monitor-the-security-baseline-and-profile-in-microsoft-intune"></a>Supervisión de la línea de base de seguridad y el perfil en Microsoft Intune
+# <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>Supervisión de la línea base de seguridad y los perfiles en Microsoft Intune  
 
-Hay distintas opciones de supervisión a la hora de utilizar líneas de base de seguridad. Puede supervisar el perfil de las líneas de base de seguridad que se aplica a los usuarios y dispositivos. También puede supervisar la línea de base real y todos los dispositivos que coinciden (o no) con los valores recomendados.
+Intune ofrece varias opciones para supervisar las líneas base de seguridad. Puede supervisar el perfil de las líneas de base de seguridad que se aplica a los usuarios y dispositivos. También puede supervisar la línea de base real y todos los dispositivos que coinciden (o no) con los valores recomendados.
 
 Este artículo le guiará a través de ambas opciones de supervisión.
 
 Las [líneas de base de seguridad en Intune](security-baselines.md) proporcionan más detalles sobre la característica de las líneas de base de seguridad en Microsoft Intune.
 
-## <a name="monitor-the-baseline-and-your-devices"></a>Supervisión de la línea base y los dispositivos
+## <a name="monitor-the-baseline-and-your-devices"></a>Supervisión de la línea base y los dispositivos  
 
-Al supervisar la línea de base, obtiene conclusiones sobre el estado de seguridad de los dispositivos según las recomendaciones de Microsoft.
+Al supervisar una línea base, obtiene conclusiones sobre el estado de seguridad de los dispositivos según las recomendaciones de Microsoft. Puede ver estas conclusiones en el panel Información general de la línea base de seguridad en la consola de Intune.  Los datos tardan hasta 24 horas en aparecer después de asignar una línea base en primer lugar. Los cambios posteriores tardan hasta seis horas en aparecer.  
 
-> [!NOTE]
-> Tras asignar una línea de base por primera vez, los informes pueden tardar hasta 24 horas en actualizarse. Después, pueden tardar hasta 6 horas en actualizarse.
+Para ver los datos de supervisión de la línea base y los dispositivos, inicie sesión en el [portal Intune](https://aka.ms/intuneportal). Luego, seleccione **Líneas base de seguridad (vista previa)**, elija una línea base y consulte el panel **Información general**.
 
-1. En [Azure Portal](https://portal.azure.com/), seleccione **Todos los servicios**, filtre por **Intune** > seleccione **Intune**.
-2. Seleccione **Líneas base de seguridad (vista previa)** y seleccione una línea de base.
-3. En **Información general**, el gráfico muestra cuántos dispositivos se ven afectados por la línea de base elegida y los diferentes estados:
+El panel de **Información general** proporciona dos métodos para supervisar el estado:
+- **Vista de dispositivo**: resumen de cuántos dispositivos están en cada categoría de estado para la línea base.  
+- **Por categoría**: vista que muestra cada categoría en la línea base e incluye el porcentaje de dispositivos por cada grupo de estado y por cada categoría de línea base. 
 
-    ![Comprobación del estado de los dispositivos](./media/security-baselines-monitor/overview.png)
+Cada dispositivo se representa mediante uno de los siguientes estados, que se usan tanto en la vista de *dispositivo* como en las vistas *por categoría*:  
+- **Coincide con la línea de base**: todas las configuraciones de la línea base coinciden con la configuración recomendada.
+- **No coincide con la línea de base**: al menos un valor de configuración de la línea base no coincide con la configuración recomendada.
+- **Configuración errónea**: al menos un valor de configuración no está configurado correctamente. Este estado significa que la configuración está en un estado de conflicto, error o pendiente.
+- **No aplicable**: al menos un valor de configuración no es aplicable.
 
-    Están disponibles los siguientes estados:
 
-    - **Matches baseline** (Coincide con la línea de base): todas las configuraciones de la línea de base coinciden con la configuración recomendada.
-    - **Does not match baseline** (No coincide con la línea de base): al menos un valor de configuración de la línea de base no coincide con la configuración recomendada.
-    - **Configuración errónea**: al menos un valor de configuración no está configurado correctamente. Este estado significa que la configuración está en un estado de conflicto, error o pendiente.
-    - **No aplicable**: al menos un valor de configuración no es aplicable y no se aplica.
+### <a name="device-view"></a>Vista de dispositivo
+El panel Información general muestra un resumen basado en gráficos de cuántos dispositivos tienen un estado específico para la línea base; **Posición de línea de base de seguridad para los dispositivos Windows 10 asignados**.  
 
-4. Seleccione uno de los estados que tenga dispositivos. Por ejemplo, seleccione el estado **Configuración errónea**.
+![Comprobación del estado de los dispositivos](./media/security-baselines-monitor/overview.png)
 
-5. Se muestra una lista de todos los dispositivos con ese estado. Seleccione un dispositivo específico para obtener más detalles. 
+Cuando un dispositivo tiene un estado diferente en distintas categorías en la línea base, el dispositivo se representa mediante un único estado. El estado que representa el dispositivo se toma de la orden de precedencia siguiente: **Configuración errónea**, **No coincide con la línea de base**, **No aplicable** y **Coincide con la línea de base**.  
 
-    En el ejemplo siguiente, seleccione **Configuración del dispositivo**  y seleccione el perfil con un estado de error:
+Por ejemplo, si un dispositivo tiene un valor de configuración clasificado como *Configuración errónea* y uno o más valores clasificados como *No coincide con la línea de base*, el dispositivo se clasificará como *Configuración errónea*.  
 
-    ![Comprobación del estado de los dispositivos](./media/security-baselines-monitor/device-configuration-profile-list.png)
+Puede hacer clic en el gráfico para obtener detalles y ver una lista de dispositivos con distintos estados. Después, puede seleccionar dispositivos concretos de esa lista para ver detalles concretos. Por ejemplo:
+- Seleccione **Configuración del dispositivo**  y elija el perfil con un estado de error:
 
-    Seleccione el perfil con error. Se muestra una lista de todas las configuraciones del perfil y su estado. Ahora, puede desplazarse para encontrar la configuración que produce el error:
+  ![Comprobación del estado de los dispositivos](./media/security-baselines-monitor/device-configuration-profile-list.png)
 
-    ![Visualización de la configuración que causa el error](./media/security-baselines-monitor/profile-with-error-status.png)
+- Seleccione el perfil con error. Se muestra una lista de todas las configuraciones del perfil y su estado. Ahora, puede desplazarse para encontrar la configuración que produce el error:
+
+  ![Visualización de la configuración que causa el error](./media/security-baselines-monitor/profile-with-error-status.png)
 
 Use este informe para ver cualquier configuración de un perfil que está provocando un problema. Obtenga también más detalles sobre las directivas y los perfiles implementados en los dispositivos.
 
 > [!NOTE]
 > Cuando se establece una propiedad en **No configurada** en la línea de base, la configuración se omite y no se aplican restricciones. La propiedad no se muestra en los informes.
+
+### <a name="per-category-view"></a>Vista por categoría
+El panel Información general muestra un gráfico de cada categoría para la línea base; **Posición de línea de base de seguridad por categoría**.  Esta vista muestra cada categoría desde la línea base e identifica el porcentaje de dispositivos que pertenecen a una clasificación de estado para cada una de esas categorías. 
+ 
+![Vista de estado por categoría](./media/security-baselines-monitor/monitor-baseline-per-category.png)
+
+El estado **Coincide con la línea de base** no se muestra hasta que el 100 % de los dispositivos de esa categoría informen de ese estado.   
+
+Se puede ordenar la vista por categoría según cada columna seleccionando el icono de flecha arriba y abajo en la parte superior de la columna.  
+
 
 ## <a name="monitor-the-profile"></a>Supervisión del perfil
 

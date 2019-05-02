@@ -1,15 +1,16 @@
 ---
-title: Inscribir dispositivos Android dedicados o totalmente administrados en Intune
-titlesuffix: Microsoft Intune
+title: Inscripción de dispositivos dedicados o totalmente administrados de Android Enterprise en Intune
+titleSuffix: Microsoft Intune
 description: Obtenga información sobre cómo inscribir dispositivos Android dedicados o totalmente administrados en Intune.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
 ms.date: 1/15/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: chrisbal
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2a83676f67866bc81ea81f7bb721dec5825a95c9
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: f56e2987fefcc514911f762c5fd82ca1ebc6779c
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55843449"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61503884"
 ---
-# <a name="enroll-your-android-dedicated-devices-or-fully-managed-devices-preview"></a>Inscribir dispositivos Android dedicados o totalmente administrados en Intune (versión preliminar)
+# <a name="enroll-your-android-enterprise-dedicated-devices-or-fully-managed-devices-preview"></a>Inscripción de dispositivos dedicados o totalmente administrados de Android Enterprise (versión preliminar)
 
-Después de configurar los [dispositivos Android dedicados](android-kiosk-enroll.md) o [totalmente administrados](android-fully-managed-enroll.md) en Intune, puede inscribir los dispositivos. La forma de inscribir los dispositivos Android depende del sistema operativo.
+Después de configurar los [dispositivos Android Enterprise dedicados](android-kiosk-enroll.md) o [totalmente administrados](android-fully-managed-enroll.md) en Intune, puede inscribir los dispositivos. La forma de inscribir los dispositivos Android Enterprise depende del sistema operativo.
 
 | Método de inscripción | Versión mínima del SO Android para dispositivos dedicados y totalmente administrados |
 | ----- | ----- |

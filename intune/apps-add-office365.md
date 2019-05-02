@@ -1,32 +1,33 @@
 ---
-title: Instalación de aplicaciones de Office 365 en dispositivos con Microsoft Intune
-titlesuffix: ''
-description: Obtenga información sobre cómo puede usar Microsoft Intune para facilitar la instalación de aplicaciones de Office 365 en dispositivos Windows 10.
+title: Asignación de aplicaciones de Office 365 a dispositivos Windows 10 mediante el uso de Microsoft Intune
+titleSuffix: ''
+description: Obtenga información sobre cómo usar Microsoft Intune para instalar aplicaciones de Office 365 en dispositivos Windows 10.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 04/08/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3292671a-5f5a-429e-90f7-b20019787d22
-ms.reviewer: aiwang
+ms.reviewer: craigma
 ms.suite: ems
 search.appverid: MET150
-ms.custom: intune-azure
+ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d3db1449ec583678924fadb0db930146c3cd848
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: c640e3e02d7d016785b87d681443b2c49f7a6281
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57229758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61507144"
 ---
 # <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>Asignación de aplicaciones de Office 365 a dispositivos Windows 10 con Microsoft Intune
 
-Este tipo de aplicación facilita la asignación de aplicaciones de Office 365 a dispositivos que administre y que ejecuten Windows 10. También puede instalar aplicaciones para el cliente de escritorio de Microsoft Project Online y Microsoft Visio Pro para Office 365, si posee sus licencias. Las aplicaciones que desea se muestran como una única entrada en la lista de aplicaciones de la consola de Intune.
+Para poder asignar, supervisar, configurar o proteger las aplicaciones, debe agregarlas a Intune. Uno de los [tipos de aplicaciones](apps-add.md#app-types-in-microsoft-intune) disponibles son las aplicaciones de Office 365 para dispositivos Windows 10. Al seleccionar este tipo de aplicación en Intune, puede asignar e instalar aplicaciones de Office 365 en los dispositivos que administra y que ejecutan Windows 10. También puede asignar e instalar aplicaciones para el cliente de escritorio de Microsoft Project Online y Microsoft Visio Online Plan 2, si posee sus licencias. Las aplicaciones de Office 365 disponibles se muestran como una única entrada en la lista de aplicaciones de la consola de Intune en Azure.
 
 > [!NOTE]
 > Debe usar las licencias de Office 365 ProPlus para activar las aplicaciones de Office 365 ProPlus implementadas a través de Microsoft Intune. Actualmente, la edición para empresas de Office 365 no es compatible con Intune.
@@ -54,18 +55,25 @@ Este tipo de aplicación facilita la asignación de aplicaciones de Office 365 a
 5. Seleccione **Agregar**.
 6. En el panel **Agregar aplicaciones**, en la lista **Tipo de aplicación**, vaya a **Office 365 Suite** y seleccione **Windows 10**.
 
-Ahora puede configurar el conjunto de aplicaciones.
+## <a name="select-settings-format"></a>Selección del formato de configuración
 
-## <a name="configure-the-app-suite"></a>Configuración del conjunto de aplicaciones
+Si quiere elegir un método para configurar la configuración de la aplicación, seleccione un **formato de configuración**. Entre las opciones de formatos de configuración se incluyen las siguientes:
+- Diseñador de configuraciones
+- Especificar datos XML
 
-Seleccione las aplicaciones de Office que quiere asignar a los dispositivos.
+Cuando se elige el **Diseñador de configuraciones**, la hoja **Agregar aplicación** cambiará para ofrecer otras dos opciones de configuración:
+- Configurar conjunto de aplicaciones
+- Configuración del conjunto de aplicaciones
 
-1. En el panel **Agregar aplicación**, seleccione **Configure App Suite** (Configurar conjunto de aplicaciones).
-2. En el panel **Configure App Suite** (Configurar conjunto de aplicaciones), elija las aplicaciones de Office estándar que quiere asignar a los dispositivos.  
-    Además, puede instalar aplicaciones para el cliente de escritorio de Microsoft Project Online y Microsoft Visio para Office 365, si posee sus licencias.
-3. Seleccione **Aceptar**.
+<img alt="Add Office 365 - Configuration designer" src="./media/apps-add-office365/apps-add-office365-02.png" width="700">
 
-## <a name="configure-app-information"></a>Configuración de información de la aplicación
+Cuando se elige **Especificar datos XML**, la hoja **Agregar aplicación** mostrará la opción **Especificar datos XML**. Selecciónela para mostrar la hoja **Archivo de configuración**. 
+
+![Diseñador de configuraciones para agregar Office 365](./media/apps-add-office365/apps-add-office365-01.png)
+    
+Para obtener más información sobre la opción **Especificar datos XML**, vea más adelante la sección [Especificar datos XML](apps-add-office365.md#enter-xml-format).
+
+## <a name="configure-app-suite-information"></a>Configuración de la información del conjunto de aplicaciones
 
 En este paso, proporcionará información sobre el conjunto de aplicaciones. Esta información le ayuda a identificar el conjunto de aplicaciones en Intune y, además, ayuda a los usuarios finales a encontrarlo en el Portal de empresa.
 
@@ -84,9 +92,18 @@ En este paso, proporcionará información sobre el conjunto de aplicaciones. Est
     - **Logotipo**: el logotipo de Office 365 se muestra con la aplicación cuando los usuarios buscan en el Portal de empresa.
 3. Seleccione **Aceptar**.
 
-## <a name="configure-app-settings"></a>Configuración de aplicaciones
+## <a name="configure-app-suite"></a>Configurar conjunto de aplicaciones
 
-En este paso, configure las opciones de instalación para el conjunto de aplicaciones. La configuración se aplica a todas las aplicaciones que agregó al conjunto.
+Si ha seleccionado la opción **Diseñador de configuraciones** en el cuadro desplegable **Formato de configuración**, verá la opción **Configurar conjunto de aplicaciones** en la hoja **Agregar aplicación**. Seleccione las aplicaciones de Office que quiere asignar a los dispositivos.
+
+1. En el panel **Agregar aplicación**, seleccione **Configure App Suite** (Configurar conjunto de aplicaciones).
+2. En el panel **Configure App Suite** (Configurar conjunto de aplicaciones), elija las aplicaciones de Office estándar que quiere asignar a los dispositivos.  
+    Además, puede instalar aplicaciones para el cliente de escritorio de Microsoft Project Online y Microsoft Visio Online Plan 2, si posee sus licencias.
+3. Seleccione **Aceptar**.
+
+## <a name="configure-app-suite-settings"></a>Configuración del conjunto de aplicaciones
+
+Si ha seleccionado la opción **Diseñador de configuraciones** en el cuadro desplegable **Formato de configuración**, verá la opción **Configuración del conjunto de aplicaciones** en la hoja **Agregar aplicación**. En este paso, configure las opciones de instalación para el conjunto de aplicaciones. La configuración se aplica a todas las aplicaciones que agregó al conjunto.
 
 1. En el panel **Agregar aplicación**, seleccione **App Suite Settings** (Configuración del conjunto de aplicaciones).
 2. En el panel **App Suite Settings** (Configuración del conjunto de aplicaciones), haga lo siguiente:
@@ -110,6 +127,10 @@ En este paso, configure las opciones de instalación para el conjunto de aplicac
     - **Usar activación en equipos compartidos**: seleccione esta opción cuando varios usuarios compartan un equipo. Para obtener más información, vea [Introducción a la activación de equipos compartidos para Office 365](https://docs.microsoft.com/DeployOffice/overview-of-shared-computer-activation-for-office-365-proplus).
     - **Idiomas**: Office se instala automáticamente en cualquier idioma compatible que se instale con Windows en el dispositivo de los usuarios finales. Seleccione esta opción si desea instalar más idiomas con el conjunto de aplicaciones. <p></p>
     Puede implementar idiomas adicionales para las aplicaciones Office 365 Pro Plus administradas mediante Intune. La lista de idiomas disponibles incluye el **Tipo** de paquete de idioma (núcleo, parcial y corrección). En Azure Portal, seleccione **Microsoft Intune** > **Aplicaciones cliente** > **Aplicaciones** > **Agregar**. En la lista **Tipo de aplicación** de la hoja **Agregar aplicación**, seleccione **Windows 10** en **Conjunto de aplicaciones de Office 365**. Seleccione **Idiomas** en la hoja **Configuración del conjunto de aplicaciones**. Para más información, vea [Información general acerca de la implementación de idiomas en Office 365 ProPlus](https://docs.microsoft.com/deployoffice/overview-of-deploying-languages-in-office-365-proplus).
+
+## <a name="enter-xml-format"></a>Especificar formato XML
+
+Si ha seleccionado la opción **Especificar datos XML** en el cuadro desplegable **Formato de configuración**, verá la opción **Enter XML format** (Especificar formato XML) en la hoja **Agregar aplicación**. Para obtener más información, vea [Opciones de configuración de la Herramienta de implementación de Office](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool).
 
 ## <a name="finish-up"></a>Finalizar
 
@@ -138,7 +159,7 @@ En la tabla siguiente se muestran los códigos de error comunes que podría enco
 
 | Escenario | Código de retorno | UI | Nota |
 |------------------------------------------------------------------------------------------------------------------|---------------------------------------|----------------------------------------------------|------------------------------------|
-| Trabajo de desinstalación sin una instalación de Hacer clic y ejecutar activa | -2147418113, 0x8000ffff o 2147549183 | Error Code: Código de error 30088 1008: 30125-1011 (404) | Herramienta de implementación de Office |
+| Trabajo de desinstalación sin una instalación de Hacer clic y ejecutar activa | -2147418113, 0x8000ffff o 2147549183 | Código de error: Código de error 30088 1008: 30125-1011 (404) | Herramienta de implementación de Office |
 | Instalación cuando hay instalada una versión de MSI | 1603 | - | Herramienta de implementación de Office |
 | El usuario u otra instalación canceló la instalación | 17002 | - | Hacer clic y ejecutar |
 | Intentar instalar 64 bits en un dispositivo con 32 bits instalados. | 1603 | - | Código de devolución de la Herramienta de implementación de Office |

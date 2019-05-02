@@ -2,24 +2,26 @@
 title: Administración de dispositivos de forma remota en Microsoft Intune - Azure | Microsoft Docs
 description: Consulte los roles necesarios para usar TeamViewer, cómo instalar el conector de TeamViewer y una guía paso a paso para administrar dispositivos de forma remota usando Microsoft Intune en Azure Portal
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
-ms.date: 06/12/2018
-ms.topic: article
+ms.date: 02/05/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 72cdd888-efca-46e6-b2e7-fb9696bb2fba
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 7cb7c23e673c9e0c074f45991333fde9bfc8e930
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: dd2d9f0a0caf87eb75ba3a9cdc123e69425ceb8b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52186195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509744"
 ---
 # <a name="use-teamviewer-to-remotely-administer-intune-devices"></a>Uso de TeamViewer para administrar dispositivos de Intune de forma remota
 
@@ -31,10 +33,10 @@ Los dispositivos administrados por Intune pueden administrarse de forma remota c
 
 - El administrador de Intune en Azure Portal debe tener los siguientes [roles de Intune](role-based-access-control.md):  
 
-    - **Update Remote Assistance** (Actualizar asistencia remota): permite a los administradores modificar la configuración del conector de TeamViewer.
-    - **Solicitar asistencia remota**: permite a los administradores iniciar una nueva sesión de asistencia remota para cualquier usuario. Los usuarios con este rol no están limitados por ningún rol de Intune dentro de un ámbito. Además, los grupos de dispositivos o usuarios a los que se ha asignado un rol de Intune dentro de un ámbito también pueden solicitar asistencia remota. 
+    - **Actualizar asistencia remota**: Permite a los administradores modificar la configuración del conector de TeamViewer.
+    - **Solicitar asistencia remota**: Permite a los administradores iniciar una nueva sesión de asistencia remota para cualquier usuario. Los usuarios con este rol no están limitados por ningún rol de Intune dentro de un ámbito. Además, los grupos de dispositivos o usuarios a los que se ha asignado un rol de Intune dentro de un ámbito también pueden solicitar asistencia remota. 
 
-- Una cuenta de [TeamViewer](https://www.teamviewer.com) con las credenciales de inicio de sesión.
+- Cuenta de [TeamViewer](https://www.teamviewer.com) con las credenciales de inicio de sesión. Solo algunas licencias TeamViewer pueden admitir la integración con Intune. Para las necesidades específicas de TeamViewer, consulte [Partner de integración de TeamViewer: Microsoft Intune](https://www.teamviewer.com/integrations/microsoft-intune/).
 
 Al usar TeamViewer, permite que el conector de TeamViewer para Intune cree sesiones de TeamViewer, lea datos de Active Directory y guarde el token de acceso de la cuenta de TeamViewer.
 

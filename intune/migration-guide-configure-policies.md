@@ -1,6 +1,6 @@
 ---
 title: Configuración de cumplimiento de dispositivos y aplicaciones durante una migración a Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: En este artículo se proporcionan los pasos necesarios para configurar directivas de aplicaciones y cumplimiento de dispositivos durante una migración de Microsoft Intune.
 keywords: ''
 author: dougeby
@@ -10,6 +10,7 @@ ms.date: 01/02/2018
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 0062d08e-e5b3-4f73-8b64-5ad95adbe945
 ms.reviewer: dagerrit
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9a0557eff752e1fc511716fc7e5de0ebe904172d
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 76c6000c375c3128c0832f3dd6b40fe1ed4cf34b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57230693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508228"
 ---
 # <a name="configure-device-compliance-and-app-management-policies-when-migrating-to-microsoft-intune"></a>Configurar directivas administración de aplicaciones y cumplimiento de los dispositivos al migrar a Microsoft Intune
 
@@ -43,7 +44,7 @@ Puede que cada plataforma de dispositivo ofrezca una configuración diferente, p
 
 ## <a name="task-list-for-device-compliance-policies"></a>Lista de tareas para directivas de cumplimiento de dispositivos
 
-### <a name="task-1-add-device-groups-optional"></a>Tarea 1: Agregar grupos de dispositivos (opcional)
+### <a name="task-1-add-device-groups-optional"></a>Tarea 1: Agregar grupos de dispositivos (opcional)
 
 Puede crear grupos de dispositivos cuando tenga que realizar tareas administrativas en función de la identidad del dispositivo y no de la identidad del usuario.
 
@@ -51,11 +52,11 @@ Los grupos de dispositivos resultan prácticos para administrar dispositivos que
 
 Si configura grupos de dispositivos antes de la inscripción de dispositivos, puede usar las categorías de dispositivos para unir dispositivos automáticamente a los grupos tras la inscripción. Después, recibirán las directivas de sus dispositivos de grupo automáticamente. [Introducción a los grupos](groups-get-started.md)
 
-### <a name="task-2-use-resource-access-profiles-wi-fi-vpn-and-email-certificates"></a>Tarea 2: Usar perfiles de acceso a recursos (certificados de Wi-Fi, VPN y correo electrónico)
+### <a name="task-2-use-resource-access-profiles-wi-fi-vpn-and-email-certificates"></a>Tarea 2: Usar perfiles de acceso a recursos (certificados de Wi-Fi, VPN y correo electrónico)
 
 Los perfiles de acceso a recursos proporcionan configuraciones de acceso y certificados para dispositivos inscritos. Si está usando autenticación basada en certificados, [configure los certificados](certificates-configure.md).
 
-### <a name="task-3-create-and-deploy-device-configuration-profiles"></a>Tarea 3: Crear e implementar perfiles de configuración de dispositivos
+### <a name="task-3-create-and-deploy-device-configuration-profiles"></a>Tarea 3: Crear e implementar perfiles de configuración de dispositivos
 
 Tiene que crear un perfil de configuración de dispositivos para aplicar la configuración de nivel de dispositivo, como, por ejemplo: deshabilitar la cámara, la tienda de aplicaciones, configurar el modo de aplicación sencilla y la pantalla principal, entre otros. Aprenda sobre los [perfiles de dispositivo](device-profiles.md).
 
@@ -83,7 +84,7 @@ Vea otros recursos de configuración de cumplimiento de dispositivos:
 
 -   Aprenda a [crear una directiva de cumplimiento de dispositivos](device-compliance-get-started.md).
 
-### <a name="task-5-publish-and-deploy-apps"></a>Tarea 5: Publicar e implementar aplicaciones
+### <a name="task-5-publish-and-deploy-apps"></a>Tarea 5: Publicar e implementar aplicaciones
 
 Cuando use la MDM de Intune, puede proporcionar aplicaciones requiriendo su instalación automática o poniéndolas a disposición de los usuarios en el portal de empresa.
 
@@ -91,7 +92,7 @@ Cuando use la MDM de Intune, puede proporcionar aplicaciones requiriendo su inst
 
 -   [Cómo implementar aplicaciones](apps-deploy.md).
 
-### <a name="task-6-enable-device-enrollment"></a>Tarea 6: Permitir la inscripción de dispositivos
+### <a name="task-6-enable-device-enrollment"></a>Tarea 6: Permitir la inscripción de dispositivos
 
 La inscripción de dispositivos es necesaria para administrar el dispositivo. Aprenda a [prepararse para inscribir dispositivos de propiedad corporativa y personales de usuario](device-enrollment.md).
 

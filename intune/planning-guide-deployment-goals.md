@@ -1,27 +1,29 @@
 ---
 title: Determinación de los desafíos, los objetivos y las metas de implementación
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Este artículo ayuda a determinar los desafíos, los objetivos y las metas para una implementación solo en la nube de Microsoft Intune.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 24cf9d97-db39-4b95-a664-4aa2e33edb87
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 10598f4868a42b9736b6b33a6d9b5c4b4b308967
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: cd1fd6198e71dd585d0216c0850c0140f5e71344
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52189357"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512685"
 ---
 # <a name="determine-deployment-goals-objectives-and-challenges"></a>Determinación de los desafíos, los objetivos y las metas de implementación
 
@@ -61,7 +63,7 @@ Los objetivos de la implementación son las acciones que una organización puede
 
 -   **Reducir el número de soluciones de administración de dispositivos**
 
-    -   **Implementación:** consolidación en una única solución de administración de dispositivos móviles: Microsoft Intune para la protección de datos corporativos de aplicaciones y dispositivos.
+    -   **Implementación:** consolidar en una sola solución de administración de dispositivos móviles: Microsoft Intune para proteger los datos corporativos de aplicaciones y dispositivos.
 
 -   **Proporcionar acceso seguro a Exchange y SharePoint Online**
 
@@ -73,7 +75,7 @@ Los objetivos de la implementación son las acciones que una organización puede
 
 -   **Proporcionar la funcionalidad de borrar datos corporativos del dispositivo**
 
-    -   **Implementación:** inscribir los dispositivos en Intune. Esta opción le ofrece la posibilidad de realizar un borrado remoto de los datos y los recursos corporativos cuando sea apropiado.
+    -   **Implementación:** Inscribir dispositivos en Intune. Esta opción le ofrece la posibilidad de realizar un borrado remoto de los datos y los recursos corporativos cuando sea apropiado.
 
 ## <a name="deployment-challenges"></a>Desafíos de la implementación
 
@@ -89,7 +91,7 @@ Los desafíos de la implementación son problemas de alta prioridad para una org
 
 -   No crea, valida ni comparte activamente una propuesta de valor claro que tenga una repercusión en su organización. Como consecuencia, la adopción es limitada y no se rentabiliza la inversión (ROI).
 
-    -   **Mitigación:** aunque es posible que esté emocionado por comenzar el proyecto, asegúrese de tener unos objetivos claramente definidos. Inclúyalos en todas las actividades de difusión y aprendizaje para ayudar a garantizar que los usuarios entiendan por qué la organización ha seleccionado Intune.
+    -   **Mitigación:** aunque es posible que esté deseando empezar el proyecto, asegúrese de tener unos objetivos claramente definidos. Inclúyalos en todas las actividades de difusión y aprendizaje para ayudar a garantizar que los usuarios entiendan por qué la organización ha seleccionado Intune.
 
 ## <a name="next-steps"></a>Pasos siguientes
 

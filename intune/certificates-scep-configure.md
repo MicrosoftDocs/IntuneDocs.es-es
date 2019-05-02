@@ -5,22 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cdc0f02aa09edd05314d0d4a6a2abacc98c94bf2
-ms.sourcegitcommit: e5f501b396cb8743a8a9dea33381a16caadc51a9
+ms.openlocfilehash: 6f1cdacf4b4d26e9db9b4090805f697927a399c5
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/23/2019
-ms.locfileid: "56742744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61510131"
 ---
 # <a name="configure-and-use-scep-certificates-with-intune"></a>Configurar y usar certificados SCEP con Intune
 
@@ -36,9 +37,9 @@ En este artículo se muestra cómo configurar la estructura y, luego, crear y as
 - **Servidor SCEP**: en Windows Server 2012 R2 o posterior, configure el rol de servidor Servicio de inscripción de dispositivos de red (SCEP). En Intune no se puede usar el Servicio de inscripción de dispositivos de red en un servidor que también ejecuta la entidad de certificación empresarial. Consulte [Orientación para el Servicio de inscripción de dispositivos de red](http://technet.microsoft.com/library/hh831498.aspx) para obtener instrucciones sobre cómo configurar Windows Server 2012 R2 para hospedar NDES.
 El servidor NDES debe estar unido a un dominio dentro del mismo bosque que la CA de empresa. Puede encontrar más información sobre cómo implementar el servidor NDES en un bosque independiente, una red aislada o un dominio interno en [Uso de un módulo de directivas con el servicio de inscripción de dispositivos de red](https://technet.microsoft.com/library/dn473016.aspx).
 
-- **Microsoft Intune Certificate Connector**: descargue el instalador de **Certificate Connector** (**NDESConnectorSetup.exe**) en el portal de administración de Intune. Deberá ejecutar este instalador en el servidor con el rol NDES.  
+- **Microsoft Intune Certificate Connector**: En el portal de Intune, vaya a **Configuración del dispositivo** > **Conectores de certificados** > **Agregar** y siga los *Pasos de instalación del conector para SCEP*. Use el vínculo de descarga en el portal para empezar la descarga del instalador del conector de certificado **NDESConnectorSetup.exe**.  Deberá ejecutar este instalador en el servidor con el rol NDES.  
 
-  - El conector de certificado de NDES también admite el modo Estándar federal de procesamiento de información (FIPS). FIPS no es necesario, pero puede emitir y revocar certificados cuando está habilitado.
+Este conector de certificado de NDES también admite el modo Estándar federal de procesamiento de información (FIPS). FIPS no es necesario, pero puede emitir y revocar certificados cuando está habilitado.
 
 - **Servidor proxy de aplicación web** (opcional): use un servidor con Windows Server 2012 R2 o posterior como servidor proxy de aplicación web (WAP). Esta configuración:
   - Permite a los dispositivos recibir certificados mediante una conexión a Internet.
@@ -298,12 +299,13 @@ En este paso, hará lo siguiente:
 > Microsoft Intune Certificate Connector **debe** instalarse en un servidor Windows independiente. No se puede instalar en la entidad de certificación (CA) emisora. También se **debe** instalar en el mismo servidor que el rol de Servicio de inscripción de dispositivos de red (NDES).
 
 1. En [Azure Portal](https://portal.azure.com), seleccione **Todos los servicios**, filtre por **Intune** y seleccione **Microsoft Intune**.
-2. Seleccione **Configuración de dispositivos** > **Entidad de certificación** > **Agregar**.
-3. Descargue y guarde el archivo del conector. Guárdelo en una ubicación accesible desde el servidor donde va a instalar el conector.
+2. Seleccione **Configuración del dispositivo** > **Conectores de certificación** > **Agregar**.
+3. Descargue y guarde el conector para el archivo SCEP. Guárdelo en una ubicación accesible desde el servidor donde va a instalar el conector.
 
-    ![ConnectorDownload](./media/certificates-download-connector.png)
+   ![ConnectorDownload](./media/certificates-scep-configure/download-certificates-connector.png)
 
-4. Una vez finalizada la descarga, vaya al servidor que hospeda el rol Servicio de inscripción de dispositivos de red (NDES). Después:
+
+4. Una vez finalizada la descarga, vaya al servidor que hospeda el Servicio de inscripción de dispositivos de red (NDES). Después:
 
     1. Asegúrese de que .NET Framework 4.5 esté instalado, tal como requiere el conector de certificado NDES. .NET framework 4.5 se incluye automáticamente con Windows Server 2012 R2 y las versiones más recientes.
     2. Ejecute el instalador (**NDESConnectorSetup.exe**). El instalador también instala el módulo de directivas para SCEP y el servicio web de CRP. El servicio web de CRP, CertificateRegistrationSvc, se ejecuta como una aplicación en IIS.
@@ -363,8 +365,8 @@ Para validar que el servicio se ejecuta, abra un explorador y escriba la siguien
 5. En la lista desplegable de los **tipos de perfil**, seleccione **Certificado SCEP**.
 6. Escriba los valores siguientes:
 
-   - **Tipo de certificado**: elija **Usuario** para certificados de usuario. Elija **Dispositivo** para dispositivos sin usuario, como quioscos multimedia. Los certificados de **Dispositivo** están disponibles para estas plataformas:  
-     - Android Enterprise
+   - **Tipo de certificado**: elija **Usuario** para certificados de usuario. Un tipo de certificado **Usuario** puede contener atributos de usuario y dispositivo en el asunto y SAN del certificado.  Elija **Dispositivo** para escenarios como los dispositivos sin usuario, como los quioscos, o para dispositivos Windows, colocando el certificado en el almacén de certificados del equipo local. Los certificados **Dispositivo** solo pueden contener atributos de dispositivo en el asunto y SAN del certificado.  Los certificados de **Dispositivo** están disponibles para estas plataformas:  
+     - Android Enterprise: perfil de trabajo
      - iOS
      - macOS
      - Windows 8.1 y posterior

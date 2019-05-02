@@ -1,15 +1,16 @@
 ---
 title: Crear el diseño de Microsoft Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Este artículo le ayuda a crear un diseño para una implementación y diseño solo en la nube de Microsoft Intune.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
-ms.date: 10/01/2018
+ms.date: 3/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a8e38e29-f5e3-4a71-a170-d3b1a06e37c6
 ms.reviewer: jeffbu, cgerth
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 22af3d4de296d90a89bb3d812cab0e55983e786b
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 307895935e1cd6fe2489a4ee8ae03333ce97d55b
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57238989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512726"
 ---
 # <a name="create-a-design"></a>Creación de un diseño
 
@@ -110,6 +111,10 @@ Puede [descargar una plantilla de la tabla anterior](https://gallery.technet.mic
 
 Intune ofrece dos opciones de implementación: independiente e híbrida. Independiente se refiere al servicio de Intune que se ejecuta en la nube, híbrida se refiere a la integración de Intune con System Center Configuration Manager. Esta guía está destinada principalmente al uso de la opción independiente. [Decida qué opción se adapta a los requisitos de su empresa](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management).
 
+> [!Important]
+>La incorporación de nuevos clientes MDM híbridos está en desuso. Para obtener más información, vea la entrada de blog [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) (Transición de la administración de dispositivos móviles híbrida a Intune en Azure).
+
+
 ## <a name="intune-tenant-location"></a>Ubicación del inquilino de Intune
 
 Si su organización tiene una presencia global, asegúrese de planear dónde se encontrará su inquilino al suscribirse al servicio. El país se define cuando se registra en una suscripción de Intune la primera vez, y se asignan las regiones del mundo que se muestran a continuación:
@@ -133,7 +138,7 @@ Las dependencias externas son servicios y productos que son independientes de In
 
 -   Infraestructura de clave pública (PKI)
 
-Vamos a explorar con más detalle estas dependencias externas comunes a continuación.
+Aquí veremos con más detalle estas dependencias externas comunes.
 
 ### <a name="identity"></a>Identidad
 
@@ -399,11 +404,9 @@ A continuación se muestra un ejemplo de cómo diseñar una directiva de cumplim
 Puede [descargar una plantilla de la tabla anterior](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) para identificar los requisitos de la directiva de cumplimiento.
 #### <a name="conditional-access-policies"></a>Directivas de acceso condicional
 
-El acceso condicional se usa para permitir que solo los dispositivos compatibles tengan acceso al correo electrónico y a otros recursos de la empresa. Intune trabaja con Enterprise Mobility + Security (EMS) para controlar el acceso a los recursos de la empresa. Deberá decidir si se necesita el acceso condicional y qué debe protegerse. Más información sobre el [acceso condicional](conditional-access.md).
+El acceso condicional se usa para permitir que solo los dispositivos compatibles tengan acceso al correo electrónico y a otros recursos de la empresa. Intune trabaja con Enterprise Mobility + Security (EMS) para controlar el acceso a los recursos de la empresa. Decida si necesita el acceso condicional y qué debe protegerse. Más información sobre el [acceso condicional](conditional-access.md).
 
-Para el acceso en línea, decida a qué plataformas y a qué grupos de usuarios se dirigirán las directivas de acceso condicional. Además, determine si necesita instalar o configurar el conector de servicio a servicio de Intune para Exchange Online o Exchange local. Obtenga más información sobre cómo instalar y configurar los conectores de servicio a servicio de Intune: <!---these links are correct--->
-
--   [Exchange Online](exchange-service-connector-configure.md)
+Para el acceso en línea, decida a qué plataformas y a qué grupos de usuarios se dirigirán las directivas de acceso condicional. Determine también si necesita instalar o configurar el conector de Intune para Exchange local: 
 
 -   [Exchange local](exchange-connector-install.md)
 

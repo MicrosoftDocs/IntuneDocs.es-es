@@ -5,35 +5,33 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/09/2019
-ms.topic: article
+ms.date: 02/27/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36076aab02f16937066cb3d47d573f7c74dd6277
-ms.sourcegitcommit: 727c3ae7659ad79ea162250d234d7730f840c731
+ms.openlocfilehash: 704abe5e03410b52d54c7729e1832e527ae4dfb6
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55833623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61504311"
 ---
-# <a name="windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Plantillas de Windows 10 para configurar opciones de directiva de grupo en Microsoft Intune
+# <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>Usar plantillas de Windows 10 para configurar opciones de directiva de grupo en Microsoft Intune
 
 Al administrar dispositivos en una organización, el objetivo es crear un grupo de valores de configuración que se apliquen a diferentes grupos de dispositivos. Por ejemplo, hay varios grupos de dispositivos. Para el grupo A, se quiere asignar un conjunto concreto de valores configuración. Para el grupo B, se quiere asignar otro conjunto de valores configuración. También se quiere obtener una vista sencilla de los valores que se pueden configurar.
 
-Esta tarea se puede realizar con **Plantillas administrativas** de Microsoft Intune. Las plantillas administrativas incluyen cientos de valores que controlan características de Internet Explorer, programas de Microsoft Office, el escritorio remoto, el acceso a OneDrive, el uso de una contraseña de imagen o un PIN para iniciar sesión, etc. Estas plantillas son similares a las opciones de directiva de grupo (GPO) de Active Directory (AD) y son [valores respaldados por ADMX](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) que usan XML. Pero las plantillas de Intune están completamente basadas en la nube. Ofrecen una manera más simple y sencilla de configurar y de buscar la configuración deseada.
+Esta tarea se puede realizar con **Plantillas administrativas** de Microsoft Intune. Las plantillas administrativas incluyen cientos de valores que controlan características de Internet Explorer, programas de Microsoft Office, el escritorio remoto, el acceso a OneDrive, el uso de una contraseña de imagen o un PIN para iniciar sesión, etc. Estas plantillas son similares a la configuración de directiva de grupo (GPO) de Active Directory (AD) y son [valores respaldados por ADMX](https://docs.microsoft.com/windows/client-management/mdm/understanding-admx-backed-policies) (abre otro sitio de Docs) que usan XML. Pero las plantillas de Intune están completamente basadas en la nube. Ofrecen una manera más simple y sencilla de configurar y de buscar la configuración deseada.
 
 Las **plantillas administrativas** están integradas en Intune y no requieren personalizaciones, ni siquiera el uso de OMA-URI. Como parte de la solución de administración de dispositivos móviles (MDM), use estos valores de plantilla como centro único para administrar los dispositivos Windows 10.
 
 En este artículo se enumeran los pasos para crear una plantilla para dispositivos Windows 10 y se muestra cómo filtrar todas las opciones disponibles en Microsoft Intune. Cuando se crea la plantilla, se crea un perfil de configuración de dispositivo. Luego se puede asignar o implementar este perfil en los dispositivos Windows 10 de la organización.
-
-> [!NOTE]
-> Las plantillas administrativas son compatibles con los dispositivos independientes. Actualmente no se admiten en dispositivos administrados conjuntamente de System Center Configuration Manager (SCCM).
 
 ## <a name="create-a-template"></a>Crear una plantilla
 
@@ -75,6 +73,8 @@ Hay cientos de valores disponibles en estas plantillas. Para que sea más fácil
   ![Clic en Ruta para ordenar alfabéticamente](./media/administrative-templates-windows/search-copy-settings.png)
 
   En otro ejemplo, busque `microsoft word`. Ve todos los valores que puede establecer para el programa Microsoft Word. Busque `explorer` para ver todos los valores de Internet Explorer que puede agregar a la plantilla.
+
+Esta característica usa el [CSP de directiva de Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (abre otro sitio de Docs). El CSP funciona en diferentes ediciones de Windows, como por ejemplo, Home, Professional, Enterprise, etcétera. Para ver si un CSP funciona en una edición específica, vaya a [CSP de directiva de Windows](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider#admx-backed-policies) (abre otro sitio de Docs).
 
 ## <a name="next-steps"></a>Pasos siguientes
 

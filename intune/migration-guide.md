@@ -1,26 +1,28 @@
 ---
 title: Guía de migración de administración de dispositivos móviles de Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Esta guía le conduce por los diversos detalles implicados en la migración de un proveedor de MDM externo a Microsoft Intune.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dcfc21f9-1bcd-4371-a46d-f2e18154ec50
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: bde445601b6fe3612a1a3d8bcab4f6996a997228
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: e293140838cd772dea4cdf810623cfe92fa0fe9e
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52181418"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512990"
 ---
 # <a name="intune-migration-guide"></a>Guía de migración de Intune
 
@@ -34,7 +36,7 @@ Esta guía le conduce por los diversos detalles implicados en la migración de u
 
 Esta guía desglosa la migración en dos fases que incluyen tareas, estrategias y orientación táctica que le ayudarán a seguir de principio a fin el proceso de migración a la MDM de Intune.
 
--   [Fase 1: Preparar Intune para la administración de dispositivos móviles](migration-guide-prepare.md)
+-   [Fase 1: Preparar Intune para la administración de dispositivos móviles](migration-guide-prepare.md)
 
     -   [Evaluar los requisitos de migración de MDM](migration-guide-prepare.md#assess-mdm-requirements)
 
@@ -70,4 +72,4 @@ Es importante reconocer que la nueva implementación de Intune puede ser diferen
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-[Fase 1: Preparar Intune para la administración de dispositivos móviles](migration-guide-prepare.md)
+[Fase 1: Preparar Intune para la administración de dispositivos móviles](migration-guide-prepare.md)

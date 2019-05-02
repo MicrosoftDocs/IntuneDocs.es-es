@@ -5,10 +5,11 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/15/2018
+ms.date: 04/16/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ROBOTS: NOINDEX,NOFOLLOW
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b5308eb1f9d83bcc9b9cbc29cac9bcf09356e77
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 293fa40b59d0005f60aad45a3fc42d3dd790857d
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57231951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61510153"
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Funcionalidades de administración de dispositivos inscritos en Microsoft Intune
 
@@ -30,7 +31,7 @@ Microsoft Intune le permite administrar una variedad de dispositivos si los *ins
 
 En este artículo se facilita una lista completa de las funcionalidades que se le proporcionan después de la inscripción de los dispositivos.
 
-La administración, el inventario, la implementación de aplicaciones, el aprovisionamiento y la retirada se controlan a través del portal de Intune.
+La administración, el inventario, la implementación de aplicaciones, el aprovisionamiento y la retirada se controlan a través de Intune en Azure Portal.
 
 Los usuarios obtienen acceso al Portal de empresa que les permite instalar aplicaciones, inscribir y quitar dispositivos, y ponerse en contacto con su departamento de TI o departamento de soporte técnico.
 
@@ -42,7 +43,7 @@ Los usuarios obtienen acceso al Portal de empresa que les permite instalar aplic
 |--------------|-----------|--------------------|
 |Directivas de configuración<br><br>Directivas personalizadas| Le permiten administrar numerosas opciones y características de los dispositivos móviles de su organización. Por ejemplo, puede exigir una contraseña, limitar el número de intentos erróneos, limitar la cantidad de tiempo antes de que la pantalla se bloquee, establecer el plazo de expiración de una contraseña e impedir que se usen contraseñas que se han usado previamente. También puede controlar el uso de las características de hardware y software, como la cámara del dispositivo o el explorador web.<br><br>Use directivas personalizadas cuando las directivas de configuración no contengan la configuración que necesita. Para dispositivos iOS, puede importar la configuración que ha exportado desde la herramienta Apple Configurator. Para otros dispositivos, puede usar la configuración OMA-URI (identificador uniforme de recursos de Open Mobile Alliance) para configurar opciones y características en el dispositivo.|[Administrar la configuración y las características de los dispositivos con directivas de Microsoft Intune](device-compliance-get-started.md)|
 |Eliminación remota, bloqueo remoto y restablecimiento de código de acceso|Borra información confidencial tras la pérdida o el robo de un dispositivo. Por ejemplo, puede bloquear el dispositivo de forma remota, restaurar la configuración de fábrica o borrar solo los datos corporativos.<br><br>Puede restablecer los códigos de acceso si los usuarios dejan de tener acceso a sus dispositivos, bloquear dispositivos extraviados o robados, e incluso borrar los datos de dispositivos extraviados o robados.|Ayudar a proteger los dispositivos con el [bloqueo remoto](device-remote-lock.md) y el [restablecimiento de código de acceso](device-passcode-reset.md)|
-|Modo de quiosco|Le permite bloquear determinadas características de dispositivos móviles, como las capturas de pantalla y los interruptores de alimentación. También le permite restringir dispositivos para que ejecuten una única aplicación que especifique.|[Configuración de directivas de configuración de iOS en Microsoft Intune](device-restrictions-ios.md)|
+|Modo de quiosco|Le permite bloquear determinadas características de dispositivos móviles, como las capturas de pantalla y los interruptores de alimentación. También le permite restringir dispositivos para que ejecuten una única aplicación que especifique. |[Configuración de directivas de configuración de iOS en Microsoft Intune](device-restrictions-ios.md)|
 
 ## <a name="app-management"></a>Administración de aplicaciones
 

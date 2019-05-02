@@ -1,33 +1,34 @@
 ---
 title: Configuración del acceso condicional basado en dispositivos con Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Obtenga información sobre cómo crear una directiva de acceso condicional basado en dispositivos teniendo en cuenta el cumplimiento de dispositivos de Microsoft Intune y la administración de aplicaciones móviles.
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/11/2018
+ms.date: 02/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 03ca9a65d5a62c75c45541b42c9b2aa5c4871a18
-ms.sourcegitcommit: e0374b3ced83c8876a4f78b326869c10588a55e5
+ms.openlocfilehash: aaf9b82bc810dd3a616eb25f39f4b5830b1c3e6f
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56307794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508690"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>Creación de una directiva de acceso condicional basado en dispositivos
 
-Con Intune, puede mejorar el acceso condicional en Azure Active Directory mediante la incorporación del cumplimiento de dispositivos móviles a los controles de acceso. Una vez que ha creado una directiva de cumplimiento de Intune que define los requisitos de cumplimiento para los dispositivos, puede usar el estado de cumplimiento de un dispositivo para permitir o bloquear el acceso a sus aplicaciones y servicios. Puede hacerlo mediante la creación de una directiva de acceso condicional que usa la opción **Requerir que el dispositivo esté marcado como compatible**. 
+Con Intune, puede mejorar el acceso condicional en Azure Active Directory mediante la incorporación del cumplimiento de dispositivos móviles a los controles de acceso. Una vez que ha creado una directiva de cumplimiento de Intune que define los requisitos de cumplimiento para los dispositivos, puede usar el estado de cumplimiento de un dispositivo para permitir o bloquear el acceso a sus aplicaciones y servicios. Puede hacerlo mediante la creación de una directiva de acceso condicional que usa la opción **Requerir que el dispositivo esté marcado como compatible**.  
 
-Una directiva de acceso condicional especifica la aplicación o los servicios que desea proteger, las condiciones bajo las que se puede acceder a las aplicaciones o a los servicios y los usuarios a los que se aplica la directiva. El acceso condicional es una característica prémium de Azure AD que se puede configurar en Azure Active Directory, pero también puede configurar estas mismas directivas desde el portal de Intune. 
+Una directiva de acceso condicional especifica la aplicación o los servicios que desea proteger, las condiciones bajo las que se puede acceder a las aplicaciones o a los servicios y los usuarios a los que se aplica la directiva. El acceso condicional es una característica prémium de Azure AD que se puede configurar en Azure Active Directory, pero también puede configurar estas mismas directivas desde el portal de Intune. El nodo de acceso condicional al que se accede desde *Intune* es el mismo nodo al que se accede desde *Azure AD*.  
 
 > [!IMPORTANT]
 > Antes de configurar el acceso condicional, deberá configurar las directivas de cumplimiento de dispositivos de Intune para evaluar dispositivos en función de si cumplen requisitos específicos. Consulte [Introducción a las directivas de cumplimiento de dispositivos de Intune](device-compliance-get-started.md).

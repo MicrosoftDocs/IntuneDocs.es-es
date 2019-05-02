@@ -1,27 +1,29 @@
 ---
 title: Desarrollo de un plan de comunicación
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Este artículo le ayuda a desarrollar un plan de comunicación de implementación para su implementación de Microsoft Intune.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 10/30/2017
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 393ebe75-d001-485a-b81c-6361c8b5e6ee
 ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
-ms.openlocfilehash: 013e2c6c10d5a545343c864b1b564acbede7c675
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 6e3584d97bf9f1a223b15c986f398681a20520c1
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52179837"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61513297"
 ---
 # <a name="develop-a-rollout-communication-plan"></a>Desarrollo de un plan de comunicación
 
@@ -55,7 +57,7 @@ Puede encontrar útil esta [guía de inscripción para el usuario final](https:/
 
 Existen varios métodos de entrega que puede usar para comunicar la información de implementación de Intune a sus usuarios y grupos de la organización de destino. En la lista siguiente se muestran algunos ejemplos y la fase con la que puede usar el método:
 
--   Reuniones en Skype o en persona de toda la organización que se usan en la fase de puesta en marcha
+-   Reuniones de Microsoft Teams o en persona de toda la organización que se usan en la fase de puesta en marcha
 
 -   Correo electrónico usado para las fases de inscripción previa, inscripción e inscripción posterior
 

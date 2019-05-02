@@ -5,10 +5,11 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2018
+ms.date: 03/26/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 149def73-9d08-494b-97b7-4ba1572f0623
 ms.reviewer: erikre
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 69cc0d732c9dc850d55acedf4e6dbae0f43f350a
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: 21d773b0ab2227f59f1ee0b2091d39b7c9799721
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57232069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61506821"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>Preguntas más frecuentes sobre MAM y la protección de la aplicación
 
@@ -62,7 +63,7 @@ Cualquier aplicación integrada con el [SDK para aplicaciones de Intune](/intune
 
 - El usuario final debe tener una licencia de Microsoft Intune asignada a su cuenta de Azure Active Directory. Vea [Administrar licencias de Intune](/intune/licenses-assign) para obtener información sobre cómo asignar licencias de Intune a los usuarios finales.
 
-- El usuario final debe pertenecer a un grupo de seguridad de destino de una directiva de protección de la aplicación. La misma directiva de protección de aplicaciones debe tener como destino la aplicación específica que se va a utilizar. Las directivas de protección de aplicaciones pueden crearse e implementarse en la consola de Intune en el [portal de Azure](https://portal.azure.com). Actualmente, se pueden crear grupos de seguridad en el [portal de Office](https://portal.office.com).
+- El usuario final debe pertenecer a un grupo de seguridad de destino de una directiva de protección de la aplicación. La misma directiva de protección de aplicaciones debe tener como destino la aplicación específica que se va a utilizar. Las directivas de protección de aplicaciones pueden crearse e implementarse en la consola de Intune en el [portal de Azure](https://portal.azure.com). Actualmente se pueden crear grupos de seguridad en el [Centro de administración de Microsoft 365](https://admin.microsoft.com).
 
 - El usuario final debe iniciar sesión en la aplicación con su cuenta de AAD.
 
@@ -77,7 +78,7 @@ Cualquier aplicación integrada con el [SDK para aplicaciones de Intune](/intune
 
 **¿Cuáles son los requisitos adicionales para usar las aplicaciones [Word, Excel y PowerPoint](https://products.office.com/business/office)?**
 
-- El usuario final debe tener una licencia de [Office 365 Empresa o Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) asignada a su cuenta de Azure Active Directory. La suscripción debe incluir las aplicaciones de Office en dispositivos móviles y puede incluir una cuenta de almacenamiento en la nube con [OneDrive para la Empresa](https://onedrive.live.com/about/business/). Las licencias de Office 365 se pueden asignar en el [portal de Office](https://portal.office.com) siguiendo estas [instrucciones](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
+- El usuario final debe tener una licencia de [Office 365 Empresa o Enterprise](https://products.office.com/business/compare-more-office-365-for-business-plans) asignada a su cuenta de Azure Active Directory. La suscripción debe incluir las aplicaciones de Office en dispositivos móviles y puede incluir una cuenta de almacenamiento en la nube con [OneDrive para la Empresa](https://onedrive.live.com/about/business/). Las licencias de Office 365 se pueden asignar en el [Centro de administración de Microsoft 365](https://admin.microsoft.com) siguiendo estas [instrucciones](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc).
 
 - El usuario final debe tener una ubicación administrada configurada con la funcionalidad pormenorizada Guardar como en la configuración de directiva de protección de aplicaciones "Impedir Guardar como". Por ejemplo, si la ubicación administrada es OneDrive, la aplicación [OneDrive](https://onedrive.live.com/about/) debe estar configurada en la aplicación Word, Excel o PowerPoint del usuario final.
 
@@ -170,6 +171,27 @@ Las directivas de protección de aplicaciones de Intune para el acceso se aplica
 
 Cuando se trabaja con diferentes tipos de configuraciones, un requisito de versión de la aplicación tendría prioridad, seguido por el requisito de versión de sistema operativo de Android y el requisito de versión de revisión de Android. Después, se comprueban en el mismo orden las advertencias para todos los tipos de configuración.
 
+**Las directivas de Intune App Protection permiten a los administradores requerir que los dispositivos de usuario final pasen la atestación de SafetyNet de Google para dispositivos Android. ¿Con qué frecuencia se envía un nuevo resultado de atestación de SafetyNet al servicio?** <br><br> Se notificará una nueva determinación de servicio de Google Play a los administradores de TI con un intervalo determinado por el servicio Intune. La frecuencia de las llamadas de servicio está limitada debido a la carga y, por lo tanto, este valor se mantiene internamente y no es configurable. Cualquier acción que configure el administrador de TI para el valor de configuración de la atestación de SafetyNet de Google se realizará en función del último resultado notificado para el servicio de Intune en el momento del inicio condicional. Si no hay ningún dato, se permitirá el acceso siempre que no se produzcan errores en otras comprobaciones del inicio condiciona; en el back-end se iniciará un servicio de "recorrido de ida y vuelta" de Google Play para determinar los resultados de la atestación y se le solicitará al usuario de forma asincrónica si el dispositivo ha producido algún error. Si los datos disponibles son obsoletos, se permitirá o bloqueará el acceso en función del último resultado notificado; de forma similar, se iniciará un servicio de "recorrido de ida y vuelta" de Google Play para determinar los resultados de la atestación y se le pedirá al usuario de forma asincrónica si el dispositivo ha producido algún error.
+
+**Las directivas de Intune App Protection permiten a los administradores requerir que los dispositivos de usuario final envíen señales a través de la Verify Apps API de Google para dispositivos Android. ¿Cómo puede un usuario final activar el examen de la aplicación para evitar que el acceso quede bloqueado debido a esto?**<br><br> Las instrucciones para hacerlo varían ligeramente en función del dispositivo. Lo habitual es ir a Google Play Store y, luego, hacer clic en **Mis aplicaciones y juegos**. A continuación, debe hacer clic en el resultado del último examen de la aplicación, lo que le llevará al menú de Play Protect. Asegúrese de que el conmutador **Buscas amenazas de seguridad en dispositivo** esté activado.
+
+**¿Qué comprueba realmente la API de la atestación de SafetyNet de Google en los dispositivos Android? ¿Cuál es la diferencia entre los valores configurables de "Comprobar integridad básica" y "Comprobar integridad básica y dispositivos certificados"?** <br><br>
+Intune aprovecha las API de SafetyNet de Google Play Protect para agregarlas a las comprobaciones de detección de rooting para dispositivos no inscritos. Google ha desarrollado y mantenido este conjunto de API para aplicaciones Android en caso de que no se quiera ejecutarlas en dispositivos con rooting. La aplicación Android Pay ha incorporado esto, por ejemplo. Aunque Google no comparte públicamente la totalidad de las comprobaciones de detección de rooting que se producen, esperamos que estas API detecten los usuarios que hayan aplicado el rooting en sus dispositivos. Después, se puede bloquear el acceso de estos usuarios o se pueden eliminar sus cuentas de empresa desde sus aplicaciones habilitadas para la directiva. "Comprobar integridad básica" muestra información sobre la integridad general del dispositivo. Por ejemplo, dispositivos con rooting, emuladores, dispositivos virtuales y cualquier otro dispositivo con signos de error de integridad básica por manipulación. "Comprobar integridad básica y dispositivos certificados" ofrece información sobre la compatibilidad del dispositivo con los servicios de Google. Solo superan esta comprobación aquellos dispositivos que no se han manipulado y están certificados por Google. Entre los dispositivos que producirán un error se incluyen los siguientes:
+* Dispositivos que producen error en la integridad básica
+* Dispositivos con un cargador de arranque desbloqueado
+* Dispositivos con una imagen de sistema personalizada o ROM
+* Dispositivos para los que el fabricante no ha solicitado o superado la certificación de Google 
+* Dispositivos con una imagen de sistema creada directamente desde los archivos de origen del Android Open Source Program
+* Dispositivos con una imagen de sistema de versión preliminar beta o de desarrollador
+
+Consulte la [documentación de Google sobre la atestación de SafetyNet](https://developer.android.com/training/safetynet/attestation) para obtener detalles técnicos.
+
+**Hay dos comprobaciones similares en la sección de inicio condicional al crear una directiva de Intune App Protection para dispositivos Android. ¿Debo hacer obligatorias las opciones de configuración "Atestación de dispositivo SafetyNet" o "Dispositivos con jailbreak o rooting"?** <br><br>
+Las comprobaciones de la API de SafetyNet de Google Play Protect requieren que el usuario final esté en línea, al menos durante la ejecución del "recorrido de ida y vuelta" para determinar los resultados de atestación. Si el usuario final está sin conexión, el administrador de TI puede esperar igualmente que se exija un resultado de la configuración "Dispositivos con jailbreak o rooting". Dicho esto, si el usuario final ha estado sin conexión demasiado tiempo, se aplica el valor "Período de gracia sin conexión". Asimismo, cuando se alcanza este valor del temporizador, todo acceso a los datos profesionales o educativos se bloquea hasta que el acceso a la red esté disponible. Activar ambas opciones de configuración permite aplicar un enfoque por capas con el fin de mantener los dispositivos del usuario final en buen estado, lo que es importante cuando los usuarios finales acceden a los datos profesionales o educativos desde dispositivos móviles. 
+
+**La configuración de directivas de protección de aplicaciones que utilicen las API de Google Play Protect requiere Google Play Services para su funcionamiento. ¿Qué ocurre si Google Play Services no se permite en la ubicación en la que se encuentre el usuario final?**<br><br>
+Ambas opciones "Atestación de dispositivo SafetyNet" y "Examen de amenazas en las aplicaciones" requieren una versión determinada de Google Play Services para funcionar correctamente. Puesto que estas opciones de configuración corresponden al área de seguridad, si el usuario final es el destinatario de esta configuración y no dispone de la versión adecuada de Google Play Services o no tiene acceso a ella, se le bloqueará. 
+
 ## <a name="app-experience-on-ios"></a>Experiencia de aplicación en iOS
 **¿Qué ocurre si se agrega o quita una huella digital o una cara en el dispositivo?**
 Las directivas de protección de aplicaciones de Intune permiten limitar el acceso a solo los usuarios con licencia de Intune. Una de las maneras de controlar el acceso a la aplicación es exigir Touch ID o Face ID de Apple en dispositivos admitidos. Intune implementa un comportamiento donde si hay algún cambio en la base de datos biométrica del dispositivo, Intune solicita al usuario un PIN cuando se alcanza el siguiente valor de tiempo de espera de inactividad. Los cambios realizados en los datos biométricos incluyen la incorporación o eliminación de una cara o una huella digital. Si el usuario de Intune no tiene establecido un PIN, se le lleva por los pasos para configurar uno.
@@ -184,20 +206,13 @@ Las directivas de protección de aplicaciones de Intune para el acceso se aplica
 
 Cuando se trabaja con diferentes tipos de configuraciones, un requisito de versión de Intune App SDK tendría prioridad, seguido por el requisito de versión de la aplicación y el requisito de versión del sistema operativo de iOS. Después, se comprueban en el mismo orden las advertencias para todos los tipos de configuración. Se recomienda configurar los requisitos de versión de Intune App SDK solo de acuerdo con las instrucciones del equipo de producto de Intune para escenarios de bloqueo esenciales.
 
-## <a name="app-protection-policies---policy-refresh"></a>Directivas de protección de aplicaciones: actualización de directiva
-- Las aplicaciones se conectan con App Service cada 30 minutos.
-- El umbral de 30 minutos se basa en un temporizador.
-    - Si la aplicación está activa al cabo de 30 minutos, se conecta.
-    - Si la aplicación está en modo de suspensión al cabo de 30 minutos, se conecta en el tramo siguiente.
-- Si no hay ninguna directiva asignada a un usuario, el contacto se produce cada ocho horas.
-- Si no hay ninguna licencia de Intune asignada, el contacto se produce cada 24 horas.
-
 
 ## <a name="see-also"></a>Consulte también
 - [Implementar el plan de Intune](planning-guide-onboarding.md)
 - [Pruebas y validación de Intune](planning-guide-test-validation.md)
 - [Opciones de configuración de directiva de administración de aplicaciones móviles de Android en Microsoft Intune](app-protection-policy-settings-android.md)
 - [Opciones de configuración de directiva de administración de aplicaciones móviles iOS](app-protection-policy-settings-ios.md)
-- [Validar las directivas de protección de aplicaciones](app-protection-policies-validate.md)
+- [Actualización de las directivas de protección de aplicaciones](app-protection-policy-delivery.md)
+- [Validar las directivas de protección de aplicaciones](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery)
 - [Agregar directivas de configuración para aplicaciones administradas sin inscripción de dispositivos](app-configuration-policies-managed-app.md)
 - [Cómo obtener soporte técnico para Microsoft Intune](get-support.md)

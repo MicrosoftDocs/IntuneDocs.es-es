@@ -1,12 +1,12 @@
 ---
-title: 'Inicio rápido: Crear una directiva de cumplimiento de contraseñas para dispositivos Android'
+title: 'Inicio rápido: Directiva de cumplimiento de contraseñas para dispositivos Android'
 titleSuffix: Microsoft Intune
 description: En este tutorial de inicio rápido usará Microsoft Intune para establecer la longitud de la contraseña necesaria para los dispositivos Android.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 04/15/2019
 ms.topic: quickstart
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f4a16272f32b8546e7e9bb12a22f16235ab49aed
-ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.openlocfilehash: e71a9a69cfc474f311bc6acd9e8f24c776a44476
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58799665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61512786"
 ---
 # <a name="quickstart-create-a-password-compliance-policy-for-android-devices"></a>Inicio rápido: Crear una directiva de cumplimiento de contraseñas para dispositivos Android
 
@@ -32,7 +32,7 @@ En este tutorial, usará Microsoft Intune para exigir a los usuarios de sus recu
 Una directiva de cumplimiento de dispositivos de Intune especifica las reglas y la configuración que deben cumplir los dispositivos para que se consideren compatibles. Puede usar directivas de cumplimiento con acceso condicional para permitir o bloquear el acceso a los recursos de la empresa. También puede obtener informes de dispositivos y realizar acciones en caso de incumplimiento.
 
 > [!IMPORTANT]
-> Además de la configuración de la contraseña, también debe considerar otra configuración de la seguridad del sistema para proteger sus recursos. Para más información, vea [Configuración de seguridad del sistema](compliance-policy-create-android-for-work.md#system-security-settings).
+> Además de la configuración de la contraseña, también debe considerar otra configuración de la seguridad del sistema para proteger sus recursos. Para más información, vea [Configuración de seguridad del sistema](compliance-policy-create-android-for-work.md).
 
 Si no tiene una suscripción a Intune, [regístrese para obtener una cuenta de prueba gratuita](free-trial-sign-up.md).
 

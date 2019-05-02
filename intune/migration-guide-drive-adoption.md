@@ -1,26 +1,28 @@
 ---
 title: Impulsar la adopción del acceso condicional por los usuarios finales
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Sepa cómo usar el acceso condicional para impulsar la inscripción de Microsoft Intune.
 keywords: ''
 author: dougeby
 ms.author: dougeby
 manager: dougeby
 ms.date: 01/02/2018
-ms.topic: article
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: c2d7ce3f-fe97-4044-ad9e-25ac8fa301c9
 ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
-ms.openlocfilehash: 4fad67bcde44246e7673d6ebe12afcdcf14fc8cd
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 803bcda24b7d6fa1cf923ff28848b8d2b71cf62e
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508164"
 ---
 # <a name="drive-end-user-adoption-with-conditional-access-in-microsoft-intune"></a>Impulsar la adopción de usuarios finales con acceso condicional en Microsoft Intune
 
@@ -55,11 +57,11 @@ Se trata de un método entre otros. Es posible elegir un proceso más sencillo q
 
 ## <a name="task-list-for-conditional-access"></a>Lista de tareas para acceso condicional
 
-### <a name="task-1-decide-how-you-are-going-to-implement-conditional-access"></a>Tarea 1: Decidir cómo se va a implementar el acceso condicional
+### <a name="task-1-decide-how-you-are-going-to-implement-conditional-access"></a>Tarea 1: determinación de cómo se va a implementar el acceso condicional
 
 [Common ways to use conditional access](conditional-access-intune-common-ways-use.md) (Formas comunes de usar el acceso condicional).
 
-### <a name="task-2-set-up-intune-conditional-access"></a>Tarea 2: Configurar el acceso condicional de Intune
+### <a name="task-2-set-up-intune-conditional-access"></a>Tarea 2: configuración del acceso condicional de Intune
 
 Elija una de las siguientes opciones:
 

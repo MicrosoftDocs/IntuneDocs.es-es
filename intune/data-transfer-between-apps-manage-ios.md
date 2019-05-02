@@ -1,26 +1,29 @@
 ---
-title: Administración de la transferencia de datos entre aplicaciones iOS | Microsoft Intune
+title: Administración de la transferencia de datos entre aplicaciones iOS
+titleSuffix: Microsoft Intune
 description: Descubra cómo usar directivas de administración de aplicaciones móviles en Microsoft Intune para administrar transferencias de datos entre aplicaciones.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/28/2018
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d10b2d64-8c72-4e9b-bd06-ab9d9486ba5e
 ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 8e223301b15a408c5f5a444a1904fca9826929ac
-ms.sourcegitcommit: 0142020a7cd75348c6367facf072ed94238e667f
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: bb109f8c837fe8848ad8cb19c930de765ed381d1
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 01/29/2019
-ms.locfileid: "55229906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61509524"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>Administración de transferencias de datos entre aplicaciones iOS en Microsoft Intune
 
@@ -49,11 +52,15 @@ La configuración del valor de UPN de usuario es **necesaria** para los disposit
 
 2.  Implemente las aplicaciones y el perfil de correo electrónico que quiera administrar a través de Intune o de la solución MDM de terceros siguiendo los pasos generales siguientes. Esto también se aborda en el *Ejemplo 1*.
 
-3.  Implemente la aplicación con las siguientes opciones de configuración de la aplicación:
+3.  Implemente la aplicación con las siguientes opciones de configuración de la aplicación en el dispositivo administrado:
 
       **clave** = IntuneMAMUPN, **valor** = <username@company.com>
 
       Ejemplo: [‘IntuneMAMUPN’, ‘jondoe@microsoft.com’]
+      
+       > [!NOTE]
+       > En Intune, la directiva de App Configuration debe ser del tipo de inscripción "Dispositivos administrados".
+       > Asimismo, la aplicación se debe instalar desde el Portal de empresa de Intune si se ha establecido como disponible o se ha insertado según los requisitos en el dispositivo. 
 
 4.  Implemente la directiva de **administración Open In**  con Intune o a través de su proveedor de MDM externo en los dispositivos inscritos.
 

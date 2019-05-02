@@ -2,25 +2,27 @@
 title: Creación de un perfil de certificado en Microsoft Intune - Azure | Microsoft Docs
 description: Para sus dispositivos, agregue o cree un perfil de certificado configurando un entorno de certificados PKCS o SCEP, exporte el certificado público, cree el perfil en Azure Portal y asigne el SCEP o PKCS a los perfiles de certificado de Microsoft Intune en Azure Portal
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 07/23/2018
-ms.topic: article
+ms.date: 04/08/2019
+ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 5eccfa11-52ab-49eb-afef-a185b4dccde1
-ms.reviewer: heenamac
+ms.reviewer: lacranda
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 1a70e8a5e9ad973f5d2c94a146a9f263f461d0ab
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 569ddd9be0c59cf9a4bd7ba1f8b114183ce46d7d
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52180568"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61508288"
 ---
 # <a name="configure-a-certificate-profile-for-your-devices-in-microsoft-intune"></a>Configuración de un perfil de certificado para sus dispositivos en Microsoft Intune
 
@@ -33,33 +35,37 @@ Puede usar Intune para asignar estos certificados a los dispositivos que adminis
 
 Cada uno de estos tipos de certificado tiene sus propios requisitos previos y de infraestructura.
 
+
 ## <a name="overview"></a>Introducción
 
 1. Asegúrese de que se ha configurado la infraestructura de certificados correcta. Puede usar [certificados SCEP](certificates-scep-configure.md) y [certificados PKCS](certficates-pfx-configure.md).
 
-2. Instale un certificado raíz o certificado de entidad de certificación (CA) intermedia en cada dispositivo para que el dispositivo reconozca la legitimidad de la entidad de certificación. Para ello, cree y asigne un **perfil de certificado de confianza**. Al asignar este perfil, los dispositivos que se administran con Intune solicitan y reciben el certificado raíz. Debe crear un perfil independiente para cada plataforma. Existen perfiles de certificado de confianza para las siguientes plataformas:
+2. Instale un certificado raíz o certificado de entidad de certificación (CA) intermedia en cada dispositivo para que el dispositivo reconozca la legitimidad de la entidad de certificación. Para instalar el certificado, cree y asigne un **perfil de certificado de confianza** para cada dispositivo. Al asignar este perfil, los dispositivos que se administran con Intune solicitan y reciben el certificado raíz. Debe crear un perfil independiente para cada plataforma. Existen perfiles de certificado de confianza para las siguientes plataformas:
 
     - iOS 8.0 y versiones posteriores
     - macOS 10.11 y versiones posteriores
     - Android 4.0 y versiones posteriores
-    - Perfil de trabajo Android
+    - Android Enterprise  
     - Windows 8.1 y posterior
     - Windows Phone 8.1 y versiones posteriores
     - Windows 10 y versiones posteriores
 
-3. Cree perfiles de certificados para que los dispositivos soliciten un certificado para la autenticación del acceso al correo electrónico y a las redes VPN y Wi-Fi. Puede crear y asignar un perfil de certificado **PKCS** o **SCEP** para dispositivos que ejecutan las siguientes plataformas:
+    > [!NOTE]  
+    > Los perfiles de certificado no se admiten en los dispositivos que ejecutan *Android Enterprise para dispositivos dedicados*.
 
-   - iOS 8.0 y versiones posteriores
-   - Android 4.0 y versiones posteriores
-   - Perfil de trabajo Android
-   - Windows 10 para escritorios y Windows 10 Mobile y versiones posteriores
+3. Cree perfiles de certificados para que los dispositivos soliciten un certificado para la autenticación del acceso al correo electrónico y a las redes VPN y Wi-Fi. Los siguientes tipos de perfil están disponibles para diferentes plataformas:  
 
-   Solo puede usar un perfil de certificado **SCEP** para dispositivos que ejecutan las siguientes plataformas:
+   | Plataforma     |Certificado PKCS|Certificado SCEP| Certificado PKCS importado | 
+   |--------------|----------------|----------------|-------------------|
+   | Android                | Sí    | Sí    | Sí    |
+   | Android Enterprise     | Sí    | Sí    | Sí    |
+   | iOS                    | Sí    | Sí    | Sí    |
+   | macOS                  |        | Sí    | Sí    |
+   | Windows Phone 8,1      |        | Sí    | Sí    |
+   | Windows 8.1 y posterior  |        | Sí    |        |
+   | Windows 10 y versiones posteriores   | Sí    | Sí    | Sí    |
 
-   - macOS 10.9 y versiones posteriores
-   - Windows Phone 8.1 y versiones posteriores
-
-Cree un perfil independiente para cada plataforma de dispositivo. Cuando cree el perfil, asócielo con el perfil de certificado raíz de confianza que creó previamente.
+   Cree un perfil independiente para cada plataforma de dispositivo. Cuando cree el perfil, asócielo con el perfil de certificado raíz de confianza que creó previamente.
 
 ### <a name="further-considerations"></a>Otras consideraciones
 
@@ -68,21 +74,21 @@ Cree un perfil independiente para cada plataforma de dispositivo. Cuando cree el
 - Si planea usar perfiles SCEP o PKCS, descargue y configure Microsoft Intune Certificate Connector.
 
 
-## <a name="step-1-configure-your-certificate-infrastructure"></a>Paso 1: configurar la infraestructura de certificados
+## <a name="step-1-configure-your-certificate-infrastructure"></a>Paso 1: configuración de la infraestructura de certificados
 
-Consulte uno de los temas siguientes para configurar la infraestructura de cada tipo de perfil de certificado:
+Consulte uno de los artículos siguientes para configurar la infraestructura de cada tipo de perfil de certificado:
 
 - [Configuración y administración de certificados SCEP con Intune](certificates-scep-configure.md)
 - [Configuración y administración de certificados PKCS con Intune](certficates-pfx-configure.md)
 
 
-## <a name="step-2-export-your-trusted-root-ca-certificate"></a>Paso 2: exportar el certificado de CA raíz de confianza
+## <a name="step-2-export-your-trusted-root-ca-certificate"></a>Paso 2: exportación del certificado de entidad de certificación raíz de confianza
 
 Exporte el certificado de entidades de certificación raíz de confianza como un certificado público (.cer) desde la CA emisora o desde cualquier dispositivo que confíe en esta. No exporte la clave privada (.pfx).
 
 Este certificado se importa al configurar un perfil de certificado de confianza.
 
-## <a name="step-3-create-trusted-certificate-profiles"></a>Paso 3: crear perfiles de certificado de confianza
+## <a name="step-3-create-trusted-certificate-profiles"></a>Paso 3: creación de perfiles de certificado de confianza
 Cree un perfil de certificado de confianza para poder crear un perfil de certificado SCEP o PKCS. Necesitará un perfil de certificado de confianza y un perfil SCEP o PKCS para cada plataforma de dispositivo. Los pasos para crear certificados de confianza son similares en todas las plataformas de dispositivos.
 
 1. Inicie sesión en el [Portal de Azure](https://portal.azure.com).
@@ -100,7 +106,7 @@ Cree un perfil de certificado de confianza para poder crear un perfil de certifi
     - **Windows 10 y versiones posteriores**
 
 6. En la lista desplegable **Tipos de perfil**, elija **Certificado de confianza**.
-7. Busque el certificado que guardó en la tarea 1 y haga clic en **Aceptar**.
+7. Busque el certificado que guardó en el [Paso 2: exportación del certificado de entidad de certificación raíz de confianza](#step-2-export-your-trusted-root-ca-certificate) y seleccione **Aceptar**.
 8. Solo para dispositivos Windows 8.1 y Windows 10, seleccione el **almacén de destino** del certificado de confianza. Las opciones son:
 
     - **Almacén de certificados de equipo - Raíz**
@@ -111,11 +117,12 @@ Cree un perfil de certificado de confianza para poder crear un perfil de certifi
 
 Se creará el perfil y aparecerá en la lista. Para asignar este perfil a grupos, consulte [Asignación de perfiles de dispositivo](device-profile-assign.md).
 
-Es posible que los dispositivos Android muestren un mensaje que indica que un tercero ha instalado un certificado de confianza.
+   >[!NOTE]
+   > Es posible que los dispositivos Android muestren un mensaje que indica que un tercero ha instalado un certificado de confianza.
 
-## <a name="step-4-create-scep-or-pkcs-certificate-profiles"></a>Paso 4: crear perfiles de certificado SCEP o PKCS
+## <a name="step-4-create-scep-or-pkcs-certificate-profiles"></a>Paso 4: creación de perfiles de certificado SCEP o PKCS
 
-Consulte uno de los temas siguientes para configurar y asignar cada tipo de perfil de certificado:
+Consulte uno de los artículos siguientes para configurar y asignar cada tipo de perfil de certificado:
 
 - [Configuración y administración de certificados SCEP con Intune](certificates-scep-configure.md)
 - [Configuración y administración de certificados PKCS con Intune](certficates-pfx-configure.md)

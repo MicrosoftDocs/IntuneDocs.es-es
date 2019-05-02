@@ -1,48 +1,50 @@
 ---
-title: Abandono de la inscripción de Portal de empresa en Intune
-titlesuffix: Microsoft Intune
-description: Obtenga información sobre el informe de abandono de Portal de empresa.
+title: Informe de inscripciones de usuario incompletas en Intune
+titleSuffix: Microsoft Intune
+description: Obtenga información sobre el informe de inscripciones de usuario incompletas.
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/20/2018
+ms.date: 2/22/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
-ms.openlocfilehash: 44a6d89b649514a08193d7144dff7d89dc3d9c55
-ms.sourcegitcommit: 51b763e131917fccd255c346286fa515fcee33f0
+ms.collection: M365-identity-device-management
+ms.openlocfilehash: 78d55ef2baf0608d22af53bf0803634700e01eb3
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 11/20/2018
-ms.locfileid: "52183373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61505869"
 ---
-# <a name="company-portal-abandonment-report"></a>Informe de abandono de Portal de empresa
+# <a name="incomplete-user-enrollments-report"></a>Informe de inscripciones de usuario incompletas
 
-Este informe indica en qué parte del proceso de inscripción de Portal de empresa los usuarios abandonan el proceso de inscripción.
+Este informe indica en qué parte del proceso de inscripción del Portal de empresa los usuarios no completan el proceso de inscripción.
 
-Para ver el informe, elija **Intune** > **Inscripción de dispositivos** > **Abandono del portal de empresa**.
+Para ver el informe, elija **Intune** > **Inscripción de dispositivos** > **Inscripciones de usuario incompletas**.
 
-Con esta información de abandono, puede actualizar los documentos de incorporación para ayudar a los usuarios a completar la inscripción. Por ejemplo, si muchos usuarios están abandonando el proceso en la sección Términos de uso, podría investigar esta área y hacer que sea más intuitiva para los usuarios.
+Con esta información, puede actualizar los documentos de incorporación para ayudar a los usuarios a completar la inscripción. Por ejemplo, si muchos usuarios están abandonando el proceso en la sección Términos de uso, podría investigar esta área y hacer que sea más intuitiva para los usuarios.
 
-## <a name="what-is-abandonment"></a>¿Qué es el abandono?
+## <a name="what-is-an-incomplete-enrollment"></a>¿Qué es una inscripción incompleta?
 
-El abandono es cuando un usuario realiza una de estas acciones:
+Una inscripción incompleta es cuando un usuario realiza una de estas acciones:
 
 -   Elige explícitamente una acción para detener la inscripción.
 -   Cierra Portal de empresa durante la inscripción.
 -   Dedica más de 30 minutos entre las secciones de inscripción.
 
-Si un usuario decide detener la inscripción y reiniciar varias veces, se muestra como varios intentos y varios abandonos. Si un usuario espera 30 minutos entre las distintas pantallas de inscripción, se considera varios abandonos.
+Si un usuario decide detener la inscripción y reiniciar varias veces, se muestra como varios intentos y varias inscripciones incompletas. Si un usuario espera 30 minutos entre las distintas pantallas de inscripción, se considera varias inscripciones incompletas.
 
 ## <a name="what-does-the-report-show"></a>¿Qué muestra el informe?
 
-Los informes de inscripción incluyen datos de dispositivos iOS y Android.
+Los informes incluyen datos de dispositivos iOS y Android.
 
 Los informes muestran datos de las dos últimas semanas, pero puede filtrar el informe para que muestre cualquier período de hasta 30 días en el pasado.
 
@@ -50,15 +52,15 @@ Puede filtrar el intervalo de fechas, el sistema operativo y la sección inscrip
 
 ### <a name="number-and-percentage-tiles"></a>Iconos de número y porcentaje
 
-En la parte superior del informe, puede ver el número y el porcentaje de informes abandonados en relación con todas las inscripciones.
+En la parte superior del informe, puede ver el número y el porcentaje de inscripciones abandonadas en relación con todas las inscripciones.
 
 -   Inscripciones iniciadas: número de inscripciones que se han intentado.
--   Inscripciones abandonadas: número de inscripciones intentadas que no dieron lugar a la inscripción completa de un dispositivo compatible.
--   Tasa de abandono: porcentaje de intentos de inscripción que se abandonaron (inscripciones abandonadas/inscripciones iniciadas).
+-   Inscripciones incompletas: número de inscripciones intentadas que no dieron lugar a la inscripción completa de un dispositivo compatible.
+-   Tasa de inscripciones incompletas: porcentaje de intentos de inscripción que se abandonaron (inscripciones abandonadas/inscripciones iniciadas).
 
 ### <a name="line-graph"></a>Gráfico de líneas
 
-El gráfico de líneas muestra los abandonos diarios para cada una de las cuatro secciones de inscripción principales:
+El gráfico de líneas muestra las inscripciones incompletas para cada una de las cuatro secciones de inscripción principales:
 
 -   Lista de comprobación de configuración
 -   Pantallas de la plataforma
@@ -67,12 +69,12 @@ El gráfico de líneas muestra los abandonos diarios para cada una de las cuatro
 
 ### <a name="user-abandonment-actions"></a>Acciones de abandono del usuario
 
-En estas tablas se muestra la lista de acciones del usuario que se consideran abandono. Para ver ejemplos de las pantallas de inscripción, puede ver los vídeos de inscripción de [iOS](https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment) y [Android](https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment). 
+En estas tablas se muestra la lista de acciones del usuario que se consideran una inscripción incompleta. Para ver ejemplos de las pantallas de inscripción, puede ver los vídeos de inscripción de [iOS](https://channel9.msdn.com/Series/IntuneEnrollment/iOS-Enrollment) y [Android](https://channel9.msdn.com/Series/IntuneEnrollment/Android-Enrollment). 
 
 
 #### <a name="setup-checklist-section"></a>Sección de lista de comprobación de configuración
 
-| Nombre de abandono | Pantalla o flujo | Plataforma | Acción |
+| Nombre de acción | Pantalla o flujo | Plataforma | Acción |
 | ---- |---- |---- |---- |
 | EnrollmentWrapUp | Mensaje para abrir página en Portal de empresa | iOS/Android | **Cancelar** |
 | EnrollmentWrapUp | Pantalla Inscribiendo el dispositivo hasta finalizar **Cargando los recursos de la empresa** | iOS/Android | Tardó > 30 minutos |
@@ -82,7 +84,7 @@ En estas tablas se muestra la lista de acciones del usuario que se consideran ab
 
 #### <a name="platform-screens-section"></a>Sección de pantallas de la plataforma
 
-| Nombre de abandono | Pantalla o flujo | Plataforma | Acción |
+| Nombre de acción | Pantalla o flujo | Plataforma | Acción |
 | ---- |---- |---- |---- |
 | iOSProfileLaunch | Mensaje para mostrar un perfil de configuración | iOS | **Omitir** |
 | iOSProfileLaunch | Pantalla de instalación del perfil | iOS | **Cancelar** |
@@ -95,14 +97,14 @@ En estas tablas se muestra la lista de acciones del usuario que se consideran ab
 
 #### <a name="terms-of-use-section"></a>Sección Términos de uso
 
-| Nombre de abandono | Pantalla o flujo | Plataforma | Acción |
+| Nombre de acción | Pantalla o flujo | Plataforma | Acción |
 | ---- |---- |---- |---- |
 | TermsofUse | Términos de uso (si está configurado por el administrador) | iOS/Android | **Rechazar todo** |
 | TermsofUse | Términos de uso hasta **Aceptar todo** | iOS/Android | Tardó > 30 minutos |
 
 #### <a name="complianceactivation-section"></a>Sección Cumplimiento y activación
 
-| Nombre de abandono | Pantalla o flujo | Plataforma | Acción |
+| Nombre de acción | Pantalla o flujo | Plataforma | Acción |
 | ---- |---- |---- |---- |
 | Cumplimiento | La sección Cumplimiento del dispositivo (si está configurado por el administrador) se muestra en un color distinto de verde en la inscripción posterior de configuración de acceso| iOS/Android | **Posponer** |
 | Cumplimiento | La sección Cumplimiento del dispositivo se muestra en un color distinto de verde hasta que se actualiza para mostrarse en verde | iOS/Android | Tardó > 30 minutos |
@@ -111,4 +113,4 @@ En estas tablas se muestra la lista de acciones del usuario que se consideran ab
 
 ## <a name="next-steps"></a>Pasos siguientes
 
-Después de comprobar las tasas de abandono, puede revisar las [opciones de inscripción](enrollment-options.md) para ver si puede realizar cambios para mejorar la inscripción.
+Después de comprobar las tasas de inscripciones incompletas, puede revisar las [opciones de inscripción](enrollment-options.md) para ver si puede realizar cambios para mejorar la inscripción.

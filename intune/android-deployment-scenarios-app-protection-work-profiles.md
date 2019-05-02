@@ -9,17 +9,18 @@ ms.date: 02/13/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
+ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 6fd12432d07d1486e0943f88c0cf8b4536e651bc
-ms.sourcegitcommit: cb93613bef7f6015a4c4095e875cb12dd76f002e
+ms.openlocfilehash: cbd3b13215a58a831a15884bfe451f00a35ba379
+ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/02/2019
-ms.locfileid: "57236507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "61490202"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Directivas de protección de aplicaciones y perfiles de trabajo en dispositivos de Android Enterprise en Intune
 
@@ -50,7 +51,7 @@ Las aplicaciones individuales de Android están habilitadas para APP de varias m
 
     Como ayuda, Intune incluye la **herramienta de ajuste de aplicaciones** para las aplicaciones Android existentes (APK), y crea una aplicación que reconoce las directivas de APP.
 
-    Para más información sobre esta herramienta, consulte [Preparar aplicaciones de línea de negocio para las directivas de protección de aplicaciones](apps-prepare-mobile-application-management.md).
+    Para más información sobre esta herramienta, vea [prepare line-of-business apps for app protection policies](apps-prepare-mobile-application-management.md) (Preparar aplicaciones de línea de negocio para las directivas de protección de aplicaciones).
 
 Para ver una lista de aplicaciones habilitadas con APP, consulte [Aplicaciones administradas con un amplio conjunto de directivas de protección de aplicaciones móviles](https://www.microsoft.com/cloud-platform/microsoft-intune-apps).
 
