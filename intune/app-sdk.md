@@ -1,12 +1,12 @@
 ---
 title: Ventajas del SDK para aplicaciones de Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: El SDK para aplicaciones de Intune está disponible para las plataformas iOS y Android y, gracias a él, podrá habilitar las características de administración de aplicaciones móviles con Microsoft Intune.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 02/21/2018
+ms.date: 04/08/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 065535bc6bb4dc586ab45ffa0a9a1250c0a1c908
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 046c82a1b149f33e20a21adf931a30cc812e3f10
+ms.sourcegitcommit: 364a7dbc7eaa414c7a9c39cf53eb4250e1ad3151
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566495"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59292456"
 ---
 # <a name="microsoft-intune-app-sdk-overview"></a>Introducción al SDK para aplicaciones de Microsoft Intune
 El SDK de aplicaciones de Intune, disponible para iOS y Android, permite que la aplicación admita [directivas de protección de aplicaciones](app-protection-policy.md) de Intune. Cuando la aplicación tiene directivas de protección aplicadas a él, puede administrarse mediante Intune y se reconoce mediante Intune como una aplicación administrada. El SDK intenta minimizar la cantidad de cambios de código que debe realizar el desarrollador de la aplicación. Verá que puede habilitar la mayoría de las características del SDK sin necesidad de cambiar el comportamiento de la aplicación. Para obtener una experiencia de administrador de TI y de usuario final mejorada, puede usar las API del SDK con el objetivo de personalizar el comportamiento de la aplicación para que admita las características que requieren la participación de esta.

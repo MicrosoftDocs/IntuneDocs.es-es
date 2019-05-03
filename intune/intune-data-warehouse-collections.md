@@ -1,12 +1,12 @@
 ---
 title: Colecciones de almacenamiento de datos de Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: Las colecciones de almacenamiento de datos de Intune proporcionan detalles relacionados con la API de almacenamiento de datos.
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/09/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f2a9f2512f4f6fb12a65d0e7c4982fd351f1770
-ms.sourcegitcommit: 93286c22426dcb59191a99e3cf2af4ff6ff16522
+ms.openlocfilehash: 00a0bd4936d1ad8ba8dd52f1839e7d42505db60e
+ms.sourcegitcommit: 601327125ac8ae912d8159422de8aac7dbdc25f6
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58358324"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59429231"
 ---
 #  <a name="intune-data-warehouse-collections"></a>Colecciones de almacenamiento de datos de Intune
 
@@ -116,7 +116,7 @@ La siguiente tabla resume el estado de asignación de directivas de cumplimiento
 
 |  complianceStatus  |                       Descripción                      |
 |:------------------:|:------------------------------------------------------:|
-|    Unknown         |    desconocida.                                                                        |
+|    Unknown         |    Desconocido.                                                                        |
 |    Conforme       |    Conforme.                                                                      |
 |    No conforme    |       Dispositivo no conforme y con acceso bloqueado a los recursos corporativos.             |
 |    Conflicto        |    Conflicto con otras reglas.                                                      |
@@ -428,6 +428,85 @@ La entidad **IntuneManagementExtensionVersion** muestra todas las versiones usad
 | ExtensionVersionKey | Identificador único de la versión de IntuneManagementExtension. | 1       |
 | ExtensionVersion    | Número de versión de 4 dígitos.                                   | 1.0.2.0 |
 
+## <a name="mamapplications"></a>MamApplications
+
+La entidad **MamApplication** muestra las aplicaciones de línea de negocio (LOB) que se administran mediante la administración de aplicaciones móviles (MAM) sin inscripción en la empresa.
+
+| Propiedad | Descripción | Ejemplo |
+|---------|------------|--------|
+| mamApplicationKey |Identificador único de la aplicación MAM. | 432 |
+| mamApplicationName |Nombre de la aplicación MAM. |Nombre de aplicación de ejemplo MAM |
+| mamApplicationId |Identificador de la aplicación MAM. | 123 |
+| IsDeleted |Indica si se ha actualizado el registro de la aplicación MAM. <br>True: la aplicación MAM tiene un nuevo registro con campos actualizados en esta tabla. <br>False: registro más reciente de esta aplicación MAM. |Verdadero/Falso |
+| StartDateInclusiveUTC |Fecha y hora en formato UTC en que se ha creado esta aplicación MAM en el almacenamiento de datos. |23/11/2016 12:00:00 AM |
+| DeletedDateUTC |Fecha y hora en formato UTC en que IsDeleted ha cambiado a True. |23/11/2016 12:00:00 AM |
+| RowLastModifiedDateTimeUTC |Fecha y hora en formato UTC en que se ha modificado por última vez esta aplicación MAM en el almacenamiento de datos. |23/11/2016 12:00:00 AM |
+
+
+## <a name="mamapplicationinstances"></a>MamApplicationInstances
+
+La entidad **MamApplicationInstance** muestra las aplicaciones de administración de aplicaciones móviles (MAM) administradas como instancias singulares por usuario y dispositivo. Todos los usuarios y dispositivos enumerados en la entidad están protegidos, como si tuvieran al menos una directiva de MAM asignada.
+
+
+|          Propiedad          |                                                                                                  Descripción                                                                                                  |               Ejemplo                |
+|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
+|   ApplicationInstanceKey   |                                                               Identificador único de la instancia de la aplicación MAM en el almacenamiento de datos. Clave suplente.                                                                |                 123                  |
+|           UserId           |                                                                              Identificador del usuario que tiene instalada esta aplicación MAM.                                                                              | b66bc706-ffff-7437-0340-032819502773 |
+|   ApplicationInstanceId    |                                              Identificador único de la instancia de la aplicación MAM. Se parece a ApplicationInstanceKey, pero el identificador es una clave natural.                                              | b66bc706-ffff-7437-0340-032819502773 |
+| mamApplicationId | Id. de aplicación de la aplicación de Mam para el que se creó esta instancia de la aplicación Mam.   | 23/11/2016 12:00:00 AM   |
+|     ApplicationVersion     |                                                                                     Versión de esta aplicación MAM.                                                                                      |                  2                   |
+|        CreatedDate         |                                                                 Fecha en la que se ha creado este registro de la instancia de la aplicación MAM. El valor puede ser NULL.                                                                 |        23/11/2016 12:00:00 AM        |
+|          Plataforma          |                                                                          Plataforma del dispositivo en el que está instalada esta aplicación MAM.                                                                           |                  2                   |
+|      PlatformVersion       |                                                                      Versión de la plataforma del dispositivo en el que está instalada esta aplicación MAM.                                                                       |                 2.2                  |
+|         SdkVersion         |                                                                            Versión de SDK de MAM con la que se ha encapsulado esta aplicación MAM.                                                                            |                 3.2                  |
+| mamDeviceId | Id. de dispositivo del dispositivo con el que está asociada la instancia de aplicación de MAM con.   | 23/11/2016 12:00:00 AM   |
+| mamDeviceType | Tipo de dispositivo del dispositivo con el que está asociada la instancia de aplicación de MAM con.   | 23/11/2016 12:00:00 AM   |
+| mamDeviceName | Nombre de dispositivo del dispositivo con el que está asociada la instancia de aplicación de MAM con.   | 23/11/2016 12:00:00 AM   |
+|         IsDeleted          | Indica si se ha actualizado el registro de la instancia de esta aplicación MAM. <br>True: la instancia de esta aplicación MAM tiene un nuevo registro con campos actualizados en esta tabla. <br>False: registro más reciente de la instancia de esta aplicación MAM. |              Verdadero/Falso              |
+|   StartDateInclusiveUtc    |                                                              Fecha y hora en formato UTC en que se ha creado la instancia de esta aplicación MAM en el almacenamiento de datos.                                                               |        23/11/2016 12:00:00 AM        |
+|       DeletedDateUtc       |                                                                             Fecha y hora en formato UTC en que IsDeleted ha cambiado a True.                                                                              |        23/11/2016 12:00:00 AM        |
+| RowLastModifiedDateTimeUtc |                                                           Fecha y hora en formato UTC en que se ha modificado por última vez la instancia de esta aplicación MAM en el almacenamiento de datos.                                                            |        23/11/2016 12:00:00 AM        |
+
+## <a name="mamcheckins"></a>MamCheckins
+
+La entidad **MamCheckin** representa los datos recopilados cuando una instancia de la aplicación de administración de aplicaciones móviles (MAM) se ha registrado con el servicio de Intune. 
+
+> [!Note]  
+> Cuando una instancia de la aplicación se registra varias veces al día, el almacenamiento de datos la almacena como un único registro.
+
+| Propiedad | Descripción | Ejemplo |
+|---------|------------|--------|
+| DateKey |Clave de fecha en la que se ha anotado en el almacenamiento de datos el registro de la aplicación MAM. | 20160703 |
+| ApplicationInstanceKey |Clave de la instancia de la aplicación asociada a este registro de la aplicación MAM. | 123 |
+| UserKey |Clave del usuario asociado a este registro de la aplicación MAM. | 4323 |
+| mamApplicationKey |Clave de aplicación asociados con la comprobación de la aplicación MAM en. | 432 |
+| DeviceHealthKey |Clave de DeviceHealth asociada a este registro de la aplicación MAM. | 321 |
+| PlatformKey |Representa la plataforma del dispositivo asociado a este registro de la aplicación MAM. |123 |
+| LastCheckInDate |Fecha y hora en que se ha registrado por última vez esta aplicación MAM. El valor puede ser NULL. |23/11/2016 12:00:00 AM |
+
+## <a name="mamdevicehealths"></a>MamDeviceHealths
+
+La entidad **MamDeviceHealth** representa los dispositivos que tienen implementadas directivas de administración de aplicaciones móviles (MAM), incluso si están liberados.
+
+| Propiedad | Descripción | Ejemplo |
+|---------|------------|--------|
+| DeviceHealthKey |Identificador único del dispositivo y su mantenimiento asociado en el almacenamiento de datos. Clave suplente. |123 |
+| DeviceHealth |Identificador único del dispositivo y su mantenimiento asociado. Es parecido a DeviceHealthKey, pero el identificador es una clave natural. |b66bc706-ffff-7777-0340-032819502773 |
+| DeviceHealthName |Representa el estado del dispositivo. <br>No disponible: no hay información sobre este dispositivo. <br>Correcto: el dispositivo no está liberado. <br>Incorrecto: el dispositivo está liberado. |No disponible Correcto Incorrecto |
+| RowLastModifiedDateTimeUtc |Fecha y hora en formato UTC en que se ha modificado por última vez el estado del dispositivo MAM específico en el almacenamiento de datos. |23/11/2016 12:00:00 AM |
+
+## <a name="mamplatforms"></a>MamPlatforms
+
+La entidad **MamPlatform** muestra nombres y tipos de plataforma en los que se ha instalado una aplicación de administración de aplicaciones móviles (MAM).
+
+
+|          Propiedad          |                                    Descripción                                    |                         Ejemplo                         |
+|----------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------|
+|        PlatformKey         |     Identificador único de la plataforma en el almacenamiento de datos. Clave suplente.      |                           123                           |
+|          Plataforma          | Identificador único de la plataforma. Se parece a PlatformKey, pero es una clave natural. |                           123                           |
+|        PlatformName        |                                   Nombre de la plataforma.                                   | No disponible <br>Ninguno <br>Windows <br>iOS <br>Android. |
+| RowLastModifiedDateTimeUtc | Fecha y hora en formato UTC en que se ha modificado por última vez esta plataforma en el almacenamiento de datos.  |                 23/11/2016 12:00:00 AM                  |
+
 ## <a name="managementagenttypes"></a>managementAgentTypes
 La entidad **managementAgentTypes** representa los agentes usados para administrar un dispositivo.
 
@@ -497,7 +576,7 @@ Representa el estado de instalación de una aplicación móvil para un tipo de d
 | AppKey             | Clave de la aplicación móvil usada para identificar una instancia de AppRevision.                                                          |
 | DeviceTypeKey      | Clave del tipo de dispositivo asociada a la aplicación móvil.                                                              |
 | AppInstallStateKey | Clave del estado de instalación de la aplicación usada para identificar una instancia de MobileAppInstallState.                                         |
-| Código de error          | El código de error devuelto por el instalador de la aplicación, la plataforma móvil o el servicio referente a la instalación de la aplicación. |
+| ErrorCode          | El código de error devuelto por el instalador de la aplicación, la plataforma móvil o el servicio referente a la instalación de la aplicación. |
 | Número              | Número total.                                                                                                                  |
 
 ## <a name="ownertypes"></a>ownerTypes

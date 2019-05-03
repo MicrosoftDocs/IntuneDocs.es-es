@@ -1,65 +1,44 @@
 ---
-title: 'Creación de una directiva de cumplimiento de Android Enterprise en Microsoft Intune: Azure | Microsoft Docs'
-description: Cree o configure una directiva de cumplimiento de dispositivos Microsoft Intune para dispositivos de perfil de trabajo Android Enterprise. Opte por permitir dispositivos con Jailbroken, establecer el nivel de amenaza aceptable, buscar Google Play, especificar la versión de sistema operativo mínima y máxima, elegir los requisitos de contraseña y permitir aplicaciones de instalación de prueba.
+title: Configuración de dispositivos de Android Enterprise en Microsoft Intune (Azure) | Microsoft Docs
+description: Ver una lista de todas las opciones que puede usar al establecer el cumplimiento de los dispositivos empresariales Android en Microsoft Intune. Establecer reglas de contraseña, elija una versión de sistema operativo mínimo o máximo, restringir aplicaciones específicas, evitar reutilizar contraseñas y mucho más.
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2018
+ms.date: 04/04/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 9da89713-6306-4468-b211-57cfb4b51cc6
-ms.reviewer: muhosabe
+ms.reviewer: joglocke
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a6f1f07c1cb7b5dbe81120fd678f429a996f230e
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 16db0acab84a1095c40e9a92648c75c2581187cd
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566240"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423567"
 ---
-# <a name="add-a-device-compliance-policy-for-android-enterprise-devices-in-intune"></a>Incorporación de una directiva de cumplimiento de dispositivos para dispositivos Android Enterprise en Intune
+# <a name="android-enterprise-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>Configuración de la empresa de Android para marcar los dispositivos como compatible o no compatible con Intune
 
-Las directivas de cumplimiento de dispositivos son una característica clave cuando se usa Intune para proteger los recursos de su organización. En Intune, puede crear reglas y opciones de configuración que los dispositivos deben cumplir para que se consideren conformes, por ejemplo, una longitud de contraseña. Si el dispositivo no las cumple, puede bloquear el acceso a datos y recursos mediante el [acceso condicional](conditional-access.md). 
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-También puede obtener informes de dispositivos y realizar acciones en caso de incumplimiento, como enviar un correo electrónico de notificación al usuario. Para más información sobre las directivas de cumplimiento, consulte [Introducción a las directivas de cumplimiento de dispositivos de Intune](device-compliance-get-started.md).
+En este artículo se enumera y se describe la configuración de cumplimiento diferentes que puede configurar en dispositivos empresariales Android en Intune. Como parte de la solución de administración (MDM) de dispositivos móviles, use estas opciones para marcar los dispositivos liberados (descodificados) como no conforme, establecer un nivel de amenaza permitido, habilitar Google Play Protect y mucho más.
 
-En este artículo se enumeran los valores que puede usar en una directiva de cumplimiento para dispositivos que ejecutan Android Enterprise.
+Esta característica se aplica a:
 
-## <a name="non-compliance-and-conditional-access"></a>Incumplimiento y acceso condicional
+- Android Enterprise
 
-En la tabla siguiente se describe cómo administrar la configuración de no conformidad cuando se usa una directiva de cumplimiento con una directiva de acceso condicional.
+Como administrador de Intune, use esta configuración de cumplimiento para ayudar a proteger los recursos de la organización. Para más información sobre las directivas de cumplimiento, consulte [Introducción a las directivas de cumplimiento de dispositivos de Intune](device-compliance-get-started.md).
 
---------------------------
+## <a name="before-you-begin"></a>Antes de comenzar
 
-|**Configuración de directiva**| **Perfil de Android Enterprise** |
-| --- | --- |
-| **Configuración de PIN o contraseña** |  En cuarentena |
-| **Cifrado del dispositivo** |  En cuarentena |
-| **Dispositivo liberado o modificado** | En cuarentena (no es una configuración) |
-| **Perfil de correo electrónico** | No disponible |
-| **Versión de SO mínima** | En cuarentena |
-| **Versión de SO máxima** | En cuarentena |
-| **Atestación de estado de Windows** |No disponible |
-
-**Corregido** = el sistema operativo del dispositivo exige compatibilidad. (Por ejemplo, se obliga al usuario a configurar un PIN).
-
-**En cuarentena** = el sistema operativo del dispositivo no exige cumplimiento. Por ejemplo, los dispositivos Android no obligan al usuario a cifrar el dispositivo. Si el dispositivo no es conforme, se emprenden las acciones siguientes:
-
-  - El dispositivo se bloquea si se aplica una directiva de acceso condicional al usuario.
-  - El portal de empresa notifica al usuario acerca de los problemas de cumplimiento.
-
-## <a name="create-a-device-compliance-policy"></a>Crear una directiva de cumplimiento de dispositivos
-
-[!INCLUDE [new-device-compliance-policy](./includes/new-device-compliance-policy.md)]
-4. Para **Plataforma**, seleccione **Android Enterprise**. 
-5. Elija **Settings Configure** (Definir configuración). Especifique las opciones **Estado de dispositivos**, **Propiedades de dispositivo** y **Seguridad del sistema**, tal y como se describe en este artículo.
+[Crear una directiva de cumplimiento](create-compliance-policy.md#create-the-policy). Para **Plataforma**, seleccione **Android Enterprise**.
 
 ## <a name="device-health"></a>Device health
 
@@ -69,6 +48,9 @@ En la tabla siguiente se describe cómo administrar la configuración de no conf
   - **Bajo**: el dispositivo se evalúa como conforme si solo hay amenazas de nivel bajo. Cualquier valor por encima coloca al dispositivo en un estado de no conformidad.
   - **Medio**: el dispositivo se evalúa como conforme si las amenazas presentes en él son de nivel bajo o medio. Si se detecta que el dispositivo tiene amenazas de nivel alto, se determina como no conforme.
   - **Alto**: esta opción es la menos segura, ya que permite que todos los niveles de amenaza. Quizás sea útil si utiliza esta solución solo con fines informativos.
+
+### <a name="google-play-protect"></a>Protección de Google Play
+
 - **Google Play Services está configurado**: se **requiere** que la aplicación Google Play Services esté instalada y habilitada. Google Play Services permite actualizaciones de seguridad y es una dependencia de nivel base para muchas características de seguridad en los dispositivos de Google certificados. Si elige **Sin configurar** (valor predeterminado), no se evalúa el cumplimiento o incumplimiento de esta configuración.
 - **Proveedor de seguridad actualizada**: se **requiere** que un proveedor de seguridad actualizado pueda proteger un dispositivo frente a vulnerabilidades conocidas. Si elige **Sin configurar** (valor predeterminado), no se evalúa el cumplimiento o incumplimiento de esta configuración.
 - **Atestación de dispositivo SafetyNet**: especifique el nivel de [atestación de SafetyNet](https://developer.android.com/training/safetynet/attestation.html) que se debe cumplir. Las opciones son:
@@ -76,9 +58,8 @@ En la tabla siguiente se describe cómo administrar la configuración de no conf
   - **Comprobar integridad básica**
   - **Comprobar integridad básica y dispositivos certificados**
 
-#### <a name="threat-scan-on-apps"></a>Examen de amenazas en las aplicaciones
-
-En los dispositivos Android Enterprise, la configuración **Examen de amenazas en las aplicaciones** es una directiva de configuración. Vea [Configuración de las restricciones de dispositivos Android Enterprise](device-restrictions-android-for-work.md).
+> [!NOTE]
+> En los dispositivos empresariales Android, **examen de amenazas en las aplicaciones** es una directiva de configuración del dispositivo. Con una directiva de configuración, los administradores pueden habilitar a la configuración en un dispositivo. Vea [Configuración de las restricciones de dispositivos Android Enterprise](device-restrictions-android-for-work.md).
 
 ## <a name="device-properties-settings"></a>Configuración de las propiedades del dispositivo
 
@@ -136,31 +117,10 @@ En los dispositivos Android Enterprise, la configuración **Examen de amenazas e
 
 - **Nivel mínimo de revisión de seguridad**: seleccione el nivel de revisión de seguridad más antiguo que puede tener un dispositivo. Los dispositivos que no estén al menos en este nivel de revisión se consideran no conformes. La fecha debe especificarse en el formato *AAAA-MM-DD*.
 
-Cuando termine, seleccione **Aceptar** > **Aceptar** para guardar los cambios.
-
-## <a name="actions-for-noncompliance"></a>Acciones en caso de incumplimiento
-
-Seleccione **Actions for noncompliance** (Acciones en caso no conformidad). La acción predeterminada marca inmediatamente el dispositivo como no conforme.
-
-Puede cambiar la programación cuando el dispositivo se marca como no conforme, por ejemplo, después de un día. También puede configurar una segunda acción que envía un correo electrónico al usuario cuando el dispositivo es no conforme.
-
-En [Adición de acciones en caso de incumplimiento](actions-for-noncompliance.md) se proporciona más información, por ejemplo, cómo crear un correo electrónico para notificar a los usuarios.
-
-## <a name="scope-tags"></a>Etiquetas de ámbito
-
-Las etiquetas de ámbito son una excelente manera de asignar directivas a grupos específicos, como Ventas, Ingeniería, RR. HH., etc. Puede agregar etiquetas de ámbito a las directivas de cumplimiento. Vea [Uso de etiquetas de ámbito para filtrar directivas](scope-tags.md). 
-
-## <a name="assign-user-groups"></a>Asignación de grupos de usuarios
-
-Una vez que se crea una directiva, no hace nada hasta que se asigna. Para asignar la directiva: 
-
-1. Elija una directiva que haya configurado. Las directivas existentes están en **Conformidad de dispositivos** > **Directivas**.
-2. Elija la directiva y luego **Asignaciones**. Puede incluir o excluir grupos de seguridad de Azure Active Directory (AD).
-3. Elija **Grupos seleccionados** para ver los grupos de seguridad de Azure AD. Seleccione los grupos de usuarios a los que quiera aplicar esta directiva y elija **Guardar** para implementar la directiva a los usuarios.
-
-Ya ha aplicado la directiva a los usuarios. Se evalúa el cumplimiento de los dispositivos que utilizan los usuarios a los que se destina la directiva.
+Seleccione **Aceptar** > **Crear** para guardar los cambios.
 
 ## <a name="next-steps"></a>Pasos siguientes
-[Automatización del correo electrónico y adición de acciones para dispositivos no compatibles: Intune](actions-for-noncompliance.md)  
-[Supervisión de las directivas de cumplimiento de dispositivos de Intune](compliance-policy-monitor.md)  
-[Configuración de directivas de cumplimiento para Android](compliance-policy-create-android.md)
+
+- [Adición de acciones para dispositivos no conformes](actions-for-noncompliance.md) y [usan etiquetas de ámbito para filtrar directivas](scope-tags.md).
+- [Supervisar las directivas de cumplimiento de normas](compliance-policy-monitor.md).
+- [Configuración de directivas de cumplimiento para dispositivos Android](compliance-policy-create-android.md)

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/13/2019
+ms.date: 04/01/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 34f0869b46323606d69891c3761bfbc154f3b6a3
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: c2a94be7ebc369005f92809d57c8e55076972df3
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57566631"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58799272"
 ---
 # <a name="ios-device-settings-to-use-common-ios-features-in-intune"></a>configuración de dispositivos iOS para usar las características comunes de iOS en Intune
 
@@ -96,6 +96,9 @@ Use la configuración **Acoplar**, para agregar hasta seis elementos o carpetas 
 
       3. Seleccione **Agregar**. Puede agregar hasta **20** páginas para base del dispositivo.
       4. Haga clic en **Aceptar** para guardar los cambios.
+
+> [!NOTE]
+> Cuando se agregan mediante la configuración de área de iconos, los iconos en la pantalla principal y las páginas están bloqueados y no se puede mover. Esto puede deberse al diseño con iOS y las directivas MDM de Apple.
 
 #### <a name="example"></a>Ejemplo
 

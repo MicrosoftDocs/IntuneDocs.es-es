@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 04/02/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5106a4f147828310fc1b4a41ef4065d10bdaeecf
-ms.sourcegitcommit: 44095bbd1502b02201a01604531f4105401fbb92
+ms.openlocfilehash: 0d0623e9d12132ac470813d65510bc2c76379109
+ms.sourcegitcommit: 79baf89e4a7a7b1cecb8ccf5cb976736ae6a7286
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58490733"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58871478"
 ---
 # <a name="ios-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos iOS para permitir o restringir características mediante Intune
 
@@ -195,7 +195,7 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 
 #### <a name="safari"></a>Safari
 
-- **Safari**: **Bloquear** el uso del explorador Safari en el dispositivo. **No configurado** permite que los usuarios utilicen el explorador Safari.
+- **Safari (solo con supervisión)**: **Bloquear** el uso del explorador Safari en el dispositivo. **No configurado** permite que los usuarios utilicen el explorador Safari.
 - **Autorrellenar**: **Bloquear** deshabilita la característica Autorrellenar de Safari en el dispositivo. **No configurado** permite que los usuarios cambien la configuración de Autorrellenar del explorador web.
 - **Cookies**: elija cómo se administran las cookies en el dispositivo. Las opciones son:
   - Allow
@@ -290,7 +290,7 @@ Para agregar aplicaciones a estas listas, puede:
 ## <a name="cloud-and-storage"></a>Nube y almacenamiento
 
 - **Copia de seguridad en iCloud**: **No configurado** permite que el usuario cree una copia de seguridad del dispositivo en iCloud. **Bloquear** impide que el usuario cree una copia de seguridad del dispositivo en iCloud.
-- **Bloquear la sincronización de documentos en iCloud**: **No configurado** permite la sincronización de documentos y pares clave-valor con el espacio de almacenamiento de iCloud. **Bloquear** impide que iCloud sincronice documentos y datos.
+- **Sincronización de documentos en iCloud (solo con supervisión)**: **No configurado** permite la sincronización de documentos y pares clave-valor con el espacio de almacenamiento de iCloud. **Bloquear** impide que iCloud sincronice documentos y datos.
 - **Sincronización de Photo Stream en iCloud**: **No configurado** permite que los usuarios habiliten **My Photo Stream** en su dispositivo para sincronizar en iCloud y que las fotos estén disponibles en todos los dispositivos del usuario. **Bloquear** impide la sincronización de Photo Stream en iCloud.
 - **Copia de seguridad cifrada**: **Requerir** que las copias de seguridad del dispositivos sean cifradas.
 - **Fototeca de iCloud**: establezca en **Bloquear** para deshabilitar el uso de la Fototeca de iCloud para almacenar fotos y vídeos en la nube. Las fotos que no se hayan descargado de la Fototeca de iCloud en el dispositivo se quitarán del dispositivo. **No configurado** permite usar la Fototeca de iCloud.

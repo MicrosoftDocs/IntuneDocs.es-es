@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 03/20/2019
+ms.date: 04/08/2019
 ms.topic: reference
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ca34826f3a235fe620b5ac0dcb95d57dabf4c71
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
-ms.translationtype: MTE75
+ms.openlocfilehash: 8957c8d8aad2eaa1741b1a625afd4b5a41a8bb51
+ms.sourcegitcommit: 02803863eba37ecf3d8823a7f1cd7c4f8e3bb42c
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58395007"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59423703"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>Configuración de dispositivos con Windows 10 y versiones posteriores para permitir o restringir características mediante Intune
 
@@ -138,7 +138,10 @@ Estos valores se agregan a un perfil de configuración de dispositivo en Intune 
 - **Cuadro de diálogo de error de tarjeta SIM (solo dispositivos móviles)**: impide que un mensaje de error se muestre en el dispositivo si no se detecta una tarjeta SIM.
 - **Área de trabajo de Ink**: impide que los usuarios accedan al área de trabajo de Ink. **No configurado** activa el área de trabajo de Ink y el usuario tiene permitido usarlo por encima de la pantalla de bloqueo.
 - **Reimplementación automática**: permite a los usuarios con derechos administrativos eliminar todos los datos de usuario y las opciones de configuración con **Ctrl + Win + R** en la pantalla de bloqueo del dispositivo. En este caso, el dispositivo se vuelve a configurar e inscribir automáticamente para la administración.
-- **Requerir que los usuarios se conecten a la red durante la instalación de dispositivos (solo Windows Insider)**: elija **Requerir** para que el dispositivo se conecte a una red antes de continuar más allá de la página Red durante la instalación de Windows 10. Aunque esta característica está en versión preliminar, se requiere una compilación 1809 de Windows Insider o una versión posterior para usar esta configuración.
+- **Requerir que los usuarios se conecten a la red durante la instalación de dispositivos (solo Windows Insider)**: elija **Requerir** para que el dispositivo se conecte a una red antes de continuar más allá de la página Red durante la instalación de Windows 10.
+
+  La configuración entre en vigor la próxima vez que se haya borrado o restablecer el dispositivo. Al igual que cualquier otra configuración de Intune, el dispositivo debe estar inscritos y administrado por Intune para recibir los valores de configuración. Pero una vez se ha inscrito y recibir las directivas, a continuación, restablecer el dispositivo aplica el valor durante la siguiente configuración de Windows.
+
 - **Acceso directo a memoria**: **Bloquear** impide el acceso directo a memoria (DMA) a todos los puertos de bajada PCI de conexión instantánea hasta que un usuario inicia sesión en Windows. **Habilitado** (valor predeterminado) permite el acceso a DMA, incluso cuando un usuario no ha iniciado sesión.
 
   CSP: [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
@@ -305,6 +308,29 @@ Este perfil de restricciones de dispositivos está directamente relacionado con 
   - **Impedir la reutilización de contraseñas anteriores**: especifica el número de contraseñas usadas anteriormente que se recuerdan el dispositivo.
   - **Requerir contraseña cuando el dispositivo vuelve de un estado de inactividad (solo dispositivos móviles)**: especifica que el usuario debe escribir una contraseña para desbloquear el dispositivo (solo Windows 10 Mobile).
   - **Contraseñas sencillas**: le permite el uso de contraseñas sencillas, como 1111 y 1234. Esta configuración también permite o bloquea el uso de contraseñas de imagen de Windows.
+- **Cifrado automático durante AADJ**: **bloque** impide el cifrado automático de dispositivos de BitLocker cuando el dispositivo está preparado para el primer uso, cuando el dispositivo está unido a Azure AD. **No configurado** (valor predeterminado) usa el valor predeterminado del sistema operativo, que puede habilitar el cifrado. Más información sobre [el cifrado de BitLocker dispositivo](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption).
+
+  [Seguridad/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
+
+- **Directiva de información de procesamiento estándar federal (FIPS)**: **permitir** usa la directiva de información de procesamiento estándar Federal (FIPS), que es un gobierno de Estados Unidos estándar para el cifrado, firma y operaciones hash. **No configurado** (valor predeterminado) usa el valor predeterminado del sistema operativo, que no usa FIPS.
+
+  [Criptografía/AllowFipsAlgorithmPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
+
+- **Autenticación de Windows Hello dispositivos**: **permitir** a los usuarios usen un Windows Hello dispositivo complementario, como un teléfono, banda de fitness o dispositivo de IoT, para iniciar sesión en un equipo Windows 10. **No configurado** (valor predeterminado) usa el valor predeterminado del sistema operativo, que puede impedir que los dispositivos de Windows Hello complementarios desde la autenticación de Windows.
+
+  [Autenticación/AllowSecondaryAuthenticationDevice CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowsecondaryauthenticationdevice)
+
+- **Inicio de sesión Web**: inicio de sesión de Windows permite compatibilidad con proveedores de federada no ADFS (servicios de federación de Active Directory), como el lenguaje de marcado de aserción de seguridad (SAML). SAML usa tokens seguros que proporcionan la experimentan de los exploradores web un single sign-on (SSO). Las opciones son:
+
+  - **No configurado** (valor predeterminado): usa el valor predeterminado de sistema operativo en el dispositivo.
+  - **Habilitado**: proveedor de credenciales de la Web está habilitado para inicio de sesión.
+  - **Deshabilitado**: proveedor de credenciales de la Web está deshabilitado para el inicio de sesión.
+
+  [Autenticación/EnableWebSignIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-enablewebsignin)
+
+- **Preferido de dominio del inquilino de Azure AD**: escriba un nombre de dominio de su organización de Azure AD. Cuando los usuarios de este dominio iniciar sesión, no tienen que escriba el nombre de dominio. Por ejemplo, escriba `contoso.com`. Los usuarios de la `contoso.com` dominio puede iniciar sesión con su nombre de usuario, como "abby", en lugar de "abby@contoso.com".
+
+  [Authentication/PreferredAadTenantDomainName CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-preferredaadtenantdomainname)
 
 ## <a name="per-app-privacy-exceptions"></a>Excepciones de privacidad para cada aplicación
 

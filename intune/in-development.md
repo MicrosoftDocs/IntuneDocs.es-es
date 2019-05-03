@@ -1,12 +1,12 @@
 ---
 title: En el desarrollo - Microsoft Intune
-titlesuffix: ''
+titleSuffix: ''
 description: En el desarrollo de las características de Microsoft Intune
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 03/29/2019
+ms.date: 04/15/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e068e2c9834290b705e8e7bc2f895636415f9ba
-ms.sourcegitcommit: 69aaf89140f82f344404e75a69dc59d8a1585b10
+ms.openlocfilehash: aa38a684a32756d4f2c3be3b750f8e79b66e98f6
+ms.sourcegitcommit: 8c795b041cd39e3896595f64f53ace48be0ec84c
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/30/2019
-ms.locfileid: "58675449"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59587389"
 ---
 # <a name="in-development-for-microsoft-intune---april-2019"></a>En el desarrollo de Microsoft Intune: abril de 2019
 
 Para ayudar a su nivel de preparación y planeación, esta página listas Intune UI actualizaciones y características que están en desarrollo, pero aún no se ha liberado. Además:
 
-- Si se prevé que deberá tomar medidas antes de realizar un cambio, publicaremos una entrada de centro de mensajes de Office gratuita.
+- Si se prevé que deberá tomar medidas antes de realizar un cambio, publicaremos una entrada de centro de mensajes de Office complementaria.
 - Cuando se inicia una característica en producción, ya sea como una vista previa o en disponibilidad general, se moverá la descripción de la característica fuera de esta página y en el [página Novedades](whats-new.md).
 - Esta página y el [página Novedades](whats-new.md) se actualizan periódicamente. Compruebe si hay actualizaciones adicionales.
 - Hacer referencia a la [guía básica de M365](https://www.microsoft.com/microsoft-365/roadmap?rtc=2&filters=EMS) para entregas estratégicas y las escalas de tiempo.
@@ -60,18 +60,6 @@ Pronto podrá usar Intune para administrar las reglas de firewall personalizadas
 
 ### <a name="require-app-protection-conditional-access----1634317---"></a>Requieren acceso condicional de protección de aplicaciones  <!--1634317 -->
 Podrá usar *directiva de protección de aplicaciones requieren*, que confirma la directiva se aplica a una aplicación de usuario antes de que finalice el inicio de sesión para impedir que los usuarios tengan acceso a datos que protege con acceso condicional. Mientras la garantía de la directiva puede ralentizar la primera experiencia de uso, ayuda a protegerse frente a problemas de red, errores de configuración administrativas o intencionados esfuerzos para frustrar directivas de protección de aplicaciones. 
-
-### <a name="deployment-of-online-licensed-microsoft-store-for-business-apps----16726660---"></a>Implementación de aplicaciones de Microsoft Store para Empresas con licencias en línea <!-- 16726660 -->
-Podrá asignar las aplicaciones de Microsoft Store para Empresas con licencias en línea necesarias en el contexto del dispositivo. Implementar una aplicación de Microsoft Store para Empresas de esta forma permitirá que la aplicación se instale para todos los usuarios en el dispositivo. Esto solo es aplicable para dispositivos de escritorio de Windows 10 RS4+. La opción para instalar en el contexto del dispositivo está disponible en la página de asignación de aplicaciones del cliente para las aplicaciones con licencia en línea de MSFB.
-
-### <a name="include-and-exclude-mixture-of-user-groups-and-device-groups-when-assigning-policies-and-profiles----1807547---"></a>Incluir y excluir la mezcla de grupos de usuarios y grupos de dispositivos al asignar directivas y perfiles <!-- 1807547 -->
-Al asignar las directivas de cumplimiento o perfiles de configuración, puede asignarlos a grupos de seguridad con los usuarios o dispositivos. Actualmente, puede incluir y excluir grupos de usuarios solo *o* incluir y excluir solo los grupos de dispositivos. No se puede incluir y excluir una combinación de grupos, como incluir grupos de usuarios *y* excluir un grupo de dispositivos.
-
-Podrá incluir y excluir una combinación de grupos de usuarios y grupos de dispositivos. Puede incluir un grupo de usuarios y excluir un grupo de dispositivos. Por ejemplo, puede asignar o implementar un perfil de configuración de dispositivo a un grupo de usuarios, pero excluir dispositivos personales.
-
-[Asignar perfiles de configuración de dispositivo](device-profile-assign.md) incluye más información sobre cómo asignar perfiles de grupos de usuarios y grupos de dispositivos.
-
-Se aplica a: todas las plataformas
 
 ### <a name="retire-noncompliant-devices----1827291---"></a>Retirar dispositivos no conformes <!-- 1827291 -->
 Vamos a agregar una nueva acción de cumplimiento para retirar un dispositivo no compatible. Retirar un dispositivo no compatible quita todos los datos de la empresa y también quita el dispositivo que sean administrados por Intune. Esta acción se ejecuta cuando se alcanza el valor configurado en días. El valor mínimo es 30 días. 
@@ -142,7 +130,7 @@ Se aplica a: dispositivos de Android Enterprise totalmente administrados
 ### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy----3617671---"></a>Busque un conjunto de chips TPM en una directiva de cumplimiento de dispositivos Windows 10 <!-- 3617671 -->
 Muchos de Windows 10 y dispositivos posteriores tienen conjuntos de chips del módulo de plataforma segura (TPM). Una nueva configuración de cumplimiento comprobará si es un TPM en el dispositivo.
 
-[Windows 10 y posterior configuración de directiva de cumplimiento](compliance-policy-create-windows.md#windows-10-and-later-policy-settings) se muestra la configuración actual.
+[Windows 10 y posterior configuración de directiva de cumplimiento](compliance-policy-create-windows.md) se muestra la configuración actual.
 
 Se aplica a: 
 - Windows 10 y versiones posteriores
@@ -177,15 +165,6 @@ Estamos agregando una nueva opción de anillo de actualización de Windows que p
 
 ### <a name="windows-update-notifications----3316782---"></a>Notificaciones de actualización de Windows <!-- 3316782 -->
 Estamos agregando compatibilidad para las configuraciones de anillo de actualización de Windows por lo que podrá configurar las notificaciones de actualización de Windows que ven los usuarios. Esta opción no estará disponible en el portal, pero puede configurarse mediante el uso de Graph API de Intune.
-
-### <a name="changes-to-company-portal-enrollment-for-ios-12-device-users---3448635---"></a>Cambios realizados en la inscripción de Portal de empresa para los usuarios de dispositivos iOS 12 <!--3448635 --> 
-Portal de empresa para iOS va a actualizar las pantallas de la inscripción de aplicación y los pasos para alinearse con los cambios de inscripción de MDM que publicó en Apple iOS 12.2. El flujo de trabajo actualizado ahora le pedirá a los usuarios:
-
-- Permitir Safari abrir el sitio Web de Portal de empresa (a través de Safari) y descargar el perfil de administración antes de volver a la aplicación de Portal de empresa.
-- Abra la aplicación de configuración para instalar el perfil de administración en su dispositivo.
-- Vuelva a la aplicación de Portal de empresa para realizar la inscripción.
-
-Para obtener más información acerca de cómo puede prepararse para estos cambios, consulte el [post de la comunidad tecnológica de Microsoft](https://aka.ms/CP_changes_iOS12). Mientras tanto, para admitir nuevas inscripciones de iOS en el Portal de empresa, hemos actualizado los pasos descritos en [inscribir dispositivos de iOS en Intune](https://docs.microsoft.com/en-us/intune/ios-enroll). Estos cambios de documento permanecerá en vigor después de Apple iOS versión 12.2 de versiones. 
 
 ### <a name="easier-access-to-diagnostic-settings----3804627---"></a>Facilitar el acceso a la configuración de diagnóstico <!-- 3804627 -->
 Vamos a agregar una nueva opción para el **registros de auditoría** hoja de cada carga de trabajo de registro de auditoría en la consola de Intune que puede usar para abrir directamente el *configuración de diagnóstico* página.

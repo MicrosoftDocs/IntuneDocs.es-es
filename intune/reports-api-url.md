@@ -1,6 +1,6 @@
 ---
 title: Punto de conexión de la API de Almacenamiento de datos de Intune
-titlesuffix: Microsoft Intune
+titleSuffix: Microsoft Intune
 description: En este tema de referencia se describe la estructura de la dirección URL de la API Data Warehouse de Microsoft Intune. Se proporcionan ejemplos de filtro.
 keywords: Almacenamiento de datos de Intune
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0e56c2dd4e26c68a82d5cb9d902e4480e1b98c8
-ms.sourcegitcommit: 25e6aa3bfce58ce8d9f8c054bc338cc3dff4a78b
-ms.translationtype: MTE75
+ms.openlocfilehash: 50be11f9ada92670c201fc2540499effa5a7edef
+ms.sourcegitcommit: 484a898d54f5386fdbce300225aaa3495cecd6b0
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57396495"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58798511"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Punto de conexión de la API de Almacenamiento de datos de Intune
 
@@ -53,7 +53,7 @@ La dirección URL contiene los elementos siguientes:
 |-------------------|------------|--------------------------------------------------------------------------------------------------------------------|
 | ubicación | msua06 | Para localizar la URL base, vea la hoja de la API de Almacenamiento de datos en Azure Portal. |
 | entity-collection | fechas | Nombre de la colección de entidades OData. Para obtener más información sobre las colecciones y las entidades del modelo de datos, vea [Data Model](reports-ref-data-model.md) (Modelo de datos). |
-| api-version | beta | "Version" hace referencia a la versión de la API a la que se va a tener acceso. Para obtener más información, vea [Version](#API-version-information) (Versión). |
+| api-version | beta | "Version" hace referencia a la versión de la API a la que se va a tener acceso. Para obtener más información, vea [Version](reports-api-url.md#api-version-information) (Versión). |
 | maxhistorydays | 7 | (Opcional) Número máximo de días del historial que se va a recuperar. Este parámetro se puede proporcionar a cualquier colección, pero solo tendrá efecto en las colecciones que incluyan `dateKey` como parte de su propiedad de clave. Vea [Filtros de intervalo de DateKey](reports-api-url.md#datekey-range-filters) para obtener más información. |
 
 ## <a name="api-version-information"></a>Información de versión de la API

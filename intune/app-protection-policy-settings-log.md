@@ -1,6 +1,6 @@
 ---
-title: Revisión de los registros de la directiva de protección de aplicaciones | Microsoft Intune
-titlesuffix: Microsoft Intune
+title: Revisar los registros de la directiva de protección de aplicaciones
+titleSuffix: Microsoft Intune
 description: Este tema describe cómo configurar registros de la directiva (aplicación) de Intune app protection.
 keywords: ''
 author: Erikre
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6c42003f53e5d4ff7afa8afe9c242ef2470b5ee3
-ms.sourcegitcommit: 1069b3b1ed593c94af725300aafd52610c7d8f04
+ms.openlocfilehash: d593ee1389cfa183c5daaefdeae3ea7f6c44a8a8
+ms.sourcegitcommit: 47eb67df69f237121f5197b2ac904a177aab5400
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58394800"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59671873"
 ---
 # <a name="review-client-app-protection-logs"></a>Revisión de los registros de protección de aplicaciones cliente
 
@@ -31,7 +31,7 @@ Obtenga información sobre la configuración que puede revisar en los registros 
 
 El proceso para habilitar y recopilar registros varía según la plataforma:
 - **Dispositivos Android**: use el *Portal de empresa*. Vea [Enviar registros al equipo de soporte técnico de su empresa por correo electrónico](/intune-user-help/send-logs-to-your-it-admin-by-email-android).
-- **Dispositivos iOS**: use un explorador administrado o *Microsoft Edge* para recopilar los registros. Para obtener más información, vea la entrada del blog del equipo de soporte técnico de Intune [New Intune Diagnostic Console for Log Submission in the Intune Managed Browser](https://blogs.technet.microsoft.com/intunesupport/2017/11/10/support-tip-new-intune-diagnostic-console-for-log-submission-in-the-intune-managed-browser) (Nueva consola de diagnóstico de Intune para el envío de registros en el explorador administrado de Intune). 
+- **Dispositivos iOS**: use un explorador administrado o *Microsoft Edge* para recopilar los registros. Para obtener más información, vea la entrada del blog del equipo de soporte técnico de Intune [New Intune Diagnostic Console for Log Submission in the Intune Managed Browser](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-New-Intune-Diagnostic-Console-for-Log-Submission-in/ba-p/280021) (Nueva consola de diagnóstico de Intune para el envío de registros en el explorador administrado de Intune). 
 - **Dispositivos Windows 10**: use *MDMDiag* y registros de eventos. Vea [Diagnose MDM failures in Windows 10](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) (Diagnosis de errores de MDM en Windows 10), que encontrará en el contenido de administración del cliente de Windows, así como la entrada de blog [Troubleshooting Windows 10 Intune Policy Failures](http://configmgrdogsarchive.com/2018/08/09/troubleshooting-windows-10-intune-policy-failures) (Solución de problemas de errores de directivas de Intune en Windows 10).
 
 
