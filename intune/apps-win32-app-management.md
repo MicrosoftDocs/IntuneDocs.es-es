@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c2cac99ba45ccd91629e6db32d91735d90d706e
-ms.sourcegitcommit: 6d6f43d69462f7f8fadc421c4ba566dc6ec20c36
+ms.openlocfilehash: 24e783bc4586709d0cde6a2ebd19c2b5ca30ab6b
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62426160"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135120"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune independiente: administración de aplicaciones Win32
 
@@ -142,8 +142,8 @@ En los pasos siguientes se proporcionan instrucciones para ayudarle a agregar un
     Por ejemplo, si el nombre de archivo de la aplicación es **MyApp123**, agregue lo siguiente:<br>
     `msiexec /p “MyApp123.msp”`<p>
     Y si la aplicación es `ApplicationName.exe`, el comando sería el nombre de aplicación seguido de los argumentos de comando (conmutadores) compatibles con el paquete. <br>Por ejemplo:<br>
-    `ApplicationName.exe /quite`<br>
-    en el comando anterior, el paquete `ApplicaitonName.exe` admite el argumento de comando `/quite`.<p> Para los argumentos específicos compatibles con el paquete de aplicación, póngase en contacto con su proveedor de aplicaciones.
+    `ApplicationName.exe /quiet`<br>
+    en el comando anterior, el paquete `ApplicationName.exe` admite el argumento de comando `/quiet`.<p> Para los argumentos específicos compatibles con el paquete de aplicación, póngase en contacto con su proveedor de aplicaciones.
 
 3.  Agregar la línea de comandos de desinstalación completa para desinstalar la aplicación a partir del GUID de la aplicación. 
 
@@ -283,9 +283,6 @@ Ya ha completado los pasos para agregar una aplicación Win32 a Intune. Para obt
 
 Las dependencias de aplicaciones son aplicaciones que se deben instalar antes de que se puede instalar la aplicación Win32. Se puede requerir que otras aplicaciones estén instaladas como dependencias. En concreto, el dispositivo debe instalar las aplicaciones dependientes antes de que se instale la aplicación Win32. Hay un máximo de 100 dependencias, que incluye las dependencias de cualquier dependencia incluida, así como la propia aplicación. Se pueden agregar las dependencias de aplicaciones Win32 solo después de que se haya agregado y cargado la aplicación Win32 en Intune. Una vez agregada la aplicación Win32, verá la opción **Dependencias** en la hoja de la aplicación Win32. 
 
-> [!NOTE]
-> La funcionalidad de dependencia de aplicación solo está disponible después de actualizar el agente de administración de Intune a la versión 1904 (posterior a 1.18.120.0), y podría tardar una o dos semanas más después de actualizar el servicio a 1904.
-
 Al agregar una dependencia de aplicación, se puede buscar en función del nombre y el editor de la aplicación. Asimismo, se pueden ordenar las dependencias que se han agregado en función del nombre y editor de la aplicación. Las dependencias de aplicación agregadas anteriormente no se pueden seleccionar en la lista de dependencias de aplicación agregada. 
 
 Puede elegir si quiere instalar de forma automática o no cada aplicación dependiente. De forma predeterminada, la opción **Instalación automática** está establecida en **Sí** para cada dependencia. Al instalar automáticamente una aplicación dependiente, incluso si dicha aplicación dependiente no está destinada al usuario o dispositivo, Intune instalará la aplicación en el dispositivo para satisfacer la dependencia antes de instalar la aplicación Win32. Es importante tener en cuenta que una dependencia puede tener dependencias secundarias recurrentes, y cada dependencia secundaria se instalará antes de instalar la dependencia principal. Además, la instalación de dependencias no sigue un orden de instalación en un nivel de dependencia determinado.
@@ -309,7 +306,7 @@ Si elige que no haya una **Instalación automática** de una dependencia, no se 
 
 Cada dependencia se ajusta a la lógica de reintento de aplicación de Intune Win32 (vuelva a instalar tres veces después de esperar cinco minutos) y a la programación de reevaluación global. Además, las dependencias solo son aplicables en el momento de la instalación de la aplicación Win32 en el dispositivo. Las dependencias no son aplicables para desinstalar una aplicación Win32. Para eliminar una dependencia, debe hacer clic en el botón de elipses (tres puntos) a la izquierda de la aplicación dependiente que se encuentra al final de la fila de la lista de dependencias. 
 
-## <a name="delivery-optimization"></a>Optimización de distribución
+## <a name="delivery-optimization"></a>Optimización de entrega
 
 Los clientes Windows 10 1709 y versiones posteriores descargarán contenido de aplicaciones Win32 de Intune mediante un componente de optimización de distribución del cliente Windows 10. La Optimización de distribución proporciona la funcionalidad punto a punto está activada de manera predeterminada. La opción Optimización de distribución se puede configurar por directiva de grupo y a través de la Configuración de dispositivo de Intune. Para más información, consulte el artículo sobre la [Optimización de distribución para Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 4/19/2019
+ms.date: 05/01/2019
 ms.topic: conceptual
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e642573311d1452a970dce798dabdc705e4a44f7
-ms.sourcegitcommit: 143dade9125e7b5173ca2a3a902bcd6f4b14067f
+ms.openlocfilehash: 751d89ef023bea07d3c8bdb69904605d88c9e0b6
+ms.sourcegitcommit: dde4b8788e96563edeab63f612347fa222d8ced0
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "61504219"
+ms.lasthandoff: 05/06/2019
+ms.locfileid: "65135223"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>Automatización del correo electrónico y adición de acciones para dispositivos no compatibles en Intune
 
@@ -103,9 +103,6 @@ Puede agregar otra acción al crear una directiva de cumplimiento, o bien actual
          - Escriba los **Destinatarios adicionales** mediante la selección de grupos
     
     - **Bloquear de forma remota el dispositivo no conforme**: cuando el dispositivo no sea compatible, bloquéelo. Esta acción obliga al usuario a escribir un PIN o una contraseña para desbloquear el dispositivo. 
-
-    - **Retirar el dispositivo no compatible**: cuando el dispositivo no es compatible, quite todos los datos de empresa del dispositivo y quítelo de la administración de Intune. Para evitar el borrado accidental de un dispositivo, esta acción admite una programación mínima de **30** días.  
-
     
 5. Configurar una **programación**: escriba el número de días (de 0 a 365) después del incumplimiento para desencadenar la acción en los dispositivos de los usuarios. Después de este período de gracia, puede aplicar una directiva de acceso condicional. Si escribe **0** (cero) para el número de días, el acceso condicional surte efecto **inmediatamente**. Por ejemplo, puede bloquear inmediatamente el acceso a los recursos corporativos si un dispositivo no es compatible.
 
